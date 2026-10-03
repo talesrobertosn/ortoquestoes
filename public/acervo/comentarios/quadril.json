@@ -848,45 +848,45 @@
   "conferido": false
  },
  "quadril-0077": {
-  "conceito": "### Testes do piriforme\n| Teste | Tipo | Como |\n|---|---|---|\n| ==Pace== | ativo | sentado, **abdução e rotação externa** contra resistência |\n| ==Freiberg== | passivo | **rotação interna forçada** com o quadril estendido |\n| FAIR | passivo | flexão, adução e rotação interna |\n| Beatty | ativo | decúbito lateral, abdução da coxa fletida |\n\n### Os distratores\n| Teste | Avalia |\n|---|---|\n| **Ely** | retração do **reto femoral**: em decúbito ventral, fletir o joelho eleva a pelve |\n| **Phelps** | retração do **grácil**: abdução limitada com joelho estendido que melhora ao fletir |\n| Thomas | contratura em flexão do quadril |\n| Ober | banda iliotibial |\n\n> **Na prova:** piriforme = ==Pace (ativo) e Freiberg (passivo)==.",
-  "correta": "**Um ativo e um passivo, ambos do piriforme.**\n- O Pace contrai o músculo contra resistência.\n- O Freiberg o alonga passivamente sobre o nervo isquiático.",
   "incorretas": {
-   "A": "**Nenhum é do piriforme.**\n- Ely avalia o reto femoral e Phelps, o grácil.",
-   "B": "**Metade certa.**\n- O Pace está correto.\n- Phelps é teste de retração do grácil.",
-   "C": "**Metade certa.**\n- O Freiberg está correto.\n- Ely avalia o reto femoral."
+   "A": "Nenhum dos dois é teste do piriforme: Ely avalia o reto femoral, e Phelps avalia o grácil.",
+   "B": "O Pace está certo, mas o Phelps avalia o encurtamento do grácil.",
+   "C": "O Freiberg está certo, mas o Ely avalia o encurtamento do reto femoral."
   },
+  "conceito": "A **síndrome do piriforme** é a compressão do **nervo isquiático** (ciático) pelo músculo piriforme, na parte de trás do quadril. O paciente sente dor na nádega, às vezes irradiada pela coxa, que piora sentado. Os testes clínicos tentam reproduzir essa dor de duas maneiras:\n\n**Teste de Pace** (ativo): o paciente fica **sentado** e tenta **abrir as pernas e girá-las para fora** (abdução e rotação externa) contra a resistência do examinador. Ao se contrair, o piriforme aumenta de volume e comprime o nervo.\n\n**Teste de Freiberg** (passivo): com o paciente deitado e o quadril esticado, o examinador **gira a perna para dentro** com força. A rotação interna estica o piriforme sobre o nervo.\n\nOutros testes do piriforme: o **FAIR** (flexão, adução e rotação interna, passivo) e o **Beatty** (abdução deitado de lado, ativo).\n\n**Os testes das alternativas erradas avaliam outras coisas**:\n\n**Ely**: avalia o encurtamento do **reto femoral** (parte do quadríceps). O paciente fica de barriga para baixo; quando o examinador dobra o joelho dele, a bacia se levanta da mesa se o músculo estiver curto;\n\n**Phelps**: avalia o encurtamento do **grácil**, um músculo da parte de dentro da coxa. A abertura da coxa é limitada com o joelho esticado e melhora quando o joelho dobra.\n\n**Na prova**: os testes do piriforme são Pace (ativo) e Freiberg (passivo).",
+  "correta": "Pace e Freiberg. Um é ativo, contraindo o piriforme contra resistência, e o outro é passivo, esticando o músculo sobre o nervo.",
   "referencias": [
    "Barros Filho, Lech, Exame físico em ortopedia, 3ª edição, Cap. 10"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0078": {
-  "conceito": "### Vancouver B2: revisar com haste longa\n- Haste **solta**, osso proximal **aceitável**.\n- Revisão com haste que **ultrapasse o traço** (pelo menos dois diâmetros corticais) e se fixe na diáfise distal íntegra.\n\n### Por que não cimentada\n- O cimento pressurizado num fêmur fraturado **vaza pelo traço**.\n- Interpõe-se entre os fragmentos e **impede a consolidação**.\n- Compromete as osteossínteses associadas.\n- Por isso se prefere haste ==longa não cimentada== de fixação distal:\n  - **cônica estriada** (Wagner, modulares), que encaixa em poucos centímetros de istmo;\n  - **cilíndrica com revestimento poroso extenso**.\n\n### Complementos\n- Cerclagens para reduzir e estabilizar os fragmentos proximais.\n- Placa ou enxerto em onlay em casos selecionados.\n\n### Exceção\n- Paciente muito idoso e frágil, com osso ruim: alguns preferem haste longa cimentada com técnica de \"cimento em fratura reduzida e cerclada\", mas não é a regra.\n\n> **Na prova:** B2 = ==revisão com haste longa não cimentada==.",
-  "correta": "**Fixa distalmente sem atrapalhar a consolidação.**\n- A haste longa não cimentada ganha fixação na diáfise íntegra abaixo do traço.\n- Sem cimento, nada se interpõe entre os fragmentos.",
   "incorretas": {
-   "A": "**Mantém a haste solta.**\n- Fixar só a fratura deixa o problema principal e reproduz a falha.",
-   "B": "**Cerclagem não resolve.**\n- Acrescentar fios não devolve fixação à haste solta.",
-   "C": "**Comprimento certo, cimento não.**\n- O cimento vaza pelo traço e atrapalha a consolidação.\n- Por isso a preferência é pela haste não cimentada."
+   "A": "Manter a haste deixa o problema principal sem solução: ela continua solta, e a falha se repete.",
+   "B": "Acrescentar cabos não devolve fixação a uma haste solta.",
+   "C": "O comprimento está certo, mas o cimento vazaria pela fratura e atrapalharia a consolidação. Por isso se prefere a haste não cimentada."
   },
+  "conceito": "Na **classificação de Vancouver** das fraturas do fêmur ao redor de uma prótese de quadril, o tipo **B2** é a fratura ao redor da haste em que a **haste está solta**, mas o **osso** de cima ainda é **aceitável**.\n\nComo o problema principal é a haste solta, só fixar a fratura não adianta: o tratamento é a **revisão**, trocando a haste por uma **mais longa**, que passe além da fratura (pelo menos duas vezes a largura do osso) e se fixe na parte de baixo do fêmur, que está íntegra.\n\n**Por que a haste deve ser não cimentada?** Se o cirurgião usasse cimento num fêmur quebrado, o cimento, empurrado sob pressão, **vazaria pelas frestas da fratura**. Ele ficaria entre os fragmentos e **impediria a consolidação** do osso, além de atrapalhar a fixação da fratura com cabos ou placas. Por isso, a preferência é por uma **haste longa sem cimento**, que se prende por pressão na parte íntegra do osso, abaixo da fratura. Existem dois tipos principais:\n\nhastes **cônicas com estrias**, que encaixam firme em poucos centímetros do canal;\n\nhastes **cilíndricas** com revestimento poroso ao longo de toda a superfície, para o osso crescer sobre elas.\n\nOs fragmentos de cima são reduzidos e presos com **cabos em volta do osso** (cerclagens), e às vezes se acrescenta uma placa ou enxerto.\n\nEm pacientes muito idosos e frágeis, com osso muito ruim, alguns cirurgiões ainda usam hastes longas cimentadas com técnicas especiais, mas essa não é a regra.\n\n**Na prova**: Vancouver B2 se trata com revisão por haste mais longa não cimentada.",
+  "correta": "Revisão com troca por componente femoral mais longo não cimentado. A haste longa se fixa no osso íntegro abaixo da fratura, sem cimento entre os fragmentos.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 3"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0079": {
-  "conceito": "### Haste e osso dividem a carga\n- Funcionam como duas estruturas em **paralelo**: a mais rígida assume a maior parte da carga.\n\n| Módulo de elasticidade da haste | Estresse na haste | Estresse no osso | Consequência |\n|---|---|---|---|\n| alto (rígida: cromo-cobalto) | maior | menor | desvio de carga, reabsorção do calcar |\n| ==baixo (flexível: titânio)== | ==menor== | ==maior== | menos desvio de carga |\n\n### Módulos aproximados\n| Material | Módulo (GPa) |\n|---|---|\n| cortical óssea | 15–20 |\n| cimento (PMMA) | 2–3 |\n| titânio | cerca de 110 |\n| cromo-cobalto | cerca de 200–230 |\n\n### O preço da haste flexível\n- Mais **micromovimento** na interface proximal.\n- Maior tensão em pontos de concentração da própria haste, com risco de fadiga.\n- Por isso a flexibilidade tem limite.\n\n> **Na prova:** menor módulo da haste = ==menos estresse na haste, mais estresse no osso==.",
-  "correta": "**A carga volta para o osso.**\n- A haste mais flexível deforma junto com o fêmur e assume menos carga.\n- O osso passa a ser mais solicitado, o que reduz o desvio de carga e a reabsorção do calcar.",
   "incorretas": {
-   "A": "**Não pode aumentar nos dois.**\n- A carga total é dividida; se um lado recebe mais, o outro recebe menos.\n- Estresse maior na haste descreveria uma haste mais rígida.",
-   "B": "**Descreve o módulo alto.**\n- Mais carga na haste e menos no osso é o quadro da haste rígida.",
-   "D": "**A carga não some.**\n- Se a haste assume menos, o osso assume mais."
+   "A": "Como a carga é dividida, o estresse não pode aumentar nas duas estruturas. Mais estresse na haste descreveria uma haste mais rígida.",
+   "B": "Mais carga na haste e menos no osso é o quadro da haste rígida, com módulo alto.",
+   "D": "A carga não desaparece: se a haste assume menos, o osso assume mais."
   },
+  "conceito": "O **módulo de elasticidade** é uma medida de **rigidez** de um material: quanto maior o módulo, mais rígido ele é e menos se deforma sob carga.\n\nNuma prótese de quadril, a **haste** e o **fêmur** dividem a carga, como **duas estruturas lado a lado**. A regra é: a mais rígida das duas assume a maior parte da carga.\n\n**Haste rígida** (módulo alto, como o **cromo-cobalto**): ela assume a maior parte da carga. O estresse na haste é **maior** e no osso é **menor**. O osso, pouco solicitado, perde densidade, principalmente na parte de cima e de dentro do fêmur (o calcar). Esse fenômeno se chama **stress shielding**, ou desvio de carga.\n\n**Haste mais flexível** (módulo mais baixo, como o **titânio**): ela se deforma junto com o fêmur e assume **menos** carga. O estresse na haste **diminui** e o estresse no osso **aumenta**. O osso, mais solicitado, se mantém melhor, e o desvio de carga diminui.\n\nPara comparação, a rigidez aproximada dos materiais: o osso cortical tem módulo bem menor que o titânio, que por sua vez é bem menos rígido que o cromo-cobalto.\n\n**Há um limite**: uma haste flexível demais aumenta o **micromovimento** entre a haste e o osso na parte de cima e pode concentrar tensão em pontos da própria haste, com risco de fadiga e quebra.\n\n**Na prova**: diminuir o módulo de elasticidade da haste diminui o estresse na haste e aumenta o estresse no osso.",
+  "correta": "Diminuição do estresse na haste e aumento do estresse no osso. A haste mais flexível assume menos carga, e o osso passa a ser mais solicitado.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 3"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0080": {
@@ -1010,39 +1010,39 @@
   "conferido": false
  },
  "quadril-0088": {
-  "conceito": "### Smith-Petersen: dois intervalos internervosos\n| Plano | Entre | Inervação |\n|---|---|---|\n| superficial | ==sartório== e ==tensor da fáscia lata== | femoral × glúteo superior |\n| profundo | ==reto femoral== e ==glúteo médio== | femoral × glúteo superior |\n\n- Como passa **entre** territórios nervosos, não desnerva músculo nenhum.\n\n### Detalhes técnicos\n- Incisão ao longo da crista ilíaca anterior, contornando a EIAS e descendo pela coxa.\n- Ligar o ramo ascendente da **circunflexa femoral lateral** no plano profundo.\n- Proteger o **cutâneo femoral lateral** (medial à EIAS).\n- Desinserir a cabeça refletida do reto para expor a cápsula.\n\n### Usos\n- Artroplastia pela via anterior direta.\n- Redução aberta da displasia, osteotomias pélvicas (Salter, Ganz).\n- Fraturas da cabeça femoral (Pipkin), drenagem de artrite séptica.\n\n### Outros acessos\n| Acesso | Característica |\n|---|---|\n| Hardinge | lateral direto, divide glúteo médio e vasto lateral |\n| Ludloff | medial, entre os adutores |\n| Kocher-Langenbeck | posterior, acetábulo |\n\n> **Na prova:** sartório/tensor + reto femoral/glúteo médio = ==Smith-Petersen==.",
-  "correta": "**É a definição do acesso.**\n- O Smith-Petersen usa o intervalo sartório–tensor superficialmente e reto femoral–glúteo médio profundamente.\n- São planos entre os nervos femoral e glúteo superior.",
   "incorretas": {
-   "A": "**Não é acesso do quadril.**\n- \"Kocher\" isolado designa o acesso lateral do cotovelo.\n- No quadril, o nome aparece no Kocher-Langenbeck, posterior.",
-   "B": "**Lateral direto.**\n- O Hardinge divide o glúteo médio e o vasto lateral; não usa o intervalo sartório–tensor.",
-   "C": "**Acesso medial.**\n- O Ludloff passa entre os adutores, usado sobretudo na displasia do lactente."
+   "A": "O nome Kocher isolado designa uma via do cotovelo. No quadril, aparece como Kocher-Langenbeck, a via posterior.",
+   "B": "A via de Hardinge é lateral e divide o glúteo médio e o vasto lateral, sem usar o intervalo entre o sartório e o tensor.",
+   "C": "A via de Ludloff é medial e passa entre os adutores."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **via de Smith-Petersen** é a via **anterior** do quadril. Ela é considerada uma via \"**internervosa**\": o cirurgião passa **entre** músculos inervados por nervos diferentes, sem cortar nenhum músculo e sem tirar a inervação de nenhum deles.\n\n**Os dois planos da via**:\n\n**plano superficial**: entre o **sartório** (inervado pelo nervo **femoral**) e o **tensor da fáscia lata** (inervado pelo nervo **glúteo superior**);\n\n**plano profundo**: entre o **reto femoral** (nervo **femoral**) e o **glúteo médio** (nervo **glúteo superior**).\n\n**Cuidados técnicos**:\n\nproteger o **nervo cutâneo femoral lateral**, que passa logo para dentro da espinha ilíaca anterossuperior;\n\nligar o ramo ascendente da **artéria circunflexa femoral lateral**, que cruza o plano profundo;\n\nsoltar a cabeça refletida do reto femoral para expor a cápsula.\n\n**Usos**: artroplastia do quadril pela via anterior direta, redução aberta da displasia do quadril, osteotomias da bacia (como as de Salter e de Ganz), fraturas da cabeça do fêmur e drenagem de artrite séptica.\n\n**Outras vias citadas**:\n\n**Hardinge**: via lateral direta, que divide o glúteo médio e o vasto lateral;\n\n**Ludloff**: via medial, entre os músculos adutores, usada sobretudo na displasia do bebê;\n\n**Kocher**: sozinho, o nome designa uma via do cotovelo; no quadril, aparece como Kocher-Langenbeck, a via posterior.\n\n**Na prova**: o intervalo sartório e tensor da fáscia lata, e no plano profundo reto femoral e glúteo médio, é a via de Smith-Petersen.",
+  "correta": "Smith-Petersen. É a via anterior que usa os intervalos sartório e tensor da fáscia lata, e reto femoral e glúteo médio, entre os nervos femoral e glúteo superior.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0091": {
-  "conceito": "### De onde vem a carga no quadril\n- Não é o peso corporal isolado: é sobretudo a **força dos abdutores** para equilibrar a pelve.\n- Braço de alavanca do peso é cerca de **2,5 vezes** o dos abdutores, por isso a força articular supera muito o peso.\n\n### Cargas aproximadas (múltiplos do peso corporal)\n| Atividade | Carga |\n|---|---|\n| apoio bipodal | cerca de 0,3 a 0,5 |\n| elevação da perna estendida em decúbito | cerca de 1,5 a 2 |\n| apoio monopodal | cerca de 2,5 a 3 |\n| marcha normal | cerca de 3 a 4 |\n| ==subir escadas== | ==maior entre os gestos comuns== |\n| corrida, tropeço | 5 a 8 ou mais |\n\n### Como reduzir a carga\n- **Bengala na mão contralateral:** reduz até cerca de 60%.\n- Carregar peso do **mesmo lado** do quadril doente.\n- Perda de peso; medialização do centro de rotação e aumento do offset (na artroplastia).\n\n> **Na prova:** entre marcha, apoio monopodal e escadas, a maior carga é ==subir escadas==.",
-  "correta": "**Maior exigência dos abdutores.**\n- Subir escadas combina apoio unipodal, quadril fletido e impulso: é o gesto comum de maior carga.\n- Ultrapassa a marcha em plano.",
   "incorretas": {
-   "A": "**Carga alta, mas menor.**\n- A marcha em plano gera cerca de 3 a 4 vezes o peso, abaixo da subida de escadas.",
-   "B": "**Estático, sem aceleração.**\n- O apoio monopodal fica em torno de 2,5 a 3 vezes o peso, abaixo da marcha.",
-   "D": "**Também alta.**\n- Descer escadas gera carga elevada e algumas medições a aproximam da subida.\n- O valor classicamente cobrado como maior é o de subir."
+   "A": "A marcha no plano gera cerca de 3 a 4 vezes o peso do corpo, abaixo da subida de escadas.",
+   "B": "O apoio numa perna só parado gera cerca de 2,5 a 3 vezes o peso, ainda abaixo da marcha.",
+   "D": "Descer escadas também gera carga alta, e algumas medições a aproximam da subida, mas o valor classicamente cobrado como maior é o de subir."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A carga que chega ao quadril vem principalmente da **força que os músculos abdutores** precisam fazer para manter a bacia nivelada, e não só do peso do corpo. Como o braço de alavanca desses músculos é muito menor que o do peso do corpo, a força que eles fazem é grande, e a carga sobre a articulação supera bastante o peso corporal.\n\n**Cargas aproximadas, em múltiplos do peso do corpo**:\n\nem pé apoiado nas duas pernas: menos que o peso do corpo;\n\nlevantar a perna esticada deitado: cerca de 1,5 a 2 vezes;\n\napoiado numa perna só, parado: cerca de 2,5 a 3 vezes;\n\nandar no plano: cerca de 3 a 4 vezes;\n\n**subir escadas**: a **maior** entre os gestos comuns do dia a dia;\n\ncorrer ou tropeçar: muito mais, podendo passar de 5 a 8 vezes.\n\n**Por que subir escadas gera tanta carga?** Porque combina o apoio numa perna só com o quadril dobrado e a necessidade de **impulsionar** o corpo para cima.\n\n**Como reduzir a carga no quadril**:\n\nusar **bengala na mão do lado oposto** ao quadril doente;\n\ncarregar peso no **mesmo lado** do quadril doente;\n\nperder peso;\n\nna artroplastia, colocar o centro de rotação mais para dentro e preservar o offset.\n\n**Na prova**: entre os movimentos listados, subir escadas é o que gera maior carga no quadril.",
+  "correta": "Subir escadas. Combina apoio numa perna só, quadril dobrado e impulso, exigindo muito dos abdutores e superando a carga da marcha no plano.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0092": {
-  "conceito": "### Testes dinâmicos rotatórios\n| Teste | Manobra | Borda testada | Sugere |\n|---|---|---|---|\n| ==DIRI== | flexão > 90°, arco de **adução + rotação interna** | ==anterossuperior== | impacto anterior, lesão labial anterior |\n| DIRE | arco de **abdução + rotação externa** | posteroinferior | impacto e lesão labial posterior |\n\n- A versão estática é o **FADIR** (flexão 90°, adução, rotação interna): muito sensível, pouco específico.\n- **FABER (Patrick):** dor posterior sugere sacroilíaca; dor anterior, patologia intra-articular.\n\n### Outros testes citados\n| Teste | Avalia |\n|---|---|\n| Ely | retração do reto femoral (decúbito ventral, flexão do joelho eleva a pelve) |\n| Freiberg | síndrome do piriforme (rotação interna forçada em extensão) |\n| Thomas | contratura em flexão do quadril |\n| Ober | retração da banda iliotibial |\n\n> **Na prova:** impacto anterior e lesão labial anterior = ==DIRI== (ou FADIR).",
-  "correta": "**Leva o colo contra a borda anterossuperior.**\n- No DIRI, o arco de adução com rotação interna em flexão reproduz a dor do impacto anterior.\n- É a versão dinâmica do FADIR.",
   "incorretas": {
-   "A": "**Avalia o reto femoral.**\n- No Ely, a flexão do joelho em decúbito ventral eleva a pelve quando o reto está retraído.",
-   "B": "**Síndrome do piriforme.**\n- Freiberg é a dor com rotação interna forçada do quadril em extensão.",
-   "D": "**Borda oposta.**\n- O DIRE, em abdução e rotação externa, testa a região posteroinferior."
+   "A": "O teste de Ely avalia o encurtamento do reto femoral, e não o impacto do quadril.",
+   "B": "O teste de Freiberg avalia a síndrome do piriforme, com rotação interna forçada do quadril esticado.",
+   "D": "O DIRE, em abdução e rotação externa, testa a região de trás e de baixo, e não a borda anterior."
   },
+  "conceito": "No **impacto femoroacetabular anterior**, o colo do fêmur bate contra a borda **da frente e de cima** do acetábulo quando o quadril dobra e gira para dentro. Esse choque machuca a cartilagem e o **lábio** (o anel de cartilagem na borda do acetábulo).\n\nOs testes de exame físico tentam reproduzir esse choque:\n\n**DIRI** (teste dinâmico do impacto rotatório interno): o examinador dobra o quadril além de 90° e o leva num arco de **adução** (para dentro) com **rotação interna**. Esse movimento leva o colo contra a borda anterossuperior. Se reproduz a dor, sugere **impacto anterior** ou **lesão do lábio anterior**;\n\n**FADIR**: é a versão parada do mesmo teste (flexão de 90°, adução e rotação interna). É muito sensível, mas pouco específico;\n\n**DIRE** (teste dinâmico do impacto rotatório externo): faz um arco de **abdução** com **rotação externa** e testa a região **de trás e de baixo** do acetábulo, sugerindo impacto ou lesão posterior;\n\n**FABER** (ou Patrick): flexão, abdução e rotação externa. Dor atrás sugere a articulação sacroilíaca; dor na frente sugere problema dentro do quadril.\n\n**Os outros testes das alternativas avaliam outras coisas**: o **Ely** avalia o encurtamento do reto femoral, e o **Freiberg** avalia a síndrome do piriforme.\n\n**Na prova**: o teste que sugere impacto anterior ou lesão do lábio anterior é o DIRI.",
+  "correta": "Dinâmico do impacto rotatório interno (DIRI). O arco de adução com rotação interna, com o quadril dobrado, leva o colo contra a borda da frente do acetábulo.",
   "referencias": [
    "Barros Filho, Lech, Exame físico em ortopedia, 3ª edição, Cap. 10"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0093": {
@@ -1090,17 +1090,17 @@
   "conferido": false
  },
  "quadril-0096": {
-  "conceito": "### Dor lateral no quadril (síndrome dolorosa do trocânter maior)\n- Causa mais frequente: **tendinopatia ou ruptura do glúteo médio e mínimo**, antes chamada de bursite trocantérica.\n- Mais comum em mulheres de meia-idade; a ruptura é o \"manguito rotador do quadril\".\n\n### Desempenho dos testes\n| Teste | Comentário |\n|---|---|\n| palpação do trocânter | sensível, **pouco específica** |\n| ==abdução resistida dolorosa== | ==mais reprodutível==, sensibilidade e especificidade acima de 70% |\n| sinal de Trendelenburg / marcha | sugere insuficiência abdutora |\n| apoio monopodal por 30 s | dor em 30 s: boa sensibilidade para tendinopatia |\n| teste de desrotação resistida (FADER-R) | também útil |\n\n### Leitura estatística\n- Um teste com **50%** de sensibilidade e especificidade não discrimina: equivale a jogar uma moeda.\n\n### Investigação e conduta\n- RM ou ultrassom confirmam a ruptura.\n- Tratamento inicial: fisioterapia e fortalecimento; reparo (aberto ou endoscópico) nas rupturas sintomáticas refratárias.\n\n> **Na prova:** teste mais reprodutível = ==abdução contra resistência, > 70%==.",
-  "correta": "**Teste de função, bom desempenho.**\n- A dor e a fraqueza na abdução contra resistência refletem o tendão lesado.\n- Tem sensibilidade e especificidade acima de 70%.",
   "incorretas": {
-   "A": "**Teste e valor errados.**\n- A palpação dói em quase toda dor lateral e é pouco específica.\n- 50% não distingue nada.",
-   "B": "**Valor errado.**\n- O teste está certo, mas 50% de sensibilidade e especificidade equivale ao acaso.",
-   "C": "**Teste errado.**\n- A palpação não alcança essa especificidade: dói na bursite, na tendinopatia e na dor referida."
+   "A": "A palpação do trocânter dói em quase toda dor lateral e é pouco específica, e um teste com 50% não distingue nada.",
+   "B": "O teste está certo, mas os valores não: 50% de sensibilidade e especificidade equivaleria ao acaso.",
+   "C": "A palpação do trocânter não alcança essa especificidade, porque dói também na bursite, na tendinopatia e na dor que vem da coluna."
   },
+  "conceito": "A **dor do lado de fora do quadril**, na região do trocânter maior, por muitos anos foi chamada de \"bursite trocantérica\". Hoje se sabe que a causa mais frequente é a **tendinopatia ou ruptura dos tendões do glúteo médio e do glúteo mínimo**, os músculos abdutores que se prendem no trocânter. Por isso o quadro também é chamado de \"manguito rotador do quadril\". É mais comum em **mulheres de meia-idade**.\n\n**Como saber se o tendão está rompido?** Além da marcha de **Trendelenburg** (a bacia cai para o lado oposto a cada passo, por fraqueza dos abdutores), o teste mais **reprodutível** é a **dor na abdução contra resistência**: o paciente tenta abrir a perna enquanto o examinador segura. Esse teste tem sensibilidade e especificidade **acima de 70%**.\n\n**Por que a palpação do trocânter não basta?** Apertar o trocânter dói em quase toda dor lateral do quadril: na tendinopatia, na bursite, na dor que vem da coluna. Por isso a palpação é sensível, mas **pouco específica**.\n\n**Um detalhe de interpretação**: um teste com **50%** de sensibilidade e 50% de especificidade **não ajuda em nada**, porque acerta tanto quanto jogar uma moeda.\n\nOutros testes úteis: ficar apoiado numa perna só por 30 segundos (a dor nesse tempo sugere tendinopatia) e testes de rotação contra resistência.\n\n**Confirmação e tratamento**: a ultrassonografia ou a ressonância confirmam a ruptura. O tratamento começa com fisioterapia e fortalecimento; o reparo cirúrgico, aberto ou por endoscopia, fica para as rupturas com sintomas que não melhoram.\n\n**Na prova**: o teste mais reprodutível na ruptura do glúteo médio é a dor na abdução contra resistência, com mais de 70% de sensibilidade e especificidade.",
+  "correta": "Abdução contra resistência do quadril, com mais de 70% de especificidade e sensibilidade. É um teste de função que reflete diretamente o tendão lesado.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 48"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0097": {
@@ -1115,14 +1115,14 @@
   "conferido": false
  },
  "quadril-0098": {
-  "conceito": "### Corona mortis\n- Anastomose entre o sistema **ilíaco externo** e o **ilíaco interno** na face posterior do ramo superior do púbis.\n- Vasos: ==artéria (ou veia) epigástrica inferior== (ou a própria ilíaca externa) com a ==artéria obturatória==.\n- Presente em uma parcela grande das pessoas (arterial ou venosa); fica em média **5 a 7 cm** da sínfise.\n\n### Por que \"coroa da morte\"\n- Seccionada sem ligadura, retrai para a pelve e sangra de forma difícil de controlar.\n\n### Onde aparece\n| Acesso | Momento de risco |\n|---|---|\n| ilioinguinal | janela medial (entre vasos ilíacos e sínfise) |\n| Stoppa (intrapélvico anterior) | dissecção sobre o ramo superior e a superfície quadrilátera |\n| hernioplastia laparoscópica | dissecção do espaço retropúbico |\n\n### Origem dos vasos\n| Vaso | Origem |\n|---|---|\n| epigástrica inferior | ilíaca externa |\n| epigástrica superior | torácica interna |\n| obturatória | ilíaca interna |\n| glútea superior | ilíaca interna (sai pela incisura isquiática maior) |\n\n> **Na prova:** corona mortis = ==epigástrica inferior + obturatória==.",
-  "correta": "**Ponte entre ilíaca externa e interna.**\n- A epigástrica inferior (ilíaca externa) anastomosa-se com a obturatória (ilíaca interna) sobre o ramo púbico.\n- Deve ser identificada e ligada nos acessos anteriores do acetábulo.",
   "incorretas": {
-   "A": "**Vaso alto demais.**\n- A epigástrica superior vem da torácica interna e irriga a parede abdominal alta.",
-   "B": "**Erra os dois.**\n- Nem a epigástrica superior nem a glútea superior participam dessa anastomose.",
-   "D": "**Glútea superior está atrás.**\n- Ela sai pela incisura isquiática maior e não cruza o ramo púbico."
+   "A": "A artéria epigástrica superior vem da torácica interna e irriga a parte de cima da parede abdominal, longe do ramo do púbis.",
+   "B": "Nem a epigástrica superior nem a glútea superior participam dessa anastomose.",
+   "D": "A artéria glútea superior sai pela parte de trás da bacia, pela incisura isquiática maior, e não cruza o ramo do púbis."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **corona mortis** (\"coroa da morte\", em latim) é uma **ligação entre dois sistemas de vasos** da bacia que passa sobre a face de trás do **ramo superior do púbis**, a parte do osso logo acima do forame obturador.\n\n**Quais vasos?** De um lado, a **artéria epigástrica inferior** (ou a própria ilíaca externa); do outro, a **artéria obturatória**. A epigástrica inferior vem do sistema da **ilíaca externa**, e a obturatória vem do sistema da **ilíaca interna**. A corona mortis faz uma ponte entre esses dois sistemas. Ela pode ser uma artéria ou uma veia e está presente numa parcela grande das pessoas.\n\n**Por que \"da morte\"?** Se for cortada sem ser ligada, ela se **retrai para dentro da pelve** e sangra de forma muito difícil de controlar, porque recebe sangue dos dois lados.\n\n**Onde ela aparece na cirurgia**:\n\nna via **ilioinguinal** para fraturas do acetábulo, na janela de dentro, perto da sínfise;\n\nna via de **Stoppa** (por dentro da pelve), na dissecção sobre o ramo do púbis e a parede interna do acetábulo;\n\nnas cirurgias de hérnia por videolaparoscopia.\n\nEla deve ser **procurada e ligada** antes de se dissecar a região.\n\n**A origem dos vasos das alternativas**: a epigástrica inferior vem da ilíaca externa; a **epigástrica superior** vem da artéria torácica interna e irriga a parte de cima da parede abdominal; a obturatória vem da ilíaca interna; a **glútea superior** também vem da ilíaca interna, mas sai pela incisura isquiática maior, na parte de trás da bacia.\n\n**Na prova**: a corona mortis é a anastomose entre a artéria epigástrica inferior e a artéria obturatória.",
+  "correta": "Artéria epigástrica inferior e artéria obturatória. A anastomose liga o sistema da ilíaca externa ao da ilíaca interna sobre o ramo do púbis.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0099": {
@@ -1141,49 +1141,49 @@
   "conferido": false
  },
  "quadril-0100": {
-  "conceito": "### Kocher-Langenbeck\n- Acesso **posterior** do acetábulo: parede e coluna posteriores, fraturas transversas e em T selecionadas.\n- Divide o glúteo máximo e desinsere piriforme e obturador interno (com gêmeos).\n\n### Estruturas em risco\n| Estrutura | Onde | Consequência |\n|---|---|---|\n| ==circunflexa femoral medial (ramo profundo)== | junto ao quadrado femoral e aos rotadores | ==necrose da cabeça femoral== |\n| nervo isquiático | posterior aos rotadores | pé caído (divisão fibular mais vulnerável) |\n| feixe glúteo superior | incisura isquiática maior | sangramento, Trendelenburg |\n| nervo glúteo inferior | glúteo máximo | fraqueza de extensão |\n\n### Regras técnicas\n- Rotadores seccionados a **1,5 cm** do trocânter.\n- **Não desinserir o quadrado femoral.**\n- Joelho fletido e quadril estendido para relaxar o ciático.\n\n### Por que não o femoral\n- O nervo femoral é anterior; corre risco no ilioinguinal e na via anterior direta.\n\n> **Na prova:** Kocher-Langenbeck + cabeça femoral = ==circunflexa medial==.",
-  "correta": "**Irrigação da cabeça femoral.**\n- O ramo profundo da circunflexa medial corre junto aos rotadores curtos.\n- É ele que dita as regras de tenotomia a 1,5 cm e de preservar o quadrado femoral.",
   "incorretas": {
-   "A": "**Também em risco, mas não a resposta.**\n- A glútea superior pode ser lesada na incisura isquiática, com sangramento.\n- Não compromete a cabeça femoral como a circunflexa medial.",
-   "B": "**Estrutura anterior.**\n- O femoral corre risco nos acessos anteriores, não no posterior.",
-   "D": "**Risco secundário.**\n- Afastamento excessivo na borda superior pode lesá-lo e causar Trendelenburg.\n- Não é a estrutura clássica desta via."
+   "A": "A artéria glútea superior também pode ser lesada na incisura isquiática, com sangramento, mas não compromete a cabeça femoral como a circunflexa medial.",
+   "B": "O nervo femoral fica na frente do quadril e corre risco nas vias anteriores, e não na via posterior.",
+   "D": "O nervo glúteo superior pode ser lesado por afastamento excessivo, mas não é a estrutura clássica em risco nesta via."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **via de Kocher-Langenbeck** é a via **posterior** usada para operar o **acetábulo**: fraturas da parede e da coluna posteriores e algumas fraturas transversas. O cirurgião divide o glúteo máximo e solta os pequenos músculos rotadores da parte de trás do quadril (o piriforme, o obturador interno e os gêmeos) para chegar ao osso.\n\n**As estruturas em risco nessa via**:\n\n**o ramo profundo da artéria circunflexa femoral medial**: corre junto ao músculo quadrado femoral e aos rotadores. É a **principal fonte de sangue da cabeça do fêmur**. Se for lesado, a cabeça pode sofrer **necrose**;\n\n**o nervo isquiático** (ciático): passa atrás dos rotadores. A lesão causa pé caído, e a divisão fibular do nervo é a mais vulnerável;\n\n**os vasos e o nervo glúteos superiores**: saem pela incisura isquiática maior; podem sangrar ou, no caso do nervo, causar fraqueza dos abdutores;\n\n**o nervo glúteo inferior**: inerva o glúteo máximo.\n\n**Regras técnicas para proteger essas estruturas**:\n\ncortar os rotadores a cerca de **1,5 cm** do trocânter, para não atingir a artéria;\n\n**não soltar o quadrado femoral**, porque a artéria passa junto dele;\n\noperar com o **joelho dobrado** e o quadril esticado, para relaxar o nervo ciático.\n\nO **nervo femoral** corre na **frente** do quadril e só corre risco nas vias anteriores.\n\n**Na prova**: na via de Kocher-Langenbeck, a artéria circunflexa femoral medial está em risco, e sua lesão compromete a cabeça do fêmur.",
+  "correta": "Artéria circunflexa femoral medial. Seu ramo profundo corre junto aos rotadores curtos e ao quadrado femoral e é a principal fonte de sangue da cabeça do fêmur.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0108": {
-  "conceito": "### A balança do quadril (apoio monopodal)\n- De um lado, o **peso corporal** (menos o membro de apoio), agindo no centro de gravidade.\n- Do outro, os **abdutores**, puxando do trocânter maior.\n- O braço do peso (linha média → centro da cabeça) é o **longo**; o dos abdutores (centro da cabeça → trocânter) é o **curto**.\n- Razão: cerca de ==2,5 para 1== a favor do peso.\n\n### Consequência\n- Para equilibrar, o abdutor faz força cerca de 2,5 vezes o peso.\n- A resultante na cabeça femoral chega a **cerca de 3 vezes** o peso corporal.\n\n### Como a cirurgia muda essa razão\n| Manobra | Efeito |\n|---|---|\n| medializar o componente acetabular | encurta o braço do peso |\n| aumentar o offset femoral | alonga o braço abdutor |\n| lateralizar o trocânter | alonga o braço abdutor |\n| bengala contralateral | cria um braço extra para o peso |\n\n> **Na prova:** a razão é ==2,5==; atenção ao sentido (veja o alerta).",
-  "correta": "**Resposta oficial.**\n- O gabarito considera o braço abdutor 2,5 vezes maior que o do peso.\n- Na biomecânica clássica, a relação é a inversa (veja o alerta).",
   "incorretas": {
-   "A": "**Proporção correta pela biomecânica.**\n- O braço abdutor é cerca de 2,5 vezes menor, por isso a força abdutora supera o peso.\n- O gabarito oficial não a aceitou (veja o alerta).",
-   "C": "**Razão errada.**\n- A literatura descreve cerca de 2,5 para 1, não 4 para 1.",
-   "D": "**Sentido certo, número errado.**\n- O braço abdutor é o menor, mas a razão não é de 4 vezes."
+   "A": "Esta é a proporção correta pela biomecânica: o braço dos abdutores é cerca de 2,5 vezes menor, e por isso a força deles supera o peso. A banca, porém, não a aceitou.",
+   "C": "A literatura descreve uma razão de cerca de 2,5 para 1, e não de 4 vezes.",
+   "D": "O sentido está certo (o braço dos abdutores é o menor), mas a razão não é de 4 vezes, e sim de cerca de 2,5."
   },
-  "alerta": "A proporção está invertida. O braço de alavanca dos abdutores, do centro de rotação até o trocanter maior, é o CURTO; o do peso corporal, da linha média até o centro de rotação, é o longo, cerca de duas vezes e meia maior. É justamente por isso que os abdutores precisam fazer força várias vezes maior que o peso do corpo para equilibrar a pelve, e a `quadril-0068`, neste mesmo acervo, diz exatamente isso ao explicar por que as duas forças não podem ser iguais. Se a alavanca abdutora fosse a maior, o músculo faria menos força que o peso corporal, e a carga na cabeça femoral não chegaria a três ou quatro vezes o peso. Entre as alternativas, a correta é a A.",
-  "geradoEm": "2026-09-24",
+  "conceito": "Quando apoiamos numa perna só, o quadril funciona como uma **gangorra**. O ponto de apoio é a **cabeça do fêmur**. De um lado está o **peso do corpo**, agindo a partir do centro do corpo; do outro estão os **músculos abdutores**, que puxam a partir do trocânter maior para manter a bacia nivelada.\n\nCada força tem o seu **braço de alavanca**, a distância até o ponto de apoio:\n\no braço do **peso do corpo** vai da linha média do corpo até o centro da cabeça. É o braço **longo**;\n\no braço dos **abdutores** vai do centro da cabeça até o trocânter maior. É o braço **curto**.\n\nNa biomecânica clássica, o braço do peso do corpo é cerca de **2,5 vezes maior** que o dos abdutores. Ou seja, o braço dos abdutores é cerca de 2,5 vezes **menor**.\n\n**A consequência**: para equilibrar a gangorra com um braço tão curto, os abdutores precisam fazer uma força **bem maior** que o peso do corpo. A carga que chega à cabeça do fêmur é a soma das duas forças e fica em torno de **três vezes o peso corporal**.\n\nO gabarito oficial desta questão, porém, considera o braço dos abdutores **2,5 vezes maior**, o que contraria essa biomecânica (veja o alerta).\n\n**Como as cirurgias mudam essa gangorra**: medializar a taça encurta o braço do peso; aumentar o offset femoral ou lateralizar o trocânter alonga o braço dos abdutores; a bengala na mão do lado oposto cria um apoio extra que alivia o quadril.\n\n**Na prova**: a razão entre os braços é de cerca de 2,5; na biomecânica clássica, o braço dos abdutores é o menor.",
+  "alerta": "A proporção do gabarito está invertida. O braço de alavanca dos abdutores, do centro de rotação até o trocânter maior, é o curto; o do peso corporal, da linha média até o centro de rotação, é cerca de duas vezes e meia maior. É por isso que os abdutores precisam fazer força várias vezes maior que o peso do corpo, e a carga na cabeça femoral chega a cerca de três vezes o peso. Pela biomecânica clássica, a alternativa correta seria a A. O gabarito oficial foi mantido.",
+  "correta": "2,5 vezes maior que o do peso corporal, segundo o gabarito oficial. A biomecânica clássica descreve a relação inversa: o braço dos abdutores é cerca de 2,5 vezes menor.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0109": {
-  "conceito": "### Carga na cabeça femoral\n- Resultante do **peso corporal** somado à **força abdutora** necessária para equilibrar a pelve.\n- No apoio em um membro, chega a cerca de ==3 vezes o peso corporal==.\n\n### Valores de referência\n| Situação | Carga (× peso) |\n|---|---|\n| apoio bipodal (cada quadril) | cerca de 0,3 a 0,5 |\n| elevação da perna estendida | cerca de 1,5 a 2 |\n| ==apoio monopodal / ortostase de referência== | ==cerca de 3== |\n| marcha | 3 a 4 |\n| escadas | acima da marcha |\n| corrida, tropeço | 5 a 8 |\n\n### Por que tão alto\n- O braço de alavanca do peso é cerca de 2,5 vezes o dos abdutores.\n- A força abdutora é, portanto, bem maior que o peso.\n\n> **Na prova:** carga de referência na cabeça femoral = ==3 vezes o peso==.",
-  "correta": "**Cerca de 3 vezes.**\n- Soma vetorial do peso com a força dos abdutores no apoio em um membro.",
   "incorretas": {
-   "A": "**Ignora os abdutores.**\n- Uma vez o peso desconsidera a força muscular, que é a maior parte da conta.",
-   "B": "**Abaixo do valor de referência.**\n- Duas vezes subestima a resultante.",
-   "D": "**Valor da marcha.**\n- Quatro vezes corresponde à marcha, com aceleração, não à postura."
+   "A": "Uma vez o peso do corpo ignora a força dos abdutores, que é a maior parte da carga.",
+   "B": "Duas vezes o peso corporal subestima a carga resultante sobre a cabeça.",
+   "D": "Quatro vezes o peso corresponde à marcha, com aceleração, e não à postura de referência."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A carga sobre a cabeça do fêmur não é só o peso do corpo. Ela é a **soma do peso do corpo com a força que os músculos abdutores fazem** para manter a bacia nivelada.\n\n**Por que os abdutores fazem tanta força?** Quando apoiamos numa perna só, o quadril funciona como uma gangorra. O braço de alavanca do peso do corpo é cerca de **2,5 vezes maior** que o braço dos abdutores. Para equilibrar, os abdutores precisam fazer uma força bem maior que o peso. Somando as duas, a carga na cabeça chega a cerca de **3 vezes o peso corporal**, que é o valor de referência cobrado em prova.\n\n**Valores aproximados, em múltiplos do peso do corpo**:\n\nem pé apoiado nas duas pernas, cada quadril recebe menos que o peso do corpo;\n\nlevantar a perna esticada deitado: cerca de 1,5 a 2 vezes;\n\napoio numa perna só: **cerca de 3 vezes**;\n\nandar: cerca de 3 a 4 vezes;\n\nsubir escadas: mais do que andar;\n\ncorrer ou tropeçar: muito mais, até 5 a 8 vezes.\n\nA questão fala em \"ortostase\", e o valor que a banca adota como referência é o do apoio de carga, **cerca de três vezes o peso**.\n\nEsses números explicam por que medidas simples ajudam tanto quem tem dor no quadril: uma **bengala na mão do lado oposto** e a **perda de peso** reduzem bastante a carga.\n\n**Na prova**: a carga estimada de referência na cabeça femoral é de cerca de 3 vezes o peso corporal.",
+  "correta": "3 vezes o peso corporal. É a soma do peso do corpo com a força dos abdutores necessária para equilibrar a bacia.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0116": {
-  "conceito": "### Soltura da haste cimentada\n- Achados radiográficos:\n  1. **linha radiolucente progressiva** nas interfaces haste-cimento ou cimento-osso;\n  2. **migração**: afundamento e báscula em **varo**;\n  3. **fratura do manto** de cimento;\n  4. fratura ou deformação da haste.\n\n### Mecanismos de falha (Gruen)\n| Modo | Nome | Padrão |\n|---|---|---|\n| Ia | pistão (haste no cimento) | afundamento dentro do manto |\n| Ib | pistão (cimento no osso) | haste e cimento afundam juntos |\n| II | pivô medial no meio | radiolucência ==superolateral== e inferomedial |\n| III | pivô no calcar | radiolucência distal |\n| IV | flexão em balanço | fratura da haste |\n\n### Zonas de Gruen\n- Sete zonas femorais: **1** superolateral (trocânter) até **7** calcar (superomedial); 4 é a ponta.\n\n### Harris (classificação da soltura)\n- **Definitiva:** migração ou fratura do cimento.\n- **Provável:** linha radiolucente contínua em 100% da interface.\n- **Possível:** linha em 50 a 99% da interface.\n\n> **Na prova:** o gabarito aceita a radiolucência ==superolateral== entre haste e cimento; a haste solta bascula para ==varo==.",
-  "correta": "**Descolamento proximal lateral.**\n- A radiolucência superolateral entre haste e cimento indica que a haste está se soltando.\n- É a metade proximal do padrão em pivô, que também tem o componente inferomedial.",
   "incorretas": {
-   "B": "**Sentido invertido.**\n- A haste solta bascula para varo: o topo desloca-se medialmente e a ponta encosta na cortical lateral.",
-   "C": "**Metade distal do mesmo padrão.**\n- A radiolucência inferomedial também é descrita no descolamento.\n- É idêntica à alternativa D (veja o alerta).",
-   "D": "**Idêntica à C.**\n- As duas alternativas trazem o mesmo texto (veja o alerta)."
+   "B": "A haste solta inclina para varo, e não para valgo: a parte de cima vai para dentro e a ponta encosta no lado de fora.",
+   "C": "A linha inferomedial também é descrita na soltura, como a outra metade do padrão em pivô, e esta alternativa é idêntica à D (veja o alerta).",
+   "D": "Esta alternativa tem exatamente o mesmo texto da C (veja o alerta)."
   },
+  "conceito": "Uma **haste cimentada** está fixa dentro do fêmur por uma camada de **cimento ósseo**. Com o tempo, ela pode **se soltar**, seja entre a haste e o cimento, seja entre o cimento e o osso. Na radiografia, os sinais de soltura são:\n\numa **linha radiolucente** (uma faixa escura) que vai aumentando nas interfaces haste-cimento ou cimento-osso;\n\n**migração** da haste: ela afunda ou **inclina em varo** (a parte de cima vai para dentro e a ponta encosta no lado de fora do osso);\n\n**fratura do manto de cimento**;\n\nquebra ou deformação da própria haste.\n\n**Os padrões de falha de Gruen**: uma das formas mais típicas é a haste funcionando como um **pivô** (girando dentro do cimento), que produz linhas escuras **em cima e do lado de fora** (superolateral) e **embaixo e do lado de dentro** (inferomedial). Outras formas são a haste afundando como um pistão e a haste quebrando por fadiga.\n\nPara descrever onde estão essas linhas, o fêmur é dividido nas **zonas de Gruen**, de 1 (em cima, do lado de fora, perto do trocânter) a 7 (em cima, do lado de dentro, o calcar), com a zona 4 na ponta da haste.\n\n**A classificação de Harris** gradua a certeza da soltura: **definitiva** quando há migração ou fratura do cimento; **provável** quando a linha escura ocupa toda a interface; **possível** quando ocupa metade ou mais.\n\nO gabarito aceita a linha **superolateral** entre a haste e o cimento, que é a metade de cima do padrão em pivô (veja o alerta sobre as alternativas C e D).\n\n**Na prova**: a radiolucência superolateral entre haste e cimento indica soltura; a haste solta inclina em varo.",
+  "correta": "Radioluscência entre o terço superolateral da haste e o manto de cimento adjacente. Ela mostra que a haste está se descolando do cimento na parte de cima, metade do padrão em pivô.",
   "alerta": "Esta questão tem duas alternativas idênticas: a C e a D dizem exatamente a mesma coisa (radioluscência entre o terço inferomedial da haste e o manto de cimento). Vale registrar também que essa radioluscência inferomedial é, ela própria, um sinal descrito de descolamento, o padrão clássico do afrouxamento cimentado é justamente o par superolateral mais inferomedial, produzido pela haste que pivota dentro do cimento. A alternativa marcada como certa é apenas metade desse par.",
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0117": {
@@ -1203,52 +1203,52 @@
   "conferido": false
  },
  "quadril-0118": {
-  "conceito": "### Extensão da necrose: o melhor preditor\n- Procedimentos de preservação dependem de sobrar **osso viável** para sustentar a superfície de carga.\n- Formas de medir:\n  - ==percentual da cabeça acometida== (Steinberg: A < 15%, B 15 a 30%, C > 30%);\n  - **ângulo necrótico combinado** (Kerboul modificado): soma dos arcos no coronal e no sagital da RM;\n  - **localização** (JIC: tipos A a C conforme a zona de carga).\n\n### Pontos de corte práticos\n| Medida | Bom prognóstico | Mau prognóstico |\n|---|---|---|\n| percentual da cabeça | abaixo de 15 a 20% | ==acima de 30%== |\n| ângulo combinado | abaixo de 190° | acima de 240° |\n| localização | medial | lateral, na zona de carga |\n\n### Opções de preservação\n- Descompressão do núcleo (com ou sem células ou enxerto).\n- Enxerto de fíbula vascularizada.\n- Osteotomias rotacionais (Sugioka) ou de varo.\n\n> **Na prova:** acima de ==30%== de acometimento, a preservação da cabeça funciona pior.",
-  "correta": "**Cerca de 30%.**\n- Acima dessa extensão sobra pouco osso viável na zona de carga.\n- O sucesso dos procedimentos de preservação cai de forma marcada.",
   "incorretas": {
-   "A": "**Lesão pequena.**\n- Com 10%, os procedimentos de preservação têm bom resultado.",
-   "B": "**Ainda favorável.**\n- 20% está na faixa em que a preservação ainda funciona.",
-   "D": "**Além do ponto de corte.**\n- Com 40%, os resultados já pioraram bastante."
+   "A": "Com 10% de acometimento, a lesão é pequena, e as cirurgias de preservação costumam ter bom resultado.",
+   "B": "20% ainda está na faixa em que a preservação funciona relativamente bem.",
+   "D": "Com 40%, os resultados já pioraram bastante. O ponto a partir do qual o sucesso começa a cair é cerca de 30%."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **osteonecrose da cabeça do fêmur**, uma parte do osso da cabeça morre por falta de sangue. Nos pacientes jovens, tenta-se **preservar a cabeça** com cirurgias como a descompressão do núcleo (perfurar a cabeça), o enxerto vascularizado de fíbula e as osteotomias que giram a cabeça.\n\n**O que decide se essas cirurgias vão funcionar?** O melhor preditor é o **tamanho da necrose**. Para a cabeça não afundar, precisa sobrar **osso vivo** suficiente para sustentar a área que recebe peso.\n\n**Formas de medir o tamanho**:\n\npelo **percentual da cabeça** acometida, como na classificação de Steinberg: A (menos de 15%), B (15% a 30%) e C (mais de 30%);\n\npelo **ângulo necrótico combinado** (Kerboul), que soma os arcos da lesão em dois cortes da ressonância;\n\npela **localização**: lesões na parte de dentro da cabeça têm melhor prognóstico que as que ficam na área de carga, do lado de fora.\n\n**O ponto de corte prático**: lesões pequenas, até cerca de 15% a 20%, têm bom prognóstico. Acima de **30%** de acometimento, sobra pouco osso vivo na área de carga, e o sucesso das cirurgias de preservação **cai bastante**. Nesses casos, a cabeça tende a afundar, e muitas vezes a artroplastia acaba sendo necessária.\n\n**Na prova**: acima de cerca de 30% de acometimento, os procedimentos de preservação da cabeça femoral funcionam pior.",
+  "correta": "30%. Acima dessa extensão sobra pouco osso vivo para sustentar a área de carga, e o sucesso das cirurgias de preservação cai bastante.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0119": {
-  "conceito": "### Consequências tardias da artrodese do quadril\n- Transferência crônica de movimento e carga para as articulações vizinhas.\n- Sintomas degenerativos em ==15 a 25 anos==, em média.\n\n### Articulações acometidas (frequência aproximada)\n| Região | Queixa |\n|---|---|\n| coluna lombar | lombalgia (a mais comum, cerca de 60%) |\n| joelho ipsilateral | dor e instabilidade (cerca de 45%) |\n| quadril contralateral | dor (cerca de 25%) |\n\n### Fatores que aceleram\n- Posição inadequada da fusão, sobretudo em **abdução** (obliquidade pélvica).\n- Flexão excessiva ou insuficiente.\n- Idade avançada na artrodese; atividade intensa.\n\n### Conversão para artroplastia\n- Indicação principal: **lombalgia ou dor no joelho**.\n- Resultado inferior ao de uma ATQ primária: abdutores atróficos, mais luxação e infecção.\n\n> **Na prova:** sintomas nas vizinhas após artrodese = ==15 a 25 anos==.",
-  "correta": "**Janela clássica.**\n- A degeneração da coluna, do joelho e do outro quadril costuma ficar sintomática entre 15 e 25 anos após a fusão.",
   "incorretas": {
-   "A": "**Curto demais.**\n- Cinco a dez anos é cedo para a degeneração clássica das vizinhas.",
-   "C": "**Sobrepõe, mas não é a faixa cobrada.**\n- Dez a vinte anos antecipa o intervalo classicamente descrito.",
-   "D": "**Tardio demais.**\n- Vinte e cinco a trinta anos passa da faixa usual."
+   "A": "Cinco a dez anos é cedo demais para o desgaste clássico das articulações vizinhas.",
+   "C": "Dez a vinte anos antecipa o intervalo classicamente descrito, que é de 15 a 25 anos.",
+   "D": "Vinte e cinco a trinta anos passa da faixa usual, já que os sintomas costumam aparecer antes."
   },
+  "conceito": "A **artrodese do quadril** é a fusão definitiva da articulação: a cabeça do fêmur é unida ao acetábulo e o quadril deixa de se mover. Ela foi muito usada no passado em pacientes jovens com quadril destruído (por trauma ou infecção), porque elimina a dor e permite trabalho pesado.\n\n**O preço vem com o tempo.** Como o quadril não se move mais, o movimento e a carga são **transferidos** para as articulações vizinhas, que passam a trabalhar mais do que deveriam. Depois de muitos anos, elas se desgastam e passam a doer. Esse desgaste costuma ficar **sintomático entre 15 e 25 anos** depois da fusão, em média.\n\n**As regiões mais afetadas**:\n\na **coluna lombar**: a lombalgia é a queixa mais comum;\n\no **joelho do mesmo lado**: dor e instabilidade;\n\no **quadril do outro lado**.\n\n**O que acelera esse desgaste**: a fusão feita em **posição ruim**, principalmente com a coxa aberta (em abdução, o que inclina a bacia), ou com flexão demais ou de menos; idade mais avançada na época da fusão; e atividade física intensa.\n\n**Conversão para prótese**: quando a coluna ou o joelho começam a doer muito, a artrodese pode ser transformada em artroplastia. O resultado, porém, é inferior ao de uma prótese comum, porque os músculos abdutores ficaram fracos depois de anos sem uso, e há mais luxação e infecção.\n\n**Na prova**: os sintomas nas articulações vizinhas aparecem cerca de 15 a 25 anos depois da artrodese do quadril.",
+  "correta": "15 a 25 anos. É o intervalo clássico em que a sobrecarga da coluna, do joelho e do outro quadril costuma se tornar sintomática.",
   "alerta": "O tempo é uma média histórica e varia com idade na artrodese, posição da fusão, atividade e estado das articulações adjacentes.",
   "referencias": [
    "Callaghan JJ et al. Hip arthrodesis: a long-term follow-up. J Bone Joint Surg Am.",
    "Campbell's Operative Orthopaedics. Hip arthrodesis."
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0120": {
-  "conceito": "### Protrusão acetabular\n- Cabeça femoral e fundo do acetábulo **medializados**, ultrapassando a linha ilioisquiática.\n- Critério: fundo acetabular medial à linha ilioisquiática em mais de **3 mm (homens)** ou **6 mm (mulheres)**; ângulo centro-borda acima de 40°.\n\n### Pelve de Otto (artrocatadise): forma primária\n| Característica | Perfil |\n|---|---|\n| sexo | ==feminino== |\n| lateralidade | **bilateral** |\n| início | adolescência ou adulto jovem |\n| dor | presente |\n| evolução | artrose precoce, perda de rotação e abdução |\n\n### Formas secundárias\n- **Artrite reumatoide** (causa mais comum), espondilite anquilosante.\n- Paget, osteomalácia, osteogênese imperfeita, Marfan.\n- Sequela de trauma ou infecção; soltura do componente acetabular.\n\n### Na artroplastia\n- Restaurar o centro de rotação com **enxerto no fundo** e componente lateralizado.\n\n> **Na prova:** pelve de Otto = ==mulher, bilateral, jovem, com dor==.",
-  "correta": "**Predomínio feminino.**\n- A protrusão acetabular primária é bem mais frequente em mulheres, geralmente bilateral.",
   "incorretas": {
-   "A": "**É bilateral.**\n- A forma primária costuma ser bilateral; a unilateral sugere causa secundária.",
-   "B": "**Começa cedo.**\n- Os sintomas aparecem na adolescência ou no adulto jovem.",
-   "C": "**Há dor.**\n- A dor, com limitação de rotação e abdução, é o que leva à consulta."
+   "A": "A pelve de Otto costuma ser bilateral. A forma de um lado só sugere uma causa secundária.",
+   "B": "Os sintomas começam cedo, na adolescência ou no adulto jovem, e não na velhice.",
+   "C": "A dor está presente e, junto com a perda de rotação e abdução, é o que leva o paciente à consulta."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **protrusão acetabular** é o afundamento do fundo do acetábulo para dentro da pelve, levando a cabeça do fêmur junto. Na radiografia, o fundo do acetábulo ultrapassa uma linha de referência, a **linha ilioisquiática**.\n\nA **pelve de Otto** é a forma **primária** dessa condição, sem uma doença que a explique. Seu perfil é bem característico:\n\n**sexo**: é **mais comum em mulheres**;\n\n**lateralidade**: costuma ser **bilateral**, nos dois quadris;\n\n**início**: na **adolescência** ou no adulto jovem;\n\n**sintomas**: **dor**, com perda da rotação e da abdução (afastar a coxa);\n\n**evolução**: artrose precoce.\n\nA protrusão também pode ser **secundária**, causada por outras doenças: a **artrite reumatoide** é a mais comum, mas também a espondilite anquilosante, a doença de Paget, a osteomalácia, a osteogênese imperfeita, a síndrome de Marfan, sequelas de trauma ou infecção e a soltura da taça de uma prótese. Nesses casos, ela pode ser de um lado só.\n\nNa **artroplastia**, o cirurgião precisa reconstruir o fundo do acetábulo com **enxerto ósseo** e levar a taça de volta para a posição normal.\n\n**Na prova**: entre as características mais frequentes da pelve de Otto está o predomínio em mulheres.",
+  "correta": "Mais comum em mulheres. A protrusão acetabular primária predomina no sexo feminino e costuma ser bilateral.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0121": {
-  "conceito": "### Resurfacing do quadril\n- Preserva o **colo femoral** e reveste a cabeça com uma capa metálica, articulando com componente acetabular metálico (metal-metal).\n- A cabeça tem o **diâmetro anatômico**, muito maior que a de uma ATQ convencional.\n\n### Por que luxa pouco\n- ==Jump distance== maior: a cabeça precisa subir mais até escapar (proporcional ao raio).\n- Melhor **relação cabeça-colo**: o colo demora a impactar na borda.\n- Luxação: ==menos de 1% (cerca de 0,3%)==, contra cerca de 2 a 3% na ATQ primária.\n\n### Problemas próprios\n| Complicação | Comentário |\n|---|---|\n| **fratura do colo** | a mais típica, geralmente no primeiro ano; notch no colo aumenta o risco |\n| íons metálicos | cobalto e cromo elevados no sangue |\n| ALVAL / pseudotumor | reação adversa a partículas metálicas |\n| necrose da cabeça | pela lesão vascular do acesso |\n\n### Candidato ideal\n- **Homem jovem**, ativo, cabeça grande, boa qualidade óssea.\n- Evitar em mulheres, cabeça pequena, cistos grandes, osteoporose e insuficiência renal.\n\n> **Na prova:** luxação após resurfacing = ==cerca de 0,3%==.",
-  "correta": "**Taxa muito baixa.**\n- A cabeça de diâmetro anatômico aumenta a jump distance e a relação cabeça-colo.\n- A luxação fica bem abaixo de 1%.",
   "incorretas": {
-   "B": "**Taxa da ATQ convencional.**\n- Cerca de 2 a 3% é a ordem de grandeza da artroplastia total primária.",
-   "C": "**Alta demais.**\n- Seria uma taxa elevada até para revisão.",
-   "D": "**Incompatível com o desenho.**\n- 15% é cenário de instabilidade recorrente."
+   "B": "Cerca de 3% é a ordem de grandeza da luxação na artroplastia total convencional, e não no resurfacing.",
+   "C": "7% seria uma taxa alta até para uma cirurgia de revisão.",
+   "D": "15% corresponde a um cenário de instabilidade de repetição, incompatível com o desenho do resurfacing."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **resurfacing** (ou \"recapeamento\") do quadril é um tipo de prótese que **preserva o colo do fêmur**. Em vez de cortar a cabeça e colocar uma haste dentro do osso, o cirurgião apenas **raspa a cabeça** e a cobre com uma **capa de metal**. Essa capa articula com uma taça também de metal (um par **metal com metal**).\n\n**Por que ele luxa tão pouco?** Porque a capa mantém o **tamanho natural da cabeça**, que é bem maior que a cabeça de uma prótese total convencional. Uma cabeça maior traz duas vantagens:\n\numa **jump distance** maior: a cabeça precisa se deslocar mais (cerca do próprio raio) até chegar à borda da taça e escapar;\n\numa melhor **relação cabeça-colo**: o colo demora mais a bater na borda da taça.\n\nResultado: a taxa de luxação fica **bem abaixo de 1%**, em torno de **0,3%**, enquanto na prótese total convencional fica em torno de 2% a 3%.\n\n**Mas o resurfacing tem problemas próprios**:\n\n**fratura do colo** do fêmur, a complicação mais típica, geralmente no primeiro ano;\n\n**íons metálicos** (cobalto e cromo) no sangue, liberados pelo desgaste do metal;\n\n**reações nos tecidos** às partículas metálicas, que podem formar massas chamadas pseudotumores;\n\n**necrose da cabeça**, por lesão dos vasos no acesso.\n\nPor isso, ele é indicado para um perfil restrito: **homens jovens** e ativos, com cabeça grande e osso de boa qualidade. Deve ser evitado em mulheres, cabeças pequenas, osteoporose e insuficiência renal.\n\n**Na prova**: o risco de luxação após o resurfacing é de cerca de 0,3%.",
+  "correta": "0,3%. A cabeça de tamanho natural aumenta a jump distance e a relação cabeça-colo, e a luxação fica bem abaixo de 1%.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0122": {
