@@ -3330,228 +3330,228 @@
   "conferido": false
  },
  "quadril-0312": {
-  "conceito": "### Evolução das cerâmicas\n| Geração | Material | Avanço |\n|---|---|---|\n| 1ª (anos 1970) | alumina com grãos grandes | fraturas frequentes |\n| 2ª e 3ª | alumina mais pura, grãos menores, **HIP** (prensagem isostática a quente), prova de carga individual | ==menos fraturas== |\n| ==4ª (Delta)== | ==compósito: cerca de 82% alumina + 17% zircônia== (mais óxidos de estrôncio e cromo) | tenacidade muito maior |\n\n### O que reduziu a fratura\n- Principalmente a ==melhora dos processos industriais==: pureza, **grão menor**, menor porosidade, HIP, **teste de prova** de cada peça, laser marking.\n- Também: desenho do cone (taper) e técnica (evitar impactar cabeça em cone sujo ou danificado).\n\n### Zircônia pura\n- Teve problemas de **transformação de fase** (envelhecimento) e recolhimentos; abandonada como material isolado.\n\n### Taxa atual de fratura\n- Cabeças Delta: da ordem de **0,002%** ou menos.\n\n> **Na prova:** fator principal = ==processo industrial==; Delta = ==82% alumina e 17% zircônia==.",
-  "correta": "**Fabricação e composição.**\n- O processo industrial (pureza, grão fino, HIP, teste de prova) foi o maior fator de redução de fraturas.\n- A cerâmica Delta tem cerca de 82% de alumina e 17% de zircônia.",
   "incorretas": {
-   "B": "**Não houve troca total.**\n- A zircônia pura teve problemas; a Delta mantém a alumina majoritária.",
-   "C": "**Composição errada.**\n- A alumina é o componente principal da Delta.",
-   "D": "**Relação direta.**\n- A fabricação foi o fator mais importante."
+   "B": "Não houve troca completa da alumina por zircônia pura, que teve problemas de envelhecimento; a melhora veio principalmente da fabricação.",
+   "C": "A cerâmica Delta tem a alumina como componente principal, e não é feita de zircônia pura.",
+   "D": "Os processos industriais têm relação direta com o risco de fratura, e foram justamente o fator mais importante."
   },
+  "conceito": "As **cerâmicas** são usadas na prótese de quadril porque são **muito duras** e desgastam muito pouco. O grande receio sempre foi a **fratura** da peça cerâmica, já que a cerâmica é frágil.\n\n**Como as cerâmicas evoluíram**:\n\nnas primeiras gerações, nos anos 1970, a cerâmica de **alumina** tinha grãos grandes e impurezas, e as fraturas eram frequentes;\n\nnas gerações seguintes, a alumina ficou mais pura, com grãos menores, e passou a ser comprimida a quente sob alta pressão (um processo chamado HIP), além de cada peça passar por um **teste de carga individual** antes de sair da fábrica. As fraturas diminuíram muito;\n\na geração atual, a cerâmica **Delta**, é um **compósito**: cerca de **82% de alumina** e **17% de zircônia** (mais pequenas quantidades de outros óxidos). A zircônia aumenta muito a resistência à fratura.\n\n**O que mais reduziu as fraturas?** Principalmente a **melhora dos processos industriais de fabricação**: maior pureza, grãos menores, menos poros, a prensagem a quente e o teste de cada peça. Isso pesou mais do que uma mudança radical na composição. A técnica cirúrgica também importa: nunca encaixar uma cabeça cerâmica num cone sujo ou danificado.\n\n**A zircônia pura**, usada sozinha no passado, teve problemas: com o tempo ela mudava de estrutura (envelhecimento) e foi retirada do mercado. Por isso a Delta mantém a **alumina como componente principal**.\n\nHoje, a taxa de fratura das cabeças Delta é extremamente baixa.\n\n**Na prova**: o fator mais importante para reduzir a fratura foi a melhora do processo industrial, e a cerâmica Delta tem cerca de 82% de alumina e 17% de zircônia.",
+  "correta": "O fator mais importante foi a melhora dos processos industriais de fabricação, mais do que uma mudança na composição básica, e a cerâmica Delta tem cerca de 82% de alumina e 17% de zircônia.",
   "referencias": [
    "The Adult Hip, John J. Callaghan et al. (editores)"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0313": {
-  "conceito": "### Comportamento mecânico dos biomateriais\n| Material | Comportamento | Falha |\n|---|---|---|\n| ==alumina, cerâmicas== | ==elástico linear, frágil== | ==súbita, sem deformação plástica== |\n| metais (aço, titânio, cromo-cobalto) | elástico e depois **plástico** (dúctil) | deforma antes de romper |\n| polietileno, PMMA | **viscoelástico** | fluência (creep), relaxamento de tensão |\n| osso | viscoelástico, anisotrópico | |\n\n### Consequências clínicas da fragilidade\n- Não há \"aviso\" de deformação: a cerâmica **fratura de repente**.\n- Sensível a **defeitos** e concentração de tensão (arranhões, cone danificado, edge loading).\n- Alta **dureza** e **resistência ao desgaste**, baixa **tenacidade à fratura**.\n\n### Após fratura de cerâmica\n- Revisão com sinovectomia ampla e nova cabeça **cerâmica** (fragmentos residuais destroem cabeça metálica, causando metalose).\n\n> **Na prova:** alumina = ==elástica linear e frágil, sem deformação plástica antes de romper==.",
-  "correta": "**Frágil, sem aviso.**\n- A alumina se deforma proporcionalmente à carga e fratura sem deformação plástica.\n- A falha é súbita.",
   "incorretas": {
-   "B": "**Comportamento de metal.**\n- A deformação plástica antes de romper é típica dos metais.",
-   "C": "**Não há aviso.**\n- Sem deformação plástica, não se prevê a fratura.",
-   "D": "**É típico da cerâmica.**\n- Os polímeros são viscoelásticos, não elásticos lineares."
+   "B": "A deformação plástica antes de romper é típica dos metais, e não da alumina.",
+   "C": "Justamente por não se deformar plasticamente, a alumina não dá aviso de que vai fraturar.",
+   "D": "O comportamento elástico linear é típico das cerâmicas; os polímeros são viscoelásticos."
   },
+  "conceito": "Os materiais usados em ortopedia se comportam de formas diferentes quando recebem carga, e entender isso ajuda a prever como cada um falha.\n\n**Comportamento elástico linear**: o material se **deforma na proporção da carga** e volta à forma original quando a carga é retirada. Mas, ao passar de um certo limite, ele **fratura de uma vez**, sem antes se deformar de forma permanente. Esse é o comportamento **frágil**, típico da **alumina** e das outras **cerâmicas**.\n\n**Comportamento plástico** (dúctil): depois da fase elástica, o material passa a se **deformar de forma permanente** (entorta) antes de romper. É o comportamento dos **metais** (aço, titânio, cromo-cobalto). A deformação funciona como um \"aviso\" antes da falha.\n\n**Comportamento viscoelástico**: a deformação depende do tempo de aplicação da carga, com fluência (o material vai cedendo sob carga constante). É típico do **polietileno**, do cimento ósseo e do próprio osso.\n\n**As consequências clínicas da fragilidade da cerâmica**:\n\n**não há aviso**: como não se deforma antes de quebrar, a cerâmica **fratura de repente**;\n\nela é sensível a pequenos **defeitos** e concentrações de tensão, como arranhões, um cone danificado ou carga concentrada na borda;\n\nem compensação, tem altíssima **dureza** e **resistência ao desgaste**.\n\n**Depois de uma fratura de cerâmica**, a revisão exige retirar todos os fragmentos e usar uma nova cabeça **cerâmica**, porque os restos de cerâmica destroem uma cabeça de metal.\n\n**Na prova**: a alumina tem comportamento elástico linear, frágil, sem deformação plástica antes de fraturar.",
+  "correta": "Apresenta comportamento elástico linear, sem deformação plástica antes de fraturar, um comportamento frágil, sem um estágio de deformação que sirva de aviso.",
   "referencias": [
    "The Adult Hip, John J. Callaghan et al. (editores)"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0314": {
-  "conceito": "### Curva tensão-deformação\n| Propriedade | Definição |\n|---|---|\n| módulo de elasticidade (Young) | inclinação da parte elástica: **rigidez** |\n| limite de escoamento | fim da zona elástica |\n| resistência máxima | maior tensão suportada |\n| ==resiliência== | ==energia absorvida na zona elástica== (área sob a curva até o escoamento) |\n| ==tenacidade== | ==energia total absorvida até a fratura== (área total sob a curva) |\n| ductilidade | deformação plástica antes de romper |\n| dureza | resistência à indentação e ao risco |\n\n### Relação\n- A resiliência é **parte** da tenacidade.\n- De modo geral, materiais mais resilientes tendem a ser mais tenazes.\n- **Cerâmica:** muito dura, pouco tenaz (frágil). **Metais:** tenazes (grande zona plástica).\n\n> **Na prova:** resiliência = ==energia elástica==; tenacidade = ==energia até a fratura==.",
-  "correta": "**Definições certas.**\n- Resiliência é a energia absorvida até o escoamento.\n- Tenacidade é a energia total até a fratura; mais resiliência tende a acompanhar mais tenacidade.",
   "incorretas": {
-   "A": "**Há relação.**\n- A energia elástica compõe parte da energia total até a fratura.",
-   "C": "**Definições trocadas.**\n- Resiliência é elástica; tenacidade, total.",
-   "D": "**Não são sinônimos.**\n- Medem partes diferentes da curva."
+   "A": "Há relação entre as duas: a energia elástica (resiliência) é parte da energia total até a fratura (tenacidade).",
+   "C": "As definições estão trocadas: a resiliência é a energia elástica, e a tenacidade é a energia total até a fratura.",
+   "D": "Resiliência e tenacidade não são sinônimos: medem partes diferentes da curva tensão-deformação."
   },
+  "conceito": "Quando um material recebe carga, seu comportamento pode ser desenhado numa **curva tensão-deformação**. Algumas propriedades vêm dessa curva:\n\n**Módulo de elasticidade**: a inclinação da parte inicial da curva. Mede a **rigidez** do material.\n\n**Limite de escoamento**: o ponto em que termina a **zona elástica**. Até ali, o material volta à forma original quando a carga é retirada; depois, passa a se deformar de forma permanente.\n\n**Resistência máxima**: a maior tensão que o material suporta.\n\n**Resiliência**: a **energia** que o material **absorve na zona elástica**, ou seja, até o limite de escoamento. É a área sob a curva até esse ponto.\n\n**Tenacidade**: a **energia total** que o material absorve **até fraturar**. É a área sob toda a curva.\n\n**Ductilidade**: o quanto o material se deforma de forma permanente antes de romper.\n\n**Dureza**: a resistência a ser riscado ou marcado.\n\n**A relação entre resiliência e tenacidade**: a resiliência é **uma parte** da tenacidade (a parte elástica da energia total). De forma geral, materiais **mais resilientes** tendem a ser **mais tenazes**.\n\n**Exemplos**: a **cerâmica** é muito dura, mas pouco tenaz (frágil, quebra de repente). Os **metais** são tenazes, porque absorvem muita energia na grande zona plástica antes de romper.\n\n**Na prova**: resiliência é a energia absorvida na zona elástica, e tenacidade é a energia total até a fratura; maior resiliência tende a acompanhar maior tenacidade.",
+  "correta": "A resiliência é a energia absorvida na zona elástica, até o escoamento, e a tenacidade é a energia total até a fratura; quanto maior a resiliência, maior tende a ser a tenacidade.",
   "referencias": [
    "The Adult Hip, John J. Callaghan et al. (editores)"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0315": {
-  "conceito": "### Reabilitação após artroscopia do quadril (4 fases)\n| Fase | Período aproximado | Objetivos | Critério para avançar |\n|---|---|---|---|\n| 1: proteção | 0 a 4 semanas | ==dor, ADM protegida, evitar perda de massa magra==, carga parcial | ==carga total==, ADM cerca de 75% do contralateral |\n| 2: intermediária | 4 a 8 semanas | ADM completa, marcha normal sem Trendelenburg e sem apoio | marcha normal |\n| 3: avançada | 8 a 12 semanas | força, endurance, treino funcional e proprioceptivo | força e controle adequados |\n| 4: ==retorno ao esporte== | ==8 a 16 semanas== | gestos específicos do esporte | ==força de flexão > 85% do contralateral== e ==movimentos em velocidade máxima== |\n\n### Cuidados específicos\n- Evitar flexão acima de 90° e rotação externa extrema nas primeiras semanas (reparo labral, capsulorrafia).\n- Bicicleta estacionária precoce sem carga.\n- Profilaxia de ossificação heterotópica (AINE) em alguns protocolos.\n\n> **Na prova:** retorno ao esporte ==8 a 16 semanas==, com ==flexão > 85%== e movimentos em velocidade máxima.",
-  "correta": "**Fases e critérios certos.**\n- A fase inicial controla dor, mantém ADM e massa magra até a carga total.\n- O retorno ao esporte (8 a 16 semanas) exige flexão acima de 85% e gestos em velocidade máxima.",
   "incorretas": {
-   "B": "**Cedo demais.**\n- O esporte só volta na fase 4, após critérios objetivos.",
-   "C": "**Prazo curto demais.**\n- O retorno ocorre entre 8 e 16 semanas.",
-   "D": "**Critério baixo.**\n- Exige-se mais de 85% de força, não 50%."
+   "B": "O retorno ao esporte só é liberado na última fase, depois de critérios objetivos de força e movimento.",
+   "C": "O retorno ao esporte ocorre entre 8 e 16 semanas, e não entre 2 e 4.",
+   "D": "O critério exigido é mais de 85% de força em relação ao lado sadio, e não apenas 50%."
   },
+  "conceito": "Depois da **artroscopia do quadril** (por exemplo, para tratar o impacto femoroacetabular), a reabilitação é feita em **quatro fases**, e a passagem de uma fase para outra depende de **critérios objetivos**, e não só do tempo.\n\n**Fase 1, proteção** (cerca de 0 a 4 semanas): o foco é **controlar a dor**, **manter o movimento** de forma protegida e **evitar a perda de massa muscular**, com apoio parcial. Avança quando o paciente consegue **apoiar todo o peso**.\n\n**Fase 2, intermediária** (cerca de 4 a 8 semanas): recuperar todo o movimento e voltar a **andar normalmente**, sem mancar e sem apoio.\n\n**Fase 3, avançada** (cerca de 8 a 12 semanas): ganho de força, resistência e treino de equilíbrio e funcional.\n\n**Fase 4, retorno ao esporte** (cerca de **8 a 16 semanas**): treino dos gestos do esporte. O retorno é liberado quando:\n\na **força para dobrar o quadril** (flexão) atinge **mais de 85%** da força do lado sadio;\n\no paciente consegue fazer **todos os movimentos em velocidade máxima**.\n\n**Cuidados nas primeiras semanas**: evitar dobrar o quadril além de 90° e girar demais para fora, para proteger o reparo do lábio e da cápsula. A bicicleta ergométrica sem carga costuma entrar cedo.\n\n**Na prova**: a fase inicial foca dor, movimento e massa muscular até o apoio total; o retorno ao esporte, entre 8 e 16 semanas, exige força de flexão acima de 85% e movimentos em velocidade máxima.",
+  "correta": "A fase inicial prioriza dor, amplitude de movimento e massa magra, até o apoio total; a fase final, entre 8 e 16 semanas, libera o esporte quando a flexão passa de 85% do lado sadio e os movimentos saem em velocidade máxima.",
   "referencias": [
    "The Adult Hip, John J. Callaghan et al. (editores)"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0316": {
-  "conceito": "### Osteotomia periacetabular de Ganz (Berna)\n| Aspecto | Característica |\n|---|---|\n| tipo | ==redirecionamento== (reorientação) do acetábulo |\n| idade | ==esqueleto maduro== (trirradiada fechada) ou adolescente próximo da maturidade |\n| fulcro | ==nem sempre na trirradiada==: o fragmento é livre e reorientado em vários planos |\n| coluna posterior | ==preservada==: pelve estável, ==carga precoce== |\n| acesso | único, anterior (Smith-Petersen modificado) |\n| volume pélvico | mantido (parto vaginal possível) |\n\n### Indicações\n- Displasia sintomática, quadril congruente, Tönnis 0 a 1, boa ADM.\n- PAO reversa na retroversão acetabular.\n\n### Contraindicações\n- ==Artrose avançada== (Tönnis 2 ou 3), incongruência grave, ADM ruim, obesidade importante.\n\n> **Na prova:** Ganz = ==redirecionamento, adulto, coluna posterior preservada (carga precoce), contraindicada na artrose avançada==.",
-  "correta": "**Descrição completa.**\n- Redireciona o acetábulo em esqueleto maduro, com fulcro livre.\n- Preserva a coluna posterior, permitindo carga precoce, e é contraindicada na artrose avançada.",
   "incorretas": {
-   "A": "**Contraindicação.**\n- Na artrose avançada a reorientação não recupera a cartilagem.",
-   "B": "**Coluna preservada.**\n- A integridade da coluna posterior é justamente a vantagem da técnica.",
-   "D": "**Esqueleto maduro.**\n- A trirradiada aberta é pré-requisito de outras osteotomias (Pemberton, Dega)."
+   "A": "A artrose avançada é uma contraindicação, porque girar o acetábulo não recupera a cartilagem perdida.",
+   "B": "A técnica preserva a coluna posterior, e é justamente isso que permite a carga precoce.",
+   "D": "A Ganz é feita no esqueleto maduro e não precisa da cartilagem trirradiada aberta como fulcro."
   },
+  "conceito": "A **osteotomia periacetabular de Ganz** (técnica de Berna) é a cirurgia mais usada hoje para tratar a **displasia do quadril** em adolescentes e adultos jovens. Suas características:\n\n**É uma osteotomia de redirecionamento**: o cirurgião solta o acetábulo da bacia com cortes ao redor dele e o **gira**, para que cubra melhor a cabeça do fêmur.\n\n**O ponto de apoio é livre**: diferente de outras osteotomias da criança, que usam a cartilagem de crescimento (trirradiada) como dobradiça, na Ganz o fragmento fica solto e pode ser girado em vários planos. O fulcro **nem sempre** corresponde à cartilagem trirradiada.\n\n**É feita no esqueleto maduro**: no adulto ou no adolescente perto do fim do crescimento, com a cartilagem trirradiada já fechada.\n\n**Preserva a coluna posterior** da bacia: a parte de trás da bacia continua inteira. Isso deixa a pelve **estável** e permite que o paciente **apoie cedo** depois da cirurgia.\n\nTambém é feita por um único acesso pela frente e não muda o tamanho do canal do parto, permitindo parto normal.\n\n**Indicações**: displasia com sintomas, quadril bem encaixado, pouca ou nenhuma artrose (Tönnis 0 a 1) e bom movimento.\n\n**Contraindicações**: **artrose avançada** (Tönnis 2 ou 3), porque girar o acetábulo não recupera a cartilagem perdida; quadril mal encaixado; pouco movimento; obesidade importante.\n\n**Na prova**: a Ganz é de redirecionamento, com fulcro livre, feita no esqueleto maduro, preserva a coluna posterior (permitindo carga precoce) e é contraindicada na artrose avançada.",
+  "correta": "É uma osteotomia de redirecionamento, com fulcro que nem sempre é a cartilagem trirradiada, feita no esqueleto maduro, que preserva a coluna posterior (permitindo carga precoce) e tem a artrose avançada como contraindicação.",
   "referencias": [
    "The Adult Hip, John J. Callaghan et al. (editores)"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0317": {
-  "conceito": "### Osteotomia femoral proximal (varização ou valgização)\n| Indicações | Contraindicações |\n|---|---|\n| ==jovem (abaixo de 35 anos)== | ==obesidade== |\n| ==quadril congruente== na posição corrigida | ==artrite reumatoide==, inflamatória ou metabólica |\n| ==Tönnis 0 ou 1== | artrose avançada |\n| ==flexão ≥ 90° e abdução ≥ 30°== | rigidez |\n| ==centro de rotação não migrado== | subluxação com centro migrado |\n\n### Varização × valgização\n| Osteotomia | Deformidade | Exame que prevê o resultado |\n|---|---|---|\n| varização | coxa valga displásica, cabeça esférica | radiografia em **abdução** melhora a congruência |\n| valgização | cabeça deformada (Perthes, necrose), coxa vara | radiografia em **adução** melhora a congruência |\n\n### Outros usos\n- Associada à PAO em displasias com deformidade femoral.\n- Osteonecrose (osteotomia de Sugioka, varização) para tirar a lesão da zona de carga.\n\n> **Na prova:** jovem, congruente, Tönnis 0 a 1, boa ADM, centro não migrado; ==contraindicada em obesos e artrites inflamatórias==.",
-  "correta": "**Seleção certa.**\n- Indicada no jovem com quadril congruente, pouca artrose, boa mobilidade e centro não migrado.\n- Contraindicada na obesidade e nas artrites inflamatórias ou metabólicas.",
   "incorretas": {
-   "B": "**São contraindicações.**\n- Obesos e reumatoides têm os piores resultados.",
-   "C": "**Critérios são essenciais.**\n- Congruência e Tönnis definem quem se beneficia.",
-   "D": "**Invertido.**\n- A indicação exige centro de rotação não migrado."
+   "B": "Obesos e pacientes com artrite reumatoide são justamente contraindicações, com os piores resultados.",
+   "C": "A congruência e o grau de artrose (Tönnis) são critérios essenciais para escolher quem se beneficia.",
+   "D": "A indicação exige o centro de rotação não migrado, e não migrado previamente."
   },
+  "conceito": "A **osteotomia femoral proximal** muda o ângulo entre o colo e o corpo do fêmur, para melhorar o encaixe da cabeça no acetábulo. Pode ser de **varização** (diminui o ângulo, deixando o colo mais \"deitado\") ou de **valgização** (aumenta o ângulo, deixando o colo mais \"em pé\"). É uma cirurgia de **preservação** do quadril, ou seja, tenta adiar a necessidade de uma prótese.\n\n**Quem se beneficia** (indicações):\n\npaciente **jovem**, com menos de cerca de 35 anos;\n\nquadril que fica **bem encaixado** (congruente) na posição corrigida;\n\n**pouca ou nenhuma artrose** (Tönnis 0 ou 1);\n\n**bom movimento**: flexão de pelo menos 90° e abdução de pelo menos 30°;\n\n**centro de rotação não migrado**: a cabeça não pode ter subido para fora do lugar.\n\n**Quem não deve fazer** (contraindicações):\n\n**obesos**;\n\npacientes com **artrite reumatoide** ou outras artrites inflamatórias ou metabólicas;\n\nartrose avançada e quadril rígido.\n\n**Como prever o resultado**: faz-se uma radiografia na posição que simula a cirurgia. Para a **varização**, a radiografia em **abdução** deve mostrar melhor encaixe; para a **valgização**, a radiografia em **adução**.\n\n**Na prova**: a osteotomia femoral proximal é indicada em jovens (menos de 35 anos), com quadril congruente, Tönnis 0 ou 1, boa mobilidade e centro não migrado, e contraindicada em obesos e nas artrites inflamatórias.",
+  "correta": "É indicada em jovens com menos de 35 anos, quadril congruente, Tönnis 0 ou 1, boa mobilidade e centro de rotação não migrado; é contraindicada em obesos e na artrite reumatoide ou outras artrites inflamatórias ou metabólicas.",
   "referencias": [
    "The Adult Hip, John J. Callaghan et al. (editores)"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0318": {
-  "conceito": "### Osteotomias periacetabulares de redirecionamento\n| Osteotomia | Técnica | Vantagens | Riscos e limitações |\n|---|---|---|---|\n| ==PAO (Ganz, Berna)== | cortes poliédricos; ==coluna posterior preservada== | grande correção, carga precoce | ==nem todos os cortes sob visão direta==; ==mobilização mais difícil== |\n| ==PARO (periacetabular rotacional)== | fragmento ==esférico== deslocado anterolateralmente; ==acesso trocantérico, visão direta== | corte controlado | ==mais necrose da cabeça==; osteotomia trocantérica fina fratura, grossa lesa retinaculares |\n| ==RAO (rotacional acetabular, Ninomiya)== | osteotomia esférica próxima à articulação | ==não envolve o anel pélvico== | ==sempre usa enxerto==; risco de necrose do fragmento |\n| Wagner (esférica) | semelhante à RAO | | |\n\n### Pontos comuns\n- Indicadas em displasia com quadril congruente e artrose mínima.\n- Todas buscam aumentar a cobertura anterolateral sem alterar o centro de rotação de forma excessiva.\n\n> **Na prova:** PAO = ==coluna posterior preservada, mobilização difícil==; PARO = ==visão direta, mais necrose==; RAO = ==sem anel pélvico, sempre enxerto==.",
-  "correta": "**Comparação correta.**\n- PAO preserva a coluna posterior, mas tem cortes às cegas e mobilização mais difícil.\n- PARO usa visão direta pelo trocânter, com mais necrose; RAO poupa o anel pélvico e sempre usa enxerto.",
   "incorretas": {
-   "A": "**Invertido.**\n- A PARO é feita sob visão direta; a PAO tem cortes sem visão direta.",
-   "B": "**Invertido.**\n- A RAO é justamente a que não envolve o anel pélvico.",
-   "C": "**Invertido.**\n- A PARO tem mais risco de necrose que a PAO."
+   "A": "É o contrário: a PARO é feita sob visão direta, e a PAO tem cortes sem visão direta.",
+   "B": "A RAO é justamente a que não envolve o anel pélvico.",
+   "C": "A PARO tem maior risco de necrose da cabeça que a PAO, e não menor."
   },
+  "conceito": "Existem várias **osteotomias periacetabulares** que **giram o acetábulo** para cobrir melhor a cabeça na displasia. Elas diferem na técnica, nas vantagens e nos riscos:\n\n**PAO** (periacetabular de Ganz, ou de Berna):\n\nos cortes formam um poliedro ao redor do acetábulo;\n\n**preserva a coluna posterior** da bacia, deixando a pelve estável e permitindo carga precoce;\n\na desvantagem é que **nem todos os cortes são feitos sob visão direta** (alguns são feitos \"às cegas\"), o que torna **mais difícil mobilizar** o fragmento.\n\n**PARO** (osteotomia periacetabular rotacional):\n\no fragmento tem forma **esférica** e é deslocado para a frente e para fora;\n\né feita por um **acesso pelo trocânter**, sob **visão direta**;\n\no risco de **necrose da cabeça** é maior. A osteotomia do trocânter precisa ter a espessura certa: se for **fina**, o trocânter pode fraturar; se for **grossa**, pode lesar os **vasos retinaculares**, que nutrem a cabeça.\n\n**RAO** (osteotomia rotacional do acetábulo, de Ninomiya):\n\num corte esférico próximo da articulação;\n\n**não envolve o anel da bacia**;\n\n**sempre usa enxerto** ósseo.\n\nTodas são indicadas em displasias com o quadril bem encaixado e pouca artrose.\n\n**Na prova**: a PAO preserva a coluna posterior mas tem cortes sem visão direta; a PARO usa visão direta pelo trocânter, com mais necrose; a RAO não envolve o anel pélvico e sempre usa enxerto.",
+  "correta": "A PAO preserva a coluna posterior, mas tem cortes sem visão direta e mobilização mais difícil; a PARO usa visão direta pelo trocânter, com mais necrose; a RAO não envolve o anel pélvico e sempre usa enxerto.",
   "referencias": [
    "The Adult Hip, John J. Callaghan et al. (editores)"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0319": {
-  "conceito": "### Haste longa cimentada na revisão femoral\n| Aspecto | Característica |\n|---|---|\n| perfil | ==acima de 70 anos==, baixa demanda |\n| haste | ==200 mm ou mais==; preferir ==polida em dupla cunha== (com ou sem colar) |\n| defeito tratável | cortical até ==2,5 cm abaixo do trocânter menor== (até ==5 cm com tela== em idosos de baixa demanda) |\n| vantagens | fixação imediata, ==facilita corrigir discrepância==, uso em ==fraturas periprotéticas== |\n| contraindicações | ==defeito proximal grave==, ==canal medular muito danificado== (sem osso esponjoso para interdigitação) |\n\n### Alternativas\n| Situação | Opção |\n|---|---|\n| jovem, defeito moderado | haste ==não cimentada longa== (cônica estriada, Wagner, modular, porosa extensa) |\n| canal com cimento bem fixo | **cement-in-cement** |\n| perda óssea extrema | megaprótese, APC (aloenxerto-prótese composta), enxerto impactado |\n\n### Classificação de Paprosky (fêmur)\n- I: perda mínima; II: metáfise comprometida, diáfise íntegra; IIIA: diáfise com mais de 4 cm de istmo; IIIB: menos de 4 cm; IV: istmo ausente.\n\n> **Na prova:** haste longa cimentada = ==idoso > 70 anos, ≥ 200 mm, polida em dupla cunha==; contraindicada em ==defeito proximal grave ou medular extenso==.",
-  "correta": "**Perfil e limites certos.**\n- Idosos acima de 70 anos, hastes de 200 mm ou mais, defeitos até 2,5 cm (5 cm com tela).\n- Contraindicada em defeito proximal grave ou canal extensamente danificado.",
   "incorretas": {
-   "A": "**Perfil invertido.**\n- Jovens recebem haste não cimentada.",
-   "C": "**São contraindicações.**\n- Sem osso para interdigitação, o cimento falha.",
-   "D": "**Facilita a correção.**\n- A haste cimentada permite ajustar o comprimento."
+   "A": "Pacientes jovens recebem preferencialmente haste sem cimento, e não cimentada.",
+   "C": "O defeito proximal grave e o canal extensamente danificado são contraindicações, porque o cimento não tem onde se prender.",
+   "D": "A haste cimentada facilita, e não impede, a correção da diferença de comprimento das pernas."
   },
+  "conceito": "Na **revisão** de uma prótese de quadril, a haste antiga é trocada. Uma das opções é uma **haste longa cimentada**. Ela tem um perfil de paciente e limites bem definidos.\n\n**Quem se beneficia**: principalmente pacientes **acima de 70 anos**, com baixa demanda física.\n\n**Características da técnica**:\n\nhastes de **200 mm ou mais** de comprimento;\n\npreferência por hastes **polidas em dupla cunha** (com ou sem colar), que funcionam bem com o cimento;\n\ntratam defeitos da parede do osso de até **2,5 cm abaixo do trocânter menor**, ou até **5 cm** em idosos de baixa demanda, associando uma **tela** para reconstruir o defeito.\n\n**Vantagens**:\n\ndá **fixação imediata**;\n\n**facilita corrigir a diferença de comprimento** das pernas, porque a haste pode ser cimentada na altura desejada;\n\npode ser usada em **fraturas ao redor da prótese**.\n\n**Contraindicações**: **defeito grave na parte de cima** do fêmur ou **canal medular muito danificado**. O cimento precisa se prender ao osso esponjoso do canal; se não há esse osso, o cimento falha.\n\n**Nesses casos**, ou em pacientes **jovens**, prefere-se uma **haste longa sem cimento** (cônica com estrias ou com revestimento poroso extenso), que se prende no osso de baixo, íntegro.\n\n**Na prova**: a haste longa cimentada é para idosos acima de 70 anos, com hastes de 200 mm ou mais, polidas em dupla cunha, e é contraindicada em defeito proximal grave ou canal extensamente danificado.",
+  "correta": "É considerada em pacientes acima de 70 anos, com hastes de 200 mm ou mais, trata defeitos de até 2,5 cm (ou 5 cm com tela), facilita corrigir o comprimento e usa hastes polidas em dupla cunha, sendo contraindicada em defeito proximal grave ou medular extenso.",
   "referencias": [
    "The Adult Hip, John J. Callaghan et al. (editores)"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0320": {
-  "conceito": "### Haste de Wagner (revisão não cimentada)\n| Característica | Detalhe |\n|---|---|\n| material | ==titânio== |\n| forma | ==reta, cônica== (cerca de 2°) |\n| superfície | ==estrias longitudinais== e ==jateada== |\n| estabilidade | cone dá ==controle axial==; estrias dão ==controle rotacional== |\n| zona de contato | ==7 cm== na descrição original; hoje se prefere ==10 cm== |\n\n### Hastes de revisão cônicas estriadas\n| Tipo | Vantagem | Desvantagem |\n|---|---|---|\n| monobloco (Wagner) | sem junção, forte | ajustar versão e comprimento é mais difícil |\n| ==modular== | ==junção corpo-haste==: ajusta offset, versão e comprimento separadamente | risco de ==fratura na junção== e corrosão |\n\n### Resultados\n- Boa fixação mesmo com grande perda proximal (Paprosky III); reconstrução óssea proximal espontânea frequente.\n- Complicação típica das monobloco antigas: **afundamento** e luxação.\n\n> **Na prova:** Wagner = ==titânio, reta, cônica, estriada, jateada==; contato ==7 cm (original), 10 cm (preferido)==; só a modular tem junção.",
-  "correta": "**Desenho e contato corretos.**\n- Titânio, reta, cônica, estriada e jateada, com controle axial e rotacional.\n- Contato original de 7 cm, hoje 10 cm; só a haste modular tem junção corpo-haste.",
   "incorretas": {
-   "B": "**Material e superfície errados.**\n- A haste de Wagner é de titânio e estriada.",
-   "C": "**Contato curto demais.**\n- O contato preferido é de 10 cm.",
-   "D": "**Monobloco não tem junção.**\n- A junção é própria das modulares."
+   "B": "Polietileno não serve para uma haste femoral, e a ausência de estrias tiraria justamente o controle rotacional; a Wagner é de titânio e estriada.",
+   "C": "Três centímetros seriam insuficientes para estabilizar a haste; a preferência atual é de 10 cm, mais do que os 7 cm originais.",
+   "D": "Monobloco significa peça única, portanto não existe junção entre haste e corpo; essa junção é o que define a haste modular."
   },
+  "conceito": "Na **revisão** de uma prótese de quadril, o fêmur proximal costuma estar destruído: houve soltura, osteólise (perda de osso causada pelas partículas de desgaste) e, muitas vezes, a retirada do implante antigo levou mais osso junto. Por isso a nova haste precisa se apoiar mais abaixo, na **diáfise**, onde ainda existe osso bom.\n\n**A haste de Wagner** foi criada exatamente para isso. Ela tem quatro características que vale decorar:\n\né de **titânio**, metal com módulo de elasticidade mais próximo do osso e ótima osteointegração;\n\né **reta e cônica** (afunila cerca de 2°). O cone, ao ser impactado no canal, trava por encaixe e dá **estabilidade axial**, ou seja, impede que a haste afunde;\n\ntem **estrias longitudinais** (cristas ao longo do comprimento) que \"mordem\" a cortical e dão **estabilidade rotacional**, impedindo que a haste gire;\n\ntem a superfície **jateada**, áspera, que favorece o crescimento ósseo sobre o metal.\n\n**Quanto de contato com o osso**: Wagner descreveu originalmente uma zona de apoio diafisário de **7 cm**. Na prática atual, prefere-se pelo menos **10 cm** de contato para garantir a estabilidade.\n\n**Monobloco versus modular**: a Wagner original é **monobloco**, uma peça única. Isso a torna forte, mas difícil de ajustar: se o cirurgião acerta a fixação distal, pode errar o comprimento ou a versão, e a luxação e o afundamento eram complicações conhecidas. As hastes **modulares** separam a parte distal (que fixa na diáfise) do corpo proximal, permitindo ajustar comprimento, offset e versão independentemente. O preço é ter uma **junção haste-corpo**, que é exclusiva dos modelos modulares e pode sofrer corrosão ou fraturar.\n\n**Na prova**: Wagner é de titânio, reta, cônica, estriada e jateada; contato de 7 cm na descrição original e 10 cm na preferência atual; só a modular tem junção haste-corpo.",
+  "correta": "Todas as informações conferem: titânio, desenho reto, cônico, estriado e jateado com controle axial e rotacional, contato de 7 cm na descrição original e 10 cm na prática atual, e a junção haste-corpo exclusiva das hastes modulares.",
   "referencias": [
    "The Adult Hip, John J. Callaghan et al. (editores)"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0321": {
-  "conceito": "### Stress shielding nas hastes não cimentadas\n| Fator | Efeito |\n|---|---|\n| ==porosidade estendida== | fixação distal, fêmur proximal descarregado |\n| ==módulo de elasticidade alto== (cromo-cobalto) | haste rígida |\n| ==haste de maior calibre== | rigidez à flexão cresce com a ==quarta potência do raio== |\n| osso de baixa densidade pré-operatória | mais perda |\n\n- Exemplo: dobrar o raio multiplica a rigidez por 16.\n\n### Subsidência\n- Migração distal da haste no canal.\n- ==Até 5 mm== nas primeiras semanas ou meses: ==aceitável== (acomodação).\n- ==Acima de 5 mm== ou progressiva: suspeita de ==soltura== (fixação fibrosa).\n\n### Sinais de estabilidade (Engh)\n- Spot welds, ausência de linhas junto à porosidade, atrofia proximal do calcar.\n\n> **Na prova:** mais stress shielding = ==porosidade estendida, módulo alto, haste grossa==; subsidência aceitável ==até 5 mm==.",
-  "correta": "**Fatores e limite corretos.**\n- Porosidade estendida, módulo alto e calibre maior aumentam o stress shielding.\n- Subsidência de até 5 mm é aceitável; acima disso, suspeitar de soltura.",
   "incorretas": {
-   "A": "**Módulo invertido.**\n- Módulo alto, não baixo, aumenta o stress shielding.",
-   "B": "**Relação invertida.**\n- A rigidez cresce com a quarta potência do raio; hastes grossas desviam mais carga.",
-   "D": "**Há tolerância.**\n- Até 5 mm é considerado acomodação."
+   "A": "A ideia está invertida no módulo: é o módulo alto, de hastes mais rígidas, que aumenta o stress shielding; um módulo mais baixo compartilha melhor a carga com o osso.",
+   "B": "A rigidez não é inversamente proporcional ao raio; ela cresce com a quarta potência dele, então são as hastes grossas, e não as finas, que blindam mais.",
+   "D": "Existe uma margem de acomodação: pequenas subsidências iniciais, até cerca de 5 mm, são aceitáveis e não significam soltura."
   },
+  "conceito": "**Stress shielding** (blindagem de estresse) é a perda de osso que acontece quando o implante \"rouba\" a carga que deveria passar pelo osso. Pela **lei de Wolff**, o osso que não recebe carga é reabsorvido. Na prótese de quadril, isso aparece como atrofia do **fêmur proximal** (calcar e região do trocânter menor).\n\n**O que aumenta o stress shielding**:\n\n**porosidade estendida**: se a superfície porosa vai até a parte distal da haste, a fixação acontece lá embaixo e a carga desce pela haste, pulando o fêmur proximal;\n\n**módulo de elasticidade alto**: módulo de elasticidade mede a rigidez do material. Cromo-cobalto é mais rígido que titânio, e uma haste rígida carrega a carga sozinha;\n\n**haste de maior calibre**: a rigidez à flexão de um cilindro cresce com a **quarta potência do raio**. Dobrar o raio deixa a haste 16 vezes mais rígida. Por isso hastes grossas blindam muito mais o osso;\n\nosso de baixa densidade antes da cirurgia também perde mais.\n\n**Subsidência** é o afundamento da haste dentro do canal femoral. Uma pequena migração nas primeiras semanas é normal: a haste se acomoda até encontrar estabilidade. Até **5 mm** é considerado aceitável. Acima disso, ou se a migração continua progredindo, deve-se suspeitar de **soltura**, com fixação fibrosa em vez de óssea.\n\n**Na prova**: aumentam o stress shielding a porosidade estendida, o módulo alto e a haste grossa (rigidez proporcional ao raio elevado à quarta); subsidência aceitável até 5 mm.",
+  "correta": "Porosidade estendida, módulo de elasticidade alto e haste de maior calibre aumentam a blindagem, já que a rigidez à flexão cresce com a quarta potência do raio, e a subsidência de até 5 mm é aceitável, com valores maiores sugerindo soltura.",
   "referencias": [
    "The Adult Hip, John J. Callaghan et al. (editores)"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0322": {
-  "conceito": "### Lubrificação dos pares tribológicos\n- **Ângulo de molhamento (contato):** ângulo que a gota de líquido forma com a superfície.\n- ==Menor ângulo== = líquido se espalha melhor (**maior molhabilidade**) = ==película lubrificante mais uniforme==.\n\n| Material | Molhabilidade |\n|---|---|\n| ==cerâmica== | ==a maior (menor ângulo)== |\n| metal | intermediária |\n| polietileno | menor (hidrofóbico) |\n\n### Por que a cerâmica desgasta pouco\n- Alta **dureza** e resistência a riscos.\n- Superfície muito **lisa** (baixa rugosidade).\n- ==Boa molhabilidade== favorece a lubrificação por filme fluido.\n\n### Regimes de lubrificação\n| Regime | Descrição |\n|---|---|\n| limítrofe | contato direto entre superfícies; mais desgaste |\n| misto | parte fluido, parte contato |\n| filme fluido | superfícies separadas pelo líquido; desgaste mínimo |\n\n> **Na prova:** cerâmica = ==menor ângulo de molhamento, melhor lubrificação==.",
-  "correta": "**Molhabilidade alta.**\n- A cerâmica tem o menor ângulo de molhamento.\n- O líquido se espalha melhor e a lubrificação melhora.",
   "incorretas": {
-   "B": "**Invertido.**\n- Ângulo maior significa pior espalhamento do líquido.",
-   "C": "**Invertido.**\n- A cerâmica tem o menor ângulo, não o maior.",
-   "D": "**Há relação direta.**\n- A molhabilidade influencia o filme lubrificante."
+   "B": "É o contrário: ângulo maior significa que o líquido forma gotas e se espalha mal, piorando a lubrificação.",
+   "C": "A cerâmica tem o menor ângulo de molhamento, e por isso sua lubrificação é a melhor, não a pior.",
+   "D": "O ângulo de molhamento é justamente um dos determinantes da qualidade do filme lubrificante, então a relação existe e é direta."
   },
+  "conceito": "Numa prótese de quadril, a cabeça e o acetábulo deslizam um sobre o outro banhados por líquido articular. Quanto melhor esse líquido forma uma **película** entre as superfícies, menor o atrito e menor o desgaste.\n\n**Ângulo de molhamento** (ou ângulo de contato) é o ângulo que uma gota de líquido forma ao tocar uma superfície. Imagine uma gota sobre um vidro limpo: ela se espalha, e o ângulo é pequeno. Sobre uma superfície encerada, ela fica redonda, e o ângulo é grande.\n\n**Ângulo pequeno** significa que o líquido se espalha bem (o material é **molhável**, hidrofílico). Isso permite uma película lubrificante uniforme, que separa as superfícies.\n\n**Ângulo grande** significa que o líquido forma gotas e não cobre bem a superfície. O material é hidrofóbico e lubrifica pior.\n\n**Os materiais**: a **cerâmica** tem o **menor ângulo de molhamento** de todos os pares de atrito, ou seja, é a mais molhável. O metal fica numa posição intermediária, e o polietileno é o mais hidrofóbico.\n\nSomando a boa molhabilidade à grande dureza e à superfície extremamente lisa, a cerâmica é o material que menos desgasta.\n\n**Na prova**: cerâmica tem o menor ângulo de molhamento, o líquido se espalha melhor e a lubrificação é a melhor.",
+  "correta": "A cerâmica tem o menor ângulo de molhamento, o líquido se distribui melhor sobre ela e a lubrificação é superior.",
   "referencias": [
    "The Adult Hip, John J. Callaghan et al. (editores)"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0323": {
-  "conceito": "### Remodelação cortical com a idade\n- ==Reabsorção endosteal== (superfície interna) supera a ==aposição periosteal== (superfície externa).\n- Resultado: ==cortical mais fina== e ==canal medular mais largo==, com ==diâmetro externo maior==.\n\n### Por que o diâmetro aumenta\n- A aposição periosteal continua, ainda que lenta.\n- Osso mais largo tem maior **momento de inércia**: compensa em parte o afinamento (a resistência à flexão depende da distância do osso ao eixo).\n\n### Diferenças entre os sexos\n| Aspecto | Homens | Mulheres |\n|---|---|---|\n| aposição periosteal | maior | menor |\n| perda endosteal pós-menopausa | menor | ==acelerada== |\n| resultado | melhor preservação da resistência | mais fratura |\n\n### Implicações ortopédicas\n- Canal largo e cortical fina: fêmur **Dorr C**, haste cimentada preferida.\n- Parafusos e placas com menos pega cortical: considerar bloqueio.\n\n> **Na prova:** envelhecimento = ==cortical fina com diâmetro externo maior==, reabsorção endosteal > aposição periosteal.",
-  "correta": "**Afina por dentro, alarga por fora.**\n- A reabsorção endosteal supera a aposição periosteal.\n- A cortical afina e o diâmetro externo aumenta.",
   "incorretas": {
-   "A": "**Diâmetro aumenta.**\n- O contorno externo se alarga com a idade.",
-   "B": "**Diâmetro muda.**\n- Ele aumenta ao longo da vida.",
-   "C": "**Mecanismo invertido.**\n- O afinamento vem da reabsorção endosteal, não da aposição periosteal."
+   "A": "O diâmetro externo não diminui; como a aposição periosteal continua, ainda que lenta, o contorno do osso se alarga.",
+   "B": "O diâmetro muda sim ao longo da vida, aumentando aos poucos pela aposição periosteal.",
+   "C": "O mecanismo está invertido: a aposição periosteal acrescenta osso por fora, e o afinamento vem da reabsorção endosteal por dentro."
   },
+  "conceito": "O osso não é estático: ao longo da vida ele é constantemente reabsorvido e formado. Na diáfise de um osso longo como o fêmur, isso acontece em duas superfícies:\n\na **superfície endosteal**, a parte de dentro da cortical, voltada para o canal medular;\n\na **superfície periosteal**, a parte de fora, coberta pelo periósteo.\n\n**O que acontece com o envelhecimento**: a **reabsorção endosteal** (osso sendo retirado por dentro) é maior do que a **aposição periosteal** (osso sendo depositado por fora). O resultado é que o canal medular se alarga, a **cortical fica mais fina** e, como ainda há algum depósito por fora, o **diâmetro externo do osso aumenta**.\n\n**Por que isso faz sentido biomecanicamente**: a resistência de um tubo à flexão depende muito da distância do material até o centro. Um osso mais largo, mesmo com parede mais fina, preserva parte da sua resistência. É uma compensação parcial do organismo.\n\nNas mulheres, a perda endosteal se acelera depois da menopausa e a aposição periosteal é menor, o que ajuda a explicar a maior frequência de fraturas por fragilidade.\n\n**Na prática ortopédica**: o fêmur do idoso tende a ter canal largo e cortical fina (o tipo C de Dorr, em \"chaminé\"), o que influencia a escolha de hastes cimentadas na artroplastia.\n\n**Na prova**: com o envelhecimento a cortical afina e o diâmetro externo aumenta, porque a reabsorção endosteal supera a aposição periosteal.",
+  "correta": "O afinamento cortical da idade vem com aumento do diâmetro externo, porque a reabsorção por dentro supera a deposição por fora.",
   "referencias": [
    "The Adult Hip, John J. Callaghan et al. (editores)"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0324": {
-  "conceito": "### Ângulo de Southwick (epifisiólise)\n- Ângulo **epífise-diáfise**: linha perpendicular à base da epífise × eixo da diáfise.\n- Medido no **perfil** (rã ou Lauenstein) e no AP.\n- ==Ângulo de escorregamento = ângulo do lado doente − valor normal==.\n| Incidência | Valor de referência |\n|---|---|\n| AP | ==145°== |\n| perfil | ==10°== (retroversão normal) |\n\n- Se o outro lado é normal, usa-se o ==lado contralateral== como referência.\n\n### Gravidade (perfil)\n| Grau | Ângulo de escorregamento |\n|---|---|\n| leve | < 30° |\n| moderado | 30 a 50° (ou 60°) |\n| grave | > 50° (ou 60°) |\n\n### Outras classificações\n- **Loder:** estável (marcha possível) × instável (não deambula): risco de necrose muito maior no instável.\n- **Wilson:** % de deslocamento da epífise em relação à largura da metáfise.\n\n> **Na prova:** Southwick = referências de ==145° no AP e 10° no perfil==.",
-  "correta": "**145° e 10°.**\n- O ângulo de escorregamento é a diferença entre o lado doente e esses valores normais.\n- 145° no AP e 10° no perfil.",
   "incorretas": {
-   "B": "**AP errado.**\n- A referência no AP é 145°.",
-   "C": "**Perfil errado.**\n- A referência no perfil é 10°.",
-   "D": "**Os dois errados.**\n- Os valores corretos são 145° e 10°."
+   "B": "O perfil está certo, mas a referência no AP é 145°, e não 135°.",
+   "C": "O AP está certo, mas a referência no perfil é 10°, e não 15°.",
+   "D": "Os dois valores estão trocados: o correto é 145° no AP e 10° no perfil."
   },
+  "conceito": "A **epifisiólise proximal do fêmur** é o escorregamento da cabeça femoral (a epífise) em relação ao colo, através da placa de crescimento. Acontece tipicamente em adolescentes, muitas vezes com sobrepeso. A epífise desliza para **trás e para baixo**, e por isso o desvio aparece melhor no perfil.\n\n**O método de Southwick** mede quanto a epífise escorregou. Traça-se uma linha unindo as bordas da base da epífise, a perpendicular a ela, e mede-se o ângulo entre essa perpendicular e o eixo da diáfise femoral. Isso é o **ângulo epífise-diáfise**.\n\nEsse ângulo é comparado com um valor normal, e a diferença é o **ângulo de escorregamento**. Os valores de referência são:\n\n**no AP: 145°**;\n\n**no perfil: 10°**.\n\nSe o outro quadril for normal, pode-se usar o próprio lado contralateral como referência, o que é ainda mais preciso.\n\n**Gravidade pelo ângulo de escorregamento no perfil**: leve abaixo de 30°, moderado de 30° a 50° e grave acima de 50°.\n\nTambém é útil conhecer a classificação de **Loder**, que é clínica: o escorregamento é **estável** se o paciente consegue andar, mesmo com muletas, e **instável** se não consegue. O instável tem risco muito maior de necrose da cabeça femoral.\n\n**Na prova**: Southwick usa como referência 145° no AP e 10° no perfil.",
+  "correta": "As referências de Southwick são 145° no AP e 10° no perfil.",
   "referencias": [
    "Tachdjian's Pediatric Orthopaedics, 4ª edição"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0325": {
-  "conceito": "### Variações do isquiático em relação ao piriforme (Beaton e Anson)\n| Tipo | Relação | Frequência aproximada |\n|---|---|---|\n| ==A== | ==nervo inteiro abaixo do piriforme== | ==cerca de 85 a 90%== |\n| B | divisão fibular **atravessa** o piriforme, tibial abaixo | cerca de 10% |\n| C | fibular **acima**, tibial abaixo | 1 a 3% |\n| D | nervo inteiro atravessa o músculo | raro |\n| E, F | outras combinações | raríssimas |\n\n### Luxação posterior do quadril\n- Lesão do isquiático em cerca de **10 a 20%**, sobretudo da **divisão fibular**.\n- Menor risco quando o nervo está ==inteiro abaixo do piriforme==, sem ligação às fibras musculares.\n- Variações em que o nervo atravessa o músculo o \"prendem\": maior risco de estiramento e compressão.\n\n### Clínica\n- Síndrome do piriforme mais comum nas variações com passagem através do músculo.\n\n> **Na prova:** menor risco = ==ramos tibial e fibular juntos, abaixo do piriforme== (variação mais comum).",
-  "correta": "**Variação mais comum, menor risco.**\n- Com o nervo inteiro abaixo do piriforme, sem atravessar suas fibras, o isquiático sofre menos na luxação posterior.",
   "incorretas": {
-   "A": "**Risco maior.**\n- A divisão fibular que atravessa o músculo fica presa e sofre mais.",
-   "C": "**Também mais preso.**\n- A passagem acima do piriforme cria relação íntima com o músculo.",
-   "D": "**Risco maior.**\n- O nervo que atravessa o músculo fica mais vulnerável."
+   "A": "Quando a divisão fibular atravessa o piriforme, ela fica presa às fibras e sofre mais no estiramento da luxação, ou seja, o risco aumenta.",
+   "C": "Com a divisão fibular passando acima do piriforme, o nervo fica dividido e envolvendo o músculo, o que também restringe sua mobilidade e não reduz o risco.",
+   "D": "O nervo inteiro atravessando o músculo é a situação mais ancorada de todas, com maior vulnerabilidade, não menor."
   },
+  "conceito": "O **nervo isquiático** (ciático) sai da pelve pelo forame isquiático maior e passa junto ao **músculo piriforme**. Ele é formado por duas divisões que andam juntas: a **tibial** (medial) e a **fibular** (lateral, também chamada de peroneira).\n\n**As variações anatômicas** (descritas por Beaton e Anson) mostram que essa relação nem sempre é igual:\n\na mais comum, em cerca de 85 a 90% das pessoas, é o **nervo inteiro saindo abaixo do piriforme**, sem passar pelas suas fibras;\n\nem cerca de 10%, a divisão fibular **atravessa** o músculo e a tibial passa abaixo;\n\nmenos frequentemente, a divisão fibular passa **acima** do piriforme;\n\nraramente, o nervo inteiro atravessa o músculo.\n\n**Por que isso importa na luxação posterior do quadril**: quando a cabeça femoral sai para trás, ela empurra e estira as estruturas posteriores, entre elas o isquiático. A lesão nervosa ocorre em uma parcela importante dos casos, e a **divisão fibular** é a mais atingida, porque é mais lateral, tem menos tecido de proteção e fica mais presa nos seus pontos de fixação.\n\nQuando o nervo passa **livre abaixo do piriforme**, ele tem mais mobilidade e se desloca com a cabeça. Quando ele **atravessa** o músculo, fica ancorado nas fibras e sofre mais estiramento e compressão.\n\n**Na prova**: menor risco quando as divisões tibial e fibular saem juntas, abaixo do piriforme, que é a variação mais comum.",
+  "correta": "O nervo inteiro saindo abaixo do piriforme, sem relação com as fibras do músculo, é a variação mais comum e a que tem mais mobilidade, por isso a de menor risco.",
   "referencias": [
    "Rockwood & Green's Fractures in Adults, 8ª edição"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0326": {
-  "conceito": "### Ângulo alfa: pontos de corte variam\n| Fonte | Corte para came |\n|---|---|\n| Nötzli (RM oblíqua axial, descrição original) | ==acima de 50°== |\n| muitas séries radiográficas | acima de 55° |\n| ==Campbell's Operative Orthopaedics== (e outras) | ==acima de cerca de 60°== (62 a 63° como mais específico) |\n\n### Por que variam\n- Incidência usada (Dunn 45°, 90°, cross-table, perfil de rã), técnica de medida, RM ou TC.\n- Assintomáticos, sobretudo atletas, têm ângulos elevados com frequência.\n\n### O que é constante\n- ==Quanto maior o ângulo alfa, maior a giba== e maior a chance de impacto.\n- O diagnóstico exige **clínica + imagem**: dor, FADIR positivo, rotação interna limitada.\n\n> **Na prova:** came com ângulo alfa ==acima de cerca de 60°== (Campbell), com variação na literatura (50 a 55°).",
-  "correta": "**Corte de Campbell.**\n- O came fica evidente com ângulo alfa acima de cerca de 60° nessa referência.\n- Outras séries usam 50 a 55°.",
   "incorretas": {
-   "A": "**Muito baixo.**\n- 20° não tem relação com os pontos de corte descritos.",
-   "B": "**Relação direta com o came.**\n- O ângulo alfa foi criado para medir a giba femoral.",
-   "C": "**Invertido.**\n- Ângulo maior, não menor, indica came."
+   "A": "Vinte graus estão muito abaixo de qualquer corte descrito; um quadril normal já tem ângulo alfa bem maior que isso.",
+   "B": "O ângulo alfa foi criado justamente para medir a giba do came; o pincer é avaliado por parâmetros do acetábulo, como o sinal do cruzamento e o ângulo centro-borda.",
+   "C": "A relação está invertida: quanto maior o ângulo alfa, maior a giba e maior a chance de impacto do tipo came."
   },
+  "conceito": "O **impacto femoroacetabular** é o choque anormal entre o fêmur e a borda do acetábulo durante o movimento, especialmente na flexão com rotação interna. Ele lesiona o lábio e a cartilagem e pode levar à artrose.\n\nExistem dois tipos básicos:\n\n**came** (do inglês *cam*): uma **giba** (saliência óssea) na transição entre a cabeça e o colo femoral. A cabeça deixa de ser esférica e, ao entrar no acetábulo durante a flexão, essa giba raspa a cartilagem. É mais comum em homens jovens e atletas;\n\n**pincer** (pinça): o problema está no **acetábulo**, que cobre demais a cabeça, e a borda bate no colo.\n\n**O ângulo alfa** foi criado por Nötzli para medir a deformidade do tipo came. Traça-se uma linha do centro da cabeça até o centro do colo e outra do centro da cabeça até o ponto onde o contorno da cabeça deixa de ser circular. Quanto **maior o ângulo**, mais para frente começa a giba e **maior a deformidade**.\n\n**Os pontos de corte variam** conforme a fonte e a incidência: Nötzli descreveu acima de 50° na ressonância, muitas séries usam 55°, e o Campbell cita **acima de cerca de 60°**. Como pessoas assintomáticas também podem ter ângulos altos, o diagnóstico exige **clínica e imagem juntas**: dor na virilha, teste de impacto (flexão, adução e rotação interna) positivo e rotação interna limitada.\n\n**Na prova**: came se evidencia com ângulo alfa acima de cerca de 60° segundo o Campbell, lembrando que a literatura tem cortes um pouco diferentes.",
+  "correta": "A deformidade do came fica evidente com ângulo alfa acima de cerca de 60°, o corte citado pelo Campbell, com alguma variação entre séries e técnicas.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 12ª edição",
    "The Adult Hip, John J. Callaghan et al. (editores)"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0327": {
-  "conceito": "### Classificação de Boyd e Griffin\n| Tipo | Descrição | Estabilidade |\n|---|---|---|\n| I | traço ao longo da linha intertrocantérica, simples | estável |\n| II | cominuição, traço principal intertrocantérico, várias fraturas corticais | instável se cominuição posteromedial |\n| ==III== | ==traço subtrocantérico, obliquidade reversa== (ao menos uma fratura passa pelo trocânter menor ou logo abaixo) | ==instável== |\n| IV | extensão para a diáfise em pelo menos dois planos (espiral) | instável |\n\n### Obliquidade reversa\n- O traço vai de **inferolateral** para **superomedial**.\n- O fragmento distal tende a **medializar**; o DHS deslizante falha (desliza na direção do desvio).\n- Tratamento: ==haste cefalomedular== (ou placa de ângulo fixo 95°).\n- Equivalente na AO/OTA: **31A3**.\n\n### Instabilidade nas trocantéricas\n- Cominuição **posteromedial** (calcar), obliquidade reversa, extensão subtrocantérica, parede lateral fina.\n\n> **Na prova:** obliquidade reversa = ==Boyd e Griffin III== (AO 31A3).",
-  "correta": "**Tipo III.**\n- A obliquidade reversa, com traço subtrocantérico, é o tipo III de Boyd e Griffin.\n- É instável e pede haste cefalomedular.",
   "incorretas": {
-   "A": "**Traço simples.**\n- O tipo I é a fratura linear estável ao longo da linha intertrocantérica.",
-   "B": "**Cominuição.**\n- O tipo II tem cominuição, mas não a obliquidade reversa.",
-   "D": "**Extensão diafisária.**\n- O tipo IV se estende à diáfise em dois planos."
+   "A": "O tipo I é a fratura linear simples ao longo da linha intertrocantérica, estável, sem obliquidade reversa.",
+   "B": "O tipo II tem cominuição com traço principal intertrocantérico, mas o traço não é invertido.",
+   "D": "O tipo IV é definido pela extensão da fratura para a diáfise em pelo menos dois planos, e não pela obliquidade reversa."
   },
+  "conceito": "As **fraturas transtrocantéricas** (intertrocantéricas) atravessam a região entre o trocânter maior e o menor. São típicas do idoso com osteoporose após queda. O mais importante na avaliação é saber se a fratura é **estável** ou **instável**, porque isso define o implante.\n\n**A classificação de Boyd e Griffin** tem quatro tipos:\n\n**tipo I**: traço simples ao longo da linha intertrocantérica, sem cominuição. É estável;\n\n**tipo II**: traço principal intertrocantérico com **cominuição** (vários fragmentos). Fica instável quando a cominuição atinge a parede posteromedial (o calcar);\n\n**tipo III**: traço basicamente **subtrocantérico**, passando pelo trocânter menor ou logo abaixo dele, com **obliquidade reversa**. É instável;\n\n**tipo IV**: a fratura se estende para a **diáfise** em pelo menos dois planos, muitas vezes em espiral. Também instável.\n\n**O que é obliquidade reversa**: na fratura trocantérica comum, o traço vai de cima e lateral para baixo e medial. Na obliquidade reversa, ele vai de **baixo e lateral para cima e medial**. Isso muda tudo: a força muscular tende a puxar a diáfise para medial, e o parafuso deslizante de quadril (DHS), que comprime ao longo do colo, faz o fragmento escorregar em vez de comprimir. Por isso essas fraturas são tratadas com **haste cefalomedular**. Na classificação AO/OTA, correspondem ao grupo **31A3**.\n\n**Na prova**: obliquidade reversa é o tipo III de Boyd e Griffin, instável, tratada com haste cefalomedular.",
+  "correta": "A obliquidade reversa, com traço subtrocantérico passando pelo trocânter menor ou logo abaixo, corresponde ao tipo III de Boyd e Griffin.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 7ª edição"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0328": {
