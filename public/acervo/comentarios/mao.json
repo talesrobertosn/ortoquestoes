@@ -1,24 +1,24 @@
 {
  "mao-0001": {
-  "conceito": "### Sinais autonômicos na lesão de nervo periférico\n- As fibras **simpáticas sudomotoras** e vasomotoras correm dentro do nervo periférico.\n- Secção completa: perde-se ao mesmo tempo sensibilidade e ==sudorese== no território.\n\n| Sinal | Achado na lesão completa |\n|---|---|\n| sudorese | ==anidrose== (pele seca) |\n| vasomotor | vasodilatação inicial (pele quente), depois frio e palidez |\n| trófico | pele lisa, brilhante, unhas alteradas, polpa atrófica |\n| pilomotor | perda da piloereção |\n\n### Por que a área seca é igual ou maior\n- A sensibilidade tem **grande sobreposição** entre nervos vizinhos: o déficit sensitivo aparente \"encolhe\".\n- A inervação simpática sobrepõe menos: a ==área anidrótica fica igual ou maior== que o déficit sensitivo.\n\n### Testes objetivos (úteis em crianças e não colaborativos)\n- **Ninidrina** (sudorese), **enrugamento na água** (O'Riain): pele denervada não enruga.\n\n> **Na prova:** lesão completa = ==anidrose em área igual ou maior que o déficit sensitivo==.",
-  "correta": "**Anidrose, área igual ou maior.**\n- Sem simpático, a glândula sudorípara para.\n- A sobreposição simpática é pequena, então a área seca não encolhe como a sensitiva.",
   "incorretas": {
-   "B": "**Extensão invertida.**\n- Quem tem mais sobreposição é a sensibilidade; é ela que fica com a área menor.",
-   "C": "**Sintoma errado.**\n- Hiper-hidrose indica irritação simpática (como na SDRC), não secção completa.",
-   "D": "**Erra os dois.**\n- Não há hiper-hidrose, e a área autonômica não é a menor."
+   "B": "A extensão está invertida: quem tem grande sobreposição é a sensibilidade, e por isso é a área sensitiva que parece menor, não a área seca.",
+   "C": "Hiper-hidrose (suor excessivo) indica irritação simpática, como na síndrome de dor regional complexa, e não secção completa do nervo.",
+   "D": "Erra nos dois pontos: na secção completa não há hiper-hidrose, e a área autonômica não é menor que a sensitiva."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Um nervo periférico, como o mediano ou o ulnar, não leva só fibras de **sensibilidade** e de **movimento**. Dentro dele correm também fibras do **sistema nervoso autônomo simpático**, que controlam as **glândulas de suor** (fibras sudomotoras), o calibre dos vasos (vasomotoras) e o arrepio dos pelos (pilomotoras).\n\n**Quando o nervo é seccionado por completo**, todas essas fibras param de funcionar ao mesmo tempo no território dele:\n\na pele perde a sensibilidade;\n\nas glândulas sudoríparas param: a pele fica **seca**, o que se chama **anidrose**;\n\nno início a pele fica quente (os vasos dilatam), e depois fria e pálida;\n\ncom o tempo, surgem alterações tróficas: pele lisa e brilhante, unhas alteradas e polpa do dedo atrofiada.\n\n**Por que a área seca é igual ou maior que a área sem sensibilidade**: a sensibilidade de um nervo tem muita **sobreposição** com a dos nervos vizinhos, que \"invadem\" as bordas do território e fazem a área insensível parecer menor. A inervação simpática sobrepõe bem menos. Por isso a **área anidrótica fica igual ou maior** que o déficit sensitivo.\n\n**Utilidade clínica**: a falta de suor pode ser testada objetivamente, sem depender da colaboração do paciente (útil em crianças), pelo **teste da ninidrina** ou pelo **teste do enrugamento**: a pele de um dedo desnervado **não enruga** quando fica muito tempo na água.\n\n**Na prova**: na lesão completa de nervo periférico há anidrose numa área igual ou maior que o déficit sensitivo.",
+  "correta": "Sem as fibras simpáticas, a glândula sudorípara para e surge anidrose, numa área igual ou maior que a sensitiva, porque a sobreposição simpática é pequena.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0002": {
-  "conceito": "### Reparo dos tendões flexores\n| Componente | Papel |\n|---|---|\n| sutura **central (nuclear)** | suporta a maior parte da carga; resistência proporcional ao **número de fios** que cruzam o foco (2, 4, 6) |\n| ==sutura epitendínea contínua== | regulariza a superfície (desliza na bainha) e ==aumenta a resistência em cerca de 50%== |\n\n### O que torna o reparo mais forte\n- Mais fios cruzando o foco (4 a 6 fios permitem movimento ativo precoce).\n- Fio mais calibroso (3-0 ou 4-0), pegas de cerca de **1 cm** a partir do corte.\n- Pegas **bloqueantes** (locking) e sutura dorsal (mais forte).\n- Epitendínea bem feita (cruzada ou bloqueada é mais forte que a simples contínua).\n\n### Por que importa\n- Reparo forte permite **mobilização precoce**, que evita aderências.\n- O reparo enfraquece nas primeiras 1 a 3 semanas (amolecimento) antes de ganhar força.\n\n> **Na prova:** epitendínea contínua acrescenta ==cerca de 50%== de resistência.",
-  "correta": "**Cerca de 50%.**\n- A epitendínea contínua regulariza o reparo e aumenta a resistência à tração em torno de 50%.\n- Isso ajuda a permitir a mobilização precoce.",
   "incorretas": {
-   "A": "**Subestima.**\n- 20% seria o ganho de uma periférica frouxa ou superficial.",
-   "C": "**Superestima.**\n- A faixa descrita vai de 10 a 50%, conforme a técnica.",
-   "D": "**Irreal.**\n- Quase dobrar a resistência pela periférica não é sustentado; a central carrega a maior parte da carga."
+   "A": "Vinte por cento subestima a contribuição da epitendínea contínua bem feita, que chega a cerca de 50%.",
+   "C": "Setenta por cento superestima o ganho; a faixa descrita para a epitendínea vai até cerca de 50%, conforme a técnica.",
+   "D": "Noventa por cento seria quase dobrar a resistência só com a sutura de superfície, o que não é sustentado; a central carrega a maior parte da carga."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Quando um **tendão flexor** dos dedos é cortado, o reparo precisa ser forte o bastante para permitir **movimentar o dedo cedo**. A mobilização precoce evita **aderências**, o tendão grudar nos tecidos em volta e deixar o dedo rígido. A sutura tem duas partes:\n\n**Sutura central (nuclear)**: é passada **dentro** do tendão, cruzando o local do corte. Ela suporta a **maior parte da carga**. Sua resistência é proporcional ao **número de fios** que cruzam o foco: reparos com 4 a 6 fios permitem movimento ativo precoce.\n\n**Sutura epitendínea**: é uma sutura **contínua** e fina feita **ao redor** da borda do tendão, na superfície. Tem duas funções:\n\n**regularizar** a superfície, para que o tendão deslize suavemente dentro da sua bainha, sem pontas que enganchem;\n\n**aumentar a resistência** do reparo em cerca de **50%**, porque também ajuda a resistir à separação das pontas.\n\n**O que mais deixa o reparo forte**: fio mais calibroso, pegas de cerca de 1 cm a partir do corte, pontos bloqueantes e uma epitendínea bem feita (técnicas cruzadas são ainda mais fortes que a contínua simples).\n\n**Um cuidado importante**: o reparo **enfraquece** entre a primeira e a terceira semana, quando as pontas do tendão amolecem antes de começar a cicatrizar. É a fase de maior risco de ruptura.\n\n**Na prova**: a sutura epitendínea contínua aumenta a resistência do reparo do flexor em cerca de 50%.",
+  "correta": "A epitendínea contínua regulariza a superfície do reparo e aumenta sua resistência em cerca de 50%, ajudando a permitir a mobilização precoce.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0003": {
@@ -49,58 +49,58 @@
   "conferido": false
  },
  "mao-0005": {
-  "conceito": "### Punho reumatoide\n- A sinovite começa pela ==borda ulnar==: radioulnar distal, estiloide ulnar, bainha do **extensor ulnar do carpo (EUC)**.\n\n### Sequência das deformidades\n1. Frouxidão radioulnar distal: **caput ulnae** (cabeça da ulna sobe dorsalmente).\n2. O EUC escorrega para **volar** e passa a fletir o punho.\n3. O carpo roda em ==supinação== e translada ==ulnar e palmar==.\n4. Metacarpos desviam para **radial**.\n5. Dedos compensam com **desvio ulnar** (ziguezague).\n\n### Complicações\n| Complicação | Mecanismo |\n|---|---|\n| ruptura dos extensores (Vaughan-Jackson) | atrito na cabeça da ulna; começa pelo extensor do mínimo |\n| ruptura do FLP (Mannerfelt) | atrito no escafoide |\n| translocação ulnar do carpo | frouxidão radiocarpal |\n\n### Tratamento cirúrgico\n- Sinovectomia, ressecção da cabeça da ulna (Darrach) ou Sauvé-Kapandji, artrodese radiossemilunar ou total, transferências tendíneas.\n\n> **Na prova:** carpo reumatoide = ==supinação, desvio ulnar e palmar==.",
-  "correta": "**Supinação, ulnar e palmar.**\n- Perdido o apoio ulnar, o carpo supina e translada para ulnar e palmar.\n- Os metacarpos inclinam para radial e os dedos desviam para ulnar.",
   "incorretas": {
-   "A": "**Ao contrário.**\n- Quem sobe dorsalmente é a cabeça da ulna, não o carpo.",
-   "B": "**Rotação errada.**\n- O desvio está certo, mas o carpo supina.",
-   "C": "**Desvio errado.**\n- A supinação está certa, mas o deslocamento é ulnar e palmar."
+   "A": "Está tudo invertido: quem sobe para dorsal é a cabeça da ulna, e o carpo vai em supinação, para ulnar e palmar.",
+   "B": "O desvio ulnar e palmar está certo, mas o carpo roda em supinação, e não em pronação.",
+   "C": "A supinação está certa, mas o deslocamento é ulnar e palmar, e não radial e dorsal."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **artrite reumatoide**, a **sinovite** (inflamação da membrana que reveste as articulações e os tendões) destrói ligamentos e cartilagem. No punho, ela começa tipicamente pelo **lado ulnar**: a articulação **radioulnar distal**, a estiloide da ulna e a bainha do **extensor ulnar do carpo** (EUC).\n\n**A sequência das deformidades**:\n\nos ligamentos da radioulnar distal ficam frouxos, e a **cabeça da ulna sobe** para o dorso do punho. É o **caput ulnae**, uma saliência dorsal típica;\n\no tendão do **extensor ulnar do carpo** escorrega para a frente (volar) e passa a **fletir** o punho, em vez de estendê-lo;\n\nsem o apoio do lado ulnar, o **carpo roda em supinação** e escorrega para o lado **ulnar** e para a **palma** (palmar);\n\nos **metacarpos** inclinam para o lado **radial**;\n\npara compensar, os **dedos desviam para ulnar**, formando o padrão em **ziguezague** típico da mão reumatoide.\n\n**Complicações**: a cabeça da ulna, saliente e áspera, raspa nos tendões extensores e pode rompê-los, começando pelo extensor do mínimo (**síndrome de Vaughan-Jackson**). No lado palmar, o escafoide pode romper o flexor longo do polegar (**lesão de Mannerfelt**).\n\n**Na prova**: no punho reumatoide, o carpo se desloca em supinação, com desvio ulnar e palmar.",
+  "correta": "Perdido o apoio ulnar, o carpo roda em supinação e escorrega para ulnar e palmar, enquanto os metacarpos inclinam para radial e os dedos desviam para ulnar.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0006": {
-  "conceito": "### Portais dorsais da artroscopia do punho\n| Portal | Localização | Uso principal |\n|---|---|---|\n| 1-2 | entre 1º e 2º compartimentos | estiloide radial; risco para o radial superficial e a artéria radial |\n| 3-4 | entre ELP e extensores comuns | ==visão padrão==: escafoide, semilunar, ligamento escafossemilunar |\n| ==4-5== | entre extensores comuns e extensor do mínimo | ==melhor inspeção do complexo da fibrocartilagem triangular== |\n| ==6R== | radial ao EUC | ==portal de trabalho== do CFCT (reparo, desbridamento) |\n| 6U | ulnar ao EUC | saída de fluxo; risco para o ramo dorsal do ulnar |\n| mediocarpal radial e ulnar | 1 cm distal ao 3-4 e ao 4-5 | articulação mediocarpal, instabilidades |\n\n### Rotina\n- 3-4 para visão geral, 4-5 ou 6R para o lado ulnar.\n- Tração de 4 a 5 kg (torre).\n\n> **Na prova:** melhor inspeção do CFCT = ==portal 4-5==.",
-  "correta": "**Portal 4-5.**\n- Mais ulnar que o 3-4, coloca a óptica de frente para o complexo da fibrocartilagem triangular.",
   "incorretas": {
-   "A": "**Portal de trabalho.**\n- O 6R serve para instrumentar e reparar o CFCT.",
-   "B": "**Saída de fluxo.**\n- O 6U é arriscado para o ramo dorsal do ulnar.",
-   "C": "**Visão geral.**\n- O 3-4 vê bem o lado radial; o CFCT fica oblíquo e distante."
+   "A": "O 6R é usado principalmente como portal de trabalho, para instrumentar e reparar a fibrocartilagem, e não para a melhor inspeção.",
+   "B": "O 6U serve sobretudo para saída de líquido e tem risco para o ramo dorsal do nervo ulnar.",
+   "C": "O 3-4 é o portal de visão geral do lado radial; dele, a fibrocartilagem triangular fica oblíqua e distante."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **artroscopia do punho**, a câmera e os instrumentos entram por pequenos acessos (**portais**) no dorso do punho. Eles recebem o nome dos **compartimentos dos tendões extensores** entre os quais passam. Os seis compartimentos dorsais, de radial para ulnar, são: 1º (abdutor longo e extensor curto do polegar), 2º (extensores radiais do carpo), 3º (extensor longo do polegar), 4º (extensores comuns dos dedos), 5º (extensor do mínimo) e 6º (extensor ulnar do carpo).\n\n**Os portais principais**:\n\n**3-4**: entre o 3º e o 4º compartimentos. É o portal de **visão padrão**, por onde a câmera entra primeiro. Mostra bem o lado radial: escafoide, semilunar e o ligamento entre eles;\n\n**4-5**: entre o 4º e o 5º. É mais ulnar e coloca a câmera **de frente** para o **complexo da fibrocartilagem triangular** (CFCT), a estrutura que estabiliza o lado ulnar do punho. É o que dá a **melhor inspeção** dela;\n\n**6R**: logo radial ao extensor ulnar do carpo. É o **portal de trabalho** do CFCT, por onde entram os instrumentos para desbridar ou reparar;\n\n**6U**: logo ulnar ao extensor ulnar do carpo. Usado para saída de líquido, com risco para o **ramo dorsal do nervo ulnar**;\n\n**1-2**: com risco para o ramo superficial do nervo radial e a artéria radial.\n\n**Na prova**: o portal que dá melhor inspeção da fibrocartilagem triangular é o 4-5; o 6R é o de trabalho.",
+  "correta": "O portal 4-5, mais ulnar que o 3-4, coloca a óptica de frente para o complexo da fibrocartilagem triangular, dando a melhor inspeção.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0007": {
-  "conceito": "### Os três eixos do broto do membro\n| Centro sinalizador | Eixo | Molécula | Falha típica |\n|---|---|---|---|\n| crista ectodérmica apical (AER) | proximal-distal | FGF | ==deficiências transversas== |\n| ==zona de atividade polarizada (ZPA)== | ==anteroposterior (radioulnar)== | ==Sonic hedgehog (Shh)== | ==polidactilia==, mão em espelho, dimelia ulnar |\n| ectoderma dorsal | dorsoventral | Wnt7a, LMX1B | síndrome unha-patela, dorsalização |\n\n### ZPA\n- Na borda **posterior (ulnar)** do broto.\n- Shh em excesso ou ectópico **duplica raios**; ausência reduz os raios ulnares.\n\n### Classificação OMT das anomalias\n- Malformações (falha de formação ou diferenciação por eixo), deformações e displasias.\n\n> **Na prova:** ZPA = ==eixo radioulnar, Shh, polidactilia==.",
-  "correta": "**Excesso de Shh duplica raios.**\n- A ZPA controla o eixo radioulnar.\n- Sua alteração gera polidactilia e mão em espelho.",
   "incorretas": {
-   "B": "**Partes moles.**\n- Camptodactilia é contratura da IFP por anomalia do lumbrical ou do flexor superficial.",
-   "C": "**Eixo dorsoventral.**\n- Unha-patela é mutação do LMX1B.",
-   "D": "**Eixo proximal-distal.**\n- Deficiências transversas vêm de falha da AER."
+   "B": "A camptodactilia é uma contratura em flexão da interfalângica proximal, ligada a anomalias de partes moles como o lumbrical ou o flexor superficial, e não à zona de atividade polarizada.",
+   "C": "A síndrome unha-patela resulta de falha do eixo dorsoventral, por mutação do gene LMX1B.",
+   "D": "As deficiências transversas vêm de falha da crista ectodérmica apical, que controla o eixo proximal-distal."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O membro superior se forma no embrião a partir de um **broto**, e seu crescimento é organizado em **três eixos**. Cada eixo é controlado por um **centro sinalizador** diferente, e cada falha produz um tipo diferente de malformação:\n\n**Eixo proximal-distal** (do ombro aos dedos): controlado pela **crista ectodérmica apical** (AER), uma faixa na ponta do broto, que produz fatores chamados FGF. Se ela falha, o membro para de crescer naquele ponto: são as **deficiências transversas** (o membro termina \"cortado\").\n\n**Eixo anteroposterior** (radial-ulnar, do polegar ao mínimo): controlado pela **zona de atividade polarizada** (ZPA), um grupo de células na borda **posterior (ulnar)** do broto, que produz uma molécula chamada **Sonic hedgehog** (Shh). A concentração de Shh diz a cada dedo \"quem ele é\". Se há Shh **em excesso** ou num lugar errado, os **raios se duplicam**: é a **polidactilia**, e em casos extremos a **mão em espelho** (dimelia ulnar).\n\n**Eixo dorsoventral** (dorso e palma): controlado pelo ectoderma dorsal, com moléculas como Wnt7a e LMX1B. Sua falha causa, por exemplo, a **síndrome unha-patela**.\n\n**Na prova**: a zona de atividade polarizada controla o eixo radioulnar por meio do Sonic hedgehog, e sua falha causa polidactilia.",
+  "correta": "A zona de atividade polarizada controla o eixo radioulnar, e alterações no seu sinal, o Sonic hedgehog, duplicam raios e causam polidactilia.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0008": {
-  "conceito": "### Macrodactilia\n- Crescimento excessivo de todos os tecidos de um ou mais dedos.\n- Forma mais comum: ==lipofibromatose do nervo== (hamartoma fibrolipomatoso), que segue o território do ==nervo mediano==.\n\n### Ordem de acometimento\n1. ==Indicador==\n2. médio\n3. polegar\n\n- Frequentemente **mais de um dedo** do mesmo território (sindactilia associada às vezes).\n- Unilateral, esporádica, predomínio masculino discreto.\n\n### Tipos\n| Tipo | Característica |\n|---|---|\n| estático | cresce proporcionalmente desde o nascimento |\n| progressivo | cresce desproporcionalmente, sobretudo na infância |\n\n### Diferenciais\n- Neurofibromatose, Proteus, Klippel-Trénaunay, malformações vasculares.\n\n### Tratamento\n- Epifisiodese, redução de partes moles, osteotomias, amputação de raio em casos graves.\n\n> **Na prova:** dedo mais acometido = ==indicador==.",
-  "correta": "**Indicador.**\n- A macrodactilia segue o território do mediano.\n- O indicador é o mais afetado, seguido do médio e do polegar.",
   "incorretas": {
-   "A": "**Pouco acometido.**\n- O anelar tem inervação compartilhada.",
-   "B": "**Segundo lugar.**\n- O médio vem depois do indicador.",
-   "C": "**Terceiro lugar.**\n- O polegar participa, mas não é o mais frequente."
+   "A": "O anelar tem inervação compartilhada entre mediano e ulnar e é pouco acometido.",
+   "B": "O médio é o segundo mais acometido, depois do indicador.",
+   "C": "O polegar também está no território do mediano, mas é o terceiro em frequência, e não o primeiro."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "**Macrodactilia** é o crescimento exagerado de **todos os tecidos** de um ou mais dedos: osso, gordura, nervo, pele e tendões. O dedo fica gigante em comprimento e espessura.\n\n**A causa mais comum**: a **lipofibromatose do nervo** (hamartoma fibrolipomatoso), um crescimento anormal de gordura e tecido fibroso dentro e ao redor de um nervo. Ela segue o território do **nervo mediano**.\n\n**A ordem de acometimento**, acompanhando o mediano:\n\n1. **indicador** (o mais frequente);\n\n2. **médio**;\n\n3. **polegar**.\n\nÉ comum mais de um dedo do mesmo território ser afetado. Geralmente é unilateral e esporádica (não hereditária).\n\n**Os dois tipos**:\n\n**estático**: o dedo já nasce grande e cresce na mesma proporção dos outros;\n\n**progressivo**: o dedo cresce mais rápido que os outros, sobretudo na infância, e a diferença aumenta com o tempo.\n\n**Diagnósticos diferenciais**: neurofibromatose, síndrome de Proteus, síndrome de Klippel-Trénaunay e malformações vasculares, que também podem aumentar um dedo.\n\n**Tratamento**: depende da gravidade, e vai de parar o crescimento da placa de crescimento (epifisiodese) e reduzir partes moles até osteotomias ou amputação do raio.\n\n**Na prova**: o dedo mais acometido na macrodactilia é o indicador, seguindo o território do nervo mediano.",
+  "correta": "O indicador é o dedo mais acometido, porque a macrodactilia segue o território do nervo mediano; depois vêm o médio e o polegar.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0009": {
-  "conceito": "### Classificação da sindactilia\n| Eixo | Tipos |\n|---|---|\n| extensão | **completa** (até a ponta, unhas fundidas) × **incompleta** |\n| tecido | ==simples== (só partes moles) × **complexa** (fusão óssea, geralmente falange distal) |\n| associação | **complicada**: ossos acessórios, tendões anômalos, feixe único (Apert, sinfalangismo) |\n\n### Sindactilia simples\n- Ponte **só de pele e subcutâneo**.\n- Cada dedo mantém ==artéria e nervo digitais próprios (duplicados)==: separação possível sem sacrificar dedo.\n- A bifurcação da artéria digital comum pode ser **mais distal**: limita o aprofundamento da comissura.\n\n### Epidemiologia e cirurgia\n- Mais comum entre **médio e anelar**; bilateral em cerca de metade; predomínio masculino.\n- Separar primeiro dedos de tamanhos diferentes (polegar-indicador, anelar-mínimo) cedo (6 a 12 meses) para evitar desvios.\n- Separar **um lado de cada dedo por vez** (risco vascular); comissura com retalho dorsal e **enxerto** de pele total.\n\n> **Na prova:** sindactilia simples = ==feixes vasculonervosos duplicados==, sem fusão óssea.",
-  "correta": "**Cada dedo com seu feixe.**\n- Na forma simples a ponte é só de partes moles.\n- Artérias e nervos digitais estão duplicados e normais.",
   "incorretas": {
-   "A": "**Pele normal.**\n- A pele é normal, apenas insuficiente para cobrir os dois lados.",
-   "C": "**Define a complexa.**\n- Qualquer fusão óssea caracteriza sindactilia complexa.",
-   "D": "**Forma complicada.**\n- Anomalias tendíneas aparecem nas formas complicadas e sindrômicas."
+   "A": "A pele da sindactilia simples é normal; o problema é apenas que ela não é suficiente para cobrir os dois dedos depois de separados.",
+   "C": "Qualquer fusão óssea, inclusive só na falange distal, já caracteriza a sindactilia complexa, e não a simples.",
+   "D": "Anomalias de tendão aparecem nas formas complicadas e sindrômicas, e não na sindactilia simples."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "**Sindactilia** é a união de dois ou mais dedos vizinhos, porque eles não se separaram durante a formação da mão no embrião. É uma das malformações congênitas mais comuns da mão, mais frequente entre o **médio e o anelar**.\n\n**Como se classifica**:\n\n**pela extensão**: **completa**, quando os dedos estão unidos até a ponta, muitas vezes com as unhas fundidas; ou **incompleta**, quando a união não chega à ponta;\n\n**pelo tecido envolvido**: **simples**, quando a união é **só de pele e tecido subcutâneo**; ou **complexa**, quando também há **fusão óssea**, geralmente entre as falanges distais;\n\n**complicada**: quando há anomalias associadas, como ossos extras, tendões anormais ou feixe vascular único, como na síndrome de Apert.\n\n**Na sindactilia simples**: como a ponte é só de partes moles, **cada dedo mantém sua própria artéria e seu próprio nervo digital**. Os feixes vasculonervosos estão **duplicados** e normais. Isso permite separar os dedos sem sacrificar a circulação de nenhum. O cuidado é que a bifurcação da artéria pode ser mais distal que o normal, o que limita o quanto se pode aprofundar o espaço entre os dedos.\n\n**Na cirurgia**: separa-se **um lado de cada dedo por vez**, para não comprometer a circulação; a comissura é refeita com um retalho do dorso, e as áreas sem pele recebem **enxerto**, porque a pele existente é insuficiente para cobrir os dois dedos.\n\n**Na prova**: na sindactilia simples, a união é só de partes moles, e os vasos e nervos digitais estão duplicados.",
+  "correta": "Na forma simples a ponte é só de pele e subcutâneo, e cada dedo mantém sua artéria e seu nervo digital, ou seja, os feixes estão duplicados.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0010": {
@@ -136,107 +136,107 @@
   "conferido": false
  },
  "mao-0012": {
-  "conceito": "### Compressão do mediano no cotovelo e antebraço proximal\n| Local | Manobra provocativa |\n|---|---|\n| ligamento de Struthers | exame do processo supracondiliano (radiografia) |\n| lacerto fibroso | ==flexão do cotovelo contra resistência em supinação== |\n| ==pronador redondo== | ==pronação contra resistência com cotovelo fletido, estendendo aos poucos== |\n| arcada do flexor superficial | ==flexão resistida da IFP do dedo médio== |\n\n### Síndrome do pronador × interósseo anterior\n| Síndrome | Quadro |\n|---|---|\n| pronador | dor no antebraço, parestesia no território do mediano **incluindo a palma** (ramo cutâneo palmar) |\n| interósseo anterior | **motora pura**: FLP, FPD do indicador e pronador quadrado; sinal do \"O\" (pinça em extensão) |\n\n### Diferencial com o túnel do carpo\n- No pronador há hipoestesia na **eminência tenar** (ramo palmar, que sai antes do túnel) e não há sintomas noturnos típicos.\n\n> **Na prova:** pronador = ==pronação resistida, cotovelo fletido, estendendo gradualmente==.",
-  "correta": "**Contração com estiramento.**\n- A pronação contra resistência engrossa o pronador e aperta o nervo entre as cabeças.\n- Estender o cotovelo aos poucos estira o músculo sobre o nervo.",
   "incorretas": {
-   "A": "**Sem contração.**\n- A pronação passiva não comprime o nervo.",
-   "B": "**Passiva e sequência invertida.**\n- Não contrai o pronador e relaxa em vez de estirar.",
-   "D": "**Sequência invertida.**\n- Começar estendido e fletir relaxa o pronador."
+   "A": "Pronação passiva não contrai o pronador redondo, e por isso não comprime o nervo entre suas cabeças.",
+   "B": "Além de ser passiva, sem contração, a sequência invertida relaxa o músculo em vez de estirá-lo.",
+   "D": "Começar com o cotovelo estendido e ir fletindo relaxa o pronador, que é o oposto do necessário para provocar a compressão."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **nervo mediano** pode ser comprimido no cotovelo e no antebraço proximal, antes de chegar ao punho. Os pontos de compressão e as manobras que os testam:\n\n**ligamento de Struthers**: uma faixa fibrosa que vai de um pequeno esporão ósseo (processo supracondiliano) do úmero ao epicôndilo medial; avaliado pela radiografia;\n\n**lacerto fibroso**: uma expansão do tendão do bíceps. Testado com **flexão do cotovelo contra resistência**, com o antebraço em supinação;\n\n**pronador redondo**: o nervo passa **entre as duas cabeças** desse músculo. Testado com **pronação contra resistência**, começando com o cotovelo **fletido** e **estendendo aos poucos**. A contração engrossa o músculo, e a extensão o estira sobre o nervo, apertando-o;\n\n**arcada do flexor superficial dos dedos**: testada com **flexão contra resistência** da interfalângica proximal do dedo médio.\n\n**As duas síndromes**:\n\n**síndrome do pronador**: dor no antebraço e formigamento no território do mediano, **incluindo a palma** perto da eminência tenar. Isso ajuda a diferenciar do túnel do carpo, porque o ramo que inerva essa região da palma sai **antes** do túnel;\n\n**síndrome do interósseo anterior**: o interósseo anterior é um ramo **só motor** do mediano. Sua compressão causa fraqueza do flexor longo do polegar, do flexor profundo do indicador e do pronador quadrado, sem perda de sensibilidade. O paciente não consegue fazer um \"O\" com a ponta do polegar e do indicador: faz uma pinça achatada.\n\n**Na prova**: o teste do pronador redondo é a pronação contra resistência com o cotovelo fletido, estendendo-o gradualmente.",
+  "correta": "Pronação contra resistência engrossa o pronador e aperta o nervo, e estender o cotovelo aos poucos estira o músculo sobre o nervo, reproduzindo os sintomas.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0013": {
-  "conceito": "### Instabilidade perissemilunar progressiva (Mayfield)\n- Mecanismo: ==hiperextensão do punho, desvio ulnar e supinação intercarpal==.\n- Progressão de **radial para ulnar** em volta do semilunar:\n\n| Estágio | Lesão |\n|---|---|\n| I | ==ligamento escafossemilunar== (dissociação escafossemilunar) |\n| II | articulação capitossemilunar (espaço de Poirier) |\n| III | ligamento lunopiramidal: luxação perissemilunar |\n| IV | semilunar luxa volarmente (\"xícara derramada\") |\n\n### Arco menor × arco maior\n- **Menor:** só ligamentos em volta do semilunar.\n- **Maior:** fraturas (escafoide, capitato, piramidal, estiloide radial): transescafoperissemilunar.\n\n### Dissociação escafossemilunar\n- Sinal de **Terry Thomas** (espaço > 3 mm), anel cortical do escafoide, ângulo escafossemilunar > 60° (DISI).\n- Teste de **Watson** (shift do escafoide).\n\n> **Na prova:** mecanismo = ==hiperextensão, desvio ulnar e supinação do carpo==.",
-  "correta": "**Torção que separa escafoide e semilunar.**\n- Com hiperextensão, desvio ulnar e supinação, o escafoide estende e o semilunar fica retido.\n- O ligamento escafossemilunar rompe (Mayfield I).",
   "incorretas": {
-   "A": "**Rotação errada.**\n- O desvio ulnar está certo, mas o carpo supina.",
-   "C": "**Erra os dois.**\n- O desvio radial não gera a torção necessária.",
-   "D": "**Desvio errado.**\n- A supinação está certa, mas o desvio é ulnar."
+   "A": "O desvio ulnar está certo, mas o carpo roda em supinação, e não em pronação.",
+   "C": "Erra nos dois componentes: o desvio é ulnar e a rotação é supinação; o desvio radial não gera a torção necessária.",
+   "D": "A supinação está certa, mas o desvio é ulnar, e não radial."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **escafoide** e o **semilunar** são dois ossos da fileira proximal do carpo, unidos pelo **ligamento escafossemilunar**. Quando esse ligamento rompe, os dois ossos se separam: é a **dissociação escafossemilunar**, a instabilidade do carpo mais comum.\n\n**O mecanismo de trauma**: geralmente uma queda com a mão espalmada. O punho sofre ao mesmo tempo:\n\n**hiperextensão** (dobra para trás);\n\n**desvio ulnar** (a mão inclina para o lado do dedo mínimo);\n\n**supinação intercarpal** (o carpo gira, com a parte distal rodando em supinação em relação à proximal).\n\nNessa torção, o escafoide é forçado a estender, enquanto o semilunar fica preso pelos ligamentos, e o ligamento entre eles se rompe.\n\n**A sequência de Mayfield**: se a força continua, a lesão progride ao redor do semilunar, de radial para ulnar. O estágio I é a lesão escafossemilunar; depois vem a separação entre capitato e semilunar, a lesão lunopiramidal (luxação perissemilunar) e, por fim, a luxação do próprio semilunar para a palma.\n\n**Como reconhecer a dissociação**:\n\nna radiografia, um espaço entre escafoide e semilunar maior que cerca de 3 mm (sinal de **Terry Thomas**, lembrando o dente separado do ator);\n\no escafoide aparece \"deitado\", formando um **anel cortical** no PA;\n\nno perfil, o ângulo entre escafoide e semilunar fica aumentado, com o semilunar inclinado para dorsal (padrão **DISI**);\n\nno exame, o **teste de Watson** (deslocamento do escafoide).\n\n**Na prova**: a dissociação escafossemilunar ocorre por hiperextensão, desvio ulnar e supinação do carpo.",
+  "correta": "Hiperextensão, desvio ulnar e supinação do carpo fazem o escafoide estender enquanto o semilunar fica retido, rompendo o ligamento entre eles.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0014": {
-  "conceito": "### Estabilizadores da trapeziometacarpiana\n| Ligamento | Posição | Papel |\n|---|---|---|\n| ==oblíquo anterior (em bico, beak)== | volar, do tubérculo do trapézio à base volar-ulnar do 1º MC | ==principal restritor da subluxação dorsorradial== (visão clássica) |\n| dorsorradial | dorsal | restritor dorsal importante (estudos recentes) |\n| oblíquo posterior | dorsal | coadjuvante |\n| intermetacarpal | entre as bases do 1º e 2º MC | secundário |\n\n### Rizartrose\n- Mais comum em **mulheres após 50 anos**.\n- A pinça empurra a base para **dorsal e radial**; com o oblíquo anterior insuficiente, a base **subluxa**.\n- Deformidade em ziguezague: metacarpo **aduzido**, MF em **hiperextensão**.\n- Teste do **grind** (compressão axial com rotação).\n\n### Classificação de Eaton-Littler\n| Estágio | Achado |\n|---|---|\n| I | espaço normal ou alargado (sinovite) |\n| II | estreitamento, osteófitos < 2 mm |\n| III | osteófitos > 2 mm, esclerose |\n| IV | acomete também a escafotrapeziotrapezoide |\n\n> **Na prova:** subluxação dorsal na rizartrose = insuficiência do ==ligamento oblíquo anterior==.",
-  "correta": "**Ligamento em bico.**\n- O oblíquo anterior segura a base do metacarpo contra a força dorsal da pinça.\n- Quando afrouxa, a base subluxa e a artrose se instala.",
   "incorretas": {
-   "A": "**Restritor dorsal.**\n- O dorsorradial é importante, mas a questão cobra a insuficiência do oblíquo anterior.",
-   "C": "**Secundário.**\n- O intermetacarpal não explica sozinho a subluxação.",
-   "D": "**Coadjuvante.**\n- O ligamento posterior não é o que falha primeiro."
+   "A": "O ligamento dorsorradial é um restritor dorsal importante em estudos recentes, mas a resposta clássica para a subluxação dorsal é a insuficiência do oblíquo anterior.",
+   "C": "O ligamento intermetacarpal, entre as bases do primeiro e do segundo metacarpos, tem papel secundário e não explica sozinho a subluxação.",
+   "D": "O ligamento posterior é coadjuvante e não é o que falha primeiro na rizartrose."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **rizartrose** é a artrose da articulação **trapeziometacarpiana**, na base do polegar, entre o trapézio e o primeiro metacarpo. É muito comum em **mulheres após os 50 anos** e causa dor ao fazer pinça e girar objetos.\n\n**Por que essa articulação desgasta**: ela tem a forma de **sela**, o que dá ao polegar grande mobilidade, mas pouca estabilidade óssea. Quem a estabiliza são os **ligamentos**. Durante a pinça, a força empurra a base do metacarpo para **dorsal e radial**, tentando tirá-la do lugar.\n\n**O ligamento oblíquo anterior** (ou ligamento em bico, *beak ligament*): fica do lado da palma, indo do trapézio até a base do primeiro metacarpo. Na visão clássica, é o **principal restritor** da subluxação dorsal. Quando ele fica frouxo ou se degenera, a base do metacarpo **escorrega para dorsal**, a cartilagem passa a carregar de forma irregular e a artrose se instala.\n\nEstudos mais recentes também dão importância ao ligamento **dorsorradial**, mas a resposta clássica cobrada é o oblíquo anterior.\n\n**A deformidade típica**: com a base subluxada, o metacarpo fica **aduzido** (fechado em direção à palma) e a metacarpofalângica compensa em **hiperextensão**, formando um ziguezague.\n\n**Exame**: o **teste do grind**, comprimir o polegar no eixo e girá-lo, reproduz a dor e a crepitação.\n\n**Estágios de Eaton-Littler**: do I (articulação normal ou alargada, com sinovite) ao IV (artrose também da articulação escafotrapeziotrapezoide).\n\n**Na prova**: a subluxação dorsal do metacarpo na rizartrose decorre da insuficiência do ligamento oblíquo anterior.",
+  "correta": "O ligamento oblíquo anterior, em bico, segura a base do metacarpo contra a força dorsal da pinça; quando insuficiente, ela subluxa para dorsal.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0015": {
-  "conceito": "### Retalho da artéria interóssea posterior\n- Retalho **fasciocutâneo** do dorso do antebraço, fluxo **reverso** (anastomose com a interóssea anterior no punho) ou anterógrado.\n- Cobre ==dorso da mão, primeira comissura e punho== sem sacrificar radial nem ulnar.\n\n### Pedículo\n- Corre no ==septo entre o extensor ulnar do carpo e o extensor do dedo mínimo==.\n- Linha de referência: **epicôndilo lateral → cabeça da ulna**; perfurantes no terço médio.\n- Anastomose com a interóssea anterior cerca de 2 cm proximal à RUD (ponto pivô do fluxo reverso).\n\n### Cuidados\n- Preservar o **ramo motor do nervo interósseo posterior** (para EUC e extensor do mínimo), mais profundo.\n- Verificar a anastomose distal antes de levantar o retalho (variação anatômica).\n\n### Outros retalhos da mão\n| Retalho | Uso |\n|---|---|\n| chinês (radial) | grande, sacrifica a radial |\n| Becker (ulnar dorsal) | borda ulnar |\n| cruzado de dedo, Moberg, Kutler | polpas |\n\n> **Na prova:** pedículo = ==entre extensor ulnar do carpo e extensor do quinto dedo==.",
-  "correta": "**Septo EUC e extensor do mínimo.**\n- O pedículo corre entre esses dois músculos no terço médio do antebraço.",
   "incorretas": {
-   "A": "**Referência do NIP.**\n- O supinador é marco para o nervo interósseo posterior, não para o pedículo.",
-   "B": "**Metade certa.**\n- O EUC é uma margem, mas a outra é o extensor do mínimo.",
-   "C": "**Intervalo radial demais.**\n- Não contém o pedículo."
+   "A": "O supinador é referência para o nervo interósseo posterior, mais proximal, e não marca o intervalo do pedículo.",
+   "B": "O extensor ulnar do carpo é uma das margens, mas a outra é o extensor do dedo mínimo, e não o supinador.",
+   "C": "O intervalo entre o extensor dos dedos e o extensor do mínimo fica radial demais e não contém o pedículo."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Feridas no **dorso da mão**, na **primeira comissura** (o espaço entre polegar e indicador) e no **punho** muitas vezes expõem tendões ou ossos e precisam de um **retalho**: um pedaço de pele e tecido levado com sua própria circulação para cobrir a área.\n\n**O retalho da artéria interóssea posterior**: é um retalho **fasciocutâneo** (pele com a fáscia por baixo) retirado do **dorso do antebraço**. A grande vantagem é que ele **não sacrifica** as artérias principais da mão, a radial e a ulnar.\n\n**Como ele recebe sangue**: a artéria interóssea posterior corre no dorso do antebraço e, perto do punho, se comunica com a artéria interóssea anterior. Usando essa comunicação, o retalho pode ser girado com o **fluxo invertido** (o sangue chega de baixo para cima), alcançando a mão.\n\n**Onde está o pedículo**: a artéria corre no **septo entre o extensor ulnar do carpo e o extensor do dedo mínimo**. Para marcar na pele, traça-se uma linha do **epicôndilo lateral** até a **cabeça da ulna**; os vasos que sobem para a pele (perfurantes) ficam ao longo dessa linha, principalmente no terço médio.\n\n**Cuidados**:\n\npreservar o **ramo motor do nervo interósseo posterior**, que corre mais fundo e inerva o extensor ulnar do carpo e o extensor do mínimo;\n\nconferir a comunicação com a interóssea anterior antes de levantar o retalho, porque há variações anatômicas.\n\n**Na prova**: o pedículo do retalho interósseo posterior fica entre o extensor ulnar do carpo e o extensor do quinto dedo.",
+  "correta": "O pedículo corre no septo entre o extensor ulnar do carpo e o extensor do dedo mínimo, no terço médio do antebraço.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0016": {
-  "conceito": "### Zonas dos extensores do polegar\n| Zona | Local |\n|---|---|\n| I | interfalângica |\n| II | falange proximal |\n| III | metacarpofalângica |\n| IV | metacarpo |\n| ==V== | ==punho / trapeziometacarpiana== |\n\n- No polegar, a numeração vai de **I a V** (prefixo T).\n\n### Por que a zona V associa lesões\n- Ali o ELP (3º compartimento) passa ==junto ao 1º compartimento== (abdutor longo e extensor curto).\n- Um corte transverso no dorso radial do punho pega os três.\n- Risco associado: **ramo superficial do radial** e artéria radial na tabaqueira.\n\n### Exame\n- **ELP:** retropulsão do polegar (elevar o polegar acima do plano da mão).\n- **Extensor curto:** extensão da MF.\n- **Abdutor longo:** abdução radial.\n\n### Lesões do ELP\n- Ruptura espontânea após **fratura sem desvio do rádio distal** (isquemia no Lister) ou na artrite reumatoide.\n- Tratamento: transferência do **extensor do indicador**.\n\n> **Na prova:** ELP + 1º compartimento = ==zona V==.",
-  "correta": "**Zona V.**\n- No punho, o ELP corre perto do abdutor longo e do extensor curto do polegar.\n- Um mesmo corte atinge os três.",
   "incorretas": {
-   "A": "**Inserções já terminaram.**\n- Na MF, o 1º compartimento já se inseriu.",
-   "B": "**Tendões separados.**\n- Sobre o metacarpo, o ELP já se afastou do 1º compartimento.",
-   "D": "**Não existe no polegar.**\n- A zona VI pertence aos dedos longos."
+   "A": "Na zona III, sobre a metacarpofalângica, os tendões do primeiro compartimento já se inseriram ou se afastaram, então a associação não é típica.",
+   "B": "Na zona IV, sobre o metacarpo, o extensor longo já se afastou dos tendões do primeiro compartimento.",
+   "D": "A zona VI pertence à classificação dos dedos longos; no polegar, as zonas vão apenas de I a V."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Os **tendões extensores** são divididos em **zonas** para padronizar o diagnóstico e o tratamento das lesões. No **polegar**, as zonas vão de **I a V** (às vezes escritas com a letra T):\n\n**zona I**: articulação interfalângica;\n\n**zona II**: falange proximal;\n\n**zona III**: articulação metacarpofalângica;\n\n**zona IV**: metacarpo;\n\n**zona V**: **punho**, na altura da articulação trapeziometacarpiana e do retináculo dos extensores.\n\n**Por que a zona V associa lesões**: no punho, o **extensor longo do polegar** (ELP), que vem do 3º compartimento dorsal, passa **muito perto** do **1º compartimento**, onde correm o **abdutor longo** e o **extensor curto do polegar**. Os três formam as bordas da **tabaqueira anatômica**. Um corte transverso no dorso radial do punho atinge os três tendões juntos. Na mesma região, podem ser lesados o **ramo superficial do nervo radial** e a **artéria radial**.\n\n**Como examinar cada tendão**:\n\n**ELP**: retropulsão, elevar o polegar acima do plano da mão apoiada na mesa;\n\n**extensor curto**: extensão da metacarpofalângica;\n\n**abdutor longo**: abdução do polegar para o lado radial.\n\n**Na prova**: a lesão do extensor do polegar associada à dos tendões do primeiro compartimento é mais frequente na zona V.",
+  "correta": "Na zona V, no punho, o extensor longo do polegar passa junto aos tendões do primeiro compartimento, e um mesmo corte atinge os três.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0017": {
-  "conceito": "### Pares nervo–músculo nas síndromes compressivas\n| Síndrome | Nervo | Estrutura compressiva |\n|---|---|---|\n| ==túnel cubital== | ==ulnar== | ==aponeurose entre as cabeças do flexor ulnar do carpo== (arcada de Osborne) |\n| pronador | mediano | cabeças do pronador redondo, lacerto fibroso, arcada do FSD |\n| interósseo anterior | ramo do mediano | pronador, FSD, músculo de Gantzer |\n| interósseo posterior / túnel radial | ramo do radial | ==supinador== (arcada de Frohse), vasos de Henry, ERCC |\n| canal de Guyon | ulnar | ganglio, hâmulo do hamato, músculo anômalo |\n\n### Túnel cubital\n- Segunda neuropatia compressiva mais comum do membro superior.\n- Flexão do cotovelo estira o nervo e aumenta a pressão.\n- Sinais: Froment, Wartenberg, atrofia do 1º interósseo, hipoestesia no dorso ulnar da mão (ramo dorsal, que sai antes do Guyon).\n\n### Tratamento cirúrgico\n- Descompressão **in situ** (com liberação da aponeurose do FUC), transposição anterior, epicondilectomia medial.\n\n> **Na prova:** túnel cubital = ==flexor ulnar do carpo==.",
-  "correta": "**Flexor ulnar do carpo.**\n- O nervo passa entre as duas cabeças do FUC.\n- A aponeurose que as une se tensiona sobre ele na flexão do cotovelo.",
   "incorretas": {
-   "A": "**Nervo interósseo posterior.**\n- O supinador comprime o ramo do radial na arcada de Frohse.",
-   "B": "**Mediano.**\n- O pronador redondo comprime o mediano no cotovelo.",
-   "D": "**Também mediano.**\n- A arcada do FSD comprime o mediano ou o interósseo anterior."
+   "A": "O supinador comprime o nervo interósseo posterior, ramo do radial, na arcada de Frohse, e não o ulnar.",
+   "B": "O pronador redondo comprime o nervo mediano no cotovelo, e não o ulnar.",
+   "D": "A arcada do flexor superficial dos dedos comprime o mediano ou o interósseo anterior, e não o ulnar."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **síndrome do túnel cubital** é a compressão do **nervo ulnar** no cotovelo. É a **segunda neuropatia compressiva mais comum** do membro superior, depois do túnel do carpo.\n\n**Onde o nervo é comprimido**: o ulnar passa atrás do epicôndilo medial e entra no antebraço **entre as duas cabeças do músculo flexor ulnar do carpo** (uma presa no úmero e outra na ulna). Essas duas cabeças são unidas por uma faixa fibrosa, a **aponeurose do flexor ulnar do carpo** (arcada de Osborne). Quando o cotovelo dobra, essa faixa se estica sobre o nervo, e a pressão dentro do túnel aumenta. Por isso os sintomas pioram ao dormir com o braço dobrado ou ao falar ao telefone.\n\n**Os sinais**:\n\nformigamento no anelar e no mínimo;\n\nperda de sensibilidade no **dorso ulnar** da mão (o ramo dorsal do ulnar sai antes do punho, o que ajuda a diferenciar da compressão no canal de Guyon);\n\nfraqueza e atrofia dos interósseos, especialmente o primeiro, entre polegar e indicador;\n\nsinal de **Froment** (o paciente dobra a ponta do polegar para segurar um papel, compensando a fraqueza do adutor);\n\nsinal de **Wartenberg** (o dedo mínimo fica afastado).\n\n**Para não confundir**: o **supinador** comprime o nervo interósseo posterior (ramo do radial), e o **pronador redondo** e o **flexor superficial dos dedos** comprimem o nervo mediano.\n\n**Tratamento cirúrgico**: liberação do nervo no lugar, transposição anterior ou epicondilectomia medial.\n\n**Na prova**: no túnel cubital, o nervo ulnar é comprimido pelo flexor ulnar do carpo, entre suas duas cabeças.",
+  "correta": "O nervo ulnar passa entre as duas cabeças do flexor ulnar do carpo, e a aponeurose que as une se tensiona sobre ele na flexão do cotovelo.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0018": {
-  "conceito": "### Luxação e fratura-luxação perissemilunar\n- Mecanismo (Mayfield): ==hiperextensão, desvio ulnar e supinação intercarpal==.\n- O semilunar fica preso pelos ligamentos volares; o carpo gira e desloca **dorsalmente** em torno dele.\n\n| Estágio | Estrutura lesada |\n|---|---|\n| I | escafossemilunar (ou fratura do escafoide) |\n| II | capitossemilunar |\n| III | lunopiramidal (ou fratura do piramidal) |\n| IV | semilunar luxa para volar |\n\n### Arco maior × menor\n- **Arco menor:** só ligamentar (luxação perissemilunar).\n- **Arco maior:** com fraturas; a mais comum é a ==transescafoperissemilunar== (de Quervain).\n\n### Diagnóstico e conduta\n- Até **25%** passam despercebidas no pronto-socorro: perfil mostra perda do alinhamento radio-semilunar-capitato.\n- Linhas de Gilula quebradas no PA.\n- Redução fechada urgente, depois **redução aberta e fixação** (ligamentos e fraturas); liberar o túnel do carpo se houver sintomas do mediano.\n\n> **Na prova:** mecanismo = ==hiperextensão, desvio ulnar e supinação intercarpal==.",
-  "correta": "**Mesmo mecanismo da sequência de Mayfield.**\n- O semilunar fica retido enquanto o carpo gira e desloca dorsalmente.\n- Hiperextensão, desvio ulnar e supinação intercarpal.",
   "incorretas": {
-   "A": "**Rotação errada.**\n- O carpo supina, não prona.",
-   "B": "**Erra os dois.**\n- O desvio é ulnar e a rotação é supinação.",
-   "D": "**Desvio errado.**\n- A supinação está certa, mas o desvio é ulnar."
+   "A": "O desvio ulnar está certo, mas o carpo roda em supinação, e não em pronação.",
+   "B": "Erra os dois componentes: o desvio é ulnar e a rotação é supinação.",
+   "D": "A supinação está certa, mas o desvio é ulnar, e não radial."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **luxação perissemilunar** é uma lesão grave do carpo em que o **semilunar** fica no lugar, preso ao rádio, enquanto **todo o resto do carpo** se desloca em volta dele, geralmente para dorsal. Quando há fraturas associadas, chama-se **fratura-luxação perissemilunar**.\n\n**O mecanismo (Mayfield)**: queda com a mão espalmada e grande energia, com:\n\n**hiperextensão** do punho;\n\n**desvio ulnar**;\n\n**supinação intercarpal** (o carpo distal gira em supinação em relação ao proximal).\n\n**A progressão ao redor do semilunar**, de radial para ulnar:\n\n**estágio I**: ruptura escafossemilunar (ou fratura do escafoide);\n\n**estágio II**: separação entre capitato e semilunar;\n\n**estágio III**: ruptura lunopiramidal (ou fratura do piramidal): o carpo luxa em volta do semilunar;\n\n**estágio IV**: o próprio semilunar é empurrado e luxa para a palma, girando como uma \"xícara derramada\".\n\n**Arco menor e arco maior**: se a força passa só pelos ligamentos ao redor do semilunar, é o **arco menor** (luxação pura). Se passa pelos ossos, fraturando-os, é o **arco maior**. A forma mais comum é a **transescafoperissemilunar**, com fratura do escafoide.\n\n**Atenção**: até cerca de um quarto dessas lesões passa despercebida no pronto-socorro. No perfil, o capitato não fica mais alinhado sobre o semilunar.\n\n**Na prova**: a fratura-luxação perissemilunar ocorre por hiperextensão, desvio ulnar e supinação intercarpal.",
+  "correta": "É o mesmo mecanismo da sequência de Mayfield: hiperextensão, desvio ulnar e supinação intercarpal, com o semilunar retido e o carpo girando ao seu redor.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0019": {
-  "conceito": "### Avulsão do flexor profundo (dedo de jérsei)\n- Hiperextensão forçada da IFD durante flexão ativa (agarrar a camisa).\n- Dedo mais acometido: ==anelar== (cerca de 75%).\n\n### Classificação de Leddy e Packer\n| Tipo | Retração | Vínculas | Prazo de reparo |\n|---|---|---|---|\n| ==I== | ==até a palma== | ==ambas rompidas== (isquemia) | ==7 a 10 dias== |\n| II | até a IFP | vínculo longo íntegro | até cerca de 6 semanas |\n| III | fragmento grande retido na **A4** | íntegras | fixação do fragmento |\n| IV | fragmento ósseo + tendão avulsionado do fragmento | variável | fixar o osso e reinserir o tendão |\n| V (acréscimos) | fratura da falange distal associada | | |\n\n### Vínculas\n- **Curta** (próxima à inserção) e **longa** (mais proximal) para cada flexor.\n- Levam a irrigação ao tendão: sem elas, retração e encurtamento rápidos.\n\n> **Na prova:** ruptura de ambas as vínculas = ==Leddy e Packer tipo I==.",
-  "correta": "**Tipo I.**\n- As duas vínculas rompem e o tendão retrai até a palma.\n- Sem irrigação, o reparo deve ser feito em 7 a 10 dias.",
   "incorretas": {
-   "B": "**Vínculo longo íntegro.**\n- No tipo II o tendão para na IFP, preso pelo vínculo longo.",
-   "C": "**Fragmento na A4.**\n- O fragmento ósseo grande impede a retração; vínculas íntegras.",
-   "D": "**Lesão dupla.**\n- O tipo IV é fratura com tendão avulsionado do fragmento."
+   "B": "No tipo II o vínculo longo continua íntegro e segura o tendão na altura da interfalângica proximal.",
+   "C": "No tipo III, um fragmento ósseo grande fica retido na polia A4, e as vínculas estão íntegras.",
+   "D": "O tipo IV é a lesão dupla, com fratura e o tendão avulsionado também do fragmento ósseo, e não a ruptura das duas vínculas."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **flexor profundo dos dedos** (FPD) se insere na falange distal e é o único que dobra a ponta do dedo. Sua **avulsão fechada** acontece quando o dedo está fazendo força para fletir e é **estendido à força**, como ao agarrar a camisa de um adversário que puxa (daí o nome **dedo de jérsei**). O dedo mais acometido é o **anelar**.\n\n**As vínculas**: são pequenas faixas de tecido que ligam os tendões flexores ao osso e levam **vasos sanguíneos** até eles. Cada flexor tem um **vínculo curto**, perto da inserção, e um **vínculo longo**, mais proximal. Elas também **seguram** o tendão, impedindo que ele retraia demais se for cortado.\n\n**A classificação de Leddy e Packer**:\n\n**tipo I**: o tendão **retrai até a palma**, porque **as duas vínculas rompem**. Sem elas, o tendão perde a irrigação e encurta rapidamente. Precisa ser reinserido em **7 a 10 dias**;\n\n**tipo II**: o tendão retrai até a altura da interfalângica proximal, segurado pelo **vínculo longo**, que continua íntegro. Pode ser reparado mais tarde;\n\n**tipo III**: há um **fragmento ósseo grande** arrancado junto, que fica preso na polia A4 e impede a retração. As vínculas estão íntegras. Fixa-se o fragmento;\n\n**tipo IV**: fratura com fragmento ósseo e, além disso, o tendão também se solta do fragmento e retrai.\n\n**Na prova**: no tipo I de Leddy e Packer, as duas vínculas rompem, o tendão vai até a palma e o reparo deve ser feito em 7 a 10 dias.",
+  "correta": "No tipo I, as duas vínculas rompem, o tendão retrai até a palma e perde a irrigação, exigindo reparo em 7 a 10 dias.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0020": {
-  "conceito": "### Cronologia do desenvolvimento do membro superior\n| Período | Evento |\n|---|---|\n| 4ª semana (cerca de 26 dias) | surge o broto do membro superior |\n| 5ª a 6ª semanas | placa da mão, condensação mesenquimal |\n| 7ª semana | raios digitais, apoptose interdigital |\n| ==8ª semana== | dedos separados; ==fim da organogênese== dos membros |\n| 3º mês em diante | crescimento, ossificação, maturação |\n\n### Implicações\n- Agressões entre a **4ª e a 8ª semanas** causam malformações estruturais (focomelia pela talidomida, deficiências longitudinais).\n- Depois, predominam **deformações** e alterações de crescimento.\n\n### Classificação OMT\n- Malformações (falha de formação ou diferenciação por eixo), deformações (ex.: bridas amnióticas) e displasias.\n\n> **Na prova:** o gabarito adota o ==terceiro mês== (divisão ampla do 1º trimestre); a organogênese dos membros se concentra entre a 4ª e a 8ª semanas (veja o alerta).",
-  "correta": "**Resposta oficial.**\n- O gabarito considera o período de organogênese até o fim do primeiro trimestre (terceiro mês).\n- Os eventos críticos dos membros se concentram na 4ª a 8ª semanas (veja o alerta).",
   "incorretas": {
-   "A": "**Início apenas.**\n- No primeiro mês o broto mal começa a surgir.",
-   "B": "**Concentra a organogênese.**\n- É o período crítico real, mas o gabarito não o aceitou (veja o alerta).",
-   "D": "**Maturação.**\n- No quarto mês predominam crescimento e maturação."
+   "A": "No primeiro mês o broto do membro está apenas começando a surgir, no fim da quarta semana.",
+   "B": "O segundo mês concentra o período crítico real dos membros, mas não foi a resposta aceita pelo gabarito.",
+   "D": "No quarto mês a organogênese já terminou e predominam crescimento e maturação."
   },
+  "conceito": "O membro superior se forma muito cedo na gestação. Conhecer a cronologia ajuda a entender quando uma agressão (um medicamento, uma infecção, uma alteração genética) pode causar uma **malformação**.\n\n**A sequência do desenvolvimento**:\n\npor volta da **4ª semana** (cerca de 26 dias), surge o **broto** do membro superior;\n\nna **5ª e 6ª semanas**, forma-se a placa da mão;\n\nna **7ª semana**, aparecem os raios dos dedos, e as células entre eles começam a morrer de forma programada (apoptose) para separá-los;\n\npor volta da **8ª semana**, os dedos estão separados e a **organogênese** (a formação dos órgãos e estruturas) dos membros termina;\n\ndo **3º mês em diante**, predominam crescimento, ossificação e maturação.\n\n**A diferença entre malformação e deformação**:\n\nagressões durante a organogênese causam **malformações**: a estrutura não se forma ou se forma errada. O exemplo clássico é a **talidomida**, que causou focomelia (mãos ligadas diretamente ao tronco);\n\ndepois desse período, predominam as **deformações**: uma estrutura que se formou normal é alterada por forças externas, como as **bridas amnióticas**, que estrangulam os dedos.\n\n**Sobre esta questão**: o gabarito oficial é o terceiro mês, que corresponde a considerar a organogênese até o fim do primeiro trimestre. Pela embriologia atual, o período crítico dos membros se concentra entre a 4ª e a 8ª semanas, isto é, principalmente no segundo mês.\n\n**Na prova**: o gabarito aceita o terceiro mês, mas a organogênese dos membros se concentra entre a 4ª e a 8ª semanas.",
+  "correta": "É o gabarito oficial: a banca considera a organogênese até o fim do primeiro trimestre, embora os eventos críticos dos membros ocorram entre a 4ª e a 8ª semanas.",
   "alerta": "A formulação é imprecisa: embriologia moderna situa a organogênese principal dos membros entre a 4ª e a 8ª semanas, isto é, sobretudo no segundo mês. O gabarito C provavelmente usa uma divisão ampla do primeiro trimestre e merece conferência no original.",
   "referencias": [
    "Moore KL, Persaud TVN, Torchia MG. The Developing Human. 11th ed. Elsevier; 2020. Development of limbs.",
    "Kozin SH. Upper-extremity congenital anomalies. J Bone Joint Surg Am. 2003;85:1564-1576."
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0021": {
