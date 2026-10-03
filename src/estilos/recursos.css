@@ -399,3 +399,37 @@
 @media (prefers-reduced-motion: reduce) {
   :where(img[src*="pixel/"], img[src*="emblemas/"], img[src*="ranking/mensageiro"], img[src*="ranking/carta"], img[src*="ranking/tachinha"]) { animation: none; transition: none; }
 }
+
+/* ---------- Indique e ganhe (página inicial, temporada RPG) ---------- */
+.ig { position: relative; display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 1.25rem 2rem; align-items: center; padding: clamp(1.2rem, 3vw, 1.75rem); border-radius: var(--raio-cartao); color: #f3ead6;
+  border: 3px solid #c99a3b; box-shadow: 0 0 0 3px #3a2a12, 0 14px 32px rgba(27, 18, 8, 0.35);
+  background: radial-gradient(circle at 1px 1px, rgba(255, 220, 150, 0.08) 1px, transparent 0) 0 0 / 14px 14px, linear-gradient(160deg, #2a1d0e, #3a2a12 55%, #23412f); }
+.ig__selo { display: inline-block; margin: 0 0 0.5rem; padding: 0.1rem 0.5rem; background: #c99a3b; color: #1b1208; font-family: var(--fonte-pixel); font-weight: 700; font-size: 0.8rem; letter-spacing: 0.06em; text-transform: uppercase; }
+.ig h2 { margin: 0 0 0.4rem; font-size: clamp(1.35rem, 3.6vw, 1.8rem); color: #fff6e0; line-height: 1.15; }
+.ig h2 em { font-style: normal; font-family: var(--fonte-pixel); color: #f4cf7c; }
+.ig__texto > p { margin: 0; color: #e6d9bd; line-height: 1.5; font-size: var(--corpo-menor); max-width: 52ch; }
+.ig__placar { margin-top: 0.6rem !important; font-family: var(--fonte-pixel); color: #f4cf7c !important; }
+.ig__placar b { font-size: 1.15rem; }
+.ig__acoes { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin-top: 1rem; }
+.ig__whatsapp, .ig__copiar { display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem; min-height: 2.75rem; padding: 0 1.1rem; border-radius: var(--raio-controle); font: inherit; font-size: var(--corpo-menor); font-weight: 700; text-decoration: none; cursor: pointer; white-space: nowrap; }
+.ig__whatsapp { background: #1fa855; color: #fff !important; border: 0; box-shadow: 0 3px 0 #13703a; }
+.ig__whatsapp:hover { background: #18914a; }
+.ig__copiar { background: transparent; color: #fff6e0; border: 2px solid #c99a3b; }
+.ig__copiar:hover { background: rgba(201, 154, 59, 0.18); }
+.ig__mais { display: inline-flex; align-items: center; gap: 0.25rem; color: #f4cf7c !important; font-weight: 700; font-size: var(--corpo-menor); text-decoration: none; padding: 0 0.4rem; }
+.ig__trilha { list-style: none; margin: 0; padding: 0.9rem; display: grid; gap: 0.6rem; border-radius: var(--raio-controle); background: rgba(10, 8, 4, 0.35); border: 2px dashed rgba(201, 154, 59, 0.55); }
+.ig__trilha li { display: grid; grid-template-columns: 52px minmax(0, 1fr); align-items: center; gap: 0.7rem; font-size: var(--corpo-menor); color: #f3ead6; font-weight: 600; }
+.ig__trilha img { image-rendering: pixelated; justify-self: center; filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.35)); }
+@media (max-width: 46rem) {
+  .ig { grid-template-columns: 1fr; }
+  .ig__acoes > .ig__whatsapp, .ig__acoes > .ig__copiar { flex: 1 1 auto; }
+}
+
+/* Menu: destaque do Indique e ganhe, irmão do baú dos planos. */
+.mn-indicar { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.75rem 1rem; padding: 0.75rem 1rem; margin-bottom: 0.75rem; border-radius: var(--raio-cartao); text-decoration: none; color: #f3ead6; border: 2px solid #c99a3b; background: linear-gradient(160deg, #2a1d0e, #3a2a12 60%, #23412f); }
+.mn-indicar:hover { color: #fff6e0; border-color: #f4cf7c; }
+.mn-indicar img { image-rendering: pixelated; }
+.mn-indicar strong { display: block; font-size: 1.05rem; color: #fff6e0; }
+.mn-indicar small { display: block; color: #e6d9bd; font-size: var(--meta); line-height: 1.35; }
+.mn-indicar__acao { display: inline-flex; align-items: center; gap: 0.25rem; padding: 0.45rem 0.8rem; border-radius: 999px; background: #1fa855; color: #fff; font-weight: 800; font-size: var(--meta); white-space: nowrap; }
+@media (max-width: 30rem) { .mn-indicar { grid-template-columns: auto minmax(0, 1fr); } .mn-indicar__acao { grid-column: 1 / -1; justify-content: center; } }

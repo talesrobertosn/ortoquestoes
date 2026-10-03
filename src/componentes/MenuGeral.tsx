@@ -6,6 +6,7 @@ import { usarArmazenado } from '../estado/usarArmazenado'
 import { CHAVE_SESSAO } from '../estado/sessao'
 import type { EstadoSessao } from '../dados/tipos'
 import { href } from '../util/rotas'
+import { recurso } from '../config'
 import { IconePixel } from './IconePixel'
 import { Icone, type NomeIcone } from './Icone'
 import { JanelaCentral, usarTelaLarga } from './JanelaCentral'
@@ -47,7 +48,6 @@ const GRUPOS: { titulo: string; itens: Item[] }[] = [
       { destino: '/dados', rotulo: 'Seu desempenho', texto: 'Acerto por tema e a sua evolução', icone: 'grafico' },
       { destino: '/ranking', rotulo: 'Ranking', texto: 'Sua posição, emblemas e missões', icone: 'trofeu' },
       { destino: '/conquistas', rotulo: 'Conquistas', texto: 'Inventário de emblemas e vitrine', icone: 'medalha' },
-      { destino: '/indicar', rotulo: 'Indique e ganhe', texto: '7 dias do plano completo por amigo', icone: 'compartilhar' },
       { destino: '/ligas', rotulo: 'Liga da residência', texto: 'Dispute com os colegas do seu serviço', icone: 'grupo', assinante: true },
       { destino: '/conta', rotulo: 'Relatório do mês', texto: 'Todo dia 1º, a sua evolução no e-mail', icone: 'correio', assinante: true },
     ],
@@ -101,6 +101,12 @@ function ConteudoMenu({ caminho, aoFechar }: { caminho: string; aoFechar: () => 
           <span className="mn-planos__acao">Ver planos <Icone nome="direita" tamanho={14} /></span>
         </a>
       )}
+
+      <a className="mn-indicar" href={href('/indicar')} onClick={aoFechar}>
+        <img src={recurso('ranking/mensageiro.png')} width={38} height={48} alt="" draggable={false} />
+        <span><strong>Indique e ganhe</strong><small>Chame um colega da residência: 7 dias do plano completo para cada um</small></span>
+        <span className="mn-indicar__acao">Meu link <Icone nome="direita" tamanho={14} /></span>
+      </a>
 
       {pendente && (
         <a className="mn-retomar" href={href('/sessao')} onClick={aoFechar}>
