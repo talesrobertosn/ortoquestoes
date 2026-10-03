@@ -18,19 +18,20 @@ section { position: relative; overflow: hidden; margin-bottom: 40px; }
 /* Foto de perfil: o Instagram recorta em círculo, então tudo fica no miolo. */
 .perfil { width: 1080px; height: 1080px; display: grid; place-items: center; text-align: center; }
 .perfil .nome { line-height: .98; letter-spacing: -.035em; }
-.perfil .nome b { display: block; font-size: 230px; }
-.perfil .nome span { display: block; font-size: 148px; letter-spacing: -.025em; margin-top: 6px; }
-.perfil .alternativas { display: flex; flex-direction: column; gap: 22px; align-items: flex-start; margin: 0 auto 64px; width: 250px; }
-.perfil .alternativas i { display: flex; align-items: center; gap: 26px; }
-.perfil .alternativas i::before { content: ''; width: 36px; height: 36px; border-radius: 50%; background: currentColor; }
-.perfil .alternativas i::after { content: ''; height: 30px; border-radius: 15px; background: currentColor; width: var(--l); }
-.perfil .alternativas i { color: rgba(255,255,255,.45); }
-.perfil .alternativas i.certa { color: #f4cf7c; }
-.perfil .alternativas i.certa::before { width: 46px; height: 46px; margin-left: -5px; margin-right: -5px; }
-.perfil--claro { background: #fbf6ea; color: #0b3a35; }
+.perfil .nome b { display: block; }
+.perfil .nome span { display: block; letter-spacing: -.025em; margin-top: 6px; }
+.perfil .simbolo { display: block; width: 330px; height: 330px; margin: 0 auto 46px; }
+.perfil .simbolo svg { width: 100%; height: 100%; display: block; }
+.perfil--so .simbolo { width: 640px; height: 640px; margin: 0 auto; }
+.perfil--claro { background: #f1f3f2; color: #12181a; }
 .perfil--claro .nome span { color: #14655e; }
-.perfil--claro .alternativas i { color: rgba(11,58,53,.3); }
-.perfil--claro .alternativas i.certa { color: #d9a93f; }
+.perfil .nome b { font-size: 176px; } .perfil .nome span { font-size: 118px; }
+
+/* Assinatura horizontal: símbolo e nome por extenso, para capas e destaques. */
+.assinatura { width: 1600px; height: 600px; display: flex; align-items: center; justify-content: center; gap: 56px; }
+.assinatura .simbolo { width: 300px; height: 300px; } .assinatura .simbolo svg { width: 100%; height: 100%; display: block; }
+.assinatura .nome { font-size: 164px; letter-spacing: -.035em; }
+.assinatura--clara { background: #f1f3f2; color: #12181a; } .assinatura--clara .nome span { color: #14655e; }
 
 /* Prévia do link: 1200 x 630. */
 .previa { width: 1200px; height: 630px; padding: 58px 72px; }
@@ -52,23 +53,31 @@ section { position: relative; overflow: hidden; margin-bottom: 40px; }
 .comentario { margin-top: 12px; padding: 12px 14px; border-radius: 12px; background: #e7f0ee; color: #14655e; font: 600 14px/1.35 Jakarta; }
 </style></head><body>
 
-<!-- Símbolo do Orto Questões: três alternativas, a certa em dourado. -->
-<template id="simbolo"><svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#FFFFFF" fill-opacity=".12"/><g fill="#FFFFFF" opacity=".55"><circle cx="9" cy="10" r="2"/><rect x="13" y="8.4" width="11" height="3.2" rx="1.6"/></g><g fill="#F4CF7C"><circle cx="9" cy="16" r="2.6"/><rect x="13" y="14.4" width="12" height="3.2" rx="1.6"/></g><g fill="#FFFFFF" opacity=".55"><circle cx="9" cy="22" r="2"/><rect x="13" y="20.4" width="8" height="3.2" rx="1.6"/></g></svg></template>
+<!-- Símbolo do Orto Questões: coluna de alternativas, quatro vértebras com a terceira (certa) em dourado. -->
+<template id="simbolo"><svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#FFFFFF" fill-opacity=".12"/><g transform="scale(.5)"><g fill="#FFFFFF" opacity=".55"><path transform="translate(13 9.5)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(11 21.2)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(13 44.6)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g><g fill="#F4CF7C"><path transform="translate(11 32.9)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g></g></svg></template>
+<template id="simbolo-verde"><svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#14655E"/><g transform="scale(.5)"><g fill="#FFFFFF" opacity=".55"><path transform="translate(13 9.5)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(11 21.2)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(13 44.6)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g><g fill="#F4CF7C"><path transform="translate(11 32.9)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g></g></svg></template>
 
-<!-- Foto de perfil (principal) -->
+<!-- Foto de perfil (principal): símbolo e nome por extenso. O Instagram recorta em círculo. -->
 <section class="perfil fundo" id="perfil">
-  <div>
-    <div class="alternativas"><i style="--l: 150px"></i><i class="certa" style="--l: 180px"></i><i style="--l: 110px"></i></div>
-    <p class="nome"><b>Orto</b><span>Questões</span></p>
-  </div>
+  <div><span class="simbolo" data-simbolo="simbolo"></span><p class="nome"><b>Orto</b><span>Questões</span></p></div>
 </section>
 
 <!-- Foto de perfil (alternativa clara) -->
 <section class="perfil perfil--claro" id="perfil-claro">
-  <div>
-    <div class="alternativas"><i style="--l: 150px"></i><i class="certa" style="--l: 180px"></i><i style="--l: 110px"></i></div>
-    <p class="nome"><b>Orto</b><span>Questões</span></p>
-  </div>
+  <div><span class="simbolo" data-simbolo="simbolo-verde"></span><p class="nome"><b>Orto</b><span>Questões</span></p></div>
+</section>
+
+<!-- Foto de perfil só com o símbolo, para quando o nome já aparece ao lado (destaques, avatar pequeno). -->
+<section class="perfil perfil--so fundo" id="perfil-simbolo">
+  <div><span class="simbolo" data-simbolo="simbolo"></span></div>
+</section>
+
+<!-- Assinatura horizontal -->
+<section class="assinatura fundo" id="assinatura">
+  <span class="simbolo" data-simbolo="simbolo"></span><p class="nome"><b>Orto</b> <span>Questões</span></p>
+</section>
+<section class="assinatura assinatura--clara" id="assinatura-clara">
+  <span class="simbolo" data-simbolo="simbolo-verde"></span><p class="nome"><b>Orto</b> <span>Questões</span></p>
 </section>
 
 <!-- Prévia do link -->
@@ -91,6 +100,7 @@ section { position: relative; overflow: hidden; margin-bottom: 40px; }
 
 <script>
 const s = document.getElementById('simbolo').innerHTML
+document.querySelectorAll('[data-simbolo]').forEach(e => e.innerHTML = document.getElementById(e.dataset.simbolo).innerHTML)
 document.querySelectorAll('.marca').forEach(m => m.innerHTML = s + '<p class="nome"><b>Orto</b> <span>Questões</span></p>')
 </script>
 </body></html>

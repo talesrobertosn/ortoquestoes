@@ -210,13 +210,13 @@ def topo(titulo: str, descricao: str, caminho: str, extra: str = "", raiz: str =
 <meta property="og:title" content="{html.escape(titulo, quote=True)}">
 <meta property="og:description" content="{html.escape(descricao, quote=True)}">
 <meta property="og:url" content="{SITE}{caminho}">
-<meta property="og:image" content="{SITE}previa-orto-questoes.jpg">
+<meta property="og:image" content="{SITE}previa-orto-questoes-coluna.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#14655e">
-<link rel="icon" href="{raiz}favicon.svg?v=2" type="image/svg+xml">
-<link rel="icon" href="{raiz}favicon-32.png?v=2" type="image/png" sizes="32x32">
+<link rel="icon" href="{raiz}favicon.svg?v=3" type="image/svg+xml">
+<link rel="icon" href="{raiz}favicon-32.png?v=3" type="image/png" sizes="32x32">
 <style>{ESTILO}</style>
 {extra}
 </head>

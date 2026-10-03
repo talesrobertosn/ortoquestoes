@@ -35,7 +35,7 @@ abaixo é o resumo delas.
 
 - **Nome:** sempre "Orto Questões", escrito por extenso, com o "Questões" em peso menor. Nunca usar a
   letra Q isolada, dentro de círculo ou como símbolo, nem abreviações como "OQ".
-- **Símbolo:** três alternativas (um ponto e uma barra em cada linha); a do meio, a certa, em dourado.
+- **Símbolo:** coluna de alternativas, quatro vértebras em perfil; a terceira, a certa, em dourado.
   Copie o SVG de `src/marca/Simbolo.tsx` ou de `marketing/instagram/marca.html`. Não redesenhe.
 - **Cores:** verde principal `#14655E`; verde escuro (tinta) `#0B3A35`; dourado `#F4CF7C` (dourado
   escuro `#C9952F`); creme `#FBF6EA`; acerto `#1F7A4D`; erro `#B3423A`; texto escuro `#12181A`.
