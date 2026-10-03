@@ -198,3 +198,21 @@
 .tr-incidencia:hover { border-color: var(--verdete); }
 :root[data-tema="escuro"] .tr-incidencia { background: #37241a; border-color: #5a3a22; }
 :root[data-tema="escuro"] .tr-incidencia > svg, :root[data-tema="escuro"] .tr-incidencia b { color: #ffb67a; }
+
+/* Cronograma sempre à mão: no topo do Treinar e na barra de começar. */
+.botao.tr-heroi__cronograma {
+  display: inline-flex; align-items: center; gap: 0.8rem; text-align: left;
+  min-height: 64px; padding: 0.7rem 1.4rem 0.7rem 1.1rem; border-radius: var(--raio-cartao);
+}
+.tr-heroi__cronograma span { display: grid; line-height: 1.2; }
+.tr-heroi__cronograma strong { font-size: 1.1rem; }
+.tr-heroi__cronograma small { font-weight: 500; opacity: 0.8; font-size: var(--meta); }
+.tr-heroi__cronograma svg { flex: 0 0 auto; padding: 0.45rem; width: 2.3rem; height: 2.3rem; border-radius: var(--raio-controle); background: rgba(43, 29, 2, 0.15); }
+.tr-barra__cronograma { white-space: nowrap; }
+@media (max-width: 46rem) {
+  .botao.tr-heroi__cronograma { width: 100%; justify-content: flex-start; }
+}
+@media (max-width: 40rem) {
+  .tr-barra__cronograma span { display: none; }
+  .tr-barra__cronograma::after { content: "Cronograma"; }
+}

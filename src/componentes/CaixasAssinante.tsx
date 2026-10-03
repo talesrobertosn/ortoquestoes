@@ -3,7 +3,8 @@ import { usarPremium } from '../conta/premium'
 import { chamarRpc } from '../servicos/supabase'
 import { usarIndice } from '../dados/usarIndice'
 import { TOP_ASSUNTOS, areaPorId } from '../dados/incidencia'
-import { calcularPlano, type PlanoSalvo } from '../dados/planoEstudo'
+import { calcularPlano, type CalculoPlano, type PlanoSalvo } from '../dados/planoEstudo'
+import { recurso } from '../config'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import type { RegistroQuestao } from '../estado/revisao'
 import { CHAVE_SESSAO } from '../estado/sessao'
@@ -36,11 +37,10 @@ export function usarCronogramaHoje() {
 }
 export type CronogramaHoje = ReturnType<typeof usarCronogramaHoje>
 
-/** Início: o convite do cronograma (quem ainda não tem um) e os temas que mais caem. */
-export function CaixasAssinante({ cronograma }: { cronograma: CronogramaHoje }) {
+/** Início: os temas que mais caem. O cronograma tem cartão próprio, logo abaixo do topo. */
+export function CaixasAssinante() {
   return (
     <div className="empilha cx-bloco">
-      {!cronograma.calculo && <CaixaCronograma cronograma={cronograma} />}
       <CaixaTemas />
     </div>
   )
@@ -86,12 +86,39 @@ const COMO_FUNCIONA = [
   { icone: 'reiniciar' as const, titulo: 'E se ajusta sozinho', texto: 'Atrasou, a meta sobe um pouco; adiantou, alivia. A última semana é de reta final.' },
 ]
 
-function CaixaCronograma({ cronograma }: { cronograma: CronogramaHoje }) {
+/** Trilha da jornada: as semanas do cronograma como casas de um mapa de RPG, até a prova. */
+function TrilhaJornada({ semanas }: { semanas: CalculoPlano['semanas'] }) {
+  const atual = Math.max(0, semanas.findIndex((s) => s.atual))
+  const inicio = Math.max(0, Math.min(atual - 2, semanas.length - 6))
+  const janela = semanas.slice(inicio, inicio + 6)
+  return (
+    <ol className="cr-trilha" aria-label={`Semana ${atual + 1} de ${semanas.length}`}>
+      {janela.map((_, i) => {
+        const n = inicio + i
+        const estado = n < atual ? 'feita' : n === atual ? 'atual' : 'futura'
+        return (
+          <li key={n} className={`cr-trilha__casa cr-trilha__casa--${estado}`}>
+            {estado === 'atual' && <img className="cr-trilha__heroi" src={recurso('ranking/mensageiro.png')} width={32} height={40} alt="" />}
+            <span className="cr-trilha__bloco">{estado === 'feita' ? <Icone nome="certo" tamanho={14} /> : n + 1}</span>
+            <small>{estado === 'atual' ? 'agora' : `sem ${n + 1}`}</small>
+          </li>
+        )
+      })}
+      <li className="cr-trilha__casa cr-trilha__casa--prova">
+        <img src={recurso('emblemas/podio-1.png')} width={34} height={34} alt="" />
+        <small>prova</small>
+      </li>
+    </ol>
+  )
+}
+
+/** Início: o cronograma em destaque, logo abaixo do topo. Quem não tem um vê como montar. */
+export function CartaoCronograma({ cronograma }: { cronograma: CronogramaHoje }) {
   const { premium, logado, calculo, pendente } = cronograma
 
   const titulo = (
     <div className="cr-destaque__texto">
-      <p className="cr-destaque__selo"><Icone nome="rota" tamanho={15} /> {premium ? 'Seu estudo até a prova' : 'Novo para assinantes'}</p>
+      <p className="cr-destaque__selo"><Icone nome="rota" tamanho={15} /> {premium ? 'Sua jornada até a prova' : 'Novo para assinantes'}</p>
       <h2 id="cr-destaque-titulo" className="cr-destaque__nome">Cronograma</h2>
       <p className="cr-destaque__lide">{calculo
         ? (calculo.provaPassou ? 'A prova chegou. Boa sorte!' : <>Faltam <strong>{calculo.diasAteProva} dias</strong> para a sua prova. Siga a meta de hoje e o cronograma cuida do resto.</>)
@@ -103,16 +130,21 @@ function CaixaCronograma({ cronograma }: { cronograma: CronogramaHoje }) {
   if (premium && calculo) {
     const pct = calculo.metaDiaria ? Math.min(100, Math.round((calculo.feitasHoje / calculo.metaDiaria) * 100)) : 100
     return (
-      <section className="cr-destaque" aria-labelledby="cr-destaque-titulo">
-        {titulo}
+      <section className="cr-destaque cr-destaque--jornada" aria-labelledby="cr-destaque-titulo">
+        <div className="cr-destaque__texto-trilha">
+          {titulo}
+          {calculo.semanas.length > 0 && <TrilhaJornada semanas={calculo.semanas} />}
+        </div>
         <div className="cr-destaque__painel">
           <span className="cr-destaque__rotulo">Meta de hoje</span>
           <div className="cr-destaque__meta"><strong className="numerico">{calculo.feitasHoje}</strong><span>de {calculo.metaDiaria} questões</span></div>
-          <span className="cr-destaque__barra"><span style={{ width: `${pct}%` }} /></span>
+          {calculo.metaDiaria > 0 && calculo.metaDiaria <= 40
+            ? <span className="cr-blocos" aria-hidden="true" style={{ gridTemplateColumns: `repeat(${calculo.metaDiaria}, minmax(0, 1fr))` }}>{Array.from({ length: calculo.metaDiaria }, (_, i) => <span key={i} className={i < calculo.feitasHoje ? 'cheio' : ''} />)}</span>
+            : <span className="cr-destaque__barra"><span style={{ width: `${pct}%` }} /></span>}
           <p>{calculo.naRetaFinal ? 'Reta final: erros, dúvidas e simulado.' : calculo.hoje ? <>Hoje: <strong>{calculo.hoje.nome}</strong>{calculo.hoje.focos[0] ? `, começando por ${calculo.hoje.focos[0].toLowerCase()}` : ''}.</> : 'Meta de hoje cumprida. Bom trabalho!'}</p>
           {pendente
             ? <a className="botao botao--claro botao--grande" href={href('/sessao')}>Continuar de onde parei · {pendente.feitas}/{pendente.total}</a>
-            : <a className="botao botao--claro botao--grande" href={href('/cronograma')}>{calculo.hoje && calculo.faltaHoje ? 'Começar a meta de hoje' : 'Abrir o cronograma'}</a>}
+            : <a className="botao botao--ouro botao--grande" href={href('/cronograma')}>{calculo.hoje && calculo.faltaHoje ? 'Seguir o cronograma' : 'Abrir o cronograma'}</a>}
           {pendente && <a className="cr-destaque__link" href={href('/cronograma')}>Ver o cronograma completo</a>}
         </div>
       </section>
