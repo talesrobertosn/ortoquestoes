@@ -112,3 +112,11 @@
 .revisao-premium .calendario__dia:not(:disabled):hover { transform: translateY(-1px); box-shadow: var(--sombra-media); }
 .revisao-premium .calendario__dia--passado { opacity: 0.35; border-style: dashed; }
 .revisao-premium .calendario__dia--selecionado { outline: 2px solid var(--verdete); outline-offset: 2px; }
+
+/* Ritmo e regra recolhidos: o calendário vem primeiro. */
+.rv-recolhivel > summary { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; list-style: none; cursor: pointer; }
+.rv-recolhivel > summary::-webkit-details-marker { display: none; }
+.rv-recolhivel > summary > svg { flex: none; margin-top: 0.3rem; color: var(--texto-2); transition: transform 0.15s ease; }
+.rv-recolhivel[open] > summary > svg { transform: rotate(180deg); }
+.rv-recolhivel[open] > summary ~ * { margin-top: 1rem; }
+.rv-ritmo.rv-recolhivel { display: block; }

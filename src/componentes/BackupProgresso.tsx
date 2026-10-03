@@ -15,9 +15,11 @@ export function BackupProgresso() {
   return <section className="backup-progresso empilha">
     <h2>Leve seu progresso com você</h2>
     <p>Exporte respostas, revisões, favoritas, anotações e histórico de sessões. Para continuar em outro navegador, importe o arquivo. A sessão em andamento não faz parte do backup.</p>
-    <div className="linha"><button className="botao botao--principal" onClick={exportar}>Exportar progresso</button></div>
-    <label className="campo">Restaurar um backup
-      <input type="file" accept=".json,application/json" onChange={async e => {
+    {/* O seletor de arquivo do navegador fica escondido atrás de um botão do site:
+        o nativo aparece em inglês ("Choose File") e destoa do resto. */}
+    <div className="linha"><button className="botao botao--principal" onClick={exportar}>Exportar progresso</button>
+    <label className="botao backup-progresso__restaurar">Restaurar de um arquivo
+      <input className="so-leitor" type="file" accept=".json,application/json" onChange={async e => {
         const arquivo = e.target.files?.[0]; e.target.value = ''
         if (!arquivo) return
         try {
@@ -28,7 +30,7 @@ export function BackupProgresso() {
           definirMensagem('Backup restaurado. Recarregue a página para atualizar os indicadores.')
         } catch (erro) { definirMensagem(erro instanceof Error ? erro.message : 'Não foi possível ler este arquivo.') }
       }} />
-    </label>
+    </label></div>
     <p role="status" className="meta">{mensagem}</p>
   </section>
 }

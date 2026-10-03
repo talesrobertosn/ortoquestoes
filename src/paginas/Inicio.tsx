@@ -12,6 +12,10 @@ import { CaixasAssinante, usarCronogramaHoje } from '../componentes/CaixasAssina
 import { ConviteLimiteDoDia } from '../componentes/LimiteRespostas'
 import { CartaoCompartilhar } from '../componentes/CartaoCompartilhar'
 import { CartaoPlanos } from '../componentes/CartaoPlanos'
+import { IconePixel } from '../componentes/IconePixel'
+import { usarConquistas } from '../estado/usarConquistas'
+import { recurso } from '../config'
+import '@fontsource/pixelify-sans/latin-700.css'
 import { type ResumoHistorico, usarSessao } from '../estado/sessao'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import { CHAVE_SESSAO } from '../estado/sessao'
@@ -73,6 +77,7 @@ export function Inicio() {
   const { iniciar } = usarSessao()
   const { sessao: conta } = usarConta()
   const cronograma = usarCronogramaHoje()
+  const { conquistadas, total: totalConquistas, streak: sequenciaViva } = usarConquistas()
   // Sem conta, as questões ficam fechadas (ver config.ts): o botão principal leva ao cadastro.
   const pedeConta = EXIGIR_CONTA_PARA_QUESTOES && contasDisponiveis && !conta
   const [sessao] = usarArmazenado<EstadoSessao | null>(CHAVE_SESSAO, null)
@@ -277,6 +282,45 @@ export function Inicio() {
 
       {indice && contagens && indice.total > 0 && (
         <>
+          <section className="inicio-ranking" aria-label="Ranking e conquistas">
+            <img className="inicio-ranking__coroa" src={recurso('emblemas/podio-1.png')} alt="" width={72} height={72} />
+            <div className="inicio-ranking__texto">
+              <p className="inicio-ranking__selo">Ranking e conquistas</p>
+              <h2>{conta ? 'Suba no ranking e destrave emblemas' : 'Entre no ranking de quem mais estuda'}</h2>
+              <p>{conta
+                ? <>Você tem <b>{conquistadas}</b> de {totalConquistas} conquistas{sequenciaViva.atual >= 3 ? <> · <b>{sequenciaViva.atual} dias</b> seguidos</> : ''}. Exiba três no seu nome.</>
+                : 'Cada questão respondida conta pontos, destrava emblemas e acende a sua fogueira de dias seguidos.'}</p>
+            </div>
+            <div className="inicio-ranking__acoes">
+              <a className="botao botao--ouro" href={href('/ranking')}>Ver ranking</a>
+              <a className="botao inicio-ranking__secundario" href={href('/conquistas')}>Minhas conquistas</a>
+            </div>
+          </section>
+
+          <nav className="inicio-atalhos" aria-label="Atalhos">
+            <a className="inicio-atalho" href={href('/treinar')}>
+              <span className="inicio-atalho__icone inicio-atalho__icone--pixel"><IconePixel nome="treinar" tamanho={44} /></span>
+              <span className="inicio-atalho__titulo">Treinar</span>
+              <span className="inicio-atalho__nota">Por tema, prova ou dificuldade</span>
+            </a>
+            <a className="inicio-atalho" href={href('/revisao')}>
+              <span className="inicio-atalho__icone inicio-atalho__icone--pixel"><IconePixel nome="revisao" tamanho={44} /></span>
+              <span className="inicio-atalho__titulo">Revisão {revisarHoje > 0 && <span className="acao-rapida__contador">{revisarHoje}</span>}</span>
+              <span className="inicio-atalho__nota">O que vence hoje e nos próximos dias</span>
+            </a>
+            <a className="inicio-atalho" href={href('/dados')}>
+              <span className="inicio-atalho__icone inicio-atalho__icone--pixel"><IconePixel nome="desempenho" tamanho={44} /></span>
+              <span className="inicio-atalho__titulo">Desempenho</span>
+              <span className="inicio-atalho__nota">Sua evolução por tema e por prova</span>
+            </a>
+            <a className="inicio-atalho inicio-atalho--ouro" href={href('/ranking')}>
+              <span className="inicio-atalho__icone inicio-atalho__icone--pixel"><IconePixel nome="ranking" tamanho={44} /></span>
+              <span className="inicio-atalho__titulo">Ranking</span>
+              <span className="inicio-atalho__nota">{conta ? 'Sua posição e seus emblemas' : 'Quem mais estuda por aqui'}</span>
+            </a>
+          </nav>
+          <CartaoPlanos />
+
           <div className="inicio-grade">
             <section className="inicio-hoje" aria-labelledby="inicio-hoje-titulo">
               <h2 id="inicio-hoje-titulo">Seu estudo de hoje</h2>
@@ -328,7 +372,6 @@ export function Inicio() {
 
           <ConviteLimiteDoDia />
           <CaixasAssinante cronograma={cronograma} />
-          <CartaoPlanos />
           <VitrineAssinante />
 
           <div className="inicio-grade">

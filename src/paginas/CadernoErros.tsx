@@ -152,7 +152,6 @@ export function CadernoErros() {
           </div>
         </div>
         <dl className="rv-heroi__numeros">
-          <div><dt>Em aberto</dt><dd className="numerico">{abertos.length}</dd></div>
           <div><dt>Já corrigidos</dt><dd className="numerico">{corrigidos}</dd></div>
           <div title="Errou marcando 'tenho certeza'"><dt>Errou com certeza</dt><dd className="numerico">{comCerteza}</dd></div>
         </dl>

@@ -170,6 +170,36 @@ a.inicio-kpi:hover { background: rgba(255, 255, 255, 0.15); color: var(--sobre-h
 @media (max-width: 52rem) {
   .inicio-heroi__acoes .botao { flex: 1 1 100%; }
 }
+.inicio-atalhos {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+@media (max-width: 52rem) { .inicio-atalhos { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.65rem; } }
+.inicio-atalho {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1.15rem 1.1rem 1.2rem;
+  border-radius: var(--raio-grande);
+  border: var(--borda);
+  background: var(--superficie);
+  box-shadow: var(--sombra-media);
+  color: var(--texto);
+  text-decoration: none;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+.inicio-atalho:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var(--verdete) 45%, var(--traco)); color: var(--texto); }
+.inicio-atalho__icone {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 2.6rem; height: 2.6rem; margin-bottom: 0.45rem;
+  border-radius: 12px;
+  background: var(--verdete-veu);
+  color: var(--verdete);
+}
+.inicio-atalho--ouro .inicio-atalho__icone { background: var(--ouro-veu); color: var(--ouro); }
+.inicio-atalho__titulo { display: flex; align-items: center; gap: 0.4rem; font-weight: 700; font-size: 1.06rem; }
+.inicio-atalho__nota { color: var(--texto-2); font-size: var(--meta); line-height: 1.4; }
 .inicio-planos { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 1.5rem 2rem; padding: clamp(1.25rem, 3vw, 1.9rem); border-radius: var(--raio-grande); background: linear-gradient(135deg, var(--verdete-veu), var(--superficie) 72%); border: 1px solid color-mix(in srgb, var(--verdete) 34%, var(--traco)); box-shadow: var(--sombra-media); }
 .inicio-planos h2 { margin: .2rem 0 .55rem; }
 .inicio-planos p:not(.meta) { max-width: 62ch; margin: 0; color: var(--texto-2); }
@@ -372,10 +402,44 @@ a.inicio-kpi:hover { background: rgba(255, 255, 255, 0.15); color: var(--sobre-h
 .cx-passos span { display: grid; place-items: center; width: 1.6rem; height: 1.6rem; border-radius: 50%; background: var(--verdete-veu); color: var(--verdete); font-weight: 850; font-size: 0.85rem; }
 .cx-bloco .cx--temas .cx-top { grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); }
 
-.inicio-compartilhar { position: relative; }
 .inicio-grade--rodape .inicio-compartilhar { flex-direction: row; flex-wrap: wrap; align-items: center; }
 .inicio-grade--rodape .inicio-compartilhar__texto { flex: 1 1 18rem; }
 
+/* Ranking e conquistas em destaque, no clima de jogo do ranking. */
+.inicio-ranking {
+  display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 1rem 1.5rem;
+  padding: clamp(1.1rem, 3vw, 1.6rem); border-radius: var(--raio-grande); color: #fff;
+  background:
+    radial-gradient(circle at 8% 40%, rgba(244, 207, 124, 0.32), transparent 40%),
+    radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px) 0 0 / 14px 14px,
+    linear-gradient(135deg, #071f1c, #0b3a35 55%, #14655e);
+  box-shadow: inset 0 0 0 2px rgba(244, 207, 124, 0.45), var(--sombra-media);
+}
+.inicio-ranking__coroa { image-rendering: pixelated; filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.4)); animation: inicio-coroa 3s ease-in-out infinite; }
+@keyframes inicio-coroa { 50% { transform: translateY(-4px); } }
+@media (prefers-reduced-motion: reduce) { .inicio-ranking__coroa { animation: none; } }
+.inicio-ranking__selo { margin: 0 0 0.3rem; color: #f4cf7c; font-size: var(--meta); font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+.inicio-ranking h2 { margin: 0 0 0.35rem; color: #fff; font-family: var(--fonte-pixel, var(--fonte-marca)); font-size: clamp(1.15rem, 2.6vw, 1.5rem); line-height: 1.25; }
+.inicio-ranking p:not(.inicio-ranking__selo) { margin: 0; color: rgba(255, 255, 255, 0.82); }
+.inicio-ranking b { color: #f4cf7c; }
+.inicio-ranking__acoes { display: grid; gap: 0.5rem; }
+.inicio-ranking__secundario { color: #fff; background: rgba(255, 255, 255, 0.1); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3); }
+.inicio-ranking__secundario:hover { color: #fff; background: rgba(255, 255, 255, 0.18); }
+@media (max-width: 40rem) {
+  .inicio-ranking { grid-template-columns: auto minmax(0, 1fr); }
+  .inicio-ranking__coroa { width: 56px; height: 56px; }
+  .inicio-ranking__acoes { grid-column: 1 / -1; grid-template-columns: 1fr 1fr; }
+}
+
+/* ---------- Temporada pixel art: ícones, convite e planos ---------- */
+.inicio-atalho__icone--pixel, .pg-recurso__icone--pixel { width: auto; height: auto; background: none !important; border-radius: 0; }
+.inicio-atalho:hover .icone-pixel, .pg-recurso:hover .icone-pixel { animation: pixel-pulo 0.5s steps(3) 1; }
+@media (prefers-reduced-motion: reduce) { .inicio-atalho:hover .icone-pixel, .pg-recurso:hover .icone-pixel { animation: none; } }
+
+.inicio-compartilhar { position: relative; }
+.inicio-compartilhar__mensageiro { image-rendering: pixelated; flex: none; align-self: flex-end; filter: drop-shadow(3px 3px 0 rgba(27, 18, 8, 0.25)); animation: cd-respira 1.2s steps(2) infinite; }
+@keyframes cd-respira { 50% { transform: translateY(-3px); } }
+.inicio-compartilhar__selo { display: inline-block; margin: 0 0 0.35rem !important; padding: 0.1rem 0.5rem; background: #c99a3b; color: #1b1208 !important; font-family: var(--fonte-pixel); font-weight: 700; font-size: 0.8rem !important; letter-spacing: 0.06em; text-transform: uppercase; }
 /* Recursos do assinante: uma lista compacta dentro de um cartão. */
 .pg-vitrine__lista { list-style: none; margin: 0; padding: .35rem; border: var(--borda); border-radius: var(--raio-cartao); background: var(--superficie); box-shadow: var(--sombra-media); }
 .pg-vitrine__lista li + li { border-top: 1px solid var(--traco); }

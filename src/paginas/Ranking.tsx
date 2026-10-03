@@ -199,7 +199,7 @@ export function Ranking() {
           {perfilCarregado && !perfilRanking.participa ? <>
             <span className="rk-heroi__rotulo">Você saiu do ranking</span>
             <strong className="rk-heroi__posicao">Fora</strong>
-            <span className="rk-heroi__rotulo"><a href={href('/conta')}>Voltar ao ranking em Minha conta</a></span>
+            <span className="rk-heroi__rotulo"><a href={href('/conta?secao=ranking')}>Voltar ao ranking em Minha conta</a></span>
           </> : minhaPosicao ? <>
             <span className="rk-heroi__rotulo">Sua posição {periodo === 'semana' ? 'na semana' : 'geral'}</span>
             <strong className="rk-heroi__posicao">#{minhaPosicao.posicao}</strong>
@@ -298,15 +298,15 @@ export function Ranking() {
       )}
     </>}
 
-    <section className="cartao cartao__corpo rk-regras">
-      <h2>Como funciona</h2>
+    <details className="cartao cartao__corpo rk-regras">
+      <summary><h2>Como funciona o ranking</h2><Icone nome="baixo" tamanho={18} /></summary>
       <ul>
         <li><span><Icone nome="grafico" tamanho={18} /></span><div><strong>Conta volume, não acerto.</strong> Cada questão diferente respondida soma um ponto. Refazer a mesma questão não soma de novo.</div></li>
         <li><span><Icone nome="calendario" tamanho={18} /></span><div><strong>Geral ou últimos 7 dias.</strong> O geral mostra o acumulado; a semana dá chance a quem começou agora.</div></li>
-        <li><span><Icone nome="usuario" tamanho={18} /></span><div><strong>Todo mundo com conta participa.</strong> Entra quem respondeu pelo menos {MINIMO_RANKING} questões, com o apelido que escolher ou o nome do cadastro e a inicial do sobrenome. Em <a href={href('/conta')}>Minha conta</a> você troca o apelido ou sai do ranking. E-mail, telefone e cidade nunca aparecem.</div></li>
+        <li><span><Icone nome="usuario" tamanho={18} /></span><div><strong>Todo mundo com conta participa.</strong> Entra quem respondeu pelo menos {MINIMO_RANKING} questões, com o apelido que escolher ou o nome do cadastro e a inicial do sobrenome. Em <a href={href('/conta?secao=ranking')}>Minha conta</a> você troca o apelido ou sai do ranking. E-mail, telefone e cidade nunca aparecem.</div></li>
         <li><span><Icone nome="medalha" tamanho={18} /></span><div><strong>Conquistas e vitrine.</strong> As conquistas ficam no seu inventário para sempre, e você escolhe até três para aparecer ao lado do nome. A fogueira mostra a sua sequência de dias seguidos com pelo menos {META_STREAK_DIARIA} questões: se a sequência acabar, ela some e recomeça do zero.</div></li>
       </ul>
-    </section>
+    </details>
   </div>
 }
 

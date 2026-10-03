@@ -13,10 +13,10 @@
   font-size: 0.72rem; font-weight: 750; letter-spacing: 0.02em; white-space: nowrap;
 }
 .botao.botao--ouro {
-  /* Dourado só para o que é do assinante. Cor chapada, como os outros botões. */
-  background: #e0b862; border-color: #e0b862; color: #2b1d02; font-weight: 700;
+  background: linear-gradient(135deg, #e7be63, #c9962f); border-color: #b9862a; color: #2b1d02; font-weight: 750;
+  box-shadow: 0 6px 18px rgba(185, 134, 42, 0.28);
 }
-.botao.botao--ouro:hover:not(:disabled) { background: #d3a845; border-color: #d3a845; }
+.botao.botao--ouro:hover:not(:disabled) { background: linear-gradient(135deg, #efc970, #d3a038); border-color: #a87a1f; }
 
 .pg-convite {
   position: relative; overflow: hidden; isolation: isolate;

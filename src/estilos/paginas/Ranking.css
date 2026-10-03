@@ -101,7 +101,12 @@
 .rk-linha > .rk-movimento { grid-column: 2; }
 .rk-fora { margin: 0; padding: 0.9rem 1rem; border-radius: var(--raio-cartao); background: var(--verdete-veu); color: var(--texto); }
 .rk-regras { border-radius: var(--raio-grande); }
-.rk-regras h2 { margin: 0 0 0.75rem; }
+.rk-regras h2 { margin: 0; font-size: 1.15rem; }
+.rk-regras > summary { display: flex; justify-content: space-between; align-items: center; gap: 1rem; list-style: none; cursor: pointer; }
+.rk-regras > summary::-webkit-details-marker { display: none; }
+.rk-regras > summary > svg { color: var(--texto-2); transition: transform 0.15s ease; }
+.rk-regras[open] > summary > svg { transform: rotate(180deg); }
+.rk-regras[open] > ul { margin-top: 1rem; }
 .rk-regras ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem 1.5rem; }
 @media (max-width: 46rem) { .rk-regras ul { grid-template-columns: 1fr; } }
 .rk-regras li { display: flex; gap: 0.75rem; align-items: flex-start; font-size: var(--corpo-menor); color: var(--texto-2); }
@@ -213,9 +218,15 @@
 .inv-escolha__item--marcado { border-color: #c9952f; background: var(--ouro-veu); box-shadow: inset 0 0 0 2px #c9952f; }
 .inv-janela__acoes { display: flex; justify-content: flex-end; gap: 0.5rem; flex-wrap: wrap; }
 
+/* No celular, três emblemas por linha; os já conquistados ficam só com arte e
+   nome, e a regra aparece nos que ainda faltam. */
 @media (max-width: 30rem) {
   .inv-jogador { grid-template-columns: 1fr; }
-  .inv-grade { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .inv-grade { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.45rem; }
+  .inv-item { padding: 0.65rem 0.35rem 0.6rem; }
+  .inv-item__arte { width: 3rem; height: 3rem; }
+  .inv-item strong { font-size: 0.8rem; }
+  .inv-item--tem .inv-item__descricao { display: none; }
 }
 
 /* ---------- Pódio em arena ---------- */
