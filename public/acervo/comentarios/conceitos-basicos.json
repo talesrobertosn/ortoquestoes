@@ -495,92 +495,92 @@
   "conferido": false
  },
  "conceitos-basicos-0043": {
-  "conceito": "### A dobradiça é o eixo da rotação\n- O osso **junto à dobradiça** não muda de posição.\n- O osso do **lado oposto** se afasta ou se aproxima.\n\n### As três posições\n- Dobradiça na **cortical convexa**: o lado côncavo se afasta = ==cunha de abertura==. **Alonga** o osso; a falha é preenchida por regenerado ou enxerto.\n- Dobradiça na **cortical côncava**: o lado convexo se fecha = **cunha de fechamento**. **Encurta**.\n- Dobradiça **no CORA** (meio da bissetriz): cunha neutra, corrige o ângulo sem mudar o comprimento.\n\n### Na prática\nNo fixador circular, a posição das dobradiças define o efeito sobre o comprimento: útil quando há encurtamento associado a corrigir.\n\n> **Na prova:** dobradiça na convexidade = ==cunha de abertura== (alonga).",
-  "correta": "**Cunha de abertura.**\n- O lado côncavo se afasta.",
   "incorretas": {
-   "B": "**Dobradiça côncava.**\n- Fechamento resulta da dobradiça no lado côncavo.",
-   "C": "**Outro parâmetro.**\n- Rotação no eixo longo não depende da dobradiça na bissetriz.",
-   "D": "**Osteotomia fora do CORA.**\n- A translação vem do nível do corte."
+   "B": "A cunha de fechamento acontece quando a dobradiça fica no lado côncavo.",
+   "C": "A rotação em torno do eixo longo do osso não depende da posição da dobradiça na bissetriz.",
+   "D": "A translação depende do nível do corte em relação ao CORA, e não do lado em que está a dobradiça."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Na correção de um osso torto com **fixador externo circular** (o tipo Ilizarov, com anéis em volta do membro), a correção acontece em torno de uma **dobradiça**, o eixo em torno do qual um fragmento gira em relação ao outro. Pense numa porta: o lado da dobradiça não sai do lugar, e o outro lado é que abre ou fecha.\n\nNuma deformidade angular, o osso tem um lado **côncavo** (o lado \"fechado\" da curva, de dentro) e um lado **convexo** (o lado \"aberto\", de fora). A posição da dobradiça define o que acontece com o comprimento do osso:\n\n**Dobradiça no lado convexo.** Esse lado fica parado, e o lado côncavo é afastado até o osso ficar reto. Abre-se uma cunha de osso no lado côncavo: é a **cunha de abertura**. O osso fica **mais longo**, e o espaço aberto é preenchido pelo osso novo do alongamento (regenerado) ou por enxerto.\n\n**Dobradiça no lado côncavo.** Esse lado fica parado, e o lado convexo é que se fecha. É a **cunha de fechamento**, e o osso fica **mais curto**.\n\n**Dobradiça no centro**, no CORA (o ponto de cruzamento dos eixos dos fragmentos), sobre a bissetriz do ângulo: o lado côncavo abre e o convexo fecha na mesma medida. O ângulo é corrigido sem mudar o comprimento.\n\nNa prática, isso é útil: se, além de torto, o osso estiver curto, posicionar a dobradiça no lado convexo corrige as duas coisas ao mesmo tempo.",
+  "correta": "Cunha de abertura. Com a dobradiça no lado convexo, o lado côncavo é afastado e o osso fica mais longo.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0044": {
-  "conceito": "### Tensão e geometria\nNo fixador circular (Ilizarov), a estabilidade vem de:\n- ==Fios olivados==: a oliva apoia na cortical e **trava o fragmento contra a translação**. Em pares, com olivas opostas, funcionam como pinça.\n- **Anéis de menor diâmetro**, com o osso **centrado**.\n- Fios cruzando o mais perto possível de **90 graus**.\n- Fios bem **tensionados** (tipicamente 90 a 130 kg).\n- Mais fios e mais anéis por segmento; **meios-pinos** (hidroxiapatita) aumentam a rigidez.\n\n### As três maneiras de afrouxar\n- Anel largo.\n- Fios quase paralelos.\n- Osso excêntrico.\n\n### Por que fio fino funciona\nO fio tensionado permite **micromovimento axial** (efeito trampolim), que estimula o regenerado, mas resiste bem a angulação e cisalhamento.\n\n> **Na prova:** mais estabilidade no circular = ==fios olivados==, anel pequeno, fios a 90°.",
-  "correta": "**O uso de fios olivados.**\n- Travam o fragmento contra a translação.",
   "incorretas": {
-   "B": "**Reduz.**\n- Anel maior aumenta o vão e a flexão do fio.",
-   "C": "**Reduz.**\n- O ideal é próximo de 90 graus.",
-   "D": "**Reduz.**\n- O osso deve ficar centrado."
+   "B": "Aumentar o diâmetro dos anéis deixa mais fio solto entre o osso e o anel, e a montagem fica mais flexível.",
+   "C": "O ideal é os fios cruzarem perto de 90 graus. Fios quase paralelos reduzem a estabilidade.",
+   "D": "O osso deve ficar centralizado no anel. A posição excêntrica deixa trechos longos de fio solto e reduz a estabilidade."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O **fixador externo circular**, do tipo Ilizarov, prende o osso com **fios finos** que atravessam o membro de um lado ao outro, esticados (tensionados) e presos a **anéis** que circundam o membro. A estabilidade dessa montagem depende de alguns fatores:\n\n**Fios olivados.** São fios com uma pequena esfera (a \"oliva\") no meio. A oliva se apoia na cortical do osso e impede que o fragmento escorregue ao longo do fio. Usados em pares, com as olivas de lados opostos, funcionam como uma pinça que trava o fragmento. É a resposta da questão.\n\n**Anéis de menor diâmetro**, com o osso **centralizado** dentro do anel. Quanto maior o anel ou mais excêntrico o osso, maior o trecho de fio solto e mais ele verga.\n\n**Fios cruzando perto de 90 graus** entre si. Fios quase paralelos deixam o osso deslizar na direção deles.\n\n**Fios bem tensionados**, e mais fios e anéis por segmento. Meios-pinos (pinos rosqueados presos só de um lado) também aumentam a rigidez.\n\nUma característica interessante: o fio fino tensionado permite um pequeno movimento no eixo do osso, como uma cama elástica. Esse micromovimento estimula a formação de osso novo, enquanto a montagem continua resistindo bem a dobrar e a escorregar de lado.",
+  "correta": "O uso de fios olivados. A oliva se apoia na cortical e trava o fragmento, impedindo que ele escorregue ao longo do fio.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0045": {
-  "conceito": "### Cimento como reservatório\nAntibiótico no polimetilmetacrilato libera a droga localmente, em concentrações muito acima das alcançadas por via sistêmica.\n\n### As exigências da droga\n- ==Termoestável==: a polimerização é **exotérmica** e ultrapassa 80 °C; um termolábil seria destruído.\n- **Hidrossolúvel:** para **eluir** do cimento para os tecidos (veja o alerta).\n- **Em pó:** líquido compromete a resistência mecânica.\n- Espectro adequado e baixa alergenicidade.\n\n### Os usados na prática\n**Vancomicina, gentamicina e tobramicina**. Combinações ampliam o espectro e melhoram a eluição.\n\n### Formas\n- **Espaçadores** em artroplastia infectada.\n- **Pérolas** (colar) em osteomielite.\n- Técnica de **Masquelet**: o espaçador induz uma membrana que depois recebe enxerto.\n\n> **Na prova:** antibiótico no cimento = ==termoestável== (e hidrossolúvel).",
-  "correta": "**Termoestável.**\n- Resiste ao calor da polimerização.",
   "incorretas": {
-   "A": "**Seria destruído.**",
-   "B": "**Não elui.**\n- A droga precisa se dissolver em meio aquoso.",
-   "D": "**Também requisito.**\n- Foi dado como errado; veja o alerta."
+   "A": "Um antibiótico termolábil seria destruído pelo calor da polimerização.",
+   "B": "Um antibiótico lipossolúvel ficaria preso no cimento e não seria liberado para os tecidos.",
+   "D": "A hidrossolubilidade também é um requisito real, porque permite a liberação do antibiótico. Foi considerada incorreta apenas por seguir o gabarito oficial."
   },
+  "conceito": "No tratamento de infecções ósseas, especialmente depois de uma osteossíntese, um recurso é misturar **antibiótico ao cimento ósseo** (polimetilmetacrilato, o mesmo usado para fixar próteses). O cimento funciona como um reservatório que vai liberando o antibiótico no local, em concentrações muito maiores do que as alcançadas pelo antibiótico na veia.\n\nPara isso funcionar, o antibiótico precisa ter algumas características:\n\n**Ser termoestável.** Quando o cimento endurece (polimeriza), a reação libera calor e a temperatura passa de 80 graus. Um antibiótico que se destrói com o calor (termolábil) seria inativado. Essa é a resposta do gabarito.\n\n**Ser hidrossolúvel.** Para sair do cimento e chegar aos tecidos (eluir), o antibiótico precisa se dissolver no líquido do corpo. Um antibiótico que só se dissolve em gordura ficaria preso no cimento.\n\n**Estar em pó.** Antibiótico líquido enfraquece o cimento.\n\nTer espectro adequado contra os germes prováveis e baixo risco de alergia.\n\nOs mais usados na prática são a **vancomicina**, a **gentamicina** e a **tobramicina**, muitas vezes combinados. O cimento com antibiótico pode ser usado como espaçador numa prótese infectada, como pérolas num colar dentro do osso ou na técnica de **Masquelet**, em que o cimento ocupa uma falha óssea e induz uma membrana que depois recebe enxerto.\n\nA hidrossolubilidade também é um requisito real, e por isso a questão tem um aviso.",
+  "correta": "Termoestável. A polimerização do cimento libera muito calor, e o antibiótico precisa resistir a ele sem perder a ação.",
   "alerta": "A hidrossolubilidade, alternativa D, também é requisito do antibiótico misturado ao cimento, é justamente ela que permite a eluição da droga para o tecido ao redor. Um antibiótico lipossolúvel ficaria preso no polímero e não seria liberado. As duas alternativas, portanto, descrevem exigências reais; o gabarito escolheu apenas uma delas. Se você marcou D, o erro não foi seu.",
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0046": {
-  "conceito": "### O terreno hostil\nO paciente amputado por doença vascular:\n- Tem o coto **mal perfundido**.\n- É quase sempre **diabético**, muitas vezes desnutrido, fumante, renal crônico.\n- Frequentemente amputa por **úlcera ou gangrena infectada**.\n\nA complicação que domina as séries é a ==infecção== da ferida, que anda junto com necrose de borda e falha de cicatrização.\n\n### Como reduzir\n- Escolher o **nível pela perfusão**, não pela vontade de preservar comprimento (pressões, oximetria transcutânea, avaliação clínica).\n- Em infecção ativa: amputação **em dois tempos** (guilhotina, depois fechamento definitivo).\n- Controle glicêmico e nutricional.\n- Manuseio cuidadoso dos retalhos, sem tensão.\n\n> **Na prova:** amputação por vasculopatia = complicação mais comum ==infecção==.",
-  "correta": "**Infecção.**\n- Coto isquêmico e contaminado na origem.",
   "incorretas": {
-   "A": "**Comum a todas.**\n- Não caracteriza a amputação vascular.",
-   "C": "**Vizinha.**\n- A necrose coexiste, mas a registrada como mais comum é a infecção.",
-   "D": "**Posicionamento.**\n- Problema de reabilitação."
+   "A": "A dor aparece em amputações de todas as causas e não é a complicação característica da amputação vascular.",
+   "C": "A necrose de pele costuma acompanhar a infecção, mas a complicação registrada como mais comum é a infecção.",
+   "D": "A contratura do coto é um problema de posicionamento e reabilitação, e não a complicação mais comum."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A amputação por **doença vascular periférica** (entupimento das artérias das pernas) acontece num terreno muito desfavorável. O membro tem **pouca circulação**, e o paciente quase sempre tem outras doenças: diabetes, tabagismo, insuficiência renal, desnutrição. Além disso, muitas vezes a amputação é indicada justamente por uma **úlcera ou gangrena já infectada**.\n\nNesse cenário, a complicação mais comum depois da cirurgia é a **infecção** da ferida do coto. Ela anda junto com a necrose das bordas da pele e a dificuldade de cicatrização, porque a ferida de um coto com pouco sangue tem dificuldade para se defender e fechar.\n\nAlgumas medidas reduzem esse risco:\n\nEscolher o **nível da amputação pela circulação**, e não só pela vontade de preservar o maior comprimento possível. A avaliação clínica e exames que medem a pressão e a oxigenação da pele ajudam a escolher um nível que vá cicatrizar.\n\nQuando há infecção ativa, fazer a amputação **em dois tempos**: primeiro uma amputação rápida para retirar a infecção (amputação em guilhotina) e, depois que a infecção está controlada, o fechamento definitivo.\n\nControlar o açúcar no sangue e a nutrição, e manusear os retalhos de pele com delicadeza, sem fechar sob tensão.",
+  "correta": "Infecção. O coto tem pouca circulação e, muitas vezes, a amputação já é feita por uma infecção, o que torna a infecção da ferida a complicação mais comum.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0047": {
-  "conceito": "### Como a serra funciona\nA serra de gesso **oscila**, não gira: corta o gesso rígido e não corta a pele elástica, que acompanha o movimento.\n\n### O que queima\nO **calor**, que vem de:\n- Lâmina **cega**: atrita em vez de cortar.\n- **Contato prolongado** num mesmo ponto.\n\n### As regras\n- ==Lâmina afiada==.\n- ==Movimento intermitente==: mergulhar e retirar, avançando ponto a ponto, em vez de deslizar.\n- Evitar **proeminências ósseas**.\n- Cuidado redobrado com gesso de **fibra de vidro** (mais calor) e acolchoamento fino.\n- Em criança e em paciente com sensibilidade reduzida, mais atenção.\n\n> **Na prova:** retirar gesso = ==serra afiada, movimento intermitente==.",
-  "correta": "**Afiadas, movimento intermitente.**",
   "incorretas": {
-   "A": "**Movimento contínuo queima.**",
-   "C": "**Erra os dois.**",
-   "D": "**Lâmina cega aquece.**"
+   "A": "A lâmina afiada está certa, mas o movimento contínuo prolonga o contato e aquece a pele.",
+   "C": "Erra os dois: a lâmina cega e o movimento contínuo aumentam o calor.",
+   "D": "O movimento intermitente está certo, mas a lâmina pouco afiada esquenta por atrito."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A serra usada para retirar gesso não gira como uma serra comum: a lâmina **oscila**, vai e volta muito rápido numa pequena amplitude. Isso permite cortar o gesso, que é rígido, sem cortar a pele, que é elástica e acompanha o movimento da lâmina.\n\nO que pode machucar o paciente é o **calor**. A lâmina esquenta por atrito, e uma lâmina quente encostada na pele causa **queimadura**. Duas coisas aumentam esse calor:\n\nUma lâmina **cega**, que esfrega em vez de cortar.\n\nO **contato prolongado** da lâmina num mesmo ponto ou deslizando ao longo do gesso.\n\nPor isso as regras são:\n\nUsar lâmina **afiada**.\n\nUsar **movimento intermitente**: apoiar a lâmina, cortar, retirar, e avançar para o ponto seguinte, em vez de arrastar a lâmina continuamente ao longo do gesso.\n\nEvitar cortar sobre proeminências ósseas (como os tornozelos), onde há pouco tecido protegendo a pele.\n\nTer mais cuidado com gesso de fibra de vidro (que esquenta mais), com acolchoamento fino, com crianças e com pacientes que têm a sensibilidade diminuída e não avisam que está quente.",
+  "correta": "Afiadas, movendo-se a lâmina de forma intermitente. A lâmina afiada corta sem atrito, e o movimento de entrar e sair evita o aquecimento num só ponto.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0048": {
-  "conceito": "### Os três estágios clássicos\n- **1, agudo** (até cerca de 3 meses): dor desproporcional, **edema**, pele **quente e avermelhada**, sudorese aumentada, crescimento acelerado de pelos e unhas.\n- ==2, distrófico== (3 a 9 meses): a vasodilatação dá lugar à **vasoconstrição**. Pele ==fria, cianótica e úmida==, edema endurecido, início de rigidez e atrofia.\n- **3, atrófico:** pele **fina, seca, brilhante e pálida**, contraturas fixas, osteopenia difusa.\n\n### Hoje\nO diagnóstico usa os **critérios de Budapeste** (sintomas e sinais sensoriais, vasomotores, sudomotores/edema e motores/tróficos). A divisão em estágios é mais didática que prática.\n\n### Tratamento\nReabilitação precoce é o pilar, com analgesia multimodal, dessensibilização, terapia do espelho, e medicamentos selecionados.\n\n> **Na prova:** pele ==fria, cianótica e úmida== = estágio 2.",
-  "correta": "**Estágio 2.**\n- O distrófico.",
   "incorretas": {
-   "A": "**Quente e vermelha.**",
-   "C": "**Seca e pálida.**",
-   "D": "**Não existe.**\n- A classificação clássica tem três estágios."
+   "A": "No estágio 1, a pele está quente e avermelhada, pela dilatação dos vasos.",
+   "C": "No estágio 3, a pele está fina, seca, brilhante e pálida.",
+   "D": "A classificação clássica tem três estágios. Não existe estágio 4."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A **síndrome dolorosa regional complexa** (SDRC) é uma complicação que pode aparecer depois de uma fratura, cirurgia ou trauma, com dor desproporcional e alterações da circulação, do suor, da pele e do movimento. Classicamente, ela é descrita em **três estágios**, que acompanham a evolução das alterações da circulação:\n\n**Estágio 1, agudo** (primeiros meses): dor desproporcional, inchaço, pele **quente e avermelhada** (os vasos estão dilatados), suor aumentado e crescimento acelerado de pelos e unhas.\n\n**Estágio 2, distrófico**: os vasos passam a ficar **contraídos**. A pele fica **fria, arroxeada (cianótica) e úmida**, o inchaço fica endurecido, e começam a rigidez e a atrofia.\n\n**Estágio 3, atrófico**: a pele fica fina, seca, brilhante e pálida, aparecem contraturas fixas e o osso fica rarefeito (osteopenia).\n\nHoje, o diagnóstico usa os **critérios de Budapeste**, que reúnem sintomas e sinais sensoriais, vasomotores (cor e temperatura), de suor e inchaço, e motores e tróficos (movimento, pele, pelos e unhas). A divisão em estágios continua útil para estudar, mas na prática nem todos os pacientes seguem essa sequência.\n\nO pilar do tratamento é a **reabilitação precoce**, com controle da dor, dessensibilização e, em casos selecionados, remédios e procedimentos específicos.",
+  "correta": "Estágio 2. Na fase distrófica, os vasos se contraem e a pele fica fria, arroxeada e úmida.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0049": {
-  "conceito": "### As regras de osteotomia de Paley\nA relação entre **CORA**, **eixo de correção** (dobradiça) e **linha de osteotomia** define o resultado.\n\n- **Regra 1:** os três no mesmo ponto = ==angulação pura==. Corrige o ângulo sem translação e sem mudar o comprimento (se a dobradiça estiver na bissetriz).\n- **Regra 2:** osteotomia fora do CORA, mas dobradiça no CORA = angulação **com translação** compensatória, eixos alinhados.\n- **Regra 3:** osteotomia e dobradiça fora do CORA = corrige o ângulo mas **cria translação** indesejada.\n\n### Por que a regra 2 existe\nNem sempre é possível cortar no CORA (fise perto, pele ruim, CORA fora do osso). A translação resolve.\n\n> **Na prova:** CORA, dobradiça e osteotomia juntos = ==só angulação==.",
-  "correta": "**Angulação.**\n- Corrige o ângulo sem outro desvio.",
   "incorretas": {
-   "A": "**Outro parâmetro.**\n- Torção no eixo longo não decorre dessa configuração.",
-   "C": "**Evitada.**\n- A translação é o que essa configuração evita.",
-   "D": "**Fora do CORA.**\n- Angulação com translação ocorre com osteotomia fora do CORA."
+   "A": "A rotação em torno do eixo longo do osso não é o resultado dessa configuração.",
+   "C": "A translação é justamente o que essa configuração evita.",
+   "D": "Angulação com translação acontece quando o corte é feito fora do CORA."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Para corrigir um osso torto com uma **osteotomia** (um corte planejado no osso), três elementos precisam ser considerados, segundo os princípios de Paley:\n\nO **CORA**: o ponto em que se cruzam o eixo do fragmento de cima e o do fragmento de baixo, o \"vértice\" da deformidade.\n\nO **eixo de correção**: a dobradiça, o ponto em torno do qual o fragmento vai girar.\n\nA **linha de osteotomia**: onde o osso é cortado.\n\nA relação entre os três define o resultado:\n\n**Regra 1.** CORA, dobradiça e corte **no mesmo ponto**: a correção é uma **angulação pura**. O ângulo é corrigido sem deslocar os fragmentos para o lado.\n\n**Regra 2.** Corte fora do CORA, mas dobradiça no CORA: o ângulo é corrigido e os fragmentos se deslocam para o lado (translação) de forma automática, e esse deslocamento é justamente o que alinha os eixos.\n\n**Regra 3.** Corte e dobradiça fora do CORA: o ângulo é corrigido, mas cria-se um deslocamento indesejado, e o osso fica \"em degrau\".\n\nA regra 2 existe porque nem sempre dá para cortar exatamente no CORA: ele pode estar perto da placa de crescimento, numa área de pele ruim ou até fora do osso.",
+  "correta": "Angulação. Com CORA, dobradiça e corte no mesmo ponto, basta girar o fragmento, e o ângulo é corrigido sem outro desvio.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0050": {
-  "conceito": "### Kocher vale pela soma\nOs quatro critérios: febre acima de 38,5 °C, **não apoio**, VHS acima de 40 mm/h e **leucócitos acima de 12.000**.\n\n### Probabilidade de artrite séptica (série original)\n- 1 critério: cerca de 3%.\n- ==2 critérios: cerca de 40%==.\n- 3 critérios: acima de 90%.\n- 4 critérios: praticamente 100%.\n\n### O caso\nNão apoia + leucócitos de 13.000 = **dois critérios**, cerca de 40%.\n\n### O que fazer nessa faixa\nNão dá para tratar como sinovite transitória nem operar sem mais dados:\n- **Ultrassom** (derrame).\n- **Punção** guiada, com contagem, Gram e cultura.\n- PCR (critério de Caird) ajuda.\n\n> **Na prova:** Kocher com ==2 critérios = ~40%==; 3 = mais de 90%.",
-  "correta": "**Cerca de 40%.**\n- Dois critérios de Kocher.",
   "incorretas": {
-   "A": "**Um critério.**\n- Próximo da probabilidade com um só (cerca de 3%).",
-   "C": "**Sem patamar.**\n- Com três critérios já passa de 90%.",
-   "D": "**Três critérios.**\n- A criança tem dois."
+   "A": "Cerca de 10% está mais perto da probabilidade com apenas um critério, que fica em torno de 3%.",
+   "C": "Não há um patamar de 70% na série original; com três critérios, a probabilidade já passa de 90%.",
+   "D": "Cerca de 90% corresponde a três critérios, e a criança tem dois."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Para separar a **artrite séptica** do quadril (infecção, uma urgência) da **sinovite transitória** (inflamação leve que passa sozinha) na criança, usam-se os quatro **critérios de Kocher**:\n\n**Febre** acima de 38,5 graus.\n\n**Incapacidade de apoiar** o peso no membro.\n\n**VHS** acima de 40 mm/h.\n\n**Leucócitos** no sangue acima de 12.000 por mm³.\n\nO valor dos critérios está na **soma**. Na série original de Kocher, a probabilidade de artrite séptica foi de cerca de 3% com um critério, cerca de **40% com dois**, mais de 90% com três e praticamente 100% com os quatro.\n\nNo caso da questão, a criança não apoia o membro (um critério) e tem leucócitos de 13.000 (acima de 12.000, outro critério). São **dois critérios**, e a probabilidade é de aproximadamente **40%**.\n\nNessa faixa intermediária, não dá para tratar como uma inflamação simples nem levar direto à cirurgia sem mais informações. O caminho é fazer ultrassom para ver se há líquido no quadril e **puncionar** a articulação, enviando o líquido para contagem de células, bacterioscopia e cultura. A PCR elevada, acrescentada por Caird, também ajuda a aumentar ou diminuir a suspeita.",
+  "correta": "Aproximadamente 40%. Não apoiar o membro e ter leucócitos acima de 12.000 somam dois critérios de Kocher.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0051": {
@@ -595,183 +595,184 @@
   "conferido": false
  },
  "conceitos-basicos-0052": {
-  "conceito": "### Os dois fatores de risco\n- ==Biarticular==: o músculo pode ser alongado nas duas articulações ao mesmo tempo e chega ao limite antes. Reto femoral, isquiotibiais, gastrocnêmio.\n- ==Fibras tipo II== (rápidas): geram e absorvem força em alta velocidade e sofrem mais na **contração excêntrica** que as tipo I (lentas, resistentes à fadiga).\n\n### O perfil de risco\nMúsculo biarticular, rico em fibras rápidas, em contração excêntrica, no esporte de velocidade.\n\n### Outros fatores\n- Lesão prévia (o maior preditor).\n- Fadiga, aquecimento inadequado.\n- Desequilíbrio de força e pouca flexibilidade.\n- Idade.\n\n### O local\nA **junção miotendínea**.\n\n> **Na prova:** lesão muscular = ==biarticular e fibra tipo II==.",
-  "correta": "**Biarticulares, com predomínio de fibras tipo II.**",
   "incorretas": {
-   "A": "**Erra os dois.**",
-   "B": "**Fibras erradas.**\n- As tipo I são as menos suscetíveis.",
-   "C": "**Articulação errada.**\n- O monoarticular não sofre o duplo alongamento."
+   "A": "Erra os dois: músculos de uma articulação só e fibras lentas são os de menor risco.",
+   "B": "O músculo biarticular está certo, mas as fibras tipo I, lentas, são as menos suscetíveis.",
+   "C": "As fibras tipo II estão certas, mas o músculo de uma só articulação não sofre o alongamento duplo."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "As **lesões musculares** por estiramento (as \"distensões\") não acontecem por acaso em qualquer músculo. Dois fatores aumentam muito o risco.\n\n**Músculos biarticulares.** São músculos que cruzam **duas** articulações, como o reto femoral (quadril e joelho), os isquiotibiais (quadril e joelho) e o gastrocnêmio (joelho e tornozelo). Eles podem ser esticados nas duas pontas ao mesmo tempo. Por exemplo, os isquiotibiais ficam muito alongados quando o quadril está dobrado e o joelho esticado, como no fim da passada de uma corrida. Assim, chegam ao limite com mais facilidade.\n\n**Músculos com predomínio de fibras tipo II.** O músculo tem dois tipos principais de fibras. As **tipo I** são lentas, resistentes ao cansaço, usadas em atividades longas. As **tipo II** são rápidas e potentes, usadas em arranques e saltos. As fibras rápidas sofrem mais na **contração excêntrica**, quando o músculo faz força enquanto está sendo alongado, que é o momento típico da lesão.\n\nAssim, o perfil de risco é um músculo biarticular, rico em fibras rápidas, fazendo contração excêntrica num esporte de velocidade.\n\nOutros fatores também pesam: lesão anterior no mesmo músculo (o maior preditor de todos), cansaço, aquecimento ruim, desequilíbrio de força, pouca flexibilidade e idade. O local mais comum da lesão é a **junção miotendínea**, onde o músculo se transforma em tendão.",
+  "correta": "Biarticulares e naqueles com predominância de fibras tipo II. Podem ser esticados nas duas pontas e têm fibras rápidas, mais vulneráveis na contração excêntrica.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0053": {
-  "conceito": "### A janela de risco\nAté cerca de ==18 meses==, existem **vasos transfisários** ligando a circulação metafisária à epifisária.\n- A osteomielite do fêmur proximal alcança a **epífise** por essas comunicações.\n- Destrói a irrigação da cabeça femoral: **osteonecrose**.\n\nDepois disso a fise vira **barreira vascular** e o risco cai.\n\n### O agravante do quadril\nA metáfise proximal do fêmur é **intracapsular**:\n- A infecção rompe para dentro da articulação.\n- O derrame sob pressão comprime os **vasos retinaculares**.\n\n### As sequelas no lactente\nNecrose e destruição da cabeça, **luxação patológica**, parada fisária, discrepância de membros (classificação de Choi e de Hunka).\n\n> **Na prova:** risco de necrose epifisária na osteomielite do fêmur proximal = ==0 a 18 meses==.",
-  "correta": "**Zero a 18 meses.**\n- Vasos transfisários ainda presentes.",
   "incorretas": {
-   "B": "**Fise já é barreira.**",
-   "C": "**Contida na metáfise.**",
-   "D": "**Risco ainda menor.**"
+   "B": "Entre 18 meses e 3 anos, os vasos que atravessam a fise já regrediram, e ela funciona como barreira.",
+   "C": "Entre 3 e 6 anos, a infecção tende a ficar contida na metáfise.",
+   "D": "Entre 6 e 12 anos, o risco de necrose da epífise é ainda menor."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A cabeça do fêmur da criança fica na **epífise**, separada do colo (a **metáfise**) pela placa de crescimento (fise). A osteomielite hematogênica aguda, infecção do osso que chega pelo sangue, começa na metáfise. O risco de ela destruir a cabeça do fêmur depende da idade.\n\nAté cerca de **18 meses**, existem **vasos que atravessam a fise**, ligando a circulação da metáfise à da epífise. Por esses vasos, a infecção pode chegar à cabeça do fêmur e destruir o sangue que a irriga, levando à **osteonecrose** (morte do osso por falta de sangue). Depois dessa idade, esses vasos desaparecem e a fise passa a funcionar como barreira, e o risco cai.\n\nO quadril tem ainda um agravante: o colo do fêmur fica **dentro da cápsula** da articulação. A infecção do colo pode romper para dentro da articulação, formando pus sob pressão. Essa pressão comprime os pequenos vasos que sobem pelo colo até a cabeça (vasos retinaculares), cortando ainda mais o sangue.\n\nNo bebê, as sequelas podem ser graves: destruição e necrose da cabeça do fêmur, luxação do quadril, parada do crescimento e diferença de comprimento entre as pernas. Existem classificações próprias para essas sequelas, como as de Choi e de Hunka.",
+  "correta": "Zero a 18 meses. Nessa idade, vasos atravessam a placa de crescimento e levam a infecção da metáfise até a cabeça do fêmur.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0054": {
-  "conceito": "### A via principal\n==Hematogênica arterial==, a partir de foco distante (urinário, cutâneo, endocardite, cateter, drogas injetáveis).\n- As **artérias segmentares** irrigam a porção anterior do corpo, junto à placa terminal.\n- Rede **terminal** e fluxo lento: o germe se deposita ali.\n- A infecção atinge o **disco** (avascular no adulto) e a vértebra vizinha: **espondilodiscite**.\n\n### As outras vias\n- **Plexo venoso de Batson** (retrógrado, a partir da pelve): explica casos selecionados; hoje considerado secundário.\n- **Inoculação direta** (cirurgia, punção, infiltração): minoria.\n- **Contiguidade** (abscesso abdominal, retrofaríngeo): rara.\n\n### Na criança\nO disco ainda é vascularizado: a **discite** pode ser primária.\n\n> **Na prova:** infecção vertebral = via ==hematogênica arterial==.",
-  "correta": "**Hematogênica arterial.**\n- Pelas artérias segmentares do corpo vertebral.",
   "incorretas": {
-   "B": "**Secundária.**\n- O plexo de Batson explica casos selecionados.",
-   "C": "**Rara.**",
-   "D": "**Minoria.**\n- Causa reconhecida, mas pouco frequente."
+   "B": "A via venosa, pelo plexo de Batson, explica alguns casos, mas hoje é considerada secundária.",
+   "C": "A disseminação por contiguidade a partir de órgãos abdominais é rara.",
+   "D": "A infecção após procedimentos na coluna é uma causa reconhecida, mas responde por uma minoria dos casos."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A infecção das vértebras (osteomielite vertebral, ou espondilodiscite) chega à coluna na maioria das vezes **pelo sangue arterial**, a partir de uma infecção em outro lugar do corpo: urinária, de pele, endocardite, cateteres ou uso de drogas injetáveis.\n\nO caminho é este: as **artérias segmentares** irrigam a parte da frente do corpo vertebral, perto da placa terminal (a superfície que encosta no disco). Ali, a rede de vasos é terminal e o fluxo é lento, o lugar ideal para uma bactéria que está circulando no sangue se instalar. A partir dali, a infecção atinge o **disco**, que no adulto não tem vasos e não consegue se defender, e passa para a vértebra vizinha. Por isso a infecção típica pega duas vértebras e o disco entre elas.\n\nOutras vias existem, mas são menos frequentes:\n\nO **plexo venoso de Batson**, uma rede de veias sem válvulas ao redor da coluna, ligada às veias da pelve. Já se pensou que fosse a via principal, especialmente para infecções urinárias, mas hoje é considerada secundária.\n\nA **inoculação direta**, depois de cirurgias, punções ou infiltrações na coluna. É uma causa reconhecida, mas minoritária.\n\nA **contiguidade**, a partir de uma infecção vizinha, como um abscesso abdominal. É rara.\n\nNa criança, o disco ainda tem vasos, e a infecção pode começar diretamente nele (discite).",
+  "correta": "Hematogênica arterial. As bactérias chegam pelas artérias segmentares e se instalam perto da placa terminal, onde o fluxo é lento.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0055": {
-  "conceito": "### O calendário do atlas\n- **Arco posterior:** funde na linha média por volta dos ==3 a 4 anos==.\n- **Arco anterior com as massas laterais** (sincondroses neurocentrais): mais tarde, na infância média.\n\n### O calendário do áxis\n- **Sincondrose dento-central** (odontoide com o corpo): fecha por volta dos **6 anos** (às vezes mais tarde).\n- **Ossículo terminal** do ápice do odontoide: aparece por volta dos 3 anos e funde perto dos **12**.\n\n### Por que importa\nNa criança traumatizada, sincondrose normal parece fratura.\n- **Sincondrose:** linha regular, bordas escleróticas, sem edema de partes moles, no local esperado.\n- **Fratura:** borda irregular, desvio, edema pré-vertebral.\n\nOutras armadilhas: **pseudossubluxação C2-C3** e ausência de lordose cervical.\n\n> **Na prova:** arco posterior do atlas funde aos ==3 a 4 anos==.",
-  "correta": "**3 a 4 anos.**",
   "incorretas": {
-   "B": "**Mais tarde.**\n- Corresponde melhor às sincondroses neurocentrais.",
-   "C": "**Já passou.**",
-   "D": "**Ossículo terminal.**\n- É a época da fusão do ossículo do odontoide."
+   "B": "Entre 6 e 7 anos corresponde melhor ao fechamento da junção entre odontoide e corpo do áxis e à fusão do arco anterior do atlas.",
+   "C": "Aos 9 a 10 anos, o arco posterior do atlas já está fundido há muito tempo.",
+   "D": "Por volta dos 12 anos é a época da fusão do ossículo terminal da ponta do odontoide, e não do arco do atlas."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "As vértebras da criança são formadas por vários **centros de ossificação** separados por cartilagem, que vão se fundindo com a idade. Conhecer esse calendário é importante porque, na radiografia de uma criança, essas junções de cartilagem (sincondroses) podem parecer fraturas.\n\nNo **atlas** (C1, a primeira vértebra do pescoço), o **arco posterior** se funde na linha do meio por volta dos **3 a 4 anos**. O arco anterior se une às massas laterais mais tarde, na infância.\n\nNo **áxis** (C2), a junção entre o processo odontoide (o \"dente\" que se encaixa no atlas) e o corpo da vértebra fecha por volta dos 6 anos. A ponta do odontoide tem um pequeno centro próprio (o ossículo terminal), que aparece por volta dos 3 anos e se funde perto dos 12.\n\nNa criança com trauma no pescoço, é preciso diferenciar uma sincondrose normal de uma fratura. A sincondrose tem linha regular, bordas lisas e escleróticas, fica no lugar esperado para a idade e não há inchaço nas partes moles da frente da coluna. A fratura tem bordas irregulares, pode ter desvio e costuma vir com inchaço na frente das vértebras.\n\nOutras \"armadilhas\" normais na coluna cervical da criança são o leve deslizamento entre C2 e C3 (pseudossubluxação) e a ausência da curvatura normal do pescoço.",
+  "correta": "3 a 4 anos. É a época em que o arco posterior do atlas se funde na linha do meio.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0056": {
-  "conceito": "### O número de referência\nO parafuso cortical de **4,5 mm** usado como parafuso de tração gera compressão interfragmentária da ordem de ==2.500 N== (valores de referência da AO, na faixa de 2.000 a 3.000 N).\n\n### Por que basta\n- Produz **estabilidade absoluta**.\n- Consolidação **primária**, sem calo visível.\n\n### Os corolários\n- Apertar além disso **não aumenta** a compressão: **espana** a rosca no osso.\n- Osso **osteoporótico** atinge valores bem menores.\n- A compressão cai com o tempo por reabsorção local; por isso o parafuso isolado precisa de **placa de proteção** na diáfise.\n\n> **Na prova:** parafuso de tração 4,5 mm = ==cerca de 2.500 N==.",
-  "correta": "**Cerca de 2.500 N.**",
   "incorretas": {
-   "A": "**Insuficiente.**",
-   "B": "**Abaixo da referência.**",
-   "D": "**Espanaria.**\n- Excede a resistência de ancoragem da rosca."
+   "A": "500 N é muito abaixo do que esse parafuso consegue gerar.",
+   "B": "1.000 N também fica abaixo do valor de referência.",
+   "D": "5.000 N ultrapassaria a resistência da rosca no osso, que espanaria antes."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O **parafuso de tração** comprime dois fragmentos de osso um contra o outro. A rosca pega só no fragmento de longe; a cabeça apoia no fragmento de perto; e ao apertar, o torque se transforma em compressão entre eles.\n\nPara o parafuso cortical de **4,5 mm**, usado em ossos grandes, os valores de referência da AO indicam uma compressão da ordem de **2.500 newtons**, numa faixa de cerca de 2.000 a 3.000 N. É uma força considerável, suficiente para produzir **estabilidade absoluta**: os fragmentos ficam tão firmes que o osso consolida de forma direta, sem formar calo.\n\nAlguns pontos práticos decorrem disso:\n\nApertar mais não aumenta a compressão. Passado certo ponto, a rosca simplesmente **espana**, destruindo o osso onde ela estava presa.\n\nNo osso **osteoporótico**, a rosca segura menos, e a compressão alcançada é bem menor.\n\nA compressão diminui com o tempo, porque o osso ao redor da rosca se remodela. Por isso, na diáfise de ossos longos, o parafuso de tração sozinho não basta: precisa de uma **placa de proteção** (neutralização) para absorver as forças de flexão e rotação.",
+  "correta": "Cerca de 2.500 N. É a ordem de grandeza da compressão gerada por um parafuso cortical de 4,5 mm usado como parafuso de tração.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0057": {
-  "conceito": "### Quando o parafuso de tração isolado funciona\n- Traço **longo**: pelo menos **2 vezes o diâmetro** do osso.\n- Espaço para **dois ou mais** parafusos perpendiculares ao traço.\n- **Área de contato** ampla entre os fragmentos.\n\nA fratura ==espiral== (ou oblíqua longa) do metacarpo cumpre isso.\n\n### Os outros traços\n- **Transverso:** sem onde comprimir com parafuso; placa, fios ou haste.\n- **Oblíquo curto:** comprimento insuficiente; o parafuso escorrega; precisa de placa.\n- **Cominutivo:** sem contato cortical; fixação em **ponte**.\n\n### Na prática do metacarpo\n- Parafusos de 1,5 a 2,0 mm, geralmente dois ou três.\n- Atenção à **rotação**: checar o alinhamento dos dedos em flexão (sem cruzamento).\n\n> **Na prova:** parafuso de tração isolado no metacarpo = traço ==espiral==.",
-  "correta": "**Espiral.**\n- Traço longo com área de contato.",
   "incorretas": {
-   "B": "**Sem onde comprimir.**\n- Placa ou haste.",
-   "C": "**Sem contato cortical.**\n- Fixação em ponte.",
-   "D": "**Curto demais.**\n- Instável com parafusos isolados."
+   "B": "No traço transverso não há onde comprimir com parafuso, e a fixação é feita com placa, fios ou haste.",
+   "C": "No traço cominutivo não há contato firme entre os fragmentos, e a fixação é em ponte.",
+   "D": "O traço oblíquo curto é curto demais para parafusos isolados e precisa de placa."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O **parafuso de tração** sozinho, sem placa, só consegue fixar uma fratura quando algumas condições estão presentes:\n\nO traço da fratura precisa ser **longo**, com comprimento de pelo menos **duas vezes o diâmetro** do osso.\n\nDeve haver espaço para **dois ou mais parafusos**, colocados perpendicularmente ao traço.\n\nOs fragmentos precisam ter uma **área de contato** ampla, para que a compressão seja eficiente.\n\nA fratura **espiral** (ou oblíqua longa) do metacarpo, um dos ossos da palma da mão, cumpre essas condições: o traço é longo e dá para colocar dois ou três parafusos pequenos (de 1,5 a 2,0 mm) comprimindo os fragmentos.\n\nOs outros traços não permitem essa técnica:\n\nNo traço **transverso**, não há como colocar um parafuso atravessando a fratura de forma eficiente. Usam-se placa, fios ou haste.\n\nNo traço **oblíquo curto**, o comprimento não é suficiente: um parafuso isolado faz os fragmentos escorregarem. Precisa de placa.\n\nNo traço **cominutivo** (com vários fragmentos), não há contato firme entre as pontas. A fixação é feita em ponte, atravessando a zona fragmentada.\n\nUm cuidado especial no metacarpo é a **rotação**: com os dedos dobrados, eles devem apontar todos para o mesmo lugar, sem cruzar um sobre o outro.",
+  "correta": "Espiral. O traço longo, com boa área de contato, permite colocar dois ou mais parafusos de tração.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0058": {
-  "conceito": "### O tempo diz o germe\n- **Precoce** (primeiras semanas): contaminação intraoperatória ou da ferida por germes **virulentos**. ==Staphylococcus aureus e bacilos gram-negativos==.\n- **Retardada / tardia** (meses): germes de **baixa virulência** que levaram tempo para formar biofilme. **Estafilococos coagulase-negativos** e Cutibacterium acnes.\n\n### A classificação de Willenegger e Roth\n- **Precoce:** até 2 semanas.\n- **Retardada:** 3 a 10 semanas.\n- **Tardia:** mais de 10 semanas.\n\n### Por que importa\n- **Precoce:** ainda admite **desbridamento, antibiótico e manutenção do implante** se estável, até a consolidação.\n- **Tardia:** biofilme maduro; geralmente exige **retirada** do implante (e nova fixação se não consolidou).\n\n> **Na prova:** infecção precoce pós-osteossíntese = ==S. aureus e gram-negativos==.",
-  "correta": "**S. aureus e bacilos gram-negativos.**",
   "incorretas": {
-   "A": "**Estreptococo não típico.**",
-   "C": "**Tardia.**\n- O coagulase-negativo é de baixa virulência.",
-   "D": "**Tardia.**"
+   "A": "O *S. aureus* está certo, mas os estreptococos não são os germes típicos da infecção precoce pós-osteossíntese.",
+   "C": "Os estafilococos coagulase-negativos, de baixa virulência, são típicos da infecção tardia.",
+   "D": "Os gram-negativos aparecem na infecção precoce, mas o estafilococo coagulase-negativo é típico da tardia."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Quando uma osteossíntese (placa, haste, parafusos) infecciona, o **tempo** entre a cirurgia e o início da infecção ajuda a prever o germe e a escolher o tratamento. A classificação de **Willenegger e Roth** divide em:\n\n**Precoce**: até 2 semanas após a cirurgia.\n\n**Retardada**: entre 3 e 10 semanas.\n\n**Tardia**: depois de 10 semanas.\n\nNa infecção **precoce**, a contaminação acontece durante a cirurgia ou pela ferida, e os germes são **virulentos**, capazes de causar infecção rapidamente. Os mais comuns são o *Staphylococcus aureus* e os **bacilos gram-negativos** (bactérias como *Pseudomonas*, *Enterobacter* e *E. coli*, frequentes em fraturas expostas e em ambiente hospitalar).\n\nNas infecções **tardias**, predominam germes de **baixa virulência**, que demoram para dar sintomas, como os estafilococos coagulase-negativos (por exemplo, *Staphylococcus epidermidis*, da pele) e o *Cutibacterium acnes*.\n\nO tempo também muda o tratamento. Na infecção precoce, o **biofilme** (a camada protetora que as bactérias formam sobre o metal) ainda está imaturo. Por isso, se o implante estiver firme, pode-se fazer limpeza cirúrgica e antibiótico mantendo o implante até a fratura consolidar. Na infecção tardia, o biofilme está maduro, e geralmente é preciso retirar o implante.",
+  "correta": "Aureus e bacilos gram-negativos. Na infecção precoce, predominam germes virulentos, que contaminam durante a cirurgia ou pela ferida.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0059": {
-  "conceito": "### Germe x hospedeiro\n- **Salmonella:** doença falciforme.\n- ==Pseudomonas aeruginosa==: usuário de **droga intravenosa**; ferida perfurante do pé **através do tênis**.\n- **Haemophilus influenzae:** criança não vacinada.\n- **Kingella kingae:** criança de 6 meses a 4 anos.\n- **Pasteurella:** mordida de gato ou cão.\n- **Eikenella:** mordida humana.\n- **Bartonella:** arranhadura de gato.\n\n### No usuário de droga intravenosa\n- A Pseudomonas tem predileção pelo esqueleto **axial**: esternoclavicular, sacroilíaca, sínfise, coluna.\n- **Ressalva:** mesmo nesse grupo, o **S. aureus** continua o mais frequente em números absolutos. A Pseudomonas é o germe que **caracteriza** o grupo, e é o que a banca quer.\n\n> **Na prova:** droga intravenosa = ==Pseudomonas== (associação característica).",
-  "correta": "**Pseudomonas.**\n- O agente característico do usuário de droga intravenosa.",
   "incorretas": {
-   "A": "**Falciforme.**",
-   "B": "**Criança não vacinada.**",
-   "D": "**Mais comum em geral.**\n- Também neste grupo, mas não é o que caracteriza o usuário de droga."
+   "A": "A *Salmonella* é o germe associado à anemia falciforme.",
+   "B": "O *Haemophilus influenzae* é associado a crianças não vacinadas.",
+   "D": "O *S. aureus* é o germe mais comum nas osteomielites em geral e frequente também nesse grupo, mas não é o que caracteriza o usuário de drogas injetáveis."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Alguns germes têm associação característica com certos grupos de pacientes, e as provas gostam de cobrar essas duplas:\n\n***Salmonella***: pacientes com **anemia falciforme**.\n\n***Pseudomonas aeruginosa***: **usuários de drogas injetáveis** e feridas perfurantes do pé através do tênis (o clássico prego que atravessa a sola).\n\n***Haemophilus influenzae***: crianças não vacinadas.\n\n***Kingella kingae***: crianças pequenas, de cerca de 6 meses a 4 anos.\n\n***Pasteurella***: mordida de cão ou gato.\n\n***Eikenella***: mordida humana.\n\nNo usuário de drogas injetáveis, a *Pseudomonas* tem preferência pelo esqueleto do **tronco**: articulação esternoclavicular, sacroilíaca, sínfise púbica e coluna.\n\nMas há uma ressalva importante: mesmo nesse grupo, o *Staphylococcus aureus* continua sendo, em números absolutos, um dos germes mais frequentes. A *Pseudomonas* é o germe que **caracteriza** o usuário de drogas injetáveis, e é essa associação que a banca quer. Por isso a questão tem um aviso.",
+  "alerta": "O gabarito oficial é Pseudomonas, que é a associação característica do usuário de drogas injetáveis cobrada em prova. Muitas séries, porém, mostram o Staphylococcus aureus como germe mais frequente também nesse grupo, de modo que a alternativa D tem respaldo na literatura.",
+  "correta": "Pseudomonas, segundo o gabarito. É o germe que caracteriza a osteomielite do usuário de drogas injetáveis, com preferência pelo esqueleto do tronco.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0060": {
-  "conceito": "### As zonas de Nechaev\nNo membro atingido por mina terrestre, do **distal para o proximal**:\n- **Zona 1, dispersão (pulverização):** junto ao ponto de detonação, destruição total.\n- **Zona 2, avulsão:** amputação traumática e dano grave logo acima.\n- ==Zona 3, contusão==: lesões por **fragmentos e estilhaços** projetados, afastada do efeito destrutivo direto da explosão.\n- **Zona 4, comoção:** a mais proximal, efeito concussivo e sistêmico.\n\n### A lição cirúrgica\n- O dano se estende **muito acima** do que se vê: fragmentos sobem pelos planos fasciais.\n- Desbridamento **repetido** e amputação num nível que respeite o tecido viável.\n- Fechamento **retardado**; alto risco de infecção.\n\n> **Na prova:** laceração da coxa por estilhaços, não pela explosão direta = ==zona 3 (contusão)==.",
-  "correta": "**Zona 3.**\n- A zona de contusão por estilhaços.",
   "incorretas": {
-   "A": "**Dispersão.**\n- Destruição máxima junto à detonação.",
-   "B": "**Avulsão.**\n- Amputação traumática logo acima da zona 1.",
-   "D": "**Comoção.**\n- Efeito concussivo, não laceração por estilhaço."
+   "A": "A zona 1 é a de dispersão, com destruição total junto ao ponto de detonação.",
+   "B": "A zona 2 é a de avulsão, onde ocorre a amputação traumática logo acima da zona 1.",
+   "D": "A zona 4 é a de comoção, com efeito concussivo da onda de choque, e não laceração por estilhaços."
   },
+  "conceito": "A explosão de uma **mina terrestre** sob o pé produz um padrão de lesão característico, que sobe pela perna em faixas. **Nechaev** e colaboradores descreveram essas faixas como **zonas**, da mais próxima do ponto da explosão (distal) para a mais distante (proximal):\n\n**Zona 1, de dispersão ou pulverização**: junto ao ponto de detonação. Os tecidos são destruídos por completo, pulverizados.\n\n**Zona 2, de avulsão**: logo acima. É onde acontece a amputação traumática, com tecidos arrancados e muito danificados.\n\n**Zona 3, de contusão**: mais acima, na perna ou na coxa. Aqui as lesões não vêm do efeito direto da explosão, mas dos **fragmentos e estilhaços** projetados (pedaços da mina, do calçado, terra, ossos), que cortam e penetram os tecidos.\n\n**Zona 4, de comoção**: a mais alta, com efeito concussivo da onda de choque, sem laceração direta.\n\nA grande lição cirúrgica é que **o dano vai muito além do que se vê** na pele. Fragmentos e contaminação sobem pelos planos entre os músculos. Por isso, o tratamento exige limpezas cirúrgicas repetidas, amputação num nível em que o tecido está realmente vivo e fechamento da ferida adiado, porque o risco de infecção é muito alto.",
+  "correta": "Zona 3. É a zona de contusão, em que as lacerações vêm dos estilhaços projetados, e não do efeito direto da explosão.",
   "referencias": [
    "Nechaev EA et al. Mine Blast Trauma: Experience from the War in Afghanistan. International Committee of the Red Cross; 1991.",
    "Characteristics and mechanism of lower limb injury induced by landmine blast. Front Bioeng Biotechnol. 2023;11:1297664. https://pmc.ncbi.nlm.nih.gov/articles/PMC10767292/"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0061": {
-  "conceito": "### A contusão do quadríceps\nTrauma direto na coxa, com **hematoma intramuscular** e dor à flexão do joelho.\n\n### As complicações esperadas\nVêm do hematoma que organiza:\n- **Fibrose** muscular.\n- **Perda de flexão** do joelho por retração.\n- **Miosite ossificante**, favorecida por massagem precoce, alongamento agressivo e retorno prematuro.\n\n### A rara\n==Síndrome compartimental== da coxa: possível, mas a menos frequente. O compartimento anterior é **volumoso e complacente** e absorve muito sangue antes de a pressão subir.\n\n### O tratamento inicial\n- Repouso, gelo, compressão.\n- **Imobilização em flexão do joelho** (cerca de 120°) nas primeiras 24 horas: reduz o hematoma e acelera o retorno.\n- Recuperar a flexão ativa progressivamente, sem massagem.\n\n> **Na prova:** contusão do quadríceps: complicação menos frequente = ==síndrome compartimental==.",
-  "correta": "**Síndrome compartimental.**\n- Rara pela complacência do compartimento anterior.",
   "incorretas": {
-   "A": "**Esperada.**\n- Organização do hematoma.",
-   "B": "**Clássica.**\n- Relativamente frequente.",
-   "C": "**Frequente.**\n- Tradução funcional da fibrose."
+   "A": "A fibrose muscular é uma complicação esperada, pela organização do hematoma.",
+   "B": "A miosite ossificante é uma complicação clássica e relativamente frequente da contusão do quadríceps.",
+   "C": "A perda de flexão do joelho é frequente, como consequência da fibrose do músculo."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A **contusão do quadríceps** é o trauma direto na frente da coxa, como uma joelhada no futebol (\"tostão\" ou \"paralítica\"). O impacto rompe vasos dentro do músculo e forma um **hematoma** dentro dele. O paciente sente dor e tem dificuldade para dobrar o joelho, porque dobrar estica o músculo machucado.\n\nAs complicações mais frequentes vêm desse hematoma, que vai se organizando com o tempo:\n\n**Fibrose muscular**: o hematoma é substituído por tecido cicatricial, menos elástico.\n\n**Perda de flexão do joelho**: consequência da fibrose, que encurta o músculo.\n\n**Miosite ossificante**: formação de osso dentro do músculo, no lugar do hematoma. É favorecida por massagem precoce, alongamentos agressivos e volta precoce ao esporte.\n\nA **síndrome compartimental** da coxa (aumento da pressão dentro do compartimento muscular a ponto de cortar a circulação) é possível, mas é a **menos frequente**. O compartimento da frente da coxa é grande e elástico, e consegue acomodar muito sangue antes de a pressão subir a níveis perigosos.\n\nNo tratamento inicial, além de repouso, gelo e compressão, uma medida útil é manter o **joelho dobrado** (cerca de 120 graus) nas primeiras 24 horas. O músculo esticado comprime o hematoma e reduz o sangramento. Depois, a flexão é recuperada aos poucos, sem massagem.",
+  "correta": "Síndrome compartimental. É possível, mas rara, porque o compartimento anterior da coxa é grande e acomoda muito sangue antes de a pressão subir.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0062": {
-  "conceito": "### Por que o comprimento importa\nO coto transtibial tem um **ponto ideal**. Curto demais, ele não dá alavanca para controlar a prótese e o encaixe fica instável. Longo demais, a extremidade avança para uma região com **pouca massa muscular e perfusão pior**, e sobra pouca altura para os componentes do pé protético.\n\n### A regra prática\n- **2,5 cm de tíbia para cada 30 cm de altura** do paciente, medidos a partir da interlinha articular do joelho.\n- Para 1,80 m: 180 ÷ 30 = 6, e 6 × 2,5 = ==15 cm==.\n- Faixa usual no adulto: **12,5 a 17,5 cm**, na junção do terço proximal com o terço médio da tíbia.\n\n### Detalhes técnicos que costumam cair\n- A fíbula é seccionada **1 a 2 cm mais curta** que a tíbia.\n- A tíbia recebe **chanfro anterior** (bisel), para a borda óssea não ulcerar a pele.\n- A cobertura clássica é o **retalho posterior longo** com o gastrocnêmio (técnica de Burgess).\n\n> **Na prova:** preservar o joelho vale muito. A marcha com prótese transtibial gasta bem menos energia que a transfemoral, então mesmo um coto curto, desde que mantenha a **tuberosidade da tíbia** (inserção do tendão patelar), é preferível a converter para amputação acima do joelho.",
-  "correta": "**15 cm é exatamente o que a regra prevê.**\n- 1,80 m corresponde a 6 × 30 cm, e 6 × 2,5 cm = **15 cm**.\n- O nível fica na **junção do terço proximal com o médio**, dentro da faixa ideal de 12,5 a 17,5 cm.\n- Esse comprimento equilibra **alavanca** para controlar a prótese e **boa cobertura muscular** na extremidade.",
   "incorretas": {
-   "A": "**7 cm é coto curto.**\n- O braço de alavanca é pequeno: controlar o soquete fica mais difícil e a marcha, menos estável.\n- O encaixe é mais trabalhoso, com mais chance de o coto se soltar do soquete.\n- Só se aceita um coto assim quando não há como fazer mais longo (trauma, infecção), e desde que a **tuberosidade da tíbia** seja preservada.",
-   "B": "**10 cm é o comprimento para alguém de cerca de 1,20 m.**\n- Pela regra: 120 ÷ 30 = 4, e 4 × 2,5 = 10 cm.\n- Para 1,80 m, 10 cm fica **abaixo da faixa ideal** e perde alavanca sem necessidade.",
-   "D": "**20 cm passa do ponto.**\n- Avança em direção ao terço distal, onde há **pouca massa muscular** para acolchoar a extremidade e a **perfusão é pior**, com mais risco de dor e úlcera.\n- Rouba altura que seria usada pelos componentes do pé protético.\n- Coto mais longo não significa melhor: o objetivo é o comprimento **ideal**, não o máximo."
+   "A": "7 cm é um coto curto, com pouca alavanca para controlar a prótese. Só se aceita quando não há como fazer mais longo.",
+   "B": "10 cm seria o comprimento para uma pessoa de cerca de 1,20 m. Para 1,80 m, fica abaixo do ideal.",
+   "D": "20 cm avança para a parte de baixo da perna, com pouca cobertura muscular, pior circulação e menos espaço para o pé protético."
   },
-  "geradoEm": "2026-09-06",
+  "conceito": "Na amputação **abaixo do joelho** (transtibial), o comprimento do coto da tíbia tem um ponto ideal. Coto curto demais dá pouca alavanca para controlar a prótese, e o encaixe fica instável. Coto longo demais avança para a parte de baixo da perna, onde há pouca massa muscular e pior circulação para cobrir a ponta do osso, e sobra pouco espaço para os componentes do pé protético.\n\nExiste uma regra prática para calcular: **2,5 cm de tíbia para cada 30 cm de altura** do paciente, medidos a partir da linha da articulação do joelho.\n\nPara uma pessoa de 1,80 m: 180 dividido por 30 dá 6, e 6 vezes 2,5 cm dá **15 cm**. A faixa ideal no adulto fica em torno de 12,5 a 17,5 cm, na transição entre o terço de cima e o terço do meio da tíbia.\n\nAlguns detalhes técnicos costumam cair em prova. A fíbula é cortada 1 a 2 cm mais curta que a tíbia. A borda da frente da tíbia é chanfrada (em bisel), para não machucar a pele por dentro. E a ponta do coto é coberta por um retalho longo de trás, com o músculo da panturrilha (técnica de Burgess).\n\nUma regra de ouro: **preservar o joelho** vale muito. Andar com prótese abaixo do joelho gasta bem menos energia do que com prótese acima do joelho. Por isso, mesmo um coto curto, desde que mantenha a tuberosidade da tíbia (onde o tendão patelar se prende), é preferível a amputar acima do joelho.",
+  "correta": "15 cm. Pela regra de 2,5 cm para cada 30 cm de altura, uma pessoa de 1,80 m tem coto ideal de 15 cm.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0063": {
-  "conceito": "### Um espectro, duas apresentações\n\n### Discite\n- Criança **pequena**: idade média em torno de **2,5 anos**.\n- **Afebril** ou subfebril, marcadores pouco alterados.\n- Recusa em **andar ou sentar**, irritabilidade, perda da lordose.\n- Boa resposta a imobilização e antibiótico; bom prognóstico.\n- O disco infantil ainda é vascularizado.\n\n### Osteomielite vertebral\n- Criança **mais velha**: idade média perto de ==7,5 anos==.\n- ==Com febre==, marcadores mais elevados.\n- **Destruição óssea** visível.\n- Tratamento mais longo.\n\n### Diagnóstico\n**Ressonância** diferencia os dois e afasta abscesso. Biópsia só se falha terapêutica ou atipia.\n\n> **Na prova:** osteomielite vertebral na criança = ==mais velha (~7,5 anos) e febril==; discite = pequena e afebril.",
-  "correta": "**Idade média de 7,5 anos, frequentemente com febre.**",
   "incorretas": {
-   "A": "**Discite.**",
-   "B": "**Idade da discite.**",
-   "C": "**Febre errada.**\n- A osteomielite cursa com febre."
+   "A": "Idade em torno de 2,5 anos e ausência de febre descrevem a discite.",
+   "B": "A idade média de 2,5 anos é a da discite, e não a da osteomielite vertebral.",
+   "C": "A idade está certa, mas a osteomielite vertebral costuma vir com febre."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Na criança, a infecção da coluna aparece de duas formas, que fazem parte de um mesmo espectro, mas se comportam de maneira diferente.\n\n**Discite** (infecção do disco). Acontece em crianças **pequenas**, com idade média por volta de 2,5 anos. Nessa idade, o disco ainda tem vasos sanguíneos, e a infecção pode começar nele. A criança geralmente **não tem febre** ou tem febre baixa, e os exames de sangue pouco se alteram. O sinal típico é a recusa em andar ou sentar, irritabilidade e perda da curvatura normal da coluna lombar. Responde bem ao tratamento e tem bom prognóstico.\n\n**Osteomielite vertebral** (infecção do corpo da vértebra). Acontece em crianças **mais velhas**, com idade média por volta de **7,5 anos**. A criança costuma ter **febre**, os exames de inflamação são mais alterados, e há destruição de osso visível nos exames de imagem. O tratamento é mais longo.\n\nA **ressonância magnética** é o exame que diferencia as duas e mostra se há abscesso. A biópsia fica reservada aos casos que não respondem ao tratamento ou têm apresentação atípica.",
+  "correta": "7,5 anos e frequentemente com febre. A osteomielite vertebral acomete crianças mais velhas que a discite e costuma ter febre e exames mais alterados.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0064": {
-  "conceito": "### As etapas do biofilme\n- **Condicionamento:** o implante é revestido por proteínas do hospedeiro (fibronectina, fibrinogênio, colágeno).\n- **Adesão:** a bactéria adere a elas pelas adesinas; primeiro reversível, depois **irreversível**.\n- **Maturação:** a bactéria produz a ==matriz exopolissacarídea== (glicocálix), dentro da qual as células vivem em baixa atividade metabólica.\n- **Dispersão:** liberação de bactérias para novos sítios.\n\n### Por que o biofilme maduro é um problema\n- A matriz impede o **antibiótico** e as **células de defesa** de alcançarem as bactérias.\n- Bactérias em baixa atividade toleram concentrações de antibiótico muito maiores.\n\n### A consequência\nBiofilme maduro (infecção crônica) em geral exige **remover o implante**. Por isso a janela da infecção precoce, antes da maturação, permite tentar manter o implante.\n\n> **Na prova:** maturação do biofilme = ==matriz exopolissacarídea==.",
-  "correta": "**Matriz exopolissacarídea.**\n- O glicocálix define a maturação.",
   "incorretas": {
-   "A": "**Fase inicial.**\n- A fibronectina reveste o implante e serve de ancoragem.",
-   "B": "**Fase inicial.**\n- Mesmo papel de condicionamento.",
-   "C": "**Do hospedeiro.**\n- Não é matriz bacteriana."
+   "A": "A fibronectina participa da fase inicial, recobrindo o implante e servindo de ponto de fixação para as bactérias.",
+   "B": "O fibrinogênio também participa da fase inicial de condicionamento do implante.",
+   "C": "O proteoglicano é um componente do tecido do hospedeiro, e não a matriz produzida pelas bactérias."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O **biofilme** é a forma como as bactérias se protegem sobre um implante metálico (placa, haste, prótese). Ele se forma em etapas:\n\n**Condicionamento.** Logo depois da cirurgia, o metal é recoberto por proteínas do próprio paciente, como fibronectina, fibrinogênio e colágeno.\n\n**Adesão.** As bactérias se prendem a essas proteínas, primeiro de forma frouxa (reversível), depois firme (irreversível).\n\n**Maturação.** As bactérias presas produzem uma **matriz exopolissacarídea**, uma espécie de gel de açúcares (também chamado glicocálix), e passam a viver dentro dela, em comunidade, com metabolismo muito reduzido. É essa matriz que define o biofilme maduro.\n\n**Dispersão.** Grupos de bactérias se soltam e vão colonizar outros lugares.\n\nO biofilme maduro é um grande problema. A matriz dificulta a chegada do antibiótico e das células de defesa até as bactérias. E bactérias \"adormecidas\" toleram doses de antibiótico muito maiores do que as que vivem soltas.\n\nPor isso, a infecção crônica em torno de um implante geralmente exige **retirar o implante**. Já na infecção precoce, antes de o biofilme amadurecer, é possível tentar limpar cirurgicamente e manter o implante, se estiver firme.",
+  "correta": "Matriz exopolissacarídea. É o gel de açúcares produzido pelas próprias bactérias que caracteriza o biofilme maduro.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0065": {
-  "conceito": "### Quem tem mais risco\nA síndrome dolorosa regional complexa após fratura do rádio distal é mais frequente no ==sexo feminino==, na meia-idade: o mesmo grupo da fratura por fragilidade.\n\n### A prevenção estudada\n==Vitamina C==, **500 mg/dia por cerca de 50 dias** a partir do trauma.\n- Racional: reduzir radicais livres na fase inflamatória.\n- Evidência de **prevenção**, não de tratamento; estudos posteriores tiveram resultados mistos, mas o uso segue recomendado por várias diretrizes.\n\n### Outros fatores de risco\n- Gesso **apertado**, dor intensa precoce.\n- Fraturas intra-articulares, lesão associada.\n- Tratamento prolongado.\n\n### Com o quadro instalado\nReabilitação precoce, analgesia multimodal, dessensibilização, terapia do espelho e bloqueios.\n\n> **Na prova:** SDRC pós-rádio distal = ==mulher; prevenção com vitamina C==.",
-  "correta": "**Feminino, com prevenção pela vitamina C.**",
   "incorretas": {
-   "B": "**Vitamina errada.**",
-   "C": "**Sexo errado.**",
-   "D": "**Erra os dois.**"
+   "B": "O sexo está certo, mas a vitamina estudada na prevenção é a C, e não a B.",
+   "C": "A vitamina C está certa, mas a síndrome é mais frequente no sexo feminino.",
+   "D": "Erra os dois: a síndrome é mais comum em mulheres, e a prevenção estudada é com vitamina C."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A **síndrome dolorosa regional complexa** (SDRC) é uma complicação que pode surgir depois de uma fratura, com dor desproporcional, inchaço, alterações de cor, temperatura e suor da pele e rigidez. A fratura do rádio distal, no punho, é uma das situações em que ela mais aparece.\n\nEla é mais frequente no **sexo feminino**, na meia-idade, o mesmo grupo que mais sofre fraturas do punho por fragilidade óssea.\n\nA **vitamina C** foi estudada para a **prevenção**: tomada diariamente desde o trauma, por algumas semanas, reduziu a ocorrência da síndrome em ensaios clínicos com fratura do punho. A ideia é que, como antioxidante, ela diminua os radicais livres produzidos na inflamação, que participariam do início da síndrome. Estudos posteriores tiveram resultados mistos, mas, por ser barata e segura, ela continua recomendada por várias diretrizes. A evidência é de prevenção, e não de tratamento.\n\nOutros fatores de risco são gesso apertado, dor intensa logo no início, fraturas que entram na articulação e tratamento prolongado. Quando a síndrome já está instalada, o tratamento envolve reabilitação precoce, controle da dor, dessensibilização e, em alguns casos, outras medidas, como bloqueios e terapia do espelho.",
+  "correta": "Feminino, e pode ser prevenida com uso de vitamina C. É o grupo de maior risco, e a vitamina C foi a estudada na prevenção após fratura do punho.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0066": {
-  "conceito": "### O que a bactéria faz no líquido\n- **Consome glicose** (bactérias e neutrófilos): ==glicose baixa==, em geral abaixo de metade da glicemia simultânea.\n- **Exsudato** e degradação celular: ==proteína elevada==.\n\n### O restante do perfil séptico\n- Contagem acima de **50.000** células, mais de 75 a 90% de **neutrófilos**.\n- Aspecto **turvo** ou purulento.\n- **Viscosidade reduzida**: as enzimas degradam o ácido hialurônico.\n- **Lactato** elevado.\n- **Gram e cultura** fecham o diagnóstico (frasco de hemocultura aumenta o rendimento).\n\n### Pegadinhas\n- Cristais não excluem infecção: gota e séptica podem coexistir.\n- Antibiótico prévio reduz a positividade da cultura.\n\n> **Na prova:** líquido séptico = ==glicose baixa, proteína alta==.",
-  "correta": "**Glicose diminuída e proteína elevada.**",
   "incorretas": {
-   "A": "**Glicose errada.**\n- Ela cai na infecção.",
-   "B": "**Erra os dois.**",
-   "D": "**Proteína errada.**\n- A proteína sobe."
+   "A": "A proteína está certa, mas a glicose cai na infecção, consumida pelas bactérias e células de defesa.",
+   "B": "Erra os dois: na infecção, a glicose cai e a proteína sobe.",
+   "D": "A glicose está certa, mas a proteína aumenta na infecção."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Na **artrite séptica** (infecção dentro da articulação), o líquido sinovial muda de forma característica, e cada alteração tem uma explicação.\n\n**Glicose diminuída.** As bactérias e os neutrófilos (células de defesa que chegam em grande número) consomem a glicose do líquido. Ela costuma ficar abaixo da metade da glicose do sangue medida ao mesmo tempo.\n\n**Proteína elevada.** A inflamação deixa os vasos mais permeáveis, e proteínas do sangue passam para dentro da articulação. A destruição de células também libera proteínas.\n\nO restante do perfil séptico inclui: contagem de leucócitos muito alta (em geral acima de 50.000 por mm³), com predomínio de neutrófilos; aspecto turvo ou de pus; líquido menos viscoso, porque as enzimas destroem o ácido hialurônico que lhe dá consistência; lactato elevado. A bacterioscopia (Gram) e a **cultura** confirmam o diagnóstico, e colocar o líquido em frasco de hemocultura aumenta a chance de a bactéria crescer.\n\nDuas armadilhas: encontrar cristais (de gota ou pseudogota) **não exclui** infecção, porque as duas podem coexistir; e o uso prévio de antibiótico reduz a chance de a cultura ser positiva.",
+  "correta": "Glicose diminuída e proteína elevada. As bactérias e os neutrófilos consomem a glicose, e a inflamação aumenta a passagem de proteínas para o líquido.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0067": {
-  "conceito": "### O problema mais comum\nA pseudartrose diafisária da tíbia é, na maioria, **hipertrófica**: sobra biologia, falta estabilidade.\n\n### Por que a haste fresada fechada\n- A **fresagem** produz enxerto autólogo que se deposita no foco.\n- A **haste** dá a estabilidade que faltava.\n- Técnica **fechada**: não abre o foco nem desnuda o osso das partes moles.\n- Permite **carga precoce**, que estimula a consolidação.\n\nÉ o ==método preferencial==. Se já havia haste: **trocar por uma mais grossa** após nova fresagem (exchange nailing).\n\n### Quando outra opção\n- **Placa:** pseudartroses metafisárias, deformidade a corrigir, falha da troca de haste.\n- **Atrófica:** acrescentar biologia (enxerto autólogo, RIA).\n- **Infectada:** desbridamento, controle da infecção, depois reconstrução.\n- **Osteotomia da fíbula:** adjuvante, se a fíbula intacta impede a compressão.\n\n> **Na prova:** pseudartrose diafisária da tíbia = ==haste fresada fechada==.",
-  "correta": "**Haste intramedular fresada fechada.**\n- Estabiliza e enxerta sem abrir o foco.",
   "incorretas": {
-   "A": "**Exceção.**\n- A placa exige abrir o foco e desnudar o osso.",
-   "C": "**Adjuvante.**\n- Não trata sozinha.",
-   "D": "**Soma inconvenientes.**\n- A fresagem já enxerta; abrir o foco não acrescenta."
+   "A": "A placa exige abrir o foco e descolar as partes moles. Fica reservada a situações específicas, como pseudartroses perto da articulação.",
+   "C": "A osteotomia da fíbula é um complemento, usado quando a fíbula impede a compressão, e não trata a pseudartrose sozinha.",
+   "D": "A fresagem já leva enxerto ao foco. Abrir o foco só acrescenta agressão às partes moles, sem benefício."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A **pseudartrose** é uma fratura que não consolidou. Na diáfise da tíbia, a forma mais comum é a **hipertrófica**: as pontas do osso estão vivas, formam bastante calo, mas não se unem porque há movimento demais no foco. Ou seja, sobra biologia e falta estabilidade.\n\nO tratamento preferencial é a **haste intramedular fresada, colocada de forma fechada** (sem abrir o foco da fratura). Ela resolve o problema por vários caminhos ao mesmo tempo:\n\nA **fresagem** do canal (alargá-lo com brocas) produz fragmentos de osso que se depositam no foco e funcionam como um enxerto do próprio paciente.\n\nA **haste** dá a estabilidade que faltava.\n\nA técnica **fechada** não abre o foco nem descola os músculos e o periósteo, preservando o sangue que chega ao osso.\n\nA haste permite **apoiar o peso cedo**, e a carga estimula a consolidação.\n\nSe o paciente já tinha uma haste, a estratégia é trocá-la por uma mais grossa, depois de nova fresagem (*exchange nailing*).\n\nOutras opções têm indicações específicas: placa nas pseudartroses perto da articulação ou quando é preciso corrigir deformidade; enxerto ósseo nas atróficas, que precisam de biologia; tratamento da infecção antes de tudo nas infectadas. A osteotomia da fíbula é um complemento, quando a fíbula inteira impede a compressão do foco da tíbia.",
+  "correta": "Haste intramedular fresada fechada. Estabiliza o foco e leva enxerto pela fresagem, sem abrir a fratura nem prejudicar a circulação.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0068": {
