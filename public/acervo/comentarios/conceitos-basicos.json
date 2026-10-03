@@ -2039,49 +2039,49 @@
   "conferido": false
  },
  "conceitos-basicos-0208": {
-  "conceito": "### Cierny e Mader: tipo anatômico\n- **I, medular:** canal (haste contaminada). Tratamento: fresagem.\n- **II, superficial:** de fora para dentro, a partir de ferida; superfície externa da cortical.\n- ==III, localizado==: sequestro de **espessura total** da cortical, mas o osso **mantém a estabilidade axial** após a ressecção.\n- **IV, difuso:** a ressecção cria **instabilidade** e exige reconstrução.\n\n### Classe do hospedeiro\nA (normal), B (comprometimento local, sistêmico ou ambos), C (tratamento pior que a doença).\n\n> **Na prova:** osteomielite localizada = ==Cierny-Mader III==.",
-  "correta": "**Tipo III.**",
   "incorretas": {
-   "A": "**Medular.**",
-   "B": "**Superficial.**",
-   "D": "**Difuso, instável.**"
+   "A": "O tipo I é o medular, com a infecção dentro do canal.",
+   "B": "O tipo II é o superficial, limitado à superfície de fora da cortical.",
+   "D": "O tipo IV é o difuso, em que a retirada do osso doente deixa o osso instável."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A classificação de **Cierny e Mader** é a mais usada para a **osteomielite** do adulto. Ela tem duas partes: o **tipo anatômico** (onde está a infecção no osso) e a **classe do paciente** (como está a saúde dele).\n\nOs tipos anatômicos:\n\n**Tipo I, medular**: a infecção fica dentro do canal do osso, por exemplo ao redor de uma haste intramedular infectada.\n\n**Tipo II, superficial**: a infecção atinge só a superfície de fora da cortical, geralmente a partir de uma ferida que deixou o osso exposto.\n\n**Tipo III, localizado**: a infecção atravessa **toda a espessura** da cortical numa área delimitada, formando um sequestro (pedaço de osso morto). Depois de retirar esse osso doente, o osso **continua estável** e aguenta carga.\n\n**Tipo IV, difuso**: a infecção toma o osso de forma extensa. A retirada do osso doente deixa o osso **instável**, e é preciso reconstruí-lo.\n\nA classe do paciente: **A** é o paciente saudável; **B** é o paciente com algum comprometimento, local (como má circulação ou pele ruim), sistêmico (como diabetes) ou ambos; **C** é o paciente em que o tratamento seria pior que a própria doença.\n\nA combinação das duas partes (por exemplo, IIIB) orienta o quão agressivo será o tratamento.",
+  "correta": "III. A osteomielite localizada atravessa toda a cortical numa área delimitada, mas o osso continua estável depois da limpeza.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0209": {
-  "conceito": "### Uma deformidade, duas projeções\nToda deformidade angular existe num **único plano** no espaço, mas é vista projetada em duas radiografias perpendiculares.\n- **Coronal puro:** aparece só no AP.\n- **Sagital puro:** aparece só no perfil.\n- ==Ápice nas duas incidências, no mesmo nível==: o plano real é ==oblíquo==.\n\n### Como calcular\nA magnitude e a orientação verdadeiras saem das duas projeções:\n- **Trigonometria** ou método gráfico.\n- Aproximação útil: magnitude real ≈ raiz quadrada da soma dos quadrados dos ângulos do AP e do perfil (para ângulos pequenos).\n- Hoje, planejamento com **tomografia 3D** ou software.\n\n### O erro\nCorrigir só o que se vê no AP deixa a componente sagital.\n\n### Se os ápices estão em níveis diferentes\nHá **translação** associada ou deformidade **multiapical**.\n\n> **Na prova:** ápice no mesmo nível no AP e perfil = plano ==oblíquo==.",
-  "correta": "**Oblíquo.**",
   "incorretas": {
-   "A": "**Comprimento.**\n- Não produz ápice angular.",
-   "B": "**Apareceria só no perfil.**",
-   "C": "**Apareceria só no AP.**"
+   "A": "Uma deformidade axial é de comprimento e não produz um vértice angular.",
+   "B": "Uma deformidade sagital pura apareceria só na radiografia de perfil.",
+   "C": "Uma deformidade coronal pura apareceria só na radiografia de frente."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Quando uma fratura consolida torta, a deformidade angular acontece num **único plano** no espaço. Mas nós a vemos em duas radiografias perpendiculares: a de frente (AP), que mostra o plano **coronal** (de um lado para o outro), e a de perfil, que mostra o plano **sagital** (da frente para trás).\n\nA forma como a deformidade aparece nas duas radiografias revela o plano real:\n\nSe o osso está torto **só na radiografia de frente** e reto no perfil, a deformidade é **coronal** pura (para dentro ou para fora, como varo ou valgo).\n\nSe está torto **só no perfil** e reto na de frente, a deformidade é **sagital** pura (para a frente ou para trás).\n\nSe aparece **torto nas duas** radiografias, com o vértice (ápice) **no mesmo nível**, a deformidade está num plano **oblíquo**, entre o coronal e o sagital. Cada radiografia mostra apenas uma parte dela.\n\nPara saber o tamanho e a direção reais, combinam-se os ângulos das duas radiografias, por cálculo ou por desenho, ou usa-se tomografia com reconstrução em três dimensões. O erro clássico é corrigir só o que se vê na radiografia de frente e deixar a parte do perfil sem correção.\n\nSe os vértices aparecem em **níveis diferentes** nas duas radiografias, há outro componente, como um deslocamento lateral ou mais de uma curva.",
+  "correta": "Oblíquo. Quando o vértice aparece no mesmo nível nas duas radiografias, a deformidade está num plano entre o coronal e o sagital.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0210": {
-  "conceito": "### O que aumenta a rigidez do circular\n- Fios de **maior diâmetro** (veja o alerta).\n- Fios bem **tensionados**.\n- **Fios olivados**.\n- Anéis de **menor diâmetro**, osso centrado.\n- **Mais anéis** por fragmento, afastados entre si.\n- Fios cruzando **próximos de 90°**.\n- **Meios-pinos** associados.\n\n### O que reduz\n- Anel largo.\n- Fio fino ou frouxo.\n- Osso excêntrico.\n- **Fios quase paralelos** (ângulo de cruzamento pequeno): perdem resistência à translação no plano dos fios.\n\n### O gabarito\nA banca marcou \"reduzir o ângulo de cruzamento\", que contraria o ensino habitual (veja o alerta). Na anatomia, porém, nem sempre é possível cruzar a 90° sem ameaçar estruturas: aí se compensa com olivas, meios-pinos e mais níveis.\n\n> **Na prova:** a regra ensinada é ==fios a ~90°==, anel pequeno, fio grosso e tensionado.",
-  "correta": "**Reduzir o ângulo de cruzamento, pelo gabarito oficial.**\n- Contraria a regra habitual; veja o alerta.",
   "incorretas": {
-   "A": "**Diminui a rigidez.**",
-   "B": "**Aumenta a rigidez.**\n- Foi dado como errado; veja o alerta.",
-   "C": "**Diminui.**\n- Alonga o vão livre do fio."
+   "A": "Menos anéis deixam a montagem mais frouxa.",
+   "B": "Aumentar o diâmetro dos fios é uma forma reconhecida de aumentar a rigidez. Foi considerada incorreta apenas por seguir o gabarito oficial.",
+   "C": "Anéis maiores aumentam o trecho de fio solto e deixam a montagem mais flexível."
   },
+  "conceito": "O **fixador externo circular** (tipo Ilizarov) prende o osso com fios finos que atravessam o membro, esticados e presos a anéis ao redor dele. A rigidez da montagem depende de vários fatores.\n\nO que **aumenta** a rigidez, segundo o que é ensinado:\n\nFios de **maior diâmetro**.\n\nFios bem **tensionados**.\n\n**Fios olivados**, com uma pequena esfera que trava o osso.\n\nAnéis **menores**, com o osso **centralizado**.\n\n**Mais anéis** em cada fragmento, afastados entre si.\n\nFios que se cruzam em ângulo **próximo de 90 graus**.\n\n**Meios-pinos** (pinos rosqueados presos de um lado só) associados aos fios.\n\nO que **diminui** a rigidez: anéis largos, fios finos ou frouxos, osso fora do centro do anel e fios quase paralelos, que se cruzam em ângulo pequeno. Fios quase paralelos deixam o osso deslizar na direção deles.\n\nO gabarito oficial considera \"reduzir o ângulo de cruzamento entre os fios\", o que contraria esse ensino. Na prática, nem sempre é possível cruzar os fios a 90 graus sem ameaçar nervos e vasos, e aí se compensa com olivas, meios-pinos e mais níveis de fixação. Por isso a questão tem um aviso.",
+  "correta": "Reduzir o ângulo de cruzamento entre os fios, segundo o gabarito. O ensino habitual é o oposto: fios cruzando perto de 90 graus dão mais rigidez.",
   "alerta": "A alternativa B (aumentar o diâmetro dos fios) é uma medida reconhecida para aumentar a rigidez do fixador circular, e mesmo assim está marcada como errada. Já a resposta oficial vai na direção contrária ao que se ensina: fios que se cruzam próximo de 90 graus dão a montagem mais estável, e REDUZIR o ângulo de cruzamento (aproximando os fios do paralelismo) diminui a rigidez, sobretudo à translação. Se você marcou B, o erro não foi seu.",
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0211": {
-  "conceito": "### O que é\nSíndrome dolorosa regional complexa (antiga distrofia simpático-reflexa): dor **desproporcional**, com alterações vasomotoras, sudomotoras, tróficas e motoras que **não respeitam território de nervo**.\n\n### Gatilhos e fatores de risco\n- **Trauma ou cirurgia** (a fratura do rádio distal é o gatilho mais frequente).\n- Imobilização prolongada, gesso apertado.\n- Dor intensa mal controlada.\n- Sexo feminino.\n\n### A associação medicamentosa\nA banca marcou ==uso continuado de opioide==. Os textos clássicos descrevem associação com **barbitúricos** (fenobarbital), na síndrome ombro-mão (veja o alerta).\n\n### Prevenção e diagnóstico\n- **Vitamina C** 500 mg/dia por ~50 dias após fratura do punho.\n- Diagnóstico pelos **critérios de Budapeste**.\n\n> **Na prova:** gabarito oficial = ==opioide==; a associação clássica dos livros é o barbitúrico.",
-  "correta": "**Opioide, pelo gabarito oficial.**\n- Veja o alerta sobre a associação clássica com barbitúricos.",
   "incorretas": {
-   "B": "**A associação clássica.**\n- Foi dada como errada; veja o alerta.",
-   "C": "**Sem associação descrita.**",
-   "D": "**Tratamento.**\n- Tricíclicos tratam a dor neuropática."
+   "B": "Os barbitúricos, como o fenobarbital, são a associação clássica descrita nos textos. Foi considerada incorreta apenas por seguir o gabarito oficial.",
+   "C": "Não há associação descrita entre benzodiazepínicos e a síndrome.",
+   "D": "Os antidepressivos tricíclicos são usados no tratamento da dor neuropática, e não como causa da síndrome."
   },
+  "conceito": "A **síndrome dolorosa regional complexa**, antes chamada de **distrofia simpático-reflexa**, é uma condição em que o paciente tem dor **desproporcional** ao machucado, junto com alterações de cor, temperatura e suor da pele, inchaço, alterações de pelos e unhas e rigidez. Essas alterações não seguem o território de um nervo específico.\n\nO gatilho mais comum é um **trauma** ou uma **cirurgia**, e a fratura do punho (rádio distal) é a situação mais frequente. Outros fatores de risco são imobilização prolongada, gesso apertado, dor intensa mal controlada e sexo feminino.\n\nQuanto à associação com remédios, o gabarito oficial aponta o **uso continuado de opioide**. Os textos clássicos, porém, descrevem a associação com **barbitúricos** (como o fenobarbital), dentro da chamada síndrome ombro-mão. Por isso a questão tem um aviso.\n\nDois pontos práticos importantes sobre a síndrome:\n\nA **vitamina C**, tomada diariamente por algumas semanas após uma fratura do punho, foi estudada para **prevenir** a síndrome.\n\nO diagnóstico é feito pelos **critérios de Budapeste**, que reúnem sintomas e sinais sensoriais, de cor e temperatura, de suor e inchaço, e motores e tróficos.\n\nOs antidepressivos tricíclicos são usados no **tratamento** da dor neuropática, e não como causa da síndrome.",
+  "correta": "Opioide, segundo o gabarito oficial. A associação clássica descrita nos livros, porém, é com barbitúricos.",
   "alerta": "A associação medicamentosa classicamente descrita com a distrofia simpático-reflexa é com BARBITÚRICOS, sobretudo o fenobarbital, na chamada síndrome ombro-mão, associação que consta dos textos de cirurgia da mão ao lado de infarto do miocárdio, doença cervical e lesões do sistema nervoso central. Não encontro base para atribuir maior incidência ao uso continuado de opioide, que é a resposta oficial. Se você marcou barbitúrico, o erro não foi seu.",
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0223": {
@@ -2096,102 +2096,102 @@
   "conferido": false
  },
  "conceitos-basicos-0224": {
-  "conceito": "### A regra\n- **Superfície articular:** ==redução anatômica e estabilidade absoluta==. Degrau na cartilagem não remodela e leva à artrose.\n- **Diáfise:** redução **funcional** (eixo, comprimento, rotação) e **estabilidade relativa**.\n- **Metáfise:** conforme o padrão.\n\n### Lendo o código AO/OTA\n- **1º número:** osso (3 = fêmur, 4 = tíbia).\n- **2º número:** segmento (1 proximal, 2 diáfise, 3 distal).\n- **Letra nos segmentos articulares:** A extra-articular, B articular parcial, C articular completa.\n- **Letra na diáfise:** A simples, B em cunha, C multifragmentar.\n\n### Aplicando\n- ==33-C1==: articular **completa** do fêmur distal (simples articular e metafisária). Estabilidade absoluta na articulação.\n- 31-A1 e A3: trocantéricas extra-articulares.\n- 32-B1: diafisária em **cunha**: estabilidade relativa (haste).\n\n> **Na prova:** estabilidade absoluta = ==fratura articular== (letra B/C em segmento articular).",
-  "correta": "**33 C1.**\n- Articular completa do fêmur distal.",
   "incorretas": {
-   "A": "**Extra-articular.**",
-   "B": "**Extra-articular.**",
-   "C": "**Diafisária em cunha.**\n- Na diáfise, B é cunha, não articular."
+   "A": "A 31 A1 é uma fratura trocantérica extra-articular do fêmur proximal.",
+   "B": "A 31 A3 também é trocantérica e extra-articular.",
+   "C": "A 32 B1 é uma fratura da diáfise do fêmur em cunha. Na diáfise, a letra B indica cunha, e não fratura articular."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A escolha entre **estabilidade absoluta** e **estabilidade relativa** depende de onde está a fratura.\n\nNas fraturas que entram na **superfície articular**, a regra é **redução anatômica** e **estabilidade absoluta**. A cartilagem não se remodela, e qualquer degrau deixado na superfície concentra carga e leva à artrose.\n\nNas fraturas da **diáfise**, basta uma redução **funcional** (restaurar comprimento, eixo e rotação), com **estabilidade relativa**, como a haste intramedular, que consolida com calo.\n\nPara resolver a questão, é preciso saber ler o **código AO/OTA** das fraturas:\n\nO **primeiro número** indica o osso: 3 é o fêmur, 4 é a tíbia.\n\nO **segundo número** indica o segmento: 1 é a parte de cima (proximal), 2 é a diáfise, 3 é a parte de baixo (distal).\n\nNos segmentos das pontas (proximal e distal), a **letra** indica se a fratura entra na articulação: **A** é extra-articular, **B** é articular parcial e **C** é articular completa.\n\nNa diáfise, as letras têm outro significado: A é simples, B é em cunha e C é multifragmentar.\n\nAplicando: **33-C1** é uma fratura **articular completa** do fêmur distal, que precisa de redução anatômica e estabilidade absoluta. As 31-A1 e 31-A3 são fraturas trocantéricas, fora da articulação. A 32-B1 é uma fratura da diáfise do fêmur em cunha, tratada com estabilidade relativa.",
+  "correta": "33 C1. É uma fratura articular completa do fêmur distal, que exige redução anatômica e estabilidade absoluta.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0225": {
-  "conceito": "### A via principal\n==Hematogênica arterial==, a partir de foco distante (urinário, cutâneo, endocardite, cateter).\n- As artérias segmentares terminam em arteríolas junto à **placa terminal**.\n- Rede terminal, fluxo lento: o germe se deposita ali.\n\n### A discite isolada no adulto\n- **Incomum**: o disco do adulto é avascular; a infecção hematogênica costuma começar na placa terminal e atingir o disco depois (espondilodiscite).\n- Parte importante dos casos de discite isolada é **iatrogênica** (discectomia, discografia, infiltração).\n\n### Na criança\nO disco ainda tem vasos: a **discite primária** é possível e típica da criança pequena.\n\n### Outras vias\n- **Plexo de Batson:** secundário.\n- **Linfática:** não reconhecida.\n- **Trauma penetrante:** raro.\n\n> **Na prova:** infecção vertebral/discal hematogênica = via ==arterial==.",
-  "correta": "**Hematogênica arterial.**",
   "incorretas": {
-   "A": "**Não reconhecida.**",
-   "C": "**Secundária.**",
-   "D": "**Rara.**"
+   "A": "A via linfática não é reconhecida como forma de infecção do disco.",
+   "C": "A via venosa, pelo plexo de Batson, é considerada secundária.",
+   "D": "A infecção por trauma penetrante é rara."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A infecção da coluna no adulto chega, na maioria das vezes, **pelo sangue arterial**, a partir de uma infecção em outro lugar do corpo, como uma infecção urinária, de pele, uma endocardite ou um cateter.\n\nAs artérias que irrigam as vértebras terminam em pequenas arteríolas perto da **placa terminal**, a superfície do osso que encosta no disco. Ali o fluxo é lento, e é onde a bactéria se instala.\n\nNo adulto, o disco **não tem vasos**. Por isso, a infecção que chega pelo sangue costuma começar no osso, perto da placa terminal, e só depois atingir o disco, formando uma **espondilodiscite** (infecção do disco e das vértebras vizinhas).\n\nA **discite isolada** (infecção só do disco, sem osteomielite) é incomum no adulto. Quando acontece, muitas vezes é causada por procedimentos na coluna, como cirurgias de hérnia de disco, discografias e infiltrações. Mas, quando é de origem hematogênica, a via continua sendo a **arterial**.\n\nNa criança é diferente: o disco ainda tem vasos, e a infecção pode começar diretamente nele.\n\nAs outras vias são menos importantes: a via venosa, pelo plexo de Batson (uma rede de veias ao redor da coluna), é considerada secundária; a via linfática não é reconhecida; e a infecção por trauma penetrante é rara.",
+  "correta": "Hematogênica arterial. A bactéria chega pelas artérias que terminam perto da placa terminal, onde o fluxo é lento.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0226": {
-  "conceito": "### Roberts (Gledhill modificada)\n- **I:** lítica metafisária (IB = abscesso de Brodie).\n- **II:** metafisária com erosão cortical.\n- ==III: cortical diafisária==, sem reação laminar. Imita **osteoma osteoide**.\n- **IV:** diafisária em casca de cebola. Imita **Ewing**.\n- **V:** epifisária. Imita **condroblastoma**.\n- **VI:** vertebral.\n\n> **Na prova:** Roberts III = ==diafisária cortical==.",
-  "correta": "**Diafisária.**",
   "incorretas": {
-   "B": "**Tipo V.**",
-   "C": "**Tipo VI.**",
-   "D": "**Tipos I e II.**"
+   "B": "A localização epifisária corresponde ao tipo V.",
+   "C": "A localização vertebral corresponde ao tipo VI.",
+   "D": "A localização metafisária corresponde aos tipos I e II."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A **osteomielite subaguda** é uma infecção do osso de evolução arrastada, com poucos sintomas gerais e exames de sangue pouco alterados. Por isso, ela imita tumores na radiografia. A classificação de **Gledhill**, modificada por **Roberts**, organiza essas lesões pelo local e pelo aspecto:\n\n**Tipo I**: lesão escura (lítica) na **metáfise**. Quando tem um halo de osso esclerótico ao redor, é o **abscesso de Brodie**.\n\n**Tipo II**: lesão na **metáfise** que corrói a cortical.\n\n**Tipo III**: lesão na **cortical da diáfise**, sem a reação em camadas do periósteo. Imita o **osteoma osteoide**, um tumor benigno pequeno da cortical.\n\n**Tipo IV**: lesão na **diáfise** com reação do periósteo em camadas, em \"casca de cebola\". Imita o **sarcoma de Ewing**.\n\n**Tipo V**: lesão na **epífise**. Imita o **condroblastoma**.\n\n**Tipo VI**: lesão na **vértebra**.\n\nUma regra prática decorre disso: como essas lesões se parecem com tumores, a biópsia deve sempre ser enviada para **patologia e cultura**, para não confundir uma coisa com a outra.",
+  "correta": "Diafisária. O tipo III de Roberts é a lesão da cortical da diáfise, que imita o osteoma osteoide.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0227": {
-  "conceito": "### Cierny-Mader diz onde operar\n- ==Tipo I, medular==: a infecção vive **dentro do canal**. Típico do fêmur infectado após **haste**, com biofilme revestindo o implante e a parede do canal.\n- Desbridamento: **retirar o implante** e ==fresar o canal== (raspar a superfície endosteal contaminada), com irrigação.\n- Opções: fresador-irrigador-aspirador (RIA), janela distal para drenagem, haste com cimento e antibiótico.\n\n### Os outros tipos\n- **II:** desbridamento da superfície e cobertura.\n- **III:** **sequestrectomia** cortical.\n- **IV:** **ressecção segmentar** e reconstrução.\n\n> **Na prova:** Cierny I = ==fresagem do canal==.",
-  "correta": "**Fresagem do canal medular.**",
   "incorretas": {
-   "A": "**Tipo III.**",
-   "C": "**Só a drenagem.**\n- Não alcança o foco no canal.",
-   "D": "**Tipo IV.**"
+   "A": "A sequestrectomia cortical é o tratamento do tipo III, localizado.",
+   "C": "Curetar o trajeto da fístula trata só a drenagem e não alcança o foco dentro do canal.",
+   "D": "A ressecção segmentar é o tratamento do tipo IV, difuso."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A classificação de **Cierny e Mader** não serve só para descrever a osteomielite: ela orienta **onde e como operar**.\n\nNo **tipo I, medular**, a infecção vive **dentro do canal** do osso. É o padrão típico do fêmur infectado depois de uma **haste intramedular**: as bactérias formam um biofilme sobre a haste e sobre a parede de dentro do canal.\n\nO tratamento é **retirar o implante** e **fresar o canal**, ou seja, passar brocas progressivas por dentro do osso para raspar a camada infectada da parede interna, junto com irrigação abundante. Existem recursos que ajudam, como um aparelho que fresa, irriga e aspira ao mesmo tempo (RIA), uma pequena janela no osso para drenar o canal e hastes revestidas de cimento com antibiótico, que ficam no canal liberando o remédio.\n\nOs outros tipos pedem tratamentos diferentes:\n\n**Tipo II**, superficial: limpeza da superfície de fora do osso e cobertura com partes moles.\n\n**Tipo III**, localizado: retirada do pedaço de osso morto (**sequestrectomia**).\n\n**Tipo IV**, difuso: **ressecção do segmento** de osso doente e reconstrução.\n\nApenas curetar a fístula, o trajeto que leva a secreção até a pele, não alcança o foco da infecção, que está dentro do canal.",
+  "correta": "Fresagem do canal medular. No tipo I, a infecção está dentro do canal, e a fresagem raspa a parede interna contaminada.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0228": {
-  "conceito": "### O tamanho da falha define a estratégia\n- **Falhas pequenas:** encurtamento agudo ou **enxerto esponjoso autólogo**.\n- ==Acima de cerca de 4 cm== (há quem use 4 a 6 cm): o centro do enxerto não é revascularizado.\n\n### Opções para falhas grandes\n- **Transporte ósseo** (Ilizarov): corticotomia e deslocamento gradual de um segmento vivo até fechar a falha; o regenerado se forma atrás.\n- **Encurtamento agudo e realongamento**.\n- **Enxerto vascularizado** de fíbula.\n- **Membrana induzida** (Masquelet).\n\n### Vantagens do transporte\n- Resolve **falha e infecção** ao mesmo tempo (ressecção radical permitida).\n- Osso vivo, que remodela.\n\n### Desvantagens\nLongo tempo de fixador, infecção de trajeto de pino, falha no ponto de encontro (docking) que pode precisar de enxerto.\n\n> **Na prova:** transporte ósseo na tíbia = falha ==acima de 4 cm==.",
-  "correta": "**Acima de 4,0 cm.**",
   "incorretas": {
-   "A": "**Falha pequena.**",
-   "B": "**Enxerto costuma bastar.**",
-   "C": "**Abaixo do limiar.**"
+   "A": "Uma falha de 1,5 cm é pequena e pode ser resolvida com encurtamento ou enxerto.",
+   "B": "Com 2,0 cm, o enxerto ósseo costuma bastar.",
+   "C": "3,0 cm ainda fica abaixo do limite em que o transporte ósseo é indicado."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Em fraturas graves da tíbia, principalmente as expostas com perda de osso ou depois da limpeza de uma infecção, pode sobrar uma **falha óssea**: um trecho em que o osso simplesmente não existe mais. O tamanho dessa falha define a estratégia.\n\n**Falhas pequenas** podem ser resolvidas aproximando as pontas (encurtamento agudo) ou preenchendo o espaço com **enxerto ósseo** esponjoso do próprio paciente.\n\n**Falhas grandes**, acima de cerca de **4 cm**, são um problema para o enxerto comum: o centro do enxerto fica longe demais dos vasos e não é revascularizado. Nesses casos, as opções são outras.\n\nO **transporte ósseo**, pelo método de Ilizarov, é uma delas. O cirurgião faz um corte (corticotomia) num trecho saudável da tíbia, longe da falha, e usa um fixador externo para deslocar esse segmento de osso vivo devagar, cerca de 1 mm por dia, em direção à falha. Atrás do segmento que se move, forma-se osso novo (regenerado). Quando o segmento chega à outra ponta, a falha está preenchida.\n\nVantagens: permite retirar todo o osso infectado sem medo do tamanho da falha, e o osso formado é vivo e se remodela. Desvantagens: muitos meses de fixador, infecção nos pinos e, às vezes, dificuldade de consolidação no ponto de encontro final, que pode precisar de enxerto.\n\nOutras opções para falhas grandes são o enxerto vascularizado de fíbula e a técnica da membrana induzida (Masquelet).",
+  "correta": "4,0 cm. Acima de cerca de 4 cm, o enxerto comum não se revasculariza bem, e o transporte ósseo passa a ser indicado.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0229": {
-  "conceito": "### Metáfises intracapsulares\nO pus rompe a cortical e cai na articulação. As quatro clássicas:\n- ==Fêmur proximal== (colo inteiro dentro da cápsula).\n- ==Úmero proximal==.\n- **Rádio proximal** (colo, no cotovelo).\n- ==Fíbula distal== (tornozelo).\n\n### As extracapsulares\nFêmur distal, tíbia proximal (joelho), rádio distal. Por isso o joelho é a articulação de menor risco.\n\n### A pegadinha\nO **úmero distal** não é a estrutura intracapsular clássica do cotovelo: é o colo do rádio.\n\n> **Na prova:** séptica secundária à osteomielite = ==fêmur proximal, úmero proximal, rádio proximal, fíbula distal==.",
-  "correta": "**Fêmur proximal, úmero proximal e fíbula distal.**",
   "incorretas": {
-   "A": "**Úmero distal não.**",
-   "B": "**Úmero distal não.**",
-   "D": "**Úmero distal e falta o fêmur.**"
+   "A": "O fêmur proximal e a fíbula distal estão certos, mas o úmero distal não é a metáfise intracapsular clássica do cotovelo.",
+   "B": "O fêmur e o úmero proximais estão certos, mas o úmero distal não é a metáfise intracapsular clássica.",
+   "D": "Inclui o úmero distal e deixa de fora o fêmur proximal, o exemplo mais importante."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Na criança, a **osteomielite hematogênica** (infecção do osso que chega pelo sangue) começa na **metáfise**, perto da placa de crescimento. Ela pode causar **artrite séptica** na articulação vizinha quando a metáfise fica **dentro da cápsula** articular: a infecção rompe a cortical e cai direto na articulação.\n\nAs quatro metáfises intracapsulares clássicas são:\n\nO **fêmur proximal**: todo o colo do fêmur fica dentro da cápsula do quadril.\n\nO **úmero proximal**, no ombro.\n\nO **rádio proximal** (o colo do rádio), no cotovelo.\n\nA **fíbula distal**, no tornozelo.\n\nAs metáfises do joelho (fêmur distal e tíbia proximal) e do rádio distal ficam **fora** da cápsula. Nelas, a infecção que rompe a cortical se espalha para as partes moles, e não para a articulação. Por isso, o joelho, apesar de ser a articulação mais frequentemente infectada, tem menor risco de artrite séptica secundária a osteomielite.\n\nA pegadinha da questão é o **úmero distal**: no cotovelo, a estrutura intracapsular clássica é o colo do **rádio**, e não o úmero distal.",
+  "correta": "Proximal do fêmur, proximal do úmero e distal da fíbula. As três metáfises ficam dentro da cápsula articular.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0230": {
-  "conceito": "### Ritmos diferentes\n- **PCR:** sobe em horas, pico em ~48 h, ==normaliza em ~1 semana== com tratamento eficaz. É o marcador para julgar se o antibiótico e o desbridamento funcionam.\n- **VHS:** sobe devagar, pico em 3 a 5 dias, ==normaliza em ~3 semanas== mesmo com boa resposta.\n\n### A consequência\n- VHS ainda alto na segunda semana **não é falha** de tratamento.\n- PCR que **não cai** em 48 a 72 h, ou volta a subir: pensar em abscesso não drenado, germe resistente, foco adicional.\n- A PCR guia a **troca para via oral** e a duração do antibiótico em protocolos pediátricos.\n\n> **Na prova:** normalização = ==VHS ~3 semanas, PCR ~1 semana==.",
-  "correta": "**3 semanas e 1 semana.**",
   "incorretas": {
-   "A": "**VHS é lento.**",
-   "B": "**Invertido.**",
-   "D": "**PCR é rápida.**"
+   "A": "O VHS é lento e não normaliza em uma semana.",
+   "B": "Inverte os exames: a PCR é a rápida, e o VHS, o lento.",
+   "D": "A PCR é rápida e normaliza em cerca de uma semana, e não em três."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A **PCR** (proteína C reativa) e o **VHS** (velocidade de hemossedimentação) são exames de sangue que medem inflamação. Na osteomielite, os dois sobem, mas têm ritmos muito diferentes.\n\nA **PCR** é rápida. Sobe em poucas horas, atinge o pico em cerca de dois dias e, quando o tratamento funciona, **normaliza em cerca de 1 semana**. Por isso, é o exame usado para acompanhar a resposta ao tratamento.\n\nO **VHS** é lento. Sobe devagar, atinge o pico em três a cinco dias e **normaliza em cerca de 3 semanas**, mesmo quando o tratamento está dando certo.\n\nIsso tem consequências práticas:\n\nUm VHS ainda alto na segunda semana **não significa** que o tratamento falhou.\n\nUma PCR que **não cai** em dois ou três dias, ou que volta a subir, é sinal de alerta: pode haver um abscesso que não foi drenado, um germe resistente ao antibiótico ou outro foco de infecção.\n\nNos protocolos para crianças, a queda da PCR ajuda a decidir quando trocar o antibiótico da veia para a boca e por quanto tempo mantê-lo.",
+  "correta": "3 semanas e 1 semana. O VHS normaliza devagar, em cerca de 3 semanas, e a PCR, rápido, em cerca de 1 semana.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0231": {
-  "conceito": "### O que a BMP faz\nAs proteínas morfogenéticas ósseas (superfamília **TGF-beta**) sinalizam às células mesenquimais do hospedeiro, **recrutando e diferenciando** em condroblastos e osteoblastos.\n\nIsso é ==osteoindução==: a BMP não traz célula (osteogênese) nem serve de arcabouço (osteocondução); traz o **sinal**.\n\n### Na pseudartrose congênita da tíbia\n- Doença de biologia péssima, muitas vezes associada à **neurofibromatose tipo 1**.\n- Alta taxa de falha e de refratura.\n- Tratamento: ressecção do hamartoma fibroso, **haste intramedular**, **enxerto** (autólogo, às vezes com periósteo), Ilizarov, ou técnica de **união cruzada** (tíbia-fíbula).\n- A **BMP-2** entra como **adjuvante**, não como substituta.\n\n### Os outros termos\n- **Osteointegração:** ligação direta osso-implante (artroplastia, implante dentário).\n\n> **Na prova:** BMP = ==osteoindução==.",
-  "correta": "**Osteoindução.**",
   "incorretas": {
-   "B": "**Exige células.**",
-   "C": "**Osso-implante.**",
-   "D": "**Arcabouço.**"
+   "B": "A osteogênese exige trazer células vivas, e a BMP é uma proteína, sem células.",
+   "C": "A osteointegração é a ligação direta entre osso e implante, e não o efeito da BMP.",
+   "D": "A osteocondução é servir de andaime, o que não é a função da BMP."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "As **BMPs** (proteínas morfogenéticas ósseas) são substâncias que funcionam como **sinais**. Elas fazem parte de uma grande família de fatores de crescimento (a família TGF-beta) e agem sobre as células imaturas do próprio paciente (células mesenquimais), **recrutando-as** para o local e fazendo com que **se transformem** em células de cartilagem e de osso.\n\nEssa propriedade se chama **osteoindução**. Para comparar:\n\nA **osteogênese** exige trazer células vivas que formam osso, o que a BMP não faz.\n\nA **osteocondução** é servir de andaime para o osso crescer, o que também não é o papel da BMP.\n\nA **osteointegração** é a ligação direta entre o osso e a superfície de um implante, como numa prótese.\n\nA **pseudartrose congênita da tíbia** é uma doença rara em que a tíbia da criança se curva e se quebra, e a fratura não consolida. Muitas vezes está associada à **neurofibromatose tipo 1**. É uma das condições mais difíceis da ortopedia infantil, com muita falha de tratamento e novas fraturas. O tratamento inclui retirar o tecido doente, estabilizar com haste intramedular, colocar enxerto ósseo e, em algumas técnicas, unir a tíbia à fíbula. A BMP-2 entra como um **complemento** para estimular a consolidação, e não como tratamento isolado.",
+  "correta": "Osteoindução. A BMP é um sinal que recruta células do paciente e as transforma em células formadoras de osso.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0232": {
-  "conceito": "### A armadilha: \"primário\"\n- **Estudos primários** geram dados novos: ensaio randomizado, coorte, caso-controle, série de casos.\n- **Estudos secundários** sintetizam: revisão sistemática e metanálise. Ficam no topo da pirâmide geral, mas **não competem** nesta pergunta.\n\n### Entre os primários\nO ==ensaio clínico randomizado== é o topo:\n- A **randomização** distribui igualmente os confundidores **conhecidos e desconhecidos**.\n- Com **ocultação da alocação** e **cegamento**, reduz viés de seleção e de aferição.\n\n### Depois\nCoorte (prospectiva > retrospectiva) > caso-controle > série de casos > opinião de especialista.\n\n### Limites do ensaio em cirurgia\nCegamento difícil, curva de aprendizado, cruzamento de braços, validade externa.\n\n> **Na prova:** topo entre os primários = ==ensaio clínico randomizado==.",
-  "correta": "**O ensaio clínico randomizado.**",
   "incorretas": {
-   "A": "**Mais sujeito a viés.**",
-   "B": "**Secundário.**",
-   "C": "**Observacional.**\n- Forte, mas abaixo do ensaio."
+   "A": "O estudo de caso-controle está mais abaixo na pirâmide e é mais sujeito a distorções.",
+   "B": "A revisão sistemática fica no topo da pirâmide geral, mas é um estudo secundário, e não primário.",
+   "C": "A coorte de incepção é um estudo observacional forte, mas fica abaixo do ensaio randomizado."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Os estudos clínicos são organizados numa **pirâmide de evidência**, do mais confiável ao menos confiável. Mas esta questão tem uma armadilha na palavra **\"primário\"**.\n\n**Estudos primários** são os que coletam dados novos diretamente dos pacientes: ensaio clínico randomizado, estudo de coorte, estudo de caso-controle e série de casos.\n\n**Estudos secundários** reúnem e analisam estudos que já existem: a **revisão sistemática** e a **metanálise**. Eles ficam no topo da pirâmide geral, mas não são estudos primários.\n\nEntre os primários, o topo é o **ensaio clínico randomizado**. Nele, os pacientes são **sorteados** para receber um tratamento ou outro. O sorteio distribui por igual entre os grupos as características que poderiam influenciar o resultado, inclusive as que nem conhecemos. Quando, além disso, nem o paciente nem o avaliador sabem qual tratamento foi dado (cegamento), o risco de distorção diminui ainda mais.\n\nAbaixo dele vêm, em ordem: os estudos de **coorte** (que acompanham grupos ao longo do tempo, sendo os prospectivos mais confiáveis que os retrospectivos), os de **caso-controle**, as séries de casos e a opinião de especialistas.\n\nEm cirurgia, os ensaios randomizados têm limitações próprias: é difícil cegar o paciente e o cirurgião, e a experiência do cirurgião com cada técnica pesa no resultado.",
+  "correta": "O ensaio clínico randomizado. É o estudo primário mais confiável, porque o sorteio equilibra os grupos.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0233": {
@@ -2206,36 +2206,36 @@
   "conferido": false
  },
  "conceitos-basicos-0234": {
-  "conceito": "### T1 se lê pela gordura e pela água livre\n- **Gordura, medula amarela:** hipersinal (brilhante).\n- ==Músculo==: **intermediário** (cinza).\n- ==Cartilagem hialina==: **intermediária**.\n- ==Tendão==, ligamento, menisco, cortical, ar, fibrose: **hipossinal** (preto). Colágeno organizado, pouquíssima água móvel.\n- **Líquido:** hipo em T1, hiper em T2.\n\n### A regra prática\nTendão é **preto nas duas ponderações**. Lesão tendínea aparece como **sinal alto** dentro de uma estrutura que deveria ser escura.\n\n### Armadilha: ângulo mágico\nTendões a ~55° do campo magnético podem parecer ter sinal intermediário em sequências de TE curto (T1, DP), simulando tendinopatia.\n\n> **Na prova:** T1 = músculo ==intermediário==, cartilagem ==intermediária==, tendão ==hipo==.",
-  "correta": "**Intermediário, intermediário e hipossinal.**",
   "incorretas": {
-   "A": "**Músculo não é hipo.**",
-   "B": "**Cartilagem não é hiper.**\n- Hiper em T1 é gordura.",
-   "C": "**Músculo intermediário, tendão hipo.**"
+   "A": "O músculo não é escuro em T1, e o tendão normal não tem sinal intermediário.",
+   "B": "A cartilagem não é brilhante em T1; quem brilha em T1 é a gordura.",
+   "C": "O músculo de fato é intermediário, mas o tendão normal é preto (hipossinal), e não intermediário."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Na ressonância magnética, cada tecido aparece com um tom diferente. Na ponderação **T1**, o que mais brilha é a gordura. Uma forma de pensar é numa escala de cinzas:\n\n**Gordura** e medula óssea amarela: **hipersinal**, brancas e brilhantes.\n\n**Músculo**: sinal **intermediário**, cinza.\n\n**Cartilagem hialina** (a que reveste as articulações): também **intermediária**.\n\n**Tendões**, ligamentos, meniscos, osso cortical, ar e fibrose: **hipossinal**, pretos. Eles são feitos de colágeno muito organizado e quase não têm água livre, por isso não emitem sinal.\n\n**Líquido**: escuro em T1 e claro em T2.\n\nUma regra prática: o **tendão normal é preto** em quase todas as sequências. Quando ele aparece com sinal claro por dentro, é sinal de lesão ou degeneração.\n\nExiste uma armadilha técnica chamada **ângulo mágico**: quando o tendão fica inclinado em cerca de 55 graus em relação ao campo magnético do aparelho, ele pode aparecer mais claro em algumas sequências (como o T1), simulando uma lesão que não existe. Isso acontece, por exemplo, em tendões que fazem curva, como os do tornozelo e do ombro.",
+  "correta": "Intermediário, intermediário e hipossinal. Em T1, músculo e cartilagem aparecem cinza, e o tendão, preto.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0235": {
-  "conceito": "### O princípio da AO\nAntes de escolher implante, via de acesso ou técnica de redução, responder: ==que consolidação eu quero?==\n\n### Consolidação direta (primária)\n- **Redução anatômica** + compressão + **estabilidade absoluta**.\n- Obrigatória nas fraturas **articulares** e útil em fraturas simples diafisárias do antebraço.\n\n### Consolidação secundária (com calo)\n- **Redução funcional** (eixo, comprimento, rotação) + **estabilidade relativa**.\n- Preservando partes moles.\n- Padrão nas diafisárias **multifragmentares** (haste, placa em ponte).\n\n### Daí decorre\nO método de redução, a via, o implante e a técnica de aplicação.\n\n> **Na prova:** primeira decisão no planejamento = ==modo de consolidação desejado==.",
-  "correta": "**O modo de consolidação desejado.**",
   "incorretas": {
-   "A": "**Consequência.**",
-   "B": "**A última peça.**",
-   "C": "**Descreve, não define a estratégia.**"
+   "A": "O método de redução é uma consequência do tipo de consolidação escolhido.",
+   "B": "A escolha do implante é a última peça do planejamento, e não a primeira.",
+   "C": "A classificação descreve a fratura e ajuda no raciocínio, mas não define sozinha a estratégia."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "No planejamento de uma cirurgia de fratura, a primeira e mais importante decisão, segundo os princípios da AO, é: **que tipo de consolidação eu quero?** Tudo o resto decorre disso.\n\nExistem dois caminhos:\n\n**Consolidação direta (primária)**, sem calo. Exige **redução anatômica**, **compressão** entre os fragmentos e **estabilidade absoluta**, ou seja, nenhum movimento no foco. É obrigatória nas fraturas que atingem a **superfície articular**, porque a cartilagem não tolera degraus. Também é usada em fraturas simples da diáfise do antebraço.\n\n**Consolidação secundária**, com calo. Exige apenas uma **redução funcional** (restaurar comprimento, eixo e rotação), **estabilidade relativa** (que permite um pequeno movimento) e preservação das partes moles. É o padrão nas fraturas da diáfise com vários fragmentos, tratadas com haste intramedular ou placa em ponte.\n\nDefinido o tipo de consolidação desejado, o cirurgião escolhe o método de redução, a via de acesso, o implante e a técnica de aplicação.\n\nA classificação da fratura é importante para descrevê-la e orientar o raciocínio, mas não define, sozinha, a estratégia. E o implante é a última peça da escolha, e não a primeira.",
+  "correta": "O modo de consolidação desejado. A decisão entre consolidação direta e com calo define todo o resto do planejamento.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0236": {
-  "conceito": "### Por que o retalho deltoide importa\nSem ele, a glenoide fica **subcutânea**, dolorosa e impossível de encaixar numa prótese.\n\n### A técnica\n- O retalho deltoide é rebatido de lateral para medial.\n- Suturado ==abaixo da cavidade glenoide== (e à musculatura remanescente), preenchendo o vazio deixado pelo úmero.\n- Preservar **escápula e clavícula** sempre que possível: mantêm o contorno do ombro e o apoio da prótese.\n- Músculos seccionados são suturados à glenoide para acolchoar.\n\n### Alternativa\nQuando possível, preservar a **cabeça do úmero** (amputação no colo cirúrgico) dá contorno melhor que a desarticulação.\n\n> **Na prova:** retalho deltoide na desarticulação do ombro = sutura ==inferior à glenoide==.",
-  "correta": "**Inferior à cavidade glenoide.**",
   "incorretas": {
-   "A": "**Seccionado.**\n- Não é ancoragem.",
-   "B": "**Referência anterossuperior.**",
-   "C": "**Acima da glenoide.**\n- Origem da cabeça longa do bíceps."
+   "A": "O tendão conjunto é seccionado na cirurgia e não serve de ancoragem para o retalho.",
+   "B": "O processo coracoide fica na frente e em cima, e não é o ponto de sutura do retalho.",
+   "C": "O tubérculo supraglenoidal fica acima da glenoide, e o retalho precisa cobrir a região de baixo."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Na **desarticulação do ombro**, o braço é retirado na articulação, separando a cabeça do úmero da glenoide (a cavidade da escápula onde ela se encaixava). Sem o úmero, sobra um vazio no lugar do ombro, e a glenoide fica logo abaixo da pele.\n\nUma glenoide sem cobertura é dolorosa, machuca com facilidade e torna muito difícil encaixar uma prótese. Por isso, o **retalho do deltoide** é tão importante. O cirurgião preserva o músculo deltoide, rebate-o de fora para dentro sobre a glenoide e o sutura **abaixo da cavidade glenoide**, preenchendo o espaço deixado pelo úmero e acolchoando a região. Os outros músculos cortados também são suturados ao redor da glenoide.\n\nOutros cuidados ajudam a preservar o contorno do ombro e o apoio da prótese:\n\nManter a **escápula** e a **clavícula** sempre que possível.\n\nQuando dá, preservar a **cabeça do úmero**, fazendo a amputação no colo do úmero em vez de desarticular. Isso dá um contorno de ombro muito melhor.\n\nAs outras estruturas citadas não servem de ancoragem para o retalho: o tendão conjunto é cortado na cirurgia, o processo coracoide fica na frente e em cima, e o tubérculo supraglenoidal fica acima da glenoide, onde nasce a cabeça longa do bíceps.",
+  "correta": "Inferior à cavidade glenoide. O deltoide é rebatido e suturado abaixo da glenoide, preenchendo o vazio do úmero e acolchoando o coto.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0237": {
