@@ -3,6 +3,7 @@ import { supabase } from '../conta/supabase'
 import { textoErro } from '../conta/erros'
 import { href, navegar } from '../util/rotas'
 import { Icone } from './Icone'
+import { BotaoGoogle } from './BotaoGoogle'
 
 /**
  * Entrar sem sair da página inicial: um pop-up pequeno e centralizado, não um
@@ -72,6 +73,7 @@ export function ModalEntrar({ aberto, aoFechar }: { aberto: boolean; aoFechar: (
             <Icone nome="fechar" />
           </button>
         </div>
+        <BotaoGoogle />
         <form className="empilha" onSubmit={enviar}>
           {erro && <p className="aviso-formulario aviso-formulario--erro" role="alert">{erro}</p>}
           <label className="campo">

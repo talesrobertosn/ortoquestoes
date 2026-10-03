@@ -7,6 +7,7 @@ import { estadoVazio, type Documento } from './modeloSync'
 import { navegar } from '../util/rotas'
 import { gerarId } from '../util/id'
 import { retornoAuth, definirAvisoConta, textoErroLink, validarRetornoUmaVez } from './retornoAuth'
+import { concluirGoogle, textoErroGoogle } from './google'
 import { esquecerRegistroAparelho, vigiarAparelho } from './aparelho'
 import { verificarMarcoEmail } from './emailsMarco'
 import { ler } from '../estado/armazenamento'
@@ -44,7 +45,7 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
       window.dispatchEvent(new HashChangeEvent('hashchange'))
     }
     if (retorno?.erro) {
-      definirAvisoConta(textoErroLink(retorno.erro, retorno.recuperacao))
+      definirAvisoConta(retorno.google ? textoErroGoogle(retorno.erro) : textoErroLink(retorno.erro, retorno.recuperacao))
       irPara(retorno.recuperacao ? '/conta?modo=recuperar' : '/conta')
     }
     // Link com sessão no hash ou com token_hash: a conta só termina de
@@ -84,13 +85,17 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
       // e o retorno de link por e-mail é tratado acima por concluir().
       if (url.searchParams.has('conta') && (evento === 'INITIAL_SESSION' || evento === 'PASSWORD_RECOVERY')) {
         const deRecuperacao = url.searchParams.get('conta') === 'recuperar'
+        const doGoogle = url.searchParams.get('conta') === 'google'
         if (proxima && deRecuperacao) definirRecuperacao(true)
         // ?code= sem sessão: o link PKCE foi aberto em outro navegador (ou
         // expirou). Sem este aviso a pessoa caía na tela de entrar sem saber
         // por quê.
         const falhou = !proxima && url.searchParams.has('code') && !aguardandoRetorno
-        if (falhou) definirAvisoConta(textoErroLink('navegador', deRecuperacao))
-        url.searchParams.delete('conta'); url.searchParams.delete('code'); url.hash = falhou && deRecuperacao ? '/conta?modo=recuperar' : '/conta'
+        if (falhou) definirAvisoConta(doGoogle ? textoErroGoogle('navegador') : textoErroLink('navegador', deRecuperacao))
+        // Volta do Google: aceite dos Termos e nome no perfil, e a pessoa volta
+        // para onde estava. Fora do callback, que não pode aguardar o Auth.
+        const destinoGoogle = doGoogle && proxima ? concluirGoogle(cliente, proxima.user) : null
+        url.searchParams.delete('conta'); url.searchParams.delete('code'); url.hash = destinoGoogle ?? (falhou && deRecuperacao ? '/conta?modo=recuperar' : '/conta')
         window.history.replaceState(null, '', url.href)
         window.dispatchEvent(new HashChangeEvent('hashchange'))
       }

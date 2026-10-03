@@ -18,6 +18,7 @@ import { usarTema } from '../estado/tema'
 import { dadosAceiteTermos, VERSAO_TERMOS } from '../conta/termos'
 import { textoErro } from '../conta/erros'
 import { Icone } from '../componentes/Icone'
+import { BotaoGoogle } from '../componentes/BotaoGoogle'
 import { Medalha } from '../componentes/Medalha'
 import { conquistaAtual, emblemaPorId } from '../estado/conquistas'
 import { ResumoAssinatura } from '../componentes/ResumoAssinatura'
@@ -260,6 +261,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
           <p>{subtitulo}</p>
         </header>
         {mensagem && <p className="aviso-formulario" role="status">{mensagem}</p>}
+        {!recuperacao && modo !== 'recuperar' && <BotaoGoogle />}
         <form className="empilha acesso__form" onSubmit={enviar}>
           {!recuperacao && <label className="campo">E-mail<input className="entrada" type="email" autoComplete="email" required value={email} onChange={e => definirEmail(e.target.value)} placeholder="voce@email.com" /></label>}
           {!recuperacao && modo === 'criar' && <>
