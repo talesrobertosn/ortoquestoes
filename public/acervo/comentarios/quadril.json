@@ -1667,48 +1667,48 @@
   "conferido": false
  },
  "quadril-0171": {
-  "conceito": "### Mecanismos da osteonecrose da cabeça femoral\n| Mecanismo | Exemplos |\n|---|---|\n| interrupção mecânica | fratura do colo, luxação, epifisiólise instável |\n| oclusão intravascular | anemia falciforme, trombofilias, **hiper-homocisteinemia**, **doença de caisson** (bolhas de nitrogênio), embolia gordurosa |\n| compressão extravascular | **doença de Gaucher** (células de Gaucher na medula), hipertrofia de adipócitos por corticoide |\n| ==toxicidade celular direta== | ==irradiação==, quimioterapia, álcool (em parte) |\n\n### Irradiação\n- Lesa diretamente **osteócitos** e **endotélio**.\n- Efeito dose-dependente; pode aparecer anos depois da radioterapia pélvica.\n- Também causa fraturas por insuficiência.\n\n### Fatores de risco mais comuns na prática\n- **Corticoide** e **álcool** respondem pela maioria dos casos não traumáticos.\n\n> **Na prova:** toxicidade celular direta = ==irradiação==.",
-  "correta": "**Agressão direta à célula.**\n- A radiação mata osteócitos e células endoteliais sem depender de obstrução vascular.",
   "incorretas": {
-   "A": "**Trombose.**\n- A hiper-homocisteinemia causa oclusão intravascular.",
-   "B": "**Embolia gasosa.**\n- Na doença de caisson, bolhas de nitrogênio obstruem os vasos.",
-   "C": "**Compressão extravascular.**\n- As células de Gaucher ocupam a medula e comprimem a microcirculação."
+   "A": "A hiper-homocisteinemia aumenta a coagulação e causa osteonecrose por obstrução dentro dos vasos.",
+   "B": "Na doença de caisson, bolhas de nitrogênio entopem os vasos, um mecanismo de obstrução intravascular.",
+   "C": "Na doença de Gaucher, as células acumuladas na medula comprimem os vasos por fora."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **osteonecrose** da cabeça do fêmur é a morte de uma parte do osso por falta de sangue. Ela pode surgir por **quatro mecanismos** diferentes, e a questão pede o de **toxicidade celular direta**:\n\n**Interrupção mecânica dos vasos**: um trauma rompe as artérias. Exemplos: fratura do colo do fêmur, luxação do quadril e escorregamento da cabeça na criança (epifisiólise).\n\n**Obstrução por dentro dos vasos** (oclusão intravascular): algo entope os vasos pequenos. Exemplos: a anemia falciforme (glóbulos vermelhos deformados), as doenças que aumentam a coagulação, como a **hiper-homocisteinemia**, a **doença de caisson** dos mergulhadores (bolhas de nitrogênio no sangue) e a embolia de gordura.\n\n**Compressão por fora dos vasos** (extravascular): algo dentro da medula aumenta de volume e aperta os vasos. Exemplos: a **doença de Gaucher** (células cheias de gordura que ocupam a medula) e o aumento das células de gordura causado pelo corticoide.\n\n**Toxicidade celular direta**: o agente **mata as células** diretamente, sem precisar entupir ou comprimir os vasos. O exemplo clássico é a **irradiação**. A radioterapia na bacia lesa diretamente os **osteócitos** (as células do osso) e as células que revestem os vasos. O efeito depende da dose e pode aparecer anos depois. A quimioterapia e, em parte, o álcool também agem assim. A radiação ainda enfraquece o osso e pode causar fraturas por insuficiência.\n\nNa prática, as causas mais comuns de osteonecrose sem trauma são o **corticoide** e o **álcool**.\n\n**Na prova**: a osteonecrose por toxicidade celular direta é a causada pela irradiação pélvica.",
+  "correta": "Irradiação pélvica. A radiação mata diretamente os osteócitos e as células dos vasos, sem depender de obstrução ou compressão vascular.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0172": {
-  "conceito": "### Osteoporose transitória do quadril\n- **Edema de medula óssea** autolimitado da cabeça e do colo.\n- Grupos clássicos: ==gestantes no terceiro trimestre== e **homens de meia-idade** (em número absoluto, muitas séries trazem mais homens).\n\n### Quadro\n- Dor de instalação relativamente rápida, sem trauma, claudicação, limitação de rotação.\n- Radiografia: normal no início; osteopenia após semanas.\n- RM: edema difuso e homogêneo, sem linha de demarcação nem lesão subcondral focal.\n\n### Diferencial com osteonecrose\n| Achado | Osteoporose transitória | Osteonecrose |\n|---|---|---|\n| edema | difuso, até o colo | focal, com linha serpiginosa |\n| evolução | resolução em 6 a 12 meses | tende a progredir |\n| lesão subcondral | ausente | presente nas fases avançadas |\n\n### Conduta\n- Proteção de carga e analgesia; evitar **fratura do colo**.\n- Pode recorrer em outra articulação: **osteoporose regional migratória**.\n\n> **Na prova:** o gabarito aponta ==gestantes no terceiro trimestre== (veja o alerta sobre os homens de meia-idade).",
-  "correta": "**Resposta oficial.**\n- A associação com o terceiro trimestre da gestação é a mais cobrada.\n- Os homens de meia-idade formam o outro grupo clássico (veja o alerta).",
   "incorretas": {
-   "B": "**Não é o grupo descrito.**\n- Mulheres acima de 45 anos fora da gestação não constituem o perfil típico.",
-   "C": "**Outro grupo clássico.**\n- Homens de meia-idade também são típicos e, em muitas séries, mais numerosos (veja o alerta).",
-   "D": "**Faixa etária errada.**\n- O perfil masculino é de meia-idade, não jovem."
+   "B": "Mulheres acima de 45 anos fora da gravidez não são o perfil típico da osteoporose transitória.",
+   "C": "Os homens de meia-idade são o outro grupo clássico e, em muitas séries, até mais numerosos (veja o alerta).",
+   "D": "O perfil masculino típico é de meia-idade, e não de homens jovens."
   },
+  "conceito": "A **osteoporose transitória do quadril** é uma condição em que a cabeça e o colo do fêmur desenvolvem um **edema da medula óssea** que **melhora sozinho** em alguns meses. Apesar do nome, não é a osteoporose comum da idade.\n\n**Quem tem**: dois grupos clássicos:\n\n**gestantes no último trimestre** da gravidez;\n\n**homens de meia-idade**.\n\nEm número absoluto, muitas séries mostram mais homens do que gestantes (veja o alerta), mas a associação com a gravidez é a mais cobrada em prova.\n\n**Como se manifesta**: dor no quadril que aparece em pouco tempo, sem trauma, fazendo o paciente mancar e limitando o movimento. A radiografia é normal no início e só mostra perda de densidade do osso semanas depois. A **ressonância** mostra um edema **difuso e uniforme**, que vai da cabeça até o colo, sem a linha de demarcação típica da osteonecrose.\n\n**A diferença com a osteonecrose é importante**: na osteonecrose, a lesão é localizada, com uma linha que separa o osso morto, e a doença tende a piorar até a cabeça afundar. Na osteoporose transitória, o edema é difuso e tudo se resolve em 6 a 12 meses.\n\n**Tratamento**: tirar carga do quadril (muletas) e analgesia. O cuidado principal é evitar uma **fratura do colo** no osso temporariamente enfraquecido. O quadro pode voltar em outra articulação, o que se chama osteoporose regional migratória.\n\n**Na prova**: o gabarito aponta as gestantes no terceiro trimestre como o grupo mais comum.",
+  "correta": "Gestantes no terceiro trimestre, segundo o gabarito. É a associação mais cobrada, embora os homens de meia-idade formem o outro grupo clássico.",
   "alerta": "A osteoporose transitória do quadril acomete dois grupos: gestantes no terceiro trimestre e homens de meia-idade. Em número absoluto, a maioria das séries traz mais homens do que gestantes, em proporção próxima de três para um. Se o critério for frequência, a alternativa C tem tanto respaldo quanto a A; o seguro é que esses dois são os grupos afetados.",
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0173": {
-  "conceito": "### Teste de Ober\n- **Decúbito lateral**, lado testado para cima; o quadril de baixo e o joelho fletidos estabilizam a pelve.\n- O examinador **abduz e estende** o quadril (joelho fletido na versão clássica) e solta.\n- Normal: a coxa cai em adução.\n- ==Positivo: permanece abduzida== = retração da ==banda iliotibial== e do tensor da fáscia lata.\n\n### Variações\n- **Ober modificado:** joelho em extensão, reduz a interferência do quadríceps.\n- Posição neutra do quadril (sem flexão) garante que a banda fique posterior ao eixo e tensa.\n\n### Onde aparece\n- Síndrome do atrito da banda iliotibial (joelho lateral dos corredores).\n- Ressalto externo do quadril, síndrome dolorosa do grande trocânter.\n- Contratura em abdução (poliomielite, sequelas).\n\n### Outros testes de retração\n| Teste | Estrutura |\n|---|---|\n| Thomas | iliopsoas |\n| Ely | reto femoral |\n| Phelps | grácil |\n| ângulo poplíteo | isquiotibiais |\n\n> **Na prova:** Ober positivo = ==banda iliotibial==.",
-  "correta": "**Banda iliotibial.**\n- Se a coxa não cai em adução com o quadril em extensão ou neutro, a banda iliotibial e o tensor estão retraídos.",
   "incorretas": {
-   "A": "**Não avaliado pelo Ober.**\n- A retração do glúteo máximo não é testada por essa manobra.",
-   "C": "**Avaliado por força.**\n- O glúteo médio se avalia por abdução resistida e Trendelenburg.",
-   "D": "**Teste de Ely.**\n- O reto femoral é avaliado em decúbito ventral, fletindo o joelho."
+   "A": "O encurtamento do glúteo máximo não é avaliado pela manobra de Ober.",
+   "C": "O glúteo médio é avaliado pela força de abdução contra resistência e pelo sinal de Trendelenburg.",
+   "D": "O reto femoral é avaliado pelo teste de Ely, com o paciente de barriga para baixo e o joelho dobrado."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **teste de Ober** avalia se a **banda iliotibial** está encurtada. A banda iliotibial é uma faixa fibrosa grossa que desce pelo lado de fora da coxa, do quadril até o joelho, e recebe o músculo **tensor da fáscia lata**.\n\n**Como se faz**:\n\no paciente deita de **lado**, com o lado a ser testado para cima;\n\na perna de baixo fica dobrada para estabilizar a bacia;\n\no examinador leva a perna de cima **para fora e para trás** (abdução e extensão), com o quadril em posição neutra, e então **solta**.\n\n**Interpretação**:\n\nnormal: a perna **cai** em direção à mesa (adução);\n\n**positivo**: a perna **fica no ar**, sem descer. Isso indica que a banda iliotibial e o tensor da fáscia lata estão **encurtados** e seguram a coxa afastada.\n\nManter o quadril em extensão ou neutro é importante, porque nessa posição a banda fica atrás do eixo do quadril e esticada, o que torna o teste confiável. Existe uma versão modificada com o joelho esticado.\n\n**Onde o teste ajuda**: na dor do lado de fora do joelho de corredores (síndrome do atrito da banda iliotibial), no ressalto externo do quadril, na dor do trocânter e nas contraturas em abdução (como na poliomielite).\n\n**Outros testes de encurtamento**: Thomas (iliopsoas), Ely (reto femoral), Phelps (grácil) e ângulo poplíteo (músculos de trás da coxa).\n\n**Na prova**: o teste de Ober positivo indica contratura da banda iliotibial.",
+  "correta": "Da banda iliotibial. Se a coxa não cai quando solta com o quadril em neutro, a banda iliotibial e o tensor da fáscia lata estão encurtados.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0174": {
-  "conceito": "### Onde a haste transfere a carga\n| Haste | Transferência | Stress shielding proximal |\n|---|---|---|\n| cimentada | ao longo de todo o manto | menor |\n| não cimentada, fixação proximal (metafisária) | metáfise | menor |\n| ==não cimentada, fixação distal (diafisária)== | ==diáfise== | ==maior== |\n| resurfacing | preserva o colo, carga no fêmur proximal | mínimo |\n\n### Por que a fixação distal descarrega o proximal\n- A haste **cilíndrica, com revestimento extenso**, trava na diáfise.\n- A carga desce pela haste e \"pula\" o fêmur proximal.\n- Reabsorção sobretudo no **calcar (zona 7 de Gruen)** e trocânter (zona 1).\n\n### Fatores que aumentam o desvio de carga\n- Haste de maior diâmetro, material mais rígido (cromo-cobalto), osso de baixa densidade pré-operatória.\n\n### Titânio\n- Módulo menor que o do cromo-cobalto: **menos** stress shielding.\n\n> **Na prova:** mais stress shielding = ==não cimentada de fixação distal==.",
-  "correta": "**Carga desviada para a diáfise.**\n- A haste que trava distalmente leva a força direto para baixo.\n- O fêmur proximal fica descarregado e reabsorve, sobretudo no calcar.",
   "incorretas": {
-   "A": "**Distribui a carga.**\n- O manto de cimento reparte a solicitação e gera menos desvio.",
-   "C": "**Reduz o desvio.**\n- O titânio é menos rígido que o cromo-cobalto.",
-   "D": "**Preserva a carga proximal.**\n- O resurfacing mantém o colo carregado; é seu argumento biomecânico."
+   "A": "A haste cimentada reparte a carga ao longo do manto de cimento e gera menos desvio.",
+   "C": "O titânio é menos rígido que o cromo-cobalto e, por isso, reduz o desvio de carga, em vez de aumentá-lo.",
+   "D": "O resurfacing preserva o colo e mantém a carga na parte de cima do fêmur; esse é justamente o seu argumento biomecânico."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **stress shielding** (desvio de carga) é a perda de osso que acontece quando a **haste** da prótese passa a carregar a força que antes passava pelo próprio fêmur. O osso que deixa de ser solicitado **perde densidade**, principalmente na parte de cima e de dentro do fêmur (o calcar).\n\nO quanto isso acontece depende de **onde a haste transfere a carga** para o osso:\n\n**haste cimentada**: o cimento reparte a carga ao longo de toda a haste, e o desvio é **menor**;\n\n**haste sem cimento com fixação proximal** (presa na parte de cima, na metáfise): a carga continua entrando no osso na parte de cima, e o desvio é **menor**;\n\n**haste sem cimento com fixação distal** (presa no corpo do osso, na diáfise): a haste, geralmente cilíndrica e com revestimento poroso ao longo de quase toda a superfície, **trava na parte de baixo**. A carga desce pela haste e \"pula\" a parte de cima do fêmur, que fica descarregada. É o tipo com **maior** stress shielding;\n\n**resurfacing**: preserva o colo e mantém a carga na parte de cima do fêmur, com desvio **mínimo**.\n\n**Outros fatores que aumentam o desvio**: haste mais **grossa**, material mais **rígido** (como o cromo-cobalto) e osso já fraco antes da cirurgia.\n\nO **titânio** é menos rígido que o cromo-cobalto, e por isso causa **menos** stress shielding, e não mais.\n\n**Na prova**: o stress shielding é mais comum com hastes sem cimento de fixação distal.",
+  "correta": "Não cimentados de fixação distal. A haste trava na diáfise e leva a carga direto para baixo, deixando a parte de cima do fêmur sem estímulo.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0175": {
@@ -1724,37 +1724,37 @@
   "conferido": false
  },
  "quadril-0176": {
-  "conceito": "### Padrão de lesão por tipo de impacto\n| Tipo | Mecanismo | Lesão labral | Lesão condral |\n|---|---|---|---|\n| ==came== | a giba entra no acetábulo: ==cisalhamento== | ==separação na junção condrolabral== anterossuperior | **delaminação** (cartilagem descola do osso em lâmina) |\n| pincer | o colo bate na borda: esmagamento | degeneração intrassubstancial, ossificação da borda | estreita faixa periférica e **contragolpe posteroinferior** |\n\n### Por que a junção condrolabral\n- A giba empurra a cartilagem anterossuperior **para fora**, contra o lábio.\n- O ponto frágil é a linha onde cartilagem e lábio se encontram: ali ocorre a desinserção.\n- O lábio em si fica relativamente preservado no início.\n\n### Localização\n- Posição de **12 a 3 horas** (anterossuperior) na maioria.\n\n### Na artroscopia\n- Sinal da onda (wave sign) indica delaminação.\n- Tratamento: osteoplastia da giba, reparo labral, desbridamento ou microfratura conforme a lesão.\n\n> **Na prova:** lesão labral típica do came = ==junção condrolabral==.",
-  "correta": "**Junção condrolabral anterossuperior.**\n- A giba força a cartilagem contra o lábio, que se desinsere na junção entre os dois.",
   "incorretas": {
-   "B": "**Fora da zona de conflito.**\n- O came atua na região anterossuperior.",
-   "C": "**Contragolpe do pincer.**\n- A lesão posteroinferior aparece no impacto tipo pincer.",
-   "D": "**Lesão condral, não labral.**\n- A delaminação ocorre na junção osteocondral, mas a questão pede a lesão labral."
+   "B": "A região posteromedial fica fora da zona de conflito do came, que atua na parte anterossuperior.",
+   "C": "A lesão posteroinferior é o contragolpe típico do impacto do tipo pincer.",
+   "D": "A junção osteocondral é onde ocorre a delaminação da cartilagem, mas a questão pergunta a localização da lesão do lábio."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "No **impacto femoroacetabular**, o tipo de deformidade define o tipo de lesão:\n\n**Tipo came (cam)**: há uma **giba** de osso na transição entre a cabeça e o colo do fêmur. Quando o quadril dobra, essa giba **entra** no acetábulo e empurra a cartilagem da parte da frente e de cima **para fora**, contra o lábio. É um mecanismo de **cisalhamento**, como uma raspagem.\n\nO **lábio** é um anel de cartilagem fibrosa na borda do acetábulo, que aprofunda o encaixe e veda a articulação. Ele se prende à cartilagem do acetábulo numa linha chamada **junção condrolabral**.\n\nNo came, essa junção é o **ponto frágil**: a giba força a cartilagem contra o lábio, e o lábio **se descola** justamente onde encontra a cartilagem. No começo, o lábio em si fica relativamente preservado. Ao mesmo tempo, a cartilagem do acetábulo se **descola do osso** em lâmina, a chamada **delaminação**. A lesão costuma ficar na região anterossuperior, entre \"12 e 3 horas\" no mostrador do relógio.\n\n**Tipo pincer**: o colo bate na borda de um acetábulo que cobre demais. O lábio é **esmagado**, degenera por dentro e pode ossificar. A cartilagem lesada fica numa faixa estreita da borda, e pode haver lesão em **contragolpe**, atrás e embaixo.\n\nNa artroscopia, o \"sinal da onda\" (a cartilagem ondulando ao ser tocada) indica delaminação. O tratamento envolve retirar a giba e reparar o lábio.\n\n**Na prova**: no came, a lesão do lábio ocorre na junção condrolabral.",
+  "correta": "Junção condrolabral. A giba empurra a cartilagem contra o lábio, que se descola exatamente na linha em que os dois se encontram.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0177": {
-  "conceito": "### Acesso anterior direto (Hueter)\n- Intervalo superficial: ==tensor da fáscia lata== (glúteo superior) × ==sartório== (femoral).\n- Intervalo profundo: **reto femoral** × **glúteo médio**.\n- Por ser **internervoso**, não desnerva músculo algum.\n\n### Detalhes técnicos\n- Incisão cerca de 2 a 3 cm lateral e distal à EIAS, sobre o ventre do tensor.\n- Abrir a fáscia **sobre o tensor** (e não sobre o sartório) protege o ==nervo cutâneo femoral lateral==.\n- Ligar o **ramo ascendente da circunflexa lateral**.\n\n### Todos os acessos\n| Acesso | Intervalo superficial | Intervalo profundo | Internervoso? |\n|---|---|---|---|\n| anterior (Smith-Petersen, Hueter) | sartório × tensor da fáscia lata | reto femoral × glúteo médio | sim (femoral × glúteo superior) |\n| anterolateral (Watson-Jones) | tensor da fáscia lata × glúteo médio | | **não** (ambos glúteo superior) |\n| lateral direto (Hardinge) | divide glúteo médio e vasto lateral | | não |\n| posterior (Kocher-Langenbeck, Moore) | divide o glúteo máximo | rotadores curtos | não |\n| medial (Ludloff) | adutor longo e curto × grácil e adutor magno | | ramos do obturatório |\n\n> **Na prova:** via anterior direta = ==tensor da fáscia lata × sartório==.",
-  "correta": "**Tensor e sartório.**\n- O plano superficial passa entre o tensor (glúteo superior) e o sartório (femoral), um intervalo internervoso.",
   "incorretas": {
-   "A": "**Não é o plano superficial.**\n- Reto femoral e tensor não formam o intervalo desta via.",
-   "C": "**Mesmo nervo.**\n- Reto femoral e sartório são ambos do femoral: não haveria intervalo internervoso.",
-   "D": "**Mesma dupla da A.**\n- Invertida, e igualmente fora do plano superficial."
+   "A": "O reto femoral e o tensor da fáscia lata não formam o plano superficial desta via.",
+   "C": "O reto femoral e o sartório são inervados pelo mesmo nervo, o femoral, e não formam o intervalo da via.",
+   "D": "É a mesma dupla da alternativa A, apenas invertida, e também não é o plano superficial."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **via anterior direta** do quadril (via de **Hueter**) é muito usada hoje nas artroplastias. Sua principal característica é ser uma via **internervosa**: o cirurgião passa **entre** músculos inervados por nervos diferentes, sem cortar músculo nem tirar a inervação de nenhum deles.\n\n**Os planos da via**:\n\n**superficial**: entre o **tensor da fáscia lata** (inervado pelo nervo **glúteo superior**) e o **sartório** (inervado pelo nervo **femoral**);\n\n**profundo**: entre o **reto femoral** (nervo femoral) e o **glúteo médio** (nervo glúteo superior).\n\n**Detalhes técnicos**:\n\na incisão é feita um pouco para fora e para baixo da espinha ilíaca anterossuperior, sobre o músculo tensor;\n\nabrir a fáscia **sobre o tensor**, e não sobre o sartório, ajuda a proteger o **nervo cutâneo femoral lateral**, que passa mais para dentro;\n\né preciso ligar o ramo ascendente da artéria circunflexa femoral lateral, que cruza o campo.\n\n**Comparando com outras vias**:\n\n**anterolateral** (Watson-Jones): entre o tensor da fáscia lata e o glúteo médio. **Não** é internervosa, porque os dois são inervados pelo glúteo superior;\n\n**lateral direta** (Hardinge): divide o glúteo médio e o vasto lateral;\n\n**posterior**: divide o glúteo máximo e solta os rotadores curtos.\n\n**Na prova**: a via anterior direta é feita no plano entre o tensor da fáscia lata e o sartório.",
+  "correta": "Tensor da fáscia lata e sartório. É um intervalo internervoso, entre um músculo do nervo glúteo superior e outro do nervo femoral.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0178": {
-  "conceito": "### Protrusão acetabular\n- Fundo do acetábulo **medial à linha ilioisquiática** (mais de 3 mm em homens e 6 mm em mulheres); ângulo centro-borda acima de 40°.\n\n| Forma | Causa | Perfil |\n|---|---|---|\n| **primária (pelve de Otto, artrocatadise)** | idiopática | mulheres jovens, **bilateral**, progressiva, artrose precoce |\n| **secundária** | ==artrite reumatoide==, espondilite, Paget, ==osteomalácia==, osteogênese imperfeita, Marfan, trauma, infecção | acompanha a doença de base |\n\n### Clínica\n- Perda precoce de **rotação e abdução**.\n- Dor, artrose precoce.\n\n### Na artroplastia\n- Restaurar o centro de rotação lateralizando o componente e **enxertando o fundo**.\n- Luxar a cabeça pode ser difícil: às vezes é preciso cortar o colo **in situ**.\n\n> **Na prova:** o gabarito oficial associa a pelve de Otto a ==artrite reumatoide/osteomalácia== (veja o alerta: isso descreve a forma secundária).",
-  "correta": "**Resposta oficial.**\n- O gabarito aceita a associação com artrite reumatoide e osteomalácia.\n- Essas doenças, porém, definem a protrusão secundária (veja o alerta).",
   "incorretas": {
-   "A": "**É progressiva.**\n- A progressão leva à artrose precoce.",
-   "B": "**Característica real.**\n- A pelve de Otto é bilateral na maioria; a literatura sustenta esta alternativa (veja o alerta).",
-   "C": "**Começa cedo.**\n- Os sintomas aparecem no adolescente ou no adulto jovem."
+   "A": "A pelve de Otto é progressiva, e não estável: a protrusão avança e leva à artrose precoce.",
+   "B": "A pelve de Otto é bilateral na grande maioria dos casos. É a alternativa que a literatura sustenta, mas a banca não a aceitou.",
+   "C": "A doença começa cedo, na adolescência ou no adulto jovem, e não em idosos."
   },
-  "alerta": "A associação com artrite reumatoide e osteomalácia é justamente o que caracteriza a protrusão acetabular SECUNDÁRIA, e a pelve de Otto é, por definição, a protrusão PRIMÁRIA, idiopática. Três outras questões deste mesmo acervo (`quadril-0021`, `quadril-0028` e `quadril-0120`) dizem isso com todas as letras. A alternativa que a literatura sustenta aqui é a B: a pelve de Otto é bilateral na quase totalidade dos casos. Se você marcou B, o erro não foi seu.",
-  "geradoEm": "2026-09-24",
+  "conceito": "A **protrusão acetabular** é o afundamento do fundo do acetábulo para dentro da pelve, levando a cabeça do fêmur junto. Na radiografia, o fundo do acetábulo ultrapassa a linha ilioisquiática.\n\nEla tem duas formas:\n\n**Primária** (a **pelve de Otto**, também chamada artrocatadise): **não tem uma causa identificável**. Acomete principalmente **mulheres jovens**, costuma ser **bilateral** e é **progressiva**, levando à artrose cedo, com perda da rotação e da abdução.\n\n**Secundária**: é causada por uma doença que enfraquece o osso ou a articulação, como a **artrite reumatoide**, a espondilite anquilosante, a doença de Paget, a **osteomalácia** (osso mole por falta de vitamina D), a osteogênese imperfeita, a síndrome de Marfan, traumas ou infecções.\n\nO gabarito desta questão associa a pelve de Otto à artrite reumatoide e à osteomalácia. Essas doenças, porém, definem a forma **secundária**, enquanto a pelve de Otto é, por definição, a forma primária (veja o alerta).\n\n**Na artroplastia**, o cirurgião precisa reconstruir o fundo do acetábulo com **enxerto ósseo** e trazer a taça de volta para a posição normal. Às vezes é difícil luxar a cabeça presa dentro da pelve, e é preciso cortar o colo antes.\n\n**Na prova**: o gabarito oficial associa a pelve de Otto à artrite reumatoide e à osteomalácia, embora essas doenças caracterizem a protrusão secundária.",
+  "alerta": "A associação com artrite reumatoide e osteomalácia caracteriza a protrusão acetabular secundária, e a pelve de Otto é, por definição, a protrusão primária, idiopática. A alternativa que a literatura sustenta é a B: a pelve de Otto é bilateral na grande maioria dos casos. O gabarito oficial foi mantido.",
+  "correta": "Estar associada com artrite reumatoide e/ou osteomalácia, segundo o gabarito oficial. Essas doenças, porém, descrevem a protrusão secundária, e não a pelve de Otto, que é primária.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0183": {
@@ -1780,31 +1780,31 @@
   "conferido": false
  },
  "quadril-0188": {
-  "conceito": "### Acesso anterolateral (Watson-Jones)\n- Intervalo: ==glúteo médio== × ==tensor da fáscia lata==.\n- **Não é internervoso**: os dois são inervados pelo **glúteo superior**.\n- A dissecção proximal deve ser contida para não desnervar o tensor.\n\n### Vantagens e limitações\n- Preserva rotadores curtos e cápsula posterior: **menos luxação posterior**.\n- Exposição do fêmur mais difícil; pode lesar o glúteo médio por afastamento.\n- Base das variantes minimamente invasivas anterolaterais (OCM).\n\n### Todos os acessos\n| Acesso | Intervalo superficial | Intervalo profundo | Internervoso? |\n|---|---|---|---|\n| anterior (Smith-Petersen, Hueter) | sartório × tensor da fáscia lata | reto femoral × glúteo médio | sim (femoral × glúteo superior) |\n| anterolateral (Watson-Jones) | tensor da fáscia lata × glúteo médio | | **não** (ambos glúteo superior) |\n| lateral direto (Hardinge) | divide glúteo médio e vasto lateral | | não |\n| posterior (Kocher-Langenbeck, Moore) | divide o glúteo máximo | rotadores curtos | não |\n| medial (Ludloff) | adutor longo e curto × grácil e adutor magno | | ramos do obturatório |\n\n> **Na prova:** Watson-Jones = ==glúteo médio × tensor da fáscia lata==.",
-  "correta": "**Glúteo médio e tensor.**\n- O Watson-Jones trabalha entre os dois.\n- Como ambos têm o mesmo nervo, não é intervalo internervoso verdadeiro.",
   "incorretas": {
-   "A": "**Plano profundo demais.**\n- O glúteo mínimo fica sob o médio; o intervalo é médio × tensor.",
-   "C": "**Via anterior.**\n- O sartório pertence ao intervalo do Smith-Petersen e do Hueter.",
-   "D": "**Mesma razão.**\n- O sartório não participa do acesso anterolateral."
+   "A": "O glúteo mínimo fica por baixo do glúteo médio. O intervalo da via é entre o glúteo médio e o tensor.",
+   "C": "O sartório pertence ao intervalo da via anterior (Smith-Petersen e Hueter), e não da anterolateral.",
+   "D": "Pela mesma razão, o sartório não participa da via de Watson-Jones."
   },
+  "conceito": "A **via de Watson-Jones** é a via **anterolateral** do quadril. O cirurgião trabalha no intervalo entre o **glúteo médio** e o **tensor da fáscia lata**.\n\n**Um detalhe importante**: essa via **não é internervosa**. Os dois músculos são inervados pelo **mesmo nervo**, o **glúteo superior**. Por isso, a dissecção não pode subir demais, senão o cirurgião corta os ramos do nervo que vão para o tensor.\n\n**Vantagens**: preserva os rotadores curtos e a cápsula de trás do quadril, o que diminui o risco de **luxação posterior** da prótese. É a base das variantes minimamente invasivas anterolaterais.\n\n**Desvantagens**: a exposição do fêmur é mais difícil, e o afastamento pode lesar o glúteo médio.\n\n**Comparando as vias do quadril**:\n\n**anterior** (Smith-Petersen ou Hueter): entre o **sartório** e o tensor da fáscia lata no plano superficial, e entre o reto femoral e o glúteo médio no profundo. É internervosa (nervo femoral de um lado, glúteo superior do outro);\n\n**anterolateral** (Watson-Jones): entre o tensor da fáscia lata e o glúteo médio;\n\n**lateral direta** (Hardinge): divide o glúteo médio e o vasto lateral;\n\n**posterior**: divide o glúteo máximo e solta os rotadores curtos;\n\n**medial** (Ludloff): entre os músculos adutores.\n\nO **glúteo mínimo** fica por baixo do glúteo médio, mais profundo, e não forma o intervalo da via.\n\n**Na prova**: a via de Watson-Jones usa o intervalo entre o glúteo médio e o tensor da fáscia lata.",
+  "correta": "Glúteo médio e tensor da fáscia lata. É o intervalo da via anterolateral, que não é internervoso porque os dois músculos têm o mesmo nervo.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 1"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0189": {
-  "conceito": "### Enxerto da crista ilíaca: nervos em risco\n| Local | Nervo | Regra |\n|---|---|---|\n| ==crista anterior== | ==cutâneo femoral lateral== | passa medial e abaixo da EIAS: iniciar a incisão **2 a 3 cm posterior** à espinha |\n| ==crista anterior== | ==ilioinguinal== e ílio-hipogástrico | cruzam a parede abdominal junto à crista; evitar dissecção medial excessiva |\n| crista posterior | **cluneais superiores** | cruzam a crista 6 a 8 cm lateral à EIPS |\n| incisura isquiática | glúteo superior, vasos glúteos | risco na retirada posterior profunda |\n\n### Outras complicações\n- Dor crônica no sítio doador (a mais comum).\n- **Fratura por avulsão da EIAS** (sartório), sobretudo se a retirada for próxima demais.\n- Hérnia através do defeito, hematoma, lesão ureteral (rara).\n\n> **Na prova:** crista anterior = ==cutâneo femoral lateral e ilioinguinal==; posterior = cluneais superiores.",
-  "correta": "**Território anterior.**\n- Na crista anterior correm o cutâneo femoral lateral, junto à EIAS, e o ilioinguinal, na parede abdominal.",
   "incorretas": {
-   "A": "**Glúteo superior é profundo e posterior.**\n- Não é atingido na retirada anterior.",
-   "B": "**Nervos da crista posterior.**\n- Os cluneais superiores são o risco na retirada posterior.",
-   "D": "**Metade certa.**\n- O cutâneo femoral lateral sim, mas os cluneais são da crista posterior."
+   "A": "O nervo glúteo superior é profundo e fica na parte de trás da bacia, e não é atingido na retirada anterior.",
+   "B": "Os nervos cluneais superiores são o risco na retirada da parte de trás da crista, e não da frente.",
+   "D": "O cutâneo femoral lateral está certo, mas os cluneais superiores pertencem à crista posterior."
   },
+  "conceito": "A **crista ilíaca** (a borda de cima da bacia, que dá para sentir na cintura) é a fonte mais comum de **enxerto ósseo** retirado do próprio paciente. O enxerto pode ser retirado da parte **da frente** ou **de trás** da crista, e cada região tem os seus nervos em risco.\n\n**Na retirada anterior** (perto da espinha ilíaca anterossuperior, a EIAS):\n\no **nervo cutâneo femoral lateral**, nervo de sensibilidade da frente e do lado da coxa, passa logo para dentro e para baixo da EIAS. Por isso, a incisão deve começar **2 a 3 cm atrás** da espinha. A lesão causa dormência ou queimação na coxa (meralgia parestésica);\n\no **nervo ilioinguinal** (e o ílio-hipogástrico), que correm na parede do abdome junto à crista. Uma dissecção muito para dentro pode lesá-los, causando dor ou dormência na virilha.\n\n**Na retirada posterior**:\n\nos **nervos cluneais superiores**, que cruzam a crista alguns centímetros para fora da espinha ilíaca posterossuperior e dão sensibilidade à pele da nádega;\n\nmais fundo, perto da incisura isquiática, o **nervo glúteo superior** e os vasos glúteos.\n\n**Outras complicações da retirada**: a dor crônica no local é a mais comum; também pode haver fratura por arrancamento da EIAS (pela tração do músculo sartório) se o enxerto for retirado muito perto dela, hérnia pelo defeito e hematoma.\n\n**Na prova**: na retirada de enxerto do ílio anterior, os nervos em risco são o cutâneo femoral lateral e o ilioinguinal.",
+  "correta": "Cutâneo femoral lateral e ilioinguinal. São os nervos que correm junto à parte da frente da crista ilíaca, perto da EIAS e na parede do abdome.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 1"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0190": {
@@ -1836,65 +1836,65 @@
   "conferido": false
  },
  "quadril-0192": {
-  "conceito": "### Fatores de risco de fratura periprotética do fêmur\n| Grupo | Fatores |\n|---|---|\n| osso | osteoporose, ==sexo feminino==, idade avançada, artrite reumatoide, corticoide |\n| implante | ==haste não cimentada== (encaixe forçado), haste curta de ponta rígida, cimento com defeitos |\n| história cirúrgica | ==osteólise==, ==soltura asséptica==, ==revisão prévia== (perda de estoque, perfurações, janelas corticais) |\n| mecânica | queda, concentração de tensão na ponta da haste ou entre implantes |\n\n### Prevenção\n- Técnica cuidadosa na inserção de hastes não cimentadas (fresagem e raspagem sem forçar).\n- Cerclagem profilática em osso frágil; evitar perfurações e janelas sem proteção.\n- Tratar osteoporose, prevenir quedas.\n\n### Classificação\n- Vancouver (intraoperatória e pós-operatória): A (trocânteres), B1 a B3 (ao redor da haste), C (distal).\n\n> **Na prova:** o gabarito aqui aceita ==osteólise, não cimentado e revisão prévia== (veja o alerta sobre a quadril-0202).",
-  "correta": "**Resposta oficial.**\n- Osteólise, haste não cimentada e revisão prévia são fatores reconhecidos.\n- Todos enfraquecem o osso ou concentram tensão em torno do implante.",
   "incorretas": {
-   "A": "**Também sustentada.**\n- Osteólise, soltura asséptica e sexo feminino são fatores reconhecidos; é o gabarito da quadril-0202 (veja o alerta).",
-   "C": "**Fatores reais, combinação não marcada.**\n- Soltura, sexo feminino e artrite reumatoide aumentam o risco, mas não foi a lista escolhida em nenhuma versão.",
-   "D": "**Soltura séptica muda o problema.**\n- A infecção leva a outra conduta e não aparece como fator clássico nas séries de fratura."
+   "A": "Osteólise, soltura asséptica e sexo feminino também são fatores reconhecidos. Esta lista foi o gabarito de outra aplicação da mesma questão (veja o alerta).",
+   "C": "Soltura asséptica, sexo feminino e artrite reumatoide aumentam o risco, mas não foi a combinação escolhida pela banca.",
+   "D": "A soltura séptica (por infecção) muda o problema e a conduta, e não aparece como fator clássico nas séries de fratura periprotética."
   },
-  "alerta": "Esta questão aparece duas vezes no acervo com respostas oficiais diferentes: aqui o gabarito é a alternativa B, e na `quadril-0202`, com enunciado e alternativas idênticos, o gabarito é a A. As duas listas são compostas de fatores de risco reconhecidos (osteólise, soltura asséptica, sexo feminino, implante não cimentado e revisão prévia aparecem todos na literatura), de modo que não há como escolher uma e descartar a outra pelo conteúdo. Trate as duas como aceitáveis e não perca tempo procurando a diferença.",
-  "geradoEm": "2026-09-24",
+  "conceito": "A **fratura periprotética** é uma fratura do osso ao redor de uma prótese. No fêmur, ela pode acontecer durante a cirurgia ou depois dela. Conhecer os fatores de risco ajuda a preveni-la. Eles se dividem em grupos:\n\n**Do osso**: osteoporose, **sexo feminino**, idade avançada, artrite reumatoide e uso de corticoide. Todos deixam o osso mais frágil.\n\n**Do implante**: hastes **não cimentadas** (que precisam ser encaixadas sob pressão no canal do osso e podem rachá-lo), hastes com a ponta rígida que concentra tensão e defeitos no cimento.\n\n**Da história cirúrgica**:\n\n**osteólise**: perda de osso ao redor da prótese causada pelas partículas de desgaste, que enfraquece o fêmur;\n\n**soltura asséptica**: a prótese solta, sem infecção, que movimenta e enfraquece o osso;\n\n**revisão prévia**: cirurgias anteriores deixam menos osso, furos e janelas na cortical.\n\n**Mecânicos**: quedas e pontos em que a tensão se concentra, como a ponta da haste ou o espaço entre dois implantes.\n\n**Prevenção**: inserir as hastes sem cimento com cuidado, sem forçar; usar cabos de proteção em osso frágil; tratar a osteoporose e prevenir quedas.\n\nAs fraturas são classificadas pela **classificação de Vancouver**, conforme o local, a fixação da haste e a qualidade do osso.\n\nNesta questão, a banca aceitou a lista com osteólise, implante não cimentado e revisão prévia. Outras combinações também reúnem fatores reconhecidos (veja o alerta).\n\n**Na prova**: o gabarito aponta osteólise, implante não cimentado e revisão prévia como fatores de risco de fratura periprotética.",
+  "alerta": "Esta questão foi aplicada em outra prova com enunciado e alternativas idênticos e gabarito diferente, apontando a alternativa A. As duas listas reúnem fatores de risco reconhecidos (osteólise, soltura asséptica, sexo feminino, implante não cimentado e revisão prévia aparecem todos na literatura), e não há como descartar uma delas pelo conteúdo. O gabarito oficial desta versão foi mantido.",
+  "correta": "Osteólise, implante não cimentado e revisão prévia. Os três são fatores reconhecidos, porque enfraquecem o osso ou concentram tensão ao redor do implante.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0193": {
-  "conceito": "### Nervo glúteo superior\n- Raízes **L4, L5 e S1**; sai pelo forame isquiático maior ==acima do piriforme== (único a fazê-lo).\n- Corre entre o **glúteo médio** e o **glúteo mínimo**, com a artéria glútea superior.\n\n### Ramos\n| Ramo | Trajeto | Inerva |\n|---|---|---|\n| ==superior== | ao longo da borda superior do mínimo | ==glúteo médio== (e mínimo) |\n| inferior | entre médio e mínimo, lateralmente | glúteo médio, glúteo mínimo e **tensor da fáscia lata** |\n\n### Glúteo inferior\n- Sai **abaixo** do piriforme; inerva só o **glúteo máximo**.\n\n### Clínica\n- Lesão: insuficiência abdutora e **marcha de Trendelenburg**.\n- Zona de segurança no Hardinge: até **3 a 5 cm** acima do trocânter.\n- Risco também no Watson-Jones (ramo para o tensor) e no afastamento na incisura isquiática.\n\n> **Na prova:** glúteo médio = ==nervo glúteo superior== (o gabarito aqui aceita o ramo superior; veja o alerta).",
-  "correta": "**Resposta oficial.**\n- O glúteo médio é inervado pelo nervo glúteo superior.\n- O gabarito aqui aponta o ramo superior; o inferior também contribui (veja o alerta).",
   "incorretas": {
-   "A": "**Nervo errado.**\n- O glúteo inferior sai abaixo do piriforme e inerva o glúteo máximo.",
-   "C": "**Mesmo erro de nervo.**\n- O glúteo inferior não inerva o glúteo médio.",
-   "D": "**Também tem respaldo.**\n- O ramo inferior corre entre médio e mínimo e inerva os dois; é o gabarito da quadril-0203 (veja o alerta)."
+   "A": "O nervo glúteo inferior sai abaixo do piriforme e inerva o glúteo máximo, e não o glúteo médio.",
+   "C": "Pelo mesmo motivo, o nervo glúteo inferior não inerva o glúteo médio.",
+   "D": "O ramo inferior do glúteo superior também inerva o glúteo médio e tem respaldo anatômico (veja o alerta), mas não é o gabarito desta versão."
   },
-  "alerta": "Esta questão aparece duas vezes no acervo com respostas oficiais diferentes: aqui o gabarito é o ramo superior, e na `quadril-0203`, idêntica, é o ramo inferior. A anatomia explica por que: o nervo glúteo superior, depois de passar acima do piriforme, divide-se em um ramo superior, que vai ao glúteo médio, e um ramo inferior, que corre entre o glúteo médio e o mínimo inervando os DOIS e terminando no tensor da fáscia lata. Ou seja, o glúteo médio recebe fibras dos dois ramos, e as duas alternativas têm respaldo.",
-  "geradoEm": "2026-09-24",
+  "conceito": "O **glúteo médio** é o principal músculo **abdutor** do quadril: afasta a coxa da linha média e, mais importante, mantém a bacia nivelada quando apoiamos numa perna só. Ele é inervado pelo **nervo glúteo superior**.\n\n**O nervo glúteo superior**:\n\nnasce das raízes L4, L5 e S1;\n\nsai da bacia pelo forame isquiático maior, **acima do músculo piriforme**. É o único nervo que sai por cima do piriforme;\n\ncorre entre o **glúteo médio** e o **glúteo mínimo**, junto com a artéria glútea superior.\n\n**Seus ramos**:\n\n**ramo superior**: corre ao longo da borda de cima do glúteo mínimo e vai para o **glúteo médio** (e o mínimo);\n\n**ramo inferior**: corre entre o médio e o mínimo, mais para o lado de fora, inervando os dois e terminando no **tensor da fáscia lata**.\n\nAssim, o glúteo médio recebe fibras dos **dois ramos** (veja o alerta).\n\n**O nervo glúteo inferior** é diferente: sai **abaixo** do piriforme e inerva só o **glúteo máximo**, o grande músculo que estende o quadril.\n\n**Clínica**: a lesão do glúteo superior causa fraqueza dos abdutores e a marcha de **Trendelenburg** (a bacia cai para o lado oposto a cada passo). O nervo corre risco na via de Hardinge, se a dissecção subir mais de 3 a 5 cm acima do trocânter, e na via de Watson-Jones.\n\n**Na prova**: o glúteo médio é inervado pelo nervo glúteo superior; o gabarito desta questão aponta o ramo superior.",
+  "alerta": "O nervo glúteo superior se divide em um ramo superior, que vai ao glúteo médio, e um ramo inferior, que corre entre o glúteo médio e o mínimo inervando os dois e terminando no tensor da fáscia lata. O glúteo médio recebe, portanto, fibras dos dois ramos, e a alternativa D também tem respaldo anatômico. Esta questão foi aplicada em outra prova com gabarito apontando o ramo inferior. O gabarito oficial desta versão foi mantido.",
+  "correta": "Superior do nervo glúteo superior, segundo o gabarito. O glúteo médio é inervado pelo nervo glúteo superior, cujo ramo superior se dirige a ele.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0194": {
-  "conceito": "### Compartimentos da artroscopia do quadril\n| Compartimento | Onde | Como acessar |\n|---|---|---|\n| central | entre cabeça e acetábulo (lábio, cartilagem, ligamento redondo, fossa) | **com tração** |\n| periférico | entre colo e cápsula (giba do came, sinovial, corpos livres) | sem tração, quadril fletido |\n| peritrocantérico | espaço sob o trato iliotibial | abdutores, bursa |\n\n### Portais e estruturas em risco\n| Portal | Estrutura em risco |\n|---|---|\n| anterolateral | nervo glúteo superior (a cerca de 4 a 6 cm) |\n| posterolateral | ==nervo isquiático== |\n| ==anterior== | ==nervo cutâneo femoral lateral== (poucos milímetros); femoral se medializado |\n| mid-anterior | cutâneo femoral lateral |\n\n### Cuidado\n- No portal anterior: incisar só a pele e dissecar o subcutâneo de forma romba.\n\n> **Na prova:** portal anterior ao compartimento central = risco para o ==cutâneo femoral lateral==.",
-  "correta": "**Anterior e cutâneo femoral lateral.**\n- O portal anterior acessa o compartimento central.\n- Passa a poucos milímetros dos ramos do cutâneo femoral lateral.",
   "incorretas": {
-   "A": "**Nervo errado.**\n- O portal posterolateral põe em risco o isquiático.",
-   "B": "**Glúteo inferior está longe.**\n- O anterolateral se aproxima do glúteo superior, não do inferior.",
-   "D": "**Portal inexistente na técnica padrão.**\n- E a circunflexa medial é posterior ao colo."
+   "A": "O portal posterolateral põe em risco o nervo isquiático, e não o glúteo superior.",
+   "B": "O portal anterolateral se aproxima do nervo glúteo superior, e não do glúteo inferior, que fica longe.",
+   "D": "O portal anteromedial não faz parte da técnica padrão, e a artéria circunflexa medial fica atrás do colo."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **artroscopia do quadril**, o interior da articulação é dividido em **compartimentos**, e cada um é acessado de um jeito:\n\n**Compartimento central**: o espaço **entre a cabeça do fêmur e o acetábulo**. Ali ficam o lábio, a cartilagem, o ligamento redondo e a fossa do acetábulo. Para entrar nele, é preciso **tracionar** a perna e afastar a cabeça do acetábulo.\n\n**Compartimento periférico**: o espaço entre o **colo** e a **cápsula**, por fora do acetábulo. Ali ficam a giba do impacto tipo came, a membrana sinovial e fragmentos soltos. É acessado **sem tração**, com o quadril dobrado.\n\n**Compartimento peritrocantérico**: o espaço sob a banda iliotibial, do lado de fora, onde ficam os tendões abdutores e as bursas.\n\n**Os portais usados para o compartimento central** são o anterolateral e o **anterior**, e cada portal tem sua estrutura de risco:\n\n**portal anterior**: o **nervo cutâneo femoral lateral**, cujos ramos passam a poucos milímetros. Se o portal for colocado para dentro demais, passa a ameaçar o nervo femoral;\n\n**portal anterolateral**: o nervo **glúteo superior**, a alguns centímetros acima;\n\n**portal posterolateral**: o nervo **isquiático** (ciático).\n\nNo portal anterior, o cuidado é cortar só a pele e afastar o tecido de baixo com instrumento de ponta romba.\n\n**Na prova**: o portal anterior acessa o compartimento central e põe em risco o nervo cutâneo femoral lateral.",
+  "correta": "Anterior e o nervo cutâneo lateral da coxa. O portal anterior acessa o compartimento central e passa a poucos milímetros dos ramos desse nervo.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0195": {
-  "conceito": "### Bursas do quadril\n| Bursa | Localização | Quadro |\n|---|---|---|\n| trocantérica (subglútea máxima) | lateral ao trocânter maior, sob o trato iliotibial e o glúteo máximo | dor lateral, piora ao deitar sobre o lado |\n| ==subglúteas (média e mínima)== | sob os tendões do glúteo médio e mínimo, nas facetas do trocânter | parte da síndrome dolorosa do grande trocânter |\n| ==iliopectínea (iliopsoas)== | entre o tendão do iliopsoas e a cápsula anterior | dor inguinal, ressalto interno; pode comunicar com a articulação |\n| isquioglútea | sobre a tuberosidade isquiática | dor ao sentar (\"nádega do tecelão\") |\n\n### Conceito atual\n- A **síndrome dolorosa do grande trocânter** é preferida a \"bursite\": o componente principal costuma ser a **tendinopatia dos abdutores**.\n- A bursite isolada é menos frequente do que se pensava.\n\n### Bursa iliopectínea\n- É a **maior bursa** do quadril.\n- Pode formar cisto volumoso na artrite, comprimindo vasos ou o nervo femoral.\n\n> **Na prova:** mais acometidas = ==trocantérica, subglútea e iliopectínea==.",
-  "correta": "**Lateral e anterior.**\n- Além da trocantérica, as subglúteas (complexo dos abdutores) e a iliopectínea (sob o iliopsoas) são as mais acometidas.",
   "incorretas": {
-   "B": "**Isquioglútea é menos comum.**\n- Inflama por pressão sobre o ísquio, mas não integra o grupo mais frequente.",
-   "C": "**Nome inadequado.**\n- A bursa anterior relevante é a iliopectínea, não uma \"bursa do pequeno trocânter\".",
-   "D": "**As duas inadequadas.**\n- A isquioglútea é menos acometida, e a bolsa anterior é a iliopectínea."
+   "B": "A bursa isquioglútea inflama por pressão sobre o ísquio, mas é menos comum e não faz parte do grupo mais acometido.",
+   "C": "A bursa relevante na frente do quadril é a iliopectínea, e não uma \"bursa do pequeno trocânter\".",
+   "D": "As duas estão inadequadas: a isquioglútea é menos acometida, e a bursa da frente é a iliopectínea."
   },
+  "conceito": "As **bursas** são pequenas bolsas com líquido que ficam entre tendões, músculos e ossos, para diminuir o atrito. Quando inflamam, causam **bursite**. No quadril existem várias:\n\n**Bursa trocantérica** (subglútea máxima): do lado de fora do trocânter maior, sob a banda iliotibial e o glúteo máximo. A inflamação causa dor do lado de fora do quadril, que piora ao deitar sobre aquele lado.\n\n**Bursas subglúteas** (média e mínima): sob os tendões do glúteo médio e do mínimo, sobre o trocânter. Fazem parte do quadro de dor do lado de fora do quadril.\n\n**Bursa iliopectínea** (ou do iliopsoas): na **frente** do quadril, entre o tendão do iliopsoas e a cápsula. É a **maior bursa** do quadril. A inflamação causa dor na virilha e pode acompanhar o ressalto interno. Às vezes ela se comunica com a articulação e, na artrite, pode formar um cisto grande que comprime vasos ou o nervo femoral.\n\n**Bursa isquioglútea**: sobre a tuberosidade do ísquio, o osso em que nos sentamos. Inflama por pressão prolongada, causando dor ao sentar. É menos comum.\n\n**Uma observação atual**: o nome \"bursite trocantérica\" vem sendo substituído por **síndrome dolorosa do grande trocânter**, porque na maioria das vezes o problema principal é a **tendinopatia** dos glúteos médio e mínimo, e não a bursa isolada.\n\n**Na prova**: as bursas mais acometidas são a do grande trocânter, as subglúteas e a iliopectínea.",
+  "correta": "Subglútea e iliopectínea. Junto com a trocantérica, são as bursas mais acometidas: as subglúteas no lado de fora e a iliopectínea na frente do quadril.",
   "referencias": [
    "Greater Trochanteric Pain Syndrome. StatPearls. https://www.ncbi.nlm.nih.gov/books/NBK557433/",
    "Greater trochanter anatomy and complex of three bursae. Radiology. 2001. https://pubmed.ncbi.nlm.nih.gov/11687692/",
    "Sonographic assessment of clinically important bursae. https://pmc.ncbi.nlm.nih.gov/articles/PMC6856779/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0196": {
-  "conceito": "### Quatro fatos de anatomia do quadril\n| Afirmação | Correto |\n|---|---|\n| principal irrigação da cabeça | **circunflexa femoral medial** (ramo profundo, retinaculares posterossuperiores) |\n| inervação de glúteo médio e mínimo | ==nervo glúteo superior== (também o tensor da fáscia lata) |\n| calcar femoral | placa densa **posteromedial**, do colo para a diáfise |\n| versão do colo no adulto | **anteversão** de cerca de 10 a 15° |\n\n### Calcar\n- Reforça o fêmur proximal na zona de maior compressão.\n- Apoio das hastes; reabsorção por stress shielding aparece ali (zona 7 de Gruen).\n\n### Anteversão femoral\n- Ao nascer, cerca de 30 a 40°; diminui com o crescimento.\n- Anteversão aumentada: marcha em rotação interna, ângulo Q maior.\n\n> **Na prova:** glúteo médio e mínimo = ==glúteo superior==.",
-  "correta": "**Aparelho abdutor.**\n- Glúteo médio, glúteo mínimo e tensor da fáscia lata são inervados pelo glúteo superior.\n- Sua lesão causa marcha de Trendelenburg.",
   "incorretas": {
-   "A": "**Artéria errada.**\n- A principal fonte é a circunflexa medial; a lateral irriga trocânter e face anterior.",
-   "C": "**Posição errada.**\n- O calcar é posteromedial.",
-   "D": "**Sentido errado.**\n- O colo é anteversado em 10 a 15°, não retroversado."
+   "A": "A principal fonte de sangue da cabeça femoral é a circunflexa medial. A lateral irriga o trocânter e a parte da frente.",
+   "C": "O calcar fica na região posteromedial do fêmur, e não anterolateral.",
+   "D": "O colo femoral normal é anteversado (voltado para a frente) cerca de 10° a 15°, e não retrovertido."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A questão confere quatro fatos de anatomia do quadril:\n\n**Irrigação da cabeça do fêmur**: a principal fonte no adulto é a **artéria circunflexa femoral medial**, por meio do seu ramo profundo, que forma os vasos que sobem pela parte de cima e de trás do colo. A circunflexa **lateral** irriga principalmente o trocânter e a parte da frente.\n\n**Inervação dos glúteos médio e mínimo**: os dois são inervados pelo **nervo glúteo superior**, que também inerva o tensor da fáscia lata. Esses músculos são os **abdutores**, que mantêm a bacia nivelada ao apoiar numa perna só. Por isso, a lesão do nervo causa a marcha de **Trendelenburg**.\n\n**O calcar femoral**: é uma placa de osso **denso** que sai da parte de **trás e de dentro** (posteromedial) do colo e desce para o corpo do fêmur. Ele reforça a região que recebe mais compressão e serve de apoio para as hastes de prótese. É ali que mais se perde osso quando a haste desvia a carga (o stress shielding).\n\n**A versão do colo**: no adulto, o colo do fêmur aponta para a **frente** cerca de 10° a 15°. Isso é a **anteversão**. Ao nascer ela é maior, cerca de 30° a 40°, e diminui com o crescimento. Uma anteversão aumentada faz a pessoa andar com os pés para dentro.\n\n**Na prova**: os glúteos médio e mínimo são inervados pelo nervo glúteo superior.",
+  "correta": "Os músculos glúteo médio e mínimo são inervados pelo nervo glúteo superior. Esse nervo comanda os abdutores, e sua lesão causa a marcha de Trendelenburg.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0201": {
@@ -1933,25 +1933,25 @@
   "conferido": false
  },
  "quadril-0204": {
-  "conceito": "### Classificação etiológica da artrose do quadril\n| Tipo | Exemplos |\n|---|---|\n| ==primária (idiopática)== | sem causa identificável: a mais frequente nas estatísticas tradicionais |\n| secundária a deformidade | displasia, impacto femoroacetabular, sequela de Perthes, epifisiólise |\n| secundária a doença subcondral | osteonecrose |\n| secundária a trauma | fratura do acetábulo, luxação |\n| secundária a artrite | reumatoide, espondilite, séptica |\n| secundária a doença metabólica | ocronose, hemocromatose, Paget |\n\n### A \"primária\" está encolhendo\n- Ganz e colaboradores mostraram que muitas artroses tidas como idiopáticas têm **deformidades sutis** (came, pincer, displasia leve) não reconhecidas.\n- Mesmo assim, a resposta clássica de prova é a **primária**.\n\n### Diferenças regionais\n- Em populações asiáticas, a **displasia** responde por parte maior dos casos.\n\n> **Na prova:** causa mais frequente = ==primária (idiopática)==.",
-  "correta": "**Resposta clássica.**\n- Na classificação tradicional, a artrose sem causa identificável é a maioria.",
   "incorretas": {
-   "B": "**Frequente, mas não maioria clássica.**\n- Deformidades (sobretudo impacto e displasia) são cada vez mais reconhecidas, mas não são a resposta tradicional.",
-   "C": "**Causa incomum.**\n- Doenças osteometabólicas raramente causam artrose do quadril.",
-   "D": "**Minoritária.**\n- A osteonecrose é causa reconhecida, mas responde por parcela menor."
+   "B": "As deformidades, principalmente o impacto e a displasia, são cada vez mais reconhecidas, mas não são a resposta clássica para a causa mais frequente.",
+   "C": "As doenças osteometabólicas raramente causam artrose do quadril.",
+   "D": "A osteonecrose é uma causa reconhecida, mas responde por uma parcela menor dos casos."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **artrose do quadril** (coxartrose) é o desgaste da cartilagem da articulação. Ela é classificada pela **causa**:\n\n**Primária** (idiopática): quando **não se encontra uma causa**. Nas estatísticas tradicionais, é a forma **mais frequente**.\n\n**Secundária**: quando existe uma causa identificável. As principais:\n\n**deformidades**: displasia do quadril, impacto femoroacetabular, sequelas da doença de Perthes e do escorregamento da cabeça femoral na adolescência;\n\n**doença do osso abaixo da cartilagem**: osteonecrose da cabeça do fêmur;\n\n**trauma**: fraturas do acetábulo e luxações;\n\n**artrites inflamatórias ou infecciosas**: artrite reumatoide, espondilite, artrite séptica;\n\n**doenças metabólicas**, raras: ocronose, hemocromatose, doença de Paget.\n\n**Uma ideia moderna**: os estudos de **Ganz** mostraram que muitas artroses consideradas \"primárias\" na verdade têm **deformidades sutis** que não eram reconhecidas, como o impacto tipo came ou pincer e displasias leves. Assim, a proporção de artroses \"sem causa\" vem diminuindo à medida que se olha com mais atenção. Mesmo assim, a resposta clássica de prova continua sendo a **primária**.\n\nEm algumas populações, como as asiáticas, a **displasia** responde por uma parte maior dos casos.\n\n**Na prova**: a causa mais frequente de artrose do quadril é a primária (idiopática).",
+  "correta": "Primária (idiopática). Na classificação tradicional, a artrose sem causa identificável é a mais frequente.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0205": {
-  "conceito": "### Hematoma após artroplastia\n- Distende a ferida, favorece **deiscência** e **drenagem persistente**.\n- Drenagem persistente é via importante para a **infecção periprotética**.\n\n### Fatores\n| Fator | Papel |\n|---|---|\n| ==hemostasia intraoperatória inadequada== | ==fator determinante==, sob controle do cirurgião |\n| anticoagulantes (profilaxia) | amplificam sangramento de vasos não controlados |\n| anti-inflamatórios e antiagregantes | alteram a função plaquetária |\n| discrasias sanguíneas | incomuns, mas graves |\n| espaço morto, fechamento por planos inadequado | favorecem coleção |\n\n### Prevenção\n- Hemostasia cuidadosa: perfurantes, circunflexas, leito acetabular, superfícies ósseas.\n- **Ácido tranexâmico** reduz sangramento e transfusão.\n- Fechamento meticuloso por planos; profilaxia de TEV equilibrada.\n\n### Conduta\n- Drenagem persistente além de 5 a 7 dias: considerar **abordagem cirúrgica** (lavagem e desbridamento).\n\n> **Na prova:** fator mais importante do hematoma = ==hemostasia intraoperatória inadequada==.",
-  "correta": "**Fator determinante.**\n- A hemostasia feita durante a cirurgia decide se haverá coleção.\n- É o único fator totalmente sob controle do cirurgião.",
   "incorretas": {
-   "A": "**Condição incomum.**\n- A discrasia agrava, mas não explica a maioria dos hematomas.",
-   "B": "**Amplificador.**\n- O anticoagulante aumenta o sangramento de um vaso já não controlado.",
-   "C": "**Peso menor.**\n- O anti-inflamatório altera plaquetas, mas pesa menos que a hemostasia."
+   "A": "As doenças da coagulação agravam o sangramento, mas são incomuns e não explicam a maioria dos hematomas.",
+   "B": "O anticoagulante aumenta o sangramento de um vaso já mal controlado, mas não é o fator principal.",
+   "C": "O anti-inflamatório altera as plaquetas, mas pesa menos que a hemostasia feita na cirurgia."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **hematoma** depois de uma artroplastia é um acúmulo de sangue na ferida. Ele parece um problema pequeno, mas pode ter consequências sérias: distende a ferida, favorece a **abertura** dos pontos e a **drenagem persistente** de líquido. E a ferida que drena por muito tempo é uma porta de entrada importante para a **infecção da prótese**.\n\n**Os fatores que levam ao hematoma**:\n\n**hemostasia intraoperatória inadequada**: é o fator **mais importante**. Hemostasia é o controle do sangramento durante a cirurgia, ligando ou cauterizando os vasos. Se algum vaso fica sangrando, forma-se o hematoma. É o único fator **totalmente sob controle do cirurgião**;\n\n**anticoagulantes** usados para prevenir trombose: eles **amplificam** o sangramento de um vaso que não foi bem controlado, mas não são a causa principal;\n\n**anti-inflamatórios e antiagregantes**: alteram a função das plaquetas, com peso menor;\n\n**doenças da coagulação**: são incomuns, mas graves;\n\n**espaço morto** e fechamento inadequado por planos: favorecem o acúmulo.\n\n**Prevenção**: hemostasia cuidadosa (vasos perfurantes, artérias circunflexas, leito do acetábulo); uso do **ácido tranexâmico**, que reduz o sangramento e as transfusões; fechamento meticuloso por planos; e uma profilaxia de trombose bem equilibrada.\n\n**Conduta**: se a ferida continua drenando por muitos dias, considera-se uma reabordagem cirúrgica para lavar e limpar, antes que a infecção se instale.\n\n**Na prova**: o fator mais importante na formação do hematoma é a hemostasia intraoperatória inadequada.",
+  "correta": "A hemostasia intraoperatória inadequada. O controle do sangramento durante a cirurgia é o que decide se haverá coleção, e está totalmente nas mãos do cirurgião.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0206": {
