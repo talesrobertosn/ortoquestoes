@@ -191,14 +191,14 @@
   "conferido": false
  },
  "conceitos-basicos-0018": {
-  "conceito": "### O que a haste faz sozinha\nOcupa o canal e funciona como **tutor interno**:\n- Controla bem o **alinhamento angular**.\n- Controla a **translação**.\n\n### O que ela não controla (fratura multifragmentar)\n- ==Rotação==: nada impede o fragmento de girar em torno da haste.\n- ==Encurtamento==: nada impede que os fragmentos deslizem ao longo dela.\n\n### O bloqueio\nParafusos proximais e distais travam essas duas coisas: construto **estático**.\n\n### Dinâmico x estático\n- **Estático:** bloqueio nos dois extremos; para fraturas **instáveis** (cominutivas, segmentares).\n- **Dinâmico:** bloqueio num só extremo (ou em orifício oblongo); fraturas **estáveis** axialmente, permite compressão com a carga.\n- **Dinamização:** retirar parafusos para estimular a consolidação em retardo.\n\n> **Na prova:** bloqueio da haste controla ==rotação e encurtamento==.",
-  "correta": "**Rotacional e encurtamento.**\n- O que o bloqueio acrescenta à haste.",
   "incorretas": {
-   "A": "**A haste já controla.**\n- Angulação e translação dependem da própria haste.",
-   "B": "**Angular não.**\n- O encurtamento está certo; a angulação é controlada pela haste.",
-   "C": "**Translação não.**\n- A rotação está certa; a translação é da haste."
+   "A": "A angulação e a translação já são controladas pela própria haste dentro do canal.",
+   "B": "O encurtamento está certo, mas a angulação é controlada pela haste.",
+   "C": "A rotação está certa, mas a translação é controlada pela haste."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A **haste intramedular** é uma barra metálica colocada dentro do canal do osso, como uma tala interna. Por ocupar o canal, ela sozinha já controla bem duas coisas: impede que o osso **dobre** (angulação) e impede que os fragmentos se desloquem para o lado (**translação**), porque os dois fragmentos estão \"enfiados\" na mesma haste.\n\nMas há duas coisas que a haste sozinha não controla, sobretudo numa fratura **multifragmentar** (com vários pedaços, sem contato firme entre as pontas principais):\n\n**Rotação**: o fragmento pode girar em torno da haste, como um anel girando num dedo.\n\n**Encurtamento**: os fragmentos podem escorregar ao longo da haste, um entrando sobre o outro, e o osso fica mais curto.\n\nOs **parafusos de bloqueio** resolvem isso. Eles atravessam o osso e a haste, nas pontas de cima e de baixo, travando o fragmento à haste. Com parafusos nas duas extremidades, a montagem é chamada de **estática**: nem gira nem encurta. É a escolha para fraturas instáveis, como as cominutivas e as segmentares.\n\nQuando a fratura é estável no eixo (por exemplo, um traço transverso com bom contato), pode-se bloquear só uma das pontas ou usar um orifício alongado: é a montagem **dinâmica**, que deixa a carga comprimir o foco. E, se a consolidação demora, retirar os parafusos de uma das pontas (**dinamização**) pode estimular o calo.",
+  "correta": "Rotacional e encurtamento. São os dois desvios que a haste sozinha não impede numa fratura multifragmentar, e que os parafusos de bloqueio travam.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0019": {
@@ -213,285 +213,285 @@
   "conferido": false
  },
  "conceitos-basicos-0020": {
-  "conceito": "### O fixador como alavanca\nA estabilidade do fixador uniplanar aumenta com:\n- **Pinos mais grossos** e em **maior número**.\n- ==Pinos do mesmo fragmento afastados entre si==: maior braço de apoio, mais resistência à angulação.\n- **Pinos próximos do foco**: encurta o vão livre.\n- **Barra próxima do osso**: menor braço de alavanca.\n- **Barra dupla** (empilhada) ou montagem em mais planos.\n\n### A regra prática\nO arranjo ideal em cada fragmento: um pino **perto** do foco e outro **longe** dele.\n\n### Os erros clássicos\n- Barra afastada do osso: o jeito mais rápido de deixar o fixador instável.\n- Pinos todos agrupados no meio do fragmento.\n\n> **Na prova:** fixador mais estável = ==pinos afastados no mesmo fragmento==, perto do foco e barra perto do osso.",
-  "correta": "**Maior distância entre os pinos do mesmo lado da fratura.**\n- Amplia o braço de apoio em cada fragmento.",
   "incorretas": {
-   "A": "**Reduz rigidez.**\n- Barras separadas em montagem dupla aumentam a rigidez.",
-   "B": "**O contrário.**\n- Barra longe do osso aumenta o braço de alavanca.",
-   "D": "**O contrário.**\n- Os pinos centrais devem ficar perto do foco."
+   "A": "Em montagens com barra dupla, afastar as barras entre si aumenta a rigidez. Aproximá-las não estabiliza.",
+   "B": "É o contrário: a barra longe do osso aumenta o braço de alavanca e deixa a montagem mais frouxa.",
+   "D": "É o contrário: os pinos centrais devem ficar perto do foco, para encurtar o trecho de osso sem apoio."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O **fixador externo** segura a fratura por fora do corpo. Pinos atravessam a pele e se prendem ao osso, e uma barra externa liga os pinos de cima aos de baixo. No fixador **uniplanar**, todos os pinos estão num mesmo plano, ligados por uma barra de um lado só do membro.\n\nA estabilidade dessa montagem segue a lógica de uma alavanca. Quanto menores os braços de alavanca e maior a base de apoio, mais firme ela fica. Os fatores que aumentam a estabilidade são:\n\n**Pinos do mesmo fragmento afastados entre si.** Num mesmo lado da fratura, um pino perto do foco e outro longe dele formam uma base larga, que resiste melhor a dobrar. Pinos agrupados no meio do fragmento formam uma base estreita, que gira com facilidade.\n\n**Pinos perto do foco.** Diminui o trecho de osso solto entre os pinos de cima e os de baixo.\n\n**Barra perto do osso.** Quanto mais longe a barra está do osso, maior o braço de alavanca e mais o pino dobra.\n\n**Pinos mais grossos e em maior número.**\n\n**Barra dupla** ou montagem em mais de um plano.\n\nO erro clássico é afastar demais a barra do osso, uma das formas mais rápidas de deixar o fixador frouxo.",
+  "correta": "Maior distância entre os pinos no mesmo lado da fratura. Pinos afastados dentro de cada fragmento formam uma base de apoio mais larga.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0021": {
-  "conceito": "### O vocabulário da dor\n- ==Alodinia==: dor provocada por estímulo que **normalmente não dói** (o lençol sobre o pé, a brisa na pele).\n- **Hiperalgesia:** dor **exagerada** diante de estímulo que já é doloroso.\n- **Hipoestesia / anestesia:** redução / ausência de sensibilidade.\n- **Analgesia:** ausência de dor a estímulo doloroso.\n- **Parestesia:** sensação anormal espontânea (formigamento, picada), não desagradável.\n- **Disestesia:** sensação anormal **desagradável**.\n\n### Onde aparecem\nAlodinia e hiperalgesia são marcas da **sensibilização** (central ou periférica):\n- Dor neuropática.\n- **Síndrome dolorosa regional complexa**.\n- Fibromialgia.\n\n> **Na prova:** alodinia = ==dor a estímulo não doloroso==.",
-  "correta": "**Dor a estímulo que normalmente não é doloroso.**",
   "incorretas": {
-   "A": "**Analgesia.**",
-   "B": "**Parestesia.**",
-   "C": "**Hipoestesia.**"
+   "A": "A ausência de sensibilidade à dor é a analgesia.",
+   "B": "A sensação anormal de picadas e formigamento é a parestesia.",
+   "C": "A sensibilidade diminuída é a hipoestesia."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A avaliação da dor tem um vocabulário próprio, e cada termo descreve uma alteração diferente da sensibilidade.\n\n**Alodinia**: dor provocada por um estímulo que **normalmente não dói**. Por exemplo, o lençol encostando no pé, uma brisa na pele ou um toque leve passam a doer.\n\n**Hiperalgesia**: dor **exagerada** diante de um estímulo que já seria doloroso, como uma picada que dói muito mais do que deveria.\n\n**Hipoestesia**: sensibilidade **diminuída**. Quando ausente, chama-se **anestesia**.\n\n**Analgesia**: ausência de dor diante de um estímulo que deveria doer.\n\n**Parestesia**: sensação anormal e espontânea, como formigamento ou picadas, que não chega a ser desagradável.\n\n**Disestesia**: sensação anormal **desagradável**, como queimação.\n\nAlodinia e hiperalgesia são sinais de **sensibilização**: o sistema nervoso fica \"amplificado\" e passa a interpretar estímulos comuns como perigosos. Aparecem na dor neuropática (por lesão de nervo), na **síndrome dolorosa regional complexa** (uma condição que pode surgir depois de traumas ou cirurgias, com dor desproporcional, inchaço e alterações de cor e temperatura) e na fibromialgia.",
+  "correta": "Dor a estímulo que normalmente não deve ser doloroso. É a definição de alodinia, sinal de que o sistema nervoso está sensibilizado.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0022": {
-  "conceito": "### A dipirona (metamizol)\n- **Analgésica e antitérmica** potente.\n- Praticamente **sem efeito anti-inflamatório periférico**.\n\nEssa dissociação denuncia o mecanismo: ação predominantemente **central**, com ==inibição das prostaglandinas centrais==, e participação de vias canabinoides e opioidérgicas endógenas.\n\n### Consequências práticas\n- Não bloqueia de forma relevante a COX-1 periférica: **sem dano gástrico** e sem inibição plaquetária importante.\n- Útil no **perioperatório** ortopédico e em quem não pode usar AINE.\n- Pode causar **hipotensão** na infusão rápida.\n\n### O efeito adverso que a marca\n**Agranulocitose**, rara, mas grave. Por isso é proibida em alguns países e usada amplamente no Brasil.\n\n> **Na prova:** dipirona = ==inibe prostaglandinas centrais==.",
-  "correta": "**Inibição das prostaglandinas centrais.**",
   "incorretas": {
-   "A": "**Mecanismo dos AINEs.**\n- A dipirona não inibe a COX-1 periférica de forma relevante.",
-   "B": "**Não é o mecanismo.**",
-   "C": "**Metaboliza, não é alvo.**"
+   "A": "A inibição da COX-1 nos tecidos é o mecanismo dos anti-inflamatórios comuns, responsável pela agressão ao estômago. A dipirona não age assim de forma relevante.",
+   "B": "A inibição da serotonina não é o mecanismo da dipirona.",
+   "C": "O citocromo P450 é um sistema de enzimas do fígado que metaboliza remédios. Não é o alvo da dipirona."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A **dipirona** (também chamada de metamizol) é um analgésico e antitérmico muito usado no Brasil. Uma característica a denuncia: ela alivia bem a dor e a febre, mas quase **não tem efeito anti-inflamatório** nos tecidos. Isso indica que ela age principalmente no **sistema nervoso central**, e não no local da lesão.\n\nO mecanismo mais aceito é a **inibição das prostaglandinas no sistema nervoso central**. As prostaglandinas são substâncias que participam da dor, da febre e da inflamação. Os anti-inflamatórios comuns (AINEs, como ibuprofeno e diclofenaco) bloqueiam as enzimas COX que as produzem em todo o corpo, inclusive no estômago e nas plaquetas. A dipirona age mais no centro, e há também participação de vias canabinoides e opioides próprias do organismo.\n\nPor isso, ela tem vantagens práticas: não agride o estômago como os anti-inflamatórios e quase não interfere na coagulação. É muito útil no pós-operatório ortopédico e em pacientes que não podem usar anti-inflamatórios. Pode baixar a pressão se for injetada rápido na veia.\n\nO efeito adverso mais temido é a **agranulocitose**, uma queda grave dos glóbulos brancos de defesa. É rara, mas por causa dela a dipirona é proibida em alguns países.",
+  "correta": "Inibição das prostaglandinas centrais. A dipirona age principalmente no sistema nervoso central, o que explica o bom efeito analgésico com pouco efeito anti-inflamatório.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0023": {
-  "conceito": "### O ponto óbvio e o CORA\n- **Deformidade angular pura:** os eixos proximal e distal se cruzam exatamente no **ápice visível** (o ponto óbvio).\n- **CORA fora do ápice:** há um segundo componente somado à angulação, a ==translação==.\n\n### Por que importa\n- Osteotomia no ápice aparente, sem considerar a translação, **alinha o ângulo e deixa o osso deslocado**.\n- Opções: osteotomia no CORA (com a dobradiça nele) ou osteotomia no nível desejado com **translação** associada.\n\n### Outras situações de CORA\n- **Multiapical:** vários CORAs, cada segmento com seu eixo.\n- **Rotacional:** não aparece no traçado bidimensional; avalia-se clinicamente ou por tomografia.\n\n> **Na prova:** CORA diferente do ápice = ==translação== associada.",
-  "correta": "**Translacional.**\n- A translação separa o CORA do ápice aparente.",
   "incorretas": {
-   "A": "**Comprimento.**\n- Deformidade axial não desloca o CORA.",
-   "B": "**CORA no ápice.**\n- Uniapical pura é quando coincidem.",
-   "C": "**Não aparece em 2D.**\n- A rotação não se mede no traçado radiográfico."
+   "A": "A deformidade axial é de comprimento e não tira o CORA do vértice.",
+   "B": "Na deformidade uniapical pura, o CORA coincide com o ponto óbvio.",
+   "C": "A rotação não aparece no traçado bidimensional da radiografia e não explica o CORA fora do vértice."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Quando um osso está torto, o planejamento da correção usa o **CORA** (do inglês *center of rotation of angulation*, centro de rotação da angulação): o ponto em que se cruzam o eixo do fragmento de cima e o eixo do fragmento de baixo.\n\nNuma **angulação pura**, o osso apenas dobrou num ponto. Os dois eixos se cruzam exatamente no vértice visível da curva, o \"ponto óbvio\" da deformidade.\n\nQuando o CORA **não coincide** com esse ponto visível, é porque existe outro componente somado à angulação: a **translação**, ou seja, um dos fragmentos está deslocado para o lado em relação ao outro. Essa translação desloca os eixos e tira o cruzamento do lugar.\n\nIsso tem consequência direta na cirurgia. Se o cirurgião cortar no vértice aparente e simplesmente endireitar o ângulo, o osso fica reto, mas com um \"degrau\" de lado. Para corrigir bem, ele pode cortar no próprio CORA, ou cortar no nível desejado e deslocar os fragmentos para compensar a translação.\n\nOutras situações: deformidades com várias curvas têm vários CORAs (multiapicais). E a deformidade **rotacional** (osso torcido em torno do próprio eixo) não aparece no traçado da radiografia de frente ou perfil; ela é avaliada no exame físico ou na tomografia.",
+  "correta": "Translacional. Quando o CORA fica fora do vértice visível, há um deslocamento lateral somado à angulação.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0024": {
-  "conceito": "### A definição\nCORA = centro de rotação da angulação: ==a interseção dos eixos proximal e distal==.\n- Traça-se o eixo do fragmento proximal.\n- Traça-se o eixo do fragmento distal.\n- Marca-se onde se cruzam.\n\nA magnitude da deformidade é o **ângulo** entre esses eixos.\n\n### Por que é a chave do planejamento (Paley)\n- **Regra 1:** osteotomia no CORA, com dobradiça nele, corrige o ângulo **sem translação**.\n- **Regra 2:** osteotomia fora do CORA com dobradiça no CORA corrige com **translação** automática, compatível.\n- **Regra 3:** osteotomia fora do CORA com dobradiça fora dele **cria translação** indesejada.\n\n### Eixos\nPodem ser **anatômicos** (linha média da diáfise) ou **mecânicos** (centro articular a centro articular).\n\n> **Na prova:** CORA = ==cruzamento dos eixos proximal e distal==.",
-  "correta": "**A interseção dos eixos proximal e distal.**",
   "incorretas": {
-   "A": "**Não define rotação.**",
-   "B": "**Mede o desvio.**\n- O eixo mecânico é matéria-prima do traçado, não o CORA.",
-   "C": "**Matéria-prima.**\n- O eixo anatômico é traçado; o CORA é o cruzamento de dois deles."
+   "A": "O centro anatômico do osso não define o ponto de rotação da deformidade.",
+   "B": "O eixo mecânico é uma das linhas usadas para traçar a deformidade, e não o CORA em si.",
+   "C": "O eixo anatômico também é uma linha usada no traçado. O CORA é o cruzamento de dois eixos."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Quando uma fratura consolida torta (**consolidação viciosa**), é preciso medir a deformidade para planejar a correção. A ferramenta é o **CORA**, sigla em inglês para *center of rotation of angulation*, o centro de rotação da angulação.\n\nA definição é geométrica. Na radiografia, traça-se o **eixo do fragmento de cima** e o **eixo do fragmento de baixo**. O ponto em que essas duas linhas se cruzam é o CORA. O ângulo entre elas é o tamanho da deformidade.\n\nOs eixos podem ser **anatômicos** (a linha que passa pelo meio da diáfise do osso) ou **mecânicos** (a linha que liga o centro de uma articulação ao centro da outra). Eles são a matéria-prima do traçado; o CORA é o cruzamento.\n\nO CORA é a chave do planejamento das osteotomias, segundo os princípios de Paley:\n\nSe o corte e a \"dobradiça\" da correção estão no CORA, o ângulo é corrigido sem criar deslocamento lateral.\n\nSe o corte está fora do CORA, mas a dobradiça está nele, a correção vem junto com um deslocamento que compensa e alinha os eixos.\n\nSe o corte e a dobradiça estão fora do CORA, cria-se um deslocamento indesejado, e o osso fica alinhado em ângulo mas \"em degrau\".",
+  "correta": "A intersecção dos eixos proximal e distal do osso envolvido. É o ponto em que as linhas dos dois fragmentos se cruzam.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0025": {
-  "conceito": "### Os três grupos do líquido sinovial\n- **Normal/mecânico** (artrose, trauma): abaixo de ~2.000 células, mononucleares.\n- **Inflamatório** (gota, AR, reativas): ~2.000 a 50.000, neutrófilos variáveis.\n- **Séptico:** ==acima de 50.000==, muitas vezes acima de 100.000, com ==predomínio de neutrófilos== (acima de 75 a 90%), glicose baixa e aspecto turvo.\n\n### O número orienta, não decide\n- Artrite séptica inicial ou tratada com antibiótico pode vir com contagem menor.\n- **Kingella kingae** na criança pequena costuma dar contagens mais baixas e cultura difícil (usar frasco de hemocultura e PCR).\n- Quem decide é a **cultura** (e o quadro clínico).\n\n### Em prótese\nOs cortes para infecção são **bem mais baixos**.\n\n> **Na prova:** séptica = ==mais de 50.000 com neutrófilos==.",
-  "correta": "**Acima de 50.000 com predomínio de neutrófilos.**",
   "incorretas": {
-   "A": "**Linfócitos não.**\n- A infecção bacteriana aguda recruta neutrófilos.",
-   "C": "**Inflamatório.**\n- Faixa e diferencial afastam a piogênica.",
-   "D": "**Faixa inflamatória.**\n- O diferencial está certo, a contagem não."
+   "A": "A contagem está certa, mas a infecção bacteriana aguda atrai neutrófilos, e não linfócitos.",
+   "C": "A faixa de 15.000 a 25.000 com linfócitos aponta para um líquido inflamatório, e não para infecção bacteriana.",
+   "D": "Os neutrófilos estão certos, mas a contagem de 15.000 a 25.000 fica na faixa inflamatória."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A análise do líquido retirado de uma articulação ajuda a separar três situações, principalmente pela contagem de leucócitos (glóbulos brancos) e pelo tipo de célula que predomina.\n\n**Líquido normal ou mecânico** (como na artrose ou depois de um trauma): poucas células, abaixo de cerca de 2.000 por mm³, com predomínio de células mononucleares.\n\n**Líquido inflamatório** (como na gota, na artrite reumatoide e nas artrites reativas): contagem intermediária, de cerca de 2.000 a 50.000.\n\n**Líquido séptico** (infecção bacteriana): contagem alta, **acima de 50.000** células por mm³, muitas vezes acima de 100.000, com **predomínio de neutrófilos**, as células de defesa que chegam primeiro contra bactérias. O líquido costuma ser turvo e a glicose, baixa.\n\nMas o número orienta, não decide sozinho. Uma artrite séptica no começo, ou já tratada com antibiótico, pode ter contagem mais baixa. Na criança pequena, a bactéria *Kingella kingae* costuma dar contagens menores e é difícil de crescer na cultura; por isso, é útil colocar o líquido em frasco de hemocultura e pedir PCR (exame que detecta o material genético da bactéria). Quem confirma o diagnóstico é a cultura, junto com o quadro clínico.\n\nEm articulações com prótese, os limites para suspeitar de infecção são bem mais baixos.",
+  "correta": "Superior a 50.000 cel/mm³ e predomínio de neutrófilos. É o padrão do líquido de uma infecção bacteriana aguda.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0026": {
-  "conceito": "### O que sobra no aloenxerto\nO homólogo passa por processamento (congelamento, liofilização, irradiação) que:\n- **Elimina as células vivas**: sem osteogênese.\n- Reduz os fatores de crescimento: osteoindução **pequena e variável**.\n- Mantém a **arquitetura mineralizada**.\n\nA propriedade principal é a ==osteocondução==: arcabouço sobre o qual o osso do hospedeiro cresce.\n\n### Exceção\nA **matriz óssea desmineralizada** preserva proteínas indutoras (BMPs): tem osteoindução relevante.\n\n### Riscos do aloenxerto\n- Transmissão de doença (muito baixa com triagem).\n- Resposta imune.\n- Incorporação lenta; aloenxerto estrutural grande pode **fraturar** ou não consolidar na junção.\n\n> **Na prova:** aloenxerto = ==osteocondução==; autólogo = as três.",
-  "correta": "**Osteocondução.**\n- O aloenxerto é arcabouço.",
   "incorretas": {
-   "A": "**Sem células.**\n- O processamento elimina as células vivas.",
-   "B": "**Residual.**\n- Pequena e variável no aloenxerto convencional.",
-   "D": "**Não é propriedade clássica.**"
+   "A": "A osteogênese exige células vivas, e o processamento do aloenxerto elimina as células.",
+   "B": "A osteoindução do aloenxerto comum é pequena e variável, porque o processamento reduz as proteínas indutoras.",
+   "D": "Osteorregulação não é uma das propriedades clássicas usadas para classificar enxertos."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O **enxerto ósseo homólogo**, também chamado de **aloenxerto**, é osso retirado de um doador, geralmente de banco de ossos. Antes de ser usado, ele passa por um processamento (congelamento, liofilização, irradiação) para reduzir o risco de transmitir doenças e de rejeição. Esse processamento muda as propriedades do osso.\n\nUm enxerto pode ajudar a formar osso de três formas:\n\n**Osteogênese**: trazer células vivas que formam osso. O processamento mata as células, então o aloenxerto **não tem** essa propriedade.\n\n**Osteoindução**: trazer sinais (como as BMPs, proteínas morfogenéticas ósseas) que fazem as células do paciente virar células formadoras de osso. O processamento reduz muito esses sinais; no aloenxerto comum, a osteoindução é pequena e variável.\n\n**Osteocondução**: servir de **andaime**, uma estrutura por onde os vasos e as células do paciente crescem e depositam osso novo. A arquitetura mineral do osso é mantida, então essa é a **principal propriedade** do aloenxerto.\n\nUma exceção: a **matriz óssea desmineralizada**, um tipo de aloenxerto em que se retira o mineral, preserva parte das proteínas indutoras e tem osteoindução relevante.\n\nO enxerto do próprio paciente (autólogo) é o único que tem as três propriedades. O aloenxerto, por sua vez, incorpora mais devagar e, quando é um bloco grande, pode fraturar ou não consolidar com o osso do paciente.",
+  "correta": "Osteocondução. O processamento mata as células e reduz os sinais, mas mantém a estrutura mineral, que funciona como andaime.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0027": {
-  "conceito": "### O problema\nPlaca moldada **exatamente** ao osso, ao ser apertada, comprime a cortical **abaixo dela** e deixa a cortical **oposta abrir** (gap).\n\n### As duas escolhas\n- ==Pré-tensionamento==: leve **sobrecontorno** da placa, que toca o osso primeiro nas pontas. Ao ser aparafusada, comprime também a **cortical distante**.\n- ==Parafusos iniciais próximos ao traço==, em posição **excêntrica** no orifício dinâmico: a cabeça desliza na rampa e empurra os fragmentos um contra o outro.\n\n### Estabilidade absoluta\n- Compressão interfragmentária, sem micromovimento.\n- Consolidação **primária** (direta), sem calo.\n- Indicada em fraturas **simples** (transversas, oblíquas curtas) e articulares.\n\n> **Na prova:** placa de compressão = ==pré-tensionada, parafusos iniciais perto do traço==.",
-  "correta": "**Pré-tensionada, parafusos iniciais próximos ao traço.**",
   "incorretas": {
-   "A": "**Placa errada.**\n- Só moldada, deixa a cortical oposta abrir.",
-   "B": "**Erra as duas.**",
-   "D": "**Parafusos errados.**\n- Longe do traço não geram compressão."
+   "A": "Os parafusos perto do traço estão certos, mas uma placa apenas moldada ao osso deixa a cortical oposta abrir.",
+   "B": "Erra os dois: a placa só moldada deixa a cortical oposta abrir, e os parafusos longe do traço comprimem menos.",
+   "D": "A placa pré-tensionada está certa, mas os parafusos iniciais devem ficar perto do traço."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Na **estabilidade absoluta**, o objetivo é que os fragmentos fiquem tão comprimidos que não haja nenhum micromovimento entre eles. Assim, o osso consolida de forma **direta** (consolidação primária), sem formar calo. É a estratégia para fraturas simples, como as transversas e as oblíquas curtas, e para fraturas que entram na articulação.\n\nUma forma de conseguir isso é a **placa de compressão**, e dois detalhes técnicos fazem a diferença.\n\n**A placa pré-tensionada.** Se a placa for moldada exatamente no formato do osso, ao apertá-la, ela comprime só a cortical que fica logo abaixo dela. A cortical do lado oposto tende a se abrir, deixando uma fenda. Para evitar isso, o cirurgião dobra a placa levemente a mais (um sobrecontorno), de modo que ela fique um pouco afastada do osso no meio, sobre a fratura. Ao parafusar, a placa se achata contra o osso e comprime também a cortical do lado oposto.\n\n**Os primeiros parafusos perto do traço.** Os orifícios dessas placas têm uma rampa. Quando o parafuso é colocado de forma excêntrica (do lado do orifício mais longe da fratura), ao apertar, a cabeça desliza na rampa e empurra o fragmento em direção ao outro, comprimindo o foco. Colocar esses parafusos perto do traço aproveita melhor esse efeito.",
+  "correta": "Pré-tensionada e os parafusos iniciais próximos ao traço de fratura. O sobrecontorno comprime também a cortical oposta, e os parafusos excêntricos perto do traço empurram os fragmentos um contra o outro.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0028": {
-  "conceito": "### O que é\nSobrecrescimento terminal: complicação **exclusiva da criança** amputada.\n- **Não vem da fise**: o osso cresce por **aposição** na extremidade seccionada.\n- Forma uma espícula que **perfura a pele** por dentro do coto (bursite, úlcera).\n- Frequente nas amputações **transdiafisárias**; não ocorre nas desarticulações.\n\n### Onde\nOrdem de frequência: ==úmero==, fíbula, tíbia, fêmur.\n\n### Tratamento\n- **Epifisiodese não resolve**: o crescimento não é fisário.\n- Ressecção simples: recidiva.\n- O eficaz é ==capear== a extremidade com **enxerto osteocondral** autólogo (ex.: de peça amputada, crista ilíaca, metatarso), que fecha a ponta com cartilagem.\n\n### Prevenção\nSempre que possível, **desarticular** em vez de amputar através da diáfise na criança.\n\n> **Na prova:** sobrecrescimento do coto = ==úmero, tratado com capeamento osteocondral==.",
-  "correta": "**Úmero, com enxerto osteocondral.**",
   "incorretas": {
-   "A": "**Osso e tratamento errados.**",
-   "B": "**Tratamento errado.**\n- A epifisiodese não age sobre crescimento aposicional.",
-   "C": "**Osso errado.**\n- O mais acometido é o úmero."
+   "A": "Erra o osso e o tratamento: o mais acometido é o úmero, e a epifisiodese não age sobre esse tipo de crescimento.",
+   "B": "O osso está certo, mas a epifisiodese não resolve, porque o crescimento é na ponta cortada, e não na fise.",
+   "C": "O tratamento está certo, mas o osso mais acometido é o úmero, e não o fêmur."
   },
+  "conceito": "Quando uma criança sofre uma amputação que corta o osso no meio da diáfise (amputação transdiafisária), pode aparecer uma complicação que só existe na criança: o **sobrecrescimento terminal do coto**.\n\nO nome engana. Esse crescimento **não vem da placa de crescimento** (fise). Ele acontece na própria ponta cortada do osso, que vai depositando osso novo por fora, por aposição, como uma espícula pontuda. Com o tempo, essa ponta cresce mais que os tecidos moles ao redor e pode furar a pele por dentro do coto, causando dor, bursite e feridas.\n\nO osso mais acometido é o **úmero**, seguido da fíbula, da tíbia e do fêmur. A complicação não ocorre nas **desarticulações** (amputações feitas na articulação, sem cortar o osso).\n\nO tratamento tem uma lógica importante. A **epifisiodese** (fechar a placa de crescimento) não resolve, porque o crescimento não vem dali. Simplesmente cortar a ponta costuma levar a recidiva. O que funciona é **capear** a ponta do osso com um **enxerto osteocondral** (um pedaço de osso com cartilagem, retirado, por exemplo, da parte amputada, da crista ilíaca ou de um metatarso). A cartilagem fecha a ponta e impede o crescimento.\n\nA melhor prevenção é, sempre que possível, desarticular em vez de cortar o osso no meio na criança.",
+  "correta": "Úmero e melhor tratado com enxerto osteocondral. O úmero é o osso mais acometido, e capear a ponta com cartilagem bloqueia o crescimento por aposição.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 14"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0029": {
-  "conceito": "### A perna de tenista\nLesão da **junção miotendínea** da ==cabeça medial== do gastrocnêmio, quase sempre ==parcial==.\n\n### Por que a medial\n- É a **maior** cabeça.\n- Sofre o maior alongamento na posição de risco: joelho estendido e tornozelo em dorsiflexão, com contração excêntrica.\n\n### O quadro\n- Dor súbita na panturrilha, **sensação de pedrada**.\n- Dor localizada na transição ventre-tendão medial.\n- Equimose que desce ao tornozelo dias depois.\n\n### Diagnóstico e tratamento\n- **Ultrassom** confirma e exclui TVP associada.\n- Tratamento **conservador**: gelo, compressão, calcanhar elevado, carga progressiva e fisioterapia.\n\n> **Na prova:** perna de tenista = ==parcial da cabeça medial==.",
-  "correta": "**Parcial na cabeça medial.**",
   "incorretas": {
-   "A": "**Excepcional.**\n- A cabeça lateral é raramente acometida.",
-   "B": "**Total é rara.**",
-   "C": "**Cabeça errada.**"
+   "A": "A cabeça lateral raramente é acometida, e a ruptura total é rara.",
+   "B": "A cabeça medial está certa, mas a ruptura total é rara. O padrão típico é a parcial.",
+   "C": "A ruptura parcial está certa, mas a cabeça acometida costuma ser a medial."
   },
+  "conceito": "A **perna de tenista** (*tennis leg*) é a ruptura do músculo **gastrocnêmio**, o músculo da panturrilha, na transição entre o músculo e o tendão. Ela acontece tipicamente em adultos de meia-idade, durante um arranque ou uma mudança de direção no esporte.\n\nO gastrocnêmio tem duas cabeças, a medial e a lateral. A lesão acontece quase sempre na **cabeça medial**, por dois motivos: ela é a maior das duas, e é a que mais se alonga na posição de risco, com o joelho esticado e o pé puxado para cima enquanto o músculo faz força (contração excêntrica).\n\nNa maioria das vezes, a ruptura é **parcial**: uma parte das fibras se rompe, e não o músculo inteiro.\n\nO paciente sente uma dor súbita na panturrilha, muitas vezes descrita como se tivesse levado uma pedrada ou um chute por trás. A dor fica localizada na parte de dentro da panturrilha, e alguns dias depois aparece um hematoma roxo que desce até o tornozelo.\n\nO **ultrassom** confirma a lesão e é útil também para descartar uma trombose venosa profunda, que pode causar dor parecida ou aparecer junto. O tratamento é conservador: gelo, compressão, calcanhar elevado, retorno gradual da carga e fisioterapia.",
+  "correta": "Parcial na cabeça medial. A cabeça medial é a maior e mais alongada na posição de risco, e a ruptura costuma atingir só parte das fibras.",
   "referencias": [
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 15.4"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0030": {
-  "conceito": "### Comparando os dois esponjosos\n- **Autólogo:** as três propriedades. **Osteogênese** (células vivas), **osteoindução** (fatores de crescimento) e **osteocondução** (arcabouço).\n- **Homólogo:** perde a osteogênese no processamento; mantém o arcabouço e alguma capacidade indutora.\n\nEm comum: ==osteocondução e osteoindução==.\n\n### Por que o autólogo segue padrão-ouro na pseudartrose\nA **osteogênese** é exclusiva dele.\n- Crista ilíaca (anterior ou posterior).\n- **RIA** (fresador-irrigador-aspirador) do canal femoral: grande volume.\n- Custo: morbidade da área doadora (dor, lesão do cutâneo femoral lateral, hematoma).\n\n### Vascularização\nNão é propriedade do enxerto esponjoso não vascularizado: ele é **revascularizado pelo hospedeiro**. Enxertos vascularizados (fíbula) são outra categoria.\n\n> **Na prova:** comum a autólogo e homólogo = ==condução e indução==.",
-  "correta": "**Osteocondução e osteoindução.**\n- A osteogênese é exclusiva do autólogo.",
   "incorretas": {
-   "A": "**Osteogênese não.**\n- O homólogo não tem célula viva.",
-   "B": "**Osteogênese não.**",
-   "D": "**Não é propriedade.**\n- O esponjoso é revascularizado pelo hospedeiro."
+   "A": "O homólogo não tem osteogênese, porque o processamento mata as células.",
+   "B": "Pelo mesmo motivo, a osteogênese não é comum aos dois.",
+   "D": "A vascularização não é uma propriedade do enxerto esponjoso, que é revascularizado pelo paciente."
   },
+  "conceito": "Para tratar uma **pseudartrose** (fratura que não consolidou), muitas vezes se usa **enxerto ósseo esponjoso**, o osso \"de miolo\", poroso. Ele pode ser **autólogo** (do próprio paciente, geralmente da crista ilíaca) ou **homólogo** (de doador, de banco de ossos).\n\nUm enxerto pode ajudar a formar osso de três formas:\n\n**Osteogênese**: traz células vivas que formam osso.\n\n**Osteoindução**: traz sinais químicos (como as BMPs) que fazem as células do paciente se transformarem em células formadoras de osso.\n\n**Osteocondução**: oferece um andaime por onde o osso do paciente cresce.\n\nO **autólogo** tem as três. O **homólogo** perde a osteogênese, porque o processamento do banco de ossos mata as células, mas mantém o andaime e alguma capacidade indutora. Por isso, o que os dois têm **em comum** é a **osteocondução e a osteoindução**.\n\nA osteogênese, exclusiva do autólogo, é o que o mantém como padrão de referência na pseudartrose. O preço é a dor e as complicações no local de onde o osso foi retirado. Outra fonte de autólogo em grande volume é o canal do fêmur, colhido por um aparelho que fresa, irriga e aspira (RIA).\n\n\"Vascularização\" não é uma propriedade do enxerto esponjoso: ele não traz vasos próprios; é o paciente que o revasculariza. Enxertos que vêm com vasos próprios, como a fíbula vascularizada, são outra categoria.",
+  "correta": "Osteocondução e osteoindução. As duas propriedades estão presentes no esponjoso autólogo e no homólogo; a osteogênese é exclusiva do autólogo.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 1"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0031": {
-  "conceito": "### A placa convencional\n- Funciona pelo **atrito**: os parafusos apertam a placa contra o osso.\n- Custo 1: a placa **esmaga o periósteo** sob ela.\n- Custo 2: cada parafuso trabalha **isolado** e pode se soltar em osso ruim, um a um.\n\n### A placa bloqueada\nRosca na cabeça do parafuso e no orifício: construto de **ângulo fixo**.\n- Funciona como **fixador externo interno**: não precisa encostar no osso, preservando o ==fluxo periosteal==.\n- Os parafusos não se soltam individualmente: ==resistência ao arrancamento do parafuso==. O construto só falha se todos falharem juntos.\n\n### Onde brilha\n- Osso **osteoporótico**.\n- Fraturas **periarticulares** com fragmento curto.\n- Técnica **em ponte** minimamente invasiva.\n\n### Cuidados\nConstruto muito rígido pode retardar a consolidação em fraturas cominutivas: espaçar os parafusos e deixar o vão da placa trabalhar.\n\n> **Na prova:** placa bloqueada = ==preserva o periósteo e o parafuso não arranca==.",
-  "correta": "**Fluxo periosteal e resistência ao deslocamento do parafuso.**",
   "incorretas": {
-   "A": "**Erra os dois.**\n- O fluxo preservado é o periosteal, e o mérito é do parafuso.",
-   "B": "**Mecânica errada.**\n- A placa nem precisa se apoiar no osso; o mérito é o parafuso não soltar.",
-   "C": "**Fluxo errado.**\n- O periosteal é o preservado."
+   "A": "Erra os dois: o fluxo preservado é o periosteal, e a vantagem mecânica é a do parafuso, que não se solta.",
+   "B": "O fluxo periosteal está certo, mas a vantagem não é da placa, que nem precisa encostar no osso. É o parafuso travado que não se solta.",
+   "C": "A resistência do parafuso está certa, mas o fluxo preservado é o periosteal, e não o endosteal."
   },
+  "conceito": "A **placa convencional** funciona pelo **atrito**. Os parafusos apertam a placa contra o osso, e é esse atrito entre placa e osso que segura a fratura. Isso tem dois custos. Primeiro, a placa esmaga o **periósteo** que fica embaixo dela, prejudicando o sangue que chega ao osso por fora. Segundo, cada parafuso trabalha sozinho: em osso fraco, eles podem se soltar um a um.\n\nNa **placa bloqueada**, a cabeça do parafuso tem rosca e se trava no orifício da placa, que também tem rosca. Placa e parafusos formam uma peça única, de **ângulo fixo**. Isso muda a mecânica:\n\nA placa **não precisa encostar** no osso. Ela funciona como um \"fixador externo colocado por dentro\". Por isso, **preserva o fluxo sanguíneo periosteal**.\n\nOs parafusos **não se soltam individualmente**. Como estão travados na placa, para a montagem falhar, todos teriam que se soltar ao mesmo tempo. Isso dá **resistência ao arrancamento do parafuso**.\n\nA placa bloqueada é especialmente útil em osso **osteoporótico**, em fraturas perto da articulação com fragmento curto e nas técnicas em ponte por pequenas incisões.\n\nUm cuidado: uma montagem bloqueada muito rígida pode atrapalhar a consolidação em fraturas cominutivas. Espaçar os parafusos deixa a placa trabalhar com alguma flexibilidade.",
+  "correta": "Periosteal e a resistência ao deslocamento do parafuso. A placa não precisa comprimir o periósteo, e os parafusos travados não se soltam um a um.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 11"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0032": {
-  "conceito": "### A hemicalotase\nCorrige deformidade angular alongando **um só lado** do osso:\n- Osteotomia **incompleta**.\n- O fixador distrai a cortical do lado **côncavo**.\n- A cortical oposta funciona como **dobradiça**.\n\n### O regime de distração (Ilizarov)\n- **Latência:** cerca de ==7 dias==, para o calo mole se formar antes de puxar.\n- **Taxa:** ==1 mm por dia==, fracionado em **4 x 0,25 mm**.\n- **Consolidação:** fase que costuma durar o dobro ou mais do tempo de distração.\n\n### Os erros\n- Distrair **antes** da latência: rompe o calo.\n- Distrair **rápido demais**: regenerado fino, consolidação insuficiente.\n- Distrair **devagar demais**: consolidação prematura.\n\n> **Na prova:** distração = ==latência de ~7 dias, 0,25 mm 4x/dia==.",
-  "correta": "**7º dia, 0,25 mm quatro vezes por dia.**",
   "incorretas": {
-   "A": "**Cedo demais.**\n- A taxa está certa, mas o calo mole ainda não se formou.",
-   "C": "**Taxa dobrada.**\n- 2 mm/dia é o dobro do que o osso acompanha.",
-   "D": "**Taxa dobrada.**\n- A latência está certa, a taxa não."
+   "A": "A taxa está certa, mas começar no 3º dia é cedo demais: o calo mole ainda não se formou.",
+   "C": "Começa cedo demais e com o dobro da taxa: 2 mm por dia é mais do que o osso novo consegue acompanhar.",
+   "D": "A latência está certa, mas a taxa de 2 mm por dia é o dobro do recomendado e forma um osso novo fraco."
   },
+  "conceito": "A **hemicalotase** é uma técnica para corrigir um osso torto alongando **só um lado** dele. O cirurgião faz uma osteotomia **incompleta** (um corte que não atravessa o osso inteiro). Um fixador externo vai afastando aos poucos as bordas do corte do lado **côncavo** (o lado \"fechado\" da curva), enquanto a cortical do outro lado, que não foi cortada, funciona como dobradiça. Aos poucos, o osso vai se endireitando.\n\nEssa técnica segue os princípios do alongamento ósseo de **Ilizarov**, em que o calo que se forma num corte de osso pode ser \"esticado\" lentamente, e o osso novo vai preenchendo o espaço. Três fases:\n\n**Latência.** Depois do corte, espera-se cerca de **7 dias** antes de começar a afastar. Nesse período forma-se um calo mole, que vai ser esticado.\n\n**Distração.** O afastamento é feito na taxa de cerca de **1 mm por dia**, dividido em quatro vezes de **0,25 mm**. Dividir em pequenas etapas ajuda o osso novo a acompanhar.\n\n**Consolidação.** Depois de corrigir, o fixador fica até o osso novo endurecer, uma fase que costuma durar mais que a própria distração.\n\nOs erros clássicos: começar cedo demais rompe o calo; afastar rápido demais forma um osso novo fino e fraco; afastar devagar demais deixa o osso consolidar antes da hora, travando a correção.",
+  "correta": "7º dia de pós-operatório com uma taxa de 0,25 mm quatro vezes por dia. É a latência necessária para o calo se formar, seguida da taxa clássica de 1 mm por dia.",
   "referencias": [
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 9"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0033": {
-  "conceito": "### O quadril não mostra sinais locais\nÉ articulação **profunda**, coberta por musculatura espessa: edema e hiperemia, que denunciam a séptica do joelho, **não aparecem**.\n\n### O que se vê é funcional\n- ==Claudicação e recusa de apoio==: o achado mais consistente, e um dos critérios de Kocher.\n- Quadril em **flexão, abdução e rotação externa**: posição de maior volume capsular.\n- Dor intensa à mobilização, sobretudo à **rotação interna**.\n- Febre e irritabilidade; no lactente, pseudoparalisia.\n\n### Conduta\n- Ultrassom mostra derrame.\n- **Punção** confirma.\n- **Drenagem cirúrgica** urgente + antibiótico: o derrame sob pressão ameaça a irrigação da cabeça femoral.\n\n> **Na prova:** séptica do quadril = ==não apoia, claudica==; sem edema visível.",
-  "correta": "**Claudicação e não apoio do membro na marcha.**",
   "incorretas": {
-   "A": "**Não visível.**\n- O quadril é profundo.",
-   "B": "**Presente, mas não domina.**\n- A atitude em flexão, abdução e rotação externa existe, mas a recusa de apoio é o achado mais consistente.",
-   "C": "**Articulação superficial.**\n- Hiperemia não aparece no quadril."
+   "A": "O edema não é visível no quadril, que fica coberto por músculos grossos.",
+   "B": "A posição de defesa (dobrado, aberto e rodado para fora) existe, mas a recusa em apoiar o membro é o achado mais consistente.",
+   "C": "A vermelhidão e a dor ao toque aparecem em articulações superficiais, como o joelho, e não no quadril."
   },
+  "conceito": "O **quadril** é uma articulação **profunda**, coberta por músculos grossos. Por isso, quando ele infecciona (artrite séptica), os sinais locais que aparecem em articulações superficiais, como o joelho, ficam escondidos. Inchaço, vermelhidão e calor praticamente não são vistos.\n\nO que aparece é a **função** alterada:\n\n**Claudicação e recusa em apoiar o peso** no membro. É o achado mais consistente, e por isso a incapacidade de apoio é um dos critérios de Kocher.\n\n**Posição de defesa**: a criança mantém o quadril dobrado, aberto e rodado para fora. Nessa posição, a cápsula da articulação tem mais espaço, e a pressão do líquido dói menos.\n\n**Dor intensa ao mexer** o quadril, principalmente ao rodá-lo para dentro.\n\nFebre e irritabilidade. No bebê, ele pode simplesmente não mexer a perna (pseudoparalisia).\n\nO diagnóstico segue com ultrassom, que mostra o líquido dentro da articulação, e **punção**, que confirma a infecção. O tratamento é **drenagem cirúrgica urgente** e antibiótico. A urgência vem do risco de o pus sob pressão cortar o sangue da cabeça do fêmur e causar necrose.",
+  "correta": "A claudicação e o não apoio do membro na marcha. Como o quadril é profundo, a infecção se mostra pela função, e não por sinais locais.",
   "referencias": [
    "Lovell and Winter's Pediatric Orthopaedics, 7ª edição (Weinstein, Flynn), Cap. 12"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0034": {
-  "conceito": "### O parafuso como rampa\nO parafuso é uma rampa enrolada num cilindro: girá-lo transforma **rotação em avanço linear**.\n\n### O parafuso de tração\n- No fragmento **próximo**: furo de **deslizamento** (diâmetro igual ao da rosca). A rosca não pega.\n- No fragmento **distante**: furo-guia, a rosca pega.\n- Ao apertar, a cabeça puxa o fragmento distante contra o próximo.\n\nO ==torque== aplicado na chave vira ==compressão== interfragmentária.\n\n### Os detalhes que fazem funcionar\n- **Perpendicular ao traço** (ou na bissetriz entre traço e eixo do osso).\n- Se a rosca pegar nos dois fragmentos, **não há tração**: o parafuso só mantém a distância (parafuso de posição).\n- Parafusos parcialmente rosqueados fazem tração por desenho (a rosca deve ficar toda no fragmento distante).\n\n> **Na prova:** parafuso de tração = ==torque em compressão==.",
-  "correta": "**Torque em compressão.**",
   "incorretas": {
-   "A": "**Invertido.**\n- Quem aplica o torque é o cirurgião.",
-   "C": "**Invertido.**",
-   "D": "**Invertido.**\n- A compressão é o produto final."
+   "A": "É o contrário: o torque é a força aplicada pelo cirurgião, e o resultado é compressão.",
+   "C": "Também inverte: a compressão é o produto final, e não a força de entrada.",
+   "D": "A compressão é o resultado, e não algo que o parafuso converte em outra força."
   },
+  "conceito": "Um parafuso é, no fundo, uma rampa enrolada em torno de um cilindro. Quando giramos o parafuso, essa rampa transforma a **rotação** em avanço em linha reta. É por isso que ele entra no osso quando o apertamos.\n\nO **parafuso de tração** usa isso para comprimir dois fragmentos. O truque é que a rosca só pega num dos fragmentos:\n\nNo fragmento **mais perto** da cabeça do parafuso, faz-se um furo largo, do diâmetro da rosca (o furo de deslizamento). A rosca passa por ele sem pegar.\n\nNo fragmento **mais longe**, faz-se um furo mais fino, e a rosca pega no osso.\n\nAo apertar, a cabeça do parafuso se apoia no fragmento perto, e a rosca puxa o fragmento longe em direção a ele. O **torque** que o cirurgião aplica com a chave se transforma em **compressão** entre os fragmentos.\n\nDetalhes que fazem a técnica funcionar: o parafuso deve ficar perpendicular ao traço da fratura. Se a rosca pegar nos dois fragmentos, não há compressão: o parafuso só mantém a distância entre eles (é chamado parafuso de posição). Parafusos com rosca só na ponta fazem tração pelo próprio desenho, desde que toda a rosca fique no fragmento de longe.",
+  "correta": "Torque em compressão. O giro aplicado na chave vira compressão entre os fragmentos, porque a rosca pega só no fragmento distante.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 11"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0035": {
-  "conceito": "### Pouco frequente, muito atrasada\nA osteomielite vertebral é a forma **mais comum de osteomielite hematogênica do adulto**, mas no conjunto das osteomielites piogênicas responde por uma fração pequena: ==cerca de 3 a 5%==.\n\n### O problema é o atraso\n- Dor lombar ou torácica **arrastada**.\n- Febre em apenas parte dos casos.\n- **VHS e PCR** elevados.\n- O intervalo entre início e diagnóstico costuma ser de **semanas a meses**.\n\n### Pontos-chave\n- Germe mais comum: **Staphylococcus aureus**.\n- Grupos de risco: diabetes, idoso, usuário de drogas injetáveis, hemodiálise, bacteremia recente, endocardite.\n- Diagnóstico: **ressonância** + hemoculturas; biópsia guiada se hemoculturas negativas.\n- Destrói o **disco** cedo (espondilodiscite), ao contrário da tuberculose.\n\n> **Na prova:** osteomielite vertebral = ==3 a 5%== das piogênicas.",
-  "correta": "**3 a 5%.**",
   "incorretas": {
-   "B": "**Superestima.**",
-   "C": "**Bem acima do relatado.**",
-   "D": "**Irreal.**\n- A coluna ficaria quase tão frequente quanto os ossos longos."
+   "B": "8 a 10% superestima a frequência da osteomielite vertebral.",
+   "C": "15 a 18% está bem acima do que é relatado.",
+   "D": "20 a 22% faria a coluna quase tão frequente quanto os ossos longos, o que não corresponde à realidade."
   },
+  "conceito": "A **osteomielite** é a infecção do osso. Quando ela é causada por bactérias que formam pus (piogênicas), pode atingir vários ossos, e a maioria dos casos envolve os ossos longos dos membros. A infecção das **vértebras** responde por uma parte pequena do total, cerca de **3 a 5%** das osteomielites piogênicas.\n\nApesar de ser pouco frequente no conjunto, a osteomielite vertebral é a forma mais comum de osteomielite que chega pelo sangue no adulto. E o grande problema dela é o **atraso no diagnóstico**. A dor nas costas é arrastada e confundida com dor mecânica comum, a febre aparece só em parte dos pacientes, e o tempo entre o início dos sintomas e o diagnóstico costuma ser de semanas a meses.\n\nAlguns pontos ajudam a reconhecê-la. O germe mais comum é o *Staphylococcus aureus*. Os grupos de risco são pessoas com diabetes, idosos, usuários de drogas injetáveis, pacientes em hemodiálise e quem teve infecção no sangue ou endocardite recente. Os exames de inflamação no sangue (VHS e PCR) costumam estar elevados. A **ressonância** é o melhor exame de imagem, e as hemoculturas podem identificar o germe; se forem negativas, faz-se biópsia guiada.\n\nUma característica útil: a infecção bacteriana comum destrói o **disco** entre as vértebras logo cedo (por isso se chama espondilodiscite), diferente da tuberculose, que tende a poupar o disco por mais tempo.",
+  "correta": "3 a 5%. A infecção das vértebras é uma parcela pequena do total de osteomielites piogênicas, embora seja a forma hematogênica mais comum no adulto.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 42"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0036": {
-  "conceito": "### O racional\nA ==vitamina C== é **antioxidante**: reduziria radicais livres na fase inflamatória, que se supõe participar do desencadeamento da síndrome dolorosa regional complexa.\n\n### A evidência\n- Ensaios em fratura do **rádio distal** mostraram menor incidência com **500 mg/dia por 50 dias** a partir do trauma.\n- Estudos posteriores tiveram resultados **mistos**; ainda assim, o uso é recomendado por várias diretrizes, pelo baixo custo e risco.\n- A evidência é de **prevenção**, não de tratamento.\n\n### Com o quadro instalado\n- **Reabilitação precoce** e dessensibilização.\n- Analgesia multimodal, bisfosfonatos e corticoide em casos selecionados.\n- Bloqueios, terapia do espelho.\n- Diagnóstico pelos **critérios de Budapeste**.\n\n> **Na prova:** prevenção de SDRC após fratura do rádio distal = ==vitamina C==.",
-  "correta": "**Vitamina C.**",
   "incorretas": {
-   "A": "**Sem esse papel.**",
-   "C": "**Outro papel.**\n- Importa para mineralização, não foi a estudada para SDRC.",
-   "D": "**Não testada.**\n- É antioxidante, mas não é a dos ensaios."
+   "A": "A vitamina A não tem esse papel na prevenção da síndrome.",
+   "C": "A vitamina D é importante para a mineralização do osso, mas não foi a estudada para prevenir a síndrome.",
+   "D": "A vitamina E também é antioxidante, mas não foi a avaliada nos ensaios de prevenção da síndrome."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A **síndrome dolorosa regional complexa** (SDRC) é uma complicação que pode surgir depois de uma fratura, cirurgia ou trauma, mesmo pequeno. O paciente tem dor desproporcional ao machucado, junto com inchaço, alterações de cor e temperatura da pele, suor alterado e rigidez. A fratura do terço distal do rádio, no punho, é uma das situações em que ela mais aparece.\n\nA **vitamina C** foi estudada para **prevenir** essa síndrome. A ideia vem do seu efeito **antioxidante**: ela neutraliza radicais livres, moléculas que se formam na inflamação depois do trauma e que se supõe participarem do início da síndrome. Ensaios em pacientes com fratura do punho mostraram menos casos de SDRC com vitamina C em dose diária, começando logo após o trauma e mantida por algumas semanas. Estudos posteriores tiveram resultados mistos, mas, por ser barata e segura, ela é recomendada por várias diretrizes.\n\nÉ importante notar que a evidência é de **prevenção**, e não de tratamento. Quando a síndrome já está instalada, o tratamento envolve reabilitação precoce, dessensibilização, controle da dor com várias classes de remédios e, em casos selecionados, outras medidas, como bloqueios e terapia do espelho. O diagnóstico usa os **critérios de Budapeste**.",
+  "correta": "Vitamina C. Seu efeito antioxidante foi estudado na prevenção da síndrome dolorosa regional complexa após fratura do punho.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0037": {
-  "conceito": "### O mecanismo\n- Contração **excêntrica**: o músculo contrai enquanto é alongado.\n- Nos isquiotibiais: **corrida em velocidade**, no fim do balanço, quando freiam a extensão do joelho com o quadril fletido.\n- A mais acometida: **cabeça longa do bíceps femoral** (biarticular, maior alongamento nesse instante).\n\n### Onde cede\nO local clássico é a **junção miotendínea**, onde a rigidez do tendão encontra a complacência do músculo. Nos isquiotibiais, o tendão proximal se prolonga como **tendão intramuscular**, e a lesão aparece na imagem no **meio do ventre**: por isso a banca marcou ==ventre muscular== (veja o alerta).\n\n### Prognóstico e prevenção\n- Recidiva **alta**.\n- Lesão que envolve o **tendão intramuscular** tende a demorar mais para voltar.\n- Prevenção: **fortalecimento excêntrico** (exercício nórdico).\n\n### Avulsão proximal\n- Adolescente: avulsão da **apófise isquiática**.\n- Adulto: avulsão tendínea; cirurgia se dois ou três tendões com retração importante.\n\n> **Na prova:** estiramento = junção miotendínea (a banca usou \"ventre\"); bíceps femoral cabeça longa.",
-  "correta": "**Ventre muscular, pelo gabarito oficial.**\n- A lesão da junção miotendínea intramuscular aparece no meio do ventre; veja o alerta.",
   "incorretas": {
-   "A": "**Incomum.**\n- Lesão tendínea isolada aparece em ruptura crônica ou degenerativa.",
-   "C": "**O local clássico.**\n- Foi dado como errado; veja o alerta.",
-   "D": "**Do adolescente.**\n- Avulsão da apófise isquiática, com fise aberta."
+   "A": "A lesão isolada do tendão é incomum e aparece mais em rupturas crônicas ou degenerativas.",
+   "C": "É o local clássico do estiramento muscular, descrito pela literatura. Foi considerada incorreta apenas por seguir o gabarito oficial.",
+   "D": "A avulsão da tuberosidade isquiática é típica do adolescente, com a placa de crescimento aberta, e não a lesão mais frequente."
   },
+  "conceito": "Os **isquiotibiais** são os músculos de trás da coxa (bíceps femoral, semitendinoso e semimembranoso). Eles se lesam tipicamente na **corrida em velocidade**, no momento em que a perna está indo para a frente e eles precisam frear a extensão do joelho. Nesse instante, fazem força enquanto são alongados, a chamada contração **excêntrica**. O músculo mais acometido é a **cabeça longa do bíceps femoral**.\n\nO local clássico de qualquer estiramento muscular é a **junção miotendínea**, o ponto onde o músculo se transforma em tendão. É ali que a força se concentra, porque o tendão é rígido e o músculo é mais elástico. Nos isquiotibiais, há um detalhe anatômico: o tendão de cima da cabeça longa do bíceps continua por dentro do músculo como um tendão interno (tendão intramuscular). Por isso, uma lesão da junção miotendínea aparece, na ressonância, no **meio do ventre muscular**.\n\nO gabarito oficial considera o **ventre muscular**. A resposta que a literatura costuma dar é a junção miotendínea, e por isso esta questão tem um aviso.\n\nNa prática, essas lesões voltam com frequência, e as que envolvem o tendão interno demoram mais para recuperar. A prevenção mais estudada é o fortalecimento excêntrico, como o exercício nórdico. No adolescente, com a placa de crescimento aberta, a força pode arrancar a apófise do ísquio, o osso onde o músculo nasce. No adulto, o arrancamento do tendão da bacia é menos comum e pode exigir cirurgia.",
+  "correta": "No ventre muscular, segundo o gabarito. A lesão da junção miotendínea interna aparece no meio do ventre na imagem, mas o local clássico descrito é a junção miotendínea.",
   "alerta": "O local clássico da lesão muscular por estiramento, e o dos isquiotibiais em particular, é a JUNÇÃO MIOTENDÍNEA, que é a alternativa C, marcada como errada. É ali que a rigidez do tendão encontra a complacência do músculo, e é ali que a força se concentra na contração excêntrica; nos isquiotibiais, o ponto mais acometido é a junção miotendínea proximal da cabeça longa do bíceps femoral. Há uma nuance que talvez explique o gabarito: esse tendão proximal se estende para dentro do ventre muscular como tendão intramuscular, de modo que a lesão da junção miotendínea aparece, na imagem, no meio do ventre. Ainda assim, a resposta que a literatura sustenta é a junção miotendínea.",
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0038": {
-  "conceito": "### Os folhetos\n- **Ectoderma:** pele e sistema nervoso.\n- **Endoderma:** revestimento do tubo digestivo e vias respiratórias.\n- **Mesoderma:** três colunas.\n  - **Paraxial** (somitos): esqueleto axial, musculatura esquelética, derme do dorso.\n  - **Intermediário:** rim e gônadas.\n  - ==Placa lateral==: origina o **broto do membro**.\n\n### O broto do membro\nDa placa lateral vêm **osso, cartilagem, tendão, ligamento** e o tecido conjuntivo do membro.\n- A **musculatura** do membro migra dos **somitos** (paraxial): osso e músculo do membro têm origens diferentes.\n- A **crista ectodérmica apical** dirige o crescimento proximal-distal.\n- A **zona de atividade polarizante** (sonic hedgehog) organiza o eixo radioulnar.\n\n> **Na prova:** osso e conjuntivo do membro = ==placa lateral do mesoderma==.",
-  "correta": "**Placa lateral do mesoderma.**",
   "incorretas": {
-   "A": "**Pele e nervo.**\n- A crista ectodérmica apical dirige o crescimento, mas não forma osso.",
-   "B": "**Não existe esse papel.**",
-   "D": "**Paraxial.**\n- Origina musculatura e esqueleto axial."
+   "A": "O ectoderma forma pele e sistema nervoso. A crista ectodérmica apical comanda o crescimento do membro, mas não forma osso.",
+   "B": "Não existe uma placa medial do ectoderma com esse papel.",
+   "D": "A porção medial do mesoderma, o paraxial, forma a coluna e os músculos, e não o osso e o conjuntivo dos membros."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "No início da vida, o embrião se organiza em três camadas, chamadas **folhetos germinativos**, e cada uma dá origem a tecidos diferentes.\n\nO **ectoderma** forma a pele e o sistema nervoso.\n\nO **endoderma** forma o revestimento do tubo digestivo e das vias respiratórias.\n\nO **mesoderma**, a camada do meio, forma os tecidos de sustentação e movimento. Ele se divide em três colunas: o mesoderma **paraxial**, ao lado do tubo neural, que forma os somitos e dá origem à coluna vertebral e aos músculos; o mesoderma **intermediário**, que forma rins e gônadas; e a **placa lateral do mesoderma**, de onde nasce o **broto do membro**.\n\nDo broto do membro, ou seja, da **placa lateral do mesoderma**, vêm o **osso**, a cartilagem, os tendões, os ligamentos e o **tecido conjuntivo** dos braços e pernas.\n\nUm detalhe que cai em prova: os **músculos** dos membros não vêm da placa lateral. As células musculares migram dos somitos, do mesoderma paraxial, e entram no broto. Ou seja, osso e músculo do membro têm origens diferentes.\n\nOutros dois centros organizam o membro: a crista ectodérmica apical, um espessamento da pele embrionária na ponta do broto, comanda o crescimento do ombro até a mão; e a zona de atividade polarizante organiza o eixo do polegar ao dedo mínimo.",
+  "correta": "Placa lateral do mesoderma. É dela que nasce o broto do membro, com seus ossos e tecido conjuntivo.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0039": {
-  "conceito": "### Por que a metáfise\n- As artérias metafisárias terminam em **alças em grampo** junto à fise e desembocam em **sinusoides largos**.\n- Ali o fluxo é **lento e turbulento**: condição ideal para a bactéria se depositar.\n- Os sinusoides metafisários têm ==poucos macrófagos== (fagócitos do sistema reticuloendotelial) para capturar o germe.\n\nFluxo lento + poucos fagócitos = o inóculo prospera.\n\n### Fatores somados\n- Microtraumas locais (hematoma).\n- Bacteremia transitória.\n\n### A evolução\n- Abscesso metafisário sob pressão.\n- Rompe a cortical, forma **abscesso subperiosteal**.\n- Periósteo descolado: **sequestro** (osso morto) e **invólucro** (osso novo).\n\n> **Na prova:** metáfise é alvo por fluxo lento e ==poucos macrófagos==.",
-  "correta": "**Macrófagos.**\n- Poucos fagócitos nos sinusoides metafisários.",
   "incorretas": {
-   "A": "**Não são a primeira linha.**",
-   "C": "**Formadores.**\n- Sem papel de defesa.",
-   "D": "**Reabsorvem.**\n- Participam da destruição, não da defesa."
+   "A": "Os linfócitos não são a primeira linha de defesa contra bactérias que se depositam no osso.",
+   "C": "Os osteoblastos formam osso e não têm papel de defesa contra a infecção.",
+   "D": "Os osteoclastos reabsorvem osso e participam da destruição na infecção, mas não da defesa."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Na criança, a **osteomielite hematogênica aguda** (infecção do osso que chega pelo sangue) começa quase sempre na **metáfise**, a parte larga do osso perto da placa de crescimento. Dois fatores explicam essa preferência.\n\n**O fluxo de sangue é lento.** As artérias da metáfise sobem até perto da placa de crescimento, fazem uma curva fechada, como um grampo de cabelo, e desembocam em vasos largos (sinusoides). Ao passar de um vaso fino para um largo, o sangue desacelera e fica turbulento. É o lugar ideal para uma bactéria que está circulando no sangue se depositar.\n\n**Há poucas células de defesa.** Nesses sinusoides da metáfise, existem poucos **macrófagos**, as células que \"engolem\" e destroem micro-organismos. Sem eles, as bactérias que se depositam não são eliminadas e conseguem se multiplicar.\n\nFluxo lento e poucas células de defesa formam a combinação ideal para a infecção. Pequenos traumas locais, com hematoma, e bacteremias passageiras (bactérias no sangue, por exemplo depois de uma infecção de pele ou garganta) completam o cenário.\n\nSe a infecção avança, forma-se pus sob pressão, que rompe a cortical e descola o periósteo. O osso que perde o sangue morre e vira um **sequestro**, e o periósteo descolado forma osso novo por fora, o **invólucro**.",
+  "correta": "Macrófagos. Os sinusoides da metáfise têm poucas dessas células de defesa, e as bactérias depositadas pelo fluxo lento não são eliminadas.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0040": {
-  "conceito": "### Histogênese por distração\nIlizarov mostrou que a **tensão gradual** estimula a formação de tecido (efeito tensão-estresse). Mas cada tecido responde de um jeito.\n\n### A ordem de capacidade de metaplasia e diferenciação\n- ==Ósseo==: a resposta mais **previsível** e organizada (regenerado).\n- ==Muscular==: acompanha por adaptação e neoformação de sarcômeros.\n- ==Ligamentar==.\n- ==Tendíneo==: o de **menor** capacidade adaptativa.\n\n### Consequência prática\nNo alongamento, os tecidos moles limitam mais que o osso:\n- **Contraturas** (equino no alongamento da tíbia, flexão do joelho no do fêmur).\n- **Subluxações** articulares.\n- Lesão neurológica por estiramento.\n\nPor isso: fisioterapia diária, órteses, alongamentos e, às vezes, tenotomias.\n\n> **Na prova:** capacidade de adaptação ao alongamento = ==osso > músculo > ligamento > tendão==.",
-  "correta": "**Ósseo, muscular, ligamentar e tendíneo.**",
   "incorretas": {
-   "B": "**Inverte ligamento e tendão.**\n- O tendão é o de menor capacidade.",
-   "C": "**Músculo antes do osso.**\n- O regenerado ósseo é o mais previsível.",
-   "D": "**Erra duas posições.**"
+   "B": "Inverte ligamento e tendão: o tendão é o de menor capacidade.",
+   "C": "Coloca o músculo antes do osso, mas o osso novo do alongamento é a resposta mais previsível.",
+   "D": "Erra duas posições: o osso vem antes do músculo, e o ligamento antes do tendão."
   },
+  "conceito": "No **alongamento de membros** com fixador externo, o cirurgião corta o osso e o fixador vai afastando as pontas aos poucos. Ilizarov mostrou que essa **tensão lenta e contínua** estimula os tecidos a crescer: é o chamado efeito tensão-estresse, ou histogênese por distração. Mas cada tecido responde de um jeito, com maior ou menor capacidade de se adaptar e formar tecido novo.\n\nA ordem, da maior para a menor capacidade, é:\n\n**Ósseo**: o osso responde da forma mais previsível e organizada. O espaço entre as pontas é preenchido por osso novo (o regenerado).\n\n**Muscular**: o músculo acompanha bem, criando novas unidades contráteis (sarcômeros) para se alongar.\n\n**Ligamentar**: os ligamentos se adaptam menos.\n\n**Tendíneo**: o tendão é o que tem **menor** capacidade de se alongar.\n\nA consequência prática é que, no alongamento, **os tecidos moles limitam mais que o osso**. Os problemas típicos são contraturas (no alongamento da tíbia, o pé tende a ficar apontado para baixo, em equino; no do fêmur, o joelho tende a ficar dobrado), subluxações das articulações vizinhas e lesão de nervo por estiramento. Por isso, o alongamento exige fisioterapia diária, órteses e, às vezes, alongamento cirúrgico de tendões.",
+  "correta": "Ósseo, muscular, ligamentar e tendíneo. O osso é o que melhor se regenera com a distração, e o tendão é o que menos se adapta.",
   "referencias": [
    "Ilizarov GA. The tension-stress effect on the genesis and growth of tissues. Clin Orthop Relat Res. 1989;(238):249-281.",
    "Paley D. Principles of Deformity Correction. Springer; 2002."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0041": {
-  "conceito": "### Três fenômenos para não confundir\n- **Sensação fantasma:** percepção **não dolorosa** do membro ausente. Praticamente universal.\n- ==Dor do membro fantasma==: dor referida à parte ausente. Presente, em algum grau, na **maioria** dos amputados; a complicação mais frequente.\n- **Dor do coto:** local, com causa identificável (neuroma, isquemia, espícula óssea, prótese mal ajustada).\n\n### Prevenção e tratamento\n- **Analgesia adequada** no pré e intraoperatório (bloqueios, cateter perineural).\n- Tratamento multimodal: **gabapentinoides**, antidepressivos, opioides com cautela.\n- **Terapia do espelho**, dessensibilização.\n- Neuroma sintomático: **TMR** (reinervação muscular direcionada) ou RPNI.\n\n> **Na prova:** complicação mais frequente da amputação = ==dor do membro fantasma==.",
-  "correta": "**Dor do membro fantasma.**",
   "incorretas": {
-   "A": "**Técnica e menos frequente.**",
-   "B": "**Mais do membro inferior.**\n- Contratura é problema de coto mal posicionado.",
-   "C": "**Trauma e explosão.**\n- Não é a mais comum."
+   "A": "A falha da miodese (sutura dos músculos sobre a ponta do osso) é uma complicação técnica e bem menos frequente.",
+   "B": "A contratura articular é mais problema do membro inferior, quando o coto fica mal posicionado.",
+   "C": "A ossificação heterotópica aparece mais em amputações por trauma de alta energia e explosões, e não é a mais comum."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Depois de uma amputação, três fenômenos diferentes podem aparecer, e é importante não confundi-los.\n\n**Sensação fantasma**: a percepção, sem dor, de que o membro amputado ainda está lá. O paciente sente a mão, os dedos, às vezes até a posição deles. Acontece em quase todos os amputados.\n\n**Dor do membro fantasma**: dor sentida na parte que não existe mais, como queimação, choque ou aperto na mão amputada. Acontece em algum grau na maioria dos amputados e é a **complicação mais frequente** após a amputação. A explicação envolve mudanças no sistema nervoso, que continua \"mapeando\" o membro ausente.\n\n**Dor do coto**: dor no próprio local da amputação, com uma causa que pode ser encontrada, como um neuroma (um nódulo que se forma na ponta de um nervo cortado), má circulação, uma ponta de osso saliente ou uma prótese mal ajustada.\n\nPara a dor fantasma, ajudam um bom controle da dor antes e durante a cirurgia (com bloqueios e cateteres nos nervos), remédios para dor neuropática (como gabapentina e pregabalina), antidepressivos, terapia do espelho e técnicas de dessensibilização. Para neuromas dolorosos, existem cirurgias que redirecionam o nervo cortado para um músculo (como a TMR, reinervação muscular direcionada).",
+  "correta": "Dor do membro fantasma. Aparece em algum grau na maioria dos amputados e é a complicação mais frequente.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0042": {
-  "conceito": "### O que são\nLinhas de **parada de crescimento**: faixas densas transversais na metáfise, **paralelas à fise**.\n\n### Como se formam\nO crescimento longitudinal **cessa ou desacelera** por um período (doença grave, desnutrição, quimioterapia, imobilização, trauma) e depois é **retomado**. A matriz mineralizada depositada durante a pausa fica como registro horizontal.\n\nRepresentam ==retardo ou parada do crescimento==.\n\n### O valor na lesão fisária\n- Linha **paralela** à fise: o crescimento se recuperou de modo simétrico.\n- Linha **convergindo** para um lado (ou terminando na fise): **ponte fisária** em formação, com risco de deformidade angular.\n- Linha que não aparece meses depois: suspeitar de parada.\n\nPor isso o seguimento radiográfico de fraturas fisárias procura a linha de Harris.\n\n> **Na prova:** linha de Harris = ==registro de parada ou retardo do crescimento==.",
-  "correta": "**Retardo ou parada do crescimento.**",
   "incorretas": {
-   "A": "**Desvio de alinhamento.**\n- Não produz essa linha.",
-   "B": "**Fenômeno do foco.**\n- Não da fise.",
-   "C": "**O oposto.**\n- A linha marca a interrupção."
+   "A": "A consolidação viciosa é um desvio do alinhamento de uma fratura e não produz essas linhas.",
+   "B": "O retardo de consolidação é um fenômeno do foco da fratura, e não da placa de crescimento.",
+   "C": "É o oposto: a linha marca uma interrupção do crescimento, e não uma aceleração."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "As **linhas de Harris** são faixas brancas finas, densas, que aparecem na radiografia atravessando a metáfise, **paralelas à placa de crescimento** (fise). Também são chamadas de linhas de parada de crescimento.\n\nElas se formam assim: por algum motivo (doença grave, desnutrição, quimioterapia, imobilização prolongada ou um trauma na fise), o crescimento do osso em comprimento **para ou fica mais lento** por um período. Quando o crescimento volta, a camada de osso formada durante a pausa fica registrada como uma faixa mais densa. É como os anéis de uma árvore. Ou seja, as linhas de Harris representam um **retardo ou parada do crescimento** que depois foi retomado.\n\nElas são muito úteis no acompanhamento das **fraturas da placa de crescimento**:\n\nSe a linha aparece **paralela** à fise, o crescimento voltou de forma simétrica, um bom sinal.\n\nSe a linha **converge** para um lado ou termina encostada na fise, é sinal de que se formou uma **ponte óssea** naquele ponto, travando o crescimento só de um lado. Com o tempo, isso causa um desvio angular do osso.\n\nSe nenhuma linha aparece meses depois, deve-se suspeitar de parada completa do crescimento.",
+  "correta": "Retardo ou parada do crescimento. A linha é o registro de uma pausa no crescimento que depois foi retomado.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0043": {
