@@ -4566,91 +4566,91 @@
   "conferido": false
  },
  "mao-0460": {
-  "conceito": "### Palmer classe 1 e o tratamento\n| Tipo | Local da lesão | Tratamento |\n|---|---|---|\n| 1A | perfuração central (avascular) | desbridamento |\n| 1B | avulsão **ulnar** (fóvea, estiloide) | reinserção na **ulna** |\n| 1C | avulsão **distal** (ulnossemilunar, ulnopiramidal) | reparo ulnocarpal |\n| ==1D== | ==avulsão radial== (incisura sigmoide) | ==reinserção no rádio== (ou desbridamento em lesões pequenas) |\n\n### Por que o rádio na 1D\n- A borda solta é a **radial**: reancora-se o disco na borda da incisura sigmoide (túneis transósseos ou âncoras), artroscópico ou aberto.\n\n### Instabilidade da RUD\n- Mais associada à **1B** (lesão foveal dos ligamentos radioulnares).\n- Teste do **balote** radioulnar em pronação, neutro e supinação.\n\n- Memória: ==centro, ulnar, distal, radial== (A, B, C, D).\n\n### Classe 2 (degenerativa)\n| Tipo | Achado |\n|---|---|\n| 2A | desgaste do CFCT |\n| 2B | + condromalácia do semilunar ou ulna |\n| 2C | + perfuração do CFCT |\n| 2D | + lesão lunopiramidal |\n| 2E | + artrose ulnocarpal |\n\n> **Na prova:** avulsão radial = ==Palmer 1D== (reinserir no rádio).",
-  "correta": "**D.**\n- Disco solto da incisura sigmoide.\n- Borda vascularizada: reinserir no rádio.",
   "incorretas": {
-   "A": "**Central.**\n- Avascular; desbrida.",
-   "B": "**Ulnar.**\n- Fóvea e estiloide; instabilidade da RUD.",
-   "C": "**Distal.**\n- Ligamentos ulnocarpais."
+   "A": "O tipo A é a perfuração central, na parte avascular do disco.",
+   "B": "O tipo B é a avulsão ulnar, da fóvea ou da estiloide, ligada à instabilidade radioulnar distal.",
+   "C": "O tipo C é a avulsão distal, dos ligamentos ulnocarpais."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **fibrocartilagem triangular** (o complexo da fibrocartilagem triangular, CFCT) é o \"menisco\" do punho do lado ulnar. Ela se prende no **rádio** (borda da incisura sigmoide), na **ulna** (fóvea e estiloide) e, por baixo, no carpo pelos ligamentos ulnossemilunar e ulnopiramidal. O disco central é **avascular**; a periferia é vascularizada e cicatriza.\n\n**A classificação de Palmer** separa as lesões **traumáticas** (classe 1) das **degenerativas** (classe 2). Na classe 1, a letra segue um caminho fácil de lembrar: **centro, ulnar, distal, radial**.\n\n**1A, perfuração central**: na parte avascular, trata-se com **desbridamento**;\n\n**1B, avulsão ulnar** (fóvea ou estiloide): é a que mais se associa à **instabilidade da radioulnar distal**; reinsere-se na ulna;\n\n**1C, avulsão distal**: dos ligamentos ulnocarpais (ulnossemilunar e ulnopiramidal);\n\n**1D, avulsão radial**: o disco solta da borda da incisura sigmoide; reinsere-se no **rádio** (túneis ou âncoras) ou desbrida-se se pequena.\n\n**A classe 2** progride do desgaste simples (2A) à condromalácia (2B), à perfuração (2C), à lesão lunopiramidal (2D) e à artrose ulnocarpal (2E).\n\n**Na prova**: avulsão radial = **Palmer 1D**.",
+  "correta": "O tipo D é a avulsão da fibrocartilagem da borda radial, na incisura sigmoide.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0461": {
-  "conceito": "### Anastomose entre vasos de calibres diferentes\n| Discrepância | Solução |\n|---|---|\n| pequena (< 1,5:1) | ==secção oblíqua do vaso menor (cerca de 30°)==, dilatação mecânica do menor |\n| moderada | incisão em **boca de peixe** (fishmouth) no menor, espatulação |\n| grande (> 2:1) | anastomose **término-lateral**, **enxerto de veia** interposto, luva |\n\n### Por que o corte oblíquo\n- Transforma a boca circular em **elipse** de perímetro maior.\n- Iguala as circunferências e distribui os pontos.\n- Bisel exagerado (45 a 60°) angula o vaso e gera turbulência.\n\n### Princípios da microanastomose\n- Ressecar até íntima normal, sem tensão, pontos de espessura total igualmente espaçados, sem incluir a parede oposta.\n- Teste de patência (empty and refill).\n\n### Avulsão\n- Íntima descolada muito além da ruptura visível.\n- Sinais: ==fita vermelha== (trombose no vaso), ==saca-rolhas== (vaso enovelado), equimose ao longo do trajeto digital.\n- Conduta: ressecar até íntima normal e interpor ==enxerto de veia invertido== (válvulas).\n- Doadoras: veias do dorso do pé, volar do antebraço distal.\n\n> **Na prova:** amputação por avulsão = ==enxerto de veia invertido==",
-  "correta": "**Enxerto de veia invertido.**\n- Ressecar a íntima lesada cria falha sem aproximação.\n- Inverter por causa das válvulas.",
   "incorretas": {
-   "B": "**Fisiopatologia invertida.**\n- Lesão da íntima é a regra na avulsão.",
-   "C": "**Inversão obrigatória.**\n- Sem ela as válvulas bloqueiam.",
-   "D": "**Não se ignora.**\n- Incompatibilidade trombosa ou vaza."
+   "B": "Na avulsão, a lesão da íntima é a regra e exige ressecção do vaso; a arteriorrafia primária fica sob tensão.",
+   "C": "O enxerto de veia precisa ser invertido, porque as válvulas bloqueariam o fluxo arterial.",
+   "D": "A incompatibilidade de calibre favorece trombose e vazamento e precisa ser corrigida, mesmo na urgência."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **amputação por avulsão** (anel preso, corda, máquina que puxa), o dedo é arrancado, e os vasos são **esticados** antes de romper. A **íntima** se descola por uma distância muito maior do que a ruptura que se vê.\n\n**Os sinais de que o vaso está lesado além do que parece**:\n\n**fita vermelha**: trombose visível dentro do vaso ao longo do dedo;\n\n**saca-rolhas**: artéria enovelada, sinal de estiramento;\n\n**equimose** ao longo do trajeto do feixe digital.\n\n**A conduta**: ressecar o vaso até encontrar **íntima normal**. Isso deixa uma falha que não fecha sem tensão; por isso a anastomose primária não é adequada, e interpõe-se um **enxerto de veia**. A veia é colocada **invertida**, porque as **válvulas** bloqueariam o fluxo arterial no sentido original. Doadoras habituais: veias **volares do antebraço distal** e do dorso do pé, com calibre parecido com as artérias digitais.\n\n**Calibres diferentes**: a diferença de calibre entre os vasos não é ignorada, nem na urgência, porque gera turbulência, trombose e vazamento. Diferença pequena se corrige com corte **oblíquo** do vaso menor; moderada, com **boca de peixe**; grande, com anastomose **término-lateral** ou enxerto.\n\n**Na prova**: amputação por avulsão = **enxerto de veia invertido**.",
+  "correta": "A íntima lesada precisa ser ressecada, o que deixa uma falha que não se fecha sem tensão; o enxerto de veia invertido supre essa falha.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0462": {
-  "conceito": "### Monitorização do retalho livre\n| Sinal | Normal | ==Trombose venosa== | Trombose arterial |\n|---|---|---|---|\n| cor | rosada | ==azulada, violácea== | pálida |\n| temperatura | normal | normal ou quente | fria |\n| turgor | normal | ==aumentado (tenso, edema)== | diminuído, murcho |\n| enchimento capilar | 2 a 3 s | ==rápido== (< 1 s) | lento ou ausente |\n| punção | sangue vermelho em 2 a 3 s | ==sangue escuro, rápido e abundante== | sem sangramento |\n| petéquias | não | ==sim== | não |\n\n### Condutas\n- Venosa é a mais comum; janela de resgate: ==reexploração imediata==.\n- Monitorização a cada hora nas primeiras 24 a 48 h (maioria das tromboses ocorre aí).\n- Resgate: sanguessugas, heparina local se não houver drenagem venosa possível.\n\n> **Na prova:** trombose venosa do retalho = ==sangramento escuro rápido, petéquias e edema==.",
-  "correta": "**Sangramento escuro rápido, petéquias e edema.**\n- Entra sangue e não sai.\n- Retalho tenso e azulado, enchimento acelerado.\n- Reexplorar cedo salva o retalho.",
   "incorretas": {
-   "B": "**Trombose arterial.**\n- Pálido, frio, sem sangramento.",
-   "C": "**Mistura com infecção.**\n- Secreção purulenta não é trombose.",
-   "D": "**Turgor errado.**\n- Na congestão o turgor aumenta."
+   "B": "Pele pálida e fria, sem sangramento e com turgor diminuído é o quadro da trombose arterial.",
+   "C": "Palidez e ausência de sangramento são da trombose arterial, e secreção purulenta indica infecção, não trombose.",
+   "D": "Na trombose venosa o turgor aumenta, porque o retalho fica congesto e tenso."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Depois de um **retalho livre**, a monitorização nas primeiras **24 a 48 horas** é o que salva o retalho, porque é quando ocorre a maioria das tromboses. A **trombose venosa** é a mais comum.\n\n**A lógica**: na trombose **venosa**, o sangue **entra e não sai**. Na **arterial**, o sangue **não entra**.\n\n**Trombose venosa (congestão)**:\n\n**cor**: azulada, violácea;\n\n**turgor**: **aumentado**, retalho tenso e com **edema**;\n\n**enchimento capilar**: **rápido** (menos de 1 segundo);\n\n**punção**: sangue **escuro**, que sai rápido e em quantidade;\n\n**petéquias**: presentes.\n\n**Trombose arterial (isquemia)**: retalho **pálido**, **frio**, murcho (turgor **diminuído**), enchimento lento ou ausente e **nenhum sangramento** à punção.\n\n**A conduta**: em qualquer suspeita, **reexploração imediata**. Quando a drenagem venosa não pode ser refeita, usam-se sanguessugas e heparina local como resgate.\n\n**Na prova**: trombose venosa = **sangramento escuro e rápido, petéquias e edema**.",
+  "correta": "Na congestão venosa, o sangue entra e não sai: o retalho sangra escuro e rápido, tem petéquias e fica edemaciado.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0463": {
-  "conceito": "### Avulsão do flexor profundo (dedo de jérsei)\n- Zona I: só o ==flexor profundo== está presente (distal à inserção do FSD).\n- Dedo mais acometido: ==anelar== (cerca de 75%).\n\n### Por que o anelar\n- Em extensão, a polpa do anelar se projeta mais ao fechar a mão: recebe a tração.\n- Inserção do FPD do anelar é mais fraca.\n- FPD do anelar ligado ao do médio e mínimo por ventre comum.\n\n### Exame\n- Bloquear a IFP e pedir flexão da IFD: ausente.\n- Palpar o coto retraído (palma ou IFP).\n\n### Leddy e Packer\n| Tipo | Retração |\n|---|---|\n| I | até a palma (reparo em 7 a 10 dias) |\n| II | até a IFP |\n| III | fragmento ósseo retido na A4 |\n| IV | fragmento + tendão avulsionado dele |\n\n### Polegar\n- Não tem flexor profundo: o flexor é o **flexor longo do polegar**.\n\n### Tratamento\n- ==Sempre cirúrgico==: reinserção do FPD (âncora, pull-out, fixação do fragmento).\n- Tipo I: operar em 7 a 10 dias; tardio: enxerto em dois tempos, tenodese ou artrodese da IFD.\n\n> **Na prova:** jersey finger = ==reinserção do flexor profundo==",
-  "correta": "**Reinserção do FPD.**\n- Tendão arrancado não volta sozinho.\n- Urgência maior no Leddy I.",
   "incorretas": {
-   "B": "**Martelo.**\n- Lesão extensora.",
-   "C": "**Seymour.**\n- Fratura fisária exposta na criança.",
-   "D": "**Martelo e hiperextensão.**\n- Hiperextensão necrosa a pele."
+   "B": "Tala em extensão da interfalangiana distal trata o dedo em martelo, que é lesão do extensor.",
+   "C": "Remover o tecido interposto e fixar a fise com fio é o tratamento da fratura de Seymour, na criança.",
+   "D": "É a conduta do dedo em martelo, e hiperextensão de 30° ainda arrisca necrose da pele dorsal."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **fratura (ou dedo) de jérsei** é a **avulsão do flexor profundo** da base da falange distal, às vezes com um fragmento ósseo. Acontece quando o dedo está fletindo com força e é puxado em extensão, como ao agarrar a camisa de um adversário. O dedo mais atingido é o **anelar** (cerca de 75%): ao fechar a mão, a polpa dele se projeta mais, e a inserção é mais fraca.\n\n**O exame**: com a interfalangiana proximal bloqueada, a pessoa **não consegue fletir a distal**. O coto retraído pode ser palpado na palma ou na altura da IFP.\n\n**A classificação de Leddy e Packer**, pelo quanto o tendão retrai:\n\n**tipo I**: até a palma, com os vínculos rompidos e pouca nutrição; operar em **7 a 10 dias**;\n\n**tipo II**: até a altura da IFP;\n\n**tipo III**: fragmento ósseo grande, preso na polia A4;\n\n**tipo IV**: fragmento ósseo com o tendão também avulsionado dele.\n\n**O tratamento é sempre cirúrgico**: **reinserção do flexor profundo** (âncora, pull-out ou fixação do fragmento). Nos casos tardios, opções são enxerto em dois tempos, tenodese ou artrodese da IFD. Tala em hiperextensão é para o dedo em **martelo** (lesão do extensor), e a fixação fisária com remoção do leito interposto é para a **lesão de Seymour** da criança.\n\n**Na prova**: dedo de jérsei = **reinserção do flexor profundo**.",
+  "correta": "O tendão avulsionado não volta sozinho; o tratamento é a reinserção cirúrgica do flexor profundo.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0464": {
-  "conceito": "### Portais dorsais da artroscopia do punho\n| Portal | Localização | Uso principal |\n|---|---|---|\n| 1-2 | entre 1º e 2º compartimentos | estiloide radial; risco para o radial superficial e a artéria radial |\n| 3-4 | entre ELP e extensores comuns | ==visão padrão==: escafoide, semilunar, ligamento escafossemilunar |\n| ==4-5== | entre extensores comuns e extensor do mínimo | ==melhor inspeção do complexo da fibrocartilagem triangular== |\n| ==6R== | radial ao EUC | ==portal de trabalho== do CFCT (reparo, desbridamento) |\n| 6U | ulnar ao EUC | saída de fluxo; risco para o ramo dorsal do ulnar |\n| mediocarpal radial e ulnar | 1 cm distal ao 3-4 e ao 4-5 | articulação mediocarpal, instabilidades |\n\n### Rotina\n- 3-4 para visão geral, 4-5 ou 6R para o lado ulnar.\n- Tração de 4 a 5 kg (torre).\n\n### Indicações da artroscopia do punho\n| Diagnóstica | Terapêutica |\n|---|---|\n| dor crônica sem diagnóstico | ==corpo estranho==, corpos livres |\n| instabilidade (Geissler) | ==sinovectomia== |\n| lesão do CFCT | desbridamento e reparo do CFCT |\n| | ==wafer== (ressecção distal da ulna) |\n| | cisto dorsal, estiloidectomia |\n| | auxílio na redução de fratura articular |\n\n- Não substitui a cirurgia aberta para revisão de implante, reparo de tendão ou artrodese grande.\n\n> **Na prova:** indicações = ==corpo estranho, sinovectomia e wafer==",
-  "correta": "**Corpo estranho, sinovectomia e wafer.**\n- Todas intra-articulares e pequenas.\n- Wafer: ressecção da cabeça da ulna pela perfuração do disco.",
   "incorretas": {
-   "B": "**Revisão de implante.**\n- Exige acesso aberto.",
-   "C": "**Flexor e artrodese.**\n- Fora da articulação ou grandes.",
-   "D": "**Revisão de implante.**\n- E escafoide não é indicação simples."
+   "B": "A revisão de fratura com falha do material de síntese exige acesso aberto.",
+   "C": "O tendão flexor fica fora da articulação, e a artrodese parcial do carpo é procedimento aberto.",
+   "D": "A revisão de síntese é aberta, e o retardo de consolidação do escafoide não é indicação clássica da artroscopia."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **artroscopia do punho** serve para diagnosticar e tratar problemas **dentro da articulação**, com lesões pequenas. A visão padrão é pelo portal **3-4**; o lado ulnar é visto pelo **4-5** e trabalhado pelo **6R**.\n\n**Indicações terapêuticas**:\n\n**corpo estranho** e corpos livres;\n\n**sinovectomia** (artrite reumatoide, sinovite);\n\n**desbridamento e reparo** da fibrocartilagem triangular;\n\n**wafer**: ressecção de 2 a 4 mm da **cabeça da ulna** pela perfuração do disco, no impacto ulnocarpal;\n\n**cisto dorsal** (ressecção artroscópica) e estiloidectomia radial;\n\n**auxílio na redução** de fraturas articulares do rádio distal e do escafoide.\n\n**O que pede cirurgia aberta**: **revisão de implante** após falha de síntese, **reparo de tendão flexor** (fora da articulação) e **artrodeses** do carpo maiores. O retardo de consolidação do escafoide e a artrodese parcial podem ter ajuda artroscópica, mas não são indicações clássicas da artroscopia em si.\n\n**Na prova**: artroscopia do punho = **corpo estranho, sinovectomia e wafer**.",
+  "correta": "Retirada de corpo estranho, sinovectomia e o procedimento de wafer são todos intra-articulares e feitos pela artroscopia.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0465": {
-  "conceito": "### Ramos dos fascículos do plexo\n| Fascículo | Ramos |\n|---|---|\n| lateral | peitoral lateral, ==musculocutâneo==, raiz lateral do mediano |\n| medial | peitoral medial, cutâneo medial do braço e do antebraço, ==ulnar==, raiz medial do mediano |\n| ==posterior== | subescapular superior, ==toracodorsal==, subescapular inferior, ==axilar==, ==radial== (STSAR) |\n\n### Ramos de raízes e troncos\n| Origem | Nervo |\n|---|---|\n| raízes C5 | dorsal da escápula |\n| raízes C5-C7 | torácico longo |\n| tronco superior | supraescapular, nervo do subclávio |\n\n### Toracodorsal e grande dorsal\n- Pedículo toracodorsal: retalho pediculado ou livre, transferência funcional (flexão do cotovelo, RE do ombro na paralisia obstétrica).\n\n### Nervo mediano\n| Raiz | Fascículo | Fibras | Nível |\n|---|---|---|---|\n| ==lateral== | ==lateral== | ==sensitivas== (predominância) | C6-C7 |\n| medial | medial | motoras (mão) | C8-T1 |\n\n> **Na prova:** porção sensitiva do mediano = ==fascículo (corda) lateral==",
-  "correta": "**Corda lateral.**\n- Raiz lateral com fibras sensitivas C6-C7.\n- Raiz medial traz as motoras C8-T1.",
   "incorretas": {
-   "B": "**Motora.**\n- Raiz medial, predominantemente motora.",
-   "C": "**Não participa.**\n- Origina axilar e radial.",
-   "D": "**Não participa.**\n- Posterior não forma o mediano."
+   "B": "A raiz medial, da corda medial (C8-T1), traz principalmente as fibras motoras da mão.",
+   "C": "A corda posterior forma o axilar e o radial e não contribui para o mediano.",
+   "D": "A corda posterior não participa do mediano, e as raízes vêm das cordas lateral e medial."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **nervo mediano** nasce da união de duas raízes do plexo braquial, que formam um \"V\" na frente da artéria axilar.\n\n**raiz lateral**: vem do **fascículo (corda) lateral**, com fibras de **C6 e C7**, e traz principalmente as fibras **sensitivas** (polegar, indicador, médio) e a inervação dos flexores do antebraço;\n\n**raiz medial**: vem do **fascículo medial**, com fibras de **C8 e T1**, e traz principalmente as fibras **motoras** da mão (tenares, lumbricais radiais).\n\n**O que sai de cada fascículo**:\n\n**lateral**: peitoral lateral, **musculocutâneo**, raiz lateral do mediano;\n\n**medial**: peitoral medial, cutâneos mediais do braço e do antebraço, **ulnar**, raiz medial do mediano;\n\n**posterior**: subescapulares, **toracodorsal**, **axilar** e **radial**; não participa do mediano.\n\n**Na prova**: parte sensitiva do mediano = **corda lateral** (C6-C7).",
+  "correta": "A raiz lateral do mediano, que vem da corda lateral (C6-C7), traz a maior parte das fibras sensitivas.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0466": {
-  "conceito": "### Paroníquia aguda × crônica\n| Aspecto | Aguda | ==Crônica== |\n|---|---|---|\n| causa | inoculação (cutícula, unha roída, manicure) | ==umidade repetida== destrói a cutícula |\n| agente | ==Staphylococcus aureus== (gram-positivo) | ==gram-negativos (Pseudomonas) e Candida== |\n| perfil | qualquer | cozinheiro, faxineiro, dentista, diabético |\n| quadro | dor, abscesso na prega | prega espessada, sem cutícula, lâmina alterada |\n| tratamento | drenagem + antibiótico | afastar umidade, antifúngico tópico, corticoide tópico; ==eponiquectomia== se refratária |\n\n### Diferenciais\n| Condição | Pista |\n|---|---|\n| panarício herpético | vesículas; ==não drenar== |\n| felon | polpa tensa, septos |\n| verruga periungueal | HPV |\n| carcinoma espinocelular | lesão crônica que não cura |\n\n> **Na prova:** paroníquia crônica = ==gram-negativos e Candida==.",
-  "correta": "**Gram-negativas e Candida.**\n- Umidade repetida destrói a cutícula.\n- Tratar afastando a umidade e o fungo.\n- Drenagem repetida não resolve.",
   "incorretas": {
-   "A": "**Forma aguda.**\n- Gram-positivas; Aspergillus não é agente.",
-   "C": "**HPV causa verruga.**\n- Não paroníquia.",
-   "D": "**Gram-positivas da aguda.**\n- Candida certa."
+   "A": "Gram-positivas são o agente da paroníquia aguda, e Aspergillus não é agente habitual da paroníquia.",
+   "C": "O HPV causa a verruga periungueal, não a paroníquia crônica.",
+   "D": "Candida está certa, mas as bactérias gram-positivas são as da paroníquia aguda."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **paroníquia** é a infecção da prega em volta da unha, e as formas aguda e crônica têm causas e agentes diferentes.\n\n**Aguda**: entra por uma lesão (cutícula arrancada, unha roída, manicure). O agente é o **Staphylococcus aureus**, **gram-positivo**. Dá dor e abscesso na prega; trata-se com drenagem e antibiótico.\n\n**Crônica**: a causa é a **umidade repetida**, que destrói a cutícula e deixa a prega aberta. Os agentes são **bactérias gram-negativas** (como Pseudomonas) e **Candida**. Aparece em quem molha as mãos o dia todo: cozinheiros, faxineiros, dentistas, e também em diabéticos. A prega fica espessa e sem cutícula, e a lâmina se altera.\n\n**O tratamento da crônica**: afastar a umidade, antifúngico e corticoide tópicos. Drenar repetidas vezes não resolve; nos casos refratários faz-se a **eponiquectomia** (retirada em crescente da prega dorsal).\n\n**Diferenciais**: panarício herpético (vesículas, **não drenar**), felon (polpa tensa), verruga periungueal (**HPV**) e carcinoma espinocelular (lesão crônica que não cura).\n\n**Na prova**: paroníquia crônica = **gram-negativas e Candida**.",
+  "correta": "A umidade repetida destrói a cutícula, e a prega é colonizada por bactérias gram-negativas e por Candida.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0467": {
-  "conceito": "### Momento da ENMG na lesão nervosa\n| Tempo | O que mostra |\n|---|---|\n| imediato | coto distal ainda conduz (falso normal) |\n| 7 a 10 dias | queda da amplitude motora e sensitiva (degeneração walleriana) |\n| ==3 semanas== | ==fibrilações e ondas positivas== no músculo desnervado |\n| 3 a 4 meses | potenciais de reinervação (nascentes) |\n\n### Pré × pós-ganglionar\n| Achado | Pré-ganglionar (avulsão) | Pós-ganglionar |\n|---|---|---|\n| potencial sensitivo (SNAP) em área anestésica | ==preservado== | ausente |\n| paravertebrais | ==desnervados== (ramo dorsal sai antes do gânglio) | normais |\n\n### Outros exames\n- Mielotomografia ou RM: pseudomeningocele.\n- Exame clínico seriado permanece essencial.\n\n### Degeneração walleriana\n| Local | Processo |\n|---|---|\n| ==distal à lesão== | ==desintegração do axolema, fragmentação, despolimerização de microtúbulos, quebra do citoesqueleto==; macrófagos e Schwann limpam |\n| proximal (1 a 2 internódulos) | degeneração retrógrada |\n| corpo celular | cromatólise (preparo para regenerar) |\n\n- Schwann formam as bandas de Büngner, que guiam a regeneração.\n- Fibrose tardia é obstáculo, não parte da degeneração.\n\n> **Na prova:** degeneração walleriana = ==distal, com desintegração do axônio e citoesqueleto==",
-  "correta": "**Distal, desintegração do axônio.**\n- Segmento sem corpo celular se desmonta.\n- Leva cerca de 3 semanas: ENMG antes pode enganar.",
   "incorretas": {
-   "A": "**Topografia errada.**\n- Proximal ocorre degeneração retrógrada e cromatólise.",
-   "B": "**Conteúdo errado.**\n- Fibrose é posterior e atrapalha a regeneração.",
-   "D": "**Duplamente errada.**\n- Topografia e conteúdo."
+   "A": "O conteúdo está certo, mas o processo é distal; no proximal só há degeneração retrógrada curta e cromatólise.",
+   "B": "O lado está certo, mas fibroblastos e matriz são a fibrose posterior, que atrapalha a regeneração.",
+   "D": "Erra o lado e o conteúdo: o processo é distal e a fibrose não faz parte dele."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Quando um nervo é cortado ou esmagado, o segmento **distal** à lesão perde o contato com o corpo celular, que fabrica as proteínas do axônio. Sem esse suprimento, ele se desmonta: é a **degeneração walleriana**.\n\n**O que acontece no coto distal**:\n\n**desintegração do axolema** (a membrana do axônio) e **fragmentação** do axônio;\n\n**despolimerização dos microtúbulos** e **quebra do citoesqueleto**;\n\na mielina se desfaz, e **macrófagos e células de Schwann** limpam os restos;\n\nas células de Schwann se organizam em **bandas de Büngner**, que guiam os brotos do axônio na regeneração.\n\n**O que acontece no proximal**: só uma **degeneração retrógrada** curta (1 a 2 internódulos) e, no corpo celular, a **cromatólise**, que é o preparo para regenerar.\n\n**O que não faz parte**: proliferação de fibroblastos e deposição de matriz são a **fibrose**, que vem depois e **atrapalha** a regeneração.\n\n**O tempo**: o coto distal ainda conduz nos primeiros dias; a amplitude cai em 7 a 10 dias, e as fibrilações só aparecem por volta de **3 semanas**. Uma eletroneuromiografia muito precoce pode enganar.\n\n**Na prova**: degeneração walleriana = **distal**, com desintegração do axolema, microtúbulos e citoesqueleto.",
+  "correta": "A degeneração walleriana acontece distal à lesão e consiste na desintegração do axolema, fragmentação, despolimerização de microtúbulos e quebra do citoesqueleto.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0468": {
