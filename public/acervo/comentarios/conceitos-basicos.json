@@ -2239,25 +2239,25 @@
   "conferido": false
  },
  "conceitos-basicos-0237": {
-  "conceito": "### O ciclo do calo na estabilidade relativa\n- **Reparo:** o calo periosteal **cresce** e envolve o foco num fuso volumoso. Quanto menos estável, maior o calo.\n- **Transição para remodelação:** o traço já está unido; o calo excedente começa a ser **reabsorvido**: ==diminui==.\n- **Remodelação:** o osso reorganiza a arquitetura conforme a carga (Wolff); o contorno volta ao normal ao longo de meses a anos.\n\n### Na radiografia\n- Ponte de calo em **3 de 4 corticais** (AP e perfil): critério prático de consolidação.\n- Calo diminuindo e se organizando: remodelação.\n- Calo crescendo sem ponte por meses: instabilidade (risco de pseudartrose hipertrófica).\n\n> **Na prova:** transição para remodelação = calo periosteal ==diminuindo==.",
-  "correta": "**Diminuído.**",
   "incorretas": {
-   "A": "**Fase estacionária.**",
-   "B": "**Absoluta ou falha.**",
-   "D": "**Fase de reparo.**"
+   "A": "O calo não fica estável nessa transição: começa a diminuir à medida que é reabsorvido.",
+   "B": "A ausência de calo é típica da consolidação com estabilidade absoluta, ou de uma falha de consolidação.",
+   "D": "O calo aumenta na fase de reparo, antes da transição para a remodelação."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Quando uma fratura é tratada com **estabilidade relativa** (haste intramedular, placa em ponte, gesso), ela consolida formando **calo**. Na radiografia, o calo periosteal, que se forma por fora do osso, ao redor do foco, passa por fases:\n\n**Fase de reparo.** O calo **cresce**, formando um volume em forma de fuso que envolve o foco da fratura e une os fragmentos. Quanto mais movimento houver no foco, maior tende a ser o calo.\n\n**Transição para a remodelação.** Quando o traço da fratura já está unido, o calo que sobra deixa de ser necessário e começa a ser **reabsorvido**. Na radiografia, ele aparece **diminuindo** e ficando mais organizado.\n\n**Remodelação.** Ao longo de meses a anos, o osso se reorganiza de acordo com a carga que recebe (lei de Wolff), e o contorno vai voltando ao normal.\n\nNa prática, a radiografia ajuda a acompanhar a consolidação. Um critério muito usado é a presença de **ponte de calo em pelo menos três das quatro corticais** vistas nas radiografias de frente e de perfil. E um calo que cresce por meses sem formar ponte sugere movimento demais no foco, com risco de pseudartrose hipertrófica.",
+  "correta": "Diminuído. Na transição para a remodelação, a fratura já está unida, e o calo excedente começa a ser reabsorvido.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0238": {
-  "conceito": "### O tipo\n- ==Tipo 1== (antiga distrofia simpático-reflexa): **sem lesão nervosa identificável**. Segue fratura e imobilização: é o caso.\n- **Tipo 2** (causalgia): lesão nervosa **demonstrável**.\n\n### A sensação\n- **Alodinia:** dor a estímulo não doloroso.\n- **Hiperalgesia:** dor exagerada a estímulo já doloroso.\n- ==Hiperpatia==: reação **explosiva**, de limiar elevado mas resposta desproporcional, que **persiste depois do estímulo** e pode ser desencadeada por estímulos não táteis (ar frio, barulho).\n\n### O caso\nToque leve provoca dor que persiste muito tempo, piora progressivamente, e é desencadeada por ar frio e barulho: **hiperpatia**.\n\n> **Na prova:** SDRC pós-fratura sem lesão nervosa = ==tipo 1==; dor explosiva e persistente = ==hiperpatia==.",
-  "correta": "**Tipo 1 e hiperpatia.**",
   "incorretas": {
-   "B": "**Tipo errado.**\n- O tipo 2 exige lesão nervosa.",
-   "C": "**Sensação errada.**",
-   "D": "**Erra os dois.**"
+   "B": "A hiperpatia está certa, mas o tipo 2 exige uma lesão de nervo demonstrável, que não há no caso.",
+   "C": "O tipo 1 está certo, mas a hiperalgesia é dor exagerada a um estímulo doloroso, sem o caráter explosivo e persistente descrito.",
+   "D": "Erra os dois: não há lesão de nervo, e a dor descrita é hiperpatia."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A **síndrome dolorosa regional complexa** (SDRC) pode aparecer depois de uma fratura, com dor desproporcional e alterações da pele, do suor, da circulação e do movimento. Ela tem dois tipos:\n\n**Tipo 1** (antiga distrofia simpático-reflexa): acontece **sem uma lesão de nervo** identificável. É o tipo que aparece depois de fraturas e imobilizações, como no caso descrito.\n\n**Tipo 2** (antiga causalgia): acontece depois de uma **lesão de nervo** demonstrável.\n\nO caso descreve também um tipo específico de dor, e é preciso conhecer os termos:\n\n**Alodinia**: dor causada por um estímulo que normalmente não dói, como um toque leve.\n\n**Hiperalgesia**: dor exagerada diante de um estímulo que já seria doloroso.\n\n**Hiperpatia**: uma reação **explosiva** e **desproporcional**, que **continua depois que o estímulo acabou**, vai piorando e pode ser desencadeada por estímulos que nem são de toque, como uma corrente de ar frio ou um barulho repentino.\n\nNo caso, a paciente tem dor causada por toque leve, que persiste muito tempo depois, piora progressivamente até ficar insuportável e é desencadeada por ar frio e barulho. Esse é o padrão da **hiperpatia**.",
+  "correta": "Tipo 1 e à hiperpatia. A síndrome surgiu depois de uma fratura, sem lesão de nervo, e a dor é explosiva, persistente e desencadeada por estímulos diversos.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0239": {
@@ -2272,25 +2272,25 @@
   "conferido": false
  },
  "conceitos-basicos-0240": {
-  "conceito": "### Consenso sobre infecção relacionada a fratura\n**Confirmatórios** (um basta):\n- **Fístula** ou deiscência comunicando com osso ou implante.\n- **Drenagem purulenta** ou pus no intraoperatório.\n- Patógeno em **duas ou mais** culturas concordantes de tecido profundo.\n- ==Histopatologia com 5 ou mais polimorfonucleares== por campo de grande aumento (ou microrganismos visíveis).\n\n**Sugestivos:**\n- Sinais clínicos locais, febre.\n- Drenagem não purulenta persistente.\n- **Marcadores** inflamatórios elevados.\n- **Uma** única cultura positiva.\n- Sinais **radiográficos** (osteólise, soltura, sequestro, pseudartrose).\n\n### Por que a histologia confirma\nNeutrófilos em tecido profundo refletem infecção ativa; a osteólise ocorre também em falha **asséptica**.\n\n> **Na prova:** confirmatório = ==≥5 PMN por campo== na histologia.",
-  "correta": "**5 ou mais PMN na histopatologia.**",
   "incorretas": {
-   "A": "**Sugestivo.**",
-   "B": "**Uma cultura é sugestiva.**\n- Precisa de duas concordantes.",
-   "C": "**Sugestivo.**\n- Também ocorre na falha asséptica."
+   "A": "Os marcadores inflamatórios elevados são apenas sugestivos de infecção.",
+   "B": "Uma única cultura positiva é sugestiva; para confirmar, são precisas duas ou mais com o mesmo germe.",
+   "C": "A osteólise e a soltura do material são sugestivas, porque também acontecem em falhas sem infecção."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Um consenso internacional definiu critérios para diagnosticar a **infecção relacionada a fratura** (por exemplo, depois de uma osteossíntese), dividindo-os em **confirmatórios** e **sugestivos**.\n\n**Confirmatórios** (um só fecha o diagnóstico):\n\n**Fístula** ou abertura da ferida que se comunica com o osso ou o implante.\n\nSaída de **pus** pela ferida ou pus encontrado na cirurgia.\n\nO mesmo micro-organismo em **duas ou mais culturas** de tecido profundo.\n\n**Histopatologia** (exame do tecido ao microscópio) mostrando **5 ou mais polimorfonucleares** (neutrófilos) por campo de grande aumento, ou micro-organismos visíveis.\n\n**Sugestivos** (levantam suspeita):\n\nSinais locais e febre.\n\nDrenagem persistente que não é pus.\n\n**Marcadores inflamatórios** elevados no sangue.\n\n**Uma única** cultura positiva, que pode ser contaminação.\n\nAlterações na radiografia, como **osteólise** ao redor dos parafusos, afrouxamento do material ou fratura que não consolida.\n\nPor que a histologia confirma e a osteólise apenas sugere? Neutrófilos em grande número no tecido profundo indicam infecção ativa. Já a osteólise e o afrouxamento também acontecem quando o implante falha sem infecção, por excesso de movimento.",
+  "correta": "Identificação de 5 ou mais polimorfonucleares em estudo histopatológico. Neutrófilos em número elevado no tecido profundo confirmam infecção ativa.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0241": {
-  "conceito": "### A osteotomia em Clamshell (concha)\nPara consolidação viciosa ==diafisária== da tíbia (ou fêmur):\n- Osteotomias **transversas** nas extremidades do segmento deformado.\n- Osteotomia **longitudinal**, abrindo-o como uma concha.\n- **Haste intramedular reta** realinha o osso; o segmento deformado se acomoda ao redor.\n\n### Contraindicações\n- Deformidade ==metafisária==: canal largo, a haste não controla o fragmento.\n- Necessidade de ==alongamento significativo== (acima de ~3 cm): a técnica corrige **alinhamento**, não comprimento.\n- Infecção ativa, partes moles ruins.\n\n### Vantagem\nCorreção aguda de deformidades complexas multiplanares com fixação interna, sem fixador externo prolongado.\n\n> **Na prova:** Clamshell é para diáfise; ==metáfise e alongamento >3 cm contraindicam==.",
-  "correta": "**Consolidação viciosa metafisária e alongamento acima de 3 cm.**",
   "incorretas": {
-   "B": "**Não definem a técnica.**",
-   "C": "**É a indicação.**",
-   "D": "**Diáfise é a indicação.**"
+   "B": "A osteomielite superficial e o sobrepeso não são as contraindicações que definem a técnica.",
+   "C": "A consolidação viciosa da diáfise é justamente a indicação, e um alongamento de 1 cm é pequeno.",
+   "D": "A consolidação viciosa da diáfise é a indicação da técnica, e a obesidade não é a contraindicação característica."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A **osteotomia em Clamshell** (em \"concha\", em inglês) é uma técnica para corrigir uma fratura que consolidou torta na **diáfise** da tíbia ou do fêmur, sobretudo deformidades complexas, com desvio em mais de um plano.\n\nEla funciona assim:\n\nO cirurgião faz dois cortes **transversais** nas pontas do trecho deformado do osso.\n\nDepois, faz um corte **longitudinal** nesse trecho, abrindo-o como uma concha.\n\nPor fim, passa uma **haste intramedular reta** pelo canal. A haste realinha o osso, e o trecho deformado, aberto, se acomoda em volta dela.\n\nA vantagem é corrigir de uma só vez deformidades complexas, com fixação interna, sem precisar de um fixador externo por meses.\n\nAs contraindicações seguem a lógica da técnica:\n\n**Deformidade na metáfise.** A metáfise tem o canal largo, e a haste não consegue controlar e alinhar o fragmento. A técnica é para a diáfise.\n\n**Necessidade de alongamento significativo**, acima de cerca de 3 cm. A Clamshell corrige o **alinhamento**, mas não foi feita para ganhar muito comprimento.\n\nInfecção ativa e partes moles ruins também contraindicam.",
+  "correta": "Consolidação viciosa da metáfise e necessidade de alongamento da tíbia acima de 3 cm. A técnica depende da haste no canal estreito da diáfise e corrige alinhamento, não comprimento.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0242": {
@@ -2305,14 +2305,14 @@
   "conferido": false
  },
  "conceitos-basicos-0243": {
-  "conceito": "### Não coagula: preserva o coágulo\nO ácido tranexâmico é **análogo da lisina**. Ocupa os sítios de ligação do plasminogênio à fibrina:\n- Sem essa ligação, ==o plasminogênio não vira plasmina==.\n- A fibrina **não é degradada**.\n\nEfeito: **antifibrinolítico**.\n\n### Na ortopedia\n- Reduz sangramento e transfusão em **artroplastias**, cirurgia de coluna e **trauma** (inclusive fratura de quadril).\n- Vias: endovenosa, tópica ou oral.\n- Não mostrou aumento clinicamente relevante de trombose nos estudos em artroplastia: não cria coágulo novo, apenas preserva o que existe.\n\n### Cuidados\nHistória de trombose recente, convulsões (doses altas), insuficiência renal (ajuste).\n\n> **Na prova:** ácido tranexâmico = ==inibe a ativação do plasminogênio==.",
-  "correta": "**Inibição da ativação do plasminogênio.**\n- Sem plasmina, a fibrina não é degradada.",
   "incorretas": {
-   "A": "**Aumentaria o sangramento.**\n- A prostaciclina é vasodilatadora e antiagregante.",
-   "B": "**Heparina.**\n- Ativar antitrombina é mecanismo de anticoagulante.",
-   "D": "**Anticoagulante.**\n- Inibir fatores da coagulação (V e VIII) é o oposto do pretendido."
+   "A": "A prostaciclina dilata os vasos e dificulta a agregação das plaquetas. Ativá-la aumentaria o sangramento.",
+   "B": "Ativar a antitrombina é o mecanismo da heparina, um anticoagulante, o oposto do efeito desejado.",
+   "D": "Inibir fatores da coagulação, como o V e o VIII, é efeito anticoagulante, o oposto do ácido tranexâmico."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O **ácido tranexâmico** é um remédio muito usado em ortopedia para reduzir o sangramento. Para entender como ele age, é preciso lembrar como o corpo desfaz os coágulos.\n\nQuando há sangramento, forma-se um coágulo com uma rede de **fibrina**. Depois, o corpo desmancha esse coágulo, num processo chamado **fibrinólise**. Quem faz isso é a **plasmina**, uma enzima que corta a fibrina. A plasmina circula numa forma inativa, o **plasminogênio**, que precisa ser ativado.\n\nO ácido tranexâmico é parecido com o aminoácido lisina. Ele ocupa os pontos em que o plasminogênio se prende à fibrina e, com isso, **impede a ativação do plasminogênio**. Sem plasmina, a fibrina não é degradada, e o coágulo dura mais. Por isso ele é chamado de **antifibrinolítico**.\n\nNa ortopedia, ele reduz o sangramento e a necessidade de transfusão em próteses de quadril e joelho, cirurgias da coluna e no trauma. Pode ser dado na veia, aplicado diretamente na ferida ou por via oral. Como ele não cria coágulos novos, apenas preserva os que o corpo formou, os estudos em próteses não mostraram aumento relevante de trombose.\n\nCuidados: pacientes com trombose recente, histórico de convulsões (em doses altas) e insuficiência renal, em que a dose precisa ser ajustada.",
+  "correta": "Inibição da ativação do plasminogênio. Sem plasmina, a fibrina do coágulo não é degradada.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0245": {
@@ -2341,25 +2341,25 @@
   "conferido": false
  },
  "conceitos-basicos-0249": {
-  "conceito": "### Distribuição ==bimodal==\n- **Abaixo de 2 anos:** vasos **transfisários** e imaturidade imunológica. Maior risco de artrite séptica associada e de dano à fise e à epífise.\n- ==8 a 12 anos==: **estirão**, metáfise muito vascularizada e ativa; mais atividade física e microtraumas.\n\n### Outros pontos\n- Predomínio **masculino**.\n- Metáfises dos ossos longos de crescimento rápido: **fêmur distal, tíbia proximal**, úmero proximal.\n- No adulto, o perfil muda: vertebral, por contiguidade (pé diabético) ou pós-traumática.\n\n> **Na prova:** osteomielite hematogênica na criança = ==bimodal: <2 anos e 8 a 12 anos==.",
-  "correta": "**Bimodal, abaixo de 2 anos e entre 8 e 12 anos.**",
   "incorretas": {
-   "A": "**Não é unimodal.**",
-   "B": "**Não é unimodal.**",
-   "D": "**Segundo pico errado.**"
+   "A": "A distribuição não é unimodal; há dois picos.",
+   "B": "Também não é unimodal: além do pico abaixo dos 2 anos, há outro entre 8 e 12 anos.",
+   "D": "A distribuição é bimodal, mas o segundo pico fica entre 8 e 12 anos, e não entre 12 e 14."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A **osteomielite hematogênica aguda** (infecção do osso que chega pelo sangue) na criança tem uma distribuição **bimodal**: dois picos de frequência em idades diferentes.\n\n**Primeiro pico, abaixo dos 2 anos.** Nessa fase, há vasos que atravessam a placa de crescimento e ligam a metáfise à epífise, e o sistema de defesa ainda é imaturo. É também a fase de maior risco de a infecção chegar à articulação (artrite séptica) e de danificar a placa de crescimento e a epífise.\n\n**Segundo pico, entre 8 e 12 anos.** É a época do **estirão de crescimento**: a metáfise está muito ativa e muito irrigada, e a criança se movimenta mais, com mais pequenos traumas.\n\nOutras características: é mais comum em **meninos** e acomete as metáfises dos ossos que crescem mais rápido, como o **fêmur distal** e a **tíbia proximal** (ao redor do joelho) e o úmero proximal.\n\nNo adulto, o perfil é diferente: a osteomielite hematogênica aparece mais na coluna, e as outras formas vêm de infecções vizinhas (como o pé diabético) ou de traumas e cirurgias.",
+  "correta": "Bimodal, abaixo de 2 anos e entre 8 e 12 anos. O primeiro pico se deve aos vasos que atravessam a fise e à imunidade imatura; o segundo, ao estirão de crescimento.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0250": {
-  "conceito": "### Metáfises intracapsulares\nO pus rompe a cortical e cai direto na articulação:\n- **Fêmur proximal** (colo).\n- ==Úmero proximal==.\n- ==Rádio proximal== (colo, cotovelo).\n- ==Fíbula distal== (tornozelo).\n\n### Extracapsulares\nFêmur distal, tíbia proximal, **rádio distal**, **fíbula proximal**, úmero distal. Nelas a infecção se exterioriza para as partes moles.\n\n> **Na prova:** úmero proximal, ==rádio proximal e fíbula distal== (além do fêmur proximal).",
-  "correta": "**Úmero proximal, rádio proximal e fíbula distal.**",
   "incorretas": {
-   "A": "**Rádio distal e fíbula proximal não.**",
-   "B": "**Só a fíbula distal pertence.**",
-   "D": "**Úmero distal e fíbula proximal não.**"
+   "A": "O úmero proximal está certo, mas o rádio distal e a fíbula proximal ficam fora da cápsula.",
+   "B": "Só a fíbula distal está certa; o úmero distal e o rádio distal ficam fora da cápsula.",
+   "D": "O rádio proximal está certo, mas o úmero distal e a fíbula proximal ficam fora da cápsula."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Na criança, a infecção do osso começa na **metáfise**, perto da placa de crescimento. Ela pode passar para a articulação vizinha e causar **artrite séptica** quando essa metáfise fica **dentro da cápsula** articular: a infecção rompe a cortical e cai diretamente na articulação.\n\nAs metáfises intracapsulares clássicas são quatro:\n\n**Fêmur proximal**: o colo do fêmur fica dentro da cápsula do quadril.\n\n**Úmero proximal**, no ombro.\n\n**Rádio proximal**: o colo do rádio, no cotovelo.\n\n**Fíbula distal**, no tornozelo.\n\nAs outras metáfises ficam **fora** da cápsula: fêmur distal e tíbia proximal (joelho), **rádio distal** (punho), **fíbula proximal** e **úmero distal**. Nelas, a infecção que rompe a cortical se espalha para as partes moles ao redor, e não para a articulação.\n\nPara não errar, é útil decorar as quatro intracapsulares: fêmur e úmero de cima, rádio de cima e fíbula de baixo.",
+  "correta": "Úmero proximal, rádio proximal e fíbula distal. As três metáfises ficam dentro da cápsula articular, junto com o fêmur proximal.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0251": {
@@ -2388,36 +2388,36 @@
   "conferido": false
  },
  "conceitos-basicos-0253": {
-  "conceito": "### O orifício da DCP\nGeometria de **cilindro inclinado + esfera**, que serve a duas funções:\n- **Compressão axial:** parafuso excêntrico, a cabeça desliza na rampa e empurra o fragmento (cerca de 1 mm por orifício).\n- **Angulação do parafuso:**\n  - ==Longitudinal: ~25°== (no eixo da placa): essencial para passar um **parafuso de tração** através do traço pela placa.\n  - ==Transversal: ~7°==.\n\n### A LC-DCP\nA evolução da DCP: **menos contato** com o osso (sulcos na face inferior, preserva o periósteo), orifícios simétricos (compressão nos dois sentidos) e angulação longitudinal maior (~40°).\n\n### Na prática\nForçar o parafuso além do que o orifício aceita impede o assentamento da cabeça e reduz a fixação.\n\n> **Na prova:** DCP = ==7° transversal, 25° longitudinal==.",
-  "correta": "**7° e 25°.**",
   "incorretas": {
-   "B": "**Não correspondem.**",
-   "C": "**Invertido e exagerado.**",
-   "D": "**Não correspondem.**"
+   "B": "Os valores de 10 e 30 graus não correspondem aos descritos para a DCP.",
+   "C": "Inverte as direções e exagera o valor transversal: a inclinação maior é a longitudinal.",
+   "D": "Os valores de 10 e 15 graus não correspondem aos descritos para a DCP."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A **placa DCP** (do inglês *dynamic compression plate*, placa de compressão dinâmica) tem orifícios com uma forma especial: uma rampa inclinada combinada com uma cavidade arredondada. Essa geometria serve a duas funções.\n\n**Compressão axial.** Quando o parafuso é colocado de forma excêntrica (do lado do orifício mais longe da fratura), ao apertar, a cabeça desliza pela rampa e empurra o fragmento em direção ao outro, comprimindo o foco.\n\n**Inclinação do parafuso.** O formato do orifício permite inclinar o parafuso em certos limites:\n\nNo sentido **longitudinal** (ao longo do eixo da placa), cerca de **25 graus**. Isso é importante para passar um **parafuso de tração** pela placa, atravessando o traço de uma fratura oblíqua.\n\nNo sentido **transversal** (de um lado para o outro), cerca de **7 graus**.\n\nForçar o parafuso além desses limites impede que a cabeça assente bem no orifício e enfraquece a fixação.\n\nA **LC-DCP** é uma evolução da DCP. Ela tem sulcos na face de baixo, que reduzem o contato com o osso e preservam o periósteo, orifícios simétricos, que permitem comprimir nos dois sentidos, e permite maior inclinação longitudinal do parafuso.",
+  "correta": "7 graus e 25 graus. O orifício da DCP permite cerca de 7 graus de inclinação transversal e 25 graus longitudinal.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0254": {
-  "conceito": "### As assinaturas das osteomielites específicas\n- **Tuberculosa da mão (espina ventosa):** criança **pequena** (abaixo de 5 a 6 anos), dedo fusiforme, diáfise expandida em balão.\n- **Salmonelósica (falciforme):** frequentemente **multifocal** e **diafisária**.\n- **Brucelósica:** esqueleto **axial** (sacroiliíte, espondilite com sinal de Pedro Pons).\n- ==Sifilítica congênita==: **simétrica**.\n  - Metafisite e periostite **bilaterais**.\n  - **Sinal de Wimberger:** erosão da metáfise tibial proximal **medial** dos dois lados.\n  - **Pseudoparalisia de Parrot**.\n  - Tardia: tíbia em sabre.\n\n> **Na prova:** acometimento ==simétrico== = sífilis congênita.",
-  "correta": "**Acometimento simétrico é característico da sifilítica.**",
   "incorretas": {
-   "A": "**Criança pequena.**\n- Abaixo de 5 a 6 anos.",
-   "B": "**Multifocal.**",
-   "C": "**Axial.**"
+   "A": "A dactilite tuberculosa acomete crianças pequenas, geralmente abaixo dos 5 ou 6 anos, e não maiores de 10.",
+   "B": "A osteomielite por Salmonella costuma ser multifocal, atingindo vários ossos.",
+   "C": "A brucelose prefere o esqueleto axial, como a sacroilíaca e a coluna."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Algumas infecções ósseas são causadas por germes específicos e têm \"assinaturas\" próprias, que ajudam no diagnóstico:\n\n**Tuberculose da mão** (dactilite tuberculosa, ou *espina ventosa*): acontece em crianças **pequenas**, geralmente abaixo dos 5 ou 6 anos. O dedo fica inchado em forma de fuso, e a radiografia mostra a falange ou o metacarpo inflado, como um balão.\n\n**Osteomielite por Salmonella**: típica de pacientes com doença falciforme. Costuma atingir **vários ossos** ao mesmo tempo (multifocal) e acomete principalmente a **diáfise**.\n\n**Brucelose**: prefere o esqueleto **axial**, ou seja, a articulação sacroilíaca e a coluna, onde produz uma erosão característica no canto do corpo vertebral (sinal de Pedro Pons).\n\n**Sífilis congênita**: transmitida da mãe para o bebê. Sua marca é o acometimento **simétrico**: inflamação das metáfises e do periósteo nos dois lados do corpo ao mesmo tempo. Alguns sinais clássicos são o **sinal de Wimberger** (erosão na parte de dentro da metáfise de cima da tíbia, dos dois lados) e a **pseudoparalisia de Parrot** (o bebê não mexe o membro por causa da dor). Mais tarde, pode aparecer a tíbia curvada para a frente, em \"sabre\".",
+  "correta": "Acometimento simétrico é característico da sifilítica. A sífilis congênita causa inflamação das metáfises e do periósteo dos dois lados ao mesmo tempo.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0255": {
-  "conceito": "### Os dois tipos\n- **Tipo 1** (antiga **distrofia simpático-reflexa**): dor desproporcional após trauma, cirurgia ou imobilização, **sem lesão nervosa** identificável. A forma mais comum (segue a fratura do rádio distal).\n- ==Tipo 2== (antiga ==causalgia==): mesmo quadro, **com lesão nervosa demonstrável**. Descrita em ferimentos de guerra por projétil.\n\n### Critérios de Budapeste\n- Dor contínua **desproporcional** ao evento.\n- **Sintomas** em pelo menos 3 de 4 categorias e **sinais** em pelo menos 2 de 4: sensitiva, vasomotora, sudomotora/edema, motora/trófica.\n- Sem outro diagnóstico que explique melhor.\n\n### As outras alternativas\n- **Síndrome ombro-mão:** apresentação clínica (geralmente tipo 1, após AVC ou infarto).\n- **Dor miofascial:** pontos-gatilho, sem alterações vasomotoras ou tróficas.\n\n> **Na prova:** SDRC tipo 2 = ==causalgia== (com lesão nervosa).",
-  "correta": "**Causalgia.**",
   "incorretas": {
-   "A": "**Tipo 1.**",
-   "C": "**Outra entidade.**\n- Pontos-gatilho, sem alterações vasomotoras.",
-   "D": "**Apresentação clínica.**\n- Geralmente tipo 1."
+   "A": "A distrofia simpático-reflexa é o nome antigo do tipo 1, sem lesão de nervo.",
+   "C": "A dor miofascial é outra doença, com pontos-gatilho nos músculos e sem alterações de circulação e pele.",
+   "D": "A síndrome ombro-mão é uma forma de apresentação, geralmente do tipo 1, após AVC ou infarto."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A **síndrome dolorosa regional complexa** (SDRC) é uma condição com dor desproporcional ao machucado, acompanhada de alterações da cor, temperatura e suor da pele, inchaço, alterações de pelos e unhas e rigidez. Ela é dividida em dois tipos, e os nomes antigos ainda aparecem em prova:\n\n**Tipo 1**, antiga **distrofia simpático-reflexa**: aparece depois de um trauma, cirurgia ou imobilização, **sem lesão de nervo** identificável. É a forma mais comum, e a fratura do punho é um dos gatilhos mais frequentes.\n\n**Tipo 2**, antiga **causalgia**: o quadro é o mesmo, mas existe uma **lesão de nervo** demonstrável. Foi descrita originalmente em soldados com ferimentos por projéteis que lesaram nervos.\n\nO diagnóstico usa os **critérios de Budapeste**: dor contínua e desproporcional, sintomas em pelo menos três de quatro categorias e sinais em pelo menos duas (sensorial, de cor e temperatura, de suor e inchaço, e motora ou trófica), sem outro diagnóstico que explique melhor o quadro.\n\nAs outras alternativas: a **síndrome ombro-mão** é uma forma de apresentação, geralmente do tipo 1, que aparece depois de AVC ou infarto. A **dor miofascial** é outra doença, com pontos dolorosos nos músculos (pontos-gatilho), sem as alterações de circulação e de pele da SDRC.",
+  "correta": "Causalgia. É o nome antigo do tipo 2, em que há uma lesão de nervo demonstrável.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0256": {
@@ -2432,14 +2432,15 @@
   "conferido": false
  },
  "conceitos-basicos-0257": {
-  "conceito": "### Contando os critérios de Kocher\n- Febre acima de 38,5 °C: **não** (sem febre).\n- **Não apoia** o membro: sim.\n- **Leucócitos** acima de 12.000 (13.000): sim.\n- **VHS** (40 mm/h): a banca contou como positivo (o corte original é acima de 40).\n\n**Três critérios** pela banca.\n\n### A escada (série original)\n- 1: ~3%.\n- 2: ~40%.\n- ==3: ~93%==.\n- 4: ~99%.\n\n### Conduta nessa faixa\nNão espera: **punção** articular e, confirmada, **drenagem cirúrgica** de urgência.\n\n> **Na prova:** três critérios de Kocher = ==~93%==.",
-  "correta": "**Cerca de 93%.**\n- Três critérios presentes.",
   "incorretas": {
-   "A": "**Um critério.**",
-   "B": "**Dois critérios.**",
-   "D": "**Quatro critérios.**\n- Falta a febre."
+   "A": "Cerca de 3% corresponde a apenas um critério presente.",
+   "B": "Cerca de 40% corresponde a dois critérios. Seria a resposta se o VHS de 40 não fosse contado, porque o corte original é acima de 40.",
+   "D": "Cerca de 99% corresponde aos quatro critérios, e a criança está sem febre."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Para estimar a chance de **artrite séptica** do quadril numa criança que manca, usam-se os quatro **critérios de Kocher**:\n\n**Febre** acima de 38,5 graus.\n\n**Não apoiar** o membro.\n\n**VHS** elevado (o corte original é acima de 40 mm/h).\n\n**Leucócitos** acima de 12.000 por mm³.\n\nContando os critérios do caso:\n\nFebre: **não** (a criança está sem febre).\n\nNão apoia o membro: **sim**.\n\nLeucócitos de 13.000: **sim**.\n\nVHS de 40: a banca contou como **positivo**.\n\nSão, portanto, **três critérios** pela leitura da banca.\n\nNa série original de Kocher, a probabilidade foi de cerca de 3% com um critério, 40% com dois, **93% com três** e 99% com quatro.\n\nCom probabilidade tão alta, a conduta não espera: punção do quadril e, se confirmada a infecção, drenagem cirúrgica de urgência.\n\nUm detalhe: o corte do VHS na descrição original é **acima** de 40. Um VHS exatamente de 40, a rigor, ficaria no limite. A banca considerou o critério presente.",
+  "alerta": "O gabarito conta o VHS de 40 mm/h como critério positivo, somando três critérios de Kocher. Na descrição original, o corte é VHS acima de 40 mm/h; lido de forma estrita, o caso teria apenas dois critérios, com probabilidade em torno de 40% (alternativa B).",
+  "correta": "Cerca de 93%, segundo o gabarito. Contando o VHS de 40 como positivo, a criança tem três critérios de Kocher.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0258": {
@@ -2480,73 +2481,73 @@
   "conferido": false
  },
  "conceitos-basicos-0261": {
-  "conceito": "### As duas forças do ensaio randomizado\n- ==Randomização==: distribui por sorteio os fatores de confusão **conhecidos e desconhecidos**. Nenhum desenho observacional consegue isso.\n- ==Alocação ocultada==: quem inclui o paciente **não sabe** para qual grupo ele irá. Impede a manipulação (consciente ou não) da inclusão. Sem ela, a randomização pode ser burlada.\n\n### Os outros recursos\n- **Cegamento** (paciente, cirurgião, avaliador): reduz viés de **aferição**, depois da alocação.\n- **Placebo:** permite cegamento do paciente; em cirurgia é raro (cirurgia simulada).\n- **Análise por intenção de tratar:** preserva a randomização na análise.\n\n### Cuidado\nRandomização (gerar a sequência) ≠ ocultação da alocação (esconder a sequência).\n\n> **Na prova:** força do ensaio = ==randomização + alocação ocultada==.",
-  "correta": "**Randomização e alocação ocultada.**",
   "incorretas": {
-   "A": "**Atuam depois.**\n- Reduzem viés de aferição.",
-   "B": "**Placebo não protege a alocação.**",
-   "D": "**Placebo tem outro papel.**"
+   "A": "O cegamento e o placebo atuam depois da formação dos grupos, reduzindo distorções na avaliação, e não são a força principal do desenho.",
+   "B": "A randomização está certa, mas o placebo não protege a distribuição dos pacientes entre os grupos.",
+   "D": "A alocação ocultada está certa, mas o placebo tem outro papel, ligado ao cegamento do paciente."
   },
+  "conceito": "O **ensaio clínico randomizado** é o estudo primário mais confiável para comparar tratamentos. Sua força vem de duas características:\n\n**Randomização**: os pacientes são distribuídos entre os grupos por **sorteio**. Assim, as características que poderiam influenciar o resultado (idade, gravidade, outras doenças, e até fatores que nem conhecemos) ficam distribuídas de forma equilibrada entre os grupos. Nenhum estudo observacional consegue isso.\n\n**Alocação ocultada** (sigilo da alocação): quem inclui o paciente no estudo **não sabe** para qual grupo ele vai antes de incluí-lo. Isso impede que o pesquisador, de forma consciente ou não, escolha colocar os pacientes \"melhores\" num grupo. Sem esse sigilo, o sorteio pode ser burlado.\n\nUm cuidado com os termos: **randomizar** é gerar a sequência do sorteio; **ocultar a alocação** é esconder essa sequência de quem inclui os pacientes. São coisas diferentes, e as duas são necessárias.\n\nOutros recursos melhoram o estudo, mas atuam em outro momento:\n\nO **cegamento** (paciente, cirurgião ou avaliador não sabem qual tratamento foi dado) reduz distorções na **avaliação** dos resultados, depois que os grupos já foram formados.\n\nO **placebo** permite cegar o paciente, mas em cirurgia é raro, porque exigiria uma cirurgia simulada.",
+  "correta": "Randomização e alocação ocultada. O sorteio equilibra os grupos, e o sigilo da alocação impede que esse sorteio seja burlado.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.), Cap. 8"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0262": {
-  "conceito": "### A técnica de ==Masquelet== (membrana induzida)\n**1º tempo:**\n- Desbridamento amplo.\n- Estabilização.\n- **Espaçador de PMMA** (geralmente com antibiótico) no defeito.\n- Em 6 a 8 semanas forma-se uma **membrana vascularizada** rica em fatores de crescimento (BMP-2, VEGF, TGF-beta).\n\n**2º tempo:**\n- Abrir a membrana com cuidado, retirar o cimento.\n- Preencher com **enxerto esponjoso** (crista, RIA), fechar a membrana.\n- A membrana **revasculariza** e **protege da reabsorção**.\n\nÉ a **membrana**, e não o cimento, que faz a técnica funcionar.\n\n### Os outros nomes\n- **Scaglietti:** corticoide no cisto ósseo simples.\n- **Coonrad:** prótese de cotovelo (Coonrad-Morrey).\n- **Sporer:** defeitos ósseos em revisão de artroplastia (Paprosky-Sporer).\n\n> **Na prova:** espaçador de PMMA que induz membrana = ==Masquelet==.",
-  "correta": "**Masquelet.**",
   "incorretas": {
-   "A": "**Revisão de artroplastia.**",
-   "B": "**Prótese de cotovelo.**",
-   "C": "**Cisto ósseo simples.**"
+   "A": "Sporer está ligado à classificação de defeitos ósseos em revisões de prótese.",
+   "B": "Coonrad está ligado à prótese de cotovelo de Coonrad-Morrey.",
+   "C": "Scaglietti descreveu a injeção de corticoide no tratamento do cisto ósseo simples."
   },
+  "conceito": "Quando sobra uma **falha óssea** grande, por exemplo depois de retirar osso infectado ou de uma fratura com perda de osso, uma das soluções é a técnica de **Masquelet**, também chamada técnica da **membrana induzida**. Ela é feita em dois tempos.\n\n**Primeiro tempo.** O cirurgião faz uma limpeza ampla, estabiliza o osso (com placa, haste ou fixador) e preenche a falha com um **espaçador de cimento ósseo** (polimetilmetacrilato), geralmente misturado com antibiótico. Em cerca de seis a oito semanas, o corpo forma ao redor do cimento uma **membrana** cheia de vasos e rica em fatores de crescimento, que estimulam a formação de osso.\n\n**Segundo tempo.** O cirurgião abre essa membrana com cuidado, retira o cimento e preenche o espaço com **enxerto ósseo** esponjoso do próprio paciente (da crista ilíaca ou do canal do fêmur). Depois, fecha a membrana sobre o enxerto.\n\nA membrana é a chave da técnica: ela leva sangue ao enxerto e o protege de ser reabsorvido. O cimento serve para induzi-la.\n\nOs outros nomes da questão pertencem a outros assuntos: **Scaglietti** descreveu a injeção de corticoide no cisto ósseo simples; **Coonrad** está ligado à prótese de cotovelo (Coonrad-Morrey); e **Sporer** aparece na classificação de defeitos ósseos em revisões de prótese (Paprosky-Sporer).",
+  "correta": "Masquelet. O espaçador de cimento induz uma membrana vascularizada que, no segundo tempo, recebe o enxerto ósseo.",
   "referencias": [
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 2.51"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0263": {
-  "conceito": "### A leucocidina de Panton-Valentine (PVL)\nToxina formadora de poros que **destrói neutrófilos** e provoca **necrose** tecidual. Frequente nas cepas **comunitárias** (muitas vezes MRSA comunitário, mas também MSSA).\n\n### O quadro na criança\n- **Destruição articular precoce**.\n- Osteomielite **multifocal**.\n- **Trombose venosa profunda** adjacente ao foco.\n- **Embolia séptica pulmonar**, pneumonia necrotizante.\n- Coleções múltiplas, **desbridamentos repetidos**.\n- Risco de sepse e UTI.\n\n### A conduta\n- Internar, **drenar cedo** e de forma ampla.\n- Antibiótico que cubra **MRSA comunitário** conforme a epidemiologia local; alguns serviços associam clindamicina ou linezolida pelo efeito antitoxina.\n- Investigar TVP e êmbolos.\n\n> **Na prova:** S. aureus com destruição rápida e sepse grave na criança = ==produtor de PVL==.",
-  "correta": "**Produtor de toxina PVL.**",
   "incorretas": {
-   "A": "**Mais comum, não fulminante.**",
-   "B": "**Raríssimo.**",
-   "C": "**Outro perfil.**"
+   "A": "O *S. aureus* sensível à meticilina é o mais comum, mas não é o associado ao quadro fulminante, a não ser quando produz PVL.",
+   "B": "O *S. aureus* resistente à vancomicina é raríssimo e não é o perfil descrito em crianças.",
+   "C": "O MRSA hospitalar tem outro perfil, ligado a pacientes internados, e não é o associado a esse quadro na criança da comunidade."
   },
+  "conceito": "O *Staphylococcus aureus* é o germe mais comum nas infecções de osso e articulação da criança. Mas algumas cepas são muito mais agressivas, e a que mais se associa a destruição rápida da articulação e infecção grave no corpo todo é a produtora da toxina **PVL** (leucocidina de **Panton-Valentine**).\n\nEssa toxina abre poros nas células de defesa (os neutrófilos), destruindo-as, e causa **necrose** (morte) dos tecidos. Ela é frequente em cepas adquiridas na comunidade, tanto resistentes quanto sensíveis à meticilina.\n\nNa criança, o quadro costuma ser grave:\n\nDestruição precoce da articulação.\n\nOsteomielite em vários ossos ao mesmo tempo.\n\n**Trombose venosa profunda** perto do foco da infecção.\n\nÊmbolos infectados que vão para o pulmão, com pneumonia grave.\n\nVárias coleções de pus, exigindo limpezas cirúrgicas repetidas, e risco de sepse e internação em UTI.\n\nA conduta é internar, **drenar cedo** e de forma ampla, usar antibiótico que cubra o MRSA da comunidade conforme a realidade local (alguns serviços associam antibióticos que reduzem a produção da toxina, como a clindamicina ou a linezolida) e procurar ativamente trombose e êmbolos.",
+  "correta": "Produtor de toxina Panton-Valentine leucocidina (PVL). A toxina destrói as células de defesa e os tecidos, causando destruição rápida e infecção grave.",
   "referencias": [
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 23"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0264": {
-  "conceito": "### A hierarquia do tratamento\nO primeiro degrau não é medicamentoso: é a ==reabilitação==.\n- **Fisioterapia e terapia ocupacional**.\n- Mobilização progressiva, **dessensibilização**.\n- **Terapia do espelho**, imagética motora graduada.\n- Carga progressiva (stress loading).\n\nObjetivo: quebrar o círculo **dor, desuso, rigidez e atrofia**.\n\n### Os adjuvantes\nPermitem a reabilitação, não a substituem:\n- Analgesia, **gabapentinoides**, antidepressivos.\n- **Bisfosfonatos**, corticoide oral curto em fases iniciais.\n- **Bloqueios simpáticos**, estimulação medular em refratários.\n- Suporte psicológico.\n\n### O caso\nSDRC tipo 1 após túnel do carpo, sem resposta à medicação oral, com termografia mostrando instabilidade vasomotora (esperada na síndrome): ==fisioterapia/terapia ocupacional==.\n\n> **Na prova:** tratamento da SDRC = ==reabilitação== como pilar.",
-  "correta": "**Fisioterapia ou terapia ocupacional.**",
   "incorretas": {
-   "A": "**Prevenção.**\n- A vitamina C não trata o quadro instalado.",
-   "C": "**Achado esperado.**\n- Não indica exploração vascular.",
-   "D": "**Sem lesão do mediano.**\n- Reoperar tende a piorar."
+   "A": "A vitamina C foi estudada para prevenir a síndrome após fraturas, e não para tratar o quadro já instalado.",
+   "C": "A instabilidade vasomotora é esperada na síndrome e não indica exploração cirúrgica nem avaliação vascular.",
+   "D": "Não há sinal de lesão do nervo mediano, e uma nova cirurgia tende a piorar a síndrome."
   },
+  "conceito": "No tratamento da **síndrome dolorosa regional complexa**, o pilar **não é o remédio**: é a **reabilitação**. Fisioterapia e terapia ocupacional são o primeiro e mais importante degrau.\n\nA reabilitação inclui mobilização progressiva, dessensibilização (expor a pele, aos poucos, a texturas e estímulos diferentes), **terapia do espelho** (o paciente olha o reflexo do membro saudável no espelho, como se fosse o doente, o que ajuda o cérebro a \"reaprender\" o membro), imagética motora e carga progressiva. O objetivo é quebrar o ciclo de dor, falta de uso, rigidez e atrofia.\n\nOs remédios e procedimentos entram como **coadjuvantes**, para permitir que a reabilitação aconteça, e não para substituí-la: analgésicos, remédios para dor neuropática (como gabapentina e pregabalina), antidepressivos, bisfosfonatos, corticoide por pouco tempo nas fases iniciais, bloqueios do sistema nervoso simpático e, nos casos que não respondem, estimulação da medula. O apoio psicológico também é importante.\n\nNo caso, a paciente tem síndrome do tipo 1 depois de uma cirurgia do túnel do carpo, não melhorou com remédios por via oral, e a termografia mostrou instabilidade vasomotora (alteração da circulação da pele), que é um achado esperado na síndrome. A conduta é a reabilitação.\n\nA vitamina C serve para **prevenir** a síndrome após fraturas do punho, e não para tratar o quadro já instalado.",
+  "correta": "Fisioterapia ou terapia ocupacional. A reabilitação é o pilar do tratamento da síndrome, e os remédios entram como coadjuvantes.",
   "referencias": [
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 17.5"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0265": {
-  "conceito": "### O princípio hidrostático\n- As partes moles são, em essência, **água**, e ==água não se comprime==.\n- Confinadas num **cilindro rígido** (gesso circular bem moldado), não se expandem lateralmente.\n- O conjunto gesso + partes moles + osso se comporta como uma **coluna** que ==fica rígida==, transmitindo carga e resistindo à angulação.\n\nÉ o mesmo princípio da **órtese funcional de Sarmiento**.\n\n### O corolário perigoso\nUm cilindro rígido em volta de tecido que **incha** é a receita da **síndrome compartimental**:\n- Gesso fendido (bivalvado) nas primeiras 24 a 48 h, ou tala até o edema baixar.\n- Elevar, observar dor desproporcional e dor ao estiramento passivo.\n\n> **Na prova:** princípio hidrostático = partes moles ==incompressíveis que se tornam rígidas==.",
-  "correta": "**Não são compressíveis e se tornam rígidos.**",
   "incorretas": {
-   "A": "**Seriam compressíveis.**\n- Não gerariam a coluna rígida.",
-   "B": "**Erra os dois.**",
-   "D": "**Resultado errado.**\n- O confinamento gera rigidez."
+   "A": "Se os tecidos fossem compressíveis, não formariam a coluna rígida que estabiliza a fratura.",
+   "B": "Erra os dois: os tecidos não são compressíveis, e o confinamento os torna rígidos, e não flexíveis.",
+   "D": "Os tecidos não são compressíveis, mas o resultado do confinamento é rigidez, e não flexibilidade."
   },
+  "conceito": "O tratamento de algumas fraturas com **gesso circular** bem moldado se baseia no **princípio da pressão hidrostática**.\n\nOs músculos e tecidos moles são, em grande parte, **água**, e a água praticamente **não se comprime**. Quando esses tecidos ficam confinados dentro de um cilindro rígido, como um gesso bem moldado, eles não conseguem se expandir para os lados. O conjunto formado pelo gesso, pelos tecidos moles e pelo osso passa a funcionar como uma **coluna rígida**, que transmite carga e resiste a que a fratura se angule.\n\nÉ o mesmo princípio por trás da **órtese funcional de Sarmiento**, usada nas fraturas do úmero e da tíbia.\n\nEsse princípio tem um lado perigoso. Um cilindro rígido ao redor de um membro que está **inchando** pode fazer a pressão dentro dos músculos subir demais, cortando a circulação: é a **síndrome compartimental**. Por isso:\n\nNas primeiras 24 a 48 horas, o gesso costuma ser aberto (bivalvado) ou se usa uma tala, até o inchaço diminuir.\n\nO membro é mantido elevado.\n\nA equipe observa sinais de alerta, como dor desproporcional ao machucado e dor ao esticar passivamente os dedos.",
+  "correta": "Não são compressíveis e se tornam rígidos. Confinados num gesso rígido, os tecidos moles, ricos em água, formam com o osso uma coluna rígida.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.), Cap. 10"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0266": {
