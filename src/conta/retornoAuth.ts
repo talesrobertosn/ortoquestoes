@@ -28,6 +28,8 @@ export interface RetornoAuth {
   erro?: string
   /** O link era de redefinição de senha. */
   recuperacao: boolean
+  /** Volta do login com o Google (?conta=google). */
+  google: boolean
 }
 
 function capturar(): RetornoAuth | null {
@@ -46,6 +48,7 @@ function capturar(): RetornoAuth | null {
     if (!hash && !erro && !tokenHash) return null
     const retorno: RetornoAuth = {
       recuperacao: tipo === 'recovery' || busca.get('conta') === 'recuperar',
+      google: busca.get('conta') === 'google',
       ...(erro ? { erro } : {}),
       ...(access && refresh ? { tokens: { access_token: access, refresh_token: refresh } } : {}),
       ...(tokenHash && tipo && TIPOS.includes(tipo) ? { tokenHash: { token_hash: tokenHash, type: tipo as TipoLink } } : {}),

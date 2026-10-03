@@ -1874,3 +1874,13 @@ kbd {
 }
 .backup-progresso__restaurar { cursor: pointer; }
 .backup-progresso__restaurar:focus-within { outline: 2px solid var(--verdete); outline-offset: 2px; }
+
+/* Continuar com Google: cores do botão oficial (claro e escuro). */
+.botao-google__bloco { display: grid; gap: 0.55rem; }
+.botao.botao-google { display: inline-flex; align-items: center; justify-content: center; gap: 0.7rem; min-height: 48px; background: #ffffff; color: #1f1f1f; border: 1px solid #747775; font-weight: 600; }
+.botao.botao-google:hover:not(:disabled) { background: #f2f2f2; color: #1f1f1f; }
+:root[data-tema="escuro"] .botao.botao-google { background: #131314; color: #e3e3e3; border-color: #8e918f; }
+:root[data-tema="escuro"] .botao.botao-google:hover:not(:disabled) { background: #1f1f20; color: #e3e3e3; }
+.botao-google__nota { margin: 0; font-size: var(--meta); color: var(--texto-2); text-align: center; line-height: 1.45; }
+.botao-google__ou { display: flex; align-items: center; gap: 0.75rem; margin: 0.35rem 0 0; color: var(--texto-2); font-size: var(--meta); }
+.botao-google__ou::before, .botao-google__ou::after { content: ""; flex: 1; height: 1px; background: var(--traco); }
