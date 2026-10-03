@@ -1253,17 +1253,17 @@
   "conferido": false
  },
  "conceitos-basicos-0121": {
-  "conceito": "### O que o ácido tranexâmico é\n==Antifibrinolítico==: não forma coágulo, impede que o coágulo já formado seja desmanchado.\n\n### Como\n- Análogo da **lisina**.\n- Ocupa os sítios de ligação do plasminogênio à fibrina.\n- ==O plasminogênio não é ativado== em plasmina.\n- Sem plasmina, a fibrina não é degradada.\n\n### Por que é seguro\nPreserva o coágulo que o organismo formou, sem criar coágulo novo: nos estudos em artroplastia e trauma não houve aumento clinicamente relevante de trombose.\n\n### Fibrinolíticos (o oposto)\nEstreptoquinase, alteplase: **ativam** o plasminogênio e desfazem coágulos.\n\n> **Na prova:** tranexâmico = ==antifibrinolítico, inibe a ativação do plasminogênio==.",
-  "correta": "**Antifibrinolítico e inibidor da ativação do plasminogênio.**",
   "incorretas": {
-   "A": "**Nome invertido.**\n- Fibrinolítico desfaz coágulo.",
-   "B": "**Erra os dois.**",
-   "D": "**Mecanismo invertido.**\n- Promover a ativação faria o oposto."
+   "A": "Inibir a ativação do plasminogênio está certo, mas isso faz do ácido tranexâmico um antifibrinolítico, e não um fibrinolítico.",
+   "B": "Erra os dois: os fibrinolíticos, que desfazem coágulos, é que promovem a ativação do plasminogênio.",
+   "D": "Antifibrinolítico está certo, mas o mecanismo é inibir, e não promover, a ativação do plasminogênio."
   },
+  "conceito": "Para entender o ácido tranexâmico, é preciso lembrar como o corpo controla os coágulos. Quando há sangramento, forma-se um coágulo feito de **fibrina**, uma rede de proteína que segura as plaquetas e as hemácias. Depois, quando o vaso já cicatrizou, o próprio corpo desmancha esse coágulo, num processo chamado **fibrinólise**. Quem faz isso é a **plasmina**, uma enzima que corta a fibrina. A plasmina circula numa forma inativa, o **plasminogênio**, que precisa ser ativado.\n\nO **ácido tranexâmico** é um **antifibrinolítico**: ele não forma coágulo novo, apenas impede que o coágulo já formado seja desmanchado cedo demais. Ele é parecido com o aminoácido lisina e ocupa os pontos em que o plasminogênio se prende à fibrina. Assim, o plasminogênio **não é ativado** em plasmina, e a fibrina não é degradada. O coágulo dura mais, e o sangramento diminui.\n\nÉ muito usado em ortopedia, por exemplo nas próteses de quadril e joelho e no trauma, para reduzir a perda de sangue e a necessidade de transfusão. Como apenas preserva o coágulo que o organismo formou, sem criar coágulos novos, os estudos nessas situações não mostraram aumento relevante de trombose.\n\nO oposto são os **fibrinolíticos**, como a alteplase e a estreptoquinase, que **ativam** o plasminogênio para dissolver coágulos, por exemplo no infarto e no AVC.",
+  "correta": "Antifibrinolítico e inibidor da ativação do plasminogênio. Ele impede que o plasminogênio vire plasmina, e o coágulo não é desmanchado.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 25"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0122": {
@@ -1294,150 +1294,150 @@
   "conferido": false
  },
  "conceitos-basicos-0124": {
-  "conceito": "### A cartilagem é quase toda matriz\n- **Água:** 65 a 80%.\n- **Colágeno tipo II:** a malha.\n- **Proteoglicanos** (agrecan): retêm água.\n- **Condrócitos:** fração **minúscula**, algo entre 1 e 5% do volume. Os textos de revisão ortopédica usam ==5%==.\n\n### A consequência clínica\nPoucas células, e ainda:\n- **Avascular**, aneural, alinfática.\n- Nutrição por **difusão** do líquido sinovial (bombeada pela carga cíclica).\n- **Capacidade de reparo muito limitada**.\n\n### O reparo\n- Lesão só da cartilagem: praticamente não cicatriza.\n- Lesão que atinge o **osso subcondral**: forma **fibrocartilagem** (colágeno tipo I), inferior mecanicamente. É o princípio das microfraturas.\n\n> **Na prova:** células na cartilagem articular = ==cerca de 5%==.",
-  "correta": "**Cerca de 5%.**",
   "incorretas": {
-   "A": "**Extremo inferior.**\n- Algumas referências histológicas citam ~1%, mas o valor das provas é 5%.",
-   "C": "**Superestima.**",
-   "D": "**Tecido celular.**\n- A cartilagem é essencialmente matriz.",
-   "E": "**Muito acima.**"
+   "A": "Algumas referências citam valores próximos de 1%, mas o valor usado nos textos de revisão ortopédica é de cerca de 5%.",
+   "C": "15% superestima a proporção de células na cartilagem.",
+   "D": "25% descreveria um tecido muito mais celular que a cartilagem, que é essencialmente matriz.",
+   "E": "35% está muito acima do valor real."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A **cartilagem hialina** que reveste as superfícies das articulações é um tecido quase todo feito de **matriz**, o material que fica entre as células. A composição aproximada é:\n\n**Água**: a maior parte, cerca de 65 a 80% do peso.\n\n**Colágeno tipo II**: forma uma malha resistente.\n\n**Proteoglicanos** (principalmente o agrecan): moléculas que atraem e retêm água, dando à cartilagem a capacidade de amortecer.\n\n**Condrócitos**: as células da cartilagem, que são uma fração **muito pequena** do volume, algo entre 1 e 5%. Os textos de revisão ortopédica usam o valor de **5%**.\n\nEssa composição explica por que a cartilagem cicatriza tão mal. Além de ter poucas células, ela não tem **vasos sanguíneos**, nervos nem vasos linfáticos. Ela se nutre por **difusão** a partir do líquido sinovial, como uma esponja: a carga e o alívio repetidos durante o movimento bombeiam o líquido para dentro e para fora.\n\nPor isso, uma lesão que atinge só a cartilagem praticamente **não cicatriza**. Quando a lesão chega ao osso logo abaixo (osso subcondral), o sangue que vem do osso traz células que formam um tecido de reparo, mas esse tecido é **fibrocartilagem** (com colágeno tipo I), mais fraco que a cartilagem original. Esse é o princípio das microfraturas, uma técnica que faz pequenos furos no osso para provocar esse reparo.",
+  "correta": "5%. A cartilagem é quase toda matriz, e as células representam uma fração muito pequena do volume.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0125": {
-  "conceito": "### O sobrecrescimento terminal\n- **Criança** amputada.\n- Crescimento por **aposição** na extremidade seccionada, não pela fise.\n- Espícula que perfura a pele por dentro.\n- Nas amputações **transdiafisárias**; não nas desarticulações.\n\n### Frequência\n==Úmero==, fíbula, tíbia, fêmur.\n\n### Tratamento\n- Epifisiodese não resolve.\n- Ressecção simples recidiva.\n- **Capeamento** com enxerto osteocondral autólogo.\n\n> **Na prova:** sobrecrescimento do coto = ==úmero== em primeiro lugar.",
-  "correta": "**Úmero.**",
   "incorretas": {
-   "A": "**O menos acometido** entre os ossos longos citados.",
-   "C": "**Segundo lugar.**",
-   "D": "**Depois da fíbula.**",
-   "E": "**Não está entre os principais.**"
+   "A": "O fêmur é o menos acometido entre os ossos longos citados.",
+   "C": "A fíbula aparece em segundo lugar, depois do úmero.",
+   "D": "A tíbia vem depois do úmero e da fíbula.",
+   "E": "O rádio não está entre os principais ossos acometidos."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Na criança amputada, existe uma complicação que não acontece no adulto: o **sobrecrescimento terminal do coto**. Quando o osso é cortado no meio da diáfise (amputação transdiafisária), a ponta cortada continua formando osso novo por fora, por aposição, como uma espícula pontuda. Esse crescimento **não vem da placa de crescimento**. Com o tempo, a ponta cresce mais que a pele e os músculos ao redor e pode furar a pele por dentro, causando dor, bursite e feridas.\n\nO osso mais acometido é o **úmero**, seguido da fíbula, da tíbia e do fêmur. A complicação não acontece nas desarticulações, em que o osso não é cortado.\n\nO tratamento segue uma lógica importante:\n\nA **epifisiodese** (fechar a placa de crescimento) não resolve, porque o crescimento não vem dali.\n\nApenas cortar a ponta costuma levar à recidiva.\n\nO que funciona é **capear** a ponta com um enxerto de osso com cartilagem (osteocondral), retirado, por exemplo, da própria parte amputada ou de outro local. A cartilagem fecha a ponta e impede que o osso continue crescendo.\n\nPor isso, na criança, sempre que possível, prefere-se desarticular em vez de cortar o osso no meio.",
+  "correta": "No úmero. É o osso em que o sobrecrescimento terminal do coto é mais comum.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0126": {
-  "conceito": "### A cartilagem é principalmente água\nEm torno de ==70 a 80%== do peso úmido.\n\n### Água retida, não livre\n- Os **proteoglicanos** têm carga negativa: atraem cátions e, com eles, água.\n- Cria-se **pressão osmótica** que mantém o tecido túrgido.\n- A **malha de colágeno tipo II** contém esse inchaço.\n\n### Como amortece\nSob compressão, a água é **expulsa lentamente** pela malha (baixa permeabilidade), dissipando energia. Ao aliviar a carga, volta.\n\n### Na artrose\nO teor de água ==aumenta== nas fases iniciais: a rede de colágeno se desorganiza e não contém o inchaço. Com a progressão, os proteoglicanos se perdem.\n\n### No envelhecimento\nO oposto: a água **diminui**.\n\n> **Na prova:** água na cartilagem = ==70 a 80%==; aumenta na artrose inicial, diminui com a idade.",
-  "correta": "**70 a 80%.**",
   "incorretas": {
-   "A": "**Tecido desidratado.**",
-   "B": "**Subestima muito.**",
-   "C": "**Bem abaixo.**",
-   "D": "**Ainda abaixo.**"
+   "A": "10 a 20% descreveria um tecido muito desidratado, o oposto da cartilagem.",
+   "B": "25 a 35% subestima muito o teor de água da cartilagem.",
+   "C": "40 a 50% ainda fica bem abaixo do valor real.",
+   "D": "55 a 65% continua abaixo da faixa descrita para a cartilagem articular."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A **cartilagem hialina** das articulações é feita principalmente de **água**: cerca de **70 a 80%** do seu peso.\n\nEssa água não está solta. Ela é **retida** por moléculas chamadas **proteoglicanos**, que têm carga negativa. Essa carga atrai partículas com carga positiva (como o sódio) e, junto com elas, atrai água. Isso cria uma pressão que deixa a cartilagem inchada e firme. A **malha de colágeno tipo II** funciona como uma rede que contém esse inchaço, impedindo que a cartilagem se desmanche.\n\nÉ assim que a cartilagem amortece. Quando a articulação recebe carga, a água é espremida para fora **lentamente**, porque a malha deixa ela passar com dificuldade. Essa saída lenta dissipa a energia do impacto. Quando a carga é aliviada, a água volta.\n\nDuas mudanças são cobradas em prova:\n\nNa **artrose inicial**, o teor de água **aumenta**. A rede de colágeno se desorganiza e não consegue mais conter o inchaço dos proteoglicanos. Mais tarde, com a perda dos proteoglicanos, a cartilagem se desgasta.\n\nNo **envelhecimento** normal, o teor de água **diminui**.\n\nEssa diferença ajuda a separar a artrose do simples envelhecimento da cartilagem.",
+  "correta": "70 a 80%. A cartilagem é principalmente água, retida pelos proteoglicanos e contida pela malha de colágeno.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0137": {
-  "conceito": "### Ossificação heterotópica nasce do músculo\nCélula mesenquimal exposta a **hematoma** e **fragmentos ósseos** se diferencia em osteoblasto. Quanto mais músculo o pino atravessa, maior o risco.\n\n### No fêmur\n- ==Pino anterior==: atravessa o **reto femoral** e o **vasto intermédio**, no ventre do quadríceps. O que mais traumatiza músculo, e ainda **amarra o quadríceps** ao osso, limitando a flexão do joelho.\n- **Pino lateral:** atravessa a banda iliotibial e a borda do vasto lateral. Menos massa muscular: é o **trajeto preferido**.\n- **Anteromedial:** aproxima-se do feixe femoral.\n\n### Na prática\n- Pinos **laterais** (ou anterolaterais).\n- Mobilização do joelho para evitar aderência do quadríceps.\n\n> **Na prova:** pino de fêmur com mais ossificação heterotópica = ==anterior==.",
-  "correta": "**Anterior.**\n- Atravessa o ventre do quadríceps.",
   "incorretas": {
-   "A": "**Outro problema.**\n- Risco vascular, não o de ossificação.",
-   "C": "**Menos músculo.**",
-   "D": "**O preferido.**\n- Menor lesão muscular."
+   "A": "O pino anteromedial tem outro problema: fica perto dos vasos e nervos femorais.",
+   "C": "O trajeto anterolateral atravessa menos músculo que o anterior.",
+   "D": "O trajeto lateral é o preferido, justamente por atravessar menos massa muscular."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A **ossificação heterotópica** é a formação de osso maduro em lugar onde não deveria haver osso, geralmente dentro de músculos. Ela nasce do **músculo** traumatizado: células imaturas do músculo, expostas a sangue (hematoma) e a fragmentos de osso, passam a se transformar em células formadoras de osso. Por isso, quanto mais músculo um pino atravessa e lesa, maior o risco.\n\nNo **fêmur**, a posição do pino do fixador externo faz diferença:\n\nO **pino anterior** atravessa o ventre do **quadríceps** (o reto femoral e o vasto intermédio), o grande músculo da frente da coxa. É o trajeto que mais lesa músculo, e por isso o que mais favorece a ossificação heterotópica. Além disso, ele \"prende\" o quadríceps ao osso, e o paciente perde a capacidade de dobrar o joelho.\n\nO **pino lateral** passa pela banda iliotibial e pela borda do vasto lateral, atravessando menos massa muscular. É o **trajeto preferido**.\n\nO pino **anteromedial** fica perto dos vasos e nervos femorais, com outro tipo de risco.\n\nNa prática, os pinos no fêmur são colocados pelo lado de fora (lateral ou anterolateral), e o joelho é mobilizado cedo para evitar que o quadríceps grude e o joelho fique rígido.",
+  "correta": "Anterior. O pino que entra pela frente atravessa o ventre do quadríceps, o trajeto que mais lesa músculo e mais favorece a ossificação heterotópica.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0138": {
-  "conceito": "### Dois gatilhos que se somam\n- **Trauma local:** hematoma e músculo desvitalizado.\n- **Trauma craniencefálico:** por mecanismo ainda mal compreendido, aumenta muito a incidência. Também lesão medular e queimaduras.\n\n### Onde\nAs grandes articulações **proximais**. O ==quadril== lidera, seguido de cotovelo e ombro. Na criança, o quadril também é o mais frequente.\n\n### Como aparece\n- **Perda progressiva de amplitude** semanas após o trauma.\n- Massa endurecida, dolorosa, às vezes quente (confunde com TVP ou infecção).\n- **Fosfatase alcalina** sobe antes da radiografia; cintilografia mostra cedo.\n\n### Prevenção e tratamento\n- Profilaxia com **indometacina** ou **radioterapia** em grupos de alto risco (artroplastia, acetábulo).\n- Ressecção quando **madura** (radiografia e cintilografia estáveis) e se limita a função.\n\n> **Na prova:** ossificação heterotópica no politrauma = ==quadril==.",
-  "correta": "**Quadril.**",
   "incorretas": {
-   "A": "**Bem menos frequente.**",
-   "B": "**Incomum.**",
-   "C": "**Atrás do quadril e do cotovelo.**"
+   "A": "O joelho é bem menos acometido que o quadril.",
+   "B": "O tornozelo é um local incomum de ossificação heterotópica.",
+   "C": "O ombro é acometido, mas fica atrás do quadril e do cotovelo."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A **ossificação heterotópica** é a formação de osso fora do lugar, em músculos e ao redor das articulações. Ela é favorecida por dois tipos de gatilho, que se somam:\n\n**Trauma local**: hematoma e músculo machucado ao redor da articulação.\n\n**Trauma do sistema nervoso**: o traumatismo craniencefálico aumenta muito o risco, por um mecanismo ainda não totalmente compreendido. A lesão da medula espinhal e as queimaduras extensas também.\n\nEla acomete principalmente as grandes articulações próximas ao tronco. O **quadril** é o local mais frequente, seguido do cotovelo e do ombro. Na criança politraumatizada, o quadril também lidera.\n\nO quadro costuma aparecer semanas depois do trauma: a articulação vai perdendo movimento aos poucos, e pode surgir uma massa endurecida e dolorosa, às vezes quente, que pode ser confundida com trombose ou infecção. A **fosfatase alcalina** no sangue sobe antes de a radiografia mostrar o osso, e a cintilografia detecta a ossificação cedo.\n\nA prevenção, em grupos de alto risco (como cirurgias de prótese do quadril e fraturas do acetábulo), pode ser feita com anti-inflamatório (indometacina) ou radioterapia. Quando o osso formado limita muito o movimento, ele é retirado cirurgicamente, de preferência depois de **maduro**, quando a radiografia e a cintilografia estão estáveis.",
+  "correta": "Quadril. É a articulação em que a ossificação heterotópica aparece com mais frequência no politrauma, inclusive na criança.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0139": {
-  "conceito": "### Como o PRP age\nPelos **fatores de crescimento** liberados na degranulação plaquetária: PDGF, TGF-beta, VEGF, IGF, EGF.\n\n### Por que a concentração importa\n- **Baixa demais:** fator de crescimento insuficiente, sem efeito.\n- **Alta demais:** efeito paradoxal, com **inibição** descrita em cultura.\n- **Faixa terapêutica:** em torno de **3 a 5 vezes** o basal (algo próximo de 1 milhão de plaquetas/µL). A resposta ==2 a 6 vezes== engloba esse intervalo.\n\n### Variáveis que mudam o produto\n- Presença de **leucócitos** (rico ou pobre).\n- Ativação (cálcio, trombina).\n- Volume e número de aplicações.\n\n### A evidência\nHeterogênea. Algum benefício em **epicondilite lateral** e **artrose do joelho**; na **consolidação óssea**, a evidência é fraca.\n\n> **Na prova:** PRP para osso = ==2 a 6 vezes== o fisiológico.",
-  "correta": "**2 a 6 vezes.**\n- Engloba a faixa de 3 a 5 vezes.",
   "incorretas": {
-   "A": "**Plasma quase normal.**",
-   "B": "**Limite inferior.**",
-   "D": "**Ultrapassa.**\n- Concentrações muito altas têm efeito inibitório descrito."
+   "A": "De 1 a 2 vezes, o plasma fica quase igual ao normal, sem concentração suficiente de fatores de crescimento.",
+   "B": "2 a 3 vezes fica no limite inferior e não cobre toda a faixa considerada útil.",
+   "D": "De 5 a 10 vezes ultrapassa a faixa útil, e concentrações muito altas podem ter efeito inibitório."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O **plasma rico em plaquetas** (PRP) é obtido a partir do sangue do próprio paciente, que é centrifugado para concentrar as plaquetas num pequeno volume de plasma. A ideia é que as plaquetas, ao serem ativadas, liberam **fatores de crescimento** (como PDGF, TGF-beta e VEGF), substâncias que estimulam a cicatrização, a formação de vasos e a multiplicação de células.\n\nA **concentração** de plaquetas importa:\n\nSe for **baixa demais**, não há fatores de crescimento suficientes para fazer efeito.\n\nSe for **alta demais**, há estudos em laboratório mostrando um efeito paradoxal, de **inibição** das células.\n\nA faixa considerada útil fica em torno de **3 a 5 vezes** a concentração normal do sangue. A alternativa **2 a 6 vezes** engloba essa faixa.\n\nOutras variáveis mudam o produto: se ele contém muitos ou poucos glóbulos brancos, como as plaquetas são ativadas, o volume e o número de aplicações. Isso explica por que os estudos com PRP são tão difíceis de comparar.\n\nA evidência de benefício é variada. Há algum resultado favorável na epicondilite lateral e na artrose do joelho. Na **consolidação óssea**, a evidência ainda é fraca.",
+  "correta": "2 a 6 vezes. Essa faixa engloba a concentração considerada útil, de 3 a 5 vezes o valor normal do sangue.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0140": {
-  "conceito": "### O gesso de Burkhalter\nTratamento **funcional** de fraturas de metacarpo pela posição **intrínseca-plus**:\n- ==Punho em cerca de 40° de extensão==.\n- **Metacarpofalângicas em 70 a 90° de flexão**.\n- **Interfalângicas livres**: o paciente move os dedos desde o início.\n\n### Por que cada ângulo\n- **Extensão do punho:** tensiona os flexores e ajuda a manter a redução, contrapondo a angulação **apical dorsal**.\n- **Flexão da MCF:** mantém os **colaterais** esticados (cam effect da cabeça do metacarpo), evitando a rigidez em extensão.\n- **IF livres:** a movimentação ativa faz a **banda lateral e o aparelho extensor** atuarem como tala dinâmica.\n\n### Indicações\nFraturas diafisárias e do colo dos metacarpos redutíveis e estáveis, sem desvio rotacional.\n\n> **Na prova:** Burkhalter = ==punho 40° de extensão==, MCF fletidas, IF livres.",
-  "correta": "**40° de extensão.**",
   "incorretas": {
-   "A": "**Sem tensão dos flexores.**",
-   "B": "**Insuficiente.**",
-   "C": "**Aquém.**"
+   "A": "Com o punho neutro, os tendões flexores não ficam tensionados como o método exige.",
+   "B": "10 graus de extensão é insuficiente para a posição descrita no gesso de Burkhalter.",
+   "C": "20 graus de extensão fica aquém dos cerca de 40 graus descritos."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O **gesso de Burkhalter** é um tratamento **funcional** para fraturas dos metacarpos, os ossos da palma da mão. Ele imobiliza a mão numa posição específica, a posição \"intrínseca-plus\", e deixa os dedos livres para se mover desde o início.\n\nA posição é:\n\n**Punho em cerca de 40 graus de extensão** (dobrado para cima).\n\n**Articulações da base dos dedos** (metacarpofalângicas) dobradas entre 70 e 90 graus.\n\n**Articulações dos dedos** (interfalângicas) livres.\n\nCada ângulo tem um motivo:\n\nA **extensão do punho** coloca os tendões flexores sob tensão e ajuda a manter a fratura no lugar, contrapondo a tendência do metacarpo de angular com a ponta para cima.\n\nA **flexão das articulações da base dos dedos** mantém esticados os ligamentos colaterais dessas articulações. Se eles ficassem frouxos (com os dedos esticados), encurtariam e a mão ficaria rígida em extensão.\n\nOs **dedos livres** se movem ativamente, e os tendões extensores, deslizando sobre o metacarpo, funcionam como uma tala dinâmica que ajuda a alinhar a fratura.\n\nEle é indicado para fraturas do corpo e do colo dos metacarpos que podem ser reduzidas e ficam estáveis, sem desvio de rotação.",
+  "correta": "40 graus de extensão. É a posição do punho no gesso de Burkhalter, que tensiona os flexores e ajuda a manter a redução.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0141": {
-  "conceito": "### A faca de dois gumes\n- Pino mais grosso: montagem **mais rígida** (quarta potência do raio).\n- Pino mais grosso: **buraco maior** e mais concentração de tensão.\n\n### A regra\nO diâmetro do pino ==não deve passar de ~30% (um terço)== do diâmetro do osso naquele nível. Acima disso, a resistência do osso cai de forma acentuada e o orifício vira **ponto de fratura**, durante o tratamento e depois da retirada.\n\n### Referências práticas em adultos\n- **Fêmur e tíbia:** 5 a 6 mm.\n- **Úmero:** 4 a 5 mm.\n- **Rádio e metacarpos:** menores (3 a 4 mm e 2,5 a 3 mm).\n\n### Depois de retirar o fixador\nProteger o membro por algumas semanas: os orifícios são **concentradores de tensão**.\n\n> **Na prova:** pino de Schanz ==até 30% do diâmetro do osso==.",
-  "correta": "**30%.**",
   "incorretas": {
-   "A": "**Fino demais.**\n- Rigidez insuficiente, risco de afrouxamento.",
-   "C": "**Passa do limite.**",
-   "D": "**Risco de fratura.**"
+   "A": "Um pino de 10% do diâmetro do osso seria fino demais, com pouca rigidez e risco de afrouxar.",
+   "C": "35% já passa do limite recomendado e aumenta o risco de fratura no orifício.",
+   "D": "40% deixa um furo grande demais, que enfraquece o osso e aumenta o risco de fratura."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Na escolha do **pino de Schanz** (o pino rosqueado do fixador externo), há um equilíbrio a fazer.\n\nUm pino **mais grosso** deixa a montagem muito mais **rígida**: a rigidez do pino cresce com a quarta potência do raio, ou seja, um pouco mais de espessura dá muito mais firmeza.\n\nMas um pino mais grosso também faz um **buraco maior** no osso. Todo furo no osso concentra tensão, como um picote numa folha de papel, e enfraquece o osso naquele ponto. Quanto maior o furo, maior o risco de o osso quebrar ali.\n\nA regra prática é que o diâmetro do pino **não deve passar de cerca de 30% (um terço)** do diâmetro do osso naquele nível. Acima disso, a resistência do osso cai muito e o orifício vira um ponto de fratura, tanto durante o tratamento quanto depois de o fixador ser retirado.\n\nComo referência no adulto, usam-se pinos de 5 a 6 mm no fêmur e na tíbia, de 4 a 5 mm no úmero, e pinos menores no rádio e nos metacarpos.\n\nDepois de retirar o fixador, o membro deve ser protegido por algumas semanas, porque os orifícios dos pinos continuam sendo pontos frágeis até o osso preenchê-los.",
+  "correta": "30%. Pinos com diâmetro de até cerca de um terço do osso dão rigidez sem enfraquecê-lo demais.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0142": {
-  "conceito": "### Por que a não fresada consolida pior\n- Haste de **menor diâmetro**, menor preenchimento do canal.\n- Menos **estabilidade** mecânica.\n- Sem o **produto da fresagem**, que funciona como enxerto.\n\nResultado: mais retardo, **não união** e reoperação que a fresada.\n\n### O número cobrado\nA banca usa ==4,5 vezes== mais risco de não união (veja o alerta: os estudos variam, e não há multiplicador universal).\n\n### Na prática\nNo fêmur, a haste **fresada** é o padrão. A não fresada foi pensada para o politraumatizado com lesão pulmonar, mas o benefício pulmonar não se confirmou de forma consistente.\n\n> **Na prova:** haste não fresada no fêmur = ==~4,5 vezes== mais não união (valor da banca).",
-  "correta": "**4,5 vezes.**\n- O multiplicador adotado pelo gabarito.",
   "incorretas": {
-   "A": "**Subestima o valor cobrado.**",
-   "B": "**Inferior ao cobrado.**",
-   "C": "**Próximo, não igual.**"
+   "A": "1,5 vez subestima o aumento de risco cobrado pela banca.",
+   "B": "2,5 vezes também fica abaixo do valor cobrado.",
+   "C": "3,5 vezes se aproxima, mas não é o valor adotado pelo gabarito."
   },
+  "conceito": "A **haste intramedular** é o tratamento padrão das fraturas da diáfise do fêmur. Ela pode ser colocada depois de **fresar** o canal (alargá-lo com brocas) ou sem fresar.\n\nA haste **não fresada** consolida pior por alguns motivos:\n\nEla é **mais fina**, porque o canal não foi alargado, e preenche menos o canal.\n\nPor isso, dá **menos estabilidade** mecânica.\n\nE não há o **material da fresagem**: os fragmentos de osso produzidos pelas brocas se depositam no foco da fratura e funcionam como um enxerto natural. Sem eles, perde-se esse estímulo.\n\nO resultado é mais retardo de consolidação, mais **não união** (pseudartrose) e mais reoperações do que com a haste fresada. O número cobrado pela banca é de cerca de **4,5 vezes** mais risco de não união com a haste não fresada. Esse valor vem de estudos específicos e varia entre eles, por isso a questão tem um aviso.\n\nNa prática, a haste **fresada** é o padrão no fêmur. A não fresada foi pensada para pacientes politraumatizados com lesão do pulmão, imaginando que a fresagem lançaria mais gordura na circulação, mas esse benefício não se confirmou de forma consistente.",
+  "correta": "4,5 vezes. É o multiplicador de risco de não união com a haste não fresada adotado pelo gabarito.",
   "alerta": "O valor exato varia entre estudos, técnicas e populações. Revisões mais recentes confirmam maior risco de não união com hastes não fresadas, mas não sustentam um único multiplicador universal para todo paciente.",
   "referencias": [
    "Reamed versus unreamed intramedullary nailing for femoral fractures: meta-analysis of randomized trials. Medicine (Baltimore). 2017;96(12):e6307. https://pmc.ncbi.nlm.nih.gov/articles/PMC5265768/",
    "el Moumni M et al. The incidence of non-union following unreamed intramedullary nailing of femoral shaft fractures. Injury. 2009;40(2):205-208. doi:10.1016/j.injury.2008.06.022"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0143": {
-  "conceito": "### As propriedades mecânicas\n- ==Ductilidade==: quanto o material se **deforma plasticamente** (de forma permanente) antes de romper. Material dúctil **avisa**: entorta antes de quebrar.\n- **Fragilidade:** o oposto; rompe sem deformação plástica (cerâmica, cimento).\n- **Resistência** (strength): tensão máxima suportada.\n- **Resistência à fadiga:** ciclos de carga submáxima que aguenta.\n- **Rigidez** (módulo de elasticidade): resistência à deformação **elástica**.\n- **Tenacidade:** energia total absorvida até a falha.\n\n### Na ortopedia\n- **Aço inoxidável:** mais dúctil (dá para moldar a placa).\n- **Titânio:** módulo mais próximo do osso, mais sensível a entalhes.\n- **Implantes falham por fadiga**, não por uma carga única: se o osso não consolida, o implante quebra.\n\n> **Na prova:** ductilidade = ==deformação plástica antes da falha==.",
-  "correta": "**Capacidade de se deformar plasticamente antes da falha.**",
   "incorretas": {
-   "B": "**Fadiga.**",
-   "C": "**Resistência.**",
-   "D": "**Resistência à compressão.**"
+   "B": "A tensão cíclica que um material suporta antes de falhar é a resistência à fadiga.",
+   "C": "A tensão máxima que um material suporta antes de falhar é a sua resistência.",
+   "D": "A compressão máxima suportada é a resistência à compressão, e não a ductilidade."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Os materiais usados nos implantes ortopédicos são descritos por propriedades mecânicas, e cada termo tem um significado preciso:\n\n**Ductilidade**: a capacidade de um material se **deformar de forma permanente** (deformação plástica) antes de romper. Um material dúctil \"avisa\": entorta antes de quebrar. É como um clipe de papel, que dobra várias vezes antes de partir.\n\n**Fragilidade**: o oposto. O material quebra sem se deformar antes, como uma cerâmica ou o cimento ósseo.\n\n**Resistência**: a tensão máxima que o material aguenta antes de falhar.\n\n**Resistência à fadiga**: quantos ciclos de carga repetida, abaixo da carga máxima, o material aguenta antes de quebrar.\n\n**Rigidez** (módulo de elasticidade): o quanto o material resiste a se deformar de forma reversível, voltando ao formato original quando a carga é retirada.\n\n**Tenacidade**: a energia total que o material absorve até romper.\n\nNa ortopedia, isso tem aplicação direta. O **aço inoxidável** é mais dúctil, o que permite moldar a placa ao osso durante a cirurgia. O **titânio** tem rigidez mais próxima da do osso, mas é mais sensível a riscos e entalhes. E os implantes geralmente quebram por **fadiga**: se o osso não consolida, a placa ou a haste recebem carga repetida a cada passo e acabam se rompendo.",
+  "correta": "Capacidade de se deformar plasticamente antes da falha. O material dúctil entorta de forma permanente antes de romper.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0144": {
-  "conceito": "### O que é\nTécnica de redução em que um fio ou instrumento **atravessa** temporariamente um fragmento para manipulá-lo e posicioná-lo com precisão.\n\n### Onde é útil\nNa reconstrução da ==superfície articular==: pequenos degraus alteram a congruência e levam à artrose.\n\n### Os princípios da fratura articular\n- **Redução anatômica** da superfície.\n- **Estabilidade absoluta** dos fragmentos articulares (parafusos de tração, placas).\n- **Reconstituir o alinhamento** do segmento metafisário em relação à diáfise.\n- **Mobilização precoce**.\n- Enxerto ou substituto sob a superfície elevada (metáfise impactada).\n\n> **Na prova:** pass-through = técnica para ==superfície articular==.",
-  "correta": "**Superfície articular.**",
   "incorretas": {
-   "B": "**Não é a indicação.**\n- Na diáfise controlam-se comprimento, eixo e rotação.",
-   "C": "**Não é o alvo.**\n- O objetivo é o fragmento articular.",
-   "D": "**Menos abrangente.**\n- O determinante é a superfície articular."
+   "B": "Na diáfise, o objetivo é restaurar comprimento, eixo e rotação, e não a precisão milimétrica de uma superfície articular.",
+   "C": "Na metáfise, o objetivo é o alinhamento. A precisão da técnica é voltada aos fragmentos da articulação.",
+   "D": "Os côndilos podem ter fraturas articulares, mas o que define a indicação é a superfície articular, e não a região anatômica."
   },
+  "conceito": "A técnica **pass-through** é usada na redução de fraturas que atingem a **superfície articular**. Nela, um fio ou instrumento **atravessa** temporariamente um fragmento para que o cirurgião possa segurá-lo, manipulá-lo e posicioná-lo com precisão no lugar certo antes de fixá-lo definitivamente.\n\nEssa precisão é especialmente importante na superfície articular, porque ali qualquer degrau, mesmo pequeno, altera o encaixe entre as superfícies e concentra carga num ponto. Com o tempo, isso desgasta a cartilagem e leva à **artrose**.\n\nPor isso, as fraturas articulares seguem princípios próprios:\n\n**Redução anatômica** da superfície articular, sem degraus nem espaços.\n\n**Estabilidade absoluta** dos fragmentos articulares, com parafusos de compressão e placas, para que consolidem diretamente.\n\n**Restaurar o alinhamento** da metáfise (a parte larga do osso logo abaixo da articulação) em relação à diáfise.\n\n**Mobilização precoce** da articulação, para nutrir a cartilagem e evitar rigidez.\n\nQuando a superfície estava afundada e é elevada de volta ao lugar, sobra um espaço vazio embaixo dela, que é preenchido com enxerto ou substituto ósseo para não afundar de novo.",
+  "correta": "Superfície articular. A técnica permite manipular com precisão fragmentos articulares, onde qualquer degrau leva à artrose.",
   "referencias": [
    "AO Foundation. AO Surgery Reference: Principles of articular fracture reduction and fixation. https://surgeryreference.aofoundation.org/",
    "Browner BD et al. Skeletal Trauma. 6th ed. Elsevier; 2020. Principles of intra-articular fracture fixation."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0145": {
-  "conceito": "### Dois problemas, soluções opostas\nPseudartrose **atrófica** com **encurtamento**.\n\n### No foco: compressão\n==Comprimir== estimula biologicamente as pontas atróficas e fecha a falha, mesmo que encurte mais.\n\n### Em outro nível: distração\n- ==Corticotomia metafisária==: osso esponjoso, bem vascularizado, forma regenerado com facilidade.\n- ==Alongamento gradual==: latência de ~7 dias, depois 1 mm/dia em 4 incrementos.\n\nÉ a técnica **bifocal** (compressão-distração) de Ilizarov.\n\n### Na pseudartrose hipertrófica\nIlizarov também usava **distração** lenta no próprio foco, que estimula o tecido fibrocartilaginoso a ossificar e corrige deformidade.\n\n> **Na prova:** atrófica com encurtamento = ==compressão no foco + corticotomia metafisária com alongamento gradual==.",
-  "correta": "**Compressão, corticotomia metafisária e alongamento gradual.**",
   "incorretas": {
-   "A": "**Distrair a atrófica não estimula.**",
-   "B": "**Diafisária e única.**\n- Regenerado pior e alongamento agudo não é o princípio.",
-   "C": "**Erra o foco.**\n- Distração não trata a atrófica."
+   "A": "Afastar as pontas de uma pseudartrose atrófica não estimula a consolidação, e o alongamento de uma vez só não segue o princípio de Ilizarov.",
+   "B": "A compressão está certa, mas o corte na diáfise forma osso novo pior, e o alongamento de uma vez só não é o princípio do método.",
+   "C": "O corte na metáfise e o alongamento gradual estão certos, mas o foco atrófico precisa de compressão, e não de distração."
   },
+  "conceito": "Esta questão combina dois problemas: uma **pseudartrose atrófica** (fratura que não consolidou, com pontas de osso sem vida e sem calo) e um **encurtamento** do membro. O método de **Ilizarov**, com fixador externo circular, resolve os dois ao mesmo tempo, mas com forças opostas em lugares diferentes.\n\n**No foco da pseudartrose: compressão.** Nas pontas atróficas, comprimir uma contra a outra estimula a biologia e fecha o espaço entre elas, permitindo a consolidação. Isso encurta um pouco mais o membro, mas resolve a pseudartrose.\n\n**Em outro ponto do osso: alongamento.** O cirurgião faz uma **corticotomia** (um corte da cortical, preservando o máximo possível do sangue do osso) na **metáfise**, a parte larga e esponjosa perto da articulação. Ali o osso é bem irrigado e forma osso novo com facilidade. Depois de uma espera de cerca de uma semana, o fixador afasta as pontas aos poucos, **gradualmente**, cerca de 1 mm por dia dividido em quatro vezes. O osso novo preenche o espaço, e o comprimento é recuperado.\n\nEssa técnica, com compressão num nível e alongamento em outro, é chamada **bifocal**.\n\nNa pseudartrose **hipertrófica** (pontas vivas, com muito calo), Ilizarov às vezes usava o oposto: distração lenta no próprio foco, que estimula o tecido a virar osso.",
+  "correta": "Compressão com corticotomia metafisária e alongamento gradual. Comprime-se o foco atrófico para consolidar e alonga-se aos poucos na metáfise para recuperar o comprimento.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 59"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0146": {
@@ -1452,45 +1452,45 @@
   "conferido": false
  },
  "conceitos-basicos-0147": {
-  "conceito": "### A posição de maior volume capsular\nArticulação com derrame se acomoda onde a cápsula fica mais frouxa e a pressão intra-articular é **menor**.\n\nNo quadril: ==flexão (~30°), abdução e rotação lateral==.\n\n### Por que importa\n- A criança fica imóvel e resiste a mudar essa atitude.\n- A **rotação interna** é o movimento mais doloroso (aumenta a pressão).\n- A criança pode **não localizar** a dor e queixar-se do **joelho** (dor referida pelo obturatório): é a posição do quadril que denuncia.\n\n### A pressão importa\nAdução e rotação interna **aumentam a pressão** intracapsular, que já ameaça os vasos retinaculares. Na artrite séptica, isso reforça a urgência da **drenagem**.\n\n> **Na prova:** quadril com derrame = ==flexão, abdução e rotação lateral==.",
-  "correta": "**Abdução e rotação lateral.**\n- Com flexão: maior volume capsular.",
   "incorretas": {
-   "A": "**Aumenta a pressão.**\n- É a posição evitada.",
-   "B": "**Adução comprime.**",
-   "C": "**Rotação medial aumenta a pressão.**"
+   "A": "Adução e rotação medial apertam a cápsula e aumentam a pressão. É a posição que a criança evita.",
+   "B": "A rotação lateral está certa, mas a adução comprime a cápsula e aumenta a pressão.",
+   "C": "A abdução está certa, mas a rotação medial aumenta a pressão dentro da articulação."
   },
+  "conceito": "Quando uma articulação se enche de líquido (derrame), a pressão dentro dela aumenta e causa dor. O paciente instintivamente coloca a articulação na posição em que a cápsula fica **mais frouxa** e cabe **mais líquido**, porque é onde a pressão é menor e dói menos.\n\nNo **quadril**, essa posição é de **flexão** leve (cerca de 30 graus), **abdução** (perna afastada) e **rotação lateral** (pé virado para fora).\n\nIsso tem várias consequências na avaliação da criança com artrite séptica do quadril:\n\nA criança fica parada nessa posição e resiste a qualquer tentativa de mudá-la.\n\nO movimento que mais dói é a **rotação interna** (girar o pé para dentro), porque aperta a cápsula e aumenta a pressão.\n\nMuitas vezes a criança **não sabe dizer** que a dor é no quadril e reclama do **joelho**, porque o nervo obturatório leva sensibilidade para as duas regiões. Nesse caso, é a posição do quadril que denuncia o problema.\n\nEssa posição também ajuda a entender a urgência: adução e rotação interna aumentam a pressão dentro do quadril, que já ameaça os vasos que irrigam a cabeça do fêmur. Por isso a drenagem da artrite séptica é urgente.",
+  "correta": "Abdução e rotação lateral. Junto com a flexão, é a posição em que a cápsula do quadril comporta mais líquido e a pressão é menor.",
   "referencias": [
    "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), Cap. 12"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0148": {
-  "conceito": "### O problema\nNa infecção de implante, a bactéria vive **dentro do biofilme**, aderida ao metal. A cultura do tecido ao redor vem negativa com frequência, sobretudo após antibiótico.\n\n### A solução: ==sonicação==\n- O implante retirado vai para um recipiente com solução.\n- **Ultrassom de baixa frequência**: a cavitação **desprende** as bactérias do biofilme para o líquido.\n- O líquido é cultivado (e pode ir para PCR).\n\n### O ganho\nAumento importante da **sensibilidade**, sobretudo na infecção crônica e no paciente que já recebeu antibiótico.\n\n### Outras medidas que aumentam o rendimento\n- **Suspender o antibiótico** cerca de 2 semanas antes da coleta, quando possível.\n- **Múltiplas amostras** de tecido (3 a 5), com instrumentais separados.\n- Incubação **prolongada** (até ~14 dias) para germes lentos (Cutibacterium).\n\n> **Na prova:** desalojar germes do implante = ==sonicação==.",
-  "correta": "**Sonicação.**",
   "incorretas": {
-   "B": "**Não é método descrito.**",
-   "C": "**Não é técnica usada aqui.**",
-   "D": "**Detecta, não desaloja.**\n- A PCR pode ser feita no líquido da sonicação."
+   "B": "\"Fluidificação\" não é um método descrito para desprender bactérias de implantes.",
+   "C": "Extração nuclear não é a técnica usada para retirar bactérias do biofilme.",
+   "D": "A PCR detecta o material genético da bactéria, mas não a desprende do implante. Ela pode ser feita no líquido obtido pela sonicação."
   },
+  "conceito": "Na infecção de um implante ortopédico (placa, haste, prótese), as bactérias vivem grudadas no metal, dentro de uma camada protetora chamada **biofilme**. Isso cria um problema para o diagnóstico: as bactérias ficam presas ao implante, e as culturas do tecido ao redor muitas vezes saem **negativas**, principalmente se o paciente já recebeu antibiótico.\n\nA **sonicação** resolve isso. O implante retirado na cirurgia é colocado num recipiente com líquido estéril e submetido a **ultrassom** de baixa frequência. As vibrações formam microbolhas que estouram (cavitação) e **desprendem** as bactérias do biofilme, que passam para o líquido. Esse líquido é então cultivado, e também pode ser usado para exames moleculares.\n\nO ganho é um aumento importante da **sensibilidade** das culturas, sobretudo nas infecções crônicas e nos pacientes que já tomaram antibiótico.\n\nOutras medidas também aumentam a chance de identificar o germe:\n\nSuspender o antibiótico antes da coleta, quando possível.\n\nColher **várias amostras** de tecido profundo, com instrumentos separados.\n\nDeixar as culturas incubando por mais tempo, porque alguns germes, como o *Cutibacterium acnes*, crescem devagar.\n\nA **PCR** (reação em cadeia da polimerase) é um exame que detecta o material genético da bactéria. Ela pode ser feita no líquido da sonicação, mas não serve para desprender as bactérias do implante.",
+  "correta": "Sonicação. O ultrassom desprende as bactérias do biofilme do implante para o líquido, que é cultivado.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 4"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0149": {
-  "conceito": "### O problema do coto transumeral\nO coto é **cilíndrico e liso**: a rotação do braço **escorrega** dentro do encaixe em vez de ser transmitida à prótese.\n\n### A osteotomia de angulação (Marquardt)\n- Cria um **\"cotovelo ósseo\"** no úmero distal, com cerca de ==70° de angulação anterior==.\n- A saliência **trava o encaixe** e transmite a rotação.\n- Decisivo para controlar uma **prótese mioelétrica**.\n\n### O lado da placa\nA ==placa vai na face posterior==: é a **convexidade** da nova angulação, o lado que sofre tração (princípio da banda de tensão).\n\n### Outros detalhes do coto transumeral\n- **Miodese** para estabilizar os músculos e melhorar os sinais mioelétricos.\n- **TMR** (reinervação muscular direcionada) para mais sinais de controle e menos dor de neuroma.\n\n> **Na prova:** osteotomia de Marquardt = ==70°, placa posterior==.",
-  "correta": "**70°, placa posterior.**\n- A face convexa da angulação.",
   "incorretas": {
-   "A": "**Erra o ângulo e o lado.**",
-   "B": "**Lado errado.**\n- A placa anterior fica na concavidade.",
-   "C": "**Ângulo insuficiente.**"
+   "A": "Erra os dois: o ângulo descrito é de cerca de 70 graus, e a placa vai na face posterior.",
+   "B": "O ângulo está certo, mas a face anterior fica do lado côncavo da angulação. A placa vai atrás, no lado que sofre tração.",
+   "C": "A placa posterior está certa, mas 45 graus é insuficiente para o apoio descrito por Marquardt."
   },
+  "conceito": "Na **amputação transumeral** (no meio do braço), o coto que sobra é um cilindro liso. Isso cria um problema para a prótese: quando o paciente tenta girar o braço, o coto **escorrega** dentro do encaixe da prótese, em vez de girá-la junto. Para uma **prótese mioelétrica**, controlada pelos sinais elétricos dos músculos do coto, esse controle da rotação é ainda mais importante.\n\nA **osteotomia de angulação**, descrita por **Marquardt**, resolve isso. O cirurgião corta o úmero perto da ponta e o dobra para a frente, criando um \"cotovelo de osso\" com angulação de cerca de **70 graus**. Essa saliência se encaixa no soquete da prótese e transmite a rotação do braço, como uma chave numa fechadura.\n\nPara fixar essa angulação, usa-se uma placa na face **posterior** do úmero. O motivo é o princípio da **banda de tensão**: com o osso dobrado para a frente, a face de trás fica do lado convexo da curva, o lado que sofre **tração**. A placa colocada ali transforma essa tração em compressão no local do corte.\n\nOutros cuidados no coto transumeral incluem a **miodese** (fixar os músculos ao osso, o que melhora a estabilidade e os sinais elétricos) e, em alguns casos, a **reinervação muscular direcionada** (TMR), que redireciona nervos cortados para músculos do coto, criando novos sinais de controle e reduzindo a dor de neuromas.",
+  "correta": "70 graus e fixação com placa posterior. A angulação cria um apoio que transmite a rotação, e a placa fica na face convexa, que sofre tração.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 18"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0150": {
