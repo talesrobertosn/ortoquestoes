@@ -167,3 +167,11 @@ sprites estão em `classificacoes/sprites.js` (mapas de caracteres, sem imagem e
 - **02 Lichtman, stories** (pronto): 3 stories (1080×1920) sobre a doença de Kienböck, com o
   semilunar como pedra em forma de lua que endurece, racha e desaba. Sem questão: o último story
   chama para o site; colocar a figurinha de link no espaço tracejado.
+
+## Questões comentadas, visual profissional (feed 1080×1350 e stories 1080×1920)
+
+Uma questão com imagem no estilo de revista clínica: papel claro, tinta verde, radiografia num
+visor escuro com régua e legenda técnica, alternativas como gabarito de prova e uma tabela para
+revisar. Cada uma em `questoes/NN-tema/post.html`, com legenda e instruções em `LEGENDA.md`.
+
+- **01 Hawkins III** (pronto): `trauma-0764`, TEOT 2025, fratura do colo do tálus.
