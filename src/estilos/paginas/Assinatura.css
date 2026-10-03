@@ -409,3 +409,4 @@
   .vp-ranking li { grid-template-columns: 1.8rem minmax(0, 1fr); }
   .vp-ranking li small { grid-column: 2; }
 }
+.vp-precos__fase { font-size: var(--corpo-menor); color: var(--texto-2); }

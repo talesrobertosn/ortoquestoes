@@ -175,6 +175,7 @@ export function Assinatura() {
           <p className="vp-sobre">Planos</p>
           <h2>Tudo liberado em qualquer plano. Você escolhe só o ritmo de pagamento.</h2>
           <p>Os três planos têm exatamente os mesmos recursos. Quanto mais longo, menor o preço por mês.</p>
+          {!limitesHabilitados && <p className="vp-precos__fase">O acesso gratuito está sem limite diário nesta fase: o que o assinante ganha a mais são os recursos exclusivos, e o acesso ilimitado fica garantido se o limite gratuito for ativado.</p>}
           <ul className="vp-meios" aria-label="Formas de pagamento">
             <li><IconePix /> Pix em todos os planos</li>
             <li><IconeCartao /> Cartão de crédito</li>
