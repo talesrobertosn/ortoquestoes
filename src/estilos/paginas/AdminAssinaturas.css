@@ -267,3 +267,11 @@
 .adm-financeiro__previsto { margin: 0; font-size: var(--corpo-menor); color: var(--texto-2); }
 .adm-financeiro__previsto strong { font-size: 1.5rem; color: var(--texto); margin-right: 0.3rem; }
 .adm-mini__nome > .adm-online { display: inline-block; vertical-align: middle; }
+/* Lembretes por e-mail: um cartão por campanha. */
+.adm-lembretes { display: grid; gap: .75rem; }
+.adm-lembrete { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: .9rem; align-items: center; padding: .9rem 1rem; border: var(--borda); border-radius: var(--raio-cartao); background: var(--superficie); }
+.adm-lembrete img { image-rendering: pixelated; }
+.adm-lembrete h3 { margin: 0; font-size: 1.05rem; }
+.adm-lembrete p { margin: .2rem 0 0; color: var(--texto-2); font-size: var(--corpo-menor); }
+.adm-lembrete__acoes { display: flex; gap: .5rem; flex-wrap: wrap; justify-content: flex-end; }
+@media (max-width: 46rem) { .adm-lembrete { grid-template-columns: auto minmax(0, 1fr); } .adm-lembrete__acoes { grid-column: 1 / -1; justify-content: stretch; } .adm-lembrete__acoes .botao { flex: 1; } }

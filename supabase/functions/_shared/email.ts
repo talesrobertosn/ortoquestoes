@@ -52,7 +52,7 @@ async function hmac(texto: string) {
   return [...assinatura].map((b) => b.toString(16).padStart(2, '0')).join('').slice(0, 40)
 }
 /** Qual e-mail o link desliga. Os links antigos (sem tipo) são de conquistas. */
-export type TipoDescadastro = 'conquistas' | 'relatorio'
+export type TipoDescadastro = 'conquistas' | 'relatorio' | 'lembretes'
 const textoAssinado = (idUsuario: string, tipo: TipoDescadastro) => tipo === 'conquistas' ? `descadastro:${idUsuario}` : `descadastro:${tipo}:${idUsuario}`
 
 export async function linkDescadastro(idUsuario: string, tipo: TipoDescadastro = 'conquistas') {

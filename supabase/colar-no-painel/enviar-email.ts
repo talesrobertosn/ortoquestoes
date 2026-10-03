@@ -104,7 +104,7 @@ function emailMarco(d) {
     <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background:#ffffff;border-radius:18px;overflow:hidden;">
 
       <tr><td style="background:#0f4f49;background-image:linear-gradient(135deg,#0c3f3a 0%,#146b61 55%,#1d8a7c 100%);padding:26px 40px 30px 40px;">
-        <div style="font-family:Arial,Helvetica,sans-serif;font-size:18px;line-height:22px;color:#ffffff;"><strong>Orto</strong>Quest\xF5es</div>
+        <div style="font-family:Arial,Helvetica,sans-serif;font-size:18px;line-height:22px;color:#ffffff;"><strong>Orto</strong> Quest\xF5es</div>
         <div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;letter-spacing:2px;color:#bfe3dc;padding-top:22px;text-transform:uppercase;">Nova conquista</div>
         <div style="font-family:Arial,Helvetica,sans-serif;font-size:28px;line-height:34px;font-weight:bold;color:#ffffff;padding-top:6px;">
           ${nome ? `Parab\xE9ns, ${esc(nome)}!` : "Parab\xE9ns!"}
@@ -348,7 +348,7 @@ function emailRelatorio(d) {
   <tr><td align="center" style="padding:28px 12px;">
     <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background:#ffffff;border-radius:18px;overflow:hidden;">
       <tr><td style="background:#0f4f49;background-image:linear-gradient(135deg,#0c3f3a 0%,#146b61 55%,#1d8a7c 100%);padding:26px 40px 30px 40px;">
-        <div style="font-family:Arial,Helvetica,sans-serif;font-size:18px;line-height:22px;color:#ffffff;"><strong>Orto</strong>Quest\xF5es</div>
+        <div style="font-family:Arial,Helvetica,sans-serif;font-size:18px;line-height:22px;color:#ffffff;"><strong>Orto</strong> Quest\xF5es</div>
         <div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;letter-spacing:2px;color:#bfe3dc;padding-top:22px;text-transform:uppercase;">Seu relat\xF3rio de ${esc(mes)}</div>
         <div style="font-family:Arial,Helvetica,sans-serif;font-size:26px;line-height:32px;font-weight:bold;color:#ffffff;padding-top:6px;">${nome ? `Ol\xE1, ${esc(nome)}` : "Ol\xE1"}</div>
         <div style="font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:24px;color:#dff1ed;padding-top:6px;">${esc(manchete)}</div>
@@ -426,6 +426,148 @@ function emailRelatorio(d) {
     `N\xE3o quer mais receber o relat\xF3rio mensal? ${d.linkDescadastro}`
   ].join("\n");
   return { assunto, html, texto };
+}
+function emailLembrete(d) {
+  const nome = d.nome?.trim().split(/\s+/)[0] ?? "";
+  const img = (caminho, largura, altura, alt = "") => `<img src="${d.site}${caminho}" width="${largura}" height="${altura}" alt="${esc(alt)}" style="display:block;border:0;image-rendering:pixelated;-ms-interpolation-mode:nearest-neighbor;">`;
+  const linkTreinar = `${d.site}#/treinar`;
+  const linkRevisao = `${d.site}#/revisao`;
+  const linkCronograma = `${d.site}#/cronograma`;
+  const C = {
+    nunca: {
+      assunto: nome ? `${nome}, sua primeira miss\xE3o no OrtoQuest\xF5es est\xE1 esperando` : "Sua primeira miss\xE3o no OrtoQuest\xF5es est\xE1 esperando",
+      previa: "Quest\xF5es oficiais de TEOT, TARO e ENARE R4 comentadas, alternativa por alternativa. Comece com 10.",
+      selo: "Miss\xE3o: primeira batalha",
+      titulo: nome ? `${nome}, o mensageiro trouxe um convite` : "O mensageiro trouxe um convite",
+      lide: "Voc\xEA criou sua conta, mas ainda n\xE3o respondeu nenhuma quest\xE3o. Que tal dar uma chance? Leva uns 15 minutos.",
+      corpo: [
+        ["pixel/treinar.png", "Provas oficiais comentadas", "TEOT, TARO e ENARE R4 separadas por tema, com a explica\xE7\xE3o de cada alternativa: por que a certa est\xE1 certa e cada errada est\xE1 errada."],
+        ["pixel/revisao.png", "Revis\xE3o que lembra por voc\xEA", "Errou? A quest\xE3o volta no momento certo. Acertou com certeza? S\xF3 reaparece daqui a semanas."],
+        ["pixel/ranking.png", "Ranking, emblemas e sequ\xEAncia", "Cada quest\xE3o soma pontos, destrava emblemas e acende a sua fogueira de dias seguidos."]
+      ],
+      botao: "Come\xE7ar minha primeira miss\xE3o",
+      link: linkTreinar,
+      rodape: "Comece por um tema de que voc\xEA gosta. Dez quest\xF5es j\xE1 mostram como funciona."
+    },
+    tres_dias: {
+      assunto: nome ? `${nome}, sua fogueira est\xE1 apagando` : "Sua fogueira de estudo est\xE1 apagando",
+      previa: "Faz alguns dias que voc\xEA n\xE3o aparece. Dez quest\xF5es hoje mant\xEAm o h\xE1bito vivo.",
+      selo: "Miss\xE3o: manter a chama",
+      titulo: nome ? `${nome}, a fogueira est\xE1 esperando lenha` : "A fogueira est\xE1 esperando lenha",
+      lide: `Faz ${d.diasFora} dias que voc\xEA n\xE3o aparece. Const\xE2ncia vence intensidade: uma sess\xE3o curta hoje vale mais do que uma maratona no fim de semana.`,
+      corpo: [
+        ["ranking/chama.png", "Dez quest\xF5es, quinze minutos", "\xC9 o suficiente para manter o h\xE1bito e n\xE3o deixar as revis\xF5es acumularem."],
+        ["pixel/revisao.png", "Suas revis\xF5es est\xE3o prontas", "As quest\xF5es que voc\xEA errou j\xE1 voltaram para a fila. \xC9 onde o estudo rende mais por minuto."],
+        ["pixel/ranking.png", "O ranking continua andando", `Voc\xEA j\xE1 respondeu ${numero(d.respondidas)} quest\xF5es. Cada uma nova soma um ponto.`]
+      ],
+      botao: "Voltar com 10 quest\xF5es",
+      link: linkTreinar,
+      rodape: `Prefere come\xE7ar pelo que j\xE1 errou? Abra a <a href="${linkRevisao}" style="color:#146b61;font-weight:bold;">revis\xE3o de hoje</a>.`
+    },
+    sete_dias: {
+      assunto: nome ? `${nome}, uma semana longe acontece. O importante \xE9 voltar` : "Uma semana longe acontece. O importante \xE9 voltar",
+      previa: "Sua jornada at\xE9 a prova continua de onde parou. Volte com uma sess\xE3o curta.",
+      selo: "Miss\xE3o: retomar a jornada",
+      titulo: nome ? `${nome}, sua jornada continua de onde parou` : "Sua jornada continua de onde parou",
+      lide: `Faz ${d.diasFora} dias desde a \xFAltima visita. Plant\xE3o, cansa\xE7o, vida: acontece com todo mundo. O que separa quem chega pronto na prova \xE9 voltar, n\xE3o ser perfeito.`,
+      corpo: [
+        ["pixel/treinar.png", "Recomece pequeno", "Uma sess\xE3o de 10 quest\xF5es hoje. Amanh\xE3, outra. O h\xE1bito volta mais r\xE1pido do que parece."],
+        ["pixel/planos.png", "Seu progresso est\xE1 guardado", `As ${numero(d.respondidas)} quest\xF5es que voc\xEA respondeu, as revis\xF5es e o caderno de erros continuam l\xE1, esperando.`],
+        ["pixel/simulado.png", "Um plano at\xE9 a prova", "O cronograma divide o que falta pelos dias at\xE9 a prova e diz o que estudar hoje."]
+      ],
+      botao: "Retomar minha jornada",
+      link: linkTreinar,
+      rodape: `Quer um plano dia a dia? Veja o <a href="${linkCronograma}" style="color:#146b61;font-weight:bold;">cronograma at\xE9 a prova</a>.`
+    }
+  }[d.campanha];
+  const blocos = C.corpo.map(([icone, titulo, texto2]) => `
+      <tr><td style="padding:0 40px 14px 40px;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f6f8f7;border-radius:12px;">
+          <tr>
+            <td width="64" valign="middle" align="center" style="padding:14px 6px 14px 14px;">${img(icone, 44, 44)}</td>
+            <td valign="middle" style="padding:14px 18px 14px 8px;font-family:Arial,Helvetica,sans-serif;">
+              <div style="font-size:16px;line-height:22px;font-weight:bold;color:#0f4f49;">${esc(titulo)}</div>
+              <div style="font-size:14px;line-height:21px;color:#33413d;padding-top:3px;">${esc(texto2)}</div>
+            </td>
+          </tr>
+        </table>
+      </td></tr>`).join("");
+  const html = `<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="supported-color-schemes" content="light">
+<title>${esc(C.assunto)}</title>
+</head>
+<body style="margin:0;padding:0;background:#eef2f1;">
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;color:#eef2f1;">${esc(C.previa)}</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#eef2f1;">
+  <tr><td align="center" style="padding:28px 12px;">
+    <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background:#ffffff;border-radius:18px;overflow:hidden;">
+
+      <tr><td style="background:#0b3a35;background-image:linear-gradient(135deg,#071f1c 0%,#0b3a35 55%,#14655e 100%);padding:26px 40px 28px 40px;border-bottom:4px solid #e0b862;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td valign="top" style="font-family:Arial,Helvetica,sans-serif;">
+              <div style="font-size:18px;line-height:22px;color:#ffffff;"><strong>Orto</strong> Quest\xF5es</div>
+              <div style="display:inline-block;margin-top:20px;padding:4px 10px;background:#e0b862;color:#2b1d02;font-size:12px;line-height:16px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;">${esc(C.selo)}</div>
+              <div style="font-size:26px;line-height:32px;font-weight:bold;color:#ffffff;padding-top:12px;">${esc(C.titulo)}</div>
+            </td>
+            <td width="96" valign="bottom" align="right" style="padding-left:12px;">${img("ranking/mensageiro.png", 72, 90, "O mensageiro do OrtoQuest\xF5es")}</td>
+          </tr>
+        </table>
+      </td></tr>
+
+      <tr><td style="padding:26px 40px 18px 40px;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;color:#33413d;">${esc(C.lide)}</td></tr>
+
+      ${blocos}
+
+      <tr><td align="center" style="padding:16px 40px 6px 40px;">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+          <tr><td align="center" style="border-radius:12px;background:#146b61;box-shadow:inset 0 -4px 0 #0f4f49;">
+            <a href="${C.link}" style="display:inline-block;padding:16px 34px;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:20px;font-weight:bold;color:#ffffff;text-decoration:none;border-radius:12px;">${esc(C.botao)}</a>
+          </td></tr>
+        </table>
+        <div style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;color:#5f6d69;padding-top:14px;">${C.rodape}</div>
+      </td></tr>
+
+      <tr><td style="padding:24px 40px 30px 40px;">
+        <div style="border-top:1px solid #e3e9e7;padding-top:18px;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;color:#33413d;">
+          Bons estudos,<br><strong>Tales</strong>, do OrtoQuest\xF5es
+        </div>
+      </td></tr>
+    </table>
+
+    <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;">
+      <tr><td align="center" style="padding:18px 24px 6px 24px;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:18px;color:#7a8784;">
+        Siga <a href="https://www.instagram.com/ortoquestoes" style="color:#146b61;font-weight:bold;text-decoration:none;">@ortoquestoes</a> no Instagram: quest\xE3o comentada e macetes de prova.
+      </td></tr>
+      <tr><td align="center" style="padding:4px 24px 24px 24px;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:17px;color:#98a4a1;">
+        Voc\xEA recebe este e-mail porque tem uma conta no OrtoQuest\xF5es.<br>
+        <a href="${d.linkDescadastro}" style="color:#98a4a1;text-decoration:underline;">N\xE3o quero mais receber lembretes</a>
+      </td></tr>
+    </table>
+  </td></tr>
+</table>
+</body>
+</html>`;
+  const texto = [
+    C.titulo,
+    "",
+    C.lide,
+    "",
+    ...C.corpo.flatMap(([, titulo, texto2]) => [`\u2022 ${titulo}: ${texto2}`]),
+    "",
+    `${C.botao}: ${C.link}`,
+    "",
+    "Bons estudos,",
+    "Tales, do OrtoQuest\xF5es",
+    "",
+    `N\xE3o quer mais receber lembretes? ${d.linkDescadastro}`
+  ].join("\n");
+  return { assunto: C.assunto, html, texto };
 }
 
 // supabase/functions/_shared/email.ts
@@ -582,6 +724,40 @@ async function enviarRelatorios(mesPedido, limitePedido) {
   }
   return { mes, enviados, falhas, lote: destinatarios.length, talvez_restem: destinatarios.length === limite };
 }
+var CAMPANHAS = ["nunca", "tres_dias", "sete_dias"];
+var campanhaValida = (c) => CAMPANHAS.includes(c ?? "") ? c : null;
+async function enviarLembretes(campanha, limitePedido, por) {
+  const limite = Math.max(1, Math.min(Number(limitePedido) || 40, 80));
+  const r = await banco("rpc/destinatarios_lembrete", { method: "POST", body: JSON.stringify({ p_campanha: campanha, p_limite: limite }) });
+  if (!r.ok) throw new Error("consulta_destinatarios_falhou");
+  const destinatarios = await r.json();
+  let enviados = 0, falhas = 0;
+  for (const d of destinatarios) {
+    const reserva = await registrar({ id_usuario: d.id_usuario, tipo: "lembrete", referencia: d.referencia, status: "enviando", enviado_por: por });
+    let linha;
+    if (reserva.ok) [linha] = await reserva.json();
+    else {
+      const retomada = await banco(`emails_enviados?id_usuario=eq.${d.id_usuario}&tipo=eq.lembrete&referencia=eq.${encodeURIComponent(d.referencia)}&status=eq.falhou`, {
+        method: "PATCH",
+        body: JSON.stringify({ status: "enviando", erro: null, enviado_em: (/* @__PURE__ */ new Date()).toISOString() })
+      });
+      if (retomada.ok) [linha] = await retomada.json();
+    }
+    if (!linha) continue;
+    try {
+      const descadastro = await linkDescadastro(d.id_usuario, "lembretes");
+      const e = emailLembrete({ campanha, nome: d.nome, respondidas: Number(d.respondidas), diasFora: Number(d.dias_fora), site: site(), linkDescadastro: descadastro });
+      await enviarEmail(d.email, e.assunto, e.html, e.texto, descadastro);
+      await banco(`emails_enviados?id=eq.${linha.id}`, { method: "PATCH", body: JSON.stringify({ status: "enviado", assunto: e.assunto }) });
+      enviados++;
+    } catch (falha) {
+      await banco(`emails_enviados?id=eq.${linha.id}`, { method: "PATCH", body: JSON.stringify({ status: "falhou", erro: motivo(falha) }) });
+      falhas++;
+    }
+    await esperar(600);
+  }
+  return { campanha, enviados, falhas, lote: destinatarios.length, talvez_restem: destinatarios.length === limite };
+}
 async function registrar(corpo) {
   return banco("emails_enviados", { method: "POST", body: JSON.stringify(corpo) });
 }
@@ -591,12 +767,13 @@ Deno.serve(async (req) => {
   try {
     const corpo = await req.json();
     if (corpo.acao === "descadastrar") {
-      const tipo = corpo.tipo === "relatorio" ? "relatorio" : "conquistas";
+      const tipo = corpo.tipo === "relatorio" ? "relatorio" : corpo.tipo === "lembretes" ? "lembretes" : "conquistas";
       if (!corpo.u || !corpo.t || !/^[0-9a-f-]{36}$/.test(corpo.u) || !await tokenDescadastroValido(corpo.u, corpo.t, tipo)) return json({ erro: "link_invalido" }, 400, req);
+      const coluna = tipo === "relatorio" ? "relatorio_mensal" : tipo === "lembretes" ? "lembretes" : "conquistas";
       const r = await banco("preferencias_email", {
         method: "POST",
         headers: { Prefer: "resolution=merge-duplicates,return=minimal" },
-        body: JSON.stringify({ id_usuario: corpo.u, [tipo === "relatorio" ? "relatorio_mensal" : "conquistas"]: false, atualizado_em: (/* @__PURE__ */ new Date()).toISOString() })
+        body: JSON.stringify({ id_usuario: corpo.u, [coluna]: false, atualizado_em: (/* @__PURE__ */ new Date()).toISOString() })
       });
       return r.ok ? json({ ok: true, tipo }, 200, req) : json({ erro: "nao_foi_possivel" }, 503, req);
     }
@@ -613,6 +790,18 @@ Deno.serve(async (req) => {
       }
       if (!emailConfigurado()) return json({ erro: "email_nao_configurado" }, 503, req);
       return json(await enviarRelatorios(corpo.mes, corpo.limite), 200, req);
+    }
+    if (corpo.acao === "lembretes" || corpo.acao === "previa_lembrete") {
+      if (!await ehAdministrador(usuario.id)) return json({ erro: "acesso_negado" }, 403, req);
+      const campanha = campanhaValida(corpo.campanha);
+      if (!campanha) return json({ erro: "campanha_invalida" }, 400, req);
+      if (corpo.acao === "previa_lembrete") {
+        const dados = await dadosUsuario(usuario.id);
+        const e = emailLembrete({ campanha, nome: dados?.nome ?? null, respondidas: Number(dados?.respondidas ?? 0), diasFora: campanha === "sete_dias" ? 9 : 3, site: site(), linkDescadastro: await linkDescadastro(usuario.id, "lembretes") });
+        return json({ assunto: e.assunto, html: e.html }, 200, req);
+      }
+      if (!emailConfigurado()) return json({ erro: "email_nao_configurado" }, 503, req);
+      return json(await enviarLembretes(campanha, corpo.limite, usuario.id), 200, req);
     }
     if (corpo.acao === "marco") {
       if (!emailConfigurado()) return json({ resultado: "email_nao_configurado" }, 200, req);

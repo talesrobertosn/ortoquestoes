@@ -1,3 +1,4 @@
+import { MensageiroDormindo } from '../componentes/CenasPixel'
 import { useEffect, useMemo, useState } from 'react'
 import { usarIndice } from '../dados/usarIndice'
 import { carregarQuestoes } from '../dados/acervo'
@@ -119,6 +120,7 @@ export function CadernoErros() {
             <a className="botao rv-heroi__acao" href={href('/treinar')}>Treinar agora</a>
           </div>
         </section>
+        <MensageiroDormindo titulo="O mensageiro está de folga" texto="Ainda não há erro esperando revanche. Quando você errar uma questão, ele traz a carta com o gabarito e o porquê." />
       </div>
     )
   }
@@ -199,7 +201,9 @@ export function CadernoErros() {
       </section>
 
       {visiveis.length === 0 ? (
-        <p className="estado">{situacao === 'corrigidos' ? 'Nenhum erro corrigido ainda. Refaça um erro e acerte: ele aparece aqui.' : 'Nenhum erro com esses filtros.'}</p>
+        situacao === 'abertos' && abertos.length === 0
+          ? <MensageiroDormindo titulo="Nenhum erro em aberto" texto="Você corrigiu todos. O mensageiro pode descansar até a próxima batalha." acao={<a className="botao botao--principal" href={href('/treinar')}>Começar uma sessão nova</a>} />
+          : <p className="estado">{situacao === 'corrigidos' ? 'Nenhum erro corrigido ainda. Refaça um erro e acerte: ele aparece aqui.' : 'Nenhum erro com esses filtros.'}</p>
       ) : (
         <ol className="ce-lista">
           {pagina.map((e) => (

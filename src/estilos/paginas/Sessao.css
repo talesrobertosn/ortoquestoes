@@ -174,3 +174,14 @@
 }
 @media (min-width: 40.01rem) { .dica-deslizar { bottom: 1.5rem; } }
 @media (prefers-reduced-motion: reduce) { .dica-deslizar { animation: none; } }
+
+/* ---------- Barra de XP (temporada RPG) ---------- */
+.barra-sessao__texto--pixel { font-family: var(--fonte-pixel); font-weight: 700; font-size: 0.95rem; color: var(--texto); }
+.barra-sessao__combo { display: inline-flex; align-items: center; gap: 0.2rem; font-family: var(--fonte-pixel); font-weight: 700; font-size: 0.9rem; color: #b26a12; white-space: nowrap; }
+.barra-sessao__combo img { image-rendering: pixelated; }
+.xp-blocos { flex: 1 1 auto; display: grid; gap: 2px; min-width: 4rem; }
+.xp-bloco { height: 11px; background: var(--traco); box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.08); }
+.xp-bloco--certa { background: #3fa66b; box-shadow: inset 0 -3px 0 #1f7a4d; }
+.xp-bloco--errada { background: #d9605a; box-shadow: inset 0 -3px 0 #b3423a; }
+.xp-bloco--feito { background: var(--verdete); box-shadow: inset 0 -3px 0 var(--verdete-tinta); }
+.xp-bloco--atual { background: #f4cf7c; box-shadow: inset 0 -3px 0 #c9952f; outline: 2px solid var(--texto); outline-offset: 1px; }

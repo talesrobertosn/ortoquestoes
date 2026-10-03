@@ -478,3 +478,172 @@ export function emailRelatorio(d: DadosRelatorio): { assunto: string; html: stri
 
   return { assunto, html, texto }
 }
+
+// ---------------------------------------------------------------------------
+// Lembretes (reengajamento), disparados pelo painel do administrador
+// ---------------------------------------------------------------------------
+
+export type CampanhaLembrete = 'nunca' | 'tres_dias' | 'sete_dias'
+
+export interface DadosLembrete {
+  campanha: CampanhaLembrete
+  nome: string | null
+  respondidas: number
+  diasFora: number
+  site: string
+  linkDescadastro: string
+}
+
+/**
+ * Lembrete no clima da temporada RPG: o mensageiro do ranking chega com a
+ * carta. Imagens em pixel art servidas pelo próprio site; se o e-mail
+ * bloquear imagens, o texto continua completo sozinho.
+ */
+export function emailLembrete(d: DadosLembrete): { assunto: string; html: string; texto: string } {
+  const nome = d.nome?.trim().split(/\s+/)[0] ?? ''
+  const img = (caminho: string, largura: number, altura: number, alt = '') =>
+    `<img src="${d.site}${caminho}" width="${largura}" height="${altura}" alt="${esc(alt)}" style="display:block;border:0;image-rendering:pixelated;-ms-interpolation-mode:nearest-neighbor;">`
+  const linkTreinar = `${d.site}#/treinar`
+  const linkRevisao = `${d.site}#/revisao`
+  const linkCronograma = `${d.site}#/cronograma`
+
+  const C = {
+    nunca: {
+      assunto: nome ? `${nome}, sua primeira missão no OrtoQuestões está esperando` : 'Sua primeira missão no OrtoQuestões está esperando',
+      previa: 'Questões oficiais de TEOT, TARO e ENARE R4 comentadas, alternativa por alternativa. Comece com 10.',
+      selo: 'Missão: primeira batalha',
+      titulo: nome ? `${nome}, o mensageiro trouxe um convite` : 'O mensageiro trouxe um convite',
+      lide: 'Você criou sua conta, mas ainda não respondeu nenhuma questão. Que tal dar uma chance? Leva uns 15 minutos.',
+      corpo: [
+        ['pixel/treinar.png', 'Provas oficiais comentadas', 'TEOT, TARO e ENARE R4 separadas por tema, com a explicação de cada alternativa: por que a certa está certa e cada errada está errada.'],
+        ['pixel/revisao.png', 'Revisão que lembra por você', 'Errou? A questão volta no momento certo. Acertou com certeza? Só reaparece daqui a semanas.'],
+        ['pixel/ranking.png', 'Ranking, emblemas e sequência', 'Cada questão soma pontos, destrava emblemas e acende a sua fogueira de dias seguidos.'],
+      ],
+      botao: 'Começar minha primeira missão',
+      link: linkTreinar,
+      rodape: 'Comece por um tema de que você gosta. Dez questões já mostram como funciona.',
+    },
+    tres_dias: {
+      assunto: nome ? `${nome}, sua fogueira está apagando` : 'Sua fogueira de estudo está apagando',
+      previa: 'Faz alguns dias que você não aparece. Dez questões hoje mantêm o hábito vivo.',
+      selo: 'Missão: manter a chama',
+      titulo: nome ? `${nome}, a fogueira está esperando lenha` : 'A fogueira está esperando lenha',
+      lide: `Faz ${d.diasFora} dias que você não aparece. Constância vence intensidade: uma sessão curta hoje vale mais do que uma maratona no fim de semana.`,
+      corpo: [
+        ['ranking/chama.png', 'Dez questões, quinze minutos', 'É o suficiente para manter o hábito e não deixar as revisões acumularem.'],
+        ['pixel/revisao.png', 'Suas revisões estão prontas', 'As questões que você errou já voltaram para a fila. É onde o estudo rende mais por minuto.'],
+        ['pixel/ranking.png', 'O ranking continua andando', `Você já respondeu ${numero(d.respondidas)} questões. Cada uma nova soma um ponto.`],
+      ],
+      botao: 'Voltar com 10 questões',
+      link: linkTreinar,
+      rodape: `Prefere começar pelo que já errou? Abra a <a href="${linkRevisao}" style="color:#146b61;font-weight:bold;">revisão de hoje</a>.`,
+    },
+    sete_dias: {
+      assunto: nome ? `${nome}, uma semana longe acontece. O importante é voltar` : 'Uma semana longe acontece. O importante é voltar',
+      previa: 'Sua jornada até a prova continua de onde parou. Volte com uma sessão curta.',
+      selo: 'Missão: retomar a jornada',
+      titulo: nome ? `${nome}, sua jornada continua de onde parou` : 'Sua jornada continua de onde parou',
+      lide: `Faz ${d.diasFora} dias desde a última visita. Plantão, cansaço, vida: acontece com todo mundo. O que separa quem chega pronto na prova é voltar, não ser perfeito.`,
+      corpo: [
+        ['pixel/treinar.png', 'Recomece pequeno', 'Uma sessão de 10 questões hoje. Amanhã, outra. O hábito volta mais rápido do que parece.'],
+        ['pixel/planos.png', 'Seu progresso está guardado', `As ${numero(d.respondidas)} questões que você respondeu, as revisões e o caderno de erros continuam lá, esperando.`],
+        ['pixel/simulado.png', 'Um plano até a prova', 'O cronograma divide o que falta pelos dias até a prova e diz o que estudar hoje.'],
+      ],
+      botao: 'Retomar minha jornada',
+      link: linkTreinar,
+      rodape: `Quer um plano dia a dia? Veja o <a href="${linkCronograma}" style="color:#146b61;font-weight:bold;">cronograma até a prova</a>.`,
+    },
+  }[d.campanha]
+
+  const blocos = C.corpo.map(([icone, titulo, texto]) => `
+      <tr><td style="padding:0 40px 14px 40px;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f6f8f7;border-radius:12px;">
+          <tr>
+            <td width="64" valign="middle" align="center" style="padding:14px 6px 14px 14px;">${img(icone, 44, 44)}</td>
+            <td valign="middle" style="padding:14px 18px 14px 8px;font-family:Arial,Helvetica,sans-serif;">
+              <div style="font-size:16px;line-height:22px;font-weight:bold;color:#0f4f49;">${esc(titulo)}</div>
+              <div style="font-size:14px;line-height:21px;color:#33413d;padding-top:3px;">${esc(texto)}</div>
+            </td>
+          </tr>
+        </table>
+      </td></tr>`).join('')
+
+  const html = `<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="supported-color-schemes" content="light">
+<title>${esc(C.assunto)}</title>
+</head>
+<body style="margin:0;padding:0;background:#eef2f1;">
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;color:#eef2f1;">${esc(C.previa)}</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#eef2f1;">
+  <tr><td align="center" style="padding:28px 12px;">
+    <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background:#ffffff;border-radius:18px;overflow:hidden;">
+
+      <tr><td style="background:#0b3a35;background-image:linear-gradient(135deg,#071f1c 0%,#0b3a35 55%,#14655e 100%);padding:26px 40px 28px 40px;border-bottom:4px solid #e0b862;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td valign="top" style="font-family:Arial,Helvetica,sans-serif;">
+              <div style="font-size:18px;line-height:22px;color:#ffffff;"><strong>Orto</strong> Questões</div>
+              <div style="display:inline-block;margin-top:20px;padding:4px 10px;background:#e0b862;color:#2b1d02;font-size:12px;line-height:16px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;">${esc(C.selo)}</div>
+              <div style="font-size:26px;line-height:32px;font-weight:bold;color:#ffffff;padding-top:12px;">${esc(C.titulo)}</div>
+            </td>
+            <td width="96" valign="bottom" align="right" style="padding-left:12px;">${img('ranking/mensageiro.png', 72, 90, 'O mensageiro do OrtoQuestões')}</td>
+          </tr>
+        </table>
+      </td></tr>
+
+      <tr><td style="padding:26px 40px 18px 40px;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;color:#33413d;">${esc(C.lide)}</td></tr>
+
+      ${blocos}
+
+      <tr><td align="center" style="padding:16px 40px 6px 40px;">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+          <tr><td align="center" style="border-radius:12px;background:#146b61;box-shadow:inset 0 -4px 0 #0f4f49;">
+            <a href="${C.link}" style="display:inline-block;padding:16px 34px;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:20px;font-weight:bold;color:#ffffff;text-decoration:none;border-radius:12px;">${esc(C.botao)}</a>
+          </td></tr>
+        </table>
+        <div style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;color:#5f6d69;padding-top:14px;">${C.rodape}</div>
+      </td></tr>
+
+      <tr><td style="padding:24px 40px 30px 40px;">
+        <div style="border-top:1px solid #e3e9e7;padding-top:18px;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;color:#33413d;">
+          Bons estudos,<br><strong>Tales</strong>, do OrtoQuestões
+        </div>
+      </td></tr>
+    </table>
+
+    <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;">
+      <tr><td align="center" style="padding:18px 24px 6px 24px;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:18px;color:#7a8784;">
+        Siga <a href="https://www.instagram.com/ortoquestoes" style="color:#146b61;font-weight:bold;text-decoration:none;">@ortoquestoes</a> no Instagram: questão comentada e macetes de prova.
+      </td></tr>
+      <tr><td align="center" style="padding:4px 24px 24px 24px;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:17px;color:#98a4a1;">
+        Você recebe este e-mail porque tem uma conta no OrtoQuestões.<br>
+        <a href="${d.linkDescadastro}" style="color:#98a4a1;text-decoration:underline;">Não quero mais receber lembretes</a>
+      </td></tr>
+    </table>
+  </td></tr>
+</table>
+</body>
+</html>`
+
+  const texto = [
+    C.titulo,
+    '',
+    C.lide,
+    '',
+    ...C.corpo.flatMap(([, titulo, texto]) => [`• ${titulo}: ${texto}`]),
+    '',
+    `${C.botao}: ${C.link}`,
+    '',
+    'Bons estudos,',
+    'Tales, do OrtoQuestões',
+    '',
+    `Não quer mais receber lembretes? ${d.linkDescadastro}`,
+  ].join('\n')
+
+  return { assunto: C.assunto, html, texto }
+}

@@ -21,6 +21,7 @@ import { usarEtiquetas } from '../estado/preferencias'
 import { href } from '../util/rotas'
 import { usarConta } from '../conta/ContextoConta'
 import { Icone, type NomeIcone } from '../componentes/Icone'
+import { usarCronogramaHoje } from '../componentes/CaixasAssinante'
 import '../estilos/paginas/Treinar.css'
 
 // A maior parte do acervo ainda traz a prova genérica "TEOT/TARO" (sem
@@ -52,6 +53,8 @@ const DURACOES: Array<[number, string]> = [
 ]
 
 export function Treinar({ consulta }: { consulta: URLSearchParams }) {
+  const cronograma = usarCronogramaHoje()
+  const rotuloCronograma = cronograma.calculo ? 'Seguir o cronograma' : 'Montar meu cronograma'
   const { indice, carregando } = usarIndice()
   const { iniciar, sessao } = usarSessao()
   const { sessao: conta } = usarConta()
@@ -212,6 +215,10 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
           <Icone nome="raio" tamanho={20} />
           <span><strong>Sessão rápida</strong><small>10 questões de todo o acervo</small></span>
         </button>
+        <a className="botao botao--ouro tr-heroi__cronograma" href={href('/cronograma')}>
+          <Icone nome="rota" tamanho={20} />
+          <span><strong>{rotuloCronograma}</strong><small>{cronograma.calculo?.hoje ? `Hoje: ${cronograma.calculo.hoje.nome} · ${cronograma.calculo.feitasHoje} de ${cronograma.calculo.metaDiaria}` : 'A meta de cada dia até a prova, pelo que mais cai'}</small></span>
+        </a>
         <div className="tr-rapidas" aria-label="Sessões rápidas de 10 questões">
           {rapidas.map((r) => (
             <button key={r.titulo} type="button" className="tr-rapida" disabled={r.quantidade === 0} onClick={() => sessaoRapida(r.preset)}>
@@ -551,6 +558,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
             {desempenhoAnterior !== null ? ` · seu acerto: ${desempenhoAnterior}%` : ''}
           </span>
         </div>
+        <a className="botao botao--ouro tr-barra__cronograma" href={href('/cronograma')} title={rotuloCronograma}><Icone nome="rota" tamanho={18} /><span>{rotuloCronograma}</span></a>
         <button type="button" className="botao botao--fantasma tr-barra__limpar" onClick={() => definirFiltros({ ...FILTROS_VAZIOS, limite: 10 })}>Limpar</button>
         <button type="button" className="botao botao--principal botao--grande" disabled={total === 0 || carregandoBusca} onClick={comecar}>
           {total === 0 ? 'Ajuste os filtros' : simulado ? (

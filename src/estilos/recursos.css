@@ -326,3 +326,51 @@
   .inicio-planos-atalho { grid-template-columns: auto minmax(0, 1fr); }
   .inicio-planos-atalho__acao { grid-column: 1 / -1; justify-content: center; }
 }
+
+/* ---------- Cenas da temporada RPG (telas vazias e 404) ---------- */
+.cena-pixel { padding: 1.75rem 1.25rem 1.5rem; border-radius: var(--raio-cartao); background: var(--superficie); border: var(--borda); box-shadow: var(--sombra-media); text-align: center; }
+.cena-pixel__palco { position: relative; display: flex; align-items: flex-end; justify-content: center; gap: 1.6rem; height: 9.5rem; margin: 0 auto 1.1rem; max-width: 20rem; border-bottom: 4px solid #8a5a2b; }
+.cena-pixel__palco img { image-rendering: pixelated; }
+.cena-pixel__palco img:first-child { animation: cena-chama 1.2s steps(2) infinite; }
+.cena-pixel__zz { position: absolute; top: 0.2rem; left: 58%; display: grid; font-family: var(--fonte-pixel); font-weight: 700; color: var(--texto-2); line-height: 1; }
+.cena-pixel__zz span { animation: cena-zz 2.4s steps(3) infinite; }
+.cena-pixel__zz span:nth-child(1) { font-size: 0.9rem; } .cena-pixel__zz span:nth-child(2) { font-size: 1.15rem; margin-left: 0.6rem; animation-delay: 0.3s; } .cena-pixel__zz span:nth-child(3) { font-size: 1.5rem; margin-left: 1.3rem; animation-delay: 0.6s; }
+@keyframes cena-zz { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
+@keyframes cena-chama { 50% { transform: translateY(-2px); } }
+.cena-pixel h2 { margin: 0; font-size: 1.35rem; }
+.cena-pixel p { margin: 0.5rem auto 1rem; max-width: 34rem; color: var(--texto-2); }
+.mapa-perdido { padding: 1.6rem 1.25rem; border-radius: var(--raio-cartao); text-align: center; color: #fff; background: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px) 0 0 / 14px 14px, linear-gradient(160deg, #1b130a, #3b2a14 60%, #5a3c18); }
+.mapa-perdido__codigo { margin: 0; font-family: var(--fonte-pixel); font-weight: 700; font-size: 3.4rem; line-height: 1; color: #f4cf7c; text-shadow: 0 3px 0 #6b4a0c; }
+.mapa-perdido__titulo { margin: 0.4rem 0 0; font-family: var(--fonte-pixel); font-weight: 700; font-size: 1.3rem; }
+.mapa-perdido__trilha { display: block; width: min(100%, 22rem); height: 6rem; margin: 0.8rem auto; }
+.mapa-perdido p:last-child { margin: 0; color: rgba(255, 255, 255, 0.85); }
+.mapa-perdido__dica { display: flex; gap: 0.75rem; align-items: center; padding: 0.8rem 1rem; border-radius: var(--raio-cartao); background: var(--ouro-veu); color: var(--ouro-texto); }
+.mapa-perdido__dica img { image-rendering: pixelated; flex: none; }
+@media (prefers-reduced-motion: reduce) { .cena-pixel__palco img:first-child, .cena-pixel__zz span { animation: none; } }
+
+/* ---------- Cronograma como jornada (temporada RPG) ---------- */
+.cr-destaque {
+  background:
+    radial-gradient(circle at 8% 30%, rgba(244, 207, 124, 0.22), transparent 42%),
+    radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px) 0 0 / 14px 14px,
+    linear-gradient(135deg, #071f1c, #0b3a35 55%, #14655e);
+  box-shadow: inset 0 0 0 2px rgba(244, 207, 124, 0.45), var(--sombra-media);
+}
+.cr-destaque__nome { font-family: var(--fonte-pixel); font-weight: 700; letter-spacing: 0.01em; color: #f4cf7c; text-shadow: 0 4px 0 #6b4a0c; }
+.cr-destaque__texto-trilha { display: grid; gap: 1.1rem; align-content: start; }
+.cr-trilha { list-style: none; margin: 0; padding: 0; display: flex; align-items: flex-end; gap: 0; }
+.cr-trilha__casa { position: relative; flex: 1 1 0; display: grid; justify-items: center; gap: 0.3rem; color: rgba(255, 255, 255, 0.75); font-family: var(--fonte-pixel); font-weight: 700; }
+.cr-trilha__casa::before { content: ""; position: absolute; z-index: 0; left: -50%; right: 50%; bottom: 1.55rem; border-top: 3px dashed rgba(244, 207, 124, 0.55); }
+.cr-trilha__casa:first-child::before { display: none; }
+.cr-trilha__bloco { position: relative; z-index: 1; display: grid; place-items: center; width: 1.9rem; height: 1.9rem; background: #2a3c39; color: #cfe3df; font-size: 0.85rem; box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.35); }
+.cr-trilha__casa--feita .cr-trilha__bloco { background: #3fa66b; color: #fff; box-shadow: inset 0 -3px 0 #1f7a4d; }
+.cr-trilha__casa--atual .cr-trilha__bloco { background: #f4cf7c; color: #3b2a06; box-shadow: inset 0 -3px 0 #c9952f; outline: 2px solid #fff; outline-offset: 2px; }
+.cr-trilha__casa small { font-size: 0.72rem; }
+.cr-trilha__casa--atual small { color: #f4cf7c; }
+.cr-trilha__heroi { image-rendering: pixelated; animation: cr-passo 1s steps(2) infinite; }
+.cr-trilha__casa--prova img { image-rendering: pixelated; position: relative; z-index: 1; }
+@keyframes cr-passo { 50% { transform: translateY(-3px); } }
+@media (prefers-reduced-motion: reduce) { .cr-trilha__heroi { animation: none; } }
+.cr-blocos { display: grid; gap: 2px; }
+.cr-blocos span { height: 12px; background: rgba(255, 255, 255, 0.14); box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.2); }
+.cr-blocos span.cheio { background: #f4cf7c; box-shadow: inset 0 -3px 0 #c9952f; }

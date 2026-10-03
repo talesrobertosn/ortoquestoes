@@ -8,7 +8,7 @@ import { Carregando, Estado } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
 import { ModalEntrar } from '../componentes/ModalEntrar'
 import { VitrineAssinante } from '../componentes/VitrineAssinante'
-import { CaixasAssinante, usarCronogramaHoje } from '../componentes/CaixasAssinante'
+import { CaixasAssinante, CartaoCronograma, usarCronogramaHoje } from '../componentes/CaixasAssinante'
 import { ConviteLimiteDoDia } from '../componentes/LimiteRespostas'
 import { CartaoCompartilhar } from '../componentes/CartaoCompartilhar'
 import { CartaoPlanos } from '../componentes/CartaoPlanos'
@@ -282,6 +282,8 @@ export function Inicio() {
 
       {indice && contagens && indice.total > 0 && (
         <>
+          <CartaoCronograma cronograma={cronograma} />
+
           <section className="inicio-ranking" aria-label="Ranking e conquistas">
             <img className="inicio-ranking__coroa" src={recurso('emblemas/podio-1.png')} alt="" width={72} height={72} />
             <div className="inicio-ranking__texto">
@@ -371,7 +373,7 @@ export function Inicio() {
           </div>
 
           <ConviteLimiteDoDia />
-          <CaixasAssinante cronograma={cronograma} />
+          <CaixasAssinante />
           <VitrineAssinante />
 
           <div className="inicio-grade">

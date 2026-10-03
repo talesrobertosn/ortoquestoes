@@ -12,7 +12,11 @@ import { type ResumoHistorico, descreverFiltros, usarSessao } from '../estado/se
 import { usarArmazenado } from '../estado/usarArmazenado'
 import type { RegistroQuestao } from '../estado/revisao'
 import { calcularStreak, META_STREAK_DIARIA } from '../estado/streak'
-import { proximaConquista } from '../estado/conquistas'
+import { CONQUISTAS, CONQUISTAS_SEQUENCIA, proximaConquista } from '../estado/conquistas'
+import { IconePixel } from '../componentes/IconePixel'
+import { usarCronogramaHoje } from '../componentes/CaixasAssinante'
+import { recurso } from '../config'
+import '@fontsource/pixelify-sans/latin-700.css'
 import { href, navegar } from '../util/rotas'
 import { ConviteLimiteDoDia, DiaCumprido } from '../componentes/LimiteRespostas'
 import { ConviteCompartilhar } from '../componentes/ConviteCompartilhar'
@@ -163,6 +167,28 @@ export function Resumo() {
   const streak = useMemo(() => calcularStreak(marcadas), [marcadas])
   const totalConta = Object.keys(marcadas).length
   const proximoEmblema = proximaConquista(totalConta)
+  const cronograma = usarCronogramaHoje()
+
+  // Fim de batalha (temporada RPG): o que esta sessão rendeu de recompensa.
+  const batalha = useMemo(() => {
+    if (!sessao || !dados) return null
+    // Questões respondidas pela primeira vez nesta sessão: são as que somam no ranking.
+    const novas = sessao.ids.filter((id) => {
+      const r = marcadas[id]
+      const primeira = r?.historico?.[0]?.em ?? r?.q
+      return !!sessao.respostas[id] && !!primeira && primeira >= sessao.criadaEm
+    }).length
+    let combo = 0
+    let atual = 0
+    for (const l of dados.linhas) {
+      atual = l.situacao === 'certa' ? atual + 1 : l.situacao === 'errada' ? 0 : atual
+      combo = Math.max(combo, atual)
+    }
+    const antes = totalConta - novas
+    const emblema = [...CONQUISTAS].reverse().find((c) => antes < c.minimo && totalConta >= c.minimo) ?? null
+    const emblemaSequencia = CONQUISTAS_SEQUENCIA.find((c) => c.minimo === streak.atual) ?? null
+    return { novas, combo, emblema, emblemaSequencia }
+  }, [sessao, dados, marcadas, totalConta, streak.atual])
 
   if (!sessao) {
     return (
@@ -240,6 +266,8 @@ export function Resumo() {
     URL.revokeObjectURL(url)
   }
 
+  const mostrarBatalha = !emAndamento && !sessao.nacional && pct !== null && !!batalha
+  const metaCumprida = sessao.origem === 'cronograma' && !!cronograma.calculo && cronograma.calculo.metaDiaria > 0 && cronograma.calculo.feitasHoje >= cronograma.calculo.metaDiaria
   const quando = new Date(fim).toLocaleDateString('pt-BR', { day: 'numeric', month: 'long' })
   const hora = new Date(fim).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })
 
@@ -247,6 +275,8 @@ export function Resumo() {
     <article className="empilha-2 rs">
       {sessao.nacional && sessao.concluidaEm && <EntregaNacional sessao={sessao} />}
       <section className="rs-heroi">
+        {mostrarBatalha && <span className="rs-tochas" aria-hidden="true"><img src={recurso('ranking/tocha.png')} width={24} height={48} alt="" /><img src={recurso('ranking/tocha.png')} width={24} height={48} alt="" /></span>}
+        {mostrarBatalha && <p className="rs-batalha__grito">{pct! >= 70 ? 'Vitória!' : pct! >= 50 ? 'Boa batalha!' : 'Batalha difícil'}</p>}
         <div className="rs-heroi__texto">
           <p className="rs-heroi__selo">
             <Icone nome={emAndamento ? 'relogio' : sessao.simulado ? 'bandeira' : 'certo'} tamanho={16} />
@@ -303,6 +333,17 @@ export function Resumo() {
           </div>
         </dl>
       </section>
+
+      {mostrarBatalha && batalha && <section className="rs-batalha" aria-label="O que esta sessão rendeu">
+        <div className="rs-ganhos">
+          <div className="rs-ganho"><b>+{batalha.novas}</b><span>{batalha.novas === 1 ? 'ponto' : 'pontos'} no ranking</span></div>
+          <div className="rs-ganho"><b>{batalha.combo}</b><span>maior combo de acertos</span></div>
+          <div className="rs-ganho"><b><img src={recurso('ranking/chama.png')} width={18} height={18} alt="" /> {streak.atual}</b><span>{streak.atual === 1 ? 'dia seguido' : 'dias seguidos'}</span></div>
+        </div>
+        {batalha.emblema && <div className="rs-loot"><Medalha conquista={batalha.emblema} tamanho={64} /><div><span className="rs-loot__tag">Novo emblema</span><strong>{batalha.emblema.rotulo} desbloqueado</strong><small>{batalha.emblema.minimo.toLocaleString('pt-BR')} questões diferentes respondidas.</small></div></div>}
+        {batalha.emblemaSequencia && <div className="rs-loot"><Medalha conquista={batalha.emblemaSequencia} tamanho={64} /><div><span className="rs-loot__tag">Sequência</span><strong>{batalha.emblemaSequencia.rotulo}</strong><small>{batalha.emblemaSequencia.minimo} dias seguidos estudando.</small></div></div>}
+        {metaCumprida && <div className="rs-loot"><IconePixel nome="planos" tamanho={56} /><div><span className="rs-loot__tag">Baú da meta</span><strong>Meta de hoje cumprida</strong><small>{cronograma.calculo!.feitasHoje} de {cronograma.calculo!.metaDiaria} questões do cronograma.</small></div></div>}
+      </section>}
 
       <DiaCumprido erradas={dados.erradas.length} />
       <ConviteLimiteDoDia />

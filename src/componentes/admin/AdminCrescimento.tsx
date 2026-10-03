@@ -1,3 +1,4 @@
+import { AdminLembretes } from './AdminLembretes'
 import { useEffect, useMemo, useState } from 'react'
 import { chamarRpc } from '../../servicos/supabase'
 import { PLANOS as PRECOS, real } from '../../dados/planos'
@@ -63,6 +64,7 @@ export function AdminCrescimento({ assinaturas }: { assinaturas: AssinaturaRecei
   if (erro) return <section className="adm-secao"><p role="alert" className="adm-alerta">{erro}</p></section>
 
   return <div className="empilha-2">
+    <AdminLembretes />
     <section className="empilha adm-secao" aria-labelledby="adm-titulo-dia">
       <div className="adm-secao__cabeca">
         <div><h2 id="adm-titulo-dia">Dia a dia</h2><p>Cada gráfico tem a sua escala. A data de uma resposta é a do aparelho de quem respondeu.</p></div>

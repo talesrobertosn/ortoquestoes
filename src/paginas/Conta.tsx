@@ -71,6 +71,17 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     try { await chamarRpc('definir_preferencia_relatorio', { p_relatorio: valor }) }
     catch { definirRelatorioMensal(!valor); definirMensagem('Não foi possível salvar a preferência de e-mail agora.') }
   }
+  // Lembretes de estudo (3 e 7 dias sem aparecer): para todas as contas.
+  const [lembretes, definirLembretes] = useState<boolean | null>(null)
+  useEffect(() => {
+    if (!sessao?.user.id) return
+    chamarRpc<boolean>('obter_preferencia_lembretes', {}).then((v) => definirLembretes(v !== false)).catch(() => undefined)
+  }, [sessao?.user.id])
+  const trocarLembretes = async (valor: boolean) => {
+    definirLembretes(valor)
+    try { await chamarRpc('definir_preferencia_lembretes', { p_lembretes: valor }) }
+    catch { definirLembretes(!valor); definirMensagem('Não foi possível salvar a preferência de e-mail agora.') }
+  }
   const { contexto } = usarContextoLocal('')
   const { indice } = usarIndice()
   const { ritmo, definirRitmo } = usarRitmoRevisao()
@@ -384,6 +395,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
         <label className="ct-interruptor"><input type="checkbox" checked={mostrarEtiquetas} onChange={e => definirEtiquetas(e.target.checked)} /><span className="ct-interruptor__trilho" aria-hidden="true" /><span>Mostrar a etiqueta do assunto antes de responder</span></label>
         {emailsConquistas !== null && <label className="ct-interruptor"><input type="checkbox" checked={emailsConquistas} onChange={e => void trocarEmailsConquistas(e.target.checked)} /><span className="ct-interruptor__trilho" aria-hidden="true" /><span>Receber e-mail de parabéns quando eu desbloquear um emblema</span></label>}
         {relatorioMensal !== null && <label className="ct-interruptor"><input type="checkbox" checked={relatorioMensal} onChange={e => void trocarRelatorioMensal(e.target.checked)} /><span className="ct-interruptor__trilho" aria-hidden="true" /><span>Receber o relatório do mês por e-mail (evolução, temas que subiram e caíram, próximo passo)</span></label>}
+        {lembretes !== null && <label className="ct-interruptor"><input type="checkbox" checked={lembretes} onChange={e => void trocarLembretes(e.target.checked)} /><span className="ct-interruptor__trilho" aria-hidden="true" /><span>Receber lembretes de estudo quando eu ficar alguns dias sem aparecer</span></label>}
       </section>}
       {secao === 'ranking' && <section id="ct-ranking" className="ct-cartao">
         <header className="ct-cartao__cabeca"><span className="ct-icone ct-icone--ouro"><Icone nome="trofeu" tamanho={18} /></span><div><h2>Ranking</h2><p>Conta questões respondidas, não acerto.</p></div></header>
