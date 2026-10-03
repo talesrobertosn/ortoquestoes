@@ -10283,19 +10283,20 @@
   "conferido": false
  },
  "trauma-1137": {
+  "incorretas": {
+   "A": "**Diáfise do fêmur.** Sua redução depende de tração, manipulação e controle de comprimento, rotação e eixo, frequentemente com haste intramedular. Isso não é a ligamentotaxia periarticular pedida aqui, pois o mecanismo não depende de ligamentos inseridos nos fragmentos diafisários.",
+   "C": "**Olécrano.** A inserção do tríceps pode deslocar o fragmento proximal, mas tracioná-lo não reproduz a redução ligamentar de uma superfície periarticular. Conforme o padrão, utilizam-se placa ou montagem de banda de tensão em fraturas simples apropriadas.",
+   "D": "**Colo do tálus.** A prioridade é restabelecer alinhamento e congruência das articulações subtalar e talonavicular, com redução fechada ou aberta e fixação conforme o desvio. A tração isolada pelos tecidos moles não controla de modo confiável o colo nem seus riscos vasculares."
+  },
+  "conceito": "**Por que a tração pode reduzir uma fratura?** Ligamentotaxia é a redução indireta obtida quando a distração tensiona ligamentos, cápsula e outros tecidos ainda presos aos fragmentos. Esses tecidos transmitem a força aos fragmentos periféricos, restaurando comprimento e parte do contorno articular sem precisar expor toda a fratura.\n\nNo planalto tibial, essa lógica é útil sobretudo em fraturas complexas de alta energia. Um fixador externo que atravessa o joelho pode recuperar provisoriamente alinhamento e comprimento enquanto o edema e a pele melhoram; em casos selecionados, a fixação circular e pequenos implantes complementares podem compor o tratamento definitivo. A redução deve ser conferida por imagem, pois alinhamento global não garante superfície articular congruente.\n\n**O limite decisivo.** Um fragmento central afundado não tem ligação capsuloligamentar capaz de puxá-lo para cima. Depressões articulares precisam de elevação direta ou indireta específica e sustentação com enxerto ou substituto e fixação, quando indicado. Portanto, ligamentotaxia ajuda a reduzir a periferia do planalto, mas não substitui a reconstrução de uma área impactada.",
+  "correta": "**Planalto tibial.** Seus fragmentos periarticulares podem acompanhar a tensão das partes moles sob distração; por isso a ligamentotaxia é recurso de redução, frequentemente associado à fixação externa.",
+  "referencias": [
+   "AO Surgery Reference. ORIF - Conventional plating for depression fracture of the proximal tibia. https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-tibia/depression-fracture/orif-conventional-plating",
+   "J Orthop Surg Res. Complex tibial plateau fractures treated by hybrid external fixation system. https://pmc.ncbi.nlm.nih.gov/articles/PMC5858210/"
+  ],
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "B",
-  "conceito": "**Ligamentotaxia.** Tração aplicada através dos tecidos moles íntegros alinha fragmentos metafisários e articulares. Usada no planalto tibial, pilão e rádio distal, com fixador externo.\n\n**Na prova:** ligamentotaxia serve para fraturas periarticulares.",
-  "correta": "**Do planalto tibial.** É indicação clássica.",
-  "incorretas": {
-   "A": "**Da diáfise do fêmur.** Na diáfise não há ligamento para tracionar fragmentos.",
-   "C": "**Do olécrano.** O olécrano é tratado com banda de tensão ou placa.",
-   "D": "**Do colo do tálus.** O colo do tálus pede redução anatômica aberta."
-  },
-  "referencias": [
-   "Ruedi e Murphy. AO Principles of fracture management. Verlag/Artmed. p. 224."
-  ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "trauma-1138": {
@@ -10331,19 +10332,20 @@
   "conferido": false
  },
  "trauma-1140": {
+  "incorretas": {
+   "A": "**Kocher-Langenbeck.** Essa via posterior dá acesso à parede e à coluna posteriores, sendo especialmente útil quando esses segmentos são o foco da fratura. Aqui a lesão dominante é da coluna anterior; uma via exclusivamente posterior não oferece o mesmo controle direto dela.",
+   "C": "**Smith-Petersen.** É uma via anterior para o quadril, empregada em problemas da cabeça e do colo femorais e em algumas abordagens acetabulares anteriores limitadas. Não substitui a exposição da coluna anterior e do rebordo pélvico exigida pela fratura descrita.",
+   "D": "**Hueter.** Também designa um acesso anterior ao quadril, frequentemente citado em artroplastia. O corredor não dá, por si, o acesso intrapélvico amplo necessário para reduzir a coluna anterior e fixar a hemitransversa posterior."
+  },
+  "conceito": "**Leia o nome da fratura como um mapa.** Na classificação de Letournel, a fratura de coluna anterior com hemitransversa posterior é um padrão associado: a linha principal separa a coluna anterior, enquanto outra linha atravessa parcialmente a região posterior. Não equivale a uma fratura isolada da parede posterior, nem a uma fratura das duas colunas em que toda a superfície articular perde a ligação com o esqueleto axial.\n\nA via cirúrgica precisa alcançar o fragmento que comanda a redução. A ilioinguinal oferece acesso à coluna anterior pelo ilíaco e pelo rebordo pélvico; por esse corredor também é possível reduzir e fixar a extensão posterior com pinças e parafusos dirigidos à coluna posterior. A sequência habitual é reconstruir a porção anterior e depois ajustar a hemitransversa. Planejamento por tomografia e radioscopia são essenciais para evitar parafusos intra-articulares e lesão vascular.\n\n**Não transforme a via em regra absoluta.** A via intrapélvica anterior modificada, conhecida como Stoppa, também pode tratar esse padrão; a escolha depende da altura dos traços, da cominuição e da experiência da equipe. Entre as alternativas históricas oferecidas, porém, a ilioinguinal é a que expõe o componente principal.",
+  "correta": "**Ilioinguinal.** Ela aborda diretamente a coluna anterior e permite controlar o componente hemitransverso posterior a partir da frente da pelve.",
+  "referencias": [
+   "AO Surgery Reference. ORIF through ilioinguinal approach for anterior column and posterior hemitransverse fractures. https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/acetabulum/anterior-column-and-posterior-hemitransverse/orif-through-ilioinguinal-approach",
+   "AO Surgery Reference. Decision making: choice of exposure. https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/acetabulum/further-reading/decision-making-choice-of-exposure"
+  ],
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "B",
-  "conceito": "**Coluna anterior com hemitransversa posterior.** O componente principal é anterior, abordado pela via ilioinguinal (ou Stoppa). Kocher-Langenbeck é para as fraturas posteriores.\n\n**Na prova:** anterior com hemitransversa posterior se opera pela ilioinguinal.",
-  "correta": "**Ilioinguinal.** Expõe toda a coluna anterior.",
-  "incorretas": {
-   "A": "**De KOCHER-LANGENBECK.** É para a parede e coluna posteriores.",
-   "C": "**De SMITH-PETERSEN.** Expõe pouco o acetábulo.",
-   "D": "**De HUETER.** É acesso anterior ao quadril para artroplastia."
-  },
-  "referencias": [
-   "Rockwood C.A. et al. Fractures. Philadelphia: Lippincott. 6ª ed., vol. 2, p. 1690."
-  ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "trauma-1141": {
@@ -10363,19 +10365,20 @@
   "conferido": false
  },
  "trauma-1142": {
+  "incorretas": {
+   "A": "**Compartimento anterior.** Contém o nervo fibular profundo e os dorsiflexores; sua pista sensitiva mais específica é a perda no primeiro espaço interdigital, não na maior parte do dorso do pé.",
+   "C": "**Compartimento posterior superficial.** Abriga gastrocnêmio e sóleo, ligados principalmente à flexão plantar. O nervo sural contribui para a sensibilidade da margem lateral do pé, mas não é o nervo intracompartimental que explica o padrão dorsal amplo da pergunta.",
+   "D": "**Compartimento posterior profundo.** Abriga o nervo tibial, que segue para a planta do pé. Alterações plantares combinadas com dor posterior profunda apontariam mais para esse compartimento do que a perda dorsal apresentada."
+  },
+  "conceito": "**Localize o nervo, depois o compartimento.** A perna tem quatro compartimentos osteofasciais. O anterior contém os dorsiflexores e o nervo fibular profundo; o lateral abriga os músculos fibulares longo e curto, responsáveis pela eversão, e o nervo fibular superficial. Os compartimentos posteriores contêm os flexores plantares superficiais e, mais profundamente, músculos flexores, vasos tibiais posteriores e nervo tibial.\n\nO fibular superficial atravessa o compartimento lateral antes de emergir no terço distal da perna. Seus ramos sensitivos alcançam grande parte do dorso do pé, inclusive a região dorsolateral. Assim, hipoestesia dorsal associada a dor e tensão na face lateral da perna aponta para esse compartimento. O primeiro espaço entre o hálux e o segundo dedo, porém, é território do fibular profundo e sugere acometimento anterior.\n\n**Uma nuance clínica importante.** A borda mais lateral do pé também pode receber fibras do nervo sural; por isso uma área descrita apenas como dorsolateral não localiza sozinha a lesão com precisão absoluta. Síndrome compartimental é diagnóstico urgente baseado no conjunto de dor desproporcional, dor ao alongamento passivo, exame seriado e, quando necessário, pressão compartimental. Um déficit sensitivo tardio não deve ser aguardado para decidir a descompressão.",
+  "correta": "**Compartimento lateral.** Nele transita o nervo fibular superficial, cuja alteração pode reduzir a sensibilidade no dorso e na região dorsolateral do pé.",
+  "referencias": [
+   "Chronic exertional compartment syndrome of the leg. https://pmc.ncbi.nlm.nih.gov/articles/PMC2941579/",
+   "Superficial peroneal nerve: clinical implications of anatomic variability. https://pubmed.ncbi.nlm.nih.gov/16651197/"
+  ],
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "B",
-  "conceito": "**Compartimentos da perna.** O lateral contém os fibulares e o nervo fibular superficial, que inerva o dorso do pé. O anterior contém o fibular profundo (primeiro espaço).\n\n**Na prova:** dorso do pé hipoestésico sugere compartimento lateral.",
-  "correta": "**Lateral.** O fibular superficial está no compartimento lateral.",
-  "incorretas": {
-   "A": "**Anterior.** Primeiro espaço interdigital.",
-   "C": "**Posterior superficial.** Sural fica fora dos compartimentos.",
-   "D": "**Posterior profundo.** Plantar."
-  },
-  "referencias": [
-   "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., p. 433"
-  ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "trauma-1143": {
