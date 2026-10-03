@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<!-- Coluna de alternativas: versão atual × mais anatômica × caricata, nas cores do site.
+     node marketing/instagram/gerar.mjs marketing/instagram/marca-ideias/coluna2.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+* { box-sizing: border-box; margin: 0; }
+body { background: #333; font-family: Jakarta, sans-serif; }
+section { width: 1080px; background: #f1f3f2; padding: 56px 56px 64px; color: #12181a; }
+h1 { font-size: 48px; font-weight: 800; letter-spacing: -.03em; }
+.lide { font-size: 22px; color: #5b686c; margin-top: 10px; line-height: 1.45; }
+.tres { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 22px; margin-top: 30px; }
+.c { background: #fff; border-radius: 24px; padding: 24px; text-align: center; }
+.c.esc { outline: 4px solid #d9a93f; }
+.c .g { width: 260px; height: 260px; }
+.c h2 { font-size: 24px; font-weight: 800; margin-top: 12px; } .c h2 i { font-style: normal; color: #a87a1f; margin-right: 6px; }
+.c p { font-size: 17px; color: #5b686c; line-height: 1.4; margin-top: 6px; text-align: left; }
+.esc2 { background: #0f1413; border-radius: 16px; padding: 14px; margin-top: 14px; display: flex; justify-content: center; gap: 14px; align-items: center; }
+.peq { display: flex; justify-content: center; gap: 14px; align-items: flex-end; margin-top: 14px; }
+.wm { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 14px; font-size: 25px; letter-spacing: -.03em; }
+.wm svg { width: 36px; height: 36px; } .wm b { font-weight: 800; } .wm span { font-weight: 500; color: #14655e; }
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><defs id="defs"></defs></svg>
+
+<section id="coluna2">
+  <h1>Coluna: atual, anatômica e caricata</h1>
+  <p class="lide">A anatômica tem a lordose lombar, os discos entre os corpos, os processos articulares e o processo espinhoso largo das lombares. A caricata exagera essas mesmas formas, mais gordinhas e simpáticas, sem perder a leitura.</p>
+  <div class="tres">
+    <div class="c"><svg class="g"><use href="#atual-c"/></svg><h2><i>0</i>Atual</h2><p>A versão aprovada, para comparar.</p>
+      <div class="peq"><svg width="64" height="64"><use href="#atual-c"/></svg><svg width="32" height="32"><use href="#atual-c"/></svg><svg width="16" height="16"><use href="#atual-c"/></svg></div>
+      <div class="esc2"><svg width="64" height="64"><use href="#atual-e"/></svg><svg width="32" height="32"><use href="#atual-e"/></svg></div>
+      <div class="wm"><svg><use href="#atual-c"/></svg><b>Orto</b><span>Questões</span></div></div>
+    <div class="c esc"><svg class="g"><use href="#anat-c"/></svg><h2><i>A</i>Anatômica</h2><p>Lordose, discos, processos articulares e espinhoso. Corpos levemente acinturados, como na radiografia em perfil.</p>
+      <div class="peq"><svg width="64" height="64"><use href="#anat-c"/></svg><svg width="32" height="32"><use href="#anat-c"/></svg><svg width="16" height="16"><use href="#anat-c"/></svg></div>
+      <div class="esc2"><svg width="64" height="64"><use href="#anat-e"/></svg><svg width="32" height="32"><use href="#anat-e"/></svg></div>
+      <div class="wm"><svg><use href="#anat-c"/></svg><b>Orto</b><span>Questões</span></div></div>
+    <div class="c"><svg class="g"><use href="#cari-c"/></svg><h2><i>B</i>Caricata</h2><p>As mesmas partes, mais arredondadas e cheias. Fica mais amigável e mais forte no tamanho pequeno.</p>
+      <div class="peq"><svg width="64" height="64"><use href="#cari-c"/></svg><svg width="32" height="32"><use href="#cari-c"/></svg><svg width="16" height="16"><use href="#cari-c"/></svg></div>
+      <div class="esc2"><svg width="64" height="64"><use href="#cari-e"/></svg><svg width="32" height="32"><use href="#cari-e"/></svg></div>
+      <div class="wm"><svg><use href="#cari-c"/></svg><b>Orto</b><span>Questões</span></div></div>
+  </div>
+</section>
+
+<script>
+// Temas: azulejo, osso, osso certo, disco.
+const TEMAS = {
+  c: { fundo: '#14655e', borda: null, osso: '#95bab7', certo: '#f4cf7c', disco: '#0f4f49' },
+  e: { fundo: '#171e1d', borda: '#2a3432', osso: '#39776e', certo: '#e0b862', disco: '#0f1413' },
+}
+// Versão atual (aprovada).
+function atual(t) {
+  const v = (x, y, cor) => `<g transform="translate(${x} ${y})" fill="${cor}"><rect width="22" height="8.6" rx="3.2"/><rect x="21" y="2.6" width="5" height="3.6"/><path d="M25 1.8 L34.2 5.2 Q35.6 5.8 35 7.2 L34.4 8.4 Q33.8 9.6 32.4 9.1 L25 6.6 Z"/></g>`
+  return v(13, 9.5, t.osso) + v(11, 21.2, t.osso) + v(11, 32.9, t.certo) + v(13, 44.6, t.osso)
+}
+// Vértebra lombar em perfil (frente à esquerda): corpo acinturado, pedículo, processos articulares e espinhoso largo.
+function vertAnat(cor) {
+  return `<g fill="${cor}">
+    <path d="M1.2 0 H19.2 Q20.6 0 20.6 1.4 V8.2 Q20.6 9.6 19.2 9.6 H1.2 Q0 9.6 0 8.2 Q1 4.8 0 1.4 Q0 0 1.2 0 Z"/>
+    <path d="M20 2.6 L24 2 Q24.9 0.2 26.3 0.6 Q27.2 1 27.3 2 L35.2 3.4 Q37 3.8 36.7 5.6 L36.5 7.3 Q36.1 9 34.5 8.8 L27.6 8 Q27.3 10 25.9 10.2 Q24.6 10.3 24.2 8.8 L23.6 6.4 L20 6.2 Z"/></g>`
+}
+function vertCari(cor) {
+  return `<g fill="${cor}">
+    <rect x="0" y="0" width="21" height="10.4" rx="4.6"/>
+    <rect x="19" y="3" width="6" height="4.4" rx="2"/>
+    <circle cx="25.4" cy="2.9" r="1.9"/><circle cx="25.4" cy="7.7" r="1.9"/>
+    <rect x="24" y="2.6" width="13.4" height="5.6" rx="2.8" transform="rotate(8 24 5.4)"/></g>`
+}
+function coluna(t, vert, alturas, xs, ang, discoH) {
+  let s = ''
+  // Discos primeiro, atrás dos corpos.
+  for (let i = 0; i < alturas.length - 1; i++) {
+    const y = alturas[i] + discoH[0], x = (xs[i] + xs[i + 1]) / 2 + 1.2
+    s += `<rect x="${x}" y="${y}" width="18" height="${discoH[1]}" rx="1.2" fill="${t.disco}" opacity=".9"/>`
+  }
+  alturas.forEach((y, i) => {
+    const cor = i === 2 ? t.certo : t.osso
+    s += `<g transform="translate(${xs[i]} ${y}) rotate(${ang[i]} 10 5)">${vert(cor)}</g>`
+  })
+  return s
+}
+const defs = []
+for (const [k, t] of Object.entries(TEMAS)) {
+  const fundo = `<rect width="64" height="64" rx="16" fill="${t.fundo}"${t.borda ? ` stroke="${t.borda}" stroke-width="1.5"` : ''}/>`
+  defs.push(`<symbol id="atual-${k}" viewBox="0 0 64 64">${fundo}${atual(t)}</symbol>`)
+  // Lordose: as do meio mais para a frente (esquerda) e inclinadas acompanhando a curva.
+  defs.push(`<symbol id="anat-${k}" viewBox="0 0 64 64">${fundo}${coluna(t, vertAnat, [9.5, 21, 32.5, 44], [14, 11.5, 11, 12.5], [-7, -2, 3, 8], [9.6, 1.9])}</symbol>`)
+  defs.push(`<symbol id="cari-${k}" viewBox="0 0 64 64">${fundo}${coluna(t, vertCari, [8.8, 20.6, 32.4, 44.2], [13.5, 11.2, 10.8, 12.4], [-6, -2, 2, 6], [10.4, 1.4])}</symbol>`)
+}
+document.getElementById('defs').innerHTML = defs.join('')
+</script>
+</body></html>
