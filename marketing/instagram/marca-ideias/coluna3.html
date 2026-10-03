@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<!-- Coluna de alternativas: versão atual e três variações próximas, nas cores do site.
+     node marketing/instagram/gerar.mjs marketing/instagram/marca-ideias/coluna3.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+* { box-sizing: border-box; margin: 0; }
+body { background: #333; font-family: Jakarta, sans-serif; }
+section { width: 1080px; background: #f1f3f2; padding: 56px 56px 64px; color: #12181a; }
+h1 { font-size: 48px; font-weight: 800; letter-spacing: -.03em; }
+.lide { font-size: 22px; color: #5b686c; margin-top: 10px; line-height: 1.45; }
+.tres { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 22px; margin-top: 30px; }
+.c { background: #fff; border-radius: 24px; padding: 24px; text-align: center; }
+.c.esc { outline: 4px solid #d9a93f; }
+.c .g { width: 260px; height: 260px; }
+.c h2 { font-size: 24px; font-weight: 800; margin-top: 12px; } .c h2 i { font-style: normal; color: #a87a1f; margin-right: 6px; }
+.c p { font-size: 17px; color: #5b686c; line-height: 1.4; margin-top: 6px; text-align: left; }
+.esc2 { background: #0f1413; border-radius: 16px; padding: 14px; margin-top: 14px; display: flex; justify-content: center; gap: 14px; align-items: center; }
+.peq { display: flex; justify-content: center; gap: 14px; align-items: flex-end; margin-top: 14px; }
+.wm { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 14px; font-size: 25px; letter-spacing: -.03em; }
+.wm svg { width: 36px; height: 36px; } .wm b { font-weight: 800; } .wm span { font-weight: 500; color: #14655e; }
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><defs id="defs"></defs></svg>
+
+<section id="coluna3">
+  <h1>Coluna: três variações da atual</h1>
+  <p class="lide">Mesma linguagem da versão atual (corpo, pedículo e processo espinhoso, sem detalhes a mais). Cada variação muda uma coisa só, sempre com uma leitura anatômica clara.</p>
+  <div class="tres">
+    <div class="c"><svg class="g"><use href="#atual-c"/></svg><h2><i>0</i>Atual</h2><p>A versão de referência.</p>
+      <div class="peq"><svg width="64" height="64"><use href="#atual-c"/></svg><svg width="32" height="32"><use href="#atual-c"/></svg><svg width="16" height="16"><use href="#atual-c"/></svg></div>
+      <div class="esc2"><svg width="64" height="64"><use href="#atual-e"/></svg><svg width="32" height="32"><use href="#atual-e"/></svg><svg width="16" height="16"><use href="#atual-e"/></svg></div>
+      <div class="wm"><svg><use href="#atual-c"/></svg><b>Orto</b><span>Questões</span></div></div>
+    <div class="c"><svg class="g"><use href="#lomb-c"/></svg><h2><i>C</i>Lombar</h2><p>Espinhoso horizontal e quadrangular, como nas lombares. Corpos um pouco mais altos e lordose suave.</p>
+      <div class="peq"><svg width="64" height="64"><use href="#lomb-c"/></svg><svg width="32" height="32"><use href="#lomb-c"/></svg><svg width="16" height="16"><use href="#lomb-c"/></svg></div>
+      <div class="esc2"><svg width="64" height="64"><use href="#lomb-e"/></svg><svg width="32" height="32"><use href="#lomb-e"/></svg><svg width="16" height="16"><use href="#lomb-e"/></svg></div>
+      <div class="wm"><svg><use href="#lomb-c"/></svg><b>Orto</b><span>Questões</span></div></div>
+    <div class="c"><svg class="g"><use href="#tora-c"/></svg><h2><i>D</i>Torácica</h2><p>Espinhosos longos e inclinados para baixo, em telha, como nas torácicas. Corpos mais quadrados.</p>
+      <div class="peq"><svg width="64" height="64"><use href="#tora-c"/></svg><svg width="32" height="32"><use href="#tora-c"/></svg><svg width="16" height="16"><use href="#tora-c"/></svg></div>
+      <div class="esc2"><svg width="64" height="64"><use href="#tora-e"/></svg><svg width="32" height="32"><use href="#tora-e"/></svg><svg width="16" height="16"><use href="#tora-e"/></svg></div>
+      <div class="wm"><svg><use href="#tora-c"/></svg><b>Orto</b><span>Questões</span></div></div>
+    <div class="c"><svg class="g"><use href="#cont-c"/></svg><h2><i>E</i>Contorno</h2><p>A atual em traço, só com a vértebra certa preenchida em dourado. Mais leve e editorial.</p>
+      <div class="peq"><svg width="64" height="64"><use href="#cont-c"/></svg><svg width="32" height="32"><use href="#cont-c"/></svg><svg width="16" height="16"><use href="#cont-c"/></svg></div>
+      <div class="esc2"><svg width="64" height="64"><use href="#cont-e"/></svg><svg width="32" height="32"><use href="#cont-e"/></svg><svg width="16" height="16"><use href="#cont-e"/></svg></div>
+      <div class="wm"><svg><use href="#cont-c"/></svg><b>Orto</b><span>Questões</span></div></div>
+  </div>
+</section>
+
+<script>
+const TEMAS = {
+  c: { fundo: '#14655e', borda: null, osso: '#95bab7', certo: '#f4cf7c' },
+  e: { fundo: '#171e1d', borda: '#2a3432', osso: '#39776e', certo: '#e0b862' },
+}
+const POS = [[13, 9.5], [11, 21.2], [11, 32.9], [13, 44.6]]
+// Monta as quatro vértebras; a 3ª é a alternativa certa.
+const pilha = (t, forma, pos = POS) => pos.map(([x, y], i) => `<g transform="translate(${x} ${y})" fill="${i === 2 ? t.certo : t.osso}">${forma}</g>`).join('')
+const ATUAL = '<rect width="22" height="8.6" rx="3.2"/><rect x="21" y="2.6" width="5" height="3.6"/><path d="M25 1.8 L34.2 5.2 Q35.6 5.8 35 7.2 L34.4 8.4 Q33.8 9.6 32.4 9.1 L25 6.6 Z"/>'
+// Lombar: espinhoso quadrangular, horizontal, alargando para trás.
+const LOMB = '<rect y="-0.4" width="22" height="9.4" rx="3.2"/><rect x="21" y="2.6" width="5" height="3.6"/><path d="M24.6 1.4 L33 0.9 Q35.6 0.8 35.6 3.4 V6.2 Q35.6 8.6 33 8.5 L24.6 7.4 Z"/>'
+// Torácica: corpo mais quadrado, espinhoso longo inclinado para baixo.
+const TORA = '<rect x="2" y="-0.6" width="19" height="9.8" rx="2.8"/><rect x="20" y="2.4" width="5" height="3.6"/><path d="M24.2 1.4 Q26.4 0.6 27.8 2 L36.4 9.8 Q37.6 11.2 36.2 12 Q35 12.6 33.8 11.6 L24.2 6.6 Z"/>'
+function cont(t) {
+  return POS.map(([x, y], i) => {
+    const cor = i === 2 ? t.certo : t.osso
+    const f = i === 2 ? `fill="${cor}"` : `fill="none" stroke="${cor}" stroke-width="2" stroke-linejoin="round"`
+    const sx = i === 2 ? '' : '<rect x="21" y="2.6" width="5" height="3.6"/>'
+    return `<g transform="translate(${x} ${y})" ${f}><path d="M3.2 0 H18.8 Q22 0 22 3.2 V5.4 Q22 8.6 18.8 8.6 H3.2 Q0 8.6 0 5.4 V3.2 Q0 0 3.2 0 Z M22 2.6 H25 L34.2 5.2 Q35.6 5.8 35 7.2 L34.4 8.4 Q33.8 9.6 32.4 9.1 L25 6.6 H22"/></g>`
+  }).join('')
+}
+const defs = []
+for (const [k, t] of Object.entries(TEMAS)) {
+  const fundo = `<rect width="64" height="64" rx="16" fill="${t.fundo}"${t.borda ? ` stroke="${t.borda}" stroke-width="1.5"` : ''}/>`
+  defs.push(`<symbol id="atual-${k}" viewBox="0 0 64 64">${fundo}${pilha(t, ATUAL)}</symbol>`)
+  defs.push(`<symbol id="lomb-${k}" viewBox="0 0 64 64">${fundo}${pilha(t, LOMB, [[13.5, 9.4], [11.5, 21.1], [11, 32.8], [12.5, 44.5]])}</symbol>`)
+  defs.push(`<symbol id="tora-${k}" viewBox="0 0 64 64">${fundo}${pilha(t, TORA, [[11.5, 8.6], [11.5, 20.4], [11.5, 32.2], [11.5, 44]])}</symbol>`)
+  defs.push(`<symbol id="cont-${k}" viewBox="0 0 64 64">${fundo}${cont(t)}</symbol>`)
+}
+document.getElementById('defs').innerHTML = defs.join('')
+</script>
+</body></html>
