@@ -374,3 +374,28 @@
 .cr-blocos { display: grid; gap: 2px; }
 .cr-blocos span { height: 12px; background: rgba(255, 255, 255, 0.14); box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.2); }
 .cr-blocos span.cheio { background: #f4cf7c; box-shadow: inset 0 -3px 0 #c9952f; }
+
+/* ---------- Pixel art viva (temporada RPG) ----------
+   Toda arte em pixel flutua de leve e dá um pulinho ao passar o mouse ou tocar.
+   :where() deixa a especificidade em zero: animações próprias de cada tela
+   (tocha, chama, coroa) continuam valendo. O pulo usa transform e a flutuação
+   usa translate, então os dois se somam sem brigar. */
+:where(img[src*="pixel/"], img[src*="emblemas/"], img[src*="ranking/mensageiro"], img[src*="ranking/carta"], img[src*="ranking/tachinha"]) {
+  animation: pixel-flutua 2.8s steps(4, jump-none) infinite;
+  transition: transform 0.18s steps(3);
+  cursor: default;
+}
+:where(img[src*="pixel/"], img[src*="emblemas/"], img[src*="ranking/mensageiro"], img[src*="ranking/carta"], img[src*="ranking/tachinha"]):nth-of-type(2n) { animation-delay: -0.7s; }
+:where(img[src*="pixel/"], img[src*="emblemas/"], img[src*="ranking/mensageiro"], img[src*="ranking/carta"], img[src*="ranking/tachinha"]):nth-of-type(3n) { animation-delay: -1.4s; }
+:where(li, a, button, div):nth-child(2n) > :where(img[src*="pixel/"], img[src*="emblemas/"]) { animation-delay: -0.9s; }
+:where(li, a, button, div):nth-child(3n) > :where(img[src*="pixel/"], img[src*="emblemas/"]) { animation-delay: -1.8s; }
+:where(img[src*="pixel/"], img[src*="emblemas/"], img[src*="ranking/mensageiro"], img[src*="ranking/carta"], img[src*="ranking/tachinha"]):hover,
+:where(img[src*="pixel/"], img[src*="emblemas/"], img[src*="ranking/mensageiro"], img[src*="ranking/carta"], img[src*="ranking/tachinha"]):active,
+:where(a, button, label, .cartao, .atalho):hover :where(img[src*="pixel/"], img[src*="emblemas/"], img[src*="ranking/mensageiro"]),
+:where(a, button, label):active :where(img[src*="pixel/"], img[src*="emblemas/"], img[src*="ranking/mensageiro"]) {
+  transform: translateY(-5px) scale(1.06);
+}
+@keyframes pixel-flutua { 0%, 100% { translate: 0 0; } 50% { translate: 0 -3px; } }
+@media (prefers-reduced-motion: reduce) {
+  :where(img[src*="pixel/"], img[src*="emblemas/"], img[src*="ranking/mensageiro"], img[src*="ranking/carta"], img[src*="ranking/tachinha"]) { animation: none; transition: none; }
+}

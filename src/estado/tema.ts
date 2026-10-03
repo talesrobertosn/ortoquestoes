@@ -3,19 +3,22 @@ import { gravar, ler, remover } from './armazenamento'
 
 export type Tema = 'claro' | 'escuro' | 'sistema'
 
+const COR_BARRA: Record<'claro' | 'escuro', string> = { claro: '#F1F3F2', escuro: '#101615' }
+
 function aplicar(tema: Tema) {
   const raiz = document.documentElement
   if (tema === 'sistema') delete raiz.dataset.tema
   else raiz.dataset.tema = tema
+  const efetivo = tema === 'claro' ? 'claro' : 'escuro'
+  document.querySelector('meta[name="theme-color"]')?.setAttribute('content', COR_BARRA[efetivo])
 }
 
 export function usarTema() {
-  // Tema claro abre a aplicação para todas as pessoas. Preferências antigas
-  // de "sistema" passam a claro; quem escolheu escuro explicitamente mantém
-  // essa escolha.
+  // O site abre no tema escuro. Só quem escolheu o claro (em Minha conta ou
+  // no botão do cabeçalho) fica no claro, e essa escolha vale para sempre.
   const [tema, definir] = useState<Tema>(() => {
-    const salvo = ler<Tema>('tema', 'claro')
-    return salvo === 'escuro' ? 'escuro' : 'claro'
+    const salvo = ler<Tema>('tema', 'escuro')
+    return salvo === 'claro' ? 'claro' : 'escuro'
   })
 
   useEffect(() => {
