@@ -10283,19 +10283,20 @@
   "conferido": false
  },
  "trauma-1137": {
+  "incorretas": {
+   "A": "**Diáfise do fêmur.** Sua redução depende de tração, manipulação e controle de comprimento, rotação e eixo, frequentemente com haste intramedular. Isso não é a ligamentotaxia periarticular pedida aqui, pois o mecanismo não depende de ligamentos inseridos nos fragmentos diafisários.",
+   "C": "**Olécrano.** A inserção do tríceps pode deslocar o fragmento proximal, mas tracioná-lo não reproduz a redução ligamentar de uma superfície periarticular. Conforme o padrão, utilizam-se placa ou montagem de banda de tensão em fraturas simples apropriadas.",
+   "D": "**Colo do tálus.** A prioridade é restabelecer alinhamento e congruência das articulações subtalar e talonavicular, com redução fechada ou aberta e fixação conforme o desvio. A tração isolada pelos tecidos moles não controla de modo confiável o colo nem seus riscos vasculares."
+  },
+  "conceito": "**Por que a tração pode reduzir uma fratura?** Ligamentotaxia é a redução indireta obtida quando a distração tensiona ligamentos, cápsula e outros tecidos ainda presos aos fragmentos. Esses tecidos transmitem a força aos fragmentos periféricos, restaurando comprimento e parte do contorno articular sem precisar expor toda a fratura.\n\nNo planalto tibial, essa lógica é útil sobretudo em fraturas complexas de alta energia. Um fixador externo que atravessa o joelho pode recuperar provisoriamente alinhamento e comprimento enquanto o edema e a pele melhoram; em casos selecionados, a fixação circular e pequenos implantes complementares podem compor o tratamento definitivo. A redução deve ser conferida por imagem, pois alinhamento global não garante superfície articular congruente.\n\n**O limite decisivo.** Um fragmento central afundado não tem ligação capsuloligamentar capaz de puxá-lo para cima. Depressões articulares precisam de elevação direta ou indireta específica e sustentação com enxerto ou substituto e fixação, quando indicado. Portanto, ligamentotaxia ajuda a reduzir a periferia do planalto, mas não substitui a reconstrução de uma área impactada.",
+  "correta": "**Planalto tibial.** Seus fragmentos periarticulares podem acompanhar a tensão das partes moles sob distração; por isso a ligamentotaxia é recurso de redução, frequentemente associado à fixação externa.",
+  "referencias": [
+   "AO Surgery Reference. ORIF - Conventional plating for depression fracture of the proximal tibia. https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-tibia/depression-fracture/orif-conventional-plating",
+   "J Orthop Surg Res. Complex tibial plateau fractures treated by hybrid external fixation system. https://pmc.ncbi.nlm.nih.gov/articles/PMC5858210/"
+  ],
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "B",
-  "conceito": "**Ligamentotaxia.** Tração aplicada através dos tecidos moles íntegros alinha fragmentos metafisários e articulares. Usada no planalto tibial, pilão e rádio distal, com fixador externo.\n\n**Na prova:** ligamentotaxia serve para fraturas periarticulares.",
-  "correta": "**Do planalto tibial.** É indicação clássica.",
-  "incorretas": {
-   "A": "**Da diáfise do fêmur.** Na diáfise não há ligamento para tracionar fragmentos.",
-   "C": "**Do olécrano.** O olécrano é tratado com banda de tensão ou placa.",
-   "D": "**Do colo do tálus.** O colo do tálus pede redução anatômica aberta."
-  },
-  "referencias": [
-   "Ruedi e Murphy. AO Principles of fracture management. Verlag/Artmed. p. 224."
-  ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "trauma-1138": {
@@ -10331,67 +10332,72 @@
   "conferido": false
  },
  "trauma-1140": {
+  "incorretas": {
+   "A": "**Kocher-Langenbeck.** Essa via posterior dá acesso à parede e à coluna posteriores, sendo especialmente útil quando esses segmentos são o foco da fratura. Aqui a lesão dominante é da coluna anterior; uma via exclusivamente posterior não oferece o mesmo controle direto dela.",
+   "C": "**Smith-Petersen.** É uma via anterior para o quadril, empregada em problemas da cabeça e do colo femorais e em algumas abordagens acetabulares anteriores limitadas. Não substitui a exposição da coluna anterior e do rebordo pélvico exigida pela fratura descrita.",
+   "D": "**Hueter.** Também designa um acesso anterior ao quadril, frequentemente citado em artroplastia. O corredor não dá, por si, o acesso intrapélvico amplo necessário para reduzir a coluna anterior e fixar a hemitransversa posterior."
+  },
+  "conceito": "**Leia o nome da fratura como um mapa.** Na classificação de Letournel, a fratura de coluna anterior com hemitransversa posterior é um padrão associado: a linha principal separa a coluna anterior, enquanto outra linha atravessa parcialmente a região posterior. Não equivale a uma fratura isolada da parede posterior, nem a uma fratura das duas colunas em que toda a superfície articular perde a ligação com o esqueleto axial.\n\nA via cirúrgica precisa alcançar o fragmento que comanda a redução. A ilioinguinal oferece acesso à coluna anterior pelo ilíaco e pelo rebordo pélvico; por esse corredor também é possível reduzir e fixar a extensão posterior com pinças e parafusos dirigidos à coluna posterior. A sequência habitual é reconstruir a porção anterior e depois ajustar a hemitransversa. Planejamento por tomografia e radioscopia são essenciais para evitar parafusos intra-articulares e lesão vascular.\n\n**Não transforme a via em regra absoluta.** A via intrapélvica anterior modificada, conhecida como Stoppa, também pode tratar esse padrão; a escolha depende da altura dos traços, da cominuição e da experiência da equipe. Entre as alternativas históricas oferecidas, porém, a ilioinguinal é a que expõe o componente principal.",
+  "correta": "**Ilioinguinal.** Ela aborda diretamente a coluna anterior e permite controlar o componente hemitransverso posterior a partir da frente da pelve.",
+  "referencias": [
+   "AO Surgery Reference. ORIF through ilioinguinal approach for anterior column and posterior hemitransverse fractures. https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/acetabulum/anterior-column-and-posterior-hemitransverse/orif-through-ilioinguinal-approach",
+   "AO Surgery Reference. Decision making: choice of exposure. https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/acetabulum/further-reading/decision-making-choice-of-exposure"
+  ],
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "B",
-  "conceito": "**Coluna anterior com hemitransversa posterior.** O componente principal é anterior, abordado pela via ilioinguinal (ou Stoppa). Kocher-Langenbeck é para as fraturas posteriores.\n\n**Na prova:** anterior com hemitransversa posterior se opera pela ilioinguinal.",
-  "correta": "**Ilioinguinal.** Expõe toda a coluna anterior.",
-  "incorretas": {
-   "A": "**De KOCHER-LANGENBECK.** É para a parede e coluna posteriores.",
-   "C": "**De SMITH-PETERSEN.** Expõe pouco o acetábulo.",
-   "D": "**De HUETER.** É acesso anterior ao quadril para artroplastia."
-  },
-  "referencias": [
-   "Rockwood C.A. et al. Fractures. Philadelphia: Lippincott. 6ª ed., vol. 2, p. 1690."
-  ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "trauma-1141": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": "**Transtrocantérica de traço reverso.** O deslizamento do parafuso a 130 graus fica paralelo ao traço, gerando medialização da diáfise e falha. Usa-se haste cefalomedular ou placa de 95 graus.\n\n**Na prova:** traço reverso contraindica DHS de 130 graus.",
-  "correta": "**Placa-parafuso deslizante de 130°.** O deslizamento paralelo ao traço causa falha.",
   "incorretas": {
-   "B": "**Placa angulada de 95°.** É opção aceitável.",
-   "C": "**Haste intramedular céfalo-medular.** É o implante preferido.",
-   "D": "**Placa-parafuso deslizante de 95°.** O ângulo de 95 graus atravessa o traço e é aceitável."
+   "B": "**Placa angulada de 95 graus.** É dispositivo de ângulo fixo que pode estabilizar o fragmento proximal e controlar a medialização em mãos experientes. É uma opção histórica para esse padrão, ainda que a haste cefalomedular seja frequentemente preferida.",
+   "C": "**Haste cefalomedular.** A fixação intramedular é apropriada para a fratura AO/OTA 31-A3 porque oferece suporte mais central e evita a falha mecânica típica do DHS sem parede lateral. Sua utilização não dispensa redução anatômica e controle do varo.",
+   "D": "**Parafuso condilar dinâmico de 95 graus.** Se a expressão da banca se refere ao DCS de 95 graus, trata-se de montagem de ângulo fixo descrita para traços reversos, não do mesmo mecanismo de deslizamento cervical de um DHS de 130 graus. A redação mistura nomes de implantes, motivo do alerta acima."
   },
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso a questão não conta no desempenho. A alternativa A é a resposta provável pela lógica clássica do parafuso deslizante do quadril, mas a redação da alternativa D é ambígua: o parafuso condilar dinâmico de 95 graus tem comportamento de placa de ângulo fixo na fratura proximal, não deve ser confundido com o deslizamento cervical de um DHS. A escolha atual entre implantes depende também do padrão de fratura e da redução obtida.",
+  "conceito": "**O traço muda a mecânica do implante.** Na fratura transtrocantérica usual, a parede lateral e o contato entre os fragmentos podem conter o colapso permitido pelo parafuso deslizante do quadril, conhecido como DHS. Já na obliquidade reversa, classificada como AO/OTA 31-A3, o traço cruza a região trocantérica no sentido oposto e perde esse anteparo lateral. Se o parafuso desliza sem contenção, a diáfise pode migrar medialmente, o fragmento proximal lateralizar e a redução falhar.\n\nPor isso, a placa-parafuso cervical deslizante de 130 graus, desenhada para promover impactação controlada em padrões estáveis, é inadequada como solução isolada para esse traço. A haste cefalomedular coloca o implante próximo do eixo de carga e limita a medialização; é a escolha comum, desde que a redução em varo seja evitada. Placas anguladas de 95 graus e o parafuso condilar dinâmico de 95 graus são alternativas extramedulares de ângulo fixo descritas na literatura, embora mais exigentes tecnicamente e, em idosos, possam ter resultados inferiores aos da haste.\n\n**O número isolado engana.** O problema não é 130 versus 95 graus por si só, mas a direção permitida de deslizamento, a presença ou ausência de suporte lateral e a capacidade do implante de manter comprimento e alinhamento. A posição do parafuso na cabeça femoral e a qualidade da redução continuam importantes qualquer que seja a montagem.",
+  "correta": "**Placa-parafuso deslizante de 130 graus.** No traço reverso, o deslizamento do DHS sem suporte lateral favorece medialização da diáfise e perda da redução; não é a construção isolada apropriada.",
   "referencias": [
-   "Ruedi e Murphy. AO Principles of fracture management. Verlag/Artmed. p. 444"
+   "Reverse obliquity fractures of the intertrochanteric region of the femur. https://pubmed.ncbi.nlm.nih.gov/11379732/",
+   "Treatment of reverse oblique and transverse intertrochanteric fractures with use of an intramedullary nail or a 95 degrees screw-plate: a prospective, randomized study. https://pubmed.ncbi.nlm.nih.gov/11886906/",
+   "Technical pitfalls in the use of the sliding hip screw for fixation of intertrochanteric hip fractures. https://pubmed.ncbi.nlm.nih.gov/10148465/"
   ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "provavel": "A",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "trauma-1142": {
+  "incorretas": {
+   "A": "**Compartimento anterior.** Contém o nervo fibular profundo e os dorsiflexores; sua pista sensitiva mais específica é a perda no primeiro espaço interdigital, não na maior parte do dorso do pé.",
+   "C": "**Compartimento posterior superficial.** Abriga gastrocnêmio e sóleo, ligados principalmente à flexão plantar. O nervo sural contribui para a sensibilidade da margem lateral do pé, mas não é o nervo intracompartimental que explica o padrão dorsal amplo da pergunta.",
+   "D": "**Compartimento posterior profundo.** Abriga o nervo tibial, que segue para a planta do pé. Alterações plantares combinadas com dor posterior profunda apontariam mais para esse compartimento do que a perda dorsal apresentada."
+  },
+  "conceito": "**Localize o nervo, depois o compartimento.** A perna tem quatro compartimentos osteofasciais. O anterior contém os dorsiflexores e o nervo fibular profundo; o lateral abriga os músculos fibulares longo e curto, responsáveis pela eversão, e o nervo fibular superficial. Os compartimentos posteriores contêm os flexores plantares superficiais e, mais profundamente, músculos flexores, vasos tibiais posteriores e nervo tibial.\n\nO fibular superficial atravessa o compartimento lateral antes de emergir no terço distal da perna. Seus ramos sensitivos alcançam grande parte do dorso do pé, inclusive a região dorsolateral. Assim, hipoestesia dorsal associada a dor e tensão na face lateral da perna aponta para esse compartimento. O primeiro espaço entre o hálux e o segundo dedo, porém, é território do fibular profundo e sugere acometimento anterior.\n\n**Uma nuance clínica importante.** A borda mais lateral do pé também pode receber fibras do nervo sural; por isso uma área descrita apenas como dorsolateral não localiza sozinha a lesão com precisão absoluta. Síndrome compartimental é diagnóstico urgente baseado no conjunto de dor desproporcional, dor ao alongamento passivo, exame seriado e, quando necessário, pressão compartimental. Um déficit sensitivo tardio não deve ser aguardado para decidir a descompressão.",
+  "correta": "**Compartimento lateral.** Nele transita o nervo fibular superficial, cuja alteração pode reduzir a sensibilidade no dorso e na região dorsolateral do pé.",
+  "referencias": [
+   "Chronic exertional compartment syndrome of the leg. https://pmc.ncbi.nlm.nih.gov/articles/PMC2941579/",
+   "Superficial peroneal nerve: clinical implications of anatomic variability. https://pubmed.ncbi.nlm.nih.gov/16651197/"
+  ],
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "B",
-  "conceito": "**Compartimentos da perna.** O lateral contém os fibulares e o nervo fibular superficial, que inerva o dorso do pé. O anterior contém o fibular profundo (primeiro espaço).\n\n**Na prova:** dorso do pé hipoestésico sugere compartimento lateral.",
-  "correta": "**Lateral.** O fibular superficial está no compartimento lateral.",
-  "incorretas": {
-   "A": "**Anterior.** Primeiro espaço interdigital.",
-   "C": "**Posterior superficial.** Sural fica fora dos compartimentos.",
-   "D": "**Posterior profundo.** Plantar."
-  },
-  "referencias": [
-   "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., p. 433"
-  ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "trauma-1143": {
+  "incorretas": {
+   "A": "**No braço.** Pode ocorrer após traumatismo ou defeito da fáscia braquial, porém é bem menos típico. Um abaulamento nessa região exige avaliação de outras causas, inclusive massas de partes moles.",
+   "B": "**No antebraço.** Lesões da fáscia após trauma ou cirurgia podem deixar o ventre muscular protruir, mas não representam a localização habitual cobrada na questão.",
+   "C": "**Na coxa.** Hérnias musculares também são possíveis onde exista defeito fascial, inclusive na coxa; a distribuição observada na literatura, contudo, concentra-se na perna e no tibial anterior."
+  },
+  "conceito": "**O que é uma hérnia muscular?** É a protrusão focal de parte de um músculo através de uma abertura na fáscia, a camada firme que o envolve. O defeito pode surgir após trauma direto, esforço ou cirurgia, ou estar relacionado a fragilidade fascial preexistente. A saliência costuma aumentar quando o músculo contrai e diminuir em repouso, detalhe que ajuda a diferenciá-la de um tumor fixo.\n\nA perna é o local clássico, sobretudo na região anterolateral onde o músculo tibial anterior pode atravessar um defeito da sua fáscia. A queixa varia de achado indolor a dor ao exercício ou parestesia por irritação de um nervo próximo. A ultrassonografia dinâmica, feita em repouso e durante contração ou em pé, pode demonstrar a protrusão que um exame estático não mostra.\n\n**Conduta proporcional aos sintomas.** Muitas hérnias assintomáticas só exigem observação; medidas como ajuste da atividade e compressão podem ajudar nos sintomas leves. Dor persistente ou compressão nervosa pode levar à cirurgia, mas fechamento fascial sob tensão exige cautela pelo risco de aumentar a pressão compartimental. O tratamento não é decidido apenas pela presença do abaulamento.",
+  "correta": "**Na perna.** A hérnia do tibial anterior é a apresentação mais frequentemente descrita entre as hérnias musculares dos membros.",
+  "referencias": [
+   "Muscle hernias of the leg: a case report and comprehensive review of the literature. https://pubmed.ncbi.nlm.nih.gov/24497767/",
+   "Tibialis anterior muscle hernia: a case of chronic, dull pain and swelling in leg diagnosed by dynamic ultrasonography. https://pubmed.ncbi.nlm.nih.gov/28638493/"
+  ],
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "D",
-  "conceito": "**Hérnia muscular.** Mais comum na perna, em especial do tibial anterior, por defeito fascial.\n\n**Na prova:** hérnia muscular é na perna.",
-  "correta": "**Na perna.** A perna é o local mais comum.",
-  "incorretas": {
-   "A": "**No braço.** Menos comum.",
-   "B": "**No antebraço.** Menos comum.",
-   "C": "**Na coxa.** Menos comum."
-  },
-  "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 2484."
-  ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "trauma-1144": {
@@ -10411,19 +10417,21 @@
   "conferido": false
  },
  "trauma-1145": {
+  "incorretas": {
+   "A": "**Fator de necrose tumoral alfa.** É citocina pró-inflamatória relevante no início da cascata, mas sua cinética rápida e variável dificulta utilizá-la como marcador sérico global de uma amostra isolada após politrauma.",
+   "B": "**Interleucina-8.** Atua na quimiotaxia, atraindo neutrófilos ao tecido lesado, e pode estar elevada após trauma. Isso não a torna, nesta comparação clássica, o indicador sérico mais consolidado da magnitude inicial da lesão.",
+   "D": "**Proteína C-reativa.** É proteína de fase aguda produzida pelo fígado sob estímulo da IL-6. Ajuda a acompanhar inflamação, mas tende a subir mais tarde e é menos específica da gravidade logo após o acidente."
+  },
+  "conceito": "**O trauma desencadeia uma cascata inflamatória.** A destruição tecidual ativa células imunes, que liberam citocinas, proteínas de comunicação entre células. A interleucina-6, ou IL-6, sobe muito cedo após lesão importante e estimula no fígado a produção de proteínas de fase aguda, entre elas a proteína C-reativa. Em estudos de politrauma, a concentração inicial de IL-6 se correlaciona com a gravidade das lesões, medida por escores como o Injury Severity Score.\n\nEsse encadeamento explica a diferença temporal entre as opções. O fator de necrose tumoral alfa participa da resposta inicial, mas sua liberação pode ser breve e difícil de capturar por uma única dosagem. A interleucina-8 também sinaliza inflamação e recruta neutrófilos, porém não é o marcador clássico mais usado para representar a intensidade global da resposta aguda nessa pergunta. A proteína C-reativa é acessível na prática, mas sua elevação costuma vir depois da IL-6.\n\n**Marcador não é decisão isolada.** A dosagem de IL-6 pode ajudar a estudar intensidade inflamatória e risco de complicações, mas não substitui exame clínico, perfusão, controle da hemorragia, avaliação de órgãos e outros dados para decidir o momento de uma fixação definitiva. Além disso, associação com mortalidade ou disfunção orgânica não significa capacidade de prever com segurança infecção em cada paciente.",
+  "correta": "**Interleucina-6.** Sua elevação precoce e a correlação demonstrada com a gravidade do trauma explicam por que é a resposta provável para marcador sérico da fase aguda entre as opções.",
+  "referencias": [
+   "Is interleukin 6 an early marker of injury severity following major trauma in humans? https://pubmed.ncbi.nlm.nih.gov/10722030/",
+   "Serum CRP and IL-6 levels after trauma: not predictive of septic complications in 31 patients. https://pubmed.ncbi.nlm.nih.gov/9602781/",
+   "The early IL-6 and IL-10 response in trauma is correlated with injury severity and mortality. https://pubmed.ncbi.nlm.nih.gov/19317866/"
+  ],
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "C",
-  "conceito": "**Resposta inflamatória no politrauma.** A IL-6 é o marcador mais confiável da fase aguda e se correlaciona com gravidade, complicações e momento cirúrgico.\n\n**Na prova:** IL-6 mede o primeiro golpe e orienta o controle de danos.",
-  "correta": "**A interleucina-6.** É o melhor marcador.",
-  "incorretas": {
-   "A": "**O fator de necrose tumoral-α.** Meia-vida curta, menos útil.",
-   "B": "**A interleucina-8.** Menos estudado.",
-   "D": "**A proteína C-reativa.** Sobe depois, induzido pela IL-6."
-  },
-  "referencias": [
-   "Roberts C.S. - Journal of Bone & Joint Surgery. 87:434-49 2005."
-  ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "trauma-1146": {
