@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<!-- Série "Classificação em pixel art": carrossel de 7 slides (1080x1350).
+     node marketing/instagram/gerar.mjs marketing/instagram/classificacoes/01-johnson-strom/post.html · legenda em LEGENDA.md
+     Questão: pe-tornozelo-0094 (TEOT/TARO), gabarito B. -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Pixel; src: url(../../fontes/pixelify-sans-latin-700-normal.woff2) format('woff2'); font-weight: 700; }
+:root { --ouro: #f4cf7c; --ouro2: #c9952f; --couro: #1b1208; --verde: #2f9a86; --vermelho: #f07a6a; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; color: #fff; background: #0a1328; width: 1080px; height: 1350px; padding: 80px 84px; }
+section::before { content: ""; position: absolute; inset: 0; z-index: 0;
+  background: url(../../../../public/ranking/arena.png) center bottom / 100% auto no-repeat; image-rendering: pixelated; opacity: .5; }
+section::after { content: ""; position: absolute; inset: 0; z-index: 0;
+  background: linear-gradient(180deg, rgba(7, 12, 30, .97) 0%, rgba(7, 12, 30, .86) 55%, rgba(7, 12, 30, .45) 100%); }
+section > * { position: relative; z-index: 1; }
+.marca { display: flex; align-items: center; gap: 16px; font: 34px Jakarta; letter-spacing: -.02em; }
+.marca svg { width: 56px; height: 56px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; opacity: .9; }
+.topo { display: flex; justify-content: space-between; align-items: center; }
+.cont { font: 700 28px Pixel; color: rgba(255,255,255,.55); }
+.rot { display: inline-flex; align-items: center; gap: 14px; padding: 12px 24px; border: 4px solid var(--ouro); background: rgba(27, 18, 8, .6);
+  color: var(--ouro); font: 700 30px Pixel; letter-spacing: .06em; text-transform: uppercase; box-shadow: 4px 4px 0 var(--couro); }
+h1, h2 { font-family: Pixel; font-weight: 700; letter-spacing: .01em; text-shadow: 5px 5px 0 var(--couro); text-wrap: balance; }
+h1 { font-size: 104px; line-height: .96; }
+h2 { font-size: 76px; line-height: 1.02; }
+h1 em, h2 em { font-style: normal; color: var(--ouro); }
+.sub { font-size: 36px; line-height: 1.42; color: rgba(255, 255, 255, .84); text-wrap: pretty; }
+.sub b { color: #fff; } .sub em { font-style: normal; color: var(--ouro); font-weight: 700; }
+.caixa { background: rgba(14, 22, 44, .88); border: 5px solid var(--ouro); box-shadow: 8px 8px 0 var(--couro), inset 0 0 0 4px rgba(244,207,124,.18); padding: 34px 38px; }
+.dica { position: absolute; left: 84px; right: 84px; bottom: 70px; display: flex; justify-content: space-between; align-items: center; font: 700 30px Pixel; color: rgba(255,255,255,.6); }
+.dica b { color: var(--ouro); }
+/* Capa */
+.cena { position: absolute; left: 0; right: 0; bottom: 120px; display: flex; flex-direction: column; align-items: center; }
+.cena .heroi { margin-bottom: -26px; }
+/* Itens */
+.itens { display: grid; gap: 26px; margin-top: 46px; }
+.item { display: grid; grid-template-columns: 96px 1fr; gap: 28px; align-items: center; }
+.item i { display: grid; place-items: center; width: 96px; height: 96px; background: var(--couro); border: 4px solid var(--ouro); color: var(--ouro); font: 700 48px Pixel; font-style: normal; box-shadow: 5px 5px 0 #000; }
+.item p { font-size: 34px; line-height: 1.38; color: rgba(255,255,255,.86); } .item p b { color: #fff; }
+/* Fases */
+.fases { display: grid; gap: 24px; margin-top: 30px; }
+.fase { display: grid; grid-template-columns: 1fr 280px; gap: 24px; padding: 24px 30px; }
+.fase h3 { font: 700 48px Pixel; color: var(--ouro); text-shadow: 4px 4px 0 var(--couro); margin-bottom: 4px; }
+.fase h3 small { font-size: 34px; color: #fff; margin-left: 12px; }
+.fase ul { list-style: none; display: grid; gap: 6px; margin-top: 10px; }
+.fase li { font-size: 28px; line-height: 1.3; color: rgba(255,255,255,.88); padding-left: 30px; position: relative; }
+.fase li::before { content: ""; position: absolute; left: 0; top: 13px; width: 14px; height: 14px; background: var(--ouro); }
+.fase li b { color: #fff; } .fase li.chave { color: var(--ouro); font-weight: 700; } .fase li.chave::before { background: var(--vermelho); }
+.status { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; }
+.status .nome { text-align: center; font: 700 30px Pixel; color: var(--vermelho); letter-spacing: .06em; text-transform: uppercase; }
+/* Questão */
+.enunciado { font: 600 40px/1.4 Jakarta; color: #fff; }
+.prova { font: 700 28px Pixel; color: var(--ouro); margin-bottom: 18px; letter-spacing: .06em; }
+.alts { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 40px; }
+.alt { display: flex; align-items: center; gap: 26px; padding: 26px 30px; background: rgba(14,22,44,.9); border: 5px solid rgba(244,207,124,.5); box-shadow: 6px 6px 0 var(--couro); font: 700 48px Pixel; }
+.alt b { display: grid; place-items: center; width: 72px; height: 72px; background: var(--couro); color: var(--ouro); border: 4px solid var(--ouro); font-size: 40px; }
+.alt.certa { border-color: #5cc9ad; background: rgba(13, 82, 71, .92); } .alt.certa b { background: #5cc9ad; color: var(--couro); border-color: #d2fbef; }
+.alt.errada { opacity: .55; }
+.porque { margin-top: 34px; display: grid; gap: 14px; }
+.porque p { font-size: 30px; line-height: 1.38; color: rgba(255,255,255,.86); } .porque p b { color: var(--ouro); font-family: Pixel; font-size: 34px; margin-right: 8px; }
+.link { margin-top: 40px; text-align: center; }
+.link b { font: 700 64px Pixel; color: var(--ouro); text-shadow: 5px 5px 0 var(--couro); }
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/>
+<circle cx="17" cy="20" r="4.5" fill="#9cc3bd"/><rect x="26" y="16.5" width="24" height="7" rx="3.5" fill="#9cc3bd"/>
+<circle cx="17" cy="32" r="4.5" fill="#f4cf7c"/><rect x="26" y="28.5" width="24" height="7" rx="3.5" fill="#f4cf7c"/>
+<circle cx="17" cy="44" r="4.5" fill="#9cc3bd"/><rect x="26" y="40.5" width="19" height="7" rx="3.5" fill="#9cc3bd"/></symbol>
+</defs></svg>
+
+<!-- 1. Capa -->
+<section id="f1">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">1/7</span></div>
+  <p class="rot" style="margin-top:60px">Classificação em pixel art</p>
+  <h1 style="margin-top:40px">A queda do <em>Guardião do Arco</em></h1>
+  <p class="sub" style="margin-top:34px;max-width:860px">Johnson e Strom contado como uma aventura em quatro fases. Do jeito que a banca cobra.</p>
+  <div class="cena"><div class="heroi" data-sprite="heroi" data-escala="13"></div><div data-arco="1" data-escala="15"></div></div>
+  <div class="dica"><span>Pé e tornozelo</span><span>arraste <b>&gt;&gt;</b></span></div>
+</section>
+
+<!-- 2. O herói -->
+<section id="f2">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">2/7</span></div>
+  <h2 style="margin-top:60px">Conheça o herói: o <em>tibial posterior</em></h2>
+  <p class="sub" style="margin-top:26px">O tendão que passa atrás do maléolo medial e sustenta o arco do pé. Para você subir na ponta de um pé só, ele faz três coisas, nesta ordem:</p>
+  <div class="itens">
+    <div class="item"><i>1</i><p><b>Inverte o calcanhar</b>, virando a sola para dentro.</p></div>
+    <div class="item"><i>2</i><p>A inversão <b>trava o mediopé</b>, e o pé vira uma alavanca rígida.</p></div>
+    <div class="item"><i>3</i><p>Sobre essa alavanca, a <b>panturrilha</b> levanta o corpo.</p></div>
+  </div>
+  <p class="sub" style="margin-top:44px">Quando o tendão degenera, o arco cai: é o <em>pé plano adquirido do adulto</em>. A classificação conta essa queda.</p>
+  <div class="dica"><span>Johnson e Strom</span><span>arraste <b>&gt;&gt;</b></span></div>
+</section>
+
+<!-- 3. Fases I e II -->
+<section id="f3">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">3/7</span></div>
+  <h2 style="margin-top:40px">Fases <em>I e II</em></h2>
+  <div class="fases">
+    <div class="fase caixa">
+      <div><h3>Fase I <small>ferido</small></h3>
+        <ul><li><b>Tenossinovite</b>: tendão inflamado, comprimento normal</li><li><b>Sem deformidade</b></li><li class="chave">Ainda sobe na ponta de um pé só (com dor)</li><li>Tratamento conservador</li></ul></div>
+      <div class="status"><div data-vida="3" data-escala="7"></div><div data-arco="0.95" data-escala="6"></div><span class="nome">arco firme</span></div>
+    </div>
+    <div class="fase caixa">
+      <div><h3>Fase II <small>enfraquecido</small></h3>
+        <ul><li>Tendão <b>alongado</b> e insuficiente</li><li>Pé plano valgo <b>flexível</b> (corrige com a mão)</li><li class="chave">Não sobe mais na ponta de um pé só</li><li>Transferir o flexor longo dos dedos + osteotomia do calcâneo</li></ul></div>
+      <div class="status"><div data-vida="2" data-escala="7"></div><div data-arco="0.5" data-escala="6"></div><span class="nome">arco cedendo</span></div>
+    </div>
+  </div>
+  <div style="display:flex;justify-content:center;margin-top:44px"><div data-sprite="heroi" data-escala="8"></div></div>
+  <div class="dica"><span>Johnson e Strom</span><span>arraste <b>&gt;&gt;</b></span></div>
+</section>
+
+<!-- 4. Fases III e IV -->
+<section id="f4">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">4/7</span></div>
+  <h2 style="margin-top:40px">Fases <em>III e IV</em></h2>
+  <div class="fases">
+    <div class="fase caixa">
+      <div><h3>Fase III <small>petrificado</small></h3>
+        <ul><li>Pé plano valgo <b>rígido</b></li><li class="chave">Não corrige com a mão</li><li>Tratamento: artrodese tríplice</li></ul></div>
+      <div class="status"><div data-vida="1" data-escala="7"></div><div data-arco="0.15" data-escala="6"></div><span class="nome">arco no chão</span></div>
+    </div>
+    <div class="fase caixa">
+      <div><h3>Fase IV <small>caído</small></h3>
+        <ul><li>Fase acrescentada por <b>Myerson</b></li><li>O ligamento <b>deltoide</b> falha</li><li class="chave">O tornozelo também entra em valgo</li><li>Corrigir o tornozelo junto com o retropé</li></ul></div>
+      <div class="status"><div data-vida="0.5" data-escala="7"></div><div data-arco="0" data-escala="6"></div><span class="nome">tornozelo tomba</span></div>
+    </div>
+  </div>
+  <div class="caixa" style="margin-top:24px;padding:18px 30px;text-align:center"><p style="font:700 40px Pixel;color:var(--ouro)">I dói · II cede · III trava · IV tomba</p></div>
+  <div style="display:flex;justify-content:center;margin-top:30px"><div data-sprite="heroi" data-escala="8"></div></div>
+  <div class="dica"><span>Johnson e Strom</span><span>agora a questão <b>&gt;&gt;</b></span></div>
+</section>
+
+<!-- 5. A questão -->
+<section id="f5">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">5/7</span></div>
+  <p class="rot" style="margin-top:56px">Chefão final: a questão</p>
+  <div class="caixa" style="margin-top:44px">
+    <p class="prova">TEOT/TARO · PÉ E TORNOZELO</p>
+    <p class="enunciado">Na classificação de Johnson e Strom, a incapacidade de realizar a elevação do calcanhar em apoio monopodálico surge no estágio:</p>
+  </div>
+  <div class="alts"><div class="alt"><b>A</b>I</div><div class="alt"><b>B</b>II</div><div class="alt"><b>C</b>III</div><div class="alt"><b>D</b>IV</div></div>
+  <p class="sub" style="margin-top:40px;text-align:center">Crave a letra nos comentários <b>antes</b> de arrastar.</p>
+  <div style="display:flex;justify-content:center;margin-top:16px"><div data-sprite="heroi" data-escala="6"></div></div>
+  <div class="dica"><span>Questão de prova</span><span>resposta <b>&gt;&gt;</b></span></div>
+</section>
+
+<!-- 6. Resposta -->
+<section id="f6">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">6/7</span></div>
+  <h2 style="margin-top:56px">Resposta: <em>B, estágio II</em></h2>
+  <div class="alts" style="margin-top:36px"><div class="alt errada"><b>A</b>I</div><div class="alt certa"><b>B</b>II</div><div class="alt errada"><b>C</b>III</div><div class="alt errada"><b>D</b>IV</div></div>
+  <div class="caixa porque">
+    <p><b>Por que II:</b>o tendão alongado não inverte nem trava o retropé. Sem a alavanca rígida, a panturrilha não levanta o corpo. É aqui que esse sinal <i>surge</i>.</p>
+    <p><b>A:</b>na fase I o paciente ainda sobe, só que com dor.</p>
+    <p><b>C:</b>na fase III ele também não sobe, mas a perda já vinha da II. O que a III acrescenta é a rigidez.</p>
+    <p><b>D:</b>a IV acrescenta o valgo do tornozelo.</p>
+  </div>
+  <div class="dica"><span>Pegadinha: "surge" pede a primeira fase</span><span><b>&gt;&gt;</b></span></div>
+</section>
+
+<!-- 7. Chamada -->
+<section id="f7">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">7/7</span></div>
+  <h2 style="margin-top:70px">Acertou? <em>+XP</em> para você.</h2>
+  <p class="sub" style="margin-top:30px">No Orto Questões, toda questão das provas vem comentada: a certa e cada uma das erradas, como neste post. Treine por tema, revise o que errou e suba no ranking.</p>
+  <div class="link"><b>ortoquestoes.com.br</b></div>
+  <p class="sub" style="margin-top:30px;text-align:center">Salve para revisar e marque quem vai encarar o TEOT com você.</p>
+  <div class="cena" style="bottom:90px"><div class="heroi" data-sprite="heroi" data-escala="9"></div><div data-arco="1" data-escala="11"></div></div>
+</section>
+
+<script src="../sprites.js"></script>
+</body></html>

@@ -155,3 +155,12 @@ node marketing/instagram/gerar.mjs marketing/instagram/resumos/01-supracondilian
 
 - **01 Supracondiliana do úmero na criança** (pronto): Gartland, raio X, nervos (pedra, papel,
   tesoura e OK), mão sem pulso, complicações e chamada para treinar.
+
+## Classificação em pixel art (feed, 1080×1350)
+
+Carrosséis no visual da arena do ranking, com um herói medieval em pixel art: a classificação
+contada como as fases de uma aventura (vida em corações, o arco do pé como ponte de pedra),
+seguida de uma questão de prova ("chefão final") e da resposta com o porquê das erradas. Os
+sprites estão em `classificacoes/sprites.js` (mapas de caracteres, sem imagem externa).
+
+- **01 Johnson e Strom** (pronto): disfunção do tibial posterior, questão `pe-tornozelo-0094`.
