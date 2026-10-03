@@ -17,8 +17,7 @@
     <meta name="author" content="Tales" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <link rel="canonical" href="https://ortoquestoes.com.br/" />
-    <meta name="theme-color" content="#F1F3F2" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#101615" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#101615" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:site_name" content="Orto Questões" />
@@ -62,12 +61,15 @@
     <meta name="apple-mobile-web-app-title" content="Orto Questões" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <script>
-      // Aplica o tema antes da primeira pintura, para não haver piscada de tema claro.
+      // Aplica o tema antes da primeira pintura, para não haver piscada.
+      // O padrão é o escuro; só fica claro quem escolheu o claro.
       (function () {
         try {
           // O app grava o tema em JSON ("escuro", com aspas); aceita os dois formatos.
           var t = (localStorage.getItem('ortoquestoes:tema') || '').replace(/"/g, '')
-          document.documentElement.dataset.tema = t === 'escuro' ? 'escuro' : 'claro'
+          var claro = t === 'claro'
+          document.documentElement.dataset.tema = claro ? 'claro' : 'escuro'
+          if (claro) document.querySelector('meta[name="theme-color"]').setAttribute('content', '#F1F3F2')
         } catch (e) {}
         // O índice de questões começa a descer junto com o código, e não só
         // depois dele: no celular isso tira uma volta inteira da rede.
