@@ -196,8 +196,9 @@ export function App() {
           </ErroDePagina>
         </div>
       </main>
-      {/* Durante a sessão, nada abaixo da questão: foco no estudo. */}
-      {primeiro !== 'sessao' && <Rodape />}
+      {/* Modo foco: respondendo (sessão ou questão avulsa) nada abaixo da
+          questão; o painel do administrador é ferramenta, sem rodapé do site. */}
+      {!['sessao', 'questao', 'admin'].includes(primeiro ?? '') && <Rodape comInstagram={!primeiro || primeiro === 'projeto' || primeiro === 'sobre'} />}
       <ConviteDiario caminho={rota.caminho} />
     </div>
   )

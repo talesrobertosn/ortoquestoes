@@ -26,18 +26,20 @@ const PROJETO = [
   ['/condicoes-assinatura', 'Condições da assinatura'],
 ] as const
 
-export function Rodape() {
+/** comInstagram: o convite grande do Instagram só aparece na página inicial e na
+ * do projeto; nas outras fica só o link discreto da coluna. */
+export function Rodape({ comInstagram = false }: { comInstagram?: boolean }) {
   return (
     <footer className="rodape nao-imprime">
       <div className="conteudo">
-        <a className="rodape-insta" href={SITE.instagram} target="_blank" rel="noopener noreferrer me">
+        {comInstagram && <a className="rodape-insta" href={SITE.instagram} target="_blank" rel="noopener noreferrer me">
           <span className="rodape-insta__icone" aria-hidden="true"><Icone nome="instagram" tamanho={28} /></span>
           <span className="rodape-insta__texto">
             <strong>Siga @{SITE.instagramUsuario} no Instagram</strong>
             <span>Questão comentada, macetes de prova, acervo novo e os bastidores do projeto.</span>
           </span>
           <span className="rodape-insta__botao">Seguir <Icone nome="direita" tamanho={16} /></span>
-        </a>
+        </a>}
 
         <div className="rodape-grade">
           <div className="rodape-marca">

@@ -7,12 +7,10 @@ import { href, navegar } from '../util/rotas'
 import { Carregando, Estado } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
 import { ModalEntrar } from '../componentes/ModalEntrar'
-import { CartaoStreak } from '../componentes/CartaoStreak'
 import { VitrineAssinante } from '../componentes/VitrineAssinante'
-import { CaixasAssinante } from '../componentes/CaixasAssinante'
+import { CaixasAssinante, usarCronogramaHoje } from '../componentes/CaixasAssinante'
 import { ConviteLimiteDoDia } from '../componentes/LimiteRespostas'
 import { CartaoCompartilhar } from '../componentes/CartaoCompartilhar'
-import { IconePixel } from '../componentes/IconePixel'
 import { CartaoPlanos } from '../componentes/CartaoPlanos'
 import { type ResumoHistorico, usarSessao } from '../estado/sessao'
 import { usarArmazenado } from '../estado/usarArmazenado'
@@ -25,9 +23,6 @@ import { planoRevisao } from '../estado/planoRevisao'
 import { usarRitmoRevisao } from '../estado/preferencias'
 import { calcularStreak } from '../estado/streak'
 import { FUSO_DIA, chaveDia } from '../estado/limiteDiario'
-import { usarConquistas } from '../estado/usarConquistas'
-import { recurso } from '../config'
-import '@fontsource/pixelify-sans/latin-700.css'
 import '../estilos/paginas/Inicio.css'
 
 // A maior parte do acervo ainda não distingue TEOT de TARO (prova genérica
@@ -77,7 +72,7 @@ export function Inicio() {
   const { indice, carregando } = usarIndice()
   const { iniciar } = usarSessao()
   const { sessao: conta } = usarConta()
-  const { conquistadas, total: totalConquistas, streak: sequenciaViva } = usarConquistas()
+  const cronograma = usarCronogramaHoje()
   // Sem conta, as questões ficam fechadas (ver config.ts): o botão principal leva ao cadastro.
   const pedeConta = EXIGIR_CONTA_PARA_QUESTOES && contasDisponiveis && !conta
   const [sessao] = usarArmazenado<EstadoSessao | null>(CHAVE_SESSAO, null)
@@ -178,6 +173,8 @@ export function Inicio() {
     }
     return mapa
   }, [indice, contexto.respondidas])
+  // Com cronograma e meta ainda por fazer, a meta de hoje é a ação principal do topo.
+  const metaHoje = cronograma.calculo && !cronograma.calculo.provaPassou && !cronograma.calculo.naRetaFinal && cronograma.calculo.hoje && cronograma.calculo.faltaHoje ? cronograma.calculo : null
   const titulo = nome ? cabecalhoDoDia.comNome(`${conta?.user.user_metadata?.situacao === 'ortopedista' ? 'Dr. ' : ''}${nome}`) : cabecalhoDoDia.semNome
 
   return (
@@ -201,7 +198,9 @@ export function Inicio() {
             </p>
           )}
           <h1>{titulo}</h1>
-          <p className="inicio-heroi__sub">{cabecalhoDoDia.incentivo}</p>
+          <p className="inicio-heroi__sub">{metaHoje
+            ? <>Faltam <strong>{metaHoje.diasAteProva} dias</strong> para a prova. Meta de hoje: <strong>{metaHoje.feitasHoje} de {metaHoje.metaDiaria}</strong> questões de <strong>{metaHoje.hoje?.nome}</strong>{metaHoje.hoje?.focos[0] ? `, começando por ${metaHoje.hoje.focos[0].toLowerCase()}` : ''}.</>
+            : cabecalhoDoDia.incentivo}</p>
           {indice && contagens && indice.total > 0 && (
             <div className="inicio-heroi__acoes">
               {pedeConta ? (
@@ -211,6 +210,10 @@ export function Inicio() {
               ) : sessaoEmAndamento ? (
                 <a className="botao botao--claro botao--grande" href={href('/sessao')}>
                   <Icone nome="raio" tamanho={18} /> Continuar sessão · {Object.keys(sessao!.respostas).length}/{sessao!.ids.length}
+                </a>
+              ) : metaHoje ? (
+                <a className="botao botao--claro botao--grande" href={href('/cronograma')}>
+                  <Icone nome="rota" tamanho={18} /> Começar a meta de hoje
                 </a>
               ) : (
                 <button type="button" className="botao botao--claro botao--grande" onClick={() => treinoRapido(10)} disabled={contagens.total < 10}>
@@ -274,48 +277,8 @@ export function Inicio() {
 
       {indice && contagens && indice.total > 0 && (
         <>
-          <section className="inicio-ranking" aria-label="Ranking e conquistas">
-            <img className="inicio-ranking__coroa" src={recurso('emblemas/podio-1.png')} alt="" width={72} height={72} />
-            <div className="inicio-ranking__texto">
-              <p className="inicio-ranking__selo">Ranking e conquistas</p>
-              <h2>{conta ? 'Suba no ranking e destrave emblemas' : 'Entre no ranking de quem mais estuda'}</h2>
-              <p>{conta
-                ? <>Você tem <b>{conquistadas}</b> de {totalConquistas} conquistas{sequenciaViva.atual >= 3 ? <> · <b>{sequenciaViva.atual} dias</b> seguidos</> : ''}. Exiba três no seu nome.</>
-                : 'Cada questão respondida conta pontos, destrava emblemas e acende a sua fogueira de dias seguidos.'}</p>
-            </div>
-            <div className="inicio-ranking__acoes">
-              <a className="botao botao--ouro" href={href('/ranking')}>Ver ranking</a>
-              <a className="botao inicio-ranking__secundario" href={href('/conquistas')}>Minhas conquistas</a>
-            </div>
-          </section>
-
-          <nav className="inicio-atalhos" aria-label="Atalhos">
-            <a className="inicio-atalho" href={href('/treinar')}>
-              <span className="inicio-atalho__icone inicio-atalho__icone--pixel"><IconePixel nome="treinar" tamanho={44} /></span>
-              <span className="inicio-atalho__titulo">Treinar</span>
-              <span className="inicio-atalho__nota">Por tema, prova ou dificuldade</span>
-            </a>
-            <a className="inicio-atalho" href={href('/revisao')}>
-              <span className="inicio-atalho__icone inicio-atalho__icone--pixel"><IconePixel nome="revisao" tamanho={44} /></span>
-              <span className="inicio-atalho__titulo">Revisão {revisarHoje > 0 && <span className="acao-rapida__contador">{revisarHoje}</span>}</span>
-              <span className="inicio-atalho__nota">O que vence hoje e nos próximos dias</span>
-            </a>
-            <a className="inicio-atalho" href={href('/dados')}>
-              <span className="inicio-atalho__icone inicio-atalho__icone--pixel"><IconePixel nome="desempenho" tamanho={44} /></span>
-              <span className="inicio-atalho__titulo">Desempenho</span>
-              <span className="inicio-atalho__nota">Sua evolução por tema e por prova</span>
-            </a>
-            <a className="inicio-atalho inicio-atalho--ouro" href={href('/ranking')}>
-              <span className="inicio-atalho__icone inicio-atalho__icone--pixel"><IconePixel nome="ranking" tamanho={44} /></span>
-              <span className="inicio-atalho__titulo">Ranking</span>
-              <span className="inicio-atalho__nota">{conta ? 'Sua posição e seus emblemas' : 'Quem mais estuda por aqui'}</span>
-            </a>
-          </nav>
-          <CartaoPlanos />
-
           <div className="inicio-grade">
             <section className="inicio-hoje" aria-labelledby="inicio-hoje-titulo">
-              <p className="meta">SUA ROTINA DE ESTUDO</p>
               <h2 id="inicio-hoje-titulo">Seu estudo de hoje</h2>
               {Object.keys(contexto.respondidas).length > 0 || conta ? <>
               <p className="inicio-hoje__intro">{textoDoDia.explicacao}</p>
@@ -345,8 +308,8 @@ export function Inicio() {
             {temaFragil && (() => {
               const acerto = Math.round((temaFragil[1].acertos / temaFragil[1].tentativas) * 100)
               return <section className="inicio-foco" aria-labelledby="inicio-foco-titulo">
-                <p className="meta">SUA MAIOR PORCENTAGEM DE ERRO</p>
-                <h2 id="inicio-foco-titulo">{temaFragil[0]}</h2>
+                <h2 id="inicio-foco-titulo">Onde você mais erra</h2>
+                <p className="inicio-foco__tema">{temaFragil[0]}</p>
                 <div className="inicio-foco__medida">
                   <span className="inicio-foco__valor numerico">{100 - acerto}%</span>
                   <span className="inicio-foco__rotulo">de erro neste tema ({acerto}% de acerto)</span>
@@ -363,15 +326,13 @@ export function Inicio() {
             })()}
           </div>
 
-          <CaixasAssinante />
           <ConviteLimiteDoDia />
-
+          <CaixasAssinante cronograma={cronograma} />
+          <CartaoPlanos />
           <VitrineAssinante />
 
           <div className="inicio-grade">
-            <CartaoStreak />
             {Object.keys(contexto.respondidas).length > 0 && <section className="inicio-semana" aria-labelledby="inicio-semana-titulo">
-              <p className="meta">SUA SEMANA</p>
               <h2 id="inicio-semana-titulo">{semana.total > 0 ? `${semana.total.toLocaleString('pt-BR')} ${semana.total === 1 ? 'questão' : 'questões'} em 7 dias` : 'Nenhuma questão nos últimos 7 dias'}</h2>
               <dl className="inicio-semana__numeros">
                 <div><dt>Dias ativos</dt><dd className="numerico">{semana.diasAtivos} de 7</dd></div>
@@ -388,6 +349,28 @@ export function Inicio() {
                 ))}
               </ol>
             </section>}
+              {historico.length > 0 && (
+              <section className="inicio-bloco inicio-bloco--sessoes">
+                <h2>Suas últimas sessões</h2>
+                <ol className="inicio-sessoes">
+                  {historico.slice(0, 3).map((h) => {
+                    const acerto = h.respondidas > 0 ? Math.round((h.acertos / h.respondidas) * 100) : null
+                    return (
+                      <li key={h.id} className="inicio-sessao">
+                        <span className="inicio-sessao__quando">{quandoFoi(h.concluidaEm)}</span>
+                        <span className="inicio-sessao__nome">
+                          <strong>{h.descricao}</strong>
+                          <small>{h.respondidas} de {h.total} {h.total === 1 ? 'questão' : 'questões'}</small>
+                        </span>
+                        <span className={`inicio-sessao__acerto inicio-sessao__acerto--${acerto === null ? 'vazio' : acerto >= 70 ? 'bom' : acerto >= 50 ? 'medio' : 'baixo'}`}>
+                          {acerto === null ? '—' : `${acerto}%`}
+                        </span>
+                      </li>
+                    )
+                  })}
+                </ol>
+              </section>
+            )}
           </div>
 
           <section className="inicio-bloco">
@@ -415,29 +398,6 @@ export function Inicio() {
                 })}
             </ul>
           </section>
-
-          {historico.length > 0 && (
-            <section className="inicio-bloco">
-              <h2>Suas últimas sessões</h2>
-              <ol className="inicio-sessoes">
-                {historico.slice(0, 5).map((h) => {
-                  const acerto = h.respondidas > 0 ? Math.round((h.acertos / h.respondidas) * 100) : null
-                  return (
-                    <li key={h.id} className="inicio-sessao">
-                      <span className="inicio-sessao__quando">{quandoFoi(h.concluidaEm)}</span>
-                      <span className="inicio-sessao__nome">
-                        <strong>{h.descricao}</strong>
-                        <small>{h.respondidas} de {h.total} {h.total === 1 ? 'questão' : 'questões'}</small>
-                      </span>
-                      <span className={`inicio-sessao__acerto inicio-sessao__acerto--${acerto === null ? 'vazio' : acerto >= 70 ? 'bom' : acerto >= 50 ? 'medio' : 'baixo'}`}>
-                        {acerto === null ? '—' : `${acerto}%`}
-                      </span>
-                    </li>
-                  )
-                })}
-              </ol>
-            </section>
-          )}
 
           <div className="inicio-grade inicio-grade--rodape">
             <CartaoCompartilhar />

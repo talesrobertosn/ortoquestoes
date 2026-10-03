@@ -50,7 +50,7 @@
 .ce-item__enunciado { margin: 0 0 .9rem; line-height: 1.6; white-space: pre-line; }
 .ce-item__enunciado--curto { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 .ce-item__respostas { display: grid; gap: .5rem; margin-bottom: .9rem; }
-.ce-resp { display: flex; gap: .7rem; align-items: flex-start; margin: 0; padding: .65rem .8rem; border-radius: 12px; line-height: 1.45; }
+.ce-resp { display: flex; gap: .7rem; align-items: flex-start; margin: 0; padding: .65rem .8rem; border-radius: var(--raio-controle); line-height: 1.45; }
 .ce-resp small { display: block; font-size: .72rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; opacity: .75; margin-bottom: .1rem; }
 .ce-resp__letra {
   flex: 0 0 auto; display: inline-grid; place-items: center; width: 1.9rem; height: 1.9rem; border-radius: 50%;
@@ -60,10 +60,10 @@
 .ce-resp--sua .ce-resp__letra { background: var(--erro, #c2410c); }
 .ce-resp--certa { background: color-mix(in srgb, var(--acerto, #15803d) 9%, transparent); border: 1px solid color-mix(in srgb, var(--acerto, #15803d) 28%, transparent); }
 .ce-resp--certa .ce-resp__letra { background: var(--acerto, #15803d); }
-.ce-item__nota { margin: 0 0 .9rem; padding: .65rem .85rem; border-radius: 12px; background: var(--ouro-veu); border-left: 3px solid var(--ouro); }
+.ce-item__nota { margin: 0 0 .9rem; padding: .65rem .85rem; border-radius: var(--raio-controle); background: var(--ouro-veu); border-left: 3px solid var(--ouro); }
 .ce-item__nota small { font-weight: 700; font-size: .72rem; letter-spacing: .04em; text-transform: uppercase; color: var(--ouro); }
 .ce-item__nota p { margin: .15rem 0 0; white-space: pre-line; }
-.ce-item__porque { margin: 0 0 1rem; padding: 1rem 1.1rem; border-radius: 14px; background: var(--verdete-veu); }
+.ce-item__porque { margin: 0 0 1rem; padding: 1rem 1.1rem; border-radius: var(--raio-cartao); background: var(--verdete-veu); }
 .ce-item__porque .meta { margin: .8rem 0 .3rem; color: var(--verdete); font-weight: 700; letter-spacing: .06em; }
 .ce-item__porque .meta:first-child { margin-top: 0; }
 .ce-item__acoes { display: flex; gap: .5rem; justify-content: flex-end; flex-wrap: wrap; }
