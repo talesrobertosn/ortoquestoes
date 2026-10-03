@@ -4478,91 +4478,91 @@
   "conferido": false
  },
  "mao-0452": {
-  "conceito": "### Aparelho ungueal\n| Estrutura | Função |\n|---|---|\n| ==matriz germinativa== (proximal, sob a prega) | ==produz a lâmina== (cerca de 90%) |\n| matriz estéril (leito, distal) | adere a lâmina, acrescenta espessura |\n| eponíquio, paroníquio | pregas |\n| lúnula | limite distal da germinativa |\n\n### Crescimento\n- Cerca de ==0,1 mm/dia== (3 mm/mês); unha nova em 4 a 6 meses.\n- Após trauma: ==parada de cerca de 3 semanas==, depois crescimento acelerado.\n\n### Lesões\n| Lesão | Consequência |\n|---|---|\n| matriz estéril | aderência ruim, unha irregular (cresce) |\n| matriz germinativa | ausência ou unha dividida: reparo meticuloso, enxerto |\n\n### Conduta\n- Hematoma subungueal extenso com fratura: considerar remover a lâmina e reparar o leito (fio 7-0 absorvível).\n- Recolocar a lâmina (ou substituto) sob a prega para manter o espaço.\n\n> **Na prova:** preservada a porção proximal, a unha ==cresce normalmente==.",
-  "correta": "**Porção proximal preservada, crescimento normal.**\n- A germinativa proximal produz a lâmina.\n- Lesão da estéril deixa unha irregular, mas que cresce.",
   "incorretas": {
-   "A": "**Ritmo errado.**\n- Cerca de 0,1 mm/dia.",
-   "B": "**Não garante.**\n- Irregularidades são frequentes.",
-   "D": "**Padrão errado.**\n- Parada de cerca de 3 semanas."
+   "A": "O crescimento fisiológico é de cerca de 0,1 mm por dia, não 0,5 mm.",
+   "B": "Mesmo bem reparada, a unha pode ficar irregular, descolada ou com cicatriz; o reparo não garante a ausência de deformidade.",
+   "D": "A parada após o reparo dura cerca de 3 semanas, não 6."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A unha é produzida pelo **aparelho ungueal**, e cada parte tem uma função diferente. A **matriz germinativa**, proximal e escondida sob a prega (eponíquio), fabrica cerca de **90% da lâmina**; o limite distal dela é a **lúnula**, a meia-lua branca. A **matriz estéril** forma o leito, mais distal, e serve para a lâmina **aderir** e ganhar um pouco de espessura.\n\n**O ritmo de crescimento**: cerca de **0,1 mm por dia** (perto de 3 mm por mês). Uma unha nova leva **4 a 6 meses** para crescer por inteiro. Depois de um trauma ou de um reparo, há uma **parada de cerca de 3 semanas**, e só então o crescimento recomeça, às vezes acelerado.\n\n**O que cada lesão deixa**:\n\n**matriz estéril (distal)**: a lâmina continua a crescer, mas pode descolar ou ficar irregular;\n\n**matriz germinativa (proximal)**: a unha pode não crescer ou crescer dividida, por isso o reparo precisa ser meticuloso, às vezes com enxerto de matriz.\n\nAssim, se a parte **proximal foi preservada** e só o leito distal foi reparado, a fábrica da unha está intacta e o crescimento segue **normal**. Mesmo com reparo cuidadoso (fio absorvível 7-0, lâmina recolocada sob a prega para manter o espaço), **não há garantia** de unha perfeita.\n\n**Na prova**: matriz germinativa proximal preservada = a unha **cresce normalmente**.",
+  "correta": "A matriz germinativa, proximal, produz a lâmina; preservada essa parte, o reparo do leito distal não impede o crescimento normal da unha.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0453": {
-  "conceito": "### Anastomoses entre mediano e ulnar\n| Anastomose | Local | Sentido | Frequência |\n|---|---|---|---|\n| ==Martin-Gruber== | ==antebraço== (proximal/médio) | ==mediano (ou NIA) → ulnar== | cerca de 15 a 30% |\n| Marinacci | antebraço | ulnar → mediano | rara |\n| Riche-Cannieu | palma (ramo profundo do ulnar e ramo recorrente do mediano) | ulnar ↔ mediano | frequente |\n| Berrettini | palma, ramos sensitivos digitais | | frequente |\n\n### Consequências de Martin-Gruber\n- ENMG: achados paradoxais, pode simular ==bloqueio de condução== do ulnar no antebraço.\n- Lesão alta do ulnar pode ==poupar intrínsecos==.\n- Túnel do carpo com Martin-Gruber: atrofia de primeiro interósseo e adutor pode aparecer.\n\n### Subtipos\n| Tipo | Frequência | Destino das fibras (mediano → ulnar) |\n|---|---|---|\n| ==I== | ==cerca de 60%== | músculos habitualmente do ==mediano== (tenar) |\n| II | cerca de 35% | músculos habitualmente do ulnar (1º interósseo dorsal) |\n| III | raro | adutor do polegar |\n\n> **Na prova:** Martin-Gruber tipo I = ==60%, fibras do mediano para a musculatura do mediano==",
-  "correta": "**Tipo I, 60%.**\n- Fibras do mediano seguem com o ulnar e voltam à musculatura do mediano.\n- Anastomose motora; engana a ENMG.",
   "incorretas": {
-   "A": "**Sentido invertido.**\n- Ulnar para mediano é Riche-Cannieu.",
-   "B": "**Motora.**\n- Não é sensitiva.",
-   "D": "**Sentido invertido.**\n- As fibras saem do mediano."
+   "A": "Na Martin-Gruber as fibras saem do mediano para o ulnar; fibras do ulnar seguindo com o mediano descrevem a anastomose inversa (Marinacci).",
+   "B": "A Martin-Gruber é motora; a anastomose sensitiva entre os ramos digitais é a de Berrettini.",
+   "D": "No tipo II as fibras também saem do mediano, não do ulnar, e ele corresponde a cerca de 35% dos casos."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **anastomose de Martin-Gruber** é uma comunicação **motora no antebraço** em que fibras do **nervo mediano** (muitas vezes pelo interósseo anterior) passam para o **nervo ulnar**. Aparece em cerca de 15 a 30% das pessoas. O sentido é o detalhe mais cobrado: **mediano para ulnar**.\n\n**Os subtipos**, pelo destino das fibras que viajam no ulnar:\n\n**tipo I (cerca de 60%)**: as fibras voltam para os músculos que normalmente são do **mediano** (tenares);\n\n**tipo II (cerca de 35%)**: as fibras inervam músculos normalmente do **ulnar** (como o primeiro interósseo dorsal);\n\n**tipo III (raro)**: as fibras vão para o adutor do polegar.\n\n**As outras anastomoses**, para não confundir: **Marinacci** é a inversa no antebraço (**ulnar para mediano**) e é rara; **Riche-Cannieu** é na **palma**, entre o ramo profundo do ulnar e o ramo recorrente do mediano; **Berrettini** é **sensitiva**, entre ramos digitais na palma.\n\n**Por que importa**: a eletroneuromiografia pode mostrar achados paradoxais e simular **bloqueio de condução** do ulnar no antebraço; uma lesão alta do ulnar pode **poupar intrínsecos**; e, no túnel do carpo, pode surgir atrofia de músculos que pareceriam do ulnar.\n\n**Na prova**: Martin-Gruber tipo I = **60%**, fibras do mediano que seguem com o ulnar para a **musculatura do mediano**.",
+  "correta": "O tipo I, cerca de 60% dos casos, leva fibras do mediano junto com o ulnar de volta à musculatura habitualmente inervada pelo mediano.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0454": {
-  "conceito": "### Posição da artrodese do punho\n- ==10 a 20° de extensão==, ==alinhado com o 3º metacarpo== (eixo central), leve desvio ulnar aceitável.\n- A extensão coloca os flexores em comprimento favorável: **maior força de preensão**.\n\n### Artrodese bilateral\n- Um punho em extensão (preensão); o outro mais **neutro ou em leve flexão** (higiene íntima, alcançar o corpo).\n\n### Técnica\n- Placa dorsal de compressão do rádio ao **3º metacarpo** (com a angulação de extensão incorporada), enxerto.\n- Incluir ou não a 3ª carpometacarpiana (tendência a não incluir).\n\n### Indicações\n- Artrose pancarpal, AR, sequelas de infecção, paralisias (espásticas), falha de artrodeses parciais.\n\n### Alternativas\n- Artroplastia total do punho (baixa demanda), artrodeses parciais, denervação.\n\n### Fixação intramedular na AR\n| Técnica | Via |\n|---|---|\n| Clayton (Millender-Nalebuff) | pino pelo ==3º metacarpo== (ou 2º-3º espaço) até o rádio |\n| ==alternativa retrógrada== | através do carpo, saída pelo ==2º espaço intermetacarpal==: leve desvio ulnar |\n| Mannerfelt | pino + grampo |\n\n- Adequada ao osso osteoporótico e pele fina (placa dorsal arrisca deiscência).\n- Pseudartrose da 3ª CMC: pino migra ==distalmente==.\n- Bilateral: um punho mais perto do neutro (higiene).\n\n> **Na prova:** pino retrógrado pelo 2º espaço = ==leve desvio ulnar, mecanicamente vantajoso==",
-  "correta": "**Pino retrógrado pelo 2º espaço.**\n- Deixa leve desvio ulnar.\n- Contraria a translação ulnar do carpo reumatoide.",
   "incorretas": {
-   "A": "**O contrário.**\n- Popularizada justamente na AR.",
-   "C": "**Metacarpo errado.**\n- Clayton usa o 3º.",
-   "D": "**Direção errada.**\n- O pino migra distalmente."
+   "A": "É o contrário: a fixação intramedular é usada justamente na artrite reumatoide, com osso frágil e pele fina.",
+   "C": "A técnica de Clayton, modificada por Millender e Nalebuff, usa o 3º metacarpo, não o 2º.",
+   "D": "Na pseudartrose da 3ª carpometacarpal, o pino migra distalmente, não proximalmente."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **artrodese do punho** une o rádio ao carpo e ao **3º metacarpo**. A posição clássica é de **10 a 20° de extensão**, alinhada ao 3º metacarpo, com leve desvio ulnar aceitável: a extensão deixa os flexores no comprimento certo e dá **mais força de preensão**. Se os dois punhos forem fundidos, um fica em extensão e o outro mais perto do **neutro**, para a higiene íntima.\n\n**Placa ou pino**: na pessoa com osso bom, usa-se placa dorsal do rádio ao 3º metacarpo. Na **artrite reumatoide**, o osso é **osteoporótico** e a pele é fina, e a placa arrisca deiscência; por isso a **pinagem intramedular** ficou popular justamente na AR.\n\n**As técnicas com pino**:\n\n**Clayton (modificada por Millender e Nalebuff)**: pino de Steinmann introduzido pelo **3º metacarpo** (ou entre o 2º e o 3º) até o canal do rádio;\n\n**alternativa retrógrada**: o pino entra pelo rádio, atravessa o carpo e **sai pelo 2º espaço intermetacarpal**, o que deixa a mão em **leve desvio ulnar**, mecanicamente vantajoso porque contraria a translação ulnar e o desvio radial do carpo reumatoide;\n\n**Mannerfelt**: pino associado a grampo.\n\n**Complicação típica**: se a articulação carpometacarpal do 3º raio não consolida, o pino tende a **migrar distalmente**, para a mão.\n\n**Na prova**: pino retrógrado pelo 2º espaço = **leve desvio ulnar**, vantajoso.",
+  "correta": "A inserção retrógrada através do carpo com saída pelo 2º espaço intermetacarpal posiciona a mão em discreto desvio ulnar, o que é mecanicamente favorável.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0455": {
-  "conceito": "### Liberação do túnel do carpo: técnicas\n| Técnica | Vantagens | Desvantagens |\n|---|---|---|\n| aberta clássica | visão direta, segura, barata | dor na cicatriz e nos pilares, retorno mais lento |\n| ==endoscópica / miniincisão== | ==retorno mais precoce ao trabalho==, menos dor de pilar e cicatriz nas primeiras semanas | curva de aprendizado; risco de **liberação incompleta** e de lesão de nervo, arco palmar e tendões; custo |\n\n### Resultados\n- Após cerca de **3 meses**, resultados funcionais **semelhantes**.\n- Infecção rara em ambas.\n\n### Complicações da liberação\n- Liberação incompleta (causa principal de persistência).\n- Lesão do ramo cutâneo palmar (neuroma), do ramo motor, do arco superficial.\n- **Dor do pilar** (tenar/hipotenar).\n- Síndrome dolorosa regional complexa.\n\n### Recuperação após liberação\n| Aspecto | Evolução |\n|---|---|\n| parestesia noturna | melhora em dias |\n| sensibilidade | semanas a meses |\n| força tenar | meses, pode não voltar |\n| dor do pilar | 3 a 6 meses |\n\n### ENMG e prognóstico\n| Achado | Significado | Recuperação |\n|---|---|---|\n| latência aumentada, velocidade reduzida | desmielinização | ==boa e rápida== |\n| CMAP reduzido, desnervação | perda axonal | lenta e incompleta |\n\n### Dor do pilar\n- Atribuída a ==microneuromas== dos ramos cutâneos palmares.\n- Incisão cerca de ==6 mm== afastada da intersecção dos ramos do mediano e ulnar; alinhada ao 4º raio.\n\n> **Na prova:** dor do pilar = ==microneuromas==, reduzida pela posição da incisão.",
-  "correta": "**Dor do pilar por microneuromas.**\n- Ramos cutâneos palmares cruzando a incisão.\n- Afastar cerca de 6 mm da intersecção dos ramos.",
   "incorretas": {
-   "A": "**Invertida.**\n- Sensibilidade volta antes da força.",
-   "B": "**Prognóstico invertido.**\n- Perda axonal (CMAP baixo) recupera pior.",
-   "D": "**Casos graves.**\n- Hipersensibilidade de reinervação segue perda axonal."
+   "A": "É o inverso: a sensibilidade volta antes da força tenar.",
+   "B": "É o inverso: a desmielinização (latência e velocidade alteradas) recupera mais rápido que a perda axonal (CMAP reduzido).",
+   "D": "A hipersensibilidade de reinervação é mais comum nos casos graves, com perda axonal, e não nos leves."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Depois da **liberação do túnel do carpo**, cada sintoma melhora num tempo diferente. A **parestesia noturna** some em dias. A **sensibilidade** volta em semanas a meses. A **força tenar** é a mais lenta e pode não voltar por completo. Então a sensibilidade melhora **antes** da força.\n\n**O que a eletroneuromiografia diz sobre o prognóstico**:\n\n**latência aumentada e velocidade de condução reduzida**: indicam **desmielinização**, e a recuperação costuma ser **boa e rápida**;\n\n**potencial de ação muscular (CMAP) reduzido e sinais de desnervação**: indicam **perda axonal**, e a recuperação é **lenta e incompleta**.\n\n**Dor do pilar**: dor nas eminências tenar e hipotenar, que dura de 3 a 6 meses. É atribuída a **microneuromas** dos ramos cutâneos palmares do mediano e do ulnar. Pode ser reduzida posicionando a incisão cerca de **6 mm** afastada da área onde esses ramos se cruzam, alinhada ao 4º raio.\n\n**Hipersensibilidade de reinervação**: dor, rigidez e edema que acompanham a volta dos axônios; aparece nos casos **graves**, com perda axonal, e não nos leves.\n\n**Na prova**: dor do pilar = **microneuromas**, reduzida afastando a incisão cerca de 6 mm da intersecção dos ramos cutâneos.",
+  "correta": "A dor do pilar se relaciona a microneuromas dos ramos cutâneos palmares, e afastar a incisão cerca de 6 mm da intersecção entre os ramos do mediano e do ulnar a diminui.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0456": {
-  "conceito": "### Classificação de Heikel (displasia radial)\n| Heikel | Bayne | Descrição |\n|---|---|---|\n| A | I | rádio distal curto (fise distal atrasada) |\n| B | II | rádio hipoplásico em miniatura |\n| C | III | ausência parcial (remanescente proximal) |\n| ==D== | ==IV== | ==ausência total do rádio==: ==a mais comum== |\n\n### Mão torta radial (tipo D)\n- Mão desviada radialmente sobre a ponta da ulna.\n- Ulna curta e encurvada; polegar ausente ou hipoplásico.\n- Bilateral em cerca de metade.\n\n### Investigação obrigatória\n| Síndrome | Exame |\n|---|---|\n| Fanconi | teste de quebra cromossômica (diepoxibutano) |\n| Holt-Oram | ecocardiograma |\n| TAR | hemograma (plaquetas) |\n| VACTERL | coluna, rim, coração, ânus, traqueia/esôfago |\n\n### Remanescente no tipo C\n- Pode funcionar como **banda** que agrava a curvatura da ulna com o crescimento.\n\n### Tratamento da mão torta radial\n| Fase | Medida |\n|---|---|\n| recém-nascido | alongamento e órteses seriadas |\n| 6 a 12 meses | distração de partes moles (fixador) se rígida |\n| ~1 ano | centralização ou radialização do carpo sobre a ulna |\n| depois | policização se polegar ausente |\n\n### Contraindicações à correção\n| Situação | Motivo |\n|---|---|\n| ==cotovelo rígido em extensão== | ==o desvio radial é o que leva a mão à boca== |\n| adulto adaptado com boa função | ganho funcional pequeno |\n| doença sistêmica grave (Fanconi, TAR) | risco clínico |\n\n### Detalhes técnicos\n| Tópico | Conduta |\n|---|---|\n| ==ulna curva > 30°== | ==osteotomia de fechamento no ápice== |\n| Vilkki | transferência livre da 2ª MTF para apoiar o carpo |\n| Blauth I (polegar) | não se opera |\n| Blauth IIIB, IV, V | policização |\n| Bayne I | acompanhamento, órtese |\n\n> **Na prova:** ulna angulada > 30° = ==osteotomia de fechamento no ápice==",
-  "correta": "**Osteotomia da ulna acima de 30°.**\n- Fechamento no ápice da curva.\n- Sem ela, o carpo centralizado volta a escorregar.",
   "incorretas": {
-   "A": "**Técnica errada.**\n- Vilkki transfere a 2ª MTF vascularizada.",
-   "B": "**Não se opera.**\n- Blauth I é hipoplasia mínima.",
-   "D": "**Invertida.**\n- Centraliza-se o carpo, e o tipo I raramente opera."
+   "A": "A técnica de Vilkki é a transferência vascularizada da 2ª metatarsofalângica para apoiar o carpo, não o alongamento do rádio com fixador.",
+   "B": "Blauth tipo I é uma hipoplasia mínima do polegar e não precisa de policização, reservada aos tipos IIIB, IV e V.",
+   "D": "No Bayne tipo I, o rádio é apenas um pouco curto e o tratamento costuma ser conservador; alongar o rádio e centralizar a ulna não é a conduta."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **deficiência longitudinal radial** (mão torta radial), o rádio é curto ou ausente e a mão escorrega para o lado radial, apoiada na ponta da ulna. A classificação de **Bayne** (modificada por James e por Klug) vai do **tipo I**, rádio distal só um pouco curto, ao **tipo IV**, **ausência total** do rádio, que é o mais comum. Antes de qualquer cirurgia, procuram-se as síndromes associadas: **Fanconi**, **Holt-Oram**, **TAR** e **VACTERL**.\n\n**A sequência do tratamento**:\n\n**recém-nascido**: alongamento e órteses seriadas;\n\n**se a mão estiver rígida**: distração de partes moles com fixador antes da cirurgia;\n\n**por volta de 1 ano**: **centralização** ou **radialização** do carpo sobre a ulna;\n\n**depois**: **policização** se o polegar for ausente ou muito hipoplásico.\n\n**A ulna curva**: se a ulna tiver angulação **maior que 30°**, faz-se uma **osteotomia de fechamento no ápice** da deformidade junto com a centralização; sem isso, o carpo tende a escorregar de novo.\n\n**Vilkki**: transferência **livre e vascularizada da 2ª metatarsofalângica** para dar suporte ao lado radial do carpo, e não alongamento com fixador.\n\n**O polegar (Blauth)**: o tipo **I** é uma hipoplasia mínima e **não se opera**; a policização fica para os tipos **IIIB, IV e V**. No **Bayne I**, o rádio é só curto: em geral basta acompanhar ou usar órtese.\n\n**Quando não operar**: cotovelo rígido em extensão (o desvio radial é o que leva a mão à boca), adulto já adaptado e doença sistêmica grave.\n\n**Na prova**: ulna angulada mais de 30° = **osteotomia de fechamento no ápice**.",
+  "correta": "Com angulação da ulna acima de 30°, uma osteotomia de fechamento no ápice da curva pode ser feita para alinhar o antebraço e manter a centralização.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0457": {
-  "conceito": "### Síndrome de Apert (acrocefalossindactilia)\n- Mutação do **FGFR2**; craniossinostose (coronal), hipoplasia da face média, sindactilia **complexa** das mãos e pés.\n\n### Classificação de Upton da mão\n| Tipo | Nome | Características |\n|---|---|---|\n| I | ==mão em pá== (spade) | polegar separado ou com sindactilia parcial; palma plana |\n| ==II== | ==mão em colher== (mitten, luva) | ==2º a 4º dedos em sinostose com palma côncava==; polegar em clinodactilia radial; sindactilia simples 4º-5º; a mais comum |\n| III | ==botão de rosa== (hoof, casco) | todos os dedos fundidos, incluindo o polegar; sinoníquia |\n\n### Outros achados\n- Falange proximal do polegar **delta** (clinodactilia radial), sinfalangismo, sinostose do 4º e 5º metacarpos, ombro e cotovelo com anquilose.\n\n### Cirurgia\n- Liberar primeiro a **1ª comissura** e o 4º espaço (bordas), depois os centrais; várias etapas até cerca de 3 a 4 anos.\n\n> **Na prova:** Apert com 1º espaço fundido e sinostose 4º-5º MC = ==Upton III==",
-  "correta": "**Tipo 3.**\n- Botão de rosa: polegar fundido aos dedos.\n- Sinostose 4º-5º metacarpos, sinoníquia.\n- Prioridade: abrir o 1º espaço.",
   "incorretas": {
-   "A": "**Mão em pá.**\n- 1º espaço aberto ou parcial.",
-   "B": "**Mão em colher.**\n- Polegar separado; o mais comum.",
-   "D": "**Não existe.**\n- São três tipos."
+   "A": "No tipo 1, mão em pá, o 1º espaço é aberto ou só parcialmente fundido.",
+   "B": "No tipo 2, mão em colher, o polegar ainda é separado, e a sindactilia do 1º espaço é simples ou incompleta.",
+   "D": "A classificação de Upton tem só três tipos."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **síndrome de Apert** (acrocefalossindactilia) vem de uma mutação no **FGFR2**. Tem craniossinostose (sutura coronal), face média hipoplásica e **sindactilia complexa** das mãos e dos pés. Outros achados da mão: polegar com falange **delta** (clinodactilia radial), **sinfalangismo**, **sinostose do 4º e 5º metacarpos** e rigidez de ombro e cotovelo.\n\n**A classificação de Upton** separa a mão de Apert pelo estado do **polegar** e da 1ª comissura:\n\n**tipo I, mão em pá**: polegar separado ou com sindactilia **parcial** do 1º espaço, palma plana;\n\n**tipo II, mão em colher (luva)**: 2º a 4º dedos fundidos com palma côncava, polegar ainda separado (sindactilia simples ou incompleta do 1º espaço); é o **mais comum**;\n\n**tipo III, mão em botão de rosa (casco)**: todos os dedos fundidos, **incluindo o polegar**, com sindactilia **complexa e completa do 1º espaço**, sinoníquia e, com frequência, sinostose do 4º e 5º metacarpos.\n\n**A cirurgia**: libera-se primeiro a **1ª comissura** e o 4º espaço (as bordas), depois os dedos centrais, em várias etapas até cerca de 3 a 4 anos.\n\n**Na prova**: Apert com 1º espaço fundido de forma complexa e completa = **Upton III**.",
+  "correta": "Na mão em botão de rosa (Upton III), o polegar está fundido aos dedos por sindactilia complexa e completa do 1º espaço, muitas vezes com sinostose entre o 4º e o 5º metacarpos.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0458": {
-  "conceito": "### Duplicação do polegar: estratégias\n| Técnica | Indicação |\n|---|---|\n| ressecção do polegar menor + reconstrução (colateral, abdutor curto) | ==a mais usada== (um polegar claramente melhor, em geral o ulnar) |\n| ==Bilhaut-Cloquet== | ==dois polegares semelhantes e hipoplásicos==: ressecção das metades centrais e ==união das metades externas== |\n| on-top plasty | um tem boa porção distal, o outro boa base |\n\n### Bilhaut-Cloquet\n- Vantagem: polegar de **largura** adequada, osso e unha de ambos.\n- Desvantagens: **sulco ou deformidade da unha**, rigidez articular, desvio angular, lesão fisária.\n- Modificações (Baek, Tonkin) poupam a articulação ou a unha.\n\n### Outras condições citadas\n| Condição | Tratamento |\n|---|---|\n| dimelia ulnar (mão em espelho) | policização de um dedo, ressecção dos excedentes |\n| acrossindactilia | liberação |\n| polegar trifalângico | ressecção da falange delta, osteotomias |\n\n### Indicação ampliada\n- Clássica: Wassel ==I e II==.\n- Modificações (Baek, Tonkin): também ==IV==, reconstruindo a MF.\n- No IV, muitos preferem ressecar o radial e reconstruir o ulnar.\n\n> **Na prova:** Bilhaut-Cloquet = Wassel ==I, II e IV==",
-  "correta": "**I, II e IV.**\n- Clássica nas duplicações distais simétricas.\n- Estendida ao IV com técnicas modificadas.\n- Risco de sulco ungueal e rigidez.",
   "incorretas": {
-   "A": "**Proximal demais.**\n- Metacarpo bífido.",
-   "B": "**Ressecção de raio.**\n- Metacarpo duplicado.",
-   "D": "**Problema de falanges.**\n- Trifalângico: ressecção ou osteotomia."
+   "A": "O tipo V tem o metacarpo bífido, proximal demais para unir as duas metades.",
+   "B": "O tipo VI tem o metacarpo duplicado e é tratado com ressecção de um raio e reconstrução.",
+   "D": "O tipo VII tem um polegar trifalângico, tratado com ressecção ou osteotomia."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **duplicação do polegar**, a estratégia depende de como são os dois polegares.\n\n**Ressecção do menor e reconstrução** do que fica (ligamento colateral, abdutor curto reinserido): é a técnica **mais usada**, quando um polegar é claramente melhor, em geral o ulnar.\n\n**Bilhaut-Cloquet**: para **dois polegares semelhantes e hipoplásicos**. Retira-se a parte central de cada um e unem-se as **metades externas**, formando um polegar de largura adequada, com osso e unha dos dois. Desvantagens: **sulco ou deformidade da unha**, rigidez, desvio angular e lesão da fise.\n\n**On-top plasty**: quando um polegar tem a boa parte distal e o outro, a boa base.\n\n**Em quais Wassel usar Bilhaut-Cloquet**: a indicação clássica são os tipos **I e II** (falange distal bífida ou duplicada), em que as duas metades são parecidas. Com as modificações de Baek e de Tonkin, que poupam a articulação ou a unha, ela foi estendida ao tipo **IV** (falange proximal duplicada), reconstruindo a MF.\n\n**Os outros tipos**: o **V** (metacarpo bífido) e o **VI** (metacarpo duplicado) são proximais demais e pedem ressecção com reconstrução; o **VII** tem um componente trifalângico e pede ressecção ou osteotomia.\n\n**Na prova**: Bilhaut-Cloquet = Wassel **I, II e IV**.",
+  "correta": "A técnica de Bilhaut-Cloquet é indicada nas duplicações simétricas dos tipos I e II e, com as modificações, também no tipo IV.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0459": {
-  "conceito": "### Estadiamento de Enneking (MSTS)\n| Estágio | Grau | Local | Metástase |\n|---|---|---|---|\n| IA | baixo (G1) | intracompartimental (T1) | não |\n| IB | baixo | extracompartimental (T2) | não |\n| IIA | alto (G2) | intracompartimental | não |\n| ==IIB== | ==alto== | ==extracompartimental== | não |\n| III | qualquer | qualquer | ==sim (M1)== |\n\n### Barreiras de compartimento\n- Contam: cortical óssea, cartilagem articular, fáscia espessa, periósteo, cápsula.\n- Extracompartimentais por natureza: axila, fossa poplítea, mão e pé medial/central, etc.\n\n### Margens (Enneking)\n| Margem | Plano | Indicação |\n|---|---|---|\n| intralesional | dentro do tumor | benignos (curetagem) |\n| marginal | pela zona reativa | benignos agressivos |\n| ampla | tecido normal em volta | ==alto grau== |\n| radical | compartimento inteiro | alto grau extenso |\n\n### Benignos (1, 2, 3)\n- Latente, ativo, agressivo.\n\n> **Na prova:** alto grau extracompartimental = ==Enneking IIB==.",
-  "correta": "**IIB.**\n- Alto grau que rompeu o compartimento.\n- O cenário mais comum dos sarcomas.\n- Margem ampla ou radical.",
   "incorretas": {
-   "A": "**Baixo grau.**\n- IA ou IB.",
-   "B": "**Contido.**\n- Alto grau intracompartimental.",
-   "D": "**Metástase.**\n- Define o III."
+   "A": "O estágio I é de baixo grau (IA ou IB).",
+   "B": "O IIA é de alto grau, mas ainda contido no compartimento.",
+   "D": "O estágio III é definido pela metástase, qualquer que seja o grau ou o local."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **estadiamento de Enneking** (MSTS) dos tumores malignos do sistema musculoesquelético usa três critérios: **grau** histológico, **local** (dentro ou fora do compartimento) e **metástase**.\n\n**Os estágios**:\n\n**I**: **baixo grau**; **IA** se intracompartimental, **IB** se extracompartimental;\n\n**II**: **alto grau**; **IIA** se intracompartimental, **IIB** se **extracompartimental**;\n\n**III**: **metástase**, de qualquer grau e local.\n\n**O que é o compartimento**: as barreiras contam, como cortical óssea, cartilagem articular, fáscia espessa, periósteo e cápsula. Algumas regiões são extracompartimentais por natureza, como a axila, a fossa poplítea e o meio da mão e do pé.\n\nO **IIB** é o cenário mais comum dos sarcomas, que costumam já ter rompido a cortical quando chegam ao diagnóstico. Pede margem **ampla** ou **radical**.\n\n**Para os benignos**, Enneking usa números arábicos: **1** latente, **2** ativo, **3** agressivo.\n\n**Na prova**: alto grau extracompartimental = **Enneking IIB**.",
+  "correta": "O IIB reúne alto grau e extensão para fora do compartimento, sem metástase.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0460": {
