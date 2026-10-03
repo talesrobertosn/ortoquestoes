@@ -96,7 +96,11 @@
 @media (max-width: 40rem) { .vp-garantia__selo { width: 5.5rem; height: 5.5rem; } }
 .vp-voce { margin: 0; padding: 1rem 1.1rem; border-radius: var(--raio-cartao); background: var(--verdete-veu); }
 .vp-faq details { padding: 0.95rem 0; border-bottom: var(--borda); }
-.vp-faq summary { cursor: pointer; font-weight: 700; }
+.vp-faq summary { cursor: pointer; font-weight: 700; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+.vp-faq summary::-webkit-details-marker { display: none; }
+/* Seta própria no lugar do triângulo do navegador. */
+.vp-faq summary::after { content: ''; flex: none; width: 0.55rem; height: 0.55rem; margin-right: 0.25rem; border-right: 2px solid var(--texto-2); border-bottom: 2px solid var(--texto-2); transform: rotate(45deg) translateY(-2px); transition: transform 0.15s ease; }
+.vp-faq details[open] summary::after { transform: rotate(-135deg) translateY(-2px); }
 .vp-faq details p { margin: 0.55rem 0 0; color: var(--texto-2); }
 .vp-faq { max-width: none; }
 .vp-final {
@@ -396,4 +400,12 @@
   .vp-plano, .vp-plano--destaque { padding-inline: 1rem; min-width: 0; }
   .vp-plano--destaque .vp-plano__mes strong { font-size: 2.6rem; }
   .vp-meios li { white-space: normal; }
+}
+
+.vp-comparativo__nota { display: flex; gap: 0.5rem; align-items: flex-start; margin: 0.9rem 0 0; color: var(--texto-2); font-size: var(--corpo-menor); }
+.vp-comparativo__nota svg { flex: none; margin-top: 0.2rem; color: var(--verdete); }
+/* No celular, a porcentagem desce para baixo do nome em vez de disputar a linha. */
+@media (max-width: 30rem) {
+  .vp-ranking li { grid-template-columns: 1.8rem minmax(0, 1fr); }
+  .vp-ranking li small { grid-column: 2; }
 }
