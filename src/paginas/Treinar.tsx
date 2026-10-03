@@ -138,6 +138,12 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     () => filtros.provas.length + filtros.anos.length + filtros.dificuldades.length > 0 || filtros.soSimulados,
   )
 
+  // No celular, Situação e Formato começam recolhidos mostrando o que está
+  // escolhido; o botão fixo de começar já funciona com o padrão.
+  const [telaLarga] = useState(() => typeof window === 'undefined' || window.matchMedia('(min-width: 52rem)').matches)
+  const [situacaoAberta, definirSituacaoAberta] = useState(() => telaLarga || filtros.situacao !== 'todas')
+  const [formatoAberto, definirFormatoAberto] = useState(telaLarga)
+
   /** Sessão de 10 num clique, sem passar pelos filtros. */
   function sessaoRapida(preset: Partial<Filtros> = {}) {
     if (!indice) return
@@ -156,6 +162,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     atualizar({ soSimulados: true })
     definirSimulado(true)
     definirFiltrosProvaAbertos(true)
+    definirFormatoAberto(true)
     document.getElementById('etapa-formato')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 
@@ -257,14 +264,15 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
         {carregandoBusca && <span className="campo__auxilio">Carregando o texto das questões…</span>}
       </section>
 
-      <section className="tr-etapa">
-        <header className="tr-etapa__cabeca">
+      <details className="tr-etapa tr-etapa--recolhivel" open={situacaoAberta} onToggle={(e) => definirSituacaoAberta((e.currentTarget as HTMLDetailsElement).open)}>
+        <summary className="tr-etapa__cabeca">
           <span className="tr-etapa__numero">2</span>
           <div>
             <h2>Situação</h2>
-            <p>Escolha a partir do que você já respondeu.</p>
+            <p>{situacaoAberta ? 'Escolha a partir do que você já respondeu.' : `${ROTULO_SITUACAO[filtros.situacao]} · ${(contagens?.porSituacao[filtros.situacao] ?? 0).toLocaleString('pt-BR')} questões`}</p>
           </div>
-        </header>
+          <Icone nome="baixo" tamanho={18} />
+        </summary>
         <div className="tr-pilulas" id="filtro-situacao">
           {situacoesVisiveis.map((situacao) => (
             <button
@@ -311,7 +319,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
           {filtros.situacao === 'favoritas' && <> <a href={href('/favoritas')}>Ver a lista das favoritas</a></>}
           {filtros.situacao === 'revisarHoje' && <> <a href={href('/revisao')}>Ajustar o ritmo</a></>}
         </p>
-      </section>
+      </details>
 
       {(temProva || temAno || totalSimulados > 0 || Object.keys(contagens?.porDificuldade ?? {}).length > 0) && (
         <details
@@ -414,14 +422,15 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
         </details>
       )}
 
-      <section className="tr-etapa" id="etapa-formato">
-        <header className="tr-etapa__cabeca">
+      <details className="tr-etapa tr-etapa--recolhivel" id="etapa-formato" open={formatoAberto} onToggle={(e) => definirFormatoAberto((e.currentTarget as HTMLDetailsElement).open)}>
+        <summary className="tr-etapa__cabeca">
           <span className="tr-etapa__numero">4</span>
           <div>
             <h2>Formato</h2>
-            <p>Quantas questões e como você quer ver o gabarito.</p>
+            <p>{formatoAberto ? 'Quantas questões e como você quer ver o gabarito.' : `${filtros.limite ?? 'Todas as'} questões · ${simulado ? 'modo prova' : 'modo estudo'}`}</p>
           </div>
-        </header>
+          <Icone nome="baixo" tamanho={18} />
+        </summary>
         <div className="tr-grupo">
           <span className="tr-grupo__rotulo">Quantas questões</span>
           <div className="tr-pilulas" id="filtro-limite">
@@ -499,7 +508,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
             </label>
           </div>
         </details>
-      </section>
+      </details>
 
       {total === 0 && (
         <Estado titulo="Nenhuma questão atende a esse recorte.">

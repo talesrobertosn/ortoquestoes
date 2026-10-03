@@ -411,7 +411,7 @@
 .tr-etapa--recolhivel > summary > div { flex: 1 1 auto; min-width: 0; }
 .tr-etapa--recolhivel > summary > svg { flex: 0 0 auto; margin-top: 0.4rem; color: var(--texto-2); transition: transform 0.15s ease; }
 .tr-etapa--recolhivel[open] > summary > svg { transform: rotate(180deg); }
-.tr-etapa--recolhivel[open] > .tr-grupo { margin-top: 1rem; }
+.tr-etapa--recolhivel[open] > summary ~ * { margin-top: 1rem; }
 @media (max-width: 40rem) {
   /* Acima da barra de navegação, que cresce no iPhone quando o Safari esconde a barra dele. */
 }

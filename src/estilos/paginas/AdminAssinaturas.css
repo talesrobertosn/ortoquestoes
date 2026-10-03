@@ -1,13 +1,13 @@
 /* Estilos usados só por AdminAssinaturas (e o que vem junto no mesmo pedaço do site).
    Saíram do CSS global para não descer em toda página. */
 .adm { max-width: 72rem; margin-inline: auto; }
-.adm-heroi { display: flex; align-items: flex-end; justify-content: space-between; gap: 1rem; padding: clamp(1.25rem, 3vw, 2rem); border-radius: var(--raio-grande); background: var(--heroi); color: var(--sobre-heroi); }
-.adm-heroi h1 { margin: .35rem 0 .25rem; color: var(--sobre-heroi); font-size: clamp(1.5rem, 3vw, 2rem); }
-.adm-heroi p { margin: 0; color: var(--sobre-heroi-2); }
-.adm-heroi__sobre { display: inline-flex; align-items: center; gap: .4rem; font-size: var(--meta); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
-.adm-heroi .adm-heroi__atualizar { flex: 0 0 auto; background: rgba(255, 255, 255, .12); color: var(--sobre-heroi); border-color: rgba(255, 255, 255, .25); }
-.adm-heroi .adm-heroi__atualizar:hover { background: rgba(255, 255, 255, .2); }
-.adm-alerta { margin: 0; padding: .85rem 1rem; border-radius: var(--raio-controle); background: var(--ouro-veu); color: var(--ouro-texto); font-weight: 600; }
+/* Painel é ferramenta: cabeçalho enxuto, sem faixa de destaque. */
+.adm-heroi { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0 0 .25rem; color: var(--texto); }
+.adm-heroi h1 { margin: .15rem 0 .1rem; font-size: clamp(1.3rem, 2.2vw, 1.6rem); }
+.adm-heroi p { margin: 0; color: var(--texto-2); font-size: var(--corpo-menor); }
+.adm-heroi__sobre { display: inline-flex; align-items: center; gap: .35rem; font-size: var(--meta); font-weight: 700; color: var(--verdete); }
+.adm-heroi .adm-heroi__atualizar { flex: 0 0 auto; }
+
 .adm-abas { position: sticky; top: 66px; z-index: 5; display: flex; gap: .35rem; overflow-x: auto; padding: .35rem; border: var(--borda); border-radius: var(--raio-cartao); background: color-mix(in srgb, var(--superficie) 92%, transparent); backdrop-filter: blur(10px); scrollbar-width: none; }
 .adm-abas::-webkit-scrollbar { display: none; }
 .adm-aba { display: inline-flex; align-items: center; gap: .4rem; flex: 0 0 auto; min-height: 42px; padding: 0 .65rem; font-size: .9rem; border: 0; border-radius: var(--raio-controle); background: transparent; color: var(--texto-2); font: inherit; font-weight: 650; cursor: pointer; }
