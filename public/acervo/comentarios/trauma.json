@@ -10451,51 +10451,55 @@
   "conferido": false
  },
  "trauma-1147": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": "**Russell-Taylor.** Tipo I sem extensão à fossa piriforme; tipo II com extensão à fossa, que inviabiliza a haste convencional e torna a fratura mais complexa.\n\n**Na prova:** fossa piriforme acometida, tipo II.",
-  "correta": "**Extensão do traço de fratura à fossa piriforme.** A extensão à fossa piriforme define o tipo II.",
   "incorretas": {
-   "B": "**Acometimento da região póstero-medial do fêmur.** Define subtipo, não o tipo mais grave.",
-   "C": "**Extensão do traço de fratura para a diáfise femoral.** Não é o critério.",
-   "D": "**Fragmentação da cortical lateral do terço proximal do fêmur.** Não é o critério."
+   "B": "**Acometimento posteromedial.** A cominuição dessa região remove o apoio que resiste ao varo, sendo biomecanicamente relevante e contribuindo para subtipos com menor estabilidade. Contudo, não é o critério que separa os tipos I e II perguntado pela banca.",
+   "C": "**Extensão diafisária.** O traço pode avançar distalmente e aumentar a dificuldade de obter comprimento e alinhamento, mas Russell-Taylor não define seu divisor principal pela distância de extensão na diáfise.",
+   "D": "**Fragmentação lateral proximal.** Também pode comprometer o controle da redução e a fixação, dependendo do implante. Não substitui a pergunta central da classificação sobre a integridade da fossa piriforme."
   },
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso a questão não conta no desempenho. A resposta A identifica o tipo II da classificação de Russell-Taylor, mas a expressão “mais grave” é imprecisa: extensão à fossa piriforme dificulta certas estratégias de fixação, enquanto cominuição posteromedial também piora estabilidade e prognóstico. A classificação não é uma escala simples de gravidade clínica.",
+  "conceito": "**O que a classificação observa.** A região subtrocantérica fica logo abaixo do trocânter menor e suporta grandes forças de flexão e varização. Russell-Taylor organiza suas fraturas sobretudo pela extensão do traço até a fossa piriforme, depressão na face medial do trocânter maior que servia de ponto de entrada para hastes retas clássicas. No tipo I, a fossa permanece íntegra; no tipo II, ela é atingida.\n\nHá ainda subtipos que refinam a estabilidade. No tipo IA, o trocânter menor não está envolvido; no IB, ele participa do traço. No tipo IIA, a fratura alcança a fossa piriforme sem perda importante do suporte medial; no IIB, há cominuição ou perda desse suporte. Esses detalhes influenciam redução, escolha do ponto de entrada e controle da tendência ao varo e à flexão do fragmento proximal.\n\n**Por que o tipo II importava.** Quando o traço cruza a fossa piriforme, uma haste convencional introduzida ali pode abrir a fratura ou não conseguir controlar o fragmento proximal. Implantes e pontos de entrada atuais mudaram opções de tratamento, de modo que não se deve transformar a regra histórica em proibição universal de haste. O raciocínio útil é reconhecer se a região de entrada e o apoio medial estão preservados, restaurar comprimento, rotação e eixo e obter fixação estável.",
+  "correta": "**Extensão à fossa piriforme.** Esse é o divisor entre os tipos I e II de Russell-Taylor e marca maior complexidade para a fixação intramedular clássica com entrada nessa fossa.",
   "referencias": [
-   "Browner J, Levine e Trafton. Skeletal trauma. Philadelphia: Saunders/Manole. 2ª ed., pg. 1883."
+   "Classifications in Brief: The Russell-Taylor Classification of Subtrochanteric Hip Fracture. https://pmc.ncbi.nlm.nih.gov/articles/PMC6345285/",
+   "Subtrochanteric fractures of the femur: update. https://pmc.ncbi.nlm.nih.gov/articles/PMC4887449/"
   ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "provavel": "A",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "trauma-1148": {
+  "incorretas": {
+   "B": "**Amarração coracoclavicular.** Em fratura lateral de clavícula com coracoide íntegro, uma sutura ou dispositivo entre clavícula e coracoide pode reforçar a estabilidade. Aqui o ponto de apoio ósseo está lesado e sua utilização isolada pode deslocar o fragmento coracoideano ou falhar.",
+   "C": "**Weaver-Dunn.** A técnica clássica transfere o ligamento coracoacromial para reconstruir a estabilidade coracoclavicular, sobretudo em instabilidade acromioclavicular crônica. Não fornece, sozinha, a fixação óssea direta mais apropriada para as duas fraturas agudas descritas.",
+   "D": "**Fio metálico.** Fios podem ter papel complementar em certas montagens, mas sua fixação isolada da clavícula distal é menos previsível, pode migrar e não resolve adequadamente a instabilidade desse conjunto ósseo."
+  },
+  "conceito": "**Duas lesões no mesmo sistema de suspensão.** Os ligamentos coracoclaviculares unem a clavícula ao processo coracoide da escápula e ajudam a sustentar a cintura escapular. Na fratura lateral instável tipo II de Neer, a clavícula perde continuidade funcional com esse suporte; o fragmento medial tende a deslocar-se. Se o coracoide também está fraturado, a estrutura que receberia uma amarração ou um botão coracoclavicular pode estar comprometida.\n\nEntre as técnicas oferecidas, a placa fixa diretamente os fragmentos da clavícula sem depender exclusivamente de uma ancoragem no coracoide fraturado. A escolha exata da placa e a necessidade de tratar o coracoide dependem do tamanho do fragmento distal, da localização da fratura coracoideana e da estabilidade residual. Uma placa lateral bloqueada requer fragmento distal suficiente para parafusos; em outros cenários pode ser considerada placa em gancho, observando suas complicações próprias.\n\n**Cuidado com a palavra “melhor”.** Não existe um implante único comprovadamente superior para toda fratura distal de clavícula. A associação rara com fratura do coracoide precisa de avaliação individual, muitas vezes por tomografia, antes de qualquer passagem de fios ou parafusos através dele. O princípio que resolve esta questão é evitar uma reconstrução que use como apoio principal um coracoide sem continuidade óssea estável.",
+  "correta": "**Osteossíntese com placa.** Ela estabiliza a fratura clavicular diretamente e não exige que a sustentação principal dependa de uma amarração ao coracoide fraturado.",
+  "referencias": [
+   "Coracoid fracture combined with distal clavicle fracture without coracoclavicular ligament rupture: a case report. https://pmc.ncbi.nlm.nih.gov/articles/PMC3880948/",
+   "Complications after surgical treatment of distal clavicle fractures. https://pubmed.ncbi.nlm.nih.gov/31202717/",
+   "Symptomatic nonunion of the coracoid process following osteosynthesis using a suture button for coracoid process and distal clavicle fracture. https://pmc.ncbi.nlm.nih.gov/articles/PMC10985419/"
+  ],
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "A",
-  "conceito": "**Neer II com coracoide fraturado.** Sem o apoio do coracoide, amarração coracoclavicular não tem onde ancorar; a placa estabiliza a fratura.\n\n**Na prova:** coracoide fraturado contraindica amarração coracoclavicular.",
-  "correta": "**Osteossíntese com placa.** A placa dá a estabilidade necessária.",
-  "incorretas": {
-   "B": "**Amarração coracoclavicular.** O coracoide fraturado não suporta.",
-   "C": "**De WEAVER-DUNN.** É para luxação crônica.",
-   "D": "**Osteossíntese com fio metálico.** Fixação fraca."
-  },
-  "referencias": [
-   "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., pg. 1229."
-  ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "trauma-1149": {
+  "incorretas": {
+   "A": "**Transporte ósseo no rádio.** O deslocamento gradual de um segmento com fixador é útil quando há perda óssea maior ou contexto complexo, como infecção e partes moles comprometidas. Para apenas 10 mm, acrescentaria tratamento prolongado e morbidade desnecessária.",
+   "B": "**Encurtamento da ulna e fixação dos dois ossos.** Encurtar um osso íntegro pode comprometer comprimento relativo, rotação e congruência radioulnar. Não há indicação de operar a ulna normal para solucionar uma lacuna pequena do rádio que aceita enxerto e placa.",
+   "C": "**Excisão do rádio distal e transferência da ulna.** Transferência óssea é estratégia de reconstrução excepcional diante de perda segmentar extensa ou inviabilidade do rádio. Sacrificar um fragmento radial preservável seria desproporcional nesta pseudartrose localizada."
+  },
+  "conceito": "**Pseudartrose atrófica é falha biológica e mecânica.** Nesse padrão, as extremidades ósseas mostram pouca formação de calo e frequentemente há tecido fibroso entre elas. No antebraço, não basta obter união de qualquer jeito: rádio e ulna precisam manter comprimento, curvatura e relação entre si para permitir pronação e supinação. O defeito informado tem 10 mm, ou 1 cm, com ulna intacta, portanto é pequeno para os métodos de reconstrução segmentar extensa.\n\nO tratamento usual começa pela investigação de infecção, avaliação do material prévio e da viabilidade dos fragmentos. Se a pseudartrose é asséptica, removem-se tecido fibroso e osso sem vitalidade até obter leitos viáveis; restaura-se a anatomia do rádio, preenche-se o pequeno defeito com enxerto ósseo, geralmente autólogo, e aplica-se placa estável. A fixação trata o movimento excessivo e o enxerto fornece substrato biológico para consolidar.\n\n**Por que não mexer na ulna íntegra?** Encurtá-la para aproximar o rádio pode alterar as articulações radioulnares e o espaço interósseo. Transporte ósseo, enxerto vascularizado ou transferência de outro osso são recursos de cenários maiores, complexos ou de salvamento, não a primeira escolha para uma lacuna de 1 cm. A medição do defeito deve ser refeita após o desbridamento, pois retirar todo o tecido inviável pode ampliá-lo.",
+  "correta": "**Ressecção do tecido cicatricial, enxertia e osteossíntese do rádio.** A combinação corrige as duas causas tratáveis da pseudartrose atrófica: biologia insuficiente no pequeno defeito e estabilidade inadequada.",
+  "referencias": [
+   "Management of forearm nonunions: current concepts. https://pmc.ncbi.nlm.nih.gov/articles/PMC3332319/",
+   "Forearm Fracture Nonunion with and without Bone Loss: An Overview of Adult and Child Populations. https://pmc.ncbi.nlm.nih.gov/articles/PMC9319244/"
+  ],
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "D",
-  "conceito": "**Pseudartrose atrófica do rádio.** Defeito de 10 mm com ulna intacta: ressecar o tecido, enxertar e fixar com placa.\n\n**Na prova:** defeito pequeno, enxerto e placa.",
-  "correta": "**A ressecção do tecido cicatricial, enxertia óssea e osteossíntese do rádio.** É a melhor indicação.",
-  "incorretas": {
-   "A": "**O transporte ósseo monofocal no rádio.** Transporte é para defeitos grandes.",
-   "B": "**O encurtamento da ulna com osteossíntese rígida de ambos os ossos.** Desnecessário.",
-   "C": "**A excisão do fragmento distal do rádio e transferência da ulna para o defeito.** Procedimento de salvação."
-  },
-  "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 9ª ed., pg. 2579."
-  ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "trauma-1150": {
