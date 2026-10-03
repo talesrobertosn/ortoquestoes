@@ -20,6 +20,8 @@ import { AvisoLimite, PainelLimite } from '../componentes/LimiteRespostas'
 import { href, navegar } from '../util/rotas'
 import { gerarId } from '../util/id'
 import { gravar, ler } from '../estado/armazenamento'
+import { recurso } from '../config'
+import '@fontsource/pixelify-sans/latin-700.css'
 import '../estilos/paginas/Sessao.css'
 
 export function Sessao() {
@@ -68,6 +70,16 @@ export function Sessao() {
   const respondidas = sessao ? Object.keys(sessao.respostas).length : 0
   const painelAberto = mapaAberto || atalhosAbertos || limiteAberto
   const simulado = !!sessao?.simulado
+  const combo = useMemo(() => {
+    if (!sessao || simulado) return 0
+    let n = 0
+    for (const id of sessao.ids) {
+      const r = sessao.respostas[id]
+      if (!r) continue
+      n = r.correta === true ? n + 1 : r.correta === false ? 0 : n
+    }
+    return n
+  }, [sessao, simulado])
 
   // Cronômetro do simulado. O relógio corre no mundo: fechar a aba não pausa
   // a prova, e reabrir mostra o tempo que sobrou de verdade.
@@ -242,9 +254,10 @@ export function Sessao() {
       </button>
       <div className="barra-sessao nao-imprime">
         <div className="conteudo barra-sessao__interno">
-          <span className="barra-sessao__texto">
+          <span className="barra-sessao__texto barra-sessao__texto--pixel">
             {respondidas} de {total}
           </span>
+          {combo >= 3 && <span className="barra-sessao__combo" title="Acertos seguidos nesta sessão"><img src={recurso('ranking/chama.png')} width={14} height={14} alt="" /> {combo}</span>}
           {restante !== null && (
             <span
               className={'cronometro' + (restante <= 300 ? ' cronometro--acabando' : '')}
@@ -254,18 +267,24 @@ export function Sessao() {
               {formatarDuracao(restante)}
             </span>
           )}
+          {/* Barra de XP (temporada RPG): um bloco por questão. No modo prova o
+              gabarito fica escondido, então respondida aparece só como respondida. */}
           <div
-            className="progresso"
+            className={total <= 40 ? 'xp-blocos' : 'progresso'}
             role="progressbar"
             aria-valuemin={0}
             aria-valuemax={total}
             aria-valuenow={respondidas}
             aria-label="Questões respondidas"
+            style={total <= 40 ? { gridTemplateColumns: `repeat(${total}, minmax(0, 1fr))` } : undefined}
           >
-            <div
-              className="progresso__preenchido"
-              style={{ width: `${total ? (respondidas / total) * 100 : 0}%` }}
-            />
+            {total <= 40
+              ? sessao!.ids.map((id, i) => {
+                  const r = sessao!.respostas[id]
+                  const estado = i === posicao ? 'atual' : !r ? 'vazio' : simulado ? 'feito' : r.correta === true ? 'certa' : r.correta === false ? 'errada' : 'feito'
+                  return <span key={id} className={`xp-bloco xp-bloco--${estado}`} />
+                })
+              : <div className="progresso__preenchido" style={{ width: `${total ? (respondidas / total) * 100 : 0}%` }} />}
           </div>
           <button
             type="button"

@@ -1,3 +1,4 @@
+import { MapaPerdido } from '../componentes/CenasPixel'
 import { usarConta } from '../conta/ContextoConta'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import type { RegistroQuestao } from '../estado/revisao'
@@ -526,19 +527,7 @@ export function DadosLocais() {
   )
 }
 
+/** Página não encontrada, na cena de mapa da temporada RPG. */
 export function NaoEncontrada() {
-  return (
-    <article className="limite-leitura empilha">
-      <h1>Página não encontrada</h1>
-      <p>O endereço digitado não existe no site.</p>
-      <div className="linha">
-        <a className="botao botao--principal" href={href('/')}>
-          Ir para o início
-        </a>
-        <a className="botao" href={href('/treinar')}>
-          Montar uma sessão
-        </a>
-      </div>
-    </article>
-  )
+  return <MapaPerdido />
 }
