@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<!-- Painel 2 de ideias de logo (rascunho para escolha, não é a marca oficial).
+     node marketing/instagram/gerar.mjs marketing/instagram/marca-ideias/ideias2.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Pixel; src: url(../fontes/pixelify-sans-latin-700-normal.woff2) format('woff2'); font-weight: 700; }
+* { box-sizing: border-box; margin: 0; }
+body { background: #333; font-family: Jakarta, sans-serif; }
+section { width: 1080px; background: #f4f1ea; padding: 60px 56px 70px; color: #12201e; }
+h1 { font-size: 54px; font-weight: 800; letter-spacing: -.03em; }
+.lide { font-size: 24px; color: #4d5a58; margin-top: 10px; }
+.grade { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 40px; }
+.card { background: #fff; border-radius: 28px; padding: 30px; box-shadow: 0 2px 0 rgba(0,0,0,.04), 0 12px 30px rgba(0,0,0,.06); }
+.card .topo { display: flex; align-items: center; gap: 26px; }
+.card .ic { width: 170px; height: 170px; flex: none; }
+.card .mini { display: flex; flex-direction: column; gap: 14px; align-items: center; }
+.card .mini svg { width: 64px; height: 64px; border-radius: 50%; }
+.card .mini small { font-size: 15px; color: #8a9593; }
+.wm { margin-top: 22px; display: flex; align-items: center; gap: 14px; font-size: 34px; letter-spacing: -.03em; padding: 16px 20px; border-radius: 16px; }
+.wm svg { width: 46px; height: 46px; }
+.card h2 { font-size: 26px; font-weight: 800; margin-top: 20px; letter-spacing: -.01em; }
+.card h2 i { font-style: normal; color: #d9a93f; margin-right: 8px; }
+.card p { font-size: 19px; line-height: 1.42; color: #4d5a58; margin-top: 6px; }
+.paletas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 30px; }
+.pal { background: #fff; border-radius: 22px; padding: 22px; }
+.pal .cores { display: flex; height: 70px; border-radius: 14px; overflow: hidden; }
+.pal .cores span { flex: 1; }
+.pal b { display: block; margin-top: 12px; font-size: 21px; } .pal small { font-size: 17px; color: #6b7775; }
+h3 { font-size: 30px; font-weight: 800; margin-top: 50px; letter-spacing: -.02em; }
+</style></head><body>
+
+<body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<!-- 7. Osso interrogação -->
+<symbol id="l7" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#0b3a35"/>
+<path d="M22 24 A10.5 10.5 0 1 1 36.5 33.5 Q32 36 32 41" fill="none" stroke="#fff" stroke-width="6.5" stroke-linecap="round"/>
+<circle cx="19.2" cy="21.2" r="4.6" fill="#fff"/><circle cx="18.6" cy="28.4" r="4.6" fill="#fff"/>
+<circle cx="32" cy="51" r="4.6" fill="#f4cf7c"/></symbol>
+<!-- 8. Coluna que sobe -->
+<symbol id="l8" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#12201e"/>
+<rect x="14" y="40" width="36" height="9" rx="4" fill="#5f8f88"/><rect x="18" y="28" width="28" height="9" rx="4" fill="#9fc9c2"/><rect x="22" y="16" width="20" height="9" rx="4" fill="#f4cf7c"/>
+<rect x="28" y="37" width="8" height="3" fill="#2a3a38"/><rect x="28" y="25" width="8" height="3" fill="#2a3a38"/></symbol>
+<!-- 9. Placa com parafusos = alternativas -->
+<symbol id="l9" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/>
+<rect x="9" y="22" width="46" height="20" rx="10" fill="#d9e3e1"/>
+<circle cx="19" cy="32" r="5" fill="#14655e"/><circle cx="32" cy="32" r="5" fill="#14655e"/><circle cx="45" cy="32" r="6.5" fill="#f4cf7c"/>
+<path d="M42 32 h6 M45 29 v6" stroke="#0b3a35" stroke-width="2" stroke-linecap="round"/></symbol>
+<!-- 10. Lupa no osso -->
+<symbol id="l10" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#1d3a7a"/>
+<circle cx="28" cy="28" r="15" fill="#0a1328" stroke="#f4cf7c" stroke-width="5"/>
+<g transform="rotate(-45 28 28)" fill="#fff"><rect x="20" y="26" width="16" height="4" rx="2"/><circle cx="20" cy="25.5" r="3"/><circle cx="20" cy="30.5" r="3"/><circle cx="36" cy="25.5" r="3"/><circle cx="36" cy="30.5" r="3"/></g>
+<line x1="39" y1="39" x2="51" y2="51" stroke="#f4cf7c" stroke-width="7" stroke-linecap="round"/></symbol>
+<!-- 12. Balão de pergunta com osso -->
+<symbol id="l12" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#e2563f"/>
+<path d="M14 18 h36 a6 6 0 0 1 6 6 v16 a6 6 0 0 1 -6 6 h-20 l-9 8 v-8 h-7 a6 6 0 0 1 -6 -6 v-16 a6 6 0 0 1 6 -6z" fill="#fbf6ea"/>
+<g fill="#12201e"><rect x="22" y="30" width="20" height="4.5" rx="2.2"/><circle cx="22" cy="29.6" r="3.4"/><circle cx="22" cy="35" r="3.4"/><circle cx="42" cy="29.6" r="3.4"/><circle cx="42" cy="35" r="3.4"/></g></symbol>
+<!-- 13. O cortical: corte transversal do osso -->
+<symbol id="l13" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#f2ede1"/>
+<circle cx="32" cy="32" r="18" fill="none" stroke="#12201e" stroke-width="9"/>
+<g fill="#e2563f"><circle cx="28" cy="27" r="2.2"/><circle cx="35" cy="26" r="1.8"/><circle cx="37" cy="33" r="2.2"/><circle cx="30" cy="35" r="1.8"/><circle cx="25" cy="33" r="1.5"/><circle cx="33" cy="39" r="1.5"/></g></symbol>
+<!-- 14. Livro com osso marcador -->
+<symbol id="l14" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#0b3a35"/>
+<path d="M32 20 C26 16 17 16 12 18 v28 c5 -2 14 -2 20 2z" fill="#fbf6ea"/><path d="M32 20 C38 16 47 16 52 18 v28 c-5 -2 -14 -2 -20 2z" fill="#e8dfca"/>
+<rect x="38.5" y="14" width="5" height="26" fill="#f4cf7c"/><circle cx="38.8" cy="41" r="3.6" fill="#f4cf7c"/><circle cx="43.2" cy="41" r="3.6" fill="#f4cf7c"/>
+<circle cx="38.8" cy="13" r="3.6" fill="#f4cf7c"/><circle cx="43.2" cy="13" r="3.6" fill="#f4cf7c"/></symbol>
+</defs></svg>
+
+<section id="ideias2">
+  <h1>Orto Questões · mais ideias</h1>
+  <p class="lide">Oito direções novas, de 7 a 14, no mesmo formato: ícone, círculo do perfil e ao lado do nome.</p>
+  <div class="grade">
+    <div class="card"><div class="topo"><svg class="ic"><use href="#l7"/></svg>
+      <div class="mini"><svg class=""><use href="#l7"/></svg><small>perfil</small></div></div>
+      <div class="wm" style="background:#0b3a35;color:#fff"><svg><use href="#l7"/></svg><b>Orto</b><span style="font-weight:500;color:#fff">Questões</span></div>
+      <h2><i>7</i>Osso interrogação</h2>
+      <p>O ponto de interrogação desenhado como um osso, com o ponto dourado. Diz "perguntas de ortopedia" de cara.</p></div>
+    <div class="card"><div class="topo"><svg class="ic"><use href="#l8"/></svg>
+      <div class="mini"><svg class=""><use href="#l8"/></svg><small>perfil</small></div></div>
+      <div class="wm" style="background:#12201e;color:#fff"><svg><use href="#l8"/></svg><b>Orto</b><span style="font-weight:500;color:#f4cf7c">Questões</span></div>
+      <h2><i>8</i>Coluna que sobe</h2>
+      <p>Três vértebras empilhadas, a de cima dourada. Também lê como degraus de progresso: estudar e subir.</p></div>
+    <div class="card"><div class="topo"><svg class="ic"><use href="#l9"/></svg>
+      <div class="mini"><svg class=""><use href="#l9"/></svg><small>perfil</small></div></div>
+      <div class="wm" style="background:#14655e;color:#fff"><svg><use href="#l9"/></svg><b>Orto</b><span style="font-weight:500;color:#fff">Questões</span></div>
+      <h2><i>9</i>Placa e parafusos</h2>
+      <p>Uma placa de osteossíntese em que os furos são as alternativas e o parafuso dourado é a certa. Bem de ortopedista.</p></div>
+    <div class="card"><div class="topo"><svg class="ic"><use href="#l10"/></svg>
+      <div class="mini"><svg class=""><use href="#l10"/></svg><small>perfil</small></div></div>
+      <div class="wm" style="background:#1d3a7a;color:#fff"><svg><use href="#l10"/></svg><b>Orto</b><span style="font-weight:500;color:#f4cf7c">Questões</span></div>
+      <h2><i>10</i>Lupa no osso</h2>
+      <p>Investigar a questão até achar a resposta. Casa com a série "Caso para detetive".</p></div>
+    <div class="card"><div class="topo"><svg class="ic" viewBox="0 0 10 10" shape-rendering="crispEdges" data-elmo style="background:#0a1328;border-radius:28px"></svg>
+      <div class="mini"><svg viewBox="-1 -1 12 12" shape-rendering="crispEdges" data-elmo style="background:#0a1328"></svg><small>perfil</small></div></div>
+      <div class="wm" style="background:#0a1328;color:#f4cf7c;font-family:Pixel;font-size:36px;letter-spacing:.02em"><svg viewBox="0 0 10 10" shape-rendering="crispEdges" data-elmo></svg>ORTO QUESTÕES</div>
+      <h2><i>11</i>Mascote: o cavaleiro</h2>
+      <p>O elmo do herói dos posts vira o rosto da marca, como a coruja do Duolingo. Muito reconhecível e simpático.</p></div>
+    <div class="card"><div class="topo"><svg class="ic"><use href="#l12"/></svg>
+      <div class="mini"><svg class=""><use href="#l12"/></svg><small>perfil</small></div></div>
+      <div class="wm" style="background:#e2563f;color:#fff"><svg><use href="#l12"/></svg><b>Orto</b><span style="font-weight:500;color:#fff">Questões</span></div>
+      <h2><i>12</i>Balão com osso</h2>
+      <p>Um balão de pergunta com um osso dentro. Leve e direto, funciona muito bem pequeno.</p></div>
+    <div class="card"><div class="topo"><svg class="ic"><use href="#l13"/></svg>
+      <div class="mini"><svg class=""><use href="#l13"/></svg><small>perfil</small></div></div>
+      <div class="wm" style="background:#f2ede1;color:#12201e;border:2px solid #e3dccb"><svg><use href="#l13"/></svg><b>Orto</b><span style="font-weight:500;color:#e2563f">Questões</span></div>
+      <h2><i>13</i>O cortical</h2>
+      <p>O "O" é o corte transversal de um osso: cortical e trabéculas. Sutil e elegante, pede a paleta osso e coral.</p></div>
+    <div class="card"><div class="topo"><svg class="ic"><use href="#l14"/></svg>
+      <div class="mini"><svg class=""><use href="#l14"/></svg><small>perfil</small></div></div>
+      <div class="wm" style="background:#0b3a35;color:#fff"><svg><use href="#l14"/></svg><b>Orto</b><span style="font-weight:500;color:#f4cf7c">Questões</span></div>
+      <h2><i>14</i>Livro com osso</h2>
+      <p>Livro aberto com um osso de marcador de página. Remete a estudo e revisão.</p></div>
+  </div>
+</section>
+
+<script>
+const M = ['..RR......','.RRrR.....','KKKKKKKK..','KWSSSSSK..','KSSSSSSK..','KKKKKKKK..','KSKPPKSK..','KSSSSSsK..','.KsssssK..','..KKKKK...']
+const C = { K: '#1b1208', S: '#9eacb1', s: '#5f6d72', W: '#e9f0f2', R: '#d33a3a', r: '#8f1d1d', P: '#f2c08a' }
+let r = ''; M.forEach((l, y) => [...l].forEach((c, x) => { if (C[c]) r += `<rect x="${x + 1}" y="${y}" width="1.02" height="1.02" fill="${C[c]}"/>` }))
+document.querySelectorAll('[data-elmo]').forEach(el => el.innerHTML = r)
+</script>
+</body></html>

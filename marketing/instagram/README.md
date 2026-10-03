@@ -164,3 +164,6 @@ seguida de uma questão de prova ("chefão final") e da resposta com o porquê d
 sprites estão em `classificacoes/sprites.js` (mapas de caracteres, sem imagem externa).
 
 - **01 Johnson e Strom** (pronto): disfunção do tibial posterior, questão `pe-tornozelo-0094`.
+- **02 Lichtman, stories** (pronto): 3 stories (1080×1920) sobre a doença de Kienböck, com o
+  semilunar como pedra em forma de lua que endurece, racha e desaba. Sem questão: o último story
+  chama para o site; colocar a figurinha de link no espaço tracejado.

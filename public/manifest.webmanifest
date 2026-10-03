@@ -12,12 +12,12 @@
   "theme_color": "#14655E",
   "categories": ["education", "medical"],
   "icons": [
-    { "src": "icone-192.png?v=2", "sizes": "192x192", "type": "image/png", "purpose": "any" },
-    { "src": "icone-512.png?v=2", "sizes": "512x512", "type": "image/png", "purpose": "any" },
-    { "src": "icone-mascaravel-512.png?v=2", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+    { "src": "icone-192.png?v=3", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icone-512.png?v=3", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icone-mascaravel-512.png?v=3", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
   ],
   "shortcuts": [
-    { "name": "Revisar hoje", "url": "./#/revisao", "icons": [{ "src": "icone-192.png?v=2", "sizes": "192x192" }] },
-    { "name": "Treinar", "url": "./#/treinar", "icons": [{ "src": "icone-192.png?v=2", "sizes": "192x192" }] }
+    { "name": "Revisar hoje", "url": "./#/revisao", "icons": [{ "src": "icone-192.png?v=3", "sizes": "192x192" }] },
+    { "name": "Treinar", "url": "./#/treinar", "icons": [{ "src": "icone-192.png?v=3", "sizes": "192x192" }] }
   ]
 }

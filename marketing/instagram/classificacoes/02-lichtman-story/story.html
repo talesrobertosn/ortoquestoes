@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<!-- Série "Classificação em pixel art": 3 stories (1080x1920) sobre Lichtman (Kienböck).
+     node marketing/instagram/gerar.mjs marketing/instagram/classificacoes/02-lichtman-story/story.html
+     No story 3, colocar a figurinha de link para o site no espaço reservado abaixo do endereço.
+     Áreas seguras: nada importante nos 210 px de cima nem nos 300 px de baixo. -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Pixel; src: url(../../fontes/pixelify-sans-latin-700-normal.woff2) format('woff2'); font-weight: 700; }
+:root { --ouro: #f4cf7c; --couro: #1b1208; --vermelho: #f07a6a; --verde: #5cc9ad; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; color: #fff; background: #0a1328; width: 1080px; height: 1920px; padding: 210px 84px 300px; }
+section::before { content: ""; position: absolute; inset: 0; z-index: 0;
+  background: url(../../../../public/ranking/arena.png) center bottom / auto 100% no-repeat; image-rendering: pixelated; opacity: .45; }
+section::after { content: ""; position: absolute; inset: 0; z-index: 0;
+  background: linear-gradient(180deg, rgba(7, 12, 30, .97) 0%, rgba(7, 12, 30, .88) 60%, rgba(7, 12, 30, .55) 100%); }
+section > * { position: relative; z-index: 1; }
+.topo { display: flex; justify-content: space-between; align-items: center; }
+.marca { display: flex; align-items: center; gap: 16px; font: 36px Jakarta; letter-spacing: -.02em; }
+.marca svg { width: 58px; height: 58px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; opacity: .9; }
+.cont { font: 700 30px Pixel; color: rgba(255,255,255,.55); }
+.rot { display: inline-flex; padding: 12px 24px; border: 4px solid var(--ouro); background: rgba(27, 18, 8, .6);
+  color: var(--ouro); font: 700 32px Pixel; letter-spacing: .06em; text-transform: uppercase; box-shadow: 4px 4px 0 var(--couro); }
+h1, h2 { font-family: Pixel; font-weight: 700; text-shadow: 5px 5px 0 var(--couro); text-wrap: balance; }
+h1 { font-size: 118px; line-height: .95; }
+h2 { font-size: 84px; line-height: 1; }
+h1 em, h2 em { font-style: normal; color: var(--ouro); }
+.sub { font-size: 40px; line-height: 1.42; color: rgba(255, 255, 255, .86); text-wrap: pretty; }
+.sub b { color: #fff; } .sub em { font-style: normal; color: var(--ouro); font-weight: 700; }
+.caixa { background: rgba(14, 22, 44, .9); border: 5px solid var(--ouro); box-shadow: 8px 8px 0 var(--couro), inset 0 0 0 4px rgba(244,207,124,.18); }
+.cena { display: flex; justify-content: center; align-items: flex-end; gap: 40px; }
+/* Estágios */
+.est { display: grid; gap: 16px; margin-top: 36px; }
+.e { display: grid; grid-template-columns: 150px 1fr; gap: 26px; align-items: center; padding: 18px 28px; }
+.e .img { display: grid; place-items: center; }
+.e h3 { font: 700 46px Pixel; color: var(--ouro); text-shadow: 4px 4px 0 var(--couro); }
+.e h3 small { font-size: 32px; color: #fff; margin-left: 10px; }
+.e p { font-size: 30px; line-height: 1.34; color: rgba(255,255,255,.88); margin-top: 4px; }
+.e p b { color: #fff; }
+.e.chave { border-color: var(--vermelho); }
+.e.chave h3 { color: var(--vermelho); }
+.dica { position: absolute; left: 84px; right: 84px; bottom: 300px; display: flex; justify-content: space-between; font: 700 32px Pixel; color: rgba(255,255,255,.6); }
+.dica b { color: var(--ouro); }
+.link { text-align: center; margin-top: 50px; }
+.link b { font: 700 78px Pixel; color: var(--ouro); text-shadow: 6px 6px 0 var(--couro); }
+.figurinha { margin: 40px auto 0; width: 560px; height: 150px; border: 4px dashed rgba(244,207,124,.5); display: grid; place-items: center;
+  font: 700 28px Pixel; color: rgba(244,207,124,.6); letter-spacing: .06em; text-transform: uppercase; }
+.lista { display: grid; gap: 22px; margin-top: 50px; }
+.lista p { font-size: 38px; line-height: 1.35; color: rgba(255,255,255,.88); padding-left: 52px; position: relative; }
+.lista p::before { content: ""; position: absolute; left: 0; top: 14px; width: 24px; height: 24px; background: var(--ouro); box-shadow: 4px 4px 0 var(--couro); }
+.lista p b { color: #fff; }
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/>
+<circle cx="17" cy="20" r="4.5" fill="#9cc3bd"/><rect x="26" y="16.5" width="24" height="7" rx="3.5" fill="#9cc3bd"/>
+<circle cx="17" cy="32" r="4.5" fill="#f4cf7c"/><rect x="26" y="28.5" width="24" height="7" rx="3.5" fill="#f4cf7c"/>
+<circle cx="17" cy="44" r="4.5" fill="#9cc3bd"/><rect x="26" y="40.5" width="19" height="7" rx="3.5" fill="#9cc3bd"/></symbol>
+</defs></svg>
+
+<!-- 1. Capa -->
+<section id="s1">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">1/3</span></div>
+  <p class="rot" style="margin-top:70px">Classificação em pixel art</p>
+  <h1 style="margin-top:44px">A pedra da lua que <em>se partiu</em></h1>
+  <p class="sub" style="margin-top:40px">O <b>semilunar</b> é a pedra em forma de lua no centro do punho. Na doença de <em>Kienböck</em>, ele perde o sangue, endurece e quebra.</p>
+  <p class="sub" style="margin-top:28px"><b>Lichtman</b> conta essa queda em estágios. Decore com a lua.</p>
+  <div class="cena" style="margin-top:110px"><div data-sprite="heroi" data-escala="16"></div><div data-sprite="lua" data-escala="26"></div></div>
+  <div class="dica"><span>Mão e punho</span><span>toque <b>&gt;&gt;</b></span></div>
+</section>
+
+<!-- 2. Os estágios -->
+<section id="s2">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">2/3</span></div>
+  <h2 style="margin-top:40px">Lichtman em <em>cinco passos</em></h2>
+  <div class="est">
+    <div class="e caixa"><div class="img"><div data-sprite="lua" data-escala="12"></div></div>
+      <div><h3>I <small>parece normal</small></h3><p>Radiografia normal. Só a <b>ressonância</b> mostra.</p></div></div>
+    <div class="e caixa"><div class="img"><div data-sprite="luaB" data-escala="12"></div></div>
+      <div><h3>II <small>endurece</small></h3><p><b>Esclerose</b> do semilunar, ainda sem colapso.</p></div></div>
+    <div class="e caixa"><div class="img"><div data-sprite="luaR" data-escala="12"></div></div>
+      <div><h3>IIIA <small>racha</small></h3><p>O semilunar <b>colapsa</b>, mas o carpo segue alinhado.</p></div></div>
+    <div class="e caixa chave"><div class="img"><div data-sprite="luaT" data-escala="12"></div></div>
+      <div><h3>IIIB <small>desaba</small></h3><p>Colapso e <b>escafoide fixo em flexão</b>: o carpo perde o alinhamento.</p></div></div>
+    <div class="e caixa"><div class="img"><div data-sprite="luaP" data-escala="12"></div></div>
+      <div><h3>IV <small>ruína</small></h3><p><b>Artrose</b> do punho.</p></div></div>
+  </div>
+  <div class="caixa" style="margin-top:24px;padding:18px 30px;text-align:center"><p style="font:700 38px Pixel;color:var(--ouro)">IIIA ou IIIB? Olhe o escafoide.</p></div>
+  <div class="dica"><span>Doença de Kienböck</span><span>toque <b>&gt;&gt;</b></span></div>
+</section>
+
+<!-- 3. Chamada -->
+<section id="s3">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">3/3</span></div>
+  <h2 style="margin-top:70px">Quer treinar isso <em>em questão de prova</em>?</h2>
+  <div class="lista">
+    <p>Questões do <b>TEOT e do TARO</b> separadas por tema.</p>
+    <p>Cada uma <b>comentada</b>: a certa e por que cada errada está errada.</p>
+    <p>Revise o que errou e <b>suba no ranking</b>.</p>
+  </div>
+  <div class="link"><b>ortoquestoes.com.br</b></div>
+  <div class="figurinha">figurinha de link aqui</div>
+  <div class="cena" style="margin-top:60px"><div data-sprite="heroi" data-escala="11"></div><div data-sprite="lua" data-escala="16"></div></div>
+</section>
+
+<script src="../sprites.js"></script>
+</body></html>

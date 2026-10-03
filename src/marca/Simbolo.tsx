@@ -1,10 +1,12 @@
 /**
- * Símbolo do Orto Questões: três alternativas de uma questão (bolinha e
- * linha), com a do meio destacada como a resposta certa.
+ * Símbolo do Orto Questões: uma coluna de alternativas. Quatro vértebras em
+ * perfil (corpo, pedículo e processo espinhoso), com a terceira em dourado
+ * como a resposta certa.
  *
- * - 'selo': ladrilho verde com as alternativas em branco e a certa em dourado.
- *   É o mesmo desenho do favicon e do ícone do aplicativo.
- * - 'traco': só as alternativas, na cor do texto (currentColor), para selos
+ * - 'selo': ladrilho com as vértebras. As cores vêm de --marca-* em
+ *   tokens.css, então o tema escuro troca o ladrilho sozinho. É o mesmo
+ *   desenho do favicon e do ícone do aplicativo.
+ * - 'traco': só as vértebras, na cor do texto (currentColor), para selos
  *   pequenos dentro de botões e etiquetas.
  */
 export type VarianteSimbolo = 'selo' | 'traco'
@@ -18,11 +20,18 @@ interface Props {
 export const COR_MARCA = '#14655E'
 export const COR_DESTAQUE = '#F4CF7C'
 
-/** As três linhas do símbolo, no quadro de 32 por 32. A do meio é a certa. */
-export const LINHAS_SIMBOLO = [
-  { cx: 9, cy: 10, r: 2, x: 13, y: 8.4, largura: 11, certa: false },
-  { cx: 9, cy: 16, r: 2.6, x: 13, y: 14.4, largura: 12, certa: true },
-  { cx: 9, cy: 22, r: 2, x: 13, y: 20.4, largura: 8, certa: false },
+/** Uma vértebra em perfil, frente à esquerda, no quadro de 64 por 64:
+ * corpo e pedículo emendado no processo espinhoso. */
+export const CAMINHO_VERTEBRA =
+  'M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0Z' +
+  'M21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z'
+
+/** Onde cada vértebra fica no quadro de 64. A terceira é a certa. */
+export const VERTEBRAS = [
+  { x: 13, y: 9.5, certa: false },
+  { x: 11, y: 21.2, certa: false },
+  { x: 11, y: 32.9, certa: true },
+  { x: 13, y: 44.6, certa: false },
 ] as const
 
 export function Simbolo({ tamanho = 28, variante = 'selo', titulo = null }: Props) {
@@ -31,7 +40,7 @@ export function Simbolo({ tamanho = 28, variante = 'selo', titulo = null }: Prop
     <svg
       width={tamanho}
       height={tamanho}
-      viewBox="0 0 32 32"
+      viewBox="0 0 64 64"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       role={titulo ? 'img' : 'presentation'}
@@ -39,16 +48,19 @@ export function Simbolo({ tamanho = 28, variante = 'selo', titulo = null }: Prop
       focusable="false"
     >
       {titulo && <title>{titulo}</title>}
-      {selo && <rect width="32" height="32" rx="8" fill={COR_MARCA} />}
-      {LINHAS_SIMBOLO.map((l) => {
-        const cor = selo ? (l.certa ? COR_DESTAQUE : '#FFFFFF') : 'currentColor'
-        const opacidade = l.certa ? 1 : selo ? 0.55 : 0.5
-        return (
-          <g key={l.cy} fill={cor} opacity={opacidade}>
-            <circle cx={l.cx} cy={l.cy} r={l.r} />
-            <rect x={l.x} y={l.y} width={l.largura} height="3.2" rx="1.6" />
-          </g>
-        )
+      {selo && (
+        <rect
+          x="0.75" y="0.75" width="62.5" height="62.5" rx="15.25"
+          style={{ fill: `var(--marca-ladrilho, ${COR_MARCA})`, stroke: 'var(--marca-contorno, none)', strokeWidth: 1.5 }}
+        />
+      )}
+      {VERTEBRAS.map((v) => {
+        const estilo = v.certa
+          ? { fill: selo ? `var(--marca-certa, ${COR_DESTAQUE})` : 'currentColor' }
+          : selo
+            ? { fill: 'var(--marca-osso, #FFFFFF)', opacity: 'var(--marca-osso-opacidade, .55)' }
+            : { fill: 'currentColor', opacity: 0.5 }
+        return <path key={v.y} d={CAMINHO_VERTEBRA} transform={`translate(${v.x} ${v.y})`} style={estilo} />
       })}
     </svg>
   )

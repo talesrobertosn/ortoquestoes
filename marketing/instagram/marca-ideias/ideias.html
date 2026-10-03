@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<!-- Painel de ideias de logo (rascunho para escolha, não é a marca oficial).
+     node marketing/instagram/gerar.mjs marketing/instagram/marca-ideias/ideias.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Pixel; src: url(../fontes/pixelify-sans-latin-700-normal.woff2) format('woff2'); font-weight: 700; }
+* { box-sizing: border-box; margin: 0; }
+body { background: #333; font-family: Jakarta, sans-serif; }
+section { width: 1080px; background: #f4f1ea; padding: 60px 56px 70px; color: #12201e; }
+h1 { font-size: 54px; font-weight: 800; letter-spacing: -.03em; }
+.lide { font-size: 24px; color: #4d5a58; margin-top: 10px; }
+.grade { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 40px; }
+.card { background: #fff; border-radius: 28px; padding: 30px; box-shadow: 0 2px 0 rgba(0,0,0,.04), 0 12px 30px rgba(0,0,0,.06); }
+.card .topo { display: flex; align-items: center; gap: 26px; }
+.card .ic { width: 170px; height: 170px; flex: none; }
+.card .mini { display: flex; flex-direction: column; gap: 14px; align-items: center; }
+.card .mini svg { width: 64px; height: 64px; border-radius: 50%; }
+.card .mini small { font-size: 15px; color: #8a9593; }
+.wm { margin-top: 22px; display: flex; align-items: center; gap: 14px; font-size: 34px; letter-spacing: -.03em; padding: 16px 20px; border-radius: 16px; }
+.wm svg { width: 46px; height: 46px; }
+.card h2 { font-size: 26px; font-weight: 800; margin-top: 20px; letter-spacing: -.01em; }
+.card h2 i { font-style: normal; color: #d9a93f; margin-right: 8px; }
+.card p { font-size: 19px; line-height: 1.42; color: #4d5a58; margin-top: 6px; }
+.paletas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 30px; }
+.pal { background: #fff; border-radius: 22px; padding: 22px; }
+.pal .cores { display: flex; height: 70px; border-radius: 14px; overflow: hidden; }
+.pal .cores span { flex: 1; }
+.pal b { display: block; margin-top: 12px; font-size: 21px; } .pal small { font-size: 17px; color: #6b7775; }
+h3 { font-size: 30px; font-weight: 800; margin-top: 50px; letter-spacing: -.02em; }
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+<!-- 1. Osso certo: o traço longo do "certo" é um osso. -->
+<symbol id="l1" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#0b3a35"/>
+<line x1="14" y1="33" x2="26" y2="45" stroke="#f4cf7c" stroke-width="8" stroke-linecap="round"/>
+<line x1="26" y1="45" x2="47" y2="20" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+<circle cx="50.5" cy="22.4" r="5.4" fill="#fff"/><circle cx="44.6" cy="17.4" r="5.4" fill="#fff"/></symbol>
+<!-- 2. Cabeça e acetábulo: a cabeça do fêmur no acetábulo vira um "O". -->
+<symbol id="l2" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/>
+<path d="M12 30 A20 20 0 0 0 52 30" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+<circle cx="32" cy="28" r="12.5" fill="#f4cf7c"/></symbol>
+<!-- 3. Monograma OQ: a perna do Q é um "certo". -->
+<symbol id="l3" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#12201e"/>
+<circle cx="29" cy="29" r="15" fill="none" stroke="#f4cf7c" stroke-width="7"/>
+<polyline points="33,41 40,48 54,31" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<!-- 5. Raio X: osso iluminado no negatoscópio. -->
+<symbol id="l5" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#0a1328"/>
+<g opacity=".18" stroke="#9fd6ff" stroke-width="1"><line x1="0" y1="16" x2="64" y2="16"/><line x1="0" y1="32" x2="64" y2="32"/><line x1="0" y1="48" x2="64" y2="48"/><line x1="16" y1="0" x2="16" y2="64"/><line x1="32" y1="0" x2="32" y2="64"/><line x1="48" y1="0" x2="48" y2="64"/></g>
+<g transform="rotate(-45 32 32)" fill="#e6f6ff"><rect x="18" y="28.5" width="28" height="7" rx="3.5"/>
+<circle cx="18" cy="28" r="5.2"/><circle cx="18" cy="36" r="5.2"/><circle cx="46" cy="28" r="5.2"/><circle cx="46" cy="36" r="5.2"/></g>
+<circle cx="47" cy="47" r="7" fill="#f4cf7c"/><path d="M44.2 47 l2 2 l3.8-4.2" fill="none" stroke="#0a1328" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<!-- 6. Gabarito: a bolha preenchida na folha de respostas. -->
+<symbol id="l6" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#fbf6ea"/>
+<g font-family="Jakarta" font-weight="800" font-size="9" text-anchor="middle" dominant-baseline="central">
+<circle cx="20" cy="22" r="7" fill="none" stroke="#9fb3b0" stroke-width="2"/><text x="20" y="22.5" fill="#9fb3b0">A</text>
+<circle cx="44" cy="22" r="7" fill="none" stroke="#9fb3b0" stroke-width="2"/><text x="44" y="22.5" fill="#9fb3b0">B</text>
+<circle cx="20" cy="44" r="7" fill="none" stroke="#9fb3b0" stroke-width="2"/><text x="20" y="44.5" fill="#9fb3b0">C</text>
+<circle cx="44" cy="44" r="9" fill="#0b3a35"/><text x="44" y="44.5" fill="#f4cf7c" font-size="10">D</text></g></symbol>
+</defs></svg>
+
+<section id="ideias">
+  <h1>Orto Questões · ideias de logo</h1>
+  <p class="lide">Seis direções. Em cada uma: o ícone, como fica no círculo do Instagram e ao lado do nome.</p>
+  <div class="grade">
+
+    <div class="card"><div class="topo"><svg class="ic"><use href="#l1"/></svg>
+      <div class="mini"><svg><use href="#l1"/></svg><small>perfil</small></div></div>
+      <div class="wm" style="background:#0b3a35;color:#fff"><svg><use href="#l1"/></svg><b>Orto</b><span style="font-weight:500">Questões</span></div>
+      <h2><i>1</i>Osso certo</h2>
+      <p>O sinal de "certo" com o traço longo virando um osso. Diz em um símbolo: ortopedia + acertar a questão.</p></div>
+
+    <div class="card"><div class="topo"><svg class="ic"><use href="#l2"/></svg>
+      <div class="mini"><svg><use href="#l2"/></svg><small>perfil</small></div></div>
+      <div class="wm" style="background:#14655e;color:#fff"><svg><use href="#l2"/></svg><b>Orto</b><span style="font-weight:500">Questões</span></div>
+      <h2><i>2</i>Cabeça no acetábulo</h2>
+      <p>A cabeça do fêmur encaixada forma o "O" de Orto. Minimalista, só quem é da área percebe a anatomia.</p></div>
+
+    <div class="card"><div class="topo"><svg class="ic"><use href="#l3"/></svg>
+      <div class="mini"><svg><use href="#l3"/></svg><small>perfil</small></div></div>
+      <div class="wm" style="background:#12201e;color:#fff"><svg><use href="#l3"/></svg><b>Orto</b><span style="font-weight:500;color:#f4cf7c">Questões</span></div>
+      <h2><i>3</i>Monograma OQ</h2>
+      <p>Um "O" com a perna do "Q" em forma de "certo". Lê como OQ e como acerto. O mais "marca de app".</p></div>
+
+    <div class="card"><div class="topo">
+      <svg class="ic" viewBox="0 0 12 15" shape-rendering="crispEdges" id="escudo"></svg>
+      <div class="mini"><svg viewBox="-3 -2 18 19" shape-rendering="crispEdges" id="escudo2" style="background:#0a1328"></svg><small>perfil</small></div></div>
+      <div class="wm" style="background:#0a1328;color:#f4cf7c;font-family:Pixel;font-size:36px;letter-spacing:.02em"><svg viewBox="0 0 12 15" shape-rendering="crispEdges" id="escudo3"></svg>ORTO QUESTÕES</div>
+      <h2><i>4</i>Brasão pixel</h2>
+      <p>Escudo com osso cruzado, no mundo do herói, do ranking e do XP. Combina com os posts em pixel art.</p></div>
+
+    <div class="card"><div class="topo"><svg class="ic"><use href="#l5"/></svg>
+      <div class="mini"><svg><use href="#l5"/></svg><small>perfil</small></div></div>
+      <div class="wm" style="background:#0a1328;color:#e6f6ff"><svg><use href="#l5"/></svg><span style="font-weight:800">orto</span><span style="font-weight:400;color:#9fd6ff">questões</span></div>
+      <h2><i>5</i>Raio X</h2>
+      <p>Osso no negatoscópio com o selo dourado de acerto. Mais médico e sério, bom para anúncios.</p></div>
+
+    <div class="card"><div class="topo"><svg class="ic"><use href="#l6"/></svg>
+      <div class="mini"><svg><use href="#l6"/></svg><small>perfil</small></div></div>
+      <div class="wm" style="background:#fbf6ea;color:#0b3a35;border:2px solid #e8dfca"><svg><use href="#l6"/></svg><b>Orto</b><span style="font-weight:500">Questões</span></div>
+      <h2><i>6</i>Gabarito</h2>
+      <p>A folha de respostas com a bolha marcada. Evolução direta da logo atual, só que mais legível.</p></div>
+  </div>
+
+  <h3>Paletas possíveis</h3>
+  <div class="paletas">
+    <div class="pal"><div class="cores"><span style="background:#06201c"></span><span style="background:#14655e"></span><span style="background:#f4cf7c"></span><span style="background:#fbf6ea"></span></div><b>Verde e ouro</b><small>a atual, sóbria e médica</small></div>
+    <div class="pal"><div class="cores"><span style="background:#0a1328"></span><span style="background:#1d3a7a"></span><span style="background:#f4cf7c"></span><span style="background:#f07a6a"></span></div><b>Noite de arena</b><small>a dos posts pixel, mais jovem</small></div>
+    <div class="pal"><div class="cores"><span style="background:#12201e"></span><span style="background:#f2ede1"></span><span style="background:#e2563f"></span><span style="background:#7cc4b5"></span></div><b>Osso e coral</b><small>clara e diferente das concorrentes</small></div>
+  </div>
+</section>
+
+<script>
+const M = ['.KKKKKKKKKK.','KGGGGGGGGGGK','KGTTTTTTTTGK','KGTTTTTTTTGK','KGWWTTTTWWGK','KGTWWWWWWTGK','KGWWTTTTWWGK','KGTTTTTTTTGK','KGTTTTTTTTGK','.KGTTTTTTGK.','.KGTTTTTTGK.','..KGTTTTGK..','...KGTTGK...','....KGGK....','.....KK.....']
+const C = { K: '#1b1208', G: '#f4cf7c', T: '#14655e', W: '#fbf6ea' }
+let r = ''; M.forEach((l, y) => [...l].forEach((c, x) => { if (C[c]) r += `<rect x="${x}" y="${y}" width="1.02" height="1.02" fill="${C[c]}"/>` }))
+for (const id of ['escudo', 'escudo2', 'escudo3']) document.getElementById(id).innerHTML = r
+</script>
+</body></html>

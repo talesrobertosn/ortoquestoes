@@ -332,8 +332,11 @@ reimportação do PDF nunca apaga esse campo.
 ## Marca
 
 O nome é escrito por extenso, **Orto Questões**, em Plus Jakarta Sans ("Orto" em 800 e
-"Questões" em 500; licença OFL, arquivo em `src/marca/`). O símbolo são três alternativas de uma
-questão, bolinha e linha, com a do meio, a certa, em dourado (`#F4CF7C`) sobre o verde `#14655E`.
+"Questões" em 500; licença OFL, arquivo em `src/marca/`). O símbolo é a "coluna de alternativas":
+quatro vértebras em perfil (corpo, pedículo e processo espinhoso), com a terceira, a certa, em
+dourado (`#F4CF7C`) sobre o verde `#14655E`. No tema escuro o ladrilho usa as cores escuras do site
+(tokens `--marca-*` em `src/estilos/tokens.css`). O símbolo sempre acompanha o nome por extenso,
+exceto onde o nome já aparece ao lado (favicon, ícone do aplicativo).
 Não usar letra dentro de círculo como símbolo. O desenho vive em `src/marca/Simbolo.tsx` e em
 `public/favicon.svg`; depois de mudar o favicon, rode `python3 scripts/gerar_icones.py`.
 

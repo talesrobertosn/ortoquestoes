@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<!-- Ideia 2 refinada (coluna de alternativas) nas cores do site (src/estilos/tokens.css).
+     node marketing/instagram/gerar.mjs marketing/instagram/marca-ideias/coluna.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+* { box-sizing: border-box; margin: 0; }
+body { background: #333; font-family: Jakarta, sans-serif; }
+section { width: 1080px; background: #f1f3f2; padding: 56px 56px 64px; color: #12181a; }
+h1 { font-size: 50px; font-weight: 800; letter-spacing: -.03em; }
+h3 { font-size: 28px; font-weight: 800; margin-top: 46px; letter-spacing: -.02em; }
+.lide { font-size: 22px; color: #5b686c; margin-top: 10px; line-height: 1.45; }
+.cores { display: flex; gap: 14px; margin-top: 18px; flex-wrap: wrap; }
+.cores span { display: flex; align-items: center; gap: 10px; font-size: 17px; color: #5b686c; background: #fff; padding: 8px 14px 8px 8px; border-radius: 999px; }
+.cores i { width: 30px; height: 30px; border-radius: 50%; display: block; border: 1px solid rgba(0,0,0,.08); }
+.par { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 24px; margin-top: 22px; }
+.tema { border-radius: 26px; padding: 30px; }
+.tema h4 { font-size: 18px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; opacity: .6; }
+.tema .grande { display: block; width: 220px; height: 220px; margin: 22px auto 0; }
+.wm { display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 26px; font-size: 38px; letter-spacing: -.03em; }
+.wm svg { width: 50px; height: 50px; } .wm b { font-weight: 800; } .wm span { font-weight: 500; }
+.tam { display: flex; justify-content: center; align-items: flex-end; gap: 22px; margin-top: 26px; font-size: 14px; opacity: .7; }
+.tam div { text-align: center; } .tam svg { display: block; margin: 0 auto 6px; }
+.cab { margin-top: 26px; border-radius: 14px; padding: 14px 18px; display: flex; align-items: center; gap: 12px; font-size: 22px; letter-spacing: -.02em; }
+.cab svg { width: 34px; height: 34px; } .cab b { font-weight: 800; } .cab span { font-weight: 500; }
+.cab em { margin-left: auto; font-style: normal; font-size: 16px; padding: 8px 14px; border-radius: 8px; font-weight: 700; }
+.perfis { display: flex; gap: 34px; justify-content: center; margin-top: 22px; }
+.perfis div { text-align: center; font-size: 17px; color: #5b686c; }
+.perfis .c { width: 200px; height: 200px; border-radius: 50%; display: grid; place-items: center; margin-bottom: 10px; overflow: hidden; }
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+<!-- Uma vértebra de perfil: corpo à esquerda, pedículo e processo espinhoso para trás e para baixo. -->
+<g id="vert"><rect x="0" y="0" width="22" height="8.6" rx="3.2"/><rect x="21" y="2.6" width="5" height="3.6"/>
+<path d="M25 1.8 L34.2 5.2 Q35.6 5.8 35 7.2 L34.4 8.4 Q33.8 9.6 32.4 9.1 L25 6.6 Z"/></g>
+
+<!-- Ícone em tema claro: azulejo verdete, vértebras brancas, a alternativa certa em ouro. -->
+<symbol id="claro" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/>
+<use href="#vert" x="13" y="9.5" fill="#95bab7"/>
+<use href="#vert" x="11" y="21.2" fill="#95bab7"/>
+<use href="#vert" x="11" y="32.9" fill="#f4cf7c"/>
+<use href="#vert" x="13" y="44.6" fill="#95bab7"/></symbol>
+
+<!-- Ícone em tema escuro: azulejo da superfície escura, vértebras em verdete claro, ouro do tema escuro. -->
+<symbol id="escuro" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#171e1d" stroke="#2a3432" stroke-width="1.5"/>
+<use href="#vert" x="13" y="9.5" fill="#39776e"/>
+<use href="#vert" x="11" y="21.2" fill="#39776e"/>
+<use href="#vert" x="11" y="32.9" fill="#e0b862"/>
+<use href="#vert" x="13" y="44.6" fill="#39776e"/></symbol>
+
+<!-- Só as vértebras, para o círculo do perfil. -->
+<symbol id="so" viewBox="9 6 41 52">
+<use href="#vert" x="13" y="9.5" fill="#95bab7"/><use href="#vert" x="11" y="21.2" fill="#95bab7"/>
+<use href="#vert" x="11" y="32.9" fill="#f4cf7c"/><use href="#vert" x="13" y="44.6" fill="#95bab7"/></symbol>
+</defs></svg>
+
+<section id="coluna">
+  <h1>Coluna de alternativas, nas cores do site</h1>
+  <p class="lide">As vértebras ganharam corpo, pedículo e processo espinhoso, para lerem como coluna de perfil e não como menu. A paleta é a mesma do site: verdete no tema claro e a superfície esverdeada no tema escuro, com o ouro marcando a alternativa certa.</p>
+  <div class="cores">
+    <span><i style="background:#14655e"></i>verdete #14655e</span>
+    <span><i style="background:#f4cf7c"></i>ouro #f4cf7c</span>
+    <span><i style="background:#12181a"></i>grafite #12181a</span>
+    <span><i style="background:#f1f3f2"></i>porcelana #f1f3f2</span>
+    <span><i style="background:#0f1413"></i>escuro #0f1413</span>
+    <span><i style="background:#4fb3a5"></i>verdete escuro #4fb3a5</span>
+    <span><i style="background:#e0b862"></i>ouro escuro #e0b862</span>
+  </div>
+
+  <div class="par">
+    <div class="tema" style="background:#fff;color:#12181a">
+      <h4>Tema claro (padrão)</h4>
+      <svg class="grande"><use href="#claro"/></svg>
+      <div class="wm"><svg><use href="#claro"/></svg><b>Orto</b><span style="color:#14655e">Questões</span></div>
+      <div class="tam"><div><svg width="64" height="64"><use href="#claro"/></svg>64</div><div><svg width="32" height="32"><use href="#claro"/></svg>32</div><div><svg width="16" height="16"><use href="#claro"/></svg>16</div></div>
+      <div class="cab" style="background:#fff;border:1px solid #dce2e0"><svg><use href="#claro"/></svg><b>Orto</b><span style="color:#14655e">Questões</span><em style="background:#14655e;color:#fff">Treinar</em></div>
+    </div>
+    <div class="tema" style="background:#0f1413;color:#e7ecea">
+      <h4>Tema escuro</h4>
+      <svg class="grande"><use href="#escuro"/></svg>
+      <div class="wm"><svg><use href="#escuro"/></svg><b>Orto</b><span style="color:#4fb3a5">Questões</span></div>
+      <div class="tam"><div><svg width="64" height="64"><use href="#escuro"/></svg>64</div><div><svg width="32" height="32"><use href="#escuro"/></svg>32</div><div><svg width="16" height="16"><use href="#escuro"/></svg>16</div></div>
+      <div class="cab" style="background:#171e1d;border:1px solid #2a3432"><svg><use href="#escuro"/></svg><b>Orto</b><span style="color:#4fb3a5">Questões</span><em style="background:#4fb3a5;color:#0f1413">Treinar</em></div>
+    </div>
+  </div>
+
+  <h3>Foto de perfil e redes</h3>
+  <div class="perfis">
+    <div><div class="c" style="background:#14655e"><svg width="122" height="155"><use href="#so"/></svg></div>Instagram</div>
+    <div><div class="c" style="background:linear-gradient(135deg,#0b3a35 0%,#14655e 58%,#1d8074 100%)"><svg width="122" height="155"><use href="#so"/></svg></div>com o degradê dos posts</div>
+  </div>
+</section>
+</body></html>

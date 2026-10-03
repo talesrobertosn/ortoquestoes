@@ -83,6 +83,13 @@
   --bronze: #9a5b2e;
   --bronze-veu: #f5e9df;
 
+  /* Símbolo da marca (src/marca/Simbolo.tsx): ladrilho, vértebras e a certa. */
+  --marca-ladrilho: #14655e;
+  --marca-contorno: none;
+  --marca-osso: #ffffff;
+  --marca-osso-opacidade: 0.55;
+  --marca-certa: #f4cf7c;
+
   color-scheme: light;
 }
 
@@ -122,6 +129,12 @@
   --prata-veu: #232b2c;
   --bronze: #d99a6c;
   --bronze-veu: #2f231b;
+
+  --marca-ladrilho: #171e1d;
+  --marca-contorno: #2a3432;
+  --marca-osso: #39776e;
+  --marca-osso-opacidade: 1;
+  --marca-certa: #e0b862;
 
   color-scheme: dark;
 }
