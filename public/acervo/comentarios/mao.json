@@ -2227,25 +2227,25 @@
   "conferido": false
  },
  "mao-0213": {
-  "conceito": "### Polegar do esquiador e lesão de Stener\n- Ruptura do **colateral ulnar** da MF do polegar, geralmente ==distal== (base da falange proximal).\n- **Stener:** o coto se desloca e fica **por cima da aponeurose do adutor**, sem contato com o osso: não cicatriza sem cirurgia.\n\n### Exame\n| Posição | Estrutura testada |\n|---|---|\n| ==MF em 30° de flexão== | ==colateral próprio== |\n| MF em extensão | colateral acessório + placa volar |\n\n- Instável: abertura **acima de 30 a 35°** ou **15° a mais** que o lado sadio; ausência de ponto final firme.\n- Nódulo palpável proximal à MF: coto retido (Stener).\n- **Radiografia antes** do estresse (fratura-avulsão).\n- Ultrassom ou RM em caso de dúvida.\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| parcial, estável | órtese em espica 4 a 6 semanas |\n| completa, instável, Stener | reparo cirúrgico (âncora) |\n| crônica | reconstrução com enxerto (palmar longo) ou artrodese |\n\n> **Na prova:** instabilidade = ==diferença acima de 15°== em relação ao lado normal (ou abertura absoluta acima de 30°).",
-  "correta": "**15°.**\n- Diferença acima de 15° em relação ao outro polegar caracteriza instabilidade.\n- O critério absoluto é abertura acima de 30°.",
   "incorretas": {
-   "B": "**Critério absoluto.**\n- 30° é a abertura no próprio polegar, não a diferença.",
-   "C": "**Excessivo.**\n- 45° de diferença praticamente só com luxação.",
-   "D": "**Muito além.**\n- Nenhum critério usa 60°."
+   "B": "Trinta graus é o critério absoluto, a abertura do próprio polegar lesado, e não a diferença em relação ao outro lado.",
+   "C": "Quarenta e cinco graus de diferença só ocorreriam praticamente numa luxação; não é o limiar usado.",
+   "D": "Nenhum critério de instabilidade usa uma diferença de 60°."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **ligamento colateral ulnar** da metacarpofalângica do polegar impede que o polegar se abra para o lado radial. Sua ruptura é o **polegar do esquiador** (ou do goleiro). O exame decide se a lesão é parcial (tratada com imobilização) ou completa (geralmente cirúrgica).\n\n**Como é feito o teste**: o examinador força o polegar para o lado radial (**estresse em valgo**), com a metacarpofalângica **fletida a cerca de 30°**. Nessa posição, o colateral próprio fica tenso e é ele que se avalia, sem que a placa volar segure a articulação e mascare a lesão.\n\n**Os critérios de instabilidade** (lesão completa):\n\nabertura **mais de 15° maior que a do polegar do outro lado**;\n\nou abertura absoluta maior que cerca de **30° a 35°**;\n\nou ausência de um **ponto final firme** (o ligamento não \"segura\" no fim do movimento).\n\nO critério comparativo de **15°** é importante porque algumas pessoas têm o polegar naturalmente mais frouxo; comparar com o outro lado evita confundir frouxidão natural com lesão.\n\n**Outros cuidados**:\n\nfazer a **radiografia antes** do teste de estresse, para não deslocar uma fratura-avulsão;\n\num **nódulo palpável** acima da metacarpofalângica sugere a **lesão de Stener**, em que o ligamento fica preso por cima da aponeurose do adutor e não cicatriza sem cirurgia.\n\n**O tratamento**: lesões parciais e estáveis, órtese por 4 a 6 semanas; lesões completas, instáveis ou de Stener, reparo cirúrgico; lesões crônicas, reconstrução com enxerto ou artrodese.\n\n**Na prova**: uma diferença de abertura acima de 15° em relação ao lado normal torna a lesão passível de cirurgia.",
+  "correta": "Uma abertura mais de 15° maior que a do polegar normal caracteriza instabilidade e torna a lesão passível de tratamento cirúrgico.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0214": {
-  "conceito": "### Síndrome dolorosa regional complexa (SDRC)\n| Tipo | Definição |\n|---|---|\n| I (distrofia simpático-reflexa) | sem lesão nervosa definida |\n| II (causalgia) | com lesão de nervo identificável |\n\n### Critérios de Budapeste\n- Dor contínua desproporcional ao evento.\n- Sintomas e sinais em categorias: **sensitiva** (alodinia, hiperalgesia), **vasomotora** (temperatura, cor), **sudomotora/edema**, **motora/trófica**.\n\n### Fases clássicas\n| Fase | Achados |\n|---|---|\n| ==aguda (quente)== | ==calor, edema, eritema==, **hiperidrose**, dor intensa |\n| distrófica | pele fria, cianótica, rigidez, osteopenia |\n| atrófica | pele seca e fina, atrofia, contraturas |\n\n### Tratamento\n- **Precoce**: analgesia, fisioterapia (dessensibilização, imagem motora graduada), corticoide oral, bisfosfonato, bloqueios.\n- Prevenção: ==vitamina C== (500 mg/dia por cerca de 50 dias) após fratura do rádio distal; estudos iniciais mostraram redução da SDRC, metanálises recentes são menos conclusivas.\n\n> **Na prova:** vitamina com ação descrita na SDRC = ==vitamina C== (profilaxia).",
-  "correta": "**Vitamina C.**\n- É a vitamina estudada na prevenção da SDRC após fratura do rádio distal.\n- Com o quadro instalado, o foco é analgesia e fisioterapia precoce.",
   "incorretas": {
-   "A": "**Sem papel.**\n- A vitamina A não tem ação descrita.",
-   "B": "**Sem evidência específica.**\n- O complexo B é adjuvante em neuropatias.",
-   "D": "**Outro papel.**\n- A vitamina D importa para o osso, não para a SDRC."
+   "A": "A vitamina A não tem ação descrita na síndrome de dor regional complexa.",
+   "B": "As vitaminas do complexo B são usadas como adjuvantes em neuropatias, sem evidência específica nessa síndrome.",
+   "D": "A vitamina D tem papel no metabolismo ósseo, mas não na prevenção da síndrome de dor regional complexa."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O caso descreve uma mulher que, um mês depois de operar uma fratura do rádio distal, desenvolve **dor intensa**, desproporcional, com **inchaço** e **alterações vasomotoras** (mudanças de cor e temperatura) no membro operado. É o quadro da **síndrome de dor regional complexa** (SDRC), antes chamada de distrofia simpático-reflexa.\n\n**O que é a SDRC**: uma resposta exagerada e anormal do organismo a um trauma ou cirurgia, com dor muito maior do que o esperado e alterações na circulação, no suor, na pele e no movimento. A fratura do **rádio distal** é um dos desencadeantes mais comuns.\n\n**O diagnóstico**: usa os critérios de Budapeste, com dor contínua desproporcional e sinais em várias categorias (sensibilidade, circulação, suor e inchaço, movimento e pele). Na fase inicial, a mão fica quente, inchada e avermelhada.\n\n**O papel da vitamina C**: estudos mostraram que a **vitamina C**, tomada em doses diárias (cerca de 500 mg por dia, por cerca de 50 dias) depois de uma fratura do rádio distal, **reduziu a ocorrência** da SDRC. O efeito provável é antioxidante, diminuindo a inflamação. É a vitamina com ação descrita nessa situação. As revisões mais recentes são menos conclusivas, mas a vitamina C continua sendo a resposta cobrada.\n\n**O tratamento do quadro instalado** deve ser **precoce**: controle da dor, fisioterapia com dessensibilização e técnicas de imagem motora, corticoide, bisfosfonatos e bloqueios.\n\n**Na prova**: a vitamina com ação descrita na síndrome de dor regional complexa após fratura do rádio distal é a vitamina C.",
+  "correta": "A vitamina C é a estudada na prevenção da síndrome de dor regional complexa após fratura do rádio distal, com redução da sua ocorrência.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0217": {
@@ -2271,43 +2271,44 @@
   "conferido": false
  },
  "mao-0225": {
-  "conceito": "### Espaço de Parona\n- Espaço virtual no **terço distal volar do antebraço**.\n- Limites: ==atrás, o pronador quadrado==; ==à frente, os tendões do flexor profundo==.\n- Comunica-se, pelo túnel do carpo, com as ==bursas radial e ulnar== e com os espaços profundos da mão (e, pela literatura clássica, com a região mediocarpal por continuidade dos planos).\n\n### Abscesso em ferradura\n- Infecção da bainha do **polegar** (bursa radial) → espaço de Parona → **bursa ulnar** → bainha do **mínimo** (ou o caminho inverso).\n- Drenagem precisa incluir a região volar distal do antebraço.\n\n### Bainhas que se continuam com as bursas\n| Bainha | Bursa |\n|---|---|\n| polegar (FLP) | radial |\n| mínimo | ulnar |\n| indicador, médio, anelar | terminam na palma (em geral) |\n\n> **Na prova:** o gabarito aceita que o espaço de Parona ==comunica-se com o espaço mediocarpal== (continuidade dos espaços profundos).",
-  "correta": "**Resposta oficial.**\n- O espaço de Parona se continua com os espaços profundos, o que explica a disseminação das infecções.\n- É a base do abscesso em ferradura.",
   "incorretas": {
-   "B": "**Nega a comunicação.**\n- Sem ela não existiria abscesso em ferradura.",
-   "C": "**Posição invertida.**\n- O espaço fica à frente do pronador quadrado.",
-   "D": "**Plano errado.**\n- Fica profundo aos flexores profundos.",
-   "E": "**Bainha errada.**\n- Comunica com as bursas do polegar e do mínimo, não do indicador."
+   "B": "Negar qualquer comunicação contraria a anatomia: sem ela, não existiria o abscesso em ferradura.",
+   "C": "A posição está invertida: o espaço de Parona fica à frente do pronador quadrado, e não abaixo dele.",
+   "D": "O espaço fica profundo aos flexores profundos, e não entre o superficial e o profundo.",
+   "E": "O espaço de Parona se comunica com as bursas do polegar e do mínimo, e não diretamente com a bainha do indicador."
   },
-  "geradoEm": "2026-09-24",
+  "alerta": "Para a anatomia clássica, o espaço de Parona se comunica com o espaço mediopalmar (o espaço profundo da palma) e com as bursas radial e ulnar, e não com a articulação mediocárpica. É provável que a questão se refira ao espaço mediopalmar; o gabarito A foi mantido.",
+  "conceito": "O **espaço de Parona** é um espaço virtual (sem conteúdo, mas que pode se encher de pus) na parte **volar e distal do antebraço**, logo acima do punho.\n\n**Seus limites**:\n\n**atrás**: o músculo **pronador quadrado**;\n\n**na frente**: os tendões do **flexor profundo dos dedos**.\n\nOu seja, ele fica **profundo** aos flexores e **na frente** do pronador quadrado.\n\n**Por que ele importa**: ele se continua, através do túnel do carpo, com os **espaços profundos da palma** (o espaço mediopalmar) e com as **bursas** dos tendões flexores. Por isso, uma infecção pode passar da mão para o antebraço por esse caminho.\n\n**As bursas e as bainhas**:\n\na bainha do **polegar** (flexor longo do polegar) se continua com a **bursa radial**;\n\na bainha do **mínimo** se continua com a **bursa ulnar**;\n\nas bainhas do indicador, do médio e do anelar geralmente terminam na palma.\n\n**O abscesso em ferradura**: uma infecção da bainha do **polegar** sobe pela bursa radial, passa pelo **espaço de Parona** e desce pela bursa ulnar até a bainha do **mínimo** (ou o caminho inverso). O pus forma um \"U\", como uma ferradura. A drenagem precisa incluir a região volar distal do antebraço.\n\n**Na prova**: o gabarito aceita que o espaço de Parona se comunica com o espaço mediocarpal; anatomicamente, a comunicação descrita é com os espaços profundos da palma e as bursas.",
+  "correta": "É o gabarito oficial: o espaço de Parona se continua com os espaços profundos, o que explica a disseminação das infecções e o abscesso em ferradura (veja o alerta).",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0226": {
-  "conceito": "### Fases histológicas de Luck (Dupuytren)\n| Fase | Histologia | Colágeno III/I |\n|---|---|---|\n| I: proliferativa | fibroblastos e miofibroblastos abundantes, nódulos | ==alta== |\n| II: involutiva | miofibroblastos alinhados na linha de tração | intermediária |\n| ==III: residual== | ==tecido acelular, pouco vascularizado (corda madura)== | ==cerca de 20%== (próximo da fáscia normal) |\n\n### Implicações\n- Doença ativa (nódulos, colágeno III alto): **mais recidiva** após cirurgia.\n- Preferir operar cordas maduras.\n- Corticoide injetável atua nos nódulos ativos.\n\n### Biologia\n- **Miofibroblasto** com actina de músculo liso: gera a contração.\n- TGF-β, via Wnt, genética.\n\n> **Na prova:** Luck III = colágeno III/I ==cerca de 20%==.",
-  "correta": "**Cerca de 20%.**\n- Na fase residual o colágeno III já foi substituído pelo tipo I.\n- A proporção volta para perto da fáscia normal.",
   "incorretas": {
-   "A": "**Fase proliferativa.**\n- 75% é o extremo de maior atividade.",
-   "B": "**Ainda em remodelação.**\n- 55% não descreve a corda residual.",
-   "C": "**Alto demais.**\n- 45% não corresponde à fase residual.",
-   "D": "**Próximo, mas acima.**\n- 35% ainda passa do valor descrito."
+   "A": "Setenta e cinco por cento corresponde ao extremo de maior atividade, na fase proliferativa.",
+   "B": "Cinquenta e cinco por cento ainda reflete tecido em remodelação, e não a corda residual.",
+   "C": "Quarenta e cinco por cento é alto demais para a fase residual.",
+   "D": "Trinta e cinco por cento fica acima do valor descrito para a fase residual."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **doença de Dupuytren** é uma proliferação anormal da fáscia palmar. Ao microscópio, ela passa por fases, descritas por **Luck**, que refletem a \"atividade\" da doença.\n\n**O colágeno**: o corpo produz vários tipos de colágeno. O **tipo I** é o colágeno maduro e resistente, predominante na fáscia normal. O **tipo III** é um colágeno mais \"jovem\", produzido em tecidos em formação e cicatrização. Na doença ativa, a produção de **colágeno III** aumenta muito.\n\n**As três fases de Luck**:\n\n**fase I, proliferativa**: muitas células, principalmente **miofibroblastos** (fibroblastos que se contraem como músculo), formando **nódulos**. A proporção de colágeno III em relação ao I é **alta**. A doença está ativa;\n\n**fase II, involutiva**: os miofibroblastos se alinham na direção da tração e começam a contrair a fáscia. A proporção de colágeno III é intermediária;\n\n**fase III, residual**: o tecido fica **com poucas células**, pouco irrigado, formando a **corda madura**. O colágeno III foi substituído pelo tipo I, e a proporção cai para cerca de **20%**, perto da fáscia normal.\n\n**Importância prática**:\n\na doença **ativa** (nódulos, colágeno III alto) tem **mais recidiva** após a cirurgia;\n\npor isso, muitos preferem operar quando a corda já está madura;\n\na infiltração de corticoide atua sobre os nódulos ativos.\n\n**Na prova**: na fase III (residual) de Luck, a proporção entre colágeno III e I é de cerca de 20%.",
+  "correta": "Na fase residual, o colágeno III já foi em grande parte substituído pelo tipo I, e a proporção volta para cerca de 20%, perto da fáscia normal.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0227": {
-  "conceito": "### Testes clínicos da IFP\n| Teste | Situação | Técnica |\n|---|---|---|\n| ==Smith (flexão ativa)== | ==Dupuytren== | observa a correção da contratura com a flexão ativa: separa limitação articular fixa da deformidade causada pela corda |\n| Elson | botoeira (banda central) | IFP fletida a 90° na borda da mesa, extensão resistida: IFD rígida em extensão = banda central rota |\n| Bouvier (Zancolli) | garra (paralisia intrínseca) | bloquear a hiperextensão da MF: se as IF estendem, extensores íntegros (garra corrigível) |\n| Bunnell-Littler | intrínsecos | IFP com MF estendida × fletida |\n| Haines-Zancolli | retinacular oblíquo | IFD com IFP estendida × fletida |\n\n### Dupuytren: contratura da IFP\n- Após fasciectomia, contratura residual pode ser **articular** (placa volar, colaterais) ou da corda; testes ajudam a planejar liberação adicional.\n\n> **Na prova:** teste de flexão ativa de ==Smith== na ==Dupuytren==.",
-  "correta": "**Smith, Dupuytren.**\n- O teste de flexão ativa de Smith avalia a deformidade da IFP na doença de Dupuytren.",
   "incorretas": {
-   "B": "**Elson é da banda central.**\n- Serve à botoeira, não a Dupuytren.",
-   "C": "**Doença errada.**\n- Smith associa-se a Dupuytren.",
-   "D": "**Teste da banda central.**\n- Elson segue sendo da botoeira.",
-   "E": "**Garra.**\n- Zancolli avalia intrínsecos, não Dupuytren."
+   "B": "O teste de Elson avalia a banda central, na botoeira, e não a doença de Dupuytren.",
+   "C": "O teste de Smith está associado à doença de Dupuytren, e não à mão reumatoide.",
+   "D": "O teste de Elson avalia a banda central da botoeira, e não a mão reumatoide em geral.",
+   "E": "A manobra de Zancolli avalia a garra por paralisia dos intrínsecos, e não é um teste de flexão ativa da IFP."
   },
+  "conceito": "Na **interfalângica proximal** (IFP), vários testes ajudam a descobrir a causa de uma deformidade. Cada teste tem sua doença e seu objetivo:\n\n**teste de flexão ativa de Smith**: usado na **doença de Dupuytren**. Observa-se se a contratura da IFP muda com a flexão ativa do dedo. Isso ajuda a separar uma limitação **articular fixa** (a cápsula e a placa volar já encurtaram) de uma deformidade causada **só pela corda**. É importante para planejar a cirurgia: se a articulação está presa, pode ser preciso liberá-la além de retirar a corda;\n\n**teste de Elson**: usado na **botoeira**. Com a IFP dobrada a 90° na borda da mesa, o paciente tenta estendê-la contra resistência. Se a interfalângica distal fica rígida em extensão, a banda central está rompida;\n\n**teste de Bouvier** (manobra de Zancolli): usado na **garra** por paralisia dos intrínsecos, como na hanseníase. Bloqueando a hiperextensão da metacarpofalângica, verifica-se se as interfalângicas conseguem estender; se conseguem, a garra é corrigível;\n\n**Bunnell-Littler**: avalia a retração dos músculos intrínsecos;\n\n**Haines-Zancolli**: avalia o ligamento retinacular oblíquo.\n\n**Na prova**: o teste de flexão ativa da IFP de Smith é usado na deformidade de Dupuytren.",
+  "correta": "O teste de flexão ativa de Smith avalia a deformidade da IFP na doença de Dupuytren, separando a limitação articular fixa da causada pela corda.",
   "referencias": [
    "Wolfe SW et al. Green's Operative Hand Surgery. 8th ed. Elsevier; 2022. Dupuytren disease and extensor tendon examination.",
    "Hueston JT. Dupuytren's Contracture. Churchill Livingstone; 1985."
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0228": {
@@ -2323,75 +2324,75 @@
   "conferido": false
  },
  "mao-0229": {
-  "conceito": "### Flexor longo do polegar (FLP)\n- Tendão **único**, ventre **independente**, sem conexões com outros flexores.\n- ==Sem vínculas== que o retenham como nos dedos longos: retrai rápido e muito.\n\n### Zonas flexoras do polegar\n| Zona | Local |\n|---|---|\n| T1 | distal à IF |\n| ==T2== | ==polia A1 até a IF== (inclui a **polia oblíqua**) |\n| T3 | eminência tenar |\n| T4 | túnel do carpo |\n| T5 | antebraço |\n\n### Onde achar o coto proximal na lesão T2\n- ==Região tenar== (ou mais proximal): ampliar a incisão para a palma.\n- Evitar incisão na eminência tenar próxima ao **ramo motor** do mediano.\n\n### Polias do polegar\n- A1 (MF), **oblíqua** (falange proximal: a essencial), A2 (IF).\n\n> **Na prova:** coto proximal do FLP na zona 2 fica na ==região tenar==.",
-  "correta": "**Região tenar.**\n- Sem vínculas, o FLP retrai até a tenar ou além.\n- A exploração precisa estender-se à palma.",
   "incorretas": {
-   "A": "**Coto distal.**\n- A IF fica distal à lesão.",
-   "B": "**Passa por baixo.**\n- O coto retrai além da polia oblíqua.",
-   "D": "**Proximal demais.**\n- O Parona é alcançado em lesões mais altas.",
-   "E": "**Retração excessiva.**\n- Além do túnel é mais do que o habitual na zona 2."
+   "A": "A interfalângica fica distal à lesão na zona 2; é onde fica o coto distal, e não o proximal.",
+   "B": "O coto passa por baixo da polia oblíqua e retrai além dela, para a região tenar.",
+   "D": "O espaço de Parona fica no antebraço distal, mais proximal do que a retração habitual numa lesão da zona 2.",
+   "E": "Retrair além do túnel do carpo é mais do que o habitual numa lesão da zona 2."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **flexor longo do polegar** (FLP) é o tendão que dobra a ponta do polegar. Ele tem características que o tornam diferente dos flexores dos outros dedos:\n\né um tendão **único**, com **ventre muscular independente**, sem ligação com os outros flexores;\n\n**não tem as vínculas** que, nos outros dedos, seguram o tendão junto ao osso e limitam a retração.\n\n**A consequência**: quando o FLP é cortado, o coto proximal é puxado pelo músculo e **retrai rápido e muito**, sem nada que o segure no caminho.\n\n**As zonas dos flexores do polegar**:\n\n**T1**: além da interfalângica;\n\n**T2**: da polia A1 (na metacarpofalângica) até a interfalângica, incluindo a **polia oblíqua**, a mais importante do polegar;\n\n**T3**: a **eminência tenar**;\n\n**T4**: o túnel do carpo;\n\n**T5**: o antebraço.\n\n**Onde encontrar o coto proximal numa lesão na zona T2**: ele costuma estar retraído até a **região tenar** ou além. Por isso, a exploração cirúrgica muitas vezes precisa ser ampliada para a palma.\n\n**Um cuidado**: ao fazer incisões na eminência tenar, é preciso proteger o **ramo motor do nervo mediano**, que inerva os músculos tenares.\n\n**Na prova**: na lesão do flexor longo do polegar na zona 2, o coto proximal frequentemente está na região tenar.",
+  "correta": "Sem vínculas para segurá-lo, o flexor longo do polegar retrai até a região tenar ou além, e a exploração precisa se estender à palma.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0230": {
-  "conceito": "### Técnica de Paneva-Holevich\n- Reconstrução em **dois tempos** usando o ==flexor superficial dos dedos como enxerto pediculado==.\n\n| Tempo | Passos |\n|---|---|\n| 1º | haste de silicone (Hunter) na bainha; **sutura FSD–FPD na palma** (alça em U); reconstrução de polias |\n| 2º (cerca de 3 meses) | secção proximal do FSD; o FSD é **rebatido** pela pseudobainha até a falange distal |\n\n### Vantagens\n- Uma sutura proximal já **cicatrizada**; enxerto com **pedículo vascular**.\n- Sem área doadora distante.\n\n### Doadores de enxerto livre (comparação)\n| Tendão | Observação |\n|---|---|\n| palmar longo | mais usado; ausente em cerca de 15% |\n| plantar | ausente em cerca de 7 a 20%; ferida na perna |\n| extensor longo dos dedos do pé | longos |\n| FRC (tira) | reconstruções ligamentares (Eaton-Littler) |\n\n> **Na prova:** Paneva-Holevich usa o ==flexor superficial dos dedos==.",
-  "correta": "**FSD pediculado.**\n- O FSD suturado ao FPD na palma é rebatido até a falange distal.\n- Tem uma sutura já cicatrizada e pedículo vascular.",
   "incorretas": {
-   "A": "**Enxerto livre.**\n- O plantar exige ferida na perna.",
-   "B": "**Enxerto livre.**\n- O palmar longo não caracteriza esta técnica.",
-   "C": "**Reconstruções ligamentares.**\n- O FRC não é o enxerto de Paneva-Holevich.",
-   "D": "**É o que se reconstrói.**\n- O FPD é o receptor."
+   "A": "O plantar é usado como enxerto livre em outras técnicas, exigindo uma incisão na perna.",
+   "B": "O palmar longo é o enxerto livre mais usado em outras técnicas, e não caracteriza a de Paneva-Holevich.",
+   "C": "O flexor radial do carpo é usado em reconstruções ligamentares, como a de Eaton-Littler, e não como enxerto nesta técnica.",
+   "D": "O flexor profundo é o tendão que se quer reconstruir, o receptor, e não o enxerto."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Quando um **tendão flexor** está lesado há muito tempo (lesão crônica) e a bainha cicatrizou, a reconstrução costuma ser feita em **dois tempos**. A **técnica de Paneva-Holevich** é uma forma engenhosa de fazer isso **sem retirar um enxerto de outro lugar** do corpo.\n\n**Como funciona**:\n\n**primeiro tempo**:\n\ncoloca-se uma **haste de silicone** (técnica de Hunter) no lugar do tendão, dentro do dedo. O corpo forma ao redor dela uma nova bainha lisa (pseudobainha);\n\nna **palma**, o **flexor superficial dos dedos** (FSD) e o **flexor profundo** (FPD) do mesmo dedo são **suturados um ao outro**, formando uma alça em U;\n\nreconstroem-se as polias, se necessário;\n\n**segundo tempo** (cerca de 3 meses depois):\n\no **FSD** é cortado lá em cima, no antebraço;\n\nele é então **virado** e passado pela nova bainha, no lugar da haste, até ser preso na falange distal.\n\n**As vantagens**:\n\no enxerto é o próprio **FSD**, que mantém seus **vasos** (é pediculado);\n\na sutura da palma, entre FSD e FPD, já está **cicatrizada** quando se faz o segundo tempo;\n\nnão é preciso retirar um tendão de outra região.\n\n**Os enxertos livres usados em outras técnicas**: palmar longo (o mais usado, ausente em cerca de 15% das pessoas), plantar e extensores longos dos dedos do pé.\n\n**Na prova**: a técnica de Paneva-Holevich usa o flexor superficial dos dedos como enxerto pediculado.",
+  "correta": "Na técnica de Paneva-Holevich, o flexor superficial, suturado ao profundo na palma, é virado e levado até a falange distal como enxerto pediculado.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0231": {
-  "conceito": "### Complicações do enxerto tendíneo flexor\n| Complicação | Frequência / mecanismo |\n|---|---|\n| ==aderência== | ==a mais comum==: a revascularização pelo leito cola o enxerto |\n| ruptura | nas junções, menos frequente |\n| quadriga | enxerto **curto** demais |\n| lumbrical plus | enxerto **longo e frouxo** |\n| contratura em flexão da IFP | frequente |\n| corda de arco | polias insuficientes |\n\n### Prevenção das aderências\n- Pré-requisitos: articulações **móveis**, pele boa, polias reconstruídas.\n- Técnica atraumática, junções fora da bainha, **mobilização precoce**.\n- Tenólise após 3 a 6 meses se aderência limitante.\n\n### Síndrome de Parkes-Weber\n- Malformação vascular congênita (fístulas arteriovenosas), sem relação com enxertos.\n\n> **Na prova:** complicação mais comum do enxerto flexor = ==aderência==.",
-  "correta": "**Aderência.**\n- O tecido que revasculariza o enxerto também o cola ao leito.\n- O resultado depende muito da reabilitação.",
   "incorretas": {
-   "A": "**Menos frequente.**\n- A ruptura ocorre nas junções, mas é rara.",
-   "B": "**Rara.**\n- O tendão sobrevive por embebição.",
-   "D": "**Evitável.**\n- A quadriga vem de enxerto curto, erro de tensão.",
-   "E": "**Não existe como complicação.**\n- Parkes-Weber é malformação vascular."
+   "A": "A ruptura ocorre nas junções das suturas, mas é menos frequente que a aderência.",
+   "B": "A necrose é rara: o enxerto sobrevive por embebição até ser revascularizado.",
+   "D": "O efeito quadriga resulta de um enxerto curto demais, um erro de tensão evitável, e não é a complicação mais comum.",
+   "E": "A síndrome de Parkes-Weber é uma malformação vascular congênita, sem relação com enxertos de tendão."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Quando um tendão flexor é reconstruído com um **enxerto de tendão**, o enxerto é inicialmente um tecido \"solto\", sem irrigação própria. Ele sobrevive porque o **leito** ao redor cria novos vasos que crescem em direção a ele (revascularização).\n\n**A complicação mais comum, a aderência**: os mesmos tecidos que levam sangue ao enxerto também **o prendem** ao leito. Formam-se pontes de cicatriz entre o enxerto e as estruturas vizinhas, e o tendão **perde o deslizamento**. O dedo fica com movimento limitado.\n\n**Outras complicações**:\n\n**ruptura**: nas junções das suturas, mas é menos frequente;\n\n**efeito quadriga**: quando o enxerto fica **curto demais**, impedindo os dedos vizinhos de dobrar;\n\n**dedo lumbrical plus**: quando o enxerto fica **longo e frouxo**, causando extensão paradoxal;\n\n**contratura em flexão** da interfalângica proximal;\n\n**corda de arco**: quando as polias são insuficientes.\n\n**Como prevenir as aderências**:\n\noperar só com as **articulações móveis**, **pele boa** e polias reconstruídas;\n\ntécnica delicada, com as suturas fora da bainha;\n\n**mobilização precoce**;\n\nse a aderência limitar muito, fazer uma **tenólise** (liberação cirúrgica do tendão) após 3 a 6 meses.\n\n**Sobre a síndrome de Parkes-Weber**: é uma **malformação vascular congênita**, com comunicações anormais entre artérias e veias. Não tem relação com enxertos de tendão.\n\n**Na prova**: a complicação mais comum da reconstrução flexora com enxerto é a aderência.",
+  "correta": "Os tecidos que revascularizam o enxerto também o prendem ao leito, e a aderência é a complicação mais comum.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0232": {
-  "conceito": "### Classificação de Michon (tenossinovite infecciosa dos flexores)\n| Estágio | Achado intraoperatório | Tratamento |\n|---|---|---|\n| I | líquido **seroso** aumentado, sinovite | irrigação por cateter |\n| II | líquido **purulento**, sinóvia granulomatosa | irrigação ± desbridamento limitado |\n| ==III== | ==necrose séptica de tendão, bainha e polias== | ==desbridamento extenso, possível amputação== |\n\n### Por que o estágio III é tão grave\n- Tendão necrosado não recupera deslizamento.\n- Infecção pode progredir para bursas e espaço de Parona (**ferradura**).\n\n### Fatores de mau prognóstico\n| Fator de Pang | |\n|---|---|\n| idade acima de 43 anos | |\n| diabetes | |\n| doença vascular periférica | |\n| insuficiência renal | |\n| ==infecção polimicrobiana== | |\n\n- Com três fatores ou mais, o risco de amputação sobe muito.\n\n> **Na prova:** fator de mau prognóstico de Pang = ==infecção polimicrobiana==",
-  "correta": "**Polimicrobiana.**\n- Indica inóculo maior e contaminação suja.\n- Integra os fatores de Pang com idade, diabetes, doença vascular e insuficiência renal.",
   "incorretas": {
-   "A": "**Fora da lista.**\n- Sexo não é fator de Pang.",
-   "B": "**Rótulo genérico.**\n- A lista cita diabetes e insuficiência renal.",
-   "D": "**Invertido.**\n- O fator é idade acima de 43 anos.",
-   "E": "**Grave, mas fora da lista.**\n- Vários dedos sugerem ferradura, mas não é fator de Pang."
+   "A": "O sexo não faz parte da lista de fatores de mau prognóstico de Pang.",
+   "B": "Imunodeficiência é um rótulo genérico; a lista de Pang cita condições específicas, como diabetes e insuficiência renal.",
+   "D": "O fator é o inverso: idade acima de 43 anos, e não abaixo de 20.",
+   "E": "O acometimento de vários dedos é grave, mas não está na lista de fatores de Pang."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **tenossinovite infecciosa dos flexores** é a infecção dentro da bainha dos tendões flexores de um dedo. É uma urgência, porque pode destruir o tendão e, nos casos graves, levar à amputação do dedo.\n\n**Os fatores de mau prognóstico descritos por Pang**: num estudo que analisou quais pacientes evoluíam pior (com rigidez importante ou amputação), foram identificados:\n\n**idade acima de 43 anos**;\n\n**diabetes**;\n\n**doença vascular periférica**;\n\n**insuficiência renal**;\n\n**infecção polimicrobiana** (causada por várias bactérias ao mesmo tempo).\n\nQuanto **mais fatores** o paciente tem, maior o risco: com três ou mais, o risco de amputação sobe muito.\n\n**Por que a infecção polimicrobiana é grave**: ela costuma indicar uma **contaminação maior e mais suja**, como em mordidas, ferimentos em ambiente agrícola ou feridas negligenciadas, com bactérias diferentes atuando juntas e mais difíceis de tratar.\n\n**Os outros fatores da questão**:\n\n**sexo**: não faz parte da lista;\n\n**imunodeficiência**: é um rótulo genérico; a lista cita condições específicas, como diabetes e insuficiência renal;\n\n**idade menor que 20 anos**: o fator é o inverso, idade **acima** de 43 anos;\n\n**vários dedos acometidos**: é grave e sugere disseminação (como no abscesso em ferradura), mas não faz parte da lista de Pang.\n\n**Na prova**: a infecção polimicrobiana é um fator de mau prognóstico de Pang na tenossinovite infecciosa flexora.",
+  "correta": "A infecção polimicrobiana indica contaminação maior e faz parte dos fatores de Pang, com idade acima de 43 anos, diabetes, doença vascular e insuficiência renal.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0233": {
-  "conceito": "### Polegar do esquiador e lesão de Stener\n- Ruptura do **colateral ulnar** da MF do polegar, geralmente ==distal== (base da falange proximal).\n- **Stener:** o coto se desloca e fica **por cima da aponeurose do adutor**, sem contato com o osso: não cicatriza sem cirurgia.\n\n### Exame\n| Posição | Estrutura testada |\n|---|---|\n| ==MF em 30° de flexão== | ==colateral próprio== |\n| MF em extensão | colateral acessório + placa volar |\n\n- Instável: abertura **acima de 30 a 35°** ou **15° a mais** que o lado sadio; ausência de ponto final firme.\n- Nódulo palpável proximal à MF: coto retido (Stener).\n- **Radiografia antes** do estresse (fratura-avulsão).\n- Ultrassom ou RM em caso de dúvida.\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| parcial, estável | órtese em espica 4 a 6 semanas |\n| completa, instável, Stener | reparo cirúrgico (âncora) |\n| crônica | reconstrução com enxerto (palmar longo) ou artrodese |\n\n### Fragmento ósseo na avulsão do LCU\n| Fragmento | Conduta |\n|---|---|\n| ==pequeno (< 15 a 20% da superfície)== | ==ressecar e reinserir o ligamento com miniâncora== |\n| grande, deslocado (> 2 mm) ou articular | redução e fixação (parafuso, fio, banda de tensão) |\n| sem desvio, articulação estável | imobilização |\n\n> **Na prova:** Stener com fragmento de 10% = ==ressecção e miniâncora==",
-  "correta": "**Ressecar e ancorar.**\n- Um fragmento de 10% não suporta implante nem contribui para a congruência.\n- O ligamento é reinserido direto no osso com miniâncora.",
   "incorretas": {
-   "A": "**Stener é cirúrgico.**\n- A aponeurose interposta impede a cicatrização.",
-   "B": "**Fragmento pequeno demais.**\n- O parafuso o fragmenta.",
-   "C": "**Sem controle.**\n- O fio não controla rotação e perfura o fragmento.",
-   "D": "**Desproporcional.**\n- Miniplaca não cabe nesse tamanho."
+   "A": "A lesão de Stener é cirúrgica: a aponeurose do adutor interposta impede a cicatrização com tratamento conservador.",
+   "B": "Um fragmento de 10% é pequeno demais para um miniparafuso, que o fragmentaria.",
+   "C": "O fio de Kirschner não controla a rotação e perfura um fragmento tão pequeno.",
+   "D": "Uma miniplaca é desproporcional para um fragmento desse tamanho."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **lesão de Stener** acontece quando o **ligamento colateral ulnar** da metacarpofalângica do polegar se rompe por completo e o coto fica **dobrado por cima da aponeurose do adutor**. Com essa lâmina entre o ligamento e o osso, ele **não cicatriza**, e a cirurgia é necessária.\n\n**Às vezes, o ligamento arranca um pedaço de osso** da base da falange proximal (fratura-avulsão). A conduta depende do **tamanho** do fragmento:\n\n**fragmento pequeno**, menor que cerca de 15% a 20% da superfície articular: ele não contribui para a estabilidade da articulação e é pequeno demais para receber um parafuso ou fio sem se quebrar. A melhor opção é **retirar o fragmento** e **reinserir o ligamento diretamente no osso** com uma **miniâncora** (um pequeno dispositivo preso ao osso com fio, que ancora o ligamento);\n\n**fragmento grande**, deslocado mais de 2 mm ou que faz parte importante da articulação: deve ser **reduzido e fixado** (com parafuso, fio ou banda de tensão);\n\n**fragmento sem desvio** com a articulação estável: pode ser imobilizado.\n\n**No caso da questão**: há uma lesão de Stener (que já exige cirurgia) e um fragmento de apenas **10%** da superfície, preso ao ligamento. A conduta é **ressecar o fragmento e reinserir o ligamento com miniâncora**.\n\n**Por que não fixar o fragmento**: um parafuso o fragmentaria; um fio de Kirschner não controla a rotação e perfura o pedaço pequeno; uma miniplaca é grande demais.\n\n**Na prova**: na lesão de Stener com fragmento de 10% da superfície, a conduta é ressecar o fragmento e reinserir o ligamento com miniâncora.",
+  "correta": "Um fragmento de 10% não suporta implante nem contribui para a articulação; ele é retirado e o ligamento é reinserido no osso com miniâncora.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0234": {
-  "conceito": "### Trapeziometacarpiana: estabilidade ligamentar\n- Articulação em **sela**, pouca congruência óssea: estabilidade depende dos ligamentos.\n\n| Ligamento | Papel |\n|---|---|\n| ==palmar (oblíquo anterior, em bico)== | ==principal freio da subluxação dorsal na pinça== (visão clássica) |\n| dorsorradial | restritor dorsal espesso (valorizado em estudos recentes) |\n| oblíquo posterior | coadjuvante |\n| colateral ulnar | contém desvio radial |\n| intermetacarpal | une bases do 1º e 2º MC |\n\n### Cascata da rizartrose\n1. Frouxidão do ligamento palmar.\n2. Base do 1º MC subluxa para **dorsal e radial**.\n3. Carga concentrada na **faceta palmar** do trapézio: desgaste começa ali.\n4. Metacarpo aduz; MF hiperestende (ziguezague).\n\n### Tratamento\n| Fase | Opções |\n|---|---|\n| inicial (Eaton I) | órtese, infiltração, reconstrução ligamentar (Eaton-Littler com FRC) |\n| II a IV | trapezectomia (com ou sem interposição e suspensão), artrodese, próteses |\n\n### Quando o oblíquo anterior fica tenso\n- ==Pronação, abdução e extensão== do 1º raio (pinça e oposição), que empurram a base do metacarpo para dorsal e radial.\n\n> **Na prova:** oblíquo anterior tenso em ==pronação, abdução e extensão==",
-  "correta": "**Pronação, abdução e extensão.**\n- É a posição da pinça, em que a base tende a escapar para dorsal.\n- Por isso o ligamento falha primeiro na rizartrose.",
   "incorretas": {
-   "A": "**Relaxa.**\n- Adução e flexão recolhem o polegar.",
-   "B": "**Rotação e posição erradas.**\n- A supinação não é o movimento da pinça.",
-   "D": "**Rotação errada.**\n- O metacarpo prona na oposição.",
-   "E": "**Posição não funcional.**\n- Neutro com desvio lateral não tensiona o ligamento."
+   "A": "Adução e flexão recolhem o polegar e relaxam o ligamento oblíquo anterior.",
+   "B": "A supinação, a adução e a flexão não correspondem à posição de pinça e não tensionam o ligamento.",
+   "D": "A abdução e a extensão estão certas, mas na oposição o metacarpo prona, e não supina.",
+   "E": "A posição neutra com desvio lateral não é funcional e não tensiona o ligamento oblíquo anterior."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A articulação **carpometacarpiana do polegar** (trapeziometacarpiana) tem a forma de **sela** e muita mobilidade. Sua estabilidade vem principalmente dos **ligamentos**. O mais lembrado é o **ligamento oblíquo anterior** (ligamento em bico), na face palmar.\n\n**Quando um ligamento fica tenso**: um ligamento trabalha quando o movimento tende a afastar os pontos onde ele se prende. O oblíquo anterior vai do trapézio até a base palmar do primeiro metacarpo. Ele fica **tenso** quando a base do metacarpo tende a escorregar para **dorsal e radial**.\n\n**Isso acontece na posição de pinça e oposição**:\n\n**pronação** do primeiro raio: o metacarpo gira para que a polpa do polegar fique de frente para os dedos;\n\n**abdução**: o polegar se afasta da palma;\n\n**extensão**.\n\nÉ exatamente a posição em que fazemos força para pegar e apertar objetos. Nela, a base do metacarpo é empurrada para dorsal, e o ligamento oblíquo anterior a segura.\n\n**Por isso ele falha na rizartrose**: como é o ligamento mais solicitado durante a pinça, ao longo dos anos ele se desgasta e fica frouxo. A base do metacarpo começa a subluxar para dorsal, e a artrose se instala.\n\n**As outras posições**: adução e flexão **recolhem** o polegar para dentro da palma e **relaxam** o ligamento.\n\n**Na prova**: o ligamento oblíquo anterior fica tenso em pronação, abdução e extensão do primeiro raio.",
+  "correta": "Pronação, abdução e extensão formam a posição de pinça, em que a base do metacarpo tende a escapar para dorsal e o ligamento oblíquo anterior a segura.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0235": {
@@ -2407,32 +2408,32 @@
   "conferido": false
  },
  "mao-0236": {
-  "conceito": "### Eaton-Littler e conduta na rizartrose\n| Estágio | Radiografia | Opções |\n|---|---|---|\n| ==I== | normal ou espaço **alargado** (sinovite), subluxação < 1/3 | órtese, infiltração, ==reconstrução ligamentar (Eaton-Littler)==, osteotomia de extensão do 1º MC |\n| II | estreitamento, osteófitos < 2 mm | osteotomia, artroscopia, trapezectomia parcial |\n| III | osteófitos > 2 mm, esclerose, cistos | trapezectomia (± LRTI), artrodese, prótese |\n| IV | + escafotrapeziotrapezoide (pantrapezial) | trapezectomia total |\n\n### Técnica de Eaton-Littler\n- Tira de **metade do flexor radial do carpo** passada por túnel na base do 1º MC.\n- Reconstrói o **ligamento oblíquo anterior** (freio da subluxação dorsal).\n- Só faz sentido com **cartilagem preservada**.\n\n### Artroplastias de suspensão após trapezectomia\n| Técnica | Tendão |\n|---|---|\n| ==Weilby== | ==tira do FRC== entrelaçada em 8 com o **abdutor longo** e o próprio FRC |\n| Burton-Pellegrini (LRTI) | FRC por túnel no 1º MC + interposição |\n| Thompson | abdutor longo ancorado no 2º MC |\n| suspensão com botão (TightRope) | implante |\n\n> **Na prova:** Weilby usa o ==flexor radial do carpo==",
-  "correta": "**Flexor radial do carpo.**\n- Uma tira do FRC é entrelaçada em 8 com o abdutor longo e o próprio FRC.\n- Reconstrói o oblíquo anterior e a contenção intermetacarpal.",
   "incorretas": {
-   "A": "**Enxerto livre.**\n- O palmar longo não permite a suspensão pediculada.",
-   "C": "**Função indispensável.**\n- Os extensores radiais estendem o punho.",
-   "D": "**Músculo curto.**\n- O abdutor curto não fornece tendão útil.",
-   "E": "**Participa, mas não é colhido.**\n- A tira do FRC é entrelaçada em torno do abdutor longo."
+   "A": "O palmar longo é usado como enxerto livre em outras situações e não permite a suspensão pediculada da técnica de Weilby.",
+   "C": "Os extensores radiais do carpo estendem o punho e têm função importante; não são usados nessa técnica.",
+   "D": "O abdutor curto do polegar é um músculo curto e não fornece um tendão útil para a suspensão.",
+   "E": "O abdutor longo participa da técnica, servindo de apoio para o entrelaçamento, mas o tendão colhido é o flexor radial do carpo."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **rizartrose avançada**, uma cirurgia comum é retirar o **trapézio** (trapezectomia). Sem o trapézio, a base do primeiro metacarpo pode \"afundar\" no espaço vazio, encurtando o polegar. Por isso, muitas técnicas fazem uma **suspensão**: usam um tendão para segurar o metacarpo no lugar e reconstruir os ligamentos.\n\n**A técnica de Weilby**: usa uma **tira do tendão flexor radial do carpo** (FRC), que fica preso na sua inserção (na base do segundo metacarpo). Essa tira é **entrelaçada em forma de 8** em volta do tendão do **abdutor longo do polegar** e do próprio FRC. Assim, ela reconstrói o **ligamento oblíquo anterior** e a contenção **entre os metacarpos**, suspendendo a base do polegar.\n\n**Outras técnicas de suspensão após a trapezectomia**:\n\n**Burton-Pellegrini** (técnica LRTI): também usa o FRC, passado por um túnel na base do primeiro metacarpo, com interposição de tendão no espaço do trapézio;\n\n**Thompson**: usa o abdutor longo do polegar, ancorado no segundo metacarpo;\n\n**suspensão com implante**: um fio resistente com botões, sem usar tendão.\n\n**Por que o FRC**: ele corre bem perto do trapézio, é longo e forte, e uma tira dele pode ser usada sem prejuízo importante para a flexão do punho. O mesmo tendão é usado na reconstrução de Eaton-Littler, nos estágios iniciais.\n\n**Na prova**: a técnica de Weilby usa como enxerto o flexor radial do carpo.",
+  "correta": "Na técnica de Weilby, uma tira do flexor radial do carpo é entrelaçada em 8 com o abdutor longo e o próprio flexor radial, reconstruindo os ligamentos.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0237": {
-  "conceito": "### Posição da artrodese do punho\n- ==10 a 20° de extensão==, ==alinhado com o 3º metacarpo== (eixo central), leve desvio ulnar aceitável.\n- A extensão coloca os flexores em comprimento favorável: **maior força de preensão**.\n\n### Artrodese bilateral\n- Um punho em extensão (preensão); o outro mais **neutro ou em leve flexão** (higiene íntima, alcançar o corpo).\n\n### Técnica\n- Placa dorsal de compressão do rádio ao **3º metacarpo** (com a angulação de extensão incorporada), enxerto.\n- Incluir ou não a 3ª carpometacarpiana (tendência a não incluir).\n\n### Indicações\n- Artrose pancarpal, AR, sequelas de infecção, paralisias (espásticas), falha de artrodeses parciais.\n\n### Alternativas\n- Artroplastia total do punho (baixa demanda), artrodeses parciais, denervação.\n\n### Complicações da artrodese total\n| Complicação | Comentário |\n|---|---|\n| ==síndrome do túnel do carpo== | ==frequente== em séries históricas (cerca de 2/3 precisaram de liberação na série citada) |\n| irritação e retirada da placa | comum |\n| pseudartrose | especialmente na 3ª CMC |\n| dor ulnar (RUD) | |\n| fratura na ponta da placa | |\n\n> **Na prova:** liberação do túnel após artrodese total = ==cerca de 67%== na série cobrada (veja o alerta).",
-  "correta": "**Cerca de 67%.**\n- É o percentual da série de referência da questão.\n- Muitos cirurgiões liberam o túnel no mesmo ato.",
   "incorretas": {
-   "A": "**Abaixo.**\n- 27% subestima.",
-   "B": "**Abaixo.**\n- 37% também subestima.",
-   "C": "**Não corresponde.**\n- 47% não é o valor da série.",
-   "D": "**Próximo, mas não.**\n- O valor cobrado é 67%."
+   "A": "Vinte e sete por cento subestima a frequência da série cobrada.",
+   "B": "Trinta e sete por cento também fica abaixo do valor da série de referência.",
+   "C": "Quarenta e sete por cento não corresponde ao valor da série cobrada.",
+   "D": "Cinquenta e sete por cento se aproxima, mas o valor da série de referência é de cerca de 67%."
   },
+  "conceito": "A **artrodese total do punho** funde o rádio, o carpo e o terceiro metacarpo para eliminar a dor, em casos como artrose de todo o carpo, artrite reumatoide avançada ou falha de outras cirurgias. A posição ideal é de **10° a 20° de extensão**, alinhada com o terceiro metacarpo, o que dá a melhor força de preensão.\n\n**As complicações**:\n\n**síndrome do túnel do carpo**: é **frequente** depois da artrodese. A cirurgia e a mudança na posição do punho podem aumentar o inchaço e a pressão dentro do túnel. Na série de referência da questão, cerca de **dois terços** (aproximadamente **67%**) dos pacientes precisaram de **liberação do túnel do carpo**;\n\n**irritação pela placa**, com necessidade de retirá-la depois: comum;\n\n**pseudartrose** (falha da fusão), especialmente na articulação do terceiro metacarpo com o carpo;\n\ndor no lado ulnar, pela articulação radioulnar distal;\n\nfratura do osso na ponta da placa.\n\n**Na prática**: por causa dessa frequência, muitos cirurgiões **liberam o túnel do carpo no mesmo ato** da artrodese, principalmente quando o paciente já tem algum sintoma.\n\n**Um cuidado com o número**: a taxa de 67% vem de uma série específica. Ela depende da técnica, da população operada e de como se definiu a indicação da liberação, e não representa uma taxa universal das artrodeses atuais.\n\n**Na prova**: após a artrodese total do punho, a liberação do túnel do carpo foi necessária em cerca de 67% na série cobrada.",
+  "correta": "Na série de referência, cerca de dois terços dos pacientes precisaram de liberação do túnel do carpo após a artrodese total do punho.",
   "alerta": "O percentual é dependente da técnica, da população e da definição de indicação; não representa uma taxa universal das artrodeses modernas.",
   "referencias": [
    "Wolfe SW et al. Green's Operative Hand Surgery. 8th ed. Elsevier; 2022. Total wrist arthrodesis.",
    "Berber O et al. Total wrist arthrodesis: a systematic review. J Wrist Surg. 2018;7:424-440."
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0238": {
@@ -2452,39 +2453,39 @@
   "conferido": false
  },
  "mao-0239": {
-  "conceito": "### Luxação perissemilunar: mecanismo\n- ==Trauma de alta energia== (queda de altura, moto, esmagamento).\n- ==Hiperextensão== do punho, ==desvio ulnar== e ==supinação intercarpal== (Mayfield).\n- O semilunar fica preso pelos ligamentos volares; o carpo gira e desloca dorsalmente.\n\n### Diagnóstico\n- Até cerca de **25%** passam despercebidas no pronto-socorro.\n- PA: linhas de **Gilula** quebradas, sobreposição carpal, semilunar triangular.\n- Perfil: capitato fora da cúpula do semilunar (perissemilunar) ou semilunar volar (xícara derramada).\n- TC para fraturas associadas (arco maior).\n\n### Tratamento\n1. Redução fechada urgente (tração, manobra de Tavernier).\n2. Descompressão do mediano se sintomático.\n3. Redução aberta, reparo ligamentar, fixação com fios, tratamento das fraturas.\n\n### Linhas (arcos) de Gilula\n1. Borda proximal da fileira proximal.\n2. Borda distal da fileira proximal.\n3. Borda proximal da fileira distal.\n- Degrau em qualquer arco ou semilunar **triangular** = luxação até prova em contrário.\n\n> **Na prova:** não diagnosticada no primeiro atendimento em ==cerca de 25%==",
-  "correta": "**Cerca de 25%.**\n- Um quarto das luxações perissemilunares passa despercebido.\n- Perfil verdadeiro e leitura dos arcos de Gilula evitam o erro.",
   "incorretas": {
-   "A": "**Subestima.**\n- 5% sugeriria lesão fácil de ver.",
-   "C": "**Acima do descrito.**\n- 35% passa da faixa habitual.",
-   "D": "**Superestima.**\n- Metade não corresponde às séries.",
-   "E": "**Sem casuística.**\n- 75% não se sustenta."
+   "A": "Cinco por cento subestima: sugeriria uma lesão fácil de ver, o que não é o caso.",
+   "C": "Trinta e cinco por cento passa da faixa descrita nas séries.",
+   "D": "Metade dos casos superestima a frequência descrita.",
+   "E": "Setenta e cinco por cento não tem respaldo nas séries."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **luxação perissemilunar** é uma lesão grave: o semilunar fica preso ao rádio, enquanto o resto do carpo se desloca em volta dele. Apesar de grave, ela é **fácil de passar despercebida**: em cerca de **25%** dos casos, o diagnóstico não é feito no primeiro atendimento na emergência.\n\n**Por que passa despercebida**:\n\no punho às vezes não parece muito deformado;\n\nna radiografia de frente (PA), os ossos do carpo se sobrepõem e a alteração é sutil para quem não está atento;\n\nmuitas vezes não se faz um perfil verdadeiro do punho.\n\n**Como não deixar passar**:\n\n**no PA**, observar os **três arcos de Gilula**: linhas suaves que contornam a borda de cima e a de baixo da fileira proximal e a borda de cima da fileira distal. Um **degrau** em qualquer arco, ossos sobrepostos ou um **semilunar com formato triangular** (em vez de quadrangular) indicam luxação até prova em contrário;\n\n**no perfil**, verificar se o **capitato** está encaixado na concavidade do semilunar e se o semilunar está alinhado com o rádio. Se o semilunar estiver virado para a palma, é a imagem da \"xícara derramada\";\n\na **tomografia** ajuda a ver fraturas associadas.\n\n**Por que o atraso importa**: uma luxação não tratada a tempo tem pior resultado, com maior risco de lesão do nervo mediano, artrose e rigidez.\n\n**Na prova**: a luxação perissemilunar não é diagnosticada no primeiro atendimento em cerca de 25% dos casos.",
+  "correta": "Cerca de um quarto das luxações perissemilunares passa despercebido no primeiro atendimento; o perfil verdadeiro e os arcos de Gilula evitam o erro.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0240": {
-  "conceito": "### Estadiamento de Garcia-Elias (instabilidade escafossemilunar)\n| Estágio | Ligamento | Alinhamento | Cartilagem | Tratamento |\n|---|---|---|---|---|\n| 1 | lesão parcial | normal | íntegra | pinagem (artroscópica), capsulodese |\n| 2 | completo, **reparável** | normal | íntegra | **reparo ligamentar** + pinagem |\n| 3 | irreparável, estabilizadores secundários íntegros | normal | íntegra | tenodese/capsulodese |\n| ==4== | ==irreparável== | ==subluxação rotatória redutível== | ==íntegra== | ==tenodese triligamentar== |\n| 5 | irreparável | subluxação **irredutível** | íntegra | artrodese parcial (STT, escafossemilunocapitato) |\n| 6 | irreparável | irredutível | **lesada** (SLAC) | fileira proximal, **quatro esquinas** |\n\n### Tenodese triligamentar\n- Tira do **FRC** passada pelo escafoide (volar → dorsal), ancorada no **semilunar** e fixada ao **piramidal** (ligamento radiopiramidal dorsal).\n- Impede a flexão do escafoide, une-o ao semilunar e amarra ao lado ulnar.\n\n> **Na prova:** Garcia-Elias IV = ==tenodese triligamentar==.",
-  "correta": "**Tenodese triligamentar.**\n- Ligamento irreparável, subluxação redutível e cartilagem íntegra.\n- A tira do FRC controla o escafoide e o une ao semilunar e ao piramidal.",
   "incorretas": {
-   "A": "**Estágios iniciais.**\n- A pinagem protege ligamento em cicatrização.",
-   "B": "**Estágio 2.**\n- O reparo exige coto reparável.",
-   "C": "**Lesões iniciais.**\n- A pinagem artroscópica serve às parciais.",
-   "E": "**Salvamento.**\n- As quatro esquinas são para cartilagem perdida."
+   "A": "A pinagem aberta serve para proteger um ligamento em cicatrização nos estágios iniciais, e não resolve um ligamento irreparável.",
+   "B": "O reparo ligamentar é a conduta do estágio 2, quando o ligamento ainda é reparável.",
+   "C": "A pinagem artroscópica serve às lesões parciais, do estágio 1.",
+   "E": "A artrodese das quatro esquinas é um procedimento de salvamento, para quando a cartilagem já está lesada."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **instabilidade escafossemilunar** acontece quando o ligamento que une o **escafoide** ao **semilunar** se rompe. **Garcia-Elias** a dividiu em estágios, com base em três perguntas:\n\no ligamento ainda pode ser **reparado** (tem um coto bom)?\n\no escafoide está **alinhado** ou subluxado, e se subluxado, ele **volta ao lugar** (redutível)?\n\na **cartilagem** está boa?\n\n**Os estágios e o tratamento**:\n\n**1**: lesão parcial, tudo alinhado: fixação temporária com fios (por artroscopia);\n\n**2**: lesão completa, mas **reparável**: **reparo do ligamento** com fixação;\n\n**3**: ligamento irreparável, mas os estabilizadores secundários seguram o alinhamento: tenodese ou capsulodese;\n\n**4**: ligamento **irreparável**, escafoide em **subluxação rotatória redutível** (ele gira, mas volta ao lugar com manobra) e **cartilagem íntegra**: **tenodese triligamentar**;\n\n**5**: subluxação **irredutível**, cartilagem íntegra: artrodese parcial;\n\n**6**: com **artrose** (colapso escafossemilunar avançado): ressecção da fileira proximal ou artrodese das quatro esquinas.\n\n**A tenodese triligamentar**: usa uma **tira do flexor radial do carpo**, passada através do escafoide (da palma para o dorso), presa ao **semilunar** e depois ao **piramidal**. Assim, ela impede que o escafoide flita, une-o ao semilunar e amarra o conjunto ao lado ulnar, como três ligamentos ao mesmo tempo.\n\n**Na prova**: o estágio IV de Garcia-Elias (ligamento irreparável, subluxação redutível, cartilagem íntegra) é tratado com tenodese triligamentar.",
+  "correta": "Com ligamento irreparável, subluxação redutível e cartilagem íntegra, a tira do flexor radial do carpo controla o escafoide e o une ao semilunar e ao piramidal.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0241": {
-  "conceito": "### Palmer: classe 1 (traumática) × classe 2 (degenerativa)\n| Tipo | Descrição |\n|---|---|\n| 1A | perfuração central |\n| 1B | avulsão ulnar (fóvea, estiloide) |\n| ==1C== | ==avulsão distal== (ligamentos **ulnossemilunar e ulnopiramidal**) |\n| 1D | avulsão radial |\n| 2A a 2E | **degenerativas** (impacto ulnocarpal progressivo) |\n\n### Lesão 1C\n- Instabilidade **ulnocarpal**: carpo \"cai\" em supinação e volar em relação à ulna.\n- Dor ulnar, falseio, sinal de **supinação do carpo**.\n- Tratamento: reparo da borda distal (artroscópico ou aberto).\n\n### Classe 2 (resumo)\n- 2A desgaste, 2B + condromalácia, 2C perfuração, 2D + lesão lunopiramidal, 2E artrose.\n- Tratamento do impacto: encurtamento da ulna ou procedimento de Wafer.\n\n> **Na prova:** avulsão radial (incisura sigmoide) = ==Palmer 1D==.",
-  "correta": "**Palmer 1D.**\n- A avulsão da borda radial, na incisura sigmoide, é a 1D.\n- O disco é reinserido na borda do rádio.",
   "incorretas": {
-   "A": "**Avulsão ulnar.**\n- A 1B é na fóvea e no estiloide ulnar.",
-   "B": "**Avulsão distal.**\n- A 1C atinge os ligamentos ulnocarpais.",
-   "C": "**Degenerativa.**\n- A 2C é perfuração com condromalácia.",
-   "E": "**Degenerativa.**\n- A 2D acrescenta lesão lunopiramidal."
+   "A": "A lesão 1B é a avulsão do lado ulnar, na fóvea e na estiloide da ulna.",
+   "B": "A lesão 1C é a avulsão distal, dos ligamentos ulnocarpais.",
+   "C": "A 2C é uma lesão degenerativa, com perfuração e condromalácia, e não traumática aguda.",
+   "E": "A 2D é uma lesão degenerativa, que acrescenta a lesão lunopiramidal, e não traumática aguda."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **complexo da fibrocartilagem triangular** (CFCT) é um conjunto de estruturas no lado ulnar do punho. Seu disco central se prende ao **rádio** de um lado, na **incisura (fosseta) sigmoide**, e à **ulna** do outro.\n\n**A classificação de Palmer** divide as lesões em:\n\n**classe 1, traumáticas** (agudas), pelo local da ruptura:\n\n**1A**: perfuração central;\n\n**1B**: avulsão do lado **ulnar** (fóvea ou estiloide da ulna);\n\n**1C**: avulsão **distal**, dos ligamentos que vão da ulna ao semilunar e ao piramidal;\n\n**1D**: avulsão do lado **radial**, na **incisura sigmoide** do rádio;\n\n**classe 2, degenerativas**: causadas pelo impacto da ulna contra o carpo, em estágios de 2A (desgaste) a 2E (artrose). Por exemplo, 2C é a perfuração com condromalácia e 2D acrescenta a lesão do ligamento entre semilunar e piramidal.\n\n**Como lembrar a classe 1**: as letras seguem uma volta pelo disco: A no **centro**, B no lado **ulnar**, C na borda **distal** (ulnocarpal), D no lado **radial**.\n\n**O tratamento da 1D**: reinserir o disco na borda do rádio, ou desbridar quando a lesão é pequena.\n\n**Na prova**: a lesão traumática aguda da borda radial (incisura sigmoide) da fibrocartilagem é Palmer 1D.",
+  "correta": "A avulsão aguda da borda radial, na incisura sigmoide, é a lesão 1D de Palmer.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0242": {
