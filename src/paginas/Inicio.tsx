@@ -10,7 +10,7 @@ import { ModalEntrar } from '../componentes/ModalEntrar'
 import { VitrineAssinante } from '../componentes/VitrineAssinante'
 import { CaixasAssinante, CartaoCronograma, usarCronogramaHoje } from '../componentes/CaixasAssinante'
 import { ConviteLimiteDoDia } from '../componentes/LimiteRespostas'
-import { CartaoCompartilhar } from '../componentes/CartaoCompartilhar'
+import { SecaoIndique } from '../componentes/SecaoIndique'
 import { CartaoPlanos } from '../componentes/CartaoPlanos'
 import { IconePixel } from '../componentes/IconePixel'
 import { usarConquistas } from '../estado/usarConquistas'
@@ -299,6 +299,8 @@ export function Inicio() {
             </div>
           </section>
 
+          <SecaoIndique />
+
           <nav className="inicio-atalhos" aria-label="Atalhos">
             <a className="inicio-atalho" href={href('/treinar')}>
               <span className="inicio-atalho__icone inicio-atalho__icone--pixel"><IconePixel nome="treinar" tamanho={44} /></span>
@@ -444,9 +446,6 @@ export function Inicio() {
             </ul>
           </section>
 
-          <div className="inicio-grade inicio-grade--rodape">
-            <CartaoCompartilhar />
-          </div>
 
         </>
       )}
