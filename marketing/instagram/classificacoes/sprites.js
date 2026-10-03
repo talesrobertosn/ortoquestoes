@@ -35,6 +35,12 @@ const SPRITES = {
   coracao: ['.KK...KK.', 'KRRK.KRRK', 'KRWRKRRRK', 'KRRRRRRRK', '.KRRRRRK.', '..KRRRK..', '...KRK...', '....K....'],
   meio: ['.KK...KK.', 'KRRK.KEEK', 'KRWRKEEEK', 'KRRRKEEEK', '.KRRKEEK.', '..KRKEK..', '...KKK...', '....K....'],
   vazio: ['.KK...KK.', 'KEEK.KEEK', 'KEEEKEEEK', 'KEEEEEEEK', '.KEEEEEK.', '..KEEEK..', '...KEK...', '....K....'],
+  // Semilunar em pixel art para Kienböck: sadio, esclerótico, rachado e partido.
+  lua: ['...KKKKK...', '..KSSSSSK..', '.KSWSSSSsK.', 'KSSSKKKSSsK', 'KSSK...KSsK', 'KSK.....KsK', '.K.......K.'],
+  luaB: ['...KKKKK...', '..KWWWWWK..', '.KWWWWWWSK.', 'KWWWKKKWWSK', 'KWWK...KWSK', 'KWK.....KSK', '.K.......K.'],
+  luaR: ['...KKKKK...', '..KSSKSSK..', '.KSWSKSSsK.', 'KSSSKKKSSsK', 'KSSK...KSsK', 'KSK.....KsK', '.K.......K.'],
+  luaT: ['...........', '...KKKKK...', '..KSSKSSKK.', '.KSWSKSSsSK', 'KSSKK.KKSsK', 'KKK.....KKK', '...........'],
+  luaP: ['...KK.KKK..', '..KSSK.SSK.', '.KSWK..KSsK', 'KSSK...KKsK', 'KSK.....KsK', 'KK.......KK', '...........'],
   espada: ['......KK', '.....KWK', '....KWK.', 'K..KWK..', 'KK KWK...', '.KGKK....', '.KgK.....', 'KK.KK....'],
 }
 function sprite(nome, escala) {
