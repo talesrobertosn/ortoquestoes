@@ -1093,25 +1093,25 @@
   "conferido": false
  },
  "mao-0095": {
-  "conceito": "### Prioridades cirúrgicas na mão reumatoide\n1. ==Procedimentos preventivos== (evitam ruptura): sinovectomia, ressecção da cabeça da ulna, remoção de espículas ósseas.\n2. ==Punho== (a base): artrodese radiossemilunar ou total, Darrach, Sauvé-Kapandji.\n3. ==Polegar== (pinça): artrodese da MF ou IF conforme a deformidade de Nalebuff.\n4. ==Dedos longos==: artroplastia das MF (silicone), correção de pescoço de cisne e botoeira.\n\n### Por que essa ordem\n- Punho em desvio radial dos metacarpos reproduz o **desvio ulnar dos dedos**.\n- A **pinça** do polegar devolve mais função que o alinhamento dos dedos.\n- Em geral, **proximal antes de distal**; e **membro inferior** antes do superior quando o paciente precisa de muletas.\n\n### Polegar reumatoide (Nalebuff)\n| Tipo | Deformidade |\n|---|---|\n| I | botoeira (mais comum): MF fletida, IF estendida |\n| II | botoeira + subluxação CMC |\n| III | pescoço de cisne (CMC) |\n| IV | goleiro (colateral ulnar da MF) |\n\n> **Na prova:** ordem = ==punho, polegar e dedos longos==.",
-  "correta": "**Punho, polegar, dedos.**\n- O punho é a base que realinha os dedos.\n- O polegar vem antes porque a pinça devolve mais função.",
   "incorretas": {
-   "A": "**Inverte polegar e dedos.**\n- Dedos antes do polegar privilegia a aparência.",
-   "C": "**Punho depois.**\n- A instabilidade do punho compromete a correção do polegar.",
-   "D": "**Base por último.**\n- Contraria o princípio de operar a base primeiro."
+   "A": "Colocar os dedos longos antes do polegar privilegia o alinhamento estético em vez da pinça, que traz mais função.",
+   "C": "Operar o polegar antes do punho é um erro: a instabilidade do punho compromete as correções distais.",
+   "D": "Deixar o punho por último contraria o princípio de estabilizar a base primeiro."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **artrite reumatoide**, a mão e o punho podem ter várias deformidades ao mesmo tempo. Como não dá para corrigir tudo de uma vez, existe uma **ordem de prioridade**.\n\n**Antes de tudo, os procedimentos preventivos**: cirurgias que **evitam rupturas de tendões**, como a sinovectomia (retirar a sinóvia inflamada), a ressecção da cabeça da ulna saliente e a remoção de espículas ósseas.\n\n**Depois, a ordem das correções**:\n\n**punho**: é a **base** da mão. Quando o punho reumatoide desvia, os metacarpos inclinam para radial, e os dedos desviam para ulnar para compensar. Corrigir os dedos sem estabilizar o punho é construir sobre areia. As opções são artrodese do punho (parcial ou total) e cirurgias da radioulnar distal;\n\n**polegar**: devolver a **pinça** (polegar contra os dedos) traz mais ganho funcional do que alinhar os dedos. As opções dependem da deformidade, muitas vezes com artrodese de uma das articulações do polegar;\n\n**dedos longos**: artroplastia das metacarpofalângicas (próteses de silicone) e correção das deformidades em pescoço de cisne e botoeira.\n\n**A lógica geral**: operar de **proximal para distal** e priorizar o que mais devolve **função**, não aparência. E, quando o paciente precisa de muletas, os membros inferiores costumam ser operados antes, para que os punhos e as mãos não sofram com a carga das muletas logo após uma cirurgia.\n\n**Na prova**: na mão reumatoide, a prioridade cirúrgica é punho, polegar e dedos longos.",
+  "correta": "O punho vem primeiro por ser a base que realinha os dedos, o polegar em seguida porque a pinça devolve muita função, e por fim os dedos longos.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0096": {
-  "conceito": "### Amputação de raio central\n| Técnica | Vantagens | Desvantagens |\n|---|---|---|\n| ressecção simples com fechamento (ligamento intermetacarpal) | rápida, sem osteotomia, retorno precoce | vão residual, desvio, rotação dos dedos |\n| ==transposição do raio vizinho== (2º → 3º, 5º → 4º) | fecha o vão, melhor aparência e preensão de objetos pequenos | ==osteotomia que precisa consolidar==, imobilização mais longa, risco de pseudartrose |\n\n### Contraindicação à transposição\n- ==Trabalhador manual pesado==: carga precoce e torção no foco; retorno ao trabalho atrasado.\n\n### Efeitos da perda do 3º raio\n- Perda de parte do adutor do polegar (cabeça transversa): pinça lateral mais fraca.\n- Largura da palma reduzida (menos força de preensão).\n\n### Indicações de amputação do raio\n- Dedo rígido, doloroso ou insensível que atrapalha a mão; tumores; sequelas de trauma.\n\n> **Na prova:** transposição contraindicada em ==trabalhadores manuais pesados==.",
-  "correta": "**Trabalho pesado.**\n- A osteotomia precisa consolidar sob carga e torção.\n- O fechamento simples devolve o trabalhador mais cedo e sem foco ósseo.",
   "incorretas": {
-   "A": "**Idade não contraindica.**\n- Pesam a demanda mecânica e a qualidade óssea.",
-   "B": "**Cuidado, não contraindicação.**\n- Diabetes entra no planejamento, mas não é o critério.",
-   "C": "**Não é o fator apontado.**\n- A artrite complica, mas não contraindica especificamente."
+   "A": "A idade isoladamente não contraindica a transposição; o que pesa é a demanda mecânica e a qualidade do osso.",
+   "B": "O diabetes entra no planejamento como fator de cuidado, mas não é o critério de contraindicação.",
+   "C": "A artrite pode complicar a cirurgia, mas não é a contraindicação específica apontada para a transposição."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Quando um **raio central** da mão (dedo junto com seu metacarpo) precisa ser amputado, como o **3º raio** (dedo médio), fica um **vão no meio da palma**. Por esse vão, objetos pequenos escapam, e os dedos vizinhos tendem a desviar e rodar para dentro dele.\n\n**As duas formas de tratar o vão**:\n\n**ressecção simples com aproximação**: retira-se o raio e aproximam-se os metacarpos vizinhos, reconstruindo o ligamento entre eles. É **rápida**, **não exige osteotomia** e permite **retorno precoce**. As desvantagens são um pequeno vão residual e algum desvio dos dedos;\n\n**transposição do raio vizinho**: o **2º raio** (indicador) é cortado na base do metacarpo e movido para o lugar do 3º, ou o 5º para o lugar do 4º. Fecha melhor o vão e melhora a aparência e a preensão de objetos pequenos. Mas exige uma **osteotomia que precisa consolidar**, com imobilização mais longa e risco de **pseudartrose** (não consolidação).\n\n**Por que a transposição é contraindicada em trabalhadores manuais pesados**: eles precisam voltar a aplicar força e torção na mão. A osteotomia ainda consolidando seria submetida a essas cargas e poderia falhar, e o retorno ao trabalho atrasaria. Para eles, a ressecção simples é melhor.\n\n**O que se perde com o 3º raio**: parte do adutor do polegar (a cabeça transversa nasce no 3º metacarpo), com pinça lateral mais fraca, e largura da palma, com menos força de preensão.\n\n**Na prova**: a transposição do 2º raio após amputação do 3º é contraindicada em trabalhadores manuais pesados.",
+  "correta": "A transposição exige uma osteotomia que precisa consolidar sob carga e torção; no trabalhador pesado, a ressecção simples permite retorno mais rápido e sem foco ósseo.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0097": {
@@ -1126,69 +1126,69 @@
   "conferido": false
  },
  "mao-0098": {
-  "conceito": "### Mão torta radial: anomalias associadas no membro\n| Estrutura | Situação frequente |\n|---|---|\n| rádio | hipoplásico ou ausente |\n| polegar | hipoplásico ou ausente |\n| artéria radial | ausente |\n| nervo radial | termina no cotovelo; o **mediano** assume a sensibilidade radial |\n| bíceps | ==anômalo ou ausente== (cabeças curta e longa) |\n| braquial | deficiente |\n| ==tríceps== | ==geralmente normal== |\n| extensores e flexores radiais do carpo | ausentes ou fundidos |\n| cotovelo | pode ser rígido em extensão |\n\n### Implicações\n- Com bíceps ausente, a flexão do cotovelo pode depender de **transferência** (tríceps anterior).\n- Nervo mediano superficial e radial: cuidado nas incisões radiais.\n- Avaliar **cotovelo** antes de centralizar.\n\n### Associações sistêmicas\n- VACTERL, Holt-Oram, TAR, Fanconi.\n\n> **Na prova:** músculo que frequentemente está normal = ==tríceps braquial==.",
-  "correta": "**Tríceps.**\n- A malformação atinge o eixo radial e anterior.\n- O tríceps, posterior, costuma estar preservado.",
   "incorretas": {
-   "A": "**Frequentemente deficiente.**\n- O braquial é acometido com frequência.",
-   "C": "**Ausente ou hipoplásica.**\n- A cabeça curta do bíceps costuma faltar.",
-   "D": "**Também acometida.**\n- Bíceps normal na deficiência grave é exceção."
+   "A": "O braquial é frequentemente deficiente na mão torta radial.",
+   "C": "A cabeça curta do bíceps costuma estar ausente ou hipoplásica.",
+   "D": "A cabeça longa do bíceps também é acometida; bíceps normal na deficiência grave é exceção."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **mão torta radial** (deficiência longitudinal radial) não é só a falta do rádio. Toda a **borda radial e anterior** do membro superior pode estar malformada, porque essas estruturas se formam juntas no embrião.\n\n**O que costuma estar alterado**:\n\no **rádio**: pequeno ou ausente;\n\no **polegar**: pequeno ou ausente;\n\na **artéria radial**: ausente;\n\no **nervo radial**: muitas vezes termina no cotovelo, e o **mediano** assume a sensibilidade do lado radial da mão;\n\no **bíceps**: anormal ou ausente, tanto a cabeça curta quanto a longa;\n\no **braquial**: frequentemente deficiente;\n\nos músculos do lado radial do antebraço: ausentes ou fundidos;\n\no **cotovelo**: pode ser rígido em extensão.\n\n**O que costuma estar normal**: o **tríceps braquial**. Ele fica na parte **posterior** do braço, fora do eixo radial e anterior atingido pela malformação.\n\n**Implicações práticas**:\n\nse o bíceps falta, a flexão do cotovelo pode ser reconstruída com uma **transferência**, por exemplo levando o tríceps para a frente;\n\ncomo o mediano fica superficial e no lado radial, as incisões desse lado exigem cuidado;\n\no cotovelo precisa ser avaliado antes de centralizar o punho.\n\n**Na prova**: na mão torta radial, o músculo que frequentemente está normal é o tríceps braquial.",
+  "correta": "A malformação atinge o eixo radial e anterior do membro, e o tríceps, que é posterior, costuma estar preservado.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0099": {
-  "conceito": "### Liberação percutânea da polia A1\n- Feita às cegas, com agulha ou bisturi, guiada por referências de superfície.\n- Segurança depende da distância entre a polia e os ==nervos digitais==.\n\n| Dedo | Risco |\n|---|---|\n| ==polegar== | ==alto==: nervo digital radial cruza **obliquamente sobre** a A1 |\n| ==indicador== | ==alto==: nervo digital radial próximo da linha média |\n| médio | baixo |\n| anelar | baixo |\n| mínimo | intermediário |\n\n### Dedo em gatilho no adulto\n- Mulheres acima de 50 anos, diabéticos, AR, gota, amiloidose, túnel do carpo associado.\n- Classificação de Green (Quinnell modificada): I dor, II gatilho que desfaz ativamente, III precisa de ajuda passiva, IV contratura fixa.\n\n### Tratamento\n| Etapa | Opção |\n|---|---|\n| inicial | infiltração com corticoide (cerca de 60 a 90% de sucesso; menor em diabéticos) |\n| falha | liberação aberta da A1 (padrão) ou percutânea nos dedos seguros |\n\n> **Na prova:** evitar percutânea no ==polegar e indicador==.",
-  "correta": "**Polegar e indicador.**\n- No polegar o nervo digital radial cruza sobre a A1.\n- No indicador o nervo radial corre perto da linha média da polia.",
   "incorretas": {
-   "A": "**Dedos seguros.**\n- Médio e anelar têm os feixes afastados.",
-   "B": "**Médio é seguro.**\n- Só o polegar está certo.",
-   "C": "**Anelar é seguro.**\n- Só o indicador está certo."
+   "A": "Médio e anelar são justamente os dedos mais seguros para a técnica percutânea, com os feixes afastados.",
+   "B": "O polegar está certo, mas o médio é um dedo seguro para a técnica percutânea.",
+   "C": "O indicador está certo, mas o anelar é um dedo seguro para a técnica percutânea."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **dedo em gatilho** (tenossinovite estenosante dos flexores) acontece quando o tendão flexor engrossa e passa a enganchar ao atravessar a **polia A1**, na base do dedo, na altura da metacarpofalângica. O dedo trava dobrado e depois \"dispara\" ao estender.\n\n**A liberação percutânea**: em vez de abrir a pele, o cirurgião corta a polia A1 com a ponta de uma agulha ou um bisturi fino, **sem ver** as estruturas, guiando-se só pelas referências da superfície. É rápida e pouco agressiva, mas sua segurança depende de quão **longe** os **nervos digitais** estão da polia.\n\n**O risco em cada dedo**:\n\n**polegar**: risco **alto**. O nervo digital radial **cruza obliquamente por cima** da polia A1, bem no caminho da agulha;\n\n**indicador**: risco **alto**. O nervo digital radial corre perto da linha média da polia;\n\n**médio** e **anelar**: risco **baixo**, porque os feixes ficam afastados dos lados;\n\n**mínimo**: risco intermediário.\n\n**Por isso**, a liberação percutânea deve ser **evitada no polegar e no indicador**, onde se prefere a cirurgia aberta, com visão direta.\n\n**Sobre o dedo em gatilho**: é mais comum em mulheres acima de 50 anos e em diabéticos, e se associa a artrite reumatoide e ao túnel do carpo. O primeiro tratamento é a **infiltração com corticoide**, que funciona na maioria dos casos, menos nos diabéticos. Se falhar, faz-se a liberação da A1.\n\n**Na prova**: a liberação percutânea da polia A1 deve ser evitada no polegar e no indicador.",
+  "correta": "No polegar o nervo digital radial cruza sobre a A1 e no indicador corre perto da linha média, por isso a liberação às cegas é arriscada nesses dedos.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0100": {
-  "conceito": "### Classificação de Sunderland (e Seddon)\n| Sunderland | Estrutura lesada | Seddon | Prognóstico |\n|---|---|---|---|\n| I | bloqueio de condução, mielina | neuropraxia | recuperação completa em dias a semanas |\n| II | axônio (endoneuro íntegro) | axonotmese | completa (cerca de 1 mm/dia) |\n| III | axônio + endoneuro | axonotmese | parcial, imprevisível |\n| ==IV== | ==axônio + endoneuro + perineuro== (só epineuro íntegro) | axonotmese | ==neuroma em continuidade; exige ressecção e enxerto== |\n| V | secção completa (epineuro) | neurotmese | só com reparo |\n| VI (Mackinnon) | lesão mista em fascículos diferentes | | variável |\n\n### Sinal de Tinel\n- Avança ao longo do nervo na regeneração (graus II e III); fica **estacionário** no grau IV (neuroma).\n\n### Regeneração\n- Cerca de **1 mm/dia** (1 polegada por mês).\n- Placa motora degenera após **12 a 18 meses** de denervação.\n\n> **Na prova:** axônio, endoneuro e perineuro = ==Sunderland IV==.",
-  "correta": "**Tipo IV.**\n- Só o epineuro permanece íntegro.\n- Os axônios crescem em desordem, formando neuroma em continuidade.",
   "incorretas": {
-   "A": "**Só axônio.**\n- No tipo II o endoneuro guia a regeneração completa.",
-   "B": "**Perineuro íntegro.**\n- O tipo III lesa axônio e endoneuro.",
-   "D": "**Secção completa.**\n- O tipo V inclui o epineuro."
+   "A": "No tipo II só o axônio é lesado; o endoneuro íntegro guia a regeneração completa.",
+   "B": "No tipo III há lesão do axônio e do endoneuro, mas o perineuro continua íntegro.",
+   "D": "O tipo V é a secção completa, com lesão também do epineuro."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Um **nervo periférico** é organizado em camadas, como um cabo elétrico com vários fios:\n\n**axônio**: a fibra nervosa, o \"fio\" que conduz o impulso, envolvida por **mielina**;\n\n**endoneuro**: a capa de tecido que envolve **cada axônio**;\n\n**perineuro**: a capa que reúne vários axônios num **fascículo**;\n\n**epineuro**: a capa externa que envolve **todo o nervo**.\n\n**A classificação de Sunderland** gradua a lesão pela camada mais profunda atingida:\n\n**tipo I**: só um **bloqueio de condução**, com lesão da mielina, sem cortar o axônio (corresponde à **neuropraxia** de Seddon). Recupera completamente em dias ou semanas;\n\n**tipo II**: o **axônio** é lesado, mas o **endoneuro está íntegro** e serve de tubo-guia. O axônio cresce de novo pelo caminho certo, a cerca de 1 mm por dia, e a recuperação é completa;\n\n**tipo III**: axônio **e endoneuro** lesados. Os axônios podem crescer para tubos errados, e a recuperação é parcial e imprevisível;\n\n**tipo IV**: axônio, endoneuro **e perineuro** lesados. Só o **epineuro** continua inteiro: o nervo parece contínuo por fora, mas por dentro os axônios crescem em desordem e formam um **neuroma em continuidade**. Precisa de ressecção e enxerto;\n\n**tipo V**: **secção completa**, inclusive do epineuro (corresponde à **neurotmese**). Só recupera com reparo cirúrgico.\n\n**Um sinal útil**: o **sinal de Tinel** (choque ao percutir o nervo) **avança** ao longo do nervo quando ele está regenerando (tipos II e III), e fica **parado** no tipo IV, preso no neuroma.\n\n**Na prova**: lesão do axônio, do endoneuro e do perineuro, com o epineuro íntegro, é Sunderland tipo IV.",
+  "correta": "No tipo IV só o epineuro permanece íntegro, e os axônios crescem em desordem formando um neuroma em continuidade.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0101": {
-  "conceito": "### Deformidade em Z do polegar na rizartrose\n1. Base do 1º MC subluxa **dorsal e radialmente**.\n2. O metacarpo fica ==fixo em adução== (adutor sem oposição): 1ª comissura se fecha.\n3. A MF ==hiperestende== para compensar e abrir a mão.\n\n### Por que tratar a MF\n- Hiperextensão da MF **acima de 30°** não corrigida faz a deformidade recidivar após a cirurgia da trapeziometacarpiana.\n\n| Hiperextensão da MF | Conduta |\n|---|---|\n| < 10 a 15° | nada |\n| 15 a 30° | fixação temporária da MF em flexão com fio |\n| > 30° | **capsulodese volar**, tenodese (extensor curto), sesamoidodese ou **artrodese** da MF |\n\n### Liberação da comissura\n- Adução fixa importante: liberar adutor ou fáscia da 1ª comissura.\n\n> **Na prova:** rizartrose avançada = ==MF em hiperextensão com 1º MC fixo em adução==.",
-  "correta": "**Hiperextensão com metacarpo aduzido.**\n- O 1º metacarpo fica preso em adução.\n- A MF hiperestende para abrir a mão: polegar em Z.",
   "incorretas": {
-   "A": "**Compensação errada.**\n- A MF hiperestende; fletir fecharia ainda mais a comissura.",
-   "B": "**Erra os dois.**\n- O metacarpo perde a abdução, e a MF não flete.",
-   "D": "**Metacarpo errado.**\n- O metacarpo está aduzido, não abduzido."
+   "A": "O metacarpo em adução está certo, mas a compensação da MF é a hiperextensão; fletir fecharia ainda mais a comissura.",
+   "B": "Erra os dois: o metacarpo perde a abdução e fica aduzido, e a MF não flete.",
+   "D": "A hiperextensão da MF está certa, mas o metacarpo fica fixo em adução, e não em abdução."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **rizartrose avançada** (artrose da base do polegar), forma-se uma deformidade típica em **ziguezague**, o **polegar em Z**. Ela se desenvolve em etapas:\n\na base do primeiro metacarpo **escorrega para dorsal e radial**, porque os ligamentos estão frouxos e a cartilagem gasta;\n\no **adutor do polegar**, sem oposição, puxa o metacarpo para dentro, e ele fica **fixo em adução**. A primeira comissura (o espaço entre o polegar e o indicador) **fecha**;\n\npara conseguir abrir a mão e pegar objetos, o paciente compensa **hiperestendendo a metacarpofalângica** (MF). A MF passa a dobrar \"para trás\".\n\nO resultado é o ziguezague: base do metacarpo para fora, metacarpo para dentro, MF para trás.\n\n**Por que isso importa no tratamento**: se o cirurgião corrige só a base do polegar (por exemplo, retirando o trapézio) e não trata a MF hiperestendida, a deformidade **volta**. A conduta depende do grau:\n\nhiperextensão menor que 10° a 15°: não precisa tratar;\n\nentre 15° e 30°: fixar temporariamente a MF dobrada com um fio;\n\nacima de 30°: estabilizar a parte de trás da MF (capsulodese volar, tenodese ou artrodese).\n\nSe a adução estiver muito fixa, também é preciso **liberar a primeira comissura**.\n\n**Na prova**: na rizartrose avançada, a MF hiperestende de forma compensatória, com o primeiro metacarpo fixo em adução.",
+  "correta": "O primeiro metacarpo fica preso em adução e a metacarpofalângica hiperestende para abrir a mão, formando o polegar em Z.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0102": {
-  "conceito": "### Túnel cubital × canal de Guyon\n| Achado | Túnel cubital (alto) | Canal de Guyon (baixo) |\n|---|---|---|\n| ==sensibilidade dorsoulnar da mão== | ==alterada== | ==preservada== (ramo dorsal sai 5 a 8 cm antes) |\n| sensibilidade palmar ulnar | alterada | alterada (zonas I e III) |\n| FPD do 4º e 5º e FUC | fracos | normais |\n| garra | **menos** evidente (paradoxo ulnar) | **mais** evidente |\n| intrínsecos | fracos | fracos (zonas I e II) |\n| Tinel | cotovelo | punho |\n\n### Zonas do canal de Guyon\n| Zona | Conteúdo | Quadro |\n|---|---|---|\n| I | antes da bifurcação | motor e sensitivo |\n| II | ramo motor profundo | só motor |\n| III | ramo superficial | só sensitivo |\n\n### Causas no Guyon\n- **Gânglio** (mais comum), fratura do hâmulo do hamato, trombose da artéria ulnar (martelo hipotenar), músculos anômalos, ciclistas.\n\n> **Na prova:** diferencia = ==sensibilidade dorsoulnar da mão==.",
-  "correta": "**Ramo dorsal do ulnar.**\n- O ramo cutâneo dorsal sai antes do canal de Guyon.\n- Está alterado na lesão do cotovelo e preservado na do punho.",
   "incorretas": {
-   "A": "**Presente nas duas.**\n- A garra é até mais evidente na lesão baixa (paradoxo ulnar).",
-   "B": "**Presente nas duas.**\n- O ramo motor profundo é atingido nos dois níveis.",
-   "D": "**Não localiza.**\n- A sudorese se altera nos dois níveis."
+   "A": "A garra ulnar aparece nas duas, e é até mais evidente na lesão baixa, pelo paradoxo ulnar.",
+   "B": "A atrofia dos intrínsecos aparece nas duas, porque o ramo motor profundo é atingido nos dois níveis.",
+   "D": "A alteração da sudorese palmar ocorre nos dois níveis e não ajuda a localizar a lesão."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **nervo ulnar** pode ser comprimido em dois lugares principais:\n\n**no cotovelo**: **síndrome do túnel cubital** (lesão alta);\n\n**no punho**: **síndrome do canal de Guyon** (lesão baixa), um túnel formado entre o pisiforme e o hâmulo do hamato.\n\n**O detalhe anatômico que separa as duas**: o ulnar dá um ramo para a pele **antes** de chegar ao punho, o **ramo cutâneo dorsal**. Ele sai cerca de 5 a 8 cm acima do punho e leva a sensibilidade do **dorso ulnar da mão** (o dorso do lado do mínimo).\n\nno **túnel cubital**, a compressão está **acima** da saída desse ramo, e a sensibilidade **dorsoulnar fica alterada**;\n\nno **canal de Guyon**, a compressão está **abaixo** da saída do ramo, e a sensibilidade **dorsoulnar fica preservada**.\n\n**Outras diferenças**:\n\nna lesão alta, também ficam fracos o flexor ulnar do carpo e o flexor profundo do anelar e do mínimo; na baixa, eles estão normais;\n\na **garra** do anelar e do mínimo é, curiosamente, **mais evidente na lesão baixa**. É o **paradoxo ulnar**: na lesão alta, o flexor profundo também está fraco, e os dedos dobram menos;\n\no **Tinel** é positivo no cotovelo ou no punho, conforme o local.\n\n**O que não diferencia**: a atrofia dos músculos intrínsecos e a alteração do suor na palma aparecem nas duas.\n\n**Causas no canal de Guyon**: cisto sinovial (a mais comum), fratura do hâmulo do hamato, trombose da artéria ulnar e ciclistas que apoiam o peso nessa região.\n\n**Na prova**: a alteração da sensibilidade dorsoulnar da mão diferencia o túnel cubital (alterada) do canal de Guyon (preservada).",
+  "correta": "O ramo cutâneo dorsal do ulnar sai antes do canal de Guyon, por isso a sensibilidade dorsoulnar se altera no túnel cubital e fica preservada no Guyon.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0103": {
-  "conceito": "### Distribuição da doença de Dupuytren\n| Dedo | Frequência |\n|---|---|\n| ==anelar== | ==o mais acometido== |\n| mínimo | segundo |\n| médio | terceiro |\n| polegar, 1ª comissura | menos comuns (doença extensa) |\n| indicador | raro isolado |\n\n- Preferência pelo **lado ulnar** da mão.\n\n### Prognóstico por articulação\n| Articulação | Resposta à cirurgia |\n|---|---|\n| MF | boa correção, pouca recidiva |\n| IFP | correção difícil, **mais recidiva**, sobretudo no mínimo |\n\n### Indicações de tratamento (clássicas)\n- Contratura da MF acima de **30°**.\n- **Qualquer** contratura da IFP (progressiva).\n- Teste de Hueston positivo.\n\n> **Na prova:** dedo mais acometido = ==anelar==.",
-  "correta": "**Anelar.**\n- A doença prefere o lado ulnar.\n- O anelar é o mais acometido, seguido pelo mínimo.",
   "incorretas": {
-   "A": "**Menos frequente.**\n- O médio vem depois do anelar e do mínimo.",
-   "C": "**Pouco comum.**\n- O polegar aparece em quadros extensos.",
-   "D": "**Raro.**\n- Doença isolada no indicador levanta dúvida diagnóstica."
+   "A": "O médio é acometido com menos frequência, depois do anelar e do mínimo.",
+   "C": "O polegar é pouco comum e aparece em quadros extensos.",
+   "D": "O indicador isolado é raro, e sua contratura isolada levanta dúvida sobre o diagnóstico."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **doença de Dupuytren** forma nódulos e cordas na fáscia da palma que puxam os dedos em flexão. Ela tem preferência clara pelo **lado ulnar** da mão.\n\n**A distribuição por dedo**:\n\n**anelar**: o **mais acometido**;\n\n**mínimo**: o segundo;\n\n**médio**: o terceiro;\n\npolegar e primeira comissura: menos comuns, geralmente em doença extensa;\n\n**indicador**: raro de forma isolada. Uma contratura isolada no indicador deve levantar dúvida sobre o diagnóstico.\n\n**O prognóstico depende da articulação**:\n\n**metacarpofalângica**: corrige bem com a cirurgia e recidiva pouco;\n\n**interfalângica proximal**: corrige com mais dificuldade e **recidiva mais**, sobretudo no dedo mínimo.\n\n**Quando tratar** (indicações clássicas):\n\ncontratura da metacarpofalângica maior que **30°**;\n\n**qualquer** contratura da interfalângica proximal, porque tende a progredir e é difícil de recuperar;\n\n**teste de Hueston** positivo: a mão não consegue ficar espalmada sobre a mesa.\n\n**Na prova**: na forma usual da doença de Dupuytren, o dedo mais acometido é o anelar.",
+  "correta": "A doença prefere o lado ulnar da mão, e o anelar é o dedo mais acometido, seguido pelo mínimo.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0104": {
@@ -1203,47 +1203,47 @@
   "conferido": false
  },
  "mao-0105": {
-  "conceito": "### Polidactilia pré-axial × pós-axial\n| Aspecto | Pré-axial (polegar) | Pós-axial (mínimo) |\n|---|---|---|\n| lado | radial | ulnar |\n| lateralidade | ==geralmente unilateral== | frequentemente bilateral |\n| herança | esporádica | autossômica dominante (tipo B) |\n| população | asiáticos, brancos | ==negros== (tipo B, pedunculada) |\n| associação | trifalangia, Holt-Oram, Fanconi | tipo A em brancos: investigar síndromes |\n\n### Classificação de Wassel\n| Tipo | Nível da duplicação |\n|---|---|\n| I | falange distal bífida |\n| II | falange distal duplicada (IF) |\n| III | falange proximal bífida |\n| ==IV== | ==falange proximal duplicada (MF): o mais comum== |\n| V | metacarpo bífido |\n| VI | metacarpo duplicado |\n| VII | com polegar trifalângico |\n\n### Cirurgia\n- Em geral o ==polegar radial== é o ==mais hipoplásico== e é **ressecado**.\n- Reconstruir o ulnar: **colateral radial** com retalho de periósteo e reinserção do **abdutor curto**, centralizar tendões, osteotomias se desvio.\n- Idade: cerca de 1 ano.\n\n> **Na prova:** pré-axial = polegar ==radial mais hipoplásico, unilateral==.",
-  "correta": "**Radial e unilateral.**\n- O polegar radial é o mais hipoplásico e o que se remove.\n- A forma pré-axial costuma ser unilateral e esporádica.",
   "incorretas": {
-   "A": "**Erra os dois.**\n- O hipoplásico é o radial, e a bilateralidade é da pós-axial.",
-   "B": "**Lateralidade errada.**\n- A pré-axial costuma ser unilateral.",
-   "C": "**Lado errado.**\n- Reconstruir o radial em vez do ulnar é o erro clássico."
+   "A": "Erra nos dois pontos: o mais hipoplásico é o radial, e a bilateralidade é característica da polidactilia pós-axial.",
+   "B": "O lado radial está certo, mas a polidactilia pré-axial costuma ser unilateral.",
+   "C": "A unilateralidade está certa, mas o polegar mais hipoplásico é o radial, e não o ulnar."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "**Polidactilia** é a presença de dedos a mais. Ela se divide conforme o lado da mão:\n\n**pré-axial**: duplicação do **polegar**, no lado **radial**;\n\n**pós-axial**: duplicação do **mínimo**, no lado **ulnar**.\n\n**As diferenças entre as duas**:\n\na **pré-axial** é geralmente **unilateral** e **esporádica** (sem herança clara), mais comum em asiáticos e brancos, e pode se associar a polegar com três falanges e a síndromes como Holt-Oram e anemia de Fanconi;\n\na **pós-axial** é frequentemente **bilateral** e hereditária, muito comum em pessoas **negras**, muitas vezes como um dedinho pendurado só por pele.\n\n**A classificação de Wassel** (duplicação do polegar) pelo nível onde os ossos se dividem:\n\ntipo I: falange distal bífida;\n\ntipo II: falange distal duplicada;\n\ntipo III: falange proximal bífida;\n\n**tipo IV**: falange proximal duplicada, o **mais comum**;\n\ntipo V: metacarpo bífido;\n\ntipo VI: metacarpo duplicado;\n\ntipo VII: com um dos polegares trifalângico.\n\n**Na cirurgia**: os dois polegares geralmente são **menores** que um polegar normal, e um deles é ainda mais pequeno. Na maioria das vezes, o **mais hipoplásico é o radial**, que é **retirado**. O polegar ulnar é mantido e **reconstruído**: refaz-se o ligamento colateral radial (com um retalho de periósteo do polegar retirado), reinsere-se o abdutor curto e corrigem-se os desvios. A cirurgia costuma ser feita por volta de 1 ano.\n\n**Na prova**: na polidactilia pré-axial, o polegar mais hipoplásico costuma ser o radial, e a condição é geralmente unilateral.",
+  "correta": "O polegar radial é, na maioria das vezes, o mais hipoplásico e o que se retira, e a duplicação do polegar costuma ser unilateral e esporádica.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0106": {
-  "conceito": "### Zonas extensoras do polegar (Verdan)\n| Zona | Local |\n|---|---|\n| T-I | interfalângica |\n| T-II | falange proximal |\n| T-III | metacarpofalângica |\n| T-IV | metacarpo |\n| ==T-V== | ==punho (e trapeziometacarpiana)== |\n\n- A série do polegar termina na **T-V**; as zonas VI a VIII pertencem aos dedos longos.\n\n### Tendões em T-V\n- **ELP** (3º compartimento) + **abdutor longo e extensor curto** (1º compartimento): um corte pode atingir os três.\n- Ramo superficial do radial e artéria radial próximos.\n\n### Exame\n| Tendão | Teste |\n|---|---|\n| ELP | retropulsão (polegar acima do plano da mão com a palma na mesa) |\n| extensor curto | extensão da MF |\n| abdutor longo | abdução radial |\n\n> **Na prova:** extensores do polegar no punho = ==T-V==.",
-  "correta": "**T-V.**\n- No punho, a zona do polegar é a T-V.\n- Ali o ELP passa junto do 1º compartimento.",
   "incorretas": {
-   "A": "**Metacarpo.**\n- A T-IV fica entre a MF e o punho.",
-   "C": "**Não existe no polegar.**\n- A zona VI é dos dedos longos.",
-   "D": "**Não existe no polegar.**\n- A zona VII é o retináculo dos dedos longos."
+   "A": "A zona T-IV fica sobre o metacarpo, entre a metacarpofalângica e o punho.",
+   "C": "A zona VI não existe no polegar; ela pertence à classificação dos dedos longos.",
+   "D": "A zona VII, sob o retináculo, também é da classificação dos dedos longos e não existe no polegar."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "As lesões dos **tendões extensores** são classificadas em **zonas** pela classificação de **Verdan**. No **polegar**, as zonas recebem a letra **T** (de *thumb*, polegar) e vão de **T-I a T-V**:\n\n**T-I**: interfalângica;\n\n**T-II**: falange proximal;\n\n**T-III**: metacarpofalângica;\n\n**T-IV**: metacarpo;\n\n**T-V**: **punho**, na altura da articulação trapeziometacarpiana e do retináculo dos extensores.\n\nA série do polegar **termina em T-V**. As zonas VI, VII e VIII existem apenas para os dedos longos.\n\n**O que há de especial na zona T-V**: no punho, o **extensor longo do polegar** (que vem do 3º compartimento dorsal) passa **muito perto** dos tendões do **1º compartimento**: o **abdutor longo** e o **extensor curto do polegar**. Os três formam as bordas da tabaqueira anatômica, e um único corte pode lesar todos eles. Também estão próximos o **ramo superficial do nervo radial** e a **artéria radial**.\n\n**Como examinar cada tendão**:\n\n**extensor longo**: retropulsão, levantar o polegar acima do plano da mão com a palma apoiada na mesa;\n\n**extensor curto**: extensão da metacarpofalângica;\n\n**abdutor longo**: afastar o polegar para o lado radial.\n\n**Na prova**: as lesões dos extensores do polegar ao nível do punho ficam na zona T-V de Verdan.",
+  "correta": "No punho, a zona do polegar é a T-V, onde o extensor longo passa junto aos tendões do 1º compartimento.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0107": {
-  "conceito": "### Retalho inguinal (McGregor)\n- Retalho **axial** pediculado, baseado na ==artéria circunflexa ilíaca superficial== (ramo da femoral).\n- Emergência cerca de **2,5 cm abaixo do ligamento inguinal**, corre paralela a ele em direção à **EIAS**.\n- Grande área disponível; área doadora fechada primariamente.\n\n### Uso\n- Cobertura de grandes perdas do **dorso da mão**, do polegar e do punho.\n- Mão fixada à virilha por cerca de **3 semanas** até a autonomização (divisão do pedículo).\n\n### Desvantagens\n- Rigidez de ombro, cotovelo e dedos; higiene difícil; retalho volumoso (precisa afinar depois).\n- Hoje muitas vezes substituído por retalhos livres ou regionais (interóssea posterior, chinês).\n\n### Outros retalhos distantes\n| Retalho | Vaso |\n|---|---|\n| ==inguinal== | ==circunflexa ilíaca superficial== |\n| abdominal (SIEA) | epigástrica superficial inferior |\n| cruzado de braço | randômico |\n\n> **Na prova:** retalho inguinal = ==artéria circunflexa ilíaca superficial==.",
-  "correta": "**Circunflexa ilíaca superficial.**\n- Ramo da femoral que corre paralelo ao ligamento inguinal em direção à EIAS.\n- Define o eixo do retalho de McGregor.",
   "incorretas": {
-   "A": "**É um nervo.**\n- Ilioinguinal é nervo, não artéria.",
-   "B": "**Território genital.**\n- A pudenda externa fica fora do retalho.",
-   "C": "**Outro retalho.**\n- A epigástrica superficial sobe para o umbigo e nutre o retalho abdominal."
+   "A": "Ilioinguinal é o nome de um nervo, e não de uma artéria.",
+   "B": "A artéria pudenda externa irriga a região genital e fica fora do território do retalho inguinal.",
+   "C": "A artéria epigástrica superficial sobe em direção ao umbigo e nutre o retalho abdominal, e não o inguinal."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Quando há uma grande perda de pele na mão, com tendões ou ossos expostos, às vezes é preciso trazer pele de **longe**. O **retalho inguinal** (de McGregor) é um retalho **pediculado** retirado da **virilha**: a mão é costurada junto à virilha, ainda presa ao seu suprimento sanguíneo, até criar novos vasos no lugar.\n\n**O vaso que nutre o retalho**: a **artéria circunflexa ilíaca superficial**, um ramo da artéria femoral. Ela sai cerca de 2,5 cm abaixo do **ligamento inguinal** e corre **paralela** a ele em direção à **espinha ilíaca anterossuperior**. Por isso é um retalho **axial**: tem uma artéria definida correndo no seu eixo, o que permite retirar uma área grande e longa.\n\n**Para que serve**: cobrir grandes perdas no **dorso da mão**, no **polegar** e no **punho**. A área de onde ele sai pode ser fechada diretamente, deixando uma cicatriz escondida na virilha.\n\n**Como funciona o tempo**: a mão fica presa à virilha por cerca de **3 semanas**. Nesse tempo, o retalho cria novos vasos a partir da mão. Depois, o pedículo é cortado e a mão é liberada.\n\n**As desvantagens**: o paciente fica com o braço preso ao corpo por semanas, o que pode deixar ombro, cotovelo e dedos rígidos; a higiene é difícil; e o retalho é volumoso e costuma precisar ser afinado depois. Hoje, muitas vezes ele é substituído por retalhos livres ou do próprio antebraço.\n\n**Na prova**: o retalho inguinal é nutrido pela artéria circunflexa ilíaca superficial.",
+  "correta": "O retalho inguinal de McGregor é baseado na artéria circunflexa ilíaca superficial, ramo da femoral que corre paralelo ao ligamento inguinal.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0108": {
-  "conceito": "### Sinais de lesão pré-ganglionar (avulsão)\n| Sinal | Nervo | Origem |\n|---|---|---|\n| ==escápula alada (serrátil anterior)== | ==torácico longo== | raízes C5, C6, C7 |\n| romboides paralisados | dorsal da escápula | raiz C5 |\n| hemidiafragma elevado | frênico | C3-C5 |\n| Horner | cadeia simpática | T1 |\n| Tinel negativo, dor neuropática intensa | | |\n| potencial sensitivo presente com anestesia (ENMG) | gânglio da raiz dorsal íntegro | |\n\n### Por que músculos proximais localizam\n- Nervos que saem **direto das raízes** são lesados só se a lesão for na raiz (pré-ganglionar ou muito proximal).\n\n### Músculos que não ajudam\n| Músculo | Motivo |\n|---|---|\n| trapézio | **acessório (XI par)**: fora do plexo; serve de doador |\n| tríceps, FRC | nervos distais (radial, mediano): mapeiam extensão, não o nível |\n\n### Conduta\n- Pré-ganglionar: **transferências nervosas** (sem coto proximal para enxertar).\n\n> **Na prova:** sinal pré-ganglionar = paralisia do ==serrátil anterior==.",
-  "correta": "**Serrátil anterior.**\n- O torácico longo sai direto das raízes C5 a C7.\n- Sua paralisia indica lesão na raiz, pré-ganglionar.",
   "incorretas": {
-   "A": "**Fora do plexo.**\n- O trapézio é do acessório e fica preservado.",
-   "B": "**Nervo distal.**\n- O tríceps (radial) não localiza a lesão na raiz.",
-   "D": "**Nervo distal.**\n- O FRC (mediano) mapeia a extensão, não o nível."
+   "A": "O trapézio é inervado pelo nervo acessório, fora do plexo braquial, e fica preservado.",
+   "B": "O tríceps é inervado pelo radial, um nervo distal, cuja paralisia não localiza a lesão na raiz.",
+   "D": "O flexor radial do carpo é inervado pelo mediano, um nervo distal, que mapeia a extensão da lesão, mas não o nível."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na paralisia do plexo braquial, é fundamental saber se a lesão é **pré-ganglionar** ou **pós-ganglionar**:\n\n**pós-ganglionar**: o nervo foi lesado **fora** da coluna, depois do gânglio da raiz. Existe um coto ligado à medula, que pode ser enxertado;\n\n**pré-ganglionar** (avulsão): a raiz foi **arrancada da medula**. Não sobra coto para enxertar, e o prognóstico é pior. A solução é usar **transferências de nervos** (levar um nervo funcionante para o músculo paralisado).\n\n**Como descobrir clinicamente**: alguns nervos saem **diretamente das raízes**, logo na saída da coluna. Se os músculos que eles inervam estão paralisados, a lesão está **muito perto da medula**, ou seja, provavelmente pré-ganglionar.\n\n**serrátil anterior**, inervado pelo **nervo torácico longo** (raízes C5, C6 e C7): sua paralisia causa **escápula alada**;\n\n**romboides**, inervados pelo nervo dorsal da escápula (C5);\n\n**diafragma**, pelo nervo frênico (C3 a C5): hemidiafragma elevado;\n\n**síndrome de Horner** (pálpebra caída, pupila pequena): indica avulsão de T1.\n\n**Os músculos que não ajudam a localizar**:\n\n**trapézio**: é inervado pelo **nervo acessório** (um nervo craniano), **fora** do plexo. Fica preservado e pode servir de doador em transferências;\n\n**tríceps** e **flexor radial do carpo**: são inervados por nervos distais (radial e mediano), que se formam bem depois das raízes. Sua paralisia mostra a extensão da lesão, mas não o nível.\n\n**Na prova**: a paralisia do serrátil anterior é sinal de lesão pré-ganglionar no plexo braquial.",
+  "correta": "O torácico longo sai direto das raízes C5 a C7, e a paralisia do serrátil anterior indica lesão junto à medula, pré-ganglionar.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0109": {
@@ -1272,31 +1272,31 @@
   "conferido": false
  },
  "mao-0111": {
-  "conceito": "### Estabilizadores da interfalângica proximal\n| Estrutura | Plano | Função |\n|---|---|---|\n| ==ligamentos colaterais (próprio e acessório)== | ==coronal== | ==impedem desvio radial e ulnar== |\n| placa volar | sagital | impede **hiperextensão** |\n| banda central, extensor | sagital dorsal | extensão |\n| congruência (côndilos, crista da falange média) | todos | estabilidade óssea |\n\n- As três estruturas ligamentares formam uma **caixa**: para luxar, pelo menos duas precisam falhar.\n\n### Luxações da IFP\n| Tipo | Lesão |\n|---|---|\n| dorsal (mais comum) | placa volar |\n| volar | banda central (risco de botoeira) |\n| lateral | colateral + placa volar ou banda central |\n\n### Imobilização\n- IFP próxima da **extensão**; mobilização precoce.\n- Risco principal da IFP: **contratura em flexão** (pseudoboutonnière) pela placa volar cicatrizada encurtada.\n- Posição intrínseca-plus da mão: MF fletidas, IF em extensão.\n\n> **Na prova:** estabilizador primário coronal da IFP = ==ligamento colateral==.",
-  "correta": "**Colateral.**\n- Os colaterais impedem o desvio lateral no plano coronal.\n- Placa volar e extensor atuam no plano sagital.",
   "incorretas": {
-   "A": "**Plano sagital.**\n- A placa volar impede a hiperextensão.",
-   "C": "**Contenção óssea.**\n- O côndilo ajuda pela congruência, mas não é o estabilizador ligamentar coronal.",
-   "D": "**Plano sagital dorsal.**\n- A banda central estende a articulação."
+   "A": "A placa volar atua no plano sagital, impedindo a hiperextensão.",
+   "C": "O côndilo da falange proximal contribui pela congruência óssea, mas não é o estabilizador ligamentar primário no plano coronal.",
+   "D": "A banda central atua no plano sagital, estendendo a articulação."
   },
+  "conceito": "A **interfalângica proximal** (IFP) é uma articulação em dobradiça, que só deveria dobrar e esticar. Sua estabilidade vem de estruturas que formam uma espécie de **caixa** ao redor dela:\n\n**ligamentos colaterais** (próprio e acessório), dos dois lados: impedem que o dedo **desvie para os lados**, ou seja, são os estabilizadores no **plano coronal** (frontal);\n\n**placa volar**, na frente: impede a **hiperextensão**, no plano sagital;\n\n**banda central do extensor**, atrás: faz a extensão, também no plano sagital;\n\na própria **forma dos ossos** (os côndilos da falange proximal encaixando na falange média) ajuda pela congruência.\n\nPara a IFP luxar, pelo menos **duas** dessas estruturas precisam falhar.\n\n**Os tipos de luxação da IFP**:\n\n**dorsal**: a mais comum, com lesão da **placa volar**;\n\n**volar**: rara, com lesão da **banda central**, e risco de evoluir para botoeira;\n\n**lateral**: com lesão de um **colateral** e de mais uma estrutura.\n\n**O tratamento e o principal risco**: após a redução, a IFP deve ser mantida perto da **extensão**, com movimento precoce. O grande risco da IFP é a **contratura em flexão**: a placa volar cicatriza encurtada e o dedo não estica mais.\n\n**Na prova**: o estabilizador primário da IFP no plano coronal é o ligamento colateral.",
+  "correta": "Os ligamentos colaterais impedem o desvio radial e ulnar da IFP, sendo os estabilizadores primários no plano coronal.",
   "referencias": [
    "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), Cap. 44"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0112": {
-  "conceito": "### Neuroma sintomático após amputação de dedos\n- Todo coto forma neuroma; o problema é o neuroma **doloroso** em área de contato.\n\n| Fator | Maior risco |\n|---|---|\n| dedo | ==indicador== (pinça, exploração, contato constante) |\n| mecanismo | ==avulsão== (nervo lesado com tração, muito além do nível visível) |\n| localização | neuroma superficial sob cicatriz ou polpa |\n\n### Prevenção no momento da amputação\n- **Tracionar e seccionar** o nervo digital proximalmente, para que retraia em tecido bem acolchoado.\n- Evitar ligadura conjunta de nervo e artéria.\n\n### Tratamento do neuroma estabelecido\n- Dessensibilização, infiltração.\n- Ressecção com sepultamento em músculo ou osso, **TMR** (reinervação muscular direcionada), **RPNI**, capuz de nervo.\n\n### Amputação do indicador\n- Coto curto e doloroso atrapalha a pinça: muitos preferem **amputação do raio** (transferindo a pinça para o médio).\n\n> **Na prova:** neuroma sintomático mais frequente = ==segundo dedo e trauma por avulsão==.",
-  "correta": "**Indicador e avulsão.**\n- O indicador toca em tudo, e o neuroma superficial é percutido o tempo todo.\n- A avulsão lesa o nervo em extensão e gera coto irregular.",
   "incorretas": {
-   "B": "**Mecanismo errado.**\n- A laceração é mais benigna para o nervo que a avulsão.",
-   "C": "**Dedo errado.**\n- O médio fica protegido entre os vizinhos.",
-   "D": "**Erra os dois.**\n- A laceração limpa é o mecanismo mais favorável."
+   "B": "O dedo está certo, mas a laceração é o mecanismo mais favorável para o nervo; o maior risco é a avulsão.",
+   "C": "O mecanismo de avulsão está certo, mas o dedo mais afetado é o indicador; o médio fica mais protegido entre os vizinhos.",
+   "D": "Erra nos dois: o médio é menos afetado e a laceração é o mecanismo mais favorável."
   },
+  "conceito": "Depois de uma **amputação de dedo**, os **nervos digitais** cortados tentam crescer de novo. Sem um caminho a seguir, as fibras formam um emaranhado na ponta: o **neuroma**. Todo coto tem neuroma, mas ele só vira problema quando fica num lugar de **contato** e passa a doer ou dar choque a cada toque: é o **neuroma sintomático**.\n\n**O que aumenta o risco**:\n\n**o dedo**: o **indicador** (segundo dedo) é o mais afetado. Ele participa de quase toda pinça e é usado para explorar e tocar objetos. O coto é tocado e percutido o tempo todo;\n\n**o mecanismo**: a **avulsão** (dedo arrancado por tração, como numa máquina ou num anel preso) é pior do que o corte limpo (laceração). Na avulsão, o nervo é esticado e lesado numa **grande extensão**, muito além do ponto onde o dedo foi arrancado, e o coto fica irregular;\n\n**a posição do neuroma**: superficial, sob a cicatriz ou na polpa.\n\n**Como prevenir**: no momento da amputação, puxar delicadamente o nervo, cortá-lo mais acima e deixá-lo retrair para dentro de tecido bem acolchoado, longe da pele. Não se deve amarrar o nervo junto com a artéria.\n\n**Tratamento**: começa com dessensibilização e infiltração. Se não resolver, retira-se o neuroma e o nervo é enterrado em músculo ou osso, ou ligado a um ramo motor.\n\n**Um detalhe prático**: um coto curto e doloroso de indicador atrapalha tanto que, muitas vezes, prefere-se amputar o raio inteiro e deixar o dedo médio fazer a pinça.\n\n**Na prova**: o neuroma sintomático do coto é mais frequente no segundo dedo e nas avulsões.",
+  "correta": "O indicador participa de tudo e seu coto é tocado o tempo todo, e a avulsão lesa o nervo numa grande extensão, gerando um coto irregular.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 19"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0113": {
@@ -1314,31 +1314,31 @@
   "conferido": false
  },
  "mao-0114": {
-  "conceito": "### Complicações da artroscopia do punho por grupo\n| Grupo | Complicações |\n|---|---|\n| ==tração e posicionamento== | ==rigidez articular== (punho, ombro, cotovelo), lesão de pele, neuropraxia por tração, distensão ligamentar |\n| portal | lesão de **tendão extensor**, ramo dorsal do ulnar (6U), ramo superficial do radial (1-2), artéria radial |\n| instrumento | lesão de **cartilagem**, quebra de instrumento |\n| fluido | **síndrome compartimental** por extravasamento, edema |\n| gerais | infecção, SDRC |\n\n### Prevenção\n- Tração de **4 a 5 kg**, tempo limitado.\n- Incisar só a pele no portal; divulsionar com pinça romba.\n- Baixa pressão na bomba ou artroscopia **seca**.\n- Mobilização precoce.\n\n> **Na prova:** complicação ligada à tração ou posicionamento = ==rigidez articular==.",
-  "correta": "**Rigidez.**\n- A tração prolongada e o posicionamento fixo do membro geram rigidez.\n- Minimizar tempo e força de tração previne.",
   "incorretas": {
-   "B": "**Complicação de portal.**\n- A lesão de extensor ocorre na incisão ou na introdução do trocarte.",
-   "C": "**Complicação do fluido.**\n- O extravasamento de líquido causa a síndrome compartimental.",
-   "D": "**Complicação do instrumento.**\n- A cartilagem é lesada pelo trocarte em espaço apertado."
+   "B": "A lesão de tendão extensor é uma complicação dos portais, ao cortar a pele ou introduzir o trocarte.",
+   "C": "A síndrome compartimental é uma complicação do extravasamento do líquido de irrigação.",
+   "D": "A lesão da cartilagem é uma complicação dos instrumentos dentro de um espaço articular apertado."
   },
+  "conceito": "Na **artroscopia do punho**, o braço fica pendurado numa torre, com os dedos presos e uma **tração** de cerca de 4 a 5 kg, para abrir o espaço dentro da articulação. As complicações podem ser agrupadas pela causa:\n\n**pela tração e pelo posicionamento**:\n\n**rigidez articular**, do punho, do cotovelo ou do ombro, pela tração prolongada e pela posição fixa do membro;\n\nlesões de pele;\n\nneuropraxia (lesão leve do nervo) por estiramento;\n\nestiramento de ligamentos.\n\n**pela confecção dos portais**: lesão de **tendões extensores**, do **ramo dorsal do nervo ulnar** (no portal 6U), do **ramo superficial do nervo radial** (no portal 1-2) e da artéria radial;\n\n**pelos instrumentos**: lesão da **cartilagem** articular pelo trocarte num espaço apertado, quebra de instrumento;\n\n**pelo líquido**: o líquido usado para distender a articulação pode vazar para os tecidos e causar **síndrome compartimental**;\n\n**gerais**: infecção e síndrome de dor regional complexa.\n\n**Como prevenir**:\n\ntração de 4 a 5 kg, pelo menor tempo possível;\n\nnos portais, cortar só a pele e afastar os tecidos com pinça romba;\n\nusar pressão baixa no líquido, ou fazer a artroscopia \"seca\";\n\nmobilizar cedo após a cirurgia.\n\n**Na prova**: a rigidez articular é a complicação da artroscopia de punho relacionada à tração e ao posicionamento.",
+  "correta": "A tração prolongada e o posicionamento fixo do membro geram rigidez articular; limitar o tempo e a força de tração ajuda a prevenir.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 69"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0115": {
-  "conceito": "### Deformidade em botoeira\n- Ruptura da **banda central** (zona III).\n- As **bandas laterais** migram para **volar** do eixo da IFP:\n  - deixam de estender a IFP (que cai em **flexão**);\n  - passam a **hiperestender a IFD**.\n- O ligamento retinacular oblíquo encurta e fixa a deformidade.\n\n### Tratamento conservador\n- Órtese com ==IFP em extensão== por cerca de 6 semanas (dia e noite), depois uso noturno.\n- ==IFD livre==, com **flexão ativa** repetida: puxa as bandas laterais de volta para dorsal e alonga o retinacular oblíquo.\n\n### Diagnóstico precoce\n- **Teste de Elson:** IFP fletida a 90° sobre a borda da mesa; extensão ativa da IFP contra resistência. Se a IFD fica **rígida em extensão**, a banda central está rompida.\n- A deformidade típica pode surgir só 10 a 14 dias após o trauma.\n\n### Cirurgia\n- Lesões abertas, avulsão com fragmento grande e deslocado, falha do conservador: reparo ou reconstrução da banda central.\n\n> **Na prova:** botoeira = ==IFP em extensão e IFD livre==.",
-  "correta": "**IFP em extensão, IFD fletindo ativamente.**\n- A órtese mantém a IFP em extensão e deixa a IFD livre.\n- A flexão ativa da IFD traz as bandas laterais para dorsal e alonga o retinacular oblíquo.",
   "incorretas": {
-   "A": "**IFP errada.**\n- Imobilizar a IFP fletida perpetua a deformidade.",
-   "B": "**Erra os dois.**\n- A IFP não fica fletida, e estender a IFD reforça a hiperextensão.",
-   "D": "**IFD errada.**\n- Estimular extensão da IFD trabalha a favor da deformidade."
+   "A": "A flexão ativa da IFD está certa, mas imobilizar a IFP em flexão perpetua a deformidade.",
+   "B": "Erra os dois: a IFP não deve ficar fletida, e estimular a extensão da IFD reforça a hiperextensão.",
+   "D": "A IFP em extensão está certa, mas estimular a extensão da IFD trabalha a favor da deformidade; o que se estimula é a flexão."
   },
+  "conceito": "A **botoeira** é a deformidade que aparece quando a **banda central** do tendão extensor se rompe sobre a **interfalângica proximal** (IFP). A banda central é a parte do extensor que estende a IFP.\n\n**O que acontece sem a banda central**:\n\na IFP perde a extensão e **cai em flexão**;\n\nas **bandas laterais**, que passam dos lados da IFP, escorregam para a frente (volar) do eixo da articulação;\n\nnessa nova posição, elas passam a **dobrar** a IFP e a **hiperestender** a interfalângica distal (IFD);\n\ncom o tempo, os ligamentos encurtam e a deformidade fica fixa.\n\n**O tratamento conservador** da botoeira aguda:\n\n**IFP mantida em extensão** numa órtese, por cerca de 6 semanas, dia e noite. Isso aproxima as pontas da banda central para que ela cicatrize no comprimento certo;\n\n**IFD livre**, com o paciente estimulado a fazer **flexão ativa** dela várias vezes ao dia. Dobrar a IFD puxa as bandas laterais de volta para o dorso e alonga os ligamentos que tendem a encurtar.\n\n**Os erros a evitar**:\n\nimobilizar a IFP **dobrada**: a banda central cicatriza alongada, e a deformidade se perpetua;\n\nestimular a **extensão** da IFD: reforça a hiperextensão, que já é parte da deformidade.\n\n**Na prova**: na botoeira aguda, a IFP fica em extensão e a flexão ativa da IFD é estimulada.",
+  "correta": "A órtese mantém a IFP em extensão, e a flexão ativa da IFD traz as bandas laterais de volta para o dorso e evita que a deformidade se fixe.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 66"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0118": {
