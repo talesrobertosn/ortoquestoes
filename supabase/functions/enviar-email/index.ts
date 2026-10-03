@@ -1,6 +1,6 @@
 import { banco, cors, json, usuarioDoPedido } from '../_shared/http.ts'
 import { alertarAdministradores, emailConfigurado, enviarEmail, linkDescadastro, site, tokenDescadastroValido } from '../_shared/email.ts'
-import { MARCOS, emailCarta, emailMarco, emailRelatorio, marcoAtingido, type DadosRelatorio, type Marco } from '../_shared/modelo-email.ts'
+import { MARCOS, emailCarta, emailLembrete, emailMarco, emailRelatorio, marcoAtingido, type CampanhaLembrete, type DadosRelatorio, type Marco } from '../_shared/modelo-email.ts'
 
 /**
  * E-mails do OrtoQuestões. Ações (POST, corpo JSON):
@@ -16,6 +16,9 @@ import { MARCOS, emailCarta, emailMarco, emailRelatorio, marcoAtingido, type Dad
  *   relatorios_mensais administrador (ou o agendador, com o cabeçalho x-segredo igual
  *                      a EMAIL_SEGREDO): envia o relatório do mês a um lote de assinantes.
  *   previa_relatorio   administrador: o relatório de uma pessoa, sem enviar.
+ *   lembretes          administrador: envia um lote do lembrete de uma campanha
+ *                      ("nunca", "tres_dias" ou "sete_dias"). Um por pessoa e ausência.
+ *   previa_lembrete    administrador: o lembrete de uma campanha, sem enviar.
  */
 
 interface DadosUsuario {
@@ -119,6 +122,46 @@ async function enviarRelatorios(mesPedido?: string, limitePedido?: number) {
   return { mes, enviados, falhas, lote: destinatarios.length, talvez_restem: destinatarios.length === limite }
 }
 
+const CAMPANHAS: readonly CampanhaLembrete[] = ['nunca', 'tres_dias', 'sete_dias']
+const campanhaValida = (c?: string): CampanhaLembrete | null => (CAMPANHAS as readonly string[]).includes(c ?? '') ? c as CampanhaLembrete : null
+
+/**
+ * Lembretes de uma campanha, em lote. Mesmo esquema do relatório: reserva uma
+ * linha por pessoa e ausência (a trava do banco impede duplicata), envia e
+ * marca o resultado. Quem já recebeu nesta ausência não aparece de novo.
+ */
+async function enviarLembretes(campanha: CampanhaLembrete, limitePedido: number | undefined, por: string) {
+  const limite = Math.max(1, Math.min(Number(limitePedido) || 40, 80))
+  const r = await banco('rpc/destinatarios_lembrete', { method: 'POST', body: JSON.stringify({ p_campanha: campanha, p_limite: limite }) })
+  if (!r.ok) throw new Error('consulta_destinatarios_falhou')
+  const destinatarios = await r.json() as Array<{ id_usuario: string; referencia: string; email: string; nome: string | null; respondidas: number; dias_fora: number }>
+  let enviados = 0, falhas = 0
+  for (const d of destinatarios) {
+    const reserva = await registrar({ id_usuario: d.id_usuario, tipo: 'lembrete', referencia: d.referencia, status: 'enviando', enviado_por: por })
+    let linha: { id: number } | undefined
+    if (reserva.ok) [linha] = await reserva.json() as Array<{ id: number }>
+    else {
+      const retomada = await banco(`emails_enviados?id_usuario=eq.${d.id_usuario}&tipo=eq.lembrete&referencia=eq.${encodeURIComponent(d.referencia)}&status=eq.falhou`, {
+        method: 'PATCH', body: JSON.stringify({ status: 'enviando', erro: null, enviado_em: new Date().toISOString() }),
+      })
+      if (retomada.ok) [linha] = await retomada.json() as Array<{ id: number }>
+    }
+    if (!linha) continue
+    try {
+      const descadastro = await linkDescadastro(d.id_usuario, 'lembretes')
+      const e = emailLembrete({ campanha, nome: d.nome, respondidas: Number(d.respondidas), diasFora: Number(d.dias_fora), site: site(), linkDescadastro: descadastro })
+      await enviarEmail(d.email, e.assunto, e.html, e.texto, descadastro)
+      await banco(`emails_enviados?id=eq.${linha.id}`, { method: 'PATCH', body: JSON.stringify({ status: 'enviado', assunto: e.assunto }) })
+      enviados++
+    } catch (falha) {
+      await banco(`emails_enviados?id=eq.${linha.id}`, { method: 'PATCH', body: JSON.stringify({ status: 'falhou', erro: motivo(falha) }) })
+      falhas++
+    }
+    await esperar(600)
+  }
+  return { campanha, enviados, falhas, lote: destinatarios.length, talvez_restem: destinatarios.length === limite }
+}
+
 async function registrar(corpo: Record<string, unknown>) {
   return banco('emails_enviados', { method: 'POST', body: JSON.stringify(corpo) })
 }
@@ -127,14 +170,15 @@ Deno.serve(async (req) => {
   if (req.method === 'OPTIONS') return new Response(null, { headers: cors(req) })
   if (req.method !== 'POST') return json({ erro: 'metodo_invalido' }, 405, req)
   try {
-    const corpo = await req.json() as { acao?: string; id_usuario?: string; recado?: string; formato?: string; id_questao?: string; u?: string; t?: string; tipo?: string; mes?: string; limite?: number }
+    const corpo = await req.json() as { acao?: string; id_usuario?: string; recado?: string; formato?: string; id_questao?: string; u?: string; t?: string; tipo?: string; mes?: string; limite?: number; campanha?: string }
 
     if (corpo.acao === 'descadastrar') {
-      const tipo = corpo.tipo === 'relatorio' ? 'relatorio' : 'conquistas'
+      const tipo = corpo.tipo === 'relatorio' ? 'relatorio' : corpo.tipo === 'lembretes' ? 'lembretes' : 'conquistas'
       if (!corpo.u || !corpo.t || !/^[0-9a-f-]{36}$/.test(corpo.u) || !await tokenDescadastroValido(corpo.u, corpo.t, tipo)) return json({ erro: 'link_invalido' }, 400, req)
+      const coluna = tipo === 'relatorio' ? 'relatorio_mensal' : tipo === 'lembretes' ? 'lembretes' : 'conquistas'
       const r = await banco('preferencias_email', {
         method: 'POST', headers: { Prefer: 'resolution=merge-duplicates,return=minimal' },
-        body: JSON.stringify({ id_usuario: corpo.u, [tipo === 'relatorio' ? 'relatorio_mensal' : 'conquistas']: false, atualizado_em: new Date().toISOString() }),
+        body: JSON.stringify({ id_usuario: corpo.u, [coluna]: false, atualizado_em: new Date().toISOString() }),
       })
       return r.ok ? json({ ok: true, tipo }, 200, req) : json({ erro: 'nao_foi_possivel' }, 503, req)
     }
@@ -155,6 +199,20 @@ Deno.serve(async (req) => {
       }
       if (!emailConfigurado()) return json({ erro: 'email_nao_configurado' }, 503, req)
       return json(await enviarRelatorios(corpo.mes, corpo.limite), 200, req)
+    }
+
+    if (corpo.acao === 'lembretes' || corpo.acao === 'previa_lembrete') {
+      if (!await ehAdministrador(usuario.id)) return json({ erro: 'acesso_negado' }, 403, req)
+      const campanha = campanhaValida(corpo.campanha)
+      if (!campanha) return json({ erro: 'campanha_invalida' }, 400, req)
+      if (corpo.acao === 'previa_lembrete') {
+        // Prévia com os dados de quem está olhando, e números de exemplo para a ausência.
+        const dados = await dadosUsuario(usuario.id)
+        const e = emailLembrete({ campanha, nome: dados?.nome ?? null, respondidas: Number(dados?.respondidas ?? 0), diasFora: campanha === 'sete_dias' ? 9 : 3, site: site(), linkDescadastro: await linkDescadastro(usuario.id, 'lembretes') })
+        return json({ assunto: e.assunto, html: e.html }, 200, req)
+      }
+      if (!emailConfigurado()) return json({ erro: 'email_nao_configurado' }, 503, req)
+      return json(await enviarLembretes(campanha, corpo.limite, usuario.id), 200, req)
     }
 
     if (corpo.acao === 'marco') {
