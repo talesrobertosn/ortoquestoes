@@ -10519,35 +10519,38 @@
   "conferido": false
  },
  "trauma-1151": {
+  "incorretas": {
+   "A": "**Pinos autoperfurantes.** Eles podem ser úteis quando seu projeto e técnica dispensam a perfuração prévia, mas o simples nome não garante a pré-carga radial pretendida. Inserção inadequada pode aquecer o osso; deve-se seguir a técnica do fabricante.",
+   "C": "**Pinos maiores que 30% da largura óssea.** Aumentar diâmetro tende a melhorar resistência do pino, mas enfraquece o osso no orifício e pode favorecer fratura. Isso não substitui o ajuste adequado entre broca e rosca na interface.",
+   "D": "**Pinos convergentes.** A direção dos pinos pode modificar estabilidade espacial e evitar conflito com estruturas anatômicas, conforme a montagem. Pré-tensionamento radial descreve a pressão circunferencial ao redor de cada pino, não o ângulo entre eles."
+  },
+  "conceito": "**O pino precisa agarrar o osso sem esmagá-lo.** No fixador externo, a estabilidade de cada pino depende da interface entre sua rosca e as duas corticais. Pré-tensionamento radial é uma compressão circunferencial moderada que o osso exerce sobre o pino. Para produzi-la com pinos que exigem perfuração prévia, usa-se a broca recomendada para o modelo, em geral ligeiramente menor que o diâmetro do núcleo da rosca. O ajuste cria interferência suficiente para reduzir micromovimento e afrouxamento.\n\n**Mais aperto nem sempre é melhor.** Um orifício muito estreito ou pino excessivamente grosso pode gerar microfraturas e necrose da cortical, reduzindo a fixação depois. Broca afiada, proteção das partes moles, irrigação quando indicada e inserção sem aquecimento excessivo preservam a interface. Pinos de desenho cônico podem obter pré-carga pelo próprio avanço; os autoperfurantes obedecem a instruções específicas do fabricante, portanto “sempre furar antes” não é regra universal.\n\nA rigidez global da montagem é outra questão: depende do número e afastamento entre pinos, da distância da barra ao osso, do número de planos e do contato entre fragmentos. Convergência entre pinos pode influenciar geometria da montagem, mas não é o que se chama pré-tensionamento radial em cada orifício.",
+  "correta": "**Orifício piloto de diâmetro apropriado e ligeiramente menor.** A pequena interferência prescrita para aquele pino gera compressão radial na interface pino-osso; reduzir a broca arbitrariamente, porém, pode danificar a cortical.",
+  "referencias": [
+   "AO Education. Principles of external fixation, eLearning modules. https://emodules.aoeducation.org/aotdlmat/aot_external_fixation/content/standard/content/media/pdf/external_fixation_vMay2016_hq.pdf",
+   "Stability with unilateral external fixation in the tibia. https://pmc.ncbi.nlm.nih.gov/articles/PMC2321723/",
+   "Orthopaedic Trauma Association. Principles of External Fixation. https://ota.org/sites/files/2018-06/G11-Principles%20of%20External%20Fixation.pdf"
+  ],
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "B",
-  "conceito": "**Pré-tensionamento radial.** Usar broca de diâmetro menor que o pino aumenta o contato e reduz o afrouxamento.\n\n**Na prova:** broca menor que o pino.",
-  "correta": "**A realização de orifício ósseo com uma broca de menor diâmetro.** É a medida descrita.",
-  "incorretas": {
-   "A": "**O emprego de pinos autoperfurantes.** Gera calor.",
-   "C": "**A utilização de pinos com diâmetro superior a 30% da largura óssea.** Risco de fratura.",
-   "D": "**A colocação dos pinos de forma convergente nos fragmentos ósseos.** Não é o pré-tensionamento."
-  },
-  "referencias": [
-   "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., pg. 257."
-  ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "trauma-1152": {
+  "incorretas": {
+   "B": "**Rotação lateral.** É a tendência oposta quando o tubérculo maior continua unido à cabeça e os músculos posteriores do manguito a tracionam, como na fratura de três partes com tubérculo menor separado.",
+   "C": "**Adução.** Descreve aproximação do braço ao tronco, não a rotação axial da cabeça gerada pelo subescapular nessa configuração. Desvios em adução podem ocorrer em outros padrões conforme forças musculares e posição da diáfise.",
+   "D": "**Abdução.** É afastamento do braço em relação ao tronco e pode aparecer em deformidades de outros traços proximais. Não nomeia o giro medial específico da cabeça que o enunciado explora."
+  },
+  "conceito": "**A cabeça segue o tubérculo que permanece ligado a ela.** Neer descreve quatro partes anatômicas no úmero proximal: cabeça articular, tubérculo maior, tubérculo menor e diáfise. Em uma fratura de três partes com deslocamento do tubérculo maior e separação do colo cirúrgico, o tubérculo menor costuma continuar unido à cabeça. O subescapular insere-se nele e gira a cabeça para dentro, isto é, em rotação medial.\n\nO tubérculo maior recebe supraespinal, infraespinal e redondo menor. Quando se separa, a tração do manguito tende a levá-lo superior e posteriormente, enquanto a diáfise é influenciada, entre outros músculos, pelo peitoral maior. Essa combinação explica por que uma radiografia frontal isolada pode esconder a rotação da cabeça e a posição real do tubérculo; vistas ortogonais e, em padrões complexos, tomografia ajudam no planejamento.\n\n**Compare com a fratura espelhada.** Na fratura de três partes em que o tubérculo menor é o fragmento separado, o maior permanece ligado à cabeça e o manguito posterossuperior tende a rodá-la lateralmente. Se a deformidade consolida, a posição anormal da cabeça e do tubérculo pode causar limitação de rotação, impacto subacromial e perda de força. O tratamento depende do deslocamento, da qualidade óssea e da função do paciente, não apenas do nome “três partes”.",
+  "correta": "**Rotação medial.** O tubérculo menor permanece preso à cabeça; a tração do subescapular, nele inserido, explica o desvio rotacional esperado no padrão com tubérculo maior separado.",
+  "referencias": [
+   "Management of Proximal Humerus Fractures in Adults: A Scoping Review. https://pmc.ncbi.nlm.nih.gov/articles/PMC9604576/",
+   "AO Surgery Reference. MIO plate fixation for extraarticular 3-part, surgical neck and greater tuberosity fracture. https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-humerus/extraarticular-3-part-surgical-neck-and-greater-tuberosity-impaction/mio-plate-fixation"
+  ],
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "A",
-  "conceito": "**Três partes com tubérculo maior.** A cabeça fica presa ao tubérculo menor, e o subescapular a roda medialmente.\n\n**Na prova:** em três partes com o maior, cabeça em rotação medial.",
-  "correta": "**Rotação medial.** O subescapular roda a cabeça.",
-  "incorretas": {
-   "B": "**Rotação lateral.** Ocorre com o menor.",
-   "C": "**Adução.** Não é o desvio.",
-   "D": "**Abdução.** Não é o desvio."
-  },
-  "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole Campbell. 11 ª ed. pg. 3499."
-  ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "trauma-1153": {
@@ -10583,19 +10586,20 @@
   "conferido": false
  },
  "trauma-1155": {
+  "incorretas": {
+   "B": "**Lesão de Morel-Lavallée.** É separação traumática entre subcutâneo e fáscia, com coleção de sangue e linfa. Pode coexistir com fratura pélvica e exigir tratamento próprio, mas costuma ser lesão fechada, não prova de abertura do foco.",
+   "C": "**Hematúria macroscópica.** Sangue visível na urina sugere lesão de bexiga, uretra ou trato urinário superior e demanda investigação dirigida. Não demonstra, isoladamente, comunicação da fratura com uma superfície externa.",
+   "D": "**Enfisema subcutâneo nos flancos.** Ar sob a pele pede busca de ferida ou outras fontes e avaliação de infecção quando pertinente. É achado inespecífico, menos direto do que sangramento de uma mucosa adjacente ao anel pélvico."
+  },
+  "conceito": "**“Exposta” não exige ferida visível sobre o osso.** Uma fratura pélvica é aberta quando o foco se comunica com o meio externo, inclusive por laceração da vagina ou do reto. Como a abertura pode estar no períneo ou numa mucosa, a pele do quadril pode parecer íntegra. Essa comunicação aumenta risco de contaminação, infecção profunda e sangramento, além das ameaças hemodinâmicas próprias da lesão do anel pélvico.\n\nSangramento vaginal após trauma pélvico é sinal de alerta para laceração que pode alcançar a fratura. Ele exige exame cuidadoso por equipe habilitada, com inspeção e avaliação ginecológica quando indicada, sem presumir que todo sangue vaginal prova uma comunicação óssea. O manejo integra ressuscitação e estabilização da pelve, antibióticos e avaliação urgente das lesões de partes moles e órgãos; a necessidade de desbridamento e de medidas adicionais depende do trajeto da ferida.\n\n**Diferencie as outras pistas.** A lesão de Morel-Lavallée é um desenluvamento fechado: o subcutâneo se separa da fáscia e forma uma cavidade, mas não torna automaticamente a fratura exposta. Hematúria macroscópica aponta para lesão urinária até prova em contrário. Gás no subcutâneo pode resultar de ferida, infecção ou dissecção de ar e precisa ser contextualizado, não localiza por si só uma abertura vaginal ou retal.",
+  "correta": "**Sangramento vaginal.** Em paciente com fratura pélvica, é a pista oferecida que mais diretamente levanta suspeita de comunicação oculta do foco com uma mucosa.",
+  "referencias": [
+   "The prehospital management of pelvic fractures. https://pmc.ncbi.nlm.nih.gov/articles/PMC2658194/",
+   "An overview of the key principles and guidelines in the management of pelvic fractures. https://pmc.ncbi.nlm.nih.gov/articles/PMC8406373/"
+  ],
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "A",
-  "conceito": "**Fratura exposta oculta da pelve.** Sangramento vaginal ou retal indica comunicação da fratura com a mucosa; exige exame especular e toque.\n\n**Na prova:** sangue vaginal ou retal após fratura pélvica é fratura exposta.",
-  "correta": "**O sangramento vaginal.** É o sinal mais sugestivo.",
-  "incorretas": {
-   "B": "**A lesão de MORELL-LAVALLÉ.** Desenluvamento fechado.",
-   "C": "**A hematúria macroscópica.** Lesão urológica.",
-   "D": "**O enfisema subcutâneo nos flancos.** Não indica."
-  },
-  "referencias": [
-   "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., pg. 389."
-  ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "trauma-1156": {
