@@ -776,58 +776,58 @@
   "conferido": false
  },
  "conceitos-basicos-0068": {
-  "conceito": "### As lacunas de Howship\nDepressões escavadas na superfície óssea por um **osteoclasto** em atividade: o rastro que ele deixa.\n\n### O osteoclasto\n- Única célula óssea de origem ==hematopoiética== (linhagem monocítica), sob comando do **RANKL** e do **M-CSF**.\n- **Multinucleado**.\n- **Borda pregueada** com:\n  - Bomba de prótons: acidifica e dissolve o mineral.\n  - **Catepsina K**: digere o colágeno.\n- Zona de selamento (integrinas) que isola o compartimento de reabsorção.\n\n### As demais células\nOsteoprogenitora, osteoblasto e osteócito são **mesenquimais**.\n\n> **Na prova:** lacunas de Howship = ==osteoclasto==.",
-  "correta": "**Osteoclasto.**",
   "incorretas": {
-   "A": "**Mesenquimal.**\n- Produz matriz conjuntiva.",
-   "C": "**Forma osso.**\n- Preenche a lacuna, não a escava.",
-   "D": "**Cartilagem.**\n- Também mesenquimal."
+   "A": "O fibroblasto é uma célula mesenquimal que produz tecido conjuntivo, e não reabsorve osso.",
+   "C": "O osteoblasto forma osso novo, preenchendo a lacuna, e não a escava. Também é de origem mesenquimal.",
+   "D": "O condroblasto forma cartilagem e também tem origem mesenquimal."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "O osso é um tecido vivo, que é constantemente desmanchado e refeito. Quem **desmancha** (reabsorve) o osso é o **osteoclasto**, e as **lacunas de Howship** são as pequenas depressões que ele escava na superfície do osso enquanto trabalha. São o \"rastro\" deixado por um osteoclasto ativo.\n\nO osteoclasto é diferente das outras células do osso por vários motivos:\n\n**Origem**: é a única célula do osso que vem da **linhagem hematopoiética**, a mesma das células do sangue. Ele deriva dos monócitos, que se fundem para formá-lo. Sua formação é comandada por sinais como o RANKL e o M-CSF.\n\n**Tamanho**: é uma célula grande, com **vários núcleos**.\n\n**Forma de trabalhar**: ele se gruda à superfície do osso, isolando uma pequena área como uma ventosa (a zona de selamento). Nessa área, forma uma borda cheia de dobras (a borda pregueada) e libera ácido, que dissolve o mineral, e enzimas como a catepsina K, que digerem o colágeno.\n\nAs outras células do osso têm origem **mesenquimal** (do tecido que forma os tecidos de sustentação): a célula osteoprogenitora, o **osteoblasto** (que forma osso novo, preenchendo a lacuna que o osteoclasto deixou) e o osteócito (o osteoblasto que ficou preso dentro do osso que formou).",
+  "correta": "Osteoclasto. É a célula que reabsorve osso, vem da linhagem do sangue e escava as lacunas de Howship.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0069": {
-  "conceito": "### Anticoagulante e antídoto\n- **Heparina não fracionada:** protamina (reversão completa).\n- ==Heparinas de baixo peso molecular== (enoxaparina): ==protamina==, com reversão **parcial**.\n- **Varfarina:** vitamina K + complexo protrombínico (ou plasma).\n- **Dabigatrana:** idarucizumabe.\n- **Rivaroxabana e apixabana:** andexanet alfa ou complexo protrombínico.\n\n### A ressalva da enoxaparina\nA protamina neutraliza bem a atividade **anti-IIa**, mas só parte da atividade **anti-Xa** (em torno de 60%). Na prática ainda é o antídoto recomendado.\n\n### Cuidados com a protamina\nHipotensão, reação anafilactoide (sobretudo em quem usou insulina NPH ou tem alergia a peixe).\n\n> **Na prova:** sangramento com enoxaparina = ==protamina==.",
-  "correta": "**Protamina.**\n- Neutraliza a HBPM, ainda que de forma parcial.",
   "incorretas": {
-   "A": "**Resgate inespecífico.**\n- Fator VIIa é para sangramento refratário.",
-   "C": "**Varfarina.**",
-   "D": "**Antifibrinolítico.**\n- Não neutraliza a heparina."
+   "A": "O fator VIIa é um recurso inespecífico para sangramentos graves que não respondem a outras medidas, e não o antídoto da enoxaparina.",
+   "C": "A vitamina K é o antídoto da varfarina, e não das heparinas.",
+   "D": "O ácido tranexâmico reduz sangramento por impedir a dissolução do coágulo, mas não neutraliza a heparina."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Cada anticoagulante tem seu antídoto, e as provas gostam de cobrar esses pares:\n\n**Heparina não fracionada** (a heparina comum, usada na veia): **protamina**, que a neutraliza por completo.\n\n**Heparinas de baixo peso molecular**, como a **enoxaparina**: também **protamina**, mas com reversão **parcial**.\n\n**Varfarina**: vitamina K, associada a concentrado de complexo protrombínico (ou plasma) quando é preciso reverter rápido.\n\n**Dabigatrana**: idarucizumabe.\n\n**Rivaroxabana e apixabana**: andexanet alfa ou concentrado de complexo protrombínico.\n\nA ressalva da enoxaparina: ela age bloqueando dois alvos da coagulação, o fator IIa (trombina) e, principalmente, o fator Xa. A protamina neutraliza bem a ação sobre o IIa, mas só parte da ação sobre o Xa. Mesmo assim, é o antídoto recomendado para sangramento com enoxaparina.\n\nA protamina exige cuidado: pode baixar a pressão e causar reações alérgicas graves, mais comuns em quem já usou insulina NPH (que contém protamina) ou tem alergia a peixe.",
+  "correta": "A protamina. É o antídoto da heparina e também das heparinas de baixo peso molecular, como a enoxaparina, embora com reversão parcial.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0070": {
-  "conceito": "### A teoria da deformação de Perren\n**Strain** = variação de comprimento da fenda ÷ comprimento inicial da fenda.\n\n### Os limites de tolerância (aproximados)\n- Tecido de granulação: até ~100%.\n- Cartilagem/fibrocartilagem: ~10%.\n- **Osso lamelar: ~2%**.\n\n### Transversa\n- Uma única fenda **estreitíssima**.\n- Qualquer micromovimento = deformação ==enorme==, acima do que o osso tolera. O calo não se forma.\n- Exige ==estabilidade absoluta==: compressão que zera a fenda e o movimento.\n\n### Multifragmentar\n- O mesmo movimento se **reparte** entre muitas fendas.\n- Deformação baixa em cada uma.\n- Aceita e prefere **estabilidade relativa** (haste, placa em ponte), com calo.\n\n### O erro clássico\nPlaca em ponte (relativa) numa fratura **simples** com fenda: alto strain, pseudartrose.\n\n> **Na prova:** transversa = ==strain alto = estabilidade absoluta==.",
-  "correta": "**Maior, com estabilidade absoluta.**",
   "incorretas": {
-   "A": "**Conduta errada.**\n- A estabilidade relativa não resolve strain alto na fenda única.",
-   "B": "**Invertido.**\n- A fenda única concentra o movimento.",
-   "D": "**Premissa errada.**\n- A conduta está certa, mas a deformação é maior."
+   "A": "A deformação é de fato maior, mas a estabilidade relativa deixa movimento demais na fenda única.",
+   "B": "Inverte a premissa: na fratura transversa, a deformação é maior, porque o movimento se concentra numa só fenda.",
+   "D": "A estabilidade absoluta está certa, mas a deformação é maior, e não menor."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "**Perren** explicou por que diferentes fraturas precisam de diferentes tipos de fixação usando o conceito de **deformação** (*strain*). A deformação é a variação do tamanho da fenda entre os fragmentos dividida pelo tamanho inicial dessa fenda. Cada tecido aguenta uma deformação máxima diferente: o tecido de granulação, que surge no começo da consolidação, tolera muita deformação; a cartilagem tolera menos; e o **osso** tolera muito pouco.\n\n**Fratura transversa.** Há uma única fenda, estreitíssima. Qualquer pequeno movimento entre os fragmentos representa uma variação **enorme** em relação ao tamanho dessa fenda. A deformação é **alta**, acima do que o osso aguenta, e o calo não consegue se formar. Por isso, a fratura transversa precisa de **estabilidade absoluta**: compressão entre os fragmentos que elimina a fenda e o movimento, e o osso consolida diretamente.\n\n**Fratura multifragmentar.** O mesmo movimento se divide entre várias fendas. Em cada uma, a deformação é **baixa**. Essa fratura tolera e até se beneficia de **estabilidade relativa** (como haste intramedular ou placa em ponte), que permite um pouco de movimento e consolida formando calo.\n\nO erro clássico é usar estabilidade relativa (por exemplo, placa em ponte) numa fratura simples, com uma fenda: a deformação fica alta e o resultado pode ser uma pseudartrose.",
+  "correta": "Maior, sendo melhor indicado estabilização absoluta. A fenda única e estreita concentra o movimento, e só a compressão que elimina a fenda permite a consolidação.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0071": {
-  "conceito": "### Os dois fatores\n- ==Biarticular==: cruzando duas articulações, o músculo pode ser alongado nas duas ao mesmo tempo. Reto femoral, isquiotibiais, gastrocnêmio.\n- ==Contração excêntrica==: o músculo contrai enquanto é alongado, funcionando como **freio**. A força suportada é maior que a gerada concentricamente.\n\n### Quando acontece\nNa **desaceleração**, não no impulso:\n- Fim da fase de balanço da corrida (isquiotibiais).\n- Aterrissagem do salto.\n- Chute (reto femoral).\n\n### Onde cede\nNa **junção miotendínea**.\n\n### Classificações atuais\nA **British Athletics** (graus 0 a 4, com letras a, b, c pela localização: miofascial, musculotendínea, intratendínea) orienta prognóstico e retorno; lesões intratendíneas (c) demoram mais.\n\n> **Na prova:** estiramento = ==biarticular + excêntrica==.",
-  "correta": "**Biarticulares, em contração excêntrica.**",
   "incorretas": {
-   "B": "**Monoarticular não.**\n- Não sofre o duplo alongamento.",
-   "C": "**Concêntrica não.**\n- Encurta o músculo em vez de alongá-lo.",
-   "D": "**Erra os dois.**"
+   "B": "A contração excêntrica está certa, mas o músculo de uma articulação só não sofre o alongamento duplo.",
+   "C": "O músculo biarticular está certo, mas na contração concêntrica o músculo encurta, e o risco é menor.",
+   "D": "Erra os dois: músculo de uma só articulação e contração concêntrica são a combinação de menor risco."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A **lesão muscular por estiramento**, a popular distensão, tem dois fatores de risco principais:\n\n**Músculo biarticular.** Músculos que cruzam duas articulações, como o reto femoral (quadril e joelho), os isquiotibiais (quadril e joelho) e o gastrocnêmio (joelho e tornozelo), podem ser esticados nas duas pontas ao mesmo tempo e chegam ao limite mais facilmente.\n\n**Contração excêntrica.** É quando o músculo faz força enquanto está sendo **alongado**, funcionando como um freio. É diferente da contração concêntrica, em que o músculo encurta enquanto faz força (como ao levantar um peso). Na excêntrica, o músculo suporta forças maiores e é aí que ele rompe.\n\nPor isso, as lesões acontecem nos momentos de **desaceleração**, e não de impulso: no fim da passada da corrida, quando os isquiotibiais freiam a perna que vai para a frente; na aterrissagem de um salto; ou no chute, quando o reto femoral freia o movimento.\n\nO local mais comum da ruptura é a **junção miotendínea**, a transição entre o músculo e o tendão.\n\nHoje, classificações como a britânica (*British Athletics*) graduam a lesão e indicam se ela atinge a fáscia, a junção ou o tendão dentro do músculo. Lesões que atingem o tendão demoram mais para recuperar.",
+  "correta": "Biarticulares e por contração excêntrica. O músculo que cruza duas articulações e faz força enquanto é alongado é o mais vulnerável.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0072": {
-  "conceito": "### Onde começa no adulto\n- O disco do adulto é **avascular**: a infecção hematogênica **não começa nele**.\n- As artérias segmentares terminam em arteríolas na região da ==placa terminal==, junto ao osso subcondral, onde o fluxo é lento.\n- É ali que o germe se deposita.\n\n### A progressão\n- Do foco na placa terminal, invade o **disco** por contiguidade.\n- Alcança a placa terminal da **vértebra vizinha**.\n- Imagem característica: **duas placas destruídas com o disco no meio**.\n\n### Na criança\nO disco ainda tem vasos: a **discite primária** é possível.\n\n### Contraste com a tuberculose\nNa tuberculose, o disco é **poupado** no início, e a infecção corre sob o ligamento longitudinal anterior.\n\n> **Na prova:** espondilodiscite hematogênica do adulto começa na ==placa terminal==.",
-  "correta": "**Na placa terminal.**\n- Território das arteríolas terminais.",
   "incorretas": {
-   "B": "**Incomum.**\n- A faceta pode ser sítio, mas não é o início típico.",
-   "C": "**Impreciso.**\n- O ponto inicial preciso é a região subcondral da placa terminal.",
-   "D": "**Avascular.**\n- O disco do adulto é atingido por contiguidade."
+   "B": "A faceta articular pode ser infectada, mas não é o ponto de início típico da espondilodiscite hematogênica.",
+   "C": "A infecção começa no corpo vertebral, mas o ponto preciso é a região logo abaixo da placa terminal.",
+   "D": "O disco do adulto não tem vasos e é atingido depois, por contiguidade."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A **espondilodiscite piogênica** é a infecção bacteriana que atinge as vértebras e o disco entre elas. No adulto, ela costuma chegar pelo sangue (via hematogênica), e o ponto onde começa tem uma explicação anatômica.\n\nO disco intervertebral do adulto **não tem vasos**. Por isso, a bactéria que circula no sangue não tem como chegar diretamente a ele. As artérias que irrigam a vértebra terminam em pequenas arteríolas na região da **placa terminal**, a camada de osso logo abaixo da superfície que encosta no disco. Ali o fluxo é lento, e é ali que a bactéria se deposita e a infecção começa.\n\nA partir desse ponto, a infecção avança: invade o **disco** por contiguidade e chega à placa terminal da **vértebra vizinha**. Por isso, a imagem típica mostra duas placas terminais destruídas com o disco no meio.\n\nNa criança, o disco ainda tem vasos, e a infecção pode começar nele (discite).\n\nUm contraste útil é a **tuberculose** da coluna: nela, o disco costuma ser poupado no início, e a infecção se espalha por baixo do ligamento que corre na frente das vértebras, atingindo várias vértebras.",
+  "correta": "Na placa terminal. É onde terminam as arteríolas e o fluxo é lento, e a bactéria se instala antes de invadir o disco.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0073": {
@@ -846,53 +846,53 @@
   "conferido": false
  },
  "conceitos-basicos-0074": {
-  "conceito": "### Os critérios de Kocher\nObjetivos, reprodutíveis e disponíveis em qualquer serviço:\n- **Febre** acima de 38,5 °C.\n- ==Não apoiar o membro==.\n- **VHS** acima de 40 mm/h.\n- **Leucócitos** acima de 12.000.\n\nCaird acrescentou a **PCR acima de 2 mg/dL**.\n\n### O que não entra\n- **Derrame no ultrassom:** aparece nas duas condições e **não as separa**. Serve para guiar a punção.\n- **Ressonância:** pode ajudar em casos duvidosos (osteomielite associada, realce), mas não é critério.\n- **Outros marcadores inflamatórios** (alfa-1 glicoproteína ácida): não fazem parte.\n\n### Sinovite transitória\nCriança de 3 a 8 anos, após infecção viral, que ainda apoia, com febre baixa e exames pouco alterados. Autolimitada.\n\n> **Na prova:** critério de Kocher entre as opções = ==não apoiar o membro==.",
-  "correta": "**Não apoiar o membro inferior afetado.**",
   "incorretas": {
-   "A": "**Não separa.**\n- O derrame aparece nas duas condições.",
-   "B": "**Não é critério.**",
-   "D": "**Não é critério.**"
+   "A": "O derrame articular aparece nas duas doenças e não as diferencia. O ultrassom serve para guiar a punção.",
+   "B": "A alfa-1 glicoproteína ácida não faz parte dos critérios de Kocher.",
+   "D": "A alteração do sinal da epífise na ressonância não é um dos critérios de Kocher."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Para separar a **artrite séptica** do quadril (pioartrite, uma infecção que exige drenagem urgente) da **sinovite transitória** (inflamação leve que passa sozinha), usam-se os quatro **critérios de Kocher**. Eles foram escolhidos por serem objetivos e disponíveis em qualquer serviço:\n\n**Febre** acima de 38,5 graus.\n\n**Não apoiar o membro** afetado.\n\n**VHS** acima de 40 mm/h.\n\n**Leucócitos** no sangue acima de 12.000 por mm³.\n\nDepois, Caird acrescentou a **PCR** elevada como quinto critério.\n\nO que **não** faz parte dos critérios:\n\nO **derrame no ultrassom** aparece nas duas doenças, então não ajuda a separá-las. O ultrassom é útil para confirmar que há líquido e guiar a punção.\n\nA **ressonância** pode ajudar em casos duvidosos, por exemplo para ver se há osteomielite junto, mas não é critério.\n\nOutros marcadores de inflamação, como a alfa-1 glicoproteína ácida, também não entram.\n\nA **sinovite transitória** típica acontece em crianças de 3 a 8 anos, muitas vezes depois de uma virose. A criança costuma ainda conseguir apoiar o pé, tem febre baixa ou nenhuma e exames pouco alterados.",
+  "correta": "Não apoiar o membro inferior afetado. É um dos quatro critérios de Kocher.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0075": {
-  "conceito": "### O fixador como alavanca\n- A rigidez do pino cresce com a **quarta potência do raio**: ==aumentar o diâmetro do Schanz== é a medida isolada mais eficaz. Limite: cerca de **1/3 do diâmetro do osso**, para não fragilizá-lo.\n- ==Aproximar a barra do osso== encurta o braço de alavanca. Barra afastada é o jeito mais rápido de deixar o fixador frouxo.\n\n### Somam-se\n- Pinos **afastados** entre si no mesmo fragmento.\n- Pinos **perto do foco**.\n- Mais pinos por fragmento.\n- **Barra dupla** ou montagem em mais planos.\n- Contato ósseo no foco, quando possível.\n\n### Cuidados com o pino\nPré-perfuração, baixa rotação e irrigação para evitar necrose térmica, e cuidados locais para evitar infecção do trajeto.\n\n> **Na prova:** fixador mais estável = ==barra perto do osso e pino mais grosso==.",
-  "correta": "**Barra mais perto do osso e pinos mais grossos.**",
   "incorretas": {
-   "A": "**Erra os dois.**",
-   "B": "**Pino fino.**\n- Reduz muito a rigidez.",
-   "C": "**Barra afastada.**\n- Desfaz o ganho do pino grosso."
+   "A": "Erra os dois: barra afastada e pino fino deixam a montagem mais frouxa.",
+   "B": "A barra próxima está certa, mas o pino fino reduz muito a rigidez.",
+   "C": "O pino grosso está certo, mas a barra afastada aumenta a alavanca e desfaz o ganho."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "No **fixador externo monoplanar**, pinos rosqueados (os **pinos de Schanz**) atravessam a pele e se fixam no osso, e uma barra externa liga os pinos de cima aos de baixo, tudo num mesmo plano. A estabilidade depende de alguns fatores mecânicos.\n\n**Diâmetro do pino.** A rigidez de um pino aumenta muito com a espessura: cresce com a quarta potência do raio. Um pino um pouco mais grosso é muito mais rígido. **Aumentar o diâmetro** é a medida isolada mais eficaz. O limite é não passar de cerca de um terço do diâmetro do osso, para não enfraquecê-lo.\n\n**Distância da barra ao osso.** O pino funciona como uma alavanca entre o osso e a barra. Quanto mais longe a barra, maior o braço de alavanca e mais o pino dobra. **Aproximar a barra do osso** aumenta a estabilidade. Afastar a barra é um dos jeitos mais rápidos de deixar o fixador frouxo.\n\nOutros fatores que ajudam: pinos do mesmo fragmento afastados entre si, pinos perto do foco da fratura, mais pinos por fragmento, barra dupla ou montagem em mais de um plano, e contato entre os fragmentos quando possível.\n\nOs pinos também precisam de cuidado: perfurar antes, em baixa rotação e com irrigação, evita queimar o osso (necrose térmica), e o cuidado diário com o local de entrada na pele evita infecção.",
+  "correta": "A diminuição da distância da barra ao osso e o aumento do diâmetro dos pinos de Schanz. A barra próxima encurta a alavanca, e o pino mais grosso é muito mais rígido.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0076": {
-  "conceito": "### Como se forma o sequestro\nPrimeiro mecânico, depois bacteriológico:\n- O **pus** se acumula sob pressão na medular e nos canais de Havers.\n- Atravessa a cortical e ==descola o periósteo==.\n- O terço externo da cortical, irrigado pelos vasos **periosteais**, perde o sangue.\n- Somado à trombose dos vasos medulares, o segmento ==morre==: é o **sequestro**.\n\n### O resto da anatomia da osteomielite crônica\n- **Invólucro:** osso novo formado pelo periósteo elevado, ao redor do sequestro.\n- **Cloacas:** orifícios no invólucro por onde o pus drena.\n- **Fístula:** trajeto até a pele.\n\n### A consequência\nO sequestro é avascular: antibiótico não chega. O tratamento exige **sequestrectomia**, idealmente quando o invólucro já dá estabilidade.\n\n> **Na prova:** sequestro = ==elevação periosteal + necrose óssea==.",
-  "correta": "**Elevação periosteal e necrose óssea.**",
   "incorretas": {
-   "A": "**Consequências possíveis.**\n- Não explicam o sequestro.",
-   "C": "**Consequências.**\n- Neoformação é o invólucro; fístula é a drenagem.",
-   "D": "**Influem no curso.**\n- Mas o sequestro vem da isquemia mecânica."
+   "A": "O acometimento da epífise e a infecção da articulação podem acontecer, mas não explicam a formação do sequestro.",
+   "C": "A neoformação óssea forma o invólucro, e a fístula é o caminho de drenagem. São consequências, não a causa do sequestro.",
+   "D": "As células inflamatórias e a imunidade do paciente influenciam a evolução, mas o sequestro resulta da perda de sangue pelo descolamento do periósteo."
   },
+  "conceito": "Na **osteomielite**, o **sequestro** é um pedaço de osso morto que fica solto dentro da área infectada. Ele se forma por um processo primeiro mecânico, depois biológico:\n\nO **pus** se acumula sob pressão dentro do canal do osso e dos pequenos canais da cortical.\n\nA pressão empurra o pus através da cortical, e ele se acumula por fora, **descolando o periósteo** (a membrana que reveste o osso).\n\nO terço de fora da cortical recebe sangue justamente do periósteo. Com o periósteo descolado, essa parte perde o sangue. Somando a isso a trombose dos vasos de dentro do canal, causada pela infecção, um segmento de osso fica sem sangue de nenhum lado e **morre** (necrose). Esse osso morto é o sequestro.\n\nOutros elementos completam o quadro da osteomielite crônica. O periósteo descolado continua vivo e forma osso novo ao redor do sequestro: é o **invólucro**. Esse invólucro tem orifícios por onde o pus escapa, as **cloacas**. E o caminho do pus até a pele forma uma **fístula**.\n\nA consequência prática é que o sequestro, por não ter sangue, não recebe o antibiótico. O tratamento exige retirá-lo cirurgicamente (**sequestrectomia**), de preferência quando o invólucro já é forte o bastante para dar estabilidade ao osso.",
+  "correta": "Elevação periosteal e necrose óssea. O pus descola o periósteo, o osso perde o sangue e morre, formando o sequestro.",
   "referencias": [
    "Lovell and Winter's Pediatric Orthopaedics, 7ª edição (Weinstein, Flynn), Cap. 12"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0077": {
-  "conceito": "### A COX-2 na consolidação\n- As **prostaglandinas** participam da fase inflamatória da consolidação.\n- A **COX-2** é induzida no foco e é necessária à diferenciação das células mesenquimais em osteoblastos.\n\n### Os AINEs\nSeletivos e não seletivos ==ambos inibem a COX-2==. Por isso ambos ==interferem==:\n- Atrasam a consolidação em modelos experimentais.\n- Associam-se, em estudos clínicos, a maior risco de retardo e pseudartrose, sobretudo com **dose alta e uso prolongado**.\n- O efeito é **dose e tempo dependente**, e parece reversível.\n\n### Na prática\n- Uso **curto** (poucos dias) para analgesia é considerado aceitável pela maioria.\n- Evitar uso prolongado em fraturas de alto risco (tíbia, escafoide, fumantes) e em artrodeses.\n- A evidência clínica é heterogênea.\n\n> **Na prova:** AINE seletivo e não seletivo ==interferem== na consolidação.",
-  "correta": "**Interferem.**\n- Ambos inibem a COX-2.",
   "incorretas": {
-   "B": "**Contraria os dados.**",
-   "C": "**Sem dissociação.**\n- Os não seletivos também inibem a COX-2.",
-   "D": "**Mesma razão.**"
+   "B": "Contraria os estudos, que mostram atraso da consolidação com os dois tipos, sobretudo em doses altas e por tempo prolongado.",
+   "C": "Não há essa diferença: os não seletivos também bloqueiam a COX-2 e também interferem.",
+   "D": "Pelo mesmo motivo, os seletivos também interferem, porque bloqueiam justamente a COX-2."
   },
+  "conceito": "Depois de uma fratura, o primeiro passo da consolidação é uma **fase inflamatória**. Ela não é um efeito colateral a ser eliminado: é parte do processo de cura. Nela, substâncias chamadas **prostaglandinas** ajudam a recrutar e transformar as células que vão formar o calo. A enzima responsável por produzir essas prostaglandinas no foco da fratura é a **COX-2**, que é ativada ali e é necessária para que células imaturas virem osteoblastos (as células que formam osso).\n\nOs **anti-inflamatórios não esteroides** (AINEs) funcionam justamente bloqueando as enzimas COX. Os **não seletivos** (como ibuprofeno, diclofenaco, naproxeno) bloqueiam a COX-1 e a COX-2. Os **seletivos** (como celecoxibe e etoricoxibe) bloqueiam principalmente a COX-2. Ou seja, **os dois tipos bloqueiam a COX-2**, e por isso **os dois interferem** na consolidação.\n\nEstudos em animais mostram atraso na consolidação, e estudos em pessoas associam seu uso a mais risco de retardo de consolidação e pseudartrose, principalmente com doses altas e uso prolongado. O efeito depende da dose e do tempo, e parece ser reversível.\n\nNa prática, o uso **curto**, de poucos dias, para aliviar a dor é considerado aceitável pela maioria. Evita-se o uso prolongado em fraturas com maior risco de não consolidar (como tíbia e escafoide), em fumantes e em cirurgias de artrodese.",
+  "correta": "Interferem. Os dois tipos de anti-inflamatório bloqueiam a COX-2, enzima necessária para a fase inflamatória da consolidação.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 29"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0078": {
@@ -910,95 +910,95 @@
   "conferido": false
  },
  "conceitos-basicos-0079": {
-  "conceito": "### A associação clássica\nFerimento **perfurante na planta do pé através da sola do tênis** = ==Pseudomonas aeruginosa==.\n- A **espuma úmida** do calçado abriga o germe.\n- O objeto perfurante o inocula em profundidade.\n- Na criança, o calcâneo e as articulações metatarsofalângicas (osteocondrite) são típicos.\n\n### A apresentação\nDor e edema **persistentes ou que pioram** dias depois de um ferimento aparentemente banal.\n\n### O tratamento\n- **Desbridamento** cirúrgico.\n- Antibiótico com **cobertura antipseudomonas** (a cobertura habitual para estafilococo não serve).\n- Com bom desbridamento, o curso de antibiótico pode ser relativamente curto.\n\n> **Na prova:** prego através do tênis = ==Pseudomonas==.",
-  "correta": "**Pseudomonas aeruginosa.**",
   "incorretas": {
-   "A": "**Criança pequena, indolente.**\n- Kingella não é do ferimento perfurante.",
-   "B": "**Falciforme.**",
-   "C": "**Não típica.**"
+   "A": "A *Kingella kingae* causa infecções osteoarticulares em crianças pequenas, geralmente leves, e não está ligada a ferimentos perfurantes.",
+   "B": "A *Salmonella* é associada a osteomielite em pacientes com anemia falciforme.",
+   "C": "A *Klebsiella* não é o germe típico da infecção após ferimento perfurante no pé."
   },
+  "conceito": "Uma associação clássica de prova: **ferimento perfurante na sola do pé, através do tênis** (por exemplo, um prego), causando infecção do osso ou da articulação, é típico da bactéria ***Pseudomonas aeruginosa***.\n\nA explicação é curiosa. A espuma da palmilha do tênis, úmida e quente, é um ambiente ideal para a *Pseudomonas* viver. Quando um objeto atravessa o tênis e o pé, ele carrega a bactéria da espuma para dentro, em profundidade, até o osso ou a articulação. Na criança, os locais típicos são o **calcâneo** (o osso do calcanhar) e as articulações da base dos dedos.\n\nO quadro costuma ser assim: um ferimento que parecia banal, mas que, dias depois, continua doendo, inchando ou piora em vez de melhorar.\n\nO tratamento tem dois pilares. A **limpeza cirúrgica** (desbridamento), retirando o tecido infectado e o osso comprometido. E um **antibiótico com ação contra Pseudomonas**, porque os antibióticos usados de rotina contra o estafilococo, o germe mais comum nas outras osteomielites, não funcionam contra ela. Com uma boa limpeza cirúrgica, o tempo de antibiótico pode ser relativamente curto.",
+  "correta": "*Pseudomonas aeruginosa*. A bactéria vive na espuma úmida do tênis e é levada para dentro do pé pelo objeto perfurante.",
   "referencias": [
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 23"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0080": {
-  "conceito": "### As causas\n- ==Doença vascular periférica==, quase sempre com **diabetes**: a grande maioria das amputações de membro inferior nos países com população envelhecida.\n- **Trauma:** segunda causa no membro inferior; **principal** no membro superior e nos jovens.\n- **Tumor e deformidade congênita:** minoria.\n\n### O perfil do amputado\n- Idoso, diabético, com comorbidades.\n- Cicatrização difícil.\n- Alto risco de amputação **contralateral** e mortalidade elevada nos anos seguintes.\n\n### Consequências para o planejamento\n- Nível escolhido pela **perfusão**.\n- Preservar o **joelho** sempre que possível (gasto energético muito menor com prótese transtibial).\n- Reabilitação precoce.\n\n> **Na prova:** causa mais frequente de amputação no membro inferior = ==doença vascular periférica==.",
-  "correta": "**Doença vascular periférica.**",
   "incorretas": {
-   "A": "**Minoria.**",
-   "B": "**Segunda causa.**\n- Principal no membro superior e nos jovens.",
-   "C": "**Minoria.**"
+   "A": "Os tumores respondem por uma minoria das amputações.",
+   "B": "O trauma é a segunda causa no membro inferior e a principal no membro superior e nos jovens.",
+   "C": "As deformidades congênitas também são uma minoria."
   },
+  "conceito": "A causa mais frequente de amputação do membro inferior, nos países com população envelhecida como o Brasil, é a **doença vascular periférica**: o entupimento das artérias das pernas, muito frequentemente associado ao **diabetes**. A falta de sangue causa feridas que não cicatrizam, gangrena e infecção, e a amputação passa a ser necessária.\n\nAs outras causas são menos frequentes no membro inferior:\n\nO **trauma** é a segunda causa. Ele é a causa principal no **membro superior** e nas pessoas jovens.\n\nOs **tumores** e as **deformidades congênitas** respondem por uma pequena minoria.\n\nO perfil do paciente amputado por doença vascular ajuda a entender os desafios: geralmente idoso, diabético, com outras doenças, com cicatrização difícil. Esse paciente tem alto risco de vir a perder também a outra perna e uma mortalidade elevada nos anos seguintes.\n\nIsso orienta o planejamento: o nível da amputação é escolhido pela **circulação**, para que a ferida cicatrize; preserva-se o **joelho** sempre que possível, porque andar com prótese abaixo do joelho gasta muito menos energia que acima dele; e a reabilitação começa cedo.",
+  "correta": "A doença vascular periférica. Quase sempre associada ao diabetes, é a causa da grande maioria das amputações do membro inferior.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 14"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0081": {
-  "conceito": "### O princípio\nA banda de tensão **converte tração em compressão**. Para isso, o implante fica do lado que sofre **tração**.\n\n### No osso longo\nCom carga excêntrica, um lado comprime e o outro traciona. A face ==convexa== é a que traciona.\n- Placa na convexidade: a carga que abriria o foco passa a **comprimi-lo**.\n- Placa na concavidade: fica no lado que já comprime; o foco abre do outro lado a cada ciclo e a placa falha por **fadiga**.\n\n### Exemplos\n- **Fêmur:** face **lateral** (tração).\n- **Olécrano e patela:** fios e cerclagem na face de tração (posterior e anterior).\n- Maléolo medial, trocanter maior.\n\n### Condição\nA cortical oposta precisa estar **íntegra** para suportar a compressão.\n\n> **Na prova:** banda de tensão = ==face convexa (de tração)==.",
-  "correta": "**Face convexa.**\n- A que sofre tração.",
   "incorretas": {
-   "A": "**Referência anatômica.**\n- O princípio é mecânico, não de face anatômica.",
-   "B": "**Mesma razão.**\n- No fêmur, a face de tração é a lateral.",
-   "D": "**Compressão.**\n- Placa ali não converte tração e falha por fadiga."
+   "A": "\"Volar\" é uma referência anatômica, e o princípio é mecânico: depende de qual face sofre tração, e não do nome da face.",
+   "B": "Também é uma referência anatômica. O que importa é colocar o implante na face que sofre tração.",
+   "D": "A face côncava sofre compressão. Uma placa ali não impede que o outro lado se abra e tende a quebrar por fadiga."
   },
+  "conceito": "O princípio da **banda de tensão** transforma uma força que abriria a fratura em uma força que a **comprime**. Para entender, é preciso olhar como um osso longo é carregado.\n\nQuando o peso passa pelo osso de forma excêntrica (fora do centro, o que é a regra na maioria dos ossos), o osso tende a se curvar levemente. Um lado é **comprimido** (o lado côncavo da curva) e o outro lado é **tracionado**, esticado (o lado **convexo**). Numa fratura, a tração tende a abrir o foco do lado convexo.\n\nSe o implante (placa, fios ou cerclagem) for colocado do lado **convexo**, o que sofre tração, ele impede que esse lado se abra. A força que abriria a fratura passa a ser transmitida como **compressão** sobre a cortical do outro lado. É como segurar uma vara que está sendo dobrada pelo lado de fora.\n\nSe a placa for colocada do lado côncavo, ela fica do lado que já está comprimido. O outro lado abre a cada carga, e a placa acaba quebrando por fadiga.\n\nExemplos clássicos: no **fêmur**, o lado que sofre tração é o lateral, e é ali que se coloca a placa. No **olécrano** e na **patela**, a banda de tensão com fios e cerclagem é colocada na face que sofre tração (posterior no olécrano, anterior na patela).\n\nUma condição importante: a cortical do lado oposto precisa estar **inteira**, para suportar a compressão.",
+  "correta": "Convexa. É a face que sofre tração; o implante colocado ali transforma essa tração em compressão no foco.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 53"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0082": {
-  "conceito": "### As três fases da lesão muscular\n- **Destruição:** ruptura das miofibrilas, retração dos cotos, hematoma, **necrose**.\n- ==Reparo==: ao mesmo tempo,\n  - **Macrófagos** fagocitam o tecido necrótico.\n  - **Células satélites** (células-tronco do músculo, sob a lâmina basal) são ativadas, proliferam e ==regeneram miofibrilas==.\n  - **Fibroblastos** produzem a cicatriz entre os cotos.\n- **Remodelação:** as miofibrilas novas **amadurecem**, a cicatriz se retrai e se organiza, a função volta.\n\n### O que define o resultado\nA competição entre **regeneração** e **cicatriz**. Cicatriz excessiva gera fibrose e recidiva.\n\n### Na prática\n- Repouso curto nos primeiros dias (deixar a cicatriz inicial firmar).\n- Depois, **mobilização precoce** controlada, que orienta as fibras e reduz a fibrose.\n\n> **Na prova:** fase de reparo = ==fagocitose + regeneração==.",
-  "correta": "**Fagocitose do tecido necrótico e regeneração das miofibrilas.**",
   "incorretas": {
-   "A": "**Fases erradas.**\n- Necrose é destruição; maturação é remodelação.",
-   "B": "**Necrose é antes.**",
-   "C": "**Maturação é depois.**"
+   "A": "A necrose pertence à fase de destruição, e a maturação das miofibrilas, à fase de remodelação.",
+   "B": "A regeneração está certa, mas a necrose acontece antes, na fase de destruição.",
+   "C": "A fagocitose está certa, mas a maturação das miofibrilas acontece depois, na remodelação."
   },
+  "conceito": "A cicatrização de uma **lesão muscular** passa por três fases:\n\n**Destruição.** As fibras musculares se rompem, as pontas se retraem, forma-se um hematoma, e parte do tecido morre (**necrose**). Começa a inflamação.\n\n**Reparo.** Várias coisas acontecem ao mesmo tempo:\nOs **macrófagos**, células que \"engolem\" restos, fazem a **fagocitose** do tecido morto, limpando a área.\nAs **células satélites**, células-tronco próprias do músculo, que ficam guardadas junto às fibras, são ativadas, se multiplicam e **regeneram as miofibrilas**, formando fibras musculares novas.\nOs **fibroblastos** produzem tecido cicatricial, que preenche o espaço entre as pontas.\n\n**Remodelação.** As fibras novas **amadurecem**, a cicatriz se organiza e encolhe, e a função do músculo volta.\n\nO resultado depende de uma competição entre **regeneração** (fibras musculares novas) e **cicatriz** (tecido fibroso). Quando a cicatriz vence, o músculo fica mais rígido e mais sujeito a romper de novo.\n\nNa prática, isso explica o tratamento: um repouso curto nos primeiros dias, para a cicatriz inicial firmar e segurar as pontas, seguido de **movimento precoce e controlado**, que orienta as fibras novas e reduz a fibrose.",
+  "correta": "Fagocitose do tecido necrótico e regeneração das miofibrilas. Na fase de reparo, os macrófagos limpam a área enquanto as células satélites formam fibras novas.",
   "referencias": [
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 15.4"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0083": {
-  "conceito": "### A pesquisa de cristais é exigente\nAlguns anticoagulantes **precipitam como cristais** e geram falsos positivos na luz polarizada:\n- **EDTA.**\n- **Oxalato de potássio.**\n- **Heparina com lítio.**\n\nO recomendado é a ==heparina sódica==, que preserva o líquido sem interferir.\n\n### Cada exame, um tubo\n- **Contagem celular:** EDTA.\n- **Cristais:** heparina sódica (ou tubo seco, analisado rápido).\n- **Cultura:** seringa ou frasco de hemocultura.\n\n### Os cristais\n- **Gota (urato monossódico):** agulha, birrefringência **negativa** forte.\n- **Pirofosfato de cálcio:** romboides, birrefringência **positiva** fraca.\n\n> **Na prova:** pesquisa de cristais = ==heparina sódica==.",
-  "correta": "**Heparina sódica.**\n- Anticoagula sem artefatos cristalinos.",
   "incorretas": {
-   "A": "**Artefato.**\n- O EDTA serve à contagem celular.",
-   "C": "**Artefato.**\n- A heparina com lítio pode gerar cristais.",
-   "D": "**Forma cristais.**"
+   "A": "O EDTA pode formar artefatos cristalinos. Ele é o tubo indicado para a contagem de células, e não para cristais.",
+   "C": "A heparina com lítio também pode gerar cristais e confundir a análise.",
+   "D": "O oxalato de potássio forma cristais e não deve ser usado para essa pesquisa."
   },
+  "conceito": "A **pesquisa de cristais** no líquido sinovial, retirado da articulação por punção, é feita ao microscópio com luz polarizada. Ela serve para diagnosticar gota e pseudogota. O problema é que alguns anticoagulantes usados nos tubos de coleta **formam cristais** e podem enganar o examinador, dando falso positivo.\n\nOs anticoagulantes que causam esse problema são o **EDTA**, o **oxalato de potássio** e a **heparina com lítio**. O recomendado para a pesquisa de cristais é a **heparina sódica**, que impede a coagulação sem criar artefatos. Um tubo seco também pode ser usado, desde que a análise seja feita logo.\n\nVale lembrar que cada exame do líquido sinovial pede um recipiente diferente:\n\n**Contagem de células**: tubo com EDTA.\n\n**Cristais**: tubo com heparina sódica.\n\n**Cultura**: seringa ou frasco de hemocultura.\n\nE os dois cristais principais: na **gota**, os cristais de urato monossódico têm formato de agulha e brilham de forma intensa com birrefringência negativa. Na **doença por depósito de pirofosfato de cálcio** (pseudogota), os cristais são romboides e têm birrefringência positiva fraca.",
+  "correta": "A heparina sódica. Ela impede a coagulação sem formar cristais que possam ser confundidos com os da doença.",
   "referencias": [
    "Leite, Faloppa, Propedêutica Ortopédica e Traumatológica, 1ª edição, Cap. 6"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0087": {
-  "conceito": "### As três fases da cintilografia com tecnécio\n- **Fluxo (angiográfica):** primeiros segundos. Passagem do radiofármaco pelos vasos, como um **angiograma**.\n- **Equilíbrio (blood pool):** primeiros minutos. Distribuição no **espaço extracelular**: hiperemia e inflamação de partes moles.\n- ==Tardia==: após 2 a 4 horas. A maior parte do isótopo circulante foi **excretada pelo rim**; o que resta está fixado ao osso e mostra ==atividade osteoblástica==.\n\n### Para que servem as três fases\nAcrescentam **especificidade**:\n- **Osteomielite:** positiva nas três.\n- **Celulite:** positiva nas duas primeiras, pouco na tardia.\n- A sensibilidade já é alta na fase tardia isolada.\n\n### Quatro fases\nUma imagem após 24 horas melhora a relação osso/partes moles.\n\n> **Na prova:** fase tardia = ==atividade osteoblástica==.",
-  "correta": "**A fase tardia mostra a atividade osteoblástica.**",
   "incorretas": {
-   "A": "**Especificidade.**\n- As três fases aumentam sobretudo a especificidade.",
-   "B": "**Fase de equilíbrio.**\n- O espaço extracelular é da fase de equilíbrio.",
-   "C": "**Fase de fluxo.**\n- O angiograma é a fase de fluxo."
+   "A": "As três fases aumentam principalmente a especificidade; a sensibilidade já é alta com a fase tardia.",
+   "B": "A distribuição no espaço extracelular é o que mostra a fase de equilíbrio, e não a de fluxo.",
+   "C": "A imagem semelhante a uma angiografia é a fase de fluxo, e não a de equilíbrio."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "A **cintilografia óssea** usa uma substância marcada com **tecnécio**, um material radioativo que se fixa ao osso que está se formando. Ela pode ser feita em três fases, e cada uma mostra uma coisa diferente:\n\n**Fase de fluxo** (ou angiográfica): nos primeiros segundos depois da injeção. Mostra a passagem do material pelos vasos, como uma **angiografia**. Indica o fluxo de sangue na região.\n\n**Fase de equilíbrio** (ou *blood pool*): nos primeiros minutos. O material se espalha pelos tecidos, no **espaço extracelular**. Mostra áreas de hiperemia e inflamação, inclusive de partes moles.\n\n**Fase tardia**: duas a quatro horas depois. A maior parte do material que estava circulando já foi **eliminada pelos rins**. O que sobra está fixado ao osso e mostra a **atividade osteoblástica**, ou seja, onde o osso está sendo formado com mais intensidade.\n\nFazer as três fases aumenta principalmente a **especificidade**, ajudando a diferenciar doenças. Por exemplo, a **osteomielite** (infecção do osso) aparece positiva nas três fases, enquanto a **celulite** (infecção da pele e do tecido abaixo dela) aparece nas duas primeiras, mas pouco na tardia, porque o osso não está doente. A sensibilidade já é alta só com a fase tardia.\n\nÀs vezes se acrescenta uma quarta fase, 24 horas depois, que melhora o contraste entre o osso e as partes moles.",
+  "correta": "A fase retardada mostra a atividade osteoblástica, após a excreção renal da maioria do isótopo. O que resta está preso ao osso que está sendo formado.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0088": {
-  "conceito": "### As regras de montagem (Weber)\n- ==Pinos do mesmo fragmento o mais afastados possível==: base de apoio maior, mais resistência à angulação.\n- Pinos **perto do foco**, mas fora da zona de lesão.\n- Pinos a pelo menos **1 a 2 cm da articulação** (e fora da cápsula).\n- **Barra perto do osso**, respeitando o espaço para o edema.\n- Pinos **grossos** (rigidez cresce com a quarta potência do raio).\n\n### A inserção do Schanz\n- **Baixa rotação**, com pré-perfuração e irrigação.\n- A alta rotação gera **necrose térmica**, principal causa de afrouxamento e infecção do trajeto.\n- Evitar trajetos transmusculares extensos e **corredores seguros** para feixes neurovasculares.\n\n> **Na prova:** montagem básica = ==pinos afastados no mesmo fragmento==, barra perto, inserção em baixa rotação.",
-  "correta": "**Pinos de um fragmento o mais afastados possível.**",
   "incorretas": {
-   "A": "**Necrose térmica.**\n- Inserção em baixa rotação.",
-   "C": "**O contrário.**\n- A barra fica perto do osso.",
-   "D": "**Perto do foco.**\n- Evita-se a zona de lesão, não 3 cm do foco."
+   "A": "O pino deve ser colocado em baixa rotação. A alta rotação esquenta o osso e causa necrose térmica.",
+   "C": "É o contrário: a barra deve ficar perto do osso, para reduzir a alavanca.",
+   "D": "Os pinos devem ficar perto do foco, apenas fora da zona lesada. A distância mínima da articulação é que deve ser respeitada."
   },
-  "geradoEm": "2026-09-23",
+  "conceito": "Weber descreveu regras para montar um **fixador externo** de forma estável e segura. O fixador prende o osso com **pinos de Schanz** (pinos rosqueados que atravessam a pele e entram no osso), ligados a uma barra externa.\n\nAs regras principais são:\n\n**Pinos de um mesmo fragmento o mais afastados possível.** Um pino perto da fratura e outro longe dela formam uma base de apoio larga, que resiste bem a dobrar. Pinos juntinhos formam uma base estreita, que gira com facilidade.\n\n**Pinos perto do foco**, mas fora da zona lesada.\n\n**Pinos longe da articulação**, a pelo menos 1 a 2 cm dela e fora da cápsula, para não levar infecção para dentro da articulação.\n\n**Barra perto do osso**, deixando apenas espaço para o inchaço. Quanto mais longe a barra, maior a alavanca e mais o pino dobra.\n\n**Pinos grossos**, porque a rigidez aumenta muito com o diâmetro.\n\nNa inserção do pino, a regra é usar **baixa rotação**, perfurar antes e irrigar. A broca em alta rotação esquenta o osso e causa **necrose térmica**, a principal causa de pinos que afrouxam e infeccionam. Também se usam os \"corredores seguros\", trajetos que evitam nervos e vasos.",
+  "correta": "A distância entre os pinos de Schanz de um fragmento deve ser a maior possível. Pinos afastados formam uma base de apoio larga, mais estável.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "conceitos-basicos-0089": {
