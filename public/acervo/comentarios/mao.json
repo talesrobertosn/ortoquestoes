@@ -3806,80 +3806,80 @@
   "conferido": false
  },
  "mao-0395": {
-  "conceito": "### Classificação de McGowan (túnel cubital)\n| Grau | Sensibilidade | Motricidade |\n|---|---|---|\n| I | parestesia **intermitente** | fraqueza **subjetiva** (sem déficit ao exame) |\n| II | parestesia intermitente ou persistente | fraqueza **mensurável** inicial, sem atrofia importante |\n| ==III== | ==parestesia permanente== | ==fraqueza mensurável com atrofia== intrínseca |\n\n### Classificação de Dellon (mais detalhada)\n- Leve, moderada e grave, somando alterações sensitivas (vibração, discriminação de dois pontos) e motoras.\n\n### Achados do grau III\n- Atrofia do **1º interósseo dorsal**, garra do 4º e 5º dedos, Froment e Wartenberg positivos.\n- Prognóstico **pior**: recuperação motora incompleta mesmo após descompressão.\n\n### Tratamento\n- Graus leves: evitar flexão prolongada do cotovelo, órtese noturna em extensão.\n- Graus avançados: descompressão in situ ou transposição anterior.\n\n### Onde entra o Froment\n- Froment positivo = fraqueza ==objetiva== do adutor: saiu do grau I.\n- Sem atrofia = ==grau II==; com atrofia e garra = grau III.\n\n> **Na prova:** Froment positivo sem atrofia = ==McGowan II==",
-  "correta": "**Grau II.**\n- Déficit motor mensurável, sem atrofia.\n- Com atrofia e garra, passa ao III.\n- Operar antes do III melhora o prognóstico.",
   "incorretas": {
-   "A": "**Fraqueza subjetiva.**\n- Sem déficit objetivo.",
-   "C": "**Exige atrofia.**\n- Não descrita no enunciado.",
-   "D": "**Não existe.**\n- São três graus."
+   "A": "O grau I tem só queixas sensitivas ou fraqueza subjetiva, sem déficit que o exame consiga mostrar.",
+   "C": "O grau III exige atrofia muscular, que o enunciado não descreve.",
+   "D": "A classificação de McGowan tem só três graus; não existe o grau IV."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **classificação de McGowan** gradua a compressão do **nervo ulnar no cotovelo** (síndrome do túnel cubital) pela gravidade do quadro clínico:\n\n**grau I**: queixas **sensitivas** (formigamento no 4º e 5º dedos) e, no máximo, uma fraqueza que o paciente sente, mas que **o exame não mostra**;\n\n**grau II**: **fraqueza objetiva** dos músculos intrínsecos, que o examinador consegue medir, **sem atrofia**;\n\n**grau III**: fraqueza **com atrofia** muscular, sobretudo do **1º interósseo dorsal**, garra do 4º e 5º dedos e paralisia evidente.\n\n**Onde entra o sinal de Froment**: o paciente segura uma folha de papel entre o polegar e o indicador. Sem a força do **adutor do polegar** (inervado pelo ulnar), ele dobra a ponta do polegar, usando o flexor longo do polegar (do mediano) para compensar. É, portanto, uma **fraqueza objetiva**: o paciente já saiu do grau I. Se ainda **não há atrofia**, está no **grau II**.\n\n**Por que importa**: o prognóstico piora muito no grau III, em que a recuperação motora costuma ser incompleta mesmo após a cirurgia. Operar antes da atrofia dá melhores resultados.\n\n**Tratamento**: nos graus leves, evitar dobrar o cotovelo por muito tempo e usar órtese noturna em extensão. Nos graus mais avançados, descompressão in situ ou transposição anterior do nervo.\n\n**Na prova**: Froment positivo, sem atrofia = **McGowan II**.",
+  "correta": "O Froment positivo mostra fraqueza objetiva do adutor; sem atrofia descrita, o paciente está no grau II de McGowan.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0396": {
-  "conceito": "### Testes provocativos do túnel do carpo\n| Teste | Mecanismo | Desempenho |\n|---|---|---|\n| Tinel | percussão sobre o nervo | sensibilidade baixa a moderada |\n| Phalen | flexão do punho por 60 s (aumenta a pressão) | sensibilidade e especificidade moderadas |\n| ==Durkan (compressão carpal)== | ==pressão direta do polegar sobre o túnel por 30 s== | ==melhor sensibilidade e especificidade== dos três |\n| teste de elevação da mão | mão acima da cabeça por 2 min | útil |\n\n### Outros elementos do diagnóstico\n- Parestesia noturna nos três primeiros dedos e metade radial do anelar; **sinal da sacudida** (flick).\n- Hipoestesia poupando a eminência tenar (ramo cutâneo palmar sai antes do túnel).\n- Atrofia tenar e fraqueza de abdução do polegar nos casos avançados.\n- **ENMG** confirma e gradua.\n- Ultrassom: área de secção transversa do mediano acima de cerca de 10 a 12 mm².\n\n### Não confundir\n- **Semmes-Weinstein:** limiar de pressão cutânea; quantifica, não provoca.\n- **Discriminação de dois pontos:** densidade de inervação; altera tarde.\n\n### Duas perguntas diferentes\n| Pergunta | Resposta |\n|---|---|\n| teste de ==melhor acurácia== diagnóstica | ==Durkan== |\n| primeiro a se alterar na compressão progressiva | Semmes-Weinstein |\n\n> **Na prova:** teste mais preciso no túnel do carpo inicial = ==Durkan==",
-  "correta": "**Durkan.**\n- Maior sensibilidade e especificidade entre os testes clínicos.\n- Reproduz o mecanismo da doença.",
   "incorretas": {
-   "B": "**Fica atrás.**\n- Útil, mas inferior ao Durkan.",
-   "C": "**Sensibilidade baixa.**\n- Pode não provocar nada.",
-   "D": "**Primeiro a alterar.**\n- É exame de limiar, não o de melhor acurácia."
+   "B": "O Phalen é útil, mas tem acurácia um pouco menor que a do Durkan.",
+   "C": "O Tinel tem sensibilidade baixa e pode ser negativo na fase inicial.",
+   "D": "O Semmes-Weinstein mede o limiar de sensibilidade; altera cedo, mas não é o teste de melhor acurácia."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **síndrome do túnel do carpo**, os **testes provocativos** aumentam a pressão sobre o nervo mediano para reproduzir o formigamento no polegar, indicador, médio e metade do anelar.\n\n**Os testes e o que valem**:\n\n**Durkan** (compressão do carpo): o examinador aperta com o polegar **diretamente sobre o túnel por 30 segundos**. Tem a **maior sensibilidade e especificidade** entre os testes clínicos, por reproduzir exatamente o mecanismo da doença;\n\n**Phalen**: **flexão do punho por 60 segundos**; útil, mas um pouco inferior ao Durkan;\n\n**Tinel**: **percussão** sobre o nervo; é o de **menor sensibilidade** e pode não provocar nada na fase inicial.\n\n**O monofilamento de Semmes-Weinstein** é diferente: **não provoca** sintomas, mas **mede o limiar** de sensibilidade à pressão. É dos primeiros exames a se alterar na compressão, porém não é o de melhor acurácia diagnóstica entre os testes clínicos. A **discriminação de dois pontos** só altera nos casos avançados.\n\n**Outros elementos**: piora noturna, alívio ao sacudir a mão, perda de sensibilidade que **poupa a eminência tenar**. A **eletroneuromiografia** confirma e gradua; o ultrassom mostra o nervo engrossado.\n\n**Na prova**: teste clínico mais preciso no túnel do carpo inicial = **Durkan**.",
+  "correta": "O teste de Durkan, a compressão direta sobre o túnel por 30 segundos, tem a melhor sensibilidade e especificidade entre os testes clínicos.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0397": {
-  "conceito": "### Epidemiologia da doença de Dupuytren\n| Aspecto | Característica |\n|---|---|\n| sexo | ==masculino, cerca de 10:1== nas séries clássicas (menos em idosos) |\n| etnia | norte-europeus (\"doença dos vikings\"); rara em asiáticos e africanos |\n| idade | aumenta após 40 a 50 anos |\n| herança | autossômica dominante com penetrância variável |\n| lateralidade | bilateral, ==assimétrica== |\n\n### Associações\n- **Diabetes**, **álcool**, **tabagismo**, epilepsia (fenobarbital), HIV, trabalho com vibração, trauma.\n\n### Corticoide\n- Não é causa; a **infiltração de triancinolona** é usada em nódulos dolorosos iniciais.\n\n### Tratamentos\n| Opção | Indicação |\n|---|---|\n| observação | nódulo sem contratura |\n| aponeurotomia por agulha | cordas bem definidas, MF |\n| colagenase | cordas palpáveis (disponibilidade variável) |\n| fasciectomia limitada | padrão |\n| dermofasciectomia com enxerto | recidiva, diátese |\n\n### Dupuytren no diabético\n- Mais ==difusa==, acomete mais o lado radial (médio, anelar).\n- Contraturas ==menos graves==.\n\n### Não associadas\n- Lúpus, artrite reumatoide.\n\n> **Na prova:** associações clássicas = ==epilepsia e diabetes== (e álcool, tabaco).",
-  "correta": "**Epilepsia e diabetes.**\n- Ambas na lista clássica, com álcool, tabaco, HIV, anticonvulsivantes.\n- No diabetes, doença difusa e mais branda.",
   "incorretas": {
-   "B": "**Lúpus não.**\n- Diabetes certo.",
-   "C": "**Lúpus não.**\n- Epilepsia certa.",
-   "D": "**AR não.**\n- Mecanismo articular e tendíneo, não fascial."
+   "B": "O diabetes está certo, mas o lúpus não se associa ao Dupuytren.",
+   "C": "A epilepsia está certa, mas o lúpus não se associa ao Dupuytren.",
+   "D": "O diabetes está certo, mas a artrite reumatoide afeta articulações e tendões, e não a fáscia palmar."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **doença de Dupuytren** é uma fibromatose da fáscia palmar, mais comum em **homens** acima de 40 anos, de ascendência norte-europeia, com forte componente **genético**.\n\n**As associações clássicas**:\n\n**diabetes**;\n\n**epilepsia**, provavelmente ligada aos **anticonvulsivantes**, como o fenobarbital;\n\n**álcool** e **tabagismo**;\n\nHIV, trabalho com **vibração** e trauma na mão.\n\n**No diabético**, a doença tende a ser mais **difusa**, a acometer mais o **médio e o anelar**, e as contraturas costumam ser **menos graves**.\n\n**Doenças sem associação**: **lúpus** e **artrite reumatoide**. Elas acometem articulações e tendões, e não a fáscia palmar.\n\n**Sobre o corticoide**: não é causa da doença. A **infiltração de triancinolona** é até usada em nódulos dolorosos no início.\n\n**Tratamento**: observação enquanto não há contratura que atrapalhe. Quando a mão não fica apoiada na mesa (teste de Hueston positivo) ou a IFP começa a contrair, opções como **fasciotomia por agulha**, **colagenase** ou **fasciectomia**.\n\n**Na prova**: Dupuytren mais frequente em pessoas com **epilepsia e diabetes**.",
+  "correta": "Epilepsia e diabetes estão na lista clássica de associações do Dupuytren, junto com álcool e tabagismo.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0398": {
-  "conceito": "### Polegar reumatoide (Nalebuff)\n| Tipo | Deformidade | Origem | Frequência |\n|---|---|---|---|\n| ==I== | ==botoeira==: MF em flexão, IF em hiperextensão | ==MF== (sinovite distende cápsula dorsal, EPB frouxo, ELP desliza ulnar e volar) | ==a mais comum== |\n| II | botoeira + subluxação da CMC | MF e CMC | rara |\n| III | pescoço de cisne: MF em hiperextensão, metacarpo aduzido | **CMC** | segunda |\n| IV | goleiro: instabilidade do colateral ulnar da MF | MF | |\n| V | pescoço de cisne pela placa volar da MF | MF | |\n| VI | artrite mutilante | | |\n\n### Tratamento do tipo I\n| Estágio | Conduta |\n|---|---|\n| inicial, flexível | sinovectomia da MF e reconstrução do extensor |\n| MF rígida, IF passível | **artrodese da MF** (± artroplastia) |\n| MF e IF acometidas | artrodese da MF e IF (não as duas com a CMC rígida) |\n\n### Regra de origem\n| Começa em | Deformidade |\n|---|---|\n| MF | ==botoeira== (tipo I) |\n| CMC | ==pescoço de cisne== (tipo III) |\n| placa volar da MF, CMC estável | ==pescoço de cisne== (tipo V) |\n\n- Tipo V: tratar só a MF (capsulodese volar, sesamoidodese ou artrodese).\n\n### Tipo III\n- Sinovite da CMC → subluxação dorsal-radial da base → metacarpo aduzido → MF hiperestende, IF flete.\n- Tratar a base e também a MF hiperestendida.\n\n> **Na prova:** pescoço de cisne do polegar = ==Nalebuff III==",
-  "correta": "**Tipo III.**\n- Começa na trapeziometacarpiana.\n- Segunda deformidade mais comum.\n- Corrigir só a base deixa a MF recidivar.",
   "incorretas": {
-   "A": "**Botoeira.**\n- A mais comum, começa na MF.",
-   "B": "**Botoeira com CMC.**\n- Variante rara.",
-   "D": "**Guarda-caça.**\n- Colateral ulnar frouxo."
+   "A": "O tipo I é a botoeira, a mais comum, que começa na metacarpofalângica.",
+   "B": "O tipo II é a botoeira com subluxação da carpometacarpiana, variante rara.",
+   "D": "O tipo IV é o polegar do guarda-caça, por frouxidão do colateral ulnar da metacarpofalângica."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **artrite reumatoide**, o polegar desenvolve deformidades organizadas na **classificação de Nalebuff**, conforme a articulação onde o problema **começa**:\n\n**tipo I**: **botoeira**, a mais comum; começa na **metacarpofalângica** (MF), que fica fletida, com a interfalângica (IF) hiperestendida;\n\n**tipo II**: botoeira com subluxação da **carpometacarpiana** (CMC), variante rara;\n\n**tipo III**: **pescoço de cisne** (colo de cisne), a **segunda** mais comum;\n\n**tipo IV**: **polegar do guarda-caça**, por frouxidão do colateral ulnar da MF;\n\n**tipo V**: pescoço de cisne que começa na **placa volar da MF**, com a CMC normal;\n\n**tipo VI**: **artrite mutilante**.\n\n**Como se forma o tipo III**: a sinovite da **CMC** (base do polegar) faz a base do metacarpo **subluxar** para dorsal e radial. O metacarpo fecha em **adução**. Para abrir a mão e pegar objetos, a **MF hiperestende** e a **IF flete**: o desenho de um pescoço de cisne.\n\n**Tratamento do tipo III**: tratar a **base** (artroplastia ou artrodese da CMC) e também a **MF hiperestendida**. Corrigir só a base deixa a deformidade da MF voltar.\n\n**Na prova**: pescoço de cisne do polegar reumatoide = **Nalebuff III**.",
+  "correta": "O tipo III de Nalebuff é o pescoço de cisne, que começa com a subluxação da carpometacarpiana.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0399": {
-  "conceito": "### Classificação de Lichtman (Kienböck)\n| Estágio | Achado |\n|---|---|\n| I | radiografia normal; RM alterada |\n| II | ==esclerose== do semilunar, sem colapso |\n| IIIA | colapso/fragmentação do semilunar, **alinhamento carpal preservado** |\n| ==IIIB== | colapso + ==rotação fixa do escafoide em flexão== (anel cortical), ângulo radioescafoide > 60°, migração proximal do capitato |\n| IIIC | fratura coronal crônica do semilunar |\n| IV | artrose radiocarpal ou mediocarpal |\n\n### Conduta por estágio (resumo)\n| Estágio | Opções |\n|---|---|\n| I a IIIA, ulna minus | encurtamento do rádio, osteotomia de nivelamento |\n| I a IIIA, ulna neutra/plus | encurtamento do capitato, enxerto vascularizado |\n| ==IIIB== | ==artrodese escafotrapeziotrapezoide ou escafocapitato, ressecção da fileira proximal== |\n| IV | artrodese total, artroplastia, denervação |\n\n### Osteotomias de descarga\n| Técnica | Lado | Indicação |\n|---|---|---|\n| encurtamento do rádio | rádio | ulna minus |\n| alongamento da ulna | ulna | ulna minus |\n| cunha do rádio (inclinação) | rádio | ulna neutra |\n| ==Almquist== | ==encurtamento do capitato== (± fusão capitato-hamato) | ==ulna neutra ou plus== |\n| descompressão metafisária | rádio | reduz pressão venosa |\n\n> **Na prova:** Almquist = ==osteotomia (encurtamento) do capitato==",
-  "correta": "**Osteotomia do capitato.**\n- Encurta o capitato para aliviar o semilunar por baixo.\n- Não depende da variância ulnar.",
   "incorretas": {
-   "B": "**Nivelamento clássico.**\n- Para ulna minus.",
-   "C": "**Outra técnica.**\n- Reduz a pressão venosa intraóssea.",
-   "D": "**Variante do nivelamento.**\n- Corrige a inclinação articular."
+   "B": "A osteotomia encurtadora do rádio é o nivelamento clássico, indicado quando a ulna é mais curta.",
+   "C": "A descompressão do rádio distal é outra técnica, que reduz a pressão dentro do osso.",
+   "D": "A osteotomia em cunha do rádio corrige a inclinação articular e não é a técnica de Almquist."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **doença de Kienböck** (necrose avascular do semilunar), enquanto o carpo está alinhado (estágios I a IIIA de Lichtman), o objetivo é **tirar carga do semilunar** para ele poder revascularizar. As técnicas de descarga dependem da **variância ulnar**:\n\n**ulna mais curta que o rádio** (ulna minus): **encurtamento do rádio**, a osteotomia de nivelamento clássica. Iguala rádio e ulna e transfere parte da carga para a ulna;\n\n**ulna do mesmo tamanho ou mais longa**: encurtar o rádio jogaria carga demais na ulna. Usa-se então a **osteotomia de encurtamento do capitato**, descrita por **Almquist**.\n\n**A técnica de Almquist**: retira-se uma fatia do **capitato** e fixa-se o osso mais curto. O capitato, que empurra o semilunar **por baixo**, deixa de comprimi-lo, e a carga passa mais para o escafoide e o hamato. Por isso **não depende da variância ulnar**.\n\n**Outras opções**: **osteotomia em cunha** do rádio, que muda a inclinação da superfície articular; **descompressão** da metáfise do rádio (*core decompression*), que reduz a pressão dentro do osso; e **enxertos ósseos vascularizados** do rádio distal.\n\n**Na prova**: Almquist = **osteotomia (encurtamento) do capitato**.",
+  "correta": "Almquist descreveu o encurtamento do capitato, que alivia a compressão do semilunar por baixo, sem depender da variância ulnar.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0400": {
-  "conceito": "### Duplicação do polegar (polidactilia pré-axial)\n- ==Unilateral== e ==esporádica== na maioria; raramente associada a outras malformações.\n\n### Wassel\n| Tipo | Nível | Frequência |\n|---|---|---|\n| I | falange distal bífida | |\n| II | falange distal completa (duplicada) | cerca de 15 a 20% |\n| III | falange proximal bífida | |\n| ==IV== | ==falange proximal completa== | ==o mais comum (40 a 50%)== |\n| V | metacarpo bífido | |\n| VI | metacarpo completo | |\n| ==VII== | ==trifalângico== | cerca de 20% |\n\n- Ímpares = bífidos (parcial); pares = duplicação completa.\n- Tipo VII: herança autossômica ==dominante==.\n\n### Tratamento\n- Ressecar o polegar menos desenvolvido (geralmente o ==radial==), preservando e reinserindo o ==colateral radial== e a musculatura tenar no remanescente.\n- Idade: cerca de 12 meses.\n\n### Polidactilia pós-axial\n| Aspecto | Pós-axial |\n|---|---|\n| raça | muito mais comum em negros |\n| herança | dominante, bilateral |\n| associação | em brancos, investigar síndromes |\n\n> **Na prova:** Wassel ==IV é o mais comum==, ==VII é trifalângico==.",
-  "correta": "**Tipo IV.**\n- Duplicação completa na falange proximal.\n- Ressecar o radial e reconstruir o ulnar com colateral radial e abdutor curto.",
   "incorretas": {
-   "A": "**Falange distal completa.**\n- Menos frequente.",
-   "B": "**Falange proximal bífida.**\n- Parcial.",
-   "D": "**Metacarpo bífido.**\n- Mais proximal e raro."
+   "A": "O tipo II, duplicação da falange distal, é menos frequente.",
+   "B": "O tipo III é a falange proximal bífida, uma duplicação parcial e menos comum.",
+   "D": "O tipo V é o metacarpo bífido, mais proximal e raro."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **polidactilia radial** (pré-axial) é a **duplicação do polegar**. Costuma ser **unilateral** e **esporádica**, e raramente se associa a outras malformações.\n\n**A classificação de Wassel** numera o nível da duplicação de distal para proximal:\n\n**tipos ímpares** (I, III, V): duplicação **parcial**, o osso é **bífido**;\n\n**tipos pares** (II, IV, VI): duplicação **completa** a partir daquele nível.\n\n**Os tipos**:\n\n**I**: falange distal bífida;\n\n**II**: falange distal duplicada;\n\n**III**: falange proximal bífida;\n\n**IV**: **falange proximal duplicada**, o **mais frequente** (cerca de 40 a 50% dos casos);\n\n**V**: metacarpo bífido;\n\n**VI**: metacarpo duplicado;\n\n**VII**: polegar **trifalângico** associado, com herança **autossômica dominante**.\n\n**Tratamento**: por volta dos **12 meses**, resseca-se o polegar **menos desenvolvido**, geralmente o **radial**. No polegar que fica, **reconstrói-se o colateral radial** e reinsere-se a musculatura tenar (abdutor curto), que estavam presos no polegar retirado. Se for preciso, alinham-se os ossos com osteotomia.\n\n**Na prova**: o tipo mais frequente de Wassel é o **IV**.",
+  "correta": "O tipo IV, duplicação completa a partir da falange proximal, é o mais comum da classificação de Wassel.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0401": {
-  "conceito": "### Palmer classe 1 e o tratamento\n| Tipo | Local da lesão | Tratamento |\n|---|---|---|\n| 1A | perfuração central (avascular) | desbridamento |\n| 1B | avulsão **ulnar** (fóvea, estiloide) | reinserção na **ulna** |\n| 1C | avulsão **distal** (ulnossemilunar, ulnopiramidal) | reparo ulnocarpal |\n| ==1D== | ==avulsão radial== (incisura sigmoide) | ==reinserção no rádio== (ou desbridamento em lesões pequenas) |\n\n### Por que o rádio na 1D\n- A borda solta é a **radial**: reancora-se o disco na borda da incisura sigmoide (túneis transósseos ou âncoras), artroscópico ou aberto.\n\n### Instabilidade da RUD\n- Mais associada à **1B** (lesão foveal dos ligamentos radioulnares).\n- Teste do **balote** radioulnar em pronação, neutro e supinação.\n\n- Memória: ==centro, ulnar, distal, radial== (A, B, C, D).\n\n### Classe 2 (degenerativa)\n| Tipo | Achado |\n|---|---|\n| 2A | desgaste do CFCT |\n| 2B | + condromalácia do semilunar ou ulna |\n| 2C | + perfuração do CFCT |\n| 2D | + lesão lunopiramidal |\n| 2E | + artrose ulnocarpal |\n\n> **Na prova:** lesão traumática central = ==Palmer 1A== (desbridar).",
-  "correta": "**1A.**\n- Perfuração central, em zona avascular.\n- Não cicatriza: desbridamento artroscópico.",
   "incorretas": {
-   "B": "**Avulsão ulnar.**\n- Vascularizada, repara-se; instabilidade da RUD.",
-   "C": "**Avulsão distal.**\n- Ligamentos ulnocarpais.",
-   "D": "**Degenerativa.**\n- Perfuração com condromalácia."
+   "B": "A classe 1B é a avulsão do lado ulnar, que é vascularizada e pode ser reparada.",
+   "C": "A classe 1C é a avulsão distal, dos ligamentos ulnocarpais.",
+   "D": "A classe 2C é degenerativa: perfuração com condromalácia, por impacto ulnocarpal."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **complexo da fibrocartilagem triangular** (CFCT) é um disco entre a cabeça da ulna e o carpo. A **classificação de Palmer** divide as lesões em **classe 1**, traumáticas, e **classe 2**, degenerativas.\n\n**Classe 1 (traumática)**, pela posição da lesão:\n\n**1A**: **perfuração central** do disco;\n\n**1B**: avulsão do lado **ulnar** (fóvea ou estiloide da ulna), a que mais se associa à instabilidade da radioulnar distal;\n\n**1C**: avulsão **distal**, dos ligamentos ulnocarpais;\n\n**1D**: avulsão do lado **radial**, na borda da fossa sigmoide.\n\n**Para memorizar**: **centro, ulnar, distal, radial** = A, B, C, D.\n\n**Por que a 1A se trata diferente**: o centro do disco **não tem vasos** e não cicatriza. Faz-se o **desbridamento artroscópico** da borda instável. Já a periferia, como na 1B, é vascularizada e pode ser **reparada**.\n\n**Classe 2 (degenerativa)**: lesões por **impacto ulnocarpal**, que vão do desgaste do disco (2A) até a perfuração com condromalácia (2C) e a lesão do ligamento lunopiramidal e artrose (2D, 2E).\n\n**Na prova**: lesão traumática central do CFCT = **Palmer 1A**.",
+  "correta": "A classe 1A é a perfuração central traumática, em zona sem vasos, tratada com desbridamento.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0402": {
@@ -3906,14 +3906,14 @@
   "conferido": false
  },
  "mao-0404": {
-  "conceito": "### Transmissão de carga no punho\n| Articulação | Carga total |\n|---|---|\n| radiocarpal | ==cerca de 80%== |\n| ulnocarpal | cerca de 20% |\n\n| Dentro da radiocarpal | Parcela | Sobre o total |\n|---|---|---|\n| radioescafoide | 60% | cerca de 50% |\n| ==radiossemilunar== | 40% | ==cerca de 30%== |\n\n### Variância ulnar e carga\n| Variação | Carga ulnocarpal |\n|---|---|\n| −2,5 mm | cai para cerca de 4% |\n| neutra | cerca de 18 a 20% |\n| +2,5 mm | sobe para cerca de 42% |\n\n### Consequências\n- Encurtar o rádio (nivelamento) transfere carga para a ulna: só com ulna minus.\n- Rádio encurtado após fratura: dor ulnar.\n- Ressecção da cabeça da ulna: toda a carga no rádio.\n\n> **Na prova:** radiossemilunar = ==cerca de 30%== da carga total.",
-  "correta": "**30%.**\n- 40% dos 80% que passam pelo rádio.\n- Explica as osteotomias de nivelamento e a dor ulnar após encurtamento.",
   "incorretas": {
-   "A": "**Ulnocarpal.**\n- Fração de todo o lado ulnar.",
-   "C": "**Radioescafoide.**\n- A maior das três.",
-   "D": "**Radioescafoide dentro da radiocarpal.**\n- Não é sobre o total."
+   "A": "Cerca de 20% é a fração que passa pelo lado ulnar, e não pela radiossemilunar.",
+   "C": "Cerca de 50% do total é o que passa pela fossa do escafoide, a maior das parcelas.",
+   "D": "Cerca de 60% é a fração da radioescafoide dentro da carga do rádio, e não a da radiossemilunar sobre o total."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A carga que passa pelo punho se divide entre o **rádio** e a **ulna**. Com a ulna do mesmo tamanho do rádio (variância neutra):\n\ncerca de **80%** passa pelo **rádio**;\n\ncerca de **20%** passa pela **ulna**, através da fibrocartilagem triangular.\n\n**Dentro do rádio**, a carga se divide entre as duas fossas:\n\na **fossa do escafoide** (radioescafoide) recebe a **maior parte**, cerca de 60% do que passa pelo rádio, ou perto de **50% do total**;\n\na **fossa do semilunar** (radiossemilunar) recebe cerca de 40% do que passa pelo rádio, ou perto de **30% do total**.\n\n**A variância ulnar muda tudo**: com a ulna **mais longa** (plus), a ulna recebe mais carga; com a ulna **mais curta** (minus), recebe menos.\n\n**As consequências práticas**:\n\no **encurtamento do rádio** (nivelamento) para Kienböck transfere carga do semilunar para a ulna, por isso só se usa com **ulna minus**;\n\numa fratura do rádio que consolida **encurtada** sobrecarrega a ulna e causa **dor ulnar**;\n\nressecar a cabeça da ulna joga **toda a carga** no rádio.\n\n**Na prova**: a radiossemilunar transmite cerca de **30%** da carga total.",
+  "correta": "A fossa do semilunar recebe cerca de 40% dos 80% que passam pelo rádio, o que dá perto de 30% da carga total.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "mao-0405": {
