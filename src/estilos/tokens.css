@@ -58,12 +58,16 @@
   --coluna-leitura: 76ch;
 
   /* Estrutura */
-  --raio: 6px;
+  /* Dois raios no site todo: controles (botões, campos, chips quadrados) e
+     cartões (blocos, heróis, painéis). Cápsulas usam 999px. */
+  --raio-controle: 10px;
+  --raio-cartao: 16px;
+  --raio: var(--raio-controle);
   --raio-pequeno: 4px;
   --sombra: 0 1px 2px rgba(18, 24, 26, 0.06);
   --borda: 1px solid var(--traco);
   --toque: 44px; /* alvo mínimo de toque */
-  --raio-grande: 18px;
+  --raio-grande: var(--raio-cartao);
   --sombra-media: 0 1px 2px rgba(18, 24, 26, 0.04), 0 10px 28px rgba(18, 24, 26, 0.07);
 
   /* Faixas de destaque (heróis): verdete profundo com texto claro */

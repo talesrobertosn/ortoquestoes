@@ -438,7 +438,7 @@ export function CartaoQuestao({
               : 'Marque uma alternativa. O gabarito aparece quando o simulado terminar.'}
           </div>
         ) : !respondida ? (
-          <div className="linha nao-imprime acao-responder">
+          <div className={'linha nao-imprime acao-responder' + (escolhida ? ' acao-responder--pronta' : '')}>
             {escolhida && <div className="grupo-opcoes confianca" role="group" aria-label="Sua confiança nesta resposta">
               {([['seguro', 'Tenho ', 'certeza'], ['duvida', 'Tenho ', 'dúvida'], ['chute', 'Foi um ', 'chute']] as const).map(([valor, prefixo, rotulo]) => <button key={valor} type="button" className="opcao-segmento" aria-pressed={confianca === valor} onClick={() => definirConfianca(valor)}><span className="confianca__prefixo">{prefixo}</span><span className="confianca__rotulo">{rotulo}</span></button>)}
             </div>}

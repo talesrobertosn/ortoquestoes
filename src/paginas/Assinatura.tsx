@@ -22,13 +22,13 @@ interface MetricasConta { respostas_total: number; sequencia: number; plano: str
 
 
 /** O que só o assinante tem. A ordem é a da página e a do comparativo. */
-const RECURSOS: { icone: NomeIcone; titulo: string; texto: string; itens: string[]; destino: string; largo?: boolean }[] = [
-  { icone: 'rota', titulo: 'Cronograma baseado no que mais cai', texto: 'Você diz a data da prova e o OrtoQuestões monta a meta de cada dia e os temas de cada semana, na ordem do que mais cai no TEOT e no TARO e com reforço nos seus pontos fracos. Atrasou ou adiantou, ele se ajusta sozinho.', itens: ['Meta de cada dia até a prova', 'Primeiro os assuntos mais cobrados', 'Reta final reservada na última semana'], destino: '/cronograma', largo: true },
-  { icone: 'trofeu', titulo: 'Simulado Nacional, todo mês', texto: 'Uma prova igual para todos os assinantes do Brasil, com 50 questões de TEOT e TARO em duas horas. Corrigida na hora, com a sua posição e um relatório de prontidão por tema.', itens: ['Nota, posição e percentil', 'Pronto, no caminho ou reforçar', 'Top 10 da edição'], destino: '/simulado-nacional', largo: true },
-  { icone: 'grafico', titulo: 'Temas que mais caem', texto: 'O ranking das áreas e dos assuntos mais cobrados. Um toque em qualquer assunto e começa o treino dele.', itens: ['20 assuntos campeões', '12 áreas, assunto por assunto'], destino: '/temas-que-mais-caem' },
-  { icone: 'grupo', titulo: 'Como a turma respondeu', texto: 'Depois de cada questão, quantos marcaram cada alternativa e qual é a pegadinha. E sessões com as que a turma mais erra.', itens: ['"68% marcaram B"', 'Filtros pela turma'], destino: '/treinar' },
-  { icone: 'medalha', titulo: 'Liga da residência', texto: 'Um ranking privado do seu serviço. Crie a liga, mande o link no grupo e veja quem mais estuda.', itens: ['Convite pelo WhatsApp', 'Geral e da semana'], destino: '/ligas' },
-  { icone: 'correio', titulo: 'Relatório do mês', texto: 'Todo dia 1º, no seu e-mail: quantas questões, acerto, temas que subiram e caíram e o próximo passo.', itens: ['Evolução mês a mês', 'Próximo passo sugerido'], destino: '/conta' },
+const RECURSOS: { icone: NomeIcone; titulo: string; texto: string; destino: string; largo?: boolean }[] = [
+  { icone: 'rota', titulo: 'Cronograma baseado no que mais cai', texto: 'Você diz a data da prova e o OrtoQuestões monta a meta de cada dia e os temas de cada semana, na ordem do que mais cai no TEOT e no TARO e com reforço nos seus pontos fracos. Atrasou ou adiantou, ele se ajusta sozinho.', destino: '/cronograma', largo: true },
+  { icone: 'trofeu', titulo: 'Simulado Nacional, todo mês', texto: 'Uma prova igual para todos os assinantes do Brasil, com 50 questões de TEOT e TARO em duas horas. Corrigida na hora, com a sua posição e um relatório de prontidão por tema.', destino: '/simulado-nacional', largo: true },
+  { icone: 'grafico', titulo: 'Temas que mais caem', texto: 'O ranking das áreas e dos assuntos mais cobrados. Um toque em qualquer assunto e começa o treino dele.', destino: '/temas-que-mais-caem' },
+  { icone: 'grupo', titulo: 'Como a turma respondeu', texto: 'Depois de cada questão, quantos marcaram cada alternativa e qual é a pegadinha. E sessões com as que a turma mais erra.', destino: '/treinar' },
+  { icone: 'medalha', titulo: 'Liga da residência', texto: 'Um ranking privado do seu serviço. Crie a liga, mande o link no grupo e veja quem mais estuda.', destino: '/ligas' },
+  { icone: 'correio', titulo: 'Relatório do mês', texto: 'Todo dia 1º, no seu e-mail: quantas questões, acerto, temas que subiram e caíram e o próximo passo.', destino: '/conta' },
 ]
 
 /** O que vem com qualquer plano, listado embaixo do preço. */
@@ -118,9 +118,12 @@ export function Assinatura() {
   const ativa = Boolean(metricas?.status_assinatura === 'ativa' && (!metricas.fim_periodo || new Date(metricas.fim_periodo).getTime() > Date.now()))
   const acessoPagoAteOFim = Boolean(metricas?.status_assinatura === 'cancelada' && metricas.fim_periodo && new Date(metricas.fim_periodo).getTime() > Date.now())
 
+  // Quem já tem acesso pago vê o estado do plano no topo, e não a página de vendas.
+  const comAcessoPago = Boolean((ativa || acessoPagoAteOFim) && metricas)
+
   return (
     <div className="empilha-2 vp">
-      <section className="vp-heroi">
+      {!comAcessoPago && <section className="vp-heroi">
         <div className="vp-heroi__texto">
           <p className="vp-heroi__selo"><Simbolo tamanho={16} variante="traco" /> Plano do assinante</p>
           <h1>Tudo o que você precisa para chegar pronto na prova.</h1>
@@ -132,7 +135,6 @@ export function Assinatura() {
             <a className="botao botao--vidro botao--grande" href={href(sessao ? '/treinar' : '/conta?modo=criar')}>{sessao ? 'Continuar no gratuito' : 'Começar grátis'}</a>
           </div>
           <p className="vp-heroi__garantia"><Icone nome="certo" tamanho={16} /> Garantia de 7 dias · cancelamento por botão · seu histórico nunca é apagado</p>
-          {!limitesHabilitados && <p className="vp-heroi__fase">O acesso gratuito está sem limite diário nesta fase: o que o assinante ganha a mais são esses recursos, e o acesso ilimitado fica garantido se o limite gratuito for ativado.</p>}
         </div>
         <div className="vp-vitrine" aria-hidden="true">
           <div className="vp-vitrine__cartao vp-vitrine__cartao--nacional">
@@ -152,28 +154,7 @@ export function Assinatura() {
           </div>
           <span className="vp-vitrine__nota-rodape">Ilustração com números de exemplo</span>
         </div>
-      </section>
-
-      <section className="vp-perguntas" aria-label="O que o assinante resolve">
-        <a className="vp-pergunta" href={href('/cronograma')}>
-          <span className="vp-pergunta__icone"><Icone nome="rota" tamanho={22} /></span>
-          <span className="vp-pergunta__q">O que eu estudo hoje?</span>
-          <strong>Cronograma pelo que mais cai</strong>
-          <small>A meta do dia e o tema certo, até a prova.</small>
-        </a>
-        <a className="vp-pergunta" href={href('/simulado-nacional')}>
-          <span className="vp-pergunta__icone"><Icone nome="trofeu" tamanho={22} /></span>
-          <span className="vp-pergunta__q">Estou pronto?</span>
-          <strong>Simulado Nacional</strong>
-          <small>Sua nota e posição entre os residentes.</small>
-        </a>
-        <a className="vp-pergunta" href={href('/temas-que-mais-caem')}>
-          <span className="vp-pergunta__icone"><Icone nome="grafico" tamanho={22} /></span>
-          <span className="vp-pergunta__q">O que a prova mais cobra?</span>
-          <strong>Temas que mais caem</strong>
-          <small>O ranking das áreas e dos assuntos.</small>
-        </a>
-      </section>
+      </section>}
 
       {(ativa || acessoPagoAteOFim) && metricas && (
         <section className="vp-ativo">
@@ -182,39 +163,19 @@ export function Assinatura() {
             <h2>{metricas.cancelar_ao_fim || acessoPagoAteOFim ? 'Acesso pago sem renovação automática' : `Seu plano ${metricas.plano} está ativo`}</h2>
             <p>{metricas.cancelar_ao_fim || acessoPagoAteOFim ? 'Não haverá nova cobrança desta assinatura. O período já pago não foi reembolsado.' : 'A próxima cobrança segue a periodicidade escolhida.'} Acesso ilimitado até {metricas.fim_periodo ? new Date(metricas.fim_periodo).toLocaleDateString('pt-BR') : 'o fim do período atual'}.</p>
             <div className="linha">
+              <a className="botao botao--principal" href={href('/cronograma')}>Abrir o cronograma</a>
               <a className="botao" href={href('/conta/assinatura')}>Gerenciar renovação ou pedir reembolso</a>
             </div>
           </div>
         </section>
       )}
 
-      <section className="vp-secao">
-        <header className="vp-secao__cabeca">
-          <p className="vp-sobre">Só para assinantes</p>
-          <h2>Estude com direção, não no escuro</h2>
-          <p>O acervo, os comentários e a revisão continuam abertos para todos. O plano soma o que responde às perguntas de quem está perto da prova: o que estudo hoje? o que mais cai? estou pronto? onde a turma erra?</p>
-        </header>
-        <div className="vp-recursos">
-          {RECURSOS.map((r) => (
-            <article key={r.titulo} className={'vp-recurso' + (r.largo ? ' vp-recurso--destaque' : '') + (r.destino === '/cronograma' ? ' vp-recurso--temas' : '')}>
-              <span className="vp-recurso__icone"><Icone nome={r.icone} tamanho={24} /></span>
-              <div className="vp-recurso__corpo">
-                <h3>{r.titulo}</h3>
-                <p>{r.texto}</p>
-                <ul>{r.itens.map((item) => <li key={item}><Icone nome="certo" tamanho={15} />{item}</li>)}</ul>
-                <a href={href(r.destino)}>Ver como funciona <Icone nome="direita" tamanho={14} /></a>
-              </div>
-              {r.destino === '/cronograma' && <RankingIlustrado />}
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="vp-secao vp-precos" id="planos">
+      {!ativa && <section className="vp-secao vp-precos" id="planos">
         <header className="vp-secao__cabeca vp-precos__cabeca">
           <p className="vp-sobre">Planos</p>
           <h2>Tudo liberado em qualquer plano. Você escolhe só o ritmo de pagamento.</h2>
           <p>Os três planos têm exatamente os mesmos recursos. Quanto mais longo, menor o preço por mês.</p>
+          {!limitesHabilitados && <p className="vp-precos__fase">O acesso gratuito está sem limite diário nesta fase: o que o assinante ganha a mais são os recursos exclusivos, e o acesso ilimitado fica garantido se o limite gratuito for ativado.</p>}
           <ul className="vp-meios" aria-label="Formas de pagamento">
             <li><IconePix /> Pix em todos os planos</li>
             <li><IconeCartao /> Cartão de crédito</li>
@@ -264,9 +225,30 @@ export function Assinatura() {
           <Icone nome="cadeado" tamanho={20} />
           <p><strong>Pagamento protegido pelo Mercado Pago.</strong> No cartão, a renovação é automática na periodicidade escolhida; no Pix, é um pagamento único pelo período completo, sem renovação. Os dados do cartão ficam no Mercado Pago, nunca no OrtoQuestões. <a href={href('/condicoes-assinatura')}>Condições da assinatura</a></p>
         </div>
-      </section>
+      </section>}
 
       <section className="vp-secao">
+        <header className="vp-secao__cabeca">
+          <p className="vp-sobre">{comAcessoPago ? 'Seu plano inclui' : 'Só para assinantes'}</p>
+          <h2>{comAcessoPago ? 'Tudo o que o seu plano libera' : 'Estude com direção, não no escuro'}</h2>
+          {!comAcessoPago && <p>O acervo, os comentários e a revisão continuam abertos para todos. O plano soma o que responde às perguntas de quem está perto da prova: o que estudo hoje? o que mais cai? estou pronto? onde a turma erra?</p>}
+        </header>
+        <div className="vp-recursos">
+          {RECURSOS.map((r) => (
+            <article key={r.titulo} className={'vp-recurso' + (r.largo ? ' vp-recurso--destaque' : '') + (r.destino === '/cronograma' ? ' vp-recurso--temas' : '')}>
+              <span className="vp-recurso__icone"><Icone nome={r.icone} tamanho={24} /></span>
+              <div className="vp-recurso__corpo">
+                <h3>{r.titulo}</h3>
+                <p>{r.texto}</p>
+                <a href={href(r.destino)}>Ver como funciona <Icone nome="direita" tamanho={14} /></a>
+              </div>
+              {r.destino === '/cronograma' && <RankingIlustrado />}
+            </article>
+          ))}
+        </div>
+      </section>
+
+      {!comAcessoPago && <section className="vp-secao">
         <header className="vp-secao__cabeca">
           <p className="vp-sobre">Gratuito ou assinante</p>
           <h2>{limitesHabilitados ? 'O gratuito é generoso. O assinante vai além.' : 'O acervo é de todos. O assinante vai além.'}</h2>
@@ -287,20 +269,18 @@ export function Assinatura() {
             ['Como a turma respondeu e filtros pela turma', false, true],
             ['Liga da residência', false, true],
             ['Relatório do mês por e-mail', false, true],
-            ['Comentário de todas as questões', true, true],
-            ['Revisão espaçada, calendário e caderno de erros', true, true],
-            ['Desempenho, ranking, emblemas e sequência', true, true],
           ] as const).map(([rotulo, livre, pro]) => (
             <div className="vp-comparativo__linha" role="row" key={rotulo}>
               <span role="cell" className="vp-comparativo__rotulo">{rotulo}</span>
-              <span role="cell">{livre === true ? <Icone nome="certo" tamanho={18} /> : livre === false ? <span className="vp-traco">–</span> : livre}</span>
+              <span role="cell">{livre === false ? <span className="vp-traco">–</span> : livre}</span>
               <span role="cell" className="vp-comparativo__pro">{pro === true ? <Icone nome="certo" tamanho={18} /> : pro}</span>
             </div>
           ))}
         </div>
-      </section>
+        <p className="vp-comparativo__nota"><Icone nome="certo" tamanho={16} /> Iguais para todos: comentário de todas as questões, revisão espaçada, caderno de erros, desempenho, ranking e emblemas.</p>
+      </section>}
 
-      <section className="vp-garantia">
+      {!comAcessoPago && <section className="vp-garantia">
         <div className="vp-garantia__selo" aria-hidden="true"><strong>7</strong><span>dias</span></div>
         <div>
           <h2>Cancelamento e garantia</h2>
@@ -310,16 +290,16 @@ export function Assinatura() {
             <li><strong>Seu histórico é seu.</strong> Cancelamento, vencimento ou falha de pagamento nunca apagam respostas, revisões ou desempenho. A conta só volta ao limite gratuito.</li>
           </ul>
         </div>
-      </section>
+      </section>}
 
-      <section className="vp-secao vp-transparencia">
+      {!comAcessoPago && <section className="vp-secao vp-transparencia">
         <header className="vp-secao__cabeca">
           <p className="vp-sobre">Para onde vai o dinheiro</p>
           <h2>Um projeto independente, feito por quem vive a ortopedia</h2>
           <p>O OrtoQuestões não tem patrocinador. A assinatura paga o servidor, o banco de dados e o tempo de manter o acervo: questões novas, comentários revisados e correções. Assinar é o jeito mais direto de manter tudo isso no ar e gratuito para quem ainda não pode pagar.</p>
         </header>
         {sessao && respondidasConta > 0 && <p className="vp-voce">Você já respondeu <strong>{respondidasConta.toLocaleString('pt-BR')}</strong> questões por aqui{metricas?.sequencia ? <> e está numa sequência de <strong>{metricas.sequencia} {metricas.sequencia === 1 ? 'dia' : 'dias'}</strong></> : null}. Imagine esse ritmo sem teto.</p>}
-      </section>
+      </section>}
 
       <section className="vp-secao faq vp-faq">
         <header className="vp-secao__cabeca"><p className="vp-sobre">Dúvidas</p><h2>Perguntas frequentes</h2></header>
@@ -385,7 +365,7 @@ export function Assinatura() {
         </div>}
       </JanelaCentral>
 
-      <section className="vp-final">
+      {!comAcessoPago && <section className="vp-final">
         <div>
           <h2>Chegue à prova sabendo onde você está</h2>
           <p>Simulado todo mês, plano do dia e a turma como referência. Comece hoje.</p>
@@ -394,7 +374,7 @@ export function Assinatura() {
           <a className="botao botao--claro botao--grande" href="#planos" onClick={(e) => { e.preventDefault(); document.getElementById('planos')?.scrollIntoView({ behavior: 'smooth' }) }}>Escolher meu plano</a>
           <a className="botao botao--vidro botao--grande" href={href('/treinar')}>Treinar agora</a>
         </div>
-      </section>
+      </section>}
     </div>
   )
 }

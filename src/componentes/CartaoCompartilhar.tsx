@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { SITE, recurso } from '../config'
+import { SITE } from '../config'
 import { IconeWhatsapp } from './ConviteCompartilhar'
 import { TEXTO_CONVITE } from './ConviteDiario'
 import { Icone } from './Icone'
@@ -14,9 +14,7 @@ export function CartaoCompartilhar() {
   }
   return (
     <section className="inicio-compartilhar" aria-labelledby="inicio-compartilhar-titulo">
-      <img className="inicio-compartilhar__mensageiro" src={recurso('ranking/mensageiro.png')} width={64} height={80} alt="" draggable={false} />
       <div className="inicio-compartilhar__texto">
-        <p className="inicio-compartilhar__selo">Missão: recrute seus amigos</p>
         <h2 id="inicio-compartilhar-titulo">Está gostando do OrtoQuestões?</h2>
         <p>O site cresce no boca a boca. Manda para quem está estudando com você: tem questões gratuitas todo dia, e cada colega que chega ajuda o projeto a crescer e a ganhar provas novas.</p>
       </div>

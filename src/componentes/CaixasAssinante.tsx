@@ -13,11 +13,34 @@ import { Icone } from './Icone'
 import { Degustacao, SeloAssinante } from './Premium'
 import { NivelCobranca } from './NivelCobranca'
 
-/** Início: o cronograma em destaque e, abaixo, os temas que mais caem. Quem não assina vê o começo. */
-export function CaixasAssinante() {
+/** Cronograma do assinante e o dia de hoje. Lido uma vez no início: a meta
+ * vira a ação principal do topo, e a caixa do cronograma só aparece para quem
+ * ainda não montou o seu (ou não assina). */
+export function usarCronogramaHoje() {
+  const { premium, logado } = usarPremium()
+  const { indice } = usarIndice()
+  const [respondidas] = usarArmazenado<Record<string, RegistroQuestao>>('respondidas', {})
+  const [plano, definirPlano] = useState<PlanoSalvo | null | undefined>(undefined)
+  const [sessaoLocal] = usarArmazenado<EstadoSessao | null>(CHAVE_SESSAO, null)
+  const pendente = sessaoLocal && !sessaoLocal.concluidaEm && sessaoLocal.origem === 'cronograma' && Object.keys(sessaoLocal.respostas).length < sessaoLocal.ids.length
+    ? { feitas: Object.keys(sessaoLocal.respostas).length, total: sessaoLocal.ids.length } : null
+
+  useEffect(() => {
+    if (!premium) { definirPlano(null); return }
+    let vivo = true
+    chamarRpc<PlanoSalvo[]>('obter_plano_estudo', {}).then(([p]) => { if (vivo) definirPlano(p ?? null) }).catch(() => { if (vivo) definirPlano(null) })
+    return () => { vivo = false }
+  }, [premium])
+  const calculo = useMemo(() => (indice && plano ? calcularPlano(indice, respondidas, plano) : null), [indice, plano, respondidas])
+  return { premium, logado, calculo: premium ? calculo : null, pendente }
+}
+export type CronogramaHoje = ReturnType<typeof usarCronogramaHoje>
+
+/** Início: o convite do cronograma (quem ainda não tem um) e os temas que mais caem. */
+export function CaixasAssinante({ cronograma }: { cronograma: CronogramaHoje }) {
   return (
     <div className="empilha cx-bloco">
-      <CaixaCronograma />
+      {!cronograma.calculo && <CaixaCronograma cronograma={cronograma} />}
       <CaixaTemas />
     </div>
   )
@@ -31,7 +54,6 @@ function CaixaTemas() {
       <header className="cx__cabeca">
         <span className="cx__icone" aria-hidden="true"><Icone nome="grafico" tamanho={20} /></span>
         <div>
-          <p className="meta">TEMAS QUE MAIS CAEM</p>
           <h2 id="cx-temas-titulo">O que a prova mais cobra</h2>
         </div>
         {!premium && <SeloAssinante />}
@@ -41,7 +63,6 @@ function CaixaTemas() {
           <li key={`${t.area}-${t.nome}`}>
             <span className="cx-top__posicao numerico">{i + 1}</span>
             <span className="cx-top__nome"><strong>{t.rotulo}</strong><small>{areaPorId(t.area)?.nome}</small></span>
-            <NivelCobranca nivel={4} />
           </li>
         ))}
       </ol>
@@ -65,22 +86,8 @@ const COMO_FUNCIONA = [
   { icone: 'reiniciar' as const, titulo: 'E se ajusta sozinho', texto: 'Atrasou, a meta sobe um pouco; adiantou, alivia. A última semana é de reta final.' },
 ]
 
-function CaixaCronograma() {
-  const { premium, logado } = usarPremium()
-  const { indice } = usarIndice()
-  const [respondidas] = usarArmazenado<Record<string, RegistroQuestao>>('respondidas', {})
-  const [plano, definirPlano] = useState<PlanoSalvo | null | undefined>(undefined)
-  const [sessaoLocal] = usarArmazenado<EstadoSessao | null>(CHAVE_SESSAO, null)
-  const pendente = sessaoLocal && !sessaoLocal.concluidaEm && sessaoLocal.origem === 'cronograma' && Object.keys(sessaoLocal.respostas).length < sessaoLocal.ids.length
-    ? { feitas: Object.keys(sessaoLocal.respostas).length, total: sessaoLocal.ids.length } : null
-
-  useEffect(() => {
-    if (!premium) { definirPlano(null); return }
-    let vivo = true
-    chamarRpc<PlanoSalvo[]>('obter_plano_estudo', {}).then(([p]) => { if (vivo) definirPlano(p ?? null) }).catch(() => { if (vivo) definirPlano(null) })
-    return () => { vivo = false }
-  }, [premium])
-  const calculo = useMemo(() => (indice && plano ? calcularPlano(indice, respondidas, plano) : null), [indice, plano, respondidas])
+function CaixaCronograma({ cronograma }: { cronograma: CronogramaHoje }) {
+  const { premium, logado, calculo, pendente } = cronograma
 
   const titulo = (
     <div className="cr-destaque__texto">
