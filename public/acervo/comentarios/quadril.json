@@ -1955,69 +1955,69 @@
   "conferido": false
  },
  "quadril-0206": {
-  "conceito": "### Histologia por estágio de Ficat e Arlet\n| Fase | Histologia | Radiografia |\n|---|---|---|\n| 0 | pré-clínica | normal, sem sintomas |\n| 1 | **infarto**: osteócitos mortos, lacunas vazias, medula necrosada | normal |\n| ==2== | ==reparo==: tecido de granulação e ==osso novo depositado sobre as trabéculas necróticas== | esclerose, cistos |\n| 3 | falência mecânica: **fratura subcondral** | crescente, colapso |\n| 4 | artrose secundária | espaço reduzido |\n\n### Substituição rastejante (creeping substitution)\n- O osso novo é **aposto** sobre as trabéculas mortas, sem removê-las antes.\n- Aumenta a densidade (esclerose), mas o osso reparado é **mecanicamente pior**.\n- Na interface, a reabsorção enfraquece a região subcondral e prepara a fratura.\n\n> **Na prova:** osso novo sobre trabéculas necróticas = ==fase 2==.",
-  "correta": "**Fase de reparo.**\n- Na fase 2, osteoblastos depositam osso novo sobre as trabéculas mortas.\n- É o que aparece como esclerose na radiografia.",
   "incorretas": {
-   "A": "**Pré-clínica.**\n- Na fase 0 não há alteração nem sintoma.",
-   "B": "**Só infarto.**\n- Na fase 1 ainda não há resposta reparadora visível.",
-   "D": "**Falência do reparo.**\n- A fase 3 é a fratura subcondral com sinal do crescente."
+   "A": "A fase 0 é pré-clínica, sem alteração nem sintomas.",
+   "B": "Na fase 1 aconteceu apenas o infarto, ainda sem resposta de reparo.",
+   "D": "A fase 3 é a falência do reparo, com fratura do osso abaixo da cartilagem e o sinal do crescente."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **classificação de Ficat e Arlet** gradua a osteonecrose da cabeça do fêmur pela radiografia, e cada fase corresponde a um momento do que acontece dentro do osso (a **histologia**, o que se vê ao microscópio):\n\n**Fase 0**: pré-clínica. Não há sintomas nem alterações nos exames.\n\n**Fase 1**: aconteceu o **infarto**, a morte do osso. As células do osso (os osteócitos) morreram e deixaram suas cavidades vazias, e a medula também morreu. A radiografia ainda é normal.\n\n**Fase 2**: começa o **reparo**. Chega tecido de cicatrização com vasos novos, e as células formadoras de osso (osteoblastos) passam a **depositar osso novo sobre as trabéculas mortas**. Na radiografia, isso aparece como áreas mais densas (esclerose) e cistos.\n\n**Fase 3**: o reparo **falha**. O osso logo abaixo da cartilagem **fratura** (o sinal do crescente) e a cabeça afunda.\n\n**Fase 4**: instala-se a **artrose**.\n\n**Como funciona esse reparo?** É chamado de **substituição progressiva** (creeping substitution). O osso novo é colocado **por cima** das trabéculas mortas, sem retirá-las antes. Isso aumenta a densidade (por isso a esclerose), mas o osso reparado é **mecanicamente mais fraco**. Além disso, na fronteira entre o osso vivo e o morto, o organismo também reabsorve osso, o que enfraquece a região logo abaixo da cartilagem e prepara a fratura da fase 3.\n\n**Na prova**: osso novo depositado entre as trabéculas necróticas é característico da fase 2.",
+  "correta": "2. É a fase de reparo, em que os osteoblastos depositam osso novo sobre as trabéculas mortas, o que aparece como esclerose na radiografia.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0207": {
-  "conceito": "### Ressaltos e bursas\n| Ressalto | Estrutura | Relevo | Bursa associada |\n|---|---|---|---|\n| ==externo (mais comum)== | banda iliotibial ou borda do glúteo máximo | trocânter maior | ==subglútea (trocantérica)== |\n| interno | iliopsoas | eminência iliopectínea | iliopectínea |\n| intra-articular | lábio, corpo livre | | nenhuma |\n\n### Ressalto externo\n- Visível e palpável lateralmente; o paciente muitas vezes consegue reproduzi-lo em pé.\n- O atrito repetido inflama a bursa entre a banda e o trocânter.\n- Dor lateral que piora ao deitar sobre o lado.\n\n### Tratamento\n- Alongamento da banda iliotibial, fisioterapia, infiltração.\n- Refratários: alongamento cirúrgico (zetaplastia, fenestração) da banda.\n\n> **Na prova:** bursite do quadril em ressalto (externo) = ==subglútea==.",
-  "correta": "**Ressalto externo.**\n- O atrito da banda iliotibial sobre o trocânter inflama a bursa subglútea (trocantérica).",
   "incorretas": {
-   "A": "**Ressalto interno.**\n- A iliopectínea se associa ao iliopsoas, forma menos frequente.",
-   "B": "**Sem relação com ressalto.**\n- A isquioglútea inflama pela posição sentada prolongada.",
-   "D": "**Não participa.**\n- Não há bursa obturatória envolvida no ressalto."
+   "A": "A bursa iliopectínea está ligada ao ressalto interno, pelo iliopsoas, que é menos frequente.",
+   "B": "A bursa isquioglútea inflama por ficar muito tempo sentado e não tem relação com o ressalto.",
+   "D": "Não há uma bursa obturatória envolvida no quadril em ressalto."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **quadril em ressalto** é o estalo durante o movimento do quadril. Cada tipo de ressalto está ligado a uma estrutura e, às vezes, a uma bursa:\n\n**Ressalto externo** (o mais comum): a **banda iliotibial** (faixa fibrosa grossa do lado de fora da coxa) ou a borda do glúteo máximo escorrega sobre o **trocânter maior**. O estalo é visível e palpável do lado de fora, e o paciente muitas vezes consegue reproduzi-lo em pé. O atrito repetido inflama a bursa que fica entre a banda e o trocânter, a **bursa subglútea** (trocantérica). A dor fica do lado de fora e piora ao deitar sobre aquele lado.\n\n**Ressalto interno**: o **tendão do iliopsoas** escorrega sobre a **eminência iliopectínea**, na frente da bacia. A bursa relacionada é a **iliopectínea**. É menos frequente que o externo.\n\n**Ressalto intra-articular**: lesão do lábio ou fragmentos soltos dentro da articulação. Não envolve bursa.\n\n**Outras bursas**: a **isquioglútea** fica sobre o ísquio e inflama por ficar muito tempo sentado, sem relação com o ressalto.\n\n**Tratamento do ressalto externo**: alongamento da banda iliotibial, fisioterapia e infiltração. Nos casos que não melhoram, alonga-se a banda cirurgicamente.\n\n**Na prova**: a bursite relacionada ao quadril em ressalto (externo) é a subglútea.",
+  "correta": "Subglútea. No ressalto externo, o mais comum, o atrito da banda iliotibial sobre o trocânter inflama a bursa subglútea (trocantérica).",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0208": {
-  "conceito": "### Regra: luxa para o lado em que a taça \"abre\" demais\n| Posição da taça | Impacto | Luxação |\n|---|---|---|\n| ==anteversão excessiva== | colo bate na borda **posterior** em extensão + rotação externa | ==anterior== |\n| anteversão insuficiente ou retroversão | colo bate na borda anterior em flexão + adução + rotação interna | **posterior** |\n| inclinação (abdução) excessiva | taça vertical | superior / lateral, desgaste de borda |\n| inclinação insuficiente | taça horizontal | impacto em abdução |\n\n### Zona segura de Lewinnek\n- Inclinação **40 ± 10°**, anteversão **15 ± 10°**.\n- Hoje se sabe que muitas luxações ocorrem dentro da zona: a orientação **funcional** (espinopélvica) importa.\n\n### Via posterior\n- Luxação **posterior** é a mais comum após via posterior; o reparo capsular e dos rotadores reduz o risco.\n- Por isso muitos cirurgiões dão alguns graus a mais de anteversão nessa via, mas o **excesso** inverte o problema.\n\n> **Na prova:** anteversão excessiva = ==luxação anterior==.",
-  "correta": "**Taça aberta para a frente.**\n- Com anteversão excessiva, a extensão com rotação externa leva o colo à borda posterior.\n- A cabeça é alavancada para fora pela frente.",
   "incorretas": {
-   "B": "**Situação oposta.**\n- Luxação posterior decorre de anteversão insuficiente ou retroversão.",
-   "C": "**Plano diferente.**\n- A luxação superior se relaciona à inclinação excessiva, não à versão.",
-   "D": "**Não é o padrão.**\n- A luxação inferior não decorre de alteração da versão."
+   "B": "A luxação posterior resulta da situação oposta: anteversão insuficiente ou taça retrovertida.",
+   "C": "A luxação superior está ligada à inclinação excessiva da taça, e não à anteversão.",
+   "D": "A luxação inferior não é o padrão resultante de alterações da anteversão."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A posição da **taça** (o componente acetabular) é decisiva para a estabilidade da prótese de quadril. Ela é descrita por dois ângulos:\n\n**Inclinação** (ou abdução): o quanto a taça está \"em pé\" ou \"deitada\" vista de frente;\n\n**Anteversão**: o quanto a taça está virada **para a frente**.\n\n**Uma regra simples**: a cabeça tende a luxar para o lado em que a taça está \"**aberta demais**\".\n\n**Anteversão excessiva** (taça muito virada para a frente): quando o quadril vai para trás e gira para fora (extensão com rotação externa), o colo bate na borda **de trás** da taça. Essa borda funciona como alavanca e empurra a cabeça para fora **pela frente**. Resultado: **luxação anterior**.\n\n**Anteversão insuficiente ou retroversão** (taça virada para trás): quando o quadril dobra, fecha e gira para dentro (como ao sentar e cruzar as pernas), o colo bate na borda **da frente**, e a cabeça sai **por trás**. Resultado: **luxação posterior**.\n\n**Inclinação excessiva** (taça muito em pé): favorece a luxação para cima e para fora e o desgaste da borda.\n\nA **zona segura de Lewinnek** sugere inclinação de cerca de 40° e anteversão de cerca de 15°, com margem de 10° para cada lado. Hoje se sabe que a posição funcional, que depende do movimento da bacia, também importa.\n\n**Na via posterior**, a luxação mais comum é a **posterior**, por isso muitos cirurgiões dão alguns graus a mais de anteversão. Mas, se exagerarem, o problema se inverte e a prótese passa a luxar **para a frente**.\n\n**Na prova**: o excesso de anteversão da taça pode resultar em luxação anterior.",
+  "correta": "Anterior. Com a taça muito virada para a frente, a extensão com rotação externa leva o colo à borda de trás, que alavanca a cabeça para fora pela frente.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0209": {
-  "conceito": "### Teste (incidência) do flamingo\n- Avalia ==instabilidade da sínfise púbica==.\n- Paciente ==em pé==, apoiado em **um só membro**, alternando os lados.\n- Radiografia AP da bacia em cada apoio.\n- Medida: **degrau vertical** entre os ramos superiores do púbis.\n- Diferença **acima de 2 mm** entre as incidências indica instabilidade.\n\n### Onde se aplica\n- **Osteíte púbica** e pubalgia do atleta.\n- Sequelas de lesão do anel pélvico e instabilidade pós-parto.\n- Avaliação de instabilidade da sacroilíaca (associada).\n\n### Outros testes e suas posições\n| Teste | Posição |\n|---|---|\n| ==flamingo== | ==em pé, apoio monopodal== |\n| Trendelenburg | em pé, apoio monopodal |\n| Ober | decúbito lateral |\n| Thomas, FADIR, FABER | decúbito dorsal |\n| Ely | decúbito ventral |\n\n> **Na prova:** flamingo = ==em pé==.",
-  "correta": "**Em pé, apoio alternado.**\n- A carga em um só membro desloca um púbis em relação ao outro quando a sínfise é instável.",
   "incorretas": {
-   "B": "**Sem carga.**\n- Em decúbito dorsal não há carga assimétrica.",
-   "C": "**Também sem carga.**\n- O decúbito ventral não gera a sobrecarga necessária.",
-   "D": "**Posição de outros testes.**\n- O decúbito lateral é usado, por exemplo, no Ober."
+   "B": "Deitado de barriga para cima não há carga assimétrica, e a instabilidade não aparece.",
+   "C": "Deitado de barriga para baixo também não há a sobrecarga necessária para o teste.",
+   "D": "A posição deitada de lado é usada em outros testes, como o de Ober, e não no flamingo."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **teste do flamingo** (ou incidência do flamingo) avalia a **instabilidade da sínfise púbica**, a articulação da frente da bacia, onde os dois ossos púbicos se encontram.\n\n**Como se faz**:\n\no paciente fica **em pé**, apoiado em **uma perna só**, como um flamingo;\n\nfaz-se uma radiografia de frente da bacia nessa posição;\n\ndepois o paciente troca de perna, e faz-se outra radiografia.\n\n**O que se mede**: o **degrau vertical** entre os dois ramos superiores do púbis. Quando o peso fica numa perna só, a carga é assimétrica. Se a sínfise estiver instável, um púbis **sobe ou desce** em relação ao outro. Uma diferença **maior que 2 mm** entre as duas radiografias indica instabilidade.\n\n**Onde o teste é usado**:\n\nna **osteíte púbica** e na **pubalgia** de atletas;\n\nem sequelas de lesões do anel da bacia e na instabilidade depois do parto;\n\njunto com a avaliação da articulação sacroilíaca.\n\n**Por que precisa ser em pé?** Porque é a **carga assimétrica** do apoio numa perna só que revela a instabilidade. Deitado, não há carga.\n\n**A posição de outros testes do quadril**: o Trendelenburg também é feito em pé, numa perna só; o Ober, deitado de lado; Thomas, FADIR e FABER, deitado de barriga para cima; e o Ely, de barriga para baixo.\n\n**Na prova**: o teste do flamingo é feito com o paciente em pé.",
+  "correta": "Em pé. O apoio numa perna só cria a carga assimétrica que desloca um púbis em relação ao outro quando a sínfise está instável.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0210": {
-  "conceito": "### Osteotomia valgizante intertrocantérica\n- Redistribui a carga: traz para a zona de apoio uma porção **congruente** da cabeça e aumenta o espaço articular medial.\n- Indicada em artrose **inicial** ou moderada de jovens, cabeça deformada (sequela de Perthes, necrose, displasia com cabeça em cogumelo).\n\n### Pré-requisitos\n- ==Flexão de pelo menos 60 a 90°== e ausência de contratura fixa importante.\n- Radiografia em **adução** (para valgização) mostrando melhora da congruência e do espaço.\n- Paciente jovem, de preferência abaixo de 40 a 50 anos.\n\n### Contraindicações relativas\n| Situação | Por quê |\n|---|---|\n| ==flexão menor que 60°== | quadril rígido: a osteotomia não devolve movimento |\n| artrose avançada, inflamatória | pouco a ganhar |\n| obesidade importante, idade avançada | resultados ruins |\n\n### Valgizante × varizante\n- **Valgizante:** cabeça deformada, com congruência melhor em adução.\n- **Varizante:** coxa valga displásica, com cabeça esférica e congruente em abdução.\n\n> **Na prova:** contraindicação relativa = ==flexão menor que 60°==.",
-  "correta": "**Quadril rígido.**\n- A osteotomia não devolve movimento.\n- Com menos de 60° de flexão, o resultado funcional é pobre.",
   "incorretas": {
-   "B": "**Não é o parâmetro limitante.**\n- A decisão se baseia no arco de flexão.",
-   "C": "**É indicação.**\n- A valgização traz para a carga a porção congruente de uma cabeça deformada.",
-   "D": "**Parte do problema.**\n- O acetábulo displásico é o que a osteotomia tenta compensar."
+   "B": "O parâmetro que limita a indicação é o arco de flexão, e não uma extensão mínima.",
+   "C": "A cabeça não esférica é uma indicação, e não uma contraindicação: a valgização traz para a carga a parte mais bem encaixada da cabeça deformada.",
+   "D": "O acetábulo displásico faz parte do problema que a osteotomia tenta compensar, e não a contraindica."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **osteotomia valgizante intertrocantérica** é uma opção para a **artrose do quadril em pacientes jovens**, quando ainda não é o momento de uma prótese. O cirurgião corta o fêmur logo abaixo do colo e muda o ângulo entre o colo e o corpo do osso (deixando o colo mais \"em pé\"). Com isso, traz para a área que recebe peso uma parte **mais preservada e bem encaixada** da cabeça e aumenta o espaço articular do lado de dentro.\n\n**Indicações**: artrose inicial ou moderada em jovens, com a cabeça deformada (por exemplo, por sequela de Perthes, osteonecrose ou displasia com cabeça em forma de cogumelo).\n\n**Pré-requisitos**:\n\no quadril precisa ter **movimento**: flexão de pelo menos **60°** (idealmente mais) e sem contratura fixa importante;\n\numa radiografia feita com a coxa em **adução** (que simula a valgização) precisa mostrar **melhora** do encaixe e do espaço articular;\n\npaciente jovem, de preferência abaixo de 40 a 50 anos.\n\n**Por que a flexão menor que 60° contraindica?** Porque a osteotomia **não devolve movimento**. Ela só muda a parte da cabeça que trabalha. Num quadril rígido, a cirurgia apenas mudaria a posição da rigidez, e o resultado funcional seria ruim.\n\n**Outras contraindicações relativas**: artrose avançada, doenças inflamatórias, obesidade importante e idade avançada.\n\nA **cabeça não esférica** não contraindica: pelo contrário, é uma das situações em que a valgização serve para trazer para a carga a parte mais bem encaixada de uma cabeça deformada.\n\n**Na prova**: a flexão do quadril menor que 60° é contraindicação relativa à osteotomia valgizante.",
+  "correta": "Flexão do quadril menor que 60°. A osteotomia não devolve movimento, e num quadril rígido o resultado funcional é pobre.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0211": {
-  "conceito": "### Sinal do crescente\n- Linha **radiolucente em meia-lua** logo abaixo da cartilagem, na região anterossuperior da cabeça.\n- Corresponde à ==fratura do osso subcondral==, que se separa do osso necrótico subjacente.\n- Melhor visto no **perfil** (posição de rã).\n- Considerado ==patognomônico== da osteonecrose na radiografia.\n\n### Onde se encaixa nas classificações\n| Classificação | Estágio do crescente |\n|---|---|\n| Ficat e Arlet | transição para o colapso (IIB ou III conforme a versão) |\n| Steinberg | IV |\n| ARCO 2019 | 3 (fratura subcondral) |\n\n### Outros sinais\n| Sinal | Exame | Significado |\n|---|---|---|\n| crescente | radiografia | fratura subcondral |\n| ==dupla linha== | ==RM (T2)== | interface entre osso necrótico e reparador |\n| esclerose, cistos | radiografia | reparo; inespecíficos |\n\n> **Na prova:** sinal radiográfico patognomônico = ==crescente==.",
-  "correta": "**Fratura subcondral visível.**\n- A meia-lua radiolucente sob a cartilagem representa o colapso iminente do osso necrótico.\n- É o sinal radiográfico patognomônico.",
   "incorretas": {
-   "A": "**Não existe.**\n- \"Linha simples\" não é sinal descrito.",
-   "B": "**Sinal da RM.**\n- A dupla linha aparece em T2 e marca a interface entre osso necrótico e reparador.",
-   "C": "**Inespecífica.**\n- A esclerose ocorre em infarto, artrose, tumor e infecção."
+   "A": "\"Linha simples\" não é um sinal descrito na osteonecrose.",
+   "B": "O sinal da linha dupla é muito característico, mas aparece na ressonância, e não na radiografia.",
+   "C": "A esclerose é inespecífica: aparece também em artrose, infarto ósseo, tumores e infecção."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **osteonecrose da cabeça do fêmur**, uma área de osso morre por falta de sangue. Vários sinais podem aparecer nos exames, mas um deles é considerado **patognomônico** na radiografia, ou seja, praticamente só aparece nessa doença: o **sinal do crescente**.\n\n**O que é o sinal do crescente**: uma linha **escura** (radiolucente) em forma de **meia-lua**, logo abaixo da cartilagem, na parte de cima e da frente da cabeça. Ela representa uma **fratura do osso subcondral** (o osso logo abaixo da cartilagem), que se descola do osso morto embaixo. É mais bem vista na radiografia de **perfil**, com a perna na posição de \"rã\". Indica que a cabeça está prestes a **afundar**.\n\n**Os outros sinais**:\n\n**sinal da linha dupla**: aparece na **ressonância**, e não na radiografia. É uma linha dupla (uma clara e uma escura) na fronteira entre o osso morto e o osso que está tentando se reparar. É muito característico, mas é um sinal de ressonância;\n\n**esclerose e cistos**: aparecem na radiografia na fase de reparo, mas são **inespecíficos**: podem surgir também em artrose, tumores e infecção;\n\n\"linha simples\" não é um sinal descrito.\n\nNas classificações, o crescente marca o início do colapso: é a fase III de Ficat e Arlet e a fase de fratura subcondral nas classificações mais recentes.\n\n**Na prova**: o sinal radiográfico patognomônico da osteonecrose da cabeça do fêmur é o do crescente.",
+  "correta": "Do crescente. A meia-lua escura logo abaixo da cartilagem é a fratura do osso subcondral, sinal radiográfico patognomônico da osteonecrose.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0215": {
@@ -2032,25 +2032,25 @@
   "conferido": false
  },
  "quadril-0216": {
-  "conceito": "### Portal anterior da artroscopia do quadril\n- Cruzamento da vertical descendo da **EIAS** com a horizontal pela **ponta do trocânter maior**.\n- Atravessa **sartório e reto femoral** em direção à cápsula anterior.\n\n### Estruturas próximas\n| Estrutura | Distância aproximada | Comentário |\n|---|---|---|\n| ==cutâneo femoral lateral== | ==poucos milímetros== (ramos) | a mais em risco |\n| ramo ascendente da circunflexa lateral | cerca de 3 a 4 cm | |\n| nervo femoral | cerca de 3 a 4 cm medial | só em risco se o portal for medializado |\n\n### Técnica segura\n- Lâmina só na **pele**; subcutâneo com pinça romba.\n- Nunca medializar além da linha da EIAS.\n\n### Lesão do cutâneo femoral lateral\n- Parestesia e disestesia na face lateral da coxa (**meralgia parestésica**); geralmente transitória.\n\n> **Na prova:** portal anterior = risco para o ==cutâneo femoral lateral==.",
-  "correta": "**Ramos no subcutâneo.**\n- No ponto do portal anterior, os ramos do cutâneo femoral lateral estão a poucos milímetros do trajeto.",
   "incorretas": {
-   "A": "**Posterior ao colo.**\n- A circunflexa medial fica longe do portal anterior.",
-   "B": "**Mais medial.**\n- O femoral só corre risco se o portal for medializado.",
-   "C": "**Compartimento medial.**\n- A femoral profunda fica distante do ponto de punção."
+   "A": "A artéria circunflexa medial fica atrás do colo do fêmur, longe do portal anterior.",
+   "B": "O nervo femoral fica alguns centímetros para dentro e só corre risco se o portal for colocado medial demais.",
+   "C": "A artéria femoral profunda fica no compartimento medial da coxa, longe do ponto do portal."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **artroscopia do quadril**, o **portal anterior** é feito no cruzamento de duas linhas imaginárias: uma vertical que desce da **espinha ilíaca anterossuperior** (EIAS, a saliência óssea na frente da bacia) e uma horizontal na altura da ponta do **trocânter maior**. A partir daí, o trocarte atravessa os músculos **sartório** e **reto femoral** até chegar à cápsula da frente.\n\n**As estruturas próximas e o risco de cada uma**:\n\n**nervo cutâneo femoral lateral**: é a estrutura **mais em risco**. É um nervo só de sensibilidade, que sai perto da EIAS e se divide em vários ramos sob a pele da frente e do lado da coxa. Esses ramos ficam a **poucos milímetros** do trajeto do portal;\n\n**ramo ascendente da artéria circunflexa femoral lateral**: fica a alguns centímetros;\n\n**nervo femoral**: fica alguns centímetros **para dentro**. Só corre risco se o portal for colocado para dentro demais.\n\n**Técnica segura**: usar a lâmina **só na pele** e afastar o tecido de baixo com uma pinça de ponta romba, e nunca colocar o portal para dentro da linha da EIAS.\n\n**A lesão do cutâneo femoral lateral** causa formigamento, dormência ou queimação no lado de fora da coxa, um quadro chamado de **meralgia parestésica**. Geralmente é transitória.\n\n**Na prova**: a estrutura em risco no portal anterior é o nervo cutâneo femoral lateral e seus ramos.",
+  "correta": "O nervo cutâneo femoral lateral e seus ramos. No ponto do portal anterior, esses ramos ficam a poucos milímetros do trajeto.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0218": {
-  "conceito": "### Trendelenburg: testa o lado do apoio\n- Em apoio monopodal, o **glúteo médio do lado apoiado** mantém a pelve nivelada.\n- Se insuficiente, a pelve ==cai do lado oposto== (sem apoio).\n- Para testar o glúteo médio **esquerdo**: apoio à ==esquerda==, observar a hemipelve ==direita== cair.\n\n### Variações da marcha\n| Marcha | O que se vê | Significado |\n|---|---|---|\n| Trendelenburg | pelve cai do lado sem apoio | insuficiência abdutora do lado apoiado |\n| Duchenne (compensada) | tronco inclina sobre o lado doente | encurta o braço do peso para poupar o abdutor |\n| antálgica | fase de apoio encurtada | dor |\n\n### Causas de insuficiência abdutora\n- Lesão do **nervo glúteo superior** (L5), ruptura do glúteo médio.\n- Coxa vara, trocânter alto, redução do offset.\n- Luxação do quadril (DDQ), Perthes, epifisiólise.\n- Pseudartrose trocantérica após artroplastia.\n\n> **Na prova:** glúteo médio esquerdo = ==apoio à esquerda, pelve cai à direita==.",
-  "correta": "**Apoio no lado testado.**\n- Com apoio à esquerda, o glúteo médio esquerdo sustenta a pelve.\n- Se falha, a hemipelve direita desce.",
   "incorretas": {
-   "A": "**Lado errado.**\n- Apoiar à direita testa o glúteo médio direito.",
-   "B": "**Lado e queda errados.**\n- Testa o lado errado, e a pelve cai do lado sem apoio.",
-   "D": "**Queda errada.**\n- O apoio está certo, mas a pelve cai do lado oposto (direito)."
+   "A": "Apoiar na perna direita testa o glúteo médio direito, e não o esquerdo.",
+   "B": "O lado testado está errado, e a bacia cai do lado sem apoio, e não do lado do apoio.",
+   "D": "O apoio à esquerda está certo, mas a bacia cai do lado oposto, o direito, e não do mesmo lado."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **glúteo médio** é o principal músculo que mantém a **bacia nivelada** quando apoiamos o peso numa perna só. Ele trabalha do **lado da perna de apoio**: quando você fica em pé só sobre a perna esquerda, é o glúteo médio **esquerdo** que segura a bacia, impedindo que o lado **direito** (o da perna no ar) caia.\n\n**O teste de Trendelenburg** se baseia nisso:\n\npede-se que o paciente fique em pé apoiado numa perna só;\n\nobserva-se a bacia do lado da perna que está **no ar**.\n\n**Interpretação**: se o glúteo médio do lado do apoio estiver fraco, ele não consegue segurar a bacia, e o lado **oposto** (sem apoio) **cai**.\n\nAssim, para testar o glúteo médio **esquerdo**: o paciente apoia na perna **esquerda**, e observa-se se a bacia do lado **direito** cai.\n\n**Marchas relacionadas**:\n\n**marcha de Trendelenburg**: a bacia cai do lado sem apoio a cada passo;\n\n**marcha de Duchenne** (compensada): o paciente inclina o tronco sobre o lado fraco, trazendo o peso do corpo para perto do quadril e poupando o músculo;\n\n**marcha antálgica**: o paciente encurta o tempo de apoio na perna que dói.\n\n**Causas de fraqueza do glúteo médio**: lesão do **nervo glúteo superior**, ruptura do tendão, coxa vara, trocânter alto, offset reduzido numa prótese, displasia do quadril, doença de Perthes e escorregamento da cabeça femoral.\n\n**Na prova**: para testar o glúteo médio esquerdo, o apoio é na perna esquerda, e a bacia cai do lado direito.",
+  "correta": "Carga monopodal à esquerda e abaixamento da pelve do lado direito. O glúteo médio esquerdo sustenta a bacia quando o apoio é à esquerda; se ele falha, o lado direito cai.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0219": {
@@ -2077,14 +2077,14 @@
   "conferido": false
  },
  "quadril-0221": {
-  "conceito": "### Quadrantes de Wasielewski\n- Linha da **EIAS ao centro do acetábulo**, prolongada posteriormente; outra perpendicular pelo centro.\n- Resultam quatro quadrantes com riscos distintos.\n\n| Quadrante | Estrutura em risco | Uso |\n|---|---|---|\n| ==posterossuperior== | ciático e glúteos superiores (só com parafuso longo) | ==zona segura, osso mais espesso== |\n| posteroinferior | ciático, vasos pudendos | segunda opção, parafusos curtos |\n| anterossuperior | **vasos ilíacos externos** | zona da morte, evitar |\n| anteroinferior | **feixe obturatório** | evitar |\n\n### Dicas práticas\n- Parafusos **posterossuperiores** de até cerca de 25 mm são seguros e pegam o melhor osso.\n- Palpar a cortical interna e medir com profundímetro.\n- Mnemônico: \"**a**nterior = **a**rtéria\"; atrás e em cima está o osso bom.\n\n> **Na prova:** parafuso acetabular preferencial = ==posterossuperior==.",
-  "correta": "**Osso espesso e zona segura.**\n- O quadrante posterossuperior tem o maior estoque ósseo.\n- Com comprimento adequado, não há estrutura nobre logo além da cortical.",
   "incorretas": {
-   "B": "**Segunda opção.**\n- É aceitável, mas o osso é mais fino e há risco para ciático e vasos pudendos com parafusos longos.",
-   "C": "**Zona de maior perigo.**\n- Os vasos ilíacos externos ficam logo além da cortical interna.",
-   "D": "**Perigoso.**\n- Expõe o nervo e os vasos obturatórios."
+   "B": "O quadrante posteroinferior é a segunda opção, mas o osso é mais fino e há risco para o nervo ciático e os vasos pudendos com parafusos longos.",
+   "C": "O quadrante anterossuperior é a zona de maior perigo, porque os vasos ilíacos externos passam logo além da parede interna.",
+   "D": "O quadrante anteroinferior é perigoso, porque expõe o nervo e os vasos obturatórios."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Muitas taças sem cimento são reforçadas com **parafusos** que atravessam o fundo da taça e entram no osso da bacia. O perigo está do outro lado do osso: dentro da pelve passam vasos e nervos importantes. Para orientar o cirurgião, **Wasielewski** dividiu o acetábulo em **quatro quadrantes**:\n\ntraça-se uma linha da **espinha ilíaca anterossuperior** (EIAS) até o centro do acetábulo, prolongando-a para trás;\n\ntraça-se outra linha perpendicular a ela, passando pelo centro.\n\n**Os quadrantes e seus riscos**:\n\n**posterossuperior**: a **zona segura**. É onde o osso é **mais espesso**, e as estruturas do outro lado (o nervo ciático e os vasos glúteos superiores) só correm risco com parafusos longos demais;\n\n**posteroinferior**: segunda opção, com parafusos curtos. O osso é mais fino, e há risco para o ciático e os vasos pudendos;\n\n**anterossuperior**: a \"**zona da morte**\". Os **vasos ilíacos externos** passam logo além da parede interna do osso. Deve ser evitado;\n\n**anteroinferior**: perigoso, pelo **nervo e vasos obturatórios**. Também deve ser evitado.\n\n**Dicas práticas**: os parafusos no quadrante posterossuperior, com comprimento adequado, pegam o melhor osso com segurança. O cirurgião mede a profundidade e sente a parede interna antes de escolher o parafuso. Um jeito de lembrar: \"**a**nterior é **a**rtéria\"; atrás e em cima está o osso bom.\n\n**Na prova**: o quadrante mais seguro para os parafusos do acetábulo é o posterossuperior.",
+  "correta": "Póstero-superior. Tem o osso mais espesso e, com comprimento adequado, não há estrutura importante logo além da parede interna.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0222": {
@@ -2125,92 +2125,92 @@
   "conferido": false
  },
  "quadril-0225": {
-  "conceito": "### Osteonecrose atraumática: doença sistêmica\n- Causas: **corticoide**, **álcool**, doença falciforme, lúpus, Gaucher, doença descompressiva, trombofilias, HIV.\n- Causa sistêmica atinge os dois lados: ==bilateralidade em até cerca de 75%==.\n- Muitas vezes um lado é **assintomático** e só aparece na RM.\n\n### Consequência prática\n- Diagnosticado um lado, ==fazer RM do quadril contralateral==.\n- Lesão contralateral pequena, pré-colapso, pode ser acompanhada ou tratada cedo (descompressão).\n- Rastrear também joelhos, ombros e tornozelos quando há fatores sistêmicos (osteonecrose multifocal em cerca de 3%).\n\n### Formas traumáticas\n- Após fratura do colo ou luxação: tipicamente **unilaterais**.\n\n> **Na prova:** atraumática = ==bilateral em até 75%==.",
-  "correta": "**Bilateral em até 75%.**\n- A causa sistêmica atinge os dois quadris.\n- Frequentemente um deles é assintomático.",
   "incorretas": {
-   "B": "**Unilateral é exceção.**\n- A unilateralidade sugere causa local, como trauma.",
-   "C": "**Superestima.**\n- A bilateralidade existe, mas 90% passa da proporção descrita.",
-   "D": "**Erra os dois.**\n- Nem predominantemente unilateral, nem nessa proporção."
+   "B": "O acometimento de um lado só é a exceção na forma atraumática e sugere uma causa local, como o trauma.",
+   "C": "A bilateralidade é frequente, mas 90% passa da proporção descrita, que é de até cerca de 75%.",
+   "D": "A forma atraumática não é predominantemente unilateral, e a proporção também está errada."
   },
+  "conceito": "A **osteonecrose da cabeça do fêmur** pode ser **traumática** (depois de uma fratura do colo ou de uma luxação, que rompem os vasos) ou **atraumática** (sem trauma).\n\n**A forma atraumática é uma doença do organismo inteiro**, e não só de um quadril. Suas causas agem no corpo todo:\n\nuso de **corticoide** e consumo de **álcool**, as causas mais comuns;\n\ndoença falciforme, lúpus, doença de Gaucher, doença descompressiva dos mergulhadores, doenças que aumentam a coagulação e o HIV.\n\nComo a causa é sistêmica, ela costuma atingir **os dois quadris**. A osteonecrose atraumática é **bilateral em até cerca de 75%** dos casos. Muitas vezes, um dos lados ainda **não dói** e só aparece na ressonância.\n\n**A consequência prática**: quando se diagnostica osteonecrose atraumática num quadril, deve-se **sempre fazer ressonância do outro quadril**. Uma lesão pequena, ainda sem colapso, pode ser acompanhada ou tratada cedo, com mais chance de sucesso. Quando há fatores de risco sistêmicos, também vale avaliar outras articulações, como joelhos, ombros e tornozelos, porque a doença pode acometer vários lugares.\n\n**A forma traumática**, ao contrário, costuma ser **de um lado só**, já que a causa é local.\n\n**Na prova**: a osteonecrose atraumática da cabeça femoral é bilateral em até 75% dos casos.",
+  "correta": "Bilateral em até 75% dos casos. A causa é sistêmica, atinge os dois quadris, e muitas vezes um deles ainda não dá sintomas.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 15ª edição (Azar, Sawyer, Throckmorton), Cap. 4"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0226": {
-  "conceito": "### Artrodese do quadril\n- Indicação: ==jovem, trabalho braçal, doença unilateral== (pós-traumática, sequela de infecção), com **coluna, quadril contralateral e joelho ipsilateral normais**.\n\n### Posição da fusão\n| Plano | Posição clássica (Campbell) | Gabarito desta questão |\n|---|---|---|\n| flexão | **20 a 30°** | 0 a 15° |\n| adução / abdução | **0 a 5° de adução** | 0 a 5° de adução |\n| rotação | **0 a 15° de rotação externa** | 20 a 30° de rotação externa |\n\n### Por que evitar desvios\n- **Abdução:** obliquidade pélvica, sobrecarga lombar e do joelho; evitar sempre.\n- **Adução excessiva:** encurtamento aparente e sobrecarga do joelho.\n- **Flexão excessiva:** hiperlordose e lombalgia; pouca flexão dificulta sentar.\n- **Rotação interna:** marcha desajeitada; prefere-se leve externa.\n\n### Evolução\n- Degeneração das vizinhas em 15 a 25 anos; conversão para ATQ quando dói.\n\n> **Na prova:** o gabarito aceita a alternativa A, mas a posição clássica é ==20 a 30° de flexão, 0 a 5° de adução e rotação externa leve== (veja o alerta).",
-  "correta": "**Resposta oficial.**\n- O gabarito adota pouca flexão (0 a 15°), adução mínima e rotação externa de 20 a 30°.\n- A posição clássica dos livros usa mais flexão e menos rotação (veja o alerta).",
   "incorretas": {
-   "B": "**Posição clássica.**\n- Flexão de 20 a 30°, adução de 0 a 5° e rotação externa leve é o que Campbell descreve.\n- Não foi a alternativa assinalada pelo gabarito (veja o alerta).",
-   "C": "**Adução excessiva.**\n- 10 a 15° de adução gera encurtamento aparente e sobrecarga do joelho.",
-   "D": "**Adução excessiva.**\n- A flexão e a rotação estão razoáveis, mas a adução passa do recomendado.",
-   "E": "**Adução e rotação excessivas.**\n- Ambas passam do recomendado."
+   "B": "Flexão de 20 a 30°, adução de 0 a 5° e rotação externa leve é a posição clássica descrita no Campbell, mas não foi a alternativa do gabarito (veja o alerta).",
+   "C": "A adução de 10 a 15° é excessiva e causa encurtamento aparente do membro e sobrecarga do joelho.",
+   "D": "A flexão e a rotação são razoáveis, mas a adução de 10 a 15° passa do recomendado.",
+   "E": "A adução e a rotação externa passam do recomendado."
   },
+  "conceito": "A **artrodese do quadril** é a fusão definitiva da articulação: a cabeça do fêmur é unida ao acetábulo, e o quadril deixa de se mover. Elimina a dor de forma duradoura e permite trabalho pesado. Hoje é pouco usada, mas ainda tem uma indicação clássica: o **paciente jovem**, que faz **trabalho braçal**, com doença de um lado só (por exemplo, artrose depois de uma fratura ou sequela de infecção) e com a **coluna, o outro quadril e o joelho do mesmo lado normais**. Essas articulações vizinhas vão compensar o movimento perdido por muitos anos.\n\n**A posição da fusão é decisiva**, porque erros sobrecarregam as articulações vizinhas:\n\n**abdução** (coxa aberta): deve ser **sempre evitada**, porque inclina a bacia e sobrecarrega a coluna e o joelho;\n\n**adução** (coxa fechada) excessiva: causa encurtamento aparente e sobrecarga do joelho;\n\n**flexão** excessiva: aumenta a curvatura da coluna lombar e causa dor nas costas; flexão de menos dificulta sentar;\n\n**rotação interna**: deixa a marcha desajeitada, por isso se prefere uma leve rotação externa.\n\n**A posição clássica dos livros** (como o Campbell) é cerca de **20° a 30° de flexão**, **0° a 5° de adução** e **rotação externa leve** (0° a 15°). O gabarito desta questão, porém, adota uma posição com **pouca flexão** e **mais rotação externa** (veja o alerta).\n\n**Evolução**: as articulações vizinhas costumam começar a doer entre 15 e 25 anos depois da fusão. Quando isso acontece, a artrodese pode ser convertida em prótese.\n\n**Na prova**: o gabarito oficial aponta 0 a 15° de flexão, 0 a 5° de adução e 20 a 30° de rotação externa.",
+  "correta": "0 a 15 graus de flexão, 0 a 5 graus de adução e 20 a 30 graus de rotação externa, segundo o gabarito oficial. A posição clássica dos livros usa mais flexão e menos rotação externa.",
   "alerta": "Vale uma ressalva importante sobre esta questão: a posição clássica mais citada na literatura ortopédica geral (Campbell's, revisões de prova) para a artrodese do quadril é de aproximadamente 25 a 30° de FLEXÃO, 0 a 5° de adução (ou neutro) e rotação externa NEUTRA a cerca de 10°, ou seja, com a flexão sendo o parâmetro de maior magnitude, e a rotação externa o de menor. O gabarito oficial desta questão (alternativa A) inverte essa relação, com pouca flexão (0-15°) e maior rotação externa (20-30°). Mantemos aqui o gabarito oficial, mas registramos essa divergência em relação à posição mais classicamente descrita, para que você confira com atenção a referência específica usada pela banca.",
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0227": {
-  "conceito": "### Impacto posterior do quadril\n- Contato entre o **colo femoral posterior** e a borda acetabular posterior ou o ísquio.\n- Surge em **extensão com rotação externa** (e abdução), como em bailarinos e em certas deformidades (retroversão femoral, sobrecobertura posterior).\n- Pode ocorrer também como **contragolpe** do pincer anterior.\n\n### Testes provocativos\n| Teste | Posição | Sugere |\n|---|---|---|\n| ==FABER (FABRE, Patrick)== | ==flexão, abdução e rotação externa== | dor **posterior**: impacto posterior ou sacroilíaca; dor anterior: intra-articular |\n| impacto posterior | extensão + rotação externa (paciente na borda da mesa) | impacto posterior |\n| FADIR (FADRI) | flexão, adução e rotação interna | impacto **anterior** |\n| apreensão (extensão + RE) | | instabilidade anterior |\n| Trendelenburg | apoio monopodal | insuficiência abdutora |\n| SLR / Lasègue | elevação do membro estendido | radiculopatia |\n\n> **Na prova:** entre as opções, o que mais sugere impacto posterior = ==FABER (FABRE)==.",
-  "correta": "**Rotação externa com abdução.**\n- O FABER leva o colo posterior contra a borda acetabular posterior.\n- Dor posterior nessa manobra sustenta a hipótese de impacto posterior.",
   "incorretas": {
-   "B": "**Impacto anterior.**\n- O FADIR (FADRI) leva o colo contra a borda anterossuperior.",
-   "C": "**Instabilidade.**\n- A apreensão avalia instabilidade anterior, não o impacto posterior.",
-   "D": "**Força abdutora.**\n- O Trendelenburg mede a função do glúteo médio.",
-   "E": "**Radiculopatia.**\n- A elevação da perna estendida avalia irritação radicular."
+   "B": "O FADIR (FADRI) leva o colo contra a borda da frente do acetábulo e avalia o impacto anterior.",
+   "C": "O teste de apreensão avalia instabilidade anterior do quadril, e não o impacto posterior.",
+   "D": "O teste de Trendelenburg mede a força do glúteo médio, sem relação com o impacto.",
+   "E": "A elevação da perna estendida avalia irritação de raiz nervosa da coluna lombar."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **impacto posterior do quadril** é o choque entre a parte **de trás do colo do fêmur** e a borda **de trás do acetábulo** (ou o ísquio). Ele acontece principalmente quando o quadril vai para **extensão com rotação externa**, às vezes com abdução. Aparece em bailarinos e em pessoas com certas deformidades, como o colo voltado para trás (retroversão femoral) ou um acetábulo que cobre demais a parte de trás. Também pode surgir como **contragolpe** do impacto anterior do tipo pincer.\n\n**Os testes do exame físico**:\n\n**FABER** (ou FABRE, ou teste de Patrick): **f**lexão, **ab**dução e **r**otação **e**xterna do quadril, com o pé apoiado sobre o joelho do outro lado. Essa posição leva a parte de trás do colo contra a borda de trás do acetábulo. **Dor atrás** sugere impacto posterior (ou problema na articulação sacroilíaca); dor na frente sugere problema dentro da articulação;\n\n**teste do impacto posterior**: com o paciente na borda da mesa, leva-se o quadril em extensão e rotação externa;\n\n**FADIR** (ou FADRI): flexão, adução e rotação interna. Avalia o impacto **anterior**, e não o posterior;\n\n**apreensão**: extensão com rotação externa, avalia **instabilidade** anterior;\n\n**Trendelenburg**: avalia a força do glúteo médio;\n\n**elevação da perna estendida** (Lasègue): avalia irritação de raiz nervosa da coluna.\n\n**Na prova**: entre as opções, o teste que mais sugere impacto posterior é o FABER (FABRE).",
+  "correta": "FABRE positivo. A flexão com abdução e rotação externa leva a parte de trás do colo contra a borda posterior do acetábulo, e a dor atrás sustenta a hipótese.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0228": {
-  "alerta": "Os valores da força abdutora variam conforme o modelo biomecânico: nos modelos clássicos de Pauwels e Charnley, ela chega a cerca de 2 a 2,5 vezes o peso corporal no apoio monopodal. O gabarito oficial adota a estimativa simplificada de cerca de 50% acima do peso corporal.",
-  "conceito": "### A balança de Charnley\n- Apoio monopodal: o peso corporal age com braço **longo**; os abdutores, com braço **curto**.\n- Para nivelar a pelve, a ==força abdutora precisa superar o peso corporal==.\n- A resultante na cabeça femoral chega a cerca de **2,5 a 3 vezes** o peso na marcha.\n\n### O que Charnley propunha\n| Manobra | Efeito |\n|---|---|\n| **medializar** o acetábulo (aprofundar) | ==encurta o braço do peso== |\n| osteotomia do trocânter com reinserção **lateral e distal** | ==alonga o braço abdutor== |\n\n### Posição do trocânter\n- Trocânter alto (coxa vara) ou medializado encurta o braço abdutor.\n- Em deformidades rotacionais, o trocânter posteriorizado também muda a eficiência abdutora.\n\n> **Na prova:** o gabarito aceita ==força abdutora cerca de 50% maior que o peso== (veja o alerta sobre os modelos clássicos).",
-  "correta": "**Resposta oficial.**\n- A força abdutora precisa ser maior que o peso corporal para nivelar a pelve.\n- O gabarito usa a estimativa de cerca de 50% acima (veja o alerta).",
   "incorretas": {
-   "A": "**Efeito descrito ao contrário.**\n- O aprofundamento do acetábulo **encurta** o braço do peso, não o alonga.",
-   "B": "**Direção errada.**\n- O trocânter era reinserido lateral e distalmente para alongar o braço abdutor.",
-   "D": "**Subestima a carga.**\n- A resultante na cabeça chega a cerca de 2,5 a 3 vezes o peso.",
-   "E": "**Não é a afirmação marcada.**\n- A relação entre trocânter posterior e braço abdutor é mais complexa, e o gabarito não a aceitou."
+   "A": "Aprofundar o acetábulo encurta o braço de alavanca do peso do corpo, e não o alonga.",
+   "B": "Charnley reinseria o trocânter mais para fora (lateral) e para baixo, para alongar o braço dos abdutores, e não medialmente.",
+   "D": "A carga sobre a cabeça do fêmur ao caminhar é de cerca de 2,5 a 3 vezes o peso corporal, e não apenas 50% maior.",
+   "E": "A relação entre o trocânter posterior e o braço dos abdutores é mais complexa, e o gabarito não aceitou esta afirmação."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "**Charnley** baseou a artroplastia moderna num princípio de **equilíbrio de alavancas**. Quando apoiamos numa perna só, o quadril funciona como uma **gangorra**:\n\no ponto de apoio é a **cabeça do fêmur**;\n\nde um lado, o **peso do corpo**, com braço de alavanca **longo** (da linha média até a cabeça);\n\ndo outro, os **músculos abdutores**, com braço **curto** (da cabeça até o trocânter maior).\n\n**A consequência**: como o braço dos abdutores é bem menor, a **força dos abdutores precisa ser maior que o peso do corpo** para manter a bacia nivelada. E a carga que chega à cabeça do fêmur é a soma das duas forças, cerca de **2,5 a 3 vezes o peso corporal** ao caminhar.\n\nOs modelos clássicos estimam a força abdutora em cerca de duas vezes o peso corporal ou mais; o gabarito desta questão adota uma estimativa simplificada, de cerca de **50% acima** do peso (veja o alerta).\n\n**O que Charnley propunha para reduzir a carga**:\n\n**medializar o acetábulo** (aprofundá-lo): **encurta** o braço do peso do corpo;\n\n**cortar o trocânter maior** e reinseri-lo **mais para fora e para baixo**: **alonga** o braço dos abdutores.\n\nAs duas manobras diminuem a força que os abdutores precisam fazer e, assim, a carga sobre a prótese.\n\n**Posição do trocânter**: quando o trocânter está alto (como na coxa vara) ou mais para dentro, o braço dos abdutores encurta e eles ficam menos eficientes.\n\n**Na prova**: o gabarito considera que a força abdutora deve ser cerca de 50% maior que o peso corporal para nivelar a bacia.",
+  "correta": "A força dos músculos abdutores deve ser aproximadamente 50% maior que o peso corporal, segundo o gabarito. O princípio é que ela precisa superar o peso do corpo, porque seu braço de alavanca é mais curto.",
+  "alerta": "Os valores da força abdutora variam conforme o modelo biomecânico: nos modelos clássicos de Pauwels e Charnley, ela chega a cerca de 2 a 2,5 vezes o peso corporal no apoio monopodal. O gabarito oficial adota a estimativa simplificada de cerca de 50% acima do peso corporal.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0229": {
-  "alerta": "A alternativa B reproduz a descrição clássica da coluna anterior de Letournel e também seria defensável. A E é imprecisa: a corona mortis liga o sistema ilíaco externo (epigástrica inferior) ao obturatório, e sua prevalência varia muito entre séries (de cerca de 30% a mais de 80%, somando formas arteriais e venosas). O gabarito oficial é a E.",
-  "conceito": "### Colunas de Letournel (Y invertido)\n| Coluna | Composição | Característica |\n|---|---|---|\n| anterior | metade anterior da crista ilíaca, espinhas ilíacas anteriores, metade anterior do acetábulo, ramo superior do púbis | **mais longa**, da crista até a sínfise |\n| posterior | osso denso da incisura isquiática maior, espinha isquiática, metade posterior do acetábulo, **ísquio** | **mais curta** e espessa |\n\n### Incisura isquiática maior\n- O ==feixe glúteo superior== sai pela porção **mais superior** da incisura, acima do piriforme.\n- Lesão em fraturas que chegam à incisura ou por afastamento: sangramento de difícil controle.\n\n### Corona mortis\n- Anastomose entre o sistema **ilíaco externo** (epigástrica inferior) e a **obturatória** (ramo da ilíaca interna), sobre o ramo superior do púbis.\n- Deve ser ligada nas vias ilioinguinal e de Stoppa.\n\n> **Na prova:** o gabarito oficial destacou a ==corona mortis== (veja o alerta sobre a alternativa B).",
-  "correta": "**Resposta oficial.**\n- A corona mortis é frequente e fica em risco nos acessos anteriores do acetábulo.\n- A formulação da alternativa, porém, é imprecisa (veja o alerta).",
   "incorretas": {
-   "A": "**Posição errada.**\n- O feixe glúteo superior sai pela porção superior da incisura.",
-   "B": "**Descrição clássica.**\n- Corresponde à coluna anterior de Letournel; o gabarito, porém, não a aceitou (veja o alerta).",
-   "C": "**Invertido.**\n- A coluna posterior é mais curta que a anterior.",
-   "D": "**Troca ísquio por ílio.**\n- A coluna posterior inclui o ísquio, não o ílio como descrito."
+   "A": "O feixe glúteo superior sai pela parte de cima da incisura isquiática maior, acima do piriforme, e não pela parte de baixo.",
+   "B": "Esta é a descrição clássica da coluna anterior de Letournel e seria defensável, mas a banca não a aceitou (veja o alerta).",
+   "C": "É o contrário: a coluna posterior é mais curta que a anterior.",
+   "D": "A coluna posterior inclui o ísquio, e não o ílio como descrito."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Para operar fraturas do **acetábulo** com segurança, é preciso conhecer sua anatomia. **Letournel** descreveu o acetábulo como sustentado por **duas colunas** de osso, em forma de um **Y invertido**:\n\n**Coluna anterior**: é a **mais longa**. Vai da crista ilíaca até a sínfise púbica e inclui a metade da frente da crista ilíaca, as espinhas ilíacas anteriores, a metade da frente do acetábulo e o ramo superior do púbis.\n\n**Coluna posterior**: é **mais curta e mais espessa**. Inclui o osso denso da incisura isquiática maior, a espinha isquiática, a metade de trás do acetábulo e o **ísquio**.\n\n**A incisura isquiática maior** é uma grande abertura na parte de trás da bacia. O **feixe glúteo superior** (artéria e nervo) sai pela sua parte **mais de cima**, acima do músculo piriforme. Fraturas que chegam até ali, ou um afastamento descuidado, podem lesá-lo, com sangramento difícil de controlar.\n\n**A corona mortis** (\"coroa da morte\") é uma ligação entre vasos que passa sobre o ramo superior do púbis. Ela une o sistema da **ilíaca externa** (pela artéria epigástrica inferior) com a **artéria obturatória** (que vem da ilíaca interna). É frequente e precisa ser **ligada** nas vias anteriores do acetábulo (ilioinguinal e Stoppa), porque, se cortada sem controle, retrai e sangra muito.\n\nO gabarito oficial destacou a alternativa da corona mortis, embora sua formulação seja imprecisa (veja o alerta).\n\n**Na prova**: o gabarito oficial é a alternativa sobre a corona mortis.",
+  "correta": "80% dos pacientes apresentam a anastomose conhecida como corona mortis, segundo o gabarito. Ela é frequente e fica em risco nas vias anteriores, mas liga a epigástrica inferior (sistema ilíaco externo) à obturatória, e sua prevalência varia entre as séries.",
+  "alerta": "A alternativa B reproduz a descrição clássica da coluna anterior de Letournel e também seria defensável. A E é imprecisa: a corona mortis liga o sistema ilíaco externo (epigástrica inferior) ao obturatório, e sua prevalência varia muito entre séries (de cerca de 30% a mais de 80%, somando formas arteriais e venosas). O gabarito oficial é a E.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0230": {
-  "conceito": "### Queda precoce após ATQ não cimentada\n- Nas primeiras semanas, a haste ainda depende do **encaixe mecânico** (a osteointegração leva cerca de 6 a 12 semanas).\n- Queda com dor e incapacidade de marcha: pensar em ==fratura periprotética do fêmur== (ou afundamento da haste).\n- Hastes não cimentadas têm maior risco de fratura periprotética precoce que as cimentadas.\n\n### Alfa-defensina no pós-operatório precoce\n- Biomarcador sinovial de infecção periprotética (teste qualitativo ou razão acima de 1,0 no ELISA).\n- Pode estar elevada por **inflamação pós-operatória**, hemartrose, metalose ou doenças inflamatórias.\n- Um valor isolado três semanas após a cirurgia, num quadro **traumático agudo**, não define infecção.\n\n### Investigação\n- Radiografias da bacia e do fêmur inteiro; comparar com as pós-operatórias.\n- Classificar por **Vancouver** e testar a estabilidade da haste.\n\n> **Na prova:** queda 3 semanas após ATQ não cimentada = ==fratura periprotética femoral==.",
-  "correta": "**Quadro traumático agudo.**\n- Queda com dor e incapacidade de marcha, com haste não cimentada ainda sem osteointegração.\n- O diagnóstico mais provável é fratura periprotética femoral.",
   "incorretas": {
-   "A": "**Processo tardio.**\n- A soltura asséptica é crônica, não surge após uma queda três semanas depois.",
-   "B": "**Marcador pouco confiável aqui.**\n- A alfa-defensina pode estar elevada pela inflamação pós-operatória; o quadro é traumático.",
-   "C": "**Não explica a incapacidade.**\n- A inflamação periarticular isolada não justifica a perda da marcha após queda.",
-   "E": "**Menos provável.**\n- O fêmur é o local mais comum de fratura periprotética após queda."
+   "A": "A soltura asséptica é um processo lento, que se desenvolve ao longo de anos, e não aparece depois de uma queda três semanas após a cirurgia.",
+   "B": "A alfa-defensina pode estar elevada pela inflamação normal do pós-operatório; o quadro, que começou com uma queda, aponta para fratura.",
+   "C": "Uma inflamação ao redor da articulação não explica a incapacidade de andar depois de uma queda.",
+   "E": "O fêmur é o local mais comum de fratura periprotética depois de uma queda, e não o acetábulo."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Este caso é um paciente com **prótese de quadril sem cimento** colocada há **três semanas**, que sofreu uma **queda** e passou a ter dor e dificuldade para andar.\n\n**Por que pensar em fratura?** Nas primeiras semanas, a haste sem cimento ainda **não está integrada** ao osso. Ela se segura apenas pelo **encaixe mecânico**, sob pressão. O crescimento do osso sobre a superfície da haste (a osteointegração) leva cerca de 6 a 12 semanas. Uma queda nesse período pode **fraturar o fêmur** ao redor da haste ou fazê-la **afundar**. Além disso, as hastes sem cimento têm mais risco de fratura periprotética precoce que as cimentadas.\n\n**E a alfa-defensina?** É uma proteína medida no líquido da articulação que ajuda a diagnosticar **infecção** da prótese. Mas ela pode estar elevada por outros motivos, como a **inflamação normal** das primeiras semanas depois da cirurgia, um sangramento dentro da articulação ou doenças inflamatórias. Um valor isolado três semanas depois da cirurgia, num quadro que começou com uma **queda**, não basta para definir infecção. A história traumática aguda pesa muito mais.\n\n**O que fazer**: radiografias da bacia e do fêmur inteiro, comparando com as radiografias feitas depois da cirurgia. A fratura é então classificada pela **classificação de Vancouver**, e a estabilidade da haste é avaliada.\n\n**Na prova**: a queda três semanas depois de uma prótese sem cimento, com dor e dificuldade para andar, sugere fratura periprotética do fêmur.",
+  "correta": "Fratura periprotética do componente femoral. O quadro é traumático agudo, numa haste sem cimento ainda não integrada ao osso.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0231": {
-  "conceito": "### Vancouver C\n- Fratura ==bem abaixo da ponta da haste==; o implante está **fixo** e não participa da fratura.\n- Tratamento: como fratura do fêmur distal ou diafisária, sem revisar a haste.\n\n### Técnica\n- **Placa bloqueada lateral** (fêmur distal) ==estendida proximalmente, ultrapassando a ponta da haste== (sobreposição).\n- Evita um **segmento de osso livre** entre o fim da placa e a ponta da haste (zona de concentração de tensão).\n- Fixação proximal com parafusos unicorticais, bicorticais ao lado da haste ou cabos.\n\n### Vancouver completo\n| Tipo | Conduta |\n|---|---|\n| A | conservador ou fixação do trocânter |\n| B1 | osteossíntese (placa, cabos) |\n| B2 | revisão com haste longa |\n| B3 | revisão com reconstrução (enxerto, megaprótese, APC) |\n| ==C== | ==osteossíntese independente da haste, cobrindo sua ponta== |\n\n> **Na prova:** Vancouver C = ==placa lateral ultrapassando a ponta da haste==.",
-  "correta": "**Fixar a fratura, poupar a haste.**\n- No tipo C a haste está estável; trata-se a fratura com placa bloqueada.\n- A placa deve ultrapassar a ponta da haste para não deixar zona de concentração de tensão.",
   "incorretas": {
-   "A": "**Não é padrão.**\n- A fratura do tipo C geralmente precisa de fixação cirúrgica.",
-   "B": "**Revisão desnecessária.**\n- No tipo C a haste está fixa e distante da fratura.",
-   "C": "**Mesma razão.**\n- Revisar com haste cimentada não se justifica no tipo C.",
-   "D": "**Mesma razão.**\n- O tipo C é tratado como fratura isolada, sem revisão."
+   "A": "A fratura do tipo C, num fêmur de adulto que precisa voltar a andar, geralmente exige fixação cirúrgica.",
+   "B": "Trocar a haste é desnecessário no tipo C, porque ela está firme e longe da fratura.",
+   "C": "Pela mesma razão, a revisão com haste cimentada não se justifica no tipo C.",
+   "D": "O tipo C é tratado como uma fratura isolada, sem revisão da haste."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **classificação de Vancouver** organiza as fraturas do fêmur ao redor de uma prótese de quadril pelo **local** e pela **situação da haste**:\n\n**Tipo A**: na região do trocânter;\n\n**Tipo B**: ao redor da haste ou logo abaixo dela. Divide-se em B1 (haste firme), B2 (haste solta, osso bom) e B3 (haste solta, osso ruim);\n\n**Tipo C**: **bem abaixo da ponta da haste**.\n\n**No tipo C**, a haste está **firme** e **não participa** da fratura. Por isso, a fratura é tratada **como uma fratura comum** do fêmur (da diáfise ou da parte de baixo), **sem trocar a prótese**.\n\n**A técnica**: usa-se uma **placa bloqueada** do lado de fora do fêmur, partindo da parte de baixo do osso e **subindo além da ponta da haste**, de modo que a placa e a haste se **sobreponham**. Isso é importante porque, se sobrar um trecho de osso livre entre o fim da placa e a ponta da haste, essa região concentra tensão e pode fraturar de novo. Na parte de cima, ao lado da haste, a placa é presa com parafusos que não atravessam todo o osso ou com cabos.\n\n**As condutas por tipo**:\n\n**A**: tratamento conservador ou fixação do trocânter;\n\n**B1**: fixação da fratura com placa e cabos;\n\n**B2**: troca por uma haste longa;\n\n**B3**: troca da haste com reconstrução do osso;\n\n**C**: fixação da fratura independente da haste, cobrindo a sua ponta.\n\n**Na prova**: no Vancouver C, usa-se uma placa bloqueada na parte de baixo do fêmur que se estende para cima, ultrapassando a haste.",
+  "correta": "Placa bloqueada aplicada à parte distal do fêmur estendendo-se proximalmente, ultrapassando a haste. A haste está firme, então se trata a fratura, cobrindo a ponta da haste para não deixar uma zona de concentração de tensão.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "quadril-0232": {
