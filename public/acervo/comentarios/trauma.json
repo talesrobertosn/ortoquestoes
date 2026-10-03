@@ -474,14 +474,15 @@
   "conferido": false
  },
  "trauma-0044": {
-  "conceito": "### Monteggia (Bado)\n| Tipo | Cabeça do rádio | Frequência |\n|---|---|---|\n| ==I== | ==anterior== | ==o mais comum no geral== (60 a 70%) |\n| II | posterior | comum no adulto idoso, com fratura da cabeça e coronoide |\n| III | lateral | criança |\n| IV | anterior + fratura dos dois ossos | raro |\n\n### Adulto\n- ==Placa na ulna== restaurando comprimento e arco; cabeça reduz espontaneamente.\n- Não reduz: interposição (ligamento anular, cápsula) ou ulna mal reduzida.\n- Tipo II (Jupiter): variantes pela localização na ulna; associação com fratura da cabeça do rádio e coronoide.\n\n> **Na prova:** tipo de Bado mais comum = ==I==",
-  "correta": "**Tipo I.**\n- Luxação anterior da cabeça.\n- O mais frequente.",
   "incorretas": {
-   "B": "**Tipo II.**\n- Frequente no adulto idoso, mas não o mais comum pela banca.",
-   "C": "**Tipo III.**\n- Criança.",
-   "D": "**Tipo IV.**\n- Raro."
+   "B": "Pela literatura atual, o tipo II (luxação posterior) é o mais comum no adulto, mas a banca não o considerou correto.",
+   "C": "O tipo III, com luxação lateral, é típico da criança.",
+   "D": "O tipo IV, com fratura dos dois ossos, é raro."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **lesão de Monteggia** é a fratura da **ulna** com **luxação da cabeça do rádio**. A classificação de **Bado** usa a direção para onde a cabeça do rádio vai, que é a mesma do ápice da fratura da ulna:\n\n**tipo I**: cabeça do rádio luxada para **anterior**, ulna angulada para anterior; é o **mais comum no geral** e sobretudo na **criança**;\n\n**tipo II**: cabeça luxada para **posterior**, ulna angulada para posterior; é o **mais comum no adulto**, muitas vezes no idoso, com fratura da cabeça do rádio e do processo coronoide;\n\n**tipo III**: cabeça luxada para **lateral**, com fratura da metáfise da ulna; típico da criança;\n\n**tipo IV**: luxação anterior com fratura dos **dois ossos** do antebraço; raro.\n\n**No adulto**: o tratamento é cirúrgico, com **placa na ulna** restaurando o comprimento e o arco; com a ulna bem reduzida, a cabeça do rádio em geral volta sozinha. Se não voltar, há interposição (ligamento anular, cápsula) ou a ulna ficou mal reduzida. O tipo II tem a subclassificação de **Jupiter**, pelo nível da fratura na ulna, e é o que mais se associa a fratura da cabeça do rádio, do coronoide e a instabilidade.\n\n**Na prova**: Bado mais comum no geral e na criança = **tipo I**; no adulto, as séries modernas mostram o **tipo II**.",
+  "alerta": "O enunciado pergunta pelo tipo mais comum no adulto, e o gabarito oficial é o tipo I. O tipo I é o mais comum no geral e na criança, mas no adulto as séries modernas e o Rockwood apontam o tipo II (luxação posterior) como o mais frequente. Guarde as duas informações e leia a resposta oficial com reserva.",
+  "correta": "O gabarito oficial é o tipo I, o mais comum quando se considera todas as idades e sobretudo a criança; no adulto, a literatura atual aponta o tipo II como o mais frequente.",
+  "geradoEm": "2026-10-03",
   "conferido": false
  },
  "trauma-0045": {
