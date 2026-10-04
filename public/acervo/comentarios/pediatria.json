@@ -501,49 +501,49 @@
   "conferido": false
  },
  "pediatria-0035": {
-  "conceito": "### Marchas patológicas\n| Marcha | Achado | Causa |\n|---|---|---|\n| ==mão na coxa== | empurra a coxa para estender o joelho | ==quadríceps insuficiente== (pólio, Duchenne) |\n| glúteo máximo | tronco jogado para trás no apoio | extensor do quadril fraco |\n| Trendelenburg | pelve cai do lado oposto; tronco inclina para o lado do apoio | ==glúteo médio== |\n| escarvante (steppage) | eleva o joelho para o pé não arrastar | dorsiflexores fracos (fibular) |\n| atáxica | base alargada, instável | cerebelo |\n| antálgica | apoio curto | dor |\n| ceifante | circundução | espasticidade (hemiplegia) |\n\n> **Na prova:** mão na face anterior da coxa = ==insuficiência do quadríceps==.",
-  "correta": "**Insuficiência do quadríceps.**\n- A mão empurra a coxa e trava o joelho em extensão.",
   "incorretas": {
-   "A": "**Cerebelar.**\n- Base alargada.",
-   "B": "**Dorsiflexores.**\n- Eleva o joelho.",
-   "D": "**Glúteo máximo.**\n- Tronco para trás."
+   "A": "A marcha atáxica, de origem cerebelar, tem base alargada e instável, sem apoio da mão na coxa.",
+   "B": "Na marcha escarvante o joelho é elevado para compensar dorsiflexores fracos.",
+   "D": "Na insuficiência do glúteo máximo, o tronco é jogado para trás no apoio."
   },
+  "conceito": "Muitas **marchas patológicas** são compensações de um músculo fraco, e o jeito de andar denuncia qual é:\n\n**mão na face anterior da coxa**: o **quadríceps** está fraco; no apoio, a pessoa empurra a coxa com a mão para **travar o joelho em extensão** e não cair (poliomielite, Duchenne);\n\n**marcha do glúteo máximo**: o tronco é jogado **para trás** no apoio, porque o extensor do quadril não segura o corpo;\n\n**Trendelenburg**: a pelve cai do lado oposto ao apoio, e o tronco inclina para o lado que apoia; **glúteo médio** fraco;\n\n**escarvante (steppage)**: a pessoa **eleva o joelho** para o pé caído não arrastar; **dorsiflexores** fracos (nervo fibular);\n\n**atáxica**: base alargada e instável; lesão do **cerebelo**;\n\n**antálgica**: apoio curto do lado que dói;\n\n**ceifante**: o membro faz um arco (circundução); espasticidade, como na hemiplegia.\n\n**Na prova**: apoio da mão na face anterior da coxa = **insuficiência do quadríceps**.",
+  "correta": "A mão empurra a coxa para trás e trava o joelho em extensão, compensando o quadríceps fraco.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Gait. https://posna.org/physician-education/study-guide/gait"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0036": {
-  "conceito": "### Artrogripose múltipla congênita\n- Contraturas congênitas em ==duas ou mais articulações==, sem progressão.\n- Causa comum: ==acinesia fetal== (falta de movimento intrauterino).\n\n| Origem | Achado |\n|---|---|\n| ==neuropática== (a mais comum) | ==redução das células do corno anterior== da medula |\n| miopática | distrofia muscular congênita |\n| restrição | oligoidrâmnio, útero bicorno |\n| tecido conjuntivo | |\n\n### Amioplasia (forma clássica)\n- Simétrica, quatro membros: ombros aduzidos e em RI, cotovelos estendidos, punhos fletidos, quadris luxados, joelhos estendidos ou fletidos, ==pé torto rígido==.\n- Pele lisa sem pregas, covinhas, inteligência normal.\n\n### Tratamento\n- Fisioterapia precoce; gessos; cirurgias (talectomia no pé torto resistente, osteotomias).\n\n> **Na prova:** amioplasia = ombro ==aduzido e em RI==, cotovelo estendido, ==punho fletido==",
-  "correta": "**Rotação interna e punho fletido.**\n- Postura do \"policial pedindo gorjeta\".\n- Cotovelo estendido.",
   "incorretas": {
-   "B": "**Rotação errada.**\n- É interna.",
-   "C": "**Punho errado.**\n- Fletido.",
-   "D": "**Duplamente errada.**\n- RE e punho estendido."
+   "B": "O punho fletido está certo, mas o ombro fica em rotação interna.",
+   "C": "A rotação interna está certa, mas o punho fica fletido.",
+   "D": "Erra os dois: o ombro está em rotação interna e o punho, fletido."
   },
+  "conceito": "A **artrogripose múltipla congênita** é o nascimento com contraturas fixas em várias articulações, causadas pela falta de movimento do feto. A forma clássica, a **amioplasia**, é simétrica e tem uma postura típica dos membros superiores:\n\n**ombros** em **adução** e **rotação interna**;\n\n**cotovelos** em **extensão**;\n\n**antebraços** em pronação;\n\n**punhos** em **flexão** e desvio ulnar.\n\nA imagem lembra o \"policial pedindo gorjeta\": braços colados ao corpo, virados para dentro, com os punhos dobrados.\n\n**Nos membros inferiores**: quadris às vezes luxados, joelhos estendidos ou fletidos e **pé torto rígido**.\n\n**Outros sinais**: pele lisa, sem pregas, com covinhas sobre as articulações, músculos substituídos por gordura e fibrose, e **inteligência normal**.\n\n**O objetivo do tratamento** no membro superior é a criança conseguir levar a mão à boca: fisioterapia e órteses precoces e, depois, liberação do cotovelo e transferências para dar flexão.\n\n**Na prova**: artrogripose = cotovelo em extensão, ombro em **rotação interna** e **punho fletido**.",
+  "correta": "Na amioplasia, o ombro fica aduzido e em rotação interna, o cotovelo estendido e o punho fletido.",
   "referencias": [
    "Arthrogryposis: A Review and Update. https://pmc.ncbi.nlm.nih.gov/articles/PMC2698792/",
    "AMC: amyoplasia and distal arthrogryposis. https://pmc.ncbi.nlm.nih.gov/articles/PMC4661149/",
    "Lovell and Winter's Pediatric Orthopaedics, 7ª edição (Weinstein, Flynn), Cap. 8"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0037": {
-  "conceito": "### DDQ: exame conforme a idade\n| Idade | Achado útil |\n|---|---|\n| recém-nascido a 2-3 meses | ==Ortolani== (reduz) e ==Barlow== (luxa) |\n| ==após 3 meses== | ==limitação da abdução (Hart)==, Galeazzi, assimetria de pregas |\n| marcha | Trendelenburg, claudicação, hiperlordose (bilateral) |\n\n### Sinais\n| Sinal | O que é |\n|---|---|\n| ==Hart== | abdução limitada com quadril e joelho fletidos (adutores retraídos) |\n| Galeazzi | joelho mais baixo com quadris fletidos |\n| Peter-Bade | pregas assimétricas (pouco específico) |\n| Klisic | linha trocanter-EIAS passa abaixo do umbigo |\n\n### Imagem\n| Idade | Exame |\n|---|---|\n| < 4 a 6 meses | ultrassom (Graf) |\n| > 4 a 6 meses | radiografia (Hilgenreiner, Perkins, Shenton, índice acetabular) |\n\n### Bilateral\n- Abdução limitada ==simétrica== passa despercebida: a assimetria é o que chama atenção.\n- Na bilateral: hiperlordose, marcha anserina, períneo alargado.\n\n> **Na prova:** limitação da abdução = ==mais evidente na DDQ unilateral==",
-  "correta": "**Mais evidente na unilateral.**\n- A assimetria salta aos olhos.\n- Na bilateral é simétrica e engana.",
   "incorretas": {
-   "A": "**Relevante.**\n- Sinal mais confiável após 3 meses.",
-   "B": "**Não imperceptível.**\n- Menos evidente, mas presente.",
-   "D": "**Relevante sozinho.**\n- Não depende da lordose."
+   "A": "A limitação da abdução é o sinal clínico mais confiável depois dos primeiros meses.",
+   "B": "Na displasia bilateral a limitação existe, mas é simétrica e menos evidente, não imperceptível.",
+   "D": "A limitação da abdução tem valor sozinha, sem depender da hiperlordose."
   },
+  "conceito": "Depois dos primeiros meses, na **displasia do quadril**, os adutores se retraem e o quadril deixa de ser instável. O sinal mais confiável passa a ser a **limitação da abdução** com o quadril e o joelho fletidos (sinal de Hart).\n\n**Por que ela aparece mais na displasia unilateral**: o examinador compara um lado com o outro. Se só um quadril está luxado, a **assimetria** salta aos olhos: um lado abre bem e o outro não.\n\n**Na displasia bilateral**: os dois lados abrem pouco, por igual. A limitação continua existindo, mas é **simétrica** e passa despercebida com facilidade. Nesses casos, as pistas são outras: hiperlordose, marcha anserina e períneo alargado quando a criança anda; e o índice acetabular na radiografia.\n\n**Os outros sinais tardios**: Galeazzi (só na unilateral), assimetria de pregas (pouco específica) e Klisic.\n\n**Na prova**: limitação da abdução é **mais evidente na displasia unilateral**.",
+  "correta": "Na displasia unilateral, a diferença de abdução entre os dois lados torna o sinal muito mais fácil de perceber.",
   "referencias": [
    "Developmental dysplasia of the hip. https://pmc.ncbi.nlm.nih.gov/articles/PMC3143976/",
    "Developmental Dysplasia of the Hip: Controversies in Management. https://pmc.ncbi.nlm.nih.gov/articles/PMC9276911/",
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 13"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0038": {
@@ -569,67 +569,68 @@
   "conferido": false
  },
  "pediatria-0040": {
-  "conceito": "### Recidiva do pé torto após Ponseti\n| Tipo | Achado | Conduta |\n|---|---|---|\n| estrutural (rígida) | adução, cavo, varo ou equino fixos | ==novos gessos== ± tenotomia |\n| ==dinâmica== | ==supinação do antepé na marcha== (balanço), pé passivamente corrigível | ==transferência do tibial anterior== |\n\n### Transferência do tibial anterior\n- Destino: ==cuneiforme lateral== (ou cuboide em alguns serviços).\n- Pré-requisitos: pé ==flexível==, deformidade fixa já corrigida (gessos antes), idade em geral acima de 2,5 a 3 anos (cuneiforme lateral ossificado).\n- Mecanismo: tibial anterior dominante sobre os fibulares supina o pé ao dorsifletir.\n\n### Causa principal de recidiva\n- ==Não adesão à órtese de abdução== (botas com barra) até 4 a 5 anos.\n\n> **Na prova:** recidiva precoce = ==repetir Ponseti com gessos seriados==",
-  "correta": "**Ponseti com gessos seriados.**\n- A recidiva ainda é flexível e responde.\n- Tenotomia se o equino persistir; órtese depois.",
   "incorretas": {
-   "A": "**Dinâmica em criança maior.**\n- Só com pé corrigido e flexível.",
-   "C": "**Complemento.**\n- Parte do Ponseti se o equino não cede.",
-   "D": "**Último recurso.**\n- Rígido e resistente."
+   "A": "A transferência do tibial anterior é para a supinação dinâmica em criança maior, com o pé já corrigido.",
+   "C": "A tenotomia do calcâneo é uma etapa dentro do Ponseti, quando o equino não corrige com os gessos.",
+   "D": "A correção cirúrgica de partes moles e osso é último recurso, para pés rígidos e resistentes."
   },
+  "conceito": "No **pé torto congênito**, a **recidiva** depois do método de Ponseti acontece sobretudo quando a criança **não usa a órtese** de abdução (botas com barra) como deveria, até os 4 ou 5 anos.\n\n**A recidiva precoce**: costuma ainda ser **flexível** e responde bem ao mesmo tratamento que corrigiu o pé no começo: **repetir o método de Ponseti**, com **gessos seriados**. Se o equino não corrigir, faz-se de novo a **tenotomia percutânea** do tendão calcâneo. Depois, a órtese volta, e a família recebe reforço sobre o uso.\n\n**As outras opções, para outras situações**:\n\n**transferência do tibial anterior**: para a **supinação dinâmica** em criança maior (cerca de 2,5 a 3 anos ou mais), com o pé já corrigido e flexível;\n\n**tenotomia do calcâneo**: é uma etapa do próprio Ponseti, quando o equino não cede nos gessos;\n\n**liberação cirúrgica de partes moles e osso**: último recurso, nos pés rígidos que resistem aos gessos.\n\n**Na prova**: recidiva precoce do pé torto = **repetir Ponseti** com gessos seriados.",
+  "correta": "A recidiva precoce costuma ser flexível e volta a corrigir com novos gessos seriados pelo método de Ponseti.",
   "referencias": [
    "Clubfoot. StatPearls/NCBI Bookshelf. https://www.ncbi.nlm.nih.gov/books/NBK551574/",
    "Pediatric Orthopaedic Society of North America (POSNA). Clubfoot. https://posna.org/physician-education/study-guide/clubfoot",
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 29"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0041": {
-  "conceito": "### Determinantes da marcha (Saunders)\n- Objetivo: reduzir a ==oscilação do centro de massa== e o gasto energético.\n\n| Determinante | Efeito |\n|---|---|\n| ==rotação pélvica (transversa)== | pelve avança (==anterior==) com o membro em balanço: alonga o passo e ==reduz a queda vertical== |\n| inclinação pélvica (coronal) | pelve cai do lado do balanço: reduz a subida no apoio médio |\n| flexão do joelho no apoio | reduz a elevação no apoio médio |\n| mecanismo pé-tornozelo | suaviza a trajetória |\n| mecanismo joelho-tornozelo | idem |\n| deslocamento lateral da pelve | base estreita, valgo fisiológico |\n\n- Centro de massa oscila cerca de 5 cm vertical e 5 cm lateral.\n\n> **Na prova:** rotação pélvica = deslocamento ==anterior== com ==menor oscilação vertical==.",
-  "correta": "**Anterior, menor oscilação vertical.**\n- A pelve gira para frente com o membro em balanço.\n- Alonga o passo sem subir o centro de massa.",
   "incorretas": {
-   "B": "**Direção errada.**\n- Anterior.",
-   "C": "**Plano errado.**\n- Reduz a oscilação vertical.",
-   "D": "**Duplamente errada.**\n- Direção e plano."
+   "B": "O deslocamento produzido pela rotação pélvica é anterior, não posterior.",
+   "C": "O deslocamento é anterior, mas o efeito da rotação pélvica é reduzir a oscilação vertical, não a horizontal.",
+   "D": "Erra a direção e o plano: o deslocamento é anterior e reduz a oscilação vertical."
   },
+  "conceito": "Na marcha, o **centro de massa** sobe e desce e se desloca para os lados; quanto mais oscila, mais energia se gasta. **Saunders** descreveu os **determinantes da marcha**, mecanismos que **achatam** essa trajetória:\n\n**rotação pélvica (plano transverso)**: a pelve **gira para a frente** do lado do membro em balanço. Junto com a flexão do quadril, isso desloca o quadril **para anterior**, **alonga o passo** sem precisar abrir tanto as pernas, e **diminui a queda vertical** do centro de massa;\n\n**inclinação pélvica (plano coronal)**: a pelve cai um pouco do lado do balanço, reduzindo a subida no apoio médio;\n\n**flexão do joelho no apoio**: também reduz a elevação no apoio médio;\n\n**mecanismos do pé e do tornozelo e do joelho com o tornozelo**: suavizam a trajetória;\n\n**deslocamento lateral da pelve**: com a base estreita e o valgo fisiológico do joelho, reduz a oscilação para os lados.\n\nNa marcha normal, o centro de massa oscila cerca de 5 cm no sentido vertical e cerca de 5 cm para os lados.\n\n**Na prova**: rotação pélvica = deslocamento **anterior** com **menor oscilação vertical** do tronco.",
+  "correta": "A pelve gira para a frente com o membro em balanço, alongando o passo e reduzindo a oscilação vertical do centro de massa.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Gait. https://posna.org/physician-education/study-guide/gait",
    "Quantification of pelvic rotation as a determinant of gait. Arch Phys Med Rehabil. 2001. https://pubmed.ncbi.nlm.nih.gov/11239313/",
    "Leite, Faloppa, Propedêutica Ortopédica e Traumatológica, 1ª edição, Cap. 20"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0042": {
-  "conceito": "### Paralisia cerebral: tipo × sistema\n| Tipo | Sistema | Clínica |\n|---|---|---|\n| espástico | ==piramidal== (córtex motor, trato corticoespinal) | hipertonia velocidade-dependente, hiperreflexia |\n| ==discinético (atetoide, distônico)== | ==extrapiramidal== (núcleos da base) | movimentos involuntários lentos, contorcidos, tônus flutuante |\n| atáxico | cerebelar | dismetria, tremor de intenção, equilíbrio |\n| misto | vários | |\n\n### Associações\n- Atetoide: ==kernicterus== (hiperbilirrubinemia), asfixia a termo.\n- Diplegia espástica: prematuridade, leucomalácia periventricular.\n\n### Cirurgia ortopédica\n- Resultados mais previsíveis no ==espástico==; cautela nos discinéticos.\n\n> **Na prova:** lesão dos núcleos da base por kernicterus = ==atetose==",
-  "correta": "**Atetose.**\n- Núcleos da base, clássica do kernicterus.\n- Movimentos lentos, contorcidos, involuntários.",
   "incorretas": {
-   "A": "**Cerebelo.**\n- Desequilíbrio e dismetria.",
-   "C": "**Também discinética.**\n- Posturas sustentadas; a questão cobra a atetose do kernicterus.",
-   "D": "**Piramidal.**\n- Hipertonia velocidade-dependente."
+   "A": "A ataxia vem da lesão do cerebelo, não dos núcleos da base.",
+   "C": "A distonia também é uma discinesia dos núcleos da base, mas o quadro classicamente ligado ao kernicterus é a atetose.",
+   "D": "A espasticidade vem da lesão piramidal."
   },
+  "conceito": "Na **paralisia cerebral**, o tipo de distúrbio do movimento indica onde está a lesão:\n\n**espasticidade**: lesão **piramidal** (córtex motor e trato corticoespinal); hipertonia que aumenta com a velocidade do movimento;\n\n**discinesias**: lesão dos **núcleos da base** (sistema extrapiramidal); dois padrões:\n\n**atetose**: movimentos **involuntários, lentos e contorcidos**, sobretudo nas mãos e na face, com tônus que oscila;\n\n**distonia**: contrações sustentadas que fixam **posturas anormais**;\n\n**ataxia**: lesão do **cerebelo**; desequilíbrio, dismetria e tremor de intenção.\n\n**O kernicterus**: a bilirrubina muito alta no recém-nascido se deposita nos **núcleos da base**, e o quadro clássico resultante é a **atetose**, muitas vezes com surdez e alteração do olhar. A asfixia no bebê a termo também pode lesar os núcleos da base.\n\n**Na prova**: lesão dos gânglios da base por kernicterus = **atetose**.",
+  "correta": "A atetose é o distúrbio clássico da lesão dos núcleos da base pelo kernicterus, com movimentos lentos, contorcidos e involuntários.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Cerebral Palsy. https://posna.org/physician-education/study-guide/cerebral-palsy",
    "Cerebral palsy in children: A clinical practice review. https://pubmed.ncbi.nlm.nih.gov/39168782/",
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 31"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0043": {
-  "conceito": "### Epifisiólise: fatores\n| Tipo | Fator |\n|---|---|\n| mecânico | ==obesidade==, ==retroversão relativa (menos anteversão)==, ==coxa vara (menor ângulo cervicodiafisário)==, fise mais oblíqua, estirão |\n| endócrino | hipotireoidismo, deficiência de GH (uso de GH), hipogonadismo, osteodistrofia renal, radioterapia |\n\n- Pedir TSH em ==< 10 anos==, baixa estatura, ou bilateral.\n\n### Classificações\n| Critério | Tipos |\n|---|---|\n| Loder (estabilidade) | estável (anda) × ==instável== (não anda; necrose em até 50%) |\n| Southwick (ângulo) | leve < 30°, moderado 30 a 50°, grave > 50° |\n| tempo | aguda < 3 semanas, crônica, crônica agudizada |\n\n### Tratamento\n- ==Fixação in situ== com um parafuso canulado central.\n- Contralateral profilática: < 10 anos, endocrinopatia.\n\n### Técnica do parafuso\n- ==Um parafuso canulado== central, perpendicular à fise, no centro da epífise em AP e perfil.\n- ==Evitar o quadrante anterossuperior== (e o posterossuperior): artérias epifisárias laterais (circunflexa medial).\n- Ponta a 5 mm do osso subcondral; nunca penetrar a articulação.\n- Ponto de entrada ==anterior== no colo (a epífise escorregou para trás).\n\n> **Na prova:** parafuso na epifisiólise deve evitar o quadrante ==anterossuperior==",
-  "correta": "**Anterossuperior.**\n- Região de risco vascular da epífise.\n- Parafuso central, perpendicular à fise.",
   "incorretas": {
-   "A": "**Não é o de risco.**\n- Anteroinferior.",
-   "C": "**Não é o de risco cobrado.**\n- Posteroinferior.",
-   "D": "**Gabarito indica o anterossuperior.**\n- Evitar o superior como um todo."
+   "A": "O quadrante anteroinferior não é o apontado como zona de risco vascular.",
+   "C": "O quadrante posteroinferior não é o apontado como zona de risco vascular.",
+   "D": "Pela anatomia clássica, o posterossuperior é a zona de maior risco vascular, mas o gabarito marcou o anterossuperior."
   },
+  "conceito": "Na **epifisiólise proximal do fêmur**, o tratamento padrão é a **fixação in situ**: um **parafuso canulado** que segura a epífise onde ela está, sem tentar reduzir, para não lesar os vasos.\n\n**A técnica**:\n\n**um parafuso**, no **centro da epífise** nas duas incidências (anteroposterior e perfil) e **perpendicular à fise**;\n\ncomo a epífise escorregou para **posterior**, o ponto de entrada fica na face **anterior** do colo, para o parafuso chegar ao centro;\n\na ponta fica a cerca de **5 mm** do osso subcondral, **sem penetrar** a articulação (risco de condrólise).\n\n**A irrigação**: a cabeça femoral recebe sangue sobretudo das **artérias epifisárias laterais**, ramos da circunflexa femoral medial, que entram pela região **superior e posterior** do colo. Um parafuso fora do centro, sobretudo na parte superior da epífise, pode lesá-las e causar **necrose**.\n\n**A questão**: o gabarito pede para evitar o quadrante **anterossuperior**. Na descrição anatômica clássica (Brodetti), os vasos epifisários laterais ficam no quadrante **posterossuperior**, que é o mais citado como zona de risco vascular.\n\n**Na prova**: o gabarito marca o quadrante **anterossuperior**; a regra prática é manter o parafuso **central** e longe da parte superior da epífise.",
+  "alerta": "Na anatomia clássica de Brodetti, as artérias epifisárias laterais entram pela região posterossuperior, e é esse quadrante que a maioria das referências aponta como o de maior risco vascular. O gabarito marca o anterossuperior. Guarde a regra que vale nos dois casos: parafuso central, perpendicular à fise e longe da parte superior da epífise.",
+  "correta": "O gabarito oficial é o quadrante anterossuperior; a anatomia clássica aponta o posterossuperior como o de maior risco vascular, e a regra prática é manter o parafuso central.",
   "referencias": [
    "Slipped capital femoral epiphysis: current management strategies. https://pmc.ncbi.nlm.nih.gov/articles/PMC6460813/",
    "SCFE. Orthobullets. https://www.orthobullets.com/pediatrics/4038/slipped-capital-femoral-epiphysis-scfe",
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 15"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0044": {
@@ -644,17 +645,17 @@
   "conferido": false
  },
  "pediatria-0045": {
-  "conceito": "### Deficiência femoral focal proximal (DFFP)\n- Espectro das deficiências congênitas do fêmur; ==unilateral== em geral.\n- Coxa curta, ==quadril em flexão, abdução e rotação externa==.\n- Associações: ==hemimelia fibular== (cerca de 50%), deficiência do LCA, pé com raios ausentes.\n\n### Aitken\n| Tipo | Cabeça femoral | Acetábulo |\n|---|---|---|\n| A | presente | normal |\n| B | presente, sem conexão ao colo | adequado |\n| C | ausente | displásico |\n| D | ausente | ausente |\n\n### Tratamento\n| Situação | Opção |\n|---|---|\n| discrepância prevista < 20 cm, quadril estável | alongamento, epifisiodese |\n| grave | ==Van Nes== (rotacionplastia), artrodese do joelho + prótese, Syme |\n\n> **Na prova:** anomalia mais associada à DFFP = ==hemimelia fibular== (cerca de 50%).",
-  "correta": "**Hemimelia fibular.**\n- Cerca de metade dos casos.\n- Mesmo espectro de deficiência pós-axial.",
   "incorretas": {
-   "A": "**Parte do espectro.**\n- Não é a anomalia associada mais comum.",
-   "C": "**Não é típico.**\n- Pé na hemimelia é equinovalgo.",
-   "D": "**NF1.**\n- Sem relação típica."
+   "A": "A coxa vara faz parte do espectro da própria deficiência femoral, não é a anomalia associada mais comum.",
+   "C": "O pé torto não é a associação típica; o pé da hemimelia fibular é equinovalgo.",
+   "D": "A pseudartrose congênita da tíbia se associa à neurofibromatose, não à deficiência femoral."
   },
+  "conceito": "A **deficiência femoral focal proximal** é uma falha de formação do fêmur proximal: coxa curta, quadril em flexão, abdução e rotação externa, em geral de um lado só.\n\n**A anomalia associada mais comum**: a **hemimelia fibular**, presente em **cerca de metade** dos casos. As duas fazem parte do mesmo espectro de deficiências do membro inferior.\n\n**Outras associações**: deficiência dos **ligamentos cruzados** (instabilidade do joelho), pé com **raios laterais ausentes** e coalizão tarsal.\n\n**A classificação de Aitken** (A a D) olha a presença da cabeça do fêmur e do acetábulo e ajuda a planejar o tratamento:\n\n**discrepância menor e quadril estável**: alongamento e epifisiodese do outro lado;\n\n**formas graves**: rotacionplastia de **Van Nes**, artrodese do joelho com prótese ou amputação de Syme.\n\n**As alternativas que não são a associação típica**: a **coxa vara** faz parte do próprio espectro da deficiência femoral; o **pé torto** não é típico (o pé da hemimelia fibular é **equinovalgo**); e a **pseudartrose congênita da tíbia** se associa à neurofibromatose.\n\n**Na prova**: anomalia mais associada à deficiência femoral focal proximal = **hemimelia fibular**.",
+  "correta": "A hemimelia fibular acompanha cerca de metade dos casos de deficiência femoral focal proximal.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). PFFD – Proximal Focal Femoral Deficiency. https://posna.org/physician-education/study-guide/pffd-proximal-focal-femoral-deficiency"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0046": {
