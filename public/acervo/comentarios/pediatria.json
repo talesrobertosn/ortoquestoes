@@ -4508,103 +4508,103 @@
   "formato": "corrido"
  },
  "pediatria-0414": {
-  "conceito": "### Legg-Calvé-Perthes: fases (Waldenström)\n| Fase | Achado |\n|---|---|\n| inicial (necrose) | cabeça densa, pequena; fratura subcondral (Salter-Thompson) |\n| ==fragmentação== | epífise fragmentada, colapso |\n| reossificação | osso novo |\n| residual | remodelada |\n\n### Classificações\n| Classificação | Incidência | Fase | Critério |\n|---|---|---|---|\n| ==Herring (pilar lateral)== | ==AP== | ==fragmentação== | altura do pilar lateral: A (100%), B (> 50%), B/C, C (< 50%) |\n| Catterall | AP e perfil | | quanto da epífise acometida (I a IV) + sinais de risco |\n| Salter-Thompson | perfil | inicial | extensão da fratura subcondral |\n| Stulberg | AP e perfil | ==maturidade== | congruência e esfericidade (prognóstico de artrose) |\n\n### Prognóstico\n- Pior: início > 8 anos, Herring C, sinais de cabeça em risco.\n\n### Histologia por fase\n| Fase | Histologia |\n|---|---|\n| ==necrose== | ==lacunas vazias== ou osteócitos com ==núcleo picnótico==; medula necrótica |\n| fragmentação | revascularização, reabsorção osteoclástica, tecido fibrovascular |\n| reossificação | osso novo (woven) sobre trabéculas mortas |\n| remodelação/residual | osso lamelar |\n\n> **Na prova:** osteócitos ausentes ou picnóticos = fase de ==necrose==",
-  "correta": "**Necrose.**\n- Lacunas vazias, núcleos picnóticos.\n- Antes da revascularização.",
   "incorretas": {
-   "A": "**Fragmentação.**\n- Revascularização e reabsorção.",
-   "C": "**Sequela.**\n- Osso remodelado.",
-   "D": "**Remodelação.**\n- Osso lamelar novo."
+   "A": "Na fragmentação já há revascularização e reabsorção do osso morto pelos osteoclastos.",
+   "C": "Na fase de sequela o osso já está remodelado.",
+   "D": "Na remodelação há osso lamelar novo, não osteócitos mortos."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **doença de Legg-Calvé-Perthes**, a cabeça femoral perde a irrigação e passa por fases que se veem tanto na radiografia quanto na **histologia**:\n\n**necrose (fase inicial)**: o osso morre. Na histologia, as **lacunas ficam vazias** (sem osteócitos) ou os osteócitos têm **núcleo picnótico** (encolhido e escuro, sinal de morte celular); a medula também está necrótica. Na radiografia, a cabeça fica **densa** e pequena, e pode aparecer a fratura subcondral (sinal do crescente);\n\n**fragmentação**: começa a **revascularização**. Vasos e tecido fibrovascular invadem o osso morto, e os osteoclastos o **reabsorvem**; a epífise se fragmenta e pode colapsar;\n\n**reossificação**: osso novo, primeiro imaturo (woven), é depositado sobre as trabéculas mortas;\n\n**remodelação (residual)**: o osso novo vira **osso lamelar**, e a cabeça assume a forma final, que pode deixar sequela.\n\n**Por que a fase de necrose é traiçoeira**: o osso morto ainda tem a forma normal; o colapso só vem na fragmentação, quando ele é reabsorvido. É nessa janela que a contenção busca manter a cabeça dentro do acetábulo.\n\n**Na prova**: osteócitos ausentes ou com núcleo picnótico = fase de **necrose**.",
+  "correta": "Na fase de necrose o osso está morto: as lacunas ficam vazias ou os osteócitos têm núcleo picnótico.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0415": {
-  "conceito": "### Epifisiólise: fatores\n| Tipo | Fator |\n|---|---|\n| mecânico | ==obesidade==, ==retroversão relativa (menos anteversão)==, ==coxa vara (menor ângulo cervicodiafisário)==, fise mais oblíqua, estirão |\n| endócrino | hipotireoidismo, deficiência de GH (uso de GH), hipogonadismo, osteodistrofia renal, radioterapia |\n\n- Pedir TSH em ==< 10 anos==, baixa estatura, ou bilateral.\n\n### Classificações\n| Critério | Tipos |\n|---|---|\n| Loder (estabilidade) | estável (anda) × ==instável== (não anda; necrose em até 50%) |\n| Southwick (ângulo) | leve < 30°, moderado 30 a 50°, grave > 50° |\n| tempo | aguda < 3 semanas, crônica, crônica agudizada |\n\n### Tratamento\n- ==Fixação in situ== com um parafuso canulado central.\n- Contralateral profilática: < 10 anos, endocrinopatia.\n\n### Técnica do parafuso\n- ==Um parafuso canulado== central, perpendicular à fise, no centro da epífise em AP e perfil.\n- ==Evitar o quadrante anterossuperior== (e o posterossuperior): artérias epifisárias laterais (circunflexa medial).\n- Ponta a 5 mm do osso subcondral; nunca penetrar a articulação.\n- Ponto de entrada ==anterior== no colo (a epífise escorregou para trás).\n\n### Clínica da epifisiólise\n- Adolescente obeso, dor no quadril, ==coxa ou joelho== (dor referida engana).\n- ==Claudicação==, ==Trendelenburg==, ==limitação da rotação interna, abdução e flexão==.\n- ==Marcha com rotação EXTERNA== do membro.\n- ==Drehmann==: rotação externa obrigatória ao fletir o quadril.\n\n### Loder (1993)\n| Tipo | Definição | Necrose |\n|---|---|---|\n| estável | anda (com ou sem muletas) | cerca de ==0%== |\n| ==instável== | ==não consegue andar== | até ==47%== |\n\n- Melhor preditor de necrose que a cronologia (aguda/crônica) ou o grau de desvio.\n\n> **Na prova:** preditor de necrose (Loder) = ==instabilidade==",
-  "correta": "**Instabilidade.**\n- Instável: não anda.\n- Necrose em até 47%.",
   "incorretas": {
-   "A": "**Idade.**\n- Não é o critério de Loder.",
-   "C": "**Grau de desvio.**\n- Southwick; pior preditor.",
-   "D": "**Força do trauma.**\n- Não entra na classificação."
+   "A": "A idade não é o critério de Loder para prever a necrose.",
+   "C": "O grau de desvio, medido por Southwick, prevê a necrose pior que a estabilidade.",
+   "D": "A força do trauma não entra na classificação de Loder."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **epifisiólise proximal do fêmur**, a complicação mais temida é a **osteonecrose** da cabeça femoral. **Loder** (1993) mostrou que o melhor fator para prevê-la é a **estabilidade**, avaliada pela clínica:\n\n**estável**: a criança **consegue andar**, com ou sem muletas; a necrose é praticamente **zero**;\n\n**instável**: a criança **não consegue andar**, nem com muletas, pela dor; a necrose chega a cerca de **47%**.\n\n**Por que a instabilidade importa**: na forma instável, a epífise se separou de forma abrupta e pode ter **lesado ou dobrado os vasos do retináculo** posterior; o hematoma intracapsular também aumenta a pressão sobre eles.\n\n**O que prevê pior**: a classificação de Loder é melhor preditora que a classificação pelo tempo (aguda, crônica, crônica agudizada) e que o **grau de desvio** (ângulo de Southwick). A idade e a força do trauma não fazem parte do critério.\n\n**A conduta na instável**: urgência, com fixação in situ sem manobras forçadas, descompressão da cápsula (técnica de Parsch) ou redução aberta com luxação cirúrgica (Dunn modificado) em centros experientes.\n\n**Na prova**: o fator preditivo de osteonecrose segundo Loder é a **instabilidade**.",
+  "correta": "A instabilidade, ou seja, não conseguir andar, é o melhor preditor de necrose: até cerca de 47% contra quase zero na forma estável.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0416": {
-  "conceito": "### Doença de Blount\n| Forma | Idade | Perfil |\n|---|---|---|\n| infantil | < 4 anos | obesa, marcha precoce, bilateral |\n| juvenil/adolescente | > 10 anos | obeso, unilateral, varo menor |\n\n### Langenskiöld (6 estágios)\n| Estágio | Achado |\n|---|---|\n| I | irregularidade metafisária medial, bico |\n| II | depressão em degrau |\n| III | degrau mais profundo, fragmentação |\n| ==IV== | ==ponte (barra) óssea medial através da fise== começa |\n| V | epífise dupla (fratura) |\n| VI | fechamento medial completo |\n\n### Ângulo metafisário-diafisário (Drennan)\n- > 16°: Blount provável; < 10°: fisiológico.\n\n### Tratamento\n- < 3 anos, estágio I-II: órtese.\n- Crescimento guiado, osteotomia valgizante antes dos 4 anos; ressecção da barra, elevação do planalto nos tardios.\n\n### Perfil da Blount infantil\n- ==Marcha precoce== (antes de 1 ano), ==sobrepeso/obesidade==, afrodescendentes, bilateral.\n- Carga sobre a fise medial imatura inibe o crescimento (Hueter-Volkmann).\n\n### Diferenciais do geno varo\n| Diagnóstico | Pista |\n|---|---|\n| fisiológico | simétrico, < 2 anos, ângulo MD < 10° |\n| ==displasia fibrocartilaginosa focal== | unilateral, lesão radiolucente na metáfise ==medial proximal== da tíbia (pata de ganso) |\n| ==acondroplasia== | fíbula longa, baixa estatura rizomélica |\n| raquitismo | fises alargadas, metáfise em taça, fosfatase alta |\n| displasias (metafisária de Schmid) | fises irregulares, bilateral |\n| sequela de trauma ou infecção | barra fisária |\n\n> **Na prova:** diferenciais do Blount = ==displasia fibrocartilaginosa focal e acondroplasia==",
-  "correta": "**Displasia fibrocartilaginosa e acondroplasia.**\n- Ambas causam varo tibial proximal.\n- Radiografia distingue.",
   "incorretas": {
-   "B": "**Gaucher.**\n- Infiltração medular, não varo.",
-   "C": "**Picnodisostose.**\n- Osteosclerose, fraturas.",
-   "D": "**Displasia diafisária.**\n- Camurati-Engelmann; espessamento diafisário."
+   "B": "A doença de Gaucher infiltra a medula óssea e não causa varo tibial proximal típico.",
+   "C": "A picnodisostose cursa com osso denso e fraturas, não com varo tibial semelhante ao da Blount.",
+   "D": "A acondroplasia está certa, mas a displasia diafisária espessa as diáfises e não imita a Blount."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na criança com **joelho varo**, nem tudo é Blount. Os diagnósticos diferenciais se separam pela idade, simetria e radiografia:\n\n**varo fisiológico**: simétrico, abaixo de 2 anos, ângulo metafisário-diafisário de Drennan **abaixo de 10°**; corrige sozinho;\n\n**doença de Blount**: obesidade, marcha precoce, bico metafisário medial, ângulo acima de 16°;\n\n**displasia fibrocartilaginosa focal**: em geral **unilateral**, com uma **lesão radiolucente** na **metáfise medial proximal da tíbia**, na inserção da pata de ganso; o tecido fibrocartilaginoso freia o lado medial. Muitas vezes melhora sozinha;\n\n**acondroplasia**: baixa estatura **rizomélica**, com a **fíbula relativamente longa**, que puxa a tíbia em varo;\n\n**raquitismo**: fises alargadas, metáfises em taça, fosfatase alcalina alta;\n\n**displasias metafisárias** (como a de Schmid): fises irregulares, bilateral;\n\n**sequela de trauma ou infecção**: barra fisária medial.\n\n**O que não entra**: doença de Gaucher (infiltração da medula), picnodisostose (osso denso e fraturas) e displasia diafisária de Camurati-Engelmann (espessamento das diáfises) não são diferenciais típicos do varo tibial proximal.\n\n**Na prova**: os diferenciais da Blount incluem a **displasia fibrocartilaginosa proximal** e a **acondroplasia**.",
+  "correta": "A displasia fibrocartilaginosa focal da tíbia proximal e a acondroplasia causam varo tibial e entram no diagnóstico diferencial da Blount.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0417": {
-  "conceito": "### DDQ: exame conforme a idade\n| Idade | Achado útil |\n|---|---|\n| recém-nascido a 2-3 meses | ==Ortolani== (reduz) e ==Barlow== (luxa) |\n| ==após 3 meses== | ==limitação da abdução (Hart)==, Galeazzi, assimetria de pregas |\n| marcha | Trendelenburg, claudicação, hiperlordose (bilateral) |\n\n### Sinais\n| Sinal | O que é |\n|---|---|\n| ==Hart== | abdução limitada com quadril e joelho fletidos (adutores retraídos) |\n| Galeazzi | joelho mais baixo com quadris fletidos |\n| Peter-Bade | pregas assimétricas (pouco específico) |\n| Klisic | linha trocanter-EIAS passa abaixo do umbigo |\n\n### Imagem\n| Idade | Exame |\n|---|---|\n| < 4 a 6 meses | ultrassom (Graf) |\n| > 4 a 6 meses | radiografia (Hilgenreiner, Perkins, Shenton, índice acetabular) |\n\n### Bilateral\n- Abdução limitada ==simétrica== passa despercebida: a assimetria é o que chama atenção.\n- Na bilateral: hiperlordose, marcha anserina, períneo alargado.\n\n> **Na prova:** principal sinal após os 3 meses = ==limitação da abdução==",
-  "correta": "**Limitação da abdução.**\n- Sinal mais confiável após 3 meses.\n- Adutores retraídos pelo quadril luxado.",
   "incorretas": {
-   "B": "**Galeazzi.**\n- Falha na bilateral.",
-   "C": "**Pregas.**\n- Pouco específicas.",
-   "D": "**Discrepância.**\n- Consequência, não sinal principal; falha na bilateral."
+   "B": "O teste de Galeazzi falha na forma bilateral, porque os dois joelhos ficam na mesma altura.",
+   "C": "A assimetria de pregas é pouco específica e aparece em muitos bebês normais.",
+   "D": "A discrepância de membros é consequência da luxação e também falha na forma bilateral."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **displasia do desenvolvimento do quadril**, o sinal mais útil muda com a idade:\n\n**recém-nascido até 2 a 3 meses**: os testes de **Ortolani** (o quadril luxado reduz) e **Barlow** (o quadril instável luxa);\n\n**depois de 3 meses**: os tecidos se adaptam, os testes de instabilidade ficam negativos e o sinal mais confiável passa a ser a **limitação da abdução** com quadril e joelho fletidos (sinal de **Hart**), porque os **adutores encurtam** com a cabeça luxada;\n\n**na criança que anda**: claudicação, Trendelenburg e, na forma bilateral, hiperlordose e marcha anserina.\n\n**Por que os outros sinais são menos confiáveis aos 2 anos**:\n\n**Galeazzi** (joelho mais baixo do lado luxado com os quadris fletidos): **falha na forma bilateral**, porque os dois lados ficam iguais;\n\n**assimetria de pregas**: pouco específica, comum em bebês normais;\n\n**discrepância de membros**: é uma consequência, também falha na forma bilateral.\n\n**Na forma bilateral**: a abdução fica limitada dos **dois lados de forma simétrica** e pode passar despercebida; é preciso comparar com o normal esperado.\n\n**Na prova**: o principal sinal da displasia do quadril aos 2 anos é a **limitação da abdução**.",
+  "correta": "Depois dos 3 meses, os adutores encurtam com a cabeça luxada, e a limitação da abdução vira o sinal mais confiável.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0418": {
-  "conceito": "### Recidiva do pé torto após Ponseti\n| Tipo | Achado | Conduta |\n|---|---|---|\n| estrutural (rígida) | adução, cavo, varo ou equino fixos | ==novos gessos== ± tenotomia |\n| ==dinâmica== | ==supinação do antepé na marcha== (balanço), pé passivamente corrigível | ==transferência do tibial anterior== |\n\n### Transferência do tibial anterior\n- Destino: ==cuneiforme lateral== (ou cuboide em alguns serviços).\n- Pré-requisitos: pé ==flexível==, deformidade fixa já corrigida (gessos antes), idade em geral acima de 2,5 a 3 anos (cuneiforme lateral ossificado).\n- Mecanismo: tibial anterior dominante sobre os fibulares supina o pé ao dorsifletir.\n\n### Causa principal de recidiva\n- ==Não adesão à órtese de abdução== (botas com barra) até 4 a 5 anos.\n\n### Órtese de abdução (Denis Browne / botas com barra)\n| Pé | Rotação externa |\n|---|---|\n| ==afetado== | ==60 a 70°== |\n| ==normal== (unilateral) | ==30 a 40°== |\n\n- Barra na largura dos ombros; dorsiflexão de 10 a 15°.\n- ==23 h/dia por 3 meses==, depois ==noturna até 4 a 5 anos==.\n\n### Sequência de Ponseti (CAVE)\n| Ordem | Deformidade | Manobra |\n|---|---|---|\n| 1 | ==Cavo== | ==supinar o antepé== e ==elevar (dorsifletir) o 1º metatarso== (alinhar antepé ao retropé) |\n| 2 | Aduto | abduzir o pé com contrapressão na cabeça do tálus |\n| 3 | Varo | corrige junto com a abdução (calcâneo roda sob o tálus) |\n| 4 | Equino | por último; ==tenotomia percutânea== do tendão calcâneo se < 15° de dorsiflexão |\n\n- Nunca pronar o antepé: piora o cavo.\n- Nunca pressionar o calcâneo (bloqueia a rotação).\n\n> **Na prova:** primeiro gesso de Ponseti = ==cavo do antepé==",
-  "correta": "**Cavo do antepé.**\n- Supinar o antepé e elevar o 1º MT.\n- Alinha antepé e retropé.",
   "incorretas": {
-   "A": "**Varo.**\n- Corrige com a abdução.",
-   "C": "**Equino.**\n- Por último, com tenotomia.",
-   "D": "**Adução.**\n- Etapa seguinte."
+   "A": "O varo do retropé é corrigido junto com a abdução, nos gessos seguintes.",
+   "C": "O equino é corrigido por último, muitas vezes com tenotomia.",
+   "D": "A adução do antepé é a etapa seguinte à correção do cavo."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "No **método de Ponseti**, cada gesso corrige uma parte da deformidade, na ordem da sigla **CAVE**:\n\n**1º gesso, cavo**: o antepé está **pronado** em relação ao retropé e o 1º metatarso está abaixado. A manobra **supina o antepé** e **eleva o 1º metatarso**, alinhando antepé e retropé. É o **cavo do antepé** que se corrige primeiro;\n\n**gessos seguintes, aduto e varo**: o pé é abduzido aos poucos, com contrapressão na face lateral da cabeça do tálus; o calcâneo roda por baixo do tálus e o varo se corrige junto;\n\n**último passo, equino**: depois de cerca de 60 a 70° de abdução, se a dorsiflexão não passar de cerca de 15°, faz-se a **tenotomia percutânea do tendão calcâneo** e um último gesso por cerca de 3 semanas.\n\n**Quantos gessos**: em geral 5 a 7, trocados semanalmente, desde as primeiras semanas de vida.\n\n**Os erros a evitar**: pronar o antepé (piora o cavo) e pressionar o calcâneo (bloqueia sua rotação).\n\n**Depois dos gessos**: órtese de abdução 23 horas por dia por 3 meses e depois à noite até 4 a 5 anos.\n\n**Na prova**: o primeiro gesso de Ponseti corrige o **cavo do antepé**.",
+  "correta": "O primeiro gesso supina o antepé e eleva o 1º metatarso, corrigindo o cavo e alinhando antepé e retropé.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0419": {
-  "conceito": "### Osteogênese imperfeita (Sillence modificada)\n| Tipo | Gravidade | Detalhe |\n|---|---|---|\n| I | leve | ==escleras azuis==, surdez, colágeno em quantidade reduzida |\n| II | letal perinatal | fraturas múltiplas intrauterinas |\n| III | grave progressiva | deformidade, baixa estatura, dentinogênese |\n| IV | moderada | escleras normais |\n| ==V== | moderada | ==calo hiperplásico== (simula ==osteossarcoma==), ==calcificação da membrana interóssea== do antebraço, luxação da cabeça do rádio; IFITM5 |\n| VI em diante | variadas | genes não colágenos |\n\n### Tratamento\n- ==Bisfosfonato== (pamidronato, zoledronato).\n- Hastes telescópicas (Fassier-Duval, Sheffield) nas deformidades e fraturas repetidas.\n\n### Subtipos A e B\n- Tipos I e IV subdividem-se pela dentina: ==A (dentinogênese normal)== e ==B (dentinogênese imperfeita)==.\n- Tipo IB: escleras azuis, colágeno ==tipo I==, ==dentinogênese anormal==, ==autossômica dominante==.\n\n> **Na prova:** Sillence IB = colágeno I, ==dentinogênese anormal==, AD",
-  "correta": "**Colágeno I, dentinogênese anormal, AD.**\n- B indica dente afetado.\n- Tipo I é dominante.",
   "incorretas": {
-   "A": "**Dentinogênese normal.**\n- Seria o IA.",
-   "B": "**Colágeno II e AR.**\n- OI é colágeno tipo I.",
-   "C": "**Colágeno II e AR.**\n- Tipo e herança errados."
+   "A": "Colágeno tipo I e herança dominante estão certos, mas dentinogênese normal define o subtipo IA, não o IB.",
+   "B": "A osteogênese imperfeita é defeito do colágeno tipo I, e o tipo I é dominante, não recessivo.",
+   "C": "A dentinogênese anormal está certa, mas o colágeno é o tipo I e a herança é dominante."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **osteogênese imperfeita** vem, na maioria dos casos, de mutações no **colágeno tipo I** (COL1A1 e COL1A2). A classificação de **Sillence** separa os tipos pela gravidade, e os tipos I e IV ainda se subdividem pela **dentina**:\n\n**subtipo A**: **dentinogênese normal**;\n\n**subtipo B**: **dentinogênese imperfeita**: dentes acinzentados ou amarronzados, translúcidos, que se desgastam e quebram fácil, porque a dentina também depende do colágeno tipo I.\n\n**O tipo I** é a forma leve: **escleras azuis**, surdez em parte dos adultos, defeito **quantitativo** do colágeno tipo I e herança **autossômica dominante**.\n\n**Juntando**: o **tipo IB** tem escleras azuis, defeito do colágeno **tipo I**, **dentinogênese anormal** e herança **autossômica dominante**.\n\n**Lembrete sobre o colágeno**: o colágeno **tipo II** é o da cartilagem e do vítreo; suas mutações causam displasias como a espondiloepifisária, a síndrome de Stickler e a Kniest, não a osteogênese imperfeita.\n\n**Na prova**: Sillence IB = colágeno **tipo I**, **dentinogênese anormal** e **autossômica dominante**.",
+  "correta": "O tipo IB tem escleras azuis, defeito do colágeno tipo I, dentinogênese imperfeita e herança autossômica dominante.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0420": {
-  "conceito": "### Paralisia cerebral: tipo × sistema\n| Tipo | Sistema | Clínica |\n|---|---|---|\n| espástico | ==piramidal== (córtex motor, trato corticoespinal) | hipertonia velocidade-dependente, hiperreflexia |\n| ==discinético (atetoide, distônico)== | ==extrapiramidal== (núcleos da base) | movimentos involuntários lentos, contorcidos, tônus flutuante |\n| atáxico | cerebelar | dismetria, tremor de intenção, equilíbrio |\n| misto | vários | |\n\n### Associações\n- Atetoide: ==kernicterus== (hiperbilirrubinemia), asfixia a termo.\n- Diplegia espástica: prematuridade, leucomalácia periventricular.\n\n### Cirurgia ortopédica\n- Resultados mais previsíveis no ==espástico==; cautela nos discinéticos.\n\n### Discinéticos (SCPE)\n| Subtipo | Clínica |\n|---|---|\n| ==distônico== | ==hipocinesia e hipertonia==, posturas anormais sustentadas; o ==mais comum== dos discinéticos |\n| coreoatetoide | hipercinesia, tônus reduzido, movimentos rápidos e contorcidos |\n\n> **Na prova:** atetose = lesão dos ==gânglios da base==",
-  "correta": "**Gânglios da base.**\n- Sistema extrapiramidal.\n- Kernicterus é causa clássica.",
   "incorretas": {
-   "A": "**Cerebelo.**\n- Ataxia.",
-   "B": "**Hipocampo.**\n- Memória, não movimento.",
-   "D": "**Neurônio motor superior.**\n- Espasticidade."
+   "A": "A lesão do cerebelo causa ataxia, não atetose.",
+   "B": "O hipocampo está ligado à memória, não ao controle do movimento.",
+   "D": "A lesão do neurônio motor superior causa espasticidade."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **paralisia cerebral**, o tipo de distúrbio do movimento aponta o local da lesão:\n\n**espasticidade**: lesão do **neurônio motor superior** (sistema piramidal: córtex motor e trato corticoespinal); hipertonia que aumenta com a velocidade e reflexos exaltados;\n\n**atetose** (e distonia): lesão dos **gânglios (núcleos) da base**, o sistema **extrapiramidal**; movimentos **involuntários**, lentos e contorcidos, sobretudo das mãos e da face, com tônus que oscila;\n\n**ataxia**: lesão do **cerebelo**; falta de coordenação, dismetria e problema de equilíbrio.\n\n**As causas clássicas da atetose**: o **kernicterus** (bilirrubina alta que se deposita nos núcleos da base, como na incompatibilidade Rh) e a **asfixia** no bebê a termo.\n\n**O hipocampo**: está ligado à **memória**, não ao controle do movimento.\n\n**Para o ortopedista**: a cirurgia é mais previsível no espástico; no atetoide, o tônus variável torna o resultado imprevisível, e alongamentos podem gerar a deformidade oposta.\n\n**Na prova**: a atetose vem de lesão dos **gânglios da base**.",
+  "correta": "A atetose é um distúrbio extrapiramidal, por lesão dos gânglios da base, e o kernicterus é a causa clássica.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0421": {
-  "conceito": "### Artrogripose múltipla congênita\n- Contraturas congênitas em ==duas ou mais articulações==, sem progressão.\n- Causa comum: ==acinesia fetal== (falta de movimento intrauterino).\n\n| Origem | Achado |\n|---|---|\n| ==neuropática== (a mais comum) | ==redução das células do corno anterior== da medula |\n| miopática | distrofia muscular congênita |\n| restrição | oligoidrâmnio, útero bicorno |\n| tecido conjuntivo | |\n\n### Amioplasia (forma clássica)\n- Simétrica, quatro membros: ombros aduzidos e em RI, cotovelos estendidos, punhos fletidos, quadris luxados, joelhos estendidos ou fletidos, ==pé torto rígido==.\n- Pele lisa sem pregas, covinhas, inteligência normal.\n\n### Tratamento\n- Fisioterapia precoce; gessos; cirurgias (talectomia no pé torto resistente, osteotomias).\n\n### Anomalias viscerais\n- Pouco frequentes na amioplasia; as mais descritas são ==intestinais/abdominais==: ==gastrosquise==, atresia intestinal, defeitos da parede abdominal (comprometimento vascular fetal).\n- Coração e pulmão (hipoplasia pulmonar) nas formas sindrômicas ou graves.\n\n> **Na prova:** víscera mais associada à artrogripose = ==intestino==",
-  "correta": "**Intestino.**\n- Gastrosquise e atresias intestinais.\n- Mecanismo vascular fetal comum.",
   "incorretas": {
-   "A": "**Coração.**\n- Menos frequente.",
-   "B": "**Pulmão.**\n- Hipoplasia nas formas graves.",
-   "D": "**Pâncreas.**\n- Sem associação."
+   "A": "Alterações cardíacas aparecem mais nas formas sindrômicas, e são menos frequentes que as intestinais.",
+   "B": "A hipoplasia pulmonar aparece nas formas graves, não na artrogripose típica.",
+   "D": "O pâncreas não tem associação com a artrogripose."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **artrogripose múltipla congênita** (sobretudo a **amioplasia**) é um quadro do sistema musculoesquelético: contraturas congênitas em várias articulações, por pouca movimentação do feto. As **lesões viscerais** são **pouco frequentes**, mas, quando aparecem, as mais descritas são **intestinais e da parede abdominal**:\n\n**gastrosquise**: defeito da parede abdominal ao lado do umbigo, com alças intestinais expostas;\n\n**atresia intestinal**;\n\n**outros defeitos da parede abdominal**.\n\n**A explicação**: acredita-se que um **comprometimento vascular** no feto, num mesmo período do desenvolvimento, explique tanto a falta de células do corno anterior (e a acinesia) quanto os defeitos intestinais.\n\n**Coração e pulmão**: alterações cardíacas e **hipoplasia pulmonar** aparecem mais nas **formas sindrômicas** ou graves de artrogripose (por exemplo, a sequência de acinesia fetal), não na amioplasia típica.\n\n**O pâncreas**: sem associação.\n\n**Por que importa**: o recém-nascido com artrogripose precisa de avaliação geral, e o ortopedista deve lembrar das associações ao planejar cirurgias.\n\n**Na prova**: a lesão visceral mais associada à artrogripose é no **intestino**.",
+  "correta": "Na artrogripose, as anomalias viscerais mais descritas são intestinais, como gastrosquise e atresia intestinal.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0422": {
-  "conceito": "### Especificidade das fraturas no abuso (Kleinman)\n| Alta | Moderada | Baixa (comuns) |\n|---|---|---|\n| lesão metafisária clássica | múltiplas, bilaterais | clavícula |\n| costelas posteriores | em estágios diferentes de consolidação | diáfises de ossos longos |\n| ==escápula== | epifisárias (descolamentos) | crânio linear |\n| processos espinhosos | corpo vertebral | |\n| esterno | dedos | |\n| | crânio complexa | |\n\n### Conduta\n- Inventário esquelético em < 2 anos (repetir em 2 semanas).\n- Fundo de olho, TC/RM de crânio, exames de coagulação e metabolismo ósseo (OI, raquitismo).\n- ==Notificação obrigatória==.\n\n### Frequência × especificidade\n- ==Frequência== e ==especificidade== são diferentes: fraturas de ossos longos são comuns no abuso, mas pouco específicas.\n- Nos menores de 2 anos, fêmur (não deambulante) e úmero são clássicos; costelas são as mais frequentes em várias séries.\n\n> **Na prova:** a banca considerou ==antebraço== a mais comum (veja o alerta)",
-  "correta": "**Antebraço (gabarito).**\n- Resposta oficial da banca.\n- Diverge da literatura clássica (veja o alerta).",
   "incorretas": {
-   "A": "**Tíbia.**\n- Menos frequente.",
-   "B": "**Fêmur.**\n- Clássico no não deambulante; a banca não aceitou.",
-   "C": "**Úmero.**\n- Muito citado; a banca não aceitou."
+   "A": "A fratura da tíbia é menos citada como a mais comum nos maus-tratos abaixo de 2 anos.",
+   "B": "A fratura do fêmur na criança que não anda é clássica na literatura, mas a banca não a aceitou como a mais comum.",
+   "C": "A fratura do úmero é muito citada na literatura, mas a banca não a aceitou como a mais comum."
   },
+  "conceito": "Nos **maus-tratos**, é preciso separar duas ideias que costumam se confundir:\n\n**frequência**: quais fraturas aparecem **mais vezes** nas crianças vítimas de abuso;\n\n**especificidade**: quais fraturas, quando aparecem, **mais apontam** para abuso.\n\n**As fraturas de alta especificidade**: lesão metafisária clássica, costelas posteriores, escápula, processos espinhosos e esterno.\n\n**As fraturas frequentes, mas pouco específicas**: as de **ossos longos**. Elas aparecem muito no abuso, mas também em acidentes. O contexto é que levanta a suspeita: criança que **ainda não anda**, história incompatível com a lesão, demora para procurar atendimento, lesões em fases diferentes.\n\n**O que a literatura destaca abaixo de 2 anos**: a fratura de **fêmur** na criança que não anda e a fratura espiral do **úmero** são muito citadas; em várias séries, as **costelas** são as mais frequentes. A banca desta questão considerou o **antebraço** como a fratura mais comum, o que diverge de boa parte da literatura.\n\n**A conduta na suspeita**: inventário esquelético em menores de 2 anos (repetido em 2 semanas), fundo de olho, imagem do crânio e **notificação obrigatória**.\n\n**Na prova**: a banca considerou a fratura do **antebraço** como a mais comum abaixo de 2 anos.",
+  "correta": "A banca considerou o antebraço a fratura mais comum nessa idade; boa parte da literatura destaca fêmur, úmero e costelas.",
   "alerta": "Boa parte da literatura clássica sobre maus-tratos infantis destaca a fratura de fêmur (em crianças ainda não deambuladoras) e a fratura espiral de úmero como os achados de fratura de osso longo mais classicamente associados a alta suspeita de abuso nessa faixa etária, vale considerar essa divergência frente a outras fontes ao revisar o tema.",
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0423": {
@@ -4632,14 +4632,14 @@
   "conferido": false
  },
  "pediatria-0425": {
-  "conceito": "### Ultrassom de Graf\n| Ângulo | Linhas | Mede | Normal |\n|---|---|---|---|\n| ==alfa== | ilíaco × teto ==ósseo== | cobertura óssea | ==≥ 60°== |\n| ==beta== | ilíaco × teto ==cartilaginoso== (lábio) | cobertura cartilaginosa | ==< 55°== |\n\n### Tipos\n| Tipo | Alfa | Conduta |\n|---|---|---|\n| I | ≥ 60° | normal |\n| IIa | 50 a 59°, < 3 meses | imaturo fisiológico, controle |\n| IIb | 50 a 59°, > 3 meses | tratar |\n| IIc | 43 a 49° (beta < 77°) | tratar |\n| D | 43 a 49°, beta > 77° | descentrando |\n| III | < 43°, luxado | tratar |\n| IV | < 43°, luxado com lábio invertido | tratar |\n\n> **Na prova:** ângulo beta = ==teto cartilaginoso== (lábio); alfa = teto ósseo",
-  "correta": "**Porção cartilaginosa.**\n- Linha do ilíaco ao lábio.\n- Beta alto indica cabeça empurrando o lábio.",
   "incorretas": {
-   "B": "**Teto ósseo.**\n- É o ângulo alfa.",
-   "C": "**Trirradiada.**\n- Não entra no Graf.",
-   "D": "**Esfericidade.**\n- Não é medida pelo Graf."
+   "B": "A inclinação do teto ósseo é medida pelo ângulo alfa.",
+   "C": "A cartilagem trirradiada não entra na medida do ultrassom de Graf.",
+   "D": "A esfericidade da cabeça femoral não é medida pelos ângulos de Graf."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **ultrassom de Graf** avalia o quadril do bebê num corte coronal padronizado. Traçam-se três linhas:\n\n**linha de base**: ao longo da parede lateral do **ilíaco**;\n\n**linha do teto ósseo**: da borda inferior do ilíaco até a borda do teto **ósseo** do acetábulo;\n\n**linha do teto cartilaginoso**: da borda do teto ósseo até o **lábio** (labrum), passando pela **porção cartilaginosa** do acetábulo.\n\n**Os dois ângulos**:\n\n**alfa**: entre a linha de base e o **teto ósseo**; mede a **cobertura óssea**; normal a partir de **60°**;\n\n**beta**: entre a linha de base e o **teto cartilaginoso**; mede a **cobertura cartilaginosa**; normal abaixo de **55°**. Quando a cabeça empurra o lábio para cima e para fora, o beta **aumenta**.\n\n**Os tipos de Graf**: I (normal, alfa a partir de 60°); IIa (imaturo fisiológico, abaixo de 3 meses); IIb e IIc (tratar); D (descentrando, beta acima de 77°); III e IV (luxados).\n\n**O que o Graf não mede**: a cartilagem trirradiada e a esfericidade da cabeça.\n\n**Na prova**: o ângulo beta de Graf avalia a **porção cartilaginosa** do acetábulo.",
+  "correta": "O ângulo beta é traçado até o lábio e mede a cobertura cartilaginosa do acetábulo.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0426": {
