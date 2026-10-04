@@ -4360,83 +4360,83 @@
   "conferido": false
  },
  "pediatria-0390": {
-  "conceito": "### Sinovite transitória do quadril\n- Causa mais comum de dor no quadril entre ==3 e 8 anos==; meninos; frequentemente após virose.\n- Claudicação, quadril em flexão, abdução e RE; afebril ou febre baixa.\n- Autolimitada: 1 a 2 semanas, repouso e anti-inflamatório.\n- ==Recorrência anual de cerca de 4%==; pequena associação posterior com Perthes.\n\n### Diferencial com artrite séptica (Kocher)\n| Critério |\n|---|\n| febre > 38,5 °C |\n| não apoia o membro |\n| VHS > 40 mm/h |\n| leucócitos > 12.000 |\n| (+ PCR > 2 mg/dL, Caird) |\n\n| Nº de critérios | Probabilidade de séptica |\n|---|---|\n| 0 | < 1% |\n| 2 | cerca de 40% |\n| 3 | cerca de 93% |\n| 4 | > 99% |\n\n- Ultrassom mostra derrame nos dois; punção guiada se dúvida.\n\n> **Na prova:** sinovite transitória = pico entre ==5 e 6 anos== (faixa de 3 a 8)",
-  "correta": "**5 a 6 anos.**\n- Pico dentro da faixa de 3 a 8.\n- Meninos, após virose.",
   "incorretas": {
-   "A": "**2 a 3 anos.**\n- Início da faixa; menos frequente.",
-   "C": "**8 a 10 anos.**\n- Fim da faixa; pensar em Perthes.",
-   "D": "**12 a 14 anos.**\n- Pensar em epifisiólise."
+   "A": "2 a 3 anos é o início da faixa, com menos casos; nessa idade a artrite séptica pesa mais.",
+   "C": "8 a 10 anos é o fim da faixa; dor persistente nessa idade faz pensar em Perthes.",
+   "D": "12 a 14 anos é a idade da epifisiólise, não da sinovite transitória."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **sinovite transitória do quadril** é a causa mais comum de dor no quadril e claudicação na criança. A faixa típica é de **3 a 8 anos**, com **pico entre 5 e 6 anos**. Predomina em **meninos** e costuma vir depois de uma infecção viral das vias aéreas.\n\n**O quadro**: dor aguda, claudicação ou recusa de apoiar, quadril em flexão, abdução e rotação externa, sem febre ou com febre baixa, bom estado geral e exames inflamatórios normais ou pouco alterados.\n\n**A evolução**: autolimitada, melhora em 1 a 2 semanas com repouso e anti-inflamatório.\n\n**A idade como pista do diagnóstico diferencial**:\n\n**abaixo de 3 anos**: pensar em artrite séptica, displasia do quadril e trauma (fratura do pré-escolar);\n\n**3 a 8 anos**: **sinovite transitória**; e, se a dor persistir por semanas, **Perthes**, que tem pico de 4 a 8 anos;\n\n**adolescência**: **epifisiólise**, sobretudo no obeso, e apofisites da pelve.\n\n**O diferencial que não pode passar**: a **artrite séptica**, pelos critérios de Kocher (febre acima de 38,5 °C, recusa de apoio, VHS acima de 40 mm/h, leucócitos acima de 12.000 e PCR acima de 2 mg/dL).\n\n**Na prova**: a sinovite transitória acomete principalmente crianças de **5 a 6 anos**.",
+  "correta": "O pico da sinovite transitória fica entre 5 e 6 anos, dentro da faixa de 3 a 8 anos.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0391": {
-  "conceito": "### Mucopolissacaridoses (MPS)\n| Tipo | Nome | Herança | Achados |\n|---|---|---|---|\n| I | ==Hurler== (grave) / Scheie | AR | ==retardo==, face grosseira, opacidade de córnea, giba toracolombar |\n| II | Hunter | ==ligada ao X== | sem opacidade de córnea |\n| III | Sanfilippo | AR | predomínio neurológico |\n| IV | ==Morquio== | AR | ==inteligência normal==, nanismo de tronco curto, ==instabilidade C1-C2 (odontoide hipoplásico)==, genu valgo |\n| VI | Maroteaux-Lamy | AR | inteligência normal |\n\n### Ortopedia\n- Morquio: ==avaliar a coluna cervical== antes de anestesia; artrodese occipitocervical se instável.\n- Hurler: cifose, displasia do quadril, túnel do carpo, dedo em gatilho múltiplo.\n- Tratamento: reposição enzimática, transplante de medula (Hurler).\n\n### Enzimas deficientes\n| MPS | Enzima |\n|---|---|\n| ==I (Hurler/Scheie)== | ==α-L-iduronidase== |\n| II (Hunter) | iduronato-2-sulfatase |\n| III A (Sanfilippo) | heparan N-sulfatase |\n| IV A (Morquio) | galactose-6-sulfatase |\n| VI (Maroteaux-Lamy) | arilsulfatase B |\n\n> **Na prova:** α-L-iduronidase = ==MPS I (Hurler)==",
-  "correta": "**Tipo I.**\n- Hurler, Hurler-Scheie e Scheie.\n- Reposição com laronidase.",
   "incorretas": {
-   "B": "**Tipo II.**\n- Iduronato sulfatase.",
-   "C": "**Tipo III A.**\n- Heparan N-sulfatase.",
-   "D": "**Tipo IV.**\n- Galactose-6-sulfatase."
+   "B": "Na MPS II, Hunter, falta a iduronato-2-sulfatase.",
+   "C": "Na MPS III A, Sanfilippo A, falta a heparan N-sulfatase.",
+   "D": "Na MPS IV, Morquio, falta a galactose-6-sulfatase."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "As **mucopolissacaridoses** são doenças de depósito em que **falta uma enzima** que degrada os glicosaminoglicanos. Cada tipo tem sua enzima:\n\n**tipo I** (Hurler, Hurler-Scheie e Scheie): **α-L-iduronidase**;\n\n**tipo II** (Hunter, ligada ao X): iduronato-2-sulfatase;\n\n**tipo III A** (Sanfilippo A): heparan N-sulfatase;\n\n**tipo IV A** (Morquio A): galactose-6-sulfatase;\n\n**tipo VI** (Maroteaux-Lamy): arilsulfatase B.\n\n**A MPS I** é um espectro: **Hurler** é a forma grave (retardo mental, face grosseira, opacidade de córnea, giba toracolombar, rigidez articular, mão em garra); **Scheie** é a forma atenuada, com inteligência normal; Hurler-Scheie fica no meio.\n\n**O tratamento**: **reposição enzimática** com laronidase e, na forma grave, **transplante de medula óssea** antes dos 2 anos, que preserva a cognição.\n\n**A ortopedia na MPS I**: cifose toracolombar, displasia do quadril, geno valgo, túnel do carpo e dedo em gatilho múltiplo.\n\n**Na prova**: deficiência de **α-L-iduronidase** = MPS **tipo I**.",
+  "correta": "A α-L-iduronidase é a enzima que falta na MPS I, que inclui Hurler, Hurler-Scheie e Scheie.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0392": {
-  "conceito": "### Menisco discoide\n| Aspecto | Dado |\n|---|---|\n| menisco | ==lateral== (quase sempre) |\n| prevalência | 0,4 a 17% (mais em asiáticos) |\n| bilateral | até 20% |\n| clínica | ==estalido==, bloqueio, ==lesões sem trauma== |\n\n### Watanabe\n| Tipo | Descrição |\n|---|---|\n| I completo | cobre todo o planalto, fixações normais |\n| II incompleto | cobre parte |\n| III ==Wrisberg== | ==sem fixação tibial posterior (coronário)==, só o ligamento de Wrisberg: ==hipermóvel== |\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| assintomático | observar |\n| sintomático estável | ==saucerização== (meniscectomia parcial) |\n| Wrisberg / instável | saucerização + ==sutura periférica==; clássico: meniscectomia total |\n\n### Discoide e osteocondrite dissecante\n- Menisco discoide ==lateral== altera a carga no compartimento lateral.\n- Associa-se à ==OCD do côndilo femoral lateral== (local atípico: a OCD clássica é no côndilo medial, face lateral).\n- OCD também pode surgir após saucerização/meniscectomia.\n\n> **Na prova:** Wrisberg associa-se à OCD do ==côndilo femoral lateral==",
-  "correta": "**Côndilo femoral lateral.**\n- Mesmo compartimento do discoide.\n- Local atípico de OCD.",
   "incorretas": {
-   "A": "**Planalto medial.**\n- Compartimento oposto.",
-   "B": "**Planalto tibial.**\n- OCD é femoral.",
-   "C": "**Côndilo medial.**\n- Local clássico da OCD comum, não da associada ao discoide."
+   "A": "O planalto medial fica no compartimento oposto ao do menisco discoide.",
+   "B": "A osteocondrite dissecante associada ao discoide é femoral, não do planalto tibial.",
+   "C": "O côndilo medial é o local clássico da osteocondrite comum, não da associada ao menisco discoide."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **menisco discoide** é quase sempre o **lateral**, largo e espesso. O tipo **Wrisberg** (Watanabe III) não tem a fixação tibial posterior e é **hipermóvel**.\n\n**A relação com a osteocondrite dissecante**: o menisco anormal muda a distribuição de carga no **compartimento lateral** do joelho. Com isso, a **osteocondrite dissecante** pode aparecer no **côndilo femoral lateral**, um local **atípico**.\n\n**Onde costuma ser a osteocondrite comum**: na **face lateral do côndilo femoral medial**, que é o local clássico (cerca de 70% dos casos).\n\n**Quando pensar na associação**:\n\n**osteocondrite no côndilo lateral**: procurar menisco discoide na ressonância;\n\n**depois de saucerização ou meniscectomia** de um menisco discoide: a osteocondrite do côndilo lateral pode surgir, pela sobrecarga do compartimento.\n\n**O tratamento**: depende da estabilidade da lesão e da fise; lesões estáveis com fise aberta, repouso; instáveis, fixação ou procedimentos de cartilagem. O menisco é tratado ao mesmo tempo (saucerização e sutura se instável).\n\n**Na prova**: o menisco discoide de Wrisberg se relaciona com a osteocondrite dissecante do **côndilo femoral lateral**.",
+  "correta": "O discoide lateral altera a carga do compartimento lateral e se associa à osteocondrite do côndilo femoral lateral, local atípico.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0393": {
-  "conceito": "### Deficiência femoral congênita (Paley)\n| Tipo | Descrição |\n|---|---|\n| 1 | fêmur íntegro, quadril e joelho móveis (ossificação normal 1a ou tardia 1b) |\n| ==2== | ==pseudartrose móvel== do fêmur proximal: 2a cabeça móvel no acetábulo; 2b cabeça ausente ou rígida |\n| 3 | deficiência diafisária (3a joelho móvel > 45°, 3b < 45°, 3c ausência total) |\n| 4 | deficiência distal |\n\n### Por que é útil\n- Orienta a ==reconstrução== (SUPERhip, SUPERknee) antes do alongamento.\n- Aitken é mais antiga e baseada só na radiografia do quadril.\n\n> **Na prova:** pseudartrose móvel proximal = ==Paley 2==",
-  "correta": "**Tipo 2.**\n- Pseudartrose móvel proximal.\n- Subtipo pela cabeça femoral.",
   "incorretas": {
-   "A": "**Tipo 1.**\n- Fêmur íntegro.",
-   "C": "**Tipo 3.**\n- Deficiência diafisária.",
-   "D": "**Tipo 4.**\n- Deficiência distal."
+   "A": "No tipo 1 o fêmur está íntegro, sem pseudartrose.",
+   "C": "O tipo 3 é a deficiência diafisária.",
+   "D": "O tipo 4 é a deficiência distal do fêmur."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **deficiência femoral congênita** vai do fêmur apenas curto à ausência quase total do osso. A **classificação de Paley** foi feita para orientar a **reconstrução**, e não só descrever a radiografia:\n\n**tipo 1**: fêmur **íntegro**, com quadril e joelho móveis; a ossificação pode ser normal (1a) ou tardia no colo (1b);\n\n**tipo 2**: **pseudartrose móvel do fêmur proximal**; no 2a, a cabeça femoral está presente e se move no acetábulo; no 2b, a cabeça está ausente ou rígida;\n\n**tipo 3**: deficiência **diafisária**; subdividida pela mobilidade do joelho (3a com joelho móvel acima de 45°, 3b abaixo de 45°, 3c com ausência total do fêmur);\n\n**tipo 4**: deficiência **distal** do fêmur.\n\n**Por que é útil**: os tipos 1 e 2 podem ser reconstruídos (cirurgias SUPERhip e SUPERknee, que estabilizam o quadril e o joelho) antes dos alongamentos. Nos tipos mais graves, as opções incluem rotacionplastia e prótese.\n\n**A classificação de Aitken** é mais antiga e se baseia só na radiografia do quadril.\n\n**Na prova**: fêmur curto congênito com **pseudartrose móvel do fêmur proximal** = Paley **tipo 2**.",
+  "correta": "O tipo 2 de Paley é a pseudartrose móvel do fêmur proximal, subdividida pela presença e mobilidade da cabeça femoral.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0394": {
-  "conceito": "### Recidiva do pé torto após Ponseti\n| Tipo | Achado | Conduta |\n|---|---|---|\n| estrutural (rígida) | adução, cavo, varo ou equino fixos | ==novos gessos== ± tenotomia |\n| ==dinâmica== | ==supinação do antepé na marcha== (balanço), pé passivamente corrigível | ==transferência do tibial anterior== |\n\n### Transferência do tibial anterior\n- Destino: ==cuneiforme lateral== (ou cuboide em alguns serviços).\n- Pré-requisitos: pé ==flexível==, deformidade fixa já corrigida (gessos antes), idade em geral acima de 2,5 a 3 anos (cuneiforme lateral ossificado).\n- Mecanismo: tibial anterior dominante sobre os fibulares supina o pé ao dorsifletir.\n\n### Causa principal de recidiva\n- ==Não adesão à órtese de abdução== (botas com barra) até 4 a 5 anos.\n\n### Órtese de abdução (Denis Browne / botas com barra)\n| Pé | Rotação externa |\n|---|---|\n| ==afetado== | ==60 a 70°== |\n| ==normal== (unilateral) | ==30 a 40°== |\n\n- Barra na largura dos ombros; dorsiflexão de 10 a 15°.\n- ==23 h/dia por 3 meses==, depois ==noturna até 4 a 5 anos==.\n\n### Sequência de Ponseti (CAVE)\n| Ordem | Deformidade | Manobra |\n|---|---|---|\n| 1 | ==Cavo== | ==supinar o antepé== e ==elevar (dorsifletir) o 1º metatarso== (alinhar antepé ao retropé) |\n| 2 | Aduto | abduzir o pé com contrapressão na cabeça do tálus |\n| 3 | Varo | corrige junto com a abdução (calcâneo roda sob o tálus) |\n| 4 | Equino | por último; ==tenotomia percutânea== do tendão calcâneo se < 15° de dorsiflexão |\n\n- Nunca pronar o antepé: piora o cavo.\n- Nunca pressionar o calcâneo (bloqueia a rotação).\n\n> **Na prova:** Ponseti começa pelo ==cavo== (elevar o 1º raio)",
-  "correta": "**Cavo do 1º raio.**\n- Primeiro gesso corrige o cavo.\n- Supinar o antepé e elevar o 1º MT.",
   "incorretas": {
-   "A": "**Varo.**\n- Corrige junto com a abdução.",
-   "B": "**Adução.**\n- Segunda etapa.",
-   "D": "**Supinação.**\n- O antepé é supinado para corrigir o cavo, não corrigido."
+   "A": "O varo é corrigido em terceiro lugar, junto com a abdução.",
+   "B": "A adução do antepé é corrigida em segundo lugar.",
+   "D": "A supinação do antepé é a manobra usada para corrigir o cavo, não a deformidade corrigida primeiro."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **método de Ponseti** corrige o pé torto numa ordem fixa, a sigla **CAVE**:\n\n**1º, cavo**: no pé torto, o antepé está **pronado** em relação ao retropé e o **1º metatarso está abaixado**, formando o cavo. O primeiro gesso **eleva o 1º raio**, **supinando o antepé**, para alinhar antepé e retropé;\n\n**2º, aduto**: o pé é abduzido com contrapressão na face lateral da cabeça do tálus;\n\n**3º, varo**: corrige junto com a abdução, porque o calcâneo roda por baixo do tálus;\n\n**4º, equino**: por último, muitas vezes com tenotomia percutânea do tendão calcâneo.\n\n**Um detalhe que confunde**: a **supinação** do antepé não é uma deformidade a ser corrigida no início. Ao contrário, é a **manobra** usada para corrigir o cavo. Pronar o antepé piora o cavo.\n\n**Por que começar pelo cavo**: se o pé for abduzido com o antepé ainda pronado e o 1º metatarso abaixado, o cavo aumenta e o pé não gira como um bloco sob o tálus.\n\n**Na prova**: o Ponseti começa corrigindo o **cavo do primeiro raio**.",
+  "correta": "O primeiro gesso eleva o 1º raio, supinando o antepé, para corrigir o cavo e alinhar antepé e retropé.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0395": {
-  "conceito": "### Cifose lombar na PC\n- ==Isquiotibiais encurtados== puxam o ísquio: ==retroversão pélvica== ao sentar.\n- Para ficar sentado com joelhos estendidos, a coluna lombar ==flete== (cifose, sacro na cadeira).\n- Teste: ângulo poplíteo aumentado; cifose melhora ao fletir os joelhos.\n\n### Deformidades sagitais\n| Músculo encurtado | Deformidade |\n|---|---|\n| ==isquiotibiais== | ==cifose lombar==, sentar sacral |\n| iliopsoas | ==hiperlordose== lombar |\n| adutores | tesoura, luxação do quadril |\n\n### Tratamento\n- Alongamento dos isquiotibiais; adequação postural da cadeira.\n\n> **Na prova:** cifose lombar na PC = encurtamento dos ==isquiotibiais==",
-  "correta": "**Isquiotibiais.**\n- Retrovertem a pelve.\n- A lombar flete para compensar.",
   "incorretas": {
-   "A": "**Iliopsoas.**\n- Gera hiperlordose.",
-   "C": "**Adutores.**\n- Tesoura, luxação do quadril.",
-   "D": "**Paravertebrais.**\n- Extensores; não causam cifose."
+   "A": "O iliopsoas encurtado antevertem a pelve e gera hiperlordose, não cifose.",
+   "C": "Os adutores encurtados causam a marcha em tesoura e a luxação do quadril.",
+   "D": "Os paravertebrais são extensores da coluna e não causam cifose lombar."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **paralisia cerebral**, o encurtamento dos músculos que cruzam o quadril altera a posição da **pelve** e, com ela, a curvatura da coluna lombar:\n\n**isquiotibiais encurtados**: saem do **ísquio** e vão até a perna. Quando a criança senta com os joelhos estendidos, eles puxam o ísquio para a frente e **retrovertem a pelve**. A coluna lombar perde a lordose e **flete**: surge a **cifose lombar**, e a criança senta sobre o sacro;\n\n**iliopsoas encurtado**: puxa a coluna lombar para a frente e **antevertem a pelve**, gerando **hiperlordose** lombar;\n\n**adutores encurtados**: causam a marcha em tesoura e contribuem para a **luxação do quadril**.\n\n**Como confirmar**: o **ângulo poplíteo** está aumentado (isquiotibiais curtos), e a cifose **melhora quando os joelhos são fletidos**, porque os isquiotibiais afrouxam.\n\n**O tratamento**: alongamento dos isquiotibiais e adaptação da cadeira de rodas; a artrodese da coluna fica para deformidades estruturadas.\n\n**Na prova**: a cifose lombar na paralisia cerebral vem do encurtamento dos **isquiotibiais**.",
+  "correta": "Os isquiotibiais curtos retrovertem a pelve ao sentar, e a coluna lombar flete, formando a cifose.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0407": {
-  "conceito": "### Coxa vara do desenvolvimento\n- Ângulo cervicodiafisário diminuído por defeito de ossificação no colo medial.\n- ==Triângulo de Fairbank== (fragmento triangular inferior no colo).\n- Marcha de Trendelenburg indolor, encurtamento; bilateral em 30 a 50%.\n\n### Por que limita abdução e rotação medial\n- Trocanter alto e colo varo: o trocanter ==bate no ilíaco== na abdução.\n- Retroversão relativa: ==rotação medial== limitada.\n\n### Ângulo de Hilgenreiner-epifisário (HE)\n| Ângulo HE | Conduta |\n|---|---|\n| < 45° | resolve espontaneamente |\n| 45 a 60° | observar |\n| ==> 60°== | ==osteotomia valgizante== (Pauwels) |\n\n### Diferenciais\n- Coxa vara congênita (DFFP), displasias esqueléticas, raquitismo, sequela de DDQ ou Perthes.\n\n### Indicação cirúrgica\n| Parâmetro | Limite |\n|---|---|\n| ==ângulo HE== | ==> 60°== (ou 45 a 60° progressivo) |\n| ==cervicodiafisário== | ==< 100 a 110°== |\n| clínica | Trendelenburg, progressão |\n\n- Meta da osteotomia valgizante: HE < 38° e cervicodiafisário ≈ 140°.\n\n> **Na prova:** cirurgia na coxa vara = ==cervicodiafisário < 100° e HE > 60°==",
-  "correta": "**< 100° e > 60°.**\n- Colo muito varo.\n- Fise verticalizada.",
   "incorretas": {
-   "A": "**HE < 60°.**\n- Tende a estabilizar.",
-   "C": "**Cervicodiafisário > 100°.**\n- Varo menos grave.",
-   "D": "**Invertido.**\n- Ambos fora do limite cirúrgico."
+   "A": "O cervicodiafisário está certo, mas HE abaixo de 60° tende a estabilizar ou resolver.",
+   "C": "O HE está certo, mas cervicodiafisário acima de 100° é um varo menos grave.",
+   "D": "Os dois valores estão invertidos e ficam fora do limite cirúrgico."
   },
+  "conceito": "Na **coxa vara do desenvolvimento**, a decisão de operar se baseia em dois ângulos medidos na radiografia AP:\n\n**ângulo cervicodiafisário**: entre o eixo do colo e o eixo da diáfise; normal por volta de 130 a 140°. Na coxa vara cai, e a cirurgia é indicada quando fica **abaixo de cerca de 100 a 110°**;\n\n**ângulo de Hilgenreiner-epifisário (HE)**: entre a linha de Hilgenreiner e a linha da fise do colo; mede a **verticalização da fise**. Abaixo de 45°, tende a resolver; entre 45 e 60°, observar; **acima de 60°**, a fise vertical sofre cisalhamento e a deformidade progride.\n\n**A indicação cirúrgica**: **cervicodiafisário abaixo de 100°** e **HE acima de 60°**, ou HE entre 45 e 60° com progressão documentada, além de Trendelenburg e encurtamento.\n\n**A cirurgia**: **osteotomia valgizante** intertrocantérica ou subtrocantérica, com hipercorreção. A meta é **HE abaixo de cerca de 38°** e cervicodiafisário de cerca de 140°; com correção insuficiente, a recidiva é comum.\n\n**Na prova**: cirurgia na coxa vara do desenvolvimento quando o **cervicodiafisário é menor que 100°** e o **HE é maior que 60°**.",
+  "correta": "O colo muito varo (abaixo de 100°) e a fise muito vertical (HE acima de 60°) indicam a osteotomia valgizante.",
   "referencias": [
    "Surgical correction of coxa vara: Evaluation of neck shaft angle, Hilgenreiner-epiphyseal angle for indication of recurrence. PMCID: PMC6494758; PMID: 31061596."
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0408": {
@@ -4451,26 +4451,26 @@
   "conferido": false
  },
  "pediatria-0409": {
-  "conceito": "### Paralisia cerebral: tipo × sistema\n| Tipo | Sistema | Clínica |\n|---|---|---|\n| espástico | ==piramidal== (córtex motor, trato corticoespinal) | hipertonia velocidade-dependente, hiperreflexia |\n| ==discinético (atetoide, distônico)== | ==extrapiramidal== (núcleos da base) | movimentos involuntários lentos, contorcidos, tônus flutuante |\n| atáxico | cerebelar | dismetria, tremor de intenção, equilíbrio |\n| misto | vários | |\n\n### Associações\n- Atetoide: ==kernicterus== (hiperbilirrubinemia), asfixia a termo.\n- Diplegia espástica: prematuridade, leucomalácia periventricular.\n\n### Cirurgia ortopédica\n- Resultados mais previsíveis no ==espástico==; cautela nos discinéticos.\n\n### Rotação na hemiplegia espástica\n| Segmento | Achado |\n|---|---|\n| fêmur | ==anteversão aumentada==, rotação ==medial== do quadril |\n| hemipelve acometida | ==rotação medial== (retração posterior do lado afetado) |\n| tíbia | torção variável |\n| pé | equinovaro |\n\n- Marcha com o membro rodado para dentro; pé em adução progressiva.\n- Osteotomia derrotativa femoral quando a rotação interna prejudica a marcha.\n\n> **Na prova:** lado acometido = ==rotação medial da hemipelve== (veja o alerta)",
-  "correta": "**Rotação medial da hemipelve.**\n- Acompanha a anteversão femoral aumentada.\n- Membro rodado para dentro.",
   "incorretas": {
-   "A": "**Retroversão.**\n- Há anteversão aumentada.",
-   "B": "**Rotação lateral do fêmur.**\n- É medial.",
-   "D": "**Rotação lateral da hemipelve.**\n- Banca considerou medial."
+   "A": "Na paralisia cerebral espástica a anteversão femoral fica aumentada, não há retroversão.",
+   "B": "O fêmur fica em rotação medial, não lateral.",
+   "D": "A banca considerou a rotação medial da hemipelve, não a lateral."
   },
+  "conceito": "Na **paralisia cerebral espástica**, sobretudo na **hemiplegia**, o membro acometido tende a ficar **rodado para dentro** na marcha. Vários segmentos contribuem:\n\n**fêmur**: a **anteversão femoral** fica aumentada (o fêmur não \"desfaz\" a anteversão do nascimento por falta de carga e por espasticidade), e o quadril fica em **rotação medial**; não há retroversão;\n\n**hemipelve acometida**: acompanha a rotação interna do membro; a banca a descreveu como **rotação medial** da hemipelve. Muitos laboratórios de marcha chamam esse achado de **retração** do lado afetado (a hemipelve fica para trás);\n\n**tíbia**: torção variável;\n\n**pé**: equinovaro, com progressão do pé para dentro.\n\n**A consequência na marcha**: o joelho aponta para dentro, o pé tropeça no outro e a alavanca do pé fica ineficiente.\n\n**O tratamento**: quando a rotação interna atrapalha a marcha, faz-se a **osteotomia derrotativa do fêmur**, geralmente proximal ou distal, depois de confirmar o nível da deformidade pelo exame e pela análise de marcha.\n\n**Na prova**: na paralisia cerebral espástica, o lado acometido apresenta **rotação medial da hemipelve**.",
+  "correta": "A banca considerou a rotação medial da hemipelve, acompanhando a anteversão femoral aumentada e a rotação interna do quadril.",
   "alerta": "A nomenclatura da rotação pélvica na hemiplegia varia: muitos laboratórios descrevem retração (rotação posterior) da hemipelve acometida. A banca considerou rotação medial, acompanhando a rotação interna do quadril.",
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0410": {
-  "conceito": "### Pseudartrose congênita da tíbia\n- Arqueamento ==anterolateral== da tíbia distal; fratura com pouco trauma e não consolida.\n- ==NF1== em cerca de 50% (e 5 a 10% dos NF1 têm).\n- Também displasia fibrosa, displasia osteofibrosa.\n\n### Boyd\n| Tipo | Achado |\n|---|---|\n| I | pseudartrose ao nascer |\n| II | ampulheta (arqueamento com estreitamento) |\n| III | cisto |\n| IV | esclerose sem estreitamento |\n| V | fíbula displásica |\n| VI | neurofibroma intraósseo |\n\n### Tratamento\n- Antes da fratura: ==órtese protetora== até a maturidade; ==nunca osteotomia corretiva== do arqueamento.\n- Após fratura: ressecção do hamartoma, haste intramedular (Williams), enxerto, fixador (Ilizarov), fíbula vascularizada; BMP; cross-union (Paley).\n\n### Outros arqueamentos\n| Direção | Doença |\n|---|---|\n| posteromedial | benigno, corrige |\n| anteromedial | hemimelia fibular |\n\n### Ilizarov\n- Ressecção do hamartoma, compressão no foco e ==alongamento proximal== (transporte ósseo) ao mesmo tempo.\n- Idade mínima: ==por volta de 4 anos== (tamanho do osso para os fios e anéis, tolerância ao fixador).\n- Antes disso: haste intramedular (Williams) e enxerto; órtese.\n\n> **Na prova:** Ilizarov na pseudartrose congênita = a partir de ==4 anos==",
-  "correta": "**4 anos.**\n- Osso com tamanho para anéis e fios.\n- Permite compressão e alongamento.",
   "incorretas": {
-   "A": "**1 ano.**\n- Osso pequeno demais.",
-   "B": "**2 anos.**\n- Precoce.",
-   "C": "**3 anos.**\n- Ainda precoce para a banca."
+   "A": "Com 1 ano o osso é pequeno demais para a montagem do fixador.",
+   "B": "Com 2 anos ainda é precoce para o Ilizarov.",
+   "C": "Com 3 anos a banca ainda considera precoce; o limite adotado é 4 anos."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **pseudartrose congênita da tíbia**, depois da fratura, o objetivo é conseguir a **consolidação** e manter o comprimento. As opções principais:\n\n**haste intramedular** (como a de Williams) com ressecção do tecido doente e enxerto ósseo: pode ser usada em crianças pequenas;\n\n**fixador circular de Ilizarov**: permite **ressecar** o hamartoma, **comprimir** o foco e, ao mesmo tempo, **alongar** a tíbia por uma corticotomia proximal (transporte ósseo);\n\n**fíbula vascularizada**, BMP e a técnica de **união cruzada** tíbia-fíbula (Paley).\n\n**Por que o Ilizarov espera até cerca de 4 anos**: o osso da criança pequena é **curto e fino** demais para os fios e anéis, e a criança tolera mal o fixador por meses. Por volta dos **4 anos**, o osso tem tamanho suficiente para uma montagem estável.\n\n**Antes disso**: **órtese protetora** e, se fraturar, haste intramedular com enxerto.\n\n**Depois da consolidação**: manter órtese e, muitas vezes, a haste até a maturidade, porque a refratura é comum.\n\n**Na prova**: o Ilizarov na pseudartrose congênita da tíbia é indicado a partir de **4 anos**.",
+  "correta": "Por volta dos 4 anos o osso já comporta os fios e anéis com estabilidade, permitindo compressão e alongamento.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0411": {
@@ -4485,14 +4485,14 @@
   "conferido": false
  },
  "pediatria-0412": {
-  "conceito": "### Mielomeningocele: nível × deformidade\n| Nível | Músculos preservados | Deformidade típica | Marcha |\n|---|---|---|---|\n| ==torácico== | nenhum nos MMII | ==flexão e abdução dos quadris (rã), flexão dos joelhos==, equino | cadeira; órtese recíproca |\n| L1-L2 | flexores e adutores do quadril | flexão e adução: ==luxação== | domiciliar |\n| L3-L4 | + quadríceps (L4 tibial anterior) | pé calcâneo-varo | comunitária com órteses |\n| L5 | + isquiotibiais mediais, glúteo médio parcial | pé calcâneo | comunitária |\n| S1 | + gastrocnêmio parcial | cavo | próximo do normal |\n\n### Pontos\n- Nível mais importante para marcha: ==quadríceps (L3-L4)==.\n- Luxação do quadril mais comum em L3-L4.\n\n### Espinha bífida oculta\n- Falha de fusão do ==arco posterior== sem herniação de meninges.\n- Muito comum (até 10 a 20% da população), achado radiográfico, em ==L5 e S1==.\n- Pistas cutâneas de disrafismo oculto: tufo de pelos, lipoma, fosseta, hemangioma: investigar ==medula presa== (RM).\n\n| Forma | Conteúdo |\n|---|---|\n| oculta | sem herniação |\n| meningocele | meninges |\n| mielomeningocele | meninges + medula/raízes |\n\n> **Na prova:** espinha bífida oculta = ==L5 e S1==",
-  "correta": "**L5 e S1.**\n- Local mais frequente.\n- Geralmente achado incidental.",
   "incorretas": {
-   "A": "**L3 e L4.**\n- Pouco comum.",
-   "B": "**L4 e L5.**\n- Menos frequente.",
-   "D": "**T12 e L1.**\n- Raro."
+   "A": "L3 e L4 são locais pouco comuns da espinha bífida oculta.",
+   "B": "L4 e L5 são menos frequentes que L5 e S1.",
+   "D": "T12 e L1 são locais raros."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **espinha bífida** é uma falha no fechamento do **arco posterior** da vértebra. Tem três formas, de gravidade crescente:\n\n**oculta**: só o arco ósseo não fecha; **não há herniação** de meninges nem de medula. É **muito comum** (até 10 a 20% da população) e em geral é **achado radiográfico** sem importância. Localiza-se mais em **L5 e S1**;\n\n**meningocele**: as meninges herniam por trás, formando uma bolsa, mas a medula fica no lugar;\n\n**mielomeningocele**: meninges e **medula ou raízes** herniam; há déficit neurológico.\n\n**Quando a espinha bífida oculta preocupa**: quando há **sinais cutâneos** de disrafismo na linha média lombossacra (tufo de pelos, lipoma, fosseta profunda, hemangioma, apêndice cutâneo), ou sintomas neurológicos e urinários, deformidade progressiva dos pés (cavo) ou escoliose atípica. Nesses casos, a **ressonância** procura **medula presa**, lipoma intradural ou diastematomielia.\n\n**Na prova**: a espinha bífida oculta é mais comum em **L5 e S1**.",
+  "correta": "A espinha bífida oculta é mais frequente em L5 e S1, em geral como achado radiográfico incidental.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0413": {
