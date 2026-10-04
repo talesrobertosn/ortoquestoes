@@ -18,6 +18,8 @@ interface Formulario {
   anulada: boolean
   enunciado: string
   imagens: Imagem[]
+  dissertativa: boolean
+  respostaEsperada: string
   alternativas: Array<{ letra: Letra; texto: string }>
   gabarito: Letra | ''
   autor: string
@@ -37,6 +39,8 @@ function paraFormulario(q: Questao, c: ComentarioIA | null): Formulario {
     anulada: q.anulada,
     enunciado: q.enunciado,
     imagens: q.imagens ?? [],
+    dissertativa: q.tipo === 'dissertativa',
+    respostaEsperada: q.respostaEsperada ?? '',
     alternativas: q.alternativas.map((a) => ({ letra: a.letra, texto: a.texto })),
     gabarito: q.gabarito ?? '',
     autor: q.comentario ?? '',
@@ -71,8 +75,10 @@ function paraEdicao(f: Formulario, original: ComentarioIA | null): EdicaoQuestao
     anulada: f.anulada,
     enunciado: f.enunciado.trim(),
     imagens: f.imagens,
-    alternativas: f.alternativas.map((a) => ({ letra: a.letra, texto: a.texto.trim() })),
-    gabarito: f.gabarito || null,
+    tipo: f.dissertativa ? 'dissertativa' : null,
+    respostaEsperada: f.dissertativa ? f.respostaEsperada.trim() || null : null,
+    alternativas: f.dissertativa ? [] : f.alternativas.map((a) => ({ letra: a.letra, texto: a.texto.trim() })),
+    gabarito: f.dissertativa ? null : f.gabarito || null,
     comentario: f.autor.trim() || null,
     comentarioIA,
   }
@@ -248,7 +254,7 @@ export function AdminQuestoes({ idInicial }: { idInicial?: string | null }) {
   async function salvar() {
     if (!form || !id) return
     if (!form.enunciado.trim()) { definirErro('O enunciado não pode ficar vazio.'); return }
-    if (form.alternativas.some((a) => !a.texto.trim())) { definirErro('Preencha o texto de todas as alternativas (ou remova a que sobrou).'); return }
+    if (!form.dissertativa && form.alternativas.some((a) => !a.texto.trim())) { definirErro('Preencha o texto de todas as alternativas (ou remova a que sobrou).'); return }
     if (form.ano && !/^\d{4}$/.test(form.ano.trim())) { definirErro('Ano com 4 dígitos, ou deixe em branco.'); return }
     definirSalvando(true); definirErro('')
     try {
@@ -278,7 +284,7 @@ export function AdminQuestoes({ idInicial }: { idInicial?: string | null }) {
     }
   }
 
-  const letrasUsadas = form?.alternativas.map((a) => a.letra) ?? []
+  const letrasUsadas = form && !form.dissertativa ? form.alternativas.map((a) => a.letra) : []
 
   return (
     <section className="empilha adm-secao" aria-labelledby="adm-titulo-questoes">
@@ -335,6 +341,13 @@ export function AdminQuestoes({ idInicial }: { idInicial?: string | null }) {
             <ListaImagens imagens={form.imagens} aoMudar={(v) => mudar('imagens', v)} idQuestao={id} pasta="enunciado" />
           </div>
 
+          <label className="campo campo--checkbox"><input type="checkbox" checked={form.dissertativa} onChange={(e) => mudar('dissertativa', e.target.checked)} /> Questão dissertativa (sem alternativas: a pessoa escreve e se autoavalia)</label>
+          {form.dissertativa ? (
+            <fieldset className="adm-editor__grupo">
+              <legend>Resposta esperada</legend>
+              <CampoTexto rotulo="Resposta esperada (espelho da banca)" linhas={5} valor={form.respostaEsperada} aoMudar={(v) => mudar('respostaEsperada', v)} dica="Aparece depois que a pessoa escreve a resposta dela. O comentário completo vai no campo do comentário." />
+            </fieldset>
+          ) : (
           <fieldset className="adm-editor__grupo">
             <legend>Alternativas e gabarito</legend>
             {form.alternativas.map((a, i) => (
@@ -351,6 +364,7 @@ export function AdminQuestoes({ idInicial }: { idInicial?: string | null }) {
               <label className="campo campo--checkbox"><input type="radio" name="gabarito" checked={form.gabarito === ''} onChange={() => mudar('gabarito', '')} /> Sem gabarito oficial</label>
             </div>
           </fieldset>
+          )}
 
           <fieldset className="adm-editor__grupo">
             <legend>Comentário</legend>
@@ -361,7 +375,7 @@ export function AdminQuestoes({ idInicial }: { idInicial?: string | null }) {
               <div className="campo"><span>Imagens do comentário</span>
                 <ListaImagens imagens={form.imagensComentario} aoMudar={(v) => mudar('imagensComentario', v)} idQuestao={id} pasta="comentario" />
               </div>
-              <CampoTexto rotulo={`Por que a correta${form.gabarito ? ` (${form.gabarito})` : ''} está certa`} linhas={3} valor={form.correta} aoMudar={(v) => mudar('correta', v)} />
+              <CampoTexto rotulo={form.dissertativa ? 'Resposta comentada' : `Por que a correta${form.gabarito ? ` (${form.gabarito})` : ''} está certa`} linhas={3} valor={form.correta} aoMudar={(v) => mudar('correta', v)} />
               {letrasUsadas.filter((l) => l !== form.gabarito).map((l) => (
                 <CampoTexto key={l} rotulo={`Por que a ${l} está errada`} linhas={2} valor={form.incorretas[l] ?? ''} aoMudar={(v) => mudar('incorretas', { ...form.incorretas, [l]: v })} />
               ))}

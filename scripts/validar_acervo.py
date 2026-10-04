@@ -199,7 +199,10 @@ def principal() -> int:
             if identificador != "(sem id)":
                 gabaritos[identificador] = gabarito
                 letras_da_questao[identificador] = {l for l in letras if l}
-            if gabarito is None:
+            if questao.get("tipo") == "dissertativa":
+                if alternativas or gabarito:
+                    erros.append(f"{onde}: dissertativa não leva alternativas nem gabarito")
+            elif gabarito is None:
                 if not questao.get("anulada"):
                     avisos.append(f"{onde}: sem gabarito")
             elif gabarito not in letras:

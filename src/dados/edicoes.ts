@@ -12,6 +12,9 @@ export interface EdicaoQuestao {
   prova?: string | null
   ano?: number | null
   enunciado?: string
+  /** "dissertativa" ou null (volta a ser de alternativas) */
+  tipo?: 'dissertativa' | null
+  respostaEsperada?: string | null
   alternativas?: Questao['alternativas']
   gabarito?: Questao['gabarito']
   anulada?: boolean
@@ -53,6 +56,8 @@ export function aplicarEdicao(q: Questao, e: EdicaoQuestao | undefined): Questao
   if (e.prova !== undefined) nova.prova = e.prova
   if (e.ano !== undefined) nova.ano = e.ano
   if (e.enunciado !== undefined) nova.enunciado = e.enunciado
+  if (e.tipo !== undefined) nova.tipo = e.tipo ?? undefined
+  if (e.respostaEsperada !== undefined) nova.respostaEsperada = e.respostaEsperada
   if (e.alternativas !== undefined) nova.alternativas = e.alternativas
   if (e.gabarito !== undefined) nova.gabarito = e.gabarito
   if (e.anulada !== undefined) nova.anulada = e.anulada

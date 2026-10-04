@@ -80,6 +80,13 @@ export interface Questao {
   id: string
   /** "cirurgia-mao" nas provas de cirurgia da mão; ausente nas de ortopedia */
   area?: 'cirurgia-mao'
+  /**
+   * Dissertativa: sem alternativas. A pessoa escreve a resposta, vê a resposta
+   * esperada e o comentário e ela mesma avalia se acertou.
+   */
+  tipo?: 'dissertativa'
+  /** Resposta esperada (espelho da banca), nas dissertativas */
+  respostaEsperada?: string | null
   tema: string
   subtemas: string[]
   prova: TipoProva | null
