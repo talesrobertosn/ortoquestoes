@@ -9989,19 +9989,19 @@
   "conferido": false
  },
  "trauma-1119": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": "**Haste e infecção.** O aço é menos biocompatível que o titânio, e a haste canulada tem um espaço morto interno que favorece o biofilme. A combinação canulada e de aço é a de maior risco.\n\n**Na prova:** haste maciça de titânio infecta menos; canulada de aço, mais.",
-  "correta": "**Canulada em aço.** Canulação e aço somam os dois fatores de risco.",
   "incorretas": {
-   "A": "**Sólida em aço.** A haste maciça não tem o espaço morto.",
-   "C": "**Sólida em titânio.** Titânio maciço é a de menor risco.",
-   "D": "**Canulada em titânio.** O titânio reduz o risco apesar da canulação."
+   "A": "**Sólida em aço.** Mantém o fator material proposto pela pergunta, mas não tem o espaço interno da haste canulada. Pode infectar se a fratura ou a operação forem contaminadas; o desenho sólido não a torna imune.",
+   "C": "**Sólida em titânio.** Reúne os dois fatores que tiveram menor infecção nas comparações experimentais, embora essa combinação não dispense desbridamento e prevenção adequados nas fraturas expostas.",
+   "D": "**Canulada em titânio.** Tem a luz interna, mas não o fator material aço. Sua canulação pode dificultar a limpeza se contaminada; a pergunta procura a combinação dos dois fatores."
   },
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A alternativa B permanece como resposta provável pela combinação de dois fatores observados em experimentos com coelhos. Os estudos compararam desenho e metal separadamente; não demonstraram diretamente que a haste canulada de aço seja, em pacientes, a mais infectada entre as quatro combinações.",
+  "conceito": "**Desenho e material são perguntas diferentes.** A haste intramedular pode ser sólida ou canulada, de aço ou de liga de titânio. A luz interna da canulada cria uma superfície de acesso e limpeza difíceis se houver contaminação. O aço e o titânio também diferem em propriedades de superfície e interação com os tecidos, mas não basta dizer que um metal é sempre seguro ou que o outro necessariamente infecta.\n\nEm um modelo experimental com tíbias de coelhos contaminadas, as hastes ocas tiveram mais infecção que as sólidas em uma comparação, e as de aço mais que as de titânio em outra. Como foram experimentos distintos, com inóculos diferentes, somar seus percentuais para fabricar uma taxa de infecção da haste canulada de aço seria incorreto. A alternativa B é a extrapolação que reúne os dois fatores desfavoráveis estudados, não uma classificação clínica definitiva.\n\n**Na prática, o hospedeiro e a ferida pesam muito.** Fratura exposta, grau de contaminação, lesão de partes moles, perfusão, desbridamento e profilaxia antibiótica influenciam o risco. A escolha da haste considera também o padrão da fratura, a estabilidade e a técnica de implantação. Se houver infecção, o biofilme no implante e a estabilidade da fratura entram na decisão terapêutica; trocar de metal, isoladamente, não resolve o problema.",
+  "correta": "**Canulada em aço, como resposta provável da questão.** Reúne a luz interna e o metal associados separadamente a mais infecção em um modelo animal. Isso não prova superioridade ou inferioridade absoluta entre todos os implantes usados em humanos.",
   "referencias": [
-   "Journal of the American Academy of Orthopaedics Surgeons. Vol. 8, nº 5, p. 285 a 291."
+   "Melcher et al. Infection after intramedullary nailing: an experimental investigation on rabbits. https://pubmed.ncbi.nlm.nih.gov/9039350/"
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "provavel": "B",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-1120": {
@@ -10119,19 +10119,19 @@
   "conferido": false
  },
  "trauma-1127": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": "**Parafuso deslizante e rotação.** Ao inserir o parafuso deslizante (rosca direita) no quadril direito, o giro tende a rodar o fragmento proximal e desviá-lo anteriormente. Usa-se fio-guia antirrotacional em fraturas instáveis.\n\n**Na prova:** usar fio antirrotacional ao passar o parafuso.",
-  "correta": "**Direito, devido ao desenho da rosca do parafuso deslizante.** A rosca do parafuso tende a girar o fragmento no lado direito.",
   "incorretas": {
-   "B": "**Direito, devido ao formato da placa.** Não é o formato da placa.",
-   "C": "**Esquerdo, devido ao desenho da rosca do parafuso deslizante.** O efeito descrito é no lado direito.",
-   "D": "**Esquerdo, devido ao formato da placa.** Lado e causa incorretos."
+   "B": "**Direito por causa da placa.** A alternativa atribui o desvio ao componente errado. A placa lateral dá suporte e deslizamento ao conjunto, enquanto a rotação durante a inserção se relaciona ao parafuso.",
+   "C": "**Esquerdo por causa da rosca.** Não é a resposta provável registrada, porém coincide com o lado e o mecanismo observados no estudo clínico disponível. Por isso esta opção não deve ser tratada como simplesmente falsa.",
+   "D": "**Esquerdo por causa da placa.** O lado coincide com o achado do estudo, mas a causa proposta não: o efeito descrito surge do torque aplicado na colocação do parafuso, não do desenho da placa."
   },
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. Mantivemos A como resposta provável previamente cadastrada, mas ela é contestável: um estudo clínico sobre parafuso deslizante encontrou projeção anterior do fragmento proximal em 11 de 30 fraturas instáveis à esquerda e em nenhuma de 26 à direita. Esse achado favorece C para o fenômeno descrito; não é honesto ensinar que o lado direito está comprovado.",
+  "conceito": "**O parafuso pode mover a fratura enquanto entra.** Na fixação com parafuso deslizante do quadril, a rosca avança na cabeça femoral mediante rotação. Se a fratura trocantérica é instável, o fragmento proximal pode acompanhar parte do torque antes de estar controlado. O resultado é perda da redução, vista no perfil como rotação ou projeção anterior de uma ponta óssea. O problema nasce do torque de inserção e da estabilidade da fratura, não do formato da placa lateral, que é acoplada depois.\n\n**O lado é precisamente a dúvida.** Uma pesquisa de fraturas instáveis tratadas com esse implante observou uma ponta anterior do fragmento proximal apenas nas fraturas do lado esquerdo de sua amostra, relacionando o achado ao torque horário do parafuso. Portanto, a regra antiga que esta questão parece exigir, lado direito por causa da rosca, entra em conflito com evidência clínica publicada. Sem gabarito oficial nem a fonte original usada pela banca, não há base para apresentar A como fato anatômico universal.\n\n**O que muda a operação.** Deve-se conferir a redução nas incidências frontal e lateral durante a inserção, evitar transmitir torque excessivo ao fragmento e usar controle antirrotacional temporário quando necessário. Em fraturas muito instáveis, a estratégia de fixação também depende da parede lateral, do suporte posteromedial e da possibilidade de obter redução estável. Decorar um lado não substitui observar a rotação real sob radioscopia.",
+  "correta": "**Direito por causa da rosca é a resposta provável cadastrada, mas não confirmada.** A rosca, e não a placa, pode transmitir torque ao fragmento; quanto ao lado, o estudo clínico citado encontrou o desvio anterior no esquerdo.",
   "referencias": [
-   "Rockwood C.A. et al. Fractures. Philadelphia: Lippincott. 6ª ed., p. 1811."
+   "Mohan et al. Dynamic hip screw: does side make a difference? Effects of clockwise torque on right and left DHS. https://pubmed.ncbi.nlm.nih.gov/11084157/"
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "provavel": "A",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-1128": {
@@ -10168,19 +10168,20 @@
   "conferido": false
  },
  "trauma-1130": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": "**Curvatura anterior do fêmur.** Varia com a etnia: é mais acentuada em asiáticos e menor em negros, o que importa na escolha e inserção das hastes.\n\n**Na prova:** curvatura femoral varia com a etnia; hastes retas em fêmur curvo arriscam fratura anterior.",
-  "correta": "**Negros.** É o grupo com menor curvatura anterior.",
   "incorretas": {
-   "A": "**Brancos.** Tem curvatura intermediária.",
-   "C": "**Asiáticos.** Tem a maior curvatura.",
-   "D": "**Índios.** Não é o grupo descrito."
+   "A": "**Brancos.** Na comparação citada, a média teve raio menor e, portanto, curvatura anterior maior. Há grande variação individual, e uma radiografia do paciente vale mais que a categoria populacional.",
+   "C": "**Asiáticos.** Estudos de algumas populações asiáticas descreveram arqueamento anterior acentuado, mas os valores variam entre populações e métodos. Não é correto atribuir um único raio a todos.",
+   "D": "**Categoria imprecisa.** O termo empregado na questão é desatualizado e agrupa povos indígenas muito diferentes. Sem amostra e mensuração definidas, não é possível usá-lo para prever a curvatura de um paciente."
   },
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. B é apenas a resposta provável dentro da comparação histórica utilizada pela questão. Categorias raciais amplas, especialmente o termo desatualizado da alternativa D, não representam bem a variação anatômica individual nem estabelecem uma hierarquia universal da curvatura femoral.",
+  "conceito": "**O fêmur não é uma haste reta.** A diáfise tem curvatura anterior no plano sagital. Uma forma de expressá-la é o raio de curvatura: quanto maior o raio, mais suave a curva; quanto menor, mais arqueado o osso. Em uma amostra citada na literatura, os valores médios dos participantes classificados como negros foram maiores que os dos classificados como brancos, fundamento limitado para a resposta provável B.\n\n**Médias de grupos não servem para operar um indivíduo.** Curvatura varia com sexo, idade, comprimento ósseo, método de medida e população estudada, com ampla sobreposição entre pessoas. Pesquisas em populações asiáticas também encontraram valores distintos umas das outras. A alternativa D usa uma categoria imprecisa e não acompanhada de medida que permita ordená-la com as demais. Assim, não se deve converter essa pergunta antiga em regra biológica rígida.\n\n**Por que o cirurgião mede a curva.** Ao escolher uma haste femoral, compara-se seu raio de curvatura com o fêmur concreto nas imagens pré-operatórias. Uma haste relativamente reta em diáfise muito arqueada pode encostar na cortical anterior distal, dificultar a progressão ou perfurá-la. Ponto de entrada, diâmetro, comprimento e redução devem ser revistos se aparecer esse conflito, independentemente do grupo demográfico do paciente.",
+  "correta": "**Negros, na comparação histórica que sustenta a resposta provável.** O dado é uma média de determinada amostra, expressa por raio de curvatura maior, não uma característica garantida de cada pessoa assim classificada.",
   "referencias": [
-   "Rockwood C.A. et al. Fractures. Philadelphia: Lippincott. 6ª ed., p. 1851."
+   "New Computerized Method in Measuring the Sagittal Bowing of Femur from Plain Radiograph. https://pmc.ncbi.nlm.nih.gov/articles/PMC6832379/",
+   "Morphological Measurement of the Femoral Anterior Bow in Chinese Population Based on Three-Dimensional Computed Tomography. https://pmc.ncbi.nlm.nih.gov/articles/PMC8589507/"
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "provavel": "B",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-1131": {
@@ -10252,19 +10253,20 @@
   "conferido": false
  },
  "trauma-1135": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": "**Fixador externo e consolidação.** A montagem muito rígida impede o micromovimento que estimula o calo, levando a retardo de consolidação. Por isso se faz a dinamização.\n\n**Na prova:** fixador rígido demais retarda a consolidação; dinamizar.",
-  "correta": "**Excesso de rigidez da montagem.** O excesso de rigidez é a causa mais associada.",
   "incorretas": {
-   "A": "**Afrouxamento dos pinos.** Afrouxamento causa instabilidade e infecção do trajeto.",
-   "C": "**Infecção.** Infecção do trajeto é a complicação mais comum, mas não a principal causa de retardo.",
-   "D": "**Instabilidade.** Instabilidade excessiva causa pseudartrose hipertrófica."
+   "A": "**Afrouxamento dos pinos.** Pode gerar perda de estabilidade, deformidade e infecção do trajeto. Se presente, exige avaliação e correção; apenas não representa o mecanismo de rigidez excessiva que a questão procura.",
+   "C": "**Infecção.** É causa real de atraso de consolidação e pode envolver pele, pinos ou osso. Deve ser investigada diante de secreção, dor ou piora radiográfica, mesmo que a pergunta privilegie uma explicação mecânica.",
+   "D": "**Instabilidade.** Movimento excessivo, especialmente cisalhamento, também impede a união. O benefício descrito nos estudos é do micromovimento axial controlado, não da montagem instável."
   },
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. B corresponde à ideia clássica de fixador rígido demais para consolidação por calo, mas o enunciado não oferece dados para provar que seja a causa mais frequente em todos os casos. Instabilidade, infecção e biologia local também podem retardar a consolidação.",
+  "conceito": "**A fratura precisa de estabilidade na medida certa.** Muitas fraturas diafisárias tratadas com fixador externo consolidam por formação de calo, isto é, estabilidade relativa. Pequenos deslocamentos axiais controlados durante a carga podem estimular essa resposta. Em estudos experimentais e clínicos, montagens travadas que suprimiam esse movimento se associaram a consolidação mais lenta do que construções com micromovimento axial adequado.\n\n**Nem todo movimento ajuda.** Cisalhamento, rotação e deslocamento excessivo dificultam a ponte óssea, sobretudo se há perda de contato ou grande lacuna entre fragmentos. Afrouxamento de pinos reduz o controle da montagem e pode acompanhar infecção do trajeto. Infecção profunda lesa tecidos e osso e também atrasa a união. Por isso a oposição simplista entre fixador rígido ruim e fixador frouxo bom é perigosa.\n\n**Dinamização tem indicação, não é reflexo automático.** Quando a redução está mantida, há contato e evolução biológica favorável, ajustar o fixador para permitir carga axial controlada pode ajudar a maturação do calo. Antes de fazê-lo, é preciso examinar alinhamento, integridade dos pinos, infecção, vascularização e tamanho do defeito. Fraturas com estabilidade absoluta e contato anatômico, por outro lado, podem consolidar diretamente com pouco calo; a ausência de calo isolada não prova falha.",
+  "correta": "**Excesso de rigidez da montagem, na lógica da resposta provável.** Em fixação externa que depende de calo, suprimir todo micromovimento axial pode atrasar a consolidação; isso não define a causa mais frequente em qualquer população.",
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 2708."
+   "The Mechanics of External Fixation. https://pmc.ncbi.nlm.nih.gov/articles/PMC2504087/",
+   "Shear movement at the fracture site delays healing in a diaphyseal fracture model. https://www.sciencedirect.com/science/article/pii/S0736026603000986"
   ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "provavel": "B",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-1136": {
