@@ -5620,27 +5620,27 @@
   "conferido": false
  },
  "pediatria-0512": {
-  "conceito": "### Osteocondroses e apofisites do pé\n| Epônimo | Local | Idade/perfil |\n|---|---|---|\n| ==Köhler== | ==navicular== | meninos de 4 a 7 anos; autolimitada |\n| ==Iselin== | ==base do 5º metatarso== (fibular curto) | adolescente ativo |\n| Freiberg | cabeça do 2º metatarso | adolescente feminina |\n| Sever | apófise do calcâneo (tendão calcâneo) | 8 a 12 anos, esportes |\n| Renander | sesamoide do hálux | |\n\n### Köhler\n- Navicular achatado, esclerótico, fragmentado.\n- Tratamento: bota gessada curta alivia a dor; reossifica sem sequela.\n\n### Iselin\n- Não confundir apófise (longitudinal) com fratura (transversa).\n\n### Iselin na prática\n- Apofisite por tração do ==fibular curto== na base do 5º MT.\n- 10 a 14 anos, esportes com corrida e mudança de direção.\n- Dor lateral, proeminência, dor à eversão resistida.\n- Tratamento: repouso relativo, gelo, bota se dor intensa; resolve com o fechamento da apófise.\n\n> **Na prova:** apofisite da base do 5º MT = ==Iselin==",
-  "correta": "**Iselin.**\n- Apofisite da base do 5º MT.\n- Tração do fibular curto.",
   "incorretas": {
-   "B": "**Köhler.**\n- Navicular.",
-   "C": "**Wojtys.**\n- Não é epônimo de apofisite do pé.",
-   "D": "**Freiberg.**\n- Cabeça do 2º MT.",
-   "E": "**Takahara.**\n- Estudos da OCD do capítulo; não é apofisite."
+   "B": "A doença de Köhler é a osteocondrose do navicular.",
+   "C": "Wojtys não é epônimo de apofisite do pé.",
+   "D": "A doença de Freiberg acomete a cabeça do 2º metatarso.",
+   "E": "Takahara é autor de estudos sobre a osteocondrite do capítulo, não epônimo de apofisite do pé."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "No pé da criança e do adolescente, várias **osteocondroses e apofisites** têm nome próprio. Saber o local de cada uma resolve a maioria das questões:\n\n**Iselin**: apofisite da **base do 5º metatarso**, por tração do **fibular curto**; adolescentes ativos de 10 a 14 anos, em esportes com corrida e mudança de direção;\n\n**Sever**: apofisite do **calcâneo**, por tração do tendão calcâneo; 8 a 13 anos;\n\n**Köhler**: osteocondrose do **navicular**; meninos de 4 a 7 anos;\n\n**Freiberg**: osteocondrose da **cabeça do 2º metatarso**; adolescentes do sexo feminino.\n\n**O quadro da doença de Iselin**: dor na **borda lateral do pé**, **proeminência** e sensibilidade na base do 5º metatarso, dor à eversão contra resistência e ao apoio.\n\n**Um cuidado na radiografia**: a apófise da base do 5º metatarso tem o traço **paralelo** ao eixo do osso; uma linha **transversa** sugere **fratura** (como a de Jones), e não apófise.\n\n**O tratamento**: repouso relativo, gelo e, se a dor for intensa, bota imobilizadora por algumas semanas. Resolve quando a apófise se funde.\n\n**Wojtys** e **Takahara** são autores ligados a estudos de joelho e cotovelo, não epônimos de apofisite do pé.\n\n**Na prova**: epifisite da base do 5º metatarso = **doença de Iselin**.",
+  "correta": "A doença de Iselin é a apofisite por tração do fibular curto na base do 5º metatarso.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0513": {
-  "conceito": "### GMFCS (6 a 12 anos)\n| Nível | Mobilidade |\n|---|---|\n| I | anda sem restrições; corre e salta com limitação |\n| II | anda na maioria dos ambientes; limitação em distâncias, terreno irregular |\n| III | anda com ==dispositivo manual== (andador, muletas); cadeira para distâncias |\n| ==IV== | ==controle de cabeça e tronco==; anda pouco (casa, com ajuda); ==cadeira de rodas na comunidade== (pode ser motorizada) |\n| V | sem controle de cabeça e tronco; transportado |\n\n### Uso ortopédico\n| Nível | Preocupação |\n|---|---|\n| I-III | marcha: análise, cirurgia multinível |\n| ==IV-V== | ==luxação do quadril== (vigilância radiográfica), escoliose |\n\n- Índice de migração de Reimers > 30 a 40%: cirurgia de partes moles ou osteotomias.\n\n### GMFCS de 2 a 4 anos\n| Nível | Função |\n|---|---|\n| I | anda sem apoio |\n| II | anda com apoio em móveis; engatinha recíproco |\n| III | senta sozinho, anda curtas distâncias com andador |\n| ==IV== | ==senta com apoio==, fica em pé para ==transferências==, anda minimamente; ==cadeira de rodas== |\n| V | sem controle de cabeça e tronco |\n\n> **Na prova:** fica em pé para transferências, anda pouco, cadeira = ==GMFCS IV==",
-  "correta": "**GMFCS IV.**\n- Transferências em pé.\n- Mobilidade em cadeira de rodas.",
   "incorretas": {
-   "A": "**I.**\n- Anda sem apoio.",
-   "B": "**II.**\n- Anda com apoio.",
-   "C": "**III.**\n- Anda com andador.",
-   "E": "**V.**\n- Sem controle de tronco nem transferências."
+   "A": "No nível I a criança anda sem apoio.",
+   "B": "No nível II a criança anda segurando nos móveis.",
+   "C": "No nível III a criança anda curtas distâncias com andador.",
+   "E": "No nível V não há controle de cabeça e tronco nem transferências em pé."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **GMFCS** classifica a mobilidade da criança com **paralisia cerebral** em cinco níveis, com descrições diferentes por faixa de idade. **Entre 2 e 4 anos**:\n\n**nível I**: anda sem apoio, como forma preferida de se locomover;\n\n**nível II**: anda segurando nos móveis; engatinha de forma recíproca;\n\n**nível III**: senta sozinho; anda curtas distâncias com andador e ajuda;\n\n**nível IV**: senta com apoio; **fica em pé para transferências** (por exemplo, da cama para a cadeira), mas **anda muito pouco**, e depende da **cadeira de rodas** para se mover;\n\n**nível V**: sem controle de cabeça e tronco; não consegue se manter sentado nem em pé; é transportado.\n\n**O caso**: criança de 3 anos que fica em pé para transferências, quase não anda e usa cadeira de rodas: **nível IV**.\n\n**Por que importa**: nos níveis IV e V, o risco de **luxação do quadril** é alto, e a criança precisa de radiografias periódicas da bacia (índice de migração de Reimers); a escoliose também é mais frequente. Nos níveis I a III, o foco é a marcha.\n\n**Na prova**: fica em pé para transferências, anda minimamente e depende de cadeira de rodas = **GMFCS IV**.",
+  "correta": "No nível IV, a criança fica em pé só para transferências, anda muito pouco e usa cadeira de rodas para se locomover.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0514": {
@@ -5657,106 +5657,106 @@
   "formato": "corrido"
  },
  "pediatria-0515": {
-  "conceito": "### Delbet (colo do fêmur na criança)\n| Tipo | Traço | Frequência | Necrose |\n|---|---|---|---|\n| ==I== | ==transepifisário== (IA sem luxação; ==IB com luxação== da epífise) | < 10% | ==até 100% no IB== |\n| II | transcervical | ==o mais comum== (40 a 50%) | cerca de 50% |\n| III | cervicotrocantérico | 25 a 35% | cerca de 25% |\n| IV | intertrocantérico | 10% | cerca de 10% |\n\n### Pontos\n- Alta energia; tipo I em < 2 anos sugere maus-tratos ou parto.\n- Tratamento: redução (fechada ou aberta) e fixação; descompressão capsular.\n- Complicações: necrose, coxa vara, fechamento fisário, pseudartrose.\n\n> **Na prova:** transfisária com luxação da epífise = ==Delbet IB==",
-  "correta": "**Delbet IB.**\n- Transepifisária com luxação.\n- Maior risco de necrose.",
   "incorretas": {
-   "A": "**IA.**\n- Sem luxação da epífise.",
-   "C": "**II B.**\n- Tipo II é transcervical, sem subtipo B.",
-   "D": "**III A.**\n- Cervicotrocantérico.",
-   "E": "**IV B.**\n- Intertrocantérico."
+   "A": "O tipo IA é transepifisário, mas sem luxação da epífise.",
+   "C": "O tipo II é transcervical e não tem subtipo B.",
+   "D": "O tipo III é cervicotrocantérico.",
+   "E": "O tipo IV é intertrocantérico."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "As **fraturas do colo do fêmur na criança** são raras e vêm de **trauma de alta energia** (exceto em lactentes, em que o tipo I sugere maus-tratos ou trauma de parto). A **classificação de Delbet** se baseia no **local do traço** e prevê o risco de **necrose**:\n\n**tipo I, transepifisário** (através da fise): menos de 10%; subdividido em **IA** (sem luxação da epífise) e **IB** (**com luxação da epífise** para fora do acetábulo); a necrose chega a quase **100% no IB**;\n\n**tipo II, transcervical**: o mais comum (40 a 50%); necrose em cerca de 50%;\n\n**tipo III, cervicotrocantérico** (basocervical): 25 a 35%; necrose em cerca de 25%;\n\n**tipo IV, intertrocantérico**: cerca de 10%; necrose em cerca de 10%.\n\n**A regra**: quanto mais **proximal** o traço, maior o risco de necrose, porque mais vasos retinaculares são lesados.\n\n**O tratamento**: redução (fechada ou aberta) urgente, **descompressão da cápsula** e fixação; no tipo IB, redução aberta.\n\n**As complicações**: necrose avascular, coxa vara, fechamento precoce da fise e pseudartrose.\n\n**Na prova**: fratura transfisária com luxação da epífise = **Delbet IB**.",
+  "correta": "O tipo IB é a fratura transepifisária com luxação da epífise, a de maior risco de necrose.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0516": {
-  "conceito": "### Tíbia proximal pediátrica (Mubarak, 2009)\n- Primeira classificação específica, pela ==direção da força==: valgo, varo, flexão, extensão, flexão-avulsão.\n- Padrão da fratura depende da ==idade== (maturidade da fise e da apófise).\n\n| Idade | Lesão predominante |\n|---|---|\n| crianças pequenas | metafisárias (==Cozen==, em valgo) |\n| pré-adolescentes | fisárias Salter-Harris I e II |\n| adolescentes perto da maturidade | Salter-Harris III e IV |\n| ==> 13 anos== | ==flexão-avulsão==: ==tubérculo tibial== (apófise fechando) |\n\n### Por que o tubérculo no adolescente\n- A apófise da tuberosidade fecha de proximal para distal; no fim do crescimento, a contração do quadríceps com joelho fletido arranca o fragmento (saltos).\n- Risco de síndrome compartimental (artéria tibial recorrente anterior).\n\n> **Na prova:** > 13 anos = ==flexão-avulsão do tubérculo tibial==",
-  "correta": "**> 13 anos, avulsão do tubérculo.**\n- Mecanismo de flexão-avulsão.\n- Apófise em fechamento.",
   "incorretas": {
-   "A": "**SH I e II.**\n- Idade média mais alta que 6 anos.",
-   "B": "**SH III e IV.**\n- Mais perto da maturidade.",
-   "C": "**Metafisárias.**\n- Idade média mais baixa (crianças pequenas).",
-   "D": "**10 a 12 anos.**\n- Predominam as fisárias, não as metafisárias."
+   "A": "As fraturas Salter-Harris I e II ocorrem em crianças mais velhas, não por volta de 6 anos.",
+   "B": "As fraturas Salter-Harris III e IV ocorrem mais perto da maturidade, em idade maior.",
+   "C": "As fraturas metafisárias, como a de Cozen, predominam nas crianças pequenas; a banca não considerou esta a conclusão do estudo.",
+   "D": "Entre 10 e 12 anos predominam as lesões fisárias, não as metafisárias."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "**Mubarak** e colaboradores (2009) propuseram a primeira classificação específica das **fraturas da tíbia proximal na criança**, baseada na **direção da força** (valgo, varo, flexão, extensão e flexão-avulsão). Eles mostraram também que o **tipo de fratura depende da idade**, porque a fise e a apófise amadurecem com o tempo:\n\n**crianças pequenas**: predominam as fraturas **metafisárias**, como a fratura de **Cozen** (em valgo), que pode deixar valgo progressivo;\n\n**pré-adolescentes**: predominam as lesões **fisárias** de Salter-Harris I e II;\n\n**adolescentes perto da maturidade**: Salter-Harris III e IV;\n\n**acima de 13 anos**: predominam as lesões por **flexão-avulsão**, com fraturas do **tubérculo tibial**.\n\n**Por que o tubérculo no adolescente**: a apófise da tuberosidade fecha de proximal para distal. No fim do crescimento, uma contração forte do quadríceps com o joelho fletido (salto, aterrissagem) **arranca** o fragmento.\n\n**Um risco importante**: a fratura do tubérculo pode lesar a artéria tibial recorrente anterior e causar **síndrome compartimental**.\n\n**Na prova**: o grupo com **mais de 13 anos** sofreu predominantemente lesões por **flexão-avulsão**, com fraturas do **tubérculo tibial**.",
+  "correta": "Acima de 13 anos, com a apófise em fechamento, predominam as avulsões do tubérculo tibial por flexão.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0517": {
-  "conceito": "### Fraturas transicionais do tornozelo\n- Adolescente perto do fim do crescimento: a fise distal da tíbia fecha de **central → medial → lateral**.\n- A porção **anterolateral** fica aberta por último e é arrancada pelo ligamento tibiofibular anteroinferior em **rotação externa**.\n- **Tillaux:** fragmento anterolateral; traço vertical pela epífise e horizontal pela fise = ==Salter-Harris III==. Alguns autores a descrevem como SH IV.\n- **Triplanar:** traço em três planos, aspecto de SH III na incidência AP e SH II na perfil.\n- Degrau articular acima de 2 mm: redução e fixação.\n\n### Triplanar em imagem\n| Incidência | Aparência |\n|---|---|\n| ==AP== | ==Salter-Harris III== (traço sagital pela epífise) |\n| ==perfil== | ==Salter-Harris II== (traço coronal pela metáfise posterior) |\n| TC | define fragmentos (2 a 4) e degrau |\n\n> **Na prova:** triplanar = ==SH III no AP e SH II no perfil==",
-  "correta": "**SH III no AP, SH II no perfil.**\n- Três planos: sagital, axial, coronal.\n- TC para planejar.",
   "incorretas": {
-   "A": "**Invertido.**\n- AP mostra SH III.",
-   "B": "**SH IV no AP.**\n- Aparência é SH III.",
-   "D": "**Fíbula.**\n- A fratura é da tíbia.",
-   "E": "**Fíbula e ordem.**\n- Tíbia, III no AP."
+   "A": "Está invertido: o AP mostra a Salter-Harris III e o perfil, a II.",
+   "B": "No AP a aparência é de Salter-Harris III, não IV.",
+   "D": "A fratura triplanar é da tíbia, e no AP parece Salter-Harris III.",
+   "E": "A fratura é da tíbia, e a ordem é Salter-Harris III no AP e II no perfil."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "As **fraturas transicionais do tornozelo** acontecem no adolescente perto do fim do crescimento. A fise distal da tíbia fecha numa ordem: primeiro a parte **central**, depois a **medial** e por último a **lateral**. Enquanto a parte anterolateral ainda está aberta, uma força em **rotação externa** pode arrancá-la.\n\n**As duas fraturas transicionais**:\n\n**Tillaux**: o ligamento tibiofibular anteroinferior arranca o fragmento **anterolateral** da epífise; o traço passa vertical pela epífise e horizontal pela fise: **Salter-Harris III**;\n\n**triplanar**: o traço passa em **três planos**: **sagital** pela epífise, **axial** pela fise e **coronal** pela metáfise posterior.\n\n**Como a triplanar aparece na radiografia**:\n\n**incidência AP**: parece uma **Salter-Harris III** (o traço sagital pela epífise);\n\n**incidência em perfil**: parece uma **Salter-Harris II** (o traço coronal sobe pela metáfise posterior);\n\n**tomografia**: mostra o número de fragmentos (2 a 4) e o **degrau articular**, essencial para o planejamento.\n\n**O tratamento**: se o degrau articular passa de 2 mm, redução (fechada ou aberta) e fixação.\n\n**Na prova**: a triplanar aparece como **Salter-Harris III no AP** e **Salter-Harris II no perfil**.",
+  "correta": "No AP, o traço sagital pela epífise lembra uma Salter-Harris III; no perfil, o traço pela metáfise posterior lembra uma Salter-Harris II.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0518": {
-  "conceito": "### Osteocondroses e apofisites do pé\n| Epônimo | Local | Idade/perfil |\n|---|---|---|\n| ==Köhler== | ==navicular== | meninos de 4 a 7 anos; autolimitada |\n| ==Iselin== | ==base do 5º metatarso== (fibular curto) | adolescente ativo |\n| Freiberg | cabeça do 2º metatarso | adolescente feminina |\n| Sever | apófise do calcâneo (tendão calcâneo) | 8 a 12 anos, esportes |\n| Renander | sesamoide do hálux | |\n\n### Köhler\n- Navicular achatado, esclerótico, fragmentado.\n- Tratamento: bota gessada curta alivia a dor; reossifica sem sequela.\n\n### Iselin\n- Não confundir apófise (longitudinal) com fratura (transversa).\n\n### Sever\n- ==Apofisite do calcâneo== por tração do tendão calcâneo e fáscia plantar.\n- Causa mais comum de dor no calcanhar de 8 a 13 anos; futebol, chuteira com travas.\n- Compressão lateromedial do calcâneo dolorosa.\n- RX: esclerose e fragmentação da apófise são normais (não diagnósticas).\n- Tratamento: repouso relativo, calcanheira, alongamento.\n\n> **Na prova:** apofisite do calcâneo = ==Sever==",
-  "correta": "**Sever.**\n- Apofisite do calcâneo.\n- Criança atleta, chuteira.",
   "incorretas": {
-   "B": "**Panner.**\n- Capítulo umeral.",
-   "C": "**Freiberg.**\n- Cabeça do 2º MT.",
-   "D": "**Kienböck.**\n- Semilunar.",
-   "E": "**Thiemann.**\n- Falanges da mão."
+   "B": "A doença de Panner acomete o capítulo do úmero.",
+   "C": "A doença de Freiberg acomete a cabeça do 2º metatarso.",
+   "D": "A doença de Kienböck é a necrose do semilunar.",
+   "E": "A doença de Thiemann acomete as epífises das falanges da mão."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **doença de Sever** é a **apofisite do calcâneo**: inflamação da apófise posterior por **tração repetida** do **tendão calcâneo** e da fáscia plantar.\n\n**O perfil**: criança ou adolescente de **8 a 13 anos**, ativo, em esportes de corrida e salto, sobretudo **futebol**; a **chuteira com travas** e sem amortecimento no calcanhar piora. É a **causa mais comum de dor no calcanhar** nessa idade.\n\n**O exame**: dor à **compressão lateromedial** do calcâneo (squeeze test) e na inserção do tendão; muitas vezes encurtamento do tríceps sural.\n\n**A radiografia**: a apófise do calcâneo **normal** já é mais densa e fragmentada; esses achados **não fazem** o diagnóstico. A radiografia serve para afastar outras causas (fratura, cisto, tumor).\n\n**O tratamento**: repouso relativo, gelo, **calcanheira** de silicone, alongamento do tríceps e troca do calçado. É **autolimitada** e resolve quando a apófise se funde.\n\n**Outras osteocondroses**:\n\n**Panner**: capítulo do úmero;\n\n**Freiberg**: cabeça do 2º metatarso;\n\n**Kienböck**: semilunar;\n\n**Thiemann**: epífises das falanges da mão.\n\n**Na prova**: osteocondrose da apófise do calcâneo = **doença de Sever**.",
+  "correta": "A doença de Sever é a apofisite do calcâneo, comum em crianças que jogam futebol de chuteira.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0519": {
-  "conceito": "### Suspensório de Pavlik\n| Tira | Função |\n|---|---|\n| anterior | ==flexão== do quadril (100 a 110°), bloqueia a extensão |\n| posterior | ==limita a adução== (não força a abdução) |\n\n- Permite ==flexão e abdução ativas==; ==limita extensão e adução==.\n- Indicação: < 6 meses; controle por ultrassom.\n\n### Complicações\n| Complicação | Causa |\n|---|---|\n| ==necrose avascular== (lesão fisária) | ==abdução forçada== (> 60°) |\n| paralisia do nervo femoral | ==flexão excessiva== |\n| doença do Pavlik (erosão posterior do acetábulo) | quadril luxado mantido sem reduzir |\n| luxação inferior (obturatória) | flexão excessiva |\n\n- Sem redução em 3 a 4 semanas: suspender.\n\n### Regulagem\n- Tiras anteriores na ==linha axilar anterior==, flexão de ==100 a 110°== (não 120 a 130).\n- Tiras posteriores frouxas: abdução passiva, sem forçar.\n- Contraindicações: ==frouxidão ligamentar excessiva== (Ehlers-Danlos), rigidez (artrogripose), desequilíbrio muscular (MMC), > 6 meses.\n- Sucesso em quadril Ortolani+ de ==cerca de 85 a 95%== (redução em 3 a 4 semanas); quadril luxado mantido sem reduzir: doença do Pavlik.\n\n> **Na prova:** Pavlik ==impede extensão e adução==, permite flexão e abdução",
-  "correta": "**Impede extensão e adução.**\n- Permite flexão e abdução ativas.\n- Redução dinâmica e estável.",
   "incorretas": {
-   "A": "**Flexão excessiva.**\n- 100 a 110°; 120 a 130° lesa o nervo femoral.",
-   "B": "**Frouxidão excessiva.**\n- Contraindicação ao Pavlik.",
-   "C": "**Luxação inferior.**\n- Flexão excessiva luxa inferiormente; necrose vem da abdução forçada.",
-   "D": "**Quatro meses sem reduzir.**\n- Se não reduz em 3 a 4 semanas, suspender (doença do Pavlik)."
+   "A": "A flexão correta é de 100 a 110°; 120 a 130° arrisca lesão do nervo femoral.",
+   "B": "A frouxidão ligamentar excessiva, como no Ehlers-Danlos, é contraindicação ao Pavlik.",
+   "C": "A flexão excessiva causa luxação inferior, e a necrose vem da abdução forçada; não há luxação anterior.",
+   "D": "Se o quadril não reduz em 3 a 4 semanas, o Pavlik é suspenso; mantê-lo por meses causa a doença do Pavlik."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **suspensório de Pavlik** é o tratamento de escolha da displasia do quadril nos **primeiros 6 meses**. Ele **impede a extensão e a adução**, os movimentos que fariam o quadril luxar de novo, e **permite flexão e abdução**, a posição em que a cabeça tende a reduzir e se estabilizar. O bebê chuta dentro desse arco, e o próprio movimento ajuda a aprofundar o acetábulo.\n\n**A regulagem correta**:\n\n**tiras anteriores**: na **linha axilar anterior**, mantendo a flexão do quadril em **100 a 110°**;\n\n**tiras posteriores**: frouxas, apenas limitando a adução; a abdução vem do peso das pernas, sem forçar.\n\n**As complicações de cada erro**:\n\n**flexão excessiva** (120 a 130° ou mais): lesão do **nervo femoral** e luxação **inferior** (obturatória);\n\n**abdução forçada**: **necrose avascular** e lesão da fise;\n\n**manter um quadril que não reduz**: **doença do Pavlik** (erosão posterior do acetábulo); se não reduzir em **3 a 4 semanas**, suspender.\n\n**As contraindicações**: frouxidão ligamentar excessiva (**Ehlers-Danlos**), rigidez (artrogripose), desequilíbrio muscular (mielomeningocele) e idade acima de 6 meses.\n\n**O sucesso** no quadril com Ortolani positivo é de cerca de 85 a 95%, com redução nas primeiras semanas.\n\n**Na prova**: o Pavlik **impede extensão e adução** e **permite flexão e abdução**.",
+  "correta": "Bem ajustado, o Pavlik bloqueia extensão e adução e deixa flexão e abdução livres, favorecendo a redução estável.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0520": {
-  "conceito": "### Fratura diafisária do fêmur por idade\n- **0–6 meses:** suspensório de Pavlik ou tala.\n- **6 meses–5 anos:** gesso pelvipodálico imediato.\n- **5–11 anos:** hastes flexíveis de titânio (estáveis); placa submuscular ou fixador nos instáveis.\n- ==Acima de 11 anos== (ou peso maior que 45–50 kg): **haste intramedular rígida** com entrada **trocantérica** (lateral), evitando a fossa piriforme pelo risco de necrose.\n\n### Por que evitar a fossa piriforme\n- Ramo profundo da ==circunflexa femoral medial== (artérias retinaculares posterolaterais) cruza a fossa piriforme.\n- Entrada na fossa: necrose da cabeça (1 a 2% em séries pediátricas).\n- Entrada no ==ápice do trocanter maior== (ou lateral): longe dos vasos, poucas complicações.\n\n> **Na prova:** haste rígida na criança = entrada no ==ápice do trocanter maior==",
-  "correta": "**Ápice do trocanter maior.**\n- Longe da circunflexa medial.\n- Reduz o risco de necrose.",
   "incorretas": {
-   "A": "**Fossa piriforme.**\n- Lesa a irrigação da cabeça.",
-   "C": "**Lateral.**\n- Opção de alguns sistemas; a banca preferiu o ápice.",
-   "D": "**Medial.**\n- Próximo dos vasos retinaculares."
+   "A": "A fossa do piriforme fica no trajeto dos vasos que nutrem a cabeça femoral; entrar ali arrisca necrose.",
+   "C": "A entrada lateral ao trocanter é usada em alguns sistemas, mas a banca preferiu o ápice.",
+   "D": "A porção medial do trocanter fica perto dos vasos retinaculares."
   },
+  "conceito": "Na **fratura diafisária do fêmur** da criança, o tratamento depende da idade e do peso:\n\n**até 6 meses**: suspensório de Pavlik ou tala;\n\n**6 meses a 5 anos**: gesso pelvipodálico;\n\n**5 a 11 anos**: **hastes flexíveis** de titânio nas fraturas estáveis; placa submuscular ou fixador nas instáveis;\n\n**acima de 11 anos** ou peso acima de 45 a 50 kg: **haste intramedular rígida bloqueada**.\n\n**O cuidado com o ponto de entrada da haste rígida**: na criança e no adolescente, a cabeça femoral depende dos **vasos retinaculares** que vêm do ramo profundo da **artéria circunflexa femoral medial** e passam pela região da **fossa do piriforme**. Entrar ali pode lesá-los e causar **necrose da cabeça femoral**.\n\n**Por isso** a entrada recomendada é **trocantérica**: no **ápice do trocanter maior** (ou um pouco lateral a ele), longe dos vasos, com hastes desenhadas para esse ponto. A entrada na fossa do piriforme é evitada até a maturidade.\n\n**A entrada medial no trocanter** fica próxima dos vasos e também é evitada.\n\n**Na prova**: na haste rígida do fêmur na criança, a entrada mais indicada é o **ápice do trocanter maior**.",
+  "correta": "Entrar no ápice do trocanter maior mantém a haste longe dos vasos retinaculares da circunflexa medial e reduz o risco de necrose.",
   "referencias": [
    "Rockwood and Wilkins' Fractures in Children, 10ª edição (Waters, Skaggs, Flynn), Cap. 25"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0521": {
-  "conceito": "### Fratura do côndilo lateral na criança\n- É intra-articular e **instável**: tende a desviar com o tempo.\n- O fragmento leva a origem de músculos extensores do punho, sobretudo o ==extensor radial longo do carpo==, e o ligamento colateral lateral.\n- A tração muscular gira e afasta o fragmento; por isso desvio acima de 2 mm vai para **redução e fixação**.\n- Complicações: pseudartrose, cúbito valgo e paralisia tardia do ulnar.\n\n### Côndilo lateral × supracondiliana\n| Aspecto | Côndilo lateral | Supracondiliana |\n|---|---|---|\n| frequência | 2ª do cotovelo (15 a 20%) | 1ª (50 a 70%) |\n| idade | 4 a 10 anos (pico 6) | 5 a 7 anos |\n| mecanismo | varo com antebraço supinado (pull-off) ou queda em extensão (push-off) | queda com cotovelo em hiperextensão |\n| fator anatômico | ==ângulo de carregamento mais valgo== | hiperextensão, frouxidão |\n\n### Milch e Jakob\n| Classificação | Critério |\n|---|---|\n| Milch I | traço lateral à tróclea (SH IV) |\n| Milch II | traço pela tróclea (SH II), instável |\n| Jakob 1 a 3 | desvio e rotação do fragmento |\n\n> **Na prova:** fator de risco para côndilo lateral = ==valgo maior do cotovelo==",
-  "correta": "**Ângulo de carregamento mais valgo.**\n- Concentra carga no compartimento lateral.\n- Associado à fratura do côndilo lateral.",
   "incorretas": {
-   "A": "**Obesidade.**\n- Associada a fraturas mais complexas, não ao tipo.",
-   "B": "**Hipotireoidismo.**\n- Relaciona-se à epifisiólise.",
-   "C": "**Idade precoce.**\n- Faixas semelhantes às da supracondiliana."
+   "A": "A obesidade se associa a fraturas mais complexas do cotovelo, não especificamente ao côndilo lateral.",
+   "B": "O hipotireoidismo se associa à epifisiólise, não ao tipo de fratura do cotovelo.",
+   "C": "As faixas etárias das duas fraturas são semelhantes; a idade precoce não é o fator."
   },
+  "conceito": "No cotovelo da criança, as duas fraturas mais comuns são a **supracondiliana** (a primeira, 50 a 70%) e a do **côndilo lateral** (a segunda, 15 a 20%). Elas têm mecanismos e fatores diferentes:\n\n**supracondiliana**: queda com o cotovelo em **hiperextensão**; faixa de 5 a 7 anos; a hiperextensão e a frouxidão favorecem;\n\n**côndilo lateral**: queda com força em **varo** e antebraço supinado (os extensores arrancam o côndilo) ou impacto da cabeça do rádio (empurra o côndilo); pico por volta de 6 anos.\n\n**O fator anatômico do côndilo lateral**: um **ângulo de carregamento mais valgo** concentra a carga no compartimento lateral do cotovelo e se associa à fratura do côndilo lateral, em vez da supracondiliana.\n\n**Por que a fratura do côndilo lateral exige atenção**: é **intra-articular** e **instável**. O fragmento carrega a origem do extensor radial longo do carpo e o ligamento colateral lateral, que o puxam e o rodam. Desvio acima de 2 mm pede **redução e fixação**; se não tratada, evolui com **pseudartrose**, **cúbito valgo** e paralisia **tardia do nervo ulnar**.\n\n**Os outros fatores**: a obesidade se associa a fraturas mais complexas, e o hipotireoidismo, à epifisiólise.\n\n**Na prova**: o fator de risco para fratura do côndilo lateral em vez de supracondiliana é o **ângulo de carregamento mais valgo**.",
+  "correta": "O valgo maior do cotovelo concentra carga no compartimento lateral e favorece a fratura do côndilo lateral.",
   "referencias": [
    "Rockwood and Wilkins' Fractures in Children, 10ª edição (Waters, Skaggs, Flynn), Cap. 17"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0522": {
-  "conceito": "### Base do 1º metacarpo na criança\n- Fise do 1º MT é ==proximal== (demais metacarpos: distal).\n\n| Tipo | Lesão |\n|---|---|\n| A | metafisária |\n| B | SH II com fragmento metafisário ulnar (ápice lateral) |\n| C | SH II com fragmento radial (ápice medial) |\n| D | ==SH III intra-articular==, equivalente pediátrico de Bennett |\n\n### Tratamento\n- Metafisárias e SH II: redução fechada e gesso; pinos se instáveis.\n- Intra-articular desviada: redução anatômica e fixação (degrau < 1 a 2 mm).\n\n> **Na prova:** a banca considerou o equivalente de Bennett como ==tipo A== (veja o alerta)",
-  "correta": "**Tipo A (gabarito).**\n- Resposta oficial.\n- Diverge da descrição usual (veja o alerta).",
   "incorretas": {
-   "B": "**SH II ulnar.**\n- Extra-articular.",
-   "C": "**SH II radial.**\n- Extra-articular.",
-   "D": "**SH III.**\n- Equivalente de Bennett na descrição usual; a banca não aceitou."
+   "B": "O tipo B é Salter-Harris II com fragmento ulnar, uma fratura extra-articular.",
+   "C": "O tipo C é Salter-Harris II com fragmento radial, também extra-articular.",
+   "D": "O tipo D, Salter-Harris III intra-articular, é o equivalente de Bennett na descrição usual, mas a banca não o aceitou."
   },
+  "conceito": "Na criança, a **fise do 1º metacarpo** fica na **base** (proximal), ao contrário dos outros metacarpos, que têm a fise na cabeça. Por isso as fraturas da base do 1º metacarpo podem envolver a fise.\n\n**A classificação usual (tipos A a D)**:\n\n**tipo A**: fratura **metafisária**, sem envolver a fise;\n\n**tipo B**: Salter-Harris II com fragmento metafisário do lado **ulnar** (ápice lateral);\n\n**tipo C**: Salter-Harris II com fragmento do lado **radial** (ápice medial);\n\n**tipo D**: Salter-Harris III **intra-articular**, que na descrição usual é o **equivalente pediátrico da fratura de Bennett** do adulto.\n\n**O que a banca considerou**: a resposta oficial foi o **tipo A**. Na descrição usual da classificação, o equivalente de Bennett seria o tipo D; a alternativa D seria defensável num recurso.\n\n**O tratamento**:\n\n**metafisárias e Salter-Harris II**: redução fechada e gesso; fios se instáveis;\n\n**intra-articular desviada**: redução anatômica e fixação, com degrau articular abaixo de 1 a 2 mm.\n\n**Na prova**: a banca considerou o equivalente pediátrico da fratura de Bennett como o **tipo A**.",
+  "correta": "A banca indicou o tipo A como equivalente da fratura de Bennett; a descrição usual aponta o tipo D.",
   "alerta": "Na classificação usual das fraturas da base do 1º metacarpo na criança (tipos A a D), o tipo A é metafisário e o tipo D (Salter-Harris III intra-articular) é o equivalente pediátrico da fratura de Bennett. A banca indicou A; a alternativa D seria defensável em recurso.",
   "referencias": [
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 12.6"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0523": {
