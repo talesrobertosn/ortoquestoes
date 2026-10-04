@@ -53,6 +53,13 @@ def carregar_acervo() -> dict[str, tuple[str, dict]]:
 
 def conferir(qid: str, comentario: dict, questao: dict) -> list[str]:
     problemas: list[str] = []
+    # Dissertativa não tem alternativas: o comentário é a resposta comentada.
+    if questao.get("tipo") == "dissertativa":
+        if not str(comentario.get("correta", "")).strip():
+            problemas.append(f"{qid}: falta a resposta comentada da dissertativa")
+        if comentario.get("incorretas"):
+            problemas.append(f"{qid}: dissertativa não tem alternativas para explicar")
+        return problemas
     # Sem gabarito oficial, vale a resposta pela bibliografia ("provavel").
     gabarito = questao.get("gabarito") or comentario.get("provavel")
     letras = {a["letra"] for a in questao["alternativas"]}

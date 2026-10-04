@@ -36,7 +36,7 @@ for (const [t, lista] of Object.entries(porTema)) {
 }
 const historico = Array.from({ length: 14 }, (_, i) => ({ id: 's' + i, criadaEm: hojeMs - i * DIA - 4000e3, concluidaEm: hojeMs - i * DIA - 3600e3, total: 20, respondidas: 20, acertos: 14 + (i % 5), segundos: 1500, descricao: ['Joelho · TEOT', 'Trauma adulto', 'Coluna · TARO', 'Mão e punho'][i % 4] }))
 const b = await chromium.launch({ executablePath: process.env.CHROMIUM ?? '/opt/pw-browsers/chromium' })
-const ctx = await b.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 3, isMobile: true, hasTouch: true, colorScheme: 'light' })
+const ctx = await b.newContext({ viewport: { width: Number(process.env.LARGURA ?? 390), height: 844 }, deviceScaleFactor: process.env.LARGURA ? 1 : 3, isMobile: !process.env.LARGURA, hasTouch: !process.env.LARGURA, colorScheme: 'light' })
 const p = await ctx.newPage()
 await p.route(/supabase\.co/, rota => {
   const u = rota.request().url()
