@@ -2007,18 +2007,18 @@
   "conferido": false
  },
  "pediatria-0145": {
-  "conceito": "### Legg-Calvé-Perthes: fases (Waldenström)\n| Fase | Achado |\n|---|---|\n| inicial (necrose) | cabeça densa, pequena; fratura subcondral (Salter-Thompson) |\n| ==fragmentação== | epífise fragmentada, colapso |\n| reossificação | osso novo |\n| residual | remodelada |\n\n### Classificações\n| Classificação | Incidência | Fase | Critério |\n|---|---|---|---|\n| ==Herring (pilar lateral)== | ==AP== | ==fragmentação== | altura do pilar lateral: A (100%), B (> 50%), B/C, C (< 50%) |\n| Catterall | AP e perfil | | quanto da epífise acometida (I a IV) + sinais de risco |\n| Salter-Thompson | perfil | inicial | extensão da fratura subcondral |\n| Stulberg | AP e perfil | ==maturidade== | congruência e esfericidade (prognóstico de artrose) |\n\n### Prognóstico\n- Pior: início > 8 anos, Herring C, sinais de cabeça em risco.\n\n### Herring em detalhe\n| Grupo | Pilar lateral | Prognóstico |\n|---|---|---|\n| A | ==sem perda== de altura | bom |\n| B | ==perda < 50%== | bom < 8 anos |\n| B/C | pilar estreito ou pouco ossificado, ~50% | intermediário |\n| C | ==perda > 50%== | ruim |\n\n> **Na prova:** Herring C = ==colapso > 50% do pilar lateral==",
-  "correta": "**C: mais de 50% de colapso.**\n- Pior prognóstico.\n- Cabeça tende a deformar.",
   "incorretas": {
-   "A": "**A não perde altura.**\n- < 50% é o B.",
-   "B": "**B perde < 50%.**\n- > 50% é C.",
-   "D": "**Não existe D.**\n- Só pilar lateral."
+   "A": "No grupo A não há perda de altura; perda menor que 50% é o grupo B.",
+   "B": "O grupo B perde menos de 50%; perda maior que 50% é o grupo C.",
+   "D": "A classificação de Herring não tem grupo D e avalia só o pilar lateral."
   },
+  "conceito": "A **classificação de Herring** (do pilar lateral) é a mais usada para o prognóstico na **doença de Perthes**. É feita na radiografia **AP** durante a **fase de fragmentação**. A epífise é dividida em três pilares (lateral, central e medial), e o que conta é a **altura do pilar lateral**, comparada com o lado normal.\n\n**Os grupos**:\n\n**A**: pilar lateral **sem perda** de altura; bom prognóstico;\n\n**B**: pilar lateral com mais de 50% da altura preservada, ou seja, **perda menor que 50%**; bom prognóstico se o início foi antes dos 8 anos;\n\n**B/C (limite)**: pilar estreito, pouco ossificado ou com cerca de 50% da altura; prognóstico intermediário;\n\n**C**: pilar lateral com menos de 50% da altura, ou seja, **colapso maior que 50%**; pior prognóstico, a cabeça tende a deformar.\n\n**Por que o pilar lateral**: ele sustenta a cabeça sob o acetábulo; se colapsa, a cabeça achata e sai de baixo da cobertura (extrusão).\n\n**Outras classificações**: Catterall (quanto da epífise é acometido), Salter-Thompson (fratura subcondral, na fase inicial) e Stulberg (forma final, na maturidade).\n\n**Na prova**: Herring C = **colapso de mais de 50%** do pilar lateral; não existe grupo D.",
+  "correta": "No grupo C, o pilar lateral perde mais da metade da altura, o que tem o pior prognóstico.",
   "referencias": [
    "https://pubmed.ncbi.nlm.nih.gov/1552014/",
    "https://pubmed.ncbi.nlm.nih.gov/23604650/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0146": {
@@ -2033,31 +2033,31 @@
   "conferido": false
  },
  "pediatria-0147": {
-  "conceito": "### Luxação congênita da cabeça do rádio\n- Anomalia congênita mais comum do cotovelo.\n- ==Bilateral== na maioria e ==associada== a outras manifestações (sinostose, síndromes como nail-patella, Ehlers-Danlos, Larsen).\n- Direção mais comum: ==posterior==.\n\n### Congênita × Monteggia crônico\n| Achado | Congênita | Traumática |\n|---|---|---|\n| lado | bilateral | unilateral |\n| cabeça | ==convexa (cúpula)==, pequena | côncava, normal |\n| capítulo | hipoplásico | normal |\n| ulna | reta | deformidade plástica |\n| direção | posterior | anterior |\n\n### Tratamento\n- Observação; ressecção da cabeça após a maturidade se dor.\n\n### Limitação de movimento\n| Direção | Bloqueio |\n|---|---|\n| ==posterior== | ==extensão== (cabeça bate atrás do capítulo) |\n| anterior | flexão |\n\n- Pronossupinação costuma ser pouco limitada; dor e estalido na adolescência.\n\n> **Na prova:** luxação congênita = ==posterior com limitação da extensão==",
-  "correta": "**Conservador.**\n- Função costuma ser boa.\n- Ressecção da cabeça após a maturidade se dor.",
   "incorretas": {
-   "B": "**Não se reduz.**\n- Cabeça deformada não congrui.",
-   "C": "**Irredutível.**\n- Anatomia alterada.",
-   "D": "**Técnica do Monteggia.**\n- Não da congênita."
+   "B": "A cabeça convexa e o capítulo hipoplásico não se encaixam; a redução aberta não se mantém.",
+   "C": "A luxação congênita é irredutível de forma estável pela anatomia alterada.",
+   "D": "Redução aberta com reconstrução do ligamento anular é tratamento do Monteggia antigo, não da forma congênita."
   },
+  "conceito": "A **luxação congênita da cabeça do rádio** é a anomalia congênita mais comum do cotovelo. Costuma ser **bilateral**, muitas vezes ligada a outras alterações (sinostose radioulnar, síndrome unha-patela, Ehlers-Danlos, Larsen), e a direção mais comum é **posterior**.\n\n**Como diferenciar do Monteggia antigo (traumático)**:\n\n**lado**: congênita bilateral; traumática unilateral;\n\n**cabeça do rádio**: congênita **convexa** (em cúpula) e pequena; traumática côncava e normal;\n\n**capítulo**: hipoplásico na congênita;\n\n**ulna**: reta na congênita; com deformidade plástica na traumática;\n\n**direção**: congênita posterior; Monteggia em geral anterior.\n\n**O quadro**: a luxação posterior **limita a extensão**; a pronossupinação costuma ser pouco limitada. Dor e estalido surgem na adolescência.\n\n**O tratamento é conservador**: a função costuma ser boa, e a cabeça deformada não encaixa num capítulo também deformado, então a redução não se mantém. Se houver dor depois da maturidade esquelética, faz-se a **ressecção da cabeça do rádio**.\n\n**Na prova**: luxação congênita da cabeça do rádio = tratamento **conservador**.",
+  "correta": "A função costuma ser boa e a anatomia deformada não permite redução estável; a conduta é conservadora, com ressecção da cabeça após a maturidade se doer.",
   "referencias": [
    "https://posna.org/physician-education/study-guide/congenital-radial-head-dislocation"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0148": {
-  "conceito": "### Sprengel: movimento do ombro\n- Escápula ==pequena (hipoplásica)==, alta e rodada, presa pelo omovertebral ou fibrose.\n- A ==glenoumeral é normal==; perde-se o ==ritmo escapulotorácico==.\n- Resultado: ==abdução limitada== (a escápula não roda).\n\n### Achados associados\n- Klippel-Feil, escoliose, costelas anômalas, diastematomielia, rim.\n\n### Cirurgia\n| Técnica | Princípio |\n|---|---|\n| Woodward | desinserção da origem medial (trapézio, romboides) e reinserção mais baixa |\n| Green | desinserção na escápula e descida |\n| + | ressecção do omovertebral (extraperiosteal), osteotomia da clavícula |\n\n- Idade 3 a 8 anos; ganho funcional maior na abdução.\n\n> **Na prova:** Sprengel = ==glenoumeral normal com escápula hipoplásica==.",
-  "correta": "**Abdução.**\n- Escápula presa não roda.\n- Primeiro movimento perdido.",
   "incorretas": {
-   "B": "**Preservada.**\n- Glenoumeral normal.",
-   "C": "**Preservada.**\n- Idem.",
-   "D": "**Menos afetada.**\n- Abdução sofre primeiro."
+   "B": "A rotação interna depende da glenoumeral, que é normal no Sprengel.",
+   "C": "A rotação externa também depende da glenoumeral e fica preservada.",
+   "D": "A elevação anterior é menos afetada; a abdução sofre primeiro."
   },
+  "conceito": "Na **deformidade de Sprengel**, a escápula **não desce** durante a vida fetal: fica **alta, pequena (hipoplásica) e rodada**, com o ângulo inferior apontando para a coluna. Muitas vezes está presa por um **osso omovertebral** ou por faixa fibrosa ligada à coluna cervical.\n\n**Por que a abdução sofre primeiro**: a articulação **glenoumeral é normal**. O problema é o **ritmo escapulotorácico**: para elevar o braço acima de cerca de 90°, a escápula precisa rodar sobre o tórax. Presa, ela não roda, e a **abdução** é o primeiro e mais limitado movimento. As rotações, que dependem da glenoumeral, ficam preservadas.\n\n**As associações**: **Klippel-Feil**, escoliose, costelas anômalas, diastematomielia e anomalias renais.\n\n**A cirurgia**, entre 3 e 8 anos, quando há limitação funcional ou estética importante:\n\n**Woodward**: desinsere a origem medial dos músculos (trapézio, romboides) na coluna e a reinsere mais abaixo;\n\n**Green**: desinsere os músculos na escápula e a desce;\n\n**gestos associados**: ressecção extraperiosteal do omovertebral e osteotomia da clavícula, para proteger o plexo braquial.\n\n**Na prova**: Sprengel limita primeiro a **abdução**; a glenoumeral é normal.",
+  "correta": "A escápula presa não roda sobre o tórax, e a abdução acima da horizontal, que depende desse movimento, é a primeira a ser perdida.",
   "referencias": [
    "https://posna.org/physician-education/study-guide/sprengel-s-deformity"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0149": {
@@ -2073,91 +2073,91 @@
   "conferido": false
  },
  "pediatria-0150": {
-  "conceito": "### Recidiva do pé torto após Ponseti\n| Tipo | Achado | Conduta |\n|---|---|---|\n| estrutural (rígida) | adução, cavo, varo ou equino fixos | ==novos gessos== ± tenotomia |\n| ==dinâmica== | ==supinação do antepé na marcha== (balanço), pé passivamente corrigível | ==transferência do tibial anterior== |\n\n### Transferência do tibial anterior\n- Destino: ==cuneiforme lateral== (ou cuboide em alguns serviços).\n- Pré-requisitos: pé ==flexível==, deformidade fixa já corrigida (gessos antes), idade em geral acima de 2,5 a 3 anos (cuneiforme lateral ossificado).\n- Mecanismo: tibial anterior dominante sobre os fibulares supina o pé ao dorsifletir.\n\n### Causa principal de recidiva\n- ==Não adesão à órtese de abdução== (botas com barra) até 4 a 5 anos.\n\n### Órtese de abdução (Denis Browne / botas com barra)\n| Pé | Rotação externa |\n|---|---|\n| ==afetado== | ==60 a 70°== |\n| ==normal== (unilateral) | ==30 a 40°== |\n\n- Barra na largura dos ombros; dorsiflexão de 10 a 15°.\n- ==23 h/dia por 3 meses==, depois ==noturna até 4 a 5 anos==.\n\n### Sequência de Ponseti (CAVE)\n| Ordem | Deformidade | Manobra |\n|---|---|---|\n| 1 | ==Cavo== | ==supinar o antepé== e ==elevar (dorsifletir) o 1º metatarso== (alinhar antepé ao retropé) |\n| 2 | Aduto | abduzir o pé com contrapressão na cabeça do tálus |\n| 3 | Varo | corrige junto com a abdução (calcâneo roda sob o tálus) |\n| 4 | Equino | por último; ==tenotomia percutânea== do tendão calcâneo se < 15° de dorsiflexão |\n\n- Nunca pronar o antepé: piora o cavo.\n- Nunca pressionar o calcâneo (bloqueia a rotação).\n\n> **Na prova:** primeira manipulação de Ponseti = ==cavo, supinando o antepé e elevando o 1º MT==",
-  "correta": "**Cavo.**\n- Supinar o antepé e elevar o 1º MT.\n- Alinhar antepé com retropé.",
   "incorretas": {
-   "A": "**Terceiro.**\n- Corrige com a abdução.",
-   "C": "**Último.**\n- Tenotomia se preciso.",
-   "D": "**Segundo passo.**\n- Abduzir, não corrigir abdução."
+   "A": "O varo é corrigido em terceiro, junto com a abdução do pé.",
+   "C": "O equino é corrigido por último, muitas vezes com tenotomia do tendão calcâneo.",
+   "D": "A abdução do pé é a manobra do segundo passo, que corrige o aduto."
   },
+  "conceito": "O **método de Ponseti** corrige o pé torto numa ordem fixa, resumida pela sigla **CAVE**: **cavo**, **aduto**, **varo** e **equino**.\n\n**1º, o cavo**: no pé torto, o **antepé está pronado** em relação ao retropé (o 1º metatarso está abaixado), formando o cavo. A primeira manipulação e o primeiro gesso **supinam o antepé** e **elevam o 1º metatarso**, alinhando antepé e retropé.\n\n**2º, o aduto**: o pé é abduzido com o polegar fazendo contrapressão na **cabeça do tálus**, na face lateral.\n\n**3º, o varo**: corrige junto com a abdução, porque o calcâneo roda por baixo do tálus.\n\n**4º, o equino**: por último; se a dorsiflexão não passar de cerca de 15°, faz-se a **tenotomia percutânea do tendão calcâneo**.\n\n**Os dois erros clássicos**: **pronar o antepé** (piora o cavo) e **pressionar o calcâneo** (bloqueia sua rotação sob o tálus).\n\n**Depois dos gessos**: a **órtese de abdução** (botas com barra) 23 horas por dia por 3 meses e depois à noite até 4 a 5 anos. A falta de adesão a ela é a principal causa de recidiva.\n\n**Na prova**: a primeira manipulação de Ponseti corrige o **cavo**.",
+  "correta": "A primeira manipulação supina o antepé e eleva o 1º metatarso, corrigindo o cavo e alinhando antepé e retropé.",
   "referencias": [
    "https://posna.org/physician-education/study-guide/clubfoot"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0151": {
-  "conceito": "### Sinovite transitória do quadril\n- Causa mais comum de dor no quadril entre ==3 e 8 anos==; meninos; frequentemente após virose.\n- Claudicação, quadril em flexão, abdução e RE; afebril ou febre baixa.\n- Autolimitada: 1 a 2 semanas, repouso e anti-inflamatório.\n- ==Recorrência anual de cerca de 4%==; pequena associação posterior com Perthes.\n\n### Diferencial com artrite séptica (Kocher)\n| Critério |\n|---|\n| febre > 38,5 °C |\n| não apoia o membro |\n| VHS > 40 mm/h |\n| leucócitos > 12.000 |\n| (+ PCR > 2 mg/dL, Caird) |\n\n| Nº de critérios | Probabilidade de séptica |\n|---|---|\n| 0 | < 1% |\n| 2 | cerca de 40% |\n| 3 | cerca de 93% |\n| 4 | > 99% |\n\n- Ultrassom mostra derrame nos dois; punção guiada se dúvida.\n\n> **Na prova:** sinovite transitória = ==meninos, idade média de 6 anos==",
-  "correta": "**Meninos, 6 anos.**\n- Faixa de 3 a 8 anos.\n- Predomínio masculino.",
   "incorretas": {
-   "A": "**Idade errada.**\n- Média de 6.",
-   "B": "**Sexo e idade errados.**\n- Meninos de 6.",
-   "D": "**Sexo errado.**\n- Meninos."
+   "A": "O sexo está certo, mas a idade média é de cerca de 6 anos.",
+   "B": "Erra o sexo e a idade: predomina em meninos, com média de 6 anos.",
+   "D": "A idade está certa, mas predomina em meninos."
   },
+  "conceito": "A **sinovite transitória do quadril** é a causa mais comum de **dor no quadril e claudicação** na criança entre **3 e 8 anos**. Predomina em **meninos**, com **idade média de cerca de 6 anos**, e costuma vir depois de uma infecção viral.\n\n**O quadro**: claudicação ou recusa de apoiar, quadril em flexão, abdução e rotação externa (posição de maior volume da cápsula), sem febre ou com febre baixa e bom estado geral.\n\n**A evolução**: é **autolimitada**, melhora em 1 a 2 semanas com repouso e anti-inflamatório. Recorre em cerca de 4% ao ano, e há pequena associação posterior com Perthes.\n\n**O grande diagnóstico diferencial é a artrite séptica**. Os **critérios de Kocher**:\n\n**febre** acima de 38,5 °C;\n\n**não apoiar** o membro;\n\n**VHS** acima de 40 mm/h;\n\n**leucócitos** acima de 12.000;\n\n**PCR** acima de 2 mg/dL, acrescentada por Caird.\n\n**A probabilidade de séptica**: abaixo de 1% sem critérios, cerca de 40% com dois, cerca de 93% com três e mais de 99% com quatro. O ultrassom mostra derrame nas duas; na dúvida, punção guiada.\n\n**Na prova**: sinovite transitória = **meninos**, idade média de **6 anos**.",
+  "correta": "A sinovite transitória predomina em meninos, na faixa de 3 a 8 anos, com média por volta de 6 anos.",
   "referencias": [
    "https://pmc.ncbi.nlm.nih.gov/articles/PMC3831260/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0152": {
-  "conceito": "### GMFCS (6 a 12 anos)\n| Nível | Mobilidade |\n|---|---|\n| I | anda sem restrições; corre e salta com limitação |\n| II | anda na maioria dos ambientes; limitação em distâncias, terreno irregular |\n| III | anda com ==dispositivo manual== (andador, muletas); cadeira para distâncias |\n| ==IV== | ==controle de cabeça e tronco==; anda pouco (casa, com ajuda); ==cadeira de rodas na comunidade== (pode ser motorizada) |\n| V | sem controle de cabeça e tronco; transportado |\n\n### Uso ortopédico\n| Nível | Preocupação |\n|---|---|\n| I-III | marcha: análise, cirurgia multinível |\n| ==IV-V== | ==luxação do quadril== (vigilância radiográfica), escoliose |\n\n- Índice de migração de Reimers > 30 a 40%: cirurgia de partes moles ou osteotomias.\n\n### Prognóstico de marcha na PC\n| Bom | Ruim |\n|---|---|\n| senta sozinho até ==2 anos== | ==não senta aos 2 anos== (Molnar) |\n| hemiplegia | tetraplegia |\n| | ==reflexos primitivos== persistentes após 18 a 24 meses (Bleck) |\n| | não senta aos 4 anos: raramente anda |\n\n> **Na prova:** pior prognóstico de marcha = ==não sentar aos 2 anos==",
-  "correta": "**Não sentar aos 2 anos.**\n- Preditor clássico de não deambulação.\n- Sentar até 2 anos prevê marcha.",
   "incorretas": {
-   "A": "**Não é o critério.**\n- Retardo mental não define a marcha.",
-   "B": "**Bom prognóstico.**\n- Hemiplégicos quase todos andam.",
-   "D": "**Não é o critério clássico.**\n- A idade de sentar pesa mais."
+   "A": "O retardo mental, isolado, não é o critério usado para prever a marcha.",
+   "B": "A hemiplegia tem bom prognóstico: quase todos os hemiplégicos andam.",
+   "D": "O controle da cabeça aos 8 meses não é o critério clássico; a idade de sentar pesa mais."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **paralisia cerebral**, os pais querem saber se a criança vai andar. Os preditores clássicos vêm do **controle motor grosseiro** que ela já alcançou:\n\n**sentar sozinho até os 2 anos**: preditor de que vai andar (Molnar); **não sentar aos 2 anos** é o critério clássico de **pior prognóstico**;\n\n**não sentar aos 4 anos**: raramente anda;\n\n**reflexos primitivos** persistentes depois de 18 a 24 meses (Bleck): pior prognóstico;\n\n**tipo topográfico**: quase todos os **hemiplégicos** andam; tetraplégicos raramente.\n\n**O GMFCS** classifica a mobilidade em cinco níveis, de I (anda sem restrições) a V (sem controle de cabeça e tronco, transportado). Nos níveis I a III, o foco ortopédico é a **marcha**; nos níveis IV e V, a vigilância do **quadril** (índice de migração de Reimers) e da coluna.\n\n**O que não define a marcha**: o retardo mental, isoladamente, não é o critério clássico; e o controle de cabeça aos 8 meses é marco precoce demais para prever deambulação.\n\n**Na prova**: pior prognóstico de marcha = **não sentar aos 2 anos**.",
+  "correta": "Não conseguir sentar sozinho aos 2 anos é o preditor clássico de que a criança não vai andar.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0153": {
-  "conceito": "### Deficiência femoral focal proximal (DFFP)\n- Espectro das deficiências congênitas do fêmur; ==unilateral== em geral.\n- Coxa curta, ==quadril em flexão, abdução e rotação externa==.\n- Associações: ==hemimelia fibular== (cerca de 50%), deficiência do LCA, pé com raios ausentes.\n\n### Aitken\n| Tipo | Cabeça femoral | Acetábulo |\n|---|---|---|\n| A | presente | normal |\n| B | presente, sem conexão ao colo | adequado |\n| C | ausente | displásico |\n| D | ausente | ausente |\n\n### Tratamento\n| Situação | Opção |\n|---|---|\n| discrepância prevista < 20 cm, quadril estável | alongamento, epifisiodese |\n| grave | ==Van Nes== (rotacionplastia), artrodese do joelho + prótese, Syme |\n\n### Gillespie (deficiência femoral)\n| Grupo | Achado | Tratamento |\n|---|---|---|\n| ==A== | fêmur curto, ==quadril e joelho funcionais==, pé no nível da tíbia contralateral | ==alongamento== (± epifisiodese) |\n| B | DFFP verdadeira, pé no nível do joelho oposto | Van Nes, Syme, artrodese do joelho + prótese |\n| C | deficiência grave, quase ausência do fêmur | prótese |\n\n### Gillespie A\n- Cabeça femoral ==presente==, acetábulo ==normal==, joelho funcional: reconstruível por alongamento.\n\n> **Na prova:** Gillespie A = ==cabeça presente e acetábulo normal==",
-  "correta": "**Presente e normal.**\n- Quadril reconstruível.\n- Candidato a alongamento.",
   "incorretas": {
-   "A": "**Cabeça ausente.**\n- Grupos graves.",
-   "C": "**Grave.**\n- Aitken C/D.",
-   "D": "**Acetábulo displásico.**\n- Não é o A."
+   "A": "Cabeça ausente aparece nos tipos graves, não no grupo A.",
+   "C": "Cabeça ausente com acetábulo displásico corresponde ao tipo C de Aitken, uma forma grave.",
+   "D": "A cabeça está presente, mas no grupo A o acetábulo é normal."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **deficiência femoral focal proximal** (DFFP) faz parte do espectro das deficiências congênitas do fêmur. Em geral é unilateral: a coxa é curta, o quadril fica em **flexão, abdução e rotação externa**, e há associação frequente com **hemimelia fibular** (cerca de metade) e ausência do LCA.\n\n**A classificação de Gillespie** pensa no que dá para reconstruir:\n\n**grupo A**: fêmur curto com **cabeça femoral presente**, **acetábulo normal** e quadril e joelho funcionais; o pé fica no nível da tíbia do outro lado; o caminho é o **alongamento**, com ou sem epifisiodese do lado normal;\n\n**grupo B**: DFFP verdadeira, com o pé na altura do joelho oposto; quadril instável; as opções são a **rotacionplastia de Van Nes**, a amputação de Syme e a artrodese do joelho com prótese;\n\n**grupo C**: deficiência grave, quase sem fêmur; prótese.\n\n**A classificação de Aitken** descreve o quadril: no tipo A a cabeça está presente e o acetábulo é normal; no B, cabeça presente sem ligação ao colo; no C, cabeça ausente e acetábulo displásico; no D, os dois ausentes.\n\n**Na prova**: Gillespie A = **cabeça presente** e **acetábulo normal**.",
+  "correta": "No grupo A de Gillespie, a cabeça femoral está presente e o acetábulo é normal, o que permite alongar o membro.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0154": {
-  "conceito": "### Hemimelia fibular\n- Deficiência longitudinal ==pós-axial==; a mais comum dos ossos longos.\n- Espectro: fíbula ausente ou hipoplásica, tíbia curta e arqueada (anteromedial, com covinha), fêmur curto, pé equinovalgo, ==raios laterais ausentes==, coalizão tarsal (bola e soquete no tornozelo).\n\n### Joelho\n| Achado | Consequência |\n|---|---|\n| ==hipoplasia do côndilo femoral lateral== | joelho valgo |\n| ==cruzados hipoplásicos ou ausentes== | ==instabilidade anteroposterior== |\n| espinhas tibiais pequenas | |\n\n### Classificações e tratamento\n- Achterman-Kalamchi, Paley (baseada no tornozelo e reconstrutibilidade).\n- Discrepância prevista e pé funcional decidem entre ==alongamento== (Paley SUPERankle) e ==Syme== + prótese.\n\n### Paley (hemimelia fibular)\n| Tipo | Tornozelo |\n|---|---|\n| 1 | estável |\n| 2 | valgo ==dinâmico== |\n| ==3== | ==equinovalgo fixo== (3a tornozelo, 3b subtalar, 3c ambos) |\n| 4 | pé em equinovaro (tipo pé torto) |\n\n- Tipo 3: SUPERankle (osteotomia, ressecção da anlage fibular) ou Syme.\n\n> **Na prova:** equinovalgo fixo na hemimelia fibular = ==Paley III==",
-  "correta": "**Tipo III.**\n- Equinovalgo fixo.\n- Subdivide pelo local da deformidade.",
   "incorretas": {
-   "A": "**Estável.**\n- Sem deformidade fixa.",
-   "B": "**Dinâmico.**\n- Não fixo.",
-   "D": "**Equinovaro.**\n- Tipo pé torto."
+   "A": "O tipo 1 tem tornozelo estável, sem deformidade fixa.",
+   "B": "O tipo 2 tem valgo dinâmico, que ainda corrige passivamente.",
+   "D": "O tipo 4 é o pé em equinovaro, parecido com pé torto."
   },
+  "conceito": "A **hemimelia fibular** é a deficiência congênita mais comum dos ossos longos. É **longitudinal pós-axial** e vai além da fíbula: tíbia curta e arqueada (com covinha na pele), fêmur curto, hipoplasia do côndilo femoral lateral (joelho valgo), cruzados ausentes, **raios laterais do pé ausentes**, coalizão tarsal e tornozelo em \"bola e soquete\".\n\n**A classificação de Paley** se baseia no **tornozelo** e orienta a reconstrução:\n\n**tipo 1**: tornozelo **estável**;\n\n**tipo 2**: **valgo dinâmico**, que corrige passivamente;\n\n**tipo 3**: **equinovalgo fixo**, subdividido pelo local da deformidade: 3a no tornozelo, 3b na subtalar (coalizão) e 3c nos dois;\n\n**tipo 4**: pé em **equinovaro**, parecido com pé torto.\n\n**O tratamento**: a decisão entre **reconstruir** (correção do pé com a cirurgia SUPERankle, ressecção da faixa fibrosa da fíbula e alongamento) e **amputar** (Syme com prótese) depende da discrepância prevista e de o pé ser funcional.\n\n**Na prova**: equinovalgo fixo na hemimelia fibular = **Paley tipo 3**.",
+  "correta": "O tipo 3 de Paley é o tornozelo em equinovalgo fixo, subdividido conforme a deformidade esteja no tornozelo, na subtalar ou nos dois.",
   "referencias": [
    "https://pmc.ncbi.nlm.nih.gov/articles/PMC5145840/",
    "https://pmc.ncbi.nlm.nih.gov/articles/PMC13033323/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0155": {
-  "conceito": "### Mucopolissacaridoses (MPS)\n| Tipo | Nome | Herança | Achados |\n|---|---|---|---|\n| I | ==Hurler== (grave) / Scheie | AR | ==retardo==, face grosseira, opacidade de córnea, giba toracolombar |\n| II | Hunter | ==ligada ao X== | sem opacidade de córnea |\n| III | Sanfilippo | AR | predomínio neurológico |\n| IV | ==Morquio== | AR | ==inteligência normal==, nanismo de tronco curto, ==instabilidade C1-C2 (odontoide hipoplásico)==, genu valgo |\n| VI | Maroteaux-Lamy | AR | inteligência normal |\n\n### Ortopedia\n- Morquio: ==avaliar a coluna cervical== antes de anestesia; artrodese occipitocervical se instável.\n- Hurler: cifose, displasia do quadril, túnel do carpo, dedo em gatilho múltiplo.\n- Tratamento: reposição enzimática, transplante de medula (Hurler).\n\n### Morquio × Hurler\n| Aspecto | Morquio (IV) | Hurler (I) |\n|---|---|---|\n| cognição | ==normal== | retardo |\n| articulações | ==hiperfrouxidão== (odontoide, joelho valgo) | ==rigidez== (mão em garra) |\n| córnea | opaca leve | opaca |\n| urina | queratan sulfato | dermatan e heparan |\n\n> **Na prova:** Morquio = ==cognição normal e hiperfrouxidão==",
-  "correta": "**Morquio.**\n- Hiperfrouxidão, odontoide hipoplásico.\n- Cognição normal.",
   "incorretas": {
-   "A": "**Rigidez.**\n- Mão em garra.",
-   "B": "**Rigidez.**\n- Forma atenuada da MPS I.",
-   "C": "**Rigidez.**\n- Ligada ao X."
+   "A": "Hurler cursa com rigidez articular, mão em garra e retardo mental.",
+   "B": "Scheie é a forma atenuada da MPS I, com rigidez articular e inteligência normal.",
+   "C": "Hunter, ligada ao X, também cursa com rigidez articular."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "As **mucopolissacaridoses** são doenças de depósito em que falta uma enzima lisossomal e os glicosaminoglicanos se acumulam. Para a ortopedia, a divisão mais útil é entre as que **enrijecem** e a que **afrouxa** as articulações.\n\n**As que enrijecem**:\n\n**Hurler (tipo I, forma grave)**: retardo mental, face grosseira, opacidade de córnea, giba toracolombar, **mão em garra**, dedo em gatilho múltiplo e túnel do carpo;\n\n**Scheie (tipo I, forma atenuada)**: inteligência normal, mas também com **rigidez articular**;\n\n**Hunter (tipo II)**: **ligada ao X**, sem opacidade de córnea, também com rigidez.\n\n**A que afrouxa**:\n\n**Morquio (tipo IV)**: **hiperfrouxidão ligamentar**, inteligência normal, nanismo de tronco curto, genu valgo e **odontoide hipoplásico com instabilidade C1-C2**; elimina queratan sulfato na urina.\n\n**O cuidado no Morquio**: avaliar a coluna cervical antes de qualquer anestesia; se instável, artrodese occipitocervical.\n\n**Na prova**: mucopolissacaridose com **frouxidão ligamentar** = **Morquio**.",
+  "correta": "O Morquio é a mucopolissacaridose com hiperfrouxidão, e o risco maior é a instabilidade C1-C2 pelo odontoide hipoplásico.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0156": {
-  "conceito": "### Menisco discoide\n| Aspecto | Dado |\n|---|---|\n| menisco | ==lateral== (quase sempre) |\n| prevalência | 0,4 a 17% (mais em asiáticos) |\n| bilateral | até 20% |\n| clínica | ==estalido==, bloqueio, ==lesões sem trauma== |\n\n### Watanabe\n| Tipo | Descrição |\n|---|---|\n| I completo | cobre todo o planalto, fixações normais |\n| II incompleto | cobre parte |\n| III ==Wrisberg== | ==sem fixação tibial posterior (coronário)==, só o ligamento de Wrisberg: ==hipermóvel== |\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| assintomático | observar |\n| sintomático estável | ==saucerização== (meniscectomia parcial) |\n| Wrisberg / instável | saucerização + ==sutura periférica==; clássico: meniscectomia total |\n\n> **Na prova:** tipo Wrisberg = sem fixação tibial posterior; clássico: ==meniscectomia total== (veja o alerta).",
-  "correta": "**Meniscectomia total no Wrisberg.**\n- Associação clássica de prova.\n- Hoje prefere-se saucerizar e estabilizar (veja o alerta).",
   "incorretas": {
-   "A": "**Frequentes, sim.**\n- Mas o gabarito é o B.",
-   "C": "**Menisco errado.**\n- É o lateral.",
-   "D": "**Invertida.**\n- O Wrisberg tem o ligamento de Wrisberg; falta o coronário."
+   "A": "O menisco discoide lesa com trauma mínimo, mas a banca considerou como certa a associação clássica do tipo Wrisberg.",
+   "C": "O menisco discoide é quase sempre o lateral, não o medial.",
+   "D": "Está invertida: o tipo Wrisberg tem o ligamento de Wrisberg; o que falta é a fixação tibial posterior."
   },
+  "conceito": "O **menisco discoide** é um menisco largo, em forma de disco, que cobre mais do planalto tibial que o normal. É quase sempre o **lateral**, com prevalência de cerca de 0,4 a 17% (mais comum em asiáticos) e bilateral em até 20%. Por ser espesso e pouco vascularizado, **lesa com trauma mínimo**; a queixa típica é o **estalido**, às vezes com bloqueio.\n\n**A classificação de Watanabe**:\n\n**tipo I (completo)**: cobre todo o planalto, com fixações periféricas normais;\n\n**tipo II (incompleto)**: cobre parte do planalto;\n\n**tipo III (Wrisberg)**: **não tem a fixação tibial posterior** (ligamento coronário); fica preso atrás só pelo **ligamento de Wrisberg** (meniscofemoral posterior). Por isso é **hipermóvel** e dá o \"joelho que estala\".\n\n**O tratamento**:\n\n**assintomático**: observar;\n\n**sintomático e estável**: **saucerização**, ou seja, meniscectomia parcial que devolve o formato de C;\n\n**tipo Wrisberg ou instável**: a associação clássica de prova é a **meniscectomia total**; hoje se prefere saucerizar e **suturar a periferia** para estabilizar, quando possível.\n\n**Na prova**: tipo Wrisberg = sem fixação tibial posterior; resposta clássica = **meniscectomia total**.",
+  "correta": "O tipo Wrisberg não tem fixação posterior e é instável; a resposta clássica é a meniscectomia total, embora hoje se tente saucerizar e suturar.",
   "alerta": "A literatura mais recente tende a preferir a saucerização parcial com estabilização periférica, mesmo no tipo Wrisberg, sempre que tecnicamente possível, reservando a meniscectomia total para os casos em que a preservação não é viável, mas a associação clássica \"tipo Wrisberg = meniscectomia total\" continua sendo a mais cobrada nas classificações de prova.",
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0157": {
