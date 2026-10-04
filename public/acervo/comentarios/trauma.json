@@ -1653,14 +1653,14 @@
   "conferido": false
  },
  "trauma-0146": {
-  "conceito": "### Úmero proximal: complicações\n| Complicação | Frequência |\n|---|---|\n| ==rigidez (capsulite)== | ==a mais comum==, conservador e cirúrgico |\n| consolidação viciosa (varo, tuberosidade) | comum |\n| necrose avascular | 4 partes, luxação, split da cabeça |\n| perfuração de parafusos | placa bloqueada |\n| pseudartrose | colo cirúrgico, rara |\n\n### Prevenção da rigidez\n- Tipoia curta (2 a 3 semanas) e ==mobilização pendular/passiva precoce==.\n- 80 a 85% são pouco desviadas: conservadoras.\n\n> **Na prova:** complicação mais comum no úmero proximal = ==rigidez==",
-  "correta": "**Rigidez articular.**\n- Mais frequente.\n- Mobilização precoce previne.",
   "incorretas": {
-   "A": "**Impacto.**\n- Tuberosidade alta ou placa alta.",
-   "C": "**Osteonecrose.**\n- Menos frequente.",
-   "D": "**Consolidação viciosa.**\n- Comum, mas menos que a rigidez."
+   "A": "O impacto subacromial vem do tubérculo maior alto ou da placa alta, e é menos frequente.",
+   "C": "A osteonecrose é menos frequente que a rigidez.",
+   "D": "A consolidação viciosa é comum, mas menos que a rigidez."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A maioria das fraturas do **úmero proximal** (80 a 85%) tem **pouco desvio** e é tratada sem cirurgia. Mesmo assim, o ombro sofre: a complicação **mais comum** é a **rigidez articular**.\n\n**Por quê**: o ombro é a articulação que mais **enrijece** com a imobilização. O hematoma, a dor e o tempo na tipoia levam a **aderências** da cápsula e do espaço subacromial.\n\n**A prevenção**:\n\n**tipoia curta**, por 2 a 3 semanas;\n\n**exercícios pendulares** e **mobilização passiva** precoces, assim que a dor permitir;\n\nna cirurgia, **fixação estável** que deixe mobilizar cedo.\n\n**As outras complicações**:\n\n**consolidação viciosa**: comum, sobretudo do tubérculo maior ou em varo, mas menos que a rigidez;\n\n**impacto subacromial**: pelo tubérculo maior consolidado alto ou pela placa mal posicionada;\n\n**osteonecrose**: mais rara, ligada aos critérios de Hertel e às fraturas em quatro partes.\n\n**Na prova**: a complicação mais comum da fratura do úmero proximal é a **rigidez articular**.",
+  "correta": "A rigidez do ombro é a complicação mais frequente; a mobilização precoce é a melhor prevenção.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0147": {
@@ -1675,80 +1675,81 @@
   "conferido": false
  },
  "trauma-0148": {
-  "conceito": "### Acessos ao planalto posterior\n| Via | Intervalo | Alcança | Risco |\n|---|---|---|---|\n| anterolateral | tibial anterior/trato iliotibial | platô lateral | |\n| ==posterolateral== | ==cabeça lateral do gastrocnêmio × bíceps femoral== (ou com osteotomia da fíbula, Frosch/Lobenhoffer) | ==fragmento posterolateral== | ==nervo fibular== (medial ao bíceps), artéria tibial anterior |\n| posteromedial | gastrocnêmio medial × pata de ganso/semimembranáceo | coluna posteromedial | safeno |\n| posterior (Lobenhoffer, prono) | entre cabeças do gastrocnêmio | parede posterior | vasos poplíteos |\n\n> **Na prova:** posterolateral = ==gastrocnêmio lateral × bíceps femoral==",
-  "correta": "**Gastrocnêmio lateral e bíceps.**\n- Intervalo posterolateral.\n- Proteger o fibular.",
   "incorretas": {
-   "A": "**Tensor e fibular longo.**\n- Não é o intervalo.",
-   "B": "**Gastrocnêmio e fibular longo.**\n- Fibular longo é distal/anterior.",
-   "C": "**Tensor e bíceps.**\n- Lateral, não posterolateral."
+   "A": "O tensor da fáscia lata e o fibular longo não formam o intervalo posterolateral.",
+   "B": "O fibular longo fica distal e anterolateral, fora desse intervalo.",
+   "C": "O tensor da fáscia lata é lateral e não forma o intervalo posterior."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "As fraturas do **planalto tibial posterior** precisam de acessos **posteriores**, porque uma placa anterolateral não segura bem um fragmento posterior.\n\n**Os acessos**:\n\n**posteromedial**: entre o **gastrocnêmio medial** e a **pata de ganso** (semitendíneo); para o fragmento posteromedial;\n\n**posterolateral**: entre o **gastrocnêmio lateral** e o **bíceps femoral**; para o fragmento posterolateral; o **nervo fibular comum** corre junto ao bíceps e precisa ser identificado e protegido;\n\n**Lobenhoffer**: paciente em decúbito ventral, pelo intervalo entre o gastrocnêmio medial e o semimembranoso;\n\n**Frosch**: posterolateral com osteotomia da fíbula ou sem ela, combinado com via lateral.\n\n**O cuidado no posterolateral**: além do fibular, a **artéria tibial anterior** atravessa a membrana interóssea logo abaixo; a dissecção não pode descer demais.\n\n**Na prova**: o acesso posterolateral do planalto usa o intervalo entre o **gastrocnêmio lateral** e o **bíceps femoral**.",
+  "correta": "O acesso posterolateral entra entre o gastrocnêmio lateral e o bíceps femoral, protegendo o nervo fibular.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0149": {
-  "conceito": "### Parâmetros radiográficos do tornozelo\n| Parâmetro | Incidência | Normal |\n|---|---|---|\n| ==espaço claro tibiofibular== | AP/mortise, 1 cm acima da articulação | ==< 6 mm== |\n| sobreposição tibiofibular | AP | > 6 mm (ou > 42% da fíbula) |\n| | mortise | > 1 mm |\n| espaço claro medial | mortise | ≤ 4 mm (igual ao superior) |\n| ângulo talocrural | mortise | 83 ± 4° (diferença < 5° com o lado sadio) |\n| linha de Shenton do tornozelo, sinal da moeda (dime) | | contínuos |\n\n> **Na prova:** boa redução = espaço tibiofibular de ==3 mm== (< 6 mm)",
-  "correta": "**Espaço tibiofibular de 3 mm.**\n- Abaixo de 6 mm.\n- Sindesmose reduzida.",
   "incorretas": {
-   "A": "**Talocrural 60°.**\n- Normal é cerca de 83°.",
-   "B": "**Espaço medial de 7 mm.**\n- Indica lesão do deltoide.",
-   "C": "**Sobreposição.**\n- Parâmetro descrito de forma incorreta pela alternativa."
+   "A": "O ângulo talocrural normal é de cerca de 83°, não 60°.",
+   "B": "O espaço claro medial de 7 mm indica lesão do deltoide.",
+   "C": "A sobreposição maior que 6 mm no AP também indica sindesmose reduzida, mas a banca não aceitou."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Depois de reduzir uma **fratura do tornozelo**, a radiografia confere a **sindesmose** e o **encaixe** do tálus. Os parâmetros clássicos:\n\n**espaço livre tibiofibular** (entre a parede medial da fíbula e a incisura da tíbia), medido 1 cm acima do teto: **menor que 6 mm** no AP e no AP verdadeiro (mortise); um valor como **3 mm** indica sindesmose reduzida;\n\n**sobreposição tibiofibular** (tubérculo anterior da tíbia sobre a fíbula): **maior que 6 mm** no AP, ou maior que 1 mm no AP verdadeiro;\n\n**espaço claro medial**: até **4 mm**, igual ao espaço superior; acima disso, lesão do **deltoide** e desvio lateral do tálus;\n\n**ângulo talocrural**: cerca de **83°** (8 a 15° de variação), igual ao lado oposto; mede o **comprimento** da fíbula.\n\n**O alerta**: um espaço claro medial de 7 mm indica lesão do deltoide e encaixe alargado.\n\n**Na prova**: a banca indicou o espaço de **3 mm** entre a fíbula e a incisura como parâmetro de boa redução.",
+  "alerta": "A sobreposição tibiofibular maior que 6 mm no AP também indica sindesmose reduzida, e a alternativa C descreve 7 mm de sobreposição, o que a torna defensável. A banca indicou D.",
+  "correta": "A banca considerou o espaço tibiofibular de 3 mm, abaixo de 6 mm, como sinal de sindesmose reduzida.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0150": {
-  "conceito": "### Síndrome compartimental aguda\n- Pressão no compartimento colapsa ==vênulas== primeiro: gradiente arteriovenoso cai e a perfusão capilar cessa com ==pulso ainda presente==.\n- Diagnóstico ==clínico e seriado==: nenhum sinal isolado é confiável.\n\n### Sinais\n| Sinal | Valor |\n|---|---|\n| ==dor desproporcional== | primeiro e mais sensível |\n| dor ao estiramento passivo | sensível |\n| parestesia | intermediário |\n| paralisia | tardio |\n| ==pulso ausente== | ==muito tardio== (ou lesão arterial) |\n\n### Pressão\n- ==Delta P = diastólica - pressão compartimental < 30 mmHg== indica fasciotomia.\n- Útil em pacientes inconscientes, sedados, crianças.\n\n### Tratamento\n- Soltar curativos/gessos; membro à altura do coração; ==fasciotomia== (perna: duas incisões, quatro compartimentos).\n\n### Delta P\n- ==Delta P = pressão arterial diastólica − pressão intracompartimental==.\n- ==< 30 mmHg== = fasciotomia.\n- Mais confiável que o valor absoluto (> 30 a 45 mmHg), pois considera a perfusão do paciente (hipotensos toleram menos).\n- Medir perto da fratura (até 5 cm), em todos os compartimentos suspeitos.\n\n> **Na prova:** Delta P = ==diastólica − intracompartimental==",
-  "correta": "**Diastólica menos intracompartimental.**\n- Delta P < 30 indica fasciotomia.\n- Ajusta à perfusão.",
   "incorretas": {
-   "A": "**Sistólica.**\n- Referência é a diastólica.",
-   "B": "**Sistólica.**\n- Não é a fórmula.",
-   "C": "**Invertido.**\n- Diastólica menos compartimento."
+   "A": "A fórmula usa a pressão diastólica, não a sistólica, e na ordem inversa.",
+   "B": "A referência do delta P é a pressão diastólica, não a sistólica.",
+   "C": "A diastólica está certa, mas a subtração está invertida."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **síndrome compartimental aguda**, a pressão do compartimento colapsa primeiro as **vênulas**. O gradiente entre artéria e veia cai, e a perfusão dos capilares para, mesmo com o **pulso presente**.\n\n**O delta P**: é a forma mais confiável de usar a pressão medida:\n\n**Delta P = pressão arterial diastólica − pressão intracompartimental**;\n\n**menor que 30 mmHg**: indica **fasciotomia**.\n\n**Por que usar a diastólica**: ela representa a pressão que ainda empurra o sangue pelos capilares durante todo o ciclo. O delta P considera a **perfusão** do paciente: um paciente **hipotenso** tolera uma pressão de compartimento menor que um normotenso. Por isso o delta P é melhor que um valor absoluto (30 a 45 mmHg).\n\n**Como medir**: perto da fratura (até 5 cm do foco), em **todos** os compartimentos suspeitos. É mais útil no paciente **inconsciente**, sedado ou na **criança**, em que o exame clínico falha.\n\n**O tratamento**: abrir curativos e gesso, deixar o membro na **altura do coração** e fazer a **fasciotomia** (na perna, duas incisões para os quatro compartimentos).\n\n**Na prova**: o delta P é a **pressão diastólica menos a pressão intracompartimental**.",
+  "correta": "O delta P subtrai a pressão do compartimento da pressão diastólica; abaixo de 30 mmHg, indica fasciotomia.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0151": {
-  "conceito": "### Síndrome compartimental crônica de esforço\n- Causada por ==exercício repetitivo==: aumento do volume muscular num compartimento pouco complacente.\n- Dor em aperto que surge em distância/tempo previsível e ==cede em repouso== (minutos).\n- Compartimento ==anterior== da perna o mais comum; bilateral em 70 a 80%.\n\n### Diagnóstico (Pedowitz)\n| Momento | Pressão |\n|---|---|\n| repouso | ≥ 15 mmHg |\n| 1 min após exercício | ≥ 30 mmHg |\n| 5 min após | ≥ 20 mmHg |\n\n### Tratamento\n- Modificação da atividade; ==fasciotomia eletiva== se persistir.\n\n### Aguda × crônica\n| | Aguda | Crônica |\n|---|---|---|\n| causa | trauma, gesso, reperfusão | exercício |\n| urgência | emergência | eletiva |\n\n### Hérnia fascial\n- Achado ==mais específico== ao exame (20 a 60%): defeito na fáscia do compartimento anterior/lateral, muitas vezes onde emerge o ==nervo fibular superficial==.\n- Pode comprimir o nervo (parestesia no dorso do pé).\n\n> **Na prova:** crônica associada a ==hérnia fascial==",
-  "correta": "**Hérnia fascial.**\n- Achado mais específico.\n- Perto do fibular superficial.",
   "incorretas": {
-   "A": "**Pé cavo.**\n- Sem relação.",
-   "B": "**Tíbia vara.**\n- Sem relação.",
-   "D": "**Tríceps curto.**\n- Sem relação."
+   "A": "O pé cavo não tem relação com a síndrome compartimental crônica.",
+   "B": "A tíbia vara não tem relação com a síndrome.",
+   "D": "O encurtamento do tríceps não se associa à síndrome."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **síndrome compartimental crônica de esforço** aparece em corredores e atletas: o volume dos músculos aumenta com o exercício, e a fáscia pouco complacente não acompanha. A dor surge após um tempo previsível e **cede com o repouso**. O compartimento **anterior** da perna é o mais acometido, e o quadro costuma ser **bilateral**.\n\n**A hérnia fascial**: é o achado **mais específico** do exame físico, presente em 20 a 60% dos casos. É um defeito na fáscia dos compartimentos **anterior ou lateral**, por onde o músculo faz saliência no esforço.\n\n**Onde fica**: muitas vezes no ponto em que o **nervo fibular superficial** atravessa a fáscia, cerca de 10 a 12 cm acima do maléolo lateral. A hérnia pode **comprimir o nervo**, com dormência no **dorso do pé**.\n\n**O diagnóstico**: medir a pressão antes e depois do exercício (critérios de **Pedowitz**).\n\n**O tratamento**: modificar a atividade; se persistir, **fasciotomia eletiva**, com cuidado para não lesar o fibular superficial.\n\n**Os outros achados** (pé cavo, tíbia vara, encurtamento do tríceps) não têm relação com a síndrome.\n\n**Na prova**: a síndrome compartimental crônica da perna se associa à **hérnia fascial**.",
+  "correta": "A hérnia fascial é o achado mais específico, muitas vezes onde o fibular superficial atravessa a fáscia.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0152": {
-  "conceito": "### Magerl/AO (aplicada à coluna)\n| Tipo | Mecanismo | Colunas | Gravidade |\n|---|---|---|---|\n| A | ==compressão== | anterior | menor |\n| B | ==distração== (flexão ou extensão) | posterior (tensão) | intermediária |\n| ==C== | ==rotação/translação== (cisalhamento) | todas | ==maior==, mais déficit neurológico |\n\n### AO Spine subaxial (atual)\n- A (compressão), B (banda de tensão), C (translação), F (faceta), modificadores neurológicos.\n\n> **Na prova:** Magerl mais grave = ==rotação (tipo C)==",
-  "correta": "**Rotação.**\n- Tipo C: translação/cisalhamento.\n- Mais instável e com mais déficit.",
   "incorretas": {
-   "B": "**Distração.**\n- Tipo B, intermediário.",
-   "C": "**Complexo.**\n- Não é categoria.",
-   "D": "**Compressão.**\n- Tipo A, menos grave."
+   "B": "A distração é o tipo B, de gravidade intermediária.",
+   "C": "Complexo não é uma categoria da classificação de Magerl.",
+   "D": "A compressão é o tipo A, o menos grave."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "**Magerl** criou a classificação **AO** da coluna com três tipos, em gravidade crescente:\n\n**tipo A, compressão**: falha do corpo vertebral por carga axial; o complexo posterior fica íntegro; a **menos grave**;\n\n**tipo B, distração**: ruptura dos elementos anteriores ou posteriores por distração (flexão-distração ou hiperextensão);\n\n**tipo C, rotação** (torção): lesão das colunas anterior e posterior com **rotação** ou **cisalhamento**; a **mais instável** e com **mais déficit neurológico**.\n\n**Por que a rotação é a pior**: ela rompe o osso e os ligamentos em todos os planos, e os segmentos podem se deslocar um sobre o outro.\n\n**A classificação atual (AO Spine subaxial)**: **A** compressão, **B** falha da banda de tensão, **C** translação, **F** lesão das facetas, com modificadores neurológicos e de caso.\n\n**Na prova**: as lesões mais graves de Magerl são as de **rotação**.",
+  "correta": "As lesões em rotação, tipo C, rompem as colunas anterior e posterior e são as mais instáveis, com mais déficit.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0153": {
-  "conceito": "### Fraturas da patela por padrão\n| Padrão | Mecanismo | Mecanismo extensor |\n|---|---|---|\n| transversa | ==indireto== (contração do quadríceps com joelho fletido) | geralmente ==roto== |\n| ==vertical/longitudinal== | ==direto, joelho fletido== (painel) | ==íntegro== (retináculos preservados) |\n| cominutiva (estrelada) | direto de alta energia | variável |\n| polo inferior | indireto/avulsão | roto |\n| osteocondral | luxação da patela | íntegro |\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| extensão ativa preservada, degrau < 2 mm, diástase < 3 mm | conservador (órtese em extensão) |\n| falha do mecanismo extensor ou desvio | banda de tensão, parafusos canulados, placas; patelectomia parcial |\n\n### Incidências da patela\n| Incidência | Mostra melhor |\n|---|---|\n| ==perfil== | ==transversa== (diástase, degrau articular), polos, altura (Insall-Salvati) |\n| axial (Merchant/sunrise) | ==vertical== (longitudinal), osteocondral |\n| AP | cominutiva, patela bipartida (superolateral) |\n\n> **Na prova:** perfil mostra melhor a ==transversa==",
-  "correta": "**Transversa.**\n- Traço perpendicular ao eixo.\n- Perfil mostra a diástase.",
   "incorretas": {
-   "A": "**Vertical.**\n- Axial.",
-   "C": "**Cominutiva.**\n- AP e TC.",
-   "D": "**Osteocondral.**\n- Axial/RM."
+   "A": "A fratura vertical é mais bem vista na incidência axial.",
+   "C": "A fratura cominutiva é avaliada no AP e na TC.",
+   "D": "A lesão osteocondral aparece na axial e na RM."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Cada padrão de fratura da **patela** aparece melhor numa incidência:\n\n**perfil** do joelho: mostra a fratura **transversa**, porque o traço fica **perpendicular** ao eixo da patela; mostra também a **diástase** entre os fragmentos e o **degrau** articular;\n\n**axial** (Merchant, Laurin): mostra a fratura **vertical** (longitudinal) e as lesões **osteocondrais** da faceta;\n\n**AP**: a patela fica sobreposta ao fêmur, e os traços aparecem mal; ainda assim ajuda na cominutiva e para diferenciar a **patela bipartida** (fragmento no canto superolateral, bordas lisas, muitas vezes bilateral);\n\n**TC**: para a **cominuta** e o planejamento.\n\n**Os padrões e o mecanismo**: a **transversa** vem de contração do quadríceps (indireto) e costuma romper os retináculos; a **vertical** vem de trauma direto em flexão, com mecanismo extensor íntegro; a **cominutiva**, de trauma direto de maior energia.\n\n**Na prova**: a fratura da patela mais bem vista no perfil é a **transversa**.",
+  "correta": "No perfil, o traço transverso fica perpendicular ao eixo da patela e mostra a diástase e o degrau.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0154": {
-  "conceito": "### Fraturas do capítulo (plano coronal)\n| Classificação | Tipo | Fragmento |\n|---|---|---|\n| Bryan-Morrey | I (Hahn-Steinthal) | grande porção óssea do capítulo |\n| | II (Kocher-Lorenz) | lasca osteocondral fina |\n| | III | cominutiva |\n| | IV (McKee) | ==capítulo + parte da tróclea== |\n| Dubberley | 1 a 3, A (sem cominução posterior) / B (com) | |\n\n### Sinal do duplo arco (duplo crescente)\n- No perfil: dois arcos subcondrais sobrepostos = ==capítulo e crista lateral da tróclea== no mesmo fragmento.\n- Indica fratura do ==capítulo com extensão para a tróclea== (McKee, Bryan-Morrey IV).\n- ==TC== é obrigatória para planejar.\n\n### Tratamento\n- Redução aberta e fixação (parafusos anteroposteriores sem cabeça ou posteroanteriores); artroplastia no idoso com cominução.\n\n> **Na prova:** capítulo + maior parte da tróclea = ==Bryan-Morrey/McKee tipo IV==",
-  "correta": "**Tipo IV.**\n- Modificação de McKee.\n- Capítulo + tróclea (duplo arco).",
   "incorretas": {
-   "A": "**I.**\n- Hahn-Steinthal, capítulo.",
-   "B": "**II.**\n- Kocher-Lorenz, lasca.",
-   "C": "**III.**\n- Cominutiva."
+   "A": "O tipo I é a fratura de Hahn-Steinthal, do capítulo, sem a tróclea.",
+   "B": "O tipo II é a lasca osteocondral de Kocher-Lorenz.",
+   "C": "O tipo III é a fratura cominutiva."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "As **fraturas do capítulo** ocorrem no plano **coronal**, por **cisalhamento**: a cabeça do rádio bate no capítulo e o empurra para cima e para a frente. A classificação de **Bryan e Morrey**, modificada por **McKee**:\n\n**tipo I, Hahn-Steinthal**: grande fragmento ósseo do capítulo;\n\n**tipo II, Kocher-Lorenz**: lasca osteocondral fina, com pouco osso;\n\n**tipo III**: cominutiva;\n\n**tipo IV, McKee**: o fragmento do capítulo leva junto **a maior parte da tróclea**.\n\n**Como reconhecer o tipo IV**: o **sinal do duplo crescente** no perfil: dois arcos subcondrais no mesmo fragmento, do capítulo e da crista lateral da tróclea.\n\n**O tratamento**: **TC** para planejar; redução aberta e fixação com **parafusos sem cabeça**; artroplastia no idoso com cominução.\n\n**Na prova**: o cisalhamento do capítulo com a maior parte da tróclea é o **tipo IV**.",
+  "correta": "O tipo IV, acrescentado por McKee, leva o capítulo com a maior parte da tróclea, com o sinal do duplo crescente.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0155": {
@@ -1767,25 +1768,25 @@
   "conferido": false
  },
  "trauma-0156": {
-  "conceito": "### Complexo suspensório superior do ombro (Goss)\n- Anel osteoligamentar: ==glenoide, coracoide, ligamentos coracoclaviculares, clavícula distal, acromioclavicular e acrômio==.\n- Suportes: clavícula (anterior) e corpo da escápula/espinha (posterior).\n- Lesão ==dupla== do anel = instabilidade.\n\n### Lesão dupla mais comum\n- ==Clavícula + colo da escápula== (ombro flutuante).\n- Outras: coracoide + AC; acrômio + clavícula.\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| pouco desvio | conservador |\n| colo com medialização > 1 cm ou angulação > 40° | fixar clavícula ± escápula |\n\n> **Na prova:** ombro flutuante = clavícula + ==fratura da escápula (colo)==",
-  "correta": "**Fratura da escápula.**\n- Classicamente o colo.\n- Dupla ruptura do SSSC.",
   "incorretas": {
-   "B": "**Úmero proximal.**\n- Não compõe o anel.",
-   "C": "**Coracoclaviculares.**\n- Combinação com clavícula distal, não ombro flutuante clássico.",
-   "D": "**Acromioclaviculares.**\n- Equivalente ligamentar, não a definição."
+   "B": "A fratura do úmero proximal não faz parte do anel suspensório.",
+   "C": "A ruptura coracoclavicular combina com a clavícula distal, não define o ombro flutuante clássico.",
+   "D": "A ruptura acromioclavicular é um equivalente ligamentar, não a definição clássica."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **ombro flutuante** é a fratura da **diáfise da clavícula** associada à fratura da **escápula**, classicamente do **colo** da escápula.\n\n**Por que flutua**: o **complexo suspensório superior** do ombro é um anel sustentado pela **clavícula**, na frente, e pelo **corpo da escápula**, atrás. Com as duas fraturas, o segmento da **glenoide** fica **solto** do tronco: o ombro \"flutua\".\n\n**A tendência do desvio**: sem o apoio da clavícula, o peso do braço e os músculos puxam a glenoide para **baixo** e para **medial**.\n\n**O equivalente ligamentar**: a fratura do colo da escápula com ruptura dos ligamentos **coracoclaviculares** e **acromioclaviculares** também deixa a glenoide solta, mas não é a definição clássica.\n\n**O tratamento**: com pouco desvio, conservador. Com medialização da glenoide maior que 1 a 2 cm ou angulação importante, fixar a **clavícula**, o que muitas vezes já alinha a escápula, e fixar a escápula se o desvio persistir.\n\n**Na prova**: o ombro flutuante é a fratura da diáfise da clavícula com **fratura da escápula**.",
+  "correta": "A fratura da clavícula com a do colo da escápula deixa a glenoide solta do tronco: o ombro flutuante.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0157": {
-  "conceito": "### Essex-Lopresti crônica\n- Membrana interóssea cicatrizada encurtada; ==migração proximal do rádio==: ulna positiva, impacto ulnocarpal, dor no punho e cotovelo.\n- Nenhum procedimento isolado resolve bem.\n\n### Estratégia\n| Componente | Procedimento |\n|---|---|\n| punho (ulna positiva) | ==encurtamento da ulna== |\n| cotovelo (cabeça ressecada/deformada) | ==artroplastia da cabeça do rádio== (restaura suporte longitudinal) |\n| membrana interóssea | reconstrução (enxerto de tendão, TightRope) |\n| salvamento | antebraço de um osso |\n\n- ==Nunca== ressecar a cabeça do rádio: agrava a migração.\n\n### Agudo\n- Mason III (cominutiva, irreconstruível) + instabilidade longitudinal (Essex-Lopresti) = ==artroplastia com implante==.\n- Ressecção isolada é ==contraindicada==: migração proximal do rádio.\n\n> **Na prova:** Mason III + instabilidade longitudinal = ==artroplastia com implante==",
-  "correta": "**Artroplastia com implante.**\n- Restaura o suporte longitudinal.\n- Cominução impede fixar.",
   "incorretas": {
-   "A": "**Ressecção.**\n- Rádio migra proximalmente.",
-   "C": "**Parafusos.**\n- Cominução irreconstruível.",
-   "D": "**Placa.**\n- Falha em cominução grave."
+   "A": "A ressecção deixa o rádio migrar para cima.",
+   "C": "Parafusos não fixam uma cabeça cominuta e irreconstruível.",
+   "D": "A placa falha na cominução grave da cabeça do rádio."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **cabeça do rádio** tem dois papéis: estabilizador **secundário ao valgo** do cotovelo e, junto com a **membrana interóssea**, estabilizador **longitudinal** do antebraço. Ela é o \"poste\" que impede o rádio de subir.\n\n**O cenário da questão**: fratura **Mason 3** (cominutiva, impossível de reconstruir) com **instabilidade longitudinal** do antebraço (lesão de Essex-Lopresti: membrana interóssea e radioulnar distal lesadas).\n\n**O tratamento**: **artroplastia com implante** (prótese da cabeça do rádio). A prótese restaura o poste lateral, e o rádio não migra. Estabilizar a **radioulnar distal**, se necessário.\n\n**O que é contraindicado**: a **ressecção** da cabeça do rádio. Sem a cabeça e sem a membrana, o rádio **sobe**, com dor no punho e impacto ulnocarpal.\n\n**A fixação**: parafusos ou placa **falham** na cominução grave; fixar só vale quando a cabeça pode ser reconstruída de forma estável.\n\n**Na prova**: na Mason 3 com instabilidade longitudinal, indica-se a **artroplastia com implante**.",
+  "correta": "A prótese da cabeça do rádio restaura o suporte longitudinal que a cominução e a membrana rota perderam.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0158": {
