@@ -138,8 +138,8 @@
       "subtemas": [
         "Medicamentos e exames laboratoriais"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2020,
       "dificuldade": null,
       "enunciado": "O ácido tranexâmico é um medicamento que atua no mecanismo de:",
       "imagens": [],
@@ -3519,7 +3519,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+        "pagina": 10,
+        "numeroOriginal": 32
+      }
     },
     {
       "id": "conceitos-basicos-0095",
@@ -3557,7 +3562,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+        "pagina": 14,
+        "numeroOriginal": 51
+      }
     },
     {
       "id": "conceitos-basicos-0096",
@@ -3595,7 +3605,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+        "pagina": 15,
+        "numeroOriginal": 55
+      }
     },
     {
       "id": "conceitos-basicos-0097",
@@ -3634,7 +3649,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+        "pagina": 16,
+        "numeroOriginal": 61
+      }
     },
     {
       "id": "conceitos-basicos-0098",
@@ -3672,7 +3692,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+        "pagina": 21,
+        "numeroOriginal": 85
+      }
     },
     {
       "id": "conceitos-basicos-0099",
@@ -3710,7 +3735,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+        "pagina": 24,
+        "numeroOriginal": 98
+      }
     },
     {
       "id": "conceitos-basicos-0109",
@@ -7394,8 +7424,8 @@
       "subtemas": [
         "Princípios de osteossíntese"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2020,
       "dificuldade": null,
       "enunciado": "Na consolidação das fraturas diafisárias, a maior parte da resposta vascular provém do",
       "imagens": [],
@@ -7864,8 +7894,8 @@
       "subtemas": [
         "Artrite séptica"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2016,
       "dificuldade": null,
       "enunciado": "Numa criança com limitação para o apoio do membro, leucocitose de 13.000/ml e VHS de 40mm, sem febre, a probabilidade de artrite séptica do quadril é de aproximadamente:",
       "imagens": [],
@@ -7894,7 +7924,8 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "duplicataDe": "conceitos-basicos-0089"
     },
     {
       "id": "conceitos-basicos-0258",
