@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react'
-import { FILTROS_VAZIOS, type Dificuldade, type Filtros, type Situacao } from '../dados/tipos'
+import { AREAS_TREINO, FILTROS_VAZIOS, type Area, type Dificuldade, type Filtros, type Situacao } from '../dados/tipos'
 
 /**
  * Roteamento por hash. Escolha deliberada: funciona igual em
@@ -72,7 +72,7 @@ const SITUACOES: Situacao[] = [
 
 export function filtrosParaConsulta(filtros: Filtros): string {
   const p = new URLSearchParams()
-  if (filtros.foco !== 'ortopedia') p.set('foco', filtros.foco)
+  if (filtros.areas.length !== 1 || filtros.areas[0] !== 'base') p.set('areas', filtros.areas.join(','))
   if (filtros.temas.length) p.set('temas', filtros.temas.join(','))
   if (filtros.subtemas.length) p.set('subtemas', filtros.subtemas.join('|'))
   if (filtros.provas.length) p.set('provas', filtros.provas.join(','))
@@ -90,6 +90,16 @@ export function filtrosParaConsulta(filtros: Filtros): string {
   return texto ? '?' + texto : ''
 }
 
+function lerAreas(consulta: URLSearchParams): Area[] {
+  const lista = (consulta.get('areas') ?? '').split(',').filter((a): a is Area => (AREAS_TREINO as string[]).includes(a))
+  if (lista.length) return lista
+  // Endereços antigos: foco=tudo (ortopedia e mão) e foco=mao.
+  const foco = consulta.get('foco')
+  if (foco === 'tudo') return [...AREAS_TREINO]
+  if (foco === 'mao') return ['mao']
+  return ['base']
+}
+
 export function consultaParaFiltros(consulta: URLSearchParams): Filtros {
   const lista = (chave: string, separador = ',') => {
     const bruto = consulta.get(chave)
@@ -102,7 +112,7 @@ export function consultaParaFiltros(consulta: URLSearchParams): Filtros {
   const limite = Number(consulta.get('limite'))
   return {
     ...FILTROS_VAZIOS,
-    foco: consulta.get('foco') === 'tudo' || consulta.get('foco') === 'mao' ? (consulta.get('foco') as Filtros['foco']) : 'ortopedia',
+    areas: lerAreas(consulta),
     temas: lista('temas'),
     subtemas: lista('subtemas', '|'),
     provas: lista('provas'),

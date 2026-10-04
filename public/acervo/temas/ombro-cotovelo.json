@@ -14877,7 +14877,8 @@
         "arquivo": "enare-r4-ortopedia-2024.pdf",
         "pagina": null,
         "numeroOriginal": 35
-      }
+      },
+      "area": "r4-enare"
     },
     {
       "id": "ombro-cotovelo-0443",
@@ -18138,6 +18139,1345 @@
         "arquivo": "taro2009.pdf",
         "pagina": 7,
         "numeroOriginal": 24
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0519",
+      "area": "cirurgia-mao",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Fraturas do cotovelo e antebraço"
+      ],
+      "prova": "FMRP-USP",
+      "ano": 2026,
+      "dificuldade": null,
+      "enunciado": "Em relação à fratura de Monteggia, assinale a alternativa correta:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Classificação de Bado tipo 1: desvio anterior da cabeça do rádio."
+        },
+        {
+          "letra": "B",
+          "texto": "Classificação de Bado tipo 4: desvio lateral da cabeça do rádio."
+        },
+        {
+          "letra": "C",
+          "texto": "Classificação de Bado tipo 3: desvio posterior da cabeça do rádio."
+        },
+        {
+          "letra": "D",
+          "texto": "Há envolvimento da crista troclear."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "FMRP-USP 2026",
+        "pagina": 3,
+        "numeroOriginal": 1
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0520",
+      "area": "cirurgia-mao",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Imagem do ombro e cotovelo",
+        "Fraturas do cotovelo e antebraço"
+      ],
+      "prova": "INTO",
+      "ano": 2026,
+      "dificuldade": null,
+      "enunciado": "Na fratura da porção distal do úmero, o sinal do duplo arco na radiografia do perfil no cotovelo está presente na fratura",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "KOCHER."
+        },
+        {
+          "letra": "B",
+          "texto": "LORENZ."
+        },
+        {
+          "letra": "C",
+          "texto": "STEINHAL"
+        },
+        {
+          "letra": "D",
+          "texto": "COMINUTIVA DA TRÓCLEA."
+        },
+        {
+          "letra": "E",
+          "texto": "CORONAL DO CAPÍTULO."
+        }
+      ],
+      "gabarito": "E",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "INTO 2025-2026",
+        "pagina": 13,
+        "numeroOriginal": 30
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0521",
+      "area": "cirurgia-mao",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Artroscopia e vias de acesso do ombro",
+        "Epicondilite lateral e medial"
+      ],
+      "prova": "INTO",
+      "ano": 2026,
+      "dificuldade": null,
+      "enunciado": "Na artroscopia do cotovelo, o portal anteromedial é descrito em relação ao epicôndilo medial é realizado aproximadamente",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "1 cm distal e 1 cm anterior."
+        },
+        {
+          "letra": "B",
+          "texto": "1 cm proximal e 1 cm posterior."
+        },
+        {
+          "letra": "C",
+          "texto": "2 cm distal e 1 cm anterior."
+        },
+        {
+          "letra": "D",
+          "texto": "1 cm proximal e 2 cm posterior."
+        },
+        {
+          "letra": "E",
+          "texto": "2 cm distal e 2 cm anterior."
+        }
+      ],
+      "gabarito": "E",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "INTO 2025-2026",
+        "pagina": 14,
+        "numeroOriginal": 32
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0522",
+      "area": "cirurgia-mao",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Anatomia do cotovelo"
+      ],
+      "prova": "UFG",
+      "ano": 2020,
+      "dificuldade": null,
+      "enunciado": "Considere uma lesão alta do mediano, acima do cotovelo, em que o reparo foi realizado adequadamente. Nesse caso, qual é o primeiro músculo a ser reinervado?",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Supinador."
+        },
+        {
+          "letra": "B",
+          "texto": "Pronador redondo."
+        },
+        {
+          "letra": "C",
+          "texto": "Flexor radial do carpo."
+        },
+        {
+          "letra": "D",
+          "texto": "Palmar longo."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "UFG 2020",
+        "pagina": 3,
+        "numeroOriginal": 19
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0523",
+      "area": "cirurgia-mao",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Outros temas do ombro e cotovelo"
+      ],
+      "prova": "UFG",
+      "ano": 2021,
+      "dificuldade": null,
+      "enunciado": "Em um paciente com sequela de paralisia obstétrica, o sinal do corneteiro significa:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "insuficiência dos rotadores internos do ombro."
+        },
+        {
+          "letra": "B",
+          "texto": "deformidade estruturada da glenoide."
+        },
+        {
+          "letra": "C",
+          "texto": "insuficiência dos rotadores externos do ombro."
+        },
+        {
+          "letra": "D",
+          "texto": "insuficiência dos abdutores do ombro."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "UFG 2021",
+        "pagina": 2,
+        "numeroOriginal": 7
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0524",
+      "area": "cirurgia-mao",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Outros temas do ombro e cotovelo"
+      ],
+      "prova": "UFG",
+      "ano": 2021,
+      "dificuldade": null,
+      "enunciado": "Na neurotização clássica proposta por Oberlan para ganho de flexão do cotovelo, qual fascículo do nervo ulnar deve ser utilizado?",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "posteromedial."
+        },
+        {
+          "letra": "B",
+          "texto": "posterolateral."
+        },
+        {
+          "letra": "C",
+          "texto": "anteromedial."
+        },
+        {
+          "letra": "D",
+          "texto": "anterolateral."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "UFG 2021",
+        "pagina": 4,
+        "numeroOriginal": 21
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0525",
+      "area": "cirurgia-mao",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Lesões nervosas do ombro e cotovelo"
+      ],
+      "prova": "UFG",
+      "ano": 2021,
+      "dificuldade": null,
+      "enunciado": "Para restauração de flexão do cotovelo em lesões do plexo braquial, Oberlin descreveu uma técnica de transferência de fascículos de nervo para o musculocutâneo. Em sua técnica original, qual é o nervo doador desses fascículos?",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Mediano."
+        },
+        {
+          "letra": "B",
+          "texto": "Radial."
+        },
+        {
+          "letra": "C",
+          "texto": "Ulnar."
+        },
+        {
+          "letra": "D",
+          "texto": "Intercostais."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "UFG 2021",
+        "pagina": 5,
+        "numeroOriginal": 35
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0526",
+      "area": "cirurgia-mao",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Fraturas do cotovelo e antebraço"
+      ],
+      "prova": "UFG",
+      "ano": 2021,
+      "dificuldade": null,
+      "enunciado": "Pela classificação de Bado, a fratura luxação de Monteggia em que ocorre a luxação lateral da cabeça do rádio é de qual tipo?",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Tipo I."
+        },
+        {
+          "letra": "B",
+          "texto": "Tipo II."
+        },
+        {
+          "letra": "C",
+          "texto": "Tipo III."
+        },
+        {
+          "letra": "D",
+          "texto": "Tipo IV."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "UFG 2021",
+        "pagina": 6,
+        "numeroOriginal": 48
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0527",
+      "area": "cirurgia-mao",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Fraturas do cotovelo e antebraço"
+      ],
+      "prova": "PUC-SP",
+      "ano": 2022,
+      "dificuldade": null,
+      "enunciado": "A instabilidade rotacional posteromedial em varo resulta da fratura de qual estrutura do processo coronoide?",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Ponta."
+        },
+        {
+          "letra": "B",
+          "texto": "Base."
+        },
+        {
+          "letra": "C",
+          "texto": "Fossa."
+        },
+        {
+          "letra": "D",
+          "texto": "Faceta Anteromedial."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "PUC-SP 2022",
+        "pagina": 6,
+        "numeroOriginal": 18
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0528",
+      "area": "cirurgia-mao",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Lesões nervosas do ombro e cotovelo"
+      ],
+      "prova": "PUC-SP",
+      "ano": 2023,
+      "dificuldade": null,
+      "enunciado": "Nas lesões traumáticas supraclaviculares do plexo braquial, o tipo mais comum acomete",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "C5 a C7, em aproximadamente 20 a 35% dos pacientes;"
+        },
+        {
+          "letra": "B",
+          "texto": "C5 a T1 (lesão pan-plexo), em 20 a 35% dos pacientes;"
+        },
+        {
+          "letra": "C",
+          "texto": "C5 a C7, em aproximadamente 50 a 75% dos pacientes;"
+        },
+        {
+          "letra": "D",
+          "texto": "C5 a T1 (lesão pan-plexo), em 50 a 75% dos pacientes."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "PUC-SP 2023",
+        "pagina": 5,
+        "numeroOriginal": 12
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0529",
+      "area": "cirurgia-mao",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Outros temas do ombro e cotovelo"
+      ],
+      "prova": "PUC-SP",
+      "ano": 2023,
+      "dificuldade": null,
+      "enunciado": "Sobre a luxação congênita da cabeça do rádio, pode-se afirmar que",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "é usualmente unilateral;"
+        },
+        {
+          "letra": "B",
+          "texto": "a cabeça do rádio desloca-se mais comumente para lateral;"
+        },
+        {
+          "letra": "C",
+          "texto": "a cirurgia frequentemente é necessária na infância;"
+        },
+        {
+          "letra": "D",
+          "texto": "o diagnóstico geralmente é confirmado por radiografia, pois a cabeça do rádio não está alinhada com o capítulo. Outras anormalidades radiográficas incluem a cabeça do rádio de forma ovoide e hipoplasia do capítulo."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "PUC-SP 2023",
+        "pagina": 5,
+        "numeroOriginal": 14
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0530",
+      "area": "cirurgia-mao",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Anatomia do cotovelo"
+      ],
+      "prova": "PUC-SP",
+      "ano": 2023,
+      "dificuldade": null,
+      "enunciado": "Sobre o retalho de antebraço baseado na artéria radial (retalho chinês), pode-se afirmar que",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "possui pouca versatilidade para cobertura no membro superior;"
+        },
+        {
+          "letra": "B",
+          "texto": "um estudo demonstrou que a artéria radial é o vaso dominante na mão em 22% dos casos;"
+        },
+        {
+          "letra": "C",
+          "texto": "o retalho não pode ser utilizado para cobertura do cotovelo;"
+        },
+        {
+          "letra": "D",
+          "texto": "a pobre cosmese da região doadora é uma desvantagem."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "PUC-SP 2023",
+        "pagina": 6,
+        "numeroOriginal": 16
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0531",
+      "area": "cirurgia-mao",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Lesões nervosas do ombro e cotovelo"
+      ],
+      "prova": "PUC-SP",
+      "ano": 2023,
+      "dificuldade": null,
+      "enunciado": "Sobre o bloqueio supraclavicular pode-se afirmar, exceto que",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "permite a anestesia profunda de todo o membro superior;"
+        },
+        {
+          "letra": "B",
+          "texto": "a preocupação com o risco de pneumotórax com técnicas tradicionais levou ao desenvolvimento da técnica guiada por ultrassom;"
+        },
+        {
+          "letra": "C",
+          "texto": "a agulha é posicionada logo inferior e posterolateral ao plexo;"
+        },
+        {
+          "letra": "D",
+          "texto": "a paralisia do nervo frênico e supraescapular não são desvantagens."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "PUC-SP 2023",
+        "pagina": 7,
+        "numeroOriginal": 21
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0532",
+      "area": "r4-enare",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Imagem do ombro e cotovelo",
+        "Impacto subacromial e acromioplastia"
+      ],
+      "prova": "ENARE R4 Ortopedia",
+      "ano": 2025,
+      "dificuldade": null,
+      "enunciado": "Um paciente de 30 anos sofreu uma queda de bicicleta, apresentando dor intensa no ombro direito e incapacidade de movimentar o braço. Ao exame físico, observou-se uma deformidade na região acromioclavicular e dor à palpação. A radiografia revelou luxação acromioclavicular grau IV de Rockwood. Nesse caso, o tratamento mais indicado é:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "imobilização com tipoia por 2 a 3 semanas;"
+        },
+        {
+          "letra": "B",
+          "texto": "redução manual fechada sob anestesia local;"
+        },
+        {
+          "letra": "C",
+          "texto": "cirurgia de reconstrução ligamentar;"
+        },
+        {
+          "letra": "D",
+          "texto": "uso de anti-inflamatórios e fisioterapia;"
+        },
+        {
+          "letra": "E",
+          "texto": "administração de analgésicos e acompanhamento ambulatorial."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "ENARE 2024/2025 - Ortopedia e Traumatologia R4",
+        "pagina": 3,
+        "numeroOriginal": 1
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0533",
+      "area": "r4-enare",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Lesões do manguito rotador"
+      ],
+      "prova": "ENARE R4 Ortopedia",
+      "ano": 2025,
+      "dificuldade": null,
+      "enunciado": "Um paciente de 50 anos apresenta dor súbita no ombro direito e limitação dos movimentos, especialmente na rotação externa e abdução, após uma partida de tênis há 6 meses. A ressonância magnética demonstra ruptura do tendão do músculo supraespinhoso com retração de 1,0 cm e Guttalier II. O tratamento mais indicado nesse caso é:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "imobilização com tipoia por 6 semanas;"
+        },
+        {
+          "letra": "B",
+          "texto": "administração de anti-inflamatórios e fisioterapia;"
+        },
+        {
+          "letra": "C",
+          "texto": "uso de analgésicos opioides para controle da dor;"
+        },
+        {
+          "letra": "D",
+          "texto": "infiltração com corticosteroides ou ortobiológicos;"
+        },
+        {
+          "letra": "E",
+          "texto": "cirurgia de reparo do manguito rotador."
+        }
+      ],
+      "gabarito": "E",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "ENARE 2024/2025 - Ortopedia e Traumatologia R4",
+        "pagina": 4,
+        "numeroOriginal": 14
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0534",
+      "area": "r4-enare",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Epicondilite lateral e medial"
+      ],
+      "prova": "ENARE R4 Ortopedia",
+      "ano": 2025,
+      "dificuldade": null,
+      "enunciado": "Um paciente de 40 anos, trabalhador da construção civil, apresenta dor crônica na região lateral do cotovelo direito, especialmente ao segurar firme para levantar objetos. Ao exame físico tem dor à extensão contra resistência do punho. O diagnóstico mais provável nesse caso é:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "epicondilite tipo “tennis elbow”;"
+        },
+        {
+          "letra": "B",
+          "texto": "bursite olecraniana;"
+        },
+        {
+          "letra": "C",
+          "texto": "síndrome do túnel do carpo;"
+        },
+        {
+          "letra": "D",
+          "texto": "tenossinovite de De Quervain;"
+        },
+        {
+          "letra": "E",
+          "texto": "epicondilite do golfista. "
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "ENARE 2024/2025 - Ortopedia e Traumatologia R4",
+        "pagina": 4,
+        "numeroOriginal": 16
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0535",
+      "area": "r4-enare",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Exame físico do ombro",
+        "Imagem do ombro e cotovelo"
+      ],
+      "prova": "ENARE R4 Ortopedia",
+      "ano": 2025,
+      "dificuldade": null,
+      "enunciado": "Uma paciente de 65 anos, com histórico de osteoporose, apresenta dor intensa e incapacidade de movimentar o braço após uma queda. A radiografia mostra fratura da extremidade proximal do úmero em 4 partes, segundo a classificação de Neer, sem fratura da cabeça tipo head split. O tratamento mais indicado para esse paciente é:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "imobilização com tipoia por 6 semanas;"
+        },
+        {
+          "letra": "B",
+          "texto": "redução fechada e uso de órtese de Raymond;"
+        },
+        {
+          "letra": "C",
+          "texto": "fixação interna com placa proximal de úmero e parafusos;"
+        },
+        {
+          "letra": "D",
+          "texto": "artroplastia parcial do ombro;"
+        },
+        {
+          "letra": "E",
+          "texto": "artroplastia reversa do ombro."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "ENARE 2024/2025 - Ortopedia e Traumatologia R4",
+        "pagina": 6,
+        "numeroOriginal": 25
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0536",
+      "area": "r4-enare",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Instabilidade do cotovelo"
+      ],
+      "prova": "ENARE R4 Ortopedia",
+      "ano": 2025,
+      "dificuldade": null,
+      "enunciado": "Um homem de 35 anos, com histórico de luxação de cotovelo reduzida na emergência e tratada com órtese axilo palmar por 6 semanas, queixa-se de instabilidade residual e procura atendimento especializado. Ao exame físico, uma instabilidade posterolateral do cotovelo foi diagnosticada. Esse diagnóstico ocorreu pela aplicação de uma força axial no membro superior com o cotovelo em:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "varo e supinação;"
+        },
+        {
+          "letra": "B",
+          "texto": "valgo e pronação;"
+        },
+        {
+          "letra": "C",
+          "texto": "varo e rotação interna;"
+        },
+        {
+          "letra": "D",
+          "texto": "valgo e rotação interna;"
+        },
+        {
+          "letra": "E",
+          "texto": "valgo e rotação externa."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "ENARE 2024/2025 - Ortopedia e Traumatologia R4",
+        "pagina": 6,
+        "numeroOriginal": 31
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0537",
+      "area": "r4-enare",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Anatomia do ombro",
+        "Imagem do ombro e cotovelo"
+      ],
+      "prova": "ENARE R4 Ortopedia",
+      "ano": 2025,
+      "dificuldade": null,
+      "enunciado": "Um paciente jovem, vítima de queda de motocicleta, apresenta várias escoriações e deformidade em ombro direito. Ao exame radiográfico observa-se uma fratura do terço distal da clavícula do grupo II, tipo IIA, de Allman. A localização anatômica dessa fratura é:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "medial ao ligamento conoide;"
+        },
+        {
+          "letra": "B",
+          "texto": "lateral ao ligamento conoide;"
+        },
+        {
+          "letra": "C",
+          "texto": "central ao ligamento trapezoide;"
+        },
+        {
+          "letra": "D",
+          "texto": "lateral ao ligamento trapezoide;"
+        },
+        {
+          "letra": "E",
+          "texto": "medial ao ligamento trapezoide."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "ENARE 2024/2025 - Ortopedia e Traumatologia R4",
+        "pagina": 7,
+        "numeroOriginal": 33
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0538",
+      "area": "r4-enare",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Anatomia do cotovelo",
+        "Epicondilite lateral e medial"
+      ],
+      "prova": "ENARE R4 Ortopedia",
+      "ano": 2025,
+      "dificuldade": null,
+      "enunciado": "Um paciente diagnosticado com artrogripose, que apresentava o cotovelo em extensão semirígida, foi submetido a transferência da inserção do pronador redondo no epicôndilo medial para a região anterior da extremidade distal do úmero. O objetivo dessa cirurgia foi estimular a flexão ativa do cotovelo, técnica conhecida como cirurgia de:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Machintoch;"
+        },
+        {
+          "letra": "B",
+          "texto": "Chandler;"
+        },
+        {
+          "letra": "C",
+          "texto": "Bado;"
+        },
+        {
+          "letra": "D",
+          "texto": "Richmond;"
+        },
+        {
+          "letra": "E",
+          "texto": "Steindler."
+        }
+      ],
+      "gabarito": "E",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "ENARE 2024/2025 - Ortopedia e Traumatologia R4",
+        "pagina": 7,
+        "numeroOriginal": 37
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0539",
+      "area": "r4-enare",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Lesões do manguito rotador",
+        "Instabilidade do cotovelo"
+      ],
+      "prova": "ENARE R4 Ortopedia",
+      "ano": 2025,
+      "dificuldade": null,
+      "enunciado": "Em relação as lesões traumáticas do cotovelo, é correto afirmar que:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "a cabeça radial é um importante estabilizador secundário do varo do cotovelo;"
+        },
+        {
+          "letra": "B",
+          "texto": "a faceta medial do coronóide é importante para a estabilidade do valgo do cotovelo;"
+        },
+        {
+          "letra": "C",
+          "texto": "o feixe posterior do ligamento colateral medial é o estabilizador mais importante do estresse em valgo no cotovelo;"
+        },
+        {
+          "letra": "D",
+          "texto": "a fratura anteromedial do coronoide, associada à ruptura do ligamento colateral lateral, resulta na instabilidade rotatória posterolateral do cotovelo;"
+        },
+        {
+          "letra": "E",
+          "texto": "a fratura de Monteggia tipo III de Bado se refere a uma fratura da ulna distal ao processo coronoide associada ao deslocamento posterior da cabeça radial."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "ENARE 2024/2025 - Ortopedia e Traumatologia R4",
+        "pagina": 9,
+        "numeroOriginal": 55
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0540",
+      "area": "r4-enare",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Impacto subacromial e acromioplastia",
+        "Luxação acromioclavicular e esternoclavicular"
+      ],
+      "prova": "ENARE R4 Ortopedia",
+      "ano": 2025,
+      "dificuldade": null,
+      "enunciado": "Paciente sentiu dor e limitação dos movimentos do ombro direito após queda ao praticar judô. Ao exame clínico, aparentava deslocamento inferior do ombro com a clavícula proeminente, mas redutível. Ao exame por imagens, apresentava deslocamento superior da clavícula em 80% da margem articular acromioclavicular. Segundo Rockwood, trata-se de uma luxação acromioclavicular do tipo:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "I;"
+        },
+        {
+          "letra": "B",
+          "texto": "II;"
+        },
+        {
+          "letra": "C",
+          "texto": "III;"
+        },
+        {
+          "letra": "D",
+          "texto": "IV;"
+        },
+        {
+          "letra": "E",
+          "texto": "V "
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "ENARE 2024/2025 - Ortopedia e Traumatologia R4",
+        "pagina": 9,
+        "numeroOriginal": 56
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0541",
+      "area": "r4-enare",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Outros temas do ombro e cotovelo"
+      ],
+      "prova": "ENARE R4 Ortopedia",
+      "ano": 2025,
+      "dificuldade": null,
+      "enunciado": "Na artrodese do cotovelo bilateral, as posições podem variar de acordo com as necessidades do paciente. As posições dos cotovelos recomendadas são as seguintes:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "ambos com flexão entre 70 e 90 graus;"
+        },
+        {
+          "letra": "B",
+          "texto": "um entre 60 a 80 graus de flexão, e o outro entre 45 e 65 graus;"
+        },
+        {
+          "letra": "C",
+          "texto": "um entre 90 e 100 graus de flexão, e o outro entre 45 e 65 graus;"
+        },
+        {
+          "letra": "D",
+          "texto": "um entre 110 a 120 graus de flexão, e o outro entre 45 e 65 graus;"
+        },
+        {
+          "letra": "E",
+          "texto": "um entre 110 a 120 graus de flexão, e o outro entre 70 a 90 graus."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "ENARE 2024/2025 - Ortopedia e Traumatologia R4",
+        "pagina": 11,
+        "numeroOriginal": 69
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0542",
+      "area": "r4-enare",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Anatomia do ombro",
+        "Peitoral maior e outras rupturas tendíneas"
+      ],
+      "prova": "ENARE R4 Ortopedia",
+      "ano": 2025,
+      "dificuldade": null,
+      "enunciado": "Em relação aos acessos cirúrgicos para tratamento de fraturas na extremidade proximal do úmero, é correto afirmar que:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "nas fraturas proximais do úmero tratadas com artroplastia, a separação das tuberosidades menor e maior não deve ser realizada através do intervalo dos rotadores, devido ao risco de danos ao manguito rotador;"
+        },
+        {
+          "letra": "B",
+          "texto": "o intervalo dos rotadores é uma região triangular delineada no ápice medialmente pelo processo coracoide, superiormente pelo supraespinhoso, lateralmente pelo subescapular e posteriormente pelo sulco bicipital;"
+        },
+        {
+          "letra": "C",
+          "texto": "na abordagem deltopeitoral, o nervo musculocutâneo penetra no músculo coracobraquial a uma distância média de 8 cm inferior ao processo coracoide e corre-se risco de lesão ao se realizar a retração lateral do músculo peitoral maior;"
+        },
+        {
+          "letra": "D",
+          "texto": "os músculos que compõem o manguito rotador se originam na escápula. O subespinhoso se insere na tuberosidade menor do úmero, e, na tuberosidade maior, se inserem o supraespinhoso superiormente, o subescapular pósterosuperiormente e o redondo menor póstero-inferiormente;"
+        },
+        {
+          "letra": "E",
+          "texto": "no nível da extremidade proximal do úmero, o nervo axilar passa, inferiormente ao colo anatômico, de anterior para posterior, através do espaço quadrilateral cercado pelo músculo redondo maior superiormente, pela cabeça longa do músculo tríceps medialmente e pelo músculo redondo maior inferiormente."
+        }
+      ],
+      "gabarito": "E",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "ENARE 2024/2025 - Ortopedia e Traumatologia R4",
+        "pagina": 12,
+        "numeroOriginal": 75
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0543",
+      "area": "r4-coluna",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Anatomia do ombro",
+        "Exame físico do ombro"
+      ],
+      "prova": "R4 Coluna SES-DF",
+      "ano": 2022,
+      "dificuldade": null,
+      "enunciado": "Um paciente de 22 anos de idade compareceu a consulta com relato de dor e limitação funcional em ombro direito há três meses após queda durante prática de skate, que provocou deslocamento do ombro com necessidade de auxílio médico para redução da luxação glenoumeral. Ao exame físico, apresentava apreensão +; recolocação +; gaveta -; sulco -. RMN evidenciava lesão de Hill-Sachs, lesão de Bankart e SLAP tipo II, segundo classificação de Snyder. Com base nesse caso clínico e nos conhecimentos médicos correlatos, julgue os itens a seguir.\n\nJulgue o item: Esse paciente apresenta uma ruptura em alça de balde do lábio gleinodal superior, com uma inserção normal do tendão do bíceps.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SES-DF 2022 - Ortopedia e Traumatologia em Cirurgia da Coluna R4",
+        "pagina": 4,
+        "numeroOriginal": 55
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0544",
+      "area": "r4-coluna",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Exame físico do ombro",
+        "Instabilidade anterior do ombro"
+      ],
+      "prova": "R4 Coluna SES-DF",
+      "ano": 2022,
+      "dificuldade": null,
+      "enunciado": "Um paciente de 22 anos de idade compareceu a consulta com relato de dor e limitação funcional em ombro direito há três meses após queda durante prática de skate, que provocou deslocamento do ombro com necessidade de auxílio médico para redução da luxação glenoumeral. Ao exame físico, apresentava apreensão +; recolocação +; gaveta -; sulco -. RMN evidenciava lesão de Hill-Sachs, lesão de Bankart e SLAP tipo II, segundo classificação de Snyder. Com base nesse caso clínico e nos conhecimentos médicos correlatos, julgue os itens a seguir.\n\nJulgue o item: Os testes para hiperfrouxidão ligamentar são negativos, enquanto os testes relacionados a uma lesão traumática são positivos.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SES-DF 2022 - Ortopedia e Traumatologia em Cirurgia da Coluna R4",
+        "pagina": 4,
+        "numeroOriginal": 56
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0545",
+      "area": "r4-coluna",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Exame físico do ombro",
+        "Instabilidade anterior do ombro"
+      ],
+      "prova": "R4 Coluna SES-DF",
+      "ano": 2022,
+      "dificuldade": null,
+      "enunciado": "Um paciente de 22 anos de idade compareceu a consulta com relato de dor e limitação funcional em ombro direito há três meses após queda durante prática de skate, que provocou deslocamento do ombro com necessidade de auxílio médico para redução da luxação glenoumeral. Ao exame físico, apresentava apreensão +; recolocação +; gaveta -; sulco -. RMN evidenciava lesão de Hill-Sachs, lesão de Bankart e SLAP tipo II, segundo classificação de Snyder. Com base nesse caso clínico e nos conhecimentos médicos correlatos, julgue os itens a seguir.\n\nJulgue o item: O principal estabilizador estático do ombro, nos casos de luxação recidivante, é o ligamento glenoumeral superior.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SES-DF 2022 - Ortopedia e Traumatologia em Cirurgia da Coluna R4",
+        "pagina": 4,
+        "numeroOriginal": 57
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0546",
+      "area": "r4-coluna",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Exame físico do ombro",
+        "Instabilidade anterior do ombro"
+      ],
+      "prova": "R4 Coluna SES-DF",
+      "ano": 2022,
+      "dificuldade": null,
+      "enunciado": "Um paciente de 22 anos de idade compareceu a consulta com relato de dor e limitação funcional em ombro direito há três meses após queda durante prática de skate, que provocou deslocamento do ombro com necessidade de auxílio médico para redução da luxação glenoumeral. Ao exame físico, apresentava apreensão +; recolocação +; gaveta -; sulco -. RMN evidenciava lesão de Hill-Sachs, lesão de Bankart e SLAP tipo II, segundo classificação de Snyder. Com base nesse caso clínico e nos conhecimentos médicos correlatos, julgue os itens a seguir.\n\nJulgue o item: O atleta de esporte de contato constitui um fator de risco para falha do tratamento artroscópico.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SES-DF 2022 - Ortopedia e Traumatologia em Cirurgia da Coluna R4",
+        "pagina": 4,
+        "numeroOriginal": 58
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0547",
+      "area": "r4-coluna",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Exame físico do ombro",
+        "Instabilidade anterior do ombro"
+      ],
+      "prova": "R4 Coluna SES-DF",
+      "ano": 2022,
+      "dificuldade": null,
+      "enunciado": "Um paciente de 22 anos de idade compareceu a consulta com relato de dor e limitação funcional em ombro direito há três meses após queda durante prática de skate, que provocou deslocamento do ombro com necessidade de auxílio médico para redução da luxação glenoumeral. Ao exame físico, apresentava apreensão +; recolocação +; gaveta -; sulco -. RMN evidenciava lesão de Hill-Sachs, lesão de Bankart e SLAP tipo II, segundo classificação de Snyder. Com base nesse caso clínico e nos conhecimentos médicos correlatos, julgue os itens a seguir.\n\nJulgue o item: A lesão de Hill-Sachs corresponde a uma fratura por impacção localizada na região posterolateral da cabeça umeral.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SES-DF 2022 - Ortopedia e Traumatologia em Cirurgia da Coluna R4",
+        "pagina": 4,
+        "numeroOriginal": 59
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0548",
+      "area": "r4-coluna",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Exame físico do ombro",
+        "Instabilidade anterior do ombro"
+      ],
+      "prova": "R4 Coluna SES-DF",
+      "ano": 2022,
+      "dificuldade": null,
+      "enunciado": "Um paciente de 22 anos de idade compareceu a consulta com relato de dor e limitação funcional em ombro direito há três meses após queda durante prática de skate, que provocou deslocamento do ombro com necessidade de auxílio médico para redução da luxação glenoumeral. Ao exame físico, apresentava apreensão +; recolocação +; gaveta -; sulco -. RMN evidenciava lesão de Hill-Sachs, lesão de Bankart e SLAP tipo II, segundo classificação de Snyder. Com base nesse caso clínico e nos conhecimentos médicos correlatos, julgue os itens a seguir.\n\nJulgue o item: A frouxidão ligamentar glenoumeral pode estar presente e não ocasionar instabilidade. Área livre",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SES-DF 2022 - Ortopedia e Traumatologia em Cirurgia da Coluna R4",
+        "pagina": 4,
+        "numeroOriginal": 60
       }
     }
   ]

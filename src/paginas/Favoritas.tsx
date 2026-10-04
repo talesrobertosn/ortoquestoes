@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { usarIndice } from '../dados/usarIndice'
 import { carregarQuestoes } from '../dados/acervo'
-import { FILTROS_VAZIOS, type Questao } from '../dados/tipos'
+import { AREAS_TREINO, FILTROS_VAZIOS, type Questao } from '../dados/tipos'
 import { Carregando, Estado } from '../componentes/Estados'
 import { EstrelaCheia, Icone } from '../componentes/Icone'
 import { usarFavoritos, usarSessao } from '../estado/sessao'
@@ -48,7 +48,7 @@ export function Favoritas() {
   function treinar() {
     const existentes = favoritos.filter((id) => porId.has(id))
     if (existentes.length === 0) return
-    iniciar({ ...FILTROS_VAZIOS, foco: 'tudo', situacao: 'favoritas' }, existentes, {})
+    iniciar({ ...FILTROS_VAZIOS, areas: AREAS_TREINO, situacao: 'favoritas' }, existentes, {})
     navegar('/sessao')
   }
 

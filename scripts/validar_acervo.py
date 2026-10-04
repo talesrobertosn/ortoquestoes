@@ -175,6 +175,9 @@ def principal() -> int:
             for campo in OBRIGATORIOS:
                 valor = questao.get(campo)
                 if valor in (None, "", []):
+                    # Dissertativa não tem alternativas: tem a resposta esperada.
+                    if campo == "alternativas" and questao.get("tipo") == "dissertativa":
+                        continue
                     erros.append(f"{onde}: campo obrigatório vazio: {campo}")
 
             if identificador in vistos:
@@ -199,7 +202,7 @@ def principal() -> int:
             if identificador != "(sem id)":
                 gabaritos[identificador] = gabarito
                 letras_da_questao[identificador] = {l for l in letras if l}
-            if questao.get("area") not in (None, "cirurgia-mao"):
+            if questao.get("area") not in (None, "cirurgia-mao", "r4-enare", "r4-coluna"):
                 erros.append(f"{onde}: área desconhecida: {questao.get('area')!r}")
             if questao.get("tipo") == "dissertativa":
                 if alternativas or gabarito:

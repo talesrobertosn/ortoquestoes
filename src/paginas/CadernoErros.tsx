@@ -3,7 +3,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { usarIndice } from '../dados/usarIndice'
 import { carregarQuestoes } from '../dados/acervo'
 import { carregarComentario } from '../dados/comentarios'
-import { FILTROS_VAZIOS, type ComentarioIA, type Indice, type Letra, type Questao } from '../dados/tipos'
+import { AREAS_TREINO, FILTROS_VAZIOS, type ComentarioIA, type Indice, type Letra, type Questao } from '../dados/tipos'
 import { Icone } from '../componentes/Icone'
 import { TextoEditorial } from '../componentes/TextoEditorial'
 import { usarArmazenado } from '../estado/usarArmazenado'
@@ -103,7 +103,7 @@ export function CadernoErros() {
 
   const refazer = (ids: string[]) => {
     if (!ids.length) return
-    iniciar({ ...FILTROS_VAZIOS, foco: 'tudo', situacao: 'erradas', limite: ids.length, embaralhar: true }, ids)
+    iniciar({ ...FILTROS_VAZIOS, areas: AREAS_TREINO, situacao: 'erradas', limite: ids.length, embaralhar: true }, ids)
     navegar('/sessao')
   }
 
@@ -167,7 +167,7 @@ export function CadernoErros() {
           </div>
           <ul>
             {focos.map((f) => (
-              <li key={f.nome}><a href={href(`/treinar${filtrosParaConsulta({ ...FILTROS_VAZIOS, foco: 'tudo', subtemas: [f.nome], situacao: 'erradas' })}`)}>{f.nome} <span className="numerico">{f.n}</span></a></li>
+              <li key={f.nome}><a href={href(`/treinar${filtrosParaConsulta({ ...FILTROS_VAZIOS, areas: AREAS_TREINO, subtemas: [f.nome], situacao: 'erradas' })}`)}>{f.nome} <span className="numerico">{f.n}</span></a></li>
             ))}
           </ul>
         </section>
