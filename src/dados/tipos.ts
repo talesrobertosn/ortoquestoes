@@ -68,6 +68,8 @@ export interface ComentarioIA {
   /** Por que cada uma das outras está errada, indexado pela letra. */
   incorretas: Partial<Record<Letra, string>>
   referencias?: string[]
+  /** Imagens do comentário (enviadas pelo painel do administrador). */
+  imagens?: Imagem[]
   /** Quando o texto foi gerado, para saber o que reler quando a conduta mudar. */
   geradoEm?: string | null
   /** Conferido por médico. Enquanto falso, o aviso fica em destaque. */

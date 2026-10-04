@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { chamarRpc } from '../../servicos/supabase'
+import { chamarFuncao, chamarRpc } from '../../servicos/supabase'
 import { usarIndice } from '../../dados/usarIndice'
 import { carregarQuestoes } from '../../dados/acervo'
 import { href } from '../../util/rotas'
@@ -8,7 +8,7 @@ import { BarrasHorizontais } from './AdminGraficos'
 import { dataHora, erroDoPainel, porcentagem } from './formatos'
 
 interface Estatistica { id_questao: string; pessoas: number; acertos_primeira: number; erros_primeira: number; acertos_atual: number }
-interface Relato { id: number; id_questao: string; tipo: string; texto: string; status: 'aberto' | 'resolvido' | 'descartado'; nota_admin: string | null; criado_em: string; resolvido_em: string | null; usuario: string | null }
+interface Relato { id: number; id_questao: string; tipo: string; texto: string; status: 'aberto' | 'resolvido' | 'descartado'; nota_admin: string | null; criado_em: string; resolvido_em: string | null; usuario: string | null; avisado_em?: string | null }
 export type VistaConteudo = 'suspeitas' | 'faceis' | 'temas' | 'relatos' | 'avaliacoes'
 
 const MIGRACAO = '202609290200_painel_admin_2.sql'
@@ -18,7 +18,7 @@ const VISTAS: Array<[VistaConteudo, string]> = [['suspeitas', 'Questões suspeit
 /** Acerto da primeira tentativa de todos: mede a questão, não o quanto cada um já revisou. */
 const acertoPrimeira = (e: Estatistica) => porcentagem(Number(e.acertos_primeira), Number(e.acertos_primeira) + Number(e.erros_primeira))
 
-export function AdminConteudo({ vistaInicial = 'suspeitas', aoMudarPendencias }: { vistaInicial?: VistaConteudo; aoMudarPendencias?: (n: number) => void }) {
+export function AdminConteudo({ vistaInicial = 'suspeitas', aoMudarPendencias, aoEditar }: { vistaInicial?: VistaConteudo; aoMudarPendencias?: (n: number) => void; aoEditar?: (id: string) => void }) {
   const { indice } = usarIndice()
   const [vista, definirVista] = useState<VistaConteudo>(vistaInicial)
   const [stats, definirStats] = useState<Estatistica[] | null>(null)
@@ -83,8 +83,21 @@ export function AdminConteudo({ vistaInicial = 'suspeitas', aoMudarPendencias }:
   }, [indice, stats])
 
   async function mudarRelato(r: Relato, status: Relato['status']) {
-    const nota = status === 'aberto' ? null : window.prompt('Anotação (opcional): o que foi feito?', r.nota_admin ?? '') ?? r.nota_admin
-    try { await chamarRpc('atualizar_relato_admin', { p_id: r.id, p_status: status, p_nota: nota }); await carregarRelatos() } catch { window.alert('Não foi possível atualizar o relato.') }
+    const nota = status === 'aberto' ? null : window.prompt(status === 'resolvido' ? 'O que foi corrigido? (opcional; vai no e-mail para quem relatou, se você avisar)' : 'Anotação (opcional): por que foi descartado?', r.nota_admin ?? '') ?? r.nota_admin
+    try { await chamarRpc('atualizar_relato_admin', { p_id: r.id, p_status: status, p_nota: nota }); await carregarRelatos() } catch { window.alert('Não foi possível atualizar o relato.'); return }
+    if (status === 'resolvido' && r.usuario && window.confirm(`Avisar ${r.usuario} por e-mail que a questão foi corrigida?`)) await avisar(r)
+  }
+
+  /** E-mail para quem relatou, dizendo que a questão foi corrigida. */
+  async function avisar(r: Relato) {
+    try {
+      const res = await chamarFuncao<{ resultado?: string; para?: string }>('enviar-email', { acao: 'relato_resolvido', id_relato: r.id })
+      window.alert(`E-mail enviado para ${res.para ?? r.usuario}.`)
+      await carregarRelatos()
+    } catch (f) {
+      const motivo = f instanceof Error ? f.message : ''
+      window.alert(motivo === 'acao_invalida' ? 'A Function enviar-email ainda é a versão antiga. Atualize-a no Supabase para poder avisar.' : `Não foi possível enviar: ${motivo || 'erro desconhecido'}.`)
+    }
   }
 
   const Nome = ({ id }: { id: string }) => {
@@ -96,6 +109,7 @@ export function AdminConteudo({ vistaInicial = 'suspeitas', aoMudarPendencias }:
     return <li className="adm-avaliacao adm-questao-stat">
       <div className="adm-avaliacao__topo"><Nome id={s.id_questao} /><span className={'adm-selo ' + (pct <= 30 ? 'adm-selo--ruim' : 'adm-selo--ok')}>{pct}% de primeira</span></div>
       <small>{s.pessoas} pessoa(s) responderam · hoje {porcentagem(Number(s.acertos_atual), Number(s.pessoas)) ?? 0}% acertam (depois das revisões)</small>
+      {aoEditar && <div className="linha"><button type="button" className="botao botao--fantasma" onClick={() => aoEditar(s.id_questao)}>Editar questão</button></div>}
     </li>
   }
 
@@ -134,7 +148,10 @@ export function AdminConteudo({ vistaInicial = 'suspeitas', aoMudarPendencias }:
         <blockquote className="adm-avaliacao__texto">{r.texto}</blockquote>
         {r.nota_admin && <small><strong>Anotação:</strong> {r.nota_admin}</small>}
         <small>{r.usuario ?? 'conta removida'} · {dataHora(r.criado_em)}{r.resolvido_em ? ` · fechado em ${dataHora(r.resolvido_em)}` : ''}</small>
+        {r.avisado_em && <small>Avisado por e-mail em {dataHora(r.avisado_em)}</small>}
         <div className="linha">
+          {aoEditar && <button type="button" className="botao botao--fantasma" onClick={() => aoEditar(r.id_questao)}>Editar questão</button>}
+          {r.status === 'resolvido' && r.usuario && !r.avisado_em && <button type="button" className="botao botao--fantasma" onClick={() => void avisar(r)}>Avisar por e-mail</button>}
           {r.status === 'aberto' ? <>
             <button type="button" className="botao botao--principal" onClick={() => void mudarRelato(r, 'resolvido')}>Marcar resolvido</button>
             <button type="button" className="botao botao--fantasma" onClick={() => void mudarRelato(r, 'descartado')}>Descartar</button>

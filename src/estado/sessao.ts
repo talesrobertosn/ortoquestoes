@@ -188,8 +188,10 @@ function registrarHistorico(sessao: EstadoSessao) {
 const MESES = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro']
 /** "2026-10" → "outubro de 2026". */
 export function nomeEdicao(edicao: string): string {
-  const [ano, mes] = edicao.split('-').map(Number)
-  return MESES[mes - 1] ? `${MESES[mes - 1]} de ${ano}` : edicao
+  const [a, m, sufixo] = edicao.split('-')
+  const [ano, mes] = [Number(a), Number(m)]
+  if (!MESES[mes - 1]) return edicao
+  return sufixo === 'vespera' ? `véspera da prova (${MESES[mes - 1]} de ${ano})` : `${MESES[mes - 1]} de ${ano}`
 }
 
 export function lerHistorico(): ResumoHistorico[] {

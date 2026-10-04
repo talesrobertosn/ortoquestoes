@@ -101,3 +101,47 @@ export function prontidaoDoTema(certas: number, total: number, media: number | n
   if (p < 50 || (media !== null && p < media - 15)) return 'reforcar'
   return 'caminho'
 }
+
+/** Formato do simulado de véspera: tamanho e tempo de uma prova teórica inteira. */
+export const QUESTOES_VESPERA = 100
+export const DURACAO_VESPERA_MIN = 240
+
+export interface CandidataVespera extends CandidataEdicao {
+  /** Prioridade do assunto nos temas que mais caem (4 = máxima, 0 = sem classificação). */
+  nivel: number
+  ano: number | null
+}
+
+/**
+ * Sorteio do simulado de véspera. Mesma proporção por tema do Simulado
+ * Nacional, mas dentro de cada tema vêm primeiro os assuntos que mais caem e,
+ * entre eles, as provas mais recentes. Questões já usadas em edições
+ * anteriores ficam por último.
+ */
+export function escolherVespera(candidatas: CandidataVespera[], edicao: string, total = QUESTOES_VESPERA, jaUsadas: Set<string> = new Set()): CandidataEdicao[] {
+  const semente = sementeEdicao(edicao)
+  const porTema = new Map<string, CandidataVespera[]>()
+  for (const c of candidatas) porTema.set(c.tema, [...(porTema.get(c.tema) ?? []), c])
+  const temas = [...porTema.keys()].sort()
+  const cotas = temas.map((tema) => {
+    const exata = (porTema.get(tema)!.length / candidatas.length) * total
+    return { tema, n: Math.max(1, Math.floor(exata)), resto: exata - Math.floor(exata) }
+  })
+  let falta = total - cotas.reduce((s, c) => s + c.n, 0)
+  for (const c of [...cotas].sort((a, b) => b.resto - a.resto || a.tema.localeCompare(b.tema))) {
+    if (falta <= 0) break
+    c.n++; falta--
+  }
+  while (falta < 0) {
+    const maior = [...cotas].sort((a, b) => b.n - a.n)[0]
+    maior.n--; falta++
+  }
+  const escolhidas: CandidataEdicao[] = []
+  temas.forEach((tema, i) => {
+    // Embaralha antes de ordenar: dentro do mesmo nível e ano, a ordem é sorteada.
+    const lista = embaralhar(porTema.get(tema)!, semente + i * 7919)
+      .sort((a, b) => Number(jaUsadas.has(a.id)) - Number(jaUsadas.has(b.id)) || b.nivel - a.nivel || (b.ano ?? 0) - (a.ano ?? 0))
+    escolhidas.push(...lista.slice(0, cotas[i].n).map(({ id, tema: t, gabarito }) => ({ id, tema: t, gabarito })))
+  })
+  return embaralhar(escolhidas, semente ^ 0x9e3779b9)
+}
