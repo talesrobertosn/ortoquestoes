@@ -175,3 +175,17 @@ visor escuro com régua e legenda técnica, alternativas como gabarito de prova 
 revisar. Cada uma em `questoes/NN-tema/post.html`, com legenda e instruções em `LEGENDA.md`.
 
 - **01 Hawkins III** (pronto): `trauma-0764`, TEOT 2025, fratura do colo do tálus.
+
+## Trio de 4/10 (`posts/2026-10-04-*`)
+
+Três posts de feed, cada um com um formato novo, e três stories que os semeiam. Legenda e
+instruções no `LEGENDA.md` de cada pasta.
+
+- **Jogo de cartas** (`2026-10-04-trunfo`, 7 slides, pixel art): osteossarcoma, Ewing, TCG e
+  condroblastoma como cartas com atributos, e uma rodada final de prova.
+- **Plantão das 3h14** (`2026-10-04-plantao`, 5 slides): a conversa fictícia entre o R1 e o R3
+  sobre síndrome compartimental na tíbia, com resumo para salvar.
+- **Ache os 3 erros** (`2026-10-04-ache-o-erro`, 3 slides, caderno): o resumo de escafoide de um
+  colega com três erros, a correção em caneta vermelha e o placar.
+- **Stories** (`2026-10-04-stories`): um por post, cada um com espaço para figurinha de quiz ou
+  enquete e chamada para o feed.
