@@ -10439,19 +10439,20 @@
   "conferido": false
  },
  "trauma-1146": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "D",
-  "conceito": "**Fratura de estresse.** Na atleta, a tríade (distúrbio alimentar, amenorreia e osteoporose) é fator de risco importante.\n\n**Na prova:** tríade da mulher atleta.",
-  "correta": "**O distúrbio alimentar em mulheres.** O distúrbio alimentar é fator de risco.",
   "incorretas": {
-   "A": "**A diminuição da densidade óssea em homens.** Fator menos destacado.",
-   "B": "**O aumento do índice de massa corpórea em mulheres.** IMC baixo é que é fator de risco.",
-   "C": "**A diminuição da taxa de testosterona em homens.** Menos destacado."
+   "A": "**Baixa densidade óssea em homens.** Também é sinal clínico importante de menor resistência do osso e pode elevar o risco de lesões por estresse. Não é alternativa cientificamente falsa; apenas não era o foco da tríade feminina privilegiada por esta questão antiga.",
+   "B": "**Aumento do IMC em mulheres.** O IMC elevado, sem outros dados, não constitui o marcador clássico de deficiência energética ligada à tríade. O peso deve ser interpretado junto com treino, ingestão, histórico menstrual e saúde óssea, não como critério único.",
+   "C": "**Testosterona reduzida em homens.** Pode acompanhar deficiência energética relativa e pior saúde óssea, de modo que também merece investigação. Não se deve descartá-la como fator de risco só porque a prova selecionou o distúrbio alimentar feminino."
   },
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso a questão não conta no desempenho. A resposta provável D reproduz a associação clássica entre distúrbio alimentar e tríade da atleta, mas a pergunta não possui uma única alternativa clinicamente verdadeira: baixa densidade óssea e testosterona reduzida também podem indicar risco de lesão por estresse em homens. As alternativas A e C não devem ser ensinadas como falsas.",
+  "conceito": "**Fratura por estresse é uma falha de adaptação.** O osso se remodela continuamente diante da carga. Quando o volume ou a intensidade do treino aumentam mais rápido que sua capacidade de reparo, microlesões se acumulam. Há lesões por fadiga em osso previamente saudável submetido a carga repetida e por insuficiência quando a resistência do osso está reduzida. Dor localizada que piora com impacto, sensibilidade pontual e exame de imagem compatível orientam a investigação; radiografias iniciais podem ser normais.\n\n**Energia disponível importa para ambos os sexos.** Distúrbio alimentar ou restrição energética pode deixar pouca energia para funções hormonais e reparo ósseo. O modelo histórico da tríade da atleta relaciona baixa disponibilidade energética, alterações menstruais e baixa densidade mineral óssea. O conceito atual de deficiência relativa de energia no esporte, REDs, também se aplica a homens: baixa densidade óssea e alterações hormonais, inclusive testosterona baixa, podem acompanhar maior risco de lesão óssea por estresse.\n\nO índice de massa corporal isolado não resolve a avaliação. Baixo peso ou perda rápida sugerem deficiência energética em alguns atletas, mas pessoas com IMC normal também podem estar em risco. A conduta inclui reduzir a carga dolorosa, reconhecer sítios de alto risco, corrigir fatores nutricionais e hormonais e planejar retorno gradual, não apenas tratar a imagem da fratura.",
+  "correta": "**Distúrbio alimentar em mulheres.** É fator de risco bem estabelecido por favorecer baixa disponibilidade energética, disfunção menstrual e comprometimento ósseo. Foi a associação clássica escolhida pela resposta provável da prova.",
   "referencias": [
-   "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., pg. 669."
+   "International Olympic Committee consensus statement on Relative Energy Deficiency in Sport, 2023. https://bjsm.bmj.com/content/57/17/1073",
+   "Primary, secondary and tertiary prevention of Relative Energy Deficiency in Sport: IOC consensus subgroup review. https://bjsm.bmj.com/content/57/17/1119"
   ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "provavel": "D",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-1147": {
@@ -10507,19 +10508,21 @@
   "conferido": false
  },
  "trauma-1150": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": "**Tile C instável hemodinamicamente.** A instabilidade posterior vertical é controlada provisoriamente com o clampe posterior (pélvico), que comprime a sacroilíaca.\n\n**Na prova:** instabilidade vertical se controla com clampe posterior.",
-  "correta": "**Clampe posterior.** Estabiliza o anel posterior.",
   "incorretas": {
-   "A": "**Fixador externo supra-acetabular.** Controla mal o posterior.",
-   "C": "**Calção pneumático antichoque (PASG).** Abandonado.",
-   "D": "**Enfaixamento circunferencial com lençol (“fraldão”).** Medida de urgência, mas não a fixação ideal."
+   "A": "**Fixador externo supra-acetabular.** É ferramenta de estabilização anterior útil em certos padrões e pode integrar controle de danos. Isoladamente, não comprime tão diretamente a lesão sacroilíaca posterior que caracteriza o cenário da questão.",
+   "C": "**Calção pneumático antichoque.** Foi usado para compressão externa e suporte circulatório, mas tem limitações e não fornece redução posterior dirigida. Não é a solução preferida nos protocolos contemporâneos de trauma pélvico.",
+   "D": "**Lençol circunferencial.** Quando aplicado corretamente sobre os grandes trocânteres, é excelente medida inicial e pode salvar tempo antes do hospital. A banca o distingue do clampe posterior por perguntar um dispositivo de fixação provisória dirigida ao anel posterior; não se deve, porém, atrasar o lençol enquanto se aguarda um clampe."
   },
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso a questão não conta no desempenho. A alternativa B é a resposta provável se “fixação provisória” significar o dispositivo invasivo dirigido à instabilidade posterior do tipo C. No atendimento inicial atual, entretanto, a cinta pélvica ou um lençol corretamente aplicado sobre os grandes trocânteres é medida imediata amplamente recomendada. O clampe posterior não é universalmente ideal: requer equipe treinada, anatomia favorável e avaliação de contraindicações.",
+  "conceito": "**Duas instabilidades diferentes.** Na classificação de Tile, tipo A é rotacional e verticalmente estável; tipo B é rotacionalmente instável, mas mantém estabilidade vertical; tipo C perde ambas. A ruptura posterior no tipo C pode permitir deslocamento vertical e sangramento maciço. Primeiro tratam-se hemorragia e choque com protocolo de trauma, enquanto a pelve é imobilizada e se procura a fonte do sangramento.\n\n**O que cada dispositivo controla.** A cinta pélvica, ou lençol usado como cinta, é rápida e não invasiva. Deve envolver os grandes trocânteres, não a cintura, e pode ser colocada antes da confirmação completa do padrão. O fixador externo anterior supra-acetabular ajuda a reduzir algumas aberturas anteriores, mas oferece controle limitado de instabilidade posterior marcada. O clampe pélvico posterior comprime diretamente a região sacroilíaca e pode servir de estabilização provisória hospitalar em lesões tipo C selecionadas com choque persistente.\n\nO clampe não substitui reposição sanguínea nem o controle definitivo da hemorragia por empacotamento pré-peritoneal ou embolização quando indicados. Sua colocação inadequada pode lesar estruturas ou deslocar fragmentos, especialmente em fraturas sacrais cominutivas ou trajetos de pino inseguros. O calção pneumático antichoque é técnica histórica, sem papel rotineiro como resposta moderna a essa instabilidade.",
+  "correta": "**Clampe posterior.** Entre os dispositivos de fixação da lista, é o que aborda mais diretamente a instabilidade do anel posterior no tipo C; a indicação real é seletiva e não elimina a cinta imediata.",
   "referencias": [
-   "Hebert Sizínio et al. Ortopedia e traumatologia: princípios e prática. Porto Alegre: Artmed. 3ª ed., pg. 1278."
+   "Pelvic trauma: WSES classification and guidelines. https://pmc.ncbi.nlm.nih.gov/articles/PMC5241998/",
+   "Management of Acute Hemorrhage in Pelvic Trauma: An Overview. https://pubmed.ncbi.nlm.nih.gov/26815682/",
+   "NICE. Fractures (complex): assessment and management, recommendations. https://www.nice.org.uk/guidance/ng37/chapter/recommendations"
   ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "provavel": "B",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-1151": {
@@ -10558,19 +10561,20 @@
   "conferido": false
  },
  "trauma-1153": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "D",
-  "conceito": "**Síndrome compartimental na tíbia.** A incidência aumenta com a energia; nas expostas, é maior no grau III.\n\n**Na prova:** a exposição não descomprime o compartimento.",
-  "correta": "**Exposta grau III de GUSTILO & ANDERSON.** É a mais frequente.",
   "incorretas": {
-   "A": "**Fechada.** Menos frequente.",
-   "B": "**Exposta grau I de GUSTILO & ANDERSON.** Menos frequente.",
-   "C": "**Exposta grau II de GUSTILO & ANDERSON.** Menos frequente."
+   "A": "**Fratura fechada.** É causa importante e frequente de síndrome compartimental da tíbia; a pele íntegra não permite qualquer alívio externo de pressão. Não deve ser tratada como cenário de baixo risco só porque a banca escolheu o grau III exposto.",
+   "B": "**Exposta grau I.** A pequena ferida não funciona como fasciotomia, então a síndrome também pode ocorrer. Em geral há menor dano visível de partes moles, mas vigilância e reavaliação continuam necessárias.",
+   "C": "**Exposta grau II.** A área de ferida é maior que no grau I, sem a destruição extensa característica do grau III. Ainda assim, o risco compartimental depende da lesão muscular real e não pode ser excluído pela graduação da pele."
   },
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso a questão não conta no desempenho. A resposta provável D reflete a associação intuitiva entre trauma de alta energia e fratura exposta grau III, mas a afirmação de que a síndrome compartimental é “mais frequente” nesse grupo do que nas fraturas fechadas da diáfise tibial não é sustentada de forma consistente. Em coorte contemporânea, a comparação por grau de exposição não mostrou associação para fraturas tibiais extra-articulares. Todas as alternativas exigem vigilância.",
+  "conceito": "**Uma ferida aberta não descomprime todos os músculos.** A perna contém quatro compartimentos envolvidos por fáscia. Após fratura, edema e sangramento podem elevar a pressão dentro de um deles e reduzir a perfusão, mesmo quando existe ferida na pele. A abertura costuma não atravessar toda a fáscia nem liberar todos os compartimentos. Dor desproporcional, piora à mobilização passiva, tensão e exame seriado são fundamentais; em paciente não examinável ou quadro incerto, a pressão pode auxiliar. Um delta entre pressão arterial diastólica e pressão do compartimento inferior a 30 mmHg é critério frequentemente usado junto com o contexto clínico.\n\n**Gustilo-Anderson descreve a fratura exposta, não a pressão.** Grau I corresponde a ferida pequena e lesão limitada de partes moles; grau II tem ferida maior sem destruição extensa; grau III envolve alta energia ou lesão extensa, subdividida em IIIA quando há cobertura viável, IIIB quando é necessária reconstrução da cobertura, e IIIC quando existe lesão arterial que requer reparo. O grau III pode acompanhar edema muscular intenso e, portanto, risco de síndrome compartimental, mas a classificação não determina sozinha qual paciente a desenvolverá.\n\nSe há suspeita clínica forte, a fasciotomia não deve esperar perda de pulso, que costuma ser sinal tardio. O tratamento da fratura exposta inclui antibiótico precoce, desbridamento e estabilização, enquanto a síndrome compartimental requer liberação urgente dos compartimentos comprometidos. Os problemas podem coexistir e precisam ser tratados separadamente.",
+  "correta": "**Exposta grau III, conforme a resposta provável histórica.** O trauma de alta energia pode lesar intensamente o músculo apesar da ferida cutânea. Isso não autoriza afirmar que todo grau III tenha incidência superior à fratura fechada, como explica o alerta.",
   "referencias": [
-   "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., pg. 2127."
+   "Association between open tibia fractures and acute compartment syndrome: a retrospective cohort study. https://pubmed.ncbi.nlm.nih.gov/34929394/",
+   "Acute Compartment Syndrome in Type IIIB Open Tibial Shaft Fractures Using a 2-Stage Orthoplastic Approach. https://pubmed.ncbi.nlm.nih.gov/33771962/"
   ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "provavel": "D",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-1154": {
