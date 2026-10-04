@@ -5301,14 +5301,14 @@
   "conferido": false
  },
  "pediatria-0486": {
-  "conceito": "### Raquitismo: laboratório\n| Tipo | Ca | P | FA | PTH | Detalhe |\n|---|---|---|---|---|---|\n| nutricional (vit. D) | ↓/N | ↓ | ↑ | ↑ | 25-OH-D baixa |\n| hipofosfatêmico (vit. D resistente, ligado ao X) | N | ==↓↓== | ↑ | N | PHEX, FGF23 alto; perda renal de P |\n| vit. D dependente I | ↓ | ↓ | ↑ | ↑ | 1α-hidroxilase |\n| vit. D dependente II | ↓ | ↓ | ↑ | ↑ | receptor, alopecia |\n| ==osteodistrofia renal== | ↓ | ==↑== | ↑ | ↑↑ | rim ==não excreta fosfato== |\n\n### Ortopedia da osteodistrofia renal\n- Geno valgo, ==epifisiólise== (inclusive em locais atípicos), fraturas.\n- Controle metabólico antes de operar.\n\n### Valgo patológico\n| Causa | Pista |\n|---|---|\n| ==osteodistrofia renal== | ==valgo== é a deformidade típica; epifisiólise |\n| raquitismo nutricional/hipofosfatêmico | mais ==varo== (pode ser valgo) |\n| pós-traumático (Cozen) | fratura metafisária proximal da tíbia |\n| displasias, NF1 | variável |\n\n> **Na prova:** valgo patológico infantil = mais associado à ==osteodistrofia renal==",
-  "correta": "**Osteodistrofia renal.**\n- Valgo é a deformidade típica.\n- Hiperparatireoidismo secundário.",
   "incorretas": {
-   "A": "**Raquitismo.**\n- Mais comum o varo.",
-   "B": "**NF1.**\n- Arqueamento tibial anterolateral.",
-   "C": "**Hipofosfatemia.**\n- Geralmente varo."
+   "A": "No raquitismo a deformidade mais comum é o varo, embora possa haver valgo.",
+   "B": "A neurofibromatose se associa mais ao arqueamento anterolateral da tíbia.",
+   "C": "O raquitismo hipofosfatêmico causa geralmente varo."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **joelho valgo** é normal entre 2 e 7 anos, com pico por volta de 3 a 4 anos. Ele é **patológico** quando passa de cerca de 15°, quando é assimétrico, progride ou aparece fora da idade esperada.\n\n**As causas de valgo patológico**:\n\n**osteodistrofia renal**: a doença renal crônica deixa o fosfato alto, o cálcio baixo e o PTH muito alto (hiperparatireoidismo secundário). O osso fica fraco e as fises, alargadas; a deformidade **típica** é o **valgo** dos joelhos, e a **epifisiólise** aparece com frequência, inclusive em locais atípicos;\n\n**raquitismo nutricional e hipofosfatêmico**: a deformidade mais comum é o **varo**, embora o valgo possa aparecer;\n\n**pós-traumático** (fenômeno de **Cozen**): valgo progressivo depois de fratura metafisária proximal da tíbia;\n\n**displasias esqueléticas**, como a de Morquio;\n\n**neurofibromatose**: mais associada ao arqueamento anterolateral da tíbia.\n\n**O tratamento**: controlar a doença de base primeiro (na osteodistrofia renal, controle do fosfato e do PTH); depois, **crescimento guiado** com placa em 8 medial enquanto a fise está aberta, ou osteotomia se já fechou.\n\n**Na prova**: o valgo infantil patológico se associa mais à **osteodistrofia renal**.",
+  "correta": "Na osteodistrofia renal, o valgo dos joelhos é a deformidade típica, junto com a epifisiólise.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0487": {
@@ -5327,63 +5327,63 @@
   "conferido": false
  },
  "pediatria-0488": {
-  "conceito": "### Doença de Blount\n| Forma | Idade | Perfil |\n|---|---|---|\n| infantil | < 4 anos | obesa, marcha precoce, bilateral |\n| juvenil/adolescente | > 10 anos | obeso, unilateral, varo menor |\n\n### Langenskiöld (6 estágios)\n| Estágio | Achado |\n|---|---|\n| I | irregularidade metafisária medial, bico |\n| II | depressão em degrau |\n| III | degrau mais profundo, fragmentação |\n| ==IV== | ==ponte (barra) óssea medial através da fise== começa |\n| V | epífise dupla (fratura) |\n| VI | fechamento medial completo |\n\n### Ângulo metafisário-diafisário (Drennan)\n- > 16°: Blount provável; < 10°: fisiológico.\n\n### Tratamento\n- < 3 anos, estágio I-II: órtese.\n- Crescimento guiado, osteotomia valgizante antes dos 4 anos; ressecção da barra, elevação do planalto nos tardios.\n\n### Perfil da Blount infantil\n- ==Marcha precoce== (antes de 1 ano), ==sobrepeso/obesidade==, afrodescendentes, bilateral.\n- Carga sobre a fise medial imatura inibe o crescimento (Hueter-Volkmann).\n\n### Achados\n- ==Bico metafisário medial==; ==subluxação lateral da tíbia== (lateral thrust na marcha).\n- Associação com obesidade e deficiência de vitamina D.\n- Pior prognóstico: ==meninas negras==, obesas, início precoce, estágios avançados.\n\n> **Na prova:** Blount pior prognóstico = ==meninas negras obesas==, não meninos",
-  "correta": "**Feminino, raça negra.**\n- Obesas, início precoce.\n- Maior recidiva após osteotomia.",
   "incorretas": {
-   "A": "**Masculino branco.**\n- Melhor prognóstico.",
-   "B": "**Masculino.**\n- Pior em meninas.",
-   "C": "**Branca.**\n- Pior na raça negra."
+   "A": "Meninos brancos estão no grupo de melhor prognóstico.",
+   "B": "A raça negra está certa, mas o pior prognóstico é no sexo feminino.",
+   "C": "O sexo feminino está certo, mas o pior prognóstico é na raça negra."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **doença de Blount infantil** é o varo progressivo por falha da fise proximal medial da tíbia, em criança que **andou cedo** e tem **sobrepeso ou obesidade**. É mais comum em **afrodescendentes** e muitas vezes bilateral.\n\n**Os fatores de pior prognóstico**:\n\n**sexo feminino**;\n\n**raça negra**;\n\n**obesidade** importante;\n\n**início precoce** e diagnóstico tardio;\n\n**estágios avançados de Langenskiöld** (IV a VI), com barra fisária.\n\n**O resultado**: nesse grupo, a deformidade progride mais e a **recidiva** depois da osteotomia é mais frequente.\n\n**O tratamento**: órtese abaixo de 3 anos nos estágios I e II; osteotomia valgizante com hipercorreção, de preferência antes dos 4 anos; nos estágios avançados, ressecção da barra, epifisiodese e elevação do planalto medial.\n\n**O diagnóstico**: ângulo metafisário-diafisário de Drennan acima de 16°, bico metafisário medial, ossificação assimétrica da epífise e subluxação lateral da tíbia.\n\n**Na prova**: a Blount infantil tem pior prognóstico no sexo **feminino**, na **raça negra**.",
+  "correta": "O pior prognóstico da Blount infantil é em meninas negras, sobretudo obesas e com início precoce.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0489": {
-  "conceito": "### Osteotomias pélvicas na DDQ\n| Tipo | Técnica | Característica |\n|---|---|---|\n| ==Salter== | osteotomia ==inominada completa== acima do acetábulo, cunha de ilíaco anterior | redireciona; ==não muda volume==; 18 meses a 6 anos |\n| Pemberton | pericapsular incompleta, dobradiça na trirradiada | reduz volume, acetábulo grande |\n| Dega | incompleta, posterior preservada | PC, displasia posterolateral |\n| Steel | ==tripla== (ílio, ísquio, púbis) | criança maior |\n| Ganz | ==periacetabular== (Bernese) | trirradiada fechada |\n| Chiari | salvamento, medializa | sem congruência |\n\n### Salter na imagem\n- Linha reta do ciático maior à espinha ilíaca anteroinferior.\n- Enxerto triangular da crista ilíaca, fixado com fios.\n- Pivô na sínfise púbica.\n\n### Ganz (periacetabular, Bernese)\n- Cortes: ísquio parcial, púbis, ilíaco supra-acetabular e ==retroacetabular==, preservando a ==coluna posterior==.\n- ==Trirradiada fechada== (adolescente e adulto jovem).\n- Grande correção, pelve continua estável (marcha precoce), não altera o canal de parto.\n\n### Detalhes\n- ==Fise trirradiada fechada== (cortes a atravessariam).\n- Mantém o ==anel pélvico== e o canal de parto: parto normal possível.\n- Via de ==Smith-Petersen modificada== (ou abordagens minimamente invasivas); pode associar luxação cirúrgica/osteotomia trocantérica para o fêmur.\n\n> **Na prova:** Ganz ==não altera o formato da pelve== (gestação futura preservada)",
-  "correta": "**Não altera a pelve.**\n- Coluna posterior íntegra.\n- Canal de parto preservado.",
   "incorretas": {
-   "A": "**Fise fechada.**\n- Trirradiada deve estar fechada.",
-   "C": "**Pode associar.**\n- Osteotomia trocantérica/luxação cirúrgica são combinações possíveis.",
-   "D": "**Não apenas.**\n- Outras vias existem."
+   "A": "A osteotomia de Ganz exige a cartilagem trirradiada fechada; com a fise aberta, os cortes a lesariam.",
+   "C": "A osteotomia de Ganz pode ser associada à luxação cirúrgica com osteotomia do trocanter.",
+   "D": "A via Smith-Petersen modificada é a clássica, mas não a única; há vias minimamente invasivas."
   },
+  "conceito": "A **osteotomia periacetabular de Ganz** (Bernese) é a cirurgia de escolha para a **displasia do quadril** do adolescente e do adulto jovem, quando a cartilagem ainda está boa. Ela solta o acetábulo da pelve e o **reorienta** para cobrir melhor a cabeça.\n\n**Os cortes**: no ísquio (parcial), no púbis e no ilíaco acima e atrás do acetábulo, **preservando a coluna posterior** da pelve.\n\n**As vantagens**:\n\n**pelve estável**: como a coluna posterior fica íntegra, o anel pélvico continua firme e o paciente pode andar cedo com muletas;\n\n**não altera o formato da pelve**: o **canal de parto** é preservado, e o **parto normal** continua possível;\n\n**grande capacidade de correção** em todos os planos.\n\n**As condições**:\n\n**cartilagem trirradiada fechada**: os cortes passariam pela trirradiada e a lesariam numa criança;\n\n**via de acesso**: a clássica é a **Smith-Petersen modificada**, mas há vias minimamente invasivas;\n\n**cirurgias associadas**: pode ser combinada com **luxação cirúrgica** do quadril e **osteotomia do trocanter**, ou com osteotomias femorais, para tratar o lado do fêmur.\n\n**Nas crianças**, com trirradiada aberta, usam-se Salter, Pemberton, Dega ou Steel.\n\n**Na prova**: a osteotomia de Ganz **não altera o formato da pelve** e não atrapalha uma futura gestação.",
+  "correta": "Como preserva a coluna posterior e o anel pélvico, a osteotomia de Ganz não altera o canal de parto.",
   "referencias": [
    "AO Surgery Reference. https://surgeryreference.aofoundation.org/",
    "POSNA Study Guide. https://posna.org/physician-education/study-guide"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0490": {
-  "conceito": "### Coxa vara do desenvolvimento\n- Ângulo cervicodiafisário diminuído por defeito de ossificação no colo medial.\n- ==Triângulo de Fairbank== (fragmento triangular inferior no colo).\n- Marcha de Trendelenburg indolor, encurtamento; bilateral em 30 a 50%.\n\n### Por que limita abdução e rotação medial\n- Trocanter alto e colo varo: o trocanter ==bate no ilíaco== na abdução.\n- Retroversão relativa: ==rotação medial== limitada.\n\n### Ângulo de Hilgenreiner-epifisário (HE)\n| Ângulo HE | Conduta |\n|---|---|\n| < 45° | resolve espontaneamente |\n| 45 a 60° | observar |\n| ==> 60°== | ==osteotomia valgizante== (Pauwels) |\n\n### Diferenciais\n- Coxa vara congênita (DFFP), displasias esqueléticas, raquitismo, sequela de DDQ ou Perthes.\n\n> **Na prova:** coxa vara do desenvolvimento limita ==abdução e rotação medial==.",
-  "correta": "**Colo.**\n- Defeito de ossificação na fise do colo medial.\n- Triângulo de Fairbank.",
   "incorretas": {
-   "B": "**Cabeça.**\n- Epífise é normal.",
-   "C": "**Trocanter.**\n- Cresce normal e fica alto.",
-   "D": "**Diáfise.**\n- Não tem fise."
+   "B": "A epífise da cabeça femoral é normal na coxa vara do desenvolvimento.",
+   "C": "O trocanter maior cresce normalmente e só fica alto pela deformidade do colo.",
+   "D": "A diáfise não tem fise; o defeito está no colo."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **coxa vara do desenvolvimento**, o defeito está na **fise do colo femoral**: há uma falha de ossificação na parte **inferomedial do colo**, junto à fise. O osso ali fica fraco, a fise fica cada vez mais **vertical**, o cisalhamento aumenta e o ângulo cervicodiafisário diminui.\n\n**O que se vê na radiografia**:\n\n**triângulo de Fairbank**: um fragmento ósseo triangular na parte inferior do colo, separado pela fise e pelo defeito;\n\n**fise verticalizada**, medida pelo ângulo de **Hilgenreiner-epifisário**;\n\n**trocanter alto**: o **trocanter maior cresce normalmente**, mas como o colo fica varo e curto, ele sobe em relação à cabeça.\n\n**O que está normal**: a **epífise da cabeça** femoral; o problema é o colo. A **diáfise** não tem fise.\n\n**As consequências**: marcha de Trendelenburg indolor (abdutores sem alavanca), encurtamento e limitação da abdução e da rotação medial.\n\n**O tratamento**: observação se o ângulo HE for abaixo de 45°; osteotomia valgizante se acima de 60° ou progressivo.\n\n**Na prova**: na coxa vara, a fise acometida é a do **colo**.",
+  "correta": "O defeito de ossificação fica na fise do colo, na parte inferomedial, e forma o triângulo de Fairbank.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0491": {
-  "conceito": "### Menisco discoide\n| Aspecto | Dado |\n|---|---|\n| menisco | ==lateral== (quase sempre) |\n| prevalência | 0,4 a 17% (mais em asiáticos) |\n| bilateral | até 20% |\n| clínica | ==estalido==, bloqueio, ==lesões sem trauma== |\n\n### Watanabe\n| Tipo | Descrição |\n|---|---|\n| I completo | cobre todo o planalto, fixações normais |\n| II incompleto | cobre parte |\n| III ==Wrisberg== | ==sem fixação tibial posterior (coronário)==, só o ligamento de Wrisberg: ==hipermóvel== |\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| assintomático | observar |\n| sintomático estável | ==saucerização== (meniscectomia parcial) |\n| Wrisberg / instável | saucerização + ==sutura periférica==; clássico: meniscectomia total |\n\n### Sinais radiográficos do discoide lateral\n| Sinal | Achado |\n|---|---|\n| espaço articular lateral | ==alargado== |\n| côndilo femoral lateral | ==achatado== (quadrado) |\n| planalto lateral | côncavo, em taça |\n| espinha tibial lateral | ==hipoplásica== |\n| ==cabeça da fíbula== | ==alta== |\n\n> **Na prova:** discoide lateral associa-se à ==cabeça alta da fíbula==",
-  "correta": "**Cabeça alta da fíbula.**\n- Sinal radiográfico clássico.\n- Com espaço lateral alargado.",
   "incorretas": {
-   "B": "**Espaço aumentado.**\n- Não diminuído.",
-   "C": "**Espinha hipoplásica.**\n- Não hiperplásica.",
-   "D": "**Côndilo achatado.**\n- Hipoplásico, quadrado."
+   "B": "O espaço articular lateral fica alargado, não diminuído.",
+   "C": "A espinha tibial lateral fica hipoplásica, não hiperplásica.",
+   "D": "O côndilo femoral lateral fica achatado e hipoplásico, não hiperplásico."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **menisco discoide lateral** é largo e espesso e ocupa mais espaço no compartimento lateral do joelho. Com o tempo, os ossos se adaptam a ele, e a **radiografia** pode mostrar sinais indiretos:\n\n**espaço articular lateral alargado**, pelo menisco grosso entre os ossos;\n\n**côndilo femoral lateral achatado**, de aspecto quadrado (hipoplásico);\n\n**planalto tibial lateral côncavo**, em forma de taça;\n\n**espinha tibial lateral hipoplásica**;\n\n**cabeça da fíbula alta**, mais próxima da interlinha.\n\n**A confirmação**: a **ressonância** mostra o menisco em continuidade (em \"gravata-borboleta\") em três ou mais cortes sagitais consecutivos de 5 mm.\n\n**O quadro**: estalido, bloqueio, dor na interlinha lateral e lesões com trauma mínimo.\n\n**O tratamento**: observar o assintomático; saucerizar o sintomático, com sutura periférica se instável.\n\n**Na prova**: o menisco discoide lateral pode se associar à **cabeça alta da fíbula**.",
+  "correta": "A cabeça alta da fíbula é um dos sinais radiográficos clássicos do menisco discoide lateral.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0492": {
-  "conceito": "### Epifisiólise: fatores\n| Tipo | Fator |\n|---|---|\n| mecânico | ==obesidade==, ==retroversão relativa (menos anteversão)==, ==coxa vara (menor ângulo cervicodiafisário)==, fise mais oblíqua, estirão |\n| endócrino | hipotireoidismo, deficiência de GH (uso de GH), hipogonadismo, osteodistrofia renal, radioterapia |\n\n- Pedir TSH em ==< 10 anos==, baixa estatura, ou bilateral.\n\n### Classificações\n| Critério | Tipos |\n|---|---|\n| Loder (estabilidade) | estável (anda) × ==instável== (não anda; necrose em até 50%) |\n| Southwick (ângulo) | leve < 30°, moderado 30 a 50°, grave > 50° |\n| tempo | aguda < 3 semanas, crônica, crônica agudizada |\n\n### Tratamento\n- ==Fixação in situ== com um parafuso canulado central.\n- Contralateral profilática: < 10 anos, endocrinopatia.\n\n### Técnica do parafuso\n- ==Um parafuso canulado== central, perpendicular à fise, no centro da epífise em AP e perfil.\n- ==Evitar o quadrante anterossuperior== (e o posterossuperior): artérias epifisárias laterais (circunflexa medial).\n- Ponta a 5 mm do osso subcondral; nunca penetrar a articulação.\n- Ponto de entrada ==anterior== no colo (a epífise escorregou para trás).\n\n### Clínica da epifisiólise\n- Adolescente obeso, dor no quadril, ==coxa ou joelho== (dor referida engana).\n- ==Claudicação==, ==Trendelenburg==, ==limitação da rotação interna, abdução e flexão==.\n- ==Marcha com rotação EXTERNA== do membro.\n- ==Drehmann==: rotação externa obrigatória ao fletir o quadril.\n\n### Escorregamento instável\n- Colo ==relativamente retrovertido== (epífise posterior): entrada anterior no colo.\n- Maior instabilidade: parafusos ==totalmente rosqueados== (ou dois parafusos) dão mais estabilidade e evitam recuo.\n- Redução suave e descompressão capsular são discutidas; nunca manipular vigorosamente.\n\n> **Na prova:** instável = ==totalmente rosqueados==, colo ==retrovertido== (veja o alerta)",
-  "correta": "**Totalmente rosqueados, colo retrovertido.**\n- Mais estabilidade na fise instável.\n- Entrada anterior no colo.",
   "incorretas": {
-   "B": "**Antevertido.**\n- Colo fica retrovertido.",
-   "C": "**Parcialmente rosqueado.**\n- Banca preferiu rosca total.",
-   "D": "**Os dois errados.**\n- Rosca e versão."
+   "B": "A rosca total está certa, mas o colo fica relativamente retrovertido, não antevertido.",
+   "C": "O colo retrovertido está certo, mas a banca preferiu rosca total para a forma instável.",
+   "D": "Erra os dois pontos: a banca preferiu rosca total, e o colo fica retrovertido."
   },
+  "conceito": "Na **epifisiólise instável** (a criança não consegue andar), a fise está solta de forma abrupta, o risco de **necrose** chega a cerca de 47% e o escorregamento pode progredir se a fixação for fraca.\n\n**A anatomia que guia o parafuso**: a epífise escorregou para **trás**, e o colo fica **relativamente retrovertido** em relação a ela. Por isso o parafuso entra pela **face anterior** do colo e segue para o **centro da epífise**, perpendicular à fise, evitando o quadrante anterossuperior (onde passam os vasos).\n\n**A escolha do implante**: na forma **estável**, um parafuso canulado central, parcialmente rosqueado, é o padrão. Na forma **instável**, a fise precisa de **mais estabilidade**. A banca preferiu parafusos **totalmente rosqueados**, que seguram melhor e evitam o recuo do implante. Muitos serviços usam **dois parafusos** com bons resultados, e não há consenso sobre o tipo de rosca.\n\n**Os outros cuidados na instável**: tratar como urgência, evitar manipulação vigorosa (só a redução que acontece ao posicionar o paciente), considerar a **descompressão da cápsula** (técnica de Parsch) e, em centros experientes, a redução aberta por luxação cirúrgica (Dunn modificado).\n\n**Na prova**: na epifisiólise instável, a banca preferiu parafusos **totalmente rosqueados**, com o colo **relativamente retrovertido**.",
+  "correta": "A banca preferiu parafusos totalmente rosqueados para mais estabilidade, e o colo fica relativamente retrovertido, com entrada anterior.",
   "alerta": "Não há consenso sobre o tipo de rosca na epifisiólise instável. Muitos serviços usam parafuso canulado parcialmente rosqueado (único ou duplo) com bons resultados; a banca preferiu rosca total para maior estabilidade.",
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0493": {
@@ -5398,47 +5398,47 @@
   "conferido": false
  },
  "pediatria-0494": {
-  "conceito": "### Sinostose radioulnar congênita\n- Falha de segmentação entre rádio e ulna proximais (7ª semana).\n- ==Bilateral em cerca de 60%==, geralmente ==isolada==.\n- Pode associar-se a síndromes (Apert, Klinefelter e aneuploidias do X, artrogripose).\n- Antebraço fixo, em geral ==pronado==; compensação pelo ombro e punho.\n- Diagnóstico tardio (compensação eficiente).\n\n### Classificação (Tachdjian / Cleary-Omer)\n- Fibrosa × óssea; cabeça do rádio normal, ausente ou luxada.\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| neutro ou leve pronação | ==observação== |\n| pronação > 60° com limitação | osteotomia derrotativa (neutro a 10-20° de pronação) |\n| risco | ==síndrome compartimental== nas grandes correções |\n\n### Embriologia\n- Rádio e ulna nascem de uma ==massa cartilaginosa comum==; separam-se longitudinalmente de distal para proximal.\n- Falha dessa separação ==antes da rotação lateral== do membro superior: antebraço preso na posição fetal, em ==pronação==.\n\n> **Na prova:** sinostose radioulnar = ==pronação==, ==terço proximal==",
-  "correta": "**Pronação, terço proximal.**\n- Fusão proximal é a regra.\n- Antebraço fixo em pronação.",
   "incorretas": {
-   "A": "**Distal.**\n- Sinostose distal é rara.",
-   "B": "**Supinação e distal.**\n- Ambos errados.",
-   "D": "**Supinação.**\n- Fica em pronação."
+   "A": "A pronação está certa, mas a fusão distal é rara; a típica é proximal.",
+   "B": "Erra os dois pontos: o antebraço fica em pronação e a fusão é proximal.",
+   "D": "A localização proximal está certa, mas o antebraço fica em pronação, não em supinação."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **sinostose radioulnar congênita** é a fusão do rádio com a ulna. Na embriologia, os dois ossos nascem de uma massa cartilaginosa comum e se separam de **distal para proximal**. Por isso, quando a separação falha, a fusão fica quase sempre no **terço proximal**, a última parte a se separar.\n\n**A posição do antebraço**: a falha acontece antes da rotação lateral do membro superior, e o antebraço fica preso na posição fetal, em **pronação**.\n\n**As características**:\n\n**bilateral** em cerca de 60%, em geral isolada;\n\n**diagnóstico tardio**, porque o ombro e o punho compensam bem;\n\nqueixa típica: dificuldade para receber objetos na palma, comer ou abotoar.\n\n**O tratamento**:\n\n**posição neutra ou pronação leve**: observação;\n\n**pronação acima de cerca de 60°** com limitação: **osteotomia derrotativa** pela massa de fusão, levando o antebraço para neutro ou leve pronação;\n\n**cuidado**: correções grandes de uma vez arriscam síndrome compartimental.\n\n**A sinostose distal** é rara.\n\n**Na prova**: na sinostose radioulnar congênita, o antebraço fica em **pronação** e o defeito é no **terço proximal**.",
+  "correta": "O antebraço fica preso em pronação, e a fusão é quase sempre proximal, a última parte a se separar.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0495": {
-  "conceito": "### Segmentos do membro em desenvolvimento\n| Segmento | Membro superior | Membro inferior |\n|---|---|---|\n| zonoesqueleto (cintura) | escápula, clavícula | pelve |\n| ==estilopódio== | ==úmero== | fêmur |\n| ==zeugopódio== | ==rádio e ulna== | tíbia e fíbula |\n| autopódio | mão | pé |\n\n- Formação em sentido ==proximal para distal== (zona de progressão, crista ectodérmica apical).\n- Articulações surgem entre segmentos: ==cotovelo entre estilopódio e zeugopódio==; punho entre zeugopódio e autopódio; ombro entre cintura e estilopódio.\n\n### Eixos e sinalização\n| Eixo | Centro |\n|---|---|\n| proximodistal | crista ectodérmica apical (FGF) |\n| anteroposterior (radioulnar) | zona de atividade polarizante (SHH) |\n| dorsoventral | ectoderma dorsal (WNT7A) |\n\n> **Na prova:** cotovelo = entre ==estilopódio e zeugopódio==",
-  "correta": "**Estilopódio e zeugopódio.**\n- Úmero e antebraço.\n- Junção forma o cotovelo.",
   "incorretas": {
-   "A": "**Cintura e estilopódio.**\n- Forma o ombro.",
-   "C": "**Zeugopódio e autopódio.**\n- Forma o punho.",
-   "D": "**Não são contíguos.**\n- Cintura e mão não se articulam."
+   "A": "Entre a cintura e o estilopódio forma-se o ombro.",
+   "C": "Entre o zeugopódio e o autopódio forma-se o punho.",
+   "D": "A cintura e o autopódio não são contíguos; não formam articulação."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O membro em desenvolvimento se forma de **proximal para distal** e é dividido em segmentos:\n\n**zonoesqueleto (cintura)**: escápula e clavícula no membro superior; pelve no inferior;\n\n**estilopódio**: o segmento de **um osso**: **úmero** ou fêmur;\n\n**zeugopódio**: o segmento de **dois ossos**: **rádio e ulna**, ou tíbia e fíbula;\n\n**autopódio**: a **mão** ou o pé.\n\n**As articulações nascem entre os segmentos**:\n\n**ombro**: entre a cintura e o estilopódio;\n\n**cotovelo**: entre o **estilopódio** (úmero) e o **zeugopódio** (rádio e ulna);\n\n**punho**: entre o zeugopódio e o autopódio.\n\n**Quem controla o crescimento**: a **crista ectodérmica apical**, pelo FGF, comanda o eixo proximal-distal; a zona de atividade polarizante (sonic hedgehog) organiza o eixo radioulnar; o ectoderma dorsal (Wnt7a) define dorso e palma.\n\n**Por que importa**: as deficiências congênitas são descritas por esses segmentos (por exemplo, a focomelia é a falta do estilopódio e do zeugopódio, com a mão presa ao tronco).\n\n**Na prova**: o cotovelo se forma entre o **estilopódio** e o **zeugopódio**.",
+  "correta": "O cotovelo une o úmero (estilopódio) ao rádio e à ulna (zeugopódio).",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0496": {
-  "conceito": "### Zonas do tríceps sural (alongamento na PC)\n| Zona | Local | Técnicas | Alonga |\n|---|---|---|---|\n| 1 | ventres do gastrocnêmio | ==Strayer== (recessão da aponeurose proximal), Baumann (fáscia intramuscular) | só gastrocnêmio |\n| ==2== | ==aponeurose conjunta gastrocnêmio-sóleo, distal aos ventres== | ==Vulpius== (V invertido), Baker (língua em U) | gastro + sóleo moderado |\n| 3 | tendão calcâneo | ==Hoke== (três hemissecções percutâneas), White, Z | tudo; maior risco de ==hiperalongamento== (marcha agachada) |\n\n### Silfverskiöld\n- Equino que ==melhora com joelho fletido==: contratura do ==gastrocnêmio== isolado → zonas 1-2.\n- Equino fixo com joelho fletido: sóleo também → zona 2-3.\n\n### Força × zona\n- Quanto mais ==proximal== (zona 1), mais seletivo: só o gastrocnêmio, ==menor perda de força== e menor risco de hiperalongamento.\n- Zona 3 (tendão calcâneo) alonga tudo: maior fraqueza, risco de marcha agachada.\n\n> **Na prova:** zona I = ==menos fraqueza e menos marcha agachada==",
-  "correta": "**Menos fraqueza, menos crouch.**\n- Alonga só o gastrocnêmio.\n- Sóleo preservado segura a tíbia.",
   "incorretas": {
-   "B": "**Mais fraqueza.**\n- Zona I é a mais seletiva.",
-   "C": "**Mais crouch.**\n- Risco maior é na zona III.",
-   "D": "**Tudo invertido.**\n- Descreve a zona III."
+   "B": "A zona I causa menor, não maior, perda de força.",
+   "C": "A menor perda de força está certa, mas o risco de marcha agachada é menor, não maior.",
+   "D": "Está tudo invertido: maior perda de força e maior risco de marcha agachada descrevem a zona III."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **equino** da paralisia cerebral pode ser alongado em três **zonas** do tríceps sural, com efeitos diferentes:\n\n**zona I**: nos **ventres do gastrocnêmio** (Strayer, Baumann); alonga **só o gastrocnêmio**;\n\n**zona II**: na aponeurose conjunta (Vulpius, Baker); alonga o gastrocnêmio e parte do sóleo;\n\n**zona III**: no **tendão calcâneo** (Hoke, White, alongamento em Z); alonga tudo.\n\n**Por que a zona I é mais segura**:\n\n**menor perda de força**: o alongamento é **seletivo** e mais **estável**; o **sóleo** fica intacto;\n\n**menor risco de marcha agachada**: o **sóleo** é o músculo que **segura a tíbia** no apoio, impedindo que ela avance demais sobre o pé. Preservado, ele evita que o joelho e o tornozelo afundem em flexão. Na zona III, o alongamento pode ficar excessivo, o tríceps fica fraco e surge a **marcha agachada** (crouch), com dorsiflexão excessiva, joelho e quadril fletidos.\n\n**Como escolher (Silfverskiöld)**: se o equino melhora com o joelho fletido, só o gastrocnêmio está curto, e a zona I basta.\n\n**Na prova**: na zona I, há **menor perda de força** flexora plantar e **menor risco** de marcha em agachamento.",
+  "correta": "Alongar só o gastrocnêmio preserva o sóleo, que segura a tíbia no apoio; a força se mantém e o risco de marcha agachada diminui.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0497": {
-  "conceito": "### Doença de Blount\n| Forma | Idade | Perfil |\n|---|---|---|\n| infantil | < 4 anos | obesa, marcha precoce, bilateral |\n| juvenil/adolescente | > 10 anos | obeso, unilateral, varo menor |\n\n### Langenskiöld (6 estágios)\n| Estágio | Achado |\n|---|---|\n| I | irregularidade metafisária medial, bico |\n| II | depressão em degrau |\n| III | degrau mais profundo, fragmentação |\n| ==IV== | ==ponte (barra) óssea medial através da fise== começa |\n| V | epífise dupla (fratura) |\n| VI | fechamento medial completo |\n\n### Ângulo metafisário-diafisário (Drennan)\n- > 16°: Blount provável; < 10°: fisiológico.\n\n### Tratamento\n- < 3 anos, estágio I-II: órtese.\n- Crescimento guiado, osteotomia valgizante antes dos 4 anos; ressecção da barra, elevação do planalto nos tardios.\n\n### Perfil da Blount infantil\n- ==Marcha precoce== (antes de 1 ano), ==sobrepeso/obesidade==, afrodescendentes, bilateral.\n- Carga sobre a fise medial imatura inibe o crescimento (Hueter-Volkmann).\n\n### Escolha do tratamento\n| Situação | Conduta |\n|---|---|\n| < 3 anos, Langenskiöld I-II | órtese |\n| ==fise medial funcionante==, crescimento restante | ==crescimento guiado== (hemiepifisiodese lateral, placa em 8) |\n| < 4 anos, deformidade maior | osteotomia metafisária valgizante |\n| barra medial | ressecção da barra + osteotomia |\n| depressão do planalto medial | elevação do hemiplatô |\n\n> **Na prova:** fise medial funcionante = ==crescimento guiado==",
-  "correta": "**Crescimento guiado.**\n- Freia a fise lateral.\n- Depende da fise medial ainda crescer.",
   "incorretas": {
-   "B": "**Osteotomia epifisária.**\n- Casos com depressão articular.",
-   "C": "**Osteotomia metafisária.**\n- Deformidades maiores ou tardias.",
-   "D": "**Elevação do hemiplatô.**\n- Estágios avançados, planalto deprimido."
+   "B": "A osteotomia epifisária é usada nos casos avançados com depressão do planalto medial.",
+   "C": "A osteotomia metafisária é reservada para deformidades maiores ou quando o crescimento guiado não basta.",
+   "D": "A elevação do hemiplatô medial é para os estágios avançados com planalto deprimido."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O tratamento da **doença de Blount** depende da idade, do estágio de Langenskiöld e, principalmente, de a **fise medial ainda funcionar**:\n\n**abaixo de 3 anos, estágios I e II**: órtese;\n\n**fise medial funcionante** e crescimento restante: **crescimento guiado**. Uma placa em 8 (ou grampo) no lado **lateral** da fise **freia** o crescimento lateral, enquanto o lado medial continua crescendo e corrige o varo aos poucos. Depende de a fise medial **ainda crescer**;\n\n**deformidade maior, abaixo de 4 anos**: **osteotomia metafisária valgizante** com hipercorreção;\n\n**barra fisária medial**: ressecção da barra com osteotomia, ou epifisiodese completa;\n\n**planalto medial deprimido** (estágios avançados): **elevação do hemiplatô medial** (osteotomia epifisária).\n\n**As vantagens do crescimento guiado**: cirurgia pequena, recuperação rápida e correção gradual; remove-se a placa quando o eixo fica normal, para não passar do ponto.\n\n**A limitação**: não funciona se a fise medial está fechada ou com barra, nem quando falta pouco crescimento.\n\n**Na prova**: na Blount com **fise tibial medial funcionante**, o tratamento de escolha é o **crescimento guiado**.",
+  "correta": "Com a fise medial funcionando, frear o lado lateral com crescimento guiado corrige o varo aos poucos.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0498": {
