@@ -2380,36 +2380,36 @@
   "conferido": false
  },
  "trauma-0217": {
-  "conceito": "### Tratamento conservador do acetábulo\n| Critério | Detalhe |\n|---|---|\n| teto preservado | ==arcos do teto (roof arc) > 45°== nas três incidências (AP, alar, obturatória); TC: traço fora dos 10 mm superiores |\n| congruência | cabeça congruente com o teto, sem tração |\n| desvio | < 2 mm na área de carga |\n| parede posterior | < 20 a 25% e estável ao exame sob anestesia |\n| ==transversa baixa (infratectal)== | ==teto intacto== |\n| ambas as colunas com congruência secundária | selecionados |\n| paciente | risco cirúrgico alto |\n\n> **Na prova:** conservador = ==transversas baixas== (infratectais)",
-  "correta": "**Transversas baixas.**\n- Teto de carga preservado.\n- Congruência mantida.",
   "incorretas": {
-   "A": "**Dupla coluna.**\n- Em geral cirúrgica, salvo congruência secundária.",
-   "C": "**Coluna anterior desviada.**\n- Cirúrgica.",
-   "D": "**Parede posterior grande.**\n- Instável, cirúrgica."
+   "A": "A fratura das duas colunas costuma ser cirúrgica, salvo com congruência secundária em casos selecionados.",
+   "C": "A fratura desviada da coluna anterior é cirúrgica.",
+   "D": "A fratura grande da parede posterior deixa o quadril instável e é cirúrgica."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **fratura do acetábulo**, o que decide a cirurgia é a **área de carga** (o teto, ou domo) e a **congruência** entre a cabeça e o acetábulo.\n\n**Quando o tratamento conservador é possível**:\n\n**fraturas sem desvio** ou com desvio mínimo (menos de 2 mm);\n\n**fraturas transversas baixas** (infratectais), abaixo do teto: a área de carga fica preservada e a cabeça continua congruente com ela;\n\n**fraturas das duas colunas com congruência secundária**, em pacientes selecionados;\n\n**pacientes sem condições clínicas** para a cirurgia.\n\n**Como medir o teto**: os **ângulos do arco do teto** de Matta, nas três incidências (AP, oblíqua obturatória e oblíqua ilíaca); ângulos maiores que 45° indicam que o traço passa fora da área de carga.\n\n**Quando operar**: desvio do teto maior que 2 mm, cabeça **incongruente** ou **instável**, fragmentos dentro da articulação, fratura da **parede posterior** grande e instável, fraturas **desviadas da coluna anterior** ou da posterior.\n\n**Na prova**: o tratamento conservador está indicado nas fraturas **transversas baixas**.",
+  "correta": "O traço transverso baixo passa abaixo do teto de carga, que fica preservado e congruente com a cabeça.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0218": {
-  "conceito": "### Infecção na fratura exposta\n- Culturas da admissão ==não predizem== o germe da infecção: a maioria é ==adquirida no hospital==.\n- Agente mais comum na infecção estabelecida: ==S. aureus== (inclusive MRSA); gram-negativos hospitalares.\n\n### Prevenção\n| Medida | Detalhe |\n|---|---|\n| ==antibiótico precoce== | ==< 1 h==, fator mais importante |\n| cefazolina | tipos I e II |\n| + gram-negativo (aminoglicosídeo ou ceftriaxona) | tipo III |\n| + penicilina/anaeróbio | contaminação de fazenda |\n| desbridamento | adequado e repetido |\n| cobertura | precoce (< 7 dias) |\n\n- Culturas pré-desbridamento: abandonadas.\n\n> **Na prova:** infecção estabelecida = ==S. aureus, contaminação hospitalar==",
-  "correta": "**S. aureus, hospitalar.**\n- Germe difere do inicial.\n- Contaminação nosocomial.",
   "incorretas": {
-   "B": "**P. mirabilis.**\n- Não é o mais comum.",
-   "C": "**Local do acidente.**\n- Maioria é hospitalar.",
-   "D": "**Proteus e local.**\n- Ambos errados."
+   "B": "O Proteus mirabilis não é o germe mais comum da infecção estabelecida.",
+   "C": "O S. aureus está certo, mas a contaminação costuma ser hospitalar, não do local do acidente.",
+   "D": "Tanto o germe quanto a origem da contaminação estão errados."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **fratura exposta**, o germe que contaminou a ferida no **acidente** quase nunca é o que causa a **infecção estabelecida**.\n\n**O que os estudos mostram**: as culturas colhidas na admissão **não predizem** o germe da infecção. A maioria das infecções é **adquirida no hospital**, durante a internação, os curativos e as cirurgias.\n\n**O agente mais comum**: o ***Staphylococcus aureus***, inclusive o resistente à meticilina (MRSA). Os **gram-negativos hospitalares** (Pseudomonas, Enterobacter) também aparecem, sobretudo nas feridas grandes.\n\n**Por isso**:\n\n**as culturas antes do desbridamento foram abandonadas**;\n\n**a prevenção** depende de **antibiótico precoce** (idealmente na primeira hora), **desbridamento** completo, **estabilização** da fratura e **cobertura** da ferida o quanto antes (idealmente em até 7 dias nas IIIB).\n\n**Na prova**: na infecção estabelecida, o agente comum é o ***S. aureus***, por **contaminação hospitalar**.",
+  "correta": "O S. aureus é o germe mais isolado na infecção estabelecida, e a contaminação costuma ser hospitalar.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0219": {
-  "conceito": "### Laceração dural na toracolombar\n- Presente em cerca de ==1/3 das explosões com déficit neurológico==.\n- Achado de alerta: ==fratura vertical (em galho verde) da lâmina==, especialmente com explosão e déficit.\n- Raízes podem ficar ==encarceradas== na fratura da lâmina: redução sem descompressão pode lesá-las.\n\n### Implicações\n| Aspecto | Conduta |\n|---|---|\n| via | considerar ==posterior com laminectomia== para reparar a dura e liberar raízes |\n| complicações | fístula liquórica, pseudomeningocele, meningite |\n\n### TLICS\n| Item | Pontos |\n|---|---|\n| morfologia | compressão 1, explosão 2, translação 3, distração 4 |\n| neurológico | 0 a 3 |\n| complexo ligamentar posterior | 0 a 3 |\n| total | ≤ 3 conservador, ≥ 5 cirúrgico |\n\n> **Na prova:** lesão dural suspeita = ==fratura vertical da lâmina==",
-  "correta": "**Vertical da lâmina.**\n- Explosão com déficit.\n- Raízes podem encarcerar.",
   "incorretas": {
-   "A": "**Pedículo.**\n- Sem associação.",
-   "C": "**Espinhoso.**\n- Sem relação dural.",
-   "D": "**Transverso.**\n- Estável."
+   "A": "A fratura do pedículo não se associa especificamente à laceração dural.",
+   "C": "A fratura do processo espinhoso não tem relação com a lesão dural.",
+   "D": "A fratura do processo transverso é estável e sem relação com a dura."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **fratura toracolombar em explosão**, a **dura-máter** pode ser lacerada: isso acontece em cerca de **um terço** das explosões com **déficit neurológico**.\n\n**O sinal de alerta na imagem**: a **fratura vertical da lâmina**, às vezes incompleta (em galho verde). Quando a lâmina se abre no impacto e depois fecha, a dura e as **raízes** ficam **presas** no traço.\n\n**A consequência**: reduzir a fratura por via posterior sem olhar o canal pode **esmagar as raízes** encarceradas. Por isso, considera-se a **laminectomia**, para liberar as raízes e **reparar a dura**.\n\n**As complicações** da lesão dural não tratada: **fístula liquórica**, **pseudomeningocele** e **meningite**.\n\n**As outras fraturas**: as do **pedículo**, do **processo espinhoso** e do **processo transverso** não têm associação específica com a laceração dural.\n\n**Na prova**: a lesão da dura-máter na explosão se associa à **fratura vertical da lâmina**.",
+  "correta": "A fratura vertical da lâmina se abre e fecha no trauma, prendendo a dura e as raízes.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0220": {
@@ -2424,92 +2424,92 @@
   "conferido": false
  },
  "trauma-0221": {
-  "conceito": "### Fratura de Jefferson (C1)\n- Carga axial: fratura dos arcos anterior e posterior; massas laterais afastam-se.\n- ==Regra de Spence==: soma do afastamento (overhang) das massas laterais de C1 sobre C2 na transoral ==> 6,9 mm== (> 8,1 mm com magnificação) = ==ligamento transverso roto==.\n- Hoje: ==RM== avalia diretamente o transverso (Dickman I intrassubstancial, II avulsão óssea).\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| transverso íntegro | colar/halo |\n| Dickman II (avulsão) | halo, pode consolidar |\n| Dickman I | artrodese C1-C2 |\n\n### Intervalo atlantodental\n| Idade | Normal |\n|---|---|\n| adulto | ≤ 3 mm |\n| criança | ≤ 5 mm |\n\n> **Na prova:** afastamento > 7 mm = lesão do ==ligamento transverso==",
-  "correta": "**Transverso.**\n- Regra de Spence.\n- Instabilidade C1-C2.",
   "incorretas": {
-   "A": "**Alar.**\n- Avulsão da ponta do dente.",
-   "B": "**Nucal.**\n- Posterior, sem relação.",
-   "D": "**Interespinhoso.**\n- Complexo posterior subaxial."
+   "A": "O ligamento alar se relaciona com a avulsão da ponta do dente.",
+   "B": "O ligamento nucal é posterior e não tem relação com essa medida.",
+   "D": "O interespinhoso faz parte do complexo posterior subaxial."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **fratura de Jefferson** é a fratura do **atlas** (C1) por **carga axial**: o crânio empurra as massas laterais, os arcos anterior e posterior se quebram, e as **massas laterais se afastam** para os lados.\n\n**A pergunta que importa**: o **ligamento transverso** está íntegro? Ele passa atrás do dente e mantém C1 preso a C2.\n\n**A regra de Spence**: na radiografia **transoral** (boca aberta), soma-se o quanto as massas laterais de C1 passam da borda de C2 dos dois lados. Uma soma **maior que 6,9 mm** (cerca de 7 mm; 8,1 mm considerando a ampliação da imagem) indica **ruptura do ligamento transverso** e **instabilidade C1-C2**.\n\n**Hoje**: a **RM** avalia o ligamento diretamente. **Dickman** separa a lesão **intrassubstancial** (tipo I, que não cicatriza e pede artrodese) da **avulsão óssea** (tipo II, que pode consolidar com imobilização).\n\n**O intervalo atlantodental**: no adulto, mais de 3 mm também sugere lesão do transverso.\n\n**O tratamento**: transverso íntegro, colar ou halo; transverso roto, halo (no tipo II) ou **artrodese C1-C2**.\n\n**Na prova**: o afastamento das massas laterais maior que 7 mm sugere lesão do **ligamento transverso**.",
+  "correta": "Pela regra de Spence, a soma do afastamento das massas laterais acima de cerca de 7 mm indica o transverso roto.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0222": {
-  "conceito": "### Luxação do joelho (lesão multiligamentar)\n- Lesão de ≥ 2 dos 4 ligamentos principais; frequentemente reduzida espontaneamente.\n- ==Artéria poplítea== lesada em 20 a 40% (ITB < 0,9 = angiotomografia); nervo fibular em 25%.\n\n### Schenck\n| Tipo | Lesão |\n|---|---|\n| KD I | um cruzado + colateral |\n| KD II | dois cruzados |\n| KD III M/L | dois cruzados + um canto |\n| KD IV | todos |\n| KD V | fratura-luxação |\n\n### Prognóstico\n| Favorável | Desfavorável |\n|---|---|\n| ==idade < 40 anos== | idade maior |\n| ==reconstrução precoce dos cruzados== (< 3 semanas) | tratamento conservador/imobilização longa |\n| | lesão vascular, nervo fibular, alta energia |\n\n> **Na prova:** dois cruzados com colaterais íntegros = ==KD-II==",
-  "correta": "**Dois cruzados.**\n- KD-II.\n- Colaterais preservados.",
   "incorretas": {
-   "A": "**Dois colaterais.**\n- Não define KD.",
-   "C": "**Um de cada.**\n- KD-I.",
-   "D": "**Cruzado + canto.**\n- KD-I/III conforme."
+   "A": "A lesão dos dois colaterais não define nenhum tipo de Schenck.",
+   "C": "Um cruzado com um colateral não corresponde ao KD II.",
+   "D": "Um cruzado com o canto posterolateral não é o KD II."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "**Schenck** classifica a **luxação do joelho** pelos ligamentos lesados:\n\n**KD I**: lesão de **um cruzado** (o joelho luxou mesmo assim);\n\n**KD II**: lesão dos **dois cruzados**, com os **colaterais íntegros**;\n\n**KD III**: os dois cruzados e **um colateral**: **KD IIIM** (medial) ou **KD IIIL** (lateral, com o canto posterolateral);\n\n**KD IV**: os **quatro** ligamentos;\n\n**KD V**: luxação com **fratura** periarticular.\n\n**Os modificadores**: **C** para lesão arterial e **N** para lesão nervosa.\n\n**A avaliação obrigatória**: **pulsos** e **índice tornozelo-braquial** (abaixo de 0,9, angiotomografia), pela lesão da poplítea em 20 a 40%; e o **nervo fibular**, lesado com mais frequência nas lesões laterais.\n\n**Na prova**: no **KD II** estão lesionados **os dois ligamentos cruzados**.",
+  "correta": "O KD II é a lesão dos dois cruzados, com os dois colaterais íntegros.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0223": {
-  "conceito": "### Acessos ao planalto posterior\n| Via | Intervalo | Alcança | Risco |\n|---|---|---|---|\n| anterolateral | tibial anterior/trato iliotibial | platô lateral | |\n| ==posterolateral== | ==cabeça lateral do gastrocnêmio × bíceps femoral== (ou com osteotomia da fíbula, Frosch/Lobenhoffer) | ==fragmento posterolateral== | ==nervo fibular== (medial ao bíceps), artéria tibial anterior |\n| posteromedial | gastrocnêmio medial × pata de ganso/semimembranáceo | coluna posteromedial | safeno |\n| posterior (Lobenhoffer, prono) | entre cabeças do gastrocnêmio | parede posterior | vasos poplíteos |\n\n### Anterolateral estendida\n- Para fraturas complexas com componente ==posterolateral==.\n- ==Osteotomia do epicôndilo lateral== com o ==colateral lateral e o tendão do poplíteo==: o fêmur abre em varo e expõe todo o platô lateral.\n- Alternativas: osteotomia da fíbula (Lobenhoffer), via posterolateral.\n\n> **Na prova:** anterolateral estendida = ==osteotomia do epicôndilo lateral com LCL e poplíteo==",
-  "correta": "**Epicôndilo lateral com LCL e poplíteo.**\n- Abre o compartimento lateral.\n- Expõe o platô posterolateral.",
   "incorretas": {
-   "A": "**Gerdy.**\n- Não amplia o posterolateral.",
-   "B": "**Desinserção do LCL.**\n- Menos segura que a osteotomia.",
-   "C": "**Cabeça da fíbula.**\n- Outra técnica."
+   "A": "A osteotomia do tubérculo de Gerdy não expõe o planalto posterolateral.",
+   "B": "A desinserção do colateral é menos segura que a osteotomia do epicôndilo.",
+   "C": "A osteotomia da cabeça da fíbula é outra técnica, não a via anterolateral estendida."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Nas fraturas **complexas** do planalto tibial com componente **posterolateral**, a via anterolateral comum mostra mal a parte de trás do planalto lateral, escondida sob o côndilo femoral.\n\n**A abordagem anterolateral estendida**: faz-se a **osteotomia do epicôndilo lateral** do fêmur, levando junto o **ligamento colateral lateral** e o **tendão do poplíteo**, que se inserem ali. Com o epicôndilo solto, o joelho pode ser **aberto em varo**, e o côndilo femoral sai da frente: o planalto lateral inteiro, inclusive a parte **posterolateral**, fica visível.\n\n**No fim**: o epicôndilo é fixado de volta com parafusos, restaurando o colateral e o poplíteo.\n\n**As alternativas para o posterolateral**: a **osteotomia da cabeça da fíbula**, a via **posterolateral** (entre o gastrocnêmio lateral e o bíceps femoral) e a abordagem de Frosch.\n\n**Por que não as outras opções**: a osteotomia do **tubérculo de Gerdy** com o trato iliotibial não abre o compartimento posterolateral; a **desinserção** do colateral no fêmur é menos segura que a osteotomia, que cicatriza osso com osso.\n\n**Na prova**: a abordagem anterolateral estendida inclui a **osteotomia do epicôndilo lateral** com o colateral lateral e o tendão do poplíteo.",
+  "correta": "Soltar o epicôndilo com o colateral e o poplíteo permite abrir o joelho em varo e ver todo o planalto lateral.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0224": {
-  "conceito": "### AO/OTA 42 (diáfise da tíbia)\n| Tipo | Traço |\n|---|---|\n| ==A== | ==simples==: A1 espiral, ==A2 oblíqua ≥ 30°==, A3 transversa < 30° |\n| B | cunha: B2 intacta, B3 fragmentada |\n| C | multifragmentária: C2 segmentar, C3 irregular |\n\n### Qualificador da fíbula (versão clássica)\n| Sufixo | Fíbula |\n|---|---|\n| ==.1== | ==intacta== |\n| .2 | fraturada em outro nível |\n| .3 | fraturada no mesmo nível |\n\n> **Na prova:** oblíqua ≥ 30° com fíbula intacta = ==42A2.1==",
-  "correta": "**42A2.1.**\n- A2: oblíqua ≥ 30°.\n- .1: fíbula intacta.",
   "incorretas": {
-   "B": "**A1.2.**\n- Espiral com fíbula fraturada.",
-   "C": "**A2.2.**\n- Fíbula fraturada em outro nível.",
-   "D": "**A1.1.**\n- Espiral."
+   "B": "A1 é o traço espiral, e o .2 indica fíbula fraturada em outro nível.",
+   "C": "A2 está certo, mas o .2 indica fíbula fraturada em outro nível.",
+   "D": "A fíbula intacta está certa, mas A1 é o traço espiral."
   },
+  "conceito": "A **classificação AO** da **diáfise da tíbia** usa o número **42**. Na versão clássica:\n\n**42A**: traço **simples**:\n\n**A1**: **espiral**;\n\n**A2**: **oblíquo**, com inclinação de **30° ou mais**;\n\n**A3**: **transverso**, com inclinação menor que 30°;\n\n**42B**: em cunha; **42C**: complexo (segmentar ou multifragmentário).\n\n**O qualificador da fíbula** (o último número):\n\n**.1**: fíbula **intacta**;\n\n**.2**: fíbula fraturada em **outro nível**;\n\n**.3**: fíbula fraturada no **mesmo nível**.\n\n**O caso**: traço oblíquo maior que 30° (A2) com fíbula intacta (.1): **42A2.1**.\n\n**Por que a fíbula importa**: a fíbula intacta pode **segurar** a tíbia e favorecer o **varo** durante o tratamento conservador; uma fíbula fraturada no mesmo nível indica mais energia.\n\n**Na prova**: o traço oblíquo maior que 30° com fíbula intacta é **42A2.1**.",
+  "correta": "A2 é o traço oblíquo de 30° ou mais, e o .1 indica a fíbula intacta.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 62"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0225": {
-  "conceito": "### Sinais radiográficos de lesão ligamentar do joelho\n| Sinal | Achado | Lesão |\n|---|---|---|\n| ==arqueado (arcuate)== | ==avulsão da cabeça/estiloide da fíbula== | ==canto posterolateral== (complexo arqueado, LCL, bíceps) |\n| Segond | avulsão do platô lateral | LCA (ligamento anterolateral) |\n| Segond reverso | avulsão do platô medial | LCP + LCM |\n| Pellegrini-Stieda | calcificação no LCM femoral | LCM crônico |\n| eminência intercondilar | avulsão da espinha | LCA |\n\n- Sinal arqueado: alta associação com LCP e luxação do joelho; investigar vasos e fibular.\n\n> **Na prova:** sinal arqueado = ==fratura (avulsão) da cabeça da fíbula==",
-  "correta": "**Fratura da cabeça da fíbula.**\n- Avulsão do complexo arqueado.\n- Lesão do canto posterolateral.",
   "incorretas": {
-   "B": "**LCM.**\n- Pellegrini-Stieda (crônico).",
-   "C": "**LCA.**\n- Sinal de Segond.",
-   "D": "**Eminência.**\n- Avulsão tibial do LCA."
+   "B": "A sequela da lesão do colateral medial é a calcificação de Pellegrini-Stieda.",
+   "C": "A lesão do cruzado anterior se associa à fratura de Segond.",
+   "D": "A fratura da eminência é a avulsão tibial do cruzado anterior."
   },
+  "conceito": "Algumas **pequenas avulsões** na radiografia do joelho denunciam lesões ligamentares graves:\n\n**sinal arqueado**: avulsão da **cabeça da fíbula**, onde se inserem o complexo **arqueado**, o tendão do **bíceps** e o **colateral lateral**; indica lesão do **canto posterolateral** e tem forte associação com lesão do **cruzado posterior** e com a **luxação do joelho**;\n\n**fratura de Segond**: avulsão da borda **lateral** do planalto tibial, pelo ligamento anterolateral; indica lesão do **cruzado anterior**;\n\n**Pellegrini-Stieda**: calcificação junto ao côndilo femoral medial, sequela **crônica** da lesão do **colateral medial**;\n\n**avulsão da eminência intercondilar**: arrancamento da inserção tibial do **cruzado anterior**.\n\n**A conduta diante do sinal arqueado**: pensar em **luxação do joelho**, examinar os **vasos** (índice tornozelo-braquial) e o **nervo fibular**, que passa logo ali, e pedir **RM**.\n\n**Na prova**: o sinal arqueado indica **fratura da cabeça da fíbula**.",
+  "correta": "O sinal arqueado é a avulsão da cabeça da fíbula pelo complexo arqueado, marcador de lesão do canto posterolateral.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 60"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0227": {
-  "conceito": "### Rigidez do cotovelo pós-trauma\n- Articulação muito congruente, cápsula que ==fibrosa rápido==, braquial sobre a cápsula (ossificação heterotópica).\n\n### Causas\n| Causa | Frequência |\n|---|---|\n| ==contratura capsular== | ==a mais comum== (extrínseca) |\n| ossificação heterotópica | TCE, queimadura, cirurgia tardia, luxação |\n| bloqueio ósseo/consolidação viciosa | intrínseca |\n| material saliente | ocasional |\n\n### Prevenção e tratamento\n- Mobilização precoce (< 2 semanas); órteses progressivas (estáticas/dinâmicas).\n- Liberação capsular (aberta/artroscópica) se arco < 100° após 6 meses.\n- Arco funcional (Morrey): ==30 a 130°== de flexoextensão, 50/50 de rotação.\n\n> **Na prova:** rigidez após cabeça do rádio = ==contratura capsular==",
-  "correta": "**Contratura capsular.**\n- Causa mais comum.\n- Mobilização precoce previne.",
   "incorretas": {
-   "B": "**Fragmentação.**\n- Bloqueio ósseo, menos comum.",
-   "C": "**Ossificação heterotópica.**\n- Menos frequente.",
-   "D": "**Material saliente.**\n- Ocasional."
+   "B": "O bloqueio por fragmentos ósseos é menos comum.",
+   "C": "A ossificação heterotópica é menos frequente que a contratura capsular.",
+   "D": "O material de síntese saliente é causa ocasional."
   },
+  "conceito": "O **cotovelo** é a articulação que mais facilmente **enrijece** depois de um trauma. Três motivos:\n\n**alta congruência** das superfícies articulares;\n\n**cápsula** que **fibrosa rapidamente** e se retrai;\n\n**músculo braquial** encostado na cápsula anterior, que favorece a ossificação heterotópica.\n\n**A causa mais comum de rigidez após a fratura da cabeça do rádio**: a **contratura capsular**. A cápsula anterior encurta, sobretudo com a imobilização, e o cotovelo perde a **extensão**.\n\n**As outras causas**, menos frequentes: bloqueio por **fragmentos** ou consolidação viciosa, **ossificação heterotópica** e **material** de síntese saliente.\n\n**A prevenção**: **mobilização precoce**, em menos de 2 semanas.\n\n**O tratamento**: **órteses** progressivas (estáticas ou dinâmicas); se o arco ficar abaixo do funcional após cerca de 6 meses, **liberação capsular** aberta ou artroscópica.\n\n**O arco funcional (Morrey)**: de **30 a 130°** de flexão e extensão e **50°** de pronação e de supinação.\n\n**Na prova**: a causa mais comum de rigidez após a fratura da cabeça do rádio é a **contratura capsular**.",
+  "correta": "A cápsula do cotovelo fibrosa e retrai cedo, sobretudo com imobilização, e é a principal causa da rigidez.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 39"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0228": {
-  "conceito": "### Fraturas associadas no idoso\n- Queda da própria altura: impacto lateral no quadril e mão estendida do ==mesmo lado==.\n- Associação mais frequente com a transtrocantérica: ==rádio distal ipsilateral==; também úmero proximal.\n- Fratura de punho após os 50 anos é ==sentinela de osteoporose== (prever fratura de quadril).\n\n### Implicações\n| Situação | Conduta |\n|---|---|\n| quadril + punho ipsilateral | fixar o punho para permitir apoio em andador |\n| fratura por fragilidade | densitometria, tratamento da osteoporose, prevenção de quedas |\n\n### Transtrocantérica (AO 31A)\n| Tipo | Detalhe | Implante |\n|---|---|---|\n| A1 | simples, estável | DHS ou haste |\n| A2 | multifragmentada, parede lateral fina | haste |\n| A3 | intertrocantérica reversa/transversa | ==haste cefalomedular== |\n\n> **Na prova:** transtrocantérica associa-se a fratura do ==rádio distal ipsilateral==",
-  "correta": "**Rádio distal ipsilateral.**\n- Mesma queda.\n- Mão do lado do impacto.",
   "incorretas": {
-   "A": "**Acetábulo.**\n- Alta energia.",
-   "C": "**Tornozelo contralateral.**\n- Sem relação.",
-   "D": "**Úmero contralateral.**\n- Mecanismo não explica."
+   "A": "A fratura do acetábulo vem de trauma de alta energia.",
+   "C": "O tornozelo contralateral não tem relação com a queda lateral.",
+   "D": "O úmero contralateral não é atingido pelo mecanismo da queda."
   },
+  "conceito": "A **fratura transtrocantérica** do idoso vem de uma **queda da própria altura**, de lado. Ao cair, o paciente bate o quadril e **apoia a mão do mesmo lado**.\n\n**A associação mais comum**: a fratura do **rádio distal ipsilateral**. A segunda é a do **úmero proximal**, também do mesmo lado.\n\n**O que essas fraturas têm em comum**: são **fraturas de fragilidade**. A fratura do punho depois dos 50 anos é uma **fratura sentinela**: ela prevê uma futura fratura do quadril e deve levar ao tratamento da osteoporose.\n\n**A implicação prática**: o punho fraturado dificulta o uso do **andador** na reabilitação; fixá-lo pode permitir apoiar o peso nos braços.\n\n**As outras opções**: a fratura do **acetábulo** vem de alta energia; as fraturas do lado **contralateral** não são explicadas pelo mecanismo da queda lateral.\n\n**Na prova**: a transtrocantérica se associa mais à fratura do **rádio distal ipsilateral**.",
+  "correta": "Na queda lateral, o idoso apoia a mão do mesmo lado e fratura o rádio distal ipsilateral.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 53"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0229": {
