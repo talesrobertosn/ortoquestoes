@@ -208,6 +208,20 @@ function venceHoje(id: string, contexto: ContextoLocal): boolean {
   return contexto.revisaoHoje ? contexto.revisaoHoje.has(id) : revisarHoje(contexto.respondidas[id])
 }
 
+function noFoco(item: ItemIndice, foco: Filtros['foco']): boolean {
+  return foco === 'ortopedia' ? item.cm !== 1 : foco === 'mao' ? item.cm === 1 : true
+}
+
+const mapasPorId = new WeakMap<Indice, Map<string, ItemIndice>>()
+function porId(indice: Indice): Map<string, ItemIndice> {
+  let mapa = mapasPorId.get(indice)
+  if (!mapa) {
+    mapa = new Map(indice.questoes.map((q) => [q.id, q]))
+    mapasPorId.set(indice, mapa)
+  }
+  return mapa
+}
+
 function aplicaUm(
   indice: Indice,
   item: ItemIndice,
@@ -215,8 +229,13 @@ function aplicaUm(
   contexto: ContextoLocal,
   ignorar?: ChaveFaceta,
 ): boolean {
-  // Cópias duplicadas continuam no índice para o histórico, mas nunca são sorteadas nem contadas.
-  if (item.dup) return false
+  if (!noFoco(item, filtros.foco)) return false
+  // Cópias duplicadas continuam no índice para o histórico, mas nunca são sorteadas nem contadas,
+  // salvo quando a original fica fora do foco (a mesma questão numa prova de ortopedia e numa da mão).
+  if (item.dup) {
+    const original = porId(indice).get(item.dup)
+    if (!original || noFoco(original, filtros.foco)) return false
+  }
   if (!filtros.incluirAnuladas && item.an === 1) return false
 
   // Assunto é uma árvore: marcar um tema significa "o tema inteiro" e marcar

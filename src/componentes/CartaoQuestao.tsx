@@ -72,7 +72,11 @@ export function CartaoQuestao({
   const ponteiro = useRef<{ tipo: string; x: number; y: number; moveu: boolean }>({ tipo: '', x: 0, y: 0, moveu: false })
   const selecaoParaGrifo = useRef<Range | null>(null)
   const respondida = !!resposta
-  const mostrarGabarito = respondida && revelarResposta
+  const dissertativa = questao.tipo === 'dissertativa'
+  // Na dissertativa, a resposta esperada aparece antes da autoavaliação; só depois ela é registrada.
+  const [revelada, definirRevelada] = useState(false)
+  const [textoDissertativa, definirTextoDissertativa] = useState('')
+  const mostrarGabarito = (respondida || (dissertativa && revelada)) && revelarResposta
   const marcada = escolhida ?? resposta?.escolhida ?? null
   const travada = mostrarGabarito
 
@@ -84,6 +88,8 @@ export function CartaoQuestao({
     definirUltimaAcao(null)
     definirGrifos([])
     definirMenuGrifo(null)
+    definirRevelada(false)
+    definirTextoDissertativa(lerRascunho(questao.id))
     inicio.current = Date.now()
   }, [questao.id])
 
@@ -105,6 +111,21 @@ export function CartaoQuestao({
       // Nunca falhar em silêncio: o que der errado aparece embaixo do botão.
       definirErroEnvio(erro instanceof Error ? `${erro.name}: ${erro.message}` : String(erro))
     }
+    finally { definirEnviando(false) }
+  }
+
+  /**
+   * Autoavaliação da dissertativa. Vira uma resposta como as outras para a
+   * revisão espaçada: "acertei" é acerto seguro, "em parte" é acerto com
+   * dúvida (volta antes) e "errei" volta hoje.
+   */
+  async function autoavaliar(nota: 'acertei' | 'parcial' | 'errei') {
+    if (respondida || enviando) return
+    definirErroEnvio('')
+    const segundos = Math.max(1, Math.round((Date.now() - inicio.current) / 1000))
+    definirEnviando(true)
+    try { await aoResponder('A', nota !== 'errei', segundos, nota === 'parcial' ? 'duvida' : 'seguro') }
+    catch (erro) { definirErroEnvio(erro instanceof Error ? `${erro.name}: ${erro.message}` : String(erro)) }
     finally { definirEnviando(false) }
   }
 
@@ -239,7 +260,7 @@ export function CartaoQuestao({
     definirUltimaAcao(null)
   }
 
-  const semGabarito = !questao.gabarito && !questao.anulada
+  const semGabarito = !questao.gabarito && !questao.anulada && questao.tipo !== 'dissertativa'
   const historicoDaQuestao = lerRespondidas()[questao.id]?.historico ?? []
   // Etiquetas de assunto adiantam a resposta; quando escondidas, voltam junto
   // com o gabarito, que é quando elas servem para estudar em vez de entregar.
@@ -433,7 +454,20 @@ export function CartaoQuestao({
           })}
         </ul>}
 
-        {!revelarResposta ? (
+        {dissertativa ? (
+          <Dissertativa
+            questao={questao}
+            texto={textoDissertativa}
+            aoEscrever={(t) => { definirTextoDissertativa(t); guardarRascunho(questao.id, t) }}
+            revelada={mostrarGabarito}
+            podeRevelar={revelarResposta}
+            aoRevelar={() => definirRevelada(true)}
+            resposta={resposta}
+            enviando={enviando}
+            erroEnvio={erroEnvio}
+            aoAvaliar={(nota) => void autoavaliar(nota)}
+          />
+        ) : !revelarResposta ? (
           <div className="resultado resultado--neutro" role="status">
             {marcada
               ? `Resposta marcada: ${marcada}. Pode trocar até o fim do simulado.`
@@ -469,7 +503,7 @@ export function CartaoQuestao({
 
         {mostrarGabarito && (
           <div className="comentario">
-            {resposta?.correta !== null && <p className="aviso-ia">{resposta?.correta === false ? 'Incluída em Revisar hoje. Leia a explicação e tente novamente em outra sessão.' : dominada(lerRespondidas()[questao.id]) ? 'Ciclo de revisão completo. Você pode revisitá-la pelo filtro Dominadas.' : resposta.confianca === 'chute' ? 'Acerto por chute: ela volta amanhã para você confirmar o raciocínio.' : resposta.confianca === 'duvida' ? 'Acerto com dúvida: ela volta antes para reforçar o conceito.' : `Acerto seguro registrado. Ela volta em ${INTERVALOS.seguro.join(', ').replace(/, (\d+)$/, ' e $1')} dias, conforme você for acertando.`}</p>}
+            {resposta && resposta.correta !== null && !dissertativa && <p className="aviso-ia">{resposta?.correta === false ? 'Incluída em Revisar hoje. Leia a explicação e tente novamente em outra sessão.' : dominada(lerRespondidas()[questao.id]) ? 'Ciclo de revisão completo. Você pode revisitá-la pelo filtro Dominadas.' : resposta.confianca === 'chute' ? 'Acerto por chute: ela volta amanhã para você confirmar o raciocínio.' : resposta.confianca === 'duvida' ? 'Acerto com dúvida: ela volta antes para reforçar o conceito.' : `Acerto seguro registrado. Ela volta em ${INTERVALOS.seguro.join(', ').replace(/, (\d+)$/, ' e $1')} dias, conforme você for acertando.`}</p>}
             {questao.comentario && (
               <div className="bloco-comentario">
                 <p className="comentario__titulo">Comentário do autor</p>
@@ -681,7 +715,7 @@ function ComentarioDaIA({
 
       {!carregando && !comentario && (
         <p className="comentario__pendente">
-          Esta questão ainda não tem comentário. O gabarito acima é o oficial da prova.
+          {questao.tipo === 'dissertativa' ? 'Esta questão ainda não tem comentário.' : 'Esta questão ainda não tem comentário. O gabarito acima é o oficial da prova.'}
         </p>
       )}
 
@@ -713,6 +747,14 @@ function ComentarioDaIA({
             </div>
           )}
 
+          {questao.tipo === 'dissertativa' ? (
+            comentario.correta.trim() && (
+              <section className="cm-alt cm-alt--certa">
+                <p className="cm-rotulo"><Icone nome="certo" tamanho={16} /> Resposta comentada</p>
+                <TextoEditorial texto={comentario.correta} />
+              </section>
+            )
+          ) : (<>
           <p className="cm-secao">Alternativa por alternativa</p>
           <div className="cm-alternativas">
             {referencia && (
@@ -742,9 +784,95 @@ function ComentarioDaIA({
               </article>
             ))}
           </div>
+          </>)}
 
           <Referencias itens={comentario.referencias} notaIA />
           <AvaliarComentario idQuestao={questao.id} />
+        </>
+      )}
+    </div>
+  )
+}
+
+const PREFIXO_RASCUNHO = 'dissertativa:'
+function lerRascunho(id: string): string {
+  try { return localStorage.getItem(PREFIXO_RASCUNHO + id) ?? '' } catch { return '' }
+}
+function guardarRascunho(id: string, texto: string) {
+  try {
+    if (texto) localStorage.setItem(PREFIXO_RASCUNHO + id, texto)
+    else localStorage.removeItem(PREFIXO_RASCUNHO + id)
+  } catch { /* armazenamento indisponível: o texto só não sobrevive à recarga */ }
+}
+
+/** Questão dissertativa: escreve, vê a resposta esperada e se autoavalia. */
+function Dissertativa({
+  questao, texto, aoEscrever, revelada, podeRevelar, aoRevelar, resposta, enviando, erroEnvio, aoAvaliar,
+}: {
+  questao: Questao
+  texto: string
+  aoEscrever: (t: string) => void
+  revelada: boolean
+  podeRevelar: boolean
+  aoRevelar: () => void
+  resposta?: Resposta
+  enviando: boolean
+  erroEnvio: string
+  aoAvaliar: (nota: 'acertei' | 'parcial' | 'errei') => void
+}) {
+  return (
+    <div className="dissertativa">
+      {!revelada ? (
+        <>
+          <label className="dissertativa__rotulo" htmlFor={`dis-${questao.id}`}>Sua resposta</label>
+          <textarea
+            id={`dis-${questao.id}`}
+            className="entrada dissertativa__texto"
+            rows={6}
+            value={texto}
+            onChange={(e) => aoEscrever(e.target.value)}
+            placeholder="Escreva como escreveria na prova. Ninguém corrige: depois você compara com a resposta esperada."
+          />
+          {podeRevelar ? (
+            <div className="linha nao-imprime acao-responder acao-responder--pronta">
+              <button type="button" className="botao botao--principal botao--grande" onClick={aoRevelar}>
+                {texto.trim() ? 'Ver a resposta esperada' : 'Ver a resposta sem escrever'}
+              </button>
+            </div>
+          ) : (
+            <div className="resultado resultado--neutro" role="status">Questão dissertativa: a resposta esperada aparece quando o simulado terminar.</div>
+          )}
+        </>
+      ) : (
+        <>
+          {texto.trim() && (
+            <section className="dissertativa__bloco">
+              <p className="dissertativa__rotulo">Sua resposta</p>
+              <p className="dissertativa__sua">{texto}</p>
+            </section>
+          )}
+          <section className="dissertativa__bloco dissertativa__bloco--esperada">
+            <p className="dissertativa__rotulo"><Icone nome="certo" tamanho={16} /> Resposta esperada</p>
+            {questao.respostaEsperada
+              ? <TextoEditorial texto={questao.respostaEsperada} />
+              : <p className="comentario__pendente">A banca não publicou a resposta desta questão. Compare com o comentário abaixo.</p>}
+          </section>
+          {resposta ? (
+            <div className={'resultado ' + (resposta.correta ? (resposta.confianca === 'duvida' ? 'resultado--neutro' : 'resultado--acerto') : 'resultado--erro')} role="status">
+              <Icone nome={resposta.correta ? 'certo' : 'errado'} />
+              {resposta.correta ? (resposta.confianca === 'duvida' ? 'Você marcou que acertou em parte: ela volta antes para revisão.' : 'Você marcou que acertou.') : 'Você marcou que errou: ela entra em Revisar hoje.'}
+            </div>
+          ) : (
+            <div className="dissertativa__avaliar nao-imprime" role="group" aria-label="Como foi a sua resposta?">
+              <p className="dissertativa__rotulo">Comparando com a resposta esperada, você:</p>
+              <div className="grupo-opcoes">
+                <button type="button" className="opcao-segmento" disabled={enviando} onClick={() => aoAvaliar('acertei')}>Acertei</button>
+                <button type="button" className="opcao-segmento" disabled={enviando} onClick={() => aoAvaliar('parcial')}>Acertei em parte</button>
+                <button type="button" className="opcao-segmento" disabled={enviando} onClick={() => aoAvaliar('errei')}>Errei</button>
+              </div>
+              {erroEnvio && <p className="aviso-formulario aviso-formulario--erro" role="alert">Não foi possível registrar. Tente de novo. <small>({erroEnvio})</small></p>}
+            </div>
+          )}
         </>
       )}
     </div>

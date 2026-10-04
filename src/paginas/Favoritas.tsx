@@ -48,7 +48,7 @@ export function Favoritas() {
   function treinar() {
     const existentes = favoritos.filter((id) => porId.has(id))
     if (existentes.length === 0) return
-    iniciar({ ...FILTROS_VAZIOS, situacao: 'favoritas' }, existentes, {})
+    iniciar({ ...FILTROS_VAZIOS, foco: 'tudo', situacao: 'favoritas' }, existentes, {})
     navegar('/sessao')
   }
 

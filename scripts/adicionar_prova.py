@@ -25,6 +25,9 @@ Dois passos:
         "itens": [{"numero": 1, "tema": "trauma", "resposta": "B",
                    "conceito": "...", "correta": "...", "incorretas": {"A": "...", ...}}]}
 
+   Nas provas de cirurgia da mão, acrescente "area": "cirurgia-mao" no lote:
+   as questões ficam fora do foco padrão (ortopedia) e do cronograma.
+
    Só "numero", "tema" e "resposta" bastam: a questão entra com a resposta e
    o comentário fica para depois (o site avisa que está em preparação).
 
@@ -140,6 +143,9 @@ def aplicar(args: argparse.Namespace) -> int:
     extraido = json.loads((DIR_NOVAS / f"{lote['prova'].lower()}-{lote['ano']}.json").read_text(encoding="utf-8"))
     por_numero = {q["numero"]: q for q in extraido["questoes"]}
     oficial = bool(lote.get("gabaritoOficial"))
+    if lote.get("area") not in (None, "cirurgia-mao"):
+        print(f"Área desconhecida: {lote['area']!r} (use \"cirurgia-mao\" ou deixe sem)")
+        return 1
     temas, comentarios, erros = {}, {}, []
     agora = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
     criadas = []
@@ -176,6 +182,7 @@ def aplicar(args: argparse.Namespace) -> int:
             "gabarito": resposta if oficial else None,
             "comentario": None, "comentariosComunidade": [],
             "referencias": [q["referencia"]] if q.get("referencia") else [],
+            **({"area": lote["area"]} if lote.get("area") else {}),
             "anulada": False, "figuraPendente": bool(q.get("figura")) and not item.get("semFigura"),
             "revisado": False, "subtemasPendentes": False,
             "origem": {"arquivo": lote.get("arquivo") or extraido["arquivo"], "pagina": q["pagina"], "numeroOriginal": q["numero"]},

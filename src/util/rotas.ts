@@ -72,6 +72,7 @@ const SITUACOES: Situacao[] = [
 
 export function filtrosParaConsulta(filtros: Filtros): string {
   const p = new URLSearchParams()
+  if (filtros.foco !== 'ortopedia') p.set('foco', filtros.foco)
   if (filtros.temas.length) p.set('temas', filtros.temas.join(','))
   if (filtros.subtemas.length) p.set('subtemas', filtros.subtemas.join('|'))
   if (filtros.provas.length) p.set('provas', filtros.provas.join(','))
@@ -101,6 +102,7 @@ export function consultaParaFiltros(consulta: URLSearchParams): Filtros {
   const limite = Number(consulta.get('limite'))
   return {
     ...FILTROS_VAZIOS,
+    foco: consulta.get('foco') === 'tudo' || consulta.get('foco') === 'mao' ? (consulta.get('foco') as Filtros['foco']) : 'ortopedia',
     temas: lista('temas'),
     subtemas: lista('subtemas', '|'),
     provas: lista('provas'),

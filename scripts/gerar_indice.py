@@ -101,6 +101,8 @@ def principal() -> int:
                     **({"sim": 1} if questao.get("simulado") else {}),
                     # Cópia de outra questão: fica no índice para o histórico, fora das sessões.
                     **({"dup": questao["duplicataDe"]} if questao.get("duplicataDe") else {}),
+                    # Prova de cirurgia da mão: fora do foco padrão e do cronograma.
+                    **({"cm": 1} if questao.get("area") == "cirurgia-mao" else {}),
                 }
             )
             if questao.get("ano") and questao["ano"] not in anos:
