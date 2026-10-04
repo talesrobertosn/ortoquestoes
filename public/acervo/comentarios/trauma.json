@@ -4728,14 +4728,14 @@
   "conferido": false
  },
  "trauma-0559": {
-  "conceito": "As propriedades mecânicas do osso cortical variam conforme o tipo de força aplicada, e essa variação é um dos fundamentos da biomecânica óssea cobrados em prova.\n\nO osso cortical é um material anisotrópico (suas propriedades mudam conforme a direção e o tipo de carga), e resiste de forma desigual a cada modo de solicitação: é mais resistente à **compressão**, resiste um pouco menos à **tensão** (tração), e é mais frágil ao **cisalhamento**.\n\nOs valores clássicos de referência (dados de Reilly e Burstein, amplamente citados em compêndios de ciências básicas ortopédicas) situam a resistência à compressão em torno de 190 MPa e à tração em torno de 130 MPa, uma diferença proporcional próxima de 50%, ou seja, o osso cortical resiste a aproximadamente uma vez e meia mais força quando comprimido do que quando tracionado.\n\nEssa diferença de comportamento é o que explica, na prática clínica, por que fraturas de padrões diferentes se comportam de modo distinto: um traço em flexão, por exemplo, falha primeiro no lado de tensão (que cede antes), e é também a razão pela qual as fraturas por estresse se distribuem de forma previsível entre a cortical de tensão (mais vulnerável, fraturas de alto risco) e a de compressão (mais tolerante, fraturas de baixo risco) em ossos como a tíbia e o colo do fêmur.",
-  "correta": "A. O osso cortical resiste a forças de compressão cerca de 50% mais do que a forças de tensão, segundo os valores de referência mais citados na literatura de biomecânica óssea, uma diferença que explica, entre outras coisas, por que as fraturas por estresse se comportam de modo diferente conforme ocorrem do lado de tensão ou de compressão do osso.",
   "incorretas": {
-   "B": "Uma diferença de 100% significaria que o osso resiste ao dobro da carga em compressão comparado à tensão, o que excede a proporção descrita pelos valores de referência mais citados (compressão em torno de 190 MPa, tensão em torno de 130 MPa).",
-   "C": "150% de diferença superestima ainda mais a vantagem da compressão sobre a tensão, distanciando-se da proporção descrita pelos valores clássicos de referência.",
-   "D": "200% representaria o osso resistindo ao triplo em compressão comparado à tensão, muito acima da diferença real descrita para o osso cortical."
+   "B": "100% superestima a diferença entre compressão e tensão.",
+   "C": "150% superestima ainda mais a diferença.",
+   "D": "200% está muito acima da diferença real."
   },
-  "geradoEm": "2026-09-14",
+  "conceito": "O **osso cortical** é **anisotrópico**: sua resistência depende da **direção** da força. Para as fraturas por estresse e para entender onde o osso quebra, três números importam:\n\n**compressão**: a força que o osso **mais aguenta**, cerca de 190 MPa no fêmur humano;\n\n**tensão**: menos resistente, cerca de 130 MPa;\n\n**cisalhamento**: o ponto mais fraco, cerca de 70 MPa.\n\n**A comparação**: o osso cortical resiste cerca de **50% mais** à compressão do que à tensão.\n\n**A consequência para as fraturas por estresse**: o lado de **tensão** do osso falha mais cedo e consolida pior. Por isso as fraturas por estresse no lado de tensão são de **alto risco**: a cortical **anterior** da tíbia, o lado **superolateral** do colo do fêmur, a patela. As do lado de **compressão** (face posteromedial da tíbia, lado inferomedial do colo) são de baixo risco.\n\n**Na prática das fraturas agudas**: o osso começa a quebrar pelo lado de tensão, e o traço se propaga até o lado de compressão, que às vezes se fragmenta (a \"borboleta\").\n\n**Na prova**: o osso cortical resiste cerca de **50%** mais à compressão que à tensão.",
+  "correta": "A resistência à compressão é cerca de 190 MPa contra 130 MPa na tensão: cerca de 50% maior.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0560": {
@@ -4766,18 +4766,18 @@
   "conferido": false
  },
  "trauma-0562": {
-  "conceito": "A **osteonecrose** é a complicação mais temida da fratura do colo do tálus, e sua vigilância exige um seguimento longo, de pelo menos 36 meses, isto é, três anos.\n\nHá duas razões para esse prazo. A primeira é a cronologia da doença: o sinal radiográfico de necrose (a esclerose relativa do domus) aparece a partir de seis a oito semanas, mas o colapso da superfície articular, que é o que determina o resultado funcional, pode levar de um a três anos para se manifestar, e é ele, e não a necrose em si, que dita a indicação de artrodese. A segunda é que a revascularização é possível e demorada: boa parte dos tálus necróticos é reperfundida de forma progressiva ao longo de meses a anos, com o osso morto sendo substituído por \"creeping substitution\", e o desfecho só se define quando esse processo termina. Por isso não se indica cirurgia pela necrose radiográfica isolada: acompanha-se.\n\nO seguimento se faz com radiografias seriadas, procurando o sinal de Hawkins entre a sexta e a oitava semana (a faixa linear radiotransparente subcondral que indica osso vivo e praticamente exclui a necrose), depois a esclerose relativa e, por fim, o colapso, e com ressonância quando é preciso definir a extensão.\n\nAs taxas de necrose acompanham a classificação de Hawkins: 0% a 13% no tipo I, 20% a 50% no II, mais de 80% no III e praticamente 100% no IV.\n\nVale a advertência de sempre: a complicação mais frequente das fraturas do colo do tálus não é a necrose, e sim a **consolidação viciosa em varo**, que bloqueia a subtalar e faz o paciente apoiar na borda lateral do pé — e essa se previne com redução anatômica, conferida pela incidência de Canale.",
-  "correta": "C. O acompanhamento deve durar pelo menos 36 MESES: o colapso do domus, que é o desfecho que importa, pode levar de um a três anos para aparecer, e a revascularização progressiva do osso necrótico também se estende por esse período.",
   "incorretas": {
-   "A": "12 meses é curto demais: nesse prazo muitos pacientes ainda estão em plena revascularização, e o colapso do domus (que costuma surgir entre o primeiro e o terceiro ano) pode aparecer depois da alta.",
-   "B": "24 meses cobre boa parte dos casos, mas ainda deixa de fora os colapsos tardios, que ocorrem até o terceiro ano. O prazo consagrado de vigilância é de três anos.",
-   "D": "48 meses excede o período em que os desfechos se definem: passados três anos, o tálus que revascularizou já se estabilizou e o que ia colapsar já colapsou."
+   "A": "12 meses é pouco para ver o colapso tardio.",
+   "B": "24 meses ainda pode deixar passar o colapso tardio.",
+   "D": "48 meses vai além do mínimo recomendado."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
+  "conceito": "Na **fratura desviada do colo do tálus**, o maior risco é a **necrose avascular do corpo**, pela lesão da **artéria do canal do tarso**. O risco cresce com o tipo de Hawkins (do I ao IV).\n\n**Quando a necrose aparece**:\n\n**sinal de Hawkins** em 6 a 8 semanas: a faixa clara sob a cúpula indica revascularização (bom sinal);\n\n**ausência do sinal** e **esclerose relativa** do corpo: sugerem necrose;\n\n**colapso** do domo e **artrose**: aparecem **tardiamente**, às vezes depois de **2 a 3 anos**.\n\n**Por que acompanhar por pelo menos 36 meses**: o corpo necrótico pode **revascularizar devagar** (substituição gradual) ou **colapsar** tardiamente. A artrose subtalar e tibiotalar pós-traumática também se desenvolve ao longo de anos. Um acompanhamento curto deixaria passar essas complicações.\n\n**A conduta durante o acompanhamento**: radiografias seriadas e **RM** quando houver dúvida; carga protegida enquanto o corpo revasculariza é discutida; o colapso pode exigir artrodese.\n\n**Na prova**: o paciente deve ser acompanhado por pelo menos **36 meses**.",
+  "correta": "A necrose do corpo do tálus pode colapsar ou revascularizar devagar ao longo de até 3 anos.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 65"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0563": {
   "conceito": "**A regra do corte axial.** Na tomografia axial do acetábulo, a direção do traço indica o tipo de fratura. Uma fratura **transversa** separa a parte **superior** da **inferior** do acetábulo e atravessa as duas colunas; no corte axial, o traço aparece orientado no sentido **anteroposterior**. Uma fratura **de coluna** separa a coluna **anterior** da **posterior**; no corte axial, o traço aparece no sentido **mediolateral** (coronal). As fraturas **de parede** aparecem como traços **oblíquos** que destacam um fragmento da borda.\n\n**Lendo a figura.** O plano **A**, que corta de frente para trás as paredes anterior e posterior, corresponde ao traço da fratura **transversa**. O plano **B**, que cruza de medial para lateral e separa a frente de trás, corresponde ao traço de fratura **da coluna**.\n\n**Na prova:** no axial, traço **anteroposterior** é **transversa**; traço **mediolateral** é **coluna**.",
@@ -4792,18 +4792,18 @@
   "formato": "corrido"
  },
  "trauma-0564": {
-  "conceito": "A fratura por estresse do colo do fêmur no adulto jovem tem perfis de risco diferentes entre mulheres e homens, e essa diferença ilustra bem como um mesmo desfecho (fratura por fadiga óssea) pode ter mecanismos de base distintos.\n\nNas **mulheres jovens**, o fator de risco dominante é hormonal-nutricional: a tríade da atleta feminina, que combina anorexia nervosa (ou desordem alimentar/baixa disponibilidade energética), amenorreia (disfunção menstrual decorrente da supressão do eixo hipotálamo-hipófise-ovariano) e osteoporose (perda de densidade mineral óssea pela queda do estrogênio), fragiliza o osso a ponto de ele falhar sob cargas de treino que antes eram bem toleradas.\n\nJá nos **homens jovens**, esse componente hormonal específico não está presente da mesma forma, e o fator de risco predominante é puramente mecânico: o esforço físico intenso e repetitivo, típico de recrutas militares em treinamento básico ou de atletas de endurance que aumentam o volume de treino de forma abrupta, sem tempo suficiente para o osso se adaptar ao novo padrão de carga.\n\nEssa distinção (mulher jovem: eixo hormonal-nutricional; homem jovem: sobrecarga mecânica pura) é o que a questão está testando, e é coerente com o restante do capítulo de fraturas por estresse, em que a tríade da atleta feminina aparece repetidamente como fator de risco específico do sexo feminino.",
-  "correta": "D. Nas mulheres jovens, o fator de risco predominante é a tríade da atleta feminina (anorexia nervosa, osteoporose e amenorreia); nos homens jovens, é o esforço físico intenso e repetitivo, sem o componente hormonal específico presente nas mulheres.",
   "incorretas": {
-   "A": "Sedentarismo e obesidade não são os fatores de risco reconhecidos para essa fratura em mulheres jovens fisicamente ativas, nem etilismo e tabagismo são o fator predominante nos homens jovens, o quadro típico envolve sobrecarga por atividade física, não seu oposto.",
-   "B": "Sedentarismo e obesidade não correspondem ao perfil de risco reconhecido nas mulheres jovens com essa fratura, tipicamente atletas ou militares em treinamento intenso, não sedentárias.",
-   "C": "A tríade da atleta feminina está corretamente atribuída às mulheres, mas etilismo e tabagismo não são os fatores predominantes descritos nos homens jovens, o fator reconhecido é o esforço físico intenso e repetitivo."
+   "A": "O sedentarismo e a obesidade não são as causas, nem o etilismo e o tabagismo nos homens.",
+   "B": "A causa nos homens está certa, mas nas mulheres a causa é a tríade, não o sedentarismo.",
+   "C": "A causa nas mulheres está certa, mas nos homens é o esforço repetitivo, não o etilismo e o tabagismo."
   },
-  "geradoEm": "2026-09-14",
-  "conferido": false,
+  "conceito": "A **fratura por estresse do colo do fêmur** no **adulto jovem** tem perfis diferentes em mulheres e homens:\n\n**nas mulheres**: a causa principal é o **osso frágil** por deficiência de energia: **anorexia nervosa** ou outros distúrbios alimentares, **amenorreia** (estrogênio baixo) e **osteoporose** ou baixa massa óssea. É a **tríade da mulher atleta** (hoje, deficiência energética relativa no esporte);\n\n**nos homens**: o osso costuma ser normal, e a causa é a **carga excessiva**: **esforço físico intenso e repetitivo**, como em **militares** em treinamento e corredores de longa distância.\n\n**A diferença**: nas mulheres, uma carga normal vence um osso fraco (fratura por **insuficiência** sobre a fadiga); nos homens, uma carga anormal vence um osso normal (fratura por **fadiga**).\n\n**O diagnóstico**: dor na virilha ao correr, que melhora com o repouso; radiografia muitas vezes normal; **RM** confirma.\n\n**A gravidade**: as do lado de **tensão** (superior) podem completar e desviar, com risco de **necrose**; pedem fixação.\n\n**Na prova**: nas mulheres, a fratura vem de **anorexia nervosa, osteoporose e amenorreia**; nos homens, de **esforço físico intenso de repetição**.",
+  "correta": "Nas mulheres, o osso frágil da tríade falha; nos homens, o osso normal falha pela carga repetitiva intensa.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 52"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0566": {
   "incorretas": {
@@ -4834,18 +4834,18 @@
   "conferido": false
  },
  "trauma-0569": {
-  "conceito": "As complicações **neurovasculares** das fraturas da clavícula são raras no total (algo em torno de 1% a 3%), mas têm uma característica que as define: em regra são **tardias**, e não agudas.\n\nA explicação é anatômica: a clavícula forma o teto do espaço costoclavicular, por onde passam o plexo braquial, a artéria e a veia subclávias, entre ela e a primeira costela. No trauma agudo, o fragmento medial se eleva pela tração do esternocleidomastóideo e afasta-se do feixe, de modo que a lesão imediata é incomum. O problema aparece meses depois, quando o calo hipertrófico ou a consolidação viciosa com encurtamento estreitam progressivamente esse corredor.\n\nEntre as estruturas, a mais frequentemente acometida é o **plexo braquial**, por compressão crônica, e caracteristicamente o **tronco inferior** (C8-T1), que é o mais próximo da primeira costela e o mais inferior do feixe. O quadro é o da síndrome do desfiladeiro torácico neurogênica: parestesia e dor no território ulnar (borda medial do antebraço e da mão, quarto e quinto dedos), fraqueza e atrofia dos músculos intrínsecos, sintomas que pioram com o braço elevado e com a carga.\n\nEm segundo lugar vem a compressão da **veia subclávia** (a estrutura mais anterior e inferior, de paredes finas), com edema, cianose e ingurgitamento venoso, podendo trombosar. A compressão **arterial** é a mais rara e a mais grave, com claudicação, palidez e risco de aneurisma pós-estenótico com embolização.\n\nO tratamento das formas sintomáticas é cirúrgico: ressecção do calo exuberante, osteotomia corretiva com restauração do comprimento e, quando necessário, descompressão do desfiladeiro com ressecção da primeira costela. É por isso que o **encurtamento** maior que 15 a 20 mm entrou nos critérios de indicação cirúrgica primária.",
-  "correta": "D. A complicação neurovascular mais comum é a COMPRESSÃO CRÔNICA DO PLEXO BRAQUIAL (em regra do tronco inferior (C8-T1)) pelo calo hipertrófico ou pela consolidação viciosa que estreita o espaço costoclavicular.",
   "incorretas": {
-   "A": "O aneurisma da artéria subclávia é complicação rara: a artéria corre mais protegida, atrás do escaleno anterior, e a sua parede espessa resiste bem à compressão externa. Quando ocorre, é o aneurisma pós-estenótico, com risco de embolização distal.",
-   "B": "O estiramento AGUDO do plexo braquial no momento da fratura é incomum, porque o fragmento medial se eleva e se afasta do feixe. As lesões agudas do plexo associadas ao ombro pertencem a outro mecanismo, a tração violenta do membro, como na dissociação escapulotorácica.",
-   "C": "A trombose subaguda da veia subclávia ocorre, e a veia é de fato a estrutura vascular mais suscetível por ser a mais anterior e inferior, mas o conjunto das compressões NERVOSAS crônicas do plexo é mais frequente."
+   "A": "O aneurisma da artéria subclávia é raro.",
+   "B": "O estiramento agudo do plexo vem de alta energia e é raro.",
+   "C": "A trombose da veia subclávia ocorre, mas é menos comum que a compressão do plexo."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
+  "conceito": "A **clavícula** cobre o **feixe neurovascular** do membro superior (plexo braquial, artéria e veia subclávias) no espaço entre ela e a primeira costela, o **desfiladeiro costoclavicular**.\n\n**A complicação neurovascular mais comum**: a **compressão crônica do plexo braquial**. Ela aparece semanas ou meses depois, causada por:\n\n**calo hipertrófico** ou exuberante;\n\n**consolidação viciosa** com encurtamento e desvio do fragmento para baixo;\n\n**pseudartrose** com fragmentos móveis.\n\n**O quadro**: parestesias no braço e na mão (sobretudo no território do **ulnar**, pelo tronco inferior), fraqueza e dor, que pioram com o braço elevado: um quadro de **síndrome do desfiladeiro torácico** secundária.\n\n**As complicações vasculares**: a compressão ou **trombose da veia subclávia** e, raramente, lesões da **artéria** (aneurisma, pseudoaneurisma) também ocorrem, mas são menos comuns.\n\n**As lesões agudas**: o estiramento agudo do plexo ou a lesão vascular aguda vêm de trauma de alta energia e são raras.\n\n**O tratamento**: ressecção do calo, correção da consolidação viciosa ou fixação da pseudartrose, descomprimindo o espaço.\n\n**Na prova**: a complicação neurovascular mais comum após a fratura da clavícula é a **compressão crônica do plexo braquial**.",
+  "correta": "O calo, a consolidação viciosa ou a pseudartrose estreitam o desfiladeiro e comprimem o plexo de forma crônica.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 33"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0570": {
   "incorretas": {
@@ -4873,18 +4873,18 @@
   "conferido": false
  },
  "trauma-0572": {
-  "conceito": "A fratura do planalto tibial **tipo IV de Schatzker** (o afundamento ou cisalhamento do côndilo medial) é, entre todos os tipos dessa classificação, o que carrega o maior risco de lesão associada grave, e isso decorre diretamente do seu mecanismo de trauma.\n\nDiferente dos tipos I a III (fraturas laterais, por mecanismo em valgo com carga axial, geralmente de energia moderada), o tipo IV resulta de um mecanismo em **varo de alta energia**: o fêmur é empurrado para dentro em relação à tíbia, fraturando o platô medial (mais denso e mais resistente do que o lateral, o que já indica a magnitude da força necessária).\n\nEsse mesmo movimento em varo estica e sobrecarrega as estruturas do lado oposto, isto é, o **complexo ligamentar lateral** do joelho (ligamento colateral lateral, canto posterolateral, tendão do bíceps femoral), e, em casos mais graves, pode inclusive comprometer o nervo fibular comum e a artéria poplítea, que correm nessa mesma região.\n\nReconhecer o tipo IV como uma fratura de alta energia com risco de lesão lateral e neurovascular associada é o que justifica uma avaliação neurovascular mais cuidadosa nesses pacientes, diferente da abordagem mais rotineira nas fraturas laterais mais comuns.",
-  "correta": "A. A fratura tipo IV de Schatzker resulta de um mecanismo em varo de alta energia, que fratura o platô medial mais resistente e, ao mesmo tempo, sobrecarrega o complexo ligamentar lateral do joelho, frequentemente lesado em associação.",
   "incorretas": {
-   "B": "O complexo ligamentar medial não é o mais associado a essa fratura, é o complexo lateral que sofre a sobrecarga pelo mesmo movimento em varo que fratura o platô medial.",
-   "C": "O mecanismo é em varo, não em valgo, o valgo é o mecanismo típico das fraturas laterais mais comuns (tipos I a III), não do tipo IV.",
-   "D": "Nem o mecanismo em valgo nem a associação com o complexo medial correspondem ao padrão do tipo IV, que é em varo e associado ao complexo lateral."
+   "B": "O varo está certo, mas o lado que se rompe é o lateral, não o medial.",
+   "C": "O mecanismo é varo, embora a lesão ligamentar seja lateral.",
+   "D": "O valgo com lesão medial descreve as fraturas laterais, não o tipo IV."
   },
-  "geradoEm": "2026-09-14",
-  "conferido": false,
+  "conceito": "A **fratura do planalto tibial tipo IV de Schatzker** acomete o **planalto medial**. É uma lesão de **alta energia**, muito diferente das fraturas laterais.\n\n**O mecanismo**: **varo** (às vezes com carga axial e rotação). O côndilo femoral medial bate no planalto medial, que é forte e só quebra com muita energia.\n\n**As lesões associadas**: como o varo **abre** o lado **lateral** do joelho, o **complexo ligamentar lateral** (colateral lateral, canto posterolateral) e os **cruzados** são frequentemente lesados. Muitas vezes é uma **fratura-luxação**.\n\n**Os riscos**: lesão do **nervo fibular** (estirado pelo varo) e da **artéria poplítea**. Avaliar pulsos e o índice tornozelo-braquial.\n\n**O tratamento**: redução e fixação com **placa de suporte medial** (ou posteromedial, se o fragmento for posterior), e tratamento das lesões ligamentares laterais.\n\n**O contraste**: as fraturas **laterais** (Schatzker I a III) vêm de **valgo** e se associam a lesões do **menisco lateral** e do **colateral medial**.\n\n**Na prova**: o Schatzker IV vem de **varo** e se associa à lesão do **complexo ligamentar lateral**.",
+  "correta": "O varo quebra o planalto medial e abre o lado lateral, rompendo o complexo ligamentar lateral.",
   "referencias": [
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 2.43"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0573": {
   "incorretas": {
@@ -4912,18 +4912,18 @@
   "conferido": false
  },
  "trauma-0575": {
-  "conceito": "A fratura proximal da tíbia tratada com haste intramedular tem uma tendência conhecida ao mau alinhamento (sobretudo em valgo e procurvato), decorrente do descompasso entre o ponto de entrada fixo da haste e o alargamento metafisário dessa região.\n\nEntender a relação entre o **posicionamento** do ponto de entrada e o **desvio** resultante é o que permite ao cirurgião antecipar e corrigir esse problema antes de bloquear a haste definitivamente.\n\nQuando o ponto de entrada é escolhido de forma **excessivamente medial** em relação ao eixo verdadeiro do canal medular, a haste, ao ser introduzida, segue uma trajetória que se desloca lateralmente conforme desce pelo canal diafisário. Essa trajetória empurra o fragmento distal para fora (lateralmente) em relação ao proximal, abrindo o foco de fratura medialmente e produzindo, no eixo do membro como um todo, uma deformidade em **valgo**.\n\nÉ o raciocínio espelhado do que ocorre no fêmur proximal: a posição do ponto de entrada em relação ao eixo verdadeiro do canal determina, de forma previsível, para qual lado o fragmento vai se desviar. Por isso, técnicas complementares como os parafusos de bloqueio (poller screws), posicionados no lado côncavo da deformidade esperada, são frequentemente usadas nas fraturas proximais da tíbia para estreitar artificialmente o canal e guiar a haste de volta ao eixo anatômico correto.",
-  "correta": "B. Um ponto de entrada excessivamente medial força a haste a uma trajetória mais lateral dentro do canal, abrindo o foco de fratura medialmente, o que se traduz em deformidade em valgo do fragmento.",
   "incorretas": {
-   "A": "O varo é mais associado ao erro oposto (ponto de entrada excessivamente lateral), não ao ponto de entrada medial descrito na questão.",
-   "C": "O desvio anterior (procurvato) é determinado principalmente pela posição ântero-posterior do ponto de entrada e pela ação do tendão patelar sobre o fragmento proximal, não pelo eixo medial-lateral comprometido por uma entrada excessivamente medial.",
-   "D": "O desvio posterior (recurvato), da mesma forma, é um desvio do plano sagital, não do eixo medial-lateral afetado pelo ponto de entrada medial descrito na questão."
+   "A": "O varo resultaria de um ponto de entrada lateral demais.",
+   "C": "O desvio anterior (antecurvato) vem da entrada distal e da tração do ligamento patelar.",
+   "D": "O desvio posterior não é o efeito do ponto de entrada medial."
   },
-  "geradoEm": "2026-09-14",
-  "conferido": false,
+  "conceito": "Na **fratura proximal da tíbia** tratada com **haste intramedular**, o fragmento proximal é curto e o canal é largo: a haste tende a empurrar o fragmento para onde o **ponto de entrada** a dirigir.\n\n**As deformidades típicas**: **valgo** e **antecurvato** (procurvato, ápice anterior), favorecidos pela tração do ligamento patelar e pela forma do canal.\n\n**O ponto de entrada medial demais**: a haste entra pelo lado medial e, ao descer, encosta na cortical **lateral** do canal da diáfise; isso empurra o fragmento proximal e a fratura abre em **valgo**.\n\n**Como evitar**:\n\n**ponto de entrada** um pouco **lateral**, alinhado com a **espinha tibial lateral** no AP e junto à borda anterior no perfil;\n\n**técnica suprapatelar** com o joelho em semiextensão;\n\n**parafusos de bloqueio** (Poller) no lado côncavo da deformidade;\n\n**placas** provisórias ou definitivas para segurar a redução.\n\n**Na prova**: o ponto de entrada excessivamente medial provoca desvio em **valgo**.",
+  "correta": "A haste entrando medial empurra o fragmento proximal e abre a fratura em valgo.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 62"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0576": {
   "incorretas": {
@@ -4965,39 +4965,39 @@
   "conferido": false
  },
  "trauma-0580": {
-  "conceito": "O **parafuso ileossacral** percutâneo é o implante padrão para estabilizar o anel pélvico posterior e as fraturas do sacro. Ele entra pela face lateral do ílio, cruza a articulação sacroilíaca e alcança o corpo de S1 ou de S2, guiado por radioscopia nas incidências de entrada (inlet), de saída (outlet) e em perfil estrito do sacro. É uma cirurgia de corredores ósseos estreitos, e todo o risco é **neurológico**.\n\nA anatomia que comanda o planejamento é a seguinte: a raiz de **L5** emerge do forame L5-S1 e cruza a asa do sacro pela sua face **anterior e superior**, colada ao osso, para formar com S1 o tronco lombossacro; as raízes de S1 e S2 saem pelos forames sacrais correspondentes, mais posteriores e mediais.\n\nO erro técnico mais comum é o parafuso perfurar a **cortical anterior** da asa, e a estrutura que ele encontra ali é justamente a raiz de L5, daí ela ser a estrutura neurológica classicamente em risco. Esse erro é favorecido pela **dismorfia sacral**, variação anatômica presente em parcela relevante da população, em que o corredor de S1 é estreito, obliquado e não comporta um parafuso transverso: reconhecê-la na tomografia pré-operatória (asa alta e inclinada, mamilos ilíacos, forames irregulares, S1 residual no corpo) é a principal medida de prevenção, e nesses casos o corredor de S2 costuma ser a melhor via.\n\nO risco é ainda maior nas fraturas da **zona II** de Denis, transforaminais, porque o traço já passa pelos forames e a compressão gerada pelo parafuso pode fechar o forame contra a raiz, motivo pelo qual muitos autores usam ali o parafuso em modo de posição, sem compressão, ou preferem a fixação lombopélvica triangular.\n\nCompletam a prevenção a radioscopia rigorosa nas três incidências e a monitorização neurofisiológica intraoperatória quando disponível.",
-  "correta": "B. A raiz de L5 é a estrutura em risco: ela cruza a face anterior e superior da asa do sacro, colada ao osso, e é lesada quando o parafuso ileossacral perfura a cortical anterior a caminho do corpo de S1.",
   "incorretas": {
-   "A": "A raiz de L4 emerge mais acima e desce lateralmente pelo psoas, contribuindo para o tronco lombossacro, mas não cruza a asa do sacro na intimidade do trajeto do parafuso. Está fora do corredor cirúrgico.",
-   "C": "O nervo femoral se forma no interior do psoas a partir de L2, L3 e L4 e emerge sob o ligamento inguinal, na face anterior da coxa. Ele está muito distante da via percutânea lateral do parafuso ileossacral.",
-   "D": "O nervo ciático se forma a partir do plexo sacral e deixa a pelve pelo forame isquiático maior, abaixo do músculo piriforme, posterior e caudal ao trajeto do parafuso, que atravessa a asa do sacro em direção ao corpo de S1."
+   "A": "A raiz de L4 fica acima do trajeto do parafuso.",
+   "C": "O nervo femoral corre na frente da pelve, longe do sacro.",
+   "D": "O ciático sai pelo forame isquiático maior, abaixo e atrás do trajeto."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
+  "conceito": "O **parafuso iliossacral** percutâneo fixa as fraturas do sacro e as lesões sacroilíacas, atravessando a **asa do sacro** até o **corpo de S1**.\n\n**A estrutura neurológica em risco**: a **raiz de L5**. Ela sai pelo forame entre L5 e S1 e desce apoiada sobre a **asa do sacro**, logo à frente e acima do corredor do parafuso. Um parafuso que sai pela cortical **anterossuperior** da asa atinge a raiz.\n\n**As outras estruturas em risco**:\n\n**raiz de S1**: no forame de S1, logo abaixo do parafuso;\n\n**canal sacral**: atrás do corpo de S1;\n\n**vasos ilíacos internos**: à frente do sacro.\n\n**Como evitar**: usar as incidências de **entrada** (inlet), **saída** (outlet) e o **perfil** verdadeiro do sacro; reconhecer a **displasia sacral** (asa inclinada para baixo, corredor estreito), que aumenta o risco.\n\n**Os nervos femoral e ciático**: correm fora desse trajeto (o ciático sai pelo forame isquiático maior, mais abaixo e atrás).\n\n**Na prova**: a estrutura neurológica em risco no parafuso iliossacral é a **raiz de L5**.",
+  "correta": "A raiz de L5 desce apoiada sobre a asa do sacro, à frente do corredor do parafuso.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 56"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0641": {
-  "conceito": "Historicamente, quase todas as fraturas da clavícula eram tratadas de forma conservadora, e a cirurgia primária era exceção. Nesse cenário, a indicação mais frequente de redução cruenta não era a fratura aguda em si, e sim a sua sequela: a **não consolidação** (pseudartrose).\n\nA explicação está na revisão de dados que mudou o tema. O paradigma antigo, apoiado nas séries de Neer e Rowe dos anos 1960, dava taxas de pseudartrose inferiores a 1%; estudos posteriores mostraram que, nas fraturas do terço médio com desvio completo, cominuição e encurtamento acima de 2 cm, ela chega a 15% ou mais. Como essas fraturas são muito comuns (a clavícula é o osso mais fraturado do adulto jovem), o número absoluto de pseudartroses acaba superando o das demais indicações somadas.\n\nA pseudartrose se define pela ausência de consolidação após 6 meses, com dor e mobilidade no foco, e o tratamento é a redução aberta com **placa e enxerto ósseo**, restaurando o comprimento, indispensável nas formas atróficas.\n\nAs outras indicações citadas são inequívocas, mas raras: a lesão neurovascular aguda é incomum, porque o fragmento medial se eleva e se afasta do feixe; o ombro flutuante, a dupla ruptura do complexo suspensório superior, é uma associação pouco frequente; e as fraturas do terço lateral próximas à acromioclavicular só são cirúrgicas quando instáveis (tipo II de Neer, com traço medial aos coracoclaviculares).\n\nVale registrar que o cenário atual é diferente do histórico: com os ensaios randomizados demonstrando menor pseudartrose e retorno mais rápido com a placa, a indicação **primária** nas fraturas desviadas cresceu muito, o que tende, no futuro, a reduzir o peso relativo da pseudartrose como motivo de cirurgia.",
-  "correta": "B. A NÃO CONSOLIDAÇÃO é a indicação mais frequente de redução cruenta na clavícula: a fratura é muito comum e a pseudartrose alcança 15% ou mais nas do terço médio com desvio completo, cominuição e encurtamento.",
   "incorretas": {
-   "A": "A lesão neurovascular aguda é indicação inequívoca e urgente, mas rara: o fragmento medial se eleva pela tração do esternocleidomastóideo e se AFASTA do feixe, de modo que o comprometimento imediato do plexo e dos vasos subclávios é incomum.",
-   "C": "O ombro flutuante (dupla ruptura do complexo suspensório superior, com fratura da clavícula e do colo da escápula) é indicação reconhecida quando há desvio significativo, mas é uma associação pouco frequente no conjunto das fraturas claviculares.",
-   "D": "A proximidade da articulação acromioclavicular não indica cirurgia por si só: o que decide é a ESTABILIDADE, isto é, se o traço passa medial aos ligamentos coracoclaviculares (tipo II de Neer, instável) ou lateral a eles (tipo I, estável e conservador)."
+   "A": "A lesão neurovascular é indicação rara.",
+   "C": "O ombro flutuante é indicação menos frequente.",
+   "D": "A fratura próxima à acromioclavicular é operada quando instável, mas é menos frequente."
   },
-  "geradoEm": "2026-09-10",
+  "conceito": "A maioria das **fraturas da clavícula** é tratada sem cirurgia. Entre as indicações de **redução cruenta** (cirurgia aberta), a **mais frequente** na prática é a **não consolidação** (pseudartrose).\n\n**Por quê**: nas fraturas do terço médio **desviadas** e **encurtadas** tratadas com tipoia, a pseudartrose chega a 15% ou mais. A pseudartrose **sintomática** (dor, fraqueza, estalido) é a razão mais comum para operar, com placa e, às vezes, enxerto.\n\n**As indicações agudas**, menos frequentes:\n\n**fratura exposta** ou **pele em risco** (fragmento tensionando a pele);\n\n**lesão neurovascular** associada;\n\n**ombro flutuante** com desvio;\n\n**fraturas do terço lateral** instáveis (Neer II);\n\n**desvio completo** com encurtamento maior que 15 a 20 mm em pacientes ativos (indicação relativa, cada vez mais aceita).\n\n**O tratamento da pseudartrose**: **placa** de compressão (superior ou anteroinferior), muitas vezes com **enxerto** ósseo; alta taxa de consolidação.\n\n**Na prova**: a indicação mais frequente de redução cruenta na fratura da clavícula é a **não consolidação**.",
+  "correta": "A pseudartrose sintomática é a razão mais comum para operar a clavícula, com placa e enxerto.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0649": {
-  "conceito": "Assim como em outra questão deste acervo sobre o mesmo tema, as fraturas parciais articulares do úmero distal (fraturas do capítulo e da tróclea por cisalhamento) apresentam distribuição etária **bimodal**, tanto em homens quanto em mulheres.\n\nO primeiro pico de incidência ocorre em pacientes **jovens**, por trauma de **alta energia**, capaz de produzir esse padrão de fratura mesmo num osso saudável e resistente (acidentes automobilísticos, quedas de altura, trauma esportivo de contato).\n\nO segundo pico ocorre em pacientes **idosos**, por trauma de **baixa energia** (uma simples queda da própria altura), viabilizado pela fragilidade do osso osteoporótico típico dessa faixa etária, o mesmo mecanismo discutido para diversas outras fraturas por fragilidade neste acervo.\n\nO fato de esse padrão bimodal aparecer tanto em homens quanto em mulheres reflete que os dois mecanismos de lesão operam de forma semelhante nos dois sexos, ainda que a proporção relativa de cada pico possa variar entre eles conforme a exposição a atividades de risco e a prevalência de osteoporose, mais acentuada em mulheres na pós-menopausa.\n\nReconhecer essa distribuição bimodal é útil na prática porque orienta a suspeita clínica: um jovem vítima de trauma de alta energia e um idoso após queda simples podem, ambos, apresentar o mesmo padrão de fratura articular do capítulo umeral, exigindo o mesmo nível de atenção diagnóstica apesar de mecanismos de trauma completamente distintos.",
-  "correta": "C. As fraturas parciais articulares do úmero distal apresentam distribuição bimodal tanto em homens quanto em mulheres, um pico em jovens por trauma de alta energia, outro em idosos por fragilidade óssea.",
   "incorretas": {
-   "A": "A distribuição não é unimodal em nenhum dos dois sexos, o padrão de dois picos etários (bimodal) está presente tanto em homens quanto em mulheres.",
-   "B": "O padrão bimodal não é exclusivo dos homens, o mesmo padrão de dois picos também é descrito nas mulheres.",
-   "D": "O padrão bimodal também está presente nos homens, e não apenas nas mulheres, como esta alternativa propõe."
+   "A": "A distribuição não é unimodal; há dois picos de idade.",
+   "B": "As mulheres também têm distribuição bimodal, com pico idoso acentuado.",
+   "D": "Os homens também têm distribuição bimodal, com pico jovem acentuado."
   },
-  "geradoEm": "2026-09-14",
+  "conceito": "As **fraturas articulares parciais** do **úmero distal** (AO 13-B: côndilo lateral, côndilo medial e fraturas do capítulo e da tróclea no plano coronal) seguem uma distribuição **bimodal** nos **dois sexos**:\n\n**primeiro pico**: **adultos jovens**, por trauma de **alta energia** (quedas, acidentes de trânsito, esporte);\n\n**segundo pico**: **idosos**, por trauma de **baixa energia** em osso osteoporótico, como a queda da própria altura sobre o cotovelo ou a mão.\n\n**Nas mulheres**: o pico idoso é **mais acentuado**, pela osteoporose pós-menopausa; as fraturas do **capítulo**, por exemplo, são mais comuns em mulheres idosas.\n\n**Nos homens**: o pico jovem é mais acentuado, pelo trauma de alta energia.\n\n**A implicação no tratamento**: no jovem, **redução anatômica** e fixação com parafusos sem cabeça ou placas; no idoso com cominução e osso frágil, considerar a **artroplastia** (hemiartroplastia distal do úmero ou total do cotovelo).\n\n**Na prova**: as fraturas articulares parciais do úmero distal têm **distribuição bimodal em homens e mulheres**.",
+  "correta": "Os dois sexos têm um pico jovem, por alta energia, e um pico idoso, por fragilidade.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0661": {
@@ -5043,18 +5043,18 @@
   "conferido": false
  },
  "trauma-0664": {
-  "conceito": "A luxação **dorsal** da metacarpofalângica do polegar resulta de hiperextensão forçada e se divide em duas categorias com condutas opostas.\n\nNa luxação **simples**, a falange proximal fica hiperestendida, quase perpendicular ao metacarpo, e reduz com manobra adequada. Na luxação **complexa**, a cabeça do metacarpo \"abotoa\" através da fenda capsular e a **placa volar** se interpõe entre a cabeça do metacarpo e a base da falange, tornando a redução fechada impossível.\n\nA anatomia explica por que é sempre a placa volar: ela se insere de forma firme na base da falange proximal e frouxa no colo do metacarpo, de modo que, na hiperextensão, destaca-se do lado proximal e permanece presa à falange. Quando se aplica **tração longitudinal com hiperextensão** (o gesto instintivo), a placa é literalmente puxada para dentro do espaço articular, e uma luxação simples se converte em complexa.\n\nOs sinais que denunciam a forma já complexa, e que devem ser procurados antes de qualquer tentativa, são três: o dedo fica apenas discretamente estendido, e não em hiperextensão dramática; há **pregueamento** da pele palmar sobre a cabeça do metacarpo proeminente; e a radiografia mostra o **sesamoide** dentro do espaço articular ou o alargamento da articulação. Nesses casos indica-se de saída a redução **aberta**, por via dorsal ou volar, para retirar a placa volar interposta e reparar as estruturas.\n\nJá a manobra correta para a luxação simples é uma redução por deslizamento: flete-se o punho para relaxar os flexores, apoia-se o polegar do examinador na cabeça metacarpal e empurra-se a base da falange proximal em sentido volar e distal, sem tração. Reduzida a articulação, radiografa-se de novo (a avulsão óssea da base da falange é a lesão associada mais comum), testa-se o colateral ulnar e imobiliza-se em flexão por poucos dias.",
-  "correta": "A. A PLACA VOLAR é a estrutura interposta que impede a redução: firmemente ancorada à base da falange proximal, ela se destaca do colo do metacarpo e é arrastada para dentro da articulação, caracterizando a luxação complexa.",
   "incorretas": {
-   "B": "A cápsula articular rompe-se em toda luxação, por definição, e é através da sua fenda que a cabeça do metacarpo 'abotoa', mas ela não é a estrutura que se interpõe entre as superfícies articulares e trava a redução.",
-   "C": "O tendão flexor longo do polegar pode ser deslocado e contribuir para o encarceramento em alguns casos, envolvendo a cabeça do metacarpo, mas o obstáculo mecânico característico e mais frequente é a placa volar.",
-   "D": "Os tendões extensores correm pelo DORSO da articulação, do mesmo lado para onde a falange se deslocou, e por isso não se interpõem entre as superfícies. O bloqueio vem do lado volar."
+   "B": "A cápsula articular não é a estrutura interposta típica.",
+   "C": "O tendão flexor longo pode contornar a cabeça, mas não é a interposição mais comum.",
+   "D": "O tendão extensor fica no dorso e não se interpõe."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
+  "conceito": "A **luxação dorsal da metacarpofalângica do polegar** pode ser **simples** (redutível) ou **complexa** (irredutível).\n\n**A luxação complexa**: a **placa volar** se solta da cabeça do metacarpo (sua inserção mais fraca é proximal) e fica **presa dentro da articulação**, entre a cabeça do metacarpo e a base da falange proximal. Nenhuma manobra fechada a tira dali.\n\n**Os sinais da luxação complexa**: o polegar fica **pouco deformado**, quase alinhado (e não em hiperextensão marcada), com uma **covinha** na pele da palma; na radiografia, os **sesamoides** aparecem dentro da articulação.\n\n**O que não fazer**: tracionar com força o dedo em linha reta, o que pode transformar uma luxação simples em complexa, puxando a placa volar para dentro.\n\n**A redução da luxação simples**: **hiperextender** a falange e **empurrar** a base dela sobre a cabeça do metacarpo, com o punho fletido para relaxar os flexores.\n\n**A luxação complexa**: **redução aberta** (via dorsal ou volar), retirando a placa volar da articulação. Na via volar, cuidado com os nervos digitais, que ficam esticados sobre a cabeça do metacarpo.\n\n**Na prova**: a estrutura interposta que impede a redução é a **placa volar**.",
+  "correta": "A placa volar se solta da cabeça do metacarpo e fica presa entre os ossos, impedindo a redução fechada.",
   "referencias": [
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 2.15"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0665": {
   "incorretas": {
