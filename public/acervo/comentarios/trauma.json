@@ -5113,46 +5113,46 @@
   "conferido": false
  },
  "trauma-0671": {
-  "conceito": "A associação de fratura da **diáfise** com fratura do **colo** do fêmur ipsilateral ocorre em cerca de 5% a 9% das fraturas diafisárias de alta energia, e tem um padrão característico que decorre do mecanismo.\n\nA força é uma carga axial transmitida pelo joelho fletido contra o painel do automóvel: ela sobe pela diáfise, quebra-a, e o restante da energia alcança o fêmur proximal por um vetor vertical. O resultado é uma fratura do colo tipicamente basicervical (ou transcervical), com traço verticalizado e, na maioria das vezes, sem desvio ou com desvio mínimo — muito diferente da subcapital desviada do idoso, produzida pela queda lateral com rotação externa.\n\nEssa combinação de características cria a principal armadilha do tema: por ser pouco desviada e ficar ofuscada pela fratura diafisária evidente, a fratura do colo é perdida na avaliação inicial em até 30% dos casos. Daí a regra que salva: toda fratura diafisária do fêmur exige radiografia dedicada do quadril em rotação interna e, idealmente, tomografia de rastreamento, além de reavaliação das imagens no pós-operatório e de radioscopia do quadril na mesa cirúrgica antes de introduzir qualquer haste.\n\nDuas consequências favoráveis derivam do padrão basicervical: o traço é mais distal e poupa os vasos retinaculares, de modo que a taxa de osteonecrose é baixa (em torno de 5% ou menos, menor que nas fraturas isoladas do colo do idoso); e o paciente é jovem, com boa capacidade de consolidação.\n\nO problema real é a pseudartrose do colo quando a redução é imperfeita, motivo pelo qual a fratura do colo tem prioridade no tratamento, e a estratégia com implantes separados oferece os melhores resultados.",
-  "correta": "C. O padrão mais comum é a fratura BASOCERVICAL SEM DESVIO, traço verticalizado e distal, produzido pela carga axial transmitida pela diáfise, e justamente por ser pouco desviado é o que mais passa despercebido na avaliação inicial.",
   "incorretas": {
-   "A": "A fratura SUBCAPITAL é o padrão do IDOSO, produzido pela queda lateral com rotação externa, mecanismo completamente diferente da carga axial transmitida pela diáfise no trauma de alta energia do jovem.",
-   "B": "A transcervical ocorre, mas é menos comum do que a basicervical nessa associação. O vetor axial que sobe pela diáfise tende a produzir o traço mais distal, na base do colo.",
-   "D": "A basocervical COM DESVIO é menos frequente: a energia se dissipa em boa parte na fratura diafisária, de modo que o traço do colo costuma chegar pouco desviado, o que é precisamente o que o torna tão fácil de perder."
+   "A": "A fratura subcapital não é o padrão típico associado à diáfise.",
+   "B": "A fratura transcervical é menos comum nessa associação.",
+   "D": "A fratura basocervical costuma estar sem desvio, e por isso passa despercebida."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
+  "conceito": "Na **fratura da diáfise do fêmur**, uma fratura **proximal** do mesmo lado aparece em 3 a 10% dos casos, por trauma de alta energia (joelho contra o painel).\n\n**O padrão mais comum**: a fratura **basocervical sem desvio**, com traço **vertical**. A energia se dissipa na diáfise, e o colo quebra pouco, na base, sem se deslocar.\n\n**O problema**: por estar **sem desvio**, ela **passa despercebida** em até 30% dos casos. A dor da diáfise mascara o quadril, e a radiografia comum não mostra o traço fino.\n\n**A rotina para não perder**:\n\n**TC com cortes finos do colo** em toda fratura diafisária de alta energia;\n\n**radiografia do quadril** no intraoperatório e antes da alta.\n\n**O tratamento**: prioridade para o **colo** (parafusos ou DHS) e haste **retrógrada** ou placa na diáfise; ou haste cefalomedular única quando o colo não tem desvio.\n\n**A necrose**: é menor que na fratura isolada do colo, porque o colo desvia pouco.\n\n**Na prova**: o padrão proximal mais comum associado à fratura da diáfise é a fratura **basocervical sem desvio**.",
+  "correta": "A energia se dissipa na diáfise, e o colo quebra na base, com traço vertical e sem desvio.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 2.40"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0672": {
-  "conceito": "A fratura **transversa** é um dos cinco padrões elementares (simples) da classificação de Judet e Letournel (ao lado da parede posterior, coluna posterior, parede anterior e coluna anterior), distinta dos cinco padrões associados (mais complexos: T, coluna posterior + parede posterior, transversa + parede posterior, coluna anterior + hemitransversa posterior, e dupla coluna).\n\nEm termos de frequência, a fratura transversa isolada corresponde a uma proporção moderada do total de fraturas acetabulares (situada entre aproximadamente **5% e 19%** nas séries publicadas), bem menos comum do que a parede posterior isolada (o padrão mais frequente de todos, respondendo por uma fração bem maior do total).\n\nReconhecer a transversa como um padrão elementar é importante porque, sendo simples (um único traço através de ambas as colunas, dividindo o acetábulo numa porção superior e outra inferior), costuma ter uma via de acesso e uma estratégia de fixação mais diretas do que os padrões associados, mais complexos.",
-  "correta": "A. A fratura transversa corresponde a cerca de 5 a 19% das fraturas do acetábulo, sendo um dos cinco padrões elementares (simples) da classificação de Letournel.",
   "incorretas": {
-   "B": "A fratura transversa é um padrão elementar (simples), não associado (complexo), os padrões associados envolvem a combinação de dois traços elementares, como T ou dupla coluna.",
-   "C": "O intervalo de 23 a 35% é mais compatível com a frequência da parede posterior, o padrão mais comum de todos, não com a transversa isolada.",
-   "D": "Nem o intervalo de frequência nem a classificação como padrão associado correspondem à fratura transversa, que é elementar e corresponde a cerca de 5 a 19% dos casos."
+   "B": "A frequência está certa, mas a transversa é elementar, não associada.",
+   "C": "A transversa é elementar, mas a frequência de 23 a 35% é superestimada.",
+   "D": "A transversa é elementar, e a frequência é menor."
   },
-  "geradoEm": "2026-09-14",
-  "conferido": false,
+  "conceito": "**Letournel** classificou as fraturas do acetábulo em **cinco elementares** e **cinco associadas**:\n\n**elementares**: parede posterior, coluna posterior, parede anterior, coluna anterior e **transversa**;\n\n**associadas**: coluna e parede posteriores, **transversa com parede posterior**, em **T**, coluna anterior com hemitransversa posterior e **duas colunas**.\n\n**A fratura transversa**: é um tipo **elementar**, embora atravesse as duas colunas. O traço corta o acetábulo horizontalmente, separando a parte de cima (ilíaco com o teto) da parte de baixo (ísquio e púbis). Ela responde por cerca de **5 a 19%** dos casos.\n\n**Por que é elementar**: é **um único traço**. As associadas combinam dois ou mais padrões elementares.\n\n**Os subtipos pela altura**: **transtectal** (pelo teto, pior prognóstico), **justatectal** e **infratectal** (abaixo do teto, às vezes conservadora).\n\n**A combinação mais comum**: a **transversa com parede posterior**, uma das associadas mais frequentes.\n\n**Na prova**: a fratura transversa corresponde a **5 a 19%** dos casos e é do tipo **elementar** de Letournel.",
+  "correta": "A transversa é um único traço, por isso elementar, e responde por 5 a 19% das fraturas do acetábulo.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 50"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0673": {
-  "conceito": "A radiografia convencional do tórax e da clavícula não resolve a articulação **esternoclavicular**: o esterno, as costelas e a coluna se sobrepõem exatamente sobre a área de interesse, e uma luxação franca pode passar despercebida. Rockwood descreveu então a incidência **serendipity**, cujo nome traduz a origem: ele chegou à angulação por tentativa e erro.\n\nA técnica é a seguinte: paciente em decúbito dorsal, chassi atrás dos ombros e do pescoço, tubo angulado 40 graus em sentido **caudocranial** (o feixe entra por baixo, do lado dos pés, e sobe em direção à cabeça) e **centrado no manúbrio**, sobre a linha média do esterno.\n\nA angulação afasta a projeção das clavículas mediais da sobreposição do esterno e da coluna, e o centro na linha média garante o essencial dessa incidência: as **duas** clavículas aparecem na mesma imagem, com a mesma geometria, o que torna a leitura **comparativa**. Traça-se uma linha pela clavícula normal e observa-se a acometida: se ela sobe acima dessa linha, o desvio é **anterior**; se desce abaixo, é **posterior**, e a posterior é a emergência, pela vizinhança com a traqueia, o esôfago, os grandes vasos e o plexo braquial.\n\nAngular no sentido inverso, craniocaudal, ou centrar lateralmente ao esterno destruiria as duas propriedades que fazem o exame funcionar: o afastamento da sobreposição e a simetria entre os lados.\n\nHoje a **tomografia** com contraste é o exame definitivo, porque define o sentido do desvio, avalia as estruturas mediastinais e distingue a luxação verdadeira do **descolamento fisário** (a fise medial da clavícula é a última do corpo a fechar, entre os 23 e os 25 anos, e no jovem o que parece luxação costuma ser lesão fisária com bom potencial de remodelação). A serendipity permanece útil como primeira imagem, sobretudo onde a tomografia não está disponível de imediato.",
-  "correta": "D. A serendipity é feita com o tubo angulado 40 graus em sentido CAUDOCRANIAL e CENTRADO no esterno (manúbrio), o que afasta a sobreposição e coloca as duas clavículas mediais na mesma imagem para a leitura comparativa.",
   "incorretas": {
-   "A": "Erra nas duas informações. A angulação craniocaudal joga a projeção das clavículas mediais de volta sobre o esterno e a coluna, e o centro lateral ao esterno mostra um lado só, eliminando a comparação com a clavícula normal, que é o fundamento da leitura.",
-   "B": "Acerta o sentido caudocranial, mas centrar lateralmente ao esterno inclui apenas uma clavícula na imagem. Sem a contralateral no mesmo filme não há linha de referência, e é justamente por comparação que se define se o desvio é anterior ou posterior.",
-   "C": "Acerta o centro no esterno, mas inverte a angulação: a inclinação craniocaudal mantém a superposição do esterno e das costelas sobre as articulações esternoclaviculares, que é exatamente o problema que a incidência foi criada para resolver."
+   "A": "A inclinação é caudocranial, e o centro é o esterno.",
+   "B": "A inclinação está certa, mas o raio é centrado no esterno.",
+   "C": "O centro está certo, mas a inclinação é caudocranial."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
+  "conceito": "A **incidência serendipity** (de Rockwood) avalia a **articulação esternoclavicular** e as fraturas-luxações da clavícula medial, difíceis de ver na radiografia comum.\n\n**Como é feita**: paciente deitado de costas, filme atrás dos ombros, raio **centrado no esterno** (manúbrio) e inclinado cerca de **40°** no sentido **caudocranial** (de baixo para cima, em direção à cabeça). Assim as **duas clavículas** aparecem na mesma imagem, sem a sobreposição das costelas.\n\n**Como interpretar**: compara-se a extremidade medial de cada clavícula com a do lado normal:\n\n**mais alta**: luxação **anterior**;\n\n**mais baixa**: luxação **posterior**.\n\n**O exame de escolha hoje**: a **TC**, que mostra a direção da luxação, as fraturas da fise medial (no jovem até cerca de 25 anos) e a relação com os vasos, a traqueia e o esôfago.\n\n**Na prova**: a incidência serendipity é feita com inclinação **caudocranial**, **centrada no esterno**.",
+  "correta": "O raio centrado no esterno e inclinado de baixo para cima mostra as duas clavículas mediais lado a lado.",
   "referencias": [
    "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), Cap. 19"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0674": {
   "incorretas": {
@@ -5194,18 +5194,18 @@
   "conferido": false
  },
  "trauma-0677": {
-  "conceito": "A **tríade da mulher atleta** associa três componentes encadeados: baixa disponibilidade energética (com ou sem transtorno alimentar, do qual a anorexia é a expressão extrema), disfunção menstrual (que se manifesta como oligomenorreia ou amenorreia) e baixa densidade mineral óssea (osteopenia e osteoporose).\n\nA cadeia causal é bem estabelecida: o déficit energético, por restrição alimentar ou por gasto excessivo no treino, reduz a secreção pulsátil de GnRH; a queda do LH e do FSH leva ao hipoestrogenismo; e o estrogênio é o principal freio da reabsorção óssea, de modo que a sua falta produz perda de massa óssea justamente na fase da vida em que a atleta deveria estar construindo o seu pico.\n\nNote que os dois erros possíveis nas alternativas são espelhos do mecanismo: a hipermenorreia é o oposto da disfunção descrita, e a alta densidade óssea é o oposto do desfecho.\n\nO desfecho ortopédico é a **fratura por estresse**, e a do colo do fêmur é a mais perigosa: dor inguinal insidiosa relacionada ao esforço, com radiografia inicial normal e diagnóstico pela ressonância. A distinção que muda tudo é entre a fratura de **compressão**, na cortical inferomedial (calcar), estável e tratável com restrição de carga, e a de **tensão**, na cortical superolateral, instável, com alto risco de progredir para fratura completa e desviada, com osteonecrose e sequela definitiva, e por isso com indicação de fixação profilática.\n\nO conceito foi ampliado pelo Comitê Olímpico Internacional para a **RED-S** (deficiência energética relativa no esporte), que reconhece repercussões metabólicas, imunológicas, cardiovasculares e de desempenho, e que se aplica também a homens. O tratamento é multidisciplinar e a base é restaurar a disponibilidade energética.",
-  "correta": "D. A tríade compreende anorexia (baixa disponibilidade energética) associada a OLIGOMENORREIA OU AMENORREIA e a BAIXA DENSIDADE ÓSSEA, o déficit energético leva ao hipoestrogenismo, e este à perda de massa óssea.",
   "incorretas": {
-   "A": "Erra os dois componentes: a disfunção menstrual da tríade é a oligomenorreia ou a amenorreia (por hipoestrogenismo hipotalâmico), e não a hipermenorreia; e o desfecho ósseo é a BAIXA densidade, não a alta.",
-   "B": "Acerta a baixa densidade óssea, mas erra a alteração menstrual: a hipermenorreia (sangramento aumentado) não faz parte do quadro e é incompatível com o hipoestrogenismo que está no centro do mecanismo.",
-   "C": "Acerta a alteração menstrual, mas erra o desfecho ósseo: o hipoestrogenismo remove o freio da reabsorção e produz BAIXA densidade mineral óssea, é justamente essa perda que leva à fratura por estresse."
+   "A": "A tríade tem menstruação diminuída e densidade óssea baixa, não o contrário.",
+   "B": "A densidade óssea é baixa, mas a menstruação diminui, não aumenta.",
+   "C": "A menstruação diminui, mas a densidade óssea também fica baixa."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
+  "conceito": "A **tríade da mulher atleta** é a combinação de:\n\n**baixa disponibilidade de energia**, com ou sem **anorexia** ou outro transtorno alimentar;\n\n**disfunção menstrual**: **oligomenorreia** ou **amenorreia**, porque a falta de energia desliga o eixo hormonal e o **estrogênio** cai;\n\n**baixa densidade mineral óssea**: com menos estrogênio, o osso perde massa (osteopenia ou osteoporose).\n\n**A consequência ortopédica**: **fraturas por estresse**, inclusive nos locais de **alto risco** (colo do fêmur, navicular, sacro).\n\n**O conceito ampliado**: deficiência energética relativa no esporte (**RED-S**), que inclui os homens e efeitos em outros sistemas.\n\n**A conduta**: equipe multidisciplinar (nutrição, ginecologia ou endocrinologia, psicologia), **densitometria**, ajuste da alimentação e do treino; a recuperação da menstruação é um sinal de melhora.\n\n**Na prova**: a tríade é anorexia com **oligomenorreia ou amenorreia** e **baixa densidade óssea**.",
+  "correta": "A falta de energia leva à amenorreia, e o estrogênio baixo leva à baixa densidade óssea.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 52"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0678": {
   "incorretas": {
@@ -5219,18 +5219,18 @@
   "conferido": false
  },
  "trauma-0679": {
-  "conceito": "O paciente descrito (fratura do pilão tibial 43-C3, a mais grave e cominuída na classificação AO, com fratura cominutiva associada da fíbula, deformidade importante e edema acentuado) reúne exatamente o perfil de alto risco para complicação de partes moles que orienta a conduta padrão-ouro na urgência: o **tratamento estagiado**.\n\nNa fase aguda, antes que o edema (já acentuado no momento da chegada) atinja seu pico (o que costuma ocorrer nos primeiros dias após o trauma), a prioridade é restaurar o comprimento, o alinhamento e a rotação grosseiros através de **ligamentotaxia** (a tração exercida pelas partes moles e ligamentos intactos ao redor da articulação, quando o membro é distraído) associada a um **fixador externo transarticular** (que atravessa o tornozelo, ancorado no calcâneo e/ou no antepé, estabilizando o conjunto sem qualquer manipulação direta do foco de fratura).\n\nEsse fixador provisório \"compra tempo\" para o edema resolver (geralmente verificado pelo sinal do enrugamento da pele) antes que a fixação definitiva com placas, mais invasiva, possa ser realizada com segurança, minimizando drasticamente o risco de deiscência de ferida e infecção que a fixação definitiva imediata acarretaria nesse cenário de alta energia e partes moles comprometidas.",
-  "correta": "C. O tratamento estagiado com ligamentotaxia e fixador externo transarticular é a opção mais adequada na urgência para essa fratura de alta energia com partes moles comprometidas, permitindo a fixação definitiva ser adiada até a resolução do edema.",
   "incorretas": {
-   "A": "A fixação definitiva imediata, mesmo que percutânea, expõe as partes moles já comprometidas por esse trauma de alta energia a um risco inaceitável de deiscência e infecção na fase aguda.",
-   "B": "Fixar definitivamente a fíbula com placa na fase aguda, mesmo mantendo a tíbia em fixador externo, ainda expõe partes moles comprometidas a um procedimento mais extenso do que a situação aguda permite com segurança.",
-   "D": "O fixador circular tipo Ilizarov definitivo não é a conduta padrão na urgência para esse quadro, a fase aguda pede um fixador transarticular temporário, com a definição do tratamento definitivo adiada."
+   "A": "A fixação definitiva com placas na urgência aumenta a infecção e a necrose de pele.",
+   "B": "Com a fíbula cominutiva, a placa em ponte arrisca fixá-la curta ou rodada e atrapalhar a redução.",
+   "D": "O fixador circular como tratamento definitivo na urgência não é a escolha nessa situação."
   },
-  "geradoEm": "2026-09-14",
-  "conferido": false,
+  "conceito": "A **fratura do pilão tibial** de **alta energia** (como a 43-C3, articular multifragmentária) vem com **edema** grande e partes moles frágeis. Operar a fratura de forma definitiva na urgência aumenta muito a **infecção** e a **necrose de pele**.\n\n**O tratamento estagiado** (\"span, scan, plan\"):\n\n**primeiro tempo (urgência)**: **fixador externo transarticular** (da tíbia ao calcâneo e ao antepé), usando a **ligamentotaxia** para restaurar o **comprimento** e o alinhamento e aliviar as partes moles;\n\n**depois**: **TC** com o comprimento restaurado, para planejar;\n\n**segundo tempo**: fixação definitiva quando a pele permitir (sinal do **enrugamento**), em geral 7 a 21 dias.\n\n**A fíbula**: fixá-la no primeiro tempo ajuda a restaurar o comprimento **se** o traço for simples e a redução, segura. Com a fíbula **cominutiva**, a fixação é difícil e, se ficar curta ou rodada, **atrapalha** a redução definitiva da tíbia. Nesse caso, a ligamentotaxia com o fixador basta na urgência.\n\n**As opções de tratamento definitivo na urgência**, como placas percutâneas ou fixador circular, não são a escolha num pilão C3 com edema acentuado.\n\n**Na prova**: a opção na urgência é o **tratamento estagiado com ligamentotaxia e fixador externo transarticular**.",
+  "correta": "O fixador transarticular restaura o comprimento pela ligamentotaxia e espera as partes moles para a fixação definitiva.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 63"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0680": {
   "incorretas": {
@@ -5289,14 +5289,14 @@
   "conferido": false
  },
  "trauma-0685": {
-  "conceito": "A estabilidade horizontal da articulação acromioclavicular depende de uma combinação específica de ligamentos, com contribuições diferentes conforme a direção da força aplicada.\n\nPara resistir à translação **posterior** da clavícula em relação ao acrômio, os principais restritores descritos são a porção **pôstero-superior** do ligamento acromioclavicular (a porção mais robusta desse complexo capsular, dominante nos pequenos deslocamentos) e o ligamento **trapezoide**, que assume papel mais relevante quando o deslocamento é maior e a capacidade do ligamento acromioclavicular já foi excedida.\n\nEssa combinação espelha, em sentido oposto, a que resiste à translação anterior (a porção anterossuperior do ligamento acromioclavicular junto ao conoide, discutida em outra questão deste acervo), evidenciando como o complexo ligamentar da acromioclavicular se organiza em pares complementares, cada um voltado a uma direção específica de instabilidade horizontal.\n\nEssa organização em pares complementares (superior versus horizontal, anterior versus posterior) é o que explica, na classificação de Rockwood para as luxações acromioclaviculares, por que graus mais avançados (IV, com desvio posterior significativo da clavícula) exigem reconstrução cirúrgica de ambos os componentes horizontal e vertical, e não apenas dos ligamentos coracoclaviculares (conoide e trapezoide), tradicionalmente mais lembrados no tratamento dessa lesão.",
-  "correta": "D. A porção póstero-superior do ligamento acromioclavicular e o ligamento trapezoide são os principais restritores da translação posterior da clavícula em relação ao acrômio.",
   "incorretas": {
-   "A": "A porção anterior-inferior do ligamento acromioclavicular e o conoide estão associados à resistência à translação anterior, não à posterior.",
-   "B": "A porção póstero-superior está correta, mas o conoide está mais associado à resistência à translação anterior, é o trapezoide o par correspondente à translação posterior.",
-   "C": "Nem a porção anterior-inferior nem o trapezoide isoladamente correspondem à combinação correta para a translação posterior, que envolve a porção póstero-superior junto ao trapezoide."
+   "A": "A porção anterior e inferior e o conoide não são os restritores posteriores.",
+   "B": "A porção posterossuperior está certa, mas o coracoclavicular é o trapezoide.",
+   "C": "O trapezoide está certo, mas a porção da cápsula é a posterossuperior."
   },
-  "geradoEm": "2026-09-14",
+  "conceito": "A **articulação acromioclavicular** tem dois tipos de estabilidade, com ligamentos diferentes:\n\n**vertical** (desvio superior da clavícula): controlada principalmente pelos **ligamentos coracoclaviculares**, sobretudo o **conoide**;\n\n**horizontal** (translação anterior e posterior): controlada principalmente pelos **ligamentos acromioclaviculares** (a cápsula), com ajuda dos coracoclaviculares.\n\n**Os restritores da translação posterior**: a porção **posterior e superior** dos ligamentos acromioclaviculares e o **trapezoide**, que fica mais lateral e anterior e resiste ao deslizamento da clavícula para trás sobre o acrômio.\n\n**Os restritores da translação anterior**: a porção anterior e superior dos acromioclaviculares e o **conoide**.\n\n**A instabilidade horizontal**: a clavícula se desloca para trás e se sobrepõe ao acrômio (vista na incidência axilar ou de Alexander). É a marca do tipo **IIIB** de Scheibel e explica as falhas das técnicas que reconstroem só a estabilidade vertical.\n\n**Na prova**: na translação posterior, os restritores são os ligamentos acromioclaviculares **posterior-superior** e o **trapezoide**.",
+  "correta": "A cápsula posterossuperior e o trapezoide impedem que a clavícula deslize para trás sobre o acrômio.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0686": {
@@ -5311,14 +5311,14 @@
   "conferido": false
  },
  "trauma-0687": {
-  "conceito": "As fraturas do **corpo** da escápula, mesmo com aspecto radiográfico impressionante, são tratadas de forma conservadora na grande maioria: o osso é envolto por uma camada espessa de músculos que o estabiliza e o vasculariza, a pseudartrose é raríssima e a mobilidade escapulotorácica compensa desvios moderados.\n\nAs indicações cirúrgicas foram sistematizadas por Cole, Jaeger e Bartlett em parâmetros mensuráveis, e a **angulação** é um deles: o limiar é de 45 graus entre os fragmentos, medido na incidência em perfil escapular (plano sagital), que é onde a angulação anteroposterior do corpo se revela. Acima disso, o corpo consolida dobrado, um dos fragmentos passa a proeminar contra a parede torácica e o resultado é crepitação, dor no deslizamento escapulotorácico e alteração da cinemática.\n\nOs outros dois critérios principais são a **medialização** (lateralização da borda lateral) maior que 20 mm (que encurta o braço de alavanca do deltoide e do manguito) e o **ângulo glenopolar menor que 20 graus**, sendo o normal de 30 a 45 graus, e sua queda traduzindo a báscula da glenoide para baixo, com fraqueza de abdução, fadiga e dor.\n\nCompletam a lista a translação de 100% dos fragmentos da borda lateral, a dupla ruptura do complexo suspensório superior com desvio (o ombro flutuante) e as fraturas abertas.\n\nNas fraturas intra-articulares da glenoide, os critérios são outros: degrau maior que 4 mm, fragmento acima de um quarto da superfície ou subluxação persistente da cabeça umeral.\n\nComo sempre nesse osso, a complicação a evitar não é a pseudartrose, e sim a **consolidação viciosa** sintomática.",
-  "correta": "C. A indicação cirúrgica começa a partir de 45 GRAUS de angulação da borda lateral no perfil escapular, limiar acima do qual o corpo consolida dobrado, com proeminência contra a parede torácica e alteração da cinemática escapulotorácica.",
   "incorretas": {
-   "A": "15 graus de angulação é um desvio pequeno, largamente tolerado num osso envolto por músculos e com grande capacidade de compensação escapulotorácica. Operar nessa faixa seria expor o paciente à morbidade da via de Judet sem benefício.",
-   "B": "30 graus ainda fica abaixo do limiar consagrado. É um desvio a acompanhar, mas os estudos que fundamentaram os critérios de Cole situaram o ponto de virada funcional em 45 graus.",
-   "D": "60 graus está acima do limiar: exigir esse valor deixaria sem cirurgia fraturas já dentro do território de consolidação viciosa sintomática, entre 45 e 60 graus."
+   "A": "15° de angulação é tolerada.",
+   "B": "30° de angulação ainda é tratada sem cirurgia.",
+   "D": "60° está acima do limiar cirúrgico de 45°."
   },
-  "geradoEm": "2026-09-10",
+  "conceito": "As fraturas do **corpo da escápula** são tratadas quase sempre **sem cirurgia**: os músculos envolvem e estabilizam os fragmentos, e a consolidação é a regra.\n\n**Os critérios cirúrgicos das fraturas extra-articulares** (Cole e colaboradores):\n\n**angulação da borda lateral** de **45° ou mais**, medida na radiografia em **perfil da escápula** (incidência em Y) ou na TC;\n\n**translação** da borda lateral de 100% ou maior que 20 mm;\n\n**ângulo glenopolar** menor que 20°;\n\n**medialização** da glenoide maior que 20 mm;\n\n**ombro flutuante** com desvio.\n\n**Por que a angulação importa**: uma borda lateral muito angulada **encurta** e deforma a escápula, altera a posição da glenoide e a mecânica dos músculos do manguito e do deltoide, com dor e fraqueza.\n\n**A cirurgia**: via **posterior** (Judet ou modificada) e placas na borda lateral e na espinha.\n\n**Na prova**: a cirurgia é indicada com angulação da borda lateral a partir de **45°**.",
+  "correta": "A partir de 45° de angulação da borda lateral, a escápula fica deformada e a função do ombro piora.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0688": {
@@ -5333,25 +5333,25 @@
   "conferido": false
  },
  "trauma-0689": {
-  "conceito": "As fraturas do **terço lateral** (distal) da clavícula representam cerca de 15% a 25% das fraturas do osso, e a sua conduta depende inteiramente da relação do traço com os **ligamentos coracoclaviculares**.\n\nQuando o traço passa **lateral** a eles (tipo I de Neer/Craig), os ligamentos permanecem presos ao fragmento medial, a fratura é estável e o tratamento conservador dá excelentes resultados. Quando passa **medial** a eles ou entre eles (**tipo II**), o fragmento medial perde a sua ancoragem inferior e é puxado para cima pelo esternocleidomastóideo, enquanto o fragmento lateral, ainda preso à escápula, desce com o peso do membro.\n\nInstala-se então uma situação mecânica péssima para a consolidação: os dois fragmentos se afastam, sofrem cisalhamento contínuo com cada movimento do ombro e ficam separados por interposição de partes moles. O resultado é a taxa mais alta de falha de consolidação de todo o osso: retardo de consolidação e **pseudartrose** em torno de 40% (as séries descrevem de 20% a 44%) quando essas fraturas desviadas são tratadas de forma conservadora, contra menos de 1% nas do tipo I e cerca de 15% nas do terço médio com desvio completo.\n\nÉ justamente esse número que sustenta a indicação cirúrgica frequente do tipo II, com várias opções: placa bloqueada anatômica de clavícula distal com parafusos divergentes, estabilização coracoclavicular com âncoras ou sistemas de botão e fita, transferência do ligamento coracoacromial e, com o pior perfil de complicações, a **placa gancho**, que invade o espaço subacromial e exige uma segunda cirurgia para retirada.\n\nConvém acrescentar a ressalva prática: uma parcela dessas pseudartroses é **assintomática**, o que levou alguns autores a defender o tratamento conservador com cirurgia apenas para os casos sintomáticos, sobretudo no idoso de baixa demanda.",
-  "correta": "C. A fratura desviada do terço lateral da clavícula tratada de forma conservadora apresenta retardo de consolidação e pseudartrose em torno de 40%, a taxa mais alta de todo o osso, decorrente da separação e do cisalhamento contínuo entre os fragmentos.",
   "incorretas": {
-   "A": "5% corresponde a uma estimativa muito otimista, próxima do que se observa nas fraturas do terço lateral do TIPO I (estáveis, com traço lateral aos coracoclaviculares), e não nas desviadas do tipo II.",
-   "B": "20% está no limite INFERIOR da faixa descrita (20% a 44%), mas a cifra citada como referência para as desviadas é de cerca de 40%. Subestimá-la levaria a indicar cirurgia com menos frequência do que os dados sustentam.",
-   "D": "60% superestima: mesmo nas séries mais desfavoráveis, a taxa não alcança esse patamar. E convém lembrar que parte dessas pseudartroses é assintomática, o que relativiza ainda mais a necessidade de cirurgia em todos os casos."
+   "A": "5% é a taxa das fraturas pouco desviadas, não das desviadas do terço lateral.",
+   "B": "20% subestima a taxa do terço lateral desviado.",
+   "D": "60% superestima a taxa."
   },
-  "geradoEm": "2026-09-10",
+  "conceito": "A fratura **desviada do terço lateral da clavícula** (Neer II, Craig IIA e IIB) é a fratura da clavícula com **maior risco de não consolidar**.\n\n**Por quê**: o traço fica perto dos **ligamentos coracoclaviculares**. O fragmento **medial** perde a ligação com o coracoide e é puxado para **cima** pelo trapézio e pelo esternocleidomastóideo; o fragmento **lateral** desce com o peso do braço. Os fragmentos ficam **afastados**, com movimento constante.\n\n**A taxa**: tratada de forma **conservadora**, a fratura desviada do terço lateral evolui com **retardo de consolidação e pseudartrose** em cerca de **30 a 40%** dos casos. Muitas pseudartroses são pouco sintomáticas, mas algumas causam dor e fraqueza.\n\n**O tratamento cirúrgico**: **placa distal bloqueada**, **placa gancho** (eficaz, porém com mais complicações), **estabilização coracoclavicular** (âncora ou botões) ou combinações.\n\n**O contraste**: no terço **médio**, a pseudartrose após tratamento conservador fica em torno de 5 a 15% nas fraturas desviadas.\n\n**Na prova**: a fratura desviada do terço lateral tratada conservadoramente tem retardo e pseudartrose em cerca de **40%**.",
+  "correta": "Sem o apoio coracoclavicular, os fragmentos ficam afastados e móveis, e cerca de 40% não consolidam ou demoram.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0690": {
-  "conceito": "A cabeça do rádio não é uniforme, e a distribuição das fraturas segue a sua anatomia com notável regularidade.\n\nNa queda sobre a mão espalmada com o antebraço em **pronação** (o mecanismo habitual), a carga axial empurra a cabeça do rádio contra o capítulo, e o setor da cabeça que fica em contato direto com ele nesse momento é o quadrante **anterolateral**. Esse quadrante reúne duas desvantagens: é o que recebe o impacto e é o de **menor densidade** óssea subcondral da cabeça, com osso subcondral mais fino e trabeculado mais rarefeito. O resultado é que as fraturas articulares parciais da cabeça do rádio (as Mason tipo I e II, o fragmento único marginal) se concentram no quadrante anterolateral.\n\nO espelho disso é o setor **posteromedial**, o de maior densidade óssea e o menos acometido. E aqui as peças se encaixam: esse setor mais denso corresponde, em boa medida, à zona segura, a porção não articular da cabeça que não contata a incisura radial da ulna em nenhum grau de pronossupinação e onde a placa pode ser implantada sem bloquear a rotação do antebraço, delimitada na prática pelas linhas do processo estiloide do rádio e do tubérculo de Lister, conforme Caputo, ou pelo arco entre as bissetrizes em pronação e supinação máximas, conforme Smith e Hotchkiss.\n\nOu seja, a natureza fratura de um lado e deixa livre justamente o lado em que se pode fixar.\n\nDuas consequências práticas: primeiro, a incidência radiográfica de **Greenspan** (perfil com o feixe angulado 45 graus em sentido cefálico, antebraço em neutro) desenrola a cabeça do rádio e revela fraturas marginais anterolaterais que a incidência de frente esconde; segundo, no intraoperatório a placa quase sempre fica na face oposta à do fragmento que se está reduzindo.",
-  "correta": "A. As fraturas articulares parciais da cabeça do rádio predominam no quadrante ANTEROLATERAL: é o setor que colide diretamente com o capítulo na queda sobre a mão espalmada com o antebraço pronado e o de menor densidade óssea subcondral.",
   "incorretas": {
-   "B": "O quadrante anteromedial não é o de contato preferencial com o capítulo no mecanismo habitual e não concentra as fraturas parciais. Vale não confundir com a FACETA ANTEROMEDIAL DO CORONOIDE, que é da ulna e pertence a outro padrão de lesão, a instabilidade em varo posteromedial.",
-   "C": "O setor posterolateral integra a porção mais densa e menos exposta ao impacto direto. Ele importa por outro motivo: faz parte da zona segura para implante de material, e não da área de maior incidência de fraturas.",
-   "D": "O posteromedial é exatamente o oposto do que a questão pede: é o quadrante de MAIOR densidade óssea da cabeça do rádio e, por isso, o menos suscetível a fraturas."
+   "B": "A região anteromedial é menos acometida.",
+   "C": "A região posterolateral é menos acometida.",
+   "D": "A região posteromedial é a menos exposta ao impacto."
   },
-  "geradoEm": "2026-09-10",
+  "conceito": "As **fraturas articulares parciais da cabeça do rádio** (Mason II) acometem mais a região **anterolateral**.\n\n**Por quê**:\n\n**posição na queda**: com o antebraço em posição **neutra** ou em leve supinação, é o quadrante **anterolateral** que se apoia no **capítulo** e recebe a carga;\n\n**osso mais fraco**: o quadrante anterolateral fica na zona que **não articula** com a ulna; tem **menos osso subcondral** e menos trabéculas de suporte.\n\n**A coincidência útil**: a **zona segura** para colocar a placa (Smith e Hotchkiss) fica na face **lateral**, com o antebraço em neutro, perto da área que fratura, o que facilita a fixação pelas vias laterais (Kocher ou Kaplan).\n\n**A indicação de cirurgia no Mason II**: absoluta no **bloqueio mecânico** da rotação; relativa nos fragmentos grandes desviados, no degrau e na instabilidade associada.\n\n**Na prova**: a fratura articular parcial da cabeça do rádio é mais frequente na região **anterolateral**.",
+  "correta": "O quadrante anterolateral recebe o impacto contra o capítulo e tem menos osso de suporte.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0691": {
@@ -5377,14 +5377,14 @@
   "conferido": false
  },
  "trauma-0693": {
-  "conceito": "O acesso **lateral** para a fixação da fratura do tornozelo (voltado ao maléolo lateral/fíbula distal) coloca em risco uma estrutura anatômica específica e bem reconhecida: o **nervo fibular (peroneal) superficial**.\n\nEsse nervo, puramente sensitivo na sua porção mais distal, torna-se subcutâneo no terço distal da perna, exatamente na região onde a incisão lateral padrão para essa fixação é realizada, e seu trajeto variável (por vezes cruzando diretamente sobre o local da incisão) o torna a estrutura mais comumente exposta ao risco durante a dissecção superficial dessa via.\n\nUma lesão desse nervo produz um déficit sensitivo isolado no dorso do pé, geralmente bem tolerado, mas ainda assim um problema evitável com identificação e proteção cuidadosas antes de aprofundar a incisão além do plano subcutâneo.\n\nUma estratégia prática recomendada para reduzir esse risco é a **transiluminação** ou a simples inspeção cuidadosa do subcutâneo antes de aprofundar a dissecção: como o nervo fibular superficial costuma ser visível a olho nu logo abaixo da pele nessa região, identificá-lo precocemente e afastá-lo delicadamente, em vez de dissecar às cegas, reduz consideravelmente a chance de lesão inadvertida por tração ou secção parcial.",
-  "correta": "D. O nervo fibular superficial, que se torna subcutâneo no terço distal da perna exatamente na região da incisão lateral padrão, é a estrutura anatômica mais comumente em risco nesse acesso.",
   "incorretas": {
-   "A": "O nervo sural corre mais posteriormente, associado sobretudo às vias posterolaterais discutidas em outras questões deste acervo, não ao acesso lateral padrão para o maléolo.",
-   "B": "O tendão fibular curto corre mais profundamente, atrás do maléolo lateral, menos exposto do que o nervo fibular superficial na dissecção superficial dessa via.",
-   "C": "O tendão fibular longo, semelhante ao curto, corre mais profundamente e posteriormente, menos exposto do que o nervo fibular superficial nessa via."
+   "A": "O nervo sural corre atrás da fíbula e corre risco nas incisões posterolaterais.",
+   "B": "O tendão fibular curto fica atrás do maléolo, protegido pela bainha.",
+   "C": "O tendão fibular longo também fica atrás do maléolo, protegido."
   },
-  "geradoEm": "2026-09-14",
+  "conceito": "O **acesso lateral** ao tornozelo é usado para fixar a **fíbula** (maléolo lateral). A incisão segue a borda posterior ou o centro da fíbula distal.\n\n**A principal estrutura em risco**: o **nervo fibular superficial**. Ele atravessa a fáscia na face **anterolateral** da perna, cerca de **10 a 12 cm** acima da ponta do maléolo lateral, e desce cruzando a frente da fíbula em direção ao dorso do pé. Em incisões longas ou mais anteriores, ele é cortado ou estirado, deixando **dormência** no dorso do pé e neuroma doloroso.\n\n**As outras estruturas**:\n\n**nervo sural**: corre **atrás** da fíbula, junto à veia safena parva; fica em risco nas incisões **posterolaterais**;\n\n**tendões fibulares** (curto e longo): ficam atrás do maléolo lateral, protegidos pela bainha; o risco é o atrito com placas posteriores;\n\n**ramo perfurante da artéria fibular**: na frente da sindesmose.\n\n**Como proteger**: identificar o fibular superficial na parte proximal da incisão, sobretudo nas fraturas mais altas, e afastá-lo com cuidado.\n\n**Na prova**: a principal estrutura em risco no acesso lateral do tornozelo é o **nervo fibular superficial**.",
+  "correta": "O fibular superficial cruza a frente da fíbula distal e é atingido pela incisão lateral, sobretudo nas mais altas.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0694": {
