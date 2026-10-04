@@ -508,25 +508,25 @@
   "conferido": false
  },
  "trauma-0047": {
-  "conceito": "### AO/OTA 43 (tíbia distal/pilão)\n| Grupo | Tipo |\n|---|---|\n| A | extra-articular (A1 simples, A2 cunha, A3 complexa metafisária) |\n| B | ==articular parcial== |\n| C | articular completa (C1 simples, C2 metafisária multifragmentada, C3 articular multifragmentada) |\n\n### Subgrupos B\n| Subgrupo | Padrão |\n|---|---|\n| B1 | cisalhamento puro (split) |\n| B2 | cisalhamento + depressão |\n| ==B3== | ==depressão multifragmentada== |\n\n### Pilão\n- Alta energia: partes moles primeiro (==fixador externo transarticular==, fixar fíbula), cirurgia definitiva em 7 a 21 dias (sinal do enrugamento).\n\n> **Na prova:** 43-B3 = ==depressão multifragmentada==",
-  "correta": "**Depressão multifragmentada.**\n- Articular parcial.\n- Pior dos subgrupos B.",
   "incorretas": {
-   "A": "**Metafisária complexa.**\n- 43-A3.",
-   "B": "**Cisalhamento.**\n- 43-B1.",
-   "D": "**Articular e metafisária simples.**\n- 43-C1."
+   "A": "A fratura metafisária complexa, sem entrar na articulação, é a 43-A3.",
+   "B": "O cisalhamento puro é a 43-B1.",
+   "D": "Articular e metafisária simples é a 43-C1."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **classificação AO/OTA** numera a **tíbia distal** como **43** e divide as fraturas em três tipos:\n\n**43-A, extra-articular**: A1 metafisária simples, A2 em cunha, A3 metafisária **complexa**;\n\n**43-B, articular parcial**: uma parte da superfície articular continua presa à diáfise;\n\n**43-C, articular completa**: a superfície articular fica toda separada da diáfise; C1 articular e metafisária simples, C2 articular simples com metáfise multifragmentada, C3 articular multifragmentada.\n\n**Os subgrupos do tipo B**:\n\n**B1**: **cisalhamento** puro (split);\n\n**B2**: cisalhamento com **depressão**;\n\n**B3**: **depressão multifragmentária**, o pior dos parciais.\n\n**O pilão de alta energia**: primeiro as **partes moles**. Usa-se **fixador externo transarticular** (e, muitas vezes, fixa-se a fíbula), e a cirurgia definitiva espera de 7 a 21 dias, até a pele **enrugar** de novo (sinal do enrugamento).\n\n**Na prova**: a 43-B3 é a fratura articular parcial com **depressão multifragmentária**.",
+  "correta": "O B3 é a fratura articular parcial com depressão multifragmentária, a mais grave do grupo B.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0048": {
-  "conceito": "### Fêmur distal e lesões ligamentares\n- Associação ==incomum== (cerca de 10 a 20% em séries com RM), diferente do planalto tibial.\n- Ligamento mais acometido: ==LCA== (especialmente em fraturas intercondilares/Hoffa e alta energia).\n- Exame sob anestesia após a fixação; tratar em segundo tempo.\n\n### Classificação AO 33\n| Tipo | Padrão |\n|---|---|\n| A | extra-articular |\n| B | unicondilar (B3 = ==Hoffa==, coronal) |\n| C | bicondilar |\n\n### Tratamento\n- Placa bloqueada lateral ou haste retrógrada; dupla placa em cominução medial/idosos.\n- Hoffa: parafusos anteroposteriores.\n\n> **Na prova:** fêmur distal = lesão ligamentar ==incomum==, ==LCA== mais acometido",
-  "correta": "**Incomum, LCA.**\n- Menos frequente que no planalto.\n- LCA é o mais lesado.",
   "incorretas": {
-   "A": "**Comum.**\n- A associação é incomum.",
-   "B": "**Comum e LCP.**\n- Ambos errados.",
-   "D": "**LCP.**\n- LCA predomina."
+   "A": "O cruzado anterior está certo, mas a associação é incomum.",
+   "B": "A associação é incomum, e o cruzado anterior predomina.",
+   "D": "A associação é incomum, mas o ligamento mais acometido é o cruzado anterior."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **fratura do fêmur distal**, a lesão ligamentar do joelho associada é **incomum**: cerca de 10 a 20% nas séries com RM, bem menos que na fratura do **planalto tibial**.\n\n**O ligamento mais acometido**: o **cruzado anterior**, sobretudo nas fraturas **intercondilares**, nas fraturas de **Hoffa** (traço coronal do côndilo) e nos traumas de alta energia.\n\n**Como avaliar**: o exame do joelho antes da fixação é impossível. Depois de fixar a fratura, fazer o **exame sob anestesia**; a lesão ligamentar é tratada em um **segundo tempo**.\n\n**A classificação AO 33**: A extra-articular, B articular parcial (um côndilo; B3 é a fratura de Hoffa), C articular completa.\n\n**O tratamento**: **placa bloqueada lateral** ou **haste retrógrada**; dupla placa na cominução medial ou no osso osteoporótico. A **fratura de Hoffa** se fixa com parafusos de anterior para posterior, porque a placa lateral não segura o traço coronal.\n\n**Na prova**: a associação com lesão ligamentar é **incomum**, e o **LCA** é o mais acometido.",
+  "correta": "A lesão ligamentar é incomum no fêmur distal, e o cruzado anterior é o ligamento mais atingido.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0049": {
@@ -541,91 +541,91 @@
   "conferido": false
  },
  "trauma-0050": {
-  "conceito": "### Fratura da escápula: indicações cirúrgicas\n| Tipo | Critério |\n|---|---|\n| articular (glenoide) | degrau > 3 a 4 mm, instabilidade glenoumeral |\n| extra-articular (corpo/colo) | ==ângulo glenopolar < 20 a 22°== |\n| | medialização/translação lateral ≥ 20 mm (ou 100%) |\n| | angulação ≥ 45° |\n| | lesão dupla do complexo suspensório superior |\n\n### Ângulo glenopolar\n- Entre a linha dos polos superior e inferior da glenoide e a linha do polo superior ao ângulo inferior da escápula.\n- Normal ==30 a 45°==.\n\n### Tratamento\n- Maioria ==conservadora== (músculos estabilizam, consolida sempre).\n- Via de Judet (posterior) para corpo/colo.\n\n> **Na prova:** cirurgia extra-articular = ==glenopolar < 20°==",
-  "correta": "**Glenopolar < 20°.**\n- Colo/corpo muito desviado.\n- Pior função do ombro.",
   "incorretas": {
-   "B": "**Translação 20%.**\n- Limite é cerca de 100% ou 20 mm.",
-   "C": "**Angulação 60°.**\n- Limite citado é 45°.",
-   "D": "**3 mm.**\n- Limite articular, não do corpo."
+   "B": "O limite de translação é de cerca de 20 mm ou 100% da largura, não 20%.",
+   "C": "O limite de angulação citado é de 45°.",
+   "D": "O desvio de 3 mm é limite das fraturas articulares, não do corpo."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A maioria das fraturas da **escápula** é tratada **sem cirurgia**: os músculos em volta seguram os fragmentos, e a consolidação é a regra.\n\n**As indicações cirúrgicas nas fraturas extra-articulares** (colo e corpo) envolvem desvios grandes:\n\n**ângulo glenopolar menor que 20°**;\n\n**medialização** (translação) da glenoide de 20 mm ou mais;\n\n**angulação** do corpo de 45° ou mais;\n\n**ombro flutuante** com desvio importante.\n\n**O ângulo glenopolar**: formado entre a linha que liga os **polos superior e inferior da glenoide** e a linha que vai do **polo superior** da glenoide ao **ângulo inferior** da escápula. O normal é de **30 a 45°**. Abaixo de 20°, a glenoide está muito inclinada, e a função do ombro piora.\n\n**Nas fraturas articulares**: degrau maior que 3 a 4 mm ou instabilidade da glenoide.\n\n**A via**: posterior de **Judet** para o colo e o corpo.\n\n**Na prova**: na fratura extra-articular, um **ângulo glenopolar menor que 20°** indica cirurgia.",
+  "correta": "O ângulo glenopolar abaixo de 20° mostra a glenoide muito desviada, com pior função do ombro.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0051": {
-  "conceito": "### Incidência de Canale e Kelly\n- Mostra o ==colo do tálus== sem sobreposição.\n- Técnica: tornozelo em ==flexão plantar máxima==, pé em ==pronação de 15°==, raio inclinado ==75°== em relação ao filme (15° da vertical, cefálico).\n\n### Hawkins (colo do tálus)\n| Tipo | Luxação | Necrose |\n|---|---|---|\n| I | sem desvio | 0 a 13% |\n| II | subtalar | 20 a 50% |\n| III | subtalar + tibiotalar | 70 a 100% |\n| IV (Canale) | + talonavicular | ~100% |\n\n- ==Sinal de Hawkins==: radiotransparência subcondral na cúpula em 6 a 8 semanas = revascularização (bom sinal).\n\n> **Na prova:** Canale-Kelly = ==flexão plantar máxima, pronação 15°, raio a 75°==",
-  "correta": "**Flexão plantar, pronação 15°, 75°.**\n- Colo do tálus em perfil verdadeiro.\n- Avalia varo do colo.",
   "incorretas": {
-   "A": "**Supinação.**\n- Pé deve ser pronado.",
-   "B": "**Dorsiflexão.**\n- Deve ser flexão plantar.",
-   "D": "**Dorsiflexão e supinação.**\n- Ambos errados."
+   "A": "A flexão plantar e os 75° estão certos, mas o pé deve ficar pronado.",
+   "B": "A pronação e os 75° estão certos, mas o tornozelo fica em flexão plantar.",
+   "D": "O tornozelo fica em flexão plantar, e o pé, pronado."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **incidência de Canale e Kelly** mostra o **colo do tálus** sem sobreposição, em perfil verdadeiro do eixo do colo. Na radiografia comum, o colo fica escondido e o **desvio em varo** passa despercebido.\n\n**Como fazer**:\n\n**tornozelo em flexão plantar máxima**;\n\n**pé pronado 15°**;\n\n**raio inclinado 75° em relação ao chassi** (15° da vertical, no sentido cefálico).\n\n**Por que importa**: o colo do tálus tende a consolidar em **varo**, o que trava a subtalar e deixa o pé em supinação. A incidência mostra o alinhamento e ajuda na redução intraoperatória.\n\n**Hawkins** classifica a fratura do colo pelo número de articulações luxadas: I sem desvio; II com subluxação subtalar; III com luxação subtalar e do tornozelo; IV (Canale e Kelly) com luxação talonavicular também. Quanto maior o tipo, maior o risco de **necrose**.\n\n**O sinal de Hawkins**: faixa **radiotransparente** sob a cúpula do tálus em 6 a 8 semanas. Mostra **revascularização**: é um **bom sinal**.\n\n**Na prova**: a incidência de Canale e Kelly usa **flexão plantar máxima**, **pronação de 15°** e raio a **75°**.",
+  "correta": "Flexão plantar máxima, pronação de 15° e raio a 75° colocam o colo do tálus em perfil verdadeiro.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0052": {
-  "conceito": "### Lesões associadas ao planalto tibial\n| Lesão | Frequência |\n|---|---|\n| ==menisco== (lateral) | ==até 50 a 90%== em RM |\n| LCM | 20 a 30% |\n| LCA | 10 a 25% (mais em Schatzker IV e bicondilares) |\n| nervo fibular, artéria poplítea | Schatzker IV a VI |\n| síndrome compartimental | alta energia |\n\n### Por que o menisco\n- Côndilo femoral lateral impacta o platô em valgo: menisco lateral é ==esmagado ou interposto== no traço (depressão).\n- Reparar/reinserir durante a fixação (visão submeniscal).\n\n> **Na prova:** lesão mais associada ao planalto = ==menisco==",
-  "correta": "**Menisco.**\n- Principalmente o lateral.\n- Pode ficar interposto no traço.",
   "incorretas": {
-   "B": "**LCM.**\n- Segunda mais comum.",
-   "C": "**LCA.**\n- Menos frequente.",
-   "D": "**LCP.**\n- Rara."
+   "B": "O colateral medial é a segunda lesão mais comum.",
+   "C": "O cruzado anterior é lesado com menos frequência que o menisco.",
+   "D": "O cruzado posterior raramente é lesado, exceto nas fraturas-luxações mediais."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **fratura do planalto tibial**, a lesão associada **mais comum** é a do **menisco**, sobretudo o **lateral**.\n\n**Por quê**: na fratura típica, o **côndilo femoral lateral** bate no planalto em **valgo**. O menisco lateral fica no caminho: é **esmagado**, **rasgado** ou fica **interposto** no traço, principalmente nas fraturas com **depressão**.\n\n**As outras lesões**: o **colateral medial** é a segunda mais comum (o valgo o tensiona); o **cruzado anterior** é menos frequente; o **cruzado posterior** é raro, exceto nas fraturas-luxações mediais.\n\n**A conduta durante a fixação**: abrir a cápsula por baixo do menisco (**artrotomia submeniscal**), ver a superfície articular e **reparar ou reinserir** o menisco antes de fechar. Um menisco interposto impede a redução.\n\n**Na prova**: a lesão mais associada à fratura do planalto tibial é a do **menisco**.",
+  "correta": "O côndilo lateral em valgo esmaga o menisco lateral, que pode ficar preso no traço da fratura.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0053": {
-  "conceito": "### Fratura do enforcado (Levine e Edwards)\n| Tipo | Achado | Mecanismo | Tratamento |\n|---|---|---|---|\n| I | desvio < 3 mm, sem angulação | hiperextensão + carga axial | colar |\n| ==II== | ==translação > 3 mm e angulação== | ==extensão + compressão== seguida de flexão de rebote | tração em extensão + halo |\n| IIA | ==angulação sem translação== | flexão-distração | ==não tracionar==; halo em leve extensão/compressão |\n| III | II + luxação facetária C2-C3 | flexão-compressão | cirurgia |\n\n> **Na prova:** Levine-Edwards II = ==extensão e compressão== (com rebote em flexão)",
-  "correta": "**Extensão e compressão.**\n- Hiperextensão com carga axial.\n- Rebote em flexão gera angulação.",
   "incorretas": {
-   "A": "**Flexão-distração.**\n- Tipo IIA.",
-   "B": "**Flexão-compressão.**\n- Tipo III.",
-   "C": "**Extensão-distração.**\n- Não é o mecanismo do tipo II."
+   "A": "Flexão e distração é o mecanismo do tipo IIA.",
+   "B": "Flexão e compressão é o mecanismo do tipo III, com luxação facetária.",
+   "C": "Extensão e distração não é o mecanismo do tipo II."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **fratura do enforcado** é a **espondilolistese traumática do áxis**: fratura bilateral da **pars interarticularis** de C2. **Levine e Edwards** classificam pelo desvio e pelo mecanismo:\n\n**tipo I**: desvio menor que 3 mm, sem angulação; **hiperextensão com carga axial**; estável;\n\n**tipo II**: desvio maior que 3 mm com angulação; **extensão e compressão**, seguidas de um **rebote em flexão** que angula e rompe o disco C2-C3;\n\n**tipo IIA**: pouco desvio e **muita angulação**; **flexão e distração**; não deve ser tracionado, porque a tração piora a angulação;\n\n**tipo III**: tipo I com **luxação das facetas** C2-C3; **flexão e compressão**; precisa de cirurgia.\n\n**O tratamento**: tipo I com colar; tipo II com tração e halo; tipo IIA com halo em leve extensão, **sem tração**; tipo III com redução e fixação.\n\n**Na prova**: o tipo II de Levine e Edwards vem de **extensão e compressão**.",
+  "correta": "A hiperextensão com carga axial fratura a pars, e o rebote em flexão angula e desvia C2 sobre C3.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0054": {
-  "conceito": "### Artéria vertebral e fixação cervical\n- Com lesão unilateral da vertebral, a ==contralateral== passa a sustentar a circulação vertebrobasilar.\n- Qualquer risco a ela é inaceitável.\n\n### Riscos por técnica\n| Técnica | Risco à vertebral |\n|---|---|\n| ==parafuso de massa lateral== (posterior) | trajetória para ==lateral e cefálico== evita, mas ainda há risco (forame transverso) |\n| parafuso pedicular cervical | alto |\n| translaminar | baixo |\n| acesso anterior (placa, cage) | baixo se não lateralizar demais |\n\n- A banca considerou que se deve ==evitar parafusos de massa lateral== pelo acesso posterior.\n\n### Rastreamento\n- Angiotomografia em fraturas do forame transverso, luxações facetárias, C1-C3.\n\n> **Na prova:** lesão da vertebral = evitar ==parafuso de massa lateral==",
-  "correta": "**Parafuso de massa lateral.**\n- Próximo ao forame transverso.\n- Risco à artéria remanescente.",
   "incorretas": {
-   "A": "**Placa anterior.**\n- Segura para a vertebral.",
-   "B": "**Translaminar.**\n- Longe da artéria.",
-   "D": "**Cage anterior.**\n- Baixo risco se central."
+   "A": "A placa anterior trabalha longe da artéria vertebral.",
+   "B": "O parafuso translaminar fica longe da artéria vertebral.",
+   "D": "O espaçador intersomático, colocado no centro, tem baixo risco para a vertebral."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **artéria vertebral** sobe pelos **forames transversos** de C6 a C1, logo ao lado da massa lateral. Nas fraturas cervicais, ela pode ser lesada, sobretudo nas fraturas do **forame transverso**, nas **luxações facetárias** e nas lesões de C1 a C3.\n\n**Por que isso muda a cirurgia**: com uma vertebral lesada, a **do outro lado** passa a sustentar a circulação vertebrobasilar sozinha. Qualquer risco a ela é inaceitável.\n\n**O rastreamento**: **angiotomografia** nas fraturas que atravessam o forame transverso, nas luxações facetárias e nas lesões altas.\n\n**A escolha da técnica**: a banca considerou que se deve **evitar o acesso posterior com parafuso de massa lateral**, porque o parafuso passa perto do forame transverso. As técnicas **anteriores** (placa e espaçador central) e o **parafuso translaminar** ficam longe da artéria.\n\n**Os parafusos de pedículo** cervical são os de maior risco para a vertebral e exigem planejamento por TC.\n\n**Na prova**: com lesão da artéria vertebral, evitar o **acesso posterior com parafuso de massa lateral**.",
+  "correta": "A banca considerou que o parafuso de massa lateral passa perto do forame transverso e ameaça a vertebral que sobrou.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0055": {
-  "conceito": "### Tríade terrível do cotovelo\n- ==Luxação posterior + fratura da cabeça do rádio + fratura da ponta do coronoide== (O'Driscoll 1, Regan-Morrey I).\n- Mecanismo: queda com supinação, valgo e carga axial (instabilidade posterolateral rotatória).\n\n### Tratamento (de dentro para fora)\n1. Coronoide (sutura/laço ou parafuso).\n2. Cabeça do rádio (fixar ou prótese).\n3. ==LCL== (reinserção no epicôndilo lateral).\n4. LCM ou fixador articulado se ainda instável.\n\n> **Na prova:** O'Driscoll 1 (ponta) associa-se a fratura da ==cabeça do rádio== (tríade terrível)",
-  "correta": "**Cabeça do rádio.**\n- Tríade terrível.\n- Com luxação posterior.",
   "incorretas": {
-   "A": "**Diáfise da ulna.**\n- Monteggia.",
-   "B": "**Olécrano.**\n- Fratura-luxação transolecraniana (tipo 3).",
-   "C": "**Diáfise do rádio.**\n- Galeazzi."
+   "A": "A fratura da ulna com luxação da cabeça do rádio é a lesão de Monteggia.",
+   "B": "A fratura do olécrano se associa à base do coronoide, na fratura-luxação transolecraniana.",
+   "C": "A fratura da diáfise do rádio com lesão radioulnar distal é a de Galeazzi."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **fratura do tipo 1 de O'Driscoll** é a fratura da **ponta do processo coronoide**. Ela é a marca da **tríade terrível** do cotovelo:\n\n**luxação posterior** do cotovelo;\n\n**fratura da cabeça do rádio**;\n\n**fratura da ponta do coronoide**.\n\n**O mecanismo**: queda com o antebraço em **supinação**, cotovelo em **valgo** e carga axial: é a **instabilidade rotatória posterolateral** levada ao extremo. O colateral lateral se solta do epicôndilo primeiro.\n\n**O tratamento cirúrgico, de dentro para fora**:\n\n**coronoide**: sutura em laço ou parafuso;\n\n**cabeça do rádio**: fixar ou trocar por prótese, nunca ressecar;\n\n**colateral lateral**: reinserir no epicôndilo lateral;\n\n**colateral medial** ou **fixador articulado**: se o cotovelo continuar instável.\n\n**As outras lesões**: fratura da ulna com luxação da cabeça do rádio é **Monteggia**; fratura do olécrano com luxação é a fratura-luxação **transolecraniana** (associada à base do coronoide, tipo 3); fratura da diáfise do rádio com lesão da radioulnar distal é **Galeazzi**.\n\n**Na prova**: o O'Driscoll tipo 1 se associa à fratura da **cabeça do rádio**, na tríade terrível.",
+  "correta": "A ponta do coronoide quebra junto com a cabeça do rádio na luxação posterior: a tríade terrível.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0056": {
-  "conceito": "### Forças na pertrocantérica\n| Fragmento | Músculo | Desvio |\n|---|---|---|\n| proximal | iliopsoas, glúteos, rotadores externos | flexão, abdução, RE |\n| ==diáfise (distal)== | ==adutores== (adutor longo) | ==adução, encurtamento== e ==medialização== |\n| | peso do membro | rotação externa |\n\n### Posição clássica\n- Membro ==encurtado e em rotação externa== (mais que no colo, pois extracapsular).\n\n### Redução\n- Tração, abdução leve e rotação interna na mesa ortopédica; ângulo cervicodiafisário normal ou discreto valgo; TAD < 25 mm.\n\n> **Na prova:** diáfise na pertrocantérica é desviada pelo ==adutor longo==",
-  "correta": "**Adutor longo.**\n- Aduz e encurta a diáfise.\n- Medializa o fragmento distal.",
   "incorretas": {
-   "A": "**Iliopsoas.**\n- Age no fragmento proximal (trocanter menor).",
-   "C": "**Glúteo médio.**\n- Abduz o proximal.",
-   "D": "**Gêmeo.**\n- Rotador externo do proximal."
+   "A": "O iliopsoas age no fragmento proximal, pelo trocânter menor.",
+   "C": "O glúteo médio abduz o fragmento proximal.",
+   "D": "O gêmeo é rotador externo e atua no fragmento proximal."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **fratura pertrocantérica**, os fragmentos são puxados por músculos diferentes:\n\n**fragmento proximal** (cabeça e colo): **iliopsoas** (no trocânter menor) puxa em flexão; **glúteo médio** puxa em abdução; **rotadores externos** (como os gêmeos) puxam em rotação externa;\n\n**diáfise** (fragmento distal): o **adutor longo** e os demais adutores puxam em **adução**, **encurtam** e medializam a diáfise.\n\n**A apresentação clássica**: membro **encurtado** e em **rotação externa**, mais acentuada que na fratura do colo, porque a fratura é **extracapsular** e a cápsula não segura a rotação.\n\n**A redução na mesa ortopédica**: **tração**, leve abdução e **rotação interna**; buscar ângulo cervicodiafisário normal ou em discreto valgo. Na fixação, a **distância ponta-ápice** (TAD) deve ficar abaixo de 25 mm, para o parafuso não cortar a cabeça.\n\n**Na prova**: a diáfise na fratura pertrocantérica é desviada pelo **adutor longo**.",
+  "correta": "O adutor longo aduz, encurta e medializa a diáfise, que é o fragmento distal.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0057": {
-  "conceito": "### Desvio dos fragmentos no úmero proximal\n| Fragmento | Músculos | Desvio |\n|---|---|---|\n| tuberosidade maior | supraespinal, infraespinal, redondo menor | ==superior e posterior== (retração) |\n| ==tuberosidade menor== | ==subescapular== | ==medial== (e anterior) |\n| diáfise | ==peitoral maior== | medial e anterior |\n| deltoide | | abdução/encurtamento da diáfise |\n\n### Implicações\n- Tuberosidade maior desviada > 5 mm (atleta 3 mm): fixar (impacto subacromial).\n- Tuberosidade menor isolada: pensar em ==luxação posterior== associada.\n\n> **Na prova:** tuberosidade menor = ==medial, pelo subescapular==",
-  "correta": "**Medial, subescapular.**\n- Único músculo inserido na menor.\n- Puxa medialmente.",
   "incorretas": {
-   "A": "**Infraespinal.**\n- Insere na tuberosidade maior.",
-   "B": "**Infraespinal.**\n- Músculo errado.",
-   "D": "**Lateral.**\n- Subescapular puxa medial."
+   "A": "O infraespinal se insere na tuberosidade maior, e o desvio é medial.",
+   "B": "O desvio é medial, mas quem age é o subescapular, não o infraespinal.",
+   "D": "O subescapular está certo, mas puxa a tuberosidade para medial."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na fratura do **úmero proximal**, cada fragmento é puxado pelos músculos que se inserem nele:\n\n**tubérculo maior**: **supraespinal**, **infraespinal** e **redondo menor** o puxam para **cima e para trás**;\n\n**tubérculo menor**: o **subescapular**, único músculo inserido nele, o puxa para **medial**;\n\n**diáfise**: o **peitoral maior** a puxa para medial e anterior;\n\n**cabeça**: fica na posição que os tubérculos permitem.\n\n**As implicações**:\n\n**tubérculo maior** desviado mais de 5 mm (3 mm no atleta e em quem trabalha com o braço acima da cabeça): fixar, porque causa **impacto subacromial**;\n\n**tubérculo menor isolado**: pensar em **luxação posterior** do ombro, que costuma avulsionar o tubérculo menor; conferir a radiografia em perfil axilar.\n\n**Na prova**: a tuberosidade menor desvia para **medial**, pela ação do **subescapular**.",
+  "correta": "O subescapular é o único músculo inserido na tuberosidade menor e a puxa para medial.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0058": {
