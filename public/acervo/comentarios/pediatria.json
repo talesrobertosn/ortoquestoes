@@ -2161,68 +2161,68 @@
   "conferido": false
  },
  "pediatria-0157": {
-  "conceito": "### Ciclo da marcha (100%)\n| Fase | % |\n|---|---|\n| ==apoio== | ==cerca de 60%== |\n| - duplo apoio inicial | 10% |\n| - ==apoio simples== | ==40%== |\n| - duplo apoio final | 10% |\n| ==balanço== | ==cerca de 40%== |\n\n### Subfases (Perry)\n| Apoio | Balanço |\n|---|---|\n| contato inicial | balanço inicial |\n| resposta à carga | balanço médio |\n| apoio médio | balanço terminal |\n| apoio terminal | |\n| pré-balanço | |\n\n### Corrida\n- Sem duplo apoio; surge fase de voo; apoio < 50%.\n\n### Parâmetros lineares\n| Parâmetro | Definição |\n|---|---|\n| ==passo== | distância entre o ==calcanhar de um pé e o do outro== (no duplo apoio) |\n| passada (ciclo) | distância entre dois contatos do ==mesmo pé== = 2 passos |\n| cadência | passos por minuto |\n| velocidade | passada × cadência |\n| base de apoio | distância lateral entre os pés |\n\n### Pé na marcha\n| Fase | Calcâneo | Rotação |\n|---|---|---|\n| contato inicial | leve inversão | |\n| resposta à carga | ==eversão== (desbloqueia a mediotársica, absorve) | rotação interna da tíbia |\n| apoio terminal/desprendimento | ==inversão== (trava, alavanca rígida) | ==rotação externa== |\n| pré-balanço | | ==rotação externa diminui== |\n\n- Ângulo de progressão do pé: cerca de ==10° de rotação externa==.\n\n> **Na prova:** durante a marcha há ==diminuição da rotação externa no pré-balanço==",
-  "correta": "**Menor rotação externa no pré-balanço.**\n- Resposta oficial.\n- O pé se prepara para o balanço.",
   "incorretas": {
-   "A": "**Exagerado.**\n- Cerca de 10°.",
-   "B": "**Não é o evento.**\n- Balanço sem carga.",
-   "D": "**Invertida.**\n- Inverte no desprendimento."
+   "A": "O ângulo de progressão normal do pé é de cerca de 10° de rotação externa, não 25°.",
+   "B": "No balanço médio o pé está sem carga; a inversão do calcâneo é evento do apoio terminal.",
+   "D": "Está invertida: no desprendimento o calcâneo inverte e trava o pé como alavanca."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Durante a marcha, o pé muda de papel: no começo do apoio precisa ser **flexível** para absorver o impacto e se adaptar ao chão; no fim do apoio precisa ser **rígido** para servir de alavanca e empurrar o corpo para a frente. Isso acontece pela inversão e eversão do calcâneo, ligadas à rotação da tíbia.\n\n**A sequência no apoio**:\n\n**contato inicial**: o calcâneo toca o chão em leve inversão;\n\n**resposta à carga**: o calcâneo **everte** e a tíbia roda internamente; a articulação mediotársica (Chopart) se destrava e o pé fica flexível;\n\n**apoio terminal e desprendimento**: o calcâneo **inverte**, a tíbia roda externamente e a mediotársica trava; o pé vira alavanca rígida;\n\n**pré-balanço**: com o peso passando para o outro membro, a **rotação externa diminui** e o pé se prepara para sair do chão.\n\n**O ângulo de progressão do pé**: na marcha normal, o pé aponta cerca de **10° para fora** em relação à linha de progressão, e não 25°.\n\n**No balanço**: o pé está no ar, sem carga, e não há inversão do calcâneo como evento característico.\n\n**Na prova**: durante a marcha há **diminuição da rotação externa no pré-balanço**.",
+  "correta": "No pré-balanço, com o peso saindo do membro, a rotação externa do apoio terminal diminui e o pé se prepara para o balanço.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0158": {
-  "conceito": "### Bissetriz do calcanhar (Bleck)\n- Linha que divide a ==planta do retropé== ao meio, projetada para o antepé.\n\n| Projeção | Interpretação |\n|---|---|\n| ==entre 2º e 3º dedos== | normal |\n| sobre o 3º dedo | adução leve |\n| ==lateral ao 3º== (3º-4º) | adução moderada |\n| entre 4º e 5º | adução grave |\n\n- No pé torto e no metatarso aduto a bissetriz fica ==lateral ao 3º raio== (antepé aduzido).\n\n### Metatarso aduto\n| Tipo | Flexibilidade | Conduta |\n|---|---|---|\n| flexível | corrige além do neutro | observação |\n| parcialmente flexível | até o neutro | alongamento, gesso |\n| rígido | não corrige | gessos seriados |\n\n### Metatarso aduto × pé torto\n| Aspecto | Metatarso aduto | Pé torto |\n|---|---|---|\n| antepé | ==aduzido== (e supinado) | aduzido, cavo |\n| retropé | ==normal e móvel== | varo e equino fixos |\n| dorsiflexão | normal | limitada |\n| borda lateral | convexa (\"feijão\") | |\n\n> **Na prova:** metatarso aduto = ==retropé com mobilidade preservada==",
-  "correta": "**Retropé com mobilidade preservada.**\n- Só o antepé aduz.\n- Diferencia do pé torto.",
   "incorretas": {
-   "A": "**Pé torto.**\n- Retropé varo.",
-   "C": "**Não é típico.**\n- Arco preservado ou alto.",
-   "D": "**Supinação.**\n- Não pronação."
+   "A": "Retropé varo é achado do pé torto, não do metatarso aduto.",
+   "C": "O arco plantar medial é preservado ou até alto; não está diminuído.",
+   "D": "O antepé aduzido tende à supinação, não à pronação."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **metatarso aduto** é o desvio do **antepé para medial** na articulação tarsometatársica (Lisfranc), com o **retropé normal**. A borda lateral do pé fica convexa, em forma de \"feijão\", e a borda medial, côncava.\n\n**Como diferenciar do pé torto**:\n\n**antepé**: aduzido, às vezes com leve supinação, nos dois;\n\n**retropé**: **normal e móvel** no metatarso aduto; **varo e equino fixos** no pé torto;\n\n**dorsiflexão**: normal no metatarso aduto; limitada no pé torto;\n\n**arco plantar**: preservado ou alto no metatarso aduto; cavo no pé torto.\n\n**A bissetriz do calcanhar (Bleck)**: a linha que divide a planta do retropé ao meio passa normalmente **entre o 2º e o 3º dedos**. No metatarso aduto ela se desloca para **lateral**: sobre o 3º dedo é leve; entre o 3º e o 4º, moderado; entre o 4º e o 5º, grave.\n\n**A conduta pela flexibilidade**: o flexível (corrige além do neutro) só se observa; o parcialmente flexível recebe alongamentos; o rígido recebe gessos seriados.\n\n**Na prova**: metatarso aduto = antepé aduzido com **retropé de mobilidade preservada**.",
+  "correta": "No metatarso aduto, o desvio está só no antepé; o retropé é normal e móvel, o que o separa do pé torto.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0160": {
-  "conceito": "### Especificidade das fraturas no abuso (Kleinman)\n| Alta | Moderada | Baixa (comuns) |\n|---|---|---|\n| lesão metafisária clássica | múltiplas, bilaterais | clavícula |\n| costelas posteriores | em estágios diferentes de consolidação | diáfises de ossos longos |\n| ==escápula== | epifisárias (descolamentos) | crânio linear |\n| processos espinhosos | corpo vertebral | |\n| esterno | dedos | |\n| | crânio complexa | |\n\n### Conduta\n- Inventário esquelético em < 2 anos (repetir em 2 semanas).\n- Fundo de olho, TC/RM de crânio, exames de coagulação e metabolismo ósseo (OI, raquitismo).\n- ==Notificação obrigatória==.\n\n> **Na prova:** fratura de alta especificidade (Kleinman) = ==escápula== (e metafisária, costelas posteriores, processos espinhosos, esterno).",
-  "correta": "**Escápula, esterno ou metafisárias.**\n- Grupo de alta especificidade de Kleinman.\n- Também costelas posteriores e processos espinhosos.",
   "incorretas": {
-   "B": "**Diafisárias.**\n- Baixa especificidade.",
-   "C": "**Clavícula e corpo vertebral.**\n- Baixa e moderada.",
-   "D": "**Todas de baixa ou moderada.**\n- Nenhuma alta."
+   "B": "Escápula e esterno estão certos, mas as fraturas diafisárias têm baixa especificidade.",
+   "C": "A metafisária está certa, mas clavícula tem baixa especificidade e corpo vertebral, moderada.",
+   "D": "Clavícula e diáfise são de baixa especificidade, e corpo vertebral de moderada; nenhuma é de alta."
   },
+  "conceito": "Nos **maus-tratos**, algumas fraturas quase só acontecem por violência, porque exigem forças que quedas e acidentes do dia a dia não produzem. **Kleinman** as dividiu pela **especificidade** para abuso:\n\n**alta especificidade**: **lesão metafisária clássica** (fratura em \"alça de balde\" ou \"canto\", por tração e torção do membro sacudido), **costelas posteriores** (o tórax apertado entre as mãos), **escápula**, **processos espinhosos** e **esterno**;\n\n**moderada especificidade**: fraturas **múltiplas** e bilaterais, em **diferentes fases** de consolidação, descolamentos epifisários, fraturas de **corpo vertebral**, de dedos e de crânio complexas;\n\n**baixa especificidade** (comuns também em acidentes): **clavícula**, **diáfises** de ossos longos e fratura linear do crânio.\n\n**A conduta**: inventário esquelético em menores de 2 anos (repetido em 2 semanas), fundo de olho, tomografia ou ressonância de crânio, exames de coagulação e de metabolismo ósseo (para afastar osteogênese imperfeita e raquitismo) e **notificação obrigatória**.\n\n**Atenção**: a fratura diafisária é a mais **frequente** no abuso, mas tem **baixa especificidade**.\n\n**Na prova**: alta especificidade de Kleinman = **escápula, esterno, metafisárias**, costelas posteriores e processos espinhosos.",
+  "correta": "Escápula, esterno e lesão metafisária clássica estão no grupo de alta especificidade de Kleinman.",
   "referencias": [
    "https://publications.aap.org/pediatrics/article/155/2/e2024070074/200638/Evaluating-Young-Children-With-Fractures-for-Child"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0161": {
-  "conceito": "### Menisco discoide\n| Aspecto | Dado |\n|---|---|\n| menisco | ==lateral== (quase sempre) |\n| prevalência | 0,4 a 17% (mais em asiáticos) |\n| bilateral | até 20% |\n| clínica | ==estalido==, bloqueio, ==lesões sem trauma== |\n\n### Watanabe\n| Tipo | Descrição |\n|---|---|\n| I completo | cobre todo o planalto, fixações normais |\n| II incompleto | cobre parte |\n| III ==Wrisberg== | ==sem fixação tibial posterior (coronário)==, só o ligamento de Wrisberg: ==hipermóvel== |\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| assintomático | observar |\n| sintomático estável | ==saucerização== (meniscectomia parcial) |\n| Wrisberg / instável | saucerização + ==sutura periférica==; clássico: meniscectomia total |\n\n> **Na prova:** tipo Wrisberg ==não possui o ligamento coronário== (fixação tibial posterior) (veja o alerta).",
-  "correta": "**Wrisberg sem ligamento coronário.**\n- Sem fixação tibial posterior: hipermóvel.\n- Estalido no joelho.",
   "incorretas": {
-   "A": "**Lateral.**\n- Medial é raro.",
-   "B": "**Mais que 5%.**\n- Até 20% bilateral.",
-   "C": "**Descreve o tipo I.**\n- O III é o Wrisberg."
+   "A": "O menisco discoide é quase sempre o lateral; o medial é raro.",
+   "B": "A bilateralidade chega a cerca de 20%, bem mais que 5%.",
+   "C": "Cobrir todo o planalto com fixação periférica íntegra descreve o tipo I, não o III."
   },
+  "conceito": "O **menisco discoide** é um menisco largo, em forma de disco, que cobre mais do planalto que o normal. É quase sempre o **lateral**, com prevalência de 0,4 a 17% (mais em asiáticos) e **bilateral em até 20%**. Espesso e pouco vascularizado, lesa com trauma mínimo e causa **estalido** e bloqueio.\n\n**A classificação de Watanabe**:\n\n**tipo I (completo)**: cobre **todo o planalto** e tem fixações periféricas **normais**;\n\n**tipo II (incompleto)**: cobre parte do planalto, também com fixações normais;\n\n**tipo III (Wrisberg)**: tem formato quase normal, mas **não tem o ligamento coronário posterior** (meniscotibial), ou seja, falta a fixação tibial posterior. Preso atrás só pelo **ligamento de Wrisberg** (meniscofemoral posterior), fica **hipermóvel** e dá o \"joelho que estala\".\n\n**O tratamento**: assintomático, observar; sintomático e estável, **saucerização**; tipo Wrisberg, saucerização com **sutura periférica** para estabilizar, ou a clássica meniscectomia total quando não dá para preservar.\n\n**Na prova**: o tipo Wrisberg **não possui o ligamento coronário** (fixação tibial posterior).",
+  "correta": "O tipo Wrisberg não tem a fixação tibial posterior pelo ligamento coronário; fica preso só pelo ligamento de Wrisberg e é hipermóvel.",
   "alerta": "A nomenclatura anatômica varia entre autores: alguns descrevem ausência do ligamento meniscotibial posterior, outros utilizam o termo ligamento coronário posterior. O conceito essencial é deficiência da fixação tibial posterior com hipermobilidade.",
   "referencias": [
    "https://pubmed.ncbi.nlm.nih.gov/29059110/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0162": {
-  "conceito": "### Bissetriz do calcanhar (Bleck)\n- Linha que divide a ==planta do retropé== ao meio, projetada para o antepé.\n\n| Projeção | Interpretação |\n|---|---|\n| ==entre 2º e 3º dedos== | normal |\n| sobre o 3º dedo | adução leve |\n| ==lateral ao 3º== (3º-4º) | adução moderada |\n| entre 4º e 5º | adução grave |\n\n- No pé torto e no metatarso aduto a bissetriz fica ==lateral ao 3º raio== (antepé aduzido).\n\n### Metatarso aduto\n| Tipo | Flexibilidade | Conduta |\n|---|---|---|\n| flexível | corrige além do neutro | observação |\n| parcialmente flexível | até o neutro | alongamento, gesso |\n| rígido | não corrige | gessos seriados |\n\n### Metatarso aduto × pé torto\n| Aspecto | Metatarso aduto | Pé torto |\n|---|---|---|\n| antepé | ==aduzido== (e supinado) | aduzido, cavo |\n| retropé | ==normal e móvel== | varo e equino fixos |\n| dorsiflexão | normal | limitada |\n| borda lateral | convexa (\"feijão\") | |\n\n### Epidemiologia\n- Deformidade do pé ==mais comum== do recém-nascido (1 a 2 por 1.000).\n- Associação com ==DDQ== (examinar quadris) e torcicolo.\n- ==Resolução espontânea== na maioria (> 85 a 90%) até 3 a 4 anos.\n\n> **Na prova:** metatarso aduto = ==anomalia muito comum do pé==",
-  "correta": "**Anomalia muito comum.**\n- A deformidade do pé mais frequente ao nascer.\n- Resolve na grande maioria.",
   "incorretas": {
-   "B": "**Responde bem.**\n- Alongamento e gesso quando rígido.",
-   "C": "**Associa-se à DDQ.**\n- Não sempre isolado.",
-   "D": "**Residual maior.**\n- Cerca de 5 a 10% mantêm algo."
+   "B": "Responde bem: a maioria resolve sozinha, e os rígidos respondem a gessos seriados.",
+   "C": "Não ocorre sempre isolado; associa-se à displasia do quadril e ao torcicolo.",
+   "D": "A deformidade residual é maior que 1%, em torno de 5 a 10%, em geral sem prejuízo."
   },
+  "conceito": "O **metatarso aduto** é a **deformidade do pé mais comum** do recém-nascido, com cerca de 1 a 2 por 1.000 nascidos. O antepé desvia para medial na articulação tarsometatársica e o retropé é normal. Atribui-se à posição apertada no útero.\n\n**As associações**: por ser deformidade de compressão intrauterina, associa-se à **displasia do quadril** e ao torcicolo; por isso, sempre examinar os quadris. Não é sempre isolado.\n\n**A evolução e o tratamento**:\n\n**flexível** (corrige além do neutro): a maioria; **resolve sozinho** em mais de 85 a 90% até 3 a 4 anos; só observar;\n\n**parcialmente flexível** (corrige até o neutro): alongamentos orientados aos pais;\n\n**rígido** (não chega ao neutro): **gessos seriados**, que respondem bem, sobretudo antes de 1 ano;\n\n**cirurgia**: rara, em deformidade rígida residual depois dos 4 a 6 anos (osteotomias da cunha medial e do cuboide).\n\n**A deformidade residual**: uma parcela pequena, de cerca de 5 a 10%, mantém algum grau de adução, em geral sem prejuízo funcional.\n\n**Na prova**: metatarso aduto é uma **anomalia muito comum** do pé e responde bem ao tratamento conservador.",
+  "correta": "O metatarso aduto é a deformidade do pé mais frequente ao nascer.",
   "referencias": [
    "https://posna.org/physician-education/study-guide/metatarsus-adductus"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0163": {
@@ -2253,14 +2253,14 @@
   "conferido": false
  },
  "pediatria-0165": {
-  "conceito": "### Deficiência femoral focal proximal (DFFP)\n- Espectro das deficiências congênitas do fêmur; ==unilateral== em geral.\n- Coxa curta, ==quadril em flexão, abdução e rotação externa==.\n- Associações: ==hemimelia fibular== (cerca de 50%), deficiência do LCA, pé com raios ausentes.\n\n### Aitken\n| Tipo | Cabeça femoral | Acetábulo |\n|---|---|---|\n| A | presente | normal |\n| B | presente, sem conexão ao colo | adequado |\n| C | ausente | displásico |\n| D | ausente | ausente |\n\n### Tratamento\n| Situação | Opção |\n|---|---|\n| discrepância prevista < 20 cm, quadril estável | alongamento, epifisiodese |\n| grave | ==Van Nes== (rotacionplastia), artrodese do joelho + prótese, Syme |\n\n### Aitken em detalhe\n| Tipo | Cabeça | Acetábulo | Colo |\n|---|---|---|---|\n| A | presente | normal | pseudartrose que ==consolida== (coxa vara) |\n| ==B== | presente | adequado | ==pseudartrose do colo persistente==, sem conexão |\n| C | ausente | displásico | segmento curto com ossículo |\n| D | ausente | ausente | fêmur muito curto |\n\n> **Na prova:** pseudartrose do colo na DFFP = ==Aitken B==",
-  "correta": "**Tipo B.**\n- Cabeça presente sem conexão óssea com o fêmur.\n- Pseudartrose persistente do colo.",
   "incorretas": {
-   "A": "**Consolida.**\n- Vira coxa vara.",
-   "C": "**Cabeça ausente.**\n- Acetábulo displásico.",
-   "D": "**Grave.**\n- Sem cabeça nem acetábulo."
+   "A": "No tipo A a falha do colo ossifica e evolui para coxa vara, sem pseudartrose persistente.",
+   "C": "No tipo C a cabeça está ausente e o acetábulo é displásico.",
+   "D": "No tipo D não há cabeça nem acetábulo."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **deficiência femoral focal proximal** (DFFP) é parte do espectro das deficiências congênitas do fêmur: coxa curta, quadril em flexão, abdução e rotação externa, e associação frequente com hemimelia fibular.\n\n**A classificação de Aitken** olha a cabeça, o acetábulo e o colo:\n\n**tipo A**: cabeça **presente**, acetábulo **normal**; o colo tem uma falha cartilaginosa que **acaba ossificando**, e o resultado é **coxa vara**;\n\n**tipo B**: cabeça **presente**, acetábulo **adequado**, mas **sem conexão óssea** entre a cabeça e o fêmur: a **pseudartrose do colo persiste**;\n\n**tipo C**: cabeça **ausente** ou representada por um ossículo, acetábulo **displásico**, fêmur curto;\n\n**tipo D**: cabeça e acetábulo **ausentes**, fêmur muito curto.\n\n**Por que importa**: nos tipos A e B há quadril para reconstruir; nos tipos C e D, não. O tratamento vai do alongamento nos casos leves à **rotacionplastia de Van Nes**, à artrodese do joelho com prótese ou à amputação de Syme nos graves.\n\n**Na prova**: pseudartrose persistente do colo na DFFP = **Aitken B**.",
+  "correta": "No tipo B de Aitken a cabeça está presente, mas não se liga ao fêmur: a pseudartrose do colo persiste.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0166": {
@@ -2275,14 +2275,14 @@
   "conferido": false
  },
  "pediatria-0167": {
-  "conceito": "### Epifisiólise: fatores\n| Tipo | Fator |\n|---|---|\n| mecânico | ==obesidade==, ==retroversão relativa (menos anteversão)==, ==coxa vara (menor ângulo cervicodiafisário)==, fise mais oblíqua, estirão |\n| endócrino | hipotireoidismo, deficiência de GH (uso de GH), hipogonadismo, osteodistrofia renal, radioterapia |\n\n- Pedir TSH em ==< 10 anos==, baixa estatura, ou bilateral.\n\n### Classificações\n| Critério | Tipos |\n|---|---|\n| Loder (estabilidade) | estável (anda) × ==instável== (não anda; necrose em até 50%) |\n| Southwick (ângulo) | leve < 30°, moderado 30 a 50°, grave > 50° |\n| tempo | aguda < 3 semanas, crônica, crônica agudizada |\n\n### Tratamento\n- ==Fixação in situ== com um parafuso canulado central.\n- Contralateral profilática: < 10 anos, endocrinopatia.\n\n### Técnica do parafuso\n- ==Um parafuso canulado== central, perpendicular à fise, no centro da epífise em AP e perfil.\n- ==Evitar o quadrante anterossuperior== (e o posterossuperior): artérias epifisárias laterais (circunflexa medial).\n- Ponta a 5 mm do osso subcondral; nunca penetrar a articulação.\n- Ponto de entrada ==anterior== no colo (a epífise escorregou para trás).\n\n### Clínica da epifisiólise\n- Adolescente obeso, dor no quadril, ==coxa ou joelho== (dor referida engana).\n- ==Claudicação==, ==Trendelenburg==, ==limitação da rotação interna, abdução e flexão==.\n- ==Marcha com rotação EXTERNA== do membro.\n- ==Drehmann==: rotação externa obrigatória ao fletir o quadril.\n\n### Imagem\n| Exame | Uso |\n|---|---|\n| RX AP e perfil (rã) | diagnóstico, Klein, Southwick |\n| RM | ==pré-deslizamento==, edema fisário, lado contralateral |\n| ==TC== | ==avaliar fechamento da fise==, posição do parafuso, cam residual |\n\n### Sinais radiográficos precoces\n| Sinal | Achado |\n|---|---|\n| ==Scham== | perda da ==dupla densidade== normal no ==colo inferomedial== (sobreposição da epífise escorregada) |\n| Steel (metafisário branco) | aumento de densidade na metáfise (sobreposição) |\n| Klein (Trethowan) | linha na borda superior do colo não corta a epífise |\n| alargamento fisário | pré-deslizamento |\n\n> **Na prova:** sinal de Scham = ==colo inferomedial==",
-  "correta": "**Colo inferomedial.**\n- Perda da dupla densidade no AP.\n- Sinal precoce.",
   "incorretas": {
-   "B": "**Lado errado.**\n- Klein avalia a borda superior.",
-   "C": "**Não é na cabeça.**\n- Colo.",
-   "D": "**Não é na cabeça.**\n- Colo inferomedial."
+   "B": "A borda superolateral do colo é onde se traça a linha de Klein, não o sinal de Scham.",
+   "C": "O sinal de Scham fica no colo, não na cabeça.",
+   "D": "O sinal de Scham é no colo inferomedial, não na cabeça superolateral."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **epifisiólise proximal do fêmur**, a cabeça escorrega para **trás e para baixo** em relação ao colo. No início, o desvio é pequeno, e alguns sinais radiográficos ajudam a não perder o diagnóstico:\n\n**sinal de Scham**: no AP normal, a parte **inferomedial do colo** aparece com uma **dupla densidade**, porque a borda posterior do acetábulo se sobrepõe ao colo. Quando a epífise escorrega, essa imagem triangular **some**;\n\n**sinal de Steel** (crescente metafisário): **aumento de densidade** na metáfise proximal, pela sobreposição da epífise escorregada para trás;\n\n**linha de Klein** (Trethowan): traçada na borda **superior** do colo no AP, deveria cortar a epífise; se não corta, há escorregamento;\n\n**alargamento e irregularidade da fise**: sugerem o pré-deslizamento.\n\n**O perfil (rã)** é a incidência mais sensível para ver o escorregamento posterior. A ressonância mostra o pré-deslizamento, e a tomografia, o fechamento da fise.\n\n**Na prova**: o sinal de Scham fica no **colo inferomedial**.",
+  "correta": "O sinal de Scham é a perda da dupla densidade normal na região inferomedial do colo, no AP.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0168": {
@@ -2297,35 +2297,35 @@
   "conferido": false
  },
  "pediatria-0169": {
-  "conceito": "### Luxação congênita do joelho (genu recurvatum congênito)\n- Joelho em ==hiperextensão== ao nascer; pé pode tocar o rosto.\n- ==Quadríceps fibrótico e encurtado==, bolsa suprapatelar obliterada, isquiotibiais subluxados anteriormente.\n- Associações: ==DDQ== (até 50%), pé torto, Larsen, artrogripose, mielomeningocele.\n\n### Graus\n| Grau | Achado |\n|---|---|\n| 1 | hiperextensão simples (recurvato) |\n| 2 | subluxação anterior da tíbia |\n| 3 | luxação completa |\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| precoce, redutível | alongamento e gessos seriados em flexão progressiva, Pavlik |\n| irredutível ou falha | ==alongamento do quadríceps== (V-Y), capsulotomia anterior |\n\n- Com DDQ: tratar o ==joelho primeiro== (Pavlik exige joelho fletido).\n\n> **Na prova:** luxação congênita do joelho = ==hiperextensão com quadríceps fibrótico==.",
-  "correta": "**Manipulação e alongamentos.**\n- Gessos seriados em flexão progressiva.\n- Cirurgia se irredutível ou falha.",
   "incorretas": {
-   "A": "**Não se espera.**\n- O quadríceps fibrosa mais.",
-   "B": "**Não é o padrão.**\n- Tração cutânea não flexiona.",
-   "D": "**Após falha.**\n- Não inicial."
+   "A": "Esperar deixa o quadríceps fibrosar e encurtar mais; o tratamento começa logo.",
+   "B": "A tração cutânea não flexiona o joelho e não é o tratamento padrão.",
+   "D": "O alongamento cirúrgico do quadríceps fica para o joelho irredutível ou após falha do conservador."
   },
+  "conceito": "A **luxação congênita do joelho** é o joelho em **hiperextensão** ao nascer, a ponto de o pé quase tocar o rosto. O **quadríceps é fibrótico e encurtado**, a bolsa suprapatelar é obliterada e os isquiotibiais ficam subluxados para a frente.\n\n**Os graus**:\n\n**1**: hiperextensão simples (recurvato);\n\n**2**: subluxação anterior da tíbia;\n\n**3**: luxação completa.\n\n**As associações**: **displasia do quadril** em até metade dos casos, pé torto, síndrome de Larsen, artrogripose e mielomeningocele.\n\n**O tratamento inicial, no recém-nascido**: **manipulação e alongamentos**, seguidos de **gessos seriados** em flexão progressiva, ou suspensório de Pavlik nos casos leves. Quanto antes começar, melhor responde, porque o quadríceps encurta mais com o tempo.\n\n**Se não reduzir** ou o tratamento falhar: **alongamento do quadríceps** (em V-Y) com capsulotomia anterior.\n\n**Com displasia do quadril associada**: tratar o **joelho primeiro**, porque o Pavlik exige o joelho fletido.\n\n**Na prova**: o tratamento inicial no recém-nascido é **manipulação e alongamentos**.",
+  "correta": "No recém-nascido, a luxação congênita do joelho começa com manipulação e alongamentos, seguidos de gessos em flexão progressiva.",
   "referencias": [
    "https://posna.org/physician-education/study-guide/congenital-knee-dislocation",
    "https://www.jposna.org/~jposna/index.php/jposna/article/view/272",
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 18"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0170": {
-  "conceito": "### Ciclo da marcha (100%)\n| Fase | % |\n|---|---|\n| ==apoio== | ==cerca de 60%== |\n| - duplo apoio inicial | 10% |\n| - ==apoio simples== | ==40%== |\n| - duplo apoio final | 10% |\n| ==balanço== | ==cerca de 40%== |\n\n### Subfases (Perry)\n| Apoio | Balanço |\n|---|---|\n| contato inicial | balanço inicial |\n| resposta à carga | balanço médio |\n| apoio médio | balanço terminal |\n| apoio terminal | |\n| pré-balanço | |\n\n### Corrida\n- Sem duplo apoio; surge fase de voo; apoio < 50%.\n\n### Parâmetros lineares\n| Parâmetro | Definição |\n|---|---|\n| ==passo== | distância entre o ==calcanhar de um pé e o do outro== (no duplo apoio) |\n| passada (ciclo) | distância entre dois contatos do ==mesmo pé== = 2 passos |\n| cadência | passos por minuto |\n| velocidade | passada × cadência |\n| base de apoio | distância lateral entre os pés |\n\n### Nomenclaturas do balanço\n| Clássica | Rancho Los Amigos | Evento |\n|---|---|---|\n| ==aceleração== | ==balanço inicial== | ==flexão máxima do joelho (~60°)==, pé sai do chão |\n| oscilação intermediária | balanço médio | tíbia vertical |\n| desaceleração | balanço terminal | joelho estende, isquiotibiais freiam |\n\n> **Na prova:** flexão máxima do joelho no balanço = ==aceleração (balanço inicial)== (veja o alerta).",
-  "correta": "**Aceleração.**\n- Balanço inicial na nomenclatura atual.\n- Joelho a cerca de 60° para o pé passar.",
   "incorretas": {
-   "B": "**Balanço terminal.**\n- Joelho estende.",
-   "C": "**Balanço médio.**\n- Flexão já diminuindo.",
-   "D": "**Fase de apoio.**\n- Não é balanço."
+   "B": "Na desaceleração o joelho está estendendo, freado pelos isquiotibiais.",
+   "C": "Na oscilação intermediária a flexão do joelho já está diminuindo.",
+   "D": "Acomodação intermediária é termo da fase de apoio, não do balanço."
   },
+  "conceito": "A **fase de balanço** ocupa cerca de 40% do ciclo da marcha. Ela tem duas nomenclaturas, e a questão usa a clássica:\n\n**aceleração** (clássica), ou **balanço inicial** (Rancho Los Amigos): o pé sai do chão; o quadril flete e o **joelho atinge a flexão máxima, de cerca de 60°**, para encurtar o membro e o pé passar sem arrastar;\n\n**oscilação intermediária**, ou **balanço médio**: o membro passa ao lado do outro; a tíbia fica vertical e o joelho já começa a estender;\n\n**desaceleração**, ou **balanço terminal**: o joelho **estende** e os **isquiotibiais freiam** a perna, preparando o contato do calcanhar.\n\n**Na fase de apoio**, a nomenclatura clássica usa termos como acomodação intermediária (apoio médio); não fazem parte do balanço.\n\n**Por que a flexão do joelho importa**: se ela falha (como na marcha com joelho rígido da paralisia cerebral, por reto femoral ativo no balanço), o pé arrasta, e o paciente compensa com circundução ou elevação da pelve.\n\n**Na prova**: flexão máxima do joelho no balanço = **aceleração** (balanço inicial).",
+  "correta": "Na aceleração, ou balanço inicial, o joelho atinge a flexão máxima, de cerca de 60°, para o pé sair do chão.",
   "alerta": "A questão utiliza a terminologia antiga aceleração/desaceleração. Na nomenclatura atual de Rancho Los Amigos, o correspondente é balanço inicial, médio e terminal.",
   "referencias": [
    "https://posna.org/physician-education/study-guide/gait",
    "Barros Filho, Lech, Exame físico em ortopedia, 3ª edição, Cap. 5"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0171": {
@@ -2340,20 +2340,20 @@
   "conferido": false
  },
  "pediatria-0172": {
-  "conceito": "### Radiografias na displasia do quadril\n| Incidência | Avalia |\n|---|---|\n| AP da bacia | CE lateral (Wiberg), índice acetabular, Tönnis, Shenton, extrusão |\n| ==falso perfil (Lequesne)== | ==cobertura anterior== (ângulo CE anterior: normal > 20 a 25°) |\n| Dunn 45° | colo, came |\n| abdução-RI (von Rosen) | congruência na redução, planejar osteotomia |\n\n### Ângulos\n| Ângulo | Normal | Displasia |\n|---|---|---|\n| CE lateral | > 25° | < 20° |\n| CE anterior (falso perfil) | > 20° | < 20° |\n| Tönnis (inclinação do teto) | 0 a 10° | > 10° |\n\n> **Na prova:** displasia do adulto = ==CE < 20°== e ==Tönnis > 10°== (veja o alerta).",
-  "correta": "**CE < 20° e Tönnis > 10°.**\n- Pouca cobertura e teto inclinado.\n- 20 a 25° é limítrofe.",
   "incorretas": {
-   "A": "**Tönnis errado.**\n- Normal é 0 a 10°.",
-   "C": "**CE normal.**\n- Não é displasia.",
-   "D": "**CE normal.**\n- Tönnis alto isolado."
+   "A": "O centro-borda está certo, mas o Tönnis abaixo de 10° é normal.",
+   "C": "Centro-borda acima de 20° e Tönnis abaixo de 10° descrevem um quadril sem displasia franca.",
+   "D": "O Tönnis está certo, mas o centro-borda acima de 20° não caracteriza displasia franca."
   },
+  "conceito": "Na **displasia do quadril do adulto jovem**, o acetábulo é **raso e inclinado**. Na radiografia AP da bacia, dois ângulos resumem isso:\n\n**ângulo centro-borda lateral de Wiberg**: mede quanto a borda lateral do acetábulo cobre a cabeça. É normal **acima de 25°**; **abaixo de 20°** é displasia; entre 20 e 25° é limítrofe e exige avaliação mais ampla;\n\n**ângulo de Tönnis** (do teto acetabular): mede a inclinação da parte que sustenta carga (sourcil). É normal entre **0 e 10°**; **acima de 10°** o teto está inclinado demais, e a cabeça tende a escorregar para fora.\n\n**Outros sinais no AP**: quebra da linha de Shenton, extrusão da cabeça e lateralização do centro do quadril.\n\n**As outras incidências**: o **falso perfil de Lequesne** mostra a cobertura anterior (ângulo centro-borda anterior); a incidência em abdução e rotação interna mostra se a articulação fica congruente, para planejar a **osteotomia periacetabular**.\n\n**Na prova**: displasia do adulto = **centro-borda menor que 20°** e **Tönnis maior que 10°**.",
+  "correta": "Na displasia, a cobertura lateral é pequena (centro-borda abaixo de 20°) e o teto é inclinado (Tönnis acima de 10°).",
   "alerta": "Os pontos de corte para displasia limítrofe variam entre estudos. LCEA menor que 20 graus é amplamente aceito como displasia franca; valores de 20 a 25 graus exigem avaliação multidimensional e não devem ser interpretados isoladamente.",
   "referencias": [
    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7083976/",
    "https://pmc.ncbi.nlm.nih.gov/articles/PMC9983115/",
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 6"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0173": {
