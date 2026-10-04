@@ -641,7 +641,7 @@ def principal() -> int:
         "--gabarito-formato", choices=("auto", "grade", "lista"), default="auto"
     )
     analisador.add_argument("--prova", default=None)
-    analisador.add_argument("--area", choices=("cirurgia-mao",), default=None, help="cirurgia-mao nas provas de cirurgia da mão")
+    analisador.add_argument("--area", choices=("cirurgia-mao", "r4-enare", "r4-coluna"), default=None, help="categoria fora da ortopedia base")
     analisador.add_argument("--ano", type=int, default=None)
     analisador.add_argument("--colunas", type=int, default=1, choices=(1, 2))
     analisador.add_argument(

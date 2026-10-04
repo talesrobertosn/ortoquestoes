@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react'
 import { chamarRpc, chamarRpcPublica, codigoErro } from '../servicos/supabase'
 import { usarPremium } from '../conta/premium'
 import { usarIndice } from '../dados/usarIndice'
-import { FILTROS_VAZIOS } from '../dados/tipos'
+import { AREAS_TREINO, FILTROS_VAZIOS } from '../dados/tipos'
 import { nomeEdicao, usarSessao } from '../estado/sessao'
 import { prontidaoDoTema, type EdicaoNacional, type Prontidao, type ResultadoNacional } from '../dados/simuladoNacional'
 import { entregarSessaoNacional } from '../dados/entregaNacional'
@@ -75,7 +75,7 @@ export function SimuladoNacional({ consulta }: { consulta: URLSearchParams }) {
       const inicio = await chamarRpc<{ ids: string[]; iniciado_em: string; duracao_min: number }>('iniciar_simulado_nacional', { p_edicao: edicao.edicao })
       // Retomar no mesmo aparelho mantém as respostas já marcadas.
       if (!(sessao?.nacional === edicao.edicao && !sessao.concluidaEm)) {
-        iniciar({ ...FILTROS_VAZIOS, foco: 'tudo', embaralhar: false }, inicio.ids, { simulado: true, limiteSegundos: inicio.duracao_min * 60, nacional: edicao.edicao, criadaEm: Date.parse(inicio.iniciado_em) })
+        iniciar({ ...FILTROS_VAZIOS, areas: AREAS_TREINO, embaralhar: false }, inicio.ids, { simulado: true, limiteSegundos: inicio.duracao_min * 60, nacional: edicao.edicao, criadaEm: Date.parse(inicio.iniciado_em) })
       }
       navegar('/sessao')
     } catch (falha) {

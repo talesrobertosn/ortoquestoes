@@ -9602,7 +9602,8 @@
         "arquivo": "enare-r4-ortopedia-2024.pdf",
         "pagina": null,
         "numeroOriginal": 31
-      }
+      },
+      "area": "r4-enare"
     },
     {
       "id": "tumores-0316",
@@ -9649,7 +9650,8 @@
         "arquivo": "enare-r4-ortopedia-2024.pdf",
         "pagina": null,
         "numeroOriginal": 34
-      }
+      },
+      "area": "r4-enare"
     },
     {
       "id": "tumores-0317",
@@ -9696,7 +9698,8 @@
         "arquivo": "enare-r4-ortopedia-2024.pdf",
         "pagina": null,
         "numeroOriginal": 78
-      }
+      },
+      "area": "r4-enare"
     },
     {
       "id": "tumores-0318",
@@ -11499,6 +11502,372 @@
         "arquivo": "IAUPE 2025",
         "pagina": 5,
         "numeroOriginal": 21
+      }
+    },
+    {
+      "id": "tumores-0361",
+      "area": "r4-enare",
+      "tema": "Tumores ósseos e de partes moles",
+      "subtemas": [
+        "Cisto ósseo simples"
+      ],
+      "prova": "ENARE R4 Ortopedia",
+      "ano": 2025,
+      "dificuldade": null,
+      "enunciado": "Considere um paciente adulto jovem com lesão óssea lítica e insuflante da região meta epifisária proximal do úmero, sem ruptura da cortical, translúcido sem trabeculados, com idade e exames radiográfico e tomográfico compatíveis com cisto ósseo unicameral. O método de tratamento proposto por Scaglietti para um caso como esse consiste na:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "curetagem simples e cimentação com metilmetacrilato;"
+        },
+        {
+          "letra": "B",
+          "texto": "ressecção em bloco e enxertia;"
+        },
+        {
+          "letra": "C",
+          "texto": "punção e injeção intralesional com metilprednisolona;"
+        },
+        {
+          "letra": "D",
+          "texto": "curetagem seguida de enxertia óssea;"
+        },
+        {
+          "letra": "E",
+          "texto": "radioterapia guiada por tomografia computadorizada."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "ENARE 2024/2025 - Ortopedia e Traumatologia R4",
+        "pagina": 6,
+        "numeroOriginal": 28
+      }
+    },
+    {
+      "id": "tumores-0362",
+      "area": "r4-enare",
+      "tema": "Tumores ósseos e de partes moles",
+      "subtemas": [
+        "Metástases ósseas"
+      ],
+      "prova": "ENARE R4 Ortopedia",
+      "ano": 2025,
+      "dificuldade": null,
+      "enunciado": "Paciente do sexo feminino, 58 anos de idade, em tratamento devido a um tumor maligno de tireoide, apresenta lesão lítica na extremidade distal de fêmur, acometendo 50% do diâmetro do osso e dor leve. O escore dessa lesão, segundo os critérios de Mirels, para decidir sobre a necessidade de estabilização profilática dessa lesão é:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "6;"
+        },
+        {
+          "letra": "B",
+          "texto": "7;"
+        },
+        {
+          "letra": "C",
+          "texto": "8;"
+        },
+        {
+          "letra": "D",
+          "texto": "9;"
+        },
+        {
+          "letra": "E",
+          "texto": "10."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "ENARE 2024/2025 - Ortopedia e Traumatologia R4",
+        "pagina": 11,
+        "numeroOriginal": 70
+      }
+    },
+    {
+      "id": "tumores-0363",
+      "area": "r4-coluna",
+      "tema": "Tumores ósseos e de partes moles",
+      "subtemas": [
+        "Osteossarcoma"
+      ],
+      "prova": "R4 Coluna SES-DF",
+      "ano": 2024,
+      "dificuldade": null,
+      "enunciado": "Dentre as complicações não-infecciosas que podem ocorre em casos como este, não está inclusa a(o):",
+      "imagens": [
+        {
+          "arquivo": "tumores/tumores-0363-1.png",
+          "legenda": null,
+          "largura": 233,
+          "altura": 636
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Fratura patológica"
+        },
+        {
+          "letra": "B",
+          "texto": "Lesão fisária"
+        },
+        {
+          "letra": "C",
+          "texto": "O câncer devido a fistulização crônica"
+        },
+        {
+          "letra": "D",
+          "texto": "O Osteossarcoma PROVA APLICADA"
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SES-DF 2024 - Ortopedia e Traumatologia R4 e R5, Cirurgia da Coluna",
+        "pagina": 10,
+        "numeroOriginal": 65
+      }
+    },
+    {
+      "id": "tumores-0364",
+      "area": "r4-coluna",
+      "tema": "Tumores ósseos e de partes moles",
+      "subtemas": [
+        "Metástases ósseas"
+      ],
+      "prova": "R4 Coluna SES-DF",
+      "ano": 2022,
+      "dificuldade": null,
+      "enunciado": "Um paciente de 62 anos de idade é portador de carcinoma metastático, de origem desconhecida, na extremidade proximal do fêmur direito, com aspecto radiográfico lítico e acometimento maior que 2/3. Apresenta ainda dor de forte intensidade, com limitação de suas atividades diárias. Com base nesse caso clínico e nos conhecimentos médicos correlatos, julgue os itens a seguir.\n\nJulgue o item: Segundo o sistema de pontuação para avaliação de fraturas patológicas de Mirels, a pontuação desse paciente é 9, estando indicada a fixação profilática.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SES-DF 2022 - Ortopedia e Traumatologia em Cirurgia da Coluna R4",
+        "pagina": 3,
+        "numeroOriginal": 37
+      }
+    },
+    {
+      "id": "tumores-0365",
+      "area": "r4-coluna",
+      "tema": "Tumores ósseos e de partes moles",
+      "subtemas": [
+        "Metástases ósseas"
+      ],
+      "prova": "R4 Coluna SES-DF",
+      "ano": 2022,
+      "dificuldade": null,
+      "enunciado": "Um paciente de 62 anos de idade é portador de carcinoma metastático, de origem desconhecida, na extremidade proximal do fêmur direito, com aspecto radiográfico lítico e acometimento maior que 2/3. Apresenta ainda dor de forte intensidade, com limitação de suas atividades diárias. Com base nesse caso clínico e nos conhecimentos médicos correlatos, julgue os itens a seguir.\n\nJulgue o item: A mama e a próstata são locais incomuns para doenças primárias nesse grupo de pacientes.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SES-DF 2022 - Ortopedia e Traumatologia em Cirurgia da Coluna R4",
+        "pagina": 3,
+        "numeroOriginal": 38
+      }
+    },
+    {
+      "id": "tumores-0366",
+      "area": "r4-coluna",
+      "tema": "Tumores ósseos e de partes moles",
+      "subtemas": [
+        "Metástases ósseas"
+      ],
+      "prova": "R4 Coluna SES-DF",
+      "ano": 2022,
+      "dificuldade": null,
+      "enunciado": "Um paciente de 62 anos de idade é portador de carcinoma metastático, de origem desconhecida, na extremidade proximal do fêmur direito, com aspecto radiográfico lítico e acometimento maior que 2/3. Apresenta ainda dor de forte intensidade, com limitação de suas atividades diárias. Com base nesse caso clínico e nos conhecimentos médicos correlatos, julgue os itens a seguir.\n\nJulgue o item: O aspecto radiográfico do carcinoma metastático proveniente do câncer renal e de tireoide, em geral, é puramente lítico.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SES-DF 2022 - Ortopedia e Traumatologia em Cirurgia da Coluna R4",
+        "pagina": 3,
+        "numeroOriginal": 39
+      }
+    },
+    {
+      "id": "tumores-0367",
+      "area": "r4-coluna",
+      "tema": "Tumores ósseos e de partes moles",
+      "subtemas": [
+        "Estadiamento, biópsia e margens",
+        "Metástases ósseas"
+      ],
+      "prova": "R4 Coluna SES-DF",
+      "ano": 2022,
+      "dificuldade": null,
+      "enunciado": "Um paciente de 62 anos de idade é portador de carcinoma metastático, de origem desconhecida, na extremidade proximal do fêmur direito, com aspecto radiográfico lítico e acometimento maior que 2/3. Apresenta ainda dor de forte intensidade, com limitação de suas atividades diárias. Com base nesse caso clínico e nos conhecimentos médicos correlatos, julgue os itens a seguir.\n\nJulgue o item: O estádio IIB do sistema de Enneking para estadiamento de tumores refere-se a qualquer lesão que metastatizou.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SES-DF 2022 - Ortopedia e Traumatologia em Cirurgia da Coluna R4",
+        "pagina": 3,
+        "numeroOriginal": 40
+      }
+    },
+    {
+      "id": "tumores-0368",
+      "area": "r4-coluna",
+      "tema": "Tumores ósseos e de partes moles",
+      "subtemas": [
+        "Tumor de células gigantes",
+        "Metástases ósseas"
+      ],
+      "prova": "R4 Coluna SES-DF",
+      "ano": 2022,
+      "dificuldade": null,
+      "enunciado": "Um paciente de 62 anos de idade é portador de carcinoma metastático, de origem desconhecida, na extremidade proximal do fêmur direito, com aspecto radiográfico lítico e acometimento maior que 2/3. Apresenta ainda dor de forte intensidade, com limitação de suas atividades diárias. Com base nesse caso clínico e nos conhecimentos médicos correlatos, julgue os itens a seguir.\n\nJulgue o item: Uma lesão benigna ativa é sintomática, causa destruição óssea limitada e pode apresentar-se com fratura patológica. Um exemplo desse tipo de lesão é o tumor de células gigantes.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SES-DF 2022 - Ortopedia e Traumatologia em Cirurgia da Coluna R4",
+        "pagina": 3,
+        "numeroOriginal": 41
+      }
+    },
+    {
+      "id": "tumores-0369",
+      "area": "r4-coluna",
+      "tema": "Tumores ósseos e de partes moles",
+      "subtemas": [
+        "Mieloma múltiplo e plasmocitoma",
+        "Metástases ósseas"
+      ],
+      "prova": "R4 Coluna SES-DF",
+      "ano": 2022,
+      "dificuldade": null,
+      "enunciado": "Um paciente de 62 anos de idade é portador de carcinoma metastático, de origem desconhecida, na extremidade proximal do fêmur direito, com aspecto radiográfico lítico e acometimento maior que 2/3. Apresenta ainda dor de forte intensidade, com limitação de suas atividades diárias. Com base nesse caso clínico e nos conhecimentos médicos correlatos, julgue os itens a seguir.\n\nJulgue o item: O mieloma múltiplo e o carcinoma metastático devem ser incluídos no diagnóstico diferencial para qualquer paciente com mais de 40 anos de idade e que tenha um tumor ósseo novo. Área livre",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SES-DF 2022 - Ortopedia e Traumatologia em Cirurgia da Coluna R4",
+        "pagina": 3,
+        "numeroOriginal": 42
       }
     }
   ]

@@ -26,6 +26,10 @@ from comum import (  # noqa: E402
     normalizar,
 )
 
+
+# Área da questão no acervo -> código curto no índice.
+AREAS = {"cirurgia-mao": "mao", "r4-enare": "enare", "r4-coluna": "coluna"}
+
 DIR_COMENTARIOS = DIR_ACERVO / "comentarios"
 
 from gerar_progresso import acrescentar_hoje  # noqa: E402
@@ -101,8 +105,8 @@ def principal() -> int:
                     **({"sim": 1} if questao.get("simulado") else {}),
                     # Cópia de outra questão: fica no índice para o histórico, fora das sessões.
                     **({"dup": questao["duplicataDe"]} if questao.get("duplicataDe") else {}),
-                    # Prova de cirurgia da mão: fora do foco padrão e do cronograma.
-                    **({"cm": 1} if questao.get("area") == "cirurgia-mao" else {}),
+                    # Categoria fora da ortopedia base: fora do treino padrão e do cronograma.
+                    **({"ar": AREAS[questao["area"]]} if questao.get("area") else {}),
                 }
             )
             if questao.get("ano") and questao["ano"] not in anos:

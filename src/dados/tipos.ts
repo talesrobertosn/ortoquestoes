@@ -141,8 +141,8 @@ export interface ItemIndice {
   sim?: 1
   /** é cópia da questão com este id: não entra em sessões nem contagens */
   dup?: string
-  /** prova de cirurgia da mão: fica fora do foco padrão (ortopedia) e do cronograma */
-  cm?: 1
+  /** categoria fora da ortopedia base (TEOT e TARO): fica fora do treino padrão e do cronograma */
+  ar?: Exclude<Area, 'base'>
 }
 
 /**
@@ -206,13 +206,17 @@ export const SITUACOES_TURMA: Situacao[] = ['turmaErra', 'turmaAcertaVoceErrou']
 
 /** Filtros de montagem de sessão. */
 /**
- * Foco do treino. Ortopedia e traumatologia (TEOT, TARO e afins) é o padrão;
- * as provas de cirurgia da mão, mais específicas, só entram quando a pessoa pede.
+ * Categorias de prova. "base" é a ortopedia e traumatologia (TEOT, TARO e afins),
+ * o padrão do site; R4 ENARE, R4 Coluna e Cirurgia da mão são mais avançadas e só
+ * entram no treino quando a pessoa marca.
  */
-export type Foco = 'ortopedia' | 'tudo' | 'mao'
+export type Area = 'base' | 'enare' | 'coluna' | 'mao'
+export const AREAS_TREINO: Area[] = ['base', 'enare', 'coluna', 'mao']
+export const ROTULO_AREA: Record<Area, string> = { base: 'Ortopedia (TEOT e TARO)', enare: 'R4 ENARE', coluna: 'R4 Coluna', mao: 'Cirurgia da mão' }
 
 export interface Filtros {
-  foco: Foco
+  /** categorias incluídas no treino */
+  areas: Area[]
   temas: string[]
   subtemas: string[]
   provas: string[]
@@ -230,7 +234,7 @@ export interface Filtros {
 }
 
 export const FILTROS_VAZIOS: Filtros = {
-  foco: 'ortopedia',
+  areas: ['base'],
   temas: [],
   subtemas: [],
   provas: [],

@@ -10,7 +10,9 @@ import {
   SITUACOES_TURMA,
   type Dificuldade,
   type Filtros,
-  type Foco,
+  type Area,
+  AREAS_TREINO,
+  ROTULO_AREA,
   type Situacao,
 } from '../dados/tipos'
 import { consultaParaFiltros, filtrosParaConsulta, navegar } from '../util/rotas'
@@ -30,11 +32,12 @@ import '../estilos/paginas/Treinar.css'
 const ORDEM_PROVAS = ['TEOT', 'TARO', 'TEOT/TARO']
 
 // Ortopedia é o padrão do site; cirurgia da mão só entra quando a pessoa escolhe.
-const FOCOS: { foco: Foco; titulo: string; descricao: string }[] = [
-  { foco: 'ortopedia', titulo: 'Ortopedia e traumatologia', descricao: 'TEOT, TARO e afins' },
-  { foco: 'tudo', titulo: 'Ortopedia + cirurgia da mão', descricao: 'As duas juntas' },
-  { foco: 'mao', titulo: 'Só cirurgia da mão', descricao: 'Provas de título da mão' },
-]
+const DESCRICAO_AREA: Record<Area, string> = {
+  base: 'TEOT, TARO e afins',
+  enare: 'Ano adicional em ortopedia',
+  coluna: 'R4 de cirurgia da coluna',
+  mao: 'Especialidade à parte, inclui cirurgia plástica',
+}
 
 const DIFICULDADES: Dificuldade[] = ['facil', 'medio', 'dificil']
 const LIMITES = [5, 10, 20, 30, 50, 100]
@@ -113,21 +116,28 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     return grupos
   }, [indice])
 
-  const gerais = useMemo(() => (indice ? contar(indice, { ...FILTROS_VAZIOS, foco: filtros.foco }, contexto) : null), [indice, contexto, filtros.foco])
-  // Quantas questões cada foco traz, com os demais filtros como estão.
-  const porFoco = useMemo(() => {
+  const gerais = useMemo(() => (indice ? contar(indice, { ...FILTROS_VAZIOS, areas: filtros.areas }, contexto) : null), [indice, contexto, filtros.areas])
+  // Quantas questões cada categoria traz sozinha, com os demais filtros como estão
+  // (sem as provas, que a troca de categoria limpa).
+  const porArea = useMemo(() => {
     if (!indice) return null
-    const temMao = indice.questoes.some((q) => q.cm === 1)
-    if (!temMao) return null
-    // Trocar de foco limpa as provas, então a contagem já mostra o resultado da troca.
-    const n = (foco: Foco) => contar(indice, { ...filtros, foco, provas: [] }, contexto).total
-    return { ortopedia: n('ortopedia'), tudo: n('tudo'), mao: n('mao') }
+    const presentes = AREAS_TREINO.filter((a) => a === 'base' || indice.questoes.some((q) => q.ar === a))
+    if (presentes.length < 2) return null
+    return presentes.map((area) => ({ area, n: contar(indice, { ...filtros, areas: [area], provas: [] }, contexto).total }))
   }, [indice, filtros, contexto])
 
   const provasDoFoco = useMemo(() => {
-    if (!indice || !porFoco) return null
-    return new Set(filtrar(indice, { ...FILTROS_VAZIOS, foco: filtros.foco, incluirAnuladas: true }).map((q) => q.p).filter((p): p is number => p !== null).map((p) => indice.provas[p]))
-  }, [indice, porFoco, filtros.foco])
+    if (!indice || !porArea) return null
+    return new Set(filtrar(indice, { ...FILTROS_VAZIOS, areas: filtros.areas, incluirAnuladas: true }).map((q) => q.p).filter((p): p is number => p !== null).map((p) => indice.provas[p]))
+  }, [indice, porArea, filtros.areas])
+
+  function alternarArea(area: Area) {
+    const marcada = filtros.areas.includes(area)
+    // Sempre fica ao menos uma categoria marcada.
+    if (marcada && filtros.areas.length === 1) return
+    const areas = marcada ? filtros.areas.filter((a) => a !== area) : AREAS_TREINO.filter((a) => a === area || filtros.areas.includes(a))
+    atualizar({ areas, provas: [] })
+  }
 
   // Filtro que não tem nenhuma opção não vira campo vazio na tela.
   const temProva = gruposProva.length > 0
@@ -171,7 +181,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   function sessaoRapida(preset: Partial<Filtros> = {}) {
     if (!indice) return
     if (sessao && !sessao.concluidaEm && !window.confirm('Substituir a sessão em andamento? Seu histórico será mantido.')) return
-    const rapido: Filtros = { ...FILTROS_VAZIOS, foco: filtros.foco, embaralhar: true, limite: 10, ...preset }
+    const rapido: Filtros = { ...FILTROS_VAZIOS, areas: filtros.areas, embaralhar: true, limite: 10, ...preset }
     iniciar(rapido, montarSessao(indice, rapido, Date.now(), contexto))
     navegar('/sessao')
   }
@@ -260,16 +270,19 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
             <p>{selecionados ? `${selecionados} ${selecionados === 1 ? 'selecionado' : 'selecionados'}. Toque de novo para desmarcar.` : 'Marque um ou mais temas. Abra os subtemas para um recorte mais fino.'}</p>
           </div>
         </header>
-        {porFoco && (
-          <div className="tr-foco" role="group" aria-label="Foco do treino">
-            {FOCOS.map((f) => (
-              <button key={f.foco} type="button" className="tr-foco__opcao" aria-pressed={filtros.foco === f.foco} onClick={() => atualizar({ foco: f.foco, provas: [] })}>
-                <strong>{f.titulo}</strong>
-                <small>{f.descricao}</small>
-                <span className="numerico">{porFoco[f.foco].toLocaleString('pt-BR')}</span>
-              </button>
-            ))}
-          </div>
+        {porArea && (
+          <>
+            <p className="tr-foco__titulo">Quais provas entram no treino? <small>Marque uma ou mais.</small></p>
+            <div className="tr-foco" role="group" aria-label="Categorias de prova">
+              {porArea.map(({ area, n }) => (
+                <button key={area} type="button" className="tr-foco__opcao" aria-pressed={filtros.areas.includes(area)} onClick={() => alternarArea(area)}>
+                  <strong>{ROTULO_AREA[area]}</strong>
+                  <small>{DESCRICAO_AREA[area]}</small>
+                  <span className="numerico">{n.toLocaleString('pt-BR')}</span>
+                </button>
+              ))}
+            </div>
+          </>
         )}
         <SeletorArvore
           variante="lista"

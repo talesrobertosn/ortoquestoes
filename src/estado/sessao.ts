@@ -1,6 +1,7 @@
 import { proximoRegistro, type RegistroQuestao } from './revisao'
 import { useCallback } from 'react'
 import type { EstadoSessao, Filtros, Letra, Resposta } from '../dados/tipos'
+import { ROTULO_AREA } from '../dados/tipos'
 import { usarArmazenado } from './usarArmazenado'
 import { gravar, ler } from './armazenamento'
 
@@ -161,8 +162,7 @@ export function descreverFiltros(filtros: Filtros): string {
   const partes: string[] = []
   const assuntos = filtros.temas.length + filtros.subtemas.length
   partes.push(assuntos === 0 ? 'Todos os assuntos' : `${assuntos} assunto(s)`)
-  if (filtros.foco === 'mao') partes.push('Cirurgia da mão')
-  else if (filtros.foco === 'tudo') partes.push('Ortopedia e cirurgia da mão')
+  if (filtros.areas.length !== 1 || filtros.areas[0] !== 'base') partes.push(filtros.areas.map((a) => ROTULO_AREA[a]).join(' + '))
   if (filtros.provas.length) partes.push(filtros.provas.join(', '))
   if (filtros.soSimulados) partes.push('OrtoQuestões Simulados')
   if (filtros.anos.length) partes.push(filtros.anos.join(', '))
