@@ -109,6 +109,42 @@ function CampoTexto({ rotulo, valor, aoMudar, linhas = 3, dica }: { rotulo: stri
   )
 }
 
+/** Maior lado da imagem enviada: nítida na tela e leve para baixar. */
+const LADO_MAXIMO = 1800
+
+/**
+ * Prepara a foto antes do envio: reduz o tamanho e converte para WebP (ou JPEG).
+ * Assim foto de celular (muitas vezes acima de 5 MB, ou em HEIC no iPhone)
+ * entra no bucket, que só aceita JPEG, PNG, WebP e GIF de até 5 MB. GIF segue
+ * como está para não perder a animação.
+ */
+async function prepararImagem(arquivo: File): Promise<{ blob: Blob; extensao: string }> {
+  if (arquivo.type === 'image/gif') return { blob: arquivo, extensao: 'gif' }
+  const endereco = URL.createObjectURL(arquivo)
+  try {
+    const img = new Image()
+    img.src = endereco
+    await img.decode().catch(() => { throw new Error(`Não consegui abrir "${arquivo.name}". Tente salvar como JPG ou PNG.`) })
+    const escala = Math.min(1, LADO_MAXIMO / Math.max(img.naturalWidth, img.naturalHeight))
+    const tela = document.createElement('canvas')
+    tela.width = Math.max(1, Math.round(img.naturalWidth * escala))
+    tela.height = Math.max(1, Math.round(img.naturalHeight * escala))
+    const ctx = tela.getContext('2d')
+    if (!ctx) throw new Error('Seu navegador não conseguiu processar a imagem.')
+    ctx.fillStyle = '#fff'
+    ctx.fillRect(0, 0, tela.width, tela.height)
+    ctx.drawImage(img, 0, 0, tela.width, tela.height)
+    const gerar = (tipo: string) => new Promise<Blob | null>((ok) => tela.toBlob(ok, tipo, 0.86))
+    const webp = await gerar('image/webp')
+    if (webp && webp.type === 'image/webp') return { blob: webp, extensao: 'webp' }
+    const jpeg = await gerar('image/jpeg')
+    if (!jpeg) throw new Error('Seu navegador não conseguiu converter a imagem.')
+    return { blob: jpeg, extensao: 'jpg' }
+  } finally {
+    URL.revokeObjectURL(endereco)
+  }
+}
+
 function ListaImagens({ imagens, aoMudar, idQuestao, pasta }: { imagens: Imagem[]; aoMudar: (v: Imagem[]) => void; idQuestao: string; pasta: string }) {
   const [enviando, definirEnviando] = useState(false)
   const [erro, definirErro] = useState('')
@@ -118,9 +154,10 @@ function ListaImagens({ imagens, aoMudar, idQuestao, pasta }: { imagens: Imagem[
     try {
       const novas: Imagem[] = []
       for (const arquivo of Array.from(arquivos)) {
-        if (arquivo.size > 5 * 1024 * 1024) throw new Error(`"${arquivo.name}" passa de 5 MB.`)
-        const nome = arquivo.name.toLowerCase().normalize('NFKD').replace(/[^a-z0-9.]+/g, '-').replace(/^-+|-+$/g, '') || 'imagem'
-        const url = await enviarImagemQuestao(`${idQuestao}/${pasta}/${Date.now()}-${nome}`, arquivo)
+        const { blob, extensao } = await prepararImagem(arquivo)
+        if (blob.size > 5 * 1024 * 1024) throw new Error(`"${arquivo.name}" passa de 5 MB mesmo depois de reduzida.`)
+        const base = arquivo.name.toLowerCase().normalize('NFKD').replace(/\.[^.]*$/, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 60) || 'imagem'
+        const url = await enviarImagemQuestao(`${idQuestao}/${pasta}/${Date.now()}-${base}.${extensao}`, blob)
         novas.push({ arquivo: url, legenda: null })
       }
       aoMudar([...imagens, ...novas])
@@ -144,7 +181,7 @@ function ListaImagens({ imagens, aoMudar, idQuestao, pasta }: { imagens: Imagem[
       ))}
       <label className="botao botao--fantasma adm-editor__enviar">
         {enviando ? 'Enviando…' : 'Enviar imagem'}
-        <input type="file" accept="image/png,image/jpeg,image/webp,image/gif" multiple hidden disabled={enviando} onChange={(e) => { void enviar(e.target.files); e.target.value = '' }} />
+        <input type="file" accept="image/*" multiple hidden disabled={enviando} onChange={(e) => { void enviar(e.target.files); e.target.value = '' }} />
       </label>
       {erro && <p role="alert" className="adm-alerta">{erro}</p>}
     </div>
