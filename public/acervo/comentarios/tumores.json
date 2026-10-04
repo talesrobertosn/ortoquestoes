@@ -3826,5 +3826,21 @@
   "referencias": [],
   "geradoEm": "2026-10-04T17:01:01+00:00",
   "conferido": false
+ },
+ "tumores-0360": {
+  "conceito": "**Excluindo as metástases, o mieloma múltiplo é o tumor maligno primário do osso mais comum no adulto.** Ele é uma neoplasia de plasmócitos da medula óssea, e por isso às vezes é tratado em capítulos de hematologia, mas na ortopedia entra como neoplasia óssea primária.\n\n**Frequência relativa dos malignos primários do osso:**\n1. **mieloma múltiplo** (o mais comum, adultos acima de 50 anos);\n2. osteossarcoma (o mais comum entre os sarcomas ósseos; pico na adolescência e segundo pico em idosos com Paget);\n3. condrossarcoma (o sarcoma ósseo mais comum no adulto);\n4. sarcoma de Ewing (crianças e adolescentes);\n5. linfoma ósseo primário.\n\n**Mieloma, em uma linha cada:** dor óssea, anemia, hipercalcemia e insuficiência renal (CRAB); lesões líticas em saca-bocado sem reação esclerótica; **cintilografia frequentemente normal** (por isso se usa o inventário radiográfico, tomografia de corpo inteiro de baixa dose ou PET); proteína M na eletroforese e cadeias leves (Bence Jones).\n\nAtenção para a diferença entre as perguntas: \"sarcoma ósseo mais comum no adulto\" (condrossarcoma) e \"tumor maligno primário mais comum\" (mieloma).",
+  "correta": "**Mieloma múltiplo.** É a neoplasia maligna primária do osso mais frequente no adulto, quando se excluem as metástases.",
+  "incorretas": {
+   "A": "O sarcoma de Ewing é típico de crianças e adolescentes.",
+   "B": "O condrossarcoma é o sarcoma ósseo mais comum no adulto, mas o mieloma é mais frequente que ele.",
+   "C": "O osteossarcoma é o sarcoma ósseo primário mais comum no geral (com pico na adolescência), mas não supera o mieloma no adulto.",
+   "E": "O linfoma ósseo primário é raro."
+  },
+  "referencias": [
+   "Campanacci M. Bone and Soft Tissue Tumors. 2ª ed. Springer; 1999.",
+   "Rajkumar SV et al. International Myeloma Working Group updated criteria for the diagnosis of multiple myeloma. Lancet Oncol. 2014;15(12):e538-48."
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  }
 }
