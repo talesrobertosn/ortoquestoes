@@ -2234,25 +2234,25 @@
   "conferido": false
  },
  "trauma-0204": {
-  "conceito": "### Planalto medial com cisalhamento posterior\n- Fragmento ==posteromedial== em cisalhamento vertical (Schatzker IV, coluna posteromedial).\n- O fêmur fica sobre o fragmento que desliza posterior e distalmente; ==a tíbia proximal (diáfise e restante do planalto) subluxa anteriormente== em relação ao fêmur.\n- Frequentemente é equivalente de fratura-luxação: lesão de LCA/LCP e lateral associadas.\n\n### Colunas (Luo)\n| Coluna | Fixação |\n|---|---|\n| lateral | placa lateral |\n| medial | placa medial |\n| ==posterior== | ==placa de suporte posterior== (antideslizamento), via posteromedial ou Lobenhoffer |\n\n### Schatzker\n| Tipo | Padrão |\n|---|---|\n| I-III | lateral |\n| IV | medial (alta energia, fratura-luxação) |\n| V | bicondilar |\n| VI | dissociação metáfise-diáfise |\n\n### Osso osteoporótico\n- Côndilo femoral impacta o platô fraco: ==depressão central pura== (Schatzker III) sem split cortical.\n- Jovens (osso denso): ==split lateral== (Schatzker I) ou split-depressão (II).\n- Tratamento: elevação da depressão + enxerto/substituto + parafusos em jangada (rafting).\n\n> **Na prova:** planalto osteoporótico = ==depressão central==",
-  "correta": "**Depressão central.**\n- Osso esponjoso fraco colapsa.\n- Schatzker III.",
   "incorretas": {
-   "B": "**Bicondilar.**\n- Alta energia.",
-   "C": "**Dissociação metáfise-diáfise.**\n- Schatzker VI, alta energia.",
-   "D": "**Côndilo medial.**\n- Schatzker IV, alta energia."
+   "B": "O comprometimento bicondilar vem de trauma de alta energia.",
+   "C": "A dissociação metáfise-diáfise (Schatzker VI) é lesão de alta energia.",
+   "D": "O afundamento do côndilo medial (Schatzker IV) é de alta energia."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O padrão da fratura do **planalto tibial** depende da **qualidade do osso**:\n\n**osso jovem e denso**: o côndilo femoral bate no planalto, e a cortical resistente se **parte**: fratura em **cisalhamento** (split) do planalto lateral, **Schatzker I**, ou cisalhamento com depressão, **Schatzker II**;\n\n**osso osteoporótico**: a cortical aguenta, mas o osso esponjoso por baixo é fraco e **afunda**: **depressão central pura**, **Schatzker III**, sem traço na cortical.\n\n**As fraturas de alta energia**: o côndilo **medial** (Schatzker IV, muitas vezes fratura-luxação), as **bicondilares** (V) e a **dissociação metáfise-diáfise** (VI) aparecem em traumas violentos, em qualquer idade.\n\n**O tratamento da depressão central**: elevar o fragmento afundado por uma janela na metáfise, preencher o defeito com **enxerto** ou substituto ósseo e sustentar a superfície com **parafusos em jangada** (rafting) logo abaixo da cartilagem.\n\n**Na prova**: no osso osteoporótico, o padrão típico é a **depressão central**.",
+  "correta": "No osso osteoporótico, a cortical resiste e o esponjoso fraco afunda: depressão central pura, Schatzker III.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0205": {
-  "conceito": "### Tríade terrível do cotovelo\n- ==Luxação posterior + fratura da cabeça do rádio + fratura da ponta do coronoide== (O'Driscoll 1, Regan-Morrey I).\n- Mecanismo: queda com supinação, valgo e carga axial (instabilidade posterolateral rotatória).\n\n### Tratamento (de dentro para fora)\n1. Coronoide (sutura/laço ou parafuso).\n2. Cabeça do rádio (fixar ou prótese).\n3. ==LCL== (reinserção no epicôndilo lateral).\n4. LCM ou fixador articulado se ainda instável.\n\n> **Na prova:** ordem = ==coronoide, rádio, LCL, LCM==",
-  "correta": "**Coronoide, rádio, LCL, LCM.**\n- De profundo para superficial.\n- LCM só se ainda instável.",
   "incorretas": {
-   "B": "**LCM antes do LCL.**\n- LCL é reparado antes.",
-   "C": "**Rádio primeiro e LCM antes.**\n- Coronoide é abordado primeiro (via acesso após remover a cabeça).",
-   "D": "**Rádio antes do coronoide.**\n- Coronoide primeiro."
+   "B": "O colateral lateral é reparado antes do medial.",
+   "C": "O coronoide vem antes do rádio, e o colateral lateral antes do medial.",
+   "D": "O coronoide é abordado antes da cabeça do rádio."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **tríade terrível** do cotovelo é a **luxação posterior** com fratura da **cabeça do rádio** e do **coronoide**. O tratamento cirúrgico segue uma ordem **de dentro para fora**, do mais profundo para o mais superficial:\n\n**1. coronoide**: sutura em laço pela base ou parafuso; é abordado **primeiro**, muitas vezes pelo espaço deixado pela cabeça do rádio fraturada (ou retirada para a prótese);\n\n**2. cabeça do rádio**: fixação ou, na Mason 3 irreconstruível, **prótese**; nunca ressecar sem repor;\n\n**3. ligamento colateral lateral**: reinserido no **epicôndilo lateral**, de onde costuma se soltar;\n\n**4. ligamento colateral medial** ou **fixador articulado**: só se o cotovelo continuar **instável** depois dos passos anteriores.\n\n**Por que essa ordem**: depois que a cabeça do rádio ou a prótese entra, o acesso ao coronoide fica fechado. E o colateral lateral, reparado depois das estruturas ósseas, resolve a maioria dos casos; o medial é a última opção.\n\n**Na prova**: a ordem usual é **coronoide, rádio, colateral lateral e colateral medial**.",
+  "correta": "Repara-se de dentro para fora: coronoide, cabeça do rádio, colateral lateral e, se ainda instável, colateral medial.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0206": {
@@ -2292,91 +2292,91 @@
   "conferido": false
  },
  "trauma-0209": {
-  "conceito": "### Lesões associadas ao rádio distal\n| Lesão | Frequência |\n|---|---|\n| ==complexo da fibrocartilagem triangular (TFCC)== | ==até 40 a 80%== em artroscopia |\n| estiloide ulnar | 50 a 60% (base = foveal) |\n| ligamento escafossemilunar | 20 a 30% |\n| lunopiramidal | 10 a 15% |\n| fratura do escafoide | 5% |\n| nervo mediano (túnel do carpo agudo) | 5 a 10% |\n| lesão condral | frequente em intra-articulares |\n\n### Implicação\n- Após fixar o rádio, testar a ==RUD==: instabilidade = reparo do TFCC/fixação do estiloide.\n\n> **Na prova:** lesão associada mais frequente = ==TFCC==",
-  "correta": "**TFCC.**\n- Lesão de partes moles mais frequente.\n- Avaliar a RUD após fixar.",
   "incorretas": {
-   "A": "**Condral.**\n- Frequente em intra-articulares, menos que TFCC.",
-   "B": "**Neurovascular.**\n- Mediano em 5 a 10%.",
-   "C": "**Carpo.**\n- Escafoide em cerca de 5%."
+   "A": "A lesão condral é frequente nas intra-articulares, mas menos que a do CFCT.",
+   "B": "A lesão neurovascular, sobretudo do mediano, ocorre em 5 a 10%.",
+   "C": "A fratura do carpo associada, como a do escafoide, ocorre em cerca de 5%."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **fratura do rádio distal**, as lesões associadas são frequentes, e a mais comum é a do **complexo da fibrocartilagem triangular** (CFCT, ou TFCC).\n\n**Por quê**: a fibrocartilagem triangular estabiliza a **radioulnar distal**. Quando o rádio quebra e encurta ou angula, ela é **estirada** ou **rompida**, sobretudo quando há fratura da **base do estiloide ulnar**. Nas séries com artroscopia, a lesão aparece em boa parte dos casos.\n\n**As outras lesões**:\n\n**lesões condrais**: frequentes nas fraturas intra-articulares, mas menos que a do CFCT;\n\n**ligamento escafossemilunar**: também comum, pode levar à instabilidade do carpo;\n\n**nervo mediano**: em 5 a 10%, com risco de síndrome do túnel do carpo aguda;\n\n**fratura do escafoide**: em cerca de 5%.\n\n**A implicação na cirurgia**: depois de fixar o rádio, **testar a radioulnar distal**. Se estiver instável, reparar o CFCT ou fixar a base do estiloide ulnar.\n\n**Na prova**: a lesão associada mais frequente na fratura do rádio distal é a do **complexo da fibrocartilagem triangular**.",
+  "correta": "A fibrocartilagem triangular é estirada ou rompida quando o rádio encurta ou angula: a lesão associada mais frequente.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0210": {
-  "conceito": "### Fraturas do piramidal\n- ==Segundo osso mais fraturado do carpo==.\n- Tipo mais comum: ==lasca dorsal (dorsal chip)== por ==avulsão== dos ligamentos dorsais (radiopiramidal, intercárpico dorsal) ou impacto do estiloide ulnar em hiperextensão/desvio ulnar.\n- Melhor vista no ==perfil== (ou oblíqua em pronação).\n- Tratamento: imobilização 3 a 6 semanas; bom prognóstico.\n\n### Corpo do piramidal\n- Raro; associado a lesões perilunares (arco maior).\n\n> **Na prova:** piramidal = mecanismo de ==avulsão== (lasca dorsal)",
-  "correta": "**Avulsão.**\n- Lasca dorsal por ligamentos.\n- A fratura mais comum do piramidal.",
   "incorretas": {
-   "B": "**Impacção.**\n- Mecanismo alternativo, menos citado.",
-   "C": "**Angulação.**\n- Não é o mecanismo.",
-   "D": "**Cisalhamento.**\n- Arco maior, raro."
+   "B": "A impacção pelo estiloide ulnar é um mecanismo alternativo, menos citado.",
+   "C": "A angulação não é o mecanismo da fratura do piramidal.",
+   "D": "O cisalhamento aparece nas lesões do arco maior, raras."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **piramidal** é o **segundo osso mais fraturado do carpo**, depois do escafoide.\n\n**O tipo mais comum**: a **lasca dorsal** (dorsal chip), uma pequena fratura da face dorsal do piramidal.\n\n**O mecanismo**: **avulsão** pelos ligamentos dorsais que se inserem ali (**radiopiramidal dorsal** e **intercárpico dorsal**), numa queda com o punho em flexão. Outra explicação é o impacto do **estiloide ulnar** contra o piramidal em hiperextensão com desvio ulnar.\n\n**Como ver**: no **perfil** do punho, a lasca aparece atrás do carpo; a oblíqua em pronação também ajuda. No PA, quase não aparece.\n\n**O tratamento**: imobilização por **3 a 6 semanas**; o prognóstico é bom.\n\n**A fratura do corpo do piramidal**: rara, aparece nas lesões **perilunares** do arco maior, de alta energia.\n\n**Na prova**: a fratura do piramidal é mais frequentemente causada por **avulsão**.",
+  "correta": "A lasca dorsal, a fratura mais comum do piramidal, é arrancada pelos ligamentos dorsais.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0211": {
-  "conceito": "### Vias posteriores ao cotovelo\n| Via | Técnica | Indicação |\n|---|---|---|\n| osteotomia do olécrano (chevron) | melhor visão articular | C2/C3 do úmero distal |\n| paratricipital (Alonso-Llames) | janelas medial e lateral do tríceps | A e C1; conversão possível |\n| ==Bryan-Morrey== | ==reflexão do tríceps em continuidade com o periósteo== de medial para lateral | ==artroplastia total do cotovelo== (olécrano íntegro para a ulna) |\n| TRAP | tríceps + ancôneo rebatidos | |\n| divisão do tríceps | | |\n\n- Artroplastia: evitar osteotomia do olécrano (o componente ulnar precisa de olécrano íntegro).\n\n> **Na prova:** Bryan-Morrey = ==artroplastia total do cotovelo==",
-  "correta": "**Artroplastia total do cotovelo.**\n- Preserva o olécrano.\n- Expõe úmero distal e ulna.",
   "incorretas": {
-   "A": "**Capítulo coronal.**\n- Via lateral (Kocher/Kaplan).",
-   "C": "**Osteotomia prévia.**\n- Não define a indicação.",
-   "D": "**Tríceps lesado.**\n- Contraindica refletir o tendão."
+   "A": "A fratura coronal do capítulo é abordada pela via lateral.",
+   "C": "A osteotomia prévia do olécrano não define a indicação dessa via.",
+   "D": "A lesão prévia do tríceps contraindica soltá-lo do olécrano."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "As **vias posteriores** do cotovelo diferem na forma de lidar com o **tríceps** e o **olécrano**:\n\n**osteotomia do olécrano**: a melhor exposição da superfície articular; para fraturas articulares complexas do úmero distal (C3);\n\n**paratricipital** (Alonso-Llames): trabalha dos dois lados do tríceps sem soltá-lo; para fraturas extra-articulares e articulares simples;\n\n**Bryan-Morrey**: o tríceps é **refletido** de medial para lateral, em continuidade com o ancôneo, soltando-o do olécrano;\n\n**TRAP** (tríceps refletido com o ancôneo como retalho) e **divisão do tríceps**.\n\n**A indicação da Bryan-Morrey**: a **artroplastia total do cotovelo**. Ela expõe bem o úmero distal e a **ulna proximal** sem cortar o olécrano, que precisa ficar **íntegro** para apoiar o componente ulnar.\n\n**Os outros cenários**: a fratura coronal do capítulo é abordada pela via **lateral** (Kocher ou Kaplan); um tríceps já lesado **contraindica** soltá-lo.\n\n**Na prova**: a via de Bryan-Morrey é indicada na **artroplastia total do cotovelo**.",
+  "correta": "A reflexão do tríceps expõe o úmero distal e a ulna sem osteotomia, preservando o olécrano para o componente ulnar.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0212": {
-  "conceito": "### Fraturas da patela por padrão\n| Padrão | Mecanismo | Mecanismo extensor |\n|---|---|---|\n| transversa | ==indireto== (contração do quadríceps com joelho fletido) | geralmente ==roto== |\n| ==vertical/longitudinal== | ==direto, joelho fletido== (painel) | ==íntegro== (retináculos preservados) |\n| cominutiva (estrelada) | direto de alta energia | variável |\n| polo inferior | indireto/avulsão | roto |\n| osteocondral | luxação da patela | íntegro |\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| extensão ativa preservada, degrau < 2 mm, diástase < 3 mm | conservador (órtese em extensão) |\n| falha do mecanismo extensor ou desvio | banda de tensão, parafusos canulados, placas; patelectomia parcial |\n\n### Incidências da patela\n| Incidência | Mostra melhor |\n|---|---|\n| ==perfil== | ==transversa== (diástase, degrau articular), polos, altura (Insall-Salvati) |\n| axial (Merchant/sunrise) | ==vertical== (longitudinal), osteocondral |\n| AP | cominutiva, patela bipartida (superolateral) |\n\n> **Na prova:** marginais e verticais = ==axial de Merchant==",
-  "correta": "**Axial de Merchant.**\n- Traço paralelo ao eixo.\n- Facetas vistas de cima.",
   "incorretas": {
-   "A": "**Perfil.**\n- Transversas.",
-   "B": "**Oblíqua.**\n- Menos útil.",
-   "C": "**AP.**\n- Sobreposição do fêmur."
+   "A": "O perfil é a melhor incidência para a fratura transversa.",
+   "B": "A oblíqua é menos útil para esses traços.",
+   "C": "No AP, a patela fica sobreposta ao fêmur."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Cada fratura da **patela** aparece melhor numa incidência:\n\n**axial de Merchant** (joelho fletido a cerca de 45°, raio de cima para baixo): mostra a patela de **cima**, com as facetas e o sulco do fêmur; é a melhor para os traços **verticais** (longitudinais), as fraturas **marginais** e as lesões **osteocondrais**;\n\n**perfil**: mostra a fratura **transversa**, a **diástase** e o degrau articular, além da altura da patela;\n\n**AP**: a patela fica sobreposta ao fêmur e mostra mal os traços; serve para ver a **patela bipartida** (canto superolateral, bordas lisas);\n\n**TC**: para a cominutiva e o planejamento.\n\n**Por que a axial**: o traço vertical corre **paralelo** ao eixo longo da patela. No perfil e no AP ele fica escondido; visto de cima, aparece como uma linha atravessando a patela.\n\n**Na prova**: os traços marginais e verticais são mais bem vistos na **axial de Merchant**.",
+  "correta": "Na axial de Merchant, a patela é vista de cima, e o traço vertical e as fraturas marginais aparecem atravessando o osso.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0213": {
-  "conceito": "### Fratura femoral atípica (ASBMR)\n| Critério maior | Detalhe |\n|---|---|\n| trauma mínimo ou nenhum | queda da própria altura |\n| traço ==transverso== na cortical lateral | pode ficar oblíquo medialmente |\n| completa com ==espícula medial== | incompleta só na lateral |\n| sem cominução | |\n| ==espessamento (beaking) da cortical lateral== | reação periosteal localizada |\n\n| Critério menor | |\n|---|---|\n| ==dor prodrômica== na coxa/virilha | semanas a meses antes |\n| ==bilateralidade== | até 30 a 50% |\n| espessamento cortical generalizado | |\n| consolidação retardada | |\n\n### Conduta\n- Suspender bisfosfonato; cálcio/vitamina D; teriparatida pode ajudar.\n- Haste cefalomedular; ==investigar o lado oposto== (fixação profilática se dor + linha).\n\n### Mecanismo\n- Bisfosfonato inibe osteoclastos: ==remodelação suprimida==, microdanos se acumulam na cortical lateral (tensão).\n- Risco aumenta após 3 a 5 anos de uso; também com denosumabe.\n- Pausa terapêutica (drug holiday) após 5 anos em risco moderado.\n\n> **Na prova:** fratura atípica = uso prolongado de ==bisfosfonatos==",
-  "correta": "**Bisfosfonatos.**\n- Supressão da remodelação.\n- Microfissuras na cortical lateral.",
   "incorretas": {
-   "A": "**Teriparatida.**\n- Anabólica; usada no tratamento.",
-   "C": "**Corticoide.**\n- Osteoporose, não padrão atípico.",
-   "D": "**Cálcio.**\n- Sem relação."
+   "A": "A teriparatida é anabólica e pode ser usada no tratamento.",
+   "C": "O corticoide causa osteoporose, mas não o padrão atípico.",
+   "D": "O carbonato de cálcio não tem relação com a fratura atípica."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **fratura atípica do fêmur** ocorre na região subtrocantérica ou na diáfise, com trauma mínimo, em pacientes em uso **prolongado de bisfosfonatos**.\n\n**O mecanismo**: o bisfosfonato inibe os **osteoclastos** e **suprime a remodelação**. Os microdanos do dia a dia deixam de ser reparados e se acumulam na cortical **lateral**, o lado de **tensão** do fêmur, até virar uma fratura por estresse e depois uma fratura completa.\n\n**O risco**: aumenta depois de **3 a 5 anos** de uso; também foi descrito com o **denosumabe**. Em pacientes de risco moderado, considera-se uma **pausa** no tratamento após 5 anos.\n\n**Os achados típicos**: traço **transverso** que começa na cortical lateral, **espessamento** localizado da cortical lateral, **espícula medial**, **dor prodrômica** na coxa e frequência de **bilateralidade**.\n\n**A conduta**: suspender o bisfosfonato, repor cálcio e vitamina D, considerar a **teriparatida** (anabólica, que pode ajudar a consolidar), fixar com **haste cefalomedular** e investigar o outro fêmur.\n\n**Na prova**: a fratura atípica do fêmur está associada ao uso prolongado de **bisfosfonatos**.",
+  "correta": "O bisfosfonato suprime a remodelação, e os microdanos se acumulam na cortical lateral até fraturar.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0214": {
-  "conceito": "### Tríade letal do trauma\n| Componente | Causa | Efeito |\n|---|---|---|\n| ==hipotermia== | exposição, fluidos frios | inibe enzimas da coagulação |\n| ==acidose== | hipoperfusão (lactato) | piora coagulação e contratilidade |\n| ==coagulopatia== | consumo, diluição, hipotermia | mais sangramento |\n\n- Ciclo vicioso: cada um piora os outros.\n\n### Conduta\n- ==Controle de danos==: cirurgia abreviada (fixador externo, tamponamento), reanimação hemostática (1:1:1), aquecimento, ácido tranexâmico, hipotensão permissiva.\n- Cirurgia definitiva após normalização (lactato < 2,5, plaquetas, temperatura).\n\n> **Na prova:** tríade letal = hipotermia, ==acidose e coagulopatia==",
-  "correta": "**Acidose e coagulopatia.**\n- Com hipotermia.\n- Ciclo vicioso letal.",
   "incorretas": {
-   "A": "**Anúria.**\n- Não compõe a tríade.",
-   "B": "**Alcalose.**\n- É acidose.",
-   "D": "**Alcalose.**\n- Distúrbio errado."
+   "A": "A acidose está certa, mas a anúria não faz parte da tríade.",
+   "B": "O distúrbio é a acidose, e a anúria não faz parte da tríade.",
+   "D": "A coagulopatia está certa, mas o distúrbio ácido-base é a acidose."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "No **politraumatizado** com grande sangramento, três distúrbios se alimentam e formam a **tríade letal**:\n\n**hipotermia**: perda de calor pela exposição e pela infusão de líquidos frios; as enzimas da coagulação funcionam mal no frio;\n\n**acidose**: o choque leva ao metabolismo anaeróbico e ao acúmulo de **lactato**; a acidose também prejudica a coagulação;\n\n**coagulopatia**: pela perda e diluição dos fatores, pelo frio e pela acidose; o sangramento aumenta, o choque piora, e o ciclo continua.\n\n**A conduta: controle de danos**:\n\n**cirurgia abreviada**: fixador externo nas fraturas, tamponamento das hemorragias, sem cirurgias longas;\n\n**reanimação hemostática**: concentrado de hemácias, plasma e plaquetas em proporção próxima de 1:1:1, **ácido tranexâmico**, **hipotensão permissiva** e **aquecimento** ativo;\n\n**cirurgia definitiva** só depois da correção: lactato abaixo de cerca de 2,5 mmol/L, temperatura e coagulação normalizadas.\n\n**Na prova**: a tríade letal é hipotermia, **acidose** e **coagulopatia**.",
+  "correta": "Hipotermia, acidose e coagulopatia formam um ciclo vicioso em que cada uma piora as outras.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0215": {
-  "conceito": "### Luxação posterior do quadril: posição no impacto\n| Posição do fêmur | Resultado |\n|---|---|\n| flexão + ==adução== + rotação interna | ==luxação pura== (cabeça escapa sobre a borda) |\n| flexão + ==menos adução== (neutra/abdução) + ==rotação interna== | ==fratura da parede posterior== ou da cabeça (Pipkin) |\n| flexão menor (mais extensão) | parede posterior maior, superior |\n\n### Conduta\n- Redução urgente (< 6 h); TC pós-redução (fragmentos intra-articulares, congruência).\n- Instabilidade da parede posterior (> 40 a 50%): fixação (Kocher-Langenbeck).\n\n### Mecanismo do painel\n- Joelho fletido bate no painel: força axial pelo fêmur com o quadril em ==flexão e adução==.\n- O grau de adução decide: muita adução = luxação pura; menos adução = fratura da parede posterior.\n\n> **Na prova:** fratura-luxação posterior = quadril em ==adução e flexão==",
-  "correta": "**Adução e flexão.**\n- Trauma de painel.\n- Força pelo eixo do fêmur.",
   "incorretas": {
-   "B": "**Extensão.**\n- Quadril está fletido.",
-   "C": "**Abdução.**\n- Mecanismo anterior.",
-   "D": "**Abdução e extensão.**\n- Luxação anterior."
+   "B": "O quadril está fletido no trauma de painel, não estendido.",
+   "C": "A abdução faz parte do mecanismo da luxação anterior.",
+   "D": "Abdução com extensão é o mecanismo da luxação anterior superior."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **luxação posterior do quadril** é a mais comum (cerca de 90%) e vem do **trauma de painel**: o joelho dobrado bate no painel do carro, e a força sobe pelo eixo do **fêmur** até a cabeça, empurrando-a para trás.\n\n**A posição do quadril no impacto**: **flexão** e **adução**.\n\n**O grau de adução decide o padrão**:\n\n**muita adução** (e rotação interna): a cabeça escapa por cima da borda posterior: **luxação pura**;\n\n**menos adução**: a cabeça bate na **borda posterior**: **fratura da parede posterior** ou fratura da cabeça (Pipkin).\n\n**A luxação anterior** tem o mecanismo oposto: **abdução** e **rotação externa**, com o quadril em extensão (forma superior) ou em flexão (forma inferior).\n\n**A conduta**: redução **urgente** (em menos de 6 horas), **TC** após a redução e fixação da parede posterior se ela estiver instável, pela via de **Kocher-Langenbeck**.\n\n**Na prova**: a fratura-luxação posterior do quadril ocorre com a articulação em **adução e flexão**.",
+  "correta": "No trauma de painel, o quadril está fletido e aduzido, e a força pelo fêmur empurra a cabeça para trás.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0216": {
-  "conceito": "### Fraturas associadas no idoso\n- Queda da própria altura: impacto lateral no quadril e mão estendida do ==mesmo lado==.\n- Associação mais frequente com a transtrocantérica: ==rádio distal ipsilateral==; também úmero proximal.\n- Fratura de punho após os 50 anos é ==sentinela de osteoporose== (prever fratura de quadril).\n\n### Implicações\n| Situação | Conduta |\n|---|---|\n| quadril + punho ipsilateral | fixar o punho para permitir apoio em andador |\n| fratura por fragilidade | densitometria, tratamento da osteoporose, prevenção de quedas |\n\n### Transtrocantérica (AO 31A)\n| Tipo | Detalhe | Implante |\n|---|---|---|\n| A1 | simples, estável | DHS ou haste |\n| A2 | multifragmentada, parede lateral fina | haste |\n| A3 | intertrocantérica reversa/transversa | ==haste cefalomedular== |\n\n### Parede lateral\n- Cortical lateral abaixo do trocanter maior: contraforte que limita o deslizamento do parafuso.\n- Parede fina (< 20,5 mm, Hsu) ou fraturada: deslizamento excessivo, ==medialização da diáfise== e ==perda do offset==, encurtamento.\n- Implante: ==haste cefalomedular== ou placa de suporte trocantérico.\n\n> **Na prova:** parede lateral frágil = ==medialização e diminuição do offset==",
-  "correta": "**Medialização, menos offset.**\n- Diáfise migra medialmente.\n- Encurtamento e fraqueza abdutora.",
   "incorretas": {
-   "A": "**Aumento de offset.**\n- Offset diminui.",
-   "B": "**Lateralização.**\n- Diáfise medializa.",
-   "D": "**Lateralização.**\n- Direção errada."
+   "A": "A diáfise medializa, mas o offset diminui em vez de aumentar.",
+   "B": "A diáfise medializa, e o offset diminui.",
+   "D": "O offset diminui, mas a diáfise medializa em vez de lateralizar."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **fratura transtrocantérica**, a **parede lateral** é a cortical do fêmur logo abaixo do trocânter maior. Ela funciona como um **contraforte**: quando o parafuso cefálico desliza para comprimir a fratura, a parede lateral segura o fragmento proximal e **limita** o deslizamento.\n\n**Quando a parede é frágil**: espessura menor que **20,5 mm** (Hsu) ou parede já fraturada. Sem o contraforte, acontece:\n\n**deslizamento excessivo** do parafuso;\n\n**medialização da diáfise**: o fragmento distal desliza para dentro;\n\n**diminuição do offset** femoral, com o fêmur mais perto da pelve;\n\n**encurtamento** do membro e **fraqueza dos abdutores**, com marcha claudicante.\n\n**O implante indicado**: **haste cefalomedular**, que funciona como uma parede lateral artificial dentro do canal, ou placa com **suporte trocantérico**. O **DHS** isolado não serve quando a parede está comprometida.\n\n**Na prova**: a fragilidade da parede lateral leva à **medialização** do fêmur com **diminuição do offset**.",
+  "correta": "Sem o contraforte lateral, o parafuso desliza demais, a diáfise medializa e o offset diminui.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0217": {
