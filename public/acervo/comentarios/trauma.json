@@ -4061,25 +4061,25 @@
   "conferido": false
  },
  "trauma-0442": {
-  "conceito": "A classificação de **Neer** conta como \"partes\" os quatro segmentos anatômicos do úmero proximal (cabeça/segmento articular, tubérculo maior, tubérculo menor e diáfise), considerando parte apenas o fragmento desviado mais de 1 cm ou angulado mais de 45 graus.\n\nA distribuição real dessas fraturas é muito desigual, e vale guardar a ordem. A imensa maioria (80% a 85%) tem desvio mínimo e sequer se classifica como duas partes.\n\nEntre as que se desviam, a fratura em **duas partes do colo cirúrgico** é a mais frequente: o traço passa pela transição metafisodiafisária, abaixo dos tubérculos, e a cabeça, ainda solidária a todo o manguito, separa-se da diáfise, que é tracionada medialmente pelo peitoral maior.\n\nEm seguida vem a fratura em duas partes do **tubérculo maior**, que ganha relevância clínica desproporcional ao seu tamanho, com limiar cirúrgico de apenas 5 mm de desvio (3 mm em atletas de arremesso), porque poucos milímetros de deslocamento superior já bloqueiam a elevação.\n\nMuito mais raras são as fraturas em duas partes do **tubérculo menor**, cuja importância é ser marcador de luxação posterior do ombro (após crise convulsiva ou choque elétrico), e as do **colo anatômico**, que são raríssimas e de péssimo prognóstico vascular, por deixarem a cabeça sem qualquer inserção de partes moles, motivo pelo qual são um dos três preditores de isquemia de Hertel, ao lado da dobradiça medial desviada mais de 2 mm e da extensão metafisária menor que 8 mm.\n\nO conhecimento dessa hierarquia orienta a expectativa clínica: diante de uma fratura desviada do úmero proximal, o padrão mais provável é o do colo cirúrgico, com desvio em varo e a diáfise puxada para dentro.",
-  "correta": "A. A fratura em duas partes mais frequente do úmero proximal é a do COLO CIRÚRGICO, em que a cabeça, ainda unida a todo o manguito, se separa da diáfise tracionada medialmente pelo peitoral maior.",
   "incorretas": {
-   "B": "A fratura do colo ANATÔMICO é raríssima. A sua importância é qualitativa, não epidemiológica: ela separa a cabeça de qualquer inserção de partes moles e é um dos preditores independentes de isquemia de Hertel, com prognóstico vascular péssimo.",
-   "C": "A fratura do tubérculo maior é a segunda mais frequente em duas partes e tem grande relevância funcional (limiar cirúrgico baixo, de cerca de 5 mm), mas não supera em número a do colo cirúrgico.",
-   "D": "A fratura isolada do tubérculo menor é rara. O seu valor está em funcionar como marcador de LUXAÇÃO POSTERIOR do ombro, sobretudo depois de crise convulsiva ou choque elétrico, o que obriga à incidência axilar ou à tomografia."
+   "B": "A fratura do colo anatômico é rara.",
+   "C": "A fratura do tubérculo maior é a segunda mais comum.",
+   "D": "A fratura do tubérculo menor é rara."
   },
-  "geradoEm": "2026-09-10",
+  "conceito": "**Neer** classifica as fraturas do **úmero proximal** pelas **partes desviadas**: cabeça (colo anatômico), tubérculo maior, tubérculo menor e diáfise (colo cirúrgico). Uma parte só conta se desviar mais de **1 cm** ou angular mais de **45°**.\n\n**A fratura em duas partes mais frequente**: a do **colo cirúrgico**. Ela separa a diáfise do conjunto cabeça e tubérculos, na região metafisária logo abaixo deles, onde o osso esponjoso é mais frágil no idoso.\n\n**O desvio**: o **peitoral maior** puxa a diáfise para medial e anterior; a cabeça fica com os tubérculos, em posição neutra.\n\n**As outras fraturas em duas partes**:\n\n**tubérculo maior**: a segunda mais comum, muitas vezes com **luxação anterior** do ombro;\n\n**tubérculo menor**: rara, pensar em **luxação posterior**;\n\n**colo anatômico**: rara e de pior prognóstico (necrose).\n\n**O tratamento**: a maioria das duas partes do colo cirúrgico é conservadora; cirurgia (placa bloqueada ou haste) nas desviadas instáveis.\n\n**Na prova**: a fratura em duas partes mais frequente é a do **colo cirúrgico**.",
+  "correta": "O colo cirúrgico, na metáfise frágil abaixo dos tubérculos, é a fratura em duas partes mais comum.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0443": {
-  "conceito": "A classificação de **Scheibel** para as lesões da articulação acromioclavicular foi desenvolvida para refinar a distinção entre os tipos II e III de Rockwood, reconhecendo que nem toda lesão com aparência radiográfica de tipo III é, de fato, horizontalmente instável, uma distinção com implicação direta na decisão entre tratamento conservador e cirúrgico.\n\nO **tipo IIA** de Scheibel descreve uma situação em que já existe instabilidade vertical completa na própria articulação acromioclavicular (os ligamentos acromioclaviculares estão totalmente rompidos, permitindo separação vertical franca entre clavícula e acrômio), mas os ligamentos coracoclaviculares permanecem suficientemente íntegros para impedir qualquer translação horizontal anormal sob estresse dinâmico, ou seja, não há instabilidade horizontal demonstrável, mesmo com a instabilidade vertical já sendo completa.\n\nEssa combinação específica (vertical completa, horizontal ausente) é o que distingue o tipo IIA do **tipo IIB**, em que uma lesão parcial adicional dos ligamentos coracoclaviculares já permite alguma translação horizontal dinâmica detectável ao exame sob estresse.",
-  "correta": "D. O tipo IIA de Scheibel corresponde a uma instabilidade vertical completa na própria articulação acromioclavicular, mas sem translação horizontal dinâmica detectável, porque os ligamentos coracoclaviculares permanecem suficientemente íntegros.",
   "incorretas": {
-   "A": "Uma instabilidade vertical apenas parcial não corresponde ao tipo IIA, que se define justamente pela instabilidade vertical completa; a presença de translação horizontal dinâmica também não é compatível com esse subtipo.",
-   "B": "A instabilidade vertical completa está correta para o tipo IIA, mas a presença de translação horizontal dinâmica não é compatível com esse subtipo, essa característica define o tipo IIB, não o IIA.",
-   "C": "A instabilidade vertical no tipo IIA é completa, não apenas parcial, a ausência de translação horizontal dinâmica está corretamente descrita, mas o grau de instabilidade vertical não."
+   "A": "A instabilidade vertical parcial é do tipo II de Rockwood, e não há translação horizontal no tipo estável.",
+   "B": "A instabilidade vertical completa está certa, mas a translação horizontal define o tipo instável.",
+   "C": "A instabilidade vertical parcial é do tipo II de Rockwood."
   },
-  "geradoEm": "2026-09-14",
+  "conceito": "**Scheibel** propôs dividir o **tipo III de Rockwood** (luxação acromioclavicular com ruptura dos ligamentos acromioclaviculares e coracoclaviculares) conforme a **instabilidade horizontal**:\n\n**tipo IIIA** (estável): **instabilidade completa no plano vertical**, mas **sem translação horizontal dinâmica** e sem sobreposição da clavícula sobre o acrômio na incidência axilar em adução cruzada (Alexander);\n\n**tipo IIIB** (instável): instabilidade vertical completa **com translação horizontal** dinâmica: a clavícula sobrepõe o acrômio na incidência de Alexander.\n\n**Por que importa**: o **IIIA** costuma ir bem com tratamento **conservador**; o **IIIB** tende a evoluir com dor e disfunção da escápula e pode ser **operado** (a ISAKOS adotou essa divisão).\n\n**Os outros tipos de Rockwood**: I entorse; II acromioclavicular rota com coracoclaviculares íntegros (instabilidade **parcial** vertical); IV clavícula posterior; V aumento maior que 100% do espaço; VI clavícula inferior.\n\n**Na prova**: o tipo cobrado corresponde à instabilidade **completa no plano vertical**, **sem translação horizontal dinâmica**.",
+  "correta": "Na forma estável de Scheibel, a instabilidade vertical é completa, mas a clavícula não translada no plano horizontal.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0444": {
@@ -8084,14 +8084,14 @@
   "formato": "corrido"
  },
  "trauma-0977": {
-  "conceito": "A via de **Judet** é o acesso posterior amplo à escápula, usado nas fraturas do colo e do corpo com desvio. O paciente é posicionado em decúbito lateral ou pronado, e a incisão desenha um L invertido: o braço horizontal acompanha a espinha da escápula, de lateral para medial, e o vertical desce ao longo da borda medial (vertebral), e não da lateral.\n\nO primeiro plano levanta o deltoide posterior da espinha da escápula, rebatendo-o lateralmente (sua origem é a espinha, e não a porção lateral do acrômio). No plano profundo, faz-se o passo que define a via clássica: a liberação da origem do infraespinal a partir da fossa infraespinal da escápula, descolando-o (junto com o redondo menor) e rebatendo-os lateralmente em bloco, o que expõe a borda lateral, o colo e a face posterior da glenoide. O redondo menor não é desinserido da sua origem; ele acompanha o retalho.\n\nAs modificações modernas (Obremskey; Gauger e Cole) limitam esse descolamento, entrando pelo intervalo entre o infraespinal e o redondo menor apenas onde a redução exige (a chamada via de Judet modificada ou minimamente invasiva), com menor morbidade.\n\nO risco anatômico específico da via é o **nervo supraescapular**, que contorna a base da espinha pela incisura espinoglenoidal, a cerca de 2 cm da margem posterior da glenoide, para inervar o infraespinal: a tração excessiva do músculo o estira sobre essa incisura e produz paresia com perda da rotação lateral ativa.\n\nCuidado também com a **artéria circunflexa da escápula**, no espaço triangular, junto à borda lateral.",
-  "correta": "C. A LIBERAÇÃO DA ORIGEM DO INFRAESPINAL a partir da fossa infraespinal, com rebatimento lateral do músculo em bloco com o redondo menor, é a etapa que define o acesso clássico de Judet.",
   "incorretas": {
-   "A": "O redondo menor não é desinserido da sua origem: ele acompanha o retalho, rebatido lateralmente junto com o infraespinal. Desinseri-lo acrescentaria morbidade sem ganho de exposição e aproximaria a dissecção do nervo axilar.",
-   "B": "A incisão da via de Judet segue a ESPINHA da escápula e a sua borda MEDIAL (vertebral), desenhando um L invertido, e não a borda lateral. A borda lateral é o alvo da exposição, alcançada depois do descolamento do infraespinal.",
-   "D": "O que se levanta é o DELTOIDE POSTERIOR a partir da ESPINHA da escápula, e não a origem da porção lateral do deltoide, que se insere no acrômio e pertence a outras vias de acesso ao ombro."
+   "A": "O redondo menor é afastado, não desinserido, no acesso clássico.",
+   "B": "A incisão segue a espinha e a borda medial, não a borda lateral.",
+   "D": "Desinsere-se o deltoide posterior da espinha, não a porção lateral."
   },
-  "geradoEm": "2026-09-10",
+  "conceito": "O **acesso de Judet** é a via **posterior clássica** da escápula, para as fraturas do **colo** e do **corpo** e da glenoide posterior.\n\n**As etapas clássicas**:\n\n**incisão** ao longo da **espinha da escápula** e descendo pela **borda medial** (vertebral), em forma de bumerangue;\n\n**desinserção do deltoide posterior** da espinha da escápula;\n\n**liberação da origem do infraespinal** da fossa infraespinal, de medial para lateral, rebatendo o músculo inteiro como um retalho, com o **nervo supraescapular** e os vasos entrando pela incisura espinoglenoidal;\n\ncom o infraespinal levantado, o colo, o corpo e a borda lateral ficam expostos.\n\n**Os cuidados**: não tracionar demais o infraespinal (o **nervo supraescapular** fica preso na incisura espinoglenoidal); respeitar o **espaço quadrangular** (nervo axilar e circunflexa posterior) e o **triangular** (artéria circunscapular).\n\n**A variante modificada**: em vez de levantar o infraespinal, trabalha-se pelos **intervalos** entre o infraespinal e o redondo menor, com menos dissecção.\n\n**Na prova**: é etapa do acesso clássico de Judet a **liberação da origem do infraespinal** da escápula.",
+  "correta": "O Judet clássico levanta o infraespinal da fossa, de medial para lateral, expondo o colo e o corpo.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0978": {
@@ -8140,18 +8140,18 @@
   "conferido": false
  },
  "trauma-0982": {
-  "conceito": "A **dissociação escapulotorácica** é uma amputação interna: a escápula é arrancada lateralmente da parede torácica por tração violenta do membro, com ruptura da musculatura escapulotorácica, lesão do esqueleto (fratura da clavícula ou luxação acromioclavicular ou esternoclavicular) e, o que define o quadro, lesão neurovascular — artéria subclávia ou axilar em cerca de 90% dos casos e plexo braquial em cerca de 80%.\n\nO diagnóstico se confirma pela lateralização da escápula 1,5 vez maior que a do lado contralateral, na radiografia de tórax sem rotação, e a investigação segue com angiotomografia.\n\nO prognóstico depende **inteiramente** do plexo braquial, e não do vaso. Quando a lesão do plexo é completa e pré-ganglionar (avulsão das raízes, confirmada pela eletroneuromiografia, pela mielotomografia e pelos sinais clínicos — síndrome de Horner, paralisia do serrátil e do romboide, ausência de potencial sensitivo apesar da anestesia), não há função a restaurar: o membro fica flácido, insensível, pendente, sem qualquer possibilidade de preensão.\n\nNesse cenário, o membro deixa de ser um ativo e passa a ser um passivo: pesa, atrapalha o equilíbrio, sofre traumas repetidos que o paciente não percebe, ulcera, e é fonte de dor neuropática de desaferentação.\n\nA conduta consagrada é então a **amputação acima do cotovelo**, em regra associada à artrodese glenoumeral, que dá um coto estável, permite o uso de prótese e resolve a subluxação dolorosa do ombro flácido.\n\nA exploração do plexo não se justifica quando a lesão é comprovadamente pré-ganglionar e a função já não se restaurou, e a artrodese escapulotorácica não é o procedimento indicado nessa situação.",
-  "correta": "A. Com lesão completa do plexo braquial e função não restaurada, a indicação é a AMPUTAÇÃO ACIMA DO COTOVELO (em regra associada à artrodese glenoumeral), porque o membro flácido e insensível se torna um passivo funcional e uma fonte de trauma e de dor.",
   "incorretas": {
-   "B": "A artrodese escapulotorácica é procedimento indicado em outras situações (escápula alada por paralisia do serrátil anterior ou em distrofias musculares, por exemplo), e não resolve o problema de um membro insensível e sem função.",
-   "C": "A exploração do plexo braquial teria lugar na fase aguda ou subaguda, diante de lesão pós-ganglionar com possibilidade de reparo ou de transferência nervosa. Confirmada a lesão completa pré-ganglionar sem recuperação, ela não altera o desfecho.",
-   "D": "A artrodese glenoumeral isolada não devolve função a um membro sem plexo: ela é feita como COMPLEMENTO da amputação, para dar um coto estável e permitir a prótese, mas sozinha deixa o paciente com um braço rígido, insensível e inútil."
+   "B": "A artrodese escapulotorácica não devolve função a um membro sem plexo.",
+   "C": "A exploração do plexo serve às lesões incompletas, não à avulsão completa sem recuperação.",
+   "D": "A artrodese glenoumeral isolada não resolve o membro sem função."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
+  "conceito": "A **dissociação escapulotorácica** é uma \"**amputação interna**\": a escápula é arrancada lateralmente do tórax, com a pele intacta, e muitas vezes com **avulsão completa do plexo braquial** e lesão da artéria subclávia ou axilar.\n\n**O prognóstico do membro**: quando o plexo está **completamente** avulsionado (raízes arrancadas da medula) e a função **não volta**, o membro fica **sem movimento e sem sensibilidade**, pesado, doloroso e sujeito a lesões.\n\n**A principal indicação nesse cenário**: a **amputação acima do cotovelo** (transumeral), às vezes associada à **artrodese do ombro**. Ela retira o peso morto, alivia a dor e facilita o uso de **prótese** ou a adaptação do paciente.\n\n**Quando pensar cedo**: com lesão vascular e plexo completamente avulsionado, alguns autores indicam a **amputação precoce**, evitando cirurgias de revascularização sem benefício funcional.\n\n**As outras opções**:\n\n**exploração do plexo**: útil nas lesões **incompletas** ou com possibilidade de reparo;\n\n**artrodese glenoumeral** ou escapulotorácica isoladas: não resolvem o membro sem função.\n\n**Na prova**: na dissociação escapulotorácica com plexo completo e sem recuperação, a indicação é a **amputação acima do cotovelo**.",
+  "correta": "Sem função e sem sensibilidade, o membro vira peso morto; a amputação acima do cotovelo alivia e permite a prótese.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.), Cap. 33"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0983": {
   "incorretas": {
@@ -8168,46 +8168,46 @@
   "conferido": false
  },
  "trauma-0984": {
-  "conceito": "As **flictenas** (bolhas de fratura) são um achado comum nas fraturas distais da tíbia de alta energia, formadas pela separação traumática entre a epiderme e a derme por edema e forças de cisalhamento sobre a pele já comprometida pelo trauma, e existem dois tipos, com implicação clínica e prognóstica diferentes.\n\nAs flictenas **serosas** resultam de uma separação mais superficial e \"limpa\", exatamente no plano da junção dermoepidérmica (a lâmina lúcida), sem retenção significativa de células epidérmicas na base da bolha, um padrão de melhor prognóstico para a pele subjacente.\n\nJá as flictenas **hemorrágicas** resultam de uma separação mais profunda, atravessando a própria camada basal da epiderme, o que faz com que, ao contrário das serosas, a base da bolha hemorrágica retenha células epidérmicas aderidas, refletindo um dano mais extenso à integridade da pele e um prognóstico pior para a cicatrização, com maior risco de necrose e infecção se a incisão cirúrgica precisar atravessar essa área.\n\nNa prática, essa distinção orienta o planejamento da via de acesso: sempre que possível, evita-se incisar diretamente sobre flictenas hemorrágicas, preferindo desbridá-las e aguardar reepitelização parcial, ou planejar uma incisão alternativa que contorne a área mais comprometida.",
-  "correta": "B. A retenção de células epidérmicas na base da bolha é a principal diferença histológica entre a flictena hemorrágica (com retenção) e a serosa (sem retenção), refletindo planos de separação diferentes na pele.",
   "incorretas": {
-   "A": "A separação da junção dermoepidérmica ocorre em ambos os tipos de flictena, é a profundidade exata dessa separação, e a retenção ou não de células epidérmicas, que os distingue.",
-   "C": "A rotura de vasos linfáticos não é a diferença histológica classicamente descrita entre os dois tipos de flictena.",
-   "D": "A presença de linfócitos não é o critério histológico classicamente usado para diferenciar flictena serosa de hemorrágica, que se baseia no plano de separação e na retenção de células epidérmicas."
+   "A": "A separação dermoepidérmica ocorre nas duas; o que difere é a retenção de células epidérmicas.",
+   "C": "A rotura de vasos linfáticos não é o critério histológico.",
+   "D": "A presença de linfócitos não diferencia os dois tipos."
   },
-  "geradoEm": "2026-09-14",
-  "conferido": false,
+  "conceito": "Nas fraturas de **alta energia** da tíbia distal e do tornozelo, o inchaço rápido separa as camadas da pele e forma **flictenas** (bolhas). Elas aparecem em horas a poucos dias e mudam o momento da cirurgia.\n\n**Os dois tipos**:\n\n**flictena serosa** (líquido claro): a separação ocorre **dentro da epiderme** ou logo na junção, e **ficam células epidérmicas** sobre a derme. A pele se regenera com mais facilidade;\n\n**flictena hemorrágica** (líquido com sangue): a separação é **completa** na junção dermoepidérmica, **sem células epidérmicas retidas** sobre a derme, com lesão dos vasos da derme papilar. É uma lesão **mais profunda** e cicatriza mais devagar.\n\n**A principal diferença histológica**: a **retenção de células epidérmicas** na flictena serosa.\n\n**A importância clínica**: incisões sobre flictenas **hemorrágicas** têm mais complicações de ferida. Por isso se espera a **epitelização** (o sinal do enrugamento da pele), usando **fixador externo** em ponte enquanto isso.\n\n**Na prova**: a principal diferença entre a flictena serosa e a hemorrágica é a **retenção de células epidérmicas**.",
+  "correta": "Na flictena serosa ficam células epidérmicas sobre a derme; na hemorrágica, a separação é completa, sem elas.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.), Cap. 64"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0985": {
-  "conceito": "No trauma acetabular do **idoso**, o sinal da gaivota (gull sign), a impacção da porção superomedial do teto acetabular (achado descrito em outras questões deste acervo), assume um significado terapêutico particular.\n\nDiferente do paciente jovem, em quem o osso denso e a cartilagem saudável costumam permitir a elevação e o enxerto do fragmento impactado com boa perspectiva de consolidação e congruência duradoura, o idoso frequentemente tem osso osteoporótico e cartilagem já degenerada, condições que comprometem o sucesso de uma simples elevação e fixação do fragmento impactado.\n\nPor isso, a tendência atual no manejo dessa situação específica (impacção superomedial do teto no paciente idoso) é combinar a **osteossíntese** das colunas e paredes fraturadas (para restaurar a relação estrutural entre o acetábulo e o ilíaco) com uma **artroplastia total do quadril** aguda, a técnica conhecida como \"fix and replace\": fixam-se as colunas para recriar um leito ósseo estável e ganhar fixação para os componentes protéticos (muitas vezes com anéis ou cages de reforço acetabular), e substitui-se diretamente a superfície articular comprometida em vez de tentar reconstruí-la.\n\nEssa abordagem combinada evita depender da cicatrização de um osso frágil e de uma cartilagem já lesada para garantir um resultado funcional satisfatório, e permite mobilização e carga mais precoces do que a fixação isolada seguida de uma eventual artroplastia de conversão tardia, que carrega taxas de complicação mais altas do que a artroplastia primária.",
-  "correta": "C. No idoso, o sinal da gaivota afeta a região superomedial do teto acetabular, e a conduta preferencial combina a osteossíntese das colunas e paredes com a artroplastia total do quadril, dada a menor capacidade de reparo do osso osteoporótico e da cartilagem já degenerada.",
   "incorretas": {
-   "A": "A região superomedial está correta, mas a osteossíntese isolada, sem a artroplastia associada, tende a ter pior resultado no osso osteoporótico do idoso com cartilagem já comprometida.",
-   "B": "A região superolateral não é a classicamente descrita para a impacção do sinal da gaivota, que ocorre na porção superomedial do teto.",
-   "D": "A conduta combinada está correta, mas a região não é a superolateral, é a superomedial a classicamente descrita para esse achado."
+   "A": "A região está certa, mas a osteossíntese isolada falha com frequência no idoso.",
+   "B": "A região é superomedial, e a fixação isolada não é a preferida.",
+   "D": "A combinação com artroplastia está certa, mas a região é superomedial."
   },
-  "geradoEm": "2026-09-14",
-  "conferido": false,
+  "conceito": "O **sinal da gaivota** (gull sign) é uma **depressão** em V no **teto** do acetábulo, vista na radiografia em AP. Ele mostra a **impacção** do osso subcondral do teto pela cabeça do fêmur.\n\n**Onde fica**: na região **superomedial** do teto, a área de carga, em geral junto a fraturas da **coluna anterior** ou **transversas** do idoso, em que a cabeça é empurrada para dentro e para cima.\n\n**Por que é mau sinal**: o osso esmagado do teto é difícil de elevar e sustentar em osso osteoporótico. Com a **fixação isolada**, a falha e a evolução rápida para **artrose** são frequentes.\n\n**O tratamento preferido no idoso**: a **osteossíntese combinada à artroplastia total do quadril**: as colunas são fixadas (placas, cabos) para dar suporte, e uma **cúpula** é colocada no mesmo ato (modelo \"fix and replace\"). Permite **carga precoce**, fundamental no idoso.\n\n**Os outros sinais de mau prognóstico no idoso**: cominução da parede posterior, impacção marginal, lesão da cabeça femoral e artrose prévia.\n\n**Na prova**: o gull sign afeta o teto na região **superomedial** e favorece a **osteossíntese combinada à artroplastia total**.",
+  "correta": "A impacção superomedial do teto no idoso evolui mal com a fixação isolada; fixar e trocar a articulação no mesmo ato é o preferido.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 15ª edição (Azar, Sawyer, Throckmorton), Cap. 61"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0986": {
-  "conceito": "Quando a fratura supracondilar do fêmur se acompanha de comprometimento arterial grave, ou quando já se passou tempo significativo desde o trauma (aumentando o risco de isquemia irreversível), a sequência de tratamento segue um princípio central de controle de danos ortopédico: estabilizar o esqueleto **rapidamente**, com **fixação externa**, **antes** de proceder ao reparo vascular definitivo.\n\nA lógica é puramente mecânica: uma vez concluído o reparo vascular (seja uma sutura direta, seja um enxerto), qualquer manipulação óssea subsequente (a redução da fratura, a passagem de instrumentos, o próprio ato de fixar) arrisca tracionar, angular ou comprimir o reparo recém-feito, comprometendo sua patência.\n\nAo fixar o osso primeiro com um método rápido (a fixação externa não exige a mesma precisão nem o mesmo tempo cirúrgico de uma osteossíntese definitiva), o cirurgião garante um esqueleto estável sobre o qual o reparo vascular pode ser realizado sem risco de ser perturbado por uma manipulação óssea posterior.\n\nSó depois, com a perfusão restabelecida e o osso já estabilizado, considera-se a conversão para uma fixação interna definitiva.",
-  "correta": "C. A sequência correta é fixação externa (rápida, garantindo um esqueleto estável) seguida do reparo vascular, protegendo a reconstrução do vaso de qualquer manipulação óssea subsequente.",
   "incorretas": {
-   "A": "O reparo vascular antes da fixação, mesmo que externa, expõe a reconstrução do vaso ao risco de ser perturbada pela manipulação óssea necessária durante a fixação subsequente.",
-   "B": "Além de inverter a sequência recomendada, a fixação interna definitiva demanda tempo cirúrgico maior do que a situação de urgência vascular permite, a fixação externa é a escolhida justamente por sua rapidez.",
-   "D": "A fixação interna definitiva não é a indicada nesse contexto de urgência, além de inverter a sequência recomendada, ela demanda mais tempo do que a situação permite."
+   "A": "Reparar antes de estabilizar arrisca romper a anastomose nas manobras de fixação.",
+   "B": "Reparar e depois fixar internamente arrisca a anastomose e atrasa a estabilidade.",
+   "D": "A fixação interna demora e atrasa a revascularização."
   },
-  "geradoEm": "2026-09-14",
-  "conferido": false,
+  "conceito": "Na **fratura supracondilar do fêmur** com **lesão arterial** (artéria femoral superficial no hiato ou artéria poplítea), o tempo de isquemia decide o membro: a **necrose muscular** começa a partir de 4 a 6 horas.\n\n**O dilema**: o reparo vascular exige um membro **estável e no comprimento certo**; se a fratura for fixada depois, as manobras podem **romper** a anastomose. Mas fixar antes atrasa a revascularização.\n\n**A sequência indicada nessa situação**: **fixação externa rápida** primeiro, depois o **reparo vascular**.\n\n**Por que fixador externo**: ele é colocado em **minutos**, restaura o **comprimento** e o alinhamento e deixa o campo livre para o cirurgião vascular. A fixação interna definitiva, mais demorada, fica para depois.\n\n**Quando o tempo de isquemia já é longo**: muitos centros colocam primeiro um **shunt vascular temporário** (desvio), restabelecendo o fluxo em minutos; depois fixam (externa ou internamente) e por fim fazem o reparo definitivo.\n\n**Depois da revascularização**: **fasciotomia** profilática, pela síndrome de reperfusão.\n\n**Na prova**: a sequência correta é **fixação externa e reparo vascular**.",
+  "correta": "O fixador externo rápido devolve comprimento e estabilidade, e o reparo vascular é feito sem risco de romper depois.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.), Cap. 58"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0987": {
   "incorretas": {
@@ -8252,18 +8252,18 @@
   "conferido": false
  },
  "trauma-0990": {
-  "conceito": "As vias de acesso ao **rádio** se organizam por intervalos musculares, e três delas compartilham o mesmo plano em níveis diferentes, o que explica por que se confundem tanto.\n\nA via de **Kaplan** aborda a cabeça e o colo do rádio pelo intervalo entre o extensor radial curto do carpo e o extensor comum dos dedos. A via de **Thompson**, o acesso posterolateral (dorsal) ao terço médio e distal da diáfise do rádio, usa exatamente esse mesmo intervalo, apenas prolongado distalmente: Thompson é, na prática, Kaplan estendido.\n\nPor isso as duas compartilham a mesma estrutura de risco, o **nervo interósseo posterior**, que cruza o colo do rádio dentro do músculo supinador, sob a arcada de Frohse, a cerca de 3 a 4 cm da articulação radiocapitelar. E aqui está a armadilha que vale memorizar, porque a manobra de proteção se **inverte** conforme o nível: no acesso lateral à cabeça do rádio (Kaplan), **prona-se** o antebraço, o que leva o nervo medial e distalmente, para longe do campo; na via de Thompson, sobre a diáfise, **supina-se**, porque a supinação traz o supinador (com o nervo dentro dele) para a face anterior, afastando-o da linha de descolamento dorsal.\n\nAs outras vias citadas pertencem a territórios distintos: a de **Boyd** é posterior, entre o ancôneo e o extensor ulnar do carpo, descolando a musculatura da crista da ulna para expor em conjunto a ulna proximal, a articulação radioulnar proximal e a cabeça do rádio, é a via da Monteggia; a de **Kocher** usa o intervalo entre o ancôneo e o extensor ulnar do carpo, o plano mais posterior e mais seguro para o interósseo posterior, mas com risco específico ao ligamento colateral ulnar lateral; e a de **Hotchkiss**, o \"over the top\", é medial, descrita para expor o processo coronoide.",
-  "correta": "B. A via de Thompson é o prolongamento distal da via de KAPLAN: as duas usam o mesmo intervalo, entre o extensor radial curto do carpo e o extensor comum dos dedos, Kaplan sobre a cabeça e o colo, Thompson sobre a diáfise.",
   "incorretas": {
-   "A": "A via de BOYD é POSTERIOR e se desenvolve ao longo da crista da ULNA, descolando o ancôneo e o extensor ulnar do carpo em bloco para expor a ulna proximal e a articulação radioulnar proximal. É a via da lesão de Monteggia, e não o plano de Thompson.",
-   "C": "A via de KOCHER usa o intervalo entre o ANCÔNEO e o extensor ulnar do carpo, mais posterior que o de Kaplan e Thompson. Serve à cabeça do rádio e ao cotovelo, e a sua armadilha característica é a lesão do ligamento colateral ulnar lateral.",
-   "D": "A via de HOTCHKISS, o 'over the top', é MEDIAL, descrita para expor o processo coronoide e a face anteromedial do cotovelo. Está do lado oposto do antebraço e nada tem a ver com o acesso dorsal à diáfise do rádio."
+   "A": "Boyd é uma via posterolateral pela ulna, outro plano.",
+   "C": "Kocher usa o intervalo entre o ancôneo e o extensor ulnar do carpo.",
+   "D": "Hotchkiss descreveu um acesso medial ao cotovelo."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
+  "conceito": "A **via de Thompson** é o acesso **posterolateral** (dorsal) ao **rádio**, no intervalo entre o **extensor radial curto do carpo** e o **extensor comum dos dedos** (proximalmente) e entre o extensor radial curto e o **extensor longo do polegar** (distalmente).\n\n**A relação com outras vias**: a banca considerou a via de Thompson como um **prolongamento distal** da via de **Kaplan**, que usa o intervalo entre o extensor radial curto do carpo e o extensor comum dos dedos para chegar à cabeça do rádio.\n\n**O nervo em risco**: o **interósseo posterior**, que atravessa o **supinador** no terço proximal. Na via dorsal, **pronar** o antebraço afasta o nervo, e ele deve ser identificado no supinador.\n\n**As outras vias do cotovelo**:\n\n**Kocher**: entre o **ancôneo** e o **extensor ulnar do carpo**, mais posterior;\n\n**Boyd**: posterolateral, soltando o ancôneo e o supinador da ulna;\n\n**Hotchkiss**: acesso medial ao cotovelo (por divisão do flexor-pronador), não lateral.\n\n**Na prova**: a via de Thompson é um prolongamento distal da via de **Kaplan**.",
+  "correta": "A banca considerou a via de Thompson como continuação distal do intervalo de Kaplan, entre os extensores.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.), Cap. 42"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0991": {
   "conceito": "### Camadas do compartimento volar\n| Camada | Músculos |\n|---|---|\n| ==superficial== | ==pronador redondo==, flexor radial do carpo, palmar longo, flexor ulnar do carpo |\n| intermediária | flexor superficial dos dedos |\n| profunda | flexor profundo dos dedos, flexor longo do polegar, **pronador quadrado** |\n\n### Pronador redondo\n- Duas cabeças: **umeral** (epicôndilo medial) e **ulnar** (processo coronoide).\n- Trajeto ==oblíquo== até o **terço médio da face lateral do rádio**.\n- O **nervo mediano** passa entre as cabeças (síndrome do pronador).\n- Via de Henry: o pronador é desinserido (com o antebraço em pronação) para expor o terço médio do rádio.\n\n### Pronador quadrado\n- Lâmina **transversa** entre rádio e ulna distais; camada profunda.\n- Desinserido na via volar para placas do rádio distal.\n\n> **Na prova:** grande ventre da camada intermediária = ==flexor superficial dos dedos==",
@@ -8335,18 +8335,18 @@
   "conferido": false
  },
  "trauma-0996": {
-  "conceito": "No tratamento da fratura complexa e multifragmentar da tíbia (AO 42-C3) pelo princípio da **estabilidade relativa** (placa em ponte, técnica minimamente invasiva/MIPO), a via de acesso preferida evita incisões extensas sobre o foco de fratura, preservando a biologia dos fragmentos intermediários.\n\nPara a colocação de uma placa em ponte na face lateral/anterolateral da tíbia distal, a via **anterolateral** é a mais empregada, permitindo deslizar a placa por via submuscular/subcutânea entre uma pequena incisão proximal e outra distal, sem expor diretamente o foco de fratura.\n\nNessa via, a estrutura de maior risco na porção distal é o **nervo fibular (peroneal) superficial**, que deixa o compartimento lateral da perna perfurando a fáscia crural tipicamente no terço distal e passa a correr de forma subcutânea sobre a região anterolateral do tornozelo, exatamente o trajeto que uma incisão distal para introdução ou fixação da placa por essa via pode interceptar se a dissecção não for cuidadosa.\n\nReconhecer esse trajeto é o que permite planejar a incisão distal de forma segura, evitando uma neuropraxia ou até uma lesão permanente de um nervo puramente sensitivo, mas cuja lesão compromete a sensibilidade do dorso do pé.",
-  "correta": "D. A via anterolateral é a mais empregada para a placa em ponte MIPO da tíbia distal, e o nervo fibular superficial (que se torna subcutâneo no terço distal da perna, sobre essa mesma região) é a estrutura de maior risco na porção distal do acesso.",
   "incorretas": {
-   "A": "A via medial expõe o subcutâneo tibial com menos cobertura de partes moles, sendo geralmente menos favorecida nesse contexto; além disso, 'nervo tibial anterior' não corresponde a uma estrutura anatômica com esse nome.",
-   "B": "A via medial não é a mais empregada nessa técnica; e a artéria tibial anterior corre profundamente no compartimento anterior, protegida da dissecção subcutânea típica da via MIPO anterolateral distal.",
-   "C": "A via anterolateral está correta, mas a artéria fibular corre profundamente no compartimento posterior, não sendo a estrutura tipicamente em risco na dissecção subcutânea distal dessa via, esse risco é do nervo fibular superficial."
+   "A": "Não existe nervo tibial anterior, e a via medial deixa a placa subcutânea.",
+   "B": "A via medial deixa a placa sob a pele fina; a tibial anterior não é a estrutura distal típica dessa via.",
+   "C": "A via anterolateral está certa, mas a artéria fibular é profunda e posterior."
   },
-  "geradoEm": "2026-09-14",
-  "conferido": false,
+  "conceito": "Na fratura **complexa** da diáfise da tíbia (AO **42C3**, multifragmentária), o princípio da **estabilidade relativa** com **placa em ponte** por técnica **minimamente invasiva** (MIPO) preserva o hematoma e a irrigação dos fragmentos.\n\n**A abordagem mais indicada**: **anterolateral**. A placa desliza sob o **compartimento anterior**, encostada na face lateral da tíbia, por incisões pequenas acima e abaixo da fratura.\n\n**Por que anterolateral**: a face **medial** da tíbia é **subcutânea**; uma placa ali fica sob a pele fina, com mais problemas de ferida e irritação. Do lado anterolateral, a placa fica coberta por músculo.\n\n**A estrutura distal em risco**: o **nervo fibular superficial**, que atravessa a fáscia na face anterolateral do **terço distal** da perna (cerca de 10 a 12 cm acima do maléolo lateral). Ao deslizar a placa e colocar parafusos percutâneos distais, ele pode ser lesado. Também correm risco o **nervo fibular profundo** e a **artéria tibial anterior**, que descem junto à membrana interóssea.\n\n**Como evitar**: incisões abertas o suficiente para ver e proteger as estruturas onde os parafusos distais entram.\n\n**Na prova**: a abordagem é **anterolateral**, e a estrutura distal em risco é o **nervo fibular superficial**.",
+  "correta": "A placa vai pela face anterolateral, coberta por músculo, e o fibular superficial atravessa a fáscia no terço distal.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.), Cap. 63"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0997": {
   "incorretas": {
@@ -8363,18 +8363,18 @@
   "conferido": false
  },
  "trauma-0998": {
-  "conceito": "O tratamento **artroscópico** das fraturas da glenoide ganhou espaço porque evita as vias abertas amplas (a deltopeitoral para os fragmentos anteriores e a de Judet para os posteriores, esta com descolamento do infraespinal e risco ao nervo supraescapular) num osso em que a exposição custa caro em partes moles. Mas a indicação é seletiva, e depende inteiramente da geometria do traço.\n\nOs candidatos são as fraturas do **tipo I** de Ideberg-Goss, isto é, as fraturas da borda da glenoide: IA, anterior (a fratura de Bankart óssea, produzida pela luxação anterior), e IB, posterior (associada à luxação posterior e à crise convulsiva). São fragmentos periféricos, acessíveis por portais convencionais, que podem ser reduzidos com pinça e fixados com parafusos canulados percutâneos ou com âncoras, técnica que se beneficia ainda da possibilidade de tratar, no mesmo tempo, as lesões associadas de partes moles (labrum, ligamentos, manguito) e de retirar corpos livres.\n\nOs demais tipos não se prestam à artroscopia: o tipo II tem traço transverso que sai pela borda lateral e cria um fragmento inferior grande, difícil de reduzir e de fixar por portais; os tipos III e IV têm traços que atravessam o corpo da escápula e saem pelas bordas superior e medial, exigindo redução aberta; e os tipos V e VI, combinados e cominuídos, são francamente abertos.\n\nVale lembrar as indicações que precedem essa escolha técnica: opera-se a glenoide quando há subluxação persistente da cabeça umeral, degrau articular maior que 4 mm ou fragmento que envolva mais de um quarto da superfície articular, e, ao fixar um fragmento anterior (IA), os parafusos devem ficar **abaixo** do equador da glenoide, para não lesar o nervo supraescapular.",
-  "correta": "D. O tratamento artroscópico é mais frequentemente indicado nas fraturas da BORDA ANTERIOR OU POSTERIOR da glenoide, os tipos IA e IB de Ideberg-Goss, fragmentos periféricos acessíveis por portais e fixáveis com parafusos ou âncoras.",
   "incorretas": {
-   "A": "A região SUPERIOR corresponde ao tipo III de Ideberg, cujo traço atravessa o corpo e sai pela borda superior, associando-se com frequência a lesão do complexo suspensório superior, configuração que exige redução aberta.",
-   "B": "A borda anterior é candidata, mas a região INFERIOR corresponde ao tipo II, com traço transverso que sai pela borda lateral e cria um fragmento grande, de difícil redução e fixação por portais artroscópicos.",
-   "C": "A borda posterior é candidata, mas, pela mesma razão, a região inferior (tipo II) não é: o fragmento é grande, o traço atravessa a espessura do osso e a fixação exige acesso aberto."
+   "A": "As fraturas superiores e inferiores costumam exigir redução aberta.",
+   "B": "A anterior está certa, mas as inferiores costumam ser maiores e exigir cirurgia aberta.",
+   "C": "A posterior está certa, mas as inferiores costumam exigir cirurgia aberta."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
+  "conceito": "As **fraturas da glenoide** (da borda e da cavidade) podem ser tratadas por **artroscopia** quando o fragmento é acessível e a técnica permite reduzir e fixar sem abrir.\n\n**As regiões mais tratadas por artroscopia**: as fraturas da borda **anterior** (e anteroinferior) e da borda **posterior**.\n\n**Por quê**:\n\n**borda anterior**: é a fratura de **Bankart ósseo**, comum na luxação anterior; o fragmento pode ser fixado com **âncoras** ou parafusos por portais anteriores, junto com o reparo do lábio;\n\n**borda posterior**: o equivalente na luxação **posterior** (Bankart reverso); fixação com âncoras por portais posteriores.\n\n**As outras regiões**:\n\n**inferior**: com frequência envolve fraturas maiores e transversas do colo ou da cavidade;\n\n**superior** e fraturas que se estendem ao **corpo** (Ideberg III a VI): exigem redução aberta pela via posterior (Judet) ou anterior (deltopeitoral).\n\n**As vantagens da artroscopia**: tratar lesões associadas (lábio, manguito, corpos livres) e menos agressão às partes moles.\n\n**Na prova**: o tratamento artroscópico da glenoide é mais indicado nas fraturas **anteriores ou posteriores**.",
+  "correta": "As fraturas das bordas anterior e posterior, como o Bankart ósseo, são alcançadas e fixadas por portais artroscópicos.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.), Cap. 33"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0999": {
   "incorretas": {
