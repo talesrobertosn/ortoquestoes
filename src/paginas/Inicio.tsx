@@ -329,17 +329,17 @@ export function Inicio() {
               <p className="inicio-hoje__intro">{textoDoDia.explicacao}</p>
               {(
                 <div className="inicio-hoje__lista">
-                  <a className="inicio-hoje__item inicio-hoje__item--destaque" href={href('/treinar?situacao=revisarHoje&limite=20')}>
+                  <a className="inicio-hoje__item inicio-hoje__item--destaque" href={href('/treinar?foco=tudo&situacao=revisarHoje&limite=20')}>
                     <span className="inicio-hoje__icone"><Icone nome="calendario" tamanho={18} /></span>
                     <span className="inicio-hoje__rotulo"><strong>Revisar hoje</strong><small>{textoDoDia.revisar}</small></span>
                     <b className="numerico">{(contagens.porSituacao.revisarHoje ?? 0).toLocaleString('pt-BR')}</b>
                   </a>
-                  <a className="inicio-hoje__item" href={href('/treinar?situacao=naoRespondidas&limite=10')}>
+                  <a className="inicio-hoje__item" href={href('/treinar?foco=tudo&situacao=naoRespondidas&limite=10')}>
                     <span className="inicio-hoje__icone"><Icone nome="livro" tamanho={18} /></span>
                     <span className="inicio-hoje__rotulo"><strong>Questões novas</strong><small>{textoDoDia.novas}</small></span>
                     <b className="numerico">{(contagens.porSituacao.naoRespondidas ?? 0).toLocaleString('pt-BR')}</b>
                   </a>
-                  <a className="inicio-hoje__item" href={href('/treinar?situacao=dominadas')}>
+                  <a className="inicio-hoje__item" href={href('/treinar?foco=tudo&situacao=dominadas')}>
                     <span className="inicio-hoje__icone"><Icone nome="medalha" tamanho={18} /></span>
                     <span className="inicio-hoje__rotulo"><strong>Dominadas</strong><small>Ciclo de revisão completo</small></span>
                     <b className="numerico">{(contagens.porSituacao.dominadas ?? 0).toLocaleString('pt-BR')}</b>
@@ -366,7 +366,7 @@ export function Inicio() {
                   <div><dt>Revisões</dt><dd className="numerico">{temaFragil[1].pendentes.toLocaleString('pt-BR')}</dd></div>
                 </dl>
                 <p className="texto-2">De todos os temas que você já treinou, é onde você mais erra. Por isso é onde uma sessão curta rende mais pontos na prova.</p>
-                <a className="botao botao--principal" href={href(`/treinar?temas=${temaFragil[1].slug}&limite=10`)}>Treinar este tema <Icone nome="direita" tamanho={16} /></a>
+                <a className="botao botao--principal" href={href(`/treinar?foco=tudo&temas=${temaFragil[1].slug}&limite=10`)}>Treinar este tema <Icone nome="direita" tamanho={16} /></a>
               </section>
             })()}
           </div>
@@ -431,7 +431,7 @@ export function Inicio() {
                   const porcento = quantidade ? Math.round((feitas / quantidade) * 100) : 0
                   return (
                     <li key={tema.slug}>
-                      <a className="inicio-tema" href={href(`/treinar?temas=${tema.slug}`)}>
+                      <a className="inicio-tema" href={href(`/treinar?foco=tudo&temas=${tema.slug}`)}>
                         <span className="inicio-tema__nome">{tema.nome}</span>
                         <span className="inicio-tema__numeros numerico">{feitas > 0 ? `${feitas} de ${quantidade}` : `${quantidade} questões`}</span>
                         <span className="inicio-tema__trilho" aria-hidden="true"><span style={{ width: `${Math.max(feitas > 0 ? 2 : 0, porcento)}%` }} /></span>

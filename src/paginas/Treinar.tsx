@@ -119,7 +119,8 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     if (!indice) return null
     const temMao = indice.questoes.some((q) => q.cm === 1)
     if (!temMao) return null
-    const n = (foco: Foco) => contar(indice, { ...filtros, foco }, contexto).total
+    // Trocar de foco limpa as provas, então a contagem já mostra o resultado da troca.
+    const n = (foco: Foco) => contar(indice, { ...filtros, foco, provas: [] }, contexto).total
     return { ortopedia: n('ortopedia'), tudo: n('tudo'), mao: n('mao') }
   }, [indice, filtros, contexto])
 

@@ -113,8 +113,11 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
   const restante = Math.max(0, alvo - feitas)
 
   // Primeira resposta de hoje (não conta revisão de questão já vista).
-  const feitasHoje = Object.values(respondidas).filter((r) => {
-    const primeira = r.historico?.[0]?.em ?? r.q
+  // Só o que entra no cronograma: cirurgia da mão, cópias e anuladas não contam.
+  const feitasHoje = indice.questoes.filter((q) => {
+    if (q.dup || q.cm || q.an === 1) return false
+    const r = respondidas[q.id]
+    const primeira = r?.historico?.[0]?.em ?? r?.q
     return primeira !== undefined && primeira >= hoje.getTime()
   }).length
 
