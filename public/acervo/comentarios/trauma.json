@@ -5587,25 +5587,25 @@
   "conferido": false
  },
  "trauma-0717": {
-  "conceito": "O tratamento padrão da fratura femoral atípica (completa ou incompleta e sintomática) é a fixação com **haste cefalomedular**, de preferência longa, cobrindo todo o fêmur até o côndilo. A justificativa biomecânica é a mesma que vale para qualquer fratura subtrocantérica ou diafisária: a haste trabalha por dentro do canal, com um braço de alavanca mais curto e melhor compartilhamento de carga do que uma placa lateral, o que é especialmente importante num osso que já vem fragilizado pela supressão do turnover e sujeito a nova fratura ao longo da haste se ela for curta.\n\nA **redução aberta com placa (ORIF)** fica reservada para as situações em que a haste não é uma opção técnica: deformidade angular acentuada da diáfise (comum em quem usou bifosfonato por muitos anos e desenvolveu arqueamento anterolateral do fêmur), presença de hardware prévio que obstrui o canal, ou um canal medular estreito demais para acomodar a haste com segurança. Nesses cenários, a placa permite corrigir o eixo através de uma osteotomia associada ou contornar o obstáculo que a haste não conseguiria vencer.\n\nÉ importante não confundir esse critério de indicação (viabilidade técnica da via intramedular) com a completude da fratura: mesmo a fratura incompleta, quando sintomática, tem indicação de fixação profilática (em geral também com haste), e não é a incompletude em si que direciona para ORIF.",
-  "correta": "C. A ORIF com placa entra quando a fixação intramedular é tecnicamente inviável (por deformidade acentuada do fêmur, hardware prévio ou canal estreito), não como alternativa de rotina à haste.",
   "incorretas": {
-   "A": "A fratura incompleta sintomática tem indicação de fixação profilática, mas isso não a direciona para ORIF, a haste continua sendo a primeira escolha também nesse cenário, quando tecnicamente viável.",
-   "B": "'Proteger o colo femoral' não é o racional da placa longa na fratura atípica: a placa é usada quando a haste é inviável, e a extensão da fixação segue o objetivo de cobrir a diáfise fragilizada, não uma lógica de proteção do colo.",
-   "D": "A localização medial ou lateral da espícula óssea, achado radiográfico da fratura completa, não é o critério que decide entre haste e placa, essa decisão depende da viabilidade técnica da via intramedular."
+   "A": "A fratura incompleta dolorosa recebe haste profilática, não placa aberta.",
+   "B": "A placa longa não é a escolha; a haste cefalomedular protege o colo melhor.",
+   "D": "A espícula medial é um achado típico da fratura completa, não indicação de placa."
   },
-  "geradoEm": "2026-09-14",
+  "conceito": "A **fratura femoral atípica** (por uso prolongado de bisfosfonato) tem uma biologia **ruim**: a remodelação está suprimida, e a consolidação é **lenta**. O implante precisa **compartilhar a carga** e proteger o fêmur inteiro.\n\n**O tratamento de escolha**: a **haste intramedular cefalomedular** (com parafuso no colo), que:\n\n**fica no eixo** de carga, com braço de alavanca curto;\n\n**protege todo o fêmur**, inclusive o colo;\n\né inserida por **incisões pequenas**, sem abrir o foco, preservando o pouco de biologia que resta.\n\n**Quando usar redução aberta e placa**: só quando a **haste é impossível**: canal muito estreito, fêmur muito **arqueado** (comum em asiáticos e idosos com encurvamento lateral), deformidade prévia, prótese ou implante que bloqueie o canal. A placa tem mais **falha** e **pseudartrose** nessa fratura, porque fica fora do eixo e o osso consolida devagar.\n\n**As fraturas incompletas**: as dolorosas costumam receber **haste profilática**; as assintomáticas podem ser acompanhadas com suspensão do bisfosfonato e, às vezes, teriparatida.\n\n**A espícula medial**: é um achado típico da fratura completa, não uma indicação de placa.\n\n**Na prova**: a fratura atípica tem indicação de redução aberta e placa **quando a fixação com haste é cirurgicamente impossível**.",
+  "correta": "A haste é a escolha; a placa fica para quando a haste não pode ser passada, como no fêmur muito arqueado.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0718": {
-  "conceito": "A compressão ântero-posterior **tipo II** de Young e Burgess representa um estágio intermediário de gravidade entre o tipo I (lesão estável, só a sínfise) e o tipo III (lesão completamente instável, com ruptura de todos os elementos anteriores e posteriores).\n\nNo tipo II, além da diástase da sínfise púbica (tipicamente maior que **2,5 cm**, diferente do tipo I), os ligamentos sacroilíacos **anteriores** já estão rompidos, permitindo que a hemipelve gire externamente (\"padrão de livro aberto\").\n\nO que caracteriza especificamente o tipo II, e o distingue do tipo III, é que os ligamentos sacroilíacos **posteriores permanecem íntegros**, funcionando como uma dobradiça que ainda confere alguma estabilidade residual, sobretudo no plano vertical, mesmo com a rotação externa evidente.\n\nÉ essa integridade posterior que costuma permitir, na maioria dos casos de tipo II, um tratamento com redução e fixação anterior isolada, sem necessidade de fixação posterior adicional, diferente do tipo III, que exige abordagem dos dois componentes.",
-  "correta": "C. A integridade dos ligamentos sacroilíacos posteriores é o que caracteriza especificamente o tipo II de compressão ântero-posterior, distinguindo-o do tipo III, em que esses ligamentos também se rompem.",
   "incorretas": {
-   "A": "A fratura sacral no lado do impacto é um achado mais associado ao mecanismo de compressão lateral, não à compressão ântero-posterior tipo II.",
-   "B": "O desvio vertical da hemipelve é característico do cisalhamento vertical, não da compressão ântero-posterior tipo II, que produz rotação externa, não desvio vertical.",
-   "D": "Uma diástase de até 2,5 cm é mais característica do tipo I, mais estável, o tipo II tipicamente envolve uma diástase maior, acima desse valor."
+   "A": "A fratura sacral no lado do impacto é da compressão lateral.",
+   "B": "O desvio vertical da hemipelve é do cisalhamento vertical.",
+   "D": "A diástase de até 2,5 cm define a CAP I; na CAP II ela é maior."
   },
-  "geradoEm": "2026-09-14",
+  "conceito": "**Young e Burgess** dividem as lesões por **compressão anteroposterior** (CAP, o \"livro aberto\") em três graus:\n\n**CAP I**: diástase da sínfise **até 2,5 cm**; ligamentos sacroilíacos anteriores **estirados**, mas íntegros; estável;\n\n**CAP II**: diástase **maior que 2,5 cm**; ruptura dos ligamentos **sacroilíacos anteriores**, sacroespinhoso e sacrotuberoso; os ligamentos sacroilíacos **posteriores** ficam **intactos** e funcionam como a dobradiça do livro: a lesão é **instável na rotação**, mas **estável na vertical**;\n\n**CAP III**: ruptura **completa**, inclusive dos ligamentos sacroilíacos **posteriores**; instável na rotação e na vertical; muito sangramento.\n\n**As outras categorias**:\n\n**compressão lateral**: fratura por impacção do sacro **no lado do impacto** e ramos com traço horizontal;\n\n**cisalhamento vertical**: **desvio vertical** da hemipelve.\n\n**A conduta na CAP II**: fechar o livro (cinta pélvica, rotação interna dos membros) e fixar a sínfise (placa) e, muitas vezes, a sacroilíaca anterior.\n\n**Na prova**: a CAP II é caracterizada pelos **ligamentos sacroilíacos posteriores intactos**.",
+  "correta": "Na CAP II, os sacroilíacos posteriores ficam íntegros e funcionam como dobradiça: instável só na rotação.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0719": {
@@ -5632,14 +5632,14 @@
   "conferido": false
  },
  "trauma-0721": {
-  "conceito": "A fratura do úmero proximal no idoso não é um evento isolado do ombro: é a manifestação local de um problema sistêmico (a osteoporose) somado a um problema funcional, a queda.\n\nO mecanismo dominante é a queda da própria altura com a mão espalmada, e é exatamente esse mecanismo que explica qual é a fratura mais frequentemente associada: a do **rádio distal**. As duas compartilham o mesmo vetor (carga axial transmitida pelo membro superior em extensão), a mesma população (mulher acima dos 65 anos) e a mesma base fisiopatológica (osso trabecular metafisário porótico). Elas podem ocorrer no mesmo evento, no mesmo membro ou em membros diferentes, e o antecedente de uma é forte preditor da outra.\n\nVale situar as três no ranking das fraturas osteoporóticas não vertebrais acima dos 65 anos: primeiro o quadril, depois o rádio distal, depois o úmero proximal.\n\nDuas consequências práticas derivam disso, e são o que separa o bom do mau atendimento. A primeira é que a fratura do úmero proximal no idoso é um evento sentinela: exige investigação e tratamento da osteoporose (densitometria, cálcio, vitamina D, agente antirreabsortivo ou anabólico conforme o risco) e avaliação do risco de queda (medicamentos sedativos, hipotensão postural, acuidade visual, ambiente doméstico, força e equilíbrio). Sem isso, a próxima fratura tende a ser a do quadril, que é a de maior mortalidade.\n\nA segunda é que a associação com fratura do rádio distal muda a reabilitação: um paciente com os dois membros comprometidos, ou com punho e ombro do mesmo lado fraturados, perde a independência para transferências e higiene, e o planejamento precisa contemplar isso desde o início.",
-  "correta": "A. A fratura do RÁDIO DISTAL é a principal fratura associada: compartilha com a do úmero proximal o mecanismo (queda sobre a mão espalmada), a população (idosa, com osteoporose) e a base fisiopatológica.",
   "incorretas": {
-   "B": "A fratura do úmero distal no idoso existe e é problemática (é a que às vezes indica artroplastia total do cotovelo), mas é bem menos frequente e não compartilha com a do úmero proximal a mesma cadeia de transmissão de carga na queda.",
-   "C": "A fratura do fêmur proximal é a fratura osteoporótica não vertebral mais comum e a mais grave, mas o seu mecanismo é a queda LATERAL sobre o quadril, e não a queda sobre a mão espalmada. A associação temporal existe como risco futuro, não como lesão concomitante habitual.",
-   "D": "A fratura da escápula é rara e, quando ocorre, costuma indicar trauma de ALTA energia, o oposto do perfil de fragilidade do idoso que cai da própria altura."
+   "B": "A fratura do úmero distal associada é menos frequente.",
+   "C": "A fratura do fêmur proximal associada é menos frequente.",
+   "D": "A fratura da escápula vem de alta energia, rara na queda do idoso."
   },
-  "geradoEm": "2026-09-10",
+  "conceito": "A **fratura do úmero proximal** do idoso é uma fratura de **fragilidade**, típica da queda da própria altura, e muitas vezes vem acompanhada de outra.\n\n**A principal fratura associada**: a do **rádio distal**. Na queda, o idoso apoia a mão estendida (e quebra o punho) e bate o ombro, às vezes do mesmo lado.\n\n**O que essas fraturas significam**: as duas são **fraturas sentinela** da osteoporose. Uma fratura do punho ou do ombro depois dos 50 anos aumenta muito o risco de uma futura fratura do **quadril** e de vértebras.\n\n**A implicação prática**:\n\n**reabilitação**: com o punho e o ombro do mesmo lado fraturados, o paciente não consegue usar **andador** ou muleta; muitas vezes se fixa o punho para permitir apoio;\n\n**prevenção**: toda fratura de fragilidade deve levar à **investigação e ao tratamento da osteoporose** (densitometria, cálcio, vitamina D, antirreabsortivos) e à prevenção de quedas.\n\n**As outras opções**: o **úmero distal**, o **fêmur proximal** e a **escápula** se associam com menos frequência.\n\n**Na prova**: a principal fratura associada à do úmero proximal no idoso é a do **rádio distal**.",
+  "correta": "Na queda, o idoso apoia a mão e bate o ombro, e o rádio distal é a fratura associada mais comum.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0722": {
@@ -5677,25 +5677,25 @@
   "conferido": false
  },
  "trauma-0725": {
-  "conceito": "A **transição toracolombar**, de T11 a L2, concentra a maioria das fraturas da coluna e também a maior parte das lesões neurológicas, e há três razões somadas para isso.\n\nA primeira é **biomecânica**: é o ponto em que a cifose torácica rígida (estabilizada pela caixa torácica, pelas costelas e pelo esterno, que funcionam como uma quarta coluna) encontra a lordose lombar móvel. Toda a energia se concentra na fronteira entre um segmento que não se move e outro que se move.\n\nA segunda é **anatômica**, no plano articular: a orientação das facetas muda nessa altura, do plano coronal (torácico), que permite rotação, para o plano sagital (lombar), que a bloqueia, e uma zona de transição de orientação é uma zona de concentração de tensões.\n\nA terceira, e a que mais importa para o risco neurológico, é o **conteúdo do canal**: é entre T11 e L2 que se localiza o cone medular, ponto em que a medula termina (em regra em L1-L2 no adulto) e se continua com as raízes da cauda equina. Nessa faixa, uma mesma lesão pode atingir simultaneamente a medula, o cone e as raízes, produzindo quadros mistos: síndrome do cone medular, com disfunção esfincteriana precoce e simétrica, ou síndrome da cauda equina, com déficit assimétrico, dor radicular intensa e anestesia em sela.\n\nSome-se a isso que, acima do cone, o canal torácico é estreito em relação ao seu conteúdo e a vascularização medular é precária na zona de fronteira arterial de T4 a T9, o que faz com que os déficits nesse segmento, quando ocorrem, tendam a ser completos. Já abaixo de L2 o canal é amplo e o conteúdo são raízes móveis, que toleram melhor a agressão e têm mais chance de recuperação.",
-  "correta": "C. A região TORACOLOMBAR, entre T11 e L2, é a de maior risco: concentra as fraturas pela transição entre a coluna torácica rígida e a lombar móvel, e abriga o cone medular, onde medula, cone e raízes podem ser atingidos ao mesmo tempo.",
   "incorretas": {
-   "A": "O segmento de T1 a T4 é o mais protegido de todos pela caixa torácica, que funciona como uma quarta coluna estabilizadora, e é o de menor incidência de fraturas, embora, quando ocorrem, sejam de altíssima energia e com prognóstico neurológico sombrio.",
-   "B": "Entre T4 e T8 fica a zona de fronteira vascular da medula, o que torna os déficits ali particularmente graves quando ocorrem, mas a incidência de fraturas é baixa, pela proteção da caixa torácica, e o segmento não é o de maior risco global.",
-   "D": "Entre L3 e S1 o canal é amplo e o conteúdo são as raízes da cauda equina, móveis e mais tolerantes à agressão; além disso, a incidência de fraturas cai, porque a lordose e a musculatura dissipam a carga axial. O prognóstico neurológico ali é melhor."
+   "A": "A coluna torácica alta é protegida pelas costelas e fratura menos.",
+   "B": "A coluna torácica média também é protegida e rígida.",
+   "D": "A lombar baixa tem canal largo, com raízes que toleram melhor a compressão."
   },
-  "geradoEm": "2026-09-10",
+  "conceito": "Na coluna torácica e lombar, o risco de **lesão neurológica** muda conforme a região:\n\n**coluna torácica (T1 a T10)**: protegida pelas **costelas** e pelo esterno, que a tornam **rígida**; só quebra com muita energia. Quando lesa, o canal é **estreito** e a lesão costuma ser **completa**;\n\n**transição toracolombar (T11 a L2)**: a **região de maior risco**. É onde a coluna torácica rígida encontra a lombar **móvel**, concentrando as forças: é o local **mais frequente** das fraturas. Ali estão o **cone medular** (em torno de L1) e as raízes da **cauda equina**, com lesões mistas de medula e raízes;\n\n**coluna lombar baixa (L3 a S1)**: o canal é **largo** e só contém raízes da cauda equina, que toleram melhor a compressão; o risco de déficit é **menor**.\n\n**A consequência prática**: em toda fratura da transição toracolombar, fazer exame neurológico completo (incluindo **sensibilidade perineal**, reflexo bulbocavernoso e esfíncter anal) para avaliar o cone e a cauda.\n\n**Na prova**: a região de maior risco de lesão neurológica é a **toracolombar, entre T11 e L2**.",
+  "correta": "A transição toracolombar concentra as fraturas e abriga o cone medular e a cauda equina.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0726": {
-  "conceito": "Assim como em outras questões deste acervo sobre o mesmo tema, o sinal da gaivota (\"gull sign\") nas fraturas do acetábulo é indicativo de **impacção do teto acetabular** (o afundamento da porção superomedial da cúpula de sustentação de carga) e está associado a **mau prognóstico**.\n\nEsse mau prognóstico decorre diretamente da natureza da lesão: trata-se de dano direto à cartilagem articular numa região crítica para a distribuição de carga do quadril, que não se corrige espontaneamente com a simples redução do restante da fratura, exige identificação específica (idealmente por tomografia), elevação cuidadosa do fragmento impactado e sustentação com enxerto ósseo.\n\nQuando esse cuidado específico não é tomado, a superfície permanece incongruente mesmo com uma fixação aparentemente bem-sucedida das colunas e paredes envolvidas, favorecendo a evolução precoce para artrose pós-traumática, o que justifica classificar esse achado como um sinal de alerta prognóstico, e não como uma simples curiosidade radiográfica.",
-  "correta": "C. O sinal da gaivota é indicativo de impacção do teto acetabular e de mau prognóstico, por representar dano direto à cartilagem numa região crítica de sustentação de carga, que exige tratamento específico para evitar artrose pós-traumática precoce.",
   "incorretas": {
-   "A": "A impacção da cabeça femoral é um achado distinto (mais associado a luxações do quadril), não o que o sinal da gaivota representa, que é a impacção do teto acetabular.",
-   "B": "A subluxação da cabeça femoral é um achado de instabilidade articular, e o sinal da gaivota está associado a mau prognóstico, não a bom prognóstico.",
-   "D": "Um fragmento de parede posterior é um achado estrutural distinto, e o sinal da gaivota está associado a mau prognóstico, não a bom prognóstico."
+   "A": "A impacção piora o prognóstico, mas o sinal da gaivota é do teto, não da cabeça femoral.",
+   "B": "O sinal não indica subluxação da cabeça e não tem bom prognóstico.",
+   "D": "O sinal não representa um fragmento da parede posterior."
   },
-  "geradoEm": "2026-09-14",
+  "conceito": "O **sinal da gaivota** (gull sign) é uma **depressão em V** no **teto** do acetábulo na radiografia, lembrando as asas de uma gaivota.\n\n**O que indica**: **impacção do teto acetabular**: a cabeça do fêmur afundou o osso subcondral da área de **carga**, na região **superomedial**. É típico do **idoso** com osso osteoporótico, muitas vezes com fraturas da coluna anterior ou transversas.\n\n**O prognóstico**: **ruim** para a fixação isolada. A superfície de carga está esmagada e é difícil de elevar e sustentar; a fixação falha e a **artrose** aparece cedo.\n\n**A conduta preferida no idoso**: **fixação das colunas combinada à artroplastia total do quadril** no mesmo ato (\"fix and replace\"), que permite **carga precoce**.\n\n**Os outros sinais radiográficos do acetábulo**: o **sinal do esporão** (spur sign) nas duas colunas; o fragmento da **parede posterior** atrás da cabeça; a **impacção da cabeça femoral** (que também piora o prognóstico, mas não é o sinal da gaivota).\n\n**Na prova**: o sinal da gaivota indica **impacção do teto acetabular** e **mau prognóstico**.",
+  "correta": "A impacção superomedial do teto esmaga a área de carga e evolui mal com a fixação isolada.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0727": {
@@ -5710,14 +5710,14 @@
   "conferido": false
  },
  "trauma-0728": {
-  "conceito": "Nas fraturas subtrocantéricas, a escolha do implante tem impacto biomecânico direto, e a literatura ortopédica converge para a **haste cefalomedular** como o dispositivo de melhor desempenho, especialmente em padrões instáveis como o AO 31-A3 (fratura transversa ou reversa oblíqua, sem apoio medial).\n\nA vantagem é geométrica: a haste ocupa o canal medular, e por isso seu braço de alavanca em relação ao eixo mecânico do fêmur é muito mais curto do que o de uma placa lateral fixada por fora do osso. Um braço de alavanca curto significa menos momento fletor sobre o implante a cada passo, menos tensão no ponto de fixação proximal e, na prática, menor taxa de falha em varo e de quebra do implante, justamente os problemas clássicos quando se tenta fixar essa fratura com dispositivos extramedulares.\n\nO **parafuso dinâmico do quadril (DHS)** a 135°, historicamente usado em fraturas transtrocantéricas, tem desempenho ruim na subtrocantérica porque o traço de fratura fica distal ao parafuso de compressão, sem apoio para a haste do implante resistir à força em varo do fragmento proximal, sendo considerado contraindicado nesse padrão.\n\nA **placa-lâmina a 90°** e o **parafuso condilar dinâmico (DCS) a 90°** são alternativas extramedulares mais robustas que o DHS, mas ainda assim inferiores à haste nesse traço em termos de rigidez e de resistência à falha em varo, por manterem o braço de alavanca longo característico de qualquer implante lateral.",
-  "correta": "B. A haste cefalomedular tem o menor braço de alavanca por trabalhar dentro do canal, o que resulta em menor momento fletor sobre o implante e melhor resistência ao colapso em varo, o desempenho biomecânico superior nesse traço fraturário.",
   "incorretas": {
-   "A": "A placa-lâmina de 90° é uma opção extramedular válida, mas mantém um braço de alavanca mais longo do que a haste, por trabalhar por fora do canal, desempenho biomecânico inferior nesse padrão de fratura.",
-   "C": "O parafuso dinâmico do quadril a 135° é considerado contraindicado na fratura subtrocantérica: sem apoio distal ao parafuso de compressão, o implante não resiste bem à força em varo do fragmento proximal.",
-   "D": "O parafuso condilar dinâmico a 90° é um dispositivo extramedular robusto, mas com o mesmo braço de alavanca longo dos implantes laterais, inferior à haste cefalomedular no desempenho biomecânico desse traço."
+   "A": "A placa lâmina tem braço de alavanca longo e mais falhas que a haste.",
+   "C": "O DHS de 135° desliza paralelo ao traço reverso, separa a fratura e medializa a diáfise.",
+   "D": "O DCS de 95° tem braço de alavanca longo e falha mais que a haste."
   },
-  "geradoEm": "2026-09-14",
+  "conceito": "A fratura **AO 31A3** é a fratura **trocantérica de traço invertido** (reverso) ou **transversa** (31A3.1: oblíqua reversa simples). O traço corre de **baixo e lateral** para **cima e medial**, e a região se comporta como uma fratura **subtrocantérica**.\n\n**O problema mecânico**: a força de deslizamento do parafuso cefálico, em vez de comprimir o foco, **afasta** os fragmentos; a diáfise tende a **medializar**, e o fragmento proximal vai para o varo.\n\n**O implante com melhor desempenho**: a **haste cefalomedular**:\n\n**fica no eixo** de carga, com braço de alavanca curto;\n\nfunciona como uma **parede lateral** dentro do canal, impedindo a medialização da diáfise;\n\n**compartilha** a carga com o osso.\n\n**Os implantes laterais**:\n\n**DHS de 135°**: **contraindicado**: o deslizamento ao longo do parafuso, paralelo ao traço reverso, separa a fratura e medializa a diáfise;\n\n**placa lâmina de 95°** e **DCS de 95°**: melhores que o DHS, mas com braço de alavanca longo e mais falhas que a haste.\n\n**Na prova**: na fratura AO 31A3.1, o implante com melhor desempenho biomecânico é a **haste cefalomedular**.",
+  "correta": "A haste fica no eixo, divide a carga e funciona como parede lateral, impedindo a medialização no traço reverso.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0729": {
@@ -5754,14 +5754,14 @@
   "conferido": false
  },
  "trauma-0732": {
-  "conceito": "O ponto de entrada ideal para a haste intramedular da tíbia, na visão radioscópica anteroposterior, é um dos detalhes técnicos mais cobrados sobre esse procedimento, porque um erro de poucos milímetros já pode produzir o mau alinhamento discutido em outras questões deste acervo.\n\nNa incidência AP, o ponto correto situa-se **imediatamente medial à espinha tibial lateral**, ou seja, próximo à base da espinha lateral, mas ainda do lado medial dela, alinhado ao eixo longitudinal verdadeiro do canal medular da tíbia.\n\nEsse ponto reflete a anatomia da superfície articular proximal da tíbia: o canal medular não está centralizado exatamente sob o centro do platô, mas discretamente deslocado, e a espinha lateral serve como referência anatômica visível na radioscopia para localizar esse eixo verdadeiro.\n\nErrar esse ponto para dentro (medial à posição correta) ou para fora (lateral, sobre ou além da espinha lateral) reproduz exatamente os mecanismos de mau alinhamento (valgo ou varo) discutidos nas questões sobre ponto de entrada excessivamente medial ou lateral. O ponto correto é, portanto, o equilíbrio entre essas duas posições extremas.",
-  "correta": "C. O ponto de entrada ideal, na incidência anteroposterior, situa-se imediatamente medial à espinha tibial lateral, alinhado ao eixo longitudinal verdadeiro do canal medular da tíbia.",
   "incorretas": {
-   "A": "A espinha medial não é a referência anatômica classicamente usada para localizar o ponto de entrada ideal, a referência é a espinha lateral.",
-   "B": "Um ponto exatamente sobre a espinha lateral, e não imediatamente medial a ela, tende a produzir uma trajetória mais lateralizada, associada a desvio em varo.",
-   "D": "Um ponto imediatamente lateral à espinha medial já representa uma posição mais lateralizada do que o ponto ideal, associada ao risco de varo."
+   "A": "A espinha medial fica medial demais e leva ao valgo.",
+   "B": "Sobre a espinha lateral, a entrada fica lateral demais.",
+   "D": "Imediatamente lateral à espinha medial ainda fica medial ao eixo do canal."
   },
-  "geradoEm": "2026-09-14",
+  "conceito": "Na **haste intramedular da tíbia**, o **ponto de entrada** decide o alinhamento, sobretudo nas fraturas **proximais**.\n\n**O ponto ideal**:\n\n**no AP**: **imediatamente medial à espinha tibial lateral** (alinhado com o eixo do canal medular);\n\n**no perfil**: na borda **anterior** do planalto, logo atrás da superfície anterior da tíbia (na \"zona segura\" entre a articulação e a inserção do ligamento patelar).\n\n**Por que esse ponto**: o eixo do canal da tíbia passa ligeiramente **lateral** ao centro do planalto. Entrar ali deixa a haste descer **reta** pelo canal.\n\n**Os erros**:\n\n**entrada medial** demais: a haste bate na cortical lateral e abre a fratura proximal em **valgo**;\n\n**entrada lateral** demais: risco de **varo** e de lesar o menisco lateral;\n\n**entrada distal** e posterior demais: favorece o **antecurvato** (procurvato) e pode romper a cortical posterior.\n\n**Os riscos da entrada**: lesão do **menisco** e da raiz meniscal, do ligamento intermeniscal e da cartilagem.\n\n**Na prova**: o ponto ideal de entrada no AP é **imediatamente medial à espinha lateral**.",
+  "correta": "Logo medial à espinha tibial lateral, a haste fica alinhada com o canal e desce reta.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0733": {
@@ -5787,14 +5787,14 @@
   "conferido": false
  },
  "trauma-0735": {
-  "conceito": "Traduzir **Craig** em **Robinson** exige ter as duas estruturas na cabeça.\n\nCraig divide a clavícula em três grupos (I, terço médio; II, terço distal — com os cinco tipos de Neer; III, terço medial) e o grupo II se subdivide assim: tipo I, traço lateral aos coracoclaviculares, estável; tipo II, traço medial a eles (IIA, com os dois ligamentos presos ao fragmento distal; IIB, com o conoide roto e apenas o trapezoide ancorado), instável; tipo III, intra-articular da acromioclavicular sem desvio; tipo IV, descolamento periosteal da criança (a \"pseudoluxação\"); tipo V, cominuída, em que os ligamentos coracoclaviculares permanecem presos apenas a um fragmento intermediário livre, de modo que nem o fragmento medial nem o lateral estão suspensos — comportamento francamente instável, equivalente ao do tipo II.\n\nRobinson divide o osso em quintos: tipo 1, quinto medial; tipo 2, três quintos médios; tipo 3, quinto lateral. A letra descreve o desvio (A, sem desvio ou com contato cortical preservado; B, desviada) e o algarismo final detalha a configuração — no tipo 3, o subgrupo 1 corresponde às fraturas em que os ligamentos coracoclaviculares mantêm a suspensão do fragmento medial, e o subgrupo 2 àquelas em que essa suspensão se perde, isto é, as instáveis com desinserção ligamentar.\n\nO tipo V de Craig, cominuído e com os ligamentos num fragmento intermediário livre, corresponde portanto a um **Robinson 3B2**: quinto lateral, desviado e com perda da suspensão ligamentar. A consequência prática é a mesma do tipo II: alta taxa de pseudartrose no tratamento conservador (em torno de 40%) e indicação cirúrgica frequente.",
-  "correta": "D. O tipo V de Craig (cominuído, com os ligamentos coracoclaviculares presos a um fragmento intermediário livre) corresponde ao ROBINSON 3B2: quinto lateral, desviado e com perda da suspensão ligamentar.",
   "incorretas": {
-   "A": "3A1 designa uma fratura do quinto lateral SEM DESVIO e com a suspensão ligamentar preservada, o oposto do tipo V de Craig, que é cominuído e instável.",
-   "B": "3A2 também é uma fratura SEM desvio (a letra A), o que exclui de saída a correspondência com o tipo V de Craig, cuja marca é a instabilidade com desvio.",
-   "C": "3B1 acerta o desvio, mas descreve a configuração em que a suspensão coracoclavicular do fragmento medial se mantém, justamente o que NÃO ocorre no tipo V, em que os ligamentos ficam presos a um fragmento intermediário livre."
+   "A": "O 3A1 é lateral sem desvio e extra-articular, como o Neer I.",
+   "B": "O 3A2 é lateral sem desvio e intra-articular, como o Neer III.",
+   "C": "O 3B1 é a fratura lateral desviada extra-articular, como o Neer II."
   },
-  "geradoEm": "2026-09-10",
+  "conceito": "As fraturas da **clavícula lateral** têm duas classificações que se correspondem:\n\n**Neer e Craig** (grupo II de Allman, terço distal):\n\n**tipo I**: entre os ligamentos ou lateral a eles, sem desvio;\n\n**tipo II** (IIA e IIB): desviadas, com perda do apoio coracoclavicular do fragmento medial;\n\n**tipo III**: intra-articular, na acromioclavicular;\n\n**tipo IV**: na criança, fragmento fora do tubo de periósteo;\n\n**tipo V**: **cominutiva**, com os ligamentos coracoclaviculares presos a um fragmento **inferior** solto; os fragmentos principais ficam **desviados**.\n\n**Robinson** (tipo 3, quinto lateral):\n\n**3A**: sem desvio: 3A1 extra-articular, 3A2 intra-articular;\n\n**3B**: **desviada**: 3B1 extra-articular, **3B2** intra-articular (ou cominutiva com extensão articular, conforme a correspondência usada).\n\n**A correspondência cobrada**: a banca considerou que o **Craig V** (cominutivo e desviado) corresponde ao **Robinson 3B2**.\n\n**Na prova**: o Craig V corresponde ao tipo **3B2** de Robinson.",
+  "correta": "A banca considerou o Craig V, cominutivo e desviado, equivalente ao Robinson 3B2.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0745": {
@@ -5809,25 +5809,25 @@
   "conferido": false
  },
  "trauma-0746": {
-  "conceito": "Nem toda fratura diafisária da tíbia tem o mesmo risco de síndrome compartimental, e dois fatores se destacam no perfil de risco.\n\nO primeiro é a **localização**: as fraturas do terço proximal têm risco maior do que as do terço médio e distal. A explicação é anatômica: é na região proximal da perna que os quatro compartimentos têm o maior volume muscular e as fáscias são mais espessas e menos complacentes, ao passo que, no terço distal, o conteúdo é sobretudo tendíneo e o envelope é mais frouxo; além disso, a proximidade da bifurcação da artéria poplítea e o hematoma metafisário volumoso somam pressão nesse nível.\n\nO segundo fator é o **perfil do paciente**: predomina o homem jovem. O sexo masculino aparece de forma consistente nas séries, e a explicação aceita combina duas coisas — maior exposição a traumas de alta energia e, sobretudo, maior massa muscular dentro de compartimentos cuja fáscia tem complacência praticamente fixa, de modo que o mesmo volume de sangramento eleva muito mais a pressão. É a mesma razão pela qual a idade jovem, abaixo dos 35 anos, é apontada como o principal fator de risco individual: o idoso, com massa muscular reduzida pela sarcopenia, tem mais volume de reserva dentro do compartimento.\n\nDuas advertências completam o quadro e valem mais do que a lista: a fratura exposta não protege, porque a abertura da pele não descomprime as fáscias, e a incidência nesse grupo é igual ou maior pela energia envolvida; e a fixação com haste intramedular, embora seja o tratamento de escolha, não dispensa a vigilância clínica seriada nas primeiras 48 horas, porque a síndrome pode se instalar antes, durante ou depois da cirurgia.",
-  "correta": "D. São fatores de risco a fratura do TERÇO PROXIMAL (onde o volume muscular é maior e as fáscias, mais rígidas) e o SEXO MASCULINO, por maior massa muscular dentro de compartimentos de complacência fixa e maior exposição a traumas de alta energia.",
   "incorretas": {
-   "A": "Erra as duas informações. O terço DISTAL da perna tem conteúdo predominantemente tendíneo e envelope fascial mais frouxo, o que reduz o risco; e o sexo feminino não é o de maior risco.",
-   "B": "Acerta o sexo masculino, mas erra a localização: é o terço PROXIMAL, com maior volume muscular e fáscias mais rígidas, que concentra o risco, e não o distal.",
-   "C": "Acerta a localização proximal, mas erra o sexo. O predomínio observado é masculino, atribuído à maior massa muscular dentro de compartimentos de complacência fixa e à maior exposição a traumas de alta energia."
+   "A": "O terço distal tem menos músculo, e o sexo feminino tem menos risco.",
+   "B": "O sexo masculino está certo, mas o risco é maior no terço proximal.",
+   "C": "O terço proximal está certo, mas o risco é maior no sexo masculino."
   },
-  "geradoEm": "2026-09-10",
+  "conceito": "Na **fratura diafisária da tíbia** do adulto, alguns fatores aumentam o risco de **síndrome compartimental aguda**:\n\n**sexo masculino**: mais massa muscular dentro de uma fáscia espessa e mais trauma de alta energia;\n\n**idade jovem**: pelo mesmo motivo;\n\n**fratura do terço proximal**: os compartimentos são mais **volumosos** em músculo no terço proximal da perna, e a fratura ali sangra para dentro deles; a energia também costuma ser maior;\n\n**alta energia**, cominução e fraturas **fechadas** (a ferida da exposta descomprime parcialmente).\n\n**Por que o terço proximal**: no terço distal, a perna tem mais **tendão** e menos músculo; o volume a ser comprimido é menor.\n\n**A vigilância**: nas fraturas de alto risco, exame **seriado** (dor desproporcional, dor ao estiramento passivo), atenção à **analgesia crescente** e medida da pressão nos pacientes que não colaboram. Delta P (diastólica menos compartimento) menor que 30 mmHg indica fasciotomia.\n\n**Na prova**: são fatores de risco a fratura do terço **proximal** e o sexo **masculino**.",
+  "correta": "O terço proximal tem mais músculo dentro dos compartimentos, e os homens têm mais massa muscular e mais trauma de alta energia.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0747": {
-  "conceito": "A consolidação viciosa de uma fratura isolada do **côndilo femoral medial** produz um padrão de deformidade tridimensional do joelho, decorrente da perda assimétrica de suporte estrutural nesse compartimento.\n\nQuando o côndilo medial cicatriza numa posição desviada, o compartimento medial do joelho perde parte da sua altura e do seu suporte estrutural normal em relação ao lateral, favorecendo uma deformidade em **varo**, o eixo mecânico se desvia em direção ao lado deficiente.\n\nAssociado a esse componente angular, a incongruência resultante entre os côndilos costuma produzir também um componente de **rotação medial** da tíbia em relação ao fêmur (já que a superfície articular medial alterada guia a tíbia para essa posição durante o movimento) e uma tendência à **flexão** residual do joelho, decorrente da retração de partes moles e da cicatrização em posição não plenamente estendida.\n\nEssa combinação de três planos de deformidade (rotação medial, flexão e varo) é o que torna a consolidação viciosa dessa fratura particularmente incapacitante, exigindo com frequência uma osteotomia corretiva, que precisa ser planejada nos três planos simultaneamente (e não apenas corrigir o varo isoladamente) para restaurar de fato o eixo mecânico e a cinemática do joelho.",
-  "correta": "B. A consolidação viciosa do côndilo femoral medial produz deformidade em rotação medial, flexão e varo, refletindo a perda assimétrica de suporte estrutural nesse compartimento do joelho.",
   "incorretas": {
-   "A": "A rotação lateral não é o componente rotacional classicamente descrito para a deformidade do côndilo medial, é a rotação medial.",
-   "C": "Nem a rotação lateral nem a extensão nem o valgo correspondem ao padrão de deformidade descrito para o côndilo medial, que envolve rotação medial, flexão e varo.",
-   "D": "A rotação medial está correta, mas a extensão e o valgo não correspondem ao padrão descrito, a deformidade envolve flexão e varo, não extensão e valgo."
+   "A": "O varo e a flexão estão certos, mas a rotação é medial.",
+   "C": "O valgo com extensão e rotação lateral seria a deformidade do côndilo lateral.",
+   "D": "A rotação medial está certa, mas o joelho fica em varo e flexão."
   },
-  "geradoEm": "2026-09-14",
+  "conceito": "A **fratura do côndilo femoral medial** (AO 33-B2) é uma fratura **articular parcial**: o côndilo medial se separa do resto do fêmur. Se consolida fora do lugar, o joelho fica deformado.\n\n**A deformidade da consolidação viciosa**: o côndilo medial tende a **subir** e a girar, puxado pelos músculos e pela carga:\n\n**varo**: o côndilo medial encurtado deixa o lado medial do joelho mais baixo;\n\n**flexão**: o fragmento bascula para trás, puxado pela cabeça medial do **gastrocnêmio**;\n\n**rotação medial**: o fragmento gira sobre o eixo longo.\n\n**A consequência**: sobrecarga do compartimento **medial**, instabilidade e **artrose** precoce.\n\n**Por isso a regra**: as fraturas unicondilares desviadas do fêmur distal são tratadas com **redução anatômica** e fixação com **parafusos** de compressão e **placa de suporte** (antideslizante) no lado do côndilo fraturado. A haste não fixa um côndilo isolado.\n\n**O contraste**: a consolidação viciosa do côndilo **lateral** leva ao **valgo**.\n\n**Na prova**: a consolidação viciosa do côndilo medial produz **rotação medial, flexão e varo**.",
+  "correta": "O côndilo medial sobe e gira, deixando o joelho em varo, com flexão e rotação medial do fragmento.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0748": {
