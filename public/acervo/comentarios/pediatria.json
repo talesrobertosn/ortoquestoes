@@ -4779,58 +4779,58 @@
   "conferido": false
  },
  "pediatria-0438": {
-  "conceito": "### Kingella kingae\n- Gram-negativo da orofaringe; principal agente de infecção osteoarticular de ==6 meses a 4 anos== em muitas séries.\n- ==Cresce mal em meio comum==: culturas frequentemente negativas.\n- Diagnóstico: inocular o líquido em ==frasco de hemocultura== e sobretudo ==PCR== específica.\n- Quadro mais brando: febre baixa, PCR e leucócitos pouco elevados.\n- Sensível a betalactâmicos (resistente a vancomicina e clindamicina).\n\n### Agentes por idade\n| Idade | Agentes |\n|---|---|\n| neonato | S. aureus, estreptococo B, gram-negativos |\n| ==6 meses a 4 anos== | ==Kingella==, S. aureus |\n| > 4 anos | S. aureus |\n| adolescente sexualmente ativo | gonococo |\n\n> **Na prova:** séptica com cultura negativa = ==Kingella kingae (PCR)==",
-  "correta": "**Kingella kingae.**\n- Fastidiosa, não cresce em meio comum.\n- PCR identifica.",
   "incorretas": {
-   "A": "**Haemophilus.**\n- Raro após a vacina; cresce em cultura.",
-   "B": "**S. pyogenes.**\n- Cresce facilmente.",
-   "C": "**S. aureus.**\n- Mais comum; cresce bem."
+   "A": "O *Haemophilus influenzae* tipo B ficou raro depois da vacina e cresce em cultura.",
+   "B": "O *Streptococcus pyogenes* cresce facilmente nos meios comuns.",
+   "C": "O *Staphylococcus aureus* é o agente mais comum e cresce bem em cultura."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **artrite séptica** na criança é causada por agentes diferentes conforme a idade:\n\n**recém-nascido**: *Staphylococcus aureus*, estreptococo do grupo B e bacilos gram-negativos;\n\n**6 meses a 4 anos**: ***Kingella kingae*** e *S. aureus*; em muitas séries, a *Kingella* é o principal agente nessa faixa;\n\n**acima de 4 anos**: *S. aureus*;\n\n**adolescente sexualmente ativo**: gonococo.\n\n**Por que a *Kingella* escapa da cultura**: é um bacilo gram-negativo que vive na **orofaringe** e é **fastidioso**: **cresce mal nos meios de cultura comuns**. Muitas artrites \"com cultura negativa\" nessa idade são por *Kingella*.\n\n**Como identificar**: inocular o líquido articular em **frasco de hemocultura** aumenta a chance de crescimento, mas o método mais sensível é a **PCR** específica.\n\n**O quadro**: costuma ser **mais brando** que o do *S. aureus*: febre baixa, PCR e leucócitos pouco elevados, muitas vezes depois de uma infecção de vias aéreas ou estomatite.\n\n**O tratamento**: sensível a **betalactâmicos** (cefalosporinas); é resistente a vancomicina e muitas vezes a clindamicina.\n\n**Os outros agentes**: o *Haemophilus* ficou raro depois da vacina; *S. aureus* e *S. pyogenes* crescem bem em cultura.\n\n**Na prova**: artrite séptica com cultura negativa que precisa de PCR = ***Kingella kingae***.",
+  "correta": "A *Kingella kingae* cresce mal em meios comuns, e a PCR é o método mais sensível para identificá-la.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0439": {
-  "conceito": "### Pé talo vertical congênito\n- ==Luxação dorsal fixa da talonavicular==; tálus vertical, calcâneo em equino.\n- Aspecto de ==mata-borrão== (rocker-bottom): planta convexa, cabeça do tálus palpável na planta.\n- Presente ==ao nascer==; rígido.\n\n### Partes moles retraídas\n| Grupo | Estruturas |\n|---|---|\n| dorsais | ==tibial anterior==, extensores dos dedos e do hálux, fibulares |\n| posteriores | tendão calcâneo (equino) |\n\n### Associações (cerca de 50%)\n- Artrogripose, mielomeningocele, síndromes cromossômicas (trissomias 13, 18), Larsen.\n\n### Diagnóstico e tratamento\n- RX em ==flexão plantar máxima==: talonavicular não reduz (tálus oblíquo reduz).\n- ==Dobbs==: gessos reversos ao Ponseti + pino talonavicular + tenotomia do calcâneo.\n- Diferencial: ==tálus oblíquo==, pé ==calcaneovalgo== postural.\n\n### Deformidade\n| Segmento | Posição |\n|---|---|\n| ==retropé== | ==equinovalgo== (calcâneo em equino e valgo) |\n| ==mediopé/antepé== | ==dorsiflexão== e abdução (navicular luxado dorsalmente) |\n\n> **Na prova:** talo vertical = retropé ==equinovalgo==, antepé em ==dorsiflexão==",
-  "correta": "**Equinovalgo e dorsiflexão.**\n- Retropé em equino, antepé para cima.\n- Mata-borrão.",
   "incorretas": {
-   "A": "**Varo.**\n- Retropé fica valgo.",
-   "C": "**Pé torto.**\n- Equinovaro com flexão plantar.",
-   "D": "**Flexão plantar.**\n- Antepé em dorsiflexão."
+   "A": "A dorsiflexão do antepé está certa, mas o retropé fica em valgo, não em varo.",
+   "C": "Equinovaro com antepé em flexão plantar é o padrão do pé torto.",
+   "D": "O retropé em equinovalgo está certo, mas o antepé fica em dorsiflexão, não em flexão plantar."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **pé talo vertical congênito** é uma **luxação dorsal fixa** do navicular sobre a cabeça do tálus. O pé fica com a forma de \"**mata-borrão**\" (rocker-bottom): a planta convexa, com a cabeça do tálus palpável embaixo.\n\n**A posição de cada parte**:\n\n**retropé**: em **equinovalgo**; o calcâneo está em equino (puxado pelo tendão calcâneo curto) e em valgo;\n\n**tálus**: quase **vertical**, apontando para a planta;\n\n**mediopé e antepé**: em **dorsiflexão** e abdução, porque o navicular está luxado em cima do colo do tálus, puxado pelo tibial anterior e pelos extensores.\n\n**O contraste com o pé torto**: o pé torto é **equinovaro**, com o antepé aduzido e em cavo. O talo vertical tem o retropé em equino, mas é **valgo**, e o antepé vai para **cima**.\n\n**O diagnóstico**: radiografia em **flexão plantar máxima**: no talo vertical, o navicular não volta para cima da cabeça do tálus; no **tálus oblíquo**, volta.\n\n**O tratamento**: **método de Dobbs**, com gessos em sentido inverso ao do Ponseti, pino talonavicular e tenotomia do tendão calcâneo.\n\n**Na prova**: no talo vertical, o retropé fica em **equinovalgo** e o mediopé e antepé em **dorsiflexão**.",
+  "correta": "O calcâneo fica em equino e valgo, e o antepé vai para cima, em dorsiflexão, com o navicular luxado sobre o tálus.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0440": {
-  "conceito": "### Torção tibial externa patológica\n- Normal no adulto: cerca de 20° (ângulo coxa-pé).\n- Aumentada (> 18 a 30°) no adolescente: marcha com pé para fora.\n\n### Associações\n| Condição | Relação |\n|---|---|\n| ==coalizão tarsal== | pé plano rígido, compensação rotacional |\n| anteversão femoral aumentada | síndrome do mau alinhamento (compensação) |\n| mielomeningocele | torção externa |\n| Blount | torção ==interna== |\n\n### Síndrome do mau alinhamento\n- Anteversão femoral + torção tibial externa: dor patelofemoral, instabilidade patelar.\n- Osteotomias derrotativas em casos graves.\n\n### Rotacionais na criança\n| Causa | Idade típica |\n|---|---|\n| metatarso aduto | lactente |\n| torção tibial interna | 1 a 3 anos |\n| anteversão femoral | 3 a 8 anos |\n\n### Torção tibial interna\n- Associada ao ==pé torto congênito== (componente rotacional da deformidade) e à posição intrauterina.\n- Blount também gira a tíbia para dentro.\n- Marcha com pés para dentro de 1 a 3 anos: a maioria corrige sozinha até 4 a 5 anos.\n\n### Valores no lactente\n| Parâmetro | Nascimento/lactente | Adulto |\n|---|---|---|\n| ==anteversão femoral== | ==cerca de 40°== | cerca de 15° |\n| torção tibial | ==interna== (coxa-pé -5°) | externa, cerca de 20° |\n\n- Com o crescimento: fêmur ==desroda== e tíbia ==roda para fora==.\n\n> **Na prova:** aos 6 meses = ==anteversão de 40° e tíbia em rotação interna==",
-  "correta": "**40° e tíbia interna.**\n- Anteversão máxima ao nascer.\n- Tíbia roda externamente depois.",
   "incorretas": {
-   "A": "**10°.**\n- Valor do adulto ou menor.",
-   "C": "**Os dois errados.**\n- Anteversão alta, tíbia interna.",
-   "D": "**Tíbia externa.**\n- Padrão adulto."
+   "A": "A tíbia interna está certa, mas 10° de anteversão é valor de adulto ou menor; no lactente é cerca de 40°.",
+   "C": "Erra os dois pontos: a anteversão é alta, de cerca de 40°, e a tíbia está em rotação interna.",
+   "D": "A anteversão de 40° está certa, mas a tíbia do lactente está em rotação interna; a externa é o padrão do adulto."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Os ossos do membro inferior mudam de **torção** com o crescimento. No bebê, o fêmur e a tíbia ainda estão na posição herdada do útero:\n\n**anteversão femoral**: o colo aponta para a frente em relação aos côndilos. Ao **nascer**, é de cerca de **40°**; cai aos poucos até cerca de **15°** no adulto. Aos **6 meses**, ainda está perto de 40°;\n\n**torção tibial**: no lactente é **interna** (ângulo coxa-pé de cerca de -5°); com o crescimento, a tíbia **roda para fora**, chegando a cerca de +5° aos 2 anos, +10° aos 8 anos e 10 a 20° no adulto.\n\n**O que isso explica na clínica**:\n\n**pés para dentro de 1 a 3 anos**: torção tibial interna, que corrige sozinha na maioria até 4 a 5 anos;\n\n**pés para dentro de 3 a 8 anos**: anteversão femoral aumentada, que também melhora com o tempo na maioria;\n\n**metatarso aduto**: no lactente.\n\n**Os associados**: a torção tibial interna se associa ao pé torto e à doença de Blount.\n\n**Na prova**: aos 6 meses, espera-se **anteversão femoral de cerca de 40°** e **tíbia em rotação interna**.",
+  "correta": "No lactente, a anteversão femoral é de cerca de 40° e a tíbia ainda está em torção interna.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0441": {
-  "conceito": "### Recidiva do pé torto após Ponseti\n| Tipo | Achado | Conduta |\n|---|---|---|\n| estrutural (rígida) | adução, cavo, varo ou equino fixos | ==novos gessos== ± tenotomia |\n| ==dinâmica== | ==supinação do antepé na marcha== (balanço), pé passivamente corrigível | ==transferência do tibial anterior== |\n\n### Transferência do tibial anterior\n- Destino: ==cuneiforme lateral== (ou cuboide em alguns serviços).\n- Pré-requisitos: pé ==flexível==, deformidade fixa já corrigida (gessos antes), idade em geral acima de 2,5 a 3 anos (cuneiforme lateral ossificado).\n- Mecanismo: tibial anterior dominante sobre os fibulares supina o pé ao dorsifletir.\n\n### Causa principal de recidiva\n- ==Não adesão à órtese de abdução== (botas com barra) até 4 a 5 anos.\n\n### Órtese de abdução (Denis Browne / botas com barra)\n| Pé | Rotação externa |\n|---|---|\n| ==afetado== | ==60 a 70°== |\n| ==normal== (unilateral) | ==30 a 40°== |\n\n- Barra na largura dos ombros; dorsiflexão de 10 a 15°.\n- ==23 h/dia por 3 meses==, depois ==noturna até 4 a 5 anos==.\n\n### Sequência de Ponseti (CAVE)\n| Ordem | Deformidade | Manobra |\n|---|---|---|\n| 1 | ==Cavo== | ==supinar o antepé== e ==elevar (dorsifletir) o 1º metatarso== (alinhar antepé ao retropé) |\n| 2 | Aduto | abduzir o pé com contrapressão na cabeça do tálus |\n| 3 | Varo | corrige junto com a abdução (calcâneo roda sob o tálus) |\n| 4 | Equino | por último; ==tenotomia percutânea== do tendão calcâneo se < 15° de dorsiflexão |\n\n- Nunca pronar o antepé: piora o cavo.\n- Nunca pressionar o calcâneo (bloqueia a rotação).\n\n> **Na prova:** órtese = ==23 h por 3 meses==, depois ==12 a 14 h (noite e sonecas) até 4 anos==",
-  "correta": "**14 horas até 4 anos.**\n- Noite e sonecas.\n- Não adesão é a principal causa de recidiva.",
   "incorretas": {
-   "A": "**8 h até 1 ano.**\n- Pouco e curto demais.",
-   "B": "**Até 1 ano.**\n- Tempo insuficiente.",
-   "C": "**8 horas.**\n- Insuficiente."
+   "A": "Oito horas por dia até 1 ano é pouco tempo de uso e período curto demais.",
+   "B": "As 14 horas estão certas, mas parar com 1 ano deixa o pé exposto à recidiva.",
+   "C": "O período até 4 anos está certo, mas 8 horas por dia são insuficientes."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Depois dos gessos e da tenotomia do **método de Ponseti**, o pé corrigido precisa ser mantido. A **órtese de abdução** (botas presas a uma barra) é o que segura a correção.\n\n**O esquema de uso**:\n\n**23 horas por dia** durante os **3 primeiros meses** após o último gesso;\n\ndepois, **12 a 14 horas por dia**, durante a **noite e as sonecas**, até cerca de **4 anos** de idade (alguns serviços estendem até 5).\n\n**Como montar**: pé torto em 60 a 70° de rotação externa, pé normal (nos casos unilaterais) em 30 a 40°, barra na largura dos ombros e cerca de 10 a 15° de dorsiflexão.\n\n**Por que tanto tempo**: as partes moles do pé torto tendem a retrair de novo enquanto a criança cresce. A **falta de adesão à órtese** é a **principal causa de recidiva**; com uso correto, a recidiva cai muito.\n\n**Como ajudar a adesão**: explicar aos pais que a órtese é parte do tratamento, não um extra; usar desde o primeiro dia sem pausas; brincar com a criança mexendo as pernas juntas.\n\n**A recidiva**: tratada com novos gessos e, se houver supinação dinâmica depois dos 2,5 a 3 anos, transferência do tibial anterior.\n\n**Na prova**: depois dos 3 meses, a órtese é usada **14 horas por dia até 4 anos**.",
+  "correta": "Após os 3 meses de uso integral, a órtese fica 12 a 14 horas por dia, à noite e nas sonecas, até cerca de 4 anos.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0442": {
-  "conceito": "### Neurofibromatoses\n| Tipo | Nome | Gene | Achados | Ortopedia |\n|---|---|---|---|---|\n| ==NF1== | ==periférica== (von Recklinghausen) | neurofibromina (17q) | café-com-leite, neurofibromas, Lisch, Crowe | ==frequente== |\n| NF2 | central | merlina (22q) | ==schwannoma vestibular bilateral==, meningiomas | rara |\n| schwannomatose | | SMARCB1, LZTR1 | schwannomas múltiplos dolorosos | |\n\n### NF1 na ortopedia\n| Manifestação | Detalhe |\n|---|---|\n| escoliose | a mais comum; distrófica (raio curto) |\n| pseudartrose congênita da tíbia | anterolateral |\n| hipertrofia de membro | elefantíase |\n| TMBNP | transformação do plexiforme |\n| deficiência de vitamina D, osteoporose | |\n\n- Herança dominante; metade mutação nova.\n\n### Manchas café com leite: além da NF1\n| Síndrome | Componentes | Borda da mancha |\n|---|---|---|\n| NF1 | neurofibromas, Lisch, ≥ 6 manchas | lisa (costa da Califórnia) |\n| ==McCune-Albright== | displasia fibrosa poliostótica + ==manchas== + puberdade precoce | irregular (costa do Maine) |\n| ==Jaffe-Campanacci== | ==fibromas não ossificantes múltiplos== + manchas | |\n| Mazabraud | displasia fibrosa + ==mixomas== intramusculares | sem manchas |\n| Maffucci | encondromas + ==hemangiomas== | sem manchas |\n\n> **Na prova:** café com leite fora da NF1 = ==McCune-Albright e Jaffe-Campanacci==",
-  "correta": "**Jaffe-Campanacci e McCune-Albright.**\n- Ambas cursam com manchas café com leite.\n- FNO múltiplos e displasia fibrosa.",
   "incorretas": {
-   "A": "**Mazabraud.**\n- Displasia fibrosa e mixomas, sem manchas.",
-   "B": "**Mazabraud e Maffucci.**\n- Nenhuma com manchas típicas.",
-   "D": "**Maffucci.**\n- Hemangiomas, não manchas café com leite."
+   "A": "McCune-Albright está certa, mas Mazabraud associa displasia fibrosa a mixomas, sem manchas típicas.",
+   "B": "Nenhuma das duas cursa com manchas café com leite típicas: Mazabraud tem mixomas e Maffucci, hemangiomas.",
+   "D": "Jaffe-Campanacci está certa, mas Maffucci tem hemangiomas, não manchas café com leite."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "As **manchas café com leite** são manchas de pele marrom-claras e uniformes. A mais conhecida é a da **neurofibromatose tipo 1**, mas não é a única:\n\n**neurofibromatose tipo 1**: 6 ou mais manchas, de **bordas lisas** (\"costa da Califórnia\"), com neurofibromas, nódulos de Lisch na íris, efélides axilares e inguinais, escoliose e pseudartrose congênita da tíbia;\n\n**síndrome de McCune-Albright**: **displasia fibrosa poliostótica**, **manchas café com leite** de **bordas irregulares** (\"costa do Maine\"), em geral do mesmo lado das lesões ósseas, e **puberdade precoce** ou outras endocrinopatias;\n\n**síndrome de Jaffe-Campanacci**: **fibromas não ossificantes múltiplos** com **manchas café com leite**, às vezes com retardo mental e alterações oculares e cardíacas; alguns consideram uma variante da NF1.\n\n**As que não têm manchas**:\n\n**síndrome de Mazabraud**: displasia fibrosa com **mixomas intramusculares**;\n\n**síndrome de Maffucci**: encondromas múltiplos com **hemangiomas** de partes moles, com alto risco de condrossarcoma.\n\n**Na prova**: além da NF1, cursam com manchas café com leite a **síndrome de Jaffe-Campanacci** e a **McCune-Albright**.",
+  "correta": "Jaffe-Campanacci (fibromas não ossificantes múltiplos) e McCune-Albright (displasia fibrosa poliostótica) cursam com manchas café com leite.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0443": {
@@ -4867,14 +4867,14 @@
   "conferido": false
  },
  "pediatria-0446": {
-  "conceito": "### Sinostose radioulnar congênita\n- Falha de segmentação entre rádio e ulna proximais (7ª semana).\n- ==Bilateral em cerca de 60%==, geralmente ==isolada==.\n- Pode associar-se a síndromes (Apert, Klinefelter e aneuploidias do X, artrogripose).\n- Antebraço fixo, em geral ==pronado==; compensação pelo ombro e punho.\n- Diagnóstico tardio (compensação eficiente).\n\n### Classificação (Tachdjian / Cleary-Omer)\n- Fibrosa × óssea; cabeça do rádio normal, ausente ou luxada.\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| neutro ou leve pronação | ==observação== |\n| pronação > 60° com limitação | osteotomia derrotativa (neutro a 10-20° de pronação) |\n| risco | ==síndrome compartimental== nas grandes correções |\n\n### Embriologia\n- Rádio e ulna nascem de uma ==massa cartilaginosa comum==; separam-se longitudinalmente de distal para proximal.\n- Falha dessa separação ==antes da rotação lateral== do membro superior: antebraço preso na posição fetal, em ==pronação==.\n\n> **Na prova:** sinostose = falha antes da ==rotação lateral==, antebraço em ==pronação==",
-  "correta": "**Rotação lateral, pronação.**\n- Antebraço fixo na posição fetal.\n- Pronação é o achado habitual.",
   "incorretas": {
-   "A": "**Rotação medial.**\n- O membro superior roda lateralmente.",
-   "B": "**Medial e supinação.**\n- Ambos errados.",
-   "C": "**Supinação.**\n- Fica em pronação."
+   "A": "A pronação está certa, mas o membro superior roda lateralmente, não medialmente.",
+   "B": "Erra os dois pontos: a rotação é lateral e o antebraço fica em pronação.",
+   "C": "A rotação lateral está certa, mas o antebraço fica em pronação, não em supinação."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **sinostose radioulnar congênita** é a fusão do rádio com a ulna, em geral na parte **proximal**. Na embriologia, o rádio e a ulna nascem de uma **massa cartilaginosa comum** e se separam de distal para proximal por volta da 7ª semana. Se a separação falha **antes da rotação lateral** do membro superior, o antebraço fica preso na posição fetal, em **pronação**.\n\n**As características**:\n\n**bilateral** em cerca de 60%, em geral **isolada**; às vezes associada a síndromes (Apert, aneuploidias do X, artrogripose);\n\n**antebraço fixo**, sem pronossupinação, em geral **pronado**;\n\n**diagnóstico tardio**, porque o ombro e o punho compensam bem; os pais notam dificuldade para receber objetos na palma ou para comer.\n\n**O tratamento**:\n\n**posição neutra ou pronação leve**: **observação**;\n\n**pronação acima de cerca de 60°** com limitação funcional: **osteotomia derrotativa** pela massa da fusão, levando o antebraço para neutro ou leve pronação (o lado dominante um pouco mais pronado);\n\n**cuidado**: correções grandes de uma vez arriscam **síndrome compartimental** e lesão vascular.\n\n**Tentativas de separar os ossos** costumam falhar, com nova fusão.\n\n**Na prova**: a sinostose ocorre por falha de separação antes da **rotação lateral** do membro, com antebraço em **pronação**.",
+  "correta": "O membro superior roda lateralmente no desenvolvimento; a falha de separação antes disso deixa o antebraço preso em pronação.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0447": {
@@ -4890,14 +4890,14 @@
   "conferido": false
  },
  "pediatria-0448": {
-  "conceito": "### Raquitismo: laboratório\n| Tipo | Ca | P | FA | PTH | Detalhe |\n|---|---|---|---|---|---|\n| nutricional (vit. D) | ↓/N | ↓ | ↑ | ↑ | 25-OH-D baixa |\n| hipofosfatêmico (vit. D resistente, ligado ao X) | N | ==↓↓== | ↑ | N | PHEX, FGF23 alto; perda renal de P |\n| vit. D dependente I | ↓ | ↓ | ↑ | ↑ | 1α-hidroxilase |\n| vit. D dependente II | ↓ | ↓ | ↑ | ↑ | receptor, alopecia |\n| ==osteodistrofia renal== | ↓ | ==↑== | ↑ | ↑↑ | rim ==não excreta fosfato== |\n\n### Ortopedia da osteodistrofia renal\n- Geno valgo, ==epifisiólise== (inclusive em locais atípicos), fraturas.\n- Controle metabólico antes de operar.\n\n> **Na prova:** fosfato alto no raquitismo = ==osteodistrofia renal==",
-  "correta": "**Osteodistrofia renal.**\n- Rim retém fosfato.\n- Hiperparatireoidismo secundário.",
   "incorretas": {
-   "A": "**Nutricional.**\n- Fosfato baixo.",
-   "C": "**Vitamina D resistente.**\n- Fosfato muito baixo (perda renal).",
-   "D": "**Vitamina D dependente.**\n- Fosfato baixo."
+   "A": "No raquitismo nutricional o fosfato está baixo.",
+   "C": "No raquitismo resistente à vitamina D, o rim perde fosfato, que fica muito baixo.",
+   "D": "No raquitismo dependente de vitamina D o fosfato também está baixo."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **raquitismo** é a falha de **mineralização** do osso e da fise em crescimento. O **laboratório** separa os tipos, e o **fosfato** é a chave:\n\n**nutricional** (falta de vitamina D): cálcio normal ou baixo, **fosfato baixo**, fosfatase alcalina e PTH altos, 25-OH-vitamina D baixa;\n\n**hipofosfatêmico** (\"resistente à vitamina D\", ligado ao X): o rim **perde fosfato** (FGF23 alto, gene PHEX); **fosfato muito baixo**, cálcio e PTH normais;\n\n**dependente de vitamina D tipo I** (falta da 1α-hidroxilase) e **tipo II** (receptor defeituoso, com alopecia): cálcio e **fosfato baixos**, PTH alto;\n\n**osteodistrofia renal**: o rim doente **não excreta fosfato** e não ativa a vitamina D. O **fosfato fica alto**, o cálcio cai e o **PTH sobe muito** (hiperparatireoidismo secundário).\n\n**A ortopedia na osteodistrofia renal**: geno valgo, fraturas e **epifisiólise**, inclusive em locais atípicos e em crianças mais novas. O controle metabólico vem antes de qualquer cirurgia.\n\n**Na prova**: o fosfato está **aumentado** na **osteodistrofia renal**.",
+  "correta": "Na osteodistrofia renal, o rim não excreta fosfato, que fica alto, com hiperparatireoidismo secundário.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0449": {
@@ -4912,25 +4912,25 @@
   "conferido": false
  },
  "pediatria-0450": {
-  "conceito": "### Embriologia do quadril\n- ==Massa mesenquimal única e contínua== forma o esboço femoral e o acetabular (4ª a 6ª semana).\n- A ==interzona== se cavita (7ª semana) e origina a articulação: cartilagens, sinovial, ligamento redondo, pulvinar, lábio.\n- Articulação formada por volta da 11ª semana.\n\n### Por que importa na DDQ\n- Cabeça e acetábulo ==dependem um do outro==: a cabeça centrada é o estímulo para o acetábulo se aprofundar.\n- Redução concêntrica precoce permite remodelação acetabular.\n\n### Fatores de risco da DDQ\n- Primogênita, feminino, pélvica, história familiar, oligoidrâmnio, torcicolo, metatarso aduto.\n\n> **Na prova:** fenda articular do quadril = ==7ª semana==",
-  "correta": "**Sétima semana.**\n- Cavitação da interzona.\n- Articulação completa por volta da 11ª.",
   "incorretas": {
-   "A": "**Quinta.**\n- Ainda massa mesenquimal.",
-   "C": "**Nona.**\n- Já há cavidade.",
-   "D": "**Décima primeira.**\n- Articulação formada."
+   "A": "Na 5ª semana ainda há só a massa mesenquimal contínua.",
+   "C": "Na 9ª semana a cavidade articular já está em formação avançada.",
+   "D": "Por volta da 11ª semana a articulação já está formada."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **quadril** se forma a partir de uma **massa de mesênquima única e contínua** no broto do membro, entre a 4ª e a 6ª semana. Dessa massa saem tanto o esboço da cabeça femoral quanto o do acetábulo.\n\n**A sequência**:\n\n**4ª a 6ª semana**: condensação do mesênquima no formato do fêmur proximal e do acetábulo, ainda unidos;\n\n**7ª semana**: surge uma **fenda** na **interzona** (a faixa entre os dois esboços), que **cavita** e começa a separar a cabeça do acetábulo. Dessa interzona saem a cartilagem articular, a sinovial, o ligamento redondo, o pulvinar e o lábio;\n\n**por volta da 11ª semana**: a articulação já está **formada**, com cabeça e acetábulo separados e congruentes.\n\n**Por que isso importa na displasia do quadril**: a cabeça e o acetábulo **dependem um do outro** para se desenvolver. A cabeça centrada é o estímulo para o acetábulo se aprofundar; por isso a redução concêntrica precoce permite que o acetábulo remodele.\n\n**Na prova**: a fenda no mesênquima que inicia a articulação do quadril surge por volta da **7ª semana**.",
+  "correta": "Na 7ª semana a interzona cavita e forma a fenda que separa a cabeça femoral do acetábulo.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0451": {
-  "conceito": "### Artrogripose múltipla congênita\n- Contraturas congênitas em ==duas ou mais articulações==, sem progressão.\n- Causa comum: ==acinesia fetal== (falta de movimento intrauterino).\n\n| Origem | Achado |\n|---|---|\n| ==neuropática== (a mais comum) | ==redução das células do corno anterior== da medula |\n| miopática | distrofia muscular congênita |\n| restrição | oligoidrâmnio, útero bicorno |\n| tecido conjuntivo | |\n\n### Amioplasia (forma clássica)\n- Simétrica, quatro membros: ombros aduzidos e em RI, cotovelos estendidos, punhos fletidos, quadris luxados, joelhos estendidos ou fletidos, ==pé torto rígido==.\n- Pele lisa sem pregas, covinhas, inteligência normal.\n\n### Tratamento\n- Fisioterapia precoce; gessos; cirurgias (talectomia no pé torto resistente, osteotomias).\n\n### Ombro em rotação interna\n- Ombro aduzido e rodado internamente limita a função da mão (levar à boca, alcançar).\n- ==Osteotomia derrotativa externa do úmero== quando a rotação interna é fixa.\n- Local: ==entre as inserções do peitoral maior e do deltoide== (diáfise proximal): osso diafisário consolida bem, fixação fácil, longe do nervo radial.\n\n> **Na prova:** osteotomia umeral na artrogripose = ==entre peitoral maior e deltoide==",
-  "correta": "**Entre peitoral maior e deltoide.**\n- Diáfise proximal, fixação segura.\n- Longe do sulco do nervo radial.",
   "incorretas": {
-   "A": "**Colo cirúrgico.**\n- Metafisário, pouca estabilidade; risco à fise.",
-   "B": "**Acima do peitoral.**\n- Peitoral atuaria sobre o fragmento distal.",
-   "D": "**Abaixo do deltoide.**\n- Próximo ao nervo radial."
+   "A": "O colo cirúrgico é metafisário, com fixação menos estável e risco para a fise.",
+   "B": "Logo acima do peitoral, o músculo ficaria no fragmento distal e tenderia a desfazer a correção.",
+   "D": "Abaixo do deltoide, a osteotomia fica perto do sulco do nervo radial."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **artrogripose**, o ombro costuma ficar **aduzido e em rotação interna**. Com o cotovelo estendido e o punho fletido, isso dificulta levar a mão à boca e alcançar objetos à frente. Quando a rotação interna é **fixa** e atrapalha a função, faz-se a **osteotomia derrotativa externa do úmero**.\n\n**Onde fazer**: na **diáfise proximal**, **entre as inserções do peitoral maior e do deltoide**. Os motivos:\n\n**osso diafisário**: consolida bem e aceita fixação estável com placa;\n\n**abaixo do peitoral maior**: o peitoral fica no fragmento proximal e não atrapalha a rotação do fragmento distal;\n\n**acima do deltoide** e do **sulco do nervo radial**, que cruza a diáfise mais abaixo, na face posterior; afasta-se do risco ao nervo.\n\n**Os locais a evitar**:\n\n**colo cirúrgico**: osso metafisário, com fixação menos estável e risco para a fise proximal na criança;\n\n**acima do peitoral**: o músculo ficaria preso ao fragmento distal e tenderia a desfazer a correção;\n\n**abaixo do deltoide**: perto do nervo radial.\n\n**Na prova**: a osteotomia umeral para ganhar rotação externa na artrogripose é feita **entre as inserções do peitoral maior e do deltoide**.",
+  "correta": "Entre o peitoral maior e o deltoide, a osteotomia fica na diáfise proximal, com boa consolidação e longe do nervo radial.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0452": {
@@ -4956,14 +4956,14 @@
   "conferido": false
  },
  "pediatria-0454": {
-  "conceito": "### Epifisiólise: fatores\n| Tipo | Fator |\n|---|---|\n| mecânico | ==obesidade==, ==retroversão relativa (menos anteversão)==, ==coxa vara (menor ângulo cervicodiafisário)==, fise mais oblíqua, estirão |\n| endócrino | hipotireoidismo, deficiência de GH (uso de GH), hipogonadismo, osteodistrofia renal, radioterapia |\n\n- Pedir TSH em ==< 10 anos==, baixa estatura, ou bilateral.\n\n### Classificações\n| Critério | Tipos |\n|---|---|\n| Loder (estabilidade) | estável (anda) × ==instável== (não anda; necrose em até 50%) |\n| Southwick (ângulo) | leve < 30°, moderado 30 a 50°, grave > 50° |\n| tempo | aguda < 3 semanas, crônica, crônica agudizada |\n\n### Tratamento\n- ==Fixação in situ== com um parafuso canulado central.\n- Contralateral profilática: < 10 anos, endocrinopatia.\n\n### Técnica do parafuso\n- ==Um parafuso canulado== central, perpendicular à fise, no centro da epífise em AP e perfil.\n- ==Evitar o quadrante anterossuperior== (e o posterossuperior): artérias epifisárias laterais (circunflexa medial).\n- Ponta a 5 mm do osso subcondral; nunca penetrar a articulação.\n- Ponto de entrada ==anterior== no colo (a epífise escorregou para trás).\n\n### Clínica da epifisiólise\n- Adolescente obeso, dor no quadril, ==coxa ou joelho== (dor referida engana).\n- ==Claudicação==, ==Trendelenburg==, ==limitação da rotação interna, abdução e flexão==.\n- ==Marcha com rotação EXTERNA== do membro.\n- ==Drehmann==: rotação externa obrigatória ao fletir o quadril.\n\n### Loder (1993)\n| Tipo | Definição | Necrose |\n|---|---|---|\n| estável | anda (com ou sem muletas) | cerca de ==0%== |\n| ==instável== | ==não consegue andar== | até ==47%== |\n\n- Melhor preditor de necrose que a cronologia (aguda/crônica) ou o grau de desvio.\n\n> **Na prova:** Loder = ==capacidade de apoio== (estável × instável)",
-  "correta": "**Capacidade de apoio.**\n- Estável anda; instável não.\n- Instável: necrose em até 47%.",
   "incorretas": {
-   "A": "**Porcentagem do desvio.**\n- Wilson.",
-   "B": "**Tempo.**\n- Aguda × crônica.",
-   "C": "**Ângulo.**\n- Southwick."
+   "A": "A porcentagem do desvio é a classificação de Wilson.",
+   "B": "O tempo de início dos sintomas separa as formas aguda, crônica e crônica agudizada.",
+   "C": "O ângulo do escorregamento é a classificação de Southwick."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **epifisiólise proximal do fêmur** pode ser classificada por vários critérios, cada um com um nome:\n\n**Loder (estabilidade)**: pela **capacidade de apoio do membro**. **Estável**: a criança consegue andar, com ou sem muletas; necrose praticamente zero. **Instável**: não consegue andar; necrose em até cerca de 47%. É a classificação que melhor prevê a necrose;\n\n**tempo de sintomas**: **aguda** (menos de 3 semanas), **crônica** e **crônica agudizada**;\n\n**Southwick (ângulo)**: o **ângulo do escorregamento** no perfil; leve abaixo de 30°, moderado de 30 a 50°, grave acima de 50°;\n\n**Wilson (porcentagem do desvio)**: quanto a epífise deslizou em relação à largura do colo; leve até um terço, moderado até metade, grave acima da metade.\n\n**Por que a estabilidade importa mais**: na forma instável, a separação foi abrupta e pode ter lesado os vasos do retináculo; o hematoma intracapsular também comprime os vasos.\n\n**O tratamento**: fixação in situ com um parafuso canulado central; na instável, considerar descompressão capsular (Parsch) ou redução aberta (Dunn modificado).\n\n**Na prova**: a classificação de Loder se relaciona à **capacidade de apoio** do membro.",
+  "correta": "Loder separa a forma estável, em que a criança anda, da instável, em que não anda, e assim prevê a necrose.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0455": {
