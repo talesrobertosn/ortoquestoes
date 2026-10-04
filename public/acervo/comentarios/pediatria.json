@@ -901,121 +901,121 @@
   "conferido": false
  },
  "pediatria-0062": {
-  "conceito": "### Neurofibromatoses\n| Tipo | Nome | Gene | Achados | Ortopedia |\n|---|---|---|---|---|\n| ==NF1== | ==periférica== (von Recklinghausen) | neurofibromina (17q) | café-com-leite, neurofibromas, Lisch, Crowe | ==frequente== |\n| NF2 | central | merlina (22q) | ==schwannoma vestibular bilateral==, meningiomas | rara |\n| schwannomatose | | SMARCB1, LZTR1 | schwannomas múltiplos dolorosos | |\n\n### NF1 na ortopedia\n| Manifestação | Detalhe |\n|---|---|\n| escoliose | a mais comum; distrófica (raio curto) |\n| pseudartrose congênita da tíbia | anterolateral |\n| hipertrofia de membro | elefantíase |\n| TMBNP | transformação do plexiforme |\n| deficiência de vitamina D, osteoporose | |\n\n- Herança dominante; metade mutação nova.\n\n> **Na prova:** NF1 = ==periférica, manifestações ortopédicas frequentes==.",
-  "correta": "**Periférica, ortopedia frequente.**\n- Escoliose, pseudartrose da tíbia, hipertrofia.\n- A NF2 é central e pouco ortopédica.",
   "incorretas": {
-   "A": "**Central é NF2.**\n- Manifestações certas.",
-   "B": "**NF2.**\n- Central e pouco ortopédica.",
-   "D": "**Frequentes.**\n- Periférica certa."
+   "A": "As manifestações ortopédicas frequentes estão certas, mas a NF1 é periférica; a central é a NF2.",
+   "B": "Central e com poucas manifestações ortopédicas descreve a NF2.",
+   "D": "A NF1 é periférica, mas as manifestações ortopédicas são frequentes, não raras."
   },
+  "conceito": "Existem duas neurofibromatoses principais, e elas são doenças bem diferentes:\n\n**NF1 (periférica, de von Recklinghausen)**: gene da **neurofibromina**, no cromossomo 17; manchas **café com leite**, **neurofibromas** cutâneos e plexiformes, nódulos de Lisch na íris e efélides axilares (sinal de Crowe); **manifestações ortopédicas frequentes**;\n\n**NF2 (central)**: gene da **merlina**, no cromossomo 22; **schwannomas vestibulares bilaterais** e meningiomas; manifestações ortopédicas **raras**.\n\n**A NF1 na ortopedia**:\n\n**escoliose**: a manifestação mais comum; a forma **distrófica** (curva curta e angulada, com vértebras deformadas) progride muito e pede cirurgia precoce;\n\n**pseudartrose congênita da tíbia**: arqueamento anterolateral;\n\n**hipertrofia de um membro** (gigantismo localizado);\n\n**tumor maligno da bainha do nervo periférico**: transformação de um neurofibroma plexiforme; suspeitar quando a massa cresce rápido ou passa a doer;\n\n**osteopenia** e deficiência de vitamina D.\n\n**A herança** é autossômica dominante, mas cerca de metade dos casos vem de mutação nova.\n\n**Na prova**: NF1 = **periférica**, com manifestações ortopédicas **frequentes**.",
+  "correta": "A NF1 é a forma periférica e tem manifestações ortopédicas frequentes, como escoliose e pseudartrose congênita da tíbia.",
   "referencias": [
    "Feldman DS, Jordan C, Fonseca L. Orthopaedic manifestations of neurofibromatosis type 1. J Am Acad Orthop Surg. 2010. https://pubmed.ncbi.nlm.nih.gov/20511440/",
    "Orthopaedic manifestations of neurofibromatosis in children: an update. https://pubmed.ncbi.nlm.nih.gov/12151887/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0063": {
-  "conceito": "### Paralisia cerebral: tipo × sistema\n| Tipo | Sistema | Clínica |\n|---|---|---|\n| espástico | ==piramidal== (córtex motor, trato corticoespinal) | hipertonia velocidade-dependente, hiperreflexia |\n| ==discinético (atetoide, distônico)== | ==extrapiramidal== (núcleos da base) | movimentos involuntários lentos, contorcidos, tônus flutuante |\n| atáxico | cerebelar | dismetria, tremor de intenção, equilíbrio |\n| misto | vários | |\n\n### Associações\n- Atetoide: ==kernicterus== (hiperbilirrubinemia), asfixia a termo.\n- Diplegia espástica: prematuridade, leucomalácia periventricular.\n\n### Cirurgia ortopédica\n- Resultados mais previsíveis no ==espástico==; cautela nos discinéticos.\n\n### Topografia × lesão\n| Topografia | Lesão típica |\n|---|---|\n| ==diplegia== (MMII > MMSS) | ==leucomalácia periventricular== (prematuro); fibras dos MMII passam mais perto dos ventrículos |\n| hemiplegia | infarto (artéria cerebral média), malformação |\n| tetraplegia | lesão difusa, hipóxia grave |\n\n> **Na prova:** leucomalácia periventricular = ==diplegia==",
-  "correta": "**Diplegia.**\n- Prematuro com lesão periventricular.\n- Fibras dos membros inferiores passam junto aos ventrículos.",
   "incorretas": {
-   "B": "**Infarto focal.**\n- Artéria cerebral média.",
-   "C": "**Lesão difusa.**\n- Hipóxia grave.",
-   "D": "**Rara.**\n- Não é a associação."
+   "B": "A hemiplegia costuma vir de um infarto focal, como o da artéria cerebral média.",
+   "C": "A tetraplegia vem de lesão difusa, por hipóxia grave.",
+   "D": "A monoplegia é rara e não é a forma associada à leucomalácia periventricular."
   },
+  "conceito": "Na **paralisia cerebral espástica**, a **distribuição** do comprometimento no corpo acompanha o tipo e o lugar da lesão no cérebro:\n\n**diplegia**: as **pernas** muito mais afetadas que os braços; a lesão típica é a **leucomalácia periventricular**, do **prematuro**: a substância branca em volta dos ventrículos é a mais frágil nessa idade, e as fibras que vão para os **membros inferiores** passam justamente mais perto dos ventrículos;\n\n**hemiplegia**: um lado do corpo; em geral um **infarto** (território da artéria cerebral média) ou uma malformação;\n\n**tetraplegia**: os quatro membros; lesão **difusa**, por hipóxia grave;\n\n**monoplegia**: rara.\n\n**Por que isso importa**: a diplegia é a forma típica do prematuro e a que mais chega ao ortopedista por problemas de marcha (agachamento, rotação interna, equino), tratados muitas vezes com cirurgia em vários níveis num só tempo.\n\n**Na prova**: leucomalácia periventricular = **diplegia**.",
+  "correta": "A leucomalácia periventricular do prematuro atinge as fibras que vão para os membros inferiores, que passam junto aos ventrículos, causando diplegia.",
   "referencias": [
    "Progress in Periventricular Leukomalacia. https://pmc.ncbi.nlm.nih.gov/articles/PMC2898886/",
    "Cerebral palsy in children: A clinical practice review. https://pubmed.ncbi.nlm.nih.gov/39168782/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0064": {
-  "conceito": "### Crescimento: tronco × membros\n| Fase | Predomínio |\n|---|---|\n| até a puberdade | ==membros inferiores== crescem mais |\n| ==puberdade== | ==tronco== cresce mais (estirão vertebral) |\n\n### Números úteis (Dimeglio)\n- Estatura sentada: reflete o tronco.\n- No estirão, o tronco responde por cerca de 2/3 do ganho de altura.\n- Pico de velocidade: meninas ~12 anos (antes da menarca), meninos ~14 anos.\n\n### Aplicações\n| Situação | Relevância |\n|---|---|\n| escoliose | risco de progressão máximo no ==pico de crescimento== (Risser 0, cartilagem trirradiada aberta) |\n| discrepância de MMII | membros terminam de crescer antes do tronco |\n| artrodese precoce | tronco curto, restrição torácica |\n\n> **Na prova:** na puberdade o tronco cresce ==mais== que os membros inferiores.",
-  "correta": "**Tronco cresce mais.**\n- Estirão predominantemente vertebral.\n- Antes disso, os membros inferiores lideram.",
   "incorretas": {
-   "A": "**Não é proporcional.**\n- O tronco predomina.",
-   "B": "**Há relação.**\n- Ambos crescem.",
-   "D": "**Invertida.**\n- Menos acentuado antes da puberdade."
+   "A": "O crescimento não é proporcional: na puberdade o tronco predomina.",
+   "B": "O crescimento do tronco e dos membros está relacionado; os dois acontecem, em proporções diferentes.",
+   "D": "É o contrário: menos acentuado que os membros é o crescimento do tronco antes da puberdade."
   },
+  "conceito": "O corpo não cresce por igual ao longo da infância:\n\n**antes da puberdade**: crescem mais os **membros inferiores**; a criança vai ficando com pernas proporcionalmente mais compridas;\n\n**na puberdade**: o **tronco** passa a crescer mais (o estirão é principalmente da **coluna**), e responde por cerca de dois terços do ganho de altura nessa fase.\n\n**O pico de velocidade de crescimento**: nas meninas, por volta dos 12 anos, antes da menarca; nos meninos, por volta dos 14 anos.\n\n**Por que isso importa na ortopedia**:\n\n**escoliose**: o risco de progressão é **máximo no pico de crescimento** (Risser 0, cartilagem trirradiada aberta); é quando o colete faz mais diferença e quando a curva mais piora;\n\n**discrepância dos membros inferiores**: as pernas terminam de crescer **antes** do tronco, o que entra no cálculo do momento da epifisiodese;\n\n**artrodese precoce da coluna**: tronco curto e restrição do tórax.\n\n**A estatura sentada** é a forma prática de acompanhar o crescimento do tronco.\n\n**Na prova**: na puberdade, o tronco cresce **mais** que os membros inferiores.",
+  "correta": "No estirão da puberdade, o crescimento é sobretudo da coluna, e o tronco cresce mais que os membros inferiores.",
   "referencias": [
    "Growth and pubertal development in children. https://www.ncbi.nlm.nih.gov/books/NBK534874/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0065": {
-  "conceito": "### Mielomeningocele: nível × deformidade\n| Nível | Músculos preservados | Deformidade típica | Marcha |\n|---|---|---|---|\n| ==torácico== | nenhum nos MMII | ==flexão e abdução dos quadris (rã), flexão dos joelhos==, equino | cadeira; órtese recíproca |\n| L1-L2 | flexores e adutores do quadril | flexão e adução: ==luxação== | domiciliar |\n| L3-L4 | + quadríceps (L4 tibial anterior) | pé calcâneo-varo | comunitária com órteses |\n| L5 | + isquiotibiais mediais, glúteo médio parcial | pé calcâneo | comunitária |\n| S1 | + gastrocnêmio parcial | cavo | próximo do normal |\n\n### Pontos\n- Nível mais importante para marcha: ==quadríceps (L3-L4)==.\n- Luxação do quadril mais comum em L3-L4.\n\n### Fraturas na mielomeningocele\n- Osteopenia por desuso + membro insensível.\n- Local mais comum: ==metáfise distal do fêmur== (supracondiliana), depois tíbia proximal.\n- Frequentemente após ==imobilização gessada== (pós-operatório) ou manipulação.\n- Quadro engana: membro ==quente, vermelho, edemaciado, febre==, sem dor: simula ==osteomielite==.\n- Consolida rápido com calo exuberante; tratar com imobilização curta e acolchoada.\n\n> **Na prova:** fratura mais comum na MMC = ==fêmur distal==",
-  "correta": "**Fêmur distal.**\n- Osteopenia e membro insensível.\n- Simula infecção: quente, vermelho, sem dor.",
   "incorretas": {
-   "B": "**Menos frequente.**\n- Tíbia distal.",
-   "C": "**Menos frequente.**\n- Fêmur proximal.",
-   "D": "**Segundo lugar.**\n- Tíbia proximal."
+   "B": "A tíbia distal é sede menos frequente de fratura nesses pacientes.",
+   "C": "O fêmur proximal é sede menos frequente de fratura nesses pacientes.",
+   "D": "A tíbia proximal vem em segundo lugar, atrás do fêmur distal."
   },
+  "conceito": "Na **mielomeningocele**, os ossos das pernas são **osteopênicos** por falta de carga e de contração muscular, e o membro é **insensível**. Por isso, **fraturas** acontecem com traumas mínimos, como numa fisioterapia, na troca de fralda ou depois de tirar um gesso.\n\n**O local mais comum**: a **metáfise distal do fêmur** (região supracondiliana); depois, a tíbia proximal.\n\n**Quando acontecem**: com frequência logo depois de uma **imobilização gessada** (por exemplo, no pós-operatório do quadril ou do pé), quando o osso está ainda mais fraco.\n\n**A armadilha**: como o membro não dói, a fratura aparece como um membro **quente, vermelho e inchado**, às vezes com **febre**, e é confundida com **osteomielite** ou celulite. Radiografar sempre.\n\n**O tratamento**: imobilização **curta** e bem acolchoada (para não fazer escaras e não piorar a osteopenia); essas fraturas consolidam **rápido**, com calo exuberante.\n\n**Na prova**: fratura mais comum na mielomeningocele = **fêmur distal**.",
+  "correta": "A metáfise distal do fêmur, osteopênica e sem sensibilidade, é o local mais comum de fratura na mielomeningocele.",
   "referencias": [
    "Osteoporosis in paediatric patients with spina bifida. https://pmc.ncbi.nlm.nih.gov/articles/PMC3240921/",
    "Fractures in myelomeningocele. https://pmc.ncbi.nlm.nih.gov/articles/PMC2948122/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0066": {
-  "conceito": "### Tipos de maus-tratos\n| Tipo | Frequência |\n|---|---|\n| ==negligência== | ==a mais comum== |\n| abuso físico | o mais visto pelo ortopedista |\n| emocional | frequente, coexistente |\n| sexual | subnotificado |\n\n### Fraturas suspeitas de abuso físico\n| Alta especificidade | Moderada |\n|---|---|\n| ==lesão metafisária clássica== (canto, alça de balde) | fraturas múltiplas em estágios diferentes |\n| ==costelas posteriores== | fratura de crânio complexa |\n| escápula, processos espinhosos, esterno | vértebras, dedos em não deambulante |\n\n### Alertas\n- Fratura de fêmur em criança que não anda.\n- História incompatível, atraso na busca de atendimento.\n- Conduta: ==inventário esquelético== (< 2 anos), fundo de olho, notificação obrigatória.\n\n### Lesão metafisária clássica (fratura do canto)\n- Fratura ==planar na zona de ossificação provisória==, por forças de tração e torção (sacudir o bebê).\n- Aspecto de ==canto== ou ==alça de balde== conforme a incidência.\n- Fêmur distal, tíbia proximal e distal, úmero proximal.\n- Em lactentes, ==altamente específica== de abuso.\n\n### Menos específicas\n- Diafisárias (espiral ou transversa) são comuns e só sugerem abuso pelo contexto (criança que não anda).\n\n> **Na prova:** fratura de extremidade mais sugestiva de abuso = ==fratura do canto (metafisária clássica)==",
-  "correta": "**Fratura do canto.**\n- Lesão metafisária clássica por tração e torção.\n- Altamente específica em lactentes.",
   "incorretas": {
-   "B": "**Pouco específica.**\n- Sugere pelo contexto.",
-   "C": "**Pouco específica.**\n- Comum em quedas.",
-   "D": "**Pouco específica.**\n- Trauma acidental."
+   "B": "A fratura em espiral do fêmur é pouco específica e só sugere abuso pelo contexto, como em criança que não anda.",
+   "C": "A fratura transversa do úmero é comum em quedas e pouco específica.",
+   "D": "A fratura cominuta do antebraço é pouco específica e costuma ser acidental."
   },
+  "conceito": "No lactente, algumas fraturas têm **alta especificidade** para **abuso físico**, porque o mecanismo que as produz quase nunca acontece por acidente.\n\n**A lesão metafisária clássica (fratura do canto)**: é uma fratura **planar** que atravessa a metáfise junto à fise, na zona de ossificação provisória. Vem de forças de **tração e torção**, como quando o bebê é **sacudido** segurado pelos membros. Na radiografia aparece como um **canto** ósseo ou como uma **alça de balde**, dependendo da incidência. Locais típicos: fêmur distal, tíbia proximal e distal, úmero proximal.\n\n**Outras de alta especificidade**: **costelas posteriores** (o bebê apertado pelo tórax), escápula, processos espinhosos e esterno.\n\n**As menos específicas**: fraturas **diafisárias**, em espiral ou transversas, são comuns em acidentes; só sugerem abuso pelo **contexto**, por exemplo em criança que ainda não anda ou com história que não explica a lesão.\n\n**A conduta na suspeita**: **inventário esquelético** em menores de 2 anos, fundo de olho, avaliação pela equipe e **notificação obrigatória**.\n\n**Na prova**: fratura de extremidade mais sugestiva de abuso = **fratura do canto** (lesão metafisária clássica).",
+  "correta": "A fratura do canto (lesão metafisária clássica), por tração e torção, é altamente específica de abuso em lactentes.",
   "referencias": [
    "American Academy of Pediatrics. Evaluating Young Children With Fractures for Child Abuse: Clinical Report. Pediatrics. 2025. https://publications.aap.org/pediatrics/article/155/2/e2024070074/200638/Evaluating-Young-Children-With-Fractures-for-Child"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0067": {
-  "conceito": "### Artrogripose múltipla congênita\n- Contraturas congênitas em ==duas ou mais articulações==, sem progressão.\n- Causa comum: ==acinesia fetal== (falta de movimento intrauterino).\n\n| Origem | Achado |\n|---|---|\n| ==neuropática== (a mais comum) | ==redução das células do corno anterior== da medula |\n| miopática | distrofia muscular congênita |\n| restrição | oligoidrâmnio, útero bicorno |\n| tecido conjuntivo | |\n\n### Amioplasia (forma clássica)\n- Simétrica, quatro membros: ombros aduzidos e em RI, cotovelos estendidos, punhos fletidos, quadris luxados, joelhos estendidos ou fletidos, ==pé torto rígido==.\n- Pele lisa sem pregas, covinhas, inteligência normal.\n\n### Tratamento\n- Fisioterapia precoce; gessos; cirurgias (talectomia no pé torto resistente, osteotomias).\n\n### Cotovelo em extensão na artrogripose\n| Procedimento | Objetivo |\n|---|---|\n| capsulotomia posterior + alongamento do tríceps | ganhar flexão passiva |\n| ==Steindler (flexorplastia)== | ==transferência proximal da origem flexora-pronadora== para dar ==flexão ativa== do cotovelo |\n| transferência do tríceps, peitoral, grande dorsal | flexão ativa |\n\n- Ao menos um cotovelo deve fletir para levar a mão à boca; o outro pode ficar estendido para apoio/higiene.\n\n> **Na prova:** Steindler na artrogripose = corrigir ==extensão do cotovelo==",
-  "correta": "**Extensão do cotovelo.**\n- Flexorplastia: origem flexora-pronadora mais proximal no úmero.\n- Devolve flexão ativa.",
   "incorretas": {
-   "A": "**Ombro.**\n- Osteotomia derrotativa do úmero.",
-   "B": "**Punho.**\n- Artrodese, osteotomia do carpo.",
-   "C": "**Dedos.**\n- Outras técnicas."
+   "A": "A rotação interna do ombro é tratada com osteotomia derrotativa do úmero.",
+   "B": "A flexão do punho é tratada com osteotomia do carpo ou artrodese, não com Steindler.",
+   "C": "A garra dos dedos tem outras técnicas, não a flexorplastia de Steindler."
   },
+  "conceito": "Na **artrogripose**, o **cotovelo** costuma ficar em **extensão**, e a criança não consegue levar a mão à boca. O objetivo é dar **flexão**, pelo menos de um lado; o outro pode ficar mais estendido para apoio e higiene.\n\n**As etapas**:\n\n**flexão passiva**: com capsulotomia posterior e alongamento do tríceps;\n\n**flexão ativa**: uma transferência, já que o bíceps costuma ser fraco ou ausente.\n\n**A cirurgia de Steindler (flexorplastia)**: a **origem da musculatura flexora e pronadora**, no epicôndilo medial, é solta e **reinserida mais acima no úmero**. Assim, esses músculos passam a cruzar o cotovelo com um braço de alavanca maior e **fletem o cotovelo** ativamente. Um efeito colateral é a tendência de pronação e de flexão do punho.\n\n**Outras opções para flexão ativa**: transferência do **tríceps** para anterior, do **peitoral maior** ou do **grande dorsal**.\n\n**As outras deformidades das alternativas** têm outras cirurgias: rotação interna do ombro (osteotomia derrotativa do úmero), flexão do punho (osteotomia do carpo ou artrodese) e garra dos dedos.\n\n**Na prova**: Steindler na artrogripose = corrigir a **extensão do cotovelo** (dar flexão ativa).",
+  "correta": "A flexorplastia de Steindler sobe a origem flexora e pronadora no úmero para dar flexão ativa ao cotovelo estendido.",
   "referencias": [
    "Arthrogryposis: a review and update. https://pmc.ncbi.nlm.nih.gov/articles/PMC2698792/",
    "Steindler flexorplasty for the arthrogrypotic elbow. https://www.sciencedirect.com/science/article/abs/pii/S0363502304000796",
    "Posterior elbow capsulotomy and triceps lengthening in arthrogryposis. https://pmc.ncbi.nlm.nih.gov/articles/PMC7161729/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0068": {
-  "conceito": "### Recidiva do pé torto após Ponseti\n| Tipo | Achado | Conduta |\n|---|---|---|\n| estrutural (rígida) | adução, cavo, varo ou equino fixos | ==novos gessos== ± tenotomia |\n| ==dinâmica== | ==supinação do antepé na marcha== (balanço), pé passivamente corrigível | ==transferência do tibial anterior== |\n\n### Transferência do tibial anterior\n- Destino: ==cuneiforme lateral== (ou cuboide em alguns serviços).\n- Pré-requisitos: pé ==flexível==, deformidade fixa já corrigida (gessos antes), idade em geral acima de 2,5 a 3 anos (cuneiforme lateral ossificado).\n- Mecanismo: tibial anterior dominante sobre os fibulares supina o pé ao dorsifletir.\n\n### Causa principal de recidiva\n- ==Não adesão à órtese de abdução== (botas com barra) até 4 a 5 anos.\n\n### Órtese de abdução (Denis Browne / botas com barra)\n| Pé | Rotação externa |\n|---|---|\n| ==afetado== | ==60 a 70°== |\n| ==normal== (unilateral) | ==30 a 40°== |\n\n- Barra na largura dos ombros; dorsiflexão de 10 a 15°.\n- ==23 h/dia por 3 meses==, depois ==noturna até 4 a 5 anos==.\n\n> **Na prova:** pé normal na órtese = ==40° de rotação lateral==",
-  "correta": "**40°.**\n- Pé normal em 30 a 40°.\n- Pé afetado em 60 a 70°.",
   "incorretas": {
-   "B": "**Excessivo.**\n- Para o normal.",
-   "C": "**Do pé afetado.**\n- Não do normal.",
-   "D": "**Do pé afetado.**\n- Idem."
+   "B": "50° é mais do que o necessário para o pé normal.",
+   "C": "60° é a rotação do pé afetado, não do normal.",
+   "D": "70° é o limite superior da rotação do pé afetado, não do normal."
   },
+  "conceito": "Depois da correção do **pé torto** pelo **método de Ponseti**, a **órtese de abdução** (botas presas a uma barra, a Denis Browne) mantém a correção. **Não usar a órtese** é a principal causa de recidiva.\n\n**Como a órtese é ajustada**:\n\n**pé afetado**: em **60 a 70° de rotação externa**;\n\n**pé normal**, no caso **unilateral**: em **30 a 40°** de rotação externa;\n\n**barra** na largura dos ombros da criança, com cerca de **10 a 15°** de dorsiflexão (a barra levemente curvada).\n\n**O tempo de uso**: **23 horas por dia por 3 meses** depois da tenotomia; depois, **à noite e nas sonecas até 4 ou 5 anos**.\n\n**Por que o pé normal também vai na barra**: a órtese só funciona se os dois pés estiverem presos; o pé normal fica em rotação moderada, suficiente para manter o afetado na posição corrigida sem forçar o normal.\n\n**Na prova**: pé normal na órtese de Denis Browne = **40°** de rotação lateral (faixa de 30 a 40°).",
+  "correta": "No pé torto unilateral, o pé normal fica na órtese com 30 a 40° de rotação externa, o que corresponde a 40°.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Clubfoot. https://posna.org/physician-education/study-guide/clubfoot",
    "Clubfoot. StatPearls/NCBI Bookshelf. https://www.ncbi.nlm.nih.gov/books/NBK551574/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0069": {
-  "conceito": "### Legg-Calvé-Perthes: fases (Waldenström)\n| Fase | Achado |\n|---|---|\n| inicial (necrose) | cabeça densa, pequena; fratura subcondral (Salter-Thompson) |\n| ==fragmentação== | epífise fragmentada, colapso |\n| reossificação | osso novo |\n| residual | remodelada |\n\n### Classificações\n| Classificação | Incidência | Fase | Critério |\n|---|---|---|---|\n| ==Herring (pilar lateral)== | ==AP== | ==fragmentação== | altura do pilar lateral: A (100%), B (> 50%), B/C, C (< 50%) |\n| Catterall | AP e perfil | | quanto da epífise acometida (I a IV) + sinais de risco |\n| Salter-Thompson | perfil | inicial | extensão da fratura subcondral |\n| Stulberg | AP e perfil | ==maturidade== | congruência e esfericidade (prognóstico de artrose) |\n\n### Prognóstico\n- Pior: início > 8 anos, Herring C, sinais de cabeça em risco.\n\n> **Na prova:** subluxação e achatamento no Perthes = ==fase de fragmentação==",
-  "correta": "**Fragmentação.**\n- Epífise frágil colapsa.\n- Cabeça achata e subluxa lateralmente.",
   "incorretas": {
-   "A": "**Ainda sem colapso.**\n- Cabeça densa e pequena.",
-   "C": "**Reparação.**\n- Osso novo.",
-   "D": "**Final.**\n- Forma já definida."
+   "A": "Na fase de necrose a cabeça está densa, mas ainda sem colapso.",
+   "C": "Na reossificação, o osso novo já está reparando a cabeça.",
+   "D": "Na fase residual a forma da cabeça já está definida."
   },
+  "conceito": "A **doença de Legg-Calvé-Perthes** passa por fases radiográficas (**Waldenström**), e cada uma tem o seu risco:\n\n**inicial (necrose)**: a cabeça fica densa e um pouco menor, mas ainda **mantém a forma**;\n\n**fragmentação**: o osso morto é reabsorvido, a epífise se divide em fragmentos e fica **mole**; é nessa fase que a cabeça **achata**, **colapsa** e tende a **subluxar para lateral**, saindo de baixo do acetábulo;\n\n**reossificação**: osso novo preenche a cabeça; a forma vai sendo definida;\n\n**residual**: a cabeça está remodelada, redonda ou deformada.\n\n**Por que a fragmentação é a fase crítica**: é quando a cabeça pode se deformar. O tratamento de **contenção** (manter a cabeça dentro do acetábulo, com órtese ou osteotomia do fêmur ou da pelve) busca proteger justamente esse período, para que o acetábulo funcione como molde.\n\n**A classificação de Herring** (pilar lateral) também é feita nessa fase.\n\n**Na prova**: subluxação e achatamento da cabeça no Perthes = fase de **fragmentação**.",
+  "correta": "Na fragmentação, a epífise amolecida colapsa, achata e tende a subluxar para lateral.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Legg-Calve-Perthes Disease. https://posna.org/physician-education/study-guide/legg-calve-perthes-disease"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0070": {
