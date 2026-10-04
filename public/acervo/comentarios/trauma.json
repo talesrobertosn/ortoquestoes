@@ -10268,19 +10268,21 @@
   "conferido": false
  },
  "trauma-1136": {
+  "incorretas": {
+   "A": "**Pseudomonas aeruginosa.** É patógeno importante em infecções de feridas e pode integrar infecções complexas, mas não é o segundo agente clássico que esta pergunta associa à produção de gás por fermentação. Não se deve usar sua ausência da resposta para dispensar cultura.",
+   "B": "**Azotobacter vinelandii.** É bactéria ambiental conhecida pela fixação de nitrogênio, não um agente habitual de infecção humana de fratura exposta. Sua produção de gás metabólico no ambiente não equivale a enfisema infeccioso dos tecidos.",
+   "C": "**Bacillus anthracis.** É o agente do antraz, doença com manifestações cutâneas e sistêmicas próprias. Não é o organismo clássico esperado para gás subcutâneo de fratura exposta nesta comparação; identificação microbiológica real deve seguir o contexto epidemiológico."
+  },
+  "conceito": "**Gás na imagem tem mais de uma origem.** Em uma fratura exposta, ar pode entrar pela própria ferida no momento do trauma. Se o gás aparece ou progride junto com dor intensa, edema, toxicidade sistêmica e necrose, a equipe também deve suspeitar de infecção grave de partes moles. A radiografia mostra a presença de ar, mas não identifica sozinha o microrganismo nem distingue com segurança a origem traumática da infecciosa.\n\nClostridium perfringens é o agente clássico da mionecrose clostridiana, com produção rápida de gás e destruição muscular. Escherichia coli também pode fermentar substratos e integrar infecções produtoras de gás, inclusive em quadros polimicrobianos ou em pacientes com fatores predisponentes. A presença de crepitação não permite, portanto, concluir que toda infecção gasosa seja clostridiana. Cultura e avaliação cirúrgica orientam o tratamento, sem atrasar antibióticos e desbridamento quando se suspeita de infecção necrosante.\n\n**Não use uma lista de espécies como teste de exclusão.** A associação entre um organismo e gás tecidual depende do local, dos tecidos, de outros micróbios e das condições de crescimento. A resposta provável identifica um segundo produtor reconhecido entre as alternativas, não estabelece que os demais agentes jamais possam aparecer em processos necrosantes.",
+  "correta": "**Escherichia coli.** É uma enterobactéria capaz de participar de infecções formadoras de gás; entre as opções, é a associação clássica além de C. perfringens.",
+  "referencias": [
+   "Clinical and microbiological features of necrotizing fasciitis. https://pubmed.ncbi.nlm.nih.gov/7494032/",
+   "Emphysematous osteomyelitis due to Escherichia coli. https://pmc.ncbi.nlm.nih.gov/articles/PMC5500273/",
+   "Benign subcutaneous emphysema: a case report and review of the literature. https://pmc.ncbi.nlm.nih.gov/articles/PMC8491730/"
+  ],
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "D",
-  "conceito": "**Gás no subcutâneo.** Além de Clostridium perfringens, bactérias anaeróbias facultativas como Escherichia coli, Klebsiella e estreptococos anaeróbios podem produzir gás.\n\n**Na prova:** gás no tecido não é exclusivo do clostrídio.",
-  "correta": "**Escherichia coli.** E. coli é produtora de gás.",
-  "incorretas": {
-   "A": "**Pseudomonas aeruginosa.** Não produz gás tecidual.",
-   "B": "**Azotobacter vinelandii.** Bactéria de solo fixadora de nitrogênio.",
-   "C": "**Bacilus antracis.** Não produz gás tecidual."
-  },
-  "referencias": [
-   "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., p. 393."
-  ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-1137": {
@@ -10405,19 +10407,20 @@
   "conferido": false
  },
  "trauma-1144": {
+  "incorretas": {
+   "A": "**Espinha da escápula.** É uma projeção óssea posterior que pode fraturar por trauma direto ou em situações específicas, inclusive após artroplastia reversa. O enunciado pergunta a associação clássica entre fratura escapular ampla e lesões torácicas, não apenas uma projeção isolada.",
+   "B": "**Colo da escápula.** Uma fratura nessa região pode alterar o alinhamento glenoidal e, se houver lesão clavicular associada, compor um ombro flutuante. Também requer busca de lesões sistêmicas, mas não é a resposta convencional da questão sobre trauma torácico associado ao corpo.",
+   "C": "**Processo coracoide.** Integra o complexo suspensor superior do ombro e sua fratura pode acompanhar lesões acromioclaviculares ou claviculares. Isso é clinicamente relevante, porém representa outra associação anatômica, não a do impacto extenso sobre o corpo escapular e o tórax."
+  },
+  "conceito": "**A escápula protege o tórax, mas também denuncia a energia do impacto.** Seu corpo é uma lâmina óssea larga recoberta por músculos e apoiada sobre as costelas. Fraturá-lo costuma exigir força considerável; a mesma força pode quebrar costelas, contundir o pulmão e causar pneumo ou hemotórax. Por isso, diante de fratura do corpo, primeiro se avaliam respiração, circulação e lesões associadas, em vez de concentrar toda a atenção na escápula.\n\nAs fraturas escapulares podem atingir corpo, colo, glenoide e processos como coracoide, acrômio e espinha. A localização sugere mecanismos e problemas diferentes: uma fratura articular da glenoide exige avaliação de congruência do ombro; lesões do colo combinadas com fratura clavicular podem comprometer o complexo suspensor do ombro. Nenhum desses padrões torna dispensável o exame de tórax e a pesquisa de lesões neurovasculares.\n\n**Frequência não é destino individual.** O corpo é uma localização comum e sua fratura é marcador forte de trauma torácico associado em séries clínicas, base da resposta provável. Isso não demonstra que toda fratura do corpo tenha mais lesões que todo subtipo de colo ou glenoide em qualquer população. A investigação deve seguir o mecanismo e os achados do paciente, com imagem torácica e avaliação multissistêmica quando indicadas.",
+  "correta": "**Corpo da escápula.** Entre as regiões listadas, é o padrão classicamente associado a impacto torácico de alta energia e à busca ativa de lesões de costelas, pleura e pulmão.",
+  "referencias": [
+   "Outcomes of Nonoperatively Treated Displaced Scapular Body Fractures. https://pmc.ncbi.nlm.nih.gov/articles/PMC3069270/",
+   "Scapular Fractures in Blunt Chest Trauma: Self-Experience Study. https://pmc.ncbi.nlm.nih.gov/articles/PMC5175523/"
+  ],
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "D",
-  "conceito": "**Fratura da escápula.** Resulta de trauma de alta energia; a fratura do corpo é a que mais se associa a lesões torácicas (pneumotórax, contusão pulmonar, fratura de costelas).\n\n**Na prova:** corpo da escápula fraturado, investigue o tórax.",
-  "correta": "**Do corpo da escápula.** O corpo tem a maior incidência de lesões associadas.",
-  "incorretas": {
-   "A": "**Da espinha da escápula.** Menos associada.",
-   "B": "**Do colo da escápula.** Menos associada.",
-   "C": "**Do processo coracóide.** Menos associada."
-  },
-  "referencias": [
-   "Rockwood C.A. et al. Fractures. Philadelphia: Lippincott. 5ª ed., pg. 1100."
-  ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-1145": {
@@ -10578,19 +10581,20 @@
   "conferido": false
  },
  "trauma-1154": {
+  "incorretas": {
+   "A": "**30 graus no fragmento distal.** Acerta o fragmento que recebe o corte, mas não a angulação pedida na descrição clássica. Uma inclinação diferente modifica o contato ósseo e a correção obtida, exigindo planejamento específico.",
+   "B": "**45 graus no fragmento proximal.** O número coincide com a descrição histórica, porém o corte é planejado na porção distal, que será reposicionada para apoiar a proximal. Confundir o fragmento muda a técnica.",
+   "D": "**30 graus no fragmento proximal.** Erra tanto a localização quanto a angulação do corte de referência. Não corresponde à osteotomia valgizante de Sarmiento descrita para esse padrão."
+  },
+  "conceito": "**Qual problema a osteotomia procurava resolver?** Na fratura transtrocantérica instável com perda do suporte posteromedial, aproximar os fragmentos pode deixar pouco contato cortical capaz de resistir à varização. A osteotomia valgizante de Sarmiento é técnica histórica de reconstrução do apoio: um corte oblíquo no fragmento distal, feito aproximadamente a 45 graus, permite mudar o plano de contato e levar a diáfise para uma posição que sustenta melhor o fragmento proximal.\n\nO corte começa na região lateral proximal do fragmento distal e avança distal e medialmente. Após o reposicionamento, busca-se contato das corticais medial e posterior; o implante mantém a correção enquanto a fratura consolida. A angulação indicada na questão pertence ao corte do fragmento distal, não à cabeça femoral nem ao ângulo colo-diáfise final. Fazer uma osteotomia demasiadamente transversal pode criar valgo exagerado ou alterar o comprimento do membro.\n\n**Contexto histórico importa.** Essa operação foi descrita para padrões instáveis antes da ampla adoção das hastes cefalomedulares modernas. Atualmente, a escolha habitual de implante e a necessidade de qualquer osteotomia dependem da morfologia, da redução e da qualidade óssea; saber o epônimo não deve levar a indicar o corte rotineiramente em toda fratura transtrocantérica.",
+  "correta": "**45 graus no fragmento distal.** Essa é a direção e a angulação clássicas atribuídas à osteotomia oblíqua valgizante de Sarmiento para melhorar o contato cortical em fratura instável.",
+  "referencias": [
+   "The treatment of unstable intertrochanteric fractures of the hip: a prospective trial of 150 cases. https://www.sciencedirect.com/science/article/pii/0020138381900498",
+   "Sarmiento Osteotomy for Intertrochanteric Fracture, descrição técnica. https://www.wheelessonline.com/bones/sarmiento-osteotomy-for-intertrochanteric-frx/"
+  ],
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "C",
-  "conceito": "**Osteotomia de Sarmiento.** Osteotomia oblíqua no fragmento distal, a 45 graus, para valgizar e aumentar a estabilidade.\n\n**Na prova:** Sarmiento é 45 graus no distal.",
-  "correta": "**45º no fragmento distal.** É a técnica.",
-  "incorretas": {
-   "A": "**30º no fragmento distal.** Ângulo incorreto.",
-   "B": "**45º no fragmento proximal.** O corte é no distal.",
-   "D": "**30º no fragmento proximal.** Fragmento e ângulo incorretos."
-  },
-  "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed. pg. 2890."
-  ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-1155": {
