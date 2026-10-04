@@ -3705,115 +3705,115 @@
   "conferido": false
  },
  "pediatria-0341": {
-  "conceito": "### Artrogripose múltipla congênita\n- Contraturas congênitas em ==duas ou mais articulações==, sem progressão.\n- Causa comum: ==acinesia fetal== (falta de movimento intrauterino).\n\n| Origem | Achado |\n|---|---|\n| ==neuropática== (a mais comum) | ==redução das células do corno anterior== da medula |\n| miopática | distrofia muscular congênita |\n| restrição | oligoidrâmnio, útero bicorno |\n| tecido conjuntivo | |\n\n### Amioplasia (forma clássica)\n- Simétrica, quatro membros: ombros aduzidos e em RI, cotovelos estendidos, punhos fletidos, quadris luxados, joelhos estendidos ou fletidos, ==pé torto rígido==.\n- Pele lisa sem pregas, covinhas, inteligência normal.\n\n### Tratamento\n- Fisioterapia precoce; gessos; cirurgias (talectomia no pé torto resistente, osteotomias).\n\n### Luxação do quadril na artrogripose\n- Luxação ==teratológica==: redução fechada costuma ==falhar==.\n- ==Unilateral==: reduzir (evita obliquidade pélvica e escoliose), redução aberta por via medial aos 3 a 6 meses.\n- Bilateral: controversa; reduzir se bom potencial de marcha e boa mobilidade.\n- ==Arco de flexo-extensão muito limitado== (quadril rígido): ==contraindica== a redução (resultado ruim, rigidez).\n\n> **Na prova:** rigidez marcada contraindica a ==redução do quadril== na artrogripose",
-  "correta": "**Rigidez contraindica.**\n- Quadril rígido reduzido evolui mal.\n- Mobilidade orienta a decisão.",
   "incorretas": {
-   "A": "**Unilateral deve ser reduzida.**\n- Evita obliquidade pélvica.",
-   "B": "**Marcha influencia.**\n- Potencial de deambulação guia a indicação.",
-   "C": "**Redução fechada falha.**\n- Luxação teratológica: via aberta medial."
+   "A": "Na luxação unilateral a redução é indicada, para evitar obliquidade pélvica e escoliose.",
+   "B": "O potencial de deambulação pesa muito na decisão de reduzir, sobretudo nos casos bilaterais.",
+   "C": "A luxação é teratológica e a redução fechada costuma falhar; usa-se a redução aberta."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **artrogripose**, a luxação do quadril costuma ser **teratológica**: está presente desde a vida intrauterina, com acetábulo raso, cápsula retraída e músculos fibróticos. Por isso a **redução fechada costuma falhar**, e o tratamento é decidido caso a caso.\n\n**Os princípios**:\n\n**luxação unilateral**: em geral **reduzir**, porque um quadril luxado e o outro não geram **obliquidade pélvica**, discrepância e escoliose. A redução é aberta, muitas vezes por **via medial**, entre 3 e 6 meses, ou anterior em crianças maiores;\n\n**luxação bilateral**: controversa; dois quadris luxados de forma simétrica podem funcionar razoavelmente. Reduz-se quando há **bom potencial de marcha** e boa mobilidade;\n\n**quadril rígido**: uma **limitação marcada do arco de flexão e extensão** **contraindica** a redução. Reduzir um quadril rígido leva a mais rigidez, necrose e resultado pior que deixá-lo luxado.\n\n**O que guia a decisão**: a **mobilidade** do quadril e o **potencial de deambulação** da criança, que depende também dos joelhos e dos pés.\n\n**Na prova**: na artrogripose, a **limitação marcada da flexo-extensão contraindica** a redução do quadril.",
+  "correta": "O quadril rígido reduzido evolui mal, com mais rigidez e necrose; a mobilidade pobre contraindica a redução.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0342": {
-  "conceito": "### Atrofia muscular espinhal (AME)\n- Degeneração das células do ==corno anterior==; gene ==SMN1== (5q), AR.\n- Fraqueza ==proximal, simétrica, MMII > MMSS==; ==arreflexia==; fasciculação de língua.\n\n| Tipo | Início | Função máxima |\n|---|---|---|\n| I (Werdnig-Hoffmann) | < 6 meses | ==nunca senta== |\n| ==II== | 6 a 18 meses | ==senta sem apoio==, nunca anda |\n| III (Kugelberg-Welander) | > 18 meses | ==anda== (pode perder) |\n| IV | adulto | anda |\n\n### Ortopedia\n- Escoliose quase universal no tipo II (colete, hastes de crescimento, artrodese).\n- Quadril subluxado frequentemente assintomático: observação.\n- Terapias: nusinersena, onasemnogeno, risdiplam.\n\n> **Na prova:** AME tipo II = ==senta com equilíbrio de tronco, não anda==",
-  "correta": "**Senta com equilíbrio de tronco.**\n- Marco máximo do tipo II.\n- Nunca adquire marcha.",
   "incorretas": {
-   "A": "**Arreflexia.**\n- Reflexo patelar ausente.",
-   "B": "**Não anda.**\n- Marcha é do tipo III.",
-   "D": "**MMII mais fracos.**\n- Fraqueza predomina nos membros inferiores."
+   "A": "Na AME há arreflexia; o reflexo patelar está ausente.",
+   "B": "A capacidade de marcha é característica do tipo III, não do II.",
+   "D": "A fraqueza predomina nos membros inferiores, mais que nos superiores."
   },
+  "conceito": "A **atrofia muscular espinhal** (AME) é a degeneração das células do **corno anterior** da medula, por falta da proteína SMN (gene **SMN1**, no cromossomo 5, herança autossômica recessiva). O resultado é fraqueza **proximal**, **simétrica**, que predomina nos **membros inferiores**, com **arreflexia** e fasciculações na língua; a sensibilidade e a inteligência são normais.\n\n**Os tipos pela maior função motora alcançada**:\n\n**tipo I** (Werdnig-Hoffmann): início antes de 6 meses; **nunca senta**;\n\n**tipo II**: início entre 6 e 18 meses; **senta sem apoio**, com **equilíbrio de tronco**, mas **nunca anda**;\n\n**tipo III** (Kugelberg-Welander): início depois de 18 meses; **anda**, mas pode perder a marcha;\n\n**tipo IV**: início no adulto.\n\n**A ortopedia no tipo II**: a **escoliose** é quase universal, tratada com colete, hastes de crescimento e artrodese. O quadril subluxado costuma ser indolor e é apenas observado. Contraturas de joelho e quadril são comuns.\n\n**O tratamento atual**: nusinersena, terapia gênica (onasemnogeno) e risdiplam mudaram a história natural, com crianças alcançando marcos que antes não atingiam.\n\n**Na prova**: AME tipo II = **senta com equilíbrio de tronco**, mas não anda.",
+  "correta": "O marco máximo do tipo II é sentar sem apoio, com equilíbrio de tronco; a criança nunca anda.",
   "referencias": [
    "Spinal Muscular Atrophy. GeneReviews. NCBI Bookshelf NBK1352.",
    "Clinical Features, Epidemiology, Natural History, and Management of Spinal Muscular Atrophy. NCBI Bookshelf NBK533981."
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0343": {
-  "conceito": "### Coxa vara do desenvolvimento\n- Ângulo cervicodiafisário diminuído por defeito de ossificação no colo medial.\n- ==Triângulo de Fairbank== (fragmento triangular inferior no colo).\n- Marcha de Trendelenburg indolor, encurtamento; bilateral em 30 a 50%.\n\n### Por que limita abdução e rotação medial\n- Trocanter alto e colo varo: o trocanter ==bate no ilíaco== na abdução.\n- Retroversão relativa: ==rotação medial== limitada.\n\n### Ângulo de Hilgenreiner-epifisário (HE)\n| Ângulo HE | Conduta |\n|---|---|\n| < 45° | resolve espontaneamente |\n| 45 a 60° | observar |\n| ==> 60°== | ==osteotomia valgizante== (Pauwels) |\n\n### Diferenciais\n- Coxa vara congênita (DFFP), displasias esqueléticas, raquitismo, sequela de DDQ ou Perthes.\n\n### Como medir o HE\n- Ângulo entre a ==linha de Hilgenreiner== (horizontal, pelas trirradiadas) e a ==linha da fise femoral proximal==.\n- Normal < 25 a 30°.\n- Diferente do ângulo cervicodiafisário (colo × diáfise).\n\n> **Na prova:** ângulo HE = ==Hilgenreiner × linha epifisária proximal==",
-  "correta": "**Hilgenreiner × fise proximal.**\n- Mede a verticalização da fise.\n- Guia a indicação de osteotomia.",
   "incorretas": {
-   "A": "**Cervicodiafisário.**\n- Outro ângulo.",
-   "B": "**Colo femoral.**\n- Não é a referência.",
-   "C": "**Diáfise × fise.**\n- Não é o HE."
+   "A": "O ângulo entre a diáfise e o colo é o cervicodiafisário, não o de Hilgenreiner-epifisário.",
+   "B": "A referência do ângulo HE é a fise, não o eixo do colo femoral.",
+   "C": "O ângulo entre a diáfise e a fise não é o HE; a referência é a linha de Hilgenreiner."
   },
+  "conceito": "Na **coxa vara do desenvolvimento**, o problema é a **fise do colo femoral** que fica **vertical**. Quanto mais vertical, mais o peso do corpo a submete a **cisalhamento**, e mais a deformidade progride. O **ângulo de Hilgenreiner-epifisário** (HE) mede exatamente essa verticalização.\n\n**Como medir**: na radiografia AP da bacia, traça-se:\n\n**a linha de Hilgenreiner**: horizontal, passando pelas cartilagens trirradiadas dos dois lados;\n\n**a linha da fise femoral proximal**: ao longo da fise do colo.\n\nO HE é o ângulo entre as duas. O normal fica abaixo de cerca de 25 a 30°.\n\n**A conduta pelo HE**:\n\n**abaixo de 45°**: tende a resolver sozinho;\n\n**entre 45 e 60°**: observar a progressão;\n\n**acima de 60°**: **osteotomia valgizante**, com meta de HE abaixo de cerca de 38°.\n\n**Não confundir**: o **ângulo cervicodiafisário** é entre o eixo do colo e o eixo da diáfise; também diminui na coxa vara, mas não é o HE.\n\n**Na prova**: o ângulo de Hilgenreiner-epifisário é entre a **linha de Hilgenreiner** e a **linha epifisária femoral proximal**.",
+  "correta": "O ângulo HE é formado pela linha de Hilgenreiner e pela linha da fise femoral proximal e mede a verticalização da fise.",
   "referencias": [
    "Surgical correction of coxa vara: Evaluation of neck shaft angle, Hilgenreiner-epiphyseal angle for indication of recurrence. PMCID: PMC6494758.",
    "Tachdjian's Pediatric Orthopaedics. 6th edition. Elsevier."
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0344": {
-  "conceito": "### Deficiência femoral focal proximal (DFFP)\n- Espectro das deficiências congênitas do fêmur; ==unilateral== em geral.\n- Coxa curta, ==quadril em flexão, abdução e rotação externa==.\n- Associações: ==hemimelia fibular== (cerca de 50%), deficiência do LCA, pé com raios ausentes.\n\n### Aitken\n| Tipo | Cabeça femoral | Acetábulo |\n|---|---|---|\n| A | presente | normal |\n| B | presente, sem conexão ao colo | adequado |\n| C | ausente | displásico |\n| D | ausente | ausente |\n\n### Tratamento\n| Situação | Opção |\n|---|---|\n| discrepância prevista < 20 cm, quadril estável | alongamento, epifisiodese |\n| grave | ==Van Nes== (rotacionplastia), artrodese do joelho + prótese, Syme |\n\n> **Na prova:** contratura na DFFP = ==flexão, abdução e rotação externa==.",
-  "correta": "**Abduzido e em rotação externa.**\n- Quadril fletido, abduzido e em RE.\n- Coxa curta e volumosa.",
   "incorretas": {
-   "A": "**Adução e RI.**\n- Oposto.",
-   "B": "**Adução.**\n- Fica abduzido.",
-   "D": "**RI.**\n- Fica em RE."
+   "A": "Adução e rotação interna são o oposto da postura típica.",
+   "B": "A rotação externa está certa, mas o quadril fica abduzido, não aduzido.",
+   "D": "A abdução está certa, mas a rotação é externa, não interna."
   },
+  "conceito": "Na **deficiência congênita do fêmur** (incluindo a deficiência femoral focal proximal), o fêmur é curto e o quadril é instável ou malformado. A aparência é muito típica:\n\n**coxa curta e volumosa**, como se o membro \"começasse\" no joelho;\n\n**quadril em flexão, abdução e rotação externa**: a postura em que os músculos mais fortes (flexores, abdutores curtos e rotadores externos) puxam o fêmur curto, sem oposição de extensores e adutores eficientes;\n\n**joelho** muitas vezes em flexão, instável pela ausência do LCA;\n\n**pé** na altura do joelho oposto nos casos graves.\n\n**As associações**: hemimelia fibular em cerca de metade dos casos, pé com raios laterais ausentes e coalizão tarsal.\n\n**As classificações**: Aitken (cabeça, acetábulo e colo) e Gillespie (reconstrutível ou não).\n\n**O tratamento**: alongamento nos casos leves; rotacionplastia de Van Nes, artrodese do joelho com prótese ou amputação de Syme nos graves.\n\n**Na prova**: na deficiência congênita do fêmur, o quadril fica **fletido, abduzido e em rotação externa**.",
+  "correta": "A postura típica é quadril fletido, abduzido e em rotação externa, com a coxa curta e volumosa.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America. Proximal Focal Femoral Deficiency Study Guide.",
    "Tachdjian's Pediatric Orthopaedics. 6th edition. Elsevier."
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0345": {
-  "conceito": "### Hemimelia fibular\n- Deficiência longitudinal ==pós-axial==; a mais comum dos ossos longos.\n- Espectro: fíbula ausente ou hipoplásica, tíbia curta e arqueada (anteromedial, com covinha), fêmur curto, pé equinovalgo, ==raios laterais ausentes==, coalizão tarsal (bola e soquete no tornozelo).\n\n### Joelho\n| Achado | Consequência |\n|---|---|\n| ==hipoplasia do côndilo femoral lateral== | joelho valgo |\n| ==cruzados hipoplásicos ou ausentes== | ==instabilidade anteroposterior== |\n| espinhas tibiais pequenas | |\n\n### Classificações e tratamento\n- Achterman-Kalamchi, Paley (baseada no tornozelo e reconstrutibilidade).\n- Discrepância prevista e pé funcional decidem entre ==alongamento== (Paley SUPERankle) e ==Syme== + prótese.\n\n### Detalhes de conduta\n| Ponto | Regra |\n|---|---|\n| bilateral com MMSS não funcionais | ==não amputar==: os pés substituem as mãos |\n| Syme × Boyd | ==Boyd== (artrodese calcâneo-tibial) retém melhor o coxim e evita migração |\n| discrepância < 5 cm | epifisiodese contralateral |\n| arqueamento tibial | ==anteromedial==; corrigir com osteotomia se necessário |\n\n> **Na prova:** MMSS não funcionais ==contraindicam amputação bilateral==",
-  "correta": "**MMSS não funcionais contraindicam.**\n- Pés preservados servem para preensão.\n- Decisão individual.",
   "incorretas": {
-   "B": "**Boyd é melhor.**\n- Fixa o calcâneo e mantém o coxim.",
-   "C": "**Limite errado.**\n- Epifisiodese para discrepâncias pequenas (< 5 cm).",
-   "D": "**Direção errada.**\n- Arqueamento é anteromedial."
+   "B": "O Boyd, que artrodesa o calcâneo à tíbia, retém melhor o coxim; no Syme o coxim tende a migrar.",
+   "C": "A epifisiodese resolve discrepâncias pequenas, de até cerca de 5 cm, não de até 10 cm.",
+   "D": "O arqueamento da tíbia na hemimelia fibular é anteromedial, não posteromedial."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **hemimelia fibular** é a deficiência congênita mais comum dos ossos longos. Além da fíbula ausente ou curta, há tíbia curta e arqueada **anteromedialmente** (com covinha na pele), fêmur curto, joelho valgo, cruzados ausentes, pé em equinovalgo com **raios laterais ausentes** e coalizão tarsal.\n\n**Os pontos de decisão**:\n\n**reconstruir ou amputar**: depende da discrepância prevista e de o pé ser funcional; reconstrução com correção do pé e alongamentos, ou amputação do pé com prótese;\n\n**Syme ou Boyd**: na amputação de **Syme**, retira-se o pé inteiro e o coxim do calcanhar tende a **migrar**; na de **Boyd**, o calcâneo é mantido e **artrodesado à tíbia**, o que **fixa o coxim** e evita a migração, além de manter um pouco mais de comprimento. Por isso o Boyd é preferido por muitos;\n\n**discrepância pequena**: abaixo de cerca de 5 cm na maturidade, **epifisiodese** do lado normal;\n\n**arqueamento tibial**: é **anteromedial**, não posteromedial; corrigido com osteotomia quando necessário;\n\n**casos bilaterais com membros superiores não funcionais**: **não amputar**, porque os pés podem substituir as mãos em tarefas de preensão e de cuidado pessoal.\n\n**Na prova**: membros superiores não funcionais **contraindicam a amputação** nos casos bilaterais.",
+  "correta": "Quando os membros superiores não funcionam, os pés passam a servir para preensão; por isso não se amputam nos casos bilaterais.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0346": {
-  "conceito": "### Hemimelia tibial\n- Deficiência longitudinal ==pré-axial==, rara; fíbula preservada (às vezes hipertrofiada).\n- Frequentemente hereditária (dominante) e associada a mão fendida, polidactilia.\n\n### Forma completa\n| Achado | Detalhe |\n|---|---|\n| ==patela== | ==ausente== ou hipoplásica |\n| quadríceps | deficiente |\n| joelho | instável, em flexão |\n| ==pé== | ==equinovaro rígido== |\n\n### Jones\n| Tipo | Tíbia |\n|---|---|\n| 1a | ausente, epífise distal do fêmur hipoplásica |\n| 1b | ausente, epífise femoral normal |\n| 2 | tíbia distal ausente |\n| 3 | tíbia proximal ausente |\n| 4 | diástase tibiofibular distal |\n\n### Tratamento\n- Sem quadríceps ativo: ==desarticulação do joelho== + prótese.\n- Com quadríceps: centralização da fíbula (Brown).\n\n### Por que o 1a\n- Epífise distal do fêmur ==hipoplásica== na radiografia indica ==quadríceps e patela deficientes==.\n- No 1b a epífise femoral é normal: há um coto cartilaginoso de tíbia proximal e mecanismo extensor presente (RM ou US confirmam).\n\n> **Na prova:** mecanismo extensor ausente = ==Jones 1a==",
-  "correta": "**Tipo 1a.**\n- Tíbia ausente, epífise femoral hipoplásica.\n- Sem quadríceps: desarticulação do joelho.",
   "incorretas": {
-   "B": "**Tipo 1b.**\n- Coto tibial cartilaginoso; mecanismo extensor presente.",
-   "C": "**Tipo 2.**\n- Tíbia proximal presente; extensor preservado.",
-   "D": "**Não existe IIb.**\n- Jones 2 é tíbia distal ausente."
+   "B": "No tipo 1b há um coto cartilaginoso de tíbia proximal e o mecanismo extensor está presente.",
+   "C": "No tipo 2 a tíbia proximal existe e o mecanismo extensor está preservado.",
+   "D": "A classificação de Jones não divide o tipo 2 em subtipos; IIb não corresponde a uma forma com ausência do extensor."
   },
+  "conceito": "A **hemimelia tibial** é a deficiência longitudinal **pré-axial** da perna: falta parte ou toda a tíbia, e a fíbula fica preservada, às vezes até grossa. É rara, muitas vezes hereditária (dominante), e associa-se a **mão fendida** e **polidactilia pré-axial**.\n\n**A forma completa**: **patela ausente** ou hipoplásica, **quadríceps deficiente**, joelho instável em flexão e **pé em equinovaro rígido**.\n\n**A classificação de Jones**:\n\n**tipo 1a**: tíbia **ausente** e **epífise distal do fêmur hipoplásica** na radiografia;\n\n**tipo 1b**: tíbia aparentemente ausente, mas a **epífise femoral é normal**, porque existe um **coto cartilaginoso** de tíbia proximal, ainda não ossificado;\n\n**tipo 2**: falta a tíbia distal; a proximal existe;\n\n**tipo 3**: falta a tíbia proximal; a distal existe;\n\n**tipo 4**: diástase tibiofibular distal.\n\n**Por que o 1a é o pior para o joelho**: a epífise femoral pequena indica que não há tíbia proximal nem **mecanismo extensor** (quadríceps e patela). Sem extensor, não dá para reconstruir o joelho, e o tratamento é a **desarticulação do joelho** com prótese. Quando há quadríceps (1b, 2), pode-se tentar a centralização da fíbula sob o fêmur (Brown).\n\n**Na prova**: ausência do mecanismo extensor = Jones **1a**.",
+  "correta": "No tipo 1a a tíbia falta e a epífise femoral é hipoplásica, sinal de que o mecanismo extensor do joelho está ausente.",
   "referencias": [
    "Tibial hemimelia: new classification and reconstructive options. PMCID: PMC5145835.",
    "Jones D, Barnes J, Lloyd-Roberts GC. Congenital aplasia and dysplasia of the tibia with intact fibula. Classification and management. J Bone Joint Surg Br. 1978."
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0347": {
-  "conceito": "### Deformidade de Sprengel\n- Falha da descida da escápula; pequena, alta, ==rodada medialmente==.\n- ==Osso omovertebral== (ou banda fibrosa) em cerca de 1/3: liga o ângulo superior à coluna cervical.\n- Associações: Klippel-Feil, escoliose, costelas anômalas, rim.\n\n### Cirurgia\n| Aspecto | Detalhe |\n|---|---|\n| idade | ==após 3 anos== (ideal 3 a 8) |\n| técnicas | Woodward (desinserção medial), Green (desinserção na escápula), Wilkinson-Campbell |\n| ==omovertebral== | ressecção ==extraperiosteal== (subperiosteal regenera a ponte) |\n| risco | lesão do ==plexo braquial== ao descer: osteotomia da clavícula protege |\n\n### Cavendish\n| Grau | Aparência |\n|---|---|\n| ==1 (muito leve)== | ombros nivelados; ==invisível vestido== |\n| 2 (leve) | ombros nivelados; saliência ==visível vestido== |\n| 3 (moderado) | ombro elevado 2 a 5 cm |\n| 4 (grave) | ombro elevado > 5 cm, escápula perto do occipital |\n\n- Graus 3 e 4 costumam indicar cirurgia.\n\n> **Na prova:** omovertebral = ressecção ==extraperiosteal, depois dos 3 anos==.",
-  "correta": "**Grau 1.**\n- Muito leve.\n- Ombros nivelados, nada aparece com roupa.",
   "incorretas": {
-   "A": "**Grau 0.**\n- Não existe na escala (1 a 4).",
-   "C": "**Grau 2.**\n- Saliência visível com roupa.",
-   "D": "**Grau 3.**\n- Ombro elevado 2 a 5 cm."
+   "A": "A escala de Cavendish vai de 1 a 4; não existe grau 0.",
+   "C": "No grau 2 há uma saliência visível mesmo com a criança vestida.",
+   "D": "No grau 3 o ombro fica elevado de 2 a 5 cm."
   },
+  "conceito": "A **deformidade de Sprengel** é a escápula que não desceu: fica **alta, pequena e rodada**, às vezes presa à coluna por um **osso omovertebral**. A **classificação de Cavendish** gradua a deformidade pela **aparência**, o que ajuda a decidir a cirurgia:\n\n**grau 1 (muito leve)**: ombros nivelados; a deformidade **não aparece com a criança vestida**;\n\n**grau 2 (leve)**: ombros nivelados, mas uma saliência na base do pescoço é **visível mesmo vestida**;\n\n**grau 3 (moderado)**: ombro elevado de **2 a 5 cm**, facilmente visível;\n\n**grau 4 (grave)**: ombro elevado **mais de 5 cm**, com a escápula perto do occipital.\n\n**A escala vai de 1 a 4**; não há grau 0.\n\n**A cirurgia**: em geral nos graus 3 e 4, ou quando há limitação importante da abdução, entre **3 e 8 anos**. Técnicas de Woodward (origem dos músculos levada para baixo) ou Green (desinserção na escápula). O omovertebral é ressecado por via **extraperiosteal**, porque o periósteo deixado regenera a ponte. A **osteotomia da clavícula** protege o plexo braquial ao descer a escápula.\n\n**Na prova**: Sprengel **invisível com a criança vestida** = Cavendish grau **1**.",
+  "correta": "No grau 1 de Cavendish os ombros estão nivelados e nada aparece com a criança vestida.",
   "referencias": [
    "Surgical Treatment of Sprengel's Deformity: A Systematic Review and Meta-Analysis. PMCID: PMC8700527.",
    "Cavendish ME. Congenital elevation of the scapula. J Bone Joint Surg Br. 1972."
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0348": {
-  "conceito": "### Doença de Blount\n| Forma | Idade | Perfil |\n|---|---|---|\n| infantil | < 4 anos | obesa, marcha precoce, bilateral |\n| juvenil/adolescente | > 10 anos | obeso, unilateral, varo menor |\n\n### Langenskiöld (6 estágios)\n| Estágio | Achado |\n|---|---|\n| I | irregularidade metafisária medial, bico |\n| II | depressão em degrau |\n| III | degrau mais profundo, fragmentação |\n| ==IV== | ==ponte (barra) óssea medial através da fise== começa |\n| V | epífise dupla (fratura) |\n| VI | fechamento medial completo |\n\n### Ângulo metafisário-diafisário (Drennan)\n- > 16°: Blount provável; < 10°: fisiológico.\n\n### Tratamento\n- < 3 anos, estágio I-II: órtese.\n- Crescimento guiado, osteotomia valgizante antes dos 4 anos; ressecção da barra, elevação do planalto nos tardios.\n\n### Perfil da Blount infantil\n- ==Marcha precoce== (antes de 1 ano), ==sobrepeso/obesidade==, afrodescendentes, bilateral.\n- Carga sobre a fise medial imatura inibe o crescimento (Hueter-Volkmann).\n\n### Componentes da deformidade\n- ==Varo== (metafisário medial).\n- ==Torção tibial interna==.\n- ==Procurvato== da tíbia proximal (com joelho recurvato compensatório) e instabilidade lateral.\n\n> **Na prova:** Blount = ==varo, procurvato e torção interna==",
-  "correta": "**Procurvato e torção interna.**\n- Deformidade triplanar.\n- A osteotomia corrige os três planos.",
   "incorretas": {
-   "B": "**Torção externa.**\n- É interna.",
-   "C": "**Retrocurvato.**\n- Tíbia proximal em procurvato.",
-   "D": "**Dupla errada.**\n- Procurvato e torção interna."
+   "B": "O procurvato está certo, mas a torção na Blount é interna, não externa.",
+   "C": "A torção interna está certa, mas a tíbia proximal fica em procurvato, não em retrocurvato.",
+   "D": "Erra os dois componentes: a deformidade é procurvato com torção interna."
   },
+  "conceito": "Na **doença de Blount**, a parte **posteromedial** da fise proximal da tíbia deixa de crescer, enquanto o restante continua. Como a falha é ao mesmo tempo **medial** e **posterior**, a tíbia proximal deforma em **três planos**:\n\n**plano frontal**: **varo**, pela falha medial; é a deformidade principal e a mais visível;\n\n**plano sagital**: **procurvato** da tíbia proximal, pela falha posterior (a parte anterior cresce mais); muitas vezes com joelho recurvato compensatório;\n\n**plano axial**: **torção tibial interna**; a tíbia gira para dentro.\n\nSoma-se a **instabilidade lateral** do joelho, vista como o joelho escapando para fora na marcha.\n\n**Por que importa**: a osteotomia precisa corrigir **os três componentes**. Corrigir só o varo deixa o procurvato e a torção interna, e a marcha continua alterada. Por isso a osteotomia valgizante é feita também com derrotação externa e, quando preciso, correção sagital; fixadores circulares permitem ajustar tudo de forma gradual.\n\n**O perfil**: criança obesa que andou cedo; diagnóstico pelo ângulo metafisário-diafisário de Drennan acima de 16° e estágios de Langenskiöld.\n\n**Na prova**: Blount = **varo, procurvato e torção interna**.",
+  "correta": "A falha posteromedial da fise produz varo, procurvato da tíbia proximal e torção tibial interna.",
   "referencias": [
    "Sabharwal S. Blount disease. J Bone Joint Surg Am. 2009;91:1758-1776. PMID: 19571101.",
    "Osteotomy for deformities in Blount disease: A systematic review. PMCID: PMC4925742."
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0349": {
@@ -3829,29 +3829,29 @@
   "formato": "corrido"
  },
  "pediatria-0350": {
-  "conceito": "### Discrepância de membros inferiores\n| Mecanismo | Encurtamento | Alongamento (hipercrescimento) |\n|---|---|---|\n| congênito | DFFP, hemimelias, coxa vara | hemi-hipertrofia |\n| fise | infecção, trauma fisário, tumor | |\n| vascular | isquemia | ==aumento de fluxo==: fratura diafisária, AIJ, MAV, hemangioma |\n| neurológico | pólio, PC | |\n| síndromes | Ollier, NF1 | ==Proteus, Klippel-Trénaunay-Weber==, Beckwith-Wiedemann |\n\n### Pontos\n- ==Fratura de fêmur na criança causa hipercrescimento== (1 a 2 cm), não encurtamento.\n- Escanometria/panorâmica e idade óssea são ==essenciais== (Moseley, Paley multiplicador).\n\n### Conduta por discrepância prevista\n| Final | Conduta |\n|---|---|\n| < 2 cm | palmilha ou nada |\n| 2 a 5 cm | epifisiodese contralateral |\n| > 5 cm | alongamento |\n| > 15 a 20 cm | amputação/protetização |\n\n> **Na prova:** hipercrescimento generalizado = ==Proteus e Klippel-Trénaunay-Weber==",
-  "correta": "**Proteus e Klippel-Trénaunay-Weber.**\n- Hipercrescimento de todo o membro.\n- Malformações vasculares e de tecidos.",
   "incorretas": {
-   "A": "**Fêmur cresce mais.**\n- Hiperemia pós-fratura gera hipercrescimento.",
-   "B": "**Fluxo aumentado.**\n- AIJ e MAV aumentam o fluxo e alongam.",
-   "C": "**Exames essenciais.**\n- Escanometria e idade óssea planejam o tratamento."
+   "A": "A fratura do fêmur na criança costuma causar hipercrescimento, pela hiperemia, e não encurtamento.",
+   "B": "Artrite inflamatória e malformações arteriovenosas aumentam o fluxo sanguíneo e alongam o membro.",
+   "C": "Escanometria e panorâmica são essenciais para calcular a discrepância e indicar o tratamento."
   },
+  "conceito": "A **discrepância de membros inferiores** pode vir de um lado que cresceu **menos** ou de um lado que cresceu **demais**:\n\n**Encurtamento**: deficiências congênitas (fêmur curto, hemimelias, coxa vara), lesão da fise (trauma, infecção, tumor), isquemia, paralisias (pólio, paralisia cerebral) e síndromes como Ollier.\n\n**Alongamento (hipercrescimento)**:\n\n**aumento do fluxo sanguíneo**: **fratura diafisária do fêmur** na criança (cresce 1 a 2 cm a mais), artrite inflamatória (AIJ), malformações arteriovenosas e hemangiomas. A hiperemia estimula a fise;\n\n**síndromes de hipercrescimento**: **Proteus** e **Klippel-Trénaunay-Weber**, com crescimento excessivo **generalizado** do membro, por malformações vasculares e de tecidos; também Beckwith-Wiedemann (hemi-hipertrofia).\n\n**A avaliação**: **escanometria** ou panorâmica dos membros e **idade óssea** são essenciais. Com elas se calcula a discrepância prevista na maturidade (Moseley, multiplicador de Paley) e se escolhe o tratamento.\n\n**A conduta pela discrepância prevista**: até 2 cm, nada ou palmilha; de 2 a 5 cm, epifisiodese do lado longo; acima de 5 cm, alongamento.\n\n**Na prova**: hipercrescimento generalizado do membro se associa a **Proteus** e **Klippel-Trénaunay-Weber**.",
+  "correta": "As síndromes de Proteus e Klippel-Trénaunay-Weber causam crescimento excessivo de todo o membro.",
   "referencias": [
    "Klippel-Trenaunay Syndrome. PMCID: PMC3881214.",
    "Presentation and Management of Klippel-Trenaunay Syndrome: A Review of Available Data. PMCID: PMC7282379."
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0351": {
-  "conceito": "### Necrose após DDQ: supercrescimento do trocanter\n- Lesão da fise da cabeça (Kalamchi-MacEwen II): colo curto e ==trocanter alto== (coxa breva).\n- Resultado: abdutores encurtados, ==Trendelenburg==.\n\n### Epifisiodese do trocanter maior\n| Aspecto | Detalhe |\n|---|---|\n| objetivo | frear o trocanter enquanto o colo cresce |\n| ==idade ideal== | ==até cerca de 8 anos== (melhor por volta dos ==5==) |\n| após 8 a 10 anos | pouco crescimento restante: preferir ==avanço distal do trocanter== |\n\n> **Na prova:** epifisiodese do trocanter maior = ==por volta dos 5 anos==",
-  "correta": "**5 anos.**\n- Ainda há crescimento a controlar.\n- Após 8 anos o efeito é pequeno.",
   "incorretas": {
-   "B": "**7 anos.**\n- Menos efetiva.",
-   "C": "**9 anos.**\n- Tarde; avanço distal do trocanter.",
-   "D": "**11 anos.**\n- Sem crescimento útil."
+   "B": "Aos 7 anos a epifisiodese ainda é possível, mas tem menos efeito que por volta dos 5.",
+   "C": "Aos 9 anos resta pouco crescimento; prefere-se o avanço distal do trocanter.",
+   "D": "Aos 11 anos a epifisiodese já não tem crescimento útil para agir."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **necrose avascular** é a complicação mais temida do tratamento da **displasia do quadril**. Quando ela lesa a **fise da cabeça femoral** (como no grupo II de Kalamchi-MacEwen), o **colo para de crescer**, mas a fise do **trocanter maior** continua. Com o tempo:\n\n**colo curto** (coxa breva);\n\n**trocanter alto**, acima do centro da cabeça;\n\n**abdutores encurtados** e sem alavanca, com **marcha de Trendelenburg**.\n\n**A epifisiodese do trocanter maior**: fecha a fise do trocanter para **frear** seu crescimento, enquanto o que resta do colo continua crescendo. Funciona só se ainda houver **bastante crescimento pela frente**:\n\n**idade ideal**: cerca de **5 anos**, e em geral até no máximo 8 anos;\n\n**depois de 8 a 10 anos**: sobra pouco crescimento, e a epifisiodese tem pouco efeito; prefere-se o **avanço distal e lateral do trocanter**, que reposiciona o osso e devolve a tensão aos abdutores.\n\n**Como acompanhar**: a relação entre a ponta do trocanter e o centro da cabeça (distância articulotrocantérica) nas radiografias seriadas.\n\n**Na prova**: a epifisiodese do trocanter maior é mais bem indicada por volta dos **5 anos**.",
+  "correta": "Aos 5 anos ainda há crescimento suficiente para que frear o trocanter equilibre a relação com o colo.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0352": {
