@@ -765,143 +765,143 @@
   "conferido": false
  },
  "trauma-0069": {
-  "conceito": "### Fratura da patela: exame\n- Hemartrose ==tensa== é esperada se a cápsula e os ==retináculos== estão íntegros.\n- ==Pouco derrame + defeito palpável== = sangue extravasou pelos ==retináculos rotos==: mecanismo extensor provavelmente incompetente.\n- Testar ==extensão ativa== do joelho (elevação da perna estendida); aspirar hemartrose e infiltrar anestésico se dor impedir.\n\n### Indicação cirúrgica\n| Critério | Limite |\n|---|---|\n| degrau articular | > 2 mm |\n| diástase | > 3 mm |\n| extensão ativa | ausente |\n\n> **Na prova:** sem derrame e defeito palpável = lesão ==retinacular==",
-  "correta": "**Retinacular.**\n- Hemartrose escapa pelos retináculos.\n- Extensão ativa comprometida.",
   "incorretas": {
-   "B": "**Ligamento patelar.**\n- Patela alta, sem fratura.",
-   "C": "**Quadricipital.**\n- Defeito suprapatelar, sem fratura.",
-   "D": "**Colateral fibular.**\n- Sem relação."
+   "B": "A ruptura do ligamento patelar deixa a patela alta, sem fratura.",
+   "C": "A ruptura do tendão quadricipital forma um defeito acima da patela, sem fratura.",
+   "D": "O colateral fibular não tem relação com o derrame da fratura da patela."
   },
+  "conceito": "Na **fratura aguda da patela**, o tamanho do **derrame** conta se a cápsula está fechada.\n\n**O esperado**: com a cápsula e os **retináculos íntegros**, o sangue da fratura fica preso dentro do joelho, e aparece uma **hemartrose tensa**.\n\n**O sinal de alerta**: **pouco derrame** com um **defeito palpável** entre os fragmentos. O sangue escapou pelos **retináculos rasgados**, e o **mecanismo extensor** provavelmente está **incompetente**.\n\n**Como testar**: pedir a **elevação da perna estendida**. Se a dor impedir, **aspirar** a hemartrose e infiltrar **anestésico** no joelho antes de testar.\n\n**A indicação cirúrgica**:\n\n**mecanismo extensor incompetente**;\n\n**degrau articular** maior que 2 mm;\n\n**separação dos fragmentos** maior que 3 mm.\n\n**As lesões que se parecem**: a ruptura do **ligamento patelar** deixa a patela **alta** e não fratura o osso; a do **tendão quadricipital** forma um defeito **acima** da patela.\n\n**Na prova**: sem derrame significativo e com defeito palpável, suspeitar de lesão **retinacular**.",
+  "correta": "O sangue escapou pelos retináculos rotos, e por isso o derrame é pequeno e o mecanismo extensor fica comprometido.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 59"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0070": {
-  "conceito": "### Marcadores inflamatórios no politrauma\n| Marcador | Característica |\n|---|---|\n| TNF-α, IL-1 | picos precoces e fugazes (minutos a horas): pouco práticos |\n| ==IL-6== | ==eleva-se em 1 a 2 h==, pico em 4 a 6 h, correlaciona com ==ISS==, SIRS, falência orgânica e complicações |\n| IL-10 | anti-inflamatória (CARS) |\n| PCR | tardia, depende de IL-6 |\n| lactato, déficit de bases | perfusão |\n\n### Implicações\n- IL-6 > 500 pg/mL: risco de ==segundo impacto== (\"second hit\"); favorece ==controle de danos== (fixador externo) em vez de fixação definitiva precoce.\n\n> **Na prova:** melhor marcador da SIRS no trauma = ==IL-6==",
-  "correta": "**IL-6.**\n- Pico previsível e duradouro.\n- Correlaciona com gravidade.",
   "incorretas": {
-   "A": "**TNF.**\n- Pico fugaz.",
-   "B": "**IL-1.**\n- Meia-vida curta.",
-   "D": "**Interferon beta.**\n- Não é marcador de SIRS."
+   "A": "O TNF tem pico fugaz e escapa da dosagem.",
+   "B": "A IL-1 tem meia-vida curta.",
+   "D": "O interferon beta não é marcador de SIRS."
   },
+  "conceito": "No **politraumatizado**, o trauma desencadeia uma **resposta inflamatória sistêmica** (SIRS). As citocinas medem essa resposta, mas nem todas servem como marcador.\n\n**A melhor: interleucina 6 (IL-6)**:\n\n**sobe de forma previsível** poucas horas após o trauma;\n\n**fica elevada** por tempo suficiente para ser medida;\n\n**se correlaciona** com a gravidade da lesão, com as complicações (SARA, falência de múltiplos órgãos) e com a mortalidade.\n\n**As outras**: o **TNF** e a **IL-1** têm pico **rápido e fugaz**, com meia-vida curta, e escapam da dosagem. O **interferon beta** não é marcador de SIRS.\n\n**A implicação ortopédica**: uma IL-6 acima de cerca de **500 pg/mL** indica risco de **segundo impacto** (\"second hit\"): uma cirurgia longa nesse momento pode piorar a inflamação. Isso favorece o **controle de danos** (fixador externo) em vez da fixação definitiva precoce.\n\n**Na prova**: o melhor marcador inflamatório da gravidade da SIRS no trauma é a **IL-6**.",
+  "correta": "A IL-6 sobe de forma previsível, dura o suficiente para ser medida e acompanha a gravidade do trauma.",
   "referencias": [
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 2.3"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0071": {
-  "conceito": "### Placa bloqueada no úmero proximal\n- Parafusos bloqueados seguram em osso porótico: estabilidade angular.\n\n### Complicações\n| Complicação | Frequência |\n|---|---|\n| ==perfuração intra-articular dos parafusos== (primária ou secundária) | ==a mais comum== (até 15 a 30%) |\n| colapso em varo/perda de redução | 10 a 15% |\n| necrose avascular | 5 a 15% |\n| impacto subacromial (placa alta) | |\n\n### Prevenção\n- Restaurar ==suporte medial== (parafusos no calcar, enxerto de fíbula intramedular).\n- Evitar varo; parafusos com ponta 5 a 8 mm subcondral.\n- Placa 5 a 8 mm abaixo do topo da tuberosidade maior.\n\n> **Na prova:** complicação mais frequente = ==perfuração condral dos parafusos==",
-  "correta": "**Perfuração condral.**\n- Parafusos rígidos cortam a cabeça que colapsa.\n- Complicação mais frequente.",
   "incorretas": {
-   "A": "**Colapso em varo.**\n- Frequente, mas causa a perfuração.",
-   "B": "**Osteonecrose.**\n- Menos comum.",
-   "C": "**Retardo.**\n- Pouco frequente na metáfise."
+   "A": "O colapso em varo é frequente, mas é ele que leva à perfuração pelos parafusos.",
+   "B": "A necrose avascular é menos comum que a perfuração.",
+   "C": "O retardo de consolidação é pouco frequente na metáfise bem irrigada."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **placa bloqueada** mudou o tratamento da fratura do **úmero proximal** no osso osteoporótico: os parafusos travados na placa dão **estabilidade angular**. Mas ela tem uma complicação típica.\n\n**A mais frequente: perfuração da cartilagem pelos parafusos** (cut-out). Quando a cabeça **colapsa** ou afunda em **varo**, os parafusos rígidos não acompanham e acabam furando a superfície articular, lesando a glenoide.\n\n**As outras complicações**: **colapso em varo** (frequente, e é ele que leva à perfuração), **necrose avascular** (menos comum), **impacto subacromial** da placa alta e **retardo de consolidação** (raro, pela boa irrigação da metáfise).\n\n**Como prevenir**:\n\n**restaurar o suporte medial**: parafusos no calcar e, se preciso, enxerto de fíbula dentro do canal;\n\n**evitar o varo** na redução;\n\n**parar a ponta do parafuso** de 5 a 8 mm abaixo da cartilagem;\n\n**posicionar a placa** de 5 a 8 mm abaixo do topo do tubérculo maior.\n\n**Na prova**: a complicação mais frequente da placa bloqueada no úmero proximal é a **perfuração condral dos parafusos**.",
+  "correta": "Quando a cabeça colapsa, os parafusos rígidos não acompanham e perfuram a cartilagem.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0072": {
-  "conceito": "### Fratura trimaleolar\n- Maléolos medial, lateral e ==posterior== (Volkmann).\n- O maléolo posterior é arrancado pelo ==ligamento tibiofibular posteroinferior==, que fica ==íntegro== preso ao fragmento.\n- Fixar o maléolo posterior restaura a estabilidade da sindesmose posterior.\n\n### Avulsões da sindesmose anterior\n| Epônimo | Fragmento |\n|---|---|\n| Tillaux-Chaput | tubérculo anterolateral da ==tíbia== (TFAI) |\n| Wagstaffe-Le Fort | tubérculo anterior da ==fíbula== (TFAI) |\n| Volkmann | maléolo posterior (TFPI) |\n\n### Fixar o posterior quando\n- > 25% da superfície (critério clássico), subluxação posterior do tálus, incisura fibular comprometida, degrau.\n\n> **Na prova:** trimaleolar preserva o ==tibiofibular posteroinferior==",
-  "correta": "**Tibiofibular posteroinferior.**\n- Íntegro, preso ao maléolo posterior.\n- Fixar o fragmento estabiliza.",
   "incorretas": {
-   "A": "**Chaput.**\n- Epônimo de avulsão tibial anterior.",
-   "B": "**Wagstaffe.**\n- Avulsão fibular anterior.",
-   "C": "**TFAI.**\n- Frequentemente lesado."
+   "A": "Chaput é a avulsão da tíbia anterior pelo ligamento tibiofibular anteroinferior.",
+   "B": "Wagstaffe é a avulsão da fíbula anterior pelo mesmo ligamento anterior.",
+   "C": "O tibiofibular anteroinferior é frequentemente lesado."
   },
+  "conceito": "A **fratura trimaleolar** quebra os maléolos **medial**, **lateral** e **posterior** (o fragmento de Volkmann).\n\n**O detalhe da sindesmose**: o **maléolo posterior** é arrancado pelo **ligamento tibiofibular posteroinferior**. O ligamento fica **íntegro**, preso ao fragmento ósseo: a lesão é óssea, não ligamentar.\n\n**A consequência**: fixar o maléolo posterior **devolve a estabilidade** da sindesmose posterior, muitas vezes dispensando o parafuso de sindesmose.\n\n**As avulsões da sindesmose anterior**:\n\n**tubérculo de Chaput**: avulsão da **tíbia** anterior, pelo ligamento tibiofibular anteroinferior;\n\n**tubérculo de Wagstaffe** (ou Le Fort): avulsão da **fíbula** anterior, pelo mesmo ligamento.\n\n**Quando fixar o maléolo posterior**: fragmento maior que 25% da superfície (critério clássico), **subluxação posterior** do tálus, **incisura fibular** comprometida ou **degrau** articular.\n\n**Na prova**: na fratura trimaleolar, o ligamento usualmente preservado é o **tibiofibular posteroinferior**.",
+  "correta": "O tibiofibular posteroinferior fica íntegro, preso ao maléolo posterior que ele arrancou.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 64"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0073": {
-  "conceito": "### Fratura do hâmulo do hamato\n- Golfe, tênis, beisebol: cabo do taco/raquete bate na eminência hipotenar.\n- Dor hipotenar profunda, dor à preensão; ==teste de tração do hâmulo== (flexão do 4º e 5º dedos com desvio ulnar).\n- RX padrão sobrepõe o hâmulo: pedir ==túnel do carpo (tunnel view)== e ==oblíqua em supinação de 45°==.\n- ==TC== é o exame de escolha.\n\n### Complicações\n- Pseudartrose (irrigação pobre), ==ruptura dos flexores do 5º dedo== (atrito), neurite ulnar (canal de Guyon).\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| aguda sem desvio | gesso 6 semanas (alta taxa de pseudartrose) |\n| atleta, pseudartrose, sintomas | ==excisão do hâmulo== (retorno rápido) |\n\n> **Na prova:** hâmulo = ==túnel do carpo + oblíqua em supinação de 45°==",
-  "correta": "**Oblíqua em supinação de 45°.**\n- Projeta o hâmulo livre.\n- Complementa o túnel do carpo.",
   "incorretas": {
-   "A": "**AP.**\n- Hâmulo sobreposto.",
-   "B": "**PA.**\n- Só o sinal do anel ausente, pouco sensível.",
-   "C": "**Pronação.**\n- Oblíqua útil é em supinação."
+   "A": "No AP, o hâmulo fica sobreposto aos outros ossos.",
+   "B": "No PA, só se vê a ausência do anel, um sinal pouco sensível.",
+   "C": "A oblíqua útil para o hâmulo é em supinação, não em pronação."
   },
+  "conceito": "A **fratura do hâmulo do hamato** é típica de quem segura **taco ou raquete**: golfe, tênis, beisebol. O cabo bate na **eminência hipotenar** e quebra o hâmulo.\n\n**O quadro**: dor **hipotenar** profunda, piora ao **segurar** objetos. O **teste de tração do hâmulo**: flexão resistida do 4º e do 5º dedos com o punho em desvio ulnar reproduz a dor.\n\n**A imagem**: na radiografia comum, o hâmulo fica **sobreposto**. Pedir:\n\n**túnel do carpo** (tunnel view): punho em extensão, raio tangente;\n\n**oblíqua do punho em supinação de 45°**: projeta o hâmulo livre;\n\n**TC**: o exame de escolha.\n\nNo PA, a ausência do \"anel\" do hâmulo pode sugerir a fratura, mas o sinal é pouco sensível.\n\n**As complicações**: **pseudartrose** (irrigação pobre), **ruptura dos flexores** do 5º dedo por atrito e neurite do **nervo ulnar** no canal de Guyon.\n\n**O tratamento**: gesso nas fraturas agudas sem desvio; **excisão do hâmulo** na pseudartrose ou no atleta, com retorno rápido.\n\n**Na prova**: o hâmulo é visto no túnel do carpo e na **oblíqua em supinação de 45°**.",
+  "correta": "A oblíqua em supinação de 45° projeta o hâmulo livre e complementa o túnel do carpo.",
   "referencias": [
    "Hebert, Lech, Ortopedia e Traumatologia: Princípios e Práticas, Volume 2, 6ª edição, Cap. 52"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0074": {
-  "conceito": "### Fêmur multifragmentário: comprimento e rotação\n- Fragmentos intermediários ==não servem de guia== para o comprimento.\n- Medir o ==fêmur contralateral== (régua radiopaca, fio, escanometria) antes de travar.\n- Rotação: comparar ==perfil do trocanter menor== e antetorção com o lado sadio.\n\n### Erros mais comuns\n| Erro | Frequência |\n|---|---|\n| malrotação > 15° | até 20 a 30% das hastes |\n| discrepância > 1 cm | 10% |\n\n### Técnica\n- Haste bloqueada (anterógrada ou retrógrada) com ==fixação indireta em ponte==: preserva a biologia dos fragmentos.\n\n> **Na prova:** prevenir discrepância = ==medir comparando com o lado contralateral==",
-  "correta": "**Medir comparando com o contralateral.**\n- Referência confiável na cominução.\n- Antes do bloqueio final.",
   "incorretas": {
-   "A": "**Fixar distal primeiro.**\n- Não garante o comprimento.",
-   "B": "**Alinhamento anatômico.**\n- Impossível nos multifragmentários; desvitaliza.",
-   "D": "**Diâmetro cortical.**\n- Sinal de rotação em traços simples."
+   "A": "Fixar primeiro o lado distal não garante o comprimento.",
+   "B": "O alinhamento anatômico é impossível na cominução e desvitaliza os fragmentos.",
+   "D": "O diâmetro das corticais ajuda na rotação de traços simples, não no comprimento."
   },
+  "conceito": "Na **fratura multifragmentária da diáfise do fêmur**, os fragmentos intermediários **não servem de guia**: não há contato entre as pontas para mostrar o comprimento e a rotação certos.\n\n**Como evitar a discrepância de comprimento**: **medir o fêmur do outro lado** antes do bloqueio final. Opções: régua radiopaca, fio guia de comprimento conhecido ou escanometria.\n\n**Como evitar o erro de rotação**: comparar o **perfil do trocânter menor** e a **antetorção** com o lado sadio, com o joelho apontado para cima.\n\n**Os erros mais comuns**: **rotação** errada (o mais frequente), **encurtamento** e **desvio angular**.\n\n**A técnica**: **haste bloqueada** (anterógrada ou retrógrada), com **fixação em ponte** e redução **indireta**. Os fragmentos não são abertos nem reduzidos um a um, para preservar a **biologia**.\n\n**O sinal da cortical**: a diferença de **espessura e diâmetro** das corticais no foco ajuda a ver a rotação, mas só nas fraturas **simples**.\n\n**Na prova**: para prevenir a discrepância, **medir o comprimento comparando com o lado contralateral**.",
+  "correta": "Sem contato entre os fragmentos, o fêmur oposto é a referência confiável do comprimento, medida antes de travar.",
   "referencias": [
    "AO Surgery Reference. https://surgeryreference.aofoundation.org/",
    "POSNA Study Guide. https://posna.org/physician-education/study-guide",
    "Hebert, Lech, Ortopedia e Traumatologia: Princípios e Práticas, Volume 2, 6ª edição, Cap. 60"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0075": {
-  "conceito": "### Úmero distal C3 no idoso\n- Cominução articular + osso porótico: fixação estável difícil.\n\n### Opções\n| Opção | Quando |\n|---|---|\n| ==RAFI com placas bloqueadas== (paralelas ou ortogonais, 90-90) | fixação estável possível |\n| ==artroplastia total do cotovelo== (semiconstrita) | cominução irreconstruível, idoso de baixa demanda (McKee 2009: melhor função) |\n| hemiartroplastia distal | colunas íntegras |\n| conservador (saco de ossos) | sem condições clínicas |\n\n### Placas\n- Paralelas (medial + lateral): mais rigidez biomecânica em alguns estudos.\n- Ortogonais (medial + posterolateral): resultados clínicos semelhantes.\n- Princípios de O'Driscoll: parafusos longos, maior número no fragmento distal, interdigitados.\n\n> **Na prova:** a banca indicou ==RAFI com placas ortogonais== (veja o alerta)",
-  "correta": "**Placas bloqueadas ortogonais (gabarito).**\n- Resposta oficial.\n- Ver alerta sobre a artroplastia.",
   "incorretas": {
-   "A": "**Artroplastia.**\n- Melhor função em C3 irreconstruível (McKee); a banca não aceitou.",
-   "B": "**Placas paralelas.**\n- Resultados clínicos semelhantes às ortogonais.",
-   "C": "**Saco de ossos.**\n- Só sem condições cirúrgicas."
+   "A": "O ensaio de McKee mostrou melhor função com a artroplastia nas fraturas C3 irreconstruíveis do idoso, mas a banca não aceitou.",
+   "B": "As placas paralelas têm resultados clínicos semelhantes às ortogonais.",
+   "C": "O tratamento conservador fica para quem não tem condições cirúrgicas."
   },
+  "conceito": "A **fratura AO-C3 do úmero distal** no **idoso com osteoporose** junta dois problemas: **cominução articular** e **osso frágil**. Conseguir uma fixação estável é difícil.\n\n**As opções**:\n\n**redução aberta e fixação interna** (RAFI) com **duas placas bloqueadas**: a primeira escolha quando dá para conseguir uma fixação estável;\n\n**artroplastia total do cotovelo**: o ensaio de McKee (2009) mostrou **melhor função** que a RAFI nas fraturas C3 do idoso com osso muito frágil;\n\n**tratamento conservador** (\"saco de ossos\"): só em quem não tem condições cirúrgicas.\n\n**As placas**:\n\n**ortogonais** (medial e posterolateral, a 90°);\n\n**paralelas** (medial e lateral): mais rígidas em alguns estudos biomecânicos;\n\nos **resultados clínicos** das duas montagens são **semelhantes**.\n\n**Os princípios de O'Driscoll**: parafusos **longos**, o maior número possível no fragmento **distal**, **interdigitados** entre as placas, que formam um arco.\n\n**Na prova**: a banca considerou a **RAFI com placas bloqueadas ortogonais**.",
+  "correta": "A banca considerou que a RAFI com placas bloqueadas ortogonais dá o melhor resultado nessa fratura.",
   "alerta": "O ensaio de McKee e colaboradores (2009) mostrou melhor função com artroplastia total do cotovelo que com RAFI nas fraturas C3 do idoso com osso muito frágil. A RAFI segue como primeira escolha quando a fixação estável é possível, e placas paralelas e ortogonais têm resultados clínicos semelhantes. A banca indicou placas ortogonais.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 38"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0076": {
-  "conceito": "### Lesões associadas ao planalto tibial\n| Lesão | Frequência |\n|---|---|\n| ==menisco== (lateral) | ==até 50 a 90%== em RM |\n| LCM | 20 a 30% |\n| LCA | 10 a 25% (mais em Schatzker IV e bicondilares) |\n| nervo fibular, artéria poplítea | Schatzker IV a VI |\n| síndrome compartimental | alta energia |\n\n### Por que o menisco\n- Côndilo femoral lateral impacta o platô em valgo: menisco lateral é ==esmagado ou interposto== no traço (depressão).\n- Reparar/reinserir durante a fixação (visão submeniscal).\n\n> **Na prova:** lesão mais associada = ==menisco lateral==",
-  "correta": "**Menisco lateral.**\n- Esmagado pelo côndilo lateral em valgo.\n- Pode interpor-se no traço.",
   "incorretas": {
-   "B": "**Menisco medial.**\n- Menos frequente.",
-   "C": "**LCM.**\n- Segunda lesão mais comum.",
-   "D": "**LCP.**\n- Rara."
+   "B": "O menisco medial é lesado com menos frequência.",
+   "C": "O colateral medial é a segunda lesão mais comum.",
+   "D": "O cruzado posterior raramente é lesado nessa fratura."
   },
+  "conceito": "Na **fratura do planalto tibial**, a lesão associada mais frequente é a do **menisco lateral**.\n\n**Por quê**: a fratura típica (Schatzker I a III) vem de **valgo** com carga axial. O **côndilo femoral lateral** desce sobre o planalto lateral, e o **menisco lateral** fica no caminho:\n\n**esmagado** ou **rasgado**, sobretudo na periferia;\n\n**interposto** no traço, principalmente nas fraturas com **depressão**, o que impede a redução.\n\n**As outras lesões**: o **colateral medial** é a segunda mais comum (tensionado pelo valgo); o **menisco medial** é lesado com menos frequência; o **cruzado posterior** raramente, exceto nas fraturas-luxações mediais.\n\n**A conduta**: durante a fixação, abrir a cápsula por baixo do menisco (**artrotomia submeniscal**), ver a superfície, **reparar ou reinserir** o menisco e então reduzir.\n\n**Na prova**: a lesão associada mais frequente ao planalto tibial é a do **menisco lateral**.",
+  "correta": "O côndilo lateral em valgo esmaga o menisco lateral, que pode ficar preso no traço.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 54"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0077": {
-  "conceito": "### Luxação posterior do quadril: posição no impacto\n| Posição do fêmur | Resultado |\n|---|---|\n| flexão + ==adução== + rotação interna | ==luxação pura== (cabeça escapa sobre a borda) |\n| flexão + ==menos adução== (neutra/abdução) + ==rotação interna== | ==fratura da parede posterior== ou da cabeça (Pipkin) |\n| flexão menor (mais extensão) | parede posterior maior, superior |\n\n### Conduta\n- Redução urgente (< 6 h); TC pós-redução (fragmentos intra-articulares, congruência).\n- Instabilidade da parede posterior (> 40 a 50%): fixação (Kocher-Langenbeck).\n\n> **Na prova:** fratura associada = fêmur ==menos aduzido e em rotação interna==",
-  "correta": "**Menos aduzido, rotação interna.**\n- Cabeça bate na borda em vez de escapar.\n- Fratura parede posterior ou cabeça.",
   "incorretas": {
-   "A": "**Mais aduzido.**\n- Luxação pura.",
-   "B": "**Adução e RE.**\n- Não é o padrão.",
-   "C": "**Rotação externa.**\n- Luxação posterior ocorre em RI."
+   "A": "Mais aduzido, o fêmur luxa sem fratura.",
+   "B": "A adução com rotação externa não é a posição da luxação posterior.",
+   "C": "A luxação posterior ocorre com o fêmur em rotação interna."
   },
+  "conceito": "Na **luxação posterior do quadril** (o joelho bate no painel do carro), a **posição do fêmur** no impacto decide se a luxação será pura ou com fratura.\n\n**Fêmur mais aduzido e em rotação interna**: a cabeça escapa por cima da borda posterior do acetábulo sem bater nela: **luxação pura**.\n\n**Fêmur menos aduzido** (mais neutro) e em **rotação interna**: a cabeça bate de frente na **borda posterior**: **fratura da parede posterior** do acetábulo ou **cisalhamento da cabeça** do fêmur (Pipkin).\n\n**A conduta**:\n\n**reduzir com urgência**, de preferência em menos de 6 horas, pelo risco de **necrose**;\n\n**TC depois da redução**: procurar fragmentos intra-articulares e conferir a congruência;\n\n**parede posterior** com mais de 40 a 50% de comprometimento ou instável: **fixação** pela via de **Kocher-Langenbeck**.\n\n**Na prova**: para fraturar a borda acetabular ou a cabeça, o fêmur deve estar **menos aduzido** e em **rotação interna**.",
+  "correta": "Menos aduzida, a cabeça bate na borda posterior em vez de escapar, e fratura a parede ou a própria cabeça.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 51"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0078": {
-  "conceito": "### Artroplastia aguda na fratura do acetábulo do idoso\n| Indicação | Motivo |\n|---|---|\n| ==fratura associada do colo do fêmur== | dois problemas articulares; fixar ambos falha |\n| impacção da cabeça femoral | lesão condral irreparável |\n| ==sinal da gaivota== (impacção superomedial do teto) | mau prognóstico com RAFI |\n| cominução/impacção marginal da parede posterior | |\n| artrose prévia | |\n\n- Técnica: fixar colunas (placas, cabos) + cúpula multifuros com parafusos; ou fix and replace.\n- Dupla coluna com ==congruência secundária== pode ser conservadora.\n\n> **Na prova:** ATQ imediata = idoso com ==colo do fêmur associado==",
-  "correta": "**Colo do fêmur associado.**\n- Cabeça inviável para fixação.\n- Artroplastia resolve ambos.",
   "incorretas": {
-   "A": "**Coluna anterior.**\n- Fixação ou conservador.",
-   "B": "**Diafisária.**\n- Não indica artroplastia.",
-   "D": "**Congruência secundária.**\n- Permite conservador."
+   "A": "A fratura da coluna anterior é tratada com fixação ou de forma conservadora.",
+   "B": "A fratura diafisária associada não indica artroplastia.",
+   "D": "A congruência secundária permite tratar a dupla coluna sem cirurgia."
   },
+  "conceito": "No **idoso**, algumas fraturas do **acetábulo** têm mau prognóstico com a fixação isolada, e a **artroplastia total do quadril imediata** passa a ser opção.\n\n**A indicação clássica**: fratura do acetábulo com **fratura do colo do fêmur** associada. A cabeça não pode ser salva, e a artroplastia trata as duas lesões de uma vez.\n\n**Outras situações favoráveis à artroplastia aguda**:\n\n**impacção** da cabeça do fêmur;\n\n**cominução** grave ou **impacção marginal** da superfície articular (sinal da gaivota);\n\n**artrose prévia** do quadril;\n\n**osso muito osteoporótico**, em que a fixação não segura.\n\n**A técnica**: fixar as colunas (placas, cabos) e usar uma **cúpula multifuros** com parafusos; ou o modelo \"**fix and replace**\", que fixa e substitui no mesmo ato.\n\n**Quando não**: a fratura das **duas colunas com congruência secundária** pode ser tratada **sem cirurgia**, porque os fragmentos ficam em volta da cabeça.\n\n**Na prova**: a artroplastia total imediata está indicada no idoso com fratura do **colo do fêmur associada**.",
+  "correta": "Com o colo do fêmur também fraturado, a cabeça não é salvável, e a artroplastia resolve as duas lesões.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 50"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0079": {
