@@ -77,10 +77,16 @@ Exemplo para o TARO 2005 (troque prova, ano e arquivo):
 
 ## Parte 2: comentar as questões que entraram só com a resposta
 
+Padrão obrigatório: [aula independente e alternativas explicadas em profundidade](../../docs/padrao-editorial-comentarios.md).
+Leia o [exemplo aprovado de enxertos](../../docs/exemplos/mao-0853.json).
+Essa exigência vale para todas as provas importadas, incluindo Cirurgia da Mão,
+ENARE e seleções de R4. Não reduzir as alternativas a uma ou duas frases nem
+aplicar limites antigos de caracteres. Tabelas e listas são permitidas quando úteis.
+
 As questões lançadas só com a resposta mostram "O comentário desta questão está em preparação". Para
 listá-las por tema:
 
-`python3 scripts/aula/fila.py pediatria 6 --pendentes`
+`python3 scripts/aula/fila.py pediatria 10 --pendentes`
 
 Siga então o fluxo e o formato "aula" de `scripts/aula/PROMPT_CODEX.md` (lote em texto com
 `@@ id`, `## conceito`, `## correta` e uma seção por alternativa errada, aplicado com

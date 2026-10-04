@@ -6,6 +6,14 @@ sem cadastro e sem rastreador de terceiros, publicável no GitHub Pages.
 
 Feito por Tales.
 
+## Padrão dos comentários
+
+Cada questão é uma aula independente, com fundamentos, mecanismos e análise detalhada de
+cada alternativa, inclusive a correta. Esse é o padrão permanente para todo enriquecimento.
+Leia [a diretriz editorial](docs/padrao-editorial-comentarios.md) e o
+[exemplo aprovado](docs/exemplos/mao-0853.json). As instruções para agentes ficam em
+[AGENTS.md](AGENTS.md) e [CLAUDE.md](CLAUDE.md).
+
 ---
 
 ## Stack
