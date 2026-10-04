@@ -183,7 +183,9 @@ export function App() {
   }
 
   // Páginas que mostram questões: por enquanto, só com conta (ver config.ts).
-  if (['treinar', 'sessao', 'resumo', 'questao', 'favoritas', 'erros', 'revisao', 'simulado-nacional'].includes(primeiro ?? '')) {
+  // A questão avulsa (#/questao/ID) fica aberta: é para onde as páginas
+  // públicas do Google levam; responder pede a conta ali mesmo.
+  if (['treinar', 'sessao', 'resumo', 'favoritas', 'erros', 'revisao', 'simulado-nacional'].includes(primeiro ?? '')) {
     pagina = <ExigeConta caminho={rota.caminho + (rota.consulta.toString() ? `?${rota.consulta}` : '')}>{pagina}</ExigeConta>
   }
 

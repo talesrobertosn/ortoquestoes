@@ -45,11 +45,10 @@ DIR_COMENTARIOS = DIR_ACERVO / "comentarios"
 # celular sem ganhar nada: o buscador já entendeu do que ela trata.
 POR_PAGINA = 25
 
-# Por enquanto as questões só aparecem para quem tem conta: sem páginas por
-# questão e sem a vitrine com comentários nas páginas de assunto. Estas ficam
-# só com a apresentação do assunto, os subtemas e o convite para criar a conta.
-# Para voltar a publicar as questões para o Google, basta trocar para True.
-PAGINAS_DE_QUESTAO = False
+# Uma página pública por questão comentada, para o Google indexar e para quem
+# chega pela busca ler a questão e o comentário sem conta. Com False, as
+# páginas de assunto ficam só com os subtemas e o convite para criar a conta.
+PAGINAS_DE_QUESTAO = True
 
 ESTILO = """
 :root {
