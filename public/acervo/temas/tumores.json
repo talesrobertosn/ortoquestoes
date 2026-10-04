@@ -2958,8 +2958,8 @@
       "subtemas": [
         "Estadiamento, biópsia e margens"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2021,
       "dificuldade": null,
       "enunciado": "Na biópsia do esqueleto apendicular, deve-se realizar incisão",
       "imagens": [],
@@ -2988,7 +2988,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2021.pdf",
+        "pagina": 3,
+        "numeroOriginal": 6
+      }
     },
     {
       "id": "tumores-0077",
@@ -2997,8 +3002,8 @@
         "Osteossarcoma",
         "Sarcoma de Ewing"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2021,
       "dificuldade": null,
       "enunciado": "No osteossarcoma, o subtipo em que por vezes é necessário o diagnóstico diferencial com sarcoma de EWING por meio da imunohistoquímica é o",
       "imagens": [],
@@ -3027,7 +3032,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2021.pdf",
+        "pagina": 9,
+        "numeroOriginal": 28
+      }
     },
     {
       "id": "tumores-0078",
@@ -3035,8 +3045,8 @@
       "subtemas": [
         "Metástases ósseas"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2021,
       "dificuldade": null,
       "enunciado": "Na propedêutica dos tumores ósseos, a tomografia computadorizada é o melhor método de imagem para diagnóstico do",
       "imagens": [],
@@ -3065,7 +3075,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2021.pdf",
+        "pagina": 18,
+        "numeroOriginal": 64
+      }
     },
     {
       "id": "tumores-0079",
@@ -3074,8 +3089,8 @@
         "Encondroma e encondromatoses",
         "Condrossarcoma"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2021,
       "dificuldade": null,
       "enunciado": "A doença de MAFFUCCI é caracterizada pela associação de múltiplos",
       "imagens": [],
@@ -3104,7 +3119,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2021.pdf",
+        "pagina": 19,
+        "numeroOriginal": 65
+      }
     },
     {
       "id": "tumores-0080",
@@ -3112,8 +3132,8 @@
       "subtemas": [
         "Outras lesões pseudotumorais"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2021,
       "dificuldade": null,
       "enunciado": "Nas lesões pseudotumorais, o infarto ósseo se apresenta na radiografia mais frequentemente como uma lesão",
       "imagens": [],
@@ -3142,7 +3162,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2021.pdf",
+        "pagina": 19,
+        "numeroOriginal": 66
+      }
     },
     {
       "id": "tumores-0081",
@@ -11382,6 +11407,49 @@
         "arquivo": "taro2007.pdf",
         "pagina": 8,
         "numeroOriginal": 22
+      }
+    },
+    {
+      "id": "tumores-0359",
+      "tema": "Tumores ósseos e de partes moles",
+      "subtemas": [
+        "Sarcoma de Ewing"
+      ],
+      "prova": "TEOT",
+      "ano": 2021,
+      "dificuldade": null,
+      "enunciado": "Nas neoplasias ósseas malignas, a maior radiossensibilidade é observada no",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "osteossarcoma e no linfoma."
+        },
+        {
+          "letra": "B",
+          "texto": "sarcoma de EWING e no linfoma."
+        },
+        {
+          "letra": "C",
+          "texto": "osteossarcoma e no condrossarcoma."
+        },
+        {
+          "letra": "D",
+          "texto": "sarcoma de EWING e no condrossarcoma."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2021.pdf",
+        "pagina": 3,
+        "numeroOriginal": 5
       }
     }
   ]
