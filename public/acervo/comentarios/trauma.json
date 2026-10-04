@@ -265,113 +265,113 @@
   "conferido": false
  },
  "trauma-0025": {
-  "conceito": "### Fratura por estresse da tíbia\n| Local | Força | Evolução |\n|---|---|---|\n| ==cortical posteromedial== (terço médio-distal) | ==compressão== | ==a mais comum==, benigna; repouso relativo |\n| cortical anterior (terço médio) | ==tensão== | \"==linha negra temida==\": pseudartrose, fratura completa; pode exigir haste |\n\n### Diagnóstico\n- RX inicial normal em até 2/3; ==RM== é o exame mais sensível (Fredericson).\n- Cintilografia sensível, pouco específica.\n\n### Fatores de risco\n- Aumento súbito de treino, tríade da mulher atleta (RED-S), baixa vitamina D, calçado, alinhamento.\n\n> **Na prova:** estresse tibial mais comum = ==compressão posteromedial==",
-  "correta": "**Compressão posteromedial.**\n- Padrão mais frequente.\n- Bom prognóstico com repouso.",
   "incorretas": {
-   "A": "**Tensão anterolateral.**\n- Não é o padrão típico.",
-   "B": "**Tensão posteromedial.**\n- Lado posteromedial está em compressão.",
-   "C": "**Compressão anterolateral.**\n- Anterior está em tensão."
+   "A": "A cortical anterolateral não é o local típico da fratura por estresse.",
+   "B": "O lado posteromedial está em compressão, não em tensão.",
+   "C": "O lado anterior fica em tensão, não em compressão."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **tíbia** se comporta como uma viga curvada: na marcha e na corrida, a cortical **posteromedial** fica em **compressão**, e a cortical **anterior** fica em **tensão**.\n\n**As duas fraturas por estresse da diáfise**:\n\n**posteromedial, por compressão**: a **mais frequente**; é de **baixo risco** e consolida com repouso relativo e retorno gradual;\n\n**anterior, por tensão**: menos comum, mas de **alto risco**; na radiografia aparece a \"**linha negra temida**\" na cortical anterior do terço médio; evolui para pseudartrose e fratura completa, e muitas vezes precisa de **haste intramedular**.\n\n**O diagnóstico**: a radiografia é **normal** em até dois terços no início. A **RM** é o exame mais sensível e gradua a lesão (Fredericson); a cintilografia é sensível, mas pouco específica.\n\n**Os fatores de risco**: aumento súbito de treino, **deficiência energética relativa** no esporte (antiga tríade da mulher atleta), baixa vitamina D, calçado inadequado e alterações do alinhamento.\n\n**Na prova**: a fratura por estresse mais comum da tíbia é a de **compressão na cortical posteromedial**.",
+  "correta": "A cortical posteromedial fica em compressão na carga, e esse é o padrão mais frequente, de baixo risco.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0026": {
-  "conceito": "### Anderson e D'Alonzo (odontoide)\n| Tipo | Local | Frequência | Conduta |\n|---|---|---|---|\n| ==I== | ==ponta== (avulsão do ==ligamento alar==) | ==cerca de 1%== | colar; investigar instabilidade occipitocervical |\n| II | base do dente (cintura) | 60% | halo ou cirurgia (pseudartrose alta) |\n| III | corpo de C2 | 30% | colar/halo; consolida |\n\n### Ligamentos do dente\n| Ligamento | Função |\n|---|---|\n| transverso | contém a translação anterior de C1 |\n| ==alares== | limitam rotação; inserem na ponta do dente |\n| apical | fraco |\n\n### Tipo II: fatores de pseudartrose\n- Idade > 50 anos, desvio > 5 mm, angulação > 10°, cominução (IIA de Hadley).\n\n> **Na prova:** tipo I = ==ligamento alar==, cerca de ==1%==",
-  "correta": "**Alar, 1%.**\n- Avulsão da ponta.\n- Rara e estável na maioria.",
   "incorretas": {
-   "B": "**18%.**\n- Frequência errada.",
-   "C": "**Transverso.**\n- Contém a translação; não insere na ponta.",
-   "D": "**Transverso e 18%.**\n- Ambos errados."
+   "B": "O ligamento alar está certo, mas o tipo I é bem mais raro que 18%.",
+   "C": "O transverso passa atrás do dente e não se insere na ponta.",
+   "D": "O ligamento e a frequência estão errados."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "**Anderson e D'Alonzo** classificam as fraturas do **odontoide** (dente do áxis) pela altura do traço:\n\n**tipo I**: **avulsão da ponta**, pela tração do **ligamento alar**; rara, cerca de **1%**; geralmente estável, mas pode ser marcador de **instabilidade occipitocervical**;\n\n**tipo II**: na **base do dente**; o mais comum e o de maior risco de **pseudartrose**, porque a área é pobre em sangue e osso esponjoso;\n\n**tipo III**: o traço entra no **corpo de C2**; consolida bem com imobilização.\n\n**Os ligamentos do dente**: os **alares** saem da ponta do dente para os côndilos occipitais e limitam a rotação; o **transverso** passa atrás do dente, prendendo-o ao arco anterior de C1, e impede a translação. O transverso **não se insere** na ponta do dente.\n\n**Os fatores de pseudartrose no tipo II**: idade acima de 50 anos, desvio maior que 5 mm, angulação maior que 10° e cominução da base (tipo IIA de Hadley).\n\n**Na prova**: o tipo I é a avulsão pelo **ligamento alar** e corresponde a cerca de **1%** das fraturas do odontoide.",
+  "correta": "O tipo I é a avulsão da ponta do dente pela tração do ligamento alar, rara, com cerca de 1% dos casos.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0027": {
-  "conceito": "### Artroplastia da cabeça do rádio\n- Cabeça do rádio: estabilizador ==secundário ao valgo== e longitudinal (com a membrana interóssea).\n- Indicação: Mason III irreconstruível com instabilidade (tríade terrível, Essex-Lopresti, LCM roto).\n\n### Complicações\n| Complicação | Causa |\n|---|---|\n| ==sobrecarga do capítulo== (desgaste, dor) | ==prótese alta (overstuffing)== |\n| perda de flexão, dor lateral | overstuffing |\n| soltura (halo radiotransparente) | comum e frequentemente assintomática em hastes lisas |\n| ossificação heterotópica, rigidez | |\n| lesão do interósseo posterior | acesso |\n\n### Altura correta\n- Topo da prótese no nível da ==borda lateral do coronoide== (incisura radial); espaço ulnoumeral lateral simétrico.\n\n> **Na prova:** principal complicação = ==sobrecarga do capítulo== (overstuffing)",
-  "correta": "**Sobrecarga do capítulo.**\n- Prótese alta.\n- Dor e desgaste do capítulo.",
   "incorretas": {
-   "A": "**Luxação.**\n- Rara.",
-   "B": "**Dor no punho.**\n- Sugere Essex-Lopresti ou prótese curta.",
-   "C": "**Soltura.**\n- Frequente radiograficamente, pouco relevante clinicamente."
+   "A": "A luxação da prótese é rara.",
+   "B": "A dor no punho sugere prótese curta ou Essex-Lopresti não reconhecido.",
+   "C": "A soltura é comum na radiografia, mas tem pouca relevância clínica."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **cabeça do rádio** é um estabilizador **secundário ao valgo** do cotovelo e, junto com a **membrana interóssea**, um estabilizador **longitudinal** do antebraço.\n\n**Quando trocar por prótese**: fratura de **Mason III** que não dá para reconstruir, sobretudo com **instabilidade** associada: tríade terrível, lesão de Essex-Lopresti ou colateral medial roto. Ressecar sem repor deixa o cotovelo e o antebraço instáveis.\n\n**A principal complicação**: a **sobrecarga do capítulo** (overstuffing). Uma prótese **alta ou grande demais** empurra o capítulo, causa **dor**, **perda de flexão** e **desgaste** da cartilagem do capítulo.\n\n**Como acertar a altura**: o topo da prótese deve ficar no nível da **borda lateral do coronoide** (na incisura radial da ulna), com o espaço ulnoumeral lateral **simétrico** na radiografia.\n\n**As outras complicações**: a **soltura** radiográfica (halo em volta da haste) é comum, mas pouco relevante na clínica; a **luxação** é rara; a **dor no punho** sugere uma prótese **curta** ou uma lesão de Essex-Lopresti não reconhecida.\n\n**Na prova**: a principal complicação da artroplastia da cabeça do rádio é a **sobrecarga do capítulo**.",
+  "correta": "A prótese alta ou grande sobrecarrega o capítulo, com dor, perda de flexão e desgaste da cartilagem.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0028": {
-  "conceito": "### Lesão de Essex-Lopresti\n- Anel do antebraço: radioulnar proximal, ==membrana interóssea== e ==radioulnar distal==.\n- Tríade: fratura da ==cabeça/colo do rádio== + ruptura da ==membrana interóssea== + lesão da ==RUD==.\n- Rádio migra proximalmente: dor no punho, ulna positiva.\n\n### Diagnóstico\n| Exame | Achado |\n|---|---|\n| RX comparativo dos punhos | variância ulnar positiva > 2 mm |\n| teste do rádio (radius pull test) | migração > 3 mm intraoperatória |\n| US/RM | lesão da membrana interóssea |\n\n### Tratamento\n- ==Nunca ressecar a cabeça do rádio==: fixar ou prótese.\n- Estabilizar a RUD (fios em supinação); reconstrução da membrana nos crônicos.\n\n> **Na prova:** Essex-Lopresti = cabeça/colo do rádio + membrana interóssea + ==RUD==",
-  "correta": "**Colo do rádio e RUD.**\n- Membrana interóssea rompida.\n- Migração proximal do rádio.",
   "incorretas": {
-   "A": "**Ulna e cabeça do rádio.**\n- Monteggia.",
-   "C": "**Diáfise do rádio e RUD.**\n- Galeazzi.",
-   "D": "**Radioulnar proximal.**\n- A lesão ligamentar distal é que caracteriza."
+   "A": "Fratura da ulna com luxação da cabeça do rádio é a lesão de Monteggia.",
+   "C": "Fratura da diáfise do rádio com lesão da radioulnar distal é a de Galeazzi.",
+   "D": "Na Essex-Lopresti, a lesão articular que acompanha é a radioulnar distal."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O antebraço funciona como um **anel**: rádio e ulna ligados pela **articulação radioulnar proximal**, pela **membrana interóssea** e pela **articulação radioulnar distal**. Quando o anel quebra em mais de um ponto, o rádio fica livre para **migrar**.\n\n**A lesão de Essex-Lopresti** junta três lesões:\n\n**fratura da cabeça ou do colo do rádio**;\n\n**ruptura da membrana interóssea**;\n\n**lesão da articulação radioulnar distal**.\n\n**O resultado**: o rádio **sobe**, a ulna fica relativamente mais longa (variância **positiva**) e aparece **dor no punho**.\n\n**O diagnóstico**: suspeitar em toda fratura da cabeça do rádio com **dor no punho** ou no antebraço; comparar a variância ulnar com o lado oposto; ultrassom ou RM mostram a membrana.\n\n**O tratamento**: **nunca ressecar** a cabeça do rádio sem repor: fixar ou colocar **prótese**. Estabilizar a radioulnar distal (fios em supinação); reconstruir a membrana nos casos crônicos.\n\n**As lesões que se parecem**: **Monteggia** é a fratura da ulna com luxação da cabeça do rádio; **Galeazzi** é a fratura da diáfise do rádio com lesão da radioulnar distal.\n\n**Na prova**: Essex-Lopresti é a fratura da **cabeça ou do colo do rádio** com lesão da **membrana interóssea** e da **radioulnar distal**.",
+  "correta": "A fratura do colo do rádio, a membrana rota e a lesão da radioulnar distal deixam o rádio migrar para cima.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0029": {
-  "conceito": "### Pipkin (fratura da cabeça femoral com luxação posterior)\n| Tipo | Fratura |\n|---|---|\n| I | ==abaixo da fóvea== (fora da carga) |\n| II | ==acima da fóvea== (inclui o ligamento redondo, área de carga) |\n| III | I ou II + ==colo== do fêmur |\n| ==IV== | I ou II + ==acetábulo== |\n\n### Conduta\n| Tipo | Tratamento |\n|---|---|\n| I | conservador se congruente; excisão de fragmento pequeno |\n| II | fixação (acesso de Smith-Petersen ou luxação cirúrgica de Ganz) |\n| III | jovem: fixação do colo primeiro; idoso: artroplastia |\n| IV | tratar o acetábulo e a cabeça (via conforme a parede) |\n\n- Redução urgente da luxação (< 6 h).\n\n> **Na prova:** cabeça + acetábulo = ==Pipkin IV==",
-  "correta": "**Pipkin IV.**\n- Cabeça + acetábulo.\n- Geralmente parede posterior.",
   "incorretas": {
-   "A": "**I.**\n- Infrafoveal isolada.",
-   "B": "**II.**\n- Suprafoveal isolada.",
-   "C": "**III.**\n- Com colo."
+   "A": "O tipo I é a fratura infrafoveal isolada.",
+   "B": "O tipo II é a fratura suprafoveal isolada.",
+   "C": "O tipo III é a fratura da cabeça associada à do colo."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "**Pipkin** classifica a **fratura da cabeça do fêmur** que acompanha a **luxação posterior do quadril**. A referência é a **fóvea**, onde entra o ligamento redondo:\n\n**tipo I**: fratura **abaixo da fóvea** (infrafoveal), fora da área de carga;\n\n**tipo II**: fratura **acima da fóvea** (suprafoveal), na área de carga;\n\n**tipo III**: tipo I ou II com fratura do **colo do fêmur**; o pior prognóstico, pelo risco de necrose;\n\n**tipo IV**: tipo I ou II com fratura do **acetábulo**, em geral da parede posterior.\n\n**A conduta**:\n\n**reduzir a luxação com urgência**, de preferência em menos de 6 horas, para diminuir o risco de necrose;\n\n**TC depois da redução**, para ver fragmentos e a congruência;\n\n**tipo I** pequeno e reduzido: pode ser conservador ou excisão do fragmento; **tipo II**: fixação; **tipo III** no idoso: artroplastia; **tipo IV**: tratar a fratura do acetábulo junto.\n\n**Na prova**: fratura da cabeça do fêmur com fratura do acetábulo é **Pipkin IV**.",
+  "correta": "O tipo IV de Pipkin é a fratura da cabeça femoral associada à fratura do acetábulo, em geral da parede posterior.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0030": {
-  "conceito": "### Fratura femoral atípica (ASBMR)\n| Critério maior | Detalhe |\n|---|---|\n| trauma mínimo ou nenhum | queda da própria altura |\n| traço ==transverso== na cortical lateral | pode ficar oblíquo medialmente |\n| completa com ==espícula medial== | incompleta só na lateral |\n| sem cominução | |\n| ==espessamento (beaking) da cortical lateral== | reação periosteal localizada |\n\n| Critério menor | |\n|---|---|\n| ==dor prodrômica== na coxa/virilha | semanas a meses antes |\n| ==bilateralidade== | até 30 a 50% |\n| espessamento cortical generalizado | |\n| consolidação retardada | |\n\n### Conduta\n- Suspender bisfosfonato; cálcio/vitamina D; teriparatida pode ajudar.\n- Haste cefalomedular; ==investigar o lado oposto== (fixação profilática se dor + linha).\n\n> **Na prova:** fratura atípica por bisfosfonato = ==dor prodrômica==",
-  "correta": "**Dor prodrômica.**\n- Coxa ou virilha semanas antes.\n- Sinal de fratura incompleta.",
   "incorretas": {
-   "B": "**Unilateral.**\n- Frequentemente bilateral.",
-   "C": "**Espícula lateral.**\n- A espícula é medial.",
-   "D": "**Cortical medial.**\n- Espessamento é lateral."
+   "B": "A fratura atípica é frequentemente bilateral.",
+   "C": "A espícula da fratura completa é medial.",
+   "D": "O espessamento característico é da cortical lateral."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O uso prolongado de **bisfosfonatos** (como o **alendronato**) suprime a remodelação óssea e pode levar à **fratura femoral atípica**, na região subtrocantérica ou na diáfise.\n\n**Os critérios da ASBMR**:\n\n**trauma mínimo ou nenhum**, como uma queda da própria altura;\n\n**traço transverso** que começa na cortical **lateral** e pode ficar oblíquo ao cruzar o osso;\n\n**fratura completa** com **espícula medial**, ou incompleta só na cortical lateral;\n\n**sem cominução** ou com cominução mínima;\n\n**espessamento** (bico) localizado da **cortical lateral**.\n\n**Os achados que reforçam**: **dor prodrômica** na coxa ou na virilha semanas ou meses antes, **bilateralidade** e consolidação lenta.\n\n**A conduta**: **suspender** o bisfosfonato, repor cálcio e vitamina D (a teriparatida pode ajudar); fixar com **haste cefalomedular**; **investigar o fêmur do outro lado**, e fixar de forma profilática se houver dor com linha de fratura.\n\n**Na prova**: a fratura atípica por bisfosfonato tem **dor prodrômica**.",
+  "correta": "A dor na coxa ou na virilha semanas antes é típica e mostra a fratura incompleta da cortical lateral.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0031": {
-  "conceito": "### Cisalhamento posteromedial do planalto\n- Mecanismo: ==varo com joelho fletido== e o côndilo femoral medial em ==rotação interna== cisalhando o platô posteromedial.\n- Fragmento posteromedial desliza distal e posteriormente; tíbia subluxa anteriormente.\n- Associação frequente com lesões ligamentares laterais e do LCP.\n\n### Tratamento\n- ==Placa de suporte posteromedial== (antideslizamento) por via posteromedial (intervalo gastrocnêmio medial × pata de ganso) ou Lobenhoffer (prono).\n- Parafusos anteroposteriores isolados falham (cisalhamento).\n\n> **Na prova:** posteromedial = varo, ==flexão do joelho e rotação interna== do côndilo medial",
-  "correta": "**Flexão e rotação interna.**\n- Varo com joelho fletido.\n- Côndilo medial cisalha o platô posterior.",
   "incorretas": {
-   "B": "**Rotação externa.**\n- Rotação do côndilo é interna.",
-   "C": "**Extensão e RE.**\n- Ambos errados.",
-   "D": "**Extensão.**\n- Joelho está fletido."
+   "B": "A flexão está certa, mas o côndilo medial roda internamente.",
+   "C": "O joelho está fletido, e a rotação do côndilo é interna.",
+   "D": "A rotação interna está certa, mas o joelho está fletido no trauma."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **fratura posteromedial do planalto tibial por cisalhamento** tem um mecanismo próprio: **varo** com o **joelho fletido** e o **côndilo femoral medial em rotação interna**. O côndilo, apoiado na parte de trás do planalto, **cisalha** o fragmento posteromedial.\n\n**O que acontece**: o fragmento posteromedial desliza para baixo e para trás, e o restante da tíbia **subluxa para a frente**. São frequentes as lesões **ligamentares laterais** e do **cruzado posterior**.\n\n**O tratamento**: **placa de suporte posteromedial** (antideslizante), por via **posteromedial** (entre o gastrocnêmio medial e a pata de ganso) ou pela via de **Lobenhoffer**, com o paciente em decúbito ventral.\n\n**Por que não só parafusos**: parafusos de anterior para posterior, sozinhos, **falham** contra a força de cisalhamento; a placa segura o fragmento como um apoio.\n\n**Na prova**: o cisalhamento posteromedial vem de varo com o joelho em **flexão** e o côndilo medial em **rotação interna**.",
+  "correta": "Com o joelho fletido e o côndilo medial em rotação interna, o varo faz o côndilo cisalhar o planalto posteromedial.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0032": {
-  "conceito": "### Fraturas da patela por padrão\n| Padrão | Mecanismo | Mecanismo extensor |\n|---|---|---|\n| transversa | ==indireto== (contração do quadríceps com joelho fletido) | geralmente ==roto== |\n| ==vertical/longitudinal== | ==direto, joelho fletido== (painel) | ==íntegro== (retináculos preservados) |\n| cominutiva (estrelada) | direto de alta energia | variável |\n| polo inferior | indireto/avulsão | roto |\n| osteocondral | luxação da patela | íntegro |\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| extensão ativa preservada, degrau < 2 mm, diástase < 3 mm | conservador (órtese em extensão) |\n| falha do mecanismo extensor ou desvio | banda de tensão, parafusos canulados, placas; patelectomia parcial |\n\n> **Na prova:** patela vertical = trauma direto em ==flexão==, mecanismo extensor ==íntegro==",
-  "correta": "**Flexão, extensor íntegro.**\n- Impacto direto com joelho dobrado.\n- Retináculos preservados: extensão ativa possível.",
   "incorretas": {
-   "B": "**Extensor roto.**\n- Típico da transversa.",
-   "C": "**Extensão.**\n- Joelho está fletido no impacto.",
-   "D": "**Extensão e ruptura.**\n- Ambos errados."
+   "B": "A ruptura do mecanismo extensor é típica do traço transverso.",
+   "C": "No trauma que gera o traço vertical, o joelho está fletido.",
+   "D": "O joelho está fletido, e o mecanismo extensor fica íntegro."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **padrão do traço** na patela conta o **mecanismo** e diz se o **mecanismo extensor** está íntegro:\n\n**traço transverso**: trauma **indireto**, por contração brusca do quadríceps com o joelho fletido; a patela se parte como um galho dobrado, e os **retináculos** costumam romper;\n\n**traço vertical** (longitudinal): trauma **direto** com o joelho em **flexão**; a patela é comprimida contra o sulco do fêmur, mas os retináculos ficam **preservados**;\n\n**cominutiva** (estrelada): trauma direto de maior energia.\n\n**Como testar o mecanismo extensor**: pedir para o paciente **elevar a perna estendida**. Se conseguir, o mecanismo está íntegro. A infiltração intra-articular com anestésico ajuda quando a dor atrapalha.\n\n**O tratamento**: com mecanismo **íntegro** e degrau articular **menor que 2 mm**, tratamento **conservador** com o joelho em extensão. Com mecanismo **roto** ou desvio articular, cirurgia: banda de tensão, parafusos ou placa.\n\n**Na prova**: o traço vertical vem de trauma direto em **flexão**, com mecanismo extensor **íntegro**.",
+  "correta": "O impacto direto com o joelho dobrado parte a patela na vertical, e os retináculos preservados mantêm a extensão ativa.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0033": {
-  "conceito": "### Diáfise dos dois ossos do antebraço no adulto\n- Antebraço = articulação de rotação: exige ==redução anatômica== (comprimento, rotação e ==arco radial==).\n- Tratamento: ==placas de compressão== 3,5 mm (6 corticais de cada lado).\n\n### Acessos e nervos em risco\n| Acesso | Nervo em risco |\n|---|---|\n| ==Thompson (dorsal) no terço proximal do rádio== | ==interósseo posterior== (atravessa o supinador) |\n| Henry (volar) | ramo sensitivo do radial, artéria radial; NIP proximal |\n| subcutâneo da ulna | ramo dorsal sensitivo do ulnar (distal) |\n\n- Proteção do NIP: pronar o antebraço (afasta o nervo) no Thompson; supinar e desinserir o supinador lateralmente no Henry.\n\n### Complicações\n- Sinostose (acesso único, lesão alta energia), refratura após retirar placa, síndrome compartimental.\n\n> **Na prova:** nervo mais lesado na cirurgia = ==interósseo posterior==",
-  "correta": "**Interósseo posterior.**\n- Cruza o supinador no rádio proximal.\n- Risco nas vias dorsais e proximais.",
   "incorretas": {
-   "A": "**Ulnar.**\n- Protegido na via subcutânea da ulna.",
-   "B": "**Mediano.**\n- Raramente lesado.",
-   "C": "**Interósseo anterior.**\n- Menos exposto."
+   "A": "O ulnar fica protegido na via subcutânea da ulna.",
+   "B": "O mediano raramente é lesado nessas vias.",
+   "C": "O interósseo anterior é profundo e pouco exposto."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **antebraço** é uma articulação de **rotação**: rádio e ulna giram um em volta do outro. Por isso a fratura dos dois ossos no adulto exige **redução anatômica** (comprimento, rotação e o **arco do rádio**) e fixação com **placas de compressão** de 3,5 mm, com seis corticais de cada lado.\n\n**O nervo mais lesado na cirurgia**: o **interósseo posterior**. Ele passa **através do supinador**, enrolado no colo do rádio, e fica em risco nas vias do **terço proximal**.\n\n**Como proteger**:\n\n**via de Thompson** (dorsal): **pronar** o antebraço, que afasta o nervo do campo;\n\n**via de Henry** (anterior): **supinar** e desinserir o supinador do rádio de medial para lateral, levando o nervo junto com o músculo.\n\n**Os outros nervos**: o **ulnar** fica protegido na via subcutânea da ulna; o **mediano** e o **interósseo anterior** raramente são lesados.\n\n**As complicações da fratura**: **sinostose** radioulnar (acesso único, alta energia), **refratura** depois de retirar a placa e **síndrome compartimental**.\n\n**Na prova**: o nervo mais lesado no tratamento cirúrgico é o **interósseo posterior**.",
+  "correta": "O interósseo posterior atravessa o supinador no rádio proximal e fica em risco nas vias dorsal e anterior.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0034": {
-  "conceito": "### Luxação do joelho (lesão multiligamentar)\n- Lesão de ≥ 2 dos 4 ligamentos principais; frequentemente reduzida espontaneamente.\n- ==Artéria poplítea== lesada em 20 a 40% (ITB < 0,9 = angiotomografia); nervo fibular em 25%.\n\n### Schenck\n| Tipo | Lesão |\n|---|---|\n| KD I | um cruzado + colateral |\n| KD II | dois cruzados |\n| KD III M/L | dois cruzados + um canto |\n| KD IV | todos |\n| KD V | fratura-luxação |\n\n### Prognóstico\n| Favorável | Desfavorável |\n|---|---|\n| ==idade < 40 anos== | idade maior |\n| ==reconstrução precoce dos cruzados== (< 3 semanas) | tratamento conservador/imobilização longa |\n| | lesão vascular, nervo fibular, alta energia |\n\n> **Na prova:** bom prognóstico = reconstrução ==precoce dos cruzados== e idade ==< 40 anos==",
-  "correta": "**Cruzados precoce, < 40 anos.**\n- Estabilidade restaurada cedo.\n- Jovens reabilitam melhor.",
   "incorretas": {
-   "A": "**> 40 anos.**\n- Idade maior piora.",
-   "C": "**Só LCP.**\n- Reconstruir ambos os cruzados.",
-   "D": "**Só LCP e > 40.**\n- Ambos errados."
+   "A": "A reconstrução precoce está certa, mas a idade acima de 40 anos piora o prognóstico.",
+   "C": "O bom prognóstico vem de reconstruir os dois cruzados, não só o posterior.",
+   "D": "Reconstruir só o posterior e ter mais de 40 anos pioram o resultado."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **luxação do joelho** é uma lesão **multiligamentar**: rompe pelo menos dois dos quatro ligamentos principais. Muitas vezes chega **já reduzida**, e a gravidade passa despercebida.\n\n**O que não pode faltar**: avaliar a **artéria poplítea**, lesada em 20 a 40% dos casos. Medir o **índice tornozelo-braquial**: abaixo de 0,9, pedir **angiotomografia**. O **nervo fibular** é lesado em cerca de 25%.\n\n**Schenck** classifica pelos ligamentos rotos: KD I (um cruzado), KD II (os dois cruzados), KD III (os dois cruzados e um colateral, medial ou lateral), KD IV (os quatro) e KD V (com fratura).\n\n**Os fatores de bom prognóstico**:\n\n**reconstrução precoce dos ligamentos cruzados**, que restaura a estabilidade cedo e permite reabilitar;\n\n**idade menor que 40 anos**.\n\n**Os de pior prognóstico**: idade maior, lesão vascular, lesão do nervo fibular, alta energia e imobilização prolongada, que leva à **rigidez**.\n\n**Na prova**: são fatores de bom prognóstico a reconstrução **precoce dos cruzados** e a idade **abaixo de 40 anos**.",
+  "correta": "Reconstruir cedo os cruzados restaura a estabilidade, e os pacientes abaixo de 40 anos reabilitam melhor.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0035": {
