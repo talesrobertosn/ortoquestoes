@@ -1407,102 +1407,102 @@
   "conferido": false
  },
  "trauma-0124": {
-  "conceito": "### Letournel: posição do quadril × padrão (força no trocanter)\n| Rotação do quadril | Padrão |\n|---|---|\n| neutra | fratura transversa/fundo |\n| rotação interna | coluna/parede posterior |\n| ==rotação externa de cerca de 20°==, abdução/adução ==neutra== | ==parede anterior== |\n| rotação externa maior (40 a 50°) | coluna anterior |\n\n### Parede anterior\n- Rara (1 a 2%); melhor vista no ==oblíquo obturatório== e TC.\n- Via ilioinguinal ou Stoppa/intrapélvica.\n\n### Eixo de transmissão\n- Força no trocanter maior segue pelo ==colo femoral== até a cabeça.\n- Quadril em ==rotação lateral== direciona a cabeça contra a ==parede/coluna anterior==.\n- Força pela diáfise (joelho fletido, painel) atinge a parede ==posterior==.\n\n> **Na prova:** parede anterior = eixo do ==colo== com ==rotação lateral==",
-  "correta": "**Colo femoral, rotação lateral.**\n- Cabeça dirigida anteriormente.\n- Parede anterior cede.",
   "incorretas": {
-   "B": "**Rotação medial.**\n- Direciona para posterior.",
-   "C": "**Diáfise.**\n- Eixo do painel, parede posterior.",
-   "D": "**Diáfise e RM.**\n- Luxação/fratura posterior."
+   "B": "Com rotação medial, a cabeça é dirigida para trás, para os padrões posteriores.",
+   "C": "A força pela diáfise, do painel, atinge a parede posterior.",
+   "D": "A diáfise com rotação medial leva à fratura ou luxação posterior."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "**Letournel** mostrou que o padrão da fratura do acetábulo depende de **por onde chega a força** e da **posição do quadril** no impacto. A cabeça do fêmur funciona como um martelo.\n\n**Os dois eixos de transmissão**:\n\n**pelo colo do fêmur**: queda ou batida de lado, com força no **trocânter maior**; a energia segue pelo colo até a cabeça;\n\n**pela diáfise do fêmur**: joelho fletido batendo no **painel** do carro; a energia sobe pela diáfise e empurra a cabeça para trás.\n\n**A rotação decide o alvo**: com a força pelo **colo** e o quadril em **rotação lateral**, a cabeça é dirigida para a **frente** e quebra a **parede anterior** (ou a coluna anterior, com rotação maior). Em **rotação medial**, a cabeça vai para trás, com padrões **posteriores**.\n\n**O painel**: a força pela diáfise atinge a **parede posterior**, com ou sem luxação posterior.\n\n**A parede anterior**: rara (1 a 2%); melhor vista na **oblíqua obturatória** e na TC; abordada pela via ilioinguinal ou intrapélvica (Stoppa).\n\n**Na prova**: na fratura da parede anterior, a energia passa pelo eixo do **colo femoral**, com o quadril em **rotação lateral**.",
+  "correta": "A força no trocânter segue pelo colo, e a rotação lateral dirige a cabeça contra a parede anterior.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0125": {
-  "conceito": "### Luxação do joelho (lesão multiligamentar)\n- Lesão de ≥ 2 dos 4 ligamentos principais; frequentemente reduzida espontaneamente.\n- ==Artéria poplítea== lesada em 20 a 40% (ITB < 0,9 = angiotomografia); nervo fibular em 25%.\n\n### Schenck\n| Tipo | Lesão |\n|---|---|\n| KD I | um cruzado + colateral |\n| KD II | dois cruzados |\n| KD III M/L | dois cruzados + um canto |\n| KD IV | todos |\n| KD V | fratura-luxação |\n\n### Prognóstico\n| Favorável | Desfavorável |\n|---|---|\n| ==idade < 40 anos== | idade maior |\n| ==reconstrução precoce dos cruzados== (< 3 semanas) | tratamento conservador/imobilização longa |\n| | lesão vascular, nervo fibular, alta energia |\n\n> **Na prova:** dois cruzados com colaterais íntegros = ==KD-II==",
-  "correta": "**KD-II.**\n- LCA e LCP rotos.\n- Colaterais íntegros.",
   "incorretas": {
-   "A": "**KD-I.**\n- Um só cruzado.",
-   "C": "**KD-III.**\n- Dois cruzados + um canto.",
-   "D": "**KD-IV.**\n- Todos os quatro."
+   "A": "O KD-I envolve só um cruzado.",
+   "C": "O KD-III tem os dois cruzados e um dos colaterais rotos.",
+   "D": "O KD-IV tem os quatro ligamentos rotos."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "**Schenck** classifica a **luxação do joelho** pelos **ligamentos rompidos**, o que orienta a reconstrução:\n\n**KD-I**: lesão de **um só cruzado**, com o joelho luxado;\n\n**KD-II**: lesão dos **dois cruzados**, com os **colaterais íntegros**;\n\n**KD-III**: os dois cruzados e **um** colateral: **KD-IIIM** (medial) ou **KD-IIIL** (lateral, com canto posterolateral);\n\n**KD-IV**: os **quatro** ligamentos;\n\n**KD-V**: luxação com **fratura** periarticular.\n\n**Os acréscimos**: as letras **C** (lesão arterial) e **N** (lesão nervosa).\n\n**O que não pode faltar**: avaliar a **artéria poplítea** (lesada em 20 a 40%) com o índice tornozelo-braquial, e o **nervo fibular** (25%), mais lesado nas lesões laterais.\n\n**Na prova**: ruptura dos dois cruzados com colaterais íntegros é **KD-II**.",
+  "correta": "O KD-II é a lesão dos dois cruzados com os dois colaterais preservados.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0126": {
-  "conceito": "### Complexo suspensório superior do ombro (Goss)\n- Anel osteoligamentar: ==glenoide, coracoide, ligamentos coracoclaviculares, clavícula distal, acromioclavicular e acrômio==.\n- Suportes: clavícula (anterior) e corpo da escápula/espinha (posterior).\n- Lesão ==dupla== do anel = instabilidade.\n\n### Lesão dupla mais comum\n- ==Clavícula + colo da escápula== (ombro flutuante).\n- Outras: coracoide + AC; acrômio + clavícula.\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| pouco desvio | conservador |\n| colo com medialização > 1 cm ou angulação > 40° | fixar clavícula ± escápula |\n\n### Combinações de lesão dupla\n| Componente 1 | Componente 2 |\n|---|---|\n| ==colo da escápula== | ==clavícula== ou ==ligamento acromioclavicular== |\n| coracoide | luxação AC (CC rotos) |\n| acrômio | clavícula |\n\n- Ligamentos isolados (trapezoide) com coracoide não formam dupla ruptura do anel superior do mesmo modo.\n\n> **Na prova:** instabilidade do SSSC = ==colo da escápula + acromioclavicular==",
-  "correta": "**Colo + acromioclavicular.**\n- Duas rupturas do anel.\n- Ombro flutuante ligamentar.",
   "incorretas": {
-   "A": "**Colo + trapezoide.**\n- Trapezoide isolado não rompe o anel.",
-   "B": "**Coracoide + trapezoide.**\n- Mesmo segmento.",
-   "D": "**Coracoide + AC.**\n- Combinação válida, mas não a indicada."
+   "A": "A lesão isolada do trapezoide não rompe o anel por completo.",
+   "B": "O coracoide e o trapezoide ficam no mesmo segmento do anel.",
+   "D": "Coracoide com acromioclavicular é uma combinação possível, mas não a indicada."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **complexo suspensório superior do ombro** (Goss) é um **anel** de osso e ligamento: **glenoide**, **coracoide**, **ligamentos coracoclaviculares**, **clavícula distal**, **articulação acromioclavicular** e **acrômio**. Ele é sustentado pela **clavícula** (na frente) e pelo **corpo da escápula** (atrás).\n\n**A regra**: uma lesão isolada do anel é estável; uma **lesão dupla**, em dois pontos, deixa um segmento solto e o ombro **instável**.\n\n**As combinações de lesão dupla**:\n\n**clavícula com colo da escápula**: o ombro flutuante clássico, a mais comum;\n\n**colo da escápula com lesão ligamentar**: a ruptura da **acromioclavicular** (com os coracoclaviculares) faz o papel da clavícula quebrada; é o \"ombro flutuante ligamentar\";\n\n**coracoide com acromioclavicular**, **acrômio com clavícula**.\n\n**Por que o trapezoide sozinho não basta**: a lesão de um só ligamento coracoclavicular não rompe o anel por completo; o conoide e a acromioclavicular ainda seguram a clavícula.\n\n**Na prova**: a instabilidade ocorre com fratura do **colo da escápula** e lesão do ligamento **acromioclavicular**.",
+  "correta": "O colo da escápula quebrado e a acromioclavicular rota rompem o anel em dois pontos e deixam a glenoide solta.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0127": {
-  "conceito": "### Clavícula distal (Neer/Craig)\n| Tipo | Relação com os CC | Estabilidade |\n|---|---|---|\n| I | lateral aos CC, ligamentos íntegros | estável |\n| IIA | medial ao conoide; ambos presos ao distal | instável |\n| ==IIB== | ==entre conoide e trapezoide==: ==conoide roto==, trapezoide preso ao fragmento distal | instável |\n| III | intra-articular AC | estável (artrose tardia) |\n| IV | criança: tubo periosteal | |\n| V | cominutiva, CC presos a fragmento inferior | instável |\n\n- Tipo II: pseudartrose em até 30%; fixação (placa gancho, placa distal bloqueada, CC).\n\n> **Na prova:** Craig IIB = ruptura do ==conoide==",
-  "correta": "**Conoide.**\n- Traço entre os dois ligamentos.\n- Medial fica sem suporte.",
   "incorretas": {
-   "B": "**Trapezoide.**\n- Fica preso ao fragmento distal.",
-   "C": "**Coracoacromial.**\n- Não participa.",
-   "D": "**Acromioclavicular.**\n- Tipo III é intra-articular."
+   "B": "O trapezoide fica íntegro, preso ao fragmento distal.",
+   "C": "O ligamento coracoacromial não participa dessa classificação.",
+   "D": "O traço que envolve a acromioclavicular é o tipo III."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "As fraturas da **clavícula distal** são classificadas por **Neer**, ampliado por **Craig**, conforme a relação com os ligamentos **coracoclaviculares** (conoide, mais medial, e trapezoide, mais lateral):\n\n**tipo I**: entre os ligamentos ou lateral a eles, com ligamentos íntegros; pouco desvio, estável;\n\n**tipo IIA**: traço **medial ao conoide**; os dois ligamentos ficam presos ao fragmento distal;\n\n**tipo IIB**: traço **entre o conoide e o trapezoide**, com **ruptura do conoide** e do periósteo; o trapezoide fica preso ao fragmento distal;\n\n**tipo III**: traço **intra-articular**, na acromioclavicular;\n\n**tipo IV**: na criança, o fragmento sai de um tubo de periósteo íntegro;\n\n**tipo V**: cominutiva.\n\n**Por que o tipo II é instável**: o fragmento **medial** perde a ligação com o coracoide e é puxado para **cima** pelo trapézio e pelo esternocleidomastóideo, enquanto o distal desce com o braço. A **pseudartrose** chega a 30%.\n\n**O tratamento do tipo II**: fixação com **placa gancho**, **placa distal bloqueada** ou reconstrução coracoclavicular.\n\n**Na prova**: no tipo IIB de Craig, rompem-se o periósteo e o ligamento **conoide**.",
+  "correta": "No IIB, o traço fica entre os ligamentos, e o conoide se rompe, deixando o fragmento medial sem apoio.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0128": {
-  "conceito": "### Monteggia: prognóstico\n| Grupo | Resultado |\n|---|---|\n| criança | bom na maioria (redução fechada) |\n| adulto tipo I | bom com placa na ulna |\n| ==adulto tipo II== | ==pior==: idoso, osso porótico, ==fratura da cabeça do rádio e do coronoide== associadas, instabilidade |\n\n### Bado II (Jupiter)\n| Subtipo | Nível da fratura da ulna |\n|---|---|\n| IIA | olécrano distal, envolvendo coronoide |\n| IIB | metáfise-diáfise, distal ao coronoide |\n| IIC | diafisária |\n| IID | proximal à metade da ulna, cominutiva |\n\n### Complicações\n- Instabilidade, rigidez, sinostose, pseudartrose, lesão do interósseo posterior.\n\n> **Na prova:** cabeça do rádio posterior = ==Bado 2==",
-  "correta": "**Tipo 2.**\n- Cabeça posterior.\n- Ápice da ulna posterior.",
   "incorretas": {
-   "A": "**Tipo 1.**\n- Cabeça anterior.",
-   "C": "**Tipo 3.**\n- Cabeça lateral.",
-   "D": "**Tipo 4.**\n- Anterior com fratura dos dois ossos."
+   "A": "No tipo 1, a cabeça do rádio vai para a frente.",
+   "C": "No tipo 3, a cabeça do rádio vai para o lado.",
+   "D": "O tipo 4 tem a cabeça anterior com fratura dos dois ossos."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "**Bado** classifica a **lesão de Monteggia** pela direção da **cabeça do rádio**, que acompanha o ápice da angulação da ulna:\n\n**tipo 1**: cabeça **anterior**, ulna com ápice anterior; o mais comum na criança;\n\n**tipo 2**: cabeça **posterior** (ou posterolateral), com fratura do terço médio ou proximal da ulna de ápice **posterior**; o mais comum no **adulto**;\n\n**tipo 3**: cabeça **lateral**, com fratura metafisária da ulna;\n\n**tipo 4**: cabeça **anterior**, com fratura **dos dois ossos** no mesmo nível.\n\n**O tipo 2 no adulto**: muitas vezes vem com **fratura da cabeça do rádio** e do **coronoide** (fratura-luxação posterior), em pacientes **mais velhos**. Tem os **piores resultados**: instabilidade, rigidez e sinostose. **Jupiter** o subdivide pelo nível do traço da ulna.\n\n**A regra de ouro**: restaurar o comprimento e o alinhamento da **ulna** devolve a cabeça do rádio ao lugar.\n\n**Na prova**: Monteggia com luxação **posterior** da cabeça do rádio é o **Bado tipo 2**.",
+  "correta": "No Bado 2, a cabeça do rádio luxa para trás, e a ulna angula com ápice posterior.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0129": {
-  "conceito": "### Hemorragia pélvica\n- Origem: ==venosa (80 a 90%)==, plexo pré-sacral e superfícies ósseas; ==arterial (10 a 20%)==.\n- Artérias mais lesadas (ramos da ilíaca interna):\n\n| Artéria | Relação |\n|---|---|\n| ==glútea superior== | sai pela incisura isquiática maior, acima do piriforme: lesão em fraturas posteriores/sacroilíacas |\n| ==pudenda interna== | junto à espinha isquiática e ramos: fraturas anteriores/compressão lateral |\n| obturatória | ramos púbicos (corona mortis) |\n| sacral lateral | menos frequente |\n\n### Algoritmo\n- Instável: cinta pélvica, reposição balanceada (sangue), FAST.\n- Blush arterial na TC ou instabilidade persistente: ==angioembolização==; tamponamento pré-peritoneal onde não há hemodinâmica.\n\n> **Na prova:** artérias mais relacionadas = ==glútea superior e pudenda==",
-  "correta": "**Glútea superior e pudenda.**\n- Ramos da ilíaca interna mais lesados.\n- Alvos da angioembolização.",
   "incorretas": {
-   "A": "**Glútea inferior.**\n- Menos frequente.",
-   "C": "**Inferior e sacral lateral.**\n- Menos frequentes.",
-   "D": "**Sacral lateral.**\n- Menos frequente que a pudenda."
+   "A": "A pudenda está certa, mas a glútea inferior é lesada com menos frequência que a superior.",
+   "C": "A glútea inferior e a sacral lateral são lesadas com menos frequência.",
+   "D": "A glútea superior está certa, mas a sacral lateral é menos frequente que a pudenda."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **lesão do anel pélvico**, o sangramento é sobretudo **venoso** (80 a 90%), do **plexo pré-sacral** e das superfícies ósseas fraturadas. O sangramento **arterial** responde por 10 a 20%, mas é o que não para com a cinta.\n\n**As artérias mais lesadas**, ramos da **ilíaca interna**:\n\n**glútea superior**: a mais frequente; sai da pelve pelo **forame isquiático maior**, logo acima do piriforme, e é lesada nas fraturas posteriores e da incisura isquiática;\n\n**pudenda interna**: lesada nas fraturas **anteriores** (ramos e sínfise);\n\n**obturatória**: nas fraturas dos ramos;\n\nas demais (glútea inferior, sacral lateral, iliolombar) são menos frequentes.\n\n**O algoritmo**: no paciente instável, **cinta pélvica**, reposição balanceada com sangue e FAST. Com **blush arterial** na TC ou instabilidade persistente: **angioembolização**. Onde não há hemodinâmica disponível, **tamponamento pré-peritoneal**.\n\n**Na prova**: as artérias mais relacionadas à hemorragia pélvica são a **glútea superior** e a **pudenda**.",
+  "correta": "A glútea superior, nas lesões posteriores, e a pudenda, nas anteriores, são os ramos da ilíaca interna mais lesados.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0130": {
-  "conceito": "### Diáfise do fêmur + colo ipsilateral\n- Associação em ==3 a 10%==, alta energia (painel).\n- Fratura do colo: ==basocervical==, ==vertical== e pouco desviada; passa despercebida em até 30%.\n- Rotina: ==TC fina do colo== em toda fratura diafisária de alta energia e RX intraoperatório.\n\n### Tratamento\n| Estratégia | Detalhe |\n|---|---|\n| prioridade | ==colo== (risco de necrose/pseudartrose) |\n| opções | parafusos ou DHS no colo + haste retrógrada; ou haste cefalomedular única |\n\n### Por que placa\n- Com ==colo ipsilateral==, a haste anterógrada disputa o espaço proximal com a fixação do colo e pode desviá-lo.\n- Opções: ==parafusos/DHS no colo + placa na diáfise== (ou haste retrógrada).\n- Haste retrógrada é alternativa comum; a banca indicou a placa.\n\n> **Na prova:** placa aberta na diáfise = ==colo ipsilateral==",
-  "correta": "**Colo ipsilateral.**\n- Libera o fêmur proximal para o colo.\n- Fixações independentes.",
   "incorretas": {
-   "A": "**Joelho flutuante.**\n- Hastes (retrógrada + tíbia).",
-   "B": "**Coluna instável.**\n- Não muda o implante do fêmur.",
-   "C": "**Acetábulo.**\n- Haste retrógrada preferida."
+   "A": "No joelho flutuante, usam-se hastes no fêmur e na tíbia.",
+   "B": "A fratura da coluna toracolombar não muda o implante do fêmur.",
+   "C": "Com fratura do acetábulo, a haste retrógrada é a preferida."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **fratura da diáfise do fêmur** com **fratura do colo** do mesmo lado (3 a 10%, alta energia), a **prioridade é o colo**, pelo risco de **necrose** e **pseudartrose**.\n\n**O conflito da haste anterógrada**: ela entra pelo fêmur **proximal** e disputa o espaço com a fixação do colo; ao ser introduzida, ainda pode **desviar** a fratura do colo.\n\n**As opções**:\n\n**fixar o colo** com parafusos canulados ou DHS e a **diáfise com placa** pela via aberta: as duas fixações ficam independentes, e o fêmur proximal fica livre para o colo;\n\n**fixar o colo** e usar uma **haste retrógrada** na diáfise: alternativa muito usada;\n\n**haste cefalomedular** única: possível, mas com o risco de desviar o colo.\n\n**As outras situações** não pedem placa: no **joelho flutuante**, hastes (retrógrada no fêmur e anterógrada na tíbia); com fratura do **acetábulo** ipsilateral, a haste **retrógrada** preserva o quadril para a cirurgia do acetábulo; a fratura da coluna não muda o implante do fêmur.\n\n**Na prova**: a placa aberta na diáfise do fêmur está mais bem indicada na fratura **ipsilateral do colo**.",
+  "correta": "Com o colo ipsilateral fraturado, a placa deixa o fêmur proximal livre para fixar o colo de forma independente.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0131": {
-  "conceito": "### Luxação anterior do quadril\n- 10 a 15% das luxações; mecanismo: ==abdução + rotação externa== forçadas (± extensão).\n- O ==iliopsoas== (tendão sobre a cápsula anterior) funciona como ==fulcro==: a cabeça rompe a cápsula inferomedial.\n\n### Tipos\n| Tipo | Posição da cabeça | Posição do membro |\n|---|---|---|\n| inferior (obturatória) | forame obturatório | flexão, abdução, RE |\n| superior (púbica/ilíaca) | ramo púbico | extensão, abdução, RE |\n\n### Complicações\n- Lesão da ==artéria e veia femorais== (superior), impacção/fratura condral da cabeça (pior prognóstico de artrose), necrose menor que na posterior.\n\n> **Na prova:** luxação anterior = ==rotação lateral + abdução==",
-  "correta": "**Rotação lateral e abdução.**\n- Oposto da posterior.\n- Iliopsoas como fulcro.",
   "incorretas": {
-   "A": "**RM e adução.**\n- Mecanismo da posterior.",
-   "B": "**Adução.**\n- Não luxa anteriormente.",
-   "C": "**Rotação medial.**\n- Posterior."
+   "A": "Rotação medial com adução é o mecanismo da luxação posterior.",
+   "B": "A adução não luxa o quadril para a frente.",
+   "C": "A rotação medial leva a cabeça para trás."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **luxação anterior do quadril** (10 a 15% das luxações) tem o mecanismo **oposto** ao da posterior:\n\n**luxação anterior**: **abdução** e **rotação lateral** forçadas, às vezes com extensão;\n\n**luxação posterior**: **adução** e **rotação medial**, com o quadril fletido (joelho no painel).\n\n**Como acontece a anterior**: o tendão do **iliopsoas**, que cruza a frente da cápsula, funciona como **fulcro**. A cabeça faz alavanca sobre ele e rompe a cápsula na região inferomedial.\n\n**Os tipos**: **superior** (púbica), com o quadril em extensão; **inferior** (obturatória), com o quadril em flexão, a mais comum.\n\n**As complicações**: lesão dos **vasos femorais** (na superior), **impacção condral** da cabeça (principal causa de artrose depois) e necrose, menos que na posterior.\n\n**Na prova**: na luxação anterior, o membro está em **rotação lateral** e **abdução**.",
+  "correta": "A abdução com rotação lateral faz a cabeça alavancar sobre o iliopsoas e romper a cápsula anterior.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0132": {
-  "conceito": "### Robinson × Neer/Craig\n| Robinson | Local | Subtipo |\n|---|---|---|\n| 1 | medial | A sem desvio (1 extra, 2 intra-articular), B desviada |\n| 2 | diáfise | A alinhada (1 sem desvio, 2 angulada), B desviada (1 simples, 2 cominuta) |\n| ==3== | ==lateral== | ==A sem desvio==: ==A1 extra-articular==, ==A2 intra-articular== (AC) |\n| | | B desviada (B1 extra, B2 intra) |\n\n- ==3A2== = lateral, sem desvio, ==intra-articular (AC)== = ==Neer III==.\n\n> **Na prova:** Robinson 3A2 = ==Neer III==",
-  "correta": "**Neer III.**\n- Lateral intra-articular.\n- Sem desvio.",
   "incorretas": {
-   "A": "**Neer I.**\n- Extra-articular, lateral aos CC (3A1).",
-   "B": "**Craig II.**\n- Desviada/instável.",
-   "D": "**Craig IV.**\n- Criança, tubo periosteal."
+   "A": "O Neer I é extra-articular, correspondente ao 3A1.",
+   "B": "O Craig II é a fratura desviada e instável.",
+   "D": "O Craig IV é a lesão da criança, com o tubo de periósteo."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "**Robinson** classifica a clavícula em três regiões (1 medial, 2 diáfise, 3 lateral) e, em cada uma, pelo **desvio** e pela **articulação**:\n\n**3A**: lateral **sem desvio**: **3A1** extra-articular; **3A2** **intra-articular**, na acromioclavicular;\n\n**3B**: lateral **desviada**: 3B1 extra-articular; 3B2 intra-articular.\n\n**A correspondência com Neer e Craig** (clavícula distal):\n\n**Neer I**: extra-articular, sem desvio, com os coracoclaviculares íntegros (3A1);\n\n**Neer II** (Craig IIA e IIB): desviada, instável, com perda do apoio coracoclavicular do fragmento medial (3B1);\n\n**Neer III**: **intra-articular**, na acromioclavicular, **sem desvio** (3A2); pode evoluir para artrose acromioclavicular;\n\n**Craig IV**: na criança, fragmento fora do tubo de periósteo;\n\n**Craig V**: cominutiva.\n\n**Na prova**: a fratura **Robinson 3A2** corresponde ao tipo **III de Neer**.",
+  "correta": "O 3A2 é lateral, sem desvio e intra-articular na acromioclavicular, como o Neer III.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0133": {
@@ -1517,14 +1517,14 @@
   "conferido": false
  },
  "trauma-0134": {
-  "conceito": "### Incidências na acromioclavicular\n| Incidência | Técnica | Avalia |\n|---|---|---|\n| ==Zanca== | AP com raio ==10 a 15° cefálico==, metade da voltagem | articulação AC sem sobreposição |\n| axilar | | ==deslocamento posterior== (tipo IV) |\n| ==Stryker (notch)== | mão sobre a cabeça, raio 10° cefálico | ==base do coracoide== (fratura) e lesão de Hill-Sachs |\n| estresse (peso) | comparativa | pouco usada hoje |\n\n### Rockwood\n| Tipo | Achado |\n|---|---|\n| I-II | entorse, CC íntegros |\n| III | CC rompidos, desvio 25 a 100% |\n| IV | clavícula posterior (trapézio) |\n| V | desvio 100 a 300% |\n| VI | inferior ao coracoide |\n\n- Coracoclaviculares íntegros com clavícula alta: suspeitar de ==fratura da base do coracoide==.\n\n> **Na prova:** AC tipo III com CC íntegros = fratura do ==processo coracoide==",
-  "correta": "**Processo coracoide.**\n- Base fraturada sobe com a clavícula.\n- CC permanecem íntegros.",
   "incorretas": {
-   "A": "**Acrômio.**\n- Não explica o desvio.",
-   "B": "**Corpo da clavícula.**\n- Fratura, não luxação.",
-   "C": "**Glenoide.**\n- Sem relação."
+   "A": "A fratura do acrômio não explica a clavícula alta com os ligamentos íntegros.",
+   "B": "A fratura do corpo da clavícula é outra lesão, não a luxação.",
+   "C": "A fratura da glenoide não tem relação com esse desvio."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **luxação acromioclavicular**, a clavícula sobe porque os **ligamentos coracoclaviculares** (conoide e trapezoide) se rompem: é o que define o **tipo III de Rockwood** (acromioclavicular e coracoclaviculares rotos).\n\n**A exceção**: a clavícula pode subir com os coracoclaviculares **íntegros** se a **base do processo coracoide** estiver **fraturada**. Os ligamentos ficam inteiros, mas levam junto o pedaço de coracoide, e a clavícula sobe do mesmo jeito.\n\n**Como suspeitar**: clavícula alta com **espaço coracoclavicular normal** ou pouco aumentado na radiografia.\n\n**Como confirmar**: a **incidência de Stryker** (mão sobre a cabeça, raio inclinado 10° cefálico) ou a **TC** mostram a base do coracoide.\n\n**O tratamento**: depende do desvio; muitas vezes conservador, ou fixação do coracoide com parafuso.\n\n**Na prova**: na luxação tipo III com coracoclaviculares íntegros, há fratura do **processo coracoide**.",
+  "correta": "A base do coracoide quebra e sobe com a clavícula, presa aos ligamentos coracoclaviculares íntegros.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0135": {
