@@ -916,76 +916,76 @@
   "conferido": false
  },
  "trauma-0080": {
-  "conceito": "### Sinal de Hawkins\n- ==Radiotransparência linear subcondral== no domo do tálus, visível em ==6 a 8 semanas==.\n- Reflete ==reabsorção por hiperemia==: há irrigação = osso vivo.\n- Ausência não confirma necrose (sensibilidade alta, especificidade menor); RM define.\n- Parcial (só medial ou lateral): revascularização incompleta.\n\n### Necrose no colo do tálus (Hawkins)\n| Tipo | Necrose |\n|---|---|\n| I | 0 a 13% |\n| II | 20 a 50% |\n| III | 70 a 100% |\n| IV | ~100% |\n\n- Irrigação: ==artéria do canal do tarso== (tibial posterior) principal para o corpo.\n\n> **Na prova:** sinal de Hawkins = ==6 a 8 semanas==",
-  "correta": "**6ª a 8ª semana.**\n- Reabsorção subcondral.\n- Indica corpo vascularizado.",
   "incorretas": {
-   "A": "**1 a 3 semanas.**\n- Cedo demais.",
-   "B": "**4 a 5 semanas.**\n- Ainda cedo.",
-   "D": "**10 a 11 semanas.**\n- Tarde."
+   "A": "Da 1ª à 3ª semana é cedo demais para a reabsorção aparecer.",
+   "B": "Na 4ª e na 5ª semana, o sinal ainda não costuma ser visível.",
+   "D": "Da 10ª à 11ª semana já passou a janela típica do sinal."
   },
+  "conceito": "O **sinal de Hawkins** é uma **faixa radiotransparente linear** logo abaixo da cartilagem do **domo do tálus**, que aparece entre a **6ª e a 8ª semana** depois da fratura do colo.\n\n**O que significa**: osso **vivo** responde à imobilização e à falta de carga com **reabsorção por hiperemia**: a faixa clareia. Se ela aparece, o corpo do tálus tem **irrigação**. É um **bom sinal**.\n\n**O que não significa**: a **ausência** do sinal não confirma necrose. O sinal tem sensibilidade alta, mas especificidade menor. Na dúvida, a **RM** define. Um sinal **parcial** (só medial ou só lateral) indica revascularização incompleta.\n\n**A irrigação do corpo do tálus**: vem sobretudo da **artéria do canal do tarso**, ramo da tibial posterior. Ela é lesada quando o colo fratura e desvia.\n\n**O risco de necrose por Hawkins**: tipo I (sem desvio) baixo; tipo II (subluxação subtalar) intermediário; tipo III (luxação subtalar e do tornozelo) alto; tipo IV (também talonavicular) o mais alto.\n\n**Na prova**: o sinal de Hawkins aparece por volta da **6ª a 8ª semana**.",
+  "correta": "Entre a 6ª e a 8ª semana, a reabsorção subcondral aparece no osso vivo e mostra que o corpo do tálus está irrigado.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 65"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0081": {
-  "conceito": "### Síndrome compartimental na perna da criança\n- Sinais clássicos pouco confiáveis: usar os ==3 A== (ansiedade, agitação, analgesia crescente).\n- Fraturas da tíbia: incidência de 2 a 11% (maior que se pensava).\n\n### Preditores\n| Fator | Observação |\n|---|---|\n| idade | a banca indicou ==baixa idade== |\n| adolescência (> 14 anos) e peso > 50 kg | associados em séries de fraturas da tíbia |\n| alta energia, cominução | |\n| lesão por veículo | |\n\n- Adolescentes têm fáscia menos complacente e musculatura maior, semelhante ao adulto.\n\n> **Na prova:** a banca considerou ==baixa idade== o preditor mais forte (veja o alerta)",
-  "correta": "**Baixa idade (gabarito).**\n- Resposta oficial.\n- Crianças pequenas são difíceis de avaliar.",
   "incorretas": {
-   "B": "**Peso > 50 kg.**\n- Associado em algumas séries; a banca não aceitou.",
-   "C": "**Déficit neurológico.**\n- Consequência tardia.",
-   "D": "**Cominução.**\n- Fator de energia, não o mais forte."
+   "B": "O peso acima de 50 kg aparece como preditor forte em séries de tíbia, mas a banca não aceitou.",
+   "C": "O déficit neurológico é uma consequência tardia, não um preditor.",
+   "D": "A cominução reflete a energia do trauma, mas não é o preditor mais forte."
   },
+  "conceito": "Na **criança**, os sinais clássicos da síndrome compartimental são pouco confiáveis: ela não descreve a dor nem colabora com o exame. Os sinais úteis são os **três \"A\"**: **ansiedade**, **agitação** e **aumento da necessidade de analgésicos**.\n\n**A frequência**: nas fraturas da **tíbia** da criança, a síndrome compartimental ocorre em **2 a 11%**, mais do que se pensava.\n\n**Os preditores nas séries de tíbia**: estudos como o de Shore apontam a **idade acima de 14 anos** e o **peso acima de 50 kg** como os mais fortes. O adolescente já tem **fáscia menos complacente** e **musculatura maior**, como o adulto.\n\n**A outra leitura**: a **criança pequena** é a mais difícil de **avaliar**: não fala, não colabora, e o diagnóstico atrasa. A banca considerou a **baixa idade** como o preditor mais forte.\n\n**A conduta**: abrir o gesso até a pele, reavaliar com frequência e, se não melhorar, medir a pressão ou fazer a **fasciotomia**. Déficit neurológico e falta de pulso são **tardios**.\n\n**Na prova**: a banca considerou a **baixa idade** o preditor mais forte.",
+  "correta": "A banca considerou a baixa idade o preditor mais forte, pela dificuldade de avaliar a criança pequena.",
   "alerta": "Séries de fraturas da tíbia em crianças (como a de Shore e colaboradores) apontam a idade acima de 14 anos e o peso acima de 50 kg como os preditores mais fortes de síndrome compartimental, o contrário de baixa idade. A banca indicou A.",
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0082": {
-  "conceito": "### Classificação do hospedeiro (Cierny-Mader, usada nas fraturas expostas e osteomielite)\n| Tipo | Hospedeiro |\n|---|---|\n| A | normal, boa resposta imune e vascular |\n| B | comprometido: ==local== (BL: estase venosa, cicatriz, radiação) ou ==sistêmico== (BS: diabetes, desnutrição, imunossupressão, idade) |\n| ==C== | ==comprometimento grave/múltiplo==: tratamento pior que a doença |\n\n### Uso\n- Complementa Gustilo (ferida) e decide agressividade da reconstrução.\n- Otimizar o hospedeiro: parar tabagismo, controlar glicemia, nutrição.\n\n> **Na prova:** doença sistêmica múltipla = ==tipo C==",
-  "correta": "**Tipo C.**\n- Hospedeiro gravemente comprometido.\n- Tratamento agressivo arriscado.",
   "incorretas": {
-   "A": "**A.**\n- Hospedeiro normal.",
-   "B": "**B.**\n- Comprometimento local ou sistêmico isolado.",
-   "D": "**D.**\n- Não existe."
+   "A": "O tipo A é o hospedeiro normal.",
+   "B": "O tipo B tem comprometimento local, sistêmico ou ambos, mas não grave e múltiplo.",
+   "D": "Não existe tipo D nessa classificação."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **classificação do hospedeiro** de **Cierny e Mader** (usada na osteomielite e nas fraturas expostas) avalia o **paciente**, e não a ferida:\n\n**tipo A**: hospedeiro **normal**, com boa resposta;\n\n**tipo B**: hospedeiro **comprometido**:\n\n**B local** (Bl): problema no membro, como cicatriz, radioterapia, doença vascular local, linfedema;\n\n**B sistêmico** (Bs): doença sistêmica, como diabetes, insuficiência renal, desnutrição, tabagismo, imunossupressão;\n\n**B combinado** (Bls): os dois;\n\n**tipo C**: comprometimento **grave**, com **múltiplas doenças sistêmicas**; o tratamento agressivo é mais arriscado que a própria doença.\n\n**Para que serve**: complementa **Gustilo** (que classifica a ferida) e decide quão **agressiva** pode ser a reconstrução.\n\n**Otimizar o hospedeiro**: parar de fumar, controlar a glicemia e corrigir a nutrição antes das cirurgias.\n\n**Na prova**: a doença sistêmica múltipla corresponde ao **tipo C**.",
+  "correta": "O tipo C é o hospedeiro gravemente comprometido, com múltiplas doenças sistêmicas.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0083": {
-  "conceito": "### Haste retrógrada × anterógrada no fêmur\n| Situação | Preferir retrógrada |\n|---|---|\n| ==obesidade== | ==ponto de entrada fácil== (joelho), sem partes moles espessas do quadril |\n| gestante | menos radiação pélvica |\n| fratura ipsilateral do colo, acetábulo, tíbia (joelho flutuante) | |\n| fratura bilateral, politrauma | posição supina simples |\n| fraturas distais | |\n\n| Desvantagem da retrógrada | |\n|---|---|\n| dor no joelho, risco de artrite séptica | |\n| fraturas subtrocantéricas proximais | controle proximal pior |\n\n> **Na prova:** retrógrada no obeso = ==menor dificuldade no ponto de entrada==",
-  "correta": "**Ponto de entrada mais fácil.**\n- Joelho acessível no obeso.\n- Evita partes moles do quadril.",
   "incorretas": {
-   "A": "**Fluoroscopia.**\n- Não é a vantagem principal.",
-   "B": "**Fresagem.**\n- Semelhante.",
-   "D": "**TVP.**\n- Sem diferença."
+   "A": "A fluoroscopia não é a principal vantagem da retrógrada no obeso.",
+   "B": "A fresagem do canal tem dificuldade semelhante nas duas técnicas.",
+   "D": "O risco de trombose venosa profunda não difere entre as técnicas."
   },
+  "conceito": "Na **fratura da diáfise do fêmur**, a **haste anterógrada** entra pelo **quadril** (fossa piriforme ou trocânter), e a **retrógrada**, pelo **joelho** (entre os côndilos).\n\n**O problema do obeso**: no quadril, a camada de gordura e músculo é enorme. Achar o **ponto de entrada** certo, alinhar o fio guia com o canal e passar os instrumentos fica muito difícil.\n\n**A vantagem da retrógrada no obeso**: o joelho tem **pouca partes moles**, e o ponto de entrada é **fácil de encontrar** e de acessar.\n\n**Outras indicações da retrógrada**:\n\n**fraturas do joelho flutuante** (fêmur e tíbia do mesmo lado), pela mesma incisão;\n\n**gestante**, porque protege a pelve da radiação;\n\n**fraturas bilaterais**, **politrauma** e fratura ipsilateral do **colo** ou do **acetábulo**;\n\n**fraturas distais** da diáfise.\n\n**As desvantagens**: dor no joelho e, em teoria, risco de artrite séptica.\n\n**Os outros pontos**: fluoroscopia, fresagem e risco de **trombose** são semelhantes entre as duas técnicas.\n\n**Na prova**: no obeso, a vantagem da retrógrada é a **menor dificuldade de achar o ponto de entrada**.",
+  "correta": "No joelho, com pouca partes moles, o ponto de entrada é fácil de achar, ao contrário do quadril do obeso.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 54"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0084": {
-  "conceito": "### Fratura por explosão (burst)\n- Carga axial: falha das colunas ==anterior e média== (Denis).\n- Sinais radiográficos:\n  - ==aumento da distância interpedicular== no AP;\n  - retropulsão do muro posterior (canal);\n  - perda de altura anterior e posterior;\n  - fratura vertical da lâmina.\n\n### Diferencial\n| Lesão | Achado |\n|---|---|\n| compressão (cunha) | só coluna anterior; muro posterior íntegro |\n| ==explosão== | ==muro posterior roto==, interpedicular aumentada |\n| flexão-distração (Chance) | ==aumento da distância interespinhosa== |\n| fratura-luxação | translação |\n\n### Tratamento\n- Neurologicamente íntegro e CLP íntegro: colete/deambulação precoce.\n- Déficit ou CLP roto (TLICS ≥ 5): cirurgia.\n\n> **Na prova:** explosão = ==aumento da distância interpedicular==",
-  "correta": "**Distância interpedicular aumentada.**\n- Corpo explode lateralmente.\n- Pedículos se afastam.",
   "incorretas": {
-   "A": "**Deslocamento.**\n- Fratura-luxação.",
-   "B": "**Espinhosos afastados.**\n- Flexão-distração.",
-   "D": "**Número de fragmentos.**\n- Não é critério."
+   "A": "O deslocamento de uma vértebra sobre outra caracteriza a fratura-luxação.",
+   "B": "O afastamento dos espinhosos é sinal da lesão em flexão-distração.",
+   "D": "O número de fragmentos não é critério de fratura por explosão."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **fratura por explosão** (burst) vem de **carga axial**: o disco é empurrado para dentro do corpo vertebral, que **explode** para todos os lados. Pela teoria de **Denis**, falham as colunas **anterior e média**.\n\n**Os sinais radiográficos**:\n\n**aumento da distância interpedicular** no AP: o corpo se abre para os lados e afasta os pedículos;\n\n**retropulsão** do muro posterior para dentro do canal;\n\n**perda de altura** do corpo na frente e atrás;\n\n**fratura vertical da lâmina**, às vezes com laceração da dura.\n\n**O diferencial**:\n\n**fratura-luxação**: uma vértebra se desloca sobre a outra;\n\n**flexão-distração** (Chance): os **processos espinhosos se afastam**;\n\n**compressão simples**: só a coluna anterior, sem retropulsão.\n\n**O tratamento**: paciente **sem déficit** e com o **complexo ligamentar posterior íntegro**: colete e deambulação precoce. Com **déficit** ou ligamento posterior roto (**TLICS de 5 ou mais**): cirurgia.\n\n**Na prova**: a explosão se caracteriza pelo **aumento da distância interpedicular**.",
+  "correta": "O corpo explode para os lados e afasta os pedículos, aumentando a distância interpedicular no AP.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0085": {
-  "conceito": "### Clavícula média: desvio\n| Fragmento | Força | Desvio |\n|---|---|---|\n| ==medial== | ==ECM== | ==superior e posterior== |\n| ==lateral (distal)== | peso do membro, ==peitoral maior== | ==inferior, anterior e medial== (encurtamento) + ==rotação anterior== |\n\n### Indicações relativas de cirurgia\n- Encurtamento > 1,5 a 2 cm, desvio > 100%, cominução (Z), pele em risco, ombro flutuante, politrauma.\n- Placa superior ou anteroinferior; haste intramedular.\n\n### Robinson\n| Tipo | Local |\n|---|---|\n| 1 | medial |\n| 2 | ==diáfise (75 a 80%)== |\n| 3 | lateral |\n\n> **Na prova:** fragmento lateral = ==translação inferior + rotação anterior==",
-  "correta": "**Inferior e rotação anterior.**\n- Peso do membro abaixa.\n- Peitoral roda para frente.",
   "incorretas": {
-   "A": "**Rotação posterior.**\n- Rotação é anterior.",
-   "B": "**Superior.**\n- Superior é o medial.",
-   "D": "**Superior.**\n- Fragmento lateral desce."
+   "A": "A translação inferior está certa, mas a rotação é anterior.",
+   "B": "Quem sobe é o fragmento medial, e a rotação do lateral é anterior.",
+   "D": "A rotação anterior está certa, mas o fragmento lateral desce."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na fratura da **diáfise da clavícula**, os dois fragmentos desviam em sentidos opostos:\n\n**fragmento medial**: o **esternocleidomastóideo** o puxa para **cima**;\n\n**fragmento lateral**: o **peso do membro** o leva para **baixo** (translação inferior), e o **peitoral maior** o puxa para a frente e para dentro, com **rotação anterior**.\n\n**O que se vê**: o ombro **cai**, vai para a frente e **encurta**. A ponta medial fica proeminente sob a pele.\n\n**As indicações relativas de cirurgia**: encurtamento maior que 1,5 a 2 cm, desvio maior que 100%, cominução com fragmento em Z, **pele em risco**, ombro flutuante e politrauma.\n\n**As opções**: placa **superior** ou **anteroinferior**, ou haste intramedular.\n\n**Na prova**: o fragmento lateral tem **translação inferior** e **rotação anterior**.",
+  "correta": "O peso do membro abaixa o fragmento lateral, e o peitoral o roda para a frente.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0086": {
@@ -1000,47 +1000,47 @@
   "conferido": false
  },
  "trauma-0087": {
-  "conceito": "### Vias para a diáfise do úmero\n| Via | Risco |\n|---|---|\n| ==anterolateral== | ==nervo radial== (sulco espiral e septo intermuscular lateral), musculocutâneo |\n| posterior (Gerwin, triciptal) | radial no sulco espiral |\n| MIPO anterior | musculocutâneo/radial |\n\n### Nervo radial\n- Paralisia primária: 10 a 12% (Holstein-Lewis: terço distal espiral).\n- ==Iatrogênica==: complicação mais frequente da RAFI (até 5 a 10%); maioria neuropraxia.\n- Paralisia primária em fechada: observar (70 a 90% recuperam); explorar se exposta ou após redução.\n\n> **Na prova:** RAFI anterolateral = complicação mais frequente ==paralisia do radial==",
-  "correta": "**Paralisia do radial.**\n- Nervo cruza o úmero.\n- Neuropraxia na maioria.",
   "incorretas": {
-   "A": "**Infecção.**\n- Baixa (< 5%).",
-   "B": "**Refratura.**\n- Rara.",
-   "C": "**Pseudartrose.**\n- Rara com fixação rígida."
+   "A": "A infecção é baixa, abaixo de 5%.",
+   "B": "A refratura é rara.",
+   "C": "A pseudartrose é rara com fixação rígida."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **nervo radial** cruza a face **posterior** do úmero no **sulco espiral** e passa para a frente através do **septo intermuscular lateral**, no terço distal. É o nervo mais exposto nas fraturas e nas cirurgias da diáfise do úmero.\n\n**As vias de acesso**:\n\n**anterolateral**: entre o bíceps e o braquial (proximal) e entre o braquial e o braquiorradial (distal), onde o radial precisa ser achado e protegido;\n\n**posterior**: o nervo é dissecado no sulco espiral;\n\n**anteromedial** e técnicas minimamente invasivas.\n\n**A paralisia do radial**:\n\n**primária** (pela fratura): 10 a 12%; a fratura **espiral do terço distal** é a de **Holstein-Lewis**; na fratura **fechada**, observar: 70 a 90% recuperam;\n\n**iatrogênica**: a complicação **mais frequente** da redução aberta e fixação, em até 5 a 10%; quase sempre **neuropraxia**, que recupera.\n\n**As outras complicações** da fixação rígida (infecção, pseudartrose, refratura) são **menos frequentes**.\n\n**Na prova**: na RAFI pela via anterolateral, a complicação mais frequente é a **paralisia do nervo radial**.",
+  "correta": "O radial cruza o úmero no campo cirúrgico, e a paralisia iatrogênica, quase sempre neuropraxia, é a complicação mais frequente.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0088": {
-  "conceito": "### Haste intramedular da tíbia: dor anterior do joelho\n- Queixa ==mais comum== após consolidação: ==dor no ponto de entrada== (anterior do joelho), em ==até 50 a 60%==.\n- Causas: lesão do ligamento patelar/gordura de Hoffa, ramo infrapatelar do safeno, haste saliente.\n- Retirar a haste alivia só parte dos pacientes.\n\n### Portal\n| Portal | Detalhe |\n|---|---|\n| transpatelar/parapatelar | clássico |\n| ==suprapatelar== (semiestendido) | facilita redução proximal/distal; dor semelhante |\n\n> **Na prova:** queixa mais comum pós-haste de tíbia = dor na ==inserção da haste== (joelho)",
-  "correta": "**Inserção da haste.**\n- Dor anterior do joelho.\n- Até metade dos pacientes.",
   "incorretas": {
-   "B": "**Extremidade distal.**\n- Raramente dói.",
-   "C": "**Bloqueio distal.**\n- Irritação local menos frequente.",
-   "D": "**Bloqueio proximal.**\n- Menos frequente."
+   "B": "A extremidade distal da haste raramente causa dor.",
+   "C": "A irritação pelos parafusos de bloqueio distal é menos frequente.",
+   "D": "A dor nos parafusos de bloqueio proximal é menos frequente que a do ponto de entrada."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Depois da **haste intramedular da tíbia**, a queixa mais comum, mesmo com a fratura consolidada, é a **dor anterior do joelho**, no **ponto de entrada da haste**. Ela aparece em **até 50 a 60%** dos pacientes.\n\n**As causas**:\n\n**lesão do ligamento patelar** ou da **gordura de Hoffa** pela via de entrada;\n\n**lesão do ramo infrapatelar do nervo safeno**, com dor e dormência;\n\n**haste saliente** acima da cortical, que irrita o joelho ao ajoelhar.\n\n**A retirada da haste** alivia apenas **parte** dos pacientes.\n\n**O portal de entrada**: pode ser **transtendíneo** (através do ligamento patelar) ou **paratendíneo** (ao lado dele). A técnica **suprapatelar**, com o joelho em semiextensão, facilita a redução das fraturas proximais e distais; o efeito sobre a dor do joelho ainda é discutido.\n\n**Os outros locais**: a ponta distal da haste raramente dói; a irritação pelos parafusos de bloqueio é menos frequente.\n\n**Na prova**: a queixa mais comum após a haste da tíbia é a dor no local da **inserção da haste**.",
+  "correta": "A dor anterior do joelho, no ponto de entrada da haste, atinge até metade dos pacientes.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0089": {
-  "conceito": "### Monteggia: prognóstico\n| Grupo | Resultado |\n|---|---|\n| criança | bom na maioria (redução fechada) |\n| adulto tipo I | bom com placa na ulna |\n| ==adulto tipo II== | ==pior==: idoso, osso porótico, ==fratura da cabeça do rádio e do coronoide== associadas, instabilidade |\n\n### Bado II (Jupiter)\n| Subtipo | Nível da fratura da ulna |\n|---|---|\n| IIA | olécrano distal, envolvendo coronoide |\n| IIB | metáfise-diáfise, distal ao coronoide |\n| IIC | diafisária |\n| IID | proximal à metade da ulna, cominutiva |\n\n### Complicações\n- Instabilidade, rigidez, sinostose, pseudartrose, lesão do interósseo posterior.\n\n> **Na prova:** piores resultados no adulto = ==Bado 2==",
-  "correta": "**Tipo 2.**\n- Associa cabeça do rádio e coronoide.\n- Idosos com osso frágil.",
   "incorretas": {
-   "A": "**Tipo 1.**\n- Bom resultado com fixação.",
-   "C": "**Tipo 3.**\n- Mais comum na criança.",
-   "D": "**Tipo 4.**\n- Raro; tratável com placas."
+   "A": "O tipo 1 costuma ter bom resultado com fixação.",
+   "C": "O tipo 3 é mais comum na criança.",
+   "D": "O tipo 4 é raro e pode ser tratado com placas."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "**Bado** classifica a **fratura-luxação de Monteggia** pela direção da cabeça do rádio: I anterior, II posterior, III lateral, IV anterior com fratura dos dois ossos.\n\n**O tipo II no adulto**: é o **mais comum** no adulto e o de **pior resultado**.\n\n**Por quê**: é uma lesão complexa, que **Jupiter** subdividiu pelo nível do traço da ulna (IIA no coronoide, IIB na metáfise, IIC na diáfise, IID cominutiva). Muitas vezes se associa à fratura da **cabeça do rádio** e do **coronoide**, ocorre em **idosos** com osso frágil e tem mais **instabilidade** e **rigidez**.\n\n**Os outros tipos**: o **tipo I** costuma ter bom resultado com fixação; o **tipo III** é mais comum na **criança**; o **tipo IV** é raro e tratado com placas nos dois ossos.\n\n**As complicações**: instabilidade, rigidez, sinostose radioulnar, pseudartrose e lesão do **nervo interósseo posterior**.\n\n**Na prova**: no adulto, os piores resultados são esperados no **Bado tipo 2**.",
+  "correta": "O Bado 2 associa fraturas da cabeça do rádio e do coronoide em idosos com osso frágil, com o pior resultado.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0090": {
-  "conceito": "### Fratura de Bennett\n- Fratura-luxação intra-articular da base do 1º metacarpo.\n- Fragmento ==volar-ulnar== pequeno fica preso ao trapézio pelo ==ligamento oblíquo anterior== (beak ligament).\n\n### Forças deformantes\n| Músculo | Efeito na diáfise |\n|---|---|\n| ==abdutor longo do polegar== | desvio ==dorsal-radial== e encurtamento |\n| adutor do polegar | adução e ==supinação== da cabeça |\n| extensor longo do polegar | encurtamento |\n\n### Classificação das fraturas da base\n| Tipo | Nome |\n|---|---|\n| intra-articular 2 partes | Bennett |\n| intra-articular cominutiva (Y/T) | ==Rolando== |\n| extra-articular | transversa/oblíqua |\n\n### Tratamento\n- Redução: tração, pronação e abdução com pressão na base.\n- Fixação: fios percutâneos (1º MC ao trapézio ou ao 2º MC) ou parafuso se fragmento grande.\n\n> **Na prova:** supinação do fragmento distal no Bennett = ==adutor do polegar==",
-  "correta": "**Adutor do polegar.**\n- Aduz e supina a cabeça.\n- Soma-se ao abdutor longo.",
   "incorretas": {
-   "B": "**Oponente.**\n- Prona o metacarpo.",
-   "C": "**Abdutor curto.**\n- Não é a força deformante clássica.",
-   "D": "**Extensor curto.**\n- Insere na falange proximal."
+   "B": "O oponente do polegar prona o metacarpo, o contrário do desvio.",
+   "C": "O abdutor curto não é a força deformante clássica do Bennett.",
+   "D": "O extensor curto se insere na falange proximal e não supina o metacarpo."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **fratura-luxação de Bennett**, a base do primeiro metacarpo quebra, e a **diáfise** (o segmento distal) é puxada por músculos que se inserem nela:\n\n**abdutor longo do polegar**: inserido na base, puxa a diáfise para **dorsal e radial** e a **encurta**;\n\n**adutor do polegar**: inserido na base da falange proximal, **aduz** a cabeça do metacarpo e **roda o eixo em supinação**;\n\n**extensor longo do polegar**: contribui para o encurtamento.\n\n**O fragmento pequeno** (volar-ulnar) fica no lugar, preso ao trapézio pelo **ligamento oblíquo anterior**.\n\n**A redução**: **tração**, **pronação** e **abdução** do polegar, com pressão sobre a base, desfazendo cada uma das forças.\n\n**A fixação**: **fios percutâneos** (do 1º metacarpo ao trapézio ou ao 2º metacarpo) ou **parafuso**, se o fragmento for grande.\n\n**Os outros músculos**: o **oponente** prona o metacarpo; o **abdutor curto** não é a força deformante clássica; o **extensor curto** se insere na falange proximal e estende a metacarpofalângica.\n\n**Na prova**: a supinação do segmento distal no Bennett vem do **adutor do polegar**.",
+  "correta": "O adutor do polegar aduz a cabeça do metacarpo e roda o eixo em supinação, somando-se ao abdutor longo.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0091": {
