@@ -4643,36 +4643,36 @@
   "conferido": false
  },
  "pediatria-0426": {
-  "conceito": "### Legg-Calvé-Perthes: fases (Waldenström)\n| Fase | Achado |\n|---|---|\n| inicial (necrose) | cabeça densa, pequena; fratura subcondral (Salter-Thompson) |\n| ==fragmentação== | epífise fragmentada, colapso |\n| reossificação | osso novo |\n| residual | remodelada |\n\n### Classificações\n| Classificação | Incidência | Fase | Critério |\n|---|---|---|---|\n| ==Herring (pilar lateral)== | ==AP== | ==fragmentação== | altura do pilar lateral: A (100%), B (> 50%), B/C, C (< 50%) |\n| Catterall | AP e perfil | | quanto da epífise acometida (I a IV) + sinais de risco |\n| Salter-Thompson | perfil | inicial | extensão da fratura subcondral |\n| Stulberg | AP e perfil | ==maturidade== | congruência e esfericidade (prognóstico de artrose) |\n\n### Prognóstico\n- Pior: início > 8 anos, Herring C, sinais de cabeça em risco.\n\n### Catterall\n| Grupo | Epífise acometida |\n|---|---|\n| I | só anterior, sem colapso |\n| II | anterior com sequestro, pilares preservados |\n| III | maior parte, só pequena porção posterior preservada |\n| ==IV== | ==epífise inteira== |\n\n### Sinais de cabeça em risco\n- Gage (V lateral), calcificação lateral, subluxação lateral, metáfise com cistos, fise horizontal.\n\n### Sinais de cabeça em risco (Catterall)\n| Sinal | Significado |\n|---|---|\n| Gage (V radiotransparente lateral) | colapso lateral |\n| calcificação lateral à epífise | extrusão |\n| subluxação lateral | perda da contenção |\n| fise horizontal | deformidade |\n| ==cistos metafisários== | ==lesão da fise==: distúrbio de crescimento (colo curto, trocanter alto) |\n\n> **Na prova:** cistos metafisários = ==distúrbio potencial do crescimento fisário==",
-  "correta": "**Distúrbio do crescimento fisário.**\n- Cistos refletem lesão da fise.\n- Colo curto e coxa magna.",
   "incorretas": {
-   "A": "**Subluxação.**\n- Sinal próprio (migração lateral).",
-   "B": "**Deformidade epifisária.**\n- Gage e colapso.",
-   "C": "**Calcificação lateral.**\n- Sinal independente de extrusão."
+   "A": "A subluxação lateral é um sinal de risco próprio, visto como migração da cabeça para fora.",
+   "B": "A deformidade da epífise se mostra pelo sinal de Gage e pelo colapso, não pelos cistos metafisários.",
+   "C": "A calcificação lateral à epífise é um sinal separado, que indica extrusão da cabeça."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **doença de Perthes**, Catterall descreveu os **sinais de cabeça em risco**, achados radiográficos que indicam pior prognóstico. Cada um aponta um problema diferente:\n\n**sinal de Gage**: um V radiotransparente na parte lateral da epífise e da metáfise; indica **colapso lateral**;\n\n**calcificação lateral à epífise**: osso se formando fora do acetábulo; indica **extrusão** da cabeça;\n\n**subluxação lateral**: a cabeça migra para fora; indica **perda da contenção**;\n\n**fise horizontal**: favorece a deformidade da cabeça;\n\n**cistos metafisários**: áreas radiotransparentes na metáfise logo abaixo da fise. Indicam que a **fise também foi lesada**, com risco de **distúrbio do crescimento**.\n\n**O que o distúrbio fisário provoca**: o colo para de crescer em comprimento e alarga; resultam **colo curto**, **coxa magna** (cabeça grande) e **trocanter alto**, com marcha de Trendelenburg e discrepância de membros.\n\n**Os outros prognósticos**: idade de início acima de 8 anos e Herring C também pioram.\n\n**Na prova**: cistos metafisários no Perthes sugerem **distúrbio potencial do crescimento fisário**.",
+  "correta": "Os cistos metafisários indicam lesão da fise, com risco de colo curto, coxa magna e trocanter alto.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0427": {
-  "conceito": "### Artrogripose múltipla congênita\n- Contraturas congênitas em ==duas ou mais articulações==, sem progressão.\n- Causa comum: ==acinesia fetal== (falta de movimento intrauterino).\n\n| Origem | Achado |\n|---|---|\n| ==neuropática== (a mais comum) | ==redução das células do corno anterior== da medula |\n| miopática | distrofia muscular congênita |\n| restrição | oligoidrâmnio, útero bicorno |\n| tecido conjuntivo | |\n\n### Amioplasia (forma clássica)\n- Simétrica, quatro membros: ombros aduzidos e em RI, cotovelos estendidos, punhos fletidos, quadris luxados, joelhos estendidos ou fletidos, ==pé torto rígido==.\n- Pele lisa sem pregas, covinhas, inteligência normal.\n\n### Tratamento\n- Fisioterapia precoce; gessos; cirurgias (talectomia no pé torto resistente, osteotomias).\n\n> **Na prova:** artrogripose neuropática = ==menos células do corno anterior==.",
-  "correta": "**Corno anterior, células diminuídas.**\n- Neurônios motores reduzidos.\n- Acinesia fetal e contraturas.",
   "incorretas": {
-   "B": "**Corno posterior.**\n- Sensitivo.",
-   "C": "**Aumento.**\n- Há redução.",
-   "D": "**Posterior e aumento.**\n- Local e alteração errados."
+   "B": "O corno posterior é sensitivo, e a sensibilidade está preservada na artrogripose.",
+   "C": "O local está certo, mas o número de células do corno anterior está diminuído, não aumentado.",
+   "D": "Erra os dois pontos: a alteração é no corno anterior e as células estão diminuídas."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **artrogripose múltipla congênita** nasce da **acinesia fetal**: o feto se mexe pouco, e as articulações enrijecem. A causa mais comum é **neuropática**.\n\n**O que acontece na forma neuropática**: há uma **redução do número de células do corno anterior** da medula espinal, onde ficam os **neurônios motores**. Com menos neurônios, os músculos não recebem estímulo, se desenvolvem mal e são substituídos por gordura e fibrose; as articulações ficam presas.\n\n**Por que o corno anterior**: a medula tem o **corno anterior**, motor, e o **corno posterior**, sensitivo. Na artrogripose, a sensibilidade é preservada; o problema é motor.\n\n**As outras origens da acinesia**:\n\n**miopática**: distrofias musculares congênitas;\n\n**restrição de espaço**: oligoidrâmnio, útero bicorno, gestação múltipla;\n\n**tecido conjuntivo**: alterações das articulações e tendões.\n\n**A amioplasia**, forma clássica, tem contraturas simétricas nos quatro membros, pele lisa, covinhas, hemangioma na fronte e inteligência normal.\n\n**Na prova**: na artrogripose neuropática, há **diminuição das células do corno anterior** da medula.",
+  "correta": "Na forma neuropática há menos neurônios motores no corno anterior, e os músculos ficam sem estímulo no útero.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0428": {
-  "conceito": "### Mucopolissacaridoses (MPS)\n| Tipo | Nome | Herança | Achados |\n|---|---|---|---|\n| I | ==Hurler== (grave) / Scheie | AR | ==retardo==, face grosseira, opacidade de córnea, giba toracolombar |\n| II | Hunter | ==ligada ao X== | sem opacidade de córnea |\n| III | Sanfilippo | AR | predomínio neurológico |\n| IV | ==Morquio== | AR | ==inteligência normal==, nanismo de tronco curto, ==instabilidade C1-C2 (odontoide hipoplásico)==, genu valgo |\n| VI | Maroteaux-Lamy | AR | inteligência normal |\n\n### Ortopedia\n- Morquio: ==avaliar a coluna cervical== antes de anestesia; artrodese occipitocervical se instável.\n- Hurler: cifose, displasia do quadril, túnel do carpo, dedo em gatilho múltiplo.\n- Tratamento: reposição enzimática, transplante de medula (Hurler).\n\n### Inteligência nas MPS\n| Com retardo | Inteligência normal |\n|---|---|\n| ==Hurler (I)== | Scheie (I-S) |\n| ==Hunter (II)== (forma grave) | Morquio (IV) |\n| ==Sanfilippo (III)== | Maroteaux-Lamy (VI) |\n\n- Heparan sulfato acumulado no SNC explica o retardo.\n\n> **Na prova:** retardo mental = ==Hurler, Hunter e Sanfilippo==",
-  "correta": "**Hurler, Hunter e Sanfilippo.**\n- Acumulam heparan sulfato.\n- Comprometimento do SNC.",
   "incorretas": {
-   "B": "**Scheie.**\n- Inteligência normal.",
-   "C": "**Scheie.**\n- Forma atenuada da MPS I.",
-   "D": "**Scheie.**\n- Sem retardo."
+   "B": "Hurler e Hunter estão certos, mas Scheie, forma atenuada da MPS I, tem inteligência normal.",
+   "C": "Hurler e Sanfilippo estão certos, mas Scheie tem inteligência normal.",
+   "D": "Hunter e Sanfilippo estão certos, mas Scheie tem inteligência normal."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Nas **mucopolissacaridoses**, o **retardo mental** aparece quando o glicosaminoglicano que se acumula atinge o **sistema nervoso central**. O principal responsável é o **heparan sulfato**.\n\n**Com retardo mental**:\n\n**Hurler** (MPS I grave): acumula dermatan e heparan sulfato; retardo, face grosseira, opacidade de córnea, giba e rigidez;\n\n**Hunter** (MPS II, ligada ao X): também dermatan e heparan; a forma grave tem retardo;\n\n**Sanfilippo** (MPS III): acumula só **heparan sulfato**; é a mais **neurológica**, com deterioração cognitiva e de comportamento marcantes e pouco acometimento esquelético.\n\n**Com inteligência normal**:\n\n**Scheie** (MPS I atenuada): mesma enzima de Hurler, mas com atividade residual; inteligência normal e rigidez articular;\n\n**Morquio** (MPS IV): queratan sulfato; inteligência normal, hiperfrouxidão e instabilidade C1-C2;\n\n**Maroteaux-Lamy** (MPS VI): dermatan sulfato; inteligência normal.\n\n**Na prova**: retardo mental nas mucopolissacaridoses = **Hurler, Hunter e Sanfilippo**.",
+  "correta": "Hurler, Hunter e Sanfilippo acumulam heparan sulfato no sistema nervoso central e cursam com retardo mental.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0429": {
@@ -4687,36 +4687,36 @@
   "conferido": false
  },
  "pediatria-0430": {
-  "conceito": "### Mielomeningocele: nível × deformidade\n| Nível | Músculos preservados | Deformidade típica | Marcha |\n|---|---|---|---|\n| ==torácico== | nenhum nos MMII | ==flexão e abdução dos quadris (rã), flexão dos joelhos==, equino | cadeira; órtese recíproca |\n| L1-L2 | flexores e adutores do quadril | flexão e adução: ==luxação== | domiciliar |\n| L3-L4 | + quadríceps (L4 tibial anterior) | pé calcâneo-varo | comunitária com órteses |\n| L5 | + isquiotibiais mediais, glúteo médio parcial | pé calcâneo | comunitária |\n| S1 | + gastrocnêmio parcial | cavo | próximo do normal |\n\n### Pontos\n- Nível mais importante para marcha: ==quadríceps (L3-L4)==.\n- Luxação do quadril mais comum em L3-L4.\n\n### Chiari II\n- Herniação do ==vermis cerebelar e tronco== pelo forame magno; presente em quase todos com MMC.\n- Sintomática em cerca de 1/3 (principal causa de morte na MMC).\n\n| Idade | Sinais |\n|---|---|\n| lactente | ==estridor==, ==apneia==, disfagia, ==nistagmo==, choro fraco |\n| criança maior | cefaleia, fraqueza de MMSS, espasticidade, escoliose |\n\n- Primeiro checar a derivação; descompressão da fossa posterior se persistir.\n\n> **Na prova:** Chiari II sintomática = ==nistagmo== (e estridor, apneia)",
-  "correta": "**Nistagmo.**\n- Compressão do tronco.\n- Junto de estridor, apneia e disfagia.",
   "incorretas": {
-   "B": "**Hipertonia.**\n- Tardia, menos característica.",
-   "C": "**Taquipneia.**\n- Há apneia.",
-   "D": "**Hipoacusia.**\n- Não é típica."
+   "B": "A hipertonia pode aparecer mais tarde e é menos característica que os sinais de tronco.",
+   "C": "O Chiari II causa apneia, e não taquipneia.",
+   "D": "A hipoacusia não é um sinal típico do Chiari II."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **malformação de Chiari tipo II** está presente em quase todas as crianças com **mielomeningocele**. O **vermis cerebelar** e o **tronco encefálico** descem pelo forame magno, e muitas vezes há hidrocefalia associada.\n\n**Quando dá sintomas** (cerca de um terço), é a principal causa de morte na mielomeningocele. Os sinais vêm da **compressão do tronco encefálico** e dos nervos cranianos baixos:\n\n**no lactente**: **estridor** (paralisia das cordas vocais), **apneia**, **disfagia** e engasgos, choro fraco e **nistagmo**;\n\n**na criança maior**: cefaleia, fraqueza dos membros superiores, espasticidade e **escoliose** progressiva.\n\n**A conduta**: antes de tudo, verificar se a **derivação ventriculoperitoneal** está funcionando, porque a hidrocefalia descompensada piora o Chiari. Se os sintomas persistirem com a derivação funcionando, faz-se a **descompressão da fossa posterior**.\n\n**Para o ortopedista**: escoliose que progride rápido, piora da marcha ou da força numa criança com mielomeningocele exige investigar derivação, Chiari, siringomielia e medula presa.\n\n**Na prova**: Chiari II sintomático = **nistagmo**, junto de estridor, apneia e disfagia.",
+  "correta": "A compressão do tronco encefálico no Chiari II causa nistagmo, além de estridor, apneia e disfagia.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0431": {
-  "conceito": "### A periferia da fise\n- **Zona de Ranvier:** células que fazem a fise crescer **em largura** (aposicional).\n- **Anel pericondral de LaCroix:** faixa fibrosa densa, contínua com o periósteo metafisário, que dá ==estabilidade mecânica à junção osso–cartilagem==.\n- **Processos mamilares:** interdigitações que ajudam a resistir ao cisalhamento, mas não são a estrutura de contenção periférica.\n- O **periósteo** espesso da criança também contribui, mas o anel de LaCroix é a resposta clássica.\n\n### Vascularização da fise\n| Região | Irrigação |\n|---|---|\n| epífise e zona germinativa | artérias epifisárias |\n| metáfise | nutrícia e metafisárias |\n| periferia | pericondrais |\n\n> **Na prova:** anel de LaCroix = ==estabilização mecânica da fise==",
-  "correta": "**Estabilização mecânica.**\n- Faixa fibrosa contínua com o periósteo.\n- Resiste ao cisalhamento.",
   "incorretas": {
-   "A": "**Nutrição metafisária.**\n- Vasos metafisários.",
-   "B": "**Crescimento periférico.**\n- Zona de Ranvier.",
-   "D": "**Cartilagem articular.**\n- Nutrida pelo líquido sinovial."
+   "A": "A nutrição da metáfise vem dos vasos nutrícios e metafisários.",
+   "B": "O crescimento periférico, em largura, é função da zona de Ranvier.",
+   "D": "A cartilagem articular é nutrida pelo líquido sinovial."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **fise** (placa de crescimento) é cartilagem entre a epífise e a metáfise. Sua **periferia** tem duas estruturas importantes, com funções diferentes:\n\n**zona de Ranvier** (sulco ossificante): um grupo de células na borda da fise que faz a placa crescer **em largura** (crescimento aposicional) e fornece células para a camada germinativa;\n\n**anel pericondral de LaCroix**: uma **faixa fibrosa densa**, contínua com o periósteo da metáfise, que envolve a fise e dá **estabilidade mecânica** à junção entre a cartilagem e o osso, resistindo ao cisalhamento.\n\n**Outros elementos de estabilidade**: os **processos mamilares** (interdigitações entre a fise e a metáfise) e o **periósteo** espesso da criança.\n\n**A nutrição**: a epífise e a zona germinativa recebem sangue das **artérias epifisárias**; a metáfise, das artérias nutrícias e metafisárias; a periferia, de vasos pericondrais. A **cartilagem articular** é nutrida pelo **líquido sinovial**.\n\n**Por que importa**: as fraturas de Salter-Harris passam pela zona hipertrófica, a mais fraca; o anel de LaCroix e o periósteo ajudam a manter a fise no lugar, e sua integridade facilita a redução.\n\n**Na prova**: o anel de LaCroix é responsável pela **estabilização mecânica** da fise.",
+  "correta": "O anel pericondral de LaCroix é uma faixa fibrosa contínua com o periósteo que estabiliza mecanicamente a fise.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0432": {
-  "conceito": "### Doença de Blount\n| Forma | Idade | Perfil |\n|---|---|---|\n| infantil | < 4 anos | obesa, marcha precoce, bilateral |\n| juvenil/adolescente | > 10 anos | obeso, unilateral, varo menor |\n\n### Langenskiöld (6 estágios)\n| Estágio | Achado |\n|---|---|\n| I | irregularidade metafisária medial, bico |\n| II | depressão em degrau |\n| III | degrau mais profundo, fragmentação |\n| ==IV== | ==ponte (barra) óssea medial através da fise== começa |\n| V | epífise dupla (fratura) |\n| VI | fechamento medial completo |\n\n### Ângulo metafisário-diafisário (Drennan)\n- > 16°: Blount provável; < 10°: fisiológico.\n\n### Tratamento\n- < 3 anos, estágio I-II: órtese.\n- Crescimento guiado, osteotomia valgizante antes dos 4 anos; ressecção da barra, elevação do planalto nos tardios.\n\n### Perfil da Blount infantil\n- ==Marcha precoce== (antes de 1 ano), ==sobrepeso/obesidade==, afrodescendentes, bilateral.\n- Carga sobre a fise medial imatura inibe o crescimento (Hueter-Volkmann).\n\n### Radiografia AP na forma infantil\n- ==Epífise medial== menor, em cunha, com ==ossificação assimétrica==.\n- ==Bico metafisário medial== (não epifisário), fise medial irregular e inclinada.\n- ==Subluxação lateral== da tíbia.\n\n> **Na prova:** Blount infantil no AP = ==ossificação assimétrica da epífise proximal==",
-  "correta": "**Ossificação epifisária assimétrica.**\n- Epífise medial em cunha.\n- Menor ossificação medial.",
   "incorretas": {
-   "A": "**Subluxação lateral.**\n- Não medial.",
-   "B": "**Irregularidade medial.**\n- Fise medial, não lateral.",
-   "C": "**Bico metafisário.**\n- Não epifisário."
+   "A": "A tíbia subluxa para lateral, não para medial.",
+   "B": "A irregularidade é da parte medial da fise, não da lateral.",
+   "C": "O bico ósseo é metafisário, não epifisário."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **doença de Blount infantil**, a carga excessiva inibe a parte **medial** da fise proximal da tíbia. Na **radiografia AP**, isso aparece como:\n\n**ossificação assimétrica da epífise proximal**: a parte **medial** da epífise fica **menor** e em forma de **cunha**, porque ossifica menos que a lateral;\n\n**bico metafisário medial**: a **metáfise** (não a epífise) forma uma saliência em bico, com depressão em degrau nos estágios mais avançados;\n\n**fise medial** irregular, alargada e inclinada para baixo;\n\n**subluxação lateral** da tíbia em relação ao fêmur, vista na marcha como o joelho escapando para fora.\n\n**A medida**: o **ângulo metafisário-diafisário de Drennan**, acima de 16°, sugere Blount; abaixo de 10°, varo fisiológico.\n\n**A classificação de Langenskiöld** gradua as alterações em seis estágios, do bico metafisário (I) ao fechamento medial da fise (VI).\n\n**Os erros comuns**: o bico é **metafisário**, a irregularidade é da fise **medial** e a subluxação é **lateral**.\n\n**Na prova**: na Blount infantil, o AP mostra **ossificação assimétrica da epífise proximal** da tíbia.",
+  "correta": "A parte medial da epífise ossifica menos e fica em cunha, deixando a ossificação epifisária assimétrica.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0433": {
@@ -4731,51 +4731,51 @@
   "conferido": false
  },
  "pediatria-0434": {
-  "conceito": "### Bissetriz do calcanhar (Bleck)\n- Linha que divide a ==planta do retropé== ao meio, projetada para o antepé.\n\n| Projeção | Interpretação |\n|---|---|\n| ==entre 2º e 3º dedos== | normal |\n| sobre o 3º dedo | adução leve |\n| ==lateral ao 3º== (3º-4º) | adução moderada |\n| entre 4º e 5º | adução grave |\n\n- No pé torto e no metatarso aduto a bissetriz fica ==lateral ao 3º raio== (antepé aduzido).\n\n### Metatarso aduto\n| Tipo | Flexibilidade | Conduta |\n|---|---|---|\n| flexível | corrige além do neutro | observação |\n| parcialmente flexível | até o neutro | alongamento, gesso |\n| rígido | não corrige | gessos seriados |\n\n### Osteotomia da base dos metatarsais\n- Indicada no aduto rígido residual em crianças maiores (> 4 a 6 anos).\n- O ==1º metatarso== tem a ==fise proximal== (os demais, distal): osteotomia basal pode lesá-la.\n- Resultado: ==parada do crescimento do 1º MT== (encurtamento, deformidade) = complicação mais grave.\n- Alternativas: osteotomia de abertura do cuneiforme medial + fechamento do cuboide.\n\n> **Na prova:** osteotomia basal dos metatarsais = risco de ==parada de crescimento do 1º MT==",
-  "correta": "**Parada do crescimento do 1º MT.**\n- Fise proximal do 1º metatarso.\n- Encurtamento permanente do raio.",
   "incorretas": {
-   "A": "**Recidiva.**\n- Possível, mas menos grave.",
-   "B": "**Subluxação TMT.**\n- Complicação das capsulotomias (Heyman-Herndon).",
-   "D": "**Proeminência.**\n- Estética, menor."
+   "A": "A recidiva é possível, mas é menos grave e pode ser tratada.",
+   "B": "A subluxação tarsometatarsal é mais ligada às capsulotomias de Heyman-Herndon.",
+   "D": "A proeminência tarsometatarsal é um problema estético menor."
   },
+  "conceito": "No **pé torto** tratado, pode sobrar uma **adução residual do antepé** (metatarso aduto) rígida. Em crianças maiores, acima de 4 a 6 anos, ela pode ser corrigida com **osteotomias**.\n\n**A osteotomia da base dos metatarsais**: corta a base dos metatarsos para abduzir o antepé. O problema está no **1º metatarso**:\n\n**os metatarsos 2 a 5** têm a fise na **cabeça** (distal);\n\n**o 1º metatarso** tem a fise na **base** (proximal).\n\nUma osteotomia perto da base do 1º metatarso pode **lesar a fise**, causando **parada do crescimento**, **encurtamento** do 1º raio e deformidade. É a complicação **mais grave**, porque é permanente e altera a biomecânica do antepé.\n\n**As outras complicações**: recidiva (possível, mas tratável), proeminência dorsal (estética) e subluxação tarsometatarsal (mais ligada às capsulotomias de Heyman-Herndon).\n\n**As alternativas** que evitam a fise: osteotomia de **abertura do cuneiforme medial** combinada com **fechamento do cuboide**, que corrige a adução no mediopé.\n\n**Na prova**: a complicação mais grave da osteotomia da base dos metatarsais é a **parada do crescimento do I metatarsal**.",
+  "correta": "O 1º metatarso tem fise proximal; a osteotomia na base pode lesá-la e parar o crescimento, encurtando o raio de forma permanente.",
   "referencias": [
    "AO Surgery Reference. https://surgeryreference.aofoundation.org/",
    "POSNA Study Guide. https://posna.org/physician-education/study-guide"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0435": {
-  "conceito": "### Osteogênese imperfeita (Sillence modificada)\n| Tipo | Gravidade | Detalhe |\n|---|---|---|\n| I | leve | ==escleras azuis==, surdez, colágeno em quantidade reduzida |\n| II | letal perinatal | fraturas múltiplas intrauterinas |\n| III | grave progressiva | deformidade, baixa estatura, dentinogênese |\n| IV | moderada | escleras normais |\n| ==V== | moderada | ==calo hiperplásico== (simula ==osteossarcoma==), ==calcificação da membrana interóssea== do antebraço, luxação da cabeça do rádio; IFITM5 |\n| VI em diante | variadas | genes não colágenos |\n\n### Tratamento\n- ==Bisfosfonato== (pamidronato, zoledronato).\n- Hastes telescópicas (Fassier-Duval, Sheffield) nas deformidades e fraturas repetidas.\n\n### Subtipos A e B\n- Tipos I e IV subdividem-se pela dentina: ==A (dentinogênese normal)== e ==B (dentinogênese imperfeita)==.\n- Tipo IB: escleras azuis, colágeno ==tipo I==, ==dentinogênese anormal==, ==autossômica dominante==.\n\n> **Na prova:** Sillence IV = defeito ==quantitativo e qualitativo==, ==esclera normal==",
-  "correta": "**Quantitativo e qualitativo, esclera normal.**\n- Gravidade moderada.\n- Esclera clara no adulto.",
   "incorretas": {
-   "A": "**Só quantitativo.**\n- Perfil do tipo I.",
-   "C": "**Tipo I.**\n- Quantitativo e esclera azul.",
-   "D": "**Esclera azul.**\n- No IV é normal."
+   "A": "A esclera normal está certa, mas o defeito do tipo IV não é só quantitativo.",
+   "C": "Defeito só quantitativo com esclera azulada descreve o tipo I.",
+   "D": "O defeito quantitativo e qualitativo está certo, mas no tipo IV a esclera é normal."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **osteogênese imperfeita**, o colágeno tipo I pode ter defeito de **quantidade**, de **qualidade** ou dos dois:\n\n**tipo I**: defeito **apenas quantitativo**: metade do colágeno, mas com estrutura normal; forma leve, com **escleras azuis**;\n\n**tipos II, III e IV**: o colágeno é **estruturalmente anormal** (defeito **qualitativo**, em geral por troca de glicina), e as fibras normais e anormais juntas também ficam em quantidade alterada: o defeito é **quantitativo e qualitativo**.\n\n**O tipo IV de Sillence**:\n\n**gravidade moderada**, entre o I e o III;\n\n**escleras normais** (podem ser azuladas na infância e clarear);\n\ndeformidades e baixa estatura variáveis;\n\nsubdividido em **IVA** (dentina normal) e **IVB** (dentinogênese imperfeita);\n\nherança autossômica dominante.\n\n**Como lembrar**: esclera **azul** com defeito só de quantidade é o **tipo I**; esclera **normal** com defeito de quantidade e qualidade é o **tipo IV**.\n\n**Na prova**: Sillence IV = defeito **quantitativo e qualitativo** do colágeno tipo I, com **esclera normal**.",
+  "correta": "No tipo IV o colágeno é anormal em estrutura e quantidade, e as escleras são normais.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0436": {
-  "conceito": "### Doença de Blount\n| Forma | Idade | Perfil |\n|---|---|---|\n| infantil | < 4 anos | obesa, marcha precoce, bilateral |\n| juvenil/adolescente | > 10 anos | obeso, unilateral, varo menor |\n\n### Langenskiöld (6 estágios)\n| Estágio | Achado |\n|---|---|\n| I | irregularidade metafisária medial, bico |\n| II | depressão em degrau |\n| III | degrau mais profundo, fragmentação |\n| ==IV== | ==ponte (barra) óssea medial através da fise== começa |\n| V | epífise dupla (fratura) |\n| VI | fechamento medial completo |\n\n### Ângulo metafisário-diafisário (Drennan)\n- > 16°: Blount provável; < 10°: fisiológico.\n\n### Tratamento\n- < 3 anos, estágio I-II: órtese.\n- Crescimento guiado, osteotomia valgizante antes dos 4 anos; ressecção da barra, elevação do planalto nos tardios.\n\n### Perfil da Blount infantil\n- ==Marcha precoce== (antes de 1 ano), ==sobrepeso/obesidade==, afrodescendentes, bilateral.\n- Carga sobre a fise medial imatura inibe o crescimento (Hueter-Volkmann).\n\n### Risco neurológico na correção aguda\n- Valgização e desrotação agudas ==estiram o nervo fibular==.\n- Ramo ==profundo== é o mais sensível: testar o ==extensor longo do hálux== antes e depois.\n- Prevenção: fasciotomia do compartimento anterior, osteotomia da fíbula, correção gradual (fixador) em deformidades grandes.\n- Síndrome compartimental também é risco.\n\n> **Na prova:** correção aguda do Blount = checar o ==extensor longo do hálux (fibular profundo)==",
-  "correta": "**Extensor longo do hálux.**\n- Inervado pelo fibular profundo.\n- Primeiro sinal de lesão por estiramento.",
   "incorretas": {
-   "B": "**FLD.**\n- Tibial; não é o nervo em risco.",
-   "C": "**Tibial posterior.**\n- Nervo tibial, menos exposto.",
-   "D": "**Gastrocnêmio.**\n- Nervo tibial."
+   "B": "O flexor longo dos dedos é inervado pelo nervo tibial, que não é o nervo em risco.",
+   "C": "O tibial posterior é inervado pelo nervo tibial, menos exposto nessa correção.",
+   "D": "O gastrocnêmio é inervado pelo nervo tibial, não pelo fibular."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **doença de Blount**, a osteotomia proximal da tíbia corrige o **varo** e a **torção interna**. Quando a correção é **aguda** (feita de uma vez na cirurgia), a perna é valgizada e rodada para fora de repente, e isso **estira o nervo fibular**, que contorna o colo da fíbula logo abaixo do joelho.\n\n**Por que testar o extensor longo do hálux**: o ramo **fibular profundo** é o mais sensível ao estiramento. Ele inerva o **extensor longo do hálux**, e a perda de força para estender o hálux é o **primeiro sinal** de lesão. Por isso, a função desse músculo é avaliada **antes e depois** da cirurgia.\n\n**Outros riscos da correção aguda**: **síndrome compartimental** do compartimento anterior, que também comprime o nervo fibular profundo.\n\n**Como prevenir**:\n\n**fasciotomia** profilática do compartimento anterior;\n\n**osteotomia da fíbula**, para que ela não trave a correção;\n\n**correção gradual** com fixador externo nas deformidades grandes, que dá tempo para o nervo se adaptar.\n\n**Os outros músculos**: flexor longo dos dedos, tibial posterior e gastrocnêmio são inervados pelo **nervo tibial**, que fica menos exposto nessa correção.\n\n**Na prova**: na correção aguda da Blount, avaliar a função do **extensor longo do hálux**.",
+  "correta": "O extensor longo do hálux é inervado pelo fibular profundo, o ramo mais sensível ao estiramento da correção aguda.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0437": {
-  "conceito": "### Zonas do tríceps sural (alongamento na PC)\n| Zona | Local | Técnicas | Alonga |\n|---|---|---|---|\n| 1 | ventres do gastrocnêmio | ==Strayer== (recessão da aponeurose proximal), Baumann (fáscia intramuscular) | só gastrocnêmio |\n| ==2== | ==aponeurose conjunta gastrocnêmio-sóleo, distal aos ventres== | ==Vulpius== (V invertido), Baker (língua em U) | gastro + sóleo moderado |\n| 3 | tendão calcâneo | ==Hoke== (três hemissecções percutâneas), White, Z | tudo; maior risco de ==hiperalongamento== (marcha agachada) |\n\n### Silfverskiöld\n- Equino que ==melhora com joelho fletido==: contratura do ==gastrocnêmio== isolado → zonas 1-2.\n- Equino fixo com joelho fletido: sóleo também → zona 2-3.\n\n### Força × zona\n- Quanto mais ==proximal== (zona 1), mais seletivo: só o gastrocnêmio, ==menor perda de força== e menor risco de hiperalongamento.\n- Zona 3 (tendão calcâneo) alonga tudo: maior fraqueza, risco de marcha agachada.\n\n> **Na prova:** Strayer = ==zona I, menor perda de força==",
-  "correta": "**Zona I, menor perda de força.**\n- Alonga só o gastrocnêmio.\n- Preserva o sóleo.",
   "incorretas": {
-   "A": "**Mais fraqueza.**\n- Zona I é a mais seletiva.",
-   "C": "**Zona III.**\n- Tendão calcâneo; não é Strayer.",
-   "D": "**Zona III.**\n- Zona errada."
+   "A": "A zona I está certa, mas é a mais seletiva e causa menor, não maior, perda de força.",
+   "C": "A zona III é o tendão calcâneo, onde não se faz o Strayer; ali a perda de força é maior.",
+   "D": "A menor perda de força está certa, mas o Strayer não é feito na zona III."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **equino** da paralisia cerebral vem do tríceps sural curto. O alongamento pode ser feito em três **zonas**, e o nível muda a **força** que sobra:\n\n**zona I**: nos **ventres do gastrocnêmio**; técnica de **Strayer** (recessão da aponeurose do gastrocnêmio) e Baumann; alonga **só o gastrocnêmio** e preserva o sóleo;\n\n**zona II**: na aponeurose conjunta, abaixo dos ventres; Vulpius e Baker; alonga o gastrocnêmio e, em parte, o sóleo;\n\n**zona III**: no **tendão calcâneo**; Hoke, White e alongamento em Z; alonga tudo.\n\n**A regra**: quanto mais **proximal**, mais **seletivo** e **estável** o alongamento, e **menor a perda de força** de flexão plantar. Na zona III, o alongamento é maior e menos controlado, com risco de **hiperalongamento**, fraqueza do tríceps e **marcha agachada**.\n\n**Como escolher (Silfverskiöld)**: se o equino melhora com o joelho fletido, só o gastrocnêmio está curto, e o Strayer (zona I) é suficiente; se não melhora, o sóleo também está curto, e é preciso alongar mais distal.\n\n**Na prova**: o Strayer é feito na **zona I** e proporciona **menor perda de força** flexora plantar.",
+  "correta": "O Strayer alonga só o gastrocnêmio, na zona I, preservando o sóleo e causando menor perda de força.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0438": {
