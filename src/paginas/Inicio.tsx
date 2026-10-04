@@ -1,5 +1,5 @@
 import { usarContextoLocal } from '../estado/usarContextoLocal'
-import { useMemo, useState } from 'react'
+import { type CSSProperties, useMemo, useState } from 'react'
 import { usarIndice } from '../dados/usarIndice'
 import { contar, montarSessao } from '../dados/acervo'
 import { AREAS_TREINO, FILTROS_VAZIOS } from '../dados/tipos'
@@ -27,6 +27,7 @@ import { planoRevisao } from '../estado/planoRevisao'
 import { usarRitmoRevisao } from '../estado/preferencias'
 import { calcularStreak } from '../estado/streak'
 import { FUSO_DIA, chaveDia } from '../estado/limiteDiario'
+import { proximaFraseInicio } from '../dados/frasesInicio'
 import '../estilos/paginas/Inicio.css'
 
 /** "Hoje", "Ontem" ou a data curta: a lista de sessões lê melhor assim. */
@@ -45,28 +46,15 @@ const VARIACOES_INICIO = [
   { explicacao: 'Erros voltam cedo; acertos seguros ganham intervalos longos. Assim o seu tempo vai para onde rende mais.', acao: 'Praticar 10 questões', revisar: 'Fortaleça os pontos frágeis', novas: 'Explore questões inéditas' },
 ]
 
-function periodoDoDia(): string {
-  const hora = new Date().getHours()
-  return hora >= 5 && hora < 12 ? 'Bom dia' : hora >= 12 && hora < 18 ? 'Boa tarde' : 'Boa noite'
-}
-
-const VARIACOES_CABECALHO: { comNome: (nome: string) => string; semNome: string; incentivo: string }[] = [
-  { comNome: (nome) => `${periodoDoDia()}, ${nome}.`, semNome: `${periodoDoDia()}. Bora estudar?`, incentivo: 'Dez questões hoje valem mais do que cinquenta no domingo.' },
-  { comNome: (nome) => `Redução anatômica, fixação estável. Bora, ${nome}.`, semNome: 'Redução anatômica, fixação estável.', incentivo: 'Conceito bem fixado não solta na hora da prova.' },
-  { comNome: (nome) => `Um conceito de cada vez, ${nome}.`, semNome: 'Um conceito de cada vez.', incentivo: 'Consolidação leva tempo. Constância acelera.' },
-  { comNome: (nome) => `Carga progressiva, ${nome}.`, semNome: 'Carga progressiva, todos os dias.', incentivo: 'Como na reabilitação: um pouco por dia, sem pular etapas.' },
-  { comNome: (nome) => `Classificações na ponta da língua, ${nome}?`, semNome: 'Classificações na ponta da língua?', incentivo: 'Garden, Schatzker, Neer: a repetição transforma em reflexo.' },
-  { comNome: (nome) => `Que bom ver você de novo, ${nome}.`, semNome: 'Que bom ver você por aqui.', incentivo: 'A sequência de hoje começa na primeira questão.' },
-  { comNome: (nome) => `Menos dúvida, mais critério, ${nome}.`, semNome: 'Menos dúvida, mais critério.', incentivo: 'Entender por que a alternativa está errada também é acertar.' },
-  { comNome: (nome) => `Hora de afiar o raciocínio, ${nome}.`, semNome: 'Hora de afiar o raciocínio.', incentivo: 'Leia o enunciado com calma. O detalhe que decide costuma estar lá.' },
-  { comNome: (nome) => `A prova fica mais perto a cada questão, ${nome}.`, semNome: 'A prova fica mais perto a cada questão.', incentivo: 'E você chega mais preparado a cada sessão.' },
-  { comNome: (nome) => `Mais um dia, mais um degrau, ${nome}.`, semNome: 'Mais um dia, mais um degrau.', incentivo: 'Você responde; a revisão espaçada cuida do resto.' },
-  { comNome: (nome) => `Todo osso consolida com carga, ${nome}.`, semNome: 'Todo osso consolida com carga.', incentivo: 'O conhecimento também. Estímulo certo, na frequência certa.' },
-  { comNome: (nome) => `Seu estudo, no seu ritmo, ${nome}.`, semNome: 'Seu estudo, no seu ritmo.', incentivo: 'Uma sessão curta hoje mantém a engrenagem girando.' },
-  { comNome: (nome) => `Raciocínio clínico se treina, ${nome}.`, semNome: 'Raciocínio clínico se treina.', incentivo: 'Cada questão comentada é uma aula curta e objetiva.' },
-  { comNome: (nome) => `Bora somar repertório, ${nome}.`, semNome: 'Bora somar repertório.', incentivo: 'Quem revisa com método erra menos pelo mesmo caminho.' },
-  { comNome: (nome) => `Do enunciado à conduta, ${nome}.`, semNome: 'Do enunciado à conduta.', incentivo: 'Diagnóstico, classificação e tratamento: é assim que a prova pensa.' },
-  { comNome: (nome) => `Constância vence intensidade, ${nome}.`, semNome: 'Constância vence intensidade.', incentivo: 'Pouco todo dia rende mais do que muito de vez em quando.' },
+/** As provas do acervo, cada uma com a cor da sua linha (a mesma do mapa de metrô do marketing). */
+const PROVAS_DO_ACERVO = [
+  { nome: 'TEOT', cor: '#7ee0c8' },
+  { nome: 'TARO', cor: '#7ee0c8' },
+  { nome: 'R4 ENARE', cor: '#f08f78' },
+  { nome: 'R4 Coluna', cor: '#8fb6ef' },
+  { nome: 'Cirurgia da mão', cor: '#f0c46a' },
+  { nome: 'Fellowship de quadril', cor: '#c5a8f0' },
+  { nome: 'TECOC', cor: '#9fd8f2' },
 ]
 
 export function Inicio() {
@@ -86,7 +74,7 @@ export function Inicio() {
   )
   const [historico] = usarArmazenado<ResumoHistorico[]>('historico', [])
   const [textoDoDia] = useState(() => VARIACOES_INICIO[Math.floor(Math.random() * VARIACOES_INICIO.length)])
-  const [cabecalhoDoDia] = useState(() => VARIACOES_CABECALHO[Math.floor(Math.random() * VARIACOES_CABECALHO.length)])
+  const [cabecalhoDoDia] = useState(proximaFraseInicio)
   const [modalEntrarAberto, definirModalEntrarAberto] = useState(false)
 
   const { ritmo } = usarRitmoRevisao()
@@ -194,10 +182,14 @@ export function Inicio() {
       <section className="inicio-heroi">
         <div className="inicio-heroi__texto">
           {indice && indice.total > 0 && (
-            <p className="inicio-heroi__selo">
-              <span className="ponto-vivo" aria-hidden="true" />
-              <strong>Provas oficiais comentadas</strong><span className="inicio-heroi__provas"> · TEOT · TARO · ENARE R4 · TECOC</span>
-            </p>
+            <div className="inicio-provas">
+              <p className="inicio-provas__titulo"><span className="ponto-vivo" aria-hidden="true" /> Provas oficiais comentadas</p>
+              <ul className="inicio-provas__lista" aria-label="Provas no acervo">
+                {PROVAS_DO_ACERVO.map(({ nome, cor }) => (
+                  <li key={nome} style={{ '--cor-linha': cor } as CSSProperties}>{nome}</li>
+                ))}
+              </ul>
+            </div>
           )}
           <h1>{titulo}</h1>
           <p className="inicio-heroi__sub">{metaHoje
@@ -222,19 +214,28 @@ export function Inicio() {
                   <Icone nome="raio" tamanho={18} /> {textoDoDia.acao}
                 </button>
               )}
-              {!pedeConta && <a className="botao botao--vidro botao--grande" href={href('/treinar')}>Montar minha sessão</a>}
+              {!pedeConta && (
+                <div className="inicio-heroi__secundarias">
+                  <a className="inicio-atalho-heroi" href={href('/treinar')}>
+                    <Icone nome="filtro" tamanho={18} />
+                    <span>Montar minha sessão</span>
+                  </a>
+                  {conta && (
+                    <a className="inicio-atalho-heroi" href={href('/revisao')}>
+                      <Icone nome="calendario" tamanho={18} />
+                      <span>Revisar hoje</span>
+                      <strong className="inicio-atalho-heroi__contador numerico">{revisarHoje}</strong>
+                    </a>
+                  )}
+                </div>
+              )}
             </div>
           )}
         </div>
         {conta ? (
           <div className="inicio-heroi__painel" aria-label="Seu dia">
-            <a className="inicio-kpi" href={href('/revisao')}>
-              <span className="inicio-kpi__icone"><Icone nome="calendario" tamanho={18} /></span>
-              <span className="inicio-kpi__rotulo">Revisar hoje</span>
-              <strong className="numerico">{revisarHoje}</strong>
-            </a>
             <div className="inicio-kpi">
-              <span className="inicio-kpi__icone"><Icone nome="raio" tamanho={18} /></span>
+              <span className="inicio-kpi__icone"><Icone nome="fogo" tamanho={18} /></span>
               <span className="inicio-kpi__rotulo">Sequência</span>
               <strong className="numerico">{streak.atual} {streak.atual === 1 ? 'dia' : 'dias'}</strong>
             </div>
@@ -242,6 +243,11 @@ export function Inicio() {
               <span className="inicio-kpi__icone"><Icone nome="alvo" tamanho={18} /></span>
               <span className="inicio-kpi__rotulo">Acerto geral</span>
               <strong className="numerico">{desempenho.acerto === null ? '0%' : `${desempenho.acerto}%`}</strong>
+            </a>
+            <a className="inicio-kpi" href={href('/dados')}>
+              <span className="inicio-kpi__icone"><Icone nome="certo" tamanho={18} /></span>
+              <span className="inicio-kpi__rotulo">Respondidas</span>
+              <strong className="numerico">{desempenho.respondidas.toLocaleString('pt-BR')}</strong>
             </a>
           </div>
         ) : (
