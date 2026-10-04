@@ -5342,5 +5342,37 @@
   ],
   "geradoEm": "2026-10-04",
   "conferido": false
+ },
+ "ombro-cotovelo-0520": {
+  "conceito": "**O sinal do duplo arco aparece no perfil do cotovelo nas fraturas coronais do capítulo que se estendem para a tróclea.** O fragmento articular desviado anterior e proximalmente mostra duas linhas curvas sobrepostas: o osso subcondral do capítulo e o da porção lateral da tróclea.\n\n**Classificação das fraturas do capítulo (Bryan e Morrey, com a modificação de McKee):**\n\n| Tipo | Descrição |\n|---|---|\n| I (Hahn-Steinthal) | Fragmento grande, com osso subcondral |\n| II (Kocher-Lorenz) | Fragmento fino, quase só cartilagem (shell) |\n| III (Broberg-Morrey) | Cominutiva |\n| IV (McKee) | Fratura coronal que **se estende para a tróclea** (o **duplo arco** é característico) |\n\n**Dorsay e Dubberley** criaram outra classificação (tipo 1 capítulo, tipo 2 capítulo + tróclea em uma peça, tipo 3 capítulo e tróclea separados; A sem e B com cominuição posterior).\n\n**Tratamento:** redução aberta e fixação com parafusos (de anterior para posterior, sem cabeça, ou de posterior para anterior); excisão apenas de fragmentos muito pequenos ou irreparáveis.",
+  "correta": "**Fratura coronal do capítulo.** O sinal do duplo arco é típico da fratura coronal do capítulo com extensão para a tróclea.",
+  "incorretas": {
+   "A": "Kocher descreveu, com Lorenz, o fragmento fino e cartilaginoso (tipo II), que não produz o duplo arco ósseo.",
+   "B": "Lorenz se refere ao mesmo tipo de fratura em casca de cartilagem (tipo II).",
+   "C": "Hahn-Steinthal é o tipo I, fragmento grande do capítulo, mas o sinal do duplo arco é característico da extensão para a tróclea.",
+   "D": "A fratura cominutiva da tróclea não forma o desenho do duplo arco."
+  },
+  "referencias": [
+   "McKee MD, Jupiter JB, Bamberger HB. Coronal shear fractures of the distal end of the humerus. J Bone Joint Surg Am. 1996;78(1):49-54.",
+   "Dubberley JH, Faber KJ, Macdermid JC, Patterson SD, King GJ. Outcome after open reduction and internal fixation of capitellar and trochlear fractures. J Bone Joint Surg Am. 2006;88(1):46-54."
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
+ },
+ "ombro-cotovelo-0521": {
+  "conceito": "**Portais da artroscopia do cotovelo e as estruturas em risco:**\n\n| Portal | Localização | Estrutura em risco |\n|---|---|---|\n| **Anteromedial** | **2 cm distal e 2 cm anterior ao epicôndilo medial** | Nervo cutâneo medial do antebraço, nervo mediano |\n| Proximal anteromedial (Poehling) | 2 cm proximal ao epicôndilo medial, anterior ao septo intermuscular | Nervo ulnar (ficar anterior ao septo), mediano |\n| Anterolateral | 3 cm distal e 1 cm anterior ao epicôndilo lateral (descrições variam) | Nervo radial e interósseo posterior |\n| Proximal anterolateral | 2 cm proximal e 1 cm anterior ao epicôndilo lateral | Nervo radial (mais distante que no anterolateral) |\n| Mediolateral (soft spot) | Centro do triângulo epicôndilo lateral, cabeça do rádio e olécrano | Cutâneo posterior do antebraço |\n| Posterolateral e posterior central | Fossa do olécrano | Ulnar (no posterior se medial) |\n\n**Cuidados:**\n- sempre conferir se o nervo ulnar está no túnel cubital e não subluxa (contraindica o portal proximal anteromedial se instável ou transposto);\n- distender a articulação com soro antes de criar os portais anteriores, afastando os nervos;\n- portais proximais são mais seguros que os distais.",
+  "correta": "**2 cm distal e 2 cm anterior ao epicôndilo medial.** É a localização clássica do portal anteromedial.",
+  "incorretas": {
+   "A": "1 cm distal e 1 cm anterior fica muito próximo do epicôndilo, não é a descrição clássica do portal.",
+   "B": "Proximal e posterior ao epicôndilo medial colocaria o portal no trajeto do nervo ulnar.",
+   "C": "2 cm distal e 1 cm anterior não corresponde à descrição clássica.",
+   "D": "Proximal e posterior ao epicôndilo medial é região de risco para o ulnar."
+  },
+  "referencias": [
+   "Andrews JR, Carson WG. Arthroscopy of the elbow. Arthroscopy. 1985;1(2):97-107.",
+   "Poehling GG, Whipple TL, Sisco L, Goldman B. Elbow arthroscopy: a new technique. Arthroscopy. 1989;5(3):222-4."
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  }
 }
