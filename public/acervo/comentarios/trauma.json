@@ -3613,25 +3613,25 @@
   "conferido": false
  },
  "trauma-0339": {
-  "conceito": "A fratura de estresse da diáfise tibial concentra-se predominantemente na cortical **posteromedial**, e essa localização não é coincidência: reflete diretamente o comportamento mecânico do osso durante a flexão repetitiva da corrida e do salto.\n\nAo longo do ciclo de marcha, a tíbia se comporta como uma viga sujeita a flexão, com uma face trabalhando em tensão (a anterior/anterolateral) e a face oposta trabalhando em compressão (a posteromedial). O tecido ósseo, de modo geral, tolera muito melhor a solicitação em compressão do que em tração, e por isso a fratura de estresse na face posteromedial é ao mesmo tempo a mais frequente (o osso aguenta mais tempo até falhar sob essa carga, mas ainda assim acumula dano de fadiga com o volume de treino) e a de melhor prognóstico, geralmente respondendo bem a repouso relativo e ajuste de carga.\n\nJá a fratura de estresse na face anterior/anterolateral (bem menos comum) é a temida \"linha negra\" na radiografia, de alto risco de propagação completa e retardo de consolidação, justamente por ocorrer no lado de tensão, onde o osso é mecanicamente mais vulnerável à sobrecarga repetitiva apesar de ser afetado com menor frequência.",
-  "correta": "D. A face posteromedial da tíbia, por trabalhar em compressão durante a flexão do osso na marcha e na corrida, é onde ocorre a maioria das fraturas de estresse tibiais, com prognóstico geralmente favorável.",
   "incorretas": {
-   "A": "A face anterolateral é a de tensão, onde a fratura de estresse é MENOS frequente, embora de maior risco quando ocorre, o oposto do que a alternativa afirma.",
-   "B": "A face anteromedial não é a face mecanicamente mais solicitada nesse mecanismo de flexão tibial; a dicotomia relevante aqui é entre a face anterior/anterolateral (tensão) e a posteromedial (compressão).",
-   "C": "A face posterolateral não é a mais associada a esse mecanismo; a face mecanicamente mais sobrecarregada em compressão, e mais frequentemente acometida, é a posteromedial."
+   "A": "A região anterolateral não é o local típico da fratura por estresse.",
+   "B": "A região anteromedial não é o local mais frequente.",
+   "C": "A região posterolateral não é o local típico."
   },
-  "geradoEm": "2026-09-14",
+  "conceito": "A **tíbia** funciona como uma viga curvada sob carga: na corrida e na marcha, a cortical **posteromedial** fica em **compressão**, e a **anterior** fica em **tensão**.\n\n**A fratura por estresse mais frequente**: na região **posteromedial**, por **compressão**, geralmente na junção do terço médio com o distal. É de **baixo risco**: consolida com repouso relativo e retorno gradual ao esporte.\n\n**A fratura de alto risco**: na cortical **anterior**, do lado da **tensão**, no terço médio. Na radiografia aparece a \"**linha negra temida**\". Evolui mal, com pseudartrose e fratura completa, e muitas vezes exige **haste intramedular**.\n\n**O diagnóstico**: radiografia normal no início em até dois terços dos casos; a **RM** é o exame mais sensível e gradua a lesão.\n\n**Os fatores de risco**: aumento súbito de treino, deficiência energética (tríade da mulher atleta), baixa vitamina D, calçado e alinhamento do membro.\n\n**Na prova**: a fratura por estresse da diáfise da tíbia é mais frequente na região **posteromedial**.",
+  "correta": "A cortical posteromedial fica em compressão na carga e é o local mais frequente, de baixo risco.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0340": {
-  "conceito": "Quando se opta pela **fixação interna** no idoso com fratura do colo do fêmur (decisão hoje reservada sobretudo às fraturas não desviadas — Garden I e II), a taxa de reoperação é alta, e é preciso saber qual é o principal motivo.\n\nNão é a osteonecrose, que se costuma temer mais: é a **falha da osteossíntese**, isto é, a perda de fixação com colapso em varo, encurtamento do colo, migração ou cut-out dos parafusos e pseudartrose. As séries mostram reoperação em torno de 10% a 20% nas fraturas não desviadas e muito mais nas desviadas fixadas, e a maioria por falha mecânica.\n\nA explicação está na combinação entre osso e mecânica. O osso porótico não ancora bem os parafusos, sobretudo na região subcapital; a cominuição posterior do colo (típica do mecanismo de rotação externa da queda lateral) retira o apoio cortical e deixa a montagem trabalhando sozinha; e o colo, que transmite carga com um braço de alavanca longo, submete a síntese a forças de cisalhamento a cada passo. Some-se a isso que qualquer imperfeição de redução, medida pelo índice de Garden (aceitável entre 160 e 180 graus) e pelas linhas de Lowell, multiplica o risco: uma redução em varo é preditor direto de falha.\n\nA **osteonecrose** vem em segundo lugar, com incidência de cerca de 10% nas não desviadas e 20% a 30% nas desviadas, e nem toda necrose exige reoperação — muitas são assintomáticas ou não colapsam. A artrose pós-traumática é evento tardio e menos frequente, e a condrólise é rara.\n\nÉ justamente essa taxa de falha mecânica que sustenta a preferência atual pela artroplastia nas fraturas desviadas do idoso: ela troca uma reoperação provável por uma cirurgia definitiva.",
-  "correta": "B. A FALHA DA OSTEOSSÍNTESE (colapso em varo, encurtamento do colo, migração e cut-out dos parafusos, pseudartrose) é o fator mais frequentemente relacionado à reoperação, resultado do osso porótico, da cominuição posterior e das forças de cisalhamento no colo.",
   "incorretas": {
-   "A": "A artrose pós-traumática é evento tardio e bem menos frequente como causa de reoperação, e depende de a cabeça permanecer viável e congruente por anos após a consolidação.",
-   "C": "A necrose da cabeça femoral vem em segundo lugar (cerca de 10% nas não desviadas e 20% a 30% nas desviadas), e nem toda necrose leva à reoperação: muitas são assintomáticas ou não evoluem para colapso.",
-   "D": "A condrólise do quadril é rara e associa-se sobretudo à penetração intra-articular de implantes ou a quadros inflamatórios, e não ao curso habitual da fixação da fratura do colo."
+   "A": "A artrose pós-traumática é rara e tardia.",
+   "C": "A necrose leva a reoperações, mas é menos frequente e mais tardia que a falha da fixação.",
+   "D": "A condrólise do quadril é rara."
   },
-  "geradoEm": "2026-09-10",
+  "conceito": "Na **fratura do colo do fêmur do idoso** tratada com **redução e fixação interna** (parafusos ou DHS), a reoperação é frequente, sobretudo nas fraturas **desviadas**.\n\n**A causa mais frequente de reoperação**: a **falha da osteossíntese**. O osso osteoporótico segura mal os parafusos, a fratura colapsa, os implantes **cortam** a cabeça ou soltam, e a fratura não consolida (**pseudartrose**). Isso acontece nos primeiros meses.\n\n**A necrose da cabeça**: também leva à reoperação, mas aparece **mais tarde** (1 a 2 anos) e é menos frequente que a falha mecânica.\n\n**Por isso**: no idoso com fratura **desviada**, a **artroplastia** (parcial ou total) costuma ser preferida à fixação: tem **menos reoperações**. A fixação fica para as fraturas **sem desvio** ou impactadas em valgo e para os pacientes mais jovens.\n\n**As outras complicações** (artrose pós-traumática, condrólise) são raras e tardias.\n\n**Na prova**: o fator mais relacionado à reoperação após a fixação do colo no idoso é a **falha da osteossíntese**.",
+  "correta": "O osso frágil segura mal os implantes, que cortam ou soltam, e a fratura colapsa: a principal causa de reoperação.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0341": {
@@ -3646,25 +3646,25 @@
   "conferido": false
  },
  "trauma-0342": {
-  "conceito": "Assim como em outra questão deste acervo sobre o mesmo tema, o sinal radiográfico da \"asa de gaivota\" (gull sign) caracteriza a **impacção do teto acetabular**, o afundamento da porção superomedial da cúpula de sustentação de carga, visível como uma linha de densidade dupla que lembra, na sua forma, as asas de uma gaivota em voo.\n\nEsse achado representa dano direto à cartilagem articular numa região crítica para a função do quadril, e seu reconhecimento na radiografia simples é um sinal de alerta que orienta a investigação tomográfica mais detalhada e, frequentemente, uma abordagem cirúrgica específica para elevar e enxertar o fragmento impactado.\n\nSem essa correção específica, a superfície impactada permanece incongruente mesmo que o restante da fratura seja bem reduzido, favorecendo a evolução precoce para artrose pós-traumática.\n\nEsse mesmo princípio (identificar e tratar especificamente a impacção marginal, e não apenas reduzir o traço principal da fratura) se repete em outras fraturas articulares discutidas neste acervo, como a impacção do fragmento de parede posterior do acetábulo e a fratura \"die-punch\" do rádio distal, todas exigindo o mesmo cuidado adicional de elevação e enxerto ósseo do fragmento deprimido.",
-  "correta": "C. O sinal da asa de gaivota caracteriza a impacção do teto acetabular, achado de dano articular na região de sustentação de carga que exige atenção específica na fixação cirúrgica.",
   "incorretas": {
-   "A": "A fratura da parede posterior é um padrão distinto, sem relação direta com o sinal da asa de gaivota.",
-   "B": "A fratura de ambas as colunas é identificada por outros sinais radiográficos (como o sinal do esporão), não pela asa de gaivota.",
-   "D": "A subluxação medial da cabeça é um achado de instabilidade articular distinto da impacção do teto que a asa de gaivota representa."
+   "A": "A fratura da parede posterior aparece como um fragmento atrás da cabeça.",
+   "B": "A fratura das duas colunas tem o sinal do esporão.",
+   "D": "A subluxação medial da cabeça é a protrusão pela lâmina quadrilátera."
   },
-  "geradoEm": "2026-09-14",
+  "conceito": "O **sinal da asa de gaivota** aparece na radiografia do acetábulo como uma **depressão** em forma de V no **teto**, parecida com as asas de uma gaivota voando.\n\n**O que significa**: **impacção do teto acetabular** (impacção marginal ou da cúpula), quase sempre no **idoso** com osso osteoporótico. A cabeça do fêmur afunda o osso subcondral do teto, que fica em dois níveis.\n\n**A importância**: é um sinal de **mau prognóstico** para a fixação isolada. A superfície de carga está esmagada, a redução é difícil de manter e a evolução para **artrose** é frequente.\n\n**A conduta**: no idoso, favorece a **artroplastia total do quadril** (imediata, com fixação das colunas, ou no modelo \"fix and replace\").\n\n**Os outros sinais radiográficos do acetábulo**:\n\n**sinal do esporão** (spur sign): na fratura das **duas colunas**, na oblíqua obturatória;\n\n**parede posterior**: fragmento atrás da cabeça, visto na oblíqua obturatória;\n\n**subluxação medial da cabeça**: protrusão através da lâmina quadrilátera.\n\n**Na prova**: o sinal da asa de gaivota caracteriza a **impacção do teto acetabular**.",
+  "correta": "A cabeça afunda o teto e deixa o osso subcondral em dois níveis, desenhando a asa de gaivota.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0343": {
-  "conceito": "As fraturas toracolombares se concentram na **transição toracolombar**, de T11 a L2, e há uma explicação biomecânica para isso: é o ponto em que a cifose torácica rígida (estabilizada pela caixa torácica e pelas costelas) encontra a lordose lombar móvel, e onde a orientação das facetas muda do plano coronal para o sagital.\n\nA epidemiologia é bimodal, com dois picos distintos: homens jovens vítimas de trauma de alta energia (acidente de trânsito, queda de altura) e mulheres idosas com fraturas por fragilidade em osso osteoporótico, por trauma mínimo.\n\nPor serem lesões de alta energia no primeiro grupo, as lesões associadas não vertebrais são a regra e não a exceção, chegando a cerca da metade dos casos (trauma cranioencefálico, torácico, abdominal e fraturas de membros), além das fraturas vertebrais não contíguas, presentes em uma parcela significativa e que obrigam a radiografar toda a coluna.\n\nQuanto ao déficit neurológico, a topografia manda: acima do cone medular, no segmento torácico, o canal é estreito em relação ao seu conteúdo e a vascularização é precária (a zona de fronteira arterial de T4 a T9), de modo que, quando há déficit nessa região, ele tende a ser completo; abaixo do cone, na coluna lombar, o canal é amplo e o conteúdo são raízes da cauda equina, que toleram melhor a agressão e têm mais chance de recuperação.\n\nUm detalhe anatômico útil para a instrumentação: o ângulo transverso dos pedículos não cresce linearmente de T1 a L5 — ele diminui progressivamente ao longo da coluna torácica, atingindo valores próximos de zero na transição, e volta a aumentar na coluna lombar, com os maiores valores em L5.",
-  "correta": "A. Na presença de déficit neurológico, a maior parte das lesões é COMPLETA, reflexo da concentração das fraturas na transição toracolombar e do segmento torácico, onde o canal é estreito para o seu conteúdo e a vascularização medular é precária.",
   "incorretas": {
-   "B": "A distribuição é BIMODAL, e não trimodal: um pico de homens jovens com trauma de alta energia e outro de mulheres idosas com fraturas por fragilidade sobre osso osteoporótico.",
-   "C": "20% subestima muito: as lesões não vertebrais associadas chegam a cerca da metade dos casos nas séries de alta energia (traumatismo craniencefálico, torácico, abdominal e fraturas de membros), sem contar as fraturas vertebrais não contíguas.",
-   "D": "O ângulo transverso dos pedículos não aumenta linearmente de T1 a L5. Ele DIMINUI ao longo da coluna torácica, chegando perto de zero na transição toracolombar, e volta a aumentar na coluna lombar, com os maiores valores em L5, dado essencial para a colocação de parafusos pediculares."
+   "B": "O pico de idade é bimodal: jovens e idosos.",
+   "C": "As lesões não vertebrais associadas ocorrem em cerca de metade dos casos, não em 20%.",
+   "D": "O ângulo transverso dos pedículos diminui na torácica e aumenta na lombar, sem aumento linear."
   },
-  "geradoEm": "2026-09-10",
+  "conceito": "Alguns dados epidemiológicos das **fraturas toracolombares** caem na prova:\n\n**o pico de idade é bimodal**: adultos jovens (trauma de alta energia) e idosos (fraturas por fragilidade); não trimodal;\n\n**as lesões não vertebrais associadas** são muito frequentes, em cerca de **metade** dos casos (tórax, abdome, ossos longos), e não 20%;\n\n**a lesão neurológica**: quando há déficit na transição toracolombar e na coluna torácica, a **maioria é completa**. O canal torácico é **estreito** e a medula tem pouca reserva de espaço; a energia necessária para quebrar essa coluna rígida (protegida pelas costelas) é alta;\n\n**o ângulo transverso dos pedículos**: não aumenta de forma linear de T1 a L5. Ele é maior em T1, **diminui** ao longo da coluna torácica e volta a **aumentar** na lombar, sobretudo em L5.\n\n**A consequência prática**: em toda fratura toracolombar, procurar ativamente as lesões associadas e documentar o exame neurológico completo (ASIA).\n\n**Na prova**: na presença de déficit, a maioria das fraturas toracolombares tem lesão **completa**.",
+  "correta": "O canal torácico estreito e a alta energia fazem com que a maioria dos déficits seja completa.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0344": {
@@ -3701,32 +3701,32 @@
   "conferido": false
  },
  "trauma-0415": {
-  "conceito": "A via de **Judet** é o acesso posterior amplo à escápula, usado nas fraturas do colo e do corpo com desvio. O paciente fica em decúbito lateral ou pronado, e a incisão desenha um L invertido: acompanha a espinha da escápula e desce pela borda medial.\n\nO retalho é fasciocutâneo e muscular: levanta-se o deltoide posterior da espinha e, no plano profundo, descola-se o infraespinal e o redondo menor da fossa infraespinal, rebatendo-os lateralmente em bloco. A modificação de Obremskey e a variante minimamente invasiva de Gauger e Cole limitam esse descolamento, entrando pelo intervalo entre o infraespinal e o redondo menor apenas onde a redução exige.\n\nO risco anatômico específico dessa manobra é o **nervo supraescapular**. Ele nasce do tronco superior do plexo, passa pela incisura escapular por baixo do ligamento transverso superior (a artéria passa por cima, \"Army over Bridge, Navy under Bridge\"), inerva o supraespinal e depois contorna a base da espinha da escápula pela incisura espinoglenoidal, onde entra na fossa infraespinal e se ramifica no infraespinal. Ali ele está preso entre dois pontos fixos e muito próximo da borda medial da glenoide, a distância clássica é da ordem de 2 cm da margem glenoidal posterior.\n\nQuando o afastador traciona o infraespinal lateralmente com força, o nervo é estirado sobre a incisura espinoglenoidal: o resultado é paresia do infraespinal, com perda da rotação lateral ativa.\n\nA prevenção é liberar o músculo até onde a exposição exige, tracionar de forma intermitente e nunca apoiar o afastador na base da espinha.",
-  "correta": "B. O nervo supraescapular contorna a base da espinha da escápula pela incisura espinoglenoidal para inervar o infraespinal; tracionar esse músculo lateralmente com excesso estira o nervo sobre a incisura e produz paresia do infraespinal, com perda da rotação lateral ativa.",
   "incorretas": {
-   "A": "O nervo axilar deixa a axila pelo espaço quadrangular, INFERIOR ao redondo menor, e depois contorna o colo cirúrgico do úmero. Ele está em risco na dissecção distal e lateral do deltoide, não na tração do infraespinal, que fica acima, na fossa infraespinal.",
-   "C": "A artéria circunflexa umeral anterior corre na face ANTERIOR do colo cirúrgico do úmero; nem sequer entra no campo de um acesso posterior à escápula. O vaso em risco na via de Judet é a artéria circunflexa da escápula, no espaço triangular.",
-   "D": "A cabeça longa do tríceps se origina do tubérculo infraglenoidal, distante do plano de descolamento do infraespinal, e a lesão em questão é NEUROLÓGICA por estiramento, não uma ruptura tendínea por tração muscular."
+   "A": "O nervo axilar corre pelo espaço quadrangular, abaixo do redondo menor.",
+   "C": "A artéria circunflexa anterior fica na frente do úmero, fora dessa via.",
+   "D": "A cabeça longa do tríceps limita os espaços, mas não é lesada pela tração do infraespinal."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
+  "conceito": "A **via de Judet** é o acesso **posterior** à escápula, para as fraturas do **colo** e do **corpo**. Desinsere-se o deltoide da espinha da escápula e trabalha-se entre o **infraespinal** e o **redondo menor**, ou levanta-se o infraespinal inteiro.\n\n**O nervo em risco**: o **nervo supraescapular**. Ele passa pela incisura da escápula, desce pela fossa supraespinal e contorna a **incisura espinoglenoidal** para chegar ao **infraespinal**. Fica preso nesse trajeto, com pouca folga: a **tração excessiva** do infraespinal para medial **estira** o nervo.\n\n**Os limites de segurança**: não afastar o infraespinal com força para medial; a incisura espinoglenoidal fica a cerca de 1,5 a 2 cm da borda da glenoide.\n\n**Os outros riscos da via**:\n\n**nervo axilar** e artéria **circunflexa posterior**: passam pelo **espaço quadrangular**, abaixo do redondo menor;\n\n**artéria circunscapular**: no **espaço triangular**;\n\na **cabeça longa do tríceps** limita os espaços por baixo.\n\n**Na prova**: a tração excessiva do infraespinal na via de Judet pode lesar o **nervo supraescapular**.",
+  "correta": "O supraescapular entra no infraespinal pela incisura espinoglenoidal e é estirado quando o músculo é tracionado.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 32"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0416": {
-  "conceito": "Assim como em outras questões deste acervo sobre o mesmo tema, a lesão de partes moles associada mais comum à fratura do planalto tibial é a **meniscal**, e, especificamente, a do **menisco lateral**, pelo predomínio das fraturas do compartimento lateral (Schatzker I a III, por mecanismo em valgo com carga axial).\n\nÉ nesse compartimento que o menisco lateral fica comprimido entre o côndilo femoral e a superfície tibial fraturada, sendo lesado numa proporção maior de casos (séries relatam algo entre 50% e 70%) do que qualquer lesão ligamentar isolada, seja do canto posterolateral, seja do cruzado anterior.\n\nA lesão meniscal, aliás, costuma ser subestimada quando a avaliação se limita à radiografia simples: é a ressonância magnética ou a artroscopia associada à cirurgia que revela a real magnitude dessa associação.\n\nIsso reforça a importância de uma avaliação cuidadosa das partes moles mesmo quando o foco inicial do tratamento está na reconstrução óssea, já que uma lesão meniscal não identificada e não tratada pode comprometer o resultado funcional final mesmo diante de uma fixação óssea tecnicamente impecável.",
-  "correta": "A. O menisco lateral é a lesão de partes moles mais frequentemente associada à fratura do planalto tibial, refletindo o predomínio das fraturas do compartimento lateral, onde fica comprimido durante o mecanismo do trauma.",
   "incorretas": {
-   "B": "O menisco medial é lesado com menor frequência do que o lateral, já que a maioria das fraturas do planalto acomete o compartimento lateral.",
-   "C": "O canto posterolateral está associado a padrões específicos de fratura com instabilidade rotacional, mas com frequência menor do que a lesão meniscal lateral no conjunto geral dessas fraturas.",
-   "D": "O ligamento cruzado anterior é a lesão ligamentar mais comum entre os ligamentos, mas a lesão de partes moles mais frequente no conjunto geral (incluindo o menisco) é a do menisco lateral."
+   "B": "O menisco medial é lesado com menos frequência.",
+   "C": "O canto posterolateral é lesado nas lesões mais graves, menos frequentes.",
+   "D": "O cruzado anterior é lesado com menos frequência que o menisco lateral."
   },
-  "geradoEm": "2026-09-14",
-  "conferido": false,
+  "conceito": "Na **fratura do planalto tibial**, as lesões de partes moles são frequentes, e a mais comum é a do **menisco lateral**.\n\n**Por quê**: a fratura típica (Schatzker I a III) vem de **valgo** com carga axial. O **côndilo femoral lateral** desce sobre o planalto lateral e encontra o **menisco lateral** no caminho:\n\n**esmagado** ou **rasgado**, em geral na periferia;\n\n**interposto** no traço, sobretudo nas fraturas com **depressão**, impedindo a redução.\n\n**As outras lesões**: **colateral medial** (tensionado pelo valgo), **cruzado anterior**, **canto posterolateral** (nas lesões mais graves) e **menisco medial** (menos frequente).\n\n**A conduta**: na fixação, a **artrotomia submeniscal** expõe a superfície e permite **reparar ou reinserir** o menisco antes da redução.\n\n**Na prova**: a lesão de partes moles mais comum no planalto tibial é a do **menisco lateral**.",
+  "correta": "O côndilo lateral em valgo esmaga o menisco lateral, que pode ficar preso no traço.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 61"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0417": {
   "conceito": "### Um sinal de alarme\nAvulsão **isolada do trocanter menor no adulto** é sinal clássico de ==doença metastática oculta==.\n\n### Por que\n- O trocanter menor recebe só a tração do **iliopsoas**.\n- Depois do fechamento da fise, essa força não basta para arrancá-lo de um osso normal.\n- Quando isso acontece, quase sempre há uma **lesão lítica** enfraquecendo o osso: metástase (mama, pulmão, rim, tireoide, próstata), mieloma ou linfoma.\n\n### Na criança é outra história\nNo adolescente atleta, com a fise aberta, é **avulsão apofisária** banal, de tratamento conservador.\n\n### Conduta no adulto: investigar antes de fixar\n- Radiografia do **fêmur inteiro**.\n- **Ressonância** para ver a extensão da lesão.\n- Tomografia de tórax, abdome e pelve; cintilografia.\n- **Biópsia** se o primário não aparecer.\n\nO planejamento costuma envolver **haste intramedular longa**, protegendo o osso todo, e não fixar aquele fragmento.\n\n> **Na prova:** avulsão isolada do ==trocanter menor em adulto== é metástase até prova em contrário.",
@@ -3771,18 +3771,18 @@
   "conferido": false
  },
  "trauma-0420": {
-  "conceito": "A fasciotomia da perna precisa abrir os quatro compartimentos (anterior, lateral, posterior superficial e posterior profundo), e a técnica consagrada é a de **duas incisões longas**.\n\nA incisão **lateral** é traçada cerca de 2 cm anterior à fíbula e dá acesso aos compartimentos anterior e lateral: identifica-se o septo intermuscular anterior (que os separa) e abre-se um de cada lado dele, com atenção ao nervo fibular superficial, que corre no compartimento lateral e perfura a fáscia no terço distal da perna, sendo facilmente lesado ali.\n\nA incisão **posteromedial** é traçada cerca de 1 a 2 cm posterior à borda medial da tíbia e dá acesso aos compartimentos posterior superficial e posterior profundo: abre-se primeiro a fáscia do tríceps sural e, em seguida (e este é o passo que mais se esquece), descola-se o sóleo de sua inserção na borda medial da tíbia para alcançar e abrir o compartimento posterior profundo, onde estão o tibial posterior, os flexores longos dos dedos e do hálux, o nervo tibial e as artérias tibial posterior e fibular. É preciso cuidado com a veia safena magna e o nervo safeno, que correm imediatamente à frente dessa incisão.\n\nO compartimento posterior profundo é o mais traiçoeiro de todos, porque está encoberto pela massa do tríceps sural e não dá tensão palpável; deixá-lo fechado é a causa mais comum de fasciotomia incompleta, e a sequela é a contratura em garra dos artelhos e do hálux, com dor e deformidade permanentes.\n\nEm qualquer caso, as incisões devem ser longas (a fasciotomia parcial não descomprime), a pele permanece aberta e a reavaliação se faz em 48 a 72 horas, com fechamento progressivo, sutura elástica ou enxerto de pele.",
-  "correta": "D. Os compartimentos posteriores SUPERFICIAL e PROFUNDO são descomprimidos pelo acesso POSTEROMEDIAL, traçado cerca de 1 a 2 cm posterior à borda medial da tíbia, com descolamento do sóleo para alcançar o compartimento profundo.",
   "incorretas": {
-   "A": "O acesso anterolateral (a incisão traçada cerca de 2 cm anterior à fíbula) é o que descomprime os compartimentos ANTERIOR e LATERAL, e não os posteriores. É nele que se cuida do nervo fibular superficial.",
-   "B": "Não há acesso anteromedial na técnica padrão da fasciotomia da perna: a face anteromedial da tíbia é subcutânea, sem compartimento a abrir. As duas incisões são a lateral e a posteromedial.",
-   "C": "O acesso posterolateral não é o utilizado: ele exporia a fíbula e o compartimento lateral por trás, sem alcançar o compartimento posterior profundo, cujo acesso exige o descolamento do sóleo pela borda MEDIAL da tíbia."
+   "A": "O acesso anterolateral abre os compartimentos anterior e lateral.",
+   "B": "O acesso anteromedial, sobre a tíbia, não libera os compartimentos posteriores.",
+   "C": "O acesso posterolateral não é o padrão para os compartimentos posteriores."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
+  "conceito": "A **fasciotomia da perna** precisa abrir os **quatro compartimentos**. A técnica mais usada tem **duas incisões**:\n\n**incisão anterolateral**: cerca de 2 cm na frente da fíbula; abre o compartimento **anterior** e o **lateral**, de cada lado do septo intermuscular; cuidado com o **nervo fibular superficial**, que atravessa a fáscia no terço distal;\n\n**incisão posteromedial**: cerca de 2 cm atrás da borda medial da tíbia; abre o compartimento **posterior superficial** e, soltando o **sóleo** da tíbia, o **posterior profundo**; cuidado com a **veia safena** e o **nervo safeno**.\n\n**O erro mais comum**: não abrir o **posterior profundo**, escondido sob o sóleo. Ele contém o nervo tibial e os flexores profundos.\n\n**A alternativa**: a incisão **única** lateral, com ou sem ressecção da fíbula, usada em alguns centros.\n\n**Depois**: as feridas ficam **abertas**, com curativo ou terapia por pressão negativa, e são fechadas ou enxertadas em 3 a 7 dias.\n\n**Na prova**: os compartimentos posteriores superficial e profundo são descomprimidos pelo acesso **posteromedial**.",
+  "correta": "A incisão posteromedial abre o posterior superficial e, soltando o sóleo, o posterior profundo.",
   "referencias": [
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 27"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0421": {
   "incorretas": {
@@ -3799,18 +3799,18 @@
   "conferido": false
  },
  "trauma-0422": {
-  "conceito": "A fratura do **colo do fêmur** no idoso é uma fratura por fragilidade, e seu mecanismo (a queda da própria altura) explica quais outras fraturas a acompanham.\n\nAs associadas com mais frequência são as dos membros superiores, e em especial as do terço distal do rádio e do terço proximal do úmero: as três compartilham a mesma base (osso trabecular metafisário porótico) e o mesmo evento (a queda), variando apenas conforme o paciente consegue ou não proteger-se com as mãos.\n\nVale situar a hierarquia das fraturas osteoporóticas não vertebrais acima dos 65 anos: primeiro o quadril, depois o rádio distal, depois o úmero proximal.\n\nHá, porém, um dado prognóstico que costuma surpreender: a associação com a fratura do **úmero proximal** confere maior mortalidade do que a associação com o rádio distal.\n\nA explicação é funcional e demográfica. A fratura do rádio distal ocorre tipicamente em quem ainda tem reflexo de proteção e força para estender o braço na queda, em regra o idoso mais jovem, mais ágil e mais independente. Já a fratura do úmero proximal decorre da queda direta sobre o ombro, sem tempo ou capacidade de proteger-se, o que marca um paciente mais frágil, com pior equilíbrio, mais comorbidades e maior grau de osteoporose. Além disso, ela compromete a capacidade de usar bengala, andador e muletas e de fazer transferências, retardando a reabilitação após a cirurgia do quadril, e a mobilização precoce é justamente o que reduz pneumonia, tromboembolismo e delirium.\n\nDaí a importância prática de reconhecer essa combinação: ela identifica o paciente de maior risco, que exige atenção clínica redobrada e planejamento de reabilitação adaptado.",
-  "correta": "A. As associações mais comuns são com os MEMBROS SUPERIORES (rádio distal e úmero proximal), e a mortalidade é maior quando a associação é com o ÚMERO, marcador de paciente mais frágil e de reabilitação mais difícil.",
   "incorretas": {
-   "B": "Acerta as fraturas associadas, mas inverte o dado prognóstico: a fratura do rádio distal identifica o idoso mais ágil, que ainda protege a queda com as mãos. É a do úmero proximal que marca o paciente mais frágil e de maior mortalidade.",
-   "C": "As fraturas dos membros INFERIORES não são as associações características: a queda da própria altura que fratura o quadril raramente produz, no mesmo evento, fratura da diáfise femoral ou do planalto tibial, que exigem alta energia.",
-   "D": "Pelo mesmo motivo, a associação com a diáfise femoral não é a característica dessa população. Quando ela ocorre, o contexto é outro, trauma de alta energia, com fratura ipsilateral do colo e da diáfise no adulto jovem."
+   "B": "As fraturas associadas estão certas, mas a maior mortalidade ocorre com o úmero.",
+   "C": "As associações típicas são de membros superiores, não da tíbia.",
+   "D": "As fraturas de membros inferiores associadas vêm de alta energia, não da queda do idoso."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
+  "conceito": "A **fratura do colo do fêmur** do idoso vem de uma **queda da própria altura**. Ao cair, o paciente apoia o **membro superior**, que também pode quebrar.\n\n**As associações mais comuns**: fraturas dos **membros superiores**:\n\n**terço distal do rádio**: a mais frequente;\n\n**terço proximal do úmero**.\n\n**A mortalidade**: as fraturas combinadas aumentam a mortalidade em relação à fratura isolada do colo. A associação com o **úmero proximal** tem a **maior mortalidade**: o paciente fica sem conseguir usar o andador ou a muleta com aquele braço, demora mais a andar, e a imobilidade aumenta as complicações clínicas. A fratura do úmero também marca um paciente mais frágil.\n\n**A implicação prática**: a fratura do membro superior pode ser fixada para permitir **apoio** no andador e acelerar a reabilitação.\n\n**As fraturas dos membros inferiores** associadas (diáfise do fêmur, tíbia) vêm de trauma de **alta energia**, não da queda simples do idoso.\n\n**Na prova**: o colo do fêmur se associa mais às fraturas dos membros **superiores** (rádio distal e úmero proximal), com maior mortalidade quando associado ao **úmero**.",
+  "correta": "A queda faz o idoso fraturar o rádio distal ou o úmero proximal, e a associação com o úmero tem a maior mortalidade.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 52"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0423": {
   "incorretas": {
@@ -3827,18 +3827,18 @@
   "conferido": false
  },
  "trauma-0424": {
-  "conceito": "A comparação entre a **haste cefalomedular** e o **parafuso deslizante de quadril (DHS)** nas fraturas subtrocantéricas se resolve por um conceito de mecânica: o braço de alavanca.\n\nA região subtrocantérica recebe as maiores cargas do esqueleto: a cortical medial (calcar) trabalha em compressão com forças que ultrapassam várias vezes o peso corporal, e a lateral, em tensão. Um implante colocado na face lateral do fêmur, como o DHS, fica excêntrico em relação ao eixo mecânico de carga, que passa medialmente: a distância entre a linha de carga e o implante é o braço de alavanca, e quanto maior ele for, maior o momento fletor que o material precisa suportar a cada passo.\n\nA haste **intramedular**, ao contrário, é posicionada dentro do canal, praticamente sobre o eixo mecânico: o braço de alavanca é menor, o momento fletor é menor, e a montagem se torna de carga compartilhada (load sharing) em vez de carga total (load bearing).\n\nAs consequências clínicas são duas e ambas favoráveis: menor taxa de falha por fadiga do implante e, sobretudo, menor colapso em varo durante a consolidação, porque o varo é justamente a deformidade para onde a fratura tende quando o apoio medial é insuficiente e o implante não resiste ao momento fletor. Some-se a isso a vantagem biológica: a haste é introduzida de forma percutânea, com menor desperiostização e menor sangramento.\n\nAs ressalvas permanecem: a haste só protege se a **redução** for boa, obtida antes de sua introdução, vencendo a flexão, a abdução e a rotação lateral do fragmento proximal; e as placas mantêm indicação em canais muito estreitos, deformidades prévias e algumas configurações com extensão intertrocantérica complexa.",
-  "correta": "A. A haste cefalomedular tem MENOR BRAÇO DE ALAVANCA (por estar posicionada no eixo mecânico, dentro do canal) e, por isso, MENOR COLAPSO EM VARO durante a consolidação, além de menor risco de falha por fadiga.",
   "incorretas": {
-   "B": "O braço de alavanca menor está correto, mas a deformidade que se previne é o colapso em VARO, e não em valgo: o varo é a direção para onde a fratura subtrocantérica tende quando o apoio medial falha.",
-   "C": "Inverte o conceito mecânico: é a PLACA, colocada na face lateral e excêntrica em relação ao eixo de carga, que tem o maior braço de alavanca. A haste, dentro do canal, tem o menor.",
-   "D": "Erra as duas informações: a haste tem menor braço de alavanca, e o colapso que ela previne é o em varo."
+   "B": "O braço curto está certo, mas o colapso típico da subtrocantérica é em varo, não em valgo.",
+   "C": "A haste tem braço de alavanca menor, não maior.",
+   "D": "O braço da haste é menor, e o colapso típico é em varo."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
+  "conceito": "Na **fratura subtrocantérica**, o implante enfrenta cargas enormes: **compressão** na cortical medial e **tração** na lateral. A posição do implante em relação ao eixo de carga faz toda a diferença.\n\n**A haste cefalomedular**: fica **dentro** do canal, perto do eixo mecânico. O **braço de alavanca** entre a carga e o implante é **curto**, e a haste **compartilha** a carga com o osso. Resultado: **menos colapso em varo** durante a consolidação.\n\n**O DHS** (placa-pino deslizante): fica na face **lateral** do fêmur, longe do eixo. O braço de alavanca é **longo**, a placa recebe sozinha a carga e tende a **falhar em varo**. Além disso, o deslizamento do parafuso, útil na transtrocantérica, aqui leva à **medialização** da diáfise. Por isso o DHS é **contraindicado** na subtrocantérica.\n\n**As outras vantagens da haste**: inserção por incisões pequenas, menos sangramento e preservação da biologia do foco.\n\n**O cuidado**: reduzir **antes** de passar a haste e usar o ponto de entrada **medial ao ápice** do trocânter maior, para não consolidar em varo.\n\n**Na prova**: a haste cefalomedular tem **menor braço de alavanca** e **menor colapso em varo** que o DHS.",
+  "correta": "Perto do eixo de carga, a haste tem braço de alavanca curto, divide a carga com o osso e colapsa menos em varo.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 54"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0425": {
   "incorretas": {
@@ -3867,18 +3867,18 @@
   "conferido": false
  },
  "trauma-0427": {
-  "conceito": "A técnica descrita por **Krettek** usa parafusos de bloqueio (também chamados \"poller screws\") para corrigir e prevenir o mau alinhamento durante a fixação intramedular de fraturas metafisárias da tíbia, sobretudo na região proximal, onde o canal se alarga e a haste, sem controle adicional, tende a escorregar para o lado de menor resistência, produzindo desvio angular.\n\nO princípio é simples: o parafuso é inserido no fragmento principal, posicionado do lado côncavo da deformidade que se quer corrigir (ou seja, no lado para onde o fragmento tende a se deslocar), estreitando artificialmente o canal medular exatamente naquele ponto. Com o canal estreitado de um dos lados, a haste é obrigada a passar pelo espaço remanescente, mais próximo do eixo anatômico correto, em vez de deslizar livremente para dentro da concavidade alargada.\n\nComo a deformidade mais comum na fratura proximal da tíbia tratada por haste é a combinação de **valgo** com **procurvato** (ápice anterior), por ação do tendão patelar e do desenho metafisário, o parafuso de bloqueio para essa deformidade específica é classicamente inserido na face côncava (medial, para o componente em valgo) numa orientação ântero-posterior, alinhando-se ao plano coronal que se deseja controlar.",
-  "correta": "C. O parafuso de bloqueio é inserido na face côncava da deformidade, estreitando o canal medular ali e forçando a haste a passar mais próxima do eixo anatômico correto, na deformidade clássica da tíbia proximal (valgo e procurvato), essa inserção se dá numa orientação ântero-posterior.",
   "incorretas": {
-   "A": "A orientação medial-lateral não é a empregada para corrigir a deformidade coronal (valgo) mais comum na tíbia proximal; a inserção ântero-posterior é a que se alinha a esse plano.",
-   "B": "O parafuso de bloqueio vai na face CÔNCAVA da deformidade, não na convexa, é do lado côncavo que ele estreita o canal e impede a haste de escorregar para a concavidade.",
-   "D": "A face convexa não é o alvo correto, é a côncava que precisa ser estreitada para redirecionar a trajetória da haste."
+   "A": "O lado côncavo está certo, mas o parafuso de medial para lateral corrige o plano sagital.",
+   "B": "O parafuso vai no lado côncavo, não no convexo.",
+   "D": "A direção está certa, mas o parafuso vai no lado côncavo."
   },
-  "geradoEm": "2026-09-14",
-  "conferido": false,
+  "conceito": "Na fixação de fraturas **metafisárias** da tíbia (proximais ou distais) com **haste intramedular**, o canal é **largo**: a haste fina \"nada\" no osso esponjoso e pode deixar a fratura consolidar **angulada**.\n\n**Os parafusos de bloqueio** (técnica de **Krettek**, ou parafusos \"Poller\"): funcionam como **paredes** que estreitam o canal e guiam a haste para o lugar certo.\n\n**Onde colocar**: no lado **côncavo** da deformidade, no fragmento curto (metafisário), perto do foco. O parafuso impede que a haste siga para o lado errado e força o fragmento a se alinhar.\n\n**Em que direção**:\n\n**para corrigir desvio no plano frontal** (varo ou valgo): parafuso de **anterior para posterior**, posicionado medial ou lateralmente;\n\n**para corrigir desvio no plano sagital** (flexão ou extensão, comum na tíbia proximal com antecurvato): parafuso de **medial para lateral**, posicionado anterior ou posteriormente.\n\n**O exemplo clássico**: na tíbia proximal com tendência ao **valgo**, coloca-se o parafuso de anterior para posterior na face **lateral** do fragmento proximal, no lado côncavo.\n\n**Na prova**: na técnica de Krettek, o parafuso de bloqueio é inserido na face **côncava**, de **anterior para posterior**.",
+  "correta": "O parafuso no lado côncavo, de anterior para posterior, estreita o canal e guia a haste, corrigindo o varo ou o valgo.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 54"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0428": {
   "conceito": "A fratura por estresse do **navicular tarsal** é um dos sítios de alto risco na classificação de Boden-Osbahr, e a razão anatômica para esse risco explica também sua localização típica.\n\nO navicular recebe suprimento sanguíneo por vasos que entram pelas suas margens medial e lateral, convergindo (e se sobrepondo pouco) para o terço central do osso, uma verdadeira zona de watershed, a região menos vascularizada de toda a estrutura.\n\nÉ exatamente ali, no terço central, que a fratura por estresse costuma se instalar, e o plano em que o traço se orienta é o sagital: a linha de fratura corre no sentido dorsoplantar, dividindo o osso em um fragmento medial e um lateral, e não no plano coronal (que dividiria o osso em uma porção dorsal e outra plantar).\n\nEssa combinação (terço central, plano sagital) é a assinatura reconhecida da lesão, descrita já na classificação clássica de **Torg** para o navicular: tipo I, fratura incompleta da cortical dorsal; tipo II, fratura parcial estendendo-se ao corpo; tipo III, fratura completa com esclerose das bordas.\n\nA baixa vascularização dessa região central é também o motivo prático mais importante: mesmo pequena, essa fratura tem risco real de não consolidar e costuma exigir imobilização rígida sem carga, ao contrário da maioria das fraturas por estresse do pé.",
