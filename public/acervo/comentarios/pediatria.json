@@ -380,170 +380,170 @@
   "conferido": false
  },
  "pediatria-0027": {
-  "conceito": "### Mielomeningocele: nível × deformidade\n| Nível | Músculos preservados | Deformidade típica | Marcha |\n|---|---|---|---|\n| ==torácico== | nenhum nos MMII | ==flexão e abdução dos quadris (rã), flexão dos joelhos==, equino | cadeira; órtese recíproca |\n| L1-L2 | flexores e adutores do quadril | flexão e adução: ==luxação== | domiciliar |\n| L3-L4 | + quadríceps (L4 tibial anterior) | pé calcâneo-varo | comunitária com órteses |\n| L5 | + isquiotibiais mediais, glúteo médio parcial | pé calcâneo | comunitária |\n| S1 | + gastrocnêmio parcial | cavo | próximo do normal |\n\n### Pontos\n- Nível mais importante para marcha: ==quadríceps (L3-L4)==.\n- Luxação do quadril mais comum em L3-L4.\n\n> **Na prova:** MMC torácica = ==flexão dos quadris e dos joelhos==.",
-  "correta": "**Flexão dos quadris e joelhos.**\n- Membros flácidos em postura de rã.\n- Posição intrauterina e gravidade.",
   "incorretas": {
-   "B": "**Joelho errado.**\n- Não extensão.",
-   "C": "**Quadril errado.**\n- Fica fletido.",
-   "D": "**Duplamente errada.**\n- Extensões."
+   "B": "Os quadris estão fletidos, mas os joelhos também ficam em flexão, não em extensão.",
+   "C": "Os joelhos estão fletidos, mas os quadris ficam em flexão, não em extensão.",
+   "D": "Erra as duas articulações: quadris e joelhos ficam fletidos."
   },
+  "conceito": "Na **mielomeningocele**, o **nível neurológico** diz quais músculos funcionam, e isso define as deformidades e o potencial de marcha:\n\n**torácico**: nenhum músculo dos membros inferiores funciona; as pernas são **flácidas** e assumem a posição de **rã**: **quadris fletidos e abduzidos**, **joelhos fletidos**, pés em equino; a locomoção é em cadeira de rodas, às vezes com órtese recíproca na infância;\n\n**L1 e L2**: funcionam os **flexores e adutores do quadril**, sem oposição; o quadril tende a **luxar**;\n\n**L3 e L4**: entra o **quadríceps** (e o tibial anterior em L4); é o nível que mais define a **marcha comunitária**, com órteses; pé calcaneovaro;\n\n**L5**: entram os isquiotibiais mediais e parte do glúteo médio; pé calcâneo;\n\n**S1**: entra parte do gastrocnêmio; pé cavo, marcha quase normal.\n\n**Por que a postura flexora no nível torácico**: os membros paralisados ficam na posição em que estavam dentro do útero e caem pela gravidade, e as partes moles se adaptam em **flexão**.\n\n**Na prova**: mielomeningocele torácica = **flexão dos quadris e dos joelhos**.",
+  "correta": "No nível torácico, os membros são flácidos e ficam em posição de rã, com quadris e joelhos fletidos.",
   "referencias": [
    "Surgical management of hip problems in myelomeningocele. https://pmc.ncbi.nlm.nih.gov/articles/PMC4969363/",
    "Orthopedic management of myelomeningocele: systematic review. https://pmc.ncbi.nlm.nih.gov/articles/PMC8361640/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0028": {
-  "conceito": "### Ultrassom de Graf\n| Ângulo | Linhas | Mede | Normal |\n|---|---|---|---|\n| ==alfa== | ilíaco × teto ==ósseo== | cobertura óssea | ==≥ 60°== |\n| ==beta== | ilíaco × teto ==cartilaginoso== (lábio) | cobertura cartilaginosa | ==< 55°== |\n\n### Tipos\n| Tipo | Alfa | Conduta |\n|---|---|---|\n| I | ≥ 60° | normal |\n| IIa | 50 a 59°, < 3 meses | imaturo fisiológico, controle |\n| IIb | 50 a 59°, > 3 meses | tratar |\n| IIc | 43 a 49° (beta < 77°) | tratar |\n| D | 43 a 49°, beta > 77° | descentrando |\n| III | < 43°, luxado | tratar |\n| IV | < 43°, luxado com lábio invertido | tratar |\n\n> **Na prova:** ângulo do teto cartilaginoso = ==beta, normal < 55°==.",
-  "correta": "**Beta, normal < 55°.**\n- Mede a cobertura cartilaginosa.\n- Alfa mede o teto ósseo (≥ 60°).",
   "incorretas": {
-   "A": "**Alfa e valor errados.**\n- Alfa é ósseo, normal ≥ 60.",
-   "B": "**Alfa.**\n- Teto ósseo, não cartilaginoso.",
-   "D": "**Valor errado.**\n- Beta normal é menor que 55."
+   "A": "O alfa mede o teto ósseo, e o normal é 60° ou mais, não menor que 55°.",
+   "B": "O valor está certo para o alfa, mas o alfa mede o teto ósseo, não o cartilaginoso.",
+   "D": "O ângulo é o beta, mas o normal é menor que 55°, não maior que 60°."
   },
+  "conceito": "O **ultrassom de Graf** é o exame da displasia do quadril nos primeiros meses, quando a cabeça ainda é cartilagem. Com o transdutor na lateral do quadril, traçam-se linhas a partir da **linha do ilíaco**:\n\n**ângulo alfa**: entre o ilíaco e o **teto ósseo** do acetábulo; mede a **cobertura óssea**; normal **60° ou mais**;\n\n**ângulo beta**: entre o ilíaco e o **teto cartilaginoso** (o lábio); mede a **cobertura cartilaginosa**; normal **menor que 55°**. Quanto **maior** o beta, mais a cartilagem está sendo empurrada para cima pela cabeça que escapa.\n\n**Os tipos de Graf**:\n\n**I**: alfa 60° ou mais; normal;\n\n**IIa**: alfa entre 50 e 59° antes de 3 meses; imaturo, observar;\n\n**IIb**: o mesmo depois de 3 meses; tratar;\n\n**IIc**: alfa entre 43 e 49°, beta abaixo de 77°; tratar;\n\n**D**: alfa entre 43 e 49°, beta acima de 77°; descentrando;\n\n**III e IV**: alfa abaixo de 43°, quadril luxado (no IV, com o lábio invertido).\n\n**Na prova**: ângulo entre o ilíaco e o teto cartilaginoso = **beta**, normal **menor que 55°**.",
+  "correta": "O ângulo beta é formado pelo ilíaco e o teto cartilaginoso, e o valor normal é menor que 55°.",
   "referencias": [
    "Ultrasonography of the pediatric hip and spine. https://pmc.ncbi.nlm.nih.gov/articles/PMC5494873/",
    "Use of ultrasonography in DDQ. https://pmc.ncbi.nlm.nih.gov/articles/PMC3965765/",
    "Imaging in early diagnosis of DDQ. https://pmc.ncbi.nlm.nih.gov/articles/PMC8688607/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0029": {
-  "conceito": "### Epifisiólise: fatores\n| Tipo | Fator |\n|---|---|\n| mecânico | ==obesidade==, ==retroversão relativa (menos anteversão)==, ==coxa vara (menor ângulo cervicodiafisário)==, fise mais oblíqua, estirão |\n| endócrino | hipotireoidismo, deficiência de GH (uso de GH), hipogonadismo, osteodistrofia renal, radioterapia |\n\n- Pedir TSH em ==< 10 anos==, baixa estatura, ou bilateral.\n\n### Classificações\n| Critério | Tipos |\n|---|---|\n| Loder (estabilidade) | estável (anda) × ==instável== (não anda; necrose em até 50%) |\n| Southwick (ângulo) | leve < 30°, moderado 30 a 50°, grave > 50° |\n| tempo | aguda < 3 semanas, crônica, crônica agudizada |\n\n### Tratamento\n- ==Fixação in situ== com um parafuso canulado central.\n- Contralateral profilática: < 10 anos, endocrinopatia.\n\n> **Na prova:** epifisiólise = ==menos anteversão e menor ângulo cervicodiafisário==.",
-  "correta": "**Ângulo diminuído, anteversão diminuída.**\n- Coxa vara e retroversão relativa.\n- Aumentam o cisalhamento na fise.",
   "incorretas": {
-   "B": "**Anteversão errada.**\n- Diminuída.",
-   "C": "**Ângulo errado.**\n- Diminuído.",
-   "D": "**Duplamente errada.**\n- Ambos aumentados."
+   "B": "O ângulo diminuído está certo, mas a anteversão também é diminuída.",
+   "C": "A anteversão diminuída está certa, mas o ângulo cervicodiafisário também é diminuído.",
+   "D": "Os dois estão diminuídos, não aumentados."
   },
+  "conceito": "A **epifisiólise proximal do fêmur** é o escorregamento da cabeça do fêmur sobre o colo, através da fise, no adolescente. A cabeça desliza para **posterior e inferior**.\n\n**Os fatores mecânicos**, que aumentam o cisalhamento na fise:\n\n**obesidade**: o principal;\n\n**menor ângulo cervicodiafisário** (coxa vara relativa);\n\n**menor anteversão do colo** (retroversão relativa);\n\nfise mais **oblíqua** e o estirão de crescimento.\n\n**Os fatores endócrinos**: hipotireoidismo, deficiência ou uso de hormônio de crescimento, hipogonadismo, osteodistrofia renal e radioterapia. Investigar (TSH e outros) em crianças com **menos de 10 anos**, baixa estatura ou doença bilateral.\n\n**As classificações**:\n\n**Loder (estabilidade)**: **estável** (a criança anda) e **instável** (não anda, mesmo de muletas), com risco de necrose de até cerca de 50%;\n\n**Southwick (ângulo)**: leve, moderada e grave.\n\n**O tratamento**: **fixação in situ** com um parafuso canulado central; fixação profilática do outro lado em menores de 10 anos e nas doenças endócrinas.\n\n**Na prova**: epifisiólise = ângulo cervicodiafisário **diminuído** e anteversão **diminuída**.",
+  "correta": "A coxa vara relativa e a retroversão relativa aumentam o cisalhamento na fise e predispõem à epifisiólise.",
   "referencias": [
    "Three-dimensional analysis of the proximal femur in patients with slipped capital femoral epiphysis. https://pubmed.ncbi.nlm.nih.gov/11242246/",
    "The Epidemiology and Demographics of Slipped Capital Femoral Epiphysis. https://pmc.ncbi.nlm.nih.gov/articles/PMC4063129/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0030": {
-  "conceito": "### Artrogripose múltipla congênita\n- Contraturas congênitas em ==duas ou mais articulações==, sem progressão.\n- Causa comum: ==acinesia fetal== (falta de movimento intrauterino).\n\n| Origem | Achado |\n|---|---|\n| ==neuropática== (a mais comum) | ==redução das células do corno anterior== da medula |\n| miopática | distrofia muscular congênita |\n| restrição | oligoidrâmnio, útero bicorno |\n| tecido conjuntivo | |\n\n### Amioplasia (forma clássica)\n- Simétrica, quatro membros: ombros aduzidos e em RI, cotovelos estendidos, punhos fletidos, quadris luxados, joelhos estendidos ou fletidos, ==pé torto rígido==.\n- Pele lisa sem pregas, covinhas, inteligência normal.\n\n### Tratamento\n- Fisioterapia precoce; gessos; cirurgias (talectomia no pé torto resistente, osteotomias).\n\n> **Na prova:** artrogripose neuropática = ==menos células do corno anterior==.",
-  "correta": "**Diminuição do corno anterior.**\n- Perda de motoneurônios gera acinesia fetal.\n- Contraturas múltiplas ao nascer.",
   "incorretas": {
-   "A": "**Invertida e sensitiva.**\n- Corno posterior é sensitivo.",
-   "B": "**Invertida.**\n- Há redução.",
-   "C": "**Corno errado.**\n- É o anterior (motor)."
+   "A": "O corno posterior é sensitivo, e não há aumento de células.",
+   "B": "O corno está certo, mas há diminuição, não aumento das células.",
+   "C": "A redução é do corno anterior, motor, não do posterior."
   },
+  "conceito": "A **artrogripose múltipla congênita** é o nascimento com **contraturas em duas ou mais articulações**, que não progridem. A causa comum de quase todas as formas é a **acinesia fetal**: o feto se mexe pouco, e as articulações ficam fixas na posição em que estavam.\n\n**As origens da falta de movimento**:\n\n**neuropática**: a **mais comum**; há **redução das células do corno anterior** da medula (os motoneurônios), e o músculo recebe pouco comando;\n\n**miopática**: doenças musculares congênitas;\n\n**restrição de espaço**: oligoidrâmnio, útero malformado;\n\n**doenças do tecido conjuntivo**.\n\n**A amioplasia (forma clássica)**: simétrica nos quatro membros; ombros em adução e rotação interna, cotovelos estendidos, punhos fletidos, quadris às vezes luxados, joelhos estendidos ou fletidos e **pé torto rígido**. A pele é lisa, sem pregas, com covinhas sobre as articulações. A **inteligência é normal**.\n\n**O tratamento**: fisioterapia e gessos precoces; cirurgias para as deformidades resistentes, como a **talectomia** no pé torto e osteotomias.\n\n**Na prova**: artrogripose neuropática = **diminuição das células do corno anterior**.",
+  "correta": "Na forma neuropática há redução dos motoneurônios do corno anterior, e a falta de movimento fetal produz as contraturas.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Arthrogryposis. https://posna.org/physician-education/study-guide/arthrogryposis",
    "Diagnosing Arthrogryposis Multiplex Congenita: A Review. https://pmc.ncbi.nlm.nih.gov/articles/PMC3461621/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0031": {
-  "conceito": "### Fibular longo e o primeiro raio\n- Fibular longo ==plantiflete o 1º metatarso== e everte.\n- Antagonista do ==tibial anterior== (dorsiflete o 1º MT).\n\n### Lesão iatrogênica do fibular longo\n- Tibial anterior sem oposição eleva o 1º MT.\n- Flexor longo do hálux compensa: ==hálux em flexão==.\n- Resultado: ==joanete dorsal (dorsal bunion)== = 1º MT elevado + hálux fletido.\n\n### Complicações da liberação posteromedial extensa\n| Complicação | Causa |\n|---|---|\n| hipercorreção (plano valgo) | liberação excessiva, alongamento do tibial posterior |\n| rigidez e dor | fibrose |\n| joanete dorsal | ==fibular longo lesado== ou tibial anterior forte |\n| necrose do tálus | desvascularização |\n\n- Por isso, hoje, ==Ponseti== com tenotomia percutânea do tendão calcâneo.\n\n> **Na prova:** lesão do fibular longo no pé torto = ==flexão do hálux== (joanete dorsal).",
-  "correta": "**Flexão do hálux.**\n- 1º MT elevado pelo tibial anterior sem oposição.\n- FLH compensa: joanete dorsal.",
   "incorretas": {
-   "B": "**Oposto.**\n- Cavo vem do fibular longo forte.",
-   "C": "**Outro mecanismo.**\n- Liberação excessiva.",
-   "D": "**Outro mecanismo.**\n- Não decorre do fibular longo."
+   "B": "O cavo residual vem de um fibular longo forte, que abaixa o 1º metatarso; a lesão dele tem o efeito oposto.",
+   "C": "A hipercorreção do varo vem da liberação excessiva das partes moles, não da lesão do fibular longo.",
+   "D": "A luxação dorsal da talonavicular não decorre da lesão do fibular longo."
   },
+  "conceito": "O **fibular longo** passa sob o pé e se insere na base do **1º metatarso**: ele **abaixa o 1º metatarso** (flexão plantar) e everte o pé. O seu antagonista é o **tibial anterior**, que levanta o 1º metatarso.\n\n**Quando o fibular longo é lesado numa cirurgia do pé torto**: o tibial anterior fica sem oposição e **eleva o 1º metatarso**. Para conseguir apoiar a frente do pé no chão, o **flexor longo do hálux** trabalha mais e deixa o **hálux fletido**. O resultado é o **joanete dorsal**: 1º metatarso elevado com o hálux em flexão.\n\n**As complicações das liberações extensas do pé torto**:\n\n**hipercorreção** em plano valgo: liberação excessiva e alongamento do tibial posterior;\n\n**rigidez e dor**: fibrose;\n\n**joanete dorsal**: fibular longo lesado ou tibial anterior forte demais;\n\n**necrose do tálus**: desvascularização.\n\nPor isso, hoje, o padrão é o **método de Ponseti**, com gessos e só a tenotomia percutânea do tendão calcâneo.\n\n**Na prova**: lesão do fibular longo na cirurgia do pé torto = **flexão do hálux** (joanete dorsal).",
+  "correta": "Sem o fibular longo, o tibial anterior eleva o 1º metatarso e o flexor longo do hálux compensa, deixando o hálux fletido: é o joanete dorsal.",
   "referencias": [
    "Ponseti method for clubfoot. https://pmc.ncbi.nlm.nih.gov/articles/PMC3764299/",
    "Clubfoot. Orthobullets. https://www.orthobullets.com/pediatrics/4064/clubfoot"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0032": {
-  "conceito": "### Arqueamentos congênitos da tíbia\n| Direção | Associação | Evolução |\n|---|---|---|\n| ==posteromedial== | pé calcaneovalgo | ==corrige espontaneamente==; resta ==discrepância== (3 a 5 cm) |\n| anterolateral | ==NF1==, ==pseudartrose congênita== | piora, fratura |\n| anteromedial | hemimelia fibular | discrepância, pé valgo |\n\n### Posteromedial\n- Ao nascer: pé em dorsiflexão tocando a tíbia.\n- Angulação melhora nos primeiros anos.\n- Discrepância: epifisiodese contralateral ou alongamento na idade adequada.\n\n### Anterolateral\n- Proteger com órtese (TLSO/KAFO) até a maturidade; evitar osteotomia.\n\n> **Na prova:** arqueamento posteromedial = ==corrige a angulação, sobra discrepância==.",
-  "correta": "**Correção angular e discrepância.**\n- Angulação remodela.\n- Tíbia fica mais curta.",
   "incorretas": {
-   "A": "**Anterolateral.**\n- Esse é o que piora e pseudartrosa.",
-   "B": "**Sem pseudartrose.**\n- Posteromedial não fratura assim.",
-   "C": "**Não piora.**\n- Corrige."
+   "A": "Piora angular e pseudartrose são do arqueamento anterolateral.",
+   "B": "A correção angular está certa, mas o posteromedial não evolui para pseudartrose.",
+   "C": "A discrepância está certa, mas a angulação do posteromedial corrige, não piora."
   },
+  "conceito": "A tíbia pode nascer **arqueada** em três direções, e cada uma tem um significado diferente:\n\n**posteromedial**: o pé costuma vir em **calcaneovalgo**, encostando na frente da perna; a **angulação melhora sozinha** nos primeiros anos, mas a tíbia fica **mais curta**, com **discrepância** de cerca de 3 a 5 cm; é **benigna**;\n\n**anterolateral**: associada à **neurofibromatose tipo 1** e à **pseudartrose congênita da tíbia**; **piora** e pode fraturar; é protegida com órtese até a maturidade, evitando osteotomias;\n\n**anteromedial**: associada à **hemimelia fibular**, com discrepância e pé valgo.\n\n**O tratamento do arqueamento posteromedial**: observar a correção angular e acompanhar a discrepância; na idade certa, **epifisiodese** do outro lado ou **alongamento**.\n\n**Um truque de memória**: o \"**posteromedial é pacífico**\" (corrige), e o \"**anterolateral é alarmante**\" (pseudartrose).\n\n**Na prova**: arqueamento posteromedial da tíbia = **corrige a angulação** e deixa **discrepância de comprimento**.",
+  "correta": "No arqueamento posteromedial, a angulação melhora espontaneamente, mas a tíbia fica mais curta, com discrepância de comprimento.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Posteromedial Bowing of the Tibia. https://posna.org/physician-education/study-guide/posteromedial-bowing-of-the-tibia"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0033": {
-  "conceito": "### Medida da discrepância\n| Medida | Pontos | O que mostra |\n|---|---|---|\n| ==real== (verdadeira) | ==EIAS ao maléolo medial== | comprimento ósseo |\n| aparente | umbigo (ou xifoide) ao maléolo medial | inclui obliquidade pélvica e contraturas |\n| blocos sob o pé | nivelar as cristas ilíacas | prática, funcional |\n| Galeazzi | joelhos com quadris fletidos | fêmur × tíbia |\n\n### Imagem\n- Escanometria / telerradiografia; TC (scanograma) com menos radiação.\n\n### Previsão na criança\n| Método | Uso |\n|---|---|\n| Moseley (gráfico de linha reta) | discrepância na maturidade |\n| Paley (multiplicador) | simples |\n| Green-Anderson | tabelas de crescimento |\n\n### Conduta pela discrepância prevista\n| Discrepância | Conduta |\n|---|---|\n| < 2 cm | nada ou palmilha |\n| 2 a 5 cm | ==epifisiodese== contralateral |\n| > 5 cm | alongamento |\n| > 15 a 20 cm | amputação/prótese |\n\n> **Na prova:** comprimento real = ==EIAS ao maléolo medial==.",
-  "correta": "**EIAS ao maléolo medial.**\n- Mede o comprimento ósseo.\n- Aparente usa o umbigo.",
   "incorretas": {
-   "A": "**Referências erradas.**\n- Trocanter não é o ponto.",
-   "B": "**Proximal errado.**\n- Deve ser a EIAS.",
-   "C": "**Distal errado.**\n- Maléolo medial."
+   "A": "O trocanter maior e o maléolo lateral não são os pontos de referência do comprimento real.",
+   "B": "O ponto distal está certo, mas o proximal é a espinha ilíaca anterossuperior, não o trocanter.",
+   "C": "O ponto proximal está certo, mas o distal é o maléolo medial, não o lateral."
   },
+  "conceito": "Na **discrepância de comprimento dos membros inferiores**, há duas medidas com a fita:\n\n**comprimento real (verdadeiro)**: da **espinha ilíaca anterossuperior** ao **maléolo medial**; mede o comprimento dos ossos, do quadril ao tornozelo;\n\n**comprimento aparente**: do **umbigo** (ou do xifoide) ao maléolo medial; inclui a obliquidade da pelve e as contraturas, como uma adução fixa do quadril, que \"encurta\" a perna sem mudar o osso.\n\n**Outros métodos**:\n\n**blocos sob o pé** até nivelar as cristas ilíacas: o mais prático e funcional;\n\n**sinal de Galeazzi**: com os quadris e os joelhos fletidos, mostra se a diferença está no fêmur ou na tíbia;\n\n**imagem**: escanometria, telerradiografia ou tomografia (scanograma), com menos radiação.\n\n**A previsão na criança**: método de **Moseley** (gráfico de linha reta), **multiplicador de Paley** e tabelas de Green-Anderson.\n\n**A conduta pela discrepância prevista na maturidade**: menos de 2 cm, nada ou palmilha; de 2 a 5 cm, **epifisiodese** do lado mais longo; acima de 5 cm, **alongamento**; muito grandes, prótese ou amputação.\n\n**Na prova**: comprimento real = da **espinha ilíaca anterossuperior** ao **maléolo medial**.",
+  "correta": "O comprimento real do membro é medido da espinha ilíaca anterossuperior ao maléolo medial.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Leg Length Discrepancy. https://posna.org/physician-education/study-guide/leg-length-discrepancy-%28lld%29"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0034": {
-  "conceito": "### Torcicolo muscular congênito\n- Fibrose do ==esternocleidomastoideo== (ECM): cabeça inclinada para o lado afetado e queixo para o oposto.\n- Associação com ==DDQ== (examinar quadris), metatarso aduto, parto difícil.\n- ==Tumoração== (pseudotumor) no ECM nas primeiras semanas, que regride.\n\n### Tratamento\n- Alongamento e posicionamento: resolve a maioria (> 90%) se iniciado antes de 1 ano.\n- Cirurgia (tenotomia uni ou bipolar): após 1 ano sem resposta, déficit > 15° persistente.\n\n### Fatores de pior prognóstico do conservador\n| Fator |\n|---|\n| ==fibrose do ECM== (no US; ==terço distal== segundo a fonte da prova) |\n| déficit de rotação > 30° |\n| início do tratamento após 1 ano |\n| ECM todo acometido |\n\n### Diferenciais\n- Klippel-Feil, subluxação atlantoaxial, estrabismo (torcicolo ocular), tumor de fossa posterior, Sandifer (refluxo).\n\n> **Na prova:** pior prognóstico conservador = ==fibrose do terço distal do ECM== (veja o alerta).",
-  "correta": "**Fibrose do terço distal do ECM.**\n- Fibrose estabelecida responde mal a alongamento.\n- Critério didático da fonte (veja o alerta).",
   "incorretas": {
-   "A": "**Consequência.**\n- Plagiocefalia acompanha, não prediz falha.",
-   "B": "**Bom prognóstico.**\n- Tratar antes de 1 ano funciona.",
-   "C": "**Regride.**\n- Pseudotumor tende a desaparecer."
+   "A": "A plagiocefalia é consequência da postura e não prediz a falha do tratamento conservador.",
+   "B": "Começar antes de 1 ano é sinal de bom prognóstico, não de pior.",
+   "C": "A tumoração (pseudotumor) costuma regredir e não indica, por si, pior evolução."
   },
+  "conceito": "O **torcicolo muscular congênito** é a **fibrose do esternocleidomastoideo** de um lado. A cabeça inclina para o lado afetado e o queixo gira para o lado oposto. Nas primeiras semanas pode aparecer um **nódulo** (pseudotumor) no músculo, que regride sozinho.\n\n**As associações**: **displasia do quadril** (examinar os quadris sempre), metatarso aduto e parto difícil. Com o tempo, pode surgir **plagiocefalia** (achatamento da cabeça), uma consequência da posição.\n\n**O tratamento**: **alongamento** e posicionamento resolvem mais de 90% quando começam **antes de 1 ano**. A **cirurgia** (tenotomia uni ou bipolar) fica para quem não melhora depois de 1 ano e mantém déficit de rotação acima de cerca de 15°.\n\n**Os fatores de pior prognóstico do tratamento conservador**:\n\n**fibrose do músculo** no ultrassom (a fonte da prova destaca a fibrose do terço distal);\n\n**déficit de rotação** maior que cerca de 30°;\n\n**início do tratamento depois de 1 ano**;\n\no músculo inteiro acometido.\n\n**Os diferenciais**: Klippel-Feil, subluxação atlantoaxial, estrabismo (torcicolo ocular), tumor de fossa posterior e síndrome de Sandifer (refluxo).\n\n**Na prova**: pior prognóstico do conservador = **fibrose** do esternocleidomastoideo, no **terço distal** pela fonte da prova.",
+  "correta": "A fibrose estabelecida do esternocleidomastoideo, que a fonte da prova localiza no terço distal, responde mal ao alongamento.",
   "alerta": "Evidência recente confirma fibrose do ECM, maior déficit de amplitude e início tardio como fatores robustos de pior evolução. A associação específica com o terço distal do músculo deve ser entendida como critério didático da fonte usada pela prova.",
   "referencias": [
    "Diagnosis and habilitation of congenital muscular torticollis. https://pmc.ncbi.nlm.nih.gov/articles/PMC11827386/",
    "Congenital muscular torticollis: research and clinical practice. https://pmc.ncbi.nlm.nih.gov/articles/PMC6855899/",
    "Physical therapy guideline for congenital muscular torticollis. https://pmc.ncbi.nlm.nih.gov/articles/PMC8568067/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0035": {
-  "conceito": "### Marchas patológicas\n| Marcha | Achado | Causa |\n|---|---|---|\n| ==mão na coxa== | empurra a coxa para estender o joelho | ==quadríceps insuficiente== (pólio, Duchenne) |\n| glúteo máximo | tronco jogado para trás no apoio | extensor do quadril fraco |\n| Trendelenburg | pelve cai do lado oposto; tronco inclina para o lado do apoio | ==glúteo médio== |\n| escarvante (steppage) | eleva o joelho para o pé não arrastar | dorsiflexores fracos (fibular) |\n| atáxica | base alargada, instável | cerebelo |\n| antálgica | apoio curto | dor |\n| ceifante | circundução | espasticidade (hemiplegia) |\n\n> **Na prova:** mão na face anterior da coxa = ==insuficiência do quadríceps==.",
-  "correta": "**Insuficiência do quadríceps.**\n- A mão empurra a coxa e trava o joelho em extensão.",
   "incorretas": {
-   "A": "**Cerebelar.**\n- Base alargada.",
-   "B": "**Dorsiflexores.**\n- Eleva o joelho.",
-   "D": "**Glúteo máximo.**\n- Tronco para trás."
+   "A": "A marcha atáxica, de origem cerebelar, tem base alargada e instável, sem apoio da mão na coxa.",
+   "B": "Na marcha escarvante o joelho é elevado para compensar dorsiflexores fracos.",
+   "D": "Na insuficiência do glúteo máximo, o tronco é jogado para trás no apoio."
   },
+  "conceito": "Muitas **marchas patológicas** são compensações de um músculo fraco, e o jeito de andar denuncia qual é:\n\n**mão na face anterior da coxa**: o **quadríceps** está fraco; no apoio, a pessoa empurra a coxa com a mão para **travar o joelho em extensão** e não cair (poliomielite, Duchenne);\n\n**marcha do glúteo máximo**: o tronco é jogado **para trás** no apoio, porque o extensor do quadril não segura o corpo;\n\n**Trendelenburg**: a pelve cai do lado oposto ao apoio, e o tronco inclina para o lado que apoia; **glúteo médio** fraco;\n\n**escarvante (steppage)**: a pessoa **eleva o joelho** para o pé caído não arrastar; **dorsiflexores** fracos (nervo fibular);\n\n**atáxica**: base alargada e instável; lesão do **cerebelo**;\n\n**antálgica**: apoio curto do lado que dói;\n\n**ceifante**: o membro faz um arco (circundução); espasticidade, como na hemiplegia.\n\n**Na prova**: apoio da mão na face anterior da coxa = **insuficiência do quadríceps**.",
+  "correta": "A mão empurra a coxa para trás e trava o joelho em extensão, compensando o quadríceps fraco.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Gait. https://posna.org/physician-education/study-guide/gait"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0036": {
-  "conceito": "### Artrogripose múltipla congênita\n- Contraturas congênitas em ==duas ou mais articulações==, sem progressão.\n- Causa comum: ==acinesia fetal== (falta de movimento intrauterino).\n\n| Origem | Achado |\n|---|---|\n| ==neuropática== (a mais comum) | ==redução das células do corno anterior== da medula |\n| miopática | distrofia muscular congênita |\n| restrição | oligoidrâmnio, útero bicorno |\n| tecido conjuntivo | |\n\n### Amioplasia (forma clássica)\n- Simétrica, quatro membros: ombros aduzidos e em RI, cotovelos estendidos, punhos fletidos, quadris luxados, joelhos estendidos ou fletidos, ==pé torto rígido==.\n- Pele lisa sem pregas, covinhas, inteligência normal.\n\n### Tratamento\n- Fisioterapia precoce; gessos; cirurgias (talectomia no pé torto resistente, osteotomias).\n\n> **Na prova:** amioplasia = ombro ==aduzido e em RI==, cotovelo estendido, ==punho fletido==",
-  "correta": "**Rotação interna e punho fletido.**\n- Postura do \"policial pedindo gorjeta\".\n- Cotovelo estendido.",
   "incorretas": {
-   "B": "**Rotação errada.**\n- É interna.",
-   "C": "**Punho errado.**\n- Fletido.",
-   "D": "**Duplamente errada.**\n- RE e punho estendido."
+   "B": "O punho fletido está certo, mas o ombro fica em rotação interna.",
+   "C": "A rotação interna está certa, mas o punho fica fletido.",
+   "D": "Erra os dois: o ombro está em rotação interna e o punho, fletido."
   },
+  "conceito": "A **artrogripose múltipla congênita** é o nascimento com contraturas fixas em várias articulações, causadas pela falta de movimento do feto. A forma clássica, a **amioplasia**, é simétrica e tem uma postura típica dos membros superiores:\n\n**ombros** em **adução** e **rotação interna**;\n\n**cotovelos** em **extensão**;\n\n**antebraços** em pronação;\n\n**punhos** em **flexão** e desvio ulnar.\n\nA imagem lembra o \"policial pedindo gorjeta\": braços colados ao corpo, virados para dentro, com os punhos dobrados.\n\n**Nos membros inferiores**: quadris às vezes luxados, joelhos estendidos ou fletidos e **pé torto rígido**.\n\n**Outros sinais**: pele lisa, sem pregas, com covinhas sobre as articulações, músculos substituídos por gordura e fibrose, e **inteligência normal**.\n\n**O objetivo do tratamento** no membro superior é a criança conseguir levar a mão à boca: fisioterapia e órteses precoces e, depois, liberação do cotovelo e transferências para dar flexão.\n\n**Na prova**: artrogripose = cotovelo em extensão, ombro em **rotação interna** e **punho fletido**.",
+  "correta": "Na amioplasia, o ombro fica aduzido e em rotação interna, o cotovelo estendido e o punho fletido.",
   "referencias": [
    "Arthrogryposis: A Review and Update. https://pmc.ncbi.nlm.nih.gov/articles/PMC2698792/",
    "AMC: amyoplasia and distal arthrogryposis. https://pmc.ncbi.nlm.nih.gov/articles/PMC4661149/",
    "Lovell and Winter's Pediatric Orthopaedics, 7ª edição (Weinstein, Flynn), Cap. 8"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0037": {
-  "conceito": "### DDQ: exame conforme a idade\n| Idade | Achado útil |\n|---|---|\n| recém-nascido a 2-3 meses | ==Ortolani== (reduz) e ==Barlow== (luxa) |\n| ==após 3 meses== | ==limitação da abdução (Hart)==, Galeazzi, assimetria de pregas |\n| marcha | Trendelenburg, claudicação, hiperlordose (bilateral) |\n\n### Sinais\n| Sinal | O que é |\n|---|---|\n| ==Hart== | abdução limitada com quadril e joelho fletidos (adutores retraídos) |\n| Galeazzi | joelho mais baixo com quadris fletidos |\n| Peter-Bade | pregas assimétricas (pouco específico) |\n| Klisic | linha trocanter-EIAS passa abaixo do umbigo |\n\n### Imagem\n| Idade | Exame |\n|---|---|\n| < 4 a 6 meses | ultrassom (Graf) |\n| > 4 a 6 meses | radiografia (Hilgenreiner, Perkins, Shenton, índice acetabular) |\n\n### Bilateral\n- Abdução limitada ==simétrica== passa despercebida: a assimetria é o que chama atenção.\n- Na bilateral: hiperlordose, marcha anserina, períneo alargado.\n\n> **Na prova:** limitação da abdução = ==mais evidente na DDQ unilateral==",
-  "correta": "**Mais evidente na unilateral.**\n- A assimetria salta aos olhos.\n- Na bilateral é simétrica e engana.",
   "incorretas": {
-   "A": "**Relevante.**\n- Sinal mais confiável após 3 meses.",
-   "B": "**Não imperceptível.**\n- Menos evidente, mas presente.",
-   "D": "**Relevante sozinho.**\n- Não depende da lordose."
+   "A": "A limitação da abdução é o sinal clínico mais confiável depois dos primeiros meses.",
+   "B": "Na displasia bilateral a limitação existe, mas é simétrica e menos evidente, não imperceptível.",
+   "D": "A limitação da abdução tem valor sozinha, sem depender da hiperlordose."
   },
+  "conceito": "Depois dos primeiros meses, na **displasia do quadril**, os adutores se retraem e o quadril deixa de ser instável. O sinal mais confiável passa a ser a **limitação da abdução** com o quadril e o joelho fletidos (sinal de Hart).\n\n**Por que ela aparece mais na displasia unilateral**: o examinador compara um lado com o outro. Se só um quadril está luxado, a **assimetria** salta aos olhos: um lado abre bem e o outro não.\n\n**Na displasia bilateral**: os dois lados abrem pouco, por igual. A limitação continua existindo, mas é **simétrica** e passa despercebida com facilidade. Nesses casos, as pistas são outras: hiperlordose, marcha anserina e períneo alargado quando a criança anda; e o índice acetabular na radiografia.\n\n**Os outros sinais tardios**: Galeazzi (só na unilateral), assimetria de pregas (pouco específica) e Klisic.\n\n**Na prova**: limitação da abdução é **mais evidente na displasia unilateral**.",
+  "correta": "Na displasia unilateral, a diferença de abdução entre os dois lados torna o sinal muito mais fácil de perceber.",
   "referencias": [
    "Developmental dysplasia of the hip. https://pmc.ncbi.nlm.nih.gov/articles/PMC3143976/",
    "Developmental Dysplasia of the Hip: Controversies in Management. https://pmc.ncbi.nlm.nih.gov/articles/PMC9276911/",
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 13"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0038": {
@@ -569,67 +569,68 @@
   "conferido": false
  },
  "pediatria-0040": {
-  "conceito": "### Recidiva do pé torto após Ponseti\n| Tipo | Achado | Conduta |\n|---|---|---|\n| estrutural (rígida) | adução, cavo, varo ou equino fixos | ==novos gessos== ± tenotomia |\n| ==dinâmica== | ==supinação do antepé na marcha== (balanço), pé passivamente corrigível | ==transferência do tibial anterior== |\n\n### Transferência do tibial anterior\n- Destino: ==cuneiforme lateral== (ou cuboide em alguns serviços).\n- Pré-requisitos: pé ==flexível==, deformidade fixa já corrigida (gessos antes), idade em geral acima de 2,5 a 3 anos (cuneiforme lateral ossificado).\n- Mecanismo: tibial anterior dominante sobre os fibulares supina o pé ao dorsifletir.\n\n### Causa principal de recidiva\n- ==Não adesão à órtese de abdução== (botas com barra) até 4 a 5 anos.\n\n> **Na prova:** recidiva precoce = ==repetir Ponseti com gessos seriados==",
-  "correta": "**Ponseti com gessos seriados.**\n- A recidiva ainda é flexível e responde.\n- Tenotomia se o equino persistir; órtese depois.",
   "incorretas": {
-   "A": "**Dinâmica em criança maior.**\n- Só com pé corrigido e flexível.",
-   "C": "**Complemento.**\n- Parte do Ponseti se o equino não cede.",
-   "D": "**Último recurso.**\n- Rígido e resistente."
+   "A": "A transferência do tibial anterior é para a supinação dinâmica em criança maior, com o pé já corrigido.",
+   "C": "A tenotomia do calcâneo é uma etapa dentro do Ponseti, quando o equino não corrige com os gessos.",
+   "D": "A correção cirúrgica de partes moles e osso é último recurso, para pés rígidos e resistentes."
   },
+  "conceito": "No **pé torto congênito**, a **recidiva** depois do método de Ponseti acontece sobretudo quando a criança **não usa a órtese** de abdução (botas com barra) como deveria, até os 4 ou 5 anos.\n\n**A recidiva precoce**: costuma ainda ser **flexível** e responde bem ao mesmo tratamento que corrigiu o pé no começo: **repetir o método de Ponseti**, com **gessos seriados**. Se o equino não corrigir, faz-se de novo a **tenotomia percutânea** do tendão calcâneo. Depois, a órtese volta, e a família recebe reforço sobre o uso.\n\n**As outras opções, para outras situações**:\n\n**transferência do tibial anterior**: para a **supinação dinâmica** em criança maior (cerca de 2,5 a 3 anos ou mais), com o pé já corrigido e flexível;\n\n**tenotomia do calcâneo**: é uma etapa do próprio Ponseti, quando o equino não cede nos gessos;\n\n**liberação cirúrgica de partes moles e osso**: último recurso, nos pés rígidos que resistem aos gessos.\n\n**Na prova**: recidiva precoce do pé torto = **repetir Ponseti** com gessos seriados.",
+  "correta": "A recidiva precoce costuma ser flexível e volta a corrigir com novos gessos seriados pelo método de Ponseti.",
   "referencias": [
    "Clubfoot. StatPearls/NCBI Bookshelf. https://www.ncbi.nlm.nih.gov/books/NBK551574/",
    "Pediatric Orthopaedic Society of North America (POSNA). Clubfoot. https://posna.org/physician-education/study-guide/clubfoot",
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 29"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0041": {
-  "conceito": "### Determinantes da marcha (Saunders)\n- Objetivo: reduzir a ==oscilação do centro de massa== e o gasto energético.\n\n| Determinante | Efeito |\n|---|---|\n| ==rotação pélvica (transversa)== | pelve avança (==anterior==) com o membro em balanço: alonga o passo e ==reduz a queda vertical== |\n| inclinação pélvica (coronal) | pelve cai do lado do balanço: reduz a subida no apoio médio |\n| flexão do joelho no apoio | reduz a elevação no apoio médio |\n| mecanismo pé-tornozelo | suaviza a trajetória |\n| mecanismo joelho-tornozelo | idem |\n| deslocamento lateral da pelve | base estreita, valgo fisiológico |\n\n- Centro de massa oscila cerca de 5 cm vertical e 5 cm lateral.\n\n> **Na prova:** rotação pélvica = deslocamento ==anterior== com ==menor oscilação vertical==.",
-  "correta": "**Anterior, menor oscilação vertical.**\n- A pelve gira para frente com o membro em balanço.\n- Alonga o passo sem subir o centro de massa.",
   "incorretas": {
-   "B": "**Direção errada.**\n- Anterior.",
-   "C": "**Plano errado.**\n- Reduz a oscilação vertical.",
-   "D": "**Duplamente errada.**\n- Direção e plano."
+   "B": "O deslocamento produzido pela rotação pélvica é anterior, não posterior.",
+   "C": "O deslocamento é anterior, mas o efeito da rotação pélvica é reduzir a oscilação vertical, não a horizontal.",
+   "D": "Erra a direção e o plano: o deslocamento é anterior e reduz a oscilação vertical."
   },
+  "conceito": "Na marcha, o **centro de massa** sobe e desce e se desloca para os lados; quanto mais oscila, mais energia se gasta. **Saunders** descreveu os **determinantes da marcha**, mecanismos que **achatam** essa trajetória:\n\n**rotação pélvica (plano transverso)**: a pelve **gira para a frente** do lado do membro em balanço. Junto com a flexão do quadril, isso desloca o quadril **para anterior**, **alonga o passo** sem precisar abrir tanto as pernas, e **diminui a queda vertical** do centro de massa;\n\n**inclinação pélvica (plano coronal)**: a pelve cai um pouco do lado do balanço, reduzindo a subida no apoio médio;\n\n**flexão do joelho no apoio**: também reduz a elevação no apoio médio;\n\n**mecanismos do pé e do tornozelo e do joelho com o tornozelo**: suavizam a trajetória;\n\n**deslocamento lateral da pelve**: com a base estreita e o valgo fisiológico do joelho, reduz a oscilação para os lados.\n\nNa marcha normal, o centro de massa oscila cerca de 5 cm no sentido vertical e cerca de 5 cm para os lados.\n\n**Na prova**: rotação pélvica = deslocamento **anterior** com **menor oscilação vertical** do tronco.",
+  "correta": "A pelve gira para a frente com o membro em balanço, alongando o passo e reduzindo a oscilação vertical do centro de massa.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Gait. https://posna.org/physician-education/study-guide/gait",
    "Quantification of pelvic rotation as a determinant of gait. Arch Phys Med Rehabil. 2001. https://pubmed.ncbi.nlm.nih.gov/11239313/",
    "Leite, Faloppa, Propedêutica Ortopédica e Traumatológica, 1ª edição, Cap. 20"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0042": {
-  "conceito": "### Paralisia cerebral: tipo × sistema\n| Tipo | Sistema | Clínica |\n|---|---|---|\n| espástico | ==piramidal== (córtex motor, trato corticoespinal) | hipertonia velocidade-dependente, hiperreflexia |\n| ==discinético (atetoide, distônico)== | ==extrapiramidal== (núcleos da base) | movimentos involuntários lentos, contorcidos, tônus flutuante |\n| atáxico | cerebelar | dismetria, tremor de intenção, equilíbrio |\n| misto | vários | |\n\n### Associações\n- Atetoide: ==kernicterus== (hiperbilirrubinemia), asfixia a termo.\n- Diplegia espástica: prematuridade, leucomalácia periventricular.\n\n### Cirurgia ortopédica\n- Resultados mais previsíveis no ==espástico==; cautela nos discinéticos.\n\n> **Na prova:** lesão dos núcleos da base por kernicterus = ==atetose==",
-  "correta": "**Atetose.**\n- Núcleos da base, clássica do kernicterus.\n- Movimentos lentos, contorcidos, involuntários.",
   "incorretas": {
-   "A": "**Cerebelo.**\n- Desequilíbrio e dismetria.",
-   "C": "**Também discinética.**\n- Posturas sustentadas; a questão cobra a atetose do kernicterus.",
-   "D": "**Piramidal.**\n- Hipertonia velocidade-dependente."
+   "A": "A ataxia vem da lesão do cerebelo, não dos núcleos da base.",
+   "C": "A distonia também é uma discinesia dos núcleos da base, mas o quadro classicamente ligado ao kernicterus é a atetose.",
+   "D": "A espasticidade vem da lesão piramidal."
   },
+  "conceito": "Na **paralisia cerebral**, o tipo de distúrbio do movimento indica onde está a lesão:\n\n**espasticidade**: lesão **piramidal** (córtex motor e trato corticoespinal); hipertonia que aumenta com a velocidade do movimento;\n\n**discinesias**: lesão dos **núcleos da base** (sistema extrapiramidal); dois padrões:\n\n**atetose**: movimentos **involuntários, lentos e contorcidos**, sobretudo nas mãos e na face, com tônus que oscila;\n\n**distonia**: contrações sustentadas que fixam **posturas anormais**;\n\n**ataxia**: lesão do **cerebelo**; desequilíbrio, dismetria e tremor de intenção.\n\n**O kernicterus**: a bilirrubina muito alta no recém-nascido se deposita nos **núcleos da base**, e o quadro clássico resultante é a **atetose**, muitas vezes com surdez e alteração do olhar. A asfixia no bebê a termo também pode lesar os núcleos da base.\n\n**Na prova**: lesão dos gânglios da base por kernicterus = **atetose**.",
+  "correta": "A atetose é o distúrbio clássico da lesão dos núcleos da base pelo kernicterus, com movimentos lentos, contorcidos e involuntários.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Cerebral Palsy. https://posna.org/physician-education/study-guide/cerebral-palsy",
    "Cerebral palsy in children: A clinical practice review. https://pubmed.ncbi.nlm.nih.gov/39168782/",
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 31"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0043": {
-  "conceito": "### Epifisiólise: fatores\n| Tipo | Fator |\n|---|---|\n| mecânico | ==obesidade==, ==retroversão relativa (menos anteversão)==, ==coxa vara (menor ângulo cervicodiafisário)==, fise mais oblíqua, estirão |\n| endócrino | hipotireoidismo, deficiência de GH (uso de GH), hipogonadismo, osteodistrofia renal, radioterapia |\n\n- Pedir TSH em ==< 10 anos==, baixa estatura, ou bilateral.\n\n### Classificações\n| Critério | Tipos |\n|---|---|\n| Loder (estabilidade) | estável (anda) × ==instável== (não anda; necrose em até 50%) |\n| Southwick (ângulo) | leve < 30°, moderado 30 a 50°, grave > 50° |\n| tempo | aguda < 3 semanas, crônica, crônica agudizada |\n\n### Tratamento\n- ==Fixação in situ== com um parafuso canulado central.\n- Contralateral profilática: < 10 anos, endocrinopatia.\n\n### Técnica do parafuso\n- ==Um parafuso canulado== central, perpendicular à fise, no centro da epífise em AP e perfil.\n- ==Evitar o quadrante anterossuperior== (e o posterossuperior): artérias epifisárias laterais (circunflexa medial).\n- Ponta a 5 mm do osso subcondral; nunca penetrar a articulação.\n- Ponto de entrada ==anterior== no colo (a epífise escorregou para trás).\n\n> **Na prova:** parafuso na epifisiólise deve evitar o quadrante ==anterossuperior==",
-  "correta": "**Anterossuperior.**\n- Região de risco vascular da epífise.\n- Parafuso central, perpendicular à fise.",
   "incorretas": {
-   "A": "**Não é o de risco.**\n- Anteroinferior.",
-   "C": "**Não é o de risco cobrado.**\n- Posteroinferior.",
-   "D": "**Gabarito indica o anterossuperior.**\n- Evitar o superior como um todo."
+   "A": "O quadrante anteroinferior não é o apontado como zona de risco vascular.",
+   "C": "O quadrante posteroinferior não é o apontado como zona de risco vascular.",
+   "D": "Pela anatomia clássica, o posterossuperior é a zona de maior risco vascular, mas o gabarito marcou o anterossuperior."
   },
+  "conceito": "Na **epifisiólise proximal do fêmur**, o tratamento padrão é a **fixação in situ**: um **parafuso canulado** que segura a epífise onde ela está, sem tentar reduzir, para não lesar os vasos.\n\n**A técnica**:\n\n**um parafuso**, no **centro da epífise** nas duas incidências (anteroposterior e perfil) e **perpendicular à fise**;\n\ncomo a epífise escorregou para **posterior**, o ponto de entrada fica na face **anterior** do colo, para o parafuso chegar ao centro;\n\na ponta fica a cerca de **5 mm** do osso subcondral, **sem penetrar** a articulação (risco de condrólise).\n\n**A irrigação**: a cabeça femoral recebe sangue sobretudo das **artérias epifisárias laterais**, ramos da circunflexa femoral medial, que entram pela região **superior e posterior** do colo. Um parafuso fora do centro, sobretudo na parte superior da epífise, pode lesá-las e causar **necrose**.\n\n**A questão**: o gabarito pede para evitar o quadrante **anterossuperior**. Na descrição anatômica clássica (Brodetti), os vasos epifisários laterais ficam no quadrante **posterossuperior**, que é o mais citado como zona de risco vascular.\n\n**Na prova**: o gabarito marca o quadrante **anterossuperior**; a regra prática é manter o parafuso **central** e longe da parte superior da epífise.",
+  "alerta": "Na anatomia clássica de Brodetti, as artérias epifisárias laterais entram pela região posterossuperior, e é esse quadrante que a maioria das referências aponta como o de maior risco vascular. O gabarito marca o anterossuperior. Guarde a regra que vale nos dois casos: parafuso central, perpendicular à fise e longe da parte superior da epífise.",
+  "correta": "O gabarito oficial é o quadrante anterossuperior; a anatomia clássica aponta o posterossuperior como o de maior risco vascular, e a regra prática é manter o parafuso central.",
   "referencias": [
    "Slipped capital femoral epiphysis: current management strategies. https://pmc.ncbi.nlm.nih.gov/articles/PMC6460813/",
    "SCFE. Orthobullets. https://www.orthobullets.com/pediatrics/4038/slipped-capital-femoral-epiphysis-scfe",
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 15"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0044": {
@@ -644,377 +645,377 @@
   "conferido": false
  },
  "pediatria-0045": {
-  "conceito": "### Deficiência femoral focal proximal (DFFP)\n- Espectro das deficiências congênitas do fêmur; ==unilateral== em geral.\n- Coxa curta, ==quadril em flexão, abdução e rotação externa==.\n- Associações: ==hemimelia fibular== (cerca de 50%), deficiência do LCA, pé com raios ausentes.\n\n### Aitken\n| Tipo | Cabeça femoral | Acetábulo |\n|---|---|---|\n| A | presente | normal |\n| B | presente, sem conexão ao colo | adequado |\n| C | ausente | displásico |\n| D | ausente | ausente |\n\n### Tratamento\n| Situação | Opção |\n|---|---|\n| discrepância prevista < 20 cm, quadril estável | alongamento, epifisiodese |\n| grave | ==Van Nes== (rotacionplastia), artrodese do joelho + prótese, Syme |\n\n> **Na prova:** anomalia mais associada à DFFP = ==hemimelia fibular== (cerca de 50%).",
-  "correta": "**Hemimelia fibular.**\n- Cerca de metade dos casos.\n- Mesmo espectro de deficiência pós-axial.",
   "incorretas": {
-   "A": "**Parte do espectro.**\n- Não é a anomalia associada mais comum.",
-   "C": "**Não é típico.**\n- Pé na hemimelia é equinovalgo.",
-   "D": "**NF1.**\n- Sem relação típica."
+   "A": "A coxa vara faz parte do espectro da própria deficiência femoral, não é a anomalia associada mais comum.",
+   "C": "O pé torto não é a associação típica; o pé da hemimelia fibular é equinovalgo.",
+   "D": "A pseudartrose congênita da tíbia se associa à neurofibromatose, não à deficiência femoral."
   },
+  "conceito": "A **deficiência femoral focal proximal** é uma falha de formação do fêmur proximal: coxa curta, quadril em flexão, abdução e rotação externa, em geral de um lado só.\n\n**A anomalia associada mais comum**: a **hemimelia fibular**, presente em **cerca de metade** dos casos. As duas fazem parte do mesmo espectro de deficiências do membro inferior.\n\n**Outras associações**: deficiência dos **ligamentos cruzados** (instabilidade do joelho), pé com **raios laterais ausentes** e coalizão tarsal.\n\n**A classificação de Aitken** (A a D) olha a presença da cabeça do fêmur e do acetábulo e ajuda a planejar o tratamento:\n\n**discrepância menor e quadril estável**: alongamento e epifisiodese do outro lado;\n\n**formas graves**: rotacionplastia de **Van Nes**, artrodese do joelho com prótese ou amputação de Syme.\n\n**As alternativas que não são a associação típica**: a **coxa vara** faz parte do próprio espectro da deficiência femoral; o **pé torto** não é típico (o pé da hemimelia fibular é **equinovalgo**); e a **pseudartrose congênita da tíbia** se associa à neurofibromatose.\n\n**Na prova**: anomalia mais associada à deficiência femoral focal proximal = **hemimelia fibular**.",
+  "correta": "A hemimelia fibular acompanha cerca de metade dos casos de deficiência femoral focal proximal.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). PFFD – Proximal Focal Femoral Deficiency. https://posna.org/physician-education/study-guide/pffd-proximal-focal-femoral-deficiency"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0046": {
-  "conceito": "### Pseudartrose congênita da tíbia\n- Arqueamento ==anterolateral== da tíbia distal; fratura com pouco trauma e não consolida.\n- ==NF1== em cerca de 50% (e 5 a 10% dos NF1 têm).\n- Também displasia fibrosa, displasia osteofibrosa.\n\n### Boyd\n| Tipo | Achado |\n|---|---|\n| I | pseudartrose ao nascer |\n| II | ampulheta (arqueamento com estreitamento) |\n| III | cisto |\n| IV | esclerose sem estreitamento |\n| V | fíbula displásica |\n| VI | neurofibroma intraósseo |\n\n### Tratamento\n- Antes da fratura: ==órtese protetora== até a maturidade; ==nunca osteotomia corretiva== do arqueamento.\n- Após fratura: ressecção do hamartoma, haste intramedular (Williams), enxerto, fixador (Ilizarov), fíbula vascularizada; BMP; cross-union (Paley).\n\n### Outros arqueamentos\n| Direção | Doença |\n|---|---|\n| posteromedial | benigno, corrige |\n| anteromedial | hemimelia fibular |\n\n> **Na prova:** pseudartrose congênita da tíbia = arqueamento ==anterolateral==.",
-  "correta": "**Anterolateral.**\n- Arqueamento que fratura e não consolida.\n- Metade tem NF1.",
   "incorretas": {
-   "B": "**Hemimelia fibular.**\n- Anteromedial.",
-   "C": "**Não é padrão.**\n- Posterolateral.",
-   "D": "**Benigno.**\n- Posteromedial corrige."
+   "B": "O arqueamento anteromedial se associa à hemimelia fibular.",
+   "C": "O arqueamento posterolateral não é o padrão de nenhuma dessas condições clássicas.",
+   "D": "O arqueamento posteromedial é benigno e corrige espontaneamente."
   },
+  "conceito": "A **pseudartrose congênita da tíbia** é uma tíbia que nasce **arqueada para anterolateral**, no terço distal, frágil, que **fratura com trauma mínimo** e depois **não consolida**.\n\n**A associação mais importante**: a **neurofibromatose tipo 1**, presente em cerca de metade dos casos (e 5 a 10% das pessoas com NF1 têm a doença). Também aparece em displasia fibrosa e displasia osteofibrosa.\n\n**Os três arqueamentos congênitos da tíbia**, que precisam ser diferenciados:\n\n**anterolateral**: **pseudartrose congênita**; piora e fratura;\n\n**posteromedial**: benigno; **corrige sozinho** e deixa discrepância de comprimento;\n\n**anteromedial**: associado à **hemimelia fibular**.\n\n**O tratamento**:\n\n**antes da fratura**: **órtese protetora** até a maturidade; **nunca** fazer osteotomia para corrigir o arqueamento, porque ela não consolida;\n\n**depois da fratura**: ressecção do tecido doente, haste intramedular (Williams), enxerto ósseo, fixador externo (Ilizarov), fíbula vascularizada e, mais recentemente, a união cruzada entre tíbia e fíbula (Paley).\n\n**Na prova**: pseudartrose congênita da tíbia = arqueamento **anterolateral**.",
+  "correta": "O arqueamento anterolateral é o característico da pseudartrose congênita da tíbia, que fratura e não consolida.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Congenital Pseudarthrosis of the Tibia. https://posna.org/physician-education/study-guide/congenital-pseudarthrosis-of-the-tibia-%28cpt%29",
    "Pediatric Lower Extremity Disorders – congenital tibia dysplasia. https://posna.org/blogs/resident-review/december-2017/pediatric-lower-extremity-disorders"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0047": {
-  "conceito": "### Luxação congênita da cabeça do rádio\n- Anomalia congênita mais comum do cotovelo.\n- ==Bilateral== na maioria e ==associada== a outras manifestações (sinostose, síndromes como nail-patella, Ehlers-Danlos, Larsen).\n- Direção mais comum: ==posterior==.\n\n### Congênita × Monteggia crônico\n| Achado | Congênita | Traumática |\n|---|---|---|\n| lado | bilateral | unilateral |\n| cabeça | ==convexa (cúpula)==, pequena | côncava, normal |\n| capítulo | hipoplásico | normal |\n| ulna | reta | deformidade plástica |\n| direção | posterior | anterior |\n\n### Tratamento\n- Observação; ressecção da cabeça após a maturidade se dor.\n\n> **Na prova:** luxação congênita da cabeça do rádio = ==posterior ou posterolateral==",
-  "correta": "**Posterior e posterolateral.**\n- Desvios mais comuns da forma congênita.\n- Anterior sugere Monteggia.",
   "incorretas": {
-   "A": "**Monteggia.**\n- Anterior é traumático.",
-   "B": "**Não é o padrão.**\n- Anteromedial.",
-   "D": "**Não é o padrão.**\n- Posteromedial."
+   "A": "O desvio anterior, sobretudo unilateral, sugere Monteggia traumático antigo.",
+   "B": "O desvio anteromedial não é o padrão da luxação congênita.",
+   "D": "O desvio posterior está certo, mas o componente associado é o posterolateral, não o posteromedial."
   },
+  "conceito": "A **luxação congênita da cabeça do rádio** é a anomalia congênita mais comum do cotovelo. Os desvios mais comuns são **posterior** e **posterolateral**.\n\n**As características**: em geral **bilateral**, associada a outras anomalias (sinostose radioulnar, síndrome unha-patela, Ehlers-Danlos, Larsen), cabeça do rádio pequena e **convexa** (em cúpula), capítulo hipoplásico e ulna reta.\n\n**Por que a direção importa**: uma luxação **anterior** da cabeça do rádio em criança, sobretudo unilateral, deve fazer pensar em **lesão de Monteggia** antiga que passou despercebida. Ela tem tratamento (reconstrução), ao contrário da congênita.\n\n**Como separar**:\n\n**congênita**: bilateral, posterior ou posterolateral, cabeça convexa, capítulo hipoplásico, ulna reta;\n\n**Monteggia antigo**: unilateral, em geral anterior, cabeça côncava normal, capítulo normal, ulna com curvatura.\n\n**O tratamento da congênita**: observação; se houver dor ou limitação depois da maturidade, ressecção da cabeça do rádio.\n\n**Na prova**: luxação congênita da cabeça do rádio = desvio **posterior** e **posterolateral**.",
+  "correta": "Os desvios mais comuns da luxação congênita da cabeça do rádio são o posterior e o posterolateral.",
   "referencias": [
    "Congenital deformities of the upper limbs: Part II. https://pmc.ncbi.nlm.nih.gov/articles/PMC6565893/",
    "Congenital radial head dislocation: narrative review. https://pubmed.ncbi.nlm.nih.gov/42611687/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0048": {
-  "conceito": "### Medula presa na mielomeningocele\n| Aspecto | Dado |\n|---|---|\n| ancoragem na RM | ==comum== (quase todos após o fechamento) |\n| síndrome clínica | ==cerca de 30%== |\n\n### Sinais de tração (síndrome clínica)\n- Perda de força ou piora da marcha.\n- ==Escoliose que progride rápido==, deformidade nova no pé.\n- Espasticidade nova, dor lombar.\n- Piora vesical ou intestinal.\n\n### Diferencial de deterioração\n- Disfunção da ==derivação== (hidrocefalia), siringomielia, Chiari II.\n\n### Conduta\n- RM isolada não indica cirurgia; ==correlação clínica== e desancoragem se deterioração.\n\n### Escoliose na MMC\n| Tipo | Causa |\n|---|---|\n| congênita | malformação vertebral |\n| paralítica | desequilíbrio muscular (mais comum em níveis altos) |\n\n- ==Progressão rápida==: suspeitar de ==medula ancorada==, ==hidrocefalia descompensada== (válvula), siringomielia.\n\n> **Na prova:** progressão rápida da escoliose na MMC = ==medula ancorada e hidrocefalia== (veja o alerta).",
-  "correta": "**Medula ancorada e hidrocefalia.**\n- Tração medular e válvula disfuncionante pioram a curva.\n- Investigar antes da artrodese.",
   "incorretas": {
-   "A": "**Meningite não.**\n- Hidrocefalia sim.",
-   "C": "**Nenhum dos dois.**\n- Não explicam a progressão rápida.",
-   "D": "**Contratura não.**\n- Medula ancorada sim."
+   "A": "A hidrocefalia está certa, mas a meningite não é causa de progressão da escoliose.",
+   "C": "Nem a meningite nem a contratura dos quadris explicam a progressão rápida da curva.",
+   "D": "A medula ancorada está certa, mas a contratura em flexão dos quadris não explica a progressão rápida."
   },
+  "conceito": "Na **mielomeningocele**, a **escoliose** é muito comum e tem duas origens: **congênita** (vértebras malformadas) e **paralítica** (desequilíbrio dos músculos do tronco, mais frequente nos níveis neurológicos altos).\n\n**Quando a curva piora rápido**, é sinal de que algo mudou no sistema nervoso. As duas causas a investigar primeiro:\n\n**medula ancorada (presa)**: a medula tracionada perde função, aparecem fraqueza nova, espasticidade, deformidade nova no pé, piora da bexiga e **escoliose que progride rápido**;\n\n**hidrocefalia descompensada**: a válvula de derivação ventricular deixa de funcionar, a pressão sobe, e a curva pode piorar; também se pensa em **siringomielia** e na malformação de **Chiari II**.\n\n**A conduta**: antes de operar a coluna, investigar com ressonância e avaliação neurocirúrgica, e corrigir a causa (desancoragem da medula, revisão da válvula). A artrodese vem depois.\n\n**Na prova**: progressão rápida da escoliose na mielomeningocele = **medula ancorada** e **hidrocefalia**.",
+  "correta": "A tração da medula ancorada e a hidrocefalia por falha da válvula são as causas a investigar quando a escoliose piora rápido.",
   "alerta": "A força da evidência para uma relação causal isolada entre medula ancorada e progressão de escoliose é limitada por séries observacionais. O comentário preserva a associação usada na questão e ressalta a necessidade de avaliação clínica completa.",
   "referencias": [
    "Neurosurgical causes of scoliosis in myelomeningocele. https://pubmed.ncbi.nlm.nih.gov/16122001/",
    "Orthopedic management of myelomeningocele: systematic review. https://pmc.ncbi.nlm.nih.gov/articles/PMC8361640/",
    "Tethered cord syndrome after myelomeningocele repair. https://pmc.ncbi.nlm.nih.gov/articles/PMC7560491/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0049": {
-  "conceito": "### Coxa vara do desenvolvimento\n- Ângulo cervicodiafisário diminuído por defeito de ossificação no colo medial.\n- ==Triângulo de Fairbank== (fragmento triangular inferior no colo).\n- Marcha de Trendelenburg indolor, encurtamento; bilateral em 30 a 50%.\n\n### Por que limita abdução e rotação medial\n- Trocanter alto e colo varo: o trocanter ==bate no ilíaco== na abdução.\n- Retroversão relativa: ==rotação medial== limitada.\n\n### Ângulo de Hilgenreiner-epifisário (HE)\n| Ângulo HE | Conduta |\n|---|---|\n| < 45° | resolve espontaneamente |\n| 45 a 60° | observar |\n| ==> 60°== | ==osteotomia valgizante== (Pauwels) |\n\n### Diferenciais\n- Coxa vara congênita (DFFP), displasias esqueléticas, raquitismo, sequela de DDQ ou Perthes.\n\n> **Na prova:** coxa vara do desenvolvimento limita ==abdução e rotação medial==.",
-  "correta": "**Abdução e rotação medial.**\n- Trocanter alto colide com o ilíaco.\n- Colo retrovertido limita a rotação medial.",
   "incorretas": {
-   "A": "**Invertida.**\n- Adução e RL ficam livres.",
-   "B": "**Adução livre.**\n- RM certa.",
-   "C": "**RL livre.**\n- Abdução certa."
+   "A": "A adução e a rotação lateral ficam livres; o que se limita é o oposto.",
+   "B": "A rotação medial está certa, mas a adução fica livre; a limitada é a abdução.",
+   "C": "A abdução está certa, mas a rotação lateral fica livre; a limitada é a medial."
   },
+  "conceito": "A **coxa vara do desenvolvimento** é a diminuição do **ângulo cervicodiafisário** por um defeito de ossificação na parte **medial e inferior do colo** do fêmur. Na radiografia aparece o **triângulo de Fairbank**, um fragmento triangular na parte inferior do colo.\n\n**A clínica**: marcha de **Trendelenburg** indolor, encurtamento do membro; bilateral em 30 a 50%.\n\n**Por que limita a abdução e a rotação medial**:\n\no colo varo deixa o **trocanter maior alto**; na **abdução**, o trocanter bate no ilíaco antes do normal;\n\no colo fica **retrovertido** em relação ao normal, o que limita a **rotação medial** (interna).\n\nJá a adução e a rotação lateral ficam livres.\n\n**O ângulo de Hilgenreiner-epifisário** decide a conduta:\n\n**menor que 45°**: tende a melhorar sozinho;\n\n**entre 45 e 60°**: observar;\n\n**maior que 60°**: **osteotomia valgizante** (Pauwels), para pôr a fise na horizontal e o colo em posição melhor.\n\n**Os diferenciais**: deficiência femoral focal proximal, displasias esqueléticas, raquitismo e sequela de displasia do quadril ou Perthes.\n\n**Na prova**: coxa vara do desenvolvimento limita a **abdução** e a **rotação medial**.",
+  "correta": "O trocanter alto bate no ilíaco na abdução, e o colo retrovertido limita a rotação medial.",
   "referencias": [
    "Proximal femoral valgus osteotomy for developmental coxa vara: systematic review. https://pmc.ncbi.nlm.nih.gov/articles/PMC10937198/",
    "Valgus osteotomy by external fixation for developmental coxa vara. https://pmc.ncbi.nlm.nih.gov/articles/PMC3800519/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0050": {
-  "conceito": "### Distrofia muscular de Duchenne\n- ==Ligada ao X==, meninos; ausência de ==distrofina==.\n- Fraqueza ==proximal== (cintura pélvica primeiro), ==pseudo-hipertrofia das panturrilhas==, ==Gowers== positivo.\n- CPK muito elevada; biópsia/genética.\n\n### Perda da marcha (8 a 12 anos)\n| Fraqueza | Compensação |\n|---|---|\n| ==extensores do quadril== | hiperlordose, tronco atrás do quadril |\n| ==dorsiflexores== | marcha na ponta, equino |\n| quadríceps | joelho travado em extensão |\n\n### Ortopedia\n- Contraturas: equino, flexão do quadril, banda iliotibial.\n- ==Escoliose== após perder a marcha: artrodese precoce (antes da piora respiratória, CVF > 30 a 40%).\n- Corticoide prolonga a marcha e reduz escoliose.\n\n### Becker\n- Distrofina reduzida; mais tardia e branda.\n\n### Sinal de Gowers\n- Para levantar do chão, a criança ==apoia as mãos nas coxas e \"escala\" o próprio corpo==.\n- Traduz fraqueza de ==quadríceps e glúteo máximo== (extensores proximais).\n\n### Outros testes da lista\n| Sinal | Uso |\n|---|---|\n| Ober | contratura da banda iliotibial |\n| Meryon | criança escorrega entre as mãos do examinador ao ser erguida (cintura escapular) |\n\n> **Na prova:** fraqueza de quadríceps e glúteo máximo na Duchenne = ==sinal de Gowers==",
-  "correta": "**Gowers.**\n- Escala o próprio corpo com as mãos para levantar.\n- Fraqueza dos extensores proximais.",
   "incorretas": {
-   "A": "**Banda iliotibial.**\n- Teste de contratura.",
-   "B": "**Não é sinal da Duchenne.**\n- Distrator.",
-   "D": "**Cintura escapular.**\n- Meryon: escorrega ao ser erguida."
+   "A": "O teste de Ober avalia a contratura da banda iliotibial.",
+   "B": "O sinal de Jacob não é usado para mostrar a fraqueza proximal da Duchenne.",
+   "D": "O sinal de Meryon mostra a fraqueza da cintura escapular: a criança escorrega quando erguida pelas axilas."
   },
+  "conceito": "Na **distrofia muscular de Duchenne**, a fraqueza começa nos músculos **proximais**, sobretudo da cintura pélvica: **glúteo máximo** e **quadríceps**.\n\n**O sinal de Gowers**: para levantar do chão, a criança primeiro fica de quatro, depois apoia as **mãos nos joelhos e nas coxas** e vai \"**escalando**\" o próprio corpo até ficar de pé. As mãos fazem o trabalho dos extensores do quadril e do joelho, que estão fracos.\n\n**Os outros sinais da Duchenne**: pseudo-hipertrofia das panturrilhas, marcha anserina e hiperlordose, CPK muito alta; a perda da marcha acontece entre 8 e 12 anos.\n\n**Os outros testes das alternativas**:\n\n**Ober**: avalia a **contratura da banda iliotibial**, com a criança deitada de lado;\n\n**Meryon**: quando o examinador ergue a criança pelas axilas, ela **escorrega** entre as mãos, pela fraqueza da cintura escapular; também aparece na Duchenne, mas não é o sinal da fraqueza do quadríceps e do glúteo máximo;\n\n**Jacob**: não é um sinal da Duchenne.\n\n**Na prova**: fraqueza de quadríceps e glúteo máximo na Duchenne = **sinal de Gowers**.",
+  "correta": "No sinal de Gowers, a criança usa as mãos para escalar as próprias pernas ao levantar, compensando a fraqueza do quadríceps e do glúteo máximo.",
   "referencias": [
    "GeneReviews. Dystrophinopathies. https://www.ncbi.nlm.nih.gov/books/NBK1119/",
    "Gower Sign. StatPearls. https://www.ncbi.nlm.nih.gov/books/NBK540973/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0051": {
-  "conceito": "### Mucopolissacaridoses (MPS)\n| Tipo | Nome | Herança | Achados |\n|---|---|---|---|\n| I | ==Hurler== (grave) / Scheie | AR | ==retardo==, face grosseira, opacidade de córnea, giba toracolombar |\n| II | Hunter | ==ligada ao X== | sem opacidade de córnea |\n| III | Sanfilippo | AR | predomínio neurológico |\n| IV | ==Morquio== | AR | ==inteligência normal==, nanismo de tronco curto, ==instabilidade C1-C2 (odontoide hipoplásico)==, genu valgo |\n| VI | Maroteaux-Lamy | AR | inteligência normal |\n\n### Ortopedia\n- Morquio: ==avaliar a coluna cervical== antes de anestesia; artrodese occipitocervical se instável.\n- Hurler: cifose, displasia do quadril, túnel do carpo, dedo em gatilho múltiplo.\n- Tratamento: reposição enzimática, transplante de medula (Hurler).\n\n> **Na prova:** MPS mais frequentes (fonte da prova) = ==Hurler e Morquio== (veja o alerta).",
-  "correta": "**Hurler e Morquio.**\n- Resposta epidemiológica da fonte.\n- A frequência varia entre populações.",
   "incorretas": {
-   "B": "**Hunter não.**\n- Morquio certo.",
-   "C": "**Nenhum dos dois.**\n- Hunter e Sanfilippo.",
-   "D": "**Sanfilippo não.**\n- Hurler certo."
+   "B": "Morquio está certo, mas Hunter não forma o par mais frequente pela fonte da prova.",
+   "C": "Nem Hunter nem Sanfilippo formam o par cobrado.",
+   "D": "Hurler está certo, mas Sanfilippo não forma o par cobrado."
   },
+  "conceito": "As **mucopolissacaridoses** são doenças de depósito: falta uma enzima que degrada os glicosaminoglicanos, que se acumulam nos tecidos. Os tipos que o ortopedista precisa conhecer:\n\n**tipo I, Hurler** (forma grave; a forma leve é a de Scheie): herança recessiva; **retardo**, face grosseira, **opacidade de córnea**, cifose toracolombar (giba);\n\n**tipo II, Hunter**: **ligada ao X**; sem opacidade de córnea;\n\n**tipo III, Sanfilippo**: predomínio **neurológico**;\n\n**tipo IV, Morquio**: **inteligência normal**, nanismo de tronco curto, genu valgo e, o mais importante, **instabilidade C1-C2** por odontoide hipoplásico;\n\n**tipo VI, Maroteaux-Lamy**: inteligência normal.\n\n**Os pontos ortopédicos**:\n\n**Morquio**: **avaliar a coluna cervical** antes de qualquer anestesia; se instável, artrodese occipitocervical;\n\n**Hurler**: cifose, displasia do quadril, túnel do carpo e dedos em gatilho múltiplos;\n\n**tratamento**: reposição enzimática e transplante de medula óssea (Hurler).\n\n**A frequência**: pela fonte da prova, **Hurler e Morquio** são as mais frequentes; a ordem varia entre países e conforme a triagem neonatal.\n\n**Na prova**: MPS mais frequentes (fonte da prova) = **Hurler e Morquio**.",
+  "correta": "Pela fonte da prova, Hurler e Morquio são as mucopolissacaridoses mais frequentes, embora a ordem varie entre populações.",
   "alerta": "A frequência relativa das MPS varia conforme país, triagem neonatal e critério diagnóstico. O par Hurler–Morquio deve ser lido como resposta epidemiológica da fonte da prova, não como ordem universal para todas as populações.",
   "referencias": [
    "A basic understanding of mucopolysaccharidosis. https://pmc.ncbi.nlm.nih.gov/articles/PMC7062595/",
    "Mucopolysaccharidoses: clinical spectrum and frequency. https://pubmed.ncbi.nlm.nih.gov/28292383/",
    "Epidemiology of mucopolysaccharidoses in the United States. https://pmc.ncbi.nlm.nih.gov/articles/PMC8164808/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0052": {
-  "conceito": "### Legg-Calvé-Perthes: fases (Waldenström)\n| Fase | Achado |\n|---|---|\n| inicial (necrose) | cabeça densa, pequena; fratura subcondral (Salter-Thompson) |\n| ==fragmentação== | epífise fragmentada, colapso |\n| reossificação | osso novo |\n| residual | remodelada |\n\n### Classificações\n| Classificação | Incidência | Fase | Critério |\n|---|---|---|---|\n| ==Herring (pilar lateral)== | ==AP== | ==fragmentação== | altura do pilar lateral: A (100%), B (> 50%), B/C, C (< 50%) |\n| Catterall | AP e perfil | | quanto da epífise acometida (I a IV) + sinais de risco |\n| Salter-Thompson | perfil | inicial | extensão da fratura subcondral |\n| Stulberg | AP e perfil | ==maturidade== | congruência e esfericidade (prognóstico de artrose) |\n\n### Prognóstico\n- Pior: início > 8 anos, Herring C, sinais de cabeça em risco.\n\n### Epidemiologia do Perthes\n| Aspecto | Dado |\n|---|---|\n| sexo | ==masculino== (4 a 5:1) |\n| idade | 4 a 8 anos |\n| lado | ==unilateral== (bilateral 10 a 15%, ==assimétrico no tempo==) |\n| perfil | baixa estatura, idade óssea atrasada, hiperatividade, tabagismo passivo |\n\n- Bilateral simétrico e simultâneo: pensar em ==displasia epifisária múltipla== ou hipotireoidismo.\n\n> **Na prova:** Perthes = ==masculino e unilateral==",
-  "correta": "**Masculino e unilateral.**\n- Meninos de 4 a 8 anos.\n- Bilateral é minoria e em tempos diferentes.",
   "incorretas": {
-   "A": "**Duplamente errada.**\n- Sexo e lado.",
-   "B": "**Sexo errado.**\n- Masculino.",
-   "C": "**Lado errado.**\n- Unilateral."
+   "A": "Erra o sexo e o lado: predomina em meninos e é unilateral.",
+   "B": "O lado está certo, mas a doença predomina no sexo masculino.",
+   "C": "O sexo está certo, mas a forma mais comum é unilateral."
   },
+  "conceito": "A **doença de Legg-Calvé-Perthes** é a necrose da cabeça femoral na criança. A epidemiologia é cobrada com frequência:\n\n**sexo**: **masculino**, cerca de 4 a 5 meninos para cada menina;\n\n**idade**: em geral entre **4 e 8 anos**;\n\n**lado**: **unilateral** na grande maioria; bilateral em cerca de 10 a 15%, e quando bilateral os dois lados aparecem em **tempos diferentes**, em fases diferentes;\n\n**perfil da criança**: baixa estatura, idade óssea atrasada, hiperatividade e exposição ao tabagismo passivo.\n\n**O alerta da bilateralidade**: se os dois quadris estão acometidos **ao mesmo tempo e na mesma fase**, pensar em outra doença, como **displasia epifisária múltipla** ou **hipotireoidismo**, e procurar outras epífises.\n\n**O prognóstico**: pior quando a doença começa depois dos **8 anos**, no pilar lateral **C** de Herring e com sinais de cabeça em risco.\n\n**Na prova**: Perthes é mais comum no sexo **masculino** e **unilateral**.",
+  "correta": "A doença de Perthes predomina em meninos e, na maioria dos casos, acomete um lado só.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Legg-Calve-Perthes Disease. https://posna.org/physician-education/study-guide/legg-calve-perthes-disease"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0053": {
-  "conceito": "### Pseudartrose congênita da tíbia\n- Arqueamento ==anterolateral== da tíbia distal; fratura com pouco trauma e não consolida.\n- ==NF1== em cerca de 50% (e 5 a 10% dos NF1 têm).\n- Também displasia fibrosa, displasia osteofibrosa.\n\n### Boyd\n| Tipo | Achado |\n|---|---|\n| I | pseudartrose ao nascer |\n| II | ampulheta (arqueamento com estreitamento) |\n| III | cisto |\n| IV | esclerose sem estreitamento |\n| V | fíbula displásica |\n| VI | neurofibroma intraósseo |\n\n### Tratamento\n- Antes da fratura: ==órtese protetora== até a maturidade; ==nunca osteotomia corretiva== do arqueamento.\n- Após fratura: ressecção do hamartoma, haste intramedular (Williams), enxerto, fixador (Ilizarov), fíbula vascularizada; BMP; cross-union (Paley).\n\n### Outros arqueamentos\n| Direção | Doença |\n|---|---|\n| posteromedial | benigno, corrige |\n| anteromedial | hemimelia fibular |\n\n### Histologia\n- ==Hamartoma fibroso no periósteo espessado== (tecido fibroso proliferativo) que estrangula o osso.\n- Por isso a ressecção do periósteo doente faz parte do tratamento.\n\n> **Na prova:** pseudartrose congênita da tíbia = alteração no ==periósteo== com ==tecido fibroso==",
-  "correta": "**Periósteo, tecido fibroso.**\n- Periósteo espessado com hamartoma fibroso.\n- Deve ser ressecado na cirurgia.",
   "incorretas": {
-   "A": "**Não é neurofibroma.**\n- Mesmo com NF1, o tecido é fibroso.",
-   "C": "**Local errado.**\n- É periosteal.",
-   "D": "**Duplamente errada.**\n- Local e tecido."
+   "A": "O local está certo, mas mesmo na neurofibromatose o tecido é fibroso, não um neurofibroma.",
+   "C": "O tecido fibroso está certo, mas a alteração está no periósteo, não na medular.",
+   "D": "Erra o local e o tecido: é o periósteo, com tecido fibroso."
   },
+  "conceito": "Na **pseudartrose congênita da tíbia**, o problema começa no **periósteo**. Ele é **espessado** e contém um **tecido fibroso** proliferativo (um hamartoma fibroso) que envolve e **estrangula** o osso, impede a formação de osso novo e não deixa a fratura consolidar.\n\n**Por que isso importa no tratamento**: a cirurgia precisa **ressecar o periósteo doente** e o tecido fibroso ao redor da pseudartrose, além de estabilizar e enxertar. Deixar esse tecido é causa de falha.\n\n**A associação com a neurofibromatose**: cerca de metade dos pacientes tem NF1. Mesmo nesses casos, o tecido encontrado na pseudartrose é **fibroso**, e não um neurofibroma típico (o neurofibroma intraósseo é só um dos tipos raros na classificação de Boyd).\n\n**A doença em resumo**: arqueamento **anterolateral** da tíbia distal, fratura com trauma mínimo, não consolida; antes da fratura, **órtese protetora** e nada de osteotomia corretiva.\n\n**Na prova**: pseudartrose congênita da tíbia = alteração no **periósteo**, com **tecido fibroso**.",
+  "correta": "O periósteo espessado contém um hamartoma de tecido fibroso que estrangula o osso, e por isso precisa ser ressecado.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Congenital Pseudarthrosis of the Tibia. https://posna.org/physician-education/study-guide/congenital-pseudarthrosis-of-the-tibia-%28cpt%29",
    "Pediatric Lower Extremity Disorders – CPT. https://posna.org/blogs/resident-review/december-2017/pediatric-lower-extremity-disorders"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0054": {
-  "conceito": "### Deformidade de Sprengel\n- Falha da descida da escápula; pequena, alta, ==rodada medialmente==.\n- ==Osso omovertebral== (ou banda fibrosa) em cerca de 1/3: liga o ângulo superior à coluna cervical.\n- Associações: Klippel-Feil, escoliose, costelas anômalas, rim.\n\n### Cirurgia\n| Aspecto | Detalhe |\n|---|---|\n| idade | ==após 3 anos== (ideal 3 a 8) |\n| técnicas | Woodward (desinserção medial), Green (desinserção na escápula), Wilkinson-Campbell |\n| ==omovertebral== | ressecção ==extraperiosteal== (subperiosteal regenera a ponte) |\n| risco | lesão do ==plexo braquial== ao descer: osteotomia da clavícula protege |\n\n### Cavendish\n- Graus 1 a 4 conforme a visibilidade da deformidade.\n\n> **Na prova:** omovertebral = ressecção ==extraperiosteal, depois dos 3 anos==.",
-  "correta": "**Extraperiosteal, após os 3 anos.**\n- Periósteo deixado regenera a ponte óssea.\n- Janela cirúrgica entre 3 e 8 anos.",
   "incorretas": {
-   "A": "**Subperiosteal regenera.**\n- Idade certa.",
-   "B": "**Duplamente errada.**\n- Subperiosteal e cedo.",
-   "D": "**Cedo demais.**\n- Técnica certa."
+   "A": "A idade está certa, mas a ressecção subperiosteal deixa periósteo que refaz a ponte óssea.",
+   "B": "Erra a técnica e a idade: a ressecção é extraperiosteal e depois dos 3 anos.",
+   "D": "A técnica está certa, mas antes dos 3 anos é cedo demais para essa cirurgia."
   },
+  "conceito": "Na **deformidade de Sprengel** (escápula alta congênita), a escápula não desce durante a gestação: fica **pequena, alta e rodada**, e limita a abdução do ombro. Em cerca de um terço dos casos existe o **osso omovertebral**, uma ponte de osso, cartilagem ou tecido fibroso que liga o ângulo superior da escápula à coluna cervical e prende a escápula no alto.\n\n**A cirurgia**:\n\n**idade**: depois dos **3 anos**, idealmente entre 3 e 8; antes, a criança é pequena demais e o risco é maior; depois de 8, a escápula desce pouco;\n\n**omovertebral**: deve ser retirado **extraperiostealmente**, isto é, junto com o seu periósteo; se for tirado por dentro do periósteo (subperiosteal), o periósteo que fica **forma osso de novo** e a ponte volta;\n\n**técnicas**: Woodward (solta a origem dos músculos na coluna e reinsere mais abaixo), Green (solta os músculos na própria escápula) e Wilkinson-Campbell;\n\n**risco**: ao descer a escápula, o **plexo braquial** pode ser comprimido entre a clavícula e a 1ª costela; a **osteotomia da clavícula** protege.\n\n**As associações**: Klippel-Feil, escoliose, costelas anômalas e anomalias renais.\n\n**Na prova**: osso omovertebral = ressecção **extraperiosteal**, **depois dos 3 anos**.",
+  "correta": "O omovertebral é retirado junto com o periósteo, para não regenerar, e a cirurgia é feita depois dos 3 anos.",
   "referencias": [
    "Surgical Treatment of Sprengel’s Deformity: systematic review. https://pmc.ncbi.nlm.nih.gov/articles/PMC8700527/",
    "Surgical management of Sprengel deformity. https://upload.orthobullets.com/journalclub/free_pdf/22382290_sprengel.pdf"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0055": {
-  "conceito": "### Ciclo da marcha (100%)\n| Fase | % |\n|---|---|\n| ==apoio== | ==cerca de 60%== |\n| - duplo apoio inicial | 10% |\n| - ==apoio simples== | ==40%== |\n| - duplo apoio final | 10% |\n| ==balanço== | ==cerca de 40%== |\n\n### Subfases (Perry)\n| Apoio | Balanço |\n|---|---|\n| contato inicial | balanço inicial |\n| resposta à carga | balanço médio |\n| apoio médio | balanço terminal |\n| apoio terminal | |\n| pré-balanço | |\n\n### Corrida\n- Sem duplo apoio; surge fase de voo; apoio < 50%.\n\n> **Na prova:** apoio simples = ==40%== do ciclo.",
-  "correta": "**40% e 60%.**\n- Balanço 40%, apoio 60%.\n- Apoio simples 40%, duplo apoio 20%.",
   "incorretas": {
-   "A": "**Muito desproporcional.**\n- Não corresponde.",
-   "B": "**Desproporcional.**\n- Apoio é 60.",
-   "D": "**Invertida.**\n- Balanço é o menor."
+   "A": "70% de balanço e 30% de apoio está muito longe da proporção real.",
+   "B": "Os valores não correspondem: o balanço é cerca de 40% e o apoio, cerca de 60%.",
+   "D": "Os valores estão invertidos: o balanço é a fase menor."
   },
+  "conceito": "O **ciclo da marcha** vai de um contato do pé no chão até o próximo contato do **mesmo pé**. Ele se divide em:\n\n**apoio**: o pé está no chão; cerca de **60%** do ciclo;\n\n**balanço**: o pé está no ar; cerca de **40%** do ciclo.\n\n**Dentro do apoio**: há dois períodos de **duplo apoio** (os dois pés no chão), de cerca de **10%** cada, no começo e no fim, e o **apoio simples** no meio, de cerca de **40%**, que coincide com o balanço do outro lado.\n\n**As subfases de Perry**: no apoio, contato inicial, resposta à carga, apoio médio, apoio terminal e pré-balanço; no balanço, inicial, médio e terminal.\n\n**Quando a velocidade aumenta**: o duplo apoio encurta; na **corrida**, ele desaparece, surge uma fase de voo e o apoio cai para menos de 50%.\n\n**Na prova**: balanço e apoio ocupam **40% e 60%** do ciclo.",
+  "correta": "Na marcha normal, o balanço ocupa cerca de 40% do ciclo e o apoio, cerca de 60%.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Gait. https://posna.org/physician-education/study-guide/gait"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0056": {
-  "conceito": "### Apofisites do joelho\n| Doença | Local | Idade | Perfil |\n|---|---|---|---|\n| ==Sinding-Larsen-Johansson== | ==polo inferior da patela== | ==10 a 14 anos== | ==meninos== ativos (saltos) |\n| Osgood-Schlatter | tuberosidade anterior da tíbia | 10 a 15 anos | meninos esportistas; bilateral em 25% |\n| joelho do saltador (adulto) | tendão patelar proximal | adulto | tendinopatia |\n\n### Sinding-Larsen-Johansson\n- Tração do tendão patelar sobre o polo inferior imaturo: fragmentação, calcificação.\n- Autolimitada: repouso relativo, gelo, alongamento do quadríceps.\n- Diferencial: fratura-avulsão em manga (sleeve fracture) da patela, que é aguda e cirúrgica.\n\n> **Na prova:** Sinding-Larsen-Johansson = ==meninos de 10 a 14 anos==.",
-  "correta": "**Meninos de 10 a 14 anos.**\n- Apofisite do polo inferior da patela.\n- Esportes com salto; autolimitada.",
   "incorretas": {
-   "A": "**Sexo e idade errados.**\n- Meninos maiores.",
-   "B": "**Idade errada.**\n- Mais velhos.",
-   "C": "**Sexo errado.**\n- Meninos."
+   "A": "Erra o sexo e a idade: predomina em meninos e um pouco mais velhos.",
+   "B": "O sexo está certo, mas a idade típica é de 10 a 14 anos.",
+   "C": "A idade está certa, mas predomina no sexo masculino."
   },
+  "conceito": "No joelho do adolescente, o tendão patelar puxa dois pontos de cartilagem de crescimento, e cada um tem a sua **apofisite de tração**:\n\n**Sinding-Larsen-Johansson**: no **polo inferior da patela**; **meninos de 10 a 14 anos**, ativos, sobretudo em esportes com **saltos**;\n\n**Osgood-Schlatter**: na **tuberosidade anterior da tíbia**; meninos esportistas entre 10 e 15 anos; bilateral em cerca de 25%;\n\n**joelho do saltador**: no adulto, é tendinopatia do tendão patelar proximal, já sem cartilagem de crescimento.\n\n**O que acontece na Sinding-Larsen-Johansson**: a tração repetida no polo inferior imaturo causa **fragmentação** e **calcificação** visíveis na radiografia, com dor localizada.\n\n**O tratamento**: é **autolimitada**: repouso relativo dos saltos, gelo e alongamento do quadríceps até o fim do crescimento.\n\n**O diferencial importante**: a **fratura-avulsão em manga** (sleeve fracture) do polo inferior da patela, que é **aguda**, depois de um salto, com incapacidade de estender o joelho, e é **cirúrgica**.\n\n**Na prova**: Sinding-Larsen-Johansson = **meninos de 10 a 14 anos**.",
+  "correta": "A Sinding-Larsen-Johansson acomete sobretudo meninos ativos entre 10 e 14 anos.",
   "referencias": [
    "Evaluation and management of knee pain in young athletes. https://pmc.ncbi.nlm.nih.gov/articles/PMC5532199/",
    "Narrative review: knee pain in the pediatric athlete. https://pmc.ncbi.nlm.nih.gov/articles/PMC8137791/",
    "Incidence and risk factors for lower extremity apophysitis. https://pmc.ncbi.nlm.nih.gov/articles/PMC13018006/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0057": {
-  "conceito": "### Cronologia embrionária do membro\n| Semana | Evento |\n|---|---|\n| 4ª | broto do membro superior (inferior poucos dias depois) |\n| 5ª a 6ª | condensação mesenquimal, molde cartilaginoso |\n| ==7ª a 8ª== | ==centros de ossificação primários== dos ossos longos (clavícula primeiro, ~5ª a 6ª; ==fêmur e tíbia na 7ª a 8ª==) |\n| 7ª | rotação dos membros |\n| 8ª | fim da organogênese |\n| 12ª em diante | ossificação progride nos ossos curtos |\n\n### Particularidades\n- ==Clavícula==: primeiro osso a ossificar (membranosa, 5ª semana), último a fechar a fise medial (cerca de 25 anos).\n- Ossificação endocondral: centro primário na diáfise; secundários (epífises) em geral após o nascimento, exceto fêmur distal (36ª semana, sinal de maturidade fetal).\n\n> **Na prova:** ossificação de fêmur e tíbia = ==7ª e 8ª semanas==.",
-  "correta": "**7ª e 8ª semanas.**\n- Centros primários diafisários.\n- Final do período embrionário.",
   "incorretas": {
-   "A": "**Cedo demais.**\n- Ainda mesênquima/cartilagem.",
-   "C": "**Tarde.**\n- Já ossificando antes.",
-   "D": "**Tarde.**\n- Idem."
+   "A": "Na 5ª e 6ª semanas os ossos longos ainda são moldes de cartilagem; só a clavícula começa a ossificar.",
+   "C": "Na 9ª e 10ª semanas o fêmur e a tíbia já estão ossificando.",
+   "D": "Na 10ª e 11ª semanas a ossificação desses ossos já começou há algum tempo."
   },
+  "conceito": "Os **ossos longos** começam como **moldes de cartilagem** no embrião e depois ossificam de dentro para fora (**ossificação endocondral**). O primeiro osso que aparece é o **centro primário de ossificação**, no meio da diáfise.\n\n**A cronologia**:\n\n**4ª semana**: surgem os brotos dos membros;\n\n**5ª e 6ª semanas**: o mesênquima se condensa e forma os moldes de cartilagem; a **clavícula**, de ossificação membranosa, começa a ossificar nesse período (é o **primeiro osso** a ossificar);\n\n**7ª e 8ª semanas**: aparecem os **centros primários** dos ossos longos, entre eles o **fêmur** e a **tíbia**;\n\n**8ª semana**: termina a organogênese.\n\n**Os centros secundários** (as epífises), em geral, aparecem depois do nascimento. A exceção é o **fêmur distal**, por volta da 36ª semana, usado como sinal de maturidade fetal.\n\n**Curiosidade da clavícula**: é o primeiro osso a ossificar e o último a fechar a fise (a medial, por volta dos 25 anos).\n\n**Na prova**: ossificação do fêmur e da tíbia = **7ª e 8ª semanas**.",
+  "correta": "Os centros primários de ossificação do fêmur e da tíbia aparecem na 7ª e na 8ª semanas de gestação.",
   "referencias": [
    "The Developing Human: Clinically Oriented Embryology, skeletal system. https://www.ncbi.nlm.nih.gov/books/NBK548949/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0058": {
-  "conceito": "### GMFCS (6 a 12 anos)\n| Nível | Mobilidade |\n|---|---|\n| I | anda sem restrições; corre e salta com limitação |\n| II | anda na maioria dos ambientes; limitação em distâncias, terreno irregular |\n| III | anda com ==dispositivo manual== (andador, muletas); cadeira para distâncias |\n| ==IV== | ==controle de cabeça e tronco==; anda pouco (casa, com ajuda); ==cadeira de rodas na comunidade== (pode ser motorizada) |\n| V | sem controle de cabeça e tronco; transportado |\n\n### Uso ortopédico\n| Nível | Preocupação |\n|---|---|\n| I-III | marcha: análise, cirurgia multinível |\n| ==IV-V== | ==luxação do quadril== (vigilância radiográfica), escoliose |\n\n- Índice de migração de Reimers > 30 a 40%: cirurgia de partes moles ou osteotomias.\n\n### Distribuição\n- ==Nível I== é o mais frequente nos registros populacionais (cerca de 1/3 a 40%).\n- Espásticos unilaterais (hemiplegia) concentram-se em I e II.\n\n> **Na prova:** GMFCS mais frequente = ==nível I== (veja o alerta).",
-  "correta": "**Nível I.**\n- Mais frequente nos registros.\n- Hemiplégicos predominam nos níveis leves.",
   "incorretas": {
-   "B": "**Frequente, não o maior.**\n- Nível II.",
-   "C": "**Menos frequente.**\n- Dispositivo manual.",
-   "D": "**Menos frequente.**\n- Cadeira na comunidade."
+   "B": "O nível II é frequente, mas fica atrás do nível I.",
+   "C": "O nível III, com dispositivo manual para andar, é menos frequente.",
+   "D": "O nível IV, com cadeira de rodas na comunidade, é menos frequente."
   },
+  "conceito": "O **GMFCS** classifica a função motora grossa na paralisia cerebral em cinco níveis, do I (anda sem restrições) ao V (não controla cabeça e tronco e é transportado).\n\n**A distribuição nos registros populacionais**: o **nível I** é o **mais frequente**, com cerca de um terço a 40% das crianças. Isso acontece porque a forma mais comum de paralisia cerebral é a **espástica**, e entre elas as **unilaterais** (hemiplegia) costumam estar nos níveis **I e II**. Os níveis mais graves são menos numerosos, mas concentram os problemas de quadril e coluna.\n\n**Para que o nível serve no dia a dia**:\n\n**I a III**: o foco é a **marcha** (análise de marcha e cirurgia em vários níveis num só tempo);\n\n**IV e V**: o foco é a vigilância do **quadril**, com radiografias periódicas e o índice de migração de Reimers, e a **escoliose**.\n\nA proporção exata de cada nível varia entre registros e serviços.\n\n**Na prova**: nível GMFCS mais frequente = **nível I**.",
+  "correta": "Nos registros populacionais, o nível I é o mais frequente, muito por conta das formas espásticas unilaterais.",
   "alerta": "A prevalência de cada nível GMFCS varia entre registros e serviços. A alternativa reproduz a distribuição epidemiológica esperada pela fonte da prova.",
   "referencias": [
    "GMFCS Expanded and Revised. CanChild. https://mld.foundation/wp-content/uploads/2020/04/GMFCS-ER_2007.pdf"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0059": {
-  "conceito": "### Osteogênese imperfeita (Sillence modificada)\n| Tipo | Gravidade | Detalhe |\n|---|---|---|\n| I | leve | ==escleras azuis==, surdez, colágeno em quantidade reduzida |\n| II | letal perinatal | fraturas múltiplas intrauterinas |\n| III | grave progressiva | deformidade, baixa estatura, dentinogênese |\n| IV | moderada | escleras normais |\n| ==V== | moderada | ==calo hiperplásico== (simula ==osteossarcoma==), ==calcificação da membrana interóssea== do antebraço, luxação da cabeça do rádio; IFITM5 |\n| VI em diante | variadas | genes não colágenos |\n\n### Tratamento\n- ==Bisfosfonato== (pamidronato, zoledronato).\n- Hastes telescópicas (Fassier-Duval, Sheffield) nas deformidades e fraturas repetidas.\n\n### Base molecular\n- Colágeno tipo I: tripla hélice com repetição ==Gly-X-Y== (glicina a cada terceiro aminoácido).\n- ==Substituição da glicina== (mutação de sentido trocado em COL1A1/COL1A2) impede o enrolamento: formas graves (II, III, IV).\n- Mutação que reduz a quantidade (haploinsuficiência): forma leve (I).\n\n> **Na prova:** aminoácido do defeito do colágeno na OI = ==glicina==",
-  "correta": "**Glicina.**\n- Presente a cada três posições da hélice.\n- Sua substituição desestrutura a tripla hélice.",
   "incorretas": {
-   "A": "**Não é o defeito clássico.**\n- Lisina é hidroxilada, mas não é o alvo.",
-   "C": "**Não é o defeito.**\n- Cisteína.",
-   "D": "**Não é o defeito.**\n- Arginina."
+   "A": "A lisina é hidroxilada para estabilizar o colágeno, mas não é o aminoácido do defeito clássico.",
+   "C": "A cisteína não é o aminoácido envolvido no defeito clássico.",
+   "D": "A arginina não é o aminoácido envolvido no defeito clássico."
   },
+  "conceito": "O **colágeno tipo I** é formado por três cadeias enroladas em **tripla hélice** (duas α1, do gene COL1A1, e uma α2, do COL1A2). Para a hélice se enrolar bem, cada cadeia repete a sequência **Gly-X-Y**: a **glicina** aparece a cada terceiro aminoácido. Ela é o menor aminoácido, o único que cabe no centro apertado da hélice.\n\n**O defeito na osteogênese imperfeita**:\n\n**substituição da glicina** por outro aminoácido maior (mutação de sentido trocado): a hélice não enrola direito, e o colágeno sai **defeituoso**; são as formas **graves** (tipos II, III e IV);\n\n**mutação que reduz a quantidade** de colágeno (haploinsuficiência, sem defeito na estrutura): é a forma **leve** (tipo I), com escleras azuis.\n\nOs tipos mais recentes (V em diante) vêm de genes que não codificam o colágeno.\n\n**Os outros aminoácidos**: a **lisina** e a **prolina** são hidroxiladas para estabilizar o colágeno (o que depende da vitamina C), mas não são o defeito clássico da osteogênese imperfeita.\n\n**Na prova**: aminoácido envolvido no defeito do colágeno na osteogênese imperfeita = **glicina**.",
+  "correta": "A glicina aparece a cada três posições da tripla hélice, e a troca dela por outro aminoácido desestrutura o colágeno.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Osteogenesis Imperfecta. https://posna.org/physician-education/study-guide/osteogenesis-imperfecta",
    "GeneReviews. COL1A1- and COL1A2-Related Osteogenesis Imperfecta. https://www.ncbi.nlm.nih.gov/books/NBK1295/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0060": {
-  "conceito": "### Sinostose radioulnar congênita\n- Falha de segmentação entre rádio e ulna proximais (7ª semana).\n- ==Bilateral em cerca de 60%==, geralmente ==isolada==.\n- Pode associar-se a síndromes (Apert, Klinefelter e aneuploidias do X, artrogripose).\n- Antebraço fixo, em geral ==pronado==; compensação pelo ombro e punho.\n- Diagnóstico tardio (compensação eficiente).\n\n### Classificação (Tachdjian / Cleary-Omer)\n- Fibrosa × óssea; cabeça do rádio normal, ausente ou luxada.\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| neutro ou leve pronação | ==observação== |\n| pronação > 60° com limitação | osteotomia derrotativa (neutro a 10-20° de pronação) |\n| risco | ==síndrome compartimental== nas grandes correções |\n\n> **Na prova:** sinostose radioulnar = ==isolada e bilateral==.",
-  "correta": "**Isolada e bilateral.**\n- Bilateral em cerca de 60%.\n- Na maioria, sem outras malformações.",
   "incorretas": {
-   "B": "**Lado errado.**\n- Predomina bilateral.",
-   "C": "**Associações são exceção.**\n- Geralmente isolada.",
-   "D": "**Duplamente errada.**\n- Associada e unilateral."
+   "B": "Ela é isolada, mas é mais comum bilateral.",
+   "C": "Ela é bilateral, mas as associações a malformações são a exceção.",
+   "D": "Erra os dois: geralmente é isolada e bilateral."
   },
+  "conceito": "A **sinostose radioulnar congênita** é a união entre o rádio e a ulna na parte **proximal** do antebraço, por falha de separação dos dois ossos por volta da 7ª semana de gestação. O antebraço fica **fixo**, em geral em **pronação**, sem pronossupinação.\n\n**As características**:\n\n**bilateral** em cerca de 60%;\n\n**isolada** na maioria das vezes; às vezes associada a síndromes (Apert, aneuploidias do cromossomo X como Klinefelter, artrogripose);\n\no diagnóstico costuma ser **tardio**, porque o ombro e o punho compensam bem a falta de rotação.\n\n**O tratamento**:\n\n**antebraço em neutro ou pouca pronação**: **observar**; a função costuma ser boa;\n\n**pronação acentuada** (acima de cerca de 60°) com limitação: **osteotomia derrotativa** para deixar o antebraço perto do neutro (ou 10 a 20° de pronação);\n\n**risco**: grandes correções podem causar **síndrome compartimental** ou lesão vascular, por isso a rotação é feita com cautela.\n\n**Na prova**: sinostose radioulnar congênita = **isolada e bilateral**.",
+  "correta": "A sinostose radioulnar congênita costuma ser bilateral e, na maioria das vezes, sem outras malformações.",
   "referencias": [
    "Congenital Radioulnar Synostosis Review. https://pmc.ncbi.nlm.nih.gov/articles/PMC11593211/",
    "Functional outcomes in congenital radioulnar synostosis. https://pmc.ncbi.nlm.nih.gov/articles/PMC13081135/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0061": {
-  "conceito": "### Luxação congênita da cabeça do rádio\n- Anomalia congênita mais comum do cotovelo.\n- ==Bilateral== na maioria e ==associada== a outras manifestações (sinostose, síndromes como nail-patella, Ehlers-Danlos, Larsen).\n- Direção mais comum: ==posterior==.\n\n### Congênita × Monteggia crônico\n| Achado | Congênita | Traumática |\n|---|---|---|\n| lado | bilateral | unilateral |\n| cabeça | ==convexa (cúpula)==, pequena | côncava, normal |\n| capítulo | hipoplásico | normal |\n| ulna | reta | deformidade plástica |\n| direção | posterior | anterior |\n\n### Tratamento\n- Observação; ressecção da cabeça após a maturidade se dor.\n\n### Limitação de movimento\n| Direção | Bloqueio |\n|---|---|\n| ==posterior== | ==extensão== (cabeça bate atrás do capítulo) |\n| anterior | flexão |\n\n- Pronossupinação costuma ser pouco limitada; dor e estalido na adolescência.\n\n> **Na prova:** luxação congênita = ==posterior com limitação da extensão==",
-  "correta": "**Posterior, limitação da extensão.**\n- A cabeça posterior bloqueia a extensão.\n- Anterior limitaria a flexão.",
   "incorretas": {
-   "A": "**Direção errada.**\n- Anterior é Monteggia.",
-   "B": "**Bloqueio errado.**\n- Posterior limita a extensão.",
-   "C": "**Duplamente errada.**\n- Direção e bloqueio."
+   "A": "A luxação congênita é posterior, e a anterior limitaria a flexão.",
+   "B": "A direção está certa, mas a luxação posterior limita a extensão, não a flexão.",
+   "C": "Erra os dois: a luxação é posterior e limita a extensão."
   },
+  "conceito": "Na **luxação congênita da cabeça do rádio**, a cabeça está quase sempre **posterior** (ou posterolateral), em geral dos dois lados e com outras anomalias. A cabeça é pequena e convexa, e o capítulo é hipoplásico.\n\n**Que movimento fica limitado**: o bloqueio depende de onde a cabeça está:\n\n**luxação posterior**: no fim da **extensão**, a cabeça bate atrás do úmero e **limita a extensão**;\n\n**luxação anterior**: no fim da **flexão**, a cabeça bate na frente e limita a flexão.\n\nA pronossupinação costuma ser pouco limitada. Na adolescência podem surgir dor e estalido.\n\n**O diferencial**: uma cabeça do rádio luxada para **anterior**, unilateral, sugere **Monteggia** antigo não diagnosticado, que tem tratamento cirúrgico.\n\n**O tratamento da forma congênita**: observar; se houver dor depois da maturidade, ressecar a cabeça do rádio.\n\n**Na prova**: luxação congênita da cabeça do rádio = **posterior**, com **limitação da extensão**.",
+  "correta": "A cabeça luxada para posterior bate atrás do úmero no fim da extensão, limitando esse movimento.",
   "referencias": [
    "Congenital deformities of the upper limbs: Part II. https://pmc.ncbi.nlm.nih.gov/articles/PMC6565893/",
    "Congenital radial head dislocation: narrative review. https://pubmed.ncbi.nlm.nih.gov/42611687/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0062": {
-  "conceito": "### Neurofibromatoses\n| Tipo | Nome | Gene | Achados | Ortopedia |\n|---|---|---|---|---|\n| ==NF1== | ==periférica== (von Recklinghausen) | neurofibromina (17q) | café-com-leite, neurofibromas, Lisch, Crowe | ==frequente== |\n| NF2 | central | merlina (22q) | ==schwannoma vestibular bilateral==, meningiomas | rara |\n| schwannomatose | | SMARCB1, LZTR1 | schwannomas múltiplos dolorosos | |\n\n### NF1 na ortopedia\n| Manifestação | Detalhe |\n|---|---|\n| escoliose | a mais comum; distrófica (raio curto) |\n| pseudartrose congênita da tíbia | anterolateral |\n| hipertrofia de membro | elefantíase |\n| TMBNP | transformação do plexiforme |\n| deficiência de vitamina D, osteoporose | |\n\n- Herança dominante; metade mutação nova.\n\n> **Na prova:** NF1 = ==periférica, manifestações ortopédicas frequentes==.",
-  "correta": "**Periférica, ortopedia frequente.**\n- Escoliose, pseudartrose da tíbia, hipertrofia.\n- A NF2 é central e pouco ortopédica.",
   "incorretas": {
-   "A": "**Central é NF2.**\n- Manifestações certas.",
-   "B": "**NF2.**\n- Central e pouco ortopédica.",
-   "D": "**Frequentes.**\n- Periférica certa."
+   "A": "As manifestações ortopédicas frequentes estão certas, mas a NF1 é periférica; a central é a NF2.",
+   "B": "Central e com poucas manifestações ortopédicas descreve a NF2.",
+   "D": "A NF1 é periférica, mas as manifestações ortopédicas são frequentes, não raras."
   },
+  "conceito": "Existem duas neurofibromatoses principais, e elas são doenças bem diferentes:\n\n**NF1 (periférica, de von Recklinghausen)**: gene da **neurofibromina**, no cromossomo 17; manchas **café com leite**, **neurofibromas** cutâneos e plexiformes, nódulos de Lisch na íris e efélides axilares (sinal de Crowe); **manifestações ortopédicas frequentes**;\n\n**NF2 (central)**: gene da **merlina**, no cromossomo 22; **schwannomas vestibulares bilaterais** e meningiomas; manifestações ortopédicas **raras**.\n\n**A NF1 na ortopedia**:\n\n**escoliose**: a manifestação mais comum; a forma **distrófica** (curva curta e angulada, com vértebras deformadas) progride muito e pede cirurgia precoce;\n\n**pseudartrose congênita da tíbia**: arqueamento anterolateral;\n\n**hipertrofia de um membro** (gigantismo localizado);\n\n**tumor maligno da bainha do nervo periférico**: transformação de um neurofibroma plexiforme; suspeitar quando a massa cresce rápido ou passa a doer;\n\n**osteopenia** e deficiência de vitamina D.\n\n**A herança** é autossômica dominante, mas cerca de metade dos casos vem de mutação nova.\n\n**Na prova**: NF1 = **periférica**, com manifestações ortopédicas **frequentes**.",
+  "correta": "A NF1 é a forma periférica e tem manifestações ortopédicas frequentes, como escoliose e pseudartrose congênita da tíbia.",
   "referencias": [
    "Feldman DS, Jordan C, Fonseca L. Orthopaedic manifestations of neurofibromatosis type 1. J Am Acad Orthop Surg. 2010. https://pubmed.ncbi.nlm.nih.gov/20511440/",
    "Orthopaedic manifestations of neurofibromatosis in children: an update. https://pubmed.ncbi.nlm.nih.gov/12151887/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0063": {
-  "conceito": "### Paralisia cerebral: tipo × sistema\n| Tipo | Sistema | Clínica |\n|---|---|---|\n| espástico | ==piramidal== (córtex motor, trato corticoespinal) | hipertonia velocidade-dependente, hiperreflexia |\n| ==discinético (atetoide, distônico)== | ==extrapiramidal== (núcleos da base) | movimentos involuntários lentos, contorcidos, tônus flutuante |\n| atáxico | cerebelar | dismetria, tremor de intenção, equilíbrio |\n| misto | vários | |\n\n### Associações\n- Atetoide: ==kernicterus== (hiperbilirrubinemia), asfixia a termo.\n- Diplegia espástica: prematuridade, leucomalácia periventricular.\n\n### Cirurgia ortopédica\n- Resultados mais previsíveis no ==espástico==; cautela nos discinéticos.\n\n### Topografia × lesão\n| Topografia | Lesão típica |\n|---|---|\n| ==diplegia== (MMII > MMSS) | ==leucomalácia periventricular== (prematuro); fibras dos MMII passam mais perto dos ventrículos |\n| hemiplegia | infarto (artéria cerebral média), malformação |\n| tetraplegia | lesão difusa, hipóxia grave |\n\n> **Na prova:** leucomalácia periventricular = ==diplegia==",
-  "correta": "**Diplegia.**\n- Prematuro com lesão periventricular.\n- Fibras dos membros inferiores passam junto aos ventrículos.",
   "incorretas": {
-   "B": "**Infarto focal.**\n- Artéria cerebral média.",
-   "C": "**Lesão difusa.**\n- Hipóxia grave.",
-   "D": "**Rara.**\n- Não é a associação."
+   "B": "A hemiplegia costuma vir de um infarto focal, como o da artéria cerebral média.",
+   "C": "A tetraplegia vem de lesão difusa, por hipóxia grave.",
+   "D": "A monoplegia é rara e não é a forma associada à leucomalácia periventricular."
   },
+  "conceito": "Na **paralisia cerebral espástica**, a **distribuição** do comprometimento no corpo acompanha o tipo e o lugar da lesão no cérebro:\n\n**diplegia**: as **pernas** muito mais afetadas que os braços; a lesão típica é a **leucomalácia periventricular**, do **prematuro**: a substância branca em volta dos ventrículos é a mais frágil nessa idade, e as fibras que vão para os **membros inferiores** passam justamente mais perto dos ventrículos;\n\n**hemiplegia**: um lado do corpo; em geral um **infarto** (território da artéria cerebral média) ou uma malformação;\n\n**tetraplegia**: os quatro membros; lesão **difusa**, por hipóxia grave;\n\n**monoplegia**: rara.\n\n**Por que isso importa**: a diplegia é a forma típica do prematuro e a que mais chega ao ortopedista por problemas de marcha (agachamento, rotação interna, equino), tratados muitas vezes com cirurgia em vários níveis num só tempo.\n\n**Na prova**: leucomalácia periventricular = **diplegia**.",
+  "correta": "A leucomalácia periventricular do prematuro atinge as fibras que vão para os membros inferiores, que passam junto aos ventrículos, causando diplegia.",
   "referencias": [
    "Progress in Periventricular Leukomalacia. https://pmc.ncbi.nlm.nih.gov/articles/PMC2898886/",
    "Cerebral palsy in children: A clinical practice review. https://pubmed.ncbi.nlm.nih.gov/39168782/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0064": {
-  "conceito": "### Crescimento: tronco × membros\n| Fase | Predomínio |\n|---|---|\n| até a puberdade | ==membros inferiores== crescem mais |\n| ==puberdade== | ==tronco== cresce mais (estirão vertebral) |\n\n### Números úteis (Dimeglio)\n- Estatura sentada: reflete o tronco.\n- No estirão, o tronco responde por cerca de 2/3 do ganho de altura.\n- Pico de velocidade: meninas ~12 anos (antes da menarca), meninos ~14 anos.\n\n### Aplicações\n| Situação | Relevância |\n|---|---|\n| escoliose | risco de progressão máximo no ==pico de crescimento== (Risser 0, cartilagem trirradiada aberta) |\n| discrepância de MMII | membros terminam de crescer antes do tronco |\n| artrodese precoce | tronco curto, restrição torácica |\n\n> **Na prova:** na puberdade o tronco cresce ==mais== que os membros inferiores.",
-  "correta": "**Tronco cresce mais.**\n- Estirão predominantemente vertebral.\n- Antes disso, os membros inferiores lideram.",
   "incorretas": {
-   "A": "**Não é proporcional.**\n- O tronco predomina.",
-   "B": "**Há relação.**\n- Ambos crescem.",
-   "D": "**Invertida.**\n- Menos acentuado antes da puberdade."
+   "A": "O crescimento não é proporcional: na puberdade o tronco predomina.",
+   "B": "O crescimento do tronco e dos membros está relacionado; os dois acontecem, em proporções diferentes.",
+   "D": "É o contrário: menos acentuado que os membros é o crescimento do tronco antes da puberdade."
   },
+  "conceito": "O corpo não cresce por igual ao longo da infância:\n\n**antes da puberdade**: crescem mais os **membros inferiores**; a criança vai ficando com pernas proporcionalmente mais compridas;\n\n**na puberdade**: o **tronco** passa a crescer mais (o estirão é principalmente da **coluna**), e responde por cerca de dois terços do ganho de altura nessa fase.\n\n**O pico de velocidade de crescimento**: nas meninas, por volta dos 12 anos, antes da menarca; nos meninos, por volta dos 14 anos.\n\n**Por que isso importa na ortopedia**:\n\n**escoliose**: o risco de progressão é **máximo no pico de crescimento** (Risser 0, cartilagem trirradiada aberta); é quando o colete faz mais diferença e quando a curva mais piora;\n\n**discrepância dos membros inferiores**: as pernas terminam de crescer **antes** do tronco, o que entra no cálculo do momento da epifisiodese;\n\n**artrodese precoce da coluna**: tronco curto e restrição do tórax.\n\n**A estatura sentada** é a forma prática de acompanhar o crescimento do tronco.\n\n**Na prova**: na puberdade, o tronco cresce **mais** que os membros inferiores.",
+  "correta": "No estirão da puberdade, o crescimento é sobretudo da coluna, e o tronco cresce mais que os membros inferiores.",
   "referencias": [
    "Growth and pubertal development in children. https://www.ncbi.nlm.nih.gov/books/NBK534874/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0065": {
-  "conceito": "### Mielomeningocele: nível × deformidade\n| Nível | Músculos preservados | Deformidade típica | Marcha |\n|---|---|---|---|\n| ==torácico== | nenhum nos MMII | ==flexão e abdução dos quadris (rã), flexão dos joelhos==, equino | cadeira; órtese recíproca |\n| L1-L2 | flexores e adutores do quadril | flexão e adução: ==luxação== | domiciliar |\n| L3-L4 | + quadríceps (L4 tibial anterior) | pé calcâneo-varo | comunitária com órteses |\n| L5 | + isquiotibiais mediais, glúteo médio parcial | pé calcâneo | comunitária |\n| S1 | + gastrocnêmio parcial | cavo | próximo do normal |\n\n### Pontos\n- Nível mais importante para marcha: ==quadríceps (L3-L4)==.\n- Luxação do quadril mais comum em L3-L4.\n\n### Fraturas na mielomeningocele\n- Osteopenia por desuso + membro insensível.\n- Local mais comum: ==metáfise distal do fêmur== (supracondiliana), depois tíbia proximal.\n- Frequentemente após ==imobilização gessada== (pós-operatório) ou manipulação.\n- Quadro engana: membro ==quente, vermelho, edemaciado, febre==, sem dor: simula ==osteomielite==.\n- Consolida rápido com calo exuberante; tratar com imobilização curta e acolchoada.\n\n> **Na prova:** fratura mais comum na MMC = ==fêmur distal==",
-  "correta": "**Fêmur distal.**\n- Osteopenia e membro insensível.\n- Simula infecção: quente, vermelho, sem dor.",
   "incorretas": {
-   "B": "**Menos frequente.**\n- Tíbia distal.",
-   "C": "**Menos frequente.**\n- Fêmur proximal.",
-   "D": "**Segundo lugar.**\n- Tíbia proximal."
+   "B": "A tíbia distal é sede menos frequente de fratura nesses pacientes.",
+   "C": "O fêmur proximal é sede menos frequente de fratura nesses pacientes.",
+   "D": "A tíbia proximal vem em segundo lugar, atrás do fêmur distal."
   },
+  "conceito": "Na **mielomeningocele**, os ossos das pernas são **osteopênicos** por falta de carga e de contração muscular, e o membro é **insensível**. Por isso, **fraturas** acontecem com traumas mínimos, como numa fisioterapia, na troca de fralda ou depois de tirar um gesso.\n\n**O local mais comum**: a **metáfise distal do fêmur** (região supracondiliana); depois, a tíbia proximal.\n\n**Quando acontecem**: com frequência logo depois de uma **imobilização gessada** (por exemplo, no pós-operatório do quadril ou do pé), quando o osso está ainda mais fraco.\n\n**A armadilha**: como o membro não dói, a fratura aparece como um membro **quente, vermelho e inchado**, às vezes com **febre**, e é confundida com **osteomielite** ou celulite. Radiografar sempre.\n\n**O tratamento**: imobilização **curta** e bem acolchoada (para não fazer escaras e não piorar a osteopenia); essas fraturas consolidam **rápido**, com calo exuberante.\n\n**Na prova**: fratura mais comum na mielomeningocele = **fêmur distal**.",
+  "correta": "A metáfise distal do fêmur, osteopênica e sem sensibilidade, é o local mais comum de fratura na mielomeningocele.",
   "referencias": [
    "Osteoporosis in paediatric patients with spina bifida. https://pmc.ncbi.nlm.nih.gov/articles/PMC3240921/",
    "Fractures in myelomeningocele. https://pmc.ncbi.nlm.nih.gov/articles/PMC2948122/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0066": {
-  "conceito": "### Tipos de maus-tratos\n| Tipo | Frequência |\n|---|---|\n| ==negligência== | ==a mais comum== |\n| abuso físico | o mais visto pelo ortopedista |\n| emocional | frequente, coexistente |\n| sexual | subnotificado |\n\n### Fraturas suspeitas de abuso físico\n| Alta especificidade | Moderada |\n|---|---|\n| ==lesão metafisária clássica== (canto, alça de balde) | fraturas múltiplas em estágios diferentes |\n| ==costelas posteriores== | fratura de crânio complexa |\n| escápula, processos espinhosos, esterno | vértebras, dedos em não deambulante |\n\n### Alertas\n- Fratura de fêmur em criança que não anda.\n- História incompatível, atraso na busca de atendimento.\n- Conduta: ==inventário esquelético== (< 2 anos), fundo de olho, notificação obrigatória.\n\n### Lesão metafisária clássica (fratura do canto)\n- Fratura ==planar na zona de ossificação provisória==, por forças de tração e torção (sacudir o bebê).\n- Aspecto de ==canto== ou ==alça de balde== conforme a incidência.\n- Fêmur distal, tíbia proximal e distal, úmero proximal.\n- Em lactentes, ==altamente específica== de abuso.\n\n### Menos específicas\n- Diafisárias (espiral ou transversa) são comuns e só sugerem abuso pelo contexto (criança que não anda).\n\n> **Na prova:** fratura de extremidade mais sugestiva de abuso = ==fratura do canto (metafisária clássica)==",
-  "correta": "**Fratura do canto.**\n- Lesão metafisária clássica por tração e torção.\n- Altamente específica em lactentes.",
   "incorretas": {
-   "B": "**Pouco específica.**\n- Sugere pelo contexto.",
-   "C": "**Pouco específica.**\n- Comum em quedas.",
-   "D": "**Pouco específica.**\n- Trauma acidental."
+   "B": "A fratura em espiral do fêmur é pouco específica e só sugere abuso pelo contexto, como em criança que não anda.",
+   "C": "A fratura transversa do úmero é comum em quedas e pouco específica.",
+   "D": "A fratura cominuta do antebraço é pouco específica e costuma ser acidental."
   },
+  "conceito": "No lactente, algumas fraturas têm **alta especificidade** para **abuso físico**, porque o mecanismo que as produz quase nunca acontece por acidente.\n\n**A lesão metafisária clássica (fratura do canto)**: é uma fratura **planar** que atravessa a metáfise junto à fise, na zona de ossificação provisória. Vem de forças de **tração e torção**, como quando o bebê é **sacudido** segurado pelos membros. Na radiografia aparece como um **canto** ósseo ou como uma **alça de balde**, dependendo da incidência. Locais típicos: fêmur distal, tíbia proximal e distal, úmero proximal.\n\n**Outras de alta especificidade**: **costelas posteriores** (o bebê apertado pelo tórax), escápula, processos espinhosos e esterno.\n\n**As menos específicas**: fraturas **diafisárias**, em espiral ou transversas, são comuns em acidentes; só sugerem abuso pelo **contexto**, por exemplo em criança que ainda não anda ou com história que não explica a lesão.\n\n**A conduta na suspeita**: **inventário esquelético** em menores de 2 anos, fundo de olho, avaliação pela equipe e **notificação obrigatória**.\n\n**Na prova**: fratura de extremidade mais sugestiva de abuso = **fratura do canto** (lesão metafisária clássica).",
+  "correta": "A fratura do canto (lesão metafisária clássica), por tração e torção, é altamente específica de abuso em lactentes.",
   "referencias": [
    "American Academy of Pediatrics. Evaluating Young Children With Fractures for Child Abuse: Clinical Report. Pediatrics. 2025. https://publications.aap.org/pediatrics/article/155/2/e2024070074/200638/Evaluating-Young-Children-With-Fractures-for-Child"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0067": {
-  "conceito": "### Artrogripose múltipla congênita\n- Contraturas congênitas em ==duas ou mais articulações==, sem progressão.\n- Causa comum: ==acinesia fetal== (falta de movimento intrauterino).\n\n| Origem | Achado |\n|---|---|\n| ==neuropática== (a mais comum) | ==redução das células do corno anterior== da medula |\n| miopática | distrofia muscular congênita |\n| restrição | oligoidrâmnio, útero bicorno |\n| tecido conjuntivo | |\n\n### Amioplasia (forma clássica)\n- Simétrica, quatro membros: ombros aduzidos e em RI, cotovelos estendidos, punhos fletidos, quadris luxados, joelhos estendidos ou fletidos, ==pé torto rígido==.\n- Pele lisa sem pregas, covinhas, inteligência normal.\n\n### Tratamento\n- Fisioterapia precoce; gessos; cirurgias (talectomia no pé torto resistente, osteotomias).\n\n### Cotovelo em extensão na artrogripose\n| Procedimento | Objetivo |\n|---|---|\n| capsulotomia posterior + alongamento do tríceps | ganhar flexão passiva |\n| ==Steindler (flexorplastia)== | ==transferência proximal da origem flexora-pronadora== para dar ==flexão ativa== do cotovelo |\n| transferência do tríceps, peitoral, grande dorsal | flexão ativa |\n\n- Ao menos um cotovelo deve fletir para levar a mão à boca; o outro pode ficar estendido para apoio/higiene.\n\n> **Na prova:** Steindler na artrogripose = corrigir ==extensão do cotovelo==",
-  "correta": "**Extensão do cotovelo.**\n- Flexorplastia: origem flexora-pronadora mais proximal no úmero.\n- Devolve flexão ativa.",
   "incorretas": {
-   "A": "**Ombro.**\n- Osteotomia derrotativa do úmero.",
-   "B": "**Punho.**\n- Artrodese, osteotomia do carpo.",
-   "C": "**Dedos.**\n- Outras técnicas."
+   "A": "A rotação interna do ombro é tratada com osteotomia derrotativa do úmero.",
+   "B": "A flexão do punho é tratada com osteotomia do carpo ou artrodese, não com Steindler.",
+   "C": "A garra dos dedos tem outras técnicas, não a flexorplastia de Steindler."
   },
+  "conceito": "Na **artrogripose**, o **cotovelo** costuma ficar em **extensão**, e a criança não consegue levar a mão à boca. O objetivo é dar **flexão**, pelo menos de um lado; o outro pode ficar mais estendido para apoio e higiene.\n\n**As etapas**:\n\n**flexão passiva**: com capsulotomia posterior e alongamento do tríceps;\n\n**flexão ativa**: uma transferência, já que o bíceps costuma ser fraco ou ausente.\n\n**A cirurgia de Steindler (flexorplastia)**: a **origem da musculatura flexora e pronadora**, no epicôndilo medial, é solta e **reinserida mais acima no úmero**. Assim, esses músculos passam a cruzar o cotovelo com um braço de alavanca maior e **fletem o cotovelo** ativamente. Um efeito colateral é a tendência de pronação e de flexão do punho.\n\n**Outras opções para flexão ativa**: transferência do **tríceps** para anterior, do **peitoral maior** ou do **grande dorsal**.\n\n**As outras deformidades das alternativas** têm outras cirurgias: rotação interna do ombro (osteotomia derrotativa do úmero), flexão do punho (osteotomia do carpo ou artrodese) e garra dos dedos.\n\n**Na prova**: Steindler na artrogripose = corrigir a **extensão do cotovelo** (dar flexão ativa).",
+  "correta": "A flexorplastia de Steindler sobe a origem flexora e pronadora no úmero para dar flexão ativa ao cotovelo estendido.",
   "referencias": [
    "Arthrogryposis: a review and update. https://pmc.ncbi.nlm.nih.gov/articles/PMC2698792/",
    "Steindler flexorplasty for the arthrogrypotic elbow. https://www.sciencedirect.com/science/article/abs/pii/S0363502304000796",
    "Posterior elbow capsulotomy and triceps lengthening in arthrogryposis. https://pmc.ncbi.nlm.nih.gov/articles/PMC7161729/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0068": {
-  "conceito": "### Recidiva do pé torto após Ponseti\n| Tipo | Achado | Conduta |\n|---|---|---|\n| estrutural (rígida) | adução, cavo, varo ou equino fixos | ==novos gessos== ± tenotomia |\n| ==dinâmica== | ==supinação do antepé na marcha== (balanço), pé passivamente corrigível | ==transferência do tibial anterior== |\n\n### Transferência do tibial anterior\n- Destino: ==cuneiforme lateral== (ou cuboide em alguns serviços).\n- Pré-requisitos: pé ==flexível==, deformidade fixa já corrigida (gessos antes), idade em geral acima de 2,5 a 3 anos (cuneiforme lateral ossificado).\n- Mecanismo: tibial anterior dominante sobre os fibulares supina o pé ao dorsifletir.\n\n### Causa principal de recidiva\n- ==Não adesão à órtese de abdução== (botas com barra) até 4 a 5 anos.\n\n### Órtese de abdução (Denis Browne / botas com barra)\n| Pé | Rotação externa |\n|---|---|\n| ==afetado== | ==60 a 70°== |\n| ==normal== (unilateral) | ==30 a 40°== |\n\n- Barra na largura dos ombros; dorsiflexão de 10 a 15°.\n- ==23 h/dia por 3 meses==, depois ==noturna até 4 a 5 anos==.\n\n> **Na prova:** pé normal na órtese = ==40° de rotação lateral==",
-  "correta": "**40°.**\n- Pé normal em 30 a 40°.\n- Pé afetado em 60 a 70°.",
   "incorretas": {
-   "B": "**Excessivo.**\n- Para o normal.",
-   "C": "**Do pé afetado.**\n- Não do normal.",
-   "D": "**Do pé afetado.**\n- Idem."
+   "B": "50° é mais do que o necessário para o pé normal.",
+   "C": "60° é a rotação do pé afetado, não do normal.",
+   "D": "70° é o limite superior da rotação do pé afetado, não do normal."
   },
+  "conceito": "Depois da correção do **pé torto** pelo **método de Ponseti**, a **órtese de abdução** (botas presas a uma barra, a Denis Browne) mantém a correção. **Não usar a órtese** é a principal causa de recidiva.\n\n**Como a órtese é ajustada**:\n\n**pé afetado**: em **60 a 70° de rotação externa**;\n\n**pé normal**, no caso **unilateral**: em **30 a 40°** de rotação externa;\n\n**barra** na largura dos ombros da criança, com cerca de **10 a 15°** de dorsiflexão (a barra levemente curvada).\n\n**O tempo de uso**: **23 horas por dia por 3 meses** depois da tenotomia; depois, **à noite e nas sonecas até 4 ou 5 anos**.\n\n**Por que o pé normal também vai na barra**: a órtese só funciona se os dois pés estiverem presos; o pé normal fica em rotação moderada, suficiente para manter o afetado na posição corrigida sem forçar o normal.\n\n**Na prova**: pé normal na órtese de Denis Browne = **40°** de rotação lateral (faixa de 30 a 40°).",
+  "correta": "No pé torto unilateral, o pé normal fica na órtese com 30 a 40° de rotação externa, o que corresponde a 40°.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Clubfoot. https://posna.org/physician-education/study-guide/clubfoot",
    "Clubfoot. StatPearls/NCBI Bookshelf. https://www.ncbi.nlm.nih.gov/books/NBK551574/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0069": {
-  "conceito": "### Legg-Calvé-Perthes: fases (Waldenström)\n| Fase | Achado |\n|---|---|\n| inicial (necrose) | cabeça densa, pequena; fratura subcondral (Salter-Thompson) |\n| ==fragmentação== | epífise fragmentada, colapso |\n| reossificação | osso novo |\n| residual | remodelada |\n\n### Classificações\n| Classificação | Incidência | Fase | Critério |\n|---|---|---|---|\n| ==Herring (pilar lateral)== | ==AP== | ==fragmentação== | altura do pilar lateral: A (100%), B (> 50%), B/C, C (< 50%) |\n| Catterall | AP e perfil | | quanto da epífise acometida (I a IV) + sinais de risco |\n| Salter-Thompson | perfil | inicial | extensão da fratura subcondral |\n| Stulberg | AP e perfil | ==maturidade== | congruência e esfericidade (prognóstico de artrose) |\n\n### Prognóstico\n- Pior: início > 8 anos, Herring C, sinais de cabeça em risco.\n\n> **Na prova:** subluxação e achatamento no Perthes = ==fase de fragmentação==",
-  "correta": "**Fragmentação.**\n- Epífise frágil colapsa.\n- Cabeça achata e subluxa lateralmente.",
   "incorretas": {
-   "A": "**Ainda sem colapso.**\n- Cabeça densa e pequena.",
-   "C": "**Reparação.**\n- Osso novo.",
-   "D": "**Final.**\n- Forma já definida."
+   "A": "Na fase de necrose a cabeça está densa, mas ainda sem colapso.",
+   "C": "Na reossificação, o osso novo já está reparando a cabeça.",
+   "D": "Na fase residual a forma da cabeça já está definida."
   },
+  "conceito": "A **doença de Legg-Calvé-Perthes** passa por fases radiográficas (**Waldenström**), e cada uma tem o seu risco:\n\n**inicial (necrose)**: a cabeça fica densa e um pouco menor, mas ainda **mantém a forma**;\n\n**fragmentação**: o osso morto é reabsorvido, a epífise se divide em fragmentos e fica **mole**; é nessa fase que a cabeça **achata**, **colapsa** e tende a **subluxar para lateral**, saindo de baixo do acetábulo;\n\n**reossificação**: osso novo preenche a cabeça; a forma vai sendo definida;\n\n**residual**: a cabeça está remodelada, redonda ou deformada.\n\n**Por que a fragmentação é a fase crítica**: é quando a cabeça pode se deformar. O tratamento de **contenção** (manter a cabeça dentro do acetábulo, com órtese ou osteotomia do fêmur ou da pelve) busca proteger justamente esse período, para que o acetábulo funcione como molde.\n\n**A classificação de Herring** (pilar lateral) também é feita nessa fase.\n\n**Na prova**: subluxação e achatamento da cabeça no Perthes = fase de **fragmentação**.",
+  "correta": "Na fragmentação, a epífise amolecida colapsa, achata e tende a subluxar para lateral.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Legg-Calve-Perthes Disease. https://posna.org/physician-education/study-guide/legg-calve-perthes-disease"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0070": {
@@ -1029,119 +1030,119 @@
   "conferido": false
  },
  "pediatria-0071": {
-  "conceito": "### Osteogênese imperfeita (Sillence modificada)\n| Tipo | Gravidade | Detalhe |\n|---|---|---|\n| I | leve | ==escleras azuis==, surdez, colágeno em quantidade reduzida |\n| II | letal perinatal | fraturas múltiplas intrauterinas |\n| III | grave progressiva | deformidade, baixa estatura, dentinogênese |\n| IV | moderada | escleras normais |\n| ==V== | moderada | ==calo hiperplásico== (simula ==osteossarcoma==), ==calcificação da membrana interóssea== do antebraço, luxação da cabeça do rádio; IFITM5 |\n| VI em diante | variadas | genes não colágenos |\n\n### Tratamento\n- ==Bisfosfonato== (pamidronato, zoledronato).\n- Hastes telescópicas (Fassier-Duval, Sheffield) nas deformidades e fraturas repetidas.\n\n> **Na prova:** fragilidade mais grave = ==Sillence II== (letal perinatal).",
-  "correta": "**Tipo II.**\n- Letal perinatal.\n- Fraturas múltiplas intrauterinas.",
   "incorretas": {
-   "A": "**Mais leve.**\n- Escleras azuis.",
-   "C": "**Grave progressiva.**\n- Mas não a mais grave.",
-   "D": "**Moderada.**\n- Escleras normais."
+   "A": "O tipo I é a forma mais leve, com escleras azuis e poucas fraturas.",
+   "C": "O tipo III é grave e progressivo, mas compatível com a vida; não é o mais grave.",
+   "D": "O tipo IV é moderado, com escleras normais."
   },
+  "conceito": "A **classificação de Sillence** da osteogênese imperfeita, da mais leve à mais grave:\n\n**tipo I**: a **mais leve**; escleras **azuis**, surdez, poucas fraturas; a quantidade de colágeno é reduzida, mas a estrutura é normal;\n\n**tipo IV**: **moderada**; escleras normais; fraturas e deformidades em número intermediário;\n\n**tipo III**: **grave e progressiva**; muitas fraturas, deformidades dos ossos longos, baixa estatura importante, dentinogênese imperfeita; a criança sobrevive;\n\n**tipo II**: a **mais grave**; **letal no período perinatal**; os ossos são tão frágeis que há **fraturas múltiplas ainda dentro do útero** (fêmures \"amassados\", costelas em contas), e o bebê morre em geral por insuficiência respiratória.\n\n**A base molecular das formas graves**: a troca de uma **glicina** na tripla hélice do colágeno tipo I, que deixa o colágeno estruturalmente defeituoso.\n\n**O tratamento nas formas que sobrevivem**: bisfosfonatos e hastes telescópicas nos ossos longos.\n\n**Na prova**: fragilidade óssea mais grave na osteogênese imperfeita = **tipo II** (letal perinatal).",
+  "correta": "O tipo II é a forma mais grave, letal no período perinatal, com fraturas múltiplas ainda no útero.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Osteogenesis Imperfecta. https://posna.org/physician-education/study-guide/osteogenesis-imperfecta"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0072": {
-  "conceito": "### Obstáculos à redução na DDQ\n| Extra-articulares | Intra-articulares |\n|---|---|\n| iliopsoas (estrangula a cápsula em ampulheta) | ==cápsula constrita== (istmo) |\n| adutores | lábio invertido (limbo) |\n| | pulvinar hipertrofiado |\n| | ligamento redondo alongado e espesso |\n| | ligamento transverso do acetábulo |\n\n- Na DDQ tardia, a ==constrição capsular== (ampulheta pelo psoas) é o obstáculo principal segundo a fonte.\n\n### Conduta\n| Idade | Tratamento |\n|---|---|\n| < 6 meses | Pavlik |\n| 6 a 18 meses | redução fechada + gesso (artrografia) |\n| > 18 meses | ==redução aberta== ± osteotomia femoral encurtadora e pélvica |\n\n> **Na prova:** obstáculo principal na DDQ tardia = ==constrição da cápsula== (veja o alerta).",
-  "correta": "**Constrição da cápsula.**\n- Istmo capsular em ampulheta pelo psoas.\n- Gabarito; o lábio invertido também bloqueia (veja o alerta).",
   "incorretas": {
-   "B": "**Também bloqueia.**\n- Mas não é o principal para a fonte.",
-   "C": "**Menor.**\n- Ocupa o fundo acetabular.",
-   "D": "**Menor.**\n- Espesso, mas não o principal."
+   "B": "O lábio invertido também bloqueia a redução, mas não é o obstáculo principal para a fonte da prova.",
+   "C": "O pulvinar hipertrofiado ocupa o fundo do acetábulo, mas é obstáculo menor.",
+   "D": "O ligamento redondo espesso atrapalha, mas não é o obstáculo principal."
   },
+  "conceito": "Na **displasia do quadril** diagnosticada **tarde**, a cabeça femoral passou meses fora do acetábulo, e várias estruturas se adaptaram e passaram a **impedir a redução**.\n\n**Os obstáculos extra-articulares**:\n\n**iliopsoas**: passa na frente da cápsula e a **estrangula**, dando a ela o formato de **ampulheta**;\n\n**adutores** retraídos.\n\n**Os obstáculos intra-articulares**:\n\n**cápsula constrita** (o istmo da ampulheta): a cabeça não passa por ele; é o obstáculo apontado como o **mais importante** pela fonte da prova;\n\n**lábio invertido** (limbo): dobra para dentro do acetábulo;\n\n**pulvinar** hipertrofiado (gordura no fundo do acetábulo);\n\n**ligamento redondo** alongado e espesso;\n\n**ligamento transverso** do acetábulo contraído.\n\n**A conduta por idade**: até 6 meses, suspensório de Pavlik; de 6 a 18 meses, redução fechada sob anestesia com artrografia e gesso; depois de cerca de 18 meses, **redução aberta**, muitas vezes com encurtamento do fêmur e osteotomia da pelve.\n\n**Na prova**: obstáculo principal na displasia tardia = **constrição da cápsula** (pela fonte da prova).",
+  "correta": "A cápsula estrangulada pelo iliopsoas, em ampulheta, é o obstáculo mais significativo à redução pela fonte da prova.",
   "alerta": "Há ambiguidade no enunciado: a cápsula constrita é obstáculo relevante, mas não é intra-articular em sentido estrito; revisões destacam também o labrum invertido como bloqueio mecânico intra-articular. O comentário preserva o gabarito A e explicita a ressalva.",
   "referencias": [
    "Obstacles to reduction in infantile DDQ. https://pmc.ncbi.nlm.nih.gov/articles/PMC5643929/",
    "Developmental dysplasia of the hip: management update. https://pmc.ncbi.nlm.nih.gov/articles/6771078/",
    "DDQ: changes in the last 20 years. https://pmc.ncbi.nlm.nih.gov/articles/PMC4686436/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0073": {
-  "conceito": "### Torção tibial externa patológica\n- Normal no adulto: cerca de 20° (ângulo coxa-pé).\n- Aumentada (> 18 a 30°) no adolescente: marcha com pé para fora.\n\n### Associações\n| Condição | Relação |\n|---|---|\n| ==coalizão tarsal== | pé plano rígido, compensação rotacional |\n| anteversão femoral aumentada | síndrome do mau alinhamento (compensação) |\n| mielomeningocele | torção externa |\n| Blount | torção ==interna== |\n\n### Síndrome do mau alinhamento\n- Anteversão femoral + torção tibial externa: dor patelofemoral, instabilidade patelar.\n- Osteotomias derrotativas em casos graves.\n\n### Rotacionais na criança\n| Causa | Idade típica |\n|---|---|\n| metatarso aduto | lactente |\n| torção tibial interna | 1 a 3 anos |\n| anteversão femoral | 3 a 8 anos |\n\n### Torção tibial interna\n- Associada ao ==pé torto congênito== (componente rotacional da deformidade) e à posição intrauterina.\n- Blount também gira a tíbia para dentro.\n- Marcha com pés para dentro de 1 a 3 anos: a maioria corrige sozinha até 4 a 5 anos.\n\n> **Na prova:** rotação interna da perna associa-se ao ==pé torto congênito==",
-  "correta": "**Pé torto congênito.**\n- Torção tibial interna acompanha a deformidade.\n- Também no Blount.",
   "incorretas": {
-   "A": "**Plano.**\n- Não é a associação.",
-   "C": "**Tálus vertical.**\n- Pé em mata-borrão, não torção interna.",
-   "D": "**Equino.**\n- Componente do pé, não torção."
+   "A": "O pé plano não é a associação da rotação interna da perna.",
+   "C": "O tálus vertical produz o pé em mata-borrão, sem torção tibial interna.",
+   "D": "O equino é uma posição do pé, não uma rotação dos ossos da perna."
   },
+  "conceito": "A **torção tibial** é a rotação da tíbia em torno do seu eixo. A **torção tibial interna** deixa os pés virados para dentro.\n\n**As associações da torção tibial interna**:\n\n**pé torto congênito**: a rotação interna da perna faz parte do conjunto da deformidade, junto com o equino, o varo, a adução e o cavo;\n\n**posição dentro do útero**: a causa mais comum da torção interna \"fisiológica\" das crianças de 1 a 3 anos, que corrige sozinha até 4 ou 5 anos;\n\n**doença de Blount**: a tíbia vara também gira para dentro.\n\n**Os problemas rotacionais por idade**: metatarso aduto no lactente, **torção tibial interna** entre 1 e 3 anos, anteversão femoral entre 3 e 8 anos.\n\n**As outras alternativas**:\n\n**pé plano**: não é a associação da torção interna;\n\n**tálus vertical**: pé em **mata-borrão**, com o retropé em equino e o antepé dorsifletido, sem torção interna;\n\n**pé equino**: é um componente do pé, não uma torção da perna.\n\n**Na prova**: rotação interna dos ossos da perna associa-se ao **pé torto congênito**.",
+  "correta": "A torção tibial interna faz parte do conjunto de deformidades do pé torto congênito.",
   "referencias": [
    "Clubfoot: Ponseti management. https://pmc.ncbi.nlm.nih.gov/articles/PMC3764299/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0074": {
-  "conceito": "### Doença de Blount\n| Forma | Idade | Perfil |\n|---|---|---|\n| infantil | < 4 anos | obesa, marcha precoce, bilateral |\n| juvenil/adolescente | > 10 anos | obeso, unilateral, varo menor |\n\n### Langenskiöld (6 estágios)\n| Estágio | Achado |\n|---|---|\n| I | irregularidade metafisária medial, bico |\n| II | depressão em degrau |\n| III | degrau mais profundo, fragmentação |\n| ==IV== | ==ponte (barra) óssea medial através da fise== começa |\n| V | epífise dupla (fratura) |\n| VI | fechamento medial completo |\n\n### Ângulo metafisário-diafisário (Drennan)\n- > 16°: Blount provável; < 10°: fisiológico.\n\n### Tratamento\n- < 3 anos, estágio I-II: órtese.\n- Crescimento guiado, osteotomia valgizante antes dos 4 anos; ressecção da barra, elevação do planalto nos tardios.\n\n### Ângulo metafisário-diafisário (Levine-Drennan)\n- Entre a linha pelos bicos metafisários e a perpendicular ao eixo da tíbia.\n| Valor | Interpretação |\n|---|---|\n| < 10° | provavelmente fisiológico |\n| 10 a 16° | zona cinzenta, seguir |\n| > 16° | Blount provável |\n\n- ==Pouco confiável isolado==: varia com a rotação do membro e a técnica; combinar com clínica e evolução.\n\n> **Na prova:** ângulo de Levine-Drennan = ==pouco confiável quando usado isoladamente==",
-  "correta": "**Pouco confiável isolado.**\n- Muda com a rotação e a técnica.\n- Interpretar com clínica e seriação.",
   "incorretas": {
-   "B": "**Varia com a rotação.**\n- Não é invariável.",
-   "C": "**Não o mais preciso.**\n- Complementar.",
-   "D": "**Invertida.**\n- > 11 a 16° sugere doença."
+   "B": "O ângulo varia com a rotação do membro; não é invariável.",
+   "C": "É um parâmetro útil, mas não é o mais preciso para o prognóstico.",
+   "D": "Valores mais altos (acima de 11 a 16°) sugerem doença, não evolução favorável."
   },
+  "conceito": "O **ângulo metafisário-diafisário de Levine-Drennan** ajuda a separar o **varo fisiológico** da criança pequena da **doença de Blount**. Ele é medido entre a linha que passa pelos **bicos metafisários** da tíbia proximal e a **perpendicular ao eixo** da tíbia.\n\n**A interpretação**:\n\n**menor que 10°**: provavelmente fisiológico;\n\n**entre 10 e 16°**: zona cinzenta; seguir com radiografias;\n\n**maior que 16°**: Blount provável.\n\n**Por que ele é pouco confiável sozinho**: o valor **muda com a rotação** do membro na radiografia e com a técnica de medida; uma perna rodada para dentro ou para fora altera o ângulo. Por isso, ele deve ser usado **junto com** a clínica (idade, peso, se é uni ou bilateral, se está piorando) e com **radiografias seriadas**.\n\n**Os outros parâmetros**: a classificação de Langenskiöld (estágios radiográficos) e o ângulo metafisário-diafisário do fêmur, comparado com o da tíbia.\n\n**Na prova**: ângulo de Levine-Drennan = **pouco confiável quando usado isoladamente**.",
+  "correta": "O ângulo varia com a rotação do membro e com a técnica, então precisa ser interpretado junto com a clínica e radiografias seriadas.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Blount's Disease – Infantile. https://posna.org/physician-education/study-guide/blount-s-disease-infantile",
    "Levine AM, Drennan JC. Physiological bowing and tibia vara. J Bone Joint Surg Am. 1982;64:1158-1163."
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0075": {
-  "conceito": "### Suspensório de Pavlik\n| Tira | Função |\n|---|---|\n| anterior | ==flexão== do quadril (100 a 110°), bloqueia a extensão |\n| posterior | ==limita a adução== (não força a abdução) |\n\n- Permite ==flexão e abdução ativas==; ==limita extensão e adução==.\n- Indicação: < 6 meses; controle por ultrassom.\n\n### Complicações\n| Complicação | Causa |\n|---|---|\n| ==necrose avascular== (lesão fisária) | ==abdução forçada== (> 60°) |\n| paralisia do nervo femoral | ==flexão excessiva== |\n| doença do Pavlik (erosão posterior do acetábulo) | quadril luxado mantido sem reduzir |\n| luxação inferior (obturatória) | flexão excessiva |\n\n- Sem redução em 3 a 4 semanas: suspender.\n\n> **Na prova:** Pavlik lesa a fise pela ==abdução forçada==; limita ==extensão e adução==.",
-  "correta": "**Abdução forçada.**\n- Comprime os vasos circunflexos: necrose.\n- Abdução deve ser livre, não forçada.",
   "incorretas": {
-   "A": "**Nervo femoral.**\n- Flexão excessiva.",
-   "B": "**Limitada.**\n- Adução é bloqueada.",
-   "D": "**Não é o mecanismo.**\n- Rotação lateral."
+   "A": "A flexão excessiva se relaciona com a paralisia do nervo femoral, não com a lesão fisária.",
+   "B": "A adução é limitada pelo Pavlik, não forçada.",
+   "D": "A rotação lateral não é o mecanismo de lesão da fise no Pavlik."
   },
+  "conceito": "O **suspensório de Pavlik** trata a displasia do quadril até cerca de 6 meses. Ele mantém o quadril em **flexão** e deixa a criança **abrir as pernas sozinha**:\n\n**tira anterior**: mantém o quadril fletido (cerca de 100 a 110°) e **impede a extensão**;\n\n**tira posterior**: **limita a adução**, mas **não força a abdução**; a abdução é **ativa**, pelo próprio peso das pernas.\n\n**As complicações e de onde vêm**:\n\n**necrose avascular da cabeça femoral** (com lesão da **placa fisária**): vem da **abdução forçada**, além de cerca de 60°, que comprime os vasos que nutrem a cabeça;\n\n**paralisia do nervo femoral**: vem da **flexão excessiva**;\n\n**luxação inferior** (obturatória): também da flexão excessiva;\n\n**doença do Pavlik**: erosão da parede posterior do acetábulo quando o quadril fica luxado no suspensório sem reduzir.\n\n**A regra de segurança**: controle com ultrassom; se o quadril não reduzir em **3 a 4 semanas**, suspender o Pavlik e mudar o tratamento.\n\n**Na prova**: dano à fise no Pavlik = **abdução forçada**.",
+  "correta": "A abdução forçada comprime os vasos da cabeça femoral e causa necrose com lesão da placa fisária.",
   "referencias": [
    "Developmental dysplasia of the hip. https://pmc.ncbi.nlm.nih.gov/articles/PMC3143976/",
    "Developmental Dysplasia of the Hip – Part 1. https://pmc.ncbi.nlm.nih.gov/articles/PMC10708981/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0076": {
-  "conceito": "### Deficiência femoral focal proximal (DFFP)\n- Espectro das deficiências congênitas do fêmur; ==unilateral== em geral.\n- Coxa curta, ==quadril em flexão, abdução e rotação externa==.\n- Associações: ==hemimelia fibular== (cerca de 50%), deficiência do LCA, pé com raios ausentes.\n\n### Aitken\n| Tipo | Cabeça femoral | Acetábulo |\n|---|---|---|\n| A | presente | normal |\n| B | presente, sem conexão ao colo | adequado |\n| C | ausente | displásico |\n| D | ausente | ausente |\n\n### Tratamento\n| Situação | Opção |\n|---|---|\n| discrepância prevista < 20 cm, quadril estável | alongamento, epifisiodese |\n| grave | ==Van Nes== (rotacionplastia), artrodese do joelho + prótese, Syme |\n\n### Gillespie (deficiência femoral)\n| Grupo | Achado | Tratamento |\n|---|---|---|\n| ==A== | fêmur curto, ==quadril e joelho funcionais==, pé no nível da tíbia contralateral | ==alongamento== (± epifisiodese) |\n| B | DFFP verdadeira, pé no nível do joelho oposto | Van Nes, Syme, artrodese do joelho + prótese |\n| C | deficiência grave, quase ausência do fêmur | prótese |\n\n> **Na prova:** alongamento na deficiência femoral = ==Gillespie A==",
-  "correta": "**Grupo A.**\n- Quadril e joelho estáveis.\n- Discrepância que o alongamento consegue compensar.",
   "incorretas": {
-   "B": "**Grave.**\n- Rotacionplastia ou amputação.",
-   "C": "**Muito grave.**\n- Prótese.",
-   "D": "**Não existe.**\n- São três grupos."
+   "B": "No grupo B a deficiência é grave, e as opções são rotacionplastia, Syme ou artrodese com prótese.",
+   "C": "No grupo C o fêmur é quase ausente, e o tratamento é a prótese.",
+   "D": "A classificação de Gillespie tem três grupos; não existe o grupo D."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **classificação de Gillespie** separa as **deficiências congênitas do fêmur** pelo que se pode reconstruir:\n\n**grupo A**: fêmur **curto**, mas com **quadril e joelho funcionais**; o pé fica na altura da tíbia do outro lado; o tratamento é **alongamento**, às vezes com epifisiodese do lado normal;\n\n**grupo B**: deficiência femoral focal proximal verdadeira; o pé fica na altura do **joelho** do outro lado; o alongamento não compensa; as opções são **rotacionplastia de Van Nes**, amputação de **Syme** ou **artrodese do joelho** com prótese;\n\n**grupo C**: deficiência grave, com o fêmur quase ausente; o tratamento é a **prótese**.\n\n**O que decide**: a **estabilidade do quadril e do joelho** e o tamanho da **discrepância prevista** na maturidade. Alongar um membro com quadril ou joelho instável arrisca luxar a articulação.\n\n**A comparação com Aitken**: a classificação de Aitken (A a D) olha a cabeça do fêmur e o acetábulo; a de Gillespie olha o que é possível fazer.\n\n**Na prova**: alongamento na deficiência femoral = **Gillespie A**.",
+  "correta": "No grupo A, o fêmur é curto mas com quadril e joelho funcionais, e a discrepância pode ser corrigida com alongamento.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0077": {
-  "conceito": "### Artrogripose múltipla congênita\n- Contraturas congênitas em ==duas ou mais articulações==, sem progressão.\n- Causa comum: ==acinesia fetal== (falta de movimento intrauterino).\n\n| Origem | Achado |\n|---|---|\n| ==neuropática== (a mais comum) | ==redução das células do corno anterior== da medula |\n| miopática | distrofia muscular congênita |\n| restrição | oligoidrâmnio, útero bicorno |\n| tecido conjuntivo | |\n\n### Amioplasia (forma clássica)\n- Simétrica, quatro membros: ombros aduzidos e em RI, cotovelos estendidos, punhos fletidos, quadris luxados, joelhos estendidos ou fletidos, ==pé torto rígido==.\n- Pele lisa sem pregas, covinhas, inteligência normal.\n\n### Tratamento\n- Fisioterapia precoce; gessos; cirurgias (talectomia no pé torto resistente, osteotomias).\n\n### Cotovelo em extensão na artrogripose\n| Procedimento | Objetivo |\n|---|---|\n| capsulotomia posterior + alongamento do tríceps | ganhar flexão passiva |\n| ==Steindler (flexorplastia)== | ==transferência proximal da origem flexora-pronadora== para dar ==flexão ativa== do cotovelo |\n| transferência do tríceps, peitoral, grande dorsal | flexão ativa |\n\n- Ao menos um cotovelo deve fletir para levar a mão à boca; o outro pode ficar estendido para apoio/higiene.\n\n> **Na prova:** Steindler na artrogripose = corrigir ==extensão do cotovelo==",
-  "correta": "**Mobilidade passiva do cotovelo.**\n- Base para levar a mão à boca.\n- Depois, flexão ativa (transferências).",
   "incorretas": {
-   "A": "**Posterior.**\n- Osteotomia derrotativa do úmero.",
-   "B": "**Posterior.**\n- Polegar na palma.",
-   "C": "**Posterior.**\n- Punho depois do cotovelo."
+   "A": "A rotação medial do ombro pode ser corrigida depois, com osteotomia derrotativa do úmero.",
+   "B": "Retirar o polegar da palma vem depois de garantir o movimento do cotovelo.",
+   "C": "O posicionamento do punho também vem depois do cotovelo."
   },
+  "conceito": "Na **artrogripose**, o membro superior típico tem ombro em rotação interna, **cotovelo estendido** e rígido, punho fletido e polegar na palma. O objetivo final é a criança conseguir **levar a mão à boca** para comer e cuidar de si.\n\n**A ordem de prioridades**:\n\n**1º, cotovelo**: sem **flexão passiva** do cotovelo, nada mais adianta, porque a mão não chega à boca; por isso o **primeiro objetivo** é ganhar **mobilidade passiva** (fisioterapia, gessos seriados e, se preciso, capsulotomia posterior com alongamento do tríceps);\n\n**2º, flexão ativa** do cotovelo: transferências (Steindler, tríceps, peitoral, grande dorsal), em geral em pelo menos um dos lados;\n\n**3º, punho e mão**: posicionar o punho em posição funcional (osteotomia do carpo) e tirar o polegar da palma;\n\n**ombro**: a rotação interna pode ser corrigida com osteotomia derrotativa do úmero, se atrapalhar a função.\n\n**O cuidado bilateral**: muitas vezes se deixa um cotovelo fletindo (para levar a mão à boca) e o outro mais estendido (para apoio e higiene).\n\n**Na prova**: primeiro objetivo no membro superior na artrogripose = **mobilidade passiva do cotovelo**.",
+  "correta": "A mobilidade passiva do cotovelo vem primeiro, porque sem ela a mão não chega à boca, e as transferências para flexão ativa dependem dela.",
   "referencias": [
    "Arthrogryposis: review and update. https://pmc.ncbi.nlm.nih.gov/articles/PMC2698792/",
    "Arthrogryposis: clinical aspects and treatment strategies. https://pmc.ncbi.nlm.nih.gov/articles/PMC4754365/",
    "Posterior elbow capsulotomy and triceps lengthening. https://pmc.ncbi.nlm.nih.gov/articles/PMC7161729/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0078": {
-  "conceito": "### Doença de Blount\n| Forma | Idade | Perfil |\n|---|---|---|\n| infantil | < 4 anos | obesa, marcha precoce, bilateral |\n| juvenil/adolescente | > 10 anos | obeso, unilateral, varo menor |\n\n### Langenskiöld (6 estágios)\n| Estágio | Achado |\n|---|---|\n| I | irregularidade metafisária medial, bico |\n| II | depressão em degrau |\n| III | degrau mais profundo, fragmentação |\n| ==IV== | ==ponte (barra) óssea medial através da fise== começa |\n| V | epífise dupla (fratura) |\n| VI | fechamento medial completo |\n\n### Ângulo metafisário-diafisário (Drennan)\n- > 16°: Blount provável; < 10°: fisiológico.\n\n### Tratamento\n- < 3 anos, estágio I-II: órtese.\n- Crescimento guiado, osteotomia valgizante antes dos 4 anos; ressecção da barra, elevação do planalto nos tardios.\n\n### Órtese (KAFO)\n- Indicação: ==< 3 anos==, ==Langenskiöld I-II==, especialmente unilateral.\n- Órtese de apoio com força valgizante, uso diurno na marcha.\n- Sem melhora em cerca de 1 ano ou > 4 anos: ==osteotomia valgizante== da tíbia (hipercorrigir).\n\n> **Na prova:** Blount unilateral aos 2,5 anos, estágio II = ==órtese==",
-  "correta": "**Ortetização.**\n- Criança < 3 anos, estágio precoce.\n- Órtese valgizante na marcha.",
   "incorretas": {
-   "A": "**Blount progride.**\n- Não se observa.",
-   "C": "**Após falha ou > 4 anos.**\n- Não primeira escolha aqui.",
-   "D": "**Deformidade tibial.**\n- Fêmur não é o alvo."
+   "A": "A doença de Blount tende a progredir; observar sem tratamento não é a conduta nesse caso.",
+   "C": "A osteotomia da tíbia fica para a falha da órtese ou para crianças acima de 4 anos.",
+   "D": "A deformidade está na tíbia; a osteotomia do fêmur não trata a doença de Blount."
   },
+  "conceito": "Na **doença de Blount infantil** (tíbia vara antes dos 4 anos), o tratamento depende da **idade** e do **estágio de Langenskiöld**:\n\n**menos de 3 anos, estágios I e II**: **órtese**; uma órtese longa (joelho-tornozelo-pé) com força **valgizante**, usada durante o dia, na marcha; funciona melhor nos casos **unilaterais**;\n\n**sem melhora em cerca de 1 ano**, ou criança com mais de 4 anos: **osteotomia valgizante** da tíbia proximal, com leve **hipercorreção**, de preferência antes dos 4 anos, para a fise ainda poder se recuperar;\n\n**estágios avançados ou crianças maiores**: crescimento guiado, ressecção da barra óssea e elevação do planalto tibial medial.\n\n**O caso**: uma criança de **2 anos e meio**, com Blount **unilateral** no estágio **II**. Está na faixa da **órtese**. Observar não é adequado, porque a doença tende a progredir; a cirurgia ainda não é a primeira escolha; e o problema está na tíbia, não no fêmur.\n\n**Na prova**: Blount unilateral, 2,5 anos, estágio II = **órtese**.",
+  "correta": "Antes dos 3 anos e nos estágios I e II, sobretudo no caso unilateral, o tratamento indicado é a órtese valgizante.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Blount's Disease – Infantile. https://posna.org/physician-education/study-guide/blount-s-disease-infantile"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0079": {
