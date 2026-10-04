@@ -200,3 +200,8 @@ instruções no `LEGENDA.md` de cada pasta.
   colega com três erros, a correção em caneta vermelha e o placar.
 - **Stories** (`2026-10-04-stories`): um por post, cada um com espaço para figurinha de quiz ou
   enquete e chamada para o feed.
+
+## Novas linhas (`posts/2026-10-04-novas-linhas`)
+
+Anúncio das categorias novas (cirurgia da mão, R4 ENARE, R4 Coluna) no visual de mapa de metrô:
+carrossel de 5 slides e 2 stories, sem números de questões.

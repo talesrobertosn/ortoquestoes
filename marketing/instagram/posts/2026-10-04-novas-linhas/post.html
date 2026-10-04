@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Novas linhas Orto Questões</title>
+<!-- Carrossel de feed (5 slides, 1080x1350) e 2 stories (1080x1920) no visual de mapa de
+     metrô: cada categoria de prova é uma linha, cada instituição uma estação. Sem números.
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-04-novas-linhas/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+:root {
+  --papel: #F6F1E4; --tinta: #10201E; --cinza: #5B6866; --borda: #D9D1BD;
+  --verde: #14655E; --mao: #C9952F; --enare: #C8513C; --coluna: #2E64A8; --ouro: #F4CF7C;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; color: var(--tinta); }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1350px; padding: 64px 72px;
+  background:
+    linear-gradient(rgba(16,32,30,.035) 1px, transparent 1px) 0 0/54px 54px,
+    linear-gradient(90deg, rgba(16,32,30,.035) 1px, transparent 1px) 0 0/54px 54px,
+    var(--papel); }
+section.story { height: 1920px; padding: 110px 80px; }
+.topo { display: flex; justify-content: space-between; align-items: center; position: relative; z-index: 2; }
+.marca { display: flex; align-items: center; gap: 14px; font: 34px Jakarta; letter-spacing: -.02em; }
+.marca svg { width: 52px; height: 52px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; }
+.placa { font: 800 22px Jakarta; letter-spacing: .14em; text-transform: uppercase; padding: 10px 18px; border-radius: 10px; background: var(--tinta); color: var(--papel); }
+.cont { font: 700 24px Jakarta; color: var(--cinza); letter-spacing: .08em; }
+h1, h2 { font-family: Jakarta; letter-spacing: -.045em; line-height: 1; position: relative; z-index: 2; }
+h1 { font-size: 132px; font-weight: 800; }
+h2 { font-size: 76px; font-weight: 800; }
+h1 em, h2 em { font-style: normal; }
+.sub { font-size: 34px; line-height: 1.38; color: #2f3d3b; position: relative; z-index: 2; text-wrap: pretty; }
+.sub b { color: var(--tinta); }
+.rodape { position: absolute; left: 72px; right: 72px; bottom: 56px; display: flex; justify-content: space-between; align-items: center; font: 700 24px Jakarta; color: var(--cinza); z-index: 2; }
+.rodape .seta { display: flex; gap: 10px; align-items: center; color: var(--tinta); }
+.legenda-linha { display: inline-flex; align-items: center; gap: 14px; font: 800 26px Jakarta; letter-spacing: .02em; }
+.bolinha { width: 46px; height: 46px; border-radius: 50%; display: grid; place-items: center; color: #fff; font: 800 22px Jakarta; }
+
+/* Mapa (capa) */
+.mapa { position: absolute; inset: 0; z-index: 1; }
+.estacao-nome { font: 800 25px Jakarta; letter-spacing: -.01em; fill: var(--tinta); }
+.estacao-sub { font: 600 19px Inter; fill: var(--cinza); }
+
+/* Linha vertical com estações */
+.trilho { position: relative; margin-top: 46px; padding-left: 96px; }
+.trilho::before { content: ''; position: absolute; left: 31px; top: 18px; bottom: 18px; width: 18px; border-radius: 9px; background: var(--cor); }
+.est { position: relative; display: flex; align-items: baseline; gap: 18px; min-height: 92px; }
+.est::before { content: ''; position: absolute; left: -84px; top: 4px; width: 46px; height: 46px; border-radius: 50%; background: #fff; border: 9px solid var(--tinta); box-sizing: border-box; }
+.est strong { font: 800 46px Jakarta; letter-spacing: -.03em; }
+.est small { font-size: 26px; color: var(--cinza); }
+.est.mais::before { background: var(--papel); border-style: dashed; }
+.est.mais strong { color: var(--cinza); font-weight: 700; }
+.nota { margin-top: 22px; display: grid; gap: 16px; position: relative; z-index: 2; }
+.nota p { display: grid; grid-template-columns: 40px 1fr; gap: 16px; font-size: 29px; line-height: 1.38; color: #2f3d3b; }
+.nota p i { width: 40px; height: 40px; border-radius: 12px; background: var(--cor); display: grid; place-items: center; font: normal 800 22px Jakarta; color: #fff; margin-top: 2px; }
+.cartaz { border-radius: 30px; background: #fff; border: 2px solid var(--borda); box-shadow: 0 24px 60px rgba(16,32,30,.10); position: relative; z-index: 2; }
+
+/* Tela ilustrativa do Treinar */
+.tela { margin-top: 40px; padding: 34px; }
+.tela .pergunta { font: 800 30px Jakarta; } .tela .pergunta small { font: 500 24px Inter; color: var(--cinza); }
+.opcoes { margin-top: 22px; display: grid; gap: 14px; }
+.op { display: grid; grid-template-columns: 54px 1fr; gap: 18px; align-items: center; padding: 20px 24px; border-radius: 22px; border: 2px solid var(--borda); background: #fbfaf6; }
+.op .check { width: 54px; height: 54px; border-radius: 16px; border: 3px solid var(--borda); display: grid; place-items: center; }
+.op.on { border-color: var(--cor); background: color-mix(in srgb, var(--cor) 9%, #fff); }
+.op.on .check { background: var(--cor); border-color: var(--cor); }
+.op.on .check::after { content: ''; width: 22px; height: 12px; border-left: 5px solid #fff; border-bottom: 5px solid #fff; transform: rotate(-45deg) translate(2px,-3px); }
+.op strong { font: 800 32px Jakarta; letter-spacing: -.02em; display: block; } .op span { font-size: 23px; color: var(--cinza); }
+.ilustrativa { margin-top: 14px; font: 600 20px Inter; color: var(--cinza); text-align: right; }
+
+.cta { display: inline-flex; align-items: center; gap: 16px; margin-top: 30px; padding: 26px 38px; border-radius: 22px; background: var(--tinta); color: var(--papel); font: 800 38px Jakarta; letter-spacing: -.02em; position: relative; z-index: 2; }
+.cta b { color: var(--ouro); }
+.figurinha { margin-top: 40px; height: 250px; border: 4px dashed rgba(16,32,30,.25); border-radius: 36px; display: grid; place-items: center; font: 700 26px Jakarta; color: var(--cinza); position: relative; z-index: 2; }
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/>
+<circle cx="17" cy="20" r="4.5" fill="#9cc3bd"/><rect x="26" y="16.5" width="24" height="7" rx="3.5" fill="#9cc3bd"/>
+<circle cx="17" cy="32" r="4.5" fill="#f4cf7c"/><rect x="26" y="28.5" width="24" height="7" rx="3.5" fill="#f4cf7c"/>
+<circle cx="17" cy="44" r="4.5" fill="#9cc3bd"/><rect x="26" y="40.5" width="19" height="7" rx="3.5" fill="#9cc3bd"/></symbol>
+</defs></svg>
+
+<!-- 1. Capa: o mapa -->
+<section id="f1-capa">
+  <svg class="mapa" viewBox="0 0 1080 1350" aria-hidden="true">
+    <g fill="none" stroke-width="22" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M -40 1010 H 360 Q 420 1010 460 970 L 540 890" stroke="#14655E"/>
+      <path d="M 540 890 L 640 790 Q 690 740 760 740 H 1120" stroke="#14655E"/>
+      <path d="M 540 890 V 1400" stroke="#C9952F"/>
+      <path d="M 540 890 L 760 1110 Q 800 1150 860 1150 H 1120" stroke="#C8513C"/>
+      <path d="M 540 890 L 450 800 Q 410 760 350 760 H -40" stroke="#2E64A8"/>
+    </g>
+    <g>
+      <circle cx="540" cy="890" r="58" fill="#fff" stroke="#10201E" stroke-width="12"/>
+      <circle cx="540" cy="890" r="24" fill="#10201E"/>
+      <g fill="#fff" stroke="#10201E" stroke-width="9">
+        <circle cx="200" cy="1010" r="22"/><circle cx="900" cy="740" r="22"/>
+        <circle cx="540" cy="1150" r="22"/>
+        <circle cx="960" cy="1150" r="22"/><circle cx="160" cy="760" r="22"/>
+      </g>
+    </g>
+    <text class="estacao-nome" x="620" y="905">Orto Questões</text>
+    <text class="estacao-nome" x="168" y="1062">TEOT</text>
+    <text class="estacao-nome" x="860" y="705">TARO</text>
+    <text class="estacao-nome" x="580" y="1160">Cirurgia da mão</text>
+    <text class="estacao-nome" x="880" y="1205">R4 ENARE</text>
+    <text class="estacao-nome" x="100" y="818">R4 Coluna</text>
+  </svg>
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="placa">Novidade</span></div>
+  <h1 style="margin-top:96px">Novas<br>linhas.</h1>
+  <p class="sub" style="margin-top:30px;max-width:780px">Além de TEOT e TARO, agora você treina para a <b>cirurgia da mão</b>, o <b>R4 do ENARE</b> e o <b>R4 de coluna</b>.</p>
+  <div class="rodape"><span>Mapa das provas</span><span class="seta">arraste <b>→</b></span></div>
+</section>
+
+<!-- 2. Linha Cirurgia da mão -->
+<section id="f2-mao" style="--cor: var(--mao)">
+  <div class="topo"><span class="legenda-linha"><span class="bolinha" style="background:var(--mao)">M</span> Linha Cirurgia da mão</span><span class="cont">2/5</span></div>
+  <h2 style="margin-top:50px">Questões com foco<br>na <em style="color:var(--mao)">cirurgia da mão.</em></h2>
+  <div class="trilho">
+    <div class="est"><strong>PUC-SP</strong></div>
+    <div class="est"><strong>UFG</strong></div>
+    <div class="est"><strong>INTO</strong></div>
+    <div class="est"><strong>FMRP-USP</strong></div>
+    <div class="est"><strong>IAUPE</strong></div>
+    <div class="est"><strong>UERJ</strong> <small>dissertativas</small></div>
+    <div class="est mais"><strong>e mais</strong></div>
+  </div>
+  <div class="nota">
+    <p><i>1</i><span>Provas de várias faculdades e centros, cada uma com a sua etiqueta.</span></p>
+    <p><i>2</i><span>Inclui o que é da cirurgia plástica: retalhos, enxertos, queimaduras, microcirurgia.</span></p>
+  </div>
+  <div class="rodape"><span>Especialidade com pré-requisito em ortopedia ou cirurgia plástica</span></div>
+</section>
+
+<!-- 3. Linhas R4 -->
+<section id="f3-r4">
+  <div class="topo"><span class="placa" style="background:var(--tinta)">Ano adicional</span><span class="cont">3/5</span></div>
+  <h2 style="margin-top:50px">Duas linhas<br>para o <em style="color:var(--enare)">R4</em>.</h2>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:20px">
+    <div style="--cor: var(--enare)">
+      <span class="legenda-linha" style="margin-top:30px"><span class="bolinha" style="background:var(--enare)">E</span> R4 ENARE</span>
+      <div class="trilho" style="margin-top:34px">
+        <div class="est"><strong>ENARE</strong></div>
+        <div class="est"><strong style="font-size:34px">Ortopedia e<br>Traumatologia R4</strong></div>
+        <div class="est mais" style="margin-top:30px"><strong>e mais</strong></div>
+      </div>
+      <p class="sub" style="font-size:27px;margin-top:20px">O ano adicional em ortopedia, com as provas do exame nacional.</p>
+    </div>
+    <div style="--cor: var(--coluna)">
+      <span class="legenda-linha" style="margin-top:30px"><span class="bolinha" style="background:var(--coluna)">C</span> R4 Coluna</span>
+      <div class="trilho" style="margin-top:34px">
+        <div class="est"><strong>SES-DF</strong></div>
+        <div class="est"><strong style="font-size:34px">Hospital São José<br>(Joinville)</strong></div>
+        <div class="est mais" style="margin-top:30px"><strong>e mais</strong></div>
+      </div>
+      <p class="sub" style="font-size:27px;margin-top:20px">Cirurgia da coluna: trauma raquimedular, deformidades, hérnia, casos clínicos em sequência.</p>
+    </div>
+  </div>
+  <div class="cartaz" style="margin-top:34px;padding:28px 34px;display:grid;gap:16px">
+    <p class="sub" style="font-size:27px"><b>Casos clínicos em sequência:</b> a questão já traz o caso inteiro, sem precisar voltar.</p>
+    <p class="sub" style="font-size:27px"><b>Itens de certo ou errado</b> viram Certo e Errado no site, como na prova.</p>
+    <p class="sub" style="font-size:27px"><b>Fora do Cronograma:</b> o R4 entra no treino quando você quiser.</p>
+  </div>
+</section>
+
+<!-- 4. Como embarcar -->
+<section id="f4-embarcar">
+  <div class="topo"><span class="legenda-linha"><span class="bolinha" style="background:var(--verde)">T</span> Como embarcar</span><span class="cont">4/5</span></div>
+  <h2 style="margin-top:50px">Você escolhe<br>as <em style="color:var(--verde)">linhas</em> do treino.</h2>
+  <div class="cartaz tela">
+    <p class="pergunta">Quais provas entram no treino? <small>Marque uma ou mais.</small></p>
+    <div class="opcoes">
+      <div class="op on" style="--cor: var(--verde)"><span class="check"></span><div><strong>Ortopedia (TEOT e TARO)</strong><span>TEOT, TARO e afins</span></div></div>
+      <div class="op" style="--cor: var(--enare)"><span class="check"></span><div><strong>R4 ENARE</strong><span>Ano adicional em ortopedia</span></div></div>
+      <div class="op on" style="--cor: var(--coluna)"><span class="check"></span><div><strong>R4 Coluna</strong><span>R4 de cirurgia da coluna</span></div></div>
+      <div class="op on" style="--cor: var(--mao)"><span class="check"></span><div><strong>Cirurgia da mão</strong><span>Especialidade à parte</span></div></div>
+    </div>
+    <p class="ilustrativa">Tela ilustrativa</p>
+  </div>
+  <p class="sub" style="margin-top:34px;font-size:30px">Dá para combinar as linhas. A de <b>TEOT e TARO</b> continua sendo a principal, e o Cronograma segue nela.</p>
+  <div class="rodape"><span>Treinar → Quais provas entram no treino?</span></div>
+</section>
+
+<!-- 5. Chamada -->
+<section id="f5-cta">
+  <svg class="mapa" viewBox="0 0 1080 1350" aria-hidden="true">
+    <g fill="none" stroke-width="22" stroke-linecap="round">
+      <path d="M -40 1180 H 1120" stroke="#14655E"/>
+      <path d="M -40 1225 H 1120" stroke="#C9952F"/>
+      <path d="M -40 1270 H 1120" stroke="#C8513C"/>
+      <path d="M -40 1315 H 1120" stroke="#2E64A8"/>
+    </g>
+  </svg>
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">5/5</span></div>
+  <h2 style="margin-top:110px;font-size:96px">Tem alguém indo<br>para a mão<br>ou para o R4?</h2>
+  <p class="sub" style="margin-top:40px;max-width:820px">Marque essa pessoa aqui. As provas antigas de cada lugar, organizadas por linha, prontas para treinar.</p>
+  <span class="cta">ortoquestoes.com.br <b>→</b></span>
+  <p class="sub" style="margin-top:26px;font-size:26px;color:var(--cinza)">Link na bio.</p>
+  <div style="position:absolute;left:72px;right:72px;top:960px;display:grid;grid-template-columns:1fr 1fr;gap:16px 40px;z-index:2">
+    <span class="legenda-linha"><span class="bolinha" style="background:var(--verde)">T</span> TEOT e TARO</span>
+    <span class="legenda-linha"><span class="bolinha" style="background:var(--mao)">M</span> Cirurgia da mão</span>
+    <span class="legenda-linha"><span class="bolinha" style="background:var(--enare)">E</span> R4 ENARE</span>
+    <span class="legenda-linha"><span class="bolinha" style="background:var(--coluna)">C</span> R4 Coluna</span>
+  </div>
+</section>
+
+<!-- Story 1: enquete -->
+<section class="story" id="s1-linha">
+  <svg class="mapa" viewBox="0 0 1080 1920" aria-hidden="true">
+    <g fill="none" stroke-width="26" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M -40 1500 H 380 Q 450 1500 495 1455 L 540 1410" stroke="#14655E"/>
+      <path d="M 540 1410 L 650 1300 Q 700 1250 770 1250 H 1120" stroke="#14655E"/>
+      <path d="M 540 1410 V 1980" stroke="#C9952F"/>
+      <path d="M 540 1410 L 760 1630 Q 800 1670 860 1670 H 1120" stroke="#C8513C"/>
+      <path d="M 540 1410 L 330 1200 Q 290 1160 230 1160 H -40" stroke="#2E64A8"/>
+    </g>
+    <circle cx="540" cy="1410" r="64" fill="#fff" stroke="#10201E" stroke-width="13"/>
+    <circle cx="540" cy="1410" r="26" fill="#10201E"/>
+    <g style="font: 800 30px Jakarta" fill="#10201E">
+      <text x="80" y="1555">TEOT</text><text x="880" y="1225">TARO</text>
+      <text x="80" y="1222">R4 Coluna</text><text x="570" y="1830">Cirurgia da mão</text><text x="820" y="1730">R4 ENARE</text>
+    </g>
+  </svg>
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="placa">Novidade</span></div>
+  <h1 style="margin-top:110px;font-size:150px">Novas<br>linhas.</h1>
+  <p class="sub" style="margin-top:36px;font-size:40px">Cirurgia da mão, R4 ENARE e R4 Coluna, além de TEOT e TARO.</p>
+  <p class="sub" style="margin-top:60px;font: 800 46px Jakarta;letter-spacing:-.02em">Qual linha você vai pegar?</p>
+  <div class="figurinha">figurinha de enquete</div>
+</section>
+
+<!-- Story 2: estações e link -->
+<section class="story" id="s2-estacoes">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="placa">Mapa das provas</span></div>
+  <div style="--cor: var(--mao); margin-top:80px">
+    <span class="legenda-linha" style="font-size:32px"><span class="bolinha" style="background:var(--mao);width:56px;height:56px">M</span> Cirurgia da mão</span>
+    <p class="sub" style="margin-top:20px;font: 800 48px Jakarta;letter-spacing:-.03em;line-height:1.25">PUC-SP · UFG · INTO · FMRP-USP · IAUPE · UERJ <span style="color:var(--cinza);font-weight:600">e mais</span></p>
+  </div>
+  <div style="margin-top:70px">
+    <span class="legenda-linha" style="font-size:32px"><span class="bolinha" style="background:var(--enare);width:56px;height:56px">E</span> R4 ENARE</span>
+    <p class="sub" style="margin-top:20px;font: 800 48px Jakarta;letter-spacing:-.03em;line-height:1.25">Ortopedia e Traumatologia R4 <span style="color:var(--cinza);font-weight:600">e mais</span></p>
+  </div>
+  <div style="margin-top:70px">
+    <span class="legenda-linha" style="font-size:32px"><span class="bolinha" style="background:var(--coluna);width:56px;height:56px">C</span> R4 Coluna</span>
+    <p class="sub" style="margin-top:20px;font: 800 48px Jakarta;letter-spacing:-.03em;line-height:1.25">SES-DF · Hospital São José <span style="color:var(--cinza);font-weight:600">e mais</span></p>
+  </div>
+  <div style="margin-top:70px">
+    <span class="legenda-linha" style="font-size:32px"><span class="bolinha" style="background:var(--verde);width:56px;height:56px">T</span> TEOT e TARO</span>
+    <p class="sub" style="margin-top:20px;font: 800 48px Jakarta;letter-spacing:-.03em;line-height:1.25">A linha principal continua aqui.</p>
+  </div>
+  <p class="sub" style="margin-top:90px;font-size:36px">No Treinar, marque as linhas que quiser.</p>
+  <div class="figurinha" style="height:210px">figurinha de link</div>
+  <svg class="mapa" viewBox="0 0 1080 1920" aria-hidden="true">
+    <g fill="none" stroke-width="24" stroke-linecap="round">
+      <path d="M -40 1700 H 1120" stroke="#14655E"/><path d="M -40 1750 H 1120" stroke="#C9952F"/>
+      <path d="M -40 1800 H 1120" stroke="#C8513C"/><path d="M -40 1850 H 1120" stroke="#2E64A8"/>
+    </g>
+  </svg>
+</section>
+
+</body></html>
