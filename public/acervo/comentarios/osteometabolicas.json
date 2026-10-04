@@ -1200,5 +1200,22 @@
   "provavel": "A",
   "geradoEm": "2026-09-30",
   "conferido": false
+ },
+ "osteometabolicas-0094": {
+  "incorretas": {
+   "A": "**Acidose metabólica.** Acidose tubular renal pode causar raquitismo por perda de bicarbonato e alterações no metabolismo mineral. Seriam necessários dados de pH, bicarbonato e função tubular; ela não explica tão diretamente o calcitriol alto com padrão de resistência à sua ação.",
+   "B": "**Osteodistrofia renal.** Doença renal crônica pode causar hiperparatireoidismo e alterações ósseas, mas o quadro deve ser interpretado junto de função renal, fosfato e capacidade de produzir calcitriol. A elevação marcada do hormônio ativo favorece resistência no tecido-alvo.",
+   "C": "**\"Vitamina D resistente\" é termo impreciso.** Se a banca pretende o raquitismo hipofosfatêmico clássico por perda renal de fosfato, espera-se predominantemente fosfato baixo, com cálcio geralmente normal. Se pretende resistência ao calcitriol, está nomeando o próprio tipo II da alternativa E.",
+   "D": "**Tipo I é defeito de ativação.** Na deficiência clássica da 1-alfa-hidroxilase, o rim não produz calcitriol em quantidade adequada apesar de 25-hidroxivitamina D disponível. Nesta criança o calcitriol está aumentado, o oposto do padrão esperado."
+  },
+  "alerta": "A expressão \"raquitismo resistente à vitamina D\" é ambígua: já foi usada tanto para formas de perda renal de fosfato quanto para a resistência ao calcitriol por defeito do receptor, que é justamente o tipo II. A alternativa E é a classificação mais precisa diante de 1,25-di-hidroxivitamina D elevada e sinais de deficiência de ação do hormônio; mantenho o gabarito oficial.",
+  "conceito": "**O exame decisivo é o metabólito ativo.** A 25-hidroxivitamina D reflete o estoque corporal; a 1,25-di-hidroxivitamina D, ou calcitriol, é a forma hormonal ativa produzida principalmente no rim. Para o calcitriol agir, precisa ligar-se ao receptor de vitamina D nos tecidos. Aqui há substrato normal e calcitriol alto, mas persistem hipocalcemia, hipofosfatemia, PTH elevado e sinais ósseos de raquitismo. O padrão sugere resistência à ação do hormônio, não falta de produção.\n\n**Tipo I e tipo II separam produção de resposta.** No raquitismo dependente de vitamina D tipo I clássico, o defeito de CYP27B1 impede a conversão da 25-hidroxivitamina D em calcitriol: o metabólito ativo fica baixo ou inadequadamente normal. No tipo II, em geral por alteração do receptor VDR, o calcitriol circula em concentração alta, mas sua ação intestinal e óssea é insuficiente. A menor absorção intestinal de cálcio leva a hiperparatireoidismo secundário; o PTH aumenta a perda renal de fosfato, agravando a mineralização. Alopecia pode acompanhar algumas variantes de resistência ao VDR, mas sua ausência não exclui o diagnóstico.\n\n**O osso mostra o defeito de mineralização.** Fise alargada, deformada e arqueada na criança indicam raquitismo; pseudofraturas de Looser são linhas de insuficiência ligadas à matriz mal mineralizada. A fosfatase alcalina elevada traduz intensa atividade osteoblástica nesse contexto. O tratamento do tipo II pode exigir doses altas de cálcio, por vezes por via intravenosa nas formas graves, sob acompanhamento especializado; simplesmente fornecer mais vitamina D nem sempre supera a resistência do receptor.\n\n**A comparação prática.** Perda renal primária de fosfato costuma ter hipofosfatemia com cálcio preservado e PTH não tão elevado antes do tratamento. Osteodistrofia por doença renal crônica exige evidência de disfunção renal e pode reduzir a produção de calcitriol. O conjunto completo dos metabólitos e do eixo cálcio-PTH vale mais que o geno varo isolado.",
+  "correta": "**Raquitismo dependente de vitamina D tipo II.** Há resistência tecidual ao calcitriol: sua concentração está alta, enquanto cálcio e fosfato continuam baixos e o PTH se eleva.",
+  "referencias": [
+   "Disorders in the Action of Vitamin D, Endotext. https://www.ncbi.nlm.nih.gov/books/NBK279150/",
+   "Diagnosis and Management of Vitamin D Dependent Rickets. https://pmc.ncbi.nlm.nih.gov/articles/PMC7303887/"
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  }
 }

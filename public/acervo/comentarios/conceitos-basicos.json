@@ -3149,5 +3149,37 @@
   "provavel": "A",
   "geradoEm": "2026-09-30",
   "conferido": false
+ },
+ "conceitos-basicos-0309": {
+  "incorretas": {
+   "A": "**Isométrica.** Há produção de força sem mudança expressiva do comprimento global do músculo. Pode causar lesão sob carga extrema, mas não é a associação principal descrita para o microdano clássico do exercício de frenagem.",
+   "B": "**Concêntrica.** O músculo encurta ao vencer a resistência, como ao levantar a carga. Também pode gerar fadiga e, em condições extremas, lesão, mas costuma produzir menos desorganização estrutural que o esforço excêntrico não habitual comparável.",
+   "D": "**Associação desnecessária.** Uma fase isométrica pode ocorrer em um movimento real, mas a característica relevante para o dano perguntado é a fase em que a fibra ativada se alonga. A resposta não exige combinar os dois modos.",
+   "E": "**Falta a fase de alongamento ativo.** Isometria e encurtamento concêntrico não descrevem a frenagem sob carga que caracteriza o estímulo excêntrico cobrado no enunciado."
+  },
+  "conceito": "**O músculo ativo também pode alongar.** Na contração concêntrica, a força produzida supera a resistência e o músculo encurta, como na subida de um agachamento. Na isométrica, o comprimento global fica aproximadamente constante. Na excêntrica, a fibra está ativada, mas é alongada por uma carga maior, como ao frear a descida do agachamento ou amortecer um salto. É esse trabalho de frenagem que a pergunta relaciona principalmente ao microdano após exercício de força.\n\n**Onde começa a lesão.** Sob tensão elevada, especialmente quando o exercício excêntrico é intenso ou pouco habitual, alguns sarcômeros se alongam de modo desigual. A desorganização das linhas Z e das miofibrilas pode vir acompanhada de alterações no citoesqueleto, no sarcolema e no sistema de túbulos T, que participa do acoplamento entre estímulo elétrico e contração. Estudos com biópsia humana descreveram alterações ultraestruturais após esse tipo de esforço. A resposta inflamatória posterior participa da remoção e reparo do tecido, mas dor muscular tardia, isoladamente, não quantifica a gravidade do dano.\n\n**Não é exclusividade absoluta.** Contrações isométricas muito intensas também podem causar dano experimental, e exercícios concêntricos podem lesar se a carga for suficiente. A palavra \"principalmente\" é importante: entre os modos comparados, a excêntrica não habituada é a associação clássica com desorganização de linha Z e perda transitória de força. A progressão gradual de carga reduz a intensidade do dano em sessões seguintes, fenômeno conhecido como efeito da sessão repetida.",
+  "correta": "**Contração excêntrica.** O músculo produz força enquanto é alongado, suportando alta tensão mecânica e maior risco de microdano quando o esforço é intenso ou não habitual.",
+  "referencias": [
+   "Myofibrillar damage following intense eccentric exercise in man. https://pubmed.ncbi.nlm.nih.gov/6629599/",
+   "Evidence of skeletal muscle damage following electrically stimulated isometric muscle contractions in humans. https://journals.physiology.org/doi/full/10.1152/japplphysiol.90952.2008"
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
+ },
+ "conceitos-basicos-0310": {
+  "incorretas": {
+   "A": "**III A.** III pressupõe infecção localizada que ainda permite manter a estabilidade após a retirada do foco; o caso descreve acometimento de todo o segmento com instabilidade. A também não contempla o possível dano local acumulado.",
+   "B": "**III B.** A letra B é compatível com comprometimento local, mas o número III subestima a extensão anatômica descrita. O padrão difuso e instável pertence ao estágio IV.",
+   "C": "**IV A seria possível sem dano local.** Reconhece corretamente a anatomia, mas pressupõe hospedeiro com tecidos locais íntegros. A banca interpretou trauma e múltiplas cirurgias malsucedidas como comprometimento local suficiente para B.",
+   "E": "**IV C exige outro cenário.** A extensão anatômica está certa, mas C é reservado a pacientes em que o tratamento curativo traz risco ou custo maior que o benefício, ou que não toleram cirurgia. Um adulto de 25 anos sem comorbidades não recebe essa letra apenas porque já falhou em operações prévias."
+  },
+  "alerta": "O enunciado chama o paciente de hígido, o que poderia sugerir hospedeiro A. A resposta D pressupõe comprometimento local relevante após trauma e múltiplas cirurgias sem sucesso, caracterizando hospedeiro B local apesar de não haver comorbidades sistêmicas. A extensão desse comprometimento não é descrita em detalhe; mantemos o gabarito informado pela prova e explicitamos a inferência.",
+  "conceito": "**Cierny-Mader combina duas perguntas independentes.** O número descreve a anatomia da osteomielite: I é medular; II, superficial; III, localizada, com osso viável suficiente para preservar estabilidade após desbridamento; IV, difusa, envolvendo toda a circunferência de um segmento e frequentemente associada a perda de estabilidade. Invasão de todo o segmento tibial e instabilidade axial apontam para IV, não para III.\n\n**A letra avalia o hospedeiro, não a idade.** A é o paciente com boa resistência sistêmica e local, incluindo tecidos vascularizados e cobertura adequada. B indica comprometimento que ainda permite tratamento, seja sistêmico, local ou ambos. C é o paciente para quem a agressividade do tratamento pode superar o benefício, ou que não é bom candidato à cirurgia. Um adulto jovem sem diabetes ou outras doenças pode ser B local quando o trauma e repetidas operações deixam osso e partes moles com capacidade de cicatrização prejudicada.\n\n**Por que a questão escolhe IV B.** A infecção difusa explica o IV; o histórico de osteomielite pós-traumática submetida a várias cirurgias malsucedidas sustenta a suspeita de dano local persistente e a letra B. Isso não significa que toda cirurgia prévia transforma automaticamente alguém em B: a classificação requer avaliação real de vascularização, cobertura, cicatrizes e viabilidade do membro. Se esses tecidos estivessem comprovadamente íntegros, IV A seria defensável.\n\n**O estágio orienta o plano.** Doença difusa com instabilidade exige avaliar desbridamento de osso inviável, culturas profundas, antibióticos dirigidos, estabilização e eventual reconstrução de partes moles e defeito ósseo. A classificação ajuda a dimensionar esse tratamento, mas não substitui exame clínico e imagem.",
+  "correta": "**IV B, conforme o gabarito informado.** IV decorre do envolvimento difuso com instabilidade; B depende da inferência de comprometimento local após trauma e múltiplas operações, mesmo em paciente sistemicamente hígido.",
+  "referencias": [
+   "AO Surgery Reference. Classification of fracture wound infection. https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/further-reading/classification-of-fracture-wound-infection"
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  }
 }
