@@ -782,122 +782,122 @@
   "conferido": false
  },
  "pediatria-0054": {
-  "conceito": "### Deformidade de Sprengel\n- Falha da descida da escápula; pequena, alta, ==rodada medialmente==.\n- ==Osso omovertebral== (ou banda fibrosa) em cerca de 1/3: liga o ângulo superior à coluna cervical.\n- Associações: Klippel-Feil, escoliose, costelas anômalas, rim.\n\n### Cirurgia\n| Aspecto | Detalhe |\n|---|---|\n| idade | ==após 3 anos== (ideal 3 a 8) |\n| técnicas | Woodward (desinserção medial), Green (desinserção na escápula), Wilkinson-Campbell |\n| ==omovertebral== | ressecção ==extraperiosteal== (subperiosteal regenera a ponte) |\n| risco | lesão do ==plexo braquial== ao descer: osteotomia da clavícula protege |\n\n### Cavendish\n- Graus 1 a 4 conforme a visibilidade da deformidade.\n\n> **Na prova:** omovertebral = ressecção ==extraperiosteal, depois dos 3 anos==.",
-  "correta": "**Extraperiosteal, após os 3 anos.**\n- Periósteo deixado regenera a ponte óssea.\n- Janela cirúrgica entre 3 e 8 anos.",
   "incorretas": {
-   "A": "**Subperiosteal regenera.**\n- Idade certa.",
-   "B": "**Duplamente errada.**\n- Subperiosteal e cedo.",
-   "D": "**Cedo demais.**\n- Técnica certa."
+   "A": "A idade está certa, mas a ressecção subperiosteal deixa periósteo que refaz a ponte óssea.",
+   "B": "Erra a técnica e a idade: a ressecção é extraperiosteal e depois dos 3 anos.",
+   "D": "A técnica está certa, mas antes dos 3 anos é cedo demais para essa cirurgia."
   },
+  "conceito": "Na **deformidade de Sprengel** (escápula alta congênita), a escápula não desce durante a gestação: fica **pequena, alta e rodada**, e limita a abdução do ombro. Em cerca de um terço dos casos existe o **osso omovertebral**, uma ponte de osso, cartilagem ou tecido fibroso que liga o ângulo superior da escápula à coluna cervical e prende a escápula no alto.\n\n**A cirurgia**:\n\n**idade**: depois dos **3 anos**, idealmente entre 3 e 8; antes, a criança é pequena demais e o risco é maior; depois de 8, a escápula desce pouco;\n\n**omovertebral**: deve ser retirado **extraperiostealmente**, isto é, junto com o seu periósteo; se for tirado por dentro do periósteo (subperiosteal), o periósteo que fica **forma osso de novo** e a ponte volta;\n\n**técnicas**: Woodward (solta a origem dos músculos na coluna e reinsere mais abaixo), Green (solta os músculos na própria escápula) e Wilkinson-Campbell;\n\n**risco**: ao descer a escápula, o **plexo braquial** pode ser comprimido entre a clavícula e a 1ª costela; a **osteotomia da clavícula** protege.\n\n**As associações**: Klippel-Feil, escoliose, costelas anômalas e anomalias renais.\n\n**Na prova**: osso omovertebral = ressecção **extraperiosteal**, **depois dos 3 anos**.",
+  "correta": "O omovertebral é retirado junto com o periósteo, para não regenerar, e a cirurgia é feita depois dos 3 anos.",
   "referencias": [
    "Surgical Treatment of Sprengel’s Deformity: systematic review. https://pmc.ncbi.nlm.nih.gov/articles/PMC8700527/",
    "Surgical management of Sprengel deformity. https://upload.orthobullets.com/journalclub/free_pdf/22382290_sprengel.pdf"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0055": {
-  "conceito": "### Ciclo da marcha (100%)\n| Fase | % |\n|---|---|\n| ==apoio== | ==cerca de 60%== |\n| - duplo apoio inicial | 10% |\n| - ==apoio simples== | ==40%== |\n| - duplo apoio final | 10% |\n| ==balanço== | ==cerca de 40%== |\n\n### Subfases (Perry)\n| Apoio | Balanço |\n|---|---|\n| contato inicial | balanço inicial |\n| resposta à carga | balanço médio |\n| apoio médio | balanço terminal |\n| apoio terminal | |\n| pré-balanço | |\n\n### Corrida\n- Sem duplo apoio; surge fase de voo; apoio < 50%.\n\n> **Na prova:** apoio simples = ==40%== do ciclo.",
-  "correta": "**40% e 60%.**\n- Balanço 40%, apoio 60%.\n- Apoio simples 40%, duplo apoio 20%.",
   "incorretas": {
-   "A": "**Muito desproporcional.**\n- Não corresponde.",
-   "B": "**Desproporcional.**\n- Apoio é 60.",
-   "D": "**Invertida.**\n- Balanço é o menor."
+   "A": "70% de balanço e 30% de apoio está muito longe da proporção real.",
+   "B": "Os valores não correspondem: o balanço é cerca de 40% e o apoio, cerca de 60%.",
+   "D": "Os valores estão invertidos: o balanço é a fase menor."
   },
+  "conceito": "O **ciclo da marcha** vai de um contato do pé no chão até o próximo contato do **mesmo pé**. Ele se divide em:\n\n**apoio**: o pé está no chão; cerca de **60%** do ciclo;\n\n**balanço**: o pé está no ar; cerca de **40%** do ciclo.\n\n**Dentro do apoio**: há dois períodos de **duplo apoio** (os dois pés no chão), de cerca de **10%** cada, no começo e no fim, e o **apoio simples** no meio, de cerca de **40%**, que coincide com o balanço do outro lado.\n\n**As subfases de Perry**: no apoio, contato inicial, resposta à carga, apoio médio, apoio terminal e pré-balanço; no balanço, inicial, médio e terminal.\n\n**Quando a velocidade aumenta**: o duplo apoio encurta; na **corrida**, ele desaparece, surge uma fase de voo e o apoio cai para menos de 50%.\n\n**Na prova**: balanço e apoio ocupam **40% e 60%** do ciclo.",
+  "correta": "Na marcha normal, o balanço ocupa cerca de 40% do ciclo e o apoio, cerca de 60%.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Gait. https://posna.org/physician-education/study-guide/gait"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0056": {
-  "conceito": "### Apofisites do joelho\n| Doença | Local | Idade | Perfil |\n|---|---|---|---|\n| ==Sinding-Larsen-Johansson== | ==polo inferior da patela== | ==10 a 14 anos== | ==meninos== ativos (saltos) |\n| Osgood-Schlatter | tuberosidade anterior da tíbia | 10 a 15 anos | meninos esportistas; bilateral em 25% |\n| joelho do saltador (adulto) | tendão patelar proximal | adulto | tendinopatia |\n\n### Sinding-Larsen-Johansson\n- Tração do tendão patelar sobre o polo inferior imaturo: fragmentação, calcificação.\n- Autolimitada: repouso relativo, gelo, alongamento do quadríceps.\n- Diferencial: fratura-avulsão em manga (sleeve fracture) da patela, que é aguda e cirúrgica.\n\n> **Na prova:** Sinding-Larsen-Johansson = ==meninos de 10 a 14 anos==.",
-  "correta": "**Meninos de 10 a 14 anos.**\n- Apofisite do polo inferior da patela.\n- Esportes com salto; autolimitada.",
   "incorretas": {
-   "A": "**Sexo e idade errados.**\n- Meninos maiores.",
-   "B": "**Idade errada.**\n- Mais velhos.",
-   "C": "**Sexo errado.**\n- Meninos."
+   "A": "Erra o sexo e a idade: predomina em meninos e um pouco mais velhos.",
+   "B": "O sexo está certo, mas a idade típica é de 10 a 14 anos.",
+   "C": "A idade está certa, mas predomina no sexo masculino."
   },
+  "conceito": "No joelho do adolescente, o tendão patelar puxa dois pontos de cartilagem de crescimento, e cada um tem a sua **apofisite de tração**:\n\n**Sinding-Larsen-Johansson**: no **polo inferior da patela**; **meninos de 10 a 14 anos**, ativos, sobretudo em esportes com **saltos**;\n\n**Osgood-Schlatter**: na **tuberosidade anterior da tíbia**; meninos esportistas entre 10 e 15 anos; bilateral em cerca de 25%;\n\n**joelho do saltador**: no adulto, é tendinopatia do tendão patelar proximal, já sem cartilagem de crescimento.\n\n**O que acontece na Sinding-Larsen-Johansson**: a tração repetida no polo inferior imaturo causa **fragmentação** e **calcificação** visíveis na radiografia, com dor localizada.\n\n**O tratamento**: é **autolimitada**: repouso relativo dos saltos, gelo e alongamento do quadríceps até o fim do crescimento.\n\n**O diferencial importante**: a **fratura-avulsão em manga** (sleeve fracture) do polo inferior da patela, que é **aguda**, depois de um salto, com incapacidade de estender o joelho, e é **cirúrgica**.\n\n**Na prova**: Sinding-Larsen-Johansson = **meninos de 10 a 14 anos**.",
+  "correta": "A Sinding-Larsen-Johansson acomete sobretudo meninos ativos entre 10 e 14 anos.",
   "referencias": [
    "Evaluation and management of knee pain in young athletes. https://pmc.ncbi.nlm.nih.gov/articles/PMC5532199/",
    "Narrative review: knee pain in the pediatric athlete. https://pmc.ncbi.nlm.nih.gov/articles/PMC8137791/",
    "Incidence and risk factors for lower extremity apophysitis. https://pmc.ncbi.nlm.nih.gov/articles/PMC13018006/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0057": {
-  "conceito": "### Cronologia embrionária do membro\n| Semana | Evento |\n|---|---|\n| 4ª | broto do membro superior (inferior poucos dias depois) |\n| 5ª a 6ª | condensação mesenquimal, molde cartilaginoso |\n| ==7ª a 8ª== | ==centros de ossificação primários== dos ossos longos (clavícula primeiro, ~5ª a 6ª; ==fêmur e tíbia na 7ª a 8ª==) |\n| 7ª | rotação dos membros |\n| 8ª | fim da organogênese |\n| 12ª em diante | ossificação progride nos ossos curtos |\n\n### Particularidades\n- ==Clavícula==: primeiro osso a ossificar (membranosa, 5ª semana), último a fechar a fise medial (cerca de 25 anos).\n- Ossificação endocondral: centro primário na diáfise; secundários (epífises) em geral após o nascimento, exceto fêmur distal (36ª semana, sinal de maturidade fetal).\n\n> **Na prova:** ossificação de fêmur e tíbia = ==7ª e 8ª semanas==.",
-  "correta": "**7ª e 8ª semanas.**\n- Centros primários diafisários.\n- Final do período embrionário.",
   "incorretas": {
-   "A": "**Cedo demais.**\n- Ainda mesênquima/cartilagem.",
-   "C": "**Tarde.**\n- Já ossificando antes.",
-   "D": "**Tarde.**\n- Idem."
+   "A": "Na 5ª e 6ª semanas os ossos longos ainda são moldes de cartilagem; só a clavícula começa a ossificar.",
+   "C": "Na 9ª e 10ª semanas o fêmur e a tíbia já estão ossificando.",
+   "D": "Na 10ª e 11ª semanas a ossificação desses ossos já começou há algum tempo."
   },
+  "conceito": "Os **ossos longos** começam como **moldes de cartilagem** no embrião e depois ossificam de dentro para fora (**ossificação endocondral**). O primeiro osso que aparece é o **centro primário de ossificação**, no meio da diáfise.\n\n**A cronologia**:\n\n**4ª semana**: surgem os brotos dos membros;\n\n**5ª e 6ª semanas**: o mesênquima se condensa e forma os moldes de cartilagem; a **clavícula**, de ossificação membranosa, começa a ossificar nesse período (é o **primeiro osso** a ossificar);\n\n**7ª e 8ª semanas**: aparecem os **centros primários** dos ossos longos, entre eles o **fêmur** e a **tíbia**;\n\n**8ª semana**: termina a organogênese.\n\n**Os centros secundários** (as epífises), em geral, aparecem depois do nascimento. A exceção é o **fêmur distal**, por volta da 36ª semana, usado como sinal de maturidade fetal.\n\n**Curiosidade da clavícula**: é o primeiro osso a ossificar e o último a fechar a fise (a medial, por volta dos 25 anos).\n\n**Na prova**: ossificação do fêmur e da tíbia = **7ª e 8ª semanas**.",
+  "correta": "Os centros primários de ossificação do fêmur e da tíbia aparecem na 7ª e na 8ª semanas de gestação.",
   "referencias": [
    "The Developing Human: Clinically Oriented Embryology, skeletal system. https://www.ncbi.nlm.nih.gov/books/NBK548949/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0058": {
-  "conceito": "### GMFCS (6 a 12 anos)\n| Nível | Mobilidade |\n|---|---|\n| I | anda sem restrições; corre e salta com limitação |\n| II | anda na maioria dos ambientes; limitação em distâncias, terreno irregular |\n| III | anda com ==dispositivo manual== (andador, muletas); cadeira para distâncias |\n| ==IV== | ==controle de cabeça e tronco==; anda pouco (casa, com ajuda); ==cadeira de rodas na comunidade== (pode ser motorizada) |\n| V | sem controle de cabeça e tronco; transportado |\n\n### Uso ortopédico\n| Nível | Preocupação |\n|---|---|\n| I-III | marcha: análise, cirurgia multinível |\n| ==IV-V== | ==luxação do quadril== (vigilância radiográfica), escoliose |\n\n- Índice de migração de Reimers > 30 a 40%: cirurgia de partes moles ou osteotomias.\n\n### Distribuição\n- ==Nível I== é o mais frequente nos registros populacionais (cerca de 1/3 a 40%).\n- Espásticos unilaterais (hemiplegia) concentram-se em I e II.\n\n> **Na prova:** GMFCS mais frequente = ==nível I== (veja o alerta).",
-  "correta": "**Nível I.**\n- Mais frequente nos registros.\n- Hemiplégicos predominam nos níveis leves.",
   "incorretas": {
-   "B": "**Frequente, não o maior.**\n- Nível II.",
-   "C": "**Menos frequente.**\n- Dispositivo manual.",
-   "D": "**Menos frequente.**\n- Cadeira na comunidade."
+   "B": "O nível II é frequente, mas fica atrás do nível I.",
+   "C": "O nível III, com dispositivo manual para andar, é menos frequente.",
+   "D": "O nível IV, com cadeira de rodas na comunidade, é menos frequente."
   },
+  "conceito": "O **GMFCS** classifica a função motora grossa na paralisia cerebral em cinco níveis, do I (anda sem restrições) ao V (não controla cabeça e tronco e é transportado).\n\n**A distribuição nos registros populacionais**: o **nível I** é o **mais frequente**, com cerca de um terço a 40% das crianças. Isso acontece porque a forma mais comum de paralisia cerebral é a **espástica**, e entre elas as **unilaterais** (hemiplegia) costumam estar nos níveis **I e II**. Os níveis mais graves são menos numerosos, mas concentram os problemas de quadril e coluna.\n\n**Para que o nível serve no dia a dia**:\n\n**I a III**: o foco é a **marcha** (análise de marcha e cirurgia em vários níveis num só tempo);\n\n**IV e V**: o foco é a vigilância do **quadril**, com radiografias periódicas e o índice de migração de Reimers, e a **escoliose**.\n\nA proporção exata de cada nível varia entre registros e serviços.\n\n**Na prova**: nível GMFCS mais frequente = **nível I**.",
+  "correta": "Nos registros populacionais, o nível I é o mais frequente, muito por conta das formas espásticas unilaterais.",
   "alerta": "A prevalência de cada nível GMFCS varia entre registros e serviços. A alternativa reproduz a distribuição epidemiológica esperada pela fonte da prova.",
   "referencias": [
    "GMFCS Expanded and Revised. CanChild. https://mld.foundation/wp-content/uploads/2020/04/GMFCS-ER_2007.pdf"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0059": {
-  "conceito": "### Osteogênese imperfeita (Sillence modificada)\n| Tipo | Gravidade | Detalhe |\n|---|---|---|\n| I | leve | ==escleras azuis==, surdez, colágeno em quantidade reduzida |\n| II | letal perinatal | fraturas múltiplas intrauterinas |\n| III | grave progressiva | deformidade, baixa estatura, dentinogênese |\n| IV | moderada | escleras normais |\n| ==V== | moderada | ==calo hiperplásico== (simula ==osteossarcoma==), ==calcificação da membrana interóssea== do antebraço, luxação da cabeça do rádio; IFITM5 |\n| VI em diante | variadas | genes não colágenos |\n\n### Tratamento\n- ==Bisfosfonato== (pamidronato, zoledronato).\n- Hastes telescópicas (Fassier-Duval, Sheffield) nas deformidades e fraturas repetidas.\n\n### Base molecular\n- Colágeno tipo I: tripla hélice com repetição ==Gly-X-Y== (glicina a cada terceiro aminoácido).\n- ==Substituição da glicina== (mutação de sentido trocado em COL1A1/COL1A2) impede o enrolamento: formas graves (II, III, IV).\n- Mutação que reduz a quantidade (haploinsuficiência): forma leve (I).\n\n> **Na prova:** aminoácido do defeito do colágeno na OI = ==glicina==",
-  "correta": "**Glicina.**\n- Presente a cada três posições da hélice.\n- Sua substituição desestrutura a tripla hélice.",
   "incorretas": {
-   "A": "**Não é o defeito clássico.**\n- Lisina é hidroxilada, mas não é o alvo.",
-   "C": "**Não é o defeito.**\n- Cisteína.",
-   "D": "**Não é o defeito.**\n- Arginina."
+   "A": "A lisina é hidroxilada para estabilizar o colágeno, mas não é o aminoácido do defeito clássico.",
+   "C": "A cisteína não é o aminoácido envolvido no defeito clássico.",
+   "D": "A arginina não é o aminoácido envolvido no defeito clássico."
   },
+  "conceito": "O **colágeno tipo I** é formado por três cadeias enroladas em **tripla hélice** (duas α1, do gene COL1A1, e uma α2, do COL1A2). Para a hélice se enrolar bem, cada cadeia repete a sequência **Gly-X-Y**: a **glicina** aparece a cada terceiro aminoácido. Ela é o menor aminoácido, o único que cabe no centro apertado da hélice.\n\n**O defeito na osteogênese imperfeita**:\n\n**substituição da glicina** por outro aminoácido maior (mutação de sentido trocado): a hélice não enrola direito, e o colágeno sai **defeituoso**; são as formas **graves** (tipos II, III e IV);\n\n**mutação que reduz a quantidade** de colágeno (haploinsuficiência, sem defeito na estrutura): é a forma **leve** (tipo I), com escleras azuis.\n\nOs tipos mais recentes (V em diante) vêm de genes que não codificam o colágeno.\n\n**Os outros aminoácidos**: a **lisina** e a **prolina** são hidroxiladas para estabilizar o colágeno (o que depende da vitamina C), mas não são o defeito clássico da osteogênese imperfeita.\n\n**Na prova**: aminoácido envolvido no defeito do colágeno na osteogênese imperfeita = **glicina**.",
+  "correta": "A glicina aparece a cada três posições da tripla hélice, e a troca dela por outro aminoácido desestrutura o colágeno.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Osteogenesis Imperfecta. https://posna.org/physician-education/study-guide/osteogenesis-imperfecta",
    "GeneReviews. COL1A1- and COL1A2-Related Osteogenesis Imperfecta. https://www.ncbi.nlm.nih.gov/books/NBK1295/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0060": {
-  "conceito": "### Sinostose radioulnar congênita\n- Falha de segmentação entre rádio e ulna proximais (7ª semana).\n- ==Bilateral em cerca de 60%==, geralmente ==isolada==.\n- Pode associar-se a síndromes (Apert, Klinefelter e aneuploidias do X, artrogripose).\n- Antebraço fixo, em geral ==pronado==; compensação pelo ombro e punho.\n- Diagnóstico tardio (compensação eficiente).\n\n### Classificação (Tachdjian / Cleary-Omer)\n- Fibrosa × óssea; cabeça do rádio normal, ausente ou luxada.\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| neutro ou leve pronação | ==observação== |\n| pronação > 60° com limitação | osteotomia derrotativa (neutro a 10-20° de pronação) |\n| risco | ==síndrome compartimental== nas grandes correções |\n\n> **Na prova:** sinostose radioulnar = ==isolada e bilateral==.",
-  "correta": "**Isolada e bilateral.**\n- Bilateral em cerca de 60%.\n- Na maioria, sem outras malformações.",
   "incorretas": {
-   "B": "**Lado errado.**\n- Predomina bilateral.",
-   "C": "**Associações são exceção.**\n- Geralmente isolada.",
-   "D": "**Duplamente errada.**\n- Associada e unilateral."
+   "B": "Ela é isolada, mas é mais comum bilateral.",
+   "C": "Ela é bilateral, mas as associações a malformações são a exceção.",
+   "D": "Erra os dois: geralmente é isolada e bilateral."
   },
+  "conceito": "A **sinostose radioulnar congênita** é a união entre o rádio e a ulna na parte **proximal** do antebraço, por falha de separação dos dois ossos por volta da 7ª semana de gestação. O antebraço fica **fixo**, em geral em **pronação**, sem pronossupinação.\n\n**As características**:\n\n**bilateral** em cerca de 60%;\n\n**isolada** na maioria das vezes; às vezes associada a síndromes (Apert, aneuploidias do cromossomo X como Klinefelter, artrogripose);\n\no diagnóstico costuma ser **tardio**, porque o ombro e o punho compensam bem a falta de rotação.\n\n**O tratamento**:\n\n**antebraço em neutro ou pouca pronação**: **observar**; a função costuma ser boa;\n\n**pronação acentuada** (acima de cerca de 60°) com limitação: **osteotomia derrotativa** para deixar o antebraço perto do neutro (ou 10 a 20° de pronação);\n\n**risco**: grandes correções podem causar **síndrome compartimental** ou lesão vascular, por isso a rotação é feita com cautela.\n\n**Na prova**: sinostose radioulnar congênita = **isolada e bilateral**.",
+  "correta": "A sinostose radioulnar congênita costuma ser bilateral e, na maioria das vezes, sem outras malformações.",
   "referencias": [
    "Congenital Radioulnar Synostosis Review. https://pmc.ncbi.nlm.nih.gov/articles/PMC11593211/",
    "Functional outcomes in congenital radioulnar synostosis. https://pmc.ncbi.nlm.nih.gov/articles/PMC13081135/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0061": {
-  "conceito": "### Luxação congênita da cabeça do rádio\n- Anomalia congênita mais comum do cotovelo.\n- ==Bilateral== na maioria e ==associada== a outras manifestações (sinostose, síndromes como nail-patella, Ehlers-Danlos, Larsen).\n- Direção mais comum: ==posterior==.\n\n### Congênita × Monteggia crônico\n| Achado | Congênita | Traumática |\n|---|---|---|\n| lado | bilateral | unilateral |\n| cabeça | ==convexa (cúpula)==, pequena | côncava, normal |\n| capítulo | hipoplásico | normal |\n| ulna | reta | deformidade plástica |\n| direção | posterior | anterior |\n\n### Tratamento\n- Observação; ressecção da cabeça após a maturidade se dor.\n\n### Limitação de movimento\n| Direção | Bloqueio |\n|---|---|\n| ==posterior== | ==extensão== (cabeça bate atrás do capítulo) |\n| anterior | flexão |\n\n- Pronossupinação costuma ser pouco limitada; dor e estalido na adolescência.\n\n> **Na prova:** luxação congênita = ==posterior com limitação da extensão==",
-  "correta": "**Posterior, limitação da extensão.**\n- A cabeça posterior bloqueia a extensão.\n- Anterior limitaria a flexão.",
   "incorretas": {
-   "A": "**Direção errada.**\n- Anterior é Monteggia.",
-   "B": "**Bloqueio errado.**\n- Posterior limita a extensão.",
-   "C": "**Duplamente errada.**\n- Direção e bloqueio."
+   "A": "A luxação congênita é posterior, e a anterior limitaria a flexão.",
+   "B": "A direção está certa, mas a luxação posterior limita a extensão, não a flexão.",
+   "C": "Erra os dois: a luxação é posterior e limita a extensão."
   },
+  "conceito": "Na **luxação congênita da cabeça do rádio**, a cabeça está quase sempre **posterior** (ou posterolateral), em geral dos dois lados e com outras anomalias. A cabeça é pequena e convexa, e o capítulo é hipoplásico.\n\n**Que movimento fica limitado**: o bloqueio depende de onde a cabeça está:\n\n**luxação posterior**: no fim da **extensão**, a cabeça bate atrás do úmero e **limita a extensão**;\n\n**luxação anterior**: no fim da **flexão**, a cabeça bate na frente e limita a flexão.\n\nA pronossupinação costuma ser pouco limitada. Na adolescência podem surgir dor e estalido.\n\n**O diferencial**: uma cabeça do rádio luxada para **anterior**, unilateral, sugere **Monteggia** antigo não diagnosticado, que tem tratamento cirúrgico.\n\n**O tratamento da forma congênita**: observar; se houver dor depois da maturidade, ressecar a cabeça do rádio.\n\n**Na prova**: luxação congênita da cabeça do rádio = **posterior**, com **limitação da extensão**.",
+  "correta": "A cabeça luxada para posterior bate atrás do úmero no fim da extensão, limitando esse movimento.",
   "referencias": [
    "Congenital deformities of the upper limbs: Part II. https://pmc.ncbi.nlm.nih.gov/articles/PMC6565893/",
    "Congenital radial head dislocation: narrative review. https://pubmed.ncbi.nlm.nih.gov/42611687/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0062": {
