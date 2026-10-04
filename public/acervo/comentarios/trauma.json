@@ -10217,19 +10217,21 @@
   "conferido": false
  },
  "trauma-1133": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "D",
-  "conceito": "**Duas placas no úmero distal.** Nas fraturas intra-articulares, usam-se duas colunas fixadas por placas ortogonais (90 graus) ou paralelas. Na formulação clássica, a montagem a 90 graus dá estabilidade em dois planos.\n\n**Na prova:** placas em 90 graus, uma medial e outra posterolateral.",
-  "correta": "**90º.** A disposição ortogonal estabiliza em dois planos.",
   "incorretas": {
-   "A": "**0º.** Placas no mesmo plano estabilizam um só plano.",
-   "B": "**30º.** Ângulo sem respaldo biomecânico.",
-   "C": "**60º.** Ângulo sem respaldo biomecânico."
+   "A": "**0 grau.** Pode lembrar a montagem de duas placas paralelas, que é uma alternativa moderna e válida, não uma montagem obrigatoriamente instável. Aqui o enunciado procura especificamente o valor clássico da orientação ortogonal.",
+   "B": "**30 graus.** É uma angulação intermediária que não nomeia uma das duas configurações padronizadas, paralela ou ortogonal. A estabilidade não pode ser deduzida isoladamente de um ângulo de 30 graus.",
+   "C": "**60 graus.** Também não corresponde à montagem ortogonal de referência. Na prática, adaptações anatômicas podem alterar a orientação real das placas, mas a classificação histórica da técnica continua sendo aproximadamente 90 graus."
   },
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso a questão não conta no desempenho. A resposta D corresponde à montagem ortogonal clássica, mas a frase “maior estabilidade” não deve ser entendida como superioridade universal: duas placas paralelas também são aceitas, e estudos comparativos não demonstraram vantagem clínica consistente da configuração a 90 graus.",
+  "conceito": "**Que fratura é 13-C1?** No código AO/OTA, 13 identifica o úmero distal, C indica que a superfície articular está completamente separada da diáfise, e C1 descreve traços articulares e metafisários simples. O tratamento cirúrgico busca primeiro reconstruir a superfície da tróclea e do capítulo e, depois, ligar esse bloco às colunas medial e lateral com fixação estável suficiente para permitir mobilização precoce do cotovelo.\n\nNa montagem ortogonal, uma placa fica na coluna medial e outra na região posterolateral; seus planos formam aproximadamente 90 graus. Essa disposição dá suporte em direções diferentes e explica o número que a questão histórica espera. Na montagem paralela, as placas ocupam as faces medial e lateral, em planos próximos, mas os parafusos distais podem se entrecruzar e oferecer fixação sólida. A escolha depende do traço, do tamanho do fragmento distal, da qualidade óssea e do espaço para os parafusos.\n\n**O objetivo não é um ângulo mágico.** Redução articular, preservação da vascularização, fixação de ambas as colunas e proteção do nervo ulnar importam mais que decorar uma configuração como sempre superior. A rigidez de uma montagem também muda com o tipo de placa e a direção e quantidade de parafusos; não se infere o resultado clínico apenas do ângulo entre placas.",
+  "correta": "**90 graus.** É o ângulo entre os planos das duas placas na construção ortogonal clássica para o úmero distal, que é o arranjo descrito pela pergunta.",
   "referencias": [
-   "Rockwood C.A. et al. Fractures. Philadelphia: Lippincott. 6ª ed., vol. 1, p. 1083."
+   "AO Surgery Reference. Complete articular fracture, simple articular and simple metaphyseal. https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/distal-humerus/complete-articular-simple-articular-simple-metaphyseal/definition",
+   "A comparison between orthogonal and parallel plating methods for distal humerus fractures: a prospective randomized trial. https://pubmed.ncbi.nlm.nih.gov/23921559/",
+   "Internal fixation of the distal humerus: a comprehensive biomechanical study evaluating current fixation techniques. https://pubmed.ncbi.nlm.nih.gov/23899767/"
   ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "provavel": "D",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-1134": {
@@ -10299,35 +10301,38 @@
   "conferido": false
  },
  "trauma-1138": {
+  "incorretas": {
+   "A": "**Flexão.** É uma angulação possível em certos padrões ou montagens, mas o gastrocnêmio costuma produzir tendência do fragmento distal à extensão. Não é o desvio coronal mais característico que a questão pede.",
+   "B": "**Extensão.** É um desvio real no plano sagital associado à tração do gastrocnêmio sobre o fragmento distal. Ainda assim, não substitui o varo como resposta provável para a deformidade de consolidação viciosa destacada nesta comparação.",
+   "C": "**Valgo.** Também é uma alteração do eixo frontal e pode surgir conforme o mecanismo da fratura ou a redução inadequada. É o sentido oposto ao varo que a banca selecionou como mais típico."
+  },
+  "conceito": "**Onde está o desvio?** A fratura supracondiliana do fêmur separa a metáfise distal da diáfise, acima dos côndilos. Para descrever a consolidação viciosa, é preciso observar radiografias frontal e lateral e comparar o eixo do fragmento distal com o proximal. Varo é a inclinação medial do segmento distal no plano frontal, com perda do alinhamento fisiológico do membro inferior; valgo é a inclinação oposta.\n\nO fragmento distal sofre forças em mais de um plano. Os adutores favorecem deformidade em varo, enquanto o gastrocnêmio, inserido posteriormente nos côndilos, tende a deslocar ou angular o fragmento distal em extensão no perfil. Quadríceps e músculos posteriores da coxa contribuem para encurtamento. Portanto, varo e extensão não se excluem: podem aparecer juntos na mesma fratura, mas a pergunta pede o desvio que a formulação clássica destaca como consolidação viciosa mais comum.\n\n**Por que o varo importa?** Mesmo com união óssea, um eixo em varo redistribui as cargas no joelho e pode causar dor, limitação funcional e degeneração articular. A prevenção exige restaurar comprimento e eixo no plano frontal, conferir também flexão, extensão e rotação no perfil e não aceitar uma redução que apenas aproxime os fragmentos. Radiografias seriadas verificam perda progressiva da correção durante a consolidação.",
+  "correta": "**Varo.** É o desalinhamento coronal esperado e frequentemente descrito na consolidação viciosa do fêmur distal, embora outras deformidades possam coexistir.",
+  "referencias": [
+   "AO Surgery Reference. MIO dynamic condylar screw system: distal femur basic technique. https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/distal-femur/basic-technique/mio-dcs-dynamic-condylar-screw",
+   "Femoral Malunion and Its Correction: A Review. https://pmc.ncbi.nlm.nih.gov/articles/PMC12654028/"
+  ],
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "D",
-  "conceito": "**Supracondiliana do fêmur.** Os desvios residuais mais comuns após tratamento são o varo e a rotação interna; o gastrocnêmio tende a estender o fragmento distal.\n\n**Na prova:** consolidação viciosa do fêmur distal tende ao varo.",
-  "correta": "**Varo.** O varo é o desvio residual mais frequente.",
-  "incorretas": {
-   "A": "**Flexão.** O fragmento distal tende à extensão pelo gastrocnêmio.",
-   "B": "**Extensão.** Ocorre, mas é menos frequente que o varo.",
-   "C": "**Valgo.** Menos frequente."
-  },
-  "referencias": [
-   "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª edição - pág.1964."
-  ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-1139": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": "**Clavícula: indicação absoluta.** Fratura exposta, pele ameaçada, lesão vascular e déficit neurológico progressivo. Ombro flutuante, fraturas bilaterais e politrauma são indicações relativas.\n\n**Na prova:** déficit neurológico progressivo é indicação absoluta.",
-  "correta": "**Na associação com lesão nervosa.** A lesão nervosa está entre as indicações absolutas.",
   "incorretas": {
-   "B": "**No ombro flutuante.** É indicação relativa.",
-   "C": "**Na dissociação escápulo-torácica.** O tratamento é de urgência vascular, não da clavícula em si.",
-   "D": "**Na fratura bilateral.** É indicação relativa."
+   "B": "**Ombro flutuante.** A dupla lesão do suporte ósseo do ombro pode justificar fixação se estiver deslocada ou instável. É uma indicação dependente da configuração e do paciente, não absoluta pela simples presença das duas fraturas.",
+   "C": "**Dissociação escapulotorácica.** É lesão grave que exige investigação vascular e neurológica imediata; isquemia ou sangramento ativo podem demandar cirurgia de emergência. A osteossíntese clavicular, porém, não é automaticamente o primeiro nem o único procedimento necessário.",
+   "D": "**Fratura bilateral.** O acometimento dos dois lados pode tornar a reabilitação e o cuidado respiratório mais difíceis, favorecendo fixação em alguns politraumatizados. A bilateralidade isolada não impõe cirurgia se as fraturas forem estáveis e sem outras complicações."
   },
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso a questão não conta no desempenho. A alternativa A é a resposta provável no ensino clássico quando a fratura causa ou agrava lesão do plexo braquial, mas “lesão nervosa” é ampla demais para significar cirurgia obrigatória em todos os casos. Dissociação escapulotorácica, por sua vez, é emergência potencialmente vascular e também pode requerer estabilização clavicular, conforme a situação.",
+  "conceito": "**A clavícula protege estruturas profundas.** Logo abaixo da porção média passam vasos subclávios e componentes do plexo braquial. A maioria das fraturas simples do terço médio consolida sem cirurgia, mas exposição do osso, pele ameaçada e comprometimento neurovascular relacionado aos fragmentos exigem avaliação cirúrgica urgente. Déficit neurológico progressivo, compressão ou aprisionamento por um fragmento ósseo são razões muito diferentes de uma parestesia transitória sem lesão estrutural demonstrada.\n\nO ombro flutuante combina fratura da clavícula e do colo da escápula, interrompendo dois pontos de suporte do ombro. Pode motivar fixação, sobretudo quando há deslocamento importante, mas nem todo caso exige operar ambos os ossos. Fraturas bilaterais de clavícula aumentam dor e dificuldade de mobilização, porém também dependem de desvio, função e contexto do politrauma.\n\n**Dissociação escapulotorácica não é só outra fratura.** É afastamento traumático da escápula em relação ao tórax, muitas vezes com lesão da artéria subclávia ou axilar e do plexo. Prioridades imediatas são ressuscitação, avaliação vascular e viabilidade do membro; uma eventual fixação da clavícula integra plano individualizado. A alternativa não pode ser descartada como lesão leve, mas não representa uma indicação automática e isolada de osteossíntese do terço médio.",
+  "correta": "**Associação com lesão nervosa relevante.** Quando o déficit do plexo braquial decorre da fratura ou progride por compressão dos fragmentos, a exploração e estabilização da clavícula são fortes indicações cirúrgicas no enquadramento clássico da questão.",
   "referencias": [
-   "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. - 6ª ed., p 1226."
+   "Acute brachial plexus deficit due to clavicle fractures. https://pmc.ncbi.nlm.nih.gov/articles/PMC7846699/",
+   "AO Surgery Reference. Floating shoulder: sequence of repair. https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/scapula/further-reading/floating-shoulder-sequence-of-repair",
+   "Scapulothoracic Dissociation: Evaluation and Management. https://pubmed.ncbi.nlm.nih.gov/28406877/"
   ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "provavel": "A",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-1140": {
