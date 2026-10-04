@@ -2554,36 +2554,36 @@
   "conferido": false
  },
  "pediatria-0196": {
-  "conceito": "### Doença de Blount\n| Forma | Idade | Perfil |\n|---|---|---|\n| infantil | < 4 anos | obesa, marcha precoce, bilateral |\n| juvenil/adolescente | > 10 anos | obeso, unilateral, varo menor |\n\n### Langenskiöld (6 estágios)\n| Estágio | Achado |\n|---|---|\n| I | irregularidade metafisária medial, bico |\n| II | depressão em degrau |\n| III | degrau mais profundo, fragmentação |\n| ==IV== | ==ponte (barra) óssea medial através da fise== começa |\n| V | epífise dupla (fratura) |\n| VI | fechamento medial completo |\n\n### Ângulo metafisário-diafisário (Drennan)\n- > 16°: Blount provável; < 10°: fisiológico.\n\n### Tratamento\n- < 3 anos, estágio I-II: órtese.\n- Crescimento guiado, osteotomia valgizante antes dos 4 anos; ressecção da barra, elevação do planalto nos tardios.\n\n### Órtese (KAFO)\n- Indicação: ==< 3 anos==, ==Langenskiöld I-II==, especialmente unilateral.\n- Órtese de apoio com força valgizante, uso diurno na marcha.\n- Sem melhora em cerca de 1 ano ou > 4 anos: ==osteotomia valgizante== da tíbia (hipercorrigir).\n\n### Recidiva após osteotomia\n- Maior nos estágios ==IV e V== (barra fisária) e após 4 anos.\n- Nesses casos: osteotomia + ==ressecção da barra== ou epifisiodese lateral/completa, elevação do planalto medial (VI).\n\n> **Na prova:** osteotomia isolada em Langenskiöld IV e V = recidiva em ==cerca de 100%== (fonte).",
-  "correta": "**100%.**\n- A barra continua travando a fise medial.\n- Associar ressecção da barra ou epifisiodese.",
   "incorretas": {
-   "A": "**Subestima.**\n- Recidiva quase certa.",
-   "B": "**Subestima.**\n- Idem.",
-   "C": "**Subestima.**\n- Idem."
+   "A": "25% subestima muito: com a barra presente, a recidiva é quase certa.",
+   "B": "50% também subestima; a barra garante a volta do varo.",
+   "C": "75% ainda fica abaixo do que a fonte da prova descreve, que é recidiva praticamente universal."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **doença de Blount**, a parte posteromedial da fise proximal da tíbia deixa de crescer. A **classificação de Langenskiöld** tem seis estágios; o divisor de águas é o aparecimento da **barra óssea** atravessando a fise medial:\n\n**I a III**: alterações da metáfise medial (bico, degrau, fragmentação), ainda **sem barra**;\n\n**IV**: a **barra óssea medial** começa a se formar;\n\n**V**: epífise dupla, com fratura do planalto medial;\n\n**VI**: fechamento completo da fise medial.\n\n**Por que a osteotomia isolada falha**: a osteotomia valgizante corrige o eixo naquele momento, mas a fise medial continua **travada** pela barra, enquanto a lateral segue crescendo. O varo **volta** com o crescimento. Na fonte da prova, a osteotomia isolada nos estágios IV e V recidiva em praticamente **100%** dos casos.\n\n**O que fazer nesses estágios**: associar à osteotomia a **ressecção da barra** (com interposição de gordura) ou a **epifisiodese** lateral ou completa da tíbia, às vezes com a da fíbula; no estágio VI, elevação do planalto medial.\n\n**Nos estágios iniciais**: abaixo de 3 anos, nos estágios I e II, órtese; osteotomia valgizante com hipercorreção, de preferência antes dos 4 anos.\n\n**Na prova**: osteotomia isolada nos estágios IV e V recidiva em cerca de **100%**.",
+  "correta": "Nos estágios IV e V a barra fisária continua freando o crescimento medial, e a osteotomia isolada recidiva praticamente sempre.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0197": {
-  "conceito": "### Menisco discoide\n| Aspecto | Dado |\n|---|---|\n| menisco | ==lateral== (quase sempre) |\n| prevalência | 0,4 a 17% (mais em asiáticos) |\n| bilateral | até 20% |\n| clínica | ==estalido==, bloqueio, ==lesões sem trauma== |\n\n### Watanabe\n| Tipo | Descrição |\n|---|---|\n| I completo | cobre todo o planalto, fixações normais |\n| II incompleto | cobre parte |\n| III ==Wrisberg== | ==sem fixação tibial posterior (coronário)==, só o ligamento de Wrisberg: ==hipermóvel== |\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| assintomático | observar |\n| sintomático estável | ==saucerização== (meniscectomia parcial) |\n| Wrisberg / instável | saucerização + ==sutura periférica==; clássico: meniscectomia total |\n\n### Fixações meniscais\n| Estrutura | Liga |\n|---|---|\n| ==ligamento coronário (meniscotibial)== | ==borda do menisco à tíbia== |\n| ligamento transverso (intermeniscal) | cornos anteriores |\n| Humphrey (anterior ao LCP) e Wrisberg (posterior ao LCP) | corno posterior do ==lateral== ao côndilo medial |\n| oblíquo posterior | cápsula posteromedial (não é fixação tibial do menisco) |\n| poplíteo | menisco lateral (hiato poplíteo) |\n\n> **Na prova:** menisco medial preso à tíbia pelo ==ligamento coronário==",
-  "correta": "**Ligamento coronário.**\n- Meniscotibial, prende a borda à tíbia.\n- Falta no discoide tipo Wrisberg (lateral).",
   "incorretas": {
-   "B": "**Cápsula.**\n- Estabilizador posteromedial.",
-   "C": "**Menisco lateral.**\n- Hiato poplíteo.",
-   "D": "**Menisco lateral.**\n- Ao côndilo femoral medial."
+   "B": "O ligamento oblíquo posterior reforça a cápsula posteromedial; não é a fixação tibial do menisco.",
+   "C": "O tendão do poplíteo se relaciona com o menisco lateral, pelo hiato poplíteo.",
+   "D": "Os ligamentos de Humphrey e Wrisberg ligam o menisco lateral ao côndilo femoral medial."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Os **meniscos** são presos à tíbia e ao fêmur por ligamentos próprios. Saber qual liga o quê ajuda nas lesões e no menisco discoide:\n\n**ligamento coronário** (meniscotibial): prende a **borda periférica** do menisco à **borda superior da tíbia**; é a fixação tibial dos dois meniscos, inclusive do **corno posterior do medial**;\n\n**ligamento transverso** (intermeniscal): une os **cornos anteriores** dos dois meniscos;\n\n**ligamentos meniscofemorais de Humphrey e Wrisberg**: saem do corno posterior do **menisco lateral** e vão ao **côndilo femoral medial**; o de Humphrey passa à frente do LCP, e o de Wrisberg, atrás;\n\n**tendão do poplíteo**: relaciona-se com o **menisco lateral**, passando pelo hiato poplíteo; o lateral é mais móvel por isso;\n\n**ligamento oblíquo posterior**: reforço da cápsula **posteromedial**; não é a fixação tibial do menisco.\n\n**A relação com o menisco discoide**: no tipo **Wrisberg**, falta justamente o ligamento coronário posterior do menisco lateral; preso só pelo ligamento de Wrisberg, o menisco fica hipermóvel.\n\n**Na prova**: o corno posterior do menisco medial se prende à tíbia pelo **ligamento coronário**.",
+  "correta": "O ligamento coronário, ou meniscotibial, prende a borda do menisco à borda superior da tíbia.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0198": {
-  "conceito": "### Cronologia embrionária do membro\n| Semana | Evento |\n|---|---|\n| 4ª | broto do membro superior (inferior poucos dias depois) |\n| 5ª a 6ª | condensação mesenquimal, molde cartilaginoso |\n| ==7ª a 8ª== | ==centros de ossificação primários== dos ossos longos (clavícula primeiro, ~5ª a 6ª; ==fêmur e tíbia na 7ª a 8ª==) |\n| 7ª | rotação dos membros |\n| 8ª | fim da organogênese |\n| 12ª em diante | ossificação progride nos ossos curtos |\n\n### Particularidades\n- ==Clavícula==: primeiro osso a ossificar (membranosa, 5ª semana), último a fechar a fise medial (cerca de 25 anos).\n- Ossificação endocondral: centro primário na diáfise; secundários (epífises) em geral após o nascimento, exceto fêmur distal (36ª semana, sinal de maturidade fetal).\n\n### Rotação e a patela\n- Antes da ==rotação medial== do membro inferior (7ª semana), a face extensora (com a patela) está voltada ==lateralmente==.\n- A rotação medial de 90° leva o joelho (e a patela) para a frente.\n- Explica a disposição em espiral dos dermátomos.\n\n> **Na prova:** antes da rotação, a patela está ==lateral==",
-  "correta": "**Lateral.**\n- A face extensora olha para fora.\n- A rotação medial traz o joelho para a frente.",
   "incorretas": {
-   "B": "**Oposto.**\n- Seria depois de rodar demais.",
-   "C": "**Após a rotação.**\n- Posição final.",
-   "D": "**Não é a posição.**\n- Posterior."
+   "B": "A posição medial não corresponde a nenhuma fase do desenvolvimento normal do membro inferior.",
+   "C": "A posição anterior é a final, depois da rotação medial de cerca de 90°.",
+   "D": "A patela fica na face extensora, que nunca esteve voltada para trás no membro inferior."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Os **brotos dos membros** surgem na 4ª semana. No começo, todos apontam para fora do embrião com a mesma orientação: a face **extensora** (dorsal) voltada para **lateral**, e a face flexora voltada para medial.\n\n**A rotação dos membros**, por volta da **7ª semana**, gira cada membro cerca de 90° em sentidos opostos:\n\n**membro inferior**: roda **medialmente**; a face extensora, que estava lateral, vai para a **frente**. Por isso o joelho e a **patela** ficam anteriores, e o hálux fica medial;\n\n**membro superior**: roda **lateralmente**; a face extensora vai para trás. Por isso o cotovelo aponta para trás e o polegar fica lateral.\n\n**Antes da rotação**, então, a patela, que está na face extensora do membro inferior, fica **lateral**.\n\n**Por que isso importa**: a rotação explica a disposição **em espiral dos dermátomos** do membro inferior (L4 na face medial da perna, L5 no dorso do pé, S1 na lateral) e a posição dos músculos extensores e flexores.\n\n**Na prova**: antes da rotação axial, a patela está **lateral**.",
+  "correta": "Antes da rotação medial do membro inferior, a face extensora, onde fica a patela, está voltada para lateral.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0199": {
@@ -2609,85 +2609,85 @@
   "conferido": false
  },
  "pediatria-0201": {
-  "conceito": "### Coxa vara do desenvolvimento\n- Ângulo cervicodiafisário diminuído por defeito de ossificação no colo medial.\n- ==Triângulo de Fairbank== (fragmento triangular inferior no colo).\n- Marcha de Trendelenburg indolor, encurtamento; bilateral em 30 a 50%.\n\n### Por que limita abdução e rotação medial\n- Trocanter alto e colo varo: o trocanter ==bate no ilíaco== na abdução.\n- Retroversão relativa: ==rotação medial== limitada.\n\n### Ângulo de Hilgenreiner-epifisário (HE)\n| Ângulo HE | Conduta |\n|---|---|\n| < 45° | resolve espontaneamente |\n| 45 a 60° | observar |\n| ==> 60°== | ==osteotomia valgizante== (Pauwels) |\n\n### Diferenciais\n- Coxa vara congênita (DFFP), displasias esqueléticas, raquitismo, sequela de DDQ ou Perthes.\n\n### Epidemiologia\n- Rara (1:25.000).\n- ==Igual entre os sexos==, ==sem predileção racial==.\n- Bilateral em 30 a 50%.\n\n> **Na prova:** coxa vara do desenvolvimento = ==meninos e meninas igualmente, sem predileção racial==",
-  "correta": "**Igual entre sexos, sem predileção racial.**\n- Distribuição homogênea.\n- Bilateral em até metade.",
   "incorretas": {
-   "A": "**Predomínio inexistente.**\n- Sem sexo ou raça.",
-   "B": "**Sexo errado.**\n- Igual.",
-   "C": "**Raça errada.**\n- Sem predileção."
+   "A": "Não há predomínio masculino nem predileção por caucasianos.",
+   "B": "A ausência de predileção racial está certa, mas não há predomínio de meninos.",
+   "C": "A igualdade entre os sexos está certa, mas não há predileção por caucasianos."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **coxa vara do desenvolvimento** é a diminuição do **ângulo cervicodiafisário** por um defeito de ossificação na parte **inferomedial do colo** do fêmur. É rara (cerca de 1 em 25.000) e se distribui de forma **igual entre meninos e meninas**, **sem predileção racial**. É bilateral em 30 a 50% dos casos.\n\n**O quadro**: criança que começou a andar com **marcha de Trendelenburg indolor** (ou anserina, se bilateral) e encurtamento discreto do membro.\n\n**O exame**: limitação da **abdução** (o trocanter, alto, bate no ilíaco) e da **rotação medial** (pela retroversão relativa do colo).\n\n**A radiografia**: o **triângulo de Fairbank**, um fragmento ósseo triangular na parte inferior do colo, junto à fise, e a fise verticalizada.\n\n**O ângulo de Hilgenreiner-epifisário** orienta o tratamento:\n\n**abaixo de 45°**: tende a resolver sozinho;\n\n**entre 45 e 60°**: observar;\n\n**acima de 60°** (ou progressão): **osteotomia valgizante** (tipo Pauwels), corrigindo o ângulo para cerca de 40° ou menos.\n\n**Os diferenciais**: deficiência femoral focal proximal, displasias esqueléticas, raquitismo e sequelas de displasia do quadril ou Perthes.\n\n**Na prova**: coxa vara do desenvolvimento acomete **igualmente meninos e meninas**, **sem predileção racial**.",
+  "correta": "A coxa vara do desenvolvimento não tem predomínio de sexo nem de raça.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0202": {
-  "conceito": "### Artrogripose múltipla congênita\n- Contraturas congênitas em ==duas ou mais articulações==, sem progressão.\n- Causa comum: ==acinesia fetal== (falta de movimento intrauterino).\n\n| Origem | Achado |\n|---|---|\n| ==neuropática== (a mais comum) | ==redução das células do corno anterior== da medula |\n| miopática | distrofia muscular congênita |\n| restrição | oligoidrâmnio, útero bicorno |\n| tecido conjuntivo | |\n\n### Amioplasia (forma clássica)\n- Simétrica, quatro membros: ombros aduzidos e em RI, cotovelos estendidos, punhos fletidos, quadris luxados, joelhos estendidos ou fletidos, ==pé torto rígido==.\n- Pele lisa sem pregas, covinhas, inteligência normal.\n\n### Tratamento\n- Fisioterapia precoce; gessos; cirurgias (talectomia no pé torto resistente, osteotomias).\n\n### Artrogriposes distais\n| Síndrome | Achados |\n|---|---|\n| ==Freeman-Sheldon== (DA2A) | ==face assobiante== (\"whistling face\"), microstomia, ==desvio ulnar dos dedos==, pé torto rígido, escoliose |\n| Sheldon-Hall (DA2B) | semelhante, face menos afetada |\n| Larsen | luxações múltiplas (joelhos, quadris, cotovelos), face achatada |\n| Möbius | paralisia facial e do abducente |\n| Cornelia de Lange | sinofre, microcefalia, deficiência de membros superiores |\n\n> **Na prova:** face assobiante + desvio ulnar + pé torto rígido = ==Freeman-Sheldon==",
-  "correta": "**Freeman-Sheldon.**\n- Face assobiante com microstomia.\n- Desvio ulnar e pés tortos rígidos.",
   "incorretas": {
-   "A": "**Luxações múltiplas.**\n- Face achatada.",
-   "B": "**Paralisia facial.**\n- VI e VII pares.",
-   "D": "**Sinofre e microcefalia.**\n- Membros superiores curtos."
+   "A": "Larsen se marca por luxações múltiplas e face achatada.",
+   "B": "Möbius se marca pela paralisia dos nervos facial e abducente.",
+   "D": "Cornelia de Lange se marca por sinofre, microcefalia e redução dos membros superiores."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "As **artrogriposes distais** são formas hereditárias (em geral autossômicas dominantes) em que as contraturas predominam em **mãos e pés**. Cada síndrome tem uma marca:\n\n**Freeman-Sheldon** (artrogripose distal tipo 2A): a **face \"assobiante\"** (whistling face), com **microstomia** e lábios franzidos como quem assobia; **desvio ulnar dos dedos**, polegar aduzido, **pés tortos rígidos** e escoliose;\n\n**Sheldon-Hall** (tipo 2B): quadro parecido, com a face menos afetada;\n\n**Larsen**: **luxações múltiplas** (joelhos, quadris, cotovelos), face achatada com ponte nasal baixa e instabilidade cervical;\n\n**Möbius**: **paralisia facial** e do nervo abducente (VII e VI pares), muitas vezes com pé torto;\n\n**Cornelia de Lange**: sobrancelhas unidas (**sinofre**), microcefalia, deficiência intelectual e redução dos membros superiores.\n\n**O tratamento ortopédico**: o pé torto dessas síndromes é **rígido** e resiste mais ao Ponseti; recidiva com frequência e muitas vezes precisa de cirurgia. A boca pequena da Freeman-Sheldon também dificulta a intubação.\n\n**Na prova**: face assobiante, desvio ulnar e pé torto rígido = **Freeman-Sheldon**.",
+  "correta": "A face assobiante com microstomia, o desvio ulnar das mãos e os pés tortos rígidos definem a síndrome de Freeman-Sheldon.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0203": {
-  "conceito": "### Formação do esqueleto do membro\n1. Broto do membro: mesoderma da placa lateral + ectoderma (4ª semana).\n2. ==Condensações mesenquimais== no formato do futuro osso.\n3. Molde cartilaginoso.\n4. Ossificação endocondral.\n\n### Origem de cada tecido\n| Tecido do membro | Origem |\n|---|---|\n| ==ossos, cartilagem, tendões, ligamentos== | ==mesoderma da placa lateral== (condensações mesenquimais) |\n| músculos | somitos (mioblastos migram para o broto) |\n| nervos periféricos, Schwann, melanócitos | crista neural |\n| vasos | angioblastos locais |\n\n### Centros de sinalização\n| Centro | Eixo | Molécula | Falha |\n|---|---|---|---|\n| crista ectodérmica apical | proximal-distal | FGF | deficiências transversas |\n| zona de atividade polarizada | radioulnar | ==Shh== | polidactilia, mão em espelho |\n| ectoderma dorsal | dorsoventral | Wnt7a | unhas palmares, nail-patella |\n\n> **Na prova:** crista ectodérmica apical = ==FGF== (fator de crescimento fibroblástico).",
-  "correta": "**FGF.**\n- Sinal da crista ectodérmica apical.\n- Comanda o crescimento proximal-distal.",
   "incorretas": {
-   "A": "**Eixo dorsoventral.**\n- Lmx-1 junto com Wnt7a.",
-   "B": "**Genérico.**\n- Não nomeia a molécula.",
-   "C": "**Zona de atividade polarizada.**\n- Eixo radioulnar.",
-   "D": "**Não existe.**\n- Distrator."
+   "A": "O Lmx-1 participa do eixo dorsoventral, ativado pelo Wnt7a do ectoderma dorsal.",
+   "B": "\"Fator de transcrição\" é genérico e não nomeia a molécula da crista ectodérmica apical.",
+   "C": "A sonic hedgehog é o sinal da zona de atividade polarizante, que organiza o eixo radioulnar.",
+   "D": "\"Proteína de transcrição sonic\" não existe; é um distrator."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **broto do membro** surge na 4ª semana, do mesoderma da placa lateral coberto por ectoderma. Três **centros de sinalização** organizam os três eixos do membro:\n\n**crista ectodérmica apical** (na ponta do broto): controla o eixo **proximal-distal**, pelo **fator de crescimento fibroblástico** (**FGF**). Se ela falha, o membro para de crescer naquele nível, e surgem as **deficiências transversas**;\n\n**zona de atividade polarizante** (na borda pós-axial): controla o eixo **radioulnar** (anteroposterior), pela proteína **sonic hedgehog** (Shh). O excesso ou a duplicação dá **polidactilia** e a mão em espelho;\n\n**ectoderma dorsal**: controla o eixo **dorsoventral**, pelo **Wnt7a**, que ativa o **Lmx-1b** no mesoderma dorsal. A falha dá unhas palmares e a síndrome unha-patela.\n\n**Como lembrar**: FGF faz o membro **crescer em comprimento**; Shh decide **qual dedo é qual**; Wnt7a e Lmx-1b decidem o que é **dorso** e o que é **palma**.\n\n**Na prova**: a crista ectodérmica apical age pelo **fator de crescimento fibroblástico**.",
+  "correta": "A crista ectodérmica apical secreta FGF, que comanda o crescimento do membro no eixo proximal-distal.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0204": {
-  "conceito": "### Sinovite transitória do quadril\n- Causa mais comum de dor no quadril entre ==3 e 8 anos==; meninos; frequentemente após virose.\n- Claudicação, quadril em flexão, abdução e RE; afebril ou febre baixa.\n- Autolimitada: 1 a 2 semanas, repouso e anti-inflamatório.\n- ==Recorrência anual de cerca de 4%==; pequena associação posterior com Perthes.\n\n### Diferencial com artrite séptica (Kocher)\n| Critério |\n|---|\n| febre > 38,5 °C |\n| não apoia o membro |\n| VHS > 40 mm/h |\n| leucócitos > 12.000 |\n| (+ PCR > 2 mg/dL, Caird) |\n\n| Nº de critérios | Probabilidade de séptica |\n|---|---|\n| 0 | < 1% |\n| 2 | cerca de 40% |\n| 3 | cerca de 93% |\n| 4 | > 99% |\n\n- Ultrassom mostra derrame nos dois; punção guiada se dúvida.\n\n### Quadro clínico\n- Dor ==aguda==, claudicação, quadril em ==flexão, abdução e rotação externa== (maior volume capsular).\n- Dor ==referida no joelho== é comum.\n- Estado geral ==bom==; febre baixa ou ausente.\n\n> **Na prova:** sinovite transitória = limitação com quadril em ==flexão e rotação externa==",
-  "correta": "**Limitação em flexão e rotação externa.**\n- Posição de maior volume da cápsula.\n- Alivia a pressão do derrame.",
   "incorretas": {
-   "A": "**Aguda.**\n- Não crônica.",
-   "C": "**Não é critério rígido.**\n- Febre baixa, mas pode passar de 38.",
-   "D": "**Estado geral bom.**\n- Comprometido sugere séptica.",
-   "E": "**Referida sim.**\n- Dor no joelho é comum."
+   "A": "A dor é aguda e recente; dor crônica sugere outro diagnóstico, como Perthes.",
+   "C": "A febre costuma ser baixa ou ausente, mas não há um corte rígido de 38 °C; o critério de Kocher para séptica é 38,5 °C.",
+   "D": "O estado geral é bom; comprometido sugere artrite séptica.",
+   "E": "A dor referida no joelho é comum, pelo nervo obturador."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **sinovite transitória do quadril** é a causa mais comum de dor no quadril na criança de 3 a 8 anos, mais em meninos, muitas vezes depois de uma infecção viral. É um derrame inflamatório **agudo** e autolimitado.\n\n**O quadro clínico**:\n\n**dor aguda** e claudicação, de início recente;\n\n**quadril em flexão, abdução e rotação externa**: é a posição em que a cápsula tem **maior volume**, o que alivia a pressão do derrame; os movimentos ficam limitados, sobretudo a rotação interna;\n\n**dor referida no joelho**: comum, pelo nervo obturador; por isso o joelho doloroso exige exame do quadril;\n\n**estado geral bom**, sem febre ou com febre baixa.\n\n**O diferencial com a artrite séptica**, pelos critérios de Kocher: febre acima de 38,5 °C, recusa de apoiar, VHS acima de 40 mm/h e leucócitos acima de 12.000 (mais a PCR acima de 2 mg/dL). Quanto mais critérios, maior a chance de séptica; estado geral comprometido também aponta para infecção.\n\n**A evolução**: melhora em 1 a 2 semanas com repouso e anti-inflamatório.\n\n**Na prova**: sinovite transitória limita o quadril, que fica em **flexão e rotação externa**.",
+  "correta": "O quadril fica em flexão e rotação externa, posição de maior volume da cápsula, e os movimentos ficam limitados.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0205": {
-  "conceito": "### Medida da discrepância\n| Medida | Pontos | O que mostra |\n|---|---|---|\n| ==real== (verdadeira) | ==EIAS ao maléolo medial== | comprimento ósseo |\n| aparente | umbigo (ou xifoide) ao maléolo medial | inclui obliquidade pélvica e contraturas |\n| blocos sob o pé | nivelar as cristas ilíacas | prática, funcional |\n| Galeazzi | joelhos com quadris fletidos | fêmur × tíbia |\n\n### Imagem\n- Escanometria / telerradiografia; TC (scanograma) com menos radiação.\n\n### Previsão na criança\n| Método | Uso |\n|---|---|\n| Moseley (gráfico de linha reta) | discrepância na maturidade |\n| Paley (multiplicador) | simples |\n| Green-Anderson | tabelas de crescimento |\n\n### Conduta pela discrepância prevista\n| Discrepância | Conduta |\n|---|---|\n| < 2 cm | nada ou palmilha |\n| 2 a 5 cm | ==epifisiodese== contralateral |\n| > 5 cm | alongamento |\n| > 15 a 20 cm | amputação/prótese |\n\n### Causas de discrepância\n| Encurtamento | Alongamento (hipercrescimento) |\n|---|---|\n| congênitas (DFFP, hemimelias) | Klippel-Trénaunay, hemangiomas, malformações vasculares |\n| lesão fisária (trauma, infecção) | Beckwith-Wiedemann (hemi-hipertrofia) |\n| ==Perthes==, DDQ, epifisiólise | fratura diafisária do fêmur na criança (estímulo) |\n| paralisias (pólio, PC) | inflamação metafisária crônica (Brodie, osteomielite, AIJ) |\n| radiação | NF1 |\n\n> **Na prova:** causa de encurtamento = ==Legg-Calvé-Perthes==",
-  "correta": "**Legg-Calvé-Perthes.**\n- Cabeça achatada e fechamento fisário precoce.\n- Encurta o membro.",
   "incorretas": {
-   "A": "**Hipercrescimento.**\n- Malformação vascular.",
-   "B": "**Hipercrescimento.**\n- Hemi-hipertrofia.",
-   "C": "**Hiperemia metafisária.**\n- Tende a alongar.",
-   "E": "**Hipercrescimento.**\n- Aumento de fluxo."
+   "A": "Klippel-Trénaunay, por aumento do fluxo sanguíneo, causa hipercrescimento do membro.",
+   "B": "Beckwith-Wiedemann causa hemi-hipertrofia, ou seja, alongamento.",
+   "C": "O abscesso de Brodie metafisário causa hiperemia perto da fise e tende a alongar o membro.",
+   "E": "O hemangioma aumenta o fluxo sanguíneo e causa hipercrescimento."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **discrepância de membros** na criança pode vir de um lado **curto** ou de um lado que cresceu **demais**. Saber de que lado está o problema muda o tratamento.\n\n**Causas de encurtamento**:\n\n**congênitas**: deficiência femoral focal proximal, hemimelias;\n\n**lesão da fise**: trauma, infecção, radiação;\n\n**doenças do quadril**: **Legg-Calvé-Perthes** (a cabeça achata, o colo encurta e a fise pode fechar antes), displasia do quadril, epifisiólise;\n\n**paralisias**: poliomielite, paralisia cerebral.\n\n**Causas de alongamento (hipercrescimento)**:\n\n**aumento do fluxo sanguíneo**: **Klippel-Trénaunay**, **hemangiomas** e outras malformações vasculares;\n\n**síndromes de hemi-hipertrofia**: **Beckwith-Wiedemann**;\n\n**hiperemia metafisária**: inflamação crônica perto da fise, como **abscesso de Brodie**, osteomielite e artrite idiopática juvenil; o estímulo acelera a fise vizinha;\n\n**fratura diafisária do fêmur** na criança, que estimula o crescimento;\n\n**neurofibromatose tipo 1**.\n\n**Na prova**: das alternativas, a causa de **encurtamento** é a **doença de Perthes**.",
+  "correta": "O Perthes deforma a cabeça, encurta o colo e pode fechar a fise antes do tempo, encurtando o membro.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0206": {
-  "conceito": "### Osteogênese imperfeita (Sillence modificada)\n| Tipo | Gravidade | Detalhe |\n|---|---|---|\n| I | leve | ==escleras azuis==, surdez, colágeno em quantidade reduzida |\n| II | letal perinatal | fraturas múltiplas intrauterinas |\n| III | grave progressiva | deformidade, baixa estatura, dentinogênese |\n| IV | moderada | escleras normais |\n| ==V== | moderada | ==calo hiperplásico== (simula ==osteossarcoma==), ==calcificação da membrana interóssea== do antebraço, luxação da cabeça do rádio; IFITM5 |\n| VI em diante | variadas | genes não colágenos |\n\n### Tratamento\n- ==Bisfosfonato== (pamidronato, zoledronato).\n- Hastes telescópicas (Fassier-Duval, Sheffield) nas deformidades e fraturas repetidas.\n\n### Base molecular\n- Colágeno tipo I: tripla hélice com repetição ==Gly-X-Y== (glicina a cada terceiro aminoácido).\n- ==Substituição da glicina== (mutação de sentido trocado em COL1A1/COL1A2) impede o enrolamento: formas graves (II, III, IV).\n- Mutação que reduz a quantidade (haploinsuficiência): forma leve (I).\n\n> **Na prova:** aminoácido do defeito do colágeno na OI = ==glicina==",
-  "correta": "**Tipo I.**\n- Autossômica dominante clássica (COL1A1).\n- Forma leve, escleras azuis.",
   "incorretas": {
-   "B": "**Geralmente mutação nova.**\n- Letal, esporádica.",
-   "C": "**Pode ser recessiva.**\n- Nem sempre dominante.",
-   "D": "**Não existe.**\n- Subtipo inventado.",
-   "E": "**Dominante também.**\n- Mas o clássico cobrado é o I."
+   "B": "O tipo II é letal e quase sempre surge por mutação nova, sem transmissão familiar.",
+   "C": "O tipo III pode ser recessivo em algumas famílias; não é o modelo dominante clássico.",
+   "D": "Não existe tipo IIIB na classificação de Sillence; é um distrator.",
+   "E": "O tipo V também é dominante, mas o tipo clássico cobrado para a herança dominante é o I."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **osteogênese imperfeita** é, na maioria dos casos, causada por mutações nos genes do **colágeno tipo I** (COL1A1 e COL1A2), com herança **autossômica dominante**. Para orientar a família, a classificação de **Sillence** ajuda:\n\n**tipo I**: forma **leve**, com escleras azuis e surdez; é o tipo **autossômico dominante clássico**, passado de pai ou mãe para filho, com 50% de chance a cada gestação. O colágeno é normal, mas produzido em **menor quantidade**;\n\n**tipo II**: **letal** no período perinatal; quase sempre por **mutação nova** (esporádica) no bebê;\n\n**tipo III**: grave e progressivo; pode ser dominante por mutação nova ou **recessivo** em algumas famílias;\n\n**tipo IV**: moderado, com escleras normais, em geral dominante;\n\n**tipo V**: moderado, com calo hiperplásico, também dominante (gene IFITM5), mas não é o tipo clássico cobrado.\n\n**A base molecular**: o colágeno é uma tripla hélice que exige **glicina** a cada três aminoácidos. A troca da glicina impede o enrolamento e dá as formas graves; a falta de quantidade dá a forma leve.\n\n**Na prova**: o tipo autossômico dominante clássico de Sillence é o **tipo I**.",
+  "correta": "O tipo I é a forma leve e o modelo clássico de herança autossômica dominante na osteogênese imperfeita.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0207": {
-  "conceito": "### Paralisia cerebral: tipo × sistema\n| Tipo | Sistema | Clínica |\n|---|---|---|\n| espástico | ==piramidal== (córtex motor, trato corticoespinal) | hipertonia velocidade-dependente, hiperreflexia |\n| ==discinético (atetoide, distônico)== | ==extrapiramidal== (núcleos da base) | movimentos involuntários lentos, contorcidos, tônus flutuante |\n| atáxico | cerebelar | dismetria, tremor de intenção, equilíbrio |\n| misto | vários | |\n\n### Associações\n- Atetoide: ==kernicterus== (hiperbilirrubinemia), asfixia a termo.\n- Diplegia espástica: prematuridade, leucomalácia periventricular.\n\n### Cirurgia ortopédica\n- Resultados mais previsíveis no ==espástico==; cautela nos discinéticos.\n\n### Topografia × lesão\n| Topografia | Lesão típica |\n|---|---|\n| ==diplegia== (MMII > MMSS) | ==leucomalácia periventricular== (prematuro); fibras dos MMII passam mais perto dos ventrículos |\n| hemiplegia | infarto (artéria cerebral média), malformação |\n| tetraplegia | lesão difusa, hipóxia grave |\n\n### Topografias\n| Tipo | Acometimento |\n|---|---|\n| ==hemiplegia== | ==um hemicorpo==, MS geralmente mais que MI; ==assimetria== |\n| diplegia | MMII mais que MMSS |\n| tetraplegia | quatro membros, tronco |\n| monoplegia | um membro (rara) |\n\n> **Na prova:** hemiparesia = ==um hemicorpo, assimetria==",
-  "correta": "**Um hemicorpo, assimetria.**\n- Membro superior costuma ser o mais afetado.\n- Assimetria é a marca.",
   "incorretas": {
-   "A": "**Não é só MS.**\n- Hemicorpo.",
-   "B": "**Diplegia.**\n- MMII simétricos.",
-   "C": "**Não é só MS.**\n- Hemicorpo.",
-   "E": "**Simetria errada.**\n- É assimétrica."
+   "A": "A hemiparesia não se limita aos membros superiores e não é simétrica.",
+   "B": "Membros inferiores com simetria descrevem a diplegia.",
+   "C": "A assimetria está certa, mas a hemiparesia atinge o hemicorpo, não só os membros superiores.",
+   "E": "O hemicorpo está certo, mas a marca da hemiparesia é a assimetria."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **paralisia cerebral**, além do tipo de tônus (espástico, discinético, atáxico), classifica-se a **topografia**, ou seja, quais partes do corpo são acometidas:\n\n**hemiplegia (hemiparesia)**: atinge **um lado do corpo** (um hemicorpo); o **membro superior** costuma ser mais afetado que o inferior. A **assimetria** é a marca. A causa típica é um infarto na artéria cerebral média ou uma malformação. Quase todos andam;\n\n**diplegia**: atinge os **membros inferiores** mais que os superiores, de forma **simétrica**. Típica do **prematuro**, pela **leucomalácia periventricular**: as fibras que vão para as pernas passam mais perto dos ventrículos;\n\n**tetraplegia**: atinge os quatro membros e o tronco, por lesão difusa ou hipóxia grave;\n\n**monoplegia**: um só membro, rara.\n\n**Por que a topografia importa**: ela prevê a marcha (hemiplégicos quase sempre andam; tetraplégicos raramente) e orienta a cirurgia. No hemiplégico, comparar com o lado normal ajuda a medir a deformidade.\n\n**Na prova**: hemiparesia = **um hemicorpo**, com **assimetria**.",
+  "correta": "A hemiparesia atinge um lado do corpo, em geral mais o membro superior, e a assimetria é a sua característica.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0208": {
