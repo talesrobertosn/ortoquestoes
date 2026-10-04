@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Ache os três erros Orto Questões</title>
+<!-- Carrossel de feed (3 slides, 1080x1350) em folha de caderno: o resumo de um colega sobre a
+     fratura do escafoide tem três erros. Slide 2 com a correção em caneta vermelha.
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-04-ache-o-erro/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Caveat; src: url(../../fontes/caveat-latin-wght-normal.woff2) format('woff2'); font-weight: 400 700; }
+:root {
+  --papel: #fffdf6; --linha: rgba(74, 128, 196, .28); --margem: rgba(214, 70, 70, .55);
+  --tinta: #16211f; --tinta-2: #5a5d58; --caneta: #1f4f9e; --vermelho: #c8412f;
+  --verde: #0f4f49; --ouro-2: #f7d57f; --postit: #fde68a;
+}
+* { box-sizing: border-box; margin: 0; }
+body { background: #555; font-family: Inter, sans-serif; color: var(--tinta); }
+section { width: 1080px; height: 1350px; position: relative; overflow: hidden; margin-bottom: 40px;
+  background:
+    radial-gradient(ellipse at 60% 40%, transparent 55%, rgba(120, 100, 60, .10)),
+    repeating-linear-gradient(180deg, transparent 0 62px, var(--linha) 62px 64px),
+    var(--papel); }
+section::before { content: ''; position: absolute; left: 0; right: 0; top: 0; height: 150px; background: var(--papel); }
+section::after { content: ''; position: absolute; top: 0; bottom: 0; left: 176px; width: 12px;
+  border-left: 3px solid var(--margem); border-right: 2px solid var(--margem); opacity: .9; }
+.espiral { position: absolute; left: 0; top: 0; bottom: 0; width: 120px; z-index: 5; }
+.espiral i { position: absolute; left: 44px; width: 30px; height: 30px; border-radius: 50%; background: #2f3431; box-shadow: inset 0 3px 5px rgba(0,0,0,.6); }
+.espiral b { position: absolute; left: -6px; width: 72px; height: 22px; border-radius: 12px;
+  background: linear-gradient(180deg, #f4f5f6, #9da3a8 45%, #e6e8ea 60%, #7d8388); box-shadow: 0 3px 4px rgba(0,0,0,.28); transform: rotate(-14deg); }
+.topo { position: absolute; top: 60px; left: 230px; right: 70px; display: flex; justify-content: space-between; align-items: center; z-index: 2; }
+.marca { display: flex; align-items: center; gap: 12px; font-family: Jakarta; font-size: 32px; }
+.marca svg { width: 40px; height: 40px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; }
+.pagina { font: 700 40px Caveat; color: var(--tinta-2); }
+.conteudo { position: absolute; left: 230px; right: 70px; top: 150px; z-index: 2; }
+h1 { font: 800 64px/1.02 Jakarta; letter-spacing: -.035em; text-wrap: balance; }
+h2 { font: 800 60px/1.04 Jakarta; letter-spacing: -.03em; text-wrap: balance; }
+.marcador { background: linear-gradient(transparent 55%, var(--ouro-2) 55%, var(--ouro-2) 92%, transparent 92%); padding: 0 6px; margin: 0 -6px; }
+.sub { font-size: 30px; line-height: 1.4; color: var(--tinta-2); margin-top: 12px; text-wrap: pretty; }
+.sub b { color: var(--tinta); }
+.postit { position: absolute; padding: 26px 30px; background: var(--postit); box-shadow: 0 20px 34px rgba(120, 90, 0, .25); z-index: 4; font: 700 44px/1.05 Caveat; color: #5b3d00; }
+.fita { position: absolute; width: 160px; height: 48px; background: rgba(233, 214, 160, .72); box-shadow: 0 2px 4px rgba(0,0,0,.08); z-index: 4; }
+
+/* O resumo escrito à mão, uma frase por pauta */
+.resumo { position: absolute; left: 196px; right: 60px; top: 384px; z-index: 2; }
+.resumo p { position: relative; height: 128px; padding: 0 0 0 70px; font: 600 46px/60px Caveat; color: var(--caneta); white-space: nowrap; }
+.resumo p .n { position: absolute; left: 0; top: 0; width: 52px; font-weight: 700; color: var(--tinta-2); }
+.resumo .titulo { height: 64px; padding-left: 0; font: 700 56px/58px Caveat; color: var(--tinta); }
+/* Correção */
+.errado { position: relative; color: rgba(31, 79, 158, .55); }
+.errado::after { content: ''; position: absolute; left: -4px; right: -4px; top: 52%; height: 5px; background: var(--vermelho); transform: rotate(-1.2deg); border-radius: 3px; }
+.certo { position: absolute; left: 70px; right: 0; top: 64px; font: 700 44px/60px Caveat; color: var(--vermelho); }
+.circulo { position: absolute; left: -14px; top: -2px; width: 64px; height: 64px; border: 5px solid var(--vermelho); border-radius: 50%; transform: rotate(-8deg); }
+.ok { position: absolute; right: 0; top: 0; line-height: 60px; font: 700 50px Caveat; color: #2c8a52; }
+.placar { display: grid; gap: 16px; margin-top: 40px; }
+.nivel { display: grid; grid-template-columns: 150px 1fr; gap: 24px; align-items: center; padding: 22px 28px; border-radius: 24px; background: rgba(255,255,255,.93); box-shadow: 0 14px 30px rgba(20,32,30,.08); }
+.nivel b { font: 700 64px/1 Caveat; color: var(--vermelho); }
+.nivel p { font-size: 30px; line-height: 1.36; color: var(--tinta-2); }
+.nivel p strong { color: var(--tinta); }
+.cta { margin-top: 36px; padding: 28px 34px; border-radius: 26px; background: var(--verde); color: #fff; font: 800 32px/1.3 Jakarta; }
+.cta span { color: var(--ouro-2); }
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/>
+<circle cx="17" cy="20" r="4.5" fill="#9cc3bd"/><rect x="26" y="16.5" width="24" height="7" rx="3.5" fill="#9cc3bd"/>
+<circle cx="17" cy="32" r="4.5" fill="#f4cf7c"/><rect x="26" y="28.5" width="24" height="7" rx="3.5" fill="#f4cf7c"/>
+<circle cx="17" cy="44" r="4.5" fill="#9cc3bd"/><rect x="26" y="40.5" width="19" height="7" rx="3.5" fill="#9cc3bd"/></symbol>
+</defs></svg>
+
+<!-- 1. O desafio -->
+<section id="e1-desafio">
+  <div class="espiral"></div>
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="pagina" style="color:var(--vermelho)">resposta no próximo slide &gt;&gt;</span></div>
+  <div class="conteudo">
+    <h1>O resumo do seu colega tem <span class="marcador">3 erros.</span></h1>
+    <p class="sub">Ache os três antes de arrastar. <b>Comente os números</b> das linhas erradas.</p>
+  </div>
+  <div class="resumo" data-resumo></div>
+</section>
+
+<!-- 2. A correção -->
+<section id="e2-correcao">
+  <div class="espiral"></div>
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="pagina">2/3</span></div>
+  <div class="conteudo">
+    <h1>Linhas <span class="marcador" style="color:var(--vermelho)">4, 5 e 7.</span></h1>
+    <p class="sub">Corrigido em caneta vermelha. As outras quatro estão certas.</p>
+  </div>
+  <div class="resumo" data-resumo data-corrigido></div>
+</section>
+
+<!-- 3. Placar e chamada -->
+<section id="e3-placar">
+  <div class="espiral"></div>
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="pagina">3/3</span></div>
+  <div class="conteudo">
+    <h1>Quantos você <span class="marcador">achou?</span></h1>
+    <div class="placar">
+      <div class="nivel"><b>3 de 3</b><p><strong>Pronto para a prova.</strong> Escafoide é cobrado assim: um detalhe trocado na alternativa.</p></div>
+      <div class="nivel"><b>2 de 3</b><p><strong>Quase.</strong> A linha 7 derruba muita gente: DISI é o semilunar em extensão.</p></div>
+      <div class="nivel"><b>0 ou 1</b><p><strong>Hora de revisar.</strong> Polo proximal, tabaqueira e DISI caem todo ano.</p></div>
+    </div>
+    <div class="cta">Treine com questões de prova comentadas, letra por letra.<br><span>ortoquestoes.com.br</span></div>
+  </div>
+  <div class="postit" style="right:70px;top:1150px;transform:rotate(-3deg);width:330px">Marque quem fez<br>esse resumo</div>
+</section>
+
+<script>
+// Espiral do caderno
+document.querySelectorAll('.espiral').forEach(e => {
+  for (let y = 70; y < 1350; y += 86) e.innerHTML += `<i style="top:${y}px"></i><b style="top:${y + 4}px"></b>`
+})
+// [texto, correção] — linha sem correção está certa
+const LINHAS = [
+  ['Fratura mais comum do carpo.'],
+  ['Irrigação retrógrada: entra pelo polo distal.'],
+  ['Por isso o polo proximal necrosa mais.'],
+  ['Tabaqueira dolorosa e raio X normal: alta.', 'Imobilizar e repetir o raio X ou pedir RM.'],
+  ['Traço distal: maior risco de pseudartrose.', 'Traço proximal: maior risco.'],
+  ['Pseudartrose antiga evolui para SNAC.'],
+  ['DISI: semilunar em flexão (volar).', 'Em extensão (dorsal).'],
+]
+document.querySelectorAll('[data-resumo]').forEach(el => {
+  const corr = el.hasAttribute('data-corrigido')
+  let h = '<p class="titulo">Fratura do escafoide · resumo</p>'
+  LINHAS.forEach(([t, c], i) => {
+    const errada = corr && c
+    h += `<p><span class="n">${i + 1}.</span>${errada ? `<span class="errado">${t}</span><span class="certo">${c}</span><span class="circulo"></span>` : t}${corr && !c ? '<span class="ok">ok</span>' : ''}</p>`
+  })
+  el.innerHTML = h
+})
+</script>
+</body></html>
