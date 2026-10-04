@@ -5327,5 +5327,20 @@
   "provavel": "A",
   "geradoEm": "2026-09-30",
   "conferido": false
+ },
+ "ombro-cotovelo-0519": {
+  "conceito": "**A lesão de Monteggia é a fratura da ulna com luxação da cabeça do rádio.** A classificação de Bado se baseia na direção da luxação da cabeça do rádio, que acompanha a angulação da ulna.\n\n| Bado | Luxação da cabeça do rádio | Fratura da ulna | Observação |\n|---|---|---|---|\n| **I** | **Anterior** | Diáfise, ápice anterior | A mais comum, sobretudo em crianças |\n| II | Posterior | Diáfise, ápice posterior | Mais comum em adultos; equivalente a uma luxação posterior do cotovelo |\n| III | Lateral (anterolateral) | Metáfise proximal, ápice lateral | Segunda mais comum em crianças |\n| IV | Anterior | Fratura da ulna **e do rádio** no terço proximal | Rara |\n\n**Jupiter** subdividiu o tipo II (IIA, fratura da ulna envolvendo o olécrano e a coronoide; IIB, na junção metáfise-diáfise; IIC, diafisária; IID, cominutiva).\n\n**Pontos-chave:**\n- a linha radiocapitelar deve passar pelo centro do capítulo em todas as incidências;\n- em crianças, a lesão de Monteggia negligenciada é causa clássica de luxação crônica da cabeça do rádio;\n- o nervo interósseo posterior é o mais lesado (principalmente nos tipos I e III);\n- a redução da ulna com comprimento e alinhamento restaurados geralmente reduz a cabeça do rádio.",
+  "correta": "**Bado tipo I: desvio anterior da cabeça do rádio.** É o tipo mais comum, com fratura diafisária da ulna angulada anteriormente.",
+  "incorretas": {
+   "B": "O tipo IV é luxação **anterior** da cabeça do rádio com fratura dos dois ossos no terço proximal. A luxação lateral é o tipo III.",
+   "C": "O tipo III é a luxação **lateral**. A luxação posterior define o tipo II.",
+   "D": "A Monteggia envolve a ulna e a articulação radiocapitelar/radioulnar proximal; não se define pelo envolvimento da crista troclear."
+  },
+  "referencias": [
+   "Bado JL. The Monteggia lesion. Clin Orthop Relat Res. 1967;50:71-86.",
+   "Jupiter JB, Leibovic SJ, Ribbans W, Wilk RM. The posterior Monteggia lesion. J Orthop Trauma. 1991;5(4):395-402."
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  }
 }
