@@ -5569,14 +5569,14 @@
   "conferido": false
  },
  "mao-0557": {
-  "conceito": "### Plexo braquial: padrões\n| Lesão | Raízes | Quadro |\n|---|---|---|\n| ==superior (Erb)== | ==C5-C6== | ombro sem abdução e RE, cotovelo sem flexão, sem supinação; ==gorjeta de garçom== |\n| estendida | C5-C7 | + extensão do cotovelo e punho fracas |\n| inferior (Klumpke) | C8-T1 | mão em garra, intrínsecos, Horner |\n| total | C5-T1 | membro flácido e anestésico |\n\n### Por que cada déficit\n| Função perdida | Nervo |\n|---|---|\n| abdução do ombro | axilar (deltoide), supraescapular |\n| flexão do cotovelo | musculocutâneo (bíceps, braquial) |\n| supinação | bíceps |\n| sensibilidade lateral do braço | axilar (cutâneo lateral superior) |\n\n### Sinais de avulsão pré-ganglionar\n- **Horner** (T1), escápula alada (torácico longo), hemidiafragma elevado (frênico), dor em queimação, pseudomeningocele na RM.\n- Histamina e condução sensitiva preservadas em região anestésica.\n\n### Prioridades na lesão completa\n| Ordem | Função | Opção comum |\n|---|---|---|\n| ==1== | ==flexão do cotovelo== | Oberlin (fascículo do ulnar), intercostais, frênico, acessório |\n| 2 | estabilidade e abdução do ombro | acessório para supraescapular |\n| 3 | sensibilidade protetora da mão | |\n| 4 | extensão do punho, flexão dos dedos | transferências, músculo livre (grácil) |\n| 5 | intrínsecos | quase nunca recuperam |\n\n- Placa motora degenera em 12 a 18 meses: operar cedo (3 a 6 meses).\n\n### Transferências nervosas clássicas\n| Técnica | Doador | Receptor | Função |\n|---|---|---|---|\n| ==Oberlin== | ==fascículo do ulnar (FUC)== | ==ramo do bíceps== | flexão do cotovelo |\n| Oberlin dupla (Mackinnon) | + fascículo do mediano | ramo do braquial | flexão do cotovelo |\n| Somsak | ramo do tríceps (radial) | nervo axilar | abdução |\n| acessório → supraescapular | XI par | supraescapular | abdução, RE |\n| intercostais | T3-T5 | musculocutâneo | flexão do cotovelo |\n\n> **Na prova:** ulnar para o ramo do bíceps = ==Oberlin==",
-  "correta": "**Flexão do cotovelo, Oberlin.**\n- Prioridade número um.\n- Fascículo do ulnar para o ramo do bíceps.",
   "incorretas": {
-   "A": "**Steindler não é nervo.**\n- Flexorplastia muscular.",
-   "C": "**Objetivo secundário.**\n- Somsak serve à abdução.",
-   "D": "**Tendínea.**\n- Saha: trapézio, não neurotização."
+   "A": "O objetivo está certo, mas Steindler é uma flexorplastia muscular, não uma neurotização.",
+   "C": "A abdução do ombro vem depois da flexão do cotovelo, ainda que a técnica de Somsak sirva para ela.",
+   "D": "A abdução vem depois, e a técnica de Saha é uma transferência do trapézio, não uma neurotização."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **lesão grave do plexo braquial**, nem tudo pode ser recuperado, e o cirurgião precisa escolher o que reconstruir primeiro. A ordem de prioridade é bem estabelecida:\n\n**1º, flexão do cotovelo**: leva a mão até a boca e ao corpo; sem ela, o membro não tem função útil;\n\n**2º, estabilidade e abdução do ombro**: segura o ombro e posiciona o braço no espaço;\n\n**3º, sensibilidade protetora da mão**;\n\n**4º, extensão do punho e flexão dos dedos**: transferências tendíneas ou músculo livre (grácil);\n\n**5º, intrínsecos**: quase nunca se recuperam.\n\n**O tempo importa**: a placa motora do músculo desnervado degenera em **12 a 18 meses**. Por isso, a cirurgia é feita cedo, por volta de **3 a 6 meses** sem sinal de recuperação.\n\n**A neurotização (transferência de nervo) de cada função**:\n\n**Oberlin**: um **fascículo do ulnar** (o que vai para o flexor ulnar do carpo) ligado ao **ramo motor do bíceps**; dá **flexão do cotovelo**. A variação de Mackinnon (Oberlin dupla) acrescenta um fascículo do mediano para o ramo do braquial;\n\n**Somsak**: ramo do **tríceps** (radial) para o **nervo axilar**; dá abdução;\n\n**acessório para supraescapular**: abdução e rotação lateral;\n\n**intercostais para musculocutâneo**: outra opção de flexão do cotovelo.\n\n**O que não é neurotização**: **Steindler** é uma flexorplastia (avanço muscular), e **Saha** é a transferência do **trapézio**.\n\n**Na prova**: primeiro objetivo no plexo = **flexão do cotovelo**, por **Oberlin**.",
+  "correta": "A flexão do cotovelo é a primeira prioridade, e a transferência de Oberlin (fascículo do ulnar para o ramo do bíceps) é a neurotização clássica para ela.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "mao-0558": {
@@ -5630,25 +5630,25 @@
   "geradoEm": "2026-09-13"
  },
  "mao-0562": {
-  "conceito": "### Classificação de Heikel (displasia radial)\n| Heikel | Bayne | Descrição |\n|---|---|---|\n| A | I | rádio distal curto (fise distal atrasada) |\n| B | II | rádio hipoplásico em miniatura |\n| C | III | ausência parcial (remanescente proximal) |\n| ==D== | ==IV== | ==ausência total do rádio==: ==a mais comum== |\n\n### Mão torta radial (tipo D)\n- Mão desviada radialmente sobre a ponta da ulna.\n- Ulna curta e encurvada; polegar ausente ou hipoplásico.\n- Bilateral em cerca de metade.\n\n### Investigação obrigatória\n| Síndrome | Exame |\n|---|---|\n| Fanconi | teste de quebra cromossômica (diepoxibutano) |\n| Holt-Oram | ecocardiograma |\n| TAR | hemograma (plaquetas) |\n| VACTERL | coluna, rim, coração, ânus, traqueia/esôfago |\n\n### Remanescente no tipo C\n- Pode funcionar como **banda** que agrava a curvatura da ulna com o crescimento.\n\n### Tratamento da mão torta radial\n| Fase | Medida |\n|---|---|\n| recém-nascido | alongamento e órteses seriadas |\n| 6 a 12 meses | distração de partes moles (fixador) se rígida |\n| ~1 ano | centralização ou radialização do carpo sobre a ulna |\n| depois | policização se polegar ausente |\n\n### Contraindicações à correção\n| Situação | Motivo |\n|---|---|\n| ==cotovelo rígido em extensão== | ==o desvio radial é o que leva a mão à boca== |\n| adulto adaptado com boa função | ganho funcional pequeno |\n| doença sistêmica grave (Fanconi, TAR) | risco clínico |\n\n### Partes moles na mão torta radial\n| Estrutura | Estado |\n|---|---|\n| ==tríceps== | ==geralmente normal== (doador para flexão do cotovelo) |\n| bíceps, braquiorradial, pronador redondo | ausentes ou anômalos |\n| extensores radiais do carpo | ausentes ou fundidos |\n| artéria radial | ausente frequentemente |\n| nervo radial superficial | ausente; mediano assume a sensibilidade radial |\n\n### Risco na centralização\n- O ==mediano== corre superficial e desviado para o lado radial do punho, assumindo a sensibilidade radial.\n- O radial costuma terminar acima do cotovelo.\n\n> **Na prova:** nervo em risco na centralização = ==mediano==",
-  "correta": "**Mediano.**\n- Superficial e radial no punho, no campo da centralização.\n- Substitui o radial ausente na sensibilidade.",
   "incorretas": {
-   "B": "**Braço.**\n- Não chega ao punho.",
-   "C": "**Ausente.**\n- Termina acima do cotovelo.",
-   "D": "**Ausente.**\n- Ramo do radial."
+   "B": "O musculocutâneo termina no antebraço como nervo cutâneo lateral e não está no campo cirúrgico do punho.",
+   "C": "O nervo radial costuma terminar acima do cotovelo nessa malformação.",
+   "D": "O interósseo posterior é ramo do radial, que costuma estar ausente no antebraço distal."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **mão torta radial**, todo o lado radial do membro se forma mal. O rádio é curto ou ausente, e as partes moles do lado radial também faltam ou são anômalas: músculos, a artéria radial e, com frequência, o **nervo radial superficial**.\n\n**O mediano assume o lado radial**: o **nervo radial** costuma **terminar acima do cotovelo**. O **mediano** então faz o papel dele: inerva a sensibilidade do lado radial da mão e corre **superficial**, desviado para a **borda radial do punho**, logo abaixo da pele.\n\n**Por que isso importa na cirurgia**: a **centralização** (ou radialização) é feita exatamente nessa região. Uma incisão no lado radial do punho, como seria natural, encontra o mediano logo abaixo da pele, fora do lugar habitual. Ele é o nervo de **maior risco**.\n\n**Outros cuidados**: soltar as partes moles retraídas do lado radial, avaliar se o cotovelo dobra (cotovelo rígido em extensão contraindica a centralização) e investigar as síndromes associadas (Fanconi, Holt-Oram, TAR, VACTERL) antes de operar.\n\n**Na prova**: nervo em risco na correção da mão torta radial = **mediano**, superficial e radial no punho.",
+  "correta": "O mediano substitui o radial ausente, fica superficial e desviado para o lado radial do punho, bem no campo da centralização.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "mao-0563": {
-  "conceito": "### Espaço de Parona\n- Espaço virtual no **terço distal volar do antebraço**.\n- Limites: ==atrás, o pronador quadrado==; ==à frente, os tendões do flexor profundo==.\n- Comunica-se, pelo túnel do carpo, com as ==bursas radial e ulnar== e com os espaços profundos da mão (e, pela literatura clássica, com a região mediocarpal por continuidade dos planos).\n\n### Abscesso em ferradura\n- Infecção da bainha do **polegar** (bursa radial) → espaço de Parona → **bursa ulnar** → bainha do **mínimo** (ou o caminho inverso).\n- Drenagem precisa incluir a região volar distal do antebraço.\n\n### Bainhas que se continuam com as bursas\n| Bainha | Bursa |\n|---|---|\n| polegar (FLP) | radial |\n| mínimo | ulnar |\n| indicador, médio, anelar | terminam na palma (em geral) |\n\n> **Na prova:** espaço de Parona = entre ==pronador quadrado e flexores profundos==.",
-  "correta": "**Entre pronador quadrado e flexores profundos.**\n- Antebraço distal volar.\n- Corredor do abscesso em ferradura.",
   "incorretas": {
-   "A": "**Não há espaço.**\n- O pronador se insere no osso.",
-   "B": "**Articulação.**\n- Não define o espaço.",
-   "D": "**Entre os ossos.**\n- O Parona é volar ao pronador."
+   "A": "O pronador quadrado se prende diretamente na face volar do rádio; não há espaço entre eles.",
+   "B": "A articulação radiocárpica e o pronador quadrado não definem o espaço de Parona.",
+   "D": "O espaço de Parona é volar ao pronador quadrado, não entre os ossos na membrana interóssea."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **espaço de Parona** é um espaço virtual na **face volar do terço distal do antebraço**. Os limites:\n\n**atrás (dorsal)**: o **músculo pronador quadrado**;\n\n**à frente (volar)**: os **tendões do flexor profundo dos dedos**.\n\n**Por que ele importa**: ele se comunica, pelo túnel do carpo, com a **bursa radial** (a bainha do flexor longo do polegar) e com a **bursa ulnar** (que envolve os flexores e continua na bainha do dedo mínimo). Por isso, uma infecção pode passar de uma bursa para a outra através dele.\n\n**O abscesso em ferradura**: infecção da bainha do **polegar** que sobe pela bursa radial, cruza o espaço de Parona e desce pela bursa ulnar até a bainha do **mínimo** (ou o caminho inverso). A drenagem precisa abrir também a região volar distal do antebraço.\n\n**As bainhas e as bursas**: as do polegar e do mínimo se continuam com as bursas; as do indicador, do médio e do anelar terminam na palma, na maioria das pessoas.\n\n**Na prova**: espaço de Parona = entre o **pronador quadrado** e os **flexores profundos**.",
+  "correta": "O espaço de Parona fica entre o pronador quadrado, atrás, e os tendões do flexor profundo, à frente, no antebraço distal volar.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "mao-0564": {
@@ -5679,45 +5679,45 @@
   "conferido": false
  },
  "mao-0566": {
-  "conceito": "### Ultrassonografia nas artropatias inflamatórias\n| Achado | US | RM | RX |\n|---|---|---|---|\n| ==sinovite proliferativa== | ==sim (Doppler mostra atividade)== | sim | não |\n| derrame | sim | sim | não |\n| tenossinovite | sim | sim | não |\n| ==erosão precoce== | sim (antes do RX) | sim | tardio |\n| edema ósseo | ==não== (não atravessa o córtex) | ==sim== | não |\n\n### Vantagens\n- Várias articulações na mesma consulta, à beira do leito, sem contraste.\n- Guia punção e infiltração; monitora resposta ao tratamento.\n\n### Limites\n- Operador-dependente; não substitui clínica e laboratório (FR, anti-CCP, provas inflamatórias).\n\n> **Na prova:** US na AR = ==sinovite com sensibilidade comparável à RM==.",
-  "correta": "**Sinovite com sensibilidade comparável à RM.**\n- Doppler mostra atividade inflamatória.\n- Várias articulações na mesma consulta.",
   "incorretas": {
-   "A": "**Subestima.**\n- Detecta erosão precoce.",
-   "B": "**Edema ósseo é RM.**\n- O US não atravessa o córtex.",
-   "D": "**Não substitui.**\n- Diagnóstico composto."
+   "A": "O ultrassom detecta erosões já nas fases iniciais, antes da radiografia; o destaque não são as erosões avançadas.",
+   "B": "O edema ósseo subcondral é visto pela ressonância; o ultrassom não atravessa a cortical.",
+   "D": "O ultrassom complementa, mas não substitui o exame clínico e o laboratório."
   },
+  "conceito": "Nas **artrites inflamatórias** (artrite reumatoide, artrite psoriásica), a ultrassonografia ganhou espaço porque vê a doença **ativa**, à beira do leito.\n\n**O que o ultrassom mostra bem**:\n\n**sinovite proliferativa**: o espessamento sinovial aparece, e o **Doppler** mostra o fluxo aumentado, sinal de atividade; a sensibilidade é **comparável à da ressonância**;\n\n**derrame articular** e **tenossinovite**;\n\n**erosões precoces**: antes de aparecerem na radiografia.\n\n**O que ele não mostra**: o **edema ósseo subcondral** (osteíte). O som não atravessa a cortical; só a **ressonância** vê o osso por dentro, e o edema ósseo é um forte preditor de erosão futura.\n\n**As vantagens práticas**: examina várias articulações na mesma consulta, sem contraste nem radiação, guia punções e infiltrações e acompanha a resposta ao tratamento.\n\n**Os limites**: depende de quem examina e **não substitui** a clínica nem o laboratório (fator reumatoide, anti-CCP, provas inflamatórias).\n\n**Na prova**: ultrassom nas artropatias inflamatórias = **sinovite** com sensibilidade **comparável à ressonância**.",
+  "correta": "O ultrassom, com Doppler, mostra a sinovite proliferativa e a atividade inflamatória com sensibilidade comparável à da ressonância.",
   "referencias": [
    "Leite, Faloppa, Propedêutica Ortopédica e Traumatológica, 1ª edição, Cap. 33"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "mao-0567": {
-  "conceito": "### Membrana interóssea do antebraço\n| Componente | Direção | Papel |\n|---|---|---|\n| ==banda central== | proximal-radial → distal-ulnar | ==estabilizador longitudinal==; transfere carga do rádio para a ulna |\n| banda acessória | | |\n| banda distal oblíqua | | estabiliza a RUD (quando presente) |\n| banda oblíqua proximal (corda de Weitbrecht) | | |\n\n### Tensão e rotação\n- Banda central ==mais tensa perto do neutro== (cerca de 20° de supinação).\n- Pronação afrouxa.\n\n### Essex-Lopresti\n- Fratura da cabeça do rádio + lesão da membrana + lesão da RUD.\n- Ressecar a cabeça sem perceber: migração proximal do rádio, impacto ulnocarpal.\n- Testes: radius pull test, US e RM da membrana.\n\n> **Na prova:** banda central mais tensa em ==20° de supinação== (perto do neutro).",
-  "correta": "**20° de supinação.**\n- Perto do neutro, a banda central fica mais tensa.\n- Pronação afrouxa.",
   "incorretas": {
-   "A": "**Pronação afrouxa.**\n- Menor tensão.",
-   "B": "**Passa do ponto.**\n- Longe do neutro.",
-   "D": "**Mais frouxa.**\n- O oposto."
+   "A": "Na pronação, rádio e ulna se aproximam e a banda central afrouxa.",
+   "B": "Com 45° de supinação a banda já passou do ponto de maior tensão.",
+   "D": "Com 45° de pronação a banda está ainda mais frouxa."
   },
+  "conceito": "A **membrana interóssea** une o rádio à ulna e é um **estabilizador longitudinal** do antebraço. Sua parte mais importante é a **banda central**, com fibras que descem do rádio (proximal) para a ulna (distal). Ela **transfere carga** do rádio para a ulna: o punho recebe a maior parte da força pelo rádio, e a membrana passa uma parte para a ulna e o cotovelo.\n\n**A tensão muda com a rotação**: a banda central fica **mais tensa perto da posição neutra**, por volta de **20° de supinação**, quando o rádio e a ulna estão mais afastados. Na **pronação**, os ossos se aproximam e a banda **afrouxa**; na supinação completa, também perde tensão.\n\n**Por que isso importa**: na lesão de **Essex-Lopresti** (fratura da cabeça do rádio, lesão da membrana interóssea e lesão da radioulnar distal), retirar a cabeça do rádio sem perceber a lesão da membrana deixa o rádio **migrar para proximal**, com impacto ulnocarpal e dor no punho. O teste de tração do rádio (radius pull test), o ultrassom e a ressonância ajudam a identificar a lesão.\n\n**Na prova**: banda central da membrana interóssea mais tensa em **20° de supinação**, perto do neutro.",
+  "correta": "A banda central fica mais tensa perto da posição neutra, por volta de 20° de supinação, quando os ossos estão mais afastados.",
   "referencias": [
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 2.20"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "mao-0568": {
-  "conceito": "### Desarticulação do punho\n| Vantagem | Desvantagem |\n|---|---|\n| preserva a ==RUD== e a pronossupinação | coto longo: prótese mais longa que o lado oposto |\n| coto com alavanca longa e ==estiloides para suspensão== | pior estética da prótese |\n| | espaço limitado para componentes mioelétricos |\n\n### Pronossupinação transmitida à prótese\n| Nível | Transmissão |\n|---|---|\n| ==desarticulação do punho== | ==cerca de 50%== do arco |\n| transradial longo | menos (cerca de 1/3 ou menos) |\n| transradial curto | praticamente nenhuma |\n\n- Perda na interface pele, subcutâneo e folga do encaixe.\n\n> **Na prova:** desarticulação do punho transmite ==cerca de 50%== da pronossupinação.",
-  "correta": "**50%.**\n- Metade do arco se perde na interface coto-encaixe.\n- Ainda bem mais que no transradial.",
   "incorretas": {
-   "A": "**Quase total.**\n- Ignora a perda na interface.",
-   "B": "**Superestima.**\n- Acima do observado.",
-   "C": "**Acima.**\n- A referência é metade."
+   "A": "95% ignora a perda na interface entre o coto e o encaixe.",
+   "B": "80% superestima o que chega à prótese.",
+   "C": "65% ainda fica acima do valor de referência, que é cerca de metade."
   },
+  "conceito": "A **desarticulação do punho** retira o carpo e a mão, mas preserva o rádio e a ulna inteiros, com a **articulação radioulnar distal**.\n\n**As vantagens**:\n\n**pronossupinação preservada**: o coto gira, e parte desse giro passa para a prótese;\n\n**alavanca longa** e as **estiloides** do rádio e da ulna, que ajudam a segurar o encaixe (suspensão).\n\n**As desvantagens**: o coto é longo, então a prótese fica mais comprida que o outro lado e sobra pouco espaço para componentes mioelétricos; a estética é pior.\n\n**Quanto da rotação chega à prótese**: mesmo com a radioulnar distal intacta, parte do giro se perde na **interface** entre o coto e o encaixe (pele, subcutâneo e folga). Na desarticulação do punho, a prótese recebe **cerca de 50%** do arco de pronação e supinação. Nas amputações transradiais, a transmissão cai: no transradial longo fica bem abaixo da metade, e no curto praticamente desaparece.\n\n**Na prova**: desarticulação do punho = **cerca de 50%** da pronossupinação transmitida à prótese.",
+  "correta": "Mesmo com a radioulnar distal preservada, cerca de metade do arco de pronação e supinação se perde na interface entre o coto e o encaixe.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 15ª edição (Azar, Sawyer, Throckmorton), Cap. 20"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "mao-0569": {
@@ -5765,17 +5765,17 @@
   "conferido": false
  },
  "mao-0572": {
-  "conceito": "### Palmar longo\n| Aspecto | Dado |\n|---|---|\n| origem | epicôndilo medial |\n| inserção | aponeurose palmar |\n| nervo | mediano |\n| ausência | ==cerca de 15%== (uni ou bilateral) |\n| uso | ==enxerto tendíneo== mais usado da mão |\n\n### Testes de presença\n| Teste | Manobra |\n|---|---|\n| ==clássico (Schaeffer)== | ==oponência polegar-mínimo + flexão ativa do punho== contra resistência |\n| Thompson | punho fletido, polegar sob os dedos fechados |\n| Mishra | abdução resistida do polegar com punho fletido |\n\n### Outros enxertos\n- Plantar delgado (ausente em até 20%), extensores dos dedos do pé, flexor superficial.\n\n### Referência cirúrgica\n- O mediano fica imediatamente profundo e ==radial== ao palmar longo no punho.\n\n> **Na prova:** enxerto preferencial para flexor = ==palmar longo==",
-  "correta": "**Palmar longo.**\n- Mesmo campo, calibre e comprimento certos, dispensável.\n- Ausente em cerca de 15%.",
   "incorretas": {
-   "B": "**Segunda opção.**\n- Outro campo, também pode faltar.",
-   "C": "**Enxertos múltiplos.**\n- Outro campo.",
-   "D": "**Tendão em uso.**\n- Troca um déficit por outro."
+   "B": "O plantar delgado é a segunda opção: exige outro campo cirúrgico e também pode estar ausente.",
+   "C": "Os extensores longos dos dedos do pé servem como alternativa, sobretudo para vários enxertos, mas não são a primeira escolha.",
+   "D": "O extensor comum dos dedos da mão está em uso; retirá-lo troca um déficit por outro."
   },
+  "conceito": "Na **reconstrução dos tendões flexores** em dois tempos, ou no enxerto primário, o enxerto ideal precisa ter o calibre e o comprimento certos, ser fácil de colher e poder ser dispensado sem prejuízo.\n\n**O palmar longo** é o **preferido**: fica no **mesmo campo cirúrgico** (o antebraço), tem calibre parecido com o do flexor do dedo, comprimento suficiente (cerca de 10 a 15 cm) e não faz falta. O problema é que está **ausente em cerca de 15%** das pessoas, de um ou dos dois lados, por isso se testa antes.\n\n**Os testes de presença**: o clássico é a **oposição do polegar ao mínimo** com o punho fletido contra resistência (Schaeffer); outros são os de Thompson e de Mishra.\n\n**As alternativas, quando falta o palmar longo ou é preciso enxerto mais longo**:\n\n**plantar delgado**: longo, mas exige outro campo (a perna) e também pode faltar;\n\n**extensores longos dos dedos do pé**: úteis para vários enxertos, em outro campo;\n\n**flexor superficial** ou extensores próprios da mão, em situações específicas.\n\n**O que não se usa**: tendões que estão funcionando, como o **extensor comum dos dedos** da mão; tirar um deles troca um déficit por outro.\n\n**Referência cirúrgica**: no punho, o **mediano** fica logo abaixo e **radial** ao palmar longo, e corre risco na coleta.\n\n**Na prova**: enxerto preferencial para tendão flexor = **palmar longo**.",
+  "correta": "O palmar longo está no mesmo campo, tem calibre e comprimento adequados e é dispensável, por isso é o enxerto preferido.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 15ª edição (Azar, Sawyer, Throckmorton), Cap. 71"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "mao-0573": {
@@ -5808,17 +5808,17 @@
   "conferido": false
  },
  "mao-0575": {
-  "conceito": "### Eaton-Littler e conduta na rizartrose\n| Estágio | Radiografia | Opções |\n|---|---|---|\n| ==I== | normal ou espaço **alargado** (sinovite), subluxação < 1/3 | órtese, infiltração, ==reconstrução ligamentar (Eaton-Littler)==, osteotomia de extensão do 1º MC |\n| II | estreitamento, osteófitos < 2 mm | osteotomia, artroscopia, trapezectomia parcial |\n| III | osteófitos > 2 mm, esclerose, cistos | trapezectomia (± LRTI), artrodese, prótese |\n| IV | + escafotrapeziotrapezoide (pantrapezial) | trapezectomia total |\n\n### Técnica de Eaton-Littler\n- Tira de **metade do flexor radial do carpo** passada por túnel na base do 1º MC.\n- Reconstrói o **ligamento oblíquo anterior** (freio da subluxação dorsal).\n- Só faz sentido com **cartilagem preservada**.\n\n### LRTI (Burton-Pellegrini)\n- Trapezectomia + reconstrução ligamentar + interposição tendínea (FRC ou abdutor longo).\n\n### Osteotomia de extensão (Wilson)\n- Cunha de fechamento ==dorsal== na base do 1º MC.\n- Corte a cerca de ==10 mm== da superfície articular; cunha de cerca de ==5 mm== (20 a 30° de extensão).\n- Desloca a carga da faceta volar gasta para a dorsal preservada.\n- Estágios I e II, sobretudo jovens.\n\n> **Na prova:** osteotomia da base do 1º MC = ==10 mm da articulação, cunha de 5 mm==",
-  "correta": "**10 mm e 5 mm.**\n- Corte longe o bastante para fixar.\n- Cunha corresponde a 20 a 30° de extensão.",
   "incorretas": {
-   "A": "**Muito perto.**\n- Fragmento proximal curto.",
-   "C": "**Duplamente errada.**\n- Perto demais e hipercorrige.",
-   "D": "**Cunha grande.**\n- Extensão excessiva."
+   "A": "A 5 mm da articulação o fragmento proximal fica curto demais para fixar com segurança.",
+   "C": "Erra as duas medidas: corte perto demais da articulação e cunha grande, que hipercorrige.",
+   "D": "A distância está certa, mas a cunha de 10 mm daria extensão excessiva."
   },
+  "conceito": "Na **rizartrose inicial**, a cartilagem ainda está razoável, mas a carga se concentra na **faceta volar** da articulação trapeziometacarpal, que é por onde o desgaste começa.\n\n**A osteotomia de extensão da base do 1º metacarpo (Wilson)**: tira uma **cunha de fechamento dorsal** da base do metacarpo. Ao estender o metacarpo, a carga sai da faceta volar desgastada e passa para a parte **dorsal**, ainda preservada. Também diminui a subluxação dorsal na pinça.\n\n**As medidas**:\n\n**distância da articulação**: cerca de **10 mm** da superfície articular, para deixar um fragmento proximal grande o suficiente para fixar e não lesar a articulação;\n\n**cunha**: cerca de **5 mm** de base dorsal, o que corresponde a cerca de **20 a 30°** de extensão.\n\n**A indicação**: estágios **I e II** de Eaton-Littler, sobretudo em pessoas **jovens** que querem preservar a articulação. Nos estágios avançados, as opções são trapezectomia (com ou sem LRTI), artrodese ou prótese.\n\n**Na prova**: osteotomia da base do 1º metacarpo = **10 mm** da articulação, **cunha de 5 mm**.",
+  "correta": "O corte a cerca de 10 mm da articulação deixa fragmento proximal para fixar, e a cunha de cerca de 5 mm dá de 20 a 30° de extensão.",
   "referencias": [
    "Hebert, Lech, Ortopedia e Traumatologia: Princípios e Práticas, 6ª edição, Cap. 65"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "mao-0576": {
