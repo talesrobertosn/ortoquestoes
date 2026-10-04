@@ -118,7 +118,7 @@ export function idsDoFoco(indice: Indice, area: AreaIncidencia, foco?: Foco): st
   if (tema < 0) return []
   const exigidos = [area.subtema, foco ? (foco.noAcervo ?? foco.nome) : undefined].filter((s): s is string => !!s).map(minusculo)
   return indice.questoes
-    .filter((q) => q.t === tema && !q.dup && q.an !== 1 && exigidos.every((alvo) => q.s.some((s) => minusculo(indice.subtemas[s] ?? '') === alvo)))
+    .filter((q) => q.t === tema && !q.dup && !q.cm && q.an !== 1 && exigidos.every((alvo) => q.s.some((s) => minusculo(indice.subtemas[s] ?? '') === alvo)))
     .map((q) => q.id)
 }
 

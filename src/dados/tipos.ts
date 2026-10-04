@@ -78,6 +78,8 @@ export interface ComentarioIA {
 
 export interface Questao {
   id: string
+  /** "cirurgia-mao" nas provas de cirurgia da mão; ausente nas de ortopedia */
+  area?: 'cirurgia-mao'
   tema: string
   subtemas: string[]
   prova: TipoProva | null
@@ -132,6 +134,8 @@ export interface ItemIndice {
   sim?: 1
   /** é cópia da questão com este id: não entra em sessões nem contagens */
   dup?: string
+  /** prova de cirurgia da mão: fica fora do foco padrão (ortopedia) e do cronograma */
+  cm?: 1
 }
 
 /**
@@ -194,7 +198,14 @@ export const ROTULO_SITUACAO: Record<Situacao, string> = {
 export const SITUACOES_TURMA: Situacao[] = ['turmaErra', 'turmaAcertaVoceErrou']
 
 /** Filtros de montagem de sessão. */
+/**
+ * Foco do treino. Ortopedia e traumatologia (TEOT, TARO e afins) é o padrão;
+ * as provas de cirurgia da mão, mais específicas, só entram quando a pessoa pede.
+ */
+export type Foco = 'ortopedia' | 'tudo' | 'mao'
+
 export interface Filtros {
+  foco: Foco
   temas: string[]
   subtemas: string[]
   provas: string[]
@@ -212,6 +223,7 @@ export interface Filtros {
 }
 
 export const FILTROS_VAZIOS: Filtros = {
+  foco: 'ortopedia',
   temas: [],
   subtemas: [],
   provas: [],

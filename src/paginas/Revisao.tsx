@@ -58,7 +58,7 @@ export function Revisao() {
   const irParaMes = (delta: number) => definirMesExibido((atual) => { const d = new Date(atual); d.setMonth(d.getMonth() + delta); return d.getTime() })
   const pendentes = [...plano.values()].reduce((n, d) => n + d.ids.length, 0); const atrasadas = plano.get(chaveDia(hoje))?.atrasadas ?? 0
   const incertas = Object.values(contexto.respondidas).filter(r => r.confianca === 'duvida' || r.confianca === 'chute').length
-  const iniciarIds = (ids: string[]) => { if (!indice || !ids.length) return; iniciar({ ...FILTROS_VAZIOS, limite: ids.length, embaralhar: true, situacao: 'revisarHoje' }, ids); navegar('/sessao') }
+  const iniciarIds = (ids: string[]) => { if (!indice || !ids.length) return; iniciar({ ...FILTROS_VAZIOS, foco: 'tudo', limite: ids.length, embaralhar: true, situacao: 'revisarHoje' }, ids); navegar('/sessao') }
   if (carregando || !indice) return <div className="estado"><p>Preparando sua revisão…</p></div>
   const temaFragil = [...plano.values()].flatMap(d => [...d.temas.entries()]).sort((a,b)=>b[1]-a[1])[0]
   const idsHoje = plano.get(chaveDia(hoje))?.ids ?? []

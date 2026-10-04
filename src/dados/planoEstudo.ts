@@ -83,7 +83,7 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
   const porTema = new Map<number, { faltam: number; certas: number; erradas: number; respondidas: number }>()
   let elegiveis = 0, respondidasNoAcervo = 0
   for (const q of indice.questoes) {
-    if (q.dup || q.an === 1) continue
+    if (q.dup || q.cm || q.an === 1) continue
     elegiveis++
     const t = porTema.get(q.t) ?? { faltam: 0, certas: 0, erradas: 0, respondidas: 0 }
     const r = respondidas[q.id]
@@ -148,7 +148,7 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
   const livresPorTema = new Map<string, string[]>()
   const usadasPorTema = new Map<string, number>()
   for (const q of indice.questoes) {
-    if (q.dup || q.an === 1 || respondidas[q.id]) continue
+    if (q.dup || q.cm || q.an === 1 || respondidas[q.id]) continue
     const slug = indice.temas[q.t]?.slug ?? String(q.t)
     const lista = livresPorTema.get(slug) ?? []
     lista.push(q.id)
@@ -216,7 +216,7 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
 
 /** Linha de base do plano: questões do acervo (sem cópias nem anuladas) já respondidas. */
 export function respondidasNoAcervo(indice: Indice, respondidas: Record<string, unknown>): number {
-  return indice.questoes.filter((q) => !q.dup && q.an !== 1 && respondidas[q.id]).length
+  return indice.questoes.filter((q) => !q.dup && !q.cm && q.an !== 1 && respondidas[q.id]).length
 }
 
 /** Meta diária que um plano novo teria, para mostrar ao escolher a intensidade. */
@@ -275,6 +275,6 @@ function ordemDoTema(indice: Indice, livres: string[]): string[] {
 export function idsDoDia(indice: Indice, slug: string, respondidas: Record<string, unknown>, n: number): string[] {
   const tema = indice.temas.findIndex((t) => t.slug === slug)
   if (tema < 0) return []
-  const livres = indice.questoes.filter((q) => q.t === tema && !q.dup && q.an !== 1 && !respondidas[q.id]).map((q) => q.id)
+  const livres = indice.questoes.filter((q) => q.t === tema && !q.dup && !q.cm && q.an !== 1 && !respondidas[q.id]).map((q) => q.id)
   return ordemDoTema(indice, livres).slice(0, Math.max(0, n))
 }

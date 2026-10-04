@@ -103,7 +103,7 @@ export function CadernoErros() {
 
   const refazer = (ids: string[]) => {
     if (!ids.length) return
-    iniciar({ ...FILTROS_VAZIOS, situacao: 'erradas', limite: ids.length, embaralhar: true }, ids)
+    iniciar({ ...FILTROS_VAZIOS, foco: 'tudo', situacao: 'erradas', limite: ids.length, embaralhar: true }, ids)
     navegar('/sessao')
   }
 
@@ -167,7 +167,7 @@ export function CadernoErros() {
           </div>
           <ul>
             {focos.map((f) => (
-              <li key={f.nome}><a href={href(`/treinar${filtrosParaConsulta({ ...FILTROS_VAZIOS, subtemas: [f.nome], situacao: 'erradas' })}`)}>{f.nome} <span className="numerico">{f.n}</span></a></li>
+              <li key={f.nome}><a href={href(`/treinar${filtrosParaConsulta({ ...FILTROS_VAZIOS, foco: 'tudo', subtemas: [f.nome], situacao: 'erradas' })}`)}>{f.nome} <span className="numerico">{f.n}</span></a></li>
             ))}
           </ul>
         </section>

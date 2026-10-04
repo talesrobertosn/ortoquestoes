@@ -81,7 +81,7 @@ export function Inicio() {
 
   const { contexto } = usarContextoLocal('')
   const contagens = useMemo(
-    () => (indice ? contar(indice, FILTROS_VAZIOS, contexto) : null),
+    () => (indice ? contar(indice, { ...FILTROS_VAZIOS, foco: 'tudo' }, contexto) : null),
     [indice, contexto],
   )
   const [historico] = usarArmazenado<ResumoHistorico[]>('historico', [])

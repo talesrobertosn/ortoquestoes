@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { usarIndice } from '../dados/usarIndice'
-import { arvoreAssuntos, contar, LIMITE_TURMA_ACERTA, LIMITE_TURMA_ERRA, montarSessao } from '../dados/acervo'
+import { arvoreAssuntos, contar, filtrar, LIMITE_TURMA_ACERTA, LIMITE_TURMA_ERRA, montarSessao } from '../dados/acervo'
 import { usarPremium } from '../conta/premium'
 import { ConvitePremium, SeloAssinante } from '../componentes/Premium'
 import {
@@ -10,6 +10,7 @@ import {
   SITUACOES_TURMA,
   type Dificuldade,
   type Filtros,
+  type Foco,
   type Situacao,
 } from '../dados/tipos'
 import { consultaParaFiltros, filtrosParaConsulta, navegar } from '../util/rotas'
@@ -27,6 +28,13 @@ import '../estilos/paginas/Treinar.css'
 // TEOT e TARO vêm primeiro, cada um na sua pílula. "TEOT/TARO" fica para as
 // questões cuja prova de origem ainda não foi confirmada com o PDF oficial.
 const ORDEM_PROVAS = ['TEOT', 'TARO', 'TEOT/TARO']
+
+// Ortopedia é o padrão do site; cirurgia da mão só entra quando a pessoa escolhe.
+const FOCOS: { foco: Foco; titulo: string; descricao: string }[] = [
+  { foco: 'ortopedia', titulo: 'Ortopedia e traumatologia', descricao: 'TEOT, TARO e afins' },
+  { foco: 'tudo', titulo: 'Ortopedia + cirurgia da mão', descricao: 'As duas juntas' },
+  { foco: 'mao', titulo: 'Só cirurgia da mão', descricao: 'Provas de título da mão' },
+]
 
 const DIFICULDADES: Dificuldade[] = ['facil', 'medio', 'dificil']
 const LIMITES = [5, 10, 20, 30, 50, 100]
@@ -105,7 +113,20 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     return grupos
   }, [indice])
 
-  const gerais = useMemo(() => (indice ? contar(indice, FILTROS_VAZIOS, contexto) : null), [indice, contexto])
+  const gerais = useMemo(() => (indice ? contar(indice, { ...FILTROS_VAZIOS, foco: filtros.foco }, contexto) : null), [indice, contexto, filtros.foco])
+  // Quantas questões cada foco traz, com os demais filtros como estão.
+  const porFoco = useMemo(() => {
+    if (!indice) return null
+    const temMao = indice.questoes.some((q) => q.cm === 1)
+    if (!temMao) return null
+    const n = (foco: Foco) => contar(indice, { ...filtros, foco }, contexto).total
+    return { ortopedia: n('ortopedia'), tudo: n('tudo'), mao: n('mao') }
+  }, [indice, filtros, contexto])
+
+  const provasDoFoco = useMemo(() => {
+    if (!indice || !porFoco) return null
+    return new Set(filtrar(indice, { ...FILTROS_VAZIOS, foco: filtros.foco, incluirAnuladas: true }).map((q) => q.p).filter((p): p is number => p !== null).map((p) => indice.provas[p]))
+  }, [indice, porFoco, filtros.foco])
 
   // Filtro que não tem nenhuma opção não vira campo vazio na tela.
   const temProva = gruposProva.length > 0
@@ -149,7 +170,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   function sessaoRapida(preset: Partial<Filtros> = {}) {
     if (!indice) return
     if (sessao && !sessao.concluidaEm && !window.confirm('Substituir a sessão em andamento? Seu histórico será mantido.')) return
-    const rapido: Filtros = { ...FILTROS_VAZIOS, embaralhar: true, limite: 10, ...preset }
+    const rapido: Filtros = { ...FILTROS_VAZIOS, foco: filtros.foco, embaralhar: true, limite: 10, ...preset }
     iniciar(rapido, montarSessao(indice, rapido, Date.now(), contexto))
     navegar('/sessao')
   }
@@ -238,6 +259,17 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
             <p>{selecionados ? `${selecionados} ${selecionados === 1 ? 'selecionado' : 'selecionados'}. Toque de novo para desmarcar.` : 'Marque um ou mais temas. Abra os subtemas para um recorte mais fino.'}</p>
           </div>
         </header>
+        {porFoco && (
+          <div className="tr-foco" role="group" aria-label="Foco do treino">
+            {FOCOS.map((f) => (
+              <button key={f.foco} type="button" className="tr-foco__opcao" aria-pressed={filtros.foco === f.foco} onClick={() => atualizar({ foco: f.foco, provas: [] })}>
+                <strong>{f.titulo}</strong>
+                <small>{f.descricao}</small>
+                <span className="numerico">{porFoco[f.foco].toLocaleString('pt-BR')}</span>
+              </button>
+            ))}
+          </div>
+        )}
         <SeletorArvore
           variante="lista"
           arvore={arvore}
@@ -347,6 +379,8 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
                 {gruposProva.map((grupo) => {
                   const marcado = grupo.provas.some((p) => filtros.provas.includes(p))
                   const quantidade = grupo.provas.reduce((soma, p) => soma + (contagens?.porProva[p] ?? 0), 0)
+                  // Provas que o foco escolhido não traz (ex.: as da mão no foco ortopedia) somem da lista.
+                  if (!marcado && provasDoFoco && !grupo.provas.some((p) => provasDoFoco.has(p))) return null
                   return (
                     <button
                       key={grupo.rotulo}
