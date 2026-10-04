@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Plantão das 3h14 Orto Questões</title>
+<!-- Carrossel de feed (5 slides, 1080x1350): uma conversa de madrugada entre o R1 e o R3 sobre
+     síndrome compartimental na fratura da tíbia. Conversa e nomes fictícios.
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-04-plantao/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+:root { --verde: #14655E; --tinta: #0B3A35; --ouro: #F4CF7C; --creme: #FBF6EA; --noite: #071312; --balao: #1d2b2a; --vermelho: #f07a6a; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1350px; color: #fff; padding: 64px 72px;
+  background: radial-gradient(circle at 80% 8%, rgba(244,207,124,.16), transparent 34%), radial-gradient(circle at 1px 1px, rgba(255,255,255,.05) 1.4px, transparent 1.5px) 0 0/34px 34px, linear-gradient(170deg, #050d0c, #0B3A35 120%); }
+.topo { display: flex; justify-content: space-between; align-items: center; }
+.marca { display: flex; align-items: center; gap: 14px; font: 34px Jakarta; letter-spacing: -.02em; }
+.marca svg { width: 52px; height: 52px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; opacity: .9; }
+.cont { font: 700 26px Jakarta; color: rgba(255,255,255,.5); letter-spacing: .08em; }
+h1, h2 { font-family: Jakarta; letter-spacing: -.04em; text-wrap: balance; }
+.hora { font: 800 250px/1 Jakarta; letter-spacing: -.06em; margin-top: 70px; color: #fff; }
+.hora span { color: var(--ouro); }
+h1 { font-size: 76px; line-height: 1.04; margin-top: 10px; }
+h1 em, h2 em { font-style: normal; color: var(--ouro); }
+h2 { font-size: 60px; line-height: 1.06; }
+.sub { font-size: 34px; line-height: 1.42; color: rgba(255,255,255,.78); text-wrap: pretty; }
+.sub b { color: #fff; }
+.aviso { margin-top: 70px; display: grid; grid-template-columns: 84px 1fr; gap: 24px; align-items: center; padding: 28px 32px; border-radius: 34px;
+  background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.18); box-shadow: 0 30px 60px rgba(0,0,0,.35); backdrop-filter: blur(8px); }
+.aviso .ava { width: 84px; height: 84px; border-radius: 24px; background: #2f6f68; display: grid; place-items: center; font: 800 32px Jakarta; color: var(--ouro); }
+.aviso strong { font: 800 30px Jakarta; } .aviso small { float: right; font: 500 24px Inter; color: rgba(255,255,255,.55); }
+.aviso p { font-size: 31px; line-height: 1.35; color: rgba(255,255,255,.9); margin-top: 6px; }
+.rodape { position: absolute; left: 72px; right: 72px; bottom: 54px; display: flex; justify-content: space-between; font: 700 26px Jakarta; color: rgba(255,255,255,.55); }
+.rodape b { color: var(--ouro); }
+
+/* Conversa */
+.app { margin-top: 26px; border-radius: 44px; background: var(--noite); border: 2px solid rgba(255,255,255,.1); overflow: hidden; box-shadow: 0 30px 70px rgba(0,0,0,.4); }
+.app .cab { display: flex; align-items: center; gap: 20px; padding: 24px 30px; background: #0f1f1e; border-bottom: 1px solid rgba(255,255,255,.08); }
+.app .cab .ava { width: 66px; height: 66px; border-radius: 50%; background: #2f6f68; display: grid; place-items: center; font: 800 26px Jakarta; color: var(--ouro); }
+.app .cab strong { display: block; font: 800 30px Jakarta; } .app .cab span { font-size: 23px; color: rgba(255,255,255,.55); }
+.msgs { display: flex; flex-direction: column; gap: 14px; padding: 26px 28px 30px; }
+.m { max-width: 82%; padding: 20px 26px 14px; border-radius: 28px; font-size: 32px; line-height: 1.36; }
+.m small { display: block; text-align: right; margin-top: 4px; font-size: 20px; opacity: .55; }
+.ele { align-self: flex-start; background: var(--balao); border-bottom-left-radius: 8px; }
+.eu { align-self: flex-end; background: var(--verde); border-bottom-right-radius: 8px; }
+.eu b { color: var(--ouro); }
+.dia { align-self: center; font: 700 21px Jakarta; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.45); }
+.digitando { align-self: flex-start; display: flex; gap: 10px; padding: 22px 26px; border-radius: 28px; background: var(--balao); }
+.digitando i { width: 14px; height: 14px; border-radius: 50%; background: rgba(255,255,255,.55); }
+
+/* Resumo */
+.cartao { margin-top: 34px; border-radius: 36px; background: var(--creme); color: var(--tinta); padding: 40px 44px; box-shadow: 0 30px 70px rgba(0,0,0,.35); }
+.cartao .eti { display: inline-block; padding: 9px 20px; border-radius: 99px; background: var(--tinta); color: var(--ouro); font: 800 21px Jakarta; letter-spacing: .1em; text-transform: uppercase; }
+.cartao h2 { margin-top: 18px; font-size: 54px; }
+.itens { margin-top: 24px; display: grid; gap: 16px; }
+.it { display: grid; grid-template-columns: 58px 1fr; gap: 20px; align-items: start; }
+.it b { width: 58px; height: 58px; border-radius: 16px; display: grid; place-items: center; background: var(--verde); color: var(--ouro); font: 800 28px Jakarta; }
+.it p { font-size: 30px; line-height: 1.36; color: #33504b; padding-top: 6px; }
+.it p strong { color: var(--tinta); }
+.cta { margin-top: 30px; padding: 26px 34px; border-radius: 26px; background: var(--ouro); color: var(--tinta); font: 800 32px Jakarta; text-align: center; }
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/>
+<circle cx="17" cy="20" r="4.5" fill="#9cc3bd"/><rect x="26" y="16.5" width="24" height="7" rx="3.5" fill="#9cc3bd"/>
+<circle cx="17" cy="32" r="4.5" fill="#f4cf7c"/><rect x="26" y="28.5" width="24" height="7" rx="3.5" fill="#f4cf7c"/>
+<circle cx="17" cy="44" r="4.5" fill="#9cc3bd"/><rect x="26" y="40.5" width="19" height="7" rx="3.5" fill="#9cc3bd"/></symbol>
+</defs></svg>
+
+<!-- 1. Capa -->
+<section id="p1-capa">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">1/5</span></div>
+  <p class="hora">03<span>:</span>14</p>
+  <h1>Chegou mensagem<br>do <em>R1 de plantão.</em></h1>
+  <div class="aviso"><div class="ava">R1</div><div><strong>R1 · Plantão</strong><small>agora</small><p>A dor do paciente da tíbia não passa com nada. Mas o pulso está ótimo, então está tranquilo, né?</p></div></div>
+  <div class="aviso" style="margin-top:22px;opacity:.75"><div class="ava">R1</div><div><strong>R1 · Plantão</strong><small>03:14</small><p>Posso esperar a visita da manhã?</p></div></div>
+  <p class="sub" style="margin-top:50px">O que você responderia? Pense antes de arrastar. <b>A conversa continua.</b></p>
+  <div class="rodape"><span>Trauma · perna</span><span>arraste <b>&gt;&gt;</b></span></div>
+</section>
+
+<!-- 2. Conversa, parte 1 -->
+<section id="p2-conversa">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">2/5</span></div>
+  <div class="app">
+    <div class="cab"><div class="ava">R1</div><div><strong>R1 · Plantão</strong><span>online</span></div></div>
+    <div class="msgs">
+      <p class="dia">Hoje</p>
+      <p class="m ele">Homem, 24 anos, moto. Fratura da diáfise da tíbia, gesso fechado.<small>03:12</small></p>
+      <p class="m ele">Já pediu morfina três vezes. A dor não passa com nada.<small>03:13</small></p>
+      <p class="m ele">Mas o pulso pedioso está ótimo, então está tranquilo, né?<small>03:14</small></p>
+      <p class="m eu"><b>Não.</b> Pulso presente não descarta síndrome compartimental.<small>03:14</small></p>
+      <p class="m eu">Estica os dedos dele passivamente. Dói?<small>03:15</small></p>
+      <p class="m ele">Ele gritou.<small>03:17</small></p>
+    </div>
+  </div>
+  <div class="rodape"><span>Conversa fictícia</span><span>arraste <b>&gt;&gt;</b></span></div>
+</section>
+
+<!-- 3. Conversa, parte 2 -->
+<section id="p3-conduta">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">3/5</span></div>
+  <div class="app">
+    <div class="cab"><div class="ava">R1</div><div><strong>R1 · Plantão</strong><span>online</span></div></div>
+    <div class="msgs">
+      <p class="m eu">Abre o gesso e o algodão <b>até a pele</b>. Deixa a perna na altura do coração, sem elevar.<small>03:17</small></p>
+      <p class="m eu">Dor desproporcional e dor ao estiramento passivo são os sinais <b>precoces</b>. Parestesia, paralisia e falta de pulso chegam <b>tarde</b>.<small>03:18</small></p>
+      <p class="m ele">E se ele estivesse sedado?<small>03:18</small></p>
+      <p class="m eu">Aí você mede: pressão <b>diastólica</b> menos a pressão do compartimento. Se der <b>menos de 30 mmHg</b>: fasciotomia.<small>03:20</small></p>
+      <p class="m ele">Anotado. Mas ele está acordado e gritando.<small>03:20</small></p>
+      <div class="digitando"><i></i><i></i><i></i></div>
+    </div>
+  </div>
+  <div class="rodape"><span>Conversa fictícia</span><span>arraste <b>&gt;&gt;</b></span></div>
+</section>
+
+<!-- 4. Conversa, parte 3 -->
+<section id="p4-numero">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">4/5</span></div>
+  <div class="app">
+    <div class="cab"><div class="ava">R1</div><div><strong>R1 · Plantão</strong><span>online</span></div></div>
+    <div class="msgs">
+      <p class="m ele">Quantos compartimentos na perna?<small>03:20</small></p>
+      <p class="m eu"><b>Quatro.</b> Anterior, lateral, posterior superficial e posterior profundo. Libera os quatro, em geral por <b>duas incisões</b>.<small>03:21</small></p>
+      <p class="m ele">Abri o gesso. Vou chamar o staff.<small>03:24</small></p>
+      <p class="m eu">Isso. E anota o horário de tudo.<small>03:24</small></p>
+      <p class="m eu">Na prova e no plantão, a resposta certa <b>não espera o pulso sumir</b>.<small>03:25</small></p>
+      <div class="digitando"><i></i><i></i><i></i></div>
+    </div>
+  </div>
+  <div class="rodape"><span>Conversa fictícia</span><span>arraste <b>&gt;&gt;</b></span></div>
+</section>
+
+<!-- 5. Resumo -->
+<section id="p5-resumo">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">5/5</span></div>
+  <div class="cartao">
+    <span class="eti">Print para o próximo plantão</span>
+    <h2>Síndrome compartimental <em style="color:var(--verde)">em 5 linhas</em></h2>
+    <div class="itens">
+      <div class="it"><b>1</b><p><strong>Dor desproporcional</strong> e dor ao estiramento passivo: os primeiros sinais.</p></div>
+      <div class="it"><b>2</b><p><strong>Pulso presente não exclui.</strong> Ausência de pulso é sinal tardio.</p></div>
+      <div class="it"><b>3</b><p>Abra gesso e algodão <strong>até a pele</strong>. Membro na altura do coração.</p></div>
+      <div class="it"><b>4</b><p>Diastólica menos compartimento <strong>&lt; 30 mmHg</strong>: fasciotomia.</p></div>
+      <div class="it"><b>5</b><p>Perna: <strong>quatro compartimentos</strong>, liberados em geral por duas incisões.</p></div>
+    </div>
+  </div>
+  <div class="cta">Treine trauma com questões comentadas · ortoquestoes.com.br</div>
+</section>
+
+<script>/* sem script */</script>
+</body></html>

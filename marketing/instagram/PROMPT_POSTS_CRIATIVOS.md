@@ -21,7 +21,9 @@ estudando para a prova de título (TEOT e TEPOT 2027: 10 de janeiro de 2027).
    `marketing/instagram/funcionalidades/post.html` (post e stories densos, verde escuro com cartões),
    `marketing/instagram/relancamento/posts.html` (editorial claro, quiz escuro e contagem dourada),
    `marketing/instagram/cronograma.html` (caderno pautado com post-it, fita e letra à mão),
-   `marketing/instagram/casos/01-tcg/caso.html` (carrossel "Caso para detetive").
+   `marketing/instagram/casos/01-tcg/caso.html` (carrossel "Caso para detetive"),
+   `marketing/instagram/estilos/` (os três estilos oficiais: Jogo de cartas, Plantão das 3h14 e
+   Ache os 3 erros, com a ficha de cada um em `estilos/ESTILOS.md`).
    Copie o nível de acabamento deles: é o padrão mínimo.
 3. Entregue: o HTML completo, a legenda e a ordem de postagem. Depois revise as imagens você mesmo
    (sobreposição, texto cortado, contraste, acentos) e corrija antes de entregar.
