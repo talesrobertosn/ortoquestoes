@@ -129,6 +129,11 @@ export async function enviarImagemQuestao(caminho: string, arquivo: Blob): Promi
   }, 60_000)
   if (!resposta.ok) {
     const detalhe = await resposta.json().then((d: { message?: string; error?: string }) => d.message ?? d.error ?? '').catch(() => '')
+    const texto = detalhe.toLowerCase()
+    if (texto.includes('bucket not found')) throw new Error('O espaço de imagens "questoes" ainda não existe no Supabase. Rode o SQL do editor de questões (202610050100_editor_questoes.sql).')
+    if (texto.includes('row-level security') || texto.includes('permission denied') || resposta.status === 403) throw new Error('O Supabase recusou o envio: confira se rodou os SQL do editor de questões (202610050100 e 202610050200) e se sua conta está na tabela de administradores.')
+    if (resposta.status === 413 || texto.includes('size')) throw new Error('A imagem passa do limite de 5 MB.')
+    if (resposta.status === 415 || texto.includes('mime')) throw new Error('Formato de imagem não aceito. Use JPG, PNG, WebP ou GIF.')
     throw new Error(`Não foi possível enviar a imagem (${resposta.status}${detalhe ? ': ' + detalhe : ''}).`)
   }
   return `${url}/storage/v1/object/public/questoes/${alvo}`
