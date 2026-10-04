@@ -3043,17 +3043,17 @@
   "conferido": false
  },
  "pediatria-0275": {
-  "conceito": "### Osteocondroses e apofisites do pé\n| Epônimo | Local | Idade/perfil |\n|---|---|---|\n| ==Köhler== | ==navicular== | meninos de 4 a 7 anos; autolimitada |\n| ==Iselin== | ==base do 5º metatarso== (fibular curto) | adolescente ativo |\n| Freiberg | cabeça do 2º metatarso | adolescente feminina |\n| Sever | apófise do calcâneo (tendão calcâneo) | 8 a 12 anos, esportes |\n| Renander | sesamoide do hálux | |\n\n### Köhler\n- Navicular achatado, esclerótico, fragmentado.\n- Tratamento: bota gessada curta alivia a dor; reossifica sem sequela.\n\n### Iselin\n- Não confundir apófise (longitudinal) com fratura (transversa).\n\n### Ossificação do tarso\n| Osso | Ossificação |\n|---|---|\n| calcâneo | 6º mês fetal |\n| tálus | 7º mês fetal |\n| cuboide | ao nascer |\n| cuneiforme lateral | 1 ano |\n| cuneiforme medial | 2 anos |\n| cuneiforme intermédio | 3 anos |\n| ==navicular== | ==3 a 4 anos (o último)== |\n\n- Ossificação tardia sob compressão explica ==Köhler==.\n\n> **Na prova:** último osso do tarso a ossificar = ==navicular==",
-  "correta": "**Navicular.**\n- Ossifica entre 3 e 4 anos.\n- Compressão do núcleo tardio: Köhler.",
   "incorretas": {
-   "A": "**Ao nascer.**\n- Precoce.",
-   "C": "**2 anos.**\n- Antes do navicular.",
-   "D": "**1 ano.**\n- Antes."
+   "A": "O cuboide ossifica perto do nascimento, bem antes do navicular.",
+   "C": "O primeiro cuneiforme ossifica por volta de 2 anos, antes do navicular.",
+   "D": "O terceiro cuneiforme ossifica por volta de 1 ano, antes do navicular."
   },
+  "conceito": "Os ossos do **tarso** ossificam em uma ordem previsível. Os grandes ossos do retropé começam ainda no útero; os do mediopé, depois do nascimento:\n\n**calcâneo**: por volta do 6º mês de vida fetal, o primeiro;\n\n**tálus**: por volta do 7º mês fetal;\n\n**cuboide**: perto do nascimento;\n\n**cuneiforme lateral**: por volta de 1 ano;\n\n**cuneiforme medial**: por volta de 2 anos;\n\n**cuneiforme intermédio**: por volta de 3 anos;\n\n**navicular**: entre **3 e 4 anos**, o **último** a ossificar (nos meninos, um pouco mais tarde).\n\n**Por que isso importa**: o navicular ossifica tarde e fica **comprimido** entre a cabeça do tálus e os cuneiformes, que já estão ossificados, justamente no período de maior carga da marcha. Essa compressão do núcleo tardio explica a **doença de Köhler**, a osteocondrose do navicular em meninos de 4 a 7 anos: navicular achatado, denso e fragmentado, que reossifica sem sequela; a bota gessada curta alivia a dor.\n\n**Na radiografia do recém-nascido**: só aparecem calcâneo, tálus e às vezes o cuboide. Por isso, no pé torto e no pé talo vertical, a posição do navicular não pode ser vista diretamente.\n\n**Na prova**: o último osso do tarso a ossificar é o **navicular**.",
+  "correta": "O navicular ossifica entre 3 e 4 anos, depois de todos os outros ossos do tarso.",
   "referencias": [
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 19"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0276": {
@@ -3068,116 +3068,116 @@
   "conferido": false
  },
  "pediatria-0277": {
-  "conceito": "### Menisco discoide\n| Aspecto | Dado |\n|---|---|\n| menisco | ==lateral== (quase sempre) |\n| prevalência | 0,4 a 17% (mais em asiáticos) |\n| bilateral | até 20% |\n| clínica | ==estalido==, bloqueio, ==lesões sem trauma== |\n\n### Watanabe\n| Tipo | Descrição |\n|---|---|\n| I completo | cobre todo o planalto, fixações normais |\n| II incompleto | cobre parte |\n| III ==Wrisberg== | ==sem fixação tibial posterior (coronário)==, só o ligamento de Wrisberg: ==hipermóvel== |\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| assintomático | observar |\n| sintomático estável | ==saucerização== (meniscectomia parcial) |\n| Wrisberg / instável | saucerização + ==sutura periférica==; clássico: meniscectomia total |\n\n### Lesões no discoide\n- Menisco espesso e mal vascularizado: degeneração intrassubstancial.\n- Lesão mais frequente: ==clivagem horizontal==.\n\n> **Na prova:** lesão mais comum no menisco discoide = ==clivagem horizontal==",
-  "correta": "**Clivagem horizontal.**\n- Menisco espesso sofre cisalhamento interno.\n- Lesão degenerativa típica.",
   "incorretas": {
-   "A": "**Menos comum.**\n- Radial.",
-   "B": "**Menos comum.**\n- Oblíqua.",
-   "C": "**Menos comum.**\n- Longitudinal."
+   "A": "A lesão radial ocorre, mas é menos frequente que a horizontal no discoide.",
+   "B": "A lesão oblíqua também é menos frequente no menisco discoide.",
+   "C": "A lesão longitudinal é mais típica do menisco normal com trauma; no discoide predomina a horizontal."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **menisco discoide** é quase sempre o **lateral**, largo e **espesso**, e tem menos vasos e uma organização de fibras colágenas menos regular que o menisco normal. Por isso ele se lesa com trauma mínimo, muitas vezes sem trauma nenhum.\n\n**Por que a lesão típica é horizontal**: o menisco espesso sofre **cisalhamento dentro da própria substância** quando é comprimido entre o fêmur e a tíbia. A falha acontece no plano horizontal, separando a parte de cima da de baixo: é a **clivagem horizontal**, de padrão degenerativo. Muitas vezes vem acompanhada de cisto meniscal.\n\n**Os outros padrões**: lesões radiais, longitudinais e oblíquas aparecem também, mas são menos frequentes no discoide. A lesão longitudinal, por exemplo, é mais típica do menisco normal com trauma, como na lesão do LCA.\n\n**A apresentação**: estalido (o \"joelho que estala\"), bloqueio, derrame e dor na interlinha lateral.\n\n**O tratamento**: no menisco sintomático, **saucerização** (meniscectomia parcial que devolve o formato de C), retirando a parte central e a lesão horizontal quando possível, e **sutura periférica** se houver instabilidade.\n\n**Na prova**: a lesão mais frequente do menisco discoide é a **clivagem horizontal**.",
+  "correta": "O menisco discoide é espesso e mal vascularizado e sofre cisalhamento interno, o que gera a clivagem horizontal.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0278": {
-  "conceito": "### Recidiva do pé torto após Ponseti\n| Tipo | Achado | Conduta |\n|---|---|---|\n| estrutural (rígida) | adução, cavo, varo ou equino fixos | ==novos gessos== ± tenotomia |\n| ==dinâmica== | ==supinação do antepé na marcha== (balanço), pé passivamente corrigível | ==transferência do tibial anterior== |\n\n### Transferência do tibial anterior\n- Destino: ==cuneiforme lateral== (ou cuboide em alguns serviços).\n- Pré-requisitos: pé ==flexível==, deformidade fixa já corrigida (gessos antes), idade em geral acima de 2,5 a 3 anos (cuneiforme lateral ossificado).\n- Mecanismo: tibial anterior dominante sobre os fibulares supina o pé ao dorsifletir.\n\n### Causa principal de recidiva\n- ==Não adesão à órtese de abdução== (botas com barra) até 4 a 5 anos.\n\n### Órtese de abdução (Denis Browne / botas com barra)\n| Pé | Rotação externa |\n|---|---|\n| ==afetado== | ==60 a 70°== |\n| ==normal== (unilateral) | ==30 a 40°== |\n\n- Barra na largura dos ombros; dorsiflexão de 10 a 15°.\n- ==23 h/dia por 3 meses==, depois ==noturna até 4 a 5 anos==.\n\n### Sequência de Ponseti (CAVE)\n| Ordem | Deformidade | Manobra |\n|---|---|---|\n| 1 | ==Cavo== | ==supinar o antepé== e ==elevar (dorsifletir) o 1º metatarso== (alinhar antepé ao retropé) |\n| 2 | Aduto | abduzir o pé com contrapressão na cabeça do tálus |\n| 3 | Varo | corrige junto com a abdução (calcâneo roda sob o tálus) |\n| 4 | Equino | por último; ==tenotomia percutânea== do tendão calcâneo se < 15° de dorsiflexão |\n\n- Nunca pronar o antepé: piora o cavo.\n- Nunca pressionar o calcâneo (bloqueia a rotação).\n\n### Dimeglio (0 a 20)\n| Item | Pontos |\n|---|---|\n| equino, varo, rotação calcâneo-antepé, adução | 0 a 4 cada (redutibilidade) |\n| prega posterior | 1 |\n| ==prega medial== | ==1== |\n| cavo | 1 |\n| musculatura ruim | 1 |\n\n| Total | Grau |\n|---|---|\n| < 5 | I (postural) |\n| 5 a 9 | II |\n| 10 a 14 | III |\n| 15 a 20 | IV (grave) |\n\n> **Na prova:** prega medial no Dimeglio = ==1 ponto==",
-  "correta": "**1 ponto.**\n- Itens adicionais valem 1 cada.\n- Prega posterior, medial, cavo e musculatura.",
   "incorretas": {
-   "B": "**Excessivo.**\n- Itens extras valem 1.",
-   "C": "**Excessivo.**\n- Idem.",
-   "D": "**Máximo dos parâmetros.**\n- Não das pregas."
+   "B": "Os itens adicionais valem 1 ponto cada; 2 pontos não existe para a prega medial.",
+   "C": "3 pontos é valor dos parâmetros principais redutíveis, não das pregas.",
+   "D": "4 pontos é o máximo de cada parâmetro principal, como equino ou varo, não das pregas."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **classificação de Dimeglio** mede a gravidade do **pé torto** antes do tratamento e acompanha a resposta. A pontuação vai de 0 a 20.\n\n**Os quatro parâmetros principais**, cada um de **0 a 4 pontos**, conforme o quanto a deformidade se reduz passivamente:\n\n**equino** no plano sagital;\n\n**varo** do calcâneo no plano frontal;\n\n**rotação** do bloco calcâneo-antepé ao redor do tálus, no plano horizontal;\n\n**adução** do antepé.\n\n**Os quatro itens adicionais**, cada um valendo **1 ponto**:\n\n**prega posterior** acentuada no calcanhar;\n\n**prega medial** acentuada no mediopé;\n\n**cavo**;\n\n**musculatura ruim** (hipotonia ou fibrose).\n\n**O grau pelo total**: abaixo de 5, grau I (postural, quase normal); de 5 a 9, grau II (moderado); de 10 a 14, grau III (grave); de 15 a 20, grau IV (muito grave, quase rígido).\n\n**Outra escala usada**: a de **Pirani**, que vai de 0 a 6 e soma o retropé e o mediopé; é a mais usada no acompanhamento do Ponseti.\n\n**Na prova**: a prega medial no Dimeglio vale **1 ponto**.",
+  "correta": "A prega medial é um dos quatro itens adicionais do Dimeglio, e cada um vale 1 ponto.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0279": {
-  "conceito": "### Pseudartrose congênita da clavícula\n| Aspecto | Dado |\n|---|---|\n| lado | ==direito== (esquerdo só com dextrocardia) |\n| sexo | ==feminino== |\n| local | terço médio |\n| etiologia | pulsação da ==artéria subclávia== (mais alta à direita) |\n| neurofibromatose | ==sem relação== (diferente da tíbia) |\n| bilateral | rara |\n\n### Diferencial\n| Condição | Diferença |\n|---|---|\n| fratura obstétrica | dor, pseudoparalisia, calo em 2 a 3 semanas |\n| displasia cleidocraniana | falha ossificação lateral, bilateral, fontanelas abertas |\n\n### Tratamento\n- Assintomática: observar.\n- Dor ou deformidade (geralmente 3 a 6 anos): ressecção da pseudartrose, enxerto e fixação; alta taxa de consolidação.\n\n> **Na prova:** pseudartrose congênita da clavícula = ==menina, lado direito==.",
-  "correta": "**Feminino, lado direito.**\n- Artéria subclávia mais alta à direita.\n- Esquerda sugere dextrocardia.",
   "incorretas": {
-   "B": "**Sexo errado.**\n- Feminino.",
-   "C": "**Lado errado.**\n- Direito.",
-   "D": "**Duplamente errada.**\n- Sexo e lado."
+   "B": "O lado direito está certo, mas predomina no sexo feminino.",
+   "C": "O sexo está certo, mas o lado típico é o direito; o esquerdo sugere dextrocardia.",
+   "D": "Erra os dois pontos: predomina no sexo feminino e no lado direito."
   },
+  "conceito": "A **pseudartrose congênita da clavícula** é uma falha de união entre os dois centros de ossificação da clavícula, no **terço médio**. Aparece ao nascer ou logo depois como uma saliência indolor e móvel.\n\n**O perfil**:\n\n**lado**: quase sempre o **direito**; o esquerdo aparece praticamente só quando há **dextrocardia** ou situs inversus;\n\n**sexo**: mais comum no **feminino**;\n\n**bilateral**: raro;\n\n**neurofibromatose**: **sem relação**, ao contrário da pseudartrose congênita da tíbia.\n\n**A explicação mais aceita**: a **artéria subclávia direita** passa mais alta e mais perto da clavícula; sua pulsação impediria a união dos dois centros. Por isso o lado acompanha a posição do coração.\n\n**Os diferenciais**:\n\n**fratura obstétrica**: dói, a criança não mexe o braço (pseudoparalisia) e forma calo em 2 a 3 semanas;\n\n**disostose cleidocraniana**: falha na parte lateral da clavícula, em geral bilateral, com fontanelas abertas.\n\n**O tratamento**: sem dor, observar. Com dor ou deformidade incômoda, em geral entre 3 e 6 anos: ressecção do foco, enxerto ósseo e fixação, com alta taxa de consolidação.\n\n**Na prova**: pseudartrose congênita da clavícula = sexo **feminino**, lado **direito**.",
+  "correta": "A pseudartrose congênita da clavícula predomina em meninas e no lado direito, onde a artéria subclávia passa mais alta.",
   "referencias": [
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 12"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0280": {
-  "conceito": "### Luxação congênita da cabeça do rádio\n- Anomalia congênita mais comum do cotovelo.\n- ==Bilateral== na maioria e ==associada== a outras manifestações (sinostose, síndromes como nail-patella, Ehlers-Danlos, Larsen).\n- Direção mais comum: ==posterior==.\n\n### Congênita × Monteggia crônico\n| Achado | Congênita | Traumática |\n|---|---|---|\n| lado | bilateral | unilateral |\n| cabeça | ==convexa (cúpula)==, pequena | côncava, normal |\n| capítulo | hipoplásico | normal |\n| ulna | reta | deformidade plástica |\n| direção | posterior | anterior |\n\n### Tratamento\n- Observação; ressecção da cabeça após a maturidade se dor.\n\n### Morfologia da cabeça\n- Sem articulação com o capítulo, a cabeça cresce ==pequena e em cúpula== (convexa).\n- Colo alongado; rádio relativamente longo em relação à ulna.\n\n> **Na prova:** luxação congênita da cabeça do rádio = ==posterior, cabeça pequena==",
-  "correta": "**Posterior, cabeça menor que o normal.**\n- Direção mais comum: posterior.\n- Cabeça pequena e convexa (cúpula), sem molde do capítulo.",
   "incorretas": {
-   "A": "**Anterior e normal lembram o Monteggia.**\n- Traumática: cabeça côncava, normal.",
-   "B": "**Direção errada.**\n- A mais comum é posterior.",
-   "C": "**Tamanho errado.**\n- Cabeça congênita é pequena."
+   "A": "Desvio anterior com cabeça normal descreve o Monteggia antigo, traumático.",
+   "B": "A cabeça pequena está certa, mas o desvio mais comum é posterior.",
+   "C": "O desvio posterior está certo, mas a cabeça é menor que o normal."
   },
+  "conceito": "A **luxação congênita da cabeça do rádio** é a anomalia congênita mais comum do cotovelo. Costuma ser **bilateral** e vir com outras alterações (sinostose radioulnar, síndrome unha-patela, Ehlers-Danlos, Larsen). A direção mais comum é **posterior**.\n\n**Por que a cabeça é pequena**: a cabeça do rádio se molda contra o capítulo durante o crescimento. Fora do lugar desde cedo, ela não recebe esse molde e cresce **pequena e convexa**, em forma de cúpula. O colo fica alongado, o rádio fica relativamente longo e o **capítulo é hipoplásico**.\n\n**Como diferenciar do Monteggia antigo (traumático)**:\n\n**direção**: congênita **posterior**; traumática em geral **anterior**;\n\n**cabeça**: congênita **pequena e convexa**; traumática de tamanho **normal e côncava**;\n\n**lado**: congênita bilateral; traumática unilateral;\n\n**ulna**: reta na congênita; com deformidade plástica na traumática.\n\n**O quadro e o tratamento**: limitação da extensão (na posterior), pronossupinação pouco limitada. O tratamento é **conservador**; se doer depois da maturidade, ressecção da cabeça.\n\n**Na prova**: luxação congênita = **posterior**, com cabeça **menor que o normal**.",
+  "correta": "Na luxação congênita, a cabeça desvia para trás e, sem o molde do capítulo, cresce pequena e convexa.",
   "referencias": [
    "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), Cap. 21"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0281": {
-  "conceito": "### Coxa vara do desenvolvimento\n- Ângulo cervicodiafisário diminuído por defeito de ossificação no colo medial.\n- ==Triângulo de Fairbank== (fragmento triangular inferior no colo).\n- Marcha de Trendelenburg indolor, encurtamento; bilateral em 30 a 50%.\n\n### Por que limita abdução e rotação medial\n- Trocanter alto e colo varo: o trocanter ==bate no ilíaco== na abdução.\n- Retroversão relativa: ==rotação medial== limitada.\n\n### Ângulo de Hilgenreiner-epifisário (HE)\n| Ângulo HE | Conduta |\n|---|---|\n| < 45° | resolve espontaneamente |\n| 45 a 60° | observar |\n| ==> 60°== | ==osteotomia valgizante== (Pauwels) |\n\n### Diferenciais\n- Coxa vara congênita (DFFP), displasias esqueléticas, raquitismo, sequela de DDQ ou Perthes.\n\n### Osteotomias valgizantes\n| Técnica | Nível |\n|---|---|\n| ==Borden== | ==intertrocantérica== (ou subtrocantérica), valgizante com placa |\n| Pauwels | intertrocantérica em Y |\n| Langenskiöld | intertrocantérica |\n\n- Meta: HE < 38°; recidiva se hipocorreção.\n\n> **Na prova:** osteotomia de Borden = ==intertrocantérica==",
-  "correta": "**Intertrocantérica.**\n- Valgizante, fixada com placa.\n- Objetivo: HE < 38°.",
   "incorretas": {
-   "A": "**Subcapital.**\n- Nível de Dunn.",
-   "B": "**Basocervical.**\n- Kramer.",
-   "C": "**Mediocervical.**\n- Não se faz osteotomia valgizante no colo."
+   "A": "O nível subcapital é usado em técnicas de realinhamento da epifisiólise, como a de Dunn, não na osteotomia de Borden.",
+   "B": "O nível basocervical é usado em osteotomias da epifisiólise, como a de Kramer.",
+   "C": "Não se faz osteotomia valgizante no meio do colo, pelo risco à irrigação da cabeça."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **coxa vara do desenvolvimento**, a fise do colo fica vertical e o peso a submete a **cisalhamento**, o que mantém o defeito de ossificação e faz a deformidade progredir. A **osteotomia valgizante** corrige isso: deixa a fise mais horizontal, transforma o cisalhamento em **compressão** e permite que o defeito ossifique.\n\n**Quando operar**: ângulo de **Hilgenreiner-epifisário acima de 60°**, progressão documentada ou ângulo cervicodiafisário abaixo de cerca de 90 a 100°.\n\n**Onde se faz a osteotomia**: nas técnicas clássicas, na região **intertrocantérica** (ou subtrocantérica), longe do colo doente e dos vasos da cabeça:\n\n**Borden**: osteotomia valgizante **intertrocantérica** (ou subtrocantérica), fixada com placa;\n\n**Pauwels**: intertrocantérica em Y;\n\n**Langenskiöld**: também intertrocantérica.\n\n**A meta**: hipercorrigir para um ângulo de **Hilgenreiner-epifisário abaixo de cerca de 38°**; com correção insuficiente, a recidiva é comum. Muitos associam a epifisiodese do trocanter maior, para evitar que ele cresça demais.\n\n**Por que não no colo**: osteotomias no colo (subcapital, basocervical) põem em risco a irrigação da cabeça e não são usadas para valgizar a coxa vara.\n\n**Na prova**: a osteotomia de Borden é **intertrocantérica**.",
+  "correta": "A osteotomia valgizante de Borden é feita na região intertrocantérica, fixada com placa.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0282": {
-  "conceito": "### Equinovaro na PC\n- Desequilíbrio entre ==tibial posterior== e/ou ==tibial anterior== espásticos e fibulares fracos.\n- Mais comum na ==hemiplegia==.\n- Definir o culpado: EMG dinâmica, exame (varo no apoio × balanço).\n\n### Procedimentos\n| Epônimo | Técnica |\n|---|---|\n| ==Hoffer (SPLATT)== | hemitransferência do ==tibial anterior== para o cuboide |\n| ==Rancho== | ==alongamento do tibial posterior + SPLATT== |\n| Green | transferência do tibial posterior pela membrana interóssea |\n| Kaufer | hemitransferência do tibial posterior (SPLOTT) para o fibular curto |\n| Turco | liberação posteromedial (PTC congênito) |\n\n- Transferência total do tibial posterior na PC: risco de ==valgo== (evitada).\n\n> **Na prova:** alongamento do TP + hemitransferência do TA = ==Rancho==",
-  "correta": "**Rancho.**\n- Alonga o tibial posterior.\n- Soma a hemitransferência do tibial anterior (SPLATT).",
   "incorretas": {
-   "A": "**Hoffer.**\n- Só a SPLATT, sem alongar o TP.",
-   "C": "**Turco.**\n- Liberação do PTC congênito.",
-   "D": "**Green.**\n- Transferência do TP pela membrana interóssea."
+   "A": "Hoffer é a hemitransferência do tibial anterior isolada, sem alongar o tibial posterior.",
+   "C": "Turco é a liberação posteromedial do pé torto congênito.",
+   "D": "Green é a transferência do tibial posterior pela membrana interóssea."
   },
+  "conceito": "Na **paralisia cerebral**, o **pé equinovaro** é mais comum na **hemiplegia**. Ele vem do desequilíbrio entre um **tibial posterior** e/ou um **tibial anterior** espásticos e os fibulares mais fracos. O primeiro passo é descobrir **qual músculo é o culpado**, pelo exame (varo no apoio sugere tibial posterior; supinação no balanço sugere tibial anterior) e, se possível, pela eletromiografia dinâmica.\n\n**As cirurgias com nome**:\n\n**Hoffer (SPLATT)**: **hemitransferência do tibial anterior** para o cuboide; metade do tendão passa a puxar para lateral e equilibra o pé;\n\n**Rancho**: **alongamento do tibial posterior** **somado** à **hemitransferência do tibial anterior** (SPLATT); trata os dois culpados ao mesmo tempo;\n\n**Kaufer (SPLOTT)**: hemitransferência do **tibial posterior** para o fibular curto;\n\n**Green**: transferência do **tibial posterior** pela membrana interóssea para o dorso do pé;\n\n**Turco**: liberação posteromedial ampla, usada no **pé torto congênito**, não na paralisia cerebral.\n\n**Um cuidado**: na paralisia cerebral, a transferência **total** do tibial posterior tende a levar ao **valgo**, por isso é evitada.\n\n**Na prova**: alongamento do tibial posterior com hemitransferência do tibial anterior = **Rancho**.",
+  "correta": "O procedimento de Rancho combina o alongamento do tibial posterior com a hemitransferência do tibial anterior para o cuboide.",
   "referencias": [
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 31"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0283": {
-  "conceito": "### Osteocondroses e apofisites do pé\n| Epônimo | Local | Idade/perfil |\n|---|---|---|\n| ==Köhler== | ==navicular== | meninos de 4 a 7 anos; autolimitada |\n| ==Iselin== | ==base do 5º metatarso== (fibular curto) | adolescente ativo |\n| Freiberg | cabeça do 2º metatarso | adolescente feminina |\n| Sever | apófise do calcâneo (tendão calcâneo) | 8 a 12 anos, esportes |\n| Renander | sesamoide do hálux | |\n\n### Köhler\n- Navicular achatado, esclerótico, fragmentado.\n- Tratamento: bota gessada curta alivia a dor; reossifica sem sequela.\n\n### Iselin\n- Não confundir apófise (longitudinal) com fratura (transversa).\n\n### Freiberg\n- Necrose da cabeça do ==2º metatarso== (o mais longo e rígido, maior carga); 3º em segundo.\n- Adolescentes do sexo feminino, salto alto.\n- Tratamento: descarga, palmilha; cirurgia (desbridamento, osteotomia de Gauthier).\n\n> **Na prova:** Freiberg = ==cabeça do 2º metatarso==",
-  "correta": "**2º metatarso.**\n- Mais longo e fixo: maior carga.\n- Adolescentes do sexo feminino.",
   "incorretas": {
-   "A": "**1º metatarso.**\n- Raro.",
-   "C": "**3º metatarso.**\n- Segundo mais frequente.",
-   "D": "**4º metatarso.**\n- Raro."
+   "A": "O 1º metatarso raramente é sede da doença de Freiberg.",
+   "C": "O 3º metatarso é o segundo mais acometido, depois do 2º.",
+   "D": "O 4º metatarso é raramente acometido."
   },
+  "conceito": "A **doença de Freiberg** é a osteocondrose (necrose) da **cabeça de um metatarso**, mais comum na **cabeça do 2º metatarso**. Predomina em **adolescentes do sexo feminino**, muitas vezes associada ao uso de salto alto e a esportes de impacto.\n\n**Por que o 2º metatarso**: ele costuma ser o **mais longo** e o mais **fixo** (encaixado entre os cuneiformes na base), então recebe a **maior carga** no apoio do antepé. O 3º metatarso é o segundo mais acometido; o 1º, o 4º e o 5º são raros.\n\n**O quadro**: dor no antepé, sob a cabeça do metatarso, que piora ao andar e com salto; edema e limitação da articulação metatarsofalângica.\n\n**A radiografia**: achatamento, esclerose e, nas fases avançadas, colapso e fragmentação da cabeça, com artrose da metatarsofalângica.\n\n**O tratamento**:\n\n**inicial**: descarga, calçado de solado rígido e palmilha com apoio retrocapital;\n\n**cirúrgico**, se persistir: desbridamento e remoção de corpos livres, ou **osteotomia de Gauthier** (dorsiflexora em cunha) para levar cartilagem sadia da parte plantar à área de contato.\n\n**Outras osteocondroses do pé**: Köhler (navicular), Sever (apófise do calcâneo) e Iselin (base do 5º metatarso).\n\n**Na prova**: Freiberg acomete com maior frequência a **cabeça do 2º metatarso**.",
+  "correta": "A cabeça do 2º metatarso, o mais longo e fixo, recebe mais carga e é a mais acometida pela doença de Freiberg.",
   "referencias": [
    "Schade VL. Surgical Management of Freiberg's Infraction: A Systematic Review. Foot Ankle Spec. 2015. PMID: 25990579.",
    "Treatment of Freiberg Disease. PMID: 29362030.",
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 32"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0284": {
-  "conceito": "### Sobrecrescimento ósseo no coto (overgrowth)\n- Complicação mais comum da amputação ==transdiafisária em crianças==.\n- Aposição óssea terminal perfura pele e partes moles (bursa, dor, úlcera).\n- Não depende da fise: é crescimento aposicional.\n\n| Osso | Frequência |\n|---|---|\n| ==úmero== | o mais comum |\n| ==fíbula== | segundo |\n| tíbia | terceiro |\n| rádio e ulna, fêmur | menos |\n\n### Prevenção e tratamento\n- Preferir ==desarticulação== quando possível (preserva a fise e evita o problema).\n- Técnicas de capa: cobrir o coto com cartilagem/osso (Marquardt, epífise do hálux ou fíbula).\n- Revisão (ressecção) frequente, até várias vezes.\n\n> **Na prova:** sobrecrescimento mais comum = ==úmero==",
-  "correta": "**Úmero.**\n- Mais frequente; fíbula em seguida.\n- Crescimento aposicional, não fisário.",
   "incorretas": {
-   "A": "**Tíbia.**\n- Terceira.",
-   "B": "**Rádio.**\n- Menos comum.",
-   "C": "**Fêmur.**\n- Menos comum."
+   "A": "A tíbia é o terceiro osso mais acometido, depois do úmero e da fíbula.",
+   "B": "O rádio é acometido com menos frequência.",
+   "C": "O fêmur também é acometido com menos frequência que o úmero."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **sobrecrescimento ósseo no coto** (overgrowth) é a complicação mais comum da **amputação transdiafisária** em crianças, sobretudo antes dos 12 anos. A ponta do osso cortado segue formando osso por **aposição** e fica pontiaguda, até perfurar a pele e as partes moles, com bursa, dor e úlcera. Não vem da fise: é crescimento da própria extremidade cortada.\n\n**Os ossos mais afetados**:\n\n**úmero**: o mais comum;\n\n**fíbula**: o segundo;\n\n**tíbia**: o terceiro;\n\n**rádio, ulna e fêmur**: menos frequentes.\n\n**A prevenção**: sempre que possível, preferir a **desarticulação**, que deixa a cartilagem articular na ponta e não sofre sobrecrescimento, além de preservar a fise do segmento. Na amputação diafisária, técnicas de **capa** cobrem a ponta do osso com cartilagem e osso (de Marquardt, com a epífise do hálux ou da fíbula).\n\n**O tratamento**: revisão do coto com ressecção do osso excedente, que muitas vezes precisa ser repetida durante o crescimento.\n\n**Na prova**: o sobrecrescimento após amputação diafisária é mais comum no **úmero**.",
+  "correta": "O úmero é o osso em que o sobrecrescimento aposicional do coto é mais frequente na criança.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0285": {
-  "conceito": "### Determinantes da marcha (Saunders)\n- Objetivo: reduzir a ==oscilação do centro de massa== e o gasto energético.\n\n| Determinante | Efeito |\n|---|---|\n| ==rotação pélvica (transversa)== | pelve avança (==anterior==) com o membro em balanço: alonga o passo e ==reduz a queda vertical== |\n| inclinação pélvica (coronal) | pelve cai do lado do balanço: reduz a subida no apoio médio |\n| flexão do joelho no apoio | reduz a elevação no apoio médio |\n| mecanismo pé-tornozelo | suaviza a trajetória |\n| mecanismo joelho-tornozelo | idem |\n| deslocamento lateral da pelve | base estreita, valgo fisiológico |\n\n- Centro de massa oscila cerca de 5 cm vertical e 5 cm lateral.\n\n### Carga no quadril\n| Situação | Força articular / abdutora |\n|---|---|\n| apoio bipodal | cerca de 1/3 do peso por quadril |\n| apoio monopodal (parado) | cerca de 2,5 a 3 vezes o peso |\n| marcha | 3 a 5 vezes |\n| ==corrida== | ==até cerca de 10 vezes== |\n\n- Braço de alavanca: peso corporal (longo) × abdutores (curto): por isso os abdutores precisam de muita força.\n- Bengala do lado ==oposto== reduz a carga.\n\n### Elevação da perna estendida\n- Longo braço de alavanca do membro: carga na cabeça ==semelhante à da fase de apoio da marcha==.\n- Por isso é evitada no pós-operatório de fraturas do quadril.\n\n> **Na prova:** abdutores = ==2,5 × o peso==; elevação da perna estendida = ==carga do apoio==",
-  "correta": "**2,5 vezes; carga similar ao apoio.**\n- Braço de alavanca do peso é cerca de 2,5 vezes o dos abdutores.\n- Elevar a perna estendida gera carga igual à do apoio.",
   "incorretas": {
-   "A": "**1,5 é pouco.**\n- Abdutores fazem cerca de 2,5 vezes.",
-   "C": "**Os dois dados errados.**\n- 2,5 vezes; carga não cai à metade.",
-   "D": "**Carga subestimada.**\n- Elevação da perna ≈ apoio."
+   "A": "A carga da elevação da perna está certa, mas 1,5 vez o peso subestima a força dos abdutores.",
+   "C": "Erra os dois dados: os abdutores fazem cerca de 2,5 vezes o peso, e a carga na elevação da perna não cai à metade.",
+   "D": "A força dos abdutores está certa, mas a carga na elevação da perna estendida é semelhante à do apoio, não metade."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O quadril funciona como uma **balança**. No apoio num pé só, o peso do corpo tenta derrubar a pelve para o lado oposto, e os **abdutores** (glúteo médio e mínimo) seguram do lado do apoio.\n\n**Por que os abdutores fazem tanta força**: o braço de alavanca do peso (do centro de gravidade até o centro da cabeça femoral) é cerca de **2,5 vezes** mais longo que o dos abdutores (do trocanter até o centro da cabeça). Para equilibrar, os abdutores precisam fazer cerca de **2,5 vezes o peso corporal**. Somando o peso e a força dos abdutores, a carga na cabeça femoral chega a cerca de 3 vezes o peso.\n\n**A elevação da perna estendida**: parece um exercício leve, mas o membro estendido é uma **alavanca longa**. Para levantá-lo, o iliopsoas e o reto femoral fazem muita força perto da articulação, e a carga na cabeça femoral fica **semelhante à da fase de apoio da marcha**. Por isso esse exercício é evitado no início do pós-operatório de fraturas do quadril.\n\n**Como aliviar o quadril**: **bengala na mão oposta** ao quadril doente, que cria um terceiro apoio com braço de alavanca longo e reduz muito a força dos abdutores; e reduzir o peso.\n\n**Na prova**: abdutores = cerca de **2,5 vezes o peso**; elevação da perna estendida = carga **semelhante à do apoio**.",
+  "correta": "Os abdutores fazem cerca de 2,5 vezes o peso corporal, e a elevação da perna estendida gera na cabeça femoral uma carga parecida com a do apoio da marcha.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0286": {
