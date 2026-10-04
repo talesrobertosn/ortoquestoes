@@ -10,6 +10,11 @@ function formatarLinha(linha: string) {
   })
 }
 
+/** Só a formatação em linha (**negrito** e ==destaque==), sem parágrafos: enunciados e alternativas. */
+export function TextoEmLinha({ texto }: { texto: string }) {
+  return <>{formatarLinha(texto)}</>
+}
+
 type TipoLinha = 'lista' | 'numerada' | 'nota' | 'titulo' | 'tabela' | 'texto'
 function tipoDaLinha(linha: string): TipoLinha {
   if (linha.startsWith('- ')) return 'lista'

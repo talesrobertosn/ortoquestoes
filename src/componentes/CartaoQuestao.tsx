@@ -1,19 +1,21 @@
 import { lerRespondidas } from '../estado/sessao'
 import { dominada, INTERVALOS } from '../estado/revisao'
-import { TextoEditorial, Referencias } from './TextoEditorial'
+import { TextoEditorial, TextoEmLinha, Referencias } from './TextoEditorial'
 import { NotasQuestao } from './NotasQuestao'
 import { AvaliarComentario } from './AvaliarComentario'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type { ComentarioIA, Letra, Questao, Resposta } from '../dados/tipos'
 import { ROTULO_DIFICULDADE } from '../dados/tipos'
-import { recurso, ROTULO_SIMULADOS } from '../config'
+import { ROTULO_SIMULADOS } from '../config'
 import { href } from '../util/rotas'
 import { EstrelaCheia, Icone } from './Icone'
 import { ContribuirComentario } from './ContribuirComentario'
 import { usarEtiquetas } from '../estado/preferencias'
 import { usarComentarioIA } from '../dados/comentarios'
+import { urlImagem } from '../dados/edicoes'
 import { usarIndice } from '../dados/usarIndice'
 import { RelatarErro } from './RelatarErro'
+import { EditarQuestaoAdmin } from './EditarQuestaoAdmin'
 import { ComoATurma } from './ComoATurma'
 import '../estilos/paginas/CartaoQuestao.css'
 
@@ -328,7 +330,7 @@ export function CartaoQuestao({
             oficial da prova nem foi elaborada, revisada ou endossada pela instituição organizadora.
           </p>
         )}
-        <div className="questao__enunciado">{questao.enunciado}</div>
+        <div className="questao__enunciado"><TextoEmLinha texto={questao.enunciado} /></div>
 
         {questao.figuraPendente && (
           <div className="estado" style={{ marginBottom: '1.25rem' }}>
@@ -345,13 +347,13 @@ export function CartaoQuestao({
             {questao.imagens.map((imagem) => (
               <figure className="questao__figura" key={imagem.arquivo}>
                 <a
-                  href={recurso(`imagens/${imagem.arquivo}`)}
+                  href={urlImagem(imagem.arquivo)}
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Abrir imagem em tamanho original"
                 >
                   <img
-                    src={recurso(`imagens/${imagem.arquivo}`)}
+                    src={urlImagem(imagem.arquivo)}
                     alt={imagem.legenda ?? `Figura da questão ${questao.id}`}
                     loading="lazy"
                     width={imagem.largura ?? undefined}
@@ -405,7 +407,7 @@ export function CartaoQuestao({
                   </span>
                   <span className="alternativa__texto">
                     <span className="so-leitor">Alternativa {letra}. </span>
-                    {alternativa.texto}
+                    <TextoEmLinha texto={alternativa.texto} />
                   </span>
                   {marca && (
                     <span className="alternativa__marca">
@@ -495,7 +497,7 @@ export function CartaoQuestao({
                           {item.imagens.map((imagem) => (
                             <figure className="questao__figura" key={imagem.arquivo}>
                               <img
-                                src={recurso(`imagens/${imagem.arquivo}`)}
+                                src={urlImagem(imagem.arquivo)}
                                 alt={imagem.legenda ?? 'Imagem enviada por colega'}
                                 loading="lazy"
                                 style={{ maxHeight: '18rem', width: 'auto' }}
@@ -555,6 +557,7 @@ export function CartaoQuestao({
 
         <div className="qz-rodape nao-imprime">
           <RelatarErro key={questao.id} idQuestao={questao.id} />
+          <EditarQuestaoAdmin idQuestao={questao.id} />
           {ultimaAcao && <button type="button" className="qz-rodape__link" onClick={desfazerUltimaAcao}><Icone nome="reiniciar" tamanho={16} /> Desfazer</button>}
           <span className="qz-rodape__id numerico">{questao.id}</span>
         </div>
@@ -695,6 +698,19 @@ function ComentarioDaIA({
               <p className="cm-rotulo"><Icone nome="alvo" tamanho={16} /> Conceito-chave</p>
               <TextoEditorial texto={comentario.conceito} />
             </section>
+          )}
+
+          {comentario.imagens && comentario.imagens.length > 0 && (
+            <div className="questao__figuras cm-figuras">
+              {comentario.imagens.map((imagem) => (
+                <figure className="questao__figura" key={imagem.arquivo}>
+                  <a href={urlImagem(imagem.arquivo)} target="_blank" rel="noreferrer" aria-label="Abrir imagem em tamanho original">
+                    <img src={urlImagem(imagem.arquivo)} alt={imagem.legenda ?? 'Figura do comentário'} loading="lazy" style={{ maxHeight: '22rem', width: 'auto' }} />
+                  </a>
+                  {imagem.legenda && <figcaption>{imagem.legenda}</figcaption>}
+                </figure>
+              ))}
+            </div>
           )}
 
           <p className="cm-secao">Alternativa por alternativa</p>

@@ -4,6 +4,7 @@ import { chamarFuncao, chamarRpc } from '../servicos/supabase'
 import { href } from '../util/rotas'
 import { Icone, type NomeIcone } from '../componentes/Icone'
 import { AdminConteudo, type VistaConteudo } from '../componentes/admin/AdminConteudo'
+import { AdminQuestoes } from '../componentes/admin/AdminQuestoes'
 import { AdminCrescimento } from '../componentes/admin/AdminCrescimento'
 import { AdminConfiguracoes } from '../componentes/admin/AdminConfiguracoes'
 import { AdminUsuarios, ativoHoje, type FiltroUsuarios, type LinhaUsuario } from '../componentes/admin/AdminUsuarios'
@@ -49,9 +50,9 @@ interface Resumo {
   assinantes_vigentes: number
 }
 
-type Aba = 'geral' | 'usuarios' | 'conteudo' | 'crescimento' | 'financeiro' | 'assinaturas' | 'pagamentos' | 'configuracoes'
+type Aba = 'geral' | 'usuarios' | 'conteudo' | 'questoes' | 'crescimento' | 'financeiro' | 'assinaturas' | 'pagamentos' | 'configuracoes'
 const ABAS: Array<[Aba, string, NomeIcone]> = [
-  ['geral', 'Visão geral', 'grafico'], ['usuarios', 'Usuários', 'usuario'], ['conteudo', 'Conteúdo', 'livro'],
+  ['geral', 'Visão geral', 'grafico'], ['usuarios', 'Usuários', 'usuario'], ['conteudo', 'Conteúdo', 'livro'], ['questoes', 'Editar questões', 'livro'],
   ['crescimento', 'Crescimento', 'raio'], ['financeiro', 'Financeiro', 'grafico'], ['assinaturas', 'Assinaturas', 'estrela'], ['pagamentos', 'Pagamentos', 'relogio'],
   ['configuracoes', 'Ajustes', 'filtro'],
 ]
@@ -62,8 +63,10 @@ const vigente = (a: LinhaAssinatura) =>
   (a.status === 'ativa' || (a.status === 'cancelada' && !!a.cancelar_ao_fim)) && (!a.fim_periodo || new Date(a.fim_periodo) > new Date())
 const inicioDe = (a: LinhaAssinatura) => a.criada_em ?? a.inicio_periodo ?? a.ultima_atualizacao
 
-function lerUrl(): { aba: Aba; vista?: VistaConteudo } {
-  const aba = new URLSearchParams(window.location.hash.split('?')[1] ?? '').get('aba')
+function lerUrl(): { aba: Aba; vista?: VistaConteudo; id?: string } {
+  const consulta = new URLSearchParams(window.location.hash.split('?')[1] ?? '')
+  const aba = consulta.get('aba')
+  if (aba === 'questoes') return { aba: 'questoes', id: consulta.get('id') ?? undefined }
   // Links antigos e os dos e-mails de alerta apontam para ?aba=avaliacoes ou relatos.
   if (aba === 'avaliacoes' || aba === 'relatos') return { aba: 'conteudo', vista: aba }
   return { aba: ABAS.some(([valor]) => valor === aba) ? aba as Aba : 'geral' }
@@ -83,6 +86,7 @@ export function AdminAssinaturas() {
   const [atualizadoEm, definirAtualizadoEm] = useState<Date | null>(null)
   const lidosPagamento = usarLidos('pagamento')
   const [filtroUsuarios, definirFiltroUsuarios] = useState<FiltroUsuarios>('todos')
+  const [idEditar, definirIdEditar] = useState<string | null>(inicial.id ?? null)
 
   const carregar = useCallback(async () => {
     if (!sessao) return
@@ -110,6 +114,7 @@ export function AdminAssinaturas() {
   }, [aba, assinaturas !== null])
 
   function abrirUsuarios(filtro: FiltroUsuarios) { definirFiltroUsuarios(filtro); trocarAba('usuarios') }
+  function editarQuestao(id: string) { definirIdEditar(id); trocarAba('questoes') }
   function trocarAba(nova: Aba) {
     definirAba(nova)
     const base = window.location.hash.split('?')[0] || '#/admin'
@@ -151,8 +156,9 @@ export function AdminAssinaturas() {
       {aba === 'pagamentos' && <Pagamentos eventos={eventos ?? []} recarregar={carregar} lidos={lidosPagamento.lidos} marcar={lidosPagamento.marcar} />}
       {aba === 'crescimento' && <AdminCrescimento assinaturas={assinaturas} />}
       {aba === 'configuracoes' && <AdminConfiguracoes />}
+      {aba === 'questoes' && <AdminQuestoes idInicial={idEditar} />}
       {/* Montada sempre (escondida fora da aba) para o contador de pendências aparecer na barra. */}
-      <div hidden={aba !== 'conteudo'}><AdminConteudo vistaInicial={inicial.vista} aoMudarPendencias={definirPendenciasConteudo} /></div>
+      <div hidden={aba !== 'conteudo'}><AdminConteudo vistaInicial={inicial.vista} aoMudarPendencias={definirPendenciasConteudo} aoEditar={editarQuestao} /></div>
     </>}
   </article>
 }

@@ -1,6 +1,6 @@
 import { banco, cors, json, usuarioDoPedido } from '../_shared/http.ts'
 import { alertarAdministradores, emailConfigurado, enviarEmail, linkDescadastro, site, tokenDescadastroValido } from '../_shared/email.ts'
-import { MARCOS, emailCarta, emailLembrete, emailMarco, emailRelatorio, marcoAtingido, type CampanhaLembrete, type DadosRelatorio, type Marco } from '../_shared/modelo-email.ts'
+import { MARCOS, emailCarta, emailLembrete, emailMarco, emailRelatoResolvido, emailRelatorio, marcoAtingido, type CampanhaLembrete, type DadosRelatorio, type Marco } from '../_shared/modelo-email.ts'
 
 /**
  * E-mails do OrtoQuestões. Ações (POST, corpo JSON):
@@ -19,6 +19,9 @@ import { MARCOS, emailCarta, emailLembrete, emailMarco, emailRelatorio, marcoAti
  *   lembretes          administrador: envia um lote do lembrete de uma campanha
  *                      ("nunca", "tres_dias" ou "sete_dias"). Um por pessoa e ausência.
  *   previa_lembrete    administrador: o lembrete de uma campanha, sem enviar.
+ *   relato_resolvido   administrador: avisa quem relatou um erro (id_relato) que
+ *                      a questão foi corrigida. Só relato com status resolvido.
+ *   previa_relato      administrador: o mesmo aviso, sem enviar.
  */
 
 interface DadosUsuario {
@@ -170,7 +173,7 @@ Deno.serve(async (req) => {
   if (req.method === 'OPTIONS') return new Response(null, { headers: cors(req) })
   if (req.method !== 'POST') return json({ erro: 'metodo_invalido' }, 405, req)
   try {
-    const corpo = await req.json() as { acao?: string; id_usuario?: string; recado?: string; formato?: string; id_questao?: string; u?: string; t?: string; tipo?: string; mes?: string; limite?: number; campanha?: string }
+    const corpo = await req.json() as { acao?: string; id_usuario?: string; recado?: string; formato?: string; id_questao?: string; u?: string; t?: string; tipo?: string; mes?: string; limite?: number; campanha?: string; id_relato?: number }
 
     if (corpo.acao === 'descadastrar') {
       const tipo = corpo.tipo === 'relatorio' ? 'relatorio' : corpo.tipo === 'lembretes' ? 'lembretes' : 'conquistas'
@@ -213,6 +216,31 @@ Deno.serve(async (req) => {
       }
       if (!emailConfigurado()) return json({ erro: 'email_nao_configurado' }, 503, req)
       return json(await enviarLembretes(campanha, corpo.limite, usuario.id), 200, req)
+    }
+
+    if (corpo.acao === 'relato_resolvido' || corpo.acao === 'previa_relato') {
+      if (!await ehAdministrador(usuario.id)) return json({ erro: 'acesso_negado' }, 403, req)
+      const idRelato = Number(corpo.id_relato)
+      if (!Number.isInteger(idRelato) || idRelato <= 0) return json({ erro: 'relato_invalido' }, 400, req)
+      const r = await banco(`relatos_erro?id=eq.${idRelato}&select=id,id_usuario,id_questao,texto,status,nota_admin`)
+      const [relato] = r.ok ? await r.json() as Array<{ id: number; id_usuario: string | null; id_questao: string; texto: string; status: string; nota_admin: string | null }> : []
+      if (!relato) return json({ erro: 'relato_nao_encontrado' }, 404, req)
+      if (!relato.id_usuario) return json({ erro: 'conta_removida' }, 404, req)
+      const dados = await dadosUsuario(relato.id_usuario)
+      if (!dados?.email) return json({ erro: 'usuario_sem_email' }, 404, req)
+      const e = emailRelatoResolvido({ nome: dados.nome, idQuestao: relato.id_questao, relato: relato.texto, nota: relato.nota_admin, site: site() })
+      if (corpo.acao === 'previa_relato') return json({ assunto: e.assunto, html: e.html, para: dados.email }, 200, req)
+      if (relato.status !== 'resolvido') return json({ erro: 'relato_nao_resolvido' }, 409, req)
+      if (!emailConfigurado()) return json({ erro: 'email_nao_configurado' }, 503, req)
+      try {
+        await enviarEmail(dados.email, e.assunto, e.html, e.texto)
+        await banco(`relatos_erro?id=eq.${idRelato}`, { method: 'PATCH', body: JSON.stringify({ avisado_em: new Date().toISOString() }) })
+        await registrar({ id_usuario: relato.id_usuario, tipo: 'relato_resolvido', referencia: `relato:${idRelato}`, assunto: e.assunto, enviado_por: usuario.id })
+        return json({ resultado: 'enviado', para: dados.email }, 200, req)
+      } catch (falha) {
+        await registrar({ id_usuario: relato.id_usuario, tipo: 'relato_resolvido', referencia: `relato:${idRelato}`, assunto: e.assunto, status: 'falhou', erro: motivo(falha), enviado_por: usuario.id })
+        return json({ erro: motivo(falha) }, 502, req)
+      }
     }
 
     if (corpo.acao === 'marco') {

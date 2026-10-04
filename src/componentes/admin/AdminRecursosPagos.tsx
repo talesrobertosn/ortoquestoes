@@ -2,7 +2,8 @@ import { useCallback, useEffect, useState } from 'react'
 import { chamarFuncao, chamarRpc } from '../../servicos/supabase'
 import { atualizarPremium } from '../../conta/premium'
 import { carregarIndice, carregarQuestoes } from '../../dados/acervo'
-import { DURACAO_EDICAO_MIN, QUESTOES_EDICAO, escolherEdicao, edicaoDoMes, fimDaEdicao, type CandidataEdicao } from '../../dados/simuladoNacional'
+import { DURACAO_EDICAO_MIN, DURACAO_VESPERA_MIN, QUESTOES_EDICAO, QUESTOES_VESPERA, escolherEdicao, escolherVespera, edicaoDoMes, fimDaEdicao, type CandidataEdicao } from '../../dados/simuladoNacional'
+import { nivelPorQuestao } from '../../dados/incidencia'
 import { nomeEdicao } from '../../estado/sessao'
 import { dataHora, erroDoPainel } from './formatos'
 
@@ -18,7 +19,8 @@ function mesAnterior() {
 }
 /** O mês seguinte à última edição publicada (e nunca um mês que já passou). */
 export function proximaEdicao(existentes: string[], atual = edicaoDoMes()) {
-  const ultima = [...existentes].sort().pop()
+  // Só as mensais ("2026-11"); edições especiais, como a de véspera, não contam.
+  const ultima = existentes.filter((e) => /^\d{4}-\d{2}$/.test(e)).sort().pop()
   if (!ultima || ultima < atual) return atual
   let [ano, mes] = ultima.split('-').map(Number)
   mes++; if (mes > 12) { mes = 1; ano++ }
@@ -36,6 +38,8 @@ export function AdminRecursosPagos() {
   const [montada, definirMontada] = useState<{ edicao: string; itens: CandidataEdicao[] } | null>(null)
   const [montando, definirMontando] = useState(false)
   const [erro, definirErro] = useState('')
+  const [vespera, definirVespera] = useState({ prova: '2027-01-10', abre: '2026-12-27', questoes: QUESTOES_VESPERA, duracao: DURACAO_VESPERA_MIN })
+  const [montadaVespera, definirMontadaVespera] = useState<{ edicao: string; itens: CandidataEdicao[] } | null>(null)
   const [mensagem, definirMensagem] = useState('')
 
   const carregar = useCallback(async () => {
@@ -92,6 +96,43 @@ export function AdminRecursosPagos() {
     finally { definirMontando(false) }
   }
 
+  /** Questões de prova candidatas a simulado: TEOT/TARO, com gabarito, sem anuladas nem figura faltando. */
+  async function candidatasDeProva() {
+    const indice = await carregarIndice()
+    const elegiveis = indice.questoes.filter((q) => !q.dup && q.an !== 1 && q.sim !== 1 && q.p !== null && PROVAS_NACIONAL.has(indice.provas[q.p]))
+    const questoes = await carregarQuestoes(indice, elegiveis.map((q) => q.id))
+    return { indice, questoes: questoes.filter((q) => !q.anulada && !q.figuraPendente && /^[A-E]$/.test(q.gabarito ?? '')) }
+  }
+
+  async function montarVespera() {
+    if (!edicoes) return
+    definirMontando(true); definirMontadaVespera(null)
+    try {
+      const { indice, questoes } = await candidatasDeProva()
+      const niveis = nivelPorQuestao(indice)
+      const candidatas = questoes.map((q) => ({ id: q.id, tema: q.tema, gabarito: q.gabarito!, nivel: niveis.get(q.id) ?? 0, ano: q.ano }))
+      const usadas = new Set(edicoes.flatMap((e) => e.ids ?? []))
+      const edicao = `${vespera.prova.slice(0, 7)}-vespera`
+      definirMontadaVespera({ edicao, itens: escolherVespera(candidatas, edicao, vespera.questoes, usadas) })
+    } catch { definirMensagem('Não foi possível montar o simulado de véspera (acervo não carregou).') }
+    finally { definirMontando(false) }
+  }
+
+  async function publicarVespera() {
+    if (!montadaVespera) return
+    // Abre às 00:00 e fecha às 23:59 da véspera, no horário de Brasília (UTC-3).
+    const abre = new Date(`${vespera.abre}T00:00:00-03:00`)
+    const fecha = new Date(new Date(`${vespera.prova}T00:00:00-03:00`).getTime() - 1000)
+    if (!(fecha > abre)) { definirMensagem('A abertura precisa ser antes da véspera da prova.'); return }
+    const anoProva = vespera.prova.slice(0, 4)
+    const titulo = `Simulado de véspera · Prova ${anoProva}`
+    if (!window.confirm(`Publicar "${titulo}" com ${montadaVespera.itens.length} questões em ${vespera.duracao / 60} h? Fica no ar de ${abre.toLocaleDateString('pt-BR')} até ${fecha.toLocaleDateString('pt-BR')}.`)) return
+    try {
+      await chamarRpc('publicar_simulado_admin', { p_edicao: montadaVespera.edicao, p_titulo: titulo, p_abre: abre.toISOString(), p_fecha: fecha.toISOString(), p_duracao: vespera.duracao, p_itens: montadaVespera.itens })
+      definirMontadaVespera(null); definirMensagem(`${titulo} publicado.`); await carregar()
+    } catch (f) { definirMensagem(`Não foi possível publicar: ${erroDoPainel(f, '202610050100_editor_questoes.sql')}`) }
+  }
+
   async function publicar() {
     if (!montada) return
     const [ano, m] = montada.edicao.split('-').map(Number)
@@ -128,6 +169,25 @@ export function AdminRecursosPagos() {
       <div className="linha">
         {!montada ? <button type="button" className="botao" disabled={montando} onClick={() => void montarProxima()}>{montando ? 'Sorteando…' : 'Montar a próxima edição'}</button>
           : <><button type="button" className="botao botao--principal" onClick={() => void publicar()}>Publicar {nomeEdicao(montada.edicao)}</button><button type="button" className="botao botao--fantasma" onClick={() => definirMontada(null)}>Descartar</button></>}
+      </div>
+    </section>
+
+    <section className="empilha adm-secao" aria-labelledby="adm-titulo-vespera">
+      <div><h2 id="adm-titulo-vespera">Simulado de véspera</h2><p>Uma prova inteira para a reta final: as questões seguem a proporção dos temas, com prioridade para os assuntos que mais caem e as provas mais recentes, sem repetir o que já saiu no Simulado Nacional. Aparece na mesma página do Simulado Nacional, com ranking e correção.</p></div>
+      <div className="adm-editor__linha">
+        <label className="campo">Dia da prova<input className="entrada" type="date" value={vespera.prova} onChange={(e) => e.target.value && definirVespera({ ...vespera, prova: e.target.value })} /></label>
+        <label className="campo">Abre em<input className="entrada" type="date" value={vespera.abre} onChange={(e) => e.target.value && definirVespera({ ...vespera, abre: e.target.value })} /></label>
+        <label className="campo">Questões<select className="entrada" value={vespera.questoes} onChange={(e) => definirVespera({ ...vespera, questoes: Number(e.target.value) })}>{[50, 80, 100, 120].map((n) => <option key={n} value={n}>{n}</option>)}</select></label>
+        <label className="campo">Duração<select className="entrada" value={vespera.duracao} onChange={(e) => definirVespera({ ...vespera, duracao: Number(e.target.value) })}>{[120, 180, 240, 300].map((n) => <option key={n} value={n}>{n / 60} horas</option>)}</select></label>
+      </div>
+      <p className="adm-nota">Fica no ar até 23:59 da véspera. Enquanto estiver no ar, é o simulado em destaque na página; depois aparece entre as edições anteriores.</p>
+      {montadaVespera && <div className="adm-edicao-previa">
+        <p><strong>{nomeEdicao(montadaVespera.edicao)}</strong>: {montadaVespera.itens.length} questões</p>
+        <p className="adm-nota">{Object.entries(montadaVespera.itens.reduce<Record<string, number>>((acc, i) => ({ ...acc, [i.tema]: (acc[i.tema] ?? 0) + 1 }), {})).sort((a, b) => b[1] - a[1]).map(([t, n]) => `${t} ${n}`).join(' · ')}</p>
+      </div>}
+      <div className="linha">
+        {!montadaVespera ? <button type="button" className="botao" disabled={montando} onClick={() => void montarVespera()}>{montando ? 'Sorteando…' : 'Montar o simulado de véspera'}</button>
+          : <><button type="button" className="botao botao--principal" onClick={() => void publicarVespera()}>Publicar simulado de véspera</button><button type="button" className="botao botao--fantasma" onClick={() => definirMontadaVespera(null)}>Descartar</button></>}
       </div>
     </section>
 

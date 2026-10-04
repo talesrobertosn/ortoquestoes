@@ -647,3 +647,61 @@ export function emailLembrete(d: DadosLembrete): { assunto: string; html: string
 
   return { assunto: C.assunto, html, texto }
 }
+
+export interface DadosRelatoResolvido {
+  nome: string | null
+  idQuestao: string
+  /** O que a pessoa escreveu ao relatar. */
+  relato: string
+  /** O que foi feito, escrito pelo administrador (opcional). */
+  nota: string | null
+  site: string
+}
+
+/** Rótulo da questão pelo id: "Trauma adulto, questão 44". */
+export function rotuloQuestao(id: string): string {
+  const [, prefixo, numero] = id.match(/^(.*)-(\d+)$/) ?? []
+  return prefixo && TEMAS[prefixo] ? `${TEMAS[prefixo]}, questão ${Number(numero)}` : id
+}
+
+/**
+ * Aviso de que um relato de erro foi resolvido. Formato carta, como os
+ * recados: texto simples, sem cartão, assinado. É uma resposta a quem
+ * escreveu, não uma campanha, por isso não tem link de descadastro.
+ */
+export function emailRelatoResolvido(d: DadosRelatoResolvido): { assunto: string; html: string; texto: string } {
+  const nome = d.nome?.trim().split(/\s+/)[0] ?? ''
+  const rotulo = rotuloQuestao(d.idQuestao)
+  const link = `${d.site}#/questao/${encodeURIComponent(d.idQuestao)}`
+  const relato = d.relato.trim().replace(/\s+/g, ' ')
+  const trecho = relato.length > 240 ? relato.slice(0, 240).replace(/\s\S*$/, '') + '…' : relato
+  const nota = d.nota?.trim() || null
+  const assunto = `Corrigimos a questão que você relatou (${rotulo})`
+  const paragrafos = [
+    `Você relatou um problema na questão de ${rotulo} do OrtoQuestões. Conferimos e a questão já foi corrigida no site.`,
+    ...(nota ? [`O que foi feito: ${nota}`] : []),
+    'Obrigado por avisar. Cada relato deixa o banco de questões melhor para todo mundo que está estudando.',
+  ]
+  const p = (conteudo: string, estilo = '') => `<p style="margin:0 0 16px 0;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:23px;color:#222222;${estilo}">${conteudo}</p>`
+  const html = `<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>${esc(assunto)}</title></head>
+<body style="margin:0;padding:0;background:#ffffff;">
+<div style="max-width:560px;padding:24px 20px;">
+${p(nome ? `Oi, ${esc(nome)},` : 'Oi,')}
+${paragrafos.map((t) => p(esc(t))).join('\n')}
+${p(`Seu relato: “${esc(trecho)}”`, 'color:#555555;font-style:italic;')}
+${p(`Ver a questão: <a href="${link}" style="color:#146b61;">${esc(link.replace(/^https?:\/\//, ''))}</a>`)}
+${p('Um abraço,<br>Tales<br><span style="color:#666666;">OrtoQuestões</span>')}
+</div>
+</body>
+</html>`
+  const texto = [
+    nome ? `Oi, ${nome},` : 'Oi,', '',
+    ...paragrafos.flatMap((t) => [t, '']),
+    `Seu relato: "${trecho}"`, '',
+    `Ver a questão: ${link}`, '',
+    'Um abraço,', 'Tales', 'OrtoQuestões',
+  ].join('\n')
+  return { assunto, html, texto }
+}

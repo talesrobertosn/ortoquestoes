@@ -569,6 +569,51 @@ function emailLembrete(d) {
   ].join("\n");
   return { assunto: C.assunto, html, texto };
 }
+function rotuloQuestao(id) {
+  const [, prefixo, numero2] = id.match(/^(.*)-(\d+)$/) ?? [];
+  return prefixo && TEMAS[prefixo] ? `${TEMAS[prefixo]}, quest\xE3o ${Number(numero2)}` : id;
+}
+function emailRelatoResolvido(d) {
+  const nome = d.nome?.trim().split(/\s+/)[0] ?? "";
+  const rotulo = rotuloQuestao(d.idQuestao);
+  const link = `${d.site}#/questao/${encodeURIComponent(d.idQuestao)}`;
+  const relato = d.relato.trim().replace(/\s+/g, " ");
+  const trecho = relato.length > 240 ? relato.slice(0, 240).replace(/\s\S*$/, "") + "\u2026" : relato;
+  const nota = d.nota?.trim() || null;
+  const assunto = `Corrigimos a quest\xE3o que voc\xEA relatou (${rotulo})`;
+  const paragrafos = [
+    `Voc\xEA relatou um problema na quest\xE3o de ${rotulo} do OrtoQuest\xF5es. Conferimos e a quest\xE3o j\xE1 foi corrigida no site.`,
+    ...nota ? [`O que foi feito: ${nota}`] : [],
+    "Obrigado por avisar. Cada relato deixa o banco de quest\xF5es melhor para todo mundo que est\xE1 estudando."
+  ];
+  const p = (conteudo, estilo = "") => `<p style="margin:0 0 16px 0;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:23px;color:#222222;${estilo}">${conteudo}</p>`;
+  const html = `<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>${esc(assunto)}</title></head>
+<body style="margin:0;padding:0;background:#ffffff;">
+<div style="max-width:560px;padding:24px 20px;">
+${p(nome ? `Oi, ${esc(nome)},` : "Oi,")}
+${paragrafos.map((t) => p(esc(t))).join("\n")}
+${p(`Seu relato: \u201C${esc(trecho)}\u201D`, "color:#555555;font-style:italic;")}
+${p(`Ver a quest\xE3o: <a href="${link}" style="color:#146b61;">${esc(link.replace(/^https?:\/\//, ""))}</a>`)}
+${p('Um abra\xE7o,<br>Tales<br><span style="color:#666666;">OrtoQuest\xF5es</span>')}
+</div>
+</body>
+</html>`;
+  const texto = [
+    nome ? `Oi, ${nome},` : "Oi,",
+    "",
+    ...paragrafos.flatMap((t) => [t, ""]),
+    `Seu relato: "${trecho}"`,
+    "",
+    `Ver a quest\xE3o: ${link}`,
+    "",
+    "Um abra\xE7o,",
+    "Tales",
+    "OrtoQuest\xF5es"
+  ].join("\n");
+  return { assunto, html, texto };
+}
 
 // supabase/functions/_shared/email.ts
 var emailConfigurado = () => !!Deno.env.get("RESEND_API_KEY") && !!Deno.env.get("EMAIL_REMETENTE");
@@ -802,6 +847,30 @@ Deno.serve(async (req) => {
       }
       if (!emailConfigurado()) return json({ erro: "email_nao_configurado" }, 503, req);
       return json(await enviarLembretes(campanha, corpo.limite, usuario.id), 200, req);
+    }
+    if (corpo.acao === "relato_resolvido" || corpo.acao === "previa_relato") {
+      if (!await ehAdministrador(usuario.id)) return json({ erro: "acesso_negado" }, 403, req);
+      const idRelato = Number(corpo.id_relato);
+      if (!Number.isInteger(idRelato) || idRelato <= 0) return json({ erro: "relato_invalido" }, 400, req);
+      const r = await banco(`relatos_erro?id=eq.${idRelato}&select=id,id_usuario,id_questao,texto,status,nota_admin`);
+      const [relato] = r.ok ? await r.json() : [];
+      if (!relato) return json({ erro: "relato_nao_encontrado" }, 404, req);
+      if (!relato.id_usuario) return json({ erro: "conta_removida" }, 404, req);
+      const dados = await dadosUsuario(relato.id_usuario);
+      if (!dados?.email) return json({ erro: "usuario_sem_email" }, 404, req);
+      const e = emailRelatoResolvido({ nome: dados.nome, idQuestao: relato.id_questao, relato: relato.texto, nota: relato.nota_admin, site: site() });
+      if (corpo.acao === "previa_relato") return json({ assunto: e.assunto, html: e.html, para: dados.email }, 200, req);
+      if (relato.status !== "resolvido") return json({ erro: "relato_nao_resolvido" }, 409, req);
+      if (!emailConfigurado()) return json({ erro: "email_nao_configurado" }, 503, req);
+      try {
+        await enviarEmail(dados.email, e.assunto, e.html, e.texto);
+        await banco(`relatos_erro?id=eq.${idRelato}`, { method: "PATCH", body: JSON.stringify({ avisado_em: (/* @__PURE__ */ new Date()).toISOString() }) });
+        await registrar({ id_usuario: relato.id_usuario, tipo: "relato_resolvido", referencia: `relato:${idRelato}`, assunto: e.assunto, enviado_por: usuario.id });
+        return json({ resultado: "enviado", para: dados.email }, 200, req);
+      } catch (falha) {
+        await registrar({ id_usuario: relato.id_usuario, tipo: "relato_resolvido", referencia: `relato:${idRelato}`, assunto: e.assunto, status: "falhou", erro: motivo(falha), enviado_por: usuario.id });
+        return json({ erro: motivo(falha) }, 502, req);
+      }
     }
     if (corpo.acao === "marco") {
       if (!emailConfigurado()) return json({ resultado: "email_nao_configurado" }, 200, req);

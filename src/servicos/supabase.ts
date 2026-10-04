@@ -112,3 +112,24 @@ export async function chamarFuncaoPublica<T>(nome: string, corpo: Record<string,
   if (!resposta.ok) throw new Error(dados.erro ?? `(${resposta.status})`)
   return dados
 }
+
+/**
+ * Envia uma imagem ao Storage (bucket público "questoes") e devolve o endereço
+ * público. Só administrador consegue gravar: a política do bucket confere.
+ */
+export async function enviarImagemQuestao(caminho: string, arquivo: Blob): Promise<string> {
+  if (!clienteConta) throw new Error('Servidor não configurado.')
+  const token = await garantirToken()
+  if (!token) throw new Error('Entre na sua conta para continuar.')
+  const alvo = caminho.split('/').map(encodeURIComponent).join('/')
+  const resposta = await buscarComPrazo(`${url}/storage/v1/object/questoes/${alvo}`, {
+    method: 'POST',
+    headers: { apikey: chaveSupabase, Authorization: `Bearer ${token}`, 'Content-Type': arquivo.type || 'application/octet-stream', 'x-upsert': 'true' },
+    body: arquivo,
+  }, 60_000)
+  if (!resposta.ok) {
+    const detalhe = await resposta.json().then((d: { message?: string; error?: string }) => d.message ?? d.error ?? '').catch(() => '')
+    throw new Error(`Não foi possível enviar a imagem (${resposta.status}${detalhe ? ': ' + detalhe : ''}).`)
+  }
+  return `${url}/storage/v1/object/public/questoes/${alvo}`
+}

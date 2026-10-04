@@ -2,6 +2,7 @@ import { dominada, revisarHoje, type RegistroQuestao } from '../estado/revisao'
 import { recurso } from '../config'
 import type { Filtros, Indice, ItemIndice, Progresso, Questao } from './tipos'
 import { embaralhar } from './embaralhar'
+import { aplicarEdicao, aplicarEdicoesNoIndice, carregarEdicoes } from './edicoes'
 
 const INDICE_VAZIO: Indice = {
   versao: 1,
@@ -36,11 +37,13 @@ async function buscarJson<T>(caminho: string): Promise<T> {
 /** Índice leve: metadados de todas as questões, sem enunciados. */
 export function carregarIndice(): Promise<Indice> {
   if (!promessaIndice) {
-    promessaIndice = buscarJson<Indice>('acervo/indice.json').catch((erro) => {
-      // Acervo ainda não publicado: a interface mostra estado vazio, não erro.
-      if (import.meta.env.DEV) console.warn('Índice indisponível:', erro)
-      return INDICE_VAZIO
-    })
+    promessaIndice = Promise.all([buscarJson<Indice>('acervo/indice.json'), carregarEdicoes()])
+      .then(([indice, edicoes]) => aplicarEdicoesNoIndice(indice, edicoes))
+      .catch((erro) => {
+        // Acervo ainda não publicado: a interface mostra estado vazio, não erro.
+        if (import.meta.env.DEV) console.warn('Índice indisponível:', erro)
+        return INDICE_VAZIO
+      })
   }
   return promessaIndice
 }
@@ -62,8 +65,8 @@ export function carregarProgresso(): Promise<Progresso | null> {
 export function carregarTema(slug: string): Promise<Questao[]> {
   let existente = temasCarregados.get(slug)
   if (!existente) {
-    existente = buscarJson<{ questoes: Questao[] } | Questao[]>(`acervo/temas/${slug}.json`).then(
-      (dados) => (Array.isArray(dados) ? dados : dados.questoes),
+    existente = Promise.all([buscarJson<{ questoes: Questao[] } | Questao[]>(`acervo/temas/${slug}.json`), carregarEdicoes()]).then(
+      ([dados, edicoes]) => (Array.isArray(dados) ? dados : dados.questoes).map((q) => aplicarEdicao(q, edicoes.get(q.id))),
     )
     temasCarregados.set(slug, existente)
   }
@@ -83,6 +86,7 @@ function carregarAvulsa(id: string): Promise<Questao | null> {
   if (!existente) {
     existente = fetch(recurso(`acervo/q/${encodeURIComponent(id)}.json`), { cache: 'no-cache' })
       .then((r) => (r.ok ? (r.json() as Promise<Questao>) : null))
+      .then(async (q) => (q ? aplicarEdicao(q, (await carregarEdicoes()).get(q.id)) : null))
       .catch(() => null)
     avulsas.set(id, existente)
     // Falhou (arquivo ainda não publicado, rede caiu): a próxima tentativa busca de novo.
@@ -121,6 +125,13 @@ export async function carregarQuestoes(indice: Indice, ids: string[]): Promise<Q
     if (q) resultado.push(q)
   }
   return resultado
+}
+
+/** Depois de salvar uma edição no painel: índice e questões são lidos de novo. */
+export function recarregarAcervo() {
+  promessaIndice = null
+  temasCarregados.clear()
+  avulsas.clear()
 }
 
 /** Uma questão isolada, para o link direto. */
