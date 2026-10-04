@@ -380,124 +380,124 @@
   "conferido": false
  },
  "pediatria-0027": {
-  "conceito": "### Mielomeningocele: nível × deformidade\n| Nível | Músculos preservados | Deformidade típica | Marcha |\n|---|---|---|---|\n| ==torácico== | nenhum nos MMII | ==flexão e abdução dos quadris (rã), flexão dos joelhos==, equino | cadeira; órtese recíproca |\n| L1-L2 | flexores e adutores do quadril | flexão e adução: ==luxação== | domiciliar |\n| L3-L4 | + quadríceps (L4 tibial anterior) | pé calcâneo-varo | comunitária com órteses |\n| L5 | + isquiotibiais mediais, glúteo médio parcial | pé calcâneo | comunitária |\n| S1 | + gastrocnêmio parcial | cavo | próximo do normal |\n\n### Pontos\n- Nível mais importante para marcha: ==quadríceps (L3-L4)==.\n- Luxação do quadril mais comum em L3-L4.\n\n> **Na prova:** MMC torácica = ==flexão dos quadris e dos joelhos==.",
-  "correta": "**Flexão dos quadris e joelhos.**\n- Membros flácidos em postura de rã.\n- Posição intrauterina e gravidade.",
   "incorretas": {
-   "B": "**Joelho errado.**\n- Não extensão.",
-   "C": "**Quadril errado.**\n- Fica fletido.",
-   "D": "**Duplamente errada.**\n- Extensões."
+   "B": "Os quadris estão fletidos, mas os joelhos também ficam em flexão, não em extensão.",
+   "C": "Os joelhos estão fletidos, mas os quadris ficam em flexão, não em extensão.",
+   "D": "Erra as duas articulações: quadris e joelhos ficam fletidos."
   },
+  "conceito": "Na **mielomeningocele**, o **nível neurológico** diz quais músculos funcionam, e isso define as deformidades e o potencial de marcha:\n\n**torácico**: nenhum músculo dos membros inferiores funciona; as pernas são **flácidas** e assumem a posição de **rã**: **quadris fletidos e abduzidos**, **joelhos fletidos**, pés em equino; a locomoção é em cadeira de rodas, às vezes com órtese recíproca na infância;\n\n**L1 e L2**: funcionam os **flexores e adutores do quadril**, sem oposição; o quadril tende a **luxar**;\n\n**L3 e L4**: entra o **quadríceps** (e o tibial anterior em L4); é o nível que mais define a **marcha comunitária**, com órteses; pé calcaneovaro;\n\n**L5**: entram os isquiotibiais mediais e parte do glúteo médio; pé calcâneo;\n\n**S1**: entra parte do gastrocnêmio; pé cavo, marcha quase normal.\n\n**Por que a postura flexora no nível torácico**: os membros paralisados ficam na posição em que estavam dentro do útero e caem pela gravidade, e as partes moles se adaptam em **flexão**.\n\n**Na prova**: mielomeningocele torácica = **flexão dos quadris e dos joelhos**.",
+  "correta": "No nível torácico, os membros são flácidos e ficam em posição de rã, com quadris e joelhos fletidos.",
   "referencias": [
    "Surgical management of hip problems in myelomeningocele. https://pmc.ncbi.nlm.nih.gov/articles/PMC4969363/",
    "Orthopedic management of myelomeningocele: systematic review. https://pmc.ncbi.nlm.nih.gov/articles/PMC8361640/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0028": {
-  "conceito": "### Ultrassom de Graf\n| Ângulo | Linhas | Mede | Normal |\n|---|---|---|---|\n| ==alfa== | ilíaco × teto ==ósseo== | cobertura óssea | ==≥ 60°== |\n| ==beta== | ilíaco × teto ==cartilaginoso== (lábio) | cobertura cartilaginosa | ==< 55°== |\n\n### Tipos\n| Tipo | Alfa | Conduta |\n|---|---|---|\n| I | ≥ 60° | normal |\n| IIa | 50 a 59°, < 3 meses | imaturo fisiológico, controle |\n| IIb | 50 a 59°, > 3 meses | tratar |\n| IIc | 43 a 49° (beta < 77°) | tratar |\n| D | 43 a 49°, beta > 77° | descentrando |\n| III | < 43°, luxado | tratar |\n| IV | < 43°, luxado com lábio invertido | tratar |\n\n> **Na prova:** ângulo do teto cartilaginoso = ==beta, normal < 55°==.",
-  "correta": "**Beta, normal < 55°.**\n- Mede a cobertura cartilaginosa.\n- Alfa mede o teto ósseo (≥ 60°).",
   "incorretas": {
-   "A": "**Alfa e valor errados.**\n- Alfa é ósseo, normal ≥ 60.",
-   "B": "**Alfa.**\n- Teto ósseo, não cartilaginoso.",
-   "D": "**Valor errado.**\n- Beta normal é menor que 55."
+   "A": "O alfa mede o teto ósseo, e o normal é 60° ou mais, não menor que 55°.",
+   "B": "O valor está certo para o alfa, mas o alfa mede o teto ósseo, não o cartilaginoso.",
+   "D": "O ângulo é o beta, mas o normal é menor que 55°, não maior que 60°."
   },
+  "conceito": "O **ultrassom de Graf** é o exame da displasia do quadril nos primeiros meses, quando a cabeça ainda é cartilagem. Com o transdutor na lateral do quadril, traçam-se linhas a partir da **linha do ilíaco**:\n\n**ângulo alfa**: entre o ilíaco e o **teto ósseo** do acetábulo; mede a **cobertura óssea**; normal **60° ou mais**;\n\n**ângulo beta**: entre o ilíaco e o **teto cartilaginoso** (o lábio); mede a **cobertura cartilaginosa**; normal **menor que 55°**. Quanto **maior** o beta, mais a cartilagem está sendo empurrada para cima pela cabeça que escapa.\n\n**Os tipos de Graf**:\n\n**I**: alfa 60° ou mais; normal;\n\n**IIa**: alfa entre 50 e 59° antes de 3 meses; imaturo, observar;\n\n**IIb**: o mesmo depois de 3 meses; tratar;\n\n**IIc**: alfa entre 43 e 49°, beta abaixo de 77°; tratar;\n\n**D**: alfa entre 43 e 49°, beta acima de 77°; descentrando;\n\n**III e IV**: alfa abaixo de 43°, quadril luxado (no IV, com o lábio invertido).\n\n**Na prova**: ângulo entre o ilíaco e o teto cartilaginoso = **beta**, normal **menor que 55°**.",
+  "correta": "O ângulo beta é formado pelo ilíaco e o teto cartilaginoso, e o valor normal é menor que 55°.",
   "referencias": [
    "Ultrasonography of the pediatric hip and spine. https://pmc.ncbi.nlm.nih.gov/articles/PMC5494873/",
    "Use of ultrasonography in DDQ. https://pmc.ncbi.nlm.nih.gov/articles/PMC3965765/",
    "Imaging in early diagnosis of DDQ. https://pmc.ncbi.nlm.nih.gov/articles/PMC8688607/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0029": {
-  "conceito": "### Epifisiólise: fatores\n| Tipo | Fator |\n|---|---|\n| mecânico | ==obesidade==, ==retroversão relativa (menos anteversão)==, ==coxa vara (menor ângulo cervicodiafisário)==, fise mais oblíqua, estirão |\n| endócrino | hipotireoidismo, deficiência de GH (uso de GH), hipogonadismo, osteodistrofia renal, radioterapia |\n\n- Pedir TSH em ==< 10 anos==, baixa estatura, ou bilateral.\n\n### Classificações\n| Critério | Tipos |\n|---|---|\n| Loder (estabilidade) | estável (anda) × ==instável== (não anda; necrose em até 50%) |\n| Southwick (ângulo) | leve < 30°, moderado 30 a 50°, grave > 50° |\n| tempo | aguda < 3 semanas, crônica, crônica agudizada |\n\n### Tratamento\n- ==Fixação in situ== com um parafuso canulado central.\n- Contralateral profilática: < 10 anos, endocrinopatia.\n\n> **Na prova:** epifisiólise = ==menos anteversão e menor ângulo cervicodiafisário==.",
-  "correta": "**Ângulo diminuído, anteversão diminuída.**\n- Coxa vara e retroversão relativa.\n- Aumentam o cisalhamento na fise.",
   "incorretas": {
-   "B": "**Anteversão errada.**\n- Diminuída.",
-   "C": "**Ângulo errado.**\n- Diminuído.",
-   "D": "**Duplamente errada.**\n- Ambos aumentados."
+   "B": "O ângulo diminuído está certo, mas a anteversão também é diminuída.",
+   "C": "A anteversão diminuída está certa, mas o ângulo cervicodiafisário também é diminuído.",
+   "D": "Os dois estão diminuídos, não aumentados."
   },
+  "conceito": "A **epifisiólise proximal do fêmur** é o escorregamento da cabeça do fêmur sobre o colo, através da fise, no adolescente. A cabeça desliza para **posterior e inferior**.\n\n**Os fatores mecânicos**, que aumentam o cisalhamento na fise:\n\n**obesidade**: o principal;\n\n**menor ângulo cervicodiafisário** (coxa vara relativa);\n\n**menor anteversão do colo** (retroversão relativa);\n\nfise mais **oblíqua** e o estirão de crescimento.\n\n**Os fatores endócrinos**: hipotireoidismo, deficiência ou uso de hormônio de crescimento, hipogonadismo, osteodistrofia renal e radioterapia. Investigar (TSH e outros) em crianças com **menos de 10 anos**, baixa estatura ou doença bilateral.\n\n**As classificações**:\n\n**Loder (estabilidade)**: **estável** (a criança anda) e **instável** (não anda, mesmo de muletas), com risco de necrose de até cerca de 50%;\n\n**Southwick (ângulo)**: leve, moderada e grave.\n\n**O tratamento**: **fixação in situ** com um parafuso canulado central; fixação profilática do outro lado em menores de 10 anos e nas doenças endócrinas.\n\n**Na prova**: epifisiólise = ângulo cervicodiafisário **diminuído** e anteversão **diminuída**.",
+  "correta": "A coxa vara relativa e a retroversão relativa aumentam o cisalhamento na fise e predispõem à epifisiólise.",
   "referencias": [
    "Three-dimensional analysis of the proximal femur in patients with slipped capital femoral epiphysis. https://pubmed.ncbi.nlm.nih.gov/11242246/",
    "The Epidemiology and Demographics of Slipped Capital Femoral Epiphysis. https://pmc.ncbi.nlm.nih.gov/articles/PMC4063129/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0030": {
-  "conceito": "### Artrogripose múltipla congênita\n- Contraturas congênitas em ==duas ou mais articulações==, sem progressão.\n- Causa comum: ==acinesia fetal== (falta de movimento intrauterino).\n\n| Origem | Achado |\n|---|---|\n| ==neuropática== (a mais comum) | ==redução das células do corno anterior== da medula |\n| miopática | distrofia muscular congênita |\n| restrição | oligoidrâmnio, útero bicorno |\n| tecido conjuntivo | |\n\n### Amioplasia (forma clássica)\n- Simétrica, quatro membros: ombros aduzidos e em RI, cotovelos estendidos, punhos fletidos, quadris luxados, joelhos estendidos ou fletidos, ==pé torto rígido==.\n- Pele lisa sem pregas, covinhas, inteligência normal.\n\n### Tratamento\n- Fisioterapia precoce; gessos; cirurgias (talectomia no pé torto resistente, osteotomias).\n\n> **Na prova:** artrogripose neuropática = ==menos células do corno anterior==.",
-  "correta": "**Diminuição do corno anterior.**\n- Perda de motoneurônios gera acinesia fetal.\n- Contraturas múltiplas ao nascer.",
   "incorretas": {
-   "A": "**Invertida e sensitiva.**\n- Corno posterior é sensitivo.",
-   "B": "**Invertida.**\n- Há redução.",
-   "C": "**Corno errado.**\n- É o anterior (motor)."
+   "A": "O corno posterior é sensitivo, e não há aumento de células.",
+   "B": "O corno está certo, mas há diminuição, não aumento das células.",
+   "C": "A redução é do corno anterior, motor, não do posterior."
   },
+  "conceito": "A **artrogripose múltipla congênita** é o nascimento com **contraturas em duas ou mais articulações**, que não progridem. A causa comum de quase todas as formas é a **acinesia fetal**: o feto se mexe pouco, e as articulações ficam fixas na posição em que estavam.\n\n**As origens da falta de movimento**:\n\n**neuropática**: a **mais comum**; há **redução das células do corno anterior** da medula (os motoneurônios), e o músculo recebe pouco comando;\n\n**miopática**: doenças musculares congênitas;\n\n**restrição de espaço**: oligoidrâmnio, útero malformado;\n\n**doenças do tecido conjuntivo**.\n\n**A amioplasia (forma clássica)**: simétrica nos quatro membros; ombros em adução e rotação interna, cotovelos estendidos, punhos fletidos, quadris às vezes luxados, joelhos estendidos ou fletidos e **pé torto rígido**. A pele é lisa, sem pregas, com covinhas sobre as articulações. A **inteligência é normal**.\n\n**O tratamento**: fisioterapia e gessos precoces; cirurgias para as deformidades resistentes, como a **talectomia** no pé torto e osteotomias.\n\n**Na prova**: artrogripose neuropática = **diminuição das células do corno anterior**.",
+  "correta": "Na forma neuropática há redução dos motoneurônios do corno anterior, e a falta de movimento fetal produz as contraturas.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Arthrogryposis. https://posna.org/physician-education/study-guide/arthrogryposis",
    "Diagnosing Arthrogryposis Multiplex Congenita: A Review. https://pmc.ncbi.nlm.nih.gov/articles/PMC3461621/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0031": {
-  "conceito": "### Fibular longo e o primeiro raio\n- Fibular longo ==plantiflete o 1º metatarso== e everte.\n- Antagonista do ==tibial anterior== (dorsiflete o 1º MT).\n\n### Lesão iatrogênica do fibular longo\n- Tibial anterior sem oposição eleva o 1º MT.\n- Flexor longo do hálux compensa: ==hálux em flexão==.\n- Resultado: ==joanete dorsal (dorsal bunion)== = 1º MT elevado + hálux fletido.\n\n### Complicações da liberação posteromedial extensa\n| Complicação | Causa |\n|---|---|\n| hipercorreção (plano valgo) | liberação excessiva, alongamento do tibial posterior |\n| rigidez e dor | fibrose |\n| joanete dorsal | ==fibular longo lesado== ou tibial anterior forte |\n| necrose do tálus | desvascularização |\n\n- Por isso, hoje, ==Ponseti== com tenotomia percutânea do tendão calcâneo.\n\n> **Na prova:** lesão do fibular longo no pé torto = ==flexão do hálux== (joanete dorsal).",
-  "correta": "**Flexão do hálux.**\n- 1º MT elevado pelo tibial anterior sem oposição.\n- FLH compensa: joanete dorsal.",
   "incorretas": {
-   "B": "**Oposto.**\n- Cavo vem do fibular longo forte.",
-   "C": "**Outro mecanismo.**\n- Liberação excessiva.",
-   "D": "**Outro mecanismo.**\n- Não decorre do fibular longo."
+   "B": "O cavo residual vem de um fibular longo forte, que abaixa o 1º metatarso; a lesão dele tem o efeito oposto.",
+   "C": "A hipercorreção do varo vem da liberação excessiva das partes moles, não da lesão do fibular longo.",
+   "D": "A luxação dorsal da talonavicular não decorre da lesão do fibular longo."
   },
+  "conceito": "O **fibular longo** passa sob o pé e se insere na base do **1º metatarso**: ele **abaixa o 1º metatarso** (flexão plantar) e everte o pé. O seu antagonista é o **tibial anterior**, que levanta o 1º metatarso.\n\n**Quando o fibular longo é lesado numa cirurgia do pé torto**: o tibial anterior fica sem oposição e **eleva o 1º metatarso**. Para conseguir apoiar a frente do pé no chão, o **flexor longo do hálux** trabalha mais e deixa o **hálux fletido**. O resultado é o **joanete dorsal**: 1º metatarso elevado com o hálux em flexão.\n\n**As complicações das liberações extensas do pé torto**:\n\n**hipercorreção** em plano valgo: liberação excessiva e alongamento do tibial posterior;\n\n**rigidez e dor**: fibrose;\n\n**joanete dorsal**: fibular longo lesado ou tibial anterior forte demais;\n\n**necrose do tálus**: desvascularização.\n\nPor isso, hoje, o padrão é o **método de Ponseti**, com gessos e só a tenotomia percutânea do tendão calcâneo.\n\n**Na prova**: lesão do fibular longo na cirurgia do pé torto = **flexão do hálux** (joanete dorsal).",
+  "correta": "Sem o fibular longo, o tibial anterior eleva o 1º metatarso e o flexor longo do hálux compensa, deixando o hálux fletido: é o joanete dorsal.",
   "referencias": [
    "Ponseti method for clubfoot. https://pmc.ncbi.nlm.nih.gov/articles/PMC3764299/",
    "Clubfoot. Orthobullets. https://www.orthobullets.com/pediatrics/4064/clubfoot"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0032": {
-  "conceito": "### Arqueamentos congênitos da tíbia\n| Direção | Associação | Evolução |\n|---|---|---|\n| ==posteromedial== | pé calcaneovalgo | ==corrige espontaneamente==; resta ==discrepância== (3 a 5 cm) |\n| anterolateral | ==NF1==, ==pseudartrose congênita== | piora, fratura |\n| anteromedial | hemimelia fibular | discrepância, pé valgo |\n\n### Posteromedial\n- Ao nascer: pé em dorsiflexão tocando a tíbia.\n- Angulação melhora nos primeiros anos.\n- Discrepância: epifisiodese contralateral ou alongamento na idade adequada.\n\n### Anterolateral\n- Proteger com órtese (TLSO/KAFO) até a maturidade; evitar osteotomia.\n\n> **Na prova:** arqueamento posteromedial = ==corrige a angulação, sobra discrepância==.",
-  "correta": "**Correção angular e discrepância.**\n- Angulação remodela.\n- Tíbia fica mais curta.",
   "incorretas": {
-   "A": "**Anterolateral.**\n- Esse é o que piora e pseudartrosa.",
-   "B": "**Sem pseudartrose.**\n- Posteromedial não fratura assim.",
-   "C": "**Não piora.**\n- Corrige."
+   "A": "Piora angular e pseudartrose são do arqueamento anterolateral.",
+   "B": "A correção angular está certa, mas o posteromedial não evolui para pseudartrose.",
+   "C": "A discrepância está certa, mas a angulação do posteromedial corrige, não piora."
   },
+  "conceito": "A tíbia pode nascer **arqueada** em três direções, e cada uma tem um significado diferente:\n\n**posteromedial**: o pé costuma vir em **calcaneovalgo**, encostando na frente da perna; a **angulação melhora sozinha** nos primeiros anos, mas a tíbia fica **mais curta**, com **discrepância** de cerca de 3 a 5 cm; é **benigna**;\n\n**anterolateral**: associada à **neurofibromatose tipo 1** e à **pseudartrose congênita da tíbia**; **piora** e pode fraturar; é protegida com órtese até a maturidade, evitando osteotomias;\n\n**anteromedial**: associada à **hemimelia fibular**, com discrepância e pé valgo.\n\n**O tratamento do arqueamento posteromedial**: observar a correção angular e acompanhar a discrepância; na idade certa, **epifisiodese** do outro lado ou **alongamento**.\n\n**Um truque de memória**: o \"**posteromedial é pacífico**\" (corrige), e o \"**anterolateral é alarmante**\" (pseudartrose).\n\n**Na prova**: arqueamento posteromedial da tíbia = **corrige a angulação** e deixa **discrepância de comprimento**.",
+  "correta": "No arqueamento posteromedial, a angulação melhora espontaneamente, mas a tíbia fica mais curta, com discrepância de comprimento.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Posteromedial Bowing of the Tibia. https://posna.org/physician-education/study-guide/posteromedial-bowing-of-the-tibia"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0033": {
-  "conceito": "### Medida da discrepância\n| Medida | Pontos | O que mostra |\n|---|---|---|\n| ==real== (verdadeira) | ==EIAS ao maléolo medial== | comprimento ósseo |\n| aparente | umbigo (ou xifoide) ao maléolo medial | inclui obliquidade pélvica e contraturas |\n| blocos sob o pé | nivelar as cristas ilíacas | prática, funcional |\n| Galeazzi | joelhos com quadris fletidos | fêmur × tíbia |\n\n### Imagem\n- Escanometria / telerradiografia; TC (scanograma) com menos radiação.\n\n### Previsão na criança\n| Método | Uso |\n|---|---|\n| Moseley (gráfico de linha reta) | discrepância na maturidade |\n| Paley (multiplicador) | simples |\n| Green-Anderson | tabelas de crescimento |\n\n### Conduta pela discrepância prevista\n| Discrepância | Conduta |\n|---|---|\n| < 2 cm | nada ou palmilha |\n| 2 a 5 cm | ==epifisiodese== contralateral |\n| > 5 cm | alongamento |\n| > 15 a 20 cm | amputação/prótese |\n\n> **Na prova:** comprimento real = ==EIAS ao maléolo medial==.",
-  "correta": "**EIAS ao maléolo medial.**\n- Mede o comprimento ósseo.\n- Aparente usa o umbigo.",
   "incorretas": {
-   "A": "**Referências erradas.**\n- Trocanter não é o ponto.",
-   "B": "**Proximal errado.**\n- Deve ser a EIAS.",
-   "C": "**Distal errado.**\n- Maléolo medial."
+   "A": "O trocanter maior e o maléolo lateral não são os pontos de referência do comprimento real.",
+   "B": "O ponto distal está certo, mas o proximal é a espinha ilíaca anterossuperior, não o trocanter.",
+   "C": "O ponto proximal está certo, mas o distal é o maléolo medial, não o lateral."
   },
+  "conceito": "Na **discrepância de comprimento dos membros inferiores**, há duas medidas com a fita:\n\n**comprimento real (verdadeiro)**: da **espinha ilíaca anterossuperior** ao **maléolo medial**; mede o comprimento dos ossos, do quadril ao tornozelo;\n\n**comprimento aparente**: do **umbigo** (ou do xifoide) ao maléolo medial; inclui a obliquidade da pelve e as contraturas, como uma adução fixa do quadril, que \"encurta\" a perna sem mudar o osso.\n\n**Outros métodos**:\n\n**blocos sob o pé** até nivelar as cristas ilíacas: o mais prático e funcional;\n\n**sinal de Galeazzi**: com os quadris e os joelhos fletidos, mostra se a diferença está no fêmur ou na tíbia;\n\n**imagem**: escanometria, telerradiografia ou tomografia (scanograma), com menos radiação.\n\n**A previsão na criança**: método de **Moseley** (gráfico de linha reta), **multiplicador de Paley** e tabelas de Green-Anderson.\n\n**A conduta pela discrepância prevista na maturidade**: menos de 2 cm, nada ou palmilha; de 2 a 5 cm, **epifisiodese** do lado mais longo; acima de 5 cm, **alongamento**; muito grandes, prótese ou amputação.\n\n**Na prova**: comprimento real = da **espinha ilíaca anterossuperior** ao **maléolo medial**.",
+  "correta": "O comprimento real do membro é medido da espinha ilíaca anterossuperior ao maléolo medial.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Leg Length Discrepancy. https://posna.org/physician-education/study-guide/leg-length-discrepancy-%28lld%29"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0034": {
-  "conceito": "### Torcicolo muscular congênito\n- Fibrose do ==esternocleidomastoideo== (ECM): cabeça inclinada para o lado afetado e queixo para o oposto.\n- Associação com ==DDQ== (examinar quadris), metatarso aduto, parto difícil.\n- ==Tumoração== (pseudotumor) no ECM nas primeiras semanas, que regride.\n\n### Tratamento\n- Alongamento e posicionamento: resolve a maioria (> 90%) se iniciado antes de 1 ano.\n- Cirurgia (tenotomia uni ou bipolar): após 1 ano sem resposta, déficit > 15° persistente.\n\n### Fatores de pior prognóstico do conservador\n| Fator |\n|---|\n| ==fibrose do ECM== (no US; ==terço distal== segundo a fonte da prova) |\n| déficit de rotação > 30° |\n| início do tratamento após 1 ano |\n| ECM todo acometido |\n\n### Diferenciais\n- Klippel-Feil, subluxação atlantoaxial, estrabismo (torcicolo ocular), tumor de fossa posterior, Sandifer (refluxo).\n\n> **Na prova:** pior prognóstico conservador = ==fibrose do terço distal do ECM== (veja o alerta).",
-  "correta": "**Fibrose do terço distal do ECM.**\n- Fibrose estabelecida responde mal a alongamento.\n- Critério didático da fonte (veja o alerta).",
   "incorretas": {
-   "A": "**Consequência.**\n- Plagiocefalia acompanha, não prediz falha.",
-   "B": "**Bom prognóstico.**\n- Tratar antes de 1 ano funciona.",
-   "C": "**Regride.**\n- Pseudotumor tende a desaparecer."
+   "A": "A plagiocefalia é consequência da postura e não prediz a falha do tratamento conservador.",
+   "B": "Começar antes de 1 ano é sinal de bom prognóstico, não de pior.",
+   "C": "A tumoração (pseudotumor) costuma regredir e não indica, por si, pior evolução."
   },
+  "conceito": "O **torcicolo muscular congênito** é a **fibrose do esternocleidomastoideo** de um lado. A cabeça inclina para o lado afetado e o queixo gira para o lado oposto. Nas primeiras semanas pode aparecer um **nódulo** (pseudotumor) no músculo, que regride sozinho.\n\n**As associações**: **displasia do quadril** (examinar os quadris sempre), metatarso aduto e parto difícil. Com o tempo, pode surgir **plagiocefalia** (achatamento da cabeça), uma consequência da posição.\n\n**O tratamento**: **alongamento** e posicionamento resolvem mais de 90% quando começam **antes de 1 ano**. A **cirurgia** (tenotomia uni ou bipolar) fica para quem não melhora depois de 1 ano e mantém déficit de rotação acima de cerca de 15°.\n\n**Os fatores de pior prognóstico do tratamento conservador**:\n\n**fibrose do músculo** no ultrassom (a fonte da prova destaca a fibrose do terço distal);\n\n**déficit de rotação** maior que cerca de 30°;\n\n**início do tratamento depois de 1 ano**;\n\no músculo inteiro acometido.\n\n**Os diferenciais**: Klippel-Feil, subluxação atlantoaxial, estrabismo (torcicolo ocular), tumor de fossa posterior e síndrome de Sandifer (refluxo).\n\n**Na prova**: pior prognóstico do conservador = **fibrose** do esternocleidomastoideo, no **terço distal** pela fonte da prova.",
+  "correta": "A fibrose estabelecida do esternocleidomastoideo, que a fonte da prova localiza no terço distal, responde mal ao alongamento.",
   "alerta": "Evidência recente confirma fibrose do ECM, maior déficit de amplitude e início tardio como fatores robustos de pior evolução. A associação específica com o terço distal do músculo deve ser entendida como critério didático da fonte usada pela prova.",
   "referencias": [
    "Diagnosis and habilitation of congenital muscular torticollis. https://pmc.ncbi.nlm.nih.gov/articles/PMC11827386/",
    "Congenital muscular torticollis: research and clinical practice. https://pmc.ncbi.nlm.nih.gov/articles/PMC6855899/",
    "Physical therapy guideline for congenital muscular torticollis. https://pmc.ncbi.nlm.nih.gov/articles/PMC8568067/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0035": {
