@@ -2113,69 +2113,69 @@
   "conferido": false
  },
  "trauma-0192": {
-  "conceito": "### Fraturas do sacro\n| Zona de Denis | Local | Déficit |\n|---|---|---|\n| I | lateral aos forames | 6% (L5) |\n| II | através dos forames | 28% (raízes) |\n| III | medial aos forames (canal) | 57% (esfíncteres) |\n\n### Instabilidade espinopélvica\n- Fraturas em ==H, U, λ, Y==: sacro superior e coluna separados da pelve.\n- Isler: fratura vertical ==medial à faceta L5-S1== (entra no canal) compromete a articulação L5-S1: ==instabilidade lombossacral/espinopélvica==; lateral à faceta não.\n\n### Tratamento\n- Fixação ==lombopélvica== (triangular) ou parafusos iliossacrais em padrões selecionados.\n\n### Relação inversa\n| Zona | Frequência | Déficit |\n|---|---|---|\n| ==I== | ==a mais frequente== (50%) | 6% |\n| II | 34% | 28% |\n| ==III== | 16% | ==57%== |\n\n> **Na prova:** mais frequente = ==zona I==; mais déficit = ==zona III==",
-  "correta": "**I e III.**\n- Zona I mais comum.\n- Zona III mais déficit.",
   "incorretas": {
-   "A": "**I e II.**\n- Zona II não é a de mais déficit.",
-   "C": "**II e III.**\n- Zona II não é a mais frequente.",
-   "D": "**III e II.**\n- Invertido."
+   "A": "A zona I é a mais frequente, mas a de mais déficit é a III, não a II.",
+   "C": "A zona II não é a mais frequente.",
+   "D": "A ordem está invertida e a zona II não é a de mais déficit."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "**Denis** dividiu o **sacro** em três zonas verticais. A frequência e o risco neurológico andam em sentidos **opostos**:\n\n**zona I** (asa, lateral aos forames): a **mais frequente**; déficit em cerca de **6%**, em geral da raiz de L5;\n\n**zona II** (através dos forames): frequência intermediária; déficit em cerca de **28%**, das raízes sacrais;\n\n**zona III** (medial aos forames, no canal sacral): a **menos frequente**; déficit em cerca de **57%**, com risco de disfunção da **bexiga**, do **intestino** e sexual.\n\n**A lógica**: quanto mais **medial** o traço, mais perto das raízes e do canal, e maior o déficit.\n\n**A instabilidade espinopélvica**: as fraturas em **H, U, lambda ou Y** separam a coluna da pelve. O traço vertical **medial à faceta L5-S1** (Isler) compromete a articulação lombossacral.\n\n**O tratamento**: **fixação lombopélvica** ou parafusos iliossacrais em padrões selecionados; descompressão quando há déficit com fragmento no canal.\n\n**Na prova**: a zona mais frequente é a **I**, e a de mais lesão neurológica é a **III**.",
+  "correta": "A zona I, na asa, é a mais fraturada, e a zona III, no canal, é a que mais causa déficit neurológico.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0193": {
-  "conceito": "### Classificações toracolombares\n| Classificação | Base | Orienta tratamento |\n|---|---|---|\n| Böhler | morfologia/mecanismo | não |\n| Denis | três colunas | parcialmente |\n| Magerl/AO | mecanismo (A, B, C) | pouco |\n| ==TLICS== | ==morfologia/mecanismo + CLP + neurológico== (escore) | ==sim== (≤ 3, 4, ≥ 5) |\n| AO Spine TL | morfologia + neurológico + modificadores | sim (TL AOSIS) |\n| load sharing | cominução do corpo | escolha da via |\n\n> **Na prova:** escore com mecanismo, déficit e CLP = ==TLICS==",
-  "correta": "**TLICS.**\n- Soma três componentes.\n- Escore orienta cirurgia.",
   "incorretas": {
-   "A": "**AO.**\n- Morfológica/mecânica sem escore.",
-   "C": "**Denis.**\n- Três colunas, sem escore.",
-   "D": "**Böhler.**\n- Descritiva."
+   "A": "A classificação AO original é morfológica, sem esse escore.",
+   "C": "Denis descreve as três colunas, sem escore numérico.",
+   "D": "Böhler é uma classificação descritiva."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "As classificações das fraturas **toracolombares** evoluíram de descrições para escores que orientam o tratamento:\n\n**Böhler**: descritiva, histórica;\n\n**Denis**: a teoria das **três colunas** (anterior, média e posterior); a lesão da coluna média define a instabilidade; não tem escore;\n\n**AO (Magerl)**: morfológica e mecânica (A compressão, B distração, C rotação); a versão AO Spine acrescentou modificadores e um escore próprio (TL AOSIS), mas a original não pontuava;\n\n**TLICS**: **soma pontos** de três itens e o total **orienta o tratamento**:\n\n**mecanismo ou morfologia**: compressão 1, explosão 2, translação ou rotação 3, distração 4;\n\n**estado neurológico**: 0 a 3;\n\n**complexo ligamentar posterior**: íntegro 0, suspeito 2, roto 3.\n\n**A decisão pelo TLICS**: até **3**, conservador; **4**, a critério; **5 ou mais**, cirurgia.\n\n**Na prova**: a classificação com escore que considera o mecanismo, o déficit e o complexo ligamentar posterior é o **TLICS**.",
+  "correta": "O TLICS soma mecanismo, estado neurológico e complexo ligamentar posterior, e o total orienta a cirurgia.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0194": {
-  "conceito": "### Dissociação escapulotorácica\n- \"Amputação interna\": escápula arrancada lateralmente da parede torácica; alta energia.\n- Associações: ==avulsão do plexo braquial==, ==lesão da subclávia/axilar==, fratura da clavícula ou luxação AC/ES.\n- RX de tórax centrado: ==índice escapular== (distância borda medial-processos espinhosos) ==> 1,5 vez o contralateral==.\n\n### Prognóstico\n- Mortalidade 10%; membro inútil em cerca de 50% (plexo avulsionado).\n- Plexo completo + lesão vascular: considerar amputação precoce.\n\n> **Na prova:** dissociação escapulotorácica = distância ==> 1,5 vez== o lado oposto",
-  "correta": "**1,5 vez.**\n- Índice escapular.\n- Lateralização da escápula.",
   "incorretas": {
-   "A": "**0,5 vez.**\n- Seria medialização.",
-   "C": "**2 vezes.**\n- Limite maior que o descrito.",
-   "D": "**2,5 vezes.**\n- Superestimado."
+   "A": "Uma distância menor que a do outro lado indicaria medialização, não dissociação.",
+   "C": "O limite de 2 vezes é maior que o critério descrito.",
+   "D": "O limite de 2,5 vezes superestima o critério."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **dissociação escapulotorácica** é uma \"**amputação interna**\": a escápula é arrancada **lateralmente** da parede do tórax por um trauma de alta energia, com a pele intacta.\n\n**As lesões associadas**:\n\n**avulsão do plexo braquial**, muitas vezes completa;\n\n**lesão da artéria subclávia ou axilar**;\n\n**fratura da clavícula**, luxação acromioclavicular ou esternoclavicular.\n\n**O diagnóstico na radiografia**: na radiografia de tórax **bem centrada**, mede-se a distância entre a **borda medial da escápula** e os **processos espinhosos** dos dois lados (índice escapular). A escápula do lado lesado fica **lateralizada**: uma distância **mais de 1,5 vez maior** que a do lado oposto confirma a dissociação.\n\n**O prognóstico**: mortalidade de cerca de **10%**; o membro fica sem função em cerca de **metade** dos casos, pela avulsão do plexo. Com plexo totalmente avulsionado e lesão vascular, considera-se a **amputação** precoce.\n\n**Na prova**: a dissociação escapulotorácica é confirmada com distância **1,5 vez maior** que a contralateral.",
+  "correta": "A escápula lateralizada fica a mais de 1,5 vez a distância do lado oposto em relação à coluna.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0195": {
-  "conceito": "### Tipos de fibra muscular\n| Tipo | Metabolismo | Contração | Vulnerabilidade à isquemia |\n|---|---|---|---|\n| ==I== | ==oxidativo== (mitocôndrias, mioglobina) | lenta, resistente à fadiga | ==maior== (depende de O2) |\n| IIa | oxidativo-glicolítico | rápida | intermediária |\n| IIb (IIx) | glicolítico | rápida, fatigável | menor |\n\n- Músculos ricos em tipo I (==sóleo==, tibial anterior) necrosam primeiro na síndrome compartimental.\n\n> **Na prova:** fibras mais vulneráveis à isquemia = ==tipo I==",
-  "correta": "**Tipo I.**\n- Dependem do metabolismo oxidativo.\n- Sem O2, falham primeiro.",
   "incorretas": {
-   "B": "**IIa.**\n- Mistas, intermediárias.",
-   "C": "**IIb.**\n- Glicolíticas, toleram mais.",
-   "D": "**III.**\n- Não existe."
+   "B": "As fibras IIa são mistas, de vulnerabilidade intermediária.",
+   "C": "As fibras IIb são glicolíticas e toleram mais a isquemia.",
+   "D": "Não existe fibra muscular esquelética do tipo III nessa classificação."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Os músculos têm fibras de tipos diferentes, com metabolismos diferentes:\n\n**tipo I** (contração lenta, vermelhas): dependem do **metabolismo oxidativo** (aeróbico), com muitas mitocôndrias e mioglobina; são resistentes à fadiga, mas **muito sensíveis à falta de oxigênio**;\n\n**tipo IIa** (rápidas, oxidativas e glicolíticas): intermediárias;\n\n**tipo IIb** (rápidas, glicolíticas): usam a **glicólise anaeróbica** e **toleram mais** a isquemia.\n\n**Na síndrome compartimental**: sem perfusão, as fibras **tipo I** são as primeiras a falhar e necrosar. Músculos ricos nelas, como o **sóleo** e o **tibial anterior**, sofrem primeiro.\n\n**A janela do músculo** (Matsen): alteração da função após 2 a 4 horas de isquemia; necrose irreversível a partir de 4 a 12 horas. Por isso a fasciotomia deve ser feita cedo, idealmente em menos de 6 horas.\n\n**Na prova**: as fibras dependentes do metabolismo oxidativo e mais vulneráveis à isquemia são as do **tipo I**.",
+  "correta": "As fibras tipo I dependem do metabolismo oxidativo e são as primeiras a falhar sem oxigênio.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0196": {
-  "conceito": "### Diáfise do fêmur + colo ipsilateral\n- Associação em ==3 a 10%==, alta energia (painel).\n- Fratura do colo: ==basocervical==, ==vertical== e pouco desviada; passa despercebida em até 30%.\n- Rotina: ==TC fina do colo== em toda fratura diafisária de alta energia e RX intraoperatório.\n\n### Tratamento\n| Estratégia | Detalhe |\n|---|---|\n| prioridade | ==colo== (risco de necrose/pseudartrose) |\n| opções | parafusos ou DHS no colo + haste retrógrada; ou haste cefalomedular única |\n\n### Dispositivo cefalomedular único\n- Indicado quando a fratura do colo é ==sem desvio/basocervical (31B1)== e a diáfise é ==simples (32A)==: uma haste trata ambas.\n- Colo desviado (31B2/B3): prioridade ao colo com implante próprio (parafusos/DHS) e haste retrógrada ou placa na diáfise.\n\n> **Na prova:** cefalomedular = ==32A3 + 31B1.2==",
-  "correta": "**32A3 e 31B1.2.**\n- Diáfise simples.\n- Colo sem desvio significativo.",
   "incorretas": {
-   "B": "**31B2.2.**\n- Colo desviado exige fixação própria.",
-   "C": "**33A2.**\n- Fêmur distal.",
-   "D": "**33A2 e 31B2.2.**\n- Ambos inadequados."
+   "B": "Com o colo desviado (31B2.2), ele precisa de redução e fixação próprias.",
+   "C": "A 33A2 é fratura do fêmur distal, não da diáfise.",
+   "D": "A 33A2 é distal, e o colo desviado precisa de fixação própria."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na fratura da **diáfise do fêmur** com fratura do **colo** do mesmo lado, a prioridade é o **colo**, pelo risco de necrose e pseudartrose. A escolha do implante depende do tipo de cada fratura na **classificação AO**:\n\n**31**: fêmur proximal; **31B** é o colo; na questão, o **31B1** representa a fratura do colo **sem desvio** importante, e o **31B2**, a fratura **desviada**;\n\n**32**: diáfise; **32A** é o traço **simples** (A3 transverso);\n\n**33**: fêmur **distal**.\n\n**Quando usar um único dispositivo cefalomedular**: diáfise **simples** (32A) com colo **sem desvio** importante (31B1): uma haste com parafusos no colo trata as duas fraturas.\n\n**Quando não usar**: com o colo **desviado** (31B2, 31B3), a redução e a fixação do colo vêm primeiro, com **implante próprio** (parafusos ou DHS); a diáfise recebe **haste retrógrada** ou **placa**.\n\n**As alternativas com 33A2**: falam de fratura do fêmur **distal**, não da diáfise.\n\n**Na prova**: o dispositivo cefalomedular é indicado nas fraturas **32A3 e 31B1.2**.",
+  "correta": "Com a diáfise de traço simples e o colo sem desvio, uma haste cefalomedular única fixa as duas fraturas.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0197": {
-  "conceito": "### Fraturas da cabeça femoral por luxação\n| Tipo | Luxação associada |\n|---|---|\n| ==indentação (impacção)== | ==luxação anterior== (cabeça bate na borda inferior/anterior do acetábulo): impacção superolateral |\n| cisalhamento (Pipkin) | ==luxação posterior== |\n| central | fratura acetabular/luxação central |\n\n### Prognóstico\n- Indentação > 4 mm de profundidade: maior risco de ==artrose pós-traumática==.\n- RM/TC pós-redução.\n\n> **Na prova:** luxação anterior + necrose = fratura por ==impacção==",
-  "correta": "**Impacção.**\n- Lesão mais frequente na anterior.\n- Maior risco de necrose e artrose.",
   "incorretas": {
-   "A": "**Torção.**\n- Não é o padrão.",
-   "B": "**Avulsão.**\n- Ligamento redondo, menor relevância.",
-   "D": "**Cisalhamento.**\n- Luxação posterior (Pipkin)."
+   "A": "A fratura por torção não é o padrão da luxação anterior.",
+   "B": "A avulsão do ligamento redondo tem pouca relevância.",
+   "D": "O cisalhamento é típico da luxação posterior (Pipkin)."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **luxação anterior do quadril**, a cabeça do fêmur bate contra a borda anterior do acetábulo ou contra o ramo do púbis e sofre **impacção** (indentação): um afundamento da superfície, em geral **superolateral**.\n\n**Por que é a lesão mais importante**: é a lesão da cabeça **mais frequente** na luxação anterior e a que mais **piora o prognóstico**. A cartilagem e o osso subcondral esmagados predispõem à **necrose** e à **artrose pós-traumática**, sobretudo com indentação de mais de **4 mm** de profundidade.\n\n**O contraste com a luxação posterior**: nela, a cabeça sofre **cisalhamento** pela borda posterior, com as fraturas de **Pipkin**.\n\n**A avulsão**: do ligamento redondo, na fóvea, tem pouca relevância.\n\n**A conduta**: redução **urgente**, sob anestesia, e TC ou RM depois, para medir a impacção.\n\n**Na prova**: na luxação anterior, a lesão mais frequente e com mais necrose é a fratura por **impacção**.",
+  "correta": "A cabeça bate na borda anterior e afunda; a impacção é a lesão mais frequente e a que mais leva à necrose.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0198": {
@@ -2190,47 +2190,47 @@
   "conferido": false
  },
  "trauma-0199": {
-  "conceito": "### Joelho flutuante\n- Fraturas ipsilaterais do ==fêmur e da tíbia==: alta energia.\n\n### Associações\n| Lesão | Frequência |\n|---|---|\n| ==fratura exposta== (pelo menos uma) | ==cerca de 50 a 70%== |\n| lesão ligamentar do joelho | até 50% |\n| lesão vascular | 5 a 15% |\n| politrauma, TCE, tórax | frequente |\n\n### Fraser\n| Tipo | Padrão |\n|---|---|\n| I | ambas diafisárias |\n| IIa | planalto tibial |\n| IIb | fêmur distal intra-articular |\n| IIc | ambas intra-articulares |\n\n- Tratamento: fixar ambas (haste retrógrada no fêmur + anterógrada na tíbia pela mesma incisão).\n\n### Tração excessiva\n- Mesa ortopédica com tração forte para reduzir dois ossos: ==estiramento do nervo fibular== (e do pudendo pelo poste perineal).\n- Prevenção: tração mínima necessária, tempo curto, joelho levemente fletido.\n\n> **Na prova:** tração excessiva no joelho flutuante = ==paralisia do fibular==",
-  "correta": "**Paralisia do fibular.**\n- Nervo estirado no colo da fíbula.\n- Pé caído no pós-operatório.",
   "incorretas": {
-   "A": "**Vascular.**\n- Menos associada à tração.",
-   "B": "**Ligamentar.**\n- Pré-existente ao trauma.",
-   "D": "**Compartimental.**\n- Relaciona-se à energia e fresagem, não à tração."
+   "A": "A lesão vascular é menos associada à tração e mais ao trauma.",
+   "B": "A lesão ligamentar vem do trauma, não da tração.",
+   "D": "A síndrome compartimental se relaciona com a energia e a fresagem, não com a tração."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "No **joelho flutuante** (fêmur e tíbia fraturados do mesmo lado), a cirurgia com **hastes** pede tração para reduzir **dois ossos** ao mesmo tempo. Com a mesa ortopédica, a tração costuma ser forte e longa.\n\n**O nervo mais exposto à tração**: o **nervo fibular comum**. Ele contorna o **colo da fíbula**, preso ao osso, e não acompanha o alongamento do membro: **estira** e paralisa.\n\n**O quadro**: **pé caído** e dormência no dorso do pé no pós-operatório. Quase sempre é neuropraxia, com recuperação em semanas a meses.\n\n**Outra lesão por tração**: o **nervo pudendo**, comprimido pelo **poste perineal** da mesa, com dormência perineal e disfunção erétil temporária.\n\n**A prevenção**: usar a **menor tração** necessária, pelo **menor tempo**, com o joelho levemente fletido; muitas vezes, reduzir sem a mesa de tração.\n\n**As outras lesões**: a lesão **vascular** e a **ligamentar** vêm do próprio trauma; a **síndrome compartimental** se relaciona com a energia do trauma e com a fresagem, não com a tração.\n\n**Na prova**: a tração excessiva no joelho flutuante aumenta a **paralisia do nervo fibular**.",
+  "correta": "O fibular comum fica preso ao colo da fíbula e estira com a tração, causando pé caído no pós-operatório.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0200": {
-  "conceito": "### Fraturas do acrômio\n- Raras; diferenciar de ==os acromiale== (bordas lisas, bilateral em 60%).\n- Fratura por estresse após ==artroplastia reversa== (deltoide tenso).\n\n### Kuhn\n| Tipo | Achado | Conduta |\n|---|---|---|\n| I | sem desvio (IA avulsão, IB completa) | conservador |\n| II | desviada ==sem== reduzir o espaço subacromial | conservador na maioria |\n| ==III== | desvio ==inferior== ==estreitando o espaço subacromial== | ==fixação== (+ avaliar manguito) |\n\n> **Na prova:** desvio inferior com espaço subacromial comprometido = ==Kuhn III==",
-  "correta": "**Tipo III.**\n- Desvio inferior.\n- Impacto subacromial: fixar.",
   "incorretas": {
-   "A": "**I.**\n- Sem desvio.",
-   "B": "**II.**\n- Sem estreitar o espaço.",
-   "D": "**IV.**\n- Não existe."
+   "A": "O tipo I não tem desvio.",
+   "B": "O tipo II é desviado, mas sem reduzir o espaço subacromial.",
+   "D": "Não existe tipo IV na classificação de Kuhn."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "As **fraturas do acrômio** são raras. Antes de tudo, diferenciar do **os acromiale** (núcleo de ossificação que não se fundiu): bordas **lisas** e **bilateral** em cerca de 60% dos casos.\n\n**Kuhn** classifica pelo **desvio** e pelo efeito no **espaço subacromial**:\n\n**tipo I**: **sem desvio** ou com desvio mínimo;\n\n**tipo II**: **desviada**, mas **sem reduzir** o espaço subacromial;\n\n**tipo III**: desviada para **baixo**, **reduzindo** o espaço subacromial.\n\n**Por que o tipo III importa**: o fragmento abaixado bate no **manguito rotador** e causa **impacto**. É indicação de **fixação** (banda de tensão, parafusos ou placa).\n\n**A fratura por estresse do acrômio**: aparece após a **artroplastia reversa** do ombro, porque o deltoide fica mais tenso.\n\n**Na prova**: a fratura do acrômio desviada para baixo, com espaço subacromial comprometido, é **Kuhn tipo III**.",
+  "correta": "No tipo III, o fragmento desce e reduz o espaço subacromial, com impacto no manguito: indicação de fixação.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0201": {
-  "conceito": "### Russell-Taylor (subtrocantérica)\n| Tipo | Fossa piriforme | Trocanter menor | Implante |\n|---|---|---|---|\n| IA | ==não== atingida | ==íntegro== | haste convencional |\n| IB | não atingida | ==fraturado== | haste cefalomedular |\n| IIA | ==atingida== | íntegro | placa ou haste trocantérica |\n| IIB | atingida | fraturado | placa angulada/cefalomedular |\n\n- Foco: ==extensão à fossa piriforme== (ponto de entrada da haste) e ==trocanter menor== (suporte medial).\n- Com hastes de entrada trocantérica, a importância da fossa diminuiu.\n\n> **Na prova:** Russell-Taylor = ==fossa piriforme + trocanter menor==",
-  "correta": "**Fossa piriforme e pequeno trocanter.**\n- Define o ponto de entrada.\n- E o suporte medial.",
   "incorretas": {
-   "A": "**Grande trocanter.**\n- Não é o critério.",
-   "B": "**Diáfise e grande trocanter.**\n- Critérios errados.",
-   "D": "**Diáfise.**\n- Não é o eixo da classificação."
+   "A": "A fossa piriforme está certa, mas o critério é o trocânter menor, não o maior.",
+   "B": "A diáfise e o trocânter maior não são os critérios.",
+   "D": "O trocânter menor está certo, mas o outro critério é a fossa piriforme."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "**Russell e Taylor** classificaram a **fratura subtrocantérica** para orientar a escolha do implante, numa época de hastes com entrada pela **fossa piriforme**. Os dois critérios:\n\n**extensão para a fossa piriforme**: define se o **ponto de entrada** da haste está íntegro;\n\n**tipo I**: a fossa piriforme está íntegra, e a haste pode ser usada;\n\n**tipo II**: o traço chega à fossa piriforme, e a haste convencional não serve;\n\n**envolvimento do trocânter menor**: define o **suporte medial**:\n\n**A**: trocânter menor íntegro;\n\n**B**: trocânter menor fraturado, com perda do apoio medial.\n\n**Hoje**: com as hastes de entrada **trocantérica** (cefalomedulares), a importância da fossa piriforme diminuiu, mas o **suporte medial** continua decisivo para evitar o varo.\n\n**Na prova**: a classificação de Russell-Taylor considera a extensão para a **fossa piriforme** e o envolvimento do **pequeno trocânter**.",
+  "correta": "Russell-Taylor avalia se o traço chega à fossa piriforme (ponto de entrada) e se o trocânter menor (suporte medial) está fraturado.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0202": {
-  "conceito": "### Fratura do processo lateral do tálus (snowboarder)\n- Mecanismo: ==dorsiflexão + inversão== (ou eversão) com carga axial e rotação externa.\n- Processo lateral articula com a fíbula e com o calcâneo (subtalar posterior).\n- ==Passa por entorse==: RX normal em até 40%; ==TC== confirma.\n\n### Hawkins (processo lateral)\n| Tipo | Fragmento | Conduta |\n|---|---|---|\n| I | fragmento único grande | fixação se desviado > 2 mm |\n| II | cominutivo | excisão/imobilização |\n| III | pequeno (lasca anteroinferior) | imobilização |\n\n### Outros processos\n| Processo | Nome | Mecanismo |\n|---|---|---|\n| posterior, tubérculo lateral | Shepherd | flexão plantar forçada |\n| posterior, tubérculo medial | Cedell | dorsiflexão + pronação |\n\n> **Na prova:** mecanismo = dorsiflexão + rotação lateral + ==carga axial e eversão==",
-  "correta": "**Axial e eversão.**\n- Com dorsiflexão e rotação externa.\n- Calcâneo cisalha o processo.",
   "incorretas": {
-   "B": "**Axial e inversão.**\n- Não é o mecanismo indicado pela banca.",
-   "C": "**Torcional e inversão.**\n- Entorse lateral.",
-   "D": "**Torcional e eversão.**\n- Falta a carga axial."
+   "B": "A inversão aparece em descrições antigas, mas o mecanismo indicado é a eversão com carga axial.",
+   "C": "O trauma torcional com inversão produz a entorse lateral comum.",
+   "D": "A eversão está certa, mas falta a carga axial, essencial no mecanismo."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **fratura do processo lateral do tálus** (fratura do snowboarder) quebra a saliência em cunha que articula com a **fíbula** em cima e com o **calcâneo** embaixo.\n\n**O mecanismo**: a combinação descrita por Boon e colaboradores é **dorsiflexão** do tornozelo, **rotação lateral** (externa), **carga axial** e **eversão**. Na eversão com carga, o **calcâneo** empurra e **cisalha** o processo lateral contra a fíbula. Descrições antigas citavam a inversão.\n\n**O quadro**: imita uma **entorse** do tornozelo; a radiografia é normal em até 40% dos casos. Dor abaixo da ponta da fíbula que não melhora pede **TC**.\n\n**O tratamento**: fragmentos grandes desviados (mais de 2 mm) são **fixados**; fragmentos pequenos e cominutos são **ressecados**; os sem desvio vão para gesso sem carga.\n\n**A complicação**: se não for reconhecida, evolui com **pseudartrose** e **artrose subtalar**.\n\n**Na prova**: o mecanismo mais frequente é dorsiflexão, rotação lateral, carga **axial** e **eversão**.",
+  "correta": "Com dorsiflexão, rotação lateral, carga axial e eversão, o calcâneo cisalha o processo lateral contra a fíbula.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0204": {
