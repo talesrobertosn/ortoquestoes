@@ -174,6 +174,13 @@ TAGS: dict[str, list[tuple[str, str | None]]] = {
         ('Amputações e reimplantes', 'amputa|reimplant'),
         ('Infecções da mão', 'paroniquia|felon|panaricio|tenossinovite (infecciosa|piogenica)|kanavel|mordedura'),
         ('Tumores da mão', 'tumor|cisto sinovial|glomus|encondroma'),
+        ('Microcirurgia e retalhos livres', 'microcirurg|microvascular|anastomose|retalho livre|retalho (escapular|paraescapular|anterolateral da coxa|lateral do braco|do grande dorsal|do reto abdominal|do musculo grande dorsal)|sanguessuga|perfurante|fibula vascularizad|gracil|serratil'),
+        ('Cicatrização e enxertos de pele', 'cicatriz|enxerto de pele|queloide|inosculac|epiderme|derme|pele total|pele parcial|espessura (total|parcial)|expansor'),
+        ('Queimaduras', 'queimad|parkland|escarotomia|eletrica'),
+        ('Cirurgia plástica geral', 'mama|mamari|areolo|abdominoplast|lesao por pressao|blefaro|rinoplast|lipoaspir|carcinoma basocelular|baso ?celular|espinocelular|melanoma|face|labio|palato|orelha|npiap'),
+        ('Síndrome da dor complexa regional', 'dor complexa|distrofia simpatic|sudeck|causalgia'),
+        ('Anestesia em cirurgia da mão', 'anestesi|bloqueio (axilar|supraclavicular|infraclavicular|interescalenico|do plexo)|\\bbier\\b|lidocaina|bupivacaina|walant|torniquete|garrote'),
+        ('Transferências tendinosas e paralisias', 'transferencia tendinosa|oponen|tetraplegi|paralisia (alta |baixa )?do nervo (radial|mediano|ulnar)|zancolli|brand|burkhalter|camitz|huber|tenodese'),
         ('Outros temas da mão', None),
     ],
     'pe-tornozelo': [
@@ -337,7 +344,8 @@ def etiquetar(tema: str, enunciado: str, certa: str = "", comentario: str = "") 
         if p:
             pontos[nome] = (p, i)
     melhores = sorted(pontos.items(), key=lambda x: (-x[1][0], x[1][1]))
-    resto = next((n for n, _ in regras if n.startswith("Outr")), regras[-1][0])
+    # O resto é a tag "Outros ..." sem expressão (em mão há também "Outras malformações", que tem).
+    resto = next((n for n, e in regras if n.startswith("Outr") and not e), next((n for n, _ in regras if n.startswith("Outr")), regras[-1][0]))
     if not melhores or melhores[0][1][0] < 3:
         tags = [resto]
     else:

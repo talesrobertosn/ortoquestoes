@@ -175,6 +175,9 @@ def principal() -> int:
             for campo in OBRIGATORIOS:
                 valor = questao.get(campo)
                 if valor in (None, "", []):
+                    # Dissertativa não tem alternativas: tem a resposta esperada.
+                    if campo == "alternativas" and questao.get("tipo") == "dissertativa":
+                        continue
                     erros.append(f"{onde}: campo obrigatório vazio: {campo}")
 
             if identificador in vistos:

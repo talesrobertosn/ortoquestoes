@@ -11451,6 +11451,55 @@
         "pagina": 3,
         "numeroOriginal": 5
       }
+    },
+    {
+      "id": "tumores-0360",
+      "area": "cirurgia-mao",
+      "tema": "Tumores ósseos e de partes moles",
+      "subtemas": [
+        "Mieloma múltiplo e plasmocitoma",
+        "Metástases ósseas"
+      ],
+      "prova": "IAUPE",
+      "ano": 2025,
+      "dificuldade": null,
+      "enunciado": "Qual o tumor ósseo maligno primário mais comum em adultos, excluindo -se as metástases ósseas?",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Sarcoma de Ewing."
+        },
+        {
+          "letra": "B",
+          "texto": "Condrossarcoma."
+        },
+        {
+          "letra": "C",
+          "texto": "Osteossarcoma."
+        },
+        {
+          "letra": "D",
+          "texto": "Mieloma múltiplo."
+        },
+        {
+          "letra": "E",
+          "texto": "Linfoma ósseo."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "IAUPE 2025",
+        "pagina": 5,
+        "numeroOriginal": 21
+      }
     }
   ]
 }
