@@ -3881,18 +3881,18 @@
   "conferido": false
  },
  "trauma-0428": {
-  "conceito": "A fratura por estresse do **navicular tarsal** é um dos sítios de alto risco na classificação de Boden-Osbahr, e a razão anatômica para esse risco explica também sua localização típica.\n\nO navicular recebe suprimento sanguíneo por vasos que entram pelas suas margens medial e lateral, convergindo (e se sobrepondo pouco) para o terço central do osso, uma verdadeira zona de watershed, a região menos vascularizada de toda a estrutura.\n\nÉ exatamente ali, no terço central, que a fratura por estresse costuma se instalar, e o plano em que o traço se orienta é o sagital: a linha de fratura corre no sentido dorsoplantar, dividindo o osso em um fragmento medial e um lateral, e não no plano coronal (que dividiria o osso em uma porção dorsal e outra plantar).\n\nEssa combinação (terço central, plano sagital) é a assinatura reconhecida da lesão, descrita já na classificação clássica de **Torg** para o navicular: tipo I, fratura incompleta da cortical dorsal; tipo II, fratura parcial estendendo-se ao corpo; tipo III, fratura completa com esclerose das bordas.\n\nA baixa vascularização dessa região central é também o motivo prático mais importante: mesmo pequena, essa fratura tem risco real de não consolidar e costuma exigir imobilização rígida sem carga, ao contrário da maioria das fraturas por estresse do pé.",
-  "correta": "A. A fratura por estresse do navicular localiza-se tipicamente no plano sagital, no terço central do osso, exatamente a zona de menor vascularização, onde convergem (com pouca sobreposição) os vasos que entram pelas margens medial e lateral.",
   "incorretas": {
-   "B": "O plano da fratura é o sagital (traço no sentido dorsoplantar), não o coronal, o plano coronal dividiria o osso em uma porção dorsal e outra plantar, o que não corresponde ao padrão descrito.",
-   "C": "O terço PROXIMAL não é a localização característica; é o terço CENTRAL, correspondente à zona de menor vascularização entre os dois territórios de suprimento sanguíneo do osso.",
-   "D": "Nem o plano coronal nem o terço proximal correspondem à localização clássica dessa fratura, que ocorre no plano sagital e no terço central."
+   "B": "O terço central está certo, mas o traço é sagital, não coronal.",
+   "C": "O traço é sagital, mas no terço central, não no proximal.",
+   "D": "O plano e o local estão errados."
   },
-  "geradoEm": "2026-09-14",
-  "conferido": false,
+  "conceito": "A **fratura por estresse do navicular** é de **alto risco** e típica de atletas de corrida e salto. Muitas vezes passa meses sem diagnóstico, como \"dor no mediopé\".\n\n**Onde ocorre**: no **plano sagital** (traço de cima para baixo, no sentido do comprimento do pé), no **terço central** do osso.\n\n**Por que ali**: o terço central do navicular é uma área de **irrigação pobre**, entre os vasos que entram pelos lados medial e lateral. Além disso, ele fica comprimido entre a cabeça do tálus e os cuneiformes, recebendo a carga do segundo e do terceiro raios.\n\n**O quadro**: dor vaga no dorso do mediopé, com dor à palpação no ponto \"N\" (sobre o navicular).\n\n**O diagnóstico**: a radiografia costuma ser normal; a **TC** mostra o traço e a **RM** mostra o edema precoce.\n\n**O tratamento**: **gesso sem carga** por 6 a 8 semanas nas fraturas incompletas sem desvio; **fixação com parafusos** (com ou sem enxerto) nas completas, desviadas, com pseudartrose ou em atletas de elite.\n\n**Na prova**: a fratura por estresse do navicular é mais frequente no plano **sagital**, no **terço central**.",
+  "correta": "O traço é sagital e fica no terço central, área pouco irrigada e muito carregada.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 89"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0429": {
   "incorretas": {
@@ -3909,60 +3909,60 @@
   "conferido": false
  },
  "trauma-0430": {
-  "conceito": "A fratura exposta da extremidade distal do úmero tende a ter seu ponto de exposição concentrado na face **posterior** do braço, e essa distribuição não é coincidência: reflete a diferença de cobertura de partes moles entre as faces anterior e posterior dessa região.\n\nAnteriormente, o úmero distal é protegido por uma camada espessa de músculo (o braquial anterior, além do bíceps mais proximalmente), que absorve parte do impacto e dificulta a perfuração da pele por um fragmento ósseo desviado.\n\nPosteriormente, em contraste, a cobertura de partes moles é muito mais delgada, sobretudo próximo ao olécrano e à face posterior da metáfise distal, onde a pele fica quase diretamente sobre o osso, com pouco músculo interposto.\n\nQuando a fratura tem energia suficiente para desviar um fragmento a ponto de romper a pele, é essa região posterior, menos protegida, que cede com maior frequência, o mesmo princípio de cobertura de partes moles que explica, por exemplo, por que a região anterior da tíbia (subcutânea ao longo de toda a sua extensão) é o sítio mais comum de exposição nas fraturas dessa outra localização, e por que o olécrano isolado, também subcutâneo, é um dos ossos mais frequentemente expostos por trauma direto em quedas.",
-  "correta": "D. A face posterior do úmero distal, com cobertura de partes moles mais delgada do que a face anterior (protegida pelo músculo braquial), é o local mais frequente de exposição óssea nas fraturas dessa região.",
   "incorretas": {
-   "A": "A face lateral tem cobertura muscular intermediária, sem ser tão delgada quanto a posterior, que é a mais frequentemente associada à exposição.",
-   "B": "A face medial também tem cobertura de partes moles mais espessa do que a posterior, tornando a exposição por essa face menos frequente.",
-   "C": "A face anterior é a mais protegida, pela cobertura espessa do músculo braquial, tornando a exposição por essa face a menos provável entre as citadas."
+   "A": "A face lateral é coberta pelos extensores que nascem no epicôndilo lateral.",
+   "B": "A face medial é coberta pelos flexores que nascem no epicôndilo medial.",
+   "C": "A face anterior é protegida pelo braquial e pelo bíceps."
   },
-  "geradoEm": "2026-09-14",
-  "conferido": false,
+  "conceito": "Na fratura **exposta** do úmero **distal**, a ferida aparece onde a **cobertura de partes moles é menor**.\n\n**A face posterior**: atrás do úmero distal estão apenas o **tendão do tríceps**, a gordura e a pele, sobre o **olécrano** e a fossa do olécrano. É a face mais **fina**.\n\n**O mecanismo**: queda sobre o **cotovelo fletido** ou trauma de alta energia; o fragmento proximal, pontiagudo, é empurrado para **trás** e perfura a pele posterior.\n\n**As outras faces**:\n\n**anterior**: protegida pelo **braquial** e pelo **bíceps**, além do feixe neurovascular (artéria braquial, nervo mediano);\n\n**medial e lateral**: cobertas pelos músculos que nascem nos epicôndilos (flexores e extensores do antebraço).\n\n**A conduta**: antibiótico precoce, desbridamento, fixação (às vezes fixador externo temporário) e cobertura; o **nervo ulnar** deve ser identificado e protegido.\n\n**Na prova**: a exposição do úmero distal ocorre mais na região **posterior**.",
+  "correta": "Atrás do úmero distal só há o tríceps e a pele, e o fragmento proximal é empurrado para trás.",
   "referencias": [
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 2.23"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0431": {
-  "conceito": "A lesão de **Essex-Lopresti** é a instabilidade longitudinal do antebraço: fratura cominuída da cabeça do rádio, ruptura da membrana interóssea e lesão da articulação radioulnar distal. Para entender por que ela é tão frequentemente perdida, é preciso enxergar o antebraço como uma unidade, com três estabilizadores em série que impedem a migração proximal do rádio: a cabeça do rádio contra o capítulo (o batente proximal), a membrana interóssea (com a sua banda central, o ligamento interósseo central, que transmite cerca de 70% a 80% da carga axial do punho para o cotovelo) e o complexo da fibrocartilagem triangular com os ligamentos radioulnares distais (o batente distal). Rompidos os três, o rádio migra proximalmente e o antebraço \"desmonta\".\n\nA armadilha clínica é que o paciente chega com uma queixa só, a do **cotovelo** (dor e limitação após queda com carga axial), e o cirurgião trata a fratura da cabeça do rádio como se fosse isolada. O achado que denuncia a lesão é a **dor no punho**, à palpação da articulação radioulnar distal e na região ulnar do carpo, muitas vezes acompanhada de dor ao longo do antebraço, no trajeto da membrana interóssea. Daí a regra de ouro: em toda fratura da cabeça ou do colo do rádio, examinar e radiografar o punho, comparando a variância ulnar com o lado contralateral.\n\nA consequência prática é a mais importante de todas: **nunca ressecar** a cabeça do rádio nessa situação, porque se retira o único batente proximal que ainda resta, o rádio migra, a ulna passa a impactar contra o carpo (impacto ulnocarpal doloroso) e o resgate tardio é difícil e de resultados medíocres. O tratamento agudo é fixar ou substituir a cabeça do rádio por prótese, reduzir e estabilizar a radioulnar distal (em regra com fio transfixante e imobilização em supinação por quatro a seis semanas).",
-  "correta": "C. A dor à palpação da articulação radioulnar DISTAL é o sinal que denuncia a Essex-Lopresti: o paciente se queixa do cotovelo, e é o exame do punho que revela a instabilidade longitudinal do antebraço.",
   "incorretas": {
-   "A": "A diminuição da pronação é achado inespecífico: aparece em qualquer fratura da cabeça do rádio, com ou sem lesão da membrana interóssea, e também por hemartrose e dor. Não distingue a fratura isolada da lesão longitudinal.",
-   "B": "A diminuição da supinação tem o mesmo problema: é consequência esperada da própria fratura da cabeça do rádio e da hemartrose do cotovelo, e não informa nada sobre o estado da membrana interóssea ou da radioulnar distal.",
-   "D": "A dor na articulação radioulnar PROXIMAL é exatamente onde já se sabe que há fratura, é a dor local da lesão que trouxe o paciente. O que muda o diagnóstico e o tratamento é a dor no punho, no extremo oposto do antebraço."
+   "A": "A perda de pronação não é específica da lesão de Essex-Lopresti.",
+   "B": "A perda de supinação também não é específica.",
+   "D": "A dor na radioulnar proximal faz parte da própria fratura da cabeça do rádio."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
+  "conceito": "A **lesão de Essex-Lopresti** une a **fratura da cabeça do rádio** à **ruptura da membrana interóssea** e à **lesão da radioulnar distal**. O rádio fica livre para **migrar para cima**.\n\n**O problema**: o paciente chega com dor no **cotovelo**, e a lesão do **punho** passa despercebida. Sem diagnóstico, a cabeça do rádio pode ser ressecada, e o rádio sobe, com dor crônica no punho.\n\n**O sinal clínico de alerta**: **dor à palpação da articulação radioulnar distal** (no punho) num paciente com fratura da cabeça do rádio.\n\n**Como confirmar**: comparar a **variância ulnar** com o punho do outro lado; ultrassom ou RM mostram a membrana interóssea; testes de estresse (tração do rádio) no intraoperatório.\n\n**A perda de pronação ou de supinação** ocorre em muitas lesões do cotovelo e do antebraço e não é específica. A dor na radioulnar **proximal** faz parte da própria fratura da cabeça do rádio.\n\n**O tratamento**: preservar a cabeça do rádio (fixar ou prótese) e estabilizar a radioulnar distal.\n\n**Na prova**: o sinal que sugere Essex-Lopresti é a **dor à palpação da radioulnar distal**.",
+  "correta": "Na fratura da cabeça do rádio, a dor no punho sobre a radioulnar distal denuncia a lesão longitudinal do antebraço.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 57"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0432": {
-  "conceito": "A **síndrome compartimental crônica por esforço** é uma entidade completamente distinta da aguda, e confundi-las é perigoso nos dois sentidos. Ela é um quadro de sobrecarga em atletas (corredores de média e longa distância, militares em treinamento, jogadores de futebol), tipicamente jovens, e o mecanismo é o aumento reversível do volume muscular durante o exercício (o músculo pode aumentar 20% do seu volume em atividade) dentro de uma fáscia pouco complacente.\n\nOs compartimentos mais frequentemente acometidos são o **anterior** e o **lateral**, exatamente os menores e mais rígidos da perna, e o quadro é estereotipado: dor em queimação, aperto ou cãibra que começa depois de um tempo previsível de corrida (sempre no mesmo quilômetro), aumenta se o atleta insiste, obriga a parar e **alivia com o repouso** em minutos, para voltar exatamente igual na próxima corrida. Podem ocorrer parestesia transitória no dorso do pé (fibular profundo, no compartimento anterior) e queda temporária do pé no fim do esforço.\n\nO diagnóstico é confirmado pela medida da pressão intracompartimental antes e depois do exercício, com os critérios de Pedowitz: pressão de repouso maior ou igual a 15 mmHg, ou maior ou igual a 30 mmHg em 1 minuto após o esforço, ou maior ou igual a 20 mmHg aos 5 minutos.\n\nO diagnóstico diferencial é o que mais importa na prática: fratura por estresse da tíbia, síndrome do estresse tibial medial (canelite), aprisionamento da artéria poplítea e radiculopatia.\n\nO tratamento inicial é conservador (repouso relativo, correção da técnica de corrida e do calçado, alongamento), e a fasciotomia eletiva dos compartimentos acometidos é reservada aos casos refratários, com bons resultados sobretudo no compartimento anterior.",
-  "correta": "A. Os compartimentos ANTERIOR e LATERAL são os mais frequentemente acometidos na síndrome compartimental crônica por esforço, os mesmos que, por serem os menores e mais rígidos da perna, dominam também a forma aguda.",
   "incorretas": {
-   "B": "O compartimento posterior profundo pode ser acometido, e é o mais difícil de diagnosticar e de tratar (a fasciotomia ali tem resultados piores), mas ele não figura entre os dois mais frequentes.",
-   "C": "O compartimento posterior superficial é o mais amplo e complacente da perna, contendo gastrocnêmio, sóleo e plantar. Justamente por essa complacência, ele raramente desenvolve a síndrome, aguda ou crônica.",
-   "D": "A combinação dos dois compartimentos posteriores é a menos característica: o superficial é complacente demais e o profundo, embora possível, é minoria. O padrão clássico da forma crônica é anterior e lateral."
+   "B": "O anterior está certo, mas o posterior profundo é menos acometido que o lateral.",
+   "C": "O lateral está certo, mas o posterior superficial é o mais complacente.",
+   "D": "Os compartimentos posteriores são menos acometidos na forma crônica."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
+  "conceito": "A **síndrome compartimental crônica de esforço** da perna aparece em corredores: o volume dos músculos aumenta durante o exercício dentro de uma fáscia pouco complacente, e a pressão sobe. A dor surge após um tempo ou distância previsíveis e **some com o repouso**.\n\n**Os compartimentos mais acometidos**: o **anterior** (o mais comum) e o **lateral**. São os mais apertados, cercados por osso, membrana interóssea e fáscia espessa.\n\n**Os sinais que ajudam**:\n\n**dormência** no dorso do pé, pelo **nervo fibular superficial** (lateral) ou no primeiro espaço, pelo **fibular profundo** (anterior);\n\n**hérnia fascial** no compartimento anterolateral, presente em 20 a 60% dos casos.\n\n**O diagnóstico**: medida da **pressão** antes e depois do exercício (critérios de Pedowitz).\n\n**O tratamento**: modificar a atividade e, se persistir, **fasciotomia eletiva** dos compartimentos acometidos, com cuidado para não lesar o fibular superficial.\n\n**Na prova**: os compartimentos mais acometidos na síndrome crônica da perna são o **anterior** e o **lateral**.",
+  "correta": "Os compartimentos anterior e lateral são os mais apertados e os mais acometidos na síndrome de esforço.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 48"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0433": {
-  "conceito": "A **síndrome compartimental da coxa** é rara em comparação com a da perna, e a razão é anatômica: os três compartimentos da coxa (**anterior**: quadríceps, com o nervo femoral; **posterior**: isquiotibiais, com o nervo ciático; **medial**: adutores, com o nervo obturatório) são amplos, com fáscia relativamente complacente e boa continuidade entre si, de modo que toleram grandes volumes de sangramento antes que a pressão suba.\n\nJustamente por isso ela é **perigosa**: quando se manifesta, já houve perda sanguínea maciça, e o diagnóstico costuma ser tardio.\n\nA causa mais frequente é o **trauma fechado** de alta energia sobre a coxa, com ou sem fratura do fêmur (o esmagamento, a colisão, o atropelamento), em que a contusão maciça do quadríceps e o hematoma do foco elevam a pressão do compartimento anterior, que é o mais acometido.\n\nOs fatores que agravam e que devem ser ativamente procurados são a **coagulopatia** (do politraumatizado ou por anticoagulação), o uso de **tração** longitudinal prolongada, a compressão externa por posicionamento em mesa cirúrgica ou por calças pneumáticas antichoque, e a **lesão vascular** com reperfusão.\n\nO quadro clínico é o mesmo de qualquer compartimento (dor desproporcional, dor ao estiramento passivo, aqui, à flexão passiva do joelho para o compartimento anterior, tensão à palpação e parestesia), com a mesma advertência de sempre: o **pulso presente não afasta** o diagnóstico.\n\nO tratamento é a fasciotomia, em regra por uma incisão **lateral** longa que abre o compartimento anterior e, através do septo intermuscular lateral, o posterior; o compartimento medial, raramente acometido, exige incisão própria. O prognóstico é reservado, com taxas altas de mionecrose, infecção e mortalidade, refletindo a gravidade do trauma que a produz.",
-  "correta": "A. A causa mais frequente da síndrome compartimental aguda da coxa é o TRAUMA FECHADO de alta energia (contusão maciça do quadríceps com ou sem fratura do fêmur), agravado por coagulopatia, tração prolongada e compressão externa.",
   "incorretas": {
-   "B": "A isquemia arterial com reperfusão é causa reconhecida e temível, porque o edema pós-reperfusão é intenso, mas responde por uma fração pequena dos casos de coxa em comparação com o trauma fechado direto.",
-   "C": "O torniquete cirúrgico prolongado é fator de risco descrito, sobretudo quando somado a tempo excessivo ou pressão inadequada, mas é causa incomum e evitável, não a principal.",
-   "D": "O ferimento penetrante por arma de fogo pode causar síndrome compartimental, e a cominuição óssea funciona como marcador da energia transferida, mas, na coxa, é o trauma FECHADO de alta energia que domina a estatística."
+   "B": "A isquemia arterial com reperfusão é causa menos frequente.",
+   "C": "O torniquete prolongado é causa rara.",
+   "D": "O ferimento penetrante é causa menos frequente que o trauma fechado."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
+  "conceito": "A **síndrome compartimental da coxa** é **rara**: os compartimentos são grandes e se comunicam com a região do quadril, acomodando muito volume antes de a pressão subir.\n\n**A causa mais frequente**: o **trauma fechado**, sobretudo de alta energia: fratura da **diáfise do fêmur**, **contusão** muscular grave e **esmagamento**, mesmo sem fratura.\n\n**Os fatores que aumentam o risco**:\n\n**hipotensão** com reposição volêmica maciça;\n\n**anticoagulação** e distúrbios da coagulação;\n\n**compressão externa** prolongada (paciente imobilizado, coma, uso de drogas);\n\n**reperfusão** após lesão arterial.\n\n**As outras causas** (lesão arterial com isquemia e reperfusão, torniquete prolongado, ferimentos penetrantes) existem, mas são **menos frequentes** que o trauma fechado.\n\n**O compartimento mais acometido**: o **anterior** (quadríceps).\n\n**A fasciotomia**: uma incisão **lateral** libera os compartimentos anterior e posterior; o medial é aberto por outra incisão, se necessário.\n\n**Na prova**: a causa mais frequente de síndrome compartimental aguda da coxa é o **trauma fechado**.",
+  "correta": "O trauma fechado de alta energia, com fratura ou contusão grave, é a principal causa na coxa.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 48"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0434": {
   "incorretas": {
@@ -4008,18 +4008,18 @@
   "conferido": false
  },
  "trauma-0438": {
-  "conceito": "A **fratura-luxação dorsal da interfalângica proximal** é a lesão em que a base volar da falange média se fratura e a falange subluxa dorsalmente. A base volar é o ponto de ancoragem da placa volar, e é ela que impede a translação dorsal; quando mais de 30% a 40% da superfície articular volar se perde, a estabilidade some e a subluxação dorsal se instala.\n\nNas lesões agudas com fragmento único, a solução é a fixação. Mas nas lesões crônicas ou com cominuição e perda óssea da base volar não há fragmento para fixar: falta osso, e falta justamente a superfície articular côncava que serve de batente.\n\nA solução consagrada é o **enxerto osteoarticular de hemi-hamato** (hemi-hamate arthroplasty, descrita por Hastings e popularizada por Capo e Calfee): resseca-se a porção dorsodistal do hamato, na sua faceta articular com o quarto e o quinto metacarpos, e transplanta-se esse bloco osteocartilaginoso para reconstruir a base volar da falange média, fixando-o com parafusos. A escolha do hamato não é arbitrária: é a região do carpo cuja curvatura articular melhor reproduz a concavidade da base da falange média, e cuja retirada parcial é bem tolerada, com pouca morbidade na área doadora.\n\nAlternativas existem para outros cenários: a artroplastia de placa volar de Eaton-Malerich, a tração dinâmica externa (que aproveita a ligamentotaxia para moldar a superfície enquanto o dedo se move) e a fixação em bloqueio de extensão.\n\nA regra que organiza tudo isso é a mesma de toda a interfalângica proximal: o objetivo é uma articulação congruente e móvel, porque essa é a articulação da mão que menos perdoa a imobilização — a rigidez se instala em semanas e não se recupera.",
-  "correta": "A. A técnica utiliza um fragmento osteoarticular do HAMATO (a sua porção dorsodistal, na faceta com o quarto e o quinto metacarpos), cuja curvatura reproduz a concavidade da base volar da falange média (artroplastia de hemi-hamato).",
   "incorretas": {
-   "B": "O capitato é o osso central do carpo e a chave mecânica da fileira distal, articulando-se com o escafoide, o semilunar e o terceiro metacarpo. Retirar dele um bloco osteoarticular comprometeria o eixo central do carpo, e a sua geometria não reproduz a base da falange média.",
-   "C": "O escafoide é a ponte entre as duas fileiras do carpo e o osso de vascularização mais precária da mão, com fluxo retrógrado pelos ramos dorsais da artéria radial. Retirar parte dele arriscaria necrose e colapso carpal, é impensável como área doadora.",
-   "D": "O semilunar é peça central do segmento intercalado e já tem, por si só, vascularização vulnerável, como demonstra a doença de Kienböck. Também não oferece a superfície côncava adequada nem tolera ressecção parcial."
+   "B": "O capitato não é a fonte do enxerto osteocondral usado nessa técnica.",
+   "C": "O escafoide não é usado como fonte de enxerto para a interfalângica.",
+   "D": "O semilunar não é usado como fonte de enxerto para a interfalângica."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
+  "conceito": "A **fratura-luxação dorsal da interfalângica proximal** acontece quando a base **volar** da falange média quebra e a falange média **escorrega para dorsal**. Se o fragmento volar é grande ou cominuto (mais de 40 a 50% da superfície), a articulação fica **instável**.\n\n**O problema com a perda óssea**: quando a base volar está cominuta ou afundada, não há fragmento para fixar. O \"lábio\" volar, que funciona como um batente contra a luxação dorsal, foi perdido.\n\n**A técnica do enxerto do hamato** (hemi-hamato): retira-se um fragmento **osteocondral** da **superfície distal do hamato** (a articulação com a base do 4º e do 5º metacarpos). Esse fragmento tem uma curvatura em **arco** muito parecida com a da base volar da falange média, inclusive a crista central.\n\n**Como é feito**: por via volar (em \"espingarda\", abrindo a articulação como um livro), o defeito é preparado, e o enxerto é encaixado e fixado com **parafusos** pequenos, recriando o **batente volar** e a congruência.\n\n**As alternativas**: artroplastia de placa volar (sem osso), fixador dinâmico e bloqueio de extensão nos casos menos graves.\n\n**Na prova**: a técnica com perda óssea usa fragmento osteoarticular do **hamato**.",
+  "correta": "O hamato distal tem uma curvatura parecida com a base volar da falange média, e o enxerto recria o batente volar.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 67"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0439": {
   "incorretas": {
@@ -4033,32 +4033,32 @@
   "conferido": false
  },
  "trauma-0440": {
-  "conceito": "Entre as estruturas vasculares da região do tornozelo, a **artéria tibial anterior** é a mais frequentemente associada à lesão nas fraturas do pilão tibial.\n\nIsso decorre, em parte, da sua posição relativamente superficial e fixa no compartimento anterior da perna, próxima à região onde a cominuição anterior do pilão (o padrão mais comum dessa fratura, discutido em outras questões deste acervo) concentra a energia do trauma.\n\nAlém do risco direto pela própria fratura, essa artéria também fica exposta durante os acessos cirúrgicos anteriores e anterolaterais frequentemente empregados na fixação dessa fratura, tornando sua identificação e proteção uma etapa importante tanto na avaliação inicial quanto no planejamento da via de acesso.\n\nNa avaliação inicial, o pulso **pedioso** (palpado no dorso do pé, entre o primeiro e o segundo metatarsais) é o exame de referência para essa artéria, já que ela se torna a artéria dorsal do pé ao cruzar o retináculo extensor. A ausência desse pulso, especialmente quando associada a outros sinais de isquemia (palidez, dor desproporcional, alteração da sensibilidade), deve levantar suspeita de lesão vascular associada e motivar avaliação vascular complementar antes de qualquer manipulação definitiva do membro.",
-  "correta": "C. A artéria tibial anterior é a lesão arterial mais frequentemente associada à fratura do pilão tibial, dada sua posição relativamente superficial e próxima à região de maior concentração de energia do trauma.",
   "incorretas": {
-   "A": "A artéria fibular corre mais profundamente no compartimento posterior, menos exposta ao mecanismo típico dessa fratura do que a tibial anterior.",
-   "B": "A artéria dorsal do pé é a continuação distal da própria tibial anterior, mas a lesão mais comumente referida nesse contexto ocorre no segmento tibial anterior propriamente dito, mais proximal.",
-   "D": "A artéria tibial posterior corre mais profunda e medialmente, menos exposta do que a tibial anterior ao mecanismo típico dessa fratura."
+   "A": "A artéria fibular corre mais profunda e posterior.",
+   "B": "A dorsal do pé é a continuação da tibial anterior, mais distal.",
+   "D": "A tibial posterior fica atrás do maléolo medial, menos exposta."
   },
-  "geradoEm": "2026-09-14",
-  "conferido": false,
+  "conceito": "A **fratura do pilão tibial** é uma fratura de **alta energia** do tornozelo, com grande lesão de partes moles. As artérias da perna distal ficam próximas do osso.\n\n**A lesão arterial mais frequente**: a da **artéria tibial anterior**. Ela desce colada à face **anterior** da tíbia distal, sobre a membrana interóssea e depois sob o retináculo dos extensores, onde vira a artéria dorsal do pé. Os fragmentos anteriores do pilão, deslocados, a comprimem ou rompem.\n\n**A avaliação**: palpar o **pulso pedioso** (dorsal do pé) e o **tibial posterior**; medir o **índice tornozelo-braquial**; angiotomografia na dúvida.\n\n**As consequências**: a lesão arterial piora a cicatrização das feridas e aumenta a infecção. Na cirurgia, as vias **anteriores** (anteromedial e anterolateral) passam perto dessa artéria.\n\n**O manejo do pilão de alta energia**: **fixador externo** em ponte primeiro, fixação da fíbula em alguns casos e cirurgia definitiva quando a pele permitir (sinal do enrugamento).\n\n**Na prova**: a lesão arterial mais associada ao pilão tibial é a da **tibial anterior**.",
+  "correta": "A artéria tibial anterior corre colada à face anterior da tíbia distal e é atingida pelos fragmentos do pilão.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 62"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0441": {
-  "conceito": "A via **suprapatelar** de acesso para haste intramedular da tíbia foi desenvolvida como alternativa à via infrapatelar clássica, buscando resolver um problema técnico específico: a via infrapatelar exige flexão profunda do joelho (geralmente maior que 90 graus) para alinhar o instrumental com o canal medular, e essa posição extrema de flexão dificulta a obtenção de imagens radioscópicas verdadeiramente ortogonais (AP e perfil) do platô tibial, além de tensionar estruturas do compartimento anterior sobre fraturas proximais, favorecendo o desvio em procurvato durante a manipulação.\n\nA via **suprapatelar**, com o joelho em semiextensão (10 a 20 graus de flexão), elimina essa limitação: nessa posição, o eixo do fêmur, da patela e da tíbia fica mais bem alinhado, e a radioscopia AP consegue mostrar o platô tibial e a espinha lateral (o ponto de entrada ideal) com muito mais nitidez e reprodutibilidade do que na flexão profunda exigida pela via infrapatelar, na qual a sobreposição de estruturas e o ângulo da imagem tornam mais difícil confirmar a posição exata do ponto de entrada.\n\nO acesso passa por um instrumental específico (uma cânula que atravessa o espaço patelofemoral e protege a cartilagem durante a passagem da haste e dos parafusos de bloqueio), e essa mesma vizinhança com a articulação patelofemoral é o que sustenta a preocupação teórica com dano condral iatrogênico, ainda que séries maiores não tenham demonstrado aumento relevante de artrose patelofemoral com o uso correto da técnica.",
-  "correta": "D. A posição de semiextensão do joelho na via suprapatelar permite uma radioscopia anteroposterior muito mais nítida do platô tibial, facilitando a determinação precisa do ponto de entrada da haste, a via infrapatelar, por exigir flexão profunda, dificulta essa visualização.",
   "incorretas": {
-   "A": "A comparação da taxa de dor pós-operatória entre as duas vias tem resultados variáveis na literatura, sem a consistência de evidência que caracteriza a vantagem na visualização radioscópica do ponto de entrada.",
-   "B": "É a via infrapatelar, não a suprapatelar, que exige flexão profunda do joelho, a suprapatelar é caracterizada justamente pela semiextensão, ponto que a alternativa C também inverte.",
-   "C": "A via suprapatelar EXIGE MENOS flexão do joelho do que a infrapatelar, não mais, essa é justamente uma das vantagens técnicas do acesso suprapatelar."
+   "A": "A dor no joelho é semelhante entre as técnicas.",
+   "B": "A vantagem de redução do suprapatelar é nas fraturas proximais e distais, não no terço médio.",
+   "C": "O suprapatelar usa o joelho em semiextensão, com menos flexão."
   },
-  "geradoEm": "2026-09-14",
-  "conferido": false,
+  "conceito": "A **haste intramedular da tíbia** pode ser introduzida por dois caminhos:\n\n**infrapatelar** (tradicional): pelo ligamento patelar ou ao lado dele, com o joelho em **flexão alta** (cerca de 90° ou mais);\n\n**suprapatelar**: por cima da patela, através da articulação patelofemoral, com o joelho em **semiextensão** (cerca de 10 a 30°) e um tubo protetor.\n\n**As vantagens do suprapatelar**:\n\n**não exige flexão alta do joelho**: com o joelho quase estendido, o fragmento proximal não é puxado em flexão pelo ligamento patelar, o que **facilita a redução** das fraturas do **terço proximal** e distal;\n\n**facilita a radioscopia**: com a perna reta sobre a mesa, o **ponto de entrada** é mais fácil de achar no **AP** e no perfil, sem mover a perna;\n\no assistente segura a perna com menos esforço.\n\n**O que não mudou de forma clara**: a **dor anterior do joelho** é semelhante entre as técnicas nos estudos. Nas fraturas do **terço médio**, a redução é boa nas duas.\n\n**A preocupação**: lesão da cartilagem patelofemoral e detritos na articulação, minimizados pelo tubo protetor.\n\n**Na prova**: o acesso suprapatelar se diferencia pela **maior facilidade em determinar o ponto de entrada na radioscopia AP**.",
+  "correta": "Com a perna estendida sobre a mesa, o ponto de entrada fica mais fácil de achar e controlar na radioscopia.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 62"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0442": {
   "conceito": "A classificação de **Neer** conta como \"partes\" os quatro segmentos anatômicos do úmero proximal (cabeça/segmento articular, tubérculo maior, tubérculo menor e diáfise), considerando parte apenas o fragmento desviado mais de 1 cm ou angulado mais de 45 graus.\n\nA distribuição real dessas fraturas é muito desigual, e vale guardar a ordem. A imensa maioria (80% a 85%) tem desvio mínimo e sequer se classifica como duas partes.\n\nEntre as que se desviam, a fratura em **duas partes do colo cirúrgico** é a mais frequente: o traço passa pela transição metafisodiafisária, abaixo dos tubérculos, e a cabeça, ainda solidária a todo o manguito, separa-se da diáfise, que é tracionada medialmente pelo peitoral maior.\n\nEm seguida vem a fratura em duas partes do **tubérculo maior**, que ganha relevância clínica desproporcional ao seu tamanho, com limiar cirúrgico de apenas 5 mm de desvio (3 mm em atletas de arremesso), porque poucos milímetros de deslocamento superior já bloqueiam a elevação.\n\nMuito mais raras são as fraturas em duas partes do **tubérculo menor**, cuja importância é ser marcador de luxação posterior do ombro (após crise convulsiva ou choque elétrico), e as do **colo anatômico**, que são raríssimas e de péssimo prognóstico vascular, por deixarem a cabeça sem qualquer inserção de partes moles, motivo pelo qual são um dos três preditores de isquemia de Hertel, ao lado da dobradiça medial desviada mais de 2 mm e da extensão metafisária menor que 8 mm.\n\nO conhecimento dessa hierarquia orienta a expectativa clínica: diante de uma fratura desviada do úmero proximal, o padrão mais provável é o do colo cirúrgico, com desvio em varo e a diáfise puxada para dentro.",
@@ -6319,18 +6319,18 @@
   "conferido": false
  },
  "trauma-0793": {
-  "conceito": "As forças deformantes na fratura do úmero proximal são inteiramente previsíveis a partir das inserções musculares, e o resultado final é uma tendência consistente ao **varo**.\n\nA explicação tem duas partes. Sobre o fragmento **cefálico** agem os tendões do manguito rotador: o supraespinal, o infraespinal e o redondo menor, inseridos no tubérculo maior, tracionam superior e posteriormente; o subescapular, no tubérculo menor, traciona medialmente. Quando o traço passa pelo colo cirúrgico e os tubérculos permanecem solidários à cabeça, o vetor resultante do manguito abduz e roda a cabeça, deixando-a inclinada. Sobre a **diáfise** age o peitoral maior, que a puxa medialmente e para a frente, com contribuição do grande dorsal e do redondo maior.\n\nA soma dos dois movimentos (cabeça que se inclina e diáfise que se desloca medialmente) fecha o ângulo cervicodiafisário (normalmente entre 130 e 140 graus) e produz o colapso em **varo**, com a cabeça \"caindo\" para dentro. Esse é o padrão da queda ao solo diretamente sobre o ombro, com o braço junto ao corpo, e é o oposto do padrão em **valgo**, que resulta da queda com a mão espalmada e o ombro em flexão, abdução e rotação interna.\n\nA distinção importa muito na prática. O varo é o inimigo declarado da osteossíntese do úmero proximal: ele é o mecanismo do colapso secundário da placa bloqueada e o passo que precede a perfuração condral dos parafusos. Por isso a regra técnica é restaurar o suporte medial, reduzir a dobradiça medial e colocar um parafuso de calcar, oblíquo e inferior, que sustente a cabeça por baixo.\n\nJá o padrão em valgo, apesar do aspecto radiográfico mais dramático, tem melhor prognóstico vascular, porque o periósteo medial costuma permanecer íntegro.",
-  "correta": "A. A queda sobre o ombro produz desvio da cabeça em VARO: o manguito rotador inclina o fragmento cefálico enquanto o peitoral maior traciona a diáfise medialmente, fechando o ângulo cervicodiafisário.",
   "incorretas": {
-   "B": "O valgo é o padrão da fratura IMPACTADA EM VALGO, produzida por outro mecanismo, a queda com a mão espalmada e o ombro em flexão, abdução e rotação interna, com carga axial que afunda a cabeça entre os tubérculos.",
-   "C": "A adução descreve um movimento do braço em relação ao tronco, e não a deformidade angular entre a cabeça e a diáfise. O termo que designa o desvio da fratura, no plano coronal, é varo.",
-   "D": "A abdução, do mesmo modo, descreve o movimento do membro e não a angulação do foco. Além disso, o vetor resultante da fratura por queda sobre o ombro fecha o ângulo cervicodiafisário, e não o abre."
+   "B": "O valgo vem da carga axial com o braço abduzido, na queda sobre a mão.",
+   "C": "Adução não é o termo usado para o desvio da cabeça.",
+   "D": "Abdução não é o termo usado para o desvio da cabeça."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
+  "conceito": "Na **fratura do úmero proximal**, o padrão do desvio depende de **como** o paciente cai:\n\n**queda direta sobre o ombro** (impacto lateral): a força empurra o úmero proximal de fora para dentro; a cabeça **inclina em varo**, para baixo e para dentro, em relação à diáfise;\n\n**queda sobre a mão espalmada** com o braço em **abdução**: a carga sobe pela diáfise e pode impactar a cabeça em **valgo**.\n\n**As forças musculares** completam o desvio: o **peitoral maior** puxa a diáfise para medial e anterior; o **supraespinal** e os rotadores puxam o tubérculo maior para cima e para trás; o **subescapular** puxa o tubérculo menor para medial.\n\n**Por que o varo importa**: a fratura em **varo** tem mais risco de **colapso** e de **falha da fixação**, sobretudo se o **calcar** medial não for restaurado. Na fixação com placa, usar parafusos no calcar e, se preciso, enxerto intramedular.\n\n**Na prova**: a queda ao solo sobre o ombro desvia a cabeça em **varo**.",
+  "correta": "O impacto direto no ombro empurra o úmero proximal de fora para dentro, e a cabeça tomba em varo.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.), Cap. 36"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0794": {
   "conceito": "### O que é a fratura em banana\nTambém chamada fratura em giz (chalk-stick): ==transversa, em osso patológico, por trauma de baixa energia==. A imagem clássica é a do osso **pagético**.\n\n### As três características, uma causa\n- **Transversa:** o osso doente não dissipa energia por planos oblíquos e parte de forma limpa, como giz.\n- **Na convexidade:** face lateral do fêmur arqueado, face anterior da tíbia em sabre, onde a tração se concentra.\n- **Precedida por fissuras de insuficiência:** traços incompletos e transversos na cortical convexa, meses antes. São o sinal de alarme.\n\n### Onde mais aparece\nOsteomalácia, osteopetrose e fraturas atípicas por bisfosfonato.\n\n### Condutas\n- Fissura na convexidade do fêmur pagético: considerar **fixação profilática**, de preferência com **haste intramedular**.\n- O osso pagético é **hipervascular** e sangra muito: preparo clínico e reserva de sangue.\n\n> **Na prova:** fratura em banana = ==transversa, baixa energia, osso patológico== (Paget).",
@@ -6361,18 +6361,18 @@
   "conferido": false
  },
  "trauma-0796": {
-  "conceito": "Assim como em outra questão deste acervo sobre a mesma técnica, a reconstrução anatômica dos ligamentos coracoclaviculares descrita por **Mazzocca** reproduz a posição das inserções nativas do conoide e do trapezoide na face inferior da clavícula, medidas a partir da superfície articular lateral da clavícula.\n\nO ligamento **conoide**, por se inserir mais **medialmente** na clavícula (mais distante da extremidade articular lateral do que o trapezoide), tem seu túnel posicionado a uma distância maior desse reparo: aproximadamente **45 milímetros**.\n\nJá o **trapezoide**, com inserção mais lateral, tem seu túnel a cerca de **30 milímetros** da mesma referência, um valor menor, coerente com sua posição anatômica mais próxima da extremidade distal da clavícula.\n\nRespeitar essas duas distâncias específicas (30 mm para o trapezoide, 45 mm para o conoide) é o que permite à reconstrução cirúrgica reproduzir fielmente a geometria nativa dos dois ligamentos coracoclaviculares, um detalhe técnico importante porque um túnel posicionado de forma incorreta altera o vetor de tração do enxerto, comprometendo a capacidade da reconstrução de resistir tanto ao deslocamento vertical quanto ao horizontal residual da clavícula.",
-  "correta": "D. A distância entre a superfície articular lateral da clavícula e o túnel do ligamento conoide, na técnica de Mazzocca, é de aproximadamente 45 milímetros, maior do que a do trapezoide, por sua inserção mais medial na clavícula.",
   "incorretas": {
-   "A": "15 mm é bem menor do que a distância classicamente descrita (45 mm) para o túnel do ligamento conoide.",
-   "B": "25 mm também é menor do que a distância classicamente descrita para o túnel do conoide, que é de aproximadamente 45 mm.",
-   "C": "35 mm ainda é menor do que os 45 mm classicamente descritos para o túnel do ligamento conoide especificamente, esse valor (30-35 mm) se aproxima mais do valor descrito para o trapezoide."
+   "A": "15 mm é a distância entre os dois túneis, não a do conoide até a articulação.",
+   "B": "25 mm fica entre os dois túneis, sem corresponder a nenhuma inserção.",
+   "C": "35 mm fica perto do túnel do trapezoide, não do conoide."
   },
-  "geradoEm": "2026-09-14",
-  "conferido": false,
+  "conceito": "A **técnica de Mazzocca** reconstrói de forma **anatômica** os dois ligamentos **coracoclaviculares** (conoide e trapezoide) na luxação acromioclavicular, usando um enxerto de tendão que passa por baixo do coracoide e por **dois túneis** na clavícula.\n\n**A posição dos túneis**, medida a partir da superfície articular lateral da clavícula:\n\n**túnel do conoide**: cerca de **45 mm** medial, mais **posterior**, onde o conoide se insere no tubérculo conoide;\n\n**túnel do trapezoide**: cerca de **15 mm lateral ao do conoide** (por volta de 30 mm da articulação), mais **anterior**.\n\n**Por que essas distâncias**: elas reproduzem os pontos de inserção reais. O conoide, mais medial e posterior, controla o desvio **superior** e a rotação; o trapezoide, mais lateral e anterior, controla a **compressão** e o desvio horizontal.\n\n**Os cuidados**: túneis de tamanho adequado e com **ponte óssea** suficiente entre eles, para evitar fratura da clavícula; enxerto bem tensionado com a articulação reduzida.\n\n**Na prova**: na técnica de Mazzocca, o túnel do conoide fica a **45 mm** da superfície articular lateral da clavícula.",
+  "correta": "O conoide se insere no tubérculo conoide, cerca de 45 mm medial à articulação acromioclavicular.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 60"
-  ]
+  ],
+  "geradoEm": "2026-10-04",
+  "conferido": false
  },
  "trauma-0797": {
   "incorretas": {
