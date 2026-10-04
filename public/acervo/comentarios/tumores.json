@@ -3814,5 +3814,17 @@
   "provavel": "D",
   "geradoEm": "2026-10-01",
   "conferido": false
+ },
+ "tumores-0359": {
+  "conceito": "**Radiossensibilidade** é o quanto o tumor responde à radioterapia. Os tumores de **pequenas células redondas** (sarcoma de **Ewing**, **linfoma** ósseo, mieloma) são os mais radiossensíveis.\n\n**Osteossarcoma** e **condrossarcoma** são **radiorresistentes**: o tratamento se apoia na cirurgia (com quimioterapia no osteossarcoma; o condrossarcoma responde mal também à quimioterapia).\n\n**Na prova**: radiossensíveis = **Ewing, linfoma e mieloma**; radiorresistentes = **osteossarcoma e condrossarcoma**.",
+  "correta": "Sarcoma de Ewing e linfoma são tumores de pequenas células redondas, os mais sensíveis à radioterapia.",
+  "incorretas": {
+   "A": "O linfoma é radiossensível, mas o osteossarcoma é radiorresistente.",
+   "C": "Os dois são radiorresistentes: o tratamento é cirúrgico.",
+   "D": "O Ewing é radiossensível, mas o condrossarcoma é radiorresistente."
+  },
+  "referencias": [],
+  "geradoEm": "2026-10-04T17:01:01+00:00",
+  "conferido": false
  }
 }
