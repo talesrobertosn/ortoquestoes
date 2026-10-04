@@ -14,6 +14,7 @@ const ESTILOS = {
   cartas: { nome: 'Jogo de cartas', slides: 7, story: 's1-cartas', figurinha: 'Quiz com as 4 cartas' },
   plantao: { nome: 'Plantão das 3h14', slides: 5, story: 's2-plantao', figurinha: 'Enquete Sim/Não' },
   'ache-o-erro': { nome: 'Ache os 3 erros', slides: 3, story: 's3-caderno', figurinha: 'Enquete Certa/Errada' },
+  linhas: { nome: 'Linhas do metrô', slides: 5, story: 's1-linha e s2-estacoes', figurinha: 'só a de link (sem enquete)', proprio: true },
 }
 const arquivoHistorico = join(pasta, 'historico.json')
 const historico = existsSync(arquivoHistorico) ? JSON.parse(readFileSync(arquivoHistorico, 'utf8')) : []
@@ -67,7 +68,7 @@ node marketing/instagram/gerar.mjs ${caminhoPost}
 
 ## Story semeador
 
-Seção \`${ficha.story}\` de \`estilos/stories/modelo.html\`, figurinha: ${ficha.figurinha}.
+${ficha.proprio ? `Stories no próprio post.html (${ficha.story}), figurinha: ${ficha.figurinha}.` : `Seção \`${ficha.story}\` de \`estilos/stories/modelo.html\`, figurinha: ${ficha.figurinha}.`}
 
 ## Conferência antes de publicar
 

@@ -1,6 +1,6 @@
 # Estilos oficiais de post
 
-Os três formatos do trio de 4/10/2026 viraram estilos fixos da marca. Para variar a grade,
+Os formatos de 4/10/2026 (o trio de estudo e o mapa de metrô das novidades) viraram estilos fixos da marca. Para variar a grade,
 sorteie um estilo a cada post novo (aleatório, sem repetir o último) e acompanhe com o story semeador
 do mesmo estilo.
 
@@ -77,6 +77,25 @@ pela dúvida que o R1 tem.
 - **Legenda:** "Seu colega fez um resumo de X. Sete linhas, três erros." → comente os números
   das linhas → "são os detalhes que a banca troca" → marcar o colega → site e hashtags.
 - **Story semeador:** folha de caderno com uma linha e figurinha de **Enquete** (Certa/Errada).
+
+## 4. Linhas do metrô (`linhas/`)
+
+**Ideia:** cada categoria de prova é uma linha de metrô com cor própria, e cada instituição é uma
+estação. Feito para novidades do site (nova categoria, nova banca, novo recurso).
+
+- **Formato:** carrossel de feed, 1080×1350, 5 slides, papel creme quadriculado, Jakarta e Inter.
+  Cores fixas das linhas: TEOT e TARO verde `#14655E`, cirurgia da mão mostarda `#C9952F`,
+  R4 ENARE vermelho `#C8513C`, R4 Coluna azul `#2E64A8`.
+- **Estrutura:** capa com as linhas empilhadas em letra grande (precisa ser lida na grade do
+  perfil, sem abrir: é o post para fixar) → uma linha por slide com as estações (instituições)
+  → como embarcar (tela ilustrativa do site) → chamada com os 4 trilhos no rodapé.
+- **Regras:** sem números de questões; instituições como estações, com "e mais" em estação
+  tracejada; a linha principal (TEOT e TARO) sempre aparece.
+- **Bom para:** anunciar categorias, bancas ou recursos novos; post fixado do perfil.
+- **Legenda:** "Novas linhas no Orto Questões." → o que entrou → onde marcar no site → marcar
+  quem está indo para aquela prova → site e hashtags.
+- **Stories:** `s1-linha` é a capa com as linhas grandes, **sem enquete**; `s2-estacoes` lista as
+  estações e leva só a figurinha de **link**. Ficam no próprio `modelo.html`.
 
 ## Stories semeadores (`stories/`)
 

@@ -30,7 +30,11 @@ ortoquestoes.com.br. Link na bio.
 
 ## Stories
 
-- `s1-linha`: figurinha de Enquete no retângulo tracejado: "Mão" / "R4" (ou de Quiz com 3 opções:
-  Cirurgia da mão, R4 ENARE, R4 Coluna).
+- `s1-linha`: capa do story com as linhas em destaque. Sem figurinha (nada de enquete por enquanto).
 - `s2-estacoes`: figurinha de link para ortoquestoes.com.br no retângulo tracejado. Postar
   depois do feed e compartilhar o post no story com "novas linhas".
+
+## Fixar
+
+Post para fixar no perfil: a capa traz as linhas em letra grande para serem lidas na grade,
+sem abrir a imagem.
