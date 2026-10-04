@@ -176,6 +176,17 @@ revisar. Cada uma em `questoes/NN-tema/post.html`, com legenda e instruções em
 
 - **01 Hawkins III** (pronto): `trauma-0764`, TEOT 2025, fratura do colo do tálus.
 
+## Estilos oficiais (`estilos/`)
+
+Jogo de cartas, Plantão das 3h14 e Ache os 3 erros são estilos fixos da marca, com modelo,
+ficha (estrutura, regras, ideias de tema, fórmula da legenda) e story semeador em
+`estilos/ESTILOS.md`. Para o próximo post, sorteie o estilo (aleatório, sem repetir o último)
+e crie a pasta já com o modelo:
+
+```
+node marketing/instagram/estilos/sortear.mjs criar <slug>
+```
+
 ## Trio de 4/10 (`posts/2026-10-04-*`)
 
 Três posts de feed, cada um com um formato novo, e três stories que os semeiam. Legenda e

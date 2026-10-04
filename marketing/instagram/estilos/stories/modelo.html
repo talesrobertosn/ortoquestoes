@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Stories semeados Orto Questões</title>
+<!-- 3 stories (1080x1920), cada um num visual, que semeiam os posts do dia: deixam a pergunta
+     com espaço para uma figurinha interativa e mandam a resposta para o feed.
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-04-stories/stories.html
+     Áreas seguras: nada importante nos 210 px de cima nem nos 300 px de baixo. -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Pixel; src: url(../../fontes/pixelify-sans-latin-700-normal.woff2) format('woff2'); font-weight: 700; }
+@font-face { font-family: Caveat; src: url(../../fontes/caveat-latin-wght-normal.woff2) format('woff2'); font-weight: 400 700; }
+:root { --ouro: #f4cf7c; --couro: #1b1208; --verde: #14655E; --tinta: #0B3A35; --vermelho: #c8412f; --caneta: #1f4f9e; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1920px; padding: 210px 84px 300px; }
+.topo { display: flex; justify-content: space-between; align-items: center; position: relative; z-index: 2; }
+.marca { display: flex; align-items: center; gap: 16px; font: 36px Jakarta; letter-spacing: -.02em; }
+.marca svg { width: 58px; height: 58px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; opacity: .9; }
+.figurinha { display: grid; place-items: center; text-align: center; border: 5px dashed currentColor; opacity: .55; font: 700 30px Jakarta; letter-spacing: .08em; text-transform: uppercase; }
+section > * { position: relative; z-index: 1; }
+
+/* 1. Arena pixel: escolha sua carta */
+.arena { color: #fff; background: #0a1328; }
+.arena::before { content: ""; position: absolute; inset: 0; z-index: 0; background: url(../../../../public/ranking/arena.png) center bottom / auto 100% no-repeat; image-rendering: pixelated; opacity: .5; }
+.arena::after { content: ""; position: absolute; inset: 0; z-index: 0; background: linear-gradient(180deg, rgba(7,12,30,.97) 0%, rgba(7,12,30,.86) 62%, rgba(7,12,30,.5) 100%); }
+.arena .rot { display: inline-flex; margin-top: 70px; padding: 12px 24px; border: 4px solid var(--ouro); background: rgba(27,18,8,.6); color: var(--ouro); font: 700 32px Pixel; letter-spacing: .06em; text-transform: uppercase; box-shadow: 4px 4px 0 var(--couro); }
+.arena h1 { margin-top: 40px; font: 700 112px/.95 Pixel; text-shadow: 6px 6px 0 var(--couro); }
+.arena h1 em { font-style: normal; color: var(--ouro); }
+.arena .caso { margin-top: 44px; padding: 30px 34px; background: rgba(14,22,44,.92); border: 5px solid var(--ouro); box-shadow: 8px 8px 0 var(--couro); font-size: 38px; line-height: 1.4; }
+.arena .caso b { color: var(--ouro); }
+.arena .verso { display: flex; gap: 22px; justify-content: center; margin-top: 50px; }
+.arena .verso div { width: 180px; height: 250px; border: 6px solid var(--ouro); box-shadow: 8px 8px 0 var(--couro); background: repeating-linear-gradient(45deg, #14655e 0 16px, #0b3a35 16px 32px); display: grid; place-items: center; font: 700 80px Pixel; color: var(--ouro); text-shadow: 5px 5px 0 var(--couro); }
+.arena .verso div:nth-child(odd) { transform: translateY(20px) rotate(-4deg); } .arena .verso div:nth-child(even) { transform: rotate(4deg); }
+.arena .figurinha { margin-top: 60px; height: 300px; color: var(--ouro); font-family: Pixel; font-size: 32px; }
+.arena .pe { margin-top: 36px; text-align: center; font: 700 40px Pixel; color: rgba(255,255,255,.75); }
+.arena .pe b { color: var(--ouro); }
+
+/* 2. Tela bloqueada às 3h14: enquete */
+.noite { color: #fff; background: radial-gradient(circle at 75% 10%, rgba(244,207,124,.18), transparent 35%), radial-gradient(circle at 1px 1px, rgba(255,255,255,.05) 1.4px, transparent 1.5px) 0 0/34px 34px, linear-gradient(170deg, #050d0c, #0B3A35 130%); }
+.noite .data { margin-top: 90px; text-align: center; font: 600 40px Jakarta; color: rgba(255,255,255,.7); }
+.noite .hora { text-align: center; font: 800 300px/1 Jakarta; letter-spacing: -.06em; }
+.noite .hora span { color: var(--ouro); }
+.noite .aviso { margin-top: 60px; display: grid; grid-template-columns: 96px 1fr; gap: 26px; align-items: center; padding: 32px 36px; border-radius: 40px; background: rgba(255,255,255,.13); border: 1px solid rgba(255,255,255,.18); box-shadow: 0 30px 60px rgba(0,0,0,.35); }
+.noite .aviso + .aviso { margin-top: 20px; opacity: .75; }
+.noite .ava { width: 96px; height: 96px; border-radius: 28px; background: #2f6f68; display: grid; place-items: center; font: 800 36px Jakarta; color: var(--ouro); }
+.noite .aviso strong { font: 800 34px Jakarta; } .noite .aviso small { float: right; font: 500 26px Inter; color: rgba(255,255,255,.55); }
+.noite .aviso p { font-size: 35px; line-height: 1.35; margin-top: 6px; color: rgba(255,255,255,.92); }
+.noite h2 { margin-top: 70px; font: 800 72px/1.05 Jakarta; letter-spacing: -.04em; text-align: center; text-wrap: balance; }
+.noite h2 em { font-style: normal; color: var(--ouro); }
+.noite .figurinha { margin: 44px auto 0; width: 720px; height: 220px; border-radius: 30px; color: var(--ouro); }
+.noite .pe { margin-top: 36px; text-align: center; font: 600 34px Jakarta; color: rgba(255,255,255,.7); }
+.noite .pe b { color: var(--ouro); }
+
+/* 3. Caderno: certo ou errado */
+.caderno { color: #16211f; background: radial-gradient(ellipse at 60% 40%, transparent 55%, rgba(120,100,60,.10)), repeating-linear-gradient(180deg, transparent 0 62px, rgba(74,128,196,.28) 62px 64px), #fffdf6; }
+.caderno::after { content: ''; position: absolute; top: 0; bottom: 0; left: 176px; width: 12px; border-left: 3px solid rgba(214,70,70,.55); border-right: 2px solid rgba(214,70,70,.55); z-index: 0; }
+.caderno .espiral { position: absolute; left: 0; top: 0; bottom: 0; width: 120px; z-index: 5; padding: 0; }
+.caderno .espiral i { position: absolute; left: 44px; width: 30px; height: 30px; border-radius: 50%; background: #2f3431; box-shadow: inset 0 3px 5px rgba(0,0,0,.6); }
+.caderno .espiral b { position: absolute; left: -6px; width: 72px; height: 22px; border-radius: 12px; background: linear-gradient(180deg, #f4f5f6, #9da3a8 45%, #e6e8ea 60%, #7d8388); box-shadow: 0 3px 4px rgba(0,0,0,.28); transform: rotate(-14deg); }
+.caderno .dentro { margin-left: 146px; }
+.caderno .topo { margin-left: 146px; }
+.caderno .eti { display: inline-block; margin-top: 90px; padding: 10px 22px; border-radius: 99px; background: var(--tinta); color: #f7d57f; font: 800 24px Jakarta; letter-spacing: .1em; text-transform: uppercase; }
+.caderno h2 { margin-top: 34px; font: 800 104px/1.02 Jakarta; letter-spacing: -.04em; text-wrap: balance; }
+.caderno h2 span { background: linear-gradient(transparent 55%, #f7d57f 55%, #f7d57f 92%, transparent 92%); padding: 0 6px; margin: 0 -6px; }
+.caderno .linha { margin-top: 100px; padding: 40px 42px; background: rgba(255,255,255,.9); border-radius: 26px; box-shadow: 0 16px 34px rgba(20,32,30,.1); transform: rotate(-1.5deg); }
+.caderno .linha small { font: 700 28px Jakarta; color: #5a5d58; letter-spacing: .06em; text-transform: uppercase; }
+.caderno .linha p { margin-top: 12px; font: 700 82px/1.05 Caveat; color: var(--caneta); }
+.caderno .figurinha { margin-top: 100px; height: 280px; border-radius: 30px; color: var(--verde); }
+.caderno .postit { margin: 90px 0 0 auto; width: 560px; padding: 30px 34px; background: #fde68a; box-shadow: 0 20px 34px rgba(120,90,0,.25); transform: rotate(3deg); font: 700 50px/1.05 Caveat; color: #5b3d00; }
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/>
+<circle cx="17" cy="20" r="4.5" fill="#9cc3bd"/><rect x="26" y="16.5" width="24" height="7" rx="3.5" fill="#9cc3bd"/>
+<circle cx="17" cy="32" r="4.5" fill="#f4cf7c"/><rect x="26" y="28.5" width="24" height="7" rx="3.5" fill="#f4cf7c"/>
+<circle cx="17" cy="44" r="4.5" fill="#9cc3bd"/><rect x="26" y="40.5" width="19" height="7" rx="3.5" fill="#9cc3bd"/></symbol>
+</defs></svg>
+
+<!-- 1. Semente do post das cartas: figurinha de Quiz -->
+<section class="arena" id="s1-cartas">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div></div>
+  <p class="rot">Rodada relâmpago</p>
+  <h1>Qual carta <em>você joga?</em></h1>
+  <p class="caso">Menino de <b>15 anos</b>. Lesão <b>lítica na epífise</b> do úmero proximal, com <b>halo esclerótico</b> e fise ainda <b>aberta</b>.</p>
+  <div class="verso"><div>A</div><div>B</div><div>C</div><div>D</div></div>
+  <div class="figurinha">figurinha de quiz aqui<br>osteossarcoma · Ewing · TCG · condroblastoma</div>
+  <p class="pe">As cartas completas estão <b>no feed</b></p>
+</section>
+
+<!-- 2. Semente do post do plantão: figurinha de enquete -->
+<section class="noite" id="s2-plantao">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div></div>
+  <p class="data">sábado, de madrugada</p>
+  <p class="hora">03<span>:</span>14</p>
+  <div class="aviso"><div class="ava">R1</div><div><strong>R1 · Plantão</strong><small>agora</small><p>A dor do paciente da tíbia não passa com nada.</p></div></div>
+  <div class="aviso"><div class="ava">R1</div><div><strong>R1 · Plantão</strong><small>agora</small><p>Mas o pulso está ótimo, então está tranquilo, né?</p></div></div>
+  <h2>Pulso presente <em>descarta</em> síndrome compartimental?</h2>
+  <div class="figurinha">figurinha de enquete aqui<br>sim · não</div>
+  <p class="pe">A conversa inteira está <b>no feed</b></p>
+</section>
+
+<!-- 3. Semente do post dos erros: figurinha de enquete -->
+<section class="caderno" id="s3-caderno">
+  <div class="espiral"></div>
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div></div>
+  <div class="dentro">
+    <span class="eti">Do resumo de um colega</span>
+    <h2>Esta linha está <span>certa?</span></h2>
+    <div class="linha"><small>Fratura do escafoide · linha 7</small><p>DISI: semilunar em flexão (volar).</p></div>
+    <div class="figurinha">figurinha de enquete aqui<br>certa · errada</div>
+    <div class="postit">O resumo tem mais dois erros. Ache no feed.</div>
+  </div>
+</section>
+
+<script>
+document.querySelectorAll('.espiral').forEach(e => {
+  for (let y = 70; y < 1920; y += 86) e.innerHTML += `<i style="top:${y}px"></i><b style="top:${y + 4}px"></b>`
+})
+</script>
+</body></html>
