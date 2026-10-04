@@ -1297,113 +1297,113 @@
   "conferido": false
  },
  "trauma-0114": {
-  "conceito": "### Fraturas do sacro\n| Zona de Denis | Local | Déficit |\n|---|---|---|\n| I | lateral aos forames | 6% (L5) |\n| II | através dos forames | 28% (raízes) |\n| III | medial aos forames (canal) | 57% (esfíncteres) |\n\n### Instabilidade espinopélvica\n- Fraturas em ==H, U, λ, Y==: sacro superior e coluna separados da pelve.\n- Isler: fratura vertical ==medial à faceta L5-S1== (entra no canal) compromete a articulação L5-S1: ==instabilidade lombossacral/espinopélvica==; lateral à faceta não.\n\n### Tratamento\n- Fixação ==lombopélvica== (triangular) ou parafusos iliossacrais em padrões selecionados.\n\n> **Na prova:** Denis zona III = déficit em ==cerca de 57%== (50 a 60%)",
-  "correta": "**50 a 60%.**\n- Traço no canal sacral.\n- Disfunção esfincteriana.",
   "incorretas": {
-   "A": "**10 a 20%.**\n- Próximo da zona I (6%).",
-   "B": "**30 a 40%.**\n- Próximo da zona II (28%).",
-   "D": "**70 a 80%.**\n- Superestimado."
+   "A": "De 10 a 20% se aproxima da zona I, com cerca de 6%.",
+   "B": "De 30 a 40% se aproxima da zona II, com cerca de 28%.",
+   "D": "De 70 a 80% superestima o risco da zona III."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "**Denis** dividiu o **sacro** em três zonas verticais, de lateral para medial, e mostrou que a **lesão neurológica** aumenta quanto mais o traço se aproxima do canal:\n\n**zona I**: a **asa**, lateral aos forames; déficit em cerca de **6%**, em geral da raiz de L5, comprimida contra a asa;\n\n**zona II**: através dos **forames**; déficit em cerca de **28%**, das raízes sacrais que saem por eles;\n\n**zona III**: **medial aos forames**, entrando no **canal sacral**; déficit em cerca de **57%**, com risco de **disfunção** da bexiga, do intestino e sexual.\n\n**A instabilidade espinopélvica**: fraturas em **H, U, lambda ou Y** separam o sacro superior e a coluna da pelve. O traço vertical **medial à faceta L5-S1** (Isler) deixa a articulação lombossacral do lado instável.\n\n**O tratamento**: **fixação lombopélvica** (montagem triangular) ou parafusos iliossacrais em padrões selecionados; descompressão quando há déficit com fragmento no canal.\n\n**Na prova**: na zona III de Denis, a lesão neurológica ocorre em **50 a 60%** dos casos.",
+  "correta": "O traço da zona III entra no canal sacral, e o déficit neurológico ocorre em cerca de 57%.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0115": {
-  "conceito": "### Joelho flutuante\n- Fraturas ipsilaterais do ==fêmur e da tíbia==: alta energia.\n\n### Associações\n| Lesão | Frequência |\n|---|---|\n| ==fratura exposta== (pelo menos uma) | ==cerca de 50 a 70%== |\n| lesão ligamentar do joelho | até 50% |\n| lesão vascular | 5 a 15% |\n| politrauma, TCE, tórax | frequente |\n\n### Fraser\n| Tipo | Padrão |\n|---|---|\n| I | ambas diafisárias |\n| IIa | planalto tibial |\n| IIb | fêmur distal intra-articular |\n| IIc | ambas intra-articulares |\n\n- Tratamento: fixar ambas (haste retrógrada no fêmur + anterógrada na tíbia pela mesma incisão).\n\n> **Na prova:** joelho flutuante = exposta em ==cerca de 60%==",
-  "correta": "**Cerca de 60%.**\n- Alta energia.\n- Exposição frequente.",
   "incorretas": {
-   "A": "**20%.**\n- Subestimado.",
-   "B": "**40%.**\n- Subestimado.",
-   "D": "**80%.**\n- Superestimado."
+   "A": "20% subestima a frequência de exposição.",
+   "B": "40% também subestima a frequência.",
+   "D": "80% superestima a frequência."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **joelho flutuante** é a fratura do **fêmur** e da **tíbia** do mesmo lado: o joelho fica solto entre dois ossos quebrados. É uma lesão de **alta energia**, típica de acidentes de moto e atropelamentos.\n\n**As associações frequentes**:\n\n**fratura exposta**: em cerca de **60%** dos casos;\n\n**lesões ligamentares** do joelho;\n\n**lesão vascular**;\n\n**politrauma**, com lesões de cabeça, tórax e abdome.\n\n**Fraser** classifica: tipo I, as duas fraturas são diafisárias e o joelho está íntegro; tipo II, uma ou as duas entram no joelho (IIA planalto, IIB fêmur distal, IIC as duas).\n\n**O tratamento**: fixar **as duas** fraturas, para permitir a reabilitação do joelho. Uma opção prática é a **haste retrógrada no fêmur** e a **anterógrada na tíbia** pela mesma incisão no joelho.\n\n**Na prova**: no joelho flutuante, a fratura exposta associada ocorre em cerca de **60%**.",
+  "correta": "Por ser uma lesão de alta energia, o joelho flutuante tem fratura exposta em cerca de 60% dos casos.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0116": {
-  "conceito": "### Tscherne (partes moles)\n| Grau fechado | Achado |\n|---|---|\n| C0 | lesão mínima, indireta |\n| C1 | abrasão/contusão superficial |\n| C2 | abrasão profunda, contusão muscular, risco de compartimental |\n| ==C3== | ==esmagamento, desenluvamento, lesão vascular, síndrome compartimental== |\n\n| Grau exposto | Achado |\n|---|---|\n| O1 | ferida pequena de dentro para fora |\n| O2 | ferida com contusão moderada |\n| O3 | lesão grave de partes moles, vascular/nervo |\n| O4 | amputação subtotal/total |\n\n> **Na prova:** síndrome compartimental = Tscherne ==grau 3==",
-  "correta": "**Grau 3.**\n- Lesão grave de partes moles.\n- Inclui a síndrome compartimental.",
   "incorretas": {
-   "A": "**1.**\n- Superficial.",
-   "B": "**2.**\n- Risco, mas sem síndrome instalada.",
-   "D": "**4.**\n- Amputação (expostas)."
+   "A": "O grau 1 é a escoriação ou contusão superficial.",
+   "B": "O grau 2 tem risco iminente, mas sem a síndrome instalada.",
+   "D": "O grau 4 só existe nas expostas e corresponde à amputação."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "**Tscherne** classifica a **lesão de partes moles** das fraturas, porque a pele e o músculo pesam tanto quanto o osso no prognóstico:\n\n**fraturas fechadas**:\n\n**grau 0**: lesão de partes moles mínima, trauma indireto;\n\n**grau 1**: escoriação ou contusão superficial, pelo fragmento de dentro para fora;\n\n**grau 2**: contusão profunda e contaminada, com **risco iminente** de síndrome compartimental;\n\n**grau 3**: contusão extensa, esmagamento, desenluvamento, lesão vascular grave ou **síndrome compartimental instalada**;\n\n**fraturas expostas**: O1 a O4, sendo o O4 a amputação subtotal ou total.\n\n**A pegadinha**: a **síndrome compartimental instalada** já coloca a lesão de partes moles no **grau 3**. O grau 2 tem apenas o **risco** dela.\n\n**Na prova**: a síndrome compartimental corresponde ao **grau 3** de Tscherne.",
+  "correta": "A síndrome compartimental instalada classifica a lesão de partes moles como grau 3.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0117": {
-  "conceito": "### Pipkin (fratura da cabeça femoral com luxação posterior)\n| Tipo | Fratura |\n|---|---|\n| I | ==abaixo da fóvea== (fora da carga) |\n| II | ==acima da fóvea== (inclui o ligamento redondo, área de carga) |\n| III | I ou II + ==colo== do fêmur |\n| ==IV== | I ou II + ==acetábulo== |\n\n### Conduta\n| Tipo | Tratamento |\n|---|---|\n| I | conservador se congruente; excisão de fragmento pequeno |\n| II | fixação (acesso de Smith-Petersen ou luxação cirúrgica de Ganz) |\n| III | jovem: fixação do colo primeiro; idoso: artroplastia |\n| IV | tratar o acetábulo e a cabeça (via conforme a parede) |\n\n- Redução urgente da luxação (< 6 h).\n\n### Fragmento da cabeça\n- Na luxação ==posterior==, a cabeça bate na borda posterior: o fragmento cisalhado é da porção ==anteromedial== da cabeça e fica no acetábulo (preso ao ligamento redondo).\n- Via de ==Smith-Petersen== (anterior) facilita a fixação.\n\n> **Na prova:** fragmento livre da cabeça femoral = ==anteromedial==",
-  "correta": "**Anteromedial.**\n- Cisalhado na borda posterior.\n- Preso ao ligamento redondo.",
   "incorretas": {
-   "A": "**Anterolateral.**\n- Não é o local típico.",
-   "C": "**Posterolateral.**\n- Não é cisalhado.",
-   "D": "**Posteromedial.**\n- Não é o fragmento típico."
+   "A": "A parte anterolateral não é o local típico do cisalhamento.",
+   "C": "A parte posterolateral não é a cisalhada pela borda posterior.",
+   "D": "A parte posteromedial não é o fragmento típico."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **fratura da cabeça do fêmur** (Pipkin), a cabeça quebra durante a **luxação posterior** do quadril: ao sair, ela bate na **borda posterior** do acetábulo, e a borda **cisalha** um pedaço da cabeça.\n\n**Qual parte quebra**: a porção **anteromedial** da cabeça. Ela fica **dentro do acetábulo**, muitas vezes presa ao **ligamento redondo**, enquanto o resto da cabeça sai para trás.\n\n**A consequência para a cirurgia**: como o fragmento é **anterior**, a via **anterior** de **Smith-Petersen** dá acesso direto para fixá-lo. A luxação cirúrgica do quadril (Ganz) é a alternativa.\n\n**A conduta inicial**: reduzir a luxação com **urgência** (em menos de 6 horas) e fazer **TC** depois da redução, para ver o fragmento e a congruência.\n\n**Na prova**: o fragmento livre da cabeça femoral fica mais comumente na posição **anteromedial**.",
+  "correta": "A borda posterior do acetábulo cisalha a parte anteromedial da cabeça, que fica no acetábulo, presa ao ligamento redondo.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0118": {
-  "conceito": "### Sinal de Hawkins\n- ==Radiotransparência linear subcondral== no domo do tálus, visível em ==6 a 8 semanas==.\n- Reflete ==reabsorção por hiperemia==: há irrigação = osso vivo.\n- Ausência não confirma necrose (sensibilidade alta, especificidade menor); RM define.\n- Parcial (só medial ou lateral): revascularização incompleta.\n\n### Necrose no colo do tálus (Hawkins)\n| Tipo | Necrose |\n|---|---|\n| I | 0 a 13% |\n| II | 20 a 50% |\n| III | 70 a 100% |\n| IV | ~100% |\n\n- Irrigação: ==artéria do canal do tarso== (tibial posterior) principal para o corpo.\n\n### Necrose no RX\n- A partir de ==6 a 8 semanas==: ausência do sinal de Hawkins e ==esclerose relativa== do corpo (osso morto não reabsorve).\n- Colapso tardio (meses).\n- RM confirma precocemente.\n\n> **Na prova:** diagnóstico radiográfico da necrose = ==6 a 8 semanas==",
-  "correta": "**6 a 8 semanas.**\n- Densidade relativa do corpo.\n- Sem sinal de Hawkins.",
   "incorretas": {
-   "A": "**3 a 4 semanas.**\n- Cedo demais.",
-   "C": "**10 a 12 semanas.**\n- Tardio para o primeiro sinal.",
-   "D": "**14 a 16 semanas.**\n- Tardio."
+   "A": "De 3 a 4 semanas é cedo demais para a diferença aparecer.",
+   "C": "De 10 a 12 semanas é tardio para o primeiro sinal.",
+   "D": "De 14 a 16 semanas é muito tardio."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Depois da **fratura-luxação do tálus**, o corpo pode perder a irrigação, que vem sobretudo da **artéria do canal do tarso**. A radiografia mostra se o osso está vivo ou morto a partir da **6ª a 8ª semana**.\n\n**Por que nessa época**: com a imobilização e sem carga, o osso **vivo** do pé fica **mais claro** (osteopenia por desuso e hiperemia). O osso **morto** não participa dessa reabsorção.\n\n**O que se vê**:\n\n**osso vivo**: o **sinal de Hawkins**, uma faixa clara sob a cúpula do tálus;\n\n**osso necrótico**: **ausência** do sinal e **esclerose relativa** do corpo, que fica mais denso que os ossos em volta.\n\n**O colapso** do domo vem **tardiamente**, meses depois. A **RM** confirma a necrose bem antes da radiografia.\n\n**O risco por Hawkins**: aumenta do tipo I (sem desvio) ao tipo IV (luxação talonavicular também).\n\n**Na prova**: o diagnóstico radiográfico da necrose do tálus é feito a partir de **6 a 8 semanas**.",
+  "correta": "Entre a 6ª e a 8ª semana, o osso vivo clareia e o corpo necrótico fica relativamente denso, sem sinal de Hawkins.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0119": {
-  "conceito": "### Desvios nas fraturas das falanges\n| Local | Forças | Desvio |\n|---|---|---|\n| falange proximal | interósseos (flexionam o fragmento proximal) + banda central (estende o distal) | ==ápice volar== |\n| ==falange média, base== (proximal à inserção do FSD) | ==banda central== estende o fragmento proximal; ==FSD== flete o distal | ==ápice dorsal== |\n| falange média, colo (distal ao FSD) | FSD flete o proximal | ápice volar |\n\n### Inserções\n- ==Banda central==: base dorsal da falange média.\n- ==FSD==: bandas ao longo da face volar da falange média (terço médio).\n- FPD: base da falange distal.\n\n> **Na prova:** colo da falange média = ápice ==volar== pelo ==FSD==",
-  "correta": "**FSD.**\n- Flete o fragmento proximal.\n- Ápice volar no colo.",
   "incorretas": {
-   "A": "**Lumbrical.**\n- Age na falange proximal via extensor.",
-   "B": "**Interósseo dorsal.**\n- Falange proximal.",
-   "C": "**Interósseo palmar.**\n- Falange proximal."
+   "A": "O lumbrical age na falange proximal, pelo aparelho extensor.",
+   "B": "O interósseo dorsal age na falange proximal.",
+   "C": "O interósseo palmar também age na falange proximal."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na fratura da **falange média**, o sentido da angulação depende de onde o traço fica em relação ao **flexor superficial dos dedos**, que se insere ao longo da **face volar** da falange média.\n\n**As inserções**:\n\n**banda central do extensor**: base dorsal da falange média;\n\n**flexor superficial**: face volar da falange média, numa área extensa;\n\n**flexor profundo**: base da falange distal.\n\n**Fratura do colo** (distal à inserção do superficial): o **flexor superficial** **flete o fragmento proximal**, e o distal fica estendido. Resultado: ápice **volar**.\n\n**Fratura da base** (proximal à inserção do superficial): a banda central estende o proximal, e o superficial flete o distal. Resultado: ápice **dorsal**.\n\n**Os intrínsecos** (lumbricais e interósseos) agem sobretudo na **falange proximal**: na fratura dela, fletem o fragmento proximal e geram ápice volar.\n\n**Na prova**: no colo da falange média, o ápice volar vem do **flexor superficial dos dedos**.",
+  "correta": "No colo, o flexor superficial flete o fragmento proximal, e a fratura angula com ápice volar.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0120": {
-  "conceito": "### Fêmur distal e lesões ligamentares\n- Associação ==incomum== (cerca de 10 a 20% em séries com RM), diferente do planalto tibial.\n- Ligamento mais acometido: ==LCA== (especialmente em fraturas intercondilares/Hoffa e alta energia).\n- Exame sob anestesia após a fixação; tratar em segundo tempo.\n\n### Classificação AO 33\n| Tipo | Padrão |\n|---|---|\n| A | extra-articular |\n| B | unicondilar (B3 = ==Hoffa==, coronal) |\n| C | bicondilar |\n\n### Tratamento\n- Placa bloqueada lateral ou haste retrógrada; dupla placa em cominução medial/idosos.\n- Hoffa: parafusos anteroposteriores.\n\n### Complicações\n| Complicação | Frequência |\n|---|---|\n| ==perda de movimento do joelho== | ==a mais comum== (aderências do quadríceps, artrofibrose) |\n| consolidação viciosa (valgo, rotação) | 5 a 20% |\n| pseudartrose | 5 a 10% (placas bloqueadas rígidas) |\n| artrose pós-traumática | intra-articulares |\n\n> **Na prova:** complicação mais comum = ==perda de movimento do joelho==",
-  "correta": "**Perda de movimento.**\n- Aderências do quadríceps.\n- Mobilização precoce previne.",
   "incorretas": {
-   "A": "**Pseudartrose.**\n- Menos frequente.",
-   "C": "**Encurtamento > 5 mm.**\n- Pouco relevante.",
-   "D": "**Angular > 5°.**\n- Menos comum que a rigidez."
+   "A": "A pseudartrose é menos frequente que a rigidez.",
+   "C": "Um encurtamento de poucos milímetros tem pouca repercussão.",
+   "D": "A deformidade angular é menos comum que a rigidez."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **fratura do fêmur distal** fica junto ao **quadríceps** e ao **recesso suprapatelar**. O hematoma, a cirurgia e a imobilização favorecem **aderências** entre o músculo e o osso.\n\n**A complicação mais comum**: a **perda de movimento do joelho**, sobretudo da flexão. As aderências do quadríceps e a lesão articular nas fraturas intra-articulares limitam a mobilidade.\n\n**A prevenção**: fixação **estável** que permita **mobilização precoce** do joelho.\n\n**As outras complicações**: a **pseudartrose** é menos frequente (mais comum com placa lateral rígida e cominução medial); a **consolidação viciosa** angular ou com encurtamento acontece, mas pequenas diferenças (encurtamento ou angulação de poucos milímetros e graus) têm pouca repercussão; a **infecção** é rara.\n\n**O tratamento**: **placa bloqueada lateral** ou **haste retrógrada**; dupla placa na cominução medial ou no idoso; parafusos de anterior para posterior na fratura de **Hoffa**.\n\n**Na prova**: a complicação mais comum da fratura do fêmur distal é a **perda de movimento do joelho**.",
+  "correta": "As aderências do quadríceps e a lesão articular levam à rigidez do joelho, a complicação mais comum.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0121": {
-  "conceito": "### Fratura de Bennett\n- Fratura-luxação intra-articular da base do 1º metacarpo.\n- Fragmento ==volar-ulnar== pequeno fica preso ao trapézio pelo ==ligamento oblíquo anterior== (beak ligament).\n\n### Forças deformantes\n| Músculo | Efeito na diáfise |\n|---|---|\n| ==abdutor longo do polegar== | desvio ==dorsal-radial== e encurtamento |\n| adutor do polegar | adução e ==supinação== da cabeça |\n| extensor longo do polegar | encurtamento |\n\n### Classificação das fraturas da base\n| Tipo | Nome |\n|---|---|\n| intra-articular 2 partes | Bennett |\n| intra-articular cominutiva (Y/T) | ==Rolando== |\n| extra-articular | transversa/oblíqua |\n\n### Tratamento\n- Redução: tração, pronação e abdução com pressão na base.\n- Fixação: fios percutâneos (1º MC ao trapézio ou ao 2º MC) ou parafuso se fragmento grande.\n\n> **Na prova:** supinação do 1º MC no Bennett = ==adutor do polegar==",
-  "correta": "**Adutor do polegar.**\n- Supina e aduz a cabeça.\n- Abdutor longo desvia a base.",
   "incorretas": {
-   "B": "**Oponente.**\n- Prona.",
-   "C": "**Abdutor longo.**\n- Desvio dorsal-radial e encurtamento, não supinação.",
-   "D": "**Extensor curto.**\n- Age na falange proximal."
+   "B": "O oponente prona o metacarpo, o contrário do desvio.",
+   "C": "O abdutor longo desvia a base para dorsal-radial e encurta, mas não supina.",
+   "D": "O extensor curto se insere na falange proximal."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **fratura de Bennett**, a base do 1º metacarpo quebra, e um pequeno fragmento **volar-ulnar** fica preso ao trapézio pelo **ligamento oblíquo anterior**. O resto do metacarpo é puxado por três músculos:\n\n**abdutor longo do polegar**: puxa a base para **dorsal e radial** e **encurta** o metacarpo;\n\n**adutor do polegar**: **aduz** a cabeça e **supina** o metacarpo;\n\n**extensor longo do polegar**: aumenta o encurtamento.\n\n**A redução**: **tração**, **pronação** e **abdução** do polegar, com pressão na base, desfazendo cada força. Fixação com **fios percutâneos** ou **parafuso**, se o fragmento for grande.\n\n**Os outros músculos**: o **oponente** prona o metacarpo (o contrário do desvio); o **extensor curto** se insere na falange proximal.\n\n**Na prova**: na fratura de Bennett, o 1º metacarpo é supinado pelo **adutor do polegar**.",
+  "correta": "O adutor do polegar aduz a cabeça do metacarpo e o roda em supinação.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0122": {
-  "conceito": "### Pseudartrose do escafoide: técnicas\n| Técnica | Enxerto | Via | Indicação |\n|---|---|---|---|\n| ==Matti-Russe== | ==não vascularizado== (corticoesponjoso encaixado em loja) | ==volar== | pseudartrose sem deformidade (humpback) |\n| Fisk-Fernandez | cunha corticoesponjosa | volar | ==humpback== (corrige flexão e comprimento) |\n| Zaidemberg (1,2 ICSRA) | ==vascularizado== do rádio distal | ==dorsal== | polo proximal, necrose |\n| côndilo femoral medial | vascularizado livre | volar/dorsal | colapso, necrose, falha prévia |\n\n### Pseudartrose\n- Três desvantagens: irrigação ==retrógrada==, superfície cartilaginosa, forças de flexão.\n- Evolui para ==SNAC== se não tratada.\n\n> **Na prova:** Matti-Russe = enxerto ==não vascularizado por via volar==",
-  "correta": "**Não vascularizado, volar.**\n- Enxerto encaixado em loja.\n- Sem deformidade importante.",
   "incorretas": {
-   "A": "**Vascularizado dorsal.**\n- Zaidemberg.",
-   "B": "**Vascularizado volar.**\n- Pronador quadrado ou côndilo femoral.",
-   "C": "**Dorsal.**\n- Matti-Russe é volar."
+   "A": "O enxerto vascularizado por via dorsal é o de Zaidemberg.",
+   "B": "O enxerto vascularizado volar vem do pronador quadrado, não é a técnica de Matti-Russe.",
+   "C": "O enxerto não vascularizado está certo, mas a técnica de Matti-Russe é volar."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **pseudartrose do escafoide** tem três inimigos: a **irrigação retrógrada** (o polo proximal recebe pouco sangue), a superfície quase toda **cartilaginosa** (pouco periósteo para formar calo) e as **forças de flexão** que separam os fragmentos. Sem tratamento, evolui para o **colapso do punho (SNAC)**.\n\n**As técnicas de enxerto**:\n\n**Matti-Russe**: enxerto **não vascularizado** de osso esponjoso (da crista ilíaca ou do rádio distal), encaixado numa **loja** escavada nos dois fragmentos, por **via volar**; indicada quando **não há deformidade** importante;\n\n**Fisk-Fernandez**: enxerto em **cunha** por via volar, para corrigir a deformidade em **corcunda**;\n\n**Zaidemberg**: enxerto **vascularizado** do rádio distal (artéria suprarretinacular 1,2), por **via dorsal**, para o polo proximal com necrose;\n\n**outros vascularizados**: do pronador quadrado (volar) ou do côndilo femoral medial (livre).\n\n**Na prova**: a técnica de Matti-Russe usa enxerto **não vascularizado**, por via **ventral**.",
+  "correta": "Matti-Russe encaixa enxerto esponjoso não vascularizado numa loja escavada no escafoide, pela via volar.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0123": {
-  "conceito": "### Anderson e D'Alonzo (odontoide)\n| Tipo | Local | Frequência | Conduta |\n|---|---|---|---|\n| ==I== | ==ponta== (avulsão do ==ligamento alar==) | ==cerca de 1%== | colar; investigar instabilidade occipitocervical |\n| II | base do dente (cintura) | 60% | halo ou cirurgia (pseudartrose alta) |\n| III | corpo de C2 | 30% | colar/halo; consolida |\n\n### Ligamentos do dente\n| Ligamento | Função |\n|---|---|\n| transverso | contém a translação anterior de C1 |\n| ==alares== | limitam rotação; inserem na ponta do dente |\n| apical | fraco |\n\n### Tipo II: fatores de pseudartrose\n- Idade > 50 anos, desvio > 5 mm, angulação > 10°, cominução (IIA de Hadley).\n\n> **Na prova:** tipo mais comum e com pseudartrose em cerca de 36% = ==tipo II==",
-  "correta": "**Tipo II.**\n- Base do dente, área de watershed.\n- Pseudartrose frequente.",
   "incorretas": {
-   "A": "**Tipo I.**\n- Rara, ponta.",
-   "C": "**Tipo III.**\n- Corpo esponjoso, consolida.",
-   "D": "**Tipo IV.**\n- Não existe na classificação original."
+   "A": "O tipo I é a avulsão da ponta, rara.",
+   "C": "O tipo III atravessa o osso esponjoso do corpo e consolida bem.",
+   "D": "Não existe tipo IV na classificação original de Anderson e D'Alonzo."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "**Anderson e D'Alonzo** classificam as fraturas do **odontoide** em três tipos:\n\n**tipo I**: avulsão da **ponta**, pelo ligamento alar; rara;\n\n**tipo II**: fratura na **base do dente**, na junção com o corpo de C2; a **mais comum** e a de maior risco de **pseudartrose**, em cerca de **36%** dos casos;\n\n**tipo III**: o traço entra no **corpo de C2**, em osso esponjoso; consolida bem.\n\n**Por que o tipo II não consolida**: a base do dente é uma região de **irrigação pobre** (watershed), com pouco osso esponjoso e pequena área de contato. Além disso, as forças sobre ela são grandes.\n\n**Os fatores de risco de pseudartrose no tipo II**: idade acima de **50 anos**, desvio maior que **5 mm**, angulação maior que **10°** e cominução da base (tipo **IIA** de Hadley).\n\n**O tratamento do tipo II**: halo ou colar em casos selecionados; **parafuso anterior** no dente ou **artrodese C1-C2** posterior quando há fatores de risco.\n\n**Na prova**: a fratura do odontoide mais comum, com pseudartrose em 36%, é o **tipo II**.",
+  "correta": "O tipo II, na base do dente, é o mais comum e não consolida em cerca de 36%, pela irrigação pobre.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "trauma-0124": {
