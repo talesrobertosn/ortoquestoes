@@ -2691,79 +2691,79 @@
   "conferido": false
  },
  "pediatria-0208": {
-  "conceito": "### Medida da discrepância\n| Medida | Pontos | O que mostra |\n|---|---|---|\n| ==real== (verdadeira) | ==EIAS ao maléolo medial== | comprimento ósseo |\n| aparente | umbigo (ou xifoide) ao maléolo medial | inclui obliquidade pélvica e contraturas |\n| blocos sob o pé | nivelar as cristas ilíacas | prática, funcional |\n| Galeazzi | joelhos com quadris fletidos | fêmur × tíbia |\n\n### Imagem\n- Escanometria / telerradiografia; TC (scanograma) com menos radiação.\n\n### Previsão na criança\n| Método | Uso |\n|---|---|\n| Moseley (gráfico de linha reta) | discrepância na maturidade |\n| Paley (multiplicador) | simples |\n| Green-Anderson | tabelas de crescimento |\n\n### Conduta pela discrepância prevista\n| Discrepância | Conduta |\n|---|---|\n| < 2 cm | nada ou palmilha |\n| 2 a 5 cm | ==epifisiodese== contralateral |\n| > 5 cm | alongamento |\n| > 15 a 20 cm | amputação/prótese |\n\n> **Na prova:** comprimento real = ==EIAS ao maléolo medial==.",
-  "correta": "**2 cm.**\n- Referência clínica clássica.\n- Compensações mensuráveis podem surgir antes (veja o alerta).",
   "incorretas": {
-   "A": "**Bem tolerado.**\n- 1 cm não descompensa.",
-   "C": "**Já descompensou.**\n- Bem acima.",
-   "D": "**Muito alto.**\n- Faixa de alongamento.",
-   "E": "**Muito alto.**\n- Idem."
+   "A": "Discrepância de 1 cm é bem tolerada e frequente na população sem queixas.",
+   "C": "Com 4 cm a marcha já está descompensada há muito; o limite é menor.",
+   "D": "6 cm já está na faixa de indicação de alongamento, bem acima do limite.",
+   "E": "8 cm está muito acima do limite em que a marcha descompensa."
   },
+  "conceito": "A **discrepância de membros inferiores** é compensada pelo corpo de várias formas, para manter a pelve nivelada e a cabeça estável na marcha:\n\n**no lado curto**: andar na **ponta do pé** (equino), para \"alongar\" o membro;\n\n**no lado longo**: **fletir o joelho** no apoio, fazer **circundução** ou elevar a pelve (vaulting) para o pé passar no balanço;\n\n**na pelve e na coluna**: inclinação pélvica e escoliose funcional, que some quando se nivela a pelve com blocos sob o pé curto.\n\n**Quando a compensação descompensa**: pelo ensino clássico, discrepâncias de até cerca de **2 cm** são bem toleradas; acima disso, a marcha passa a mostrar compensações evidentes, com maior gasto de energia e sobrecarga. Estudos de marcha mais recentes mostram que compensações mensuráveis podem começar um pouco antes.\n\n**Como medir**: o comprimento **real** vai da espinha ilíaca anterossuperior ao maléolo medial; o **aparente** (do umbigo ao maléolo) inclui a obliquidade pélvica. Na prática, blocos sob o pé curto até nivelar as cristas ilíacas. A escanometria confirma.\n\n**A conduta pela discrepância prevista na maturidade**: até 2 cm, nada ou palmilha; de 2 a 5 cm, epifisiodese do lado longo; acima de 5 cm, alongamento.\n\n**Na prova**: a marcha descompensa quando a discrepância passa de **2 cm**.",
+  "correta": "Pela referência clínica clássica, discrepâncias acima de cerca de 2 cm passam a gerar compensações evidentes na marcha.",
   "alerta": "O gabarito de 2 cm corresponde ao ensino ortopédico clássico. Entretanto, análise tridimensional recente encontrou início mensurável de compensações por volta de 14 mm em uma pequena coorte pediátrica. Portanto, 2 cm deve ser entendido como referência clínica convencional, não como limiar biomecânico absoluto.",
   "referencias": [
    "A pilot study of gait compensation for limb-length discrepancy in children and adolescents: threshold values and compensatory strategies in the sagittal plane. PMID: 40397432.",
    "Tachdjian's Pediatric Orthopaedics. 6th edition. Elsevier."
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0209": {
-  "conceito": "### Ciclo da marcha (100%)\n| Fase | % |\n|---|---|\n| ==apoio== | ==cerca de 60%== |\n| - duplo apoio inicial | 10% |\n| - ==apoio simples== | ==40%== |\n| - duplo apoio final | 10% |\n| ==balanço== | ==cerca de 40%== |\n\n### Subfases (Perry)\n| Apoio | Balanço |\n|---|---|\n| contato inicial | balanço inicial |\n| resposta à carga | balanço médio |\n| apoio médio | balanço terminal |\n| apoio terminal | |\n| pré-balanço | |\n\n### Corrida\n- Sem duplo apoio; surge fase de voo; apoio < 50%.\n\n> **Na prova:** apoio simples = ==40%== do ciclo.",
-  "correta": "**Levantar o pé, avançar e preparar o apoio.**\n- Três objetivos do balanço.\n- Cerca de 40% do ciclo.",
   "incorretas": {
-   "A": "**Apoio terminal.**\n- Ainda apoio.",
-   "B": "**Pré-balanço.**\n- Fim do apoio.",
-   "C": "**Apoio.**\n- Contato com o solo.",
-   "E": "**Resposta à carga.**\n- Apoio."
+   "A": "O desprendimento do calcanhar acontece no apoio terminal, ainda com o pé no chão.",
+   "B": "O desprendimento dos dedos encerra o apoio, no pré-balanço; o balanço começa depois.",
+   "C": "O contato do pé com o solo é fase de apoio, não de balanço.",
+   "E": "O aplanamento do pé no solo acontece na resposta à carga, que é fase de apoio."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **ciclo da marcha** tem duas fases: o **apoio** (cerca de 60%), em que o pé está no chão, e o **balanço** (cerca de 40%), em que o pé está no ar.\n\n**O balanço tem três tarefas**:\n\n**levantar o pé** do chão, com flexão do quadril e do joelho (até cerca de 60°) e dorsiflexão do tornozelo, para não arrastar;\n\n**avançar o membro** para a frente;\n\n**preparar o próximo apoio**: no fim do balanço, o joelho estende, os isquiotibiais freiam a perna e o tornozelo fica neutro para o calcanhar tocar o chão.\n\n**As subfases (Perry)**: balanço inicial, balanço médio e balanço terminal.\n\n**O que pertence ao apoio**: tudo o que envolve contato com o chão. O contato inicial, a resposta à carga (o pé se aplana no solo), o apoio médio, o **apoio terminal** (o calcanhar se descola) e o **pré-balanço** (os dedos se descolam). O desprendimento dos dedos é o **último evento do apoio**, a passagem para o balanço.\n\n**Na prova**: o balanço = **levantar o pé, avançar o membro e preparar o próximo apoio**.",
+  "correta": "O balanço tem três tarefas: tirar o pé do chão, levar o membro à frente e prepará-lo para o próximo contato.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0210": {
-  "conceito": "### Coxa vara do desenvolvimento\n- Ângulo cervicodiafisário diminuído por defeito de ossificação no colo medial.\n- ==Triângulo de Fairbank== (fragmento triangular inferior no colo).\n- Marcha de Trendelenburg indolor, encurtamento; bilateral em 30 a 50%.\n\n### Por que limita abdução e rotação medial\n- Trocanter alto e colo varo: o trocanter ==bate no ilíaco== na abdução.\n- Retroversão relativa: ==rotação medial== limitada.\n\n### Ângulo de Hilgenreiner-epifisário (HE)\n| Ângulo HE | Conduta |\n|---|---|\n| < 45° | resolve espontaneamente |\n| 45 a 60° | observar |\n| ==> 60°== | ==osteotomia valgizante== (Pauwels) |\n\n### Diferenciais\n- Coxa vara congênita (DFFP), displasias esqueléticas, raquitismo, sequela de DDQ ou Perthes.\n\n### Epidemiologia\n- Rara (1:25.000).\n- ==Igual entre os sexos==, ==sem predileção racial==.\n- Bilateral em 30 a 50%.\n\n> **Na prova:** coxa vara do desenvolvimento = ==meninos e meninas igualmente, sem predileção racial==",
-  "correta": "**Posteroinferior.**\n- A epífise escorrega para baixo e para trás.\n- Progressão com fise vertical.",
   "incorretas": {
-   "A": "**Anterior errado.**\n- É posterior.",
-   "C": "**Direção oposta.**\n- Superior não.",
-   "D": "**Superior não.**\n- É inferior.",
-   "E": "**Lateral não.**\n- Posteroinferior."
+   "A": "A componente inferior está certa, mas o deslocamento é posterior, não anterior.",
+   "C": "O deslocamento é inferior e posterior, o oposto de anterossuperior.",
+   "D": "A componente posterior está certa, mas a epífise vai para baixo, não para cima.",
+   "E": "O deslocamento não é lateral; a epífise desliza para posteroinferior."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **coxa vara do desenvolvimento**, um defeito de ossificação na parte **inferomedial do colo** deixa o osso fraco ali. A fise fica cada vez mais **vertical**, e a força de cisalhamento do peso aumenta. Com isso, a deformidade **progride**: o ângulo cervicodiafisário diminui, e a **epífise desliza para baixo e para trás** (**posteroinferior**) em relação ao colo.\n\n**A radiografia**: o **triângulo de Fairbank** (fragmento triangular na parte inferior do colo, junto à fise), a fise vertical e o trocanter alto.\n\n**O ângulo de Hilgenreiner-epifisário** decide o tratamento:\n\n**abaixo de 45°**: tende a resolver;\n\n**entre 45 e 60°**: observar a progressão;\n\n**acima de 60°**: **osteotomia valgizante**, que deixa a fise mais horizontal e transforma o cisalhamento em compressão, permitindo a ossificação do defeito.\n\n**O quadro**: marcha de Trendelenburg indolor, encurtamento, limitação da abdução e da rotação medial. Bilateral em 30 a 50%, igual entre os sexos.\n\n**Uma comparação útil**: na epifisiólise do adolescente, a epífise também escorrega para **trás e para baixo**.\n\n**Na prova**: na coxa vara do desenvolvimento, a epífise se desloca para **posteroinferior**.",
+  "correta": "Com a fise vertical e o colo inferomedial fraco, a epífise desliza para baixo e para trás.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0211": {
-  "conceito": "### Craniossinostoses sindrômicas (FGFR)\n| Síndrome | Gene | Crânio/face | Mãos e pés |\n|---|---|---|---|\n| ==Apert== | FGFR2 | ==coronal bilateral==, turribraquicefalia, exoftalmia, hipoplasia maxilar | ==sindactilia complexa== (mão em colher/botão de rosa) |\n| Crouzon | FGFR2 | coronal, exoftalmia, hipoplasia maxilar | ==normais== |\n| Pfeiffer | FGFR1/2 | trevo (grave), exoftalmia | ==polegar e hálux largos e desviados== |\n| Saethre-Chotzen | TWIST1 | ptose, implantação baixa do cabelo | sindactilia cutânea leve |\n| Muenke | FGFR3 | coronal uni ou bilateral | alterações discretas |\n\n### Ortopedia na Apert\n- Sindactilia (Upton I-III): liberar 1ª comissura primeiro.\n- Sinostoses (ombro, cotovelo, coluna cervical C5-C6).\n\n> **Na prova:** coronal fechada + exoftalmia + hipoplasia maxilar = ==Apert== pelo gabarito (veja o alerta sobre a sindactilia).",
-  "correta": "**Apert, conforme o gabarito.**\n- Coronal precoce, exoftalmia, hipoplasia maxilar.\n- A sindactilia, não citada, é a chave que a separa de Crouzon (veja o alerta).",
   "incorretas": {
-   "A": "**Mesmo crânio, mãos normais.**\n- Sem sindactilia não se separa bem de Apert.",
-   "C": "**Polegar e hálux largos.**\n- Não descritos.",
-   "D": "**Ptose e cabelo baixo.**\n- Quadro mais leve.",
-   "E": "**Mais leve.**\n- FGFR3, achados discretos."
+   "A": "Crouzon tem crânio e face semelhantes, mas mãos e pés normais; sem a sindactilia descrita, a diferença fica pouco clara.",
+   "C": "Pfeiffer se marca por polegar e hálux largos e desviados, que a vinheta não descreve.",
+   "D": "Saethre-Chotzen se marca por ptose e implantação baixa do cabelo, com quadro mais leve.",
+   "E": "Muenke, ligada ao FGFR3, costuma ter achados discretos."
   },
+  "conceito": "As **craniossinostoses sindrômicas** são fechamentos precoces das suturas do crânio associados a outras alterações. A maioria vem de mutações nos receptores do fator de crescimento fibroblástico (FGFR). A **sutura coronal** fechada cedo deixa o crânio curto e alto, com fronte proeminente; muitas cursam com **exoftalmia** e **hipoplasia do terço médio da face**. O que as separa é sobretudo **mãos e pés**:\n\n**Apert** (FGFR2): coronal bilateral, exoftalmia, hipoplasia maxilar e **sindactilia complexa** das mãos e dos pés (mão \"em colher\"), achado praticamente obrigatório;\n\n**Crouzon** (FGFR2): crânio e face semelhantes, com **mãos e pés normais**;\n\n**Pfeiffer** (FGFR1 ou 2): **polegar e hálux largos e desviados**; nas formas graves, crânio em trevo;\n\n**Saethre-Chotzen** (TWIST1): ptose palpebral, implantação baixa do cabelo e sindactilia cutânea leve;\n\n**Muenke** (FGFR3): coronal uni ou bilateral, achados discretos.\n\n**A ortopedia na Apert**: sindactilia (liberar a primeira comissura primeiro) e sinostoses do ombro, do cotovelo e da coluna cervical.\n\n**Na prova**: coronal fechada, exoftalmia e hipoplasia maxilar levaram ao gabarito **Apert**; a chave clínica que a separa de Crouzon é a sindactilia.",
+  "correta": "O gabarito considera Apert pela coronal fechada, exoftalmia e hipoplasia maxilar; na prática, a sindactilia é o achado que a confirma.",
   "alerta": "A vinheta não menciona sindactilia das mãos e pés, achado tradicionalmente citado como praticamente obrigatório na síndrome de Apert e um dos principais elementos que a diferenciam da síndrome de Crouzon. Fica a ressalva de que, sem esse achado descrito, a diferenciação clínica entre as duas síndromes fica menos direta do que o gabarito sugere.",
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0236": {
-  "conceito": "### Paralisia cerebral: tipo × sistema\n| Tipo | Sistema | Clínica |\n|---|---|---|\n| espástico | ==piramidal== (córtex motor, trato corticoespinal) | hipertonia velocidade-dependente, hiperreflexia |\n| ==discinético (atetoide, distônico)== | ==extrapiramidal== (núcleos da base) | movimentos involuntários lentos, contorcidos, tônus flutuante |\n| atáxico | cerebelar | dismetria, tremor de intenção, equilíbrio |\n| misto | vários | |\n\n### Associações\n- Atetoide: ==kernicterus== (hiperbilirrubinemia), asfixia a termo.\n- Diplegia espástica: prematuridade, leucomalácia periventricular.\n\n### Cirurgia ortopédica\n- Resultados mais previsíveis no ==espástico==; cautela nos discinéticos.\n\n### Fatores de risco da PC\n| Período | Fatores |\n|---|---|\n| pré-natal | infecções (TORCH), ==incompatibilidade Rh== (kernicterus), malformações, gemelaridade |\n| perinatal | ==prematuridade== (principal), baixo peso, asfixia |\n| pós-natal | meningite, trauma craniano, afogamento |\n\n> **Na prova:** condição predisponente = ==incompatibilidade Rh== (kernicterus).",
-  "correta": "**Incompatibilidade Rh.**\n- Hemólise e hiperbilirrubinemia: kernicterus.\n- PC discinética.",
   "incorretas": {
-   "A": "**Risco indireto.**\n- O gabarito é o Rh.",
-   "C": "**Não é o fator.**\n- Por si só.",
-   "D": "**Não predispõe.**\n- Via de parto não causa."
+   "A": "A gravidez múltipla aumenta o risco só de forma indireta, pela prematuridade e pelo baixo peso; a banca escolheu a causa direta.",
+   "C": "A fertilização assistida, por si só, não é fator de risco direto.",
+   "D": "O parto cesáreo não causa paralisia cerebral."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **paralisia cerebral** é uma lesão **não progressiva** do encéfalo imaturo, que se manifesta por alterações do movimento e da postura. Os fatores de risco se dividem pelo momento da lesão:\n\n**pré-natais**: infecções congênitas (TORCH), malformações cerebrais, **incompatibilidade Rh**, gemelaridade;\n\n**perinatais**: **prematuridade** (o principal fator), baixo peso e asfixia;\n\n**pós-natais**: meningite, trauma craniano, afogamento.\n\n**A incompatibilidade Rh** leva à hemólise no feto e no recém-nascido. A bilirrubina muito alta atravessa a barreira e se deposita nos **núcleos da base**: é o **kernicterus**. O resultado típico é a **paralisia cerebral discinética** (atetoide), muitas vezes com surdez. Com a imunoglobulina anti-D e a fototerapia, ficou rara.\n\n**Os outros itens**: a gravidez múltipla aumenta o risco de forma **indireta**, por prematuridade e baixo peso; a fertilização assistida e o parto cesáreo, por si sós, não causam paralisia cerebral.\n\n**Na prova**: das alternativas, a condição que predispõe à paralisia cerebral é a **incompatibilidade Rh**.",
+  "correta": "A incompatibilidade Rh causa hemólise e hiperbilirrubinemia, e o kernicterus lesa os núcleos da base, gerando paralisia cerebral discinética.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0237": {
-  "conceito": "### Padrões sagitais de marcha na diplegia (Rodda e Graham)\n| Padrão | Tornozelo | Joelho | Quadril |\n|---|---|---|---|\n| I equino verdadeiro | equino | estendido ou recurvado | estendido |\n| II marcha em salto (jump) | equino | fletido | fletido |\n| III equino aparente | neutro | fletido | fletido |\n| ==IV agachada (crouch)== | ==dorsiflexão excessiva== | ==fletido== | ==fletido== |\n\n### Marcha agachada\n- Causas: ==alongamento excessivo do tendão calcâneo== (sóleo fraco), isquiotibiais e psoas curtos, patela alta, deformidades de alavanca.\n- Consequências: dor anterior no joelho, fratura por estresse da patela, alto gasto energético.\n- Tratamento: órtese de reação ao solo, cirurgia multinível (extensão femoral distal, avanço patelar).\n\n### Contratura em flexão do quadril na PC\n- Avaliar pelo ==teste de Thomas==.\n| Flexo | Conduta |\n|---|---|\n| leve | alongamento, órtese |\n| ==até cerca de 30°== | ==liberação/alongamento do psoas== (sobre a borda pélvica, preserva força em deambuladores) |\n| maior | liberação ampliada (reto femoral, sartório, tensor) ± osteotomia de extensão |\n\n> **Na prova:** liberação do psoas para flexo de até ==30°==",
-  "correta": "**30°.**\n- Alongamento do psoas resolve flexos moderados.\n- Acima disso, liberações ampliadas.",
   "incorretas": {
-   "A": "**Leve.**\n- Tratamento conservador.",
-   "C": "**Grande.**\n- Liberação ampliada.",
-   "D": "**Grande.**\n- Idem."
+   "A": "Flexo de 10° é leve e se trata com alongamentos e órteses.",
+   "C": "Flexo de 40° excede o que a liberação do psoas isolada corrige; exige liberação ampliada.",
+   "D": "Flexo de 50° exige liberações amplas e às vezes osteotomia."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **paralisia cerebral**, o **psoas** espástico e encurtado mantém o quadril fletido. Isso piora a marcha (tronco inclinado para a frente, passo curto, marcha agachada) e, no não deambulador, contribui para a luxação.\n\n**Como avaliar**: o **teste de Thomas**, em decúbito dorsal: com o quadril oposto fletido ao máximo para retificar a lordose, mede-se quanto o quadril testado fica fletido.\n\n**A conduta pela gravidade do flexo**:\n\n**leve**: alongamentos e órteses;\n\n**até cerca de 30°**: **alongamento ou liberação do psoas**. No deambulador, faz-se o alongamento **sobre a borda da pelve** (tenotomia intramuscular), preservando o ilíaco e, com ele, a força de flexão necessária para a marcha;\n\n**maior que isso**: liberações ampliadas (reto femoral, sartório, tensor da fáscia lata) e, às vezes, osteotomia de extensão do fêmur.\n\n**Por que não liberar demais**: a flexão do quadril é o motor do balanço. No deambulador, cortar o psoas por completo enfraquece a marcha.\n\n**Na prova**: a liberação do psoas trata flexo do quadril de até **30°**.",
+  "correta": "O alongamento ou liberação do psoas é indicado nos flexos de até cerca de 30°; acima disso, são precisas liberações mais amplas.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0238": {
@@ -2778,25 +2778,25 @@
   "conferido": false
  },
  "pediatria-0239": {
-  "conceito": "### Distrofia muscular de Duchenne\n- ==Ligada ao X==, meninos; ausência de ==distrofina==.\n- Fraqueza ==proximal== (cintura pélvica primeiro), ==pseudo-hipertrofia das panturrilhas==, ==Gowers== positivo.\n- CPK muito elevada; biópsia/genética.\n\n### Perda da marcha (8 a 12 anos)\n| Fraqueza | Compensação |\n|---|---|\n| ==extensores do quadril== | hiperlordose, tronco atrás do quadril |\n| ==dorsiflexores== | marcha na ponta, equino |\n| quadríceps | joelho travado em extensão |\n\n### Ortopedia\n- Contraturas: equino, flexão do quadril, banda iliotibial.\n- ==Escoliose== após perder a marcha: artrodese precoce (antes da piora respiratória, CVF > 30 a 40%).\n- Corticoide prolonga a marcha e reduz escoliose.\n\n### Becker\n- Distrofina reduzida; mais tardia e branda.\n\n> **Na prova:** Duchenne para de andar por fraqueza de ==extensores do quadril e dorsiflexores==.",
-  "correta": "**Panturrilhas aumentadas.**\n- Pseudo-hipertrofia por gordura e fibrose.\n- Sinal clássico.",
   "incorretas": {
-   "A": "**Mais cedo.**\n- Sintomas de 2 a 5 anos.",
-   "B": "**Cintura pélvica primeiro.**\n- Proximal inferior.",
-   "D": "**Dois terços hereditários.**\n- Um terço mutação nova."
+   "A": "Os sintomas começam mais cedo, entre 2 e 5 anos; aos 8 a 12 anos a criança já perde a marcha.",
+   "B": "A fraqueza começa na cintura pélvica, não na musculatura cervical.",
+   "D": "Cerca de dois terços são hereditários; um terço é mutação nova."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **distrofia muscular de Duchenne** é ligada ao **X** e acomete meninos. Falta a **distrofina**, proteína que protege a membrana da fibra muscular. A herança é de mãe portadora em cerca de **dois terços** dos casos; **um terço** é mutação nova.\n\n**O quadro**:\n\n**início**: entre **2 e 5 anos**, com quedas, dificuldade de subir escadas e marcha na ponta dos pés;\n\n**fraqueza proximal**, começando pela **cintura pélvica**;\n\n**sinal de Gowers**: para levantar do chão, a criança \"escala\" as próprias pernas com as mãos;\n\n**pseudo-hipertrofia das panturrilhas**: elas **aumentam de tamanho**, mas o músculo é substituído por **gordura e fibrose**;\n\n**CPK muito elevada**; o diagnóstico se confirma por estudo genético ou biópsia.\n\n**A evolução**: perde a marcha entre 8 e 12 anos, pela fraqueza dos extensores do quadril e dos dorsiflexores. Depois disso, a **escoliose** progride, e a artrodese é indicada cedo, antes da piora respiratória. O **corticoide** prolonga a marcha e reduz a escoliose.\n\n**A forma de Becker**: distrofina reduzida, quadro mais tardio e brando.\n\n**Na prova**: Duchenne = **panturrilhas aumentadas** (pseudo-hipertrofia).",
+  "correta": "Na Duchenne, as panturrilhas aumentam de volume por pseudo-hipertrofia, com o músculo substituído por gordura e fibrose.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0240": {
-  "conceito": "### Obstáculos à redução na DDQ\n| Extra-articulares | Intra-articulares |\n|---|---|\n| iliopsoas (estrangula a cápsula em ampulheta) | ==cápsula constrita== (istmo) |\n| adutores | lábio invertido (limbo) |\n| | pulvinar hipertrofiado |\n| | ligamento redondo alongado e espesso |\n| | ligamento transverso do acetábulo |\n\n- Na DDQ tardia, a ==constrição capsular== (ampulheta pelo psoas) é o obstáculo principal segundo a fonte.\n\n### Conduta\n| Idade | Tratamento |\n|---|---|\n| < 6 meses | Pavlik |\n| 6 a 18 meses | redução fechada + gesso (artrografia) |\n| > 18 meses | ==redução aberta== ± osteotomia femoral encurtadora e pélvica |\n\n> **Na prova:** DDQ com luxação posterior tensiona os ==adutores== (limitação da abdução).",
-  "correta": "**Adutores.**\n- Encurtam com a cabeça luxada.\n- Limitam a abdução (Hart).",
   "incorretas": {
-   "B": "**Encurtados e fracos.**\n- Não tensos.",
-   "C": "**Não é o grupo.**\n- Rotadores mediais.",
-   "D": "**Não é o grupo.**\n- Rotadores laterais."
+   "B": "Os abdutores ficam frouxos e fracos, porque o trocanter sobe; não ficam tensos.",
+   "C": "Os rotadores mediais não são o grupo tenso característico da luxação.",
+   "D": "Os rotadores laterais também não são o grupo característico; o tenso são os adutores."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **displasia do desenvolvimento do quadril**, quando a cabeça femoral **luxa** (em geral para **posterossuperior**), o fêmur sobe e fica mais perto da pelve. Os músculos que cruzam o quadril se adaptam a essa nova posição:\n\n**adutores**: ficam **tensos e encurtados**. Isso causa o sinal mais útil depois dos 3 meses: a **limitação da abdução** com quadril e joelho fletidos (sinal de **Hart**);\n\n**iliopsoas**: também encurta e **estrangula a cápsula** em forma de ampulheta, sendo um obstáculo à redução;\n\n**abdutores**: ao contrário, ficam **encurtados em sua distância, mas frouxos e fracos**, porque o trocanter subiu; daí o Trendelenburg na criança que anda.\n\n**Os obstáculos à redução**: extra-articulares (adutores e iliopsoas) e intra-articulares (cápsula constrita, lábio invertido, pulvinar, ligamento redondo alongado, ligamento transverso).\n\n**Por isso o tratamento**: na redução fechada, faz-se muitas vezes a **tenotomia dos adutores**, para permitir a abdução sem pressão excessiva sobre a cabeça e reduzir o risco de necrose.\n\n**Na prova**: a luxação posterior na displasia tensiona os **adutores**.",
+  "correta": "Com a cabeça luxada, os adutores ficam tensos e encurtados, o que limita a abdução.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0241": {
@@ -2811,25 +2811,25 @@
   "conferido": false
  },
  "pediatria-0242": {
-  "conceito": "### Mielomeningocele: nível × deformidade\n| Nível | Músculos preservados | Deformidade típica | Marcha |\n|---|---|---|---|\n| ==torácico== | nenhum nos MMII | ==flexão e abdução dos quadris (rã), flexão dos joelhos==, equino | cadeira; órtese recíproca |\n| L1-L2 | flexores e adutores do quadril | flexão e adução: ==luxação== | domiciliar |\n| L3-L4 | + quadríceps (L4 tibial anterior) | pé calcâneo-varo | comunitária com órteses |\n| L5 | + isquiotibiais mediais, glúteo médio parcial | pé calcâneo | comunitária |\n| S1 | + gastrocnêmio parcial | cavo | próximo do normal |\n\n### Pontos\n- Nível mais importante para marcha: ==quadríceps (L3-L4)==.\n- Luxação do quadril mais comum em L3-L4.\n\n### Classificação funcional (Broughton)\n| Grupo | Critério |\n|---|---|\n| torácico | sem força útil nos MMII |\n| lombar alto | flexores e adutores do quadril, quadríceps < 3 |\n| lombar baixo | ==quadríceps ≥ 3==, glúteo médio < 3 |\n| ==sacral alto== | ==quadríceps e glúteo médio ≥ 3==, ==gastrocnêmio-sóleo ≤ 2== |\n| sacral baixo | gastrocnêmio-sóleo ≥ 3 |\n\n> **Na prova:** quadríceps e glúteo médio ≥ 3 com tríceps ≤ 2 = ==sacral alto==",
-  "correta": "**Sacral alto.**\n- Quadríceps e glúteo médio funcionantes.\n- Tríceps sural fraco.",
   "incorretas": {
-   "A": "**Quadríceps fraco.**\n- Nível mais alto.",
-   "B": "**Glúteo médio fraco.**\n- Aqui ≥ 3.",
-   "D": "**Tríceps forte.**\n- Aqui ≤ 2."
+   "A": "No lombar alto o quadríceps tem força menor que 3.",
+   "B": "No lombar baixo o glúteo médio tem força menor que 3; aqui ele tem 3 ou mais.",
+   "D": "No sacral baixo o gastrocnêmio-sóleo tem força 3 ou mais; aqui tem 2 ou menos."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **mielomeningocele**, o nível da lesão define quais músculos funcionam e, com isso, a marcha e as deformidades. A **classificação funcional de Broughton** usa a força muscular (grau 3 ou mais vence a gravidade):\n\n**torácico**: sem força útil nos membros inferiores;\n\n**lombar alto**: flexores e adutores do quadril funcionam, mas o **quadríceps tem força menor que 3**;\n\n**lombar baixo**: **quadríceps com força 3 ou mais**, mas **glúteo médio menor que 3**;\n\n**sacral alto**: **quadríceps e glúteo médio com força 3 ou mais**, mas **gastrocnêmio-sóleo com força 2 ou menos**;\n\n**sacral baixo**: gastrocnêmio-sóleo com força 3 ou mais; marcha próxima do normal.\n\n**O que importa para a marcha**: o **quadríceps** (L3-L4) é o músculo-chave para andar na comunidade; o glúteo médio reduz o balanço do tronco; o tríceps sural dá o impulso.\n\n**As deformidades típicas**: no sacral alto, sem o tríceps sural, o pé tende ao **calcâneo** (o tibial anterior puxa sem oposição).\n\n**Na prova**: quadríceps e glúteo médio com força 3 ou mais e tríceps sural com força 2 ou menos = **sacral alto**.",
+  "correta": "Quadríceps e glúteo médio funcionantes com tríceps sural fraco correspondem ao nível sacral alto.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0243": {
-  "conceito": "### Sprengel: movimento do ombro\n- Escápula ==pequena (hipoplásica)==, alta e rodada, presa pelo omovertebral ou fibrose.\n- A ==glenoumeral é normal==; perde-se o ==ritmo escapulotorácico==.\n- Resultado: ==abdução limitada== (a escápula não roda).\n\n### Achados associados\n- Klippel-Feil, escoliose, costelas anômalas, diastematomielia, rim.\n\n### Cirurgia\n| Técnica | Princípio |\n|---|---|\n| Woodward | desinserção da origem medial (trapézio, romboides) e reinserção mais baixa |\n| Green | desinserção na escápula e descida |\n| + | ressecção do omovertebral (extraperiosteal), osteotomia da clavícula |\n\n- Idade 3 a 8 anos; ganho funcional maior na abdução.\n\n> **Na prova:** Sprengel = ==glenoumeral normal com escápula hipoplásica==.",
-  "correta": "**Abdução limitada, escápula hipoplásica.**\n- Escapulotorácica travada.\n- Glenoumeral normal.",
   "incorretas": {
-   "A": "**Abdução limitada.**\n- Não normal.",
-   "B": "**Duplamente errada.**\n- Abdução e tamanho.",
-   "D": "**Escápula pequena.**\n- Não hiperplásica."
+   "A": "A escápula é hipoplásica, mas a abdução não é normal; é o movimento mais limitado.",
+   "B": "Erra os dois pontos: a abdução é limitada e a escápula é pequena.",
+   "D": "A abdução limitada está certa, mas a escápula é pequena, não hiperplásica."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **deformidade de Sprengel**, a escápula não desce durante a vida fetal. Fica **alta**, **pequena (hipoplásica)** e **rodada**, com o ângulo inferior apontando para a coluna. Muitas vezes está presa à coluna cervical por um **osso omovertebral** ou por faixa fibrosa.\n\n**Por que a abdução é limitada**: a **articulação glenoumeral é normal**. O problema é o **ritmo escapulotorácico**: para elevar o braço acima de cerca de 90°, a escápula precisa rodar sobre o tórax. Presa e pequena, ela não roda, e a **abdução** é o movimento mais limitado.\n\n**As associações**: **Klippel-Feil**, escoliose, costelas anômalas, diastematomielia e anomalias renais. Vale examinar a coluna e pedir ultrassom dos rins.\n\n**A classificação de Cavendish** gradua a deformidade pela aparência, de muito leve (ombros quase nivelados) a grave (escápula quase no occipital).\n\n**A cirurgia**, entre 3 e 8 anos, nas formas moderadas e graves: **Woodward** (transfere a origem dos músculos para baixo) ou **Green** (desinsere na escápula), com ressecção do omovertebral e, muitas vezes, osteotomia da clavícula.\n\n**Na prova**: Sprengel = **abdução limitada** e **escápula hipoplásica**.",
+  "correta": "A escápula pequena e presa não roda sobre o tórax, e a abdução fica limitada.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0244": {
