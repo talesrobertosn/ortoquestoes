@@ -52,8 +52,8 @@
       "subtemas": [
         "Exame neurológico e radiculopatias"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2020,
       "dificuldade": null,
       "enunciado": "No exame físico da coluna, o déficit do músculo glúteo médio está associado à lesão da raiz:",
       "imagens": [],
@@ -135,8 +135,8 @@
         "Escoliose idiopática",
         "Outros temas da coluna"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2020,
       "dificuldade": null,
       "enunciado": "Na doença de Charcot-Marie-Tooth, são achados clínicos comuns a escoliose toracolombar:",
       "imagens": [],
@@ -2270,8 +2270,8 @@
       "subtemas": [
         "Espondilólise e espondilolistese"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2022,
       "dificuldade": null,
       "enunciado": "O tratamento da espondilolistese L5/S1 por meio da técnica de GILL é contra-indicado no tipo",
       "imagens": [],
@@ -2300,7 +2300,8 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "duplicataDe": "coluna-0303"
     },
     {
       "id": "coluna-0060",
@@ -3392,7 +3393,12 @@
       "anulada": true,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+        "pagina": 4,
+        "numeroOriginal": 6
+      }
     },
     {
       "id": "coluna-0089",
@@ -3430,7 +3436,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+        "pagina": 8,
+        "numeroOriginal": 22
+      }
     },
     {
       "id": "coluna-0090",
@@ -3468,7 +3479,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+        "pagina": 13,
+        "numeroOriginal": 45
+      }
     },
     {
       "id": "coluna-0091",
@@ -3506,7 +3522,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+        "pagina": 17,
+        "numeroOriginal": 62
+      }
     },
     {
       "id": "coluna-0092",
@@ -3544,7 +3565,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+        "pagina": 19,
+        "numeroOriginal": 72
+      }
     },
     {
       "id": "coluna-0093",
@@ -3582,7 +3608,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+        "pagina": 20,
+        "numeroOriginal": 76
+      }
     },
     {
       "id": "coluna-0094",
@@ -3620,7 +3651,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+        "pagina": 22,
+        "numeroOriginal": 88
+      }
     },
     {
       "id": "coluna-0095",
@@ -5317,8 +5353,8 @@
       "subtemas": [
         "Fraturas da coluna cervical"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "O ligamento indicado na figura a seguir é o:",
       "imagens": [
@@ -5354,7 +5390,11 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2024 - prova de anatomia.pdf",
+        "numeroOriginal": 8
+      }
     },
     {
       "id": "coluna-0165",
@@ -5362,8 +5402,8 @@
       "subtemas": [
         "Vias de acesso à coluna"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "O acesso anterior à coluna cervical pelo lado esquerdo diminui o risco de lesão do nervo indicado na figura a seguir, o qual é denominado",
       "imagens": [
@@ -5399,7 +5439,11 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2024 - prova de anatomia.pdf",
+        "numeroOriginal": 9
+      }
     },
     {
       "id": "coluna-0166",
@@ -5407,8 +5451,8 @@
       "subtemas": [
         "Vias de acesso à coluna"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "A figura a seguir demonstra a via de acesso lombar paraespinhal de WILTSE. As setas 1 e 2 indicam respectivamente os músculos",
       "imagens": [
@@ -5444,7 +5488,11 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2024 - prova de anatomia.pdf",
+        "numeroOriginal": 10
+      }
     },
     {
       "id": "coluna-0167",

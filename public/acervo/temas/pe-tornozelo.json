@@ -10,8 +10,8 @@
         "Biomecânica e marcha",
         "Fraturas do tornozelo e do pilão tibial"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2020,
       "dificuldade": null,
       "enunciado": "Na biomecânica do tornozelo, o efeito do eixo:",
       "imagens": [],
@@ -50,8 +50,8 @@
         "Artrose do tornozelo, artrodese e artroplastia",
         "Fraturas do tornozelo e do pilão tibial"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2020,
       "dificuldade": null,
       "enunciado": "Na artroplastia do tornozelo, as fraturas que ocorrem mais frequentemente no intraoperatório são as:",
       "imagens": [],
@@ -3984,8 +3984,8 @@
       "subtemas": [
         "Pé plano adquirido do adulto"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2015,
       "dificuldade": null,
       "enunciado": "No estágio II da insuficiência do tibial posterior, encontramos no exame físico",
       "imagens": [],
@@ -4015,7 +4015,7 @@
       "figuraPendente": false,
       "revisado": false,
       "subtemasPendentes": false,
-      "duplicataDe": "pe-tornozelo-0296"
+      "duplicataDe": "pe-tornozelo-0044"
     },
     {
       "id": "pe-tornozelo-0106",
@@ -4093,7 +4093,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+        "pagina": 4,
+        "numeroOriginal": 8
+      }
     },
     {
       "id": "pe-tornozelo-0108",
@@ -4131,7 +4136,12 @@
       "anulada": true,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+        "pagina": 9,
+        "numeroOriginal": 26
+      }
     },
     {
       "id": "pe-tornozelo-0109",
@@ -4169,7 +4179,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+        "pagina": 10,
+        "numeroOriginal": 34
+      }
     },
     {
       "id": "pe-tornozelo-0110",
@@ -4207,7 +4222,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+        "pagina": 15,
+        "numeroOriginal": 54
+      }
     },
     {
       "id": "pe-tornozelo-0111",
@@ -4371,8 +4391,8 @@
       "subtemas": [
         "Tendão calcâneo"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2007,
       "dificuldade": null,
       "enunciado": "No reparo ciríurgico do tendão calcâneo, devem ser respeitados os múltiplos vasos do mesotendão situados na superfície tendinosa:",
       "imagens": [],
@@ -4655,8 +4675,8 @@
       "subtemas": [
         "Anatomia do pé e tornozelo"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2023,
       "dificuldade": null,
       "enunciado": "A estrutura assinalada é o tendão do músculo",
       "imagens": [
@@ -4692,7 +4712,8 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "duplicataDe": "pe-tornozelo-0116"
     },
     {
       "id": "pe-tornozelo-0122",
@@ -6290,8 +6311,8 @@
       "subtemas": [
         "Tendões fibulares e outras tendinopatias"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "A estrutura indicada na figura a seguir é o",
       "imagens": [
@@ -6327,7 +6348,11 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2024 - prova de anatomia.pdf",
+        "numeroOriginal": 5
+      }
     },
     {
       "id": "pe-tornozelo-0183",
@@ -6335,8 +6360,8 @@
       "subtemas": [
         "Anatomia do pé e tornozelo"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "Na figura a seguir, a seta indica o nervo",
       "imagens": [
@@ -6372,7 +6397,11 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2024 - prova de anatomia.pdf",
+        "numeroOriginal": 6
+      }
     },
     {
       "id": "pe-tornozelo-0184",
@@ -6381,8 +6410,8 @@
         "Anatomia do pé e tornozelo",
         "Outros temas do pé e tornozelo"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "Na via de acesso medial do tornozelo/retropé demonstrada na figura a seguir, a seta indica o tendão do músculo",
       "imagens": [
@@ -6418,7 +6447,11 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2024 - prova de anatomia.pdf",
+        "numeroOriginal": 7
+      }
     },
     {
       "id": "pe-tornozelo-0185",
@@ -6426,8 +6459,8 @@
       "subtemas": [
         "Anatomia do pé e tornozelo"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "O músculo indicado na figura a seguir é o:",
       "imagens": [
@@ -6463,7 +6496,11 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2024 - prova de anatomia.pdf",
+        "numeroOriginal": 17
+      }
     },
     {
       "id": "pe-tornozelo-0186",
@@ -7097,8 +7134,8 @@
       "subtemas": [
         "Anatomia do pé e tornozelo"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "A estrutura assinalada corresponde ao ramo sensitivo do nervo Elsevier, 2021.",
       "imagens": [
@@ -7136,7 +7173,8 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "duplicataDe": "pe-tornozelo-0317"
     },
     {
       "id": "pe-tornozelo-0208",
@@ -7144,8 +7182,8 @@
       "subtemas": [
         "Anatomia do pé e tornozelo"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "A estrutura assinalada é o músculo Elsevier, 2021.",
       "imagens": [
@@ -7183,7 +7221,8 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "duplicataDe": "pe-tornozelo-0318"
     },
     {
       "id": "pe-tornozelo-0209",
@@ -10048,7 +10087,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+        "pagina": 24,
+        "numeroOriginal": 96
+      }
     },
     {
       "id": "pe-tornozelo-0291",
@@ -10176,7 +10220,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+        "pagina": 24,
+        "numeroOriginal": 99
+      }
     },
     {
       "id": "pe-tornozelo-0294",
@@ -10273,8 +10322,8 @@
       "subtemas": [
         "Pé plano adquirido do adulto"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2015,
       "dificuldade": null,
       "enunciado": "No estágio II da insuficiência do tibial posterior, encontramos no exame físico:",
       "imagens": [],
@@ -10303,7 +10352,8 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "duplicataDe": "pe-tornozelo-0044"
     },
     {
       "id": "pe-tornozelo-0297",

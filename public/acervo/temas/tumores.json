@@ -4638,7 +4638,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+        "pagina": 3,
+        "numeroOriginal": 2
+      }
     },
     {
       "id": "tumores-0122",
@@ -4676,7 +4681,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+        "pagina": 7,
+        "numeroOriginal": 18
+      }
     },
     {
       "id": "tumores-0123",
@@ -4715,7 +4725,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+        "pagina": 10,
+        "numeroOriginal": 35
+      }
     },
     {
       "id": "tumores-0124",
@@ -4753,7 +4768,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+        "pagina": 15,
+        "numeroOriginal": 58
+      }
     },
     {
       "id": "tumores-0125",
@@ -4798,7 +4818,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+        "pagina": 16,
+        "numeroOriginal": 60
+      }
     },
     {
       "id": "tumores-0126",
@@ -4836,7 +4861,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+        "pagina": 20,
+        "numeroOriginal": 78
+      }
     },
     {
       "id": "tumores-0127",
@@ -4874,7 +4904,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+        "pagina": 21,
+        "numeroOriginal": 83
+      }
     },
     {
       "id": "tumores-0128",
@@ -4912,7 +4947,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+        "pagina": 23,
+        "numeroOriginal": 91
+      }
     },
     {
       "id": "tumores-0129",
@@ -4950,7 +4990,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+        "pagina": 23,
+        "numeroOriginal": 93
+      }
     },
     {
       "id": "tumores-0130",
@@ -6341,8 +6386,8 @@
         "Estadiamento, biópsia e margens",
         "Condrossarcoma"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "Paciente masculino, 15 anos, com dor no ombro. Imagem de radiografia a seguir. A principal hipótese diagnóstica é Philadelphia: Lippincott Williams & Wilkins, 2014.",
       "imagens": [
@@ -6380,7 +6425,8 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "duplicataDe": "tumores-0318"
     },
     {
       "id": "tumores-0204",
@@ -7992,8 +8038,8 @@
         "Estadiamento, biópsia e margens",
         "Histiocitose de células de Langerhans"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TARO",
+      "ano": 2011,
       "dificuldade": null,
       "enunciado": "No paciente esqueleticamente imaturo, o achatamento do corpo vertebral (vértebra plana) é encontrado em qual das patologias abaixo:",
       "imagens": [],
@@ -8022,7 +8068,8 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "duplicataDe": "tumores-0319"
     },
     {
       "id": "tumores-0278",
