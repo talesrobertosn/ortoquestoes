@@ -2785,51 +2785,53 @@
   "conferido": false
  },
  "conceitos-basicos-0284": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": "**Marcadores na osteomielite.** A proteína C reativa sobe em horas, é mais sensível e normaliza em cerca de uma semana com tratamento eficaz. O VHS sobe e normaliza mais devagar e é um pouco menos sensível.\n\n**Na prova:** PCR sobe e cai primeiro; VHS é mais lento.",
-  "correta": "**É menos sensível.** O VHS é menos sensível que a PCR.",
   "incorretas": {
-   "A": "**É mais específica.** Nenhum dos dois é específico.",
-   "C": "**Normaliza-se mais precocemente com o tratamento.** A PCR normaliza antes.",
-   "D": "**Tem os seus valores elevados mais precocemente.** A PCR se eleva mais cedo."
+   "A": "**Mais específica.** O VHS é inespecífico: anemia, idade e outras doenças inflamatórias alteram o resultado. A PCR também não é específica para osteomielite, então nenhum dos dois identifica sozinho uma infecção óssea.",
+   "C": "**Não normaliza primeiro.** Com tratamento eficaz, a PCR geralmente cai e retorna ao normal antes do VHS. Um VHS ainda elevado, isoladamente, não prova falha terapêutica se o paciente está melhorando.",
+   "D": "**Não é o marcador mais precoce.** A PCR se altera rapidamente na resposta de fase aguda. O VHS pode se elevar em período semelhante, mas permanece alterado por mais tempo; esta alternativa confunde início com persistência."
   },
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. B é a resposta provável registrada, mas a afirmação de que o VHS é sempre menos sensível que a PCR depende do momento da coleta, do ponto de corte e da população. A diferença mais consistente e útil entre os exames é a normalização mais rápida da PCR durante a melhora clínica.",
+  "conceito": "**Dois marcadores, relógios diferentes.** A proteína C reativa, ou PCR, é uma proteína de fase aguda produzida pelo fígado em resposta à inflamação. O VHS mede a velocidade de sedimentação das hemácias e depende, entre outros fatores, da concentração de fibrinogênio. Nenhum dos dois identifica o agente da osteomielite ou confirma sozinho a infecção óssea.\n\nNa osteomielite hematogênica aguda, ambos podem se elevar. A PCR é útil para acompanhar a resposta nas primeiras semanas porque costuma cair relativamente rápido quando antibióticos e controle do foco funcionam. O VHS persiste elevado por mais tempo e pode levar cerca de três a quatro semanas para normalizar mesmo em casos pediátricos sem complicações. A diretriz PIDS/IDSA ressalta que a PCR também tem desempenho diagnóstico variável, de modo que um resultado normal não afasta a doença se a suspeita clínica for forte.\n\n**Sensibilidade não é uma propriedade fixa do exame.** Ela muda conforme o estágio da infecção e o valor escolhido para chamar o teste de positivo. Por isso, a comparação categórica exigida pela alternativa B deve ser lida como convenção da fonte antiga da questão. Na prática, história, exame físico, hemoculturas e, quando necessário, ressonância ou amostra microbiológica definem a investigação; a tendência seriada do marcador só ganha sentido junto com a evolução clínica.",
+  "correta": "**Menos sensível é a comparação esperada pela resposta provável.** O dado mais sólido para distinguir VHS e PCR, porém, é que a PCR costuma normalizar antes. Não se deve transformar a sensibilidade relativa em regra universal.",
   "referencias": [
-   "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. 2001. 5ª ed., p. 468."
+   "PIDS/IDSA Guideline on Diagnosis and Management of Acute Hematogenous Osteomyelitis in Pediatrics. https://www.idsociety.org/practice-guideline/bone-and-joint-infections---osteomyelitis/",
+   "Serum C-Reactive Protein, Erythrocyte Sedimentation Rate, and White Blood Cell Count in Acute Hematogenous Osteomyelitis of Children. https://publications.aap.org/pediatrics/article/93/1/59/59255/Serum-C-Reactive-Protein-Erythrocyte-Sedimentation"
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "provavel": "B",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "conceitos-basicos-0285": {
+  "incorretas": {
+   "B": "**Proteína quimiotática de monócitos.** A MCP-1, também chamada CCL2, recruta monócitos para tecidos inflamados. Quimiotaxia celular não é o sinal hepático principal pedido para induzir a PCR.",
+   "C": "**Interferon-gama.** Participa sobretudo da resposta celular e da ativação de macrófagos. Pode influenciar a inflamação, mas não é o principal indutor da síntese de PCR pelos hepatócitos nesta comparação.",
+   "D": "**Fator de necrose tumoral.** O TNF-alfa atua cedo na cascata inflamatória e pode contribuir indiretamente para a resposta sistêmica. A indução hepática direta da PCR é mais associada à IL-6."
+  },
+  "conceito": "**Da infecção ao exame de sangue.** Na osteomielite aguda, células imunes reconhecem o microrganismo e liberam mediadores inflamatórios. A interleucina-6 chega ao fígado e estimula hepatócitos a sintetizar proteínas de fase aguda, entre elas a proteína C reativa. Assim, a PCR elevada reflete a resposta sistêmica do hospedeiro, não a presença direta de bactérias no sangue.\n\n**Por que a IL-6 é a melhor opção.** Em experimentos com hepatócitos humanos, ela induziu a produção de RNA mensageiro e de proteína C reativa. Outros mediadores, como IL-1 e fator de necrose tumoral, podem participar da rede inflamatória e amplificar respostas, mas a IL-6 é o principal sinal entre as alternativas para a síntese hepática da PCR. Não confunda esse caminho com a quimiotaxia de monócitos ou com a ativação imune mediada por interferon-gama.\n\n**Aplicação clínica.** A PCR costuma variar mais rapidamente que o VHS quando a inflamação melhora, motivo para acompanhar sua tendência após o tratamento. Ela continua inespecífica: cirurgia recente, outros focos infecciosos e doenças inflamatórias também podem elevá-la. Uma PCR isolada não substitui avaliação clínica, cultura e busca de abscesso quando houver suspeita de controle inadequado do foco.",
+  "correta": "**Interleucina-6.** É o estímulo principal, entre os listados, para o hepatócito produzir proteína C reativa durante a resposta de fase aguda.",
+  "referencias": [
+   "Acute-phase response of human hepatocytes: regulation of acute-phase protein synthesis by interleukin-6. https://pubmed.ncbi.nlm.nih.gov/1699862/",
+   "Interleukin-6 is the major regulator of acute phase protein synthesis in adult human hepatocytes. https://www.sciencedirect.com/science/article/pii/0014579389804764"
+  ],
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "A",
-  "conceito": "**Proteína C reativa.** É sintetizada no fígado sob estímulo principal da interleucina 6.\n\n**Na prova:** IL-6 induz a PCR.",
-  "correta": "**Interleucina-6.** A IL-6 é o principal estímulo.",
-  "incorretas": {
-   "B": "**Proteína monocitária quimiotática.** Não regula a PCR.",
-   "C": "**Interferon-gama.** Não é o principal estímulo.",
-   "D": "**Fator de necrose tumoral.** Contribui, mas o principal é a IL-6."
-  },
-  "referencias": [
-   "Tachdjian M.O. Pediatric orthopaedics. Philadelphia: Saunders. 4ª ed., pg. 2091."
-  ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "conceitos-basicos-0286": {
+  "incorretas": {
+   "A": "**Prolongamentos longos sugerem osteócito.** Ele vive dentro da matriz mineralizada, em lacunas, e se conecta a outras células pelos canalículos. Osteoblastos podem ter processos curtos, mas essa não é sua descrição clássica na lâmina.",
+   "C": "**Multinucleação e borda pregueada indicam osteoclasto.** Essa borda fica voltada ao osso que será reabsorvido, não ao osteoide que está sendo depositado.",
+   "D": "**Não define uma célula formadora de osso.** A descrição esférica, multinucleada e com supostos grânulos minerais não corresponde ao osteoblasto. A mineralização ocorre na matriz extracelular depositada por ele, não como depósito negro típico dentro de seu citoplasma."
+  },
+  "conceito": "**A forma acompanha a função.** O osteoblasto ativo fica alinhado na superfície do osso que está sendo formado. É uma célula mononucleada e geralmente cúbica, com retículo endoplasmático rugoso e complexo de Golgi desenvolvidos porque fabrica e secreta grande quantidade de proteínas da matriz, especialmente colágeno tipo I. A matriz orgânica recém-depositada é o osteoide; depois ela mineraliza.\n\n**O destino do osteoblasto esclarece a alternativa A.** Alguns osteoblastos ficam aprisionados na matriz e tornam-se osteócitos. O osteócito maduro ocupa uma lacuna e envia prolongamentos longos pelos canalículos, mantendo comunicação com outras células e percebendo cargas mecânicas. Portanto, prolongamentos extensos lembram mais o osteócito do que o osteoblasto secretor disposto em camada na superfície.\n\n**A célula multinucleada é outra.** O osteoclasto deriva da linhagem de monócitos e macrófagos, adere ao osso e cria uma borda pregueada voltada para a superfície de reabsorção. Nessa região acidifica o meio e degrada a matriz. O contraste útil é funcional: osteoblasto deposita osteoide, osteoclasto reabsorve, osteócito coordena e percebe o tecido já formado. Descrições vagas de grânulos escuros não substituem essa combinação de localização, número de núcleos e organelas.",
+  "correta": "**Cuboide, mononucleada, com Golgi proeminente.** É a morfologia do osteoblasto ativo que sintetiza e secreta osteoide na superfície óssea.",
+  "referencias": [
+   "Anatomy and Ultrastructure of Bone, Histogenesis, Growth and Remodeling. https://www.ncbi.nlm.nih.gov/books/NBK279149/"
+  ],
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "B",
-  "conceito": "**Osteoblasto.** Célula cúbica, mononuclear, com Golgi desenvolvido e retículo abundante para síntese de colágeno.\n\n**Na prova:** osteoblasto é cúbico e sintetizante.",
-  "correta": "**Cubóide, mononucleada e com grande volume de membrana de GOLGI.** É a descrição do osteoblasto.",
-  "incorretas": {
-   "A": "**Ovalada, mononucleada e com múltiplos longos processos citoplasmáticos.** Descreve o osteócito.",
-   "C": "**De forma irregular, multinucleada e com pregueamento  da membrana citoplasmática.** Descreve o osteoclasto.",
-   "D": "**Esférica, multinucleada e com granulações negras de mineral no interior do citoplasma.** Não corresponde."
-  },
-  "referencias": [
-   "Weinstein SL, Buckwalter JA. Turek’s orthopaedics: principles and their application. Philadelphia: Lippincott/Manole. 5ª ed., p. 22."
-  ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "conceitos-basicos-0287": {
