@@ -3383,36 +3383,36 @@
   "conferido": false
  },
  "pediatria-0311": {
-  "conceito": "### Torção tibial externa patológica\n- Normal no adulto: cerca de 20° (ângulo coxa-pé).\n- Aumentada (> 18 a 30°) no adolescente: marcha com pé para fora.\n\n### Associações\n| Condição | Relação |\n|---|---|\n| ==coalizão tarsal== | pé plano rígido, compensação rotacional |\n| anteversão femoral aumentada | síndrome do mau alinhamento (compensação) |\n| mielomeningocele | torção externa |\n| Blount | torção ==interna== |\n\n### Síndrome do mau alinhamento\n- Anteversão femoral + torção tibial externa: dor patelofemoral, instabilidade patelar.\n- Osteotomias derrotativas em casos graves.\n\n### Rotacionais na criança\n| Causa | Idade típica |\n|---|---|\n| metatarso aduto | lactente |\n| torção tibial interna | 1 a 3 anos |\n| anteversão femoral | 3 a 8 anos |\n\n### Ângulo coxa-pé (Staheli)\n| Idade | Média |\n|---|---|\n| lactente | cerca de -5° (interno) |\n| ==2 anos== | ==cerca de +5°== |\n| ==8 anos== | ==cerca de +10°== |\n| adulto | +10 a +20° |\n\n- A tíbia roda externamente com o crescimento: torção tibial interna do lactente se resolve.\n\n> **Na prova:** coxa-pé aos 2 e 8 anos = ==+5° e +10°==",
-  "correta": "**+5 e +10 graus.**\n- Rotação externa progressiva da tíbia.\n- Negativo só no lactente.",
   "incorretas": {
-   "A": "**Negativo aos 8 anos.**\n- Seria torção interna persistente.",
-   "B": "**Negativo aos 2 anos.**\n- Valor do lactente.",
-   "C": "**Ambos negativos.**\n- Patológico."
+   "A": "O valor aos 2 anos está certo, mas aos 8 anos o ângulo é positivo; -10° indicaria torção interna persistente.",
+   "B": "O valor negativo é do lactente; aos 2 anos o ângulo já é positivo.",
+   "C": "Valores negativos nas duas idades indicariam torção tibial interna patológica."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **perfil rotacional de Staheli** avalia a criança que anda com os pés para dentro ou para fora. Um dos seus itens é o **ângulo coxa-pé**, que mede a **torção da tíbia**.\n\n**Como medir**: criança de bruços, joelho fletido a 90° e tornozelo neutro. Olha-se de cima o ângulo entre o **eixo da coxa** e o **eixo do pé**. Se o pé aponta para fora, o valor é positivo (torção externa); para dentro, negativo (torção interna).\n\n**Os valores médios com a idade**:\n\n**lactente**: cerca de **-5°**, ou seja, torção tibial interna;\n\n**2 anos**: cerca de **+5°**;\n\n**8 anos**: cerca de **+10°**;\n\n**adulto**: entre +10 e +20°.\n\n**Por que muda**: a tíbia **roda externamente** com o crescimento. A **torção tibial interna** do lactente, que faz a criança de 1 a 3 anos andar com os pés para dentro, costuma se resolver sozinha.\n\n**Os outros itens do perfil rotacional**: o ângulo de progressão do pé na marcha, as rotações interna e externa do quadril (que refletem a anteversão femoral) e a forma do pé (metatarso aduto).\n\n**As causas por idade**: metatarso aduto no lactente, torção tibial interna de 1 a 3 anos e anteversão femoral de 3 a 8 anos.\n\n**Na prova**: ângulo coxa-pé aos 2 e 8 anos = **+5°** e **+10°**.",
+  "correta": "Com o crescimento, a tíbia roda para fora: o ângulo coxa-pé fica em média +5° aos 2 anos e +10° aos 8 anos.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0312": {
-  "conceito": "### Pseudartrose congênita da tíbia\n- Arqueamento ==anterolateral== da tíbia distal; fratura com pouco trauma e não consolida.\n- ==NF1== em cerca de 50% (e 5 a 10% dos NF1 têm).\n- Também displasia fibrosa, displasia osteofibrosa.\n\n### Boyd\n| Tipo | Achado |\n|---|---|\n| I | pseudartrose ao nascer |\n| II | ampulheta (arqueamento com estreitamento) |\n| III | cisto |\n| IV | esclerose sem estreitamento |\n| V | fíbula displásica |\n| VI | neurofibroma intraósseo |\n\n### Tratamento\n- Antes da fratura: ==órtese protetora== até a maturidade; ==nunca osteotomia corretiva== do arqueamento.\n- Após fratura: ressecção do hamartoma, haste intramedular (Williams), enxerto, fixador (Ilizarov), fíbula vascularizada; BMP; cross-union (Paley).\n\n### Outros arqueamentos\n| Direção | Doença |\n|---|---|\n| posteromedial | benigno, corrige |\n| anteromedial | hemimelia fibular |\n\n### Prognóstico no Boyd\n- ==Tipo II (ampulheta)==: o mais comum e o de ==pior prognóstico==; fratura antes dos 2 anos, associado a NF1.\n- Tipos III e IV: melhor evolução após consolidação.\n\n> **Na prova:** pior prognóstico no Boyd = ==tipo II==",
-  "correta": "**Tipo II.**\n- Ampulheta, NF1.\n- Fratura precoce e consolidação difícil.",
   "incorretas": {
-   "A": "**Tipo I.**\n- Pseudartrose ao nascer; menos comum.",
-   "C": "**Tipo III.**\n- Cisto; prognóstico melhor.",
-   "D": "**Tipo IV.**\n- Esclerose; melhor prognóstico."
+   "A": "O tipo I é a pseudartrose já presente ao nascer, menos comum e não o de pior prognóstico na classificação.",
+   "C": "O tipo III, sobre um cisto, tem prognóstico melhor depois de consolidado.",
+   "D": "O tipo IV, esclerótico sem estreitamento, também evolui melhor."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **pseudartrose congênita da tíbia** começa com um **arqueamento anterolateral** da tíbia distal. A tíbia fratura com pouco trauma e **não consolida**. Cerca de metade dos casos se associa à **neurofibromatose tipo 1**. Na histologia, um **hamartoma fibroso** no periósteo espessado estrangula o osso.\n\n**A classificação de Boyd**:\n\n**tipo I**: pseudartrose ou defeito já ao nascer;\n\n**tipo II**: arqueamento com **estreitamento em ampulheta** da tíbia, que fratura antes dos 2 anos; o tipo **mais comum** e o de **pior prognóstico**, muito associado à NF1;\n\n**tipo III**: pseudartrose sobre um **cisto** ósseo;\n\n**tipo IV**: segmento **esclerótico**, sem estreitamento; fratura por estresse que não consolida;\n\n**tipo V**: com **fíbula displásica**;\n\n**tipo VI**: com **neurofibroma** ou schwannoma intraósseo.\n\n**Por que o tipo II é o pior**: a fratura é precoce, o osso afilado tem pouca superfície para consolidar e o tecido fibroso doente volta a crescer. Os tipos III e IV evoluem melhor depois de consolidados.\n\n**O tratamento**: antes da fratura, **órtese** até a maturidade e nunca osteotomia. Depois, ressecção do tecido doente, haste intramedular, enxerto, Ilizarov, fíbula vascularizada ou união cruzada tíbia-fíbula.\n\n**Na prova**: o tipo de Boyd de pior prognóstico é o **II** (ampulheta).",
+  "correta": "O tipo II de Boyd, em ampulheta, fratura cedo, associa-se à neurofibromatose e é o de pior prognóstico.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0313": {
-  "conceito": "### Osteogênese imperfeita (Sillence modificada)\n| Tipo | Gravidade | Detalhe |\n|---|---|---|\n| I | leve | ==escleras azuis==, surdez, colágeno em quantidade reduzida |\n| II | letal perinatal | fraturas múltiplas intrauterinas |\n| III | grave progressiva | deformidade, baixa estatura, dentinogênese |\n| IV | moderada | escleras normais |\n| ==V== | moderada | ==calo hiperplásico== (simula ==osteossarcoma==), ==calcificação da membrana interóssea== do antebraço, luxação da cabeça do rádio; IFITM5 |\n| VI em diante | variadas | genes não colágenos |\n\n### Tratamento\n- ==Bisfosfonato== (pamidronato, zoledronato).\n- Hastes telescópicas (Fassier-Duval, Sheffield) nas deformidades e fraturas repetidas.\n\n### Quantitativo × qualitativo\n- Tipo I: colágeno tipo 1 ==normal em estrutura, mas em quantidade reduzida== (alelo nulo de COL1A1).\n- Tipos II, III e IV: colágeno ==estruturalmente anormal== (substituição de glicina): mais graves.\n- Escleras azuis: I (persistentes) e II; III azuladas ao nascer, clareiam; IV normais.\n\n> **Na prova:** Sillence I = defeito ==quantitativo== + ==escleras azuis==",
-  "correta": "**Quantitativo e escleras azuis.**\n- Metade do colágeno normal.\n- Forma mais leve e mais comum.",
   "incorretas": {
-   "B": "**Perfil do tipo IV.**\n- Qualitativo com esclera normal.",
-   "C": "**Qualitativo é dos tipos graves.**\n- Tipo I é quantitativo.",
-   "D": "**Esclera errada.**\n- Tipo I tem esclera azul."
+   "B": "Defeito qualitativo com esclera normal descreve o tipo IV.",
+   "C": "A esclera azul está certa, mas o defeito do tipo I é quantitativo; o qualitativo é dos tipos graves.",
+   "D": "O defeito quantitativo está certo, mas o tipo I tem esclera azul."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **osteogênese imperfeita** vem, na maioria dos casos, de mutações nos genes do **colágeno tipo I** (COL1A1 e COL1A2). O tipo de mutação define se o defeito é de **quantidade** ou de **qualidade** do colágeno:\n\n**defeito quantitativo** (tipo I): uma cópia do gene não funciona (alelo nulo), e a célula produz **metade do colágeno**, mas o que é produzido tem **estrutura normal**. Resultado: a forma **mais leve** e mais comum;\n\n**defeito qualitativo** (tipos II, III e IV): o colágeno é produzido com **estrutura anormal**, em geral por **troca de uma glicina** na tripla hélice. A fibra defeituosa atrapalha as normais, e o quadro é mais grave.\n\n**As escleras**: a esclera fina deixa ver a coroide, e por isso fica azulada.\n\n**tipo I**: escleras **azuis** que persistem;\n\n**tipo II**: escleras azuis, forma letal;\n\n**tipo III**: azuladas ao nascer, clareiam com o tempo;\n\n**tipo IV**: escleras **normais**.\n\n**O tipo I em resumo**: leve, autossômico dominante, escleras azuis, surdez precoce em parte dos adultos, estatura quase normal e fraturas que diminuem depois da puberdade.\n\n**Na prova**: Sillence I = defeito **quantitativo** do colágeno e **esclera azul**.",
+  "correta": "No tipo I, o colágeno tem estrutura normal mas é produzido em menor quantidade, e as escleras são azuis.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0314": {
@@ -3438,14 +3438,14 @@
   "conferido": false
  },
  "pediatria-0316": {
-  "conceito": "### Deficiência longitudinal radial (Bayne e Klug)\n| Tipo | Rádio | Frequência |\n|---|---|---|\n| 0 | normal, com hipoplasia do carpo ou polegar | |\n| I | rádio distal curto | leve |\n| II | rádio hipoplásico em miniatura | |\n| III | ausência parcial (geralmente distal) | |\n| ==IV== | ==ausência completa== | ==a mais comum== |\n\n- Mão em **desvio radial** (mão torta radial), polegar hipoplásico ou ausente.\n- Associações: **VACTERL**, Holt-Oram (cardiopatia), TAR (trombocitopenia), anemia de **Fanconi** (fazer teste de quebra cromossômica).\n\n### Deficiência longitudinal ulnar (Bayne)\n| Tipo | Ulna |\n|---|---|\n| ==I== | ==hipoplasia (ulna curta, epífises presentes)== : a mais comum |\n| II | ausência parcial |\n| III | ausência total |\n| IV | sinostose radioumeral |\n\n- Menos frequente que a radial; mais associada a anomalias **musculoesqueléticas** (não sistêmicas).\n- Cotovelo e mão (dedos ulnares, comissura) definem a função.\n\n### Detalhe dos tipos II e III\n- II: rádio hipoplásico ==com as duas fises==, crescimento reduzido.\n- ==III==: rádio ==curto e fino, ausência parcial== (geralmente distal), ==sem fise distal==.\n\n> **Na prova:** rádio fino, curto e sem fise = ==Bayne e Klug III==",
-  "correta": "**Tipo III.**\n- Ausência parcial, em geral distal.\n- Sem fise distal: sem crescimento.",
   "incorretas": {
-   "A": "**Tipo I.**\n- Rádio distal apenas curto.",
-   "B": "**Tipo II.**\n- Miniatura, com fises.",
-   "D": "**Tipo IV.**\n- Ausência completa."
+   "A": "No tipo I o rádio distal é apenas curto, com a fise presente.",
+   "B": "No tipo II o rádio é uma miniatura, mas ainda tem as duas fises.",
+   "D": "No tipo IV não há rádio nenhum."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A **mão torta radial** é a **deficiência longitudinal radial**: falta parte ou todo o rádio, e a mão desvia para o lado radial, com o polegar hipoplásico ou ausente. A **classificação de Bayne e Klug** gradua o rádio:\n\n**tipo 0**: rádio de comprimento normal, com hipoplasia do carpo ou do polegar;\n\n**tipo I**: rádio **distal curto**, com a fise distal presente mas atrasada;\n\n**tipo II**: rádio **em miniatura**, hipoplásico, mas **com as duas fises**; cresce menos;\n\n**tipo III**: **ausência parcial** do rádio, em geral da parte distal; o que resta é **curto e fino**, **sem fise distal**, e não cresce;\n\n**tipo IV**: **ausência completa** do rádio; a forma **mais comum**.\n\n**As associações**: é obrigatório investigar o resto do corpo. **VACTERL** (vertebrais, anais, cardíacas, traqueoesofágicas, renais, membros), **Holt-Oram** (cardiopatia), **TAR** (trombocitopenia com ausência do rádio) e **anemia de Fanconi** (pedir o teste de quebra cromossômica, porque a anemia aparece só depois).\n\n**O tratamento**: alongamentos e órteses desde cedo; centralização ou radialização do carpo sobre a ulna, e policização do indicador quando falta o polegar.\n\n**Na prova**: rádio **fino, curto e sem fise** = Bayne e Klug **tipo III**.",
+  "correta": "No tipo III falta parte do rádio, em geral a distal; o segmento que resta é curto, fino e sem fise distal.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0317": {
@@ -3465,69 +3465,69 @@
   "conferido": false
  },
  "pediatria-0318": {
-  "conceito": "### Mielomeningocele: nível × deformidade\n| Nível | Músculos preservados | Deformidade típica | Marcha |\n|---|---|---|---|\n| ==torácico== | nenhum nos MMII | ==flexão e abdução dos quadris (rã), flexão dos joelhos==, equino | cadeira; órtese recíproca |\n| L1-L2 | flexores e adutores do quadril | flexão e adução: ==luxação== | domiciliar |\n| L3-L4 | + quadríceps (L4 tibial anterior) | pé calcâneo-varo | comunitária com órteses |\n| L5 | + isquiotibiais mediais, glúteo médio parcial | pé calcâneo | comunitária |\n| S1 | + gastrocnêmio parcial | cavo | próximo do normal |\n\n### Pontos\n- Nível mais importante para marcha: ==quadríceps (L3-L4)==.\n- Luxação do quadril mais comum em L3-L4.\n\n### Fechamento da bolsa\n- Cirurgia nas ==primeiras 24 a 48 horas==: reduz ==infecção do SNC== (meningite, ventriculite).\n- Cobrir com compressa úmida estéril, decúbito ventral, ambiente livre de látex.\n- Hidrocefalia (80 a 90%): derivação ventriculoperitoneal conforme necessidade.\n- Correção intrauterina (MOMS): menos derivação, melhor função motora.\n\n> **Na prova:** fechamento da MMC = ==primeiras horas== (até 48 h)",
-  "correta": "**Primeiras horas.**\n- Idealmente em 24 a 48 horas.\n- Reduz infecção do sistema nervoso.",
   "incorretas": {
-   "B": "**Após 48 horas.**\n- Aumenta o risco de infecção.",
-   "C": "**Após uma semana.**\n- Tarde.",
-   "D": "**Após um mês.**\n- Inaceitável."
+   "B": "Esperar mais de 48 horas aumenta o risco de infecção do sistema nervoso.",
+   "C": "Depois da primeira semana, a infecção já é muito provável.",
+   "D": "Esperar um mês expõe a criança a infecção grave e é inaceitável."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **mielomeningocele**, a medula e as meninges ficam expostas nas costas, numa bolsa que muitas vezes vaza líquido cefalorraquidiano. Essa abertura é uma porta direta para **infecção do sistema nervoso**: meningite e ventriculite.\n\n**Por isso o fechamento é precoce**: a bolsa deve ser fechada cirurgicamente **nas primeiras horas** de vida, idealmente nas **primeiras 24 a 48 horas**. Depois disso, o risco de infecção sobe muito.\n\n**Os cuidados até a cirurgia**:\n\n**proteger a bolsa** com compressa úmida e estéril;\n\n**decúbito ventral** ou lateral, para não comprimir o defeito;\n\n**ambiente livre de látex** desde o nascimento, pelo alto risco de sensibilização.\n\n**A hidrocefalia**: acompanha 80 a 90% dos casos, pela malformação de **Chiari II**. Pode precisar de derivação ventriculoperitoneal, no mesmo tempo ou depois.\n\n**A correção intrauterina**: o estudo **MOMS** mostrou que fechar o defeito antes do nascimento reduz a necessidade de derivação e melhora a função motora, com mais risco de prematuridade.\n\n**O papel do ortopedista**: definir o **nível neurológico** pelo exame muscular, que orienta a marcha e as deformidades esperadas.\n\n**Na prova**: a bolsa da mielomeningocele deve ser fechada **nas primeiras horas** após o nascimento.",
+  "correta": "O fechamento precoce, nas primeiras 24 a 48 horas, reduz o risco de meningite e ventriculite.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0319": {
-  "conceito": "### Índice de migração de Reimers\n- Porcentagem da ==cabeça femoral lateral à linha de Perkins==.\n\n| Valor | Conduta (PC) |\n|---|---|\n| < 30% | vigilância |\n| 30 a 40% | liberação de partes moles (adutores, psoas) |\n| > 40 a 60% | osteotomia femoral varizante ± pélvica (Dega) |\n| luxado doloroso | salvamento |\n\n- Vigilância radiográfica anual a partir de 2 anos, maior risco em ==GMFCS IV e V==.\n\n### Outros índices do quadril\n| Índice | O que mede |\n|---|---|\n| Wiberg | ângulo centro-borda (cobertura) |\n| Perkins | linha vertical pela borda do acetábulo |\n| Hilgenreiner | linha horizontal pelas trirradiadas |\n| índice acetabular | inclinação do teto |\n\n> **Na prova:** Reimers = vigilância do quadril na ==paralisia cerebral==",
-  "correta": "**Paralisia cerebral.**\n- Controle da subluxação espástica.\n- Guia a indicação cirúrgica.",
   "incorretas": {
-   "A": "**Coxa vara.**\n- Ângulo HE.",
-   "B": "**Epifisiólise.**\n- Southwick, Klein.",
-   "C": "**Perthes.**\n- Herring, Catterall, Stulberg."
+   "A": "Na coxa vara do desenvolvimento usa-se o ângulo de Hilgenreiner-epifisário.",
+   "B": "Na epifisiólise usam-se o ângulo de Southwick e a linha de Klein.",
+   "C": "No Perthes usam-se as classificações de Herring, Catterall e Stulberg."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "O **índice de migração de Reimers** mede quanto da **cabeça femoral** está **para fora do acetábulo**. Na radiografia AP da bacia, traça-se a **linha de Perkins** (vertical, pela borda lateral do acetábulo) e calcula-se a porcentagem da largura da cabeça que fica lateral a ela.\n\n**Onde é usado**: na **paralisia cerebral**. A espasticidade dos adutores e do psoas, com a fraqueza dos abdutores, empurra a cabeça para fora aos poucos, sem dor no começo. É a **luxação espástica** do quadril, mais comum nos níveis **GMFCS IV e V**.\n\n**A conduta pelo índice**:\n\n**abaixo de 30%**: vigilância;\n\n**entre 30 e 40%**: liberação de partes moles (adutores e psoas);\n\n**acima de 40 a 60%**: osteotomia **varizante e derrotativa** do fêmur, muitas vezes com osteotomia pélvica (Dega);\n\n**quadril luxado e doloroso**: cirurgias de salvamento.\n\n**A vigilância**: radiografia periódica a partir de cerca de 2 anos, com frequência maior nos níveis IV e V.\n\n**As medidas de outras doenças**: na coxa vara, o ângulo de Hilgenreiner-epifisário; na epifisiólise, o ângulo de Southwick e a linha de Klein; no Perthes, Herring, Catterall e Stulberg.\n\n**Na prova**: o índice de Reimers é usado na **paralisia cerebral**.",
+  "correta": "O índice de Reimers vigia a subluxação espástica do quadril na paralisia cerebral e orienta a cirurgia.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0320": {
-  "conceito": "### Ciclo da marcha (100%)\n| Fase | % |\n|---|---|\n| ==apoio== | ==cerca de 60%== |\n| - duplo apoio inicial | 10% |\n| - ==apoio simples== | ==40%== |\n| - duplo apoio final | 10% |\n| ==balanço== | ==cerca de 40%== |\n\n### Subfases (Perry)\n| Apoio | Balanço |\n|---|---|\n| contato inicial | balanço inicial |\n| resposta à carga | balanço médio |\n| apoio médio | balanço terminal |\n| apoio terminal | |\n| pré-balanço | |\n\n### Corrida\n- Sem duplo apoio; surge fase de voo; apoio < 50%.\n\n### Parâmetros lineares\n| Parâmetro | Definição |\n|---|---|\n| ==passo== | distância entre o ==calcanhar de um pé e o do outro== (no duplo apoio) |\n| passada (ciclo) | distância entre dois contatos do ==mesmo pé== = 2 passos |\n| cadência | passos por minuto |\n| velocidade | passada × cadência |\n| base de apoio | distância lateral entre os pés |\n\n### Nomenclaturas do balanço\n| Clássica | Rancho Los Amigos | Evento |\n|---|---|---|\n| ==aceleração== | ==balanço inicial== | ==flexão máxima do joelho (~60°)==, pé sai do chão |\n| oscilação intermediária | balanço médio | tíbia vertical |\n| desaceleração | balanço terminal | joelho estende, isquiotibiais freiam |\n\n> **Na prova:** do contato de um pé ao próximo contato do ==mesmo pé== = ==passada==",
-  "correta": "**Passada.**\n- Um ciclo completo, mesmo pé.\n- Equivale a dois passos.",
   "incorretas": {
-   "A": "**Passo.**\n- Entre um pé e o outro.",
-   "C": "**Cadência.**\n- Passos por minuto.",
-   "D": "**Balanço.**\n- Fase sem contato, cerca de 40%."
+   "A": "O passo vai do contato de um pé ao contato do outro pé.",
+   "C": "Cadência é o número de passos por minuto, uma frequência.",
+   "D": "O balanço é a fase em que o pé está no ar, cerca de 40% do ciclo, não uma distância."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "A marcha é descrita por **parâmetros lineares** (distâncias) e **temporais** (tempo):\n\n**passo**: distância entre o contato de **um pé** e o contato do **outro pé**, por exemplo do calcanhar direito ao calcanhar esquerdo;\n\n**passada**: distância entre dois contatos sucessivos do **mesmo pé**, por exemplo de um contato do calcanhar direito até o próximo contato do calcanhar direito. Corresponde a **um ciclo completo** da marcha e equivale a **dois passos**;\n\n**cadência**: número de **passos por minuto**; é uma frequência;\n\n**velocidade**: distância percorrida por unidade de tempo;\n\n**base de apoio**: distância lateral entre os dois pés.\n\n**As fases do ciclo**: **apoio** (cerca de 60%), com o pé no chão, e **balanço** (cerca de 40%), com o pé no ar. O balanço é uma fase, não uma medida de distância.\n\n**Na criança**: a marcha amadurece por volta dos 3 anos, quando a cadência diminui, o passo aumenta e a base estreita.\n\n**Na prova**: do contato de um pé até o próximo contato do **mesmo pé** = **passada**.",
+  "correta": "A passada vai de um contato do pé até o próximo contato do mesmo pé; é um ciclo completo, com dois passos.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0321": {
-  "conceito": "### Panner × osteocondrite dissecante do capítulo\n| Aspecto | ==Panner== | ==OCD do capítulo== |\n|---|---|---|\n| idade | ==< 10 anos== (5 a 10) | ==12 a 16 anos== |\n| extensão | ==todo o capítulo== (fragmentação difusa) | lesão focal anterolateral |\n| corpos livres | não | ==sim== (bloqueio, estalido) |\n| prognóstico | ==bom==, reossifica | variável; pode exigir cirurgia |\n| perfil | | ginastas, arremessadores (valgo repetido) |\n\n### Tratamento da OCD\n| Lesão | Conduta |\n|---|---|\n| estável, fise aberta | repouso esportivo |\n| instável ou corpo livre | artroscopia: remoção, microfratura, fixação, enxerto osteocondral |\n\n### Esportes de risco\n- Compressão radiocapitelar repetida: ==ginástica== (apoio de carga no MS) e ==arremesso== (beisebol).\n- Também tênis e levantamento de peso.\n\n> **Na prova:** OCD do capítulo = ==ginastas== e arremessadores",
-  "correta": "**Ginástica.**\n- Carga axial repetida no cotovelo em valgo.\n- Compressão radiocapitelar.",
   "incorretas": {
-   "B": "**Vôlei.**\n- Mais ombro.",
-   "C": "**Basquete.**\n- Mais joelho e tornozelo.",
-   "D": "**Judô.**\n- Trauma agudo, luxação."
+   "B": "No vôlei as lesões mais típicas são do ombro, não do capítulo.",
+   "C": "No basquete predominam lesões de joelho e tornozelo.",
+   "D": "No judô predominam traumas agudos, como luxações, não a compressão repetida do capítulo."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "No cotovelo da criança e do adolescente, a **compressão repetida** entre a cabeça do rádio e o **capítulo** pode lesar o osso subcondral. Duas doenças parecidas aparecem em idades diferentes:\n\n**doença de Panner**: abaixo de 10 anos (5 a 10); atinge o **capítulo inteiro**, com fragmentação difusa; não forma corpos livres e **reossifica** com repouso;\n\n**osteocondrite dissecante do capítulo**: de **12 a 16 anos**; é uma lesão **focal**, na parte anterolateral do capítulo; pode **soltar um fragmento** (corpo livre), com bloqueio e estalido; o prognóstico é variável.\n\n**Quem tem mais risco**: atletas que fazem **carga axial repetida no cotovelo em valgo**:\n\n**ginastas**, que apoiam o peso do corpo nos braços (saltos, paradas de mão); principalmente meninas;\n\n**arremessadores**, como no beisebol;\n\ntambém tenistas e levantadores de peso.\n\n**O tratamento da osteocondrite**: lesão estável com fise aberta, afastamento do esporte; lesão instável ou com corpo livre, **artroscopia** para remover o fragmento, fazer microfratura, fixar o fragmento ou enxertar.\n\n**Na prova**: osteocondrite dissecante do cotovelo é mais vista em **ginastas**.",
+  "correta": "Na ginástica, o cotovelo recebe carga axial repetida em valgo, comprimindo a cabeça do rádio contra o capítulo.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0322": {
-  "conceito": "### Legg-Calvé-Perthes: fases (Waldenström)\n| Fase | Achado |\n|---|---|\n| inicial (necrose) | cabeça densa, pequena; fratura subcondral (Salter-Thompson) |\n| ==fragmentação== | epífise fragmentada, colapso |\n| reossificação | osso novo |\n| residual | remodelada |\n\n### Classificações\n| Classificação | Incidência | Fase | Critério |\n|---|---|---|---|\n| ==Herring (pilar lateral)== | ==AP== | ==fragmentação== | altura do pilar lateral: A (100%), B (> 50%), B/C, C (< 50%) |\n| Catterall | AP e perfil | | quanto da epífise acometida (I a IV) + sinais de risco |\n| Salter-Thompson | perfil | inicial | extensão da fratura subcondral |\n| Stulberg | AP e perfil | ==maturidade== | congruência e esfericidade (prognóstico de artrose) |\n\n### Prognóstico\n- Pior: início > 8 anos, Herring C, sinais de cabeça em risco.\n\n### Stulberg (desfecho na maturidade)\n| Classe | Cabeça | Artrose |\n|---|---|---|\n| I | normal | não |\n| II | esférica, coxa magna, colo curto | leve tardia |\n| III | ovoide, não esférica | moderada |\n| IV | achatada, congruência asférica | precoce (5ª década) |\n| V | achatada com acetábulo normal (incongruência asférica) | grave, precoce |\n\n> **Na prova:** classificação do desfecho radiográfico = ==Stulberg==",
-  "correta": "**Stulberg.**\n- Aplicada na maturidade esquelética.\n- Esfericidade e congruência predizem artrose.",
   "incorretas": {
-   "A": "**Catterall.**\n- Extensão da necrose, fase ativa.",
-   "B": "**Herring.**\n- Pilar lateral, fase de fragmentação.",
-   "C": "**Salter-Thompson.**\n- Fratura subcondral, fase inicial."
+   "A": "Catterall mede a extensão da necrose durante a fase ativa da doença.",
+   "B": "Herring avalia a altura do pilar lateral na fase de fragmentação.",
+   "C": "Salter-Thompson avalia a fratura subcondral na fase inicial."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "Na **doença de Legg-Calvé-Perthes**, cada classificação é usada num momento diferente da doença:\n\n**Salter-Thompson**: na **fase inicial**; mede a extensão da **fratura subcondral** (sinal do crescente) no perfil: menos ou mais da metade da cabeça;\n\n**Catterall**: na fase ativa; gradua **quanto da epífise está acometido** (I a IV) e soma os sinais de cabeça em risco;\n\n**Herring** (pilar lateral): na **fase de fragmentação**; mede a altura do **pilar lateral** no AP; é a mais usada para o prognóstico durante a doença;\n\n**Stulberg**: no **desfecho**, na **maturidade esquelética**; classifica a forma final da cabeça e a congruência com o acetábulo.\n\n**As classes de Stulberg**:\n\n**I**: cabeça normal; sem artrose;\n\n**II**: cabeça esférica, mas grande (coxa magna) e com colo curto; artrose leve e tardia;\n\n**III**: cabeça ovoide, não esférica; artrose moderada;\n\n**IV**: cabeça achatada, com acetábulo também achatado (congruência asférica); artrose por volta da 5ª década;\n\n**V**: cabeça achatada com acetábulo normal (incongruência asférica); artrose grave e precoce.\n\n**Na prova**: a classificação do **desfecho radiográfico** é a de **Stulberg**.",
+  "correta": "Stulberg é aplicada na maturidade e classifica a forma final da cabeça e a congruência, prevendo a artrose.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0323": {
-  "conceito": "### Deficiência femoral focal proximal (DFFP)\n- Espectro das deficiências congênitas do fêmur; ==unilateral== em geral.\n- Coxa curta, ==quadril em flexão, abdução e rotação externa==.\n- Associações: ==hemimelia fibular== (cerca de 50%), deficiência do LCA, pé com raios ausentes.\n\n### Aitken\n| Tipo | Cabeça femoral | Acetábulo |\n|---|---|---|\n| A | presente | normal |\n| B | presente, sem conexão ao colo | adequado |\n| C | ausente | displásico |\n| D | ausente | ausente |\n\n### Tratamento\n| Situação | Opção |\n|---|---|\n| discrepância prevista < 20 cm, quadril estável | alongamento, epifisiodese |\n| grave | ==Van Nes== (rotacionplastia), artrodese do joelho + prótese, Syme |\n\n> **Na prova:** deficiência congênita do fêmur associa-se a ==hemimelia fibular== (cerca de 50%)",
-  "correta": "**Hemimelia fibular.**\n- Presente em cerca de metade.\n- Mesmo espectro de deficiência pós-axial.",
   "incorretas": {
-   "A": "**Pseudartrose da tíbia.**\n- Associada à NF1.",
-   "B": "**Hemimelia tibial.**\n- Pré-axial; associa-se à polidactilia pré-axial.",
-   "C": "**Polidactilia.**\n- Associação da hemimelia tibial."
+   "A": "A pseudartrose congênita da tíbia se associa à neurofibromatose, não à deficiência femoral.",
+   "B": "A hemimelia tibial é pré-axial e se associa sobretudo à polidactilia pré-axial.",
+   "C": "A polidactilia, sobretudo a pré-axial, se associa à hemimelia tibial."
   },
-  "geradoEm": "2026-09-24",
+  "conceito": "As **deficiências congênitas dos membros** costumam aparecer em **grupos**, porque surgem do mesmo erro de desenvolvimento num mesmo lado do membro.\n\n**A deficiência femoral congênita** (incluindo a deficiência femoral focal proximal): fêmur curto, quadril em flexão, abdução e rotação externa. Associa-se com frequência à:\n\n**hemimelia fibular**: em cerca de **metade** dos casos; as duas são deficiências do lado **pós-axial** e fazem parte do mesmo espectro;\n\n**ausência ou hipoplasia do LCA** e instabilidade do joelho;\n\n**pé com raios laterais ausentes** e coalizão tarsal.\n\n**As outras associações das alternativas**:\n\n**pseudartrose congênita da tíbia**: liga-se à **neurofibromatose tipo 1**, não à deficiência femoral;\n\n**hemimelia tibial**: é deficiência **pré-axial**; associa-se à **polidactilia pré-axial** (dedos extras no lado do hálux) e a outras malformações.\n\n**Por que importa**: diante de uma criança com fêmur curto, procurar a fíbula, o pé e os cruzados. O plano de tratamento (alongamento, rotacionplastia, amputação de Syme) depende do conjunto.\n\n**Na prova**: a deficiência congênita do fêmur se associa à **hemimelia fibular**.",
+  "correta": "A hemimelia fibular acompanha cerca de metade das deficiências congênitas do fêmur, no mesmo espectro pós-axial.",
+  "geradoEm": "2026-10-04",
   "conferido": false
  },
  "pediatria-0326": {
