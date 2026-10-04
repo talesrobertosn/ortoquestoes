@@ -24,10 +24,9 @@ import { Icone, type NomeIcone } from '../componentes/Icone'
 import { usarCronogramaHoje } from '../componentes/CaixasAssinante'
 import '../estilos/paginas/Treinar.css'
 
-// A maior parte do acervo ainda traz a prova genérica "TEOT/TARO" (sem
-// diferenciar as duas), então por enquanto as três formas aparecem como uma
-// única opção de filtro em vez de linhas separadas.
-const PROVAS_TEOT_TARO = ['TEOT/TARO', 'TEOT', 'TARO']
+// TEOT e TARO vêm primeiro, cada um na sua pílula. "TEOT/TARO" fica para as
+// questões cuja prova de origem ainda não foi confirmada com o PDF oficial.
+const ORDEM_PROVAS = ['TEOT', 'TARO', 'TEOT/TARO']
 
 const DIFICULDADES: Dificuldade[] = ['facil', 'medio', 'dificil']
 const LIMITES = [5, 10, 20, 30, 50, 100]
@@ -98,10 +97,9 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   const gruposProva = useMemo(() => {
     const provasNoAcervo = indice?.provas ?? []
     const grupos: Array<{ rotulo: string; provas: string[] }> = []
-    const teotTaro = PROVAS_TEOT_TARO.filter((p) => provasNoAcervo.includes(p))
-    if (teotTaro.length > 0) grupos.push({ rotulo: 'TEOT/TARO', provas: teotTaro })
+    for (const prova of ORDEM_PROVAS) if (provasNoAcervo.includes(prova)) grupos.push({ rotulo: prova, provas: [prova] })
     for (const prova of provasNoAcervo) {
-      if (PROVAS_TEOT_TARO.includes(prova)) continue
+      if (ORDEM_PROVAS.includes(prova)) continue
       grupos.push({ rotulo: prova, provas: [prova] })
     }
     return grupos
@@ -355,6 +353,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
                       type="button"
                       className="tr-pilula"
                       aria-pressed={marcado}
+                      title={grupo.rotulo === 'TEOT/TARO' ? 'TEOT ou TARO: questões com a prova de origem ainda a confirmar' : undefined}
                       onClick={() =>
                         atualizar({
                           provas: marcado
