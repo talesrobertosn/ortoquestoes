@@ -29,9 +29,6 @@ import { calcularStreak } from '../estado/streak'
 import { FUSO_DIA, chaveDia } from '../estado/limiteDiario'
 import '../estilos/paginas/Inicio.css'
 
-// A maior parte do acervo ainda não distingue TEOT de TARO (prova genérica
-// "TEOT/TARO"); enquanto isso não é resolvido, as três provas são somadas
-// numa única contagem em vez de aparecerem como linhas separadas.
 /** "Hoje", "Ontem" ou a data curta: a lista de sessões lê melhor assim. */
 function quandoFoi(instante: number): string {
   const dia = chaveDia(new Date(instante))
