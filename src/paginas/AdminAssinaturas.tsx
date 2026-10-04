@@ -9,6 +9,7 @@ import { AdminCrescimento } from '../componentes/admin/AdminCrescimento'
 import { AdminConfiguracoes } from '../componentes/admin/AdminConfiguracoes'
 import { AdminUsuarios, ativoHoje, type FiltroUsuarios, type LinhaUsuario } from '../componentes/admin/AdminUsuarios'
 import { AdminFinanceiro } from '../componentes/admin/AdminFinanceiro'
+import { contaDeTeste } from '../componentes/admin/contasTeste'
 import { usarLidos } from '../componentes/admin/lidos'
 import {
   PLANOS, STATUS_ASSINATURA, STATUS_EVENTO, TIPOS_EVENTO, baixarCsv, corresponde, data, dataHora, erroDoPainel, haQuanto, nomeErro, normalizar,
@@ -87,6 +88,9 @@ export function AdminAssinaturas() {
   const lidosPagamento = usarLidos('pagamento')
   const [filtroUsuarios, definirFiltroUsuarios] = useState<FiltroUsuarios>('todos')
   const [idEditar, definirIdEditar] = useState<string | null>(inicial.id ?? null)
+  // Compras de teste do dono ficam fora das estatísticas; a lista completa continua na aba Assinaturas.
+  const reais = useMemo(() => assinaturas?.filter(a => !contaDeTeste(a)) ?? null, [assinaturas])
+  const testes = (assinaturas?.length ?? 0) - (reais?.length ?? 0)
 
   const carregar = useCallback(async () => {
     if (!sessao) return
@@ -126,7 +130,7 @@ export function AdminAssinaturas() {
 
   const errosPagamento = eventos?.filter(ev => ev.status_processamento === 'erro' && !lidosPagamento.lidos.has(String(ev.id))).length ?? 0
   const contadores: Partial<Record<Aba, number>> = {
-    usuarios: usuarios?.length, assinaturas: assinaturas?.filter(vigente).length,
+    usuarios: usuarios?.length, assinaturas: reais?.filter(vigente).length,
     pagamentos: errosPagamento || undefined, conteudo: pendenciasConteudo || undefined,
   }
 
@@ -149,12 +153,12 @@ export function AdminAssinaturas() {
 
       {erroNovo && (aba === 'geral' || aba === 'usuarios') && <p role="alert" className="adm-alerta">{erroNovo} Sem ela, usuários ativos e o ranking privado não aparecem; assinaturas, pagamentos e avaliações continuam funcionando.</p>}
 
-      {aba === 'geral' && <VisaoGeral resumo={resumo} usuarios={usuarios} assinaturas={assinaturas} errosPagamento={errosPagamento} mensagens={pendenciasConteudo} irPara={trocarAba} verUsuarios={abrirUsuarios} />}
+      {aba === 'geral' && <VisaoGeral resumo={resumo} usuarios={usuarios} assinaturas={reais ?? []} errosPagamento={errosPagamento} mensagens={pendenciasConteudo} irPara={trocarAba} verUsuarios={abrirUsuarios} />}
       {aba === 'usuarios' && usuarios && <AdminUsuarios key={filtroUsuarios} usuarios={usuarios} filtroInicial={filtroUsuarios} />}
-      {aba === 'financeiro' && <AdminFinanceiro assinaturas={assinaturas} usuarios={resumo?.usuarios ?? usuarios?.length ?? null} />}
+      {aba === 'financeiro' && <AdminFinanceiro assinaturas={reais ?? []} testes={testes} usuarios={resumo?.usuarios ?? usuarios?.length ?? null} />}
       {aba === 'assinaturas' && <Assinaturas linhas={assinaturas} />}
       {aba === 'pagamentos' && <Pagamentos eventos={eventos ?? []} recarregar={carregar} lidos={lidosPagamento.lidos} marcar={lidosPagamento.marcar} />}
-      {aba === 'crescimento' && <AdminCrescimento assinaturas={assinaturas} />}
+      {aba === 'crescimento' && <AdminCrescimento assinaturas={reais ?? []} />}
       {aba === 'configuracoes' && <AdminConfiguracoes />}
       {aba === 'questoes' && <AdminQuestoes idInicial={idEditar} />}
       {/* Montada sempre (escondida fora da aba) para o contador de pendências aparecer na barra. */}
@@ -275,7 +279,7 @@ function Assinaturas({ linhas }: { linhas: LinhaAssinatura[] }) {
         return <li key={`${a.id_usuario}:${a.ultima_atualizacao}`} className={'adm-cartao' + (vigente(a) ? ' adm-cartao--ok' : a.status === 'falha_pagamento' ? ' adm-cartao--ruim' : '')}>
           <div className="adm-cartao__topo">
             <div><strong>{a.nome ?? a.usuario}</strong>{a.nome && <span className="adm-usuario__email">{a.usuario}</span>}</div>
-            <span className={`adm-selo adm-estado--${a.status}`}>{STATUS_ASSINATURA[a.status] ?? a.status}</span>
+            <span>{contaDeTeste(a) && <span className="adm-selo">Teste</span>} <span className={`adm-selo adm-estado--${a.status}`}>{STATUS_ASSINATURA[a.status] ?? a.status}</span></span>
           </div>
           <dl className="adm-cartao__dados">
             <div><dt>Plano</dt><dd>{PLANOS[a.plano] ?? a.plano}</dd></div>
