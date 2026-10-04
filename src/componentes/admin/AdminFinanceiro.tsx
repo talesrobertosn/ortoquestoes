@@ -83,7 +83,7 @@ function previsao(assinaturas: AssinaturaFinanceira[], meses: number) {
 }
 
 /** Financeiro: quanto entrou, mês a mês, de onde veio e o que está previsto. Estimativa; o extrato oficial é o do Mercado Pago. */
-export function AdminFinanceiro({ assinaturas, usuarios }: { assinaturas: AssinaturaFinanceira[]; usuarios: number | null }) {
+export function AdminFinanceiro({ assinaturas, usuarios, testes = 0 }: { assinaturas: AssinaturaFinanceira[]; usuarios: number | null; testes?: number }) {
   const [mesesPrevisao, definirMesesPrevisao] = useState(6)
   const todas = useMemo(() => cobrancas(assinaturas), [assinaturas])
 
@@ -127,7 +127,7 @@ export function AdminFinanceiro({ assinaturas, usuarios }: { assinaturas: Assina
     <section className="empilha adm-secao" aria-labelledby="adm-titulo-financeiro">
       <div className="adm-secao__cabeca"><div>
         <h2 id="adm-titulo-financeiro">Financeiro</h2>
-        <p>Valores brutos, reconstruídos a partir das assinaturas (cada cobrança paga pelo preço do plano; reembolsos descontados). Não descontam a taxa do Mercado Pago e não substituem o extrato dele.</p>
+        <p>Valores brutos, reconstruídos a partir das assinaturas (cada cobrança paga pelo preço do plano; reembolsos descontados). Não descontam a taxa do Mercado Pago e não substituem o extrato dele.{testes > 0 && ` ${testes} assinatura(s) de teste do dono ficam de fora.`}</p>
       </div>
         <button type="button" className="adm-link" onClick={() => baixarCsv(`ortoquestoes-cobrancas-${new Date().toISOString().slice(0, 10)}.csv`,
           ['Data', 'Plano', 'Valor', 'Origem'], todas.map(c => [c.em.toLocaleDateString('pt-BR'), precoDe(c.plano)?.nome ?? c.plano, c.valor.toFixed(2).replace('.', ','), c.estimada ? 'estimada (sem cobrança gravada)' : 'cobrança gravada']))}>Exportar cobranças</button>
