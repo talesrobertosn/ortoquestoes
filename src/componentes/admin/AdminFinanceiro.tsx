@@ -5,6 +5,8 @@ import { baixarCsv, porcentagem } from './formatos'
 
 export interface AssinaturaFinanceira {
   id_usuario: string
+  usuario?: string | null
+  nome?: string | null
   plano: string
   status: string
   criada_em?: string | null
@@ -16,7 +18,7 @@ export interface AssinaturaFinanceira {
   ultima_atualizacao: string
 }
 
-interface Cobranca { em: Date; valor: number; plano: string; id_usuario: string }
+interface Cobranca { em: Date; valor: number; plano: string; id_usuario: string; estimada: boolean }
 
 const MES = (d: Date) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`
 const NOME_MES = (chave: string, curto = false) => new Date(`${chave}-15T12:00:00`).toLocaleDateString('pt-BR', curto ? { month: 'short' } : { month: 'long', year: 'numeric' })
@@ -24,20 +26,41 @@ const precoDe = (plano: string) => PRECOS.find(p => p.id === plano)
 const somarMeses = (d: Date, meses: number) => { const n = new Date(d); n.setMonth(n.getMonth() + meses); return n }
 
 /**
+ * Assinatura que já foi paga, mas cuja cobrança não ficou gravada (o aviso do
+ * pagamento do Mercado Pago não chegou ou não foi processado). No cartão, a
+ * assinatura só fica ativa depois de a primeira cobrança ser aprovada.
+ */
+function pagaSemCobranca(a: AssinaturaFinanceira) {
+  if (a.ultima_cobranca_em || !precoDe(a.plano)) return false
+  if (a.status === 'ativa' || a.status === 'pausada' || a.status === 'vencida') return true
+  // Cancelada depois de ter valido um período: o fim ficou bem depois do início.
+  if (a.status === 'cancelada' && a.fim_periodo && (a.inicio_periodo ?? a.criada_em)) {
+    const dias = (new Date(a.fim_periodo).getTime() - new Date((a.inicio_periodo ?? a.criada_em)!).getTime()) / 86_400_000
+    return dias >= 25
+  }
+  return false
+}
+
+/**
  * Cobranças reconstruídas a partir das assinaturas: a última cobrança paga e,
  * para trás, uma a cada período do plano até a data em que a assinatura foi
- * criada. Pix é sempre uma cobrança só. Reembolso tira a última.
+ * criada. Pix é sempre uma cobrança só. Reembolso tira a última. Assinatura
+ * paga sem cobrança gravada entra com uma cobrança estimada no início.
  */
 function cobrancas(assinaturas: AssinaturaFinanceira[]): Cobranca[] {
   const lista: Cobranca[] = []
   for (const a of assinaturas) {
     const preco = precoDe(a.plano)
-    if (!preco || !a.ultima_cobranca_em) continue
+    if (!preco) continue
+    if (!a.ultima_cobranca_em) {
+      if (pagaSemCobranca(a)) lista.push({ em: new Date(a.inicio_periodo ?? a.criada_em ?? a.ultima_atualizacao), valor: preco.total, plano: a.plano, id_usuario: a.id_usuario, estimada: true })
+      continue
+    }
     const inicio = new Date(a.criada_em ?? a.inicio_periodo ?? a.ultima_cobranca_em).getTime() - 3 * 86_400_000
     const datas: Date[] = []
     for (let d = new Date(a.ultima_cobranca_em); d.getTime() >= inicio && datas.length < 120; d = somarMeses(d, -preco.meses)) datas.push(d)
     if (a.status === 'reembolsada') datas.shift()
-    for (const em of datas) lista.push({ em, valor: preco.total, plano: a.plano, id_usuario: a.id_usuario })
+    for (const em of datas) lista.push({ em, valor: preco.total, plano: a.plano, id_usuario: a.id_usuario, estimada: false })
   }
   return lista.sort((x, y) => x.em.getTime() - y.em.getTime())
 }
@@ -79,7 +102,7 @@ export function AdminFinanceiro({ assinaturas, usuarios }: { assinaturas: Assina
     const vigente = (a: AssinaturaFinanceira) => (a.status === 'ativa' || (a.status === 'cancelada' && !!a.cancelar_ao_fim)) && (!a.fim_periodo || new Date(a.fim_periodo) > agora)
     const renovam = assinaturas.filter(a => a.status === 'ativa' && !a.cancelar_ao_fim && vigente(a))
     const mrr = renovam.reduce((s, a) => { const p = precoDe(a.plano); return s + (p ? p.total / p.meses : 0) }, 0)
-    const pagas = assinaturas.filter(a => a.ultima_cobranca_em)
+    const pagas = assinaturas.filter(a => a.ultima_cobranca_em || pagaSemCobranca(a))
     const cancelaram = pagas.filter(a => a.cancelar_ao_fim || ['cancelada', 'reembolsada', 'vencida'].includes(a.status)).length
     const reembolsos = assinaturas.filter(a => a.status === 'reembolsada').length
     const primeira = todas[0]?.em ?? null
@@ -94,6 +117,7 @@ export function AdminFinanceiro({ assinaturas, usuarios }: { assinaturas: Assina
     }
   }, [todas, assinaturas])
 
+  const semCobranca = useMemo(() => assinaturas.filter(pagaSemCobranca), [assinaturas])
   const prev = useMemo(() => previsao(assinaturas, mesesPrevisao), [assinaturas, mesesPrevisao])
   const totalPrevisto = prev.reduce((s, [, v]) => s + v, 0)
   const variacao = d.mesPassado ? Math.round(((d.esteMes - d.mesPassado) / d.mesPassado) * 100) : null
@@ -106,7 +130,7 @@ export function AdminFinanceiro({ assinaturas, usuarios }: { assinaturas: Assina
         <p>Valores brutos, reconstruídos a partir das assinaturas (cada cobrança paga pelo preço do plano; reembolsos descontados). Não descontam a taxa do Mercado Pago e não substituem o extrato dele.</p>
       </div>
         <button type="button" className="adm-link" onClick={() => baixarCsv(`ortoquestoes-cobrancas-${new Date().toISOString().slice(0, 10)}.csv`,
-          ['Data', 'Plano', 'Valor'], todas.map(c => [c.em.toLocaleDateString('pt-BR'), precoDe(c.plano)?.nome ?? c.plano, c.valor.toFixed(2).replace('.', ',')]))}>Exportar cobranças</button>
+          ['Data', 'Plano', 'Valor', 'Origem'], todas.map(c => [c.em.toLocaleDateString('pt-BR'), precoDe(c.plano)?.nome ?? c.plano, c.valor.toFixed(2).replace('.', ','), c.estimada ? 'estimada (sem cobrança gravada)' : 'cobrança gravada']))}>Exportar cobranças</button>
       </div>
       <div className="adm-kpis">
         <div className="adm-kpi adm-kpi--destaque adm-kpi--dinheiro"><span>Total recebido</span><strong>{real(d.total)}</strong><small>{d.primeira ? `desde ${d.primeira.toLocaleDateString('pt-BR')}` : 'nenhuma cobrança ainda'}</small></div>
@@ -118,6 +142,10 @@ export function AdminFinanceiro({ assinaturas, usuarios }: { assinaturas: Assina
         <div className="adm-kpi"><span>Conversão</span><strong>{conversao === null ? '—' : `${conversao}%`}</strong><small>dos cadastrados já pagaram</small></div>
         <div className="adm-kpi"><span>Cancelamentos</span><strong>{d.pagas ? `${porcentagem(d.cancelaram, d.pagas)}%` : '—'}</strong><small>{d.cancelaram} de {d.pagas} pagas · {d.reembolsos} reembolso(s)</small></div>
       </div>
+      {semCobranca.length > 0 && <div className="adm-alerta" role="status">
+        <p><strong>{semCobranca.length} assinatura(s) paga(s) sem a cobrança gravada.</strong> Elas já entram no total acima pelo preço do plano, mas vale conferir no Mercado Pago e reprocessar o aviso na aba Pagamentos:</p>
+        <ul>{semCobranca.map(a => <li key={`${a.id_usuario}-${a.criada_em ?? a.ultima_atualizacao}`}>{a.nome || a.usuario || a.id_usuario} · {precoDe(a.plano)?.nome ?? a.plano} · {real(precoDe(a.plano)?.total ?? 0)} · desde {new Date(a.inicio_periodo ?? a.criada_em ?? a.ultima_atualizacao).toLocaleDateString('pt-BR')}</li>)}</ul>
+      </div>}
     </section>
 
     <section className="empilha adm-secao">
