@@ -237,18 +237,19 @@
   "conferido": false
  },
  "pediatria-0017": {
+  "conceito": "**Uma doença rara com regra de lateralidade.** A pseudartrose congênita da clavícula é uma falha de união entre os dois centros de ossificação primários da clavícula (medial e lateral), que normalmente se fundem por volta da sétima semana de vida intrauterina. O resultado é uma massa indolor no **terço médio**, percebida ao nascer ou nos primeiros meses, com mobilidade entre os fragmentos e sem história de trauma.\n\n**Por que é quase sempre à direita.** A teoria mais aceita é a da **compressão pela artéria subclávia**. Do lado direito, a subclávia fica mais alta e mais próxima da face posterior da clavícula em formação, e sua pulsação impediria a fusão dos dois centros. Reforçam a teoria:\n- os casos do **lado esquerdo** ocorrem quase só em pacientes com **dextrocardia** ou anomalias do arco aórtico, quando a anatomia vascular se inverte;\n- costelas cervicais e primeira costela alta, que elevam a subclávia, aumentam a frequência;\n- os casos bilaterais são raros.\n\n**Perfil epidemiológico.**\n\n| Aspecto | Dado |\n|---|---|\n| Lado | **Direito** (esquerdo só com dextrocardia) |\n| Sexo | **Feminino** mais acometido |\n| Local | Terço médio |\n| Neurofibromatose | **Sem relação**, ao contrário da pseudartrose congênita da tíbia |\n\n**Diagnóstico diferencial.**\n- **Fratura obstétrica**: dolorosa, com pseudoparalisia do membro, e forma calo exuberante em 2 a 3 semanas. A pseudartrose congênita é indolor e não forma calo.\n- **Disostose cleidocraniana**: ausência parcial ou total das clavículas, geralmente bilateral e com alterações do crânio (fontanelas abertas) e dentárias.\n\n**Tratamento.** Muitos são assintomáticos e só observados. Se há dor, deformidade estética importante ou sintomas de compressão, faz-se ressecção do tecido fibroso, enxerto ósseo e fixação, de preferência entre 3 e 6 anos, com altas taxas de consolidação.",
+  "correta": "**Correta: A (feminino e à direita).** A pseudartrose congênita da clavícula predomina no **sexo feminino** e ocorre quase sempre à **direita**, atribuída à posição mais alta da artéria subclávia desse lado, cuja pulsação impediria a fusão dos centros de ossificação.",
   "incorretas": {
-   "B": "O sexo está certo, mas o lado esquerdo só ocorre com dextrocardia.",
-   "C": "O lado está certo, mas predomina no sexo feminino.",
-   "D": "Erra o sexo e o lado."
+   "B": "O sexo está certo, mas o **lado esquerdo** só é acometido em situações especiais, como dextrocardia.",
+   "C": "O lado está certo, mas o predomínio é **feminino**.",
+   "D": "Erra o sexo e o lado: o perfil típico é feminino e direito."
   },
-  "conceito": "A **pseudartrose congênita da clavícula** é uma falha no meio da clavícula presente desde o nascimento, que aparece como uma **saliência indolor**, sem trauma e sem calo.\n\n**A epidemiologia clássica**:\n\n**sexo feminino**: mais comum em meninas;\n\n**lado direito**: quase sempre; o esquerdo só aparece com **dextrocardia**;\n\n**terço médio** da clavícula;\n\n**causa provável**: pressão da **artéria subclávia**, mais alta à direita, sobre a clavícula em formação;\n\n**sem relação** com neurofibromatose.\n\n**O diferencial**: fratura obstétrica (dói e forma calo em 2 a 3 semanas) e displasia cleidocraniana (falha lateral, bilateral, fontanelas abertas).\n\n**O tratamento**: observação se não houver sintomas; com dor ou deformidade, ressecção, enxerto e fixação, entre 3 e 6 anos.\n\n**Na prova**: pseudartrose congênita da clavícula = **menina, lado direito**.",
-  "correta": "A pseudartrose congênita da clavícula é mais comum no sexo feminino e no lado direito.",
   "referencias": [
    "Congenital Clavicular Pseudoarthrosis. https://pmc.ncbi.nlm.nih.gov/articles/PMC7672733/",
-   "Surgical Technique for Management of Congenital Pseudarthrosis of the Clavicle. https://pmc.ncbi.nlm.nih.gov/articles/PMC11411332/"
+   "Surgical Technique for Management of Congenital Pseudarthrosis of the Clavicle. https://pmc.ncbi.nlm.nih.gov/articles/PMC11411332/",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 12"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0018": {
@@ -3402,14 +3403,18 @@
   "conferido": false
  },
  "pediatria-0310": {
-  "conceito": "### Coxa vara do desenvolvimento\n- Ângulo cervicodiafisário diminuído por defeito de ossificação no colo medial.\n- ==Triângulo de Fairbank== (fragmento triangular inferior no colo).\n- Marcha de Trendelenburg indolor, encurtamento; bilateral em 30 a 50%.\n\n### Por que limita abdução e rotação medial\n- Trocanter alto e colo varo: o trocanter ==bate no ilíaco== na abdução.\n- Retroversão relativa: ==rotação medial== limitada.\n\n### Ângulo de Hilgenreiner-epifisário (HE)\n| Ângulo HE | Conduta |\n|---|---|\n| < 45° | resolve espontaneamente |\n| 45 a 60° | observar |\n| ==> 60°== | ==osteotomia valgizante== (Pauwels) |\n\n### Diferenciais\n- Coxa vara congênita (DFFP), displasias esqueléticas, raquitismo, sequela de DDQ ou Perthes.\n\n> **Na prova:** colo varo com fragmento triangular inferior (Fairbank) = ==coxa vara do desenvolvimento==",
-  "correta": "**Coxa vara do desenvolvimento.**\n- Colo varo, fise vertical.\n- Triângulo de Fairbank no colo inferior.",
+  "conceito": "**A imagem.** Radiografia em AP da pelve de uma criança. Os quadris mostram o **colo femoral em varo**, com o ângulo entre o colo e a diáfise diminuído, a **fise proximal verticalizada** e o trocânter maior alto em relação à cabeça. Na região inferior do colo, junto à fise, há a alteração de ossificação característica da **coxa vara do desenvolvimento**.\n\n**O que é a coxa vara do desenvolvimento.** Deformidade em varo do colo femoral, que aparece após o início da marcha, por um **defeito de ossificação** na porção **medial e inferior** do colo. O osso nessa região é fraco, e a carga progressivamente fecha o ângulo cervicodiafisário.\n\n**Os achados radiográficos.**\n- Ângulo cervicodiafisário diminuído (normal na criança: 135 a 145°).\n- **Triângulo de Fairbank**: fragmento ósseo triangular na parte inferior do colo, delimitado por duas linhas radiotransparentes em Y invertido.\n- **Ângulo de Hilgenreiner-epifisário** aumentado: o ângulo entre a linha de Hilgenreiner e a fise.\n\n**O ângulo de Hilgenreiner-epifisário decide o tratamento.**\n\n| Ângulo | Conduta |\n|---|---|\n| Menor que 45° | Tende a corrigir espontaneamente; observar |\n| 45 a 60° | Zona intermediária; acompanhamento rigoroso |\n| **Maior que 60°** | Tende a progredir; **osteotomia valgizante** |\n\n**Clínica.** Marcha de **Trendelenburg indolor** (o glúteo médio fica encurtado e fraco porque o trocânter sobe), encurtamento do membro, limitação da abdução e da rotação interna. Bilateral em cerca de 30 a 50%.\n\n**Diferenciais.**\n- **Displasia do quadril**: acetábulo raso, cabeça lateralizada, sem varo do colo.\n- **Legg-Calvé-Perthes**: necrose, fragmentação e achatamento da **epífise**.\n- **Epifisiólise**: escorregamento da epífise no adolescente, com o colo deslocado anteriormente.",
+  "correta": "**Correta: C (coxa vara do desenvolvimento).** A radiografia mostra o colo femoral em varo, com a fise verticalizada e o defeito de ossificação na porção inferior do colo, achados da coxa vara do desenvolvimento.",
   "incorretas": {
-   "A": "**Epifisiólise.**\n- Adolescente; escorregamento da epífise.",
-   "B": "**DDQ.**\n- Acetábulo raso, cabeça migrada.",
-   "D": "**Perthes.**\n- Epífise densa ou fragmentada."
+   "A": "A **epifisiólise** ocorre no adolescente, com escorregamento da epífise em relação ao colo; não produz o varo com defeito inferior do colo da criança.",
+   "B": "Na **displasia do desenvolvimento do quadril**, a alteração principal é o acetábulo raso e a cabeça lateralizada ou luxada.",
+   "D": "Na doença de **Legg-Calvé-Perthes**, a alteração está na **epífise** (densidade, fragmentação, achatamento), e não no colo."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Weinstein JN, Kuo KN, Millar EA. Congenital coxa vara. A retrospective review. J Pediatr Orthop. 1984;4(1):70-77."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0311": {
@@ -10219,17 +10224,18 @@
   "conferido": false
  },
  "pediatria-0831": {
+  "conceito": "**A lesão de Monteggia.** É a fratura da **ulna** com **luxação da cabeça do rádio**. A ulna é fácil de ver; a luxação da cabeça radial é que passa despercebida. Por isso, em toda fratura da ulna na criança, a **linha radiocapitelar** (o eixo do colo e da cabeça do rádio) precisa passar pelo capítulo em todas as incidências.\n\n**A classificação de Bado** usa a direção da luxação da cabeça do rádio, que acompanha o ápice da angulação da ulna.\n\n| Tipo | Luxação da cabeça do rádio | Ápice da ulna |\n|---|---|---|\n| I | **Anterior** (o mais comum na criança) | Anterior |\n| **II** | **Posterior** (posterolateral) | **Posterior** |\n| III | **Lateral** | Lateral (comum na fratura da metáfise proximal da ulna) |\n| IV | Anterior, com fratura do rádio e da ulna | Anterior |\n\n**A posição de imobilização depende do tipo.** O cotovelo deve ser imobilizado na posição que **relaxa a força deformante** e mantém a cabeça do rádio reduzida.\n- **Tipo I**: a cabeça luxa para a frente, puxada pelo **bíceps**. Imobiliza-se com o cotovelo em **flexão de 100 a 110°** e o antebraço em **supinação**.\n- **Tipo II**: a cabeça luxa para trás; a flexão a 90° tende a reproduzir a luxação posterior. Imobiliza-se com o cotovelo em **extensão** (ou quase), que mantém a ulna alinhada e a cabeça reduzida.\n- **Tipo III**: cotovelo em extensão ou flexão, com o antebraço em supinação, conforme a estabilidade.\n\n**Tratamento.** Na criança, a maioria é tratada com **redução fechada** e gesso quando a fratura da ulna é incompleta ou plástica. Fraturas completas e instáveis da ulna recebem **haste intramedular** (fraturas transversas) ou placa (oblíquas), e a cabeça do rádio reduz junto. Monteggia **negligenciada** (com mais de 2 a 3 semanas) exige reconstrução complexa.",
+  "correta": "**Resposta provável: Errado.** No Monteggia tipo II de Bado, a cabeça do rádio luxa para **trás**, e a flexão a 90° tende a reproduzir o deslocamento. A imobilização é feita com o cotovelo em **extensão**. A flexão acima de 90° é a posição do tipo I.",
   "incorretas": {
-   "A": "**Certo seria para uma redução específica que se mostrasse estável nessa posição, ou para outros padrões.** Não é regra do tipo II posterior."
+   "A": "**Certo** aplicaria ao tipo II a posição do tipo I. A posição do gesso deve relaxar a força que desloca a cabeça do rádio, e no tipo II isso se faz em extensão."
   },
-  "conceito": "**Monteggia reúne deformidade da ulna e luxação da cabeça radial.** Na classificação de Bado, o tipo I tem cabeça radial anterior; o II, posterior; o III, lateral; o IV associa fraturas de rádio e ulna com luxação anterior da cabeça radial. Em qualquer tipo, a linha radiocapitelar precisa apontar para o capitelo após a redução e no seguimento.\n\n**Tipo II não segue automaticamente a posição do tipo I.** Em criança com lesão aguda redutível, a ulna pode ser alinhada de modo fechado e imobilizada; com cabeça radial posterior, o cotovelo em extensão e antebraço supinado podem manter melhor a redução. Fixar 90 graus de flexão para todos os tipos pode favorecer perda do alinhamento. Instabilidade ou ulna irredutível exigem outra estratégia, inclusive fixação.",
-  "correta": "**Errado: embora redução fechada possa funcionar, flexão fixa de 90 graus não é a posição preferida universal para Bado II.** A estabilidade radiocapitelar determina o gesso.",
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "referencias": [
-   "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 5th Edition, p. 546."
+   "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 5th Edition, p. 546.",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "B",
-  "geradoEm": "2026-10-01",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0832": {

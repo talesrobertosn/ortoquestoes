@@ -3273,19 +3273,19 @@
   "formato": "corrido"
  },
  "tumores-0322": {
-  "conceito": "**Como se lê Enneking.** O algarismo indica o **grau**: I é baixo grau, II é alto grau, e III é qualquer tumor com **metástase**, que define o estágio sozinha e não recebe letra. A letra indica o **compartimento**: A é intracompartimental, contido pelas barreiras naturais (cortical íntegra, periósteo, cartilagem articular, fáscia e cápsula), e B é extracompartimental. Assim, **IIA** é tumor de **alto grau, intracompartimental e sem metástase**.\n\n**Por que importa.** Com o tumor contido, a margem ampla atravessa tecido normal no mesmo compartimento; com a barreira rompida, é preciso incluir o compartimento vizinho. A sequência completa é IA, IB, IIA, IIB e III, e o estágio IV não existe em Enneking: pertence ao AJCC.\n\n**Na prova:** IIA é **alto grau, contido e sem metástase**.",
-  "correta": "**Intracompartimental, de alto grau de malignidade e sem metástase.** É a definição de IIA.",
+  "conceito": "**Para que serve o estadiamento de Enneking.** O sistema da Musculoskeletal Tumor Society, proposto por **Enneking**, estadia os **sarcomas** ósseos e de partes moles com três informações que guiam a cirurgia e o prognóstico: o **grau** histológico, a **extensão local** (o compartimento) e a presença de **metástase**.\n\n**Como se lê.**\n- O **algarismo romano** indica o **grau**: **I** é **baixo grau**, **II** é **alto grau**. O **III** é qualquer tumor com **metástase**, independentemente do grau.\n- A **letra** indica o **compartimento**: **A** é **intracompartimental**, contido pelas barreiras naturais (cortical íntegra, periósteo, cartilagem articular, fáscia, cápsula); **B** é **extracompartimental**, quando o tumor rompeu essas barreiras.\n\n| Estágio | Grau e compartimento | Metástase |\n|---|---|---|\n| IA | Baixo grau, intracompartimental | Não |\n| IB | Baixo grau, extracompartimental | Não |\n| **IIA** | **Alto grau, intracompartimental** | **Não** |\n| IIB | Alto grau, extracompartimental | Não |\n| III | Qualquer | **Sim** |\n\n**O exemplo clássico.** A maioria dos **osteossarcomas** se apresenta como **IIB**: alto grau, já com extensão para as partes moles. O **condrossarcoma central de baixo grau** contido no osso é tipicamente **IA**.\n\n**Implicações cirúrgicas.**\n- Tumores de **baixo grau** (I) podem ser tratados com margem **ampla**, às vezes marginal em casos selecionados.\n- Tumores de **alto grau** (II) exigem margem **ampla** ou **radical**, geralmente com quimioterapia (osteossarcoma, Ewing) ou radioterapia (sarcomas de partes moles).\n- No estágio **III**, o tratamento é sistêmico, e a cirurgia do primário e das metástases é avaliada caso a caso.\n\n**Para os tumores benignos**, Enneking usa algarismos arábicos: 1 latente, 2 ativo e 3 agressivo.",
+  "correta": "**Correta: B.** No estadiamento de Enneking, **IIA** é o tumor de **alto grau** (II), **intracompartimental** (A) e **sem metástase**.",
   "incorretas": {
-   "A": "**Extracompartimental e com metástase.** Com metástase, o estágio seria III.",
-   "C": "**Baixo grau.** Baixo grau intracompartimental seria IA.",
-   "D": "**Com metástase.** Qualquer metástase coloca o tumor no estágio III."
+   "A": "Tumor **com metástase** é estágio **III**, qualquer que seja o grau ou o compartimento.",
+   "C": "Tumor intracompartimental de **baixo grau** sem metástase é o estágio **IA**.",
+   "D": "A presença de **metástase** classifica o tumor como estágio **III**, não IIA."
   },
   "referencias": [
-   "Canale & Beaty: Campbell’s Operative Orthopaedics, 11th Ed., p. 778 (referência indicada na prova TARO 2013, questão 43)"
+   "Canale & Beaty: Campbell’s Operative Orthopaedics, 11th Ed., p. 778 (referência indicada na prova TARO 2013, questão 43)",
+   "Enneking WF, Spanier SS, Goodman MA. A system for the surgical staging of musculoskeletal sarcoma. Clin Orthop Relat Res. 1980;(153):106-120."
   ],
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "tumores-0323": {
   "conceito": "**A histologia da sinovite vilonodular**, hoje tumor tenossinovial de células gigantes, é de uma proliferação **benigna**: células sinoviais e fibroblastos num **estroma fibroso**, com **macrófagos carregados de hemossiderina**, das hemartroses de repetição, células xantomatosas espumosas e **células gigantes multinucleadas** de tipo osteoclástico. A hemossiderina dá a cor castanho-avermelhada da sinovial na artroscopia e os focos de sinal baixo em T1 e T2 na ressonância.\n\n**O que não aparece.** Não há atipia celular nem figuras mitóticas anormais, próprias de lesão maligna. E \"células gigantes mononucleares\" é uma contradição: célula gigante, por definição, é multinucleada. A base molecular é uma translocação envolvendo o gene CSF1, o que explica o recrutamento maciço de macrófagos e o uso de inibidores do CSF1R na forma difusa irressecável.\n\n**Na prova:** sinovite vilonodular é **estroma fibroso com hemossiderina**, e células gigantes multinucleadas.",

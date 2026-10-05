@@ -2448,17 +2448,18 @@
   "conferido": false
  },
  "joelho-0202": {
-  "conceito": "O teste da rotação externa tibial (dial test) avalia a integridade do canto posterolateral e do ligamento cruzado posterior. Quando positivo apenas a 30 graus de flexão, indica lesão isolada do canto posterolateral. Quando positivo tanto a 30 quanto a 90 graus de flexão, indica lesão combinada do canto posterolateral com o ligamento cruzado posterior, já que a 90 graus o LCP normalmente atua como um freio adicional à rotação externa que, se lesado, deixa de contê-la.",
-  "correta": "D. O teste positivo em 30 e 90 graus de flexão indica lesão combinada do ligamento cruzado posterior e do canto posterolateral.",
+  "conceito": "**O teste da rotação externa (dial test).** Avalia o **canto posterolateral (CPL)** e o **ligamento cruzado posterior (LCP)**. Com o paciente em decúbito ventral (ou dorsal), os joelhos juntos, o examinador roda externamente os dois pés ao máximo e compara o **ângulo coxa-pé** dos dois lados, com o joelho a **30°** e a **90°** de flexão. Uma diferença de **mais de 10 a 15°** em relação ao lado normal é considerada positiva.\n\n**Por que medir em duas flexões.**\n- O **CPL** (ligamento colateral lateral, tendão do poplíteo, popliteofibular) é o principal restritor da rotação externa da tíbia em **todas** as flexões, mas sua ação isolada aparece melhor a **30°**.\n- O **LCP** é um restritor **secundário** da rotação externa, que passa a atuar com o joelho **fletido a 90°**.\n\n| Resultado | Interpretação |\n|---|---|\n| Positivo **só a 30°** | Lesão **isolada do CPL** |\n| Positivo **a 30° e a 90°** | Lesão **combinada do CPL e do LCP** |\n| Positivo só a 90° | Incomum; avaliar LCP e as estruturas mediais |\n\n**Cuidado com o lado medial.** Uma lesão do **canto posteromedial** pode aumentar a rotação externa também, por isso o examinador observa se a tíbia roda por **subluxação posterolateral** (CPL) ou anteromedial (medial).\n\n**Outros testes do CPL.** Gaveta posterolateral, recurvato em rotação externa, pivot shift reverso e o estresse em varo a 30°. Radiografias de estresse e a ressonância complementam.\n\n**Por que diagnosticar.** A lesão do CPL não tratada é causa importante de **falha** das reconstruções do LCA e do LCP. Lesões combinadas exigem reconstrução de ambos.",
+  "correta": "**Correta: D.** O teste da rotação externa positivo a **30° e a 90°** de flexão indica lesão **combinada do LCP e do canto posterolateral**, porque a 90° o LCP passa a contribuir para o controle da rotação externa.",
   "incorretas": {
-   "A": "A lesão isolada do canto posterolateral tipicamente torna o teste positivo apenas a 30 graus de flexão, não a 90 graus.",
-   "B": "A lesão isolada do ligamento cruzado posterior não costuma gerar aumento significativo da rotação externa tibial nesse teste, que depende principalmente da integridade do canto posterolateral.",
-   "C": "O ligamento cruzado anterior não é a estrutura avaliada por esse teste; a combinação relevante para a positividade em 30 e 90 graus envolve o ligamento cruzado posterior."
+   "A": "A lesão **isolada do CPL** dá teste positivo apenas a **30°**; a 90°, o LCP íntegro limita a rotação.",
+   "B": "A lesão **isolada do LCP** geralmente não aumenta a rotação externa a 30°.",
+   "C": "O **LCA** não é restritor principal da rotação externa; a combinação que positiva o teste nas duas flexões é com o LCP."
   },
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 45"
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 45",
+   "Veltri DM, Warren RF. Operative treatment of posterolateral instability of the knee. Clin Sports Med. 1994;13(3):615-627."
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "joelho-0203": {
