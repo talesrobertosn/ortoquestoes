@@ -4033,15 +4033,19 @@
   "conferido": false
  },
  "mao-0415": {
-  "alerta": "A figura numera as estruturas e a correspondência dos números não pode ser conferida aqui. Pelo gabarito, 2 e 4 são o nervo mediano e o nervo ulnar.",
-  "conceito": "### Anastomoses entre mediano e ulnar\n| Anastomose | Local | Sentido | Frequência |\n|---|---|---|---|\n| ==Martin-Gruber== | ==antebraço== (proximal/médio) | ==mediano (ou NIA) → ulnar== | cerca de 15 a 30% |\n| Marinacci | antebraço | ulnar → mediano | rara |\n| Riche-Cannieu | palma (ramo profundo do ulnar e ramo recorrente do mediano) | ulnar ↔ mediano | frequente |\n| Berrettini | palma, ramos sensitivos digitais | | frequente |\n\n### Consequências de Martin-Gruber\n- ENMG: achados paradoxais, pode simular ==bloqueio de condução== do ulnar no antebraço.\n- Lesão alta do ulnar pode ==poupar intrínsecos==.\n- Túnel do carpo com Martin-Gruber: atrofia de primeiro interósseo e adutor pode aparecer.\n\n> **Na prova:** Martin-Gruber = ==mediano e ulnar no antebraço==.",
-  "correta": "**2 e 4, conforme o gabarito.**\n- Mediano e ulnar no antebraço.\n- Fibras motoras cruzam para os intrínsecos.\n- Engana a ENMG e o exame clínico.",
+  "conceito": "**As anastomoses entre o mediano e o ulnar.** Em boa parte das pessoas, há comunicações entre os nervos mediano e ulnar, que redistribuem fibras motoras e sensitivas. Elas explicam achados clínicos e eletroneuromiográficos \"impossíveis\", como um músculo intrínseco preservado após lesão completa do ulnar no cotovelo.\n\n| Anastomose | Local | Sentido das fibras |\n|---|---|---|\n| **Martin-Gruber** | **Antebraço**, proximal ou médio | **Mediano (ou interósseo anterior) para o ulnar** |\n| Marinacci | Antebraço | Ulnar para o mediano (rara) |\n| Riche-Cannieu | Palma, entre o ramo profundo do ulnar e o ramo recorrente do mediano | Ulnar para o mediano, ou nos dois sentidos |\n| Berrettini | Palma, entre ramos digitais comuns | Sensitiva |\n\n**A anastomose de Martin-Gruber.** Presente em cerca de 15 a 30% das pessoas, ocorre no **antebraço**: um ramo do nervo mediano (frequentemente do interósseo anterior) cruza profundamente, entre o flexor superficial e o profundo, até o nervo ulnar. Ela leva fibras motoras que vão inervar músculos normalmente do ulnar, como o primeiro interósseo dorsal, o adutor do polegar ou os hipotenares.\n\n**Na figura**, a peça mostra a face anterior do antebraço com os nervos numerados. Pelo gabarito, **2** e **4** correspondem aos nervos **mediano** e **ulnar**, entre os quais a anastomose de Martin-Gruber se faz.\n\n**Consequências clínicas.**\n- Uma lesão do ulnar **acima** da anastomose pode poupar parte dos intrínsecos, que recebem fibras pelo mediano.\n- Na eletroneuromiografia, a anastomose pode simular bloqueio de condução do ulnar no antebraço.\n- Uma lesão do mediano no cotovelo pode causar fraqueza de músculos \"ulnares\".",
+  "correta": "**Correta: D (2 e 4).** A anastomose de Martin-Gruber é a comunicação, no antebraço, entre o **nervo mediano** e o **nervo ulnar**, estruturas que correspondem aos números 2 e 4 na figura, segundo o gabarito.",
   "incorretas": {
-   "A": "**Par errado.**\n- Não são mediano e ulnar.",
-   "B": "**Par errado.**\n- Mesma observação.",
-   "C": "**Par errado.**\n- Mesma observação."
+   "A": "A combinação **1 e 2** não corresponde ao par mediano e ulnar indicado pelo gabarito.",
+   "B": "A combinação **1 e 4** não corresponde ao par mediano e ulnar.",
+   "C": "A combinação **2 e 3** não une o mediano ao ulnar."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)",
+   "Leibovic SJ, Hastings H 2nd. Martin-Gruber revisited. J Hand Surg Am. 1992;17(1):47-53."
+  ],
+  "alerta": "A figura numera as estruturas e a correspondência dos números não pode ser conferida aqui. Pelo gabarito, 2 e 4 são o nervo mediano e o nervo ulnar.",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0416": {
@@ -6707,17 +6711,18 @@
   "conferido": false
  },
  "mao-0632": {
+  "conceito": "**Duas artérias, dois arcos.** A mão recebe sangue pelas artérias **radial** e **ulnar**, que se unem formando dois arcos na palma.\n\n| Arco | Formado principalmente por | Localização |\n|---|---|---|\n| **Superficial** | **Artéria ulnar** (completado pelo ramo palmar superficial da radial) | Logo abaixo da aponeurose palmar, distal ao profundo |\n| Profundo | **Artéria radial** (completado pelo ramo palmar profundo da ulnar) | Sobre as bases dos metacarpos, sob os tendões flexores |\n\n**O trajeto da ulnar.** A artéria ulnar entra na mão pelo **canal de Guyon**, superficial ao retináculo dos flexores, junto ao nervo ulnar. Continua pela palma como o arco palmar superficial, que dá origem às **artérias digitais palmares comuns**. O arco fica aproximadamente na altura da **linha cardinal de Kaplan** (do ápice da primeira comissura até o hâmulo do hamato).\n\n**O trajeto da radial.** A artéria radial passa para o **dorso** do punho, atravessa a tabaqueira anatômica, perfura o primeiro espaço interósseo entre as cabeças do primeiro interósseo dorsal e entra na palma como o **arco palmar profundo**, de onde saem as artérias metacarpais palmares e a principal do polegar.\n\n**Variações.** O arco superficial é **completo** (com contribuição da radial ou da mediana persistente) em parte das pessoas e **incompleto** em outras. Isso tem importância na colheita da artéria radial para revascularização e nas lesões arteriais da mão.\n\n**Aplicação clínica.**\n- O **teste de Allen** avalia a contribuição de cada artéria: comprime-se radial e ulnar, a mão empalidece, e libera-se uma de cada vez para ver a reperfusão.\n- A **síndrome do martelo hipotenar** é a trombose ou aneurisma da ulnar no canal de Guyon por trauma repetido na eminência hipotenar, comprometendo o arco superficial e os dedos ulnares.",
+  "correta": "**Resposta provável: Errado.** O arco palmar **superficial** é formado principalmente pela artéria **ulnar**. A artéria radial predomina na formação do arco palmar **profundo**.",
   "incorretas": {
-   "A": "**Certo seria apropriado para o arco palmar profundo, não para o superficial.** Chamar o arco superficial de radial troca os predomínios dos dois circuitos arteriais."
+   "A": "**Certo** trocaria os arcos. A radial passa pelo dorso e entra na palma pelo primeiro espaço interósseo para formar o arco profundo; o superficial é a continuação da ulnar."
   },
-  "conceito": "**Dois arcos, predomínios diferentes.** A artéria ulnar continua pela palma e constitui o principal componente do arco palmar superficial, do qual partem as artérias digitais palmares comuns. A radial passa para o dorso do punho, atravessa o primeiro espaço interósseo e predomina na formação do arco palmar profundo.\n\n**A comunicação é variável.** O arco superficial pode receber um ramo palmar superficial da radial, mas a contribuição radial não o torna um arco predominantemente radial. Há arcos completos e incompletos, e variações com participação da artéria mediana. Essa variabilidade importa antes de lesar ou utilizar uma das artérias como enxerto: a perfusão colateral não deve ser presumida apenas pelo desenho clássico.",
-  "correta": "**Errado: o arco palmar superficial é predominantemente ulnar.** A radial pode completá-lo, mas predomina no arco profundo.",
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "referencias": [
-   "Sobotta - Atlas de Anatomia Humana. 19ª edição, vol. 1, p. 265."
+   "Sobotta - Atlas de Anatomia Humana. 19ª edição, vol. 1, p. 265.",
+   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)"
   ],
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "B",
-  "geradoEm": "2026-10-01",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0633": {
