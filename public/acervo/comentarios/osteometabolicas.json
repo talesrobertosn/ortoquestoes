@@ -604,16 +604,19 @@
   "formato": "corrido"
  },
  "osteometabolicas-0048": {
-  "conceito": "**Dois tipos, dois perfis.** Na classificação de Riggs e Melton, a **tipo I, pós-menopausa**, é **rápida**, atinge o osso **trabecular**, produz fraturas **vertebrais** e do **rádio distal**, entre 50 e 65 anos, com alta remodelação.\n\n**A tipo II, senil**, é **lenta**, cortical e trabecular com predomínio da perda **cortical**, e produz fraturas do **colo do fêmur** e do úmero proximal, acima dos 70 anos. Há **osteoblastos em menor número** e com função reduzida, além de um hiperparatireoidismo secundário leve.\n\n**Na prova:** tipo II é **lenta, cortical e com menos osteoblastos**; tipo I é rápida e trabecular.",
-  "correta": "**Perda lenta do osso cortical e menos osteoblastos.** É o perfil de baixa remodelação da osteoporose senil.",
+  "conceito": "**Dois tipos de osteoporose primária.** Riggs e Melton separaram a osteoporose involutiva em dois padrões com mecanismos, idades e fraturas diferentes.\n\n| Aspecto | Tipo I, pós-menopausa | Tipo II, senil |\n|---|---|---|\n| Idade | 50 a 65 anos, mulheres | Acima de 70 anos, mulheres e homens (2:1) |\n| Velocidade da perda | **Acelerada** | **Lenta** |\n| Osso mais atingido | **Trabecular** | **Cortical** e trabecular |\n| Mecanismo | Falta de estrogênio, osteoclastos hiperativos | **Envelhecimento do osteoblasto**, menor formação |\n| Fraturas típicas | Vértebra (esmagamento), rádio distal | **Colo do fêmur**, úmero proximal, pelve, vértebra em cunha |\n\n**Por que o tipo II é lento e cortical.**\n- Com o envelhecimento, as células precursoras da medula se diferenciam menos em osteoblastos e mais em adipócitos; o **número e a atividade dos osteoblastos diminuem**. Cada ciclo de remodelação deixa um pequeno déficit, que se acumula ao longo de décadas.\n- A absorção intestinal de cálcio cai e a síntese de vitamina D ativa diminui, levando a **hiperparatireoidismo secundário**, que favorece a reabsorção cortical endosteal.\n- O córtex afina e se torna poroso, e por isso as fraturas típicas são as de ossos com predomínio cortical, como o colo femoral.\n\n**Comparação com o tipo I.** No tipo I, a falta de estrogênio solta o freio dos osteoclastos, a remodelação dispara e a perda trabecular é rápida nos primeiros anos após a menopausa. Há aumento da atividade de reabsorção, não diminuição de osteoblastos.\n\n**Implicação terapêutica.** No idoso, com formação óssea reduzida, os anabólicos (teriparatida, romosozumabe) têm papel importante nos casos graves, ao lado de cálcio, vitamina D e prevenção de quedas.",
+  "correta": "**Correta: D.** A osteoporose tipo II (senil) caracteriza-se por **perda lenta**, predominantemente do **osso cortical**, decorrente da **diminuição do número e da atividade dos osteoblastos** com o envelhecimento.",
   "incorretas": {
-   "A": "**É a tipo I, e ainda erra as células.** A perda acelerada trabecular é da pós-menopausa, e os osteoblastos não aumentam.",
-   "B": "**Osso errado.** A lentidão está certa, mas o predomínio da perda é cortical.",
-   "C": "**Velocidade e células erradas.** A perda senil é lenta, e os osteoblastos diminuem."
+   "A": "Perda **acelerada** do osso trabecular (medular) é a marca do **tipo I**, e não há aumento de osteoblastos em nenhum dos dois tipos.",
+   "B": "A perda é **lenta** e os osteoblastos **diminuem**, mas o predomínio é **cortical**, não medular.",
+   "C": "A perda do tipo II não é acelerada, e os osteoblastos **diminuem** em vez de aumentar."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Riggs BL, Melton LJ 3rd. Involutional osteoporosis. N Engl J Med. 1986;314(26):1676-1686.",
+   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição"
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "osteometabolicas-0049": {
   "conceito": "**A distribuição.** A tuberculose osteoarticular é uma fração pequena de todos os casos de tuberculose, mas, dentro dela, a **coluna** responde por cerca de **metade**, na forma de **espondilite**, a doença de Pott, seguida de **quadril e joelho** e dos sítios menos comuns. Dor lombar ou torácica arrastada, com sintomas constitucionais em área endêmica, é **Pott até prova em contrário**: pede **ressonância**, porque a radiografia só mostra o que já foi destruído, e confirmação por **biópsia** guiada, com histologia, cultura e PCR.\n\n**As formas raras** são a **tenossinovite** do punho e dos flexores, com **corpos de arroz**, a **osteomielite de osso longo** isolada e a **espina ventosa**, dactilite da criança.\n\n**Na prova:** a manifestação ortopédica mais comum da tuberculose é a **espondilite**.",

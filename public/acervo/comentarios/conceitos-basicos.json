@@ -584,14 +584,18 @@
   "conferido": false
  },
  "conceitos-basicos-0051": {
-  "conceito": "### O problema da radiografia após haste\n- O implante se **sobrepõe** ao canal.\n- As corticais ficam parcialmente escondidas.\n- O traço pode parecer preenchido numa incidência e aberto em outra.\n\n### A tomografia resolve\n- Cortes finos em vários planos e **reconstruções**.\n- Mostra quantas **corticais estão de fato unidas** (critério prático: 3 de 4).\n- É o exame de ==maior sensibilidade== para pseudartrose nesse contexto.\n- Exige protocolo de **redução de artefato metálico**.\n\n### Os outros exames\n- **Radiografia:** exame inicial e de seguimento; escores como o **RUST** (tíbia) ajudam.\n- **Ressonância:** muito artefato com metal; não avalia bem a ponte óssea.\n- **Cintilografia/PET:** para infecção associada, não para a ponte.\n\n> **Na prova:** pseudartrose com haste = ==tomografia==.",
-  "correta": "**Tomografia computadorizada.**",
+  "conceito": "**O desafio do diagnóstico da consolidação.** A pseudartrose é definida clinicamente quando a fratura não consolida no tempo esperado e para de mostrar progressão radiográfica (em geral, após 6 a 9 meses). Saber se uma fratura consolidou parece simples, mas, com implantes, torna-se difícil.\n\n**O problema da radiografia após haste intramedular.**\n- O implante **se sobrepõe** ao canal e às corticais, escondendo parte do foco.\n- O **calo periosteal** pode parecer contínuo numa incidência e mostrar falha em outra.\n- A radiografia vê apenas duas projeções do osso; uma pseudartrose parcial pode passar despercebida.\n- Escores como o **RUST** (radiographic union score for tibial fractures) contam as corticais com calo e traço visível nas quatro corticais das duas incidências e ajudam, mas dependem da radiografia.\n\n**Por que a tomografia é superior.**\n- Cortes finos com **reconstruções multiplanares** permitem examinar todo o perímetro do foco, inclusive atrás do implante.\n- Mostra **quantas corticais estão realmente unidas** e quanto da área de secção transversa está em ponte.\n- A técnica de redução de artefatos metálicos melhorou muito a avaliação com implante.\n- É o exame de **maior sensibilidade** para detectar pseudartrose, embora possa superestimar falhas em alguns casos (especificidade menor).\n\n**Outros exames e seus papéis.**\n\n| Exame | Papel |\n|---|---|\n| Radiografia simples | Primeira linha, acompanhamento seriado |\n| **Tomografia** | **Maior sensibilidade** para pseudartrose, inclusive com implante |\n| Ressonância | Partes moles e infecção; artefato metálico atrapalha |\n| Cintilografia e PET | Investigar infecção ou atividade biológica |\n| Planigrafia | Tomografia linear antiga, substituída pela TC |\n\n**Antes de tratar, pensar na infecção.** Toda pseudartrose após osteossíntese deve ser investigada para infecção (PCR, VHS, culturas intraoperatórias), porque isso muda o tratamento.",
+  "correta": "**Correta: D (tomografia computadorizada).** Com cortes finos e reconstruções multiplanares, a TC avalia todo o perímetro do foco, mesmo com a haste no canal, e é o exame de maior sensibilidade para diagnosticar pseudartrose.",
   "incorretas": {
-   "A": "**Superada.**\n- A planigrafia foi substituída pela tomografia.",
-   "B": "**Inicial, mas limitada.**\n- A haste esconde a região que interessa.",
-   "C": "**Artefato metálico.**\n- Não é o exame para ponte óssea."
+   "A": "A **planigrafia** (tomografia linear) era usada antes da TC, mas tem resolução muito inferior e foi abandonada.",
+   "B": "A **radiografia simples** é o exame inicial e de seguimento, mas o implante e a sobreposição escondem o foco, o que reduz a sensibilidade.",
+   "C": "A **ressonância** sofre muito com o artefato metálico da haste e avalia mal a ponte óssea cortical; é útil para partes moles e infecção."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Bhattacharyya T, Bouchard KA, Phadke A, Meigs JB, Kassarjian A, Salamipour H. The accuracy of computed tomography for the diagnosis of tibial nonunion. J Bone Joint Surg Am. 2006;88(4):692-697.",
+   "Rockwood and Green's Fractures in Adults, 9ª edição, capítulo de pseudartroses"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "conceitos-basicos-0052": {
@@ -2438,14 +2442,18 @@
   "conferido": false
  },
  "conceitos-basicos-0256": {
-  "conceito": "### Os dois tipos\n- **Tipo 1** (antiga **distrofia simpático-reflexa**): dor desproporcional após trauma, cirurgia ou imobilização, **sem lesão nervosa** identificável. A forma mais comum (segue a fratura do rádio distal).\n- ==Tipo 2== (antiga ==causalgia==): mesmo quadro, **com lesão nervosa demonstrável**. Descrita em ferimentos de guerra por projétil.\n\n### Critérios de Budapeste\n- Dor contínua **desproporcional** ao evento.\n- **Sintomas** em pelo menos 3 de 4 categorias e **sinais** em pelo menos 2 de 4: sensitiva, vasomotora, sudomotora/edema, motora/trófica.\n- Sem outro diagnóstico que explique melhor.\n\n### As outras alternativas\n- **Síndrome ombro-mão:** apresentação clínica (geralmente tipo 1, após AVC ou infarto).\n- **Dor miofascial:** pontos-gatilho, sem alterações vasomotoras ou tróficas.\n\n> **Na prova:** SDRC tipo 2 = ==causalgia== (com lesão nervosa).",
-  "correta": "**Causalgia.**",
+  "conceito": "**O que é a síndrome dolorosa complexa regional (SDCR).** É uma condição de **dor desproporcional** ao evento desencadeante, persistente, acompanhada de alterações sensitivas, vasomotoras (cor e temperatura), sudomotoras (suor e edema) e motoras ou tróficas (rigidez, fraqueza, alterações de pele, unhas e pelos, osteopenia). Ocorre após fraturas, cirurgias, imobilização ou lesões nervosas.\n\n**Os dois tipos.**\n\n| Tipo | Nome antigo | Lesão nervosa |\n|---|---|---|\n| Tipo 1 | **Distrofia simpático-reflexa**, algodistrofia, atrofia de Sudeck | **Sem** lesão de nervo identificável |\n| **Tipo 2** | **Causalgia** | **Com** lesão nervosa demonstrável |\n\nO tipo 1 é o mais comum na ortopedia, classicamente após **fratura do rádio distal**. O tipo 2 foi descrito por Silas Weir Mitchell em soldados da Guerra Civil americana com ferimentos por projétil que lesavam nervos periféricos; o termo causalgia vem do grego e significa \"dor em queimação\".\n\n**Critérios de Budapeste (diagnóstico clínico).**\n1. Dor contínua desproporcional ao evento.\n2. Pelo menos **um sintoma** em três das quatro categorias: sensitiva, vasomotora, sudomotora ou edema, motora ou trófica.\n3. Pelo menos **um sinal** em duas das quatro categorias no exame.\n4. Nenhum outro diagnóstico que explique melhor o quadro.\n\n**Prevenção e tratamento.**\n- A **vitamina C** (500 mg/dia por 50 dias) após fratura do rádio distal foi estudada para prevenção, com resultados divergentes entre os estudos.\n- O tratamento é multidisciplinar: **fisioterapia** e terapia ocupacional precoces (o pilar), controle da dor, bisfosfonatos, corticoide em fase inicial, bloqueios simpáticos e, em casos refratários, neuroestimulação.\n- Evitar imobilização prolongada e gessos apertados.",
+  "correta": "**Correta: B (causalgia).** A SDCR tipo 2 corresponde à antiga **causalgia**: o mesmo quadro de dor desproporcional com alterações autonômicas e tróficas, porém com **lesão nervosa demonstrável**.",
   "incorretas": {
-   "A": "**Tipo 1.**",
-   "C": "**Outra entidade.**\n- Pontos-gatilho, sem alterações vasomotoras.",
-   "D": "**Apresentação clínica.**\n- Geralmente tipo 1."
+   "A": "A **distrofia simpático-reflexa** é o nome antigo do **tipo 1**, sem lesão nervosa identificável.",
+   "C": "A **dor miofascial** é uma síndrome dolorosa muscular com pontos-gatilho, sem as alterações autonômicas e tróficas da SDCR.",
+   "D": "A **síndrome ombro-mão** é uma forma clínica do **tipo 1**, descrita após infarto do miocárdio ou acidente vascular, sem lesão de nervo periférico."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Harden RN, Bruehl S, Stanton-Hicks M, Wilson PR. Proposed new diagnostic criteria for complex regional pain syndrome. Pain Med. 2007;8(4):326-331.",
+   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "conceitos-basicos-0257": {
