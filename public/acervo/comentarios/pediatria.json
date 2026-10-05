@@ -3687,14 +3687,18 @@
   "conferido": false
  },
  "pediatria-0339": {
-  "conceito": "### O perfil da forma oligoarticular\nA forma **mais comum** da AIJ:\n- ==Meninas pequenas, entre 2 e 4 anos==.\n- **Até 4 articulações** nos primeiros 6 meses, quase sempre o **joelho**.\n- **FAN positivo** com frequência.\n\n### O que mais importa: a uveíte\n- **Uveíte anterior crônica**, com risco alto nesse grupo.\n- **Silenciosa:** não dói, não avermelha o olho.\n- Pode levar a perda visual antes de qualquer queixa.\n- Exige **lâmpada de fenda** em intervalos regulares.\n\n### Para o ortopedista\n- Joelho com derrame crônico pode causar **discrepância de membros** (hipercrescimento do lado inflamado) e contratura em flexão.\n- Infiltração intra-articular de corticoide é opção comum.\n\n> **Na prova:** AIJ oligoarticular = ==menina de 2 a 4 anos==, joelho, FAN+, uveíte.",
-  "correta": "**Meninas entre 2 e 4 anos.**",
+  "conceito": "**Artrite idiopática juvenil oligoarticular.** A artrite idiopática juvenil (AIJ) é a artrite crônica (mais de 6 semanas) de causa desconhecida que começa antes dos 16 anos. A classificação da ILAR (Petty e colaboradores) divide-a em subtipos, e a forma **oligoarticular** é a **mais comum** (cerca de metade dos casos).\n\n**Perfil.**\n- **Meninas pequenas**, com pico entre **2 e 4 anos**.\n- **Até 4 articulações** acometidas nos primeiros 6 meses; o **joelho** é a mais frequente, depois tornozelo; quadril raramente.\n- Criança geralmente com bom estado geral, às vezes com claudicação matinal e pouca dor.\n- **FAN positivo** em boa parte dos casos (marcador de risco de uveíte).\n\n**O ponto crítico: a uveíte.**\n- **Uveíte anterior crônica**, com risco alto nas meninas pequenas com FAN positivo.\n- **Silenciosa**: não dói, não deixa o olho vermelho; pode levar a sinéquias, catarata, glaucoma e perda visual antes de ser percebida.\n- Por isso, **rastreamento com lâmpada de fenda** a cada 3 meses nos grupos de maior risco.\n\n**Consequências ortopédicas.** O joelho inflamado sofre **hiperemia da fise**, levando a **hipercrescimento** do membro (discrepância com o membro acometido mais longo), valgo e contratura em flexão.\n\n**Comparação dos subtipos (ILAR, resumida).**\n\n| Subtipo | Perfil |\n|---|---|\n| **Oligoarticular** | **Meninas de 2 a 4 anos**, joelho, FAN+, uveíte |\n| Poliarticular FR negativo | Meninas, curva bimodal |\n| Poliarticular FR positivo | Adolescentes do sexo feminino, semelhante à AR do adulto |\n| Sistêmica (Still) | Febre, exantema, serosite; ambos os sexos |\n| Relacionada a entesite | Meninos acima de 6 anos, HLA-B27 |\n\n**Tratamento.** Anti-inflamatórios, infiltração intra-articular de corticoide; metotrexato e biológicos nas refratárias (Ravelli e Martini).\n\n> AIJ oligoarticular: meninas de 2 a 4 anos, joelho, FAN positivo e uveíte silenciosa.",
+  "correta": "**B: meninas, entre 2 e 4 anos.** A forma oligoarticular, a mais comum da AIJ, predomina em meninas pequenas, com pico entre 2 e 4 anos.",
   "incorretas": {
-   "A": "**Idade errada.**\n- A faixa é um pouco mais tardia.",
-   "C": "**Sexo e idade errados.**",
-   "D": "**Sexo errado.**\n- Predominam meninas."
+   "A": "**Meninas entre 1 e 2 anos**: o sexo está certo, mas o pico de incidência é um pouco mais tardio, entre 2 e 4 anos.",
+   "C": "**Meninos entre 1 e 2 anos** erra o sexo e a faixa etária.",
+   "D": "**Meninos entre 2 e 4 anos**: a idade está certa, mas o predomínio é feminino."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Ravelli A, Martini A. Juvenile idiopathic arthritis. Lancet. 2007;369(9563):767-778.",
+   "Petty RE, Southwood TR, Manners P, et al. International League of Associations for Rheumatology classification of juvenile idiopathic arthritis: second revision, Edmonton, 2001. J Rheumatol. 2004;31(2):390-392."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0340": {
@@ -5115,18 +5119,18 @@
   "conferido": false
  },
  "pediatria-0470": {
-  "conceito": "### Medula presa na mielomeningocele\n| Aspecto | Dado |\n|---|---|\n| ancoragem na RM | ==comum== (quase todos após o fechamento) |\n| síndrome clínica | ==cerca de 30%== |\n\n### Sinais de tração (síndrome clínica)\n- Perda de força ou piora da marcha.\n- ==Escoliose que progride rápido==, deformidade nova no pé.\n- Espasticidade nova, dor lombar.\n- Piora vesical ou intestinal.\n\n### Diferencial de deterioração\n- Disfunção da ==derivação== (hidrocefalia), siringomielia, Chiari II.\n\n### Conduta\n- RM isolada não indica cirurgia; ==correlação clínica== e desancoragem se deterioração.\n\n> **Na prova:** medula presa na MMC = ==comum na RM, sintomática em cerca de 30%==.",
-  "correta": "**Comum, 30% com sinais.**\n- Ancoragem radiológica é quase universal.\n- Só um terço tem síndrome clínica.",
+  "conceito": "**Medula presa na mielomeningocele: comum na imagem, sintomática em parte.** Após o fechamento da mielomeningocele ao nascimento, a medula cicatriza **aderida** ao local do reparo. Por isso, na **ressonância magnética**, praticamente **todos** os pacientes mostram medula baixa e ancorada (**medula presa radiológica**).\n\n**O que importa é a clínica.** Só uma parte desenvolve a **síndrome da medula presa**, em geral estimada em **cerca de 30%**, quando o crescimento da coluna **traciona** a medula fixa, causando isquemia e disfunção progressiva.\n\n**Sinais de tração.**\n- Perda de força, piora da marcha ou do nível funcional.\n- **Escoliose rapidamente progressiva**.\n- **Deformidade nova ou progressiva no pé** (cavo, equino, valgo).\n- **Espasticidade** nova, dor lombar ou nos membros inferiores.\n- Piora da função vesical ou intestinal.\n\n**Diferencial da deterioração neurológica.** Antes de atribuir ao ancoramento, excluir **disfunção da derivação ventriculoperitoneal** (hidrocefalia descompensada), **hidromielia** e **Chiari II** sintomático. As revisões da literatura sobre medula presa após o reparo destacam essa sequência de investigação.\n\n**Tratamento.** **Liberação cirúrgica** (desancoragem) quando há síndrome clínica; tende a estabilizar ou melhorar dor, espasticidade e progressão da escoliose, mas há risco de **reancoragem** (recidiva), que exige nova investigação.\n\n| Achado | Frequência |\n|---|---|\n| Medula presa na ressonância | **Quase todos** após o reparo |\n| Síndrome clínica de medula presa | **Cerca de 30%** |\n\n> Mielomeningocele: medula presa na ressonância é comum; sinais clínicos aparecem em cerca de 30%, e só eles indicam liberação.",
+  "correta": "**C: Comum e 30% dos pacientes tem sinais clínicos.** O ancoramento radiológico ocorre em quase todos após o reparo, mas a síndrome clínica (com déficits progressivos, escoliose rápida, deformidades novas) aparece em cerca de 30%.",
   "incorretas": {
-   "A": "**Não é rara.**\n- Proporção de sintomas certa.",
-   "B": "**Duplamente errada.**\n- Nem rara nem 70%.",
-   "D": "**Superestima.**\n- 70% sintomáticos não é o padrão."
+   "A": "**Rara com 30% sintomáticos**: a proporção clínica está certa, mas a medula presa na ressonância é comum, não rara.",
+   "B": "**Rara com 70% sintomáticos** erra a frequência radiológica e superestima a clínica.",
+   "D": "**Comum com 70% sintomáticos**: a frequência radiológica está certa, mas a maioria permanece assintomática; cerca de 30% desenvolvem sinais clínicos."
   },
   "referencias": [
    "Tethered Cord Syndrome After Myelomeningocele Repair: literature update. https://pmc.ncbi.nlm.nih.gov/articles/PMC7560491/",
    "Recurrent tethered cord: radiological investigation and management. https://pubmed.ncbi.nlm.nih.gov/24013330/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0471": {
