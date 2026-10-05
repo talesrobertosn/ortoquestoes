@@ -2835,19 +2835,20 @@
   "conferido": false
  },
  "conceitos-basicos-0287": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "C",
-  "conceito": "**Artrite séptica.** Os capilares sinoviais não têm membrana basal limitante, facilitando a passagem de bactérias do sangue.\n\n**Na prova:** sinóvia sem membrana basal favorece a infecção.",
-  "correta": "**A ausência de membrana basal nos capilares é fator predisponente.** É o fator predisponente.",
+  "conceito": "**Artrite séptica hematogênica: por que a articulação é vulnerável.** Na via hematogênica, a bactéria chega à articulação pela corrente sanguínea, durante uma bacteriemia (às vezes transitória e silenciosa). A **membrana sinovial** é muito vascularizada e seus capilares têm uma particularidade: **não possuem membrana basal limitante**. Isso facilita a passagem de bactérias do sangue para o espaço articular.\n\n**Sequência da lesão.**\n1. As bactérias atravessam o endotélio sinovial e se multiplicam no líquido articular, um bom meio de cultura.\n2. Há **infiltrado inicial rico em neutrófilos** (polimorfonucleares); o líquido sinovial frequentemente passa de 50.000 leucócitos por mm³, com predomínio de neutrófilos.\n3. **Enzimas bacterianas** (proteases, toxinas) e **enzimas leucocitárias** (colagenases, elastases), além de citocinas (IL-1, TNF-alfa), **degradam os proteoglicanos** em horas e o colágeno em dias.\n4. A resposta imune adaptativa, com **linfócitos T**, contribui para a destruição continuada (por exemplo, na artrite estafilocócica experimental, linfócitos T amplificam o dano).\n5. Aumento da pressão intra-articular e trombose podem causar necrose (por exemplo, na cabeça femoral da criança).\n\n**Fatores predisponentes do hospedeiro.** Artrite reumatoide e outras artropatias, diabetes, imunossupressão, prótese articular, uso de drogas injetáveis, idade extrema.\n\n**Implicação clínica.** A destruição cartilaginosa começa em horas, por isso a artrite séptica é urgência: punção, cultura, antibiótico e **drenagem** (artroscópica ou aberta). Shirtliff e Mader revisaram a patogênese e a abordagem.\n\n> Capilares sinoviais sem membrana basal facilitam a chegada de bactérias pelo sangue à articulação.",
+  "correta": "**C: a ausência de membrana basal nos capilares é fator predisponente (resposta pela bibliografia).** Os capilares sinoviais não têm membrana basal limitante, o que permite que bactérias circulantes atravessem facilmente para o espaço articular.",
   "incorretas": {
-   "A": "**O infiltrado inflamatório inicial é pobre em leucócitos mononucleares.** O infiltrado inicial é de neutrófilos.",
-   "B": "**A degradação da cartilagem não tem relação com a concentração de linfócitos T.** Os linfócitos T participam da degradação.",
-   "D": "**A fagocitose da bactéria é estimulada pela presença de fibroblastos sinoviais.** Não é o mecanismo."
+   "A": "**Infiltrado inicial pobre em mononucleares** é uma afirmação imprecisa: o infiltrado inicial é dominado por neutrófilos, e a questão não o descreve como fator explicativo da doença.",
+   "B": "**A degradação não ter relação com linfócitos T** é falsa: além das enzimas bacterianas e neutrofílicas, a resposta mediada por linfócitos T contribui para a destruição da cartilagem.",
+   "D": "**Fibroblastos sinoviais estimulando a fagocitose** não é o mecanismo descrito; a fagocitose é feita por neutrófilos e macrófagos, e os fibroblastos sinoviais participam da produção de citocinas e enzimas que agravam a lesão."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. p 686."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. p 686.",
+   "Shirtliff ME, Mader JT. Acute septic arthritis. Clin Microbiol Rev. 2002;15(4):527-544."
   ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "C",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "conceitos-basicos-0288": {
