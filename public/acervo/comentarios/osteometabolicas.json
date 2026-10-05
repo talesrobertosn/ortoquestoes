@@ -140,16 +140,19 @@
   "formato": "corrido"
  },
  "osteometabolicas-0012": {
-  "conceito": "**Síndrome de Reiter.** É a forma clássica da **artrite reativa**: surge semanas depois de uma infecção **urogenital** (Chlamydia) ou **entérica** (Shigella, Salmonella, Yersinia, Campylobacter), sem o germe dentro da articulação. A tríade é **conjuntivite, uretrite e artrite**, o velho \"não enxerga, não urina, não anda\".\n\n**A artrite e o paciente.** A artrite é **oligoarticular e assimétrica**, com predomínio nos **membros inferiores**, e costuma vir com **entesite** (Aquiles, fáscia plantar) e **dactilite**, o dedo em salsicha. O paciente típico é o **homem jovem**, com forte associação ao **HLA-B27**. Podem aparecer lesões de pele, como a ceratodermia blenorrágica, e a balanite circinada.\n\n**Na prova:** Reiter é artrite **assimétrica no homem jovem**, com HLA-B27.",
-  "correta": "**Sinovite assimétrica no homem.** É a oligoartrite de membros inferiores do homem jovem.",
+  "conceito": "**A síndrome de Reiter (artrite reativa).** É uma artrite **estéril** que surge **2 a 4 semanas** após uma infecção **urogenital** (*Chlamydia trachomatis*) ou **entérica** (*Shigella*, *Salmonella*, *Yersinia*, *Campylobacter*). O germe não está dentro da articulação; a artrite é uma resposta imune desencadeada pela infecção à distância. Faz parte das **espondiloartrites**, associadas ao **HLA-B27**.\n\n**A tríade clássica:** **conjuntivite, uretrite e artrite** (\"não enxerga, não urina, não anda\"). Nem todos os pacientes têm os três elementos.\n\n**O padrão da artrite.**\n- **Oligoarticular** (menos de cinco articulações) e **assimétrica**.\n- Predomínio nos **membros inferiores**: joelhos, tornozelos, pés.\n- **Entesite**: dor no tendão calcâneo e na fáscia plantar (calcanhar doloroso).\n- **Dactilite** (dedo em salsicha).\n- Pode haver **sacroiliíte** e acometimento da coluna.\n\n**O paciente típico.** **Homem jovem**, entre 20 e 40 anos, sobretudo após infecção urogenital. A forma pós-entérica atinge os dois sexos de modo semelhante.\n\n**Outras manifestações.** Ceratodermia blenorrágica (lesões nas palmas e plantas), balanite circinada, úlceras orais indolores, alterações ungueais.\n\n**Comparação com a artrite reumatoide.**\n\n| Aspecto | Artrite reativa | Artrite reumatoide |\n|---|---|---|\n| Distribuição | **Assimétrica**, oligoarticular, membros inferiores | Simétrica, poliarticular, mãos |\n| Sexo | Predomínio **masculino** | Predomínio feminino |\n| Marcador | HLA-B27 | Fator reumatoide, anti-CCP |\n\n**Tratamento.** Anti-inflamatórios não esteroides, infiltração em articulações selecionadas, tratamento da infecção desencadeante (sobretudo a clamídia) e, nos casos crônicos, sulfassalazina ou metotrexato.",
+  "correta": "**Correta: D (assimétrica no homem).** A síndrome de Reiter (artrite reativa) se caracteriza por artrite **oligoarticular e assimétrica**, sobretudo nos membros inferiores, e acomete principalmente **homens jovens**.",
   "incorretas": {
-   "A": "**Erra os dois.** A artrite reativa é assimétrica e predomina no homem.",
-   "B": "**Simetria é da artrite reumatoide.** A artrite reativa acomete poucas articulações, de forma assimétrica.",
-   "C": "**Sexo errado.** O predomínio é masculino."
+   "A": "A artrite reativa é **assimétrica**, e o predomínio é **masculino**; sinovite simétrica em mulher lembra a artrite reumatoide.",
+   "B": "O sexo está certo, mas a artrite é **assimétrica**, e não simétrica.",
+   "C": "A assimetria está certa, mas a doença predomina no sexo **masculino**."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição",
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "osteometabolicas-0013": {
   "conceito": "**A fratura típica.** A fratura vertebral osteoporótica costuma ser **estável, por compressão**, com a coluna posterior íntegra e sem padrão explosivo. O tratamento é **conservador na maioria**, com analgesia, mobilização precoce e órtese se tolerada, e sempre com **tratamento da osteoporose** de base.\n\n**Quando operar.** Há indicação diante de **déficit neurológico** ou instabilidade e de **dor refratária** ao tratamento conservador bem conduzido, que é a indicação da **vertebroplastia ou cifoplastia**, cujo alvo é justamente a dor. A fratura que **não consolida** (sinal da fenda de vácuo, de Kümmell) tende a manter a dor, e fratura acima de T5 ou lítica sem trauma deve levantar suspeita de **metástase ou mieloma**.\n\n**Na prova:** cirurgia na fratura vertebral osteoporótica é para **dor refratária** ou déficit.",

@@ -802,17 +802,18 @@
   "conferido": false
  },
  "pediatria-0055": {
+  "conceito": "**O ciclo da marcha.** Vai de um **contato do pé no chão** até o próximo contato do **mesmo pé**. Divide-se em duas fases:\n- **apoio**: o pé está no chão, cerca de **60%** do ciclo;\n- **balanço**: o pé está no ar, cerca de **40%** do ciclo.\n\n**As subdivisões do apoio.**\n\n| Período | Duração aproximada | O que acontece |\n|---|---|---|\n| Primeiro **duplo apoio** | Cerca de 10% | Contato inicial e resposta à carga; o peso passa para o membro que chegou |\n| **Apoio simples** | Cerca de 40% | Apoio médio e apoio terminal; o outro membro está em balanço |\n| Segundo duplo apoio | Cerca de 10% | Pré-balanço; o peso passa para o outro membro |\n\n**As subdivisões do balanço.** Balanço inicial, médio e terminal, em que o membro avança, encurta para não arrastar o pé (flexão do quadril e do joelho e dorsiflexão do tornozelo) e se prepara para o próximo contato.\n\n**A velocidade muda as proporções.**\n- Andando **mais rápido**, o apoio encurta e o duplo apoio diminui.\n- Na **corrida**, o duplo apoio **desaparece** e surge uma fase de **voo**, em que nenhum pé toca o chão; o apoio cai para menos de 40% do ciclo.\n- Na marcha **lenta**, ou em pacientes com déficit de equilíbrio (idosos, doenças neurológicas), o apoio e o duplo apoio aumentam.\n\n**A marcha da criança.** Antes dos 3 anos, a criança anda com base alargada, passos curtos, cadência alta e apoio mais longo; o padrão adulto se estabelece por volta dos **7 anos**.\n\n**Uso clínico.** A análise da marcha (observacional ou em laboratório) orienta cirurgias em paralisia cerebral, avaliação de claudicações e de próteses.",
+  "correta": "**Correta: C (40% e 60%).** Na marcha normal, o **balanço** ocupa cerca de **40%** do ciclo e o **apoio** cerca de **60%**, incluindo dois períodos de duplo apoio de cerca de 10% cada.",
   "incorretas": {
-   "A": "70% de balanço e 30% de apoio está muito longe da proporção real.",
-   "B": "Os valores não correspondem: o balanço é cerca de 40% e o apoio, cerca de 60%.",
-   "D": "Os valores estão invertidos: o balanço é a fase menor."
+   "A": "Inverte e exagera as proporções; um balanço de 70% não ocorre na marcha.",
+   "B": "Inverte as proporções: o **apoio** é a fase mais longa, com cerca de 60%.",
+   "D": "Inverte as fases: 60% é o **apoio**, e não o balanço."
   },
-  "conceito": "O **ciclo da marcha** vai de um contato do pé no chão até o próximo contato do **mesmo pé**. Ele se divide em:\n\n**apoio**: o pé está no chão; cerca de **60%** do ciclo;\n\n**balanço**: o pé está no ar; cerca de **40%** do ciclo.\n\n**Dentro do apoio**: há dois períodos de **duplo apoio** (os dois pés no chão), de cerca de **10%** cada, no começo e no fim, e o **apoio simples** no meio, de cerca de **40%**, que coincide com o balanço do outro lado.\n\n**As subfases de Perry**: no apoio, contato inicial, resposta à carga, apoio médio, apoio terminal e pré-balanço; no balanço, inicial, médio e terminal.\n\n**Quando a velocidade aumenta**: o duplo apoio encurta; na **corrida**, ele desaparece, surge uma fase de voo e o apoio cai para menos de 50%.\n\n**Na prova**: balanço e apoio ocupam **40% e 60%** do ciclo.",
-  "correta": "Na marcha normal, o balanço ocupa cerca de 40% do ciclo e o apoio, cerca de 60%.",
   "referencias": [
-   "Pediatric Orthopaedic Society of North America (POSNA). Gait. https://posna.org/physician-education/study-guide/gait"
+   "Pediatric Orthopaedic Society of North America (POSNA). Gait. https://posna.org/physician-education/study-guide/gait",
+   "Perry J, Burnfield JM. Gait Analysis: Normal and Pathological Function, 2ª edição. SLACK, 2010."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0056": {
@@ -9801,31 +9802,33 @@
   "conferido": false
  },
  "pediatria-0802": {
+  "conceito": "**A paralisia braquial obstétrica.** É a lesão do plexo braquial durante o parto, por **tração lateral da cabeça** com o ombro preso (distocia de ombro) ou por tração do braço no parto pélvico. Os fatores de risco são macrossomia, distocia de ombro, parto instrumental e apresentação pélvica.\n\n**Os padrões de lesão.**\n\n| Tipo | Raízes | Quadro |\n|---|---|---|\n| **Erb-Duchenne** (o mais comum) | **C5 e C6** (às vezes C7) | Ombro aduzido e rodado internamente, cotovelo estendido, antebraço pronado (\"gorjeta do garçom\") |\n| Total | C5 a T1 | Membro flácido, mão sem função |\n| Klumpke (rara isolada) | C8 e T1 | Mão em garra, às vezes síndrome de Horner |\n\n**Pré-ganglionar ou pós-ganglionar.** O ponto crítico do prognóstico é saber **onde** a raiz foi lesada:\n- **Pós-ganglionar** (ruptura no tronco, fora do forame): o nervo pode **regenerar** ou ser reparado com enxerto.\n- **Pré-ganglionar** (avulsão da raiz da medula): **não regenera**, e a reconstrução exige transferências nervosas.\n\n**Por que os músculos paraescapulares importam.** Alguns nervos saem **muito perto da raiz**, antes da formação dos troncos:\n- **dorsal da escápula** (C5): romboides e levantador da escápula;\n- **torácico longo** (C5, C6, C7): serrátil anterior.\n\nSe esses músculos estão paralisados (escápula alada, sem estabilização escapular), a lesão é **muito proximal**, próxima da medula: sugere **avulsão pré-ganglionar** e, portanto, **pior prognóstico**.\n\n**Outros sinais de mau prognóstico.**\n- **Síndrome de Horner** (lesão de T1 próxima à cadeia simpática).\n- Paralisia do **hemidiafragma** (nervo frênico, C3 a C5).\n- Ausência de recuperação do **bíceps** até os **3 meses** de vida: classicamente, indicação de exploração cirúrgica do plexo (critério de Gilbert e Tassin, com variações entre centros).",
+  "correta": "**Resposta provável: Certo.** O acometimento dos músculos paraescapulares (romboides, serrátil anterior) indica lesão dos nervos que saem junto às raízes, ou seja, lesão **muito proximal**, sugestiva de avulsão pré-ganglionar e, portanto, de **mau prognóstico**.",
   "incorretas": {
-   "B": "**Errado seria tratar a escápula como estrutura alheia à lesão.** Uma paralisia limitada a ramos mais distais tende a preservar seus músculos estabilizadores."
+   "B": "**Errado** desconsideraria o valor localizador dos músculos paraescapulares. Como seus nervos saem perto da medula, sua paralisia aponta para avulsão da raiz, que não regenera."
   },
-  "conceito": "**A paralisia braquial obstétrica deve ser localizada.** Tração sobre o plexo durante o parto pode comprometer predominantemente C5-C6, estender-se a C7 ou envolver todo o membro. Além dos músculos do braço, o exame observa a escápula: serrátil anterior e romboides recebem ramos que saem muito próximos das raízes. Fraqueza para estabilizar a escápula, portanto, sugere lesão proximal e mais extensa do que uma paralisia distal isolada.\n\n**Prognóstico não depende de um único músculo.** Recuperação ativa do bíceps, extensão do punho e dedos, síndrome de Horner e evolução seriada ajudam a estimar gravidade e necessidade de avaliação especializada precoce. O acometimento paraescapular é sinal desfavorável, mas não substitui esse acompanhamento funcional.",
-  "correta": "**Certo: fraqueza dos músculos paraescapulares sugere lesão proximal do plexo e pior prognóstico.** Ela aponta para acometimento próximo às raízes, frequentemente mais grave.",
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "referencias": [
-   "Tachdjian MO. Pediatric orthopaedics. Philadelphia: Saunders. 2ª edição, p. 2013."
+   "Tachdjian MO. Pediatric orthopaedics. Philadelphia: Saunders. 2ª edição, p. 2013.",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "A",
-  "geradoEm": "2026-10-01",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0803": {
+  "conceito": "**O que é a mão torta radial.** É uma **deficiência longitudinal radial**: hipoplasia ou ausência do **rádio**, com o carpo desviado para o lado radial, a ulna curta e encurvada e, muito frequentemente, **hipoplasia ou ausência do polegar**. Pode ser bilateral.\n\n**A classificação de Bayne e Klug.**\n\n| Tipo | Rádio |\n|---|---|\n| I | Rádio distal curto (fise distal hipoplásica) |\n| II | Rádio hipoplásico em miniatura |\n| III | Ausência parcial (geralmente do terço distal) |\n| IV | **Ausência total** do rádio (o mais comum) |\n\n**Investigar o resto do corpo.** A mão torta radial associa-se a síndromes que podem ser graves:\n- **TAR** (trombocitopenia com ausência do rádio, com polegares **presentes**);\n- **Holt-Oram** (defeitos cardíacos);\n- **VACTERL** (vértebras, ânus, coração, traqueia e esôfago, rim, membros);\n- **anemia de Fanconi** (falência medular, que pode surgir anos depois).\nPor isso se pedem hemograma, ecocardiograma, ultrassom renal, radiografia da coluna e, em casos suspeitos, teste de fragilidade cromossômica.\n\n**O tratamento e o momento.**\n1. Desde o nascimento: **alongamentos** e **órteses** para estirar as partes moles radiais.\n2. **Centralização** (ou radialização) do carpo sobre a ulna, geralmente entre **6 meses e 1 a 2 anos**, depois de preparar as partes moles (às vezes com distração prévia por fixador externo).\n3. **Policização** do indicador, se o polegar estiver ausente ou muito hipoplásico, alguns meses depois.\n\n**Por que cedo.** A centralização precoce aproveita a plasticidade dos tecidos e o potencial de crescimento da ulna distal, e permite que a criança desenvolva os padrões de preensão já com o punho alinhado. Operar depois dos 8 anos encontra partes moles muito retraídas, adaptações funcionais já estabelecidas e menos tempo de crescimento para remodelar.\n\n**Contraindicações.** Cotovelo rígido em extensão (a mão desviada é que permite levá-la à boca) e adultos bem adaptados.",
+  "correta": "**Resposta provável: Errado.** A centralização na mão torta radial é feita **precocemente**, em geral entre 6 meses e 1 a 2 anos, após alongamento das partes moles. Esperar até depois dos 8 anos piora os resultados, pela retração dos tecidos e pela menor capacidade de adaptação.",
   "incorretas": {
-   "A": "**Certo seria reconhecer que uma cirurgia tardia pode ser necessária em caso não tratado.** Isso não a transforma na idade ideal de intervenção."
+   "A": "**Certo** adiaria a cirurgia para uma idade em que os tecidos estão muito retraídos e os padrões de uso da mão já se fixaram, o que contraria a recomendação de centralização precoce."
   },
-  "conceito": "**Mão torta radial é deficiência longitudinal do lado radial.** A hipoplasia ou ausência do rádio desvia o punho radialmente e costuma coexistir com alterações do polegar; também pede investigação de anomalias sistêmicas. Alongamentos e órteses iniciam o cuidado, enquanto a centralização coloca o carpo sobre a ulna para melhorar alinhamento e apoio.\n\n**Oito anos não é a janela preferida.** Quando indicada, a correção costuma ser considerada na primeira infância, após avaliação da rigidez, do cotovelo e da função da mão. Esperar até depois dos oito anos deixa deformidade e tecidos moles adaptarem-se por mais tempo, sem garantia de menor recidiva. O momento exato é individualizado, e técnicas de radialização ou distração podem ser alternativas à centralização clássica.",
-  "correta": "**Errado: a centralização não apresenta melhores resultados simplesmente por ser adiada para depois dos oito anos.** O planejamento geralmente ocorre muito antes.",
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "referencias": [
-   "Hebert Sizínio et al. Ortopedia e traumatologia: princípios e prática. Porto Alegre: Artmed. 3ª edição, p. 254."
+   "Hebert Sizínio et al. Ortopedia e traumatologia: princípios e prática. Porto Alegre: Artmed. 3ª edição, p. 254.",
+   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)"
   ],
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "B",
-  "geradoEm": "2026-10-01",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0804": {
@@ -10031,17 +10034,18 @@
   "conferido": false
  },
  "pediatria-0818": {
+  "conceito": "**O fenômeno de Cozen.** Em 1953, Cozen descreveu uma deformidade em **valgo progressivo** da tíbia após fraturas da **metáfise proximal** da tíbia em crianças pequenas, geralmente entre **3 e 6 anos**. A fratura típica é aparentemente benigna: um traço **incompleto** (em galho verde) na metáfise medial, com pouco ou nenhum desvio, frequentemente com a fíbula íntegra.\n\n**A evolução.** A fratura consolida sem problema e a perna parece reta. Nos meses seguintes (geralmente **6 a 18 meses** após a lesão), a tíbia vai se angulando em **valgo**, às vezes 15 a 20° ou mais. Os pais acham que a fratura \"entortou\", e o médico precisa ter avisado antes.\n\n**Os mecanismos propostos.**\n- **Hiperemia** pós-fratura com estímulo do crescimento da fise proximal, maior no lado **medial**.\n- **Interposição de partes moles** (pata de ganso, periósteo) no lado medial da fratura, mantendo um pequeno desvio.\n- A **fíbula íntegra** funcionando como tirante lateral.\n- Valgo residual não corrigido no gesso.\n\n**O que fazer.**\n1. **Avisar a família** desde o início de que pode surgir um valgo progressivo.\n2. Imobilizar com o joelho em extensão, **corrigindo qualquer valgo** e moldando em varo.\n3. Acompanhar por pelo menos **1 a 2 anos**.\n4. Se o valgo surgir, **observar**: a grande maioria **corrige espontaneamente** em alguns anos, com o crescimento.\n5. **Não fazer osteotomia precoce**: há risco de recidiva da deformidade. A correção cirúrgica (osteotomia ou hemiepifisiodese medial guiada) fica para deformidades persistentes e importantes, mais tarde.\n\n**Sobre o enunciado.** A questão fala em \"região proximal da diáfise\", mas o fenômeno é descrito nas fraturas metafisárias proximais, como explica o alerta.",
+  "correta": "**Resposta provável: Certo.** Após fratura proximal da tíbia na criança, sobretudo metafisária e incompleta, a sequela mais característica é o **valgo progressivo** (fenômeno de Cozen), que costuma surgir meses depois e frequentemente corrige com o crescimento.",
   "incorretas": {
-   "B": "**Errado se a banca pretendia a fratura metafisária de Cozen.** Seria defensável se a frase fosse lida literalmente como qualquer fratura diafisária proximal."
+   "B": "**Errado** ignoraria o fenômeno de Cozen, a sequela clássica dessas fraturas e um ponto frequente de orientação aos pais. A ressalva sobre a localização exata está no alerta."
   },
-  "alerta": "Não há gabarito oficial localizado, e esta questão não conta no desempenho. Mantemos a resposta provável A. A deformidade progressiva em valgo, fenômeno de Cozen, é descrita classicamente após fratura metafisária proximal da tíbia; o enunciado diz “região proximal da diáfise”, expressão menos precisa e que não deve ser generalizada para toda fratura diafisária.",
-  "conceito": "**O valgo pós-traumático proximal é conhecido como fenômeno de Cozen.** Após fratura metafisária proximal da tíbia na criança, sobretudo traço incompleto, o eixo pode migrar gradualmente para valgo meses depois da consolidação. Crescimento assimétrico e alterações periosteais são mecanismos propostos. O exame de alta não basta: o alinhamento precisa ser seguido durante o crescimento.\n\n**Localização da fratura muda a previsão.** A lesão clássica é metafisária, junto à fise proximal, e não qualquer fratura da diáfise. Muitos casos melhoram parcialmente com o tempo; deformidade persistente e sintomática pode requerer crescimento guiado. Acompanhamento radiográfico compara o eixo com a perna contralateral e evita tratar cedo demais um valgo que ainda pode remodelar.",
-  "correta": "**Resposta provável A para a fratura proximal metafisária: valgo tardio é sua sequela característica.** A expressão “diáfise proximal” merece a ressalva acima.",
   "referencias": [
-   "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 5ª edição, p. 1081."
+   "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 5ª edição, p. 1081.",
+   "Cozen L. Fracture of the proximal portion of the tibia in children followed by valgus deformity. Surg Gynecol Obstet. 1953;97(2):183-188."
   ],
+  "alerta": "Não há gabarito oficial localizado, e esta questão não conta no desempenho. Mantemos a resposta provável A. A deformidade progressiva em valgo, fenômeno de Cozen, é descrita classicamente após fratura metafisária proximal da tíbia; o enunciado diz “região proximal da diáfise”, expressão menos precisa e que não deve ser generalizada para toda fratura diafisária.",
   "provavel": "A",
-  "geradoEm": "2026-10-01",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0819": {
