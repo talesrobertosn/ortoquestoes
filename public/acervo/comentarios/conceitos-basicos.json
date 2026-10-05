@@ -2385,17 +2385,18 @@
   "conferido": false
  },
  "conceitos-basicos-0252": {
-  "conceito": "### O que é o CORA\nO ponto onde o **eixo proximal** e o **eixo distal** se cruzam.\n\n### A regra da coerência\n- Pode-se usar **eixo anatômico** dos dois lados, ou **eixo mecânico** dos dois lados.\n- ==Nunca misturar==: anatômico com mecânico gera um ponto que não corresponde a CORA nenhum.\n\n### Na tíbia\nOs eixos anatômico e mecânico da tíbia são **praticamente paralelos e próximos**, por isso na prática se usa qualquer um, desde que do mesmo tipo. No **fêmur** eles divergem (cerca de 6 a 7°), e a regra pesa mais.\n\n### Depois de achar o CORA\nOsteotomia no nível do CORA, com dobradiça nele: corrige sem translação.\n\n> **Na prova:** CORA = cruzamento dos ==eixos do mesmo tipo== (mecânico com mecânico).",
-  "correta": "**Onde os eixos mecânicos proximal e distal se encontram.**",
+  "conceito": "**O centro de rotação da angulação (CORA).** Paley sistematizou o planejamento da correção de deformidades. Toda deformidade angular tem um ponto em que a angulação \"acontece\": o **CORA**.\n\n**Como encontrar.**\n1. Traçar o **eixo proximal** do segmento (o eixo do fragmento acima da deformidade).\n2. Traçar o **eixo distal** (o eixo do fragmento abaixo).\n3. O **ponto em que os dois eixos se cruzam** é o CORA, e o ângulo entre eles é a magnitude da deformidade.\n\n**A regra da coerência.** Os dois eixos devem ser do **mesmo tipo**: **mecânico com mecânico** ou **anatômico com anatômico**. Misturar um eixo anatômico de um lado com um mecânico do outro gera um ponto que não corresponde a deformidade nenhuma. Paley e colaboradores descreveram o método nos planos frontal e sagital.\n\n| Osso | Relação entre eixos | Implicação |\n|---|---|---|\n| **Tíbia** | Eixos anatômico e mecânico quase **paralelos e muito próximos** | Na prática, pode-se usar qualquer um dos dois, desde que o mesmo nos dois fragmentos |\n| Fêmur | Eixos divergem cerca de 6 a 7 graus | É essencial saber qual se está usando |\n\n**Por que o CORA importa.**\n- **Osteotomia no CORA**: corrige angulação sem criar translação.\n- **Osteotomia fora do CORA**: corrige o ângulo, mas gera **translação** (deslocamento) secundária, a não ser que se translade intencionalmente o fragmento.\n- **CORA fora do osso** ou deformidade com dois CORAs indicam deformidade multiapical ou com translação.\n\n**Não confundir** com o ponto mais convexo da cortical: a cortical mais saliente nem sempre coincide com o cruzamento dos eixos, sobretudo em deformidades com translação.\n\n> CORA: cruzamento dos eixos proximal e distal do mesmo tipo (ambos mecânicos ou ambos anatômicos).",
+  "correta": "**B: No qual eixo mecânico proximal e distal se encontram.** O CORA é o cruzamento dos eixos proximal e distal; usando eixos mecânicos dos dois lados, mantém-se a coerência exigida pelo método.",
   "incorretas": {
-   "A": "**Ápice aparente.**\n- Só coincide com o CORA sem translação.",
-   "C": "**Mistura eixos.**\n- A intersecção não é um CORA.",
-   "D": "**Mistura eixos.**"
+   "A": "**O ponto mais convexo da cortical** é uma referência visual que pode não coincidir com o cruzamento dos eixos, especialmente quando há translação.",
+   "C": "**Mecânico proximal com anatômico distal** mistura tipos de eixo, gerando um ponto sem significado.",
+   "D": "**Anatômico proximal com mecânico distal** também mistura tipos de eixo e não define o CORA."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 30"
+   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 30",
+   "Paley D, Herzenberg JE, Tetsworth K, McKie J, Bhave A. Deformity planning for frontal and sagittal plane corrective osteotomies. Orthop Clin North Am. 1994;25(3):425-465."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "conceitos-basicos-0253": {
