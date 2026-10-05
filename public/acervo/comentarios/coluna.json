@@ -4258,6 +4258,120 @@
   "geradoEm": "2026-10-01",
   "conferido": false
  },
+ "coluna-0358": {
+  "conceito": "**Radiculopatia S1: o quadro típico.** A raiz S1 é comprimida principalmente por hérnias paramedianas no disco L5-S1 (raiz descendente) ou por estenose do recesso lateral nesse nível.\n\n**Exame da raiz S1.**\n\n| Componente | Achado |\n|---|---|\n| Motor | **Tríceps sural** (flexão plantar), fibulares (eversão), glúteo máximo |\n| Sensitivo | Face posterior da panturrilha, **planta**, borda lateral do pé, quinto dedo |\n| Reflexo | **Aquileu** diminuído ou abolido |\n| Testes | Lasègue positivo; dificuldade para andar na ponta dos pés |\n\n**Comparação com outras raízes.**\n- **L4**: quadríceps, tibial anterior, face medial da perna, reflexo patelar.\n- **L5**: extensor longo do hálux, dorsiflexão, dorso do pé e hálux, sem reflexo confiável.\n- **L2 e L3**: flexão do quadril, adução, face anterior da coxa.\n\n**Atenção ao diabetes.** A neuropatia diabética também pode reduzir o reflexo aquileu (geralmente bilateral e simétrico) e causar parestesia plantar \"em bota\". No caso, a fraqueza do tríceps sural com dor lombar intensa sugere compressão radicular, mas a neuropatia deve entrar no diferencial e pode ser esclarecida pela eletroneuromiografia.\n\n> Fraqueza do tríceps sural, parestesia plantar e aquileu diminuído: raiz S1.",
+  "correta": "**E: S1.** A fraqueza do tríceps sural (flexão plantar), a parestesia na região plantar e a diminuição do reflexo aquileu formam a tríade da radiculopatia S1. O diabetes pode contribuir para a alteração do reflexo, mas o conjunto motor, sensitivo e reflexo aponta para S1.",
+  "incorretas": {
+   "A": "**L3** afeta a flexão do quadril e a extensão do joelho, com alteração sensitiva na face anterior da coxa e no joelho. Não causa fraqueza do tríceps sural.",
+   "B": "**L2** afeta a flexão do quadril e a adução, com sensibilidade na face anterior e medial da coxa proximal. Não tem relação com o aquileu.",
+   "C": "**L4** afeta o quadríceps e o tibial anterior, com sensibilidade na face medial da perna e diminuição do reflexo patelar, não do aquileu.",
+   "D": "**L5** afeta a extensão do hálux e a dorsiflexão, com sensibilidade no dorso do pé. Não altera o reflexo aquileu nem a flexão plantar de forma significativa."
+  },
+  "referencias": [
+   "Hoppenfeld S. Propedêutica ortopédica: coluna e extremidades. Atheneu.",
+   "Herkowitz HN et al. Rothman-Simeone The Spine. Elsevier. Hérnia discal lombar."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "coluna-0359": {
+  "conceito": "**Espondilolistese displásica (Wiltse I) e o risco neurológico.** Nas formas de espondilolistese do adolescente, a displásica e a ístmica são as mais comuns em L5-S1, mas se comportam de forma diferente.\n\n**Displásica (tipo I).**\n- Malformação congênita das facetas de L5-S1 (orientação sagital, hipoplasia) e muitas vezes espinha bífida de S1.\n- O **arco posterior está íntegro**: quando L5 desliza para frente, leva junto o arco, que **estreita o canal** e comprime as raízes sacrais e a cauda equina, mesmo com deslizamentos moderados.\n- **Maior risco de déficit neurológico** (inclusive síndrome da cauda equina) e de **progressão** para alto grau e espondiloptose, sobretudo durante o estirão.\n- Frequentemente com isquiotibiais muito tensos e alterações de marcha.\n\n**Ístmica (tipo II).**\n- Defeito da pars interarticularis: o arco posterior fica para trás, e o canal até se alarga no nível do deslizamento.\n- Déficit neurológico menos frequente e mais tardio (radiculopatia L5 pelo tecido fibroso do defeito).\n- Mais comum em atletas (fratura por estresse).\n\n**Tipos III a V.** Degenerativa (adultos acima de 50 anos), traumática e patológica; raramente afetam adolescentes.\n\n| Tipo | Arco posterior | Risco neurológico |\n|---|---|---|\n| I displásica | Íntegro, desliza junto | **Alto** |\n| II ístmica | Separado pelo defeito | Menor |\n\n> No adolescente, a espondilolistese displásica (tipo I) tem maior risco de déficit neurológico e progressão.",
+  "correta": "**A: I.** Na espondilolistese displásica (tipo I de Wiltse-Newman), o arco posterior de L5 está íntegro e desliza junto com o corpo, estreitando o canal e comprimindo a cauda equina. Por isso, tem maior risco de déficit neurológico e de progressão para deslizamentos de alto grau, especialmente durante o estirão de crescimento.",
+  "incorretas": {
+   "B": "**O tipo II (ístmica)** é o mais comum no adolescente esportista, mas o defeito da pars deixa o arco posterior para trás, o que protege o canal. O risco neurológico é menor que no tipo displásico.",
+   "C": "**O tipo III (degenerativa)** ocorre em adultos acima de 50 anos, geralmente em L4-L5, e não em adolescentes.",
+   "D": "**O tipo IV (traumática)** resulta de fraturas agudas de outras partes do arco posterior; é rara e não corresponde ao quadro.",
+   "E": "**O tipo V (patológica)** decorre de doenças ósseas, como tumores ou infecções, e também não corresponde ao adolescente esportista."
+  },
+  "referencias": [
+   "Wiltse LL, Newman PH, Macnab I. Classification of spondylolisis and spondylolisthesis. Clin Orthop Relat Res. 1976;(117):23-29.",
+   "Herkowitz HN et al. Rothman-Simeone The Spine. Elsevier. Espondilólise e espondilolistese."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "coluna-0360": {
+  "alerta": "Pela classificação de Grauer e pelas séries de parafuso anterior, o traço favorável ao parafuso anterior é o que vai de anterossuperior para posteroinferior (tipo IIB), perpendicular ao parafuso. O traço de anteroinferior para posterossuperior (tipo IIC, alternativa considerada correta) é desfavorável, porque o parafuso, paralelo ao traço, tende a deslocar o fragmento. Além disso, a classificação de Anderson e D'Alonzo não aborda o traço oblíquo. O gabarito oficial (C) foi mantido, mas diverge da literatura.",
+  "conceito": "**Parafuso anterior do odontoide.** É uma osteossíntese direta: um ou dois parafusos introduzidos pela borda anteroinferior do corpo de C2 até a ponta do dente, comprimindo o foco da fratura tipo II. Preserva a rotação C1-C2, ao contrário da artrodese posterior.\n\n**Indicações ideais.**\n- Fratura tipo II recente (menos de cerca de 6 meses).\n- Redução possível.\n- **Traço favorável**: o parafuso deve cruzar o traço de forma perpendicular. Por isso, o traço ideal vai de **anterossuperior para posteroinferior** (Grauer IIB) ou é horizontal (IIA).\n- Ligamento transverso íntegro.\n- Boa qualidade óssea.\n- Anatomia que permita a trajetória (sem tórax em barril ou cifose cervical que impeça).\n\n**Contraindicações.**\n- **Traço de anteroinferior para posterossuperior** (Grauer IIC): o parafuso fica quase paralelo ao traço e, ao ser apertado, o fragmento escorrega.\n- Cominuição da base.\n- Ruptura do ligamento transverso.\n- Osteoporose importante.\n- Fraturas antigas (pseudoartrose).\n\n**Classificação de Grauer (modificação do tipo II).**\n\n| Subtipo | Descrição | Parafuso anterior |\n|---|---|---|\n| IIA | Sem desvio | Geralmente conservador |\n| IIB | Traço de anterossuperior a posteroinferior | Favorável |\n| IIC | Traço de anteroinferior a posterossuperior ou cominuição | Desfavorável; preferir artrodese posterior C1-C2 |\n\n> Parafuso anterior do odontoide: traço perpendicular ao parafuso (anterossuperior para posteroinferior).",
+  "correta": "**C: Traço oblíquo que se estende de anteroinferior para posterossuperior (gabarito oficial).** A banca considerou essa a situação de indicação do parafuso canulado. Pela literatura atual (Grauer), porém, esse traço é desfavorável, porque fica paralelo à trajetória do parafuso; o traço favorável é o de anterossuperior para posteroinferior. Por isso há uma ressalva nesta questão.",
+  "incorretas": {
+   "A": "**Fragmentação (cominuição) da base** é contraindicação ao parafuso anterior, porque não há osso contínuo para a compressão. Nesses casos, prefere-se a artrodese posterior C1-C2.",
+   "B": "**Fratura instável do atlas associada** pode exigir fixação mais ampla (C1-C2 ou occipitocervical). Não é uma indicação para o parafuso anterior isolado.",
+   "D": "**Traço de anteroinferior para posteroinferior** não descreve uma orientação oblíqua coerente no plano sagital (as duas extremidades estariam na mesma altura inferior). É um distrator.",
+   "E": "**Traço de anteroinferior para posterolateral** mistura planos diferentes (sagital e coronal) e não corresponde às descrições usadas para indicar o parafuso."
+  },
+  "referencias": [
+   "Grauer JN, Shafi B, Hilibrand AS, et al. Proposal of a modified, treatment-oriented classification of odontoid fractures. Spine J. 2005;5(2):123-129.",
+   "Apfelbaum RI, Lonser RR, Veres R, Casey A. Direct anterior screw fixation for recent and remote odontoid fractures. J Neurosurg. 2000;93(2 Suppl):227-236."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "coluna-0361": {
+  "alerta": "As recomendações atuais para a radiculopatia cervical sem déficit motor favorecem o tratamento conservador ativo (analgesia, fisioterapia e retorno às atividades), e o repouso absoluto e o uso prolongado de colar não são recomendados. A alternativa D descreve essa abordagem. O gabarito oficial (C) foi mantido; o uso do colar, quando adotado, deve ser por curto período.",
+  "conceito": "**Radiculopatia cervical: história natural e tratamento.** A maioria dos pacientes com radiculopatia cervical por hérnia discal melhora com tratamento não cirúrgico em semanas a poucos meses; a hérnia, especialmente a mole, pode reduzir de volume.\n\n**Tratamento conservador.**\n- **Analgesia**: anti-inflamatórios, analgésicos, medicamentos para dor neuropática; corticoide oral por curto período em casos selecionados.\n- **Imobilização**: colar cervical macio por poucos dias pode aliviar a dor aguda, mas o uso prolongado causa rigidez e atrofia e não é recomendado.\n- **Repouso relativo**: evitar atividades que pioram a dor; o repouso absoluto prolongado não traz benefício.\n- **Fisioterapia**: após a fase aguda, exercícios de mobilidade, alongamento e fortalecimento da musculatura cervical e escapular; tração intermitente em casos selecionados.\n- **Infiltração**: bloqueio transforaminal ou epidural com corticoide para dor radicular persistente.\n\n**Indicações cirúrgicas.**\n- Déficit motor progressivo ou importante.\n- Mielopatia associada.\n- Dor radicular incapacitante que não melhora após cerca de 6 a 12 semanas de tratamento adequado.\n\n**Cirurgias.** Discectomia e artrodese anterior (ACDF), artroplastia discal ou foraminotomia posterior (boa opção para hérnias foraminais moles).\n\n**O caso.** Dor moderada, parestesia leve em C6 há 30 dias, eletroneuromiografia sem alterações (sem lesão axonal) e hérnia foraminal: indicação clara de **tratamento conservador**.\n\n> Radiculopatia cervical sem déficit: tratamento conservador; cirurgia só se falhar ou houver déficit.",
+  "correta": "**C: Analgesia, uso de colar cervical e repouso absoluto (gabarito oficial).** O paciente tem radiculopatia C6 leve, há 30 dias, sem alterações na eletroneuromiografia, e o tratamento indicado é conservador. A banca escolheu a opção com analgesia, colar e repouso. Vale saber que as recomendações atuais preferem o tratamento ativo (analgesia e fisioterapia progressiva), com colar apenas por curto período e sem repouso absoluto, o que motivou a ressalva.",
+  "incorretas": {
+   "A": "**Descompressão e fusão por via anterior** é indicada em déficit motor progressivo, mielopatia ou dor refratária após 6 a 12 semanas. O paciente tem quadro leve e sem déficit.",
+   "B": "**Descompressão e fusão por via posterior** também não está indicada neste momento. Para hérnia foraminal, a foraminotomia posterior sem fusão é uma opção, mas apenas após falha do tratamento conservador.",
+   "D": "**Repouso, analgesia e fisioterapia com alongamento e fortalecimento progressivo** corresponde ao tratamento conservador ativo recomendado nas diretrizes atuais. Por isso existe a ressalva; a banca, no entanto, considerou a alternativa C.",
+   "E": "**Infiltração epidural com corticoide** é opção para dor radicular persistente que não responde ao tratamento inicial. Não costuma ser a primeira medida em quadro leve de 30 dias."
+  },
+  "referencias": [
+   "Bono CM, Ghiselli G, Gilbert TJ, et al. An evidence-based clinical guideline for the diagnosis and treatment of cervical radiculopathy from degenerative disorders. Spine J. 2011;11(1):64-72.",
+   "Herkowitz HN et al. Rothman-Simeone The Spine. Elsevier. Radiculopatia cervical."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "coluna-0362": {
+  "conceito": "**Tuberculose vertebral (mal de Pott): patologia.** A coluna é o local mais comum de tuberculose osteoarticular, principalmente a transição toracolombar.\n\n**Via de disseminação.** O Mycobacterium tuberculosis chega à coluna por via **hematogênica**, a partir de um foco primário (geralmente pulmonar). A via **arterial** é considerada a principal; o plexo venoso de Batson (sem válvulas) também é uma via proposta, mas não a típica.\n\n**Formas de acometimento.**\n- **Paradiscal**: a mais comum. A infecção começa na **porção anterior** do corpo vertebral, perto da placa terminal, e atinge a vértebra vizinha.\n- **Central**: no centro do corpo, simulando tumor e levando a colapso (vertebra plana).\n- **Anterior (subligamentar)**: o pus se espalha por baixo do **ligamento longitudinal anterior**, erodindo a face anterior de várias vértebras (aspecto escavado) e criando **múltiplos níveis** de envolvimento, às vezes com lesões salteadas.\n- **Posterior**: acometimento do arco neural, raro.\n\n**O disco.** É relativamente **preservado no início**, porque o bacilo não tem as enzimas proteolíticas das bactérias piogênicas. O disco é envolvido mais tardiamente, por perda da nutrição e invasão a partir das vértebras vizinhas.\n\n**Consequências.** Colapso anterior com cifose angular (giba), abscessos frios paravertebrais e do psoas, e paraplegia de Pott (por compressão ativa ou, tardiamente, pela deformidade).\n\n> Pott: começa na porção anterior do corpo, poupa o disco no início e se espalha por baixo dos ligamentos para vários níveis.",
+  "correta": "**C: A disseminação subligamentar pode criar múltiplos níveis de envolvimento de corpos vertebrais.** O pus tuberculoso se espalha por baixo do ligamento longitudinal anterior, erodindo a face anterior de várias vértebras e criando acometimento em múltiplos níveis, às vezes com lesões salteadas. É uma característica marcante da tuberculose vertebral.",
+  "incorretas": {
+   "A": "**A porção anterior do corpo vertebral é a mais afetada**, não raramente. A forma paradiscal, que começa na parte anterior do corpo junto à placa terminal, é a mais comum.",
+   "B": "**O foco inicial raramente é o arco posterior.** A forma posterior é incomum; a maioria das infecções começa no corpo vertebral.",
+   "D": "**O disco é relativamente preservado na fase inicial**, ao contrário da espondilodiscite piogênica. O envolvimento discal é mais tardio.",
+   "E": "**A disseminação hematogênica típica é arterial.** O plexo venoso de Batson é uma via proposta, mas não é a via típica de deposição do bacilo."
+  },
+  "referencias": [
+   "Rajasekaran S, Soundararajan DCR, Shetty AP, Kanna RM. Spinal tuberculosis: current concepts. Global Spine J. 2018;8(4 Suppl):96S-108S.",
+   "Garg RK, Somvanshi DS. Spinal tuberculosis: a review. J Spinal Cord Med. 2011;34(5):440-454."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "coluna-0363": {
+  "conceito": "**Osteossarcoma parosteal.** É um osteossarcoma de **superfície**, de **baixo grau**, que nasce da camada externa do periósteo e cresce para fora do osso.\n\n**Características.**\n- **Idade**: adultos jovens, geralmente na **terceira e quarta décadas** (mais velhos que no osteossarcoma clássico); discreto predomínio feminino.\n- **Localização**: **face posterior do fêmur distal** (região poplítea) em cerca de 70% dos casos; também úmero proximal e tíbia.\n- **Clínica**: massa palpável de crescimento lento, pouca dor, limitação da flexão do joelho.\n- **Radiografia**: massa **densa, lobulada**, \"colada\" à cortical, envolvendo parcialmente o osso; mais **densa no centro (base) e menos na periferia** (o oposto da miosite ossificante, que amadurece de fora para dentro); pode haver uma linha radiotransparente entre a massa e a cortical (string sign). Invasão medular limitada ou ausente.\n- **Prognóstico**: bom, com sobrevida acima de 90% após ressecção ampla; quimioterapia geralmente não é necessária, salvo desdiferenciação.\n\n**Diagnóstico diferencial.**\n\n| Lesão | Diferença |\n|---|---|\n| Osteossarcoma clássico | Intramedular, alto grau, adolescentes, destruição e reação periosteal agressiva |\n| Osteossarcoma periosteal | Superfície, grau intermediário, diáfise da tíbia e fêmur, aspecto em raios de sol, componente condroide |\n| Miosite ossificante | Ossificação mais madura na periferia, história de trauma |\n| Osteocondroma | Continuidade cortical e medular com o osso |\n\n> Massa densa e lobulada na face posterior do fêmur distal de adulto jovem: osteossarcoma parosteal.",
+  "correta": "**B: Osteossarcoma parosteal.** A paciente de 35 anos tem massa palpável na região posterior da coxa distal e, na radiografia, uma lesão de superfície, lobulada e densa, mais densa no centro que na periferia, com pequeno envolvimento medular. É o quadro típico do osteossarcoma parosteal, tumor de baixo grau e bom prognóstico com ressecção ampla.",
+  "incorretas": {
+   "A": "**O osteossarcoma clássico** é intramedular, de alto grau, mais comum em adolescentes, com destruição óssea e reação periosteal agressiva (triângulo de Codman, raios de sol). A lesão do caso é de superfície e com pouco acometimento medular.",
+   "C": "**Osteossarcoma de baixo grau** é uma descrição genérica que inclui o parosteal e o central de baixo grau. A descrição radiográfica de lesão de superfície densa e lobulada aponta especificamente para o parosteal.",
+   "D": "**Condrossarcoma desdiferenciado** é um tumor de alto grau em idosos, com áreas de condrossarcoma de baixo grau e componente agressivo. Não se apresenta como massa de superfície densa em adulto jovem.",
+   "E": "**Condrossarcoma de células claras** é raro, epifisário (geralmente cabeça do fêmur ou do úmero) e lítico, simulando condroblastoma. Não corresponde à lesão de superfície densa."
+  },
+  "referencias": [
+   "Okada K, Frassica FJ, Sim FH, Beabout JW, Bond JR, Unni KK. Parosteal osteosarcoma: a clinicopathological study. J Bone Joint Surg Am. 1994;76(3):366-378.",
+   "Greenspan A. Radiologia ortopédica: uma abordagem prática. Guanabara Koogan. Osteossarcomas de superfície."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "coluna-0364": {
+  "conceito": "**Escala de Frankel.** Criada em 1969, foi a primeira classificação amplamente usada para a gravidade da lesão medular. Foi a base da escala da ASIA (AIS), que a aperfeiçoou com critérios mais objetivos.\n\n| Frankel | Descrição |\n|---|---|\n| A | Completa: sem função motora ou sensitiva abaixo do nível |\n| B | Apenas sensibilidade preservada abaixo do nível |\n| C | Motora preservada, mas inútil (sem função) |\n| D | Motora útil (consegue andar, com ou sem auxílio) |\n| **E** | **Normal**: função motora e sensitiva normais |\n\n**Comparação com a ASIA (AIS).**\n- A ASIA define a completude pela preservação sacral (S4-S5).\n- Separa C e D pela força dos músculos-chave abaixo do nível: mais da metade com força menor que 3 (C) ou pelo menos metade com força 3 ou mais (D).\n- E: normal.\n\n**Uso.** A escala de Frankel ainda aparece em estudos antigos e em algumas provas, mas a classificação ASIA é a padrão atual.\n\n> Frankel E: sem comprometimento motor ou sensitivo.",
+  "correta": "**A: Não comprometimento sensitivo ou motor.** O grau E de Frankel corresponde à função motora e sensitiva normais, ou seja, sem comprometimento neurológico. Pode haver reflexos anormais, mas a força e a sensibilidade estão preservadas.",
+  "incorretas": {
+   "B": "**Ausência de função sensitiva e motora abaixo do nível** descreve a lesão completa, Frankel A.",
+   "C": "**Preservação sensitiva sem função motora** corresponde a Frankel B (ou ASIA B, com preservação sacral). Não é o grau E.",
+   "D": "**Função motora com mais da metade dos músculos-chave com força menor que 3** corresponde ao grau C (na definição da ASIA). A descrição de não preservação sensitiva é, além disso, incoerente com a definição.",
+   "E": "**Pelo menos metade dos músculos-chave com força de 3 ou mais** corresponde ao grau D. O grau E exige função normal."
+  },
+  "referencias": [
+   "Frankel HL, Hancock DO, Hyslop G, et al. The value of postural reduction in the initial management of closed injuries of the spine with paraplegia and tetraplegia. Paraplegia. 1969;7(3):179-192.",
+   "Kirshblum SC, Burns SP, Biering-Sorensen F, et al. International standards for neurological classification of spinal cord injury (revised 2011). J Spinal Cord Med. 2011;34(6):535-546."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
  "coluna-0366": {
   "conceito": "**Reposição volêmica inicial no politraumatizado.** O ATLS recomenda iniciar com **cristalóide isotônico aquecido**, em volume limitado, e passar precocemente para hemoderivados quando houver sinais de hemorragia.\n\n**Ringer lactato ou soro fisiológico.**\n- O **Ringer lactato** é o cristalóide de preferência no trauma. Sua composição é mais próxima do plasma; o lactato é metabolizado no fígado em bicarbonato, o que ajuda a corrigir a acidose.\n- O **soro fisiológico 0,9%**, em grandes volumes, causa **acidose metabólica hiperclorêmica**, que agrava a coagulopatia e a disfunção renal. É uma alternativa aceitável, mas não a preferida.\n- O **Ringer simples** não tem tampão (lactato), e por isso não ajuda na acidose.\n- Coloides como a **albumina** não mostraram benefício no trauma e são mais caros; no TCE, a albumina se associou a maior mortalidade (estudo SAFE).\n\n**Volume inicial.** As diretrizes atuais (ATLS 10ª edição) recomendam bolus de cerca de **1 litro** em adultos (20 mL/kg em crianças), avaliando a resposta. Volumes maiores aumentam o risco de coagulopatia dilucional e hipotermia. Na hemorragia, passa-se a hemoderivados em proporção balanceada.\n\n**O caso.** Hipotensão com **bradicardia** (FC 54) e extremidades bem perfundidas em vítima de capotamento sugere **choque neurogênico** (lesão medular alta), e não apenas hemorragia. Ainda assim, a primeira medida é repor volume com cristalóide, já que a hemorragia não pode ser descartada no início.\n\n| Solução | Papel no trauma |\n|---|---|\n| Ringer lactato | Preferencial |\n| Soro fisiológico 0,9% | Alternativa; risco de acidose hiperclorêmica |\n| Ringer simples | Sem tampão |\n| Albumina | Sem benefício; evitar no TCE |\n\n> Trauma: iniciar com Ringer lactato aquecido.",
   "correta": "**B: Ringer lactato.** É o cristalóide isotônico recomendado pelo ATLS para a reposição inicial no trauma. Sua composição é próxima à do plasma, e o lactato, convertido em bicarbonato, ajuda a corrigir a acidose do choque. Deve ser aquecido e infundido em volume controlado, com reavaliação frequente e passagem precoce para hemoderivados se houver hemorragia.",
