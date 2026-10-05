@@ -1346,14 +1346,19 @@
   "conferido": false
  },
  "trauma-0116": {
+  "conceito": "**Por que classificar as partes moles.** O prognóstico de uma fratura depende tanto do osso quanto da **pele, do músculo e da circulação** ao redor. **Tscherne e Oestern** criaram uma classificação para a lesão de partes moles, com graus para fraturas **fechadas** e **expostas**.\n\n**Fraturas fechadas.**\n\n| Grau | Lesão de partes moles |\n|---|---|\n| 0 | Mínima, trauma indireto, traço simples |\n| 1 | Escoriação ou contusão superficial, pelo fragmento de dentro para fora |\n| 2 | Contusão **profunda** e contaminada, com **risco iminente** de síndrome compartimental |\n| **3** | Contusão extensa, esmagamento, descolamento subcutâneo, lesão muscular grave, **síndrome compartimental estabelecida** ou lesão vascular |\n\n**Fraturas expostas.**\n\n| Grau | Lesão |\n|---|---|\n| I | Ferida pequena, de dentro para fora, pouca contaminação |\n| II | Ferida com contusão de pele e partes moles moderada |\n| **III** | Lesão extensa de partes moles, frequentemente com lesão vascular ou nervosa |\n| IV | Amputação subtotal ou total |\n\n**A síndrome compartimental no grau 3.** A síndrome compartimental **descompensada** é o critério que eleva a lesão ao **grau 3** na classificação de Tscherne, porque indica destruição muscular por isquemia. No grau 2, há apenas o risco iminente.\n\n**Fratura exposta e síndrome compartimental.** A ferida aberta **não descomprime** o compartimento de forma confiável: a fáscia geralmente fica íntegra ou se abre só num ponto pequeno. Por isso, fraturas expostas da tíbia também podem desenvolver síndrome compartimental, que exige **fasciotomia** dos quatro compartimentos da perna. O enunciado fala em fratura exposta, mas o critério de síndrome compartimental estabelecida, na classificação de Tscherne, corresponde ao grau 3.",
+  "correta": "**Correta: C (3).** Na classificação de Tscherne, a lesão de partes moles com **síndrome compartimental estabelecida** corresponde ao **grau 3**, por indicar destruição muscular extensa.",
   "incorretas": {
-   "A": "O grau 1 é a escoriação ou contusão superficial.",
-   "B": "O grau 2 tem risco iminente, mas sem a síndrome instalada.",
-   "D": "O grau 4 só existe nas expostas e corresponde à amputação."
+   "A": "O **grau 1** é a escoriação ou contusão superficial, sem comprometimento profundo.",
+   "B": "O **grau 2** inclui contusão profunda com **risco iminente** de síndrome compartimental, ainda não instalada.",
+   "D": "O **grau 4** existe apenas para fraturas **expostas** e corresponde à **amputação** subtotal ou total."
   },
-  "conceito": "**Tscherne** classifica a **lesão de partes moles** das fraturas, porque a pele e o músculo pesam tanto quanto o osso no prognóstico:\n\n**fraturas fechadas**:\n\n**grau 0**: lesão de partes moles mínima, trauma indireto;\n\n**grau 1**: escoriação ou contusão superficial, pelo fragmento de dentro para fora;\n\n**grau 2**: contusão profunda e contaminada, com **risco iminente** de síndrome compartimental;\n\n**grau 3**: contusão extensa, esmagamento, desenluvamento, lesão vascular grave ou **síndrome compartimental instalada**;\n\n**fraturas expostas**: O1 a O4, sendo o O4 a amputação subtotal ou total.\n\n**A pegadinha**: a **síndrome compartimental instalada** já coloca a lesão de partes moles no **grau 3**. O grau 2 tem apenas o **risco** dela.\n\n**Na prova**: a síndrome compartimental corresponde ao **grau 3** de Tscherne.",
-  "correta": "A síndrome compartimental instalada classifica a lesão de partes moles como grau 3.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tscherne H, Oestern HJ. Die Klassifizierung des Weichteilschadens bei offenen und geschlossenen Frakturen. Unfallheilkunde. 1982;85(3):111-115.",
+   "Rockwood and Green's Fractures in Adults, 9ª edição, capítulo de classificação das fraturas"
+  ],
+  "alerta": "O enunciado fala em fratura exposta, mas o critério de síndrome compartimental estabelecida pertence ao grau 3 das fraturas fechadas na classificação de Tscherne. Mantivemos o gabarito oficial (grau 3).",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0117": {

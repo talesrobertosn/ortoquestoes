@@ -60,16 +60,19 @@
   "formato": "corrido"
  },
  "osteometabolicas-0006": {
-  "conceito": "**Onde começa.** A tuberculose chega pelas **artérias segmentares**, que irrigam sobretudo a porção anterior do corpo vertebral, junto à placa terminal. O foco começa no **terço anterior do corpo** e progride **por baixo do ligamento longitudinal anterior** até a vértebra vizinha. Só depois compromete o **disco**, que é avascular e resiste; por isso, nas radiografias iniciais, a **altura discal costuma estar preservada**, ao contrário da espondilodiscite piogênica.\n\n**O resultado** é a perda da coluna anterior, que produz a **cifose angular** do mal de Pott, com abscessos frios paravertebrais frequentes.\n\n**Na prova:** Pott começa no **terço anterior do corpo**, com disco preservado no início.",
-  "correta": "**Terço anterior do corpo vertebral.** É a região irrigada pelas artérias segmentares, onde o bacilo se instala.",
+  "conceito": "**Por onde o bacilo chega à vértebra.** A tuberculose da coluna (mal de Pott) é disseminação **hematogênica** de um foco pulmonar ou linfonodal. O bacilo chega pelas **artérias segmentares** (que entram na região anterior e lateral do corpo, junto às placas terminais) ou pelo **plexo venoso de Batson**.\n\n**As formas de acometimento do corpo vertebral.**\n\n| Forma | Local | Frequência |\n|---|---|---|\n| **Paradiscal** | **Porção anterior do corpo, junto à placa terminal** | **A mais comum** |\n| Central | Centro do corpo | Simula tumor, colapso em vértebra plana |\n| Anterior | Sob o ligamento longitudinal anterior, erosão em festonado | Espalha-se a vários níveis |\n| Posterior | Arco vertebral, pedículos, lâminas | Rara |\n\n**A progressão típica.** O foco começa no **terço anterior** do corpo, perto da placa terminal, e se espalha **sob o ligamento longitudinal anterior** até as vértebras vizinhas. O **disco** é atingido mais tarde: por ser avascular e o bacilo não ter enzimas proteolíticas como as bactérias piogênicas, o disco resiste. Por isso, nas fases iniciais, a **altura discal é relativamente preservada**, ao contrário da espondilodiscite piogênica, em que o disco é destruído precocemente.\n\n**A deformidade.** A destruição da porção **anterior** dos corpos colapsa a coluna anterior e produz a **cifose angular** (a giba). O ápice da cifose é onde a medula corre maior risco.\n\n**Abscessos frios.** O pus se espalha sob os ligamentos e ao longo das fáscias: o abscesso do **psoas** pode descer até a virilha e a coxa.\n\n**Diagnóstico.** Ressonância: lesão de vários corpos contíguos, abscessos paravertebrais extensos com parede fina e disco relativamente preservado. Confirmação por biópsia guiada.",
+  "correta": "**Correta: D (terço anterior do corpo vertebral).** A tuberculose da coluna começa mais frequentemente no **terço anterior** do corpo vertebral, junto à placa terminal (forma paradiscal), e se espalha sob o ligamento longitudinal anterior.",
   "incorretas": {
-   "A": "**Minoria.** O arco vertebral é acometido em poucos casos.",
-   "B": "**Resiste no início.** O disco avascular é poupado, e isso ajuda a separar tuberculose de infecção piogênica.",
-   "C": "**É progressão.** O terço médio pode ser atingido depois, mas não é onde a doença começa."
+   "A": "O **arco vertebral** (forma posterior) é a localização **rara** da tuberculose da coluna.",
+   "B": "O **disco intervertebral** é acometido **depois**, e de forma relativamente tardia, por ser avascular.",
+   "C": "A forma **central** do corpo existe, mas é menos frequente que a paradiscal anterior."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
+   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição"
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "osteometabolicas-0007": {
   "conceito": "**O mecanismo.** O bisfosfonato tem afinidade pela **hidroxiapatita** e fica depositado no osso. Quando o osteoclasto reabsorve aquele ponto, **engole a droga**; os aminobisfosfonatos bloqueiam a **farnesil-pirofosfato-sintase**, e a célula perde a borda pregueada e entra em **apoptose**. É um freio: **inibe o osteoclasto**.\n\n**Diferença para o denosumabe.** O bisfosfonato **permanece no osso por anos**, então suspendê-lo não causa rebote importante, o que permite o feriado de droga. O denosumabe **não se acumula**: suspendê-lo sem transição leva a **rebote** da remodelação e risco de fraturas vertebrais múltiplas. No uso prolongado de bisfosfonato, os riscos são a **fratura atípica do fêmur** (subtrocantérica ou diafisária, transversa, com pródromo de dor na coxa) e a **osteonecrose de mandíbula**, rara em doses de osteoporose.\n\n**Na prova:** bisfosfonato **inibe o osteoclasto**.",
@@ -357,19 +360,18 @@
   "formato": "corrido"
  },
  "osteometabolicas-0030": {
-  "conceito": "**Tuberculose no cotovelo.** O cotovelo é a articulação do **membro superior** mais acometida pela tuberculose, e o ponto de partida é a ulna proximal, o **olécrano**. O quadro é de **monoartrite arrastada**, com aumento de volume, **atrofia** do tríceps e do bíceps e perda progressiva da extensão, com o cotovelo se acomodando **em flexão**; pode haver fistulização. A imagem mostra a tríade de Phemister: osteopenia periarticular, erosões marginais e espaço articular preservado por mais tempo que na infecção piogênica.\n\n**O diagnóstico** vem da **biópsia sinovial** ou óssea, com cultura, histologia e PCR. O tratamento é o esquema antituberculoso prolongado, com cirurgia para desbridamento ou sequelas.\n\n**Na prova:** tuberculose no cotovelo começa no **olécrano**, a ulna proximal.",
-  "correta": "**O olécrano.** A ulna proximal é o sítio típico de início da tuberculose no cotovelo.",
+  "conceito": "**O cotovelo e a tuberculose.** O cotovelo é a articulação do **membro superior** mais acometida pela tuberculose osteoarticular. A doença chega por via hematogênica e se instala no **osso esponjoso** bem vascularizado próximo à articulação.\n\n**Onde começa: o olécrano.** O foco inicial mais frequente é o **olécrano**, na ulna proximal: um grande bloco de osso esponjoso subcondral, rico em medula e com boa irrigação. A partir dele, a infecção rompe a cortical e invade a articulação. O úmero distal (tróclea, capítulo) e a cabeça do rádio são acometidos com menor frequência.\n\n**A evolução.**\n1. **Fase óssea**: lesão lítica no olécrano, osteopenia e pouca reação periosteal.\n2. **Fase sinovial**: derrame e sinovite com tecido de granulação.\n3. **Fase destrutiva**: erosões nas margens articulares, perda do espaço articular e, depois, abscessos frios e fístulas.\n\n**Clínica.** Monoartrite **arrastada**, com aumento de volume, **atrofia** do tríceps e do bíceps, dor moderada e **perda progressiva da extensão**: o cotovelo inflamado se acomoda em **flexão**, posição de maior volume capsular, e a cápsula se retrai.\n\n**Imagem.** A **tríade de Phemister**: osteopenia justa-articular, erosões periféricas e estreitamento lento do espaço articular, ao contrário da artrite piogênica, que destrói a cartilagem rapidamente.\n\n**Diagnóstico e tratamento.** Biópsia com cultura, pesquisa de BAAR, PCR e histologia (granuloma com necrose caseosa). Tratamento com esquema antituberculoso prolongado e fisioterapia; cirurgia para desbridamento e sequelas.",
+  "correta": "**Correta: C (o olécrano).** Na tuberculose do cotovelo, o osso mais frequentemente acometido é o **olécrano**, na ulna proximal, a partir do qual a infecção invade a articulação.",
   "incorretas": {
-   "A": "**Úmero distal.** A tróclea não é o ponto de início descrito.",
-   "B": "**Úmero distal.** O capítulo também não é o sítio típico.",
-   "D": "**Menos frequente.** A cabeça do rádio é acometida bem menos que o olécrano."
+   "A": "A **tróclea** pode ser acometida, mas com menor frequência que o olécrano.",
+   "B": "O **capítulo** também é sede menos frequente que a ulna proximal.",
+   "D": "A **cabeça do rádio** é a localização menos comum entre as citadas."
   },
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 23"
   ],
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "osteometabolicas-0031": {
   "conceito": "**Raquitismo por falha de ativação.** Na osteodistrofia renal, o problema não é falta de vitamina D na dieta, mas falha na **ativação**: o rim doente **não faz a 1-alfa-hidroxilação**, e o calcitriol cai; o rim também **não excreta fosfato**, e o **fosfato sobe**. Fosfato alto e calcitriol baixo derrubam o cálcio, e a paratireoide responde com **PTH alto**. Na criança, além do raquitismo, surgem deformidades angulares, **epifisiólise**, inclusive do fêmur proximal, e baixa estatura.\n\n**Como separar os raquitismos.** No **nutricional**, por falta de vitamina D, o fosfato é baixo e o PTH alto. No **hipofosfatêmico** ligado ao X, o fosfato é baixo e o PTH normal. No **renal**, fosfato e PTH estão ambos altos.\n\n**Na prova:** raquitismo renal é **fosfato alto e PTH alto**; os outros têm fosfato baixo.",

@@ -3312,19 +3312,19 @@
   "formato": "corrido"
  },
  "tumores-0325": {
-  "conceito": "**O item local do Mirels** tem três valores, pela carga mecânica da região: **membro superior vale 1**, porque úmero e antebraço não sustentam o peso do corpo; **membro inferior vale 2**, porque fêmur e tíbia sustentam peso a cada passo; e a região **peritrocantérica vale 3**, porque concentra as maiores forças do esqueleto, com braços de alavanca que multiplicam a carga.\n\n**Os outros itens** seguem a mesma escala de 1 a 3: a dor (leve, moderada ou funcional), o tipo de lesão (blástica, mista ou lítica) e o tamanho (menos de um terço, entre um e dois terços, ou mais de dois terços do diâmetro). Não existe zero em nenhum item. O total vai de 4 a 12: até 7, radioterapia e observação; 8, zona cinzenta; 9 ou mais, fixação profilática.\n\n**Na prova:** peritrocantérico vale **3** no Mirels.",
-  "correta": "**3.** A região peritrocantérica tem a maior pontuação do item local.",
+  "conceito": "**Fratura iminente: quando operar antes de quebrar.** Pacientes com metástase em osso longo podem fraturar com cargas mínimas. Fixar profilaticamente uma lesão de alto risco é mais simples, com menos sangramento e recuperação mais rápida do que operar depois da fratura. A **escala de Mirels** (1989) ajuda a decidir.\n\n**Os quatro itens, de 1 a 3 pontos cada.**\n- **Local**: membro superior **1**; membro inferior **2**; **peritrocantérico 3**.\n- **Dor**: leve 1; moderada 2; **funcional** (aos esforços) 3.\n- **Tipo de lesão**: blástica 1; mista 2; **lítica** 3.\n- **Tamanho** em relação ao diâmetro do osso: menos de 1/3 vale 1; de 1/3 a 2/3 vale 2; mais de 2/3 vale 3.\n\n**Por que a região peritrocantérica vale 3.** É a área do esqueleto que recebe as **maiores forças**: na marcha, o fêmur proximal suporta várias vezes o peso corporal, com grandes **momentos de flexão** (o colo funciona como um braço de alavanca) e tensões de compressão na cortical medial e de tração na lateral. Uma lesão ali tem o maior risco de fraturar com a carga do dia a dia.\n\n**Interpretação da soma (4 a 12).**\n\n| Soma | Risco de fratura | Conduta |\n|---|---|---|\n| **9 ou mais** | Cerca de 33% | **Fixação profilática** |\n| 8 | Cerca de 15% | Julgamento clínico |\n| 7 ou menos | Cerca de 4% | Radioterapia e tratamento clínico |\n\n**Na prática.** As lesões peritrocantéricas são frequentemente fixadas com **hastes cefalomedulares longas** (protegendo todo o fêmur) ou, se a cabeça e o colo estão comprometidos, tratadas com artroplastia com cimento, seguidas de radioterapia.",
+  "correta": "**Correta: D (3).** No escore de Mirels, a localização **peritrocantérica** recebe a pontuação máxima, 3 pontos, por ser a região que concentra as maiores forças do esqueleto.",
   "incorretas": {
-   "A": "**Não existe.** O mínimo por item é 1.",
-   "B": "**Membro superior.** Um ponto é para lesões no membro superior.",
-   "C": "**Membro inferior fora da região peritrocantérica.** Dois pontos são para o restante do membro inferior."
+   "A": "**Zero** não existe na escala; cada item vale no mínimo 1 ponto.",
+   "B": "**1 ponto** é a pontuação do **membro superior**.",
+   "C": "**2 pontos** correspondem ao **membro inferior** fora da região peritrocantérica."
   },
   "referencias": [
-   "Canale & Beaty: Campbell's Operative Orthopaedics, 11th Ed., p. 925 (referência indicada na prova TARO 2013, questão 79)"
+   "Canale & Beaty: Campbell's Operative Orthopaedics, 11th Ed., p. 925 (referência indicada na prova TARO 2013, questão 79)",
+   "Mirels H. Metastatic disease in long bones. A proposed scoring system for diagnosing impending pathologic fractures. Clin Orthop Relat Res. 1989;(249):256-264."
   ],
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "tumores-0326": {
   "conceito": "**A fratura de estresse que parece tumor.** Na metáfise proximal da tíbia de um adolescente ou adulto jovem ativo, a fratura por estresse pode produzir **reação periosteal**, esclerose e até massa de calo, e ser confundida com **osteossarcoma**, que tem exatamente a mesma idade e a mesma sede. As pistas que favorecem estresse são a história de aumento de treino, a dor que piora com o esforço e melhora com repouso, a **banda esclerótica linear transversa** na radiografia, perpendicular ao eixo do osso, e, na ressonância, a linha de fratura com edema, sem massa de partes moles.\n\n**O cuidado.** Diante de dúvida, repetir a imagem após algumas semanas de repouso mostra a consolidação progressiva da fratura; a biópsia de um calo exuberante pode enganar o patologista, que vê osso imaturo e atividade osteoblástica intensa. Os outros tumores da questão não fazem esse diferencial: o condroblastoma é epifisário, o condrossarcoma é do adulto, na pelve e no fêmur proximal, e o granuloma eosinofílico é lítico, sem banda esclerótica.\n\n**Na prova:** fratura de estresse da tíbia proximal tem como diferencial o **osteossarcoma**.",
