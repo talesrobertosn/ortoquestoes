@@ -602,14 +602,18 @@
   "conferido": false
  },
  "trauma-0053": {
+  "conceito": "**A fratura do enforcado.** É a **espondilolistese traumática do áxis** (C2). O nome vem dos enforcamentos judiciais, em que o nó sob o queixo causava **hiperextensão** com **distração** violenta do pescoço. Hoje, o mecanismo comum é a **hiperextensão com carga axial**, como nos acidentes automobilísticos em que a cabeça bate no para-brisa.\n\n**Onde está a lesão.** A fratura ocorre na **pars interarticularis** de C2 (a porção do arco entre as facetas articulares superior e inferior), geralmente **bilateral**. O corpo de C2 se separa do seu arco posterior e pode escorregar para a frente sobre C3.\n\n**Por que o canal costuma ficar livre.** Como o traço separa o corpo do arco, o canal vertebral **se alarga** em vez de se estreitar. Por isso, a maioria dos pacientes não tem déficit neurológico, apesar da gravidade aparente da fratura.\n\n**A classificação de Levine e Edwards (Effendi modificada).**\n\n| Tipo | Achado | Tratamento |\n|---|---|---|\n| **I** | Desvio menor que **3 mm**, sem angulação | Colar cervical rígido |\n| **II** | Translação maior que 3 mm e **angulação** | Tração e redução em extensão, depois halo |\n| **IIA** | **Pouca translação e grande angulação**; mecanismo de flexão e distração | **Não usar tração** (piora); redução em extensão e halo |\n| **III** | Tipo II com **luxação das facetas** C2-C3 | **Cirurgia**: redução aberta e artrodese |\n\n**A armadilha do tipo IIA.** Nele, o disco C2-C3 está rompido e a lesão tem componente de **distração**. A tração **aumenta** a separação e pode causar lesão neurológica. Reconhecer o tipo IIA na radiografia (angulação desproporcional à translação) é essencial.\n\n**As outras fraturas de C2.**\n- **Fratura do odontoide** (Anderson e D'Alonzo): tipo I (ponta), II (base, a mais comum e de maior risco de pseudoartrose) e III (estende-se ao corpo).\n- Fraturas do **corpo** e da **massa lateral**.\n\n**A cirurgia.** Nos casos instáveis, faz-se a artrodese **anterior** C2-C3 (discectomia e placa) ou a fixação **posterior** com parafusos na pars de C2 e nas massas laterais de C3.\n\n**O mecanismo de cada tipo de Levine e Edwards.**\n- **Tipo I**: **hiperextensão** com **carga axial**. A fratura da pars ocorre sem grande desvio.\n- **Tipo II**: **hiperextensão com carga axial**, que fratura a pars, seguida de uma **flexão** de rebote, que rompe o disco C2-C3 e faz o corpo de C2 transladar e angular.\n- **Tipo IIA**: **flexão com distração**: pouca translação e grande angulação (não usar tração).\n- **Tipo III**: **flexão com compressão**: fratura da pars com luxação das facetas C2-C3.",
+  "correta": "**Correta: D (extensão e compressão).** No tipo II de Levine e Edwards, o mecanismo inicial é a **hiperextensão com carga axial (compressão)**, que fratura a pars de C2, seguida de uma flexão de rebote que produz a translação e a angulação.",
   "incorretas": {
-   "A": "Flexão e distração é o mecanismo do tipo IIA.",
-   "B": "Flexão e compressão é o mecanismo do tipo III, com luxação facetária.",
-   "C": "Extensão e distração não é o mecanismo do tipo II."
+   "A": "A **flexão com distração** é o mecanismo do tipo **IIA**, com pouca translação e grande angulação.",
+   "B": "A **flexão com compressão** é o mecanismo do tipo **III**, com luxação das facetas C2-C3.",
+   "C": "A **extensão com distração** era o mecanismo dos **enforcamentos judiciais**, mas não é o mecanismo do tipo II de Levine e Edwards."
   },
-  "conceito": "A **fratura do enforcado** é a **espondilolistese traumática do áxis**: fratura bilateral da **pars interarticularis** de C2. **Levine e Edwards** classificam pelo desvio e pelo mecanismo:\n\n**tipo I**: desvio menor que 3 mm, sem angulação; **hiperextensão com carga axial**; estável;\n\n**tipo II**: desvio maior que 3 mm com angulação; **extensão e compressão**, seguidas de um **rebote em flexão** que angula e rompe o disco C2-C3;\n\n**tipo IIA**: pouco desvio e **muita angulação**; **flexão e distração**; não deve ser tracionado, porque a tração piora a angulação;\n\n**tipo III**: tipo I com **luxação das facetas** C2-C3; **flexão e compressão**; precisa de cirurgia.\n\n**O tratamento**: tipo I com colar; tipo II com tração e halo; tipo IIA com halo em leve extensão, **sem tração**; tipo III com redução e fixação.\n\n**Na prova**: o tipo II de Levine e Edwards vem de **extensão e compressão**.",
-  "correta": "A hiperextensão com carga axial fratura a pars, e o rebote em flexão angula e desvia C2 sobre C3.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)",
+   "Levine AM, Edwards CC. The management of traumatic spondylolisthesis of the axis. J Bone Joint Surg Am. 1985;67(2):217-226."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0054": {
@@ -1188,14 +1192,18 @@
   "conferido": false
  },
  "trauma-0099": {
+  "conceito": "**Os compartimentos da coxa.** A coxa tem **três compartimentos**, separados pelos septos intermusculares:\n\n| Compartimento | Músculos | Nervo |\n|---|---|---|\n| **Anterior** | **Quadríceps** (reto femoral, vastos), sartório | **Femoral** |\n| Medial (adutor) | Adutores longo, curto e magno, grácil | Obturatório |\n| Posterior | Isquiotibiais (bíceps femoral, semitendíneo, semimembranoso) | Ciático |\n\n**A síndrome compartimental da coxa.** É **rara**, porque os compartimentos da coxa são **grandes** e com fáscias complacentes, e acomodam muito volume antes de a pressão subir. Além disso, os compartimentos se comunicam com o quadril e a pelve. Quando ocorre, o compartimento **anterior** é o mais acometido, seguido do posterior. O compartimento medial é o menos acometido.\n\n**As causas.**\n- **Trauma grave** com **contusão** e esmagamento da coxa, com ou sem fratura do fêmur.\n- Fraturas do fêmur com grande sangramento, sobretudo em politraumatizados com **hipotensão** e reposição volêmica maciça.\n- Compressão externa prolongada (paciente inconsciente, coma alcoólico, cirurgias longas em certas posições).\n- Uso de **calças pneumáticas** antichoque, reperfusão após lesão vascular, coagulopatias e anticoagulantes.\n\n**O diagnóstico.** Dor desproporcional, coxa **tensa**, dor ao estiramento passivo do quadríceps (flexão passiva do joelho) e alterações no território do nervo femoral. No paciente inconsciente, mede-se a **pressão compartimental**: pressão diferencial (diastólica menos compartimental) **menor que 30 mmHg** indica fasciotomia.\n\n**O tratamento.** **Fasciotomia** por uma **incisão lateral** longa, que abre o compartimento anterior e, pelo septo intermuscular lateral, o posterior. O compartimento medial é aberto por uma incisão medial se necessário.\n\n**A mortalidade.** A síndrome compartimental da coxa costuma ocorrer em pacientes **graves**, politraumatizados. A mortalidade é alta, em parte pelas lesões associadas, pela **rabdomiólise** e pela insuficiência renal.",
+  "correta": "**Correta: C (anterior).** Na fratura diafisária do fêmur, o compartimento da coxa com maior risco de síndrome compartimental é o **anterior** (quadríceps), seguido do posterior. O medial é o menos acometido.",
   "incorretas": {
-   "A": "Não existe compartimento lateral separado na coxa.",
-   "B": "O compartimento medial é o menos acometido.",
-   "D": "O compartimento posterior é o segundo em frequência."
+   "A": "A coxa **não tem compartimento lateral** independente. Os compartimentos são anterior, medial e posterior.",
+   "B": "O compartimento **medial** (adutor) é o **menos** acometido.",
+   "D": "O compartimento **posterior** é o segundo mais acometido, depois do anterior."
   },
-  "conceito": "A **coxa** tem três compartimentos:\n\n**anterior**: o **quadríceps** e o sartório, com o nervo femoral;\n\n**posterior**: os **isquiotibiais**, com o nervo isquiático;\n\n**medial**: os **adutores**, com o nervo obturatório.\n\nNão existe compartimento lateral separado.\n\n**A síndrome compartimental da coxa é rara**: os compartimentos são **grandes** e se comunicam com a região do quadril, o que acomoda muito volume antes de a pressão subir.\n\n**Quando acontece**: com trauma de **alta energia**, **esmagamento**, **anticoagulação** e **hipotensão** com reposição volêmica maciça. O compartimento **anterior** é o mais acometido, pelo volume do quadríceps.\n\n**A fasciotomia**: uma incisão **lateral** libera os compartimentos **anterior** e **posterior** (atravessando o septo intermuscular lateral); o medial é aberto por outra incisão, se necessário.\n\n**Na prova**: na fratura do fêmur, o compartimento de maior risco é o **anterior**.",
-  "correta": "O compartimento anterior, com o quadríceps volumoso, é o mais acometido na coxa.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)",
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0100": {
@@ -6245,14 +6253,18 @@
   "conferido": false
  },
  "trauma-0768": {
+  "conceito": "**A fratura da clavícula.** É uma das fraturas mais comuns do adulto jovem, quase sempre no **terço médio** (cerca de 80%), onde a clavícula é mais fina e muda de curvatura, e não há inserções musculares ou ligamentares que a reforcem. O mecanismo típico é a **queda sobre o ombro**.\n\n**As forças sobre os fragmentos.**\n\n| Fragmento | Força | Desvio |\n|---|---|---|\n| **Medial** | **Esternocleidomastóideo** (porção clavicular) | Para **cima** (superior) e para trás |\n| **Lateral** | **Peso do membro superior** (gravidade) | Para **baixo** (inferior) |\n| Lateral | **Peitoral maior** e latíssimo do dorso | **Medialização** (encurtamento) e **rotação anterior** (interna) |\n\n**O resultado.** O fragmento **lateral** cai (**translação inferior**), se aproxima do medial (**encurtamento**) e **roda para a frente** (rotação anterior, com o ombro \"caído\" para a frente e para dentro). O fragmento medial fica alto. Por isso, a deformidade típica é o ombro **caído, encurtado e anteriorizado**, com a ponta do fragmento medial empurrando a pele de baixo para cima.\n\n**Quando operar.** A maioria é tratada com **tipoia**. As indicações de cirurgia incluem:\n- fratura **exposta** ou pele ameaçada (tenda cutânea);\n- lesão **vascular** ou neurológica;\n- **encurtamento** importante (mais de cerca de **2 cm**) ou desvio completo (sem contato entre os fragmentos), sobretudo em pacientes ativos, pelo maior risco de **pseudoartrose** e de alterações funcionais e estéticas;\n- **ombro flutuante** e politraumatizados.\n\n**As opções.** **Placa** (superior ou anteroinferior) ou haste intramedular. A placa anteroinferior reduz a irritação da pele e o risco às estruturas subclávias.\n\n**As estruturas em risco.** Abaixo da clavícula passam a **artéria e a veia subclávias** e o **plexo braquial**. Na cirurgia, a broca deve ser controlada para não atravessar a cortical inferior em direção a esses vasos.",
+  "correta": "**Correta: A (anterior e translação inferior).** Na fratura desviada da diáfise da clavícula, o fragmento lateral **cai** pela ação do peso do membro (translação **inferior**), é puxado para medial pelo peitoral maior e **roda para a frente** (rotação **anterior**). O fragmento medial é elevado pelo esternocleidomastóideo.",
   "incorretas": {
-   "B": "A rotação anterior está certa, mas o fragmento lateral desce.",
-   "C": "A translação inferior está certa, mas a rotação é anterior.",
-   "D": "Quem sobe é o fragmento medial, e a rotação do lateral é anterior."
+   "B": "A rotação anterior está certa, mas o fragmento lateral **cai** pelo peso do membro (translação **inferior**), e não sobe.",
+   "C": "A translação inferior está certa, mas o fragmento lateral roda para a **frente** (anterior), puxado pelo peitoral maior.",
+   "D": "A **translação superior** é o desvio do fragmento **medial** (pelo esternocleidomastóideo), e não do lateral."
   },
-  "conceito": "Na fratura desviada da **diáfise da clavícula**, os fragmentos se separam em direções opostas:\n\n**fragmento medial**: o **esternocleidomastóideo** o puxa para **cima** e para trás;\n\n**fragmento lateral**:\n\n**translação inferior**: o **peso do membro superior** o puxa para baixo;\n\n**translação medial**: o **peitoral maior** e o latíssimo do dorso o puxam para dentro, encurtando a clavícula;\n\n**rotação anterior**: o peitoral maior e o peso do braço o rodam para a frente.\n\n**O resultado**: o ombro **cai**, vai para a frente e **encurta**; a ponta do fragmento medial fica saliente sob a pele.\n\n**A importância do encurtamento**: mais de 15 a 20 mm e o desvio completo aumentam a **pseudartrose** e a consolidação viciosa sintomática, e são indicações relativas de **placa** em pacientes ativos.\n\n**Na prova**: o fragmento lateral assume **rotação anterior** e **translação inferior**.",
-  "correta": "O peso do braço abaixa o fragmento lateral, e o peitoral maior o roda para a frente.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)",
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0769": {
