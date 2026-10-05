@@ -1086,14 +1086,17 @@
   "conferido": false
  },
  "mao-0094": {
-  "conceito": "### Via de Thompson (dorsal ao rádio proximal)\n- Intervalo entre o ==extensor radial curto do carpo== (radial) e o ==extensor comum dos dedos== (ulnar).\n- Distalmente: entre ERCC e ELP.\n- O **nervo interósseo posterior** atravessa o supinador sob esse intervalo: identificá-lo antes de descolar.\n- **Supinar** o antebraço afasta o nervo do campo.\n\n### Vias laterais do cotovelo e antebraço proximal\n| Via | Intervalo |\n|---|---|\n| Kocher | ancôneo × extensor ulnar do carpo |\n| Kaplan | extensor comum × ERLC/ERCC |\n| ==Thompson== | ==ERCC × extensor comum dos dedos== |\n| Boyd | subancôneo, entre ulna e ancôneo |\n| Henry | braquiorradial × pronador/FRC (volar) |\n\n### Zona de risco\n- O NIP fica a cerca de 3 a 7 cm da cabeça do rádio conforme a rotação; mais perto em pronação.\n\n> **Na prova:** músculo apontado na via de Thompson = ==extensor comum dos dedos==.",
-  "correta": "**Extensor comum dos dedos.**\n- É a margem ulnar do intervalo de Thompson.\n- O outro lado é o extensor radial curto do carpo.",
+  "conceito": "**A imagem.** Mostra a **via posterior do antebraço** (via de **Thompson**), com o antebraço visto pela face dorsal. Os afastadores abrem o intervalo entre o **extensor radial curto do carpo** (acima, radial) e o **extensor comum dos dedos** (abaixo, ulnar). No fundo, aparece o **nervo interósseo posterior** saindo do **supinador**. A seta aponta o ventre afastado para o lado ulnar: o **extensor comum dos dedos**.\n\n**A via de Thompson.**\n- **Indicação**: acesso à **diáfise proximal e média do rádio** pela face dorsal, e ao nervo interósseo posterior.\n- **Intervalo**:\n  - **proximal**: entre o **extensor radial curto do carpo** e o **extensor comum dos dedos**;\n  - **distal**: entre o extensor radial curto do carpo e o **extensor longo do polegar**.\n- Os músculos do intervalo são inervados pelo **radial** (o extensor radial curto pelo nervo radial ou pelo seu ramo profundo) e pelo **interósseo posterior** (extensor comum). Por isso, o intervalo não é verdadeiramente internervoso, mas é seguro.\n- Na parte proximal, o rádio fica coberto pelo **supinador**, por onde passa o **nervo interósseo posterior**.\n\n**O nervo interósseo posterior: o perigo da via.** O nervo entra no supinador pela **arcada de Frohse** e o atravessa, contornando o colo do rádio. Para expor o rádio proximal, é preciso **identificar o nervo** dentro do supinador e protegê-lo, ou **supinar** o antebraço e desinserir o supinador do rádio, afastando-o com o nervo dentro. A lesão do nervo causa a perda da **extensão dos dedos** e do polegar (dedos caídos), com a extensão do punho preservada em desvio radial.\n\n**Os músculos extensores do antebraço.**\n\n| Grupo | Músculos |\n|---|---|\n| **Superficial** (do epicôndilo lateral) | Braquiorradial, extensor radial longo e curto do carpo, **extensor comum dos dedos**, extensor do dedo mínimo, extensor ulnar do carpo, ancôneo |\n| **Profundo** | Supinador, abdutor longo do polegar, extensor curto e longo do polegar, extensor do indicador |\n\n**As outras vias do antebraço.**\n- **Via de Henry** (anterior): entre o braquiorradial e o pronador redondo (proximal) ou o flexor radial do carpo (distal). Expõe todo o rádio pela face volar.\n- **Via de Boyd**: acesso à ulna proximal e ao rádio proximal entre o ancôneo e o extensor ulnar do carpo.",
+  "correta": "**Correta: C (extensor comum dos dedos).** Na via posterior de Thompson, o intervalo é entre o extensor radial curto do carpo (radial) e o **extensor comum dos dedos** (ulnar). A seta aponta o ventre afastado para o lado ulnar, o extensor comum dos dedos.",
   "incorretas": {
-   "A": "**Via de Kocher.**\n- O ancôneo fica proximal e posterior.",
-   "B": "**Mais ulnar.**\n- O EUC não margeia o intervalo de Thompson.",
-   "D": "**Lado oposto.**\n- O ERCC é a margem radial."
+   "A": "O **ancôneo** fica junto ao cotovelo, entre o olécrano e o epicôndilo lateral. É usado nas vias de Kocher e de Boyd, e não no intervalo de Thompson.",
+   "B": "O **extensor ulnar do carpo** fica mais ulnar, junto à ulna. Ele delimita a via de Boyd e a de Kocher, mas não o intervalo mostrado.",
+   "D": "O **extensor radial curto do carpo** forma o lado **radial** do intervalo, oposto ao músculo indicado pela seta."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Hoppenfeld S, deBoer P, Buckley R. Surgical Exposures in Orthopaedics: The Anatomic Approach. 5ª edição. Wolters Kluwer."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0095": {
@@ -5794,17 +5797,18 @@
   "conferido": false
  },
  "mao-0571": {
-  "conceito": "### Envoltórios do nervo\n| Camada | Envolve | Sutura |\n|---|---|---|\n| endoneuro | cada axônio | ==não existe endoneurorrafia== |\n| perineuro | cada fascículo | perineurorrafia (fascicular) |\n| ==epineuro== | ==nervo inteiro== | ==epineurorrafia== (padrão) |\n\n### Técnicas\n| Técnica | Indicação | Vantagem × custo |\n|---|---|---|\n| ==epineurorrafia== | ==maioria dos reparos== | menos trauma e fibrose; alinhamento por vasos epineurais |\n| perineurorrafia | fascículos grandes, grupos motor e sensitivo conhecidos (ulnar no punho) | mais precisa, mais manipulação |\n| epiperineurorrafia | intermediária | pontos no epineuro e perineuro periférico |\n\n### Princípios\n- Sem tensão (fio 8-0 a 10-0 deve segurar); se houver gap, enxerto ou conduto.\n- Alinhar pelos vasos longitudinais e pelo desenho fascicular.\n\n> **Na prova:** pontos no perineuro de cada fascículo = ==neurorrafia perineural (fascicular)==",
-  "correta": "**Perineural.**\n- Ponto na bainha de cada fascículo.\n- Alinha fascículos em nervos mistos; mais manipulação.",
+  "conceito": "**A imagem.** Mostra os cotos de um nervo cortado, com os **fascículos** expostos. Os pontos passam pela bainha de **cada fascículo** (o **perineuro**), alinhando fascículo com fascículo. Essa é a **neurorrafia perineural** (fascicular).\n\n**A arquitetura do nervo periférico.** Um nervo periférico é organizado em camadas de tecido conjuntivo, como um cabo elétrico com vários fios encapados dentro de uma capa comum.\n\n| Camada | O que envolve | Função |\n|---|---|---|\n| **Endoneuro** | Cada **fibra nervosa** (axônio com sua bainha de Schwann) | Tecido frouxo; ambiente da fibra |\n| **Perineuro** | Cada **fascículo** (um grupo de fibras) | **Denso e resistente**; **barreira hematoneural**; resistência à tração |\n| **Epineuro interno** | Preenche o espaço **entre os fascículos** | Amortecimento; vasos |\n| **Epineuro externo** | Envolve o **nervo inteiro** | Proteção; sutura epineural |\n| Mesoneuro | Liga o nervo às estruturas vizinhas | Permite o deslizamento do nervo |\n\n**O perineuro.** É formado por várias camadas de células achatadas, unidas por junções firmes. Ele:\n- mantém a **pressão dentro do fascículo**;\n- forma a **barreira hematoneural**, que protege as fibras de substâncias do sangue;\n- dá ao nervo grande parte da sua **resistência à tração**.\n\n**Por que isso importa na cirurgia.**\n- **Sutura epineural**: pontos no epineuro externo, alinhando o nervo pela posição dos vasos. É a técnica mais usada.\n- **Sutura perineural (fascicular)**: pontos no perineuro, alinhando grupos de fascículos. Mais precisa, mas causa mais trauma e cicatriz; útil quando os fascículos motores e sensitivos estão bem separados (por exemplo, no ulnar distal).\n- **Sutura epiperineural**: combina as duas.\n\n**A relação com as lesões nervosas (Sunderland).**\n- 1º grau: **neuropraxia** (bloqueio de condução, sem lesão do axônio).\n- 2º grau: lesão do **axônio**, com o **endoneuro** íntegro (axonotmese de bom prognóstico).\n- 3º grau: lesão do **endoneuro**, com o **perineuro** íntegro.\n- 4º grau: lesão do **perineuro**, só o epineuro íntegro (neuroma em continuidade).\n- 5º grau: secção completa (**neurotmese**).\n\nQuanto mais camadas lesadas, menor a chance de recuperação espontânea. A partir do 4º grau, a cirurgia é necessária.\n\n**As técnicas de neurorrafia, comparadas.**\n\n| Técnica | Onde passa o ponto | Vantagens e limites |\n|---|---|---|\n| **Epineural** | **Epineuro externo** (bainha do nervo inteiro) | Simples, rápida, menos trauma; o alinhamento é guiado pelos **vasos** da superfície |\n| **Perineural (fascicular)** | **Perineuro** de cada fascículo | Alinhamento mais preciso; mais trauma, mais material de sutura e mais cicatriz |\n| Epiperineural | Epineuro e perineuro juntos | Combina as duas |\n| Por grupos fasciculares | Epineuro interno, entre grupos de fascículos | Para nervos com grupos bem definidos (motor e sensitivo) |\n\nOs estudos não mostraram vantagem clara da perineural sobre a epineural na maioria das lesões. A perineural é útil quando os fascículos **motores** e **sensitivos** estão bem separados, como no **nervo ulnar distal** (ramo motor profundo e ramo sensitivo).\n\n**Os princípios de qualquer neurorrafia.**\n- Cotos **limpos**, cortados até encontrar fascículos de aspecto normal.\n- **Sem tensão**: se houver falha, usar **enxerto de nervo** (sural) ou conduto.\n- **Alinhamento** correto dos fascículos.\n- Fios finos (8-0 a 10-0) e magnificação (microscópio ou lupa).",
+  "correta": "**Correta: B (perineural).** A imagem mostra os pontos passando pelo **perineuro** de cada fascículo, alinhando fascículo com fascículo: é a **neurorrafia perineural** (fascicular).",
   "incorretas": {
-   "A": "**Só capa externa.**\n- Não toca os fascículos.",
-   "C": "**Não existe.**\n- Endoneuro não segura ponto.",
-   "D": "**Grupos de fascículos.**\n- Não cada fascículo."
+   "A": "Na neurorrafia **epineural**, os pontos passam apenas pelo **epineuro externo**, a bainha do nervo inteiro, sem suturar fascículos individuais.",
+   "C": "O **endoneuro** envolve cada fibra nervosa e é delicado demais para receber pontos. Não existe neurorrafia endoneural.",
+   "D": "A sutura **interfascicular** (por grupos fasciculares) une **grupos** de fascículos pelo epineuro interno, e não cada fascículo pelo perineuro como na imagem."
   },
   "referencias": [
-   "Campbell's Operative Orthopaedics, 15ª edição (Azar, Sawyer, Throckmorton), Cap. 67"
+   "Campbell's Operative Orthopaedics, 15ª edição (Azar, Sawyer, Throckmorton), Cap. 67",
+   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0572": {
@@ -9547,18 +9551,19 @@
   "conferido": false
  },
  "mao-0819": {
-  "conceito": "**O flexor curto do polegar tem duas cabeças com inervação diferente:**\n- cabeça **superficial**: ramo recorrente do **mediano**;\n- cabeça **profunda**: ramo profundo do **ulnar**.\n\nAlém disso, variações de inervação (anastomose de Riche-Cannieu) são frequentes nessa região, e o flexor curto pode ser inteiramente ulnar ou inteiramente mediano em parte das mãos.\n\n**Inervação dos músculos do polegar:**\n\n| Músculo | Nervo |\n|---|---|\n| Abdutor curto | Mediano |\n| Oponente | Mediano |\n| **Flexor curto** | **Mediano (superficial) e ulnar (profunda)** |\n| Adutor | Ulnar |\n| Flexor longo | Interósseo anterior (mediano) |\n\n**Na clínica:** é por isso que a lesão isolada do mediano no punho muitas vezes não abole a flexão da MF do polegar, e que o sinal de Froment (flexão compensatória da IF pelo flexor longo) aparece na lesão do ulnar.",
-  "correta": "**Flexor curto.** Sua cabeça superficial é inervada pelo mediano e a profunda pelo ulnar.",
+  "conceito": "**Os músculos tenares.** São os músculos da **eminência tenar**, responsáveis pelos movimentos finos do polegar, sobretudo a **oponência** (levar a polpa do polegar à polpa dos outros dedos). Na sua maioria, são inervados pelo **ramo motor recorrente do nervo mediano**.\n\n| Músculo | Inervação | Função |\n|---|---|---|\n| **Abdutor curto do polegar** | **Mediano** | Abdução palmar |\n| **Oponente do polegar** | **Mediano** | Oponência (rotação do primeiro metacarpo) |\n| **Flexor curto do polegar** | **Cabeça superficial: mediano**; **cabeça profunda: ulnar** | Flexão da metacarpofalângica |\n| **Adutor do polegar** | **Ulnar** (ramo profundo) | Adução; força da pinça |\n\n**O flexor curto do polegar: o músculo \"dividido\".** Tem duas cabeças:\n- a **cabeça superficial**, inervada pelo **mediano** (ramo recorrente);\n- a **cabeça profunda**, inervada pelo **ulnar** (ramo profundo).\n\nPor isso, é o músculo do polegar com **inervação dupla**. Há também muitas variações anatômicas e **anastomoses** entre o mediano e o ulnar na mão (a anastomose de Riche-Cannieu), que explicam por que alguns pacientes com lesão completa do mediano ainda conseguem fazer a oponência.\n\n**As implicações clínicas.**\n- **Síndrome do túnel do carpo** grave: **atrofia tenar**, sobretudo do **abdutor curto**, com perda da abdução palmar e da oponência.\n- **Lesão do ulnar**: fraqueza do **adutor** do polegar e da cabeça profunda do flexor curto. O paciente compensa a pinça lateral fletindo a interfalângica com o flexor longo do polegar (inervado pelo mediano): é o **sinal de Froment**. A hiperextensão da metacarpofalângica do polegar na pinça é o **sinal de Jeanne**.\n- O **flexor longo do polegar** é um músculo do **antebraço**, inervado pelo **nervo interósseo anterior** (ramo do mediano).\n\n**O ramo recorrente do mediano.** Sai do mediano no fim do túnel do carpo e entra na musculatura tenar. Suas variações (extraligamentar, subligamentar ou transligamentar) importam na liberação do túnel: ele pode ser lesado se a incisão for muito radial.",
+  "correta": "**Correta: D (flexor curto).** O **flexor curto do polegar** tem inervação dupla: a **cabeça superficial** pelo **mediano** (ramo recorrente) e a **cabeça profunda** pelo **ulnar** (ramo profundo).",
   "incorretas": {
-   "A": "O adutor do polegar é inervado só pelo ulnar.",
-   "B": "O oponente é inervado pelo mediano (ramo recorrente).",
-   "C": "O abdutor curto é inervado pelo mediano.",
-   "E": "O flexor longo do polegar é inervado pelo interósseo anterior, ramo do mediano."
+   "A": "O **adutor do polegar** é inervado apenas pelo **ulnar** (ramo profundo).",
+   "B": "O **oponente do polegar** é inervado pelo **mediano** (ramo recorrente).",
+   "C": "O **abdutor curto do polegar** é inervado pelo **mediano** (ramo recorrente).",
+   "E": "O **flexor longo do polegar** é um músculo do antebraço, inervado pelo **nervo interósseo anterior** (ramo do mediano)."
   },
   "referencias": [
-   "Moore KL, Dalley AF, Agur AMR. Anatomia orientada para a clínica. 8ª ed. Guanabara Koogan; 2019."
+   "Moore KL, Dalley AF, Agur AMR. Anatomia orientada para a clínica. 8ª ed. Guanabara Koogan; 2019.",
+   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0820": {

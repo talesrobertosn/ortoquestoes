@@ -1842,14 +1842,18 @@
   "conferido": false
  },
  "conceitos-basicos-0191": {
-  "conceito": "### Sinovite transitória do quadril\n- Causa mais comum de dor no quadril entre ==3 e 8 anos==; meninos; frequentemente após virose.\n- Claudicação, quadril em flexão, abdução e RE; afebril ou febre baixa.\n- Autolimitada: 1 a 2 semanas, repouso e anti-inflamatório.\n- ==Recorrência anual de cerca de 4%==; pequena associação posterior com Perthes.\n\n### Diferencial com artrite séptica (Kocher)\n| Critério |\n|---|\n| febre > 38,5 °C |\n| não apoia o membro |\n| VHS > 40 mm/h |\n| leucócitos > 12.000 |\n| (+ PCR > 2 mg/dL, Caird) |\n\n| Nº de critérios | Probabilidade de séptica |\n|---|---|\n| 0 | < 1% |\n| 2 | cerca de 40% |\n| 3 | cerca de 93% |\n| 4 | > 99% |\n\n- Ultrassom mostra derrame nos dois; punção guiada se dúvida.\n\n### Raciocínio inverso\n- Com ==4 critérios==, a probabilidade de artrite séptica é de ==99%==.\n- Logo, a de sinovite transitória é ==< 1%== (< 10%).\n\n> **Na prova:** 4 critérios de Kocher = sinovite transitória ==< 10%== (séptica 99%)",
-  "correta": "**< 10%.**\n- Séptica em 99% com 4 critérios.\n- Sinovite fica abaixo de 1%.",
+  "conceito": "**O dilema clínico.** Uma criança chega mancando, com dor no quadril e talvez febre. As duas causas mais prováveis são a **sinovite transitória**, benigna e autolimitada, e a **artrite séptica**, uma **urgência** que destrói a cartilagem e a cabeça femoral em poucos dias se não for drenada. As duas produzem derrame articular e limitação de movimento, e o exame inicial pode ser parecido.\n\n**Os critérios de Kocher.** Kocher e colaboradores identificaram **quatro fatores preditivos** independentes de artrite séptica:\n1. **Incapacidade de apoiar** o membro (não deambula).\n2. **Febre** acima de **38,5 °C**.\n3. **VHS** acima de **40 mm/h**.\n4. **Leucócitos** acima de **12.000/mm³**.\n\n**A probabilidade de artrite séptica pelo número de fatores (série original).**\n\n| Fatores presentes | Probabilidade de artrite séptica |\n|---|---|\n| 0 | Menos de 0,2% |\n| 1 | Cerca de 3% |\n| 2 | Cerca de 40% |\n| 3 | Cerca de 93% |\n| **4** | Cerca de **99,6%** |\n\n**Lendo a pergunta ao contrário.** A questão pergunta a probabilidade de ser **sinovite transitória** com 4 fatores. Se a chance de artrite séptica é de cerca de 99,6%, a de sinovite transitória é **menor que 1%**, ou seja, **menos de 10%**.\n\n**Atualizações.**\n- **Caird** acrescentou a **proteína C-reativa** acima de **2 mg/dL**. Ela é um preditor forte, e com 5 fatores a probabilidade chega a cerca de 98%.\n- Em validações posteriores, em outros hospitais, o desempenho dos critérios foi **menor** que na série original. Eles **apoiam** a decisão, mas não substituem o julgamento clínico.\n\n**A conduta.**\n- Na suspeita, faz-se **ultrassonografia** para confirmar o derrame e **punção articular** guiada.\n- O líquido da artrite séptica costuma ter mais de **50.000 leucócitos/mm³**, com predomínio de **neutrófilos**.\n- A artrite séptica do quadril exige **drenagem cirúrgica** urgente e antibiótico. O agente mais comum é o *Staphylococcus aureus*. Em menores de 4 anos, a ***Kingella kingae*** é importante.",
+  "correta": "**Correta: A (menos de 10%).** Com os quatro fatores de Kocher (não apoia o membro, febre acima de 38,5 °C, VHS acima de 40 mm/h e leucócitos acima de 12.000), a probabilidade de artrite séptica é de cerca de 99,6%. A de sinovite transitória, portanto, é **menor que 1%**.",
   "incorretas": {
-   "B": "**40%.**\n- Probabilidade de séptica com 2 critérios.",
-   "C": "**70%.**\n- Não corresponde.",
-   "D": "**90%.**\n- É o inverso (séptica com 3 a 4)."
+   "B": "Cerca de **40%** é a probabilidade de **artrite séptica** com **dois** fatores. Com quatro, a chance de sinovite transitória é muito menor.",
+   "C": "Uma chance de **70%** de sinovite transitória seria compatível com poucos fatores presentes, e não com os quatro.",
+   "D": "**90%** inverte o raciocínio. Com quatro fatores, cerca de 99% dos casos são **artrite séptica**, e não sinovite transitória."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Kocher MS, Zurakowski D, Kasser JR. Differentiating between septic arthritis and transient synovitis of the hip in children: an evidence-based clinical prediction algorithm. J Bone Joint Surg Am. 1999;81(12):1662-1670."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "conceitos-basicos-0192": {
