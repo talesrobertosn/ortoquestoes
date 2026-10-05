@@ -5708,19 +5708,20 @@
   "conferido": false
  },
  "quadril-0480": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": "**Osteotomia valgizante no quadril.** Indicada quando a congruência melhora em adução, com amplitude de movimento suficiente, e exige flexão mínima em torno de 45 graus. Se a congruência melhora em abdução, a indicação é a osteotomia varizante.\n\n**Na prova:** melhora em adução pede valgização; em abdução, varização.",
-  "correta": "**Quando a amplitude de flexão mínima é de 45 graus.** A amplitude mínima de flexão é um requisito da valgização.",
+  "conceito": "**Osteotomias femorais proximais na artrose do quadril.** Antes da era da artroplastia, e ainda hoje em pacientes jovens selecionados, as osteotomias intertrocantéricas (Pauwels, Bombelli) eram usadas para **redistribuir a carga** na articulação, melhorar a congruência e aumentar a área de contato, aliviando a dor e retardando a progressão da artrose.\n\n**A escolha entre valgizar e varizar** depende de **em que posição o quadril fica mais congruente**, avaliada por radiografias em abdução e em adução.\n\n| Osteotomia | Quando a congruência melhora em | Efeito |\n|---|---|---|\n| **Valgizante** | **Adução** | Gira a cabeça para que a área de cartilagem preservada (geralmente inferomedial) passe a receber carga; abre o espaço superolateral; lateraliza o trocânter e aumenta o braço de alavanca dos abdutores |\n| Varizante | **Abdução** | Aumenta a cobertura da cabeça e reduz a carga; usada em displasia com cabeça esférica |\n\n**Requisitos para a valgização.**\n- Arco de movimento preservado, com **flexão mínima de cerca de 45 graus** (pois a osteotomia \"consome\" parte da amplitude e o quadril precisa de flexão funcional depois) e **adução** suficiente (a deformidade em abdução fixa contraindica, porque a valgização agravaria a abdução).\n- Paciente jovem, artrose não terminal, cabeça com área de cartilagem aproveitável (frequentemente com osteófito em \"capuz\" inferomedial que melhora a congruência em adução).\n\nMillis, Murphy e Poss revisaram as indicações das osteotomias do quadril para prevenção e tratamento da artrose.\n\n**Efeito no centro de rotação.** A valgização tende a **lateralizar** o centro de rotação em relação ao fêmur e a alongar o membro; medializar o centro de rotação é efeito de outros procedimentos (osteotomias pélvicas).\n\n> Valgização femoral: congruência melhor em adução e flexão de pelo menos cerca de 45 graus; melhora em abdução pede varização.",
+  "correta": "**B: quando a amplitude de flexão mínima é de 45 graus (resposta pela bibliografia).** A osteotomia valgizante exige movimento suficiente, com flexão de pelo menos cerca de 45 graus, para que o quadril mantenha função após a correção.",
   "incorretas": {
-   "A": "**Nas deformidades fixas em abdução.** A deformidade fixa em adução é que favorece a valgização.",
-   "C": "**Quando existe maior congruência da cabeça no acetábulo com o quadril em abdução.** Congruência em abdução indica varização.",
-   "D": "**Quando se objetiva a transferência do centro de rotação do quadril medialmente.** Medializar o centro de rotação não é o objetivo da valgização."
+   "A": "**Deformidades fixas em abdução** contraindicam a valgização, que acentuaria a abdução; a valgização precisa de adução preservada.",
+   "C": "**Maior congruência em abdução** indica a osteotomia **varizante**, não a valgizante.",
+   "D": "**Transferir o centro de rotação medialmente** não é o objetivo da valgização, que tende a lateralizar; a medialização é obtida com outras técnicas."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 936."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 936.",
+   "Millis MB, Murphy SB, Poss R. Osteotomies about the hip for the prevention and treatment of osteoarthrosis. Instr Course Lect. 1996;45:209-226."
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "B",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "quadril-0481": {

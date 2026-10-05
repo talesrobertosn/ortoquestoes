@@ -3831,15 +3831,18 @@
   "conferido": false
  },
  "tumores-0359": {
-  "conceito": "**Radiossensibilidade** é o quanto o tumor responde à radioterapia. Os tumores de **pequenas células redondas** (sarcoma de **Ewing**, **linfoma** ósseo, mieloma) são os mais radiossensíveis.\n\n**Osteossarcoma** e **condrossarcoma** são **radiorresistentes**: o tratamento se apoia na cirurgia (com quimioterapia no osteossarcoma; o condrossarcoma responde mal também à quimioterapia).\n\n**Na prova**: radiossensíveis = **Ewing, linfoma e mieloma**; radiorresistentes = **osteossarcoma e condrossarcoma**.",
-  "correta": "Sarcoma de Ewing e linfoma são tumores de pequenas células redondas, os mais sensíveis à radioterapia.",
+  "conceito": "**Radiossensibilidade dos tumores ósseos malignos.** A radiossensibilidade é o grau de resposta de um tumor à radioterapia. Depende da **biologia celular**: tumores de células pequenas, com alta taxa de proliferação e pouca matriz extracelular, respondem bem; tumores que produzem matriz (osteoide, cartilagem), com células menos proliferativas e áreas hipóxicas, respondem mal.\n\n**Os mais radiossensíveis: tumores de pequenas células redondas e azuis.**\n- **Sarcoma de Ewing**: a radioterapia é opção de **controle local** quando a ressecção com margens não é possível (pelve, coluna) ou como complemento após margens inadequadas ou má resposta. Dunst e Schuck revisaram seu papel.\n- **Linfoma ósseo primário**: tratado com **quimioterapia** (esquemas tipo R-CHOP) e frequentemente **radioterapia** de consolidação, com excelente controle local (Ramadan e colaboradores).\n- **Mieloma e plasmocitoma**: muito radiossensíveis; a radioterapia é o tratamento do plasmocitoma solitário e da dor de lesões líticas.\n\n**Os radiorresistentes: tumores formadores de matriz.**\n\n| Tumor | Radiossensibilidade | Base do tratamento |\n|---|---|---|\n| Osteossarcoma | Baixa | Quimioterapia e cirurgia com margens amplas |\n| Condrossarcoma | Muito baixa (também resistente à quimioterapia) | Cirurgia com margens amplas |\n| Cordoma | Baixa à radioterapia convencional | Cirurgia; prótons ou íons de carbono como complemento |\n\n**Implicação prática.** Em tumores radiossensíveis, a radioterapia pode substituir uma cirurgia mutilante; em radiorresistentes, a margem cirúrgica é tudo.\n\n> Mais radiossensíveis: Ewing, linfoma e mieloma (pequenas células redondas); osteossarcoma e condrossarcoma são radiorresistentes.",
+  "correta": "**B: sarcoma de EWING e no linfoma.** Ambos são tumores de pequenas células redondas, altamente proliferativos e sem matriz, que respondem muito bem à radioterapia.",
   "incorretas": {
-   "A": "O linfoma é radiossensível, mas o osteossarcoma é radiorresistente.",
-   "C": "Os dois são radiorresistentes: o tratamento é cirúrgico.",
-   "D": "O Ewing é radiossensível, mas o condrossarcoma é radiorresistente."
+   "A": "**Osteossarcoma e linfoma**: o linfoma é radiossensível, mas o osteossarcoma é radiorresistente.",
+   "C": "**Osteossarcoma e condrossarcoma** são os dois clássicos radiorresistentes, tratados essencialmente com cirurgia (mais quimioterapia no osteossarcoma).",
+   "D": "**Ewing e condrossarcoma**: o Ewing é radiossensível, mas o condrossarcoma é radiorresistente."
   },
-  "referencias": [],
-  "geradoEm": "2026-10-04T17:01:01+00:00",
+  "referencias": [
+   "Dunst J, Schuck A. Role of radiotherapy in Ewing tumors. Pediatr Blood Cancer. 2004;42(5):465-470.",
+   "Ramadan KM, Shenkier T, Sehn LH, Gascoyne RD, Connors JM. A clinicopathological retrospective study of 131 patients with primary bone lymphoma: a population-based study of successively treated cohorts from the British Columbia Cancer Agency. Ann Oncol. 2007;18(1):129-135."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "tumores-0360": {
