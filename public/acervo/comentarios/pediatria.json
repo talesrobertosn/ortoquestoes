@@ -1092,18 +1092,19 @@
   "conferido": false
  },
  "pediatria-0074": {
+  "conceito": "**A doença de Blount (tíbia vara).** É um distúrbio de crescimento da **porção posteromedial da fise proximal da tíbia**. O varo é progressivo e associado a torção tibial interna. O mecanismo aceito é **mecânico**, pela lei de Hueter-Volkmann: a **compressão excessiva** no lado medial da fise, num joelho em varo que suporta muito peso, **inibe o crescimento** daquele lado, e o varo se agrava num ciclo vicioso.\n\n**As duas formas.**\n\n| Forma | Início | Perfil |\n|---|---|---|\n| **Infantil** | Antes dos **4 anos** (geralmente aos 2 a 3) | Frequentemente **bilateral**; criança **obesa** que andou cedo |\n| Tardia (juvenil ou do adolescente) | Após os 4 anos | Unilateral com frequência; adolescente obeso; varo menos acentuado |\n\n**Fatores de risco e de pior prognóstico na forma infantil.**\n- **Obesidade**: o principal fator, pela carga sobre a fise medial.\n- **Marcha precoce**, antes de cerca de 1 ano.\n- Ascendência **negra** e **sexo feminino**: nas séries clássicas, as meninas negras evoluem para os estágios mais graves de Langenskiöld com mais frequência.\n- Doença **bilateral**.\n\n**A classificação de Langenskiöld.** Tem **seis estágios** radiográficos de piora do bico medial da metáfise e da epífise. O estágio VI corresponde a uma **barra óssea** fisária medial. Até o estágio III ou IV, a doença pode regredir com tratamento. Nos estágios V e VI, a lesão da fise é definitiva.\n\n**O ângulo metáfise-diáfise de Levine e Drennan (MDA).** É o ângulo entre uma linha que passa pelos **bicos da metáfise proximal da tíbia** e a perpendicular ao **eixo longo da diáfise**. Ele ajuda a separar o varo fisiológico do Blount:\n\n| MDA | Interpretação (Feldman e Schoenecker) |\n|---|---|\n| **10° ou menos** | Baixo risco: provável varo **fisiológico** |\n| Entre 10 e 16° | Zona **cinzenta**: acompanhar |\n| **16° ou mais** | Alto risco de **Blount** |\n\n**As limitações do MDA.**\n- O ângulo **muda com a rotação** do membro na radiografia: a rotação interna aumenta o valor medido.\n- Há **variação** entre observadores e com o posicionamento.\n- O valor de corte original (**11°**) teve muitos falsos-positivos em estudos posteriores.\n\nPor isso, o MDA é **pouco confiável quando usado isoladamente**. Deve ser interpretado com a **idade**, a evolução clínica, a **simetria** e as **radiografias seriadas**.\n\n**O tratamento.**\n- Até cerca de **3 anos**, nos estágios iniciais: **órtese** KAFO, com resultados variáveis.\n- Depois disso, ou se houver falha: **osteotomia valgizante e derrotatória** da tíbia proximal, de preferência **antes dos 4 anos**, com hipercorreção leve.\n- Nos casos avançados: ressecção de barra, elevação do platô medial ou hemiepifisiodese lateral com placa em 8, conforme a idade.",
+  "correta": "**Correta: A (pouco confiável quando usado isoladamente).** O ângulo metáfise-diáfise de Levine e Drennan varia com a **rotação** do membro e entre observadores, e o corte original de 11° gerou falsos-positivos. Por isso, deve ser interpretado junto com a idade, a evolução clínica e radiografias seriadas.",
   "incorretas": {
-   "B": "O ângulo varia com a rotação do membro; não é invariável.",
-   "C": "É um parâmetro útil, mas não é o mais preciso para o prognóstico.",
-   "D": "Valores mais altos (acima de 11 a 16°) sugerem doença, não evolução favorável."
+   "B": "O ângulo **varia com a rotação** do membro: a rotação interna na radiografia aumenta o valor medido.",
+   "C": "O MDA é um **rastreamento** útil, mas não é o parâmetro mais preciso para o prognóstico. O **estágio de Langenskiöld** e a idade pesam mais na evolução.",
+   "D": "Um MDA **maior** que 11° foi associado no trabalho original à **evolução para Blount**, ou seja, a uma evolução **desfavorável**, e não favorável."
   },
-  "conceito": "O **ângulo metafisário-diafisário de Levine-Drennan** ajuda a separar o **varo fisiológico** da criança pequena da **doença de Blount**. Ele é medido entre a linha que passa pelos **bicos metafisários** da tíbia proximal e a **perpendicular ao eixo** da tíbia.\n\n**A interpretação**:\n\n**menor que 10°**: provavelmente fisiológico;\n\n**entre 10 e 16°**: zona cinzenta; seguir com radiografias;\n\n**maior que 16°**: Blount provável.\n\n**Por que ele é pouco confiável sozinho**: o valor **muda com a rotação** do membro na radiografia e com a técnica de medida; uma perna rodada para dentro ou para fora altera o ângulo. Por isso, ele deve ser usado **junto com** a clínica (idade, peso, se é uni ou bilateral, se está piorando) e com **radiografias seriadas**.\n\n**Os outros parâmetros**: a classificação de Langenskiöld (estágios radiográficos) e o ângulo metafisário-diafisário do fêmur, comparado com o da tíbia.\n\n**Na prova**: ângulo de Levine-Drennan = **pouco confiável quando usado isoladamente**.",
-  "correta": "O ângulo varia com a rotação do membro e com a técnica, então precisa ser interpretado junto com a clínica e radiografias seriadas.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Blount's Disease – Infantile. https://posna.org/physician-education/study-guide/blount-s-disease-infantile",
-   "Levine AM, Drennan JC. Physiological bowing and tibia vara. J Bone Joint Surg Am. 1982;64:1158-1163."
+   "Levine AM, Drennan JC. Physiological bowing and tibia vara. J Bone Joint Surg Am. 1982;64:1158-1163.",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0075": {
@@ -1949,17 +1950,18 @@
   "conferido": false
  },
  "pediatria-0138": {
+  "conceito": "**O colágeno tipo I.** É a principal proteína do osso, da pele, dos tendões, da esclera e da dentina. Cada molécula é uma **tripla hélice** formada por três cadeias: duas **alfa-1** (gene **COL1A1**) e uma **alfa-2** (gene **COL1A2**).\n\n**Por que a glicina é tão importante.** Na hélice, a sequência de aminoácidos se repete no padrão **Gly-X-Y**: a cada três posições, há uma **glicina**. Muitas vezes, X é **prolina** e Y é **hidroxiprolina**. A glicina é o **menor aminoácido**, e só ela cabe no **centro apertado** da tripla hélice, onde as três cadeias se encontram.\n\n**Os dois tipos de defeito.**\n\n| Defeito | Mecanismo | Gravidade |\n|---|---|---|\n| **Quantitativo** | Um alelo não produz cadeia (alelo nulo): metade do colágeno, mas **normal** | **Leve** (tipo I de Sillence) |\n| **Qualitativo** | **Substituição de uma glicina** por um aminoácido maior: colágeno **anormal** | Moderado a **letal** (tipos II, III e IV) |\n\n**O efeito dominante negativo.** Quando a glicina é substituída, a cadeia defeituosa **entra na hélice** e estraga a molécula inteira. É pior ter colágeno anormal que pouco colágeno.\n\n**A posição da mutação importa.** A hélice se dobra da extremidade **C-terminal** para a N-terminal. Substituições mais próximas da extremidade **C-terminal** tendem a ser **mais graves**, porque perturbam a montagem desde o início.\n\n**Formas recessivas e outras.** Existem formas de OI por defeitos em proteínas que **processam** o colágeno, como **CRTAP**, **P3H1** (LEPRE1) e **PPIB**, ou por outros mecanismos ósseos (**IFITM5** no tipo V e **SERPINF1** no tipo VI).\n\n**Os achados radiográficos.**\n- **Osteopenia** difusa.\n- **Corticais finas** e ossos longos **gráceis** (finos), com **trabéculas finas** e esparsas.\n- **Fraturas múltiplas** em diferentes fases de consolidação, e **encurvamentos**.\n- **Vértebras bicôncavas** (em \"boca de peixe\") e achatadas, por microfraturas.\n- **Ossos wormianos** no crânio.\n- **Calcificações em pipoca** nas metáfises nas formas graves.\n- **Protrusão acetabular** e invaginação basilar.\n- No **tipo V**: **calo hiperplásico** e calcificação da membrana interóssea do antebraço.\n\nA **ossificação** em si acontece no tempo normal. O problema é a **qualidade** da matriz, e não o momento em que ela se forma.\n\n**O tratamento.**\n- **Bisfosfonatos** (pamidronato, zoledronato) aumentam a densidade e reduzem as fraturas.\n- **Hastes telescópicas** (Fassier-Duval) corrigem e previnem as deformidades dos ossos longos.\n- Reabilitação para manter a força e a mobilidade.",
+  "correta": "**Correta: A (vértebras bicôncavas).** Na osteogênese imperfeita, as microfraturas dos platôs vertebrais deixam as vértebras **bicôncavas** (em boca de peixe) e achatadas. Esse é um achado radiográfico típico, junto com osteopenia, corticais finas, fraturas múltiplas e ossos wormianos.",
   "incorretas": {
-   "B": "A ossificação ocorre no tempo habitual; o problema é a qualidade do colágeno.",
-   "C": "Está invertida: na OI as corticais são finas.",
-   "D": "Está invertida: as trabéculas são finas; ossos grossos e densos lembram osteopetrose."
+   "B": "A **ossificação** ocorre no tempo normal na OI. O defeito é a **qualidade** da matriz de colágeno, e não o momento da ossificação.",
+   "C": "Na OI, os ossos longos têm **cortical fina** e são gráceis. Cortical grossa sugere outras doenças, como a osteopetrose.",
+   "D": "As trabéculas na OI são **finas e esparsas**, refletindo a osteopenia, e não grossas."
   },
-  "conceito": "Na **osteogênese imperfeita**, o colágeno tipo I é defeituoso ou insuficiente, e o osso fica **fino e frágil**. A radiografia mostra isso:\n\n**osteopenia difusa**, com **corticais finas** e **trabéculas finas**;\n\n**vértebras bicôncavas** (em \"boca de peixe\"): o osso vertebral fraco cede à pressão dos discos, além de fraturas por compressão;\n\n**ossos longos** finos e arqueados, com fraturas em várias fases de consolidação; no tipo II, curtos e largos, \"em sanfona\";\n\n**ossos wormianos**: pequenos ossos extras nas suturas do crânio;\n\n**linhas densas** nas metáfises em quem recebe bisfosfonato (marcam cada ciclo);\n\n**calo hiperplásico** no tipo V, que pode imitar osteossarcoma.\n\n**O que não é da OI**: cortical grossa e trabéculas grossas são achados de osso denso, como na osteopetrose. O tempo de ossificação é normal.\n\n**O tratamento**: bisfosfonato (pamidronato, zoledronato) e hastes telescópicas nas deformidades e fraturas repetidas.\n\n**Na prova**: achado radiográfico da OI = **vértebras bicôncavas**.",
-  "correta": "O osso vertebral frágil cede à pressão dos discos e fica bicôncavo, achado típico da osteogênese imperfeita.",
   "referencias": [
-   "https://pubmed.ncbi.nlm.nih.gov/29354746/"
+   "https://pubmed.ncbi.nlm.nih.gov/29354746/",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0139": {
@@ -2162,18 +2164,19 @@
   "conferido": false
  },
  "pediatria-0154": {
+  "conceito": "**A hemimelia fibular.** É a **deficiência longitudinal congênita mais comum** dos ossos longos: a fíbula está **ausente ou encurtada**. Não é um problema isolado da fíbula. Ela faz parte de um espectro que acomete todo o membro:\n- **tíbia curta**, com encurvamento **anteromedial** e uma covinha cutânea sobre o ápice;\n- **pé** com **raios laterais ausentes** e **coalizão tarsal** (talocalcânea), com o retropé em valgo;\n- **tornozelo instável** em valgo, com a superfície do tálus em \"bola e soquete\";\n- **fêmur curto**, com deficiência do LCA e do LCP e valgo do joelho (côndilo lateral hipoplásico).\n\n**A discrepância é progressiva.** A diferença de comprimento cresce **proporcionalmente** com a idade. Ela pode ser prevista na infância pelo método multiplicador.\n\n**A classificação de Paley.** Foi criada para guiar a **reconstrução**. Ela se baseia no **tornozelo e na articulação subtalar**, e não apenas em quanto da fíbula existe.\n\n| Tipo | Tornozelo | Ideia central |\n|---|---|---|\n| 1 | **Estável**, normal | Só a discrepância a tratar |\n| 2 | Valgo **dinâmico** (bola e soquete) | Instável, mas corrigível |\n| **3** | **Equinovalgo fixo** | Deformidade rígida; subtipos pelo local (tornozelo, subtalar ou ambos) |\n| 4 | **Equinovaro fixo** | Pé em \"pé torto\" |\n\n**Os subtipos do tipo 3.**\n- **3A**: a deformidade está no **tornozelo** (tíbia distal em valgo).\n- **3B**: a deformidade está na **subtalar** (coalizão em valgo).\n- **3C**: combinação dos dois.\n\n**O tratamento.** A grande decisão é entre **reconstruir** e **amputar**.\n- **Reconstrução**: alongamentos (às vezes vários), correção do pé com a cirurgia SUPERankle de Paley e correção do joelho.\n- **Amputação de Syme** (ou de Boyd) com prótese, na infância: indicada quando a discrepância prevista é enorme ou o pé tem pouca função. Os resultados funcionais são excelentes.\n\nA classificação de **Achterman e Kalamchi** (tipos IA, IB e II, pela quantidade de fíbula presente) é a mais antiga e descreve a anatomia. A de Paley é a usada para planejar a cirurgia.",
+  "correta": "**Correta: C (III).** Na classificação de Paley para a hemimelia fibular, o tipo 3 corresponde ao tornozelo em **equinovalgo fixo**. Ele é subdividido conforme a deformidade esteja no tornozelo (3A), na subtalar (3B) ou em ambos (3C).",
   "incorretas": {
-   "A": "O tipo 1 tem tornozelo estável, sem deformidade fixa.",
-   "B": "O tipo 2 tem valgo dinâmico, que ainda corrige passivamente.",
-   "D": "O tipo 4 é o pé em equinovaro, parecido com pé torto."
+   "A": "O tipo **1** tem tornozelo **estável** e normal. O problema principal é a discrepância de comprimento.",
+   "B": "O tipo **2** tem um valgo **dinâmico** (articulação em bola e soquete), instável mas **não fixo**.",
+   "D": "O tipo **4** tem o pé em **equinovaro fixo**, semelhante ao pé torto, e não em equinovalgo."
   },
-  "conceito": "A **hemimelia fibular** é a deficiência congênita mais comum dos ossos longos. É **longitudinal pós-axial** e vai além da fíbula: tíbia curta e arqueada (com covinha na pele), fêmur curto, hipoplasia do côndilo femoral lateral (joelho valgo), cruzados ausentes, **raios laterais do pé ausentes**, coalizão tarsal e tornozelo em \"bola e soquete\".\n\n**A classificação de Paley** se baseia no **tornozelo** e orienta a reconstrução:\n\n**tipo 1**: tornozelo **estável**;\n\n**tipo 2**: **valgo dinâmico**, que corrige passivamente;\n\n**tipo 3**: **equinovalgo fixo**, subdividido pelo local da deformidade: 3a no tornozelo, 3b na subtalar (coalizão) e 3c nos dois;\n\n**tipo 4**: pé em **equinovaro**, parecido com pé torto.\n\n**O tratamento**: a decisão entre **reconstruir** (correção do pé com a cirurgia SUPERankle, ressecção da faixa fibrosa da fíbula e alongamento) e **amputar** (Syme com prótese) depende da discrepância prevista e de o pé ser funcional.\n\n**Na prova**: equinovalgo fixo na hemimelia fibular = **Paley tipo 3**.",
-  "correta": "O tipo 3 de Paley é o tornozelo em equinovalgo fixo, subdividido conforme a deformidade esteja no tornozelo, na subtalar ou nos dois.",
   "referencias": [
    "https://pmc.ncbi.nlm.nih.gov/articles/PMC5145840/",
-   "https://pmc.ncbi.nlm.nih.gov/articles/PMC13033323/"
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC13033323/",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0155": {
@@ -2329,14 +2332,18 @@
   "conferido": false
  },
  "pediatria-0168": {
-  "conceito": "### Deficiência femoral focal proximal (DFFP)\n- Espectro das deficiências congênitas do fêmur; ==unilateral== em geral.\n- Coxa curta, ==quadril em flexão, abdução e rotação externa==.\n- Associações: ==hemimelia fibular== (cerca de 50%), deficiência do LCA, pé com raios ausentes.\n\n### Aitken\n| Tipo | Cabeça femoral | Acetábulo |\n|---|---|---|\n| A | presente | normal |\n| B | presente, sem conexão ao colo | adequado |\n| C | ausente | displásico |\n| D | ausente | ausente |\n\n### Tratamento\n| Situação | Opção |\n|---|---|\n| discrepância prevista < 20 cm, quadril estável | alongamento, epifisiodese |\n| grave | ==Van Nes== (rotacionplastia), artrodese do joelho + prótese, Syme |\n\n### Aitken em detalhe\n| Tipo | Cabeça | Acetábulo | Colo |\n|---|---|---|---|\n| A | presente | normal | pseudartrose que ==consolida== (coxa vara) |\n| ==B== | presente | adequado | ==pseudartrose do colo persistente==, sem conexão |\n| C | ausente | displásico | segmento curto com ossículo |\n| D | ausente | ausente | fêmur muito curto |\n\n> **Na prova:** cabeça presente, acetábulo adequado, sem conexão com a diáfise = ==Aitken B==",
-  "correta": "**Aitken B.**\n- Cabeça e acetábulo presentes.\n- Pseudartrose do colo persistente.",
+  "conceito": "**A imagem.** O desenho mostra a **cabeça femoral presente**, alojada num **acetábulo** razoável, e um **fêmur curto**, cuja extremidade proximal é **afilada**. Entre a cabeça e a diáfise **não há conexão óssea**: existe um espaço (que, no paciente, é ocupado por cartilagem ou tecido fibroso). Esse é o tipo **B** de Aitken.\n\n**A deficiência femoral focal proximal (DFFP).** Faz parte do espectro das **deficiências longitudinais congênitas do fêmur**, que vai do fêmur curto congênito, com quadril normal, até a quase ausência do fêmur proximal. Geralmente é **unilateral**.\n\n**Como a criança se apresenta.**\n- Coxa **muito curta e volumosa**.\n- Quadril em **flexão, abdução e rotação externa**.\n- Pé geralmente na altura do joelho contralateral.\n\n**Associações frequentes.** **Hemimelia fibular** em cerca de metade dos casos, **deficiência do LCA** e pé com raios ausentes.\n\n**A classificação de Aitken.** Separa os tipos pela presença da **cabeça femoral**, pelo **acetábulo** e pela existência de uma **conexão óssea** entre a cabeça e a diáfise na maturidade.\n\n| Tipo | Cabeça e acetábulo | Conexão cabeça-diáfise |\n|---|---|---|\n| **A** | Cabeça presente; acetábulo **normal** | Defeito subtrocantérico que **ossifica**, deixando coxa vara |\n| **B** | Cabeça presente; acetábulo adequado ou levemente displásico | **Não ossifica**: **pseudoartrose** persistente no colo |\n| **C** | Cabeça **ausente** ou só um ossículo; acetábulo muito displásico | Sem articulação útil |\n| **D** | Cabeça e acetábulo **ausentes**; fêmur muito curto | Sem articulação |\n\n**Como raciocinar.** Nos tipos A e B **existe** uma cabeça dentro de um acetábulo, e por isso existe um quadril potencial. A diferença está no que acontece entre a cabeça e a diáfise. No **A**, a falha cartilaginosa acaba ossificando, e sobra uma coxa vara grave. No **B**, a falha persiste como **pseudoartrose** do colo. Nos tipos C e D, **não há** quadril para reconstruir.\n\n**Implicações no tratamento.**\n- Nos tipos **A e B**, pode-se pensar em estabilizar o quadril e, em casos selecionados, em alongamento.\n- Nos tipos **C e D**, com o membro muito curto, a regra é a **adaptação protética**. Ela pode ser associada à **artrodese do joelho** com amputação de Syme, ou à **rotacionplastia de Van Nes**, em que o tornozelo girado 180° passa a funcionar como joelho.\n- O **cálculo da discrepância final** dos membros orienta se o caso é de alongamento ou de prótese.",
+  "correta": "**Correta: B (B).** A imagem mostra a cabeça femoral presente num acetábulo adequado e um fêmur curto **sem conexão óssea** com a cabeça. É o tipo **B** de Aitken, em que persiste uma pseudoartrose no colo na maturidade.",
   "incorretas": {
-   "A": "**Aitken A.**\n- Colo consolida em varo.",
-   "C": "**Aitken C.**\n- Cabeça ausente, acetábulo displásico.",
-   "D": "**Aitken D.**\n- Cabeça e acetábulo ausentes."
+   "A": "No tipo **A**, a cabeça e o acetábulo são normais e o defeito subtrocantérico **ossifica**, unindo a cabeça à diáfise com coxa vara. Na imagem, não há essa ponte óssea.",
+   "C": "No tipo **C**, a cabeça femoral está **ausente** ou é apenas um ossículo, e o acetábulo é muito displásico. Na imagem, a cabeça está presente no acetábulo.",
+   "D": "No tipo **D**, a cabeça e o acetábulo estão **ausentes** e o fêmur é muito curto. Na imagem, existem cabeça e acetábulo."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0169": {
@@ -3166,14 +3173,18 @@
   "conferido": false
  },
  "pediatria-0278": {
+  "conceito": "**Para que serve classificar o pé torto.** As classificações quantificam a **gravidade** inicial e permitem acompanhar a **correção** gesso a gesso, ajudando a prever quantos gessos e se será preciso tenotomia. As duas mais usadas são a de **Dimeglio** e a de **Pirani**.\n\n**A classificação de Dimeglio.** É uma escala de **0 a 20 pontos**, com duas partes.\n\n**1. Quatro parâmetros de redutibilidade**, cada um de **0 a 4 pontos**, conforme o ângulo que **não se corrige** com a manipulação:\n- **Equino** (plano sagital).\n- **Varo** do retropé (plano frontal).\n- **Desrotação** do bloco calcaneopédico em torno do tálus (plano horizontal).\n- **Adução do antepé** em relação ao retropé (plano horizontal).\n\n**2. Quatro sinais adicionais**, cada um valendo **1 ponto**:\n- **Prega posterior** (acima do calcanhar).\n- **Prega medial** (no mediopé).\n- **Cavo**.\n- **Má condição muscular** (hipertonia ou hipotrofia).\n\n**Os graus de gravidade.**\n\n| Grau | Pontos | Gravidade |\n|---|---|---|\n| I | Menos de 5 | **Benigno**: pé postural, quase redutível |\n| II | 5 a 9 | Moderado: redutível, parcialmente resistente |\n| III | 10 a 14 | Grave: resistente, parcialmente redutível |\n| IV | 15 a 20 | Muito grave: pseudoartrogripótico, irredutível |\n\n**A classificação de Pirani, para comparação.** Avalia **seis sinais clínicos**, cada um com **0, 0,5 ou 1 ponto**, num total de 0 a 6.\n- **Mediopé**: borda lateral curva, prega medial, cabeça do tálus palpável lateralmente.\n- **Retropé**: prega posterior, calcanhar vazio, equino rígido.\n\nUm escore de retropé alto com o mediopé corrigido sugere necessidade de **tenotomia**.\n\n**O que as pregas significam.**\n- A **prega medial** profunda indica um mediopé rígido e um **cavo** acentuado.\n- A **prega posterior** profunda indica um **equino** rígido.",
+  "correta": "**Correta: A (1 ponto).** Na classificação de Dimeglio, a **prega medial** é um dos quatro sinais adicionais (com a prega posterior, o cavo e a má condição muscular), e cada um vale **1 ponto**. Os quatro parâmetros de redutibilidade valem de 0 a 4 pontos cada.",
   "incorretas": {
-   "B": "Os itens adicionais valem 1 ponto cada; 2 pontos não existe para a prega medial.",
-   "C": "3 pontos é valor dos parâmetros principais redutíveis, não das pregas.",
-   "D": "4 pontos é o máximo de cada parâmetro principal, como equino ou varo, não das pregas."
+   "B": "Os sinais adicionais, como a prega medial, valem apenas **1 ponto** cada. Pontuações de 2 ou mais aparecem nos parâmetros de redutibilidade.",
+   "C": "Uma pontuação de **3** só é atribuída aos parâmetros de redutibilidade (equino, varo, desrotação e adução), conforme o ângulo não corrigido.",
+   "D": "**4 pontos** é o máximo de **cada parâmetro de redutibilidade**, e não o valor da prega medial."
   },
-  "conceito": "A **classificação de Dimeglio** mede a gravidade do **pé torto** antes do tratamento e acompanha a resposta. A pontuação vai de 0 a 20.\n\n**Os quatro parâmetros principais**, cada um de **0 a 4 pontos**, conforme o quanto a deformidade se reduz passivamente:\n\n**equino** no plano sagital;\n\n**varo** do calcâneo no plano frontal;\n\n**rotação** do bloco calcâneo-antepé ao redor do tálus, no plano horizontal;\n\n**adução** do antepé.\n\n**Os quatro itens adicionais**, cada um valendo **1 ponto**:\n\n**prega posterior** acentuada no calcanhar;\n\n**prega medial** acentuada no mediopé;\n\n**cavo**;\n\n**musculatura ruim** (hipotonia ou fibrose).\n\n**O grau pelo total**: abaixo de 5, grau I (postural, quase normal); de 5 a 9, grau II (moderado); de 10 a 14, grau III (grave); de 15 a 20, grau IV (muito grave, quase rígido).\n\n**Outra escala usada**: a de **Pirani**, que vai de 0 a 6 e soma o retropé e o mediopé; é a mais usada no acompanhamento do Ponseti.\n\n**Na prova**: a prega medial no Dimeglio vale **1 ponto**.",
-  "correta": "A prega medial é um dos quatro itens adicionais do Dimeglio, e cada um vale 1 ponto.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Diméglio A, Bensahel H, Souchet P, Mazeau P, Bonnet F. Classification of clubfoot. J Pediatr Orthop B. 1995;4(2):129-136."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0279": {
@@ -3705,18 +3716,19 @@
   "conferido": false
  },
  "pediatria-0331": {
-  "conceito": "### Legg-Calvé-Perthes: fases (Waldenström)\n| Fase | Achado |\n|---|---|\n| inicial (necrose) | cabeça densa, pequena; fratura subcondral (Salter-Thompson) |\n| ==fragmentação== | epífise fragmentada, colapso |\n| reossificação | osso novo |\n| residual | remodelada |\n\n### Classificações\n| Classificação | Incidência | Fase | Critério |\n|---|---|---|---|\n| ==Herring (pilar lateral)== | ==AP== | ==fragmentação== | altura do pilar lateral: A (100%), B (> 50%), B/C, C (< 50%) |\n| Catterall | AP e perfil | | quanto da epífise acometida (I a IV) + sinais de risco |\n| Salter-Thompson | perfil | inicial | extensão da fratura subcondral |\n| Stulberg | AP e perfil | ==maturidade== | congruência e esfericidade (prognóstico de artrose) |\n\n### Prognóstico\n- Pior: início > 8 anos, Herring C, sinais de cabeça em risco.\n\n### Herring detalhado\n| Grupo | Pilar lateral | Prognóstico |\n|---|---|---|\n| A | altura preservada | bom |\n| B | > 50% da altura | bom se < 8 anos |\n| B/C | cerca de 50%, estreito ou pouco ossificado | intermediário |\n| ==C== | ==perda de mais de 50%== | ==ruim== |\n\n> **Na prova:** perda de mais de 50% do pilar lateral = ==Herring C==",
-  "correta": "**Grupo C.**\n- Pilar lateral com menos de 50% da altura.\n- Pior prognóstico.",
+  "conceito": "**A doença de Legg-Calvé-Perthes.** É a **necrose avascular idiopática** da epífise femoral proximal na criança. É mais comum em meninos de **4 a 8 anos**, geralmente baixos e com idade óssea atrasada. A doença segue os **estágios de Waldenström**:\n1. **Necrose** (inicial): epífise densa e menor.\n2. **Fragmentação**: o osso morto é reabsorvido e a epífise se fragmenta.\n3. **Reossificação**: osso novo preenche a epífise.\n4. **Remodelação** (residual): forma final da cabeça.\n\n**A classificação do pilar lateral de Herring.** É feita no **estágio de fragmentação**, no **AP** da bacia. A epífise é dividida em três **pilares**: lateral, central e medial. O **pilar lateral** corresponde aos **15 a 30% laterais** da epífise. A classificação compara a **altura** do pilar lateral doente com a do pilar lateral normal.\n\n| Grupo | Altura do pilar lateral | Prognóstico |\n|---|---|---|\n| **A** | **Sem perda** de altura | Bom |\n| **B** | Mantém **mais de 50%** da altura | Bom abaixo de cerca de 8 anos; pior acima |\n| **B/C** (fronteira) | Cerca de **50%**, ou pilar estreito (2 a 3 mm) ou mal ossificado | Intermediário |\n| **C** | Mantém **menos de 50%** da altura (perde mais da metade) | **Ruim** em qualquer idade |\n\n**Por que o pilar lateral importa.** O pilar lateral é a parte da epífise que **sustenta a carga** e mantém a cabeça dentro do acetábulo. Se ele colapsa, a cabeça **extrui** lateralmente, achata e perde a esfericidade. O resultado é uma cabeça deformada e incongruente, que leva à artrose.\n\n**A idade é o outro grande fator.** Quanto mais nova a criança, maior o potencial de remodelação. Os principais fatores prognósticos são:\n- **Idade de início**: abaixo de 6 anos, prognóstico melhor.\n- **Grupo do pilar lateral**.\n- Os **sinais de cabeça em risco** de Catterall: Gage, calcificação lateral, subluxação, horizontalização da fise, cisto metafisário.\n\n**O tratamento (estudo multicêntrico de Herring).**\n- Nas crianças **acima de 8 anos** (idade cronológica) nos grupos **B e B/C**, a **cirurgia de contenção** (osteotomia femoral varizante ou osteotomia de Salter) deu resultados melhores que o tratamento não cirúrgico.\n- Nos menores de 8 anos e no grupo A, o resultado foi bom sem cirurgia.\n- No grupo **C**, o resultado foi ruim com ou sem cirurgia.\n\n**O desfecho final é avaliado pela classificação de Stulberg**, que considera a esfericidade e a congruência da cabeça na maturidade.",
+  "correta": "**Correta: D (C).** Na classificação do pilar lateral de Herring, o grupo **C** é aquele em que o pilar lateral perde **mais de 50%** da altura, ou seja, mantém menos da metade. Tem prognóstico ruim em qualquer idade.",
   "incorretas": {
-   "A": "**Grupo A.**\n- Pilar íntegro.",
-   "B": "**Grupo B.**\n- Mantém mais de 50%.",
-   "C": "**Grupo B/C.**\n- Limítrofe, cerca de 50%."
+   "A": "No grupo **A**, o pilar lateral **não perde altura**. Tem bom prognóstico.",
+   "B": "No grupo **B**, o pilar lateral mantém **mais de 50%** da altura, ou seja, perde menos da metade.",
+   "C": "O grupo **B/C** é a fronteira: pilar com cerca de 50% da altura, estreito (2 a 3 mm) ou mal ossificado. A perda de **mais** da metade é o grupo C."
   },
   "referencias": [
    "Herring JA, Neustadt JB, Williams JJ, Early JS, Browne RH. The lateral pillar classification of Legg-Calvé-Perthes disease. J Pediatr Orthop. 1992;12:143-150. PMID: 1552014.",
-   "Classifications in Brief: The Herring Lateral Pillar Classification for Legg-Calvé-Perthes Disease. PMCID: PMC3676599."
+   "Classifications in Brief: The Herring Lateral Pillar Classification for Legg-Calvé-Perthes Disease. PMCID: PMC3676599.",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0332": {
@@ -4737,14 +4749,18 @@
   "conferido": false
  },
  "pediatria-0420": {
+  "conceito": "**Duas formas de classificar a paralisia cerebral.** A paralisia cerebral (PC) pode ser classificada por **topografia** (que membros são acometidos) e pelo **tipo de distúrbio do movimento**. A classificação **fisiológica**, associada a Phelps e a outros autores clássicos, relaciona o **tipo** de distúrbio motor ao **local** da lesão cerebral.\n\n**Os tipos de PC e o local da lesão.**\n\n| Tipo | Local da lesão | Característica clínica |\n|---|---|---|\n| **Espástico** | **Córtex motor** e trato **piramidal** (corticoespinhal) | Hipertonia velocidade-dependente, hiper-reflexia, Babinski, clônus |\n| **Discinético** (atetoide, distônico, coreico) | **Núcleos da base** (extrapiramidal) | Movimentos involuntários, tônus flutuante |\n| **Atáxico** | **Cerebelo** | Incoordenação, marcha de base alargada, tremor intencional |\n| Misto | Vários locais | Combinação, geralmente espasticidade com discinesia |\n\n**A forma espástica** é a mais comum, em cerca de **70 a 80%** dos casos. É a que mais se beneficia de tratamento ortopédico: alongamentos, transferências tendíneas e osteotomias.\n\n**A forma discinética.** Classicamente, era associada à **asfixia aguda grave** no parto a termo (lesão dos núcleos da base e do tálamo) e ao **kernicterus** (hiperbilirrubinemia). O tônus **varia**: o paciente pode estar hipotônico em repouso e hipertônico ao tentar se mover.\n\n**Por que a cirurgia é arriscada na discinética.** O tônus muda o tempo todo, e o resultado é **imprevisível**. Um alongamento pode produzir a deformidade **oposta**. Por isso, as cirurgias de partes moles são evitadas nesses pacientes.\n\n**A forma atáxica** é a mais rara. Muitas vezes é de origem genética, e não por lesão perinatal.\n\n**A atetose.** São movimentos **lentos, contorcidos e serpenteantes**, sobretudo nas mãos, nos dedos e na face. Pioram com a emoção e a tentativa de movimento e desaparecem no sono. Ela é a expressão clássica da lesão dos **núcleos da base**, como no **kernicterus**, em que a bilirrubina se deposita no globo pálido e no núcleo subtalâmico.",
+  "correta": "**Correta: C (nos gânglios da base).** A atetose, uma forma de paralisia cerebral discinética, decorre de lesão dos **núcleos (gânglios) da base**, componentes do sistema extrapiramidal. As causas clássicas são a asfixia aguda grave no parto a termo e o kernicterus.",
   "incorretas": {
-   "A": "A lesão do cerebelo causa ataxia, não atetose.",
-   "B": "O hipocampo está ligado à memória, não ao controle do movimento.",
-   "D": "A lesão do neurônio motor superior causa espasticidade."
+   "A": "A lesão do **cerebelo** produz a forma **atáxica**, com incoordenação, tremor intencional e marcha de base alargada.",
+   "B": "O **hipocampo** está ligado à **memória** e às crises epilépticas do lobo temporal, e não ao controle do movimento.",
+   "D": "A lesão do **neurônio motor superior** (córtex e trato piramidal) produz a forma **espástica**, com hipertonia e hiper-reflexia."
   },
-  "conceito": "Na **paralisia cerebral**, o tipo de distúrbio do movimento aponta o local da lesão:\n\n**espasticidade**: lesão do **neurônio motor superior** (sistema piramidal: córtex motor e trato corticoespinal); hipertonia que aumenta com a velocidade e reflexos exaltados;\n\n**atetose** (e distonia): lesão dos **gânglios (núcleos) da base**, o sistema **extrapiramidal**; movimentos **involuntários**, lentos e contorcidos, sobretudo das mãos e da face, com tônus que oscila;\n\n**ataxia**: lesão do **cerebelo**; falta de coordenação, dismetria e problema de equilíbrio.\n\n**As causas clássicas da atetose**: o **kernicterus** (bilirrubina alta que se deposita nos núcleos da base, como na incompatibilidade Rh) e a **asfixia** no bebê a termo.\n\n**O hipocampo**: está ligado à **memória**, não ao controle do movimento.\n\n**Para o ortopedista**: a cirurgia é mais previsível no espástico; no atetoide, o tônus variável torna o resultado imprevisível, e alongamentos podem gerar a deformidade oposta.\n\n**Na prova**: a atetose vem de lesão dos **gânglios da base**.",
-  "correta": "A atetose é um distúrbio extrapiramidal, por lesão dos gânglios da base, e o kernicterus é a causa clássica.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0421": {
@@ -5123,14 +5139,18 @@
   "conferido": false
  },
  "pediatria-0453": {
-  "conceito": "### Deficiência femoral focal proximal (DFFP)\n- Espectro das deficiências congênitas do fêmur; ==unilateral== em geral.\n- Coxa curta, ==quadril em flexão, abdução e rotação externa==.\n- Associações: ==hemimelia fibular== (cerca de 50%), deficiência do LCA, pé com raios ausentes.\n\n### Aitken\n| Tipo | Cabeça femoral | Acetábulo |\n|---|---|---|\n| A | presente | normal |\n| B | presente, sem conexão ao colo | adequado |\n| C | ausente | displásico |\n| D | ausente | ausente |\n\n### Tratamento\n| Situação | Opção |\n|---|---|\n| discrepância prevista < 20 cm, quadril estável | alongamento, epifisiodese |\n| grave | ==Van Nes== (rotacionplastia), artrodese do joelho + prótese, Syme |\n\n### Aitken em detalhe\n| Tipo | Cabeça | Acetábulo | Colo |\n|---|---|---|---|\n| A | presente | normal | pseudartrose que ==consolida== (coxa vara) |\n| ==B== | presente | adequado | ==pseudartrose do colo persistente==, sem conexão |\n| C | ausente | displásico | segmento curto com ossículo |\n| D | ausente | ausente | fêmur muito curto |\n\n> **Na prova:** cabeça presente, acetábulo adequado, sem conexão com a diáfise = ==Aitken B==",
-  "correta": "**Aitken B.**\n- Cabeça e acetábulo presentes.\n- Pseudartrose do colo persistente.",
+  "conceito": "**A imagem.** O desenho mostra a **cabeça femoral presente**, alojada num **acetábulo** razoável, e um **fêmur curto**, cuja extremidade proximal é **afilada**. Entre a cabeça e a diáfise **não há conexão óssea**: existe um espaço (que, no paciente, é ocupado por cartilagem ou tecido fibroso). Esse é o tipo **B** de Aitken.\n\n**A deficiência femoral focal proximal (DFFP).** Faz parte do espectro das **deficiências longitudinais congênitas do fêmur**, que vai do fêmur curto congênito, com quadril normal, até a quase ausência do fêmur proximal. Geralmente é **unilateral**.\n\n**Como a criança se apresenta.**\n- Coxa **muito curta e volumosa**.\n- Quadril em **flexão, abdução e rotação externa**.\n- Pé geralmente na altura do joelho contralateral.\n\n**Associações frequentes.** **Hemimelia fibular** em cerca de metade dos casos, **deficiência do LCA** e pé com raios ausentes.\n\n**A classificação de Aitken.** Separa os tipos pela presença da **cabeça femoral**, pelo **acetábulo** e pela existência de uma **conexão óssea** entre a cabeça e a diáfise na maturidade.\n\n| Tipo | Cabeça e acetábulo | Conexão cabeça-diáfise |\n|---|---|---|\n| **A** | Cabeça presente; acetábulo **normal** | Defeito subtrocantérico que **ossifica**, deixando coxa vara |\n| **B** | Cabeça presente; acetábulo adequado ou levemente displásico | **Não ossifica**: **pseudoartrose** persistente no colo |\n| **C** | Cabeça **ausente** ou só um ossículo; acetábulo muito displásico | Sem articulação útil |\n| **D** | Cabeça e acetábulo **ausentes**; fêmur muito curto | Sem articulação |\n\n**Como raciocinar.** Nos tipos A e B **existe** uma cabeça dentro de um acetábulo, e por isso existe um quadril potencial. A diferença está no que acontece entre a cabeça e a diáfise. No **A**, a falha cartilaginosa acaba ossificando, e sobra uma coxa vara grave. No **B**, a falha persiste como **pseudoartrose** do colo. Nos tipos C e D, **não há** quadril para reconstruir.\n\n**Implicações no tratamento.**\n- Nos tipos **A e B**, pode-se pensar em estabilizar o quadril e, em casos selecionados, em alongamento.\n- Nos tipos **C e D**, com o membro muito curto, a regra é a **adaptação protética**. Ela pode ser associada à **artrodese do joelho** com amputação de Syme, ou à **rotacionplastia de Van Nes**, em que o tornozelo girado 180° passa a funcionar como joelho.\n- O **cálculo da discrepância final** dos membros orienta se o caso é de alongamento ou de prótese.",
+  "correta": "**Correta: B (B).** A imagem mostra a cabeça femoral presente num acetábulo adequado e um fêmur curto **sem conexão óssea** com a cabeça. É o tipo **B** de Aitken, em que persiste uma pseudoartrose no colo na maturidade.",
   "incorretas": {
-   "A": "**Aitken A.**\n- Colo consolida em varo.",
-   "C": "**Aitken C.**\n- Cabeça ausente, acetábulo displásico.",
-   "D": "**Aitken D.**\n- Cabeça e acetábulo ausentes."
+   "A": "No tipo **A**, a cabeça e o acetábulo são normais e o defeito subtrocantérico **ossifica**, unindo a cabeça à diáfise com coxa vara. Na imagem, não há essa ponte óssea.",
+   "C": "No tipo **C**, a cabeça femoral está **ausente** ou é apenas um ossículo, e o acetábulo é muito displásico. Na imagem, a cabeça está presente no acetábulo.",
+   "D": "No tipo **D**, a cabeça e o acetábulo estão **ausentes** e o fêmur é muito curto. Na imagem, existem cabeça e acetábulo."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0454": {
@@ -5314,18 +5334,19 @@
   "conferido": false
  },
  "pediatria-0472": {
-  "conceito": "### Osteogênese imperfeita (Sillence modificada)\n| Tipo | Gravidade | Detalhe |\n|---|---|---|\n| I | leve | ==escleras azuis==, surdez, colágeno em quantidade reduzida |\n| II | letal perinatal | fraturas múltiplas intrauterinas |\n| III | grave progressiva | deformidade, baixa estatura, dentinogênese |\n| IV | moderada | escleras normais |\n| ==V== | moderada | ==calo hiperplásico== (simula ==osteossarcoma==), ==calcificação da membrana interóssea== do antebraço, luxação da cabeça do rádio; IFITM5 |\n| VI em diante | variadas | genes não colágenos |\n\n### Tratamento\n- ==Bisfosfonato== (pamidronato, zoledronato).\n- Hastes telescópicas (Fassier-Duval, Sheffield) nas deformidades e fraturas repetidas.\n\n### Base molecular\n- Colágeno tipo I: tripla hélice com repetição ==Gly-X-Y== (glicina a cada terceiro aminoácido).\n- ==Substituição da glicina== (mutação de sentido trocado em COL1A1/COL1A2) impede o enrolamento: formas graves (II, III, IV).\n- Mutação que reduz a quantidade (haploinsuficiência): forma leve (I).\n\n> **Na prova:** aminoácido do defeito do colágeno na OI = ==glicina==",
-  "correta": "**Glicina.**\n- Presente a cada três posições da hélice.\n- Sua substituição desestrutura a tripla hélice.",
+  "conceito": "**O colágeno tipo I.** É a principal proteína do osso, da pele, dos tendões, da esclera e da dentina. Cada molécula é uma **tripla hélice** formada por três cadeias: duas **alfa-1** (gene **COL1A1**) e uma **alfa-2** (gene **COL1A2**).\n\n**Por que a glicina é tão importante.** Na hélice, a sequência de aminoácidos se repete no padrão **Gly-X-Y**: a cada três posições, há uma **glicina**. Muitas vezes, X é **prolina** e Y é **hidroxiprolina**. A glicina é o **menor aminoácido**, e só ela cabe no **centro apertado** da tripla hélice, onde as três cadeias se encontram.\n\n**Os dois tipos de defeito.**\n\n| Defeito | Mecanismo | Gravidade |\n|---|---|---|\n| **Quantitativo** | Um alelo não produz cadeia (alelo nulo): metade do colágeno, mas **normal** | **Leve** (tipo I de Sillence) |\n| **Qualitativo** | **Substituição de uma glicina** por um aminoácido maior: colágeno **anormal** | Moderado a **letal** (tipos II, III e IV) |\n\n**O efeito dominante negativo.** Quando a glicina é substituída, a cadeia defeituosa **entra na hélice** e estraga a molécula inteira. É pior ter colágeno anormal que pouco colágeno.\n\n**A posição da mutação importa.** A hélice se dobra da extremidade **C-terminal** para a N-terminal. Substituições mais próximas da extremidade **C-terminal** tendem a ser **mais graves**, porque perturbam a montagem desde o início.\n\n**Formas recessivas e outras.** Existem formas de OI por defeitos em proteínas que **processam** o colágeno, como **CRTAP**, **P3H1** (LEPRE1) e **PPIB**, ou por outros mecanismos ósseos (**IFITM5** no tipo V e **SERPINF1** no tipo VI).\n\n**Os achados radiográficos.**\n- **Osteopenia** difusa.\n- **Corticais finas** e ossos longos **gráceis** (finos), com **trabéculas finas** e esparsas.\n- **Fraturas múltiplas** em diferentes fases de consolidação, e **encurvamentos**.\n- **Vértebras bicôncavas** (em \"boca de peixe\") e achatadas, por microfraturas.\n- **Ossos wormianos** no crânio.\n- **Calcificações em pipoca** nas metáfises nas formas graves.\n- **Protrusão acetabular** e invaginação basilar.\n- No **tipo V**: **calo hiperplásico** e calcificação da membrana interóssea do antebraço.\n\nA **ossificação** em si acontece no tempo normal. O problema é a **qualidade** da matriz, e não o momento em que ela se forma.\n\n**O tratamento.**\n- **Bisfosfonatos** (pamidronato, zoledronato) aumentam a densidade e reduzem as fraturas.\n- **Hastes telescópicas** (Fassier-Duval) corrigem e previnem as deformidades dos ossos longos.\n- Reabilitação para manter a força e a mobilidade.",
+  "correta": "**Correta: B (glicina).** Na osteogênese imperfeita, o defeito qualitativo clássico do colágeno tipo I é a **substituição de uma glicina** na sequência repetida Gly-X-Y da tripla hélice. Como a glicina é o único aminoácido pequeno o bastante para ocupar o centro da hélice, a troca deforma a molécula inteira.",
   "incorretas": {
-   "A": "**Não é o defeito clássico.**\n- Lisina é hidroxilada, mas não é o alvo.",
-   "C": "**Não é o defeito.**\n- Cisteína.",
-   "D": "**Não é o defeito.**\n- Arginina."
+   "A": "A **lisina** participa das **ligações cruzadas** do colágeno após a hidroxilação, mas a mutação típica da OI não é a troca da lisina.",
+   "C": "A **cisteína** pode aparecer **substituindo** a glicina em algumas mutações, mas o aminoácido cuja falta gera o defeito é a glicina.",
+   "D": "A **arginina** também pode substituir a glicina em algumas mutações. Ela é o aminoácido que entra, e não o envolvido no defeito central."
   },
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Osteogenesis Imperfecta. https://posna.org/physician-education/study-guide/osteogenesis-imperfecta",
-   "GeneReviews. COL1A1- and COL1A2-Related Osteogenesis Imperfecta. https://www.ncbi.nlm.nih.gov/books/NBK1295/"
+   "GeneReviews. COL1A1- and COL1A2-Related Osteogenesis Imperfecta. https://www.ncbi.nlm.nih.gov/books/NBK1295/",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0473": {
@@ -5531,14 +5552,18 @@
   "conferido": false
  },
  "pediatria-0488": {
+  "conceito": "**A doença de Blount (tíbia vara).** É um distúrbio de crescimento da **porção posteromedial da fise proximal da tíbia**. O varo é progressivo e associado a torção tibial interna. O mecanismo aceito é **mecânico**, pela lei de Hueter-Volkmann: a **compressão excessiva** no lado medial da fise, num joelho em varo que suporta muito peso, **inibe o crescimento** daquele lado, e o varo se agrava num ciclo vicioso.\n\n**As duas formas.**\n\n| Forma | Início | Perfil |\n|---|---|---|\n| **Infantil** | Antes dos **4 anos** (geralmente aos 2 a 3) | Frequentemente **bilateral**; criança **obesa** que andou cedo |\n| Tardia (juvenil ou do adolescente) | Após os 4 anos | Unilateral com frequência; adolescente obeso; varo menos acentuado |\n\n**Fatores de risco e de pior prognóstico na forma infantil.**\n- **Obesidade**: o principal fator, pela carga sobre a fise medial.\n- **Marcha precoce**, antes de cerca de 1 ano.\n- Ascendência **negra** e **sexo feminino**: nas séries clássicas, as meninas negras evoluem para os estágios mais graves de Langenskiöld com mais frequência.\n- Doença **bilateral**.\n\n**A classificação de Langenskiöld.** Tem **seis estágios** radiográficos de piora do bico medial da metáfise e da epífise. O estágio VI corresponde a uma **barra óssea** fisária medial. Até o estágio III ou IV, a doença pode regredir com tratamento. Nos estágios V e VI, a lesão da fise é definitiva.\n\n**O ângulo metáfise-diáfise de Levine e Drennan (MDA).** É o ângulo entre uma linha que passa pelos **bicos da metáfise proximal da tíbia** e a perpendicular ao **eixo longo da diáfise**. Ele ajuda a separar o varo fisiológico do Blount:\n\n| MDA | Interpretação (Feldman e Schoenecker) |\n|---|---|\n| **10° ou menos** | Baixo risco: provável varo **fisiológico** |\n| Entre 10 e 16° | Zona **cinzenta**: acompanhar |\n| **16° ou mais** | Alto risco de **Blount** |\n\n**As limitações do MDA.**\n- O ângulo **muda com a rotação** do membro na radiografia: a rotação interna aumenta o valor medido.\n- Há **variação** entre observadores e com o posicionamento.\n- O valor de corte original (**11°**) teve muitos falsos-positivos em estudos posteriores.\n\nPor isso, o MDA é **pouco confiável quando usado isoladamente**. Deve ser interpretado com a **idade**, a evolução clínica, a **simetria** e as **radiografias seriadas**.\n\n**O tratamento.**\n- Até cerca de **3 anos**, nos estágios iniciais: **órtese** KAFO, com resultados variáveis.\n- Depois disso, ou se houver falha: **osteotomia valgizante e derrotatória** da tíbia proximal, de preferência **antes dos 4 anos**, com hipercorreção leve.\n- Nos casos avançados: ressecção de barra, elevação do platô medial ou hemiepifisiodese lateral com placa em 8, conforme a idade.",
+  "correta": "**Correta: D (feminino, na raça negra).** Na doença de Blount infantil, as séries clássicas mostram pior prognóstico, com maior progressão para os estágios avançados de Langenskiöld, nas **meninas negras**, sobretudo obesas e que andaram precocemente.",
   "incorretas": {
-   "A": "Meninos brancos estão no grupo de melhor prognóstico.",
-   "B": "A raça negra está certa, mas o pior prognóstico é no sexo feminino.",
-   "C": "O sexo feminino está certo, mas o pior prognóstico é na raça negra."
+   "A": "Os **meninos brancos** não formam o grupo de pior prognóstico; a doença é menos frequente e menos grave nesse grupo.",
+   "B": "A ascendência negra é fator de risco, mas a evolução mais grave nas séries clássicas é no **sexo feminino**.",
+   "C": "O sexo feminino é fator de pior evolução, mas a associação mais forte é com a ascendência **negra**."
   },
-  "conceito": "A **doença de Blount infantil** é o varo progressivo por falha da fise proximal medial da tíbia, em criança que **andou cedo** e tem **sobrepeso ou obesidade**. É mais comum em **afrodescendentes** e muitas vezes bilateral.\n\n**Os fatores de pior prognóstico**:\n\n**sexo feminino**;\n\n**raça negra**;\n\n**obesidade** importante;\n\n**início precoce** e diagnóstico tardio;\n\n**estágios avançados de Langenskiöld** (IV a VI), com barra fisária.\n\n**O resultado**: nesse grupo, a deformidade progride mais e a **recidiva** depois da osteotomia é mais frequente.\n\n**O tratamento**: órtese abaixo de 3 anos nos estágios I e II; osteotomia valgizante com hipercorreção, de preferência antes dos 4 anos; nos estágios avançados, ressecção da barra, epifisiodese e elevação do planalto medial.\n\n**O diagnóstico**: ângulo metafisário-diafisário de Drennan acima de 16°, bico metafisário medial, ossificação assimétrica da epífise e subluxação lateral da tíbia.\n\n**Na prova**: a Blount infantil tem pior prognóstico no sexo **feminino**, na **raça negra**.",
-  "correta": "O pior prognóstico da Blount infantil é em meninas negras, sobretudo obesas e com início precoce.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0489": {
