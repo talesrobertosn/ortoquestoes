@@ -1236,17 +1236,18 @@
   "conferido": false
  },
  "conceitos-basicos-0119": {
+  "conceito": "**O dilema clínico.** Uma criança chega mancando, com dor no quadril e talvez febre. As duas causas mais prováveis são a **sinovite transitória**, benigna e autolimitada, e a **artrite séptica**, uma **urgência** que destrói a cartilagem e a cabeça femoral em poucos dias se não for drenada. As duas produzem derrame articular e limitação de movimento, e o exame inicial pode ser parecido.\n\n**Os critérios de Kocher.** Kocher e colaboradores identificaram **quatro fatores preditivos** independentes de artrite séptica:\n1. **Incapacidade de apoiar** o membro (não deambula).\n2. **Febre** acima de **38,5 °C**.\n3. **VHS** acima de **40 mm/h**.\n4. **Leucócitos** acima de **12.000/mm³**.\n\n**A probabilidade de artrite séptica pelo número de fatores (série original).**\n\n| Fatores presentes | Probabilidade de artrite séptica |\n|---|---|\n| 0 | Menos de 0,2% |\n| 1 | Cerca de 3% |\n| 2 | Cerca de 40% |\n| 3 | Cerca de 93% |\n| **4** | Cerca de **99,6%** |\n\n**Lendo a pergunta ao contrário.** A questão pergunta a probabilidade de ser **sinovite transitória** com 4 fatores. Se a chance de artrite séptica é de cerca de 99,6%, a de sinovite transitória é **menor que 1%**, ou seja, **menos de 10%**.\n\n**Atualizações.**\n- **Caird** acrescentou a **proteína C-reativa** acima de **2 mg/dL**. Ela é um preditor forte, e com 5 fatores a probabilidade chega a cerca de 98%.\n- Em validações posteriores, em outros hospitais, o desempenho dos critérios foi **menor** que na série original. Eles **apoiam** a decisão, mas não substituem o julgamento clínico.\n\n**A conduta.**\n- Na suspeita, faz-se **ultrassonografia** para confirmar o derrame e **punção articular** guiada.\n- O líquido da artrite séptica costuma ter mais de **50.000 leucócitos/mm³**, com predomínio de **neutrófilos**.\n- A artrite séptica do quadril exige **drenagem cirúrgica** urgente e antibiótico. O agente mais comum é o *Staphylococcus aureus*. Em menores de 4 anos, a ***Kingella kingae*** é importante.",
+  "correta": "**Correta: D (impossibilidade de apoio do membro e o VHS acima de 40 mm/h).** Os critérios de Kocher para diferenciar a artrite séptica da sinovite transitória são: **impossibilidade de apoiar** o membro, **febre** acima de 38,5 °C, **VHS acima de 40 mm/h** e **leucócitos** acima de 12.000/mm³.",
   "incorretas": {
-   "A": "Erra os dois: claudicar não basta, e o corte do VHS é 40.",
-   "B": "O VHS acima de 40 está certo, mas claudicar não é critério. O critério é não apoiar o membro.",
-   "C": "Não apoiar está certo, mas o corte do VHS é 40 mm/h, e não 20."
+   "A": "A simples **claudicação** não é critério: o critério é a **impossibilidade de apoio**. E o corte da VHS é **40**, e não 20 mm/h.",
+   "B": "O corte da VHS está certo, mas o critério é a **impossibilidade de apoiar** o membro, e não a claudicação.",
+   "C": "A impossibilidade de apoio está certa, mas o corte da VHS é **40 mm/h**, e não 20."
   },
-  "conceito": "Os quatro **critérios de Kocher** ajudam a separar a **artrite séptica** do quadril (infecção, que exige drenagem urgente) da **sinovite transitória** (inflamação leve que passa sozinha) na criança:\n\n**Febre** acima de 38,5 graus.\n\n**Impossibilidade de apoiar** o peso no membro.\n\n**VHS** acima de **40 mm/h**.\n\n**Leucócitos** no sangue acima de 12.000 por mm³.\n\nQuanto mais critérios, maior a chance de infecção: na série original, cerca de 3% com um critério, 40% com dois, mais de 90% com três e cerca de 99% com quatro. Depois, Caird acrescentou a PCR elevada como quinto critério.\n\nDuas pegadinhas aparecem nesta questão:\n\n**Claudicar não é o mesmo que não apoiar.** A criança que manca, mas ainda coloca o pé no chão, não preenche o critério. O critério é a **recusa** em apoiar.\n\n**O corte do VHS é 40**, e não 20.",
-  "correta": "Impossibilidade de apoio do membro e VHS acima de 40 mm/h. São dois dos quatro critérios de Kocher.",
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 22"
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 22",
+   "Kocher MS, Zurakowski D, Kasser JR. Differentiating between septic arthritis and transient synovitis of the hip in children: an evidence-based clinical prediction algorithm. J Bone Joint Surg Am. 1999;81(12):1662-1670."
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "conceitos-basicos-0120": {
@@ -2006,14 +2007,18 @@
   "conferido": false
  },
  "conceitos-basicos-0204": {
-  "conceito": "### Paroníquia aguda × crônica\n| Aspecto | Aguda | ==Crônica== |\n|---|---|---|\n| causa | inoculação (cutícula, unha roída, manicure) | ==umidade repetida== destrói a cutícula |\n| agente | ==Staphylococcus aureus== (gram-positivo) | ==gram-negativos (Pseudomonas) e Candida== |\n| perfil | qualquer | cozinheiro, faxineiro, dentista, diabético |\n| quadro | dor, abscesso na prega | prega espessada, sem cutícula, lâmina alterada |\n| tratamento | drenagem + antibiótico | afastar umidade, antifúngico tópico, corticoide tópico; ==eponiquectomia== se refratária |\n\n### Diferenciais\n| Condição | Pista |\n|---|---|\n| panarício herpético | vesículas; ==não drenar== |\n| felon | polpa tensa, septos |\n| verruga periungueal | HPV |\n| carcinoma espinocelular | lesão crônica que não cura |\n\n> **Na prova:** paroníquia crônica = ==gram-negativos e Candida==.",
-  "correta": "**Gram-negativas e Candida.**\n- Umidade repetida destrói a cutícula.\n- Tratar afastando a umidade e o fungo.\n- Drenagem repetida não resolve.",
+  "conceito": "**A paroníquia.** É a infecção das **pregas ungueais** (o tecido ao redor da unha). Tem duas formas muito diferentes.\n\n| Característica | Aguda | Crônica |\n|---|---|---|\n| Início | Horas a dias | Semanas a meses (mais de 6 semanas) |\n| Causa | Trauma pequeno: retirar cutícula, roer unha, unha encravada | **Umidade** e irritação repetidas |\n| Agentes | ***Staphylococcus aureus***, estreptococos | **Bactérias gram-negativas** e ***Candida*** |\n| Quadro | Dor intensa, vermelhidão, **pus** sob a prega | Prega **inchada e endurecida**, sem cutícula, pouca dor, crises de piora |\n\n**A paroníquia crônica.** É uma doença **inflamatória** da prega ungueal, mais do que uma infecção simples. Acontece em quem mantém as mãos **molhadas** por muito tempo: lavadores de louça, cozinheiros, faxineiros, profissionais de saúde, bartenders, e em diabéticos. A **cutícula** se perde, e o espaço entre a prega e a unha fica aberto. Ali entram água, irritantes e microrganismos, principalmente:\n- **bactérias gram-negativas** (como *Pseudomonas* e *Proteus*);\n- **fungos**, sobretudo a ***Candida albicans***.\n\nA unha pode ficar **ondulada**, espessada e descolorida (às vezes **esverdeada**, pela *Pseudomonas*).\n\n**O tratamento da paroníquia crônica.**\n- **Evitar a umidade**: luvas de algodão sob luvas de borracha, secar bem as mãos, parar de tirar a cutícula.\n- **Corticoide tópico** (o componente inflamatório é importante) e **antifúngico** tópico.\n- Casos refratários: **marsupialização** da prega ungueal (retirada de uma faixa em crescente da prega dorsal), às vezes com remoção da unha.\n\n**O tratamento da paroníquia aguda.**\n- No início, sem pus: compressas mornas, antibiótico contra estafilococo.\n- Com **abscesso**: **drenagem**, levantando a prega ungueal com uma lâmina, ou removendo parte da unha se o pus estiver por baixo dela.\n\n**Diagnósticos diferenciais.** Panarício herpético (vesículas; **não** drenar), eponíquia, carcinoma espinocelular e melanoma subungueal (lesões que não cicatrizam).",
+  "correta": "**Correta: B (gram-negativas … Cândida).** A paroníquia crônica, típica de quem mantém as mãos úmidas, está associada a **bactérias gram-negativas** (como *Pseudomonas*) e à ***Candida***. A forma aguda é causada sobretudo por *Staphylococcus aureus* e estreptococos.",
   "incorretas": {
-   "A": "**Forma aguda.**\n- Gram-positivas; Aspergillus não é agente.",
-   "C": "**HPV causa verruga.**\n- Não paroníquia.",
-   "D": "**Gram-positivas da aguda.**\n- Candida certa."
+   "A": "As bactérias **gram-positivas** (estafilococo, estreptococo) são os agentes da paroníquia **aguda**, e o *Aspergillus* não é o fungo típico da forma crônica.",
+   "C": "As **gram-negativas** estão certas, mas o **HPV** causa verrugas periungueais, e não a paroníquia crônica.",
+   "D": "A ***Candida*** está certa, mas as bactérias típicas da forma crônica são **gram-negativas**. As gram-positivas são as da forma aguda."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)",
+   "Rockwell PG. Acute and chronic paronychia. Am Fam Physician. 2001;63(6):1113-1116."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "conceitos-basicos-0205": {
