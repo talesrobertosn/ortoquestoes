@@ -4969,6 +4969,81 @@
   "geradoEm": "2026-10-05",
   "conferido": false
  },
+ "coluna-0413": {
+  "conceito": "**Investigar causa neurológica na escoliose.** Antes de chamar uma escoliose de idiopática, é preciso afastar causas secundárias, principalmente neurológicas (siringomielia, malformação de Chiari, medula ancorada, tumores intramedulares, diastematomielia) e neuromusculares.\n\n**Sinais de alerta na história.**\n- **Dor**, especialmente noturna ou que não melhora com repouso.\n- Progressão rápida da curva.\n- Cefaleia occipital, alterações urinárias, fraqueza ou dormência.\n- Início muito precoce (escoliose infantil ou juvenil).\n\n**Sinais de alerta no exame físico.**\n- **Curva atípica**: torácica **sinistroconvexa**, sobretudo em meninos; curvas muito angulares ou longas.\n- **Rigidez** desproporcional da curva no teste de Adams e na avaliação da flexibilidade.\n- **Pés**: pé cavo (sobretudo unilateral), dedos em garra.\n- **Panturrilhas**: assimetria, atrofia.\n- **Reflexo cutâneo abdominal** assimétrico ou ausente (sinal de siringomielia).\n- Marcha alterada, reflexos exaltados, clônus, Babinski.\n- Pele: manchas café com leite, tufos de pelos ou fossetas na região lombossacral.\n\n**O que não ajuda nessa investigação.** História de trauma no dorso e de hiperflexibilidade familiar são dados de outras condições (doenças do colágeno, lesões traumáticas) e não orientam a busca de causa neurológica.\n\n**Exame complementar.** Na suspeita, **ressonância de todo o neuroeixo** (crânio à coluna sacral).\n\n> Na escoliose, procure sinais neurológicos: dor, curva atípica, rigidez, pé cavo, assimetria do reflexo abdominal.",
+  "correta": "**D: Perguntar sobre trauma no dorso e a história familiar de hiperflexibilidade.** Esses dados não fazem parte da investigação de causa neurológica para a escoliose. A hiperflexibilidade familiar sugere doenças do tecido conjuntivo (como Marfan ou Ehlers-Danlos), e o trauma tem pouca relação com escolioses estruturais. As demais alternativas são cuidados importantes para detectar uma origem neurológica.",
+  "incorretas": {
+   "A": "**O teste de Adams e a flexibilidade da curva fazem parte da avaliação**: curvas muito rígidas ou com gibosidade desproporcional podem sugerir causas secundárias. Por isso é um cuidado válido.",
+   "B": "**O lado da convexidade, os pés, as panturrilhas e o reflexo cutâneo abdominal são essenciais.** Curva torácica esquerda, pé cavo, atrofia de panturrilha e assimetria do reflexo abdominal são sinais clássicos de causa neurológica.",
+   "C": "**Dor lombar noturna e alterações da marcha são sinais de alerta** para tumores, siringomielia e medula ancorada, e devem ser sempre investigados."
+  },
+  "referencias": [
+   "Zadeh HG, Sakka SA, Powell MP, Mehta MH. Absent superficial abdominal reflexes in children with scoliosis: an early indicator of syringomyelia. J Bone Joint Surg Br. 1995;77(5):762-767.",
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Escoliose."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "coluna-0414": {
+  "conceito": "**Siringomielia e escoliose.** A siringomielia é uma cavidade cheia de líquido dentro da medula, frequentemente associada à **malformação de Chiari I**. Pode causar escoliose, muitas vezes com características atípicas, e às vezes é a única manifestação.\n\n**Por que o reflexo cutâneo abdominal.**\n- O reflexo é obtido estimulando a pele do abdome em cada quadrante; a resposta normal é a contração da musculatura e o desvio do umbigo para o lado estimulado.\n- Depende dos segmentos T7 a T12 e de vias que atravessam a medula.\n- A siringe pode lesar essas vias, e o reflexo fica **ausente ou assimétrico**, às vezes como **único sinal neurológico**.\n- Zadeh e colaboradores mostraram que a ausência ou assimetria do reflexo abdominal em crianças com escoliose é um indicador precoce de siringomielia.\n\n**Outros sinais da siringomielia.** Curva torácica esquerda, progressão rápida, dor, fraqueza ou atrofia das mãos, perda da sensibilidade térmica e dolorosa em \"capa\" nos ombros e braços, reflexos exaltados nos membros inferiores.\n\n**Conduta.** Ressonância do neuroeixo. Na presença de siringe significativa ou Chiari, a descompressão neurocirúrgica costuma preceder a correção da escoliose, e pode estabilizar ou até melhorar curvas em crianças pequenas.\n\n> Escoliose com suspeita de siringomielia: sempre pesquisar o reflexo cutâneo abdominal.",
+  "correta": "**C: Reflexo cutâneo-abdominal.** É o reflexo indispensável na suspeita de siringomielia como causa da escoliose. A ausência ou assimetria do reflexo abdominal pode ser o único sinal neurológico da siringe e é um indicador precoce, que justifica a ressonância do neuroeixo.",
+  "incorretas": {
+   "A": "**O clônus aquileu** indica lesão do neurônio motor superior e pode estar presente em causas neurológicas, mas não é o reflexo específico e precoce da siringomielia.",
+   "B": "**O reflexo cutâneo-plantar** (Babinski) também pode estar alterado em lesões medulares, mas é menos sensível para siringomielia que o reflexo abdominal.",
+   "D": "**O reflexo patelar** pode estar exaltado em lesões medulares altas, mas é um achado inespecífico. Não é o reflexo-chave para a suspeita de siringomielia."
+  },
+  "referencias": [
+   "Zadeh HG, Sakka SA, Powell MP, Mehta MH. Absent superficial abdominal reflexes in children with scoliosis: an early indicator of syringomyelia. J Bone Joint Surg Br. 1995;77(5):762-767.",
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Escoliose."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "coluna-0415": {
+  "conceito": "**Diferença do ângulo costovertebral de Mehta (RVAD).** Mehta, em 1972, estudou crianças com escoliose idiopática infantil e mostrou que a relação entre as costelas e a vértebra apical prediz se a curva vai regredir ou progredir.\n\n**Como medir.**\n1. Na radiografia AP, traça-se uma linha perpendicular à placa terminal da **vértebra apical**.\n2. Traça-se uma linha do centro do colo ao centro da cabeça de cada costela que se articula com essa vértebra.\n3. O ângulo entre cada linha de costela e a perpendicular é o ângulo costovertebral.\n4. A **diferença** entre o ângulo do lado côncavo e o do lado convexo é a RVAD.\n\n**Interpretação.**\n- **RVAD menor que 20 graus**: a maioria das curvas regride espontaneamente.\n- **RVAD maior que 20 graus**: alto risco de progressão (cerca de 80%).\n\n**Fase da costela.**\n- **Fase 1**: a cabeça da costela convexa não se sobrepõe ao corpo vertebral; usa-se a RVAD.\n- **Fase 2**: a cabeça da costela convexa se sobrepõe ao corpo apical; indica **progressão quase certa**, independentemente da RVAD.\n\n**Tratamento da escoliose infantil progressiva.** Gessos seriados de Mehta (sob anestesia), que usam o crescimento como força corretiva; depois coletes e, em casos refratários, técnicas de crescimento (hastes de crescimento, implantes magnéticos).\n\n> Mehta: RVAD acima de 20 graus ou costela em fase 2 indicam alto risco de progressão.",
+  "correta": "**B: 20º.** Mehta definiu que uma diferença do ângulo costovertebral acima de 20 graus na vértebra apical indica alto risco de progressão da escoliose idiopática infantil. Abaixo desse valor, a maioria das curvas regride. A costela em fase 2 também indica progressão.",
+  "incorretas": {
+   "A": "**25 graus é um valor mais alto que o limite de Mehta.** Usá-lo deixaria de identificar curvas com risco de progressão entre 20 e 25 graus.",
+   "C": "**15 graus é inferior ao limite.** Curvas com RVAD de 15 graus geralmente regridem, e esse corte superestimaria o risco.",
+   "D": "**10 graus também é baixo demais.** Muitas curvas infantis com essa diferença regridem espontaneamente."
+  },
+  "referencias": [
+   "Mehta MH. The rib-vertebra angle in the early diagnosis between resolving and progressive infantile scoliosis. J Bone Joint Surg Br. 1972;54(2):230-243.",
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Escoliose idiopática infantil."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "coluna-0416": {
+  "conceito": "**Tratamento da escoliose idiopática do adolescente Lenke 1B.** O tratamento depende da magnitude da curva e da maturidade.\n\n**Indicações gerais.**\n- Observação: curvas abaixo de 20 a 25 graus.\n- Colete: curvas de 25 a 40 graus em pacientes imaturos (Risser 0 a 2, crescimento remanescente). Em Risser IV, o colete não tem mais papel, porque não há crescimento para modular.\n- Cirurgia: curvas acima de 45 a 50 graus.\n\n**Artrodese seletiva.** Na curva Lenke tipo 1 (torácica principal estrutural, lombar compensatória flexível), com modificador lombar A ou B, a artrodese inclui **apenas a curva torácica**, preservando a coluna lombar móvel. A curva lombar compensatória tende a se corrigir espontaneamente após a correção torácica.\n\n**Vantagens.** Preserva segmentos de movimento lombares, reduz a degeneração dos discos lombares remanescentes no futuro e diminui o tempo cirúrgico.\n\n**Cuidados.** Não hipercorrigir a curva torácica, para evitar descompensação (desequilíbrio coronal) quando a lombar não acompanha. Respeitar o plano sagital (modificador +): evitar acentuar a cifose.\n\n**O caso.** Menino de 15 anos, Risser IV, curva torácica de 52 graus estrutural, lombar flexível, Lenke 1B+. Indicação de **artrodese seletiva da curva torácica**.\n\n| Opção | Adequação ao caso |\n|---|---|\n| Colete | Inútil (maturidade quase completa, curva acima de 45 graus) |\n| Artrodese seletiva torácica | Indicada |\n| Artrodese longa até L4 | Excessiva |\n| RPG | Sem eficácia comprovada para curvas estruturais |\n\n> Lenke 1B com curva acima de 45 a 50 graus: artrodese seletiva da curva torácica.",
+  "correta": "**B: A Artrodese seletiva.** O paciente tem curva torácica de 52 graus, estrutural, com curva lombar flexível (Lenke 1B+) e maturidade quase completa (Risser IV). A indicação é cirúrgica, e o padrão permite fundir apenas a curva torácica, preservando a mobilidade lombar; a curva lombar compensatória se corrige espontaneamente.",
+  "incorretas": {
+   "A": "**O colete TLSO** é usado em curvas de 25 a 40 graus em pacientes com crescimento remanescente. Com 52 graus e Risser IV, o colete não controla a curva e não tem indicação.",
+   "C": "**A artrodese toracolombar de T4 a L4** incluiria a curva lombar, que é flexível e compensatória, sacrificando segmentos móveis desnecessariamente. Seria indicada se a curva lombar fosse estrutural (por exemplo, Lenke 3 ou 6).",
+   "D": "**A reeducação postural global (RPG)** não tem eficácia comprovada para corrigir ou impedir a progressão de curvas estruturais, especialmente acima de 45 graus."
+  },
+  "referencias": [
+   "Lenke LG, Betz RR, Harms J, et al. Adolescent idiopathic scoliosis: a new classification to determine extent of spinal arthrodesis. J Bone Joint Surg Am. 2001;83(8):1169-1181.",
+   "Weinstein SL, Dolan LA, Cheng JC, Danielsson A, Morcuende JA. Adolescent idiopathic scoliosis. Lancet. 2008;371(9623):1527-1537."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "coluna-0417": {
+  "conceito": "**Vértebras de referência na escoliose.** A escolha dos níveis de artrodese usa conceitos bem definidos.\n\n| Vértebra | Definição |\n|---|---|\n| Terminal | Mais inclinada em relação à horizontal, no topo e na base da curva; define o Cobb |\n| Apical | Mais desviada e mais rodada, no ápice da curva |\n| Neutra | Sem rotação (pedículos simétricos) |\n| **Estável** | A vértebra mais proximal (cefálica) que é **bissectada (ou quase) pela linha vertical central do sacro** (CSVL) |\n\n**Por que a vértebra estável importa.** Nos conceitos de Harrington e de King, a artrodese deveria se estender distalmente até a vértebra estável, para que a coluna fundida ficasse centrada sobre a pelve. Com instrumentação moderna com parafusos pediculares, muitas vezes é possível parar acima (por exemplo, na última vértebra tocada pela CSVL), poupando segmentos.\n\n**Como identificar.** Na radiografia AP em pé, traça-se a CSVL (perpendicular à horizontal, passando pelo meio do sacro). Percorrendo de baixo para cima, a vértebra estável é a primeira, de cima para baixo, cujo corpo é dividido ao meio pela linha, ou seja, a mais cefálica cujos pedículos ficam equidistantes da CSVL.\n\n**No caso.** Na radiografia do paciente, a vértebra mais proximal bissectada pela linha central do sacro é **L2**.\n\n> Vértebra estável: a mais cefálica bissectada pela linha vertical central do sacro.",
+  "correta": "**A: L2.** Na radiografia em pé do paciente, a vértebra mais proximal bissectada pela linha vertical central do sacro é L2, que corresponde à vértebra estável. Ela serve de referência para o nível distal da artrodese na escoliose torácica. (O texto \"Área livre\" é resquício da diagramação.)",
+  "incorretas": {
+   "B": "**L3** está abaixo da vértebra estável. Ela também é cortada pela linha central do sacro, mas a definição é a vértebra **mais proximal** bissectada.",
+   "C": "**L4** fica ainda mais distal. Estender a artrodese até L4 sem necessidade sacrificaria segmentos lombares importantes.",
+   "D": "**L1** ainda não é bissectada pela linha central do sacro no caso, por estar mais próxima da transição com a curva torácica, ainda desviada."
+  },
+  "referencias": [
+   "King HA, Moe JH, Bradford DS, Winter RB. The selection of fusion levels in thoracic idiopathic scoliosis. J Bone Joint Surg Am. 1983;65(9):1302-1313.",
+   "Lenke LG, Betz RR, Harms J, et al. Adolescent idiopathic scoliosis: a new classification to determine extent of spinal arthrodesis. J Bone Joint Surg Am. 2001;83(8):1169-1181."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
  "coluna-0418": {
   "conceito": "**Duas síndromes ao mesmo tempo.** Uma hérnia cervical pode comprimir a raiz nervosa (radiculopatia: dor irradiada para o braço, dormência e fraqueza num território), a medula (mielopatia: perda de destreza, alteração da marcha, hiperreflexia, sinais de Hoffmann e Babinski, sinal de Lhermitte) ou ambas, a **síndrome radículo-medular**. O caso tem as duas: cervicobraquialgia com paresia e atrofia, e sinais de compressão medular (Lhermitte e Hoffmann).\n\n**Por que operar.** A mielopatia é uma indicação cirúrgica, porque a compressão da medula tende a progredir e o dano neurológico pode ser irreversível. Radiculopatia com déficit motor progressivo e atrofia, refratária ao tratamento clínico após semanas, também indica cirurgia. Fisioterapia, colar, repouso e tração não descomprimem a medula e são inadequados com mielopatia.\n\n**A cirurgia de escolha: discectomia cervical anterior com artrodese (ACDF).**\n1. Acesso anterior ao pescoço, entre a bainha carotídea e a traqueia e esôfago.\n2. Retirada completa do disco e do fragmento extruso, descomprimindo a medula e as raízes.\n3. Colocação de um espaçador (cage) no espaço discal, preenchido com osso esponjoso ou substituto, para manter a altura, abrir os forames e permitir a fusão.\n4. Fixação com placa e parafusos, que aumenta a estabilidade e a taxa de fusão em cirurgias de dois níveis ou mais.\n\n**Por que não fazer apenas a discectomia.** Retirar o disco sem reconstruir o espaço leva a colapso discal, cifose segmentar, estreitamento dos forames e dor axial. A fusão ou, em casos selecionados, a artroplastia discal mantém a altura e o alinhamento. A artroplastia é uma alternativa em jovens, sem instabilidade e sem degeneração facetária importante, mas a artrodese continua sendo o padrão.\n\n> Hérnia cervical com mielopatia e radiculopatia refratária: discectomia anterior com artrodese (cage, enxerto, placa e parafusos).",
   "correta": "**E: discectomia em dois níveis com artrodese com cage, osso esponjoso (ou substituto sintético), placa e parafusos de titânio.** O paciente tem síndrome radículo-medular, com sinais de mielopatia (Lhermitte, Hoffmann) e radiculopatia com atrofia, refratária ao tratamento clínico. A indicação é cirúrgica, e a técnica padrão é a descompressão anterior com retirada dos discos e fragmentos extrusos, seguida de reconstrução do espaço com cage e enxerto e fixação com placa. Isso descomprime a medula e as raízes, mantém a altura dos forames e o alinhamento e permite a fusão dos dois níveis.",
