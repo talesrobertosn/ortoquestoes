@@ -879,16 +879,19 @@
   "formato": "corrido"
  },
  "osteometabolicas-0070": {
-  "conceito": "**Onde começa.** No cotovelo, a tuberculose se instala na **região proximal da ulna**, o olécrano, e dali invade a articulação. O cotovelo é, aliás, a articulação do membro superior mais acometida. A apresentação é de **monoartrite insidiosa** com sintomas constitucionais, aumento de volume, **atrofia** do braço e do antebraço, **perda progressiva da extensão**, porque o cotovelo inflamado se acomoda em flexão, e às vezes fístula posterior.\n\n**Na radiografia**, a tríade de Phemister reúne osteopenia periarticular, erosões marginais e redução **tardia** do espaço articular; é o espaço preservado por mais tempo que separa a tuberculose da artrite piogênica.\n\n**Na prova:** tuberculose do cotovelo é da **ulna proximal**, o olécrano.",
-  "correta": "**Região proximal da ulna.** O olécrano é o sítio típico da tuberculose no cotovelo.",
+  "conceito": "**A tuberculose no cotovelo.** O cotovelo é a articulação do membro superior mais acometida pela tuberculose osteoarticular. A infecção chega por via hematogênica e se instala inicialmente no **osso esponjoso** bem vascularizado, perto da articulação.\n\n**Onde começa: a ulna proximal.** O foco mais frequente é a **região proximal da ulna**, o **olécrano**: um grande bloco de osso esponjoso subcondral, com rica rede vascular e medula. Dali a infecção rompe a cortical e invade a articulação. O úmero distal (côndilos) e o rádio proximal são acometidos com menor frequência.\n\n**A evolução.**\n- **Fase óssea**: lesão lítica no olécrano, com osteopenia e pouca reação periosteal.\n- **Fase sinovial**: derrame, sinovite com tecido de granulação (pannus), aumento de volume fusiforme.\n- **Fase destrutiva**: erosões nas margens articulares e, mais tarde, perda do espaço articular, subluxação, abscessos frios e fístulas.\n\n**Clínica.**\n- Monoartrite insidiosa, de semanas a meses.\n- **Atrofia** do braço e do antebraço, dor moderada, sintomas constitucionais variáveis.\n- **Perda progressiva da extensão**, porque o cotovelo inflamado se mantém em flexão (posição de maior volume capsular) e as cápsulas se retraem.\n\n**Diagnóstico.** A tríade de Phemister na radiografia (osteopenia justa-articular, erosões periféricas, estreitamento lento do espaço articular), confirmada por biópsia com cultura, pesquisa de BAAR, PCR e histologia com granuloma caseoso.\n\n**Tratamento.** Esquema antituberculoso prolongado, fisioterapia para manter a mobilidade, e cirurgia para desbridamento ou sequelas (artrodese ou artroplastia em casos selecionados, após a cura).",
+  "correta": "**Correta: D (região proximal da ulna).** Na tuberculose do cotovelo, o local mais acometido é o **olécrano**, na ulna proximal, a partir do qual a infecção invade a articulação.",
   "incorretas": {
-   "A": "**Não é o início.** O côndilo lateral do úmero não é o sítio descrito.",
-   "B": "**Úmero, não.** O foco é na ulna, e não no côndilo medial.",
-   "C": "**Bem menos frequente.** O rádio proximal é acometido muito menos que a ulna."
+   "A": "O **côndilo lateral** do úmero pode ser acometido, mas com menos frequência que a ulna proximal.",
+   "B": "O **côndilo medial** do úmero também é sede menos frequente da doença.",
+   "C": "A **região proximal do rádio** é a localização menos comum entre as citadas."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª edição (Azar, Sawyer, Throckmorton), Cap. 25",
+   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição"
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "osteometabolicas-0071": {
   "conceito": "**Tuberculose da coluna.** O mal de Pott é a forma mais comum de tuberculose osteoarticular, responsável por cerca de metade dos casos. O *Mycobacterium tuberculosis* chega à vértebra por via **hematogênica**, a partir de um foco pulmonar ou linfonodal, através do plexo venoso de Batson ou das artérias segmentares.\n\n**Onde começa a lesão.** O bacilo se instala na região **paradiscal** do corpo vertebral, junto à placa terminal anterior, onde a irrigação é terminal. A partir daí:\n- destrói o corpo vertebral, com o **disco relativamente preservado** no início (o disco não tem enzimas proteolíticas suficientes para ser digerido pelo bacilo, ao contrário da infecção piogênica);\n- espalha-se sob o **ligamento longitudinal anterior**, acometendo vários níveis contíguos;\n- forma **abscessos frios**, que podem descer pela bainha do psoas até a virilha.\n\n**O segmento mais acometido.** A **transição toracolombar** (aproximadamente de T10 a L2) e a coluna torácica baixa concentram a maioria dos casos. Contribuem para isso:\n- a riqueza do plexo venoso e das artérias segmentares nessa região;\n- a grande carga mecânica na dobradiça entre a cifose torácica e a lordose lombar.\n\n**A deformidade.** Quando a coluna anterior colapsa, surge a **cifose angular**, a giba de Pott. O ápice da angulação é onde a medula sofre maior compressão, e a paraplegia pode ocorrer na fase ativa (por abscesso, sequestro ou disco) ou tardiamente, pela própria deformidade.\n\n| Segmento | Frequência relativa |\n|---|---|\n| **Torácica baixa e toracolombar** | **Maior** |\n| Lombar | Intermediária |\n| Cervical e lombossacral | Menores |\n\n**Tratamento.** Esquema antituberculoso prolongado é a base. Cirurgia para déficit neurológico, instabilidade, cifose progressiva ou falha do tratamento clínico, em geral com desbridamento anterior e estabilização.",
