@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Orto Questões: todas as provas</title>
+<!-- Carrossel de feed (6 slides, 1080x1350) e 1 story (1080x1920) de funcionalidades, com
+     mockups de iPhone e MacBook Air. A capa é a isca: as provas em letra enorme, legíveis na grade.
+     Telas: capturas de telas.mjs (celular 390x844 e computador 1440x900) em telas/ip-*.png e
+     telas/mb-*.png (pasta ignorada pelo git).
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-05-todas-as-provas/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+:root { --fundo: #07110F; --verde: #14655E; --menta: #7FD1BF; --ouro: #F4CF7C; --cinza: #9DB0AC; --branco: #F7FAF9; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; color: var(--branco); }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1350px; padding: 64px 72px;
+  background:
+    radial-gradient(900px 700px at 85% 95%, rgba(20,101,94,.55), transparent 70%),
+    radial-gradient(700px 600px at 0% 0%, rgba(244,207,124,.10), transparent 70%),
+    linear-gradient(170deg, #0c1c19 0%, var(--fundo) 60%); }
+section.story { height: 1920px; padding: 110px 80px; }
+.topo { display: flex; justify-content: space-between; align-items: center; position: relative; z-index: 5; }
+.marca { display: flex; align-items: center; gap: 14px; font: 34px Jakarta; letter-spacing: -.02em; }
+.marca svg { width: 52px; height: 52px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; }
+.cont { font: 700 24px Jakarta; color: var(--cinza); letter-spacing: .08em; }
+.selo { font: 800 22px Jakarta; letter-spacing: .14em; text-transform: uppercase; color: var(--fundo); background: var(--ouro); padding: 10px 18px; border-radius: 10px; }
+.olho { font: 800 24px Jakarta; letter-spacing: .16em; text-transform: uppercase; color: var(--menta); position: relative; z-index: 5; }
+h1, h2 { font-family: Jakarta; font-weight: 800; letter-spacing: -.05em; line-height: .92; position: relative; z-index: 5; }
+h2 { font-size: 92px; line-height: .98; }
+em { font-style: normal; color: var(--ouro); }
+.sub { font-size: 33px; line-height: 1.4; color: #C9D6D3; position: relative; z-index: 5; text-wrap: pretty; }
+.sub b { color: #fff; }
+.rodape { position: absolute; left: 72px; right: 72px; bottom: 50px; display: flex; justify-content: space-between; align-items: center; font: 700 23px Jakarta; color: var(--cinza); z-index: 6; }
+.rodape .seta { color: #fff; font-size: 26px; }
+
+/* iPhone (estilo 15 Pro): moldura de titânio, Dynamic Island e botões laterais */
+.iphone { --w: 400px; position: absolute; width: var(--w); padding: calc(var(--w) * .034); border-radius: calc(var(--w) * .17);
+  background: linear-gradient(145deg, #7b7f84 0%, #3b3e42 18%, #1d1e20 55%, #46494d 100%);
+  box-shadow: 0 0 0 1.5px #8d9196 inset, 0 0 0 calc(var(--w) * .008) #0d0d0e inset, 0 60px 120px rgba(0,0,0,.6), 0 20px 40px rgba(0,0,0,.4); z-index: 4; }
+.iphone .tela { position: relative; border-radius: calc(var(--w) * .138); overflow: hidden; aspect-ratio: 390 / 844; background: #000; }
+.iphone .tela img { width: 100%; height: calc(100% - var(--w) * .115); margin-top: calc(var(--w) * .115); object-fit: cover; object-position: top; display: block; }
+.iphone .tela { background: #0f1917; }
+.iphone .tela::before { content: '9:41'; position: absolute; left: 11%; top: calc(var(--w) * .045); font: 700 calc(var(--w) * .042) Inter; color: #fff; z-index: 2; }
+.iphone .tela::after { content: ''; position: absolute; right: 9%; top: calc(var(--w) * .05); width: calc(var(--w) * .07); height: calc(var(--w) * .032); border-radius: 4px; border: 1.5px solid rgba(255,255,255,.85); background: linear-gradient(90deg, #fff 70%, transparent 70%) content-box; padding: 1.5px; z-index: 2; }
+.iphone .ilha { position: absolute; top: calc(var(--w) * .03); left: 50%; transform: translateX(-50%); width: calc(var(--w) * .27); height: calc(var(--w) * .078); border-radius: 999px; background: #000; z-index: 2; }
+.iphone .bt { position: absolute; width: calc(var(--w) * .012); border-radius: 3px; background: linear-gradient(90deg, #2a2c2f, #6b6f73); }
+.iphone .bt.d { right: calc(var(--w) * -.009); top: 26%; height: 11%; }
+.iphone .bt.e1 { left: calc(var(--w) * -.009); top: 20%; height: 5%; }
+.iphone .bt.e2 { left: calc(var(--w) * -.009); top: 28%; height: 8%; }
+.iphone .bt.e3 { left: calc(var(--w) * -.009); top: 38%; height: 8%; }
+.iphone .brilho { position: absolute; inset: calc(var(--w) * .034); border-radius: calc(var(--w) * .138); background: linear-gradient(115deg, rgba(255,255,255,.10), transparent 35%); pointer-events: none; z-index: 3; }
+
+/* MacBook Air M2: tampa com borda fina, notch com câmera e base de alumínio */
+.mac { --w: 900px; position: absolute; width: var(--w); z-index: 3; }
+.mac .tampa { position: relative; background: #0a0a0b; border-radius: calc(var(--w) * .028) calc(var(--w) * .028) calc(var(--w) * .006) calc(var(--w) * .006);
+  padding: calc(var(--w) * .018) calc(var(--w) * .018) calc(var(--w) * .024); box-shadow: 0 0 0 2px #c3c6ca, 0 0 0 4px #7d8085, 0 50px 110px rgba(0,0,0,.55); }
+.mac .tela { position: relative; aspect-ratio: 1440 / 900; overflow: hidden; border-radius: calc(var(--w) * .008); background: #000; }
+.mac .tela img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+.mac .notch { position: absolute; top: calc(var(--w) * .018); left: 50%; transform: translateX(-50%); width: calc(var(--w) * .13); height: calc(var(--w) * .024);
+  background: #0a0a0b; border-radius: 0 0 calc(var(--w) * .01) calc(var(--w) * .01); z-index: 2; }
+.mac .notch::after { content: ''; position: absolute; left: 50%; top: 40%; transform: translate(-50%, -50%); width: calc(var(--w) * .008); height: calc(var(--w) * .008); border-radius: 50%; background: radial-gradient(circle at 35% 35%, #3b4a5c, #0d1218 70%); box-shadow: 0 0 0 1px #1d2229; }
+.mac .base { position: relative; height: calc(var(--w) * .026); width: 114%; margin-left: -7%;
+  background: linear-gradient(180deg, #eef0f2 0%, #c9ccd0 35%, #a5a8ad 75%, #7f8287 100%); border-radius: 2px 2px calc(var(--w) * .03) calc(var(--w) * .03) / 2px 2px calc(var(--w) * .014) calc(var(--w) * .014);
+  box-shadow: 0 30px 50px rgba(0,0,0,.5); }
+.mac .base::after { content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 15%; height: 45%; background: linear-gradient(#9da0a5, #c4c7cb); border-radius: 0 0 12px 12px; }
+
+/* Provas em chips grandes */
+.provas { display: flex; flex-wrap: wrap; gap: 18px; position: relative; z-index: 5; }
+.prova { display: inline-flex; align-items: center; gap: 16px; padding: 18px 30px 18px 24px; border-radius: 999px; background: rgba(255,255,255,.07);
+  border: 2px solid rgba(255,255,255,.16); font: 800 40px Jakarta; letter-spacing: -.03em; }
+.prova i { width: 22px; height: 22px; border-radius: 50%; background: var(--c); box-shadow: 0 0 18px var(--c); }
+
+.lista { list-style: none; display: grid; gap: 30px; position: relative; z-index: 5; }
+.lista li { display: grid; grid-template-columns: 58px 1fr; gap: 22px; align-items: start; font-size: 30px; line-height: 1.35; color: #C9D6D3; }
+.lista li b { display: block; color: #fff; font: 800 36px Jakarta; letter-spacing: -.02em; margin-bottom: 4px; }
+.lista .n { width: 58px; height: 58px; border-radius: 16px; background: var(--ouro); color: var(--fundo); display: grid; place-items: center; font: 800 28px Jakarta; }
+.cta { display: inline-flex; align-items: center; gap: 16px; background: var(--ouro); color: var(--fundo); font: 800 44px Jakarta; letter-spacing: -.02em; padding: 26px 40px; border-radius: 22px; position: relative; z-index: 5; }
+.tracejado { position: absolute; z-index: 6; border: 4px dashed rgba(255,255,255,.6); border-radius: 28px; display: grid; place-items: center; font: 700 28px Jakarta; color: rgba(255,255,255,.75); }
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/>
+<circle cx="17" cy="20" r="4.5" fill="#9cc3bd"/><rect x="26" y="16.5" width="24" height="7" rx="3.5" fill="#9cc3bd"/>
+<circle cx="17" cy="32" r="4.5" fill="#f4cf7c"/><rect x="26" y="28.5" width="24" height="7" rx="3.5" fill="#f4cf7c"/>
+<circle cx="17" cy="44" r="4.5" fill="#9cc3bd"/><rect x="26" y="40.5" width="19" height="7" rx="3.5" fill="#9cc3bd"/></symbol>
+</defs></svg>
+
+<!-- 1. Capa (isca): as provas em letra enorme, para ler na grade sem abrir -->
+<section id="f1-capa">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="selo">Tudo em um lugar</span></div>
+  <h1 style="margin-top:50px;font-size:142px">Cirurgia<br><em>da mão.</em></h1>
+  <h1 style="margin-top:12px;font-size:116px">R4 Coluna.<br>R4 ENARE.<br><span style="color:var(--menta)">Fellowship.</span></h1>
+  <p class="sub" style="margin-top:24px;font-size:33px;max-width:940px">E o TEOT e o TARO de sempre. Questões comentadas.</p>
+  <div class="mac" style="--w:620px;left:390px;top:880px">
+    <div class="tampa"><div class="notch"></div><div class="tela"><img src="../../telas/mb-inicio.png"></div></div><div class="base"></div>
+  </div>
+  <div class="iphone" style="--w:215px;left:220px;top:850px;transform:rotate(-4deg)">
+    <span class="bt d"></span><span class="bt e1"></span><span class="bt e2"></span><span class="bt e3"></span>
+    <div class="tela"><div class="ilha"></div><img src="../../telas/ip-inicio.png"></div><span class="brilho"></span>
+  </div>
+  <div class="rodape"><span>Tela ilustrativa</span><span></span></div>
+</section>
+
+<!-- 2. As provas -->
+<section id="f2-provas">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">2/6</span></div>
+  <p class="olho" style="margin-top:60px">Escolha a sua prova</p>
+  <h2 style="margin-top:18px">Do título ao<br><em>fellowship</em>.</h2>
+  <div class="provas" style="margin-top:44px">
+    <span class="prova" style="--c:#5FB8A8"><i></i>TEOT</span>
+    <span class="prova" style="--c:#5FB8A8"><i></i>TARO</span>
+    <span class="prova" style="--c:#F4CF7C"><i></i>Cirurgia da mão</span>
+    <span class="prova" style="--c:#7FA9EB"><i></i>R4 Coluna</span>
+    <span class="prova" style="--c:#E07A62"><i></i>R4 ENARE</span>
+    <span class="prova" style="--c:#8FD3EF"><i></i>Ombro e cotovelo · TECOC</span>
+    <span class="prova" style="--c:#C5A8F0"><i></i>Fellowship de quadril</span>
+  </div>
+  <p class="sub" style="margin-top:34px;font-size:28px;max-width:900px;color:var(--cinza)">Provas anteriores comentadas. No fellowship de quadril, questões próprias no padrão da prova.</p>
+  <div class="mac" style="--w:800px;left:140px;top:1015px">
+    <div class="tampa"><div class="notch"></div><div class="tela"><img src="../../telas/mb-inicio.png"></div></div><div class="base"></div>
+  </div>
+  </section>
+
+<!-- 3. O comentário -->
+<section id="f3-comentario">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">3/6</span></div>
+  <p class="olho" style="margin-top:60px">O comentário</p>
+  <h2 style="margin-top:18px">Cada questão<br>é uma <em>aula</em>.</h2>
+  <ul class="lista" style="margin-top:50px;max-width:520px">
+    <li><span class="n">1</span><span><b>O tema inteiro</b>Fundamento e mecanismo antes da resposta.</span></li>
+    <li><span class="n">2</span><span><b>Todas as alternativas</b>A certa e cada errada, com a pegadinha.</span></li>
+    <li><span class="n">3</span><span><b>Classificações e tabelas</b>Do jeito que a banca cobra.</span></li>
+  </ul>
+  <div class="iphone" style="--w:390px;left:640px;top:330px;transform:rotate(4deg)">
+    <span class="bt d"></span><span class="bt e1"></span><span class="bt e2"></span><span class="bt e3"></span>
+    <div class="tela"><div class="ilha"></div><img src="../../telas/ip-coment.png"></div><span class="brilho"></span>
+  </div>
+  <div class="rodape"><span>Tela ilustrativa</span><span class="seta">→</span></div>
+</section>
+
+<!-- 4. Revisão e desempenho -->
+<section id="f4-revisao">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">4/6</span></div>
+  <p class="olho" style="margin-top:60px">Revisão e desempenho</p>
+  <h2 style="margin-top:18px">O que você erra<br><em>volta</em> no dia certo.</h2>
+  <p class="sub" style="margin-top:26px;max-width:880px">E o desempenho mostra, por tema, onde gastar o seu tempo.</p>
+  <div class="iphone" style="--w:330px;left:130px;top:540px;transform:rotate(-5deg)">
+    <span class="bt d"></span><span class="bt e1"></span><span class="bt e2"></span><span class="bt e3"></span>
+    <div class="tela"><div class="ilha"></div><img src="../../telas/ip-revisao.png"></div><span class="brilho"></span>
+  </div>
+  <div class="iphone" style="--w:330px;left:610px;top:580px;transform:rotate(5deg)">
+    <span class="bt d"></span><span class="bt e1"></span><span class="bt e2"></span><span class="bt e3"></span>
+    <div class="tela"><div class="ilha"></div><img src="../../telas/ip-dados.png"></div><span class="brilho"></span>
+  </div>
+  <div class="rodape"><span>Tela ilustrativa</span><span class="seta">→</span></div>
+</section>
+
+<!-- 5. Ranking -->
+<section id="f5-ranking">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">5/6</span></div>
+  <p class="olho" style="margin-top:60px">Ranking e conquistas</p>
+  <h2 style="margin-top:18px">Estudar também<br>é <em>subir de posição</em>.</h2>
+  <p class="sub" style="margin-top:26px;max-width:900px">Ranking da semana, geral e da sua residência. Conta volume: aqui ganha quem aparece todo dia.</p>
+  <div class="mac" style="--w:760px;left:40px;top:700px">
+    <div class="tampa"><div class="notch"></div><div class="tela"><img src="../../telas/mb-ranking.png"></div></div><div class="base"></div>
+  </div>
+  <div class="iphone" style="--w:290px;left:740px;top:560px;transform:rotate(4deg)">
+    <span class="bt d"></span><span class="bt e1"></span><span class="bt e2"></span><span class="bt e3"></span>
+    <div class="tela"><div class="ilha"></div><img src="../../telas/ip-podio.png"></div><span class="brilho"></span>
+  </div>
+  <div class="rodape"><span>Tela ilustrativa, nomes de exemplo</span><span class="seta">→</span></div>
+</section>
+
+<!-- 6. Chamada -->
+<section id="f6-chamada">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">6/6</span></div>
+  <h2 style="margin-top:80px;font-size:118px;line-height:.94">Comece<br><em>grátis</em><br>hoje.</h2>
+  <p class="sub" style="margin-top:30px;max-width:560px">No celular ou no computador. A conta grátis libera questões todos os dias.</p>
+  <div style="margin-top:44px"><span class="cta">ortoquestoes.com.br →</span></div>
+  <p class="sub" style="margin-top:20px;font-size:26px;color:var(--cinza)">Link na bio</p>
+  <div class="mac" style="--w:640px;left:520px;top:780px">
+    <div class="tampa"><div class="notch"></div><div class="tela"><img src="../../telas/mb-questao.png"></div></div><div class="base"></div>
+  </div>
+  <div class="iphone" style="--w:280px;left:700px;top:240px;transform:rotate(6deg)">
+    <span class="bt d"></span><span class="bt e1"></span><span class="bt e2"></span><span class="bt e3"></span>
+    <div class="tela"><div class="ilha"></div><img src="../../telas/ip-questao.png"></div><span class="brilho"></span>
+  </div>
+</section>
+
+<!-- Story: a mesma isca, com o celular e o espaço para a figurinha de link -->
+<section id="s1-story" class="story">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="selo">Tudo em um lugar</span></div>
+  <h1 style="margin-top:70px;font-size:146px">Cirurgia<br><em>da mão.</em></h1>
+  <h1 style="margin-top:14px;font-size:118px">R4 Coluna.<br>R4 ENARE.<br><span style="color:var(--menta)">Fellowship.</span></h1>
+  <p class="sub" style="margin-top:30px;font-size:38px;max-width:560px">E o TEOT e o TARO de sempre. Questões comentadas.</p>
+  <div class="iphone" style="--w:390px;left:610px;top:1010px;transform:rotate(6deg)">
+    <span class="bt d"></span><span class="bt e1"></span><span class="bt e2"></span><span class="bt e3"></span>
+    <div class="tela"><div class="ilha"></div><img src="../../telas/ip-inicio.png"></div><span class="brilho"></span>
+  </div>
+  <div class="mac" style="--w:620px;left:-60px;top:1180px">
+    <div class="tampa"><div class="notch"></div><div class="tela"><img src="../../telas/mb-ranking.png"></div></div><div class="base"></div>
+  </div>
+  <div class="tracejado" style="left:80px;width:440px;top:1650px;height:160px">figurinha de link</div>
+</section>
+
+</body></html>
