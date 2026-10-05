@@ -3403,19 +3403,20 @@
   "conferido": false
  },
  "pe-tornozelo-0331": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "C",
-  "conceito": "**Lauge-Hansen SER.** Estágio I: sindesmose anterior. II: fratura oblíqua do maléolo lateral. III: sindesmose posterior ou maléolo posterior. IV: maléolo medial ou deltoide.\n\n**Na prova:** SER começa na sindesmose anterior e termina no medial.",
-  "correta": "**Lesão da sindesmose anterior/fratura oblíqua do maléolo lateral/lesão da sindesmose posterior/ruptura do ligamento deltóide.** É a sequência correta.",
+  "conceito": "**Fratura supinação-rotação externa de Lauge-Hansen: a sequência das lesões.** É o tipo mais comum de fratura do tornozelo (cerca de 40% a 75%). O pé está **supinado** (o lado lateral tenso, o medial relaxado), e o tálus **roda externamente** dentro do encaixe, empurrando a fíbula para trás e lateralmente. A lesão progride em volta do tornozelo, **de anterolateral para posterior e depois para medial**.\n\n| Estágio | Estrutura lesada |\n|---|---|\n| I | **Ligamento tibiofibular anteroinferior** (sindesmose anterior) ou avulsão óssea (Tillaux-Chaput ou Wagstaffe) |\n| II | **Fratura espiral (oblíqua) da fíbula**, de anteroinferior para posterossuperior, no nível da sindesmose |\n| III | **Ligamento tibiofibular posteroinferior** ou fratura do **maléolo posterior** |\n| IV | **Fratura do maléolo medial** ou ruptura do **ligamento deltoide** |\n\n**Por que essa ordem.** Com o pé supinado, a rotação externa do tálus tensiona primeiro as estruturas **anterolaterais** (sindesmose anterior), depois carrega a fíbula, que fratura em espiral; em seguida, a parte posterior da sindesmose falha e, por último, o lado **medial**, que só rompe quando o tálus já se deslocou o suficiente.\n\n**Implicação prática.** O estágio II (fíbula isolada, deltoide íntegro) é **estável** e tratado sem cirurgia; o estágio IV (medial lesado) é **instável** e exige fixação. Quando a fratura da fíbula é isolada na radiografia, é preciso saber se o deltoide está roto (equivalente bimaleolar, estágio IV): o **teste de estresse** em rotação externa ou gravitacional responde a essa pergunta.\n\n> Supinação-rotação externa: sindesmose anterior, fíbula espiral, sindesmose ou maléolo posterior, e por fim medial (maléolo ou deltoide).",
+  "correta": "**C: lesão da sindesmose anterior/fratura oblíqua do maléolo lateral/lesão da sindesmose posterior/ruptura do ligamento deltóide (resposta pela bibliografia).** É a sequência dos quatro estágios da supinação-rotação externa, de anterolateral para posterior e por último medial.",
   "incorretas": {
-   "A": "**Fratura do maléolo medial/lesão da sindesmose anterior fratura oblíqua do maléolo lateral/lesão da sindesmose posterior.** Começa pelo lado lateral.",
-   "B": "**Ruptura do ligamento deltóide/lesão da sindesmose posterior/fratura oblíqua do maléolo lateral/lesão da sindesmose posterior.** O deltoide é o último.",
-   "D": "**Lesão da sindesmose posterior/fratura oblíqua do maléolo lateral/lesão da sindesmose anterior/fratura do maléolo medial.** Começa pela sindesmose anterior."
+   "A": "**Começar pelo maléolo medial** descreve as lesões por **pronação**, em que o lado medial, tenso, é o primeiro a romper.",
+   "B": "**Começar pelo deltoide** também corresponde à pronação; além disso, a sequência repete a sindesmose posterior.",
+   "D": "**Começar pela sindesmose posterior** inverte a ordem: na supinação-rotação externa, a lesão começa anteriormente."
   },
   "referencias": [
-   "Rockwood C.A. et al. Fractures. Philadelphia: Lippincott. 6ª ed., p. 2156."
+   "Rockwood C.A. et al. Fractures. Philadelphia: Lippincott. 6ª ed., p. 2156.",
+   "Lauge-Hansen N. Fractures of the ankle. II. Combined experimental-surgical and experimental-roentgenologic investigations. Arch Surg. 1950;60(5):957-985."
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "C",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pe-tornozelo-0332": {
