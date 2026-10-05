@@ -3433,19 +3433,20 @@
   "conferido": false
  },
  "tumores-0333": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": "**Condrossarcoma.** A matriz cartilaginosa calcifica em anéis e arcos nos tumores bem diferenciados; nos de alto grau, a calcificação é escassa e amorfa.\n\n**Na prova:** anéis e arcos indicam cartilagem.",
-  "correta": "**Anelar.** Padrão anelar.",
+  "conceito": "**Condrossarcoma e o padrão de calcificação da matriz.** O condrossarcoma é o tumor maligno que produz matriz cartilaginosa. É o segundo sarcoma ósseo primário mais comum em adultos, atingindo sobretudo pelve, fêmur proximal, úmero proximal e costelas, entre os 40 e 70 anos.\n\n**Por que a cartilagem calcifica em anéis.** O tecido cartilaginoso tumoral cresce em **lóbulos**. A calcificação ocorre na periferia desses lóbulos, desenhando na radiografia **anéis e arcos** (rings and arcs), além de pontos e flocos. Esse aspecto é a assinatura radiográfica de matriz condroide, presente também no encondroma.\n\n**Grau histológico e imagem.**\n\n| Grau | Diferenciação | Imagem |\n|---|---|---|\n| Baixo (1) | Bem diferenciado, lobular | Calcificação abundante em anéis e arcos, festonamento endosteal |\n| Intermediário (2) | Moderado | Menos calcificação, áreas líticas |\n| Alto (3) e desdiferenciado | Pouco diferenciado | Calcificação escassa e amorfa, destruição cortical, massa de partes moles |\n\n**Atenção ao enunciado.** \"Baixo grau de diferenciação\" pode ser lido como \"pouco diferenciado\" (alto grau). A resposta sustentada pela bibliografia, porém, trata do tumor de **baixo grau** (bem diferenciado), em que o padrão anelar é típico; nos tumores pouco diferenciados a calcificação se torna amorfa e escassa.\n\n**Sinais de malignidade em lesão cartilaginosa.** Festonamento endosteal maior que dois terços da cortical, espessamento cortical, reação periosteal, massa de partes moles, dor sem fratura e lesão maior que 5 cm em osso longo sugerem condrossarcoma e não encondroma.\n\n**Tratamento.** Ressecção com margens amplas; o tumor é resistente a quimioterapia e radioterapia convencionais (exceto o mesenquimal e o desdiferenciado, que recebem quimioterapia).\n\n> Anéis e arcos indicam matriz cartilaginosa bem diferenciada.",
+  "correta": "**A: anelar (resposta pela bibliografia).** No condrossarcoma de baixo grau, a calcificação desenha anéis e arcos ao redor dos lóbulos de cartilagem, padrão característico de matriz condroide bem diferenciada.",
   "incorretas": {
-   "B": "**Sombreado.** Não é o padrão da cartilagem.",
-   "C": "**Amorfo.** É o padrão das lesões menos diferenciadas.",
-   "D": "**Salpicado.** Pode existir, mas o típico é anelar."
+   "B": "**Sombreado** não descreve matriz condroide. A matriz osteoide do osteossarcoma tende a ser algodonosa, em nuvem, e a do tecido fibroso, em vidro fosco.",
+   "C": "**Amorfo** é o padrão dos tumores pouco diferenciados (alto grau), nos quais a calcificação é escassa e irregular. É a alternativa que atrai quem lê \"baixo grau de diferenciação\" como alto grau.",
+   "D": "**Salpicado** (pontilhado) também aparece em lesões cartilaginosas, sobretudo no encondroma, mas a referência adotada destaca o padrão anelar como típico do tumor bem diferenciado."
   },
   "referencias": [
-   "Tratado de Ortopedia - SBOT. Roca. 2007. p. 599"
+   "Tratado de Ortopedia - SBOT. Roca. 2007. p. 599",
+   "Murphey MD, Walker EA, Wilson AJ, Kransdorf MJ, Temple HT, Gannon FH. From the archives of the AFIP: imaging of primary chondrosarcoma: radiologic-pathologic correlation. Radiographics. 2003;23(5):1245-1278."
   ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "A",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "tumores-0334": {
