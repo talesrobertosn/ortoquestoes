@@ -10377,5 +10377,240 @@
   ],
   "geradoEm": "2026-10-05",
   "conferido": false
+ },
+ "pediatria-0884": {
+  "conceito": "**Critérios para diferenciar artrite séptica de sinovite transitória.** Kocher e colaboradores criaram um algoritmo para o quadril da criança, com quatro critérios. Caird acrescentou a PCR como quinto preditor.\n\n**Critérios de Kocher.**\n1. Febre acima de 38,5 °C.\n2. Incapacidade de apoiar o membro.\n3. VHS acima de 40 mm/h.\n4. Leucócitos acima de 12.000/mm³.\n\n**Probabilidade de artrite séptica (estudo original).**\n\n| Critérios presentes | Probabilidade |\n|---|---|\n| 0 | Menos de 0,2% |\n| 1 | Cerca de 3% |\n| 2 | Cerca de 40% |\n| 3 | Cerca de 93% |\n| 4 | Cerca de 99% |\n\n**Critério de Caird.** A PCR acima de 2 mg/dL (20 mg/L) é um preditor forte; com febre e PCR elevada a probabilidade já é alta, e com os cinco critérios chega perto de 98%.\n\n**Aplicação ao caso.** A criança tem febre de 38,5 °C, VHS de 47 mm/h, leucócitos de 12.500/mm³ e PCR de 7 mg/dL. Reúne praticamente todos os critérios laboratoriais, e a probabilidade de artrite séptica é muito alta. Os critérios foram desenvolvidos para o quadril, mas a lógica é aplicada também ao joelho na prática clínica.\n\n**Conduta.** Punção articular imediata (contagem celular, Gram, cultura), seguida de lavagem cirúrgica e antibiótico. A artrite séptica é urgência, porque as enzimas bacterianas e leucocitárias destroem a cartilagem rapidamente.\n\n> Febre, VHS e leucócitos altos e PCR elevada: artrite séptica até prova em contrário.",
+  "correta": "**A: Certo.** A criança reúne os critérios laboratoriais de Kocher (febre de 38,5 °C, VHS acima de 40 mm/h e leucócitos acima de 12.000/mm³) e ainda tem PCR muito elevada (7 mg/dL), critério acrescentado por Caird. Com todos os preditores presentes, a probabilidade de artrite séptica nos estudos supera 95%. A conduta é puncionar a articulação e tratar como urgência.",
+  "incorretas": {
+   "B": "**Marcar errado seria considerar o quadro compatível com sinovite transitória ou artrite reativa.** Essas condições raramente cursam com febre alta, VHS acima de 40 e PCR tão elevada. Também seria possível lembrar que os critérios foram descritos para o quadril, mas eles são usados como referência para outras grandes articulações da criança."
+  },
+  "referencias": [
+   "Kocher MS, Zurakowski D, Kasser JR. Differentiating between septic arthritis and transient synovitis of the hip in children: an evidence-based clinical prediction algorithm. J Bone Joint Surg Am. 1999;81(12):1662-1670.",
+   "Caird MS, Flynn JM, Leung YL, Millman JE, D'Italia JG, Dormans JP. Factors distinguishing septic arthritis from transient synovitis of the hip in children: a prospective study. J Bone Joint Surg Am. 2006;88(6):1251-1257."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "pediatria-0885": {
+  "conceito": "**Cinética da VHS nas infecções osteoarticulares.** A velocidade de hemossedimentação mede a rapidez com que as hemácias sedimentam, o que depende das proteínas de fase aguda (principalmente o fibrinogênio) que favorecem o empilhamento das hemácias. Por isso, reage com atraso e se normaliza devagar.\n\n**Comportamento típico.**\n- Começa a subir nos primeiros dias da infecção.\n- **Pico entre 3 e 5 dias** após o início.\n- **Normalização lenta**, em cerca de **3 semanas** (às vezes mais) após o início de um tratamento eficaz.\n\n**Comparação com a PCR.**\n\n| Marcador | Início da elevação | Pico | Normalização com tratamento |\n|---|---|---|---|\n| PCR | Cerca de 6 horas | Cerca de 2 dias | Cerca de 1 semana |\n| VHS | Primeiros dias | 3 a 5 dias | Cerca de 3 semanas |\n\n**Fatores que alteram a VHS.** Anemia, gravidez, doenças renais e inflamatórias crônicas elevam; policitemia e alterações das hemácias diminuem. A VHS também pode subir após cirurgia, o que dificulta a interpretação no pós-operatório.\n\n**Utilidade.** Ajuda no diagnóstico (critério de Kocher, VHS acima de 40 mm/h) e na confirmação da cura no fim do tratamento, mas é ruim para o acompanhamento precoce, papel que cabe à PCR.\n\n> VHS: pico em 3 a 5 dias, normaliza em cerca de 3 semanas.",
+  "correta": "**A: Certo.** A VHS atinge o pico entre o terceiro e o quinto dia da infecção e se normaliza lentamente, em cerca de três semanas após o início do tratamento eficaz. Essa cinética lenta reflete a dependência do fibrinogênio e de outras proteínas que demoram a se acumular e a ser eliminadas. Por isso, a PCR, que sobe e cai mais rápido, é melhor para acompanhar a resposta ao tratamento.",
+  "incorretas": {
+   "B": "**Marcar errado seria trocar a cinética da VHS pela da PCR.** A PCR é a que atinge o pico em cerca de dois dias e se normaliza em cerca de uma semana. A VHS é mais lenta nas duas fases, como o item descreve."
+  },
+  "referencias": [
+   "Unkila-Kallio L, Kallio MJ, Eskola J, Peltola H. Serum C-reactive protein, erythrocyte sedimentation rate, and white blood cell count in acute hematogenous osteomyelitis of children. Pediatrics. 1994;93(1):59-62.",
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Infecções musculoesqueléticas."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "pediatria-0886": {
+  "conceito": "**Cinética da proteína C reativa (PCR).** A PCR é uma proteína de fase aguda produzida pelo fígado sob estímulo da interleucina 6. Ao contrário da VHS, ela responde de forma rápida e direta à inflamação, o que a torna o melhor marcador laboratorial para acompanhar infecções.\n\n**Comportamento típico na infecção osteoarticular.**\n- Começa a subir em cerca de **6 horas** após o estímulo.\n- **Pico em cerca de 36 a 50 horas** (aproximadamente 2 dias).\n- Meia-vida curta (cerca de 19 horas): cai rapidamente quando a infecção é controlada.\n- **Normaliza em cerca de 1 semana** (às vezes até 10 dias) após o início de tratamento eficaz.\n\n**Uso clínico.**\n- **Diagnóstico**: PCR acima de 2 mg/dL é preditor forte de artrite séptica (Caird). Uma PCR normal torna o diagnóstico de infecção bacteriana improvável.\n- **Acompanhamento**: queda progressiva indica resposta ao tratamento; a persistência ou elevação sugere abscesso não drenado, foco residual ou germe resistente, e pode indicar nova imagem ou nova drenagem.\n- **Troca para via oral**: muitos protocolos usam a queda da PCR (por exemplo, abaixo de 2 a 3 mg/dL ou queda de 50%) junto com a melhora clínica para passar o antibiótico para via oral.\n\n**Limitações.** Pode subir em traumas e após cirurgias, e não é específica de infecção.\n\n> PCR: sobe em 6 horas, pico em cerca de 2 dias, normaliza em cerca de 1 semana com tratamento.",
+  "correta": "**A: Certo.** O item descreve a cinética clássica da PCR: elevação já nas primeiras seis horas, pico em cerca de dois dias (36 a 50 horas) e normalização em aproximadamente uma semana após o início do tratamento adequado. Essa resposta rápida é o que torna a PCR o melhor marcador para monitorar a evolução das infecções osteoarticulares.",
+  "incorretas": {
+   "B": "**Marcar errado seria confundir a cinética da PCR com a da VHS, que é mais lenta.** Outra fonte de dúvida são as pequenas variações entre os estudos (pico entre 36 e 50 horas, normalização entre 7 e 10 dias), mas os números do item correspondem à descrição clássica."
+  },
+  "referencias": [
+   "Unkila-Kallio L, Kallio MJ, Eskola J, Peltola H. Serum C-reactive protein, erythrocyte sedimentation rate, and white blood cell count in acute hematogenous osteomyelitis of children. Pediatrics. 1994;93(1):59-62.",
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Infecções musculoesqueléticas."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "pediatria-0887": {
+  "conceito": "**Qual exame acompanha melhor a resposta ao tratamento da infecção.** O marcador ideal deve subir rápido, cair rápido quando a infecção é controlada e voltar a subir se houver complicação. A **PCR** cumpre esse papel melhor que a VHS.\n\n**Por que a PCR é superior para o acompanhamento.**\n- Tem meia-vida curta (cerca de 19 horas).\n- Cai significativamente em 2 a 3 dias com tratamento eficaz e normaliza em cerca de uma semana.\n- Uma nova elevação durante o tratamento é sinal precoce de complicação (abscesso, artrite séptica associada, germe resistente).\n\n**Por que a VHS é inferior.**\n- Atinge o pico apenas em 3 a 5 dias e pode continuar subindo nos primeiros dias, mesmo com o tratamento funcionando.\n- Demora cerca de 3 semanas ou mais para normalizar.\n- É influenciada por anemia e outros fatores.\n\n| Aspecto | PCR | VHS |\n|---|---|---|\n| Resposta a mudanças | Rápida | Lenta |\n| Detecta complicação precoce | Sim | Mal |\n| Uso no acompanhamento | Preferencial | Complementar |\n\n**Papel residual da VHS.** Pode ser útil para confirmar a resolução ao final do tratamento e em infecções crônicas.\n\n> Para acompanhar a resposta ao tratamento, use a PCR; a VHS é lenta demais.",
+  "correta": "**B: Errado.** A melhor forma laboratorial de acompanhar a resposta ao tratamento é a **PCR**, não a VHS. A PCR cai rapidamente quando a infecção é controlada e volta a subir precocemente se houver complicação. A VHS sobe e cai devagar, podendo continuar alta por semanas mesmo com tratamento eficaz, o que a torna pouco útil para decisões no início do tratamento.",
+  "incorretas": {
+   "A": "**Marcar certo seria valorizar a VHS por ela ser tradicional e fazer parte dos critérios de Kocher.** A VHS é útil no diagnóstico, mas sua cinética lenta a torna inadequada para o acompanhamento da resposta ao tratamento."
+  },
+  "referencias": [
+   "Unkila-Kallio L, Kallio MJ, Eskola J, Peltola H. Serum C-reactive protein, erythrocyte sedimentation rate, and white blood cell count in acute hematogenous osteomyelitis of children. Pediatrics. 1994;93(1):59-62.",
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Infecções musculoesqueléticas."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "pediatria-0888": {
+  "conceito": "**Líquido sinovial na artrite séptica.** A punção articular é o exame decisivo: confirma a infecção, identifica o germe e orienta a drenagem.\n\n**Análise do líquido.**\n\n| Tipo de líquido | Leucócitos/mm³ | Neutrófilos |\n|---|---|---|\n| Normal | Menos de 200 | Menos de 25% |\n| Não inflamatório (trauma, artrose) | 200 a 2.000 | Menos de 25% |\n| Inflamatório (artrite reumática, reativa) | 2.000 a 50.000 | Variável |\n| **Séptico** | **Acima de 50.000** (frequentemente acima de 80.000 a 100.000) | **Acima de 75% a 90%** |\n\n**Outros dados.** Aspecto turvo ou purulento, glicose baixa em relação ao sangue, lactato elevado, Gram e cultura. A cultura é negativa em parte dos casos (até 30% a 50% em crianças), sobretudo com Kingella kingae em menores de 4 anos, que cresce mal em meios convencionais e é melhor detectada por PCR molecular ou inoculação em frascos de hemocultura.\n\n**Atenção.** A contagem pode ser menor no início ou em pacientes que já usaram antibiótico; não exclui infecção um valor um pouco abaixo de 50.000 com quadro clínico sugestivo.\n\n**Germes mais comuns na criança de 7 anos.** Staphylococcus aureus (o mais frequente em todas as idades), Streptococcus pyogenes e, em adolescentes sexualmente ativos, Neisseria gonorrhoeae.\n\n> Artrite séptica: líquido purulento com mais de 50.000 leucócitos e mais de 75% de neutrófilos.",
+  "correta": "**A: Certo.** Com o quadro clínico e laboratorial da criança, altamente sugestivo de artrite séptica, o líquido sinovial provavelmente mostra contagem celular muito elevada, frequentemente acima de 80.000 a 100.000 leucócitos/mm³, com predomínio de neutrófilos (mais de 75%). O limite diagnóstico clássico é de 50.000 células, e valores bem acima são comuns na infecção bacteriana estabelecida.",
+  "incorretas": {
+   "B": "**Marcar errado seria imaginar um líquido apenas inflamatório, abaixo de 50.000 células, típico de artrite reumática ou reativa.** Esse padrão não combina com febre, VHS de 47, PCR de 7 mg/dL e leucocitose. Em uma criança com esse quadro, espera-se um líquido purulento."
+  },
+  "referencias": [
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Artrite séptica.",
+   "Kocher MS, Zurakowski D, Kasser JR. Differentiating between septic arthritis and transient synovitis of the hip in children: an evidence-based clinical prediction algorithm. J Bone Joint Surg Am. 1999;81(12):1662-1670."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "pediatria-0889": {
+  "conceito": "**Radiografia nas infecções osteoarticulares agudas.** A radiografia é quase sempre o primeiro exame, mas tem papel limitado no diagnóstico precoce.\n\n**Evolução dos achados radiográficos.**\n- **Primeiros dias**: pode haver apenas edema de partes moles e apagamento dos planos de gordura. Na artrite séptica do quadril, o aumento do espaço articular medial pode sugerir derrame, mas é pouco sensível.\n- **10 a 14 dias**: aparecem as alterações ósseas da osteomielite (rarefação, lise, reação periosteal), porque é preciso perder cerca de 30% a 50% do mineral ósseo para a lesão ficar visível.\n- **Fases tardias**: estreitamento do espaço articular, erosões e destruição óssea, sequestro e invólucro (osteomielite crônica).\n\n**Por que ainda fazer a radiografia.** Para **excluir outras causas** (fraturas, tumores, lesões ósseas) e como base para comparação futura.\n\n**Exames mais úteis no diagnóstico precoce.**\n- **Ultrassonografia**: mostra o derrame articular (especialmente no quadril) e guia a punção.\n- **Ressonância**: detecta osteomielite em poucos dias, abscessos subperiosteais e intraósseos, piomiosite e osteomielite associada à artrite séptica.\n- **Cintilografia**: útil quando o foco não é localizado.\n\n| Exame | Papel na fase aguda |\n|---|---|\n| Radiografia | Excluir outras causas; achados tardios |\n| Ultrassonografia | Derrame e guia de punção |\n| Ressonância | Osteomielite precoce e abscessos |\n\n> Na infecção aguda, a radiografia costuma ser normal; os sinais ósseos aparecem após 10 a 14 dias.",
+  "correta": "**B: Errado.** As alterações descritas (estreitamento ou alargamento do espaço articular e destruição óssea) aparecem tardiamente, e por isso as radiografias simples **não são muito úteis no diagnóstico das infecções agudas**. Nos primeiros dias, mostram no máximo edema de partes moles; a destruição óssea só se torna visível após cerca de 10 a 14 dias. O exame serve principalmente para excluir outras causas. O caso confirma isso: a radiografia do joelho não mostrava alterações.",
+  "incorretas": {
+   "A": "**Marcar certo é aceitar a lista de achados, que existem, sem perceber que são tardios.** O problema do item é a conclusão de que a radiografia é muito útil na fase aguda. Esperar alterações radiográficas para diagnosticar uma infecção atrasaria o tratamento e permitiria a destruição da cartilagem e do osso."
+  },
+  "referencias": [
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Infecções musculoesqueléticas.",
+   "Greenspan A. Radiologia ortopédica: uma abordagem prática. Guanabara Koogan. Infecções."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "pediatria-0890": {
+  "conceito": "**Doença de Legg-Calvé-Perthes.** É a osteonecrose idiopática da epífise femoral proximal na criança. Acomete principalmente meninos de **4 a 8 anos**, com faixa de 2 a 12 anos, e é bilateral em cerca de 10% a 15% dos casos (geralmente em tempos diferentes).\n\n**Quadro clínico.** Claudicação de início insidioso, com dor leve na virilha, na coxa ou na **face medial do joelho** (dor referida pelo nervo obturador). Ao exame, limitação da **abdução e da rotação interna** do quadril.\n\n**Fases radiográficas (Waldenström).**\n1. **Inicial (necrose)**: epífise menor, mais **densa** (esclerótica), alargamento do espaço articular medial; sinal do crescente (fratura subcondral).\n2. **Fragmentação**: reabsorção do osso necrótico, aspecto fragmentado.\n3. **Reossificação**: osso novo substitui o necrótico.\n4. **Residual (remodelação)**: forma final da cabeça (esférica, oval ou achatada).\n\n**Prognóstico.** Depende da idade de início (melhor antes dos 6 anos), da extensão do acometimento (classificação do pilar lateral de Herring) e da forma final da cabeça (Stulberg).\n\n**Diagnóstico diferencial com a epifisiólise.**\n\n| Característica | Perthes | Epifisiólise |\n|---|---|---|\n| Idade | 4 a 8 anos | 10 a 16 anos |\n| Biotipo | Pequeno, idade óssea atrasada | Obeso, adolescente |\n| Radiografia | Epífise densa e achatada | Escorregamento da epífise (linha de Klein) |\n| Exame | Abdução e rotação interna limitadas | Rotação externa obrigatória na flexão (Drehmann) |\n\n> Menino de 8 anos, dor no joelho, claudicação e cabeça femoral densa: Legg-Calvé-Perthes.",
+  "correta": "**B: Errado.** A principal hipótese é a **doença de Legg-Calvé-Perthes**. A idade (8 anos), a dor na virilha e na face medial do joelho, a claudicação, a limitação da abdução e da rotação interna e, principalmente, o **aumento de densidade da cabeça femoral** (fase inicial de necrose) são característicos. O deslizamento epifisário ocorre tipicamente em adolescentes de 10 a 16 anos, frequentemente obesos, e mostra o escorregamento da epífise, não aumento de densidade.",
+  "incorretas": {
+   "A": "**Marcar certo é se basear apenas na dor no joelho e na limitação da rotação interna, comuns às duas doenças.** O que separa os diagnósticos é a idade e a radiografia: a epifisiólise aparece na adolescência com desvio da epífise, enquanto a esclerose da cabeça femoral em uma criança de 8 anos é típica da necrose de Perthes."
+  },
+  "referencias": [
+   "Herring JA, Kim HT, Browne R. Legg-Calve-Perthes disease. Part I: classification of radiographs with use of the modified lateral pillar and Stulberg classifications. J Bone Joint Surg Am. 2004;86(10):2103-2120.",
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Doença de Legg-Calvé-Perthes."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "pediatria-0891": {
+  "conceito": "**Ossificação da cabeça femoral e a utilidade da radiografia.** A cabeça femoral nasce cartilaginosa. O **núcleo de ossificação** da epífise aparece entre os **4 e 7 meses** de vida (às vezes mais tarde, especialmente na displasia do quadril). Isso muda o exame de imagem ideal conforme a idade.\n\n**Lactentes (antes do núcleo de ossificação).**\n- A radiografia não mostra a cabeça femoral e pode enganar, porque a posição da cabeça precisa ser inferida por linhas (Hilgenreiner, Perkins, Shenton) e pelo índice acetabular.\n- A **ultrassonografia** (método de Graf) é o exame de escolha até cerca de 4 a 6 meses para a displasia do desenvolvimento do quadril.\n\n**Crianças maiores (como a do caso, com 8 anos).**\n- A cabeça femoral já está ossificada, e a radiografia é o exame inicial essencial.\n- Na doença de Legg-Calvé-Perthes, mostra densidade aumentada, achatamento, fragmentação e o sinal do crescente; permite classificar a doença (pilar lateral de Herring) e acompanhar a evolução.\n- A ressonância ajuda no diagnóstico muito precoce, antes das alterações radiográficas, e na avaliação da extensão da necrose.\n\n| Idade | Exame de escolha para a cabeça femoral |\n|---|---|\n| Até 4 a 6 meses | Ultrassonografia |\n| Após a ossificação | Radiografia |\n| Dúvida ou fase muito inicial | Ressonância |\n\n> Em uma criança de 8 anos, a cabeça femoral já é ossificada e a radiografia é fundamental.",
+  "correta": "**B: Errado.** Aos 8 anos, a cabeça femoral já está ossificada (o núcleo de ossificação aparece entre os 4 e 7 meses), e a radiografia é o exame mais útil para o diagnóstico e o acompanhamento da doença de Legg-Calvé-Perthes. Tanto que, no próprio caso, a radiografia mostrou o aumento de densidade da cabeça femoral. A limitação descrita no item se aplica aos lactentes antes do aparecimento do núcleo de ossificação, quando se usa a ultrassonografia.",
+  "incorretas": {
+   "A": "**Marcar certo é aplicar à criança de 8 anos o raciocínio da displasia do quadril no recém-nascido.** Nos primeiros meses de vida, a cabeça cartilaginosa realmente não aparece na radiografia e o exame pode enganar. Em idade escolar, porém, a cabeça ossificada é bem visível."
+  },
+  "referencias": [
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Doença de Legg-Calvé-Perthes.",
+   "Greenspan A. Radiologia ortopédica: uma abordagem prática. Guanabara Koogan. Quadril pediátrico."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "pediatria-0892": {
+  "conceito": "**Investigação por imagem na doença de Legg-Calvé-Perthes.** O diagnóstico se baseia na clínica e na **radiografia simples** (AP da bacia e incidência de Lauenstein, ou rã), que mostra as fases da doença e permite classificá-la e acompanhá-la.\n\n**Papel de cada exame.**\n- **Radiografia**: exame obrigatório e suficiente na maioria dos casos. Mostra densidade aumentada, sinal do crescente, fragmentação, achatamento e subluxação lateral. Usada nas classificações de Herring (pilar lateral), Catterall e Stulberg.\n- **Ressonância magnética**: útil na fase muito inicial (antes das alterações radiográficas), para avaliar a extensão da necrose, a perfusão (com contraste) e a forma da cabeça cartilaginosa.\n- **Artrografia**: usada no planejamento cirúrgico, para avaliar a congruência dinâmica e o \"hinge abduction\" (abdução em dobradiça).\n- **Cintilografia**: mostra hipocaptação precoce, mas é pouco usada hoje.\n- **Ultrassonografia**: pode mostrar derrame e espessamento sinovial, mas **não é necessária** para o diagnóstico ou o acompanhamento. Seu papel principal no quadril infantil é na displasia do desenvolvimento em lactentes e na pesquisa de derrame em quadros agudos (sinovite transitória, artrite séptica).\n\n| Exame | Papel no Perthes |\n|---|---|\n| Radiografia | Essencial: diagnóstico, classificação, seguimento |\n| Ressonância | Fase precoce e extensão da necrose |\n| Artrografia | Planejamento cirúrgico |\n| Ultrassonografia | Dispensável |\n\n> No Perthes, a radiografia é o exame-chave; a ultrassonografia não é mandatória.",
+  "correta": "**B: Errado.** No caso, uma criança de 8 anos com quadro e radiografia sugestivos de Legg-Calvé-Perthes, a avaliação clínica associada à **radiografia** é o que se exige. A ultrassonografia não é mandatória: pode mostrar derrame articular, mas não diagnostica nem classifica a necrose. O exame complementar mais útil, quando necessário, é a ressonância magnética.",
+  "incorretas": {
+   "A": "**Marcar certo seria transportar para o Perthes o raciocínio da displasia do quadril no lactente, em que a ultrassonografia é o exame de escolha.** Aos 8 anos, com a cabeça femoral ossificada e alterações radiográficas evidentes, a ultrassonografia acrescenta pouco."
+  },
+  "referencias": [
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Doença de Legg-Calvé-Perthes.",
+   "Herring JA, Kim HT, Browne R. Legg-Calve-Perthes disease. Part I: classification of radiographs with use of the modified lateral pillar and Stulberg classifications. J Bone Joint Surg Am. 2004;86(10):2103-2120."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "pediatria-0893": {
+  "conceito": "**Achados clínicos da displasia do desenvolvimento do quadril (DDQ) ao longo da idade.** Os sinais mudam conforme a idade, porque com o tempo as partes moles se adaptam à posição luxada.\n\n**Recém-nascido e primeiros meses (sinais precoces).**\n- **Ortolani**: redução de um quadril luxado (abdução com pressão no trocânter), com ressalto.\n- **Barlow**: luxação de um quadril instável (adução com pressão posterior).\n- Esses testes ficam negativos após cerca de 2 a 3 meses, quando as partes moles retraem.\n\n**Lactentes maiores (a partir de cerca de 3 meses).**\n- **Limitação da abdução**: o sinal mais importante nessa fase, pela contratura dos adutores.\n- **Sinal de Galeazzi**: diferença na altura dos joelhos com quadris e joelhos fletidos (encurtamento aparente da coxa).\n- Assimetria das pregas da coxa e glúteas (pouco específica).\n\n**Criança que já anda (sinais tardios).**\n- **Claudicação**: marcha de Trendelenburg (insuficiência dos abdutores) na luxação unilateral; marcha anserina (\"de pato\") na bilateral.\n- **Marcha na ponta do pé** do lado afetado, para compensar o encurtamento.\n- Hiperlordose lombar na luxação bilateral.\n- Limitação da abdução e encurtamento persistem.\n\n| Fase | Sinais principais |\n|---|---|\n| Neonatal | Ortolani, Barlow |\n| Após 3 meses | Limitação da abdução, Galeazzi |\n| Após a marcha | Claudicação, marcha na ponta do pé, Trendelenburg |\n\n> Ortolani e Barlow são precoces; claudicação, marcha na ponta do pé e limitação da abdução são tardios.",
+  "correta": "**A: Certo.** Claudicação, marcha na ponta do pé e limitação da abdução são achados tardios da displasia do desenvolvimento do quadril, típicos da criança maior ou que já anda, quando o quadril luxado causa encurtamento, insuficiência dos abdutores e contratura dos adutores. No período neonatal, os sinais são os testes de instabilidade de Ortolani e Barlow.",
+  "incorretas": {
+   "B": "**Marcar errado seria considerar a limitação da abdução um sinal precoce.** Ela de fato aparece antes da marcha (a partir de cerca de 3 meses), mas é posterior aos testes de instabilidade neonatais e indica que o quadril já está fixo na posição luxada. Em conjunto, os três achados do item caracterizam a fase tardia."
+  },
+  "referencias": [
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Displasia do desenvolvimento do quadril.",
+   "Weinstein SL, Mubarak SJ, Wenger DR. Developmental hip dysplasia and dislocation: Part I. J Bone Joint Surg Am. 2003;85(9):1824-1832."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "pediatria-0894": {
+  "conceito": "**Dor no joelho como sintoma de doença do quadril.** É uma regra de ouro da ortopedia pediátrica: **toda criança com dor no joelho deve ter o quadril examinado**. Doenças como Legg-Calvé-Perthes, epifisiólise, sinovite transitória e artrite séptica do quadril podem se manifestar somente como dor no joelho.\n\n**Por que a dor irradia.** A cápsula e a articulação do quadril são inervadas por ramos dos nervos **obturatório**, **femoral** e do nervo para o quadrado femoral (e ciático). O cérebro interpreta a dor no território cutâneo desses nervos:\n- **Nervo obturatório**: seu ramo cutâneo inerva a **face medial da coxa e do joelho**. É a principal explicação para a dor medial no joelho.\n- **Nervo femoral**: seus ramos cutâneos (incluindo o nervo safeno) inervam a face anterior da coxa e a face medial do joelho e da perna, contribuindo para a dor anterior.\n\n**Não existe \"nervo sartório\".** O sartório é um músculo, inervado pelo nervo femoral. A expressão do item é anatomicamente incorreta.\n\n**Armadilha clínica.** Uma radiografia de joelho normal em criança com dor no joelho e claudicação não encerra a investigação: o próximo passo é examinar e radiografar o quadril.\n\n> Dor no joelho da criança: pense no quadril (nervo obturatório e femoral).",
+  "correta": "**B: Errado.** É verdade que crianças com doença do quadril frequentemente referem dor na face medial e anterior do joelho, mas a explicação está errada: não existe nervo sartório. A dor é referida pelos nervos **obturatório** (face medial da coxa e do joelho) e **femoral**, que inervam tanto a cápsula do quadril quanto a pele dessas regiões. O sartório é um músculo, inervado pelo nervo femoral.",
+  "incorretas": {
+   "A": "**Marcar certo é aceitar o item pelo fenômeno clínico, que é verdadeiro.** A dor referida ao joelho é muito comum no Perthes e na epifisiólise. O erro está na estrutura nervosa citada, que não existe com esse nome."
+  },
+  "referencias": [
+   "Moore KL, Dalley AF, Agur AMR. Anatomia orientada para a clínica. Guanabara Koogan. Membro inferior.",
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Doença de Legg-Calvé-Perthes."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "pediatria-0895": {
+  "conceito": "**Fatores prognósticos na doença de Legg-Calvé-Perthes.** O objetivo do tratamento é obter uma cabeça femoral esférica e congruente ao fim da doença, porque a forma final determina o risco de artrose no adulto.\n\n**Principais fatores.**\n1. **Idade de início**: o fator clínico mais importante. Crianças com início **antes dos 6 anos** têm melhor prognóstico, porque há mais tempo de crescimento para remodelar a cabeça. Após os 8 anos, os resultados pioram muito.\n2. **Extensão do acometimento**: classificação do **pilar lateral de Herring** (A, B, B/C, C). Pilar lateral preservado (A) tem ótimo prognóstico; colapso do pilar (C), pior.\n3. **Sinais de cabeça em risco (Catterall)**: sinal de Gage, calcificação lateral, subluxação lateral, metáfise horizontal, cistos metafisários.\n4. **Amplitude de movimento**: perda importante da abdução indica pior evolução.\n5. **Sexo**: meninas tendem a ter pior prognóstico (maturam mais cedo e costumam ter acometimento mais extenso).\n\n**Resultado final: classificação de Stulberg.**\n\n| Stulberg | Forma da cabeça | Risco de artrose |\n|---|---|---|\n| I e II | Esférica, congruente | Baixo |\n| III e IV | Ovoide ou achatada, congruência asférica | Moderado |\n| V | Achatada, incongruente | Alto |\n\n**Tratamento conforme o prognóstico.** Crianças pequenas com pilar A costumam ser apenas observadas; crianças acima de 8 anos com pilar B ou B/C se beneficiam de cirurgia de contenção (osteotomia femoral ou pélvica).\n\n> No Perthes, quanto mais jovem a criança, melhor o prognóstico.",
+  "correta": "**A: Certo.** A idade de início é o principal fator clínico de prognóstico na doença de Legg-Calvé-Perthes. Quanto mais jovem a criança, maior o potencial de crescimento e de remodelação da cabeça femoral, e melhores os resultados. Crianças com início antes dos 6 anos geralmente evoluem bem; acima dos 8 anos, o risco de cabeça achatada e artrose precoce é maior.",
+  "incorretas": {
+   "B": "**Marcar errado seria imaginar que a criança mais velha, com osso mais maduro, teria melhor prognóstico.** É o contrário: com menos tempo de crescimento, a cabeça deformada não consegue remodelar. A criança do caso, com 8 anos, está justamente na faixa de pior prognóstico."
+  },
+  "referencias": [
+   "Herring JA, Kim HT, Browne R. Legg-Calve-Perthes disease. Part II: prospective multicenter study of the effect of treatment on outcome. J Bone Joint Surg Am. 2004;86(10):2121-2134.",
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Doença de Legg-Calvé-Perthes."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "pediatria-0896": {
+  "conceito": "**Abscesso de Brodie.** É uma forma de **osteomielite subaguda** localizada: uma cavidade intraóssea com pus ou tecido de granulação, delimitada por um halo de osso reativo esclerótico. Surge quando a resistência do hospedeiro e a virulência do germe (geralmente Staphylococcus aureus) se equilibram, e a infecção fica contida.\n\n**Características.**\n- **Idade**: crianças, adolescentes e adultos jovens; predomínio masculino.\n- **Localização**: **metáfises dos ossos longos dos membros inferiores**, principalmente a tíbia distal e proximal e o fêmur distal. Pode atravessar a fise em crianças.\n- **Quadro clínico**: dor insidiosa há semanas ou meses, frequentemente noturna, com pouca ou nenhuma febre. Exames laboratoriais muitas vezes normais ou pouco alterados (a VHS pode estar elevada).\n- **Radiografia**: lesão lítica bem delimitada, com halo esclerótico; às vezes com trajeto serpiginoso em direção à fise.\n\n**Diagnóstico diferencial importante.** Osteoma osteoide (dor noturna aliviada por anti-inflamatórios, nicho menor que 1,5 a 2 cm), tumor de células de Langerhans, condroblastoma (epifisário), sarcoma de Ewing (que pode imitar infecção). Biópsia e cultura podem ser necessárias.\n\n**Tratamento.** Curetagem cirúrgica da cavidade, com cultura e antibiótico. Lesões pequenas e típicas podem responder só com antibiótico.\n\n> Brodie: osteomielite subaguda, cavidade metafisária com halo esclerótico, membros inferiores de jovens.",
+  "correta": "**A: Certo.** O abscesso de Brodie é uma forma localizada de osteomielite subaguda, que se apresenta como cavidade metafisária delimitada por esclerose, mais frequentemente nos ossos longos dos membros inferiores (sobretudo a tíbia) de crianças, adolescentes e adultos jovens. A dor é insidiosa e o quadro sistêmico é discreto.",
+  "incorretas": {
+   "B": "**Marcar errado seria pensar que o abscesso de Brodie é uma osteomielite aguda ou crônica com sequestro, ou que ocorre preferencialmente nos membros superiores ou em idosos.** A forma subaguda e a localização metafisária nos membros inferiores de jovens são exatamente o que o define."
+  },
+  "referencias": [
+   "Roberts JM, Drummond DS, Breed AL, Chesney J. Subacute hematogenous osteomyelitis in children: a retrospective study. J Pediatr Orthop. 1982;2(3):249-254.",
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Infecções musculoesqueléticas."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "pediatria-0897": {
+  "conceito": "**Osteomielite e artrite séptica concomitantes na criança pequena.** A associação depende da anatomia vascular e articular conforme a idade.\n\n**Vasos transfisários.** Até cerca de **18 meses a 2 anos**, existem vasos que atravessam a fise e ligam a metáfise à epífise. Uma osteomielite metafisária pode se espalhar para a epífise e, daí, para a articulação. Depois que a fise forma uma barreira vascular, a infecção tende a ficar na metáfise (até a fise fechar no adolescente).\n\n**Metáfises intra-articulares.** Em algumas articulações, a metáfise fica dentro da cápsula. Se a infecção perfura o córtex metafisário, entra diretamente na articulação, em qualquer idade:\n- **Quadril** (fêmur proximal).\n- **Ombro** (úmero proximal).\n- **Tornozelo** (tíbia e fíbula distais).\n- **Cotovelo** (rádio proximal).\n\n**Consequências.** Em lactentes, a associação pode destruir a epífise e a fise, causando discrepâncias e deformidades (por exemplo, a sequela de Tom Smith no quadril). Por isso, em lactentes com osteomielite, a articulação vizinha deve ser investigada, e vice-versa.\n\n**Investigação.** Ressonância magnética é o exame mais útil para identificar osteomielite associada à artrite séptica, o que pode mudar a conduta (drenagem óssea, maior duração do antibiótico).\n\n| Faixa etária | Disseminação articular |\n|---|---|\n| Até cerca de 18 meses a 2 anos | Por vasos transfisários |\n| Criança maior | Barreira fisária; risco nas metáfises intra-articulares |\n| Adulto | Fise fechada; extensão direta possível |\n\n> Em menores de 2 anos, a osteomielite frequentemente se associa à artrite séptica.",
+  "correta": "**A: Certo.** Em crianças com menos de 2 anos, os vasos transfisários permitem que a infecção metafisária chegue à epífise e à articulação, de modo que a osteomielite pode vir acompanhada de artrite séptica. A associação também ocorre em qualquer idade nas articulações com metáfise intra-articular, como quadril, ombro, tornozelo e cotovelo.",
+  "incorretas": {
+   "B": "**Marcar errado seria considerar a fise uma barreira em todas as idades.** Ela só funciona como barreira depois que os vasos transfisários desaparecem. No lactente, a associação entre osteomielite e artrite séptica é comum e deve ser ativamente investigada."
+  },
+  "referencias": [
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Infecções musculoesqueléticas.",
+   "Peltola H, Pääkkönen M. Acute osteomyelitis in children. N Engl J Med. 2014;370(4):352-360."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "pediatria-0898": {
+  "conceito": "**Classificação de Cierny e Mader da osteomielite crônica.** Combina o **tipo anatômico** (de I a IV) com a **classe fisiológica do hospedeiro** (A, B ou C), gerando 12 estágios clínicos. Orienta a extensão do desbridamento e a reconstrução.\n\n**Tipos anatômicos.**\n\n| Tipo | Nome | Descrição |\n|---|---|---|\n| I | Medular | Infecção restrita ao canal (por exemplo, após haste intramedular) |\n| II | **Superficial** | Limitada à superfície do osso, secundária a um defeito de cobertura de partes moles |\n| III | Localizado | Envolve a espessura do córtex com sequestro, mas o osso permanece estável após o desbridamento |\n| IV | Difuso | Acometimento de toda a circunferência; instável antes ou após o desbridamento |\n\n**Classes do hospedeiro.**\n- **A**: hospedeiro normal.\n- **B**: comprometido localmente (Bl), sistemicamente (Bs) ou ambos (Bls). Exemplos: diabetes, tabagismo, desnutrição, insuficiência vascular, linfedema, cicatrizes extensas.\n- **C**: o tratamento seria pior que a doença; indica-se tratamento paliativo.\n\n**Aplicação.** O tipo IV exige desbridamento com estabilização e reconstrução óssea (transporte ósseo, enxertos, técnica de Masquelet). O tipo II requer desbridamento superficial e cobertura com retalho.\n\n> Cierny-Mader: I medular, II superficial, III localizado, IV difuso.",
+  "correta": "**B: Errado.** A descrição do item (limitada à superfície do osso, secundária a defeito de cobertura) corresponde ao **tipo II, superficial**. O **tipo III** é o localizado, em que a infecção atravessa a espessura do córtex com sequestro bem delimitado, mas o osso permanece estável após o desbridamento.",
+  "incorretas": {
+   "A": "**Marcar certo é deslocar a numeração em um nível.** A sequência segue o aumento da extensão: começa dentro do osso (I, medular), passa à superfície (II), depois a uma região que inclui o córtex inteiro sem perder a estabilidade (III) e termina no acometimento difuso e instável (IV)."
+  },
+  "referencias": [
+   "Cierny G 3rd, Mader JT, Penninck JJ. A clinical staging system for adult osteomyelitis. Clin Orthop Relat Res. 2003;(414):7-24.",
+   "Azar FM, Beaty JH, eds. Campbell's Operative Orthopaedics. Elsevier. Osteomielite."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "pediatria-0899": {
+  "alerta": "A segunda parte do item (redução da atividade osteoblástica) é imprecisa: no raquitismo, os osteoblastos continuam produzindo osteoide, e o defeito central é a falha de mineralização da matriz e da cartilagem de crescimento. O gabarito oficial (Certo) foi mantido.",
+  "conceito": "**Raquitismo.** É a falha de **mineralização** da cartilagem de crescimento (fise) e do osteoide na criança. No adulto, a falha de mineralização do osteoide, sem envolvimento da fise, é chamada osteomalácia.\n\n**O denominador comum: o fosfato.** A mineralização exige cálcio e fosfato suficientes. Em todas as formas de raquitismo, o produto cálcio-fósforo fica baixo, e a **hipofosfatemia** é a alteração laboratorial mais constante:\n- **Raquitismo calcipênico** (deficiência de vitamina D, de cálcio ou defeitos no metabolismo da vitamina D): o cálcio cai, o paratormônio sobe e aumenta a perda renal de fosfato, resultando em hipofosfatemia.\n- **Raquitismo fosfopênico** (raquitismo hipofosfatêmico ligado ao X, por excesso de FGF23): perda renal primária de fosfato, com cálcio normal.\n\n**Exames laboratoriais.**\n\n| Exame | Calcipênico | Fosfopênico (ligado ao X) |\n|---|---|---|\n| Fósforo | Baixo | Muito baixo |\n| Cálcio | Normal ou baixo | Normal |\n| Fosfatase alcalina | Elevada | Elevada |\n| PTH | Elevado | Normal ou levemente elevado |\n\n**Quadro clínico e radiográfico.** Alargamento dos punhos e joelhos, rosário raquítico, geno varo ou valgo, baixa estatura. Na radiografia: fises alargadas, metáfises em taça e esgarçadas, osteopenia.\n\n**Fisiopatologia celular.** Os osteoblastos continuam produzindo matriz (às vezes em excesso, com fosfatase alcalina elevada), mas ela não se mineraliza. Na fise, os condrócitos hipertróficos não sofrem apoptose e se acumulam, alargando a zona hipertrófica.\n\n> Raquitismo: falha de mineralização; hipofosfatemia é o achado laboratorial comum a todas as formas.",
+  "correta": "**A: Certo (gabarito oficial).** A primeira parte do item é correta e é o ponto central: a hipofosfatemia é a característica laboratorial comum a todas as formas de raquitismo, tanto nas calcipênicas (por hiperparatireoidismo secundário) quanto nas fosfopênicas. A segunda parte é uma simplificação: o defeito do raquitismo está na mineralização, e não exatamente na redução da atividade dos osteoblastos, que continuam produzindo osteoide. A banca considerou o item correto.",
+  "incorretas": {
+   "B": "**Marcar errado é a resposta de quem percebe a imprecisão da segunda parte.** A falha de mineralização, e não a baixa produção de matriz, é o mecanismo do raquitismo, e a fosfatase alcalina elevada mostra que os osteoblastos estão ativos. A banca, porém, valorizou a afirmação sobre a hipofosfatemia e manteve o item como certo."
+  },
+  "referencias": [
+   "Wharton B, Bishop N. Rickets. Lancet. 2003;362(9393):1389-1400.",
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Doenças metabólicas ósseas."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "pediatria-0900": {
+  "conceito": "**Osteogênese imperfeita (OI).** É um grupo de doenças genéticas do colágeno tipo I (genes COL1A1 e COL1A2 na maioria) que causam fragilidade óssea, com fraturas de baixa energia e deformidades. A classificação de Sillence, baseada na clínica, divide os tipos clássicos.\n\n| Tipo | Gravidade | Escleras | Dentinogênese imperfeita | Prognóstico |\n|---|---|---|---|---|\n| I | Leve, sem deformidade importante | Azuis persistentes | Variável | Bom; surdez frequente no adulto |\n| II | Letal no período perinatal | Azuis escuras | Variável | Óbito precoce |\n| III | **Grave, progressivamente deformante** | Azuladas ao nascer, **tendem a clarear** com a idade | Comum | **Compatível com a vida**, mas com grande deformidade e baixa estatura |\n| IV | Moderada | Normais ou levemente acinzentadas | Variável | Bom, com deformidades moderadas |\n\n**Tipo III em detalhes.** Fraturas já ao nascimento e muito frequentes na infância, deformidades progressivas dos ossos longos (encurvamento) e da coluna (escoliose, cifose), face triangular, baixa estatura importante, invaginação basilar possível. Muitos pacientes dependem de cadeira de rodas.\n\n**Tratamento.** Bisfosfonatos (pamidronato, zoledronato) reduzem fraturas e dor; hastes intramedulares telescópicas (Fassier-Duval) corrigem deformidades e protegem os ossos longos; reabilitação.\n\n> OI tipo III: grave e deformante, compatível com a vida, dentinogênese imperfeita, escleras que clareiam.",
+  "correta": "**A: Certo.** A osteogênese imperfeita tipo III de Sillence é a forma grave e progressivamente deformante, mas compatível com a vida (diferente do tipo II, letal). Os pacientes frequentemente têm dentinogênese imperfeita, e as escleras, azuladas ao nascimento, tendem a se tornar mais claras com o tempo. O item descreve corretamente essas características.",
+  "incorretas": {
+   "B": "**Marcar errado seria confundir o tipo III com o tipo II, letal no período perinatal, ou com o tipo I, em que as escleras permanecem azuis por toda a vida.** A tendência de clarear as escleras é uma característica conhecida do tipo III."
+  },
+  "referencias": [
+   "Sillence DO, Senn A, Danks DM. Genetic heterogeneity in osteogenesis imperfecta. J Med Genet. 1979;16(2):101-116.",
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Osteogênese imperfeita."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "pediatria-0901": {
+  "conceito": "**Previsão da marcha na paralisia cerebral.** Pais frequentemente perguntam se a criança vai andar. Alguns marcos motores ajudam a responder.\n\n**Sentar sem apoio.** É o preditor clássico mais usado.\n- Criança que **senta de forma independente até os 2 anos** tem **bom prognóstico** para deambulação (independente ou com auxílio).\n- Criança que **não senta até os 4 anos** tem **prognóstico ruim** para deambulação funcional.\n- Entre 2 e 4 anos, o prognóstico é intermediário (Molnar e Gordon; Wu e colaboradores).\n\n**Reflexos primitivos (Bleck).** A persistência de reflexos primitivos após 1 ano (Moro, tônico cervical assimétrico, tônico cervical simétrico, extensor do pescoço, apoio) e a ausência da reação de paraquedas são sinais desfavoráveis. Dois ou mais desses sinais indicam prognóstico ruim para marcha.\n\n**Classificação GMFCS.** Hoje, o sistema de classificação da função motora grossa (níveis I a V) é a principal ferramenta para prever a função motora futura. Níveis I e II andam sem auxílio; III anda com dispositivo; IV e V dependem de cadeira de rodas.\n\n**Tipo de paralisia.** Hemiplégicos quase sempre andam; diplégicos geralmente andam; quadriplégicos têm o pior prognóstico.\n\n| Marco | Interpretação |\n|---|---|\n| Senta sem apoio até 2 anos | Bom prognóstico de marcha |\n| Não senta até 4 anos | Prognóstico ruim |\n| Reflexos primitivos após 1 ano | Desfavorável |\n\n> Sentar até os 2 anos prevê boa marcha; não sentar até os 4 anos prevê marcha improvável.",
+  "correta": "**B: Errado.** O bom preditor de deambulação é sentar de forma independente **até os 2 anos**. A idade de 4 anos é usada como limite de mau prognóstico: a criança que **não** senta até os 4 anos raramente desenvolve marcha funcional. Sentar apenas aos 4 anos não é, portanto, um bom preditor de deambulação independente.",
+  "incorretas": {
+   "A": "**Marcar certo é trocar as duas idades de referência.** O marco de 2 anos indica bom prognóstico; o de 4 anos marca o limite a partir do qual a ausência de equilíbrio sentado torna a marcha improvável. Uma criança que só senta aos 4 anos tem prognóstico, no máximo, reservado."
+  },
+  "referencias": [
+   "Molnar GE, Gordon SU. Cerebral palsy: predictive value of selected clinical signs for early prognostication of motor function. Arch Phys Med Rehabil. 1976;57(4):153-158.",
+   "Wu YW, Day SM, Strauss DJ, Shavelle RM. Prognosis for ambulation in cerebral palsy: a population-based study. Pediatrics. 2004;114(5):1264-1271."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  }
 }

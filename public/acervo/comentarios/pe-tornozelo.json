@@ -4062,5 +4062,31 @@
   ],
   "geradoEm": "2026-10-05",
   "conferido": false
+ },
+ "pe-tornozelo-0384": {
+  "conceito": "**Anatomia patológica do pé torto congênito.** Entender a posição dos ossos explica o método de Ponseti. A chave é que o **tálus** fica relativamente fixo na pinça do tornozelo, e os outros ossos do tarso giram ao redor dele em direção **medial**.\n\n**Posição dos ossos.**\n- **Tálus**: em flexão plantar (equino), com o **colo e a cabeça desviados medial e plantarmente**. É o osso mais deformado intrinsecamente.\n- **Navicular**: deslocado **medialmente** sobre a cabeça do tálus, às vezes quase encostando no maléolo medial.\n- **Calcâneo**: aduzido, invertido e em equino, girado **medialmente** sob o tálus (a parte anterior vai para medial e para baixo da cabeça do tálus).\n- **Cuboide**: desviado medialmente em relação ao calcâneo.\n\n**Consequência para o tratamento.** Como o navicular, o calcâneo e o cuboide estão desviados para medial, a correção consiste em levá-los para lateral, girando o pé em abdução em torno da cabeça do tálus. Por isso, no Ponseti, o polegar do médico fica sobre a **face lateral da cabeça do tálus**, como fulcro, enquanto o pé supinado é abduzido.\n\n| Osso | Posição no pé torto |\n|---|---|\n| Tálus | Equino, colo desviado medial e plantar |\n| Navicular | Medial |\n| Calcâneo | Aduto, varo, equino (girado medialmente) |\n| Cuboide | Medial |\n\n> No pé torto, os ossos do tarso giram para medial ao redor do tálus.",
+  "correta": "**B: Errado.** No pé torto congênito, o navicular e o calcâneo estão desviados **medialmente** (e o calcâneo também invertido e em equino) em relação ao tálus, não lateralmente. O tálus é, de fato, o osso com maior deformidade intrínseca, com o colo desviado medial e plantarmente. O erro do item está na direção do deslocamento.",
+  "incorretas": {
+   "A": "**Marcar certo é aceitar o item pela parte verdadeira (o tálus é o mais deformado) e não perceber a direção errada.** Um deslocamento lateral dos ossos do tarso seria característico de deformidades em valgo, como o pé talo vertical, e não do pé torto, que é aduto e varo."
+  },
+  "referencias": [
+   "Ponseti IV. Congenital Clubfoot: Fundamentals of Treatment. Oxford University Press; 1996.",
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Pé torto congênito."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "pe-tornozelo-0385": {
+  "conceito": "**Tenotomia do tendão calcâneo no método de Ponseti.** Depois de corrigir o cavo, o aduto e o varo com os gessos seriados, resta o equino. Se a dorsiflexão do tornozelo não ultrapassa cerca de 15 graus (com o pé já abduzido em cerca de 60 a 70 graus), faz-se a **tenotomia percutânea do tendão calcâneo**.\n\n**Como é feita.** Sob anestesia local (ou sedação leve), com lâmina pequena, a cerca de 1 a 1,5 cm acima da inserção no calcâneo. Em seguida, aplica-se um gesso em dorsiflexão e abdução por cerca de 3 semanas; o tendão se regenera em comprimento maior nesse período.\n\n**Frequência.** É necessária na **maioria** das crianças, em torno de 80% a 90% das séries, mas **não em todas**. Pés mais flexíveis e menos graves podem atingir dorsiflexão suficiente apenas com os gessos.\n\n**Faz parte do método.** Apesar de ser um pequeno procedimento cirúrgico, é considerada parte integrante do tratamento de Ponseti, que é chamado de conservador por evitar as liberações cirúrgicas extensas (posteromedial e lateral) usadas no passado.\n\n**Etapas finais.** Após o gesso pós-tenotomia, inicia-se a órtese de abdução (Denis Browne), essencial para evitar recidivas. Recidivas tardias podem exigir novos gessos, nova tenotomia ou transferência do tibial anterior para o terceiro cuneiforme.\n\n> A tenotomia faz parte do Ponseti e é feita na maioria, não em todas as crianças.",
+  "correta": "**B: Errado.** A tenotomia percutânea do tendão calcâneo faz parte do método de Ponseti, mas não é necessária em todas as crianças. Ela é indicada quando o equino residual impede dorsiflexão de pelo menos 15 graus após a correção das outras deformidades, o que ocorre em cerca de 80% a 90% dos casos. Pés mais flexíveis podem ser corrigidos apenas com os gessos.",
+  "incorretas": {
+   "A": "**Marcar certo é aceitar o item pela primeira parte.** De fato, a tenotomia integra o protocolo e é muito frequente, o que torna o item plausível. O erro está no termo \"todas\": a indicação depende da dorsiflexão obtida após os gessos."
+  },
+  "referencias": [
+   "Ponseti IV. Congenital Clubfoot: Fundamentals of Treatment. Oxford University Press; 1996.",
+   "Morcuende JA, Dolan LA, Dietz FR, Ponseti IV. Radical reduction in the rate of extensive corrective surgery for clubfoot using the Ponseti method. Pediatrics. 2004;113(2):376-380."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  }
 }
