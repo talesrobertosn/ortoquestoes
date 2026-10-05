@@ -6116,17 +6116,20 @@
   "conferido": false
  },
  "mao-0598": {
+  "conceito": "**Fraturas da falange média e o papel dos tendões.** A deformidade de uma fratura de falange depende das **forças musculares** que atuam sobre cada fragmento. Na falange média, duas estruturas importam:\n- O **flexor superficial dos dedos (FSD)** insere-se por duas bandeletas na **face volar** de grande parte da diáfise da falange média (porção proximal e média).\n- A **banda central** do aparelho extensor insere-se na **base dorsal** da falange média.\n\n**O que acontece conforme a posição do traço.**\n\n| Traço em relação ao FSD | Fragmento proximal | Fragmento distal | Ápice |\n|---|---|---|---|\n| **Distal à inserção do FSD** | **Fletido** pelo FSD | Estendido pelo extensor terminal (via falange distal) | **Volar** |\n| Proximal à inserção do FSD | Estendido pela banda central | **Fletido** pelo FSD | **Dorsal** |\n| Sobre a inserção | Forças variáveis | | Imprevisível |\n\n**Por que o traço distal dá ápice volar.** Se o traço está **abaixo** da inserção do FSD, o fragmento **proximal** carrega o FSD e é puxado em flexão, enquanto o fragmento distal fica livre; o foco forma um ângulo com a ponta voltada para a palma.\n\n**Comparação com a falange proximal.** Na falange proximal, os **interósseos** (na base) fletem o fragmento proximal e a banda central estende o distal, produzindo deformidade com **ápice volar**, que é a regra.\n\n**Tratamento.** Fraturas estáveis e alinhadas: tala com mobilização precoce (buddy taping). Instáveis, anguladas ou com rotação: redução e fixação (fios percutâneos, parafusos, placas de baixo perfil), sempre conferindo a **rotação** (dedos não podem se cruzar na flexão).\n\n> Falange média: traço distal ao flexor superficial dá ápice volar; traço proximal dá ápice dorsal.",
+  "correta": "**B: distal à inserção do flexor superficial do dedo (resposta pela bibliografia).** Com o traço abaixo da inserção do FSD, o fragmento proximal é fletido pelo tendão, e o foco angula com ápice volar.",
+  "incorretas": {
+   "A": "**Em qualquer posição** está errado: a direção do ápice depende de onde o traço está em relação à inserção do FSD.",
+   "C": "**Sobre a inserção** produz forças variáveis e deformidade imprevisível, não o ápice volar característico.",
+   "D": "**Proximal à inserção** produz ápice **dorsal**: a banda central estende o fragmento proximal e o FSD flete o distal."
+  },
+  "referencias": [
+   "Green DP, Hotchkiss RN, Pederson WC, Wolfe SW. Green's operative hand surgery. 5th ed. Philadelphia: Elsevier Churchill Livingstone; 2005.",
+   "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed."
+  ],
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "B",
-  "conceito": "**Forças na falange média.** O flexor superficial se insere em quase toda a face volar da falange média, e a banda central do extensor, na base dorsal. A posição do traço em relação à inserção do flexor superficial decide o desvio.\n\n**Distal à inserção**, o fragmento proximal é fletido pelo flexor superficial e o ápice fica volar. **Proximal à inserção**, o fragmento distal é fletido e o ápice fica dorsal.\n\n**Na prova:** falange média distal ao superficial dá ápice volar; proximal dá ápice dorsal.",
-  "correta": "**Distal à inserção do flexor superficial.** O fragmento proximal é fletido pelo tendão, e a fratura angula com ápice volar.",
-  "incorretas": {
-   "A": "**Em qualquer posição.** O desvio depende da posição do traço em relação ao tendão.",
-   "C": "**Sobre a inserção.** Não define um padrão característico de ápice volar.",
-   "D": "**Proximal à inserção.** Nesse caso o ápice é dorsal, porque o fragmento distal é fletido."
-  },
-  "referencias": [],
-  "geradoEm": "2026-09-30T23:58:02+00:00",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0599": {

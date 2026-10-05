@@ -4478,14 +4478,18 @@
   "conferido": false
  },
  "pediatria-0411": {
-  "conceito": "### Evolução angular fisiológica (Salenius)\n| Idade | Alinhamento |\n|---|---|\n| nascimento a 1,5-2 anos | ==varo== (máximo ao nascer) |\n| 1,5 a 2 anos | neutro |\n| ==3 a 4 anos== | ==valgo máximo== (cerca de 10 a 12°) |\n| 7 anos | valgo adulto (cerca de 5 a 7°) |\n\n### Sinais de patologia\n- Assimetria, deformidade fora da curva esperada, baixa estatura, dor, progressão.\n- Varo após 2 anos: Blount, raquitismo, displasias.\n- Valgo > 15° ou distância intermaleolar > 8 cm após 7 anos: investigar.\n\n### Tratamento do valgo patológico\n- ==Crescimento guiado== (placa em 8 medial) antes do fechamento fisário.\n\n> **Na prova:** valgo fisiológico máximo = ==por volta de 4 anos== (3 a 4).",
-  "correta": "**Dois a quatro anos.**\n- Valgo máximo por volta de 3 a 4 anos.\n- Estabiliza aos 7.",
+  "conceito": "**Evolução fisiológica do alinhamento do joelho.** O alinhamento dos membros inferiores muda bastante na infância, e conhecer a curva normal evita tratar o que é fisiológico. Salenius e Vankka mediram o ângulo tibiofemoral em crianças finlandesas e descreveram o padrão clássico.\n\n| Idade | Alinhamento |\n|---|---|\n| Nascimento | **Varo** (cerca de 15 graus), máximo ao nascer |\n| Cerca de 1,5 a 2 anos | **Neutro** |\n| **3 a 4 anos** | **Valgo máximo** (cerca de 10 a 12 graus) |\n| Cerca de 7 anos | Valgo do adulto (cerca de 5 a 7 graus) |\n\nHeath e Staheli estabeleceram limites normais por idade, úteis na consulta.\n\n**Por que essa sequência.** O varo do recém-nascido reflete a posição intrauterina; com o início da marcha e a carga, o crescimento da fise distal do fêmur e proximal da tíbia corrige o varo e \"ultrapassa\", gerando valgo, que depois se estabiliza.\n\n**Sinais de alerta (varo ou valgo patológico).**\n- **Assimetria** entre os lados.\n- Deformidade **fora da faixa etária** (varo após 2 anos; valgo acentuado após 7 anos).\n- **Progressão** em vez de melhora.\n- **Baixa estatura** ou outros sinais de displasia esquelética.\n- Dor, claudicação, deformidade localizada (angulação aguda).\n\n**Causas patológicas.** Varo: doença de Blount, raquitismo, displasias, sequela de fratura ou infecção. Valgo: raquitismo renal, sequela de fratura de Cozen, displasias, obesidade.\n\n**Conduta.** Fisiológico: orientação e observação. Patológico: investigar (radiografia panorâmica, exames metabólicos) e tratar a causa; hemiepifisiodese guiada para correção com o crescimento.\n\n> Joelho da criança: varo ao nascer, neutro por volta de 2 anos, valgo máximo aos 3 a 4 anos, alinhamento adulto por volta dos 7.",
+  "correta": "**B: dois e quatro anos.** O valgo fisiológico atinge o máximo por volta dos 3 a 4 anos (cerca de 10 a 12 graus) e depois diminui até o valgo do adulto por volta dos 7 anos.",
   "incorretas": {
-   "A": "**Varo fisiológico.**\n- Até cerca de 2 anos.",
-   "C": "**Diminuindo.**\n- Rumo ao adulto.",
-   "D": "**Adulto.**\n- Já estabilizado."
+   "A": "**Zero a dois anos** é o período do varo fisiológico, máximo ao nascer e neutralizando por volta de 2 anos.",
+   "C": "**Seis a oito anos** é quando o valgo já se reduziu ao padrão do adulto.",
+   "D": "**Oito a dez anos**: o alinhamento já é o do adulto; valgo acentuado nessa idade sugere causa patológica."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Salenius P, Vankka E. The development of the tibiofemoral angle in children. J Bone Joint Surg Am. 1975;57(2):259-261.",
+   "Heath CH, Staheli LT. Normal limits of knee angle in white children--genu varum and genu valgum. J Pediatr Orthop. 1993;13(2):259-262."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0412": {

@@ -707,14 +707,18 @@
   "conferido": false
  },
  "joelho-0062": {
-  "conceito": "### Dois planos para corrigir\n- **Coronal:** o varo (osteotomia valgizante).\n- **Sagital:** o **slope** tibial.\n\n### O slope e os cruzados\n- **Aumentar o slope** empurra a tíbia para **anterior** em relação ao fêmur com a carga: **ajuda o LCP** (compensa o sag posterior).\n- **Diminuir o slope** puxa a tíbia para posterior: **ajuda o LCA**.\n\nNa insuficiência do LCP com varo: ==corrigir o coronal e aumentar o slope==.\n\n### Na prática\n- Cunha de abertura **medial** com a abertura um pouco mais **anterior** aumenta o slope.\n- No **triplo varo** com hiperextensão (lesão posterolateral), aumentar o slope também controla o recurvato.\n\n> **Na prova:** varo + LCP insuficiente = osteotomia ==coronal + aumento do slope==.",
-  "correta": "**Coronal e aumentar a inclinação sagital.**",
+  "conceito": "**Osteotomia no joelho varo com lesão do LCP: corrigir em dois planos.** A osteotomia valgizante da tíbia proximal corrige o **varo** (plano **coronal**), aliviando o compartimento medial. Mas a tíbia proximal também tem uma inclinação no plano **sagital**, o **slope tibial** (inclinação posterior do platô, normalmente de 7 a 10 graus), que interfere na estabilidade anteroposterior.\n\n**O slope e os cruzados.**\n- **Aumentar o slope**: com a carga axial, o fêmur \"escorrega\" para trás no platô mais inclinado, ou seja, a **tíbia se desloca anteriormente** em relação ao fêmur. Isso **compensa a queda posterior** (sag) do joelho com **LCP insuficiente** e reduz a carga no enxerto do LCP. Por outro lado, sobrecarrega o LCA.\n- **Diminuir o slope**: a tíbia tende a ir para posterior com a carga, **protegendo o LCA** (útil no joelho com LCA insuficiente), mas piorando a instabilidade posterior.\n\nGiffin e colaboradores mostraram em cadáveres que aumentar o slope desloca a posição de repouso da tíbia anteriormente, e Noyes e colaboradores aplicaram esses conceitos às osteotomias associadas a lesões ligamentares.\n\n| Situação | Plano coronal | Plano sagital (slope) |\n|---|---|---|\n| Varo com **LCA** insuficiente | Valgizar | **Diminuir** o slope |\n| Varo com **LCP** insuficiente (e canto posterolateral) | Valgizar | **Aumentar** o slope |\n\n**Técnica.** Na osteotomia de abertura medial, a cunha mais aberta posteriormente diminui o slope e mais aberta anteriormente o aumenta; é preciso planejar a forma da cunha para não alterar o slope sem querer.\n\n**Associação frequente.** Varo com instabilidade posterolateral (LCP mais canto posterolateral) produz o \"varus thrust\" na marcha; a osteotomia deve preceder ou acompanhar a reconstrução ligamentar.\n\n> Varo com LCP insuficiente: valgizar e aumentar o slope; com LCA insuficiente: valgizar e diminuir o slope.",
+  "correta": "**D: coronal e aumentar a inclinação sagital da tíbia.** Corrige-se o varo no plano coronal e aumenta-se o slope, que desloca a tíbia anteriormente sob carga e compensa a translação posterior da insuficiência do LCP.",
   "incorretas": {
-   "A": "**Deixa o varo.**",
-   "B": "**Deixa o componente posterior.**",
-   "C": "**Invertido.**\n- Diminuir o slope ajuda o LCA, não o LCP."
+   "A": "**Sagital isoladamente** deixa o varo sem correção, mantendo a sobrecarga medial e o impulso em varo.",
+   "B": "**Coronal isoladamente** corrige o varo, mas desperdiça a oportunidade de compensar a instabilidade posterior pelo slope.",
+   "C": "**Coronal com diminuição do slope** é a estratégia para o joelho com **LCA** insuficiente; no LCP, pioraria a translação posterior."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Giffin JR, Vogrin TM, Zantop T, Woo SL, Harner CD. Effects of increasing tibial slope on the biomechanics of the knee. Am J Sports Med. 2004;32(2):376-382.",
+   "Noyes FR, Barber-Westin SD, Hewett TE. High tibial osteotomy and ligament reconstruction for varus angulated anterior cruciate ligament-deficient knees. Am J Sports Med. 2000;28(3):282-296."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "joelho-0064": {
@@ -1117,17 +1121,18 @@
   "conferido": false
  },
  "joelho-0097": {
-  "conceito": "O mecanismo de screw home corresponde ao movimento rotacional automático que acompanha os graus finais da extensão do joelho. Em cadeia cinética aberta, a tíbia realiza rotação lateral em relação ao fêmur; em cadeia fechada, o equivalente é a rotação medial do fêmur sobre a tíbia fixa. Esse fenômeno contribui para o travamento e a estabilidade do joelho em extensão.",
-  "correta": "C. A rotação lateral da tíbia em relação ao fêmur durante a extensão define o screw home em cadeia cinética aberta.",
+  "conceito": "**O mecanismo de screw home (parafuso) do joelho.** O joelho não é uma dobradiça simples: a flexão e a extensão acompanham-se de **rotação** e de **rolamento e deslizamento** dos côndilos sobre a tíbia. Nos **últimos 20 a 30 graus de extensão**, ocorre uma rotação automática que \"**trava**\" o joelho.\n\n**O que acontece.**\n- **Cadeia aberta** (pé livre): a tíbia **roda lateralmente** em relação ao fêmur nos graus finais da extensão.\n- **Cadeia fechada** (pé no chão): o equivalente é o **fêmur rodar medialmente** sobre a tíbia fixa.\n\n**Por que acontece.**\n- O **côndilo femoral medial** tem superfície articular mais **longa** que o lateral; ao terminar a extensão, o côndilo lateral já esgotou sua superfície, e o medial continua rolando, o que obriga a tíbia a girar lateralmente.\n- A tensão do **LCA** (e a forma do platô e dos meniscos) contribuem.\n\nHallén e Lindahl estudaram e mediram essa rotação.\n\n**Consequência: o joelho travado.** Em extensão completa com o screw home, os ligamentos ficam tensos e as superfícies, mais congruentes: o joelho fica estável com pouca atividade muscular (posição de repouso em pé).\n\n**Destravamento.** Para iniciar a flexão a partir da extensão completa, o **músculo poplíteo** roda a tíbia medialmente (ou o fêmur lateralmente em cadeia fechada), \"desaparafusando\" o joelho.\n\n**Clínica.** A perda do screw home (por exemplo, na lesão do LCA ou em artroplastias que não reproduzem a cinemática) altera a mecânica femoropatelar e a estabilidade.\n\n> Screw home: nos graus finais da extensão, a tíbia roda lateralmente sobre o fêmur (cadeia aberta), travando o joelho; o poplíteo destrava.",
+  "correta": "**C: rotação lateral da tíbia em relação ao fêmur durante a extensão.** Nos últimos graus de extensão, em cadeia aberta, a tíbia roda lateralmente (ou o fêmur medialmente em cadeia fechada), travando o joelho.",
   "incorretas": {
-   "A": "A lateralização patelar pode ocorrer durante o movimento femoropatelar, mas não define o mecanismo de screw home.",
-   "B": "A posteriorização da tíbia durante a flexão não corresponde ao componente rotacional automático do travamento terminal em extensão.",
-   "D": "O trato iliotibial participa da estabilidade lateral do joelho, porém a redução de uma subluxação anterior não é o fenômeno denominado screw home."
+   "A": "**Lateralização da patela na extensão** descreve o trilhamento patelar (sinal do J), não o screw home.",
+   "B": "**Posteriorização da tíbia na flexão** lembra o rolamento femoral posterior (rollback), outro fenômeno da cinemática do joelho.",
+   "D": "**Redução da subluxação pelo trato iliotibial** descreve o pivot shift, teste da lesão do LCA."
   },
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 7"
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 7",
+   "Hallén LG, Lindahl O. The \"screw-home\" movement in the knee-joint. Acta Orthop Scand. 1966;37(1):97-106."
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "joelho-0098": {
@@ -1160,17 +1165,18 @@
   "conferido": false
  },
  "joelho-0100": {
-  "conceito": "Na artroplastia total do joelho, a rotação do componente femoral influencia diretamente a geometria do espaço de flexão e a relação do componente com o aparelho extensor. Rotação inadequada pode produzir assimetria do espaço de flexão e alteração do tracking patelar. O espaço de extensão depende predominantemente das ressecções distais do fêmur e proximal da tíbia, e não da rotação femoral isoladamente.",
-  "correta": "C. A rotação adequada do componente femoral busca equilibrar o espaço de flexão e favorecer o tracking patelar.",
+  "conceito": "**Rotação do componente femoral na artroplastia total do joelho.** Na artroplastia, cada corte ósseo tem uma função. Os cortes **distal do fêmur** e **proximal da tíbia** definem o **espaço de extensão**. O corte **posterior dos côndilos**, cuja orientação depende da **rotação** do componente femoral, define o **espaço de flexão** junto com o corte tibial.\n\n**Por que a rotação importa.**\n- **Espaço de flexão retangular**: o corte tibial é perpendicular ao eixo mecânico, ou seja, em cerca de 3 graus de varo em relação à linha articular anatômica. Para que o espaço de flexão fique **retangular** (e não trapezoidal, mais aberto medial ou lateralmente), o componente femoral precisa ser colocado em cerca de **3 graus de rotação externa** em relação aos côndilos posteriores.\n- **Trilhamento patelar**: a rotação externa leva a tróclea para lateral, alinhando-a com a patela; a rotação interna medializa a tróclea e causa trilhamento patelar lateral, dor anterior e até luxação.\n\n**Referências para a rotação.**\n\n| Referência | Uso |\n|---|---|\n| **Eixo transepicondilar** | Paralelo à rotação ideal; Berger e colaboradores o propuseram como a referência mais confiável |\n| Côndilos posteriores | Rotação externa de cerca de 3 graus em relação a eles (cuidado no valgo, com hipoplasia do côndilo lateral) |\n| Linha de Whiteside (anteroposterior) | Perpendicular à rotação |\n| Técnica de balanceamento | Rotação ajustada para o espaço de flexão ficar retangular com os ligamentos tensionados |\n\n**Erros.** **Rotação interna** do componente femoral é a principal causa de complicação femoropatelar e de instabilidade em flexão; a rotação combinada (fêmur e tíbia) é o que mais pesa (Berger).\n\n> Rotação do componente femoral: define o espaço de flexão e o trilhamento patelar; o espaço de extensão depende dos cortes distais.",
+  "correta": "**C: espaço de flexão e tracking patelar.** A rotação do componente femoral orienta o corte dos côndilos posteriores, que define o espaço de flexão, e posiciona a tróclea, que define o trilhamento da patela.",
   "incorretas": {
-   "A": "O espaço de flexão é influenciado pela rotação femoral, mas o ângulo Q não é o segundo objetivo principal utilizado para definir essa rotação.",
-   "B": "A rotação femoral não é determinada primariamente para equilibrar o espaço de extensão nem o ângulo Q.",
-   "D": "O tracking patelar é relevante, porém o espaço associado à rotação femoral é o de flexão, não o de extensão."
+   "A": "**Espaço de flexão e ângulo Q**: o espaço de flexão está certo, mas o ângulo Q depende da posição da tuberosidade e do componente tibial, não diretamente da rotação femoral.",
+   "B": "**Espaço de extensão e ângulo Q**: o espaço de extensão é definido pelos cortes distal do fêmur e proximal da tíbia, não pela rotação femoral.",
+   "D": "**Espaço de extensão e tracking patelar**: o tracking está certo, mas o espaço de extensão não depende da rotação femoral."
   },
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 7"
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 7",
+   "Berger RA, Rubash HE, Seel MJ, Thompson WH, Crossett LS. Determining the rotational alignment of the femoral component in total knee arthroplasty using the epicondylar axis. Clin Orthop Relat Res. 1993;(286):40-47."
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "joelho-0101": {
@@ -1593,17 +1599,18 @@
   "conferido": false
  },
  "joelho-0136": {
-  "conceito": "Os ligamentos meniscofemorais (ligamentos de Wrisberg e Humphry) conectam o côndilo femoral medial ao corno posterior do menisco lateral, correndo próximos à origem femoral do ligamento cruzado posterior. Atuam como restritores secundários da translação posterior da tíbia, complementando a função do LCP, especialmente quando este está insuficiente.",
-  "correta": "C. Os ligamentos meniscofemorais são restritores secundários da translação posterior da tíbia e se inserem no corno posterior do menisco lateral.",
+  "conceito": "**Ligamentos meniscofemorais.** São dois feixes que ligam o **corno posterior do menisco lateral** à face lateral do **côndilo femoral medial**, passando junto ao ligamento cruzado posterior (LCP):\n- **Humphry**: passa **à frente** (anterior) do LCP.\n- **Wrisberg**: passa **atrás** (posterior) do LCP.\n\nPelo menos um deles está presente na grande maioria dos joelhos.\n\n**Funções.**\n- **Restritores secundários da translação posterior** da tíbia: correm paralelos ao LCP e reforçam a resistência à gaveta posterior, sobretudo quando o LCP está lesado. Gupte e colaboradores demonstraram essa contribuição em cadáveres.\n- **Estabilizam o corno posterior do menisco lateral**, tracionando-o para frente e para dentro na flexão, o que mantém o menisco congruente e o protege de ser esmagado.\n\n**Implicações clínicas.**\n- Explicam por que alguns pacientes com **lesão isolada do LCP** têm gaveta posterior menor que a esperada.\n- Na **ressonância**, podem simular lesão do corno posterior do menisco lateral (pseudorrotura) ou um corpo livre.\n- Nas lesões da **raiz posterior do menisco lateral** (frequentes com o LCA), um ligamento meniscofemoral íntegro pode limitar a extrusão.\n- O **menisco de Wrisberg** (variante discoide sem ligamento coronário posterior, preso só pelo Wrisberg) é instável e causa o \"joelho que estala\".\n\n**Comparação.**\n\n| Estrutura | Inserção | Restringe |\n|---|---|---|\n| **Ligamentos meniscofemorais** | **Corno posterior do menisco lateral** ao côndilo femoral medial | **Translação posterior** (secundária) |\n| LCP | Tíbia posterior ao côndilo femoral medial | Translação posterior (primária) |\n\n> Meniscofemorais (Humphry e Wrisberg): do corno posterior do menisco lateral ao côndilo medial; restritores secundários da translação posterior.",
+  "correta": "**C: posterior da tíbia e se inserem no corno posterior do menisco lateral.** Os ligamentos de Humphry e Wrisberg ligam o corno posterior do menisco lateral ao côndilo femoral medial, acompanhando o LCP, e reforçam a resistência à translação posterior da tíbia.",
   "incorretas": {
-   "A": "Os ligamentos meniscofemorais não restringem a translação anterior da tíbia; essa função é atribuída principalmente ao ligamento cruzado anterior.",
-   "B": "Além do erro quanto à direção da translação restringida, esses ligamentos se inserem no menisco lateral, não no menisco medial.",
-   "D": "Os ligamentos meniscofemorais se inserem no corno posterior do menisco lateral, não do menisco medial."
+   "A": "**Translação anterior com inserção no menisco lateral**: a inserção está certa, mas a função é contra a translação posterior, paralela ao LCP.",
+   "B": "**Translação anterior com inserção no menisco medial** erra a função e a inserção.",
+   "D": "**Translação posterior com inserção no menisco medial**: a função está certa, mas os meniscofemorais se inserem no menisco lateral."
   },
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 45"
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 45",
+   "Gupte CM, Bull AM, Thomas RD, Amis AA. The meniscofemoral ligaments: secondary restraints to the posterior drawer. Analysis of anteroposterior and rotary laxity in the intact and posterior-cruciate-deficient knee. J Bone Joint Surg Br. 2003;85(5):765-773."
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "joelho-0137": {
