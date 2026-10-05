@@ -1271,19 +1271,20 @@
   "conferido": false
  },
  "pediatria-0088": {
-  "conceito": "### Índice de migração de Reimers\n- Porcentagem da ==cabeça femoral lateral à linha de Perkins==.\n\n| Valor | Conduta (PC) |\n|---|---|\n| < 30% | vigilância |\n| 30 a 40% | liberação de partes moles (adutores, psoas) |\n| > 40 a 60% | osteotomia femoral varizante ± pélvica (Dega) |\n| luxado doloroso | salvamento |\n\n- Vigilância radiográfica anual a partir de 2 anos, maior risco em ==GMFCS IV e V==.\n\n### Outros índices do quadril\n| Índice | O que mede |\n|---|---|\n| Wiberg | ângulo centro-borda (cobertura) |\n| Perkins | linha vertical pela borda do acetábulo |\n| Hilgenreiner | linha horizontal pelas trirradiadas |\n| índice acetabular | inclinação do teto |\n\n> **Na prova:** porcentagem da cabeça fora da linha de Perkins = ==Reimers==.",
-  "correta": "**Reimers.**\n- Índice de migração da cabeça femoral.\n- Guia a vigilância do quadril na PC.",
+  "conceito": "**Índice de migração de Reimers.** Na **paralisia cerebral**, o quadril nasce normal e se desloca progressivamente pela espasticidade dos adutores e flexores e pela falta de carga. A vigilância radiográfica mede quanto da cabeça femoral já saiu do acetábulo.\n\n**Como medir (o que a figura mostra).** Na radiografia AP da pelve, traça-se a **linha de Hilgenreiner** (horizontal, pelas cartilagens trirradiadas) e a **linha de Perkins** (vertical, pela borda lateral do acetábulo). Mede-se a **largura total da cabeça** e a parte da cabeça que está **lateral à linha de Perkins**. O índice de **Reimers** é:\n\nporcentagem de migração = parte lateral à linha de Perkins / largura total da cabeça × 100\n\nReimers estudou a estabilidade do quadril e os resultados da cirurgia de partes moles na paralisia cerebral.\n\n**Interpretação e conduta.**\n\n| Índice de migração | Conduta usual |\n|---|---|\n| Menor que 30% | Vigilância |\n| 30% a 40% (ou progressão de mais de 10% ao ano) | Liberação de partes moles (adutores, psoas) |\n| Acima de 40% a 60% | Osteotomia femoral varizante e derrotativa, com ou sem acetabuloplastia (Dega) |\n| Luxado e doloroso, irreconstruível | Procedimentos de salvamento |\n\n**Vigilância.** Radiografia a cada 6 a 12 meses a partir dos 2 anos, com maior risco nos níveis **GMFCS IV e V** (não deambuladores), conforme as diretrizes de vigilância do quadril.\n\n**As outras medidas.**\n- **Wiberg**: ângulo centro-borda (CE), cobertura da cabeça em adultos e adolescentes.\n- **Perkins** e **Hilgenreiner**: linhas de referência usadas para construir o índice e para avaliar a displasia, não índices em si.\n\n> Porcentagem da cabeça femoral lateral à linha de Perkins: índice de migração de Reimers.",
+  "correta": "**C: REIMERS.** A figura mostra a porção da cabeça femoral lateral à linha de Perkins em relação à largura total da cabeça, que é o índice de migração de Reimers.",
   "incorretas": {
-   "A": "**Centro-borda.**\n- Cobertura acetabular.",
-   "B": "**Linha.**\n- Usada no cálculo, não o índice.",
-   "D": "**Linha horizontal.**\n- Hilgenreiner."
+   "A": "**Wiberg** descreveu o ângulo centro-borda, que mede a cobertura lateral da cabeça, não a porcentagem de migração.",
+   "B": "**Perkins** dá nome à linha vertical pela borda lateral do acetábulo, usada como referência para o índice de Reimers.",
+   "D": "**Hilgenreiner** dá nome à linha horizontal pelas cartilagens trirradiadas, também referência, não o índice."
   },
   "referencias": [
    "Hip surveillance and management in cerebral palsy. https://pmc.ncbi.nlm.nih.gov/articles/PMC3838516/",
    "Hip displacement in CP: current concepts review. https://pmc.ncbi.nlm.nih.gov/articles/PMC11342852/",
-   "Radiological assessment of hip disease in CP. https://pmc.ncbi.nlm.nih.gov/articles/PMC10618048/"
+   "Radiological assessment of hip disease in CP. https://pmc.ncbi.nlm.nih.gov/articles/PMC10618048/",
+   "Reimers J. The stability of the hip in children. A radiological study of the results of muscle surgery in cerebral palsy. Acta Orthop Scand Suppl. 1980;184:1-100."
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0089": {
@@ -2521,14 +2522,18 @@
   "conferido": false
  },
  "pediatria-0193": {
-  "conceito": "### Pé cavo-varo na criança\n- Investigar ==causa neurológica== (Charcot-Marie-Tooth, medula presa, Friedreich): RM de coluna, ENMG.\n- ==Teste de Coleman== (bloco): retropé flexível se corrige quando o 1º raio fica solto.\n\n### Osteotomias\n| Técnica | Local | Corrige |\n|---|---|---|\n| ==Dwyer== | ==calcâneo== (cunha lateral de fechamento ou deslizamento) | ==varo do retropé== rígido |\n| Cole | cunha dorsal no mediopé (cuneiformes/navicular) | cavo anterior |\n| Japas | osteotomia em V do mediopé | cavo |\n| osteotomia do 1º MT | dorsiflexora | 1º raio plantarfletido |\n| Steindler | ==liberação da fáscia plantar== | cavo (partes moles) |\n\n> **Na prova:** osteotomia do calcâneo para varo do retropé = ==Dwyer==.",
-  "correta": "**Dwyer.**\n- Osteotomia do calcâneo para o varo rígido.\n- Cunha lateral ou deslizamento lateral.",
+  "conceito": "**Pé cavo varo na criança e a osteotomia de Dwyer.** O pé cavo varo infantil é, na maioria das vezes, **neurológico** (Charcot-Marie-Tooth, medula presa, ataxia de Friedreich, sequela de poliomielite): sempre investigar com exame neurológico, ressonância da coluna e eletroneuromiografia quando indicado.\n\n**Avaliar a flexibilidade do retropé: o teste de Coleman.** Com um bloco sob a borda lateral do pé, deixando o primeiro raio (em flexão plantar) cair para fora do bloco, observa-se o calcâneo por trás. Se o varo **corrige**, o retropé é **flexível** e o varo é causado pelo antepé (tratar o antepé); se **não corrige**, o varo do retropé é **rígido** e precisa ser corrigido diretamente no calcâneo (Coleman e Chesnut).\n\n**Lendo a imagem.** A figura mostra o **calcâneo** visto por trás, com uma **cunha de base lateral** marcada (área sombreada) e, depois, a cunha retirada e o fragmento posterior inclinado e fixado: a tuberosidade passa do varo para posição neutra ou leve valgo. É a **osteotomia de Dwyer**, que Dwyer descreveu para o pé cavo.\n\n**Osteotomias e procedimentos no pé cavo.**\n\n| Técnica | Local | Corrige |\n|---|---|---|\n| **Dwyer** | **Calcâneo** (cunha de fechamento lateral ou deslizamento lateral) | **Varo rígido do retropé** |\n| Cole | Cunha dorsal no **mediopé** (navicular e cuneiformes até o cuboide) | Cavo do mediopé |\n| Japas | Osteotomia em **V** no mediopé | Cavo do mediopé, sem encurtar o pé |\n| Steindler | **Liberação da fáscia plantar** e da musculatura plantar no calcâneo (partes moles) | Componente plantar do cavo |\n| Osteotomia do primeiro metatarsal | Base do primeiro metatarsal (dorsiflexão) | Flexão plantar do primeiro raio |\n\n**Sequência típica.** Liberação plantar (Steindler), osteotomia de dorsiflexão do primeiro metatarsal, transferências (fibular longo para curto, tibial posterior para o dorso), e Dwyer se o retropé for rígido; tríplice artrodese nos casos graves e maduros.\n\n> Cunha lateral no calcâneo para corrigir o varo rígido do retropé: osteotomia de Dwyer.",
+  "correta": "**C: DWYER.** A imagem mostra a ressecção de uma cunha de base lateral no calcâneo, com fechamento que leva a tuberosidade do varo para o neutro: é a osteotomia de Dwyer.",
   "incorretas": {
-   "A": "**Mediopé.**\n- Cunha dorsal para o cavo.",
-   "B": "**Mediopé.**\n- Osteotomia em V.",
-   "D": "**Partes moles.**\n- Fasciotomia plantar."
+   "A": "**Cole** é uma osteotomia em cunha dorsal no **mediopé**, que corrige o cavo do mediopé, não o varo do calcâneo.",
+   "B": "**Japas** é uma osteotomia em **V** no mediopé para o cavo, preservando o comprimento do pé; não atua no calcâneo.",
+   "D": "**Steindler** é uma liberação de **partes moles** plantares (fáscia e músculos na origem do calcâneo), não uma osteotomia."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Dwyer FC. Osteotomy of the calcaneum for pes cavus. J Bone Joint Surg Br. 1959;41-B(1):80-86.",
+   "Coleman SS, Chesnut WJ. A simple test for hindfoot flexibility in the cavovarus foot. Clin Orthop Relat Res. 1977;(123):60-62."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0194": {
@@ -10334,39 +10339,48 @@
   "conferido": false
  },
  "pediatria-0844": {
-  "conceito": "No adolescente com **fise aberta**, a **haste intramedular rígida com entrada na fossa piriforme** é contraindicada: o ponto de entrada fica junto aos ramos da **artéria circunflexa femoral medial**, que irrigam a cabeça do fêmur, com risco de **osteonecrose**.\n\n**Opções seguras por idade e peso**: hastes flexíveis de titânio (criança menor e mais leve), placa submuscular (fraturas instáveis ou paciente pesado) e haste rígida com **entrada trocantérica lateral** (adolescente maior).\n\n**Na prova**: fise aberta = **nunca entrada piriforme**.",
-  "correta": "A entrada piriforme lesa a irrigação da cabeça femoral e pode causar osteonecrose no adolescente com fise aberta.",
+  "conceito": "**Fratura da diáfise do fêmur no adolescente: por que evitar a fossa piriforme.** No adolescente com **fise aberta**, a escolha do implante depende do peso, da idade e do padrão da fratura, mas há uma contraindicação firme: a **haste rígida com entrada na fossa piriforme**.\n\n**A irrigação da cabeça femoral na criança.** Depende quase só dos **vasos retinaculares**, ramos do **ramo profundo da artéria circunflexa femoral medial**, que sobem pela **face posterior e superior do colo**, passando junto à **fossa piriforme** (fossa trocantérica) e penetrando a cápsula. Enquanto a fise está aberta, praticamente não há contribuição da artéria do ligamento redondo nem da circulação metafisária através da fise.\n\n**O risco.** Fresar e introduzir uma haste rígida pela fossa piriforme pode **lesar esses vasos**, causando **osteonecrose da cabeça femoral**, complicação devastadora no adolescente. MacNeil e colaboradores, em revisão sistemática, mostraram taxa de necrose de cerca de 2% com entrada piriforme, contra taxas muito menores com entrada trocantérica lateral.\n\n**Opções seguras.**\n\n| Opção | Indicação |\n|---|---|\n| Hastes flexíveis de titânio | Crianças de 5 a 11 anos, até cerca de 45 a 50 kg, fraturas estáveis |\n| Placa submuscular em ponte | Fraturas instáveis, cominutivas, pacientes maiores |\n| **Haste rígida de entrada trocantérica lateral** | Adolescentes maiores e mais pesados (acima de 11 anos ou 50 kg) |\n| Fixador externo | Fraturas expostas, politrauma |\n\nFlynn e Schwend revisaram esse algoritmo por idade e peso.\n\n**Outro cuidado com a haste trocantérica.** O ponto de entrada no trocânter maior pode lesar a apófise trocantérica e causar coxa valga ou estreitamento do colo; por isso, entra-se lateralmente e usam-se hastes desenhadas para esse ponto.\n\n> Adolescente com fise aberta: não usar haste rígida pela fossa piriforme, pelo risco de osteonecrose da cabeça femoral.",
+  "correta": "**D: hastes rígidas com entrada na fossa piriforme.** O ponto de entrada fica junto aos vasos retinaculares da circunflexa femoral medial, única irrigação importante da cabeça femoral com a fise aberta; lesá-los causa osteonecrose.",
   "incorretas": {
-   "A": "A placa submuscular é uma opção aceita, sobretudo nas fraturas instáveis ou no paciente pesado.",
-   "B": "As hastes flexíveis são o padrão nas crianças em idade escolar e nos adolescentes mais leves.",
-   "C": "A entrada trocantérica lateral foi criada justamente para poupar a irrigação da cabeça femoral."
+   "A": "**Placas submusculares** são opção segura, especialmente em fraturas instáveis ou cominutivas.",
+   "B": "**Hastes flexíveis de titânio** são o padrão em crianças em idade escolar e mais leves; menos indicadas em adolescentes pesados, mas não contraindicadas.",
+   "C": "**Hastes rígidas com entrada trocantérica lateral** evitam a fossa piriforme e são opção segura em adolescentes maiores."
   },
-  "referencias": [],
-  "geradoEm": "2026-10-04T17:01:01+00:00",
+  "referencias": [
+   "MacNeil JA, Francis A, El-Hawary R. A systematic review of rigid, locked, intramedullary nail insertion sites and avascular necrosis of the femoral head in the skeletally immature. J Pediatr Orthop. 2011;31(4):377-380.",
+   "Flynn JM, Schwend RM. Management of pediatric femoral shaft fractures. J Am Acad Orthop Surg. 2004;12(5):347-359."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0845": {
-  "conceito": "As **avulsões das apófises da pelve** acontecem no adolescente atleta por **contração violenta** do músculo que se insere na apófise ainda aberta.\n\n**Cada apófise e seu músculo**:\n- **Espinha ilíaca anteroinferior**: **reto femoral** (cabeça direta), no chute (futebol).\n- **Espinha ilíaca anterossuperior**: **sartório** (e tensor da fáscia lata), na corrida de velocidade.\n- **Tuberosidade isquiática**: **isquiotibiais**, comum em ginastas e velocistas.\n- **Trocânter menor**: iliopsoas.\n\n**Tratamento**: quase sempre conservador.\n\n**Na prova**: EIAI = **reto femoral**, no **chute**.",
-  "correta": "O reto femoral se insere na espinha ilíaca anteroinferior e a arranca no chute, típico do futebol.",
+  "conceito": "**Fraturas por avulsão das apófises da pelve.** No adolescente, as **apófises** (centros de ossificação onde se inserem músculos) ainda estão **abertas** e são o ponto mais fraco da unidade músculo-tendão-osso. Uma **contração muscular violenta e súbita**, sobretudo excêntrica ou contra resistência, arranca a apófise em vez de romper o músculo. Atinge principalmente meninos de 13 a 17 anos em esportes de explosão.\n\n**Cada apófise, seu músculo e seu esporte.**\n\n| Apófise | Músculo | Gesto típico |\n|---|---|---|\n| **Espinha ilíaca anteroinferior** | **Reto femoral** (cabeça direta) | **Chute** no **futebol** |\n| Espinha ilíaca anterossuperior | **Sartório** e tensor da fáscia lata | Arrancada na corrida de velocidade |\n| **Tuberosidade isquiática** (a mais comum em várias séries) | **Isquiotibiais** | Espacate, salto com barreira, ginástica, dança |\n| Trocânter menor | Iliopsoas | Flexão do quadril contra resistência |\n| Crista ilíaca | Abdominais | Mudança brusca de direção |\n\nRossi e Dragoni, em grande série de atletas adolescentes, descreveram a distribuição das avulsões por local e esporte, com o futebol entre os esportes mais associados.\n\n**Quadro.** Dor súbita com estalo durante o gesto esportivo, dor à palpação da apófise, dor à contração contra resistência e ao alongamento do músculo. Radiografia (ou ultrassom) mostra o fragmento.\n\n**Tratamento.** Quase sempre **conservador**: repouso, muletas, posição que relaxa o músculo, retorno gradual em 6 a 12 semanas. Cirurgia para desvios grandes (mais de 1,5 a 2 cm, sobretudo na tuberosidade isquiática) ou pseudartrose sintomática.\n\n**Cuidado.** A formação de calo abundante pode simular tumor (osteossarcoma) na radiografia tardia; a história de trauma esclarece.\n\n> Espinha ilíaca anteroinferior: reto femoral, no chute do futebol; anterossuperior: sartório; isquiática: isquiotibiais.",
+  "correta": "**D: reto femoral, em jogadores de futebol.** A cabeça direta do reto femoral insere-se na espinha ilíaca anteroinferior; a contração explosiva do chute arranca a apófise no adolescente.",
   "incorretas": {
-   "A": "O sartório se insere na espinha ilíaca anterossuperior, e ginastas lesam mais a tuberosidade isquiática.",
-   "B": "O músculo está certo, mas o gesto típico é o chute do jogador de futebol.",
-   "C": "O sartório arranca a espinha ilíaca anterossuperior, não a anteroinferior."
+   "A": "**Sartório em ginastas**: o sartório insere-se na espinha ilíaca anterossuperior, não na anteroinferior.",
+   "B": "**Reto femoral em ginastas**: o músculo está certo, mas o gesto típico é o chute no futebol; em ginastas, é mais comum a avulsão da tuberosidade isquiática.",
+   "C": "**Sartório em jogadores de futebol**: o sartório arranca a espinha ilíaca anterossuperior, não a anteroinferior."
   },
-  "referencias": [],
-  "geradoEm": "2026-10-04T17:01:01+00:00",
+  "referencias": [
+   "Rossi F, Dragoni S. Acute avulsion fractures of the pelvis in adolescent competitive athletes: prevalence, location and sports distribution of 203 cases collected. Skeletal Radiol. 2001;30(3):127-131.",
+   "Rockwood C.A. et al. Fractures in Children. Philadelphia: Lippincott. 6ª ed."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0846": {
-  "conceito": "A fratura mais associada à **luxação do cotovelo na criança** é a do **epicôndilo medial**: até metade das luxações traz essa avulsão.\n\n**O mecanismo**: na luxação em valgo, os flexo-pronadores e o ligamento colateral medial arrancam a apófise do epicôndilo medial.\n\n**O que olhar na imagem**: o fragmento pode ficar **encarcerado na articulação** depois da redução (seta), o que obriga a retirá-lo; se o centro de ossificação do epicôndilo não aparece no lugar esperado numa criança mais velha, suspeite que ele está dentro da articulação.\n\n**Na prova**: luxação do cotovelo na criança = **epicôndilo medial**.",
-  "correta": "O epicôndilo medial é arrancado em até metade das luxações do cotovelo na criança e pode ficar preso na articulação.",
+  "conceito": "**Luxação do cotovelo na criança e a fratura do epicôndilo medial.** A luxação do cotovelo é menos comum na criança que no adulto, mas quando ocorre costuma vir acompanhada de fratura. A mais frequente é a **avulsão do epicôndilo medial**, presente em até metade das luxações.\n\n**Mecanismo.** Na queda com o braço estendido e o cotovelo em **valgo**, os músculos **flexores e pronadores** e o **ligamento colateral medial**, que se originam no epicôndilo medial, arrancam a **apófise** (ainda não fundida, aberta até cerca de 15 a 17 anos), mais fraca que o ligamento.\n\n**Lendo as imagens.** No AP, o fragmento do epicôndilo medial (seta) está fora de lugar, abaixo e para dentro, e no perfil aparece **projetado dentro da articulação**, entre o úmero e a ulna (seta): é o fragmento **encarcerado** após a luxação.\n\n**O fragmento encarcerado.** Ao reduzir a luxação, o epicôndilo pode ser puxado para dentro da articulação e ficar **preso entre a tróclea e a ulna**. Sinais: redução incongruente, perda de movimento, ausência do epicôndilo em seu local habitual. É **indicação absoluta de cirurgia** (retirada da articulação e fixação).\n\n**Outras indicações de cirurgia (discutidas).**\n\n| Situação | Conduta |\n|---|---|\n| **Fragmento encarcerado** | **Cirurgia** (absoluta) |\n| Fratura exposta | Cirurgia |\n| Lesão do nervo ulnar com fragmento deslocado | Considerar cirurgia |\n| Desvio importante em atleta de arremesso ou ginasta (instabilidade em valgo) | Considerar fixação |\n| Desvio moderado em criança não atleta | Tratamento conservador com bons resultados (pseudartrose fibrosa geralmente assintomática) |\n\nGottschalk e colaboradores revisaram o tratamento das fraturas do epicôndilo medial na criança.\n\n**Cuidado.** O **nervo ulnar** passa logo atrás do epicôndilo medial; examinar antes e depois da redução.\n\n> Luxação do cotovelo na criança: fratura mais associada é a do epicôndilo medial; fragmento encarcerado obriga a cirurgia.",
+  "correta": "**D: do epicôndilo medial.** É a fratura mais associada à luxação do cotovelo na criança; as imagens mostram o fragmento deslocado e encarcerado na articulação.",
   "incorretas": {
-   "A": "A fratura da tróclea é rara na criança e não é a lesão típica da luxação.",
-   "B": "A fratura do capítulo é rara no esqueleto imaturo.",
-   "C": "O epicôndilo lateral raramente é arrancado; o lado tensionado na luxação é o medial."
+   "A": "**A fratura da tróclea** é rara na criança e não é a associação típica da luxação.",
+   "B": "**A fratura do capítulo** é incomum na criança (mais em adolescentes e adultos) e não é a lesão mais associada.",
+   "C": "**A fratura do epicôndilo lateral** é rara; o lado submetido à tração na luxação em valgo é o medial."
   },
-  "referencias": [],
-  "geradoEm": "2026-10-04T17:01:01+00:00",
+  "referencias": [
+   "Rockwood C.A. et al. Fractures in Children. Philadelphia: Lippincott. 6ª ed.",
+   "Gottschalk HP, Eisner E, Hosalkar HS. Medial epicondyle fractures in the pediatric population. J Am Acad Orthop Surg. 2012;20(4):223-232."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0847": {
@@ -10382,15 +10396,18 @@
   "conferido": false
  },
  "pediatria-0848": {
-  "conceito": "No **descolamento epifisário do úmero proximal**, o padrão depende da idade:\n- **Abaixo de 5 anos**: predomina o **Salter-Harris I** (o traço passa só pela fise, como na figura A).\n- **Acima de 11 anos**: predomina o **Salter-Harris II** (fise com fragmento metafisário, figura B).\n- Os tipos III e IV (figuras C e D) são raros.\n\n**O potencial de remodelação** do úmero proximal é enorme (a fise responde por cerca de 80% do crescimento do úmero), então desvios grandes são aceitos na criança pequena.\n\n**Na prova**: criança pequena = **Salter-Harris I**; adolescente = **Salter-Harris II**.",
-  "correta": "Abaixo de 5 anos, o descolamento do úmero proximal é quase sempre Salter-Harris I, com o traço só pela fise.",
+  "conceito": "**Descolamento epifisário do úmero proximal: o padrão muda com a idade.** A fise proximal do úmero é responsável por cerca de **80% do crescimento** do úmero e tem enorme capacidade de **remodelação**. As lesões fisárias dessa região seguem padrões diferentes conforme a idade, porque a resistência da fise e da metáfise muda com o crescimento.\n\n**Lendo a imagem.** As figuras mostram os tipos de Salter-Harris: **A**, traço que passa só pela fise (**tipo I**); **B**, traço pela fise que sai pela metáfise, levando um fragmento metafisário (**tipo II**); **C**, traço que passa pela fise e sai pela epífise para a articulação (**tipo III**); **D**, traço que atravessa epífise, fise e metáfise (**tipo IV**).\n\n**Padrão por idade.**\n\n| Idade | Tipo predominante |\n|---|---|\n| Recém-nascido e **abaixo de 5 anos** | **Salter-Harris I** |\n| 5 a 11 anos | Fraturas metafisárias são frequentes |\n| **Acima de 11 anos** (adolescentes) | **Salter-Harris II** |\n| Qualquer idade | III e IV raros (o III associa-se à luxação glenoumeral) |\n\n**Por que o tipo I na criança pequena.** A fise é proporcionalmente mais espessa e o anel pericondral mais fraco; a separação ocorre pela zona hipertrófica, sem levar metáfise. No recém-nascido, a lesão ocorre no parto e pode ser confundida com luxação do ombro ou paralisia braquial (pseudoparalisia); a ultrassonografia ajuda, porque a epífise ainda não está ossificada.\n\n**Tratamento.** A remodelação é tão grande que, na criança pequena, aceitam-se desvios importantes: tipoia ou imobilização por 2 a 3 semanas na maioria. Em adolescentes perto do fim do crescimento, desvios grandes podem exigir redução e fixação (Popkin, Levine e Ahmad).\n\n> Úmero proximal abaixo de 5 anos: Salter-Harris I; adolescentes: Salter-Harris II.",
+  "correta": "**A: A.** A figura A mostra o traço passando só pela fise (Salter-Harris I), o tipo mais frequente no descolamento epifisário do úmero proximal abaixo dos 5 anos.",
   "incorretas": {
-   "B": "O Salter-Harris II é o mais frequente no adolescente, não na criança abaixo de 5 anos.",
-   "C": "O Salter-Harris III, com traço pela epífise, é raro no úmero proximal.",
-   "D": "O Salter-Harris IV, cruzando epífise, fise e metáfise, é raro no úmero proximal."
+   "B": "**B** é o Salter-Harris II, com fragmento metafisário, predominante nos adolescentes acima de 11 anos.",
+   "C": "**C** é o Salter-Harris III, raro no úmero proximal e associado à luxação glenoumeral.",
+   "D": "**D** é o Salter-Harris IV, muito raro nessa região."
   },
-  "referencias": [],
-  "geradoEm": "2026-10-04T17:01:01+00:00",
+  "referencias": [
+   "Rockwood C.A. et al. Fractures in Children. Philadelphia: Lippincott. p. 710",
+   "Popkin CA, Levine WN, Ahmad CS. Evaluation and management of pediatric proximal humerus fractures. J Am Acad Orthop Surg. 2015;23(2):77-86."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0849": {

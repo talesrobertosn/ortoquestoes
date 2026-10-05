@@ -375,14 +375,18 @@
   "conferido": false
  },
  "trauma-0035": {
-  "conceito": "### Parâmetros radiográficos do rádio distal\n| Parâmetro | Como medir | Normal | Aceitável |\n|---|---|---|---|\n| ==altura (comprimento) radial== | distância entre ==ponta do estiloide radial== e a ==superfície articular da ulna== (linhas perpendiculares ao eixo) | ==11 a 12 mm== | perda < 3 a 5 mm |\n| inclinação radial | linha estiloide-canto ulnar do rádio × perpendicular | 22 a 23° | > 15° |\n| inclinação volar | perfil | 11 a 12° | até neutro ou 10° dorsal |\n| variância ulnar | rádio × ulna na RUD | neutra (± 2 mm) | < 2 a 3 mm positiva |\n| degrau articular | | 0 | < 2 mm |\n\n> **Na prova:** comprimento radial = ==estiloide radial × superfície articular da ulna==",
-  "correta": "**Estiloide do rádio e superfície articular da ulna.**\n- Normal cerca de 12 mm.\n- Perda indica encurtamento.",
+  "conceito": "**Parâmetros radiográficos do rádio distal.** Após uma fratura do rádio distal, três medidas no AP e no perfil indicam se a anatomia foi restaurada, porque se correlacionam com a função e com o risco de dor e artrose.\n\n| Parâmetro | Como medir | Normal | Limite aceitável usual |\n|---|---|---|---|\n| **Altura (comprimento) radial** | Distância entre duas linhas perpendiculares ao eixo do rádio: uma pela **ponta do estiloide radial**, outra pela **superfície articular da ulna** (no AP) | **11 a 12 mm** | Perda menor que 3 a 5 mm |\n| Inclinação radial | Ângulo entre a linha do estiloide radial ao canto ulnar do rádio e a perpendicular ao eixo | 22 a 23 graus | Maior que 15 graus |\n| Inclinação volar | No perfil, ângulo da superfície articular com a perpendicular ao eixo | 11 graus | Neutro a 10 graus dorsal (varia com a idade) |\n| Variância ulnar | Diferença de altura entre a superfície articular da ulna e o canto ulnar do rádio | Neutra (± 2 mm) | Variação da altura |\n| Degrau articular | Desnível na superfície articular | 0 | Menor que 2 mm |\n\n**Por que a altura radial importa.** O **encurtamento** do rádio (impactação) torna a ulna relativamente longa: aumenta a **carga ulnocarpal** (impacto ulnocarpal), altera a **radioulnar distal** (dor e perda de pronossupinação) e reduz a força de preensão. Medoff descreveu esses parâmetros como essenciais na avaliação radiográfica.\n\n**Cuidado com a confusão.** A altura radial não se mede até a ponta do estiloide ulnar (que varia muito e pode estar fraturado) nem entre as superfícies articulares dos dois ossos (isso é a variância ulnar).\n\n> Altura radial: da ponta do estiloide radial à superfície articular da ulna, normal de 11 a 12 mm.",
+  "correta": "**B: o processo estiloide do rádio e a superfície articular da ulnar.** A altura (comprimento) radial é a distância entre as perpendiculares ao eixo do rádio traçadas pela ponta do estiloide radial e pela superfície articular da ulna, normalmente 11 a 12 mm.",
   "incorretas": {
-   "A": "**Estiloide da ulna.**\n- Não é a referência distal.",
-   "C": "**Duas superfícies articulares.**\n- Isso é a variância ulnar.",
-   "D": "**Ponta do estiloide ulnar.**\n- Referência errada."
+   "A": "**Estiloides do rádio e da ulna**: o estiloide ulnar é referência variável e frequentemente fraturado; não é usado na medida.",
+   "C": "**Superfícies articulares do rádio e da ulna** definem a **variância ulnar**, outro parâmetro.",
+   "D": "**Superfície articular do rádio e estiloide ulnar** mistura referências que não compõem a medida da altura radial."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Medoff RJ. Essential radiographic evaluation for distal radius fractures. Hand Clin. 2005;21(3):279-288.",
+   "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0036": {
@@ -530,14 +534,18 @@
   "conferido": false
  },
  "trauma-0049": {
-  "conceito": "### Método funcional de Sarmiento (tíbia)\n- Gesso inguinopodálico e, após 2 a 4 semanas, ==órtese funcional (PTB)== com apoio precoce.\n- Compressão das partes moles + carga estimulam calo.\n- Indicado em fraturas ==estáveis, baixa energia, encurtamento inicial < 1 a 1,5 cm==.\n\n### Fíbula íntegra\n- A fíbula intacta funciona como tutor lateral: a tíbia colapsa para ==varo==.\n- Complicação mais comum: ==deformidade angular (varo)==; pseudartrose menos frequente.\n\n### Limites aceitáveis\n| Parâmetro | Limite |\n|---|---|\n| varo/valgo | < 5° |\n| antecurvato/recurvato | < 10° |\n| encurtamento | < 1 cm |\n| rotação | < 10° |\n\n> **Na prova:** Sarmiento com fíbula íntegra = ==deformidade angular (varo)==",
-  "correta": "**Deformidade angular.**\n- Fíbula intacta empurra para varo.\n- Complicação mais comum.",
+  "conceito": "**Fratura da tíbia com fíbula íntegra no tratamento funcional de Sarmiento.** Sarmiento popularizou o tratamento **funcional** das fraturas diafisárias da tíbia: gesso inguinopodálico inicial e, após 2 a 4 semanas, **órtese funcional** (tipo PTB, de apoio no tendão patelar), com **carga precoce**. A compressão das partes moles pela órtese e o micromovimento sob carga estimulam o calo. Funciona bem em fraturas **estáveis**, de **baixa energia**, com **encurtamento inicial pequeno** (menor que cerca de 1 a 1,5 cm).\n\n**O problema da fíbula íntegra.** Quando a fíbula **não fraturou**, ela funciona como um **tutor lateral** rígido. Sob a carga, a tíbia fraturada não pode encurtar por igual: o lado medial (sem tutor) encurta e colapsa, enquanto o lateral é mantido pela fíbula. O resultado é a **angulação em varo** progressiva. Teitz, Carter e Frankel descreveram os problemas das fraturas da tíbia com fíbula íntegra, com maior tendência ao **varo** e ao **retardo de consolidação**.\n\n**Fatores que influenciam o resultado no método funcional (Sarmiento e colaboradores).**\n\n| Situação | Comportamento |\n|---|---|\n| Fíbula fraturada no mesmo nível | Encurtamento simétrico, menos angulação |\n| **Fíbula íntegra** | **Tendência ao varo** |\n| Traço transverso estável | Bom resultado |\n| Traço oblíquo ou cominuto | Encurtamento maior |\n\n**Conduta prática.** Na fratura da tíbia com fíbula íntegra tratada sem cirurgia, controlar radiografias semanais nas primeiras semanas; angulação além do aceitável (geralmente mais de 5 graus de varo ou valgo) indica correção ou fixação (haste intramedular, que hoje é o tratamento mais usado para fraturas desviadas da diáfise da tíbia em adultos).\n\n> Tíbia com fíbula íntegra no método funcional: a complicação mais comum é a deformidade angular, principalmente em varo.",
+  "correta": "**C: deformidade angular.** A fíbula íntegra age como tutor lateral; sob carga, a tíbia colapsa do lado medial e evolui em varo, a complicação mais comum nesse cenário.",
   "incorretas": {
-   "A": "**Pseudartrose.**\n- Menos frequente.",
-   "B": "**Rigidez subtalar.**\n- Ocorre, mas menos comum.",
-   "D": "**Encurtamento.**\n- Fíbula íntegra impede encurtamento."
+   "A": "**A pseudartrose** pode ocorrer (a fíbula íntegra também pode distrair o foco e retardar a consolidação), mas é menos frequente que a deformidade angular no método funcional.",
+   "B": "**A rigidez subtalar** é complicação da imobilização prolongada, mas a órtese funcional libera o tornozelo e a subtalar precocemente.",
+   "D": "**O encurtamento** é limitado justamente pela fíbula íntegra, que segura o comprimento; a deformidade resultante é angular."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Sarmiento A, Sharpe FE, Ebramzadeh E, Normand P, Shankwiler J. Factors influencing the outcome of closed tibial fractures treated with functional bracing. Clin Orthop Relat Res. 1995;(315):8-24.",
+   "Teitz CC, Carter DR, Frankel VH. Problems associated with tibial fractures with intact fibulae. J Bone Joint Surg Am. 1980;62(5):770-776."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0050": {

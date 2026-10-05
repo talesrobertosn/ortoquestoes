@@ -1446,14 +1446,18 @@
   "conferido": false
  },
  "pe-tornozelo-0132": {
-  "conceito": "### Pé cavo-varo na criança\n- Investigar ==causa neurológica== (Charcot-Marie-Tooth, medula presa, Friedreich): RM de coluna, ENMG.\n- ==Teste de Coleman== (bloco): retropé flexível se corrige quando o 1º raio fica solto.\n\n### Osteotomias\n| Técnica | Local | Corrige |\n|---|---|---|\n| ==Dwyer== | ==calcâneo== (cunha lateral de fechamento ou deslizamento) | ==varo do retropé== rígido |\n| Cole | cunha dorsal no mediopé (cuneiformes/navicular) | cavo anterior |\n| Japas | osteotomia em V do mediopé | cavo |\n| osteotomia do 1º MT | dorsiflexora | 1º raio plantarfletido |\n| Steindler | ==liberação da fáscia plantar== | cavo (partes moles) |\n\n> **Na prova:** osteotomia do calcâneo para varo do retropé = ==Dwyer==.",
-  "correta": "**Dwyer.**\n- Osteotomia do calcâneo para o varo rígido.\n- Cunha lateral ou deslizamento lateral.",
+  "conceito": "**Pé cavo varo na criança e a osteotomia de Dwyer.** O pé cavo varo infantil é, na maioria das vezes, **neurológico** (Charcot-Marie-Tooth, medula presa, ataxia de Friedreich, sequela de poliomielite): sempre investigar com exame neurológico, ressonância da coluna e eletroneuromiografia quando indicado.\n\n**Avaliar a flexibilidade do retropé: o teste de Coleman.** Com um bloco sob a borda lateral do pé, deixando o primeiro raio (em flexão plantar) cair para fora do bloco, observa-se o calcâneo por trás. Se o varo **corrige**, o retropé é **flexível** e o varo é causado pelo antepé (tratar o antepé); se **não corrige**, o varo do retropé é **rígido** e precisa ser corrigido diretamente no calcâneo (Coleman e Chesnut).\n\n**Lendo a imagem.** A figura mostra o **calcâneo** visto por trás, com uma **cunha de base lateral** marcada (área sombreada) e, depois, a cunha retirada e o fragmento posterior inclinado e fixado: a tuberosidade passa do varo para posição neutra ou leve valgo. É a **osteotomia de Dwyer**, que Dwyer descreveu para o pé cavo.\n\n**Osteotomias e procedimentos no pé cavo.**\n\n| Técnica | Local | Corrige |\n|---|---|---|\n| **Dwyer** | **Calcâneo** (cunha de fechamento lateral ou deslizamento lateral) | **Varo rígido do retropé** |\n| Cole | Cunha dorsal no **mediopé** (navicular e cuneiformes até o cuboide) | Cavo do mediopé |\n| Japas | Osteotomia em **V** no mediopé | Cavo do mediopé, sem encurtar o pé |\n| Steindler | **Liberação da fáscia plantar** e da musculatura plantar no calcâneo (partes moles) | Componente plantar do cavo |\n| Osteotomia do primeiro metatarsal | Base do primeiro metatarsal (dorsiflexão) | Flexão plantar do primeiro raio |\n\n**Sequência típica.** Liberação plantar (Steindler), osteotomia de dorsiflexão do primeiro metatarsal, transferências (fibular longo para curto, tibial posterior para o dorso), e Dwyer se o retropé for rígido; tríplice artrodese nos casos graves e maduros.\n\n> Cunha lateral no calcâneo para corrigir o varo rígido do retropé: osteotomia de Dwyer.",
+  "correta": "**C: DWYER.** A imagem mostra a ressecção de uma cunha de base lateral no calcâneo, com fechamento que leva a tuberosidade do varo para o neutro: é a osteotomia de Dwyer.",
   "incorretas": {
-   "A": "**Mediopé.**\n- Cunha dorsal para o cavo.",
-   "B": "**Mediopé.**\n- Osteotomia em V.",
-   "D": "**Partes moles.**\n- Fasciotomia plantar."
+   "A": "**Cole** é uma osteotomia em cunha dorsal no **mediopé**, que corrige o cavo do mediopé, não o varo do calcâneo.",
+   "B": "**Japas** é uma osteotomia em **V** no mediopé para o cavo, preservando o comprimento do pé; não atua no calcâneo.",
+   "D": "**Steindler** é uma liberação de **partes moles** plantares (fáscia e músculos na origem do calcâneo), não uma osteotomia."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Dwyer FC. Osteotomy of the calcaneum for pes cavus. J Bone Joint Surg Br. 1959;41-B(1):80-86.",
+   "Coleman SS, Chesnut WJ. A simple test for hindfoot flexibility in the cavovarus foot. Clin Orthop Relat Res. 1977;(123):60-62."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pe-tornozelo-0133": {
