@@ -6145,19 +6145,20 @@
   "conferido": false
  },
  "mao-0600": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": "**Ordem de retorno da sensibilidade.** Após reparo nervoso, a sensibilidade volta na ordem: dor e temperatura, vibração de 30 ciclos, toque em movimento, toque estático e vibração de 256 ciclos.\n\n**Na prova:** a dor é a primeira a voltar; a discriminação de dois pontos é a última.",
-  "correta": "**A dor.** É a primeira modalidade a retornar.",
+  "conceito": "**Recuperação da sensibilidade após reparo nervoso.** Depois da sutura de um nervo periférico, os axônios crescem do coto proximal para o distal (cerca de 1 mm por dia) e precisam reinervar os receptores da pele. Os receptores e as fibras não se recuperam ao mesmo tempo, e a ordem de retorno segue a **complexidade** de cada modalidade.\n\n**Por que a dor volta primeiro.** A dor e a temperatura são conduzidas por **terminações nervosas livres** ligadas a fibras finas (A-delta e C). Essas terminações não dependem de um receptor especializado: basta o axônio chegar à pele. Já o tato fino depende de **mecanorreceptores encapsulados** (Meissner, Pacini, Merkel), que precisam ser reinervados corretamente e em número suficiente.\n\n**Ordem de retorno (Dellon).**\n\n| Ordem | Modalidade | Receptor ou fibra |\n|---|---|---|\n| 1 | **Dor e temperatura** | Terminações livres (fibras finas) |\n| 2 | Vibração de 30 ciclos por segundo | Meissner (adaptação rápida) |\n| 3 | Toque em movimento | Meissner |\n| 4 | Toque estático | Merkel (adaptação lenta) |\n| 5 | Vibração de 256 ciclos por segundo | Pacini |\n| 6 | Discriminação de dois pontos (móvel, depois estática) | Densidade de inervação |\n\n**Aplicações clínicas.**\n- **Sinal de Tinel** progressivo ao longo do nervo indica avanço dos axônios em regeneração.\n- A **reeducação sensitiva** (Dellon, Curtis e Edgerton) segue essa ordem: treina-se primeiro o toque em movimento e depois o estático.\n- A escala do Medical Research Council (S0 a S4) gradua a recuperação: S1 dor profunda, S2 dor superficial e algum tato, S3 dor e tato sem hiper-resposta, S3+ com alguma discriminação de dois pontos, S4 normal.\n\n> Após o reparo nervoso, a dor volta primeiro; a discriminação de dois pontos é a última.",
+  "correta": "**A: a dor (resposta pela bibliografia).** Dor e temperatura dependem de terminações nervosas livres, que voltam a funcionar assim que o axônio alcança a pele, antes da reinervação dos mecanorreceptores encapsulados.",
   "incorretas": {
-   "B": "**O estímulo vibratório.** Retorna depois da dor.",
-   "C": "**O toque estático.** Retorna depois do toque em movimento.",
-   "D": "**O toque em movimento.** Retorna depois da dor e da vibração de baixa frequência."
+   "B": "**O estímulo vibratório** de 30 ciclos (Meissner) é a segunda modalidade a retornar; o de 256 ciclos (Pacini) é tardio.",
+   "C": "**O toque estático** depende dos discos de Merkel e retorna depois do toque em movimento.",
+   "D": "**O toque em movimento** (Meissner) retorna depois da dor e da vibração de 30 ciclos."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 3228."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 3228.",
+   "Dellon AL, Curtis RM, Edgerton MT. Reeducating sensation in the hand after nerve injury and repair. Plast Reconstr Surg. 1974;53(3):297-305."
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "A",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0601": {
@@ -6376,19 +6377,20 @@
   "conferido": false
  },
  "mao-0614": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": "**Síndrome de Wartenberg.** O ramo sensitivo do radial emerge entre o braquiorradial e o extensor radial longo do carpo, onde pode ser comprimido pela pronação.\n\n**Na prova:** Wartenberg fica entre braquiorradial e extensor radial longo.",
-  "correta": "**Braquiorradial e extensor radial longo do carpo.** É o local da compressão.",
+  "conceito": "**Síndrome de Wartenberg.** É a compressão do **ramo sensitivo superficial do nervo radial** no antebraço distal, descrita por Wartenberg como \"cheiralgia parestésica\". Causa dor e parestesia no **dorso radial da mão**, do polegar e da primeira comissura, sem déficit motor.\n\n**Anatomia.** O nervo radial se divide no cotovelo em ramo profundo (interósseo posterior, motor) e ramo superficial (sensitivo). O ramo superficial desce sob o **braquiorradial** e, cerca de **9 cm acima do estiloide radial**, torna-se subcutâneo, emergindo **entre os tendões do braquiorradial e do extensor radial longo do carpo**.\n\n**Mecanismo da compressão.** Na **pronação**, o tendão do extensor radial longo do carpo cruza sob o do braquiorradial, criando um efeito de **tesoura** que comprime o nervo no ponto em que ele sai entre os dois. Fatores: pulseiras e relógios apertados, algemas, gessos, trauma direto, movimentos repetitivos de pronação e desvio ulnar.\n\n**Diagnóstico.**\n- Tinel positivo no ponto de emergência.\n- Sintomas reproduzidos pela **pronação forçada com desvio ulnar e flexão do punho** (teste de provocação de Dellon e Mackinnon).\n- Diferencial com a **tenossinovite de De Quervain** (o Finkelstein pode ser positivo em ambos) e radiculopatia de C6.\n\n**Diferenças de outras compressões do radial.**\n\n| Síndrome | Ramo | Local principal |\n|---|---|---|\n| **Wartenberg** | **Sensitivo superficial** | **Entre braquiorradial e extensor radial longo do carpo** |\n| Interósseo posterior | Motor profundo | Arcada de Frohse (supinador) |\n| Túnel radial | Profundo, com dor sem déficit | Arcada de Frohse, ERCC, vasos recorrentes |\n\n**Tratamento.** Retirar a compressão externa, órtese e infiltração; na falha, liberação do nervo entre os tendões (com liberação da fáscia).\n\n> Wartenberg: ramo sensitivo do radial comprimido entre braquiorradial e extensor radial longo do carpo, pior em pronação.",
+  "correta": "**B: braquiorradial e extensor radial longo do carpo (resposta pela bibliografia).** O ramo sensitivo do radial emerge entre esses dois tendões, onde a pronação cria um efeito de tesoura que o comprime.",
   "incorretas": {
-   "A": "**Extensor longo do polegar e extensor radial longo do carpo.** Local incorreto.",
-   "C": "**Braquiorradial e abdutor longo do polegar.** Local incorreto.",
-   "D": "**Extensor longo do polegar e abdutor longo do polegar.** Local incorreto."
+   "A": "**Extensor longo do polegar e extensor radial longo do carpo** não delimitam o ponto de emergência do nervo; o extensor longo do polegar cruza os radiais mais distalmente, no punho.",
+   "C": "**Braquiorradial e abdutor longo do polegar**: o abdutor longo cruza o antebraço distal sobre os radiais, mas o nervo emerge entre braquiorradial e extensor radial longo, mais proximal.",
+   "D": "**Extensor longo do polegar e abdutor longo do polegar** formam os limites da tabaqueira anatômica (com o curto), onde passam ramos sensitivos já subcutâneos, não o ponto de compressão de Wartenberg."
   },
   "referencias": [
-   "Tratado de Ortopedia da SBOT 2007. p.308."
+   "Tratado de Ortopedia da SBOT 2007. p.308.",
+   "Dellon AL, Mackinnon SE. Radial sensory nerve entrapment in the forearm. J Hand Surg Am. 1986;11(2):199-205."
   ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "B",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0615": {
@@ -6459,19 +6461,20 @@
   "conferido": false
  },
  "mao-0619": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": "**Ruptura do extensor longo do polegar.** Mais comum em fraturas sem desvio tratadas sem cirurgia, por isquemia do tendão no tubérculo de Lister; aparece semanas depois.\n\n**Na prova:** fratura sem desvio do rádio distal e ruptura tardia do extensor longo do polegar.",
-  "correta": "**Não cirúrgico.** É mais frequente no tratamento conservador.",
+  "conceito": "**Ruptura do extensor longo do polegar após fratura distal do rádio.** O tendão do extensor longo do polegar (ELP) passa no **terceiro compartimento extensor**, contornando o **tubérculo de Lister** como uma polia, em uma região de **vascularização precária** (zona hipovascular de cerca de 5 mm).\n\n**O paradoxo da fratura sem desvio.** A ruptura é **mais frequente nas fraturas sem desvio ou minimamente desviadas, tratadas sem cirurgia**. Explicações:\n- O **retináculo extensor e o terceiro compartimento permanecem íntegros**. O hematoma e o edema aumentam a pressão dentro do túnel fechado, comprimindo a frágil irrigação do tendão (isquemia).\n- Calo ou irregularidade discreta no assoalho do compartimento atrita o tendão.\n- Nas fraturas muito desviadas, o compartimento se rompe e descomprime.\n\nRoth e colaboradores estimaram a incidência em cerca de 3% a 5% das fraturas sem desvio. A ruptura ocorre tipicamente **3 a 8 semanas** após a fratura (às vezes meses), com perda súbita da extensão da interfalângica do polegar e da retropulsão (elevar o polegar acima do plano da mão com a palma na mesa).\n\n**Rupturas com tratamento cirúrgico.**\n\n| Tratamento | Mecanismo de ruptura |\n|---|---|\n| Não cirúrgico (fratura sem desvio) | Isquemia no compartimento fechado, a causa mais comum |\n| Pinagem percutânea | Lesão direta pelo fio ou atrito na ponta |\n| Placa volar bloqueada | **Parafuso longo** que ultrapassa a cortical dorsal |\n| Placa dorsal | Atrito direto do tendão na placa |\n\n**Tratamento.** Reparo término-terminal raramente é possível (tendão degenerado). A opção padrão é a **transferência do extensor próprio do indicador** para o ELP, com bons resultados; enxerto intercalar do palmar longo é alternativa.\n\n> Ruptura do extensor longo do polegar: mais comum após fratura do rádio distal sem desvio tratada sem cirurgia, semanas depois.",
+  "correta": "**A: não cirúrgico (resposta pela bibliografia).** Nas fraturas sem desvio tratadas de forma conservadora, o terceiro compartimento permanece fechado; o edema e o hematoma comprimem a irrigação precária do tendão junto ao tubérculo de Lister, levando a ruptura tardia.",
   "incorretas": {
-   "B": "**Por pinagem percutânea.** Menos frequente.",
-   "C": "**Com fixador externo.** Menos frequente.",
-   "D": "**Com placa bloqueada.** Na placa volar ocorre por parafuso longo, mas é menos comum."
+   "B": "**A pinagem percutânea** pode lesar o tendão diretamente, mas é causa menos frequente que o tratamento conservador das fraturas sem desvio.",
+   "C": "**O fixador externo** não age sobre o terceiro compartimento; rupturas são raras e ligadas aos fios ou pinos acessórios.",
+   "D": "**A placa bloqueada volar** associa-se à ruptura quando parafusos ultrapassam a cortical dorsal, risco evitável com a medida correta; ainda assim, é causa menos comum que o tratamento conservador."
   },
   "referencias": [
-   "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., pg. 961."
+   "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., pg. 961.",
+   "Roth KM, Blazar PE, Earp BE, Han R, Leung A. Incidence of extensor pollicis longus tendon rupture after nondisplaced distal radius fractures. J Hand Surg Am. 2012;37(5):942-947."
   ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "A",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0620": {

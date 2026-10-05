@@ -5754,19 +5754,20 @@
   "conferido": false
  },
  "quadril-0483": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "D",
-  "conceito": "**Titânio nas hastes.** O titânio tem módulo baixo e boa biocompatibilidade, mas é sensível a entalhes: as porosidades da superfície concentram tensão e facilitam trincas por fadiga.\n\n**Na prova:** titânio é sensível a entalhe.",
-  "correta": "**Maior risco de fissura nas porosidades.** A sensibilidade ao entalhe é a desvantagem.",
+  "conceito": "**Ligas de titânio e de cromo-cobalto nas hastes femorais.** As hastes de artroplastia são feitas principalmente de liga de **titânio** (Ti-6Al-4V) ou de **cromo-cobalto** (Co-Cr-Mo). Cada material tem vantagens e desvantagens, e a escolha depende do tipo de fixação.\n\n**Comparação.**\n\n| Propriedade | Titânio | Cromo-cobalto |\n|---|---|---|\n| Módulo de elasticidade | **Baixo** (cerca de metade do Co-Cr) | Alto |\n| Biocompatibilidade e osteointegração | Excelente | Boa |\n| Resistência ao desgaste (superfície articular) | Ruim, não usado como superfície de carga | Boa |\n| **Sensibilidade a entalhes** | **Alta** | Menor |\n\n**Vantagens do titânio na haste não cimentada.**\n- **Módulo mais próximo do osso**: reduz a blindagem de tensões (stress shielding) e a reabsorção do fêmur proximal.\n- **Ótima biocompatibilidade** e crescimento ósseo na superfície porosa ou jateada.\n\n**A desvantagem: sensibilidade ao entalhe.** O titânio perde muito da sua resistência à fadiga quando há **entalhes, arranhões ou irregularidades** na superfície, que funcionam como **concentradores de tensão**. As **superfícies porosas** (esferas sinterizadas, malhas), necessárias para a osteointegração, criam microentalhes na junção com o substrato; o processo de sinterização em alta temperatura também altera a microestrutura do metal. Isso facilita o início de **trincas por fadiga** nas porosidades. Por isso, nas hastes de titânio, prefere-se revestimento poroso limitado ou superfícies jateadas e de hidroxiapatita, e cabeças de cromo-cobalto ou cerâmica (o titânio desgasta mal como superfície articular). Long e Rack revisaram essas propriedades do ponto de vista da ciência dos materiais.\n\n> Titânio na haste: módulo baixo e boa biocompatibilidade, mas sensível a entalhes e a trincas nas porosidades.",
+  "correta": "**D: maior risco de fissura nas porosidades (resposta pela bibliografia).** O titânio é sensível a entalhes: as irregularidades da superfície porosa concentram tensões e reduzem a resistência à fadiga, favorecendo o início de trincas.",
   "incorretas": {
-   "A": "**Menor biocompatibilidade.** É muito biocompatível.",
-   "B": "**Menor resistência à fadiga.** Sua resistência à fadiga liso é alta; o problema é o entalhe.",
-   "C": "**Maior módulo de elasticidade.** Tem menor módulo."
+   "A": "**Menor biocompatibilidade** é falso: o titânio é o metal ortopédico mais biocompatível, com excelente osteointegração.",
+   "B": "**Menor resistência à fadiga**, em si, não é a desvantagem: liso, o titânio tem resistência à fadiga comparável ou superior; o problema é a queda dessa resistência na presença de entalhes, como nas porosidades.",
+   "C": "**Maior módulo de elasticidade** é falso: o módulo do titânio é cerca de metade do cromo-cobalto, o que é vantagem por reduzir o stress shielding."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 333."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 333.",
+   "Long M, Rack HJ. Titanium alloys in total joint replacement--a materials science perspective. Biomaterials. 1998;19(18):1621-1639."
   ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "D",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "quadril-0484": {
