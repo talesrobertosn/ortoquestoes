@@ -2841,6 +2841,23 @@
   "geradoEm": "2026-09-23",
   "conferido": false
  },
+ "joelho-0239": {
+  "alerta": "Não localizamos o gabarito oficial desta questão, que por isso não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela classificação de Ortiguera e Berry e pela bibliografia de artroplastia do joelho.",
+  "provavel": "D",
+  "conceito": "**Fratura periprotética da patela: classificação de Ortiguera e Berry.** Orienta o tratamento conforme a integridade do aparelho extensor e a fixação do componente patelar.\n\n| Tipo | Aparelho extensor | Componente patelar | Tratamento |\n|---|---|---|---|\n| I | Íntegro | Estável | Conservador (imobilização em extensão) |\n| II | **Rompido** | Estável ou solto | Cirúrgico: reparo do extensor, fixação ou patelectomia parcial |\n| **III** | **Íntegro** | **Solto** | IIIa (estoque ósseo razoável): **retirada ou revisão do componente**; IIIb (osso pobre): retirada do componente com patelectomia parcial ou patelaplastia |\n\n**Por que retirar o componente solto.** Um componente patelar solto sobre uma patela fraturada causa dor, desgaste e pode danificar o componente femoral. Recolocar um novo componente em uma patela fraturada e fina tem alto risco de falha; por isso, a conduta mais aceita é **retirar o componente** e tratar a fratura (osteossíntese quando o fragmento permite, ou patelaplastia), deixando a revisão do componente para casos com osso adequado.\n\n**Complicações.** A osteossíntese da patela periprotética tem altas taxas de falha, pseudoartrose e infecção; por isso é evitada quando possível, mas pode ser necessária em fraturas desviadas.\n\n> Ortiguera e Berry III (componente solto, extensor íntegro): retirar o componente patelar e tratar a fratura.",
+  "correta": "**D: Remoção do componente patelar e osteossíntese de patela (resposta provável).** No tipo III, o aparelho extensor está íntegro e o componente patelar está solto. O componente solto deve ser retirado, e a fratura desviada é tratada com osteossíntese ou patelaplastia. Recolocar um novo componente em uma patela fraturada tem alto risco de falha.",
+  "incorretas": {
+   "A": "**Imobilização rígida por 4 semanas** é o tratamento do tipo I (componente estável e extensor íntegro). No tipo III, o componente solto continua causando dor e desgaste.",
+   "B": "**Imobilização articulada por 6 semanas** também não resolve o componente solto nem a fratura desviada.",
+   "C": "**Osteossíntese com troca do componente patelar** é tecnicamente difícil em uma patela fraturada e fina, com alto risco de falha da fixação e do novo componente. A revisão do componente é reservada a casos com bom estoque ósseo e consolidação."
+  },
+  "referencias": [
+   "Ortiguera CJ, Berry DJ. Patellar fracture after total knee arthroplasty. J Bone Joint Surg Am. 2002;84(4):532-540.",
+   "Scott WN, ed. Insall & Scott Surgery of the Knee. Elsevier. Fraturas periprotéticas do joelho."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
  "joelho-0240": {
   "conceito": "### Lendo a figura\nVista **superior** do platô tibial. A borda de **cima** é a **posterior**: o entalhe posterior do intercôndilo, onde o LCP desce pela face posterior da tíbia. A de baixo é a **anterior**. Áreas **vermelhas** são inserções ligamentares; **azuis**, inserções meniscais.\n\n### A sequência de inserções no intercôndilo\nDe **anterior para posterior**:\n1. Corno anterior do **menisco medial** (o mais anterior).\n2. **LCA** (vermelho anterior), com o ==corno anterior do menisco lateral== ao lado, cujas fibras se misturam às do LCA.\n3. Corno posterior do **menisco lateral**.\n4. Corno posterior do **menisco medial**.\n5. ==LCP== (vermelho posterior), na borda posterior, descendo pela face posterior da tíbia.\n\n### Relevância\n- Na reconstrução do LCA, o túnel tibial fica **junto ao corno anterior do menisco lateral**. Um túnel mal posicionado pode **lesar a raiz anterior** lateral.\n- O LCP insere-se **abaixo** do platô (faceta posterior), a ~1 a 1,5 cm da interlinha.\n\n> **Na prova:** 1 = ==LCP== (vermelho posterior); 2 = ==corno anterior do menisco lateral== (azul junto ao LCA).",
   "correta": "**LCP e corno anterior do menisco lateral.**",
