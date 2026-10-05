@@ -15660,5 +15660,136 @@
   ],
   "geradoEm": "2026-10-05",
   "conferido": false
+ },
+ "mao-1249": {
+  "conceito": "**Parâmetros radiográficos do rádio distal e redução aceitável.** O objetivo da redução é restaurar a anatomia o suficiente para preservar a função do punho e da articulação radioulnar distal. Conhecer os valores normais ajuda a julgar o que é aceitável.\n\n| Parâmetro | Normal | Aceitável após redução (adulto ativo) |\n|---|---|---|\n| Inclinação volar | Cerca de 11 graus | Até 10 graus dorsal (ou neutro) |\n| Inclinação radial | Cerca de 22 graus | Acima de 15 graus |\n| Altura radial | Cerca de 11 a 12 mm | Encurtamento menor que 2 a 3 mm (ou perda menor que 5 mm de altura) |\n| Degrau articular | Nenhum | Menor que 2 mm |\n\n**Por que o degrau articular importa.** Knirk e Jupiter mostraram que degraus de 2 mm ou mais na superfície radiocárpica se associam a artrose pós-traumática em adultos jovens. Por isso, 2 mm é o limite clássico.\n\n**Por que o encurtamento importa.** O encurtamento do rádio aumenta a variância ulnar positiva, sobrecarregando o complexo da fibrocartilagem triangular e a cabeça da ulna (impacto ulnocarpal), e altera a congruência da radioulnar distal, limitando a pronossupinação.\n\n**Contexto do idoso.** Em pacientes idosos de baixa demanda, consolidações com desvios maiores costumam ter resultado funcional aceitável, e os critérios podem ser mais tolerantes. O item, porém, refere-se aos parâmetros gerais.\n\n> Redução aceitável: degrau menor que 2 mm e encurtamento menor que 2 a 3 mm.",
+  "correta": "**A: Certo.** Degrau articular menor que 2 mm e encurtamento radial menor que 2 a 3 mm estão entre os parâmetros clássicos de redução aceitável. O degrau de 2 mm ou mais aumenta o risco de artrose radiocárpica, e o encurtamento além desse limite sobrecarrega o lado ulnar do punho e prejudica a radioulnar distal. Completam os critérios a inclinação volar até cerca de 10 graus dorsal e a inclinação radial acima de 15 graus.",
+  "incorretas": {
+   "B": "**Marcar errado seria lembrar outros valores, como perda de altura radial de até 5 mm.** As fontes usam medidas diferentes (encurtamento em relação à ulna, ou altura radial absoluta), o que pode confundir, mas os números do item estão dentro do consenso habitual."
+  },
+  "referencias": [
+   "Knirk JL, Jupiter JB. Intra-articular fractures of the distal end of the radius in young adults. J Bone Joint Surg Am. 1986;68(5):647-659.",
+   "Wolfe SW, Pederson WC, Kozin SH, Cohen MS, eds. Green's Operative Hand Surgery. Elsevier. Fraturas do rádio distal."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "mao-1250": {
+  "conceito": "**Imobilização da fratura de Colles.** A fratura de Colles é a fratura extra-articular do rádio distal com desvio dorsal do fragmento distal, típica de queda com a mão espalmada em idosos. O tratamento conservador inclui redução fechada (tração, acentuação da deformidade e flexão palmar) e imobilização gessada.\n\n**Posição recomendada.**\n- **Leve flexão palmar** do punho: tensiona o periósteo dorsal íntegro e ajuda a manter o fragmento contra a inclinação dorsal.\n- **Leve desvio ulnar**: mantém a inclinação radial e o comprimento.\n- **Pronossupinação neutra** (ou leve pronação): conforto e controle da rotação.\n\n**Posição a evitar.** A posição de Cotton-Loder (flexão palmar e desvio ulnar extremos) aumenta a pressão no túnel do carpo, favorece a compressão do nervo mediano e a síndrome dolorosa regional complexa, e causa rigidez dos dedos.\n\n**Tipos de imobilização.** Pinça de confeiteiro (sugar tong) nos primeiros dias, para controlar a rotação e permitir edema; depois, gesso antebraquiopalmar. Manter a mobilidade dos dedos livre (até a prega palmar distal) é essencial.\n\n**Controle.** Radiografias semanais nas primeiras duas a três semanas, porque a perda da redução é frequente nas fraturas instáveis.\n\n> Colles: gesso com leve flexão palmar, leve desvio ulnar e rotação neutra; nunca posições extremas.",
+  "correta": "**A: Certo.** Na imobilização da fratura de Colles pode-se usar leve flexão palmar, desvio ulnar e pronossupinação neutra. Essa posição usa o periósteo dorsal como dobradiça para manter a redução. O cuidado é não exagerar a flexão e o desvio (posição de Cotton-Loder), que aumentam o risco de compressão do mediano e de síndrome dolorosa regional complexa.",
+  "incorretas": {
+   "B": "**Marcar errado seria pensar na posição de Smith, que usa extensão e supinação.** A fratura de Smith tem desvio volar e é imobilizada de forma oposta. Também seria possível rejeitar o item lembrando os riscos da flexão extrema, mas o item fala em leve flexão, que é aceita."
+  },
+  "referencias": [
+   "Wolfe SW, Pederson WC, Kozin SH, Cohen MS, eds. Green's Operative Hand Surgery. Elsevier. Fraturas do rádio distal.",
+   "Tornetta P III, Ricci WM, Ostrum RF, McQueen MM, McKee MD, Court-Brown CM, eds. Rockwood and Green's Fractures in Adults. Wolters Kluwer. Fraturas do rádio e da ulna distais."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "mao-1251": {
+  "alerta": "Pela descrição clássica, a dor da claudicação neurogênica melhora lentamente (vários minutos) e exige sentar ou fletir o tronco; a melhora rápida com simples repouso em pé é característica da claudicação vascular. O gabarito oficial (Certo) foi mantido, mas o item é discutível e pode ter sido objeto de recurso.",
+  "conceito": "**Claudicação neurogênica e claudicação vascular.** Ambas causam dor nas pernas ao caminhar, mas têm mecanismos diferentes, e a distinção é cobrada com frequência.\n\n**Claudicação neurogênica (estenose do canal lombar).** Na extensão lombar, o canal e os forames diminuem de tamanho (o ligamento amarelo se dobra para dentro, o disco abaula). Na posição em pé e caminhando, a compressão das raízes da cauda equina produz isquemia e congestão venosa radicular. Na flexão, o canal se alarga.\n\n**Claudicação vascular (doença arterial periférica).** O músculo em exercício recebe menos sangue do que precisa. Ao parar, a demanda cai e a dor some rápido.\n\n| Característica | Neurogênica | Vascular |\n|---|---|---|\n| Alívio | Sentar ou fletir o tronco; lento | Parar de andar, mesmo em pé; rápido |\n| Postura | Piora em pé parado e na extensão | Não depende da postura |\n| Subida e bicicleta | Toleradas (tronco fletido) | Pioram (esforço) |\n| Pulsos | Normais | Diminuídos |\n| Sintomas | Parestesias, fraqueza, dor difusa | Câimbra na panturrilha |\n\n**Sinal do carrinho de supermercado.** O paciente com estenose anda melhor apoiado e inclinado para frente.\n\n> Neurogênica: melhora sentando e fletindo. Vascular: melhora parando.",
+  "correta": "**A: Certo (gabarito oficial).** A banca considerou correto que a claudicação neurogênica tem dor de surgimento rápido e melhora rápida com repouso. A estenose lombar de fato causa sintomas que surgem ao andar ou ficar em pé e aliviam com o repouso sentado. No entanto, a descrição clássica aponta que o alívio na claudicação neurogênica é mais lento e depende da flexão do tronco, enquanto a melhora rápida ao simplesmente parar é típica da claudicação vascular. Vale conhecer a distinção completa, explicada acima.",
+  "incorretas": {
+   "B": "**Marcar errado é a resposta coerente com a comparação clássica dos livros.** Nos quadros comparativos, a claudicação neurogênica melhora lentamente e precisa da flexão lombar (sentar, inclinar para frente), e a vascular melhora rapidamente ao parar. A banca, porém, manteve o item como certo, provavelmente valorizando apenas a relação entre esforço, dor e repouso."
+  },
+  "referencias": [
+   "Katz JN, Harris MB. Lumbar spinal stenosis. N Engl J Med. 2008;358(8):818-825.",
+   "Herkowitz HN et al. Rothman-Simeone The Spine. Elsevier. Estenose do canal lombar."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "mao-1252": {
+  "conceito": "**Teste de Nachlas.** É um teste de estiramento das raízes lombares altas e da articulação sacroilíaca.\n\n**Como se faz.** Paciente em **decúbito ventral**. O examinador flete passivamente o joelho até o calcanhar tocar a nádega, mantendo a pelve apoiada na maca.\n\n**Interpretação.**\n- Dor na região lombar alta, na nádega ou na face anterior da coxa sugere **compressão das raízes L2, L3 ou L4**, que são tracionadas junto com o nervo femoral.\n- Dor na região sacroilíaca sugere doença dessa articulação.\n- Limitação da flexão por encurtamento do quadríceps ou do reto femoral também pode ser percebida (elevação da pelve).\n\n**Testes de tensão radicular: alto e baixo.**\n\n| Teste | Posição | Raízes avaliadas |\n|---|---|---|\n| Lasègue (elevação da perna estendida) | Decúbito dorsal | L5 e S1 |\n| Estiramento do nervo femoral (Wassermann) | Decúbito ventral, extensão do quadril com joelho fletido | L2 a L4 |\n| Nachlas | Decúbito ventral, flexão máxima do joelho | L2 a L4 e sacroilíaca |\n| Ely | Decúbito ventral, flexão do joelho com elevação da pelve | Encurtamento do reto femoral |\n\n**Aplicação.** Hérnias lombares altas (L2-L3, L3-L4) e hérnias foraminais em L4-L5 produzem dor na face anterior da coxa e Lasègue negativo, e os testes em decúbito ventral ajudam no diagnóstico.\n\n> Lasègue para raízes baixas, testes em prono (Nachlas, femoral) para raízes altas.",
+  "correta": "**A: Certo.** O teste de Nachlas é feito em decúbito ventral, com flexão passiva do joelho até o calcanhar tocar a nádega. Esse movimento estira o nervo femoral e as raízes lombares altas; dor na região lombar alta, na nádega ou na coxa pode indicar compressão radicular em L2 a L4 (ou doença da sacroilíaca). É o equivalente do Lasègue para as raízes altas.",
+  "incorretas": {
+   "B": "**Marcar errado seria confundir o Nachlas com o teste de Ely, que usa a mesma posição.** No Ely, a elevação da pelve durante a flexão do joelho indica encurtamento do reto femoral. São testes diferentes, e a descrição do item corresponde ao Nachlas."
+  },
+  "referencias": [
+   "Hoppenfeld S. Propedêutica ortopédica: coluna e extremidades. Atheneu.",
+   "Herkowitz HN et al. Rothman-Simeone The Spine. Elsevier. Exame físico da coluna lombar."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "mao-1253": {
+  "conceito": "**Raízes cervicais: sensibilidade, motricidade e reflexos.** As raízes cervicais saem **acima** da vértebra de mesmo número. Por isso, o disco C5-C6 comprime a raiz **C6**, e o disco C6-C7, a raiz **C7**.\n\n| Raiz (disco) | Sensibilidade | Motor | Reflexo |\n|---|---|---|---|\n| C5 (C4-C5) | Face lateral do braço | Deltoide, bíceps | Bicipital |\n| C6 (C5-C6) | Face lateral do antebraço, polegar e indicador | Extensores do punho, bíceps | Estilorradial (braquiorradial) |\n| C7 (C6-C7) | Dedo médio | Tríceps, flexores do punho, extensores dos dedos | Tricipital |\n| C8 (C7-T1) | Dedos anular e mínimo, borda ulnar | Flexores dos dedos | Nenhum confiável |\n| T1 (T1-T2) | Face medial do braço | Interósseos | Nenhum confiável |\n\n**Para memorizar.**\n- C6: faça um \"6\" com o polegar e o indicador.\n- C7: o dedo médio está no meio da mão, como a raiz C7 está no meio do plexo.\n\n**Aplicação.** Radiculopatia C6 (hérnia em C5-C6) e C7 (hérnia em C6-C7) são as mais frequentes, porque correspondem aos segmentos mais móveis.\n\n> C6: polegar, extensores do punho, reflexo estilorradial. C7: dedo médio, tríceps, flexores do punho, reflexo tricipital.",
+  "correta": "**B: Errado.** O item descreve a raiz **C7**, não a C6. A raiz C6, que sai no nível C5-C6, tem como área sensitiva o polegar e o indicador (face lateral do antebraço), como motor os extensores do punho (e participa do bíceps) e como reflexo o estilorradial. O dedo médio, o tríceps, os flexores do punho e o reflexo tricipital pertencem a C7, comprimida pelo disco C6-C7.",
+  "incorretas": {
+   "A": "**Marcar certo é deslocar a raiz em um nível.** A confusão é comum porque o disco C5-C6 parece ter a ver com C5 ou C7. Lembre-se de que, na coluna cervical, a raiz sai acima da vértebra de mesmo número, e por isso o disco C5-C6 comprime a raiz C6."
+  },
+  "referencias": [
+   "Hoppenfeld S. Propedêutica ortopédica: coluna e extremidades. Atheneu.",
+   "American Spinal Injury Association. International Standards for Neurological Classification of Spinal Cord Injury. Revisão de 2019."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "mao-1254": {
+  "conceito": "**Testes de impacto do ombro.** Avaliam o atrito do manguito rotador e da bursa subacromial contra o arco coracoacromial.\n\n**Teste de Neer.** O examinador estabiliza a escápula e eleva passivamente o braço em **flexão anterior máxima com rotação interna** (no plano da escápula). O **tubérculo maior** projeta-se contra a **borda anteroinferior do acrômio**. Dor sugere impacto subacromial. O teste de infiltração (Neer) com anestésico subacromial que alivia a dor reforça o diagnóstico.\n\n**Teste de Hawkins-Kennedy.** Ombro e cotovelo em flexão de 90 graus, seguido de **rotação interna** forçada. O **tubérculo maior** se projeta contra o **ligamento coracoacromial**, e o **tubérculo menor** se aproxima da ponta do **processo coracoide**. Pode reproduzir também a dor do chamado impacto coracoide (subcoracoide).\n\n**Teste de Yocum.** Mão no ombro oposto, elevação ativa do cotovelo; dor sugere impacto.\n\n| Teste | Posição | Estruturas em contato |\n|---|---|---|\n| Neer | Flexão máxima com rotação interna | Tubérculo maior e acrômio anteroinferior |\n| Hawkins-Kennedy | Flexão de 90 graus com rotação interna | Tubérculo maior e ligamento coracoacromial; tubérculo menor e coracoide |\n\n**Impacto coracoide.** Compressão do subescapular e da cabeça do úmero contra o coracoide, com dor anterior em flexão, adução e rotação interna.\n\n> Neer: tubérculo maior contra o acrômio. Hawkins: contra o ligamento coracoacromial, e o tubérculo menor perto do coracoide.",
+  "correta": "**B: Errado.** A descrição do item corresponde ao **teste de Hawkins-Kennedy**, em que a rotação interna com o braço a 90 graus de flexão projeta o tubérculo maior contra o ligamento coracoacromial e aproxima o tubérculo menor da ponta do coracoide. No **teste de Neer**, a elevação passiva máxima com rotação interna projeta o tubérculo maior contra a borda anteroinferior do acrômio.",
+  "incorretas": {
+   "A": "**Marcar certo é trocar os dois testes de impacto mais famosos.** Ambos usam rotação interna e avaliam o impacto subacromial, o que facilita a confusão. A diferença é a posição (flexão máxima no Neer, 90 graus no Hawkins) e a estrutura contra a qual o tubérculo maior se projeta (acrômio no Neer, ligamento coracoacromial no Hawkins)."
+  },
+  "referencias": [
+   "Neer CS 2nd. Anterior acromioplasty for the chronic impingement syndrome in the shoulder: a preliminary report. J Bone Joint Surg Am. 1972;54(1):41-50.",
+   "Hawkins RJ, Kennedy JC. Impingement syndrome in athletes. Am J Sports Med. 1980;8(3):151-158."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "mao-1255": {
+  "conceito": "**Síndrome de Brown-Séquard.** É a síndrome medular incompleta que corresponde à **hemissecção** funcional da medula. A forma pura é rara; formas parciais são comuns, sobretudo após ferimentos penetrantes (arma branca), mas também em traumas fechados, hérnias e tumores.\n\n**Anatomia que explica o quadro.**\n- **Trato corticoespinal lateral** (motor): já cruzou no bulbo, desce do mesmo lado. A lesão causa **paralisia ipsilateral**.\n- **Colunas dorsais** (propriocepção, vibração, tato fino): sobem do mesmo lado até o bulbo. A lesão causa **perda ipsilateral**.\n- **Trato espinotalâmico lateral** (dor e temperatura): as fibras cruzam na medula, um a dois níveis acima de onde entram. A lesão causa **perda contralateral** de dor e temperatura, começando um a dois níveis abaixo da lesão.\n\n| Função | Lado afetado |\n|---|---|\n| Motor | Ipsilateral |\n| Propriocepção e vibração | Ipsilateral |\n| Dor e temperatura | Contralateral |\n\n**Prognóstico.** É o melhor entre as síndromes medulares incompletas: a maioria dos pacientes volta a andar e recupera o controle esfincteriano.\n\n**Comparação com outras síndromes.** Centromedular (membros superiores mais fracos que os inferiores, idosos com hiperextensão), anterior (perda motora e de dor/temperatura com propriocepção preservada, pior prognóstico) e posterior (perda de propriocepção, rara).\n\n> Brown-Séquard: motor e propriocepção do mesmo lado; dor e temperatura do lado oposto.",
+  "correta": "**A: Certo.** A síndrome de Brown-Séquard resulta da hemissecção da medula. A lesão do trato corticoespinal e das colunas dorsais, que ainda não cruzaram, causa perda motora e da propriocepção do mesmo lado. A lesão do trato espinotalâmico, cujas fibras já cruzaram na medula, causa perda da sensibilidade dolorosa e térmica do lado oposto. É a síndrome incompleta de melhor prognóstico.",
+  "incorretas": {
+   "B": "**Marcar errado seria inverter os lados das perdas.** O ponto-chave é saber onde cada via cruza: o trato motor cruza no bulbo (acima da medula), e a via de dor e temperatura cruza na própria medula, logo após entrar. Por isso as perdas ficam em lados opostos."
+  },
+  "referencias": [
+   "American Spinal Injury Association. International Standards for Neurological Classification of Spinal Cord Injury. Revisão de 2019.",
+   "Herkowitz HN et al. Rothman-Simeone The Spine. Elsevier. Lesão medular: síndromes incompletas."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "mao-1256": {
+  "conceito": "**Testes clínicos na síndrome do túnel do carpo.** A compressão do nervo mediano no túnel do carpo causa parestesias nos três primeiros dedos e metade radial do quarto, piora noturna e, em casos avançados, hipotrofia tenar. Vários testes provocativos ajudam no diagnóstico.\n\n| Teste | Como se faz | Acurácia aproximada |\n|---|---|---|\n| Phalen | Flexão máxima dos punhos por 60 segundos | Sensibilidade e especificidade moderadas (em torno de 70%) |\n| Tinel no carpo | Percussão sobre o mediano no punho | Sensibilidade menor, especificidade moderada |\n| Durkan (compressão do carpo) | Compressão direta sobre o túnel por 30 segundos | Sensibilidade e especificidade mais altas em vários estudos |\n| Diagrama de mão de Katz | Paciente desenha os sintomas | Útil como triagem |\n\n**Valores variam muito entre estudos.** As revisões sistemáticas mostram que nenhum teste isolado é ideal. O teste de compressão de Durkan costuma aparecer com sensibilidade maior que o Phalen. A combinação de história típica, sintomas noturnos e testes positivos aumenta muito a probabilidade.\n\n**Exame complementar.** A eletroneuromiografia confirma o diagnóstico, quantifica a gravidade e afasta outras compressões (radiculopatia C6 e C7, compressão proximal do mediano). A ultrassonografia mostra aumento da área de secção do nervo.\n\n> O Phalen é útil, mas não é o teste mais sensível e específico; o teste de compressão tende a superá-lo.",
+  "correta": "**B: Errado.** O teste de Phalen é um dos mais conhecidos, mas não é o mais sensível e específico para a síndrome do túnel do carpo. Seus valores são moderados, em torno de 70% nas revisões, e o teste de compressão do carpo de Durkan mostra sensibilidade maior em vários estudos. O diagnóstico depende da combinação de quadro clínico e testes, com confirmação pela eletroneuromiografia quando necessário.",
+  "incorretas": {
+   "A": "**Marcar certo é confundir popularidade com acurácia.** O Phalen é o teste mais lembrado e ensinado, mas os estudos de acurácia não o colocam acima dos demais. A eletroneuromiografia, não um teste clínico, é a referência objetiva."
+  },
+  "referencias": [
+   "Durkan JA. A new diagnostic test for carpal tunnel syndrome. J Bone Joint Surg Am. 1991;73(4):535-538.",
+   "MacDermid JC, Wessel J. Clinical diagnosis of carpal tunnel syndrome: a systematic review. J Hand Ther. 2004;17(2):309-319."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "mao-1257": {
+  "conceito": "**Testes de contratura dos flexores do quadril.** Os flexores do quadril incluem o iliopsoas (monoarticular, cruza só o quadril) e o reto femoral (biarticular, cruza o quadril e o joelho). Testes diferentes separam essas contraturas.\n\n**Teste de Thomas.** Paciente em decúbito dorsal. O examinador flete ao máximo o quadril contralateral, levando o joelho ao tórax, o que elimina a lordose lombar compensatória. Se o membro examinado se eleva da maca, há **contratura em flexão do quadril** (o ângulo entre a coxa e a maca mede a contratura). Avalia principalmente o iliopsoas e a cápsula anterior.\n\n**Teste de Ely (Duncan-Ely).** Paciente em decúbito ventral. O examinador flete passivamente o joelho. Se a pelve e a nádega se elevam da maca (o quadril flete), há **contratura do reto femoral**, que, por ser biarticular, puxa o quadril quando é estirado no joelho.\n\n**Outros testes relacionados.**\n- **Staheli (extensão em prono)**: mede a contratura em flexão do quadril com o paciente em prono, com a pelve fora da maca. Útil na paralisia cerebral.\n- **Ober**: contratura da banda iliotibial (abdução).\n- **Phelps**: contratura dos grácil e adutores.\n\n| Teste | Posição | Estrutura avaliada |\n|---|---|---|\n| Thomas | Decúbito dorsal | Flexores do quadril (iliopsoas) |\n| Ely | Decúbito ventral | Reto femoral |\n| Ober | Decúbito lateral | Banda iliotibial |\n\n> Thomas: contratura em flexão do quadril. Ely: contratura do reto femoral.",
+  "correta": "**A: Certo.** O teste de Thomas avalia a contratura em flexão do quadril, eliminando a lordose lombar compensatória pela flexão do quadril oposto. O teste de Ely avalia a contratura do reto femoral: com o paciente em prono, a flexão do joelho faz a pelve se elevar se o reto estiver encurtado, porque ele cruza as duas articulações.",
+  "incorretas": {
+   "B": "**Marcar errado seria trocar os testes ou atribuir ao Ely a avaliação da banda iliotibial (que é o teste de Ober).** As duas definições do item são as clássicas dos livros de propedêutica."
+  },
+  "referencias": [
+   "Hoppenfeld S. Propedêutica ortopédica: coluna e extremidades. Atheneu.",
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Exame físico da criança."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "mao-1258": {
+  "conceito": "**As duas bandas do ligamento cruzado anterior.** O LCA tem duas bandas nomeadas pela inserção na tíbia:\n- **Anteromedial (AM)**: mais tensa em **flexão**; principal restrição à translação anterior em 90 graus.\n- **Posterolateral (PL)**: mais tensa em **extensão** e perto dela; contribui para o controle da translação anterior em pequena flexão e da rotação.\n\n**Correlação com os testes clínicos.**\n\n| Teste | Posição do joelho | Banda mais testada |\n|---|---|---|\n| Gaveta anterior | 90 graus de flexão | Anteromedial |\n| Lachman | 20 a 30 graus de flexão | Posterolateral (e o LCA como um todo) |\n| Pivot shift | Da extensão para a flexão, com valgo e rotação interna | Posterolateral e controle rotatório |\n\n**Lesão isolada da banda AM.** A gaveta anterior a 90 graus tende a ser positiva, porque a banda que deveria conter a translação nessa posição está rota. O Lachman pode ser duvidoso ou quase normal, porque a banda PL, íntegra e tensa perto da extensão, ainda segura a tíbia. O pivot shift costuma ser negativo ou leve.\n\n**Lesão isolada da banda PL.** O oposto: Lachman e pivot shift mais alterados, gaveta anterior quase normal.\n\n**Importância cirúrgica.** O reconhecimento das lesões parciais motivou técnicas de aumento (reconstrução de uma só banda preservando a outra) e as reconstruções anatômicas de dupla banda.\n\n> Banda AM: tensa em flexão, gaveta anterior. Banda PL: tensa em extensão, Lachman e pivot shift.",
+  "correta": "**A: Certo.** Na lesão isolada da banda anteromedial, que é a principal restrição à translação anterior com o joelho a 90 graus, a gaveta anterior tende a ser positiva. Já o Lachman, feito a 20 a 30 graus de flexão, pode ser duvidoso, porque a banda posterolateral íntegra está tensa perto da extensão e continua contendo a tíbia. (O texto \"Área livre\" no final do item é apenas resquício da diagramação da prova.)",
+  "incorretas": {
+   "B": "**Marcar errado seria pensar no padrão da lesão completa, em que o Lachman é o teste mais sensível.** Na ruptura total do LCA, o Lachman é de fato mais confiável que a gaveta. Na lesão parcial da banda AM, a lógica muda, porque a banda que restou controla a translação perto da extensão."
+  },
+  "referencias": [
+   "Petersen W, Zantop T. Anatomy of the anterior cruciate ligament with regard to its two bundles. Clin Orthop Relat Res. 2007;454:35-47.",
+   "Scott WN, ed. Insall & Scott Surgery of the Knee. Elsevier. Lesões do ligamento cruzado anterior."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  }
 }
