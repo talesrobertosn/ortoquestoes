@@ -2257,16 +2257,19 @@
   "conferido": false
  },
  "tumores-0210": {
-  "conceito": "**O tumor ósseo primário mais comum da mão** é o **encondroma**, que responde pela grande maioria dos casos, com sede preferencial na falange proximal, seguida do metacarpo e da falange média. Nasce de restos de cartilagem fisária na metáfise e é central, lítico e bem delimitado, afinando e insuflando a cortical, às vezes com calcificações puntiformes. Costuma ser assintomático e se apresentar com **fratura patológica** após trauma banal; a conduta é deixar a fratura consolidar e, se a lesão persistir e for grande, fazer curetagem com enxerto.\n\n**Mão e esqueleto central.** Na mão, insuflação e cortical fina são comuns e benignas, e a malignização é rara; na pelve, no fêmur proximal e na cintura escapular, a mesma lesão merece desconfiança. Encondromas múltiplos configuram a doença de Ollier, e, com hemangiomas, a síndrome de Maffucci.\n\n**Na prova:** o tumor ósseo primário mais comum da mão é o **encondroma**.",
-  "correta": "**Encondroma.** É, de longe, o tumor ósseo primário mais comum da mão.",
+  "conceito": "**Os tumores ósseos da mão.** A grande maioria é **benigna**. O mais comum, de longe, é o **encondroma**, que acomete sobretudo as **falanges proximais** e os metacarpos. Os tumores **malignos primários** da mão são **raros**.\n\n**O tumor maligno primário mais comum da mão: o condrossarcoma.**\n- Geralmente de **baixo grau**.\n- Acomete adultos, mais nas falanges proximais e nos metacarpos.\n- Pode surgir **de novo** ou a partir de um **encondroma** (transformação maligna), sobretudo nas **encondromatoses múltiplas**: **doença de Ollier** e **síndrome de Maffucci** (com hemangiomas).\n- Sinais de alerta num encondroma: **dor** sem fratura, lesão **grande** (mais de 5 cm), **destruição cortical**, massa de partes moles e crescimento no adulto.\n\n**Os tumores malignos que acometem a mão.**\n\n| Tumor | Comentário |\n|---|---|\n| **Condrossarcoma** | O **maligno primário mais comum** da mão |\n| Osteossarcoma | Raro na mão |\n| Sarcoma de Ewing | Raro na mão; em crianças e jovens |\n| Fibrossarcoma | Raro |\n| **Metástases** | No conjunto, comparáveis em número; o **pulmão** é o primário mais comum (metástases acrais) |\n\n**Encondroma x condrossarcoma.** A diferenciação é difícil, até na histologia, porque ambos são tumores de cartilagem. Na mão, os encondromas podem ter células com atipia sem serem malignos. Por isso, a decisão considera a **clínica** e a **imagem** em conjunto.\n\n**O tratamento.**\n- **Encondroma**: observação (assintomático) ou **curetagem e enxerto** (com dor ou fratura patológica, após a consolidação).\n- **Condrossarcoma** de baixo grau: curetagem ampliada com adjuvantes ou **ressecção** com margem; nos tumores agressivos, **amputação** do dedo ou do raio. O condrossarcoma é **resistente** à quimioterapia e à radioterapia: a cirurgia é o tratamento.\n\n**O encondroma: o tumor ósseo primário mais comum da mão.** Responde pela grande maioria dos tumores ósseos da mão. Acomete adultos jovens, mais nas **falanges proximais**, seguidas dos metacarpos e das falanges médias. Na radiografia, é uma lesão **lítica central**, bem delimitada, que pode **afinar e expandir** a cortical, com **calcificações** da matriz em \"pipoca\" ou em anéis e arcos. Frequentemente é descoberto por uma **fratura patológica** após um trauma pequeno.",
+  "correta": "**Correta: D (encondroma).** O **encondroma** é o tumor ósseo primário mais comum da mão. É benigno, cartilaginoso, mais frequente nas falanges proximais, e muitas vezes é descoberto por uma fratura patológica.",
   "incorretas": {
-   "A": "**Raro na mão.** O osteoma osteoide prefere o fêmur proximal e a tíbia.",
-   "B": "**Incomum na mão.** O cisto aneurismático existe na mão, mas é raro.",
-   "C": "**Excepcional e maligno.** O Ewing prefere ossos longos e pelve."
+   "A": "O **osteoma osteoide** ocorre na mão (falanges proximais e carpo), mas é muito menos frequente que o encondroma.",
+   "B": "O **cisto ósseo aneurismático** é raro na mão.",
+   "C": "O **sarcoma de Ewing** é raro na mão e é maligno."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)",
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "tumores-0211": {
   "conceito": "**A grande imitadora.** A osteomielite **subaguda** imita tumor na criança: dor de semanas a meses, muitas vezes sem febre, leucócitos frequentemente normais e culturas negativas em boa parte dos casos. A classificação de **Roberts** mostra que cada tipo radiográfico tem seu sósia tumoral: o **IA**, lucência metafisária em saca-bocado, lembra granuloma eosinofílico; o **IB**, lucência metafisária com halo esclerótico, é o abscesso de Brodie; o **II**, lesão metafisária com erosão cortical, lembra osteossarcoma; o **III**, lesão cortical diafisária com reação periosteal densa, lembra osteoma osteoide; o **IV**, lesão **diafisária** com reação periosteal em **casca de cebola**, é o retrato do **sarcoma de Ewing**; o V é epifisário, e o VI, vertebral.\n\n**A lição prática.** Diante de lesão agressiva na criança, infecção e tumor competem, e a biópsia deve mandar material ao **patologista e ao microbiologista**, nunca a um só.\n\n**Na prova:** o tipo de Roberts que imita o Ewing é o **IV**, diafisário com casca de cebola.",
