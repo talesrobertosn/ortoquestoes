@@ -1451,14 +1451,18 @@
   "conferido": false
  },
  "trauma-0118": {
+  "conceito": "**O tálus e a sua irrigação frágil.** Cerca de **60%** da superfície do tálus é coberta por **cartilagem**, e não há inserções musculares. Os vasos entram por poucas áreas, e a irrigação é **retrógrada** para o corpo:\n- **artéria do canal do tarso** (ramo da tibial posterior): a principal para o corpo;\n- **artéria do seio do tarso** (da fibular e da dorsal do pé);\n- ramos **deltoides** (da tibial posterior), que entram pelo lado medial;\n- ramos do **colo** (da dorsal do pé).\n\n**A fratura do colo do tálus e a necrose.** Na fratura do colo com **luxação**, os vasos que chegam ao corpo pelo colo e pelo canal do tarso são rompidos. O risco de necrose segue a classificação de **Hawkins** (modificada por Canale e Kelly):\n\n| Tipo | Achado | Necrose avascular |\n|---|---|---|\n| I | Sem desvio | Até cerca de 10% |\n| II | Subluxação ou luxação da **subtalar** | Cerca de 40% (menos nas séries recentes) |\n| III | Luxação da subtalar e do **tornozelo** | Até cerca de 90% |\n| IV | Também da **talonavicular** | Próximo de 100% |\n\n**O sinal de Hawkins.** É uma **faixa radiotransparente subcondral** na cúpula do tálus, visível na radiografia **AP do tornozelo** entre **6 e 8 semanas** após a fratura.\n- Ela indica que o osso está sendo **reabsorvido** pela **hiperemia** do desuso, ou seja, que o corpo do tálus **tem irrigação**.\n- **Presente**: bom sinal: o tálus está **vascularizado** (é improvável a necrose).\n- **Ausente**: o corpo continua **denso** (esclerótico) em relação aos ossos vizinhos, que ficaram osteopênicos: sugere **necrose avascular**, embora não seja definitivo.\n\n**Por isso, o diagnóstico radiográfico da necrose é feito por volta de 6 a 8 semanas.** Antes disso, ainda não houve tempo para a diferença entre o osso vivo (que se torna osteopênico) e o osso morto (que permanece denso). A **ressonância** pode mostrar a necrose mais cedo.\n\n**O tratamento das fraturas desviadas.** **Redução anatômica urgente**, sobretudo nas luxações (para aliviar a pele e os vasos), e **fixação** estável. A necrose não impede necessariamente a consolidação, e o colapso pode não ocorrer. O tratamento da necrose estabelecida varia de proteção da carga até a artrodese.",
+  "correta": "**Correta: B (6 a 8 semanas).** Na fratura-luxação do tálus, o diagnóstico radiográfico da osteonecrose é feito entre **6 e 8 semanas**, pela **ausência do sinal de Hawkins**. A faixa radiotransparente subcondral, quando presente, indica que o corpo do tálus está vascularizado.",
   "incorretas": {
-   "A": "De 3 a 4 semanas é cedo demais para a diferença aparecer.",
-   "C": "De 10 a 12 semanas é tardio para o primeiro sinal.",
-   "D": "De 14 a 16 semanas é muito tardio."
+   "A": "Com **3 a 4 semanas**, ainda não houve tempo para a osteopenia de desuso aparecer, e a radiografia não diferencia o osso vivo do necrótico.",
+   "C": "Com **10 a 12 semanas**, a avaliação é possível, mas o sinal de Hawkins já deve ser procurado mais cedo, entre 6 e 8 semanas.",
+   "D": "Com **14 a 16 semanas**, o diagnóstico seria tardio. O sinal de Hawkins é avaliado por volta de 6 a 8 semanas."
   },
-  "conceito": "Depois da **fratura-luxação do tálus**, o corpo pode perder a irrigação, que vem sobretudo da **artéria do canal do tarso**. A radiografia mostra se o osso está vivo ou morto a partir da **6ª a 8ª semana**.\n\n**Por que nessa época**: com a imobilização e sem carga, o osso **vivo** do pé fica **mais claro** (osteopenia por desuso e hiperemia). O osso **morto** não participa dessa reabsorção.\n\n**O que se vê**:\n\n**osso vivo**: o **sinal de Hawkins**, uma faixa clara sob a cúpula do tálus;\n\n**osso necrótico**: **ausência** do sinal e **esclerose relativa** do corpo, que fica mais denso que os ossos em volta.\n\n**O colapso** do domo vem **tardiamente**, meses depois. A **RM** confirma a necrose bem antes da radiografia.\n\n**O risco por Hawkins**: aumenta do tipo I (sem desvio) ao tipo IV (luxação talonavicular também).\n\n**Na prova**: o diagnóstico radiográfico da necrose do tálus é feito a partir de **6 a 8 semanas**.",
-  "correta": "Entre a 6ª e a 8ª semana, o osso vivo clareia e o corpo necrótico fica relativamente denso, sem sinal de Hawkins.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)",
+   "Hawkins LG. Fractures of the neck of the talus. J Bone Joint Surg Am. 1970;52(5):991-1002."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0119": {
