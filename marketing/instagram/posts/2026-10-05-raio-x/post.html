@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Raio-X do Orto Questões</title>
+<!-- Carrossel de feed (7 slides, 1080x1350) e 1 story (1080x1920): as funções do site
+     apresentadas como incidências de um raio-x num negatoscópio, com laudo no final.
+     Telas: capturas de telas.mjs recortadas para telas/rx-*.png (pasta ignorada pelo git).
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-05-raio-x/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+:root {
+  --sala: #0A1110; --sala2: #101b19; --luz: #EAF4F5; --luz2: #cfe3e6; --tinta: #10201E; --cinza: #8FA3A0;
+  --verde: #14655E; --verde2: #5FB8A8; --ouro: #F4CF7C; --mao: #E0B24F; --enare: #E07A62; --coluna: #7FA9EB;
+  --quadril: #C5A8F0; --ombro: #8FD3EF;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; color: #fff; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1350px; padding: 64px 72px;
+  background: radial-gradient(1100px 900px at 75% 45%, #16302c 0%, var(--sala2) 45%, var(--sala) 100%); }
+section.story { height: 1920px; padding: 110px 80px; }
+.topo { display: flex; justify-content: space-between; align-items: center; position: relative; z-index: 3; }
+.marca { display: flex; align-items: center; gap: 14px; font: 34px Jakarta; letter-spacing: -.02em; color: #fff; }
+.marca svg { width: 52px; height: 52px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; }
+.cont { font: 700 24px Jakarta; color: var(--cinza); letter-spacing: .08em; }
+.inc { display: inline-flex; align-items: center; gap: 12px; font: 800 22px Jakarta; letter-spacing: .16em; text-transform: uppercase; color: var(--ouro); }
+.inc i { width: 40px; height: 2px; background: var(--ouro); display: block; }
+h1, h2 { font-family: Jakarta; letter-spacing: -.045em; line-height: .98; position: relative; z-index: 3; font-weight: 800; }
+h1 { font-size: 128px; }
+h2 { font-size: 74px; }
+h1 em, h2 em { font-style: normal; color: var(--ouro); }
+.sub { font-size: 31px; line-height: 1.4; color: #c9d6d4; position: relative; z-index: 3; text-wrap: pretty; }
+.sub b { color: #fff; }
+.rodape { position: absolute; left: 72px; right: 72px; bottom: 54px; display: flex; justify-content: space-between; align-items: center; font: 700 23px Jakarta; color: var(--cinza); z-index: 3; }
+.rodape .seta { color: #fff; }
+
+/* Negatoscópio: moldura metálica, tela de luz e presilhas */
+.nega { position: absolute; z-index: 2; border-radius: 22px; padding: 18px;
+  background: linear-gradient(180deg, #3a4644, #232c2b); box-shadow: 0 40px 120px rgba(0,0,0,.6), 0 0 0 2px #46524f inset; }
+.nega::before { content: ''; position: absolute; inset: -60px; z-index: -1; border-radius: 80px;
+  background: radial-gradient(closest-side, rgba(200,235,240,.22), transparent); }
+.luz { position: relative; height: 100%; border-radius: 10px; overflow: hidden;
+  background: radial-gradient(120% 90% at 50% 30%, #ffffff 0%, var(--luz) 45%, var(--luz2) 100%); }
+.luz::after { content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: repeating-linear-gradient(90deg, rgba(0,0,0,.025) 0 2px, transparent 2px 120px); }
+.presilha { position: absolute; top: -10px; width: 70px; height: 30px; border-radius: 6px; background: linear-gradient(#cfd7d5, #8d9896); z-index: 4; box-shadow: 0 4px 8px rgba(0,0,0,.4); }
+.marcador { position: absolute; z-index: 4; font: 800 30px Jakarta; color: #fff; background: #10201e; border-radius: 6px; padding: 4px 12px; }
+
+/* Celular dentro do negatoscópio */
+.cel { position: absolute; left: 50%; transform: translateX(-50%); width: 440px; border-radius: 46px; padding: 12px; background: #0d1413;
+  box-shadow: 0 30px 60px rgba(0,0,0,.45), 0 0 0 2px #2b3533 inset; z-index: 2; }
+.cel .tela { border-radius: 36px; overflow: hidden; background: #111; }
+.cel img { display: block; width: 100%; }
+.ilustr { position: absolute; z-index: 4; font: 600 17px Inter; color: #3d4b49; letter-spacing: .02em; }
+
+/* Setas de laudo: número no celular e legenda ao lado */
+.ponto { position: absolute; z-index: 5; width: 54px; height: 54px; border-radius: 50%; background: var(--ouro); color: var(--tinta);
+  display: grid; place-items: center; font: 800 26px Jakarta; box-shadow: 0 0 0 6px rgba(244,207,124,.3), 0 6px 14px rgba(0,0,0,.35); }
+.achados { list-style: none; display: grid; gap: 26px; position: relative; z-index: 3; }
+.achados li { display: grid; grid-template-columns: 54px 1fr; gap: 20px; align-items: start; font-size: 28px; line-height: 1.35; color: #d6e1df; }
+.achados li b { color: #fff; display: block; font: 800 31px Jakarta; letter-spacing: -.02em; margin-bottom: 4px; }
+.achados .ponto { position: static; box-shadow: none; }
+
+/* Provas */
+.provas { display: flex; flex-wrap: wrap; gap: 16px; position: relative; z-index: 3; }
+.prova { display: inline-flex; align-items: center; gap: 14px; padding: 16px 26px 16px 20px; border-radius: 999px; background: rgba(255,255,255,.06);
+  border: 2px solid rgba(255,255,255,.14); font: 800 34px Jakarta; letter-spacing: -.02em; color: #fff; }
+.prova i { width: 20px; height: 20px; border-radius: 50%; background: var(--c); box-shadow: 0 0 14px var(--c); }
+
+/* Laudo */
+.laudo { position: absolute; z-index: 3; background: #FBF8EF; color: var(--tinta); border-radius: 18px; padding: 54px 60px;
+  box-shadow: 0 40px 100px rgba(0,0,0,.55); }
+.laudo .cab { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 3px solid var(--tinta); padding-bottom: 18px; margin-bottom: 26px; }
+.laudo .cab strong { font: 800 54px Jakarta; letter-spacing: -.03em; }
+.laudo .cab span { font: 700 20px Inter; color: #5B6866; letter-spacing: .1em; text-transform: uppercase; }
+.laudo dt { font: 800 21px Jakarta; letter-spacing: .14em; text-transform: uppercase; color: var(--verde); margin-top: 22px; }
+.laudo dd { font-size: 27px; line-height: 1.42; color: #24322f; margin-top: 6px; }
+.laudo dd b { color: var(--tinta); }
+.carimbo { position: absolute; right: 50px; bottom: 44px; transform: rotate(-9deg); border: 5px solid #B8452F; color: #B8452F; border-radius: 12px;
+  padding: 10px 20px; font: 800 30px Jakarta; letter-spacing: .06em; text-transform: uppercase; opacity: .88; }
+.cta { display: inline-flex; align-items: center; gap: 14px; background: var(--ouro); color: var(--tinta); font: 800 36px Jakarta; letter-spacing: -.02em; padding: 22px 34px; border-radius: 18px; position: relative; z-index: 3; }
+.tracejado { position: absolute; z-index: 3; border: 4px dashed rgba(255,255,255,.55); border-radius: 26px; display: grid; place-items: center; font: 700 26px Jakarta; color: rgba(255,255,255,.7); }
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/>
+<circle cx="17" cy="20" r="4.5" fill="#9cc3bd"/><rect x="26" y="16.5" width="24" height="7" rx="3.5" fill="#9cc3bd"/>
+<circle cx="17" cy="32" r="4.5" fill="#f4cf7c"/><rect x="26" y="28.5" width="24" height="7" rx="3.5" fill="#f4cf7c"/>
+<circle cx="17" cy="44" r="4.5" fill="#9cc3bd"/><rect x="26" y="40.5" width="19" height="7" rx="3.5" fill="#9cc3bd"/></symbol>
+</defs></svg>
+
+<!-- 1. Capa: o site no negatoscópio, em negativo, como uma radiografia -->
+<section id="f1-capa">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">1/7</span></div>
+  <p class="inc" style="margin-top:70px"><i></i>Exame de rotina</p>
+  <h1 style="margin-top:26px;font-size:100px">Raio-X<br>do Orto<br><em>Questões</em></h1>
+  <p class="sub" style="margin-top:34px;max-width:430px">Tudo o que tem dentro do site, uma incidência por slide.</p>
+  <div class="nega" style="left:590px;top:230px;width:420px;height:980px">
+    <span class="presilha" style="left:80px"></span><span class="presilha" style="right:80px"></span>
+    <div class="luz" style="background:radial-gradient(120% 90% at 50% 30%, #e9f2f3, #b9cdd0)">
+      <span class="marcador" style="left:20px;top:20px">D</span>
+      <div class="cel" style="top:80px;width:340px;filter:grayscale(1) invert(1) contrast(1.15) brightness(1.05)"><div class="tela"><img src="../../telas/rx-inicio-alto.png"></div></div>
+    </div>
+  </div>
+  <span class="ponto" style="left:566px;top:420px">1</span>
+  <span class="ponto" style="left:984px;top:640px">2</span>
+  <span class="ponto" style="left:566px;top:900px">3</span>
+  <div class="rodape"><span>Tela ilustrativa</span><span class="seta">Arraste para ver o laudo →</span></div>
+</section>
+
+<!-- 2. As provas -->
+<section id="f2-provas">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">2/7</span></div>
+  <p class="inc" style="margin-top:64px"><i></i>Incidência 1 · As provas</p>
+  <h2 style="margin-top:22px">Uma prova<br>para cada <em>caminho</em>.</h2>
+  <p class="sub" style="margin-top:28px;max-width:900px">Provas anteriores comentadas, separadas por prova e por assunto. Você escolhe o que entra no seu treino.</p>
+  <div class="provas" style="margin-top:46px;max-width:940px">
+    <span class="prova" style="--c:#5FB8A8"><i></i>TEOT</span>
+    <span class="prova" style="--c:#5FB8A8"><i></i>TARO</span>
+    <span class="prova" style="--c:var(--enare)"><i></i>R4 ENARE</span>
+    <span class="prova" style="--c:var(--coluna)"><i></i>R4 Coluna</span>
+    <span class="prova" style="--c:var(--mao)"><i></i>Cirurgia da mão</span>
+    <span class="prova" style="--c:var(--ombro)"><i></i>Ombro e cotovelo (TECOC)</span>
+    <span class="prova" style="--c:var(--quadril)"><i></i>Fellowship de quadril</span>
+  </div>
+  <div class="nega" style="left:72px;right:72px;top:930px;height:300px;padding:14px">
+    <div class="luz" style="display:flex;align-items:center;justify-content:space-between;padding:0 50px;color:var(--tinta)">
+      <div style="font:800 40px Jakarta;letter-spacing:-.03em;line-height:1.15">Comece pelo TEOT.<br><span style="color:var(--verde)">Termine no fellowship.</span></div>
+      <div style="font:600 22px Inter;line-height:1.45;color:#3d4b49;max-width:330px">Fellowship de quadril: questões próprias, no padrão da prova e com a bibliografia de referência.</div>
+    </div>
+  </div>
+  <div class="rodape"><span>ortoquestoes.com.br</span><span class="seta">→</span></div>
+</section>
+
+<!-- 3. O comentário -->
+<section id="f3-comentario">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">3/7</span></div>
+  <p class="inc" style="margin-top:64px"><i></i>Incidência 2 · O comentário</p>
+  <h2 style="margin-top:22px;max-width:470px">Cada questão<br>é uma <em>aula</em>.</h2>
+  <ul class="achados" style="margin-top:46px;max-width:450px">
+    <li><span class="ponto">1</span><span><b>O tema inteiro</b>Fundamentos e mecanismo antes da resposta.</span></li>
+    <li><span class="ponto">2</span><span><b>Todas as alternativas</b>A certa e cada errada, com o porquê e a pegadinha.</span></li>
+    <li><span class="ponto">3</span><span><b>Classificações e tabelas</b>O que a banca cobra, organizado para revisar.</span></li>
+    <li><span class="ponto">4</span><span><b>Referências</b>No fim de cada comentário.</span></li>
+  </ul>
+  <div class="nega" style="left:560px;top:190px;width:450px;height:1060px">
+    <span class="presilha" style="left:70px"></span><span class="presilha" style="right:70px"></span>
+    <div class="luz">
+      <div class="cel" style="top:110px;width:390px"><div class="tela"><img src="../../telas/rx-coment.png"></div></div>
+      <span class="ilustr" style="left:0;right:0;bottom:22px;text-align:center">Tela ilustrativa</span>
+    </div>
+  </div>
+  <span class="ponto" style="left:536px;top:430px">1</span>
+  <span class="ponto" style="left:536px;top:840px">3</span>
+  <div class="rodape"><span></span><span class="seta">→</span></div>
+</section>
+
+<!-- 4. A revisão -->
+<section id="f4-revisao">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">4/7</span></div>
+  <div class="nega" style="left:72px;top:190px;width:450px;height:1060px">
+    <span class="presilha" style="left:70px"></span><span class="presilha" style="right:70px"></span>
+    <div class="luz">
+      <span class="marcador" style="right:20px;top:20px">E</span>
+      <div class="cel" style="top:90px;width:390px"><div class="tela"><img src="../../telas/rx-revisao.png"></div></div>
+      <span class="ilustr" style="left:0;right:0;bottom:22px;text-align:center">Tela ilustrativa</span>
+    </div>
+  </div>
+  <div style="position:absolute;left:580px;right:72px;top:250px;z-index:3">
+    <p class="inc"><i></i>Incidência 3 · A revisão</p>
+    <h2 style="margin-top:22px;font-size:70px">O que você erra <em>volta</em>.</h2>
+    <p class="sub" style="margin-top:28px">No dia certo, para não esquecer na véspera da prova.</p>
+    <ul class="achados" style="margin-top:44px">
+      <li><span class="ponto">1</span><span><b>Revisar hoje</b>A fila do dia, começando pelo que você errou.</span></li>
+      <li><span class="ponto">2</span><span><b>Caderno de erros</b>Tudo o que você errou, por tema.</span></li>
+      <li><span class="ponto">3</span><span><b>Calendário de carga</b>Sem dia impossível.</span></li>
+    </ul>
+  </div>
+  <div class="rodape"><span></span><span class="seta">→</span></div>
+</section>
+
+<!-- 5. Desempenho -->
+<section id="f5-desempenho">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">5/7</span></div>
+  <p class="inc" style="margin-top:64px"><i></i>Incidência 4 · Desempenho</p>
+  <h2 style="margin-top:22px;max-width:470px">Sem achismo<br>sobre onde você <em>erra</em>.</h2>
+  <ul class="achados" style="margin-top:46px;max-width:450px">
+    <li><span class="ponto">1</span><span><b>Acerto geral</b>E a evolução ao longo das semanas.</span></li>
+    <li><span class="ponto">2</span><span><b>Por tema e subtema</b>Para saber onde gastar o seu tempo.</span></li>
+    <li><span class="ponto">3</span><span><b>Cronograma</b>Monta o estudo até a data da sua prova.</span></li>
+  </ul>
+  <div class="nega" style="left:560px;top:190px;width:450px;height:1060px">
+    <span class="presilha" style="left:70px"></span><span class="presilha" style="right:70px"></span>
+    <div class="luz">
+      <div class="cel" style="top:90px;width:390px"><div class="tela"><img src="../../telas/rx-dados.png"></div></div>
+      <span class="ilustr" style="left:0;right:0;bottom:22px;text-align:center">Tela ilustrativa</span>
+    </div>
+  </div>
+  <span class="ponto" style="left:536px;top:610px">1</span>
+  <div class="rodape"><span></span><span class="seta">→</span></div>
+</section>
+
+<!-- 6. Ranking e conquistas, com a pixel art do site -->
+<section id="f6-ranking">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">6/7</span></div>
+  <p class="inc" style="margin-top:64px"><i></i>Incidência 5 · Ranking</p>
+  <h2 style="margin-top:22px">Estudar também<br>é <em>subir de posição</em>.</h2>
+  <p class="sub" style="margin-top:26px;max-width:900px">Ranking da semana e geral, liga da sua residência, conquistas e o salão dos campeões. Conta volume: aqui ganha quem aparece todo dia.</p>
+  <div class="nega" style="left:72px;right:72px;top:560px;height:690px;padding:16px">
+    <span class="presilha" style="left:160px"></span><span class="presilha" style="right:160px"></span>
+    <div class="luz" style="display:grid;grid-template-columns:1fr 1fr;gap:26px;padding:44px 34px 30px">
+      <div style="border-radius:22px;overflow:hidden;box-shadow:0 20px 40px rgba(0,0,0,.35);height:540px"><img src="../../telas/rx-podio.png" style="width:100%;height:100%;object-fit:cover;object-position:top"></div>
+      <div style="display:grid;gap:20px;align-content:start">
+        <div style="border-radius:22px;overflow:hidden;box-shadow:0 20px 40px rgba(0,0,0,.35)"><img src="../../telas/rx-subindo.png" style="width:100%;display:block"></div>
+        <div style="font:800 34px Jakarta;letter-spacing:-.03em;color:var(--tinta);line-height:1.15;padding:6px 8px">Quem sobe rápido<br><span style="color:var(--verde)">aparece aqui.</span></div>
+      </div>
+      <span class="ilustr" style="left:0;right:0;bottom:12px;text-align:center">Tela ilustrativa, nomes de exemplo</span>
+    </div>
+  </div>
+  <div class="rodape"><span></span><span class="seta">→</span></div>
+</section>
+
+<!-- 7. Laudo -->
+<section id="f7-laudo">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">7/7</span></div>
+  <div class="laudo" style="left:72px;right:72px;top:170px;height:900px">
+    <div class="cab"><strong>Laudo</strong><span>Exame: Orto Questões</span></div>
+    <dl>
+      <dt>Técnica</dt>
+      <dd>Avaliação completa, em todas as incidências, pelo celular ou pelo computador.</dd>
+      <dt>Achados</dt>
+      <dd><b>Provas anteriores comentadas</b> de TEOT, TARO, R4 ENARE, R4 Coluna, cirurgia da mão e ombro e cotovelo, e questões no padrão do fellowship de quadril. <b>Comentário</b> em cada alternativa. <b>Revisão</b> no dia certo. <b>Desempenho</b> por tema. <b>Ranking</b> e conquistas.</dd>
+      <dt>Impressão</dt>
+      <dd>Preparação de alto rendimento, se usado todos os dias.</dd>
+      <dt>Conduta</dt>
+      <dd>Criar a conta grátis hoje.</dd>
+    </dl>
+    <span class="carimbo">Liberado<br>para estudar</span>
+  </div>
+  <div style="position:absolute;left:72px;right:72px;top:1120px;display:flex;align-items:center;justify-content:space-between;z-index:3">
+    <span class="cta">ortoquestoes.com.br <b>→</b></span>
+    <span style="font:700 26px Jakarta;color:var(--cinza)">Link na bio</span>
+  </div>
+</section>
+
+<!-- Story: a capa do exame com o espaço da figurinha de link -->
+<section id="s1-story" class="story">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="inc"><i></i>Exame de rotina</span></div>
+  <h1 style="margin-top:80px;font-size:118px">Fizemos um<br><em>raio-x</em> do<br>Orto Questões.</h1>
+  <div class="nega" style="left:80px;right:80px;top:680px;height:700px;padding:18px">
+    <span class="presilha" style="left:140px"></span><span class="presilha" style="right:140px"></span>
+    <div class="luz" style="padding:56px 52px;color:var(--tinta)">
+      <span class="marcador" style="right:22px;top:22px">D</span>
+      <p style="font:800 24px Jakarta;letter-spacing:.16em;text-transform:uppercase;color:var(--verde)">Achados</p>
+      <div style="display:grid;gap:22px;margin-top:26px;font:800 44px Jakarta;letter-spacing:-.03em;line-height:1.08">
+        <span>TEOT · TARO</span>
+        <span>R4 ENARE · R4 Coluna</span>
+        <span>Cirurgia da mão</span>
+        <span>Ombro e cotovelo · Quadril</span>
+      </div>
+      <p style="margin-top:34px;font:500 30px Inter;line-height:1.45;color:#2f3d3b;max-width:760px">Comentário em cada alternativa, revisão no dia certo, desempenho por tema e ranking com conquistas.</p>
+    </div>
+  </div>
+  <p class="sub" style="position:absolute;left:80px;right:80px;top:1450px;font-size:34px">O laudo completo está no post de hoje.</p>
+  <div class="tracejado" style="left:240px;right:240px;top:1560px;height:170px">figurinha de link</div>
+</section>
+
+</body></html>
