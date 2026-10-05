@@ -3556,19 +3556,20 @@
   "conferido": false
  },
  "tumores-0340": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "D",
-  "conceito": "**Mieloma múltiplo.** Lesões em saca-bocado, sem borda esclerótica; a cintilografia pode ser normal, pois a atividade osteoblástica é baixa.\n\n**Na prova:** mieloma pede inventário radiográfico; cintilografia é fria.",
-  "correta": "**Lesão lítica sem borda esclerótica  e normocaptação.** É o padrão típico.",
+  "conceito": "**Mieloma múltiplo na imagem: por que a cintilografia engana.** O mieloma é a proliferação clonal de plasmócitos na medula óssea. Os plasmócitos e o microambiente tumoral produzem fatores (RANKL, MIP-1 alfa, DKK1) que **ativam osteoclastos** e **suprimem osteoblastos**. O resultado é **reabsorção óssea pura**, sem formação de osso reativo.\n\n**Consequências na imagem.**\n- **Radiografia**: lesões **líticas em saca-bocado** (punched-out), bem definidas mas **sem borda esclerótica**, porque não há resposta osteoblástica. Locais: crânio (aspecto em \"sal e pimenta\"), coluna, costelas, pelve, fêmur e úmero proximais. Osteopenia difusa e fraturas vertebrais são comuns.\n- **Cintilografia óssea**: o tecnécio se fixa onde há **atividade osteoblástica**. Sem ela, a lesão aparece **normal ou fria**, mesmo extensa. Por isso, a cintilografia é **pouco sensível** no mieloma.\n\n**Exames de escolha (International Myeloma Working Group).**\n\n| Exame | Papel |\n|---|---|\n| Tomografia de corpo inteiro de baixa dose | Padrão para detectar lesões líticas |\n| Ressonância (coluna e pelve ou corpo inteiro) | Infiltração medular, lesões focais, compressão medular |\n| PET-CT | Atividade da doença e resposta ao tratamento |\n| Inventário radiográfico | Alternativa histórica, menos sensível |\n| Cintilografia óssea | Não recomendada |\n\n**Diferencial com metástases.** Metástases de mama e próstata estimulam osteoblastos e aparecem quentes na cintilografia. Exceções frias: mieloma, metástases muito agressivas de rim e tireoide, e algumas de pulmão.\n\n> Mieloma: lesões líticas em saca-bocado sem borda esclerótica e cintilografia normal ou fria.",
+  "correta": "**D: lesão lítica sem borda esclerótica e normocaptação (resposta pela bibliografia).** A reabsorção osteoclástica sem formação de osso reativo produz lesões líticas sem esclerose e não capta o radiofármaco, que depende de atividade osteoblástica.",
   "incorretas": {
-   "A": "**Lesão lítica com borda esclerótica e hipercaptação.** Sem borda e sem captação.",
-   "B": "**Lesão lítica sem borda esclerótica  e hipercaptação.** A captação é normal.",
-   "C": "**Lesão lítica com borda esclerótica e normocaptação.** Sem borda esclerótica."
+   "A": "**Borda esclerótica e hipercaptação** descrevem lesão com resposta osteoblástica, como lesões benignas de crescimento lento ou metástases mistas, não o mieloma.",
+   "B": "**Lítica sem borda esclerótica com hipercaptação**: a radiografia está certa, mas a cintilografia no mieloma é normal ou fria pela falta de atividade osteoblástica.",
+   "C": "**Borda esclerótica com normocaptação**: a cintilografia está certa, mas a lesão do mieloma não tem borda esclerótica."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 11ª ed., pg. 919."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 11ª ed., pg. 919.",
+   "Hillengass J, Usmani S, Rajkumar SV, et al. International Myeloma Working Group consensus recommendations on imaging in monoclonal plasma cell disorders. Lancet Oncol. 2019;20(6):e302-e312."
   ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "D",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "tumores-0341": {

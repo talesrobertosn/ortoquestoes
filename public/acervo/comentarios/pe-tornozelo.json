@@ -3432,19 +3432,20 @@
   "conferido": false
  },
  "pe-tornozelo-0333": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": "**Wagner IV.** Gangrena localizada no antepé; com índice tornozelo-braquial acima de 0,45, há perfusão para cicatrizar uma amputação parcial do pé, como a de Chopart.\n\n**Na prova:** Wagner IV é amputação parcial; Wagner V, amputação da perna.",
-  "correta": "**Na articulação de CHOPART.** Amputação parcial do pé é compatível com a perfusão.",
+  "conceito": "**Pé diabético: classificação de Wagner e o nível de amputação.** A úlcera do pé diabético resulta de neuropatia (perda da sensibilidade protetora, deformidades, pele seca), doença arterial e infecção. A classificação de Wagner gradua a **profundidade** e a presença de **gangrena**.\n\n| Grau | Descrição | Conduta típica |\n|---|---|---|\n| 0 | Pé de risco, sem úlcera | Prevenção, calçados, educação |\n| 1 | Úlcera superficial | Retirada de carga (gesso de contato total) |\n| 2 | Úlcera profunda até tendão ou cápsula | Desbridamento, retirada de carga |\n| 3 | Úlcera profunda com abscesso ou osteomielite | Desbridamento, ressecção óssea, antibiótico |\n| **4** | **Gangrena localizada** (antepé ou calcanhar) | **Amputação parcial do pé** |\n| 5 | Gangrena de todo o pé | Amputação abaixo ou acima do joelho |\n\n**Perfusão e capacidade de cicatrização.** O nível de amputação precisa ter **irrigação suficiente para cicatrizar**. O **índice tornozelo-braquial** (pressão sistólica no tornozelo dividida pela do braço) orienta:\n- Acima de cerca de **0,45**: boa chance de cicatrização de amputações no pé (Wagner considerava esse limiar).\n- Calcificação arterial no diabético pode elevar falsamente o índice; pressão no hálux (acima de 30 a 40 mmHg) e oximetria transcutânea (acima de 30 a 40 mmHg) ajudam.\n- Albumina e linfócitos adequados também influenciam a cicatrização.\n\n**Raciocínio da questão.** Wagner IV (gangrena localizada no antepé) com índice de **0,6** tem perfusão suficiente para uma **amputação parcial do pé**. Uma amputação no nível de **Chopart** (desarticulação mediotársica) remove o antepé gangrenado preservando o calcanhar para apoio, desde que associada a **alongamento do tendão calcâneo** e transferência do tibial anterior, para evitar o equino.\n\n> Wagner IV com índice tornozelo-braquial acima de 0,45: amputação parcial do pé (por exemplo, Chopart); Wagner V: amputação na perna.",
+  "correta": "**B: na articulação de CHOPART (resposta pela bibliografia).** A gangrena localizada do antepé (Wagner IV) com índice de 0,6 permite cicatrizar uma amputação parcial do pé; a desarticulação de Chopart remove o antepé e preserva o retropé para apoio.",
   "incorretas": {
-   "A": "**No primeiro raio.** A gangrena do antepé é mais extensa que um raio.",
-   "C": "**Do tipo SYME.** Syme é menos conservadora que o necessário.",
-   "D": "**No terço médio da perna.** Amputação da perna seria para Wagner V."
+   "A": "**A amputação do primeiro raio** só resolve gangrena restrita ao hálux e seu metatarsal; a gangrena do antepé (Wagner IV) geralmente exige nível mais proximal.",
+   "C": "**A amputação de Syme** (desarticulação do tornozelo com preservação do coxim do calcanhar) é mais proximal que o necessário para uma gangrena localizada no antepé com boa perfusão.",
+   "D": "**A amputação no terço médio da perna** é reservada ao Wagner V (gangrena de todo o pé) ou à perfusão insuficiente para cicatrizar no pé."
   },
   "referencias": [
-   "Hebert Sizínio et al. Ortopedia e traumatologia: princípios e prática. Porto Alegre: Artmed. 3ª ed., p. 657."
+   "Hebert Sizínio et al. Ortopedia e traumatologia: princípios e prática. Porto Alegre: Artmed. 3ª ed., p. 657.",
+   "Wagner FW Jr. The dysvascular foot: a system for diagnosis and treatment. Foot Ankle. 1981;2(2):64-122."
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "B",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pe-tornozelo-0334": {
