@@ -6257,19 +6257,20 @@
   "conferido": false
  },
  "mao-0607": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "C",
-  "conceito": "**Sutura de Pulvertaft.** O entrelaçamento de Pulvertaft une tendões de calibres diferentes, como em transferências e enxertos, com grande resistência.\n\n**Na prova:** calibres diferentes, Pulvertaft.",
-  "correta": "**PULVERTAFT.** É a técnica para tendões de diâmetros diferentes.",
+  "conceito": "**Suturas tendíneas e a união de tendões de calibres diferentes.** Os tendões flexores são reparados de duas maneiras: **término-terminal**, quando os cotos têm calibre semelhante (lesão aguda), e por **entrelaçamento**, quando se unem tendões de diâmetros diferentes (enxertos e transferências).\n\n**Sutura de Pulvertaft.** O tendão mais fino é passado através de fendas sucessivas feitas no tendão mais grosso, em planos perpendiculares (geralmente três passagens), e fixado com pontos em cada passagem; a ponta do tendão grosso pode ser moldada em \"boca de peixe\" para cobrir a junção. Vantagens:\n- **Grande resistência**, maior que a das suturas término-terminais, permitindo mobilização precoce.\n- Acomoda diferenças de calibre, pois o tendão fino é envolvido pelo grosso.\n- Permite ajustar a tensão antes da fixação definitiva.\n\nA desvantagem é o volume da junção, que não deve ficar dentro da bainha digital (polias); por isso é usada no antebraço, na palma ou no punho, como na junção proximal de enxertos tendíneos (descrita por Pulvertaft) e nas transferências.\n\n**Técnicas término-terminais.**\n\n| Técnica | Característica |\n|---|---|\n| Bunnell | Sutura em cruz (zigue-zague), histórica, com fio de aço removível |\n| Kessler e Tajima | Ponto de preensão em quadrado; Tajima usa dois fios, um em cada coto |\n| Strickland, Cruciate e outras de múltiplos fios | Mais passadas pelo foco, mais resistência para mobilização ativa |\n\n**Princípio moderno do reparo primário.** A resistência depende sobretudo do **número de fios que cruzam o foco** (4 a 6), complementado por sutura epitendínea contínua, permitindo protocolos de mobilização precoce.\n\n> Tendões de calibres diferentes: entrelaçamento de Pulvertaft.",
+  "correta": "**C: PULVERTAFT (resposta pela bibliografia).** O entrelaçamento de Pulvertaft passa o tendão fino através do grosso em várias fendas, compensando a diferença de calibre com grande resistência. É a técnica padrão em enxertos e transferências tendíneas.",
   "incorretas": {
-   "A": "**BUNNELL.** É para reinserção e sutura primária.",
-   "B": "**KLEINNERT.** É um protocolo de reabilitação.",
-   "D": "**TAJIMA.** É sutura de tendões de mesmo diâmetro."
+   "A": "**Bunnell** descreveu a sutura em cruz término-terminal, para cotos de calibre semelhante; é técnica histórica, hoje pouco usada por lesar a vascularização e deslizar mal.",
+   "B": "**Kleinert** é conhecido sobretudo pelo protocolo de reabilitação com flexão passiva por elástico e extensão ativa após reparo primário, e por sua variante de sutura término-terminal; não é técnica para calibres diferentes.",
+   "D": "**Tajima** é uma sutura de preensão término-terminal (modificação de Kessler, com um fio em cada coto e nós no foco), indicada para reparo primário de cotos de mesmo calibre."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 3432."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 3432.",
+   "Pulvertaft RG. Tendon grafts for flexor tendon injuries in the fingers and thumb; a study of technique and results. J Bone Joint Surg Br. 1956;38-B(1):175-194."
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "C",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0608": {

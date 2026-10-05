@@ -3624,19 +3624,20 @@
   "conferido": false
  },
  "joelho-0297": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": "**Efeito de trava de porta.** Na gaveta anterior em flexão, o corno posterior dos meniscos bloqueia a translação, mascarando a lesão do LCA; Lachman é mais sensível.\n\n**Na prova:** meniscos posteriores mascaram a gaveta.",
-  "correta": "**Corno posterior dos meniscos.** É o efeito descrito.",
+  "conceito": "**Efeito de \"trava de porta\" no exame do joelho agudo.** A lesão do ligamento cruzado anterior (LCA) é diagnosticada no exame físico pela translação anterior da tíbia. Dois testes medem isso, em posições diferentes, e a diferença entre eles explica a questão.\n\n**Gaveta anterior a 90 graus.** No joelho agudo, ela é pouco sensível por três motivos:\n- **Efeito de trava de porta**: com o joelho em 90 graus, o **corno posterior dos meniscos** (sobretudo o medial) se encaixa como uma cunha entre o côndilo femoral e o platô tibial, bloqueando a translação anterior da tíbia como um calço atrás da porta.\n- **Espasmo dos isquiotibiais**, que puxa a tíbia posteriormente.\n- **Dor e hemartrose**, que impedem a flexão a 90 graus.\n\n**Lachman (20 a 30 graus).** Com pouca flexão, o corno posterior não fica posicionado como calço, os isquiotibiais estão mais relaxados e o joelho doloroso tolera a posição. Por isso o Lachman, descrito por Torg, é o teste mais sensível para lesão do LCA, sobretudo na fase aguda.\n\n**Relação entre menisco e LCA.** O corno posterior do menisco medial é um **estabilizador secundário** da translação anterior. No joelho sem LCA, ele recebe carga excessiva e acaba rompendo (lesão meniscal tardia), o que, por sua vez, aumenta a instabilidade.\n\n| Teste | Flexão | Utilidade |\n|---|---|---|\n| Lachman | 20 a 30 graus | Mais sensível para LCA, inclusive na fase aguda |\n| Gaveta anterior | 90 graus | Menos sensível no agudo pela trava meniscal |\n| Pivot shift | Extensão para flexão com valgo | Mais específico; difícil sem anestesia no agudo |\n\n> Gaveta a 90 graus pode ser falsamente negativa: o corno posterior do menisco trava a tíbia.",
+  "correta": "**B: corno posterior dos meniscos (resposta pela bibliografia).** Em 90 graus de flexão, o corno posterior (principalmente do menisco medial) funciona como calço entre fêmur e tíbia e bloqueia a translação anterior, mascarando a lesão do LCA na gaveta anterior.",
   "incorretas": {
-   "A": "**Tendão do poplíteo.** Não.",
-   "C": "**Corno anterior do menisco lateral.** Não.",
-   "D": "**Coto do ligamento cruzado anterior.** Não."
+   "A": "**O tendão do poplíteo** é estabilizador posterolateral e da rotação lateral da tíbia; não bloqueia a translação anterior na gaveta.",
+   "C": "**O corno anterior do menisco lateral** está à frente do platô e não se interpõe para impedir o deslizamento anterior da tíbia em flexão.",
+   "D": "**O coto do LCA** pode causar bloqueio de extensão (lesão em ciclope, coto interposto no intercôndilo), mas não o efeito de trava de porta na gaveta anterior."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10 ª ed., pg. 2204."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10 ª ed., pg. 2204.",
+   "Torg JS, Conrad W, Kalen V. Clinical diagnosis of anterior cruciate ligament instability in the athlete. Am J Sports Med. 1976;4(2):84-93."
   ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "B",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "joelho-0298": {

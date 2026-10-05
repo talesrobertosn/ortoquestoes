@@ -4799,19 +4799,20 @@
   "conferido": false
  },
  "ombro-cotovelo-0483": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "D",
-  "conceito": "**Osteocondrite do capítulo.** A cirurgia é indicada para lesões instáveis, corpos livres e sintomas mecânicos.\n\n**Na prova:** corpo livre indica cirurgia.",
-  "correta": "**Presença de corpo livre.** O corpo livre é a indicação principal.",
+  "conceito": "**Osteocondrite dissecante do capítulo do úmero.** É a separação de um fragmento de osso subcondral e cartilagem do capítulo, típica de **adolescentes de 12 a 16 anos** que fazem arremesso ou ginástica. O mecanismo é a **compressão radiocapitelar repetida** em valgo (o cotovelo do arremessador sofre tração medial e compressão lateral), sobre um capítulo de vascularização terminal e pobre.\n\n**Diferenciar de Panner.**\n\n| Doença | Idade | Evolução |\n|---|---|---|\n| Panner | Abaixo de 10 anos | Fragmentação de todo o núcleo do capítulo, autolimitada, sem corpo livre |\n| Osteocondrite dissecante | Adolescentes | Lesão focal, pode se soltar e formar corpo livre |\n\n**Estabilidade: o conceito central.** A decisão depende de a lesão ser **estável** ou **instável**.\n- **Estável** (fise do capítulo aberta, boa mobilidade, fragmento sem separação): repouso do esporte por 3 a 6 meses; boa chance de cicatrização (Takahara).\n- **Instável** (fise fechada, fragmento separado ou deslocado, perda de movimento): pouca chance de cicatrização sem cirurgia.\n\n**Indicações cirúrgicas.**\n- **Corpo livre** e sintomas mecânicos (bloqueio, travamento), a indicação mais clara.\n- Lesão instável ou fragmento destacado.\n- Falha do tratamento conservador.\n\n**Opções cirúrgicas.** Remoção de corpos livres e desbridamento com microfraturas (lesões pequenas), fixação do fragmento (lesões grandes com fragmento viável) e enxerto osteocondral (lesões grandes, sobretudo que atingem a borda lateral do capítulo).\n\n> Corpo livre no cotovelo do adolescente arremessador: indicação cirúrgica.",
+  "correta": "**D: presença de corpo livre (resposta pela bibliografia).** O corpo livre provoca bloqueio e travamento, lesa a cartilagem e não se resolve com repouso. É a indicação cirúrgica mais clara, junto com lesão instável e falha do tratamento conservador.",
   "incorretas": {
-   "A": "**Limitação da amplitude de movimento.** Não é a principal.",
-   "B": "**Instabilidade em valgo do cotovelo.** Não é a principal.",
-   "C": "**Hipertrofia da cabeça do rádio.** É achado da doença avançada."
+   "A": "**A limitação da amplitude de movimento** é comum e reflete sinovite ou lesão instável, mas, isolada, pode melhorar com repouso e reabilitação; não é a principal indicação de cirurgia.",
+   "B": "**A instabilidade em valgo** diz respeito ao ligamento colateral medial (ulnar). Contribui para o mecanismo de compressão lateral, mas não é indicação de cirurgia da osteocondrite.",
+   "C": "**A hipertrofia da cabeça do rádio** pode ocorrer como resposta ao processo, mas é um achado secundário e não indica cirurgia."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole Campbell. 10ª ed. p. 1151."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole Campbell. 10ª ed. p. 1151.",
+   "Takahara M, Mura N, Sasaki J, Harada M, Ogino T. Classification, treatment, and outcome of osteochondritis dissecans of the humeral capitellum. J Bone Joint Surg Am. 2007;89(6):1205-1214."
   ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "D",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "ombro-cotovelo-0484": {
