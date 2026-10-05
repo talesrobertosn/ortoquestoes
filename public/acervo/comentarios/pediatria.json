@@ -10314,6 +10314,137 @@
   "geradoEm": "2026-10-04T17:01:01+00:00",
   "conferido": false
  },
+ "pediatria-0852": {
+  "conceito": "**Luxação cirúrgica do quadril de Ganz.** É uma técnica que permite deslocar a cabeça femoral do acetábulo, com visão de 360 graus da cabeça e do acetábulo, **sem comprometer a irrigação** da cabeça femoral.\n\n**Fundamento anatômico.** A cabeça femoral é irrigada principalmente pelo **ramo profundo da artéria circunflexa femoral medial**, que passa posteriormente, sobre o obturador externo, e dá origem aos **vasos retinaculares posterossuperiores**, que sobem pelo colo dentro do retináculo posterior até a cabeça.\n\n**Pontos-chave da técnica.**\n1. Via lateral com **osteotomia digástrica (trocantérica)** do trocânter maior, mantendo presos o glúteo médio e o vasto lateral; o fragmento é deslocado anteriormente.\n2. Preservação do **obturador externo** e dos rotadores externos curtos, que protegem o ramo profundo da circunflexa medial.\n3. Capsulotomia em Z anterior.\n4. Luxação anterior com flexão e rotação externa.\n\n**Uso na epifisiólise grave (modificação de Dunn).** Permite desenvolver um **retalho retinacular** que protege os vasos posteriores, ressecar o calo posterior do colo e reposicionar a epífise sobre o colo (realinhamento subcapital), corrigindo a deformidade com baixo risco de necrose quando bem executada.\n\n**Outras indicações.** Impacto femoroacetabular complexo, tumores, fraturas da cabeça femoral, sequelas de Perthes.\n\n> Ganz: osteotomia trocantérica e preservação do obturador externo para proteger os vasos retinaculares posteriores.",
+  "correta": "**B: retinaculares posteriores.** A luxação controlada de Ganz preserva o ramo profundo da artéria circunflexa femoral medial e os vasos retinaculares posteriores (posterossuperiores), principal fonte de irrigação da cabeça femoral. Isso permite corrigir a deformidade grave da epifisiólise com visão direta e menor risco de necrose.",
+  "incorretas": {
+   "A": "**Os vasos retinaculares anteriores** têm contribuição pequena para a irrigação da cabeça femoral; não são o foco da preservação na técnica de Ganz.",
+   "C": "**Os vasos glúteos posteriores** irrigam a musculatura glútea; não são a fonte principal da cabeça femoral.",
+   "D": "**Os vasos centrais e a artéria do ligamento redondo** contribuem pouco para a irrigação da cabeça no adolescente e no adulto.",
+   "E": "**A circunflexa lateral** irriga principalmente a região anterior do colo e o trocânter; contribui pouco para a cabeça femoral."
+  },
+  "referencias": [
+   "Ganz R, Gill TJ, Gautier E, Ganz K, Krügel N, Berlemann U. Surgical dislocation of the adult hip: a technique with full access to the femoral head and acetabulum without the risk of avascular necrosis. J Bone Joint Surg Br. 2001;83(8):1119-1124.",
+   "Ziebarth K, Zilkens C, Spencer S, Leunig M, Ganz R, Kim YJ. Capital realignment for moderate and severe SCFE using a modified Dunn procedure. Clin Orthop Relat Res. 2009;467(3):704-716."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "pediatria-0853": {
+  "alerta": "Pela descrição original de Gschwind e Tonkin, a reorientação (rerouting) do pronador redondo é indicada quando não há supinação ativa, mas a supinação passiva está livre; nos grupos com supinação passiva bloqueada, priorizam-se liberações. A correspondência exata entre grupos e procedimentos varia entre as fontes. O gabarito oficial (IV) foi mantido.",
+  "conceito": "**Deformidade em pronação do antebraço na paralisia cerebral.** A espasticidade do **pronador redondo** (e do pronador quadrado) mantém o antebraço pronado e impede a supinação ativa, dificultando atividades como receber objetos com a palma para cima, comer e manipular objetos.\n\n**Classificação de Gschwind e Tonkin.** Baseia-se na capacidade de supinação ativa e passiva:\n\n| Grupo | Achado |\n|---|---|\n| I | Supinação ativa além da posição neutra |\n| II | Supinação ativa até a neutra ou menos |\n| III | Sem supinação ativa, mas supinação passiva livre |\n| IV | Pronação fixa, supinação passiva limitada |\n\n**Procedimentos conforme o grupo (em linhas gerais).**\n- Grupos com boa supinação ativa: liberação do pronador quadrado ou da aponeurose flexora.\n- Grupos sem supinação ativa: **reorientação (rerouting) do pronador redondo**, em que o tendão é passado ao redor do rádio, por trás, para que passe a atuar como **supinador**.\n- Contraturas fixas: liberações (pronador quadrado, membrana interóssea) e, eventualmente, procedimentos ósseos.\n\n**Princípios da cirurgia na mão espástica.** Avaliação cuidadosa da função, do controle motor voluntário, da sensibilidade e da cognição; uso de toxina botulínica para testar e tratar a espasticidade; cirurgias combinadas (punho, polegar, dedos) para melhorar a função e a higiene.\n\n> Pronação espástica na paralisia cerebral: o pronador redondo pode ser reorientado para atuar como supinador.",
+  "correta": "**D: IV (gabarito oficial).** A banca relacionou a reorientação do pronador redondo ao grupo IV da classificação de Gschwind e Tonkin. A cirurgia transforma o pronador em supinador, ao passar o tendão ao redor do rádio, melhorando a supinação ativa. A correspondência exata entre os grupos e as técnicas varia entre as fontes, o que motivou a ressalva acima.",
+  "incorretas": {
+   "A": "**O grupo I** tem supinação ativa além da posição neutra e geralmente não precisa de reorientação do pronador.",
+   "B": "**O grupo II** tem supinação ativa até a neutra; costuma ser tratado com liberações musculares menores.",
+   "C": "**O grupo III** (sem supinação ativa e supinação passiva livre) é, em várias descrições, o candidato clássico à reorientação do pronador redondo. A banca, porém, considerou o grupo IV.",
+   "E": "**Não existe grupo V** na classificação de Gschwind e Tonkin; a alternativa é um distrator."
+  },
+  "referencias": [
+   "Gschwind C, Tonkin M. Surgery for cerebral palsy: Part 1. Classification and operative procedures for pronation deformity. J Hand Surg Br. 1992;17(4):391-395.",
+   "Wolfe SW, Pederson WC, Kozin SH, Cohen MS, eds. Green's Operative Hand Surgery. Elsevier. Paralisia cerebral."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "pediatria-0854": {
+  "conceito": "**Fases da doença de Legg-Calvé-Perthes (Waldenström).** A doença é uma osteonecrose da epífise femoral proximal que evolui ao longo de 2 a 4 anos.\n\n| Fase | Patologia | Radiografia |\n|---|---|---|\n| **Inicial (necrose)** | Interrupção da irrigação; **osso morto**: lacunas **sem osteócitos** ou com osteócitos de **núcleo picnótico**; a cartilagem articular continua crescendo (nutrida pelo líquido sinovial) | Epífise menor e mais densa, alargamento do espaço articular medial, sinal do crescente |\n| Fragmentação | Revascularização e reabsorção do osso necrótico por osteoclastos; colapso | Epífise fragmentada, áreas líticas e densas |\n| Reossificação | Osso novo substitui o necrótico | Ossificação progressiva |\n| Residual (remodelação) | Remodelação até a maturidade | Forma final da cabeça (Stulberg) |\n\n**Por que a epífise parece densa.** O osso morto não é reabsorvido no início, e pode haver deposição de osso novo sobre as trabéculas mortas e microfraturas com compactação. Além disso, o osso vizinho vivo sofre osteopenia por desuso, aumentando o contraste.\n\n**Sinovite.** Pode estar presente clinicamente (derrame e dor) no início, mas não é uma fase de Waldenström; a sinovite transitória é um diagnóstico diferencial.\n\n**Importância das fases.** A fase de fragmentação é quando a cabeça está mais \"moldável\" e mais vulnerável à deformação; as cirurgias de contenção têm maior efeito antes ou no início dessa fase.\n\n> Osteócitos ausentes ou picnóticos: fase de necrose (inicial) do Perthes.",
+  "correta": "**A: necrose.** A ausência de osteócitos nas lacunas, ou a presença de osteócitos com núcleo picnótico, caracteriza o osso morto da fase inicial (necrose) da doença de Legg-Calvé-Perthes. Nessa fase, a radiografia mostra uma epífise menor e densa.",
+  "incorretas": {
+   "B": "**Sinovite** pode ocorrer no início, com derrame e dor, mas não é uma fase histológica da classificação de Waldenström e não se caracteriza pela morte dos osteócitos.",
+   "C": "**Na fragmentação**, predominam a revascularização e a reabsorção do osso necrótico por osteoclastos, com colapso; o achado típico é a atividade de reabsorção, não apenas osso morto.",
+   "D": "**Na reossificação**, há formação de osso novo e vivo, substituindo o necrótico.",
+   "E": "**Na fase residual**, a cabeça já está remodelada e com osso vivo; não há osteócitos necróticos predominantes."
+  },
+  "referencias": [
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Doença de Legg-Calvé-Perthes.",
+   "Herring JA, Kim HT, Browne R. Legg-Calve-Perthes disease. Part I: classification of radiographs with use of the modified lateral pillar and Stulberg classifications. J Bone Joint Surg Am. 2004;86(10):2103-2120."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "pediatria-0855": {
+  "alerta": "Pelo estudo de Loder e colaboradores, o fator preditivo da osteonecrose na epifisiólise é a **instabilidade** da fise (alternativa C): na epifisiólise instável (o paciente não consegue apoiar o membro, mesmo com muletas), a osteonecrose ocorreu em cerca de 47% dos casos, contra praticamente zero nas estáveis. O gabarito oficial registrado (E, migração proximal) não corresponde a essa descrição; o gabarito foi mantido no sistema com esta ressalva.",
+  "conceito": "**Epifisiólise proximal do fêmur: classificação de Loder.** A epifisiólise (escorregamento da epífise femoral proximal) acomete adolescentes, frequentemente obesos, durante o estirão. A epífise escorrega posterior e inferiormente em relação ao colo, através da zona hipertrófica da fise.\n\n**Classificação de Loder (1993).** Baseia-se na capacidade de apoiar o membro:\n- **Estável**: o paciente consegue andar, com ou sem muletas.\n- **Instável**: o paciente **não consegue apoiar** o membro, mesmo com muletas, pela dor intensa; há movimento entre a epífise e o colo (como uma fratura).\n\n**Osteonecrose.** No estudo de Loder, a **osteonecrose ocorreu em cerca de 47%** das epifisiólises **instáveis** e em **praticamente nenhuma** das estáveis. A explicação é fisiopatológica: no deslizamento instável, o deslocamento agudo estira, acotovela ou rompe os vasos retinaculares posterossuperiores, que irrigam a epífise.\n\n**Outras classificações.**\n- Temporal: aguda (menos de 3 semanas), crônica, crônica agudizada.\n- Pelo grau de deslizamento (ângulo de Southwick): leve (menos de 30 graus), moderado (30 a 50), grave (acima de 50).\n\n**Tratamento.** Fixação in situ com um parafuso canulado na maioria; nos instáveis, debate-se redução suave e descompressão capsular, e técnicas como a modificação de Dunn (via luxação de Ganz) em centros especializados.\n\n> Loder: a instabilidade (não conseguir apoiar) é o principal preditor de osteonecrose na epifisiólise.",
+  "correta": "**E: migração proximal (gabarito oficial).** O gabarito registrado aponta a migração proximal, mas, segundo Loder, o fator diretamente relacionado ao risco de osteonecrose, ligado à própria fisiopatologia e não ao tratamento, é a **instabilidade** da fise (alternativa C). Na epifisiólise instável, o deslocamento agudo lesa os vasos retinaculares posteriores.",
+  "incorretas": {
+   "A": "**A deformidade (grau do deslizamento)** influencia a função e o risco de impacto femoroacetabular, mas, isoladamente, não foi o principal preditor de osteonecrose no estudo de Loder.",
+   "B": "**A energia do trauma** não é o fator principal; muitas epifisiólises instáveis ocorrem com traumas mínimos sobre uma fise já alterada.",
+   "C": "**A instabilidade** é o fator preditivo descrito por Loder: osteonecrose em cerca de 47% dos casos instáveis e praticamente nenhuma nos estáveis. É a resposta coerente com a literatura.",
+   "D": "**O desvio posterior** é a direção habitual do escorregamento e não define, por si, o risco de osteonecrose."
+  },
+  "referencias": [
+   "Loder RT, Richards BS, Shapiro PS, Reznick LR, Aronson DD. Acute slipped capital femoral epiphysis: the importance of physeal stability. J Bone Joint Surg Am. 1993;75(8):1134-1140.",
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Epifisiólise proximal do fêmur."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "pediatria-0856": {
+  "conceito": "**A contribuição de Ponseti.** Antes de Ponseti, os métodos com gessos (como o de Kite) tentavam corrigir a adução pressionando a articulação calcaneocubóidea, o que bloqueava a abdução do calcâneo e mantinha o varo. Os resultados eram ruins, e muitos pés acabavam em liberações cirúrgicas extensas.\n\n**O que Ponseti mudou.**\n1. **Primeiro, corrigir o cavo**: o antepé está **pronado em relação ao retropé** (o primeiro metatarso em flexão plantar). Ponseti propôs **supinar o antepé**, elevando o primeiro metatarso, para alinhá-lo ao retropé. Isso desfaz o cavo já no primeiro gesso.\n2. **Mudar o fulcro**: usar a **face lateral da cabeça do tálus** (e não a calcaneocubóidea) como ponto de contrapressão, enquanto o pé supinado é abduzido. Assim, o navicular, o cuboide e o calcâneo giram ao redor do tálus, corrigindo a adução e o varo ao mesmo tempo.\n3. **Por último, o equino**, com tenotomia percutânea do tendão calcâneo na maioria dos casos.\n4. **Órtese de abdução** para evitar recidiva.\n\n**Ordem: CAVE** (cavo, aduto, varo, equino).\n\n**Erro clássico a evitar.** Pronar o antepé para \"corrigir\" a adução ou o varo agrava o cavo e cria o pé em mata-borrão.\n\n> Ponseti: começa corrigindo o cavo do antepé, supinando o primeiro raio, e usa a cabeça do tálus como fulcro.",
+  "correta": "**D: cavo do antepé.** O método de Ponseti começa corrigindo o cavo, supinando o antepé e elevando o primeiro metatarso para alinhá-lo ao retropé. Em seguida, usando a cabeça do tálus como fulcro, corrige-se a adução e o varo, e por último o equino.",
+  "incorretas": {
+   "A": "**Varismo do antepé** não é o primeiro componente corrigido. O antepé, na verdade, está pronado em relação ao retropé, formando o cavo.",
+   "B": "**Adução do retropé** não descreve corretamente a deformidade; a adução é do mediopé e antepé, e é corrigida depois do cavo, junto com o varo.",
+   "C": "**O equinismo** é o último componente corrigido, geralmente com tenotomia do tendão calcâneo.",
+   "E": "**Varismo do mediopé** não é a primeira correção; o varo do retropé é corrigido junto com a adução, na abdução em torno do tálus."
+  },
+  "referencias": [
+   "Ponseti IV. Congenital Clubfoot: Fundamentals of Treatment. Oxford University Press; 1996.",
+   "Dobbs MB, Gurnett CA. Update on clubfoot: etiology and treatment. Clin Orthop Relat Res. 2009;467(5):1146-1153."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "pediatria-0857": {
+  "alerta": "A questão tem inconsistências: a osteogênese imperfeita é um defeito do colágeno **tipo I** (genes COL1A1 e COL1A2), e não do tipo II; e o tipo II de Sillence é a forma letal perinatal, incompatível com uma criança de 3 anos. A alternativa considerada correta (E) cita colágeno tipo II. O gabarito oficial foi mantido no sistema com esta ressalva.",
+  "conceito": "**Osteogênese imperfeita (OI).** É um grupo de doenças hereditárias caracterizadas por fragilidade óssea, causadas na maioria dos casos por mutações nos genes **COL1A1 e COL1A2**, que codificam as cadeias do **colágeno tipo I**, a principal proteína da matriz óssea, da dentina, das escleras e dos tendões.\n\n**Classificação de Sillence (clássica).**\n\n| Tipo | Gravidade | Herança | Características |\n|---|---|---|---|\n| I | Leve | Autossômica dominante | Escleras azuis, surdez, poucas deformidades |\n| II | **Letal perinatal** | Geralmente dominante por mutação nova; formas recessivas | Fraturas intrauterinas, costelas em contas, fêmures enrugados (IIA, IIB, IIC) |\n| III | Grave, progressivamente deformante | Dominante (mutação nova) ou recessiva | Baixa estatura, deformidades graves, dentinogênese imperfeita |\n| IV | Moderada | Autossômica dominante | Escleras normais ou acinzentadas, dentinogênese variável |\n\n**Subtipos do tipo II (Sillence, 1984).** IIA (costelas largas em contas, fêmures enrugados), IIB (costelas com poucas contas, fêmures enrugados; parte com herança recessiva), IIC (ossos finos e alongados). Quase todos morrem no período perinatal.\n\n**Formas recessivas modernas.** Mutações em genes que modificam o colágeno (CRTAP, LEPRE1, PPIB) explicam formas graves recessivas (tipos VII, VIII e outros).\n\n**Colágeno tipo II.** É o colágeno da **cartilagem**; suas mutações causam displasias espondiloepifisárias, não OI.\n\n> Osteogênese imperfeita: defeito do colágeno tipo I; o tipo II de Sillence é letal no período perinatal.",
+  "correta": "**E: II, ter dentinogênese anormal e ser autossômica dominante (gabarito oficial).** A banca considerou essa alternativa, mas a osteogênese imperfeita resulta de defeitos do colágeno **tipo I**, e o tipo II de Sillence é a forma letal perinatal, o que torna o enunciado e a alternativa inconsistentes, como explicado na ressalva acima.",
+  "incorretas": {
+   "A": "**Colágeno I, dentinogênese anormal e herança dominante** descreve corretamente o defeito molecular da maioria das OI e características comuns (como no tipo III ou IV), mas não foi a alternativa escolhida pela banca.",
+   "B": "**Colágeno I, dentinogênese normal e herança recessiva** combina o colágeno correto com uma herança que ocorre em algumas formas raras; não corresponde ao padrão descrito pela banca.",
+   "C": "**Colágeno II e herança ligada ao X** não correspondem à osteogênese imperfeita: o colágeno II é da cartilagem, e a herança ligada ao X não é a habitual.",
+   "D": "**Colágeno I, dentinogênese anormal e herança recessiva** ocorre em algumas formas, mas também não foi a alternativa considerada correta."
+  },
+  "referencias": [
+   "Sillence DO, Barlow KK, Garber AP, Hall JG, Rimoin DL. Osteogenesis imperfecta type II: delineation of the phenotype with reference to genetic heterogeneity. Am J Med Genet. 1984;17(2):407-423.",
+   "Sillence DO, Senn A, Danks DM. Genetic heterogeneity in osteogenesis imperfecta. J Med Genet. 1979;16(2):101-116."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "pediatria-0858": {
+  "conceito": "**Fraturas do colo do fêmur na criança: classificação de Delbet.** São raras e geralmente causadas por trauma de alta energia (uma queda da própria altura sugere osso patológico ou fragilidade, que deve ser investigada). A principal complicação é a **osteonecrose da cabeça femoral**, cujo risco depende da localização do traço.\n\n| Tipo | Localização | Risco de osteonecrose |\n|---|---|---|\n| I | **Transepifisária** (com ou sem luxação da epífise) | Muito alto (até cerca de 80% a 100% se luxada) |\n| II | **Transcervical** (a mais comum) | Cerca de 50% |\n| III | **Cervicotrocantérica** (basocervical) | Cerca de 25% |\n| **IV** | **Intertrocantérica** | **Menor**, cerca de 10% |\n\n**Por que o risco diminui do tipo I ao IV.** Quanto mais proximal o traço, mais perto dos vasos retinaculares que sobem pelo colo até a epífise, e maior a chance de lesioná-los. A fratura intertrocantérica fica distal à entrada desses vasos.\n\n**Outras complicações.** Coxa vara, pseudoartrose, fechamento prematuro da fise e discrepância de membros.\n\n**Tratamento.** Redução anatômica (fechada ou aberta) e fixação estável, frequentemente com descompressão capsular para reduzir o tamponamento; gesso pelvipodálico em crianças pequenas.\n\n> Delbet: risco de osteonecrose maior no tipo I (transepifisária) e menor no tipo IV (intertrocantérica).",
+  "correta": "**D: IV.** Na classificação de Delbet, o tipo IV (intertrocantérica) tem o menor risco de osteonecrose, cerca de 10%, porque o traço fica distal à entrada dos vasos retinaculares que irrigam a cabeça femoral. O risco aumenta progressivamente nos tipos mais proximais.",
+  "incorretas": {
+   "A": "**O tipo I (transepifisário)** tem o maior risco de osteonecrose, especialmente quando a epífise luxa, podendo chegar a quase 100%.",
+   "B": "**O tipo II (transcervical)** é o mais comum, com risco de osteonecrose em torno de 50%.",
+   "C": "**O tipo III (cervicotrocantérico)** tem risco intermediário, em torno de 25%.",
+   "E": "**Não existe tipo V** na classificação de Delbet; a alternativa é um distrator."
+  },
+  "referencias": [
+   "Ratliff AH. Fractures of the neck of the femur in children. J Bone Joint Surg Br. 1962;44-B:528-542.",
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Fraturas do quadril na criança."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "pediatria-0859": {
+  "conceito": "**Vasos transfisários e a associação entre osteomielite e artrite séptica no lactente.** A anatomia vascular da extremidade dos ossos longos muda com a idade.\n\n**Até cerca de 18 meses.** Vasos da metáfise atravessam a fise e chegam à epífise (**vasos transfisários**). Assim, uma osteomielite metafisária pode se estender diretamente para a epífise e para a articulação, e uma infecção articular pode comprometer a epífise e a fise.\n\n**Após cerca de 18 meses.** A fise passa a funcionar como barreira vascular, e a circulação metafisária e a epifisária se tornam independentes até o fechamento da fise.\n\n**O quadril é especial.** A metáfise do fêmur proximal é **intra-articular**: mesmo em crianças maiores, uma osteomielite do colo femoral pode romper a cortical e drenar para a articulação.\n\n**Consequências no lactente.**\n- Destruição da epífise e da fise, com **necrose da cabeça femoral**, parada do crescimento, coxa vara, luxação patológica e grandes discrepâncias (sequela de Tom Smith).\n- Por isso, artrite séptica do quadril no lactente é uma **emergência cirúrgica**: artrotomia, lavagem, drenagem do foco ósseo (curetagem e descompressão) e antibiótico.\n\n| Idade | Comunicação metáfise-epífise |\n|---|---|\n| Até cerca de 18 meses | Presente (vasos transfisários) |\n| Após 18 meses | Barreira fisária |\n| Adulto | Fise fechada, comunicação restabelecida |\n\n> Até cerca de 18 meses, vasos transfisários permitem que a infecção passe da metáfise para a epífise e a articulação.",
+  "correta": "**C: zero a 18 meses.** Até cerca de 18 meses de vida, existem vasos que atravessam a fise, ligando a circulação metafisária à epifisária. Isso explica o grande risco de comprometimento vascular e de extensão da infecção para a epífise e a articulação no lactente de 8 meses do caso.",
+  "incorretas": {
+   "A": "**Zero a 6 meses** subestima o período: a comunicação vascular persiste além dos 6 meses, até cerca de 18 meses.",
+   "B": "**Zero a 12 meses** também é curto; a maioria dos textos cita cerca de 18 meses.",
+   "D": "**Zero a 24 meses** superestima o período habitual de persistência dos vasos transfisários, embora haja variação individual.",
+   "E": "**Zero a 36 meses** excede bastante o limite descrito na literatura."
+  },
+  "referencias": [
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Infecções musculoesqueléticas.",
+   "Peltola H, Pääkkönen M. Acute osteomyelitis in children. N Engl J Med. 2014;370(4):352-360."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
  "pediatria-0868": {
   "conceito": "**Avaliação inicial da criança com joelho doloroso e febre.** Uma criança de 5 anos com febre, dor e sinais flogísticos no joelho, limitação da flexoextensão e incapacidade de andar tem como principais hipóteses a **artrite séptica** e a **osteomielite** da região do joelho, além de causas traumáticas (a queda pode ser apenas coincidente).\n\n**Sinal da tecla (choque rotuliano).** Com uma mão, o examinador comprime o recesso suprapatelar para empurrar o líquido para baixo da patela; com a outra, pressiona a patela contra o fêmur. Se a patela \"afunda e bate\" no fêmur, há derrame articular volumoso. Ausência do sinal não exclui derrame pequeno ou moderado.\n\n**Primeiros passos.**\n1. **Radiografia** do joelho: afasta fratura (a queda foi relatada), lesões ósseas e mostra aumento de partes moles; também serve de base.\n2. **Hemograma, VHS e PCR**: os marcadores inflamatórios elevados reforçam a hipótese infecciosa e servem de referência para o seguimento.\n3. Hemoculturas.\n4. Conforme os achados, **ultrassonografia** (derrame, guia de punção) e **punção articular**, que é o exame decisivo para a artrite séptica.\n\n**Critérios de Kocher e Caird.** Febre acima de 38,5 °C, incapacidade de apoiar, VHS acima de 40, leucócitos acima de 12.000 e PCR acima de 2 mg/dL aumentam progressivamente a probabilidade de artrite séptica.\n\n> Criança com febre e joelho doloroso: radiografia e exames laboratoriais, seguidos de punção se a suspeita se mantém.",
   "correta": "**D: Solicitar Rx, hemograma completo, VHS e PCR da criança.** É o passo inicial adequado: a radiografia afasta fratura e lesões ósseas, e o hemograma, a VHS e a PCR avaliam a resposta inflamatória e ajudam a estimar a probabilidade de artrite séptica. Com esses dados, decide-se pela punção articular e pela internação.",
