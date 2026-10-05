@@ -1350,14 +1350,18 @@
   "conferido": false
  },
  "coluna-0095": {
-  "conceito": "### Síndrome centromedular\n**Paciente e mecanismo:**\n- ==idoso== com **espondilose cervical** (canal estreito, osteófitos, ligamento amarelo espesso);\n- queda da própria altura, com trauma na face, gerando ==hiperextensão==;\n- muitas vezes **sem fratura** (lesão sem alteração radiográfica, com a RM mostrando edema medular).\n\n**Fisiopatologia:** a medula é pinçada entre os osteófitos anteriores e o ligamento amarelo pregueado. O dano é **central**, com hemorragia e edema na substância cinzenta e nos tratos mais mediais.\n\n**Clínica:**\n- ==membros superiores mais fracos== que os inferiores, sobretudo as **mãos**;\n- disfunção vesical e sensibilidade variáveis;\n- **preservação sacral** frequente.\n\n**Prognóstico:** a maioria volta a **andar**. A recuperação segue a ordem: membros inferiores, depois bexiga, depois membros superiores, e por último as **mãos**. É pior em idosos.\n\n> **Na prova:** idoso + hiperextensão = centromedular = ==MMSS mais fracos==.",
-  "correta": "**Hiperextensão, MMSS mais afetados.**",
+  "conceito": "**As síndromes medulares incompletas.** Na lesão medular **incompleta**, parte das vias da medula é preservada. O **padrão** do déficit depende de **qual região** da medula foi lesada:\n\n| Síndrome | Lesão | Quadro |\n|---|---|---|\n| **Centromedular** | **Centro** da medula | **Membros superiores mais fracos que os inferiores**; alteração sensitiva variável; disfunção vesical |\n| Anterior | Dois terços **anteriores** (artéria espinhal anterior) | Perda **motora** e da dor e temperatura; **preserva** a propriocepção e a vibração; o **pior** prognóstico |\n| **Brown-Séquard** | **Metade lateral** (hemissecção) | Perda **motora** e da propriocepção do **mesmo lado**; perda da dor e temperatura do **lado oposto**; o **melhor** prognóstico |\n| Posterior | Colunas posteriores | Perda da propriocepção; rara |\n\n**A síndrome centromedular.** É a síndrome medular incompleta **mais comum**.\n- **Quem**: **idosos** com **espondilose cervical** (osteófitos, discos abaulados, ligamento amarelo espesso e canal **estreito**).\n- **Mecanismo**: **hiperextensão** do pescoço, muitas vezes numa **queda da própria altura** com batida da face ou da testa. Frequentemente **sem fratura** nem luxação.\n- **Como**: na hiperextensão, o **ligamento amarelo** dobra-se para dentro do canal e comprime a medula por trás, contra os osteófitos da frente. A medula é \"espremida\" e o **centro** (a substância cinzenta e as fibras mais centrais) sofre mais (edema, hemorragia).\n\n**Por que os braços ficam mais fracos que as pernas.** No **trato corticoespinhal lateral**, as fibras são organizadas em **camadas**: as fibras das **mãos e dos braços** ficam mais **centrais** (mediais), e as das **pernas** e do sacro mais **periféricas** (laterais). Uma lesão **central** atinge primeiro os **membros superiores**, sobretudo as **mãos**. O resultado é uma **tetraparesia** que afeta **mais os membros superiores** que os inferiores, com função das mãos muito prejudicada.\n\n**O prognóstico.** É **relativamente bom**: muitos pacientes voltam a andar e recuperam o controle vesical. A recuperação segue uma ordem: primeiro as **pernas**, depois a bexiga, e por último as **mãos** (que podem ficar com déficit fino permanente). Idade avançada piora o prognóstico.\n\n**O tratamento.** Imobilização cervical, manter a pressão arterial (perfusão medular) e reabilitação. A **descompressão** cirúrgica é indicada quando há instabilidade, compressão persistente e importante ou piora neurológica; o momento ideal é discutido, com tendência a operar mais cedo nos casos com compressão grave.",
+  "correta": "**Correta: B (hiperextensão e cursa com tetraparesia que afeta mais os membros superiores).** A síndrome centromedular ocorre em idosos com espondilose cervical, por **hiperextensão** do pescoço. A lesão central atinge primeiro as fibras mais mediais do trato corticoespinhal, que são as dos membros superiores, causando uma **tetraparesia** pior nos **braços** que nas pernas.",
   "incorretas": {
-   "A": "**Hiperflexão.**\n- O mecanismo é **hiperextensão**.",
-   "C": "**Hiperflexão, MMII.**\n- Mecanismo e distribuição errados.",
-   "D": "**Hiperextensão, MMII.**\n- O mecanismo está certo, mas o déficit predomina nos **MMSS**."
+   "A": "A tetraparesia pior nos membros superiores está certa, mas o mecanismo típico é a **hiperextensão**, e não a hiperflexão.",
+   "C": "O mecanismo é a **hiperextensão**, e os **membros superiores** são os mais afetados.",
+   "D": "A hiperextensão está certa, mas a síndrome centromedular afeta **mais os membros superiores**, e não os inferiores."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)",
+   "Schneider RC, Cherry G, Pantek H. The syndrome of acute central cervical spinal cord injury; with special reference to the mechanisms involved in hyperextension injuries of cervical spine. J Neurosurg. 1954;11(6):546-577."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "coluna-0096": {
@@ -3213,19 +3217,19 @@
   "conferido": false
  },
  "coluna-0286": {
-  "conceito": "### A imagem\nRM **sagital T2** da coluna lombar. O **líquor** aparece branco, com as raízes da cauda equina dentro. A seta aponta a **linha fina hipointensa** que contorna o líquor na face **posterior** do saco, separando-o da gordura epidural e dos elementos posteriores: a ==dura-máter== (saco dural).\n\n### Estruturas do canal (de anterior para posterior)\n1. Corpo vertebral / disco.\n2. **Ligamento longitudinal posterior** (LLP), colado aos corpos e ao ânulo.\n3. **Espaço epidural anterior.**\n4. ==Dura-máter== (saco dural), com a aracnoide e o líquor.\n5. **Espaço epidural posterior**, com gordura.\n6. **Ligamento amarelo**, entre as lâminas; espesso na estenose.\n7. Lâminas, **interespinhoso**, **supraespinhoso**.\n\n### Relevância\n- **Durotomia** incidental na descompressão.\n- **Cisto sinovial** e **hérnia** comprimem o saco.\n- O saco termina em ~**S2**.\n\n> **Na prova:** contorno do saco liquórico = ==dura-máter==.",
-  "correta": "**Dura-máter.**",
+  "conceito": "**A imagem.** Ressonância **sagital ponderada em T2** da coluna lombar. O **líquor** aparece **branco** (hiperintenso) dentro do saco dural. A seta aponta a **linha escura e fina** que forma a **parede posterior** do saco, separando o líquor da gordura epidural posterior: a **dura-máter**.\n\n**As estruturas do canal na ressonância, de anterior para posterior.**\n\n| Estrutura | Aspecto em T2 |\n|---|---|\n| Corpo vertebral e disco | Disco normal **claro** no centro (núcleo hidratado); disco degenerado escuro |\n| **Ligamento longitudinal posterior** | Linha **escura** colada à face **posterior** dos corpos e dos discos (parede **anterior** do canal) |\n| Gordura epidural anterior | Pouca, clara |\n| **Dura-máter** (parede anterior do saco) | Linha escura fina, junto ao ligamento longitudinal posterior |\n| **Líquor** e raízes (cauda equina) | Líquor **branco**; raízes como fios escuros |\n| **Dura-máter** (parede posterior do saco) | Linha **escura** fina (a da seta) |\n| Gordura epidural posterior | Clara |\n| **Ligamento amarelo** | Escuro, espesso, entre as **lâminas** (atrás e dos lados do canal) |\n| Ligamentos interespinhoso e supraespinhoso | Entre e sobre os processos espinhosos |\n\n**Como não confundir.**\n- O **ligamento longitudinal posterior** fica na parede **anterior** do canal, colado aos corpos vertebrais.\n- O **ligamento amarelo** fica **posterior** e **lateral**, entre as lâminas, e aparece mais espesso no corte sagital parassagital ou no axial. Sua **hipertrofia** é uma das causas da estenose do canal.\n- O **ligamento interespinhoso** fica **entre os processos espinhosos**, bem atrás do canal.\n- A **dura-máter** é a membrana que **envolve diretamente o líquor**, sendo a borda do saco dural.\n\n**A importância clínica.**\n- A **lesão da dura-máter** (durotomia) é uma complicação da cirurgia da coluna, com fístula liquórica, cefaleia postural e pseudomeningocele.\n- O **saco dural** termina geralmente em **S2**. A medula termina por volta de **L1-L2** (o cone medular), e abaixo dele estão as raízes da cauda equina.\n- Na estenose do canal, o saco dural fica comprimido pela hérnia, pelo ligamento amarelo hipertrofiado e pelas facetas.",
+  "correta": "**Correta: A (à dura-máter).** Na ressonância sagital em T2, a seta aponta a linha escura e fina que forma a parede posterior do saco dural, envolvendo diretamente o líquor (branco): a **dura-máter**.",
   "incorretas": {
-   "B": "**Ligamento amarelo.**\n- Posterior ao saco, entre as lâminas.\n- Mais espesso e separado do saco pela gordura.",
-   "C": "**Interespinhoso.**\n- Entre os espinhosos, bem mais posterior.",
-   "D": "**Longitudinal posterior.**\n- Fica **anterior** ao saco, sobre os corpos vertebrais."
+   "B": "O **ligamento amarelo** fica entre as **lâminas**, posterior e lateral ao saco, e aparece mais espesso, não como a fina parede do saco dural.",
+   "C": "O **ligamento interespinhoso** fica **entre os processos espinhosos**, bem atrás do canal vertebral.",
+   "D": "O **ligamento longitudinal posterior** fica na parede **anterior** do canal, colado à face posterior dos corpos vertebrais e dos discos."
   },
   "referencias": [
    "Gray's Anatomy. Meninges and spinal canal.",
    "Benzel EC. Spine Surgery. 5th ed. Elsevier; 2022.",
    "Netter, Atlas de Anatomia Humana, 7ª edição, Seção 3"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "coluna-0287": {

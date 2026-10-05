@@ -2478,14 +2478,18 @@
   "conferido": false
  },
  "ombro-cotovelo-0260": {
-  "conceito": "### Compartimento dorsal do antebraço\n| Camada | Músculos |\n|---|---|\n| superficial | ERLC, ERCC, extensor comum, extensor do mínimo, EUC (+ braquiorradial) |\n| profunda | supinador, ==abdutor longo, extensor curto e extensor longo do polegar==, extensor do indicador |\n\n- O ==nervo interósseo posterior== sai do supinador e corre ==entre as camadas==.\n\n### Extensor longo do polegar\n- Trajeto ==oblíquo acentuado==, do lado ulnar ao radial.\n- Contorna o ==tubérculo de Lister== (3º compartimento) e cruza os extensores radiais.\n- Interseção distal; ruptura por atrito após fratura do rádio (mesmo sem desvio).\n\n### Nervos sensitivos\n- Cutâneo antebraquial posterior: subcutâneo, ramo do radial no braço.\n\n> **Na prova:** nervo entre as camadas + músculo oblíquo ao Lister = ==NIP e extensor longo do polegar==.",
-  "correta": "**NIP e extensor longo do polegar.**\n- O NIP corre entre as camadas superficial e profunda.\n- O ELP tem trajeto oblíquo até o tubérculo de Lister.\n- Esse trajeto explica ruptura e interseção distal.",
+  "conceito": "**A imagem.** Vista **posterior** do antebraço, com os extensores superficiais afastados para mostrar a camada **profunda**. A seta superior aponta o **nervo interósseo posterior**, que sai por baixo do **supinador** e desce sobre a membrana interóssea. A seta inferior aponta o músculo profundo que corre obliquamente em direção ao polegar, junto à ulna e à membrana: o **extensor longo do polegar**.\n\n**A camada profunda do compartimento posterior.** De proximal para distal e de lateral para medial:\n\n| Músculo | Origem | Inserção |\n|---|---|---|\n| Supinador | Epicôndilo lateral, crista do supinador da ulna | Rádio proximal |\n| **Abdutor longo do polegar** | Ulna, rádio e membrana (o mais proximal dos \"polegares\") | Base do 1º metacarpo |\n| **Extensor curto do polegar** | **Rádio** e membrana (abaixo do abdutor longo) | Base da falange **proximal** do polegar |\n| **Extensor longo do polegar** | **Ulna** e membrana (terço médio) | Base da falange **distal** do polegar |\n| Extensor do indicador | Ulna e membrana (o mais distal) | Aparelho extensor do indicador |\n\n**Como diferenciar os extensores do polegar.**\n- O **extensor longo** nasce na **ulna**, corre **obliquamente** e, no punho, passa ao redor do **tubérculo de Lister** (3º compartimento extensor), formando a borda **ulnar** da tabaqueira anatômica.\n- O **extensor curto** nasce no **rádio**, mais lateral e mais distal, e acompanha o **abdutor longo** no **1º compartimento** (o da tenossinovite de **De Quervain**), formando a borda **radial** da tabaqueira.\n\n**O nervo interósseo posterior.** É o ramo **motor** profundo do nervo radial. Entra no supinador pela **arcada de Frohse**, atravessa-o e sai no compartimento posterior, onde inerva os extensores dos dedos, do polegar e o extensor ulnar do carpo. Termina no punho, com fibras sensitivas para a cápsula (no assoalho do 4º compartimento, onde é ressecado na **denervação** do punho).\n\n**O nervo cutâneo antebraquial posterior** é um ramo **sensitivo** do radial, que sai **acima** do cotovelo e corre **superficialmente**, no subcutâneo, e não na camada profunda entre os músculos.\n\n**A importância clínica.**\n- **Ruptura do extensor longo do polegar**: após fraturas do rádio distal **sem desvio** (atrito e isquemia no tubérculo de Lister) e na artrite reumatoide. Trata-se com a **transferência do extensor do indicador**.\n- **Lesão do interósseo posterior**: dedos e polegar caídos, com a extensão do punho preservada (em desvio radial).",
+  "correta": "**Correta: A (interósseo posterior e extensor longo do polegar).** Na camada profunda do antebraço posterior, a seta superior aponta o **nervo interósseo posterior**, que sai do supinador, e a inferior aponta o **extensor longo do polegar**, que nasce na ulna e corre obliquamente em direção ao polegar.",
   "incorretas": {
-   "B": "**Músculo errado.**\n- O extensor curto acompanha o abdutor longo ao 1º compartimento.",
-   "C": "**Nervo errado.**\n- O cutâneo posterior é subcutâneo.",
-   "D": "**Duplamente errada.**\n- Nem o nervo nem o músculo."
+   "B": "O nervo está certo, mas o **extensor curto do polegar** nasce no **rádio**, mais lateral e distal, junto ao abdutor longo, e não é o músculo indicado.",
+   "C": "O **nervo cutâneo antebraquial posterior** é **sensitivo** e superficial, e não corre na camada profunda junto à membrana interóssea.",
+   "D": "Erra o nervo (o indicado é o interósseo posterior, motor e profundo) e o músculo (o extensor longo do polegar, da ulna)."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)",
+   "Netter FH. Atlas de Anatomia Humana. 7ª edição. Elsevier; 2019."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "ombro-cotovelo-0261": {

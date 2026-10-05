@@ -1157,14 +1157,19 @@
   "conferido": false
  },
  "pe-tornozelo-0105": {
-  "conceito": "### Disfunção do tibial posterior, estágio II (Johnson e Strom)\n- **Tendão:** insuficiente.\n- **Deformidade:** plano-valgo **flexível** (redutível).\n- **Exame:**\n  - **não faz** a elevação unipodal do calcanhar, ou faz sem inverter o calcâneo;\n  - **muitos dedos** positivo;\n  - na inversão contra resistência, ==recruta o tibial anterior== para compensar.\n\n### Como isolar o tibial posterior\n- **Posição de partida:** pé em **flexão plantar** + **eversão**.\n- **Pedido:** inversão contra resistência.\n- **Por quê:** em dorsiflexão, o **tibial anterior** também inverte e mascara a fraqueza.\n\n### Diferenças entre os estágios\n| Estágio | Achado-chave |\n|---|---|\n| I | dor e edema; **heel rise preservado** |\n| ==II== | ==heel rise perdido; deformidade flexível; compensação com o tibial anterior== |\n| III | deformidade **rígida** |\n| IV | + **valgo do tornozelo** |\n\n> **Na prova:** estágio II = ==compensação da inversão com o tibial anterior==.",
-  "correta": "**Compensação da inversão do pé com o tibial anterior.**",
+  "conceito": "**A insuficiência do tibial posterior.** É a principal causa do **pé plano adquirido do adulto**. O tendão degenera numa zona de pouca irrigação atrás do maléolo medial e perde a capacidade de sustentar o arco. Mais comum em **mulheres** de meia-idade, obesas, hipertensas e diabéticas, ou após uso de corticoides.\n\n**A classificação de Johnson e Strom (modificada por Myerson).**\n\n| Estágio | Achados | Tratamento |\n|---|---|---|\n| **I** | Tenossinovite, dor e edema medial; **sem deformidade**; consegue a elevação monopodal | Conservador; tenossinovectomia |\n| **II** | Tendão **alongado e insuficiente**; pé plano **flexível** (o retropé valgo **se corrige**); **não consegue** a elevação monopodal; sinal de \"muitos dedos\" | Transferência do **flexor longo dos dedos** + osteotomia de medialização do calcâneo (± alongamento da coluna lateral) |\n| **III** | Deformidade **rígida** (valgo fixo do retropé) | **Artrodese** (tríplice ou subtalar) |\n| **IV** | Também **valgo do tornozelo** (lesão do deltoide) | Artrodese pantalar ou reconstrução do deltoide |\n\n**O exame físico no estágio II.**\n- **Elevação monopodal**: o paciente **não consegue** ficar na ponta de um pé só, ou fica sem que o calcanhar vá para **varo** (o tibial posterior é quem inverte o calcanhar nesse movimento).\n- **Muitos dedos** (too many toes): visto por trás, o antepé abduzido mostra mais dedos do lado lateral.\n- O retropé está em **valgo**, mas **flexível**: corrige-se passivamente.\n- **Fraqueza** importante do tibial posterior ao teste manual.\n\n**O teste manual e a compensação pelo tibial anterior.** Para testar o tibial posterior, o paciente faz a **inversão** do pé contra resistência. Como o tibial posterior está insuficiente, o paciente **compensa** usando o **tibial anterior**, que também inverte o pé, mas em **dorsiflexão**. Por isso, o teste deve ser feito com o pé em **flexão plantar e eversão**, posição em que o tibial anterior não consegue substituir o tibial posterior. A compensação pelo tibial anterior é um achado típico do estágio II.\n\n**Por que as outras alternativas não descrevem o estágio II.**\n- A **manutenção da elevação monopodal** é do estágio **I**.\n- A fraqueza do tibial posterior no estágio II não é **leve**: é importante.\n- O valgo do retropé está presente, mas é **flexível**; o valgo marcado e **fixo** caracteriza o estágio **III**.",
+  "correta": "**Correta: C (compensação para inversão do pé utilizando o tibial anterior).** No estágio II da insuficiência do tibial posterior, o tendão está insuficiente, e o paciente **compensa** a inversão do pé usando o **tibial anterior**. Por isso, o teste é feito com o pé em flexão plantar e eversão. Também há pé plano flexível e incapacidade de elevação monopodal.",
   "incorretas": {
-   "A": "**Valgo evidente do retropé.**\n- No II existe, mas **flexível**.\n- O valgo **rígido** é do III.",
-   "B": "**Apoio monopodal mantido.**\n- Achado do estágio **I**.",
-   "D": "**Enfraquecimento leve.**\n- Estágio **I**."
+   "A": "O valgo do retropé existe no estágio II, mas é **flexível**. O valgo marcado e **fixo** caracteriza o estágio III.",
+   "B": "A **manutenção da elevação monopodal** é típica do estágio **I**. No estágio II, o paciente não consegue ficar na ponta de um pé só.",
+   "D": "No estágio II, a fraqueza do tibial posterior é **importante**, e não leve."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
+   "Johnson KA, Strom DE. Tibialis posterior tendon dysfunction. Clin Orthop Relat Res. 1989;(239):196-206."
+  ],
+  "alerta": "A alternativa A (valgo do retropé) também descreve um achado presente no estágio II, embora flexível. Mantivemos o gabarito registrado (C), que corresponde à compensação pelo tibial anterior.",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pe-tornozelo-0106": {
@@ -1343,14 +1348,18 @@
   "conferido": false
  },
  "pe-tornozelo-0121": {
-  "conceito": "### A imagem\nVista **medial** do tornozelo. Segundo o gabarito, a seta indica o tendão **intermediário** do grupo retromaleolar medial: o ==flexor longo dos dedos==, entre o tibial posterior (anterior, colado ao maléolo) e o feixe / FLH (posteriores).\n\n### Ordem retromaleolar medial\n**\"Tom, Dick And Very Nervous Harry\"**, de anterior para posterior:\n1. **Tibial posterior.**\n2. ==Flexor longo dos dedos==.\n3. Artéria tibial posterior.\n4. Veias.\n5. **Nervo tibial.**\n6. **Flexor longo do hálux.**\n\n### FLD\n- **Origem:** face posterior da **tíbia**.\n- **Trajeto:**\n  - no pé, cruza **superficialmente** o FLH no **nó de Henry**;\n  - recebe o **quadrado plantar**;\n  - origina os **lumbricais**.\n- **Inserção:** falanges **distais** do 2º ao 5º dedos.\n- **Transferência do FLD** para o navicular: padrão no estágio II da disfunção do tibial posterior. O déficit é pouco relevante, porque o FLH tem conexões com o FLD.\n\n> **Na prova:** tendão intermediário atrás do maléolo medial = ==FLD==.",
-  "correta": "**Flexor longo dos dedos.**",
+  "conceito": "**A imagem.** Vista **medial** do tornozelo. Atrás do **maléolo medial** passam vários tendões. A seta aponta o tendão do **meio** do grupo, logo atrás do tibial posterior: o **flexor longo dos dedos**.\n\n**Os tendões atrás do maléolo medial.** De anterior para posterior, o conteúdo do **túnel do tarso** segue o mnemônico **\"Tom, Dick And Very Nervous Harry\"**:\n1. **T**ibial posterior: o mais **anterior**, colado ao maléolo medial.\n2. Flexor longo dos **D**edos.\n3. **A**rtéria tibial posterior.\n4. **V**eias tibiais posteriores.\n5. **N**ervo tibial.\n6. Flexor longo do **H**álux: o mais **posterior**, num sulco próprio do tálus, entre os tubérculos medial e lateral.\n\n**Os três tendões e as suas funções.**\n\n| Tendão | Inserção | Função |\n|---|---|---|\n| **Tibial posterior** | **Tuberosidade do navicular** e expansões plantares | Inversão; principal **sustentador do arco** medial |\n| **Flexor longo dos dedos** | Base das falanges distais do **2º ao 5º** dedos | Flexão dos dedos menores; ajuda o arco |\n| **Flexor longo do hálux** | Base da falange distal do **hálux** | Flexão do hálux; impulsão na marcha |\n\n**A importância clínica.**\n- **Disfunção do tibial posterior**: a principal causa do **pé plano adquirido** do adulto. Nos estágios flexíveis, o tendão do **flexor longo dos dedos** é **transferido** para o navicular para substituir o tibial posterior.\n- **Tendinite do flexor longo do hálux**: em **bailarinos** (posição de ponta), com dor posteromedial e o \"hálux em gatilho\".\n- O **nó de Henry**, na planta do pé, é o ponto onde o flexor longo dos dedos cruza **superficialmente** o flexor longo do hálux. É um ponto de referência nas transferências.\n\n**O \"flexor superficial dos dedos\"** é um músculo do **antebraço** e da mão. No pé, o equivalente é o **flexor curto dos dedos**, um músculo intrínseco da planta.",
+  "correta": "**Correta: C (flexor longo dos dedos).** Atrás do maléolo medial, a seta aponta o tendão do meio, logo posterior ao tibial posterior: o **flexor longo dos dedos**. A ordem, de anterior para posterior, é tibial posterior, flexor longo dos dedos, vasos e nervo tibiais e flexor longo do hálux.",
   "incorretas": {
-   "A": "**Tibial posterior.**\n- O **mais anterior** do grupo.",
-   "B": "**Flexor longo do hálux.**\n- O **mais posterior**, junto ao Aquiles.",
-   "D": "**Flexor superficial dos dedos.**\n- Músculo do antebraço."
+   "A": "O **tibial posterior** é o tendão mais **anterior**, colado ao maléolo medial.",
+   "B": "O **flexor longo do hálux** é o mais **posterior**, num sulco próprio no tálus, atrás do feixe neurovascular.",
+   "D": "O **flexor superficial dos dedos** é um músculo do **antebraço**. No pé, não existe com esse nome."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
+   "Netter FH. Atlas de Anatomia Humana. 7ª edição. Elsevier; 2019."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pe-tornozelo-0122": {
@@ -2867,14 +2876,18 @@
   "conferido": false
  },
  "pe-tornozelo-0283": {
-  "conceito": "### A imagem\nVista **plantar** dos ligamentos do pé. A seta aponta, na face **medial** do médio-pé, o tendão que chega à **tuberosidade do navicular** e se abre em leque: a inserção do ==tibial posterior==.\n\n### Inserção do tibial posterior\n- **Principal:** **tuberosidade do navicular**.\n- **Expansões plantares:** três cuneiformes, cuboide e bases do 2º ao 4º metatarsos.\n- **Função:** **inversão**, sustentação do **arco medial**, trava a Chopart no apoio.\n\n### Clínica\n- **Disfunção do tibial posterior:** principal causa de **pé plano adquirido** do adulto.\n- **Navicular acessório** (tipo II): dor na inserção; procedimento de **Kidner**.\n\n### Os distratores\n- **Mola:** do sustentáculo à face **plantar** do navicular; sob a cabeça do tálus.\n- **Lisfranc:** cuneiforme medial até a base do **2º metatarso**.\n- **Cuneonavicular:** liga o navicular aos cuneiformes; não é tendão.\n\n> **Na prova:** inserção na tuberosidade do navicular = ==tibial posterior==.",
-  "correta": "**Tendão tibial posterior.**",
+  "conceito": "**A imagem.** Vista **plantar** do pé, com os ligamentos e as inserções tendíneas. A seta aponta, no lado **medial** do mediopé, o tendão que chega à **tuberosidade do navicular** e se abre em leque com várias **expansões plantares**: a inserção do **tibial posterior**.\n\n**O tibial posterior.** Nasce na face posterior da tíbia, da fíbula e da membrana interóssea, no compartimento posterior profundo da perna. O tendão passa **atrás do maléolo medial** (o mais anterior do túnel do tarso) e se insere:\n- principalmente na **tuberosidade do navicular**;\n- com **expansões plantares** para os **três cuneiformes**, o **cuboide** e as bases do **2º ao 4º metatarsos**;\n- e uma expansão para o **sustentáculo do tálus**.\n\n**A função.**\n- **Inversão** e flexão plantar do pé.\n- **Trava** a articulação **mediotársica** (de Chopart) durante a fase final do apoio, tornando o pé uma **alavanca rígida** para a impulsão.\n- É o principal **sustentador dinâmico** do **arco longitudinal medial**.\n\n**A disfunção do tibial posterior.** É a principal causa do **pé plano adquirido do adulto**, mais comum em **mulheres** de meia-idade, obesas, hipertensas e diabéticas. O tendão degenera numa zona de **pouca irrigação** atrás do maléolo medial. O pé perde o arco, o retropé vai para **valgo** e o antepé para **abdução** (sinal de \"**muitos dedos**\", too many toes). O paciente **não consegue** ficar na ponta de um pé só (teste da **elevação monopodal** do calcanhar).\n\n**As estruturas vizinhas da imagem.**\n- **Ligamento mola** (calcaneonavicular plantar): do sustentáculo do tálus ao navicular; sustenta a **cabeça do tálus**. Fica **profundo** ao tendão do tibial posterior e se rompe junto com ele no pé plano adquirido.\n- **Ligamento de Lisfranc**: do cuneiforme medial à base do **2º metatarso**, mais distal.\n- Ligamentos cuneonaviculares: entre o navicular e os cuneiformes.",
+  "correta": "**Correta: B (tendão tibial posterior).** A seta aponta a inserção que chega à tuberosidade do navicular e se abre em leque com expansões plantares para os cuneiformes, o cuboide e as bases dos metatarsos: a inserção do **tendão tibial posterior**, principal sustentador dinâmico do arco medial.",
   "incorretas": {
-   "A": "**Ligamento mola.**\n- Mais plantar e posterior, sob a cabeça do tálus.",
-   "C": "**Lisfranc.**\n- Distal e lateral: cuneiforme medial até o 2º metatarso.",
-   "D": "**Cuneonavicular.**\n- Ligamento entre navicular e cuneiformes."
+   "A": "O **ligamento mola** (calcaneonavicular plantar) vai do sustentáculo do tálus ao navicular, **profundo** ao tendão do tibial posterior, e não se abre em leque pela planta.",
+   "C": "O **ligamento de Lisfranc** vai do cuneiforme medial à base do segundo metatarso, mais distal que a estrutura indicada.",
+   "D": "Os **ligamentos cuneonaviculares** unem o navicular aos cuneiformes e não formam a inserção em leque mostrada."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
+   "Netter FH. Atlas de Anatomia Humana. 7ª edição. Elsevier; 2019."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pe-tornozelo-0284": {
