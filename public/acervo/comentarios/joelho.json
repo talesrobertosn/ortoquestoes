@@ -1063,18 +1063,19 @@
   "conferido": false
  },
  "joelho-0092": {
-  "conceito": "### Menisco discoide\n| Aspecto | Dado |\n|---|---|\n| menisco | ==lateral== (quase sempre) |\n| prevalência | 0,4 a 17% (mais em asiáticos) |\n| bilateral | até 20% |\n| clínica | ==estalido==, bloqueio, ==lesões sem trauma== |\n\n### Watanabe\n| Tipo | Descrição |\n|---|---|\n| I completo | cobre todo o planalto, fixações normais |\n| II incompleto | cobre parte |\n| III ==Wrisberg== | ==sem fixação tibial posterior (coronário)==, só o ligamento de Wrisberg: ==hipermóvel== |\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| assintomático | observar |\n| sintomático estável | ==saucerização== (meniscectomia parcial) |\n| Wrisberg / instável | saucerização + ==sutura periférica==; clássico: meniscectomia total |\n\n> **Na prova:** tipo Wrisberg ==não possui o ligamento coronário== (fixação tibial posterior) (veja o alerta).",
-  "correta": "**Wrisberg sem ligamento coronário.**\n- Sem fixação tibial posterior: hipermóvel.\n- Estalido no joelho.",
+  "conceito": "**O que é o menisco discoide.** É uma variação anatômica em que o menisco tem forma de **disco**, mais largo e espesso que o normal, cobrindo parte ou toda a superfície do platô. Acomete quase sempre o **menisco lateral** (o medial discoide é raríssimo). A prevalência varia de menos de 1% a mais de 10% conforme a população, sendo maior em **asiáticos**. A bilateralidade é frequente: estudos com ressonância e artroscopia mostram até cerca de **20%** ou mais.\n\n**Por que causa problemas.** O tecido do menisco discoide é mais espesso, com colágeno desorganizado e vascularização menor. Ele sofre lesões **sem trauma significativo** e pode ser **instável**. Na criança, a apresentação clássica é o **\"joelho que estala\"** (snapping knee), com ressalto palpável na extensão, bloqueio ou derrame.\n\n**A classificação de Watanabe.**\n\n| Tipo | Descrição |\n|---|---|\n| I, completo | Cobre **todo o platô**, com fixações periféricas normais (estável) |\n| II, incompleto | Cobre parte do platô, fixações normais (estável) |\n| **III, Wrisberg** | Forma variável, **sem fixação meniscotibial posterior (ligamento coronário)**; preso só pelo ligamento meniscofemoral de Wrisberg, por isso **hipermóvel** |\n\nNo tipo Wrisberg, o corno posterior não tem o ligamento coronário que o prende à tíbia. Na extensão, o ligamento de Wrisberg puxa o menisco para o intercôndilo, e ele volta com um estalo na flexão.\n\n**Tratamento.**\n- Assintomático, achado por acaso: **observação**.\n- Sintomático e estável: **saucerização** (meniscoplastia), deixando uma borda de 6 a 8 mm.\n- Instável (tipo Wrisberg ou instabilidade periférica): saucerização com **reinserção periférica** (sutura).\n- A meniscectomia total é evitada pelo risco de artrose lateral precoce.",
+  "correta": "**Correta: D.** O tipo **Wrisberg** (Watanabe III) não possui a fixação meniscotibial posterior, o **ligamento coronário**, e fica preso apenas pelo ligamento de Wrisberg, o que o torna hipermóvel.",
   "incorretas": {
-   "A": "**Lateral.**\n- Medial é raro.",
-   "B": "**Mais que 5%.**\n- Até 20% bilateral.",
-   "C": "**Descreve o tipo I.**\n- O III é o Wrisberg."
+   "A": "O menisco discoide é muito mais comum no menisco **lateral**; o medial discoide é raro.",
+   "B": "A bilateralidade é bem mais frequente que 5%; as séries mostram até cerca de **20%** ou mais.",
+   "C": "Quem recobre todo o platô com fixação periférica íntegra é o **tipo I** (completo). O tipo III (Wrisberg) é justamente o que tem a fixação posterior deficiente."
   },
-  "alerta": "A nomenclatura anatômica varia entre autores: alguns descrevem ausência do ligamento meniscotibial posterior, outros utilizam o termo ligamento coronário posterior. O conceito essencial é deficiência da fixação tibial posterior com hipermobilidade.",
   "referencias": [
-   "https://pubmed.ncbi.nlm.nih.gov/29059110/"
+   "https://pubmed.ncbi.nlm.nih.gov/29059110/",
+   "Watanabe M, Takeda S, Ikeuchi H. Atlas of Arthroscopy, 3ª edição. Tokyo: Igaku-Shoin, 1979."
   ],
-  "geradoEm": "2026-09-24",
+  "alerta": "A nomenclatura anatômica varia entre autores: alguns descrevem ausência do ligamento meniscotibial posterior, outros utilizam o termo ligamento coronário posterior. O conceito essencial é deficiência da fixação tibial posterior com hipermobilidade.",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "joelho-0093": {
@@ -1693,14 +1694,18 @@
   "conferido": false
  },
  "joelho-0141": {
-  "conceito": "### Menisco discoide\n| Aspecto | Dado |\n|---|---|\n| menisco | ==lateral== (quase sempre) |\n| prevalência | 0,4 a 17% (mais em asiáticos) |\n| bilateral | até 20% |\n| clínica | ==estalido==, bloqueio, ==lesões sem trauma== |\n\n### Watanabe\n| Tipo | Descrição |\n|---|---|\n| I completo | cobre todo o planalto, fixações normais |\n| II incompleto | cobre parte |\n| III ==Wrisberg== | ==sem fixação tibial posterior (coronário)==, só o ligamento de Wrisberg: ==hipermóvel== |\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| assintomático | observar |\n| sintomático estável | ==saucerização== (meniscectomia parcial) |\n| Wrisberg / instável | saucerização + ==sutura periférica==; clássico: meniscectomia total |\n\n> **Na prova:** menisco discoide assintomático achado na artroscopia = ==deixar sem tratamento==",
-  "correta": "**Deixar intacto.**\n- Assintomático não se opera.\n- Menisco discoide funcional protege a cartilagem.",
+  "conceito": "**Menisco discoide: tratar o paciente, não a imagem.** O menisco discoide é uma variação anatômica, quase sempre do menisco lateral, mais largo e espesso que o normal. Muitas pessoas convivem com ele a vida inteira **sem sintomas**. Ele é frequentemente descoberto por acaso em ressonância ou durante uma artroscopia feita por outro motivo.\n\n**Por que não mexer no menisco assintomático.**\n- O menisco, mesmo discoide, **distribui carga** e protege a cartilagem do compartimento lateral, que é convexo e muito dependente do menisco.\n- A ressecção, parcial ou total, não traz benefício a quem não tem sintomas e expõe o joelho ao risco de **artrose lateral precoce** e de instabilidade do remanescente.\n- Não há evidência de que a saucerização profilática previna lesões futuras.\n\n**A regra.** Menisco discoide **assintomático**, **estável** e sem lesão, achado incidentalmente: **deixar intacto** e apenas acompanhar.\n\n**Quando tratar.**\n\n| Situação | Conduta |\n|---|---|\n| Assintomático, estável | **Observação** |\n| Sintomático (dor, estalo, bloqueio), estável | **Saucerização** (meniscoplastia), mantendo borda de 6 a 8 mm |\n| Instável (tipo Wrisberg ou desinserção periférica) | Saucerização com **sutura periférica** |\n| Lesão extensa irreparável | Meniscectomia parcial; total apenas em último caso |\n\n**Detalhe técnico.** Na saucerização, o objetivo é transformar o disco num menisco de forma semilunar, preservando uma borda estável. Em seguida, a periferia é testada com o gancho; se houver instabilidade, a borda é suturada à cápsula.",
+  "correta": "**Correta: D (deixado intacto sem tratamento).** O menisco discoide assintomático encontrado por acaso deve ser preservado, porque continua distribuindo carga e a ressecção sem indicação só aumenta o risco de artrose do compartimento lateral.",
   "incorretas": {
-   "A": "**Só se sintomático.**\n- Saucerização tem indicação clínica.",
-   "B": "**Só se sintomático.**\n- Idem.",
-   "C": "**Nunca como rotina.**\n- Leva a artrose."
+   "A": "A **saucerização** está indicada para o menisco discoide **sintomático**, não para o achado incidental.",
+   "B": "A **meniscoplastia** é o mesmo procedimento que a saucerização e também fica reservada ao menisco sintomático.",
+   "C": "A **ressecção total** é a pior opção: deixa o compartimento lateral sem proteção e leva à artrose precoce."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
+   "Kocher MS, Logan CA, Kramer DE. Discoid lateral meniscus in children: diagnosis, management, and outcomes. J Am Acad Orthop Surg. 2017;25(11):736-743."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "joelho-0142": {
@@ -3079,18 +3084,19 @@
   "conferido": false
  },
  "joelho-0257": {
-  "conceito": "### Menisco discoide\n| Aspecto | Dado |\n|---|---|\n| menisco | ==lateral== (quase sempre) |\n| prevalência | 0,4 a 17% (mais em asiáticos) |\n| bilateral | até 20% |\n| clínica | ==estalido==, bloqueio, ==lesões sem trauma== |\n\n### Watanabe\n| Tipo | Descrição |\n|---|---|\n| I completo | cobre todo o planalto, fixações normais |\n| II incompleto | cobre parte |\n| III ==Wrisberg== | ==sem fixação tibial posterior (coronário)==, só o ligamento de Wrisberg: ==hipermóvel== |\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| assintomático | observar |\n| sintomático estável | ==saucerização== (meniscectomia parcial) |\n| Wrisberg / instável | saucerização + ==sutura periférica==; clássico: meniscectomia total |\n\n> **Na prova:** tipo Wrisberg ==não possui o ligamento coronário== (fixação tibial posterior) (veja o alerta).",
-  "correta": "**Wrisberg sem ligamento coronário.**\n- Sem fixação tibial posterior: hipermóvel.\n- Estalido no joelho.",
+  "conceito": "**O que é o menisco discoide.** É uma variação anatômica em que o menisco tem forma de **disco**, mais largo e espesso que o normal, cobrindo parte ou toda a superfície do platô. Acomete quase sempre o **menisco lateral** (o medial discoide é raríssimo). A prevalência varia de menos de 1% a mais de 10% conforme a população, sendo maior em **asiáticos**. A bilateralidade é frequente: estudos com ressonância e artroscopia mostram até cerca de **20%** ou mais.\n\n**Por que causa problemas.** O tecido do menisco discoide é mais espesso, com colágeno desorganizado e vascularização menor. Ele sofre lesões **sem trauma significativo** e pode ser **instável**. Na criança, a apresentação clássica é o **\"joelho que estala\"** (snapping knee), com ressalto palpável na extensão, bloqueio ou derrame.\n\n**A classificação de Watanabe.**\n\n| Tipo | Descrição |\n|---|---|\n| I, completo | Cobre **todo o platô**, com fixações periféricas normais (estável) |\n| II, incompleto | Cobre parte do platô, fixações normais (estável) |\n| **III, Wrisberg** | Forma variável, **sem fixação meniscotibial posterior (ligamento coronário)**; preso só pelo ligamento meniscofemoral de Wrisberg, por isso **hipermóvel** |\n\nNo tipo Wrisberg, o corno posterior não tem o ligamento coronário que o prende à tíbia. Na extensão, o ligamento de Wrisberg puxa o menisco para o intercôndilo, e ele volta com um estalo na flexão.\n\n**Tratamento.**\n- Assintomático, achado por acaso: **observação**.\n- Sintomático e estável: **saucerização** (meniscoplastia), deixando uma borda de 6 a 8 mm.\n- Instável (tipo Wrisberg ou instabilidade periférica): saucerização com **reinserção periférica** (sutura).\n- A meniscectomia total é evitada pelo risco de artrose lateral precoce.",
+  "correta": "**Correta: D.** O tipo **Wrisberg** (Watanabe III) não possui a fixação meniscotibial posterior, o **ligamento coronário**, e fica preso apenas pelo ligamento de Wrisberg, o que o torna hipermóvel.",
   "incorretas": {
-   "A": "**Lateral.**\n- Medial é raro.",
-   "B": "**Mais que 5%.**\n- Até 20% bilateral.",
-   "C": "**Descreve o tipo I.**\n- O III é o Wrisberg."
+   "A": "O menisco discoide é muito mais comum no menisco **lateral**; o medial discoide é raro.",
+   "B": "A bilateralidade é bem mais frequente que 5%; as séries mostram até cerca de **20%** ou mais.",
+   "C": "Quem recobre todo o platô com fixação periférica íntegra é o **tipo I** (completo). O tipo III (Wrisberg) é justamente o que tem a fixação posterior deficiente."
   },
-  "alerta": "A nomenclatura anatômica varia entre autores: alguns descrevem ausência do ligamento meniscotibial posterior, outros utilizam o termo ligamento coronário posterior. O conceito essencial é deficiência da fixação tibial posterior com hipermobilidade.",
   "referencias": [
-   "https://pubmed.ncbi.nlm.nih.gov/29059110/"
+   "https://pubmed.ncbi.nlm.nih.gov/29059110/",
+   "Watanabe M, Takeda S, Ikeuchi H. Atlas of Arthroscopy, 3ª edição. Tokyo: Igaku-Shoin, 1979."
   ],
-  "geradoEm": "2026-09-24",
+  "alerta": "A nomenclatura anatômica varia entre autores: alguns descrevem ausência do ligamento meniscotibial posterior, outros utilizam o termo ligamento coronário posterior. O conceito essencial é deficiência da fixação tibial posterior com hipermobilidade.",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "joelho-0258": {
