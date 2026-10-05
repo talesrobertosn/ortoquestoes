@@ -88,17 +88,18 @@
   "conferido": false
  },
  "pediatria-0007": {
+  "conceito": "**A deficiência femoral focal proximal (DFFP).** Faz parte do espectro das **deficiências longitudinais congênitas do fêmur**, que vai do fêmur curto congênito, com quadril normal, até a quase ausência do fêmur proximal. Geralmente é **unilateral**.\n\n**Como a criança se apresenta.**\n- Coxa **muito curta e volumosa**.\n- Quadril em **flexão, abdução e rotação externa**.\n- Pé geralmente na altura do joelho contralateral.\n\n**Associações frequentes.** **Hemimelia fibular** em cerca de metade dos casos, **deficiência do LCA** e pé com raios ausentes.\n\n**A classificação de Aitken.** Separa os tipos pela presença da **cabeça femoral**, pelo **acetábulo** e pela existência de uma **conexão óssea** entre a cabeça e a diáfise na maturidade.\n\n| Tipo | Cabeça e acetábulo | Conexão cabeça-diáfise |\n|---|---|---|\n| **A** | Cabeça presente; acetábulo **normal** | Defeito subtrocantérico que **ossifica**, deixando coxa vara |\n| **B** | Cabeça presente; acetábulo adequado ou levemente displásico | **Não ossifica**: **pseudoartrose** persistente no colo |\n| **C** | Cabeça **ausente** ou só um ossículo; acetábulo muito displásico | Sem articulação útil |\n| **D** | Cabeça e acetábulo **ausentes**; fêmur muito curto | Sem articulação |\n\n**Como raciocinar.** Nos tipos A e B **existe** uma cabeça dentro de um acetábulo, e por isso existe um quadril potencial. A diferença está no que acontece entre a cabeça e a diáfise. No **A**, a falha cartilaginosa acaba ossificando, e sobra uma coxa vara grave. No **B**, a falha persiste como **pseudoartrose** do colo. Nos tipos C e D, **não há** quadril para reconstruir.\n\n**Implicações no tratamento.**\n- Nos tipos **A e B**, pode-se pensar em estabilizar o quadril e, em casos selecionados, em alongamento.\n- Nos tipos **C e D**, com o membro muito curto, a regra é a **adaptação protética**. Ela pode ser associada à **artrodese do joelho** com amputação de Syme, ou à **rotacionplastia de Van Nes**, em que o tornozelo girado 180° passa a funcionar como joelho.\n- O **cálculo da discrepância final** dos membros orienta se o caso é de alongamento ou de prótese.\n\n**Por que flexão, abdução e rotação externa.** Com o fêmur proximal deficiente, os músculos que se inserem nele perdem o contraponto do braço de alavanca normal. O **iliopsoas** (flexor), os **abdutores** (glúteos médio e mínimo) e os **rotadores externos** curtos predominam. O segmento femoral curto fica, então, **fletido, abduzido e rodado externamente**, e o joelho costuma ter contratura em flexão.",
+  "correta": "**Correta: D (abdução e rotação externa).** Na deficiência focal femoral proximal, o quadril fica com contratura em **flexão, abdução e rotação externa**, pela ação sem oposição do iliopsoas, dos abdutores e dos rotadores externos sobre um fêmur curto.",
   "incorretas": {
-   "A": "Adução e rotação interna são o oposto do padrão da doença.",
-   "B": "A rotação externa está certa, mas o quadril fica em abdução, não em adução.",
-   "C": "A abdução está certa, mas a rotação é externa, não interna."
+   "A": "A **adução com rotação interna** é o oposto do padrão da DFFP. Lembra a postura do quadril espástico da paralisia cerebral.",
+   "B": "A rotação externa está certa, mas o quadril fica **abduzido**, e não aduzido.",
+   "C": "A abdução está certa, mas a rotação é **externa**, e não interna."
   },
-  "conceito": "A **deficiência femoral focal proximal** é uma falha de formação da parte **proximal do fêmur**, em geral **unilateral**. A coxa fica muito **curta**, e o quadril assume uma posição típica: **flexão, abdução e rotação externa**, com contratura nessa posição.\n\n**As associações**: **hemimelia fibular** em cerca de metade, deficiência dos **ligamentos cruzados**, pé com raios laterais ausentes.\n\n**A classificação de Aitken** olha a cabeça do fêmur e o acetábulo:\n\n**A**: cabeça presente, acetábulo normal; o colo se une depois;\n\n**B**: cabeça presente, sem ligação óssea com o colo;\n\n**C**: cabeça ausente, acetábulo displásico;\n\n**D**: cabeça e acetábulo ausentes.\n\n**O tratamento** depende da discrepância prevista e da estabilidade do quadril:\n\n**discrepância menor e quadril estável**: alongamento e epifisiodese do outro lado;\n\n**formas graves**: **rotacionplastia de Van Nes** (o tornozelo, girado 180°, funciona como joelho dentro da prótese), artrodese do joelho com prótese, ou amputação de Syme.\n\n**Na prova**: contratura do quadril na deficiência femoral focal proximal = **flexão, abdução e rotação externa**.",
-  "correta": "O quadril na deficiência femoral focal proximal fica contraturado em flexão, abdução e rotação externa.",
   "referencias": [
-   "Pediatric Orthopaedic Society of North America (POSNA). PFFD – Proximal Focal Femoral Deficiency. https://posna.org/physician-education/study-guide/pffd-proximal-focal-femoral-deficiency"
+   "Pediatric Orthopaedic Society of North America (POSNA). PFFD – Proximal Focal Femoral Deficiency. https://posna.org/physician-education/study-guide/pffd-proximal-focal-femoral-deficiency",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0008": {
@@ -1907,17 +1908,18 @@
   "conferido": false
  },
  "pediatria-0133": {
+  "conceito": "**A displasia do desenvolvimento do quadril (DDQ).** É um espectro que vai do quadril **instável** do recém-nascido à displasia acetabular, à **subluxação** e à **luxação**. Na maioria dos casos, surge no **final da gestação** e logo após o nascimento, quando o quadril é mais instável e sofre forças mecânicas.\n\n**Os fatores de risco e por que eles importam.**\n\n| Fator | Mecanismo |\n|---|---|\n| **Sexo feminino** (cerca de 80%) | Sensibilidade à **relaxina** materna, com frouxidão ligamentar |\n| **Primogênito** | Útero e parede abdominal ainda **não distendidos**: menos espaço |\n| **Apresentação pélvica** (de nádegas) | Quadris em **flexão** com joelhos estendidos: os isquiotibiais empurram a cabeça para fora |\n| **Oligoâmnio** (oligodrâmnio) | Pouco líquido, menos espaço, compressão fetal |\n| **História familiar** | Componente genético de frouxidão e de forma do acetábulo |\n| **Enfaixamento** com os quadris estendidos e aduzidos | Coloca o quadril na posição de luxação após o nascimento |\n| Outras deformidades de \"aperto\" | Torcicolo congênito, metatarso aduto, joelho recurvado |\n\n**O lado mais acometido é o esquerdo.**\n- **Esquerdo**: cerca de **60%** dos casos.\n- **Bilateral**: cerca de **20%**.\n- **Direito**: cerca de **20%**.\n\n**Por que o esquerdo.** Na posição intrauterina mais comum (**occipitoanterior esquerda**), o quadril **esquerdo** do feto fica encostado na **coluna lombossacra** da mãe, em **adução**. A adução forçada empurra a cabeça femoral para fora do acetábulo.\n\n**O rastreamento.**\n- Exame físico de **todos os recém-nascidos**: manobras de **Ortolani** (reduz um quadril luxado) e **Barlow** (luxa um quadril instável). Depois dos 3 meses, a **limitação da abdução** é o sinal mais importante.\n- **Ultrassonografia** (Graf) nos bebês com exame alterado ou com fatores de risco (pélvicos, história familiar), por volta de 4 a 6 semanas.\n- **Radiografia** depois de 4 a 6 meses, quando aparece o núcleo de ossificação.",
+  "correta": "**Correta: B (o lado direito é o mais acometido).** A afirmação **errada** é a B: o lado mais acometido na DDQ é o **esquerdo** (cerca de 60%), pela posição intrauterina occipitoanterior esquerda, em que o quadril esquerdo fica aduzido contra a coluna materna. As outras alternativas são fatores de risco verdadeiros.",
   "incorretas": {
-   "A": "Está correta: o oligoidrâmnio restringe o espaço do feto e é fator de risco.",
-   "C": "Está correta: ser primogênito é fator de risco, pelo útero ainda não distendido.",
-   "D": "Está correta: a apresentação pélvica é o maior fator de risco isolado."
+   "A": "Verdadeira: o **oligoâmnio** reduz o espaço intrauterino e é fator de risco para a DDQ.",
+   "C": "Verdadeira: a DDQ é mais frequente nos **primogênitos**, pelo útero e pela parede abdominal ainda não distendidos.",
+   "D": "Verdadeira: a **apresentação pélvica** é um dos fatores de risco mais fortes, pela posição dos quadris fletidos com os joelhos estendidos."
   },
-  "conceito": "A **displasia do desenvolvimento do quadril** depende de fatores que deixam o quadril frouxo ou apertado no útero. Os principais **fatores de risco** são:\n\n**sexo feminino**: cerca de 80% dos casos; o estrogênio materno e a relaxina aumentam a frouxidão;\n\n**primogênito**: o útero e a parede abdominal ainda não distendidos restringem o feto;\n\n**apresentação pélvica**: o maior fator isolado, sobretudo com joelhos estendidos;\n\n**oligoidrâmnio**: pouco espaço para o feto se mexer;\n\n**história familiar**;\n\n**outras deformidades de compressão**: torcicolo muscular congênito e metatarso aduto.\n\n**O lado**: o **esquerdo** é o mais acometido, em cerca de 60% dos casos. Na posição fetal mais comum, o quadril esquerdo fica **aduzido contra o sacro materno**. Os bilaterais são cerca de 20%, e o lado direito isolado, cerca de 20%.\n\n**Por que o diagnóstico precoce importa**: a cabeça femoral centrada é o estímulo para o acetábulo se aprofundar; reduzida cedo, a articulação remodela.\n\n**Na prova**: é **errado** dizer que o lado direito é o mais acometido; o mais comum é o **esquerdo**.",
-  "correta": "Esta é a afirmação errada: o lado mais acometido é o esquerdo, que fica aduzido contra o sacro materno.",
   "referencias": [
-   "https://pmc.ncbi.nlm.nih.gov/articles/PMC3143976/"
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC3143976/",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0134": {
@@ -3110,14 +3112,18 @@
   "conferido": false
  },
  "pediatria-0254": {
+  "conceito": "**O menisco discoide.** É uma variante congênita em que o menisco é largo, espesso e em forma de disco, cobrindo boa parte do platô. Quase sempre é **lateral**, é mais comum em populações asiáticas e pode ser **bilateral**. O tecido é desorganizado, com menos fibras circunferenciais, e por isso rompe e degenera com mais facilidade.\n\n**Como se apresenta.**\n- Assintomático, achado de exame.\n- **Joelho em ressalto** (snapping knee): estalido palpável e às vezes visível na flexão e extensão. É típico da criança pequena com menisco **instável**.\n- Dor, derrame e bloqueio, quando há rotura.\n\n**A classificação de Watanabe.**\n\n| Tipo | Forma | Fixação periférica |\n|---|---|---|\n| Completo | Cobre todo o platô | Estável |\n| Incompleto | Cobre parte do platô | Estável |\n| Wrisberg | Forma variável | **Sem inserção posterior** (só o ligamento de Wrisberg) |\n\n**De onde vem a instabilidade.** Por muito tempo, ensinou-se que a instabilidade vinha do tipo Wrisberg, sem fixação **posterior**. As séries artroscópicas mais recentes, que examinaram sistematicamente a borda periférica de cada segmento, mostraram outra realidade. A **instabilidade periférica é frequente** e acomete mais o **corno anterior**, seguido do posterior. O segmento médio é o menos acometido.\n\nAhn e Klingele propuseram classificações que descrevem a **localização** do segmento solto (anterior, posterior ou médio), e não apenas a forma.\n\n**Por que isso importa no tratamento.** O tratamento do discoide sintomático é a **saucerização** artroscópica, que remodela o menisco num formato próximo do normal, preservando uma borda de cerca de 6 a 8 mm. Depois, o cirurgião **testa a estabilidade de cada segmento**. Se houver instabilidade periférica, ela é **suturada** à cápsula. Esquecer de procurar a instabilidade anterior é uma causa de falha. A meniscectomia total foi abandonada pelo risco de artrose precoce.\n\n**Diagnóstico por imagem.** Na radiografia, o compartimento lateral é alargado e o côndilo lateral pode ser achatado. Na ressonância, aparece o **sinal da gravata-borboleta** em três ou mais cortes sagitais consecutivos de 4 a 5 mm.\n\n**E o discoide assintomático?** O menisco discoide **assintomático**, achado por acaso numa ressonância ou numa artroscopia feita por outro motivo, deve ser **deixado intacto**. Ele pode nunca causar problemas, e toda cirurgia no menisco tem riscos: a saucerização remove tecido e expõe o joelho a degeneração futura. O tratamento é reservado aos casos **sintomáticos** (dor, derrame, bloqueio, ressalto doloroso) ou com **rotura**.",
+  "correta": "**Correta: D (deixado intacto sem tratamento).** O menisco discoide **assintomático**, encontrado acidentalmente, deve ser **deixado intacto**. Só os casos sintomáticos ou com rotura recebem tratamento, com saucerização e reparo da instabilidade periférica.",
   "incorretas": {
-   "A": "A saucerização é indicada no menisco discoide sintomático, não no achado casual.",
-   "B": "A meniscoplastia também só se justifica com sintomas.",
-   "C": "A ressecção total leva à artrose precoce e não se faz em menisco assintomático."
+   "A": "A **saucerização** é o tratamento do discoide **sintomático**. Fazê-la num menisco assintomático expõe o joelho a riscos sem benefício.",
+   "B": "A **meniscoplastia** (saucerização com ou sem reparo) é indicada no discoide sintomático, e não no achado acidental.",
+   "C": "A **ressecção total** (meniscectomia) foi abandonada até nos casos sintomáticos, pelo risco de artrose precoce, sobretudo no compartimento lateral."
   },
-  "conceito": "O **menisco discoide** é quase sempre o **lateral**, largo e espesso. Muitos nunca dão sintomas e são achados por acaso, em exame de imagem ou durante uma artroscopia feita por outro motivo.\n\n**A conduta pelo quadro**:\n\n**assintomático**, achado por acaso: **deixar intacto**, sem tratamento. Um menisco discoide estável e sem sintomas continua protegendo a cartilagem; qualquer ressecção só tira tecido que está funcionando;\n\n**sintomático e estável**: **saucerização**, ou seja, meniscectomia parcial que devolve ao menisco o formato de C, deixando uma borda de cerca de 6 a 8 mm;\n\n**instável** (como o tipo Wrisberg): saucerização com **sutura periférica** para estabilizar.\n\n**Por que não a meniscectomia total**: foi o tratamento antigo, mas leva a **artrose precoce** do compartimento lateral, sobretudo em crianças e adolescentes. Hoje fica só para quando nada pode ser preservado.\n\n**Os sintomas que indicariam cirurgia**: estalido doloroso, bloqueio, derrame e dor na interlinha lateral.\n\n**Na prova**: menisco discoide **assintomático**, achado por acaso, deve ser **deixado sem tratamento**.",
-  "correta": "Sem sintomas, o menisco discoide não se trata: ele continua funcionando e protegendo a cartilagem.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Kocher MS, Logan CA, Kramer DE. Discoid lateral meniscus in children: diagnosis, management, and outcomes. J Am Acad Orthop Surg. 2017;25(11):736-743."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0257": {
@@ -6039,15 +6045,19 @@
   "conferido": false
  },
  "pediatria-0511": {
+  "conceito": "**A epifisiólise proximal do fêmur (EPF).** É o escorregamento da epífise femoral proximal em relação ao colo, através da fise, no **adolescente** (meninos de 12 a 15 anos, meninas de 10 a 13), frequentemente **obeso**. O colo se desloca para cima, para a frente e em rotação externa, e a cabeça parece escorregar para trás e para baixo. A dor pode ser no quadril, na virilha, na **coxa** ou no **joelho**.\n\n**As duas classificações mais usadas.**\n\n**1. Loder (funcional, a mais importante para o prognóstico).** Baseia-se na **capacidade de apoiar** o membro.\n- **Estável**: o paciente **consegue andar**, **com ou sem muletas**.\n- **Instável**: o paciente **não consegue andar**, nem com muletas, pela dor intensa (como numa fratura).\n\nA diferença é crucial: na EPF **instável**, o risco de **necrose avascular** chega a cerca de **20 a 50%**. Na **estável**, é praticamente **nulo**.\n\n**2. Southwick (gravidade do escorregamento).** Mede o **ângulo cabeça-diáfise** (ângulo epifisário-diafisário) no **perfil** e compara com o lado normal (ou com o valor normal, de cerca de 10 a 12°, se a doença for bilateral).\n\n| Diferença em relação ao lado normal | Gravidade |\n|---|---|\n| **Menos de 30°** | Leve |\n| **30 a 50°** | **Moderado** |\n| **Mais de 50°** | Grave |\n\n**O caso da questão.**\n- O paciente **anda**, ainda que com **duas muletas**: pela definição de Loder, a EPF é **estável**. O uso de muletas não a torna instável.\n- O ângulo cabeça-diáfise é **40°** menor que o do lado normal: entre 30 e 50°, ou seja, escorregamento **moderado**.\n\n**O tratamento.**\n- EPF estável: **fixação in situ** com **um parafuso canulado** central na epífise, sem tentar reduzir.\n- EPF instável: tratamento **urgente**. As opções incluem a fixação com redução suave do posicionamento, a descompressão da cápsula e, em centros especializados, a redução aberta pela luxação cirúrgica (Dunn modificado).\n- A fixação profilática do lado oposto é considerada em pacientes de alto risco (mais jovens, doenças endócrinas).\n- As deformidades residuais graves podem levar a **impacto femoroacetabular** (tipo CAME) e ser corrigidas depois, com osteotomias.",
+  "correta": "**Correta: D (estável com deslizamento moderado).** O paciente consegue andar, mesmo com muletas: pela classificação de **Loder**, a epifisiólise é **estável**. A diferença de **40°** no ângulo cabeça-diáfise em relação ao lado normal corresponde, pela classificação de **Southwick**, a um escorregamento **moderado** (30 a 50°).",
   "incorretas": {
-   "A": "A estabilidade está certa, mas 40° não é leve; leve é abaixo de 30°.",
-   "B": "Ele apoia o membro, então é estável, e 40° não é leve.",
-   "C": "Erra os dois pontos: ele é estável e 40° é moderado, não grave.",
-   "E": "O deslizamento moderado está certo, mas ele consegue andar, então é estável."
+   "A": "A estabilidade está certa, mas uma diferença de 40° é escorregamento **moderado**. O leve é menor que 30°.",
+   "B": "O paciente **anda** com muletas, e por isso a EPF é **estável**. Além disso, 40° é moderado, e não leve.",
+   "C": "O paciente consegue andar, o que define a EPF **estável**. Grave seria uma diferença maior que 50°.",
+   "E": "O escorregamento é moderado, mas a EPF é **estável**: a capacidade de andar com muletas exclui a instabilidade de Loder."
   },
-  "conceito": "A **epifisiólise proximal do fêmur** se classifica por dois critérios independentes:\n\n**Loder (estabilidade)**, pela **capacidade de apoio**:\n\n**estável**: a criança **consegue andar**, **com ou sem muletas**;\n\n**instável**: **não consegue andar**, nem com muletas.\n\n**Southwick (gravidade)**, pela **diferença do ângulo cabeça-diáfise** em relação ao lado normal:\n\n**leve**: menos de 30°;\n\n**moderado**: de **30 a 50°**;\n\n**grave**: mais de 50°.\n\n**Aplicando ao caso**: o adolescente de 13 anos **anda apoiando o membro**, ainda que com duas muletas para aliviar a dor; portanto é **estável**. Usar muletas **não** torna a epifisiólise instável; o que define é conseguir ou não apoiar. A diferença de **40°** fica entre 30 e 50°: **moderado**.\n\n**Por que importa**: a forma estável tem risco de necrose praticamente nulo, e o tratamento é a fixação in situ com um parafuso canulado central. A gravidade orienta, mais tarde, a correção da deformidade residual.\n\n**Na prova**: anda com muletas e diferença de 40° = **estável** com deslizamento **moderado**.",
-  "correta": "Ele apoia o membro, mesmo com muletas, e é estável; 40° fica entre 30 e 50°, deslizamento moderado.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Loder RT, Richards BS, Shapiro PS, Reznick LR, Aronson DD. Acute slipped capital femoral epiphysis: the importance of physeal stability. J Bone Joint Surg Am. 1993;75(8):1134-1140."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0512": {
@@ -6195,17 +6205,18 @@
   "conferido": false
  },
  "pediatria-0523": {
+  "conceito": "**As fraturas do antebraço na criança.** São as fraturas **mais comuns** da infância. O osso da criança é elástico e tem um **periósteo grosso**, e por isso pode quebrar de vários modos:\n\n| Tipo | O que acontece |\n|---|---|\n| **Deformidade plástica** | O osso encurva **sem traço** visível |\n| **Tórus** (em fivela) | A cortical **enruga** por compressão, na metáfise |\n| **Galho verde** | Uma cortical **rompe** (lado da tensão) e a outra **dobra** sem romper (lado da compressão) |\n| **Completa** | As duas corticais rompem |\n| Descolamento epifisário | O traço passa pela **fise** (Salter-Harris) |\n\n**Por que o galho verde refratura mais.** Na fratura em galho verde, a cortical do lado da compressão continua **íntegra, mas curvada**. Essa cortical **não forma calo**: ela não fraturou, apenas se deformou. O calo se forma só do lado rompido. O osso parece consolidado mais cedo, mas fica com uma **zona fraca** por muito tempo. Quando a imobilização é retirada e a criança volta às atividades, o osso quebra de novo no mesmo lugar.\n\n**Os fatores de risco para refratura.**\n- Fraturas **diafisárias** (mais que as metafisárias, que consolidam melhor).\n- Fraturas em **galho verde**.\n- **Imobilização curta**: na diáfise, recomenda-se cerca de **6 semanas** de gesso, mais um período de proteção.\n- Retorno precoce aos **esportes** de contato.\n- Angulação residual.\n\nA refratura ocorre em cerca de **5%** das fraturas diafisárias do antebraço, geralmente nos primeiros meses.\n\n**Dicas de tratamento.**\n- Na redução do galho verde com angulação importante, alguns autores **completam a fratura** de propósito (rompem a cortical dobrada), para evitar a recidiva da angulação. É um tema controverso.\n- A **rotação** da deformidade é corrigida pela pronação ou supinação: a regra clássica é rodar o antebraço **em direção ao ápice** da angulação.\n- O tórus é uma fratura **estável** e se trata com tala removível por 3 semanas, sem refratura relevante.\n\n**A rotação esconde-se na angulação.** Nas fraturas em galho verde do antebraço, a direção do **ápice** da angulação revela a **rotação** que causou a fratura:\n- **Ápice volar** (o antebraço \"curva para a palma\"): lesão por **supinação** com carga axial. O fragmento distal fica supinado.\n- **Ápice dorsal**: lesão por **pronação** com carga axial. O fragmento distal fica pronado.\n\n**A redução inverte o mecanismo.** A regra prática é **girar o antebraço em direção ao ápice**, ou seja, fazer o movimento oposto ao que causou a fratura:\n- Ápice **volar** (supinação): reduz-se com **pronação**.\n- Ápice **dorsal** (pronação): reduz-se com **supinação**.\n\nCorrigir a rotação costuma corrigir boa parte da angulação, e a fratura fica estável no gesso.",
+  "correta": "**Correta: D (supinação).** A fratura em galho verde do antebraço com ápice **volar** decorre, frequentemente, de carga axial associada a **supinação**. A redução é feita com o movimento oposto, a pronação.",
   "incorretas": {
-   "A": "A flexão não explica o ápice; é a rotação associada que o define.",
-   "B": "A extensão também não explica o ápice volar; a força que o determina é a supinação.",
-   "C": "A pronação com carga axial produz ápice dorsal, não volar."
+   "A": "A **flexão** isolada não é o mecanismo que define a direção do ápice. Nas fraturas em galho verde, o componente decisivo é a **rotação**.",
+   "B": "A **extensão** (queda com o punho estendido) dá a carga axial, mas o ápice volar se deve ao componente de **supinação**.",
+   "C": "A **pronação** com carga axial produz a fratura com ápice **dorsal**, e não volar."
   },
-  "conceito": "Na **fratura em galho verde** do antebraço, uma cortical quebra e a outra só entorta. O **sentido do ápice** da angulação mostra a **rotação** que causou a fratura, e isso define a manobra de redução:\n\n**ápice volar** (a deformidade aponta para a palma): carga axial com **supinação**;\n\n**ápice dorsal**: carga axial com **pronação**.\n\n**A regra de Evans para reduzir**: girar o antebraço no **sentido oposto** ao mecanismo, levando a palma em direção ao ápice:\n\n**ápice volar**: **pronar** o antebraço;\n\n**ápice dorsal**: supinar.\n\n**Completar a fratura**: romper a cortical que ficou inteira é controverso; reduz a chance de a deformidade voltar, mas torna a fratura mais instável.\n\n**A remodelação**: é melhor em crianças abaixo de 10 anos, perto da fise e no plano de movimento da articulação vizinha. A **rotação não remodela**: um desvio rotacional deixado vira perda definitiva da pronossupinação.\n\n**Flexão e extensão** descrevem a angulação, mas não explicam por si só o lado do ápice; quem define é a rotação associada.\n\n**Na prova**: galho verde com **ápice volar** vem de carga axial com **supinação**.",
-  "correta": "O ápice volar resulta de carga axial com supinação; a redução é feita pronando o antebraço.",
   "referencias": [
-   "Hebert, Lech, Ortopedia e Traumatologia: Princípios e Práticas, 6ª edição, Cap. 93"
+   "Hebert, Lech, Ortopedia e Traumatologia: Princípios e Práticas, 6ª edição, Cap. 93",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0524": {
@@ -6486,17 +6497,18 @@
   "conferido": false
  },
  "pediatria-0544": {
+  "conceito": "**A tuberosidade anterior da tíbia na criança.** A tuberosidade é uma **apófise**, uma extensão anterior da epífise proximal da tíbia, onde se insere o **tendão patelar**. Ela tem seu próprio centro de ossificação secundário. A fise proximal da tíbia fecha de **posterior para anterior** e de proximal para distal, e a fise da tuberosidade é a **última** a fechar. No adolescente, perto do fim do crescimento, a tuberosidade é o ponto fraco do aparelho extensor.\n\n**O mecanismo.** É uma contração **violenta do quadríceps**, como no salto (decolagem) ou na aterrissagem com o joelho fletido. É típica de **meninos de 13 a 16 anos**, muitas vezes com antecedente de **Osgood-Schlatter**.\n\n**A classificação de Watson-Jones** (modificada por Ogden, que acrescentou os subtipos A, sem desvio, e B, com cominuição ou desvio).\n\n| Tipo | Traço |\n|---|---|\n| **I** | Avulsão da **ponta distal** da tuberosidade, através da fise da apófise |\n| II | Traço na **junção** entre a apófise da tuberosidade e a epífise proximal da tíbia |\n| III | Traço que se estende **para dentro da articulação**, atravessando a epífise |\n| IV (Ryu) | Traço por **toda a fise** proximal da tíbia, saindo posteriormente |\n| V (McKoy) | Tipo III com tipo IV, em forma de **Y** |\n\n**A correspondência com Salter-Harris.**\n- O tipo **I** é um descolamento **através da fise** da apófise, sem atravessar a epífise. Corresponde a uma lesão do tipo **Salter-Harris I**.\n- Os tipos que atravessam a epífise até a articulação (III) se comportam como **Salter-Harris III** ou IV. Os que percorrem toda a fise (IV) se comportam como **Salter-Harris II**.\n\n**As complicações.**\n- **Síndrome compartimental**: a **artéria recorrente tibial anterior** passa junto à tuberosidade e pode sangrar dentro do compartimento anterior.\n- **Lesão meniscal** e do aparelho extensor nos tipos articulares.\n- **Recurvato** por parada de crescimento anterior: rara, porque a lesão ocorre perto da maturidade.\n\n**O tratamento.**\n- **Sem desvio** (tipo IA): gesso inguinomaleolar em extensão.\n- **Com desvio** (a maioria): **redução aberta e fixação** com parafusos. Nos tipos articulares, avalia-se a superfície articular e o menisco, por artroscopia ou artrotomia.\n\n**O mecanismo em detalhe.** Há duas situações típicas, ambas com o **quadríceps contraído**:\n- **Flexão forçada do joelho** com o quadríceps contraído (contração **excêntrica**): por exemplo, ao **aterrissar** de um salto ou numa freada brusca, quando o joelho é forçado a fletir enquanto o quadríceps tenta mantê-lo estendido. A tuberosidade é arrancada pela tensão do tendão patelar.\n- **Contração violenta** do quadríceps na **impulsão** de um salto, com o joelho fletido.\n\nEm esportes como o tênis, o basquete e o vôlei, com saltos, aterrissagens e mudanças bruscas, o mecanismo mais comum é a **flexão forçada** do joelho contra o quadríceps contraído. O trauma direto e a rotação não são os mecanismos típicos.",
+  "correta": "**Correta: A (flexão forçada do joelho).** A fratura da tuberosidade da tíbia no adolescente ocorre, tipicamente, por **flexão forçada do joelho** com o quadríceps contraído (contração excêntrica), como na aterrissagem ou numa freada brusca. O tendão patelar arranca a tuberosidade, que é o ponto fraco do aparelho extensor perto do fim do crescimento.",
   "incorretas": {
-   "B": "A extensão forçada não traciona a tuberosidade da tíbia.",
-   "C": "O movimento rotacional é mecanismo de lesão do LCA e dos meniscos.",
-   "D": "O trauma direto anterior causaria contusão ou fratura da patela."
+   "B": "A **extensão forçada** isolada não arranca a tuberosidade. A lesão exige tensão do quadríceps contra uma força que flexiona o joelho.",
+   "C": "O **movimento rotacional** do joelho é o mecanismo das lesões **ligamentares e meniscais**, e não da avulsão da tuberosidade.",
+   "D": "O **trauma direto** na face anterior do joelho é mais associado a contusões e fraturas da patela que à avulsão da tuberosidade."
   },
-  "conceito": "A **fratura da tuberosidade anterior da tíbia** acontece no adolescente, em geral menino de 13 a 16 anos, quando a apófise está **fechando** e fica mais frágil que o tendão patelar.\n\n**O mecanismo**: o **quadríceps** está **contraído** e, ao mesmo tempo, o joelho é **fletido à força**. É uma contração **excêntrica**: o músculo puxa enquanto é alongado. O tendão patelar transmite essa força à tuberosidade, que é **arrancada**. Acontece:\n\n**na aterrissagem** de um salto ou numa freada brusca;\n\n**ao saltar**, com uma contração concêntrica violenta com o joelho fletido.\n\n**No caso**: um adolescente jogando tênis, com freadas e mudanças de direção, sofreu a fratura por **flexão forçada** do joelho contra o quadríceps contraído.\n\n**O que não causa**:\n\n**extensão forçada**: não traciona a tuberosidade;\n\n**movimento rotacional**: é o mecanismo das lesões do LCA e dos meniscos;\n\n**trauma direto**: causaria contusão ou fratura da patela.\n\n**Os cuidados**: vigiar síndrome compartimental e, nos tipos intra-articulares, procurar lesão meniscal.\n\n**Na prova**: a fratura da tuberosidade da tíbia vem da **flexão forçada** do joelho.",
-  "correta": "O joelho é fletido à força com o quadríceps contraído, e o tendão patelar arranca a tuberosidade.",
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 30"
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 30",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0545": {
@@ -6900,18 +6912,19 @@
   "conferido": false
  },
  "pediatria-0581": {
+  "conceito": "**A necrose avascular após fratura do colo do fêmur na criança.** É a complicação **mais grave e mais frequente** dessas fraturas. A cabeça femoral da criança depende quase só dos **vasos retinaculares** (ramos da circunflexa femoral medial), que sobem pelo colo e são rompidos ou comprimidos pela fratura e pelo hematoma dentro da cápsula. O risco segue a classificação de **Delbet**: maior nas fraturas mais proximais (tipo I, até quase 100% com luxação; tipo II, cerca de 50%) e menor nas mais distais.\n\n**Quando aparece.** Em geral, nos primeiros **1 a 2 anos** após a fratura. Por isso, o seguimento radiográfico deve durar pelo menos esse tempo.\n\n**A classificação de Ratliff.** Descreve o **padrão** da necrose e tem valor prognóstico.\n\n| Tipo | Região necrosada | Prognóstico |\n|---|---|---|\n| **I** | **Toda a cabeça** femoral (epífise total), às vezes com parte do colo | **O pior**: colapso e deformidade |\n| **II** | **Parte da cabeça** (epifisária parcial), geralmente a anterossuperior | Intermediário |\n| **III** | **Colo** (metáfise), do traço de fratura até a fise, com a cabeça preservada | O melhor |\n\n**Por que cada padrão.**\n- **Tipo I**: lesão de **todos** os vasos epifisários laterais e mediais. Ocorre nas fraturas mais desviadas e proximais.\n- **Tipo II**: lesão de **parte** dos vasos epifisários laterais, com uma área de necrose localizada.\n- **Tipo III**: lesão dos **vasos metafisários** superiores, com necrose do colo entre a fratura e a fise.\n\n**Sobre o gabarito.** Na descrição original de Ratliff, a **necrose parcial da cabeça** (epifisária parcial) é o **tipo II**, e o **tipo III** acomete o **colo** (metáfise). A banca registrou \"epifisária parcial\" como o tipo III.\n\n**O tratamento.** Não há tratamento que reverta a necrose. O objetivo é preservar a **forma** da cabeça:\n- evitar o colapso com **proteção da carga**;\n- manter a **contenção** da cabeça no acetábulo, como no Perthes;\n- tratar a **coxa vara**, o fechamento precoce da fise e a discrepância;\n- em casos avançados, osteotomias de salvamento ou, no adulto jovem, artroplastia.",
+  "correta": "**Gabarito registrado: C (epifisária parcial).** A banca considerou que, no tipo III de Ratliff, a necrose acomete parcialmente a epífise. Na descrição original de Ratliff, porém, a necrose parcial da cabeça é o **tipo II**, e o tipo III acomete o **colo** (metáfise). Ver o alerta acima.",
   "incorretas": {
-   "A": "Na descrição original, o tipo III é a necrose do colo, a região metafisária, mas a banca não aceitou esta alternativa.",
-   "B": "A necrose da cabeça inteira, com o colo, é o tipo I.",
-   "D": "O acometimento da epífise e da metáfise juntas corresponde ao tipo I, difuso."
+   "A": "Na descrição original de Ratliff, o tipo **III** acomete justamente o **colo** (região **metafisária**), do traço de fratura até a fise. Por isso, esta alternativa é defensável.",
+   "B": "A necrose **epifisária total** (de toda a cabeça) é o **tipo I** de Ratliff, o de pior prognóstico.",
+   "D": "A necrose **epifisária e metafisária** corresponde ao padrão mais extenso do **tipo I**, que pode incluir parte do colo, e não ao tipo III."
   },
-  "conceito": "Nas **fraturas do colo do fêmur** da criança, a **necrose avascular** é a complicação mais temida. **Ratliff** a classificou pela **área atingida**:\n\n**tipo I**: necrose **difusa**, da **cabeça inteira e do colo**; o pior prognóstico, com colapso e deformidade;\n\n**tipo II**: necrose **parcial da cabeça** (epífise), em geral da parte anterolateral;\n\n**tipo III**: na descrição original, necrose do **colo**, do traço da fratura até a fise, com a **cabeça poupada**; o melhor prognóstico.\n\n**O que a banca considerou**: a resposta oficial para o tipo III foi **epifisária parcial**. Pela classificação original, a necrose epifisária parcial é o tipo II, e o tipo III é metafisário (do colo); a alternativa A seria defensável num recurso.\n\n**Os fatores de risco da necrose**: fraturas mais proximais (Delbet I e II), desvio inicial grande e demora na redução.\n\n**A prevenção**: redução anatômica urgente e **descompressão da cápsula** para drenar o hematoma.\n\n**Na prova**: a banca indicou **epifisária parcial** para o tipo III de Ratliff.",
-  "correta": "A banca indicou necrose epifisária parcial para o tipo III; na classificação original, essa descrição corresponde ao tipo II.",
-  "alerta": "Na classificação de Ratliff original, o tipo II é a necrose parcial da cabeça e o tipo III acomete o colo (metáfise), do traço de fratura até a fise. A banca indicou epifisária parcial para o tipo III; a alternativa A seria defensável.",
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 30"
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 30",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
-  "geradoEm": "2026-10-04",
+  "alerta": "Na classificação de Ratliff original, o tipo II é a necrose parcial da cabeça e o tipo III acomete o colo (metáfise), do traço de fratura até a fise. A banca indicou epifisária parcial para o tipo III; a alternativa A seria defensável.",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0582": {
@@ -7470,17 +7483,18 @@
   "conferido": false
  },
  "pediatria-0621": {
+  "conceito": "**O fenômeno de Cozen.** É o **valgo progressivo** da tíbia que aparece **depois** de uma fratura da **metáfise proximal da tíbia** na criança, geralmente uma fratura em **galho verde** ou incompleta, na faixa de **3 a 6 anos**. O detalhe que surpreende os pais (e o médico) é que a deformidade aparece **mesmo quando a fratura consolidou bem alinhada**.\n\n**Como evolui.**\n- O valgo começa a aparecer nos primeiros meses após a fratura.\n- Atinge o **máximo em cerca de 12 a 18 meses**.\n- Na maioria dos casos, **melhora espontaneamente** nos anos seguintes, com o crescimento.\n\n**Por que acontece.** As explicações propostas, possivelmente combinadas, são:\n- **crescimento assimétrico** da fise proximal da tíbia, com **hiperestimulação** do lado **medial**, pelo aumento do fluxo sanguíneo durante a consolidação;\n- a **fíbula** íntegra funciona como uma \"corda\" do lado lateral, limitando o crescimento desse lado;\n- **interposição de partes moles** (pata de ganso, periósteo) no lado medial do foco, mantendo a fratura aberta medialmente;\n- redução incompleta do valgo inicial.\n\n**Por isso, a deformidade mais frequente é o valgo.** A fratura em galho verde da metáfise proximal da tíbia costuma se abrir do lado **medial** (a cortical medial rompe) e se fechar do lado lateral, já com tendência ao valgo, que depois aumenta.\n\n**A conduta.**\n- **Avisar os pais** desde o início que o valgo pode aparecer, mesmo com bom tratamento.\n- Na fratura, tentar uma **redução em varo** (corrigindo qualquer valgo) e imobilizar com o joelho em extensão, com molde em varo.\n- Diante do valgo: **observar** por pelo menos 18 a 24 meses, porque a maioria **remodela**.\n- Se o valgo persistir e for importante: **hemiepifisiodese medial** temporária (placa em 8), que guia o crescimento. A **osteotomia** precoce é desaconselhada, porque o valgo pode **recidivar** após ela.",
+  "correta": "**Correta: B (valgo).** Após a fratura em galho verde da metáfise proximal da tíbia na criança, a deformidade mais frequente é o **valgo** progressivo (fenômeno de Cozen), que aparece mesmo com boa redução, atinge o máximo em 12 a 18 meses e costuma remodelar espontaneamente.",
   "incorretas": {
-   "A": "O varo é o oposto do desvio típico da fratura de Cozen.",
-   "C": "O recurvato não é o desvio típico dessa fratura.",
-   "D": "O antecurvato não é o desvio típico dessa fratura."
+   "A": "O **varo** não é a deformidade típica. A cortical medial se abre e o crescimento medial é estimulado, levando ao valgo.",
+   "C": "O **recurvato** é uma complicação das lesões da fise **anterior** da tíbia proximal (por exemplo, após fratura da tuberosidade), e não da fratura metafisária em galho verde.",
+   "D": "O **antecurvato** não é a deformidade característica dessa fratura."
   },
-  "conceito": "A **fratura em galho verde da metáfise proximal da tíbia** na criança pequena, em geral entre 3 e 6 anos, é a **fratura de Cozen**. A cortical medial se abre e a lateral entorta, com a fíbula muitas vezes intacta.\n\n**A deformidade tardia típica**: **valgo**, que aparece nos meses seguintes, mesmo depois de boa redução (fenômeno de Cozen).\n\n**As causas propostas**:\n\n**hiperemia** da consolidação, com **hipercrescimento** da parte medial da fise;\n\n**tração da fíbula** intacta, que segura o lado lateral;\n\n**interposição de periósteo** e da **pata de ganso** no lado medial.\n\n**A evolução**: pico do valgo em 12 a 18 meses; a maioria **remodela espontaneamente** em 2 a 3 anos.\n\n**A conduta**:\n\n**gesso inguinopodálico** com o joelho em extensão e moldagem em varo;\n\n**orientar a família desde o início** de que o valgo pode aparecer e costuma melhorar sozinho;\n\n**evitar osteotomia precoce**, que tende a recidivar; se o valgo persistir por anos, crescimento guiado com placa em 8 medial.\n\n**Os outros desvios** (varo, recurvato, antecurvato) não são o padrão dessa fratura.\n\n**Na prova**: a deformidade mais frequente após o galho verde da metáfise proximal da tíbia é o **valgo**.",
-  "correta": "O fenômeno de Cozen é o valgo progressivo, que na maioria remodela sozinho.",
   "referencias": [
-   "Skeletal Trauma in Children 5th Ed (referência indicada na prova TARO 2017, questão 99)"
+   "Skeletal Trauma in Children 5th Ed (referência indicada na prova TARO 2017, questão 99)",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0622": {
@@ -8134,14 +8148,18 @@
   "conferido": false
  },
  "pediatria-0668": {
+  "conceito": "**Os seis centros de ossificação secundários do cotovelo.** Eles aparecem numa ordem **previsível**, lembrada pelo mnemônico **CRITOE**:\n\n| Centro | Aparece (aproximado) | Funde (aproximado) |\n|---|---|---|\n| **C**apítulo | 1 ano | 12 a 14 anos |\n| **R**adial (cabeça) | 3 a 5 anos | 14 a 16 anos |\n| **I**nterno (epicôndilo medial) | 5 a 7 anos | **15 a 17 anos (o último)** |\n| **T**róclea | 7 a 9 anos | 12 a 14 anos |\n| **O**lécrano | 9 a 11 anos | 14 a 16 anos |\n| **E**xterno (epicôndilo lateral) | 10 a 11 anos | 12 a 14 anos |\n\nNas meninas, todos aparecem e fundem cerca de 1 a 2 anos antes.\n\n**A ordem de fusão é diferente da ordem de aparecimento.**\n1. Primeiro, o **capítulo**, a **tróclea** e o **epicôndilo lateral** se unem entre si e formam uma única epífise distal, que se funde à metáfise por volta dos 12 a 14 anos.\n2. Depois, a **cabeça do rádio** e o **olécrano**, por volta dos 14 a 16 anos.\n3. Por último, o **epicôndilo medial**, por volta dos **15 a 17 anos**. Ele é uma **apófise extra-articular** e fica separado da epífise principal.\n\n**Por que isso é importante.**\n- **O encarcerado**: o epicôndilo medial é o centro mais avulsionado. Na luxação do cotovelo, ele pode ficar **preso dentro da articulação**. Pela regra do CRITOE, se a tróclea está ossificada e o epicôndilo medial não aparece no lugar, ele pode estar **dentro da articulação**.\n- O epicôndilo medial **aberto até os 15 a 17 anos** explica por que o adolescente arremessador tem apofisite e avulsão medial (little leaguer's elbow).\n- Conhecer as idades evita confundir um centro normal com uma fratura, e uma fratura com um centro ainda não ossificado. Na dúvida, compara-se com o cotovelo contralateral.",
+  "correta": "**Correta: D (epicôndilo medial, cabeça do rádio e capítulo).** Pela sequência CRITOE, aos **7 anos** já apareceram o **capítulo** (cerca de 1 ano), a **cabeça do rádio** (3 a 5 anos) e o **epicôndilo medial** (5 a 7 anos). A tróclea (7 a 9), o olécrano (9 a 11) e o epicôndilo lateral (10 a 11) ainda não ossificaram.",
   "incorretas": {
-   "A": "O epicôndilo lateral e o olécrano aparecem depois dos 7 anos.",
-   "B": "O olécrano só aparece entre 8 e 10 anos.",
-   "C": "O epicôndilo lateral e a tróclea são núcleos mais tardios."
+   "A": "O **epicôndilo lateral** (10 a 11 anos), o **olécrano** (9 a 11) e a **tróclea** (7 a 9) são os últimos centros a aparecer. Aos 7 anos, ainda não estão presentes.",
+   "B": "O **epicôndilo medial** e o **capítulo** já existem aos 7 anos, mas o **olécrano** só aparece por volta dos 9 a 11 anos.",
+   "C": "A **cabeça do rádio** já existe aos 7 anos, mas o **epicôndilo lateral** (10 a 11) e a **tróclea** (7 a 9) ainda não ossificaram."
   },
-  "conceito": "Os **núcleos de ossificação do cotovelo** aparecem numa ordem fixa, lembrada pela sigla **CRITOE**, com idades aproximadas de 1, 3, 5, 7, 9 e 11 anos:\n\n**C, capítulo**: por volta de 1 ano;\n\n**R, cabeça do rádio**: 3 a 5 anos;\n\n**I, epicôndilo interno (medial)**: 5 a 7 anos;\n\n**T, tróclea**: 7 a 9 anos;\n\n**O, olécrano**: 8 a 10 anos;\n\n**E, epicôndilo externo (lateral)**: 10 a 11 anos.\n\n**Aos 7 anos**: já estão ossificados o **capítulo**, a **cabeça do rádio** e o **epicôndilo medial** (C, R, I). A tróclea está apenas começando; o olécrano e o epicôndilo lateral ainda não apareceram.\n\n**Por que a ordem importa na urgência**: se a radiografia mostra um núcleo que **parece a tróclea**, mas o **epicôndilo medial** não está no lugar, é preciso desconfiar de **epicôndilo medial encarcerado** dentro da articulação depois de uma luxação. A tróclea nunca ossifica antes do epicôndilo medial.\n\n**Outras dicas**: a tróclea pode ossificar fragmentada, por vários núcleos, sem ser fratura; comparar com o outro lado ajuda nas dúvidas.\n\n**Na prova**: aos 7 anos, estão ossificados o **epicôndilo medial**, a **cabeça do rádio** e o **capítulo**.",
-  "correta": "Aos 7 anos já apareceram o capítulo, a cabeça do rádio e o epicôndilo medial, as três primeiras letras do CRITOE.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0669": {
@@ -8389,17 +8407,18 @@
   "conferido": false
  },
  "pediatria-0686": {
+  "conceito": "**As fraturas de transição do tornozelo.** São fraturas do **adolescente** em que a fise distal da tíbia **está fechando**. Elas existem por causa da **ordem de fechamento** dessa fise, que leva cerca de 18 meses:\n1. Fecha primeiro a porção **central** (onde fica a ondulação de Kump).\n2. Depois, a **medial**.\n3. Por **último**, a porção **anterolateral**.\n\nDurante esse período, a parte medial já está fundida e firme, mas a **anterolateral** ainda está aberta e frágil.\n\n**A fratura de Tillaux juvenil.**\n- **Mecanismo**: **rotação externa** do pé. O **ligamento tibiofibular anteroinferior** (sindesmose anterior), que se insere na porção **anterolateral** da epífise distal da tíbia, **arranca** esse fragmento.\n- **Traço**: sobe pela fise anterolateral, ainda aberta, e desce verticalmente pela **epífise até a articulação**. Passa pela fise e pela epífise, sem fragmento metafisário: uma fratura **Salter-Harris III**.\n- **Idade**: cerca de **12 a 14 anos** (meninas um pouco antes).\n\n**A fratura triplanar.** É a outra fratura de transição. O traço percorre **três planos**: sagital na epífise, axial na fise e coronal na metáfise. Na radiografia AP, parece uma Salter-Harris III; no perfil, uma Salter-Harris II. Em conjunto, comporta-se como uma **Salter-Harris IV**.\n\n| Fratura | Salter-Harris | Fragmento |\n|---|---|---|\n| **Tillaux** | **III** | **Anterolateral** da epífise |\n| Triplanar | Comporta-se como IV (III no AP, II no perfil) | Dois a quatro fragmentos |\n\n**A tomografia.** É essencial para medir o desvio articular e planejar o tratamento.\n\n**O tratamento.**\n- Desvio **menor que 2 mm** na superfície articular: redução fechada (rotação **interna** do pé) e gesso.\n- Desvio **maior que 2 mm**: redução (fechada ou aberta) e **fixação com parafuso** paralelo à articulação, na epífise. Como a fise está quase fechada, o parafuso pode cruzá-la sem grande risco de distúrbio de crescimento.\n\n**O prognóstico.** É bom quando a superfície articular é restaurada. O distúrbio de crescimento é **raro**, porque o paciente está perto do fim do crescimento.",
+  "correta": "**Correta: C (III).** A fratura de Tillaux juvenil é uma **Salter-Harris III** da porção anterolateral da epífise distal da tíbia. O traço sobe pela fise aberta e desce pela epífise até a articulação, sem fragmento metafisário.",
   "incorretas": {
-   "A": "A Salter-Harris I não é intra-articular; a Tillaux é.",
-   "B": "A Salter-Harris II tem fragmento metafisário, ausente na Tillaux.",
-   "D": "A Salter-Harris IV atravessa a metáfise, o que não acontece na Tillaux clássica."
+   "A": "Uma lesão **Salter-Harris I** passaria só pela fise, sem entrar na articulação. A Tillaux tem traço **articular**.",
+   "B": "Uma lesão **Salter-Harris II** tem fragmento **metafisário** e não entra na articulação. A Tillaux atravessa a epífise até a articulação.",
+   "D": "A **Salter-Harris IV** atravessa a metáfise, a fise e a epífise. Esse padrão corresponde à fratura **triplanar**, e não à Tillaux."
   },
-  "conceito": "A **fratura de Tillaux** juvenil acontece no **adolescente** durante o fechamento da fise distal da tíbia. A fise fecha de **central** para **medial** e por último **lateral**; a parte **anterolateral** é a última aberta.\n\n**O mecanismo**: **rotação externa** do pé; o **ligamento tibiofibular anteroinferior** arranca o fragmento **anterolateral** da epífise.\n\n**O traço**: desce **vertical pela epífise** até a articulação e segue **horizontal pela fise** ainda aberta, **sem passar pela metáfise**. É uma **Salter-Harris III**.\n\n**Por que não as outras**:\n\n**Salter-Harris I**: só pela fise, não entra na articulação;\n\n**Salter-Harris II**: tem fragmento metafisário, que a Tillaux não tem;\n\n**Salter-Harris IV**: atravessa também a metáfise, o que não acontece no Tillaux clássico (alguns autores descrevem variantes como IV).\n\n**O tratamento**: tomografia para medir o degrau; acima de **2 mm**, redução e fixação com **parafuso epifisário** paralelo à fise. Como a fise está fechando, o risco de distúrbio de crescimento é pequeno.\n\n**Na prova**: a fratura de Tillaux corresponde à Salter-Harris **III**.",
-  "correta": "O traço vertical pela epífise e horizontal pela fise, sem metáfise, define a Tillaux como Salter-Harris III.",
   "referencias": [
-   "Sizinio H.: Ortopedia e Traumatologia: Princípios e Práticas, 4ª Ed., p. 981 (referência indicada na prova TARO 2013, questão 98)"
+   "Sizinio H.: Ortopedia e Traumatologia: Princípios e Práticas, 4ª Ed., p. 981 (referência indicada na prova TARO 2013, questão 98)",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0687": {
