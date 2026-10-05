@@ -6019,17 +6019,18 @@
   "conferido": false
  },
  "quadril-0499": {
+  "conceito": "**O problema: superficial ou profunda?** Na suspeita de infecção após artroplastia, a pergunta decisiva é se a infecção está restrita à pele e ao subcutâneo (**superficial**, acima da fáscia) ou se alcança a articulação e o implante (**profunda**, periprotética). A diferença muda tudo: a superficial pode ser tratada com antibiótico e cuidados locais; a profunda exige cirurgia (desbridamento com troca do polietileno, ou revisão em um ou dois tempos).\n\n**Por que a cintilografia não resolve.**\n- A **cintilografia óssea** (tecnécio) capta em qualquer área de **remodelação**, e após uma artroplastia a captação aumentada é normal por meses a anos, e também ocorre na **soltura asséptica**.\n- O **gálio-67** e os **leucócitos marcados com índio-111** mostram atividade inflamatória ou acúmulo de leucócitos, mas têm **resolução espacial limitada**: não separam com precisão a inflamação dos tecidos moles superficiais da que envolve o implante.\n- A combinação de leucócitos marcados com cintilografia de medula óssea melhora a especificidade, mas é cara, demorada e não substitui a avaliação da articulação.\n\n**Como se define a infecção profunda.** Pelos critérios do **consenso internacional** (MSIS e consenso de 2018):\n- **Critérios maiores**: fístula comunicando com a prótese, ou duas culturas positivas com o mesmo germe.\n- **Critérios menores**: VHS e PCR séricos elevados, D-dímero; e, no **líquido sinovial**, contagem de leucócitos e porcentagem de neutrófilos elevadas, alfa-defensina e esterase leucocitária positivas; histologia com neutrófilos.\n\n**A punção articular é o exame central.** A **aspiração** do quadril (guiada por imagem) com contagem celular e cultura é o que mostra se a infecção atingiu a articulação. Os exames de medicina nuclear ficam como auxiliares em casos duvidosos.",
+  "correta": "**Resposta provável: Errado.** A cintilografia com gálio-67 ou com leucócitos marcados com índio-111 pode mostrar atividade inflamatória, mas não tem resolução nem especificidade para separar a infecção superficial da profunda. A distinção vem da **punção articular** e dos critérios clínicos e laboratoriais.",
   "incorretas": {
-   "A": "**Certo seria dizer que a cintilografia pode apoiar a investigação de foco inflamatório.** Ela não determina isoladamente a profundidade da infecção."
+   "A": "**Certo** atribuiria à medicina nuclear um papel que ela não tem. A captação também ocorre na remodelação normal e na soltura asséptica, e a localização exata entre partes moles e implante não é confiável."
   },
-  "conceito": "**Infecção periprotética não se classifica pela cintilografia isolada.** Gálio-67 e leucócitos marcados com índio-111 podem localizar atividade inflamatória, mas captação também ocorre em remodelação óssea, soltura asséptica e inflamação de tecidos moles. O exame não define sozinho se a infecção está limitada à pele ou comunica-se com o implante.\n\n**A investigação combina clínica, sangue e amostras.** Ferida, drenagem, febre, dor, proteína C reativa e velocidade de hemossedimentação orientam a suspeita. Aspiração articular com contagem celular e culturas, ou amostras cirúrgicas quando indicadas, ajudam a confirmar infecção profunda. Métodos nucleares podem complementar casos difíceis, mas resultado positivo não substitui a localização anatômica e microbiológica.",
-  "correta": "**Errado: gálio ou índio não distinguem de forma definitiva infecção superficial de profunda após artroplastia.** O diagnóstico requer avaliação integrada.",
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "referencias": [
-   "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10 edição, p. 427."
+   "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10 edição, p. 427.",
+   "Parvizi J, Tan TL, Goswami K, et al. The 2018 definition of periprosthetic hip and knee infection: an evidence-based and validated criteria. J Arthroplasty. 2018;33(5):1309-1314.e2."
   ],
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "B",
-  "geradoEm": "2026-10-01",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "quadril-0500": {

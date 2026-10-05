@@ -140,16 +140,19 @@
   "formato": "corrido"
  },
  "osteometabolicas-0012": {
-  "conceito": "**Síndrome de Reiter.** É a forma clássica da **artrite reativa**: surge semanas depois de uma infecção **urogenital** (Chlamydia) ou **entérica** (Shigella, Salmonella, Yersinia, Campylobacter), sem o germe dentro da articulação. A tríade é **conjuntivite, uretrite e artrite**, o velho \"não enxerga, não urina, não anda\".\n\n**A artrite e o paciente.** A artrite é **oligoarticular e assimétrica**, com predomínio nos **membros inferiores**, e costuma vir com **entesite** (Aquiles, fáscia plantar) e **dactilite**, o dedo em salsicha. O paciente típico é o **homem jovem**, com forte associação ao **HLA-B27**. Podem aparecer lesões de pele, como a ceratodermia blenorrágica, e a balanite circinada.\n\n**Na prova:** Reiter é artrite **assimétrica no homem jovem**, com HLA-B27.",
-  "correta": "**Sinovite assimétrica no homem.** É a oligoartrite de membros inferiores do homem jovem.",
+  "conceito": "**A síndrome de Reiter (artrite reativa).** É uma artrite **estéril** que surge **2 a 4 semanas** após uma infecção **urogenital** (*Chlamydia trachomatis*) ou **entérica** (*Shigella*, *Salmonella*, *Yersinia*, *Campylobacter*). O germe não está dentro da articulação; a artrite é uma resposta imune desencadeada pela infecção à distância. Faz parte das **espondiloartrites**, associadas ao **HLA-B27**.\n\n**A tríade clássica:** **conjuntivite, uretrite e artrite** (\"não enxerga, não urina, não anda\"). Nem todos os pacientes têm os três elementos.\n\n**O padrão da artrite.**\n- **Oligoarticular** (menos de cinco articulações) e **assimétrica**.\n- Predomínio nos **membros inferiores**: joelhos, tornozelos, pés.\n- **Entesite**: dor no tendão calcâneo e na fáscia plantar (calcanhar doloroso).\n- **Dactilite** (dedo em salsicha).\n- Pode haver **sacroiliíte** e acometimento da coluna.\n\n**O paciente típico.** **Homem jovem**, entre 20 e 40 anos, sobretudo após infecção urogenital. A forma pós-entérica atinge os dois sexos de modo semelhante.\n\n**Outras manifestações.** Ceratodermia blenorrágica (lesões nas palmas e plantas), balanite circinada, úlceras orais indolores, alterações ungueais.\n\n**Comparação com a artrite reumatoide.**\n\n| Aspecto | Artrite reativa | Artrite reumatoide |\n|---|---|---|\n| Distribuição | **Assimétrica**, oligoarticular, membros inferiores | Simétrica, poliarticular, mãos |\n| Sexo | Predomínio **masculino** | Predomínio feminino |\n| Marcador | HLA-B27 | Fator reumatoide, anti-CCP |\n\n**Tratamento.** Anti-inflamatórios não esteroides, infiltração em articulações selecionadas, tratamento da infecção desencadeante (sobretudo a clamídia) e, nos casos crônicos, sulfassalazina ou metotrexato.",
+  "correta": "**Correta: D (assimétrica no homem).** A síndrome de Reiter (artrite reativa) se caracteriza por artrite **oligoarticular e assimétrica**, sobretudo nos membros inferiores, e acomete principalmente **homens jovens**.",
   "incorretas": {
-   "A": "**Erra os dois.** A artrite reativa é assimétrica e predomina no homem.",
-   "B": "**Simetria é da artrite reumatoide.** A artrite reativa acomete poucas articulações, de forma assimétrica.",
-   "C": "**Sexo errado.** O predomínio é masculino."
+   "A": "A artrite reativa é **assimétrica**, e o predomínio é **masculino**; sinovite simétrica em mulher lembra a artrite reumatoide.",
+   "B": "O sexo está certo, mas a artrite é **assimétrica**, e não simétrica.",
+   "C": "A assimetria está certa, mas a doença predomina no sexo **masculino**."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição",
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "osteometabolicas-0013": {
   "conceito": "**A fratura típica.** A fratura vertebral osteoporótica costuma ser **estável, por compressão**, com a coluna posterior íntegra e sem padrão explosivo. O tratamento é **conservador na maioria**, com analgesia, mobilização precoce e órtese se tolerada, e sempre com **tratamento da osteoporose** de base.\n\n**Quando operar.** Há indicação diante de **déficit neurológico** ou instabilidade e de **dor refratária** ao tratamento conservador bem conduzido, que é a indicação da **vertebroplastia ou cifoplastia**, cujo alvo é justamente a dor. A fratura que **não consolida** (sinal da fenda de vácuo, de Kümmell) tende a manter a dor, e fratura acima de T5 ou lítica sem trauma deve levantar suspeita de **metástase ou mieloma**.\n\n**Na prova:** cirurgia na fratura vertebral osteoporótica é para **dor refratária** ou déficit.",
@@ -997,19 +1000,19 @@
   "conferido": false
  },
  "osteometabolicas-0078": {
-  "conceito": "**Os critérios de 1987.** Pelos critérios do colégio americano de reumatologia, o diagnóstico de artrite reumatoide exige quatro de sete achados, presentes por pelo menos seis semanas: **rigidez matinal** de pelo menos uma hora, artrite em **três ou mais áreas** articulares, artrite das **articulações da mão** (punho, metacarpofalângicas e interfalângicas proximais), artrite **simétrica**, nódulos reumatoides, fator reumatoide positivo e erosões na radiografia.\n\n**Os critérios de 2010**, do ACR com a EULAR, substituíram essa lista por uma pontuação que soma o número de articulações, a sorologia, as provas inflamatórias e a duração dos sintomas.\n\n**Na prova:** o critério clássico é **mãos**, simetria e rigidez **matinal**.",
-  "correta": "**Acometimento de articulações da mão.** Punho, metacarpofalângicas e interfalângicas proximais formam um dos sete critérios.",
+  "conceito": "**Os critérios clássicos de 1987.** Pelos critérios do Colégio Americano de Reumatologia (ACR) de 1987, o diagnóstico de artrite reumatoide exigia **quatro de sete** achados, os quatro primeiros presentes por pelo menos **seis semanas**:\n1. **Rigidez matinal** de pelo menos **uma hora**.\n2. Artrite em **três ou mais áreas** articulares, observada pelo médico.\n3. Artrite das **articulações da mão**: punho, metacarpofalângicas ou interfalângicas proximais.\n4. Artrite **simétrica**.\n5. **Nódulos reumatoides**.\n6. **Fator reumatoide** sérico positivo.\n7. Alterações radiográficas típicas na mão e no punho (erosões, osteopenia periarticular).\n\n**Os critérios atuais (ACR/EULAR 2010).** Foram criados para diagnosticar a doença **mais cedo**, antes das erosões, e usam uma **pontuação** (6 ou mais de 10 define artrite reumatoide) em pacientes com pelo menos uma articulação com sinovite sem outra explicação:\n\n| Domínio | O que pontua |\n|---|---|\n| Acometimento articular | Número e tipo (pequenas articulações pontuam mais, até 5 pontos) |\n| Sorologia | Fator reumatoide e **anti-CCP** (até 3 pontos) |\n| Provas inflamatórias | PCR ou VHS elevados (1 ponto) |\n| Duração | Sintomas por **6 semanas ou mais** (1 ponto) |\n\n**Por que a mão é central.** A artrite reumatoide acomete caracteristicamente as **pequenas articulações** das mãos (metacarpofalângicas, interfalângicas proximais) e dos punhos, de forma **simétrica**, e **poupa as interfalângicas distais**. As deformidades típicas são o desvio ulnar dos dedos, o pescoço de cisne, a botoeira e o polegar em Z.",
+  "correta": "**Correta: D (acometimento de articulações da mão).** A artrite de articulações da mão (punho, metacarpofalângicas ou interfalângicas proximais) é um dos critérios diagnósticos clássicos da artrite reumatoide.",
   "incorretas": {
-   "A": "**A rigidez é matinal.** O critério é rigidez de manhã por pelo menos uma hora, não noturna.",
-   "B": "**O acometimento é simétrico.** A simetria é justamente um dos critérios.",
-   "C": "**São três ou mais áreas.** Duas articulações não bastam."
+   "A": "O critério é a **rigidez matinal** de pelo menos uma hora, e não a rigidez noturna.",
+   "B": "O acometimento é **simétrico**, e não assimétrico; a assimetria sugere outras artropatias, como a psoriásica.",
+   "C": "O critério clássico é artrite em **três ou mais** áreas articulares, e não em duas."
   },
   "referencias": [
-   "Canale & Beaty: Campbell’s Operative Orthopaedics, 11th Ed., p.988 (referência indicada na prova TARO 2013, questão 33)"
+   "Canale & Beaty: Campbell’s Operative Orthopaedics, 11th Ed., p.988 (referência indicada na prova TARO 2013, questão 33)",
+   "Aletaha D, Neogi T, Silman AJ, et al. 2010 Rheumatoid arthritis classification criteria: an American College of Rheumatology/European League Against Rheumatism collaborative initiative. Arthritis Rheum. 2010;62(9):2569-2581."
   ],
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "osteometabolicas-0079": {
   "conceito": "**A osteoporose masculina é subdiagnosticada.** Cerca de um terço das fraturas de quadril ocorre em homens, e a mortalidade após essa fratura é maior neles do que nas mulheres. Mesmo assim, o rastreamento costuma ser lembrado só para mulheres. Por isso as sociedades definiram indicações próprias de densitometria para homens.\n\n**Quando pedir densitometria no homem.**\n1. **Idade igual ou maior que 70 anos**, de rotina.\n2. **Entre 50 e 69 anos com fatores de risco**: baixo peso, tabagismo, etilismo, sedentarismo, doença pulmonar obstrutiva crônica.\n3. **Acima de 50 anos com fratura por trauma leve** (fratura por fragilidade): queda da própria altura ou menos.\n4. Em qualquer idade, com **causa secundária**: uso de corticoide, hipogonadismo (inclusive por bloqueio androgênico no câncer de próstata), hiperparatireoidismo, má absorção, artrite reumatoide.\n\n**Por que a fratura por trauma leve pesa tanto.** Uma fratura que ocorre com energia que não quebraria um osso saudável já é, por si, sinal de fragilidade. Mais do que isso, ela é o maior preditor isolado de nova fratura: o risco de uma segunda fratura dobra, sobretudo nos dois primeiros anos. Investigar e tratar após a primeira fratura é a estratégia de prevenção secundária mais eficiente.\n\n**Causas secundárias são mais frequentes no homem.** Em até metade dos casos masculinos há uma causa identificável, especialmente hipogonadismo, corticoide e álcool, o que torna a investigação laboratorial (testosterona, cálcio, vitamina D, função renal e hepática) parte da avaliação.",

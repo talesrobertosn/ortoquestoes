@@ -2607,19 +2607,19 @@
   "formato": "corrido"
  },
  "tumores-0265": {
-  "conceito": "**O estágio III manda.** Em Enneking, o **estágio III** é definido por uma única condição, a **metástase**, regional ou a distância. Ele **anula** grau e compartimento: baixo ou alto grau, contido ou não, havendo metástase o estágio é III, e **não recebe letra** A ou B. A lesão do enunciado, extracompartimental, de baixo grau e com metástase, é **III**, e não IB. A lógica é que, com a doença disseminada, grau e compartimento deixam de determinar o prognóstico: quem dita é a doença sistêmica.\n\n**Recapitulando.** I é baixo grau, II é alto grau e III é metástase; A é intracompartimental e B é extracompartimental; os estágios possíveis são IA, IB, IIA, IIB e III. Não existe estágio IV em Enneking: ele pertence ao **AJCC**, que separa metástase pulmonar (IVA) de outros sítios (IVB).\n\n**Na prova:** qualquer tumor maligno com metástase em Enneking é **III**, sem letra.",
-  "correta": "**III.** A metástase define o estágio sozinha.",
+  "conceito": "**A regra do estágio III de Enneking.** No sistema de estadiamento de Enneking para sarcomas, o **algarismo** indica o grau (I baixo, II alto) e a **letra** indica o compartimento (A intracompartimental, B extracompartimental). Mas a **metástase**, regional ou a distância, **define o estágio sozinha**: qualquer tumor com metástase é **estágio III**, independentemente do grau e do compartimento.\n\n| Estágio | Grau e compartimento | Metástase |\n|---|---|---|\n| IA | Baixo grau, intracompartimental | Não |\n| IB | Baixo grau, extracompartimental | Não |\n| IIA | Alto grau, intracompartimental | Não |\n| IIB | Alto grau, extracompartimental | Não |\n| **III** | **Qualquer** | **Sim** |\n\n**O caso do enunciado.** Tumor maligno **extracompartimental** e de **baixo grau** seria **IB**, mas como tem **metástase a distância**, passa a ser **estágio III**. Em algumas versões do sistema, o III é subdividido em IIIA (intra) e IIIB (extra), mas o que define o estágio é a metástase.\n\n**Por que a metástase manda.** Quando já há doença à distância, o prognóstico e o tratamento passam a depender dela: a prioridade é o **tratamento sistêmico** (quimioterapia quando o tumor é sensível) e a avaliação de ressecção das metástases (por exemplo, pulmonares). O grau e o compartimento do tumor primário perdem peso na decisão.\n\n**Não existe estágio IV** no sistema de Enneking (o estadiamento do AJCC para sarcomas, este sim, tem estágio IV para doença metastática, o que costuma confundir).",
+  "correta": "**Correta: C (III).** No estadiamento de Enneking, qualquer tumor maligno com **metástase**, regional ou a distância, é **estágio III**, independentemente de ser de baixo grau ou extracompartimental.",
   "incorretas": {
-   "A": "**Sem metástase.** O estágio I é baixo grau sem metástase.",
-   "B": "**Sem metástase.** O estágio II é alto grau sem metástase.",
-   "D": "**Não existe.** Estágio IV é do AJCC, não de Enneking."
+   "A": "O **estágio I** é o tumor de **baixo grau sem metástase**; a metástase muda o estágio para III.",
+   "B": "O **estágio II** é o tumor de **alto grau sem metástase**.",
+   "D": "**Não existe estágio IV** no sistema de Enneking; o estágio IV para doença metastática pertence ao sistema do AJCC."
   },
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 24"
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 24",
+   "Enneking WF, Spanier SS, Goodman MA. A system for the surgical staging of musculoskeletal sarcoma. Clin Orthop Relat Res. 1980;(153):106-120."
   ],
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "tumores-0266": {
   "conceito": "**Enneking em uma frase.** O estadiamento de Enneking, adotado pela MSTS, combina três informações: o **grau** (I baixo, II alto), o **compartimento** (A intracompartimental, B extracompartimental) e a **metástase**, que sozinha define o estágio III. Alto grau com extensão extracompartimental e sem metástase é **IIB**, o cenário mais comum dos sarcomas, e pede margem ampla ou radical.\n\n**Barreiras e margens.** Contam como barreiras de compartimento a cortical óssea, a cartilagem articular, a fáscia espessa, o periósteo e a cápsula; regiões como a axila, a fossa poplítea e partes da mão e do pé são extracompartimentais por natureza. As margens cirúrgicas de Enneking são quatro: **intralesional**, por dentro do tumor, como na curetagem de benignos; **marginal**, pela zona reativa, para benignos agressivos; **ampla**, com tecido normal em volta, padrão para o alto grau; e **radical**, com o compartimento inteiro, para alto grau extenso. Para os benignos, a classificação usa algarismos arábicos: 1 latente, 2 ativo e 3 agressivo.\n\n**Na prova:** alto grau extracompartimental é **Enneking IIB**.",
@@ -3273,19 +3273,19 @@
   "formato": "corrido"
  },
  "tumores-0322": {
-  "conceito": "**Como se lê Enneking.** O algarismo indica o **grau**: I é baixo grau, II é alto grau, e III é qualquer tumor com **metástase**, que define o estágio sozinha e não recebe letra. A letra indica o **compartimento**: A é intracompartimental, contido pelas barreiras naturais (cortical íntegra, periósteo, cartilagem articular, fáscia e cápsula), e B é extracompartimental. Assim, **IIA** é tumor de **alto grau, intracompartimental e sem metástase**.\n\n**Por que importa.** Com o tumor contido, a margem ampla atravessa tecido normal no mesmo compartimento; com a barreira rompida, é preciso incluir o compartimento vizinho. A sequência completa é IA, IB, IIA, IIB e III, e o estágio IV não existe em Enneking: pertence ao AJCC.\n\n**Na prova:** IIA é **alto grau, contido e sem metástase**.",
-  "correta": "**Intracompartimental, de alto grau de malignidade e sem metástase.** É a definição de IIA.",
+  "conceito": "**Para que serve o estadiamento de Enneking.** O sistema da Musculoskeletal Tumor Society, proposto por **Enneking**, estadia os **sarcomas** ósseos e de partes moles com três informações que guiam a cirurgia e o prognóstico: o **grau** histológico, a **extensão local** (o compartimento) e a presença de **metástase**.\n\n**Como se lê.**\n- O **algarismo romano** indica o **grau**: **I** é **baixo grau**, **II** é **alto grau**. O **III** é qualquer tumor com **metástase**, independentemente do grau.\n- A **letra** indica o **compartimento**: **A** é **intracompartimental**, contido pelas barreiras naturais (cortical íntegra, periósteo, cartilagem articular, fáscia, cápsula); **B** é **extracompartimental**, quando o tumor rompeu essas barreiras.\n\n| Estágio | Grau e compartimento | Metástase |\n|---|---|---|\n| IA | Baixo grau, intracompartimental | Não |\n| IB | Baixo grau, extracompartimental | Não |\n| **IIA** | **Alto grau, intracompartimental** | **Não** |\n| IIB | Alto grau, extracompartimental | Não |\n| III | Qualquer | **Sim** |\n\n**O exemplo clássico.** A maioria dos **osteossarcomas** se apresenta como **IIB**: alto grau, já com extensão para as partes moles. O **condrossarcoma central de baixo grau** contido no osso é tipicamente **IA**.\n\n**Implicações cirúrgicas.**\n- Tumores de **baixo grau** (I) podem ser tratados com margem **ampla**, às vezes marginal em casos selecionados.\n- Tumores de **alto grau** (II) exigem margem **ampla** ou **radical**, geralmente com quimioterapia (osteossarcoma, Ewing) ou radioterapia (sarcomas de partes moles).\n- No estágio **III**, o tratamento é sistêmico, e a cirurgia do primário e das metástases é avaliada caso a caso.\n\n**Para os tumores benignos**, Enneking usa algarismos arábicos: 1 latente, 2 ativo e 3 agressivo.",
+  "correta": "**Correta: B.** No estadiamento de Enneking, **IIA** é o tumor de **alto grau** (II), **intracompartimental** (A) e **sem metástase**.",
   "incorretas": {
-   "A": "**Extracompartimental e com metástase.** Com metástase, o estágio seria III.",
-   "C": "**Baixo grau.** Baixo grau intracompartimental seria IA.",
-   "D": "**Com metástase.** Qualquer metástase coloca o tumor no estágio III."
+   "A": "Tumor **com metástase** é estágio **III**, qualquer que seja o grau ou o compartimento.",
+   "C": "Tumor intracompartimental de **baixo grau** sem metástase é o estágio **IA**.",
+   "D": "A presença de **metástase** classifica o tumor como estágio **III**, não IIA."
   },
   "referencias": [
-   "Canale & Beaty: Campbell’s Operative Orthopaedics, 11th Ed., p. 778 (referência indicada na prova TARO 2013, questão 43)"
+   "Canale & Beaty: Campbell’s Operative Orthopaedics, 11th Ed., p. 778 (referência indicada na prova TARO 2013, questão 43)",
+   "Enneking WF, Spanier SS, Goodman MA. A system for the surgical staging of musculoskeletal sarcoma. Clin Orthop Relat Res. 1980;(153):106-120."
   ],
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "tumores-0323": {
   "conceito": "**A histologia da sinovite vilonodular**, hoje tumor tenossinovial de células gigantes, é de uma proliferação **benigna**: células sinoviais e fibroblastos num **estroma fibroso**, com **macrófagos carregados de hemossiderina**, das hemartroses de repetição, células xantomatosas espumosas e **células gigantes multinucleadas** de tipo osteoclástico. A hemossiderina dá a cor castanho-avermelhada da sinovial na artroscopia e os focos de sinal baixo em T1 e T2 na ressonância.\n\n**O que não aparece.** Não há atipia celular nem figuras mitóticas anormais, próprias de lesão maligna. E \"células gigantes mononucleares\" é uma contradição: célula gigante, por definição, é multinucleada. A base molecular é uma translocação envolvendo o gene CSF1, o que explica o recrutamento maciço de macrófagos e o uso de inibidores do CSF1R na forma difusa irressecável.\n\n**Na prova:** sinovite vilonodular é **estroma fibroso com hemossiderina**, e células gigantes multinucleadas.",

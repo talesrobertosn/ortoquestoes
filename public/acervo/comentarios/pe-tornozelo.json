@@ -2094,14 +2094,17 @@
   "conferido": false
  },
  "pe-tornozelo-0212": {
-  "conceito": "### A imagem\nO examinador empurra **de plantar para dorsal** sob as **cabeças dos metatarsos**, simulando a **carga** do apoio, e observa se os dedos em garra / martelo se **alinham**: a ==manobra de Kelikian-Ducroquet== (push-up test).\n\n### Interpretação\n- **Dedos alinham:** deformidade **flexível**, com as MTF redutíveis.\n  - **Opções:** partes moles (**Girdlestone-Taylor**, alongamento / tenotomia, capsulotomia).\n- **Não alinham:** deformidade **rígida**.\n  - **Opções:** **ressecção / artrodese da IFP**, **Weil**, liberação da MTF.\n\n### Os distratores\n| Teste | Avalia |\n|---|---|\n| **Kleiger** (rotação externa) | **sindesmose** / deltoide |\n| **Matles** | **Aquiles** (posição de repouso do pé com o joelho a 90°) |\n| **Thompson** (Simmonds) | **Aquiles** (compressão da panturrilha) |\n\n> **Na prova:** pressão sob as cabeças metatarsais para ver se os dedos corrigem = ==Kelikian-Ducroquet==.",
-  "correta": "**Kelikian-Ducroquet.**",
+  "conceito": "**A imagem.** O examinador apoia o polegar sob as **cabeças dos metatarsos**, pela face plantar, e empurra o antepé **de plantar para dorsal**, simulando a **carga** do apoio. Observa-se o que acontece com os **dedos em garra ou em martelo**: se eles se **alinham**, a deformidade é **flexível**. É a **manobra de Kelikian-Ducroquet** (push-up test).\n\n**Por que a manobra funciona.** Na garra dos dedos, a metacarpofalângica (aqui, metatarsofalângica, MTF) está em **hiperextensão** e as interfalângicas em flexão. Empurrar as cabeças dos metatarsos para cima **reduz a hiperextensão da MTF**; se as estruturas ainda estão maleáveis, as interfalângicas acompanham e o dedo se endireita.\n\n**Interpretação e conduta.**\n\n| Resultado | Significado | Opções cirúrgicas |\n|---|---|---|\n| **Dedos alinham** | Deformidade **flexível**, MTF redutível | Partes moles: **Girdlestone-Taylor** (transferência do flexor longo para o extensor), alongamento do extensor, capsulotomia |\n| Dedos não alinham | Deformidade **rígida** | Procedimentos ósseos: artroplastia de ressecção ou artrodese da interfalângica proximal, osteotomia de Weil do metatarso |\n\n**As outras manobras das alternativas.**\n- **Kleiger**: teste de **rotação externa** do pé com o joelho fletido; dor anteromedial e anterolateral sugere lesão do deltoide ou da **sindesmose**.\n- **Matles**: com o paciente em decúbito ventral e os joelhos fletidos a 90°, o pé do lado com **ruptura do tendão calcâneo** cai em neutro ou dorsiflexão, perdendo o equino de repouso.\n- **Thompson** (Simmonds): a compressão da panturrilha não produz flexão plantar quando o **tendão calcâneo está rompido**.",
+  "correta": "**Correta: C (Kelikian-Ducroquet).** A figura mostra a compressão das cabeças dos metatarsos de plantar para dorsal, simulando a carga, para verificar se os dedos em garra se alinham: é a manobra de Kelikian-Ducroquet (push-up test).",
   "incorretas": {
-   "A": "**Kleiger.**\n- Rotação externa do pé: **sindesmose**.",
-   "B": "**Matles.**\n- Aquiles: posição do pé com o joelho a 90°.",
-   "D": "**Thompson.**\n- Aquiles: compressão da panturrilha."
+   "A": "O teste de **Kleiger** é a rotação externa do pé para avaliar lesão do deltoide ou da sindesmose.",
+   "B": "O teste de **Matles** observa a posição de repouso do pé, em decúbito ventral, para diagnosticar ruptura do tendão calcâneo.",
+   "D": "O teste de **Thompson** comprime a panturrilha para avaliar a continuidade do tendão calcâneo."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Coughlin MJ, Saltzman CL, Anderson RB. Mann's Surgery of the Foot and Ankle, 9ª edição"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pe-tornozelo-0213": {

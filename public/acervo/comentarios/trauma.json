@@ -221,14 +221,18 @@
   "conferido": false
  },
  "trauma-0021": {
-  "conceito": "### A órtese funcional de Sarmiento\nTrata a fratura da diáfise umeral **sem imobilizar articulações**.\n\n### Os três princípios\n- **Contração muscular ativa:** o músculo empurra contra a luva rígida.\n- **Efeito hidráulico:** as partes moles comprimidas se comportam como coluna de líquido incompressível, **alinhando** os fragmentos.\n- **Gravidade:** com o braço pendente, faz a **tração** e corrige o encurtamento.\n\nResposta: ==órtese de Sarmiento==.\n\n### Na prática\n- Começa após 1 a 2 semanas de tala (pinça de confeiteiro) e redução do edema.\n- Cotovelo e ombro seguem se movendo: menos rigidez.\n- Aceitação clássica: até cerca de **20° de angulação anterior, 30° de varo e 3 cm de encurtamento**.\n- Taxas altas de consolidação; fraturas transversas proximais e obesos são mais problemáticos.\n\n> **Na prova:** músculo + efeito hidráulico + gravidade = ==Sarmiento==.",
-  "correta": "**Órtese de Sarmiento.**",
+  "conceito": "**A órtese funcional de Sarmiento.** Augusto Sarmiento mostrou que a maioria das fraturas da **diáfise do úmero** consolida bem **sem imobilizar o ombro e o cotovelo**, com uma órtese rígida que envolve apenas o braço (geralmente de polipropileno, com fechos ajustáveis). Ela é colocada após cerca de uma a duas semanas de tala ou pinça de confeiteiro, quando a dor e o edema iniciais diminuem.\n\n**Os três princípios.**\n1. **Contração muscular ativa**: quando o paciente usa o braço, os músculos se contraem e empurram contra a parede rígida da órtese, comprimindo e estabilizando os fragmentos.\n2. **Efeito hidráulico das partes moles**: os tecidos dentro de um envoltório rígido se comportam como uma **coluna de líquido incompressível**. A compressão uniforme alinha os fragmentos e controla a angulação.\n3. **Gravidade**: com o braço pendente, o peso do membro faz uma **tração** suave que corrige o encurtamento e a angulação.\n\n**Os limites de desvio aceitáveis.** O úmero tolera bastante deformidade sem prejuízo funcional ou estético, por causa da grande mobilidade do ombro e da cobertura muscular:\n- até **20° de angulação anterior**;\n- até **30° de varo**;\n- até **3 cm de encurtamento**.\n\n**Resultados.** Taxas de consolidação de cerca de **90%** ou mais nas séries, com retorno funcional precoce. A fratura transversa do terço proximal e as fraturas em obesos ou com grandes mamas têm mais tendência a angular em varo.\n\n**Indicações de cirurgia.** Fratura exposta, lesão vascular, cotovelo flutuante, politrauma (para permitir o uso de muletas), fratura patológica, lesão do plexo braquial, falha do tratamento funcional e paralisia do **nervo radial** que surge após manipulação (a paralisia presente na chegada, por si, não indica cirurgia: a maioria recupera espontaneamente).",
+  "correta": "**Correta: B (órtese de Sarmiento).** A órtese funcional de Sarmiento usa a **contração muscular ativa**, o **efeito hidráulico** das partes moles comprimidas e a **gravidade** para alinhar e estabilizar a fratura da diáfise do úmero, com ombro e cotovelo livres.",
   "incorretas": {
-   "A": "**Imobiliza.**\n- Velpeau prende o braço ao tórax.",
-   "C": "**Imobiliza articulações.**\n- Não permite a contração ativa que o método exige.",
-   "D": "**Provisória.**\n- A pinça de confeiteiro é imobilização inicial."
+   "A": "A **tipoia Velpeau** imobiliza o braço junto ao tronco e não usa a contração muscular ativa nem a tração da gravidade como princípio.",
+   "C": "O **gesso axilopalmar** imobiliza o cotovelo e não permite o uso muscular ativo que caracteriza o tratamento funcional.",
+   "D": "A **pinça de confeiteiro** (tala em U) é a imobilização inicial, nas primeiras semanas, antes da órtese funcional."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Sarmiento A, Zagorski JB, Zych GA, Latta LL, Capps CA. Functional bracing for the treatment of fractures of the humeral diaphysis. J Bone Joint Surg Am. 2000;82(4):478-486.",
+   "Rockwood and Green's Fractures in Adults, 9ª edição, capítulo de fraturas da diáfise do úmero"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0022": {
@@ -1410,14 +1414,18 @@
   "conferido": false
  },
  "trauma-0121": {
+  "conceito": "**A fratura de Bennett.** É a **fratura-luxação intra-articular da base do primeiro metacarpo**. Um pequeno fragmento **volar e ulnar** da base permanece preso ao trapézio pelo **ligamento oblíquo anterior** (o ligamento em bico), enquanto o restante do metacarpo, sem essa contenção, se desloca. Isso a distingue da **fratura de Rolando**, intra-articular e cominutiva (em Y ou T).\n\n**As forças que deslocam o metacarpo.** Três músculos atuam sobre o fragmento grande:\n\n| Músculo | Inserção | Efeito |\n|---|---|---|\n| **Abdutor longo do polegar** | Base do 1º metacarpo (dorsal e radial) | Puxa a base para **proximal, dorsal e radial**: encurtamento e subluxação |\n| **Adutor do polegar** | Falange proximal (lado ulnar) | **Aduz** a cabeça e **supina** o metacarpo |\n| Extensor longo do polegar | Falange distal | Contribui para o encurtamento |\n\nAs forças são **divergentes**: o abdutor longo puxa a base para fora, e o adutor puxa a cabeça para dentro, girando o metacarpo em supinação e adução. O resultado é a subluxação da base para **dorsal e radial**, com o polegar fechado na palma.\n\n**Por que é instável.** As forças musculares continuam agindo após a redução, e o gesso sozinho raramente segura a redução.\n\n**Tratamento.** Redução por **tração, abdução, extensão e pronação** do metacarpo com pressão sobre a base, seguida de **fixação**: fios de Kirschner percutâneos do metacarpo ao trapézio ou ao segundo metacarpo (técnica de Wagner ou de Iselin), ou parafuso no fragmento quando grande. O objetivo é degrau articular menor que 1 a 2 mm, para evitar artrose trapeziometacarpal.",
+  "correta": "**Correta: A (adutor do polegar).** Na fratura de Bennett, o **adutor do polegar**, inserido na falange proximal, aduz a cabeça e **supina** o primeiro metacarpo, enquanto o abdutor longo puxa a base para proximal e radial.",
   "incorretas": {
-   "B": "O oponente prona o metacarpo, o contrário do desvio.",
-   "C": "O abdutor longo desvia a base para dorsal-radial e encurta, mas não supina.",
-   "D": "O extensor curto se insere na falange proximal."
+   "B": "O **oponente do polegar** prona e flete o metacarpo; não é o responsável pela supinação na fratura de Bennett.",
+   "C": "O **abdutor longo do polegar** puxa a base para proximal, dorsal e radial, causando encurtamento e subluxação, mas não a supinação.",
+   "D": "O **extensor curto do polegar** insere-se na falange proximal e estende a metacarpofalângica; não é força deformante principal."
   },
-  "conceito": "Na **fratura de Bennett**, a base do 1º metacarpo quebra, e um pequeno fragmento **volar-ulnar** fica preso ao trapézio pelo **ligamento oblíquo anterior**. O resto do metacarpo é puxado por três músculos:\n\n**abdutor longo do polegar**: puxa a base para **dorsal e radial** e **encurta** o metacarpo;\n\n**adutor do polegar**: **aduz** a cabeça e **supina** o metacarpo;\n\n**extensor longo do polegar**: aumenta o encurtamento.\n\n**A redução**: **tração**, **pronação** e **abdução** do polegar, com pressão na base, desfazendo cada força. Fixação com **fios percutâneos** ou **parafuso**, se o fragmento for grande.\n\n**Os outros músculos**: o **oponente** prona o metacarpo (o contrário do desvio); o **extensor curto** se insere na falange proximal.\n\n**Na prova**: na fratura de Bennett, o 1º metacarpo é supinado pelo **adutor do polegar**.",
-  "correta": "O adutor do polegar aduz a cabeça do metacarpo e o roda em supinação.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)",
+   "Rockwood and Green's Fractures in Adults, 9ª edição, capítulo de fraturas da mão"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0122": {
