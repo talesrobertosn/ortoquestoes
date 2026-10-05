@@ -2324,14 +2324,18 @@
   "conferido": false
  },
  "conceitos-basicos-0242": {
-  "conceito": "### As duas fontes de sangue da diáfise\n- **Medular (nutrícia):** irriga de dentro para fora os **dois terços internos** da cortical.\n- **Periosteal:** irriga o **terço externo**.\n\n### O que muda com a fratura\n- A fratura diafisária **rompe a circulação medular**.\n- O periósteo e a musculatura aderida assumem o suprimento, nutrindo o foco **de fora para dentro**.\n- É dessa vascularização ==extraóssea, do tecido mole adjacente==, que vem a maior parte da resposta vascular inicial.\n\n### A regra prática\nPreservar o **envelope de partes moles** importa mais que a redução anatômica perfeita. Daí:\n- Redução indireta.\n- Placas em ponte por técnica minimamente invasiva.\n- Não desnudar o periósteo.\n\nA circulação medular se recupera depois, inclusive após fresagem.\n\n> **Na prova:** resposta vascular na consolidação diafisária = ==tecido mole adjacente==.",
-  "correta": "**Tecido mole adjacente.**\n- Rompida a circulação medular, o envelope passa a nutrir o foco.",
+  "conceito": "**A irrigação normal da diáfise.** O osso cortical da diáfise recebe sangue de três fontes:\n\n| Fonte | Território |\n|---|---|\n| **Artéria nutridora** (sistema **medular** ou endosteal) | Os **dois terços internos** da cortical; é a principal no osso intacto |\n| Vasos **periosteais** | O **terço externo** da cortical, onde há inserções musculares e fasciais |\n| Vasos **metafisários e epifisários** | As extremidades; anastomosam-se com o sistema medular |\n\nNo osso **intacto**, o fluxo na cortical vai de **dentro para fora** (centrífugo), da medular para o periósteo.\n\n**O que muda depois da fratura (Rhinelander).** A fratura **rompe** a artéria nutridora e o sistema medular, e a cortical das pontas fica sem sangue (as pontas ósseas necrosam alguns milímetros). Para consolidar, o osso precisa de uma **nova irrigação**. Rhinelander mostrou que surge uma **circulação extraóssea**, que vem dos **tecidos moles ao redor**:\n- os **músculos** e as fáscias vizinhos formam novos vasos que penetram no **calo** periosteal;\n- essa irrigação **extraóssea transitória** é a **principal fonte** de sangue para o calo nas primeiras semanas;\n- mais tarde, o sistema medular se **regenera** e volta a predominar.\n\n**Por que os tecidos moles importam tanto.**\n- Fraturas com **grande lesão de partes moles** (expostas, esmagamentos, desluvamentos) consolidam pior e têm mais pseudoartrose.\n- A **tíbia** distal, com pouca cobertura muscular, consolida mal.\n- Na cirurgia, a **dissecção** excessiva e o **descolamento** do periósteo e dos músculos **desvascularizam** os fragmentos. Daí a preferência pelas técnicas **biológicas**: redução indireta, **placas em ponte** submusculares, **hastes** intramedulares, preservação dos tecidos moles.\n- A **fresagem** do canal na haste destrói temporariamente a circulação endosteal, mas aumenta a circulação periosteal e extraóssea e deposita material com potencial osteogênico.\n\n**A cobertura muscular na fratura exposta.** Os **retalhos musculares** levam irrigação nova ao foco e ajudam a consolidar e a combater a infecção. É uma das razões para cobrir precocemente as fraturas expostas da tíbia.",
+  "correta": "**Correta: D (tecido mole adjacente).** Na consolidação das fraturas diafisárias, a maior parte da resposta vascular vem de uma **circulação extraóssea** transitória, originada nos **tecidos moles ao redor** (músculos e fáscias), que irriga o calo enquanto o sistema medular, rompido pela fratura, se regenera.",
   "incorretas": {
-   "A": "**É o que se perde.**\n- A fratura e a fresagem rompem a circulação endosteal na fase inicial.",
-   "B": "**Participa, mas depende.**\n- O periósteo recebe sangue do tecido mole que o recobre.",
-   "C": "**É o irrigado.**\n- A cortical não é fonte de irrigação."
+   "A": "O **endósteo** (sistema medular) é a principal fonte no osso **intacto**, mas é **rompido** pela fratura e só se regenera mais tarde.",
+   "B": "O **periósteo** contribui, mas a nova irrigação do calo depende principalmente dos vasos extraósseos que vêm dos tecidos moles ao redor.",
+   "C": "O **osso cortical** das pontas fraturadas fica **desvitalizado** e não é fonte de vascularização para a consolidação."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)",
+   "Rhinelander FW. Tibial blood supply in relation to fracture healing. Clin Orthop Relat Res. 1974;(105):34-81."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "conceitos-basicos-0243": {

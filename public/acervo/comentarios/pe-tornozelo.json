@@ -2840,14 +2840,18 @@
   "conferido": false
  },
  "pe-tornozelo-0281": {
-  "conceito": "### A imagem\nVista **medial** do tornozelo e do pé. O nervo tibial desce atrás do maléolo e se divide sob o retináculo e o abdutor do hálux:\n- **Seta 1** (mais anterior / distal, rumo ao arco medial): ==nervo plantar medial==.\n- **Seta 2** (mais posterior, cruzando para lateral): ==nervo plantar lateral==.\n\n### Plantar medial versus plantar lateral\n| | Plantar medial | Plantar lateral |\n|---|---|---|\n| Análogo na mão | **mediano** | **ulnar** |\n| Motor | abdutor do hálux, flexor curto dos dedos, flexor curto do hálux, 1º lumbrical | a **maioria** dos intrínsecos (interósseos, adutor do hálux, quadrado plantar, abdutor do 5º) |\n| Sensibilidade | 3 dedos e meio **mediais** | 1 dedo e meio **laterais** |\n| Ramo clínico | \"jogger's foot\" (arco medial) | 1º ramo = **Baxter** |\n\n### Safeno\nSensitivo, **medial** e subcutâneo, com a safena magna; termina na borda medial do pé.\n\n> **Na prova:** setas 1 e 2 = ==plantar medial e plantar lateral==.",
-  "correta": "**Plantar medial e plantar lateral.**",
+  "conceito": "**A imagem.** Vista **medial** do tornozelo e do pé, com o **retináculo dos flexores** e o **túnel do tarso**. O **nervo tibial** desce atrás do maléolo medial e, sob o retináculo, divide-se em dois ramos terminais:\n- **seta 1**: o ramo que segue mais **anterior** e superior, ao longo da borda medial do pé: o **nervo plantar medial**;\n- **seta 2**: o ramo que segue mais **posterior** e inferior, em direção à planta lateral: o **nervo plantar lateral**.\n\n**O túnel do tarso.** É o canal osteofibroso atrás do **maléolo medial**, coberto pelo **retináculo dos flexores** (ligamento lacinado). O conteúdo, de anterior para posterior, é lembrado pelo mnemônico **\"Tom, Dick And Very Nervous Harry\"**:\n- **T**ibial posterior (tendão);\n- flexor longo dos **D**edos (tendão);\n- **A**rtéria tibial posterior;\n- **V**eias tibiais posteriores;\n- **N**ervo tibial;\n- flexor longo do **H**álux (tendão).\n\n**Os ramos do nervo tibial no pé.**\n\n| Ramo | Território |\n|---|---|\n| **Plantar medial** | Sensibilidade da planta **medial** e dos 3 dedos e meio mediais; músculos: abdutor do hálux, flexor curto dos dedos, flexor curto do hálux, 1º lumbrical (o \"mediano do pé\") |\n| **Plantar lateral** | Sensibilidade da planta **lateral** e de 1 dedo e meio laterais; a maioria dos músculos intrínsecos (o \"ulnar do pé\") |\n| Calcâneo medial | Sensibilidade do **calcanhar** (sai antes ou dentro do túnel) |\n| Primeiro ramo do plantar lateral (nervo de Baxter) | Abdutor do dedo mínimo; comprimido na fascite plantar crônica |\n\n**A síndrome do túnel do tarso.** É a **compressão do nervo tibial** ou dos seus ramos no túnel. Causas: gânglios, varizes, tenossinovite, fraturas, pé plano valgo, lipomas. Quadro: **dor em queimação** e **parestesia** na **planta** do pé, que pioram ao ficar em pé e à noite, com **sinal de Tinel** atrás do maléolo medial. O calcanhar pode ser poupado se o ramo calcâneo sair antes do túnel.\n\n**O nervo safeno.** É um ramo **sensitivo** do femoral, que corre **à frente** do maléolo medial, com a veia safena magna, e não entra no túnel do tarso. Dá a sensibilidade da face medial da perna e do pé (até a base do hálux).",
+  "correta": "**Correta: C (plantar medial e plantar lateral).** No túnel do tarso, o nervo tibial divide-se nos seus ramos terminais. A seta 1 aponta o ramo mais **anterior**, o **nervo plantar medial**, e a seta 2 o ramo mais **posterior**, o **nervo plantar lateral**.",
   "incorretas": {
-   "A": "**Plantar lateral e safeno.**\n- O safeno é subcutâneo e não tem trajeto plantar.",
-   "B": "**Plantar medial e safeno.**\n- A seta 2 é o **plantar lateral**.",
-   "D": "**Plantar lateral e plantar medial.**\n- Ordem invertida."
+   "A": "O **safeno** corre **à frente** do maléolo medial e não é um dos ramos do nervo tibial no túnel do tarso. A seta 1 é o plantar medial.",
+   "B": "O plantar medial está certo, mas a seta 2 é o **plantar lateral**. O safeno não passa no túnel do tarso.",
+   "D": "A ordem está invertida: o ramo **anterior** (seta 1) é o plantar **medial**, e o **posterior** (seta 2) é o plantar **lateral**."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
+   "Netter FH. Atlas de Anatomia Humana. 7ª edição. Elsevier; 2019."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pe-tornozelo-0282": {

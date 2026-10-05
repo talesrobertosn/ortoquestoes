@@ -764,17 +764,18 @@
   "conferido": false
  },
  "trauma-0065": {
+  "conceito": "**A fratura por estresse.** É uma fratura que surge de **cargas repetidas** num osso normal (fratura por **fadiga**), quando o osso é danificado mais rápido do que consegue se reparar. É comum em **corredores**, militares em treinamento, bailarinos e atletas que aumentam o volume de treino rapidamente.\n\n**Alto risco x baixo risco.** A classificação mais útil para o tratamento separa as fraturas pelo **risco de complicações** (progressão para fratura completa, desvio, pseudoartrose). Isso depende sobretudo de duas coisas:\n- se a fratura está no lado de **tensão** do osso (onde a carga tende a abrir o traço) ou de **compressão**;\n- se a região tem **boa irrigação**.\n\n| Alto risco | Baixo risco |\n|---|---|\n| **Colo do fêmur** (lado de **tensão**, superior) | Colo do fêmur (lado de compressão, inferior) |\n| **Patela** | **Costelas** |\n| **Cortical anterior da tíbia** (a \"linha temida\", dreaded black line) | Diáfise posteromedial da tíbia |\n| Maléolo medial | Fíbula |\n| **Tálus** e **navicular** | **Diáfise da ulna** |\n| **Base do quinto metatarso** (diáfise proximal, zona III) | Diáfise do fêmur |\n| **Sesamoides** do hálux | Metatarsos 2 a 4 (diáfise) |\n\n**Por que a patela e não a costela.** A **patela** é um osso que recebe grande **tração** do aparelho extensor; uma fratura por estresse pode **desviar** e romper o mecanismo extensor. As **costelas** (como nos remadores e golfistas) consolidam bem com repouso relativo.\n\n**O tratamento.**\n- **Baixo risco**: **repouso relativo**, modificação da atividade e retorno gradual. Raramente exigem imobilização.\n- **Alto risco**: **sem carga** ou imobilização rigorosa e, muitas vezes, **fixação cirúrgica** (por exemplo, parafuso no colo do fêmur no lado de tensão, haste na tíbia anterior, parafuso no quinto metatarso do atleta).\n- Em todas: investigar os fatores de risco (erros de treino, calçado, alinhamento, **baixa disponibilidade de energia** na mulher atleta, vitamina D).",
+  "correta": "**Correta: A (a patela e a costela).** Entre as fraturas por estresse, a **patela** é um sítio de **alto risco** (sob tração do aparelho extensor, pode desviar), e a **costela** é um sítio de **baixo risco**, que consolida com repouso relativo.",
   "incorretas": {
-   "B": "A patela está certa, mas a base do quinto metatarso também é de alto risco.",
-   "C": "A costela e a diáfise da ulna são ambas de baixo risco.",
-   "D": "A ulna é de baixo risco, e a base do quinto metatarso, de alto."
+   "B": "A patela é de alto risco, mas a **base do quinto metatarso** (diáfise proximal) também é de **alto risco**, e não de baixo risco.",
+   "C": "A **costela** é de **baixo** risco, e não de alto risco. A diáfise da ulna também é de baixo risco.",
+   "D": "A **diáfise da ulna** é de **baixo** risco, e a **base do quinto metatarso** é de **alto** risco: a ordem está invertida."
   },
-  "conceito": "As **fraturas por estresse** se dividem pelo risco de evoluir mal:\n\n**baixo risco**: ficam no lado de **compressão** do osso ou têm boa irrigação; consolidam com **modificação da atividade** e retorno gradual; exemplos: **costela**, **diáfise da ulna**, face posteromedial da tíbia, diáfises dos metatarsos, ramos do púbis;\n\n**alto risco**: ficam no lado de **tensão** ou em áreas de **irrigação pobre**; tendem a não consolidar, completar a fratura ou desviar; exemplos: **patela**, colo do fêmur (lado de tensão, superolateral), cortical **anterior** da tíbia, maléolo medial, **tálus**, **navicular**, **base do quinto metatarso** (zona de Jones), sesamoides.\n\n**A conduta**:\n\n**baixo risco**: reduzir a carga e voltar aos poucos;\n\n**alto risco**: descarga rigorosa e, com frequência, **fixação cirúrgica**.\n\n**Na prova**: são de alto e baixo risco, respectivamente, a **patela** e a **costela**.",
-  "correta": "A patela fica no lado de tensão e é de alto risco; a costela consolida bem e é de baixo risco.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 23"
+   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 23",
+   "Boden BP, Osbahr DC, Jimenez C. Low-risk stress fractures. Am J Sports Med. 2001;29(1):100-111."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0066": {
@@ -1088,14 +1089,18 @@
   "conferido": false
  },
  "trauma-0089": {
+  "conceito": "**A lesão de Monteggia.** É a **fratura da ulna** associada à **luxação da cabeça do rádio**. Giovanni Monteggia descreveu a lesão em 1814. A regra prática é: **em toda fratura da ulna, olhe a articulação radiocapitelar**, e em toda luxação da cabeça do rádio, procure uma lesão da ulna.\n\n**A classificação de Bado.** A luxação da cabeça do rádio segue a direção do **ápice** da fratura da ulna.\n\n| Tipo | Cabeça do rádio | Em quem |\n|---|---|---|\n| **1** | Luxação **anterior**; ulna com ápice anterior | O **mais comum** em geral e na **criança** |\n| **2** | Luxação **posterior** ou posterolateral; ulna com ápice **posterior** | **Quase exclusivo do adulto** (mais em idosos com osso osteoporótico) |\n| **3** | Luxação **lateral**; fratura metafisária da ulna em varo | Comum na **criança** |\n| **4** | Luxação anterior com fratura do rádio **e** da ulna | Raro |\n\n**O tipo 2 no adulto.** O mecanismo lembra o de uma **luxação posterior do cotovelo**: carga axial com o cotovelo fletido, em pessoas com osso mais frágil. A fratura da ulna costuma ser **proximal**, muitas vezes com um fragmento triangular anterior (coronoide) e com **fratura da cabeça do rádio** associada. **Jupiter** subdividiu o tipo 2 pelo nível da fratura da ulna:\n- IIA: na altura do processo coronoide (olécrano distal);\n- IIB: na junção da metáfise com a diáfise, distal ao coronoide;\n- IIC: na diáfise;\n- IID: cominutiva, estendendo-se da metáfise à diáfise.\n\n**Por que é raro na criança.** O osso infantil é elástico e o periósteo é grosso. As forças que produzem uma luxação posterior no adulto tendem a causar, na criança, uma fratura supracondiliana ou do colo do rádio.\n\n**O tratamento no adulto.**\n- **Redução aberta e fixação** da ulna com **placa**, restaurando o **comprimento e o alinhamento**. Com a ulna anatômica, a cabeça do rádio geralmente reduz.\n- Tratar as lesões associadas: **cabeça do rádio** (fixação ou prótese), **coronoide** e ligamento colateral lateral.\n- Os resultados do tipo 2 são **piores** que os dos outros tipos, pela instabilidade e pelas lesões associadas.\n\n**Na criança, o contraste.** A maioria é tratada com **redução fechada** e gesso. A fratura incompleta ou a deformidade plástica da ulna permitem a redução da cabeça do rádio sem cirurgia.",
+  "correta": "**Correta: B (2).** No adulto, os piores resultados da lesão de Monteggia são esperados no tipo **2** de Bado (luxação posterior da cabeça do rádio), pela maior instabilidade, pela frequente fratura associada da cabeça do rádio e do coronoide e pela fratura proximal da ulna em osso frágil.",
   "incorretas": {
-   "A": "O tipo 1 costuma ter bom resultado com fixação.",
-   "C": "O tipo 3 é mais comum na criança.",
-   "D": "O tipo 4 é raro e pode ser tratado com placas."
+   "A": "O tipo **1** (luxação anterior) é o mais comum e tem, em geral, bons resultados com a fixação anatômica da ulna.",
+   "C": "O tipo **3** (luxação lateral) é mais típico da criança e tem bons resultados com o tratamento adequado.",
+   "D": "O tipo **4** é raro e grave, mas, nas séries de adultos, os piores resultados são associados ao tipo 2."
   },
-  "conceito": "**Bado** classifica a **fratura-luxação de Monteggia** pela direção da cabeça do rádio: I anterior, II posterior, III lateral, IV anterior com fratura dos dois ossos.\n\n**O tipo II no adulto**: é o **mais comum** no adulto e o de **pior resultado**.\n\n**Por quê**: é uma lesão complexa, que **Jupiter** subdividiu pelo nível do traço da ulna (IIA no coronoide, IIB na metáfise, IIC na diáfise, IID cominutiva). Muitas vezes se associa à fratura da **cabeça do rádio** e do **coronoide**, ocorre em **idosos** com osso frágil e tem mais **instabilidade** e **rigidez**.\n\n**Os outros tipos**: o **tipo I** costuma ter bom resultado com fixação; o **tipo III** é mais comum na **criança**; o **tipo IV** é raro e tratado com placas nos dois ossos.\n\n**As complicações**: instabilidade, rigidez, sinostose radioulnar, pseudartrose e lesão do **nervo interósseo posterior**.\n\n**Na prova**: no adulto, os piores resultados são esperados no **Bado tipo 2**.",
-  "correta": "O Bado 2 associa fraturas da cabeça do rádio e do coronoide em idosos com osso frágil, com o pior resultado.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)",
+   "Jupiter JB, Leibovic SJ, Ribbans W, Wilk RM. The posterior Monteggia lesion. J Orthop Trauma. 1991;5(4):395-402."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0090": {
@@ -1941,14 +1946,18 @@
   "conferido": false
  },
  "trauma-0159": {
+  "conceito": "**A clavícula flutuante.** A clavícula é o único elo ósseo entre o membro superior e o tronco, presa nas duas pontas: pela articulação **esternoclavicular** (medial) e pela **acromioclavicular** (lateral). A luxação **das duas articulações** ao mesmo tempo é rara e é chamada de **clavícula flutuante** ou luxação **bipolar** da clavícula. O mecanismo é um trauma de **alta energia** sobre o ombro, com compressão e rotação.\n\n**A luxação esternoclavicular: anterior x posterior.**\n\n| Tipo | Frequência | Particularidades |\n|---|---|---|\n| **Anterior** | A **mais comum** (cerca de 9 em cada 10) | Proeminência visível medial; geralmente benigna; muitas vezes instável após a redução, mas bem tolerada |\n| **Posterior** | Rara | **Perigosa**: a extremidade medial da clavícula vai para trás do esterno, em direção à **traqueia**, ao **esôfago** e aos **grandes vasos**; disfagia, dispneia, rouquidão, congestão venosa |\n\n**Na clavícula flutuante.** Como em geral, a luxação esternoclavicular associada à acromioclavicular é **mais frequentemente anterior**. A clavícula inteira fica solta nas duas extremidades e se desloca com o ombro.\n\n**O diagnóstico por imagem.**\n- A radiografia simples é difícil de interpretar. A incidência de **Serendipity** (feixe inclinado 40° em direção cefálica) ajuda.\n- A **tomografia** é o exame de escolha para a esternoclavicular, mostrando a direção da luxação e a relação com as estruturas do mediastino.\n\n**O tratamento.**\n- **Luxação esternoclavicular anterior**: tentativa de redução fechada; se instável, geralmente aceita-se e trata-se com tipoia (bom resultado funcional).\n- **Luxação esternoclavicular posterior**: **redução urgente** (fechada, com tração do braço em abdução e extensão e uma pinça na clavícula), com um **cirurgião torácico** de sobreaviso. Se falhar, redução aberta e estabilização.\n- **Clavícula flutuante**: o tratamento depende da estabilidade e da demanda. Muitas vezes, estabiliza-se a acromioclavicular (a mais incapacitante) e trata-se a esternoclavicular anterior conservadoramente.\n\n**Na criança e no adolescente.** A fise **medial** da clavícula é a **última** do corpo a fechar (por volta dos 23 a 25 anos). Muitas \"luxações esternoclaviculares\" no jovem são, na verdade, **descolamentos epifisários** (Salter-Harris I ou II), que remodelam bem.",
+  "correta": "**Correta: C (anterior).** A luxação esternoclavicular combinada à luxação acromioclavicular (clavícula flutuante) é, mais frequentemente, **anterior**, como a maioria das luxações esternoclaviculares. A posterior é rara, mas perigosa, pela proximidade da traqueia, do esôfago e dos grandes vasos.",
   "incorretas": {
-   "A": "A luxação inferior é rara.",
-   "B": "A luxação superior é rara.",
-   "D": "A luxação posterior é menos frequente, embora mais grave."
+   "A": "A luxação esternoclavicular **inferior** é muito rara e não é o padrão da clavícula flutuante.",
+   "B": "A luxação esternoclavicular **superior** é rara. O padrão mais comum é o anterior.",
+   "D": "A luxação **posterior** é rara e grave, mas não é a mais frequente, nem na luxação isolada nem na combinada."
   },
-  "conceito": "A **luxação bipolar da clavícula** (clavícula flutuante) é a luxação **simultânea** das articulações **esternoclavicular** e **acromioclavicular**. É rara e vem de trauma de **alta energia**.\n\n**As direções mais comuns**: **esternoclavicular anterior** com **acromioclavicular posterior**. Também na luxação esternoclavicular isolada, a forma **anterior** é muito mais frequente que a posterior.\n\n**A luxação esternoclavicular isolada**:\n\n**anterior**: a mais comum; benigna, muitas vezes tratada sem cirurgia, mesmo que fique uma saliência;\n\n**posterior**: menos frequente, mas **grave**: a clavícula comprime **traqueia**, **esôfago** e **grandes vasos**; pede **TC** e redução, com cirurgião torácico disponível.\n\n**O tratamento da bipolar**: em jovens ativos, estabilizar a **acromioclavicular** (e a esternoclavicular, se instável); em baixa demanda, conservador.\n\n**Na prova**: a luxação esternoclavicular associada à acromioclavicular é mais frequentemente **anterior**.",
-  "correta": "Na clavícula flutuante, a esternoclavicular costuma luxar para a frente, a direção mais frequente.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)",
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0160": {
@@ -2358,14 +2367,18 @@
   "conferido": false
  },
  "trauma-0197": {
+  "conceito": "**A luxação anterior do quadril.** É **menos comum** que a posterior (cerca de 10% das luxações traumáticas do quadril). O mecanismo é a **abdução** e a **rotação externa** forçadas do quadril, como num acidente de moto ou numa queda com as pernas abertas. A cabeça femoral sai pela frente, rompendo a cápsula anterior.\n\n**Os tipos.**\n- **Obturatória** (inferior): com o quadril **fletido**; a cabeça vai para a região do forame obturado. O membro fica em flexão, abdução e rotação externa.\n- **Púbica** ou ilíaca (superior): com o quadril **estendido**; a cabeça vai para a região do púbis.\n\n**A lesão associada mais frequente: a fratura por impacção da cabeça.** Ao sair do acetábulo, a cabeça femoral **bate** contra a borda anteroinferior do acetábulo (ou o ramo púbico) e sofre uma **impacção** (um afundamento) na sua superfície, geralmente **superolateral** ou posterossuperior. É uma lesão **condral e subcondral**, semelhante à lesão de Hill-Sachs do ombro.\n\n**Por que ela piora o prognóstico.**\n- A impacção esmaga a **cartilagem** e o osso subcondral da cabeça, criando uma superfície irregular.\n- Associa-se a maior risco de **necrose avascular** e de **artrose pós-traumática**.\n- Impacções **profundas** (mais de cerca de 4 mm) têm pior resultado.\n\n**Outras lesões associadas.** Fraturas da cabeça (por cisalhamento), do acetábulo anterior e lesões do **nervo e dos vasos femorais** (raras).\n\n**O tratamento.**\n1. **Redução urgente** (idealmente em menos de **6 horas**), sob sedação ou anestesia, com tração longitudinal e manobras específicas. Quanto mais tempo luxado, maior o risco de necrose.\n2. **Tomografia** depois da redução para avaliar a cabeça, o acetábulo e fragmentos intra-articulares.\n3. Fragmentos interpostos ou redução não concêntrica: tratamento cirúrgico.\n4. Seguimento por pelo menos 2 anos (necrose avascular, artrose, ossificação heterotópica).",
+  "correta": "**Correta: C (impacção).** Na luxação anterior do quadril, a lesão associada mais frequente é a **fratura por impacção** da cabeça femoral, que bate na borda anteroinferior do acetábulo ao sair. Ela esmaga a cartilagem e o osso subcondral e se associa a maior risco de necrose e artrose.",
   "incorretas": {
-   "A": "A fratura por torção não é o padrão da luxação anterior.",
-   "B": "A avulsão do ligamento redondo tem pouca relevância.",
-   "D": "O cisalhamento é típico da luxação posterior (Pipkin)."
+   "A": "A fratura por **torção** não é o padrão típico associado à luxação anterior do quadril.",
+   "B": "A fratura por **avulsão** (por exemplo, do ligamento redondo) pode ocorrer, mas não é a lesão mais frequente nem a de maior impacto no prognóstico.",
+   "D": "A fratura por **cisalhamento** da cabeça (tipo Pipkin) é mais típica da luxação **posterior**, em que a borda posterior do acetábulo cisalha a cabeça."
   },
-  "conceito": "Na **luxação anterior do quadril**, a cabeça do fêmur bate contra a borda anterior do acetábulo ou contra o ramo do púbis e sofre **impacção** (indentação): um afundamento da superfície, em geral **superolateral**.\n\n**Por que é a lesão mais importante**: é a lesão da cabeça **mais frequente** na luxação anterior e a que mais **piora o prognóstico**. A cartilagem e o osso subcondral esmagados predispõem à **necrose** e à **artrose pós-traumática**, sobretudo com indentação de mais de **4 mm** de profundidade.\n\n**O contraste com a luxação posterior**: nela, a cabeça sofre **cisalhamento** pela borda posterior, com as fraturas de **Pipkin**.\n\n**A avulsão**: do ligamento redondo, na fóvea, tem pouca relevância.\n\n**A conduta**: redução **urgente**, sob anestesia, e TC ou RM depois, para medir a impacção.\n\n**Na prova**: na luxação anterior, a lesão mais frequente e com mais necrose é a fratura por **impacção**.",
-  "correta": "A cabeça bate na borda anterior e afunda; a impacção é a lesão mais frequente e a que mais leva à necrose.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)",
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0198": {
@@ -5679,15 +5692,19 @@
   "conferido": false
  },
  "trauma-0698": {
+  "conceito": "**A fratura do escafoide.** É a fratura **mais comum do carpo**, em adultos jovens, geralmente do sexo masculino. O mecanismo é a **queda sobre a mão espalmada**, com o punho em **hiperextensão** e **desvio radial**. O escafoide fica entre o rádio e o capitato, e a força se concentra na sua **cintura**.\n\n**As lesões associadas.** Na mesma queda, a força que quebra o escafoide pode lesar estruturas vizinhas:\n\n| Lesão associada | Comentário |\n|---|---|\n| **Fratura do rádio distal**, em especial do **processo estiloide** (fratura do chofer) | A associação **mais descrita** na literatura; mecanismo comum de hiperextensão com desvio radial |\n| **Luxação perilunar** (transescafoperilunar) | A forma mais comum das luxações perilunares é a que passa pelo escafoide |\n| Lesão do **ligamento escafossemilunar** | Pode coexistir, sobretudo nas fraturas do polo proximal |\n| Fratura da **cabeça do rádio** | Por transmissão da carga ao longo do antebraço |\n| Fratura do capitato | Síndrome escafocapitato |\n\n**Sempre examine o punho e o cotovelo.** Na queda sobre a mão estendida, a carga sobe pelo antebraço. Por isso, uma fratura do escafoide pode acompanhar lesões do **rádio distal** e, mais raramente, da **cabeça do rádio** e do cotovelo.\n\n**Sobre esta questão.** O gabarito registrado é a fratura do **rádio proximal**. A literatura, porém, descreve como associação mais frequente a fratura do **rádio distal**, especialmente do processo estiloide. Este acervo traz a mesma resposta em outras duas questões (trauma-0275 e trauma-0908), o que pode refletir a convenção da fonte usada pela banca.\n\n**O diagnóstico e o tratamento da fratura do escafoide.**\n- Dor na **tabaqueira anatômica** e no tubérculo do escafoide; radiografias incluindo a **incidência do escafoide** (PA em desvio ulnar).\n- Com radiografia normal e suspeita clínica: imobilizar e repetir em 10 a 14 dias, ou fazer **ressonância** ou tomografia.\n- **Sem desvio, na cintura**: gesso ou **fixação percutânea** com parafuso (retorno mais rápido).\n- **Polo proximal** ou **com desvio** (mais de 1 mm): **fixação**.\n- As complicações: **pseudoartrose** e **necrose** do polo proximal, pela irrigação retrógrada.",
+  "correta": "**Gabarito registrado: B (fratura do rádio proximal).** A literatura, porém, descreve como lesão associada mais frequente à fratura do escafoide a fratura do **rádio distal**, especialmente do **processo estiloide** (fratura do chofer), pelo mecanismo comum de hiperextensão com desvio radial. Ver o alerta acima.",
   "incorretas": {
-   "A": "A lesão do escafossemilunar ocorre, mas não foi a resposta da banca.",
-   "C": "A fratura do semilunar associada é rara.",
-   "D": "A luxação do semilunar é uma lesão perilunar grave, menos frequente."
+   "A": "A lesão do **ligamento escafossemilunar** pode coexistir com a fratura do escafoide, mas não é a associação mais frequente.",
+   "C": "A **fratura do semilunar** é rara e não é a lesão mais associada à fratura do escafoide.",
+   "D": "A **luxação do semilunar** (ou perilunar transescafoide) é uma associação grave, mas menos frequente."
   },
-  "conceito": "A **fratura do escafoide** vem da queda com o punho em **hiperextensão** e desvio radial. No trauma de maior energia, pode se associar a outras lesões do membro superior.\n\n**As associações descritas**:\n\n**rádio distal**, sobretudo o **estiloide radial** (fratura do chofer): mesmo mecanismo, parte do **arco maior** das lesões perilunares;\n\n**ligamento escafossemilunar** e **luxações perilunares**;\n\n**rádio proximal** (cabeça do rádio): a carga sobe pelo antebraço até o cotovelo.\n\n**A lição prática**: na fratura do escafoide, examinar o **punho inteiro**, o **antebraço** e o **cotovelo**; procurar as lesões perilunares no perfil (alinhamento do semilunar e do capitato).\n\n**O gabarito**: a banca considerou a **fratura do rádio proximal** como a lesão associada mais comum, a mesma leitura de outras questões deste acervo.\n\n**Na prova**: a banca indicou a **fratura do rádio proximal**.",
-  "correta": "A banca considerou a fratura do rádio proximal, pela carga que sobe pelo antebraço, a lesão associada mais comum.",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)",
+   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)"
+  ],
   "alerta": "O gabarito aponta a fratura do RÁDIO PROXIMAL como a lesão mais comumente associada à do escafoide, e este acervo repete a mesma resposta em `trauma-0275` e `trauma-0908`. A associação descrita na literatura é com o RÁDIO DISTAL, e em especial com o PROCESSO ESTILOIDE (fratura do chofer), pelo mecanismo comum de hiperextensão com desvio radial. Como a divergência se repete em três questões, ela pode refletir uma convenção da fonte usada pela banca, mas o ponto merece conferência.",
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0699": {
@@ -7226,14 +7243,18 @@
   "conferido": false
  },
  "trauma-0868": {
+  "conceito": "**A lesão de Monteggia crônica.** Quando a luxação da cabeça do rádio passa **despercebida** (sobretudo na criança, em que a fratura da ulna pode ser só uma deformidade plástica), a cabeça fica luxada por semanas a meses. Com o tempo:\n- o **ligamento anular** se rompe, fica interposto ou se retrai;\n- a ulna consolida **curva**, mantendo a cabeça fora do lugar;\n- a cabeça do rádio e o capítulo se **deformam**;\n- surgem dor, perda da flexão e da rotação, instabilidade, cúbito valgo e, às vezes, paralisia tardia do nervo interósseo posterior.\n\n**A reconstrução do ligamento anular.** Para manter a cabeça do rádio reduzida, muitas técnicas reconstroem o ligamento anular com tecido do próprio paciente:\n\n| Técnica | Material |\n|---|---|\n| **Bell-Tawse** | Uma tira do **tendão do tríceps** (porção lateral), descolada proximalmente e mantida presa ao olécrano, passada ao redor do colo do rádio |\n| Lloyd-Roberts | Também usa uma tira do tríceps, com modificações |\n| Outras | Fáscia do antebraço, tendão do palmar longo ou outros enxertos |\n\n**A técnica de Bell-Tawse.** Por uma via **lateral** (de Boyd ou Kocher), retira-se uma faixa da **porção lateral do tendão do tríceps**, deixada inserida na **ulna** (olécrano). A faixa é passada ao redor do **colo do rádio** e suturada de volta, formando um novo ligamento anular que segura a cabeça junto à ulna.\n\n**O que mais é necessário.** A reconstrução do ligamento sozinha costuma **falhar** se a ulna continuar curva. Por isso, o tratamento atual da Monteggia crônica inclui:\n- **osteotomia da ulna** (com alongamento e angulação), para restaurar o comprimento e o alinhamento e permitir que a cabeça do rádio volte ao lugar;\n- **redução aberta** da cabeça do rádio, removendo o tecido interposto;\n- reconstrução do ligamento anular **quando necessário**.\n\nOs melhores resultados são obtidos quando a cirurgia é feita **antes** de a cabeça do rádio e o capítulo se deformarem (geralmente nos primeiros anos após a lesão).",
+  "correta": "**Correta: B (tríceps braquial).** No procedimento de Bell-Tawse para a lesão de Monteggia crônica, o ligamento anular é reconstruído com uma tira da **porção lateral do tendão do tríceps**, mantida presa ao olécrano e passada ao redor do colo do rádio.",
   "incorretas": {
-   "A": "O bíceps braquial não é usado nessa técnica.",
-   "C": "O braquial anterior não é usado nessa técnica.",
-   "D": "O extensor longo dos dedos não é usado nessa técnica."
+   "A": "O **bíceps braquial** insere-se na tuberosidade do rádio e não é usado na reconstrução do ligamento anular de Bell-Tawse.",
+   "C": "O **braquial** insere-se no processo coronoide e não é a fonte do enxerto de Bell-Tawse.",
+   "D": "O **extensor longo dos dedos** é um músculo da perna, e não do cotovelo."
   },
-  "conceito": "Na **lesão de Monteggia crônica**, a cabeça do rádio fica luxada há semanas ou meses, e o **ligamento anular** está rasgado, retraído ou interposto. Para manter a cabeça reduzida, é preciso **reconstruí-lo**.\n\n**O procedimento de Bell-Tawse**: retira-se uma **tira da aponeurose do tríceps braquial**, solta de cima para baixo e mantida presa à **ulna** proximal. A tira é passada em volta do **colo do rádio** e fixada de volta na ulna, formando um **novo ligamento anular**.\n\n**O que vem junto**: a cabeça só fica reduzida se a **ulna** estiver no comprimento e no alinhamento certos; muitas vezes se faz uma **osteotomia da ulna** (alongamento e angulação) antes da reconstrução.\n\n**Os riscos**: rigidez, reluxação, lesão do **nervo interósseo posterior** e, na criança, alteração do crescimento do colo do rádio se a tira apertar demais.\n\n**Na prova**: o procedimento de Bell-Tawse usa a aponeurose do **tríceps braquial**.",
-  "correta": "Bell-Tawse passa uma tira da aponeurose do tríceps em volta do colo do rádio, formando um novo ligamento anular.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)",
+   "Bell Tawse AJ. The treatment of malunited anterior Monteggia fractures in children. J Bone Joint Surg Br. 1965;47:718-723."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0869": {
@@ -9797,17 +9818,18 @@
   "conferido": false
  },
  "trauma-1083": {
+  "conceito": "**A haste intramedular na tíbia proximal.** As fraturas do **terço proximal** da diáfise da tíbia são as mais difíceis de tratar com haste. A haste \"nada\" no canal largo da metáfise e não guia o alinhamento como na diáfise, e os músculos tendem a desviar os fragmentos.\n\n**As deformidades típicas: valgo e antecurvato (procurvato).**\n- **Valgo**: pela tração do **trato iliotibial** e dos músculos do compartimento anterior, e pelo **ponto de entrada** medial.\n- **Antecurvato** (ápice anterior): pela tração do **tendão patelar** sobre o fragmento proximal com o joelho fletido, e pelo ponto de entrada posterior ou muito distal.\n\n**O ponto de entrada correto.** Na radiografia **AP**, o ponto de entrada deve ficar **alinhado com o eixo do canal**, ou seja, logo **medial à espinha tibial lateral** (no centro ou um pouco lateral). No **perfil**, logo **à frente** da borda anterior do platô, na transição com a cortical anterior.\n\n**Por que a entrada medial causa valgo.** Se a haste entra **medial** demais, ela é direcionada obliquamente para **lateral**. Ao descer, ela empurra o fragmento **distal** para o lado **lateral** e inclina o fragmento proximal: o resultado é a deformidade em **valgo**. Pelo mesmo raciocínio, uma entrada **posterior** ou muito baixa causa **antecurvato**.\n\n**Os truques para acertar o alinhamento.**\n- Ponto de entrada **lateral** (logo medial à espinha lateral) e alto.\n- **Técnica semiestendida** ou **suprapatelar**: com o joelho em pouca flexão, o tendão patelar puxa menos o fragmento proximal.\n- **Parafusos de bloqueio** (de Poller): colocados no fragmento proximal, do lado da **concavidade** da deformidade, estreitando o canal e guiando a haste.\n- **Redução antes da fresagem**, com pinças percutâneas ou uma placa unicortical temporária.\n- Hastes com **parafusos proximais oblíquos** múltiplos.\n\n**As alternativas.** Nas fraturas muito proximais, a **placa** (lateral ou dupla) é uma opção, com vias minimamente invasivas.",
+  "correta": "**Correta: B (valgo).** Na fratura do terço proximal da diáfise da tíbia, um ponto de inserção da haste **excessivamente medial** direciona a haste obliquamente para lateral, empurrando o fragmento distal e produzindo a deformidade em **valgo**. O ponto de entrada correto fica logo medial à espinha tibial lateral.",
   "incorretas": {
-   "A": "O varo resultaria de um ponto de entrada lateral demais.",
-   "C": "A rotação não é a deformidade típica do ponto de entrada medial.",
-   "D": "A rotação medial não é a deformidade causada pelo ponto de entrada."
+   "A": "O **varo** resultaria de um ponto de entrada **lateral** demais, que é raro. A entrada medial causa valgo.",
+   "C": "A **rotação lateral** não é a consequência típica de um ponto de entrada medial; o desvio produzido é angular, no plano coronal.",
+   "D": "A **rotação medial** também não é a deformidade típica do ponto de entrada medial."
   },
-  "conceito": "Na **fratura do terço proximal da diáfise da tíbia**, o fragmento proximal é curto e o canal é largo; a haste intramedular tende a empurrar o fragmento para onde o **ponto de entrada** a dirigir.\n\n**O ponto de entrada excessivamente medial**: a haste entra pelo lado medial e, ao descer, encosta na cortical **lateral** da diáfise; isso empurra o fragmento proximal e abre a fratura em **valgo**.\n\n**As deformidades típicas da tíbia proximal com haste**: **valgo** e **antecurvato** (ápice anterior), favorecidas também pela tração do **ligamento patelar** com o joelho fletido.\n\n**Como evitar**:\n\n**ponto de entrada** um pouco **lateral**, logo medial à espinha tibial lateral no AP;\n\n**técnica suprapatelar**, com o joelho em semiextensão;\n\n**parafusos de bloqueio** (Poller) no lado côncavo;\n\n**placa** auxiliar de redução.\n\n**Na prova**: o ponto de inserção excessivamente medial causa deformidade em **valgo**.",
-  "correta": "A haste entrando medial bate na cortical lateral e abre a fratura proximal em valgo.",
   "referencias": [
-   "Rockwood and Green’s Fractures in adults 8 Ed. 2434 Pg (referência indicada na prova TARO 2018, questão 8)"
+   "Rockwood and Green’s Fractures in adults 8 Ed. 2434 Pg (referência indicada na prova TARO 2018, questão 8)",
+   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-1084": {

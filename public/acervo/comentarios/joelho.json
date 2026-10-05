@@ -2879,18 +2879,21 @@
   "conferido": false
  },
  "joelho-0236": {
+  "conceito": "**Os testes de estresse em varo e em valgo.** Avaliam os **ligamentos colaterais** e as estruturas que os ajudam. A posição do joelho muda o que está sendo testado.\n\n**O teste em adução (varo).** O examinador aplica uma força que **abre o lado lateral** do joelho (empurra o joelho para fora com o tornozelo para dentro).\n\n| Flexão do joelho | Estrutura testada |\n|---|---|\n| **30°** | O **ligamento colateral lateral (LCL)** de forma **isolada**: a cápsula posterior e os cruzados ficam relaxados |\n| **0°** (extensão completa) | O LCL **e** as estruturas posterolaterais (cápsula, canto posterolateral) e os **cruzados** |\n\n**A lógica da flexão de 30°.** Em **extensão completa**, a **cápsula posterior** e os **cruzados** ficam tensos e também resistem ao varo. Mesmo com o LCL rompido, o joelho pode parecer estável em extensão. A **30° de flexão**, essas estruturas relaxam, e o teste isola o **ligamento colateral**.\n\n**Interpretando o resultado.**\n- **Abertura apenas a 30°**: lesão **isolada** do colateral.\n- **Abertura também a 0°** (em extensão): lesão **combinada**, com acometimento das estruturas **posterolaterais** e/ou dos **cruzados**. É um sinal de lesão grave, multiligamentar.\n\n**O mesmo raciocínio vale para o teste em valgo (abdução).** A 30°, testa o **ligamento colateral medial** isolado. A 0°, testa também a cápsula **posteromedial** (o ligamento oblíquo posterior) e os cruzados.\n\n**O canto posterolateral.** Inclui o LCL, o **tendão do poplíteo** e o **ligamento popliteofibular**. Os testes específicos são o **dial test** (rotação externa da tíbia a 30° e a 90°), o **teste de recurvato em rotação externa** e o **pivot shift reverso**.\n\n**A graduação da abertura.** Grau I: até 5 mm; grau II: 5 a 10 mm; grau III: mais de 10 mm, sem ponto final firme.",
+  "correta": "**Provável correta: A (lateral isolado).** O teste de estresse em adução (varo) com o joelho a **30° de flexão** avalia o **ligamento colateral lateral isolado**, porque nessa posição a cápsula posterior e os cruzados ficam relaxados. Em extensão completa, o teste também avalia a cápsula posterolateral e os cruzados.",
+  "incorretas": {
+   "B": "O ligamento colateral **medial** é avaliado pelo estresse em **abdução** (valgo), e não em adução.",
+   "C": "A **cápsula posterolateral** é avaliada pelo teste em adução com o joelho em **extensão completa** (0°), e não a 30°.",
+   "D": "O ligamento colateral medial e a cápsula posteromedial são avaliados pelo estresse em **valgo** em extensão."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
+   "Hoppenfeld S. Propedêutica Ortopédica: Coluna e Extremidades. Atheneu."
+  ],
   "alerta": "Não localizamos o gabarito oficial desta questão, que por isso não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia de exame físico do joelho.",
   "provavel": "A",
-  "conceito": "**Adução é estresse em varo.** O teste de estresse em adução abre o **compartimento lateral** e, portanto, avalia o **ligamento colateral lateral**. O que muda a interpretação é a flexão do joelho.\n\n**Com 30 graus de flexão**, a cápsula posterior e as estruturas posterolaterais ficam frouxas, e o teste isola o **colateral lateral**. **Em extensão completa**, essas estruturas ficam tensas; se ainda assim o joelho abrir em varo, a lesão envolve também a cápsula posterolateral e, muitas vezes, os cruzados. O raciocínio é espelhado no lado medial, com o estresse em abdução (valgo).\n\n**Na prova:** varo a 30 graus testa o **colateral lateral isolado**; abertura em extensão indica lesão associada da cápsula posterolateral.",
-  "correta": "**Colateral lateral isolado.** Aos 30 graus de flexão, a cápsula posterolateral relaxa, e a abertura em varo reflete o colateral lateral.",
-  "incorretas": {
-   "B": "**Lado errado.** O estresse em adução (varo) abre o lado lateral; o colateral medial é testado em abdução.",
-   "C": "**É o teste em extensão.** A cápsula posterolateral entra na interpretação quando o joelho abre em varo com extensão completa.",
-   "D": "**Lado errado.** Colateral medial e cápsula posteromedial são avaliados em abdução (valgo)."
-  },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "joelho-0237": {
   "incorretas": {
@@ -3962,17 +3965,18 @@
   "conferido": false
  },
  "joelho-0314": {
+  "conceito": "**O princípio da banda de tensão.** Quando um osso é carregado de forma **excêntrica** (fora do seu eixo), uma face fica sob **tração** (o lado de **tensão**) e a outra sob **compressão**. Se uma estrutura resistente for colocada no **lado de tensão**, ela **neutraliza** a tração e transforma a força em **compressão** no foco da fratura. É como amarrar a corda de um arco.\n\n**Na patela.** Com o joelho em **flexão**, o quadríceps e o tendão patelar puxam a patela, que se apoia contra o fêmur pela sua face **articular** (posterior). A face **anterior** (cortical anterior) fica sob **tração** (o lado de **tensão**), e a face articular (posterior) fica sob **compressão**.\n\n**A montagem da banda de tensão.**\n- **Dois fios de Kirschner** paralelos, longitudinais, atravessando os fragmentos, a cerca de **5 mm da face anterior** (no terço anterior da espessura). Eles **alinham** e mantêm a redução e servem de **ancoragem** para o fio de cerclagem.\n- Um **fio de cerclagem** (aço) em **forma de 8** passado por **trás** das pontas dos fios de Kirschner (junto ao osso, nos tendões do quadríceps e patelar) e cruzado sobre a **face anterior** da patela.\n\n**O que fica no lado de tensão.** O **fio de cerclagem** na **face anterior** é o elemento de banda de tensão. Com a flexão do joelho, ele transforma a tração em **compressão** no foco, sobretudo na superfície articular.\n\n**Por que a afirmação está errada.** O lado de tensão da patela é a face **anterior**, e não a posterior. A face **posterior** (articular) é o lado de **compressão**. Os fios de Kirschner ficam perto da face **anterior**, e o fio de cerclagem passa sobre essa face.\n\n**As variações.** Parafusos **canulados** no lugar dos fios de Kirschner, com o fio de cerclagem passado por dentro deles (mais resistentes). Nas fraturas cominutivas, placas de baixo perfil ou patelectomia parcial.\n\n**As complicações.** **Dor** e **irritação** pelo material (a mais comum, com frequente retirada), migração dos fios, perda da redução e artrose femoropatelar.",
+  "correta": "**Provável correta: B (Errado).** Na banda de tensão da patela, o lado de **tensão** é a face **anterior**, e não a posterior. Os fios de Kirschner ficam perto da face anterior, e o fio de cerclagem em 8 passa sobre essa face, transformando a tração em compressão na superfície articular (posterior).",
   "incorretas": {
-   "A": "**Certo seria trocar “posterior” por “anterior”.** A face anterior recebe a tração que a montagem procura neutralizar durante a flexão do joelho."
+   "A": "A face **posterior** (articular) da patela é o lado de **compressão**. O lado de tensão, onde fica a banda, é a face **anterior**."
   },
-  "conceito": "**Princípio da banda de tensão.** Na fratura transversa da patela, a força do quadríceps tende a abrir a face anterior durante a flexão. A banda metálica em oito fica anteriormente e busca converter essa tração em compressão no foco da fratura e na superfície articular posterior.\n\n**Posição dos fios.** Dois fios de Kirschner atravessam os fragmentos longitudinalmente, mantendo redução e servindo de apoio ao cerclagem. Eles são introduzidos dentro da patela, próximos à cortical anterior, sem penetrar a cartilagem da face articular posterior. O fio em oito percorre a superfície anterior, que é o lado de tensão.\n\n**Risco da frase.** Colocar fios na cortical posterior significa aproximá-los da cartilagem femoropatelar e pode causar penetração articular ou lesão condral. A redução da face posterior precisa ser verificada, mas isso não a transforma no local da banda de tensão.",
-  "correta": "**Errado: o lado de tensão é anterior.** A banda em oito e os fios de suporte ficam na região anterior da patela, preservando a superfície articular posterior.",
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "referencias": [
-   "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 3ª edição, vol. 2, p. 1734."
+   "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 3ª edição, vol. 2, p. 1734.",
+   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)"
   ],
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "B",
-  "geradoEm": "2026-10-01",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "joelho-0315": {
