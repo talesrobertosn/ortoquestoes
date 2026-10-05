@@ -1005,14 +1005,18 @@
   "conferido": false
  },
  "mao-0087": {
-  "conceito": "### Teste de Phalen\n- Dorsos das mãos encostados, **punhos em flexão máxima**, cotovelos afastados.\n- Tempo: ==60 segundos==.\n- Positivo: parestesia no território do mediano.\n- Quanto **mais rápido** surge o sintoma, maior tende a ser a compressão.\n\n### Tempos dos testes\n| Teste | Tempo |\n|---|---|\n| ==Phalen== | ==60 s== |\n| Phalen reverso (punhos em extensão) | 60 s |\n| ==Durkan== (compressão carpal) | ==30 s== |\n| elevação da mão | 2 minutos |\n| flexão do cotovelo (túnel cubital) | 60 s |\n| Roos (desfiladeiro) | 3 minutos |\n\n### Por que 60 segundos\n- Casos iniciais levam quase um minuto para manifestar parestesia.\n- Tempos menores geram **falso negativo**.\n\n> **Na prova:** Phalen = ==60 segundos==.",
-  "correta": "**60 segundos.**\n- É o tempo padrão do Phalen.\n- Tempos menores perdem casos iniciais.",
+  "conceito": "**O teste da figura.** As mãos estão unidas pelo dorso, com os **punhos em flexão máxima** e os cotovelos afastados, os antebraços na horizontal. É o **teste de Phalen**, descrito por George Phalen para a síndrome do túnel do carpo.\n\n**O mecanismo.** O túnel do carpo é um canal inextensível: o assoalho e as paredes são os ossos do carpo, e o teto é o retináculo dos flexores (ligamento transverso do carpo). Dentro dele passam o nervo mediano e nove tendões flexores. Com o punho em flexão:\n- a **pressão dentro do túnel aumenta** várias vezes em relação à posição neutra;\n- o retináculo e os tendões flexores comprimem o nervo contra a borda proximal do retináculo.\n\nUm nervo já comprometido, com microcirculação prejudicada, responde a esse aumento de pressão com **parestesia** no seu território (polegar, indicador, médio e metade radial do anular).\n\n**A técnica.** Manter a posição por **60 segundos**. O teste é positivo se surgirem dormência ou formigamento no território do mediano. Quanto mais cedo surge o sintoma, maior tende a ser a compressão.\n\n**Tempos dos testes provocativos do túnel do carpo.**\n\n| Teste | Manobra | Tempo |\n|---|---|---|\n| **Phalen** | Flexão máxima dos punhos | **60 s** |\n| Phalen reverso | Extensão máxima dos punhos (mãos em posição de prece) | 60 s |\n| Durkan | Compressão direta sobre o túnel com o polegar | 30 s |\n| Tinel | Percussão sobre o mediano no punho | Imediato |\n\n**Valor diagnóstico.** O Phalen tem sensibilidade e especificidade moderadas, e o teste de compressão de Durkan costuma ser o mais sensível. Nenhum teste isolado basta: o diagnóstico é clínico, apoiado na eletroneuromiografia nos casos duvidosos ou antes da cirurgia.",
+  "correta": "**Correta: D (60 segundos).** O teste de Phalen deve ser mantido por 60 segundos. A flexão máxima do punho eleva a pressão no túnel do carpo, e o surgimento de parestesia no território do mediano nesse intervalo indica teste positivo.",
   "incorretas": {
-   "A": "**Curto demais.**\n- Muitos pacientes só referem parestesia depois de 15 s.",
-   "B": "**Também curto.**\n- 20 s ainda produz falso negativo.",
-   "C": "**Tempo do Durkan.**\n- 30 s é o tempo da compressão carpal."
+   "A": "**15 segundos** é pouco tempo; muitos pacientes com compressão leve ou moderada só desenvolvem sintomas depois, e o teste seria falsamente negativo.",
+   "B": "**20 segundos** também é insuficiente pelo mesmo motivo. Não corresponde à descrição padronizada do teste.",
+   "C": "**30 segundos** é o tempo do **teste de compressão de Durkan**, não do Phalen."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Phalen GS. The carpal-tunnel syndrome. Seventeen years' experience in diagnosis and treatment of six hundred fifty-four hands. J Bone Joint Surg Am. 1966;48(2):211-228.",
+   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0088": {
@@ -1961,14 +1965,18 @@
   "conferido": false
  },
  "mao-0172": {
-  "conceito": "### Via de Thompson: camadas\n1. **Superficial:** intervalo entre ==ERCC (A)== (radial) e extensor comum dos dedos (ulnar).\n2. **Profundo:** ==supinador (B)== sobre o terço proximal do rádio; distalmente, abdutor longo e extensor curto do polegar cruzando o rádio.\n3. **Nervo interósseo posterior** atravessa o supinador.\n\n### Proteção do NIP\n- Identificá-lo antes de descolar.\n- **Supinar** o antebraço e desinserir o supinador da borda anterior do rádio.\n\n### Via de Henry (comparação)\n- Superficial: braquiorradial × FRC/pronador redondo.\n- Profundo proximal: supinador (antebraço supinado), pronador redondo no terço médio.\n\n> **Na prova:** A = ==ERCC==; B = ==supinador==.",
-  "correta": "**ERCC e supinador.**\n- A é a margem radial do intervalo de Thompson.\n- B é o supinador, no fundo, sobre o colo do rádio.",
+  "conceito": "**A via de Thompson.** É o acesso dorsal (posterior) à diáfise do rádio, usado sobretudo para os terços proximal e médio. A incisão segue uma linha do epicôndilo lateral até o tubérculo de Lister, com o antebraço em pronação.\n\n**Camada superficial: o intervalo internervoso.** Desenvolve-se o plano entre o **extensor radial curto do carpo** (ERCC), inervado pelo nervo radial antes da sua divisão (ou pelo ramo profundo), e o **extensor comum dos dedos**, inervado pelo nervo interósseo posterior. Na figura, a letra **A** marca o ERCC, o ventre muscular que limita o campo do lado radial.\n\n**Camada profunda.** Afastados os dois ventres superficiais, aparecem:\n- no terço proximal, o **supinador** (letra **B** na figura), que envolve o colo e o terço proximal do rádio;\n- no terço médio, o abdutor longo e o extensor curto do polegar, que cruzam obliquamente o rádio e podem ser afastados ou mobilizados.\n\n**O nervo interósseo posterior (NIP).** É o grande risco desse acesso. Ele atravessa o supinador entre suas duas cabeças, sob a **arcada de Frohse**, e emerge na borda distal do músculo, cerca de 1 cm proximal a ela. Na figura, os ramos nervosos amarelos saem justamente da borda do músculo B.\n\n**Como proteger o NIP.**\n1. **Identificar o nervo** na borda distal do supinador antes de descolar o músculo e segui-lo proximalmente.\n2. **Supinar o antebraço**: isso desloca a inserção do supinador para anterior e afasta o nervo do campo.\n3. Descolar o supinador da sua inserção no rádio de anterior para posterior, como uma peça única, levando o nervo junto e protegido dentro do músculo.\n4. Evitar afastadores apoiados no colo do rádio.\n\n**Comparação com a via de Henry.** A via anterior de Henry (entre braquiorradial e flexor radial do carpo distalmente, ou pronador redondo proximalmente) expõe toda a diáfise e é preferida para o terço distal, onde a superfície volar é plana e boa para placas.",
+  "correta": "**Correta: C (extensor radial curto do carpo e supinador).** Na via de Thompson, **A** é o ERCC, que forma a borda radial do intervalo superficial com o extensor comum dos dedos, e **B** é o supinador, que cobre o terço proximal do rádio e é atravessado pelo nervo interósseo posterior.",
   "incorretas": {
-   "A": "**A errada.**\n- O extensor dos dedos é a margem ulnar.",
-   "B": "**Os dois errados.**\n- O pronador redondo é da via de Henry.",
-   "D": "**B errada.**\n- No assoalho está o supinador, não o pronador."
+   "A": "O **extensor comum dos dedos** forma a outra borda do intervalo, do lado ulnar. A estrutura apontada por A, no lado radial do campo, é o ERCC.",
+   "B": "Erra as duas estruturas. O **pronador redondo** pertence ao compartimento anterior e é encontrado na via de Henry, não na dorsal.",
+   "D": "Acerta o ERCC, mas troca o supinador pelo **pronador redondo**, que não aparece no campo da via dorsal."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Hoppenfeld S, deBoer P, Buckley R. Surgical Exposures in Orthopaedics: The Anatomic Approach, 4ª edição. Lippincott Williams & Wilkins, 2009.",
+   "Thompson JE. Anatomical methods of approach in operations on the long bones of the extremities. Ann Surg. 1918;68(3):309-329."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0173": {
@@ -7581,17 +7589,17 @@
   "conferido": false
  },
  "mao-0693": {
-  "conceito": "**A diurese é o melhor marcador prático de que a reposição do queimado está adequada.** Sonda vesical é obrigatória nas queimaduras extensas, e o débito é conferido a cada hora.\n\n**Metas de diurese (ATLS):**\n\n| Paciente | Meta |\n|---|---|\n| Adulto, queimadura térmica | **0,5 mL/kg/h** (cerca de 30 a 50 mL/h) |\n| Criança até cerca de 30 kg | 1 mL/kg/h |\n| Queimadura elétrica com mioglobinúria | 1 a 1,5 mL/kg/h até a urina clarear |\n\nDiurese acima da meta indica excesso de volume: o queimado sobrecarregado desenvolve edema, síndrome compartimental (abdominal e de membros) e piora respiratória. Por isso se reduz a taxa quando a diurese passa da meta, em vez de manter o volume calculado.",
-  "correta": "**0,5 mL/kg/h.** É a meta de diurese para o adulto com queimadura térmica.",
+  "conceito": "**Por que o queimado precisa de tanto volume.** Na queimadura extensa, a lesão térmica e os mediadores inflamatórios aumentam a permeabilidade capilar em todo o organismo, não só na área queimada. Plasma escapa para o interstício, formando edema maciço, e o volume intravascular cai. Sem reposição, instala-se o **choque do queimado**, com hipoperfusão renal e insuficiência de órgãos. O pico da perda ocorre nas primeiras 8 a 24 horas.\n\n**A reposição inicial (ATLS).** Para queimaduras de segundo e terceiro graus acima de cerca de 20% da superfície corporal:\n- solução cristaloide isotônica, preferencialmente **Ringer lactato**;\n- volume inicial estimado em **2 mL × peso (kg) × % de superfície queimada** no adulto com queimadura térmica (3 mL na criança e 4 mL na queimadura elétrica);\n- **metade nas primeiras 8 horas** contadas a partir da hora da queimadura, e a outra metade nas 16 horas seguintes.\n\n**A fórmula é só o ponto de partida.** O volume é ajustado hora a hora pela **diurese**, o melhor indicador prático da perfusão. Por isso a sonda vesical é obrigatória.\n\n| Paciente | Meta de diurese |\n|---|---|\n| **Adulto, queimadura térmica** | **0,5 mL/kg/h** (cerca de 30 a 50 mL/h) |\n| Criança com menos de 30 kg | 1 mL/kg/h |\n| Queimadura elétrica com mioglobinúria | 1 a 1,5 mL/kg/h até a urina clarear |\n\n**Risco do excesso.** A ressuscitação exagerada (fluid creep) é tão perigosa quanto a insuficiente: causa síndrome compartimental abdominal e dos membros, edema pulmonar e aprofundamento das queimaduras. Se a diurese está acima da meta, a infusão deve ser reduzida.",
+  "correta": "**Correta: D (0,5 mL/kg/h).** No adulto vítima de queimadura térmica, o ATLS recomenda ajustar a infusão de cristaloide para manter diurese de 0,5 mL/kg/h, cerca de 30 a 50 mL/h.",
   "incorretas": {
-   "A": "4 mL/kg/h é excessivo e indicaria sobrecarga de volume.",
-   "B": "2 mL/kg/h está acima de qualquer meta recomendada e sugere reposição exagerada.",
-   "C": "0,25 mL/kg/h é oligúria: indica reposição insuficiente e risco de lesão renal."
+   "A": "**4 mL/kg/h** seria um débito excessivo, sinal de reposição exagerada, com risco de síndrome compartimental e edema pulmonar. O número 4 aparece na fórmula de volume da queimadura elétrica (4 mL/kg/% SCQ), não na meta de diurese.",
+   "B": "**2 mL/kg/h** também é excessivo. O número 2 corresponde ao fator da fórmula de volume inicial no adulto com queimadura térmica, não à meta de diurese.",
+   "C": "**0,25 mL/kg/h** indica oligúria, sinal de reposição insuficiente e hipoperfusão renal."
   },
   "referencias": [
    "American College of Surgeons. Advanced Trauma Life Support (ATLS). 11ª ed. Chicago: ACS; 2025. Capítulo de lesões térmicas."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0694": {
