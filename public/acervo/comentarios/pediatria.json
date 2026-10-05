@@ -422,18 +422,19 @@
   "conferido": false
  },
  "pediatria-0029": {
+  "conceito": "**A epifisiólise proximal do fêmur (EPF).** É o escorregamento da **epífise** femoral proximal em relação ao colo, através da fise, no adolescente. Na verdade, a **epífise fica no acetábulo**, e é o **colo** que se desloca para **cima**, para a **frente** e em **rotação externa**. Na radiografia, parece que a cabeça escorregou para **trás e para baixo**.\n\n**Os ângulos alterados.**\n\n| Parâmetro | Normal | Na epifisiólise |\n|---|---|---|\n| **Ângulo cefalodiafisário** (cabeça-diáfise) | Cerca de 130 a 145° | **Diminuído** (a cabeça escorrega para baixo: **varo**) |\n| **Anteversão** femoral | Cerca de 10 a 20° no adolescente | **Diminuída**, chegando à **retroversão** (a cabeça escorrega para trás) |\n| Ângulo de Southwick (cabeça-diáfise no perfil) | Cerca de 10 a 12° | Aumentado: mede a gravidade (leve, até 30° a mais; moderado, 30 a 50°; grave, mais de 50°) |\n\n**Por que diminuem.** A epífise escorrega para **posterior** e **inferior**. O deslocamento **inferior** fecha o ângulo entre a cabeça e a diáfise (**varo**, ângulo cefalodiafisário **diminuído**). O deslocamento **posterior** leva a cabeça para trás em relação ao colo, **diminuindo a anteversão** (o colo fica relativamente retrovertido).\n\n**A retroversão também é um fator de risco.** Estudos mostram que os adolescentes com EPF já tinham, antes do escorregamento, uma **anteversão menor** (retroversão relativa), que aumenta as forças de cisalhamento sobre a fise. Isso, somado à **obesidade**, ajuda a explicar a doença.\n\n**As consequências clínicas.**\n- O paciente anda com o membro em **rotação externa**, e, ao fletir o quadril, a coxa **gira para fora** (sinal de **Drehmann**).\n- Perda da **rotação interna**, da flexão e da abdução.\n- A deformidade residual (cabeça para trás e colo proeminente) causa **impacto femoroacetabular** do tipo CAME e artrose precoce.\n\n**O tratamento.** Fixação **in situ** com parafuso canulado central nas formas estáveis. Nas deformidades graves, osteotomias (subcapital pela luxação cirúrgica, intertrocantérica de Imhäuser) ou osteoplastia para o impacto.",
+  "correta": "**Correta: A (diminuído e a anteversão diminuída).** Na epifisiólise, a epífise escorrega para **baixo** e para **trás** em relação ao colo. O deslocamento inferior **diminui o ângulo cefalodiafisário** (varo), e o posterior **diminui a anteversão** (retroversão relativa).",
   "incorretas": {
-   "B": "O ângulo diminuído está certo, mas a anteversão também é diminuída.",
-   "C": "A anteversão diminuída está certa, mas o ângulo cervicodiafisário também é diminuído.",
-   "D": "Os dois estão diminuídos, não aumentados."
+   "B": "O ângulo cefalodiafisário está diminuído, mas a anteversão também **diminui**, pelo deslocamento posterior da cabeça.",
+   "C": "O ângulo cefalodiafisário **diminui** (varo), e não aumenta.",
+   "D": "Os dois ângulos **diminuem** na epifisiólise."
   },
-  "conceito": "A **epifisiólise proximal do fêmur** é o escorregamento da cabeça do fêmur sobre o colo, através da fise, no adolescente. A cabeça desliza para **posterior e inferior**.\n\n**Os fatores mecânicos**, que aumentam o cisalhamento na fise:\n\n**obesidade**: o principal;\n\n**menor ângulo cervicodiafisário** (coxa vara relativa);\n\n**menor anteversão do colo** (retroversão relativa);\n\nfise mais **oblíqua** e o estirão de crescimento.\n\n**Os fatores endócrinos**: hipotireoidismo, deficiência ou uso de hormônio de crescimento, hipogonadismo, osteodistrofia renal e radioterapia. Investigar (TSH e outros) em crianças com **menos de 10 anos**, baixa estatura ou doença bilateral.\n\n**As classificações**:\n\n**Loder (estabilidade)**: **estável** (a criança anda) e **instável** (não anda, mesmo de muletas), com risco de necrose de até cerca de 50%;\n\n**Southwick (ângulo)**: leve, moderada e grave.\n\n**O tratamento**: **fixação in situ** com um parafuso canulado central; fixação profilática do outro lado em menores de 10 anos e nas doenças endócrinas.\n\n**Na prova**: epifisiólise = ângulo cervicodiafisário **diminuído** e anteversão **diminuída**.",
-  "correta": "A coxa vara relativa e a retroversão relativa aumentam o cisalhamento na fise e predispõem à epifisiólise.",
   "referencias": [
    "Three-dimensional analysis of the proximal femur in patients with slipped capital femoral epiphysis. https://pubmed.ncbi.nlm.nih.gov/11242246/",
-   "The Epidemiology and Demographics of Slipped Capital Femoral Epiphysis. https://pmc.ncbi.nlm.nih.gov/articles/PMC4063129/"
+   "The Epidemiology and Demographics of Slipped Capital Femoral Epiphysis. https://pmc.ncbi.nlm.nih.gov/articles/PMC4063129/",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0030": {
@@ -2419,19 +2420,19 @@
   "conferido": false
  },
  "pediatria-0169": {
+  "conceito": "**A luxação congênita do joelho.** É rara. O recém-nascido nasce com o joelho em **hiperextensão** (recurvato), às vezes com o pé encostando na face. O espectro vai de uma simples hiperextensão até a **luxação anterior** completa da tíbia sobre o fêmur.\n\n**A classificação em graus.**\n\n| Grau | Situação |\n|---|---|\n| 1 | **Hiperextensão** (recurvato) simples; flexão passiva possível |\n| 2 | **Subluxação** anterior da tíbia |\n| 3 | **Luxação** completa: tíbia à frente do fêmur, sem contato articular |\n\n**O que mantém o joelho em hiperextensão.**\n- O **quadríceps** está **encurtado e fibrótico**, às vezes aderido ao fêmur. É a principal estrutura que impede a flexão.\n- A **cápsula anterior** está contraída.\n- Os **isquiotibiais** se **deslocam para a frente** do eixo de rotação do joelho, passando a funcionar como **extensores**, o que piora a deformidade.\n- O **LCA** pode ser hipoplásico ou ausente.\n\n**As causas.** Posição intrauterina (apresentação pélvica com as pernas estendidas, oligoâmnio), **frouxidão ligamentar** e síndromes (**Larsen**, artrogripose, mielomeningocele).\n\n**As associações: examine o quadril e os pés.**\n- **Displasia do desenvolvimento do quadril**: muito frequente, em boa parte dos casos.\n- **Pé torto** congênito ou pé calcaneovalgo.\n- Luxação do cotovelo, na síndrome de Larsen.\n\n**O tratamento.** Começa logo após o nascimento.\n1. **Manipulação e gessos seriados** em flexão progressiva, ou suspensório de Pavlik nos graus leves. Os graus 1 e 2 costumam responder.\n2. Se a flexão não ultrapassar cerca de **30 a 90°** em algumas semanas, ou no grau 3: **quadricepsplastia** (alongamento em V-Y do quadríceps) com liberação capsular anterior, idealmente nos primeiros meses de vida.\n3. **A ordem importa**: o **joelho é tratado antes do quadril**. O suspensório de Pavlik para a DDQ exige um joelho que flexione, porque os isquiotibiais tensos em extensão impedem a flexão do quadril.\n\nO prognóstico é bom nos graus leves tratados cedo. É pior nas formas sindrômicas, como a artrogripose e a síndrome de Larsen.",
+  "correta": "**Correta: C (a manipulação e alongamentos).** Na luxação congênita do joelho em hiperextensão, o tratamento inicial no recém-nascido é a **manipulação** com alongamentos progressivos em flexão, seguidos de gessos seriados ou suspensório de Pavlik. A quadricepsplastia fica para os casos que não respondem.",
   "incorretas": {
-   "A": "Esperar deixa o quadríceps fibrosar e encurtar mais; o tratamento começa logo.",
-   "B": "A tração cutânea não flexiona o joelho e não é o tratamento padrão.",
-   "D": "O alongamento cirúrgico do quadríceps fica para o joelho irredutível ou após falha do conservador."
+   "A": "O tratamento **expectante** deixa o quadríceps e a cápsula se contraírem cada vez mais. O tratamento deve começar logo após o nascimento.",
+   "B": "A **tração cutânea** não é o tratamento padrão da luxação congênita do joelho no recém-nascido.",
+   "D": "A **liberação cirúrgica** (quadricepsplastia) é indicada quando a manipulação e os gessos falham, e não como tratamento inicial."
   },
-  "conceito": "A **luxação congênita do joelho** é o joelho em **hiperextensão** ao nascer, a ponto de o pé quase tocar o rosto. O **quadríceps é fibrótico e encurtado**, a bolsa suprapatelar é obliterada e os isquiotibiais ficam subluxados para a frente.\n\n**Os graus**:\n\n**1**: hiperextensão simples (recurvato);\n\n**2**: subluxação anterior da tíbia;\n\n**3**: luxação completa.\n\n**As associações**: **displasia do quadril** em até metade dos casos, pé torto, síndrome de Larsen, artrogripose e mielomeningocele.\n\n**O tratamento inicial, no recém-nascido**: **manipulação e alongamentos**, seguidos de **gessos seriados** em flexão progressiva, ou suspensório de Pavlik nos casos leves. Quanto antes começar, melhor responde, porque o quadríceps encurta mais com o tempo.\n\n**Se não reduzir** ou o tratamento falhar: **alongamento do quadríceps** (em V-Y) com capsulotomia anterior.\n\n**Com displasia do quadril associada**: tratar o **joelho primeiro**, porque o Pavlik exige o joelho fletido.\n\n**Na prova**: o tratamento inicial no recém-nascido é **manipulação e alongamentos**.",
-  "correta": "No recém-nascido, a luxação congênita do joelho começa com manipulação e alongamentos, seguidos de gessos em flexão progressiva.",
   "referencias": [
    "https://posna.org/physician-education/study-guide/congenital-knee-dislocation",
    "https://www.jposna.org/~jposna/index.php/jposna/article/view/272",
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 18"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0170": {
@@ -2963,14 +2964,18 @@
   "conferido": false
  },
  "pediatria-0240": {
+  "conceito": "**A displasia do desenvolvimento do quadril (DDQ) e as partes moles.** Quando a cabeça femoral sai do acetábulo, ela se desloca para **cima e para trás** (posterossuperior), sobre o ilíaco. Com o tempo, as partes moles se **adaptam** à nova posição, e várias delas passam a **impedir a redução**.\n\n**As estruturas que se contraem e bloqueiam a redução.**\n\n| Estrutura | Como bloqueia |\n|---|---|\n| **Adutores** (sobretudo o adutor longo) | Ficam **encurtados e tensos**: limitam a **abdução** e impedem a cabeça de descer ao acetábulo |\n| **Iliopsoas** | Seu tendão cruza a frente da cápsula e a **estrangula** (forma de ampulheta) |\n| Cápsula | Alongada, com uma constrição em \"ampulheta\" |\n| **Lábio** invertido (limbo) | Pode se interpor dentro do acetábulo |\n| **Ligamento redondo** hipertrofiado e **pulvinar** (gordura) | Ocupam o fundo do acetábulo |\n| **Ligamento transverso** do acetábulo | Contraído, estreita a entrada inferior |\n\n**A tensão dos adutores.** É o achado **clínico** mais importante da luxação estabelecida: a **limitação da abdução** do quadril em flexão. Depois dos 3 meses, quando as manobras de Ortolani e Barlow deixam de funcionar (o quadril não reduz mais), a **abdução limitada** e assimétrica é o principal sinal da DDQ. Outros sinais: **encurtamento** da coxa (sinal de **Galeazzi**: o joelho do lado luxado fica mais baixo), pregas assimétricas e, depois da marcha, **claudicação** e marcha de Trendelenburg.\n\n**As implicações no tratamento.**\n- Na **redução fechada** (geralmente de 6 a 18 meses), faz-se a **tenotomia dos adutores** para permitir uma abdução segura, sem forçar a cabeça contra o acetábulo (que causaria necrose avascular).\n- O gesso pelvipodálico é feito na posição \"**humana**\" de Salter (flexão de cerca de 100° e abdução moderada, dentro da zona segura de Ramsey).\n- Se a redução fechada falhar, faz-se a **redução aberta**, removendo o iliopsoas, o lábio invertido, o ligamento redondo e o pulvinar, e liberando o ligamento transverso.\n\n**Os abdutores e os rotadores** ficam, ao contrário, **encurtados e enfraquecidos** pela subida do trocanter, sem gerar tensão que impeça a redução. Por isso, a criança com luxação desenvolve a marcha de Trendelenburg.",
+  "correta": "**Correta: A (adutores).** Na DDQ que evolui com luxação posterossuperior, o grupo muscular que fica **tenso** e encurtado é o dos **adutores**, o que limita a abdução do quadril (o principal sinal clínico após os 3 meses) e dificulta a redução. Por isso, a tenotomia dos adutores faz parte da redução fechada.",
   "incorretas": {
-   "B": "Os abdutores ficam frouxos e fracos, porque o trocanter sobe; não ficam tensos.",
-   "C": "Os rotadores mediais não são o grupo tenso característico da luxação.",
-   "D": "Os rotadores laterais também não são o grupo característico; o tenso são os adutores."
+   "B": "Os **abdutores** ficam encurtados e **enfraquecidos** pela subida do trocanter, sem tensão que impeça a redução. Isso leva à marcha de Trendelenburg.",
+   "C": "Os **rotadores mediais** não são o grupo tenso característico da luxação congênita do quadril.",
+   "D": "Os **rotadores laterais** também não formam o grupo tenso que limita o movimento e a redução."
   },
-  "conceito": "Na **displasia do desenvolvimento do quadril**, quando a cabeça femoral **luxa** (em geral para **posterossuperior**), o fêmur sobe e fica mais perto da pelve. Os músculos que cruzam o quadril se adaptam a essa nova posição:\n\n**adutores**: ficam **tensos e encurtados**. Isso causa o sinal mais útil depois dos 3 meses: a **limitação da abdução** com quadril e joelho fletidos (sinal de **Hart**);\n\n**iliopsoas**: também encurta e **estrangula a cápsula** em forma de ampulheta, sendo um obstáculo à redução;\n\n**abdutores**: ao contrário, ficam **encurtados em sua distância, mas frouxos e fracos**, porque o trocanter subiu; daí o Trendelenburg na criança que anda.\n\n**Os obstáculos à redução**: extra-articulares (adutores e iliopsoas) e intra-articulares (cápsula constrita, lábio invertido, pulvinar, ligamento redondo alongado, ligamento transverso).\n\n**Por isso o tratamento**: na redução fechada, faz-se muitas vezes a **tenotomia dos adutores**, para permitir a abdução sem pressão excessiva sobre a cabeça e reduzir o risco de necrose.\n\n**Na prova**: a luxação posterior na displasia tensiona os **adutores**.",
-  "correta": "Com a cabeça luxada, os adutores ficam tensos e encurtados, o que limita a abdução.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0241": {
@@ -4346,18 +4351,18 @@
   "conferido": false
  },
  "pediatria-0368": {
+  "conceito": "**O GMFCS.** O **Sistema de Classificação da Função Motora Grossa** (Gross Motor Function Classification System) classifica a criança com paralisia cerebral pelo que ela **faz no dia a dia**, e não pelo melhor desempenho num teste. Tem **cinco níveis**, com descrições por faixa etária (até 2 anos, 2 a 4, 4 a 6, 6 a 12 e 12 a 18 anos). O nível é **estável** ao longo da vida e serve para **prever** a função futura e orientar o tratamento.\n\n**Os cinco níveis (resumo, a partir dos 6 anos).**\n\n| Nível | Mobilidade |\n|---|---|\n| **I** | Anda **sem limitações**; corre e pula, com velocidade e coordenação reduzidas |\n| **II** | Anda **sem dispositivo**, com limitações em terrenos irregulares, rampas, longas distâncias |\n| **III** | Anda **com dispositivo** de apoio manual (andador, muletas); usa cadeira para longas distâncias |\n| **IV** | **Mobilidade limitada**: na maioria dos ambientes, **não anda**; tem autolocomoção, geralmente com **cadeira motorizada** |\n| **V** | **Transportado** em cadeira de rodas; controle de cabeça e tronco muito limitado |\n\n**O nível IV.** A criança **não deambula** de forma funcional, mas tem **alguma independência** de mobilidade: consegue **mobilizar a própria cadeira**, em geral uma cadeira **motorizada**, às vezes uma manual por curtas distâncias. Pode andar curtas distâncias com ajuda física em casa ou na escola.\n\n**A diferença para o nível V.** No nível V, a criança é **totalmente dependente** para se deslocar: precisa ser **empurrada** na cadeira. Mesmo com tecnologia, a autolocomoção é muito limitada.\n\n**A diferença para o nível III.** No nível III, a criança **anda** com andador ou muletas. A cadeira é usada só para longas distâncias.\n\n**Por que o GMFCS importa ao ortopedista.**\n- O **risco de luxação do quadril** cresce com o nível. É quase nulo no nível I, e a incidência de deslocamento do quadril chega a cerca de **90%** no nível V. A vigilância radiográfica do quadril é guiada pelo GMFCS.\n- O risco de **escoliose** também aumenta nos níveis IV e V.\n- Os **objetivos** da cirurgia mudam: nos níveis I a III, melhorar a **marcha**; nos níveis IV e V, garantir **sentar confortável**, higiene e ausência de dor.\n\n**O nível II em detalhe.** A criança **anda na maioria dos ambientes**, mas tem **limitações** em **terrenos irregulares**, rampas, **multidões**, lugares apertados e **longas distâncias**. **Sobe escadas segurando no corrimão** (o que a diferencia do nível I, que sobe sem apoio) e pode usar uma cadeira ou um dispositivo para longas distâncias. Corre e pula com muita dificuldade ou não consegue.",
+  "correta": "**Correta: B (II).** No GMFCS, o nível **II** corresponde à criança que **anda na maioria dos ambientes**, com limitações em terrenos irregulares e longas distâncias, e que **sobe escadas segurando no corrimão**. No nível I, ela anda e sobe escadas sem limitações nem apoio.",
   "incorretas": {
-   "A": "No nível I a criança sobe escadas sem corrimão e anda sem restrições.",
-   "C": "No nível III a criança precisa de dispositivo manual para andar.",
-   "D": "No nível IV a criança usa cadeira de rodas na comunidade."
+   "A": "No nível **I**, a criança anda sem limitações e sobe escadas **sem** precisar do corrimão, correndo e pulando, ainda que com coordenação reduzida.",
+   "C": "No nível **III**, a criança anda com **dispositivo** de apoio manual (andador, muletas) e usa cadeira para longas distâncias.",
+   "D": "No nível **IV**, a criança **não anda** de forma funcional e tem autolocomoção limitada, geralmente com cadeira motorizada."
   },
-  "conceito": "O **GMFCS** (Gross Motor Function Classification System) classifica a mobilidade na **paralisia cerebral** em cinco níveis. Na faixa de 6 a 12 anos, os níveis que andam se separam pela **independência** e pelo uso de **apoios**:\n\n**nível I**: anda sem restrições, dentro e fora de casa; **sobe escadas sem corrimão**; corre e salta, com limitação de velocidade e equilíbrio;\n\n**nível II**: anda **na maioria dos ambientes**, com limitação em longas distâncias, terreno irregular, rampas e lugares cheios; **sobe escadas segurando no corrimão**; tem dificuldade para correr e saltar;\n\n**nível III**: anda com **dispositivo manual** (andador, muletas); sobe escadas com corrimão e ajuda; usa cadeira de rodas para distâncias maiores;\n\n**nível IV**: anda pouco, com ajuda; usa **cadeira de rodas** na comunidade, muitas vezes motorizada;\n\n**nível V**: sem controle de cabeça e tronco; é transportado.\n\n**O uso na ortopedia**: níveis I a III, foco na marcha (análise, cirurgia multinível); níveis IV e V, vigilância do quadril e da coluna.\n\n**Na prova**: anda na maioria dos ambientes e sobe escadas **segurando no corrimão** = **GMFCS II**.",
-  "correta": "No nível II a criança anda sem dispositivo na maioria dos ambientes e precisa do corrimão para subir escadas.",
   "referencias": [
    "Palisano R, Rosenbaum P, Walter S, Russell D, Wood E, Galuppi B. Development and reliability of a system to classify gross motor function in children with cerebral palsy. Dev Med Child Neurol. 1997;39:214-223. PMID: 9183258.",
    "Rosenbaum P et al. Development of the Gross Motor Function Classification System for cerebral palsy. PMID: 18318732."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0369": {
@@ -4420,15 +4425,19 @@
   "conferido": false
  },
  "pediatria-0373": {
+  "conceito": "**A coluna cervical na síndrome de Down.** A síndrome de Down (trissomia do 21) cursa com **frouxidão ligamentar generalizada** e alterações ósseas na junção **craniocervical**. Isso torna a coluna cervical alta mais **instável**.\n\n**A instabilidade atlantoaxial (C1-C2).** O **ligamento transverso** do atlas, que segura o dente do áxis contra o arco anterior de C1, é **frouxo**. O resultado é o aumento do **intervalo atlanto-odontoide** (a distância entre o arco anterior do atlas e o dente).\n\n| Achado | Frequência aproximada |\n|---|---|\n| Instabilidade atlantoaxial **radiográfica** (intervalo acima do normal) | Cerca de **10 a 30%**, conforme o critério (o valor clássico é cerca de 10 a 20%) |\n| Instabilidade **sintomática** (com sinais neurológicos) | Cerca de **1 a 2%** |\n| Instabilidade **occipitocervical** | Também frequente |\n\n**Os valores do intervalo atlanto-odontoide.**\n- Normal na criança: até cerca de **4 a 5 mm**.\n- Instabilidade: **5 mm** ou mais.\n- **Maior que 10 mm**: risco alto de compressão medular.\n\nTambém importa o **espaço disponível para a medula** (a distância entre o dente e o arco posterior do atlas): abaixo de cerca de 14 mm, o risco de mielopatia aumenta.\n\n**Outras alterações associadas.** **Os odontoideum**, hipoplasia do dente, frouxidão occipitocervical, além de luxação da patela, instabilidade do quadril, pé plano e escoliose.\n\n**Os sinais de alerta (mielopatia).** Piora da marcha, quedas, fraqueza, alteração do controle vesical ou intestinal, dor cervical, torcicolo, hiper-reflexia e espasticidade. Qualquer um deles exige investigação **urgente**.\n\n**A conduta.**\n- Rastreamento com radiografias em flexão e extensão é discutido; muitas diretrizes recomendam avaliar os **sintomas** e fazer radiografia antes de esportes de risco ou de anestesia.\n- Pacientes **assintomáticos** com instabilidade leve: orientação e evitar esportes de contato e mergulho.\n- Pacientes **sintomáticos** ou com instabilidade grave: **artrodese C1-C2** (ou occipitocervical), cirurgia com alta taxa de complicações nessa população.\n- Cuidado na **intubação** e no posicionamento durante as anestesias.",
+  "correta": "**Correta: A (10%).** A banca adotou o valor clássico de cerca de **10%** para a instabilidade atlantoaxial radiográfica na síndrome de Down. As séries variam de cerca de 10 a 30%, conforme o critério, e apenas 1 a 2% dos pacientes têm sintomas.",
   "incorretas": {
-   "B": "30% é o limite superior de algumas séries; a banca adotou o valor clássico de 10%.",
-   "C": "50% superestima muito a frequência.",
-   "D": "70% superestima muito a frequência."
+   "B": "Cerca de **30%** é o limite superior das séries com critérios radiográficos mais amplos. O valor clássico adotado pela banca é 10%.",
+   "C": "**50%** superestima a frequência da instabilidade atlantoaxial na síndrome de Down.",
+   "D": "**70%** é muito acima de todas as séries."
   },
-  "conceito": "Na **síndrome de Down**, a **frouxidão ligamentar** generalizada e a hipotonia afetam várias articulações. A mais perigosa é a **coluna cervical alta**.\n\n**A instabilidade atlantoaxial**:\n\n**o que é**: aumento do intervalo entre o atlas e o odontoide (ADI), pela frouxidão do **ligamento transverso**; considera-se alterado acima de cerca de 4,5 a 5 mm;\n\n**frequência**: a referência clássica é de cerca de **10%** dos pacientes, com séries mostrando até 20 a 30% conforme o critério;\n\n**sintomas**: só em cerca de **1 a 2%**, com sinais de mielopatia (piora da marcha, perda de controle esfincteriano, torcicolo, fraqueza).\n\n**Outros achados ortopédicos no Down**: instabilidade occipitocervical, luxação habitual do quadril e displasia tardia, epifisiólise, **instabilidade da patela**, pé plano valgo flexível, hálux valgo e escoliose.\n\n**A conduta**: a radiografia tem pouca correlação com os sintomas, então o rastreio é sobretudo **clínico**. Nos sintomáticos ou com instabilidade importante, artrodese C1-C2. Cuidado com a intubação e com esportes de contato.\n\n**Na prova**: a instabilidade atlanto-odontoide no Down está presente em cerca de **10%**.",
-  "correta": "O valor clássico para a instabilidade atlantoaxial radiográfica na síndrome de Down é de cerca de 10%; sintomática em 1 a 2%.",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn)"
+  ],
   "alerta": "A prevalência da instabilidade atlantoaxial na síndrome de Down varia entre 10 e 30% conforme o critério radiográfico. A banca adotou o valor clássico de 10%.",
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0374": {
@@ -5233,14 +5242,18 @@
   "conferido": false
  },
  "pediatria-0445": {
-  "conceito": "### Distrofia muscular de Duchenne\n- ==Ligada ao X==, meninos; ausência de ==distrofina==.\n- Fraqueza ==proximal== (cintura pélvica primeiro), ==pseudo-hipertrofia das panturrilhas==, ==Gowers== positivo.\n- CPK muito elevada; biópsia/genética.\n\n### Perda da marcha (8 a 12 anos)\n| Fraqueza | Compensação |\n|---|---|\n| ==extensores do quadril== | hiperlordose, tronco atrás do quadril |\n| ==dorsiflexores== | marcha na ponta, equino |\n| quadríceps | joelho travado em extensão |\n\n### Ortopedia\n- Contraturas: equino, flexão do quadril, banda iliotibial.\n- ==Escoliose== após perder a marcha: artrodese precoce (antes da piora respiratória, CVF > 30 a 40%).\n- Corticoide prolonga a marcha e reduz escoliose.\n\n### Becker\n- Distrofina reduzida; mais tardia e branda.\n\n### Sinal de Gowers\n- Para levantar do chão, a criança ==apoia as mãos nas coxas e \"escala\" o próprio corpo==.\n- Traduz fraqueza de ==quadríceps e glúteo máximo== (extensores proximais).\n\n### Outros testes da lista\n| Sinal | Uso |\n|---|---|\n| Ober | contratura da banda iliotibial |\n| Meryon | criança escorrega entre as mãos do examinador ao ser erguida (cintura escapular) |\n\n> **Na prova:** criança que escorrega das mãos ao ser erguida = ==sinal de Meryon==",
-  "correta": "**Meryon.**\n- Fraqueza da cintura escapular.\n- Escorrega entre as mãos do examinador.",
+  "conceito": "**A imagem.** Um examinador tenta **levantar a criança** segurando-a pelas **axilas**. Em vez de ficar firme, a cintura escapular cede, os ombros sobem até as orelhas, e a criança **escorrega** entre as mãos do examinador. Esse é o **sinal de Meryon**.\n\n**Por que acontece.** Normalmente, os músculos da **cintura escapular** (trapézio, serrátil anterior, peitorais, grande dorsal) se contraem e **seguram** o tronco quando a criança é levantada pelas axilas. Na **distrofia muscular de Duchenne**, a fraqueza **proximal** dos membros superiores impede esse travamento, e o tronco \"escorrega\" pelas mãos do examinador.\n\n**A distrofia de Duchenne e os seus sinais.** É a distrofia muscular mais comum da infância, ligada ao **X**, com ausência da **distrofina** e **CPK** muito elevada. A fraqueza é **proximal** e começa pela cintura **pélvica**.\n\n| Sinal | O que mostra |\n|---|---|\n| **Gowers** | Para levantar do chão, a criança \"**escala as próprias pernas**\", empurrando as coxas com as mãos (fraqueza dos extensores do quadril) |\n| **Meryon** | Ao ser levantada pelas **axilas**, a criança **escorrega** entre as mãos do examinador (fraqueza da cintura escapular) |\n| Pseudo-hipertrofia | **Panturrilhas** aumentadas, firmes (substituição por gordura e fibrose) |\n| Marcha | **Anserina** (Trendelenburg bilateral), com **hiperlordose** lombar e na ponta dos pés |\n\n**A evolução.** Os sinais aparecem entre 3 e 5 anos. Sem tratamento, a marcha se perde por volta dos 10 a 12 anos. O uso de **corticoides** prolonga a marcha e retarda a escoliose. Depois, vêm a **escoliose**, a insuficiência respiratória e a cardiomiopatia.\n\n**O papel do ortopedista.**\n- Alongamentos e órteses noturnas para o **equino**.\n- Cirurgia de partes moles em casos selecionados para prolongar a marcha.\n- **Artrodese da coluna** na escoliose progressiva, antes que a função pulmonar caia demais.\n- Prevenção e tratamento das **fraturas** (osteoporose pelos corticoides e pela imobilidade).\n\n**As outras alternativas.** O \"sinal de O'Brien\" é um teste do **ombro** (lesão do lábio superior, SLAP), e \"Weber\" não é um sinal da distrofia de Duchenne.",
+  "correta": "**Correta: C (Meryon).** A imagem mostra o **sinal de Meryon**: ao ser levantada pelas axilas, a criança com distrofia de Duchenne **escorrega** entre as mãos do examinador, pela fraqueza da musculatura da cintura escapular.",
   "incorretas": {
-   "A": "**Weber.**\n- Não é sinal da Duchenne.",
-   "B": "**O'Brien.**\n- Teste de ombro (SLAP).",
-   "D": "**Gowers.**\n- Levantar do chão escalando as coxas."
+   "A": "O nome **Weber** não corresponde a um sinal clássico da distrofia de Duchenne.",
+   "B": "O teste de **O'Brien** é um teste do **ombro** (compressão ativa) para lesões do lábio superior, e não um sinal da Duchenne.",
+   "D": "O sinal de **Gowers** é a criança levantando-se do chão apoiando as mãos nas próprias coxas. A imagem mostra outra manobra, a elevação pelas axilas."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0446": {
@@ -5568,14 +5581,18 @@
   "conferido": false
  },
  "pediatria-0474": {
+  "conceito": "**A periferia da fise.** A placa de crescimento não é só o disco de cartilagem que vemos na radiografia. Na sua **borda**, há duas estruturas que garantem o crescimento em **largura** e a **resistência** mecânica da fise:\n\n| Estrutura | Natureza | Função |\n|---|---|---|\n| **Sulco (zona) de Ranvier** | **Celular**: um sulco em forma de cunha, com células progenitoras (condroblastos e osteoblastos) | Fornece células para o crescimento da fise em **largura** (diâmetro) |\n| **Anel pericondral de LaCroix** | **Fibroso**: anel de tecido conjuntivo denso, contínuo com o **periósteo** da metáfise | **Prende** a **epífise** à **metáfise** e dá **suporte mecânico** à fise, sobretudo na zona hipertrófica |\n\n**O anel de LaCroix.** É uma faixa **fibrosa** que envolve a periferia da fise, como uma cinta. Ela continua o **periósteo** da metáfise e se ancora na epífise, unindo os dois segmentos. Funciona como um **reforço** circunferencial que resiste às forças de cisalhamento e de tração sobre a fise, especialmente na **zona hipertrófica**, a parte mais frágil. Com o crescimento, o anel fica mais fino e menos resistente, o que ajuda a explicar a **epifisiólise** do adolescente.\n\n**As camadas da fise (de epifisária para metafisária).**\n1. Zona de **reserva** (repouso): condrócitos esparsos; fornece células.\n2. Zona **proliferativa**: os condrócitos se dividem e se empilham em colunas; responsável pelo crescimento em **comprimento**.\n3. Zona **hipertrófica**: os condrócitos aumentam de volume, a matriz se calcifica; é a zona **mais fraca**, onde ocorre a maioria das fraturas fisárias e o escorregamento da epifisiólise.\n4. **Esponjosa primária** (metáfise): a cartilagem calcificada é invadida por vasos e substituída por osso.\n\n**A importância clínica.**\n- As lesões da **periferia** da fise (o tipo **VI de Rang**: abrasão, queimaduras, lesões por cortador de grama) atingem o anel pericondral e o sulco de Ranvier, formando uma **barra óssea periférica** e deformidade angular progressiva.\n- O **periósteo** espesso da criança, contínuo com o anel, ajuda a manter as fraturas fisárias estáveis e a reduzi-las.",
+  "correta": "**Correta: C (fibrosa, que prende a epífise à metáfise).** O anel pericondral de LaCroix é uma estrutura **fibrosa**, contínua com o periósteo da metáfise, que circunda a periferia da fise e **prende a epífise à metáfise**, dando suporte mecânico à zona hipertrófica.",
   "incorretas": {
-   "A": "O anel é fibroso, mas não fica só na epífise; circunda a junção da fise com a metáfise.",
-   "B": "O anel não é cartilaginoso e não fica só na epífise.",
-   "D": "O anel prende a epífise à metáfise, mas é fibroso, não cartilaginoso."
+   "A": "O anel é fibroso, mas não fica **dentro** da epífise: ele circunda a periferia da fise, unindo a epífise à metáfise.",
+   "B": "O anel não é **cartilaginoso**, e não se localiza na epífise.",
+   "D": "Ele prende a epífise à metáfise, mas é **fibroso**, e não cartilaginoso. A estrutura celular da periferia é o sulco de Ranvier."
   },
-  "conceito": "A **fise** tem, na sua **periferia**, duas estruturas com funções diferentes:\n\n**zona de Ranvier** (sulco ossificante): um grupo de **células** na borda da fise, que faz a placa crescer **em largura** e fornece células para a camada germinativa;\n\n**anel pericondral de LaCroix**: uma **faixa fibrosa** densa, contínua com o **periósteo** da metáfise, que envolve a junção entre a fise e a metáfise. Ele **prende a epífise à metáfise** e dá **estabilidade mecânica** à fise, resistindo ao cisalhamento.\n\n**Outros elementos que ajudam**: os **processos mamilares** (interdigitações da fise com a metáfise) e o **periósteo** espesso da criança.\n\n**Como lembrar**: **Ranvier** é **celular e cresce**; **LaCroix** é **fibroso e segura**.\n\n**Por que isso importa**: nas fraturas fisárias, o periósteo e o anel de LaCroix muitas vezes ficam parcialmente íntegros de um lado, servindo de dobradiça para a redução. Com a idade, o anel fica mais fino, e a fise do adolescente fica mais vulnerável (como na epifisiólise).\n\n**Na prova**: o anel de LaCroix é uma estrutura **fibrosa** que **prende a epífise à metáfise**.",
-  "correta": "O anel de LaCroix é uma faixa fibrosa, contínua com o periósteo, que prende a epífise à metáfise e estabiliza a fise.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0475": {
@@ -5847,14 +5864,18 @@
   "conferido": false
  },
  "pediatria-0494": {
+  "conceito": "**A sinostose radioulnar congênita.** É a **fusão** do rádio com a ulna, geralmente **proximal**, por falha da separação dos dois ossos durante a vida embrionária (eles começam como um molde cartilaginoso comum). É **bilateral** em cerca de 60% dos casos e pode se associar a síndromes, como as aneuploidias do cromossomo X.\n\n**O quadro clínico.** O antebraço fica **travado em pronação**, sem rotação, com graus variáveis (de neutro a mais de 60° de pronação). A flexão e a extensão do cotovelo costumam ser **normais**. Muitas crianças compensam bem com o ombro e o punho e o diagnóstico é tardio, quando os pais notam que a criança pega objetos com a palma para baixo ou não consegue receber troco na mão.\n\n**Quando operar.** A sinostose **não pode ser desfeita** com bons resultados: a ressecção da ponte óssea quase sempre recidiva. A cirurgia é uma **osteotomia derrotatória**, que muda a posição fixa do antebraço para uma posição mais **funcional**. Ela é indicada quando a **pronação fixa é acentuada** (geralmente acima de 60°) e causa limitação funcional.\n\n**A posição-alvo.**\n- **Unilateral**: perto do **neutro** ou em leve pronação (cerca de 10 a 20°).\n- **Bilateral**: o lado **dominante** em leve pronação, para escrever e digitar; o outro mais próximo do neutro, para atividades da vida diária. As recomendações variam entre os autores.\n\n**As complicações da derrotação.**\n\n| Complicação | Mecanismo |\n|---|---|\n| **Síndrome compartimental** | Edema após a rotação aguda num compartimento apertado |\n| **Comprometimento vascular** | Torção e estiramento das artérias radial e ulnar |\n| **Paresia nervosa** (interósseo posterior, radial, ulnar) | Estiramento pela rotação |\n| Perda da correção, pseudoartrose | Menos frequentes |\n\n**Como reduzi-las.** Limitar a **magnitude** da rotação aguda e corrigir grandes deformidades **gradualmente** ou em dois tempos. Fazer a osteotomia no local da sinostose ou na diáfise do rádio e da ulna, com encurtamento se necessário. Considerar a **fasciotomia** profilática e monitorar de perto o pós-operatório.\n\n**A questão do \"mais frequente\".** A síndrome compartimental e o comprometimento vascular são as complicações **clássicas e mais temidas** da rotação aguda, e por isso a alternativa D é a provável resposta. Algumas revisões mais recentes, porém, relatam a paresia nervosa com frequência semelhante ou maior. Por isso, esta questão é discutível.",
+  "correta": "**Correta: C (pronação e no terço proximal).** Na sinostose radioulnar congênita, o antebraço fica fixo em **pronação**, e a fusão entre o rádio e a ulna ocorre com mais frequência no **terço proximal**, perto do cotovelo.",
   "incorretas": {
-   "A": "A pronação está certa, mas a fusão distal é rara; a típica é proximal.",
-   "B": "Erra os dois pontos: o antebraço fica em pronação e a fusão é proximal.",
-   "D": "A localização proximal está certa, mas o antebraço fica em pronação, não em supinação."
+   "A": "A pronação está certa, mas a sinostose congênita é tipicamente **proximal**. As sinostoses distais são raras.",
+   "B": "O antebraço fica em **pronação**, e não em supinação, e a sinostose é proximal.",
+   "D": "A sinostose é proximal, mas o antebraço fica fixo em **pronação**."
   },
-  "conceito": "A **sinostose radioulnar congênita** é a fusão do rádio com a ulna. Na embriologia, os dois ossos nascem de uma massa cartilaginosa comum e se separam de **distal para proximal**. Por isso, quando a separação falha, a fusão fica quase sempre no **terço proximal**, a última parte a se separar.\n\n**A posição do antebraço**: a falha acontece antes da rotação lateral do membro superior, e o antebraço fica preso na posição fetal, em **pronação**.\n\n**As características**:\n\n**bilateral** em cerca de 60%, em geral isolada;\n\n**diagnóstico tardio**, porque o ombro e o punho compensam bem;\n\nqueixa típica: dificuldade para receber objetos na palma, comer ou abotoar.\n\n**O tratamento**:\n\n**posição neutra ou pronação leve**: observação;\n\n**pronação acima de cerca de 60°** com limitação: **osteotomia derrotativa** pela massa de fusão, levando o antebraço para neutro ou leve pronação;\n\n**cuidado**: correções grandes de uma vez arriscam síndrome compartimental.\n\n**A sinostose distal** é rara.\n\n**Na prova**: na sinostose radioulnar congênita, o antebraço fica em **pronação** e o defeito é no **terço proximal**.",
-  "correta": "O antebraço fica preso em pronação, e a fusão é quase sempre proximal, a última parte a se separar.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0495": {
@@ -7281,17 +7302,18 @@
   "conferido": false
  },
  "pediatria-0604": {
+  "conceito": "**A fratura do rádio distal na criança.** É a fratura **mais comum** da infância. A maioria é tratada com **redução fechada** e gesso, sem pressa, e até as desviadas costumam evoluir bem pela grande **remodelação** do rádio distal, que responde por cerca de 75 a 80% do crescimento do antebraço.\n\n**Quando é emergência.** Algumas situações exigem tratamento **imediato**, independentemente do tipo de fratura:\n\n| Situação | Por quê |\n|---|---|\n| **Síndrome aguda do túnel do carpo** | Compressão do nervo **mediano**; sem descompressão, a lesão nervosa pode ser permanente |\n| **Síndrome compartimental** do antebraço | Necrose muscular em poucas horas |\n| **Fratura exposta** | Risco de infecção; desbridamento urgente |\n| **Lesão vascular** (mão sem perfusão) | Isquemia |\n| Pele ameaçada pelos fragmentos | Risco de exposição |\n\n**A síndrome aguda do túnel do carpo.** Ocorre sobretudo nas fraturas **muito desviadas** (desvio completo, com cavalgamento), nas **fraturas associadas** do cotovelo e do antebraço (cotovelo flutuante) e quando o punho é imobilizado em **flexão extrema**. O nervo mediano é comprimido pelo **edema**, pelo hematoma e pelos fragmentos dentro do túnel.\n\nO quadro é de **dor progressiva** e **parestesias** no território do mediano (polegar, indicador, médio), que **pioram** com o tempo, mesmo após a redução. O tratamento é a **redução imediata** da fratura, a retirada de qualquer imobilização apertada, e, se os sintomas não melhorarem rapidamente, a **liberação do túnel do carpo** (e a fasciotomia, se houver síndrome compartimental), com fixação da fratura (fios percutâneos), para não depender de gesso apertado.\n\n**Por que as outras situações não são emergências por si só.**\n- O **desvio completo** é tratado com redução fechada, de preferência logo, mas não é uma emergência na ausência de complicações.\n- A **lesão ligamentar do carpo** é rara na criança e não exige tratamento emergencial.\n- A **lesão Salter-Harris IV** exige redução **anatômica** (pelo risco de barra óssea), mas a cirurgia pode ser programada.",
+  "correta": "**Correta: D (síndrome aguda do túnel do carpo).** Na fratura do rádio distal da criança, a **síndrome aguda do túnel do carpo** é indicação de tratamento **emergencial**: redução imediata e, se os sintomas não melhorarem, liberação do túnel, para evitar lesão permanente do nervo mediano.",
   "incorretas": {
-   "A": "O desvio completo pede redução, mas não é emergência por si só.",
-   "B": "A lesão ligamentar do carpo é incomum na criança e não é urgência.",
-   "C": "A Salter-Harris IV é cirúrgica, mas não de emergência."
+   "A": "O **desvio completo** é tratado com redução fechada, mas, na ausência de complicações neurovasculares, não é uma emergência.",
+   "B": "A **lesão ligamentar do carpo** é rara na criança e não exige tratamento emergencial.",
+   "C": "A lesão **Salter-Harris IV** exige redução anatômica pelo risco de barra óssea, mas a cirurgia pode ser programada; não é uma emergência."
   },
-  "conceito": "A **fratura do rádio distal** é a mais comum da criança, e a maioria é tratada com redução e gesso, **sem pressa**. Algumas situações, porém, são **urgência**:\n\n**síndrome aguda do túnel do carpo**: o desvio, o edema e o hematoma comprimem o **nervo mediano** no punho. Sinais: **parestesia progressiva** no polegar, indicador e médio, dor que piora, perda de força da pinça;\n\n**síndrome compartimental** do antebraço;\n\n**fratura exposta**;\n\n**lesão vascular**.\n\n**A conduta na síndrome aguda do túnel do carpo**:\n\n**redução imediata** da fratura, sem gesso circular apertado, com o punho em posição neutra (a flexão forçada piora a compressão);\n\n**se não melhorar**: **liberação do túnel do carpo** e fixação da fratura com fios, para não precisar de imobilização em flexão.\n\n**O que não é emergência**:\n\n**desvio completo**: pede redução, mas pode ser feita de forma programada nas horas seguintes;\n\n**Salter-Harris IV**: precisa de redução anatômica e fixação, mas não de emergência;\n\n**lesão ligamentar do carpo**: incomum na criança.\n\n**Na prova**: a fratura do rádio distal é emergência quando há **síndrome aguda do túnel do carpo**.",
-  "correta": "A compressão aguda do mediano no punho exige redução imediata e, se não melhorar, liberação do túnel do carpo.",
   "referencias": [
-   "Skeletal Trauma in Children 5 th ed. 160 pg  (referência indicada na prova TARO 2015, questão 99)"
+   "Skeletal Trauma in Children 5 th ed. 160 pg  (referência indicada na prova TARO 2015, questão 99)",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0605": {
@@ -8567,17 +8589,18 @@
   "conferido": false
  },
  "pediatria-0694": {
+  "conceito": "**A classificação de Torode e Zieg.** É a classificação mais usada para as fraturas da **pelve na criança**. Ela considera a **estabilidade do anel pélvico**.\n\n| Tipo | Descrição |\n|---|---|\n| **I** | Fraturas por **avulsão** das apófises (espinhas ilíacas, tuberosidade isquiática) |\n| **II** | Fraturas da **asa do ilíaco**, sem romper o anel |\n| **III** | Fraturas **simples** do anel, **estáveis** (um ramo púbico, disjunção da sínfise) |\n| **IV** | **Ruptura do anel**, com segmento instável |\n\n**As subdivisões.** As subdivisões variam um pouco entre as fontes.\n- A modificação de **Shore** divide o tipo III em **IIIA** (fratura simples do anel **anterior**) e **IIIB** (fraturas estáveis do anel anterior e posterior).\n- Algumas referências usadas no Brasil, como a indicada pela prova, subdividem o tipo **IV** pelo padrão da ruptura:\n  - **IVa**: fratura **bilateral dos ramos púbicos** (fratura em sela ou \"straddle\"), que deixa um fragmento central flutuante;\n  - **IVb**: fratura do anel **anterior** associada a lesão **posterior** (sacroilíaca ou sacral);\n  - **IVc**: fratura que cria um segmento instável entre o anel anterior e o **acetábulo**.\n\n**Por que a fratura bilateral dos ramos é do tipo IV.** Com os quatro ramos fraturados, o fragmento central (com a sínfise) **perde a ligação** com o resto do anel. Ele é puxado para cima pelo **reto do abdome**. O anel fica rompido, e por isso a lesão entra no grupo de ruptura, e não no das fraturas simples do tipo III.\n\n**O que importa além da classificação.**\n- A **energia** do trauma é alta. As **lesões associadas** (cranianas, abdominais, torácicas e urológicas) determinam a mortalidade, mais que a pelve.\n- Na fratura em sela, há alto risco de lesão da **uretra** e da **bexiga**.\n- A maioria das fraturas da pelve infantil é tratada **sem cirurgia**. As instáveis do tipo IV, sobretudo com lesão posterior desviada, podem precisar de fixação.\n\n**As complicações das fraturas da pelve na criança.**\n- A pelve infantil tem **grande capacidade de consolidação**, e a **pseudoartrose** e o retardo de consolidação são **raros**.\n- A complicação mais frequente das fraturas do anel (como as do tipo III de Torode e Zieg) é a **consolidação viciosa**, que pode causar **assimetria** da pelve, discrepância de membros, dor na sacroilíaca e alteração da marcha. Na criança pequena, há certa remodelação, mas desvios grandes do anel não remodelam bem.\n- A **lesão da cartilagem trirradiada** é uma complicação das fraturas do **acetábulo** (e não das fraturas do anel do tipo III), e pode levar a um acetábulo raso e displásico com o crescimento.",
+  "correta": "**Correta: A (consolidação viciosa).** Nas fraturas do anel pélvico do tipo III de Torode e Zieg na criança, a complicação mais frequente é a **consolidação viciosa**, que pode causar assimetria pélvica e discrepância de membros. A pseudoartrose e o retardo são raros pela boa consolidação do osso infantil.",
   "incorretas": {
-   "B": "A falha de consolidação é rara na pelve da criança.",
-   "C": "O retardo de consolidação é pouco comum na pelve da criança.",
-   "D": "A lesão da cartilagem trirradiada se associa às fraturas acetabulares, do tipo IV."
+   "B": "A **falha de consolidação** (pseudoartrose) é **rara** na pelve da criança, que consolida bem.",
+   "C": "O **retardo de consolidação** também é incomum nas fraturas pélvicas da criança.",
+   "D": "A lesão da **cartilagem trirradiada** é uma complicação das fraturas do **acetábulo**, e não das fraturas do anel do tipo III."
   },
-  "conceito": "Na **classificação de Torode e Zieg**, o **tipo III** são as fraturas **simples e estáveis** do anel pélvico: fratura de um ramo púbico, diástase da sínfise, sem ruptura completa do anel.\n\n**A evolução do tipo III**: a pelve da criança tem **boa capacidade de consolidação** e periósteo espesso. Essas fraturas **consolidam bem** com tratamento **conservador** (repouso relativo e carga conforme a dor).\n\n**A complicação mais relatada**: a **consolidação viciosa**, com pequena **assimetria pélvica** e, às vezes, discreta **discrepância** de membros. Em geral tem **pouca repercussão** clínica.\n\n**As outras complicações por tipo**:\n\n**tipo I** (avulsões): pseudartrose fibrosa rara, calo exuberante (exostose);\n\n**tipo II** (asa do ilíaco): raras;\n\n**tipo IV** (instáveis e acetabulares): discrepância de membros, **lesão da cartilagem trirradiada** (com acetábulo raso e subluxação do quadril no crescimento) e lesões viscerais associadas.\n\n**Falha e retardo de consolidação** são raros na pelve da criança.\n\n**Na prova**: a complicação mais frequente da fratura tipo III de Torode e Zieg é a **consolidação viciosa**.",
-  "correta": "As fraturas tipo III consolidam bem; a complicação mais relatada é a consolidação viciosa discreta, com pouca repercussão.",
   "referencias": [
-   "Jupiter J:. Skeletal Trauma, 3rd Ed., p. 374 (referência indicada na prova TARO 2014, questão 69)"
+   "Jupiter J:. Skeletal Trauma, 3rd Ed., p. 374 (referência indicada na prova TARO 2014, questão 69)",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0695": {
