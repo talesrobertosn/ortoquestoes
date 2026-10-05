@@ -672,16 +672,18 @@
   "formato": "corrido"
  },
  "osteometabolicas-0052": {
-  "conceito": "**Por que o FRAX existe.** A densidade óssea sozinha explica só parte do risco de fratura. O FRAX soma idade, sexo, **peso e altura** (de onde sai o **IMC**), fratura prévia, fratura de quadril nos **pais**, tabagismo, álcool (3 ou mais doses por dia), **corticoide**, artrite reumatoide, osteoporose secundária e, opcionalmente, o **T-score do colo femoral**.\n\n**O que sai** são duas probabilidades em **10 anos**: a de **fratura osteoporótica maior** (quadril, coluna clínica, úmero e punho) e a de **fratura de quadril**. O horizonte de dez anos permite comparar com o **limiar de intervenção**, que no Brasil é calibrado por idade.\n\n**Na prova:** o FRAX usa o **IMC e calcula o risco em 10 anos**, com T-score, não Z-score.",
-  "correta": "**IMC e probabilidade de fratura de quadril em 10 anos.** Peso e altura entram no cálculo, e o horizonte é de dez anos.",
+  "conceito": "**Por que o FRAX existe.** A densidade mineral óssea sozinha explica só parte do risco de fratura: muitas fraturas ocorrem em pessoas com T-score na faixa da osteopenia. O **FRAX**, desenvolvido pela Universidade de Sheffield com a Organização Mundial da Saúde, combina fatores clínicos de risco, com ou sem a densitometria, para estimar a **probabilidade de fratura em 10 anos**.\n\n**O que entra no cálculo.**\n- **Idade** e **sexo**.\n- **Peso e altura**, de onde se calcula o **IMC** (baixo peso aumenta o risco).\n- **Fratura prévia** por fragilidade.\n- **Fratura de quadril nos pais**.\n- **Tabagismo** atual.\n- **Uso de corticoide** oral (prednisona 5 mg/dia ou mais por 3 meses ou mais).\n- **Artrite reumatoide**.\n- **Osteoporose secundária** (diabetes tipo 1, hipertireoidismo, hipogonadismo, menopausa precoce, má absorção, doença hepática crônica).\n- **Álcool**: 3 ou mais doses por dia.\n- Opcionalmente, o **T-score do colo femoral** (não o Z-score).\n\n**O que sai.** Duas probabilidades em **10 anos**:\n- de **fratura de quadril**;\n- de **fratura osteoporótica maior** (quadril, vértebra clínica, úmero proximal e punho).\n\n**Como se usa.** Os limiares de tratamento variam por país. Nos Estados Unidos, por exemplo, a National Osteoporosis Foundation recomenda tratar quem tem osteopenia com probabilidade de fratura de quadril de **3% ou mais** ou de fratura maior de **20% ou mais** em 10 anos. No Brasil, há a calibração nacional e limiares por idade.\n\n**Limitações.** Não considera quedas, dose de corticoide, número de fraturas prévias nem a densidade da coluna; ajustes existem para alguns desses fatores.",
+  "correta": "**Correta: B.** O FRAX usa o **IMC** (calculado a partir do peso e da altura) entre os fatores de risco e fornece a probabilidade de fratura de quadril, e de fratura osteoporótica maior, em **10 anos**.",
   "incorretas": {
-   "A": "**Prazo errado.** Acerta o IMC, mas o FRAX calcula o risco em dez anos, não em cinco.",
-   "C": "**Dado e prazo errados.** O FRAX usa o T-score do colo, e o prazo é de dez anos.",
-   "D": "**Dado errado.** Acerta o prazo, mas o Z-score compara com a mesma faixa etária e serve a outro fim."
+   "A": "O IMC está certo, mas o horizonte do FRAX é de **10 anos**, e não de 5.",
+   "C": "O FRAX usa, opcionalmente, o **T-score** do colo femoral, e não o Z-score; e o horizonte é de 10 anos.",
+   "D": "O horizonte de 10 anos está certo, mas a densitometria entra pelo **T-score**, não pelo Z-score."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Kanis JA, Johnell O, Oden A, Johansson H, McCloskey E. FRAX and the assessment of fracture probability in men and women from the UK. Osteoporos Int. 2008;19(4):385-397."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "osteometabolicas-0053": {
   "conceito": "**O perfil da forma oligoarticular.** É a forma **mais comum** da artrite idiopática juvenil e tem um retrato bem definido: **meninas pequenas, entre 2 e 4 anos**, com **até quatro articulações** nos primeiros seis meses, quase sempre o **joelho**, e **FAN positivo** com frequência.\n\n**O que mais importa é o olho.** Esse grupo tem risco alto de **uveíte anterior crônica**, que não dói nem avermelha o olho e pode levar a perda visual antes de qualquer queixa; por isso exige exame com **lâmpada de fenda** em intervalos regulares. Para o ortopedista, o joelho com derrame crônico pode causar **discrepância de membros**, por hipercrescimento do lado inflamado, e contratura em flexão. A infiltração intra-articular de corticoide é uma opção comum.\n\n**Na prova:** AIJ oligoarticular é **menina de 2 a 4 anos**, joelho, FAN positivo e uveíte.",
