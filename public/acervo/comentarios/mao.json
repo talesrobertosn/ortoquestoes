@@ -6459,19 +6459,20 @@
   "conferido": false
  },
  "mao-0619": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": "**Ruptura do extensor longo do polegar.** Mais comum em fraturas sem desvio tratadas sem cirurgia, por isquemia do tendão no tubérculo de Lister; aparece semanas depois.\n\n**Na prova:** fratura sem desvio do rádio distal e ruptura tardia do extensor longo do polegar.",
-  "correta": "**Não cirúrgico.** É mais frequente no tratamento conservador.",
+  "conceito": "**Ruptura do extensor longo do polegar após fratura distal do rádio.** O tendão do extensor longo do polegar (ELP) passa no **terceiro compartimento extensor**, contornando o **tubérculo de Lister** como uma polia, em uma região de **vascularização precária** (zona hipovascular de cerca de 5 mm).\n\n**O paradoxo da fratura sem desvio.** A ruptura é **mais frequente nas fraturas sem desvio ou minimamente desviadas, tratadas sem cirurgia**. Explicações:\n- O **retináculo extensor e o terceiro compartimento permanecem íntegros**. O hematoma e o edema aumentam a pressão dentro do túnel fechado, comprimindo a frágil irrigação do tendão (isquemia).\n- Calo ou irregularidade discreta no assoalho do compartimento atrita o tendão.\n- Nas fraturas muito desviadas, o compartimento se rompe e descomprime.\n\nRoth e colaboradores estimaram a incidência em cerca de 3% a 5% das fraturas sem desvio. A ruptura ocorre tipicamente **3 a 8 semanas** após a fratura (às vezes meses), com perda súbita da extensão da interfalângica do polegar e da retropulsão (elevar o polegar acima do plano da mão com a palma na mesa).\n\n**Rupturas com tratamento cirúrgico.**\n\n| Tratamento | Mecanismo de ruptura |\n|---|---|\n| Não cirúrgico (fratura sem desvio) | Isquemia no compartimento fechado, a causa mais comum |\n| Pinagem percutânea | Lesão direta pelo fio ou atrito na ponta |\n| Placa volar bloqueada | **Parafuso longo** que ultrapassa a cortical dorsal |\n| Placa dorsal | Atrito direto do tendão na placa |\n\n**Tratamento.** Reparo término-terminal raramente é possível (tendão degenerado). A opção padrão é a **transferência do extensor próprio do indicador** para o ELP, com bons resultados; enxerto intercalar do palmar longo é alternativa.\n\n> Ruptura do extensor longo do polegar: mais comum após fratura do rádio distal sem desvio tratada sem cirurgia, semanas depois.",
+  "correta": "**A: não cirúrgico (resposta pela bibliografia).** Nas fraturas sem desvio tratadas de forma conservadora, o terceiro compartimento permanece fechado; o edema e o hematoma comprimem a irrigação precária do tendão junto ao tubérculo de Lister, levando a ruptura tardia.",
   "incorretas": {
-   "B": "**Por pinagem percutânea.** Menos frequente.",
-   "C": "**Com fixador externo.** Menos frequente.",
-   "D": "**Com placa bloqueada.** Na placa volar ocorre por parafuso longo, mas é menos comum."
+   "B": "**A pinagem percutânea** pode lesar o tendão diretamente, mas é causa menos frequente que o tratamento conservador das fraturas sem desvio.",
+   "C": "**O fixador externo** não age sobre o terceiro compartimento; rupturas são raras e ligadas aos fios ou pinos acessórios.",
+   "D": "**A placa bloqueada volar** associa-se à ruptura quando parafusos ultrapassam a cortical dorsal, risco evitável com a medida correta; ainda assim, é causa menos comum que o tratamento conservador."
   },
   "referencias": [
-   "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., pg. 961."
+   "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., pg. 961.",
+   "Roth KM, Blazar PE, Earp BE, Han R, Leung A. Incidence of extensor pollicis longus tendon rupture after nondisplaced distal radius fractures. J Hand Surg Am. 2012;37(5):942-947."
   ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "A",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0620": {

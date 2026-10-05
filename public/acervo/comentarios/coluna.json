@@ -3930,19 +3930,20 @@
   "conferido": false
  },
  "coluna-0334": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "D",
-  "conceito": "**Estenose lombar.** A elevação do membro inferior costuma ser indolor, e a distância de marcha é variável, diferente da claudicação vascular.\n\n**Na prova:** estenose tem Lasègue negativo e distância variável.",
-  "correta": "**Indolor e distância variável de marcha.** São os achados frequentes.",
+  "conceito": "**Estenose lombar: o exame físico é pobre, e a história é rica.** A estenose do canal lombar comprime as raízes de forma **dinâmica**: os sintomas surgem ao ficar em pé e andar (extensão) e aliviam ao sentar ou fletir o tronco. Em repouso, deitado, o paciente frequentemente tem **exame neurológico normal**.\n\n**Por que a elevação do membro inferior costuma ser indolor.** O teste de Lasègue (elevação do membro estendido) tensiona as raízes L5 e S1 e é positivo quando uma raiz está **presa e inflamada** por uma hérnia discal aguda. Na estenose, a compressão é crônica, depende da postura, e o paciente é testado **deitado**, em posição que não estreita o canal. Por isso, o teste é geralmente **negativo** na estenose, ao contrário da hérnia de disco.\n\n**Por que a distância de marcha varia.** A claudicação neurogênica depende da **postura** (andar ereto ou inclinado), do terreno (descida ou subida) e da carga, e não de um déficit fixo de perfusão. O paciente anda mais inclinado para frente ou empurrando um carrinho. Já na claudicação vascular, a distância é **relativamente constante**, pois depende da demanda de oxigênio do músculo.\n\n**Comparação.**\n\n| Característica | Estenose lombar | Hérnia de disco | Claudicação vascular |\n|---|---|---|---|\n| Lasègue | Geralmente negativo | Positivo | Negativo |\n| Distância de marcha | Variável | Não é o sintoma principal | Relativamente constante |\n| Alívio | Sentar, fletir | Variável | Parar, mesmo em pé |\n\n**Avaliação.** Ressonância magnética confirma a estenose; a correlação com a clínica é essencial, pois estenose radiológica é comum em idosos assintomáticos.\n\n> Estenose lombar: Lasègue geralmente negativo e distância de marcha variável.",
+  "correta": "**D: indolor e distância variável de marcha (resposta pela bibliografia).** Na estenose, a elevação do membro inferior costuma ser negativa (compressão dinâmica, testada deitado), e a distância de marcha varia com a postura e o terreno.",
   "incorretas": {
-   "A": "**Dolorosa e distância invariável de marcha.** Lasègue positivo é típico da hérnia.",
-   "B": "**Indolor e distância invariável de marcha.** A distância varia.",
-   "C": "**Dolorosa e distância variável de marcha.** Lasègue tende a ser negativo."
+   "A": "**Dolorosa com distância invariável** mistura um achado de hérnia discal (Lasègue positivo) com a característica da claudicação vascular.",
+   "B": "**Indolor com distância invariável**: a elevação indolor está certa, mas a distância constante sugere claudicação vascular.",
+   "C": "**Dolorosa com distância variável**: a distância variável está certa, mas o Lasègue positivo sugere hérnia discal ou estenose foraminal com raiz inflamada."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., pg. 2064."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., pg. 2064.",
+   "Genevay S, Atlas SJ. Lumbar spinal stenosis. Best Pract Res Clin Rheumatol. 2010;24(2):253-265."
   ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "D",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "coluna-0335": {

@@ -8623,19 +8623,20 @@
   "conferido": false
  },
  "pediatria-0737": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "D",
-  "conceito": "**Pseudartrose congênita da tíbia (Boyd).** I: arqueamento anterior e defeito ao nascimento. II: constrição em ampulheta, a mais comum. III: cisto ósseo congênito. IV: segmento esclerótico. V: fíbula displásica. VI: neurofibroma ou schwannoma intraósseo.\n\n**Na prova:** Boyd II é ampulheta; III é cisto.",
-  "correta": "**Cistos ósseos.** O tipo III se desenvolve em um cisto ósseo.",
+  "conceito": "**Pseudartrose congênita da tíbia e a classificação de Boyd.** É uma das condições mais desafiadoras da ortopedia pediátrica: a tíbia, geralmente no terço distal, apresenta **arqueamento anterolateral** e evolui para fratura que **não consolida**. Cerca de metade dos pacientes (ou mais) tem **neurofibromatose tipo 1**, e o tecido no foco é um hamartoma fibroso que impede a consolidação.\n\n**Diferenciar os arqueamentos da tíbia.**\n\n| Arqueamento | Significado |\n|---|---|\n| **Anterolateral** | Pseudartrose congênita (ou pré-pseudartrose), grave |\n| Posteromedial | Arqueamento benigno, melhora espontaneamente, deixa discrepância |\n| Anteromedial | Hemimelia fibular |\n\n**Classificação de Boyd.**\n\n| Tipo | Característica |\n|---|---|\n| I | Arqueamento anterior e defeito presente ao nascimento |\n| II | Constrição em **ampulheta** da tíbia; fratura antes dos 2 anos; o mais comum, associado à NF1 |\n| **III** | **Cisto ósseo** congênito, geralmente na junção dos terços médio e distal |\n| IV | Segmento **esclerótico** sem estreitamento, com fratura de estresse |\n| V | **Fíbula displásica** com pseudartrose, podendo afetar a tíbia |\n| VI | **Neurofibroma ou schwannoma intraósseo** |\n\n**Tratamento.** Antes da fratura: órtese para proteger a tíbia arqueada (nunca osteotomia corretiva, que gera pseudartrose). Após a fratura: ressecção ampla do hamartoma, enxerto autólogo e estabilização, com haste intramedular (Williams), fixador circular de Ilizarov ou fíbula vascularizada; técnicas combinadas (cross-union) melhoraram os resultados. Refratura é comum até a maturidade; em falhas repetidas, amputação de Syme pode dar melhor função.\n\n> Boyd: II ampulheta (o mais comum), III cisto ósseo, VI neurofibroma intraósseo.",
+  "correta": "**D: cistos ósseos (resposta pela bibliografia).** No tipo III de Boyd, a pseudartrose surge sobre um cisto ósseo congênito, geralmente na junção dos terços médio e distal da tíbia.",
   "incorretas": {
-   "A": "**Fratura ao nascimento.** É o tipo I.",
-   "B": "**Constrição em ampulheta da tíbia.** É o tipo II.",
-   "C": "**Neurofibroma intra-ósseo.** É o tipo VI."
+   "A": "**A fratura ao nascimento** (com arqueamento anterior e defeito já presente) corresponde ao tipo I.",
+   "B": "**A constrição em ampulheta** é o tipo II, o mais comum e mais associado à neurofibromatose.",
+   "C": "**O neurofibroma intraósseo** (ou schwannoma) define o tipo VI."
   },
   "referencias": [
-   "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. 5ª ed., vol. 2, p. 1191."
+   "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. 5ª ed., vol. 2, p. 1191.",
+   "Boyd HB. Pathology and natural history of congenital pseudarthrosis of the tibia. Clin Orthop Relat Res. 1982;(166):5-13."
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "D",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0738": {

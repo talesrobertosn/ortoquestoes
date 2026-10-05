@@ -3336,19 +3336,20 @@
   "formato": "corrido"
  },
  "tumores-0327": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "C",
-  "conceito": "**Cisto ósseo aneurismático.** Lesão lítica, insuflativa, excêntrica e de crescimento rápido na metáfise de jovens, com septos e aspecto de favo de mel; na ressonância, níveis líquido-líquido.\n\n**Na prova:** jovem, metáfise, excêntrico, insuflativo, níveis líquidos: cisto aneurismático.",
-  "correta": "**Cisto ósseo aneurismático.** Reúne os achados típicos.",
+  "conceito": "**Cisto ósseo aneurismático.** É uma lesão óssea benigna, mas **localmente agressiva**, formada por **espaços cheios de sangue** separados por septos de tecido conjuntivo com células gigantes, osteoide e osso reativo. Em cerca de dois terços dos casos é **primário**, com translocação envolvendo o gene **USP6** (é, portanto, uma neoplasia); no restante, é **secundário** a outra lesão (tumor de células gigantes, condroblastoma, osteoblastoma, displasia fibrosa, osteossarcoma telangiectásico como diagnóstico diferencial).\n\n**Perfil típico.**\n- **Idade**: até 20 anos (cerca de 80% dos casos).\n- **Local**: **metáfise** de ossos longos (fêmur, tíbia, úmero) e elementos posteriores da coluna.\n- **Radiografia**: lesão **lítica**, **excêntrica**, **insuflativa** (\"aneurismática\", com cortical adelgaçada em casca de ovo), com septações que dão aspecto de **favo de mel** ou bolhas de sabão; crescimento **rápido**.\n- **Ressonância**: **níveis líquido-líquido** (sedimentação do sangue), muito sugestivos, embora não exclusivos.\n\n**Diferencial das lesões líticas insuflativas.**\n\n| Lesão | Pistas |\n|---|---|\n| **Cisto ósseo aneurismático** | Jovem, metáfise, excêntrico, rápido, níveis líquidos |\n| Cisto ósseo simples | Central, metafisário, unicameral, sinal do fragmento caído |\n| Tumor de células gigantes | Adulto com fise fechada, epifisário, até o osso subcondral |\n| Condroblastoma | Epífise da criança e do adolescente |\n| Fibroma condromixoide | Metafisário, excêntrico, borda esclerótica, crescimento lento |\n| Osteossarcoma telangiectásico | Imita o cisto; destruição agressiva, septos espessos e nodulares |\n\n**Tratamento.** Biópsia sempre (excluir osteossarcoma telangiectásico); curetagem estendida com adjuvantes e enxerto, embolização seletiva em locais difíceis, escleroterapia (polidocanol), denosumabe em casos selecionados. Recidiva de 10% a 30%.\n\n> Jovem, metáfise, lesão excêntrica, insuflativa, de crescimento rápido, com septos e níveis líquidos: cisto ósseo aneurismático.",
+  "correta": "**C: cisto ósseo aneurismático (resposta pela bibliografia).** Lesão lítica, insuflativa, excêntrica, de crescimento rápido na metáfise de paciente jovem, com septações em favo de mel, é o quadro típico do cisto ósseo aneurismático.",
   "incorretas": {
-   "A": "**Tumor de células gigantes.** É epifisária, após o fechamento da fise.",
-   "B": "**Fibroma condromixóide.** É rara e costuma ter margem esclerótica.",
-   "D": "**Condroblastoma.** É epifisária."
+   "A": "**O tumor de células gigantes** ocorre em adultos com a fise fechada e é epifisário, estendendo-se até o osso subcondral; não é metafisário em jovens.",
+   "B": "**O fibroma condromixoide** é metafisário e excêntrico, mas de crescimento lento, com borda esclerótica e aspecto lobulado, geralmente na tíbia proximal.",
+   "D": "**O condroblastoma** ocupa a epífise (centro de ossificação secundário) de crianças e adolescentes, não a metáfise."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 799."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 799.",
+   "Rapp TB, Ward JP, Alaia MJ. Aneurysmal bone cyst. J Am Acad Orthop Surg. 2012;20(4):233-241."
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "C",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "tumores-0328": {
@@ -3369,19 +3370,20 @@
   "conferido": false
  },
  "tumores-0329": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": "**Condrossarcoma secundário.** O risco é baixo no osteocondroma solitário e maior na osteocondromatose múltipla; nas encondromatoses é alto, e a síndrome de Maffucci tem o maior risco.\n\n**Na prova:** Maffucci tem o maior risco de malignização.",
-  "correta": "**Na síndrome de MAFFUCCI.** É a condição com maior risco de condrossarcoma.",
+  "conceito": "**Condrossarcoma secundário e as doenças predisponentes.** O condrossarcoma secundário nasce de uma lesão cartilaginosa benigna preexistente: um **encondroma** (condrossarcoma central secundário) ou a capa cartilaginosa de um **osteocondroma** (condrossarcoma periférico secundário). O risco de transformação varia muito conforme a doença de base.\n\n**Risco de transformação maligna.**\n\n| Condição | Risco aproximado |\n|---|---|\n| Osteocondroma solitário | Menos de 1% |\n| Osteocondromatose múltipla hereditária | Cerca de 1% a 5% (alguns relatam mais) |\n| Encondroma solitário | Muito baixo |\n| Doença de Ollier (encondromatose múltipla) | Alto, em torno de 25% a 40% ou mais |\n| **Síndrome de Maffucci** (encondromatose com hemangiomas) | **O mais alto**, além de risco de tumores viscerais |\n\n**Ollier e Maffucci.** Ambas têm múltiplos encondromas, frequentemente com mutações em **IDH1 ou IDH2**. Na Maffucci, somam-se **hemangiomas** de partes moles (com flebólitos visíveis na radiografia). A literatura clássica, e a referência adotada, atribui à **Maffucci o maior risco** de condrossarcoma; séries multicêntricas (Verdegaal e colaboradores) mostram risco alto e semelhante nas duas, com Maffucci também sujeita a neoplasias não ósseas (glioma, tumores de ovário, pâncreas).\n\n**Sinais de transformação.**\n- Dor sem fratura em lesão antes indolor.\n- Crescimento após a maturidade esquelética.\n- Capa cartilaginosa do osteocondroma **maior que 2 cm** (adulto) na ressonância.\n- Em encondromas: erosão endosteal profunda, ruptura cortical, massa de partes moles.\n\n**Seguimento.** Pacientes com encondromatose múltipla e osteocondromatose devem ser orientados e acompanhados, com investigação de qualquer lesão dolorosa ou em crescimento.\n\n> Condrossarcoma secundário: risco alto nas encondromatoses, maior na síndrome de Maffucci.",
+  "correta": "**B: na síndrome de MAFFUCCI (resposta pela bibliografia).** A encondromatose múltipla com hemangiomas é classicamente a condição com maior risco de condrossarcoma secundário, além de predispor a neoplasias viscerais.",
   "incorretas": {
-   "A": "**Na doença de OLLIER.** Tem risco alto, mas menor que Maffucci.",
-   "C": "**Na osteocondromatose múltipla.** O risco é menor que nas encondromatoses.",
-   "D": "**No condroblastoma.** Não é precursor de condrossarcoma."
+   "A": "**A doença de Ollier** também tem risco alto de transformação, mas a referência atribui o maior risco à síndrome de Maffucci; séries recentes mostram riscos próximos nas duas.",
+   "C": "**A osteocondromatose múltipla** tem risco bem menor (em torno de 1% a 5%) que as encondromatoses.",
+   "D": "**O condroblastoma** é tumor benigno epifisário; a transformação em condrossarcoma é excepcional."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 830-834."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 830-834.",
+   "Verdegaal SH, Bovée JV, Pansuriya TC, et al. Incidence, predictive factors, and prognosis of chondrosarcoma in patients with Ollier disease and Maffucci syndrome: an international multicenter study of 161 patients. Oncologist. 2011;16(12):1771-1779."
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "B",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "tumores-0330": {
@@ -3570,19 +3572,20 @@
   "conferido": false
  },
  "tumores-0341": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "C",
-  "conceito": "**Estadiamento do osteossarcoma.** Ressonância para extensão local e tomografia de tórax para metástase pulmonar.\n\n**Na prova:** ressonância local, tomografia de tórax.",
-  "correta": "**Ressonância magnética e tomografia computadorizada.** É o estadiamento padrão.",
+  "conceito": "**Estadiamento do osteossarcoma: cada exame para sua pergunta.** O estadiamento responde a duas perguntas: **qual a extensão local** do tumor (para planejar a ressecção) e **há metástases** (para o prognóstico e o tratamento). O osteossarcoma metastatiza sobretudo para o **pulmão** e, em segundo lugar, para outros ossos.\n\n**Extensão local: ressonância magnética.** A ressonância de **todo o osso acometido** (com as articulações adjacentes) mostra:\n- Extensão **intramedular**, que define o nível da osteotomia (margem de pelo menos 2 a 3 cm além do limite em T1).\n- Componente de **partes moles** e relação com o feixe neurovascular.\n- Invasão articular e fise.\n- **Skip metástases** (lesões descontínuas no mesmo osso).\n\n**Metástase pulmonar: tomografia computadorizada do tórax.** A tomografia detecta nódulos pulmonares de poucos milímetros, muito melhor que a radiografia, e é o padrão para o estadiamento torácico. A ressonância é inferior no pulmão pelo movimento respiratório e pelo ar.\n\n**O conjunto do estadiamento.**\n\n| Pergunta | Exame |\n|---|---|\n| Diagnóstico inicial | Radiografia (padrão permeativo, triângulo de Codman, raios de sol) |\n| **Extensão local** | **Ressonância magnética** de todo o osso |\n| **Metástase pulmonar** | **Tomografia do tórax** |\n| Metástase óssea | Cintilografia óssea ou PET-CT |\n| Confirmação | Biópsia no centro de referência, no trajeto da futura incisão |\n\n**Papel da tomografia no local.** Útil para detalhes da cortical e da matriz em sítios complexos (pelve, coluna), mas inferior à ressonância para a medula e as partes moles.\n\n> Osteossarcoma: ressonância para o osso e tomografia para o pulmão.",
+  "correta": "**C: ressonância magnética e tomografia computadorizada (resposta pela bibliografia).** A ressonância define a extensão intramedular e de partes moles e as skip metástases; a tomografia do tórax é o exame mais sensível para nódulos pulmonares.",
   "incorretas": {
-   "A": "**Tomografia computadorizada e ressonância magnética.** Inverte.",
-   "B": "**Tomografia computadorizada e tomografia computadorizada.** Tomografia é inferior para extensão medular.",
-   "D": "**Ressonância magnética e ressonância magnética.** Ressonância é inferior para pulmão."
+   "A": "**Tomografia e ressonância** inverte as indicações: a tomografia é inferior para a medula e partes moles, e a ressonância é inferior para o pulmão.",
+   "B": "**Tomografia e tomografia**: correta para o tórax, mas a tomografia não define bem a extensão medular e de partes moles.",
+   "D": "**Ressonância e ressonância**: correta para o local, mas a ressonância não é o exame de escolha para metástases pulmonares."
   },
   "referencias": [
-   "Tachdjian M.O. Pediatric orthopaedics. Philadelphia: Saunders. 4ª ed., pg. 2259."
+   "Tachdjian M.O. Pediatric orthopaedics. Philadelphia: Saunders. 4ª ed., pg. 2259.",
+   "Bielack S, Carrle D, Casali PG; ESMO Guidelines Working Group. Osteosarcoma: ESMO clinical recommendations for diagnosis, treatment and follow-up. Ann Oncol. 2009;20 Suppl 4:137-139."
   ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "C",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "tumores-0342": {
