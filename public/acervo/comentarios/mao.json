@@ -5601,14 +5601,18 @@
   "conferido": false
  },
  "mao-0558": {
-  "conceito": "### Discriminação de dois pontos (D2P)\n| Valor estático | Interpretação |\n|---|---|\n| < 6 mm | normal (polpa) |\n| 6 a 10 mm | regular |\n| ==11 a 15 mm== | ==sensibilidade funcional reduzida== |\n| > 15 mm | apenas protetora |\n\n### Reimplante do polegar\n- Média esperada após ferimento **cortante**: ==cerca de 11 mm==.\n- Esmagamento e avulsão: resultados piores (lesão nervosa extensa).\n- Crianças recuperam melhor.\n\n### Fatores de melhor recuperação sensitiva\n- Idade jovem, mecanismo cortante, nível distal, reparo sem tensão, reparo precoce.\n\n### Escala de Mackinnon-Dellon (sensibilidade)\n- S0 a S4, com D2P como parâmetro nos graus altos (S3+: D2P de 7 a 15 mm; S4: 2 a 6 mm).\n\n> **Na prova:** D2P esperada no polegar reimplantado por corte = ==cerca de 11 mm==.",
-  "correta": "**Cerca de 11 mm.**\n- É a média após reimplante do polegar por ferimento cortante.\n- Resultado funcional, mas longe do normal.",
+  "conceito": "**O que mede a discriminação de dois pontos.** É o teste que avalia a **densidade de inervação** da polpa digital: com um instrumento de duas pontas, pergunta-se ao paciente se sente uma ou duas pontas, diminuindo a distância até que ele não as distinga mais. É o melhor indicador clínico da qualidade da **sensibilidade fina**, necessária para manipular objetos pequenos sem olhar.\n\n| Discriminação estática | Interpretação |\n|---|---|\n| Menor que 6 mm | **Normal** (polpa digital) |\n| 6 a 10 mm | Regular |\n| **11 a 15 mm** | **Sensibilidade funcional reduzida** |\n| Maior que 15 mm | Apenas sensibilidade protetora |\n\n**O reimplante do polegar.** O polegar responde por cerca de **40 a 50%** da função da mão, e por isso é a indicação mais forte de reimplante, mesmo em amputações isoladas. A recuperação da sensibilidade depende da **regeneração dos nervos digitais** suturados, que crescem cerca de 1 mm por dia, e de fatores como:\n- **mecanismo**: lesões **cortantes** (lâmina, serra limpa) têm o melhor resultado, porque os cotos nervosos são limpos e a sutura é sem tensão; **esmagamento** e **avulsão** lesam o nervo em extensão e têm resultados piores;\n- **idade**: crianças recuperam muito melhor;\n- **nível** da amputação e qualidade da sutura nervosa.\n\n**O resultado esperado.** Nas séries de reimplante de polegar por lesão cortante, a discriminação de dois pontos média fica em torno de **10 a 11 mm**: sensibilidade presente e útil para a preensão, mas inferior ao normal.\n\n**Outras sequelas comuns.** Intolerância ao frio (muito frequente no primeiro ano), rigidez das articulações e atrofia da polpa. Mesmo assim, o polegar reimplantado tem função muito superior à de uma amputação.",
+  "correta": "**Correta: C (11 mm).** Após reimplante do polegar por ferimento cortante, a discriminação de dois pontos média recuperada fica em torno de **11 mm**, uma sensibilidade funcional, porém inferior à normal.",
   "incorretas": {
-   "A": "**Normal.**\n- 4 mm é a D2P de uma polpa íntegra.",
-   "B": "**Otimista.**\n- 6 mm é o limite do normal.",
-   "D": "**Pessimista.**\n- 14 mm se aproxima da sensibilidade apenas protetora."
+   "A": "**4 mm** é o valor de uma polpa **normal**, que não costuma ser atingido após reimplante no adulto.",
+   "B": "**6 mm** está no limite do normal; é um resultado excepcional, eventualmente visto em crianças.",
+   "D": "**14 mm** está acima da média relatada para lesões cortantes, mais próximo do que ocorre após esmagamento ou avulsão."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)",
+   "Pardini A. Traumatismos da mão. Rio de Janeiro: Medsi."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0559": {
@@ -6796,17 +6800,18 @@
   "conferido": false
  },
  "mao-0638": {
+  "conceito": "**O que é o tumor glômico.** É um tumor benigno originado do **corpo glômico**, uma estrutura neuromioarterial da derme responsável pela **termorregulação**, que controla o fluxo entre arteríolas e vênulas. Os corpos glômicos são muito numerosos na **ponta dos dedos**, e por isso o tumor ocorre sobretudo na região **subungueal** (cerca de 75% na mão, a maioria sob a unha). É mais comum em mulheres de 30 a 50 anos.\n\n**A tríade clássica.**\n1. **Dor intensa, paroxística**, desproporcional ao tamanho da lesão (que costuma ter poucos milímetros).\n2. **Hipersensibilidade ao frio**: imersão em água fria desencadeia dor.\n3. **Dor puntiforme, muito localizada**, exatamente sobre o tumor.\n\n**A dor é localizada, não difusa.** Essa é uma das pistas diagnósticas mais importantes. Os testes clínicos exploram justamente a localização precisa:\n- **Teste de Love**: a pressão com a ponta de um alfinete ou clipe em um ponto exato reproduz a dor intensa, enquanto pontos vizinhos não doem.\n- **Teste de Hildreth**: a dor desaparece quando se aplica um torniquete no braço, cessando o fluxo.\n- **Teste do frio**: a imersão em água fria provoca dor.\n\n**Exame físico.** Pode haver uma mancha azulada ou avermelhada sob a unha, deformidade ou estria ungueal, mas a unha também pode parecer normal. Na radiografia, às vezes há uma **erosão** na falange distal.\n\n**Diagnóstico e tratamento.** A **ressonância** mostra uma lesão pequena, hiperintensa em T2, que realça com contraste. O tratamento é a **excisão cirúrgica completa**, geralmente com remoção da lâmina ungueal e incisão no leito ungueal, reparado com cuidado para evitar deformidade da unha. A recidiva ocorre quando a excisão é incompleta ou há lesões múltiplas.",
+  "correta": "**Resposta provável: Errado.** No tumor glômico, a dor é intensa e **puntiforme**, muito **localizada** sobre a lesão (teste de Love), e não uma hiperalgesia difusa do dedo. A localização precisa é justamente uma das marcas diagnósticas.",
   "incorretas": {
-   "A": "**Certo seria falar em dor intensa localizada num ponto subungueal.** A expressão “difusa no dedo” apaga justamente a característica que ajuda a localizar o tumor glômico."
+   "A": "**Certo** contrariaria a característica mais típica do tumor glômico. Uma dor difusa no dedo sugere outros diagnósticos, como neuroma, síndrome dolorosa complexa ou lesão nervosa."
   },
-  "conceito": "**Pequeno tumor, dor muito localizada.** O tumor glômico surge de estruturas glômicas envolvidas na termorregulação e frequentemente está sob a unha. A tríade clássica reúne dor paroxística intensa, sensibilidade exacerbada ao frio e dor puntiforme precisamente sobre a lesão. Uma unha aparentemente normal não o exclui.\n\n**A localização é parte do diagnóstico.** No teste de Love, a pressão com objeto fino reproduz a dor em um ponto pequeno; no teste de Hildreth, a dor pode diminuir com isquemia transitória do dedo. Ultrassonografia ou ressonância ajudam a localizar lesões ocultas antes da excisão. Após remoção completa, a melhora costuma ser importante; dor persistente ou recorrente pede investigação de lesão residual ou nova lesão.",
-  "correta": "**Errado: a hipersensibilidade típica é focal, não difusa por todo o dedo.** Dor puntiforme e sensibilidade ao frio são pistas mais específicas.",
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "referencias": [
-   "Pardini A.Traumatismos da mão. Rio de Janeiro: Medsi. 2ª edição, p. 387."
+   "Pardini A.Traumatismos da mão. Rio de Janeiro: Medsi. 2ª edição, p. 387.",
+   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)"
   ],
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "B",
-  "geradoEm": "2026-10-01",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0639": {
@@ -7021,17 +7026,18 @@
   "conferido": false
  },
  "mao-0654": {
+  "conceito": "**O aparelho extensor do dedo.** Sobre a falange proximal, o tendão extensor se divide em uma **banda central**, que se insere na base da **falange média** e estende a interfalângica proximal (IFP), e duas **bandas laterais**, que recebem os tendões dos intrínsecos (interósseos e lumbricais) e se unem sobre a falange média para formar o **tendão terminal**, que estende a interfalângica distal (IFD). As bandas laterais ficam **dorsais** ao eixo de rotação da IFP, presas pelo ligamento triangular.\n\n**Como se forma a botoeira.**\n1. A **banda central** se rompe (trauma, ferimento dorsal, artrite reumatoide).\n2. A IFP deixa de ser estendida e flete. A cabeça da falange proximal sai pelo defeito como um botão por uma casa de botão.\n3. O ligamento triangular se alonga, e as **bandas laterais deslizam para volar** do eixo da IFP, onde passam a **fletir** a IFP em vez de estendê-la.\n4. As bandas laterais, agora desviadas e retraídas, ficam **tensas** e transmitem toda a força dos extensores e intrínsecos ao **tendão terminal**, que **hiperestende a IFD**.\n\n**A deformidade.** **Flexão da IFP** e **hiperextensão da IFD**. Com o tempo, o ligamento retinacular oblíquo (de Landsmeer) se retrai e a deformidade se torna fixa.\n\n**O teste de Elson.** Com a IFP fletida a 90° sobre a borda da mesa, pede-se ao paciente que estenda a falange média contra resistência. Com a banda central íntegra, a IFD fica frouxa; com a banda central rompida, a força passa pelas bandas laterais e a **IFD fica rígida em extensão**. É o teste mais confiável na lesão aguda.\n\n**Tratamento da lesão aguda fechada.** Órtese mantendo a **IFP em extensão** por 6 semanas, com a **IFD livre** e exercícios de flexão ativa da IFD, que puxam as bandas laterais de volta para dorsal.",
+  "correta": "**Resposta provável: Certo.** Na botoeira, as bandas laterais migram para volar do eixo da IFP e ficam tensas, transmitindo a força do aparelho extensor ao tendão terminal e produzindo a **hiperextensão da interfalângica distal**.",
   "incorretas": {
-   "B": "**Errado seria atribuir a hiperextensão distal a uma banda central intacta.** É a migração volar das bandas laterais após sua falha que reorganiza as forças extensoras."
+   "B": "**Errado** ignoraria o mecanismo da deformidade. A hiperextensão da IFD na botoeira é justamente consequência da tensão aumentada nas bandas laterais, e é por isso que a flexão ativa da IFD faz parte do tratamento."
   },
-  "conceito": "**A lesão central altera a mecânica de toda a expansão extensora.** Na botoeira, a banda central perde sua inserção funcional na base da falange média. As bandas laterais migram para a face volar do eixo da interfalângica proximal e deixam de estendê-la de modo eficaz, contribuindo para sua flexão.\n\n**A força passa a agir distalmente.** A tração dos músculos intrínsecos e do sistema extensor, desviada pelas bandas laterais, aumenta a tensão no tendão terminal que alcança a falange distal. A interfalângica distal então hiperestende. A combinação é flexão da proximal com hiperextensão da distal, oposta à deformidade em pescoço de cisne, que apresenta hiperextensão proximal e flexão distal.",
-  "correta": "**Certo: a maior tração transmitida pelas bandas laterais ao tendão terminal explica a hiperextensão distal.** O evento inicial costuma ser a falha da banda central na articulação proximal.",
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "referencias": [
-   "Pardini A.Traumatismos da mão. Rio de Janeiro: Medsi. 3ª edição, p. 363."
+   "Pardini A.Traumatismos da mão. Rio de Janeiro: Medsi. 3ª edição, p. 363.",
+   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)"
   ],
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "A",
-  "geradoEm": "2026-10-01",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0655": {
@@ -8216,18 +8222,18 @@
   "conferido": false
  },
  "mao-0733": {
-  "conceito": "**Os portais dorsais do punho recebem o nome dos compartimentos extensores que os limitam.**\n\n| Compartimento | Conteúdo |\n|---|---|\n| 1º | Abdutor longo e extensor curto do polegar |\n| 2º | Extensores radiais longo e curto do carpo |\n| 3º | Extensor longo do polegar |\n| 4º | **Extensor comum dos dedos** e extensor próprio do indicador |\n| 5º | **Extensor próprio do dedo mínimo** |\n| 6º | Extensor ulnar do carpo |\n\nLogo, o portal entre o 4º (extensor comum) e o 5º (extensor do mínimo) é o **4-5**. Ele fica no nível do semilunar, um pouco proximal ao 3-4 (pela inclinação radial do rádio), e serve para instrumentação e para visualizar o CFCT e o ligamento semilunopiramidal.",
-  "correta": "**4-5.** Fica entre o 4º compartimento (extensor comum dos dedos) e o 5º (extensor próprio do dedo mínimo).",
+  "conceito": "**Como os portais dorsais do punho recebem nome.** Os portais da artroscopia do punho são definidos pelos **compartimentos extensores** entre os quais a ótica ou o instrumental entra. Um portal \"3-4\" fica entre o 3º e o 4º compartimentos, e assim por diante.\n\n| Compartimento | Conteúdo |\n|---|---|\n| 1º | Abdutor longo e extensor curto do polegar |\n| 2º | Extensores radiais longo e curto do carpo |\n| 3º | Extensor longo do polegar |\n| 4º | **Extensor comum dos dedos** e extensor do indicador |\n| 5º | **Extensor do dedo mínimo** |\n| 6º | Extensor ulnar do carpo |\n\n**Os portais radiocárpicos principais.**\n\n| Portal | Localização | Uso |\n|---|---|---|\n| 1-2 | Entre o 1º e o 2º, na tabaqueira | Estiloide radial; risco à artéria radial e ao ramo superficial do nervo radial |\n| **3-4** | Entre o 3º e o 4º, cerca de 1 cm distal ao tubérculo de Lister | **Portal principal de visão** |\n| **4-5** | Entre o 4º e o 5º | Visão e instrumentação do lado ulnar (complexo da fibrocartilagem triangular) |\n| 6R | Radial ao extensor ulnar do carpo | Instrumentação ulnar, reparo da fibrocartilagem |\n| 6U | Ulnar ao extensor ulnar do carpo | Entrada de fluxo; risco ao ramo dorsal do nervo ulnar |\n\n**Portais mediocárpicos.** O mediocárpico radial (cerca de 1 cm distal ao 3-4, no espaço entre escafoide, semilunar e capitato) e o ulnar (distal ao 4-5) avaliam as instabilidades intercárpicas.\n\n**Princípio de segurança.** Antes de cada portal, distende-se a articulação com soro e localiza-se o ponto com agulha; a incisão é apenas da pele, e a dissecção é romba, para proteger os ramos sensitivos.",
+  "correta": "**Correta: B (4-5).** O portal 4-5 fica entre o 4º compartimento (**extensor comum dos dedos** e extensor do indicador) e o 5º (**extensor do dedo mínimo**).",
   "incorretas": {
-   "A": "O 3-4 fica entre o extensor longo do polegar e o extensor comum dos dedos.",
-   "C": "O 6R fica imediatamente radial ao extensor ulnar do carpo (6º compartimento).",
-   "D": "O 6U fica ulnar ao extensor ulnar do carpo.",
-   "E": "O 1-2 fica entre o 1º e o 2º compartimentos, junto ao estiloide radial."
+   "A": "O portal **3-4** fica entre o **extensor longo do polegar** e o extensor comum dos dedos; é o principal portal de visão.",
+   "C": "O portal **6R** fica **radial ao extensor ulnar do carpo** (6º compartimento), e não entre o 4º e o 5º.",
+   "D": "O portal **6U** fica **ulnar ao extensor ulnar do carpo**, perto do ramo dorsal do nervo ulnar.",
+   "E": "O portal **1-2** fica entre o **1º e o 2º compartimentos**, na tabaqueira anatômica."
   },
   "referencias": [
    "Wolfe SW et al. Green's Operative Hand Surgery. 8ª ed. Elsevier; 2022. Capítulo de artroscopia do punho."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0734": {
