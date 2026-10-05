@@ -3491,19 +3491,20 @@
   "conferido": false
  },
  "joelho-0289": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": "**Fibras do menisco.** As fibras circunferenciais convertem a carga axial em tensão circunferencial (hoop stress), resistindo à compressão. As radiais seguram as circunferenciais.\n\n**Na prova:** circunferenciais suportam a carga.",
-  "correta": "**Circunferenciais.** São as que transmitem a carga.",
+  "conceito": "**Arquitetura do colágeno no menisco.** O menisco é fibrocartilagem em forma de cunha, composta principalmente de **colágeno tipo I** (cerca de 90% do colágeno), água e proteoglicanos. A forma como as fibras estão orientadas explica como ele suporta carga e como ele rompe.\n\n**Como o menisco transforma compressão em tração.** Quando o fêmur comprime o menisco, a forma de cunha tende a **expulsá-lo para fora** da articulação (extrusão). As **fibras circunferenciais**, que correm ao longo de todo o arco do menisco e se ancoram nas raízes anterior e posterior na tíbia, resistem a essa expulsão ficando sob tração. Esse fenômeno é a **tensão circunferencial (hoop stress)**: a carga axial vira tensão ao longo do arco, como nos aros de um barril.\n\n**Organização das fibras.**\n\n| Fibras | Localização | Função |\n|---|---|---|\n| **Circunferenciais** | Camada profunda, a maioria das fibras | Suportam a tensão circunferencial; principal resistência à carga |\n| Radiais | Superfície e entremeadas às circunferenciais | Amarram as circunferenciais, resistindo à separação longitudinal |\n| Superficiais em malha | Superfícies articulares | Reduzem atrito e distribuem forças de cisalhamento |\n\n**Consequências clínicas.**\n- **Lesão radial** completa (que corta as fibras circunferenciais até a periferia) e **lesão da raiz** desfazem o aro: o menisco perde a função de carga, equivalendo funcionalmente a uma meniscectomia total, com aumento importante da pressão de contato.\n- **Lesão longitudinal** corre paralela às fibras circunferenciais e preserva melhor a função; na zona vascular periférica, é a mais reparável.\n- Por isso, a preservação das raízes e da borda periférica é princípio de toda meniscectomia parcial.\n\n> As fibras circunferenciais transformam compressão em tensão circunferencial e sustentam a carga do menisco.",
+  "correta": "**B: circunferenciais (resposta pela bibliografia).** As fibras circunferenciais, ancoradas nas raízes, convertem a carga compressiva em tensão circunferencial (hoop stress), principal mecanismo de resistência do menisco à compressão.",
   "incorretas": {
-   "A": "**Radiais.** Funcionam como amarras das circunferenciais.",
-   "C": "**Perfurantes.** Não são as principais.",
-   "D": "**Oblíqüas.** Não são as principais."
+   "A": "**As fibras radiais** amarram as circunferenciais e resistem à sua separação longitudinal, mas são minoria e não sustentam diretamente a carga compressiva.",
+   "C": "**Fibras perfurantes** não são um grupo funcional descrito na arquitetura do menisco; o termo lembra as fibras de Sharpey, que ancoram tendões e ligamentos ao osso.",
+   "D": "**Fibras oblíquas** fazem parte da malha superficial e de transição, contribuindo para o cisalhamento, sem papel principal na resistência à compressão."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 2183."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 2183.",
+   "Fithian DC, Kelly MA, Mow VC. Material properties and structure-function relationships in the menisci. Clin Orthop Relat Res. 1990;(252):19-31."
   ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "B",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "joelho-0290": {

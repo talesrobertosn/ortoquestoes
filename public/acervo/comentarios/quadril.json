@@ -5787,19 +5787,20 @@
   "conferido": false
  },
  "quadril-0485": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": "**Força dos abdutores.** No apoio unipodal, os abdutores geram força de cerca de duas vezes o peso corporal; a carga articular é cerca de três vezes.\n\n**Na prova:** abdutores 2 vezes o peso; carga 3 vezes.",
-  "correta": "**Duas vezes maior que o peso corporal.** É a força estimada.",
+  "conceito": "**Biomecânica do apoio unipodal e o teste de Trendelenburg.** No apoio sobre um só membro, o centro de gravidade do corpo fica medial ao quadril de apoio. O peso tende a fazer a pelve cair para o lado oposto. Quem impede isso são os **abdutores** do quadril de apoio (glúteo médio, glúteo mínimo e tensor da fáscia lata).\n\n**O cálculo de Pauwels.** O quadril funciona como uma alavanca de primeira classe, com o fulcro na cabeça femoral:\n- **Braço do peso**: distância do centro de gravidade (peso corporal menos o membro de apoio) até o centro da cabeça; é cerca de **duas a três vezes** maior que o braço dos abdutores.\n- **Braço dos abdutores**: distância do trocânter maior (linha de ação dos abdutores) ao centro da cabeça.\n- Para equilibrar, a **força dos abdutores** precisa ser cerca de **duas vezes o peso corporal**.\n- A **força de reação articular** é a soma vetorial do peso e da força abdutora, cerca de **três vezes o peso corporal** no apoio unipodal (maior na marcha e na corrida).\n\n**O teste de Trendelenburg.** Paciente em apoio unipodal: normalmente a pelve do lado oposto se mantém ou sobe. Se os abdutores forem insuficientes (fraqueza, paralisia, braço de alavanca curto, como na coxa vara, no trocânter alto ou na luxação congênita), a pelve contralateral cai: teste positivo.\n\n**Aplicações clínicas.**\n\n| Medida | Efeito na carga do quadril |\n|---|---|\n| Bengala na mão contralateral | Grande redução da força abdutora e da carga articular |\n| Inclinar o tronco sobre o quadril doente (marcha antálgica) | Encurta o braço do peso, reduz a carga |\n| Medializar o centro de rotação ou lateralizar o trocânter (artroplastia, osteotomia) | Aumenta a eficiência dos abdutores |\n\n> Apoio unipodal: abdutores fazem cerca de 2 vezes o peso; a articulação recebe cerca de 3 vezes.",
+  "correta": "**B: duas vezes maior que o peso corporal (resposta pela bibliografia).** Como o braço de alavanca do peso é cerca de duas vezes maior que o dos abdutores, estes precisam gerar aproximadamente o dobro do peso corporal para manter a pelve nivelada no apoio unipodal.",
   "incorretas": {
-   "A": "**Igual ao peso corporal.** Insuficiente.",
-   "C": "**Quatro vezes maior que o peso corporal.** Excessivo.",
-   "D": "**Seis vezes maior que o peso corporal.** Excessivo."
+   "A": "**Igual ao peso corporal** só seria suficiente se os braços de alavanca fossem iguais; o braço dos abdutores é bem menor que o do peso.",
+   "C": "**Quatro vezes** superestima a força abdutora no apoio estático; valores dessa ordem aparecem para a carga articular em atividades dinâmicas, como subir escadas ou correr.",
+   "D": "**Seis vezes** é ordem de grandeza da reação articular em situações de alta demanda (tropeço, salto), não da força abdutora no apoio unipodal."
   },
   "referencias": [
-   "Hebert Sizínio et al. Ortopedia e traumatologia: princípios e prática. Porto Alegre: Artmed. 3ª ed., p. 365."
+   "Hebert Sizínio et al. Ortopedia e traumatologia: princípios e prática. Porto Alegre: Artmed. 3ª ed., p. 365.",
+   "Pauwels F. Biomechanics of the normal and diseased hip. Berlin: Springer-Verlag; 1976."
   ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "B",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "quadril-0486": {

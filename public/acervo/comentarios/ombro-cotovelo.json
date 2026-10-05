@@ -4816,19 +4816,20 @@
   "conferido": false
  },
  "ombro-cotovelo-0484": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": "**Estabilidade em varo do cotovelo.** Em flexão de 90 graus, a geometria óssea fornece cerca de 75% da resistência ao varo.\n\n**Na prova:** em flexão, osso é o estabilizador ao varo.",
-  "correta": "**A geometria óssea da articulação.** A congruência óssea é a principal.",
+  "conceito": "**Estabilizadores do cotovelo.** O cotovelo é uma das articulações mais congruentes do corpo. Sua estabilidade vem de três estabilizadores primários (a articulação ulnoumeral, o ligamento colateral medial, sobretudo o feixe anterior, e o complexo ligamentar lateral, sobretudo o colateral ulnar lateral) e de estabilizadores secundários (cabeça do rádio, cápsula e músculos flexores-pronadores e extensores).\n\n**O estudo de Morrey e An.** Em cadáveres, mediram a contribuição de cada estrutura ao estresse em varo e em valgo.\n\n| Estresse e posição | Geometria óssea | Partes moles |\n|---|---|---|\n| **Varo em 90 graus** | **Cerca de 75%** | Cápsula cerca de 13%, colateral lateral cerca de 9% |\n| Varo em extensão | Cerca de 55% | Cápsula cerca de 32%, colateral lateral cerca de 14% |\n| Valgo em 90 graus | Cerca de 33% | Colateral medial cerca de 55% |\n| Valgo em extensão | Cerca de 33% | Divisão semelhante entre colateral medial e cápsula |\n\n**Por que o osso domina no varo em flexão.** Com o cotovelo fletido, o olécrano fica encaixado profundamente na fossa e a **incisura troclear da ulna abraça a tróclea**, resistindo à abertura lateral. Por isso, perdas do processo coronoide (sobretudo a faceta anteromedial) tornam o cotovelo instável em varo.\n\n**Lição clínica.** Na instabilidade em varo posteromedial, o essencial é restaurar a faceta anteromedial do coronoide e o colateral lateral; no valgo, o colateral medial é o estabilizador principal em flexão, como no arremessador.\n\n> Varo com o cotovelo fletido: a geometria óssea responde por cerca de 75% da estabilidade.",
+  "correta": "**B: a geometria óssea da articulação (resposta pela bibliografia).** Em 90 graus de flexão, o encaixe da incisura troclear na tróclea responde por cerca de 75% da resistência ao varo, segundo Morrey e An.",
   "incorretas": {
-   "A": "**A cápsula articular.** Pouca contribuição em flexão.",
-   "C": "**O ligamento de COOPER.** Não é estabilizador ao varo.",
-   "D": "**O ligamento colateral lateral.** Contribuição pequena."
+   "A": "**A cápsula articular** contribui mais em extensão (cerca de um terço da resistência ao varo); em flexão, sua participação cai para cerca de 13%.",
+   "C": "**O ligamento de Cooper**, nome clássico do feixe transverso do ligamento colateral medial, une dois pontos da ulna e praticamente não contribui para a estabilidade, muito menos ao varo.",
+   "D": "**O ligamento colateral lateral** é estabilizador primário contra instabilidade rotatória posterolateral, mas, no varo em flexão, responde por apenas cerca de 9% da resistência."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 11ª ed., p. 526."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 11ª ed., p. 526.",
+   "Morrey BF, An KN. Articular and ligamentous contributions to the stability of the elbow joint. Am J Sports Med. 1983;11(5):315-319."
   ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "B",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "ombro-cotovelo-0485": {
