@@ -6547,19 +6547,20 @@
   "conferido": false
  },
  "mao-0625": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": "**Luxação complexa do indicador.** A placa volar se interpõe e é o principal obstáculo à redução.\n\n**Na prova:** a placa volar impede a redução.",
-  "correta": "**A placa volar.** É o principal obstáculo.",
+  "conceito": "**Luxação dorsal da metacarpofalângica do indicador.** As luxações dorsais das metacarpofalângicas (MCF) ocorrem por hiperextensão. São mais comuns no **indicador** e no polegar.\n\n**Simples versus complexa.**\n- **Simples (subluxação)**: a falange proximal fica em hiperextensão sobre a cabeça do metacarpo, com a placa volar ainda à frente da cabeça. Reduz com manobra fechada.\n- **Complexa (irredutível, descrita por Kaplan)**: a falange proximal fica paralela ao metacarpo (dedo quase alinhado, com leve hiperextensão), e a **placa volar** se interpõe dorsalmente à cabeça do metacarpo, entre a cabeça e a base da falange. Há uma **covinha** (depressão cutânea) na prega palmar e a radiografia mostra o **sesamoide** dentro do espaço articular alargado (sinal patognomônico).\n\n**O mecanismo do encarceramento.** A cabeça do metacarpo atravessa os tecidos volares como num laço:\n- **Lumbrical** do lado radial.\n- **Tendões flexores** do lado ulnar.\n- **Ligamento transverso superficial** (natatório) e ligamento metacarpal transverso profundo.\n- **Placa volar** interposta na articulação.\n\nA tração **aperta** esse laço e impede a redução. O **principal obstáculo** é a **placa volar** interposta.\n\n**Tratamento.**\n- Tentativa de redução fechada **sem tração**: flexão do punho para relaxar os flexores e empurrar a base da falange sobre a cabeça (deslizamento, não tração). A hiperextensão e a tração podem converter uma luxação simples em complexa.\n- Se irredutível: **redução aberta** por via volar (cuidado com o nervo digital radial, que fica superficial e esticado sobre a cabeça) ou dorsal (divisão longitudinal da placa volar).\n\n> Luxação dorsal complexa da MCF do indicador: a placa volar interposta é o principal obstáculo à redução.",
+  "correta": "**B: a placa volar (resposta pela bibliografia).** Na luxação dorsal complexa da metacarpofalângica do indicador, a placa volar se interpõe entre a cabeça do metacarpo e a base da falange proximal, sendo o principal obstáculo à redução. O lumbrical e os tendões flexores formam um laço ao redor do colo do metacarpo, que se aperta com a tração.",
   "incorretas": {
-   "A": "**O tendão flexor.** Participa, mas não é o principal.",
-   "C": "**O músculo lumbrical.** Participa, mas não é o principal.",
-   "D": "**O ligamento transverso superficial.** Participa, mas não é o principal."
+   "A": "**O tendão flexor** contribui para o laço ao redor da cabeça do metacarpo (do lado ulnar), mas não é o principal obstáculo; a estrutura interposta na articulação é a placa volar.",
+   "C": "**O lumbrical** forma o lado radial do laço que aprisiona a cabeça do metacarpo, mas também é um fator secundário.",
+   "D": "**O ligamento transverso superficial** (natatório) participa da constrição proximal, mas o obstáculo principal é a placa volar."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 11ª ed., pg. 3942."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 11ª ed., pg. 3942.",
+   "Kaplan EB. Dorsal dislocation of the metacarpophalangeal joint of the index finger. J Bone Joint Surg Am. 1957;39-A(5):1081-1086."
   ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "B",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0626": {

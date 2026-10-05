@@ -9277,19 +9277,20 @@
   "conferido": false
  },
  "pediatria-0777": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "C",
-  "conceito": "**Etiologia do pé torto.** Considerada multifatorial, com fatores genéticos e ambientais.\n\n**Na prova:** pé torto idiopático é multifatorial.",
-  "correta": "**A herança multifatorial.** É a etiologia mais aceita.",
+  "conceito": "**Etiologia do pé torto congênito idiopático.** A causa exata não é conhecida. O modelo mais aceito é **multifatorial**: a interação entre predisposição **genética** (vários genes) e fatores **ambientais**.\n\n**Evidências genéticas.**\n- Agregação familiar: o risco é cerca de 20 a 30 vezes maior para irmãos de afetados; concordância maior em gêmeos monozigóticos (cerca de 33%) que em dizigóticos (cerca de 3%), mas não total, o que reforça a participação ambiental.\n- **Paradoxo de Carter**: quando o sexo menos afetado (feminino) tem pé torto, o risco para os parentes é maior, característica da herança multifatorial com limiar.\n- Genes associados: **PITX1**, **TBX4**, genes da via HOX e de contração muscular.\n- Variação étnica (mais comum em polinésios, menos em chineses).\n\n**Fatores ambientais.** Tabagismo materno (com interação gene-ambiente), oligoidrâmnio, amniocentese precoce, estações do ano (sugerindo fatores virais).\n\n**Teorias de mecanismo (não excludentes).**\n- **Neuromuscular**: alterações nos músculos posteromediais da perna (território do nervo tibial).\n- **Fibrose retrátil**: aumento de colágeno e miofibroblastos nos tecidos mediais.\n- **Parada do desenvolvimento**: o pé ficaria preso numa fase fetal de equino e varo (teoria de Böhm).\n- **Vascular**: anomalias da artéria tibial anterior.\n- **Mecânica** (posição intrauterina): explica o pé postural, mas não o pé torto rígido.\n\n**Formas não idiopáticas.** Associadas a mielomeningocele, artrogripose e síndromes; mais rígidas e com maior recidiva.\n\n> Pé torto congênito idiopático: etiologia multifatorial (genética e ambiental).",
+  "correta": "**C: a herança multifatorial (resposta pela bibliografia).** O pé torto congênito idiopático tem etiologia multifatorial, com predisposição genética (vários genes, agregação familiar, diferenças entre gêmeos) e fatores ambientais (como o tabagismo materno). As outras teorias descrevem mecanismos possíveis, mas não explicam isoladamente a doença.",
   "incorretas": {
-   "A": "**O desequilíbrio neuromuscular.** Teoria sem confirmação.",
-   "B": "**O defeito do plasma germinativo.** Teoria antiga.",
-   "D": "**A interrupção do desenvolvimento fetal.** Teoria sem confirmação."
+   "A": "**O desequilíbrio neuromuscular** é uma das teorias de mecanismo, com alterações nos músculos posteromediais, mas não é aceito como causa única do pé torto idiopático.",
+   "B": "**O defeito do plasma germinativo** (teoria de Irani e Sherman, com anomalia primária do tálus) foi proposto, mas não é considerado a etiologia principal.",
+   "D": "**A interrupção do desenvolvimento fetal** (teoria de Böhm) também é uma hipótese histórica, que não explica todos os achados."
   },
   "referencias": [
-   "Tachdjian M.O. Pediatric orthopaedics. Philadelphia: Saunders. 4ª ed., pg. 1070."
+   "Tachdjian M.O. Pediatric orthopaedics. Philadelphia: Saunders. 4ª ed., pg. 1070.",
+   "Dobbs MB, Gurnett CA. Update on clubfoot: etiology and treatment. Clin Orthop Relat Res. 2009;467(5):1146-1153."
   ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "C",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0778": {
