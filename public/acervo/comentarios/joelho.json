@@ -1213,14 +1213,18 @@
   "conferido": false
  },
  "joelho-0103": {
-  "conceito": "### Onde o tendão patelar rompe\n- Mais frequente na porção ==proximal==, no **polo inferior da patela**.\n- Muitas vezes com um pequeno ==fragmento ósseo avulsionado== (\"sleeve\" em crianças é outra entidade: avulsão cartilaginosa do polo inferior).\n- A junção osteotendínea proximal é a zona de maior degeneração (tendinopatia do saltador).\n\n### Menos comuns\n- **Meio da substância:** trauma, cirurgia prévia.\n- **Distal** (tuberosidade): avulsão da tuberosidade no **adolescente** (classificação de Ogden).\n\n### Tratamento\n- **Proximal:** suturas passadas por **túneis transpatelares** longitudinais ou âncoras; **cerclagem de proteção** patelotibial em casos selecionados.\n- Mobilização protegida precoce.\n\n### Complicações\nPatela baixa (se cerclagem apertada), rigidez, fraqueza.\n\n> **Na prova:** ruptura do tendão patelar mais frequente = ==proximal, com avulsão óssea== (pelo gabarito).",
-  "correta": "**Proximal, com avulsão óssea.**",
+  "conceito": "**O tendão patelar e onde ele falha.** O ligamento (tendão) patelar vai do polo inferior da patela à tuberosidade anterior da tíbia. Sua ruptura é menos comum que a do tendão quadricipital e ocorre tipicamente em **pacientes mais jovens**, abaixo de 40 anos, por contração excêntrica violenta do quadríceps com o joelho fletido (aterrissagem de salto, tropeço).\n\n**Por que a ruptura é proximal.** A junção osteotendínea no **polo inferior da patela** é a região de maior concentração de tensão e de degeneração do tendão. É o mesmo local da **tendinopatia patelar** (joelho do saltador), em que microlesões repetidas e degeneração mucoide enfraquecem as fibras. Corticoide local, doenças sistêmicas (lúpus, artrite reumatoide, insuficiência renal crônica) e fluoroquinolonas aumentam o risco.\n\n| Local | Frequência | Particularidade |\n|---|---|---|\n| **Proximal (polo inferior da patela)** | **Mais comum** | Frequentemente com **pequeno fragmento ósseo** avulsionado |\n| Substância média | Menos comum | Trauma direto, ferida, pós-cirúrgica (enxerto do terço central) |\n| Distal (tuberosidade) | Rara no adulto | No adolescente, associa-se à apófise (Osgood-Schlatter, fratura da tuberosidade) |\n\n**Diagnóstico.** Incapacidade de estender ativamente o joelho ou manter a perna estendida elevada, falha palpável abaixo da patela e **patela alta** na radiografia em perfil (Insall-Salvati aumentado). O pequeno fragmento ósseo do polo inferior, quando presente, é visível no perfil.\n\n**Tratamento.** Reparo cirúrgico precoce, com suturas transósseas pela patela, frequentemente com reforço (cerclagem ou fita) para proteger o reparo durante a reabilitação. O atraso leva à retração do quadríceps e torna necessária a reconstrução.\n\n**Diferencial na criança.** A **fratura em manga** (sleeve fracture) é a avulsão de uma grande manga de cartilagem do polo inferior da patela com pequeno fragmento ósseo. É outra entidade, típica de 8 a 12 anos.",
+  "correta": "**Correta: B (proximal, com avulsão óssea).** A ruptura do tendão patelar ocorre com mais frequência na junção com o polo inferior da patela, zona de maior tensão e degeneração, muitas vezes levando um pequeno fragmento ósseo.",
   "incorretas": {
-   "A": "**Menos típica.**",
-   "C": "**Distal é menos frequente.**",
-   "D": "**Distal é menos frequente.**"
+   "A": "A localização **proximal** está certa, mas a forma mais frequente descrita é com **pequena avulsão óssea** do polo inferior, e não a desinserção pura.",
+   "C": "A ruptura **distal** junto à tuberosidade é rara no adulto.",
+   "D": "A **avulsão óssea distal** da tuberosidade é típica do adolescente com fise aberta (fratura da tuberosidade anterior da tíbia), não da ruptura do tendão do adulto."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 48",
+   "Rockwood and Green's Fractures in Adults, 9ª edição, capítulo de lesões do mecanismo extensor"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "joelho-0104": {
@@ -1625,17 +1629,18 @@
   "conferido": false
  },
  "joelho-0137": {
-  "conceito": "Na instabilidade patelar do adulto sem displasia troclear associada, a osteotomia de realinhamento distal (medialização da tuberosidade tibial) é indicada quando o índice tomográfico TA-GT (distância entre a tuberosidade anterior da tíbia e o sulco troclear) atinge um valor igual ou superior a 20 mm, considerado o limiar a partir do qual o desalinhamento do mecanismo extensor é significativo o suficiente para justificar a correção cirúrgica óssea.",
-  "correta": "C. A indicação de osteotomia de realinhamento distal nesse contexto ocorre com TA-GT igual ou superior a 20 mm.",
+  "conceito": "**O que é o TA-GT.** É a distância, medida na **tomografia** em cortes axiais sobrepostos, entre a **tuberosidade anterior da tíbia (TA)** e o **fundo do sulco troclear (GT, garganta da tróclea)**, projetadas numa linha paralela aos côndilos posteriores. Ela quantifica a lateralização do vetor do tendão patelar: quanto maior, mais a contração do quadríceps puxa a patela para fora.\n\n**Os fatores de instabilidade de Dejour (1994).** No estudo clássico que comparou joelhos com luxação recidivante e joelhos normais, quatro fatores principais se destacaram:\n\n| Fator | Limiar patológico |\n|---|---|\n| Displasia troclear | Sinal do cruzamento no perfil |\n| **TA-GT aumentado** | **20 mm ou mais** |\n| Patela alta | Índice de Caton-Deschamps acima de 1,2 |\n| Inclinação patelar | Acima de 20° na TC |\n\nEm joelhos normais, o TA-GT médio fica em torno de 12 a 13 mm; nos instáveis, a maioria tem valores iguais ou superiores a 20 mm.\n\n**A lógica do tratamento à la carte.** Cada fator anormal é corrigido especificamente.\n- **TA-GT de 20 mm ou mais**: **medialização da tuberosidade** (osteotomia de Elmslie-Trillat, ou de Fulkerson se houver condropatia), buscando um valor final de 10 a 15 mm.\n- **Patela alta**: distalização da tuberosidade.\n- **Displasia troclear grave**: trocleoplastia.\n- Quase sempre se associa a reconstrução do **ligamento patelofemoral medial**, o principal estabilizador medial nos primeiros graus de flexão.\n\n**Cuidado com a hipercorreção.** Medializar além do necessário aumenta a pressão no compartimento medial e na faceta medial da patela, causando dor e artrose. Por isso a osteotomia só é indicada quando o TA-GT está realmente aumentado.",
+  "correta": "**Correta: C (20 mm).** Na instabilidade patelar sem displasia troclear, um TA-GT igual ou superior a **20 mm** é o limiar de Dejour para considerar a medialização da tuberosidade anterior da tíbia.",
   "incorretas": {
-   "A": "O valor de 10 mm está dentro da faixa considerada normal ou próxima da normalidade, não justificando por si só a indicação cirúrgica.",
-   "B": "O valor de 15 mm ainda é considerado um valor limítrofe, inferior ao limiar de 20 mm usado como indicação de osteotomia nesse contexto.",
-   "D": "O valor de 25 mm excede o limiar mínimo estabelecido de 20 mm; embora também indicasse cirurgia, não corresponde ao valor mínimo citado na literatura como ponto de corte."
+   "A": "**10 mm** está dentro da faixa normal e é próximo do valor que se busca **após** a correção.",
+   "B": "**15 mm** ainda é considerado normal ou limítrofe; medializar com esse valor arrisca hipercorreção.",
+   "D": "**25 mm** é claramente patológico, mas esperar esse valor deixaria de tratar muitos joelhos com TA-GT entre 20 e 25 mm, que já se beneficiam da osteotomia."
   },
   "referencias": [
+   "Dejour H, Walch G, Nove-Josserand L, Guier C. Factors of patellar instability: an anatomic radiographic study. Knee Surg Sports Traumatol Arthrosc. 1994;2(1):19-26.",
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 47"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "joelho-0138": {
@@ -2440,17 +2445,18 @@
   "conferido": false
  },
  "joelho-0203": {
-  "conceito": "O joelho é classicamente descrito como uma articulação do tipo gínglimo modificado, associado a um componente trocoide, pois permite não apenas flexão e extensão, mas também certo grau de rotação axial da tíbia em relação ao fêmur, rotação essa que só ocorre com o joelho fletido. Em extensão completa, o mecanismo de tela do parafuso (screw-home mechanism) e o tensionamento ligamentar travam a articulação, restringindo os movimentos rotacionais.",
-  "correta": "C. O joelho é gínglimo e trocoide, mas os movimentos rotacionais ficam restringidos quando a articulação está em extensão completa.",
+  "conceito": "**Classificação das articulações sinoviais pelo movimento.** As articulações sinoviais são agrupadas pela forma das superfícies e pelos eixos de movimento.\n\n| Tipo | Movimento | Exemplo |\n|---|---|---|\n| **Gínglimo** (dobradiça) | Flexão e extensão em um eixo | Interfalângicas, umeroulnar |\n| **Trocoide** (pivô) | Rotação em torno do eixo longitudinal | Radioulnar proximal, atlantoaxial |\n| Condilar, selar, esferoide | Dois ou três eixos | Metacarpofalângica, trapeziometacarpal, quadril |\n\n**O joelho é um gínglimo modificado com componente trocoide.** O movimento principal é a flexão e extensão, mas a tíbia também roda sobre o fêmur em torno do seu eixo longitudinal. Essa rotação, porém, **depende da posição**:\n- **Em extensão completa**, a rotação é praticamente nula. Os ligamentos colaterais e os cruzados estão tensos, os côndilos encaixam-se nos meniscos com a maior área de contato, e o joelho trava.\n- **Em flexão**, sobretudo em torno de 90°, os colaterais afrouxam e a tíbia pode rodar cerca de 30 a 40° no total, interna e externamente.\n\n**O mecanismo de parafuso (screw-home).** Nos últimos graus de extensão, a tíbia roda **externamente** sobre o fêmur (ou o fêmur roda internamente sobre a tíbia fixa no apoio). Isso ocorre porque o côndilo femoral medial tem superfície articular mais longa que o lateral: o lateral termina o rolamento antes, e o medial continua, produzindo a rotação. O resultado é o **travamento** em extensão, que permite ficar em pé com pouco gasto muscular. Para destravar e iniciar a flexão, o **poplíteo** roda a tíbia internamente.\n\n**Aplicação.** Testes rotatórios (como o de Dial para o canto posterolateral) são feitos com o joelho fletido a 30° e 90°, justamente porque em extensão não há rotação a avaliar.",
+  "correta": "**Correta: C.** O joelho combina características de **gínglimo** (flexão e extensão) e **trocoide** (rotação axial), mas a rotação fica **restrita em extensão completa**, quando o mecanismo de parafuso e a tensão ligamentar travam a articulação.",
   "incorretas": {
-   "A": "Descrever o joelho apenas como gínglimo ignora o componente rotacional (trocoide) que a articulação também apresenta durante a flexão.",
-   "B": "O joelho não é uma articulação puramente trocoide, já que também permite flexão e extensão como movimento predominante.",
-   "D": "Os movimentos rotacionais não ocorrem em toda a amplitude de movimento, eles ficam restringidos justamente na extensão completa, pelo mecanismo de tela do parafuso."
+   "A": "Descrever o joelho como gínglimo puro ignora a **rotação axial** da tíbia, que existe e é clinicamente importante com o joelho fletido.",
+   "B": "O joelho não é uma articulação apenas rotacional; seu movimento principal é a **flexão e extensão**.",
+   "D": "A rotação **não ocorre em toda a amplitude**. Em extensão completa ela é praticamente abolida pelo travamento do screw-home."
   },
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 45"
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 45",
+   "Moore KL, Dalley AF, Agur AMR. Anatomia orientada para a clínica, 8ª edição. Guanabara Koogan."
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "joelho-0204": {

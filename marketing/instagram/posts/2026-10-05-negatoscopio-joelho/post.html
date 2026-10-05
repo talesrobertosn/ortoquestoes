@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Negatoscópio do joelho</title>
+<!-- Post extra de 5/10/2026: carrossel de 9 slides (1080x1350) e 1 story (1080x1920).
+     Estilo negatoscópio: cinco medidas do raio-X do joelho (perfil e axial de Merchant) em filmes
+     desenhados em SVG (esquemas próprios, não são radiografias reais).
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-05-negatoscopio-joelho/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+:root { --ouro: #F4CF7C; --menta: #7fe0c8; --rosa: #f29b93; --tinta: #0B3A35; --creme: #FBF6EA; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1350px; color: #fff; padding: 60px 72px;
+  background: radial-gradient(ellipse at 50% 52%, rgba(170,215,255,.13), transparent 60%), radial-gradient(circle at 1px 1px, rgba(255,255,255,.04) 1.2px, transparent 1.4px) 0 0/30px 30px, linear-gradient(180deg, #0b1517, #101d20); }
+section.story { height: 1920px; }
+.medida .negato { margin-left: 70px; margin-right: 70px; margin-top: 30px; }
+.medida .sub { font-size: 29px; margin-top: 24px !important; }
+.medida .extra { font-size: 24px; padding: 18px 24px; }
+.topo { display: flex; justify-content: space-between; align-items: center; }
+.marca { display: flex; align-items: center; gap: 14px; font: 32px Jakarta; letter-spacing: -.02em; }
+.marca svg { width: 50px; height: 50px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; opacity: .9; }
+.cont { font: 700 25px Jakarta; color: rgba(255,255,255,.45); letter-spacing: .08em; }
+.pills { display: flex; gap: 12px; margin-top: 30px; }
+.pill { padding: 8px 20px; border-radius: 99px; font: 800 21px Jakarta; letter-spacing: .13em; text-transform: uppercase; border: 2px solid var(--ouro); color: var(--ouro); }
+.pill.f { background: var(--ouro); color: var(--tinta); }
+h1 { font: 800 96px/1 Jakarta; letter-spacing: -.045em; margin-top: 26px; }
+h2 { font: 800 64px/1.04 Jakarta; letter-spacing: -.04em; margin-top: 18px; }
+h1 em, h2 em { font-style: normal; color: var(--ouro); }
+.sub { font-size: 32px; line-height: 1.42; color: rgba(255,255,255,.78); text-wrap: pretty; }
+.sub b { color: #fff; } .sub .o { color: var(--ouro); font-weight: 700; } .sub .m { color: var(--menta); font-weight: 700; }
+/* negatoscópio */
+.negato { position: relative; margin-top: 34px; padding: 20px; border-radius: 22px; background: linear-gradient(180deg, #f4fbff, #d6e7f1);
+  box-shadow: 0 0 90px rgba(170,215,255,.35), 0 0 0 6px #2b3b40, 0 0 0 9px #18242a, 0 30px 70px rgba(0,0,0,.55); }
+.clip { position: absolute; top: -16px; width: 96px; height: 38px; border-radius: 7px; background: linear-gradient(180deg, #e8ecef, #8f9aa1 60%, #c7ced3); box-shadow: 0 4px 10px rgba(0,0,0,.4); z-index: 3; }
+.filme { position: relative; border-radius: 8px; overflow: hidden; background: #03070b; }
+.filme svg { display: block; width: 100%; }
+.filme .tag { position: absolute; left: 22px; top: 18px; font: 800 22px Jakarta; letter-spacing: .14em; color: rgba(230,240,255,.8); }
+.filme .esq { position: absolute; right: 22px; bottom: 16px; font: 600 19px Inter; color: rgba(230,240,255,.45); }
+.filme .lado { position: absolute; bottom: 16px; font: 800 26px Jakarta; color: rgba(230,240,255,.85); }
+.rodape { position: absolute; left: 72px; right: 72px; bottom: 46px; display: flex; justify-content: space-between; font: 700 25px Jakarta; color: rgba(255,255,255,.5); }
+.rodape b { color: var(--ouro); }
+/* svg */
+.osso { fill: url(#gOsso); stroke: rgba(225,240,255,.85); stroke-width: 3; filter: url(#rx); }
+.mole { fill: none; stroke: rgba(200,220,240,.18); stroke-linecap: round; }
+.ln-o { stroke: var(--ouro); stroke-width: 6; stroke-linecap: round; fill: none; }
+.ln-m { stroke: var(--menta); stroke-width: 5; stroke-linecap: round; fill: none; }
+.ln-e { stroke: rgba(255,255,255,.9); stroke-width: 4; stroke-dasharray: 3 12; stroke-linecap: round; fill: none; }
+.ln-r { stroke: var(--rosa); stroke-width: 4; stroke-linecap: round; fill: none; }
+.pt { fill: #fff; stroke: var(--tinta); stroke-width: 3; }
+.rot { font: 800 30px Jakarta; paint-order: stroke; stroke: #03070b; stroke-width: 8px; }
+/* mapa */
+.grade { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 30px; }
+.col { border-radius: 26px; padding: 30px; background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.12); }
+.col h3 { font: 800 24px Jakarta; letter-spacing: .14em; text-transform: uppercase; color: var(--ouro); }
+.col p.inc { font-size: 24px; color: rgba(255,255,255,.6); margin-top: 6px; line-height: 1.35; }
+.med { display: grid; grid-template-columns: 54px 1fr; gap: 16px; margin-top: 22px; align-items: start; }
+.med b { width: 54px; height: 54px; border-radius: 14px; display: grid; place-items: center; background: var(--ouro); color: var(--tinta); font: 800 26px Jakarta; }
+.med strong { display: block; font: 800 30px Jakarta; letter-spacing: -.02em; }
+.med span { font-size: 24px; line-height: 1.35; color: rgba(255,255,255,.66); }
+.leg { margin-top: 22px; border-radius: 22px; padding: 22px 28px; background: #08100f; display: grid; grid-template-columns: 1fr 1fr; gap: 12px 24px; font: 600 23px Inter; color: rgba(255,255,255,.8); }
+.leg span { display: flex; align-items: center; gap: 14px; }
+.leg i { width: 46px; height: 0; border-top: 6px solid; display: inline-block; }
+/* cola */
+.cola { margin-top: 30px; border-radius: 30px; background: var(--creme); color: var(--tinta); padding: 18px 40px; box-shadow: 0 30px 70px rgba(0,0,0,.45); }
+.lin { display: grid; grid-template-columns: 1fr auto; gap: 4px 20px; padding: 20px 0; border-bottom: 2px solid rgba(11,58,53,.12); align-items: baseline; }
+.lin:last-child { border-bottom: 0; }
+.lin strong { font: 800 34px Jakarta; letter-spacing: -.02em; }
+.lin strong small { font: 700 20px Jakarta; letter-spacing: .12em; text-transform: uppercase; color: #8a6a2a; margin-left: 10px; }
+.lin .v { font: 800 36px Jakarta; color: #14655e; text-align: right; }
+.lin p { grid-column: 1 / -1; font-size: 25px; color: #4a625e; line-height: 1.3; }
+.lin p b { color: #b3423a; }
+.extra { margin-top: 24px; padding: 22px 28px; border-radius: 22px; border: 2px dashed rgba(244,207,124,.6); font-size: 26px; line-height: 1.4; color: rgba(255,255,255,.82); }
+.extra b { color: var(--ouro); }
+/* quiz */
+.caso { margin-top: 26px; border-radius: 26px; padding: 30px 36px; background: #14655e; font-size: 31px; line-height: 1.42; }
+.caso b { color: var(--ouro); }
+.alts { display: grid; gap: 16px; margin-top: 26px; }
+.alts div { display: flex; gap: 22px; align-items: center; padding: 22px 26px; border-radius: 20px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.16); font: 700 30px Jakarta; letter-spacing: -.01em; }
+.alts b { flex: none; width: 56px; height: 56px; border-radius: 50%; background: var(--ouro); color: var(--tinta); display: grid; place-items: center; font: 800 27px Jakarta; }
+.cta { margin-top: 30px; padding: 24px 32px; border-radius: 22px; background: var(--ouro); color: var(--tinta); font: 800 31px Jakarta; text-align: center; }
+.figurinha { height: 330px; border: 3px dashed rgba(255,255,255,.35); border-radius: 30px; display: grid; place-items: center; font: 600 28px Inter; color: rgba(255,255,255,.45); }
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/>
+<circle cx="17" cy="20" r="4.5" fill="#9cc3bd"/><rect x="26" y="16.5" width="24" height="7" rx="3.5" fill="#9cc3bd"/>
+<circle cx="17" cy="32" r="4.5" fill="#f4cf7c"/><rect x="26" y="28.5" width="24" height="7" rx="3.5" fill="#f4cf7c"/>
+<circle cx="17" cy="44" r="4.5" fill="#9cc3bd"/><rect x="26" y="40.5" width="19" height="7" rx="3.5" fill="#9cc3bd"/></symbol>
+<radialGradient id="gOsso" cx="50%" cy="40%" r="70%"><stop offset="0" stop-color="#a9c6dc" stop-opacity=".55"/><stop offset=".7" stop-color="#6f93ad" stop-opacity=".38"/><stop offset="1" stop-color="#c9def0" stop-opacity=".6"/></radialGradient>
+<filter id="rx" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" result="n"/><feColorMatrix in="n" type="saturate" values="0" result="g"/>
+<feComposite in="g" in2="SourceGraphic" operator="in" result="t"/><feBlend in="SourceGraphic" in2="t" mode="screen" result="b"/><feGaussianBlur in="b" stdDeviation=".8"/></filter>
+<filter id="nevoa"><feGaussianBlur stdDeviation="18"/></filter>
+<!-- Perfil do joelho (anterior à direita) -->
+<symbol id="perfil" viewBox="0 0 800 900">
+  <ellipse cx="450" cy="470" rx="300" ry="420" fill="rgba(120,160,200,.10)" filter="url(#nevoa)"/>
+  <path class="mole" stroke-width="34" d="M632 292 C610 220 575 160 540 110"/>
+  <path class="mole" stroke-width="26" d="M600 470 L572 678"/>
+  <path class="osso" style="opacity:.7" d="M286 690 L300 900 L326 900 L318 690 Z"/>
+  <ellipse class="osso" style="opacity:.75" cx="302" cy="662" rx="32" ry="40"/>
+  <path class="osso" d="M300 0 L300 250 C290 330 270 380 285 440 C300 520 380 562 450 556 C530 550 575 500 575 430 C575 380 545 330 530 290 L520 0 Z"/>
+  <path class="osso" d="M285 604 C280 594 290 589 300 592 L560 560 C585 558 592 574 586 596 C580 636 570 656 572 678 C575 700 560 720 540 760 L525 900 L360 900 L345 760 C320 700 290 664 285 604 Z"/>
+  <ellipse class="osso" cx="615" cy="380" rx="42" ry="95" transform="rotate(-10 615 380)"/>
+</symbol>
+<!-- Axial de Merchant (anterior acima) -->
+<symbol id="axial" viewBox="0 0 800 700">
+  <ellipse cx="400" cy="420" rx="380" ry="300" fill="rgba(120,160,200,.10)" filter="url(#nevoa)"/>
+  <path class="osso" d="M70 700 L80 560 C90 470 150 380 220 350 C290 330 360 400 400 420 C440 400 520 330 610 330 C680 335 720 450 730 560 L740 700 Z"/>
+  <path class="osso" d="M240 305 L397 372 L590 285 C600 230 520 165 420 160 C320 160 240 220 240 305 Z"/>
+</symbol>
+<symbol id="axial2" viewBox="0 0 800 700">
+  <ellipse cx="400" cy="420" rx="380" ry="300" fill="rgba(120,160,200,.10)" filter="url(#nevoa)"/>
+  <path class="osso" d="M70 700 L80 560 C90 480 150 390 220 360 C290 350 360 395 400 400 C440 395 520 345 610 345 C680 350 720 450 730 560 L740 700 Z"/>
+  <g transform="translate(95 18) rotate(-9 420 260)"><path class="osso" d="M240 305 L397 372 L590 285 C600 230 520 165 420 160 C320 160 240 220 240 305 Z"/></g>
+</symbol>
+</defs></svg>
+
+<!-- 1. Capa -->
+<section id="r1-capa">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">1/9</span></div>
+  <div class="pills"><span class="pill f">Joelho</span><span class="pill">Radiografia</span></div>
+  <h1>Cinco números<br>escondidos em <em>dois filmes.</em></h1>
+  <div class="negato"><div class="clip" style="left:140px"></div><div class="clip" style="right:140px"></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+      <div class="filme"><svg viewBox="170 140 620 780"><use href="#perfil" width="800" height="900"/>
+        <text class="rot" x="560" y="700" fill="#F4CF7C" style="font-size:44px">Insall = ?</text><text class="rot" x="190" y="540" fill="#F4CF7C" style="font-size:44px">slope = ?</text></svg>
+        <span class="tag">PERFIL</span></div>
+      <div class="filme" style="display:grid;align-items:center"><svg viewBox="40 120 720 640"><use href="#axial" width="800" height="700"/>
+        <text class="rot" x="400" y="520" text-anchor="middle" fill="#F4CF7C" style="font-size:50px">sulco = ?</text></svg>
+        <span class="tag">AXIAL</span><span class="esq">Esquema ilustrativo</span></div>
+    </div>
+  </div>
+  <p class="sub" style="margin-top:34px">Perfil e axial do joelho. <b>Cinco medidas que a banca cobra</b>, com o valor normal e onde cada uma engana.</p>
+  <div class="rodape"><span>Salve para o plantão</span><span>arraste <b>&gt;&gt;</b></span></div>
+</section>
+
+<!-- 2. Mapa -->
+<section id="r2-mapa">
+  <div class="topo"><span class="pill">O plano</span><span class="cont">2/9</span></div>
+  <h2>Dois filmes, <em>cinco números.</em></h2>
+  <div class="grade">
+    <div class="col"><h3>Perfil</h3><p class="inc">Joelho em leve flexão, côndilos sobrepostos.</p>
+      <div class="med"><b>1</b><div><strong>Insall-Salvati</strong><span>A patela está alta?</span></div></div>
+      <div class="med"><b>2</b><div><strong>Slope tibial</strong><span>Quanto o platô cai para trás?</span></div></div></div>
+    <div class="col"><h3>Axial de Merchant</h3><p class="inc">45° de flexão, feixe a 30° da horizontal.</p>
+      <div class="med"><b>3</b><div><strong>Ângulo do sulco</strong><span>A tróclea é funda?</span></div></div>
+      <div class="med"><b>4</b><div><strong>Congruência</strong><span>A patela está centrada?</span></div></div>
+      <div class="med"><b>5</b><div><strong>Laurin</strong><span>A patela está inclinada?</span></div></div></div>
+  </div>
+  <div class="leg"><span><i style="border-color:#F4CF7C"></i>linha medida</span><span><i style="border-color:#7fe0c8"></i>linha de referência</span>
+    <span><i style="border-color:#fff;border-top-style:dotted"></i>eixo</span><span><i style="border-color:#f29b93"></i>construção</span></div>
+  <p class="sub" style="margin-top:26px">Sempre compare com o <b>outro joelho</b>: displasia costuma ser bilateral.</p>
+</section>
+
+<!-- 3. Insall-Salvati -->
+<section id="r3-insall" class="medida">
+  <div class="topo"><span class="pill f">Medida 1 de 5</span><span class="cont">3/9</span></div>
+  <h2>Índice de <em>Insall-Salvati</em></h2>
+  <div class="negato"><div class="clip" style="left:150px"></div><div class="clip" style="right:150px"></div>
+    <div class="filme"><svg viewBox="180 200 620 530">
+      <use href="#perfil" width="800" height="900"/>
+      <line class="ln-o" x1="632" y1="287" x2="598" y2="473"/><line class="ln-m" x1="598" y1="478" x2="572" y2="678"/>
+      <circle class="pt" cx="632" cy="287" r="8"/><circle class="pt" cx="598" cy="475" r="8"/><circle class="pt" cx="572" cy="678" r="8"/>
+      <text class="rot" x="660" y="390" fill="#F4CF7C">P</text><text class="rot" x="600" y="600" fill="#7fe0c8">T</text>
+    </svg><span class="tag">PERFIL</span><span class="lado" style="left:22px">POST</span><span class="lado" style="right:22px;bottom:44px">ANT</span><span class="esq">Esquema ilustrativo</span></div>
+  </div>
+  <p class="sub" style="margin-top:30px">Comprimento do <span class="m">tendão patelar (T)</span>, do polo inferior à tuberosidade, dividido pelo <span class="o">maior comprimento da patela (P)</span>. Normal <b>0,8 a 1,2</b>. Acima de 1,2: <b>patela alta</b>; abaixo de 0,8: <b>patela baixa</b>.</p>
+  <div class="extra" style="margin-top:22px">Pegadinha: o <b>Caton-Deschamps</b> também mede altura patelar, mas usa a superfície articular da patela e a borda do platô. O Insall-Salvati usa o <b>tendão</b>.</div>
+</section>
+
+<!-- 4. Slope -->
+<section id="r4-slope" class="medida">
+  <div class="topo"><span class="pill f">Medida 2 de 5</span><span class="cont">4/9</span></div>
+  <h2>Slope tibial <em>posterior</em></h2>
+  <div class="negato"><div class="clip" style="left:150px"></div><div class="clip" style="right:150px"></div>
+    <div class="filme"><svg viewBox="180 330 620 530">
+      <use href="#perfil" width="800" height="900"/>
+      <line class="ln-e" x1="442" y1="900" x2="442" y2="520"/>
+      <line class="ln-m" x1="230" y1="560" x2="640" y2="560"/>
+      <line class="ln-o" x1="250" y1="598" x2="610" y2="554"/>
+      <path d="M441 560 A120 120 0 0 0 442 575" stroke="#fff" stroke-width="5" fill="none"/><text class="rot" x="390" y="545" fill="#fff">7°</text>
+      <text class="rot" x="206" y="640" fill="#F4CF7C">platô</text><text class="rot" x="600" y="535" fill="#7fe0c8">⟂ ao eixo</text><text class="rot" x="455" y="800" fill="#fff">eixo da tíbia</text>
+    </svg><span class="tag">PERFIL</span><span class="lado" style="left:22px">POST</span><span class="lado" style="right:22px;bottom:44px">ANT</span><span class="esq">Esquema ilustrativo</span></div>
+  </div>
+  <p class="sub" style="margin-top:30px">Ângulo entre a <span class="o">linha do platô</span> e a <span class="m">perpendicular ao eixo da tíbia</span>. Em torno de <b>7° (±3°)</b>, e muda conforme o eixo usado. Slope alto aumenta a translação anterior e a carga no LCA.</p>
+  <div class="extra" style="margin-top:22px">Na prova: slope acima de <b>12°</b> associa-se a mais falha da reconstrução do LCA; a osteotomia de deflexão reduz o slope.</div>
+</section>
+
+<!-- 5. Sulco -->
+<section id="r5-sulco" class="medida">
+  <div class="topo"><span class="pill f">Medida 3 de 5</span><span class="cont">5/9</span></div>
+  <h2>Ângulo do <em>sulco</em></h2>
+  <div class="negato"><div class="clip" style="left:150px"></div><div class="clip" style="right:150px"></div>
+    <div class="filme"><svg viewBox="0 120 800 684">
+      <use href="#axial" width="800" height="700"/>
+      <polyline class="ln-o" points="220,350 400,420 610,330"/>
+      <path d="M352 401 A52 52 0 0 0 448 400" stroke="#fff" stroke-width="4" fill="none"/>
+      <circle class="pt" cx="220" cy="350" r="9"/><circle class="pt" cx="400" cy="420" r="9"/><circle class="pt" cx="610" cy="330" r="9"/>
+      <text class="rot" x="400" y="500" text-anchor="middle" fill="#F4CF7C">sulco ≈ 138°</text>
+    </svg><span class="tag">AXIAL 45°</span><span class="lado" style="left:22px">MED</span><span class="lado" style="right:22px;bottom:44px">LAT</span><span class="esq">Esquema ilustrativo</span></div>
+  </div>
+  <p class="sub" style="margin-top:30px">Do <b>ponto mais alto de cada côndilo</b> ao <b>ponto mais fundo da tróclea</b>. Normal <b>cerca de 138° (±6°)</b>. Acima de <b>145°</b>: tróclea rasa, <b>displasia troclear</b>.</p>
+  <div class="extra" style="margin-top:22px">No perfil, a mesma displasia aparece como o <b>sinal do cruzamento</b>: a linha do fundo da tróclea cruza a borda dos côndilos.</div>
+</section>
+
+<!-- 6. Congruência -->
+<section id="r6-congruencia" class="medida">
+  <div class="topo"><span class="pill f">Medida 4 de 5</span><span class="cont">6/9</span></div>
+  <h2>Ângulo de <em>congruência</em></h2>
+  <div class="negato"><div class="clip" style="left:150px"></div><div class="clip" style="right:150px"></div>
+    <div class="filme"><svg viewBox="0 120 800 684">
+      <use href="#axial" width="800" height="700"/>
+      <polyline class="ln-r" points="220,350 400,420 610,330"/>
+      <line class="ln-e" x1="400" y1="420" x2="396" y2="140"/>
+      <line class="ln-o" x1="400" y1="420" x2="394" y2="330"/>
+      <circle class="pt" cx="397" cy="372" r="9"/><circle class="pt" cx="400" cy="420" r="8"/>
+      <text class="rot" x="420" y="210" fill="#fff">bissetriz</text><text class="rot" x="140" y="455" fill="#F4CF7C">crista da patela</text>
+    </svg><span class="tag">AXIAL 45°</span><span class="lado" style="left:22px">MED</span><span class="lado" style="right:22px;bottom:44px">LAT</span><span class="esq">Esquema ilustrativo</span></div>
+  </div>
+  <p class="sub" style="margin-top:30px">Divida o sulco ao meio (<b>bissetriz</b>) e ligue o fundo da tróclea à <span class="o">crista da patela</span>. Crista medial: negativo; lateral: positivo. Normal <b>−6° (±11°)</b>. Acima de <b>+16°</b>: <b>subluxação lateral</b>.</p>
+  <div class="extra" style="margin-top:22px">Leitura rápida: número positivo grande é <b>patela fora do sulco</b>, deslocada para lateral.</div>
+</section>
+
+<!-- 7. Laurin -->
+<section id="r7-laurin" class="medida">
+  <div class="topo"><span class="pill f">Medida 5 de 5</span><span class="cont">7/9</span></div>
+  <h2>Ângulo patelofemoral lateral <em>(Laurin)</em></h2>
+  <div class="negato"><div class="clip" style="left:150px"></div><div class="clip" style="right:150px"></div>
+    <div class="filme"><svg viewBox="0 120 800 684">
+      <use href="#axial" width="800" height="700"/>
+      <line class="ln-m" x1="110" y1="356" x2="740" y2="323"/>
+      <line class="ln-o" x1="330" y1="402" x2="680" y2="244"/>
+      <path d="M575 331 A100 100 0 0 0 566 296" stroke="#fff" stroke-width="5" fill="none"/>
+      <text class="rot" x="110" y="330" fill="#7fe0c8">topo dos côndilos</text><text class="rot" x="560" y="225" fill="#F4CF7C">faceta lateral</text>
+      <text class="rot" x="770" y="385" text-anchor="end" fill="#fff">abre para fora</text>
+    </svg><span class="tag">AXIAL</span><span class="lado" style="left:22px">MED</span><span class="lado" style="right:22px;bottom:44px">LAT</span><span class="esq">Esquema ilustrativo</span></div>
+  </div>
+  <p class="sub" style="margin-top:30px">Linha no <span class="m">topo dos côndilos</span> e linha na <span class="o">faceta lateral</span> da patela. Normal: o ângulo <b>abre para lateral</b>. Linhas <b>paralelas</b> ou abrindo para medial: <b>inclinação patelar</b> (tilt).</p>
+  <div class="extra" style="margin-top:22px">Laurin descreveu a medida na axial a <b>20° de flexão</b>, quando a patela ainda está entrando no sulco.</div>
+</section>
+
+<!-- 8. Cola -->
+<section id="r8-cola">
+  <div class="topo"><span class="pill f">Salve este</span><span class="cont">8/9</span></div>
+  <h2>A cola dos <em>valores normais</em></h2>
+  <div class="cola">
+    <div class="lin"><strong>Insall-Salvati<small>perfil</small></strong><span class="v">0,8 a 1,2</span><p><b>Acima de 1,2</b>: patela alta. Abaixo de 0,8: baixa.</p></div>
+    <div class="lin"><strong>Slope tibial<small>perfil</small></strong><span class="v">≈ 7° ±3°</span><p>Depende do eixo usado. <b>Slope alto</b> sobrecarrega o LCA.</p></div>
+    <div class="lin"><strong>Sulco<small>axial</small></strong><span class="v">≈ 138°</span><p><b>Acima de 145°</b>: displasia troclear.</p></div>
+    <div class="lin"><strong>Congruência<small>axial</small></strong><span class="v">−6° ±11°</span><p><b>Acima de +16°</b>: subluxação lateral.</p></div>
+    <div class="lin"><strong>Laurin<small>axial</small></strong><span class="v">abre p/ fora</span><p><b>Paralelo</b> ou abrindo medial: inclinação.</p></div>
+  </div>
+  <div class="extra">Na instabilidade patelar, some a TC: <b>TA-GT acima de 20 mm</b> fecha os quatro fatores de Dejour (displasia, patela alta, TA-GT e inclinação).</div>
+</section>
+
+<!-- 9. Desafio -->
+<section id="r9-desafio">
+  <div class="topo"><span class="pill f">Desafio</span><span class="cont">9/9</span></div>
+  <h2>Agora é você no <em>negatoscópio.</em></h2>
+  <div class="caso">Adolescente de 16 anos com luxação recorrente da patela. Perfil: <b>Insall-Salvati 1,4</b>. Axial de Merchant: <b>sulco 150°</b> e <b>congruência +20°</b>.</div>
+  <div class="alts">
+    <div><b>A</b>Patela baixa, tróclea normal, patela centrada</div>
+    <div><b>B</b>Patela alta, displasia troclear, subluxação lateral</div>
+    <div><b>C</b>Patela alta, tróclea normal, subluxação lateral</div>
+    <div><b>D</b>Patela normal, displasia troclear, patela centrada</div>
+  </div>
+  <div class="cta">Comente a letra · ortoquestoes.com.br</div>
+  <div class="rodape"><span>Marque quem lauda o seu raio-X</span><span>link na <b>bio</b></span></div>
+</section>
+
+<!-- Story -->
+<section id="rs1-story" class="story">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="pill">Negatoscópio</span></div>
+  <h2 style="font-size:88px;margin-top:70px">O que esta axial <em>está mostrando?</em></h2>
+  <div class="negato" style="margin-top:44px"><div class="clip" style="left:150px"></div><div class="clip" style="right:150px"></div>
+    <div class="filme"><svg viewBox="0 120 800 684">
+      <use href="#axial2" width="800" height="700"/>
+      <polyline class="ln-o" points="220,360 400,400 610,345"/>
+      <text class="rot" x="400" y="480" text-anchor="middle" fill="#F4CF7C">sulco 150°</text>
+      <text class="rot" x="40" y="190" fill="#fff">congruência +20°</text>
+    </svg><span class="tag">AXIAL 45°</span><span class="esq">Esquema ilustrativo</span></div>
+  </div>
+  <div class="figurinha" style="margin-top:50px">figurinha de quiz</div>
+  <p class="sub" style="margin-top:30px">As cinco medidas, com o valor normal de cada uma, estão no post de hoje.</p>
+  <div class="rodape"><span>ortoquestoes.com.br</span><span>post no <b>perfil</b></span></div>
+</section>
+</body></html>

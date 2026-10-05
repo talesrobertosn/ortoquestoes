@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Constelações das tríades</title>
+<!-- Post da noite de 5/10/2026: carrossel de 5 slides (1080x1350) e 1 story (1080x1920).
+     Céu noturno: as tríades que a banca cobra desenhadas como constelações de três estrelas.
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-05-constelacoes/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+:root { --ouro: #F4CF7C; --ouro2: #C9952F; --ceu: #050b1a; --tinta: #0B3A35; --azul: #9fb8e8; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #222; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1350px; color: #fff; padding: 64px 72px;
+  background:
+    radial-gradient(1.6px 1.6px at 12% 18%, #fff 50%, transparent 51%), radial-gradient(1.2px 1.2px at 32% 8%, #fff 50%, transparent 51%),
+    radial-gradient(1.8px 1.8px at 72% 22%, #fff 50%, transparent 51%), radial-gradient(1.2px 1.2px at 88% 48%, #fff 50%, transparent 51%),
+    radial-gradient(1.4px 1.4px at 8% 62%, #fff 50%, transparent 51%), radial-gradient(1.2px 1.2px at 48% 92%, #fff 50%, transparent 51%),
+    radial-gradient(1.6px 1.6px at 94% 86%, #fff 50%, transparent 51%), radial-gradient(1.2px 1.2px at 22% 84%, #fff 50%, transparent 51%),
+    radial-gradient(circle at 1px 1px, rgba(255,255,255,.22) .8px, transparent 1px) 0 0/53px 61px,
+    radial-gradient(circle at 1px 1px, rgba(255,255,255,.12) .7px, transparent .9px) 17px 23px/37px 41px,
+    radial-gradient(ellipse at 85% 0%, rgba(244,207,124,.14), transparent 40%),
+    radial-gradient(ellipse at 10% 100%, rgba(60,90,170,.28), transparent 55%),
+    linear-gradient(180deg, #02050f, #0a1430 70%, #0d1d3a); }
+section.story { height: 1920px; }
+.topo { display: flex; justify-content: space-between; align-items: center; position: relative; z-index: 2; }
+.marca { display: flex; align-items: center; gap: 14px; font: 32px Jakarta; letter-spacing: -.02em; }
+.marca svg { width: 50px; height: 50px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; opacity: .9; }
+.cont { font: 700 25px Jakarta; color: rgba(255,255,255,.45); letter-spacing: .08em; }
+.eti { display: inline-block; padding: 8px 22px; border: 2px solid var(--ouro); border-radius: 99px; font: 800 22px Jakarta; letter-spacing: .14em; text-transform: uppercase; color: var(--ouro); }
+h1 { font: 800 112px/0.98 Jakarta; letter-spacing: -.045em; }
+h1 em, h2 em { font-style: normal; color: var(--ouro); }
+h2 { font: 800 60px/1.04 Jakarta; letter-spacing: -.04em; }
+.sub { font-size: 33px; line-height: 1.42; color: rgba(255,255,255,.75); text-wrap: pretty; }
+.sub b { color: #fff; }
+.lua { position: absolute; right: 90px; top: 150px; width: 170px; height: 170px; border-radius: 50%; box-shadow: -34px 20px 0 0 var(--ouro); transform: rotate(-20deg); opacity: .95; }
+.rodape { position: absolute; left: 72px; right: 72px; bottom: 50px; display: flex; justify-content: space-between; font: 700 25px Jakarta; color: rgba(255,255,255,.5); z-index: 2; }
+.rodape b { color: var(--ouro); }
+/* constelação */
+.const { display: block; }
+.const line { stroke: rgba(244,207,124,.55); stroke-width: 2.5; stroke-dasharray: 2 9; stroke-linecap: round; }
+.const circle.halo { fill: rgba(244,207,124,.18); }
+.const circle.est { fill: #fff; filter: drop-shadow(0 0 8px rgba(244,207,124,.9)); }
+.const text { font: 700 25px Inter; fill: rgba(255,255,255,.92); }
+.const text.d { font: 600 21px Inter; fill: rgba(159,184,232,.95); }
+.par { display: grid; gap: 26px; margin-top: 34px; }
+.card { padding: 30px 34px 24px; border-radius: 30px; background: rgba(255,255,255,.045); border: 1px solid rgba(255,255,255,.12); }
+.card .cab { display: flex; justify-content: space-between; align-items: baseline; }
+.card h3 { font: 800 42px Jakarta; letter-spacing: -.03em; color: #fff; }
+.card h3 em { font-style: normal; color: var(--ouro); }
+.card .tema { font: 700 20px Jakarta; letter-spacing: .14em; text-transform: uppercase; color: var(--azul); }
+.card p.pista { font-size: 26px; line-height: 1.38; color: rgba(255,255,255,.7); margin-top: 4px; }
+.card p.pista b { color: var(--ouro); }
+/* quiz */
+.q { margin-top: 30px; padding: 40px 44px; border-radius: 30px; background: #fbf6ea; color: #12181a; transform: rotate(1.6deg); box-shadow: 0 30px 70px rgba(0,0,0,.5); }
+.q .tit { font: 800 22px Jakarta; letter-spacing: .14em; text-transform: uppercase; color: var(--ouro2); }
+.q p { font: 600 38px/1.3 Inter; margin-top: 14px; }
+.alts { display: grid; gap: 14px; margin-top: 24px; }
+.alts div { display: flex; gap: 22px; align-items: center; font: 600 33px Jakarta; color: #33504b; }
+.alts b { flex: none; width: 60px; height: 60px; border-radius: 50%; border: 3px solid #14655e; display: grid; place-items: center; color: #14655e; font-weight: 800; }
+.cta { margin-top: 44px; padding: 26px 34px; border-radius: 24px; background: var(--ouro); color: #0a1430; font: 800 33px Jakarta; text-align: center; }
+.figurinha { height: 360px; border: 3px dashed rgba(255,255,255,.35); border-radius: 30px; display: grid; place-items: center; font: 600 30px Inter; color: rgba(255,255,255,.45); }
+.nota { font-size: 22px; color: rgba(255,255,255,.42); margin-top: 16px; }
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/>
+<circle cx="17" cy="20" r="4.5" fill="#9cc3bd"/><rect x="26" y="16.5" width="24" height="7" rx="3.5" fill="#9cc3bd"/>
+<circle cx="17" cy="32" r="4.5" fill="#f4cf7c"/><rect x="26" y="28.5" width="24" height="7" rx="3.5" fill="#f4cf7c"/>
+<circle cx="17" cy="44" r="4.5" fill="#9cc3bd"/><rect x="26" y="40.5" width="19" height="7" rx="3.5" fill="#9cc3bd"/></symbol>
+</defs></svg>
+
+<!-- 1. Capa -->
+<section id="n1-capa">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">1/5</span></div>
+  <div class="lua"></div>
+  <p class="eti" style="margin-top:110px">Leitura antes de dormir</p>
+  <h1 style="margin-top:28px">Tríades<br>que a banca<br><em>adora.</em></h1>
+  <p class="sub" style="margin-top:28px;max-width:760px">Seis constelações de três estrelas. Decore o desenho hoje e reconheça na prova.</p>
+  <svg class="const" viewBox="0 0 936 420" width="936" height="420" style="margin-top:30px">
+    <line x1="140" y1="300" x2="470" y2="110"/><line x1="470" y1="110" x2="790" y2="270"/><line x1="790" y1="270" x2="140" y2="300"/>
+    <circle class="halo" cx="140" cy="300" r="34"/><circle class="est" cx="140" cy="300" r="11"/>
+    <circle class="halo" cx="470" cy="110" r="40"/><circle class="est" cx="470" cy="110" r="13"/>
+    <circle class="halo" cx="790" cy="270" r="34"/><circle class="est" cx="790" cy="270" r="11"/>
+    <text x="140" y="360" text-anchor="middle">luxação</text><text x="470" y="62" text-anchor="middle">cabeça do rádio</text><text x="790" y="330" text-anchor="middle">coronoide</text>
+    <text class="d" x="470" y="250" text-anchor="middle">a primeira já está no céu</text>
+  </svg>
+  <div class="rodape"><span>6 tríades · 1 desafio</span><span>arraste <b>&gt;&gt;</b></span></div>
+</section>
+
+<!-- 2. Cotovelo e joelho -->
+<section id="n2-trauma">
+  <div class="topo"><span class="eti">Trauma</span><span class="cont">2/5</span></div>
+  <h2 style="margin-top:30px">Duas tríades de <em>instabilidade.</em></h2>
+  <div class="par">
+    <div class="card">
+      <div class="cab"><h3>Tríade <em>terrível</em></h3><span class="tema">Cotovelo</span></div>
+      <svg class="const" viewBox="0 0 870 250" width="870" height="250">
+        <line x1="120" y1="170" x2="430" y2="60"/><line x1="430" y1="60" x2="740" y2="170"/><line x1="740" y1="170" x2="120" y2="170"/>
+        <circle class="halo" cx="120" cy="170" r="30"/><circle class="est" cx="120" cy="170" r="10"/>
+        <circle class="halo" cx="430" cy="60" r="30"/><circle class="est" cx="430" cy="60" r="10"/>
+        <circle class="halo" cx="740" cy="170" r="30"/><circle class="est" cx="740" cy="170" r="10"/>
+        <text x="120" y="226" text-anchor="middle">luxação posterior</text><text x="430" y="24" text-anchor="middle">fratura da cabeça do rádio</text><text x="740" y="226" text-anchor="middle">fratura do coronoide</text>
+      </svg>
+      <p class="pista">Instável por definição: o tratamento costuma ser cirúrgico, reconstruindo <b>de dentro para fora</b> (coronoide, cabeça do rádio, ligamento colateral lateral).</p>
+    </div>
+    <div class="card">
+      <div class="cab"><h3>Tríade <em>infeliz</em></h3><span class="tema">Joelho · O'Donoghue</span></div>
+      <svg class="const" viewBox="0 0 870 250" width="870" height="250">
+        <line x1="150" y1="70" x2="440" y2="190"/><line x1="440" y1="190" x2="730" y2="80"/><line x1="730" y1="80" x2="150" y2="70"/>
+        <circle class="halo" cx="150" cy="70" r="30"/><circle class="est" cx="150" cy="70" r="10"/>
+        <circle class="halo" cx="440" cy="190" r="30"/><circle class="est" cx="440" cy="190" r="10"/>
+        <circle class="halo" cx="730" cy="80" r="30"/><circle class="est" cx="730" cy="80" r="10"/>
+        <text x="150" y="30" text-anchor="middle">LCA</text><text x="440" y="244" text-anchor="middle">menisco medial</text><text x="730" y="40" text-anchor="middle">LCM</text>
+      </svg>
+      <p class="pista">Valgo com rotação no esporte. Pegadinha: nas lesões agudas, o menisco <b>lateral</b> se rompe com mais frequência que o medial.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3. Infecção e osso -->
+<section id="n3-osso">
+  <div class="topo"><span class="eti">Infecção e metabolismo</span><span class="cont">3/5</span></div>
+  <h2 style="margin-top:30px">Duas tríades <em>silenciosas.</em></h2>
+  <div class="par">
+    <div class="card">
+      <div class="cab"><h3>Tríade de <em>Phemister</em></h3><span class="tema">Tuberculose</span></div>
+      <svg class="const" viewBox="0 0 870 250" width="870" height="250">
+        <line x1="215" y1="90" x2="430" y2="190"/><line x1="430" y1="190" x2="655" y2="70"/><line x1="655" y1="70" x2="215" y2="90"/>
+        <circle class="halo" cx="215" cy="90" r="30"/><circle class="est" cx="215" cy="90" r="10"/>
+        <circle class="halo" cx="430" cy="190" r="30"/><circle class="est" cx="430" cy="190" r="10"/>
+        <circle class="halo" cx="655" cy="70" r="30"/><circle class="est" cx="655" cy="70" r="10"/>
+        <text x="215" y="48" text-anchor="middle">osteopenia justa-articular</text><text x="430" y="244" text-anchor="middle">espaço articular cai devagar</text><text x="655" y="30" text-anchor="middle">erosões periféricas</text>
+      </svg>
+      <p class="pista">Na artrite piogênica, a cartilagem some em dias. Na tuberculose, o espaço <b>se preserva por mais tempo</b>.</p>
+    </div>
+    <div class="card">
+      <div class="cab"><h3>Tríade da <em>atleta</em></h3><span class="tema">Fratura de estresse</span></div>
+      <svg class="const" viewBox="0 0 870 250" width="870" height="250">
+        <line x1="215" y1="180" x2="430" y2="70"/><line x1="430" y1="70" x2="655" y2="180"/><line x1="655" y1="180" x2="215" y2="180"/>
+        <circle class="halo" cx="215" cy="180" r="30"/><circle class="est" cx="215" cy="180" r="10"/>
+        <circle class="halo" cx="430" cy="70" r="30"/><circle class="est" cx="430" cy="70" r="10"/>
+        <circle class="halo" cx="655" cy="180" r="30"/><circle class="est" cx="655" cy="180" r="10"/>
+        <text x="215" y="236" text-anchor="middle">baixa energia disponível</text><text x="430" y="30" text-anchor="middle">disfunção menstrual</text><text x="655" y="236" text-anchor="middle">baixa massa óssea</text>
+      </svg>
+      <p class="pista">Fratura de estresse em atleta jovem pede perguntar <b>menstruação e alimentação</b>, não só o treino.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 4. Pediatria e coluna -->
+<section id="n4-raras">
+  <div class="topo"><span class="eti">Tumores e coluna</span><span class="cont">4/5</span></div>
+  <h2 style="margin-top:30px">Duas tríades <em>de livro.</em></h2>
+  <div class="par">
+    <div class="card">
+      <div class="cab"><h3><em>Hand-Schüller-Christian</em></h3><span class="tema">Histiocitose</span></div>
+      <svg class="const" viewBox="0 0 870 250" width="870" height="250">
+        <line x1="215" y1="80" x2="440" y2="185"/><line x1="440" y1="185" x2="655" y2="80"/><line x1="655" y1="80" x2="215" y2="80"/>
+        <circle class="halo" cx="215" cy="80" r="30"/><circle class="est" cx="215" cy="80" r="10"/>
+        <circle class="halo" cx="440" cy="185" r="30"/><circle class="est" cx="440" cy="185" r="10"/>
+        <circle class="halo" cx="655" cy="80" r="30"/><circle class="est" cx="655" cy="80" r="10"/>
+        <text x="215" y="38" text-anchor="middle">lesões líticas no crânio</text><text x="440" y="240" text-anchor="middle">diabetes insípido</text><text x="655" y="38" text-anchor="middle">exoftalmia</text>
+      </svg>
+      <p class="pista">Forma multifocal da <b>histiocitose de células de Langerhans</b>. A vértebra plana é outra imagem da mesma doença.</p>
+    </div>
+    <div class="card">
+      <div class="cab"><h3><em>Klippel-Feil</em></h3><span class="tema">Coluna cervical</span></div>
+      <svg class="const" viewBox="0 0 870 250" width="870" height="250">
+        <line x1="215" y1="180" x2="440" y2="70"/><line x1="440" y1="70" x2="655" y2="180"/><line x1="655" y1="180" x2="215" y2="180"/>
+        <circle class="halo" cx="215" cy="180" r="30"/><circle class="est" cx="215" cy="180" r="10"/>
+        <circle class="halo" cx="440" cy="70" r="30"/><circle class="est" cx="440" cy="70" r="10"/>
+        <circle class="halo" cx="655" cy="180" r="30"/><circle class="est" cx="655" cy="180" r="10"/>
+        <text x="215" y="236" text-anchor="middle">pescoço curto</text><text x="440" y="30" text-anchor="middle">implantação baixa do cabelo</text><text x="655" y="236" text-anchor="middle">movimento limitado</text>
+      </svg>
+      <p class="pista">Fusão congênita de vértebras cervicais. A tríade completa aparece em <b>menos da metade</b> dos pacientes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 5. Desafio -->
+<section id="n5-desafio">
+  <div class="topo"><span class="eti">A última estrela</span><span class="cont">5/5</span></div>
+  <h2 style="margin-top:34px">Uma destas <em>não pertence</em> à constelação.</h2>
+  <div class="q">
+    <p class="tit">Desafio da noite</p>
+    <p>Qual destas lesões <b>não</b> faz parte da tríade terrível do cotovelo?</p>
+    <div class="alts"><div><b>A</b>Luxação posterior do cotovelo</div><div><b>B</b>Fratura da cabeça do rádio</div><div><b>C</b>Fratura do processo coronoide</div><div><b>D</b>Fratura do olécrano</div></div>
+  </div>
+  <p class="sub" style="margin-top:44px">Comente a letra. Salve para revisar amanhã e marque quem estuda com você à noite.</p>
+  <div class="cta">Questões comentadas, letra por letra · ortoquestoes.com.br</div>
+  <div class="rodape"><span>Boa noite e bons estudos</span><span>link na <b>bio</b></span></div>
+</section>
+
+<!-- Story -->
+<section id="ns1-story" class="story">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="eti">Antes de dormir</span></div>
+  <div class="lua" style="top:300px;right:70px;width:130px;height:130px"></div>
+  <h2 style="font-size:92px;margin-top:150px;max-width:700px">Complete a <em>constelação.</em></h2>
+  <p class="sub" style="font-size:38px;margin-top:22px">Histiocitose de células de Langerhans, forma de Hand-Schüller-Christian.</p>
+  <svg class="const" viewBox="0 0 936 520" width="936" height="520" style="margin-top:40px">
+    <line x1="150" y1="130" x2="470" y2="400"/><line x1="470" y1="400" x2="790" y2="130"/><line x1="790" y1="130" x2="150" y2="130"/>
+    <circle class="halo" cx="150" cy="130" r="38"/><circle class="est" cx="150" cy="130" r="13"/>
+    <circle cx="470" cy="400" r="46" fill="none" stroke="rgba(244,207,124,.8)" stroke-width="3" stroke-dasharray="6 8"/>
+    <text x="470" y="414" text-anchor="middle" style="font:800 44px Jakarta;fill:#F4CF7C">?</text>
+    <circle class="halo" cx="790" cy="130" r="38"/><circle class="est" cx="790" cy="130" r="13"/>
+    <text x="150" y="78" text-anchor="middle" style="font-size:32px">exoftalmia</text><text x="790" y="78" text-anchor="middle" style="font-size:32px">diabetes insípido</text>
+  </svg>
+  <div class="figurinha" style="margin-top:40px">figurinha de quiz</div>
+  <p class="sub" style="margin-top:34px">Mais cinco tríades no post de hoje à noite.</p>
+  <div class="rodape"><span>ortoquestoes.com.br</span><span>post no <b>perfil</b></span></div>
+</section>
+</body></html>

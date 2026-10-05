@@ -1257,17 +1257,18 @@
   "conferido": false
  },
  "pediatria-0087": {
-  "conceito": "### GMFCS (6 a 12 anos)\n| Nível | Mobilidade |\n|---|---|\n| I | anda sem restrições; corre e salta com limitação |\n| II | anda na maioria dos ambientes; limitação em distâncias, terreno irregular |\n| III | anda com ==dispositivo manual== (andador, muletas); cadeira para distâncias |\n| ==IV== | ==controle de cabeça e tronco==; anda pouco (casa, com ajuda); ==cadeira de rodas na comunidade== (pode ser motorizada) |\n| V | sem controle de cabeça e tronco; transportado |\n\n### Uso ortopédico\n| Nível | Preocupação |\n|---|---|\n| I-III | marcha: análise, cirurgia multinível |\n| ==IV-V== | ==luxação do quadril== (vigilância radiográfica), escoliose |\n\n- Índice de migração de Reimers > 30 a 40%: cirurgia de partes moles ou osteotomias.\n\n> **Na prova:** sem controle cervical e de tronco = ==GMFCS V==",
-  "correta": "**Nível V.**\n- Sem controle de cabeça e tronco.\n- Transportado em cadeira.",
+  "conceito": "**O que é o GMFCS.** O *Gross Motor Function Classification System* classifica a função motora grossa de crianças com paralisia cerebral em **cinco níveis**, com base no que a criança faz no dia a dia (sentar, andar, usar dispositivos), e não no tipo de alteração do tônus. É estável ao longo do tempo, por isso orienta prognóstico de marcha, risco de luxação do quadril e indicação de cirurgias.\n\n**Os níveis (faixa de 6 a 12 anos).**\n\n| Nível | Mobilidade |\n|---|---|\n| I | Anda sem restrições; corre e salta com alguma limitação de velocidade e coordenação |\n| II | Anda na maioria dos ambientes; dificuldade em terrenos irregulares, longas distâncias e escadas |\n| III | Anda com **dispositivo manual** (andador, muletas); cadeira de rodas para longas distâncias |\n| IV | Mobilidade limitada; **mantém algum controle de tronco** para sentar com apoio; cadeira de rodas motorizada ou empurrada na comunidade |\n| **V** | **Sem controle antigravitacional de cabeça e tronco**; transportado em cadeira de rodas manual por outra pessoa |\n\n**A figura.** As duas crianças estão em cadeiras de rodas. Uma não sustenta a cabeça e o tronco e cai para a frente; a outra precisa de apoio cefálico, cinto de tronco e é **empurrada por um adulto**. É o retrato do **nível V**: limitação grave de todas as funções motoras, sem controle da postura contra a gravidade, mesmo com adaptações.\n\n**Por que importa na ortopedia.**\n- O **risco de luxação do quadril** aumenta progressivamente com o nível: muito baixo no I e acima de 60 a 90% no V. Por isso, crianças nível IV e V fazem vigilância radiográfica periódica do quadril (índice de migração de Reimers).\n- Escoliose neuromuscular é mais frequente e progressiva nos níveis IV e V.\n- Os objetivos do tratamento mudam: nos níveis altos, buscar sentar confortável, higiene e ausência de dor, mais do que marcha.",
+  "correta": "**Correta: C (GMFCS V).** A ausência de controle de cabeça e tronco, com dependência total de transporte em cadeira de rodas empurrada por outra pessoa, define o nível V, o mais grave da classificação.",
   "incorretas": {
-   "A": "**Dispositivo manual.**\n- Anda com andador.",
-   "B": "**Controla o tronco.**\n- Cadeira na comunidade.",
-   "D": "**Não existe.**\n- São cinco níveis."
+   "A": "O **nível III** anda com dispositivo manual (andador ou muletas), e usa cadeira apenas para longas distâncias.",
+   "B": "No **nível IV**, a criança tem **controle de tronco** suficiente para sentar com algum apoio e pode usar cadeira motorizada; o que diferencia do V é exatamente esse controle.",
+   "D": "**Não existe nível VI.** O GMFCS tem cinco níveis."
   },
   "referencias": [
-   "GMFCS Expanded and Revised. CanChild. https://canchild.ca/system/tenon/assets/attachments/000/000/058/original/GMFCS-ER_English.pdf"
+   "GMFCS Expanded and Revised. CanChild. https://canchild.ca/system/tenon/assets/attachments/000/000/058/original/GMFCS-ER_English.pdf",
+   "Palisano R, Rosenbaum P, Walter S, Russell D, Wood E, Galuppi B. Development and reliability of a system to classify gross motor function in children with cerebral palsy. Dev Med Child Neurol. 1997;39(4):214-223."
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0088": {
@@ -1288,19 +1289,19 @@
   "conferido": false
  },
  "pediatria-0089": {
-  "conceito": "### Zonas do tríceps sural (alongamento na PC)\n| Zona | Local | Técnicas | Alonga |\n|---|---|---|---|\n| 1 | ventres do gastrocnêmio | ==Strayer== (recessão da aponeurose proximal), Baumann (fáscia intramuscular) | só gastrocnêmio |\n| ==2== | ==aponeurose conjunta gastrocnêmio-sóleo, distal aos ventres== | ==Vulpius== (V invertido), Baker (língua em U) | gastro + sóleo moderado |\n| 3 | tendão calcâneo | ==Hoke== (três hemissecções percutâneas), White, Z | tudo; maior risco de ==hiperalongamento== (marcha agachada) |\n\n### Silfverskiöld\n- Equino que ==melhora com joelho fletido==: contratura do ==gastrocnêmio== isolado → zonas 1-2.\n- Equino fixo com joelho fletido: sóleo também → zona 2-3.\n\n> **Na prova:** alongamento na zona 2 = ==Vulpius== (e Baker).",
-  "correta": "**Vulpius.**\n- Recessão em V invertido na aponeurose da zona 2.\n- Alonga gastrocnêmio e parte do sóleo.",
+  "conceito": "**O problema: o equino na paralisia cerebral.** A espasticidade do tríceps sural leva à contratura em equino, que prejudica a marcha. Quando o alongamento muscular por gesso seriado, toxina botulínica e órteses não basta, faz-se o alongamento cirúrgico. O ponto-chave é **qual parte** do tríceps está encurtada: o gastrocnêmio isolado (que cruza o joelho) ou também o sóleo.\n\n**O teste de Silfverskiöld** separa as duas situações: se a dorsiflexão melhora ao fletir o joelho, o encurtamento é do **gastrocnêmio**; se não melhora, o **sóleo** também está curto.\n\n**As três zonas de alongamento.**\n\n| Zona | Local | Técnicas |\n|---|---|---|\n| 1 | Ventres do gastrocnêmio (proximal) | **Strayer** (secção da aponeurose do gastrocnêmio), Baumann (recessão intramuscular) |\n| **2** | **Aponeurose conjunta**, distal aos ventres do gastrocnêmio e sobre o sóleo | **Vulpius** (incisão em **V invertido**), Baker (incisão em língua, em U invertido) |\n| 3 | Tendão calcâneo | **Hoke** (hemissecções percutâneas), alongamento em Z |\n\nQuanto mais distal a zona, mais potente o alongamento e maior o risco de **hipercorreção**, que leva à marcha agachada (crouch), complicação grave na diplegia.\n\n**A figura.** O desenho mostra uma incisão em **V invertido** (chevron) na aponeurose do gastrocnêmio-sóleo, logo abaixo dos ventres do gastrocnêmio, e depois o afastamento das bordas com a dorsiflexão do tornozelo, deixando o músculo sóleo visível entre elas. Essa é a recessão de **Vulpius**, na zona 2.\n\n**Diferença entre Vulpius e Baker.** Ambos atuam na zona 2. No Baker, a aponeurose é cortada em **língua** (U invertido) e a língua desliza distalmente, podendo ser suturada na nova posição. No Vulpius, o corte é em V invertido (ou transverso, na variação), e as bordas se afastam sem sutura.",
+  "correta": "**Correta: C (Vulpius).** A figura mostra a incisão em **V invertido** na aponeurose conjunta do gastrocnêmio e do sóleo, na zona 2, com afastamento das bordas na dorsiflexão: é a técnica de Vulpius.",
   "incorretas": {
-   "A": "**Zona 3.**\n- Tendão calcâneo percutâneo.",
-   "B": "**Também zona 2.**\n- Língua em U; o gabarito indica Vulpius na figura.",
-   "D": "**Zona 1.**\n- Só gastrocnêmio."
+   "A": "**Hoke** é o alongamento percutâneo por três hemissecções no **tendão calcâneo**, na zona 3. É o mais potente e o de maior risco de hipercorreção.",
+   "B": "**Baker** também atua na zona 2, mas a aponeurose é cortada em **língua** (U invertido), não em V invertido.",
+   "D": "**Strayer** é a recessão da aponeurose do gastrocnêmio na **zona 1**, mais proximal, que alonga apenas o gastrocnêmio."
   },
   "referencias": [
    "Surgical correction of equinus in cerebral palsy: systematic review. https://pmc.ncbi.nlm.nih.gov/articles/PMC2908346/",
    "Endoscopic transverse Vulpius gastrocsoleus recession. https://pmc.ncbi.nlm.nih.gov/articles/PMC7105772/",
    "Indications for gastrocsoleus lengthening in CP. https://pmc.ncbi.nlm.nih.gov/articles/PMC7666804/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0090": {
@@ -8711,19 +8712,19 @@
   "conferido": false
  },
  "pediatria-0738": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "C",
-  "conceito": "**Radiografia do cotovelo da criança.** Baumann: eixo do úmero e linha da fise do côndilo lateral. Ângulo metáfise-diafisário: diáfise e linha da metáfise. Linha umeral anterior: passa pelo terço médio do capítulo. O ângulo úmero-ulnar reflete o ângulo de carregamento.\n\n**Na prova:** a linha umeral anterior cruza o terço médio do capítulo.",
-  "correta": "**O ângulo úmero-ulnar corresponde à expressão radiográfica do ângulo de carregamento do cotovelo.** O ângulo úmero-ulnar traduz o ângulo de carregamento.",
+  "conceito": "**Por que medir ângulos no cotovelo da criança.** O cotovelo infantil é em grande parte cartilaginoso, e os centros de ossificação aparecem em idades diferentes. As linhas e ângulos radiográficos permitem reconhecer desvios sutis em fraturas (sobretudo a supracondiliana) e avaliar a qualidade da redução, prevenindo o cúbito varo.\n\n**As medidas e o que cada uma usa.**\n\n| Medida | Como se traça | Normal e uso |\n|---|---|---|\n| **Ângulo de Baumann** (AP) | Eixo da diáfise do úmero e a linha da **fise do côndilo lateral** (capítulo) | Cerca de 70 a 75° (ou 15 a 20° pelo complemento); compara-se com o outro lado; alteração indica varo ou valgo |\n| Ângulo metáfise-diafisário (AP) | Eixo da diáfise e a linha transversal que une os pontos mais largos da **metáfise** distal | Cerca de 90°; útil quando o capítulo ainda não ossificou |\n| **Ângulo úmero-ulnar** (AP) | Eixo do úmero e eixo da ulna, com o cotovelo em extensão | É a expressão radiográfica do **ângulo de carregamento** (valgo fisiológico de 5 a 15°) |\n| **Linha umeral anterior** (perfil) | Tangente à cortical anterior do úmero, prolongada | Deve cruzar o **terço médio** do capítulo; passando anterior a ele, indica desvio em extensão |\n| Linha radiocapitelar | Eixo do colo e da cabeça do rádio | Deve passar pelo capítulo em qualquer incidência; se não passa, há luxação da cabeça radial (Monteggia) |\n\n**Detalhes que a banca troca.**\n- Baumann usa a **fise do côndilo lateral**, não a superfície articular.\n- O metáfise-diafisário usa a **metáfise**, não a fise do côndilo lateral (esse é o Baumann).\n- A linha umeral anterior passa no **terço médio** do capítulo, e não na porção anterior.\n- Na fratura supracondiliana em extensão (Gartland II e III), o capítulo desloca-se para trás e a linha umeral anterior passa à frente dele ou o tangencia anteriormente.",
+  "correta": "**Resposta provável: C.** O ângulo úmero-ulnar, formado pelos eixos do úmero e da ulna na radiografia em AP com o cotovelo estendido, é a expressão radiográfica do ângulo de carregamento.",
   "incorretas": {
-   "A": "**O ângulo de BAUMANN é formado pelas linhas da diáfise do úmero e da superfície articular.** Baumann usa a fise do côndilo lateral, não a superfície articular.",
-   "B": "**O ângulo metáfiso-diafisário é formado pelas linhas da diáfise do úmero e da placa epifisária do côndilo lateral.** Usa a linha da metáfise, não da fise.",
-   "D": "**A linha umeral anterior, traçada na radiografia em perfil, deve passar na porção anterior do centro de ossificação do côndilo lateral.** Deve passar no terço médio do centro de ossificação."
+   "A": "O ângulo de Baumann é formado pelo eixo da diáfise e pela linha da **fise do côndilo lateral**, e não pela superfície articular.",
+   "B": "Essa é a descrição do ângulo de **Baumann**. O ângulo metáfise-diafisário usa a linha transversal da **metáfise** distal.",
+   "D": "A linha umeral anterior deve cruzar o **terço médio** do centro de ossificação do capítulo. Passando na porção anterior, indica desvio posterior do capítulo, como na fratura supracondiliana em extensão."
   },
   "referencias": [
    "Rockwood C.A. et al. Fractures in Children. Philadelphia: Lippincott. 6ª ed., p. 537."
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "C",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0739": {
@@ -9582,17 +9583,18 @@
   "conferido": false
  },
  "pediatria-0790": {
+  "conceito": "**O que o ângulo de Kite mede.** Na radiografia **anteroposterior** do pé, traça-se o eixo longitudinal do **tálus** e o do **calcâneo**. Os dois divergem a partir do retropé, formando o ângulo talocalcâneo AP, conhecido como ângulo de Kite. Ele reflete a relação de rotação entre os dois ossos no plano horizontal, que acompanha a posição em varo ou valgo do retropé.\n\n**A lógica do movimento.** O calcâneo gira sob o tálus como um barco sob o seu ancoradouro.\n- No **varo** (inversão), o calcâneo roda medialmente e se coloca **sob** o tálus. Os eixos ficam quase **paralelos** e o ângulo **diminui**.\n- No **valgo** (eversão), o calcâneo roda lateralmente e se afasta, enquanto a cabeça do tálus aponta para medial. Os eixos **divergem** e o ângulo **aumenta**.\n\n| Ângulo de Kite (AP) | Interpretação |\n|---|---|\n| Menor que cerca de 20° | **Varo do retropé** (pé torto congênito) |\n| Cerca de 20° a 40° | Normal (maior no lactente) |\n| Maior que cerca de 40° | **Valgo do retropé** (pé plano, tálus vertical) |\n\n**Aplicação clínica.**\n- No **pé torto congênito**, o paralelismo talocalcâneo no AP e no perfil é a marca radiográfica do varo do retropé. A soma dos ângulos talocalcâneos AP e perfil (índice talocalcâneo) abaixo de 40° confirma a deformidade.\n- No **tálus vertical congênito** e no **pé plano valgo**, o ângulo aumenta.\n- Em lactentes, os ossos ainda pouco ossificados tornam a medida imprecisa; o tratamento do pé torto pelo método de Ponseti é guiado pela clínica, não pela radiografia.",
+  "correta": "**Resposta provável: Errado.** Um ângulo de Kite menor que 20° indica **eixos talocalcâneos paralelos**, ou seja, **varo** do retropé, como no pé torto congênito. O valgo produz o oposto: divergência maior, com ângulo aumentado.",
   "incorretas": {
-   "A": "**Certo seria associar ângulo talocalcâneo aumentado ao valgo.** O enunciado inverte a direção da relação radiográfica."
+   "A": "**Certo** inverteria a relação. O valgo afasta o calcâneo do tálus e aumenta o ângulo; o ângulo pequeno é o achado do varo."
   },
-  "conceito": "**O ângulo de Kite mede divergência talocalcânea.** Na radiografia anteroposterior do pé com carga, traçam-se os eixos longitudinais do tálus e do calcâneo. A abertura entre eles reflete a posição relativa do retropé e ajuda a interpretar alinhamento em condições como pé torto e pé plano, sempre junto ao exame e a outras projeções.\n\n**Menor abertura sugere varo, não valgo.** Valores inferiores a cerca de 20 graus são classicamente associados à redução da divergência talocalcânea e ao retropé em varo, como no pé torto congênito. Aumento expressivo do ângulo sugere valgo ou abdução, frequentemente no pé plano. Números isolados variam com idade, técnica radiográfica e carga, então o corte serve como orientação, não substitui a avaliação completa.",
-  "correta": "**Errado: ângulo de Kite menor que 20 graus sugere varismo do retropé.** Valgo costuma aumentar a divergência talocalcânea.",
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "referencias": [
-   "Atualização em conhecimentos ortopédicos. Ortopedia pediátrica. AAOS/SBOT. p. 235."
+   "Atualização em conhecimentos ortopédicos. Ortopedia pediátrica. AAOS/SBOT. p. 235.",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "B",
-  "geradoEm": "2026-10-01",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0791": {
@@ -9778,17 +9780,18 @@
   "conferido": false
  },
  "pediatria-0804": {
+  "conceito": "**O que é polidactilia pós-axial.** É a presença de um dedo extra no **lado ulnar** da mão, ao lado do dedo mínimo. Varia de um apêndice de partes moles preso por um pedículo fino (tipo B de Temtamy e McKusick) até um dedo bem formado, com metacarpo ou falanges próprios e articulação (tipo A).\n\n**A diferença étnica muda a interpretação.**\n\n| População | Frequência | Significado |\n|---|---|---|\n| **Ascendência africana** | Muito comum, até cerca de 1 em 100 a 300 nascidos | Geralmente **isolada**, herança autossômica dominante |\n| Ascendência europeia ou asiática | Rara, cerca de 1 em 1.000 a 3.000 | Mais frequentemente **associada a síndromes** |\n\nEm crianças negras, a polidactilia pós-axial costuma ser uma variante familiar sem outras malformações. Em crianças brancas, por ser rara, ela deve motivar a busca de associações sindrômicas, como a síndrome de Ellis-van Creveld (displasia condroectodérmica), a trissomia 13, a síndrome de Bardet-Biedl e a de Meckel.\n\n**Contraste com a pré-axial.** A polidactilia **pré-axial** (duplicação do polegar) é mais comum em asiáticos e brancos, geralmente unilateral e esporádica. A forma com polegar **trifalângico** tem maior associação com síndromes e anomalias cardíacas e hematológicas (Holt-Oram, anemia de Fanconi).\n\n**Tratamento.**\n- Tipo B (apêndice pediculado): ligadura no berçário ou excisão simples; a ligadura pode deixar uma pequena saliência ou neuroma.\n- Tipo A (dedo bem formado): excisão cirúrgica por volta de 1 ano, com reconstrução do ligamento colateral ulnar e reinserção da musculatura hipotenar no dedo remanescente.",
+  "correta": "**Resposta provável: Errado.** Em crianças de ascendência africana, a polidactilia pós-axial é frequente, geralmente **isolada** e de herança autossômica dominante. A associação com outras malformações é característica nas crianças brancas, em que a anomalia é rara.",
   "incorretas": {
-   "A": "**Certo seria para um caso sindrômico documentado, não como generalização.** Alterações sistêmicas ou múltiplas anomalias mudam a investigação."
+   "A": "**Certo** inverteria a relação étnica. É na criança branca que a polidactilia pós-axial deve levantar suspeita de síndrome; na criança negra, ela costuma ser uma variante familiar isolada."
   },
-  "conceito": "**Pós-axial significa lado ulnar da mão.** O dedo extra pode ser rudimentar e preso por ponte cutânea ou ter ossos e articulação próprios. A classificação anatômica orienta a remoção ou reconstrução e evita confundir essa variante com a polidactilia pré-axial, do lado do polegar.\n\n**Associação sindrômica não é a regra de toda polidactilia.** Em pessoas de ascendência africana, a polidactilia pós-axial frequentemente é isolada e familiar, com herança autossômica dominante de penetrância variável. Pode integrar síndromes em qualquer população, por isso o exame deve buscar outras alterações; a ascendência, porém, não é motivo para afirmar que malformações associadas são características.",
-  "correta": "**Errado: nessa população, a polidactilia pós-axial costuma ser isolada, não caracteristicamente acompanhada de outras malformações.** O exame clínico continua necessário.",
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "referencias": [
-   "Morrissy RT, Weinstein SL. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott Manole. 4ª edição, p. 820."
+   "Morrissy RT, Weinstein SL. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott Manole. 4ª edição, p. 820.",
+   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)"
   ],
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "B",
-  "geradoEm": "2026-10-01",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0805": {
@@ -9890,17 +9893,18 @@
   "conferido": false
  },
  "pediatria-0812": {
+  "conceito": "**O que é a pronação dolorosa.** É a **subluxação da cabeça do rádio** sob o ligamento anular, também chamada de cotovelo de babá. Uma tração longitudinal súbita no antebraço com o cotovelo em extensão e o antebraço pronado (puxar a criança pela mão para subir um degrau, balançar pelos braços) faz parte do ligamento anular escorregar sobre a cabeça radial e ficar interposto na articulação radiocapitelar.\n\n**Por que acomete crianças pequenas.**\n- A cabeça do rádio ainda é pouco desenvolvida e quase do mesmo diâmetro do colo, o que oferece pouca resistência ao deslizamento do ligamento.\n- O ligamento anular é frouxo, e sua inserção distal no colo é fraca.\n\nCom o crescimento, a cabeça radial se alarga e o ligamento se fortalece, e a lesão praticamente desaparece **após os 5 anos**.\n\n**Epidemiologia.**\n\n| Aspecto | Dado |\n|---|---|\n| Idade | **1 a 4 anos**, pico por volta de **2 a 3 anos** |\n| Lado | Esquerdo mais comum (a mão do adulto destro segura a esquerda da criança) |\n| Recorrência | Cerca de 5 a 30%, sobretudo antes dos 2 anos |\n\n**Quadro e tratamento.** A criança chora e para de usar o braço, mantendo-o junto ao corpo, com cotovelo levemente fletido e antebraço pronado, sem edema ou deformidade. Radiografia é desnecessária quando a história é típica. A redução é feita por **supinação com flexão** do cotovelo ou por **hiperpronação**, que tem maior taxa de sucesso na primeira tentativa; um clique é palpado sobre a cabeça radial e a criança volta a usar o braço em minutos.",
+  "correta": "**Resposta provável: Errado.** A pronação dolorosa ocorre tipicamente entre **1 e 4 anos**, com pico por volta de 2 a 3 anos. Entre 6 e 8 anos é rara, porque a cabeça do rádio já se alargou e o ligamento anular está mais firme.",
   "incorretas": {
-   "A": "**Certo seria dizer que casos isolados podem ocorrer em idade mais avançada.** Possibilidade não equivale à faixa de maior incidência."
+   "A": "**Certo** deslocaria a lesão para uma faixa em que ela praticamente não ocorre. Dor no cotovelo após trauma aos 6 a 8 anos sugere fraturas (supracondiliana, côndilo lateral), não subluxação da cabeça radial."
   },
-  "conceito": "**Pronação dolorosa é subluxação da cabeça radial na primeira infância.** Uma tração longitudinal no antebraço, muitas vezes com a mão segurada por um adulto, permite que o ligamento anular se desloque e fique interposto. A criança para de usar o braço, mantendo-o próximo ao corpo e geralmente pronado, sem grande edema ou deformidade.\n\n**A idade típica é um a quatro anos, com pico por volta de dois a três.** À medida que a cabeça radial e o ligamento amadurecem, a lesão se torna menos comum. Em criança de seis a oito anos, história atípica, dor óssea localizada, inchaço ou falha de redução exigem pensar em fratura e reavaliar o diagnóstico. Hiperpronação ou supinação-flexão são manobras de redução em apresentação típica.",
-  "correta": "**Errado: a maior incidência não é entre seis e oito anos.** O pico ocorre em crianças bem menores, sobretudo entre dois e três anos.",
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "referencias": [
-   "Hebert Sizínio et al. Ortopedia e traumatologia: princípios e prática. Porto Alegre: Artmed. 3ª edição, p. 1059."
+   "Hebert Sizínio et al. Ortopedia e traumatologia: princípios e prática. Porto Alegre: Artmed. 3ª edição, p. 1059.",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "B",
-  "geradoEm": "2026-10-01",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0813": {
@@ -9932,17 +9936,18 @@
   "conferido": false
  },
  "pediatria-0815": {
+  "conceito": "**Na criança, a fratura é do colo, não da cabeça.** A cabeça do rádio infantil é em grande parte cartilaginosa e resistente, e a fratura ocorre quase sempre no **colo** ou na fise proximal (Salter-Harris II). O mecanismo é a queda com a mão estendida e o cotovelo em valgo, que comprime a cabeça contra o capítulo e a angula lateralmente.\n\n**O que se aceita.** A remodelação é boa, sobretudo abaixo de 10 anos. Os limites mais usados:\n\n| Situação | Conduta |\n|---|---|\n| Angulação até cerca de 30° | **Tratamento não cirúrgico**: imobilização breve e mobilização precoce |\n| Angulação maior que 30°, ou translação importante, ou bloqueio da pronossupinação | **Redução fechada** |\n| Falha da redução fechada | **Redução percutânea**: fio de Kirschner usado como alavanca (Bosworth) ou técnica intramedular de Métaizeau |\n| Falha das técnicas percutâneas | Redução **aberta**, como último recurso |\n\n**Por que a redução aberta é a última opção.** A irrigação da cabeça radial infantil chega por vasos que sobem pelo colo, sob o periósteo. Abrir a articulação e manipular diretamente o fragmento aumenta o risco de:\n- **necrose avascular** da cabeça;\n- **fechamento prematuro da fise**;\n- **sinostose radioulnar**, complicação grave que bloqueia a pronossupinação;\n- rigidez e ossificação heterotópica.\n\nPor isso as séries mostram resultados piores após redução aberta, e a sequência preconizada é sempre do menos para o mais invasivo.\n\n**Detalhe técnico.** Na técnica de Métaizeau, uma haste elástica é introduzida pelo rádio distal, sobe pelo canal até o fragmento proximal e, ao ser rodada, reduz a cabeça sem abrir a articulação.",
+  "correta": "**Resposta provável: Errado.** Angulação acima de 30° na fratura do colo do rádio da criança indica **redução**, mas começando pelas técnicas **fechadas** e **percutâneas** (Bosworth, Métaizeau). A redução aberta fica reservada para quando estas falham, pelo risco de necrose, sinostose e rigidez.",
   "incorretas": {
-   "A": "**Certo seria considerar cirurgia aberta quando a redução menos invasiva falha.** O ângulo isolado não justifica abrir todas as fraturas."
+   "A": "**Certo** pularia etapas. A redução aberta como primeira escolha expõe a criança a mais complicações vasculares e à sinostose radioulnar, sem vantagem sobre as técnicas fechadas e percutâneas."
   },
-  "conceito": "**A lesão usual na criança é do colo radial, perto da cabeça.** Angulação acima de cerca de 30 graus frequentemente indica tentativa de redução, especialmente se houver limitação da rotação do antebraço. Esse limiar não escolhe sozinho a via aberta: idade, translação, estabilidade e mobilidade também contam.\n\n**A sequência prefere preservar a vascularização.** Tenta-se redução fechada; se insuficiente, técnicas percutâneas com fio ou haste intramedular podem alinhar o fragmento. Redução aberta com fixação é reservada para falha das opções menos invasivas ou desvio irredutível, porque aumenta risco de rigidez e necrose da cabeça radial. Após a consolidação, a pronação e supinação são funções a acompanhar.",
-  "correta": "**Errado: angulação acima de 30 graus não impõe redução aberta e fixação interna como primeira conduta.** Primeiro se avalia redução fechada ou percutânea.",
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "referencias": [
-   "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 3ª edição, p. 724."
+   "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 3ª edição, p. 724.",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "B",
-  "geradoEm": "2026-10-01",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0816": {
@@ -9988,17 +9993,18 @@
   "conferido": false
  },
  "pediatria-0819": {
+  "conceito": "**A gravidade da fratura do colo do fêmur na criança.** Ao contrário do adulto, a fratura do colo femoral infantil é rara e resulta de trauma de alta energia. A complicação mais temida é a **necrose avascular**, que ocorre em cerca de 20 a 50% dos casos, e mais nos tipos proximais (transepifisária e transcervical) de **Delbet**. Ela decorre da lesão dos vasos retinaculares, ramos da artéria circunflexa femoral medial, que correm na superfície do colo até a epífise.\n\n**A classificação de Ratliff** descreve **onde** ocorreu a necrose, e isso define o prognóstico.\n\n| Tipo | Área necrótica | Prognóstico |\n|---|---|---|\n| **I** | **Toda a cabeça** e, às vezes, o colo | **Pior**: colapso, deformidade e artrose |\n| II | Parte da epífise | Intermediário |\n| III | Colo, entre o traço de fratura e a fise, poupando a epífise | **Melhor** |\n\n**Por que o tipo I é o pior.** Quando toda a epífise necrosa, ela perde sustentação e colapsa sob carga, a cabeça se deforma, a congruência articular se perde e a artrose surge precocemente. No tipo III, a epífise permanece viável; o colo pode encurtar e haver parada de crescimento, mas a superfície articular é preservada.\n\n**Prevenção.** Redução anatômica precoce e fixação estável, sem violar a fise quando possível. Muitos autores defendem descompressão do hematoma intracapsular (capsulotomia ou aspiração) para reduzir a pressão sobre os vasos, embora a evidência seja limitada.\n\n**Outras complicações.** Coxa vara, pseudartrose e fechamento prematuro da fise, com discrepância de comprimento.",
+  "correta": "**Resposta provável: Errado.** Na classificação de Ratliff, o pior prognóstico é do **tipo I**, com necrose de toda a cabeça femoral. O **tipo III**, restrito ao colo entre a fratura e a fise e poupando a epífise, é o de **melhor** prognóstico.",
   "incorretas": {
-   "A": "**Certo seria reconhecer que o tipo III também pode deixar sequelas importantes.** Isso não o torna pior que a necrose extensa do tipo I."
+   "A": "**Certo** inverteria a classificação. O tipo III preserva a epífise e a superfície articular; o colapso e a artrose são típicos do tipo I."
   },
-  "conceito": "**Ratliff classifica a extensão da necrose após fratura do colo femoral infantil.** No tipo I, há necrose difusa da cabeça, com possível extensão ao colo; no tipo II, o acometimento é parcial da epífise; no tipo III, predomina no colo entre a fise e o traço de fratura, poupando a epífise. Essa classificação descreve a complicação vascular, não o traço inicial da fratura, que pode ser descrito por Delbet.\n\n**A necrose difusa da cabeça é a mais grave.** O tipo I tende a maior colapso, deformidade e perda de congruência. O tipo III pode gerar deformidade do colo e distúrbio de crescimento, mas não é o pior padrão por definição. A avaliação seriada observa esfericidade, comprimento do colo, fise e função do quadril.",
-  "correta": "**Errado: Ratliff I, com necrose difusa da cabeça, tem o pior prognóstico.** Ratliff III envolve principalmente o colo e poupa a epífise.",
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "referencias": [
+   "Ratliff AH. Fractures of the neck of the femur in children. J Bone Joint Surg Br. 1962;44-B(3):528-542.",
    "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 5ª edição, p. 925."
   ],
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "B",
-  "geradoEm": "2026-10-01",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0820": {
@@ -10075,17 +10081,18 @@
   "conferido": false
  },
  "pediatria-0825": {
+  "conceito": "**A fise distal do fêmur é especial.** Ela responde por cerca de **70% do crescimento do fêmur** e por quase 40% do comprimento do membro inferior, crescendo cerca de 9 a 10 mm por ano. Uma parada de crescimento nesse local produz discrepância e deformidade angular importantes.\n\n**Por que o Salter-Harris II não é benigno aqui.** Na maioria dos ossos, o tipo II tem bom prognóstico: o traço corre pela camada hipertrófica da fise e sai pela metáfise, deixando o fragmento de **Thurston-Holland**, e as células germinativas ficam preservadas. No fêmur distal, porém:\n- a fise tem formato **ondulado**, com quatro processos mamilares que se encaixam na metáfise. Quando a fise se desloca, essas ondulações cisalham a camada germinativa em vários pontos;\n- a lesão resulta de trauma de **alta energia** em adolescentes;\n- o desvio costuma ser grande.\n\n**O resultado.** As séries mostram distúrbio de crescimento em cerca de **metade dos casos**, inclusive nos tipos I e II. As consequências possíveis:\n\n| Sequela | Efeito |\n|---|---|\n| Parada completa | Encurtamento do membro |\n| Parada parcial (barra óssea) | Deformidade angular (varo ou valgo) progressiva |\n| Lesão vascular ou do nervo fibular | Nas fraturas com desvio anterior ou posterior grave |\n\n**Conduta.** Redução anatômica e fixação estável (parafusos no fragmento de Thurston-Holland, poupando a fise, ou fios cruzados). **Acompanhamento radiográfico prolongado**, com escanometria e comparação com o lado oposto até o fim do crescimento, para detectar precocemente barras ósseas e discrepâncias.",
+  "correta": "**Resposta provável: Errado.** Ao contrário do que ocorre em outros ossos, o Salter-Harris II do fêmur distal **frequentemente** causa sequelas fisárias, com distúrbio de crescimento em cerca de metade dos casos, pela fise ondulada, pela alta energia e pelo grande potencial de crescimento da região.",
   "incorretas": {
-   "A": "**Certo seria para algumas lesões fisárias de locais menos arriscados e sem desvio.** A fise distal femoral exige vigilância particular."
+   "A": "**Certo** aplicaria ao fêmur distal a regra geral do bom prognóstico do tipo II, que não vale para essa fise. É justamente por isso que essas fraturas exigem seguimento prolongado."
   },
-  "conceito": "**A fise distal femoral responde por grande parcela do crescimento do membro inferior.** Lesão Salter-Harris II atravessa a fise e sai pela metáfise, deixando o fragmento de Thurston-Holland. Ser tipo II não torna a lesão inofensiva: no fêmur distal, a força traumática e o desvio podem danificar a placa de crescimento de modo permanente.\n\n**Acompanhamento prolongado é obrigatório.** Fechamento completo pode encurtar o membro; ponte fisária parcial pode criar deformidade angular. Redução cuidadosa, estabilização quando necessária e comparação seriada do eixo e comprimento são essenciais até confirmar crescimento simétrico. O risco varia com desvio, energia e tratamento, mas está longe de ser uma sequela rara nesse local.",
-  "correta": "**Errado: Salter-Harris II distal do fêmur tem risco relevante de parada fisária definitiva.** O número do tipo não garante bom prognóstico.",
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "referencias": [
-   "Hebert Sizínio et al. Ortopedia e traumatologia: princípios e prática. Porto Alegre: Artmed. 3ª edição, p. 1300."
+   "Hebert Sizínio et al. Ortopedia e traumatologia: princípios e prática. Porto Alegre: Artmed. 3ª edição, p. 1300.",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "B",
-  "geradoEm": "2026-10-01",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0826": {
