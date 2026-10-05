@@ -300,16 +300,19 @@
   "conferido": false
  },
  "tumores-0025": {
-  "conceito": "**Síndrome de Maffucci** é a encondromatose múltipla associada a **hemangiomas** de partes moles, que aparecem como nódulos azulados e, na radiografia, como **flebólitos**. Como a doença de Ollier, é esporádica, por mosaicismo de IDH1 ou IDH2, mas a **malignização é alta**, de 30 a 50% ou mais, para condrossarcoma e angiossarcoma, e há risco de outras neoplasias, como glioma e tumores de ovário, pâncreas e vias biliares. O seguimento é vitalício, e dor nova ou crescimento de lesão pedem ressonância.\n\n**Na comparação**, a doença de Ollier tem só encondromas, com risco de condrossarcoma de 25 a 30%, e as exostoses múltiplas, de herança dominante, malignizam em 1 a 5%.\n\n**Na prova:** Maffucci é encondromatose com **hemangiomas**, com **alto risco** de sarcoma.",
-  "correta": "**Hemangiomas, com alta taxa de degeneração sarcomatosa.** A malignização chega a 30 a 50% ou mais, pior que na doença de Ollier.",
+  "conceito": "**As encondromatoses múltiplas.** O **encondroma** é um tumor benigno de **cartilagem hialina** dentro do osso, geralmente **solitário** e nas **falanges** da mão. Quando há **múltiplos** encondromas, fala-se em encondromatose. As duas formas principais estão ligadas a mutações **somáticas** (em mosaico) nos genes **IDH1** e **IDH2**, e não são hereditárias.\n\n| Característica | Doença de Ollier | Síndrome de Maffucci |\n|---|---|---|\n| Lesões ósseas | **Encondromas múltiplos**, muitas vezes de predomínio **unilateral** | Encondromas múltiplos |\n| Lesões de partes moles | Nenhuma | **Hemangiomas** de partes moles (com flebólitos visíveis na radiografia) |\n| Deformidades | Encurtamento, encurvamento, discrepância de membros | Semelhantes |\n| Transformação maligna | Alta (cerca de 25 a 40% ao longo da vida) | **Ainda maior** (pode passar de 50%); também outros tumores malignos |\n\n**A síndrome de Maffucci.** Combina os **encondromas múltiplos** com **hemangiomas** de partes moles (malformações vasculares, que aparecem como nódulos azulados e **flebólitos** calcificados na radiografia). Tem **alta taxa de degeneração sarcomatosa**, principalmente para **condrossarcoma**, e também risco de outros tumores malignos (gliomas, tumores do ovário, do pâncreas e outros). O seguimento deve ser feito por toda a vida.\n\n**A doença de Ollier.** Os encondromas múltiplos, frequentemente com predomínio de **um lado do corpo**, causam deformidades e **discrepâncias** de membros durante o crescimento. A transformação maligna para condrossarcoma também é frequente.\n\n**Os sinais de alerta para transformação maligna.**\n- **Dor** nova, sem fratura.\n- **Aumento** de volume após o fim do crescimento.\n- **Destruição cortical**, massa de partes moles, reabsorção da matriz calcificada.\n- Em pacientes com encondromatose, qualquer mudança deve ser investigada com ressonância e biópsia.\n\n**O tratamento.** As deformidades e discrepâncias são tratadas com osteotomias, alongamentos e epifisiodeses. Os condrossarcomas são tratados com **ressecção** com margens (resistentes à quimioterapia e à radioterapia).",
+  "correta": "**Correta: B (hemangiomas e apresenta alta taxa de degeneração sarcomatosa).** A síndrome de Maffucci associa a encondromatose múltipla a **hemangiomas** de partes moles e tem **alta taxa** de degeneração sarcomatosa, sobretudo para condrossarcoma, além de risco de outros tumores malignos.",
   "incorretas": {
-   "A": "**Risco subestimado.** Os hemangiomas estão certos, mas a taxa alta de malignização é a marca da síndrome.",
-   "C": "**Associação errada.** A hipoplasia renal não faz parte da síndrome, e o risco não é baixo.",
-   "D": "**Associação errada.** O risco alto está certo, mas a associação é com hemangiomas, não com o rim."
+   "A": "A associação com hemangiomas está certa, mas a taxa de degeneração sarcomatosa na síndrome de Maffucci é **alta**, e não baixa.",
+   "C": "A síndrome de Maffucci se associa a **hemangiomas**, e não à hipoplasia renal. E a degeneração sarcomatosa é alta.",
+   "D": "A degeneração sarcomatosa é alta, mas a associação é com **hemangiomas**, e não com hipoplasia renal."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
+   "Campanacci M. Bone and Soft Tissue Tumors. 2ª edição. Springer; 1999."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "tumores-0026": {
   "conceito": "**Ewing e osteossarcoma se separam pela histologia.** O Ewing é tumor de **pequenas células redondas e azuis**, CD99 positivo, com a translocação t(11;22) EWSR1-FLI1; o osteossarcoma tem células pleomórficas ou fusiformes **produzindo osteoide**. O Ewing prefere a **diáfise**, a pelve e as costelas, com casca de cebola e grande massa de partes moles, febre e VHS alta que simulam osteomielite, e é sensível à radioterapia; o osteossarcoma é metafisário, no fêmur distal e na tíbia proximal, com raios de sol e triângulo de Codman, fosfatase alcalina e DHL elevadas, e é radiorresistente.\n\n**A idade** discrimina pouco: o Ewing é descrito entre 5 e 20 anos, e o osteossarcoma entre 10 e 25, mas os dois têm pico na adolescência. O tratamento do Ewing combina quimioterapia neoadjuvante, controle local com cirurgia ou radioterapia e quimioterapia adjuvante.\n\n**Na prova:** Ewing tem **células redondas**; veja o alerta sobre a idade.",
@@ -2305,16 +2308,19 @@
   "conferido": false
  },
  "tumores-0214": {
-  "conceito": "**O cordoma** é o **tumor maligno primário mais comum do sacro**. Deriva de restos da notocorda, na linha média, com cerca de metade dos casos na região sacrococcígea, cerca de um terço na base do crânio e o restante na coluna móvel. Tem predomínio **masculino** e pico entre **50 e 70 anos**, cresce devagar e se apresenta com dor lombar baixa ou sacrococcígea inespecífica por meses ou anos, com parestesias e disfunção esfincteriana tardias e massa pré-sacral palpável ao toque retal.\n\n**Histologia e tratamento.** Mostra células fisalíferas e é positivo para brachyury. O tratamento é a ressecção em bloco com margem ampla, com radioterapia de partículas se a margem for comprometida; a quimioterapia convencional não funciona. No sacro, o tumor benigno mais lembrado é o tumor de células gigantes.\n\n**Na prova:** cordoma é **sacro, homem, 50 a 70 anos**.",
-  "correta": "**Do sacro, afetando homens de 50 a 70 anos.** São a sede, o sexo e a idade típicos do cordoma.",
+  "conceito": "**O cordoma.** É um tumor maligno raro que se origina de **restos da notocorda** (a estrutura embrionária que dá origem ao núcleo pulposo dos discos). Por isso, ocorre na **linha média** do esqueleto axial, nas duas pontas da coluna:\n- **sacro e cóccix**: cerca de 50% (o local mais comum);\n- **base do crânio** (clivo, região esfeno-occipital): cerca de 30 a 35%;\n- coluna móvel (cervical, mais que torácica e lombar): o restante.\n\n**O perfil.** Adultos de **40 a 70 anos**, mais homens. É o tumor maligno primário **mais comum do sacro**. Histologicamente, tem as células **fisalíforas** (com vacúolos, \"bolhosas\") numa matriz mixoide, e expressa a **braquiúria** (marcador específico), a citoqueratina e a proteína S-100.\n\n**O quadro clínico do cordoma sacrococcígeo.**\n- O sintoma inicial mais frequente é a **dor lombar baixa** ou **sacral**, **insidiosa**, de evolução lenta (meses a anos), muitas vezes atribuída a causas banais (lombalgia mecânica, coccigodinia).\n- O tumor cresce para **dentro da pelve** (anterior ao sacro), onde há espaço, e pode ficar **muito grande** antes do diagnóstico.\n- **Massa** palpável no **toque retal** (pré-sacral), firme e fixa ao sacro.\n- Sintomas **tardios**: alterações **intestinais** (constipação) e **urinárias** (retenção, incontinência), alteração sexual e déficits das raízes sacrais. A **ciatalgia** é menos frequente.\n\n**Por que o toque retal é fundamental.** Num adulto com dor sacral persistente, o toque retal pode detectar a massa pré-sacral e evitar meses de atraso.\n\n**A imagem.** Lesão **lítica e destrutiva** no sacro, na linha média, com grande massa de partes moles e calcificações. A ressonância mostra sinal **muito alto em T2** (matriz mixoide) e o tamanho real do tumor.\n\n**O tratamento.**\n- **Ressecção em bloco** com **margens amplas**: o tratamento de escolha, porque o cordoma é **resistente à quimioterapia** e relativamente resistente à radioterapia convencional. Muitas vezes exige sacrificar raízes sacrais, com perda de função intestinal, vesical e sexual, conforme o nível.\n- **Radioterapia de alta dose** (prótons, íons de carbono) como adjuvante ou nos casos irressecáveis.\n- A **biópsia** deve ser feita por via **posterior**, nunca transretal (contaminaria o reto e a pelve).\n- A **recidiva local** é o grande problema; metástases ocorrem tardiamente (pulmão, osso).",
+  "correta": "**Correta: B (do sacro, afetando pacientes masculinos de 50 a 70 anos de idade).** O cordoma é o tumor maligno primário **mais comum do sacro**. Acomete sobretudo adultos de 40 a 70 anos, com predomínio **masculino**.",
   "incorretas": {
-   "A": "**Sede errada.** A coluna móvel é sede minoritária; o sacro concentra metade dos casos.",
-   "C": "**Erra tudo.** Sede, sexo e idade estão errados.",
-   "D": "**Sexo e idade errados.** A sede está certa, mas o predomínio é masculino e a faixa etária é mais alta."
+   "A": "O cordoma ocorre na coluna móvel, mas não é o tumor maligno primário mais comum da coluna como um todo. Ele é o **mais comum do sacro**.",
+   "C": "O cordoma predomina no sexo **masculino** e em pacientes mais velhos, e é o mais comum do **sacro**.",
+   "D": "O local está certo (sacro), mas o cordoma predomina no sexo **masculino** e em pacientes de 50 a 70 anos."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
+   "Campanacci M. Bone and Soft Tissue Tumors. 2ª edição. Springer; 1999."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "tumores-0240": {
   "conceito": "**Onde o cisto ósseo aneurismático aparece.** Cerca de metade dos casos está nos **ossos longos**, de forma excêntrica e metafisária, nas extremidades proximais de fêmur, tíbia e úmero, e **15 a 20%** estão na **coluna e no sacro**: como região isolada, a coluna supera qualquer outro sítio da lista. Na coluna, ocupa os elementos posteriores (pedículo, lâmina e processos), podendo se estender ao corpo, e causa dor, escoliose antálgica e risco de compressão neurológica. A maioria dos pacientes tem menos de 20 anos, e a lesão é lítica, expansiva, com níveis líquido-líquido na ressonância.\n\n**Cuidados.** A lesão é muito vascularizada, e a embolização antes de operar coluna e pelve é frequentemente necessária. Parte dos casos é secundária a outra lesão, e todo o material deve ir ao patologista, com atenção ao osteossarcoma telangiectásico.\n\n**Na prova:** entre as opções, o cisto aneurismático é mais comum na **coluna vertebral**.",
