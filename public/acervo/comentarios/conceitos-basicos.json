@@ -2851,19 +2851,20 @@
   "conferido": false
  },
  "conceitos-basicos-0288": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "D",
-  "conceito": "**Artrite séptica no adulto jovem.** Sexualmente ativo, a causa mais comum é Neisseria gonorrhoeae, com poliartralgia migratória, tenossinovite e lesões de pele.\n\n**Na prova:** adulto jovem, tenossinovite e pústulas, gonococo.",
-  "correta": "**Neisseria gonorrhoeae.** É a mais comum nessa faixa.",
+  "conceito": "**Artrite piogênica e a idade do paciente.** A artrite séptica é a infecção bacteriana da articulação, uma urgência porque as enzimas bacterianas e leucocitárias destroem a cartilagem em poucos dias. O agente provável varia conforme a idade e o contexto, e a escolha do antibiótico empírico depende disso.\n\n**Agentes por faixa etária.**\n\n| Paciente | Agentes mais comuns |\n|---|---|\n| Recém-nascido | Staphylococcus aureus, estreptococo do grupo B, bacilos gram-negativos |\n| Criança | S. aureus, Kingella kingae (abaixo de 4 anos), estreptococos; Haemophilus influenzae tipo b praticamente desapareceu com a vacinação |\n| **Adulto jovem sexualmente ativo** | **Neisseria gonorrhoeae** (classicamente o mais comum), S. aureus |\n| Adulto mais velho, doenças crônicas, prótese | S. aureus, estreptococos, gram-negativos |\n| Usuário de drogas injetáveis | S. aureus, Pseudomonas aeruginosa (articulações axiais) |\n\n**Infecção gonocócica disseminada.** Duas formas:\n- **Síndrome artrite-dermatite**: febre, **poliartralgia migratória**, **tenossinovite** (punho, mão, tornozelo) e lesões cutâneas vesicopustulosas. Hemocultura às vezes positiva; líquido articular frequentemente negativo.\n- **Artrite purulenta** monoarticular (joelho, punho, tornozelo), com cultura do líquido mais frequentemente positiva.\n\nA cultura deve incluir uretra, colo uterino, reto e faringe, em meio próprio (Thayer-Martin). O tratamento é ceftriaxona, e a drenagem cirúrgica é menos necessária do que na artrite estafilocócica.\n\n**Observação.** Considerando todos os adultos, o **S. aureus** é o agente mais comum de artrite séptica. A associação clássica de prova, e a da referência, é a do adulto jovem sexualmente ativo com o gonococo.\n\n> Adulto jovem com artrite, tenossinovite e lesões de pele: gonococo.",
+  "correta": "**D: Neisseria gonorrhoeae (resposta pela bibliografia).** No adulto jovem sexualmente ativo, o gonococo é classicamente o agente mais comum de artrite piogênica, com poliartralgia migratória, tenossinovite e lesões pustulosas na forma disseminada.",
   "incorretas": {
-   "A": "**Pseudomonas aeruginosa.** Usuário de drogas injetáveis.",
-   "B": "**Haemophilus influenzae tipo-B.** Criança não vacinada.",
-   "C": "**Staphylococcus aureus.** Mais comum nas outras idades."
+   "A": "**Pseudomonas aeruginosa** é típica de usuários de drogas injetáveis (articulações esternoclaviculares, sacroilíacas) e de ferimentos perfurantes do pé através de calçado.",
+   "B": "**Haemophilus influenzae tipo b** foi importante em crianças de 6 meses a 2 anos antes da vacinação; é raríssimo em adultos.",
+   "C": "**Staphylococcus aureus** é o agente mais comum de artrite séptica no adulto em geral e também atinge jovens; na associação clássica do adulto jovem sexualmente ativo, porém, a referência aponta o gonococo."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 11ª ed., pg. 723."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 11ª ed., pg. 723.",
+   "Goldenberg DL. Septic arthritis. Lancet. 1998;351(9097):197-202."
   ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "D",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "conceitos-basicos-0289": {

@@ -3909,19 +3909,20 @@
   "conferido": false
  },
  "coluna-0333": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "C",
-  "conceito": "**Jefferson.** Explosão do anel do atlas por carga axial, com fratura dupla no arco anterior e dupla no posterior (quatro partes).\n\n**Na prova:** Jefferson clássico tem quatro traços.",
-  "correta": "**Duplo no posterior e duplo no anterior.** É a descrição clássica.",
+  "conceito": "**Fratura de Jefferson: o padrão em quatro partes.** Geoffrey Jefferson, em 1920, descreveu a fratura do atlas (C1) produzida por **carga axial** sobre o vértice do crânio, como no mergulho em água rasa ou na queda de objeto sobre a cabeça.\n\n**Mecanismo.** Os côndilos occipitais, convexos, empurram as **massas laterais** do atlas, que têm forma de cunha (mais largas por fora). A força axial se decompõe em vetores que **afastam as massas laterais** lateralmente. O anel, fino nas junções das massas com os arcos, rompe nesses pontos.\n\n**Padrão clássico.** O anel rompe em **quatro pontos**: **dois no arco anterior e dois no arco posterior**, nos locais mais finos (junção dos arcos com as massas laterais). Variantes com três ou duas fraturas também ocorrem, e o termo é usado de forma ampla para as fraturas explosivas do atlas.\n\n**Classificação das fraturas do atlas.**\n\n| Tipo | Descrição |\n|---|---|\n| Arco posterior isolado | Por hiperextensão; a mais comum, estável |\n| Arco anterior isolado | Avulsão pelo longo do pescoço ou impacto do dente |\n| Massa lateral | Por carga axial com inclinação |\n| **Explosão (Jefferson)** | Fraturas nos arcos anterior e posterior, com afastamento das massas laterais |\n\n**Estabilidade e neurologia.** O canal se alarga com a explosão, e a lesão neurológica é rara. A estabilidade depende do **ligamento transverso**: soma do afastamento das massas laterais acima de 6,9 mm (regra de Spence) ou intervalo atlantodental aumentado sugerem ruptura. A tomografia é o exame que caracteriza os traços.\n\n> Jefferson clássico: dois traços no arco anterior e dois no posterior.",
+  "correta": "**C: duplo no posterior e duplo no anterior (resposta pela bibliografia).** A explosão do anel do atlas, na descrição clássica de Jefferson, produz quatro fraturas: duas no arco anterior e duas no arco posterior, nas junções com as massas laterais.",
   "incorretas": {
-   "A": "**Duplo no posterior e único no anterior.** Não é o padrão clássico.",
-   "B": "**Único no posterior e único no anterior.** Não é o padrão clássico.",
-   "D": "**Único no posterior e duplo no anterior.** Não é o padrão clássico."
+   "A": "**Duplo no posterior e único no anterior** é uma variante de três partes, possível, mas não o padrão clássico descrito por Jefferson.",
+   "B": "**Único em cada arco** é uma fratura de duas partes, possível como variante, mas não a forma clássica da explosão do atlas.",
+   "D": "**Único no posterior e duplo no anterior** também é variante de três partes, não o padrão clássico."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., pg. 1615."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., pg. 1615.",
+   "Jefferson G. Fracture of the atlas vertebra. Report of four cases, and a review of those previously recorded. Br J Surg. 1919;7(27):407-422."
   ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "C",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "coluna-0334": {

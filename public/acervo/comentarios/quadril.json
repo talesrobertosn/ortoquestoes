@@ -5804,19 +5804,20 @@
   "conferido": false
  },
  "quadril-0486": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": "**Abdutores na marcha.** Atuam principalmente no início e meio do apoio, estabilizando a pelve quando o membro oposto sai do chão.\n\n**Na prova:** abdutores trabalham no apoio, sobretudo no início.",
-  "correta": "**Início da fase de apoio.** É o período de maior atividade.",
+  "conceito": "**Os abdutores do quadril no ciclo da marcha.** O ciclo da marcha vai do contato inicial de um pé até o próximo contato do mesmo pé e se divide em **fase de apoio** (cerca de 60%) e **fase de oscilação** (cerca de 40%).\n\n**Subfases do apoio (Perry).**\n1. Contato inicial.\n2. Resposta à carga (o peso é transferido; o outro membro sai do chão).\n3. Apoio médio.\n4. Apoio terminal.\n5. Pré-balanço.\n\n**O que fazem os abdutores.** No início do apoio, quando o membro oposto deixa o chão, o corpo passa a ser sustentado por um só membro, e a pelve tende a cair para o lado que oscila. O **glúteo médio**, o **glúteo mínimo** e o **tensor da fáscia lata** do lado de apoio se contraem para estabilizar a pelve no plano frontal. A atividade eletromiográfica é máxima na **resposta à carga e no início do apoio médio** e diminui na segunda metade do apoio.\n\n**Atividade dos principais grupos.**\n\n| Grupo | Fase de maior atividade |\n|---|---|\n| **Abdutores** | Início do apoio (resposta à carga e apoio médio inicial) |\n| Extensores do quadril (glúteo máximo, isquiotibiais) | Final da oscilação e início do apoio |\n| Quadríceps | Resposta à carga (controle da flexão do joelho) |\n| Tríceps sural | Apoio médio e terminal (controle do avanço da tíbia e impulso) |\n| Flexores do quadril (iliopsoas) | Pré-balanço e início da oscilação |\n| Tibial anterior | Contato inicial e oscilação |\n\n**Clínica.** Fraqueza dos abdutores produz a **marcha de Trendelenburg** (queda da pelve contralateral) ou a **marcha de Duchenne** (inclinação do tronco para o lado do apoio, compensação que aproxima o centro de gravidade do quadril).\n\n> Abdutores do quadril trabalham no início do apoio, estabilizando a pelve quando o outro pé sai do chão.",
+  "correta": "**A: início da fase de apoio (resposta pela bibliografia).** Os abdutores atingem atividade máxima na resposta à carga e no início do apoio médio, quando o membro oposto sai do chão e a pelve precisa ser estabilizada no plano frontal.",
   "incorretas": {
-   "B": "**Início da fase de oscilação.** Na oscilação o membro está livre.",
-   "C": "**Final da fase de apoio.** No final do apoio a atividade cai.",
-   "D": "**Final da fase de oscilação.** Na oscilação o membro está livre."
+   "B": "**O início da oscilação** é a fase dos flexores do quadril (iliopsoas) e do tibial anterior; os abdutores do membro que oscila não sustentam a pelve.",
+   "C": "**O final do apoio** é dominado pelo tríceps sural (impulso) e pelos flexores do quadril no pré-balanço; a atividade dos abdutores já diminuiu.",
+   "D": "**O final da oscilação** é a fase dos isquiotibiais (desaceleração da perna) e da preparação para o contato; os abdutores ainda não estão em carga."
   },
   "referencias": [
-   "Barros Filho TEP, Lech O. Exame físico em ortopedia. São Paulo: Sarvier. 2ª ed., pg. 93."
+   "Barros Filho TEP, Lech O. Exame físico em ortopedia. São Paulo: Sarvier. 2ª ed., pg. 93.",
+   "Perry J, Burnfield JM. Gait analysis: normal and pathological function. 2nd ed. Thorofare: Slack; 2010."
   ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "A",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "quadril-0487": {

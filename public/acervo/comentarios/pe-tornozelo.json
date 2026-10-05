@@ -3415,19 +3415,20 @@
   "conferido": false
  },
  "pe-tornozelo-0332": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "C",
-  "conceito": "**Metatarsalgia.** A sobrecarga das cabeças metatarsais é típica do antepé cavo (equino do antepé), que verticaliza os metatarsos e concentra a pressão.\n\n**Na prova:** antepé cavo sobrecarrega as cabeças metatarsais.",
-  "correta": "**Antepé cavo.** O antepé cavo é a deformidade que mais causa metatarsalgia.",
+  "conceito": "**Metatarsalgia e o antepé cavo.** Metatarsalgia é a dor sob as cabeças dos metatarsais. Não é um diagnóstico, e sim um sintoma de **má distribuição da carga** no antepé. Na marcha normal, a carga passa do calcâneo para o antepé e se distribui entre as cinco cabeças, com o primeiro raio (e seus sesamoides) recebendo a maior parte.\n\n**Por que o antepé cavo sobrecarrega as cabeças.** No **antepé cavo** (equino do antepé), os metatarsais ficam mais **verticalizados**, em flexão plantar em relação ao retropé. Consequências:\n- A área de apoio do antepé diminui e a pressão se concentra nas cabeças metatarsais.\n- Os dedos tendem à **garra** (hiperextensão das metatarsofalângicas), o que puxa o **coxim gorduroso plantar** para distal e deixa as cabeças sem proteção.\n- Formam-se calosidades plantares sob as cabeças.\n\n**Classificação das causas de metatarsalgia (Espinosa e colaboradores).**\n\n| Grupo | Exemplos |\n|---|---|\n| Primária (anatomia do antepé) | Antepé cavo, metatarsal longo ou em flexão plantar, garra dos dedos |\n| Secundária (doença sistêmica ou local) | Artrite reumatoide, Freiberg, neuroma de Morton, fratura de estresse |\n| Iatrogênica | Transferência após osteotomia que encurta ou eleva o primeiro metatarsal |\n\n**Tratamento.** Palmilha com apoio retrocapital (barra ou botão metatarsal), calçado de solado em mata-borrão, alongamento do gastrocnêmio se houver equino. Na falha, cirurgia dirigida à causa: osteotomias de encurtamento (Weil), osteotomia de elevação do primeiro metatarsal no cavo, correção das garras.\n\n> Antepé cavo verticaliza os metatarsais e concentra a carga nas cabeças: causa típica de metatarsalgia.",
+  "correta": "**C: antepé cavo (resposta pela bibliografia).** A flexão plantar dos metatarsais e a garra dos dedos concentram a carga nas cabeças metatarsais e deslocam o coxim plantar, sendo a deformidade que mais comumente provoca metatarsalgia.",
   "incorretas": {
-   "A": "**Pé eqüino.** Causa sobrecarga, mas não é a mais comum.",
-   "B": "**Antepé triangular simples.** Não é a mais comum.",
-   "D": "**Antepé convexo simples.** Não é a mais comum."
+   "A": "**O pé equino** (do tornozelo) aumenta a carga no antepé e pode contribuir para metatarsalgia, mas a questão trata das deformidades do próprio antepé, e a referência destaca o antepé cavo.",
+   "B": "**O antepé triangular simples** corresponde a um antepé alargado, de contorno espraiado, sem a verticalização dos metatarsais; a carga fica mais distribuída e a metatarsalgia é menos frequente.",
+   "D": "**O antepé convexo simples** descreve o arco transverso abaixado com apoio das cabeças centrais, que pode gerar dor central, mas é causa menos frequente que o antepé cavo segundo a referência adotada."
   },
   "referencias": [
-   "Hebert Sizínio et al. Ortopedia e traumatologia: princípios e prática. Porto Alegre: Artmed. 3ª ed., p. 631."
+   "Hebert Sizínio et al. Ortopedia e traumatologia: princípios e prática. Porto Alegre: Artmed. 3ª ed., p. 631.",
+   "Espinosa N, Brodsky JW, Maceira E. Metatarsalgia. J Am Acad Orthop Surg. 2010;18(8):474-485."
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "C",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pe-tornozelo-0333": {
