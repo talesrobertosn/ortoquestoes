@@ -323,17 +323,18 @@
   "conferido": false
  },
  "pediatria-0023": {
+  "conceito": "**O ciclo da marcha.** Vai do contato de um pé no chão até o próximo contato do **mesmo pé**. Divide-se em:\n- **apoio**: o pé está no chão, cerca de **60%** do ciclo;\n- **balanço**: o pé está no ar, avançando, cerca de **40%** do ciclo.\n\n**As subdivisões do apoio.**\n\n| Período | Duração aproximada | O que acontece |\n|---|---|---|\n| Duplo apoio inicial | Cerca de **10%** | Os dois pés no chão, logo após o contato do calcanhar; o peso passa para o membro que chegou |\n| **Apoio simples** | Cerca de **40%** | Só um pé no chão (o outro está em balanço): apoio médio e terminal |\n| Duplo apoio final | Cerca de **10%** | Pré-balanço; o peso passa para o outro membro |\n\n**Uma simetria útil.** O **apoio simples** de um membro (40%) dura exatamente o mesmo que o **balanço** do outro membro (40%): enquanto um pé está no ar, o outro sustenta o corpo sozinho.\n\n**As fases funcionais de Perry.**\n- **Apoio**: contato inicial, resposta à carga, apoio médio, apoio terminal, pré-balanço.\n- **Balanço**: balanço inicial, médio e terminal.\n\n**A velocidade muda as proporções.** Andando mais rápido, o apoio encurta e o duplo apoio diminui; na **corrida**, o duplo apoio desaparece e surge uma fase de **voo**. Na marcha lenta ou em pacientes com déficit de equilíbrio (idosos, doenças neurológicas), o apoio e o duplo apoio aumentam, porque o duplo apoio é a fase mais estável.\n\n**A marcha da criança.** Antes dos 3 anos: base alargada, passos curtos, cadência alta, contato com o pé plano e apoio mais longo. O padrão adulto se estabelece por volta dos **7 anos**.",
+  "correta": "**Correta: C (apoio simples corresponde a 40% do ciclo).** Na marcha normal, o apoio ocupa cerca de 60% do ciclo, com dois duplos apoios de cerca de 10% cada e um **apoio simples** de cerca de **40%**, que coincide com o balanço do outro membro.",
   "incorretas": {
-   "A": "O balanço corresponde a cerca de 40% do ciclo, não 60%.",
-   "B": "O apoio corresponde a cerca de 60% do ciclo, não 30%.",
-   "D": "O balanço não tem uma subdivisão chamada \"balanço simples\"; os 40% são do balanço inteiro."
+   "A": "O **balanço** ocupa cerca de **40%** do ciclo, e não 60%.",
+   "B": "O **apoio** ocupa cerca de **60%**, e não 30%.",
+   "D": "Não existe \"balanço simples\" como fase da marcha; o termo correto é **apoio simples**, que corresponde a 40%."
   },
-  "conceito": "O **ciclo da marcha** vai do contato de um pé no chão até o próximo contato do **mesmo pé**. Ele tem duas fases:\n\n**apoio**: o pé está no chão; **cerca de 60%** do ciclo;\n\n**balanço**: o pé está no ar, indo para a frente; **cerca de 40%** do ciclo.\n\n**Dentro do apoio**:\n\n**duplo apoio inicial**: cerca de **10%** (os dois pés no chão, logo após o contato);\n\n**apoio simples**: cerca de **40%** (só aquele pé no chão, enquanto o outro balança);\n\n**duplo apoio final**: cerca de **10%**.\n\nO apoio simples de um lado coincide com o balanço do outro: por isso os dois valem cerca de 40%.\n\n**As subfases de Perry**: no apoio, contato inicial, resposta à carga, apoio médio, apoio terminal e pré-balanço; no balanço, inicial, médio e terminal.\n\n**Na corrida**: desaparece o duplo apoio e surge a **fase de voo**, com os dois pés no ar; o apoio fica abaixo de 50%.\n\n**Na prova**: na marcha normal, o **apoio simples** corresponde a **40%** do ciclo.",
-  "correta": "O apoio total é cerca de 60% do ciclo, com 20% de duplo apoio, e o apoio simples corresponde a 40%.",
   "referencias": [
-   "Pediatric Orthopaedic Society of North America (POSNA). Gait. https://posna.org/physician-education/study-guide/gait"
+   "Pediatric Orthopaedic Society of North America (POSNA). Gait. https://posna.org/physician-education/study-guide/gait",
+   "Perry J, Burnfield JM. Gait Analysis: Normal and Pathological Function, 2ª edição. SLACK, 2010."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0024": {
@@ -852,18 +853,19 @@
   "conferido": false
  },
  "pediatria-0058": {
+  "conceito": "**O GMFCS.** O *Gross Motor Function Classification System* classifica a função motora grossa de crianças com paralisia cerebral em **cinco níveis**, conforme o que elas fazem no dia a dia.\n\n| Nível | Mobilidade (6 a 12 anos) |\n|---|---|\n| **I** | **Anda sem restrições**; corre e salta, com alguma limitação de velocidade e coordenação |\n| II | Anda na maioria dos ambientes, com dificuldade em terreno irregular e escadas |\n| III | Anda com **dispositivo manual** (andador, muletas) |\n| IV | Mobilidade limitada; cadeira de rodas motorizada ou empurrada |\n| V | Sem controle de cabeça e tronco; transportado |\n\n**A distribuição na população.** Nos **registros populacionais** de paralisia cerebral (europeus, australianos, norte-americanos), o **nível I** é o mais frequente, com cerca de **um terço a 40%** das crianças. A soma dos níveis I e II passa de metade dos casos. Isso acontece porque:\n- a forma clínica mais comum é a **espástica**;\n- dentro dela, as formas **hemiplégica** e **diplégica**, que em geral andam, são mais frequentes que a tetraplégica.\n\nOs níveis IV e V, embora menos frequentes, concentram as complicações mais graves: luxação do quadril, escoliose neuromuscular, problemas nutricionais e respiratórios.\n\n**Por que o GMFCS é tão usado.**\n- É **estável** ao longo do tempo: a criança tende a permanecer no mesmo nível.\n- Prevê a **capacidade de marcha** futura (curvas de desenvolvimento motor de Rosenbaum).\n- Prevê o **risco de luxação do quadril**, que aumenta do nível I (quase nulo) ao V (acima de 60 a 90%), e orienta a **vigilância radiográfica** dos quadris.\n- Orienta as metas de tratamento: melhorar a marcha nos níveis I a III; conforto, sentar e higiene nos níveis IV e V.\n\n**A variação entre fontes.** A proporção de cada nível muda entre registros e serviços (centros de referência veem mais casos graves), como explica o alerta.",
+  "correta": "**Correta: A (nível I).** Nos registros populacionais de paralisia cerebral, o nível I do GMFCS é o mais frequente, com cerca de um terço a 40% das crianças, porque as formas espásticas hemiplégica e diplégica, que geralmente andam, predominam.",
   "incorretas": {
-   "B": "O nível II é frequente, mas fica atrás do nível I.",
-   "C": "O nível III, com dispositivo manual para andar, é menos frequente.",
-   "D": "O nível IV, com cadeira de rodas na comunidade, é menos frequente."
+   "B": "O **nível II** é frequente, mas fica atrás do nível I nos registros populacionais.",
+   "C": "O **nível III** (marcha com dispositivo manual) é menos frequente que os níveis I e II.",
+   "D": "O **nível IV** é menos frequente; ele e o V concentram as complicações mais graves."
   },
-  "conceito": "O **GMFCS** classifica a função motora grossa na paralisia cerebral em cinco níveis, do I (anda sem restrições) ao V (não controla cabeça e tronco e é transportado).\n\n**A distribuição nos registros populacionais**: o **nível I** é o **mais frequente**, com cerca de um terço a 40% das crianças. Isso acontece porque a forma mais comum de paralisia cerebral é a **espástica**, e entre elas as **unilaterais** (hemiplegia) costumam estar nos níveis **I e II**. Os níveis mais graves são menos numerosos, mas concentram os problemas de quadril e coluna.\n\n**Para que o nível serve no dia a dia**:\n\n**I a III**: o foco é a **marcha** (análise de marcha e cirurgia em vários níveis num só tempo);\n\n**IV e V**: o foco é a vigilância do **quadril**, com radiografias periódicas e o índice de migração de Reimers, e a **escoliose**.\n\nA proporção exata de cada nível varia entre registros e serviços.\n\n**Na prova**: nível GMFCS mais frequente = **nível I**.",
-  "correta": "Nos registros populacionais, o nível I é o mais frequente, muito por conta das formas espásticas unilaterais.",
-  "alerta": "A prevalência de cada nível GMFCS varia entre registros e serviços. A alternativa reproduz a distribuição epidemiológica esperada pela fonte da prova.",
   "referencias": [
-   "GMFCS Expanded and Revised. CanChild. https://mld.foundation/wp-content/uploads/2020/04/GMFCS-ER_2007.pdf"
+   "GMFCS Expanded and Revised. CanChild. https://mld.foundation/wp-content/uploads/2020/04/GMFCS-ER_2007.pdf",
+   "Palisano R, Rosenbaum P, Walter S, Russell D, Wood E, Galuppi B. Development and reliability of a system to classify gross motor function in children with cerebral palsy. Dev Med Child Neurol. 1997;39(4):214-223."
   ],
-  "geradoEm": "2026-10-04",
+  "alerta": "A prevalência de cada nível GMFCS varia entre registros e serviços. A alternativa reproduz a distribuição epidemiológica esperada pela fonte da prova.",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0059": {
@@ -897,18 +899,18 @@
   "conferido": false
  },
  "pediatria-0061": {
+  "conceito": "**A luxação congênita da cabeça do rádio.** É a anomalia congênita mais comum do cotovelo. A cabeça do rádio se desenvolve fora da articulação e, sem o molde do capítulo, cresce **pequena e convexa** (cupuliforme), com o **colo alongado**, enquanto o **capítulo fica hipoplásico**. Frequentemente é **bilateral** e associada a outras anomalias (sinostose radioulnar, síndrome unha-patela, Ehlers-Danlos, Larsen).\n\n**A direção: quase sempre posterior.** A cabeça do rádio está **posterior** ou posterolateral na grande maioria dos casos congênitos. Isso ajuda a diferenciar da **Monteggia negligenciada** (luxação traumática não diagnosticada), que costuma ser **anterior** e vem com a ulna arqueada.\n\n**Que movimento fica limitado.** O bloqueio depende de onde a cabeça está:\n\n| Posição da cabeça | O que acontece | Movimento limitado |\n|---|---|---|\n| **Posterior** | No fim da **extensão**, a cabeça bate atrás do úmero (na fossa olecraniana) | **Extensão** |\n| Anterior | No fim da **flexão**, a cabeça bate na frente do úmero (na fossa coronoide) | **Flexão** |\n\nAlém disso, a **pronossupinação** pode estar discretamente limitada, porque a cabeça deformada gira mal.\n\n**Quadro clínico.** Muitas crianças são **assintomáticas**; percebe-se uma proeminência posterolateral do cotovelo e uma perda leve da extensão. A dor costuma aparecer na adolescência ou na vida adulta.\n\n**Tratamento.** Observação. A redução cirúrgica da forma congênita não funciona, porque a cabeça deformada não se adapta ao capítulo hipoplásico. Se houver dor ou bloqueio importante após o fim do crescimento, faz-se a **ressecção da cabeça do rádio**.",
+  "correta": "**Correta: D (posterior, com limitação da extensão).** A luxação congênita da cabeça do rádio é geralmente **posterior**, e a cabeça bate atrás do úmero no fim da extensão, **limitando a extensão** do cotovelo.",
   "incorretas": {
-   "A": "A luxação congênita é posterior, e a anterior limitaria a flexão.",
-   "B": "A direção está certa, mas a luxação posterior limita a extensão, não a flexão.",
-   "C": "Erra os dois: a luxação é posterior e limita a extensão."
+   "A": "A luxação congênita raramente é **anterior**; e, quando anterior, limita a **flexão**, não por ser a forma típica.",
+   "B": "A direção **posterior** está certa, mas o movimento limitado é a **extensão**, e não a flexão.",
+   "C": "A **extensão** fica limitada nas luxações posteriores; a luxação **anterior** limitaria a flexão."
   },
-  "conceito": "Na **luxação congênita da cabeça do rádio**, a cabeça está quase sempre **posterior** (ou posterolateral), em geral dos dois lados e com outras anomalias. A cabeça é pequena e convexa, e o capítulo é hipoplásico.\n\n**Que movimento fica limitado**: o bloqueio depende de onde a cabeça está:\n\n**luxação posterior**: no fim da **extensão**, a cabeça bate atrás do úmero e **limita a extensão**;\n\n**luxação anterior**: no fim da **flexão**, a cabeça bate na frente e limita a flexão.\n\nA pronossupinação costuma ser pouco limitada. Na adolescência podem surgir dor e estalido.\n\n**O diferencial**: uma cabeça do rádio luxada para **anterior**, unilateral, sugere **Monteggia** antigo não diagnosticado, que tem tratamento cirúrgico.\n\n**O tratamento da forma congênita**: observar; se houver dor depois da maturidade, ressecar a cabeça do rádio.\n\n**Na prova**: luxação congênita da cabeça do rádio = **posterior**, com **limitação da extensão**.",
-  "correta": "A cabeça luxada para posterior bate atrás do úmero no fim da extensão, limitando esse movimento.",
   "referencias": [
    "Congenital deformities of the upper limbs: Part II. https://pmc.ncbi.nlm.nih.gov/articles/PMC6565893/",
-   "Congenital radial head dislocation: narrative review. https://pubmed.ncbi.nlm.nih.gov/42611687/"
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0062": {
@@ -1171,18 +1173,18 @@
   "conferido": false
  },
  "pediatria-0080": {
+  "conceito": "**O princípio do suspensório de Pavlik.** É o tratamento de escolha da displasia do desenvolvimento do quadril (DDQ) em lactentes **até cerca de 6 meses**. Ele **não imobiliza** o quadril numa posição fixa: deixa o bebê se mexer, mas **só dentro de uma zona segura**, em que a cabeça femoral fica apontada para o acetábulo. O movimento ativo da criança ajuda a cabeça a se reduzir e estimula o acetábulo a se aprofundar.\n\n**O que cada tira faz.**\n\n| Tira | Ação | Movimento limitado |\n|---|---|---|\n| **Anterior** (flexora) | Mantém o quadril em **flexão** de cerca de **90 a 110°** | Impede a **extensão** |\n| **Posterior** (abdutora) | Impede que os joelhos se aproximem | Impede a **adução** |\n\nO suspensório **permite** a flexão e a abdução **ativas** e **limita** a **extensão** e a **adução**, as duas posições em que a cabeça sairia do acetábulo (a luxação ocorre em extensão e adução, como mostra a manobra de Barlow).\n\n**Por que a tira posterior não deve forçar a abdução.** Ela só impede a adução; se for apertada a ponto de **forçar a abdução**, comprime os vasos da cabeça femoral e causa **necrose avascular**. A abdução deve ser **livre**, até onde o bebê leva a perna sozinho (zona de segurança de Ramsey, entre a abdução máxima e a abdução em que o quadril reluxa).\n\n**Os erros e suas complicações.**\n- **Flexão excessiva** (acima de 120°): paralisia do **nervo femoral** e luxação inferior.\n- **Flexão insuficiente**: o quadril não reduz.\n- **Abdução forçada**: necrose avascular.\n- Uso prolongado num quadril que não reduz: **doença de Pavlik** (erosão da parede posterior do acetábulo).\n\n**Controle.** Consultas semanais no início, com exame e ultrassonografia. Se o quadril não reduzir em **3 a 4 semanas**, o Pavlik é suspenso, e passa-se para órtese rígida ou redução fechada com gesso.",
+  "correta": "**Correta: C (extensão e adução).** O suspensório de Pavlik mantém o quadril em flexão e abdução livre: a tira anterior impede a **extensão** e a tira posterior impede a **adução**, as posições em que a cabeça femoral sairia do acetábulo.",
   "incorretas": {
-   "A": "A flexão é mantida pelo Pavlik, não limitada.",
-   "B": "Flexão e abdução são justamente os movimentos que o Pavlik deixa livres.",
-   "D": "A extensão é limitada, mas a abdução fica livre."
+   "A": "O Pavlik não limita a **flexão**; ele a mantém, impedindo a extensão.",
+   "B": "Flexão e abdução são justamente os movimentos **permitidos** e desejados.",
+   "D": "A **extensão** é limitada, mas a **abdução** é permitida; forçá-la ou limitá-la causaria problemas."
   },
-  "conceito": "O **suspensório de Pavlik** trata a displasia do quadril em bebês de até cerca de 6 meses. Ele não prende o quadril numa posição fixa: deixa o bebê se mexer, mas só dentro da zona segura.\n\n**O que cada tira faz**:\n\n**tiras anteriores**: mantêm o quadril em **flexão** (cerca de 100 a 110°) e **impedem a extensão**;\n\n**tiras posteriores**: **impedem a adução** (fechar as pernas), mas não forçam a abdução.\n\n**O resultado**: o bebê fica livre para **fletir** e **abrir** as pernas; o peso das pernas, em flexão, leva a cabeça femoral para dentro do acetábulo. O que fica **limitado** é a **extensão** e a **adução**, os movimentos que tirariam a cabeça do lugar.\n\n**Os riscos de ajustar errado**: flexão demais pode lesar o nervo femoral; **abdução forçada** comprime os vasos e causa necrose da cabeça. O quadril é acompanhado com ultrassom e, sem redução em 3 a 4 semanas, o Pavlik é suspenso.\n\n**Na prova**: Pavlik limita a **extensão** e a **adução**.",
-  "correta": "As tiras anteriores bloqueiam a extensão e as posteriores bloqueiam a adução; flexão e abdução ficam livres.",
   "referencias": [
    "Developmental Dysplasia of the Hip – Part 1. https://pmc.ncbi.nlm.nih.gov/articles/PMC10708981/",
    "Expert-Based Consensus on the Principles of Pavlik Harness Management of DDH. https://pmc.ncbi.nlm.nih.gov/articles/PMC6959914/"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0081": {
@@ -1213,17 +1215,18 @@
   "conferido": false
  },
  "pediatria-0083": {
+  "conceito": "**A osteogênese imperfeita (OI).** É um grupo de doenças hereditárias de **fragilidade óssea**, a maioria causada por mutações nos genes do **colágeno tipo I** (COL1A1 e COL1A2). O osso tem quantidade e qualidade de colágeno inadequadas e fratura com traumas mínimos.\n\n**A classificação de Sillence** (ampliada por Glorieux e outros).\n\n| Tipo | Gravidade | Características |\n|---|---|---|\n| I | Leve | **Escleras azuis**, poucas fraturas, perda auditiva, estatura quase normal |\n| II | **Letal** no período perinatal | Múltiplas fraturas intrauterinas, costelas em contas |\n| III | **Grave, progressiva** | Deformidades, baixa estatura importante, escleras acinzentadas |\n| IV | Moderada | Escleras normais, deformidades moderadas |\n| **V** | Moderada | **Calo hiperplásico**, calcificação da **membrana interóssea**, banda metafisária densa; mutação em **IFITM5** |\n| VI | Moderada a grave | Defeito de mineralização (osteoide em excesso), mutação em SERPINF1 |\n| VII | Grave | Herança recessiva (CRTAP) |\n\n**O tipo V e a confusão com osteossarcoma.** A marca do tipo V é o **calo hiperplásico**: depois de uma fratura ou de uma cirurgia (às vezes espontaneamente), forma-se um calo **enorme**, que cresce rápido, é **quente e doloroso**, aumenta o volume do membro e, na radiografia, tem aspecto **agressivo**, com reação periosteal exuberante. Esse quadro pode simular **clínica e radiograficamente um osteossarcoma**, e às vezes leva a biópsias. Saber que a criança tem OI tipo V evita intervenções desnecessárias.\n\n**Outras marcas do tipo V.**\n- **Calcificação da membrana interóssea** do antebraço, que limita a pronossupinação.\n- **Luxação da cabeça do rádio**.\n- Banda densa metafisária junto às fises.\n- Escleras brancas, sem dentinogênese imperfeita.\n\n**Tratamento geral da OI.** **Bisfosfonatos** (pamidronato, zoledronato) aumentam a densidade e reduzem as fraturas; fisioterapia; e **hastes intramedulares telescópicas** (Fassier-Duval, Bailey-Dubow) para corrigir deformidades e prevenir fraturas em ossos longos.",
+  "correta": "**Correta: B (tipo V).** A osteogênese imperfeita tipo V forma **calos hiperplásicos** volumosos, quentes e dolorosos após fraturas, com aspecto radiográfico agressivo, que podem simular clínica e radiograficamente um osteossarcoma.",
   "incorretas": {
-   "A": "O tipo IV é moderado e não forma calo pseudotumoral.",
-   "C": "O tipo VI é um defeito de mineralização, com osteoide em escamas de peixe.",
-   "D": "O tipo VII é recessivo (CRTAP), com rizomelia, sem calo pseudotumoral."
+   "A": "O **tipo IV** é moderado, com escleras normais e deformidades, mas sem o calo hiperplásico característico.",
+   "C": "O **tipo VI** é um defeito de **mineralização**, com excesso de osteoide, sem calo hiperplásico.",
+   "D": "O **tipo VII** é uma forma grave de herança recessiva, sem a formação de calo exuberante."
   },
-  "conceito": "A **osteogênese imperfeita tipo V** é uma forma moderada, com herança dominante e mutação no gene **IFITM5** (e não no colágeno). Ela tem três marcas próprias:\n\n**calo hiperplásico**: depois de uma fratura ou de uma cirurgia, forma-se um calo **enorme**, quente e doloroso, que cresce rápido e na radiografia pode parecer agressivo; é o que **simula osteossarcoma**, e às vezes leva a biópsia;\n\n**calcificação da membrana interóssea** do antebraço, que limita a pronossupinação;\n\n**luxação da cabeça do rádio**.\n\n**Os tipos vizinhos**:\n\n**IV**: moderada, com escleras normais, sem calo pseudotumoral;\n\n**VI**: defeito de **mineralização**; na biópsia, o osteoide aparece em \"escamas de peixe\";\n\n**VII**: recessiva (gene CRTAP), com encurtamento proximal dos membros (rizomelia).\n\n**O tratamento geral**: bisfosfonatos e hastes telescópicas.\n\n**Na prova**: osteogênese imperfeita que simula osteossarcoma = **tipo V**.",
-  "correta": "O tipo V forma calo hiperplásico exuberante, que pode simular osteossarcoma, e calcifica a membrana interóssea do antebraço.",
   "referencias": [
-   "Osteogenesis imperfecta type V: a review. https://pmc.ncbi.nlm.nih.gov/articles/PMC5078863/"
+   "Osteogenesis imperfecta type V: a review. https://pmc.ncbi.nlm.nih.gov/articles/PMC5078863/",
+   "Sillence DO, Senn A, Danks DM. Genetic heterogeneity in osteogenesis imperfecta. J Med Genet. 1979;16(2):101-116."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0084": {
@@ -1583,17 +1586,18 @@
   "conferido": false
  },
  "pediatria-0108": {
+  "conceito": "**O quadril como uma balança.** No apoio sobre um só membro (monopodálico), o peso do corpo tende a fazer a pelve **cair para o lado oposto** (o lado do membro em balanço). Quem impede isso são os **abdutores** do quadril de apoio (glúteos médio e mínimo), que puxam a pelve para baixo do lado de apoio. A cabeça femoral é o **fulcro** dessa balança.\n\n**Por que a força dos abdutores é tão grande.** O equilíbrio exige que os momentos se igualem:\n- o **braço de alavanca do peso corporal** (do centro de gravidade até o centro da cabeça femoral) é **longo**;\n- o **braço de alavanca dos abdutores** (do trocânter maior até o centro da cabeça) é **curto**, cerca de **duas a três vezes menor**.\n\nPara equilibrar, os abdutores precisam fazer uma força **várias vezes maior** que o peso. A **força de reação articular** no quadril é a soma do peso com a força dos abdutores.\n\n| Atividade | Força no quadril (aproximada) |\n|---|---|\n| Apoio bipodálico parado | Cerca de 1/3 do peso por quadril |\n| Apoio monopodálico parado | Cerca de 2,5 a 3 vezes o peso |\n| Marcha | Cerca de 3 a 4 vezes o peso |\n| **Corrida** | **Até 5 a 10 vezes o peso** |\n\nNa **corrida**, as acelerações e o impacto multiplicam essas forças: o mecanismo abdutor e a articulação podem receber cargas de até **cerca de 10 vezes** o peso corporal.\n\n**Aplicações clínicas.**\n- **Bengala na mão oposta** ao quadril doente: aumenta muito o braço de alavanca que ajuda os abdutores, reduzindo a força no quadril em até 40 a 60%.\n- **Marcha de Trendelenburg** e marcha antálgica: o paciente inclina o tronco sobre o quadril doente, trazendo o centro de gravidade para perto do fulcro e diminuindo o braço de alavanca do peso.\n- Na artroplastia, restaurar o **offset femoral** (o braço de alavanca dos abdutores) diminui a força necessária e a carga na prótese.\n- Na coxa vara e no trocânter alto, o braço dos abdutores diminui e a força de contração eficaz cai, gerando claudicação.",
+  "correta": "**Correta: D (10 vezes).** Na corrida, o apoio monopodálico com impacto e aceleração faz o mecanismo abdutor e a articulação do quadril receberem forças de até cerca de **10 vezes** o peso corporal.",
   "incorretas": {
-   "A": "Cerca de 3 vezes o peso corresponde ao apoio num pé só, parado.",
-   "B": "Cerca de 5 vezes é o valor da marcha, não da corrida.",
-   "C": "7 vezes subestima a carga máxima da corrida."
+   "A": "Cerca de **3 vezes** o peso é a força no apoio monopodálico parado ou na marcha lenta, não na corrida.",
+   "B": "**5 vezes** fica no limite inferior das forças medidas na corrida; o máximo descrito chega a cerca de 10.",
+   "C": "**7 vezes** subestima o pico de força descrito para a corrida."
   },
-  "conceito": "O quadril funciona como uma **balança**: o peso do corpo puxa a pelve para o lado oposto, e os **abdutores** (glúteo médio e mínimo) seguram do outro lado. O braço de alavanca do peso (do centro do corpo até o quadril) é cerca de **duas a três vezes** mais longo que o dos abdutores (do trocanter até o centro da cabeça). Por isso, os abdutores precisam fazer uma força muitas vezes maior que o peso.\n\n**As cargas aproximadas**:\n\n**apoio nos dois pés**: cerca de um terço do peso em cada quadril;\n\n**apoio num pé só, parado**: cerca de **2,5 a 3 vezes** o peso;\n\n**marcha**: cerca de 3 a 5 vezes;\n\n**corrida**: **até cerca de 10 vezes** o peso, pela aceleração e o impacto.\n\n**A aplicação prática**: uma **bengala** usada na mão **oposta** ao quadril doente cria um terceiro apoio e reduz muito a força que os abdutores precisam fazer, aliviando o quadril.\n\n**Na prova**: na corrida, o mecanismo abdutor faz força de **até 10 vezes** o peso corporal.",
-  "correta": "Na corrida, com o impacto e a alavanca desfavorável, a força dos abdutores pode chegar a cerca de 10 vezes o peso corporal.",
   "referencias": [
-   "Hip joint forces during walking and running. https://pmc.ncbi.nlm.nih.gov/articles/PMC5724525/"
+   "Hip joint forces during walking and running. https://pmc.ncbi.nlm.nih.gov/articles/PMC5724525/",
+   "Bergmann G, Deuretzbacher G, Heller M, et al. Hip contact forces and gait patterns from routine activities. J Biomech. 2001;34(7):859-871."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0109": {
@@ -1961,17 +1965,18 @@
   "conferido": false
  },
  "pediatria-0140": {
+  "conceito": "**A doença de Blount.** É a falha de crescimento da porção **posteromedial** da fise proximal da tíbia. A carga excessiva sobre a fise medial (criança obesa que andou cedo, com varo fisiológico persistente) inibe o seu crescimento, segundo a **lei de Hueter-Volkmann**, e a deformidade progride.\n\n**Por que a deformidade tem vários componentes.** Como a falha de crescimento é **posteromedial**, a tíbia proximal cresce menos do lado **medial** e do lado **posterior**:\n- crescer menos **medialmente** produz o **varo**;\n- crescer menos **posteriormente** produz a angulação no plano sagital, com o ápice anterior, que se traduz clinicamente em **recurvato** (o joelho hiperestende);\n- a deformidade se acompanha ainda de **torção interna da tíbia** (os pés apontam para dentro).\n\n| Componente | Causa |\n|---|---|\n| **Varo** | Inibição do crescimento **medial** |\n| **Recurvato** (procurvato proximal) | Inibição do crescimento **posterior** |\n| **Torção tibial interna** | Associada à deformidade proximal |\n| Depressão do platô medial | Nos estágios avançados |\n\n**Na questão.** Entre as combinações oferecidas, a que corresponde ao Blount é **varo e recurvato**. As alternativas com **torção externa** ou **valgo** descrevem o oposto do Blount, que tem torção **interna** e varo.\n\n**Implicação no tratamento.** A **osteotomia valgizante** da tíbia proximal deve corrigir **todos os componentes**: o varo (com leve hipercorreção), a **torção interna** (rodando o fragmento distal externamente) e, se presente, o recurvato. Corrigir só o varo deixa o pé voltado para dentro e a carga anormal no joelho.\n\n**Classificação de Langenskiöld** (seis estágios, da irregularidade metafisária à ponte óssea) e **ângulo de Drennan** (acima de 16° sugere Blount) ajudam no diagnóstico e no prognóstico.",
+  "correta": "**Correta: A (varo e joelho recurvato).** A inibição do crescimento da porção **posteromedial** da fise proximal da tíbia produz **varo** (lado medial) e **recurvato** (lado posterior), além de torção tibial interna.",
   "incorretas": {
-   "B": "O varo está certo, mas a torção na Blount é interna, não externa.",
-   "C": "A torção interna está certa, mas a deformidade angular é varo, não valgo.",
-   "D": "O recurvato está certo, mas a torção associada é interna."
+   "B": "O varo está certo, mas a torção no Blount é **interna**, e não externa.",
+   "C": "A torção interna está certa, mas a deformidade angular é **varo**, e não valgo.",
+   "D": "O recurvato está certo, mas a torção é **interna**, e falta o componente principal, o varo."
   },
-  "conceito": "A **doença de Blount** é a falha do crescimento da parte **posteromedial** da fise proximal da tíbia. A carga excessiva sobre a fise medial imatura (lei de **Hueter-Volkmann**) a inibe, e o varo piora. O perfil da forma infantil é a criança **obesa** que **andou cedo** (antes de 1 ano), muitas vezes bilateral.\n\n**Os componentes da deformidade**: como a falha é posteromedial, a tíbia proximal deforma em mais de um plano:\n\n**varo**: angulação medial na metáfise, a deformidade principal;\n\n**recurvato** (ou procurvato proximal): pela falha posterior da fise;\n\n**torção tibial interna**: a tíbia gira para dentro;\n\n**instabilidade lateral do joelho**, que piora com a carga.\n\n**O exame de imagem**: o **ângulo metafisário-diafisário de Drennan** acima de 16° sugere Blount; abaixo de 10° sugere varo fisiológico. A classificação de Langenskiöld tem seis estágios.\n\n**Na prova**: Blount = **varo e joelho recurvato**, com **torção interna** da tíbia.",
-  "correta": "A falha posteromedial da fise produz varo e recurvato na tíbia proximal, além de torção interna.",
   "referencias": [
-   "Tibia vara (Blount disease). https://www.orthobullets.com/pediatrics/4061/infantile-blounts-disease-tibia-vara"
+   "Tibia vara (Blount disease). https://www.orthobullets.com/pediatrics/4061/infantile-blounts-disease-tibia-vara",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0141": {
@@ -3049,14 +3054,18 @@
   "conferido": false
  },
  "pediatria-0266": {
-  "conceito": "### DDQ: exame conforme a idade\n| Idade | Achado útil |\n|---|---|\n| recém-nascido a 2-3 meses | ==Ortolani== (reduz) e ==Barlow== (luxa) |\n| ==após 3 meses== | ==limitação da abdução (Hart)==, Galeazzi, assimetria de pregas |\n| marcha | Trendelenburg, claudicação, hiperlordose (bilateral) |\n\n### Sinais\n| Sinal | O que é |\n|---|---|\n| ==Hart== | abdução limitada com quadril e joelho fletidos (adutores retraídos) |\n| Galeazzi | joelho mais baixo com quadris fletidos |\n| Peter-Bade | pregas assimétricas (pouco específico) |\n| Klisic | linha trocanter-EIAS passa abaixo do umbigo |\n\n### Imagem\n| Idade | Exame |\n|---|---|\n| < 4 a 6 meses | ultrassom (Graf) |\n| > 4 a 6 meses | radiografia (Hilgenreiner, Perkins, Shenton, índice acetabular) |\n\n### Bilateral\n- Abdução limitada ==simétrica== passa despercebida: a assimetria é o que chama atenção.\n- Na bilateral: hiperlordose, marcha anserina, períneo alargado.\n\n> **Na prova:** principal sinal após os 3 meses = ==limitação da abdução==",
-  "correta": "**Limitação da abdução.**\n- Sinal mais confiável após 3 meses.\n- Adutores retraídos pelo quadril luxado.",
+  "conceito": "**O exame da DDQ muda com a idade.** No recém-nascido, o quadril displásico é **instável** e os testes de instabilidade funcionam. Com o passar dos meses, se o quadril luxado não for tratado, as partes moles se **retraem** (sobretudo os **adutores** e o iliopsoas), a cabeça fica fixa fora do acetábulo e os testes de instabilidade **deixam de funcionar**. Surge então o principal sinal da criança maior: a **limitação da abdução**.\n\n| Idade | Sinal mais útil |\n|---|---|\n| Recém-nascido até 2 a 3 meses | **Ortolani** (o quadril luxado reduz com abdução, com um ressalto) e **Barlow** (o quadril reduzido luxa com adução e pressão posterior) |\n| **Após 3 meses** | **Limitação da abdução** (sinal de Hart), Galeazzi, assimetria de pregas |\n| Após o início da marcha | Claudicação, **marcha de Trendelenburg**, hiperlordose lombar (se bilateral) |\n\n**Por que a limitação da abdução é o principal sinal na criança de 2 anos.**\n- É o achado **mais sensível e confiável** depois dos 3 meses: os adutores retraídos impedem a abdução do lado luxado (abdução abaixo de 60° com o quadril e o joelho fletidos a 90°, ou assimetria em relação ao outro lado).\n- Está presente tanto na luxação **unilateral** quanto na **bilateral**.\n\n**Por que os outros sinais são menos confiáveis.**\n- **Galeazzi** (diferença na altura dos joelhos com os quadris e joelhos fletidos): útil, mas é **negativo na luxação bilateral** (os dois lados estão igualmente curtos) e pode ser positivo por outras causas de discrepância (deficiência femoral).\n- **Assimetria de pregas** cutâneas: muito **inespecífica**, presente em muitas crianças normais.\n- **Discrepância de membros**: também falha na luxação bilateral e tem muitas outras causas.\n\n**Na criança que já anda.** Além da limitação da abdução, a **marcha de Trendelenburg** (unilateral) ou a marcha **anserina** com hiperlordose (bilateral). A radiografia confirma: cabeça fora do quadrante inferomedial (Hilgenreiner e Perkin), linha de Shenton rompida, índice acetabular aumentado.\n\n**Tratamento nessa idade.** Aos 2 anos, a DDQ geralmente exige **redução aberta**, frequentemente com **osteotomia pélvica** (Salter, Pemberton) e às vezes osteotomia femoral de encurtamento.",
+  "correta": "**Correta: A (a limitação da abdução).** Na criança de 2 anos com DDQ, os adutores estão retraídos e a cabeça fica fixa fora do acetábulo: a **limitação da abdução** é o sinal mais sensível e confiável, presente mesmo na luxação bilateral.",
   "incorretas": {
-   "B": "**Galeazzi.**\n- Falha na bilateral.",
-   "C": "**Pregas.**\n- Pouco específicas.",
-   "D": "**Discrepância.**\n- Consequência, não sinal principal; falha na bilateral."
+   "B": "O **Galeazzi** é útil na luxação **unilateral**, mas é negativo na bilateral, o que o torna menos confiável como sinal principal.",
+   "C": "A **assimetria de pregas** é muito inespecífica e aparece em muitas crianças normais.",
+   "D": "A **discrepância de membros** falha na luxação bilateral e tem muitas outras causas."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Developmental dysplasia of the hip. https://pmc.ncbi.nlm.nih.gov/articles/PMC3143976/"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0272": {
@@ -5085,14 +5094,18 @@
   "conferido": false
  },
  "pediatria-0457": {
-  "conceito": "### DDQ: exame conforme a idade\n| Idade | Achado útil |\n|---|---|\n| recém-nascido a 2-3 meses | ==Ortolani== (reduz) e ==Barlow== (luxa) |\n| ==após 3 meses== | ==limitação da abdução (Hart)==, Galeazzi, assimetria de pregas |\n| marcha | Trendelenburg, claudicação, hiperlordose (bilateral) |\n\n### Sinais\n| Sinal | O que é |\n|---|---|\n| ==Hart== | abdução limitada com quadril e joelho fletidos (adutores retraídos) |\n| Galeazzi | joelho mais baixo com quadris fletidos |\n| Peter-Bade | pregas assimétricas (pouco específico) |\n| Klisic | linha trocanter-EIAS passa abaixo do umbigo |\n\n### Imagem\n| Idade | Exame |\n|---|---|\n| < 4 a 6 meses | ultrassom (Graf) |\n| > 4 a 6 meses | radiografia (Hilgenreiner, Perkins, Shenton, índice acetabular) |\n\n### Bilateral\n- Abdução limitada ==simétrica== passa despercebida: a assimetria é o que chama atenção.\n- Na bilateral: hiperlordose, marcha anserina, períneo alargado.\n\n> **Na prova:** principal sinal após os 3 meses = ==limitação da abdução==",
-  "correta": "**Limitação da abdução.**\n- Sinal mais confiável após 3 meses.\n- Adutores retraídos pelo quadril luxado.",
+  "conceito": "**O exame da DDQ muda com a idade.** No recém-nascido, o quadril displásico é **instável** e os testes de instabilidade funcionam. Com o passar dos meses, se o quadril luxado não for tratado, as partes moles se **retraem** (sobretudo os **adutores** e o iliopsoas), a cabeça fica fixa fora do acetábulo e os testes de instabilidade **deixam de funcionar**. Surge então o principal sinal da criança maior: a **limitação da abdução**.\n\n| Idade | Sinal mais útil |\n|---|---|\n| Recém-nascido até 2 a 3 meses | **Ortolani** (o quadril luxado reduz com abdução, com um ressalto) e **Barlow** (o quadril reduzido luxa com adução e pressão posterior) |\n| **Após 3 meses** | **Limitação da abdução** (sinal de Hart), Galeazzi, assimetria de pregas |\n| Após o início da marcha | Claudicação, **marcha de Trendelenburg**, hiperlordose lombar (se bilateral) |\n\n**Por que a limitação da abdução é o principal sinal na criança de 2 anos.**\n- É o achado **mais sensível e confiável** depois dos 3 meses: os adutores retraídos impedem a abdução do lado luxado (abdução abaixo de 60° com o quadril e o joelho fletidos a 90°, ou assimetria em relação ao outro lado).\n- Está presente tanto na luxação **unilateral** quanto na **bilateral**.\n\n**Por que os outros sinais são menos confiáveis.**\n- **Galeazzi** (diferença na altura dos joelhos com os quadris e joelhos fletidos): útil, mas é **negativo na luxação bilateral** (os dois lados estão igualmente curtos) e pode ser positivo por outras causas de discrepância (deficiência femoral).\n- **Assimetria de pregas** cutâneas: muito **inespecífica**, presente em muitas crianças normais.\n- **Discrepância de membros**: também falha na luxação bilateral e tem muitas outras causas.\n\n**Na criança que já anda.** Além da limitação da abdução, a **marcha de Trendelenburg** (unilateral) ou a marcha **anserina** com hiperlordose (bilateral). A radiografia confirma: cabeça fora do quadrante inferomedial (Hilgenreiner e Perkin), linha de Shenton rompida, índice acetabular aumentado.\n\n**Tratamento nessa idade.** Aos 2 anos, a DDQ geralmente exige **redução aberta**, frequentemente com **osteotomia pélvica** (Salter, Pemberton) e às vezes osteotomia femoral de encurtamento.",
+  "correta": "**Correta: A (a limitação da abdução).** Na criança de 2 anos com DDQ, os adutores estão retraídos e a cabeça fica fixa fora do acetábulo: a **limitação da abdução** é o sinal mais sensível e confiável, presente mesmo na luxação bilateral.",
   "incorretas": {
-   "B": "**Galeazzi.**\n- Falha na bilateral.",
-   "C": "**Pregas.**\n- Pouco específicas.",
-   "D": "**Discrepância.**\n- Consequência, não sinal principal; falha na bilateral."
+   "B": "O **Galeazzi** é útil na luxação **unilateral**, mas é negativo na bilateral, o que o torna menos confiável como sinal principal.",
+   "C": "A **assimetria de pregas** é muito inespecífica e aparece em muitas crianças normais.",
+   "D": "A **discrepância de membros** falha na luxação bilateral e tem muitas outras causas."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Developmental dysplasia of the hip. https://pmc.ncbi.nlm.nih.gov/articles/PMC3143976/"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0459": {
@@ -10468,16 +10481,20 @@
   "conferido": false
  },
  "pediatria-0841": {
+  "conceito": "**A fratura do colo do rádio na criança.** Na criança, a fratura da extremidade proximal do rádio ocorre quase sempre no **colo** ou na fise (Salter-Harris II), e não na cabeça, que é cartilaginosa e resistente. O mecanismo é a queda com a mão estendida e o cotovelo em valgo. O fragmento da cabeça fica **angulado** lateralmente.\n\n**O papel do rádio proximal na rotação.** Na pronação e supinação, a **cabeça do rádio gira** dentro do ligamento anular, contra o capítulo e a incisura radial da ulna, enquanto o rádio inteiro roda em torno da ulna. Qualquer deformidade do colo ou da cabeça altera essa mecânica.\n\n**As sequelas.** A principal sequela da fratura do colo do rádio é a **perda da rotação do antebraço**, e não da flexoextensão. As causas:\n- **consolidação viciosa** com angulação residual do colo;\n- **necrose avascular** da cabeça, com deformidade;\n- **hipercrescimento** da cabeça do rádio;\n- **fechamento prematuro da fise**, com cabeça pequena;\n- **sinostose radioulnar proximal**, a mais grave, que bloqueia totalmente a rotação (mais frequente após redução aberta);\n- rigidez e ossificação heterotópica.\n\n**Qual rotação sofre mais.** As séries de seguimento mostram perda de **pronação** e de **supinação**, com a **pronação** frequentemente mais comprometida. A cabeça angulada lateralmente e deformada bate na incisura radial e no capítulo no fim do arco de pronação.\n\n**Prevenção.** Aceitar angulações de até cerca de 30° (a remodelação é boa, sobretudo antes dos 10 anos); reduzir as maiores com técnicas **fechadas e percutâneas** (Bosworth, Métaizeau); reservar a redução aberta para falhas, pelo maior risco de necrose e sinostose; mobilização precoce.",
+  "correta": "**Resposta provável: C (pronação do antebraço).** A sequela principal da fratura do colo do rádio na criança é a perda da **rotação** do antebraço, e as séries descrevem a **pronação** como frequentemente a mais comprometida. A flexoextensão do cotovelo costuma ser preservada.",
   "incorretas": {
-   "A": "**Flexão pode ficar rígida após lesão grave ou tratamento aberto.** Não é a limitação mais característica da sequela do colo radial.",
-   "B": "**Extensão também pode perder graus por rigidez.** O mecanismo anatômico principal envolve a rotação do rádio.",
-   "D": "**Supinação também pode ser limitada.** A alternativa C é a indicada, mas não se deve concluir que apenas a pronação está em risco."
+   "A": "A **flexão do cotovelo** depende sobretudo da articulação umeroulnar e costuma ser preservada nas sequelas do colo do rádio.",
+   "B": "A **extensão** também é pouco afetada; a sequela dominante é rotacional.",
+   "D": "A **supinação** também pode ser limitada, mas a pronação é descrita como mais comprometida na fonte da resposta."
   },
-  "conceito": "**O colo radial participa da rotação do antebraço.** Na pronação e supinação, a cabeça radial gira junto ao capítulo e à ulna proximal. Uma fratura que consolida com angulação ou deformidade do colo altera essa mecânica; necrose da cabeça, sinostose e rigidez após tratamento invasivo também podem restringir o movimento.\n\n**A sequela dominante é rotacional, não de flexoextensão.** Entre as alternativas, a pronação é a resposta provável e foi particularmente limitada em algumas séries pediátricas. A supinação também pode ser prejudicada, portanto é prudente medir as duas no seguimento. Flexão e extensão do cotovelo podem perder amplitude, mas não são a pista funcional principal desse tipo de fratura.",
-  "correta": "**Pronação é a resposta provável entre as alternativas.** O colo radial deformado dificulta a rotação da cabeça e pode reduzir especialmente esse movimento.",
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+  ],
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "C",
-  "geradoEm": "2026-10-01",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0842": {
