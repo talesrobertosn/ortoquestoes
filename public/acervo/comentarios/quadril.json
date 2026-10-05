@@ -5738,19 +5738,20 @@
   "conferido": false
  },
  "quadril-0482": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": "**Luxação posterior pura do quadril.** Com o quadril em flexão, adução e rotação medial, o impacto empurra a cabeça para trás sem fraturar a parede. Com mais abdução, ocorre a fratura-luxação.\n\n**Na prova:** adução e flexão dão luxação pura; abdução dá fratura da parede.",
-  "correta": "**Adução, flexão e rotação medial.** É a posição da luxação pura.",
+  "conceito": "**Luxação traumática do quadril: a posição define a lesão.** O quadril é uma articulação muito estável (cabeça profundamente encaixada, lábio, cápsula espessa). Luxá-lo exige **alta energia**, classicamente o trauma do painel do carro: o joelho bate no painel com o quadril fletido, e a força é transmitida pelo fêmur até a cabeça.\n\n**Posterior x anterior.** Cerca de 90% das luxações são **posteriores**. As anteriores ocorrem com o quadril em abdução e rotação lateral (forçada).\n\n**O que decide se é luxação pura ou fratura-luxação.** A posição do quadril no momento do impacto:\n\n| Posição do quadril | Resultado |\n|---|---|\n| **Flexão, adução e rotação medial** | **Luxação posterior pura**: a cabeça sai por trás sem atingir a parede posterior |\n| Flexão com menos adução (posição neutra ou abdução) | **Fratura-luxação**: a cabeça bate na parede posterior do acetábulo e a fratura |\n| Abdução e rotação lateral | Luxação anterior |\n\nNa adução, a cabeça aponta para fora da borda posterior do acetábulo e escapa sem colidir com a parede. Quanto mais abduzido, mais a cabeça se projeta contra a parede posterior.\n\n**Classificação de Thompson e Epstein (posterior).** I: luxação pura ou com fragmento mínimo; II: com fragmento grande da parede posterior; III: parede cominuída; IV: com fratura do assoalho; V: com fratura da cabeça femoral (Pipkin).\n\n**Urgência.** Redução em até **6 horas** reduz o risco de **osteonecrose** da cabeça. Avaliar o nervo isquiático (lesão em 10% a 20%, sobretudo divisão fibular) antes e depois da redução e fazer tomografia após a redução para fragmentos intra-articulares e fraturas associadas.\n\n> Luxação posterior pura: quadril em flexão, adução e rotação medial; com menos adução, fratura a parede posterior.",
+  "correta": "**A: adução, flexão e rotação medial (resposta pela bibliografia).** Nessa posição, a força axial empurra a cabeça para trás por cima da borda posterior do acetábulo sem fraturá-la, produzindo a luxação posterior pura, a mais comum.",
   "incorretas": {
-   "B": "**Adução, extensão e rotação lateral.** Posição incorreta.",
-   "C": "**Abdução, flexão e rotação medial.** Abdução favorece a fratura da parede.",
-   "D": "**Abdução, extensão e rotação lateral.** É a posição da luxação anterior."
+   "B": "**Adução, extensão e rotação lateral** não é posição de luxação típica; em extensão, o quadril está mais estável.",
+   "C": "**Abdução, flexão e rotação medial** leva a cabeça contra a parede posterior do acetábulo, produzindo fratura-luxação, não luxação pura.",
+   "D": "**Abdução, extensão e rotação lateral** é o mecanismo da luxação **anterior**, bem menos frequente."
   },
   "referencias": [
-   "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., p. 1716."
+   "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., p. 1716.",
+   "Thompson VP, Epstein HC. Traumatic dislocation of the hip; a survey of two hundred and four cases covering a period of twenty-one years. J Bone Joint Surg Am. 1951;33-A(3):746-778."
   ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "A",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "quadril-0483": {

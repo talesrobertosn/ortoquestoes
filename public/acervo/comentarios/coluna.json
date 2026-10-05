@@ -3646,19 +3646,20 @@
   "conferido": false
  },
  "coluna-0317": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "C",
-  "conceito": "**Colete na escoliose idiopática.** Indicado para curvas de 25 a 40 graus em pacientes com potencial de crescimento (Risser até 2 ou 3, cartilagem trirradiada aberta), usado de 18 a 23 horas por dia.\n\n**Na prova:** colete é curva de 25 a 40 graus com esqueleto imaturo.",
-  "correta": "**Se o sinal de RISSER for de no máximo 3.** O colete só faz sentido com crescimento restante.",
+  "conceito": "**Colete na escoliose idiopática do adolescente.** O colete não corrige a curva de forma permanente; seu objetivo é **impedir a progressão** durante o crescimento, mantendo a curva abaixo do limiar cirúrgico ao final da maturidade. Por isso, só faz sentido em pacientes **com crescimento remanescente** e curvas **moderadas**.\n\n**Indicações clássicas.**\n- Curva de **25 a 40 graus** (ou 20 a 25 graus com progressão documentada de 5 graus ou mais).\n- Esqueleto **imaturo**: **Risser 0 a 2** (alguns aceitam até 3), **cartilagem trirradiada aberta** ou recém-fechada, menos de 1 ano da menarca, Sanders até 3 ou 4.\n\n**Uso.** De **16 a 23 horas por dia**, até a maturidade. O estudo BrAIST (Weinstein e colaboradores) mostrou que o colete reduz significativamente a progressão até o limiar cirúrgico, com **relação dose-resposta**: quanto mais horas de uso, maior o benefício. Coletes noturnos (Charleston, Providence) são opções para curvas lombares ou toracolombares menores.\n\n**Quando o colete não está indicado.**\n\n| Situação | Conduta |\n|---|---|\n| Curva menor que 20 a 25 graus | Observação com radiografias seriadas |\n| Curva de **45 graus ou mais** | **Cirurgia** (artrodese), o colete não controla |\n| Esqueleto maduro (Risser 4 e 5, trirradiada fechada há tempo) | Sem indicação; curvas abaixo de 40 a 45 graus tendem a ficar estáveis |\n| Curvas torácicas com hipercifose ou neuromusculares graves | Considerações específicas |\n\n**Tipos.** O colete toracolombossacral (Boston, de uso diurno e noturno) é o mais usado; o de Milwaukee (com componente cervical) é indicado para curvas torácicas altas.\n\n> Colete: curvas de 25 a 40 graus em esqueleto imaturo (Risser até 2 ou 3), usado a maior parte do dia.",
+  "correta": "**C: se o sinal de RISSER for de no máximo 3 (resposta pela bibliografia).** O colete só é útil enquanto há crescimento remanescente; com Risser até 2 ou 3 ainda existe potencial de progressão que justifica a órtese.",
   "incorretas": {
-   "A": "**Somente durante o dia.** O uso é quase integral, não só diurno.",
-   "B": "**Em curva de 45 graus.** Curvas acima de 45 graus são cirúrgicas.",
-   "D": "**Se a cartilagem trirradiada estiver fechada.** Com a cartilagem trirradiada fechada o crescimento é menor."
+   "A": "**Somente durante o dia** contraria o princípio dose-resposta: os coletes convencionais são usados de 16 a 23 horas por dia, incluindo a noite.",
+   "B": "**Curva de 45 graus** está no limiar cirúrgico; o colete não impede a progressão dessas curvas, e a indicação passa a ser a artrodese.",
+   "D": "**Cartilagem trirradiada fechada** há tempo indica maturidade avançada e pouco crescimento restante; é a trirradiada **aberta** que aponta para o maior risco e o benefício do colete."
   },
   "referencias": [
-   "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. 6ª ed., vol. 1, p. 716-717."
+   "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. 6ª ed., vol. 1, p. 716-717.",
+   "Weinstein SL, Dolan LA, Wright JG, Dobbs MB. Effects of bracing in adolescents with idiopathic scoliosis. N Engl J Med. 2013;369(16):1512-1521."
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "C",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "coluna-0318": {

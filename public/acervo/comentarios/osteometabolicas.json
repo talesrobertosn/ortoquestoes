@@ -1040,19 +1040,20 @@
   "conferido": false
  },
  "osteometabolicas-0083": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": "**Paget.** Fase lítica: hiperatividade osteoclástica com osteoclastos grandes e multinucleados. Depois, fase mista e esclerótica.\n\n**Na prova:** Paget começa com osteoclastos.",
-  "correta": "**Existe hiperatividade osteoclástica.** É a característica da fase lítica.",
+  "conceito": "**Doença de Paget: as fases do remodelamento desordenado.** A doença de Paget é um distúrbio **focal** do remodelamento ósseo, em geral após os 50 anos, mais comum em descendentes de britânicos. O defeito primário está no **osteoclasto**: gigantes (até 100 núcleos), hiperativos, com inclusões semelhantes a nucleocapsídeos virais e associação com mutações do gene **SQSTM1** (sequestossoma 1, p62).\n\n**As três fases.**\n\n| Fase | O que predomina | Imagem |\n|---|---|---|\n| **Lítica (inicial)** | **Hiperatividade osteoclástica** | Lesão lítica em \"chama de vela\" ou \"folha de grama\" na diáfise; osteoporose circunscrita no crânio |\n| Mista | Reabsorção e formação aceleradas, desordenadas | Espessamento cortical, trabeculado grosseiro |\n| Esclerótica (tardia) | Formação osteoblástica excessiva, com atividade menor | Osso aumentado, denso, deformado (\"crânio em algodão\") |\n\n**Acoplamento.** Os osteoblastos **não estão suprimidos**: respondem à reabsorção formando osso rapidamente, mas de forma desorganizada (padrão em **mosaico** de linhas cimentantes). Por isso, a **fosfatase alcalina** (marcador de formação) sobe muito, junto com marcadores de reabsorção.\n\n**Clínica e complicações.** Muitos são assintomáticos (achado de fosfatase alcalina alta ou radiografia). Dor óssea, deformidades (arqueamento do fêmur e da tíbia), fraturas (transversas, \"em giz\"), artrose secundária, compressões neurais (surdez, estenose), insuficiência cardíaca de alto débito (raro) e **osteossarcoma secundário** (menos de 1%).\n\n**Tratamento.** **Bisfosfonatos** (zoledronato em dose única é muito eficaz), que inibem os osteoclastos; indicados em doença sintomática, em locais de risco (crânio, coluna, ossos de carga) e antes de cirurgias eletivas no osso pagético, para reduzir o sangramento (Ralston).\n\n> Paget começa com hiperatividade osteoclástica; os osteoblastos respondem, e o osso formado é desordenado.",
+  "correta": "**A: existe hiperatividade osteoclástica (resposta pela bibliografia).** A fase lítica é dominada por osteoclastos gigantes e hiperativos que reabsorvem o osso, produzindo a lesão lítica em chama de vela.",
   "incorretas": {
-   "B": "**A cavitação óssea ocorre por ação de enzimas beta-lactâmicas.** Não envolve enzimas beta-lactâmicas.",
-   "C": "**Os osteoblastos estão com sua atividade suprimida.** A remodelação é acoplada; osteoblastos não ficam suprimidos.",
-   "D": "**O processo de remodelação óssea atinge seu ápice.** A remodelação é máxima na fase mista."
+   "B": "**Enzimas beta-lactâmicas** não existem nesse contexto: beta-lactâmicos são antibióticos (penicilinas, cefalosporinas). A reabsorção é feita por osteoclastos, com enzimas como catepsina K e fosfatase ácida.",
+   "C": "**Osteoblastos suprimidos** é falso: no Paget, a formação acompanha a reabsorção (acoplamento), e a fosfatase alcalina sobe. A supressão osteoblástica é característica do mieloma.",
+   "D": "**O ápice do remodelamento** ocorre na fase mista, em que reabsorção e formação estão ambas aceleradas; a fase lítica é a inicial, dominada pela reabsorção."
   },
   "referencias": [
-   "Weinstein SL, Buckwalter JA. Turek’s orthopaedics: principles and their application. Philadelphia: Lippincott/Manole 1ª ed., p. 294."
+   "Weinstein SL, Buckwalter JA. Turek’s orthopaedics: principles and their application. Philadelphia: Lippincott/Manole 1ª ed., p. 294.",
+   "Ralston SH. Clinical practice. Paget's disease of bone. N Engl J Med. 2013;368(7):644-650."
   ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "A",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "osteometabolicas-0084": {
