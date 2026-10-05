@@ -5882,19 +5882,20 @@
   "conferido": false
  },
  "quadril-0491": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "C",
-  "conceito": "**Ossificação heterotópica.** Mais frequente nos acessos anterolateral e lateral direto, pela agressão aos abdutores.\n\n**Na prova:** acessos laterais têm mais ossificação.",
-  "correta": "**Ântero-lateral.** É o acesso com maior risco.",
+  "conceito": "**Ossificação heterotópica após artroplastia total do quadril.** É a formação de osso lamelar maduro nas partes moles ao redor da articulação. Ocorre em cerca de 15% a 50% das artroplastias, mas é clinicamente significativa (rigidez, dor) em uma minoria (cerca de 3% a 7%, graus III e IV de Brooker).\n\n**Fatores de risco.**\n- **Do paciente**: ossificação heterotópica prévia (o maior fator de risco), espondilite anquilosante, hiperostose esquelética idiopática difusa (DISH), artrose hipertrófica, sexo masculino, doença de Paget.\n- **Cirúrgicos**: **trauma muscular extenso**, especialmente dos **abdutores** (glúteos médio e mínimo), que ocorre nos acessos **anterolateral e lateral direto (Hardinge)**; restos ósseos e sangue nas partes moles; tempo cirúrgico prolongado; osteotomia trocantérica.\n\n**Classificação de Brooker.**\n\n| Grau | Descrição |\n|---|---|\n| I | Ilhas ósseas nas partes moles |\n| II | Esporões da pelve ou do fêmur com mais de 1 cm entre si |\n| III | Esporões com menos de 1 cm entre si |\n| IV | Anquilose aparente |\n\n**Prevenção (em pacientes de alto risco).**\n- **Anti-inflamatórios** (indometacina ou outros AINEs) por algumas semanas.\n- **Radioterapia** em dose única (7 a 8 Gy) no pré-operatório imediato (até 24 horas antes) ou no pós-operatório precoce (até 72 horas).\n- Técnica cirúrgica cuidadosa, lavagem dos restos ósseos.\n\n**Tratamento da ossificação estabelecida.** Ressecção cirúrgica apenas quando há limitação importante, após a maturação (geralmente 6 a 12 meses, com cintilografia estabilizada), associada a profilaxia.\n\n> Ossificação heterotópica na prótese de quadril: mais frequente nos acessos anterolateral e lateral, pelo trauma aos abdutores.",
+  "correta": "**C: ântero-lateral (resposta pela bibliografia).** A ossificação heterotópica é mais frequente nos acessos anterolaterais e laterais diretos, que lesam mais a musculatura abdutora (glúteos médio e mínimo). Outros fatores, como ossificação prévia e espondilite anquilosante, pesam ainda mais no risco.",
   "incorretas": {
-   "A": "**Posterior.** Menor risco.",
-   "B": "**Póstero-lateral.** Menor risco.",
-   "D": "**Transtrocanteriano.** Risco também alto, mas menos usado."
+   "A": "**O acesso posterior** preserva os abdutores e está associado a taxas menores de ossificação heterotópica, embora tenha maior risco de luxação em algumas séries.",
+   "B": "**O acesso posterolateral** é essencialmente o mesmo acesso posterior (Moore, Kocher-Langenbeck modificado), também com menos trauma aos abdutores.",
+   "D": "**O acesso transtrocantérico** (com osteotomia do trocânter) também se associa a ossificação heterotópica, mas a bibliografia usada pela banca destaca o acesso anterolateral."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 11 ª ed., pg. 393."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 11 ª ed., pg. 393.",
+   "Brooker AF, Bowerman JW, Robinson RA, Riley LH Jr. Ectopic ossification following total hip replacement: incidence and a method of classification. J Bone Joint Surg Am. 1973;55(8):1629-1632."
   ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "C",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "quadril-0492": {

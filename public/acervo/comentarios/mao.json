@@ -6594,19 +6594,20 @@
   "conferido": false
  },
  "mao-0628": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "D",
-  "conceito": "**Dupuytren com diátese.** A dermofasciectomia com enxerto de pele tem a menor recorrência.\n\n**Na prova:** diátese, dermofasciectomia com enxerto.",
-  "correta": "**Fasciectomia com enxerto de pele.** Menor recorrência.",
+  "conceito": "**Doença de Dupuytren e o risco de recidiva.** É uma fibromatose da fáscia palmar, com formação de nódulos e cordas que levam à contratura em flexão das metacarpofalângicas e interfalângicas proximais, principalmente do anular e do mínimo.\n\n**Diátese de Dupuytren (fatores de mau prognóstico).** Hueston descreveu, e Hindocha e colaboradores atualizaram, fatores que indicam doença mais agressiva e maior risco de recidiva:\n- Início em idade **jovem** (antes dos 50 anos).\n- **História familiar** positiva.\n- Doença **bilateral**.\n- Acometimento do lado **radial** da mão.\n- **Ectopias**: nódulos no dorso das interfalângicas (Garrod), fibromatose plantar (Ledderhose), doença de Peyronie.\n- Sexo masculino, etnia nórdica.\n\n**Opções de tratamento e recidiva.**\n\n| Técnica | Invasividade | Recidiva |\n|---|---|---|\n| Fasciotomia percutânea com agulha | Mínima | Alta |\n| Colagenase injetável | Mínima | Moderada a alta |\n| Fasciectomia limitada (parcial) | Moderada | Moderada |\n| Fasciectomia total (radical) | Maior, mais complicações | Não reduz muito a recidiva e é pouco usada |\n| **Dermofasciectomia com enxerto de pele** | Maior | **A mais baixa** |\n\n**Dermofasciectomia.** Ressecção da corda **e da pele sobrejacente**, com cobertura por **enxerto de pele total**. A pele enxertada funciona como uma barreira que reduz a recidiva naquela área. É indicada em pacientes com diátese, recidivas ou pele muito infiltrada pela doença.\n\n**Indicação geral de tratamento.** Teste de Hueston positivo (não consegue apoiar a mão espalmada na mesa), contratura da metacarpofalângica acima de cerca de 30 graus ou qualquer contratura da interfalângica proximal.\n\n> Dupuytren com diátese: a dermofasciectomia com enxerto de pele tem a menor recidiva.",
+  "correta": "**D: fasciectomia com enxerto de pele (resposta pela bibliografia).** Em pacientes com fatores de mau prognóstico (diátese de Dupuytren), a dermofasciectomia, com ressecção da corda e da pele sobrejacente e cobertura com enxerto de pele total, tem a menor taxa de recidiva entre as opções. O enxerto age como barreira à recorrência local.",
   "incorretas": {
-   "A": "**Fasciotomia percutânea.** Maior recorrência.",
-   "B": "**Fasciectomia parcial.** Recorre mais.",
-   "C": "**Fasciectomia total.** Morbidade sem menor recorrência."
+   "A": "**A fasciotomia percutânea** é a técnica menos invasiva, com recuperação rápida, mas tem as maiores taxas de recidiva, especialmente em pacientes com diátese.",
+   "B": "**A fasciectomia parcial (limitada)** é a cirurgia mais realizada, com bom equilíbrio entre resultado e complicações, mas tem recidiva maior que a dermofasciectomia.",
+   "C": "**A fasciectomia total (radical)** não reduz de forma importante a recidiva e tem mais complicações (hematoma, rigidez, lesão neurovascular); por isso foi abandonada."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 11 ª ed., pg. 4279."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 11 ª ed., pg. 4279.",
+   "Hindocha S, Stanley JK, Watson S, Bayat A. Dupuytren's diathesis revisited: evaluation of prognostic indicators for risk of disease recurrence. J Hand Surg Am. 2006;31(10):1626-1634."
   ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "D",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0629": {
