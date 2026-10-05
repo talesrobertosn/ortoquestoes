@@ -2773,16 +2773,19 @@
   "conferido": false
  },
  "tumores-0284": {
-  "conceito": "**Febre e anemia não são banais.** No sarcoma de Ewing, **febre e anemia** são fatores de mau prognóstico. Fazem parte de um conjunto sistêmico, com VHS elevada, leucocitose e **LDH alta**, que traduz carga tumoral grande e, com frequência, doença disseminada ou infiltração da medula. É esse mesmo conjunto que faz o Ewing ser confundido com osteomielite.\n\n**Corrigindo as outras.** Ter menos de 10 anos é fator **favorável**; o adverso é passar de 12 a 15 anos. O grau histológico não se aplica, porque o Ewing é de alto grau por definição. O sexo feminino tem melhor prognóstico; o adverso é o masculino. Completam a lista desfavorável a localização axial, sobretudo pélvica, o tumor volumoso, a **metástase ao diagnóstico**, o fator isolado mais forte, e a necrose abaixo de 90% após a neoadjuvância.\n\n**Na prova:** Ewing com **febre, anemia e LDH alta** tem pior prognóstico.",
-  "correta": "**A presença de febre e anemia.** Traduzem carga tumoral grande e doença sistêmica.",
+  "conceito": "**O sarcoma de Ewing.** É um tumor maligno de **pequenas células redondas**, com a translocação **t(11;22)** (fusão **EWSR1-FLI1**) e expressão de **CD99**. Acomete crianças e adolescentes, sobretudo entre **10 e 20 anos**, mais os **meninos**. Localiza-se na **diáfise** dos ossos longos e nos ossos chatos (**pelve**, costelas, escápula). Na radiografia, mostra destruição permeativa e reação periosteal em **casca de cebola**, com grande massa de partes moles.\n\n**Por que ele parece uma infecção.** O Ewing pode vir com **febre**, **anemia**, **VHS** e leucócitos elevados e dor local, imitando uma **osteomielite**. Esses sinais **sistêmicos** refletem uma doença mais extensa e mais ativa.\n\n**Os fatores de mau prognóstico.**\n\n| Fator | Comentário |\n|---|---|\n| **Metástase** ao diagnóstico | O **mais importante**; a óssea e a medular são piores que a pulmonar isolada |\n| **Localização central** | Pelve, coluna e sacro: pior que as extremidades |\n| **Tumor grande** | Volume acima de cerca de 100 a 200 mL ou mais de 8 cm |\n| **Sintomas sistêmicos** | **Febre**, **anemia**, perda de peso |\n| **LDH** elevada | Marcador de carga tumoral |\n| **Idade maior** | Adolescentes mais velhos e adultos (acima de 15 a 18 anos) vão pior |\n| **Má resposta** à quimioterapia | Pouca necrose na peça após a quimioterapia neoadjuvante |\n\n**O que não é fator de mau prognóstico.**\n- A apresentação **antes dos 10 anos**: as crianças **mais novas** têm prognóstico **melhor**.\n- O **grau histológico**: todo Ewing é, por definição, um tumor de **alto grau**, e por isso o grau não diferencia os casos.\n- O **sexo feminino**: não piora o prognóstico.\n\n**O tratamento.** Quimioterapia multiagente neoadjuvante, **controle local** com cirurgia e/ou **radioterapia** (o Ewing é **radiossensível**) e quimioterapia adjuvante. A sobrevida na doença localizada chega a cerca de 70%; na metastática, é bem menor.",
+  "correta": "**Correta: D (a presença de febre e anemia).** No sarcoma de Ewing, os **sintomas sistêmicos**, como **febre** e **anemia**, indicam doença mais extensa e são fatores de mau prognóstico, ao lado da metástase, da localização central (pelve), do tamanho do tumor e da LDH elevada.",
   "incorretas": {
-   "A": "**Favorável.** Crianças abaixo dos 10 anos evoluem melhor.",
-   "B": "**Não se aplica.** O Ewing é de alto grau por definição.",
-   "C": "**Favorável.** O sexo feminino tem melhor prognóstico."
+   "A": "A apresentação **antes dos 10 anos** está associada a prognóstico **melhor**, e não pior.",
+   "B": "Todo sarcoma de Ewing é de **alto grau** por definição. O grau histológico não separa os casos de melhor e pior prognóstico.",
+   "C": "O **sexo feminino** não é fator de mau prognóstico no sarcoma de Ewing."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
+   "Campanacci M. Bone and Soft Tissue Tumors. 2ª edição. Springer; 1999."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "tumores-0285": {
   "conceito": "**O tumor frio.** O **mieloma múltiplo** caracteristicamente **não capta** na cintilografia. O plasmócito ativa osteoclastos e, ao mesmo tempo, **inibe osteoblastos**, por vias como DKK1 e esclerostina. Como o radiofármaco, um difosfonato marcado com tecnécio, se fixa onde há atividade osteoblástica, osso que só é destruído, sem reparo, fica frio. Estadiar mieloma com cintilografia **subestima** a doença; o correto é tomografia de baixa dose de corpo inteiro, ressonância de corpo inteiro, que detecta a infiltração antes da destruição visível, ou PET-CT.\n\n**Os que captam.** Osteossarcoma, que produz osteoide, e Ewing e condrossarcoma, que têm osso reativo, captam. Algumas metástases muito líticas e agressivas, como as de rim e tireoide, podem captar pouco, e são as outras exceções a lembrar.\n\n**Na prova:** cintilografia fria é **mieloma**; estadiar com tomografia de baixa dose ou ressonância.",
@@ -2809,16 +2812,19 @@
   "formato": "corrido"
  },
  "tumores-0287": {
-  "conceito": "**A hierarquia.** No osteossarcoma, a doença localizada permite que a maioria sobreviva a longo prazo. A **metástase pulmonar isolada e ressecável** reduz bastante a sobrevida, mas ainda com intenção curativa, pela metastasectomia com quimioterapia. A **metástase óssea**, ou multifocal, tem o **pior prognóstico**: traduz disseminação hematogênica ampla, quase sempre vem com doença pulmonar oculta e raramente é ressecável. No AJCC, a pulmonar é M1a (IVA) e as demais, incluindo osso e linfonodo, são M1b (IVB).\n\n**A categoria intermediária** são as skip metastases, no mesmo osso, que compõem o estágio III e prognosticam como metástase a distância; por isso a ressonância de estadiamento cobre o osso inteiro. Metástases renais e cerebrais são raras.\n\n**Na prova:** a pior metástase do osteossarcoma é a **óssea**; a mais comum é a pulmonar.",
-  "correta": "**Óssea.** Traduz disseminação ampla e raramente é ressecável.",
+  "conceito": "**O osteossarcoma.** É o **tumor ósseo maligno primário mais comum** (excluindo o mieloma), com pico na **adolescência**, durante o estirão de crescimento. As células malignas **produzem osteoide**. Localiza-se na **metáfise** dos ossos longos, sobretudo ao redor do **joelho** (fêmur distal e tíbia proximal) e no **úmero proximal**. Na radiografia, mostra lesão mista, **triângulo de Codman** e reação periosteal em \"raios de sol\".\n\n**Para onde ele vai.** A disseminação é **hematogênica**.\n- **Pulmão**: o local **mais comum** de metástase (cerca de 80% delas). Cerca de **15 a 20%** dos pacientes já têm metástase pulmonar detectável ao diagnóstico, e a maioria dos outros tem micrometástases (por isso a quimioterapia é obrigatória).\n- **Osso**: o **segundo** local.\n- Outros (rins, cérebro, linfonodos): raros.\n\n**A metástase óssea é a de pior prognóstico.**\n\n| Situação | Prognóstico |\n|---|---|\n| Doença localizada | Sobrevida de cerca de **65 a 70%** |\n| Metástase **pulmonar** ressecável (poucos nódulos) | Sobrevida de cerca de 20 a 40%, com ressecção cirúrgica das metástases |\n| Metástase **óssea** | **Muito ruim**: sobrevida de poucos por cento a cerca de 10% |\n\n**Por que a metástase pulmonar não é a pior.** Os nódulos pulmonares, quando em pequeno número, podem ser **ressecados** (metastasectomia), e parte desses pacientes é curada. Já a metástase **óssea** indica doença disseminada pelo esqueleto, e não pode ser controlada da mesma forma.\n\n**As \"skip metastases\".** São focos tumorais no **mesmo osso** (ou do outro lado da articulação), separados do tumor principal. Por isso, a ressonância deve incluir o **osso inteiro**. Elas também indicam pior prognóstico.\n\n**Outros fatores de prognóstico.** A **resposta à quimioterapia** (necrose de **90% ou mais** na peça é boa resposta), a localização (axial é pior), o tamanho e a fosfatase alcalina e a LDH elevadas.\n\n**O tratamento.** Quimioterapia neoadjuvante (metotrexato em altas doses, doxorrubicina e cisplatina), **cirurgia com margem ampla** (preservação do membro na maioria) e quimioterapia adjuvante.",
+  "correta": "**Correta: B (óssea).** No osteossarcoma, a metástase **óssea** é a de pior prognóstico. A metástase pulmonar é a mais comum, mas, quando em pequeno número, pode ser ressecada com chance de cura; a óssea indica doença disseminada no esqueleto.",
   "incorretas": {
-   "A": "**Mais comum, menos ruim.** A pulmonar isolada e ressecável é a de melhor prognóstico entre as metastáticas.",
-   "C": "**Rara.** Metástase renal é incomum no osteossarcoma.",
-   "D": "**Rara.** A cerebral costuma acompanhar doença pulmonar extensa."
+   "A": "A metástase **pulmonar** é a **mais comum**, mas tem prognóstico melhor que a óssea, porque os nódulos podem ser ressecados.",
+   "C": "A metástase **renal** é rara no osteossarcoma e não é a referência de pior prognóstico.",
+   "D": "A metástase **cerebral** é rara. A metástase considerada de pior prognóstico, entre as típicas do osteossarcoma, é a óssea."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
+   "Campanacci M. Bone and Soft Tissue Tumors. 2ª edição. Springer; 1999."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "tumores-0288": {
   "conceito": "**A assinatura histológica do Paget** é o padrão em **mosaico**: linhas de cimento irregulares e desordenadas, fruto de ciclos descoordenados de reabsorção e formação, desenham ladrilhos no osso. Acompanham osteoclastos **gigantes e hipermultinucleados**, com muito mais núcleos que o normal, traço quase diagnóstico, e a medula substituída por tecido **fibrovascular hipervascular**. Essa hipervascularidade aparece na clínica como calor local sobre o osso doente, aumento do débito cardíaco nas formas extensas e sangramento intenso na cirurgia, o que exige preparo clínico e reserva de sangue numa artroplastia de quadril pagético.\n\n**Padrões vizinhos para não trocar.** Paliçada com corpos de Verocay é schwannoma; roda de carroça é o núcleo do plasmócito; tela de galinheiro é a calcificação do condroblastoma; letras chinesas são as trabéculas da displasia fibrosa.\n\n**Na prova:** Paget é **mosaico** com linhas de cimento.",
@@ -3071,16 +3077,19 @@
   "formato": "corrido"
  },
  "tumores-0308": {
-  "conceito": "**Metástase pulmonar do TCG.** Ocorre numa minoria dos pacientes, com séries citando em geral **1 a 4%**; a resposta da banca é **cerca de 3%**. Não é metástase no sentido usual: a histologia é idêntica à do primário, o comportamento é **indolente**, podendo estabilizar ou até regredir, e a mortalidade é baixa. Aceita-se que venha da **embolização vascular** de fragmentos tumorais, e o principal fator de risco é a **recidiva local**, mais um motivo para uma curetagem ampla e bem feita da primeira vez.\n\n**A outra exceção** é a transformação maligna, rara e na maioria das vezes secundária a radioterapia prévia, o que explica a saída da radioterapia do tratamento quando há alternativa cirúrgica. Na prática, todo TCG recebe **tomografia de tórax** no estadiamento e no seguimento, mesmo sendo uma lesão benigna.\n\n**Na prova:** metástase pulmonar do TCG é de **cerca de 3%**, e indolente.",
-  "correta": "**3%.** Está dentro da faixa de 1 a 4% das séries.",
+  "conceito": "**O tumor de células gigantes (TCG).** É um tumor ósseo **benigno, mas localmente agressivo**, formado por células estromais neoplásicas (com mutação no gene **H3F3A**) e por muitas **células gigantes multinucleadas** semelhantes a osteoclastos. As células estromais produzem o **RANKL**, que recruta e ativa as células gigantes, e são elas que destroem o osso.\n\n**O perfil típico.**\n- **Adultos jovens**, de **20 a 40 anos**, com o esqueleto **maduro** (fises fechadas).\n- Discreto predomínio **feminino**.\n- Localização **epifisária e metafisária**, chegando até o **osso subcondral**, quase encostando na articulação.\n- Locais mais comuns: **fêmur distal**, **tíbia proximal**, **rádio distal** e sacro.\n- Radiografia: lesão **lítica**, **excêntrica**, sem esclerose na borda, que pode romper a cortical.\n\n**A classificação radiográfica de Campanacci.**\n- Grau I: lesão bem delimitada, cortical íntegra (latente).\n- Grau II: limites nítidos, cortical afinada e expandida (ativa).\n- Grau III: limites mal definidos, rompe a cortical e invade as partes moles (agressiva).\n\n**O comportamento biológico.**\n- **Recidiva local**: o maior problema. Após curetagem simples, chega a 30 a 50%; com adjuvantes, cai para cerca de 10 a 20%.\n- **Metástase pulmonar**: rara, em cerca de **2 a 3%** dos casos. São os chamados \"**implantes pulmonares benignos**\": a histologia é a mesma do tumor primário, benigna. Costumam surgir após **recidivas locais**, e muitas têm evolução lenta, às vezes regredindo. Por isso, faz-se tomografia de tórax no estadiamento e no seguimento.\n- **Transformação maligna**: rara, geralmente após **radioterapia**.\n\n**O tratamento.**\n- **Curetagem intralesional ampliada**: abrir uma janela grande, curetar, usar a **fresa** de alta rotação e **adjuvantes** (fenol, nitrogênio líquido, eletrocautério, cimento ósseo).\n- **Preenchimento** com **cimento** (que ainda ajuda a ver recidivas, pelo halo de reabsorção) ou enxerto.\n- **Ressecção** em bloco nos casos muito destrutivos ou em ossos dispensáveis (fíbula proximal, ulna distal).\n- **Denosumabe** (anticorpo anti-RANKL): para tumores irressecáveis (sacro, coluna), para reduzir o tumor antes da cirurgia e nas metástases.",
+  "correta": "**Correta: B (3%).** No tumor de células gigantes, a metástase pulmonar é rara, ocorrendo em cerca de **2 a 3%** dos casos. São implantes de histologia benigna, geralmente após recidiva local, e muitos têm evolução lenta.",
   "incorretas": {
-   "A": "**Subestima.** A faixa aceita é de 1 a 4%.",
-   "C": "**Acima do relatado.** Sete por cento passa da frequência descrita.",
-   "D": "**Muito acima.** Nem a metástase nem a malignização chegam a essa frequência."
+   "A": "**0,5%** subestima a incidência descrita, de cerca de 2 a 3%.",
+   "C": "**7%** superestima a incidência de metástases pulmonares do tumor de células gigantes.",
+   "D": "**10%** é muito acima do descrito. A metástase pulmonar é um evento raro nesse tumor."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
+   "Campanacci M. Bone and Soft Tissue Tumors. 2ª edição. Springer; 1999."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "tumores-0309": {
   "conceito": "**O que as imagens mostram.** As radiografias têm lesão **lítica**, **expansiva** e excêntrica na extremidade distal do rádio, chegando ao **osso subcondral**, com cortical adelgaçada e fratura. A ressonância mostra massa ocupando a epífise e a metáfise distais, com sinal intermediário e expansão da cortical. A lâmina tem **células gigantes multinucleadas** distribuídas de maneira **uniforme** entre células mononucleares ovoides, com hemácias extravasadas. Aos 40 anos, com a fise fechada, no rádio distal, terceira sede mais comum, e com lise epifisária até o subcondral, tudo converge para **tumor de células gigantes**.\n\n**O rádio distal é sede agressiva.** A cortical é fina, a ruptura para partes moles é precoce e a recidiva após curetagem simples é maior. Com fratura e destruição extensa, considera-se a ressecção em bloco com reconstrução por enxerto de fíbula, artrodese ou translocação ulnar. Antes de qualquer conduta, cálcio e PTH para afastar tumor marrom e tomografia de tórax.\n\n**Na prova:** adulto, rádio distal, lise subcondral e células gigantes uniformes é **TCG**.",

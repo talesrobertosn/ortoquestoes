@@ -2423,14 +2423,18 @@
   "conferido": false
  },
  "trauma-0210": {
+  "conceito": "**A fratura do piramidal.** É a **segunda fratura mais comum do carpo**, depois do escafoide, e muitas vezes passa despercebida. O piramidal fica no lado **ulnar** da fileira proximal, articulando-se com o semilunar, o pisiforme e o hamato.\n\n**Os dois tipos de fratura.**\n\n| Tipo | Frequência | Mecanismo |\n|---|---|---|\n| **Fratura dorsal** (lasca cortical dorsal) | A **mais comum** (cerca de 90%) | **Avulsão** pelos ligamentos dorsais ou impacção pela estiloide da ulna |\n| Fratura do corpo | Menos comum | Trauma de maior energia; frequentemente com luxações do carpo (perilunar) |\n\n**A fratura dorsal (lasca).** Aparece como um pequeno fragmento ósseo **atrás** do piramidal, visível no **perfil** do punho. Os mecanismos propostos são:\n- **Avulsão**: na **flexão** forçada e na torção do punho, os **ligamentos dorsais** (radiopiramidal dorsal e intercarpal dorsal), inseridos no piramidal, **arrancam** um fragmento da cortical dorsal. É o mecanismo mais aceito e mais citado.\n- **Impacção**: na queda com o punho em **extensão** e desvio **ulnar**, a **estiloide da ulna** ou o hamato batem contra a face dorsal do piramidal e quebram uma lasca.\n\n**O quadro clínico.** Dor e edema no **lado ulnar dorsal** do punho, logo distal à cabeça da ulna, após uma queda. A radiografia em **perfil** (às vezes em oblíqua) mostra o fragmento.\n\n**O tratamento.**\n- Fratura **dorsal**: **imobilização** com tala ou gesso por 3 a 6 semanas. O prognóstico é muito bom; a pseudoartrose do fragmento, quando ocorre, raramente dá sintomas.\n- Fratura do **corpo**: geralmente sem desvio, tratada com gesso. Com desvio ou associada a luxação do carpo, exige redução e fixação.\n\n**Sempre procure as lesões associadas.** Na fratura do corpo, investigue as **luxações perilunares** e as lesões do **ligamento lunopiramidal**.",
+  "correta": "**Correta: A (avulsão).** A fratura do piramidal mais comum é a lasca **dorsal**, causada geralmente por **avulsão** pelos ligamentos dorsais do carpo (radiopiramidal dorsal e intercarpal dorsal). A impacção pela estiloide da ulna é outro mecanismo descrito.",
   "incorretas": {
-   "B": "A impacção pelo estiloide ulnar é um mecanismo alternativo, menos citado.",
-   "C": "A angulação não é o mecanismo da fratura do piramidal.",
-   "D": "O cisalhamento aparece nas lesões do arco maior, raras."
+   "B": "A **impacção** (pela estiloide da ulna ou pelo hamato, com o punho em extensão e desvio ulnar) é um mecanismo descrito, mas a **avulsão** ligamentar é o mais citado.",
+   "C": "A **angulação** não é o mecanismo típico da fratura do piramidal.",
+   "D": "O **cisalhamento** é mais ligado às fraturas osteocondrais e do corpo de outros ossos, e não à lasca dorsal típica do piramidal."
   },
-  "conceito": "O **piramidal** é o **segundo osso mais fraturado do carpo**, depois do escafoide.\n\n**O tipo mais comum**: a **lasca dorsal** (dorsal chip), uma pequena fratura da face dorsal do piramidal.\n\n**O mecanismo**: **avulsão** pelos ligamentos dorsais que se inserem ali (**radiopiramidal dorsal** e **intercárpico dorsal**), numa queda com o punho em flexão. Outra explicação é o impacto do **estiloide ulnar** contra o piramidal em hiperextensão com desvio ulnar.\n\n**Como ver**: no **perfil** do punho, a lasca aparece atrás do carpo; a oblíqua em pronação também ajuda. No PA, quase não aparece.\n\n**O tratamento**: imobilização por **3 a 6 semanas**; o prognóstico é bom.\n\n**A fratura do corpo do piramidal**: rara, aparece nas lesões **perilunares** do arco maior, de alta energia.\n\n**Na prova**: a fratura do piramidal é mais frequentemente causada por **avulsão**.",
-  "correta": "A lasca dorsal, a fratura mais comum do piramidal, é arrancada pelos ligamentos dorsais.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)",
+   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0211": {
