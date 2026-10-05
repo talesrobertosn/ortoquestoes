@@ -11152,6 +11152,86 @@
   "geradoEm": "2026-10-01",
   "conferido": false
  },
+ "trauma-1194": {
+  "conceito": "**Fratura de Monteggia e instabilidade da cabeça do rádio.** A lesão de Monteggia combina fratura da ulna com luxação da cabeça do rádio. A classificação de Bado tem quatro tipos:\n\n| Tipo | Luxação da cabeça do rádio | Fratura |\n|---|---|---|\n| I | Anterior | Diáfise da ulna, angulada anteriormente (a mais comum) |\n| II | Posterior ou posterolateral | Ulna angulada posteriormente |\n| III | Lateral ou anterolateral | Metáfise da ulna |\n| **IV** | **Anterior** | **Fratura do rádio e da ulna** no terço proximal |\n\n**Tratamento.** Em adultos, a chave é a **redução anatômica e a fixação estável da ulna** (com placa); geralmente a cabeça do rádio reduz espontaneamente. Se a cabeça do rádio não reduz ou fica instável, pode haver interposição do ligamento anular, que deve ser liberado e reparado.\n\n**Reconstrução do ligamento anular.** Quando o ligamento está destruído ou em lesões crônicas (Monteggia negligenciada, sobretudo em crianças), é preciso reconstruí-lo.\n- **Técnica de Bell-Tawse**: usa uma **tira da fáscia (aponeurose) do tríceps**, mantida presa distalmente na ulna, passada ao redor do colo do rádio para criar um novo ligamento anular.\n- Variações usam o palmar longo ou outros enxertos.\n\n**Monteggia crônica na criança.** Frequentemente exige osteotomia da ulna (alongamento e angulação) para permitir a redução da cabeça do rádio, associada ou não à reconstrução do ligamento anular.\n\n> Bell-Tawse: reconstrução do ligamento anular com uma tira da fáscia do tríceps.",
+  "correta": "**D: tríceps.** A técnica de Bell-Tawse reconstrói o ligamento anular com uma tira da aponeurose do tríceps, mantida inserida na ulna e passada ao redor do colo do rádio. É usada quando a cabeça do rádio permanece instável após a fixação da ulna ou em lesões de Monteggia crônicas.",
+  "incorretas": {
+   "A": "**O bíceps** se insere na tuberosidade do rádio e é um dos responsáveis por deslocar a cabeça do rádio anteriormente; não é usado na técnica de Bell-Tawse.",
+   "B": "**O ancôneo** é usado em outras técnicas (como retalhos para cobertura ou na via de Kocher), mas não na reconstrução de Bell-Tawse.",
+   "C": "**O palmar longo** é um enxerto livre usado em outras variações da reconstrução ligamentar, mas a técnica clássica de Bell-Tawse usa a fáscia do tríceps.",
+   "E": "**O extensor radial do carpo** não é usado nessa reconstrução."
+  },
+  "referencias": [
+   "Bell Tawse AJ. The treatment of malunited anterior Monteggia fractures in children. J Bone Joint Surg Br. 1965;47:718-723.",
+   "Bado JL. The Monteggia lesion. Clin Orthop Relat Res. 1967;50:71-86."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "trauma-1195": {
+  "conceito": "**Fraturas do planalto tibial e a coluna posterolateral.** A classificação de Schatzker descreve seis tipos (I a III no planalto lateral; IV no medial; V bicondilar; VI com dissociação metafisária). O conceito das **três colunas** (Luo) acrescentou a importância da **coluna posterior**, especialmente a posterolateral, que não é bem acessada pela via anterolateral clássica.\n\n**Tipo IV de Schatzker.** Fratura do planalto **medial**, por mecanismo de varo e alta energia; frequentemente associada a lesões ligamentares e a fraturas-luxações, com risco de lesão vascular e do nervo fibular. Pode haver fragmentos posteriores, inclusive posterolaterais.\n\n**Acesso posterolateral (Lobenhoffer e variantes).**\n- Paciente em decúbito ventral ou lateral.\n- Incisão posterolateral; identificação e proteção do **nervo fibular comum**, que passa medialmente ao tendão do **bíceps femoral**.\n- Intervalo entre a **cabeça lateral do gastrocnêmio** (medialmente) e o **bíceps femoral** (lateralmente), afastando o gastrocnêmio para medial e protegendo o fibular para lateral.\n- Desinserção parcial do sóleo e exposição da superfície posterolateral da tíbia; atenção à artéria tibial anterior, que atravessa a membrana interóssea abaixo.\n\n**Alternativas.** Osteotomia da fíbula (acesso transfibular) ou da epífise lateral (Frosch, com janela posterior ao ligamento colateral lateral) para fragmentos posterolaterais.\n\n> Acesso posterolateral do planalto tibial: entre a cabeça lateral do gastrocnêmio e o bíceps, protegendo o nervo fibular.",
+  "correta": "**B: o gastrocnêmico lateral e o bíceps.** O acesso posterolateral ao planalto tibial usa o intervalo entre a cabeça lateral do gastrocnêmio e o tendão do bíceps femoral, com identificação e proteção do nervo fibular comum. Permite tratar fragmentos posterolaterais que não são alcançados pela via anterolateral.",
+  "incorretas": {
+   "A": "**O gastrocnêmio lateral e o poplíteo** são estruturas encontradas mais profundamente; o poplíteo fica junto à cápsula posterolateral e não define o intervalo superficial do acesso.",
+   "C": "**O gastrocnêmio lateral e o nervo fibular** não formam um intervalo seguro; o nervo deve ser identificado e protegido, não usado como limite de dissecção.",
+   "D": "**O poplíteo e o ligamento colateral lateral** são estruturas do canto posterolateral profundo; não definem o intervalo do acesso.",
+   "E": "**O poplíteo e o nervo fibular** também não são o intervalo do acesso posterolateral; a dissecção entre eles colocaria o nervo em risco."
+  },
+  "referencias": [
+   "Frosch KH, Balcarek P, Walde T, Stürmer KM. A new posterolateral approach without fibula osteotomy for the treatment of tibial plateau fractures. J Orthop Trauma. 2010;24(8):515-520.",
+   "Tornetta P III, Ricci WM, Ostrum RF, McQueen MM, McKee MD, Court-Brown CM, eds. Rockwood and Green's Fractures in Adults. Wolters Kluwer. Fraturas do planalto tibial."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "trauma-1196": {
+  "conceito": "**Síndrome compartimental e o Delta-P.** A síndrome compartimental ocorre quando a pressão dentro de um compartimento fechado por fáscia aumenta a ponto de comprometer a perfusão dos músculos e nervos. A fratura da tíbia é a causa mais comum.\n\n**Diagnóstico clínico.** Dor desproporcional, **dor ao estiramento passivo** dos músculos do compartimento (no caso, a impossibilidade de estender os dedos e a dor sugerem compartimento anterior), compartimento tenso, parestesias. A ausência de pulso é tardia.\n\n**Medida da pressão.** Útil em pacientes inconscientes, crianças, casos duvidosos ou com bloqueio anestésico.\n- O valor absoluto (acima de 30 mmHg) foi usado no passado, mas não leva em conta a pressão do paciente.\n- **Delta-P (ΔP)**: **pressão arterial diastólica menos a pressão intracompartimental**. Reflete o gradiente de perfusão.\n- **ΔP menor que 30 mmHg** indica perfusão inadequada e é o critério mais aceito para **fasciotomia** (McQueen e Court-Brown).\n\n**Fórmula:** ΔP = PA diastólica − pressão intracompartimental.\n\n**Tratamento.** Retirar curativos e gesso apertados (abrir o gesso até a pele), manter o membro na altura do coração (não elevar) e, se persistir, **fasciotomia** dos quatro compartimentos da perna (técnica de duas incisões), com fechamento tardio ou enxerto de pele.\n\n> Delta-P = pressão diastólica menos pressão do compartimento; abaixo de 30 mmHg, fasciotomia.",
+  "correta": "**B: arterial diastólica da pressão intracompartimental.** O Delta-P é calculado subtraindo a pressão intracompartimental da pressão arterial diastólica (ΔP = PAD − pressão do compartimento). Valores abaixo de 30 mmHg indicam perfusão insuficiente e são o critério mais aceito para fasciotomia.",
+  "incorretas": {
+   "A": "**Usar a pressão sistólica** não é o padrão: a diastólica reflete melhor a pressão mínima de perfusão dos tecidos. A forma de cálculo com a sistólica não é a descrita por McQueen e Court-Brown.",
+   "C": "**Pressão intracompartimental menos a sistólica** inverte a subtração e usa a pressão errada; geraria um valor negativo sem sentido clínico.",
+   "D": "**Pressão intracompartimental menos a diastólica** inverte a ordem da subtração. O resultado teria sinal oposto e não corresponde à definição do Delta-P.",
+   "E": "**Comparar com o compartimento contralateral** não é a forma de calcular o Delta-P, que depende da pressão arterial do próprio paciente."
+  },
+  "referencias": [
+   "McQueen MM, Court-Brown CM. Compartment monitoring in tibial fractures: the pressure threshold for decompression. J Bone Joint Surg Br. 1996;78(1):99-104.",
+   "Tornetta P III, Ricci WM, Ostrum RF, McQueen MM, McKee MD, Court-Brown CM, eds. Rockwood and Green's Fractures in Adults. Wolters Kluwer. Síndrome compartimental."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "trauma-1197": {
+  "conceito": "**Técnica de Papineau.** Descrita por Papineau nos anos 1970 para tratar a **osteomielite crônica e a pseudoartrose infectada**, principalmente da tíbia.\n\n**Etapas.**\n1. **Excisão radical** de todo o tecido infectado e do osso necrótico (sequestrectomia, desbridamento até osso sangrante).\n2. **Estabilização** do segmento, geralmente com **fixador externo**.\n3. Formação de **tecido de granulação** no leito.\n4. **Enxerto autólogo de osso esponjoso**, aplicado sobre a granulação, deixado **aberto** (à céu aberto), coberto apenas por curativos.\n5. **Cobertura cutânea tardia**, por epitelização espontânea ou enxerto de pele, após a incorporação do enxerto.\n\n**Fundamento.** O enxerto esponjoso, rico em células, resiste à infecção quando em contato com um leito bem vascularizado de granulação; a ferida aberta permite drenagem.\n\n**Limitações.** Tempo prolongado de tratamento e curativos, cobertura de pele de má qualidade sobre o osso. Hoje, a técnica foi parcialmente substituída por retalhos musculares, transporte ósseo de Ilizarov e pela técnica da membrana induzida de Masquelet, mas continua sendo uma opção.\n\n**Outros nomes.**\n- **Ilizarov**: osteogênese por distração e transporte ósseo com fixador circular.\n- **Hoffmann**: fixador externo.\n- **Paley**: técnicas de alongamento e correção de deformidades.\n- **Galeazzi**: fratura do rádio com luxação da radioulnar distal.\n\n> Papineau: excisão do tecido infectado, fixação externa, enxerto esponjoso aberto e fechamento tardio.",
+  "correta": "**A: Papineau.** A técnica de Papineau trata a pseudoartrose infectada e a osteomielite crônica com excisão radical do tecido infectado, estabilização (geralmente com fixador externo), enxerto autólogo de osso esponjoso sobre o tecido de granulação, deixado aberto, e fechamento tardio da ferida.",
+  "incorretas": {
+   "B": "**Hoffmann** é lembrado pelo fixador externo que leva seu nome, não por essa técnica de tratamento da osteomielite.",
+   "C": "**Galeazzi** descreveu a fratura do rádio distal associada à luxação da articulação radioulnar distal.",
+   "D": "**Ilizarov** desenvolveu o fixador circular e a osteogênese por distração, com transporte ósseo, que é outra estratégia para defeitos e pseudoartroses infectadas.",
+   "E": "**Paley** é conhecido por técnicas de alongamento ósseo e correção de deformidades, não por essa técnica."
+  },
+  "referencias": [
+   "Papineau LJ, Alfageme A, Dalcourt JP, Pilon L. Ostéomyélite chronique: excision et greffe de spongieux à l'air libre après mises à plat extensives. Int Orthop. 1979;3(3):165-176.",
+   "Azar FM, Beaty JH, eds. Campbell's Operative Orthopaedics. Elsevier. Osteomielite."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "trauma-1198": {
+  "conceito": "**Classificação de Tscherne das lesões de partes moles nas fraturas fechadas.** Tscherne e Oestern chamaram a atenção para o fato de que fraturas fechadas também têm lesões de partes moles importantes, que influenciam a cicatrização, o risco de infecção e o momento da cirurgia.\n\n| Grau | Descrição |\n|---|---|\n| C0 | Lesão mínima de partes moles; trauma indireto; fratura simples |\n| C1 | Abrasão superficial ou contusão causada por pressão do fragmento de dentro para fora; fratura leve a moderada |\n| **C2** | **Abrasão profunda contaminada** e contusão localizada de pele ou músculo, por **trauma direto**; fratura moderada a grave; risco de síndrome compartimental |\n| C3 | Contusão extensa, esmagamento, desenluvamento fechado, síndrome compartimental instalada ou lesão vascular |\n\n**Por que importa.** Em fraturas com lesão grau C2 ou C3, a incisão cirúrgica através de pele contundida aumenta o risco de necrose e infecção. Por isso, muitas vezes se usa fixação temporária (fixador externo) e cirurgia definitiva após a melhora das partes moles, ou técnicas minimamente invasivas.\n\n**O caso.** Queda de bicicleta com trauma direto, abrasão extensa por toda a face anterior da perna e fratura do terço médio da tíbia com traço oblíquo curto: corresponde a lesão de partes moles **grau II (C2)** de Tscherne.\n\n**Observação.** Os subgrupos IIIA, IIIB e IIIC pertencem à classificação de Gustilo e Anderson, que é para fraturas **expostas**, e não à de Tscherne para fraturas fechadas.\n\n> Fratura fechada com abrasão profunda e contusão por trauma direto: Tscherne grau II.",
+  "correta": "**B: II.** A fratura fechada da tíbia por trauma direto, com abrasão extensa na face anterior da perna e contusão de partes moles, corresponde ao grau II de Tscherne. Essa lesão aumenta o risco de complicações cutâneas e de síndrome compartimental e influencia o momento e a técnica da fixação.",
+  "incorretas": {
+   "A": "**O grau I** corresponde a uma abrasão superficial ou contusão causada pelo fragmento de dentro para fora, em fraturas de menor energia. O caso tem abrasão extensa por trauma direto.",
+   "C": "**IIIA** é um subgrupo da classificação de Gustilo e Anderson para fraturas expostas, não da classificação de Tscherne para fraturas fechadas.",
+   "D": "**IIIB** também é da classificação de Gustilo e Anderson (fratura exposta com perda de partes moles que exige retalho).",
+   "E": "**IIIC** é da classificação de Gustilo e Anderson (fratura exposta com lesão arterial que exige reparo)."
+  },
+  "referencias": [
+   "Tscherne H, Oestern HJ. Die Klassifizierung des Weichteilschadens bei offenen und geschlossenen Frakturen. Unfallheilkunde. 1982;85(3):111-115.",
+   "Tornetta P III, Ricci WM, Ostrum RF, McQueen MM, McKee MD, Court-Brown CM, eds. Rockwood and Green's Fractures in Adults. Wolters Kluwer. Lesões de partes moles."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
  "trauma-1205": {
   "conceito": "**Classificação AO Spine das fraturas toracolombares: tipo B.** As lesões tipo B são aquelas em que há **falha da banda de tensão** (posterior ou anterior), sem translação.\n\n| Tipo | Descrição |\n|---|---|\n| B1 | Lesão **transóssea** da banda de tensão posterior: o traço atravessa o osso (pedículos, lâminas, processos), como na **fratura de Chance** clássica |\n| **B2** | Lesão da banda de tensão posterior **ligamentar ou osteoligamentar**: ruptura do complexo ligamentar posterior (ligamentos supraespinhoso, interespinhoso, amarelo, cápsulas facetárias), com ou sem fratura do corpo vertebral |\n| B3 | Lesão da banda de tensão **anterior** por **hiperextensão**: ruptura do disco e do ligamento longitudinal anterior, comum em coluna anquilosada |\n\n**Lesões tipo A e C.**\n- **A**: compressão, com banda de tensão íntegra (A0 a A4; A4 é a explosão completa).\n- **C**: translação ou deslocamento em qualquer plano.\n\n**Sinais de lesão B2.** Aumento da distância entre os processos espinhosos, diástase ou subluxação facetária, cifose localizada, alteração de sinal nos ligamentos posteriores na ressonância (T2 com supressão de gordura). Com uma fratura do corpo vertebral associada, descreve-se, por exemplo, \"B2 com A3\".\n\n**Importância.** A lesão do complexo ligamentar posterior torna a fratura instável e geralmente cirúrgica, porque os ligamentos cicatrizam mal.\n\n**Nota sobre a imagem.** A figura associada à questão mostra radiografias da coluna lombar em AP e perfil.\n\n> AO B2: ruptura da banda de tensão posterior ligamentar ou osteoligamentar.",
   "correta": "**B: B2.** A fratura foi classificada como B2 pela AO Spine, ou seja, lesão da banda de tensão posterior com componente ligamentar (ruptura do complexo ligamentar posterior), com ou sem fratura do corpo vertebral. Essas lesões são instáveis e geralmente exigem estabilização cirúrgica.",
