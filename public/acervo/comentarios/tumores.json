@@ -3881,5 +3881,44 @@
   ],
   "geradoEm": "2026-10-05",
   "conferido": false
+ },
+ "tumores-0367": {
+  "conceito": "**Estadiamento de Enneking (MSTS) para tumores malignos do sistema musculoesquelético.** Combina três elementos: **grau histológico** (G), **extensão anatômica** (T, compartimento) e **metástase** (M).\n\n| Estádio | Grau | Extensão | Metástase |\n|---|---|---|---|\n| IA | Baixo (G1) | Intracompartimental (T1) | Não |\n| IB | Baixo (G1) | Extracompartimental (T2) | Não |\n| IIA | Alto (G2) | Intracompartimental (T1) | Não |\n| **IIB** | **Alto (G2)** | **Extracompartimental (T2)** | **Não** |\n| **III** | **Qualquer** | **Qualquer** | **Sim (M1)** |\n\n**Compartimento.** Um osso é um compartimento; o tumor que rompe a cortical e invade as partes moles se torna extracompartimental. Regiões como a fossa poplítea, a axila e a pelve são consideradas extracompartimentais por natureza.\n\n**O estádio mais comum.** A maioria dos sarcomas ósseos de alto grau, como o osteossarcoma convencional, já é **IIB** ao diagnóstico, porque rompe a cortical cedo.\n\n**Estadiamento dos tumores benignos (Enneking).** Usa algarismos arábicos: 1 latente, 2 ativo, 3 agressivo.\n\n**Atenção ao caso.** O paciente tem carcinoma metastático, que não é estadiado pelo sistema de Enneking (criado para sarcomas primários), mas a pergunta testa a definição dos estádios.\n\n> Enneking: qualquer metástase = estádio III; IIB = alto grau extracompartimental sem metástase.",
+  "correta": "**B: Errado.** No sistema de Enneking, qualquer lesão com metástase, independentemente do grau e da extensão, é classificada como **estádio III**. O estádio IIB corresponde ao tumor de alto grau, extracompartimental e **sem** metástase, situação da maioria dos osteossarcomas ao diagnóstico.",
+  "incorretas": {
+   "A": "**Marcar certo é confundir o estádio de pior extensão local (IIB) com o estádio de doença disseminada (III).** A presença de metástase muda o estádio para III, qualquer que seja o tumor primário."
+  },
+  "referencias": [
+   "Enneking WF, Spanier SS, Goodman MA. A system for the surgical staging of musculoskeletal sarcoma. Clin Orthop Relat Res. 1980;(153):106-120.",
+   "Enneking WF. A system of staging musculoskeletal neoplasms. Clin Orthop Relat Res. 1986;(204):9-24."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "tumores-0368": {
+  "conceito": "**Estadiamento de Enneking dos tumores benignos.** Descreve o comportamento biológico da lesão e orienta a abordagem cirúrgica.\n\n| Estádio | Comportamento | Radiografia | Exemplos | Tratamento |\n|---|---|---|---|---|\n| 1 Latente | Assintomático, sem crescimento ou crescimento lento, tende a cicatrizar | Margens bem definidas, halo esclerótico | Fibroma não ossificante, encondroma, osteocondroma inativo | Observação |\n| 2 Ativo | **Sintomático**, cresce, **destruição óssea limitada**, pode causar **fratura patológica** | Margem bem definida, pode expandir o osso | Cisto ósseo simples ativo, cisto ósseo aneurismático, condroblastoma, osteoma osteoide | Curetagem (margem intralesional) |\n| 3 Agressivo | Sintomático, crescimento rápido, **rompe a cortical**, pode invadir partes moles e recidivar | Margens mal definidas, destruição cortical | **Tumor de células gigantes**, alguns cistos aneurismáticos, osteoblastoma | Curetagem estendida com adjuvantes ou ressecção marginal/ampla |\n\n**Tumor de células gigantes.** Lesão epifisometafisária excêntrica, lítica, em adultos jovens com fise fechada (região do joelho, rádio distal, sacro). Tem comportamento **localmente agressivo**, alta taxa de recidiva após curetagem simples e, raramente, metástases pulmonares \"benignas\". Por isso é o exemplo clássico do estádio 3.\n\n**Tratamento do TCG.** Curetagem estendida (broca de alta rotação) com adjuvantes (fenol, nitrogênio líquido, cimento) ou ressecção em lesões muito destrutivas. O denosumabe é usado em lesões irressecáveis ou para reduzir lesões antes da cirurgia.\n\n> Benigno ativo (2): sintomático, destruição limitada. Tumor de células gigantes: benigno agressivo (3).",
+  "correta": "**B: Errado.** A primeira parte define corretamente a lesão benigna ativa (estádio 2 de Enneking): sintomática, com destruição óssea limitada e possibilidade de fratura patológica. O erro está no exemplo: o tumor de células gigantes é o exemplo clássico de lesão benigna **agressiva** (estádio 3), pela destruição da cortical, extensão às partes moles e alta taxa de recidiva. Exemplos de lesões ativas são o cisto ósseo simples ativo e o condroblastoma.",
+  "incorretas": {
+   "A": "**Marcar certo é aceitar a definição correta sem checar o exemplo.** O tumor de células gigantes pode, em alguns casos, ter comportamento menos agressivo, mas é tradicionalmente classificado como benigno agressivo, o que justifica tratamentos mais extensos que a curetagem simples."
+  },
+  "referencias": [
+   "Enneking WF. A system of staging musculoskeletal neoplasms. Clin Orthop Relat Res. 1986;(204):9-24.",
+   "Azar FM, Beaty JH, eds. Campbell's Operative Orthopaedics. Elsevier. Tumores ósseos benignos."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "tumores-0369": {
+  "conceito": "**Lesão óssea nova no adulto acima de 40 anos.** A idade muda completamente a probabilidade dos diagnósticos. Em adultos acima de 40 anos, as lesões ósseas destrutivas mais frequentes não são os sarcomas primários, e sim:\n- **Metástases de carcinoma** (de longe as mais comuns): mama, próstata, pulmão, rim, tireoide.\n- **Mieloma múltiplo**: o tumor primário maligno do osso mais frequente.\n- **Linfoma**.\n\n**Regra prática.** Toda lesão óssea nova, sobretudo lítica, em paciente acima de 40 anos deve ser considerada **metástase ou mieloma até prova em contrário**, mesmo sem história conhecida de câncer.\n\n**Investigação antes da biópsia.**\n- História e exame físico completos (mama, próstata, tireoide, linfonodos, pele).\n- Exames laboratoriais: hemograma, cálcio, função renal, fosfatase alcalina, **eletroforese de proteínas séricas e urinárias** (mieloma), PSA.\n- Tomografia de tórax, abdome e pelve; cintilografia óssea ou PET-CT.\n- **Biópsia** ao final, planejada pelo cirurgião que fará o tratamento definitivo, para não comprometer uma eventual ressecção de sarcoma primário.\n\n**Armadilha.** Fixar uma \"fratura patológica por metástase\" sem confirmação histológica pode contaminar o membro se a lesão for, na verdade, um sarcoma primário, comprometendo a cirurgia curativa.\n\n| Idade | Lesões malignas mais prováveis |\n|---|---|\n| Abaixo de 5 anos | Metástase de neuroblastoma, leucemia |\n| 5 a 30 anos | Osteossarcoma, sarcoma de Ewing |\n| Acima de 40 anos | Metástase, mieloma, linfoma, condrossarcoma |\n\n> Acima de 40 anos com lesão óssea nova: pensar em metástase e mieloma primeiro.",
+  "correta": "**A: Certo.** Em pacientes acima de 40 anos com tumor ósseo novo, o mieloma múltiplo e o carcinoma metastático são os diagnósticos mais prováveis e devem sempre ser incluídos no diferencial. Isso orienta a investigação (eletroforese de proteínas, exames de imagem para buscar o primário) e lembra que a biópsia deve ser planejada antes de qualquer fixação. (O texto \"Área livre\" no fim do item é resquício da diagramação.)",
+  "incorretas": {
+   "B": "**Marcar errado seria pensar primeiro em sarcomas primários do osso nessa faixa etária.** Eles existem, como o condrossarcoma, mas são muito menos frequentes que as metástases e o mieloma em adultos acima de 40 anos."
+  },
+  "referencias": [
+   "Rougraff BT, Kneisl JS, Simon MA. Skeletal metastases of unknown origin: a prospective study of a diagnostic strategy. J Bone Joint Surg Am. 1993;75(9):1276-1281.",
+   "Azar FM, Beaty JH, eds. Campbell's Operative Orthopaedics. Elsevier. Doença metastática óssea."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  }
 }
