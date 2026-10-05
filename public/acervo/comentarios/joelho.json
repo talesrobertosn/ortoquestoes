@@ -3443,19 +3443,20 @@
   "conferido": false
  },
  "joelho-0286": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": "**Transferência da tuberosidade.** Com índice de Insall-Salvati normal, a transferência é só medial. Com patela alta (índice acima de 1,2), associa-se a distalização.\n\n**Na prova:** só distaliza se houver patela alta.",
-  "correta": "**Somente medial.** Sem patela alta, apenas medializa.",
+  "conceito": "**Instabilidade femoropatelar e a transferência da tuberosidade da tíbia.** A patela é estabilizada por partes moles (ligamento patelofemoral medial, principal restritor à luxação lateral entre 0 e 30 graus) e pela forma óssea (sulco troclear). Dejour e colaboradores identificaram os **fatores anatômicos maiores** de instabilidade:\n\n| Fator | Medida | Correção cirúrgica |\n|---|---|---|\n| Displasia da tróclea | Sinal do cruzamento, classificação de Dejour | Trocleoplastia |\n| **Patela alta** | Índice de Insall-Salvati acima de 1,2 (Caton-Deschamps acima de 1,2) | **Distalização** da tuberosidade |\n| **Tuberosidade lateralizada** | TA-GT (distância tuberosidade anterior da tíbia e garganta da tróclea) acima de 20 mm | **Medialização** da tuberosidade |\n| Inclinação patelar | Acima de 20 graus | Liberação ou alongamento do retináculo lateral |\n\n**O índice de Insall-Salvati.** É a razão entre o comprimento do tendão patelar e o comprimento diagonal da patela, medida no perfil com o joelho em cerca de 30 graus. Normal entre 0,8 e 1,2. Acima de 1,2: **patela alta**, que entra tardiamente no sulco troclear e fica sem contenção óssea por mais tempo. Abaixo de 0,8: patela baixa.\n\n**A lógica da questão.** Com índice **inferior a 1,2**, a altura da patela é normal; não há motivo para distalizar. Se a transferência for indicada (por exemplo, TA-GT aumentado), ela é **somente medial** (Elmslie-Trillat). Distalizar uma patela de altura normal criaria **patela baixa**, com aumento da pressão femoropatelar e perda de flexão.\n\n**Outras transferências.** Fulkerson associa medialização e **anteriorização** (osteotomia oblíqua), útil quando há condropatia lateral ou distal. A proximalização praticamente não tem indicação na instabilidade. Hoje, a reconstrução do ligamento patelofemoral medial é o procedimento central, e as osteotomias corrigem os fatores ósseos associados.\n\n> Transferência da tuberosidade: medializar se TA-GT alto; distalizar só se houver patela alta.",
+  "correta": "**A: somente medial (resposta pela bibliografia).** Com índice de Insall-Salvati inferior a 1,2, a altura da patela é normal; a transferência, quando indicada pela lateralização da tuberosidade, deve apenas medializar, sem distalizar.",
   "incorretas": {
-   "B": "**Medial e distal.** Distalizar seria para patela alta.",
-   "C": "**Medial e proximal.** Proximalizar só se houvesse patela baixa.",
-   "D": "**Somente distal.** Sem medializar não corrige o mau alinhamento."
+   "B": "**Medial e distal** é a transferência para quem tem tuberosidade lateralizada **e** patela alta (índice acima de 1,2). Com altura normal, a distalização provocaria patela baixa.",
+   "C": "**Medial e proximal**: a proximalização elevaria a patela, aumentando a instabilidade; não tem lugar na instabilidade femoropatelar.",
+   "D": "**Somente distal** corrige apenas patela alta, que não existe nesse paciente, e não corrige a lateralização da tuberosidade."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 2382."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 2382.",
+   "Dejour H, Walch G, Nove-Josserand L, Guier C. Factors of patellar instability: an anatomic radiographic study. Knee Surg Sports Traumatol Arthrosc. 1994;2(1):19-26."
   ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "A",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "joelho-0287": {

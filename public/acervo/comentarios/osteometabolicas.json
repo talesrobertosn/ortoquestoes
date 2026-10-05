@@ -1073,19 +1073,20 @@
   "conferido": false
  },
  "osteometabolicas-0085": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "D",
-  "conceito": "**Critérios de Jones.** Maiores: cardite, poliartrite, coreia, nódulos subcutâneos e eritema marginado. Artralgia é critério menor.\n\n**Na prova:** artralgia é menor; artrite é maior.",
-  "correta": "**Endocardite, nódulos subcutâneos e coréia.** São três critérios maiores.",
+  "conceito": "**Febre reumática aguda e os critérios de Jones.** A febre reumática é uma doença inflamatória autoimune que surge 2 a 4 semanas após faringite pelo **estreptococo beta-hemolítico do grupo A**, por mimetismo molecular entre antígenos do estreptococo e tecidos do hospedeiro (coração, articulações, núcleos da base, pele). Acomete principalmente crianças de 5 a 15 anos e continua relevante no Brasil.\n\n**Critérios de Jones.** O diagnóstico exige evidência de infecção estreptocócica recente (ASLO, cultura, teste rápido) mais **dois critérios maiores**, ou **um maior e dois menores**.\n\n| Critérios maiores | Critérios menores |\n|---|---|\n| **Cardite** (pancardite, com endocardite valvar) | **Artralgia** |\n| Poliartrite migratória | Febre |\n| **Coreia** de Sydenham | VHS ou PCR elevados |\n| **Nódulos subcutâneos** | PR prolongado no ECG |\n| Eritema marginado | |\n\n**A pegadinha ortopédica.** **Artrite** (inflamação objetiva) é critério maior; **artralgia** (só dor) é menor, e não se usa artralgia como menor se a artrite já foi contada como maior. A artrite da febre reumática é migratória, de grandes articulações, muito dolorosa e responde dramaticamente ao salicilato, sem deixar sequela.\n\n**Atualização de 2015 (American Heart Association).** Em populações de risco moderado ou alto, monoartrite e até poliartralgia podem contar como critério maior, e a cardite subclínica ao ecocardiograma passa a valer. A questão segue a forma clássica.\n\n**Tratamento e prevenção.** Penicilina para erradicar o estreptococo, anti-inflamatório para a artrite, corticoide na cardite grave e profilaxia secundária com penicilina benzatina por anos.\n\n> Critérios maiores de Jones: cardite, poliartrite, coreia, nódulos subcutâneos e eritema marginado; artralgia é menor.",
+  "correta": "**D: endocardite, nódulos subcutâneos e coréia (resposta pela bibliografia).** As três são manifestações maiores: a cardite (com endocardite valvar), os nódulos subcutâneos e a coreia de Sydenham. É a única alternativa sem artralgia, que é critério menor.",
   "incorretas": {
-   "A": "**Artralgia, endocardite e nódulos subcutâneos.** Artralgia é menor.",
-   "B": "**Artralgia, nódulos subcutâneos e coréia.** Artralgia é menor.",
-   "C": "**Artralgia, endocardite e coréia.** Artralgia é menor."
+   "A": "**Artralgia, endocardite e nódulos subcutâneos**: a artralgia é critério menor; a manifestação articular maior é a artrite.",
+   "B": "**Artralgia, nódulos subcutâneos e coreia**: novamente a artralgia invalida a alternativa como lista de critérios maiores.",
+   "C": "**Artralgia, endocardite e coreia**: duas manifestações maiores corretas, mas a artralgia é menor."
   },
   "referencias": [
-   "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. 6 ª ed., pg.415."
+   "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. 6 ª ed., pg.415.",
+   "Gewitz MH, Baltimore RS, Tani LY, et al. Revision of the Jones Criteria for the diagnosis of acute rheumatic fever in the era of Doppler echocardiography: a scientific statement from the American Heart Association. Circulation. 2015;131(20):1806-1818."
   ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "D",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "osteometabolicas-0086": {
