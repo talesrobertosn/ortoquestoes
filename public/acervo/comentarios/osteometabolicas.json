@@ -227,16 +227,19 @@
   "formato": "corrido"
  },
  "osteometabolicas-0019": {
-  "conceito": "**Menos osso e osso pior.** No renal crônico, o **hiperparatireoidismo secundário** retira preferencialmente **osso cortical**, e essa perda compromete o **colo do fêmur**. Soma-se um risco de queda aumentado, por hipotensão pós-diálise, neuropatia, fraqueza muscular, déficit visual e polifarmácia. O resultado é uma **incidência de fratura de quadril várias vezes maior** que na população geral, com mortalidade também maior depois dela.\n\n**Na conduta**, a densitometria continua prevendo fratura no renal crônico, mas o tratamento exige ajuste à função renal: os bisfosfonatos têm restrição conforme o clearance, e a doença óssea adinâmica precisa ser considerada.\n\n**Na prova:** renal crônico com osteoporose tem maior excesso de fratura no **colo do fêmur**.",
-  "correta": "**No colo do fêmur.** Somam-se a perda cortical pelo PTH alto e o risco de queda aumentado.",
+  "conceito": "**O osso do renal crônico.** A doença renal crônica altera o metabolismo mineral e ósseo de várias formas, um conjunto chamado **distúrbio mineral e ósseo da doença renal crônica** (DMO-DRC):\n- O rim deixa de excretar **fosfato**, que se acumula.\n- O rim deixa de produzir **calcitriol** (vitamina D ativa), e a absorção intestinal de cálcio cai.\n- O fosfato alto e o cálcio baixo estimulam o **FGF-23** e o **PTH**: surge o **hiperparatireoidismo secundário**.\n\n**O que o PTH faz com o osso.** O PTH elevado estimula a reabsorção óssea, sobretudo do **osso cortical** (reabsorção subperiosteal e endosteal), afinando e tornando poroso o córtex. Há também a doença óssea **adinâmica** (remodelação muito baixa) e a osteomalacia, conforme o tipo de distúrbio.\n\n**Por que o colo do fêmur.** O **colo do fêmur** depende muito da integridade **cortical** para resistir às cargas, e é o local que mais sofre com a perda cortical do hiperparatireoidismo. Somam-se:\n- **Maior risco de quedas**: hipotensão após diálise, neuropatia, fraqueza muscular (miopatia urêmica), déficit visual, polifarmácia.\n- **Idade** e comorbidades (diabetes).\n\nO resultado é uma incidência de **fratura de quadril várias vezes maior** que na população geral, com mortalidade elevada após a fratura.\n\n**Comparação.**\n\n| Situação | Osso mais atingido | Fratura típica |\n|---|---|---|\n| Osteoporose pós-menopausa | Trabecular | Vértebra, rádio distal |\n| **Doença renal crônica** (hiperparatireoidismo) | **Cortical** | **Colo do fêmur** |\n\n**Cuidados no tratamento.** Os bisfosfonatos têm uso limitado com filtração glomerular muito baixa, e o denosumabe pode causar hipocalcemia grave nesses pacientes; o manejo é feito em conjunto com o nefrologista.",
+  "correta": "**Correta: A (no colo do fêmur).** No renal crônico, o hiperparatireoidismo secundário reabsorve preferencialmente o **osso cortical**, que sustenta o colo do fêmur, e o risco de quedas é alto: a fratura do colo do fêmur é a de maior incidência.",
   "incorretas": {
-   "B": "**É trabecular.** A coluna também fratura, mas o PTH castiga mais o osso cortical.",
-   "C": "**Incidência menor.** O colo do úmero não é a fratura de maior excesso nesses pacientes.",
-   "D": "**Não é a maior.** O rádio distal também sofre, mas menos que o quadril."
+   "B": "A **coluna lombar**, rica em osso trabecular, é o local típico da osteoporose pós-menopausa, não da doença renal crônica.",
+   "C": "O **colo do úmero** pode fraturar, mas com incidência menor que o colo do fêmur nesses pacientes.",
+   "D": "A **extremidade distal do rádio** é uma fratura típica da osteoporose pós-menopausa em mulheres mais jovens, e não a mais associada à doença renal crônica."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição",
+   "Kidney Disease: Improving Global Outcomes (KDIGO) CKD-MBD Update Work Group. KDIGO 2017 Clinical Practice Guideline Update for the Diagnosis, Evaluation, Prevention, and Treatment of Chronic Kidney Disease-Mineral and Bone Disorder (CKD-MBD). Kidney Int Suppl. 2017;7(1):1-59."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "osteometabolicas-0020": {
   "conceito": "**O que o PTH faz.** No osso, retira cálcio; no rim, aumenta a reabsorção de cálcio, **elimina fosfato** ao inibir sua reabsorção tubular e ativa a vitamina D pela 1-alfa-hidroxilação, o que aumenta a absorção intestinal de cálcio. No hiperparatireoidismo primário, em geral por adenoma, o resultado é **cálcio alto e fosfato baixo**, com reabsorção subperiosteal nas falanges, crânio em sal e pimenta e **tumores marrons**.\n\n**Os três hiperparatireoidismos.** No **primário**, cálcio alto, fosfato baixo e PTH alto. No **secundário** (doença renal, falta de vitamina D), cálcio baixo ou normal e PTH alto, com fosfato **alto** quando a causa é renal. No **terciário**, a glândula fica autônoma após um secundário longo, com cálcio alto e PTH muito alto.\n\n**Na prova:** hiperparatireoidismo primário é **hipercalcemia com hipofosfatemia**.",

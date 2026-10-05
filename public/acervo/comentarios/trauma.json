@@ -2542,17 +2542,18 @@
   "conferido": false
  },
  "trauma-0224": {
+  "conceito": "**Como a AO numera a tíbia.** Na classificação AO/OTA, a **tíbia** é o osso **4**, e a **diáfise** é o segmento **2**: a diáfise da tíbia é **42**. Os tipos dizem a complexidade do traço:\n- **42A**: traço **simples** (dois fragmentos);\n- **42B**: traço em **cunha** (um fragmento intermediário, com contato entre os principais após a redução);\n- **42C**: traço **complexo** (segmentar ou multifragmentário, sem contato).\n\n**Os grupos do tipo A (versão clássica).**\n\n| Grupo | Traço |\n|---|---|\n| A1 | **Espiral** |\n| **A2** | **Oblíquo**, com inclinação de **30° ou mais** |\n| A3 | **Transverso**, com inclinação **menor que 30°** |\n\n**O subgrupo indica a fíbula (versão clássica).**\n\n| Subgrupo | Fíbula |\n|---|---|\n| **.1** | **Íntegra** |\n| .2 | Fraturada em **nível diferente** |\n| .3 | Fraturada no **mesmo nível** |\n\n**A fratura do enunciado.** Mediodiafisária, **oblíqua** com inclinação maior que 30° e **fíbula intacta**: **42-A2.1**.\n\n**Na versão de 2018 do compêndio AO/OTA**, os subgrupos da diáfise passaram a usar a localização (proximal, média, distal) e a fíbula entrou como modificador. A prova seguiu a versão clássica.\n\n**Por que a fíbula íntegra importa.** Com a fíbula intacta, a fratura da tíbia tende a angular em **varo** durante o tratamento conservador, porque a fíbula funciona como um tirante lateral. Também há relatos de maior risco de **retardo de consolidação**, pois a fíbula intacta pode impedir a compressão do foco.",
+  "correta": "**Correta: A (42A2.1).** Diáfise da tíbia (42), traço simples (A), oblíquo com 30° ou mais (A2) e **fíbula íntegra** (.1): 42-A2.1.",
   "incorretas": {
-   "B": "A1 é o traço espiral, e o .2 indica fíbula fraturada em outro nível.",
-   "C": "A2 está certo, mas o .2 indica fíbula fraturada em outro nível.",
-   "D": "A fíbula intacta está certa, mas A1 é o traço espiral."
+   "B": "**42-A1.2** seria fratura **espiral** com fíbula fraturada em nível diferente.",
+   "C": "**42-A2.2** é oblíqua, mas com a fíbula **fraturada** em nível diferente.",
+   "D": "**42-A1.1** é fratura **espiral** com fíbula íntegra, e não oblíqua."
   },
-  "conceito": "A **classificação AO** da **diáfise da tíbia** usa o número **42**. Na versão clássica:\n\n**42A**: traço **simples**:\n\n**A1**: **espiral**;\n\n**A2**: **oblíquo**, com inclinação de **30° ou mais**;\n\n**A3**: **transverso**, com inclinação menor que 30°;\n\n**42B**: em cunha; **42C**: complexo (segmentar ou multifragmentário).\n\n**O qualificador da fíbula** (o último número):\n\n**.1**: fíbula **intacta**;\n\n**.2**: fíbula fraturada em **outro nível**;\n\n**.3**: fíbula fraturada no **mesmo nível**.\n\n**O caso**: traço oblíquo maior que 30° (A2) com fíbula intacta (.1): **42A2.1**.\n\n**Por que a fíbula importa**: a fíbula intacta pode **segurar** a tíbia e favorecer o **varo** durante o tratamento conservador; uma fíbula fraturada no mesmo nível indica mais energia.\n\n**Na prova**: o traço oblíquo maior que 30° com fíbula intacta é **42A2.1**.",
-  "correta": "A2 é o traço oblíquo de 30° ou mais, e o .1 indica a fíbula intacta.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 62"
+   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 62",
+   "Müller ME, Nazarian S, Koch P, Schatzker J. The Comprehensive Classification of Fractures of Long Bones. Berlin: Springer-Verlag, 1990."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0225": {
