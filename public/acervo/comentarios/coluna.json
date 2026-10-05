@@ -3546,17 +3546,18 @@
   "conferido": false
  },
  "coluna-0310": {
-  "conceito": "### Quando pedir imagem da cervical sem dor\n- Critérios **NEXUS**: dispensa imagem se houver\n  - ausência de dor na linha média;\n  - ausência de déficit focal;\n  - estado de alerta normal;\n  - ausência de intoxicação;\n  - ausência de ==lesão dolorosa que distraia== (distracting injury).\n- Uma **fratura de fêmur** é o exemplo clássico de lesão que distrai: obriga a investigar a cervical mesmo sem dor.\n\n> **Na prova:** paciente sem dor cervical, mas com ==lesão que distrai== = imagem.",
-  "correta": "**Associação com fratura de fêmur.**",
+  "conceito": "**Quando pedir imagem da coluna cervical no trauma.** Todo politraumatizado é tratado como portador de lesão cervical até prova em contrário. Por outro lado, radiografar todos é caro e expõe a radiação. Regras de decisão clínica identificam quem pode ser **liberado só com o exame clínico**.\n\n**Critérios NEXUS (Hoffman e colaboradores).** O paciente dispensa imagem se tiver **todos** os cinco:\n\n| Critério | Por quê |\n|---|---|\n| Sem dor à palpação da linha média posterior | Fratura costuma doer no local |\n| Sem déficit neurológico focal | Déficit sugere lesão medular ou radicular |\n| Estado de alerta normal | Confusão impede avaliação confiável |\n| Sem intoxicação | Álcool e drogas mascaram a dor |\n| **Sem lesão dolorosa que distraia** | **Dor intensa em outro local mascara a dor cervical** |\n\n**A lesão que distrai.** Uma lesão muito dolorosa em outra região, como uma **fratura de fêmur**, de ossos longos, queimaduras extensas ou lesões viscerais, pode \"abafar\" a percepção da dor no pescoço. O paciente pode negar dor cervical mesmo com fratura. Por isso, a **ausência de dor** só é confiável **sem** lesão distratora.\n\n**A regra canadense** (Canadian C-spine rule) é alternativa, que considera fatores de alto risco (idade de 65 anos ou mais, mecanismo perigoso, parestesias) e testa a rotação ativa do pescoço.\n\n**Exame de imagem.** Em adultos com indicação, a **tomografia** é hoje o exame de escolha (mais sensível que a radiografia); ressonância para lesões ligamentares e medulares.\n\n> Paciente sem dor cervical, mas com lesão dolorosa que distrai (como fratura de fêmur): fazer imagem da cervical.",
+  "correta": "**A: associação com fratura de fêmur.** A fratura de fêmur é o exemplo clássico de lesão dolorosa que distrai: a dor intensa pode mascarar a dor cervical, e o critério NEXUS deixa de ser aplicável, exigindo exame de imagem.",
   "incorretas": {
-   "B": "**Óbito de outro ocupante** é critério de gravidade para triagem, não do NEXUS.",
-   "C": "**Não usar capacete** não é critério isolado.",
-   "D": "O **tempo até o PS** não é critério."
+   "B": "**O óbito de outra pessoa no acidente** indica alta energia e entra em critérios de triagem para centro de trauma, mas não está entre os critérios NEXUS para indicar imagem da cervical.",
+   "C": "**O não uso de capacete** aumenta o risco de traumatismo craniano, mas não é critério isolado do NEXUS para imagem cervical.",
+   "D": "**O tempo de chegada ao pronto-socorro** não faz parte dos critérios de decisão para imagem da coluna cervical."
   },
   "referencias": [
-   "Canale & Beaty: Campbell's Operative Orthopaedics, 11th Ed., p. 1761 (referência indicada na prova TARO 2013, questão 77)"
+   "Canale & Beaty: Campbell's Operative Orthopaedics, 11th Ed., p. 1761 (referência indicada na prova TARO 2013, questão 77)",
+   "Hoffman JR, Mower WR, Wolfson AB, Todd KH, Zucker MI. Validity of a set of clinical criteria to rule out injury to the cervical spine in patients with blunt trauma. N Engl J Med. 2000;343(2):94-99."
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "coluna-0311": {
