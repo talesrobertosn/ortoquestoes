@@ -513,16 +513,19 @@
   "conferido": false
  },
  "tumores-0040": {
-  "conceito": "**Transformação sarcomatosa no Paget.** Considerando todos os pacientes com doença de Paget, a transformação ocorre em **menos de 1%**. O risco acompanha a extensão e o tempo de doença, e na forma **poliostótica** extensa e de longa evolução chega a **5 a 10%**. O tumor mais comum é o osteossarcoma, em 70 a 80% dos casos, seguido do fibrossarcoma e do condrossarcoma, com sobrevida de 5 a 10% em 5 anos. Mudança no padrão da dor ou nova elevação da fosfatase alcalina obrigam a investigar.\n\n**A doença de Paget** é uma remodelação desorganizada, com osso em mosaico, expandido e frágil, em caucasianos acima de 55 anos, com fosfatase alcalina muito elevada e cálcio e fósforo normais; o tratamento é o bisfosfonato.\n\n**Na prova:** no Paget poliostótico, a degeneração sarcomatosa é de **5 a 10%**.",
-  "correta": "**Entre 5% e 10%.** O risco acompanha a extensão e o tempo de doença; considerando todos os pacientes, fica abaixo de 1%.",
+  "conceito": "**A doença de Paget óssea.** É um distúrbio do **remodelamento ósseo** em que os **osteoclastos** ficam anormalmente grandes e numerosos (com muitos núcleos) e reabsorvem osso de forma desordenada. Os osteoblastos respondem formando osso novo em excesso, mas **desorganizado** (osso em mosaico). O resultado é um osso **aumentado de volume**, mais **vascularizado** e, paradoxalmente, mais **frágil** e deformado.\n\n**Quem tem.** Adultos acima de **50 anos**, mais comum em pessoas de origem **europeia** (Reino Unido). Há componente genético (gene **SQSTM1**) e talvez ambiental (vírus).\n\n**As fases.**\n1. **Lítica** (osteoclástica): frente de reabsorção em \"chama de vela\" ou \"folha de grama\" nos ossos longos; osteoporose circunscrita no crânio.\n2. **Mista**.\n3. **Esclerótica** (osteoblástica): osso espesso, com trabéculas grosseiras e cortical engrossada.\n\n**As formas.**\n- **Monostótica**: um só osso.\n- **Poliostótica**: vários ossos (pelve, coluna, crânio, fêmur, tíbia são os mais acometidos).\n\n**O quadro clínico.** Muitos são **assintomáticos**, com **fosfatase alcalina elevada** num exame de rotina. Outros têm dor óssea, **deformidades** (tíbia em sabre, fêmur arqueado, crânio aumentado), fraturas (fraturas em \"giz\", transversas), **artrose** das articulações vizinhas, compressões nervosas (surdez, estenose de canal) e insuficiência cardíaca de alto débito nas formas extensas.\n\n**A degeneração sarcomatosa.** É a complicação **mais temida**.\n- No conjunto dos pacientes com Paget, ocorre em **menos de 1%**.\n- Nas formas **poliostóticas extensas**, o risco é **maior**, estimado entre cerca de **5 e 10%**.\n- O tumor mais comum é o **osteossarcoma**; também ocorrem fibrossarcoma e condrossarcoma.\n- O sinal de alerta é a **dor nova e persistente**, o **aumento de volume** ou uma lesão lítica destrutiva num osso pagético.\n- O prognóstico é **muito ruim**, pior que o do osteossarcoma primário.\n\nO **tumor de células gigantes** também pode surgir no osso pagético, sobretudo no crânio e na face.\n\n**O tratamento.** Os **bisfosfonatos** (sobretudo o **ácido zoledrônico**, dose única) controlam a atividade da doença, aliviam a dor e normalizam a fosfatase alcalina. A cirurgia trata fraturas, deformidades (osteotomias) e artrose (artroplastia, com cuidado com o sangramento).",
+  "correta": "**Correta: C (entre 5% e 10%).** Na doença de Paget, a degeneração sarcomatosa ocorre em menos de 1% do total de pacientes, mas, nas formas **poliostóticas** extensas, o risco é maior, estimado entre cerca de **5 e 10%**. O osteossarcoma é o tumor mais comum.",
   "incorretas": {
-   "A": "**Vale para todos os Paget.** Menos de 1% é a taxa geral, mas a questão recorta a forma poliostótica.",
-   "B": "**Subestima.** Na doença extensa, o risco passa dessa faixa.",
-   "D": "**Superestima.** Mesmo nas formas graves, o risco não passa de 10%."
+   "A": "**Menos de 1%** é a frequência no **conjunto** dos pacientes com Paget. Nas formas poliostóticas, o risco é maior.",
+   "B": "**Entre 1 e 5%** subestima o risco descrito para as formas poliostóticas extensas.",
+   "D": "**Mais de 10%** superestima o risco de degeneração sarcomatosa, mesmo nas formas poliostóticas."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
+   "Campanacci M. Bone and Soft Tissue Tumors. 2ª edição. Springer; 1999."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "tumores-0041": {
   "conceito": "**Um endereço que fecha o diagnóstico.** O fibroma não ossificante é a lesão óssea benigna mais frequente da infância, presente em até 30% das crianças e quase sempre achado incidental. A imagem é praticamente **patognomônica**: lesão lítica **excêntrica**, encostada na **cortical**, na **metáfise** de osso longo (fêmur distal, tíbia proximal e distal), com bordas **escleróticas** de contorno festonado, sem reação periosteal e sem massa de partes moles. Com o crescimento, a lesão parece **migrar para a diáfise**, porque o osso cresce a partir da fise e a deixa para trás, e depois **ossifica** e desaparece espontaneamente até o fim da adolescência.\n\n**A regra é observar.** Curetagem com enxerto só entra quando há risco de fratura patológica, com lesão ocupando **mais de metade do diâmetro** do osso ou com **mais de 33 mm** de comprimento.\n\n**Na prova:** fibroma não ossificante é **excêntrico e metafisário**.",

@@ -1914,14 +1914,18 @@
   "conferido": false
  },
  "trauma-0160": {
+  "conceito": "**A síndrome compartimental aguda.** É o aumento da **pressão dentro de um compartimento** osteofascial fechado até um nível que **impede a perfusão** dos tecidos. As causas comuns são fraturas (sobretudo da **tíbia** e do antebraço), esmagamentos, reperfusão após isquemia, queimaduras e gessos apertados.\n\n**O mecanismo.** A pressão no compartimento sobe. Quando ela se aproxima da **pressão de perfusão** (a diferença entre a pressão arterial e a pressão do compartimento), as **vênulas colapsam**, o sangue não sai, a pressão sobe mais, e os capilares param de perfundir. O tecido entra em **isquemia**, mesmo com os **pulsos distais presentes** (a pressão arterial é muito maior que a do compartimento).\n\n**Quanto tempo cada tecido suporta (Matsen).**\n\n| Tecido | Alteração da função | Lesão irreversível |\n|---|---|---|\n| **Nervo** | A partir de **30 minutos** de isquemia | Após **12 a 24 horas** |\n| **Músculo** | Após **2 a 4 horas** | A partir de **4 a 8 horas** (necrose) |\n\n**O que isso explica na clínica.**\n- O **nervo** é o primeiro a mostrar alteração: a **parestesia** e a hipoestesia no território do nervo do compartimento são sinais **precoces**. Na perna, o primeiro sinal costuma ser a alteração sensitiva no **primeiro espaço interdigital** (nervo fibular profundo, compartimento anterior).\n- O **músculo** sofre necrose irreversível em poucas horas, e por isso a **fasciotomia** é uma **urgência**: idealmente, dentro de **6 horas**.\n\n**O diagnóstico.**\n- **Dor desproporcional** à lesão, que não melhora com analgesia: o sinal mais importante.\n- **Dor ao estiramento passivo** dos músculos do compartimento.\n- Compartimento **tenso** à palpação.\n- Parestesia.\n- A **paralisia** e a **ausência de pulso** são sinais **tardios**: esperar por eles é perder o membro.\n- Medida da pressão: **pressão diferencial** (pressão diastólica menos a pressão do compartimento) **menor que 30 mmHg** indica fasciotomia. É especialmente útil no paciente inconsciente ou sedado.\n\n**O tratamento.** **Fasciotomia** de todos os compartimentos envolvidos. Na perna, dos **quatro** compartimentos (anterior, lateral, posterior superficial e profundo), por duas incisões. As feridas ficam abertas e são fechadas depois, ou cobertas com enxerto.",
+  "correta": "**Correta: B (30 minutos).** Segundo Matsen, a função do **nervo** se altera a partir de cerca de **30 minutos** de isquemia, e a lesão nervosa irreversível ocorre após 12 a 24 horas. Por isso, a parestesia é um sinal relativamente precoce da síndrome compartimental.",
   "incorretas": {
-   "A": "10 minutos é cedo demais para a alteração da função nervosa.",
-   "C": "Aos 60 minutos, a função do nervo já está alterada há algum tempo.",
-   "D": "90 minutos é tardio para o início da alteração."
+   "A": "**10 minutos** é pouco tempo: a alteração da função nervosa descrita por Matsen começa por volta dos 30 minutos.",
+   "C": "**60 minutos** é mais que o tempo descrito para o início da alteração da função nervosa (cerca de 30 minutos).",
+   "D": "**90 minutos** superestima. Nesse tempo, o nervo já está disfuncional; a necrose muscular começa a partir de 4 horas."
   },
-  "conceito": "**Matsen** estudou quanto tempo cada tecido aguenta sem sangue, o que explica a pressa da **síndrome compartimental**:\n\n**nervo**:\n\n**alteração da função** a partir de **30 minutos** de isquemia;\n\n**lesão irreversível** após 12 a 24 horas;\n\n**músculo**:\n\n**alteração da função** após 2 a 4 horas;\n\n**lesão irreversível** (necrose) a partir de 4 a 12 horas.\n\n**A implicação clínica**: a **parestesia** aparece cedo, porque o nervo sofre primeiro. Mas é a **necrose muscular** que define a urgência: a fasciotomia precisa ser feita idealmente nas primeiras **6 horas**.\n\n**A fasciotomia tardia**: com o músculo já morto (mais de 8 a 12 horas), abrir o compartimento expõe tecido necrótico, com risco de **infecção** e de **insuficiência renal** por mioglobinúria. Em alguns casos, é melhor não abrir.\n\n**Na prova**: segundo Matsen, o nervo altera a função a partir de **30 minutos** de isquemia.",
-  "correta": "O nervo é o primeiro a sofrer: sua função já se altera após 30 minutos de isquemia.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)",
+   "Matsen FA. Compartmental syndrome: an unified concept. Clin Orthop Relat Res. 1975;(113):8-14."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0161": {
@@ -2477,14 +2481,18 @@
   "conferido": false
  },
  "trauma-0212": {
+  "conceito": "**A patela e o aparelho extensor.** A patela é o maior **sesamoide** do corpo, dentro do tendão do quadríceps. Ela funciona como uma **polia**: afasta o tendão do eixo do joelho e **aumenta o braço de alavanca** do quadríceps, aumentando a força de extensão em até cerca de 50%. Sua face articular, com a cartilagem mais espessa do corpo, suporta forças de compressão muito altas.\n\n**O mecanismo da fratura.**\n- **Trauma direto** (queda sobre o joelho, painel do carro): fraturas **cominutivas** (estreladas), muitas vezes com o retináculo preservado.\n- **Trauma indireto** (contração do quadríceps com o joelho fletido): fraturas **transversas**, com ruptura dos retináculos e perda da extensão.\n\n**O exame-chave: a extensão ativa.** Pede-se ao paciente para **elevar a perna estendida** ou manter o joelho estendido contra a gravidade. Se não consegue, o **aparelho extensor** (incluindo os retináculos medial e lateral) está **rompido**.\n\n**As indicações cirúrgicas.**\n\n| Indicação | Limite |\n|---|---|\n| **Perda da extensão ativa** (aparelho extensor rompido) | Qualquer desvio |\n| **Desvio** entre os fragmentos (diástase) | **Maior que 3 mm** |\n| **Degrau articular** (incongruência) | **Maior que 2 mm** |\n| **Fragmentos osteocondrais** soltos na articulação | Presentes |\n| Fratura **exposta** | Presente |\n\n**O tratamento conservador.** Fraturas **sem desvio** ou com desvio dentro dos limites e com o **aparelho extensor íntegro** (o paciente eleva a perna estendida) são tratadas com **imobilização em extensão** (órtese ou gesso cilíndrico) por cerca de 4 a 6 semanas, com carga permitida.\n\n**O tratamento cirúrgico.**\n- **Banda de tensão** com fios de Kirschner ou parafusos canulados: transforma a força de tração do quadríceps em **compressão** na face articular durante a flexão.\n- Placas de baixo perfil nas fraturas cominutivas.\n- **Patelectomia parcial** (com reinserção do tendão) nos fragmentos do polo inferior cominutivos e irreconstruíveis.\n- A **patelectomia total** é a última opção: reduz muito a força do quadríceps.\n- Sempre **reparar os retináculos**.\n\n**As incidências radiográficas da patela.**\n\n| Incidência | O que mostra melhor |\n|---|---|\n| **Perfil** | Fraturas **transversas**, diástase entre os fragmentos, altura da patela, degrau articular |\n| **AP** | Visão limitada, porque a patela se sobrepõe ao fêmur; ajuda nas cominutivas |\n| **Axial** (Merchant, sunrise) | Fraturas **verticais** e **marginais** (osteocondrais), congruência femoropatelar |\n\n**Por que a axial.** As fraturas **verticais** e as **marginais** correm no sentido de cima para baixo e ficam **escondidas** no perfil e no AP, sobrepostas ao fêmur. Na incidência **axial** (Merchant, com o joelho fletido a cerca de 45° e o feixe paralelo à superfície articular), a patela é vista de cima, e esses traços aparecem bem.\n\n**O diagnóstico diferencial: a patela bipartida.** É uma variante normal (um centro de ossificação acessório que não se fundiu), geralmente no **polo superolateral**, com bordas **lisas e arredondadas**, muitas vezes **bilateral**. A fratura tem bordas agudas e dor localizada.",
+  "correta": "**Correta: D (axial de Merchant).** As fraturas verticais e marginais da patela correm de cima para baixo e ficam escondidas no perfil e no AP. A incidência **axial de Merchant**, com a patela vista de cima, é a que melhor as identifica.",
   "incorretas": {
-   "A": "O perfil é a melhor incidência para a fratura transversa.",
-   "B": "A oblíqua é menos útil para esses traços.",
-   "C": "No AP, a patela fica sobreposta ao fêmur."
+   "A": "O **perfil** mostra bem as fraturas **transversas** e a diástase, mas não os traços verticais e marginais.",
+   "B": "A incidência **oblíqua** pode ajudar, mas não é a melhor para os traços verticais e marginais, que aparecem claramente na axial.",
+   "C": "No **AP**, a patela fica sobreposta ao fêmur, e os traços verticais e marginais são difíceis de ver."
   },
-  "conceito": "Cada fratura da **patela** aparece melhor numa incidência:\n\n**axial de Merchant** (joelho fletido a cerca de 45°, raio de cima para baixo): mostra a patela de **cima**, com as facetas e o sulco do fêmur; é a melhor para os traços **verticais** (longitudinais), as fraturas **marginais** e as lesões **osteocondrais**;\n\n**perfil**: mostra a fratura **transversa**, a **diástase** e o degrau articular, além da altura da patela;\n\n**AP**: a patela fica sobreposta ao fêmur e mostra mal os traços; serve para ver a **patela bipartida** (canto superolateral, bordas lisas);\n\n**TC**: para a cominutiva e o planejamento.\n\n**Por que a axial**: o traço vertical corre **paralelo** ao eixo longo da patela. No perfil e no AP ele fica escondido; visto de cima, aparece como uma linha atravessando a patela.\n\n**Na prova**: os traços marginais e verticais são mais bem vistos na **axial de Merchant**.",
-  "correta": "Na axial de Merchant, a patela é vista de cima, e o traço vertical e as fraturas marginais aparecem atravessando o osso.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)",
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0213": {
