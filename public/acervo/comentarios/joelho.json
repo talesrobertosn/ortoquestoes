@@ -1005,15 +1005,19 @@
   "conferido": false
  },
  "joelho-0087": {
-  "conceito": "### Menisco discoide\n| Aspecto | Dado |\n|---|---|\n| menisco | ==lateral== (quase sempre) |\n| prevalência | 0,4 a 17% (mais em asiáticos) |\n| bilateral | até 20% |\n| clínica | ==estalido==, bloqueio, ==lesões sem trauma== |\n\n### Watanabe\n| Tipo | Descrição |\n|---|---|\n| I completo | cobre todo o planalto, fixações normais |\n| II incompleto | cobre parte |\n| III ==Wrisberg== | ==sem fixação tibial posterior (coronário)==, só o ligamento de Wrisberg: ==hipermóvel== |\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| assintomático | observar |\n| sintomático estável | ==saucerização== (meniscectomia parcial) |\n| Wrisberg / instável | saucerização + ==sutura periférica==; clássico: meniscectomia total |\n\n> **Na prova:** tipo Wrisberg = sem fixação tibial posterior; clássico: ==meniscectomia total== (veja o alerta).",
-  "correta": "**Meniscectomia total no Wrisberg.**\n- Associação clássica de prova.\n- Hoje prefere-se saucerizar e estabilizar (veja o alerta).",
+  "conceito": "**O menisco discoide.** É uma variação anatômica em que o menisco tem forma de **disco**, mais largo e espesso que o normal. Acomete quase sempre o menisco **lateral**; o medial discoide é raríssimo. A prevalência varia de menos de 1% a mais de 10% conforme a população (maior em **asiáticos**), e é **bilateral** em até cerca de 20% ou mais.\n\n**Por que lesiona sem trauma.** O tecido é mais **espesso**, tem colágeno **desorganizado** e menos vasos. Ele sofre **rupturas degenerativas** e horizontais com esforços mínimos, por isso as **lesões atraumáticas são comuns**. Na criança, a apresentação clássica é o joelho que **estala** (snapping knee), com ressalto na extensão.\n\n**A classificação de Watanabe.**\n\n| Tipo | Descrição |\n|---|---|\n| I, completo | Cobre todo o platô, fixações periféricas normais |\n| II, incompleto | Cobre parte do platô, fixações normais |\n| III, **Wrisberg** | **Sem a fixação meniscotibial posterior** (ligamento coronário); preso **apenas pelo ligamento de Wrisberg**, por isso hipermóvel |\n\nNo tipo Wrisberg, o ligamento de Wrisberg **está presente**: é a única fixação posterior do menisco, e é por isso que o tipo leva esse nome.\n\n**O tratamento do tipo Wrisberg.**\n- **Classicamente**, por ser instável e sem fixação tibial posterior, o tipo Wrisberg era tratado com **meniscectomia total**. É a associação cobrada pela prova (gabarito B).\n- **Hoje**, prefere-se a **saucerização** (deixando uma borda de 6 a 8 mm) com **sutura periférica** para estabilizar o remanescente, porque a meniscectomia total leva à **artrose lateral precoce**. A meniscectomia total fica reservada para quando a preservação não é possível.\n\n**Detalhe de prevalência.** A alternativa C erra duas vezes: a incidência é maior que 0,3%, e o menisco mais acometido é o **lateral**.",
+  "correta": "**Correta: B (pelo gabarito).** Classicamente, o tipo **Wrisberg**, instável por não ter fixação meniscotibial posterior, era tratado com **meniscectomia total**, associação cobrada pela prova. Hoje se prefere a saucerização com sutura periférica, como explica o alerta.",
   "incorretas": {
-   "A": "**Frequentes, sim.**\n- Mas o gabarito é o B.",
-   "C": "**Menisco errado.**\n- É o lateral.",
-   "D": "**Invertida.**\n- O Wrisberg tem o ligamento de Wrisberg; falta o coronário."
+   "A": "As **lesões atraumáticas** de fato são comuns no menisco discoide, pelo tecido espesso e desorganizado; a afirmação é compatível com a literatura, o que torna a questão discutível. O gabarito oficial, porém, indicou B.",
+   "C": "A prevalência é maior que 0,3% (chega a mais de 10% em algumas populações), e o menisco acometido é o **lateral**, não o medial.",
+   "D": "No tipo Wrisberg, o ligamento de Wrisberg **está presente** e é a única fixação posterior; o que falta é o ligamento **coronário** (meniscotibial)."
   },
-  "alerta": "A literatura mais recente tende a preferir a saucerização parcial com estabilização periférica, mesmo no tipo Wrisberg, sempre que tecnicamente possível, reservando a meniscectomia total para os casos em que a preservação não é viável, mas a associação clássica \"tipo Wrisberg = meniscectomia total\" continua sendo a mais cobrada nas classificações de prova.",
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Watanabe M, Takeda S, Ikeuchi H. Atlas of Arthroscopy, 3ª edição. Tokyo: Igaku-Shoin, 1979.",
+   "Kocher MS, Logan CA, Kramer DE. Discoid lateral meniscus in children: diagnosis, management, and outcomes. J Am Acad Orthop Surg. 2017;25(11):736-743."
+  ],
+  "alerta": "A literatura mais recente tende a preferir a saucerização parcial com estabilização periférica, mesmo no tipo Wrisberg, sempre que tecnicamente possível, reservando a meniscectomia total para os casos em que a preservação não é viável, mas a associação clássica \"tipo Wrisberg = meniscectomia total\" continua sendo a mais cobrada nas classificações de prova. Além disso, a alternativa A (lesões atraumáticas são comuns) também é compatível com a literatura, o que torna a questão discutível; mantivemos o gabarito oficial.",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "joelho-0088": {
@@ -1106,14 +1110,18 @@
   "conferido": false
  },
  "joelho-0095": {
-  "conceito": "### A regra de Coventry\nNa osteotomia tibial alta para artrose medial, Coventry recomendava **sobrecorrigir** para um **valgo anatômico** (ângulo tibiofemoral anatômico) de ==8° a 10°==. Isso garante que a carga saia do compartimento medial.\n- **Hipocorreção:** principal causa de **recidiva** da dor e do varo.\n- **Hipercorreção excessiva:** sobrecarrega o compartimento lateral e causa deformidade estética.\n\n### A linguagem atual\n- Hoje o planejamento usa o **eixo mecânico** na panorâmica com carga.\n- O alvo clássico é o **ponto de Fujisawa**: a linha de carga passando a ~**62%** da largura do platô, medida da borda medial. Isso corresponde a ~3° a 5° de **valgo mecânico**.\n- Em artrose leve, alguns miram um pouco menos (~55%), para evitar hipercorreção.\n\n> **Na prova:** Coventry = ==8 a 10° de valgo anatômico==; Fujisawa = 62% do platô.",
-  "correta": "**8 a 10°.**\n- Valgo anatômico mínimo recomendado por Coventry.",
+  "conceito": "**A lógica da osteotomia tibial alta.** Na artrose do compartimento **medial** com joelho **varo**, o eixo mecânico do membro passa pelo compartimento medial e concentra a carga sobre a cartilagem desgastada. A osteotomia tibial alta corrige o varo e **transfere a carga para o compartimento lateral**, preservado, aliviando a dor e retardando a progressão da artrose.\n\n**A regra de Coventry.** Coventry, que popularizou a osteotomia em cunha de fechamento lateral, recomendava **sobrecorrigir** para um **valgo anatômico** (ângulo tibiofemoral anatômico) de **8 a 10°**. A ideia é que, com o tempo, a correção se perde um pouco, e uma correção apenas até o neutro deixa o compartimento medial ainda sobrecarregado.\n\n**Hoje se planeja pelo eixo mecânico.** A forma moderna de planejar usa a **radiografia panorâmica com carga** e o ponto por onde o eixo mecânico (do centro da cabeça femoral ao centro do tornozelo) deve cruzar o platô:\n- **ponto de Fujisawa**: cerca de **62%** da largura do platô, medida de medial para lateral, no declive lateral da eminência tibial;\n- isso corresponde a cerca de **3 a 5° de valgo mecânico**, equivalente aos 8 a 10° de valgo anatômico de Coventry.\n\n**Consequências do erro de correção.**\n\n| Correção | Consequência |\n|---|---|\n| **Hipocorreção** | Principal causa de **recidiva** da dor e do varo |\n| Correção adequada | Alívio da dor e sobrevida de 10 anos ou mais em boa parte dos casos |\n| **Hipercorreção** excessiva | Sobrecarga do compartimento lateral e deformidade em valgo estética |\n\n**O candidato ideal.** Paciente ativo, geralmente abaixo de 60 a 65 anos, artrose medial isolada, compartimento lateral e patelofemoral preservados, arco de movimento bom (flexão acima de 90°, flexo menor que 15°) e varo de origem tibial. Hoje se prefere a técnica de **cunha de abertura medial**, que permite ajuste fino e não exige osteotomia da fíbula.",
+  "correta": "**Correta: D (8 a 10°).** Segundo Coventry, a osteotomia tibial alta na gonartrose em varo deve corrigir o eixo anatômico para um valgo de **8 a 10°**, sobrecorrigindo para transferir a carga ao compartimento lateral e evitar a recidiva.",
   "incorretas": {
-   "A": "**4 a 5°.**\n- É o valgo anatômico **fisiológico** (5 a 7°); não descarrega o medial.",
-   "B": "**5 a 7°.**\n- Ainda **hipocorreção**, com risco de recidiva.",
-   "C": "**6 a 7°.**\n- Abaixo do mínimo de Coventry."
+   "A": "**4 a 5°** de valgo anatômico corresponde aproximadamente ao alinhamento fisiológico, o que é uma **hipocorreção** com alto risco de recidiva.",
+   "B": "**5 a 7°** ainda fica abaixo da sobrecorreção recomendada por Coventry.",
+   "C": "**6 a 7°** também é insuficiente segundo Coventry, que buscava pelo menos 8°."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Coventry MB. Upper tibial osteotomy for osteoarthritis. J Bone Joint Surg Am. 1985;67(7):1136-1140.",
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "joelho-0096": {

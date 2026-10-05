@@ -1668,14 +1668,17 @@
   "conferido": false
  },
  "trauma-0143": {
+  "conceito": "**A pergunta que a classificação responde.** Depois de uma fratura explosão toracolombar, o corpo vertebral ainda consegue **sustentar carga**? Se não, uma fixação apenas **posterior** (com parafusos pediculares) fica sobrecarregada e tende a **falhar** (quebra ou soltura dos parafusos, perda da correção da cifose). **McCormack, Karaikovic e Gaines** (1994) criaram a **classificação de distribuição de carga** (load sharing) para prever isso.\n\n**Os três itens, de 1 a 3 pontos cada.**\n\n| Item | 1 ponto | 3 pontos |\n|---|---|---|\n| **Cominução** do corpo (na TC sagital) | Pequena (menos de 30%) | Grande (mais de 60%) |\n| **Aposição** dos fragmentos (na TC axial) | Pequena separação | Fragmentos muito afastados (mais de 2 mm em mais de 50% do corte) |\n| **Correção da cifose** necessária | 3° ou menos | 10° ou mais |\n\nO valor 2 corresponde ao intermediário de cada item. A soma vai de **3 a 9**.\n\n**A decisão.**\n\n| Soma | Conduta |\n|---|---|\n| **6 ou menos** | **Fixação posterior** curta é suficiente |\n| **Mais de 6 (7 a 9)** | **Reconstrução da coluna anterior** (via anterior, corpectomia e enxerto ou cage) ou fixação posterior longa |\n\n**Por que a cominuição pesa.** Um corpo muito cominuído, com fragmentos separados, não transmite carga entre as vértebras vizinhas. Toda a carga axial passa para os implantes posteriores, que trabalham como uma viga em balanço e falham por fadiga.\n\n**Hoje.** Com parafusos no nível fraturado, fixações mais longas e técnicas de cimentação, muitos casos com pontuação alta também são resolvidos por via posterior, mas o conceito da **coluna anterior** como suporte de carga continua central.",
+  "correta": "**Correta: D (mais de 6).** Na classificação de distribuição de carga de McCormack, uma soma **acima de 6 pontos** indica que o corpo vertebral não suporta carga e que a coluna anterior deve ser reconstruída (via anterior).",
   "incorretas": {
-   "A": "Com 4 pontos, a fixação posterior curta é suficiente.",
-   "B": "Mais de 4 é um limite baixo demais.",
-   "C": "Com 6 pontos, a fixação posterior ainda é suficiente."
+   "A": "**4 pontos** indicam corpo vertebral ainda capaz de suportar carga; a fixação posterior curta basta.",
+   "B": "**Mais de 4** inclui somas de 5 e 6, que ainda são tratadas com fixação posterior.",
+   "C": "**6 pontos** é o limite superior da faixa em que a fixação posterior isolada é suficiente."
   },
-  "conceito": "A **classificação de distribuição de carga** (load sharing, de **McCormack**) avalia se o corpo vertebral fraturado ainda consegue **sustentar carga**. Ela soma três itens, cada um de **1 a 3 pontos**:\n\n**cominução do corpo**: pouca (1), moderada (2) ou grande (3);\n\n**aposição dos fragmentos**: pequena separação (1), separação moderada (2) ou fragmentos muito afastados (3);\n\n**correção da cifose** necessária: até 3° (1), 4 a 9° (2), 10° ou mais (3).\n\n**Como usar**:\n\n**soma até 6**: o corpo divide a carga, e a **fixação posterior curta** basta;\n\n**soma maior que 6** (7 a 9): o corpo **não sustenta** carga; a fixação posterior curta tende a **falhar** (parafusos quebram, a cifose volta). Indica-se **reconstruir a coluna anterior** (via anterior) ou estender a fixação posterior.\n\n**Na prova**: a via anterior é indicada quando a soma é **maior que 6**.",
-  "correta": "Acima de 6 pontos, o corpo cominuto não sustenta carga, e a coluna anterior precisa ser reconstruída.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "McCormack T, Karaikovic E, Gaines RW. The load sharing classification of spine fractures. Spine. 1994;19(15):1741-1744."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0144": {
@@ -2542,17 +2545,18 @@
   "conferido": false
  },
  "trauma-0224": {
+  "conceito": "**Como a AO numera a tíbia.** Na classificação AO/OTA, a **tíbia** é o osso **4**, e a **diáfise** é o segmento **2**: a diáfise da tíbia é **42**. Os tipos dizem a complexidade do traço:\n- **42A**: traço **simples** (dois fragmentos);\n- **42B**: traço em **cunha** (um fragmento intermediário, com contato entre os principais após a redução);\n- **42C**: traço **complexo** (segmentar ou multifragmentário, sem contato).\n\n**Os grupos do tipo A (versão clássica).**\n\n| Grupo | Traço |\n|---|---|\n| A1 | **Espiral** |\n| **A2** | **Oblíquo**, com inclinação de **30° ou mais** |\n| A3 | **Transverso**, com inclinação **menor que 30°** |\n\n**O subgrupo indica a fíbula (versão clássica).**\n\n| Subgrupo | Fíbula |\n|---|---|\n| **.1** | **Íntegra** |\n| .2 | Fraturada em **nível diferente** |\n| .3 | Fraturada no **mesmo nível** |\n\n**A fratura do enunciado.** Mediodiafisária, **oblíqua** com inclinação maior que 30° e **fíbula intacta**: **42-A2.1**.\n\n**Na versão de 2018 do compêndio AO/OTA**, os subgrupos da diáfise passaram a usar a localização (proximal, média, distal) e a fíbula entrou como modificador. A prova seguiu a versão clássica.\n\n**Por que a fíbula íntegra importa.** Com a fíbula intacta, a fratura da tíbia tende a angular em **varo** durante o tratamento conservador, porque a fíbula funciona como um tirante lateral. Também há relatos de maior risco de **retardo de consolidação**, pois a fíbula intacta pode impedir a compressão do foco.",
+  "correta": "**Correta: A (42A2.1).** Diáfise da tíbia (42), traço simples (A), oblíquo com 30° ou mais (A2) e **fíbula íntegra** (.1): 42-A2.1.",
   "incorretas": {
-   "B": "A1 é o traço espiral, e o .2 indica fíbula fraturada em outro nível.",
-   "C": "A2 está certo, mas o .2 indica fíbula fraturada em outro nível.",
-   "D": "A fíbula intacta está certa, mas A1 é o traço espiral."
+   "B": "**42-A1.2** seria fratura **espiral** com fíbula fraturada em nível diferente.",
+   "C": "**42-A2.2** é oblíqua, mas com a fíbula **fraturada** em nível diferente.",
+   "D": "**42-A1.1** é fratura **espiral** com fíbula íntegra, e não oblíqua."
   },
-  "conceito": "A **classificação AO** da **diáfise da tíbia** usa o número **42**. Na versão clássica:\n\n**42A**: traço **simples**:\n\n**A1**: **espiral**;\n\n**A2**: **oblíquo**, com inclinação de **30° ou mais**;\n\n**A3**: **transverso**, com inclinação menor que 30°;\n\n**42B**: em cunha; **42C**: complexo (segmentar ou multifragmentário).\n\n**O qualificador da fíbula** (o último número):\n\n**.1**: fíbula **intacta**;\n\n**.2**: fíbula fraturada em **outro nível**;\n\n**.3**: fíbula fraturada no **mesmo nível**.\n\n**O caso**: traço oblíquo maior que 30° (A2) com fíbula intacta (.1): **42A2.1**.\n\n**Por que a fíbula importa**: a fíbula intacta pode **segurar** a tíbia e favorecer o **varo** durante o tratamento conservador; uma fíbula fraturada no mesmo nível indica mais energia.\n\n**Na prova**: o traço oblíquo maior que 30° com fíbula intacta é **42A2.1**.",
-  "correta": "A2 é o traço oblíquo de 30° ou mais, e o .1 indica a fíbula intacta.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 62"
+   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 62",
+   "Müller ME, Nazarian S, Koch P, Schatzker J. The Comprehensive Classification of Fractures of Long Bones. Berlin: Springer-Verlag, 1990."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0225": {
@@ -9763,17 +9767,18 @@
   "conferido": false
  },
  "trauma-1094": {
+  "conceito": "**A lesão de Monteggia.** É a fratura da **ulna** associada à **luxação da cabeça do rádio**. Giovanni Monteggia descreveu-a em 1814, e **Bado** classificou-a pela direção da luxação da cabeça do rádio, que acompanha o ápice da angulação da ulna.\n\n| Tipo | Cabeça do rádio | Perfil típico |\n|---|---|---|\n| I | **Anterior** | O mais comum **no conjunto** e na **criança** |\n| **II** | **Posterior** ou posterolateral | O mais comum no **adulto** |\n| III | **Lateral** | Comum na criança (fratura da metáfise proximal da ulna) |\n| IV | Anterior, com fratura do rádio e da ulna | Raro |\n\n**O tipo II no adulto.** Ocorre geralmente em pessoas mais velhas, às vezes com osso osteoporótico, por queda sobre o braço com o cotovelo em semiflexão, como uma variante da **luxação posterior do cotovelo**. A ulna fratura com **ápice posterior**, frequentemente na região do coronoide ou da metáfise proximal, e a cabeça do rádio vai para trás. Associa-se com frequência a **fratura da cabeça do rádio** e do **coronoide**, o que o aproxima da tríade terrível do cotovelo.\n\n**A classificação de Jupiter** subdivide o tipo II pela localização da fratura da ulna (IIA na olecraniana com coronoide, IIB na metadiáfise, IIC na diáfise, IID cominutiva).\n\n**Tratamento no adulto.** Sempre **cirúrgico**: redução anatômica e **fixação estável da ulna** com placa (dorsal, em geral). Restaurado o comprimento e o alinhamento da ulna, a cabeça do rádio geralmente reduz. Fraturas associadas da cabeça do rádio e do coronoide precisam ser tratadas, e a estabilidade do cotovelo é testada no final.\n\n**Na criança.** O tipo I predomina, e a maioria se resolve com redução fechada e gesso ou fixação intramedular da ulna. A luxação não diagnosticada da cabeça do rádio (Monteggia negligenciada) é uma armadilha clássica.",
+  "correta": "**Correta: B (tipo II).** No adulto, a lesão de Monteggia mais frequente é o tipo II de Bado, com a cabeça do rádio luxada para **posterior** e a ulna angulada com ápice posterior.",
   "incorretas": {
-   "A": "O tipo I é o mais comum no geral e na criança.",
-   "C": "O tipo III é comum na criança.",
-   "D": "O tipo IV é raro."
+   "A": "O **tipo I** (anterior) é o mais comum no conjunto e na **criança**, mas não no adulto.",
+   "C": "O **tipo III** (lateral) é típico da criança, com fratura da metáfise proximal da ulna.",
+   "D": "O **tipo IV** (fratura dos dois ossos com luxação anterior da cabeça do rádio) é raro."
   },
-  "conceito": "**Bado** classifica a **lesão de Monteggia** pela direção da cabeça do rádio:\n\n**tipo I**: cabeça **anterior**; o mais comum **no geral** e na **criança**;\n\n**tipo II**: cabeça **posterior** ou posterolateral; o mais comum no **adulto**;\n\n**tipo III**: cabeça **lateral**; comum na criança;\n\n**tipo IV**: cabeça anterior com fratura **dos dois ossos**; raro.\n\n**O tipo II no adulto**: ocorre em pacientes mais velhos, muitas vezes com osso frágil; é uma **fratura-luxação posterior** do cotovelo, com frequência associada à fratura da **cabeça do rádio** e do **coronoide**. Tem os **piores resultados** (instabilidade, rigidez, sinostose). **Jupiter** o divide pelo nível do traço da ulna (IIA a IID).\n\n**O tratamento**: **placa** na ulna, restaurando o comprimento e o alinhamento; tratamento da cabeça do rádio (fixação ou prótese) e do coronoide.\n\n**Na prova**: a Monteggia mais frequente em adultos é a do tipo **II** de Bado.",
-  "correta": "No adulto, a forma mais comum é o tipo II, com a cabeça do rádio posterior.",
   "referencias": [
-   "Rockwood and Green’s fractures in Adults. 7th Ed., p. 885 (referência indicada na prova TARO 2013, questão 78)"
+   "Rockwood and Green’s fractures in Adults. 7th Ed., p. 885 (referência indicada na prova TARO 2013, questão 78)",
+   "Bado JL. The Monteggia lesion. Clin Orthop Relat Res. 1967;50:71-86."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-1095": {
