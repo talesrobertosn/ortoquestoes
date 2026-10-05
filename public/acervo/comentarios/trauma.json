@@ -2014,14 +2014,18 @@
   "conferido": false
  },
  "trauma-0181": {
-  "conceito": "### AO/OTA úmero proximal (versão clássica)\n| Tipo | Descrição |\n|---|---|\n| 11A | extra-articular unifocal (tuberosidade isolada, colo cirúrgico impactado ou não) |\n| 11B | extra-articular ==bifocal== (colo cirúrgico + tuberosidade) |\n| | B1 com impacção metafisária |\n| | ==B2 sem impacção metafisária== |\n| | B3 com luxação glenoumeral |\n| 11C | articular (colo anatômico) |\n\n- Versão AO 2018 reorganizou (A = 2 partes, B = 3 partes, C = 4 partes/colo anatômico) com qualificadores.\n\n> **Na prova:** bifocal sem impacção na imagem = ==11B2==",
-  "correta": "**11B2.**\n- Bifocal extra-articular.\n- Sem impacção metafisária.",
+  "conceito": "**Fratura do úmero proximal e a classificação AO.** A fratura do úmero proximal é típica de **mulheres idosas com osteoporose**, após queda da própria altura sobre o membro superior. A AO/OTA codifica o úmero como osso **1** e o segmento proximal como **1**, daí o prefixo **11**.\n\n**Classificação AO clássica (Müller) do úmero proximal.**\n\n| Tipo | Descrição | Subgrupos |\n|---|---|---|\n| 11A | Extra-articular **unifocal** | A1 tuberosidade isolada, A2 colo cirúrgico impactado, A3 colo cirúrgico não impactado |\n| **11B** | Extra-articular **bifocal** (colo cirúrgico **e** uma tuberosidade) | B1 com impacção metafisária, **B2 sem impacção metafisária**, B3 com luxação glenoumeral |\n| 11C | **Articular** (colo anatômico) | C1 pouco desviada, C2 impactada com desvio, C3 com luxação |\n\n**Lendo a imagem.** Há um traço no **colo cirúrgico**, com a diáfise desviada e sem engrenamento (sem impacção) entre a cabeça e a metáfise, e um segundo foco envolvendo a **tuberosidade maior**. A superfície articular da cabeça está preservada, sem traço no colo anatômico. São dois focos extra-articulares, sem impacção metafisária e sem luxação: **11B2**.\n\n**Por que a impacção importa.** A fratura impactada (B1, ou valgo impactada) é mais estável e preserva melhor a vascularização da cabeça (ramo posteromedial intacto quando a extensão metafisária posteromedial é longa, critérios de Hertel). A não impactada é instável e, com desvio, frequentemente indica fixação.\n\n**Atenção às versões.** Na revisão AO/OTA de 2018, os tipos do úmero proximal foram reorganizados (11A extra-articular unifocal ou bifocal, 11B extra-articular multifocal com quatro partes, 11C articular), de modo que a mesma fratura pode receber código diferente. A questão usa a versão clássica.\n\n**Tratamento.** Tipoia e mobilização precoce nas pouco desviadas; placa bloqueada ou haste nas desviadas em osso de boa qualidade; artroplastia (sobretudo a reversa em idosos) nas complexas irreconstruíveis.\n\n> 11B2: fratura bifocal extra-articular (colo cirúrgico e tuberosidade), sem impacção metafisária.",
+  "correta": "**B: 11B2.** A imagem mostra fratura do colo cirúrgico sem impacção metafisária associada a fratura da tuberosidade, com a superfície articular preservada: fratura extra-articular bifocal sem impacção, 11B2 na classificação AO clássica.",
   "incorretas": {
-   "A": "**11B1.**\n- Com impacção.",
-   "C": "**11C1.**\n- Articular pouco desviada.",
-   "D": "**11C2.**\n- Articular impactada/desviada."
+   "A": "**11B1** é a fratura bifocal com **impacção metafisária**; na imagem, a diáfise está desviada, sem engrenamento na cabeça.",
+   "C": "**11C1** é fratura **articular** (colo anatômico) pouco desviada; a superfície articular está preservada na imagem.",
+   "D": "**11C2** é fratura articular impactada com desvio; não corresponde ao padrão extra-articular da imagem."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Müller ME, Nazarian S, Koch P, Schatzker J. The comprehensive classification of fractures of long bones. Berlin: Springer-Verlag; 1990.",
+   "Meinberg EG, Agel J, Roberts CS, Karam MD, Kellam JF. Fracture and Dislocation Classification Compendium-2018. J Orthop Trauma. 2018;32 Suppl 1:S1-S170."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0183": {

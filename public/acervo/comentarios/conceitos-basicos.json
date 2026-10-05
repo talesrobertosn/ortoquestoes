@@ -2320,17 +2320,18 @@
   "conferido": false
  },
  "conceitos-basicos-0245": {
-  "conceito": "### As cinco fases\n- **Transdução:** estímulo vira potencial de ação no nociceptor.\n- **Condução:** o impulso viaja pela fibra periférica.\n- **Transmissão:** sinapse no corno posterior e subida pelos tratos espinotalâmicos.\n- **Percepção:** experiência consciente no córtex.\n- ==Modulação==: vias que **descem** do tronco encefálico (periaquedutal, núcleo magno da rafe) até o corno posterior.\n\n### A modulação\n- Libera opioides endógenos, **serotonina** e **noradrenalina**.\n- Amplifica ou reduz o sinal.\n- É onde agem **opioides** e **antidepressivos** (duais, tricíclicos) na dor crônica.\n\n> **Na prova:** vias descendentes até a medula = ==modulação==.",
-  "correta": "**Modulação.**",
+  "conceito": "**Fisiopatologia da dor: as cinco fases.** A dor nociceptiva é o resultado de uma sequência de eventos que começa no tecido lesado e termina na experiência consciente. Entender cada fase explica onde agem os analgésicos.\n\n| Fase | O que acontece | Onde agem os tratamentos |\n|---|---|---|\n| **Transdução** | O estímulo nocivo (mecânico, térmico, químico) vira potencial de ação no **nociceptor** | Anti-inflamatórios (reduzem prostaglandinas que sensibilizam o nociceptor), anestésicos tópicos |\n| **Condução** | O impulso percorre a fibra periférica (A-delta e C) até a medula | Anestésicos locais, bloqueios de nervo |\n| **Transmissão** | Sinapse no **corno posterior** da medula e subida pelos tratos espinotalâmicos ao tálamo | Opioides espinhais, gabapentinoides |\n| **Percepção** | Integração no córtex: localização, intensidade, componente emocional | Anestesia geral, abordagens cognitivas |\n| **Modulação** | Vias que **descem** do tronco encefálico até o corno posterior, **inibindo ou facilitando** a transmissão | Opioides, antidepressivos tricíclicos e duais, tramadol |\n\n**A modulação em detalhe.** A **substância cinzenta periaquedutal** (mesencéfalo) e o **núcleo magno da rafe** e o locus coeruleus (bulbo e ponte) enviam fibras **descendentes** ao corno posterior. Liberam **opioides endógenos, serotonina e noradrenalina**, que inibem a transmissão do impulso doloroso (Basbaum e colaboradores revisaram esses mecanismos). As vias descendentes também podem **facilitar** a dor, mecanismo envolvido na dor crônica e na sensibilização central.\n\n**A teoria do portão** (Melzack e Wall) descreve outra forma de modulação, segmentar: fibras de tato (A-beta) ativam interneurônios inibitórios no corno posterior, \"fechando o portão\" (por isso esfregar o local alivia a dor).\n\n> Modulação: vias descendentes do tronco encefálico que inibem ou facilitam a dor no corno posterior.",
+  "correta": "**C: Modulação.** É a fase em que vias descendentes da substância cinzenta periaquedutal e dos núcleos do tronco encefálico chegam ao corno posterior da medula, inibindo ou facilitando a transmissão da dor.",
   "incorretas": {
-   "A": "**Ascendente periférica.**",
-   "B": "**Cortical.**",
-   "D": "**Ascendente medular.**"
+   "A": "**Condução** é a propagação do impulso pela fibra periférica do nociceptor até a medula; não envolve vias descendentes.",
+   "B": "**Percepção** é a experiência consciente da dor no córtex; ocorre no topo da via, não na descida até a medula.",
+   "D": "**Transmissão** é a passagem do impulso no corno posterior e sua subida pelos tratos espinotalâmicos; é ascendente, não descendente."
   },
   "referencias": [
-   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 1.8"
+   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 1.8",
+   "Basbaum AI, Bautista DM, Scherrer G, Julius D. Cellular and molecular mechanisms of pain. Cell. 2009;139(2):267-284."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "conceitos-basicos-0248": {
