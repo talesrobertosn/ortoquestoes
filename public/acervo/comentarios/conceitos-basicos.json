@@ -33,14 +33,18 @@
   "conferido": false
  },
  "conceitos-basicos-0004": {
-  "conceito": "### Não coagula: preserva o coágulo\nO ácido tranexâmico é **análogo da lisina**. Ocupa os sítios de ligação do plasminogênio à fibrina:\n- Sem essa ligação, ==o plasminogênio não vira plasmina==.\n- A fibrina **não é degradada**.\n\nEfeito: **antifibrinolítico**.\n\n### Na ortopedia\n- Reduz sangramento e transfusão em **artroplastias**, cirurgia de coluna e **trauma** (inclusive fratura de quadril).\n- Vias: endovenosa, tópica ou oral.\n- Não mostrou aumento clinicamente relevante de trombose nos estudos em artroplastia: não cria coágulo novo, apenas preserva o que existe.\n\n### Cuidados\nHistória de trombose recente, convulsões (doses altas), insuficiência renal (ajuste).\n\n> **Na prova:** ácido tranexâmico = ==inibe a ativação do plasminogênio==.",
-  "correta": "**Inibição da ativação do plasminogênio.**\n- Sem plasmina, a fibrina não é degradada.",
+  "conceito": "**O equilíbrio entre formar e dissolver o coágulo.** A coagulação forma a rede de **fibrina** que estanca o sangramento. Em paralelo, o sistema **fibrinolítico** a dissolve: o **plasminogênio**, uma proenzima circulante, liga-se à fibrina por **sítios de ligação à lisina** e é convertido em **plasmina** pelos ativadores (t-PA e u-PA). A plasmina degrada a fibrina, removendo o coágulo.\n\n**Como o ácido tranexâmico age.** É um **análogo sintético da lisina**. Ele ocupa os sítios de ligação à lisina do plasminogênio e, assim:\n- impede que o plasminogênio se ligue à fibrina;\n- **bloqueia a ativação do plasminogênio em plasmina** sobre o coágulo;\n- a fibrina **não é degradada**, e o coágulo formado se mantém.\n\nEle **não estimula a coagulação**: não ativa fatores nem plaquetas. É um **antifibrinolítico**, que protege o coágulo já formado.\n\n**Uso na ortopedia.**\n- Reduz o sangramento e a necessidade de **transfusão** em **artroplastias** de quadril e joelho, cirurgias de **coluna** e fraturas, incluindo a do quadril no idoso.\n- Pode ser usado por via **intravenosa**, **tópica** (intra-articular) ou oral.\n- No trauma grave com sangramento (estudo CRASH-2), administrado nas **primeiras 3 horas**, reduz a mortalidade por hemorragia; após 3 horas, o benefício desaparece.\n\n**Segurança.** Os estudos em artroplastia não mostraram aumento do risco de trombose venosa. Contraindicações relativas: trombose arterial ou venosa recente, convulsões (doses altas) e insuficiência renal grave (ajuste de dose).",
+  "correta": "**Correta: C (inibição da ativação do plasminogênio).** O ácido tranexâmico é um análogo da lisina que bloqueia os sítios de ligação do plasminogênio à fibrina, impedindo sua conversão em plasmina e a degradação do coágulo: é um antifibrinolítico.",
   "incorretas": {
-   "A": "**Aumentaria o sangramento.**\n- A prostaciclina é vasodilatadora e antiagregante.",
-   "B": "**Heparina.**\n- Ativar antitrombina é mecanismo de anticoagulante.",
-   "D": "**Anticoagulante.**\n- Inibir fatores de coagulação é o oposto do pretendido."
+   "A": "A **prostaciclina** é um vasodilatador e inibidor plaquetário produzido pelo endotélio; o ácido tranexâmico não age sobre ela.",
+   "B": "A ativação da **antitrombina** é o mecanismo da **heparina**, um anticoagulante, com efeito oposto ao desejado.",
+   "D": "A inibição de fatores da coagulação é o mecanismo dos **anticoagulantes** (por exemplo, varfarina sobre os fatores dependentes de vitamina K), não do ácido tranexâmico."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "CRASH-2 trial collaborators. Effects of tranexamic acid on death, vascular occlusive events, and blood transfusion in trauma patients with significant haemorrhage (CRASH-2): a randomised, placebo-controlled trial. Lancet. 2010;376(9734):23-32.",
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "conceitos-basicos-0005": {

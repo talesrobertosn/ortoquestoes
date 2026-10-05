@@ -3996,17 +3996,18 @@
   "conferido": false
  },
  "pe-tornozelo-0368": {
+  "conceito": "**A lógica de Lauge-Hansen.** A classificação descreve as fraturas do tornozelo por dois termos: a **posição do pé** no momento do trauma (supinação ou pronação) e a **direção da força** (rotação externa, adução, abdução). Para cada mecanismo, a lesão segue uma **sequência previsível**, em estágios, que avança conforme a energia.\n\n**Supinação e rotação externa (SER), o mecanismo mais comum.** Com o pé em supinação, as estruturas laterais estão tensas. Quando o tálus roda externamente dentro da pinça, ele empurra a fíbula para trás e para fora, e a lesão progride **em sentido horário (visto de cima, no tornozelo direito), de anterolateral para medial**:\n\n| Estágio | Lesão |\n|---|---|\n| **I** | **Ruptura do ligamento tibiofibular anterior** (anteroinferior) ou avulsão óssea (Chaput ou Wagstaffe) |\n| II | Fratura **espiral** da fíbula, de anteroinferior para posterossuperior, no nível da sindesmose |\n| III | Ruptura do ligamento tibiofibular posterior ou fratura do **maléolo posterior** (Volkmann) |\n| IV | Fratura do **maléolo medial** ou ruptura do **ligamento deltoide** |\n\n**O primeiro elemento a falhar.** No estágio I, o tálus em rotação externa abre a sindesmose pela frente, e o **ligamento tibiofibular anterior** é a primeira estrutura a ceder.\n\n**A imagem típica.** O traço espiral da fíbula no nível da sindesmose, visível no **perfil** de anteroinferior para posterossuperior, corresponde ao Weber B.\n\n**A questão que importa: estabilidade.** O SER II (fíbula isolada, deltoide íntegro) é estável e tratado sem cirurgia. O SER IV (com lesão medial) é instável e cirúrgico. O **teste de estresse em rotação externa** ou a **radiografia com carga** distinguem o SER II do SER IV equivalente (fíbula e deltoide rompido): espaço claro medial acima de 4 a 5 mm indica lesão do deltoide.",
+  "correta": "**Resposta provável: Certo.** Na sequência de Lauge-Hansen para supinação e rotação externa, o estágio I é a ruptura (ou avulsão) do **ligamento tibiofibular anterior**, o primeiro elemento a falhar.",
   "incorretas": {
-   "B": "**Errado seria iniciar essa sequência pelo ligamento deltoide medial.** O lado medial corresponde ao estágio final no padrão clássico de supinação-rotação externa."
+   "B": "**Errado** alteraria a ordem clássica da sequência. A fratura espiral da fíbula é o estágio II, que só ocorre depois da falha do ligamento tibiofibular anterior."
   },
-  "conceito": "**A classificação de Lauge-Hansen descreve uma sequência.** No mecanismo de supinação e rotação externa, a primeira falha típica é do ligamento tibiofibular anterior inferior ou sua avulsão óssea. Em seguida pode surgir fratura espiral ou oblíqua da fíbula distal no nível da sindesmose, correspondente ao estágio II.\n\n**A energia pode continuar a atravessar o tornozelo.** O estágio III envolve lesão do complexo tibiofibular posterior ou fratura do maléolo posterior; o estágio IV alcança o lado medial, com fratura do maléolo medial ou ruptura do deltoide. Conhecer essa ordem ajuda a buscar lesões ocultas, mas a estabilidade real depende do conjunto osteoligamentar, e nem toda fratura clínica segue o modelo experimental de modo perfeito.",
-  "correta": "**Certo: a lesão tibiofibular anterior inferior caracteriza o primeiro estágio da supinação-rotação externa.** A fratura fibular típica aparece depois.",
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "referencias": [
-   "Browner J, Levine e Trafton. Skeletal trauma. Philadelphia: Saunders/Manole. 2ª edição, vol. II p. 2349."
+   "Browner J, Levine e Trafton. Skeletal trauma. Philadelphia: Saunders/Manole. 2ª edição, vol. II p. 2349.",
+   "Lauge-Hansen N. Fractures of the ankle. II. Combined experimental-surgical and experimental-roentgenologic investigations. Arch Surg. 1950;60(5):957-985."
   ],
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "A",
-  "geradoEm": "2026-10-01",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pe-tornozelo-0369": {

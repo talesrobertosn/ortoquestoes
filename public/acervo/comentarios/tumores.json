@@ -1939,16 +1939,19 @@
   "formato": "corrido"
  },
  "tumores-0188": {
-  "conceito": "**Três subtipos, três idades.** O **embrionário** é o mais comum no conjunto, da criança pequena, em cabeça, pescoço, órbita e trato geniturinário, com melhor prognóstico, sobretudo na variante botrioide das mucosas. O **alveolar** é do adolescente e do adulto jovem, nas extremidades e no tronco, com as fusões PAX3 ou PAX7 com FOXO1, mais agressivo e com metástase linfonodal. O **pleomórfico** é o subtipo do **adulto**, acima dos 40 a 50 anos, raro e localizado nas extremidades, sobretudo na coxa.\n\n**O pleomórfico** tem células grandes, bizarras e pleomórficas, é o de pior prognóstico e se comporta como um sarcoma pleomórfico do adulto: pouco quimiossensível, tratado com ressecção ampla e radioterapia.\n\n**Na prova:** o rabdomiossarcoma do adulto é o **pleomórfico**.",
-  "correta": "**Pleomórfico.** É o subtipo típico do adulto, raro e de pior prognóstico.",
+  "conceito": "**O rabdomiossarcoma.** É o sarcoma de partes moles mais comum da **infância e da adolescência**, formado por células que se diferenciam no sentido do **músculo esquelético** (marcadores **miogenina** e **MyoD1** na imuno-histoquímica, além da desmina). Divide-se em subtipos histológicos com perfis de idade, localização e prognóstico muito diferentes.\n\n| Subtipo | Faixa etária e locais | Comportamento |\n|---|---|---|\n| **Embrionário** | **Crianças pequenas**; cabeça e pescoço, órbita, trato geniturinário; a variante **botrioide** nas mucosas (vagina, bexiga) | O mais comum no conjunto; **melhor prognóstico** |\n| **Alveolar** | **Adolescentes e adultos jovens**; **extremidades** e tronco | Fusões **PAX3-FOXO1** ou **PAX7-FOXO1**; mais agressivo, metástase linfonodal |\n| **Pleomórfico** | **Adultos**, geralmente **acima de 40 a 50 anos**; partes moles profundas das extremidades | Raro na criança; **pior prognóstico** |\n| Fusocelular e esclerosante | Variável | Variantes menos comuns |\n\n**O rabdomiossarcoma no adulto.** É raro e, quando ocorre, o subtipo **pleomórfico** predomina. Ele se apresenta como uma **massa profunda, de crescimento rápido**, na coxa ou em outras partes moles das extremidades, semelhante a outros sarcomas pleomórficos de alto grau. Responde mal à quimioterapia, ao contrário dos subtipos pediátricos.\n\n**Tratamento.** Na criança, o tratamento é **multimodal**: quimioterapia é a base (os rabdomiossarcomas pediátricos são quimiossensíveis), com cirurgia e radioterapia para controle local. No adulto pleomórfico, a abordagem se parece com a dos outros sarcomas de alto grau: **ressecção com margens amplas** e radioterapia.\n\n**Regra para avaliar massa de partes moles.** Massa **profunda** à fáscia, **maior que 5 cm**, ou que **cresce** deve ser investigada com ressonância e biópsia planejada antes de qualquer ressecção.",
+  "correta": "**Correta: C (pleomórfico).** O subtipo **pleomórfico** é o rabdomiossarcoma mais comum em adultos, geralmente acima dos 40 a 50 anos, em partes moles profundas das extremidades, com pior prognóstico.",
   "incorretas": {
-   "A": "**Criança pequena.** O embrionário é o mais comum no conjunto, mas não no adulto.",
-   "B": "**Adolescente.** O alveolar predomina em adolescentes e adultos jovens.",
-   "D": "**Não existe.** Misto não é categoria da classificação atual."
+   "A": "O **embrionário** é o mais comum no conjunto, mas em **crianças pequenas**, sobretudo em cabeça, pescoço e trato geniturinário.",
+   "B": "O **alveolar** predomina em **adolescentes e adultos jovens**, nas extremidades, e não é o mais comum em adultos mais velhos.",
+   "D": "O tipo **misto** não é uma categoria principal da classificação e não é o subtipo predominante no adulto."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
+   "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours, 5ª edição. Lyon: IARC, 2020."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "tumores-0189": {
   "conceito": "**Onde e em quem.** A sinovite vilonodular pigmentada, hoje chamada de tumor tenossinovial de células gigantes na forma difusa, acomete o **joelho** na grande maioria dos casos, seguido de quadril, tornozelo, ombro e cotovelo. É uma monoartrite crônica do **adulto jovem**, com dor, aumento de volume, limitação e **derrame hemorrágico de repetição**, com líquido achocolatado ou sanguinolento, sem trauma e sem coagulopatia.\n\n**A hemossiderina dá a pista.** O sangue repetido deposita hemossiderina, que dá nome à doença e, na ressonância, produz focos de **sinal baixo em T1 e T2**, com artefato que aumenta no eco gradiente. A radiografia mostra erosões subcondrais em espelho, com espaço articular preservado e sem osteopenia; no quadril, de cápsula pouco complacente, as erosões aparecem mais cedo. A forma **localizada**, nodular, é mais comum na mão e tem bom prognóstico após excisão; a **difusa** recidiva com frequência após sinovectomia e tem tratamento sistêmico com inibidores do CSF1R.\n\n**Na prova:** sinovite vilonodular é mais comum no **joelho**; no quadril, erode mais cedo.",
@@ -2208,16 +2211,19 @@
   "formato": "corrido"
  },
  "tumores-0209": {
-  "conceito": "**Primo maior do osteoma osteoide.** O osteoblastoma tem a mesma histologia; o que muda é o **tamanho**, acima de cerca de 2 cm, e o **comportamento**: cresce, tem menos esclerose reativa, e a dor é menos noturna e menos responsiva ao anti-inflamatório. O perfil é a **coluna em 40 a 50% dos casos**, nos elementos posteriores, seguida de fêmur, tíbia, mão e pé, com a pelve também acometida; há predomínio **masculino**, de cerca de 2 para 1, e pico entre 10 e 30 anos.\n\n**Na coluna**, causa escoliose dolorosa, com a lesão na concavidade, e pode comprimir raízes ou a medula. O tratamento é a curetagem ampla ou a ressecção em bloco, com estabilização se necessário, e a recidiva é maior que a do osteoma osteoide.\n\n**Na prova:** osteoblastoma é da **coluna, em 40 a 50%**, no homem jovem, no arco posterior.",
-  "correta": "**Acomete a coluna em 40 a 50% dos casos.** A coluna é a sede mais comum, nos elementos posteriores.",
+  "conceito": "**O primo maior do osteoma osteoide.** O osteoblastoma e o osteoma osteoide têm **histologia praticamente idêntica**: um nicho de trabéculas de osteoide e osso imaturo, rodeadas por osteoblastos, em estroma fibrovascular. O que os separa é o **tamanho** e o **comportamento**.\n\n| Aspecto | Osteoma osteoide | Osteoblastoma |\n|---|---|---|\n| Tamanho do nicho | **Menor que 1,5 a 2 cm** | **Maior que 2 cm** |\n| Crescimento | Limitado | **Progressivo**, pode ser localmente agressivo |\n| Esclerose reativa | Intensa ao redor do nicho | Menor |\n| Dor | Noturna, **alivia com anti-inflamatório** | Mais surda, menos noturna, responde menos ao anti-inflamatório |\n| Local preferido | Diáfises de ossos longos (fêmur, tíbia) | **Coluna**, elementos posteriores |\n\n**O perfil do osteoblastoma.**\n- **Raro**: cerca de 1% dos tumores ósseos primários.\n- **Sexo masculino**, cerca de 2 a 3 para 1.\n- **Idade**: cerca de 90% antes dos 30 anos, com pico na segunda década.\n- **Coluna em 40 a 50% dos casos**, nos **elementos posteriores** (pedículo, lâmina, processos), podendo causar **escoliose dolorosa** (com o tumor na concavidade) e compressão neural.\n- Outros locais: fêmur, tíbia, ossos da mão e do pé, e também a **pelve** e o sacro.\n\n**Imagem.** Lesão lítica expansiva, com graus variáveis de mineralização interna e esclerose periférica menor que a do osteoma osteoide. A tomografia define o tamanho e a matriz; a ressonância mostra edema extenso ao redor, que pode exagerar a impressão de agressividade.\n\n**Tratamento.** Ao contrário do osteoma osteoide (ablação por radiofrequência), o osteoblastoma é tratado com **curetagem ampliada** ou **ressecção marginal**, com enxerto e estabilização quando necessário. A recidiva local chega a 10 a 20% após curetagem, e as formas agressivas podem lembrar o osteossarcoma.",
+  "correta": "**Correta: B.** O osteoblastoma acomete a **coluna em 40 a 50% dos casos**, preferencialmente nos elementos posteriores, sua localização mais característica.",
   "incorretas": {
-   "A": "**Masculino.** O predomínio é de homens.",
-   "C": "**Mais jovem.** O pico é entre 10 e 30 anos.",
-   "D": "**Acomete, sim.** A pelve é sede reconhecida do osteoblastoma."
+   "A": "O osteoblastoma predomina no sexo **masculino**, numa proporção de cerca de 2 a 3 para 1.",
+   "C": "A maioria dos casos ocorre **antes dos 30 anos**, com pico na segunda década, e não entre 20 e 40 anos.",
+   "D": "A **pelve** e o sacro estão entre os locais acometidos, embora com menor frequência que a coluna."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
+   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição"
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "tumores-0210": {
   "conceito": "**O tumor ósseo primário mais comum da mão** é o **encondroma**, que responde pela grande maioria dos casos, com sede preferencial na falange proximal, seguida do metacarpo e da falange média. Nasce de restos de cartilagem fisária na metáfise e é central, lítico e bem delimitado, afinando e insuflando a cortical, às vezes com calcificações puntiformes. Costuma ser assintomático e se apresentar com **fratura patológica** após trauma banal; a conduta é deixar a fratura consolidar e, se a lesão persistir e for grande, fazer curetagem com enxerto.\n\n**Mão e esqueleto central.** Na mão, insuflação e cortical fina são comuns e benignas, e a malignização é rara; na pelve, no fêmur proximal e na cintura escapular, a mesma lesão merece desconfiança. Encondromas múltiplos configuram a doença de Ollier, e, com hemangiomas, a síndrome de Maffucci.\n\n**Na prova:** o tumor ósseo primário mais comum da mão é o **encondroma**.",

@@ -2822,14 +2822,18 @@
   "conferido": false
  },
  "pediatria-0241": {
-  "conceito": "### Ossificação do carpo (sentido anti-horário na mão direita, vista palmar)\n| Osso | Idade aproximada |\n|---|---|\n| ==capitato== | ==1 a 3 meses== |\n| ==hamato== | ==2 a 4 meses== |\n| piramidal | cerca de 3 anos |\n| semilunar | cerca de 4 anos |\n| escafoide | cerca de 5 anos |\n| trapézio | cerca de 6 anos |\n| trapezoide | cerca de 6 a 7 anos |\n| pisiforme | cerca de 9 a 12 anos |\n\n- Regra prática: até cerca de 6 a 7 anos, o **número de centros ≈ idade em anos**.\n- Meninas ossificam antes.\n\n### Idade óssea\n- **Greulich e Pyle** (atlas da mão e punho), Tanner-Whitehouse.\n\n### Implicação clínica\n- Até os 5 anos o escafoide é quase todo cartilagem: fratura rara e invisível ao RX.\n- Fratura pediátrica típica: ==polo distal== e avulsões, não a cintura.\n\n> **Na prova:** escafoide ossifica aos ==4 a 5 anos==",
-  "correta": "**4 a 5 anos.**\n- Depois do semilunar e antes de trapézio e trapezoide.\n- Até essa idade, RX normal não exclui lesão.",
+  "conceito": "**O carpo ossifica numa ordem previsível.** Ao nascer, os ossos do carpo são **cartilaginosos** e invisíveis na radiografia. Eles ossificam um a um, em sequência relativamente constante, o que é útil para **estimar a idade óssea** e para não confundir um osso ainda não ossificado com uma lesão.\n\n**A ordem.** Na mão direita vista pela palma, a ossificação segue o **sentido anti-horário**, começando no capitato:\n\n| Osso | Idade aproximada de ossificação |\n|---|---|\n| Capitato | 1 a 3 meses |\n| Hamato | 2 a 4 meses |\n| Piramidal | Cerca de 3 anos |\n| Semilunar | Cerca de 4 anos |\n| **Escafoide** | **Cerca de 4 a 5 anos** |\n| Trapézio | Cerca de 5 a 6 anos |\n| Trapezoide | Cerca de 6 a 7 anos |\n| Pisiforme | Cerca de 9 a 12 anos (o último) |\n\nUma regra prática: depois do capitato e do hamato no primeiro ano, os demais aparecem aproximadamente **um por ano**. As meninas ossificam um a dois anos antes dos meninos.\n\n**Implicações clínicas.**\n- **Fraturas do escafoide** são raras antes dos 10 anos, porque o osso é em grande parte cartilaginoso e protegido por um envoltório espesso. Em crianças, as fraturas costumam ser do **polo distal** ou avulsões, e consolidam bem.\n- O **pisiforme** é um sesamoide no tendão do flexor ulnar do carpo e ossifica por último.\n- Na **idade óssea** (atlas de Greulich e Pyle), avaliam-se os centros do carpo, das epífises das falanges, dos metacarpos e do rádio e da ulna distais.",
+  "correta": "**Correta: C (4 a 5 anos).** O escafoide começa a ossificar por volta dos 4 a 5 anos, depois do capitato, do hamato, do piramidal e do semilunar.",
   "incorretas": {
-   "A": "**Cedo demais.**\n- Só capitato e hamato.",
-   "B": "**Piramidal e semilunar.**\n- O escafoide ainda não.",
-   "D": "**Já ossificado.**\n- Falta o pisiforme."
+   "A": "Entre **1 e 2 anos**, só o capitato e o hamato costumam estar ossificados.",
+   "B": "Aos **3 a 4 anos** surgem o piramidal e o semilunar; o escafoide vem logo depois.",
+   "D": "Aos **6 a 7 anos** ossificam o trapézio e o trapezoide, que vêm depois do escafoide."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Greulich WW, Pyle SI. Radiographic Atlas of Skeletal Development of the Hand and Wrist, 2ª edição. Stanford University Press, 1959."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0242": {
@@ -5973,18 +5977,19 @@
   "conferido": false
  },
  "pediatria-0534": {
-  "conceito": "### Doença de Blount\n| Forma | Idade | Perfil |\n|---|---|---|\n| infantil | < 4 anos | obesa, marcha precoce, bilateral |\n| juvenil/adolescente | > 10 anos | obeso, unilateral, varo menor |\n\n### Langenskiöld (6 estágios)\n| Estágio | Achado |\n|---|---|\n| I | irregularidade metafisária medial, bico |\n| II | depressão em degrau |\n| III | degrau mais profundo, fragmentação |\n| ==IV== | ==ponte (barra) óssea medial através da fise== começa |\n| V | epífise dupla (fratura) |\n| VI | fechamento medial completo |\n\n### Ângulo metafisário-diafisário (Drennan)\n- > 16°: Blount provável; < 10°: fisiológico.\n\n### Tratamento\n- < 3 anos, estágio I-II: órtese.\n- Crescimento guiado, osteotomia valgizante antes dos 4 anos; ressecção da barra, elevação do planalto nos tardios.\n\n> **Na prova:** barra óssea na Blount = a partir de ==Langenskiöld IV== (veja o alerta).",
-  "correta": "**Estágio V.**\n- Aspecto de epífise dupla.\n- Fenda separa a porção medial da epífise.",
+  "conceito": "**A imagem.** O desenho mostra a extremidade proximal da tíbia com a porção medial da epífise inclinada para baixo e uma **fenda** que a separa do restante da epífise, dando a aparência de **duas placas epifisárias**: uma lateral, normal, e uma medial, deslocada e quase vertical. É a **placa epifisária dupla** do estágio **V** de Langenskiöld.\n\n**A doença de Blount.** É a tíbia vara por inibição do crescimento da porção **posteromedial** da fise proximal da tíbia, em geral em crianças **obesas** que andam cedo. A carga excessiva no compartimento medial comprime a fise e altera seu crescimento, e a deformidade progride com o tempo.\n\n**A classificação de Langenskiöld** descreve seis estágios progressivos da forma infantil.\n\n| Estágio | Achado |\n|---|---|\n| I | Irregularidade metafisária medial com bico |\n| II | Depressão em degrau na metáfise medial |\n| III | Degrau mais profundo, fragmentação metafisária |\n| IV | A epífise desce e preenche a depressão metafisária |\n| **V** | **Placa epifisária dupla**: uma fenda separa a parte medial da epífise |\n| VI | **Ponte óssea** entre a epífise e a metáfise medial |\n\n**Diferença entre V e VI.** No V, ainda há cartilagem separando a parte medial da epífise (a fenda), que pode fundir-se depois; no VI, já existe osso unindo a epífise à metáfise do lado medial, e a fise medial parou de crescer.\n\n**Tratamento nos estágios avançados.** Além da osteotomia valgizante, é preciso **elevar o platô medial** deprimido (osteotomia intra-epifisária) e tratar a fise: ressecção da ponte óssea, ou epifisiodese da fise lateral para impedir a recidiva.",
+  "correta": "**Correta: C (V).** A fenda que separa a parte medial da epífise, criando a aparência de duas placas epifisárias, caracteriza o estágio V de Langenskiöld.",
   "incorretas": {
-   "A": "**III.**\n- Degrau profundo, sem epífise dupla.",
-   "B": "**IV.**\n- Barra óssea começando.",
-   "D": "**VI.**\n- Fechamento medial completo."
+   "A": "No **estágio III**, o achado é o degrau metafisário profundo com fragmentação, sem alteração da epífise.",
+   "B": "No **estágio IV**, a epífise desce e preenche a depressão, mas sem a fenda que cria a placa dupla.",
+   "D": "No **estágio VI**, há uma **ponte óssea** unindo a epífise à metáfise medial, e não uma fenda cartilaginosa."
   },
-  "alerta": "A diferença entre os estágios IV, V e VI de Langenskiöld depende de detalhes finos da fise medial, difíceis de ver em figuras pequenas. O estágio V é reconhecido pela aparência de epífise dupla.",
   "referencias": [
-   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), Cap. 26"
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), Cap. 26",
+   "Langenskiöld A. Tibia vara: osteochondrosis deformans tibiae. Blount's disease. Clin Orthop Relat Res. 1981;(158):77-82."
   ],
-  "geradoEm": "2026-09-24",
+  "alerta": "A diferença entre os estágios IV, V e VI de Langenskiöld depende de detalhes finos da fise medial, difíceis de ver em figuras pequenas. O estágio V é reconhecido pela aparência de epífise dupla.",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0535": {
@@ -9831,17 +9836,18 @@
   "conferido": false
  },
  "pediatria-0805": {
+  "conceito": "**O que é a displasia fibrocartilaginosa focal.** É uma alteração **localizada** na metáfise **medial** da tíbia proximal (raramente em outros ossos), em que uma faixa de tecido fibroso denso, semelhante a tendão, ancora o periósteo ao osso e inibe o crescimento daquele lado. O resultado é um **genu varo unilateral**, com angulação aguda logo abaixo do joelho, em crianças pequenas, geralmente entre 1 e 2 anos.\n\n**A radiografia.** Uma área **radiotransparente** na cortical medial da metáfise proximal da tíbia, com borda esclerótica e angulação **em vértice** no local, abaixo da fise (que é normal). Isso a diferencia da doença de Blount, que altera a própria fise e a epífise medial.\n\n| Aspecto | Displasia fibrocartilaginosa focal | Doença de Blount infantil |\n|---|---|---|\n| Lado | **Unilateral** | Frequentemente bilateral |\n| Lesão | Radiotransparência **metafisária** cortical medial, abaixo da fise | Alteração da **fise** e da metáfise medial (bico, degrau) |\n| Perfil | Criança pequena, peso normal | Criança obesa que andou cedo |\n| Evolução | **Melhora espontânea** na maioria | Progressiva |\n\n**A conduta inicial é observar.** A maioria dos casos (cerca de 45 a 75% nas séries) **corrige espontaneamente** com o crescimento em 1 a 3 anos, e a lesão desaparece. Por isso, o tratamento inicial é **acompanhamento clínico e radiográfico**, eventualmente com órtese.\n\n**Quando operar.** Se a deformidade **progride** ou não melhora após um período de observação, faz-se a **osteotomia corretiva** da tíbia, às vezes com excisão da faixa fibrosa. A ressecção isolada da lesão como primeira medida não é recomendada, porque a maioria resolve sem cirurgia.",
+  "correta": "**Resposta provável: Errado.** Na fase inicial, o tratamento da displasia fibrocartilaginosa focal da tíbia é a **observação**, porque a maioria dos casos corrige espontaneamente com o crescimento. A cirurgia fica reservada para a deformidade progressiva.",
   "incorretas": {
-   "A": "**Certo poderia ser em deformidade persistente ou progressiva selecionada.** Essa indicação tardia não justifica ressecar toda lesão recém-diagnosticada."
+   "A": "**Certo** levaria a operar uma condição que tende a se resolver sozinha. A ressecção da lesão como conduta inicial expõe a criança a uma cirurgia desnecessária na maioria dos casos."
   },
-  "conceito": "**Displasia fibrocartilaginosa focal pode simular Blount.** Trata-se de alteração localizada, em geral na região medial da tíbia proximal, que produz genu varo unilateral na criança pequena. Apesar da deformidade, muitas lesões melhoram espontaneamente com o crescimento; reconhecer seu padrão evita operar um quadro capaz de corrigir-se.\n\n**Conduta inicial é vigilância.** Exame clínico e radiografias seriadas acompanham alinhamento, marcha e eventual progressão. Ressecção da lesão ou osteotomia ficam reservadas a deformidade persistente, progressiva ou funcionalmente relevante após avaliação individual. Essa história natural difere da tíbia vara de Blount progressiva, em que a fise medial permanece sob sobrecarga e pode exigir correção mais precoce.",
-  "correta": "**Errado: a ressecção não é o tratamento recomendado de rotina na fase inicial.** Observação é razoável porque a correção espontânea é frequente.",
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "referencias": [
-   "Revista Brasileira de Ortopedia. Abril 2005; p. 215."
+   "Revista Brasileira de Ortopedia. Abril 2005; p. 215.",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "B",
-  "geradoEm": "2026-10-01",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0806": {
@@ -10135,17 +10141,18 @@
   "conferido": false
  },
  "pediatria-0826": {
+  "conceito": "**As camadas da fise.** A placa de crescimento é organizada em zonas, da epífise para a metáfise:\n\n| Zona | Função | Resistência |\n|---|---|---|\n| **Germinativa** (repouso) | Células-tronco, junto à epífise, nutridas pelos vasos epifisários | Protegida |\n| Proliferativa | Condrócitos em colunas, multiplicação | Forte, muita matriz |\n| **Hipertrófica** | Condrócitos aumentam de tamanho, pouca matriz | **Mais fraca** |\n| Calcificação provisória | Matriz calcifica, invasão vascular metafisária | Transição para osso |\n\n**Onde o traço passa em cada tipo de Salter-Harris.**\n- **Tipo I**: o traço atravessa a fise pela **zona hipertrófica**, separando epífise e metáfise. A zona germinativa fica presa à epífise e é poupada.\n- **Tipo II**: o traço corre pela **zona hipertrófica** em parte da fise e depois **sai pela metáfise**, deixando o fragmento de Thurston-Holland. A zona germinativa também fica preservada.\n- **Tipo III**: o traço passa pela zona hipertrófica e depois **atravessa a epífise** até a articulação, cruzando **todas as camadas** no ponto em que sobe.\n- **Tipo IV**: o traço vertical atravessa **metáfise, fise e epífise**, cruzando **todas as camadas**.\n- **Tipo V**: compressão da fise, lesão da camada germinativa.\n\n**Por que isso importa.** O prognóstico depende de a **camada germinativa** e sua irrigação serem preservadas. Nos tipos I e II, como o traço corre pela zona hipertrófica, o crescimento costuma ser normal (com exceções, como a fise distal do fêmur). Nos tipos III e IV, o traço cruza a camada germinativa e a superfície articular: exigem **redução anatômica**, e há risco de **ponte óssea** e parada de crescimento.\n\n**O erro da afirmação.** Ela agrupa o tipo II com o III e o IV. O tipo II, como o I, mantém o traço na zona hipertrófica, sem atravessar todas as camadas.",
+  "correta": "**Resposta provável: Errado.** Nos tipos I e **II**, o traço corre pela **zona hipertrófica** e preserva a camada germinativa. Só nos tipos III e IV o traço cruza **todas as camadas** da fise, por isso a afirmação erra ao incluir o tipo II.",
   "incorretas": {
-   "A": "**Certo seria dizer que III e IV alcançam a epífise e podem ameaçar mais a camada germinativa.** Isso não valida a comparação absoluta proposta."
+   "A": "**Certo** igualaria o tipo II aos tipos III e IV. A diferença entre eles é justamente a preservação da camada germinativa no tipo II, que explica seu melhor prognóstico."
   },
-  "conceito": "**Salter-Harris descreve o caminho do traço, não uma lista de camadas celulares destruídas.** O tipo I passa só pela fise; o II passa pela fise e sai pela metáfise; o III alcança a epífise; o IV cruza metáfise, fise e epífise; o V é lesão por compressão. Assim, até o tipo I é uma separação fisária, ao contrário do que afirma a pergunta.\n\n**A zona de lesão ajuda a entender o prognóstico.** Tipos I e II costumam atravessar a região hipertrófica, preservando em muitos casos a camada germinativa e seu suprimento epifisário. Tipos III e IV podem lesar células proliferativas e a superfície articular, exigindo redução precisa. Nenhum desses nomes autoriza dizer que II, III e IV sempre comprometem todas as camadas, enquanto I não compromete a placa.",
-  "correta": "**Errado: o tipo I atravessa a fise, e os tipos II a IV não lesionam obrigatoriamente todas as suas camadas.** A classificação indica a trajetória do traço.",
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "referencias": [
-   "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 5ª edição, p. 93, 97."
+   "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 5ª edição, p. 93, 97.",
+   "Salter RB, Harris WR. Injuries involving the epiphyseal plate. J Bone Joint Surg Am. 1963;45(3):587-622."
   ],
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "B",
-  "geradoEm": "2026-10-01",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0827": {
