@@ -3842,5 +3842,44 @@
   ],
   "geradoEm": "2026-10-04",
   "conferido": false
+ },
+ "tumores-0364": {
+  "conceito": "**Escore de Mirels para risco de fratura patológica.** Criado em 1989 para decidir se uma metástase em osso longo deve ser fixada profilaticamente. Soma quatro critérios, cada um de 1 a 3 pontos (total de 4 a 12).\n\n| Critério | 1 ponto | 2 pontos | 3 pontos |\n|---|---|---|---|\n| Local | Membro superior | Membro inferior | **Peritrocantérico** |\n| Dor | Leve | Moderada | **Funcional** (piora com carga, limita atividades) |\n| Tipo de lesão | Blástica | Mista | **Lítica** |\n| Tamanho (fração do diâmetro) | Menos de 1/3 | 1/3 a 2/3 | **Mais de 2/3** |\n\n**Interpretação.**\n- **7 ou menos**: risco baixo (cerca de 4%); radioterapia e observação.\n- **8**: zona intermediária (risco em torno de 15%); julgamento clínico.\n- **9 ou mais**: risco alto (33% ou mais); **fixação profilática** indicada.\n\n**Calculando o caso.** Lesão na extremidade proximal do fêmur (região peritrocantérica: 3, ou membro inferior: no mínimo 2), dor intensa com limitação das atividades, ou seja, funcional (3), lítica (3), acometendo mais de 2/3 (3). O total é **12** (ou, no mínimo, 11), e não 9. A fixação profilática está indicada, mas a pontuação do item está errada.\n\n**Por que fixar antes de fraturar.** A fixação profilática tem menor perda sanguínea, recuperação mais rápida e melhor função do que o tratamento de uma fratura já instalada, que é mais complexo em pacientes com sobrevida limitada.\n\n> Mirels de 9 ou mais: fixação profilática. Lesão peritrocantérica, lítica, maior que 2/3 e com dor funcional soma 12.",
+  "correta": "**B: Errado.** Pelo escore de Mirels, o paciente soma 12 pontos (ou 11, se a região não for considerada peritrocantérica): local peritrocantérico (3), dor funcional (3), lesão lítica (3) e acometimento maior que 2/3 (3). A fixação profilática está indicada, porque o limite é 9 pontos ou mais, mas a pontuação de 9 informada no item está errada.",
+  "incorretas": {
+   "A": "**Marcar certo é aceitar o item pela conduta, que está correta.** O valor 9 é o limite a partir do qual se indica fixação, e por isso é fácil confundir o corte com a pontuação do paciente. Somando os critérios, o caso tem pontuação máxima ou quase máxima."
+  },
+  "referencias": [
+   "Mirels H. Metastatic disease in long bones: a proposed scoring system for diagnosing impending pathologic fractures. Clin Orthop Relat Res. 1989;(249):256-264.",
+   "Azar FM, Beaty JH, eds. Campbell's Operative Orthopaedics. Elsevier. Doença metastática óssea."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "tumores-0365": {
+  "conceito": "**Metástase óssea de origem desconhecida.** Em cerca de 3% a 4% dos pacientes com metástase óssea, o tumor primário não é conhecido no momento do diagnóstico. A investigação busca o primário, que muda o tratamento e o prognóstico.\n\n**Quais primários aparecem nesse grupo.** Quando a metástase óssea é a primeira manifestação, os primários mais encontrados são o **pulmão** e o **rim**, tumores que podem crescer silenciosamente. Outros: mieloma (que deve sempre ser lembrado), linfoma, tireoide, fígado e trato gastrointestinal.\n\n**Por que mama e próstata são incomuns aqui.** Embora sejam as causas mais frequentes de metástase óssea em geral, os cânceres de mama e de próstata costumam ser **diagnosticados antes**: são rastreados (mamografia, PSA), detectáveis no exame físico (palpação da mama, toque retal) e o paciente geralmente já tem o diagnóstico quando surge a metástase. Por isso, entre as metástases de origem desconhecida, eles aparecem pouco.\n\n**Protocolo de investigação (Rougraff).** Com história e exame físico completos (incluindo mama, próstata e tireoide), exames laboratoriais (incluindo eletroforese de proteínas), radiografia e tomografia de tórax, abdome e pelve, e cintilografia óssea (ou PET-CT), identifica-se o primário em cerca de 85% dos casos. A **biópsia** da lesão óssea é fundamental, inclusive para afastar sarcoma primário do osso.\n\n| Contexto | Primários mais frequentes |\n|---|---|\n| Metástases ósseas em geral | Mama, próstata, pulmão, rim, tireoide |\n| Metástase de origem desconhecida | Pulmão e rim |\n\n> Metástase óssea sem primário conhecido: procurar pulmão e rim; mama e próstata raramente estão ocultas.",
+  "correta": "**A: Certo.** No grupo de pacientes com carcinoma metastático de origem desconhecida, mama e próstata são primários incomuns, porque esses tumores costumam ser diagnosticados antes da metástase, por rastreamento e exame físico. Os primários mais frequentes nesse grupo são pulmão e rim, que podem evoluir sem sintomas até a metástase óssea.",
+  "incorretas": {
+   "B": "**Marcar errado é confundir a frequência geral das metástases ósseas com a situação específica de primário desconhecido.** Mama e próstata lideram as metástases ósseas em geral, mas raramente são o primário oculto, como mostrou o estudo prospectivo de Rougraff e colaboradores."
+  },
+  "referencias": [
+   "Rougraff BT, Kneisl JS, Simon MA. Skeletal metastases of unknown origin: a prospective study of a diagnostic strategy. J Bone Joint Surg Am. 1993;75(9):1276-1281.",
+   "Azar FM, Beaty JH, eds. Campbell's Operative Orthopaedics. Elsevier. Doença metastática óssea."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "tumores-0366": {
+  "conceito": "**Padrão radiográfico das metástases ósseas conforme o primário.** O aspecto depende do equilíbrio entre a destruição óssea (osteoclastos estimulados pelo tumor) e a formação de osso reativo (osteoblastos).\n\n| Padrão | Primários típicos |\n|---|---|\n| **Lítico** | **Rim**, **tireoide**, pulmão (maioria), mieloma, melanoma, trato gastrointestinal |\n| **Blástico** | **Próstata**, carcinoide, meduloblastoma; às vezes mama e estômago |\n| **Misto** | **Mama**, pulmão, colo do útero |\n\n**Metástases de rim e tireoide.**\n- Quase sempre **puramente líticas**, frequentemente **expansivas** (\"bolha de sabão\"), com destruição cortical.\n- São **muito vascularizadas**: antes da cirurgia, recomenda-se **embolização** pré-operatória para reduzir o sangramento, que pode ser maciço.\n- Lesões solitárias de rim podem ter melhor prognóstico após ressecção ampla.\n- A metástase de tireoide pode responder ao iodo radioativo.\n\n**Implicações clínicas.** Lesões líticas têm maior risco de fratura patológica (pontuação máxima no item tipo de lesão do escore de Mirels). Lesões blásticas, como as da próstata, raramente fraturam, embora possam causar dor intensa.\n\n> Rim e tireoide: metástases puramente líticas, expansivas e muito vascularizadas.",
+  "correta": "**A: Certo.** As metástases ósseas dos carcinomas de rim e de tireoide têm aspecto radiográfico tipicamente puramente lítico, muitas vezes expansivo. Além disso, são muito vascularizadas, o que torna recomendável a embolização antes de uma abordagem cirúrgica, para evitar sangramento maciço.",
+  "incorretas": {
+   "B": "**Marcar errado seria confundir esses primários com a próstata, cujas metástases são caracteristicamente blásticas, ou com a mama, que costuma dar padrão misto.** Rim e tireoide são os exemplos clássicos de metástase lítica pura."
+  },
+  "referencias": [
+   "Greenspan A. Radiologia ortopédica: uma abordagem prática. Guanabara Koogan. Metástases ósseas.",
+   "Azar FM, Beaty JH, eds. Campbell's Operative Orthopaedics. Elsevier. Doença metastática óssea."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  }
 }
