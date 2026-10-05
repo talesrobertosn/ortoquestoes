@@ -1820,18 +1820,18 @@
   "conferido": false
  },
  "pediatria-0120": {
-  "conceito": "### Epifisiólise: fatores\n| Tipo | Fator |\n|---|---|\n| mecânico | ==obesidade==, ==retroversão relativa (menos anteversão)==, ==coxa vara (menor ângulo cervicodiafisário)==, fise mais oblíqua, estirão |\n| endócrino | hipotireoidismo, deficiência de GH (uso de GH), hipogonadismo, osteodistrofia renal, radioterapia |\n\n- Pedir TSH em ==< 10 anos==, baixa estatura, ou bilateral.\n\n### Classificações\n| Critério | Tipos |\n|---|---|\n| Loder (estabilidade) | estável (anda) × ==instável== (não anda; necrose em até 50%) |\n| Southwick (ângulo) | leve < 30°, moderado 30 a 50°, grave > 50° |\n| tempo | aguda < 3 semanas, crônica, crônica agudizada |\n\n### Tratamento\n- ==Fixação in situ== com um parafuso canulado central.\n- Contralateral profilática: < 10 anos, endocrinopatia.\n\n### Ângulo de Southwick\n- Em ==perfil (rã de Lauenstein)==: ângulo entre a perpendicular à linha epifisária e o eixo da diáfise.\n- Comparar com o lado normal (subtrair o contralateral, ou ~10-12° se bilateral).\n\n### Outros\n| Nome | O que é |\n|---|---|\n| Klein | linha na borda superior do colo no AP deve cortar a epífise |\n| Dunn (modificado) | redução aberta com luxação cirúrgica |\n| Kramer | osteotomia basocervical |\n\n> **Na prova:** técnica da figura = ==ângulo de Southwick==",
-  "correta": "**Southwick.**\n- Ângulo epifisário-diafisário no perfil.\n- Leve < 30°, moderado 30 a 50°, grave > 50°.",
+  "conceito": "**A avaliação radiográfica da epifisiólise proximal do fêmur (EPF).** A radiografia em **AP** e em **perfil** (rã ou Lauenstein; nos instáveis, perfil cirúrgico) é a base do diagnóstico. O perfil é mais sensível, porque a epífise desliza sobretudo para **posterior**.\n\n**Os sinais e as medidas.**\n| Sinal ou medida | O que mostra |\n|---|---|\n| **Linha de Klein** (no AP) | Tangente à borda superior do colo: normalmente corta a epífise; na EPF, a epífise fica **abaixo** dela (sinal de **Trethowan**) |\n| **Sinal de Steel** (no AP) | Crescente de densidade dupla na metáfise, onde o colo se sobrepõe à epífise |\n| **Ângulo de Southwick** (no perfil) | Ângulo epifisário-diafisário: grau do deslizamento |\n| Sinal de **Drehmann** (clínico) | Rotação externa obrigatória do quadril ao fletir |\n\n**O ângulo de Southwick.** No **perfil em rã**, traça-se a linha da **base da epífise** (unindo as bordas da fise) e a sua perpendicular; depois, o **eixo da diáfise** femoral. O ângulo entre a perpendicular e o eixo é o **ângulo epifisário-diafisário**. O valor do lado doente é **subtraído** do lado normal (que tem cerca de 10° a 12° de inclinação posterior). Se os dois lados estão acometidos, usa-se 12° como referência.\n- **Leve**: menor que **30°**;\n- **Moderado**: **30° a 50°**;\n- **Grave**: maior que **50°**.\n\n**A imagem.** A figura mostra os dois quadris em **rã**: à esquerda, o quadril normal, com cerca de 10° entre a perpendicular à base da epífise e o eixo da diáfise; à direita, o quadril com EPF, com cerca de **60°**: um deslizamento **grave**. É exatamente a medida de Southwick.\n\n**Para que serve.** Gradua o deslizamento, orienta o prognóstico de **impacto femoroacetabular** e artrose e o planejamento de osteotomias. A estabilidade (Loder), porém, continua sendo o principal fator prognóstico para a necrose.",
+  "correta": "**Correta: C (Southwick).** A imagem mostra o ângulo epifisário-diafisário no perfil em rã, medido entre a perpendicular à base da epífise e o eixo da diáfise e comparado ao lado normal: é o ângulo de Southwick.",
   "incorretas": {
-   "A": "**Linha no AP.**\n- Klein na borda superior do colo.",
-   "B": "**Sinal clínico.**\n- Rotação externa ao fletir.",
-   "D": "**Sinal radiográfico.**\n- Mesma linha de Klein."
+   "A": "A **linha de Klein** é traçada no **AP**, tangente à borda superior do colo; não é um ângulo.",
+   "B": "O sinal de **Drehmann** é **clínico**: a rotação externa obrigatória do quadril ao ser fletido.",
+   "D": "O sinal de **Trethowan** é a linha de Klein que não corta a epífise no AP; não é um ângulo no perfil."
   },
   "referencias": [
    "SCFE review. https://pmc.ncbi.nlm.nih.gov/articles/PMC6460813/",
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 15"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0121": {
@@ -2269,14 +2269,18 @@
   "conferido": false
  },
  "pediatria-0157": {
+  "conceito": "**O pé na marcha.** Durante o apoio, o pé muda de papel: no início precisa ser **flexível**, para absorver o impacto e se adaptar ao chão; no fim precisa ser **rígido**, para servir de **alavanca** e impulsionar o corpo. Essa troca acontece pela **articulação subtalar** (inversão e eversão do calcâneo), acoplada à **rotação da tíbia**.\n\n**O acoplamento subtalar e tibial.**\n| Fase | Calcâneo e tíbia | Pé |\n|---|---|---|\n| **Contato inicial** | Calcâneo em leve inversão | Toca o chão pelo calcanhar |\n| **Resposta à carga** | Calcâneo **everte**; tíbia roda **internamente** | Mediotársica destravada: pé **flexível** (amortecedor) |\n| **Apoio médio e terminal** | Calcâneo **inverte**; tíbia roda **externamente** | Mediotársica travada: pé **rígido** (alavanca) |\n| **Pré-balanço** | A carga passa ao outro membro, e a **rotação externa diminui** | O pé se prepara para sair do chão |\n| **Balanço** | Sem carga | Tornozelo em dorsiflexão para não arrastar os dedos |\n\n**A mediotársica (Chopart).** Quando o calcâneo está **evertido**, os eixos das articulações talonavicular e calcaneocuboide ficam **paralelos**, e o médio-pé se move livremente. Quando o calcâneo **inverte**, os eixos se **cruzam**, e o médio-pé trava. Somado ao **mecanismo de molinete** da fáscia plantar (a extensão dos dedos no desprendimento tensiona a fáscia e eleva o arco), o pé vira uma alavanca rígida.\n\n**O ângulo de progressão do pé.** Na marcha normal, o pé aponta cerca de **10°** para fora (rotação externa) em relação à linha de progressão, com variação de cerca de -3° a +20°. Valores negativos indicam marcha **em rotação interna** (anteversão femoral, torção tibial interna, metatarso aduto).\n\n**A importância clínica.** No pé plano rígido (coalizão tarsal) e no pé cavo, essa sequência se perde: o pé plano rígido não se torna alavanca eficiente, e o pé cavo não amortece o impacto.",
+  "correta": "**Correta: C (diminuição da rotação externa no pré-balanço).** No pré-balanço, com o peso passando para o outro membro, a rotação externa do apoio terminal diminui, e o pé se prepara para o balanço.",
   "incorretas": {
    "A": "O ângulo de progressão normal do pé é de cerca de 10° de rotação externa, não 25°.",
    "B": "No balanço médio o pé está sem carga; a inversão do calcâneo é evento do apoio terminal.",
    "D": "Está invertida: no desprendimento o calcâneo inverte e trava o pé como alavanca."
   },
-  "conceito": "Durante a marcha, o pé muda de papel: no começo do apoio precisa ser **flexível** para absorver o impacto e se adaptar ao chão; no fim do apoio precisa ser **rígido** para servir de alavanca e empurrar o corpo para a frente. Isso acontece pela inversão e eversão do calcâneo, ligadas à rotação da tíbia.\n\n**A sequência no apoio**:\n\n**contato inicial**: o calcâneo toca o chão em leve inversão;\n\n**resposta à carga**: o calcâneo **everte** e a tíbia roda internamente; a articulação mediotársica (Chopart) se destrava e o pé fica flexível;\n\n**apoio terminal e desprendimento**: o calcâneo **inverte**, a tíbia roda externamente e a mediotársica trava; o pé vira alavanca rígida;\n\n**pré-balanço**: com o peso passando para o outro membro, a **rotação externa diminui** e o pé se prepara para sair do chão.\n\n**O ângulo de progressão do pé**: na marcha normal, o pé aponta cerca de **10° para fora** em relação à linha de progressão, e não 25°.\n\n**No balanço**: o pé está no ar, sem carga, e não há inversão do calcâneo como evento característico.\n\n**Na prova**: durante a marcha há **diminuição da rotação externa no pré-balanço**.",
-  "correta": "No pré-balanço, com o peso saindo do membro, a rotação externa do apoio terminal diminui e o pé se prepara para o balanço.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de marcha.",
+   "Perry J, Burnfield JM. Gait Analysis: Normal and Pathological Function. 2ª edição. SLACK, 2010."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0158": {
@@ -3555,18 +3559,18 @@
   "conferido": false
  },
  "pediatria-0291": {
+  "conceito": "**A doença de Legg-Calvé-Perthes.** É a necrose avascular **idiopática** da epífise femoral proximal em crescimento. Acomete crianças de **4 a 8 anos**, **meninos** (4 a 5 para cada menina), com idade óssea atrasada; é bilateral em cerca de 10% a 15%, mas nunca simultânea nem simétrica. A causa exata é desconhecida; trombofilias, tabagismo passivo e baixo nível socioeconômico estão associados.\n\n**As fases da doença e a histologia.** A evolução da doença segue uma sequência previsível, que tem correspondência clínica, radiográfica e histológica:\n| Fase | Achados |\n|---|---|\n| **Necrose** (inicial) | Morte das células ósseas: **lacunas vazias** (ausência de osteócitos) ou osteócitos com **núcleo picnótico**; medula necrótica. Na radiografia: epífise menor, mais **densa** (esclerose), alargamento do espaço articular |\n| **Fragmentação** | Revascularização com **reabsorção** do osso morto por osteoclastos: a epífise se divide em fragmentos; colapso; sinal do crescente (fratura subcondral) |\n| **Reossificação** (reparação) | Osso novo preenche a epífise, de forma organizada |\n| **Residual** (sequela) | Forma final da cabeça, que pode ser esférica ou achatada (Stulberg) |\n\n**A necrose em detalhe.** Os osteócitos ficam em pequenas cavidades da matriz óssea (lacunas). Quando o suprimento sanguíneo é interrompido, eles morrem: primeiro o **núcleo se condensa** (picnose), depois a célula desaparece e a lacuna fica **vazia**. A matriz óssea, porém, não muda de forma imediatamente; por isso a radiografia demora para mostrar alterações, e a epífise parece mais **densa** (o osso morto não é reabsorvido e o osso vivo ao redor fica osteopênico). A cartilagem articular continua viva, nutrida pelo líquido sinovial, e até **espessa**.\n\n**A ressonância** mostra a necrose antes da radiografia, e a **cintilografia** mostra a falta de captação na epífise.\n\n**A ordem das fases (Waldenström)** ajuda a resolver questões: necrose (inicial), fragmentação, reossificação e residual.\n\n**O sinal do crescente.** É uma **linha radiotransparente** em forma de meia-lua logo abaixo da superfície da cabeça femoral. Representa a **fratura subcondral** do osso necrótico (descrita por **Caffey**). Aparece no fim da **fase inicial** (necrose), antes da fragmentação, e é mais visível no **perfil** (Lauenstein). É a base da classificação de **Salter-Thompson**, que prevê cedo a extensão da doença: no grupo **A**, a fratura atinge **menos da metade** da cabeça; no grupo **B**, **mais da metade**.",
+  "correta": "**Correta: A (necrose).** O sinal do crescente é a fratura subcondral do osso necrótico, que aparece na fase inicial, de necrose, antes da fragmentação.",
   "incorretas": {
    "B": "Na fragmentação a epífise já colapsou e se dividiu em fragmentos; é a fase da classificação de Herring.",
    "C": "Na reossificação aparece osso novo; a fratura subcondral é um evento anterior.",
    "D": "A remodelação é a fase residual, avaliada por Stulberg na maturidade."
   },
-  "conceito": "A **doença de Legg-Calvé-Perthes** passa por quatro fases radiográficas, descritas por **Waldenström**:\n\n**inicial (necrose)**: a cabeça fica **densa** e pequena, o espaço articular parece alargado e surge a **fratura subcondral**, vista como o **sinal do crescente**;\n\n**fragmentação**: o osso necrótico é reabsorvido e a epífise se fragmenta e colapsa; é a fase da classificação de **Herring**;\n\n**reossificação**: osso novo substitui o reabsorvido, de fora para dentro;\n\n**residual (remodelação)**: a cabeça já está reconstituída, com a forma final; é avaliada pela classificação de **Stulberg** na maturidade.\n\n**O sinal do crescente**: é uma **linha radiotransparente** em forma de meia-lua logo abaixo da superfície da cabeça. Representa a **fratura subcondral** do osso necrótico (descrita por Caffey). Aparece na **fase inicial**, e é mais visível no **perfil** (Lauenstein).\n\n**Para que serve**: é a base da classificação de **Salter-Thompson**, que prevê cedo a extensão da doença: no grupo A, a fratura atinge menos da metade da cabeça; no B, mais da metade.\n\n**Na prova**: o sinal do crescente aparece na fase de **necrose** (inicial).",
-  "correta": "O sinal do crescente é a fratura subcondral do osso necrótico, que surge na fase inicial, de necrose.",
   "referencias": [
    "Legg-Calve-Perthes Disease. StatPearls. NCBI Bookshelf NBK513230.",
    "Legg-Calvé-Perthes disease: classifications and prognostic factors. PMCID: PMC5505718."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0292": {
@@ -4973,14 +4977,18 @@
   "conferido": false
  },
  "pediatria-0415": {
+  "conceito": "**A epifisiólise proximal do fêmur (EPF).** É o deslizamento da metáfise em relação à epífise pela fise enfraquecida, em adolescentes no estirão, sobretudo **obesos**; associações endócrinas (hipotireoidismo, deficiência de GH, insuficiência renal) devem ser pensadas em crianças menores de 10 anos, magras ou com acometimento bilateral precoce.\n\n**As classificações da EPF.**\n| Critério | Classificação |\n|---|---|\n| **Estabilidade** | **Loder**: estável ou instável, pela **capacidade de apoio** |\n| Tempo de sintomas | Aguda (menos de 3 semanas), crônica, crônica agudizada |\n| Desvio na radiografia AP | Wilson: porcentagem do deslizamento (até 33%, 33% a 50%, mais de 50%) |\n| Ângulo no perfil | **Southwick**: leve (menos de 30°), moderado (30° a 50°), grave (mais de 50°) |\n\n**A classificação de Loder (1993).** Divide a EPF em:\n- **estável**: o paciente consegue **apoiar o peso** e andar, com ou sem muletas;\n- **instável**: o paciente **não consegue apoiar** o membro, nem com muletas, pela dor intensa (a fise se comporta como uma fratura).\n\n**Por que é a mais importante.** É a que melhor prevê a **necrose avascular**: na EPF **instável**, a necrose chega a cerca de **47%** na série original (de 20% a 50% nas séries); na **estável**, é praticamente **zero**. A instabilidade sugere lesão dos vasos retinaculares que nutrem a epífise.\n\n**O tratamento.** Na estável, **fixação in situ** com um parafuso canulado central, perpendicular à fise, sem tentar reduzir. Na instável, é uma **urgência**: fixação precoce, às vezes descompressão da cápsula (artrotomia ou punção) e redução **delicada** (posicional) ou a redução aberta pela luxação cirúrgica (Dunn modificada) em centros experientes. A fixação profilática do lado contralateral é discutida nos pacientes de alto risco (jovens e com doença endócrina).",
+  "correta": "**Correta: B (a instabilidade).** Loder mostrou que a instabilidade (incapacidade de apoiar o membro) é o fator preditivo da osteonecrose na EPF: cerca de 47% nas instáveis e praticamente zero nas estáveis.",
   "incorretas": {
-   "A": "A idade não é o critério de Loder para prever a necrose.",
-   "C": "O grau de desvio, medido por Southwick, prevê a necrose pior que a estabilidade.",
-   "D": "A força do trauma não entra na classificação de Loder."
+   "A": "A **idade** não foi o fator preditivo identificado por Loder para a osteonecrose.",
+   "C": "O **grau de desvio** se relaciona com a deformidade e o impacto, mas não foi o preditor da necrose na série de Loder.",
+   "D": "A **força do trauma** não define o risco: muitas EPF instáveis surgem com trauma mínimo."
   },
-  "conceito": "Na **epifisiólise proximal do fêmur**, a complicação mais temida é a **osteonecrose** da cabeça femoral. **Loder** (1993) mostrou que o melhor fator para prevê-la é a **estabilidade**, avaliada pela clínica:\n\n**estável**: a criança **consegue andar**, com ou sem muletas; a necrose é praticamente **zero**;\n\n**instável**: a criança **não consegue andar**, nem com muletas, pela dor; a necrose chega a cerca de **47%**.\n\n**Por que a instabilidade importa**: na forma instável, a epífise se separou de forma abrupta e pode ter **lesado ou dobrado os vasos do retináculo** posterior; o hematoma intracapsular também aumenta a pressão sobre eles.\n\n**O que prevê pior**: a classificação de Loder é melhor preditora que a classificação pelo tempo (aguda, crônica, crônica agudizada) e que o **grau de desvio** (ângulo de Southwick). A idade e a força do trauma não fazem parte do critério.\n\n**A conduta na instável**: urgência, com fixação in situ sem manobras forçadas, descompressão da cápsula (técnica de Parsch) ou redução aberta com luxação cirúrgica (Dunn modificado) em centros experientes.\n\n**Na prova**: o fator preditivo de osteonecrose segundo Loder é a **instabilidade**.",
-  "correta": "A instabilidade, ou seja, não conseguir andar, é o melhor preditor de necrose: até cerca de 47% contra quase zero na forma estável.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Loder RT, Richards BS, Shapiro PS, Reznick LR, Aronson DD. Acute slipped capital femoral epiphysis: the importance of physeal stability. J Bone Joint Surg Am. 1993;75(8):1134-40.",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de epifisiólise proximal do fêmur."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0416": {
@@ -5901,14 +5909,18 @@
   "conferido": false
  },
  "pediatria-0486": {
+  "conceito": "**O joelho valgo na criança: fisiológico ou patológico.** O alinhamento dos joelhos muda com a idade de forma previsível (curva de **Salenius e Vankka**):\n| Idade | Alinhamento normal |\n|---|---|\n| Nascimento a 18 meses | **Varo** fisiológico, que diminui |\n| Cerca de 18 a 24 meses | Neutro |\n| **3 a 4 anos** | **Valgo máximo** (cerca de 10° a 12°) |\n| 7 anos em diante | Valgo do adulto (cerca de 5° a 7°) |\n\n**Quando suspeitar de valgo patológico.** Ângulo maior que cerca de **15°** ou distância intermaleolar maior que **8 a 10 cm** após os 7 anos; **assimetria**; **progressão**; baixa estatura; aparecimento fora da idade esperada.\n\n**As causas de valgo patológico.**\n- **Osteodistrofia renal** (a mais associada): a doença renal crônica deixa o fosfato alto, o cálcio baixo e o **PTH muito alto** (hiperparatireoidismo secundário). As fises ficam alargadas e frágeis; a deformidade **típica** é o **valgo** dos joelhos, e a **epifisiólise** aparece com frequência, inclusive em locais atípicos e em crianças pequenas.\n- **Pós-traumático**: fenômeno de **Cozen** (fratura metafisária proximal da tíbia) e lesões fisárias laterais.\n- **Displasias esqueléticas**: Morquio, displasia condroectodérmica (Ellis-van Creveld), displasia epifisária múltipla.\n- Pós-infeccioso, tumores (osteocondromas, displasia fibrosa), **obesidade** no adolescente.\n\n**O raquitismo e a neurofibromatose.** No raquitismo nutricional e no **hipofosfatêmico**, a deformidade mais comum é o **varo**, embora o valgo possa aparecer (o \"joelho em vendaval\", varo de um lado e valgo do outro). A **neurofibromatose** se associa sobretudo ao arqueamento **anterolateral** da tíbia e à pseudartrose.\n\n**O tratamento.** Controlar a doença de base primeiro (na osteodistrofia renal, fosfato, calcitriol e controle do PTH); depois, **crescimento guiado** com **placa em 8** medial enquanto a fise está aberta, ou osteotomia se ela já fechou.",
+  "correta": "**Correta: D (osteodistrofia renal).** Na osteodistrofia renal, o hiperparatireoidismo secundário enfraquece as fises, e o valgo dos joelhos é a deformidade típica, frequentemente com epifisiólise.",
   "incorretas": {
    "A": "No raquitismo a deformidade mais comum é o varo, embora possa haver valgo.",
    "B": "A neurofibromatose se associa mais ao arqueamento anterolateral da tíbia.",
    "C": "O raquitismo hipofosfatêmico causa geralmente varo."
   },
-  "conceito": "O **joelho valgo** é normal entre 2 e 7 anos, com pico por volta de 3 a 4 anos. Ele é **patológico** quando passa de cerca de 15°, quando é assimétrico, progride ou aparece fora da idade esperada.\n\n**As causas de valgo patológico**:\n\n**osteodistrofia renal**: a doença renal crônica deixa o fosfato alto, o cálcio baixo e o PTH muito alto (hiperparatireoidismo secundário). O osso fica fraco e as fises, alargadas; a deformidade **típica** é o **valgo** dos joelhos, e a **epifisiólise** aparece com frequência, inclusive em locais atípicos;\n\n**raquitismo nutricional e hipofosfatêmico**: a deformidade mais comum é o **varo**, embora o valgo possa aparecer;\n\n**pós-traumático** (fenômeno de **Cozen**): valgo progressivo depois de fratura metafisária proximal da tíbia;\n\n**displasias esqueléticas**, como a de Morquio;\n\n**neurofibromatose**: mais associada ao arqueamento anterolateral da tíbia.\n\n**O tratamento**: controlar a doença de base primeiro (na osteodistrofia renal, controle do fosfato e do PTH); depois, **crescimento guiado** com placa em 8 medial enquanto a fise está aberta, ou osteotomia se já fechou.\n\n**Na prova**: o valgo infantil patológico se associa mais à **osteodistrofia renal**.",
-  "correta": "Na osteodistrofia renal, o valgo dos joelhos é a deformidade típica, junto com a epifisiólise.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de deformidades angulares dos membros inferiores.",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo de doenças metabólicas ósseas."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0487": {
@@ -6738,17 +6750,18 @@
   "conferido": false
  },
  "pediatria-0545": {
+  "conceito": "**A fratura da metáfise proximal da tíbia (fratura de Cozen).** É uma fratura aparentemente simples, típica de crianças de **3 a 6 anos**, muitas vezes em **galho verde** ou incompleta, com abertura da cortical **medial**. O seu problema é o **valgo progressivo** que aparece nos meses seguintes, mesmo quando a fratura foi bem reduzida: o **fenômeno de Cozen**.\n\n**As causas propostas para o valgo.**\n| Teoria | Explicação |\n|---|---|\n| **Hipercrescimento medial** | A hiperemia da consolidação estimula mais a fise do lado medial da tíbia |\n| **Interposição de partes moles** | **Pata de ganso** (sartório, grácil e semitendíneo), periósteo ou colateral medial presos no foco medial, impedindo o fechamento |\n| **Fíbula íntegra** | Funciona como tirante lateral e limita o crescimento lateral |\n| Redução incompleta | O foco medial fica aberto (valgo residual) |\n\n**A evolução natural.** O valgo aparece nos primeiros **6 a 12 meses**, atinge o máximo em até **18 a 24 meses** e, na maioria das crianças, **corrige espontaneamente** de forma parcial ou completa ao longo de vários anos, à medida que a tíbia cresce e remodela.\n\n**A interposição da pata de ganso.** Os tendões da **pata de ganso** (sartório, grácil e semitendíneo) passam pela face **medial** da metáfise proximal da tíbia. Na fratura com abertura medial, eles e o periósteo podem se **interpor** no foco, impedindo o fechamento da cortical medial na redução e contribuindo para o valgo. Por isso, quando a redução fechada não fecha o lado medial, a exploração cirúrgica com liberação das partes moles interpostas pode ser necessária.\n\n**O tratamento.**\n- **Avisar os pais** desde o início que o valgo pode surgir, mesmo com tratamento correto.\n- Redução fechada sob anestesia, com o joelho em **extensão** e força em **varo**, fechando a cortical medial; gesso inguinopodálico moldado em varo.\n- Se a cortical medial não fecha, suspeitar de **interposição** (pata de ganso, periósteo): a exploração e a liberação podem ser necessárias.\n- No valgo estabelecido, **observar** por pelo menos 18 a 24 meses; se não corrigir e for grave, **hemiepifisiodese medial** (placa em 8) ou osteotomia (com risco de recidiva). A osteotomia precoce é **evitada**, porque o valgo tende a voltar.",
+  "correta": "**Correta: D (valgo e pata de ganso).** O desvio tardio típico da fratura metafisária proximal da tíbia é o valgo, e a estrutura que mais frequentemente se interpõe no foco medial é a pata de ganso, com o periósteo.",
   "incorretas": {
-   "A": "Erra os dois pontos: o desvio é valgo, e a estrutura interposta é medial, a pata de ganso.",
-   "B": "O valgo está certo, mas o trato iliotibial é lateral; a interposição é medial.",
-   "C": "A pata de ganso está certa, mas o desvio tardio é valgo, não varo."
+   "A": "O desvio tardio é o **valgo**, e o **trato iliotibial** fica do lado lateral, longe do foco medial que se abre.",
+   "B": "O valgo está certo, mas a estrutura interposta fica no lado **medial**: a pata de ganso, e não o trato iliotibial.",
+   "C": "A pata de ganso está certa, mas o desvio tardio é o **valgo**, e não o varo."
   },
-  "conceito": "A **fratura de Cozen** é a fratura da **metáfise proximal da tíbia** na criança pequena, em geral entre 3 e 6 anos. Parece benigna, pouco desviada, mas **evolui com valgo progressivo** nos meses seguintes, mesmo com boa redução.\n\n**As explicações propostas**:\n\n**crescimento assimétrico**: a hiperemia da consolidação estimula mais o lado medial da fise;\n\n**tração da fíbula** intacta, que segura o lado lateral;\n\n**interposição de partes moles** no lado **medial** da fratura, como a **pata de ganso** e o periósteo, que mantém o foco aberto.\n\n**O que esperar**: o valgo aparece nos primeiros meses, tem pico em 12 a 18 meses e tende a **remodelar sozinho** em 2 a 4 anos.\n\n**A conduta**:\n\n**gesso inguinopodálico** com o joelho em extensão e moldagem em **varo**;\n\n**explorar** se a fratura ficar aberta no lado medial, para retirar a interposição;\n\n**avisar os pais** desde o início que o valgo pode surgir;\n\n**osteotomia** só se a deformidade persistir por anos, porque a precoce recidiva; o **crescimento guiado** é uma opção.\n\n**Na prova**: na fratura proximal da tíbia na criança, o desvio tardio é **valgo** e a estrutura interposta é a **pata de ganso**.",
-  "correta": "O fenômeno de Cozen é o valgo tardio, e a interposição medial da pata de ganso é uma das explicações.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 36"
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 36",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), capítulo de fraturas da tíbia proximal."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0546": {
@@ -7117,17 +7130,18 @@
   "conferido": false
  },
  "pediatria-0579": {
+  "conceito": "**A fratura da metáfise proximal da tíbia (fratura de Cozen).** É uma fratura aparentemente simples, típica de crianças de **3 a 6 anos**, muitas vezes em **galho verde** ou incompleta, com abertura da cortical **medial**. O seu problema é o **valgo progressivo** que aparece nos meses seguintes, mesmo quando a fratura foi bem reduzida: o **fenômeno de Cozen**.\n\n**As causas propostas para o valgo.**\n| Teoria | Explicação |\n|---|---|\n| **Hipercrescimento medial** | A hiperemia da consolidação estimula mais a fise do lado medial da tíbia |\n| **Interposição de partes moles** | **Pata de ganso** (sartório, grácil e semitendíneo), periósteo ou colateral medial presos no foco medial, impedindo o fechamento |\n| **Fíbula íntegra** | Funciona como tirante lateral e limita o crescimento lateral |\n| Redução incompleta | O foco medial fica aberto (valgo residual) |\n\n**A evolução natural.** O valgo aparece nos primeiros **6 a 12 meses**, atinge o máximo em até **18 a 24 meses** e, na maioria das crianças, **corrige espontaneamente** de forma parcial ou completa ao longo de vários anos, à medida que a tíbia cresce e remodela.\n\n**O tratamento.**\n- **Avisar os pais** desde o início que o valgo pode surgir, mesmo com tratamento correto.\n- Redução fechada sob anestesia, com o joelho em **extensão** e força em **varo**, fechando a cortical medial; gesso inguinopodálico moldado em varo.\n- Se a cortical medial não fecha, suspeitar de **interposição** (pata de ganso, periósteo): a exploração e a liberação podem ser necessárias.\n- No valgo estabelecido, **observar** por pelo menos 18 a 24 meses; se não corrigir e for grave, **hemiepifisiodese medial** (placa em 8) ou osteotomia (com risco de recidiva). A osteotomia precoce é **evitada**, porque o valgo tende a voltar.",
+  "correta": "**Correta: B (valgo).** Após a fratura da metáfise proximal da tíbia na criança, o valgo progressivo (fenômeno de Cozen) é a complicação tardia mais comum, mesmo com redução adequada.",
   "incorretas": {
-   "A": "O varo é o oposto do desvio que acontece no fenômeno de Cozen.",
-   "C": "O recurvato aparece mais depois de lesões da tuberosidade anterior da tíbia.",
-   "D": "O antecurvato não é a complicação tardia típica dessa fratura."
+   "A": "O **varo** não é a complicação típica: o hipercrescimento e a interposição ocorrem no lado **medial**, levando ao valgo.",
+   "C": "O **recurvato** é a complicação da lesão da fise **anterior** (tuberosidade), e não da fratura metafisária.",
+   "D": "O **antecurvato** não é a deformidade característica da fratura metafisária proximal."
   },
-  "conceito": "A **fratura da metáfise proximal da tíbia** na criança pequena (fratura de **Cozen**) parece benigna, com pouco desvio. Mas, nos meses seguintes, mesmo com boa redução, a tíbia pode entortar em **valgo progressivo**: é o **fenômeno de Cozen**.\n\n**Por que acontece** (as explicações se somam):\n\n**crescimento assimétrico**: a hiperemia da consolidação estimula mais o lado medial da fise;\n\n**fíbula intacta**: segura o lado lateral e funciona como uma corda;\n\n**interposição de partes moles** no lado medial (pata de ganso, periósteo), que mantém o foco aberto.\n\n**A evolução**: o valgo aparece nos primeiros meses, tem **pico em 12 a 18 meses** e, na maioria, **remodela sozinho** em 2 a 4 anos.\n\n**A conduta**:\n\n**gesso inguinopodálico** em extensão, moldado em varo;\n\n**avisar os pais** desde o início;\n\n**não operar cedo**: a osteotomia precoce costuma recidivar; o crescimento guiado é opção se a deformidade persistir.\n\n**Os outros desvios**: o **recurvato** aparece mais depois de lesões da tuberosidade anterior da tíbia; varo e antecurvato não são a complicação típica.\n\n**Na prova**: a deformidade tardia mais comum após fratura da metáfise proximal da tíbia é o **valgo**.",
-  "correta": "O fenômeno de Cozen é o valgo progressivo depois da fratura metafisária proximal da tíbia, que na maioria remodela.",
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 30"
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 30",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), capítulo de fraturas da tíbia proximal."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0580": {
@@ -7426,17 +7440,18 @@
   "conferido": false
  },
  "pediatria-0600": {
+  "conceito": "**A fratura supracondiliana do úmero na criança.** É a fratura do cotovelo mais comum da infância, com pico entre **5 e 7 anos**. Cerca de **97%** são do tipo em **extensão**: queda com a mão espalmada e o cotovelo em hiperextensão; o olécrano funciona como fulcro e a região supracondiliana, fina, quebra.\n\n**A classificação de Gartland (modificada).**\n| Tipo | Descrição |\n|---|---|\n| I | Sem desvio |\n| II | Desvio com a **cortical posterior** íntegra (dobradiça) |\n| III | Desvio **completo** |\n| IV | Instabilidade multidirecional (periósteo rompido), definida na redução |\n\n**A direção do desvio.** No tipo em extensão, o fragmento distal desvia para **posterior**. No plano coronal, o desvio mais comum é o **posteromedial** (cerca de 75% dos tipos III), porque a força da queda costuma ter um componente de rotação interna e o periósteo lateral é rompido. O restante é **posterolateral**.\n\n**Por que a direção importa.**\n| Desvio do fragmento distal | Estrutura em risco |\n|---|---|\n| **Posteromedial** | O fragmento proximal empurra para **lateral**: **nervo radial** |\n| **Posterolateral** | O fragmento proximal empurra para **medial**: **artéria braquial** e **nervo mediano** (interósseo anterior) |\n\nO nervo **mais lesado no geral** é o **interósseo anterior** (ramo do mediano). O **ulnar** é lesado sobretudo no tipo em **flexão** e na fixação com fio medial (iatrogênica).\n\n**O tratamento.** Tipo I: gesso. Tipos II desviados, III e IV: **redução fechada** e fixação com **fios percutâneos** (dois ou três laterais divergentes, ou cruzados com cuidado com o ulnar). A **mão sem pulso, mas rosada** (bem perfundida) após a redução pode ser observada com vigilância; a mão **sem pulso e mal perfundida** exige exploração vascular. A complicação mais comum a longo prazo é o **cúbito varo** (deformidade em \"coronha de espingarda\"), por redução com rotação e varo residual.",
+  "correta": "**Correta: D (posterior e medial).** Na fratura supracondiliana em extensão, o fragmento distal desvia para posterior, e no plano coronal o desvio posteromedial é o mais comum; nesse padrão, o nervo radial é o mais ameaçado.",
   "incorretas": {
-   "A": "O desvio anterior é do padrão em flexão, que é raro.",
-   "B": "O desvio anterior com componente medial também é do padrão em flexão, raro.",
-   "C": "O desvio posterolateral existe, mas é menos comum que o posteromedial."
+   "A": "O desvio **anterior** do fragmento distal caracteriza a fratura em **flexão**, rara.",
+   "B": "O desvio anterior é da fratura em flexão; no tipo em extensão, o fragmento distal vai para **posterior**.",
+   "C": "O desvio **posterolateral** existe, mas é menos comum que o posteromedial; nele, ficam em risco a artéria braquial e o nervo mediano."
   },
-  "conceito": "A **fratura supracondiliana do úmero** é a fratura mais comum do cotovelo da criança. Em mais de 95% dos casos é do tipo **em extensão**: a criança cai com o cotovelo em hiperextensão, e o **fragmento distal desvia para trás** (posterior).\n\n**No plano coronal**, o fragmento distal também vai para um lado:\n\n**posteromedial**: o **mais comum**, em cerca de 75% dos casos; o fragmento proximal se projeta lateralmente e ameaça o **nervo radial**;\n\n**posterolateral**: menos comum; o fragmento proximal se projeta medialmente e ameaça a **artéria braquial** e o **nervo mediano** (interósseo anterior).\n\n**O tipo em flexão** (fragmento distal **anterior**) é raro, por queda sobre o cotovelo fletido, e ameaça o nervo ulnar.\n\n**A classificação de Gartland**: I sem desvio (gesso); II com a cortical posterior íntegra (redução e, conforme o caso, fios); III com desvio completo (redução fechada e fios); IV instável em flexão e extensão.\n\n**A redução**: tração, correção do desvio lateral, flexão com pressão no olécrano e, no posteromedial, **pronação** para fechar a dobradiça medial.\n\n**Na prova**: o desvio mais comum do fragmento distal na supracondiliana em extensão é **posterior e medial**.",
-  "correta": "Na supracondiliana em extensão, o fragmento distal vai para trás e, em cerca de 75% dos casos, para medial.",
   "referencias": [
-   "Rockwood and Wilkins's fractures in Children 7 th ed. 490 pg  (referência indicada na prova TARO 2015, questão 79)"
+   "Rockwood and Wilkins's fractures in Children 7 th ed. 490 pg  (referência indicada na prova TARO 2015, questão 79)",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), capítulo de fraturas supracondilianas do úmero."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0601": {
@@ -8151,17 +8166,18 @@
   "conferido": false
  },
  "pediatria-0650": {
+  "conceito": "**As fraturas de transição do tornozelo.** A fise distal da tíbia não fecha toda de uma vez: o fechamento começa no **centro**, avança para **medial** e termina na parte **anterolateral**, ao longo de cerca de **18 meses** (entre 12 e 15 anos nas meninas, 14 e 18 nos meninos). Nesse período, a parte lateral ainda aberta é o ponto fraco, e surgem as **fraturas de transição**: a de **Tillaux** e a **triplanar**.\n\n**A fratura triplanar.** O traço passa em **três planos**:\n- **sagital**: vertical pela **epífise**, até a articulação;\n- **axial** (transverso): horizontal pela **fise** ainda aberta lateralmente;\n- **coronal**: vertical pela **metáfise posterior** da tíbia.\n\n**O que cada incidência mostra.**\n| Incidência | Aspecto |\n|---|---|\n| **AP** (e mortalha) | Traço sagital pela epífise: aparência de **Salter-Harris III** |\n| **Perfil** | Traço coronal pela metáfise posterior: aparência de **Salter-Harris II** |\n| Combinação | Em três dimensões, comporta-se como um **Salter-Harris IV** |\n\n**Os tipos.** A triplanar pode ter **dois, três ou quatro fragmentos**, conforme os traços se cruzam; a de dois fragmentos com fíbula íntegra é a mais comum. O mecanismo é a **rotação externa** do pé.\n\n**A tomografia e o tratamento.** A **tomografia** é obrigatória para medir o degrau articular e planejar. A regra é: **desvio articular maior que 2 mm** (degrau ou diástase) indica redução **anatômica**, fechada ou aberta, com fixação por **parafusos** (epifisários e metafisários, paralelos à fise). Como a fise está quase fechada, o risco de deformidade por parada de crescimento é baixo, e o objetivo principal é a **congruência articular**, para evitar artrose.\n\n**Por que a sequência de fechamento explica a lesão.** Durante os cerca de 18 meses de fechamento da fise distal da tíbia, a parte **central e medial** já está fundida e a parte **anterolateral** ainda está aberta. A força em **rotação externa** encontra uma fise parcialmente fechada: o traço atravessa a epífise (sagital), corre pela fise ainda aberta (axial) e sai pela metáfise (coronal). Se a fise estivesse toda aberta, a lesão seria uma Salter-Harris I ou II; se estivesse toda fechada, seria uma fratura do adulto. É por isso que as fraturas de **transição** (triplanar e Tillaux) só ocorrem no adolescente perto da maturidade.",
+  "correta": "**Correta: D (a sequência de fechamento da placa fisária da tíbia).** A fise distal da tíbia fecha do centro para medial e por último na parte anterolateral; a fise parcialmente fechada é que produz o traço em três planos.",
   "incorretas": {
-   "A": "O mecanismo é rotacional indireto, não trauma direto.",
-   "B": "A espessura do periósteo não define o padrão do traço.",
-   "C": "A diferença entre os diâmetros da tíbia e da fíbula não explica o traço."
+   "A": "A triplanar é causada por **rotação externa** indireta, e não por trauma direto.",
+   "B": "O **periósteo espesso** influencia a estabilidade das fraturas na criança, mas não explica o padrão em três planos.",
+   "C": "A diferença de diâmetro entre tíbia e fíbula não determina o padrão; o fator é a **fise parcialmente fechada**."
   },
-  "conceito": "A **fratura triplanar** é uma **fratura transicional**: só acontece no adolescente, numa janela de cerca de 18 meses durante o **fechamento da fise distal da tíbia**.\n\n**O fator que define o padrão**: a **sequência de fechamento** da fise, que é previsível:\n\nprimeiro fecha a parte **central**;\n\ndepois a **medial**;\n\npor último a **lateral**.\n\n**O que acontece**: enquanto a parte central e a medial já estão fechadas (firmes como osso), a parte **lateral** (sobretudo anterolateral) ainda está **aberta** e frágil. Com uma força de **rotação externa** no pé, a fratura procura o caminho mais fraco: passa pela **parte aberta da fise**, sobe pela **epífise** até a articulação e desce pela **metáfise posterior**, criando o traço em três planos.\n\n**A mesma lógica** explica a fratura de **Tillaux**: o ligamento tibiofibular anteroinferior arranca a parte anterolateral ainda aberta.\n\n**Os outros fatores** (trauma direto, espessura do periósteo, diâmetros dos ossos) não explicam o padrão; o mecanismo é **rotacional indireto**, e o que molda o traço é a fise parcialmente fechada.\n\n**Na prova**: o padrão da fratura triplanar é definido pela **sequência de fechamento da placa fisária da tíbia**.",
-  "correta": "A fise fecha de central para medial e por último lateral; a parte ainda aberta cede na rotação externa e define o traço.",
   "referencias": [
-   "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott. 3rd ed., p. 1506 (referência indicada na prova TARO 2011, questão 40)"
+   "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott. 3rd ed., p. 1506 (referência indicada na prova TARO 2011, questão 40)",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), capítulo de fraturas da tíbia distal e do tornozelo."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0651": {
@@ -8640,17 +8656,18 @@
   "conferido": false
  },
  "pediatria-0684": {
+  "conceito": "**A mielomeningocele e o fechamento do tubo neural.** A mielomeningocele é a forma mais grave e mais comum de **espinha bífida aberta**: a medula e as meninges saem por um defeito dos arcos posteriores e ficam expostas em uma bolsa nas costas, geralmente lombar ou lombossacra.\n\n**A embriologia.** Na terceira semana, a placa neural se dobra e forma o **sulco neural**, cujas bordas se aproximam e se fundem, formando o **tubo neural**. O fechamento começa na região cervical e avança como um zíper nos dois sentidos. O **neuróporo anterior** (cranial) fecha por volta do **25º ao 26º dia**, e o **neuróporo posterior** (caudal), por volta do **26º ao 28º dia**. A falha do fechamento caudal produz a mielomeningocele; a falha do cranial produz a anencefalia. Por isso o defeito acontece **antes que a gestante saiba que está grávida**, e a prevenção precisa ser feita antes da concepção.\n\n**Os fatores de risco.**\n| Fator | Comentário |\n|---|---|\n| **Deficiência de ácido fólico** | O principal fator modificável; a suplementação periconcepcional reduz o risco em cerca de 70% |\n| **Genética** | Risco de recorrência de 2% a 5% após um filho afetado; maior em algumas etnias |\n| **Fármacos** | Ácido valproico e carbamazepina |\n| Diabetes e obesidade maternos, hipertermia | Aumentam o risco |\n\n**O diagnóstico pré-natal.** A **alfafetoproteína** elevada no soro materno e no líquido amniótico, e a ultrassonografia (sinais do \"limão\" e da \"banana\", pela malformação de Chiari II), permitem o diagnóstico precoce.\n\n**As consequências ortopédicas.** O **nível neurológico** (torácico, lombar alto, lombar baixo, sacral) define o prognóstico de marcha e as deformidades: luxação paralítica do quadril, pé torto rígido, pé calcâneo, escoliose e cifose. A **hidrocefalia** (Chiari II) e a **medula presa** podem piorar a função com o crescimento, e a alergia ao **látex** é frequente.\n\n**O ácido fólico na prática.** Recomenda-se **0,4 mg por dia** de ácido fólico para todas as mulheres em idade fértil, começando pelo menos **um mês antes** da concepção e mantendo até o fim do primeiro trimestre. Nas mulheres com **filho anterior** afetado, usuárias de anticonvulsivantes ou diabéticas, a dose é maior (cerca de **4 a 5 mg por dia**). A fortificação de farinhas com ácido fólico, adotada no Brasil, reduziu a incidência dos defeitos do tubo neural.",
+  "correta": "**Correta: C (ácido fólico).** A suplementação de ácido fólico antes da concepção e no início da gestação reduz em cerca de 70% o risco de defeitos do tubo neural, como a mielomeningocele.",
   "incorretas": {
-   "A": "A vitamina E não tem efeito comprovado na prevenção da mielomeningocele.",
-   "B": "A vitamina D não previne os defeitos do tubo neural.",
-   "D": "O ácido valproico é fator de risco para mielomeningocele, não prevenção."
+   "A": "A **vitamina E** não tem papel na prevenção dos defeitos do tubo neural.",
+   "B": "A **vitamina D** é importante para o osso, mas não previne a mielomeningocele.",
+   "D": "O **ácido valproico** é um **fator de risco** para a mielomeningocele (teratogênico), e não um meio de prevenção."
   },
-  "conceito": "A **mielomeningocele** é um defeito do **fechamento do tubo neural**, que acontece na **4ª semana** de gestação (entre o 26º e o 28º dia), muitas vezes antes de a mulher saber que está grávida.\n\n**A prevenção**: o **ácido fólico** tomado **antes da concepção** e no início da gestação reduz o risco em cerca de **70%**:\n\n**população geral**: **0,4 mg por dia**;\n\n**mulher com filho anterior afetado** ou outros fatores de risco: **4 mg por dia**.\n\n**Por que antes da concepção**: o tubo neural fecha muito cedo; se o suplemento começar só quando a gravidez for confirmada, pode ser tarde. Por isso a recomendação é para toda mulher que planeja engravidar, e muitos países fortificam farinhas com ácido fólico.\n\n**Os fatores de risco**:\n\n**deficiência de folato**: o principal fator modificável;\n\n**medicamentos**: **ácido valproico** e carbamazepina (anticonvulsivantes); o valproico é **fator de risco**, não prevenção;\n\n**condições maternas**: diabetes, obesidade e hipertermia no primeiro trimestre;\n\n**irmão afetado**: risco de 2 a 5%.\n\n**As vitaminas E e D** não previnem os defeitos do tubo neural.\n\n**Na prova**: na gestação, a prevenção da mielomeningocele é feita com **ácido fólico**.",
-  "correta": "O ácido fólico periconcepcional reduz em cerca de 70% os defeitos do tubo neural, como a mielomeningocele.",
   "referencias": [
-   "Lovell and Winter’s Pediatric Orthopaedics, 5th Ed., p. 655 (referência indicada na prova TARO 2013, questão 89)"
+   "Lovell and Winter’s Pediatric Orthopaedics, 5th Ed., p. 655 (referência indicada na prova TARO 2013, questão 89)",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de mielomeningocele."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0685": {
