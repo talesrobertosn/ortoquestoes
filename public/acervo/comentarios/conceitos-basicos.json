@@ -2883,19 +2883,20 @@
   "conferido": false
  },
  "conceitos-basicos-0290": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": "**Arrancamento do parafuso.** A resistência depende do diâmetro externo da rosca e do comprimento de rosca no osso.\n\n**Na prova:** diâmetro da rosca e comprimento definem o arrancamento.",
-  "correta": "**Diâmetro da rosca do parafuso.** É proporcional ao diâmetro da rosca.",
+  "conceito": "**Parafusos: anatomia e resistência ao arrancamento.** O parafuso converte torque em compressão. Sua resistência ao **arrancamento** (pullout), isto é, à força que tenta puxá-lo para fora no eixo, depende da quantidade de osso capturado entre as roscas.\n\n**Anatomia do parafuso.**\n- **Diâmetro externo (maior)**: diâmetro da rosca, de ponta a ponta.\n- **Diâmetro do núcleo (menor)**: diâmetro da alma; determina a resistência à flexão e à torção (proporcional ao cubo do raio, para a flexão).\n- **Passo**: distância entre duas roscas consecutivas.\n- **Haste lisa**: segmento sem rosca do parafuso de tração parcialmente rosqueado.\n\n**O que determina o arrancamento.** A força de arrancamento é proporcional à **área de osso cisalhada** ao redor da rosca, que é um cilindro: área = perímetro (função do **diâmetro externo**) multiplicado pelo **comprimento de rosca no osso**. Somam-se a qualidade do osso (densidade) e a profundidade da rosca. Chapman e colaboradores mostraram experimentalmente a importância do diâmetro externo e da densidade óssea.\n\n| Fator | Efeito no arrancamento |\n|---|---|\n| **Diâmetro externo da rosca** | Aumenta (mais osso capturado) |\n| Comprimento de rosca no osso | Aumenta |\n| Densidade óssea | Aumenta |\n| Diâmetro do núcleo | Pouco efeito no arrancamento; aumenta a resistência à quebra |\n| Passo | Efeito menor; passo maior no osso esponjoso aumenta o osso entre as roscas |\n\n**O parafuso de tração.** Para comprimir, a rosca deve prender apenas no fragmento distante; no fragmento próximo, o parafuso desliza (orifício de deslizamento ou haste lisa). A compressão gerada depende da rosca no fragmento distante resistir ao arrancamento, por isso o diâmetro e o comprimento da rosca nesse fragmento são decisivos.\n\n> Arrancamento depende do diâmetro externo da rosca, do comprimento rosqueado e da qualidade do osso.",
+  "correta": "**B: diâmetro da rosca do parafuso (resposta pela bibliografia).** Quanto maior o diâmetro externo da rosca, maior o cilindro de osso que precisa ser cisalhado para arrancar o parafuso, e maior a resistência ao arrancamento.",
   "incorretas": {
-   "A": "**Passo da rosca do parafuso.** Influencia menos.",
-   "C": "**Tamanho da cabeça do parafuso.** Não define o arrancamento.",
-   "D": "**Diâmetro da superfície lisa do parafuso.** Não define o arrancamento."
+   "A": "**O passo da rosca** tem efeito secundário; altera a quantidade de osso entre as roscas, mas a resistência não é diretamente proporcional a ele.",
+   "C": "**O tamanho da cabeça** influencia a distribuição da compressão no fragmento próximo e a resistência ao afundamento da cabeça, não o arrancamento da rosca.",
+   "D": "**O diâmetro da haste lisa** não participa da fixação no osso; no parafuso de tração, essa porção apenas desliza no fragmento próximo."
   },
   "referencias": [
-   "Browner J, Levine e Trafton. Skeletal trauma. Philadelphia: Saunders/Manole. 3ª ed., pg. 204."
+   "Browner J, Levine e Trafton. Skeletal trauma. Philadelphia: Saunders/Manole. 3ª ed., pg. 204.",
+   "Chapman JR, Harrington RM, Lee KM, Anderson PA, Tencer AF, Kowalski D. Factors affecting the pullout strength of cancellous bone screws. J Biomech Eng. 1996;118(3):391-398."
   ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "B",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "conceitos-basicos-0291": {

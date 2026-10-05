@@ -6291,19 +6291,20 @@
   "conferido": false
  },
  "mao-0609": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "D",
-  "conceito": "**Mão torta radial (Bayne e Klug).** I: rádio distal curto. II: rádio hipoplásico em miniatura. III: ausência parcial. IV: ausência completa, a mais comum.\n\n**Na prova:** Bayne IV é a ausência total, a forma mais comum.",
-  "correta": "**Hipoplasia total do rádio.** O tipo II é hipoplasia total do rádio.",
+  "conceito": "**Mão torta radial e a classificação de Bayne e Klug.** A mão torta radial é a deficiência longitudinal do **raio pré-axial** do membro superior: rádio hipoplásico ou ausente, desvio radial do punho e da mão, polegar hipoplásico ou ausente e, muitas vezes, cotovelo rígido. É frequentemente bilateral e pode fazer parte de síndromes que obrigam a investigar outros sistemas.\n\n**Síndromes associadas.**\n- **TAR** (trombocitopenia com ausência do rádio; o polegar está presente).\n- **Holt-Oram** (cardiopatia, sobretudo comunicação interatrial).\n- **VACTERL** (vertebral, anal, cardíaca, traqueoesofágica, renal, membros).\n- **Anemia de Fanconi** (falência medular, que pode surgir anos depois; triagem com teste de quebra cromossômica).\n\n**Classificação de Bayne e Klug.**\n\n| Tipo | Rádio |\n|---|---|\n| I | Rádio distal curto (fise distal deficiente), desvio leve |\n| II | **Rádio hipoplásico em miniatura** (fises proximal e distal deficientes) |\n| III | Ausência parcial (geralmente do terço distal ou médio) |\n| IV | Ausência completa, a forma mais comum |\n\nA classificação foi depois ampliada por James e colaboradores (tipos N e 0, com rádio normal e alterações só do carpo e do polegar).\n\n**Tratamento.** Alongamento passivo e órteses desde o nascimento. Nos tipos mais graves, **centralização** ou **radialização** do carpo sobre a ulna (com ou sem distração prévia com fixador), transferências tendíneas para equilibrar o punho e **policização** do indicador se o polegar for ausente ou instável. Contraindicações relativas: cotovelo rígido em extensão (a mão desviada é necessária para alcançar a boca) e adultos bem adaptados.\n\n> Bayne e Klug II: rádio todo presente, mas hipoplásico, em miniatura.",
+  "correta": "**D: hipoplasia total do rádio (resposta pela bibliografia).** No tipo II de Bayne e Klug o rádio está presente em toda a extensão, mas é globalmente hipoplásico, como um rádio em miniatura, pela deficiência das fises proximal e distal.",
   "incorretas": {
-   "A": "**Ausência completa do rádio.** É o tipo IV.",
-   "B": "**Ausência parcial do rádio.** É o tipo III.",
-   "C": "**Hipoplasia da epífise distal do rádio.** É o tipo I."
+   "A": "**A ausência completa do rádio** é o tipo IV, a forma mais comum e mais grave.",
+   "B": "**A ausência parcial do rádio** corresponde ao tipo III, geralmente com falta do segmento distal.",
+   "C": "**A hipoplasia da epífise distal** (rádio distal curto) é o tipo I, a forma mais leve."
   },
   "referencias": [
-   "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. 6ª ed., vol. 2, p. 942."
+   "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. 6ª ed., vol. 2, p. 942.",
+   "Bayne LG, Klug MS. Long-term review of the surgical treatment of radial deficiencies. J Hand Surg Am. 1987;12(2):169-179."
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "D",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0610": {
