@@ -3882,5 +3882,21 @@
   "provavel": "B",
   "geradoEm": "2026-10-01",
   "conferido": false
+ },
+ "joelho-0328": {
+  "conceito": "**O exame neurológico dos membros inferiores.** Cada raiz lombar e sacral tem um padrão de força, reflexo e sensibilidade. Saber esse mapa permite localizar a raiz comprimida numa hérnia discal ou estenose.\n\n| Raiz | Sensibilidade | Força | Reflexo |\n|---|---|---|---|\n| L2 e L3 | Face anterior da coxa | Iliopsoas, adutores, quadríceps | Patelar (contribuição) |\n| **L4** | **Face medial da perna e maléolo medial** | Quadríceps, tibial anterior | **Patelar** |\n| L5 | Face lateral da perna e dorso do pé | Extensor longo do hálux, glúteo médio | Nenhum confiável (às vezes o do tibial posterior) |\n| **S1** | **Face lateral e planta do pé** | Tríceps sural, fibulares | **Aquileu** |\n\n**Os reflexos.**\n- **Patelar:** percussão do tendão patelar, contração do quadríceps; avalia principalmente **L4** (com L2 e L3).\n- **Aquileu:** percussão do tendão calcâneo, flexão plantar do pé; avalia **S1**.\n- L5 não tem reflexo clínico confiável; avalia-se pela força do extensor longo do hálux e pela sensibilidade do dorso do pé.\n\n**Aplicação clínica.** Uma hérnia L3-L4 centro-lateral ou uma hérnia foraminal L4-L5 comprime L4: diminui o reflexo patelar, enfraquece o quadríceps e altera a sensibilidade na face medial da perna. Uma hérnia L5-S1 centro-lateral comprime S1: diminui o reflexo aquileu e a força para ficar na ponta dos pés.\n\n> Patelar: L4. Aquileu: S1. L4 dá a face medial da perna; L5, o dorso do pé; S1, a borda lateral e a planta.",
+  "correta": "**A: o reflexo patelar testa a raiz de L4.** O reflexo patelar é mediado principalmente por L4, com contribuição de L2 e L3, por meio do nervo femoral e do quadríceps. Por isso, numa compressão de L4, como numa hérnia L3-L4 centro-lateral, o reflexo patelar diminui, junto com fraqueza do quadríceps e alteração da sensibilidade na face medial da perna.",
+  "incorretas": {
+   "B": "**O reflexo aquileu testa S1, não L5.** L5 não tem reflexo clínico confiável. Sua avaliação é feita pela força do extensor longo do hálux e pela sensibilidade do dorso do pé.",
+   "C": "**O reflexo aquileu testa S1, não L4.** L4 é avaliada pelo reflexo patelar.",
+   "D": "**A face lateral do pé é inervada por S1, não por L4.** L4 dá sensibilidade à face medial da perna e ao maléolo medial.",
+   "E": "**A face medial da perna e o maléolo medial correspondem a L4, não a L5.** L5 dá sensibilidade à face lateral da perna e ao dorso do pé."
+  },
+  "referencias": [
+   "Hoppenfeld S. Propedêutica ortopédica: coluna e extremidades. Atheneu.",
+   "American Spinal Injury Association. International Standards for Neurological Classification of Spinal Cord Injury. Revisão de 2019."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  }
 }

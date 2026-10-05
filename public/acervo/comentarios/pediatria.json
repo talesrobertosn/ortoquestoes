@@ -10313,5 +10313,21 @@
   "referencias": [],
   "geradoEm": "2026-10-04T17:01:01+00:00",
   "conferido": false
+ },
+ "pediatria-0880": {
+  "conceito": "**O dilema após a radioterapia de um glioma.** Depois de tratar um astrocitoma maligno com cirurgia e radioterapia, uma nova lesão que capta contraste no mesmo local pode ser **recidiva do tumor** ou **radionecrose** (lesão do tecido cerebral pela radiação). Na ressonância convencional, as duas podem ser muito parecidas. Existe ainda a pseudoprogressão, uma reação inflamatória precoce, nos primeiros meses após a radioquimioterapia, que melhora sozinha.\n\n**A espectroscopia por ressonância.** Mede a concentração de metabólitos no tecido, mostrando um gráfico de picos.\n\n| Metabólito | O que representa | No tumor | Na radionecrose |\n|---|---|---|---|\n| Colina | Renovação de membranas celulares (proliferação) | **Elevada** | Baixa ou normal |\n| N-acetilaspartato (NAA) | Neurônios viáveis | Baixo | Baixo |\n| Creatina | Metabolismo energético | Baixa | Variável |\n| Lactato e lipídios | Necrose, metabolismo anaeróbio | Podem estar presentes | **Elevados** |\n\nA **colina elevada**, com aumento das relações colina/NAA e colina/creatina, indica proliferação celular ativa e sugere **recidiva tumoral**. Na radionecrose, há morte celular sem proliferação: a colina cai e predominam lipídios e lactato.\n\n**Outros exames que ajudam.** A **perfusão por ressonância** mostra volume sanguíneo aumentado no tumor (pela neovascularização) e diminuído na radionecrose. O PET com aminoácidos também diferencia. Quando a dúvida persiste, a biópsia ou a ressecção confirmam.\n\n**O tempo.** A radionecrose costuma aparecer de 6 meses a alguns anos após a radioterapia, por isso o tempo de 16 meses não descarta nenhuma das duas. É a espectroscopia que inclina o diagnóstico.\n\n> Nova lesão após radioterapia de glioma: colina elevada na espectroscopia sugere recidiva. Radionecrose: colina baixa, lipídios e lactato altos.",
+  "correta": "**D: recidiva tumoral.** A colina reflete a renovação das membranas celulares e aumenta quando há proliferação ativa. Numa lesão nova no local de um astrocitoma maligno tratado, colina elevada na espectroscopia sugere recidiva do tumor. A radionecrose, ao contrário, mostra queda da colina e aumento de lipídios e lactato. A perfusão por ressonância, com volume sanguíneo aumentado, reforça o diagnóstico, e a biópsia confirma quando necessário.",
+  "incorretas": {
+   "A": "**A isquemia não eleva a colina.** Um infarto mostra restrição à difusão na fase aguda e, na espectroscopia, queda do NAA e aumento do lactato, sem a elevação de colina típica do tumor.",
+   "B": "**Um abscesso tem padrão próprio na espectroscopia.** Mostra aminoácidos, acetato, succinato e lactato, além de restrição à difusão no centro. Não se caracteriza por colina elevada.",
+   "C": "**A radionecrose mostra colina baixa, não elevada.** É o principal diagnóstico diferencial, e a espectroscopia é útil justamente para separá-la: predomínio de lipídios e lactato, com colina reduzida.",
+   "E": "**Doenças metabólicas costumam ser difusas e simétricas.** Não explicariam uma lesão focal no local do tumor tratado, nem a elevação localizada da colina."
+  },
+  "referencias": [
+   "Zhang H, Ma L, Wang Q, Zheng X, Wu C, Xu BN. Role of magnetic resonance spectroscopy for the differentiation of recurrent glioma from radiation necrosis: a systematic review and meta-analysis. Eur J Radiol. 2014;83(12):2181-2189.",
+   "Greenberg MS. Handbook of Neurosurgery. 9ª ed. Thieme; 2019. Radionecrose e recidiva de gliomas."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  }
 }
