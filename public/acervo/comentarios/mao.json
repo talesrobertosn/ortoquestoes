@@ -8945,18 +8945,19 @@
   "conferido": false
  },
  "mao-0778": {
-  "conceito": "**A carga axial do punho é dividida entre rádio e ulna conforme a variância ulnar.** Com variância neutra, cerca de **80% da carga passa pelo rádio e 18% a 20% pela ulna** (pelo complexo da fibrocartilagem triangular).\n\n**Os números de Palmer e Werner:**\n\n| Variação do comprimento da ulna | Carga na ulna |\n|---|---|\n| Neutra | Cerca de 18% |\n| **Encurtamento de 2,5 mm** | **Cerca de 4%** |\n| Alongamento de 2,5 mm | Cerca de 42% |\n\n**Aplicações:**\n- o **encurtamento da ulna** descomprime o impacto ulnocarpal;\n- o **nivelamento articular** (encurtamento do rádio ou alongamento da ulna) para a doença de Kienböck com variância ulnar negativa busca descarregar o semilunar;\n- a carga também muda com a posição: a variância fica mais positiva em pronação e na preensão forte (variância dinâmica).",
-  "correta": "**Cerca de 4%.** Encurtar a ulna 2,5 mm reduz a carga transmitida pela ulna de cerca de 18% para cerca de 4%.",
+  "conceito": "**A variância ulnar.** É a diferença de comprimento entre a **ulna distal** e o **rádio distal**, medida na radiografia **PA do punho** em posição neutra (ombro abduzido a 90°, cotovelo a 90° e antebraço em rotação neutra).\n- **Neutra**: as superfícies articulares estão no mesmo nível.\n- **Positiva**: a ulna é **mais longa** que o rádio.\n- **Negativa**: a ulna é **mais curta** que o rádio.\n\nA variância **muda com a posição**: aumenta na **pronação** e com a **preensão** forte, e diminui na supinação.\n\n**A distribuição da carga no punho (Palmer e Werner).** Num punho com variância **neutra**, cerca de **80%** da carga axial passa pelo **rádio** e cerca de **20%** (cerca de 18%) pela **ulna**, através do complexo da fibrocartilagem triangular. Pequenas mudanças de comprimento alteram muito essa divisão:\n\n| Variância | Carga transmitida pela ulna |\n|---|---|\n| **Encurtamento** de 2,5 mm (variância negativa) | Cerca de **4%** |\n| Neutra | Cerca de **18 a 20%** |\n| **Alongamento** de 2,5 mm (variância positiva) | Cerca de **42%** |\n\n**Por que isso importa.**\n- **Variância positiva**: sobrecarrega a ulna e a fibrocartilagem triangular, causando a **síndrome do impacto ulnocarpal** (dor no lado ulnar, lesão da fibrocartilagem, condromalácia do semilunar e do piramidal). O tratamento é o **encurtamento da ulna** (osteotomia) ou a ressecção parcial da cabeça da ulna (procedimento de Wafer).\n- **Variância negativa**: concentra a carga no rádio e no **semilunar**, e está associada à **doença de Kienböck**. Por isso, nos estágios iniciais de Kienböck com variância negativa, faz-se o **encurtamento do rádio** (nivelamento), que descomprime o semilunar.\n- Nas **fraturas do rádio distal**, o encurtamento do rádio cria uma variância **positiva** relativa e pode causar dor ulnar. É um dos parâmetros a restaurar.\n\n**O efeito do encurtamento ulnar.** Um encurtamento de apenas **2,5 mm** reduz a carga ulnar de cerca de 18% para cerca de **4%**. É por isso que pequenas osteotomias de encurtamento da ulna (2 a 3 mm) aliviam tanto o impacto ulnocarpal.",
+  "correta": "**Correta: A (4%).** Segundo Palmer e Werner, num punho neutro a ulna transmite cerca de 18% da carga. Um **encurtamento da ulna de 2,5 mm** reduz essa transmissão para cerca de **4%**, enquanto um alongamento de 2,5 mm a aumenta para cerca de 42%.",
   "incorretas": {
-   "B": "8% não corresponde ao valor medido para encurtamento de 2,5 mm.",
-   "C": "12% ainda estaria próximo da carga normal; o encurtamento reduz muito mais.",
-   "D": "16% é praticamente a carga normal (variância neutra, cerca de 18%).",
-   "E": "20% equivale à carga na variância neutra, sem encurtamento."
+   "B": "**8%** não corresponde ao valor medido por Palmer e Werner para o encurtamento de 2,5 mm (cerca de 4%).",
+   "C": "**12%** fica entre o valor do encurtamento (4%) e o do punho neutro (cerca de 18%).",
+   "D": "**16%** aproxima-se da carga ulnar no punho **neutro**, sem encurtamento.",
+   "E": "**20%** corresponde aproximadamente à carga ulnar no punho com variância **neutra**."
   },
   "referencias": [
-   "Palmer AK, Werner FW. Biomechanics of the distal radioulnar joint. Clin Orthop Relat Res. 1984;(187):26-35."
+   "Palmer AK, Werner FW. Biomechanics of the distal radioulnar joint. Clin Orthop Relat Res. 1984;(187):26-35.",
+   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0779": {

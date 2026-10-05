@@ -1556,14 +1556,18 @@
   "conferido": false
  },
  "pe-tornozelo-0145": {
-  "conceito": "### A imagem\nRadiografia **AP (dorsoplantar) com carga** do pé. As linhas e os pontos (A, B, C) estão desenhados sobre a articulação **talonavicular**: a medida da ==incongruência talonavicular== (ângulo de incongruência).\n\n### Ângulo de incongruência talonavicular\n- **O que mede:** a **congruência** entre a superfície articular da **cabeça do tálus** e a do **navicular** no AP. Complementa a **cobertura talonavicular**.\n- **Leitura:** valores altos indicam o navicular **subluxado lateralmente** sobre a cabeça do tálus, ou seja, **abdução** do médio-pé (subluxação peritalar).\n- **Uso:** pé plano valgo (adulto e criança) e planejamento de correção.\n\n### Por que não as outras\n| Medida | Incidência | Ossos |\n|---|---|---|\n| **Méary** | **perfil** | tálus e 1º metatarso |\n| **Kite** | AP ou perfil | **tálus e calcâneo** (eixos longos) |\n| **Pitch do calcâneo** | **perfil** | calcâneo e solo |\n\n> **Na prova:** medida na talonavicular no AP = ==ângulo de incongruência==.",
-  "correta": "**Ângulo de incongruência.**",
+  "conceito": "**A imagem.** Radiografia **dorsoplantar** (AP) do pé com linhas traçadas na articulação **talonavicular**: uma linha ao longo da superfície articular do **tálus** (da cabeça) e outra ao longo da superfície articular do **navicular**. O ângulo entre elas mede o quanto a superfície do navicular \"cobre\" a cabeça do tálus: o **ângulo de incongruência talonavicular**.\n\n**O ângulo de incongruência talonavicular.** No pé normal, a superfície articular do navicular fica bem **centrada** sobre a cabeça do tálus, e as duas linhas são quase paralelas. No **pé plano** adquirido (como na disfunção do tibial posterior), o navicular **desliza para lateral** (abdução do antepé), descobrindo a parte **medial** da cabeça do tálus. O ângulo aumenta. Ele, junto com a **cobertura talonavicular** (porcentagem da cabeça do tálus descoberta), quantifica a **abdução** do antepé.\n\n**Os principais ângulos do pé e o que medem.**\n\n| Ângulo | Incidência | O que avalia |\n|---|---|---|\n| **Incongruência talonavicular** e cobertura talonavicular | **Dorsoplantar** | **Abdução** do antepé no pé plano |\n| Talo-primeiro metatarso (de **Meary**) | **Perfil** (e também dorsoplantar) | **Perfil**: arco longitudinal (desabado no plano, aumentado no cavo); normal 0° |\n| **Kite** (talocalcâneo) | Dorsoplantar e perfil | Divergência entre tálus e calcâneo; **diminuído** no **pé torto** (paralelismo), aumentado no plano |\n| **Pitch do calcâneo** | **Perfil** | Inclinação do calcâneo; diminuído no plano, aumentado no cavo |\n| Ângulo do hálux valgo e intermetatarsal | Dorsoplantar | Hálux valgo |\n\n**O uso clínico no pé plano adquirido do adulto.** Os ângulos ajudam a escolher a cirurgia:\n- **abdução** do antepé (cobertura talonavicular alterada): osteotomia de **alongamento da coluna lateral** (Evans);\n- **valgo** do retropé: osteotomia de **medialização** do calcâneo;\n- colapso do arco (Meary alterado): artrodeses ou osteotomias da coluna medial (Cotton).",
+  "correta": "**Correta: A (ângulo de incongruência).** A imagem mostra, na radiografia dorsoplantar, as linhas traçadas nas superfícies articulares da cabeça do tálus e do navicular. O ângulo entre elas é o **ângulo de incongruência talonavicular**, que mede a abdução do antepé no pé plano.",
   "incorretas": {
-   "B": "**Méary.**\n- Medido no **perfil** (tálus e 1º metatarso).",
-   "C": "**Kite.**\n- Eixos do **tálus e do calcâneo**; traçado diferente.",
-   "D": "**Pitch do calcâneo.**\n- Medido no **perfil**."
+   "B": "O **ângulo de Meary** (talo-primeiro metatarso) é medido sobretudo no **perfil**, entre o eixo do tálus e o do primeiro metatarso, e avalia o arco longitudinal.",
+   "C": "O **ângulo de Kite** (talocalcâneo) é medido entre os eixos do **tálus** e do **calcâneo**, e não nas superfícies articulares talonaviculares.",
+   "D": "O **pitch do calcâneo** é medido no **perfil**, entre o calcâneo e o solo."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
+   "Coughlin MJ, Saltzman CL, Anderson RB. Mann's Surgery of the Foot and Ankle. 9ª edição. Elsevier; 2014."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pe-tornozelo-0153": {
