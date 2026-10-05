@@ -1983,15 +1983,18 @@
   "conferido": false
  },
  "trauma-0174": {
+  "conceito": "**Para que serve o TLICS.** O *Thoracolumbar Injury Classification and Severity Score*, proposto por Vaccaro e colaboradores em 2005, transforma a avaliação da fratura toracolombar em uma **soma de pontos** que orienta a decisão entre tratamento conservador e cirúrgico. Ele considera três aspectos.\n\n**1. Morfologia da fratura (o que a imagem mostra).**\n\n| Morfologia | Pontos |\n|---|---|\n| Compressão | 1 |\n| **Explosão (burst)** | **2** (compressão 1 + 1 pelo componente de explosão) |\n| Translação ou rotação | 3 |\n| Distração | 4 |\n\n**2. Estado neurológico.**\n- Intacto: 0.\n- Lesão de raiz: 2.\n- Lesão medular **completa**: 2.\n- Lesão medular **incompleta** ou síndrome da cauda equina: 3 (a mais pontuada, porque há tecido neural a ser salvo com descompressão).\n\n**3. Complexo ligamentar posterior (CLP).**\n- Íntegro: 0.\n- Suspeito ou indeterminado: 2.\n- Lesado: 3.\n\n**A decisão.**\n\n| Soma | Conduta |\n|---|---|\n| **3 ou menos** | **Tratamento não cirúrgico** |\n| 4 | Zona cinzenta, decisão individual |\n| 5 ou mais | **Tratamento cirúrgico** |\n\n**Exemplo.** Uma fratura explosão (2) em paciente neurologicamente intacto (0) com CLP íntegro (0) soma **2 pontos** e pode ser tratada sem cirurgia, com órtese ou mesmo sem ela.\n\n**A questão.** O enunciado, como está na prova, não descreve a fratura (provavelmente faltou uma imagem). O gabarito de **2 pontos** corresponde à morfologia de explosão.\n\n**Sucessor.** A classificação **AO Spine toracolombar** (2013) incorporou os mesmos princípios, com tipos A, B e C, modificadores neurológicos e clínicos.",
+  "correta": "**Correta: B (2 pontos).** No TLICS, a morfologia de **fratura explosão** vale 2 pontos, valor adotado pelo gabarito, já que o enunciado da prova não descreve a fratura, como explica o alerta.",
   "incorretas": {
-   "A": "1 ponto corresponde à fratura por compressão.",
-   "C": "3 pontos correspondem à translação ou rotação.",
-   "D": "4 pontos correspondem à distração."
+   "A": "**1 ponto** corresponde à fratura por **compressão** simples.",
+   "C": "**3 pontos** correspondem à **translação ou rotação** na morfologia, ou à lesão do CLP, ou à lesão medular incompleta.",
+   "D": "**4 pontos** correspondem à **distração** na morfologia."
   },
-  "conceito": "O **TLICS** (Thoracolumbar Injury Classification and Severity Score) soma três itens para decidir entre tratamento conservador e cirúrgico:\n\n**morfologia** da fratura:\n\n**compressão**: 1 ponto;\n\n**explosão** (burst): **2 pontos**;\n\n**translação ou rotação**: 3 pontos;\n\n**distração**: 4 pontos;\n\n**estado neurológico**: íntegro 0; lesão de raiz 2; lesão medular completa 2; incompleta ou da cauda equina 3;\n\n**complexo ligamentar posterior**: íntegro 0; suspeito 2; roto 3.\n\n**A decisão**: **3 pontos ou menos**, conservador; **4**, a critério do cirurgião; **5 ou mais**, cirurgia.\n\n**Sobre a questão**: o enunciado não descreve a fratura. A banca considerou **2 pontos**, que é a pontuação da **explosão** na morfologia.\n\n**Na prova**: a banca indicou **2 pontos**, valor da fratura por explosão no TLICS.",
-  "correta": "A banca considerou 2 pontos, que é o valor da fratura por explosão no item morfologia do TLICS.",
+  "referencias": [
+   "Vaccaro AR, Lehman RA Jr, Hurlbert RJ, et al. A new classification of thoracolumbar injuries: the importance of injury morphology, the integrity of the posterior ligamentous complex, and neurologic status. Spine. 2005;30(20):2325-2333."
+  ],
   "alerta": "O enunciado desta questão parece incompleto na prova (não descreve a fratura). O gabarito de 2 pontos corresponde à morfologia de explosão no TLICS.",
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0176": {
@@ -2488,14 +2491,17 @@
   "conferido": false
  },
  "trauma-0222": {
+  "conceito": "**A classificação anatômica de Schenck.** Em vez de classificar a luxação do joelho pela direção do deslocamento (que muitas vezes reduz espontaneamente e não se conhece), Schenck classifica pelos **ligamentos rompidos**. Isso reflete a energia do trauma e orienta o planejamento da reconstrução.\n\n| Tipo | Ligamentos lesados |\n|---|---|\n| KD I | **Um** cruzado (LCA ou LCP), com o joelho luxado |\n| **KD II** | **Os dois cruzados**, com os **colaterais íntegros** |\n| KD III M | Os dois cruzados e o **colateral medial** |\n| KD III L | Os dois cruzados e o **colateral lateral com canto posterolateral** |\n| KD IV | Os **quatro** ligamentos |\n| KD V | Fratura-luxação |\n\nModificadores: **C** para lesão arterial e **N** para lesão nervosa.\n\n**O tipo KD II.** É incomum. O joelho fica instável no plano sagital (gaveta anterior e posterior positivas), mas estável em varo e valgo, porque os dois colaterais estão preservados.\n\n**O que nunca falta na luxação do joelho.**\n1. **Avaliação vascular**: a artéria poplítea fica fixa no hiato dos adutores e no arco do sóleo e é estirada na luxação. **Índice tornozelo-braquial abaixo de 0,9** indica angiotomografia; ausência de pulso, exploração imediata.\n2. **Nervo fibular**: mais lesado nas luxações com lesão lateral (KD III L e KD IV).\n3. Redução urgente e, se instável, fixador externo transarticular.\n4. Reconstrução ligamentar geralmente em tempo único ou estagiada, nas primeiras semanas.",
+  "correta": "**Correta: B (os dois ligamentos cruzados).** Na classificação de Schenck, o tipo **KD II** corresponde à ruptura dos **dois cruzados**, com os colaterais íntegros.",
   "incorretas": {
-   "A": "A lesão dos dois colaterais não define nenhum tipo de Schenck.",
-   "C": "Um cruzado com um colateral não corresponde ao KD II.",
-   "D": "Um cruzado com o canto posterolateral não é o KD II."
+   "A": "A lesão isolada dos **dois colaterais**, sem os cruzados, não faz parte da classificação de luxação do joelho de Schenck.",
+   "C": "Um colateral com um cruzado não corresponde a nenhum tipo; o **KD III** exige os **dois** cruzados e um colateral.",
+   "D": "Um cruzado com o canto posterolateral também não é um tipo de Schenck; o canto posterolateral aparece no **KD III L**, junto com os dois cruzados."
   },
-  "conceito": "**Schenck** classifica a **luxação do joelho** pelos ligamentos lesados:\n\n**KD I**: lesão de **um cruzado** (o joelho luxou mesmo assim);\n\n**KD II**: lesão dos **dois cruzados**, com os **colaterais íntegros**;\n\n**KD III**: os dois cruzados e **um colateral**: **KD IIIM** (medial) ou **KD IIIL** (lateral, com o canto posterolateral);\n\n**KD IV**: os **quatro** ligamentos;\n\n**KD V**: luxação com **fratura** periarticular.\n\n**Os modificadores**: **C** para lesão arterial e **N** para lesão nervosa.\n\n**A avaliação obrigatória**: **pulsos** e **índice tornozelo-braquial** (abaixo de 0,9, angiotomografia), pela lesão da poplítea em 20 a 40%; e o **nervo fibular**, lesado com mais frequência nas lesões laterais.\n\n**Na prova**: no **KD II** estão lesionados **os dois ligamentos cruzados**.",
-  "correta": "O KD II é a lesão dos dois cruzados, com os dois colaterais íntegros.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Schenck RC Jr. The dislocated knee. Instr Course Lect. 1994;43:127-136."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0223": {
