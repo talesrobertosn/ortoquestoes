@@ -3481,19 +3481,20 @@
   "conferido": false
  },
  "tumores-0336": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "D",
-  "conceito": "**Sarcomas de partes moles na criança.** O rabdomiossarcoma é o mais comum em menores de 15 anos.\n\n**Na prova:** criança, sarcoma de partes moles, rabdomiossarcoma.",
-  "correta": "**Rabdomiossarcoma.** É o mais comum nessa faixa.",
+  "conceito": "**Sarcomas de partes moles na criança.** São tumores malignos raros, mas representam cerca de 7% dos cânceres pediátricos. Dividem-se em rabdomiossarcoma e sarcomas não rabdomiossarcoma.\n\n**Rabdomiossarcoma.** É o **sarcoma de partes moles mais comum em menores de 15 anos** (cerca de metade dos casos). Origina-se de células mesenquimais com diferenciação muscular esquelética.\n- **Localizações**: cabeça e pescoço (incluindo órbita e parameníngeo), trato geniturinário e **extremidades**.\n- **Tipos histológicos**: **embrionário** (o mais comum, crianças pequenas, cabeça e pescoço, geniturinário, melhor prognóstico) e **alveolar** (adolescentes, **extremidades**, translocações PAX3/PAX7-FOXO1, pior prognóstico).\n- **Tratamento**: multimodal (quimioterapia, cirurgia, radioterapia), conduzido por protocolos de oncologia pediátrica.\n\n**Sarcomas não rabdomiossarcoma.** Mais comuns em adolescentes e semelhantes aos dos adultos:\n- **Sarcoma sinovial**: o mais comum entre eles em adolescentes e adultos jovens; perto de articulações (joelho), calcificações em parte dos casos, translocação t(X;18).\n- Tumor maligno da bainha do nervo periférico (neurofibrossarcoma), muitas vezes associado à neurofibromatose tipo 1.\n- Fibrossarcoma infantil (em lactentes, com bom prognóstico).\n- Sarcoma de Ewing extraesquelético.\n\n**Abordagem ortopédica.** Massa de partes moles profunda, maior que 5 cm, em crescimento ou dolorosa exige ressonância e **biópsia planejada** por equipe especializada antes de qualquer ressecção (evitar \"ressecções acidentais\" que contaminam o campo).\n\n> Sarcoma de partes moles mais comum abaixo de 15 anos: rabdomiossarcoma.",
+  "correta": "**D: rabdomiossarcoma (resposta pela bibliografia).** O rabdomiossarcoma é o tumor maligno primário de partes moles mais comum em crianças com menos de 15 anos, responsável por cerca de metade dos sarcomas de partes moles pediátricos. A forma alveolar é a mais frequente nas extremidades.",
   "incorretas": {
-   "A": "**Neurofibrossarcoma.** Menos comum.",
-   "B": "**EWING extra-esquelético.** Menos comum.",
-   "C": "**Sinoviossarcoma.** Mais comum em adolescentes e adultos jovens."
+   "A": "**O neurofibrossarcoma** (tumor maligno da bainha do nervo periférico) é raro em crianças e geralmente associado à neurofibromatose tipo 1.",
+   "B": "**O sarcoma de Ewing extraesquelético** ocorre, mas é bem menos frequente que o rabdomiossarcoma em menores de 15 anos.",
+   "C": "**O sarcoma sinovial** é o sarcoma não rabdomiossarcoma mais comum em adolescentes e adultos jovens, mas fica atrás do rabdomiossarcoma nas crianças."
   },
   "referencias": [
-   "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. 6 ª ed., vol. 1, p. 535."
+   "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. 6 ª ed., vol. 1, p. 535.",
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Tumores de partes moles."
   ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "D",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "tumores-0337": {
