@@ -2868,19 +2868,20 @@
   "conferido": false
  },
  "conceitos-basicos-0289": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": "**Biofilme.** Comunidade de bactérias sésseis envoltas em matriz polissacarídica (glicocálix), aderida ao implante, resistente a antibiótico e defesas.\n\n**Na prova:** biofilme é bactéria séssil em glicocálix.",
-  "correta": "**Comunidade de bactérias sésseis com glicocálix.** É a definição.",
+  "conceito": "**Biofilme e a infecção associada a implantes.** O implante metálico é uma superfície sem irrigação, que as defesas do hospedeiro não alcançam bem. Bactérias que chegam a ela (na cirurgia, por fratura exposta ou por via hematogênica) aderem e mudam de comportamento: deixam o modo **planctônico** (livre, em suspensão) e passam ao modo **séssil** (aderido).\n\n**O que é o biofilme.** Uma **comunidade de bactérias sésseis** envolta em **matriz extracelular** de polissacarídeos, proteínas e DNA (o **glicocálix** ou \"slime\"), aderida a uma superfície. Costerton e colaboradores mostraram que essa forma de vida explica muitas infecções persistentes.\n\n**Por que o biofilme é tão resistente.**\n- A matriz dificulta a penetração de antibióticos e de células de defesa.\n- As bactérias no interior têm **metabolismo lento** (células persistentes), e a maioria dos antibióticos age sobre células em divisão.\n- **Sinalização entre as bactérias** (quorum sensing) coordena o crescimento e a liberação de bactérias planctônicas, que causam surtos de infecção.\n- A concentração de antibiótico necessária para erradicar o biofilme pode ser de 100 a 1.000 vezes maior que a necessária para as bactérias livres.\n\n**Implicações clínicas.**\n\n| Situação | Conduta usual |\n|---|---|\n| Infecção aguda (biofilme imaturo, primeiras semanas) com implante estável | Desbridamento, retenção do implante e antibiótico prolongado (com rifampicina para estafilococo) |\n| Infecção crônica (biofilme maduro) | Remoção do implante após a consolidação, ou troca, com desbridamento |\n| Fratura não consolidada com implante solto | Remoção, desbridamento, estabilização nova (fixador externo ou implante novo) |\n\n**Biofilme não é sinônimo de bactéria resistente.** O mesmo estafilococo sensível a meticilina pode ser tolerante ao antibiótico dentro do biofilme.\n\n> Biofilme: comunidade de bactérias sésseis em glicocálix, aderida ao implante, tolerante a antibióticos e defesas.",
+  "correta": "**A: comunidade de bactérias sésseis com glicocálix (resposta pela bibliografia).** É a definição de biofilme: bactérias aderidas a uma superfície, envoltas em matriz extracelular, protegidas de antibióticos e defesas do hospedeiro.",
   "incorretas": {
-   "B": "**Colônia de estafilococos meticilina-resistentes.** Biofilme não é exclusivo de MRSA.",
-   "C": "**Corrosão induzida por liberação de debris.** Não é biofilme.",
-   "D": "**Metalose por resposta  imunológica do hospedeiro.** Não é biofilme."
+   "B": "**Colônia de estafilococos meticilina-resistentes** confunde resistência genética com tolerância do biofilme; o biofilme pode ser formado por diversas espécies, sensíveis ou resistentes.",
+   "C": "**Corrosão induzida por liberação de debris** descreve um processo de degradação do implante, não uma forma de organização bacteriana.",
+   "D": "**Metalose** é a reação tecidual a partículas metálicas (por exemplo, em desgaste de próteses), não infecção nem biofilme."
   },
   "referencias": [
-   "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., pg. 571."
+   "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., pg. 571.",
+   "Costerton JW, Stewart PS, Greenberg EP. Bacterial biofilms: a common cause of persistent infections. Science. 1999;284(5418):1318-1322."
   ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "A",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "conceitos-basicos-0290": {

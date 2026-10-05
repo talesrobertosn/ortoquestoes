@@ -5821,19 +5821,20 @@
   "conferido": false
  },
  "quadril-0487": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "D",
-  "conceito": "**Vancouver B2.** Fratura ao redor da haste solta, com estoque ósseo adequado: revisão com haste longa que ultrapasse a fratura.\n\n**Na prova:** B1 fixa; B2 haste longa; B3 enxerto ou endoprótese.",
-  "correta": "**Substituição do componente femoral por haste longa.** Haste longa é o tratamento do B2.",
+  "conceito": "**Fratura periprotética do fêmur e a classificação de Vancouver.** Fraturas ao redor de uma haste femoral de artroplastia do quadril estão em aumento, pela maior longevidade dos pacientes e das próteses. A classificação de Vancouver (Duncan e Masri) organiza o tratamento por três perguntas: **onde** está a fratura, a **haste está fixa ou solta** e **como está o estoque ósseo**.\n\n**Classificação.**\n\n| Tipo | Descrição | Tratamento usual |\n|---|---|---|\n| A (AG, AL) | Trocânter maior ou menor | Conservador ou fixação do trocânter se desviado |\n| B1 | Ao redor ou logo abaixo da haste, **haste fixa** | **Osteossíntese** (placa com cerclagens e parafusos, enxerto em ponte) |\n| **B2** | Ao redor da haste, **haste solta**, **estoque ósseo bom** | **Revisão com haste longa** que ultrapasse a fratura |\n| B3 | Haste solta, **estoque ósseo ruim** | Revisão com aloenxerto-prótese composto, haste modular ou endoprótese |\n| C | Bem abaixo da ponta da haste | Osteossíntese independente da prótese |\n\n**Por que a haste longa no B2.** A haste solta não oferece suporte e não pode ser mantida: fixar a fratura com a haste solta leva a falha. A nova haste deve **ultrapassar o foco** por pelo menos **dois diâmetros corticais** (cerca de 2 a 3 vezes o diâmetro do fêmur) e obter fixação distal no istmo; hastes cônicas modulares ou de porosidade extensa são usadas. A fratura funciona como acesso para retirar a haste e o cimento, e é fixada com cerclagens ao redor da nova haste.\n\n**Armadilha.** Muitas fraturas classificadas como B1 são, na verdade, B2: a haste já estava solta. Por isso, recomenda-se testar a estabilidade da haste durante a cirurgia.\n\n> Vancouver B2: haste solta com bom estoque ósseo, revisar com haste longa que ultrapasse a fratura.",
+  "correta": "**D: substituição do componente femoral por haste longa (resposta pela bibliografia).** No B2, a haste está solta e o estoque ósseo é adequado: troca-se o componente por uma haste longa que ultrapasse a fratura e se fixe no osso distal sadio.",
   "incorretas": {
-   "A": "**Enxertia óssea estrutural.** Para B3, com perda óssea.",
-   "B": "**Cimentação proximal da haste.** Não resolve a haste solta.",
-   "C": "**Osteossíntese com manutenção da prótese.** É para B1."
+   "A": "**A enxertia óssea estrutural** (aloenxerto-prótese composto) é reservada ao B3, em que o estoque ósseo proximal é deficiente.",
+   "B": "**A cimentação proximal da haste** não resolve: a fratura está ao redor da haste, e o fêmur proximal fraturado não oferece apoio para uma fixação cimentada curta.",
+   "C": "**A osteossíntese com manutenção da prótese** é o tratamento do B1, em que a haste está fixa. Com a haste solta, a placa isolada falha."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 11ª ed., pg. 410."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 11ª ed., pg. 410.",
+   "Duncan CP, Masri BA. Fractures of the femur after hip replacement. Instr Course Lect. 1995;44:293-304."
   ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "D",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "quadril-0488": {
