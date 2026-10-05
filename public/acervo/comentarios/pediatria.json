@@ -354,17 +354,18 @@
   "conferido": false
  },
  "pediatria-0025": {
+  "conceito": "**A luxação congênita do joelho.** É rara. O recém-nascido nasce com o joelho em **hiperextensão** (recurvato), às vezes com o pé encostando na face. O espectro vai de uma simples hiperextensão até a **luxação anterior** completa da tíbia sobre o fêmur.\n\n**A classificação em graus.**\n\n| Grau | Situação |\n|---|---|\n| 1 | **Hiperextensão** (recurvato) simples; flexão passiva possível |\n| 2 | **Subluxação** anterior da tíbia |\n| 3 | **Luxação** completa: tíbia à frente do fêmur, sem contato articular |\n\n**O que mantém o joelho em hiperextensão.**\n- O **quadríceps** está **encurtado e fibrótico**, às vezes aderido ao fêmur. É a principal estrutura que impede a flexão.\n- A **cápsula anterior** está contraída.\n- Os **isquiotibiais** se **deslocam para a frente** do eixo de rotação do joelho, passando a funcionar como **extensores**, o que piora a deformidade.\n- O **LCA** pode ser hipoplásico ou ausente.\n\n**As causas.** Posição intrauterina (apresentação pélvica com as pernas estendidas, oligoâmnio), **frouxidão ligamentar** e síndromes (**Larsen**, artrogripose, mielomeningocele).\n\n**As associações: examine o quadril e os pés.**\n- **Displasia do desenvolvimento do quadril**: muito frequente, em boa parte dos casos.\n- **Pé torto** congênito ou pé calcaneovalgo.\n- Luxação do cotovelo, na síndrome de Larsen.\n\n**O tratamento.** Começa logo após o nascimento.\n1. **Manipulação e gessos seriados** em flexão progressiva, ou suspensório de Pavlik nos graus leves. Os graus 1 e 2 costumam responder.\n2. Se a flexão não ultrapassar cerca de **30 a 90°** em algumas semanas, ou no grau 3: **quadricepsplastia** (alongamento em V-Y do quadríceps) com liberação capsular anterior, idealmente nos primeiros meses de vida.\n3. **A ordem importa**: o **joelho é tratado antes do quadril**. O suspensório de Pavlik para a DDQ exige um joelho que flexione, porque os isquiotibiais tensos em extensão impedem a flexão do quadril.\n\nO prognóstico é bom nos graus leves tratados cedo. É pior nas formas sindrômicas, como a artrogripose e a síndrome de Larsen.",
+  "correta": "**Correta: D (hiperextensão, com fibrose do músculo quadríceps femoral).** Na luxação congênita do joelho, a articulação fica em **hiperextensão**. O **quadríceps está encurtado e fibrótico** e é a principal estrutura que impede a flexão, ao lado da cápsula anterior contraída e dos isquiotibiais deslocados para a frente.",
   "incorretas": {
-   "A": "A posição é de hiperextensão, e o problema está no quadríceps, não nos isquiotibiais.",
-   "B": "A hiperextensão está certa, mas o problema é a fibrose do quadríceps, não a frouxidão dos isquiotibiais.",
-   "C": "Erra a posição e o mecanismo: hiperextensão, com fibrose do quadríceps."
+   "A": "O joelho fica em **hiperextensão**, e não em hiperflexão. Os isquiotibiais se deslocam para a frente, mas não são a estrutura fibrótica.",
+   "B": "A hiperextensão está certa, mas a estrutura que bloqueia a flexão é o **quadríceps fibrótico**. A frouxidão dos isquiotibiais não explica a deformidade.",
+   "C": "Erra a posição e o músculo: o joelho fica em **hiperextensão**, e o quadríceps está **encurtado e fibrótico**, e não frouxo."
   },
-  "conceito": "A **luxação congênita do joelho** (genu recurvatum congênito) aparece ao nascer com o joelho em **hiperextensão**: o pé pode chegar perto do rosto do bebê.\n\n**A causa mecânica**: o **quadríceps** é **fibrótico e curto**, a bolsa suprapatelar é obliterada, e os isquiotibiais escorregam para a frente do eixo do joelho, passando a estendê-lo também.\n\n**Os graus**: **1**, hiperextensão simples; **2**, subluxação anterior da tíbia; **3**, luxação completa.\n\n**As associações**: **displasia do quadril** (em até metade), pé torto, síndrome de Larsen, artrogripose e mielomeningocele.\n\n**O tratamento**:\n\n**precoce e redutível**: alongamento e **gessos seriados** em flexão progressiva, depois órtese;\n\n**irredutível ou falha**: **alongamento cirúrgico do quadríceps** (em V-Y) e capsulotomia anterior.\n\n**A ordem com a displasia do quadril**: trata-se **primeiro o joelho**, porque o suspensório de Pavlik exige o joelho fletido.\n\n**Na prova**: luxação congênita do joelho = **hiperextensão** com **quadríceps fibrótico**.",
-  "correta": "O joelho fica em hiperextensão porque o quadríceps é fibrótico e encurtado.",
   "referencias": [
-   "Pediatric Orthopaedic Society of North America (POSNA). Congenital Knee Dislocation. https://posna.org/physician-education/study-guide/congenital-knee-dislocation"
+   "Pediatric Orthopaedic Society of North America (POSNA). Congenital Knee Dislocation. https://posna.org/physician-education/study-guide/congenital-knee-dislocation",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0026": {
@@ -460,17 +461,18 @@
   "conferido": false
  },
  "pediatria-0032": {
+  "conceito": "**A pseudoartrose congênita da tíbia (PCT).** É uma doença rara em que um segmento da tíbia, geralmente na **junção do terço médio com o distal**, é displásico e fraco. A tíbia se encurva e, cedo ou tarde, **fratura e não consolida**. A **neurofibromatose tipo 1** está presente em cerca de **metade ou mais** dos casos. Por outro lado, só uma pequena parcela dos pacientes com NF1 tem PCT.\n\n**O tecido doente.** Ao redor do foco há um **periósteo espessado** e um **hamartoma fibroso** que estrangula o osso e impede a consolidação. A ressecção completa desse tecido é parte fundamental da cirurgia.\n\n**O encurvamento da tíbia na criança: a direção diz o diagnóstico.**\n\n| Direção | Diagnóstico | Prognóstico |\n|---|---|---|\n| **Anterolateral** | **Pseudoartrose congênita** da tíbia (NF1) | **Ruim**: tende a fraturar e não consolidar |\n| **Posteromedial** | Encurvamento **fisiológico** congênito, com pé calcaneovalgo | **Bom**: corrige espontaneamente; deixa **discrepância** |\n| **Anteromedial** | **Hemimelia fibular** (deficiência da fíbula) | Discrepância importante; deformidade do pé e tornozelo |\n\n**Como lembrar.** **A**nterolateral é **a** ruim (a pseudoartrose). Posteromedial é a \"boa\", que só deixa a perna mais curta. Anteromedial acompanha a ausência da fíbula, com covinha cutânea sobre a tíbia.\n\n**Tratamento.**\n- **Antes da fratura:** proteger a tíbia com uma **órtese** (tipo concha, AFO/KAFO) para evitar a fratura. **Não** se faz osteotomia corretiva para endireitar, porque ela vira pseudoartrose.\n- **Depois da fratura:** a cirurgia é desafiadora. Ela inclui:\n  - **ressecção** do tecido hamartomatoso;\n  - estabilização com **haste intramedular** (de Williams, por exemplo) ou fixador circular de **Ilizarov**;\n  - **enxerto** ósseo autólogo; o enxerto vascularizado de fíbula é uma opção;\n  - a técnica de **cross-union** (união entre tíbia e fíbula) tem mostrado bons resultados.\n- A recidiva de fratura é comum, e a haste costuma ser mantida até a maturidade.\n- Após várias falhas, a **amputação de Syme** com prótese é uma opção funcional legítima.\n\n**O encurvamento posteromedial em detalhe.** Ao nascer, a tíbia é curva para trás e para dentro, e o pé fica em **calcaneovalgo** acentuado, encostado na face anterior da perna. A causa é atribuída à posição intrauterina.\n- **A angulação se corrige** espontaneamente, sobretudo nos primeiros 2 anos.\n- **A discrepância de comprimento persiste** e costuma aumentar com o crescimento. Ao final, chega em média a **3 a 4 cm**, com variação ampla.\n- O tratamento é a observação, o acompanhamento da discrepância e, no momento certo, **epifisiodese** contralateral ou alongamento. A osteotomia para a angulação residual raramente é necessária.\n- **Não há pseudoartrose**: o osso é normal.",
+  "correta": "**Correta: D (correção da deformidade angular e discrepância de comprimento).** No encurvamento congênito posteromedial da tíbia, a **angulação se corrige** espontaneamente com o crescimento, mas persiste uma **discrepância de comprimento**, em média de 3 a 4 cm. Não há pseudoartrose.",
   "incorretas": {
-   "A": "Piora angular e pseudartrose são do arqueamento anterolateral.",
-   "B": "A correção angular está certa, mas o posteromedial não evolui para pseudartrose.",
-   "C": "A discrepância está certa, mas a angulação do posteromedial corrige, não piora."
+   "A": "**Piora com pseudoartrose** descreve o encurvamento **anterolateral** da pseudoartrose congênita da tíbia, e não o posteromedial.",
+   "B": "A angulação se corrige, mas **não há pseudoartrose** no encurvamento posteromedial. O osso é normal.",
+   "C": "A discrepância está certa, mas a angulação **se corrige** espontaneamente, e não piora."
   },
-  "conceito": "A tíbia pode nascer **arqueada** em três direções, e cada uma tem um significado diferente:\n\n**posteromedial**: o pé costuma vir em **calcaneovalgo**, encostando na frente da perna; a **angulação melhora sozinha** nos primeiros anos, mas a tíbia fica **mais curta**, com **discrepância** de cerca de 3 a 5 cm; é **benigna**;\n\n**anterolateral**: associada à **neurofibromatose tipo 1** e à **pseudartrose congênita da tíbia**; **piora** e pode fraturar; é protegida com órtese até a maturidade, evitando osteotomias;\n\n**anteromedial**: associada à **hemimelia fibular**, com discrepância e pé valgo.\n\n**O tratamento do arqueamento posteromedial**: observar a correção angular e acompanhar a discrepância; na idade certa, **epifisiodese** do outro lado ou **alongamento**.\n\n**Um truque de memória**: o \"**posteromedial é pacífico**\" (corrige), e o \"**anterolateral é alarmante**\" (pseudartrose).\n\n**Na prova**: arqueamento posteromedial da tíbia = **corrige a angulação** e deixa **discrepância de comprimento**.",
-  "correta": "No arqueamento posteromedial, a angulação melhora espontaneamente, mas a tíbia fica mais curta, com discrepância de comprimento.",
   "referencias": [
-   "Pediatric Orthopaedic Society of North America (POSNA). Posteromedial Bowing of the Tibia. https://posna.org/physician-education/study-guide/posteromedial-bowing-of-the-tibia"
+   "Pediatric Orthopaedic Society of North America (POSNA). Posteromedial Bowing of the Tibia. https://posna.org/physician-education/study-guide/posteromedial-bowing-of-the-tibia",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0033": {
@@ -781,18 +783,19 @@
   "conferido": false
  },
  "pediatria-0053": {
+  "conceito": "**A pseudoartrose congênita da tíbia (PCT).** É uma doença rara em que um segmento da tíbia, geralmente na **junção do terço médio com o distal**, é displásico e fraco. A tíbia se encurva e, cedo ou tarde, **fratura e não consolida**. A **neurofibromatose tipo 1** está presente em cerca de **metade ou mais** dos casos. Por outro lado, só uma pequena parcela dos pacientes com NF1 tem PCT.\n\n**O tecido doente.** Ao redor do foco há um **periósteo espessado** e um **hamartoma fibroso** que estrangula o osso e impede a consolidação. A ressecção completa desse tecido é parte fundamental da cirurgia.\n\n**O encurvamento da tíbia na criança: a direção diz o diagnóstico.**\n\n| Direção | Diagnóstico | Prognóstico |\n|---|---|---|\n| **Anterolateral** | **Pseudoartrose congênita** da tíbia (NF1) | **Ruim**: tende a fraturar e não consolidar |\n| **Posteromedial** | Encurvamento **fisiológico** congênito, com pé calcaneovalgo | **Bom**: corrige espontaneamente; deixa **discrepância** |\n| **Anteromedial** | **Hemimelia fibular** (deficiência da fíbula) | Discrepância importante; deformidade do pé e tornozelo |\n\n**Como lembrar.** **A**nterolateral é **a** ruim (a pseudoartrose). Posteromedial é a \"boa\", que só deixa a perna mais curta. Anteromedial acompanha a ausência da fíbula, com covinha cutânea sobre a tíbia.\n\n**Tratamento.**\n- **Antes da fratura:** proteger a tíbia com uma **órtese** (tipo concha, AFO/KAFO) para evitar a fratura. **Não** se faz osteotomia corretiva para endireitar, porque ela vira pseudoartrose.\n- **Depois da fratura:** a cirurgia é desafiadora. Ela inclui:\n  - **ressecção** do tecido hamartomatoso;\n  - estabilização com **haste intramedular** (de Williams, por exemplo) ou fixador circular de **Ilizarov**;\n  - **enxerto** ósseo autólogo; o enxerto vascularizado de fíbula é uma opção;\n  - a técnica de **cross-union** (união entre tíbia e fíbula) tem mostrado bons resultados.\n- A recidiva de fratura é comum, e a haste costuma ser mantida até a maturidade.\n- Após várias falhas, a **amputação de Syme** com prótese é uma opção funcional legítima.\n\n**A histologia da pseudoartrose congênita da tíbia.** O achado central é um **periósteo espessado**, com um tecido **fibroso** denso e celular, semelhante a uma **fibromatose** (um hamartoma fibroso). Esse tecido envolve e **estrangula** o osso no foco e tem baixa capacidade osteogênica. Não se trata de um **neurofibroma** típico, mesmo nos pacientes com NF1. Os fibroblastos do tecido doente, porém, têm alterações da via do gene NF1. Por isso, a cirurgia exige a **ressecção ampla do periósteo e do tecido fibroso**, além de enxerto e fixação estável.",
+  "correta": "**Correta: B (no periósteo e é composta por tecido fibroso).** Na pseudoartrose congênita da tíbia, a alteração está no **periósteo espessado**, ocupado por um **tecido fibroso** denso (hamartoma fibroso semelhante à fibromatose), que estrangula o osso e impede a consolidação.",
   "incorretas": {
-   "A": "O local está certo, mas mesmo na neurofibromatose o tecido é fibroso, não um neurofibroma.",
-   "C": "O tecido fibroso está certo, mas a alteração está no periósteo, não na medular.",
-   "D": "Erra o local e o tecido: é o periósteo, com tecido fibroso."
+   "A": "A alteração está no periósteo, mas o tecido é **fibroso** (hamartoma fibroso), e não um neurofibroma típico, mesmo nos pacientes com NF1.",
+   "C": "O tecido é fibroso, mas a sede da alteração é o **periósteo** espessado ao redor do foco, e não a medular.",
+   "D": "Erra o local e o tecido: a alteração está no **periósteo** e é composta por **tecido fibroso**."
   },
-  "conceito": "Na **pseudartrose congênita da tíbia**, o problema começa no **periósteo**. Ele é **espessado** e contém um **tecido fibroso** proliferativo (um hamartoma fibroso) que envolve e **estrangula** o osso, impede a formação de osso novo e não deixa a fratura consolidar.\n\n**Por que isso importa no tratamento**: a cirurgia precisa **ressecar o periósteo doente** e o tecido fibroso ao redor da pseudartrose, além de estabilizar e enxertar. Deixar esse tecido é causa de falha.\n\n**A associação com a neurofibromatose**: cerca de metade dos pacientes tem NF1. Mesmo nesses casos, o tecido encontrado na pseudartrose é **fibroso**, e não um neurofibroma típico (o neurofibroma intraósseo é só um dos tipos raros na classificação de Boyd).\n\n**A doença em resumo**: arqueamento **anterolateral** da tíbia distal, fratura com trauma mínimo, não consolida; antes da fratura, **órtese protetora** e nada de osteotomia corretiva.\n\n**Na prova**: pseudartrose congênita da tíbia = alteração no **periósteo**, com **tecido fibroso**.",
-  "correta": "O periósteo espessado contém um hamartoma de tecido fibroso que estrangula o osso, e por isso precisa ser ressecado.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Congenital Pseudarthrosis of the Tibia. https://posna.org/physician-education/study-guide/congenital-pseudarthrosis-of-the-tibia-%28cpt%29",
-   "Pediatric Lower Extremity Disorders – CPT. https://posna.org/blogs/resident-review/december-2017/pediatric-lower-extremity-disorders"
+   "Pediatric Lower Extremity Disorders – CPT. https://posna.org/blogs/resident-review/december-2017/pediatric-lower-extremity-disorders",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0054": {
@@ -1050,17 +1053,18 @@
   "conferido": false
  },
  "pediatria-0071": {
+  "conceito": "**O colágeno tipo I.** É a principal proteína do osso, da pele, dos tendões, da esclera e da dentina. Cada molécula é uma **tripla hélice** formada por três cadeias: duas **alfa-1** (gene **COL1A1**) e uma **alfa-2** (gene **COL1A2**).\n\n**Por que a glicina é tão importante.** Na hélice, a sequência de aminoácidos se repete no padrão **Gly-X-Y**: a cada três posições, há uma **glicina**. Muitas vezes, X é **prolina** e Y é **hidroxiprolina**. A glicina é o **menor aminoácido**, e só ela cabe no **centro apertado** da tripla hélice, onde as três cadeias se encontram.\n\n**Os dois tipos de defeito.**\n\n| Defeito | Mecanismo | Gravidade |\n|---|---|---|\n| **Quantitativo** | Um alelo não produz cadeia (alelo nulo): metade do colágeno, mas **normal** | **Leve** (tipo I de Sillence) |\n| **Qualitativo** | **Substituição de uma glicina** por um aminoácido maior: colágeno **anormal** | Moderado a **letal** (tipos II, III e IV) |\n\n**O efeito dominante negativo.** Quando a glicina é substituída, a cadeia defeituosa **entra na hélice** e estraga a molécula inteira. É pior ter colágeno anormal que pouco colágeno.\n\n**A posição da mutação importa.** A hélice se dobra da extremidade **C-terminal** para a N-terminal. Substituições mais próximas da extremidade **C-terminal** tendem a ser **mais graves**, porque perturbam a montagem desde o início.\n\n**Formas recessivas e outras.** Existem formas de OI por defeitos em proteínas que **processam** o colágeno, como **CRTAP**, **P3H1** (LEPRE1) e **PPIB**, ou por outros mecanismos ósseos (**IFITM5** no tipo V e **SERPINF1** no tipo VI).\n\n**Os achados radiográficos.**\n- **Osteopenia** difusa.\n- **Corticais finas** e ossos longos **gráceis** (finos), com **trabéculas finas** e esparsas.\n- **Fraturas múltiplas** em diferentes fases de consolidação, e **encurvamentos**.\n- **Vértebras bicôncavas** (em \"boca de peixe\") e achatadas, por microfraturas.\n- **Ossos wormianos** no crânio.\n- **Calcificações em pipoca** nas metáfises nas formas graves.\n- **Protrusão acetabular** e invaginação basilar.\n- No **tipo V**: **calo hiperplásico** e calcificação da membrana interóssea do antebraço.\n\nA **ossificação** em si acontece no tempo normal. O problema é a **qualidade** da matriz, e não o momento em que ela se forma.\n\n**O tratamento.**\n- **Bisfosfonatos** (pamidronato, zoledronato) aumentam a densidade e reduzem as fraturas.\n- **Hastes telescópicas** (Fassier-Duval) corrigem e previnem as deformidades dos ossos longos.\n- Reabilitação para manter a força e a mobilidade.\n\n**A gravidade pelos tipos de Sillence.**\n\n| Tipo | Fragilidade | Evolução |\n|---|---|---|\n| I | **Leve** | Poucas fraturas, que diminuem após a puberdade; esclera azul |\n| **II** | **Extrema** | **Letal no período perinatal**: fraturas intrauterinas múltiplas, costelas \"em rosário\", ossos longos amassados |\n| III | **Grave**, progressiva | Sobrevive, com deformidades acentuadas e baixa estatura grave |\n| IV | Moderada | Deformidades variáveis; esclera normal |\n\nO **tipo II** é a forma em que a fragilidade é **máxima**. O bebê nasce com dezenas de fraturas, e a morte ocorre geralmente por **insuficiência respiratória**, pelo tórax pequeno e pelas costelas fraturadas. O **tipo III** é a forma **mais grave entre os sobreviventes**.",
+  "correta": "**Correta: B (II).** Na classificação de Sillence, a fragilidade óssea é mais grave no **tipo II**, a forma letal no período perinatal, com fraturas intrauterinas múltiplas e costelas fraturadas. O tipo III é a forma mais grave entre os que sobrevivem.",
   "incorretas": {
-   "A": "O tipo I é a forma mais leve, com escleras azuis e poucas fraturas.",
-   "C": "O tipo III é grave e progressivo, mas compatível com a vida; não é o mais grave.",
-   "D": "O tipo IV é moderado, com escleras normais."
+   "A": "O tipo **I** é a forma **mais leve**, com poucas fraturas e esclera azul.",
+   "C": "O tipo **III** é grave e progressivo e é a forma **mais grave entre os sobreviventes**. A fragilidade extrema, porém, é a do tipo II, letal.",
+   "D": "O tipo **IV** tem gravidade **moderada**, intermediária entre o I e o III."
   },
-  "conceito": "A **classificação de Sillence** da osteogênese imperfeita, da mais leve à mais grave:\n\n**tipo I**: a **mais leve**; escleras **azuis**, surdez, poucas fraturas; a quantidade de colágeno é reduzida, mas a estrutura é normal;\n\n**tipo IV**: **moderada**; escleras normais; fraturas e deformidades em número intermediário;\n\n**tipo III**: **grave e progressiva**; muitas fraturas, deformidades dos ossos longos, baixa estatura importante, dentinogênese imperfeita; a criança sobrevive;\n\n**tipo II**: a **mais grave**; **letal no período perinatal**; os ossos são tão frágeis que há **fraturas múltiplas ainda dentro do útero** (fêmures \"amassados\", costelas em contas), e o bebê morre em geral por insuficiência respiratória.\n\n**A base molecular das formas graves**: a troca de uma **glicina** na tripla hélice do colágeno tipo I, que deixa o colágeno estruturalmente defeituoso.\n\n**O tratamento nas formas que sobrevivem**: bisfosfonatos e hastes telescópicas nos ossos longos.\n\n**Na prova**: fragilidade óssea mais grave na osteogênese imperfeita = **tipo II** (letal perinatal).",
-  "correta": "O tipo II é a forma mais grave, letal no período perinatal, com fraturas múltiplas ainda no útero.",
   "referencias": [
-   "Pediatric Orthopaedic Society of North America (POSNA). Osteogenesis Imperfecta. https://posna.org/physician-education/study-guide/osteogenesis-imperfecta"
+   "Pediatric Orthopaedic Society of North America (POSNA). Osteogenesis Imperfecta. https://posna.org/physician-education/study-guide/osteogenesis-imperfecta",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0072": {
@@ -1155,17 +1159,18 @@
   "conferido": false
  },
  "pediatria-0078": {
+  "conceito": "**A doença de Blount (tíbia vara).** É um distúrbio de crescimento da **porção posteromedial da fise proximal da tíbia**. O varo é progressivo e associado a torção tibial interna. O mecanismo aceito é **mecânico**, pela lei de Hueter-Volkmann: a **compressão excessiva** no lado medial da fise, num joelho em varo que suporta muito peso, **inibe o crescimento** daquele lado, e o varo se agrava num ciclo vicioso.\n\n**As duas formas.**\n\n| Forma | Início | Perfil |\n|---|---|---|\n| **Infantil** | Antes dos **4 anos** (geralmente aos 2 a 3) | Frequentemente **bilateral**; criança **obesa** que andou cedo |\n| Tardia (juvenil ou do adolescente) | Após os 4 anos | Unilateral com frequência; adolescente obeso; varo menos acentuado |\n\n**Fatores de risco e de pior prognóstico na forma infantil.**\n- **Obesidade**: o principal fator, pela carga sobre a fise medial.\n- **Marcha precoce**, antes de cerca de 1 ano.\n- Ascendência **negra** e **sexo feminino**: nas séries clássicas, as meninas negras evoluem para os estágios mais graves de Langenskiöld com mais frequência.\n- Doença **bilateral**.\n\n**A classificação de Langenskiöld.** Tem **seis estágios** radiográficos de piora do bico medial da metáfise e da epífise. O estágio VI corresponde a uma **barra óssea** fisária medial. Até o estágio III ou IV, a doença pode regredir com tratamento. Nos estágios V e VI, a lesão da fise é definitiva.\n\n**O ângulo metáfise-diáfise de Levine e Drennan (MDA).** É o ângulo entre uma linha que passa pelos **bicos da metáfise proximal da tíbia** e a perpendicular ao **eixo longo da diáfise**. Ele ajuda a separar o varo fisiológico do Blount:\n\n| MDA | Interpretação (Feldman e Schoenecker) |\n|---|---|\n| **10° ou menos** | Baixo risco: provável varo **fisiológico** |\n| Entre 10 e 16° | Zona **cinzenta**: acompanhar |\n| **16° ou mais** | Alto risco de **Blount** |\n\n**As limitações do MDA.**\n- O ângulo **muda com a rotação** do membro na radiografia: a rotação interna aumenta o valor medido.\n- Há **variação** entre observadores e com o posicionamento.\n- O valor de corte original (**11°**) teve muitos falsos-positivos em estudos posteriores.\n\nPor isso, o MDA é **pouco confiável quando usado isoladamente**. Deve ser interpretado com a **idade**, a evolução clínica, a **simetria** e as **radiografias seriadas**.\n\n**O tratamento.**\n- Até cerca de **3 anos**, nos estágios iniciais: **órtese** KAFO, com resultados variáveis.\n- Depois disso, ou se houver falha: **osteotomia valgizante e derrotatória** da tíbia proximal, de preferência **antes dos 4 anos**, com hipercorreção leve.\n- Nos casos avançados: ressecção de barra, elevação do platô medial ou hemiepifisiodese lateral com placa em 8, conforme a idade.\n\n**A escolha no caso da questão.** Criança de **2 anos e meio**, doença **unilateral** e **estágio II** de Langenskiöld: está na janela em que a **órtese** pode funcionar. A órtese do tipo **KAFO** (joelho-tornozelo-pé), com força em **valgo**, é usada principalmente durante a carga (de dia) e tira a compressão da fise medial. Os resultados são melhores:\n- antes dos **3 anos**;\n- nos estágios **I e II**;\n- na doença **unilateral**;\n- em crianças **não muito obesas**.\n\nSe houver **progressão** depois de alguns meses de órtese, ou se a criança passar dos 3 a 4 anos com deformidade importante, indica-se a **osteotomia** valgizante da tíbia proximal.",
+  "correta": "**Correta: B (ortetização).** Numa criança com menos de 3 anos, doença unilateral e estágio inicial (II) de Langenskiöld, o tratamento indicado é a **órtese** (KAFO com força em valgo), que retira a compressão sobre a fise medial. A osteotomia fica para a progressão ou para crianças mais velhas.",
   "incorretas": {
-   "A": "A doença de Blount tende a progredir; observar sem tratamento não é a conduta nesse caso.",
-   "C": "A osteotomia da tíbia fica para a falha da órtese ou para crianças acima de 4 anos.",
-   "D": "A deformidade está na tíbia; a osteotomia do fêmur não trata a doença de Blount."
+   "A": "A **observação** cabe ao varo **fisiológico**. O Blount diagnosticado, mesmo inicial, tende a progredir e deve ser tratado.",
+   "C": "A **osteotomia da tíbia** é indicada se a órtese falhar, em estágios mais avançados ou após cerca de 3 a 4 anos. No estágio II aos 2 anos e meio, a órtese é a primeira opção.",
+   "D": "A deformidade do Blount está na **tíbia proximal**. A osteotomia no fêmur não corrige a causa."
   },
-  "conceito": "Na **doença de Blount infantil** (tíbia vara antes dos 4 anos), o tratamento depende da **idade** e do **estágio de Langenskiöld**:\n\n**menos de 3 anos, estágios I e II**: **órtese**; uma órtese longa (joelho-tornozelo-pé) com força **valgizante**, usada durante o dia, na marcha; funciona melhor nos casos **unilaterais**;\n\n**sem melhora em cerca de 1 ano**, ou criança com mais de 4 anos: **osteotomia valgizante** da tíbia proximal, com leve **hipercorreção**, de preferência antes dos 4 anos, para a fise ainda poder se recuperar;\n\n**estágios avançados ou crianças maiores**: crescimento guiado, ressecção da barra óssea e elevação do planalto tibial medial.\n\n**O caso**: uma criança de **2 anos e meio**, com Blount **unilateral** no estágio **II**. Está na faixa da **órtese**. Observar não é adequado, porque a doença tende a progredir; a cirurgia ainda não é a primeira escolha; e o problema está na tíbia, não no fêmur.\n\n**Na prova**: Blount unilateral, 2,5 anos, estágio II = **órtese**.",
-  "correta": "Antes dos 3 anos e nos estágios I e II, sobretudo no caso unilateral, o tratamento indicado é a órtese valgizante.",
   "referencias": [
-   "Pediatric Orthopaedic Society of North America (POSNA). Blount's Disease – Infantile. https://posna.org/physician-education/study-guide/blount-s-disease-infantile"
+   "Pediatric Orthopaedic Society of North America (POSNA). Blount's Disease – Infantile. https://posna.org/physician-education/study-guide/blount-s-disease-infantile",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0079": {
@@ -1214,14 +1219,18 @@
   "conferido": false
  },
  "pediatria-0082": {
+  "conceito": "**O centro de gravidade.** É o ponto onde se pode considerar concentrado **todo o peso do corpo**. No adulto, em posição anatômica (em pé, ereto), ele fica na **linha média**, aproximadamente **5 cm à frente da segunda vértebra sacral (S2)**, dentro da pelve. Corresponde a cerca de **55%** da altura, medida a partir do chão.\n\n**Por que ele importa para a marcha.** Andar é **deslocar o centro de gravidade** para a frente com o mínimo de gasto de energia. Na marcha normal, ele descreve uma **curva senoidal suave**, com oscilação de cerca de **5 cm** no plano vertical e de cerca de 5 cm no plano lateral. Saunders, Inman e Eberhart descreveram os **determinantes da marcha**, mecanismos que **achatam** essa curva e economizam energia:\n1. Rotação da pelve no plano horizontal.\n2. Inclinação da pelve no plano frontal.\n3. Flexão do joelho na fase de apoio.\n4. e 5. Movimentos do pé e do tornozelo.\n6. Deslocamento lateral da pelve.\n\n**Quando o centro de gravidade oscila demais, a marcha gasta mais energia.** É o caso de:\n- **amputados**, em que o gasto aumenta mais nas amputações mais altas;\n- **artrodese** de quadril ou joelho;\n- **paralisia cerebral**, sobretudo na marcha agachada.\n\n**O centro de gravidade muda com a idade.**\n\n| Idade | Posição relativa |\n|---|---|\n| Recém-nascido | Mais **alto**, perto de T12, porque a cabeça e o tronco são proporcionalmente grandes |\n| Criança | Desce progressivamente com o crescimento das pernas |\n| Adulto | Cerca de 5 cm à frente de **S2** |\n\n**A linha de gravidade em pé.** No plano sagital, a linha vertical que passa pelo centro de gravidade cai:\n- um pouco **atrás** da articulação do **quadril**;\n- um pouco **à frente** do **joelho**;\n- **à frente** do **tornozelo**.\n\nIsso permite ficar em pé com pouco esforço muscular: os ligamentos iliofemorais e a cápsula posterior do joelho estabilizam passivamente, e o **sóleo** controla a tendência de o corpo cair para a frente.\n\n**Quanto o centro de gravidade oscila.** Na marcha normal do adulto, o deslocamento **vertical** do centro de gravidade é de cerca de **4,5 a 5 cm** (aproximadamente 2 polegadas). Ele atinge o ponto **mais alto** no **apoio médio**, quando o membro de apoio está vertical, e o **mais baixo** no **duplo apoio**. O deslocamento **lateral** tem magnitude semelhante, também cerca de 4 a 5 cm, e é máximo no apoio médio, para o lado do membro de apoio. Sem os determinantes da marcha, a oscilação vertical seria quase o dobro.\n\n**Traduzindo os nomes da questão.** Na terminologia antiga em português:\n- **apoio do calcanhar** (choque do calcanhar) é o contato inicial, no **duplo apoio**: o centro de gravidade está no ponto **mais baixo**;\n- **aplanamento do pé** (pé plano) é a resposta à carga;\n- **acomodação intermediária** é o **apoio médio**, com o membro vertical sob o corpo: o centro de gravidade está no ponto **mais alto**;\n- **oscilação intermediária** é o balanço médio do outro membro.",
+  "correta": "**Correta: B (apoio do calcanhar e acomodação intermediária).** O centro de gravidade fica no ponto **mais baixo** no **apoio do calcanhar** (contato inicial, durante o duplo apoio, com os dois membros inclinados) e no ponto **mais alto** na **acomodação intermediária** (apoio médio), com o membro de apoio vertical sob o corpo.",
   "incorretas": {
-   "A": "O mínimo está certo, mas o ponto mais alto é o apoio médio, não a oscilação intermediária.",
-   "C": "O ponto mais baixo é o contato do calcanhar, não o aplanamento do pé, e o mais alto é o apoio médio.",
-   "D": "O máximo está certo, mas o ponto mais baixo é o contato do calcanhar, não o aplanamento do pé."
+   "A": "O ponto mais baixo está certo, mas a **oscilação intermediária** é o balanço médio, uma fase do membro que está no ar. O ponto mais alto é definido pelo membro de apoio, no apoio médio.",
+   "C": "No **aplanamento do pé** (resposta à carga), o centro de gravidade já começou a subir. O ponto mais baixo é no contato do calcanhar, durante o duplo apoio.",
+   "D": "O ponto mais alto (acomodação intermediária) está certo, mas o ponto **mais baixo** é no **apoio do calcanhar**, e não no aplanamento do pé."
   },
-  "conceito": "Na marcha, o **centro de gravidade** sobe e desce a cada passo, como uma onda.\n\n**O ponto mais baixo**: no **contato do calcanhar**, durante o **duplo apoio**. As duas pernas estão no chão, abertas como um compasso, e o quadril fica mais baixo.\n\n**O ponto mais alto**: no **apoio médio** (a \"acomodação intermediária\"), quando a perna de apoio fica **vertical** sob o corpo e o quadril passa por cima dela.\n\n**Para o lado**: o centro de gravidade também oscila de um lado para o outro, e o deslocamento máximo acontece no apoio médio, sobre a perna que está apoiada.\n\n**Os determinantes da marcha de Saunders** existem para achatar essa onda e economizar energia: a rotação e a inclinação da pelve, a flexão do joelho no apoio e os mecanismos do pé e do tornozelo. Na marcha normal, a oscilação é de cerca de 5 cm na vertical e 5 cm para os lados.\n\n**Na prova**: centro de gravidade mais baixo no **apoio do calcanhar** e mais alto no **apoio médio**.",
-  "correta": "O centro de gravidade é mais baixo no contato do calcanhar, com as pernas abertas, e mais alto no apoio médio, com a perna vertical.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Perry J, Burnfield JM. Gait Analysis: Normal and Pathological Function. 2ª edição. SLACK; 2010."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0083": {
@@ -2148,14 +2157,19 @@
   "conferido": false
  },
  "pediatria-0152": {
+  "conceito": "**A pergunta dos pais: meu filho vai andar?** Na paralisia cerebral, o **prognóstico de marcha** pode ser estimado nos primeiros anos, a partir do **desenvolvimento motor** e dos **reflexos primitivos**.\n\n**O sentar como preditor (Molnar e outros).**\n\n| Sentar independente | Prognóstico de marcha |\n|---|---|\n| Até os **2 anos** | **Bom**: a maioria andará |\n| Entre 2 e 4 anos | Reservado: talvez ande, muitas vezes com apoio |\n| Não senta aos **4 anos** | **Ruim**: dificilmente andará |\n\nNão conseguir sentar aos 2 anos indica um prognóstico pior, porque o controle de tronco é a base para a marcha.\n\n**Os reflexos primitivos de Bleck.** Avaliados após cerca de **1 ano** de idade:\n- Reflexo tônico cervical **assimétrico** e **simétrico**.\n- **Moro**.\n- Reflexo de **retificação** do pescoço.\n- Reflexo de **extensão** protetora (paraquedas): sua **ausência** pontua.\n- **Apoio extensor** (positive support).\n- Reação postural.\n\nCom **dois ou mais** sinais anormais, o prognóstico para marcha é **ruim**. Com um sinal, reservado. Com nenhum, bom.\n\n**O prognóstico pelo tipo topográfico.**\n- **Hemiplegia**: praticamente **todos andam**, em geral antes dos 2 a 3 anos.\n- **Diplegia**: a **maioria anda**, muitas vezes com órteses ou andador.\n- **Quadriplegia**: a minoria anda.\n\n**Outras ferramentas.** O **GMFCS** (sistema de classificação da função motora grossa, níveis I a V) é estável após cerca de 2 anos e **prevê a função** motora futura com boa precisão. As curvas de desenvolvimento motor por nível mostram o platô esperado para cada criança.\n\n**O que pesa menos.** A **deficiência intelectual** influencia a independência e a reabilitação, mas, isoladamente, é um preditor menos direto da marcha que o controle motor.",
+  "correta": "**Correta: C (incapacidade de assentar com 2 anos de idade).** Na paralisia cerebral, sentar sem apoio até os 2 anos é sinal de bom prognóstico para a marcha. A **incapacidade de sentar aos 2 anos** indica prognóstico pior, e não sentar aos 4 anos indica que a criança dificilmente andará.",
   "incorretas": {
-   "A": "O retardo mental, isolado, não é o critério usado para prever a marcha.",
-   "B": "A hemiplegia tem bom prognóstico: quase todos os hemiplégicos andam.",
-   "D": "O controle da cabeça aos 8 meses não é o critério clássico; a idade de sentar pesa mais."
+   "A": "A **deficiência intelectual** influencia a reabilitação e a independência, mas, isoladamente, não é o critério clássico de prognóstico de marcha.",
+   "B": "Na **hemiplegia espástica**, praticamente todas as crianças **andam**. Ela é um fator de **bom** prognóstico.",
+   "D": "Um controle de cabeça incompleto aos **8 meses** indica atraso, mas não é o critério clássico de mau prognóstico de marcha. O marco mais usado é o sentar até os 2 anos."
   },
-  "conceito": "Na **paralisia cerebral**, os pais querem saber se a criança vai andar. Os preditores clássicos vêm do **controle motor grosseiro** que ela já alcançou:\n\n**sentar sozinho até os 2 anos**: preditor de que vai andar (Molnar); **não sentar aos 2 anos** é o critério clássico de **pior prognóstico**;\n\n**não sentar aos 4 anos**: raramente anda;\n\n**reflexos primitivos** persistentes depois de 18 a 24 meses (Bleck): pior prognóstico;\n\n**tipo topográfico**: quase todos os **hemiplégicos** andam; tetraplégicos raramente.\n\n**O GMFCS** classifica a mobilidade em cinco níveis, de I (anda sem restrições) a V (sem controle de cabeça e tronco, transportado). Nos níveis I a III, o foco ortopédico é a **marcha**; nos níveis IV e V, a vigilância do **quadril** (índice de migração de Reimers) e da coluna.\n\n**O que não define a marcha**: o retardo mental, isoladamente, não é o critério clássico; e o controle de cabeça aos 8 meses é marco precoce demais para prever deambulação.\n\n**Na prova**: pior prognóstico de marcha = **não sentar aos 2 anos**.",
-  "correta": "Não conseguir sentar sozinho aos 2 anos é o preditor clássico de que a criança não vai andar.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Molnar GE, Gordon SU. Cerebral palsy: predictive value of selected clinical signs for early prognostication of motor function. Arch Phys Med Rehabil. 1976;57(4):153-158.",
+   "Bleck EE. Locomotor prognosis in cerebral palsy. Dev Med Child Neurol. 1975;17(1):18-25."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0153": {
@@ -2381,19 +2395,20 @@
   "conferido": false
  },
  "pediatria-0170": {
+  "conceito": "**Duas nomenclaturas para as fases da marcha.** As provas ainda usam a **terminologia antiga**, mas a nomenclatura de **Rancho Los Amigos** (Perry) é a atual. Saber traduzir uma na outra resolve a questão.\n\n**A fase de apoio (cerca de 60%).**\n\n| Terminologia antiga | Rancho Los Amigos |\n|---|---|\n| Choque do calcanhar | Contato inicial |\n| Pé plano | Resposta à carga |\n| Apoio médio | Apoio médio |\n| Elevação do calcanhar | Apoio terminal |\n| Desprendimento dos dedos | Pré-balanço |\n\n**A fase de balanço (cerca de 40%).**\n\n| Terminologia antiga | Rancho Los Amigos |\n|---|---|\n| **Aceleração** | **Balanço inicial** |\n| Balanço médio | Balanço médio |\n| Desaceleração | Balanço terminal |\n\n**O joelho no balanço.**\n- No **pré-balanço** e no **balanço inicial** (aceleração), o joelho flete rapidamente. Ele atinge o **pico de flexão**, cerca de **60°**, no **balanço inicial**. A flexão \"encurta\" o membro para o pé passar sem tocar o chão. Ela é gerada principalmente pela **impulsão do tornozelo** e pela flexão do quadril, e não por uma contração forte dos isquiotibiais.\n- No **balanço médio**, o joelho começa a estender, de forma passiva, como um pêndulo.\n- No **balanço terminal** (desaceleração), os **isquiotibiais** freiam a extensão do joelho e preparam o contato inicial, com o joelho quase estendido.\n\n**A aplicação clínica: o joelho rígido (stiff knee).** Na paralisia cerebral, o **reto femoral** pode ficar ativo fora de hora no pré-balanço e no balanço inicial. Ele impede a flexão, e o pico fica **baixo e atrasado**. O paciente arrasta o pé ou circunduz o membro. O tratamento clássico é a **transferência do reto femoral** para os flexores.",
+  "correta": "**Correta: A (aceleração).** A flexão máxima do joelho na marcha normal, cerca de 60°, ocorre no início da fase de balanço. Na terminologia antiga, esse período é a **aceleração**; na de Rancho Los Amigos, é o **balanço inicial**.",
   "incorretas": {
-   "B": "Na desaceleração o joelho está estendendo, freado pelos isquiotibiais.",
-   "C": "Na oscilação intermediária a flexão do joelho já está diminuindo.",
-   "D": "Acomodação intermediária é termo da fase de apoio, não do balanço."
+   "B": "Na **desaceleração** (balanço terminal), o joelho está **estendendo**, freado pelos isquiotibiais para o contato inicial.",
+   "C": "Na **oscilação intermediária** (balanço médio), o joelho **já começou a estender**, de forma passiva, depois do pico de flexão.",
+   "D": "A **acomodação intermediária** corresponde ao **apoio médio**, na fase de apoio, quando o joelho está próximo da extensão."
   },
-  "conceito": "A **fase de balanço** ocupa cerca de 40% do ciclo da marcha. Ela tem duas nomenclaturas, e a questão usa a clássica:\n\n**aceleração** (clássica), ou **balanço inicial** (Rancho Los Amigos): o pé sai do chão; o quadril flete e o **joelho atinge a flexão máxima, de cerca de 60°**, para encurtar o membro e o pé passar sem arrastar;\n\n**oscilação intermediária**, ou **balanço médio**: o membro passa ao lado do outro; a tíbia fica vertical e o joelho já começa a estender;\n\n**desaceleração**, ou **balanço terminal**: o joelho **estende** e os **isquiotibiais freiam** a perna, preparando o contato do calcanhar.\n\n**Na fase de apoio**, a nomenclatura clássica usa termos como acomodação intermediária (apoio médio); não fazem parte do balanço.\n\n**Por que a flexão do joelho importa**: se ela falha (como na marcha com joelho rígido da paralisia cerebral, por reto femoral ativo no balanço), o pé arrasta, e o paciente compensa com circundução ou elevação da pelve.\n\n**Na prova**: flexão máxima do joelho no balanço = **aceleração** (balanço inicial).",
-  "correta": "Na aceleração, ou balanço inicial, o joelho atinge a flexão máxima, de cerca de 60°, para o pé sair do chão.",
-  "alerta": "A questão utiliza a terminologia antiga aceleração/desaceleração. Na nomenclatura atual de Rancho Los Amigos, o correspondente é balanço inicial, médio e terminal.",
   "referencias": [
    "https://posna.org/physician-education/study-guide/gait",
-   "Barros Filho, Lech, Exame físico em ortopedia, 3ª edição, Cap. 5"
+   "Barros Filho, Lech, Exame físico em ortopedia, 3ª edição, Cap. 5",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "alerta": "A questão utiliza a terminologia antiga aceleração/desaceleração. Na nomenclatura atual de Rancho Los Amigos, o correspondente é balanço inicial, médio e terminal.",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0171": {
@@ -2521,14 +2536,18 @@
   "conferido": false
  },
  "pediatria-0181": {
-  "conceito": "### Determinantes da marcha (Saunders)\n- Objetivo: reduzir a ==oscilação do centro de massa== e o gasto energético.\n\n| Determinante | Efeito |\n|---|---|\n| ==rotação pélvica (transversa)== | pelve avança (==anterior==) com o membro em balanço: alonga o passo e ==reduz a queda vertical== |\n| inclinação pélvica (coronal) | pelve cai do lado do balanço: reduz a subida no apoio médio |\n| flexão do joelho no apoio | reduz a elevação no apoio médio |\n| mecanismo pé-tornozelo | suaviza a trajetória |\n| mecanismo joelho-tornozelo | idem |\n| deslocamento lateral da pelve | base estreita, valgo fisiológico |\n\n- Centro de massa oscila cerca de 5 cm vertical e 5 cm lateral.\n\n### Altura do centro de massa\n| Momento | Altura |\n|---|---|\n| ==contato do calcanhar== (duplo apoio) | ==mais baixa== |\n| ==apoio médio== (acomodação intermediária) | ==mais alta== |\n\n- No lateral: máximo deslocamento no apoio médio, sobre o membro de apoio.\n\n### Oscilação do centro de gravidade\n| Plano | Amplitude |\n|---|---|\n| ==vertical== | ==cerca de 4,5 a 5 cm== (curva senoidal) |\n| lateral | cerca de 4 a 5 cm |\n\n> **Na prova:** oscilação vertical do centro de gravidade = ==cerca de 4,5 cm==",
-  "correta": "**4,5 cm.**\n- Curva senoidal vertical.\n- Determinantes de Saunders reduzem a amplitude.",
+  "conceito": "**O centro de gravidade.** É o ponto onde se pode considerar concentrado **todo o peso do corpo**. No adulto, em posição anatômica (em pé, ereto), ele fica na **linha média**, aproximadamente **5 cm à frente da segunda vértebra sacral (S2)**, dentro da pelve. Corresponde a cerca de **55%** da altura, medida a partir do chão.\n\n**Por que ele importa para a marcha.** Andar é **deslocar o centro de gravidade** para a frente com o mínimo de gasto de energia. Na marcha normal, ele descreve uma **curva senoidal suave**, com oscilação de cerca de **5 cm** no plano vertical e de cerca de 5 cm no plano lateral. Saunders, Inman e Eberhart descreveram os **determinantes da marcha**, mecanismos que **achatam** essa curva e economizam energia:\n1. Rotação da pelve no plano horizontal.\n2. Inclinação da pelve no plano frontal.\n3. Flexão do joelho na fase de apoio.\n4. e 5. Movimentos do pé e do tornozelo.\n6. Deslocamento lateral da pelve.\n\n**Quando o centro de gravidade oscila demais, a marcha gasta mais energia.** É o caso de:\n- **amputados**, em que o gasto aumenta mais nas amputações mais altas;\n- **artrodese** de quadril ou joelho;\n- **paralisia cerebral**, sobretudo na marcha agachada.\n\n**O centro de gravidade muda com a idade.**\n\n| Idade | Posição relativa |\n|---|---|\n| Recém-nascido | Mais **alto**, perto de T12, porque a cabeça e o tronco são proporcionalmente grandes |\n| Criança | Desce progressivamente com o crescimento das pernas |\n| Adulto | Cerca de 5 cm à frente de **S2** |\n\n**A linha de gravidade em pé.** No plano sagital, a linha vertical que passa pelo centro de gravidade cai:\n- um pouco **atrás** da articulação do **quadril**;\n- um pouco **à frente** do **joelho**;\n- **à frente** do **tornozelo**.\n\nIsso permite ficar em pé com pouco esforço muscular: os ligamentos iliofemorais e a cápsula posterior do joelho estabilizam passivamente, e o **sóleo** controla a tendência de o corpo cair para a frente.\n\n**Quanto o centro de gravidade oscila.** Na marcha normal do adulto, o deslocamento **vertical** do centro de gravidade é de cerca de **4,5 a 5 cm** (aproximadamente 2 polegadas). Ele atinge o ponto **mais alto** no **apoio médio**, quando o membro de apoio está vertical, e o **mais baixo** no **duplo apoio**. O deslocamento **lateral** tem magnitude semelhante, também cerca de 4 a 5 cm, e é máximo no apoio médio, para o lado do membro de apoio. Sem os determinantes da marcha, a oscilação vertical seria quase o dobro.",
+  "correta": "**Correta: B (4,5).** Na marcha normal, o centro de gravidade oscila cerca de **4,5 a 5 cm no plano vertical**, com o ponto mais alto no apoio médio e o mais baixo no duplo apoio. Os determinantes da marcha mantêm essa oscilação pequena e reduzem o gasto de energia.",
   "incorretas": {
-   "A": "**3 cm.**\n- Subestimado.",
-   "C": "**6 cm.**\n- Superestimado.",
-   "D": "**7,5 cm.**\n- Seria marcha sem determinantes."
+   "A": "**3 cm** é menor que a oscilação vertical descrita na marcha normal do adulto.",
+   "C": "**6 cm** é maior que a oscilação normal. Valores maiores indicam marcha menos eficiente.",
+   "D": "**7,5 cm** se aproxima da oscilação que ocorreria **sem** os determinantes da marcha, com um gasto de energia muito maior."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Perry J, Burnfield JM. Gait Analysis: Normal and Pathological Function. 2ª edição. SLACK; 2010."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0182": {
@@ -2672,14 +2691,18 @@
   "conferido": false
  },
  "pediatria-0199": {
-  "conceito": "### Osteogênese imperfeita (Sillence modificada)\n| Tipo | Gravidade | Detalhe |\n|---|---|---|\n| I | leve | ==escleras azuis==, surdez, colágeno em quantidade reduzida |\n| II | letal perinatal | fraturas múltiplas intrauterinas |\n| III | grave progressiva | deformidade, baixa estatura, dentinogênese |\n| IV | moderada | escleras normais |\n| ==V== | moderada | ==calo hiperplásico== (simula ==osteossarcoma==), ==calcificação da membrana interóssea== do antebraço, luxação da cabeça do rádio; IFITM5 |\n| VI em diante | variadas | genes não colágenos |\n\n### Tratamento\n- ==Bisfosfonato== (pamidronato, zoledronato).\n- Hastes telescópicas (Fassier-Duval, Sheffield) nas deformidades e fraturas repetidas.\n\n### Hastes na OI\n| Haste | Tipo |\n|---|---|\n| Sofield-Millar | ==osteotomias múltiplas em espeto== (\"shish kebab\") + haste não extensível |\n| Bailey-Dubow, Sheffield | extensíveis (telescopadas) com T |\n| ==Fassier-Duval== | ==telescopada== inserida por via proximal, rosca nas epífises; menos cirurgias abertas |\n| Rush, Steinmann | não extensíveis (migram com o crescimento) |\n\n> **Na prova:** haste telescopada da figura = ==Fassier-Duval==",
-  "correta": "**Fassier-Duval.**\n- Telescopada, cresce com a criança.\n- Fixada nas epífises por rosca.",
+  "conceito": "**Por que hastes na osteogênese imperfeita.** Na osteogênese imperfeita (OI), os ossos longos fraturam repetidamente e se **encurvam**. O encurvamento concentra o estresse no ápice da curva e provoca novas fraturas, num ciclo vicioso. As **hastes intramedulares** quebram esse ciclo:\n- **alinham** o osso (corrigem a curva);\n- funcionam como um **tutor interno**, que protege contra novas fraturas e desvios.\n\n**A técnica de Sofield-Millar.** É a cirurgia base. O osso curvo é cortado em **vários segmentos** (osteotomias múltiplas), que são \"enfiados\" numa haste reta, como num **espetinho** (shish kebab).\n\n**O problema das hastes simples.** A criança **cresce**, mas a haste não. Com o tempo, o osso cresce além da ponta da haste, a parte desprotegida encurva e fratura, e é preciso **trocar** a haste muitas vezes.\n\n**A solução: as hastes telescópicas.** São formadas por **duas peças** (uma macho e uma fêmea) que deslizam uma dentro da outra. Cada peça se **ancora numa epífise**, nas extremidades do osso. Com o crescimento das fises, as epífises se afastam e a haste **se alonga junto**, como uma antena.\n\n| Haste | Característica |\n|---|---|\n| **Bailey-Dubow** | A primeira telescópica; ancoragem em \"T\", exige **abrir as duas articulações** |\n| **Fassier-Duval** | Peças com **rosca** nas pontas para as epífises; inserida por **uma só entrada**, sem abrir a articulação distal |\n| Hastes simples (Rush, Steinmann, fios) | **Não se alongam**; usadas em crianças muito pequenas ou ossos finos |\n\n**A imagem.** A radiografia mostra um **úmero** com uma haste intramedular que tem **pontas rosqueadas** ancoradas nas epífises proximal e distal, com o aspecto da haste de **Fassier-Duval**.\n\n**As vantagens da Fassier-Duval.** Ela é inserida por **via percutânea ou com incisão pequena**, sem artrotomia da articulação distal, o que reduz as complicações. Pode ser usada no fêmur, na tíbia e no úmero. As complicações ainda incluem migração, falha do telescópio (a haste não se alonga) e necessidade de revisão.\n\n**O tratamento clínico associado.** Os **bisfosfonatos** (pamidronato, zoledronato) aumentam a densidade óssea e reduzem fraturas. São usados em associação com as hastes.",
+  "correta": "**Correta: D (Fassier-Duval).** A imagem mostra o úmero fixado com uma haste **telescópica** com pontas rosqueadas ancoradas nas epífises: a haste de **Fassier-Duval**. Ela se alonga com o crescimento e é inserida por uma única entrada, sem abrir a articulação distal.",
   "incorretas": {
-   "A": "**Técnica de osteotomias.**\n- Haste não extensível.",
-   "B": "**Pino liso.**\n- Não telescopado.",
-   "C": "**Haste de adulto.**\n- Bloqueada, não telescopada."
+   "A": "**Sofield** (Sofield-Millar) é a técnica das **osteotomias múltiplas** com realinhamento sobre uma haste. Originalmente, usava hastes simples, que **não se alongam**.",
+   "B": "O **pino de Steinmann** é uma haste lisa e **não telescópica**. Não acompanha o crescimento.",
+   "C": "A haste de **Russell-Taylor** é uma haste bloqueada para fraturas de **adultos**, sem mecanismo telescópico."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0200": {
@@ -4133,7 +4156,7 @@
   "formato": "corrido"
  },
  "pediatria-0360": {
-  "conceito": "**O gráfico da análise de marcha.** A **cinemática** mostra o ângulo de uma articulação ao longo do **ciclo da marcha** (0 a 100%). A linha vertical separa a **fase de apoio** (cerca de 60%) da **fase de balanço** (cerca de 40%). A faixa tracejada mostra a **curva normal**.\n\n**A curva normal do joelho no plano sagital.**\n1. **Contato inicial**: joelho quase estendido (cerca de 5°).\n2. **Resposta à carga**: flexão de cerca de **15 a 20°**, para absorver o impacto.\n3. **Apoio médio e terminal**: o joelho volta para quase a **extensão completa**.\n4. **Pré-balanço e balanço inicial**: flexão rápida até cerca de **60°**, o pico no início do balanço, para o pé passar sem tocar o chão.\n5. **Balanço terminal**: extensão de novo, preparando o próximo contato.\n\n**A curva da imagem.** A curva do paciente (linha contínua) mostra o joelho **fletido durante todo o apoio**, sem nunca se aproximar da extensão, em cerca de 40 a 50°. É a **marcha agachada (crouch)**.\n\n**Os dois padrões patológicos do joelho na paralisia cerebral.**\n\n| Padrão | No apoio | No balanço |\n|---|---|---|\n| **Crouch** (agachada) | **Flexão excessiva** e persistente | Pode ter pico reduzido |\n| **Stiff knee** (joelho rígido) | Normal ou pouco alterado | **Pico de flexão reduzido e atrasado** |\n\nNo stiff knee, a curva teria apoio próximo do normal e um pico de flexão no balanço **baixo e tardio**, pela atividade excessiva do **reto femoral**. O tratamento clássico é a **transferência do reto femoral**.\n\n**Por que a marcha agachada é típica da diplegia.** A **diplegia espástica** é a forma de PC que mais leva à marcha agachada. Os mecanismos são:\n- **contratura dos isquiotibiais** e flexão do quadril;\n- **fraqueza do sóleo** e do quadríceps;\n- deformidades em **alavanca** (lever arm dysfunction): torção femoral, torção tibial externa e pé plano valgo, que reduzem o braço de alavanca do tríceps sural;\n- frequentemente, um **alongamento isolado do tendão calcâneo**, feito no passado, que enfraquece o sóleo e piora o crouch.\n\nNa **hemiplegia**, os padrões mais comuns envolvem o **equino** (classificação de Winters, Gage e Hicks). O crouch bilateral é mais típico do diplégico.\n\n**O tratamento do crouch.** **Cirurgia de múltiplos níveis** em um tempo, guiada pela análise de marcha:\n- alongamento dos isquiotibiais;\n- correção das torções ósseas e do pé;\n- nos casos graves, **osteotomia de extensão do fêmur distal** com avanço do tendão patelar.",
+  "conceito": "**O gráfico da análise de marcha.** A **cinemática** mostra o ângulo de uma articulação ao longo do **ciclo da marcha** (0 a 100%). A linha vertical separa a **fase de apoio** (cerca de 60%) da **fase de balanço** (cerca de 40%). A faixa tracejada mostra a **curva normal**.\n\n**A curva normal do joelho no plano sagital.**\n1. **Contato inicial**: joelho quase estendido (cerca de 5°).\n2. **Resposta à carga**: flexão de cerca de **15 a 20°**, para absorver o impacto.\n3. **Apoio médio e terminal**: o joelho volta para quase a **extensão completa**.\n4. **Pré-balanço e balanço inicial**: flexão rápida até cerca de **60°**, o pico no início do balanço, para o pé passar sem tocar o chão.\n5. **Balanço terminal**: extensão de novo, preparando o próximo contato.\n\n**A curva da imagem.** A curva do paciente (linha contínua) mostra o joelho **fletido durante todo o apoio**, sem nunca se aproximar da extensão, em torno de 50 a 60°. É a **marcha agachada (crouch)**.\n\n**Os dois padrões patológicos do joelho na paralisia cerebral.**\n\n| Padrão | No apoio | No balanço |\n|---|---|---|\n| **Crouch** (agachada) | **Flexão excessiva** e persistente | Pode ter pico reduzido |\n| **Stiff knee** (joelho rígido) | Normal ou pouco alterado | **Pico de flexão reduzido e atrasado** |\n\nNo stiff knee, a curva teria apoio próximo do normal e um pico de flexão no balanço **baixo e tardio**, pela atividade excessiva do **reto femoral**. O tratamento clássico é a **transferência do reto femoral**.\n\n**Por que a marcha agachada é típica da diplegia.** A **diplegia espástica** é a forma de PC que mais leva à marcha agachada. Os mecanismos são:\n- **contratura dos isquiotibiais** e flexão do quadril;\n- **fraqueza do sóleo** e do quadríceps;\n- deformidades em **alavanca** (lever arm dysfunction): torção femoral, torção tibial externa e pé plano valgo, que reduzem o braço de alavanca do tríceps sural;\n- frequentemente, um **alongamento isolado do tendão calcâneo**, feito no passado, que enfraquece o sóleo e piora o crouch.\n\nNa **hemiplegia**, os padrões mais comuns envolvem o **equino** (classificação de Winters, Gage e Hicks). O crouch bilateral é mais típico do diplégico.\n\n**O tratamento do crouch.** **Cirurgia de múltiplos níveis** em um tempo, guiada pela análise de marcha:\n- alongamento dos isquiotibiais;\n- correção das torções ósseas e do pé;\n- nos casos graves, **osteotomia de extensão do fêmur distal** com avanço do tendão patelar.",
   "correta": "**Correta: A (crouch em paciente diplégico).** O gráfico mostra o joelho **fletido durante toda a fase de apoio**, sem se aproximar da extensão, o que caracteriza a **marcha agachada (crouch)**. Esse padrão é típico da diplegia espástica.",
   "incorretas": {
    "B": "No **stiff knee**, o apoio é próximo do normal e o problema é o **pico de flexão reduzido e atrasado** no balanço. O gráfico mostra flexão excessiva no apoio.",
@@ -5661,14 +5684,18 @@
   "conferido": false
  },
  "pediatria-0490": {
+  "conceito": "**A coxa vara.** É a redução do **ângulo cervicodiafisário** do fêmur proximal (normal na criança: cerca de 135 a 145°). Ela pode ser:\n- **congênita**: associada à deficiência femoral congênita (fêmur curto);\n- **do desenvolvimento**: surge no início da marcha, num fêmur normal ao nascer;\n- **adquirida**: sequela de displasias esqueléticas, raquitismo, trauma, infecção, Perthes ou osteotomia.\n\n**A coxa vara do desenvolvimento.** O defeito está na **ossificação da porção inferomedial do colo** femoral, junto à fise do colo. Ali se forma um fragmento triangular de osso separado (o **triângulo de Fairbank**), cercado por uma faixa de cartilagem displásica. O colo fica fraco e cede com a carga.\n\n**Por que a fise do colo importa.**\n- Normalmente, a fise do colo é quase **horizontal**, e a carga a **comprime**, estimulando o crescimento normal.\n- Na coxa vara, ela fica **vertical**. A carga passa a produzir forças de **cisalhamento** sobre a fise, e o colo vai cedendo para varo.\n\nO **ângulo de Hilgenreiner-epifisário** (HE) mede essa verticalização: é o ângulo entre a linha de Hilgenreiner e uma linha paralela à fise.\n- HE **menor que 45°**: a deformidade tende a **regredir** espontaneamente.\n- HE de 45 a 60°: zona **intermediária**: acompanhar.\n- HE **maior que 60°**: a deformidade **progride** e precisa de cirurgia.\n\n**O quadro clínico.** Marcha de **Trendelenburg** indolor (bilateral: marcha anserina), encurtamento do membro e limitação da **abdução e da rotação interna**. O trocanter maior fica alto, e os abdutores, encurtados, perdem eficiência.\n\n**O tratamento.**\n- **Osteotomia valgizante subtrocantérica** ou intertrocantérica (de Pauwels, por exemplo), quando o HE é maior que 60°, o ângulo cervicodiafisário é menor que 100 a 110°, ou há progressão.\n- O objetivo é **hipercorrigir**, deixando o HE abaixo de cerca de 40°. Assim, a fise volta a ficar horizontal e sob compressão, e o defeito do colo se consolida.\n- Às vezes, associa-se a **epifisiodese** do trocanter maior.",
+  "correta": "**Correta: A (colo).** Na coxa vara do desenvolvimento, o defeito está na fise do **colo femoral**, junto à porção inferomedial do colo (triângulo de Fairbank). A fise fica vertical e sofre cisalhamento, e o ângulo cervicodiafisário diminui progressivamente.",
   "incorretas": {
-   "B": "A epífise da cabeça femoral é normal na coxa vara do desenvolvimento.",
-   "C": "O trocanter maior cresce normalmente e só fica alto pela deformidade do colo.",
-   "D": "A diáfise não tem fise; o defeito está no colo."
+   "B": "A **cabeça** femoral (epífise) é normal na coxa vara do desenvolvimento. O defeito está no colo, junto à fise.",
+   "C": "O **trocanter maior** fica alto como **consequência** do varo do colo, mas não é o local da alteração primária.",
+   "D": "A **diáfise** não tem fise. A deformidade da coxa vara está no fêmur proximal, no colo."
   },
-  "conceito": "Na **coxa vara do desenvolvimento**, o defeito está na **fise do colo femoral**: há uma falha de ossificação na parte **inferomedial do colo**, junto à fise. O osso ali fica fraco, a fise fica cada vez mais **vertical**, o cisalhamento aumenta e o ângulo cervicodiafisário diminui.\n\n**O que se vê na radiografia**:\n\n**triângulo de Fairbank**: um fragmento ósseo triangular na parte inferior do colo, separado pela fise e pelo defeito;\n\n**fise verticalizada**, medida pelo ângulo de **Hilgenreiner-epifisário**;\n\n**trocanter alto**: o **trocanter maior cresce normalmente**, mas como o colo fica varo e curto, ele sobe em relação à cabeça.\n\n**O que está normal**: a **epífise da cabeça** femoral; o problema é o colo. A **diáfise** não tem fise.\n\n**As consequências**: marcha de Trendelenburg indolor (abdutores sem alavanca), encurtamento e limitação da abdução e da rotação medial.\n\n**O tratamento**: observação se o ângulo HE for abaixo de 45°; osteotomia valgizante se acima de 60° ou progressivo.\n\n**Na prova**: na coxa vara, a fise acometida é a do **colo**.",
-  "correta": "O defeito de ossificação fica na fise do colo, na parte inferomedial, e forma o triângulo de Fairbank.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0491": {
@@ -6186,17 +6213,18 @@
   "conferido": false
  },
  "pediatria-0530": {
+  "conceito": "**A fratura do colo do fêmur na criança é rara e perigosa.** Representa menos de 1% das fraturas da criança e exige **trauma de alta energia**, como atropelamento ou queda de altura. Quando ocorre com trauma mínimo, deve-se pensar em **osso patológico** (cisto ósseo, displasia fibrosa). Em lactentes, deve-se pensar em **maus-tratos**.\n\n**Por que é perigosa: a irrigação da cabeça.** Na criança, a cabeça femoral depende quase só dos **vasos retinaculares** (ramos da **artéria circunflexa femoral medial**), que sobem pela face posterossuperior do colo. A artéria do ligamento redondo contribui pouco, e a fise funciona como barreira aos vasos metafisários. Uma fratura desviada do colo **rompe** esses vasos. A **tamponada** do hematoma dentro da cápsula também piora a perfusão.\n\n**A classificação de Delbet (modificada por Colonna).**\n\n| Tipo | Local | Necrose avascular |\n|---|---|---|\n| **I** | **Transepifisário**: descolamento pela fise, com ou sem luxação da cabeça | **Altíssima** (até quase 100% se houver luxação) |\n| **II** | **Transcervical**: no meio do colo | **Alta**, cerca de 50% |\n| **III** | **Cervicotrocantérico** (basocervical) | Cerca de 25% |\n| **IV** | **Intertrocantérico** | Baixa, cerca de 10% ou menos |\n\n**Qual é o mais frequente.** O **tipo II, transcervical**, responde por cerca de **40 a 50%** dos casos. O tipo III vem em seguida, com cerca de 30 a 35%. O IV é menos frequente, e o I é o mais raro, abaixo de 10%.\n\n**A regra do risco.** Quanto mais **proximal** a fratura, maior o risco de **necrose avascular**.\n\n**Complicações.**\n- **Necrose avascular**: a mais temida, de pior prognóstico; aparece nos primeiros 1 a 2 anos.\n- **Coxa vara**.\n- **Pseudoartrose**.\n- **Fechamento precoce da fise**, com discrepância.\n\n**Tratamento.** Na fratura desviada:\n- **redução** anatômica urgente, fechada ou aberta;\n- **descompressão da cápsula** (capsulotomia ou aspiração), que reduz a tamponada;\n- **fixação interna**, com parafusos que podem **cruzar a fise** nos tipos I e II se necessário, porque a estabilidade é prioritária.",
+  "correta": "**Correta: B (II).** Na classificação de Delbet e Colonna, a fratura do colo do fêmur mais frequente na criança é o **tipo II, transcervical**, com cerca de 40 a 50% dos casos e risco de necrose avascular em torno de 50%.",
   "incorretas": {
-   "A": "O tipo I, transepifisário, é raro, com menos de 10% dos casos.",
-   "C": "O tipo III é o segundo mais comum, não o primeiro.",
-   "D": "O tipo IV, intertrocantérico, é o menos comum e tem o melhor prognóstico."
+   "A": "O tipo **I** (transepifisário) é o **mais raro**, embora seja o de maior risco de necrose avascular, sobretudo quando há luxação da cabeça.",
+   "C": "O tipo **III** (cervicotrocantérico) é o **segundo** mais frequente, com cerca de 30 a 35% dos casos.",
+   "D": "O tipo **IV** (intertrocantérico) é menos frequente e tem o **menor** risco de necrose avascular."
   },
-  "conceito": "As **fraturas do colo do fêmur na criança** são raras e vêm de trauma de alta energia. A **classificação de Delbet** se baseia no local do traço:\n\n**tipo I, transepifisário**: menos de 10%; IA sem luxação e IB com luxação da epífise; necrose de até quase 100% no IB;\n\n**tipo II, transcervical**: o **mais comum**, com cerca de **40 a 50%** dos casos; necrose em cerca de 50%;\n\n**tipo III, cervicotrocantérico**: o segundo mais comum, 25 a 35%; necrose em cerca de 25%;\n\n**tipo IV, intertrocantérico**: cerca de 10%; necrose em cerca de 10%, o melhor prognóstico.\n\n**A regra**: quanto mais **proximal** o traço, maior o risco de **necrose**, porque mais vasos retinaculares são lesados.\n\n**O tratamento**: urgência, com redução anatômica (fechada ou aberta), **descompressão da cápsula** e fixação estável; nos tipos II e III, os parafusos podem cruzar a fise se necessário para estabilidade.\n\n**As complicações**: necrose avascular (a principal), coxa vara, fechamento precoce da fise e pseudartrose.\n\n**Na prova**: o tipo de Delbet mais comum é o **II** (transcervical).",
-  "correta": "O tipo II, transcervical, responde por cerca de 40 a 50% das fraturas do colo do fêmur na criança.",
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 30"
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 30",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0531": {
@@ -6843,17 +6871,18 @@
   "conferido": false
  },
  "pediatria-0585": {
+  "conceito": "**A lesão fisária por estresse.** A fise é a parte **mais frágil** do esqueleto em crescimento. Quando ela recebe **cargas repetitivas** sem tempo de recuperação, a ossificação endocondral é perturbada. A zona hipertrófica se alarga, porque a cartilagem não é substituída por osso no ritmo normal. A fise fica **alargada e irregular** na radiografia, com esclerose metafisária. É uma lesão por **sobrecarga**, não por trauma único.\n\n**Onde ocorre e em quem.**\n\n| Local | Esporte típico | Nome |\n|---|---|---|\n| **Rádio distal** | **Ginástica** artística | **Punho do ginasta** (a mais frequente) |\n| Úmero proximal | **Arremesso** (beisebol) | Little leaguer's shoulder |\n| Epicôndilo medial | Arremesso | Little leaguer's elbow |\n| Tíbia e fêmur distais, ou proximais | Corrida, futebol | Menos frequentes |\n\n**Por que a ginástica.** O ginasta usa os **membros superiores como membros de carga**: paradas de mão, saltos sobre o cavalo e rodas sobrecarregam o punho em **extensão** com o peso de todo o corpo. Isso se repete milhares de vezes por semana, durante anos de treino intenso, no período de crescimento rápido.\n\n**O quadro clínico.** Dor **dorsal** no punho com a atividade, sensibilidade sobre a fise distal do rádio e piora com a extensão e a carga.\n\n**Por que se preocupar.** A sobrecarga crônica pode levar ao **fechamento precoce** da fise distal do rádio. A ulna continua a crescer e surge uma **variância ulnar positiva** adquirida, com impacto ulnocarpal, lesão da fibrocartilagem triangular e dor crônica.\n\n**O tratamento.**\n- **Repouso** da atividade que causa dor, por algumas semanas a meses, até a dor desaparecer e a radiografia melhorar.\n- Retorno **gradual**, com ajustes técnicos e de carga.\n- Acompanhamento da variância ulnar.\n\n**A prevenção** passa por controlar o volume de treino durante o estirão de crescimento.",
+  "correta": "**Correta: C (nos ossos do antebraço dos ginastas).** A lesão fisária por estresse é mais frequente na **fise distal do rádio dos ginastas** (punho do ginasta), que usam os membros superiores como membros de carga em extensão repetidamente. Ela pode levar ao fechamento precoce da fise e à variância ulnar positiva.",
   "incorretas": {
-   "A": "A lesão fisária por estresse no fêmur dos corredores é rara.",
-   "B": "A lesão fisária por estresse no fêmur dos jogadores de futebol é rara.",
-   "D": "No beisebol, a lesão por estresse típica é no úmero proximal, não no antebraço."
+   "A": "Nos **corredores**, as lesões fisárias por estresse dos membros inferiores ocorrem, mas são **menos frequentes** que o punho do ginasta.",
+   "B": "No **futebol**, as lesões fisárias por estresse do fêmur são **pouco comuns**. Predominam as apofisites (Osgood-Schlatter, Sever) e as avulsões da pelve.",
+   "D": "No **beisebol**, a lesão fisária por estresse típica é a do **úmero proximal** (little leaguer's shoulder) e do epicôndilo medial, e não dos ossos do antebraço."
   },
-  "conceito": "A **lesão fisária por estresse** é uma lesão da fise por **sobrecarga repetida**, sem um trauma único. A fise fica **alargada** e **irregular**, com esclerose na metáfise vizinha.\n\n**Onde é mais frequente**: no **rádio distal dos ginastas**, o chamado \"punho do ginasta\". Na ginástica, o punho recebe **carga axial** repetida em extensão, nos apoios, paradas de mão e saltos, e a fise distal do rádio sofre.\n\n**Outros locais**:\n\n**úmero proximal** do arremessador (Little League shoulder), no beisebol;\n\n**fêmur distal** e **tíbia proximal** em corredores, mais raros.\n\n**A complicação**: o **fechamento precoce da fise do rádio** enquanto a ulna continua crescendo, gerando **variância ulnar positiva** (ulna mais longa) e **impacto ulnocarpal**, com dor no lado ulnar do punho.\n\n**O tratamento**: **repouso da carga** no punho até a fise voltar ao normal na radiografia, em geral por semanas a meses; depois, retorno gradual e técnica adequada.\n\n**Na prova**: a lesão fisária por estresse é mais frequente nos **ossos do antebraço dos ginastas**.",
-  "correta": "O rádio distal dos ginastas recebe carga axial repetida e é o local mais frequente de lesão fisária por estresse.",
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), Cap. 2"
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), Cap. 2",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0586": {
@@ -7083,17 +7112,18 @@
   "conferido": false
  },
  "pediatria-0602": {
+  "conceito": "**A tuberosidade anterior da tíbia na criança.** A tuberosidade é uma **apófise**, uma extensão anterior da epífise proximal da tíbia, onde se insere o **tendão patelar**. Ela tem seu próprio centro de ossificação secundário. A fise proximal da tíbia fecha de **posterior para anterior** e de proximal para distal, e a fise da tuberosidade é a **última** a fechar. No adolescente, perto do fim do crescimento, a tuberosidade é o ponto fraco do aparelho extensor.\n\n**O mecanismo.** É uma contração **violenta do quadríceps**, como no salto (decolagem) ou na aterrissagem com o joelho fletido. É típica de **meninos de 13 a 16 anos**, muitas vezes com antecedente de **Osgood-Schlatter**.\n\n**A classificação de Watson-Jones** (modificada por Ogden, que acrescentou os subtipos A, sem desvio, e B, com cominuição ou desvio).\n\n| Tipo | Traço |\n|---|---|\n| **I** | Avulsão da **ponta distal** da tuberosidade, através da fise da apófise |\n| II | Traço na **junção** entre a apófise da tuberosidade e a epífise proximal da tíbia |\n| III | Traço que se estende **para dentro da articulação**, atravessando a epífise |\n| IV (Ryu) | Traço por **toda a fise** proximal da tíbia, saindo posteriormente |\n| V (McKoy) | Tipo III com tipo IV, em forma de **Y** |\n\n**A correspondência com Salter-Harris.**\n- O tipo **I** é um descolamento **através da fise** da apófise, sem atravessar a epífise. Corresponde a uma lesão do tipo **Salter-Harris I**.\n- Os tipos que atravessam a epífise até a articulação (III) se comportam como **Salter-Harris III** ou IV. Os que percorrem toda a fise (IV) se comportam como **Salter-Harris II**.\n\n**As complicações.**\n- **Síndrome compartimental**: a **artéria recorrente tibial anterior** passa junto à tuberosidade e pode sangrar dentro do compartimento anterior.\n- **Lesão meniscal** e do aparelho extensor nos tipos articulares.\n- **Recurvato** por parada de crescimento anterior: rara, porque a lesão ocorre perto da maturidade.\n\n**O tratamento.**\n- **Sem desvio** (tipo IA): gesso inguinomaleolar em extensão.\n- **Com desvio** (a maioria): **redução aberta e fixação** com parafusos. Nos tipos articulares, avalia-se a superfície articular e o menisco, por artroscopia ou artrotomia.",
+  "correta": "**Correta: A (I).** O tipo I de Watson-Jones é a avulsão da porção distal da tuberosidade **através da fise da apófise**, sem atravessar a epífise. Ele corresponde a uma lesão do tipo **Salter-Harris I**.",
   "incorretas": {
-   "B": "O tipo II alcança a fise proximal da tíbia.",
-   "C": "O tipo III é intra-articular e equivale à Salter-Harris III.",
-   "D": "O tipo IV, de Ogden, envolve toda a fise proximal."
+   "B": "O tipo **II** de Watson-Jones tem traço na **junção** entre a apófise e a epífise proximal da tíbia, com um fragmento maior. Não é o equivalente direto do Salter-Harris I.",
+   "C": "O tipo **III** atravessa a epífise **até a articulação**, comportando-se como **Salter-Harris III** ou IV.",
+   "D": "O tipo **IV** (Ryu) percorre **toda a fise** proximal da tíbia e sai posteriormente, comportando-se como uma lesão **Salter-Harris II**."
   },
-  "conceito": "A **fratura da tuberosidade anterior da tíbia** acontece no adolescente, perto do fechamento da apófise, em saltos ou arranques. A classificação de **Watson-Jones** (modificada por Ogden) corresponde a tipos de **Salter-Harris**:\n\n**tipo I**: avulsão da **própria tuberosidade**, separada **pela sua fise**, na parte distal; equivale a uma **Salter-Harris I** da apófise;\n\n**tipo II**: o traço vai até a **fise proximal** da tíbia, sem entrar na articulação;\n\n**tipo III**: o traço **cruza a epífise** até a articulação; equivale a uma **Salter-Harris III**;\n\n**tipo IV** (Ogden): o traço segue por toda a fise proximal até a parte posterior; equivale a uma Salter-Harris II;\n\n**tipo V** (Ogden): avulsão do periósteo com o ligamento patelar.\n\n**O tratamento**: tipo I pouco desviado, gesso em extensão; desviados e tipos II e III, redução aberta e fixação com parafusos.\n\n**Os cuidados**: síndrome compartimental (artéria recorrente tibial anterior) e, no tipo III, lesões meniscais associadas.\n\n**Na prova**: a fratura da tuberosidade Salter-Harris I corresponde ao **tipo I** de Watson-Jones.",
-  "correta": "O tipo I é a separação pela fise da própria tuberosidade, sem traço articular: equivalente à Salter-Harris I.",
   "referencias": [
-   "Canale & Beaty: Campbell’s Operative Orthopaedics 12 th ed. 1482 pg  (referência indicada na prova TARO 2015, questão 90)"
+   "Canale & Beaty: Campbell’s Operative Orthopaedics 12 th ed. 1482 pg  (referência indicada na prova TARO 2015, questão 90)",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0603": {
@@ -7251,17 +7281,18 @@
   "conferido": false
  },
  "pediatria-0614": {
+  "conceito": "**Cada osso longo cresce mais por uma das extremidades.** As duas fises de um osso longo não contribuem igualmente para o seu comprimento. Saber qual fise é a \"principal\" ajuda a prever:\n- a **discrepância** causada por uma lesão fisária;\n- o **potencial de remodelação** de uma fratura: perto da fise que mais cresce, a remodelação é maior.\n\n**A contribuição de cada fise.**\n\n| Osso | Fise proximal | Fise distal |\n|---|---|---|\n| **Úmero** | **80%** | **20%** |\n| Rádio e ulna | 20 a 25% | **75 a 80%** |\n| Fêmur | 30% | **70%** |\n| Tíbia | **55 a 60%** | 40 a 45% |\n\n**A regra mnemônica.**\n- **No membro superior, as fises que mais crescem ficam longe do cotovelo**: úmero proximal e rádio e ulna distais. O cotovelo \"foge\" do crescimento.\n- **No membro inferior, as fises que mais crescem ficam perto do joelho**: fêmur distal e tíbia proximal. O joelho \"atrai\" o crescimento.\n\n**As consequências práticas no úmero.**\n- **Úmero proximal**: com 80% do crescimento do osso, tem um **enorme potencial de remodelação**. As fraturas do úmero proximal na criança aceitam angulações grandes (até 60° ou mais na criança pequena) e quase todas são tratadas sem cirurgia.\n- **Úmero distal**: com apenas 20% do crescimento, **remodela pouco**. Por isso, as fraturas supracondilianas precisam de redução **anatômica**. Um varo residual não se corrige e deixa o **cúbito varo** (deformidade em \"coronha de fuzil\").\n- O **little leaguer's shoulder** é a lesão por estresse da fise proximal do úmero no arremessador. Ela acomete justamente a fise mais ativa.",
+  "correta": "**Correta: C (80% e 20%).** No úmero, a fise **proximal** responde por cerca de **80%** do crescimento longitudinal e a **distal** por cerca de **20%**. Isso explica o grande potencial de remodelação das fraturas do úmero proximal e a pouca remodelação das supracondilianas.",
   "incorretas": {
-   "A": "A proporção 60/40 não corresponde ao úmero.",
-   "B": "A proporção 70/30 lembra o fêmur, mas lá é a fise distal que predomina.",
-   "D": "A proporção 90/10 exagera a contribuição da fise proximal."
+   "A": "Uma distribuição de **60% e 40%** se aproxima da **tíbia** (proximal de 55 a 60%), e não do úmero.",
+   "B": "Uma distribuição de **70% e 30%** corresponde ao **fêmur**, invertida: no fêmur, a fise **distal** contribui com 70%.",
+   "D": "**90% e 10%** superestima a fise proximal. O valor clássico para o úmero é de 80% e 20%."
   },
-  "conceito": "Cada osso longo cresce pelas duas fises, mas elas **não contribuem igual**. Há uma regra fácil para lembrar:\n\n**no membro superior, as fises longe do cotovelo crescem mais**:\n\n**úmero**: fise **proximal** cerca de **80%**, distal cerca de **20%**;\n\n**rádio e ulna**: fise **distal** cerca de 75 a 80%;\n\n**no membro inferior, as fises perto do joelho crescem mais**:\n\n**fêmur**: fise **distal** cerca de 70%;\n\n**tíbia**: fise **proximal** cerca de 55 a 60%.\n\n**Mnemônico**: \"no braço, longe do cotovelo; na perna, perto do joelho\".\n\n**Por que isso importa na clínica**:\n\n**fratura do úmero proximal** na criança remodela muito, porque a fise que mais cresce está ali; aceitam-se desvios grandes;\n\n**fratura do cotovelo** remodela pouco, porque a fise distal do úmero contribui pouco; por isso as fraturas do cotovelo precisam de redução boa;\n\n**lesões fisárias do joelho** (fêmur distal, tíbia proximal) causam as maiores discrepâncias, porque essas fises respondem pela maior parte do crescimento do membro inferior.\n\n**Na prova**: o crescimento do úmero vem **80% da fise proximal e 20% da distal**.",
-  "correta": "No úmero, a fise proximal responde por cerca de 80% do crescimento e a distal por cerca de 20%.",
   "referencias": [
-   "Herring: Tachdjian’s Pediatric Orthopaedics 5th Ed (referência indicada na prova TARO 2017, questão 39)"
+   "Herring: Tachdjian’s Pediatric Orthopaedics 5th Ed (referência indicada na prova TARO 2017, questão 39)",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0615": {
@@ -7672,31 +7703,33 @@
   "conferido": false
  },
  "pediatria-0644": {
+  "conceito": "**As fraturas da mão na criança.** São muito comuns, sobretudo na adolescência, por esportes e brigas. Na criança, as **falanges** fraturam mais que os metacarpos, e a **base da falange proximal do dedo mínimo** é um dos locais mais frequentes de todos (a fratura \"extra-oitava\", Salter-Harris II).\n\n**Os metacarpos.** Entre as fraturas dos metacarpos, a localização **mais frequente** é o **colo**, e o metacarpo mais acometido é o **quinto**. É a **fratura do boxeador**, típica do adolescente que dá um soco numa superfície dura.\n\n| Localização no metacarpo | Frequência | Comentário |\n|---|---|---|\n| **Colo** | **A mais comum** | Sobretudo o 5º; angulação **dorsal** do ápice (cabeça para palmar) |\n| Diáfise | Menos frequente | Atenção à **rotação** |\n| Base | Pouco frequente | Instabilidade na carpometacarpal, sobretudo no 5º e no polegar |\n| Cabeça (epífise) | Rara | Pode ser **intra-articular**, e então precisa de redução anatômica |\n\n**Por que o colo.** O colo é a região **mais fina** e menos protegida do metacarpo, e recebe diretamente o impacto axial do soco sobre a cabeça. A fise dos metacarpos (exceto o polegar) fica na **cabeça**, distal. Por isso, as fraturas de colo ficam **próximas à fise**, com bom potencial de remodelação no plano de movimento.\n\n**Quanto se tolera na fratura do colo do quinto metacarpo.**\n- A articulação carpometacarpal do 4º e do 5º dedos é **móvel** e compensa angulações maiores. No 5º metacarpo, muitos aceitam **até 40° ou mais** no adolescente, e mais na criança pequena.\n- No 2º e no 3º, a compensação é pequena, e se toleram apenas cerca de **10 a 15°**.\n- A **rotação** nunca é tolerada: o dedo cruza sobre o vizinho ao fechar a mão (dedo em tesoura).\n\n**O tratamento.** A maioria é tratada com **redução fechada** (manobra de Jahss: flexão de 90° na metacarpofalângica e na interfalângica proximal, empurrando a cabeça para dorsal) e **tala** em posição intrínseca-plus. A fixação percutânea fica para fraturas instáveis, rotadas ou muito anguladas.",
+  "correta": "**Correta: A (no colo).** Na criança e no adolescente, a fratura do metacarpo é mais frequente no **colo**, sobretudo no quinto metacarpo (fratura do boxeador), pelo impacto axial de um soco sobre a cabeça.",
   "incorretas": {
-   "B": "A base é uma localização menos comum.",
-   "C": "A diáfise é uma localização menos comum.",
-   "D": "A cabeça é uma localização rara, intra-articular."
+   "B": "As fraturas da **base** dos metacarpos são **menos frequentes** e se concentram no polegar e no 5º metacarpo.",
+   "C": "As fraturas da **diáfise** ocorrem, mas são menos frequentes que as do colo. Nelas, a rotação deve ser avaliada com cuidado.",
+   "D": "As fraturas da **cabeça** (epífise) são **raras**. Quando ocorrem, podem ser intra-articulares e exigir redução anatômica."
   },
-  "conceito": "As **fraturas dos metacarpos** na criança são mais comuns no **adolescente**, por soco ou trauma no esporte. O local mais frequente é o **colo**, sobretudo do **5º metacarpo**: a \"fratura do boxeador\".\n\n**Por que o colo**: é a região de transição entre a diáfise e a cabeça, mais fina, e recebe a força direta do soco na cabeça do metacarpo.\n\n**A angulação aceitável no colo** depende da mobilidade de cada metacarpo na articulação carpometacárpica, que compensa a angulação:\n\n**2º e 3º**: quase imóveis; aceitam só 10 a 20°;\n\n**4º**: 30 a 40°;\n\n**5º**: o mais móvel; aceita 40 a 50°, e mais na criança, que remodela.\n\n**A rotação nunca é aceitável**: um metacarpo rodado faz o dedo **cruzar** sobre o vizinho ao fechar a mão. Avaliar pedindo para a criança fechar a mão e ver se os dedos apontam para o tubérculo do escafoide.\n\n**O tratamento**: a maioria é tratada com redução fechada (manobra de Jahss) e tala; fixação se instável, rodada ou muito angulada.\n\n**As outras localizações**: base e diáfise são menos comuns; a **cabeça** é rara e intra-articular.\n\n**Na prova**: a fratura do metacarpo na criança localiza-se mais no **colo**.",
-  "correta": "O colo, sobretudo do 5º metacarpo, é o local mais frequente de fratura dos metacarpos na criança.",
   "referencias": [
-   "Beaty JH, Kasser JR. Rockwood and Wilkins’ Fractures in Children. 8aedição. Philadelphia: Lippincott Williams & Wilkins, 2015. 8 Ed. 433 Pg (referência indicada na prova TARO 2019, questão 55)"
+   "Beaty JH, Kasser JR. Rockwood and Wilkins’ Fractures in Children. 8aedição. Philadelphia: Lippincott Williams & Wilkins, 2015. 8 Ed. 433 Pg (referência indicada na prova TARO 2019, questão 55)",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0645": {
+  "conceito": "**A classificação de Torode e Zieg.** É a classificação mais usada para as fraturas da **pelve na criança**. Ela considera a **estabilidade do anel pélvico**.\n\n| Tipo | Descrição |\n|---|---|\n| **I** | Fraturas por **avulsão** das apófises (espinhas ilíacas, tuberosidade isquiática) |\n| **II** | Fraturas da **asa do ilíaco**, sem romper o anel |\n| **III** | Fraturas **simples** do anel, **estáveis** (um ramo púbico, disjunção da sínfise) |\n| **IV** | **Ruptura do anel**, com segmento instável |\n\n**As subdivisões.** As subdivisões variam um pouco entre as fontes.\n- A modificação de **Shore** divide o tipo III em **IIIA** (fratura simples do anel **anterior**) e **IIIB** (fraturas estáveis do anel anterior e posterior).\n- Algumas referências usadas no Brasil, como a indicada pela prova, subdividem o tipo **IV** pelo padrão da ruptura:\n  - **IVa**: fratura **bilateral dos ramos púbicos** (fratura em sela ou \"straddle\"), que deixa um fragmento central flutuante;\n  - **IVb**: fratura do anel **anterior** associada a lesão **posterior** (sacroilíaca ou sacral);\n  - **IVc**: fratura que cria um segmento instável entre o anel anterior e o **acetábulo**.\n\n**Por que a fratura bilateral dos ramos é do tipo IV.** Com os quatro ramos fraturados, o fragmento central (com a sínfise) **perde a ligação** com o resto do anel. Ele é puxado para cima pelo **reto do abdome**. O anel fica rompido, e por isso a lesão entra no grupo de ruptura, e não no das fraturas simples do tipo III.\n\n**O que importa além da classificação.**\n- A **energia** do trauma é alta. As **lesões associadas** (cranianas, abdominais, torácicas e urológicas) determinam a mortalidade, mais que a pelve.\n- Na fratura em sela, há alto risco de lesão da **uretra** e da **bexiga**.\n- A maioria das fraturas da pelve infantil é tratada **sem cirurgia**. As instáveis do tipo IV, sobretudo com lesão posterior desviada, podem precisar de fixação.",
+  "correta": "**Correta: C (IVa).** Na classificação de Torode e Zieg, a fratura bilateral dos ramos púbicos (fratura em sela) é uma **ruptura do anel** (tipo IV). Na subdivisão usada pela referência da prova, corresponde ao tipo **IVa**, com fragmento central flutuante.",
   "incorretas": {
-   "A": "O tipo IIIa é a fratura simples do anel anterior, como a de um ramo só.",
-   "B": "O tipo IIIb combina lesões anterior e posterior estáveis.",
-   "D": "O tipo IVb exige lesão posterior associada, na sacroilíaca ou no sacro."
+   "A": "O tipo **III** reúne as fraturas **simples e estáveis** do anel, como a de um único ramo. A fratura bilateral dos ramos rompe o anel.",
+   "B": "O tipo **IIIB** (modificação de Shore) é a fratura **estável** do anel anterior e posterior, sem segmento flutuante.",
+   "D": "Na subdivisão usada pela prova, o tipo **IVb** associa a fratura anterior a uma lesão **posterior** (sacroilíaca ou sacral), e não a fratura isolada dos quatro ramos."
   },
-  "conceito": "A **classificação de Torode e Zieg modificada** divide as fraturas da pelve da criança:\n\n**tipo I**: **avulsões** das apófises;\n\n**tipo II**: fratura da **asa do ilíaco**;\n\n**tipo IIIa**: fraturas **simples** do anel **anterior** (um ramo púbico, diástase da sínfise);\n\n**tipo IIIb**: fraturas **estáveis** do anel anterior e posterior;\n\n**tipo IV**: **ruptura instável** do anel, subdividida em:\n\n**IVa**: **fratura bilateral dos ramos púbicos** (fratura em \"straddle\", a cavaleiro), com o fragmento central solto;\n\n**IVb**: fratura dos ramos ou da sínfise com **lesão posterior** (articulação sacroilíaca ou sacro);\n\n**IVc**: fraturas que envolvem o **acetábulo**.\n\n**Por que a fratura bilateral dos ramos é instável**: os quatro ramos se quebram, e o fragmento central com a sínfise fica solto, puxado para cima pelo reto do abdome; o anel deixa de ser contínuo.\n\n**O cuidado**: na straddle, procurar lesão de **uretra e bexiga** (sangue no meato, hematúria).\n\n**Na prova**: a fratura bilateral dos ramos púbicos é classificada como **IVa** de Torode e Zieg.",
-  "correta": "A fratura bilateral dos ramos púbicos rompe o anel anterior e é classificada como IVa na versão modificada.",
   "referencias": [
-   "Geraldo R Motta Filho, Tarcísio E. P. De Barros Filho. Ortopedia e Traumatologia. 1aedição. Elsevier, 2017. 1 Ed. 1397 Pg (referência indicada na prova TARO 2019, questão 56)"
+   "Geraldo R Motta Filho, Tarcísio E. P. De Barros Filho. Ortopedia e Traumatologia. 1aedição. Elsevier, 2017. 1 Ed. 1397 Pg (referência indicada na prova TARO 2019, questão 56)",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0646": {
@@ -7968,17 +8001,18 @@
   "conferido": false
  },
  "pediatria-0665": {
+  "conceito": "**A deformidade plástica.** É uma lesão **exclusiva da criança**. O osso infantil é mais **elástico** e poroso. Quando recebe uma força de flexão, ele pode **encurvar sem quebrar**: sofre milhares de **microfraturas** ao longo da diáfise, que não aparecem na radiografia, e fica permanentemente curvo. Não há traço de fratura visível.\n\n**Onde ocorre.** Mais comum no **antebraço**, sobretudo na **ulna**, e às vezes no rádio, na fíbula e na clavícula.\n\n**Por que é importante reconhecer.**\n- A **ulna curva** impede a redução da cabeça do rádio. A deformidade plástica da ulna com **luxação da cabeça do rádio** é uma **lesão de Monteggia** (equivalente), e é facilmente perdida.\n- Num antebraço com fratura de um osso e o outro **curvo**, a fratura não reduz enquanto o osso encurvado não for corrigido.\n- A deformidade plástica **remodela mal**, sobretudo na criança maior, porque não há calo nem fratura para guiar a remodelação. Ela pode **limitar a prono-supinação**.\n\n**Quando corrigir.** O critério clássico depende da **angulação** e da **idade**.\n\n| Situação | Conduta |\n|---|---|\n| Angulação **maior que 20°** em criança **acima de 4 anos** | **Corrigir** |\n| Criança **abaixo de 4 anos** ou angulação pequena | Pode-se aceitar: o potencial de remodelação é maior |\n| Qualquer angulação que **impeça a redução** da cabeça do rádio ou de outro osso fraturado, ou que limite a rotação | **Corrigir** |\n\n**Como corrigir.** A redução exige **força grande e sustentada** sobre o ápice da curva, mantida por **2 a 3 minutos**, sob anestesia geral. O apoio sobre um fulcro acolchoado (o joelho do cirurgião ou um rolo) ajuda. A pressão deve ser distribuída para não criar uma fratura completa, embora, às vezes, se complete a fratura de propósito para conseguir alinhar. Depois, imobiliza-se com gesso axilopalmar bem moldado.",
+  "correta": "**Correta: D (20° e faixa etária for acima de quatro anos).** A deformidade plástica traumática do antebraço deve ser corrigida quando a angulação **excede cerca de 20°** em crianças **acima de 4 anos**, nas quais o potencial de remodelação é menor. A correção também é indicada quando a curva impede a redução da cabeça do rádio ou limita a rotação.",
   "incorretas": {
-   "A": "A idade está certa, mas 10° de deformidade costuma remodelar.",
-   "B": "A deformidade de 20° está certa, mas abaixo de 4 anos a remodelação é maior.",
-   "C": "10° numa criança abaixo de 4 anos remodela; não precisa de correção."
+   "A": "A idade está certa, mas **10°** é uma angulação pequena, que costuma ser tolerada. O limite clássico é de 20°.",
+   "B": "O limite de 20° está certo, mas, **abaixo de 4 anos**, o potencial de remodelação é maior, e a deformidade costuma ser aceita.",
+   "C": "Erra os dois critérios: **10°** é pouco, e, **abaixo de 4 anos**, a remodelação tende a corrigir a curva."
   },
-  "conceito": "A **deformidade plástica** é o osso do antebraço **encurvado sem fratura**, com microfraturas ao longo da diáfise. A capacidade de **remodelar** essa curvatura cai muito com a idade, sobretudo **depois dos 4 anos**.\n\n**O critério clássico para corrigir**:\n\n**deformidade acima de 20°** numa criança com **mais de 4 anos**: corrigir;\n\n**deformidade que bloqueia a rotação** do antebraço (mais de cerca de 30° de perda), em qualquer idade: corrigir;\n\n**deformidade que impede reduzir** a cabeça do rádio (equivalente de Monteggia): corrigir.\n\n**Quando observar**:\n\n**abaixo de 4 anos**: o potencial de remodelação é maior, e deformidades moderadas podem ser observadas;\n\n**10° de deformidade**: costuma remodelar.\n\n**A técnica**: **redução fechada sob anestesia**, com **pressão lenta e contínua** sobre o ápice da curva, apoiada num coxim ou numa borda acolchoada, por alguns minutos, até o osso endireitar; depois, gesso axilopalmar bem moldado.\n\n**Na prova**: a deformidade plástica do antebraço deve ser corrigida quando excede **20°** em criança **acima de 4 anos**.",
-  "correta": "Acima de 4 anos a remodelação é limitada, e deformidades acima de 20° devem ser corrigidas.",
   "referencias": [
-   "Jupiter J.: Skeletal Trauma, 3th Ed., p. 177 (referência indicada na prova TARO 2012, questão 31)"
+   "Jupiter J.: Skeletal Trauma, 3th Ed., p. 177 (referência indicada na prova TARO 2012, questão 31)",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0666": {
@@ -8071,17 +8105,18 @@
   "conferido": false
  },
  "pediatria-0673": {
+  "conceito": "**As hastes flexíveis no fêmur da criança.** As **hastes intramedulares flexíveis** (elásticas de titânio ou aço, também chamadas de ESIN ou TEN) são o tratamento padrão das fraturas diafisárias do fêmur entre cerca de **5 e 11 anos**, em crianças com menos de cerca de **45 kg**.\n\n**O princípio da estabilidade elástica.** São usadas **duas hastes** pré-moldadas em forma de **C**, inseridas por entradas opostas (medial e lateral), geralmente **retrógradas**, cerca de 2,5 cm acima da fise distal. Cada haste se apoia em **três pontos**: na entrada, no ápice da curva (no foco da fratura) e na ponta, na metáfise oposta. As duas curvas opostas funcionam como **molas** que se equilibram e mantêm o alinhamento.\n\n**A regra do diâmetro.** Para que as hastes fiquem bem apoiadas, elas devem **preencher cerca de 80%** do canal medular.\n- Cada haste deve ter cerca de **40% do diâmetro** do istmo do canal: **diâmetro da haste = 0,4 x diâmetro do canal**.\n- No caso da questão: 0,4 x 6 mm = **2,4 mm**, arredondados para **2,5 mm**, a medida disponível.\n- As duas hastes devem ter o **mesmo diâmetro**. Hastes diferentes criam forças desiguais e desvio em varo ou valgo.\n\n**Por que não usar hastes mais grossas ou mais finas.**\n- **Finas demais**: pouca estabilidade, com **desvio angular**, encurtamento e consolidação viciosa.\n- **Grossas demais**: não passam pelo istmo, são difíceis de pré-curvar e podem **fraturar a cortical** ou alterar o alinhamento.\n\n**Os limites do método.** Os resultados pioram em:\n- crianças **pesadas**, acima de cerca de 45 a 49 kg;\n- fraturas **instáveis** (cominutivas, espirais longas);\n- fraturas muito **proximais** ou distais.\n\nNesses casos, preferem-se a **placa submuscular** ou a **haste rígida** de entrada trocantérica lateral.",
+  "correta": "**Correta: B (2,5 mm).** Cada haste flexível deve ter cerca de **40% do diâmetro** do canal medular, para que as duas preencham cerca de 80% do canal. Com um canal de 6 mm, 0,4 x 6 = 2,4 mm, o que corresponde à haste de **2,5 mm**.",
   "incorretas": {
-   "A": "A haste de 2,0 mm preenche pouco o canal, e a montagem fica instável.",
-   "C": "A haste de 3,0 mm ocuparia 50% do istmo, acima dos 40% recomendados.",
-   "D": "A haste de 3,5 mm é grande demais para um canal de 6 mm."
+   "A": "Hastes de **2,0 mm** preencheriam apenas cerca de 66% do canal, com estabilidade insuficiente e risco de desvio angular.",
+   "C": "Hastes de **3,0 mm** ocupariam 100% do canal, o que dificulta a passagem pelo istmo e a pré-moldagem, com risco de fratura cortical.",
+   "D": "Hastes de **3,5 mm** excedem o canal de 6 mm (somariam 7 mm) e não passariam pelo istmo."
   },
-  "conceito": "Na fixação da fratura diafisária do fêmur da criança com **hastes flexíveis de titânio**, o diâmetro das hastes segue uma regra simples:\n\n**cada haste** deve ter cerca de **40% do diâmetro do canal medular no istmo** (a parte mais estreita);\n\n**as duas hastes juntas** preenchem cerca de **80%** do canal.\n\n**A conta para este caso**: canal de **6 mm** × 0,4 = **2,4 mm**. A haste disponível mais próxima é a de **2,5 mm**.\n\n**Os outros princípios**:\n\n**hastes de mesmo diâmetro**: se uma for mais grossa, cria forças assimétricas e o fêmur tende a angular para o lado da mais fina;\n\n**pré-curvadas** e introduzidas por entradas distais, medial e lateral, acima da fise, com as curvas em sentidos opostos;\n\n**indicação ideal**: 5 a 11 anos, fratura estável, peso abaixo de 45 a 50 kg.\n\n**Por que os outros diâmetros não servem**:\n\n**2,0 mm**: preenche pouco (cerca de 33% cada), e a montagem fica instável;\n\n**3,0 mm**: passa de 40% (50% cada), difícil de introduzir;\n\n**3,5 mm**: grande demais para um canal de 6 mm.\n\n**Na prova**: canal de 6 mm = hastes de **2,5 mm** (0,4 × diâmetro do canal).",
-  "correta": "Pela regra de 40% do istmo, 0,4 × 6 mm dá 2,4 mm, e a haste usada é a de 2,5 mm.",
   "referencias": [
-   "Rockwood and Wilkins's fractures in Children. 7th Ed., p. 811 (referência indicada na prova TARO 2013, questão 24)"
+   "Rockwood and Wilkins's fractures in Children. 7th Ed., p. 811 (referência indicada na prova TARO 2013, questão 24)",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0674": {
@@ -8199,17 +8234,18 @@
   "conferido": false
  },
  "pediatria-0682": {
+  "conceito": "**Os seis centros de ossificação secundários do cotovelo.** Eles aparecem numa ordem **previsível**, lembrada pelo mnemônico **CRITOE**:\n\n| Centro | Aparece (aproximado) | Funde (aproximado) |\n|---|---|---|\n| **C**apítulo | 1 ano | 12 a 14 anos |\n| **R**adial (cabeça) | 3 a 5 anos | 14 a 16 anos |\n| **I**nterno (epicôndilo medial) | 5 a 7 anos | **15 a 17 anos (o último)** |\n| **T**róclea | 7 a 9 anos | 12 a 14 anos |\n| **O**lécrano | 9 a 11 anos | 14 a 16 anos |\n| **E**xterno (epicôndilo lateral) | 10 a 11 anos | 12 a 14 anos |\n\nNas meninas, todos aparecem e fundem cerca de 1 a 2 anos antes.\n\n**A ordem de fusão é diferente da ordem de aparecimento.**\n1. Primeiro, o **capítulo**, a **tróclea** e o **epicôndilo lateral** se unem entre si e formam uma única epífise distal, que se funde à metáfise por volta dos 12 a 14 anos.\n2. Depois, a **cabeça do rádio** e o **olécrano**, por volta dos 14 a 16 anos.\n3. Por último, o **epicôndilo medial**, por volta dos **15 a 17 anos**. Ele é uma **apófise extra-articular** e fica separado da epífise principal.\n\n**Por que isso é importante.**\n- **O encarcerado**: o epicôndilo medial é o centro mais avulsionado. Na luxação do cotovelo, ele pode ficar **preso dentro da articulação**. Pela regra do CRITOE, se a tróclea está ossificada e o epicôndilo medial não aparece no lugar, ele pode estar **dentro da articulação**.\n- O epicôndilo medial **aberto até os 15 a 17 anos** explica por que o adolescente arremessador tem apofisite e avulsão medial (little leaguer's elbow).\n- Conhecer as idades evita confundir um centro normal com uma fratura, e uma fratura com um centro ainda não ossificado. Na dúvida, compara-se com o cotovelo contralateral.",
+  "correta": "**Correta: D (epicôndilo medial).** O epicôndilo medial é o **último** centro de ossificação secundário do cotovelo a se fundir com a metáfise, por volta dos 15 a 17 anos. Ele é uma apófise extra-articular, separada da epífise distal formada pelo capítulo, pela tróclea e pelo epicôndilo lateral.",
   "incorretas": {
-   "A": "O capítulo se funde por volta de 12 a 14 anos.",
-   "B": "O olécrano se funde por volta de 14 a 15 anos.",
-   "C": "O epicôndilo lateral se funde por volta de 12 a 14 anos, com o capítulo e a tróclea."
+   "A": "O **capítulo** é o **primeiro** a aparecer (cerca de 1 ano). Ele se funde cedo, com a tróclea e o epicôndilo lateral, por volta dos 12 a 14 anos.",
+   "B": "O **olécrano** se funde por volta dos 14 a 16 anos, **antes** do epicôndilo medial.",
+   "C": "O **epicôndilo lateral** é o último a **aparecer**, mas está entre os **primeiros a se fundir**, junto com o capítulo e a tróclea."
   },
-  "conceito": "Os **centros de ossificação secundários** do cotovelo aparecem na ordem do **CRITOE** (capítulo, rádio, epicôndilo interno, tróclea, olécrano, epicôndilo externo), mas **fundem** em outra ordem:\n\n**capítulo, tróclea e epicôndilo lateral**: se unem entre si e ao úmero por volta de **12 a 14 anos**;\n\n**olécrano**: funde por volta de **14 a 15 anos**;\n\n**cabeça do rádio**: por volta de 14 a 16 anos;\n\n**epicôndilo medial**: o **último**, entre **15 e 17 anos**.\n\n**Por que o epicôndilo medial fica aberto por mais tempo**: é uma **apófise** fora da articulação, onde se inserem os flexores-pronadores e o ligamento colateral medial; funde de forma independente.\n\n**As consequências clínicas**:\n\n**avulsão do epicôndilo medial**: típica entre 9 e 14 anos, nos arremessadores e nas luxações do cotovelo;\n\n**\"cotovelo do pequeno arremessador\"**: a tração repetida alarga e fragmenta a apófise ainda aberta;\n\n**encarceramento**: na luxação, o epicôndilo arrancado pode ficar dentro da articulação.\n\n**Na prova**: o último centro de ossificação do cotovelo a fundir-se é o **epicôndilo medial**.",
-  "correta": "O epicôndilo medial é uma apófise extra-articular e é o último a fundir, entre 15 e 17 anos.",
   "referencias": [
-   "Rockwood and Green’s fractures in Childrens, 7th Ed., p. 478 (referência indicada na prova TARO 2013, questão 70)"
+   "Rockwood and Green’s fractures in Childrens, 7th Ed., p. 478 (referência indicada na prova TARO 2013, questão 70)",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0683": {
