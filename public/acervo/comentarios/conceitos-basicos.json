@@ -2085,14 +2085,18 @@
   "conferido": false
  },
  "conceitos-basicos-0223": {
-  "conceito": "### Critérios objetivos\nKocher escolheu dados **reprodutíveis**, disponíveis em qualquer pronto-socorro:\n- **Febre** acima de 38,5 °C.\n- **Não apoio** do membro.\n- **VHS** acima de 40 mm/h.\n- ==Leucócitos acima de 12.000==.\n\n### O que não entra\n- **Dor** no quadril: presente em quase todas, inclusive na sinovite transitória.\n- **Rubor, calor:** o quadril é profundo; não aparecem.\n- Limitação de movimento: subjetiva.\n\n### Probabilidade acumulada\n1 critério ~3%; 2 ~40%; 3 acima de 90%; 4 ~99%.\n\n> **Na prova:** preditor de Kocher = ==leucócitos >12.000== (e VHS >40, febre, não apoio).",
-  "correta": "**Leucocitose acima de 12.000.**",
+  "conceito": "**Artrite séptica do quadril x sinovite transitória: os critérios de Kocher.** Na criança com dor no quadril, claudicação e derrame articular, as duas hipóteses principais são a **sinovite transitória** (benigna, autolimitada, a mais comum) e a **artrite séptica** (urgência, risco de destruição da cabeça femoral, necrose e sepse). Diferenciá-las é decisivo para indicar punção e drenagem.\n\n**O estudo de Kocher.** Kocher, Zurakowski e Kasser analisaram crianças com quadril irritável e identificaram **quatro preditores independentes** de artrite séptica, todos objetivos e disponíveis em qualquer pronto-socorro:\n\n| Preditor | Valor de corte |\n|---|---|\n| Febre | Acima de 38,5 °C |\n| Incapacidade de apoiar o membro | Recusa de carga |\n| VHS | **Acima de 40 mm/h** |\n| **Leucócitos no sangue** | **Acima de 12.000 por mm³** |\n\n**Probabilidade de artrite séptica pelo número de critérios** (no estudo original): 0 critérios, menos de 0,2%; 1, cerca de 3%; 2, cerca de 40%; 3, cerca de 93%; 4, cerca de 99%. Em validações posteriores, as probabilidades foram menores, mas o modelo continua útil. Caird e colaboradores acrescentaram a **proteína C reativa** acima de 2 mg/dl, que melhora a predição.\n\n**O que não entra nos critérios e por quê.**\n- **Dor no quadril**: está presente em praticamente todas as crianças, inclusive na sinovite transitória; não discrimina.\n- **Rubor e calor**: o quadril é profundo; esses sinais não aparecem.\n\n**Conduta.** Com 2 ou mais critérios (ou suspeita forte), **punção do quadril** guiada por ultrassom; líquido purulento, leucócitos acima de 50.000 com predomínio de neutrófilos ou Gram positivo indicam drenagem cirúrgica urgente e antibiótico.\n\n> Kocher: febre acima de 38,5, recusa de carga, VHS acima de 40 e leucócitos acima de 12.000.",
+  "correta": "**D: leucocitose superior a 12.000 céls/ml.** É um dos quatro preditores independentes de artrite séptica descritos por Kocher, junto com febre acima de 38,5 °C, incapacidade de apoio e VHS acima de 40 mm/h.",
   "incorretas": {
-   "A": "**Não distingue.**",
-   "B": "**Não visível no quadril.**",
-   "C": "**Corte errado.**\n- VHS acima de 40."
+   "A": "**A dor no quadril** está presente em quase todas as crianças com quadril irritável, inclusive na sinovite transitória; não diferencia as duas.",
+   "B": "**O rubor periarticular** não aparece no quadril, articulação profunda; não faz parte dos critérios.",
+   "C": "**VHS de no mínimo 25 mm/h** usa o valor de corte errado: o critério de Kocher é VHS acima de 40 mm/h."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Kocher MS, Zurakowski D, Kasser JR. Differentiating between septic arthritis and transient synovitis of the hip in children: an evidence-based clinical prediction algorithm. J Bone Joint Surg Am. 1999;81(12):1662-1670.",
+   "Caird MS, Flynn JM, Leung YL, Millman JE, D'Italia JG, Dormans JP. Factors distinguishing septic arthritis from transient synovitis of the hip in children. A prospective study. J Bone Joint Surg Am. 2006;88(6):1251-1257."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "conceitos-basicos-0224": {

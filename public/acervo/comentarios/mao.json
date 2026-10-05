@@ -6129,19 +6129,20 @@
   "conferido": false
  },
  "mao-0599": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "D",
-  "conceito": "**Fratura oculta do escafoide.** Com radiografias normais e suspeita clínica, a ressonância magnética detecta a fratura e o edema ósseo já nos primeiros dias, com sensibilidade e especificidade próximas de 100%.\n\n**Na prova:** ressonância é o padrão ouro para a fratura oculta do escafoide.",
-  "correta": "**Ressonância magnética.** Detecta a fratura e o edema ósseo precocemente, com a maior acurácia.",
+  "conceito": "**Fratura oculta do escafoide.** O escafoide é o osso do carpo que mais fratura (queda com o punho em extensão e desvio radial). Muitas fraturas, sobretudo as sem desvio da cintura, **não aparecem** nas radiografias iniciais, mesmo com incidências específicas (PA com desvio ulnar, oblíquas). Cerca de 15% a 20% das fraturas iniciais são ocultas.\n\n**Por que importa.** A vascularização do escafoide é **retrógrada** (entra pela porção distal, dorsal), deixando o polo proximal vulnerável. Fratura não diagnosticada e não imobilizada tem alto risco de **pseudartrose**, necrose do polo proximal e, a longo prazo, colapso carpal (SNAC).\n\n**Conduta diante da suspeita clínica** (dor na tabaqueira anatômica, dor no tubérculo do escafoide, dor à compressão axial do polegar) com radiografia normal: imobilizar e investigar.\n\n**Exames para a fratura oculta.**\n\n| Exame | Comentário |\n|---|---|\n| Radiografia repetida em 10 a 14 dias | Reabsorção no traço torna a fratura visível; baixa sensibilidade |\n| Cintilografia óssea | Muito sensível, pouco específica; precisa de 48 a 72 horas |\n| Tomografia | Ótima para a anatomia da fratura e o desvio; menos sensível para traços sem desvio e não vê edema |\n| **Ressonância magnética** | **Sensibilidade e especificidade próximas de 100%** já nos primeiros dias; mostra edema ósseo, fratura e lesões associadas |\n| Ultrassonografia | Dependente do operador, pouco usada |\n\nRevisões sistemáticas (Mallee e colaboradores, Cochrane) confirmam a ressonância como o exame mais acurado para excluir ou confirmar a fratura oculta. Ela também evita imobilizações desnecessárias, que ocorrem na maioria dos pacientes com suspeita.\n\n> Fratura oculta do escafoide: ressonância é o padrão-ouro.",
+  "correta": "**D: ressonância magnética (resposta pela bibliografia).** Detecta a fratura e o edema ósseo nos primeiros dias, com sensibilidade e especificidade próximas de 100%, sendo o padrão-ouro para a fratura oculta do escafoide.",
   "incorretas": {
-   "A": "**Radiografia simples.** Pode ser normal nas primeiras semanas; é justamente o que torna a fratura oculta.",
-   "B": "**Ultra-sonografia.** Pouco sensível e dependente do examinador para o carpo.",
-   "C": "**Tomografia computadorizada.** Boa para desvio e consolidação, mas menos sensível que a ressonância na fratura sem desvio."
+   "A": "**A radiografia simples**, por definição, não mostrou a fratura oculta; repetida em 10 a 14 dias, melhora, mas ainda é pouco sensível.",
+   "B": "**A ultrassonografia** é dependente do operador, com acurácia limitada e pouco usada para essa finalidade.",
+   "C": "**A tomografia** é excelente para avaliar desvio, cominuição e consolidação, mas é menos sensível que a ressonância para traços sem desvio e não mostra o edema ósseo."
   },
   "referencias": [
-   "Rockwood C.A. et al. Fractures. Philadelphia: Lippincott. 6ª ed., p. 871."
+   "Rockwood C.A. et al. Fractures. Philadelphia: Lippincott. 6ª ed., p. 871.",
+   "Mallee WH, Wang J, Poolman RW, et al. Computed tomography versus magnetic resonance imaging versus bone scintigraphy for clinically suspected scaphoid fractures in patients with negative plain radiographs. Cochrane Database Syst Rev. 2015;(6):CD010023."
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "D",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0600": {

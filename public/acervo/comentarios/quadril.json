@@ -5658,19 +5658,20 @@
   "conferido": false
  },
  "quadril-0477": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": "**Módulo de elasticidade da haste.** Haste de menor módulo (mais flexível) divide mais carga com o cimento e o osso proximal, diminuindo a tensão na própria haste e reduzindo a proteção de estresse do fêmur, à custa de maior tensão no manto de cimento proximal.\n\n**Na prova:** haste mais flexível alivia a haste e carrega mais o cimento proximal.",
-  "correta": "**O estresse na haste.** A haste flexível transfere carga e fica menos solicitada.",
+  "conceito": "**Módulo de elasticidade da haste femoral e a distribuição de cargas.** O módulo de elasticidade (módulo de Young) mede a **rigidez** de um material: quanto maior, menos ele deforma sob carga. Em uma estrutura composta (haste, cimento e osso), a carga se distribui **proporcionalmente à rigidez** de cada componente: o mais rígido carrega mais.\n\n**Módulos aproximados.**\n\n| Material | Módulo de elasticidade |\n|---|---|\n| Cromo-cobalto | Cerca de 210 GPa |\n| Aço inoxidável | Cerca de 200 GPa |\n| Titânio | Cerca de 110 GPa |\n| Osso cortical | Cerca de 15 a 20 GPa |\n| Cimento (PMMA) | Cerca de 2 a 3 GPa |\n\n**O que acontece ao diminuir o módulo da haste** (haste mais flexível):\n- A haste **deforma mais** e, com isso, **transfere mais carga** ao que está à sua volta.\n- **O estresse na própria haste diminui** (ela carrega uma parcela menor).\n- O **estresse no cimento proximal aumenta** (o manto de cimento proximal passa a receber mais carga e mais cisalhamento na interface), o que pode favorecer falha do cimento em hastes cimentadas.\n- O **estresse no osso proximal aumenta**, reduzindo a **blindagem de tensões** (stress shielding) e, portanto, preservando **mais massa óssea** proximal.\n\nHuiskes e colaboradores mostraram, com modelos de elementos finitos e estudos em animais, que hastes mais flexíveis reduzem a reabsorção óssea proximal, à custa de maiores tensões na interface proximal.\n\n**Implicação prática.** Hastes não cimentadas usam titânio (módulo menor) para preservar o osso; hastes cimentadas preferem materiais mais rígidos (cromo-cobalto), que protegem o manto de cimento.\n\n> Haste mais flexível: menos estresse na haste, mais no cimento proximal e no osso, menos stress shielding.",
+  "correta": "**A: o estresse na haste (resposta pela bibliografia).** A haste de menor módulo deforma mais e divide a carga com o cimento e o osso, de modo que a parcela que ela própria suporta diminui.",
   "incorretas": {
-   "B": "**O estresse no terço proximal da massa de cimento.** O estresse no cimento proximal aumenta com a haste flexível.",
-   "C": "**O estresse no osso.** O osso proximal passa a receber mais carga, não menos.",
-   "D": "**A massa óssea proximal.** A menor proteção de estresse preserva a massa óssea proximal."
+   "B": "**O estresse no terço proximal do cimento** aumenta, não diminui, com a haste mais flexível, que transfere mais carga ao manto proximal.",
+   "C": "**O estresse no osso** também aumenta, o que é desejável por reduzir a blindagem de tensões.",
+   "D": "**A massa óssea proximal** é preservada (não diminui) com a haste mais flexível, justamente porque o osso volta a receber carga."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 327."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 327.",
+   "Huiskes R, Weinans H, van Rietbergen B. The relationship between stress shielding and bone resorption around total hip stems and the effects of flexible materials. Clin Orthop Relat Res. 1992;(274):124-134."
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "A",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "quadril-0478": {

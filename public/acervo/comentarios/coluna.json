@@ -3699,19 +3699,20 @@
   "conferido": false
  },
  "coluna-0320": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "C",
-  "conceito": "**Acesso cervical anterior.** O nervo laríngeo recorrente tem trajeto mais previsível à esquerda (contorna a aorta); à direita contorna a subclávia e é mais vulnerável. Muitos preferem o acesso à esquerda.\n\n**Na prova:** acesso cervical anterior pela esquerda protege o laríngeo recorrente.",
-  "correta": "**Esquerda, para evitar a lesão do nervo laríngeo recorrente.** O laríngeo recorrente é mais previsível à esquerda.",
+  "conceito": "**Acesso anterior à coluna cervical e o nervo laríngeo recorrente.** O acesso anterior (Smith-Robinson) é a via padrão para discectomia e artrodese cervical (C3 a T1). Passa entre o feixe carotídeo (lateral) e a traqueia e o esôfago (medial), com retração destas estruturas.\n\n**O nervo laríngeo recorrente.** É ramo do **vago** que inerva quase toda a musculatura intrínseca da laringe. Sua lesão causa **rouquidão** (paralisia da corda vocal), a complicação neurológica mais comum do acesso anterior (temporária em uma parcela importante; permanente em menos de 3%).\n\n**Diferença de trajeto entre os lados.**\n\n| Lado | Trajeto do recorrente | Implicação |\n|---|---|---|\n| **Esquerdo** | Desce até o tórax, **contorna o arco aórtico** e sobe no sulco traqueoesofágico | Trajeto **mais longo, vertical e previsível**, protegido no sulco |\n| Direito | **Contorna a artéria subclávia**, mais alto, e cruza o campo obliquamente | Mais exposto, sobretudo em acessos baixos (C6-T1); raramente não recorrente |\n\nEbraheim e colaboradores mostraram, em estudo anatômico, a maior vulnerabilidade do nervo à direita nos acessos à coluna cervical baixa. Por isso, muitos autores e a referência adotada preferem o **acesso pela esquerda**.\n\n**Contraponto.** Na prática, muitos cirurgiões destros operam pela direita por conforto, e estudos clínicos não mostraram diferença consistente na taxa de paralisia entre os lados; a causa principal parece ser a **compressão do nervo pelo afastador** contra a traqueia (reduzida desinsuflando e reinsuflando o balonete do tubo após posicionar os afastadores). Pelo lado esquerdo, há o **ducto torácico** a considerar em acessos baixos.\n\n> Acesso cervical anterior pela esquerda: o recorrente tem trajeto mais previsível e protegido.",
+  "correta": "**C: esquerda, para evitar a lesão do nervo laríngeo recorrente (resposta pela bibliografia).** À esquerda, o recorrente contorna o arco aórtico e sobe de forma previsível no sulco traqueoesofágico; à direita, contorna a subclávia e cruza o campo, mais vulnerável.",
   "incorretas": {
-   "A": "**Esquerda, para evitar a lesão do nervo vago.** O vago fica na bainha carotídea e não define o lado.",
-   "B": "**Direita, para evitar a lesão do nervo vago.** O vago não define o lado.",
-   "D": "**Direita, para evitar a lesão do nervo laríngeo recorrente.** À direita o laríngeo recorrente é mais vulnerável."
+   "A": "**Esquerda para proteger o vago**: o vago fica dentro da bainha carotídea, que é retraída lateralmente em qualquer dos lados; o motivo da escolha é o recorrente.",
+   "B": "**Direita para proteger o vago**: o vago não é o critério, e o lado direito é justamente o de maior risco para o recorrente.",
+   "D": "**Direita para proteger o recorrente** inverte a anatomia: é à direita que o recorrente tem trajeto mais alto e oblíquo, mais exposto."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 1991."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 1991.",
+   "Ebraheim NA, Lu J, Skie M, Heck BE, Yeasting RA. Vulnerability of the recurrent laryngeal nerve in the anterior approach to the lower cervical spine. Spine (Phila Pa 1976). 1997;22(22):2664-2667."
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "C",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "coluna-0321": {
