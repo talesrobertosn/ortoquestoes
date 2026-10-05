@@ -15609,6 +15609,67 @@
   "geradoEm": "2026-10-04",
   "conferido": false
  },
+ "mao-1241": {
+  "conceito": "**Déficit motor na síndrome do túnel do carpo.** O nervo mediano, ao passar pelo túnel do carpo, emite o **ramo motor recorrente (tenar)**, que inerva os músculos tenares laterais (\"LOAF\" com os lumbricais):\n- **Abdutor curto do polegar**: abdução palmar do polegar (afastar o polegar da palma, perpendicular a ela).\n- **Oponente do polegar**: oposição (levar a polpa do polegar às polpas dos outros dedos).\n- **Flexor curto do polegar** (cabeça superficial).\n- **Lumbricais do indicador e do médio** (pelo mediano digital).\n\n**Músculos que NÃO dependem do mediano no túnel.**\n- **Adutor do polegar**: nervo ulnar.\n- **Extensores do polegar** (longo e curto) e abdutor longo: nervo radial (interósseo posterior).\n- **Flexor longo do polegar**: nervo interósseo anterior (ramo do mediano no antebraço, acima do túnel).\n\n**Evolução da síndrome.** Parestesias noturnas, depois diurnas; nas formas graves, perda de sensibilidade, **fraqueza da abdução e da oposição**, quedas de objetos e **atrofia tenar**.\n\n**Teste do abdutor curto.** O paciente eleva o polegar perpendicularmente à palma contra resistência; a fraqueza e a palpação de um ventre muscular hipotrófico confirmam o comprometimento motor.\n\n| Movimento do polegar | Nervo |\n|---|---|\n| Abdução palmar e oposição | Mediano (ramo recorrente) |\n| Adução | Ulnar |\n| Extensão | Radial |\n| Flexão da interfalângica | Interósseo anterior |\n\n> Túnel do carpo avançado: fraqueza da abdução e da oposição do polegar.",
+  "correta": "**C: Abdução e oponência do polegar.** Na síndrome do túnel do carpo avançada, a compressão do ramo motor recorrente do mediano enfraquece o abdutor curto e o oponente do polegar. O paciente perde força para afastar o polegar da palma e para fazer a oposição, o que explica a queda de objetos.",
+  "incorretas": {
+   "A": "**Extensão e adução do polegar** dependem dos nervos radial (extensores) e ulnar (adutor do polegar). Não são afetadas na síndrome do túnel do carpo.",
+   "B": "**Flexão e adução do polegar**: a flexão da interfalângica depende do flexor longo do polegar (interósseo anterior, acima do túnel) e a adução, do nervo ulnar. Nenhum dos dois é afetado pela compressão no túnel.",
+   "D": "**Extensão e oponência** mistura um movimento do nervo radial (extensão) com um do mediano (oponência). Apenas a oponência é afetada."
+  },
+  "referencias": [
+   "Padua L, Coraci D, Erra C, et al. Carpal tunnel syndrome: clinical features, diagnosis, and management. Lancet Neurol. 2016;15(12):1273-1284.",
+   "Wolfe SW, Pederson WC, Kozin SH, Cohen MS, eds. Green's Operative Hand Surgery. Elsevier. Neuropatias compressivas."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "mao-1242": {
+  "conceito": "**Atrofia tenar na síndrome do túnel do carpo.** A eminência tenar é formada pelos músculos abdutor curto, oponente e flexor curto do polegar, inervados pelo ramo motor recorrente do nervo mediano. Na compressão crônica e grave do mediano no túnel do carpo, ocorre **denervação** desses músculos, que perdem volume.\n\n**Como reconhecer.**\n- Achatamento ou depressão da eminência tenar, mais visível na região lateral (abdutor curto).\n- Comparação com a mão oposta.\n- Fraqueza da abdução palmar e da oposição do polegar.\n\n**Significado.** A atrofia tenar indica doença **avançada**, com perda axonal. Mesmo após a descompressão cirúrgica, a recuperação da força e do volume muscular é incompleta e lenta, especialmente em pacientes mais velhos. Por isso, é uma indicação de cirurgia sem demora.\n\n**Diagnóstico diferencial da atrofia da mão.**\n\n| Região atrofiada | Causa provável |\n|---|---|\n| Tenar | Túnel do carpo, radiculopatia C8-T1 (atrofia tenar lateral), esclerose lateral amiotrófica |\n| Hipotenar e interósseos | Compressão do nervo ulnar (túnel cubital, canal de Guyon) |\n| Primeiro interósseo dorsal | Nervo ulnar |\n| Global | Lesão do plexo inferior, doença do neurônio motor |\n\n**Na imagem.** As mãos mostram achatamento da eminência tenar à direita em comparação com a esquerda.\n\n> Síndrome do túnel do carpo avançada: hipotrofia da eminência tenar.",
+  "correta": "**B: A hipotrofia da região tenar.** A compressão crônica do nervo mediano no túnel do carpo denerva os músculos tenares (abdutor curto, oponente e flexor curto do polegar), que atrofiam. A imagem mostra o achatamento da eminência tenar, sinal de doença avançada e de indicação cirúrgica.",
+  "incorretas": {
+   "A": "**A hipotrofia hipotenar** é característica da compressão do nervo ulnar (túnel cubital ou canal de Guyon), não do mediano. O paciente tem quadro e teste de Durkan compatíveis com túnel do carpo.",
+   "C": "**Hipertrofia hipotenar** não é achado de neuropatia compressiva. Mesmo em trabalhadores braçais, a assimetria esperada na síndrome do túnel do carpo é a perda de volume tenar.",
+   "D": "**Hipertrofia tenar** seria o oposto do esperado. A denervação causa atrofia, não aumento de volume."
+  },
+  "referencias": [
+   "Padua L, Coraci D, Erra C, et al. Carpal tunnel syndrome: clinical features, diagnosis, and management. Lancet Neurol. 2016;15(12):1273-1284.",
+   "Wolfe SW, Pederson WC, Kozin SH, Cohen MS, eds. Green's Operative Hand Surgery. Elsevier. Neuropatias compressivas."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "mao-1243": {
+  "alerta": "O epônimo \"sinal de Bunnell\" é usado de forma variável na literatura (também designa o teste de tensão dos intrínsecos de Bunnell-Littler). Nesta questão, a banca o empregou no sentido do sinal do \"O\" (pinça em O entre polegar e indicador), relacionado à síndrome do nervo interósseo anterior. O gabarito oficial (A) foi mantido.",
+  "conceito": "**Sinal do O e a síndrome do nervo interósseo anterior.** O nervo interósseo anterior (NIA) é um ramo **motor** do nervo mediano que nasce logo abaixo do cotovelo e inerva:\n- **Flexor longo do polegar**: flexão da interfalângica do polegar.\n- **Flexor profundo dos dedos do indicador** (e frequentemente do médio): flexão da interfalângica distal.\n- **Pronador quadrado**: pronação com o cotovelo fletido.\n\n**O sinal.** Pede-se ao paciente que faça um \"O\" com a ponta do polegar e do indicador (pinça de ponta). Na lesão do NIA, as interfalângicas do polegar e do indicador **não fletem**: elas ficam em extensão e a pinça fica achatada, com as polpas em contato (formato de \"D\" ou de lágrima, não de \"O\"). Esse achado é conhecido como **sinal do O** (ou sinal de Kiloh-Nevin, e em alguns textos chamado de sinal de Bunnell).\n\n**Síndrome do NIA.** Fraqueza dessas flexões, **sem alteração sensitiva** (o NIA é puramente motor). Causas: compressão por bandas fibrosas, neurite braquial (Parsonage-Turner), trauma (fratura supracondiliana em crianças).\n\n**Interpretação na questão.** Se o paciente faz o \"O\" normalmente (sinal ausente), a função do NIA está preservada, o que afasta a síndrome do nervo interósseo anterior. No paciente, os sintomas sensitivos e o teste de Durkan apontam para compressão no túnel do carpo.\n\n| Síndrome | Sensibilidade | Motor |\n|---|---|---|\n| Túnel do carpo | Alterada (polegar, indicador, médio) | Tenar |\n| Interósseo anterior | Normal | Flexor longo do polegar, flexor profundo do indicador, pronador quadrado |\n\n> Sinal do O normal: afasta a síndrome do nervo interósseo anterior.",
+  "correta": "**A: Não se trata da síndrome do nervo interósseo anterior.** O sinal descrito avalia a pinça de ponta entre polegar e indicador, que depende do flexor longo do polegar e do flexor profundo do indicador, inervados pelo nervo interósseo anterior. Se o sinal está ausente, essa função está preservada, afastando a síndrome do NIA. O quadro do paciente é de síndrome do túnel do carpo.",
+  "incorretas": {
+   "B": "**A síndrome do nervo interósseo posterior** (ramo do radial) causa fraqueza da extensão dos dedos e do polegar, com a extensão do punho preservada com desvio radial. Não é avaliada pela pinça em O.",
+   "C": "**A síndrome do túnel cubital** (nervo ulnar no cotovelo) é avaliada pelos sinais de Froment, Wartenberg, Tinel no túnel cubital e flexão do cotovelo. A pinça em O não testa o nervo ulnar.",
+   "D": "**A síndrome do canal de Guyon** (nervo ulnar no punho) causa alterações sensitivas no quarto e quinto dedos e fraqueza dos intrínsecos ulnares. Também não é avaliada pela pinça em O."
+  },
+  "referencias": [
+   "Kiloh LG, Nevin S. Isolated neuritis of the anterior interosseous nerve. Br Med J. 1952;1(4763):850-851.",
+   "Wolfe SW, Pederson WC, Kozin SH, Cohen MS, eds. Green's Operative Hand Surgery. Elsevier. Neuropatias compressivas."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "mao-1244": {
+  "conceito": "**Confirmação diagnóstica da síndrome do túnel do carpo.** O diagnóstico é essencialmente clínico (parestesias no território do mediano, piora noturna, testes de Phalen, Tinel e Durkan), mas exames complementares são úteis, sobretudo antes da cirurgia e em casos atípicos.\n\n**Eletroneuromiografia (ENMG).** É o **exame de referência** para confirmar a síndrome.\n- **Estudo de condução nervosa**: mostra aumento da latência distal motora e sensitiva do mediano e redução da velocidade de condução no segmento do punho, comparando com o nervo ulnar ou radial.\n- **Eletromiografia de agulha**: no abdutor curto do polegar, mostra sinais de denervação (fibrilações, ondas positivas) e de reinervação em casos graves.\n- **Gradua a gravidade** (leve, moderada, grave), o que tem valor prognóstico.\n- **Exclui diagnósticos diferenciais**: radiculopatia C6 e C7, compressão proximal do mediano (pronador), polineuropatia (diabetes), doença do neurônio motor.\n\n**Outros exames.**\n- **Ultrassonografia**: aumento da área de secção transversa do mediano na entrada do túnel (acima de cerca de 10 a 12 mm²); útil e barata, sem desconforto.\n- **Ressonância**: reservada a casos com suspeita de lesão expansiva (cisto, tumor, tenossinovite).\n- **Potenciais evocados**: avaliam vias centrais, não a compressão periférica do mediano.\n\n**Diretriz da AAOS.** Reconhece a eletrodiagnose como exame útil para confirmar o diagnóstico, especialmente antes da cirurgia.\n\n> Para confirmar túnel do carpo: eletroneuromiografia.",
+  "correta": "**C: Eletroneuromiografia dos membros superiores.** É o exame de referência para confirmar a síndrome do túnel do carpo: demonstra o retardo de condução do mediano no punho, gradua a gravidade e afasta diagnósticos diferenciais como radiculopatia cervical e polineuropatia. No paciente com sinais de denervação (fraqueza e atrofia tenar), também documenta a lesão axonal.",
+  "incorretas": {
+   "A": "**A ressonância do punho** mostra o túnel e o nervo, mas não avalia a função do nervo. É reservada à suspeita de lesões expansivas.",
+   "B": "**O potencial evocado somatossensitivo** avalia as vias sensitivas até o córtex e é usado em doenças da medula e do encéfalo, não para a compressão periférica do mediano.",
+   "D": "**O potencial evocado motor** avalia as vias motoras centrais (por estimulação cortical) e é usado, por exemplo, na monitorização da medula. Não confirma uma neuropatia compressiva periférica. (O texto adicional na alternativa é resquício da diagramação da prova.)"
+  },
+  "referencias": [
+   "Graham B, Peljovich AE, Afra R, et al. The American Academy of Orthopaedic Surgeons evidence-based clinical practice guideline on: management of carpal tunnel syndrome. J Bone Joint Surg Am. 2016;98(20):1750-1754.",
+   "Padua L, Coraci D, Erra C, et al. Carpal tunnel syndrome: clinical features, diagnosis, and management. Lancet Neurol. 2016;15(12):1273-1284."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
  "mao-1245": {
   "conceito": "**Instabilidade nas fraturas do rádio distal.** Uma fratura instável é aquela que, mesmo após redução fechada adequada, tende a perder a redução durante a imobilização. Reconhecê-la na avaliação inicial evita tratamentos conservadores fadados a falhar.\n\n**Critérios de Lafontaine.** A presença de **três ou mais** fatores indica alto risco de instabilidade:\n1. Angulação dorsal inicial maior que 20 graus.\n2. Cominuição dorsal.\n3. Extensão intra-articular (radiocárpica).\n4. Fratura associada da ulna.\n5. Idade acima de 60 anos.\n\n**Por que a idade conta.** A osteoporose reduz a qualidade do osso metafisário, e a impactação deixa vazios ósseos que colapsam após a redução. Mackenney e colaboradores mostraram que a idade é um dos preditores mais fortes de perda da redução, junto com a cominuição metafisária e o desvio ulnar (variância ulnar positiva).\n\n**Outros fatores modernos.** Encurtamento radial (variância ulnar positiva acima de 3 mm), cominuição metafisária volar e dorsal, desvio inicial grande.\n\n**Aplicação clínica.** Em idosos de baixa demanda, mesmo fraturas instáveis podem ser tratadas com gesso, aceitando alguma consolidação viciosa, porque o resultado funcional costuma ser bom. Mas a idade continua sendo um fator de instabilidade.\n\n> Idade acima de 60 anos é critério de instabilidade na fratura do rádio distal.",
   "correta": "**B: Errado.** A idade é, sim, um sinal de instabilidade. A paciente tem 66 anos, e a idade acima de 60 anos é um dos critérios de Lafontaine, porque a osteoporose aumenta a cominuição metafisária e o risco de colapso após a redução. Estudos posteriores confirmaram a idade como um dos principais preditores de perda da redução.",
