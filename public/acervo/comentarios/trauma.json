@@ -502,14 +502,18 @@
   "conferido": false
  },
  "trauma-0045": {
+  "conceito": "**A cabeça do fêmur como martelo.** Nas fraturas do acetábulo, a força chega ao osso através da **cabeça do fêmur**, vinda do trocanter maior (queda de lado) ou do joelho (trauma do painel). A parte do acetábulo que quebra é aquela contra a qual a cabeça bate. Essa parte depende da **posição do quadril** no momento do impacto.\n\n**A regra de Letournel.**\n- A **rotação** do quadril define se a cabeça bate na frente ou atrás:\n  - em **rotação lateral** (externa), a cabeça se dirige para a **frente**: fraturas **anteriores** (parede ou coluna anterior);\n  - em **rotação medial** (interna), a cabeça se dirige para **trás**: fraturas **posteriores** (parede ou coluna posterior).\n- A **abdução e a adução** definem a **altura** do impacto:\n  - em **abdução**, a cabeça bate na parte **inferior** do acetábulo;\n  - em **adução**, a cabeça bate na parte **superior** (teto).\n- Na posição **neutra** de abdução e adução, o impacto cai no **meio** do acetábulo.\n\n**O caso da parede anterior.** Com a força aplicada no trocanter maior e o quadril em cerca de **20° de rotação lateral**, a cabeça é empurrada contra a **porção anterior** do acetábulo. Com a abdução e a adução em **posição neutra**, o impacto atinge a parte média da parede anterior.\n\n**O trauma do painel (pelo joelho).** Com o quadril **fletido** e a força vindo pelo eixo do fêmur:\n- quadril **aduzido**: **luxação posterior pura**;\n- quadril em posição neutra ou levemente abduzido: **fratura da parede posterior** (fratura-luxação).\n\n**A classificação de Letournel.**\n\n| Grupo | Fraturas |\n|---|---|\n| **Elementares** | Parede posterior (a mais comum), coluna posterior, parede anterior, coluna anterior, transversa |\n| **Associadas** | Coluna e parede posteriores, transversa com parede posterior, em T, coluna anterior com hemitransversa posterior, **ambas as colunas** |\n\n**O idoso.** Nas quedas da própria altura, o padrão mais comum é o da **coluna anterior** com impacção medial (às vezes com o sinal da gaivota), diferente do jovem, em que predominam as fraturas da parede posterior.",
+  "correta": "**Correta: C (rotação lateral de 20° e adução/abdução neutra).** Pela regra de Letournel, a força no trocanter maior com o quadril em **rotação lateral** dirige a cabeça femoral para a **frente**, contra a parede anterior. Com a abdução e a adução em **posição neutra**, o impacto atinge a parte média da parede anterior.",
   "incorretas": {
-   "A": "A rotação lateral está certa, mas o quadril não está aduzido.",
-   "B": "A rotação medial com abdução dirige a cabeça para trás.",
-   "D": "A rotação medial gera os padrões posteriores."
+   "A": "A rotação lateral está certa, mas a **adução** desloca o impacto para a parte **superior** (teto) do acetábulo.",
+   "B": "A **rotação medial** dirige a cabeça para **trás**, produzindo fraturas **posteriores**. A abdução leva o impacto para a parte inferior.",
+   "D": "A **rotação medial** produz fraturas **posteriores**, e não da parede anterior."
   },
-  "conceito": "**Letournel** mostrou que, numa força aplicada no **trocânter maior**, a **posição do quadril** decide qual parte do acetábulo a cabeça vai quebrar. A cabeça funciona como um martelo, e a rotação muda o ponto de impacto.\n\n**Com o quadril em abdução e adução neutras**:\n\n**rotação lateral de cerca de 20°**: a cabeça bate na frente e quebra a **parede anterior**;\n\n**rotação lateral maior, em torno de 50°**: quebra a **coluna anterior**;\n\n**rotação medial**: a cabeça é dirigida para trás, com padrões **posteriores** (parede ou coluna posterior).\n\n**A parede anterior**: é uma fratura **rara** (1 a 2%). É melhor vista na incidência **oblíqua obturatória** e na **TC**. A abordagem é pela via **ilioinguinal** ou intrapélvica (Stoppa).\n\n**Na prova**: a fratura da parede anterior vem de força no trocânter com o quadril em **rotação lateral de 20°** e **adução e abdução neutras**.",
-  "correta": "Com rotação lateral de 20° e o quadril neutro, a cabeça é dirigida para a frente e quebra a parede anterior.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)",
+   "Letournel E, Judet R. Fractures of the Acetabulum. 2ª edição. Springer; 1993."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0046": {
@@ -900,17 +904,18 @@
   "conferido": false
  },
  "trauma-0076": {
+  "conceito": "**A fratura do planalto tibial.** É uma fratura **articular** da tíbia proximal, causada por uma força em **varo ou valgo** com carga axial. Os mecanismos clássicos são o atropelamento (o para-choque bate no lado lateral do joelho, com valgo) e as quedas de altura. O **platô lateral** é o mais acometido.\n\n**A classificação de Schatzker.**\n\n| Tipo | Fratura |\n|---|---|\n| I | **Cisalhamento** do platô lateral (jovem, osso bom) |\n| II | Cisalhamento com **depressão** lateral (o mais comum) |\n| III | **Depressão** pura do platô lateral (idoso, osteoporose) |\n| IV | Platô **medial** (alta energia; risco de luxação e lesão vascular) |\n| V | **Bicondilar** |\n| VI | Dissociação **metáfise-diáfise** |\n\n**As lesões de partes moles associadas.** São **muito frequentes**: em estudos com ressonância, a maioria dos pacientes tem alguma lesão de partes moles.\n\n| Estrutura | Frequência |\n|---|---|\n| **Menisco** | A **mais comum** (cerca de 50% ou mais); sobretudo o **lateral**, nas fraturas do platô lateral |\n| Ligamento colateral medial | Frequente nas fraturas do platô lateral por valgo |\n| Ligamento cruzado anterior | Frequente (às vezes como avulsão da eminência intercondilar) |\n| Ligamento cruzado posterior, canto posterolateral | Nas fraturas de alta energia, sobretudo do platô medial |\n\n**Por que o menisco.** Nas fraturas com **depressão** do platô lateral (Schatzker II e III), o côndilo femoral afunda o osso, e o menisco lateral se **rompe** ou fica **preso** dentro da depressão ou do traço. Na cirurgia, o menisco deve ser examinado e **reparado** (não removido), porque a meniscectomia acelera a artrose.\n\n**Os princípios do tratamento.**\n- **Redução anatômica** da superfície articular (elevação do fragmento deprimido, com enxerto ou substituto ósseo por baixo).\n- **Restauração do eixo** do membro (o mau alinhamento é mais prejudicial que um pequeno degrau articular).\n- **Fixação estável** (placas de suporte, parafusos em \"jangada\" abaixo da superfície articular) e **mobilização precoce**.\n- **Respeitar as partes moles**: nas fraturas de alta energia, fixador externo temporário e cirurgia definitiva quando a pele permitir.\n\n**As complicações a vigiar.** **Síndrome compartimental** (sobretudo no Schatzker IV a VI), lesão da artéria poplítea e do nervo fibular, infecção e artrose pós-traumática.",
+  "correta": "**Correta: A (menisco lateral).** Na fratura do planalto tibial, a lesão de partes moles associada mais comum é a do **menisco lateral**, sobretudo nas fraturas com depressão do platô lateral (Schatzker II e III), em que o menisco se rompe ou fica preso no traço.",
   "incorretas": {
-   "B": "O menisco medial é lesado com menos frequência.",
-   "C": "O colateral medial é a segunda lesão mais comum.",
-   "D": "O cruzado posterior raramente é lesado nessa fratura."
+   "B": "O **menisco medial** é lesado com menos frequência, porque a maioria das fraturas acomete o platô **lateral**.",
+   "C": "O **canto posterolateral** é lesado em fraturas de alta energia, sobretudo do platô medial, mas é menos frequente que o menisco lateral.",
+   "D": "O **ligamento cruzado anterior** é lesado com frequência, mas menos que o menisco lateral."
   },
-  "conceito": "Na **fratura do planalto tibial**, a lesão associada mais frequente é a do **menisco lateral**.\n\n**Por quê**: a fratura típica (Schatzker I a III) vem de **valgo** com carga axial. O **côndilo femoral lateral** desce sobre o planalto lateral, e o **menisco lateral** fica no caminho:\n\n**esmagado** ou **rasgado**, sobretudo na periferia;\n\n**interposto** no traço, principalmente nas fraturas com **depressão**, o que impede a redução.\n\n**As outras lesões**: o **colateral medial** é a segunda mais comum (tensionado pelo valgo); o **menisco medial** é lesado com menos frequência; o **cruzado posterior** raramente, exceto nas fraturas-luxações mediais.\n\n**A conduta**: durante a fixação, abrir a cápsula por baixo do menisco (**artrotomia submeniscal**), ver a superfície, **reparar ou reinserir** o menisco e então reduzir.\n\n**Na prova**: a lesão associada mais frequente ao planalto tibial é a do **menisco lateral**.",
-  "correta": "O côndilo lateral em valgo esmaga o menisco lateral, que pode ficar preso no traço.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 54"
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 54",
+   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0077": {
@@ -1146,14 +1151,18 @@
   "conferido": false
  },
  "trauma-0096": {
+  "conceito": "**A base do quinto metatarso.** É o local de inserção do **fibular curto** (na tuberosidade) e da banda lateral da **fáscia plantar**. Recebe forças grandes na inversão do pé e no apoio do antepé lateral. A irrigação da região é **irregular**: há uma **zona de transição** entre os vasos metafisários e a artéria nutridora da diáfise, com pouco fluxo, onde a consolidação é difícil.\n\n**As três zonas (Lawrence e Botte).**\n\n| Zona | Local | Fratura típica |\n|---|---|---|\n| **I** | **Tuberosidade** | **Avulsão** (pela fáscia plantar e pelo fibular curto) na entorse em inversão; a mais comum; consolida bem |\n| **II** | **Junção metáfise-diáfise** (área da articulação entre o 4º e o 5º metatarsos) | **Fratura de Jones**: aguda, por adução do antepé com o tornozelo em flexão plantar; **irrigação pobre**; risco de pseudoartrose |\n| **III** | **Diáfise proximal**, distal aos ligamentos intermetatarsais | **Fratura por estresse**: em atletas; a de **maior risco** de retardo de consolidação e pseudoartrose |\n\n**A fratura por estresse da zona III.**\n- Surge em **atletas** (corredores, jogadores de basquete e futebol) e em pés **cavovaros** (que sobrecarregam a borda lateral).\n- Tem **sintomas prodrômicos**: dor lateral no pé que vai piorando por semanas, antes da fratura completa.\n- Na radiografia, pode haver **esclerose** do canal medular e alargamento do traço (sinais de cronicidade).\n- A classificação de **Torg** descreve a evolução: aguda (I), retardo de consolidação (II) e pseudoartrose com esclerose do canal (III).\n\n**O tratamento.**\n- Zona I: sintomático, com calçado rígido ou bota, carga conforme a dor.\n- Zonas II e III: **sem carga** em bota ou gesso por 6 a 8 semanas, com consolidação mais lenta. No **atleta**, e nas fraturas com sinais de cronicidade, prefere-se a **fixação com parafuso intramedular**, que reduz o tempo de retorno ao esporte e o risco de pseudoartrose.\n- Corrigir o **pé cavovaro**, se houver, para evitar a recidiva.\n\n**Na criança.** A **apófise** da base do quinto metatarso tem orientação **longitudinal** e não deve ser confundida com uma fratura (que é transversal). A **apofisite** por tração é a doença de **Iselin**.",
+  "correta": "**Correta: C (III).** A fratura por estresse da base do quinto metatarso ocorre na **zona III**, a diáfise proximal, distal aos ligamentos intermetatarsais. É típica de atletas, com sintomas prodrômicos e alto risco de retardo de consolidação e pseudoartrose.",
   "incorretas": {
-   "A": "A zona I é a avulsão da tuberosidade.",
-   "B": "A zona II é a fratura de Jones aguda, na junção metáfise-diáfise.",
-   "D": "Não existe zona IV na classificação de Lawrence e Botte."
+   "A": "A **zona I** (tuberosidade) é o local da **fratura-avulsão** na entorse em inversão, e não da fratura por estresse.",
+   "B": "A **zona II** (junção metáfise-diáfise) é o local da **fratura de Jones** aguda, por adução do antepé.",
+   "D": "A classificação tem apenas **três zonas**. Não há zona IV."
   },
-  "conceito": "**Lawrence e Botte** dividem a **base do quinto metatarso** em três zonas, de proximal para distal:\n\n**zona I**: **avulsão da tuberosidade**, pelo fibular curto e pela banda lateral da fáscia plantar; a mais comum; consolida bem com calçado rígido e carga conforme a dor;\n\n**zona II**: na **junção metáfise-diáfise**, onde o 4º e o 5º metatarsos se articulam: a **fratura de Jones** aguda, por adução do antepé com o tornozelo em flexão plantar;\n\n**zona III**: na **diáfise proximal**, logo depois do ligamento intermetatarsal: a **fratura por estresse**, em atletas.\n\n**O problema das zonas II e III**: ficam numa área de **irrigação pobre** (watershed), com consolidação lenta e risco de **pseudartrose**. A fratura por estresse da zona III é de **alto risco**: em atletas, costuma ser fixada com **parafuso intramedular**.\n\n**Na prova**: a fratura por estresse da base do quinto metatarso ocorre na **zona III**.",
-  "correta": "A zona III é a diáfise proximal, local da fratura por estresse, de alto risco.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)",
+   "Lawrence SJ, Botte MJ. Jones' fractures and related fractures of the proximal fifth metatarsal. Foot Ankle. 1993;14(6):358-365."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0097": {

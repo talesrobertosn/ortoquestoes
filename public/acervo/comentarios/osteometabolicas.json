@@ -777,19 +777,19 @@
   "formato": "corrido"
  },
  "osteometabolicas-0058": {
-  "conceito": "**Os sítios da densitometria.** A DXA mede onde a fratura importa: **coluna lombar** e **fêmur proximal**. Esses sítios deixam de servir diante de artrodese ou artroplastia, artrose grave, osteófitos ou fratura prévia, obesidade que excede a mesa e **hiperparatireoidismo**, em que a perda é predominantemente cortical.\n\n**O substituto** é o **rádio a 33%**, a um terço do comprimento, predominantemente cortical, no **antebraço não dominante**, porque o lado dominante tem densidade extra pelo uso e superestimaria a massa óssea. O calcâneo serve para **rastreamento** com aparelhos periféricos, como ultrassom e DXA periférica, mas não para o diagnóstico densitométrico.\n\n**Na prova:** o sítio periférico substituto na DXA é o **rádio 33% do antebraço não dominante**.",
-  "correta": "**Antebraço não dominante.** A medida é feita no terço distal do rádio, o sítio de 33%.",
+  "conceito": "**A densitometria óssea (DXA).** É o exame que mede a **densidade mineral óssea** com raios X de dupla energia. É a base do diagnóstico da **osteoporose** e do acompanhamento do tratamento. O resultado é expresso pelo **T-score** (comparação com o adulto jovem do mesmo sexo):\n- normal: -1,0 ou mais;\n- osteopenia (baixa massa óssea): entre -1,0 e -2,5;\n- **osteoporose**: **-2,5 ou menos**.\n\n**Os sítios centrais (padrão).**\n- **Coluna lombar** (L1 a L4).\n- **Fêmur proximal**: colo do fêmur e fêmur total.\n\nO diagnóstico usa o **menor** T-score entre esses sítios.\n\n**Quando usar o antebraço.** O **terço distal do rádio** (rádio 33%) do antebraço **não dominante** é usado quando:\n- a **coluna** ou o **quadril** não podem ser medidos ou interpretados (artrodese, prótese, material de síntese, artrose ou deformidades importantes, como na escoliose grave);\n- o paciente é **obeso** além do limite de peso da mesa do aparelho;\n- há **hiperparatireoidismo**, que afeta mais o osso **cortical**, abundante no terço distal do rádio.\n\n**Por que o lado não dominante.** O braço **dominante** é mais usado e recebe mais carga, o que aumenta a sua densidade e poderia **subestimar** a osteoporose. Além disso, o lado dominante tem mais chance de ter sofrido fraturas anteriores.\n\n**E o calcâneo?** Os aparelhos periféricos de calcâneo (ultrassom quantitativo, DXA periférica) servem para **triagem**, mas não são usados para o **diagnóstico** pelos critérios da OMS nem para acompanhar o tratamento.\n\n**Os limites da DXA.**\n- Osteófitos, calcificações da aorta e fraturas vertebrais **aumentam falsamente** a densidade da coluna no idoso.\n- A DXA mede a **quantidade**, e não a **qualidade** do osso. O **FRAX** combina a densidade com os fatores de risco para estimar o risco de fratura.",
+  "correta": "**Correta: D (antebraço não dominante).** Quando a coluna lombar ou o fêmur proximal não podem ser usados (próteses, artrodeses, obesidade além do limite da mesa, hiperparatireoidismo), o sítio periférico de substituição é o **terço distal do rádio do antebraço não dominante**.",
   "incorretas": {
-   "A": "**Osso e lado errados.** O calcâneo não é sítio diagnóstico, e o lado dominante tem massa óssea aumentada.",
-   "B": "**Lado errado.** O antebraço dominante superestima a densidade pelo uso.",
-   "C": "**Só rastreamento.** O calcâneo serve a aparelhos periféricos de triagem, não substitui coluna e fêmur no diagnóstico."
+   "A": "O **calcâneo** é usado em aparelhos periféricos de **triagem**, e não como sítio de substituição para o diagnóstico na DXA.",
+   "B": "O antebraço é o sítio correto, mas o lado **dominante** tem densidade maior pelo uso, o que pode subestimar a osteoporose.",
+   "C": "O **calcâneo** não é o sítio de substituição na DXA diagnóstica, mesmo do lado não dominante."
   },
   "referencias": [
-   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 13"
+   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 13",
+   "International Society for Clinical Densitometry (ISCD). Official Positions: Adult. 2019."
   ],
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "osteometabolicas-0059": {
   "conceito": "**A posição da artrodese do punho** é de **10 a 20 graus de extensão**, **alinhada com o terceiro metacarpo**, com leve desvio ulnar aceitável; a extensão deixa os flexores em comprimento favorável e dá **maior força de preensão**. Quando a artrodese é bilateral, um punho fica em extensão e o outro mais **neutro ou em leve flexão**, para a higiene íntima. A técnica padrão usa placa dorsal de compressão do rádio ao terceiro metacarpo, com enxerto, e as indicações incluem artrose pancarpal, artrite reumatoide, sequelas de infecção, paralisias e falha de artrodeses parciais.\n\n**A fixação intramedular** é adequada ao osso osteoporótico e à pele fina da artrite reumatoide, em que a placa dorsal arrisca deiscência. Na técnica de Clayton, modificada por Millender e Nalebuff, o pino passa pelo **terceiro metacarpo** até o rádio. Na **alternativa retrógrada**, o pino entra através do carpo e sai pelo **segundo espaço intermetacarpal**, deixando a mão em **leve desvio ulnar**, o que é mecanicamente vantajoso contra a translação ulnar do carpo reumatoide. Na pseudartrose da terceira carpometacarpal, o pino migra **distalmente**.\n\n**Na prova:** pino retrógrado pelo segundo espaço deixa **leve desvio ulnar, mecanicamente vantajoso**.",
@@ -835,16 +835,19 @@
   "conferido": false
  },
  "osteometabolicas-0063": {
-  "conceito": "**A vitamina D vem da pele.** A radiação **UVB** converte o 7-desidrocolesterol em colecalciferol, e tudo que reduz essa conversão aumenta a deficiência. A prevalência é maior na **pele mais pigmentada**, porque a **melanina** funciona como filtro solar natural e exige várias vezes mais exposição para produzir a mesma quantidade, e no **sexo feminino**, pela menor exposição solar, pela maior proteção e pela maior longevidade nos levantamentos.\n\n**Outros fatores de risco** são a idade avançada, porque a pele produz menos, a **obesidade**, que sequestra a vitamina na gordura, a institucionalização com pouca exposição solar, a má absorção, as doenças renal e hepática e o uso de anticonvulsivantes.\n\n**Na prova:** hipovitaminose D é mais prevalente em **mulheres e em negros**.",
-  "correta": "**Feminino e em indivíduos negros.** Somam-se a menor exposição efetiva ao sol e o filtro da melanina.",
+  "conceito": "**A vitamina D.** É um hormônio que regula o **cálcio** e o **fosfato**. A principal fonte é a **produção na pele**, sob a luz ultravioleta B (UVB) do sol, e a dieta contribui pouco (peixes gordurosos, alimentos fortificados). A dosagem da **25-hidroxivitamina D** no sangue mede as reservas.\n\n**Os níveis (de forma geral).**\n- Deficiência: abaixo de **20 ng/mL**.\n- Insuficiência: 20 a 30 ng/mL.\n- Suficiência: 30 ng/mL ou mais (muitas diretrizes para pacientes com osteoporose).\n\n**Quem tem mais hipovitaminose D.**\n\n| Fator | Por quê |\n|---|---|\n| **Pele mais pigmentada** (indivíduos **negros**) | A **melanina** absorve o UVB e reduz a produção de vitamina D na pele |\n| **Sexo feminino** | Em várias populações, menos exposição solar, mais gordura corporal, gestação e amamentação |\n| **Idosos** | A pele produz menos vitamina D; menos sol; dieta pobre |\n| **Obesidade** | A vitamina D fica **sequestrada** no tecido gorduroso |\n| Pouca exposição ao sol | Institucionalizados, roupas que cobrem o corpo, latitudes altas, inverno, protetor solar |\n| Doenças | Má absorção (doença celíaca, cirurgia bariátrica), doença hepática e renal |\n| Medicamentos | Anticonvulsivantes, corticoides, rifampicina |\n\n**Por que a pele escura.** A melanina é um protetor solar natural. Para produzir a mesma quantidade de vitamina D, uma pessoa de pele mais escura precisa de **mais tempo de sol** que uma pessoa de pele clara. Em ambientes com pouca luz solar, os indivíduos negros têm níveis médios **mais baixos**. Curiosamente, isso não se traduz em mais osteoporose, porque eles têm **maior massa óssea**.\n\n**As consequências da hipovitaminose D.**\n- **Raquitismo** na criança e **osteomalácia** no adulto.\n- **Hiperparatireoidismo secundário**, com perda óssea e **osteoporose**.\n- **Fraqueza muscular** proximal e mais **quedas**.\n- Pior consolidação das fraturas (discutido).\n\n**A reposição.** Vitamina D3 (colecalciferol), com doses de ataque nas deficiências e manutenção de cerca de **800 a 2.000 UI por dia**, conforme o caso.",
+  "correta": "**Correta: A (feminino e em indivíduos negros).** A hipovitaminose D é mais prevalente no sexo **feminino** e em indivíduos **negros**, cuja melanina reduz a produção cutânea de vitamina D sob a luz ultravioleta B.",
   "incorretas": {
-   "B": "**Pele clara sintetiza mais.** Acerta o sexo, mas a pele caucasiana produz vitamina D com mais facilidade.",
-   "C": "**Sexo errado.** Acerta a pele pigmentada, mas o predomínio é feminino.",
-   "D": "**Erra os dois.** Nem o sexo masculino nem a pele clara são os grupos de maior prevalência."
+   "B": "O sexo feminino está certo, mas a pele **clara** (caucasianos) produz vitamina D com mais facilidade. A hipovitaminose é mais prevalente em indivíduos negros.",
+   "C": "A pele negra está certa, mas a hipovitaminose é mais prevalente no sexo **feminino**.",
+   "D": "Erra os dois fatores: a hipovitaminose D é mais prevalente no sexo feminino e na pele mais pigmentada."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
+   "Holick MF. Vitamin D deficiency. N Engl J Med. 2007;357(3):266-281."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "osteometabolicas-0064": {
   "conceito": "**O estrogênio também protege o homem.** Boa parte do efeito ósseo da testosterona vem da sua conversão em **estradiol** pela aromatase, e o estrogênio é o principal freio da reabsorção **também no homem**. No hipogonadismo, o freio some: o **RANKL sobe**, a osteoprotegerina cai e o **osteoclasto fica mais ativo**; a formação não acompanha, com **osteoblasto menos ativo**, e a **absorção intestinal de cálcio diminui**. O balanço fica negativo pelos dois lados.\n\n**Na prática**, o hipogonadismo é causa secundária **frequente** de osteoporose no homem, ao lado do corticoide e do álcool, e o **bloqueio androgênico** no câncer de próstata causa perda óssea importante, com indicação de avaliação e tratamento.\n\n**Na prova:** hipogonadismo masculino é **mais reabsorção, menos formação e menos cálcio absorvido**.",
