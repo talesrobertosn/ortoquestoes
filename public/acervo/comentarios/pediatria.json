@@ -8612,19 +8612,20 @@
   "conferido": false
  },
  "pediatria-0734": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "D",
-  "conceito": "**Côndilo lateral do úmero.** Fratura intra-articular banhada por líquido sinovial, que inibe a formação do coágulo e retarda a consolidação. A tração dos extensores também desvia o fragmento.\n\n**Na prova:** côndilo lateral consolida mal pelo líquido sinovial e pela tração dos extensores.",
-  "correta": "**Tem relação com a presença do líquido sinovial que inibe a formação de fibrina.** O líquido sinovial dificulta a consolidação.",
+  "conceito": "**Retardo de consolidação na fratura do côndilo lateral do úmero.** A fratura do côndilo lateral é uma das fraturas pediátricas com maior risco de **pseudartrose**, o que contrasta com a regra geral de que fraturas na criança consolidam rápido. Três fatores explicam essa tendência.\n\n**1. Líquido sinovial no foco.** O traço é **intra-articular**: o foco é banhado por **líquido sinovial**, que contém fibrinolisinas e dilui o hematoma, **inibindo a formação de fibrina** e do coágulo que inicia a consolidação. Por isso, mesmo fraturas pouco desviadas podem consolidar devagar. Jakob e colaboradores mostraram, em séries clínicas, a tendência dessas fraturas a desviar e a não consolidar quando tratadas sem fixação.\n\n**2. Tração muscular.** O fragmento recebe a origem dos **músculos extensores** do antebraço (extensor radial longo e curto do carpo, extensor comum) e do braquiorradial, que o puxam e rodam, afastando os fragmentos e deixando o foco instável.\n\n**3. Vascularização precária** do fragmento, que depende de vasos posteriores e pode ser prejudicada pelo trauma ou pela cirurgia.\n\n**Implicações.**\n\n| Situação | Conduta |\n|---|---|\n| Desvio menor que 2 mm, traço estável | Gesso com controle radiográfico semanal |\n| Desvio maior que 2 mm ou instabilidade | Redução aberta (ou fechada) e fixação com fios |\n| Consolidação lenta | Prolongar a imobilização; considerar fixação |\n| Pseudartrose estabelecida | Fixação com enxerto, se a anatomia permitir |\n\n**Consequências da pseudartrose.** Cúbito valgo progressivo e paralisia ulnar tardia.\n\n> Côndilo lateral consolida devagar: líquido sinovial inibe o coágulo, e os extensores tracionam o fragmento.",
+  "correta": "**D: tem relação com a presença do líquido sinovial que inibe a formação de fibrina (resposta pela bibliografia).** O traço intra-articular expõe o foco ao líquido sinovial, que dilui o hematoma e inibe a formação do coágulo de fibrina, retardando a consolidação.",
   "incorretas": {
-   "A": "**É provocado pela tração dos músculos flexores do antebraço.** Os extensores, não os flexores, se inserem no fragmento.",
-   "B": "**Ocorre com maior freqüência nos casos tratados cirurgicamente.** O retardo é mais comum no tratamento conservador.",
-   "C": "**Geralmente é devido à interposição da cápsula articular.** A interposição capsular não é a causa usual."
+   "A": "**Tração dos flexores** está errado: o fragmento do côndilo lateral recebe a origem dos **extensores**, que são os que o tracionam.",
+   "B": "**Mais frequente nos casos operados** é falso: a fixação estabiliza e aproxima os fragmentos, reduzindo o retardo; a pseudartrose é mais comum nas fraturas desviadas tratadas sem fixação.",
+   "C": "**Interposição da cápsula** não é a causa habitual; o mecanismo principal é o líquido sinovial associado à instabilidade pela tração muscular."
   },
   "referencias": [
-   "Rockwood C.A. et al. Fractures. Philadelphia: Lippincott. Fraturas em Criança, 6ª ed., p. 601."
+   "Rockwood C.A. et al. Fractures. Philadelphia: Lippincott. Fraturas em Criança, 6ª ed., p. 601.",
+   "Jakob R, Fowles JV, Rang M, Kassab MT. Observations concerning fractures of the lateral humeral condyle in children. J Bone Joint Surg Br. 1975;57(4):430-436."
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "D",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0735": {

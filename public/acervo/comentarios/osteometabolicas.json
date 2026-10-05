@@ -1008,19 +1008,20 @@
   "formato": "corrido"
  },
  "osteometabolicas-0081": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "C",
-  "conceito": "**Espondilite anquilosante.** Acomete mais homens jovens e começa pelas sacroilíacas, subindo de caudal para cranial. O HLA-B27 está presente em mais de 90% dos casos, e a ossificação é nas margens (sindesmófitos), não no corpo.\n\n**Na prova:** homem jovem, sacroiliíte, HLA-B27, coluna em bambu.",
-  "correta": "**Está associada com o antígeno HLA-B27, na grande maioria dos casos.** A associação com HLA-B27 ocorre em mais de 90% dos casos.",
+  "conceito": "**Espondilite anquilosante.** É a espondiloartrite axial clássica: doença inflamatória crônica que acomete as **articulações sacroilíacas** e a **coluna**, com tendência à **ossificação** das inserções ligamentares (**entesite**) e à anquilose.\n\n**Perfil.**\n- **Homens jovens** (início entre 15 e 30 anos; proporção de 2 a 3 homens para cada mulher).\n- **HLA-B27** positivo em cerca de **90% dos casos** (a prevalência na população geral é de cerca de 8%, e a maioria dos portadores não desenvolve a doença).\n- **Dor lombar inflamatória**: início insidioso antes dos 40 anos, piora com repouso e à noite, rigidez matinal prolongada, **melhora com exercício**.\n\n**Progressão.** Começa nas **sacroilíacas** (sacroiliíte bilateral) e **sobe** pela coluna, de **caudal para cranial** (lombar, torácica, cervical).\n\n**Achados radiográficos.**\n- Sacroiliíte (erosões, esclerose, fusão).\n- **Sindesmófitos** marginais finos e verticais: ossificação das camadas externas do anel fibroso e das entesis nas **margens** dos corpos vertebrais (não deposição óssea dentro do corpo).\n- Vértebras \"quadradas\" e esclerose dos cantos (sinal de Romanus).\n- Fusão completa: **coluna em bambu**.\n\n**Implicações ortopédicas.** A coluna anquilosada é **rígida e osteoporótica**: traumas mínimos causam **fraturas instáveis** (frequentemente cervicais baixas, que atravessam todas as colunas), com alto risco de lesão neurológica. Deformidade cifótica grave pode exigir osteotomia de subtração pedicular. Comprometimento do quadril e uveíte anterior são extra-axiais frequentes.\n\n**Tratamento.** Exercícios, anti-inflamatórios não esteroidais e, na doença ativa refratária, anti-TNF ou anti-IL-17 (Braun e Sieper).\n\n> Espondilite anquilosante: homem jovem, sacroiliíte, HLA-B27 em cerca de 90%, ascende de caudal para cranial, sindesmófitos.",
+  "correta": "**C: está associada com o antígeno HLA-B27, na grande maioria dos casos (resposta pela bibliografia).** Cerca de 90% dos pacientes com espondilite anquilosante são HLA-B27 positivos, associação genética mais forte entre as doenças reumáticas.",
   "incorretas": {
-   "A": "**Afeta as mulheres com mais freqüência, geralmente nas segunda e terceira décadas de vida.** É mais comum em homens.",
-   "B": "**Progride atingindo vértebras de situação mais cefálica, em direção às vértebras caudais.** Progride de caudal para cranial.",
-   "D": "**Provoca deposição óssea no corpo vertebral.** A ossificação é nos ligamentos e ânulo (sindesmófitos)."
+   "A": "**Mais frequente em mulheres** é falso: predomina em homens jovens.",
+   "B": "**Progressão cefalocaudal** é falsa: a doença começa nas sacroilíacas e sobe de caudal para cranial.",
+   "D": "**Deposição óssea no corpo vertebral** não descreve a doença: a ossificação ocorre nas margens (sindesmófitos, a partir do anel fibroso e das entesis), não dentro do corpo."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 2099-2100 (português)."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 2099-2100 (português).",
+   "Braun J, Sieper J. Ankylosing spondylitis. Lancet. 2007;369(9570):1379-1390."
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "C",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "osteometabolicas-0082": {
