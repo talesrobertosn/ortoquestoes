@@ -3416,19 +3416,20 @@
   "conferido": false
  },
  "tumores-0332": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": "**Neurofibromatose tipo 1.** Os neurofibromas são o marco da doença; o schwannoma (neurilemoma) é raro na NF1 e típico da NF2.\n\n**Na prova:** NF1 é neurofibroma; NF2 é schwannoma.",
-  "correta": "**Rara e freqüente.** Neurilemoma raro e neurofibroma frequente.",
+  "conceito": "**Neurofibromatose tipo 1 (doença de von Recklinghausen).** É uma doença genética autossômica dominante (gene **NF1**, cromossomo 17, que codifica a neurofibromina), com cerca de metade dos casos por mutação nova. Incidência de cerca de 1 em 3.000.\n\n**Critérios diagnósticos (dois ou mais).**\n- Seis ou mais manchas **café com leite** (acima de 5 mm antes da puberdade, acima de 15 mm depois).\n- Dois ou mais **neurofibromas** ou um **neurofibroma plexiforme**.\n- Efélides (sardas) axilares ou inguinais.\n- Glioma óptico.\n- Dois ou mais nódulos de **Lisch** (hamartomas da íris).\n- Lesão óssea característica (displasia do esfenoide, **pseudoartrose congênita da tíbia** ou adelgaçamento cortical de osso longo).\n- Parente de primeiro grau afetado.\n\n**Tumores da bainha nervosa na NF1 e na NF2.**\n\n| Tumor | NF1 | NF2 |\n|---|---|---|\n| **Neurofibroma** (cutâneo, plexiforme) | **Muito frequente, marca da doença** | Menos comum |\n| **Schwannoma (neurilemoma)** | **Raro** | **Típico**: schwannomas vestibulares bilaterais |\n| Tumor maligno da bainha do nervo periférico | Risco de cerca de 8% a 13% ao longo da vida, a partir de neurofibromas plexiformes | Raro |\n\n**Manifestações ortopédicas da NF1.**\n- **Escoliose** (distrófica, com curvas curtas e angulares, costelas em lápis, erosões vertebrais, rápida progressão) ou não distrófica (semelhante à idiopática).\n- **Pseudoartrose congênita da tíbia** (arqueamento anterolateral).\n- Hipertrofia de membros, displasias ósseas, fibromas não ossificantes múltiplos.\n\n> NF1: neurofibromas frequentes; schwannomas (neurilemomas) raros, típicos da NF2.",
+  "correta": "**A: rara e freqüente (resposta pela bibliografia).** Na neurofibromatose tipo 1, o neurilemoma (schwannoma) é raro, enquanto o neurofibroma é a lesão característica e muito frequente. O schwannoma é o tumor típico da neurofibromatose tipo 2, com schwannomas vestibulares bilaterais.",
   "incorretas": {
-   "B": "**Freqüente e rara.** Inverte.",
-   "C": "**Rara e rara.** O neurofibroma é frequente.",
-   "D": "**Freqüente e freqüente.** O neurilemoma é raro na NF1."
+   "B": "**Frequente e rara** inverte a relação: na NF1 o neurofibroma é a regra e o schwannoma, a exceção.",
+   "C": "**Rara e rara** está errado porque os neurofibromas são a marca da NF1, presentes em quase todos os pacientes adultos.",
+   "D": "**Frequente e frequente** está errado porque o schwannoma não é frequente na NF1; é característico da NF2."
   },
   "referencias": [
-   "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. 6ª ed., vol 1, p. 543"
+   "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. 6ª ed., vol 1, p. 543",
+   "Ferner RE. Neurofibromatosis 1 and neurofibromatosis 2: a twenty first century perspective. Lancet Neurol. 2007;6(4):340-351."
   ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "A",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "tumores-0333": {
@@ -3465,51 +3466,54 @@
   "conferido": false
  },
  "tumores-0335": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "C",
-  "conceito": "**Tumores epifisários.** Na criança, o condroblastoma é o mais comum no centro de ossificação secundário; no adulto, o tumor de células gigantes.\n\n**Na prova:** epífise na criança é condroblastoma.",
-  "correta": "**Condroblastoma.** É o mais comum na epífise imatura.",
+  "conceito": "**Condroblastoma.** É um tumor cartilaginoso benigno raro (cerca de 1% dos tumores ósseos), com uma particularidade marcante: nasce no **centro de ossificação secundário**, ou seja, na **epífise** (ou nas apófises, como o trocânter maior e a tuberosidade maior do úmero) de ossos longos de **crianças e adolescentes**, com a fise ainda aberta.\n\n**Características.**\n- **Idade**: 10 a 20 anos; predomínio masculino.\n- **Locais**: fêmur distal, tíbia proximal, úmero proximal (o clássico), fêmur proximal (cabeça e trocânter maior), calcâneo e tálus.\n- **Clínica**: dor articular, derrame, limitação do movimento, às vezes claudicação; pode simular doença articular.\n- **Radiografia**: lesão **lítica**, bem delimitada, com **halo esclerótico** fino, geralmente excêntrica, com **calcificações condroides** em parte dos casos; pode cruzar a fise para a metáfise.\n- **Ressonância**: **edema extenso** do osso e das partes moles ao redor, desproporcional ao tamanho da lesão.\n- **Histologia**: condroblastos poligonais com núcleo em \"grão de café\", calcificação em \"tela de galinheiro\" (chicken-wire), células gigantes.\n\n**Comportamento.** Benigno ativo ou agressivo (Enneking 2 ou 3), com recidiva de 10% a 20% após curetagem; raríssimas metástases pulmonares.\n\n**Tratamento.** **Curetagem cuidadosa** com adjuvantes e enxerto, protegendo a fise e a cartilagem articular; ablação por radiofrequência em lesões pequenas e de acesso difícil.\n\n**Diagnóstico diferencial das lesões epifisárias.**\n\n| Idade | Mais provável |\n|---|---|\n| Criança e adolescente | **Condroblastoma**, infecção |\n| Adulto | Tumor de células gigantes, geodo, condrossarcoma de células claras |\n\n> Tumor do centro de ossificação secundário na criança: condroblastoma.",
+  "correta": "**C: condroblastoma (resposta pela bibliografia).** O condroblastoma é a lesão neoplásica que mais frequentemente acomete o centro de ossificação secundário (epífise) dos ossos longos em crianças e adolescentes. Aparece como lesão lítica com halo esclerótico, às vezes com calcificações condroides e edema extenso na ressonância.",
   "incorretas": {
-   "A": "**Osteocondroma.** É metafisário.",
-   "B": "**Fibroma condromixóide.** É metafisário.",
-   "D": "**Encondroma.** É metafisário ou diafisário."
+   "A": "**O osteocondroma** nasce da **metáfise**, próximo à fise, crescendo para longe da articulação; não acomete o centro de ossificação secundário.",
+   "B": "**O fibroma condromixoide** é raro e geralmente **metafisário** e excêntrico, com aspecto lítico lobulado, mais comum na tíbia proximal.",
+   "D": "**O encondroma** é central, metafisário ou diafisário, muito comum nos ossos tubulares da mão; raramente é epifisário."
   },
   "referencias": [
-   "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. 6 ª ed., p. 519"
+   "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. 6 ª ed., p. 519",
+   "Springfield DS, Capanna R, Gherlinzoni F, Picci P, Campanacci M. Chondroblastoma: a review of seventy cases. J Bone Joint Surg Am. 1985;67(5):748-755."
   ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "C",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "tumores-0336": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "D",
-  "conceito": "**Sarcomas de partes moles na criança.** O rabdomiossarcoma é o mais comum em menores de 15 anos.\n\n**Na prova:** criança, sarcoma de partes moles, rabdomiossarcoma.",
-  "correta": "**Rabdomiossarcoma.** É o mais comum nessa faixa.",
+  "conceito": "**Sarcomas de partes moles na criança.** São tumores malignos raros, mas representam cerca de 7% dos cânceres pediátricos. Dividem-se em rabdomiossarcoma e sarcomas não rabdomiossarcoma.\n\n**Rabdomiossarcoma.** É o **sarcoma de partes moles mais comum em menores de 15 anos** (cerca de metade dos casos). Origina-se de células mesenquimais com diferenciação muscular esquelética.\n- **Localizações**: cabeça e pescoço (incluindo órbita e parameníngeo), trato geniturinário e **extremidades**.\n- **Tipos histológicos**: **embrionário** (o mais comum, crianças pequenas, cabeça e pescoço, geniturinário, melhor prognóstico) e **alveolar** (adolescentes, **extremidades**, translocações PAX3/PAX7-FOXO1, pior prognóstico).\n- **Tratamento**: multimodal (quimioterapia, cirurgia, radioterapia), conduzido por protocolos de oncologia pediátrica.\n\n**Sarcomas não rabdomiossarcoma.** Mais comuns em adolescentes e semelhantes aos dos adultos:\n- **Sarcoma sinovial**: o mais comum entre eles em adolescentes e adultos jovens; perto de articulações (joelho), calcificações em parte dos casos, translocação t(X;18).\n- Tumor maligno da bainha do nervo periférico (neurofibrossarcoma), muitas vezes associado à neurofibromatose tipo 1.\n- Fibrossarcoma infantil (em lactentes, com bom prognóstico).\n- Sarcoma de Ewing extraesquelético.\n\n**Abordagem ortopédica.** Massa de partes moles profunda, maior que 5 cm, em crescimento ou dolorosa exige ressonância e **biópsia planejada** por equipe especializada antes de qualquer ressecção (evitar \"ressecções acidentais\" que contaminam o campo).\n\n> Sarcoma de partes moles mais comum abaixo de 15 anos: rabdomiossarcoma.",
+  "correta": "**D: rabdomiossarcoma (resposta pela bibliografia).** O rabdomiossarcoma é o tumor maligno primário de partes moles mais comum em crianças com menos de 15 anos, responsável por cerca de metade dos sarcomas de partes moles pediátricos. A forma alveolar é a mais frequente nas extremidades.",
   "incorretas": {
-   "A": "**Neurofibrossarcoma.** Menos comum.",
-   "B": "**EWING extra-esquelético.** Menos comum.",
-   "C": "**Sinoviossarcoma.** Mais comum em adolescentes e adultos jovens."
+   "A": "**O neurofibrossarcoma** (tumor maligno da bainha do nervo periférico) é raro em crianças e geralmente associado à neurofibromatose tipo 1.",
+   "B": "**O sarcoma de Ewing extraesquelético** ocorre, mas é bem menos frequente que o rabdomiossarcoma em menores de 15 anos.",
+   "C": "**O sarcoma sinovial** é o sarcoma não rabdomiossarcoma mais comum em adolescentes e adultos jovens, mas fica atrás do rabdomiossarcoma nas crianças."
   },
   "referencias": [
-   "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. 6 ª ed., vol. 1, p. 535."
+   "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. 6 ª ed., vol. 1, p. 535.",
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Tumores de partes moles."
   ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "D",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "tumores-0337": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": "**Cisto ósseo simples.** O líquido contém prostaglandina E2, interleucinas e enzimas que estimulam a reabsorção óssea.\n\n**Na prova:** cisto simples rico em prostaglandina E.",
-  "correta": "**PGE (prostaglandina E).** A PGE está elevada.",
+  "conceito": "**Cisto ósseo unicameral (simples): fisiopatologia.** É uma cavidade cheia de líquido seroso, revestida por membrana fibrosa fina, típica da metáfise proximal do úmero e do fêmur em crianças. A causa não é totalmente conhecida, mas as teorias mais aceitas envolvem uma **obstrução da drenagem venosa** da metáfise em crescimento, com acúmulo de líquido intersticial e aumento da pressão dentro do osso.\n\n**O conteúdo do cisto.** Estudos do líquido mostram:\n- **Prostaglandina E2 (PGE2)** em níveis elevados.\n- Interleucinas (como IL-1 e IL-6), enzimas proteolíticas e **metaloproteinases**.\n- Nitratos, radicais livres.\n\nEssas substâncias **estimulam os osteoclastos** e a **reabsorção óssea**, o que explica o crescimento do cisto e o adelgaçamento da cortical.\n\n**Implicação terapêutica.** A ação dos **corticoides** injetados no cisto (técnica de Scaglietti, com metilprednisolona) seria explicada, em parte, pela **inibição das prostaglandinas** e da inflamação na membrana. Shindell e colaboradores mostraram queda dos níveis de prostaglandina após a injeção de corticoide. Outras técnicas (medula óssea, matriz óssea desmineralizada, descompressão com cânulas ou parafusos canulados) buscam estimular a cicatrização ou drenar o cisto continuamente.\n\n**Fatores de crescimento ósseos.** A BMP, o IGF e o TGF estão ligados à **formação** óssea e não são os marcadores característicos do líquido do cisto simples.\n\n> Líquido do cisto ósseo simples: rico em prostaglandina E2, que estimula a reabsorção óssea.",
+  "correta": "**A: PGE (prostaglandina E) (resposta pela bibliografia).** O líquido do cisto ósseo unicameral contém níveis elevados de prostaglandina E2, além de interleucinas e enzimas, substâncias que estimulam os osteoclastos e a reabsorção óssea. A injeção de corticoide reduz esses níveis, o que ajuda a explicar a técnica de Scaglietti.",
   "incorretas": {
-   "B": "**BMP (bone morphogenetic protein).** Não é o achado.",
-   "C": "**IGF (insulin-like growth factor).** Não é o achado.",
-   "D": "**TGF (tissue growth factor).** Não é o achado."
+   "B": "**A BMP (proteína morfogenética óssea)** é um fator osteoindutor ligado à formação óssea; não é o componente característico do líquido do cisto.",
+   "C": "**O IGF (fator de crescimento semelhante à insulina)** participa do crescimento e da formação óssea, mas não é o marcador típico do conteúdo do cisto simples.",
+   "D": "**O TGF (fator transformador de crescimento)** está ligado à formação de matriz e ao reparo, não à reabsorção que caracteriza o cisto."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole.10ª ed., p. 796."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole.10ª ed., p. 796.",
+   "Shindell R, Huurman WW, Lippiello L, Connolly JF. Prostaglandin levels in unicameral bone cysts treated by intralesional steroid injection. J Pediatr Orthop. 1989;9(5):516-519."
   ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "A",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "tumores-0338": {

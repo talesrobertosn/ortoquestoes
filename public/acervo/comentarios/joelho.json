@@ -3524,19 +3524,20 @@
   "conferido": false
  },
  "joelho-0291": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "C",
-  "conceito": "**Sinal do cruzamento.** No perfil, a linha do fundo da tróclea cruza a borda dos côndilos: indica tróclea rasa, displásica.\n\n**Na prova:** sinal do cruzamento é displasia da tróclea.",
-  "correta": "**Displasia da tróclea.** É o sinal de Dejour.",
+  "conceito": "**Displasia da tróclea femoral e o sinal do cruzamento.** A tróclea (sulco femoral) guia a patela durante a flexão. Quando é rasa ou plana, a patela tem pouca contenção óssea e fica instável. A displasia troclear é o fator anatômico mais importante na instabilidade patelar, presente em cerca de 85% dos pacientes com luxação recidivante (Dejour).\n\n**Sinal do cruzamento (crossing sign).** Na radiografia em **perfil estrito** do joelho (com os côndilos posteriores sobrepostos), a linha do **fundo da tróclea** normalmente fica atrás das bordas anteriores dos côndilos. Na tróclea displásica, o fundo da tróclea **cruza** a linha da borda anterior do côndilo lateral: nesse ponto, a tróclea fica no mesmo nível dos côndilos, ou seja, **plana**.\n\n**Outros sinais radiográficos (Dejour).**\n- **Esporão supratroclear** (bump): saliência na parte superior da tróclea.\n- **Duplo contorno**: a borda do côndilo medial hipoplásico aparece abaixo da lateral.\n- **Saliência troclear** (trochlear bump) acima de 3 mm.\n\n**Classificação de Dejour da displasia troclear.**\n\n| Tipo | Achado |\n|---|---|\n| A | Sinal do cruzamento, tróclea rasa mas simétrica |\n| B | Cruzamento e esporão supratroclear; tróclea plana |\n| C | Cruzamento e duplo contorno; faceta lateral convexa, medial hipoplásica |\n| D | Todos: cruzamento, esporão, duplo contorno e penhasco (cliff) |\n\n**Tratamento.** Reconstrução do ligamento patelofemoral medial na maioria; **trocleoplastia** nas displasias graves (tipos B e D) com instabilidade persistente.\n\n> Sinal do cruzamento no perfil: displasia da tróclea.",
+  "correta": "**C: displasia da tróclea (resposta pela bibliografia).** No perfil estrito do joelho, o sinal do cruzamento aparece quando a linha do fundo da tróclea cruza a borda anterior do côndilo lateral, indicando uma tróclea plana ou rasa. É o principal sinal radiográfico da displasia troclear, fator fundamental na instabilidade patelar.",
   "incorretas": {
-   "A": "**Patela alta.** Medida por Insall ou Caton.",
-   "B": "**Hipoplasia do côndilo lateral.** Não é o sinal.",
-   "D": "**Displasia da patela.** Avaliada no axial."
+   "A": "**A patela alta** é avaliada por índices de altura patelar (Insall-Salvati, Caton-Deschamps, Blackburne-Peel), e não pelo sinal do cruzamento.",
+   "B": "**A hipoplasia do côndilo lateral** é uma característica do joelho valgo; a displasia troclear frequentemente envolve hipoplasia do côndilo **medial** (duplo contorno), mas o sinal do cruzamento se refere ao fundo da tróclea.",
+   "D": "**A displasia da patela** (classificação de Wiberg, por exemplo) é avaliada na incidência axial, pela forma das facetas patelares."
   },
   "referencias": [
-   "Tratado de Ortopedia - SBOT. Roca. 2007. p. 423."
+   "Tratado de Ortopedia - SBOT. Roca. 2007. p. 423.",
+   "Dejour H, Walch G, Nove-Josserand L, Guier C. Factors of patellar instability: an anatomic radiographic study. Knee Surg Sports Traumatol Arthrosc. 1994;2(1):19-26."
   ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "C",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "joelho-0292": {

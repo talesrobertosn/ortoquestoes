@@ -1056,19 +1056,20 @@
   "conferido": false
  },
  "osteometabolicas-0084": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": "**Paget e sangramento.** A fase lítica é hipervascular e sangra muito na cirurgia; na esclerótica, o sangramento é menor.\n\n**Na prova:** operar Paget na fase lítica sangra mais; considerar bisfosfonato antes.",
-  "correta": "**Lítica.** A hipervascularização é máxima na fase lítica.",
+  "conceito": "**Doença de Paget óssea.** É um distúrbio focal do remodelamento ósseo, com osteoclastos grandes, multinucleados e hiperativos, seguidos de formação óssea desorganizada. O osso fica aumentado de volume, mas mecanicamente fraco e muito **vascularizado**. Acomete pessoas acima de 50 anos; locais comuns: pelve, coluna, crânio, fêmur e tíbia.\n\n**Fases.**\n\n| Fase | Características | Vascularização |\n|---|---|---|\n| **Lítica (osteolítica)** | Reabsorção intensa; lesões em \"chama de vela\" nos ossos longos, osteoporose circunscrita no crânio | **Máxima**, osso muito vascularizado |\n| Mista | Reabsorção e formação simultâneas | Alta |\n| Blástica (esclerótica) | Osso espesso, denso, desorganizado | Menor |\n\n**Repercussões cirúrgicas.**\n- **Sangramento intraoperatório**: muito maior na **fase lítica** (e ativa), pela hipervascularização. Recomenda-se tratar com **bisfosfonatos** (por exemplo, zoledronato) por algumas semanas a meses antes de cirurgias eletivas, para reduzir a atividade e o sangramento.\n- Deformidades (encurvamento do fêmur e da tíbia) dificultam hastes e próteses; podem exigir osteotomias.\n- Osso esclerótico dificulta a fresagem e o preparo do canal.\n- Maior risco de ossificação heterotópica e de pseudoartrose.\n\n**Complicações da doença.** Dor óssea, deformidades, fraturas (fissuras na cortical convexa, fraturas transversas), artrose secundária, surdez, compressões neurológicas, insuficiência cardíaca de alto débito (raro), e **transformação sarcomatosa** (osteossarcoma) em menos de 1%.\n\n**Laboratório.** Fosfatase alcalina elevada (marcador de atividade), cálcio normal.\n\n> Paget: o sangramento cirúrgico é maior na fase lítica, muito vascularizada; tratar antes com bisfosfonato.",
+  "correta": "**B: lítica (resposta pela bibliografia).** Na fase lítica da doença de Paget, a reabsorção é intensa e o osso é extremamente vascularizado, o que aumenta muito o sangramento durante a cirurgia. Por isso, recomenda-se tratar a doença com bisfosfonatos antes de procedimentos eletivos.",
   "incorretas": {
-   "A": "**Pré-clinica.** Não há atividade.",
-   "C": "**Mista.** Ainda sangra, mas menos.",
-   "D": "**Blástica.** Menos vascular."
+   "A": "**Pré-clínica** não é uma fase reconhecida em que haja hipervascularização significativa; a cirurgia não é indicada nessa situação.",
+   "C": "**A fase mista** também tem vascularização elevada, mas menor que a fase lítica.",
+   "D": "**A fase blástica (esclerótica)** é a menos vascularizada; o osso é denso e o sangramento é menor, embora o preparo ósseo seja mais difícil."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 11ª ed., pg. 873."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 11ª ed., pg. 873.",
+   "Ralston SH. Paget's disease of bone. N Engl J Med. 2013;368(7):644-650."
   ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "B",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "osteometabolicas-0085": {
