@@ -1005,14 +1005,18 @@
   "conferido": false
  },
  "mao-0087": {
-  "conceito": "### Teste de Phalen\n- Dorsos das mãos encostados, **punhos em flexão máxima**, cotovelos afastados.\n- Tempo: ==60 segundos==.\n- Positivo: parestesia no território do mediano.\n- Quanto **mais rápido** surge o sintoma, maior tende a ser a compressão.\n\n### Tempos dos testes\n| Teste | Tempo |\n|---|---|\n| ==Phalen== | ==60 s== |\n| Phalen reverso (punhos em extensão) | 60 s |\n| ==Durkan== (compressão carpal) | ==30 s== |\n| elevação da mão | 2 minutos |\n| flexão do cotovelo (túnel cubital) | 60 s |\n| Roos (desfiladeiro) | 3 minutos |\n\n### Por que 60 segundos\n- Casos iniciais levam quase um minuto para manifestar parestesia.\n- Tempos menores geram **falso negativo**.\n\n> **Na prova:** Phalen = ==60 segundos==.",
-  "correta": "**60 segundos.**\n- É o tempo padrão do Phalen.\n- Tempos menores perdem casos iniciais.",
+  "conceito": "**O teste da figura.** As mãos estão unidas pelo dorso, com os **punhos em flexão máxima** e os cotovelos afastados, os antebraços na horizontal. É o **teste de Phalen**, descrito por George Phalen para a síndrome do túnel do carpo.\n\n**O mecanismo.** O túnel do carpo é um canal inextensível: o assoalho e as paredes são os ossos do carpo, e o teto é o retináculo dos flexores (ligamento transverso do carpo). Dentro dele passam o nervo mediano e nove tendões flexores. Com o punho em flexão:\n- a **pressão dentro do túnel aumenta** várias vezes em relação à posição neutra;\n- o retináculo e os tendões flexores comprimem o nervo contra a borda proximal do retináculo.\n\nUm nervo já comprometido, com microcirculação prejudicada, responde a esse aumento de pressão com **parestesia** no seu território (polegar, indicador, médio e metade radial do anular).\n\n**A técnica.** Manter a posição por **60 segundos**. O teste é positivo se surgirem dormência ou formigamento no território do mediano. Quanto mais cedo surge o sintoma, maior tende a ser a compressão.\n\n**Tempos dos testes provocativos do túnel do carpo.**\n\n| Teste | Manobra | Tempo |\n|---|---|---|\n| **Phalen** | Flexão máxima dos punhos | **60 s** |\n| Phalen reverso | Extensão máxima dos punhos (mãos em posição de prece) | 60 s |\n| Durkan | Compressão direta sobre o túnel com o polegar | 30 s |\n| Tinel | Percussão sobre o mediano no punho | Imediato |\n\n**Valor diagnóstico.** O Phalen tem sensibilidade e especificidade moderadas, e o teste de compressão de Durkan costuma ser o mais sensível. Nenhum teste isolado basta: o diagnóstico é clínico, apoiado na eletroneuromiografia nos casos duvidosos ou antes da cirurgia.",
+  "correta": "**Correta: D (60 segundos).** O teste de Phalen deve ser mantido por 60 segundos. A flexão máxima do punho eleva a pressão no túnel do carpo, e o surgimento de parestesia no território do mediano nesse intervalo indica teste positivo.",
   "incorretas": {
-   "A": "**Curto demais.**\n- Muitos pacientes só referem parestesia depois de 15 s.",
-   "B": "**Também curto.**\n- 20 s ainda produz falso negativo.",
-   "C": "**Tempo do Durkan.**\n- 30 s é o tempo da compressão carpal."
+   "A": "**15 segundos** é pouco tempo; muitos pacientes com compressão leve ou moderada só desenvolvem sintomas depois, e o teste seria falsamente negativo.",
+   "B": "**20 segundos** também é insuficiente pelo mesmo motivo. Não corresponde à descrição padronizada do teste.",
+   "C": "**30 segundos** é o tempo do **teste de compressão de Durkan**, não do Phalen."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Phalen GS. The carpal-tunnel syndrome. Seventeen years' experience in diagnosis and treatment of six hundred fifty-four hands. J Bone Joint Surg Am. 1966;48(2):211-228.",
+   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0088": {

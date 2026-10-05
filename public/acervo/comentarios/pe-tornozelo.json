@@ -2535,17 +2535,18 @@
   "conferido": false
  },
  "pe-tornozelo-0251": {
-  "conceito": "### Pé e tornozelo no ciclo\n| Fase | Subtalar | Tibial posterior | Tornozelo |\n|---|---|---|---|\n| contato inicial | leve inversão | | neutro, dorsiflexores excêntricos |\n| resposta à carga | ==eversão== (pé flexível, amortece) | ==excêntrico== (freia a eversão) | flexão plantar |\n| ==apoio médio== | ==caminha para inversão== | ==excêntrico/ativo== | tíbia avança; sóleo excêntrico |\n| apoio terminal | ==inversão== (pé rígido, alavanca) | concêntrico | calcanhar sobe |\n\n### Por que importa\n- Eversão desbloqueia a mediotarsal (pé flexível); inversão bloqueia (alavanca rígida para impulsão).\n- Insuficiência do tibial posterior: pé plano adquirido, sem inversão no apoio terminal.\n\n> **Na prova:** apoio médio = ==tibial posterior excêntrico e inversão da subtalar==",
-  "correta": "**TP excêntrico e inversão.**\n- TP controla o pé e inicia o bloqueio.\n- Pé passa de flexível a rígido.",
+  "conceito": "**O pé muda de função durante o apoio.** No início do apoio, o pé precisa ser **flexível** para amortecer o impacto e se adaptar ao solo; no final, precisa ser uma **alavanca rígida** para a propulsão. Quem controla essa transformação é a articulação **subtalar**, e o principal motor muscular dessa transição é o **tibial posterior**.\n\n**O mecanismo da articulação transversa do tarso.** Quando a subtalar está em **eversão**, os eixos das articulações talonavicular e calcaneocuboide ficam **paralelos**, e o médio-pé fica móvel. Quando a subtalar vai para **inversão**, os eixos se **cruzam** e o médio-pé trava. Assim, o retropé funciona como uma chave que destrava e trava o pé.\n\n| Fase | Subtalar | Tibial posterior |\n|---|---|---|\n| Contato inicial | Leve inversão | Pouco ativo |\n| Resposta à carga | **Eversão** rápida (pé flexível, amortece) | **Excêntrico**, freando a eversão |\n| **Apoio médio** | Sai da eversão e caminha para **inversão** | **Ativo**, controlando o retropé e iniciando a inversão |\n| Apoio terminal | **Inversão** (pé rígido para a propulsão) | Concêntrico, sustentando o arco |\n\n**No apoio médio**, a tíbia avança sobre o pé, roda externamente e leva o retropé para inversão. O tibial posterior permanece ativo, primeiro desacelerando a eversão residual e o colapso do arco (componente excêntrico) e depois contribuindo para a inversão subtalar.\n\n**Correlação clínica: a disfunção do tibial posterior.** Quando o tendão degenera, a eversão da resposta à carga não é freada e o retropé não volta para inversão. O resultado é o **pé plano adquirido do adulto**: valgo do retropé, abdução do antepé (sinal de \"muitos dedos\") e incapacidade de elevar-se na ponta de um pé só com inversão do calcanhar.",
+  "correta": "**Correta: D.** No apoio médio, o tibial posterior está ativo com componente **excêntrico**, controlando a pronação e o colapso do arco, e a subtalar caminha da eversão para a **inversão**, preparando o pé para se tornar uma alavanca rígida.",
   "incorretas": {
-   "A": "**TP ativo.**\n- Não relaxa no apoio médio.",
-   "B": "**TP ativo.**\n- Contração excêntrica.",
-   "C": "**Eversão.**\n- Típica da resposta à carga."
+   "A": "O tibial posterior **não relaxa** no apoio médio, e a subtalar está saindo da eversão. Relaxamento com eversão é o que ocorre na disfunção do tibial posterior, não na marcha normal.",
+   "B": "A **inversão** da subtalar está correta, mas o tibial posterior está ativo, e não relaxado, nessa fase.",
+   "C": "A ação excêntrica do tibial posterior está correta, mas a **eversão** caracteriza a resposta à carga. No apoio médio, a subtalar já se dirige à inversão."
   },
   "referencias": [
-   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 1.1"
+   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 1.1",
+   "Perry J, Burnfield JM. Gait Analysis: Normal and Pathological Function, 2ª edição. SLACK, 2010."
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pe-tornozelo-0252": {
