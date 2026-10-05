@@ -2399,17 +2399,18 @@
   "conferido": false
  },
  "joelho-0199": {
-  "conceito": "### Quando o DAIR funciona\n**Desbridamento, antibiótico e retenção do implante** exige, ao mesmo tempo:\n- Infecção **precoce** (pós-operatória) ou **hematogênica aguda**, com poucas semanas de sintomas.\n- Implante **bem fixo**.\n- Partes moles que permitam fechar.\n\nFora disso, o biofilme está maduro e o implante precisa sair (revisão em um ou dois tempos).\n\n### O peso do germe\n- **S. aureus**, sobretudo **MRSA**, tem taxas de falha do DAIR bem mais altas que estreptococos e germes de baixa virulência.\n- É ==contraindicação relativa==: entra na balança com o paciente e as partes moles.\n\n### Detalhes que melhoram o DAIR\nTroca dos componentes móveis (polietileno), desbridamento radical, antibiótico com ação em biofilme (**rifampicina** para estafilococo).\n\n> **Na prova:** S. aureus na infecção aguda da ATJ = ==contraindicação relativa ao DAIR==.",
-  "correta": "**Contraindicação relativa ao DAIR.**",
+  "conceito": "**O que é o DAIR.** É a sigla para **desbridamento, antibiótico e retenção do implante** (*debridement, antibiotics and implant retention*). Na infecção periprotética, ele tenta curar a infecção mantendo a prótese, com desbridamento amplo, sinovectomia, lavagem abundante e **troca dos componentes modulares** (polietileno), seguidos de antibioticoterapia prolongada.\n\n**Por que o tempo importa: o biofilme.** As bactérias aderem à superfície do implante e produzem uma matriz de polissacarídeos, o **biofilme**, que as protege dos antibióticos e do sistema imune. Nas primeiras semanas, o biofilme ainda é **imaturo** e pode ser removido mecanicamente. Depois, torna-se maduro e só a retirada do implante elimina a infecção.\n\n**Quando o DAIR tem chance.**\n- Infecção **aguda pós-operatória** (até cerca de 4 semanas da cirurgia) ou **hematogênica aguda** (sintomas há menos de 3 semanas).\n- Implante **bem fixo**.\n- Partes moles que permitam fechamento.\n- Germe sensível a antibióticos com boa ação contra biofilme (rifampicina para estafilococos, quinolonas para gram-negativos).\n\n**O peso do germe.** O ***Staphylococcus aureus***, especialmente o **resistente à meticilina (MRSA)**, tem **taxas de sucesso menores** com DAIR do que os estreptococos ou os estafilococos coagulase-negativos sensíveis. É virulento, forma biofilme rapidamente e muitas vezes já invadiu tecidos e osso. Por isso, a cultura positiva para *S. aureus* é considerada uma **contraindicação relativa** ao DAIR: ele ainda pode ser tentado se as outras condições forem favoráveis (sintomas curtos, implante fixo, paciente saudável), mas com maior risco de falha.\n\n**Quando a prótese deve sair.** Infecção crônica, implante solto, fístula, partes moles ruins, germes difíceis (fungos, enterococos resistentes, MRSA com mau hospedeiro): revisão em **um ou dois tempos**.",
+  "correta": "**Correta: C.** A cultura positiva para *S. aureus* reduz a chance de sucesso do desbridamento com retenção da prótese, sobretudo se resistente à meticilina, e é por isso uma **contraindicação relativa**, não absoluta, ao DAIR.",
   "incorretas": {
-   "A": "**Não contraindica.**\n- O dois tempos é a alternativa.",
-   "B": "**Não indica.**\n- Joga contra o sucesso.",
-   "D": "**Não absoluta.**\n- Pode ser tentado com implante fixo e boas partes moles."
+   "A": "O *S. aureus* **não contraindica** a revisão em dois tempos; ao contrário, é uma das situações em que ela é frequentemente indicada.",
+   "B": "O *S. aureus* **não é indicação** de DAIR; a indicação depende do tempo de sintomas, da fixação do implante e das partes moles, e o germe reduz as chances de sucesso.",
+   "D": "Não é contraindicação **absoluta**: com infecção bem aguda, implante fixo e germe sensível, o DAIR pode ser tentado."
   },
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 45"
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 45",
+   "Parvizi J, Tan TL, Goswami K, et al. The 2018 definition of periprosthetic hip and knee infection: an evidence-based and validated criteria. J Arthroplasty. 2018;33(5):1309-1314.e2."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "joelho-0200": {

@@ -995,14 +995,17 @@
   "conferido": false
  },
  "trauma-0085": {
+  "conceito": "**Por que os fragmentos se separam.** A clavícula é a única ligação óssea entre o membro superior e o tronco. Quando sua diáfise fratura (geralmente no **terço médio**, a parte mais fina e onde a curvatura muda de direção), cada fragmento passa a ser puxado pelas forças que atuam sobre ele, sem oposição.\n\n**O fragmento medial.** Fica preso ao esterno pela articulação esternoclavicular e recebe o **esternocleidomastóideo**, que o puxa para **cima** (e um pouco para trás).\n\n**O fragmento lateral.** Fica preso à escápula pelos ligamentos acromioclaviculares e coracoclaviculares, e por isso acompanha o membro superior:\n- o **peso do braço** o puxa para **baixo**: **translação inferior**;\n- o **peitoral maior** e o **grande dorsal**, que puxam o úmero para medial e para a frente, aproximam o ombro da linha média: **encurtamento** e desvio medial;\n- a escápula roda e leva o fragmento junto, numa **rotação anterior** (o ombro cai e vai para a frente).\n\n**O aspecto clínico.** O ombro fica **caído, anteriorizado e medializado**; o fragmento medial faz saliência sob a pele, que pode até ficar ameaçada. O paciente segura o braço junto ao corpo.\n\n**Por que isso importa.**\n- O **encurtamento** maior que 1,5 a 2 cm e o desvio completo (sem contato entre fragmentos) aumentam o risco de **pseudartrose** e de queixas funcionais, e são indicações relativas de fixação.\n- A redução fechada não se mantém, porque as forças musculares e o peso do braço voltam a desviar os fragmentos assim que o paciente se mexe. Por isso o tratamento é tipoia (não cirúrgico) ou fixação com placa ou haste.",
+  "correta": "**Correta: C (translação inferior e rotação anterior).** O peso do membro superior puxa o fragmento lateral para baixo, e a ação do peitoral maior e a rotação da escápula levam-no para a frente, em rotação anterior.",
   "incorretas": {
-   "A": "A translação inferior está certa, mas a rotação é anterior.",
-   "B": "Quem sobe é o fragmento medial, e a rotação do lateral é anterior.",
-   "D": "A rotação anterior está certa, mas o fragmento lateral desce."
+   "A": "A **translação inferior** está certa, mas a rotação é **anterior**, porque o ombro cai e vai para a frente.",
+   "B": "Quem sobe é o fragmento **medial**, puxado pelo esternocleidomastóideo; o lateral desce.",
+   "D": "A **translação superior** é do fragmento medial; o lateral é puxado para baixo pelo peso do braço."
   },
-  "conceito": "Na fratura da **diáfise da clavícula**, os dois fragmentos desviam em sentidos opostos:\n\n**fragmento medial**: o **esternocleidomastóideo** o puxa para **cima**;\n\n**fragmento lateral**: o **peso do membro** o leva para **baixo** (translação inferior), e o **peitoral maior** o puxa para a frente e para dentro, com **rotação anterior**.\n\n**O que se vê**: o ombro **cai**, vai para a frente e **encurta**. A ponta medial fica proeminente sob a pele.\n\n**As indicações relativas de cirurgia**: encurtamento maior que 1,5 a 2 cm, desvio maior que 100%, cominução com fragmento em Z, **pele em risco**, ombro flutuante e politrauma.\n\n**As opções**: placa **superior** ou **anteroinferior**, ou haste intramedular.\n\n**Na prova**: o fragmento lateral tem **translação inferior** e **rotação anterior**.",
-  "correta": "O peso do membro abaixa o fragmento lateral, e o peitoral o roda para a frente.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 9ª edição, capítulo de fraturas da clavícula"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0086": {
@@ -1105,14 +1108,17 @@
   "conferido": false
  },
  "trauma-0095": {
+  "conceito": "**O que são as fraturas por estresse.** São falhas ósseas por **carga repetitiva** abaixo do limite de ruptura, quando o dano microscópico acumulado supera a capacidade de remodelação. Ocorrem em atletas, militares e corredores (fratura por **fadiga**, em osso normal) ou em ossos fragilizados, como na osteoporose (fratura por **insuficiência**).\n\n**A classificação de Kaeding e Miller (2013).** Une os achados **clínicos** e de **imagem** num sistema único, aplicável a qualquer osso.\n\n| Grau | Dor | Imagem |\n|---|---|---|\n| I | **Sem dor** | Alteração na imagem (edema ósseo na RM, captação na cintilografia) |\n| II | **Dor** | Alteração na imagem, **sem traço de fratura** |\n| III | Dor | **Traço de fratura sem desvio** |\n| **IV** | Dor | **Fratura desviada (mais de 2 mm)** |\n| V | Dor | **Pseudartrose** |\n\n**Somar o risco.** A classificação é complementada pela localização: fraturas de **alto risco** (colo femoral do lado da tensão, cortical anterior da tíbia, maléolo medial, navicular, base do 5º metatarso na zona proximal, sesamoides) têm maior tendência a progredir, a não consolidar ou a desviar, e pedem conduta mais agressiva. As de **baixo risco** (diáfise posteromedial da tíbia, metatarsos 2 a 4, fíbula) costumam responder a repouso relativo.\n\n**Como usar.**\n- Graus I e II de baixo risco: modificação da atividade.\n- Grau III de alto risco: imobilização e restrição de carga, às vezes fixação em atletas.\n- **Grau IV** (desviada): em geral **cirurgia**.\n- Grau V: tratamento da pseudartrose.\n\n**Investigar a causa.** Erros de treino, calçado, alterações biomecânicas e, especialmente em mulheres, a **tríade da atleta** (baixa disponibilidade energética, disfunção menstrual, baixa massa óssea).",
+  "correta": "**Correta: D (grau IV).** Na classificação de Kaeding e Miller, a fratura por estresse **desviada**, com desvio maior que 2 mm, corresponde ao grau IV.",
   "incorretas": {
-   "A": "O grau I é só alteração de imagem, sem dor.",
-   "B": "O grau II tem dor e alteração de imagem, mas sem traço de fratura.",
-   "C": "O grau III tem traço de fratura, mas sem desvio."
+   "A": "O **grau I** é a alteração apenas na imagem, **sem dor**.",
+   "B": "O **grau II** tem dor e alteração na imagem, mas **sem traço de fratura** visível.",
+   "C": "O **grau III** é o traço de fratura **sem desvio**."
   },
-  "conceito": "A classificação de **Kaeding e Miller** gradua as **fraturas por estresse** pela clínica e pela imagem:\n\n**grau I**: alteração só na **imagem**, sem dor;\n\n**grau II**: **dor**, com alteração na imagem, mas **sem traço** de fratura;\n\n**grau III**: **traço de fratura sem desvio**;\n\n**grau IV**: fratura **desviada**, com desvio maior que **2 mm**;\n\n**grau V**: **pseudartrose**.\n\n**Como usar**: o grau se combina com o **local**. Uma fratura de **baixo risco** (costela, ulna, face posteromedial da tíbia) tolera tratamento conservador mesmo em graus mais altos. Uma de **alto risco** (patela, cortical anterior da tíbia, colo do fêmur no lado de tensão, navicular, base do 5º metatarso) em grau **III ou mais** costuma ser **cirúrgica**.\n\n**Na prova**: a fratura por estresse com desvio maior que 2 mm é **grau IV** de Kaeding-Miller.",
-  "correta": "O grau IV é a fratura por estresse desviada, com desvio maior que 2 mm.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Kaeding CC, Miller T. The comprehensive description of stress fractures: a new classification system. J Bone Joint Surg Am. 2013;95(13):1214-1220."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0096": {
@@ -1903,14 +1909,17 @@
   "conferido": false
  },
  "trauma-0166": {
+  "conceito": "**A região subtrocantérica.** Vai do **trocânter menor** até cerca de **5 cm abaixo** dele. É uma zona de osso cortical espesso submetida às **maiores tensões do fêmur**: forças de compressão na cortical medial e de tração na lateral, várias vezes o peso corporal na marcha. Por isso as fraturas consolidam mais devagar e os implantes sofrem muito.\n\n**Por que os fragmentos desviam de forma característica.** Muitos músculos fortes se inserem perto do quadril, e a fratura os deixa sem oposição.\n\n**O fragmento proximal.**\n- **Iliopsoas**, inserido no **trocânter menor**: **flete** e **roda lateralmente** o fragmento (quando o trocânter menor fica no fragmento proximal).\n- **Glúteo médio e mínimo**, no **trocânter maior**: **abduzem**.\n- **Rotadores externos curtos** (piriforme, gêmeos, obturadores, quadrado femoral): reforçam a **rotação lateral**.\n\nResultado: o fragmento proximal fica **fletido, abduzido e rodado externamente**.\n\n**O fragmento distal.**\n- **Adutores**: puxam para medial (**adução**).\n- **Isquiotibiais e quadríceps**: encurtam (**translação proximal**).\n\n**Por que isso importa na cirurgia.** A redução precisa **vencer a flexão do fragmento proximal**. Um erro comum é introduzir a haste cefalomedular com o fragmento proximal ainda fletido e abduzido, o que leva à consolidação em **varo e flexão**, com risco de falha do implante e pseudartrose. Técnicas de redução: tração com o membro em **flexão e abdução** para alinhar o fragmento distal ao proximal, pinças percutâneas, alavancas (*joysticks*) e, se necessário, redução aberta com cerclagem.",
+  "correta": "**Correta: A (iliopsoas).** Inserido no trocânter menor, o iliopsoas flete e roda lateralmente o fragmento proximal da fratura subtrocantérica.",
   "incorretas": {
-   "B": "O quadríceps age no fragmento distal.",
-   "C": "O glúteo médio abduz o fragmento proximal.",
-   "D": "O adutor magno aduz o fragmento distal."
+   "B": "O **quadríceps** atua sobre o fragmento **distal**, encurtando-o; não age sobre o fragmento proximal.",
+   "C": "O **glúteo médio** se insere no trocânter maior e **abduz** o fragmento proximal, mas não é o responsável pela flexão.",
+   "D": "O **adutor magno** se insere no fragmento **distal** e o desvia em **adução**."
   },
-  "conceito": "Na **fratura subtrocantérica**, o fragmento **proximal** fica preso a músculos que não têm mais oposição:\n\n**iliopsoas**, inserido no **trocânter menor**: **flete** e **roda lateralmente** o fragmento;\n\n**glúteos médio e mínimo**, no trocânter maior: **abduzem**;\n\n**rotadores externos curtos**: reforçam a **rotação lateral**.\n\nO fragmento **distal** é puxado pelos **adutores** (adução) e encurtado pelo **quadríceps** e pelos isquiotibiais.\n\n**A consequência**: o fragmento proximal fica em **flexão, abdução e rotação lateral**, e a fratura tende a consolidar em **varo e flexão**.\n\n**A redução**: levar o **distal ao proximal**: mesa de tração com o membro em flexão e abdução, ou redução aberta com pinças, cerclagem e pinos de Schanz, antes de passar a haste.\n\n**Na prova**: a flexão e a rotação lateral do fragmento proximal vêm do **iliopsoas**.",
-  "correta": "O iliopsoas, inserido no trocânter menor, flete e roda lateralmente o fragmento proximal.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 9ª edição, capítulo de fraturas subtrocantéricas do fêmur"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0167": {

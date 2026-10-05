@@ -2822,14 +2822,18 @@
   "conferido": false
  },
  "pediatria-0241": {
-  "conceito": "### Ossificação do carpo (sentido anti-horário na mão direita, vista palmar)\n| Osso | Idade aproximada |\n|---|---|\n| ==capitato== | ==1 a 3 meses== |\n| ==hamato== | ==2 a 4 meses== |\n| piramidal | cerca de 3 anos |\n| semilunar | cerca de 4 anos |\n| escafoide | cerca de 5 anos |\n| trapézio | cerca de 6 anos |\n| trapezoide | cerca de 6 a 7 anos |\n| pisiforme | cerca de 9 a 12 anos |\n\n- Regra prática: até cerca de 6 a 7 anos, o **número de centros ≈ idade em anos**.\n- Meninas ossificam antes.\n\n### Idade óssea\n- **Greulich e Pyle** (atlas da mão e punho), Tanner-Whitehouse.\n\n### Implicação clínica\n- Até os 5 anos o escafoide é quase todo cartilagem: fratura rara e invisível ao RX.\n- Fratura pediátrica típica: ==polo distal== e avulsões, não a cintura.\n\n> **Na prova:** escafoide ossifica aos ==4 a 5 anos==",
-  "correta": "**4 a 5 anos.**\n- Depois do semilunar e antes de trapézio e trapezoide.\n- Até essa idade, RX normal não exclui lesão.",
+  "conceito": "**O carpo ossifica numa ordem previsível.** Ao nascer, os ossos do carpo são **cartilaginosos** e invisíveis na radiografia. Eles ossificam um a um, em sequência relativamente constante, o que é útil para **estimar a idade óssea** e para não confundir um osso ainda não ossificado com uma lesão.\n\n**A ordem.** Na mão direita vista pela palma, a ossificação segue o **sentido anti-horário**, começando no capitato:\n\n| Osso | Idade aproximada de ossificação |\n|---|---|\n| Capitato | 1 a 3 meses |\n| Hamato | 2 a 4 meses |\n| Piramidal | Cerca de 3 anos |\n| Semilunar | Cerca de 4 anos |\n| **Escafoide** | **Cerca de 4 a 5 anos** |\n| Trapézio | Cerca de 5 a 6 anos |\n| Trapezoide | Cerca de 6 a 7 anos |\n| Pisiforme | Cerca de 9 a 12 anos (o último) |\n\nUma regra prática: depois do capitato e do hamato no primeiro ano, os demais aparecem aproximadamente **um por ano**. As meninas ossificam um a dois anos antes dos meninos.\n\n**Implicações clínicas.**\n- **Fraturas do escafoide** são raras antes dos 10 anos, porque o osso é em grande parte cartilaginoso e protegido por um envoltório espesso. Em crianças, as fraturas costumam ser do **polo distal** ou avulsões, e consolidam bem.\n- O **pisiforme** é um sesamoide no tendão do flexor ulnar do carpo e ossifica por último.\n- Na **idade óssea** (atlas de Greulich e Pyle), avaliam-se os centros do carpo, das epífises das falanges, dos metacarpos e do rádio e da ulna distais.",
+  "correta": "**Correta: C (4 a 5 anos).** O escafoide começa a ossificar por volta dos 4 a 5 anos, depois do capitato, do hamato, do piramidal e do semilunar.",
   "incorretas": {
-   "A": "**Cedo demais.**\n- Só capitato e hamato.",
-   "B": "**Piramidal e semilunar.**\n- O escafoide ainda não.",
-   "D": "**Já ossificado.**\n- Falta o pisiforme."
+   "A": "Entre **1 e 2 anos**, só o capitato e o hamato costumam estar ossificados.",
+   "B": "Aos **3 a 4 anos** surgem o piramidal e o semilunar; o escafoide vem logo depois.",
+   "D": "Aos **6 a 7 anos** ossificam o trapézio e o trapezoide, que vêm depois do escafoide."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Greulich WW, Pyle SI. Radiographic Atlas of Skeletal Development of the Hand and Wrist, 2ª edição. Stanford University Press, 1959."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0242": {
