@@ -834,16 +834,19 @@
   "formato": "corrido"
  },
  "osteometabolicas-0067": {
-  "conceito": "**Duas informações numa pergunta.** O **osso**: a tuberculose do cotovelo começa na **ulna proximal**, no olécrano. O **movimento**: a articulação inflamada se acomoda na posição de **maior volume capsular**, que no cotovelo fica em torno de 70 a 80 graus de flexão.\n\n**Por que perde a extensão.** O paciente passa o dia com o cotovelo dobrado, as cápsulas anterior e posterior se retraem nessa posição, e a **extensão** é a primeira a ser perdida e a que mais custa a recuperar. O quadro é de monoartrite arrastada, com derrame, atrofia do braço e do antebraço e às vezes fístula.\n\n**Na prova:** tuberculose do cotovelo é **ulna e perda de extensão**.",
-  "correta": "**A ulna e a extensão.** O foco é no olécrano, e o cotovelo inflamado se acomoda em flexão.",
+  "conceito": "**Duas informações numa pergunta.** A questão pede o osso de onde a doença parte e o movimento que mais se perde.\n\n**O osso: a ulna proximal.** A tuberculose chega por via hematogênica e se instala no osso esponjoso bem vascularizado. No cotovelo, o foco inicial mais típico é o **olécrano**, na ulna proximal, uma grande massa de osso esponjoso subcondral. Do olécrano, a doença invade a articulação. O úmero distal também pode ser sede, mas com menor frequência.\n\n**O movimento: a extensão.** Toda articulação inflamada com derrame busca a posição de **maior volume capsular**, que diminui a pressão e a dor. No cotovelo, essa posição é em torno de **70 a 80° de flexão**. O paciente passa semanas com o cotovelo dobrado, e:\n- a cápsula anterior e o braquial se retraem;\n- o espasmo do bíceps e do braquial mantém a flexão;\n- a sinovite e o tecido de granulação ocupam a fossa olecraniana, bloqueando mecanicamente a extensão.\n\nO resultado é a perda progressiva da **extensão**, com a flexão relativamente preservada nas fases iniciais.\n\n**Apresentação clínica.** Monoartrite arrastada, com aumento de volume fusiforme, **atrofia muscular** do braço e antebraço, dor moderada, às vezes fístulas e abscessos frios. Radiografia com osteopenia periarticular, erosões e preservação relativa do espaço articular no início.\n\n**Diagnóstico e tratamento.** Biópsia sinovial com cultura, pesquisa de BAAR, PCR e histologia. Tratamento com esquema antituberculoso prolongado, associando fisioterapia para preservar o movimento; desbridamento cirúrgico nos casos avançados.",
+  "correta": "**Correta: C (a ulna e a extensão).** A tuberculose do cotovelo parte tipicamente do **olécrano**, e o movimento mais limitado é a **extensão**, porque a articulação inflamada se mantém em flexão, posição de maior volume capsular.",
   "incorretas": {
-   "A": "**Movimento errado.** Acerta a ulna, mas a flexão é a posição em que a articulação se acomoda, não o movimento perdido.",
-   "B": "**Erra os dois.** O foco não é no úmero, e o movimento limitado é a extensão.",
-   "D": "**Osso errado.** Acerta a extensão, mas o foco é na ulna proximal."
+   "A": "O osso está certo, mas a **flexão** é relativamente preservada; o que se perde primeiro é a extensão.",
+   "B": "O **úmero** é acometido com menos frequência que a ulna, e a flexão não é o movimento mais limitado.",
+   "D": "A **extensão** está certa, mas o foco inicial típico é a **ulna** (olécrano), não o úmero."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª edição (Azar, Sawyer, Throckmorton), Cap. 25",
+   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição"
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "osteometabolicas-0068": {
   "conceito": "**A gota no homem acima dos 40.** A **gota** é a artrite inflamatória mais comum do homem depois dos 40 anos. O estrogênio é **uricosúrico**, e por isso a mulher só se aproxima do homem depois da menopausa. A uricemia é um traço poligênico, em que transportadores renais de urato, como o SLC2A9 e o ABCG2, explicam boa parte da variação, e as séries descrevem **história familiar positiva em cerca de 40%** dos pacientes.\n\n**Pontos que a prova cobra.** Hiperuricemia isolada **não é gota**: a doença é o depósito de cristais, que aparecem em **agulha**, com birrefringência **negativa** forte. A crise típica é a **podagra**, na primeira metatarsofalângica, noturna, depois de álcool ou excesso alimentar. Na radiografia tardia, erosões em saca-bocado com **borda saliente**.\n\n**Na prova:** homem acima dos 40 é **gota**, com história familiar em cerca de 40%.",

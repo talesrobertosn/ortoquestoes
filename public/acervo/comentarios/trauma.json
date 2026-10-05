@@ -6618,15 +6618,19 @@
   "conferido": false
  },
  "trauma-0812": {
+  "conceito": "**A fratura do capítulo.** É uma fratura articular por cisalhamento no plano coronal (AO 13-B3), produzida pela cabeça do rádio que bate no capítulo com o cotovelo em semiflexão. O fragmento desloca-se para a frente e para cima, para a fossa radial, e pode ficar praticamente **sem inserções de partes moles**.\n\n**Por que a irrigação é frágil.** O capítulo é irrigado por vasos que entram pela face **posterior**, a partir de ramos das artérias recorrentes. O fragmento fraturado, que é anterior e articular, perde quase toda a ligação com essa irrigação. Por isso, a **necrose avascular** do fragmento é uma complicação temida, especialmente:\n- nos fragmentos grandes com osso subcondral (tipo I de Hahn-Steinthal);\n- após dissecção extensa para redução aberta;\n- quando o fragmento está completamente livre.\n\n**As complicações descritas.**\n\n| Complicação | Comentário |\n|---|---|\n| **Necrose avascular** | Temida pela ausência de inserções; a banca considerou a mais frequente |\n| Rigidez (perda de extensão) | Muito citada nas séries cirúrgicas |\n| Artrose pós-traumática | Pela lesão da cartilagem e incongruência |\n| Pseudartrose | Pouco frequente após fixação estável |\n| Instabilidade | Rara, salvo lesões ligamentares associadas |\n\n**Tratamento.** Tomografia para avaliar a extensão para a tróclea e a cominuição. Fragmentos desviados: redução aberta e fixação com **parafusos sem cabeça**, de anterior para posterior ou de posterior para anterior, com mobilização precoce para evitar rigidez. Fragmentos pequenos ou muito cominutivos podem ser excisados; em idosos com cominuição grave, considera-se artroplastia.\n\n**Na prova.** O dado que justifica a resposta oficial é a vulnerabilidade vascular do fragmento livre: o capítulo fraturado é um fragmento articular sem partes moles, e a necrose é a complicação mais associada a ele nas fontes da banca.",
+  "correta": "**Correta: B (necrose avascular).** O gabarito oficial indica a necrose avascular, justificada pela irrigação posterior do capítulo e pela ausência de inserções de partes moles no fragmento anterior deslocado.",
   "incorretas": {
-   "A": "A pseudartrose do capítulo é rara.",
-   "C": "A limitação articular é a complicação mais citada na literatura, mas a banca não aceitou.",
-   "D": "A instabilidade articular é rara após a fratura do capítulo."
+   "A": "A **pseudartrose** é incomum, sobretudo após fixação estável com parafusos sem cabeça.",
+   "C": "A **limitação articular** é muito citada nas séries cirúrgicas, como explica o alerta, mas o gabarito oficial considerou a necrose avascular como a mais frequente.",
+   "D": "A **instabilidade** é rara, porque os ligamentos colaterais costumam estar preservados nessa fratura isolada."
   },
-  "conceito": "As **fraturas do capítulo** ocorrem no plano coronal, por cisalhamento, e o fragmento pode ficar quase sem partes moles presas.\n\n**O tratamento**: TC para planejar e **redução aberta com fixação** por parafusos sem cabeça; artroplastia no idoso com cominução.\n\n**As complicações**:\n\n**rigidez** (limitação do movimento, sobretudo da extensão): é a mais citada nas séries;\n\n**necrose avascular** do fragmento: temida, porque o fragmento pode ficar sem irrigação; na prática, é **menos frequente** do que se esperaria;\n\n**pseudartrose**, ossificação heterotópica e artrose.\n\n**O gabarito**: a banca considerou a **necrose avascular** como a complicação mais frequente do tratamento.\n\n**Na prova**: a banca indicou a **necrose avascular**.",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 9ª edição, capítulo de fraturas do úmero distal",
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+  ],
   "alerta": "A complicação mais citada na literatura após a fratura do capítulo é a perda de mobilidade (rigidez), e outra questão deste acervo (trauma-0103) adota essa resposta. A necrose avascular é temida, mas pouco frequente. A banca indicou B.",
-  "correta": "A banca considerou a necrose avascular do fragmento como a complicação mais frequente.",
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0813": {
