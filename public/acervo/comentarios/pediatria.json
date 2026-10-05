@@ -10314,6 +10314,127 @@
   "geradoEm": "2026-10-04T17:01:01+00:00",
   "conferido": false
  },
+ "pediatria-0868": {
+  "conceito": "**Avaliação inicial da criança com joelho doloroso e febre.** Uma criança de 5 anos com febre, dor e sinais flogísticos no joelho, limitação da flexoextensão e incapacidade de andar tem como principais hipóteses a **artrite séptica** e a **osteomielite** da região do joelho, além de causas traumáticas (a queda pode ser apenas coincidente).\n\n**Sinal da tecla (choque rotuliano).** Com uma mão, o examinador comprime o recesso suprapatelar para empurrar o líquido para baixo da patela; com a outra, pressiona a patela contra o fêmur. Se a patela \"afunda e bate\" no fêmur, há derrame articular volumoso. Ausência do sinal não exclui derrame pequeno ou moderado.\n\n**Primeiros passos.**\n1. **Radiografia** do joelho: afasta fratura (a queda foi relatada), lesões ósseas e mostra aumento de partes moles; também serve de base.\n2. **Hemograma, VHS e PCR**: os marcadores inflamatórios elevados reforçam a hipótese infecciosa e servem de referência para o seguimento.\n3. Hemoculturas.\n4. Conforme os achados, **ultrassonografia** (derrame, guia de punção) e **punção articular**, que é o exame decisivo para a artrite séptica.\n\n**Critérios de Kocher e Caird.** Febre acima de 38,5 °C, incapacidade de apoiar, VHS acima de 40, leucócitos acima de 12.000 e PCR acima de 2 mg/dL aumentam progressivamente a probabilidade de artrite séptica.\n\n> Criança com febre e joelho doloroso: radiografia e exames laboratoriais, seguidos de punção se a suspeita se mantém.",
+  "correta": "**D: Solicitar Rx, hemograma completo, VHS e PCR da criança.** É o passo inicial adequado: a radiografia afasta fratura e lesões ósseas, e o hemograma, a VHS e a PCR avaliam a resposta inflamatória e ajudam a estimar a probabilidade de artrite séptica. Com esses dados, decide-se pela punção articular e pela internação.",
+  "incorretas": {
+   "A": "**Prescrever anti-inflamatório e pedir curva térmica** em casa é perigoso. Uma criança febril, sem andar e com sinais flogísticos no joelho pode ter artrite séptica, uma urgência que destrói a cartilagem em poucos dias.",
+   "B": "**Internar e puncionar** pode ser necessário, mas a banca considerou que a avaliação inicial com radiografia e exames laboratoriais deve vir antes, para orientar a decisão. Em muitos serviços, porém, a punção é feita logo na suspeita forte.",
+   "C": "**A ecografia** é útil para identificar derrame e guiar a punção, mas não substitui a radiografia (afasta fratura) e os exames laboratoriais na avaliação inicial."
+  },
+  "referencias": [
+   "Kocher MS, Zurakowski D, Kasser JR. Differentiating between septic arthritis and transient synovitis of the hip in children: an evidence-based clinical prediction algorithm. J Bone Joint Surg Am. 1999;81(12):1662-1670.",
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Artrite séptica."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "pediatria-0869": {
+  "conceito": "**Piora clínica na suspeita de artrite séptica.** A criança que retorna com **febre alta (39,5 °C)** e **torpor** apresenta sinais de infecção grave e possível sepse. A artrite séptica é uma urgência: enzimas bacterianas e leucocitárias destroem a cartilagem em poucos dias, e a infecção pode se disseminar.\n\n**Conduta.**\n1. **Internação** e estabilização clínica (acesso venoso, hidratação, avaliação de sepse).\n2. **Punção articular** imediata, preferencialmente em **ambiente cirúrgico**, com o material enviado para contagem celular, Gram e culturas (inclusive frascos de hemocultura para Kingella kingae).\n3. Se o líquido for purulento ou a suspeita for alta, **drenagem e lavagem articular no mesmo ato** (artrotomia ou artroscopia).\n4. Antibiótico parenteral empírico logo após a coleta, cobrindo Staphylococcus aureus e Kingella kingae em crianças pequenas.\n\n**Por que no centro cirúrgico.** Permite sedação e analgesia adequadas para a criança, assepsia rigorosa e, se confirmado pus, a drenagem imediata sem nova anestesia.\n\n**Exames de imagem não devem atrasar a punção.** Ressonância, cintilografia e ultrassonografia podem ajudar, mas, em uma criança grave com suspeita clínica forte, o diagnóstico e o tratamento passam pela punção e drenagem.\n\n> Criança febril e torporosa com joelho infectado: internar e puncionar em ambiente cirúrgico.",
+  "correta": "**C: Internar a criança e puncionar o joelho esquerdo em ambiente cirúrgico.** A criança apresenta piora importante, com febre alta e torpor, sinais de infecção grave. A punção articular em ambiente cirúrgico confirma a artrite séptica, colhe material para cultura e permite a drenagem imediata, que é a base do tratamento junto com o antibiótico parenteral.",
+  "incorretas": {
+   "A": "**A ressonância** pode mostrar osteomielite associada, mas atrasaria o diagnóstico e o tratamento em uma criança grave. O exame decisivo é a punção.",
+   "B": "**A cintilografia óssea** é pouco específica, demora e não muda a conduta imediata. Não deve atrasar a punção e a drenagem.",
+   "D": "**A ecografia** mostra derrame e pode guiar a punção, mas, nesta situação de gravidade, a conduta prioritária é puncionar e drenar no centro cirúrgico, não apenas documentar o derrame."
+  },
+  "referencias": [
+   "Pääkkönen M, Peltola H. Bone and joint infections. Pediatr Clin North Am. 2013;60(2):425-436.",
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Artrite séptica."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "pediatria-0870": {
+  "conceito": "**Gram negativo não afasta artrite séptica.** A bacterioscopia pelo Gram é rápida, mas tem **sensibilidade baixa**: positiva em apenas cerca de 30% a 50% dos casos de artrite séptica. As culturas também são negativas em uma proporção importante (até 30% a 50% em crianças), especialmente com Kingella kingae ou uso prévio de antibiótico.\n\n**Como confirmar.** O diagnóstico se baseia no conjunto:\n- **Clínica**: febre, dor intensa, incapacidade de mover a articulação ou apoiar o membro.\n- **Laboratório**: VHS e PCR elevadas, leucocitose.\n- **Líquido sinovial**: aspecto turvo ou purulento, **contagem acima de 50.000 leucócitos/mm³** com predomínio de neutrófilos (mais de 75%), glicose baixa.\n- Gram e cultura, quando positivos.\n\n**Conduta diante de líquido purulento e Gram negativo.** Tratar como artrite séptica: **drenagem cirúrgica** (artrotomia ou lavagem artroscópica) e antibiótico parenteral. Esperar o resultado da cultura ou confiar no Gram negativo atrasaria o tratamento, com risco de destruição da cartilagem, necrose epifisária e sequelas de crescimento.\n\n**Erros comuns.**\n- Descartar a infecção pelo Gram negativo.\n- Tratar só com antibiótico, sem drenagem, uma articulação com pus.\n- Confundir com celulite ou bursite pré-patelar, que não limitam tanto o movimento articular e não têm derrame intra-articular purulento.\n\n> Gram negativo não exclui artrite séptica; com quadro sugestivo, drenar.",
+  "correta": "**C: Realizar a artrotomia pois o Gram está positivo em apenas 30% dos pacientes com artrite séptica.** A bacterioscopia tem baixa sensibilidade, e um Gram negativo não exclui a infecção. Diante de uma criança com quadro clínico e líquido sinovial compatíveis com artrite séptica, a conduta é drenar cirurgicamente a articulação e manter o antibiótico parenteral.",
+  "incorretas": {
+   "A": "**Considerar descartada a artrite séptica** pelo Gram negativo é um erro, porque o exame é negativo na maioria dos casos. Além disso, apenas o antibiótico não resolve uma articulação com pus.",
+   "B": "**Dar alta com antibiótico oral** seria muito perigoso: a criança tem infecção grave, e o Gram negativo não afasta artrite séptica.",
+   "D": "**Celulite e bursite pré-patelares** são infecções superficiais, sem derrame articular purulento nem limitação intensa da flexoextensão. O quadro da criança é articular."
+  },
+  "referencias": [
+   "Pääkkönen M, Peltola H. Bone and joint infections. Pediatr Clin North Am. 2013;60(2):425-436.",
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Artrite séptica."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "pediatria-0871": {
+  "alerta": "Pelos valores de referência mais usados, o líquido sinovial normal tem menos de cerca de 200 células/mm³, com predomínio de mononucleares. A alternativa considerada correta (até 5.000 com predomínio de mononucleares) é a mais próxima do normal entre as opções, mas o limite numérico citado é alto. O gabarito oficial (B) foi mantido.",
+  "conceito": "**Análise do líquido sinovial.** A contagem de células e o tipo celular predominante ajudam a separar líquidos normais, não inflamatórios, inflamatórios e sépticos.\n\n| Tipo | Aspecto | Leucócitos/mm³ | Neutrófilos |\n|---|---|---|---|\n| **Normal** | Claro, viscoso | **Menos de 200** | **Menos de 25%** (predomínio de mononucleares) |\n| Não inflamatório (trauma, artrose) | Claro, amarelo | 200 a 2.000 | Menos de 25% |\n| Inflamatório (artrite reumatoide, reativa, gota) | Turvo | 2.000 a 50.000 | Mais de 50% |\n| **Séptico** | Turvo, purulento | **Acima de 50.000** (muitas vezes acima de 100.000) | **Acima de 75% a 90%** |\n| Hemorrágico | Sanguinolento | Variável | Variável |\n\n**Outros parâmetros.** Glicose (baixa na infecção), lactato (alto na infecção), cristais (gota, pseudogota), Gram e culturas.\n\n**O caso.** A contagem de 73.000 células com predomínio de polimorfonucleares está na faixa séptica, confirmando a artrite séptica.\n\n**Pontos de atenção.** Os limites são aproximados: infecções iniciais ou parcialmente tratadas podem ter contagens menores, e artrites inflamatórias intensas podem ultrapassar 50.000. O conjunto clínico manda.\n\n> Líquido sinovial normal: poucas células, com predomínio de mononucleares; séptico: acima de 50.000, com predomínio de neutrófilos.",
+  "correta": "**B: Até 5000 com predomínio de mononucleares (gabarito oficial).** O líquido sinovial normal tem poucas células, com predomínio de mononucleares. Entre as opções, essa é a que melhor representa o padrão normal. Vale saber que a referência mais usada é de menos de 200 células/mm³; valores de milhares de células já indicam processo inflamatório.",
+  "incorretas": {
+   "A": "**Até 5.000 com predomínio de polimorfonucleares** não é padrão normal. O predomínio de neutrófilos indica inflamação ou infecção.",
+   "C": "**Até 50.000 com predomínio de polimorfonucleares** descreve um líquido inflamatório intenso, próximo do limite séptico. Não é normal.",
+   "D": "**Até 50.000 com predomínio de mononucleares** corresponde a um processo inflamatório importante, mesmo com predomínio de mononucleares. O líquido normal tem contagem muito menor. (O texto \"Área livre\" e \"Prova aplicada\" é resquício da diagramação.)"
+  },
+  "referencias": [
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Artrite séptica.",
+   "Pääkkönen M, Peltola H. Bone and joint infections. Pediatr Clin North Am. 2013;60(2):425-436."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "pediatria-0872": {
+  "conceito": "**Kingella kingae.** É um cocobacilo gram-negativo da família Neisseriaceae, que coloniza a orofaringe de crianças pequenas. Tornou-se uma das **principais causas de infecção osteoarticular em crianças de 6 meses a 4 anos**, em alguns estudos a mais frequente nessa faixa.\n\n**Por que é difícil de isolar.**\n- Cresce mal nos meios de cultura sólidos convencionais.\n- A inoculação do líquido articular ou do material ósseo em **frascos de hemocultura** aumenta muito o isolamento.\n- O **PCR molecular** (reação em cadeia da polimerase) específico é o método mais sensível e explica a maioria das \"artrites sépticas com cultura negativa\" nessa idade.\n\n**Quadro clínico.** Geralmente mais leve que o do Staphylococcus aureus: febre baixa ou ausente, marcadores inflamatórios moderadamente elevados, contagem celular no líquido às vezes abaixo de 50.000. Frequentemente precedido por infecção respiratória alta ou estomatite.\n\n**Tratamento.** Sensível a betalactâmicos (cefalosporinas, ampicilina); naturalmente resistente à vancomicina e frequentemente à clindamicina, o que importa na escolha do antibiótico empírico em crianças pequenas.\n\n**Outros agentes por idade.**\n\n| Idade | Agentes mais comuns |\n|---|---|\n| Recém-nascido | S. aureus, estreptococo do grupo B, gram-negativos |\n| 6 meses a 4 anos | S. aureus, **Kingella kingae**, S. pneumoniae, S. pyogenes |\n| Acima de 4 anos | S. aureus, S. pyogenes |\n| Adolescente sexualmente ativo | Neisseria gonorrhoeae |\n\n**Haemophilus influenzae tipo b** era uma causa importante antes da vacinação; hoje é raro.\n\n> Kingella kingae: agente crescente em crianças pequenas, difícil de cultivar; usar frasco de hemocultura e PCR.",
+  "correta": "**D: Kingella Kingae.** É o agente que vem ganhando importância na infecção osteoarticular de crianças pequenas e é difícil de isolar nas culturas convencionais. O diagnóstico melhora com a inoculação do material em frascos de hemocultura e com o PCR molecular específico.",
+  "incorretas": {
+   "A": "**Streptococcus pneumoniae** causa infecções osteoarticulares em crianças pequenas, mas cresce bem nas culturas habituais e não é o agente difícil de isolar descrito na questão.",
+   "B": "**Staphylococcus aureus resistente à meticilina (MRSA)** aumentou em algumas regiões e causa infecções graves, mas cresce facilmente nas culturas. Não é \"difícil de ser isolado\".",
+   "C": "**Haemophilus influenzae** tipo b era uma causa importante antes da vacinação. Com a vacina, tornou-se raro; não é o agente em ascensão."
+  },
+  "referencias": [
+   "Yagupsky P. Kingella kingae: carriage, transmission, and disease. Clin Microbiol Rev. 2015;28(1):54-79.",
+   "Pääkkönen M, Peltola H. Bone and joint infections. Pediatr Clin North Am. 2013;60(2):425-436."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "pediatria-0873": {
+  "conceito": "**Drenagem da artrite séptica.** O tratamento da artrite séptica tem dois pilares: **antibiótico** e **esvaziamento da articulação**. A persistência da febre apesar do antibiótico parenteral indica que o pus não foi adequadamente removido.\n\n**Opções de drenagem.**\n- **Punções repetidas (aspiração seriada)**: usada em algumas articulações superficiais e em alguns protocolos, mas com risco de drenagem incompleta, especialmente com pus espesso ou loculações.\n- **Lavagem artroscópica**: menos invasiva e com recuperação rápida; no joelho, tem resultados semelhantes à artrotomia em muitos estudos.\n- **Artrotomia (drenagem aberta)**: permite lavagem abundante, desbridamento de fibrina e loculações e inspeção direta da cartilagem e de eventuais focos ósseos. É o método clássico e considerado o mais seguro quando há falha de outras medidas, pus espesso ou suspeita de osteomielite associada.\n\n**Particularidades.** No quadril, a artrotomia é a regra, pelo risco de necrose da cabeça femoral. No joelho, a artroscopia é uma alternativa aceita, mas, diante de falha clínica, a drenagem aberta garante esvaziamento completo.\n\n**Após a drenagem.** Manter antibiótico parenteral até melhora clínica e queda da PCR, com transição para via oral; mobilização precoce; seguimento do crescimento por risco de sequelas fisárias.\n\n| Método | Vantagem | Limitação |\n|---|---|---|\n| Punções repetidas | Pouco invasivo | Drenagem incompleta |\n| Artroscopia | Menos agressiva | Equipamento e experiência; loculações |\n| Artrotomia | Drenagem e desbridamento completos | Maior agressão |\n\n> Artrite séptica sem resposta ao antibiótico: drenagem aberta (artrotomia).",
+  "correta": "**C: Drenagem aberta (artrotomia).** A persistência da febre apesar do antibiótico parenteral indica drenagem inadequada do pus. A artrotomia permite esvaziamento completo, lavagem abundante, retirada de fibrina e loculações e avaliação direta da articulação, sendo a opção mais segura nessa situação.",
+  "incorretas": {
+   "A": "**Drenagem por múltiplas punções** pode funcionar em casos iniciais, mas tende a ser incompleta com pus espesso e loculações, e não é a melhor opção após falha clínica.",
+   "B": "**A drenagem artroscópica** é uma alternativa válida no joelho, com bons resultados em muitos estudos. A banca, porém, considerou a artrotomia como a melhor opção diante da persistência da febre, por garantir o esvaziamento completo.",
+   "D": "**Drenagem por mini-open** (incisão pequena) não é um método padronizado para a artrite séptica do joelho; uma abertura limitada pode não permitir lavagem e desbridamento adequados."
+  },
+  "referencias": [
+   "Pääkkönen M, Peltola H. Bone and joint infections. Pediatr Clin North Am. 2013;60(2):425-436.",
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Artrite séptica."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "pediatria-0874": {
+  "conceito": "**Componentes do pé torto congênito.** É uma deformidade tridimensional e rígida, com quatro componentes principais (mnemônico CAVE): **cavo, aduto, varo e equino**.\n\n**Supinação e pronação: um ponto que confunde.**\n- O **pé como um todo** está **supinado** (a planta voltada para medial e para cima), porque o calcâneo está invertido (varo) e o mediopé está aduzido.\n- Dentro do pé, porém, o **antepé está pronado em relação ao retropé**: o primeiro metatarso está em flexão plantar maior que os laterais, e é isso que forma o **cavo**. Por esse motivo, no método de Ponseti, a primeira manobra é **supinar o antepé** (elevar o primeiro metatarso) para alinhá-lo ao retropé supinado.\n\n**Resumo dos componentes.**\n\n| Componente | Localização |\n|---|---|\n| Cavo | Mediopé (primeiro raio em flexão plantar) |\n| Aduto | Antepé e mediopé |\n| Varo | Retropé (calcâneo invertido) |\n| Equino | Retropé e tornozelo |\n| Supinação | Pé como um todo |\n\n**Exame do recém-nascido.** Pé pequeno, calcanhar alto e vazio, prega medial profunda, prega posterior, borda lateral convexa, rigidez à tentativa de correção passiva. A gravidade é medida pelas escalas de Pirani e Dimeglio.\n\n> Pé torto: cavo, varo, equino, aduto e supinado.",
+  "correta": "**B: Pé cavo, varo, equino, aduto e supinado.** O pé torto congênito associa cavo, aduto, varo e equino, com o pé como um todo em supinação. O detalhe é que, dentro do pé, o antepé está pronado em relação ao retropé, o que cria o cavo; mas, em relação à perna, o pé está supinado.",
+  "incorretas": {
+   "A": "**\"Pronado\"** descreve a posição do antepé em relação ao retropé, mas não o pé como um todo, que está supinado. A descrição global do pé torto usa supinação.",
+   "C": "**\"Dorsifletido e pronado\"** contradiz o equino (flexão plantar), componente fundamental do pé torto. Dorsiflexão com valgo seria o padrão do pé calcaneovalgo.",
+   "D": "**\"Valgo\"** é o oposto do varo do retropé presente no pé torto. A combinação com valgo descreveria outra deformidade."
+  },
+  "referencias": [
+   "Ponseti IV. Congenital Clubfoot: Fundamentals of Treatment. Oxford University Press; 1996.",
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Pé torto congênito."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "pediatria-0875": {
+  "conceito": "**Etiologia do pé torto congênito idiopático.** A causa exata ainda não é conhecida, e o modelo atual é **multifatorial**, com componentes genéticos e ambientais. Várias teorias foram propostas.\n\n**Teorias principais.**\n- **Neuromuscular**: alterações nos músculos da região posterior e medial da perna, inervados pelo **nervo tibial** (tríceps sural, tibial posterior, flexores longos), com mudança na proporção de tipos de fibras, músculos menores e tendões encurtados. A disfunção nesse território e na velocidade de crescimento das estruturas que ele inerva explicaria o desequilíbrio que leva à deformidade.\n- **Fibrose retrátil**: estudos histológicos (Ippolito e Ponseti) mostraram **aumento** de colágeno e de fibroblastos (miofibroblastos) nos ligamentos e tendões mediais e posteriores, que se retraem. É um aumento, não diminuição, da síntese de colágeno.\n- **Parada do desenvolvimento**: o pé ficaria preso em uma fase do desenvolvimento fetal em que normalmente está em equino e varo.\n- **Vascular**: anomalias da artéria tibial anterior foram observadas em alguns pacientes.\n- **Genética**: genes como PITX1 e TBX4 foram associados; o risco aumenta com parentes afetados.\n- **Ambientais**: tabagismo materno, oligoidrâmnio, amniocentese precoce.\n\n**Osso-chave.** O **tálus** é o osso com maior deformidade intrínseca (colo desviado medial e plantarmente). O navicular, o calcâneo e o cuboide estão deslocados **medialmente** em torno do tálus.\n\n> Pé torto idiopático: etiologia multifatorial, com evidências de alteração neuromuscular no território do nervo tibial e de fibrose retrátil.",
+  "correta": "**C: A deformidade parece ser induzida por uma disfunção no território abrangido pelo nervo tibial e na velocidade de crescimento das estruturas inervadas por ele.** É uma das teorias mais aceitas: os músculos posteromediais da perna, inervados pelo nervo tibial, mostram alterações de fibras e de crescimento, gerando o desequilíbrio que produz o equino, o varo e a adução.",
+  "incorretas": {
+   "A": "**A fibrose está relacionada ao aumento, não à diminuição, da síntese de colágeno.** Estudos histológicos mostraram excesso de colágeno e miofibroblastos nos tecidos mediais e posteriores retraídos.",
+   "B": "**Falha no molde cartilaginoso** foi proposta para os ossos do tarso (especialmente o tálus), não para os ossos da perna. A tíbia e a fíbula são, em geral, normais no pé torto idiopático.",
+   "D": "**O osso-chave é o tálus**, que tem a maior deformidade intrínseca. O navicular está desviado medialmente (e não dorsalmente) em torno da cabeça do tálus."
+  },
+  "referencias": [
+   "Ippolito E, Ponseti IV. Congenital club foot in the human fetus: a histological study. J Bone Joint Surg Am. 1980;62(1):8-22.",
+   "Dobbs MB, Gurnett CA. Update on clubfoot: etiology and treatment. Clin Orthop Relat Res. 2009;467(5):1146-1153."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
  "pediatria-0880": {
   "conceito": "**O dilema após a radioterapia de um glioma.** Depois de tratar um astrocitoma maligno com cirurgia e radioterapia, uma nova lesão que capta contraste no mesmo local pode ser **recidiva do tumor** ou **radionecrose** (lesão do tecido cerebral pela radiação). Na ressonância convencional, as duas podem ser muito parecidas. Existe ainda a pseudoprogressão, uma reação inflamatória precoce, nos primeiros meses após a radioquimioterapia, que melhora sozinha.\n\n**A espectroscopia por ressonância.** Mede a concentração de metabólitos no tecido, mostrando um gráfico de picos.\n\n| Metabólito | O que representa | No tumor | Na radionecrose |\n|---|---|---|---|\n| Colina | Renovação de membranas celulares (proliferação) | **Elevada** | Baixa ou normal |\n| N-acetilaspartato (NAA) | Neurônios viáveis | Baixo | Baixo |\n| Creatina | Metabolismo energético | Baixa | Variável |\n| Lactato e lipídios | Necrose, metabolismo anaeróbio | Podem estar presentes | **Elevados** |\n\nA **colina elevada**, com aumento das relações colina/NAA e colina/creatina, indica proliferação celular ativa e sugere **recidiva tumoral**. Na radionecrose, há morte celular sem proliferação: a colina cai e predominam lipídios e lactato.\n\n**Outros exames que ajudam.** A **perfusão por ressonância** mostra volume sanguíneo aumentado no tumor (pela neovascularização) e diminuído na radionecrose. O PET com aminoácidos também diferencia. Quando a dúvida persiste, a biópsia ou a ressecção confirmam.\n\n**O tempo.** A radionecrose costuma aparecer de 6 meses a alguns anos após a radioterapia, por isso o tempo de 16 meses não descarta nenhuma das duas. É a espectroscopia que inclina o diagnóstico.\n\n> Nova lesão após radioterapia de glioma: colina elevada na espectroscopia sugere recidiva. Radionecrose: colina baixa, lipídios e lactato altos.",
   "correta": "**D: recidiva tumoral.** A colina reflete a renovação das membranas celulares e aumenta quando há proliferação ativa. Numa lesão nova no local de um astrocitoma maligno tratado, colina elevada na espectroscopia sugere recidiva do tumor. A radionecrose, ao contrário, mostra queda da colina e aumento de lipídios e lactato. A perfusão por ressonância, com volume sanguíneo aumentado, reforça o diagnóstico, e a biópsia confirma quando necessário.",
