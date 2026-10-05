@@ -3546,17 +3546,18 @@
   "conferido": false
  },
  "coluna-0310": {
-  "conceito": "### Quando pedir imagem da cervical sem dor\n- Critérios **NEXUS**: dispensa imagem se houver\n  - ausência de dor na linha média;\n  - ausência de déficit focal;\n  - estado de alerta normal;\n  - ausência de intoxicação;\n  - ausência de ==lesão dolorosa que distraia== (distracting injury).\n- Uma **fratura de fêmur** é o exemplo clássico de lesão que distrai: obriga a investigar a cervical mesmo sem dor.\n\n> **Na prova:** paciente sem dor cervical, mas com ==lesão que distrai== = imagem.",
-  "correta": "**Associação com fratura de fêmur.**",
+  "conceito": "**Quando pedir imagem da coluna cervical no trauma.** Todo politraumatizado é tratado como portador de lesão cervical até prova em contrário. Por outro lado, radiografar todos é caro e expõe a radiação. Regras de decisão clínica identificam quem pode ser **liberado só com o exame clínico**.\n\n**Critérios NEXUS (Hoffman e colaboradores).** O paciente dispensa imagem se tiver **todos** os cinco:\n\n| Critério | Por quê |\n|---|---|\n| Sem dor à palpação da linha média posterior | Fratura costuma doer no local |\n| Sem déficit neurológico focal | Déficit sugere lesão medular ou radicular |\n| Estado de alerta normal | Confusão impede avaliação confiável |\n| Sem intoxicação | Álcool e drogas mascaram a dor |\n| **Sem lesão dolorosa que distraia** | **Dor intensa em outro local mascara a dor cervical** |\n\n**A lesão que distrai.** Uma lesão muito dolorosa em outra região, como uma **fratura de fêmur**, de ossos longos, queimaduras extensas ou lesões viscerais, pode \"abafar\" a percepção da dor no pescoço. O paciente pode negar dor cervical mesmo com fratura. Por isso, a **ausência de dor** só é confiável **sem** lesão distratora.\n\n**A regra canadense** (Canadian C-spine rule) é alternativa, que considera fatores de alto risco (idade de 65 anos ou mais, mecanismo perigoso, parestesias) e testa a rotação ativa do pescoço.\n\n**Exame de imagem.** Em adultos com indicação, a **tomografia** é hoje o exame de escolha (mais sensível que a radiografia); ressonância para lesões ligamentares e medulares.\n\n> Paciente sem dor cervical, mas com lesão dolorosa que distrai (como fratura de fêmur): fazer imagem da cervical.",
+  "correta": "**A: associação com fratura de fêmur.** A fratura de fêmur é o exemplo clássico de lesão dolorosa que distrai: a dor intensa pode mascarar a dor cervical, e o critério NEXUS deixa de ser aplicável, exigindo exame de imagem.",
   "incorretas": {
-   "B": "**Óbito de outro ocupante** é critério de gravidade para triagem, não do NEXUS.",
-   "C": "**Não usar capacete** não é critério isolado.",
-   "D": "O **tempo até o PS** não é critério."
+   "B": "**O óbito de outra pessoa no acidente** indica alta energia e entra em critérios de triagem para centro de trauma, mas não está entre os critérios NEXUS para indicar imagem da cervical.",
+   "C": "**O não uso de capacete** aumenta o risco de traumatismo craniano, mas não é critério isolado do NEXUS para imagem cervical.",
+   "D": "**O tempo de chegada ao pronto-socorro** não faz parte dos critérios de decisão para imagem da coluna cervical."
   },
   "referencias": [
-   "Canale & Beaty: Campbell's Operative Orthopaedics, 11th Ed., p. 1761 (referência indicada na prova TARO 2013, questão 77)"
+   "Canale & Beaty: Campbell's Operative Orthopaedics, 11th Ed., p. 1761 (referência indicada na prova TARO 2013, questão 77)",
+   "Hoffman JR, Mower WR, Wolfson AB, Todd KH, Zucker MI. Validity of a set of clinical criteria to rule out injury to the cervical spine in patients with blunt trauma. N Engl J Med. 2000;343(2):94-99."
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "coluna-0311": {
@@ -3698,19 +3699,20 @@
   "conferido": false
  },
  "coluna-0320": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "C",
-  "conceito": "**Acesso cervical anterior.** O nervo laríngeo recorrente tem trajeto mais previsível à esquerda (contorna a aorta); à direita contorna a subclávia e é mais vulnerável. Muitos preferem o acesso à esquerda.\n\n**Na prova:** acesso cervical anterior pela esquerda protege o laríngeo recorrente.",
-  "correta": "**Esquerda, para evitar a lesão do nervo laríngeo recorrente.** O laríngeo recorrente é mais previsível à esquerda.",
+  "conceito": "**Acesso anterior à coluna cervical e o nervo laríngeo recorrente.** O acesso anterior (Smith-Robinson) é a via padrão para discectomia e artrodese cervical (C3 a T1). Passa entre o feixe carotídeo (lateral) e a traqueia e o esôfago (medial), com retração destas estruturas.\n\n**O nervo laríngeo recorrente.** É ramo do **vago** que inerva quase toda a musculatura intrínseca da laringe. Sua lesão causa **rouquidão** (paralisia da corda vocal), a complicação neurológica mais comum do acesso anterior (temporária em uma parcela importante; permanente em menos de 3%).\n\n**Diferença de trajeto entre os lados.**\n\n| Lado | Trajeto do recorrente | Implicação |\n|---|---|---|\n| **Esquerdo** | Desce até o tórax, **contorna o arco aórtico** e sobe no sulco traqueoesofágico | Trajeto **mais longo, vertical e previsível**, protegido no sulco |\n| Direito | **Contorna a artéria subclávia**, mais alto, e cruza o campo obliquamente | Mais exposto, sobretudo em acessos baixos (C6-T1); raramente não recorrente |\n\nEbraheim e colaboradores mostraram, em estudo anatômico, a maior vulnerabilidade do nervo à direita nos acessos à coluna cervical baixa. Por isso, muitos autores e a referência adotada preferem o **acesso pela esquerda**.\n\n**Contraponto.** Na prática, muitos cirurgiões destros operam pela direita por conforto, e estudos clínicos não mostraram diferença consistente na taxa de paralisia entre os lados; a causa principal parece ser a **compressão do nervo pelo afastador** contra a traqueia (reduzida desinsuflando e reinsuflando o balonete do tubo após posicionar os afastadores). Pelo lado esquerdo, há o **ducto torácico** a considerar em acessos baixos.\n\n> Acesso cervical anterior pela esquerda: o recorrente tem trajeto mais previsível e protegido.",
+  "correta": "**C: esquerda, para evitar a lesão do nervo laríngeo recorrente (resposta pela bibliografia).** À esquerda, o recorrente contorna o arco aórtico e sobe de forma previsível no sulco traqueoesofágico; à direita, contorna a subclávia e cruza o campo, mais vulnerável.",
   "incorretas": {
-   "A": "**Esquerda, para evitar a lesão do nervo vago.** O vago fica na bainha carotídea e não define o lado.",
-   "B": "**Direita, para evitar a lesão do nervo vago.** O vago não define o lado.",
-   "D": "**Direita, para evitar a lesão do nervo laríngeo recorrente.** À direita o laríngeo recorrente é mais vulnerável."
+   "A": "**Esquerda para proteger o vago**: o vago fica dentro da bainha carotídea, que é retraída lateralmente em qualquer dos lados; o motivo da escolha é o recorrente.",
+   "B": "**Direita para proteger o vago**: o vago não é o critério, e o lado direito é justamente o de maior risco para o recorrente.",
+   "D": "**Direita para proteger o recorrente** inverte a anatomia: é à direita que o recorrente tem trajeto mais alto e oblíquo, mais exposto."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 1991."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 1991.",
+   "Ebraheim NA, Lu J, Skie M, Heck BE, Yeasting RA. Vulnerability of the recurrent laryngeal nerve in the anterior approach to the lower cervical spine. Spine (Phila Pa 1976). 1997;22(22):2664-2667."
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "C",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "coluna-0321": {
