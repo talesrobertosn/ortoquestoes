@@ -2905,14 +2905,18 @@
   "conferido": false
  },
  "pediatria-0248": {
-  "conceito": "### Obstáculos à redução na DDQ\n| Extra-articulares | Intra-articulares |\n|---|---|\n| iliopsoas (estrangula a cápsula em ampulheta) | ==cápsula constrita== (istmo) |\n| adutores | lábio invertido (limbo) |\n| | pulvinar hipertrofiado |\n| | ligamento redondo alongado e espesso |\n| | ligamento transverso do acetábulo |\n\n- Na DDQ tardia, a ==constrição capsular== (ampulheta pelo psoas) é o obstáculo principal segundo a fonte.\n\n### Conduta\n| Idade | Tratamento |\n|---|---|\n| < 6 meses | Pavlik |\n| 6 a 18 meses | redução fechada + gesso (artrografia) |\n| > 18 meses | ==redução aberta== ± osteotomia femoral encurtadora e pélvica |\n\n### Controle pós-redução\n- ==TC ou RM== com poucos cortes após o gesso: confirma a cabeça ==concêntrica== no acetábulo.\n- Na TC axial: metáfise femoral alinhada ao centro do acetábulo (trirradiada), sem deslocamento posterior.\n\n> **Na prova:** imagem pós-redução = ==ambos os quadris reduzidos==",
-  "correta": "**Ambos reduzidos.**\n- Cabeças centradas nos acetábulos.\n- TC confirma a redução no gesso.",
+  "conceito": "**A imagem.** Tomografia em **corte axial** da pelve de uma criança com displasia do desenvolvimento do quadril, feita **após redução fechada** e com o **gesso pelvipodálico** (spica) visível ao redor. Os lados estão marcados: **D** (direito) e **E** (esquerdo). Em ambos os lados, a **cabeça femoral** (o núcleo de ossificação) está **dentro do acetábulo**, voltada para a cartilagem trirradiada, e não desviada para trás ou para fora: **os dois quadris estão reduzidos**.\n\n**Por que fazer imagem depois da redução.** Após a redução fechada (ou aberta) e a colocação do gesso, é obrigatório **confirmar** que a cabeça permaneceu no acetábulo. Dentro do gesso, a radiografia simples é difícil de interpretar, e o quadril pode **reluxar para trás** durante a confecção do gesso sem que se perceba.\n\n**Como ler a tomografia (ou a ressonância).**\n- No corte axial, a cabeça femoral deve estar **centrada** no acetábulo, alinhada com a **cartilagem trirradiada**.\n- Na luxação, a cabeça fica **posterior** ao acetábulo (e lateral), atrás do ísquio.\n- Uma linha traçada ao longo do colo deve apontar para a cartilagem trirradiada.\n\n**Hoje se prefere a ressonância** com protocolo rápido, que evita radiação e mostra também a cartilagem e as partes moles.\n\n**Os obstáculos à redução na DDQ.**\n\n| Extra-articulares | Intra-articulares |\n|---|---|\n| Iliopsoas, que estrangula a cápsula em ampulheta | **Cápsula constrita** (istmo) |\n| Adutores encurtados | Lábio invertido (limbo) |\n| | Pulvinar hipertrofiado, ligamento redondo alongado, ligamento transverso do acetábulo |\n\nSe a redução fechada não é **estável e concêntrica** dentro da \"zona de segurança\" de Ramsey (entre a abdução que reluxa e a que arrisca necrose), está indicada a **redução aberta**.",
+  "correta": "**Correta: B (ambos os quadris reduzidos).** No corte axial, as duas cabeças femorais estão centradas nos acetábulos, alinhadas com a cartilagem trirradiada, sem desvio posterior: os dois quadris estão reduzidos após a redução incruenta.",
   "incorretas": {
-   "A": "**Não luxados.**\n- Centrados.",
-   "C": "**Direito reduzido.**\n- Ambos.",
-   "D": "**Esquerdo reduzido.**\n- Ambos."
+   "A": "Na luxação, a cabeça femoral fica **posterior e lateral** ao acetábulo, atrás do ísquio, o que não se vê em nenhum dos lados.",
+   "C": "O quadril **direito** (D) também mostra a cabeça centrada no acetábulo, sem desvio posterior.",
+   "D": "O quadril **esquerdo** (E) está igualmente reduzido, com a cabeça dentro do acetábulo."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Lovell and Winter's Pediatric Orthopaedics, 7ª edição (Weinstein, Flynn)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0249": {

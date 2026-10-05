@@ -1532,25 +1532,32 @@
   "conferido": false
  },
  "trauma-0131": {
+  "conceito": "**Duas luxações com mecanismos opostos.** As luxações traumáticas do quadril resultam de trauma de alta energia, quase sempre acidentes automobilísticos. A direção depende da **posição do membro** no momento do impacto.\n\n| Aspecto | Luxação **posterior** (85 a 90%) | Luxação **anterior** (10 a 15%) |\n|---|---|---|\n| Posição do membro | Quadril **fletido**, **aduzido** e **rodado medialmente** | **Abdução** e **rotação lateral** forçadas |\n| Mecanismo típico | Joelho batendo no painel do carro | Queda, acidentes de moto, forças em abdução |\n| Aspecto clínico | Membro **encurtado, aduzido e rodado internamente** | Membro em **abdução e rotação externa** |\n| Lesão associada | Nervo **isquiático**, fratura da parede posterior | Nervo e vasos **femorais**, fratura da cabeça femoral |\n\n**O mecanismo da luxação anterior.** Com o quadril em **abdução e rotação lateral** forçadas, o colo femoral bate na borda do acetábulo e funciona como alavanca; a cabeça sai pela parte **anteroinferior** da cápsula, que é mais fraca, abaixo do ligamento iliofemoral.\n- Com o quadril em **extensão**, a cabeça vai para cima: luxação **superior** (púbica ou ilíaca).\n- Com o quadril em **flexão**, a cabeça vai para baixo: luxação **inferior** (obturatória).\n\n**Conduta.** A luxação do quadril é uma **emergência ortopédica**: redução o mais rápido possível (idealmente em até **6 horas**) para reduzir o risco de **necrose avascular** da cabeça femoral. A redução da luxação anterior é feita com tração em linha, leve flexão e **rotação interna** e adução, com contratração da pelve. Depois, tomografia para avaliar fraturas associadas e fragmentos intra-articulares.\n\n**A lesão de impacto da cabeça.** Na luxação anterior, a cabeça femoral frequentemente se fratura ou sofre impacto contra a borda acetabular, o que aumenta o risco de artrose.",
+  "correta": "**Correta: D (lateral e abdução).** Na luxação anterior traumática do quadril, o membro está em **abdução e rotação lateral** forçadas, o que leva a cabeça a sair pela cápsula anteroinferior.",
   "incorretas": {
-   "A": "Rotação medial com adução é o mecanismo da luxação posterior.",
-   "B": "A adução não luxa o quadril para a frente.",
-   "C": "A rotação medial leva a cabeça para trás."
+   "A": "**Rotação medial e adução**, com o quadril fletido, é o mecanismo da luxação **posterior**.",
+   "B": "A rotação lateral está certa, mas a luxação anterior ocorre em **abdução**, e não em adução.",
+   "C": "A abdução está certa, mas a rotação é **lateral**; a rotação medial favorece a luxação posterior."
   },
-  "conceito": "A **luxação anterior do quadril** (10 a 15% das luxações) tem o mecanismo **oposto** ao da posterior:\n\n**luxação anterior**: **abdução** e **rotação lateral** forçadas, às vezes com extensão;\n\n**luxação posterior**: **adução** e **rotação medial**, com o quadril fletido (joelho no painel).\n\n**Como acontece a anterior**: o tendão do **iliopsoas**, que cruza a frente da cápsula, funciona como **fulcro**. A cabeça faz alavanca sobre ele e rompe a cápsula na região inferomedial.\n\n**Os tipos**: **superior** (púbica), com o quadril em extensão; **inferior** (obturatória), com o quadril em flexão, a mais comum.\n\n**As complicações**: lesão dos **vasos femorais** (na superior), **impacção condral** da cabeça (principal causa de artrose depois) e necrose, menos que na posterior.\n\n**Na prova**: na luxação anterior, o membro está em **rotação lateral** e **abdução**.",
-  "correta": "A abdução com rotação lateral faz a cabeça alavancar sobre o iliopsoas e romper a cápsula anterior.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 9ª edição, capítulo de luxações do quadril"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0132": {
+  "conceito": "**A classificação de Robinson (Edimburgo).** Divide a clavícula em três regiões e, em cada uma, considera o **desvio** e o envolvimento **articular** ou a **cominuição**.\n- **Tipo 1**: terço **medial**.\n- **Tipo 2**: **diáfise** (o mais comum, cerca de 70 a 80%).\n- **Tipo 3**: terço **lateral**.\n\n**O terço lateral (tipo 3).**\n\n| Robinson | Desvio | Articulação |\n|---|---|---|\n| 3A1 | **Sem desvio** | Extra-articular |\n| **3A2** | **Sem desvio** | **Intra-articular** (acromioclavicular) |\n| 3B1 | Desviada | Extra-articular |\n| 3B2 | Desviada | Intra-articular |\n\n**A correspondência com Neer e Craig.** As classificações de **Neer** (modificada por **Craig**) para a clavícula distal se baseiam na relação do traço com os **ligamentos coracoclaviculares** e com a **articulação acromioclavicular**:\n- **Tipo I**: traço **lateral** aos ligamentos coracoclaviculares, com os ligamentos íntegros; estável.\n- **Tipo II**: traço que deixa o fragmento medial **sem a fixação** dos ligamentos coracoclaviculares; **instável**, alta taxa de pseudartrose.\n- **Tipo III**: traço que **entra na articulação acromioclavicular**, com ligamentos íntegros; pode evoluir para **artrose acromioclavicular**.\n- Craig acrescentou outros tipos (IV, fratura fisária com tubo periosteal na criança; V, cominutiva).\n\n**A fratura 3A2.** Lateral, **sem desvio** e **intra-articular** na acromioclavicular: corresponde ao **tipo III de Neer**.\n\n**Conduta.** O tipo III geralmente é tratado sem cirurgia, com tipoia; a artrose acromioclavicular dolorosa que pode surgir depois é tratada com ressecção da clavícula distal.",
+  "correta": "**Correta: C (III de Neer).** A fratura 3A2 de Robinson é do terço lateral, **sem desvio** e **intra-articular** na acromioclavicular, o que corresponde ao **tipo III de Neer**.",
   "incorretas": {
-   "A": "O Neer I é extra-articular, correspondente ao 3A1.",
-   "B": "O Craig II é a fratura desviada e instável.",
-   "D": "O Craig IV é a lesão da criança, com o tubo de periósteo."
+   "A": "O **tipo I de Neer** é extra-articular, lateral aos ligamentos coracoclaviculares, equivalente ao **3A1** sem desvio.",
+   "B": "O **tipo II** (Neer/Craig) é a fratura com fragmento medial **desviado**, sem a fixação dos ligamentos coracoclaviculares, mais próxima do grupo **3B**.",
+   "D": "O **tipo IV de Craig** é a fratura fisária da criança, com o osso saindo do tubo periosteal, o que não corresponde ao 3A2."
   },
-  "conceito": "**Robinson** classifica a clavícula em três regiões (1 medial, 2 diáfise, 3 lateral) e, em cada uma, pelo **desvio** e pela **articulação**:\n\n**3A**: lateral **sem desvio**: **3A1** extra-articular; **3A2** **intra-articular**, na acromioclavicular;\n\n**3B**: lateral **desviada**: 3B1 extra-articular; 3B2 intra-articular.\n\n**A correspondência com Neer e Craig** (clavícula distal):\n\n**Neer I**: extra-articular, sem desvio, com os coracoclaviculares íntegros (3A1);\n\n**Neer II** (Craig IIA e IIB): desviada, instável, com perda do apoio coracoclavicular do fragmento medial (3B1);\n\n**Neer III**: **intra-articular**, na acromioclavicular, **sem desvio** (3A2); pode evoluir para artrose acromioclavicular;\n\n**Craig IV**: na criança, fragmento fora do tubo de periósteo;\n\n**Craig V**: cominutiva.\n\n**Na prova**: a fratura **Robinson 3A2** corresponde ao tipo **III de Neer**.",
-  "correta": "O 3A2 é lateral, sem desvio e intra-articular na acromioclavicular, como o Neer III.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Robinson CM. Fractures of the clavicle in the adult. Epidemiology and classification. J Bone Joint Surg Br. 1998;80(3):476-484.",
+   "Rockwood and Green's Fractures in Adults, 9ª edição, capítulo de fraturas da clavícula"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0133": {
@@ -2278,14 +2285,18 @@
   "conferido": false
  },
  "trauma-0200": {
+  "conceito": "**As fraturas do acrômio.** São raras, cerca de 8 a 10% das fraturas da escápula. Ocorrem por trauma direto de cima para baixo, por luxação superior da cabeça do úmero ou como **fratura por estresse** após artroplastia reversa do ombro (o deltoide tensionado traciona o acrômio).\n\n**Antes de tudo: não confundir com o os acromiale.** O acrômio se forma a partir de três ou quatro centros de ossificação que se fundem entre 18 e 25 anos. Se um não se fundir, fica o **os acromiale**, presente em cerca de 8% das pessoas, **bilateral** em cerca de 60%, com **bordas lisas e corticalizadas**. A fratura tem bordas irregulares e história de trauma.\n\n**A classificação de Kuhn** se baseia no **desvio** e no efeito sobre o **espaço subacromial**.\n\n| Tipo | Descrição | Conduta |\n|---|---|---|\n| I | **Sem desvio** ou desvio mínimo (IA avulsão, IB fratura completa) | Não cirúrgico |\n| II | **Desviada**, mas **sem reduzir** o espaço subacromial | Geralmente não cirúrgico |\n| **III** | **Desvio inferior** com **redução do espaço subacromial** | **Cirúrgico** |\n\n**Por que o tipo III é cirúrgico.** O fragmento desviado para baixo **invade o espaço subacromial** e funciona como um impacto mecânico permanente sobre o manguito rotador e a bursa, limitando a elevação do braço e causando dor. A fixação (placa, banda de tensão ou parafusos) restaura o espaço.\n\n**Lesões associadas.** Fraturas do acrômio por trauma de alta energia se associam a lesões do **manguito rotador**, do **plexo braquial** e a outras fraturas da cintura escapular (complexo suspensório superior do ombro). Lesões duplas desse complexo podem tornar o ombro instável e indicam fixação.",
+  "correta": "**Correta: C (tipo III).** Na classificação de Kuhn, a fratura do acrômio com **desvio inferior** e **redução do espaço subacromial** é do tipo III, geralmente com indicação cirúrgica.",
   "incorretas": {
-   "A": "O tipo I não tem desvio.",
-   "B": "O tipo II é desviado, mas sem reduzir o espaço subacromial.",
-   "D": "Não existe tipo IV na classificação de Kuhn."
+   "A": "O **tipo I** é a fratura sem desvio ou com desvio mínimo.",
+   "B": "O **tipo II** é desviado, mas **não** reduz o espaço subacromial.",
+   "D": "A classificação de Kuhn tem apenas **três tipos**."
   },
-  "conceito": "As **fraturas do acrômio** são raras. Antes de tudo, diferenciar do **os acromiale** (núcleo de ossificação que não se fundiu): bordas **lisas** e **bilateral** em cerca de 60% dos casos.\n\n**Kuhn** classifica pelo **desvio** e pelo efeito no **espaço subacromial**:\n\n**tipo I**: **sem desvio** ou com desvio mínimo;\n\n**tipo II**: **desviada**, mas **sem reduzir** o espaço subacromial;\n\n**tipo III**: desviada para **baixo**, **reduzindo** o espaço subacromial.\n\n**Por que o tipo III importa**: o fragmento abaixado bate no **manguito rotador** e causa **impacto**. É indicação de **fixação** (banda de tensão, parafusos ou placa).\n\n**A fratura por estresse do acrômio**: aparece após a **artroplastia reversa** do ombro, porque o deltoide fica mais tenso.\n\n**Na prova**: a fratura do acrômio desviada para baixo, com espaço subacromial comprometido, é **Kuhn tipo III**.",
-  "correta": "No tipo III, o fragmento desce e reduz o espaço subacromial, com impacto no manguito: indicação de fixação.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Kuhn JE, Blasier RB, Carpenter JE. Fractures of the acromion process: a proposed classification system. J Orthop Trauma. 1994;8(1):6-13.",
+   "Rockwood and Matsen's The Shoulder, 5ª edição"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0201": {
@@ -6538,17 +6549,17 @@
   "conferido": false
  },
  "trauma-0801": {
+  "conceito": "**A região subtrocantérica.** Vai do **trocânter menor** até cerca de **5 cm abaixo** dele. É a zona do fêmur com as **maiores tensões**: compressão na cortical medial e tração na lateral, várias vezes o peso corporal a cada passo. As fraturas nessa região consolidam devagar e sobrecarregam os implantes.\n\n**Por que o fragmento proximal se desvia.** Muitos músculos potentes se inserem no fêmur proximal, e a fratura os deixa sem oposição.\n\n| Músculo | Inserção | Efeito no fragmento proximal |\n|---|---|---|\n| **Iliopsoas** | Trocânter menor | **Flexão** e rotação lateral |\n| **Glúteos médio e mínimo** | Trocânter maior | **Abdução** |\n| **Rotadores externos curtos** | Fossa trocantérica e trocânter maior | **Rotação lateral** |\n\nResultado: o fragmento proximal fica em **flexão, abdução e rotação lateral**.\n\n**O fragmento distal.** Os **adutores** o puxam para medial (**adução**), e os isquiotibiais e o quadríceps o encurtam (**translação proximal**).\n\n**A armadilha cirúrgica.** Se a haste cefalomedular é introduzida com o fragmento proximal ainda **fletido e abduzido**, o ponto de entrada fica lateral e a fratura consolida em **varo e flexão**, com risco de falha do implante e pseudartrose. Para reduzir:\n- alinhar o **fragmento distal ao proximal** (tração com o membro em abdução e flexão), em vez do contrário;\n- usar pinças percutâneas, alavancas (*joysticks*), bola de empurrar e, se necessário, **redução aberta** com cerclagem;\n- garantir o ponto de entrada correto da haste antes de fresar.",
+  "correta": "**Correta: B (flexão, abdução e rotação lateral).** O fragmento proximal da fratura subtrocantérica é puxado em **flexão** pelo iliopsoas, em **abdução** pelos glúteos médio e mínimo e em **rotação lateral** pelos rotadores externos curtos.",
   "incorretas": {
-   "A": "A flexão está certa, mas o proximal fica abduzido e em rotação lateral.",
-   "C": "O proximal fica fletido e abduzido, não estendido e aduzido.",
-   "D": "A abdução está certa, mas o proximal fica fletido e em rotação lateral."
+   "A": "A **adução** e a **rotação medial** não ocorrem no fragmento proximal; a adução é do fragmento **distal**, puxado pelos adutores.",
+   "C": "O fragmento proximal fica em **flexão**, e não em extensão, e em **abdução**, e não em adução.",
+   "D": "Erra a flexão e a rotação: o iliopsoas flete e os rotadores externos rodam lateralmente."
   },
-  "conceito": "Na **fratura subtrocantérica**, o **segmento proximal** fica preso apenas a músculos que puxam sem oposição:\n\n**iliopsoas**, no trocânter menor: **flexão**;\n\n**glúteos médio e mínimo**, no trocânter maior: **abdução**;\n\n**rotadores externos curtos**: **rotação lateral**.\n\nO segmento **distal** é puxado pelos **adutores** (adução) e encurtado.\n\n**A deformidade característica do proximal**: **flexão, abdução e rotação lateral**. Por isso a fratura tende a consolidar em **varo** e flexão se não for bem reduzida.\n\n**A redução**: levar o distal até o proximal, com o membro em flexão e abdução na mesa de tração, ou com redução aberta (pinças, cerclagem, pinos de Schanz) antes de passar a haste cefalomedular.\n\n**Na prova**: a deformidade do segmento proximal é **flexão, abdução e rotação lateral**.",
-  "correta": "O iliopsoas flete, os glúteos abduzem e os rotadores externos rodam lateralmente o segmento proximal.",
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.), Cap. 55"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0802": {
