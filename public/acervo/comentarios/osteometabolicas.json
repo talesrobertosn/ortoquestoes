@@ -900,16 +900,19 @@
   "formato": "corrido"
  },
  "osteometabolicas-0073": {
-  "conceito": "**A pista.** A acro-osteólise é a reabsorção do **tufo** da falange distal, então a doença precisa acometer a **interfalângica distal**. A artropatia inflamatória da IFD é a **artrite psoriásica**, que vem com **unha alterada** (pontilhado, onicólise), **dactilite** e erosão do tufo; nas formas agressivas, o **lápis na taça** e o dedo em telescópio.\n\n**Fora das artrites**, a acro-osteólise também aparece na esclerose sistêmica, no hiperparatireoidismo, na exposição ao cloreto de vinila e nas lesões térmicas.\n\n**Na prova:** entre as artrites, acro-osteólise é **psoríase**.",
-  "correta": "**Psoriática.** Acomete a IFD e reabsorve o tufo da falange distal.",
+  "conceito": "**Acro-osteólise e artrite psoriásica.** Acro-osteólise é a **reabsorção do tufo** (extremidade distal) das falanges distais. Para que uma artrite cause essa alteração, ela precisa acometer a região da **interfalângica distal (IFD)** e o tufo, e a artrite inflamatória típica dessa região é a **artrite psoriásica**.\n\n**Por que a psoríase acomete a IFD e o tufo.** A artrite psoriásica é uma **entesite**: a inflamação começa nas inserções de tendões e ligamentos e se estende ao osso. Na IFD, a unha, o leito ungueal e a inserção do extensor terminal formam uma unidade anatômica (complexo da entese ungueal); por isso, a doença da unha (pontilhado, onicólise) anda junto com a artrite da IFD e com a reabsorção do tufo.\n\n**Achados radiográficos da artrite psoriásica.**\n- **Erosões marginais com proliferação óssea** (aspecto \"em orelha de rato\", espículas).\n- **Lápis na taça** (pencil-in-cup), nas formas mutilantes.\n- **Acro-osteólise** do tufo.\n- **Periostite** e **dactilite** (dedo em salsicha).\n- Distribuição **assimétrica**, em raio (todo um dedo), sem osteopenia justa-articular importante.\n\n**Comparação.**\n\n| Artrite | Local típico | Achado |\n|---|---|---|\n| Reumatoide | MCF, IFP, punho, simétrica | Osteopenia justa-articular, erosões marginais, sem proliferação |\n| **Psoriásica** | **IFD**, em raio, assimétrica | **Erosão com proliferação, lápis na taça, acro-osteólise** |\n| Gota | Primeira MTF, mãos | Erosões em saca-bocado com borda pendente, tofos |\n| Lúpus | Mãos | Deformidades redutíveis (Jaccoud), sem erosões |\n\n**Outras causas de acro-osteólise.** Esclerodermia (com calcinose), hiperparatireoidismo, queimaduras e congelamento, exposição ao cloreto de vinila, síndrome de Hajdu-Cheney, neuropatias (hanseníase, diabetes).\n\n> Acro-osteólise em paciente com artrite da IFD e alteração ungueal: artrite psoriásica.",
+  "correta": "**B: psoriática.** A artrite psoriásica acomete a interfalângica distal e o tufo por meio da entesite, causando erosão com proliferação e acro-osteólise.",
   "incorretas": {
-   "A": "**Poupa a IFD.** A artrite reumatoide prefere as articulações mais proximais da mão.",
-   "C": "**Não é erosiva.** A artropatia de Jaccoud do lúpus é uma deformidade redutível.",
-   "D": "**Outro padrão.** A gota faz erosões em saca-bocado com borda saliente e tofos."
+   "A": "**A reumatoide** poupa a IFD na maioria dos casos e não causa acro-osteólise; acomete MCF, IFP e punho com osteopenia justa-articular.",
+   "C": "**A lúpica** causa deformidades redutíveis (artropatia de Jaccoud) sem erosões.",
+   "D": "**A gotosa** causa erosões em saca-bocado com borda pendente e tofos, não reabsorção do tufo."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Gladman DD, Antoni C, Mease P, Clegg DO, Nash P. Psoriatic arthritis: epidemiology, clinical features, course, and outcome. Ann Rheum Dis. 2005;64 Suppl 2:ii14-ii17.",
+   "Ritchlin CT, Colbert RA, Gladman DD. Psoriatic arthritis. N Engl J Med. 2017;376(10):957-970."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "osteometabolicas-0074": {
   "conceito": "**Por que a vitamina D é obrigatória.** Sem ela, o cálcio ingerido **não é absorvido**, e o antirreabsortivo trabalha num organismo que continua retirando cálcio do osso. Para adultos mais velhos com osteoporose, a recomendação é de **pelo menos 800 UI por dia**, na faixa de 800 a 1.000 UI; foi com doses assim, associadas ao cálcio, que os ensaios mostraram **redução de fratura**. Doses menores, como as dos multivitamínicos comuns, muitas vezes não alcançam nível sérico suficiente.\n\n**Na prática**, deve-se dosar a **25-OH-vitamina D** e corrigir a deficiência antes de iniciar bisfosfonato ou denosumabe; deficiência importante exige dose de ataque, não só manutenção. O cálcio deve vir preferencialmente da dieta, completado com suplemento se necessário.\n\n**Na prova:** vitamina D na osteoporose é **no mínimo 700 a 800 UI por dia**.",

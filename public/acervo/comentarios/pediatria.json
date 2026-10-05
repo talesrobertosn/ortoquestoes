@@ -3687,14 +3687,18 @@
   "conferido": false
  },
  "pediatria-0339": {
-  "conceito": "### O perfil da forma oligoarticular\nA forma **mais comum** da AIJ:\n- ==Meninas pequenas, entre 2 e 4 anos==.\n- **Até 4 articulações** nos primeiros 6 meses, quase sempre o **joelho**.\n- **FAN positivo** com frequência.\n\n### O que mais importa: a uveíte\n- **Uveíte anterior crônica**, com risco alto nesse grupo.\n- **Silenciosa:** não dói, não avermelha o olho.\n- Pode levar a perda visual antes de qualquer queixa.\n- Exige **lâmpada de fenda** em intervalos regulares.\n\n### Para o ortopedista\n- Joelho com derrame crônico pode causar **discrepância de membros** (hipercrescimento do lado inflamado) e contratura em flexão.\n- Infiltração intra-articular de corticoide é opção comum.\n\n> **Na prova:** AIJ oligoarticular = ==menina de 2 a 4 anos==, joelho, FAN+, uveíte.",
-  "correta": "**Meninas entre 2 e 4 anos.**",
+  "conceito": "**Artrite idiopática juvenil oligoarticular.** A artrite idiopática juvenil (AIJ) é a artrite crônica (mais de 6 semanas) de causa desconhecida que começa antes dos 16 anos. A classificação da ILAR (Petty e colaboradores) divide-a em subtipos, e a forma **oligoarticular** é a **mais comum** (cerca de metade dos casos).\n\n**Perfil.**\n- **Meninas pequenas**, com pico entre **2 e 4 anos**.\n- **Até 4 articulações** acometidas nos primeiros 6 meses; o **joelho** é a mais frequente, depois tornozelo; quadril raramente.\n- Criança geralmente com bom estado geral, às vezes com claudicação matinal e pouca dor.\n- **FAN positivo** em boa parte dos casos (marcador de risco de uveíte).\n\n**O ponto crítico: a uveíte.**\n- **Uveíte anterior crônica**, com risco alto nas meninas pequenas com FAN positivo.\n- **Silenciosa**: não dói, não deixa o olho vermelho; pode levar a sinéquias, catarata, glaucoma e perda visual antes de ser percebida.\n- Por isso, **rastreamento com lâmpada de fenda** a cada 3 meses nos grupos de maior risco.\n\n**Consequências ortopédicas.** O joelho inflamado sofre **hiperemia da fise**, levando a **hipercrescimento** do membro (discrepância com o membro acometido mais longo), valgo e contratura em flexão.\n\n**Comparação dos subtipos (ILAR, resumida).**\n\n| Subtipo | Perfil |\n|---|---|\n| **Oligoarticular** | **Meninas de 2 a 4 anos**, joelho, FAN+, uveíte |\n| Poliarticular FR negativo | Meninas, curva bimodal |\n| Poliarticular FR positivo | Adolescentes do sexo feminino, semelhante à AR do adulto |\n| Sistêmica (Still) | Febre, exantema, serosite; ambos os sexos |\n| Relacionada a entesite | Meninos acima de 6 anos, HLA-B27 |\n\n**Tratamento.** Anti-inflamatórios, infiltração intra-articular de corticoide; metotrexato e biológicos nas refratárias (Ravelli e Martini).\n\n> AIJ oligoarticular: meninas de 2 a 4 anos, joelho, FAN positivo e uveíte silenciosa.",
+  "correta": "**B: meninas, entre 2 e 4 anos.** A forma oligoarticular, a mais comum da AIJ, predomina em meninas pequenas, com pico entre 2 e 4 anos.",
   "incorretas": {
-   "A": "**Idade errada.**\n- A faixa é um pouco mais tardia.",
-   "C": "**Sexo e idade errados.**",
-   "D": "**Sexo errado.**\n- Predominam meninas."
+   "A": "**Meninas entre 1 e 2 anos**: o sexo está certo, mas o pico de incidência é um pouco mais tardio, entre 2 e 4 anos.",
+   "C": "**Meninos entre 1 e 2 anos** erra o sexo e a faixa etária.",
+   "D": "**Meninos entre 2 e 4 anos**: a idade está certa, mas o predomínio é feminino."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Ravelli A, Martini A. Juvenile idiopathic arthritis. Lancet. 2007;369(9563):767-778.",
+   "Petty RE, Southwood TR, Manners P, et al. International League of Associations for Rheumatology classification of juvenile idiopathic arthritis: second revision, Edmonton, 2001. J Rheumatol. 2004;31(2):390-392."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0340": {
@@ -4942,14 +4946,18 @@
   "conferido": false
  },
  "pediatria-0452": {
-  "conceito": "### Evolução angular fisiológica (Salenius)\n| Idade | Alinhamento |\n|---|---|\n| nascimento a 1,5-2 anos | ==varo== (máximo ao nascer) |\n| 1,5 a 2 anos | neutro |\n| ==3 a 4 anos== | ==valgo máximo== (cerca de 10 a 12°) |\n| 7 anos | valgo adulto (cerca de 5 a 7°) |\n\n### Sinais de patologia\n- Assimetria, deformidade fora da curva esperada, baixa estatura, dor, progressão.\n- Varo após 2 anos: Blount, raquitismo, displasias.\n- Valgo > 15° ou distância intermaleolar > 8 cm após 7 anos: investigar.\n\n### Tratamento do valgo patológico\n- ==Crescimento guiado== (placa em 8 medial) antes do fechamento fisário.\n\n> **Na prova:** valgo fisiológico máximo = ==por volta de 4 anos== (3 a 4).",
-  "correta": "**Dois a quatro anos.**\n- Valgo máximo por volta de 3 a 4 anos.\n- Estabiliza aos 7.",
+  "conceito": "**Evolução fisiológica do alinhamento do joelho.** O alinhamento dos membros inferiores muda bastante na infância, e conhecer a curva normal evita tratar o que é fisiológico. Salenius e Vankka mediram o ângulo tibiofemoral em crianças finlandesas e descreveram o padrão clássico.\n\n| Idade | Alinhamento |\n|---|---|\n| Nascimento | **Varo** (cerca de 15 graus), máximo ao nascer |\n| Cerca de 1,5 a 2 anos | **Neutro** |\n| **3 a 4 anos** | **Valgo máximo** (cerca de 10 a 12 graus) |\n| Cerca de 7 anos | Valgo do adulto (cerca de 5 a 7 graus) |\n\nHeath e Staheli estabeleceram limites normais por idade, úteis na consulta.\n\n**Por que essa sequência.** O varo do recém-nascido reflete a posição intrauterina; com o início da marcha e a carga, o crescimento da fise distal do fêmur e proximal da tíbia corrige o varo e \"ultrapassa\", gerando valgo, que depois se estabiliza.\n\n**Sinais de alerta (varo ou valgo patológico).**\n- **Assimetria** entre os lados.\n- Deformidade **fora da faixa etária** (varo após 2 anos; valgo acentuado após 7 anos).\n- **Progressão** em vez de melhora.\n- **Baixa estatura** ou outros sinais de displasia esquelética.\n- Dor, claudicação, deformidade localizada (angulação aguda).\n\n**Causas patológicas.** Varo: doença de Blount, raquitismo, displasias, sequela de fratura ou infecção. Valgo: raquitismo renal, sequela de fratura de Cozen, displasias, obesidade.\n\n**Conduta.** Fisiológico: orientação e observação. Patológico: investigar (radiografia panorâmica, exames metabólicos) e tratar a causa; hemiepifisiodese guiada para correção com o crescimento.\n\n> Joelho da criança: varo ao nascer, neutro por volta de 2 anos, valgo máximo aos 3 a 4 anos, alinhamento adulto por volta dos 7.",
+  "correta": "**B: dois e quatro anos.** O valgo fisiológico atinge o máximo por volta dos 3 a 4 anos (cerca de 10 a 12 graus) e depois diminui até o valgo do adulto por volta dos 7 anos.",
   "incorretas": {
-   "A": "**Varo fisiológico.**\n- Até cerca de 2 anos.",
-   "C": "**Diminuindo.**\n- Rumo ao adulto.",
-   "D": "**Adulto.**\n- Já estabilizado."
+   "A": "**Zero a dois anos** é o período do varo fisiológico, máximo ao nascer e neutralizando por volta de 2 anos.",
+   "C": "**Seis a oito anos** é quando o valgo já se reduziu ao padrão do adulto.",
+   "D": "**Oito a dez anos**: o alinhamento já é o do adulto; valgo acentuado nessa idade sugere causa patológica."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Salenius P, Vankka E. The development of the tibiofemoral angle in children. J Bone Joint Surg Am. 1975;57(2):259-261.",
+   "Heath CH, Staheli LT. Normal limits of knee angle in white children--genu varum and genu valgum. J Pediatr Orthop. 1993;13(2):259-262."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0453": {
@@ -5111,18 +5119,18 @@
   "conferido": false
  },
  "pediatria-0470": {
-  "conceito": "### Medula presa na mielomeningocele\n| Aspecto | Dado |\n|---|---|\n| ancoragem na RM | ==comum== (quase todos após o fechamento) |\n| síndrome clínica | ==cerca de 30%== |\n\n### Sinais de tração (síndrome clínica)\n- Perda de força ou piora da marcha.\n- ==Escoliose que progride rápido==, deformidade nova no pé.\n- Espasticidade nova, dor lombar.\n- Piora vesical ou intestinal.\n\n### Diferencial de deterioração\n- Disfunção da ==derivação== (hidrocefalia), siringomielia, Chiari II.\n\n### Conduta\n- RM isolada não indica cirurgia; ==correlação clínica== e desancoragem se deterioração.\n\n> **Na prova:** medula presa na MMC = ==comum na RM, sintomática em cerca de 30%==.",
-  "correta": "**Comum, 30% com sinais.**\n- Ancoragem radiológica é quase universal.\n- Só um terço tem síndrome clínica.",
+  "conceito": "**Medula presa na mielomeningocele: comum na imagem, sintomática em parte.** Após o fechamento da mielomeningocele ao nascimento, a medula cicatriza **aderida** ao local do reparo. Por isso, na **ressonância magnética**, praticamente **todos** os pacientes mostram medula baixa e ancorada (**medula presa radiológica**).\n\n**O que importa é a clínica.** Só uma parte desenvolve a **síndrome da medula presa**, em geral estimada em **cerca de 30%**, quando o crescimento da coluna **traciona** a medula fixa, causando isquemia e disfunção progressiva.\n\n**Sinais de tração.**\n- Perda de força, piora da marcha ou do nível funcional.\n- **Escoliose rapidamente progressiva**.\n- **Deformidade nova ou progressiva no pé** (cavo, equino, valgo).\n- **Espasticidade** nova, dor lombar ou nos membros inferiores.\n- Piora da função vesical ou intestinal.\n\n**Diferencial da deterioração neurológica.** Antes de atribuir ao ancoramento, excluir **disfunção da derivação ventriculoperitoneal** (hidrocefalia descompensada), **hidromielia** e **Chiari II** sintomático. As revisões da literatura sobre medula presa após o reparo destacam essa sequência de investigação.\n\n**Tratamento.** **Liberação cirúrgica** (desancoragem) quando há síndrome clínica; tende a estabilizar ou melhorar dor, espasticidade e progressão da escoliose, mas há risco de **reancoragem** (recidiva), que exige nova investigação.\n\n| Achado | Frequência |\n|---|---|\n| Medula presa na ressonância | **Quase todos** após o reparo |\n| Síndrome clínica de medula presa | **Cerca de 30%** |\n\n> Mielomeningocele: medula presa na ressonância é comum; sinais clínicos aparecem em cerca de 30%, e só eles indicam liberação.",
+  "correta": "**C: Comum e 30% dos pacientes tem sinais clínicos.** O ancoramento radiológico ocorre em quase todos após o reparo, mas a síndrome clínica (com déficits progressivos, escoliose rápida, deformidades novas) aparece em cerca de 30%.",
   "incorretas": {
-   "A": "**Não é rara.**\n- Proporção de sintomas certa.",
-   "B": "**Duplamente errada.**\n- Nem rara nem 70%.",
-   "D": "**Superestima.**\n- 70% sintomáticos não é o padrão."
+   "A": "**Rara com 30% sintomáticos**: a proporção clínica está certa, mas a medula presa na ressonância é comum, não rara.",
+   "B": "**Rara com 70% sintomáticos** erra a frequência radiológica e superestima a clínica.",
+   "D": "**Comum com 70% sintomáticos**: a frequência radiológica está certa, mas a maioria permanece assintomática; cerca de 30% desenvolvem sinais clínicos."
   },
   "referencias": [
    "Tethered Cord Syndrome After Myelomeningocele Repair: literature update. https://pmc.ncbi.nlm.nih.gov/articles/PMC7560491/",
    "Recurrent tethered cord: radiological investigation and management. https://pubmed.ncbi.nlm.nih.gov/24013330/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0471": {
@@ -10311,15 +10319,18 @@
   "conferido": false
  },
  "pediatria-0843": {
-  "conceito": "A complicação mais frequente da fratura supracondiliana do úmero na criança é a **consolidação viciosa em cúbito varo** (\"cotovelo em coronha de fuzil\").\n\n**A deformidade é tridimensional**: **varo** (o fragmento distal inclina medialmente), **extensão** (hiperextensão, com perda da flexão) e **rotação interna** do fragmento distal. A rotação interna facilita a inclinação em varo.\n\n**É sobretudo estética**: a função costuma ser boa; a correção, quando indicada, é a osteotomia supracondiliana.\n\n**Na prova**: cúbito varo = **varo + extensão + rotação interna**.",
-  "correta": "O cúbito varo combina varo, hiperextensão e rotação interna do fragmento distal.",
+  "conceito": "**Cúbito varo: a sequela mais frequente da fratura supracondiliana.** A fratura supracondiliana do úmero em extensão é a fratura do cotovelo mais comum na criança. Sua complicação tardia mais frequente é a **consolidação viciosa em cúbito varo**, o \"cotovelo em coronha de fuzil\" (gunstock).\n\n**A deformidade é tridimensional.**\n\n| Plano | Componente | Por quê |\n|---|---|---|\n| Coronal | **Varo** | O fragmento distal inclina medialmente (colapso da coluna medial, cominuição medial) |\n| Sagital | **Extensão** (hiperextensão) | O fragmento distal consolida angulado posteriormente; ganha-se extensão e perde-se flexão |\n| Axial | **Rotação interna** | O fragmento distal roda internamente; a rotação torna a fratura instável e facilita a inclinação em varo |\n\n**Por que a rotação interna importa.** Quando o fragmento distal roda internamente, a cortical lateral perde contato e o fragmento \"bascula\" sobre a coluna medial, inclinando em varo. Por isso, a redução deve corrigir a rotação, não só o varo e a extensão.\n\n**Como prevenir.** Redução anatômica com controle do **ângulo de Baumann** (comparar com o lado oposto), da **linha umeral anterior** (deve passar pelo terço médio do capítulo) e da integridade das colunas medial e lateral; fixação estável com fios (dois ou três laterais divergentes ou cruzados). Omid, Choi e Skaggs revisaram o tratamento.\n\n**Consequências.** Sobretudo estéticas; mas o cúbito varo pode causar instabilidade posterolateral tardia, neuropatia ulnar e aumento do risco de fratura do côndilo lateral. Não remodela, porque está fora do plano de movimento do cotovelo.\n\n**Tratamento.** Osteotomia supracondiliana valgizante (com correção da extensão e da rotação quando necessário), como revisado por Bauer e colaboradores.\n\n> Sequela típica da supracondiliana: cúbito varo com extensão e rotação interna; não remodela.",
+  "correta": "**C: varo, extensão e rotação interna.** O fragmento distal consolida inclinado medialmente (varo), angulado em extensão e rodado internamente, compondo o cúbito varo em coronha de fuzil.",
   "incorretas": {
-   "A": "O varo está certo, mas a deformidade é em extensão e rotação interna.",
-   "B": "Valgo é a deformidade menos comum; o padrão clássico é varo, extensão e rotação interna.",
-   "D": "A extensão e a rotação interna estão certas, mas o eixo é varo, não valgo."
+   "A": "**Varo, flexão e rotação externa**: o varo está certo, mas a fratura em extensão consolida em extensão, e a rotação é interna.",
+   "B": "**Valgo, flexão e rotação externa** descreve o oposto da deformidade típica.",
+   "D": "**Valgo, extensão e rotação interna**: a extensão e a rotação estão certas, mas a deformidade coronal é em varo; o valgo é mais associado às sequelas do côndilo lateral."
   },
-  "referencias": [],
-  "geradoEm": "2026-10-04T17:01:01+00:00",
+  "referencias": [
+   "Omid R, Choi PD, Skaggs DL. Supracondylar humeral fractures in children. J Bone Joint Surg Am. 2008;90(5):1121-1132.",
+   "Bauer AS, Pham B, Lattanza LL. Surgical correction of cubitus varus. J Hand Surg Am. 2016;41(3):447-452."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0844": {
