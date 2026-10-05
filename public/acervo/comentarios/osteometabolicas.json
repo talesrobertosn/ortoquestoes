@@ -427,17 +427,20 @@
   "formato": "corrido"
  },
  "osteometabolicas-0035": {
-  "conceito": "**A mesma divisão, ao contrário.** Aqui só podem entrar **hábitos**: qualquer característica que a pessoa não escolheu, como raça, herança ou doença, elimina a alternativa. **Má nutrição, sedentarismo e alcoolismo** são os três modificáveis.\n\n**Por que importa.** Os fatores comportamentais são os únicos sobre os quais a consulta pode agir: **parar de fumar**, **reduzir o álcool**, corrigir a ingestão de **cálcio e proteína** e fazer **exercício** de impacto e de resistência, com treino de **equilíbrio** para reduzir quedas.\n\n**Na prova:** só comportamentais é a alternativa **sem raça, herança ou doença**.",
-  "correta": "**Má nutrição, sedentarismo e alcoolismo.** São três hábitos modificáveis.",
+  "conceito": "**Fatores de risco para osteoporose: modificáveis e não modificáveis.** A osteoporose resulta da combinação de **pico de massa óssea** baixo (alcançado até cerca dos 30 anos) e **perda acelerada** depois. Os fatores de risco dividem-se em dois grupos, e a distinção tem importância prática: só os comportamentais podem ser mudados na consulta.\n\n| Não modificáveis | Comportamentais (modificáveis) |\n|---|---|\n| Idade avançada | **Sedentarismo** (falta de carga mecânica) |\n| Sexo feminino, menopausa precoce | **Tabagismo** |\n| **Raça branca** ou asiática | **Alcoolismo** (mais de 3 doses ao dia) |\n| **História familiar** (fratura de quadril nos pais) | **Má nutrição**: baixa ingestão de cálcio e proteína, deficiência de vitamina D |\n| Baixa estatura e baixo peso constitucional | Baixo peso por dieta |\n| Fratura prévia por fragilidade | |\n\nHá ainda as **causas secundárias** (doenças e medicamentos): uso de **corticoide**, hipertireoidismo, hiperparatireoidismo, artrite reumatoide, má absorção, hipogonadismo, anticonvulsivantes.\n\n**Por que os comportamentais pesam.** A carga mecânica estimula a formação óssea (lei de Wolff, mecanotransdução pelos osteócitos); o tabaco e o álcool reduzem a atividade osteoblástica e os níveis de estrogênio; a nutrição fornece cálcio, proteína e vitamina D. Corrigi-los aumenta a massa óssea na juventude e reduz a perda depois.\n\n**Na prática.** A ferramenta **FRAX** (Kanis e colaboradores) combina vários desses fatores (idade, sexo, peso, fratura prévia, história familiar, tabagismo, álcool, corticoide, artrite reumatoide) com a densitometria para estimar o risco de fratura em 10 anos e orientar o tratamento (Compston e colaboradores revisaram o tema).\n\n> Fatores comportamentais da osteoporose: má nutrição, sedentarismo, tabagismo e alcoolismo; raça, herança e escoliose não são hábitos.",
+  "correta": "**A: Má nutrição, sedentarismo e alcoolismo.** Os três são hábitos modificáveis; todas as outras alternativas incluem pelo menos um fator não comportamental (raça, história familiar ou escoliose).",
   "incorretas": {
-   "B": "**Tem raça branca.** É fator biológico, não comportamental.",
-   "C": "**Raça e escoliose.** Nenhuma das duas é hábito.",
-   "D": "**Nenhum hábito.** Raça, escoliose e história familiar são todas não modificáveis.",
-   "E": "**Tem história familiar.** É herança, o que elimina a alternativa."
+   "B": "**Raça branca** é fator de risco, mas não comportamental: não é escolha nem pode ser modificada.",
+   "C": "**Raça branca e escoliose** não são comportamentais; o tabagismo é, mas a alternativa mistura os grupos.",
+   "D": "**Raça branca, escoliose e história familiar** são todos fatores não modificáveis ou associados, nenhum comportamental.",
+   "E": "**História familiar** é fator genético, não comportamental, embora sedentarismo e alcoolismo sejam."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Kanis JA, Johnell O, Oden A, Johansson H, McCloskey E. FRAX and the assessment of fracture probability in men and women from the UK. Osteoporos Int. 2008;19(4):385-397.",
+   "Compston JE, McClung MR, Leslie WD. Osteoporosis. Lancet. 2019;393(10169):364-376."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "osteometabolicas-0036": {
   "conceito": "**Os critérios de Altman**, do ACR, para osteoartrite vêm em três conjuntos: **clínico**, **clínico com laboratório** e **clínico com radiografia**. O primeiro passo é classificar cada item: VHS, fator reumatoide e líquido sinovial são **laboratoriais**; osteófitos e estreitamento são **radiográficos**; idade, rigidez, crepitação, dor à palpação óssea, aumento ósseo e a **temperatura** da articulação são **clínicos**. Para o joelho, os cortes apontam para uma doença **não inflamatória**: rigidez **menor que 30 minutos**, VHS **abaixo de 40** mm/h, fator reumatoide **abaixo de 1:40** e **ausência de calor palpável**.\n\n**A ressalva.** O item original fala em ausência de calor. A alternativa está redigida como discreto aumento da temperatura, mas é a única que pertence ao conjunto clínico sem ter o valor de corte invertido, e por isso é o gabarito por eliminação.\n\n**Na prova:** em Altman, a artrose **não é inflamatória**: rigidez curta, VHS e FR baixos e sem calor.",
@@ -927,16 +930,19 @@
   "formato": "corrido"
  },
  "osteometabolicas-0075": {
-  "conceito": "**Por que a urina.** Nas mucopolissacaridoses falta a **enzima lisossomal** que degrada os glicosaminoglicanos, e o excesso é **excretado na urina**. O rastreamento começa pela **dosagem urinária** quantitativa de glicosaminoglicanos, e a **eletroforese** mostra qual deles se acumula: dermatan e heparan sulfato em Hurler, Hunter e Scheie, e queratan sulfato em Morquio.\n\n**A confirmação** vem da dosagem da enzima específica em **leucócitos** ou fibroblastos, ou em gota de sangue seco, com estudo genético quando necessário.\n\n**Na prova:** o diagnóstico inicial de mucopolissacaridose é pelos **glicosaminoglicanos na urina**.",
-  "correta": "**Urina.** É onde se dosam e se separam os glicosaminoglicanos acumulados.",
+  "conceito": "**Mucopolissacaridoses: o diagnóstico começa pela urina.** As mucopolissacaridoses (MPS) são doenças de **depósito lisossomal**: falta uma **enzima lisossomal** que degrada os **glicosaminoglicanos** (GAGs, antigos mucopolissacarídeos). Os GAGs não degradados acumulam-se nos tecidos (ossos, cartilagem, coração, fígado, córnea, sistema nervoso) e o **excesso é eliminado na urina**.\n\n**Sequência diagnóstica.**\n1. **Rastreamento urinário**: dosagem quantitativa de GAGs na urina (elevada).\n2. **Eletroforese** dos GAGs urinários, que indica **qual** se acumula e orienta o tipo.\n3. **Confirmação** pela **atividade enzimática** em leucócitos, plasma ou fibroblastos, e estudo genético.\n\n**Principais tipos e o que importa para o ortopedista.**\n\n| Tipo | Enzima deficiente | GAG na urina | Aspectos |\n|---|---|---|---|\n| I (Hurler, Scheie) | Alfa-L-iduronidase | Dermatan e heparan sulfato | Disostose múltipla, cifose toracolombar (giba), deficiência mental (Hurler) |\n| II (Hunter) | Iduronato-2-sulfatase | Dermatan e heparan sulfato | Ligada ao X (meninos) |\n| **IV (Morquio)** | Galactose-6-sulfatase (A) | **Queratan sulfato** | **Inteligência normal**, nanismo grave, **instabilidade C1-C2** (hipoplasia do odontoide), geno valgo |\n| VI (Maroteaux-Lamy) | Arilsulfatase B | Dermatan sulfato | Inteligência normal |\n\n**Achados ortopédicos (disostose múltipla).** Vértebras ovoides com \"bico\" anterior, cifose toracolombar, displasia do quadril, geno valgo, mãos em garra, síndrome do túnel do carpo (mesmo em crianças), instabilidade atlantoaxial (sobretudo no Morquio), compressão medular. White revisou os aspectos ortopédicos, e Muenzer, o panorama geral.\n\n**Tratamento.** Reposição enzimática, transplante de medula óssea (Hurler precoce), cirurgia ortopédica para as complicações (artrodese occipitocervical, liberação do túnel do carpo, correção do geno valgo).\n\n> Mucopolissacaridoses: GAGs excretados na urina; rastreamento urinário e confirmação enzimática.",
+  "correta": "**A: urina.** A falta da enzima lisossomal faz os glicosaminoglicanos acumularem e serem eliminados na urina, onde são dosados e identificados por eletroforese no rastreamento.",
   "incorretas": {
-   "B": "**Etapa seguinte.** O sangue confirma o diagnóstico, dosando a enzima em leucócitos, mas não é o exame inicial.",
-   "C": "**Sem papel.** As fezes não entram no diagnóstico das mucopolissacaridoses.",
-   "D": "**Sem papel.** A lágrima não é usada no diagnóstico."
+   "B": "**O sangue** é usado na confirmação (atividade enzimática em leucócitos ou plasma), mas o rastreamento clássico pelos GAGs é urinário.",
+   "C": "**As fezes** não são usadas no diagnóstico das mucopolissacaridoses.",
+   "D": "**A lágrima** não é material diagnóstico dessas doenças, embora a córnea possa turvar pelo depósito."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Muenzer J. Overview of the mucopolysaccharidoses. Rheumatology (Oxford). 2011;50 Suppl 5:v4-12.",
+   "White KK. Orthopaedic aspects of mucopolysaccharidoses. Rheumatology (Oxford). 2011;50 Suppl 5:v26-33."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "osteometabolicas-0076": {
   "conceito": "**A lentidão que engana.** O bacilo da tuberculose se multiplica devagar e não desencadeia a resposta aguda de um germe piogênico. A doença leva **meses a anos** até o sinal que traz o paciente, muitas vezes já a **cifose angular** ou o **déficit neurológico**. O quadro é de doença consumptiva, com **febre baixa vespertina**, **sudorese noturna**, **perda de peso**, mal-estar e dor lombar ou torácica arrastada: **sintomas generalizados com progressão indolente**. Dor local intensa e febre alta de início súbito apontam para infecção **piogênica**.\n\n**O diagnóstico** usa ressonância e biópsia guiada, com histologia, cultura e **PCR** (como o GeneXpert). O tratamento é principalmente clínico, com cirurgia para déficit, deformidade ou instabilidade.\n\n**Na prova:** Pott tem **sintomas sistêmicos e evolução lenta**.",

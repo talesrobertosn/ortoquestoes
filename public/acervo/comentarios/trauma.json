@@ -375,14 +375,18 @@
   "conferido": false
  },
  "trauma-0035": {
-  "conceito": "### Parâmetros radiográficos do rádio distal\n| Parâmetro | Como medir | Normal | Aceitável |\n|---|---|---|---|\n| ==altura (comprimento) radial== | distância entre ==ponta do estiloide radial== e a ==superfície articular da ulna== (linhas perpendiculares ao eixo) | ==11 a 12 mm== | perda < 3 a 5 mm |\n| inclinação radial | linha estiloide-canto ulnar do rádio × perpendicular | 22 a 23° | > 15° |\n| inclinação volar | perfil | 11 a 12° | até neutro ou 10° dorsal |\n| variância ulnar | rádio × ulna na RUD | neutra (± 2 mm) | < 2 a 3 mm positiva |\n| degrau articular | | 0 | < 2 mm |\n\n> **Na prova:** comprimento radial = ==estiloide radial × superfície articular da ulna==",
-  "correta": "**Estiloide do rádio e superfície articular da ulna.**\n- Normal cerca de 12 mm.\n- Perda indica encurtamento.",
+  "conceito": "**Parâmetros radiográficos do rádio distal.** Após uma fratura do rádio distal, três medidas no AP e no perfil indicam se a anatomia foi restaurada, porque se correlacionam com a função e com o risco de dor e artrose.\n\n| Parâmetro | Como medir | Normal | Limite aceitável usual |\n|---|---|---|---|\n| **Altura (comprimento) radial** | Distância entre duas linhas perpendiculares ao eixo do rádio: uma pela **ponta do estiloide radial**, outra pela **superfície articular da ulna** (no AP) | **11 a 12 mm** | Perda menor que 3 a 5 mm |\n| Inclinação radial | Ângulo entre a linha do estiloide radial ao canto ulnar do rádio e a perpendicular ao eixo | 22 a 23 graus | Maior que 15 graus |\n| Inclinação volar | No perfil, ângulo da superfície articular com a perpendicular ao eixo | 11 graus | Neutro a 10 graus dorsal (varia com a idade) |\n| Variância ulnar | Diferença de altura entre a superfície articular da ulna e o canto ulnar do rádio | Neutra (± 2 mm) | Variação da altura |\n| Degrau articular | Desnível na superfície articular | 0 | Menor que 2 mm |\n\n**Por que a altura radial importa.** O **encurtamento** do rádio (impactação) torna a ulna relativamente longa: aumenta a **carga ulnocarpal** (impacto ulnocarpal), altera a **radioulnar distal** (dor e perda de pronossupinação) e reduz a força de preensão. Medoff descreveu esses parâmetros como essenciais na avaliação radiográfica.\n\n**Cuidado com a confusão.** A altura radial não se mede até a ponta do estiloide ulnar (que varia muito e pode estar fraturado) nem entre as superfícies articulares dos dois ossos (isso é a variância ulnar).\n\n> Altura radial: da ponta do estiloide radial à superfície articular da ulna, normal de 11 a 12 mm.",
+  "correta": "**B: o processo estiloide do rádio e a superfície articular da ulnar.** A altura (comprimento) radial é a distância entre as perpendiculares ao eixo do rádio traçadas pela ponta do estiloide radial e pela superfície articular da ulna, normalmente 11 a 12 mm.",
   "incorretas": {
-   "A": "**Estiloide da ulna.**\n- Não é a referência distal.",
-   "C": "**Duas superfícies articulares.**\n- Isso é a variância ulnar.",
-   "D": "**Ponta do estiloide ulnar.**\n- Referência errada."
+   "A": "**Estiloides do rádio e da ulna**: o estiloide ulnar é referência variável e frequentemente fraturado; não é usado na medida.",
+   "C": "**Superfícies articulares do rádio e da ulna** definem a **variância ulnar**, outro parâmetro.",
+   "D": "**Superfície articular do rádio e estiloide ulnar** mistura referências que não compõem a medida da altura radial."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Medoff RJ. Essential radiographic evaluation for distal radius fractures. Hand Clin. 2005;21(3):279-288.",
+   "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0036": {

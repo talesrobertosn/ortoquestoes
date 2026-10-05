@@ -1271,19 +1271,20 @@
   "conferido": false
  },
  "pediatria-0088": {
-  "conceito": "### Índice de migração de Reimers\n- Porcentagem da ==cabeça femoral lateral à linha de Perkins==.\n\n| Valor | Conduta (PC) |\n|---|---|\n| < 30% | vigilância |\n| 30 a 40% | liberação de partes moles (adutores, psoas) |\n| > 40 a 60% | osteotomia femoral varizante ± pélvica (Dega) |\n| luxado doloroso | salvamento |\n\n- Vigilância radiográfica anual a partir de 2 anos, maior risco em ==GMFCS IV e V==.\n\n### Outros índices do quadril\n| Índice | O que mede |\n|---|---|\n| Wiberg | ângulo centro-borda (cobertura) |\n| Perkins | linha vertical pela borda do acetábulo |\n| Hilgenreiner | linha horizontal pelas trirradiadas |\n| índice acetabular | inclinação do teto |\n\n> **Na prova:** porcentagem da cabeça fora da linha de Perkins = ==Reimers==.",
-  "correta": "**Reimers.**\n- Índice de migração da cabeça femoral.\n- Guia a vigilância do quadril na PC.",
+  "conceito": "**Índice de migração de Reimers.** Na **paralisia cerebral**, o quadril nasce normal e se desloca progressivamente pela espasticidade dos adutores e flexores e pela falta de carga. A vigilância radiográfica mede quanto da cabeça femoral já saiu do acetábulo.\n\n**Como medir (o que a figura mostra).** Na radiografia AP da pelve, traça-se a **linha de Hilgenreiner** (horizontal, pelas cartilagens trirradiadas) e a **linha de Perkins** (vertical, pela borda lateral do acetábulo). Mede-se a **largura total da cabeça** e a parte da cabeça que está **lateral à linha de Perkins**. O índice de **Reimers** é:\n\nporcentagem de migração = parte lateral à linha de Perkins / largura total da cabeça × 100\n\nReimers estudou a estabilidade do quadril e os resultados da cirurgia de partes moles na paralisia cerebral.\n\n**Interpretação e conduta.**\n\n| Índice de migração | Conduta usual |\n|---|---|\n| Menor que 30% | Vigilância |\n| 30% a 40% (ou progressão de mais de 10% ao ano) | Liberação de partes moles (adutores, psoas) |\n| Acima de 40% a 60% | Osteotomia femoral varizante e derrotativa, com ou sem acetabuloplastia (Dega) |\n| Luxado e doloroso, irreconstruível | Procedimentos de salvamento |\n\n**Vigilância.** Radiografia a cada 6 a 12 meses a partir dos 2 anos, com maior risco nos níveis **GMFCS IV e V** (não deambuladores), conforme as diretrizes de vigilância do quadril.\n\n**As outras medidas.**\n- **Wiberg**: ângulo centro-borda (CE), cobertura da cabeça em adultos e adolescentes.\n- **Perkins** e **Hilgenreiner**: linhas de referência usadas para construir o índice e para avaliar a displasia, não índices em si.\n\n> Porcentagem da cabeça femoral lateral à linha de Perkins: índice de migração de Reimers.",
+  "correta": "**C: REIMERS.** A figura mostra a porção da cabeça femoral lateral à linha de Perkins em relação à largura total da cabeça, que é o índice de migração de Reimers.",
   "incorretas": {
-   "A": "**Centro-borda.**\n- Cobertura acetabular.",
-   "B": "**Linha.**\n- Usada no cálculo, não o índice.",
-   "D": "**Linha horizontal.**\n- Hilgenreiner."
+   "A": "**Wiberg** descreveu o ângulo centro-borda, que mede a cobertura lateral da cabeça, não a porcentagem de migração.",
+   "B": "**Perkins** dá nome à linha vertical pela borda lateral do acetábulo, usada como referência para o índice de Reimers.",
+   "D": "**Hilgenreiner** dá nome à linha horizontal pelas cartilagens trirradiadas, também referência, não o índice."
   },
   "referencias": [
    "Hip surveillance and management in cerebral palsy. https://pmc.ncbi.nlm.nih.gov/articles/PMC3838516/",
    "Hip displacement in CP: current concepts review. https://pmc.ncbi.nlm.nih.gov/articles/PMC11342852/",
-   "Radiological assessment of hip disease in CP. https://pmc.ncbi.nlm.nih.gov/articles/PMC10618048/"
+   "Radiological assessment of hip disease in CP. https://pmc.ncbi.nlm.nih.gov/articles/PMC10618048/",
+   "Reimers J. The stability of the hip in children. A radiological study of the results of muscle surgery in cerebral palsy. Acta Orthop Scand Suppl. 1980;184:1-100."
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0089": {
@@ -10338,15 +10339,18 @@
   "conferido": false
  },
  "pediatria-0844": {
-  "conceito": "No adolescente com **fise aberta**, a **haste intramedular rígida com entrada na fossa piriforme** é contraindicada: o ponto de entrada fica junto aos ramos da **artéria circunflexa femoral medial**, que irrigam a cabeça do fêmur, com risco de **osteonecrose**.\n\n**Opções seguras por idade e peso**: hastes flexíveis de titânio (criança menor e mais leve), placa submuscular (fraturas instáveis ou paciente pesado) e haste rígida com **entrada trocantérica lateral** (adolescente maior).\n\n**Na prova**: fise aberta = **nunca entrada piriforme**.",
-  "correta": "A entrada piriforme lesa a irrigação da cabeça femoral e pode causar osteonecrose no adolescente com fise aberta.",
+  "conceito": "**Fratura da diáfise do fêmur no adolescente: por que evitar a fossa piriforme.** No adolescente com **fise aberta**, a escolha do implante depende do peso, da idade e do padrão da fratura, mas há uma contraindicação firme: a **haste rígida com entrada na fossa piriforme**.\n\n**A irrigação da cabeça femoral na criança.** Depende quase só dos **vasos retinaculares**, ramos do **ramo profundo da artéria circunflexa femoral medial**, que sobem pela **face posterior e superior do colo**, passando junto à **fossa piriforme** (fossa trocantérica) e penetrando a cápsula. Enquanto a fise está aberta, praticamente não há contribuição da artéria do ligamento redondo nem da circulação metafisária através da fise.\n\n**O risco.** Fresar e introduzir uma haste rígida pela fossa piriforme pode **lesar esses vasos**, causando **osteonecrose da cabeça femoral**, complicação devastadora no adolescente. MacNeil e colaboradores, em revisão sistemática, mostraram taxa de necrose de cerca de 2% com entrada piriforme, contra taxas muito menores com entrada trocantérica lateral.\n\n**Opções seguras.**\n\n| Opção | Indicação |\n|---|---|\n| Hastes flexíveis de titânio | Crianças de 5 a 11 anos, até cerca de 45 a 50 kg, fraturas estáveis |\n| Placa submuscular em ponte | Fraturas instáveis, cominutivas, pacientes maiores |\n| **Haste rígida de entrada trocantérica lateral** | Adolescentes maiores e mais pesados (acima de 11 anos ou 50 kg) |\n| Fixador externo | Fraturas expostas, politrauma |\n\nFlynn e Schwend revisaram esse algoritmo por idade e peso.\n\n**Outro cuidado com a haste trocantérica.** O ponto de entrada no trocânter maior pode lesar a apófise trocantérica e causar coxa valga ou estreitamento do colo; por isso, entra-se lateralmente e usam-se hastes desenhadas para esse ponto.\n\n> Adolescente com fise aberta: não usar haste rígida pela fossa piriforme, pelo risco de osteonecrose da cabeça femoral.",
+  "correta": "**D: hastes rígidas com entrada na fossa piriforme.** O ponto de entrada fica junto aos vasos retinaculares da circunflexa femoral medial, única irrigação importante da cabeça femoral com a fise aberta; lesá-los causa osteonecrose.",
   "incorretas": {
-   "A": "A placa submuscular é uma opção aceita, sobretudo nas fraturas instáveis ou no paciente pesado.",
-   "B": "As hastes flexíveis são o padrão nas crianças em idade escolar e nos adolescentes mais leves.",
-   "C": "A entrada trocantérica lateral foi criada justamente para poupar a irrigação da cabeça femoral."
+   "A": "**Placas submusculares** são opção segura, especialmente em fraturas instáveis ou cominutivas.",
+   "B": "**Hastes flexíveis de titânio** são o padrão em crianças em idade escolar e mais leves; menos indicadas em adolescentes pesados, mas não contraindicadas.",
+   "C": "**Hastes rígidas com entrada trocantérica lateral** evitam a fossa piriforme e são opção segura em adolescentes maiores."
   },
-  "referencias": [],
-  "geradoEm": "2026-10-04T17:01:01+00:00",
+  "referencias": [
+   "MacNeil JA, Francis A, El-Hawary R. A systematic review of rigid, locked, intramedullary nail insertion sites and avascular necrosis of the femoral head in the skeletally immature. J Pediatr Orthop. 2011;31(4):377-380.",
+   "Flynn JM, Schwend RM. Management of pediatric femoral shaft fractures. J Am Acad Orthop Surg. 2004;12(5):347-359."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0845": {

@@ -5694,19 +5694,20 @@
   "conferido": false
  },
  "quadril-0479": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": "**Osteonecrose da cabeça femoral.** Retirar carga não altera a história natural. A descompressão ajuda nos estágios pré-colapso (I e II de Ficat). A osteotomia de Sugioka exige área intacta suficiente, e a artroplastia total é o padrão após o colapso.\n\n**Na prova:** muleta não trata; descompressão só antes do colapso.",
-  "correta": "**A retirada de apoio com muletas, nas fases iniciais, não é uma forma eficaz de tratamento.** Retirar o apoio não é eficaz como tratamento.",
+  "conceito": "**Osteonecrose da cabeça do fêmur no adulto: o que funciona em cada fase.** A osteonecrose é a morte do osso trabecular e da medula da cabeça femoral por isquemia. Causas: corticoide, álcool, trauma (fratura do colo, luxação), doença falciforme, Gaucher, doença descompressiva, lúpus, idiopática. A evolução natural, sobretudo das lesões grandes e sintomáticas, é o **colapso** subcondral e a artrose.\n\n**Estadiamento de Ficat e Arlet (resumido).**\n\n| Estágio | Achado |\n|---|---|\n| I | Radiografia normal, ressonância alterada |\n| II | Esclerose e cistos, **sem colapso** |\n| III | **Sinal do crescente**, **colapso** subcondral |\n| IV | Artrose, com acometimento do acetábulo |\n\n**Tratamentos e evidências.**\n- **Retirada de carga com muletas**: isoladamente **não altera a história natural**; a maioria das cabeças sintomáticas colapsa mesmo assim. Mont e colaboradores mostraram resultados piores do tratamento não operatório que da descompressão nas fases iniciais.\n- **Descompressão central** (core decompression, com ou sem enxerto ou células): indicada nos estágios **pré-colapso** (I e II), quando reduz a pressão intraóssea; no estágio **III**, com colapso estabelecido, não detém a progressão.\n- **Osteotomia rotacional transtrocantérica de Sugioka**: roda a cabeça para levar osso **sadio** à área de carga; exige que a **área intacta** seja suficiente (em geral, mais de cerca de **um terço** da superfície, com necrose não muito extensa); resultados excelentes no Japão e inconsistentes em outros centros.\n- **Artroplastia total do quadril**: tratamento padrão após o colapso e na artrose; resultados **superiores** aos da hemiartroplastia de superfície, que deixa o acetábulo nativo sujeito a desgaste e dor.\n\n> Osteonecrose da cabeça femoral: muleta isolada não trata; descompressão só antes do colapso; artroplastia total após o colapso.",
+  "correta": "**A: a retirada de apoio com muletas, nas fases iniciais, não é uma forma eficaz de tratamento (resposta pela bibliografia).** A retirada de carga isolada não modifica a história natural; a maioria das lesões sintomáticas evolui para colapso mesmo protegida.",
   "incorretas": {
-   "B": "**A descompressão da cabeça na fase III de FICAT e ARLET detém a progressão da doença.** No estágio III já há colapso e a descompressão não detém a progressão.",
-   "C": "**A osteotomia rotacional de SUGIOKA está indicada quando o envolvimento da cabeça é de até 50%.** A área necrótica não pode ultrapassar cerca de um terço.",
-   "D": "**Os resultados com a hemiartroplastia de superfície da cabeça do fêmur são superiores aos da artroplastia total do quadril.** Os resultados não superam a artroplastia total."
+   "B": "**Descompressão na fase III** não detém a progressão: com o colapso estabelecido, a descompressão perde o efeito; ela é indicada nos estágios pré-colapso (I e II).",
+   "C": "**Sugioka com envolvimento de até 50%** é imprecisa: a osteotomia exige área sadia suficiente para assumir a carga após a rotação, e lesões extensas comprometem o resultado.",
+   "D": "**Hemiartroplastia de superfície superior à artroplastia total** é falso: a artroplastia total tem resultados melhores e mais previsíveis após o colapso."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 947-955."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 947-955.",
+   "Mont MA, Carbone JJ, Fairbank AC. Core decompression versus nonoperative management for osteonecrosis of the hip. Clin Orthop Relat Res. 1996;(324):169-178."
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "A",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "quadril-0480": {
