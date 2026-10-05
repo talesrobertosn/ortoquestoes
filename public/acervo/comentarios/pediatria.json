@@ -120,19 +120,19 @@
   "conferido": false
  },
  "pediatria-0009": {
+  "conceito": "**As deficiências congênitas dos membros.** São falhas da formação do membro durante a embriogênese (da 4ª à 8ª semana). A classificação de **Frantz e O'Rahilly** (1961), ainda usada nas provas, combina dois critérios:\n\n**1. A direção da falha.**\n- **Transversal**: falta **toda a largura** do membro a partir de um nível (como uma \"amputação congênita\"); por exemplo, a ausência do antebraço e da mão.\n- **Longitudinal** (paraxial): falta só **um lado** do membro, ao longo do eixo; por exemplo, a hemimelia **fibular**, tibial, radial ou ulnar.\n\n**2. A extensão distal.**\n- **Terminal**: a falta se estende até a **ponta** do membro; nada distal ao defeito está presente.\n- **Intercalar**: falta um **segmento intermediário**, mas as partes **distais** estão presentes (como na focomelia, em que a mão sai do ombro).\n\n**Combinando os critérios.**\n| Exemplo | Classificação |\n|---|---|\n| Ausência da fíbula com **pé normal** (todos os raios) | Longitudinal **intercalar** |\n| Ausência da fíbula **com ausência** dos raios laterais do pé | Longitudinal **terminal** |\n| Focomelia | Transversal intercalar |\n| Ausência da mão e do antebraço (coto) | Transversal terminal |\n\n**A hemimelia fibular: um defeito de todo o membro.** Não é só a fíbula que falta. É a **deficiência longitudinal pós-axial** do membro inferior, e acomete vários segmentos:\n| Segmento | Alterações |\n|---|---|\n| **Fêmur** | Encurtamento discreto, **hipoplasia do côndilo lateral** (joelho **valgo**) |\n| **Joelho** | **Ausência ou hipoplasia dos cruzados**: instabilidade **anteroposterior**; patela pequena e alta, com tendência a luxação lateral |\n| **Tíbia** | Encurtamento, arqueamento **anteromedial**, tornozelo em valgo |\n| **Pé** | **Equinovalgo**, **coalizão tarsal** (talocalcaneana), ausência dos raios laterais, tornozelo em \"bola e soquete\" |\n\n**Por que instabilidade anteroposterior.** Os **ligamentos cruzados** se formam junto com as estruturas pós-axiais; na hemimelia fibular eles estão ausentes ou hipoplásicos, e a espinha tibial é achatada. O joelho tem gaveta **anterior e posterior**, mas costuma ser bem tolerado na infância. Os colaterais costumam estar presentes, por isso a instabilidade em varo e valgo não é a característica.\n\n**O tratamento.** Depende da discrepância prevista e da função do pé (classificações de Achterman-Kalamchi, Birch e Paley): **alongamento** com reconstrução do tornozelo (técnica SUPERankle de Paley) e correção do valgo do joelho por **hemiepifisiodese** medial, ou **amputação de Syme** (ou Boyd) com prótese nas formas graves com pé não funcional.",
+  "correta": "**Correta: A (lateral e a instabilidade anteroposterior do joelho).** Na hemimelia fibular, o côndilo femoral lateral é hipoplásico (joelho valgo) e os cruzados são ausentes ou hipoplásicos, com instabilidade anteroposterior.",
   "incorretas": {
-   "B": "O côndilo está certo, mas a instabilidade é anteroposterior, pelos cruzados, não em varo e valgo.",
-   "C": "A instabilidade está certa, mas o côndilo hipoplásico é o lateral.",
-   "D": "Erra o côndilo e a instabilidade."
+   "B": "O côndilo lateral está certo, mas os **colaterais** costumam estar presentes; a instabilidade típica é **anteroposterior**, pela falta dos cruzados.",
+   "C": "A instabilidade anteroposterior está certa, mas o côndilo hipoplásico é o **lateral**, o que explica o joelho valgo.",
+   "D": "O côndilo hipoplásico é o **lateral**, e a instabilidade é **anteroposterior**."
   },
-  "conceito": "A **hemimelia fibular** é a deficiência longitudinal do lado **pós-axial** da perna e a deficiência congênita de osso longo **mais comum**. Não é só a fíbula: o membro inteiro é afetado.\n\n**O que se encontra**:\n\n**fíbula** ausente ou hipoplásica;\n\n**tíbia** curta e arqueada para anteromedial, com uma covinha na pele;\n\n**fêmur** curto;\n\n**pé** em equinovalgo, com **raios laterais ausentes** e **coalizão tarsal**; o tornozelo pode ter formato em bola e soquete.\n\n**No joelho**:\n\n**côndilo femoral lateral hipoplásico**: leva ao **joelho valgo**;\n\n**ligamentos cruzados** hipoplásicos ou ausentes, e espinhas tibiais pequenas: o joelho fica com **instabilidade anteroposterior** (gaveta), não em varo e valgo.\n\n**Por que isso importa**: o joelho instável e valgo precisa ser avaliado e protegido antes de qualquer **alongamento**, que pode luxar a articulação.\n\n**O tratamento** depende da discrepância prevista e de o pé ser funcional: **alongamento** e reconstrução do tornozelo (técnicas de Paley) ou **amputação de Syme** com prótese.\n\n**Na prova**: hemimelia fibular = **côndilo femoral lateral** hipoplásico e **instabilidade anteroposterior**.",
-  "correta": "A hemimelia fibular tem côndilo femoral lateral hipoplásico (joelho valgo) e cruzados deficientes, que causam instabilidade anteroposterior.",
   "referencias": [
    "Surgical reconstruction for fibular hemimelia. https://pmc.ncbi.nlm.nih.gov/articles/PMC5145840/",
    "The unstable knee in congenital limb deficiency. https://pmc.ncbi.nlm.nih.gov/articles/PMC5145834/",
    "Postaxial limb hypoplasia: clinical features. https://pmc.ncbi.nlm.nih.gov/articles/PMC5730483/"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0010": {
@@ -3008,14 +3008,18 @@
   "conferido": false
  },
  "pediatria-0239": {
+  "conceito": "**A distrofia muscular de Duchenne.** É a distrofia muscular mais comum da infância (cerca de 1 em 3.500 a 5.000 meninos). É **recessiva ligada ao X**: acomete **meninos**, e cerca de um terço dos casos são mutações novas. A mutação no gene da **distrofina** (a proteína que ancora o citoesqueleto da fibra muscular à membrana) deixa a fibra frágil: ela se rompe a cada contração, degenera e é substituída por **gordura e tecido fibroso**.\n\n**A apresentação clínica.**\n| Achado | Detalhe |\n|---|---|\n| Início | Entre **3 e 5 anos**: atraso da marcha, quedas, dificuldade para correr e subir escadas |\n| Distribuição | Fraqueza **simétrica** e **proximal** (cinturas pélvica e escapular), dos membros inferiores primeiro |\n| **Sinal de Gowers** | Levanta-se do chão \"escalando\" as próprias pernas com as mãos |\n| **Pseudo-hipertrofia** | Das panturrilhas (músculo substituído por gordura e fibrose) |\n| Tônus | **Hipotonia** e reflexos diminuídos (doença do músculo, e não do neurônio) |\n| Laboratório | **CPK** muito elevada (50 a 100 vezes o normal) |\n\n**A marcha.** A fraqueza dos **extensores do quadril** e dos **abdutores** muda a marcha: a criança aumenta a **lordose lombar** (para colocar o centro de gravidade atrás do quadril), anda na ponta dos pés (equino pela contratura do tríceps) e alarga a base; a fraqueza dos abdutores dá a marcha **bamboleante** (Trendelenburg bilateral). Com a progressão, a criança fica mais instável no apoio unipodal e passa mais tempo com os **dois pés no chão**: o **duplo apoio aumenta**. A perda da marcha ocorre por volta dos **10 a 12 anos** (sem corticoide).\n\n**O tratamento.** Os **corticoides** (prednisona ou deflazacorte) prolongam a marcha em cerca de 2 a 3 anos e reduzem a escoliose; a **escoliose** progressiva após a perda da marcha é tratada com artrodese precoce (antes da piora da função pulmonar). A morte ocorre por insuficiência **respiratória** ou **cardiomiopatia**, hoje com sobrevida até a 3ª ou 4ª década.",
+  "correta": "**Correta: C (as panturrilhas aumentam de tamanho).** A pseudo-hipertrofia das panturrilhas, pela substituição do músculo por gordura e tecido fibroso, é um sinal clássico da Duchenne.",
   "incorretas": {
-   "A": "Os sintomas começam mais cedo, entre 2 e 5 anos; aos 8 a 12 anos a criança já perde a marcha.",
-   "B": "A fraqueza começa na cintura pélvica, não na musculatura cervical.",
-   "D": "Cerca de dois terços são hereditários; um terço é mutação nova."
+   "A": "Os sintomas começam entre **3 e 5 anos**, com atraso da marcha, quedas e dificuldade para correr e subir escadas; aos 6 a 9 anos a doença já está estabelecida.",
+   "B": "O acometimento começa pela musculatura **proximal** dos membros inferiores e da cintura pélvica, e não pela cervical.",
+   "D": "Cerca de **dois terços** dos casos são **herdados** da mãe portadora; cerca de um terço são mutações novas."
   },
-  "conceito": "A **distrofia muscular de Duchenne** é ligada ao **X** e acomete meninos. Falta a **distrofina**, proteína que protege a membrana da fibra muscular. A herança é de mãe portadora em cerca de **dois terços** dos casos; **um terço** é mutação nova.\n\n**O quadro**:\n\n**início**: entre **2 e 5 anos**, com quedas, dificuldade de subir escadas e marcha na ponta dos pés;\n\n**fraqueza proximal**, começando pela **cintura pélvica**;\n\n**sinal de Gowers**: para levantar do chão, a criança \"escala\" as próprias pernas com as mãos;\n\n**pseudo-hipertrofia das panturrilhas**: elas **aumentam de tamanho**, mas o músculo é substituído por **gordura e fibrose**;\n\n**CPK muito elevada**; o diagnóstico se confirma por estudo genético ou biópsia.\n\n**A evolução**: perde a marcha entre 8 e 12 anos, pela fraqueza dos extensores do quadril e dos dorsiflexores. Depois disso, a **escoliose** progride, e a artrodese é indicada cedo, antes da piora respiratória. O **corticoide** prolonga a marcha e reduz a escoliose.\n\n**A forma de Becker**: distrofina reduzida, quadro mais tardio e brando.\n\n**Na prova**: Duchenne = **panturrilhas aumentadas** (pseudo-hipertrofia).",
-  "correta": "Na Duchenne, as panturrilhas aumentam de volume por pseudo-hipertrofia, com o músculo substituído por gordura e fibrose.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de doenças neuromusculares.",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo de doenças musculares."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0240": {
@@ -3592,18 +3596,18 @@
   "conferido": false
  },
  "pediatria-0294": {
+  "conceito": "**O torcicolo muscular congênito.** É a causa **mais comum** de torcicolo no lactente e é **indolor**. Resulta da **fibrose** do músculo esternocleidomastoideo (ECM), provavelmente por uma síndrome compartimental intrauterina ou de parto: o músculo fica encurtado.\n\n**A apresentação.**\n- **Cabeça inclinada para o mesmo lado** do ECM acometido e **queixo rodado para o lado oposto** (o ECM inclina a cabeça para o seu lado e gira a face para o lado contrário).\n- **Nódulo** ou massa (a \"oliva\" ou pseudotumor) palpável no ventre do ECM, que aparece nas **primeiras semanas** de vida (geralmente entre 2 e 4 semanas) e regride em alguns meses.\n- **Plagiocefalia** e assimetria facial podem se desenvolver se não tratado.\n- Associações: **displasia do desenvolvimento do quadril** (cerca de 10% a 20%), metatarso aduto, parto difícil ou pélvico (doenças do \"aperto\" intrauterino).\n\n**O diagnóstico diferencial (torcicolo não muscular).**\n| Causa | Pista |\n|---|---|\n| Anomalias **ósseas** (Klippel-Feil, hemivértebra) | Rigidez, radiografia alterada |\n| Torcicolo **ocular** (paralisia do IV nervo) | Corrige quando um olho é tapado |\n| Subluxação rotatória C1-C2 (Grisel) | **Doloroso**, após infecção ou trauma |\n| Tumor de fossa posterior, síndrome de Sandifer (refluxo) | Sinais neurológicos ou relação com alimentação |\n\n**O tratamento.** O **alongamento** passivo e o posicionamento resolvem mais de **90%** dos casos no primeiro ano. A cirurgia (liberação do ECM, uni ou bipolar) fica para o torcicolo persistente após **1 ano**, com restrição significativa da rotação ou assimetria facial progressiva.\n\n**Como lembrar a posição.** O esternocleidomastoideo, ao se contrair de um lado, **inclina** a cabeça para o **mesmo lado** e **roda a face** para o **lado oposto** (é o movimento de \"olhar por cima do ombro contrário\"). No torcicolo muscular, o músculo encurtado mantém essa posição: cabeça inclinada para o lado da lesão e queixo rodado para o ombro oposto.",
+  "correta": "**Correta: A (da lesão e o queixo rodado em direção ao ombro oposto).** O esternocleidomastoideo encurtado inclina a cabeça para o seu lado e roda a face para o lado oposto, como na sua ação normal.",
   "incorretas": {
-   "B": "Está tudo invertido: a cabeça inclina para a lesão e o queixo roda para o lado sadio.",
-   "C": "A inclinação está certa, mas o queixo roda para o lado oposto, não para a lesão.",
-   "D": "A rotação do queixo está certa, mas a cabeça inclina para o lado da lesão, não para o sadio."
+   "B": "A cabeça inclina para o lado **da lesão**, e o queixo roda para o lado **oposto**; as duas partes estão invertidas.",
+   "C": "A inclinação para o lado da lesão está certa, mas o queixo roda para o lado **oposto**, e não para a lesão.",
+   "D": "O queixo roda para o lado oposto, mas a cabeça inclina para o lado **da lesão**, e não para o lado sadio."
   },
-  "conceito": "O **esternocleidomastoideo** (ECM) vai do **esterno e da clavícula** até o **processo mastoide**, atrás da orelha. Quando um ECM contrai, ele aproxima o mastoide do esterno daquele lado. Isso faz duas coisas ao mesmo tempo:\n\n**inclina a cabeça** para o **mesmo lado** do músculo (a orelha desce em direção ao ombro);\n\n**roda a face** para o **lado oposto** (o queixo sobe e vira para o outro ombro).\n\n**No torcicolo muscular congênito**, o ECM de um lado está **fibrosado e encurtado**, e a cabeça fica presa nessa posição: **inclinada para o lado da lesão** e com o **queixo rodado para o ombro oposto**.\n\n**O quadro**: um nódulo (pseudotumor) no ECM nas primeiras semanas, que regride em meses; com o tempo, plagiocefalia e assimetria facial. Associa-se à displasia do quadril e ao metatarso aduto.\n\n**O tratamento**: alongamento e posicionamento resolvem mais de 90% se começarem antes de 1 ano. Ao alongar, faz-se o movimento contrário: inclinar a cabeça para o lado sadio e rodar o queixo para o lado da lesão. Cirurgia se persistir após 1 ano.\n\n**Na prova**: a cabeça inclina para o **lado da lesão** e o queixo roda para o **ombro oposto**.",
-  "correta": "O ECM encurtado puxa a orelha para o próprio lado e roda o queixo para o lado oposto.",
   "referencias": [
    "Congenital muscular torticollis. PMCID: PMC3814673.",
    "Physical Therapy Management of Congenital Muscular Torticollis: 2018 Clinical Practice Guideline. PMCID: PMC8568067."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0295": {
@@ -4065,18 +4069,19 @@
   "conferido": false
  },
  "pediatria-0342": {
+  "conceito": "**A atrofia muscular espinhal (AME).** É uma doença **autossômica recessiva** com degeneração dos **motoneurônios do corno anterior** da medula, causada por deleção ou mutação do gene **SMN1** (cromossomo 5q). O número de cópias do gene vizinho **SMN2** modula a gravidade: mais cópias, forma mais leve. A fraqueza é **simétrica** e **proximal**, maior nos membros **inferiores**, com **hipotonia**, **arreflexia** e fasciculações (da língua, por exemplo). A **sensibilidade** e a **inteligência** são normais.\n\n**A classificação pela maior função motora alcançada.**\n| Tipo | Início e função máxima | Evolução |\n|---|---|---|\n| **I** (Werdnig-Hoffmann) | Antes de 6 meses; **nunca senta** | Insuficiência respiratória precoce |\n| **II** (intermediária) | 6 a 18 meses; **senta sem apoio**, mas **nunca anda** | Escoliose grave, contraturas; sobrevida até a idade adulta |\n| **III** (Kugelberg-Welander) | Após 18 meses; **anda**, mas pode perder a marcha | Expectativa de vida normal |\n| IV | Adulto | Leve |\n\n**A AME tipo II na prática ortopédica.** A criança consegue **sentar sozinha** e manter o **equilíbrio do tronco** sentada, mas não fica em pé nem anda sem apoio. Os problemas ortopédicos são:\n- **escoliose** progressiva, quase universal, de início precoce; órteses retardam pouco, e a artrodese (ou hastes de crescimento) é feita para preservar a sedestação e a função pulmonar;\n- **luxação** e subluxação do quadril, em geral **indolor** e de tratamento conservador;\n- **contraturas** em flexão de quadris e joelhos;\n- **fraturas** por osteopenia.\n\n**Os novos tratamentos.** **Nusinersena** (oligonucleotídeo intratecal), **risdiplam** (oral) e **terapia gênica** (onasemnogene) mudaram a história natural: crianças tratadas cedo podem alcançar marcos motores antes impossíveis. A punção intratecal repetida tornou importante deixar um **acesso** à coluna lombar na artrodese.",
+  "correta": "**Correta: C (equilíbrio do tronco ao sentar).** Na AME tipo II, a maior função alcançada é sentar sem apoio, com equilíbrio do tronco; a criança nunca anda.",
   "incorretas": {
-   "A": "Na AME há arreflexia; o reflexo patelar está ausente.",
-   "B": "A capacidade de marcha é característica do tipo III, não do II.",
-   "D": "A fraqueza predomina nos membros inferiores, mais que nos superiores."
+   "A": "Na AME há **arreflexia**: os reflexos patelares estão **ausentes** pela lesão do motoneurônio inferior.",
+   "B": "A **capacidade de marcha** caracteriza o tipo **III**; no tipo II a criança nunca anda.",
+   "D": "Os membros superiores também ficam fracos, mas a fraqueza é **maior nos membros inferiores** e proximal; o critério que define o tipo II é sentar sem apoio."
   },
-  "conceito": "A **atrofia muscular espinhal** (AME) é a degeneração das células do **corno anterior** da medula, por falta da proteína SMN (gene **SMN1**, no cromossomo 5, herança autossômica recessiva). O resultado é fraqueza **proximal**, **simétrica**, que predomina nos **membros inferiores**, com **arreflexia** e fasciculações na língua; a sensibilidade e a inteligência são normais.\n\n**Os tipos pela maior função motora alcançada**:\n\n**tipo I** (Werdnig-Hoffmann): início antes de 6 meses; **nunca senta**;\n\n**tipo II**: início entre 6 e 18 meses; **senta sem apoio**, com **equilíbrio de tronco**, mas **nunca anda**;\n\n**tipo III** (Kugelberg-Welander): início depois de 18 meses; **anda**, mas pode perder a marcha;\n\n**tipo IV**: início no adulto.\n\n**A ortopedia no tipo II**: a **escoliose** é quase universal, tratada com colete, hastes de crescimento e artrodese. O quadril subluxado costuma ser indolor e é apenas observado. Contraturas de joelho e quadril são comuns.\n\n**O tratamento atual**: nusinersena, terapia gênica (onasemnogeno) e risdiplam mudaram a história natural, com crianças alcançando marcos que antes não atingiam.\n\n**Na prova**: AME tipo II = **senta com equilíbrio de tronco**, mas não anda.",
-  "correta": "O marco máximo do tipo II é sentar sem apoio, com equilíbrio de tronco; a criança nunca anda.",
   "referencias": [
    "Spinal Muscular Atrophy. GeneReviews. NCBI Bookshelf NBK1352.",
-   "Clinical Features, Epidemiology, Natural History, and Management of Spinal Muscular Atrophy. NCBI Bookshelf NBK533981."
+   "Clinical Features, Epidemiology, Natural History, and Management of Spinal Muscular Atrophy. NCBI Bookshelf NBK533981.",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de doenças neuromusculares."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0343": {
@@ -4518,18 +4523,18 @@
   "conferido": false
  },
  "pediatria-0374": {
+  "conceito": "**A síndrome de Klippel-Trénaunay (SKT).** É uma **malformação vascular complexa** de baixo fluxo, ligada a mutações somáticas do gene **PIK3CA** (do grupo PROS, o espectro de hipercrescimento relacionado ao PIK3CA). Tem uma **tríade** clássica:\n- **mancha vinho do Porto** (malformação capilar);\n- **varizes** e malformações **venosas** (com veia marginal lateral persistente) e, muitas vezes, **linfáticas**;\n- **hipercrescimento** de partes moles e osso do membro acometido (geralmente um membro inferior).\n\n**A diferença com Parkes Weber.** Na síndrome de **Parkes Weber**, há também **fístulas arteriovenosas** (alto fluxo), com risco de insuficiência cardíaca; a SKT é de **baixo fluxo**.\n\n**As alterações ao longo do tempo.**\n| Tipo | Exemplos |\n|---|---|\n| **Ortopédicas** | **Discrepância** de comprimento (hipercrescimento), **macrodactilia**, **sindactilia**, polidactilia, pé grande e deformidades que dificultam o calçado |\n| **Vasculares e clínicas** | **Tromboflebite** e trombose venosa profunda, embolia pulmonar, sangramentos, **linfedema** e celulite, coagulopatia intravascular localizada, sangramento retal e urinário |\n\n**A tromboflebite.** As veias malformadas, dilatadas e com fluxo lento favorecem a **trombose**: a tromboflebite superficial é frequente e dolorosa, e a trombose profunda com embolia pulmonar é a complicação mais grave, sobretudo após cirurgias. Por isso, antes de procedimentos, avaliam-se o **D-dímero** e o fibrinogênio, e faz-se profilaxia.\n\n**O tratamento ortopédico.** **Meias elásticas** de compressão, **epifisiodese** do lado mais longo no momento certo (para a discrepância), amputações parciais ou ressecções de partes moles em casos de gigantismo, e cuidado extremo com sangramento. O **sirolimo** (inibidor da via PI3K-mTOR) e o alpelisibe são opções clínicas recentes. A escleroterapia trata as malformações venosas.",
+  "correta": "**Correta: B (sindactilia e tromboflebite).** A SKT cursa com anomalias dos dedos (sindactilia, macrodactilia) e, pelas veias malformadas de fluxo lento, com tromboflebite e trombose venosa ao longo do tempo.",
   "incorretas": {
-   "A": "A tromboflebite está certa, mas o pé plano não é alteração característica da síndrome.",
-   "C": "A celulite ocorre, mas o hálux valgo não é característico.",
-   "D": "A celulite ocorre, mas o hálux rígido não tem relação com a síndrome."
+   "A": "A **tromboflebite** é típica, mas o **pé plano** não é alteração característica da SKT.",
+   "C": "A **celulite** recorrente pode ocorrer pelo linfedema, mas o **hálux valgo** não é alteração característica da síndrome.",
+   "D": "O **hálux rígido** não é alteração da SKT; a celulite ocorre, mas a combinação não é a característica."
   },
-  "conceito": "A **síndrome de Klippel-Trénaunay** é uma **malformação vascular de baixo fluxo**, capilar, linfática e venosa, causada por mutações no gene **PIK3CA**. A tríade clássica:\n\n**mancha em vinho do Porto** (malformação capilar);\n\n**varizes** e malformações venosas, muitas vezes com uma veia marginal lateral persistente;\n\n**hipercrescimento** do membro, em comprimento e volume.\n\n**A variante de Parkes-Weber** tem **fístulas arteriovenosas** (alto fluxo) e risco de insuficiência cardíaca.\n\n**As alterações ao longo do tempo**:\n\n**ortopédicas**: **discrepância de membros**, pé grande, **macrodactilia** e **sindactilia** (os dedos também crescem de forma anormal);\n\n**não ortopédicas**: **tromboflebite**, trombose venosa profunda e embolia pulmonar, sangramentos, linfedema e **celulite**.\n\n**O tratamento**: **epifisiodese** do lado longo para a discrepância, meias compressivas, anticoagulação quando indicada (sobretudo antes de cirurgias) e **sirolimo**, que inibe a via do PIK3CA.\n\n**O que não é típico**: pé plano, hálux valgo e hálux rígido não fazem parte do quadro característico.\n\n**Na prova**: Klippel-Trénaunay = **sindactilia** e **tromboflebite**.",
-  "correta": "O hipercrescimento atinge os dedos, com sindactilia e macrodactilia, e a malformação venosa leva à tromboflebite.",
   "referencias": [
    "Klippel-Trenaunay Syndrome. PMCID: PMC3881214.",
    "Presentation and Management of Klippel-Trenaunay Syndrome: A Review of Available Data. PMCID: PMC7282379."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0375": {
@@ -5491,14 +5496,18 @@
   "conferido": false
  },
  "pediatria-0455": {
+  "conceito": "**A epifisiólise proximal do fêmur (EPF) e a mecânica.** A EPF ocorre quando a **força de cisalhamento** sobre a fise proximal do fêmur supera a **resistência** da fise. Os fatores se dividem em dois grupos:\n\n| Grupo | Fatores |\n|---|---|\n| **Mecânicos** (aumentam o cisalhamento) | **Obesidade**, **retroversão femoral** (diminuição da anteversão), fise mais **vertical** (inclinação aumentada), colo em varo relativo, acetábulo profundo |\n| **Biológicos** (enfraquecem a fise) | Estirão do crescimento, hormônios (hipotireoidismo, deficiência de GH, hipogonadismo), insuficiência renal, radioterapia |\n\n**A retroversão.** O colo femoral normal tem anteversão de cerca de 10° a 15° no adolescente. Na EPF, o colo costuma ter **menos anteversão** (ou retroversão). Com isso, durante a marcha e a corrida, a força sobre a fise passa a ser mais de **cisalhamento** posterior, e a epífise tende a escorregar para **trás**. A obesidade agrava a retroversão e aumenta a carga.\n\n**A inclinação da fise e o ângulo cervicodiafisário.** Na adolescência, a fise proximal do fêmur fica naturalmente mais **oblíqua** (vertical). Nos pacientes com EPF, essa obliquidade é ainda **maior**, e o ângulo cervicodiafisário é relativamente **menor**: quanto mais vertical a fise, mais a força do peso corporal se transforma em cisalhamento, em vez de compressão.\n\n**A fise no estirão.** Durante o pico de crescimento, a **zona hipertrófica** da fise fica mais alta e mais fraca, e o pericôndrio (anel de Ranvier) afina. O deslizamento ocorre justamente pela zona hipertrófica.\n\n**A consequência clínica.** O conhecimento da mecânica explica:\n- por que a EPF é tão associada à **obesidade** (dois terços dos pacientes estão acima do percentil 95 de peso);\n- por que o lado contralateral está em risco (até 20% a 40% de bilateralidade);\n- por que a fixação in situ estabiliza a fise e acelera o seu fechamento, interrompendo o processo.",
+  "correta": "**Correta: D (diminuição da anteversão e diminuição do ângulo cervicodiafisário).** A retroversão femoral e a fise mais vertical, com ângulo cervicodiafisário relativamente menor, transformam a carga em cisalhamento sobre a fise e favorecem o deslizamento.",
   "incorretas": {
-   "A": "Anteversão e ângulo cervicodiafisário aumentados deixariam a fise mais horizontal e a protegeriam.",
-   "B": "O ângulo cervicodiafisário diminuído está certo, mas há retroversão relativa, não anteversão aumentada.",
-   "C": "A anteversão diminuída está certa, mas o colo fica mais varo, com ângulo cervicodiafisário menor."
+   "A": "O **aumento** da anteversão protege a fise do cisalhamento posterior; na EPF a anteversão está **diminuída**.",
+   "B": "O ângulo cervicodiafisário diminuído está certo, mas a anteversão está **diminuída** (retroversão), e não aumentada.",
+   "C": "A anteversão diminuída está certa, mas o ângulo cervicodiafisário maior (valgo) torna a fise mais horizontal e **reduz** o cisalhamento."
   },
-  "conceito": "Na **epifisiólise proximal do fêmur**, a fise cede ao **cisalhamento** crônico. Tudo o que deixa a fise **mais vertical** aumenta essa força, porque o peso do corpo passa a \"empurrar\" a epífise para baixo e para trás em vez de comprimi-la contra o colo.\n\n**Os fatores biomecânicos**:\n\n**diminuição da anteversão** (retroversão relativa do colo): o colo fica mais para trás, e a fise recebe mais cisalhamento no plano sagital;\n\n**diminuição do ângulo cervicodiafisário** (colo mais varo): a fise fica mais vertical no plano frontal;\n\n**fise mais oblíqua** e mais espessa no estirão de crescimento;\n\n**obesidade**: aumenta a carga sobre a fise; é o principal fator de risco.\n\n**Os fatores endócrinos**: hipotireoidismo, deficiência de hormônio do crescimento, hipogonadismo, osteodistrofia renal e radioterapia.\n\n**Como lembrar**: tudo que \"deita\" a fise para a vertical piora. Anteversão maior e colo mais valgo deixariam a fise mais horizontal e a protegeriam.\n\n**Na prova**: os fatores biomecânicos da epifisiólise são a **diminuição da anteversão** e a **diminuição do ângulo cervicodiafisário**.",
-  "correta": "Menos anteversão e colo mais varo deixam a fise mais vertical e aumentam o cisalhamento.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de epifisiólise proximal do fêmur.",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo de epifisiólise proximal do fêmur."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0456": {
@@ -7265,17 +7274,18 @@
   "conferido": false
  },
  "pediatria-0591": {
+  "conceito": "**A remodelação óssea na criança.** O osso da criança tem uma capacidade única de **corrigir** deformidades residuais de fraturas. Ela depende de três fatores: a **idade** (quanto mais crescimento restante, maior a correção), a **proximidade da fise** (deformidades perto das fises de maior crescimento remodelam mais) e o **plano** da deformidade (no plano de movimento da articulação vizinha, remodela melhor).\n\n**Os mecanismos da remodelação.**\n| Mecanismo | Contribuição |\n|---|---|\n| **Reorientação da fise** | A fise se inclina para ficar **perpendicular** às forças de carga, e o crescimento longitudinal endireita o osso: responde pela **maior parte** da correção (cerca de **75%**) |\n| **Remodelação no foco** (lei de Wolff) | **Aposição** de osso no lado côncavo e **reabsorção** no lado convexo: cerca de **25%** |\n| Hipercrescimento | Estímulo da fise pela hiperemia da consolidação, que compensa o encurtamento |\n\n**O que não remodela.** A **rotação** praticamente **não remodela**, e as deformidades fora do plano do movimento articular remodelam pouco. A **translação** remodela bem (aceitam-se até 100% de desvio lateral se houver contato e alinhamento).\n\n**A fratura diafisária do fêmur.** Na criança, o fêmur tem grande potencial de remodelação, sobretudo abaixo de **10 anos**. Por isso aceitam-se:\n| Idade | Angulação aceitável (varo ou valgo; sagital) | Encurtamento |\n|---|---|---|\n| Até 2 anos | 30°; 30° | 15 mm |\n| 2 a 5 anos | 15°; 20° | 20 mm |\n| 6 a 10 anos | 10°; 15° | 15 mm |\n| Acima de 11 anos | 5°; 10° | 10 mm |\n\n**O hipercrescimento.** Após a fratura do fêmur entre 2 e 10 anos, o fêmur cresce em média **0,7 a 1 cm** a mais, por estímulo das fises. Por isso, nessa faixa, um encurtamento de 1 a 2 cm com cavalgamento é aceitável no gesso.",
+  "correta": "**Correta: D (à reorientação fisária e crescimento longitudinal).** A maior parte da remodelação (cerca de 75%) vem da fise, que se reorienta perpendicularmente às forças e endireita o osso com o crescimento; a remodelação no foco responde pelo restante.",
   "incorretas": {
-   "A": "A translação é bem aceita, mas não é o mecanismo principal da remodelação.",
-   "B": "A rotação não remodela; precisa ser corrigida na redução.",
-   "C": "A remodelação no próprio foco responde só por cerca de 25% da correção."
+   "A": "A **translação** dos fragmentos é bem tolerada e remodela, mas não é o mecanismo responsável pela maior parte da correção.",
+   "B": "A **rotação** praticamente **não remodela**; deformidades rotacionais devem ser corrigidas na redução.",
+   "C": "A remodelação **no foco** (aposição e reabsorção, lei de Wolff) responde por apenas cerca de 25% da correção."
   },
-  "conceito": "A **fratura diafisária do fêmur** na criança tolera desvios que no adulto seriam inaceitáveis, porque o osso **remodela**. Mas é importante saber **como** essa remodelação acontece:\n\n**cerca de 75% da correção** vem da **fise**: a fise se **reorienta**, voltando a ficar perpendicular às forças de carga (lei de Hueter-Volkmann), e o **crescimento longitudinal** vai \"endireitando\" o osso com o tempo;\n\n**cerca de 25%** vem da remodelação **no próprio foco**: aposição de osso no lado côncavo e reabsorção no convexo.\n\n**O que remodela e o que não remodela**:\n\n**angulação** no plano de movimento da articulação vizinha: remodela bem, sobretudo em crianças pequenas;\n\n**translação** (fragmentos lado a lado, em baioneta): é aceita e o osso se refaz;\n\n**rotação**: **não remodela**; a malrotação deve ser corrigida na redução.\n\n**O hipercrescimento**: depois da fratura do fêmur, a criança costuma crescer **1 a 2 cm a mais** desse lado nos anos seguintes, pela hiperemia. Por isso, aceita-se um encurtamento de até cerca de 2 cm no tratamento, que tende a se compensar.\n\n**Na prova**: o maior percentual de remodelação vem da **reorientação fisária e do crescimento longitudinal**.",
-  "correta": "Cerca de 75% da correção vem da fise, que se reorienta às cargas, somada ao crescimento longitudinal.",
   "referencias": [
-   "Lovell and Winter's Pediatric Orthopaedics, 7ª edição (Weinstein, Flynn), Cap. 34"
+   "Lovell and Winter's Pediatric Orthopaedics, 7ª edição (Weinstein, Flynn), Cap. 34",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), capítulo de fraturas diafisárias do fêmur."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0592": {
@@ -7555,17 +7565,18 @@
   "conferido": false
  },
  "pediatria-0611": {
+  "conceito": "**As fraturas do olécrano na criança.** São **incomuns** (menos de 5% das fraturas do cotovelo), porque o olécrano da criança é curto, espesso e em boa parte cartilaginoso. Em cerca de **20%** dos casos, há uma **lesão associada**, sobretudo a fratura do **colo do rádio** ou a luxação da cabeça do rádio (Monteggia). Por isso, diante de uma fratura do olécrano, todo o cotovelo deve ser examinado.\n\n**Os mecanismos de Wilkins.**\n| Mecanismo | Padrão |\n|---|---|\n| **Flexão** | Tração do tríceps com o cotovelo fletido: traço transverso, com afastamento dos fragmentos |\n| **Extensão** com **valgo** | Cotovelo estendido, antebraço em **supinação**: fratura **em galho verde** longitudinal do olécrano, com o ápice medial, e fratura associada do **colo do rádio** |\n| Extensão com varo | Antebraço em **pronação**: olécrano em varo, com possível luxação lateral da cabeça do rádio (padrão de Monteggia) |\n| Cisalhamento | Trauma direto posterior |\n\n**Por que supinação e valgo.** Com o cotovelo **estendido** e o antebraço **supinado**, uma força em **valgo** comprime a cabeça do rádio contra o capítulo (fraturando o colo do rádio) e, ao mesmo tempo, traciona o lado medial, dobrando o olécrano: a cortical medial cede como um **galho verde**. As duas lesões fazem parte do mesmo mecanismo.\n\n**O tratamento.** As fraturas em galho verde e as sem desvio (menos de 2 a 3 mm de afastamento) são tratadas com **gesso** em extensão ou leve flexão por 3 a 4 semanas. As desviadas são fixadas com **banda de tensão** (às vezes com fio absorvível) ou parafuso. O colo do rádio associado segue as regras próprias: aceita-se até cerca de 30° de angulação.\n\n**Lesões em crianças com fragilidade óssea.** Fraturas por avulsão do olécrano, sobretudo **bilaterais**, sugerem **osteogênese imperfeita**.",
+  "correta": "**Correta: D (supinação e valgo).** Com o cotovelo estendido, o antebraço em supinação e uma força em valgo, a cabeça do rádio é comprimida contra o capítulo (fratura do colo) e o olécrano dobra em galho verde.",
   "incorretas": {
-   "A": "Pronação e varo são o mecanismo oposto ao que causa essa associação.",
-   "B": "A supinação está certa, mas o varo se associa à luxação lateral da cabeça do rádio.",
-   "C": "O valgo está certo, mas o antebraço estava em supinação no impacto."
+   "A": "A **pronação** com **varo** está associada à fratura do olécrano com luxação lateral da cabeça do rádio (padrão de Monteggia), e não à fratura do colo do rádio.",
+   "B": "A supinação está certa, mas o **varo** traciona o lado lateral e não comprime a cabeça do rádio contra o capítulo.",
+   "C": "O valgo está certo, mas a posição descrita para esse padrão é com o antebraço em **supinação**."
   },
-  "conceito": "A **fratura do olécrano** na criança raramente vem sozinha; o padrão do traço revela o mecanismo e aponta a **lesão associada** do rádio.\n\n**O mecanismo em valgo**: queda com o cotovelo **estendido**, o antebraço em **supinação** e carga em **valgo**:\n\no compartimento **lateral** é **comprimido**: o capítulo bate na cabeça do rádio e fratura o **colo do rádio**;\n\no lado **medial** é **tracionado**: o olécrano se abre em **galho verde** na face medial, com traço longitudinal.\n\n**Os padrões de fratura do olécrano na criança**:\n\n**flexão**: fratura transversa, como avulsão pelo tríceps;\n\n**extensão em valgo**: galho verde medial, associada à **fratura do colo do rádio**;\n\n**extensão em varo**: galho verde lateral, associada à **luxação lateral da cabeça do rádio** (equivalente de Monteggia tipo III);\n\n**cisalhamento**: fragmento distal desviado.\n\n**A regra prática**: diante de uma fratura do olécrano, sempre procurar uma **lesão radial** associada (colo do rádio ou cabeça do rádio luxada).\n\n**Na prova**: o galho verde do olécrano com fratura do colo do rádio ocorre com o antebraço em **supinação** e o cotovelo em **valgo**.",
-  "correta": "Com o antebraço supinado e carga em valgo, o colo do rádio é comprimido e fratura, e o olécrano se abre em galho verde na face medial.",
   "referencias": [
-   "Rockwood and Wilkins's fractures in Children 7th Ed (referência indicada na prova TARO 2017, questão 11)"
+   "Rockwood and Wilkins's fractures in Children 7th Ed (referência indicada na prova TARO 2017, questão 11)",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), capítulo de fraturas do olécrano e do rádio proximal."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0612": {
@@ -8019,17 +8030,17 @@
   "conferido": false
  },
  "pediatria-0643": {
+  "conceito": "**A fratura da clavícula na criança.** É uma das fraturas mais comuns da infância (cerca de 10% a 15%). A clavícula é o **primeiro osso a ossificar** (5ª semana de gestação, por ossificação intramembranosa) e o **último** a fechar a fise (a medial, por volta de 23 a 25 anos). A maioria das fraturas é no **terço médio**, onde o osso muda de curvatura e não há inserções musculares protetoras.\n\n**Os mecanismos por idade.**\n| Idade | Mecanismo mais comum |\n|---|---|\n| **Recém-nascido** | **Trauma de parto** (macrossomia, distocia de ombro): a fratura mais comum do parto |\n| Lactente sem história compatível | Pensar em **maus-tratos** (baixa especificidade, mas exige contexto) |\n| **Idade escolar e adolescência** | **Queda sobre a face lateral do ombro** (no chão ou no esporte) |\n| Menos comuns | Trauma direto na clavícula; queda sobre a mão espalmada |\n\n**Por que a queda sobre o ombro.** Estudos biomecânicos mostram que a queda sobre a face **lateral do ombro** comprime a clavícula no seu eixo, entre o acrômio e o esterno, e a faz **dobrar** e quebrar no terço médio. A queda sobre a mão espalmada, que se pensava ser a causa mais comum, é menos frequente.\n\n**O recém-nascido.** A fratura de parto se apresenta com **pseudoparalisia** (o bebê não mexe o braço) e crepitação; deve ser diferenciada da lesão do **plexo braquial** (às vezes coexistem). Consolida em 7 a 10 dias, com um calo palpável, sem tratamento além de cuidado no manuseio.\n\n**O tratamento.** Quase sempre **conservador**, com **tipoia** por 3 a 4 semanas: o remodelamento é excelente, e o encurtamento e o calo desaparecem em meses. A cirurgia é reservada para fraturas **expostas** ou com pele ameaçada, lesão neurovascular e, discutivelmente, adolescentes com encurtamento grande (mais de 2 cm) e desvio total. As **lesões da fise medial** (pseudoluxação esternoclavicular posterior) podem comprimir a traqueia e os grandes vasos e exigem redução, de preferência com cirurgião torácico disponível.",
+  "correta": "**Correta: D (queda ao solo com trauma na região lateral do ombro).** Na criança em idade escolar, a fratura da clavícula resulta principalmente da queda sobre a face lateral do ombro, que comprime a clavícula no seu eixo e a faz quebrar no terço médio.",
   "incorretas": {
-   "A": "Maus-tratos é hipótese no lactente sem história, não o mecanismo típico na idade escolar.",
-   "B": "O trauma direto sobre a clavícula é raro.",
-   "C": "A queda sobre a mão espalmada é causa menos frequente."
+   "A": "Os **maus-tratos** devem ser lembrados no **lactente** sem história compatível, mas não são o mecanismo mais comum na idade escolar.",
+   "B": "O **trauma direto** na clavícula é menos frequente que a queda sobre o ombro.",
+   "C": "A queda com a **mão espalmada** ocorre, mas é menos frequente que a queda sobre a face lateral do ombro."
   },
-  "conceito": "A **fratura da clavícula** é uma das mais comuns da criança, e o mecanismo muda com a idade:\n\n**recém-nascido**: **trauma de parto**, sobretudo em bebês grandes (macrossomia) e na distocia de ombro; o bebê não mexe o braço (pseudoparalisia) e forma calo em 2 a 3 semanas;\n\n**lactente sem história** compatível: pensar em **maus-tratos**;\n\n**idade escolar**: **queda ao solo com trauma direto na face lateral do ombro**, o mecanismo **mais comum**. A força comprime a clavícula no sentido do seu comprimento, e ela quebra no terço médio;\n\n**queda sobre a mão espalmada**: causa possível, mas **menos frequente**;\n\n**trauma direto sobre a clavícula**: raro.\n\n**O tratamento**: quase sempre **conservador**, com tipoia ou imobilização em oito por 3 a 4 semanas. A clavícula da criança **remodela muito**: até desvios grandes e encurtamentos se corrigem. Os pais devem ser avisados sobre o **calo palpável**, que diminui com meses.\n\n**Quando operar** (raro): fratura exposta, pele sob tensão, lesão neurovascular ou adolescente com grande desvio e encurtamento.\n\n**Na prova**: na idade escolar, o mecanismo mais comum da fratura da clavícula é a **queda com trauma na região lateral do ombro**.",
-  "correta": "A queda sobre a face lateral do ombro comprime a clavícula no seu eixo e é o mecanismo mais comum na idade escolar.",
   "referencias": [
    "Beaty JH, Kasser JR. Rockwood and Wilkins’ Fractures in Children. 8aedição. Philadelphia: Lippincott Williams & Wilkins, 2015. 8 Ed. 809 Pg (referência indicada na prova TARO 2019, questão 54)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0644": {
@@ -8889,14 +8900,18 @@
   "conferido": false
  },
  "pediatria-0704": {
+  "conceito": "**As fraturas dos metatarsos na criança.** São as fraturas mais comuns do pé infantil. O padrão muda com a **idade**:\n| Idade | Metatarso mais fraturado | Mecanismo |\n|---|---|---|\n| **Até 5 anos** | **1º metatarso** (base) | Queda de altura (beliche, escada) com o pé em flexão plantar |\n| **Acima de 5 e sobretudo de 10 anos** | **5º metatarso** | Inversão do pé no esporte, quedas e entorses |\n\n**O 5º metatarso.** É o osso mais lateral, exposto à **inversão** do pé, e recebe a inserção do **fibular curto** e da faixa lateral da fáscia plantar na sua base. Na criança maior e no adolescente, a fratura do 5º metatarso é a mais frequente. As principais formas:\n- **avulsão da tuberosidade** (zona 1): pela tração do fibular curto e da fáscia na inversão; consolida bem com bota e carga conforme a dor;\n- **fratura de Jones** (zona 2, junção metáfise-diáfise): área de vascularização pobre, com risco de **retardo** de consolidação e pseudartrose; tratamento com bota sem carga ou parafuso intramedular no atleta;\n- **fratura de estresse** da diáfise proximal (zona 3): sobrecarga repetitiva.\n\n**A armadilha da apófise.** A **apófise** da base do 5º metatarso aparece entre **9 e 14 anos** e tem orientação **paralela** ao eixo do osso; a fratura por avulsão costuma ser **transversa**. Não confundir a apófise normal com fratura, nem com a apofisite de tração (doença de **Iselin**), dolorosa no adolescente esportista.\n\n**O tratamento geral.** A maioria das fraturas dos metatarsos na criança é tratada com **bota gessada ou imobilizador** e carga conforme a dor. Desvios grandes, fraturas múltiplas desviadas e as lesões de **Lisfranc** exigem redução e fixação. O trauma de esmagamento exige vigilância da **síndrome compartimental** do pé.",
+  "correta": "**Correta: D (quinto metatarso).** Acima de 5 anos, e sobretudo após os 10, a fratura do 5º metatarso é a mais frequente, pela inversão do pé no esporte e pela tração do fibular curto; nas crianças menores, predomina a do 1º metatarso.",
   "incorretas": {
-   "A": "O primeiro metatarso predomina nas crianças pequenas, abaixo de 5 anos.",
-   "B": "O segundo metatarso fratura mais por estresse, mas não é o mais comum nessa idade.",
-   "C": "O terceiro metatarso raramente é o mais acometido."
+   "A": "O **1º metatarso** é o mais fraturado nas crianças **menores de 5 anos**, por queda de altura.",
+   "B": "O **2º metatarso** é frequentemente envolvido em fraturas múltiplas e na lesão de Lisfranc, mas não é o mais fraturado isoladamente.",
+   "C": "O **3º metatarso** fratura geralmente junto com os vizinhos, raramente isolado."
   },
-  "conceito": "O padrão das **fraturas dos metatarsos** muda com a idade:\n\n**criança pequena** (abaixo de 5 anos): a fratura mais comum é a do **primeiro metatarso**, em geral por queda de objetos sobre o pé ou por pisar em falso;\n\n**criança maior** (acima de 5 anos) e **adolescente**: com o esporte, predomina a fratura do **quinto metatarso**, sobretudo na base, por **inversão** do pé.\n\n**O cuidado na base do quinto metatarso**: por volta dos **10 anos** aparece a **apófise** da base do 5º metatarso (onde se insere o fibular curto). Ela tem uma linha **longitudinal**, paralela ao eixo do osso; a **fratura** costuma ser **transversal**. Não confundir uma com a outra; em dúvida, comparar com o outro pé.\n\n**Os tipos de fratura da base do 5º**:\n\n**avulsão da tuberosidade**: a mais comum, tratada com bota ou calçado rígido e carga conforme a dor;\n\n**fratura de Jones** (na junção metáfise-diáfise): mais risco de pseudartrose; pode precisar de imobilização sem carga ou fixação.\n\n**O segundo metatarso** fratura mais por **estresse**; o terceiro raramente é o mais acometido.\n\n**Na prova**: na criança maior de 10 anos, a fratura metatarsal mais frequente é a do **quinto metatarso**.",
-  "correta": "Na criança maior e no adolescente, a fratura do quinto metatarso predomina, sobretudo na base, por inversão.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), capítulo de fraturas do pé.",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de fraturas do pé."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0705": {
