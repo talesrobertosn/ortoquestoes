@@ -563,14 +563,18 @@
   "conferido": false
  },
  "pediatria-0038": {
-  "conceito": "### Legg-Calvé-Perthes: fases (Waldenström)\n| Fase | Achado |\n|---|---|\n| inicial (necrose) | cabeça densa, pequena; fratura subcondral (Salter-Thompson) |\n| ==fragmentação== | epífise fragmentada, colapso |\n| reossificação | osso novo |\n| residual | remodelada |\n\n### Classificações\n| Classificação | Incidência | Fase | Critério |\n|---|---|---|---|\n| ==Herring (pilar lateral)== | ==AP== | ==fragmentação== | altura do pilar lateral: A (100%), B (> 50%), B/C, C (< 50%) |\n| Catterall | AP e perfil | | quanto da epífise acometida (I a IV) + sinais de risco |\n| Salter-Thompson | perfil | inicial | extensão da fratura subcondral |\n| Stulberg | AP e perfil | ==maturidade== | congruência e esfericidade (prognóstico de artrose) |\n\n### Prognóstico\n- Pior: início > 8 anos, Herring C, sinais de cabeça em risco.\n\n### Catterall\n| Grupo | Epífise acometida |\n|---|---|\n| I | só anterior, sem colapso |\n| II | anterior com sequestro, pilares preservados |\n| III | maior parte, só pequena porção posterior preservada |\n| ==IV== | ==epífise inteira== |\n\n### Sinais de cabeça em risco\n- Gage (V lateral), calcificação lateral, subluxação lateral, metáfise com cistos, fise horizontal.\n\n> **Na prova:** figura = ==Catterall IV em fragmentação==",
-  "correta": "**IV com fragmentação.**\n- Toda a epífise acometida.\n- Fase de fragmentação na imagem.",
+  "conceito": "**A doença de Legg-Calvé-Perthes e a classificação de Catterall.** Perthes é a necrose avascular idiopática da cabeça femoral em crescimento, típica de meninos entre **4 e 8 anos**. Catterall (1971) classificou a doença pela **extensão do acometimento** da epífise, vista nas radiografias em AP e perfil durante a fase de fragmentação:\n\n| Grupo | Extensão do acometimento | Achados |\n|---|---|---|\n| **I** | Apenas a parte **anterior** da epífise | Sem sequestro nem colapso; metáfise preservada |\n| **II** | Até **metade** anterior | Sequestro central, com colunas medial e lateral preservadas |\n| **III** | Cerca de **três quartos** | Só uma pequena parte posterior preservada; sequestro grande e alterações metafisárias |\n| **IV** | **Toda** a cabeça | Colapso total, achatamento e alterações metafisárias difusas |\n\n**Os sinais de \"cabeça em risco\".** Catterall descreveu ainda sinais de mau prognóstico: **sinal de Gage** (rarefação em V na parte lateral da epífise), **calcificação lateral** à epífise, **subluxação lateral**, **horizontalização da fise** e **alterações metafisárias** difusas.\n\n**As fases da doença (Waldenström).** Inicial (esclerose e epífise menor), **fragmentação** (a epífise se divide em pedaços com áreas radiotransparentes), **reossificação** (osso novo preenche a epífise) e residual (forma final). Para responder a pergunta é preciso juntar as duas informações: **quanto** da cabeça está acometido e **em que fase** está.\n\n**A limitação.** A classificação de Catterall tem **baixa concordância** entre observadores e só pode ser aplicada após a fragmentação. Por isso, hoje se usa mais a de **Herring** (pilar lateral), que tem maior valor prognóstico.\n\n**A imagem.** A radiografia mostra a epífise **inteira** acometida, achatada e dividida em fragmentos com áreas radiotransparentes, sem osso novo homogêneo: grupo **IV**, fase de **fragmentação**.",
+  "correta": "**Correta: C (IV com fragmentação).** A imagem mostra o acometimento de toda a epífise (grupo IV de Catterall), com a cabeça fragmentada em pedaços, sem sinais de reossificação.",
   "incorretas": {
-   "A": "**Grupo errado.**\n- Há acometimento total.",
-   "B": "**Grupo e fase errados.**\n- Não é reossificação.",
-   "D": "**Fase errada.**\n- Ainda fragmentando."
+   "A": "No grupo **III**, uma pequena parte posterior da epífise está preservada; na imagem, a cabeça inteira está acometida.",
+   "B": "Além de a extensão ser de grupo IV, não há o osso novo homogêneo que caracteriza a **reossificação**.",
+   "D": "A extensão é de grupo IV, mas a fase é de **fragmentação**: a epífise está dividida, sem preenchimento por osso novo."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de doença de Legg-Calvé-Perthes.",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo de doença de Legg-Calvé-Perthes."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0039": {
@@ -683,18 +687,18 @@
   "conferido": false
  },
  "pediatria-0046": {
+  "conceito": "**A pseudoartrose congênita da tíbia (PCT).** É uma doença rara em que um segmento da tíbia, geralmente na **junção do terço médio com o distal**, é displásico e fraco. A tíbia se encurva e, cedo ou tarde, **fratura e não consolida**. A **neurofibromatose tipo 1** está presente em cerca de **metade ou mais** dos casos. Por outro lado, só uma pequena parcela dos pacientes com NF1 tem PCT.\n\n**O tecido doente.** Ao redor do foco há um **periósteo espessado** e um **hamartoma fibroso** que estrangula o osso e impede a consolidação. A ressecção completa desse tecido é parte fundamental da cirurgia.\n\n**O encurvamento da tíbia na criança: a direção diz o diagnóstico.**\n\n| Direção | Diagnóstico | Prognóstico |\n|---|---|---|\n| **Anterolateral** | **Pseudoartrose congênita** da tíbia (NF1) | **Ruim**: tende a fraturar e não consolidar |\n| **Posteromedial** | Encurvamento **fisiológico** congênito, com pé calcaneovalgo | **Bom**: corrige espontaneamente; deixa **discrepância** |\n| **Anteromedial** | **Hemimelia fibular** (deficiência da fíbula) | Discrepância importante; deformidade do pé e tornozelo |\n\n**Como lembrar.** **A**nterolateral é **a** ruim (a pseudoartrose). Posteromedial é a \"boa\", que só deixa a perna mais curta. Anteromedial acompanha a ausência da fíbula, com covinha cutânea sobre a tíbia.\n\n**Tratamento.**\n- **Antes da fratura:** proteger a tíbia com uma **órtese** (tipo concha, AFO/KAFO) para evitar a fratura. **Não** se faz osteotomia corretiva para endireitar, porque ela vira pseudoartrose.\n- **Depois da fratura:** a cirurgia é desafiadora. Ela inclui:\n  - **ressecção** do tecido hamartomatoso;\n  - estabilização com **haste intramedular** (de Williams, por exemplo) ou fixador circular de **Ilizarov**;\n  - **enxerto** ósseo autólogo; o enxerto vascularizado de fíbula é uma opção;\n  - a técnica de **cross-union** (união entre tíbia e fíbula) tem mostrado bons resultados.\n- A recidiva de fratura é comum, e a haste costuma ser mantida até a maturidade.\n- Após várias falhas, a **amputação de Syme** com prótese é uma opção funcional legítima.\n\n**Os tipos de encurvamento da tíbia.** A direção do arqueamento é a chave diagnóstica:\n| Direção | Diagnóstico | Evolução |\n|---|---|---|\n| **Anterolateral** | **Pseudoartrose congênita** (NF1) | Grave: tende a fraturar e não consolidar |\n| **Posteromedial** | Encurvamento fisiológico congênito | Benigno: corrige espontaneamente, mas deixa discrepância |\n| **Anteromedial** | Deficiência longitudinal da fíbula (hemimelia fibular) | Associada a encurtamento e pé em equinovalgo |",
+  "correta": "**Correta: A (anterolateral).** O arqueamento **anterolateral** da tíbia é o característico da pseudoartrose congênita e deve alertar para o risco de fratura e para a neurofibromatose tipo 1.",
   "incorretas": {
-   "B": "O arqueamento anteromedial se associa à hemimelia fibular.",
-   "C": "O arqueamento posterolateral não é o padrão de nenhuma dessas condições clássicas.",
-   "D": "O arqueamento posteromedial é benigno e corrige espontaneamente."
+   "B": "O arqueamento **anteromedial** está associado à **deficiência longitudinal da fíbula** (hemimelia fibular).",
+   "C": "O arqueamento **posterolateral** não é um padrão clássico de nenhuma dessas entidades.",
+   "D": "O arqueamento **posteromedial** é o encurvamento **benigno**, que corrige espontaneamente com o crescimento, mas deixa discrepância de comprimento."
   },
-  "conceito": "A **pseudartrose congênita da tíbia** é uma tíbia que nasce **arqueada para anterolateral**, no terço distal, frágil, que **fratura com trauma mínimo** e depois **não consolida**.\n\n**A associação mais importante**: a **neurofibromatose tipo 1**, presente em cerca de metade dos casos (e 5 a 10% das pessoas com NF1 têm a doença). Também aparece em displasia fibrosa e displasia osteofibrosa.\n\n**Os três arqueamentos congênitos da tíbia**, que precisam ser diferenciados:\n\n**anterolateral**: **pseudartrose congênita**; piora e fratura;\n\n**posteromedial**: benigno; **corrige sozinho** e deixa discrepância de comprimento;\n\n**anteromedial**: associado à **hemimelia fibular**.\n\n**O tratamento**:\n\n**antes da fratura**: **órtese protetora** até a maturidade; **nunca** fazer osteotomia para corrigir o arqueamento, porque ela não consolida;\n\n**depois da fratura**: ressecção do tecido doente, haste intramedular (Williams), enxerto ósseo, fixador externo (Ilizarov), fíbula vascularizada e, mais recentemente, a união cruzada entre tíbia e fíbula (Paley).\n\n**Na prova**: pseudartrose congênita da tíbia = arqueamento **anterolateral**.",
-  "correta": "O arqueamento anterolateral é o característico da pseudartrose congênita da tíbia, que fratura e não consolida.",
   "referencias": [
-   "Pediatric Orthopaedic Society of North America (POSNA). Congenital Pseudarthrosis of the Tibia. https://posna.org/physician-education/study-guide/congenital-pseudarthrosis-of-the-tibia-%28cpt%29",
-   "Pediatric Lower Extremity Disorders – congenital tibia dysplasia. https://posna.org/blogs/resident-review/december-2017/pediatric-lower-extremity-disorders"
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de pseudoartrose congênita da tíbia.",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo de deformidades da perna."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0047": {
@@ -1082,20 +1086,19 @@
   "conferido": false
  },
  "pediatria-0072": {
+  "conceito": "**A displasia do desenvolvimento do quadril (DDQ) e as partes moles.** Quando a cabeça femoral sai do acetábulo, ela se desloca para **cima e para trás** (posterossuperior), sobre o ilíaco. Com o tempo, as partes moles se **adaptam** à nova posição, e várias delas passam a **impedir a redução**.\n\n**As estruturas que se contraem e bloqueiam a redução.**\n\n| Estrutura | Como bloqueia |\n|---|---|\n| **Adutores** (sobretudo o adutor longo) | Ficam **encurtados e tensos**: limitam a **abdução** e impedem a cabeça de descer ao acetábulo |\n| **Iliopsoas** | Seu tendão cruza a frente da cápsula e a **estrangula** (forma de ampulheta) |\n| Cápsula | Alongada, com uma constrição em \"ampulheta\" |\n| **Lábio** invertido (limbo) | Pode se interpor dentro do acetábulo |\n| **Ligamento redondo** hipertrofiado e **pulvinar** (gordura) | Ocupam o fundo do acetábulo |\n| **Ligamento transverso** do acetábulo | Contraído, estreita a entrada inferior |\n\n**A tensão dos adutores.** É o achado **clínico** mais importante da luxação estabelecida: a **limitação da abdução** do quadril em flexão. Depois dos 3 meses, quando as manobras de Ortolani e Barlow deixam de funcionar (o quadril não reduz mais), a **abdução limitada** e assimétrica é o principal sinal da DDQ. Outros sinais: **encurtamento** da coxa (sinal de **Galeazzi**: o joelho do lado luxado fica mais baixo), pregas assimétricas e, depois da marcha, **claudicação** e marcha de Trendelenburg.\n\n**As implicações no tratamento.**\n- Na **redução fechada** (geralmente de 6 a 18 meses), faz-se a **tenotomia dos adutores** para permitir uma abdução segura, sem forçar a cabeça contra o acetábulo (que causaria necrose avascular).\n- O gesso pelvipodálico é feito na posição \"**humana**\" de Salter (flexão de cerca de 100° e abdução moderada, dentro da zona segura de Ramsey).\n- Se a redução fechada falhar, faz-se a **redução aberta**, removendo o iliopsoas, o lábio invertido, o ligamento redondo e o pulvinar, e liberando o ligamento transverso.\n\n**Os abdutores e os rotadores** ficam, ao contrário, **encurtados e enfraquecidos** pela subida do trocanter, sem gerar tensão que impeça a redução. Por isso, a criança com luxação desenvolve a marcha de Trendelenburg.\n\n**Qual o obstáculo mais importante.** Na DDQ de diagnóstico tardio, o **istmo** (constrição em \"ampulheta\") da cápsula, estrangulada pelo tendão do **iliopsoas**, é o bloqueio mais significativo: a entrada da cápsula fica menor que a cabeça femoral, e a cabeça não passa. Por isso, na redução aberta, a **capsulotomia** e a **tenotomia do psoas** são passos obrigatórios. O lábio invertido (limbo), o ligamento redondo, o pulvinar e o ligamento transverso também bloqueiam a redução, mas em geral são obstáculos secundários.",
+  "correta": "**Correta: A (a constrição da cápsula articular).** A constrição em ampulheta da cápsula, estrangulada pelo iliopsoas, é o obstáculo mais significativo à redução na DDQ tardia, e por isso a capsulotomia é etapa central da redução aberta.",
   "incorretas": {
-   "B": "O lábio invertido também bloqueia a redução, mas não é o obstáculo principal para a fonte da prova.",
-   "C": "O pulvinar hipertrofiado ocupa o fundo do acetábulo, mas é obstáculo menor.",
-   "D": "O ligamento redondo espesso atrapalha, mas não é o obstáculo principal."
+   "B": "O **lábio invertido** (limbo) pode se interpor e bloquear a redução, e algumas fontes o destacam, mas a referência da prova considera a constrição capsular o obstáculo mais significativo.",
+   "C": "O **pulvinar** (gordura do fundo do acetábulo) ocupa espaço e é removido na redução aberta, mas é obstáculo secundário.",
+   "D": "O **ligamento redondo** hipertrofiado ocupa o fundo do acetábulo e é ressecado, mas é obstáculo secundário."
   },
-  "conceito": "Na **displasia do quadril** diagnosticada **tarde**, a cabeça femoral passou meses fora do acetábulo, e várias estruturas se adaptaram e passaram a **impedir a redução**.\n\n**Os obstáculos extra-articulares**:\n\n**iliopsoas**: passa na frente da cápsula e a **estrangula**, dando a ela o formato de **ampulheta**;\n\n**adutores** retraídos.\n\n**Os obstáculos intra-articulares**:\n\n**cápsula constrita** (o istmo da ampulheta): a cabeça não passa por ele; é o obstáculo apontado como o **mais importante** pela fonte da prova;\n\n**lábio invertido** (limbo): dobra para dentro do acetábulo;\n\n**pulvinar** hipertrofiado (gordura no fundo do acetábulo);\n\n**ligamento redondo** alongado e espesso;\n\n**ligamento transverso** do acetábulo contraído.\n\n**A conduta por idade**: até 6 meses, suspensório de Pavlik; de 6 a 18 meses, redução fechada sob anestesia com artrografia e gesso; depois de cerca de 18 meses, **redução aberta**, muitas vezes com encurtamento do fêmur e osteotomia da pelve.\n\n**Na prova**: obstáculo principal na displasia tardia = **constrição da cápsula** (pela fonte da prova).",
-  "correta": "A cápsula estrangulada pelo iliopsoas, em ampulheta, é o obstáculo mais significativo à redução pela fonte da prova.",
-  "alerta": "Há ambiguidade no enunciado: a cápsula constrita é obstáculo relevante, mas não é intra-articular em sentido estrito; revisões destacam também o labrum invertido como bloqueio mecânico intra-articular. O comentário preserva o gabarito A e explicita a ressalva.",
   "referencias": [
-   "Obstacles to reduction in infantile DDQ. https://pmc.ncbi.nlm.nih.gov/articles/PMC5643929/",
-   "Developmental dysplasia of the hip: management update. https://pmc.ncbi.nlm.nih.gov/articles/6771078/",
-   "DDQ: changes in the last 20 years. https://pmc.ncbi.nlm.nih.gov/articles/PMC4686436/"
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de displasia do desenvolvimento do quadril.",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo de displasia do desenvolvimento do quadril."
   ],
-  "geradoEm": "2026-10-04",
+  "alerta": "Há ambiguidade no enunciado: a cápsula constrita é obstáculo relevante, mas não é intra-articular em sentido estrito; revisões destacam também o labrum invertido como bloqueio mecânico intra-articular. O comentário preserva o gabarito A e explicita a ressalva.",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0073": {
@@ -1975,17 +1978,18 @@
   "conferido": false
  },
  "pediatria-0137": {
+  "conceito": "**A mielomeningocele e o fechamento do tubo neural.** A mielomeningocele é a forma mais grave e mais comum de **espinha bífida aberta**: a medula e as meninges saem por um defeito dos arcos posteriores e ficam expostas em uma bolsa nas costas, geralmente lombar ou lombossacra.\n\n**A embriologia.** Na terceira semana, a placa neural se dobra e forma o **sulco neural**, cujas bordas se aproximam e se fundem, formando o **tubo neural**. O fechamento começa na região cervical e avança como um zíper nos dois sentidos. O **neuróporo anterior** (cranial) fecha por volta do **25º ao 26º dia**, e o **neuróporo posterior** (caudal), por volta do **26º ao 28º dia**. A falha do fechamento caudal produz a mielomeningocele; a falha do cranial produz a anencefalia. Por isso o defeito acontece **antes que a gestante saiba que está grávida**, e a prevenção precisa ser feita antes da concepção.\n\n**Os fatores de risco.**\n| Fator | Comentário |\n|---|---|\n| **Deficiência de ácido fólico** | O principal fator modificável; a suplementação periconcepcional reduz o risco em cerca de 70% |\n| **Genética** | Risco de recorrência de 2% a 5% após um filho afetado; maior em algumas etnias |\n| **Fármacos** | Ácido valproico e carbamazepina |\n| Diabetes e obesidade maternos, hipertermia | Aumentam o risco |\n\n**O diagnóstico pré-natal.** A **alfafetoproteína** elevada no soro materno e no líquido amniótico, e a ultrassonografia (sinais do \"limão\" e da \"banana\", pela malformação de Chiari II), permitem o diagnóstico precoce.\n\n**As consequências ortopédicas.** O **nível neurológico** (torácico, lombar alto, lombar baixo, sacral) define o prognóstico de marcha e as deformidades: luxação paralítica do quadril, pé torto rígido, pé calcâneo, escoliose e cifose. A **hidrocefalia** (Chiari II) e a **medula presa** podem piorar a função com o crescimento, e a alergia ao **látex** é frequente.",
+  "correta": "**Correta: C (ocorre entre o 26º e o 28º dia de desenvolvimento).** O neuróporo posterior fecha por volta do 26º ao 28º dia de gestação; a falha desse fechamento produz a mielomeningocele.",
   "incorretas": {
-   "A": "A deficiência ligada ao defeito é a de ácido fólico, não de vitaminas D e E.",
-   "B": "Há componente genético: a recorrência em irmãos é de 2 a 5%.",
-   "D": "O defeito é do fechamento do tubo neural, não dos folhetos laterais."
+   "A": "O fator nutricional ligado ao defeito do tubo neural é a **deficiência de ácido fólico**, e não de vitaminas D e E.",
+   "B": "Há **fator genético** claro: o risco de recorrência após um filho afetado é de 2% a 5%, muito acima da população geral.",
+   "D": "O defeito é do **fechamento do tubo neural** (falha da fusão das pregas neurais no neuróporo posterior), e não dos \"folhetos laterais\"."
   },
-  "conceito": "A **mielomeningocele** é um defeito do **fechamento do tubo neural**. O tubo começa a se fechar no meio e segue para as pontas; o **neuróporo caudal** é o último a fechar, entre o **26º e o 28º dia** de gestação. Se ele não fecha, a medula e as meninges ficam expostas nas costas.\n\n**O que aumenta o risco**:\n\n**deficiência de ácido fólico**, o fator mais importante e prevenível;\n\n**medicamentos**: ácido valproico e carbamazepina;\n\n**condições maternas**: diabetes, obesidade e hipertermia no início da gestação;\n\n**componente genético**: recorrência de 2 a 5% em irmãos.\n\n**A prevenção**: ácido fólico **0,4 mg por dia** desde antes da concepção, ou **4 mg por dia** se houve filho anterior afetado. Como o tubo fecha antes de muitas mulheres saberem que estão grávidas, o suplemento precisa começar antes.\n\n**O diagnóstico pré-natal**: alfafetoproteína elevada e ultrassom com os **sinais do limão** (crânio) e da **banana** (cerebelo, pela malformação de Chiari II).\n\n**O nível ortopédico**: o mais importante para a marcha é o **quadríceps (L3-L4)**.\n\n**Na prova**: a mielomeningocele se forma entre o **26º e 28º dias** de desenvolvimento.",
-  "correta": "O neuróporo caudal fecha entre o 26º e o 28º dia; a falha nesse momento gera a mielomeningocele.",
   "referencias": [
-   "https://www.ncbi.nlm.nih.gov/books/NBK562303/"
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de mielomeningocele.",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo de mielomeningocele."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0138": {
@@ -2063,17 +2067,18 @@
   "conferido": false
  },
  "pediatria-0143": {
+  "conceito": "**O torcicolo muscular congênito.** É a causa **mais comum** de torcicolo no lactente e é **indolor**. Resulta da **fibrose** do músculo esternocleidomastoideo (ECM), provavelmente por uma síndrome compartimental intrauterina ou de parto: o músculo fica encurtado.\n\n**A apresentação.**\n- **Cabeça inclinada para o mesmo lado** do ECM acometido e **queixo rodado para o lado oposto** (o ECM inclina a cabeça para o seu lado e gira a face para o lado contrário).\n- **Nódulo** ou massa (a \"oliva\" ou pseudotumor) palpável no ventre do ECM, que aparece nas **primeiras semanas** de vida (geralmente entre 2 e 4 semanas) e regride em alguns meses.\n- **Plagiocefalia** e assimetria facial podem se desenvolver se não tratado.\n- Associações: **displasia do desenvolvimento do quadril** (cerca de 10% a 20%), metatarso aduto, parto difícil ou pélvico (doenças do \"aperto\" intrauterino).\n\n**O diagnóstico diferencial (torcicolo não muscular).**\n| Causa | Pista |\n|---|---|\n| Anomalias **ósseas** (Klippel-Feil, hemivértebra) | Rigidez, radiografia alterada |\n| Torcicolo **ocular** (paralisia do IV nervo) | Corrige quando um olho é tapado |\n| Subluxação rotatória C1-C2 (Grisel) | **Doloroso**, após infecção ou trauma |\n| Tumor de fossa posterior, síndrome de Sandifer (refluxo) | Sinais neurológicos ou relação com alimentação |\n\n**O tratamento.** O **alongamento** passivo e o posicionamento resolvem mais de **90%** dos casos no primeiro ano. A cirurgia (liberação do ECM, uni ou bipolar) fica para o torcicolo persistente após **1 ano**, com restrição significativa da rotação ou assimetria facial progressiva.",
+  "correta": "**Correta: B (a forma indolor mais comum é o torcicolo congênito muscular).** A fibrose do esternocleidomastoideo é a causa mais frequente de torcicolo no lactente e não causa dor; o torcicolo doloroso sugere outras causas, como a subluxação rotatória.",
   "incorretas": {
-   "A": "Está invertida: a cabeça inclina para o lado do músculo envolvido e o queixo roda para o oposto.",
-   "C": "A deformidade aparece nas primeiras semanas de vida, não meses depois.",
-   "D": "O nódulo surge por volta do primeiro mês e regride em meses; não aparece após 1 ano."
+   "A": "A cabeça se inclina para o **mesmo lado** do músculo envolvido; é o **queixo** que gira para o lado oposto.",
+   "C": "A deformidade aparece **cedo**, nas primeiras semanas de vida, junto com o nódulo, e não leva meses para surgir.",
+   "D": "O nódulo é percebido nas **primeiras semanas** (2 a 4 semanas) e costuma **regredir** em alguns meses; após 1 ano já não é o achado típico."
   },
-  "conceito": "O **torcicolo muscular congênito** é a fibrose e o encurtamento do **esternocleidomastoideo** (ECM). É a causa **indolor mais comum** de torcicolo na criança.\n\n**Como se apresenta**:\n\n**postura**: a cabeça **inclina para o lado do ECM encurtado** e o queixo **roda para o lado oposto**;\n\n**pseudotumor**: um **nódulo** no ECM aparece nas **primeiras semanas** (por volta do 1º mês) e regride em alguns meses;\n\n**deformidade**: fica evidente já nas **primeiras semanas** de vida, e não meses depois;\n\n**associações**: **displasia do quadril** (sempre examinar os quadris), metatarso aduto e parto difícil; com o tempo, plagiocefalia e assimetria facial.\n\n**O tratamento**: alongamento e posicionamento resolvem mais de 90% quando começam antes de 1 ano. A cirurgia (tenotomia uni ou bipolar) fica para quem segue com déficit após 1 ano.\n\n**Os diferenciais** que não podem passar: Klippel-Feil, subluxação atlantoaxial, estrabismo (torcicolo ocular), tumor de fossa posterior e síndrome de Sandifer (refluxo).\n\n**Na prova**: a forma indolor mais comum é o **torcicolo muscular congênito**.",
-  "correta": "O torcicolo muscular congênito, por fibrose do esternocleidomastoideo, é a causa indolor mais comum na criança.",
   "referencias": [
-   "https://posna.org/physician-education/study-guide/congenital-muscular-torticollis"
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de torcicolo.",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo de coluna cervical."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0144": {
@@ -3512,33 +3517,33 @@
   "conferido": false
  },
  "pediatria-0292": {
+  "conceito": "**A artrogripose múltipla congênita.** \"Artrogripose\" significa **contraturas articulares congênitas** em **duas ou mais áreas** do corpo. Não é uma doença única, e sim um **sinal** com centenas de causas. O ponto comum é a **falta de movimento fetal** (acinesia): sem movimento no útero, as articulações se formam rígidas, com cápsulas espessas e músculos substituídos por gordura e tecido fibroso.\n\n**As causas da falta de movimento fetal.** Neurológicas (as mais comuns), musculares, do tecido conjuntivo, falta de espaço intrauterino (oligoâmnio, útero malformado) e doenças maternas (miastenia, infecções).\n\n**A amioplasia: a forma clássica.** É a forma mais comum, cerca de um terço dos casos. É **esporádica**, simétrica, com os **quatro membros** acometidos, inteligência **normal** e um **hemangioma** facial em linha média frequente. A postura é tão típica que se reconhece à primeira vista:\n\n| Região | Postura típica |\n|---|---|\n| **Ombro** | **Aduzido e em rotação interna** |\n| **Cotovelo** | **Estendido** (às vezes fletido) |\n| Antebraço | Pronado |\n| **Punho** | **Fletido** e com desvio ulnar |\n| Dedos | Fletidos, polegar na palma |\n| Quadril | Fletido, abduzido e em rotação externa, ou **luxado** |\n| Joelho | Estendido ou fletido |\n| Pé | **Pé torto** rígido (equinovaro) ou tálus vertical |\n\nA pele é **lisa**, sem as pregas de flexão normais, com **covinhas** sobre as articulações. Os membros são cilíndricos e com pouca massa muscular. A imagem do braço lembra a de um \"garçom pedindo gorjeta\" (como na paralisia braquial alta).\n\n**As artrogriposes distais.** Grupo **hereditário**, autossômico dominante, que acomete sobretudo as **mãos e os pés**. As grandes articulações são relativamente poupadas. Um exemplo é a síndrome de Freeman-Sheldon.\n\n**Os princípios do tratamento.**\n- **Mobilização precoce** e gessos seriados: o ganho de movimento é maior nos primeiros meses.\n- O objetivo é a **função**, e não a correção perfeita: andar e ser independente nas atividades diárias.\n- No membro superior, o objetivo é levar a mão à boca, o que exige **flexão do cotovelo**. Pode-se usar liberação capsular e transferência de tríceps. Um lado em flexão e o outro em extensão pode ser a melhor combinação.\n- O **pé torto** artrogripótico é **rígido** e recidiva muito. Usa-se o método de Ponseti com mais gessos, e às vezes a talectomia.\n- A luxação **bilateral** do quadril pode ser deixada sem tratamento. A unilateral costuma ser reduzida.",
+  "correta": "**Correta: C (amioplasia).** A amioplasia é a forma **mais comum** de artrogripose (cerca de um terço dos casos): quadro simétrico dos quatro membros, músculos substituídos por tecido fibroso e gordura, inteligência normal e ocorrência esporádica.",
   "incorretas": {
-   "A": "A síndrome dos pterígeos múltiplos é rara.",
-   "B": "As artrogriposes distais formam o segundo grupo, menos comum que a amioplasia.",
-   "D": "Larsen, com luxações múltiplas, é rara."
+   "A": "A **síndrome dos pterígeos múltiplos** é rara: contraturas com membranas de pele (pterígeos) atravessando as flexuras.",
+   "B": "A **artrogripose distal** é o segundo grupo mais frequente; acomete mãos e pés, com herança autossômica dominante, mas é menos comum que a amioplasia.",
+   "D": "A **síndrome de Larsen** é uma displasia rara com **luxações** múltiplas (joelhos, quadris, cotovelos), e não a artrogripose mais comum."
   },
-  "conceito": "As **síndromes artrogripóticas** têm em comum as **contraturas congênitas em duas ou mais articulações**. A causa comum é a **acinesia fetal**: o feto se mexe pouco e as articulações enrijecem. Hall dividiu essas síndromes em grupos:\n\n**amioplasia**: a forma **mais comum**, cerca de um terço dos casos. É **esporádica** (não hereditária), **simétrica** e atinge os **quatro membros**: ombros aduzidos em rotação interna, cotovelos estendidos, punhos fletidos, quadris luxados ou fletidos, joelhos estendidos ou fletidos e pé torto rígido. A pele é lisa, sem pregas, com covinhas sobre as articulações, e a inteligência é normal;\n\n**artrogriposes distais**: atingem sobretudo **mãos e pés**, com herança autossômica dominante; o exemplo é a síndrome de **Freeman-Sheldon** (face assobiante);\n\n**síndrome dos pterígeos múltiplos**: membranas de pele nas flexuras, rara;\n\n**outras síndromes**: **Larsen** (luxações múltiplas), displasia diastrófica.\n\n**O tratamento**: fisioterapia e gessos desde cedo; cirurgias para o que não cede, como a talectomia no pé torto resistente. O objetivo é a função: andar e usar as mãos.\n\n**Na prova**: a síndrome artrogripótica mais comum é a **amioplasia**.",
-  "correta": "A amioplasia responde por cerca de um terço dos casos: esporádica, simétrica e nos quatro membros.",
   "referencias": [
-   "Arthrogryposis: A Review and Update. PMCID: PMC2698792.",
-   "Tachdjian's Pediatric Orthopaedics. 6th edition. Elsevier."
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de artrogripose.",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo de artrogripose."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0293": {
+  "conceito": "**A ultrassonografia do quadril infantil.** Até cerca de **4 a 6 meses**, a cabeça femoral é **cartilaginosa** e não aparece na radiografia; por isso a ultrassonografia é o exame de imagem de escolha na displasia do desenvolvimento do quadril (DDQ). Dois métodos dominam a prática:\n\n| Método | Como é feito | O que mede |\n|---|---|---|\n| **Graf** (estático) | Corte coronal padronizado, com o bebê em decúbito lateral | **Ângulo alfa** (teto ósseo) e **ângulo beta** (teto cartilaginoso); classifica em tipos I a IV |\n| **Harcke** (dinâmico) | Cortes coronal e transversal com **manobras de estresse** (tipo Barlow) | Posição e **estabilidade** da cabeça; cobertura e instabilidade |\n\n**O método de Graf.** O quadril normal (tipo I) tem **alfa de 60° ou mais**. Valores entre 50° e 59° são o tipo II (imaturo antes de 3 meses ou displásico depois); abaixo de 50°, o tipo III ou IV (descentrado ou luxado). É o método mais usado na Europa, inclusive para triagem universal.\n\n**O método de Harcke.** Avalia a **estabilidade** em tempo real, sob estresse, e a **cobertura** da cabeça (porcentagem de cobertura, como no índice de Morin). É mais usado nos Estados Unidos e combina bem com o exame físico.\n\n**Quando pedir.** A ultrassonografia de rotina não é recomendada antes de **4 a 6 semanas**, porque a frouxidão fisiológica do recém-nascido gera falsos positivos. É indicada em bebês com fatores de risco (apresentação **pélvica**, história familiar) ou exame alterado, e serve para monitorar o tratamento com o suspensório de Pavlik.\n\n**Os nomes das alternativas.** **Hilgenreiner** e **Reimers** são epônimos **radiográficos**: a linha de Hilgenreiner (horizontal pelas cartilagens trirradiadas) e o índice de migração de Reimers (usado sobretudo na paralisia cerebral).",
+  "correta": "**Correta: C (Harcke e Graf).** Graf descreveu o método **estático** morfológico (ângulos alfa e beta) e Harcke o método **dinâmico**, com manobras de estresse; são os dois métodos ultrassonográficos de referência na DDQ.",
   "incorretas": {
-   "A": "Reimers e Hilgenreiner são parâmetros radiográficos, não métodos de ultrassom.",
-   "B": "Graf está certo, mas Reimers é o índice de migração radiográfico, usado na paralisia cerebral.",
-   "D": "Harcke está certo, mas Hilgenreiner é uma linha da radiografia."
+   "A": "**Reimers** (índice de migração) e **Hilgenreiner** (linha horizontal) são parâmetros **radiográficos**, e não métodos ultrassonográficos.",
+   "B": "**Graf** é um dos métodos de ultrassom, mas **Reimers** é o índice de migração **radiográfico**, usado sobretudo no quadril da paralisia cerebral.",
+   "D": "**Harcke** é método de ultrassom, mas **Hilgenreiner** dá nome à linha **radiográfica** que passa pelas cartilagens trirradiadas."
   },
-  "conceito": "Na **displasia do quadril** do bebê, a cabeça femoral é cartilaginosa até cerca de 4 a 6 meses e **não aparece na radiografia**. Por isso, nessa fase, o exame de imagem é o **ultrassom**. Há dois métodos principais:\n\n**Graf**: **estático** e **morfológico**. Em corte coronal, mede o **ângulo alfa** (entre o ilíaco e o teto ósseo; normal a partir de **60°**) e o **ângulo beta** (com o teto cartilaginoso). Classifica o quadril em tipos de I (normal) a IV (luxado);\n\n**Harcke**: **dinâmico**. Avalia a **estabilidade** da cabeça durante manobras de estresse (como Barlow), em cortes coronal e transverso, observando se a cabeça subluxa ou luxa.\n\n**Um terceiro**: o método de Terjesen mede o percentual de cobertura da cabeça.\n\n**Os métodos radiográficos** (não são ultrassom):\n\n**Hilgenreiner**: a linha horizontal pelas cartilagens trirradiadas, base do **índice acetabular**;\n\n**Reimers**: o **índice de migração** da cabeça, usado sobretudo na vigilância do quadril na **paralisia cerebral**.\n\n**Na prova**: os dois métodos ultrassonográficos são **Graf** (estático) e **Harcke** (dinâmico).",
-  "correta": "Graf avalia a morfologia do quadril com os ângulos alfa e beta, e Harcke avalia a estabilidade dinâmica sob estresse.",
   "referencias": [
-   "Use of ultrasonography in developmental dysplasia of the hip. PMCID: PMC3965765.",
-   "Using the Graf method of ultrasound examination to classify hip dysplasia in neonates. PMCID: PMC6735551."
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de displasia do desenvolvimento do quadril.",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo de displasia do desenvolvimento do quadril."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0294": {
@@ -3879,18 +3884,18 @@
   "conferido": false
  },
  "pediatria-0332": {
+  "conceito": "**A idade óssea.** É a estimativa da maturidade esquelética pela aparência dos centros de ossificação e das fises. É usada para prever o **crescimento restante**: planejar epifisiodeses e alongamentos, acompanhar a escoliose e decidir o momento de tratamentos guiados pelo crescimento.\n\n**Os métodos principais.**\n| Método | Região | Melhor uso |\n|---|---|---|\n| **Greulich e Pyle** | **Mão e punho** esquerdos (comparação com atlas) | Infância; menos preciso na **puberdade** |\n| **Tanner-Whitehouse** | Mão e punho (pontuação de ossos individuais) | Mais trabalhoso e mais reprodutível que o atlas |\n| **Sauvegrain** | **Cotovelo** (AP e perfil) | **Adolescência**, no início da puberdade |\n| **Risser** | Apófise do ilíaco | Fim do crescimento (escoliose) |\n\n**Por que o cotovelo na puberdade.** Durante o **pico de crescimento** puberal, os centros da mão já estão quase todos presentes e o atlas de Greulich e Pyle avança em saltos de 6 a 12 meses, perdendo precisão. O **cotovelo**, ao contrário, passa por mudanças rápidas e bem definidas nesse período: a forma e a fusão de quatro centros: **côndilo lateral** (capítulo), **tróclea**, **olécrano** e **epífise proximal do rádio**. O método de Sauvegrain soma até **27 pontos** nesses quatro centros e cobre um período de cerca de dois anos (por exemplo, de 10 a 13 anos nas meninas e de 12 a 15 anos nos meninos) com intervalos de **6 meses**. A simplificação de **Diméglio** usa só o **olécrano**, e é útil no acompanhamento da escoliose antes do pico.\n\n**A ordem dos centros do cotovelo (CRITOE).** Capítulo (1 ano), cabeça do Rádio (3 a 5), epicôndilo medial (Interno, 5 a 7), Tróclea (7 a 9), Olécrano (8 a 10) e epicôndilo lateral (Externo, 10 a 12). As meninas são mais adiantadas.",
+  "correta": "**Correta: D (cotovelo, sendo mais confiável nos adolescentes).** O método de Sauvegrain usa radiografias do cotovelo e é mais preciso no início da puberdade, quando o atlas da mão perde resolução e o cotovelo muda de forma rápida e previsível.",
   "incorretas": {
-   "A": "Punho na infância descreve o método de Greulich e Pyle.",
-   "B": "O cotovelo está certo, mas Sauvegrain é mais útil na adolescência, não na infância.",
-   "C": "A adolescência está certa, mas o método usa o cotovelo, não o punho."
+   "A": "O método do **punho** e da mão é o de **Greulich e Pyle** (e Tanner-Whitehouse), e não o de Sauvegrain.",
+   "B": "Sauvegrain usa o **cotovelo**, mas sua vantagem está na **adolescência**, e não nas crianças pequenas.",
+   "C": "A avaliação pela mão e punho é a de Greulich e Pyle; Sauvegrain é o método do **cotovelo**."
   },
-  "conceito": "A **idade óssea** estima a maturidade do esqueleto pela radiografia. Cada método usa uma região diferente e funciona melhor numa faixa de idade:\n\n**Greulich e Pyle**: **mão e punho**, comparados com um atlas; o mais usado na **infância** em geral;\n\n**Tanner-Whitehouse**: mão e punho, dando pontos a cada osso; também na infância;\n\n**Sauvegrain**: **cotovelo**, somando pontos de quatro centros (capítulo, tróclea, olécrano e cabeça do rádio); mais preciso na **adolescência**, no pico de crescimento;\n\n**Risser**: ossificação da apófise da **crista ilíaca**, no fim do crescimento;\n\n**Sanders**: mão (falanges e rádio distal), útil na escoliose para achar o pico de crescimento.\n\n**Por que o cotovelo na adolescência**: entre cerca de 10 e 15 anos, justo no **pico puberal**, os núcleos do cotovelo aparecem e se fundem em sequência. O punho, nessa fase, muda pouco, e o atlas de Greulich e Pyle perde precisão.\n\n**Para que serve**: planejar epifisiodese e alongamentos, prever o crescimento que resta e decidir o tratamento da escoliose.\n\n**Na prova**: Sauvegrain usa o **cotovelo** e é mais confiável nos **adolescentes**.",
-  "correta": "O método de Sauvegrain pontua os núcleos do cotovelo, que mudam rápido no pico puberal; é mais preciso na adolescência.",
   "referencias": [
-   "Accuracy of the Sauvegrain method in determining skeletal age during puberty. PMID: 16085606.",
-   "Tachdjian's Pediatric Orthopaedics. 6th edition. Elsevier."
+   "Diméglio A et al. Accuracy of the Sauvegrain method in determining skeletal age during puberty. J Bone Joint Surg Am. 2005;87(8):1689-96.",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de crescimento e desenvolvimento."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0333": {
@@ -5412,14 +5417,18 @@
   "conferido": false
  },
  "pediatria-0456": {
+  "conceito": "**O suspensório de Pavlik.** É o tratamento padrão da displasia do desenvolvimento do quadril (DDQ) do nascimento até cerca de **6 meses**. Ele mantém os quadris em **flexão** (cerca de 90° a 100°) e permite a **abdução** pela gravidade, sem forçá-la. Nessa posição, a cabeça femoral aponta para o acetábulo e a criança chuta livremente, o que ajuda a redução e o remodelamento. O tratamento deve ser checado com ultrassonografia: se o quadril não reduzir em **3 a 4 semanas**, o suspensório deve ser abandonado.\n\n**As complicações e suas causas.**\n| Complicação | Posição ou causa |\n|---|---|\n| **Paralisia do nervo femoral** | **Hiperflexão** excessiva (o nervo é comprimido sob o ligamento inguinal) |\n| **Necrose avascular** da cabeça femoral | **Abdução forçada** ou excessiva |\n| **Luxação inferior** ou obturatória | Hiperflexão |\n| **Doença do Pavlik** | Uso prolongado com quadril não reduzido: erosão da parede posterior do acetábulo |\n| Plexopatia braquial e lesões de pele | Alças mal ajustadas |\n\n**A paralisia do nervo femoral.** Ocorre em cerca de **2% a 3%** dos casos. Manifesta-se pela **falta de extensão ativa do joelho** (o bebê não chuta com o quadríceps). O tratamento é **diminuir a flexão** ou suspender o suspensório até a recuperação, que costuma ser completa em dias a semanas. A presença dessa paralisia é um fator de **pior prognóstico** para o sucesso do tratamento.\n\n**Como evitar.** As alças anteriores controlam a **flexão** e devem ser ajustadas para cerca de 90° a 100°; as alças posteriores **limitam a adução** e não devem forçar a abdução. O exame deve checar a função do quadríceps a cada consulta.",
+  "correta": "**Correta: B (lesão do nervo femoral).** A hiperflexão do quadril no Pavlik comprime o nervo femoral sob o ligamento inguinal, e a criança perde a extensão ativa do joelho. O tratamento é reduzir a flexão.",
   "incorretas": {
-   "A": "A doença do Pavlik é a erosão posterior do acetábulo por manter um quadril que não reduz.",
-   "C": "A hiperflexão pode causar luxação inferior (obturatória), não posterolateral.",
-   "D": "A necrose avascular é causada pela abdução forçada, não pela hiperflexão."
+   "A": "A **doença do Pavlik** é a erosão da parede **posterior** do acetábulo pelo uso prolongado com o quadril não reduzido, e não é a complicação típica da hiperflexão.",
+   "C": "A hiperflexão tende a levar a cabeça para baixo (**luxação inferior** ou obturatória), e não a uma luxação posterolateral.",
+   "D": "A **necrose avascular** está ligada à **abdução forçada** ou excessiva, e não à hiperflexão."
   },
-  "conceito": "O **suspensório de Pavlik** mantém o quadril do bebê em **flexão** de cerca de 100 a 110° e em abdução livre, a posição em que a cabeça tende a reduzir. Cada erro de ajuste tem sua complicação:\n\n**hiperflexão** (tira anterior apertada demais, acima de cerca de 120°): **paralisia do nervo femoral**, comprimido sob o ligamento inguinal; também pode causar luxação **inferior** (obturatória);\n\n**abdução forçada** (acima de cerca de 60°): **necrose avascular** da cabeça femoral;\n\n**manter um quadril que não reduz**: **doença do Pavlik**, com erosão da parede **posterior** do acetábulo.\n\n**Como reconhecer a lesão do nervo femoral**: o bebê **para de estender o joelho** ao chutar, porque o quadríceps não funciona.\n\n**A conduta**: **afrouxar a tira anterior** para diminuir a flexão; a função costuma voltar em poucos dias. Enquanto o quadríceps não voltar, o tratamento com Pavlik não deve continuar.\n\n**O acompanhamento**: ultrassom seriado; se o quadril não reduzir em 3 a 4 semanas, o Pavlik é suspenso.\n\n**Na prova**: Pavlik em hiperflexão tem como principal complicação a **lesão do nervo femoral**.",
-  "correta": "A hiperflexão comprime o nervo femoral sob o ligamento inguinal, e o bebê para de estender o joelho.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de displasia do desenvolvimento do quadril.",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo de displasia do desenvolvimento do quadril."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0457": {
@@ -7506,17 +7515,18 @@
   "conferido": false
  },
  "pediatria-0616": {
+  "conceito": "**A fratura da epífise proximal da tíbia.** É rara, porque a fise proximal da tíbia é protegida: lateralmente pela fíbula, à frente pela tuberosidade e pelo tendão patelar, e porque os ligamentos colaterais se inserem **abaixo** dela (o colateral medial insere-se na metáfise). Em compensação, quando ocorre, é uma das lesões mais **perigosas** do joelho da criança.\n\n**O mecanismo e a lesão vascular.** O mecanismo mais comum é a **hiperextensão** (e, em menor grau, o valgo ou varo). Na hiperextensão, a **metáfise** da tíbia se desloca para **trás**, em direção à fossa poplítea. A **artéria poplítea** está **presa** nesse ponto pelo arco do músculo sóleo e pela origem da artéria tibial anterior, que atravessa a membrana interóssea; por isso não consegue fugir e é **esticada ou lacerada** pelo fragmento metafisário. É a mesma lógica da luxação do joelho no adulto.\n\n**A conduta.**\n| Etapa | Ponto-chave |\n|---|---|\n| Exame | Pulsos, **índice tornozelo-braço**, sinais de síndrome compartimental |\n| Redução | Urgente, fechada, com fixação (fios ou parafusos); **aberta** se irredutível |\n| Isquemia | Exploração e reparo vascular, com **fasciotomia** profilática |\n| Seguimento | Risco de **parada de crescimento**, com discrepância e deformidade angular |\n\n**Os outros riscos.** Além da artéria, o **nervo fibular** pode ser lesado (sobretudo no mecanismo em varo), e a síndrome compartimental pode surgir. As fraturas Salter-Harris III e IV exigem redução **anatômica** da articulação. A **parada de crescimento** é frequente, porque a fise proximal da tíbia é responsável por grande parte do crescimento da perna.",
+  "correta": "**Correta: D (a hiperextensão).** Na hiperextensão, a metáfise da tíbia se desloca posteriormente e estica ou lacera a artéria poplítea, que está fixada pelo arco do sóleo e pela tibial anterior.",
   "incorretas": {
-   "A": "O varo não é o mecanismo que ameaça a artéria poplítea nessa fratura.",
-   "B": "O valgo também não é o mecanismo típico da lesão vascular.",
-   "C": "A flexão tende a produzir avulsões, como a da tuberosidade, e não lesão da poplítea."
+   "A": "O **varo** pode causar fratura da fise proximal e lesar o **nervo fibular**, mas não é o mecanismo típico da lesão vascular.",
+   "B": "O **valgo** também causa fratura da fise, mas a lesão arterial está associada ao deslocamento **posterior** da metáfise, típico da hiperextensão.",
+   "C": "A **flexão** com contração do quadríceps causa a **avulsão da tuberosidade** da tíbia, e não o deslocamento posterior que lesa a artéria."
   },
-  "conceito": "A **fratura da fise proximal da tíbia** é **rara**, porque essa fise é bem protegida: os ligamentos colaterais se inserem abaixo dela (na metáfise, do lado medial) e a tuberosidade anterior funciona como um contraforte.\n\n**O mecanismo mais perigoso: a hiperextensão.** Quando o joelho é forçado em hiperextensão, a epífise vai para a frente e a **metáfise desvia para trás**. Atrás da tíbia proximal passa a **artéria poplítea**, que fica **presa** junto ao arco do sóleo e não consegue escapar. A metáfise desviada **comprime ou lesa** a artéria.\n\n**A conduta**:\n\n**exame vascular** cuidadoso e **seriado**: pulsos, enchimento capilar, índice tornozelo-braço; na dúvida, angiotomografia;\n\n**redução urgente** da fratura;\n\n**vigilância** para **síndrome compartimental**, que pode vir da isquemia e do edema;\n\nse a perfusão não voltar após a redução, exploração vascular.\n\n**Os outros mecanismos**: varo e valgo causam lesões fisárias sem a mesma ameaça vascular; a **flexão** tende a produzir avulsões, como a da tuberosidade anterior.\n\n**Na prova**: a fratura da fise proximal da tíbia com lesão vascular vem mais da **hiperextensão**.",
-  "correta": "Na hiperextensão a metáfise desvia para trás e lesa a artéria poplítea, presa junto ao arco do sóleo.",
   "referencias": [
-   "Rockwood and Wilkins's fractures in Children 8th Ed. 1453 Pg (referência indicada na prova TARO 2017, questão 64)"
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), capítulo de fraturas da tíbia proximal.",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de fraturas do joelho."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0617": {
