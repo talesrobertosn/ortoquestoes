@@ -3326,14 +3326,18 @@
   "conferido": false
  },
  "mao-0316": {
-  "conceito": "### Compartimento dorsal do antebraço\n| Camada | Músculos |\n|---|---|\n| superficial | ERLC, ERCC, extensor comum, extensor do mínimo, EUC (+ braquiorradial) |\n| profunda | supinador, ==abdutor longo, extensor curto e extensor longo do polegar==, extensor do indicador |\n\n- O ==nervo interósseo posterior== sai do supinador e corre ==entre as camadas==.\n\n### Extensor longo do polegar\n- Trajeto ==oblíquo acentuado==, do lado ulnar ao radial.\n- Contorna o ==tubérculo de Lister== (3º compartimento) e cruza os extensores radiais.\n- Interseção distal; ruptura por atrito após fratura do rádio (mesmo sem desvio).\n\n### Nervos sensitivos\n- Cutâneo antebraquial posterior: subcutâneo, ramo do radial no braço.\n\n> **Na prova:** nervo entre as camadas + músculo oblíquo ao Lister = ==NIP e extensor longo do polegar==.",
-  "correta": "**NIP e extensor longo do polegar.**\n- O NIP corre entre as camadas superficial e profunda.\n- O ELP tem trajeto oblíquo até o tubérculo de Lister.\n- Esse trajeto explica ruptura e interseção distal.",
+  "conceito": "**A imagem.** Vista **posterior** do antebraço, com os extensores superficiais afastados para mostrar a camada **profunda**. A seta superior aponta o **nervo interósseo posterior**, que sai por baixo do **supinador** e desce sobre a membrana interóssea. A seta inferior aponta o músculo profundo que corre obliquamente em direção ao polegar, junto à ulna e à membrana: o **extensor longo do polegar**.\n\n**A camada profunda do compartimento posterior.** De proximal para distal e de lateral para medial:\n\n| Músculo | Origem | Inserção |\n|---|---|---|\n| Supinador | Epicôndilo lateral, crista do supinador da ulna | Rádio proximal |\n| **Abdutor longo do polegar** | Ulna, rádio e membrana (o mais proximal dos \"polegares\") | Base do 1º metacarpo |\n| **Extensor curto do polegar** | **Rádio** e membrana (abaixo do abdutor longo) | Base da falange **proximal** do polegar |\n| **Extensor longo do polegar** | **Ulna** e membrana (terço médio) | Base da falange **distal** do polegar |\n| Extensor do indicador | Ulna e membrana (o mais distal) | Aparelho extensor do indicador |\n\n**Como diferenciar os extensores do polegar.**\n- O **extensor longo** nasce na **ulna**, corre **obliquamente** e, no punho, passa ao redor do **tubérculo de Lister** (3º compartimento extensor), formando a borda **ulnar** da tabaqueira anatômica.\n- O **extensor curto** nasce no **rádio**, mais lateral e mais distal, e acompanha o **abdutor longo** no **1º compartimento** (o da tenossinovite de **De Quervain**), formando a borda **radial** da tabaqueira.\n\n**O nervo interósseo posterior.** É o ramo **motor** profundo do nervo radial. Entra no supinador pela **arcada de Frohse**, atravessa-o e sai no compartimento posterior, onde inerva os extensores dos dedos, do polegar e o extensor ulnar do carpo. Termina no punho, com fibras sensitivas para a cápsula (no assoalho do 4º compartimento, onde é ressecado na **denervação** do punho).\n\n**O nervo cutâneo antebraquial posterior** é um ramo **sensitivo** do radial, que sai **acima** do cotovelo e corre **superficialmente**, no subcutâneo, e não na camada profunda entre os músculos.\n\n**A importância clínica.**\n- **Ruptura do extensor longo do polegar**: após fraturas do rádio distal **sem desvio** (atrito e isquemia no tubérculo de Lister) e na artrite reumatoide. Trata-se com a **transferência do extensor do indicador**.\n- **Lesão do interósseo posterior**: dedos e polegar caídos, com a extensão do punho preservada (em desvio radial).",
+  "correta": "**Correta: A (interósseo posterior e extensor longo do polegar).** Na camada profunda do antebraço posterior, a seta superior aponta o **nervo interósseo posterior**, que sai do supinador, e a inferior aponta o **extensor longo do polegar**, que nasce na ulna e corre obliquamente em direção ao polegar.",
   "incorretas": {
-   "B": "**Músculo errado.**\n- O extensor curto acompanha o abdutor longo ao 1º compartimento.",
-   "C": "**Nervo errado.**\n- O cutâneo posterior é subcutâneo.",
-   "D": "**Duplamente errada.**\n- Nem o nervo nem o músculo."
+   "B": "O nervo está certo, mas o **extensor curto do polegar** nasce no **rádio**, mais lateral e distal, junto ao abdutor longo, e não é o músculo indicado.",
+   "C": "O **nervo cutâneo antebraquial posterior** é **sensitivo** e superficial, e não corre na camada profunda junto à membrana interóssea.",
+   "D": "Erra o nervo (o indicado é o interósseo posterior, motor e profundo) e o músculo (o extensor longo do polegar, da ulna)."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)",
+   "Netter FH. Atlas de Anatomia Humana. 7ª edição. Elsevier; 2019."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0317": {
@@ -5559,14 +5563,18 @@
   "conferido": false
  },
  "mao-0550": {
+  "conceito": "**As anastomoses entre o mediano e o ulnar.** Os nervos mediano e ulnar frequentemente **trocam fibras** entre si, no antebraço ou na mão. Essas conexões são **variações anatômicas** comuns e explicam achados que parecem \"não encaixar\" no exame de uma lesão nervosa.\n\n| Anastomose | Local | Direção e significado |\n|---|---|---|\n| **Martin-Gruber** | **Antebraço** (proximal) | Fibras do **mediano** (ou do interósseo anterior) vão para o **ulnar**; presente em cerca de 15 a 30% das pessoas |\n| Marinacci | Antebraço | O inverso: do **ulnar** para o **mediano** (rara) |\n| **Riche-Cannieu** | **Mão**, na região **tenar** | Liga o **ramo motor recorrente do mediano** ao **ramo profundo do ulnar**; muito frequente |\n| Berrettini | **Palma**, superficial | Comunicação **sensitiva** entre os nervos digitais comuns do mediano e do ulnar |\n\n**A anastomose de Riche-Cannieu.** Ocorre na **mão**, entre o ramo **recorrente** (motor) do mediano e o ramo **profundo** do ulnar, geralmente dentro do **flexor curto do polegar** ou do adutor. Ela explica por que os músculos tenares podem ter **inervação dupla** ou variável.\n\n**As consequências clínicas.**\n- Um paciente com **lesão completa do mediano** no punho pode continuar fazendo a **oponência** do polegar, porque os músculos tenares recebem fibras do ulnar pela anastomose. O examinador pode pensar, erroneamente, que o nervo está íntegro.\n- Na **lesão do ulnar**, a perda dos intrínsecos pode ser menor que a esperada, se fibras motoras vierem do mediano (Martin-Gruber).\n- Na **eletroneuromiografia**, as anastomoses produzem achados atípicos (respostas em músculos \"inesperados\"), que precisam ser reconhecidos para não confundir o diagnóstico de síndromes compressivas.\n\n**Como lembrar a localização.** **Martin-Gruber**: antebraço (os dois \"G\" de antebraço, ou \"**M**artin, **M**ediano para ulnar, antebraço\"). **Riche-Cannieu**: na **mão**, na eminência tenar.",
+  "correta": "**Correta: C (mediano e ulnar na mão).** As conexões de Riche-Cannieu ocorrem **na mão**, na região tenar, entre o ramo motor recorrente do **mediano** e o ramo profundo do **ulnar**. Elas explicam a oponência preservada em algumas lesões completas do mediano.",
   "incorretas": {
-   "A": "Mediano e ulnar no antebraço é a anastomose de Martin-Gruber (ou a de Marinacci, no sentido inverso).",
-   "B": "Não é uma anastomose entre radial e ulnar.",
-   "D": "Não é uma anastomose entre mediano e radial."
+   "A": "A conexão entre o mediano e o ulnar **no antebraço** é a anastomose de **Martin-Gruber** (ou, no sentido inverso, a de Marinacci).",
+   "B": "As conexões de Riche-Cannieu não envolvem o nervo **radial**.",
+   "D": "Não há uma anastomose clássica entre o **mediano e o radial no antebraço** com esse nome."
   },
-  "conceito": "O mediano e o ulnar se comunicam em vários pontos, e cada anastomose tem um nome e um lugar:\n\n**Riche-Cannieu**: na **mão** (palma), entre o **ramo motor recorrente do mediano** e o **ramo profundo do ulnar**; é frequente;\n\n**Martin-Gruber**: no **antebraço**, do mediano para o ulnar;\n\n**Marinacci**: no **antebraço**, do ulnar para o mediano; rara;\n\n**Berrettini**: na palma, entre ramos **sensitivos** digitais.\n\n**Por que a Riche-Cannieu importa**: ela explica por que alguém com o **mediano seccionado** pode continuar com músculos tenares funcionando, inervados por fibras que vieram do ulnar. No extremo, existe a \"mão toda ulnar\". Também confunde a eletroneuromiografia e o exame clínico do túnel do carpo.\n\n**As outras combinações** das alternativas (radial com ulnar na mão, mediano com radial no antebraço) não descrevem essas anastomoses.\n\n**Na prova**: Riche-Cannieu = **mediano e ulnar na mão**.",
-  "correta": "A anastomose de Riche-Cannieu liga o ramo recorrente do mediano ao ramo profundo do ulnar, na palma.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)",
+   "Netter FH. Atlas de Anatomia Humana. 7ª edição. Elsevier; 2019."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0551": {
@@ -9906,19 +9914,20 @@
   "conferido": false
  },
  "mao-0840": {
-  "conceito": "**A discondrosteose de Léri-Weill é causada por alterações do gene SHOX (short stature homeobox), um gene da família homeobox (HOX), localizado na região pseudoautossômica dos cromossomos X e Y.**\n\n**Quadro:** baixa estatura mesomélica (antebraços e pernas curtos) e **deformidade de Madelung** bilateral, mais evidente e mais grave em meninas (efeito do estrogênio no fechamento das fises).\n\n**Outras condições ligadas ao SHOX:** síndrome de Turner (a perda de um X leva à haploinsuficiência do SHOX, explicando a baixa estatura e, às vezes, a deformidade de Madelung) e a displasia mesomélica de Langer (perda nos dois alelos, forma grave).\n\n**Os outros genes das alternativas:**\n\n| Gene | Doença |\n|---|---|\n| CFTR | Fibrose cística |\n| TIMP-1 | Associado à doença de Dupuytren |\n| T-box (TBX5) | Holt-Oram |\n| HLA-B27 | Espondiloartrites |",
-  "correta": "**HOX.** A deformidade de Madelung da discondrosteose de Léri-Weill decorre de alterações do SHOX, um gene homeobox da família HOX.",
+  "conceito": "**A deformidade de Madelung.** É uma deformidade do punho causada por um **distúrbio de crescimento** da porção **volar e ulnar** da **fise distal do rádio**. Essa parte da fise cresce menos (ou fecha precocemente), enquanto a parte dorsal e radial cresce normalmente.\n\n**As causas.**\n- Muitas vezes associada à **discondrosteose de Léri-Weill**, por mutação no gene **SHOX**, com baixa estatura e encurtamento dos antebraços e das pernas (mesomelia).\n- Um ligamento anômalo, o **ligamento de Vickers** (do semilunar à metáfise volar ulnar do rádio), prende e restringe a fise.\n- Também pode ser **idiopática**, ou secundária a trauma ou infecção.\n\n**Quem tem.** É muito mais comum no **sexo feminino** (cerca de 4 para 1) e frequentemente **bilateral**. Aparece no **pré-adolescente** e no adolescente, durante o estirão.\n\n**A deformidade.**\n- O rádio distal se **inclina** para **volar** e **ulnar**: aumentam a inclinação volar e a inclinação ulnar da superfície articular.\n- O **carpo** escorrega para **volar** e **ulnar**, como numa calha, formando uma cunha com o semilunar no ápice.\n- A **ulna** fica **proeminente** no **dorso** (subluxação dorsal da cabeça da ulna).\n- O rádio fica curto e arqueado.\n\n**A limitação do movimento.** As limitações típicas são da **extensão** do punho, do **desvio radial** e da **supinação** do antebraço (pela incongruência da radioulnar distal). A flexão e a pronação são relativamente preservadas.\n\n**O quadro clínico.** Muitas pacientes têm apenas a **deformidade estética**. Outras têm **dor**, cansaço e limitação de movimento. Podem ocorrer roturas de tendões extensores sobre a ulna proeminente.\n\n**O tratamento.**\n- Assintomáticas: **observação**.\n- Na criança em crescimento, com deformidade progressiva: **liberação do ligamento de Vickers** e **fisiólise** (ressecção da barra fisária), às vezes com epifisiodese da ulna.\n- Deformidade estabelecida, com dor, no adulto: **osteotomias** corretivas do rádio (em cúpula ou em cunha), às vezes com encurtamento da ulna.\n\n**O gene SHOX.** A discondrosteose de **Léri-Weill** é causada por mutações ou deleções do gene **SHOX** (short stature homeobox), localizado na região **pseudoautossômica** dos cromossomos **X e Y**. O SHOX pertence à família dos genes **homeobox** (genes **HOX**), que controlam o desenvolvimento e o padrão dos membros. A falta de uma cópia do SHOX causa **baixa estatura** com encurtamento **mesomélico** (antebraços e pernas) e a deformidade de Madelung. O SHOX também está envolvido na baixa estatura da **síndrome de Turner** (45,X), que perde uma cópia do gene.",
+  "correta": "**Correta: A (HOX).** A deformidade de Madelung da discondrosteose de Léri-Weill está ligada ao gene **SHOX** (short stature homeobox), da família dos genes **homeobox** (HOX), localizado na região pseudoautossômica dos cromossomos X e Y.",
   "incorretas": {
-   "B": "O CFTR é o gene da fibrose cística.",
-   "C": "O TIMP-1 está associado à doença de Dupuytren.",
-   "D": "O TBX5 (família T-box) está associado à síndrome de Holt-Oram (deficiência radial e cardiopatia).",
-   "E": "O HLA-B27 está associado às espondiloartrites."
+   "B": "O gene **CFTR** está relacionado à **fibrose cística**, e não à discondrosteose.",
+   "C": "O **TIMP-1** é um inibidor das metaloproteinases, sem relação com a deformidade de Madelung.",
+   "D": "Os genes **T-BOX** (como o TBX5, da síndrome de Holt-Oram, e o TBX3) estão ligados a outras malformações dos membros, e não ao Léri-Weill.",
+   "E": "O **HLA-B27** é um marcador das **espondiloartropatias**, e não um gene de deformidades congênitas."
   },
   "referencias": [
    "Rao E et al. Pseudoautosomal deletions encompassing a novel homeobox gene cause growth failure in idiopathic short stature and Turner syndrome. Nat Genet. 1997;16(1):54-63.",
-   "Ghatan AC, Hanel DP. Madelung deformity. J Am Acad Orthop Surg. 2013;21(6):372-82."
+   "Ghatan AC, Hanel DP. Madelung deformity. J Am Acad Orthop Surg. 2013;21(6):372-82.",
+   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0841": {
