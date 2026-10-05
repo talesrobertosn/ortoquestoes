@@ -5063,18 +5063,18 @@
   "conferido": false
  },
  "pediatria-0464": {
-  "conceito": "### Paralisia cerebral: tipo × sistema\n| Tipo | Sistema | Clínica |\n|---|---|---|\n| espástico | ==piramidal== (córtex motor, trato corticoespinal) | hipertonia velocidade-dependente, hiperreflexia |\n| ==discinético (atetoide, distônico)== | ==extrapiramidal== (núcleos da base) | movimentos involuntários lentos, contorcidos, tônus flutuante |\n| atáxico | cerebelar | dismetria, tremor de intenção, equilíbrio |\n| misto | vários | |\n\n### Associações\n- Atetoide: ==kernicterus== (hiperbilirrubinemia), asfixia a termo.\n- Diplegia espástica: prematuridade, leucomalácia periventricular.\n\n### Cirurgia ortopédica\n- Resultados mais previsíveis no ==espástico==; cautela nos discinéticos.\n\n> **Na prova:** PC atetoide = ==extrapiramidal==.",
-  "correta": "**Extrapiramidal.**\n- Núcleos da base.\n- Movimentos involuntários e tônus flutuante.",
+  "conceito": "**A classificação topográfica do sistema nervoso.** A paralisia cerebral é uma lesão não progressiva do encéfalo imaturo, e o tipo de distúrbio motor depende de **qual sistema** foi lesado. Por isso a classificação fisiológica corresponde a uma classificação anatômica.\n\n| Tipo clínico | Sistema lesado | Características |\n|---|---|---|\n| Espástico | **Piramidal** (córtex motor, trato corticoespinal) | Hipertonia que aumenta com a velocidade do estiramento, hiper-reflexia, clônus, Babinski |\n| **Discinético** (atetoide, distônico, coreico) | **Extrapiramidal** (núcleos da base) | Movimentos involuntários, tônus flutuante |\n| Atáxico | **Cerebelar** | Dismetria, tremor de intenção, alargamento da base de apoio |\n| Misto | Combinações | Geralmente espástico com componente discinético |\n\n**A forma atetoide.** A atetose é um movimento involuntário lento, contorcido e serpenteante, mais evidente nas mãos e na face. Aumenta com a emoção e com a tentativa de movimento voluntário e desaparece no sono. O tônus varia de baixo a alto, e por isso as contraturas fixas são menos frequentes que no espástico.\n\n**Causas clássicas.**\n- **Kernicterus** (hiperbilirrubinemia neonatal grave), que deposita bilirrubina nos núcleos da base. Era a causa típica antes da fototerapia e da exsanguineotransfusão.\n- **Asfixia perinatal aguda e grave** em recém-nascido a termo, que lesa seletivamente núcleos da base e tálamo.\n\n**Implicação ortopédica.** Cirurgias de alongamento e transferência tendínea, tão úteis no espástico, têm resultados imprevisíveis no atetoide, porque o tônus flutua e um tendão transferido pode produzir a deformidade oposta. Artrodeses e cirurgias estabilizadoras são mais confiáveis. Na coluna cervical, os movimentos involuntários repetitivos causam espondilose precoce e mielopatia em adultos com atetose.",
+  "correta": "**Correta: D (extrapiramidal).** A forma atetoide (discinética) resulta de lesão dos **núcleos da base**, componentes do sistema extrapiramidal, responsáveis pela modulação do movimento e do tônus.",
   "incorretas": {
-   "A": "**Espástico.**\n- Hiperreflexia e sinergias.",
-   "B": "**Atáxico.**\n- Dismetria e desequilíbrio.",
-   "C": "**Não é sistema motor.**\n- Periventricular associa-se à diplegia espástica."
+   "A": "A lesão **piramidal** (córtex motor e trato corticoespinal) produz a forma **espástica**, a mais comum da paralisia cerebral.",
+   "B": "A lesão **cerebelar** produz a forma **atáxica**, com dismetria e desequilíbrio.",
+   "C": "**Ventricular** não é sistema motor. A lesão periventricular (leucomalácia periventricular do prematuro) atinge fibras piramidais e causa diplegia **espástica**, não atetose."
   },
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Cerebral Palsy. https://posna.org/physician-education/study-guide/cerebral-palsy",
    "Cerebral palsy in children: A clinical practice review. Curr Probl Pediatr Adolesc Health Care. 2024. https://pubmed.ncbi.nlm.nih.gov/39168782/"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0465": {
@@ -5100,17 +5100,18 @@
   "conferido": false
  },
  "pediatria-0468": {
-  "conceito": "### Especificidade das fraturas no abuso (Kleinman)\n| Alta | Moderada | Baixa (comuns) |\n|---|---|---|\n| lesão metafisária clássica | múltiplas, bilaterais | clavícula |\n| costelas posteriores | em estágios diferentes de consolidação | diáfises de ossos longos |\n| ==escápula== | epifisárias (descolamentos) | crânio linear |\n| processos espinhosos | corpo vertebral | |\n| esterno | dedos | |\n| | crânio complexa | |\n\n### Conduta\n- Inventário esquelético em < 2 anos (repetir em 2 semanas).\n- Fundo de olho, TC/RM de crânio, exames de coagulação e metabolismo ósseo (OI, raquitismo).\n- ==Notificação obrigatória==.\n\n> **Na prova:** fratura de alta especificidade (Kleinman) = ==escápula== (e metafisária, costelas posteriores, processos espinhosos, esterno).",
-  "correta": "**Escápula.**\n- Exige força incomum; rara por acidente.\n- Alta especificidade para abuso.",
+  "conceito": "**Por que algumas fraturas sugerem maus-tratos.** A especificidade de uma fratura para abuso depende de duas perguntas: o mecanismo necessário para produzi-la é compatível com quedas e brincadeiras do cotidiano? E a fratura é comum em acidentes? **Kleinman** organizou as lesões esqueléticas em três grupos de especificidade, que se tornaram a referência para a avaliação de crianças pequenas, sobretudo abaixo de 2 anos.\n\n**Alta especificidade.**\n- **Lesão metafisária clássica** (fratura em canto ou em alça de balde): produzida por forças de tração e torção, como sacudir a criança segurando pelos membros.\n- **Fraturas de costelas posteriores**: compressão anteroposterior do tórax entre as mãos do agressor; a costela se dobra sobre o processo transverso.\n- **Escápula**, especialmente o acrômio: osso protegido por músculos e pela parede torácica, só fratura com força direta intensa ou tração violenta.\n- **Processos espinhosos** e **esterno**: exigem hiperflexão ou trauma direto que raramente ocorre em quedas comuns.\n\n**Moderada especificidade.**\n- Fraturas múltiplas, sobretudo bilaterais.\n- Fraturas em diferentes fases de consolidação.\n- Descolamentos epifisários.\n- Fraturas e subluxações do corpo vertebral.\n- Fraturas dos dedos e fraturas complexas do crânio.\n\n**Baixa especificidade (comuns em acidentes).**\n- Clavícula.\n- Diáfises de ossos longos.\n- Fratura linear do crânio.\n- Fraturas subperiosteais novas.\n\n**A especificidade não é tudo.** A fratura diafisária do fêmur em um bebê que ainda não anda é de baixa especificidade pela tabela, mas o contexto (idade, história incompatível, atraso na procura, outras lesões) muda tudo. A avaliação inclui inventário esquelético completo em menores de 2 anos, exame de fundo de olho e notificação obrigatória quando há suspeita.",
+  "correta": "**Correta: B (escápula).** Na classificação de Kleinman, a fratura da escápula, assim como a lesão metafisária clássica, as costelas posteriores, os processos espinhosos e o esterno, tem **alta especificidade** para maus-tratos, por exigir forças incomuns em acidentes domésticos.",
   "incorretas": {
-   "A": "**Baixa especificidade.**\n- Comum em quedas e partos.",
-   "C": "**Baixa especificidade.**\n- Diáfises são comuns.",
-   "D": "**Moderada.**\n- Não alta."
+   "A": "A **clavícula** é a fratura mais comum da infância, por queda e por trauma obstétrico. Tem **baixa especificidade**.",
+   "C": "As fraturas **diafisárias de ossos longos** são frequentes em acidentes e são de baixa especificidade, embora a idade da criança possa torná-las suspeitas.",
+   "D": "As fraturas do **corpo vertebral** são de **moderada especificidade**, não alta."
   },
   "referencias": [
+   "Kleinman PK. Diagnostic Imaging of Child Abuse, 3ª edição. Cambridge University Press, 2015.",
    "American Academy of Pediatrics. Evaluating Young Children With Fractures for Child Abuse. Pediatrics. 2025. https://publications.aap.org/pediatrics/article/155/2/e2024070074/200638/Evaluating-Young-Children-With-Fractures-for-Child"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0469": {
@@ -10045,17 +10046,18 @@
   "conferido": false
  },
  "pediatria-0823": {
+  "conceito": "**Anatomia que explica a deformidade.** Na falange distal da criança, a fise fica na base da falange. As duas forças tendíneas que atuam sobre ela se inserem em fragmentos diferentes quando há um descolamento:\n- o **tendão extensor terminal** se insere na **epífise** (fragmento proximal);\n- o **flexor profundo dos dedos** se insere mais distalmente, na **metáfise e diáfise** (fragmento distal).\n\nQuando a fise se separa (Salter-Harris I ou II), o extensor segura a epífise no lugar, e o flexor profundo puxa o restante da falange para flexão. Clinicamente, a ponta do dedo cai em flexão na interfalângica distal, exatamente como em um **dedo em martelo**. Mas o extensor está íntegro: a deformidade vem da fratura.\n\n**A fratura de Seymour.** É a forma mais importante dessa lesão: descolamento fisário ou fratura justaepifisária da falange distal **exposta**, com o leito ungueal lacerado e frequentemente interposto no foco. Sinais:\n- sangramento sob a prega ungueal proximal;\n- a base da unha sai de baixo da prega e fica por cima dela;\n- dedo em flexão na IFD.\n\n**Por que não pode passar despercebida.** É uma fratura exposta. Tratar como dedo em martelo comum, apenas com órtese, deixa o leito ungueal interposto e a ferida contaminada, levando a **osteomielite**, pseudartrose, parada de crescimento e deformidade da unha.\n\n**Tratamento.** Irrigação e desbridamento, retirada do leito ungueal interposto, redução e fixação com fio de Kirschner longitudinal se instável, reparo do leito ungueal e antibiótico.",
+  "correta": "**Correta: Certo.** O descolamento epifisário da falange distal produz flexão da interfalângica distal semelhante ao dedo em martelo, porque o extensor fica preso à epífise e o flexor profundo traciona o fragmento distal. É o quadro da fratura de Seymour.",
   "incorretas": {
-   "B": "**Errado seria negar a deformidade só porque o traço passa pela fise.** A aparência clínica pode ser a mesma, embora o tratamento difira."
+   "B": "**Errado** desconsideraria a anatomia das inserções: o extensor na epífise e o flexor profundo distal a ela explicam a flexão. Reconhecer que esse pseudomartelo é uma fratura fisária, muitas vezes exposta, é exatamente o ponto clínico da afirmação."
   },
-  "conceito": "**A falange distal infantil pode parecer um dedo em martelo após lesão fisária.** O fragmento distal se desloca e a interfalângica distal fica em flexão, lembrando a perda de extensão por avulsão do tendão extensor. O mecanismo, porém, pode ser uma separação Salter-Harris I ou II, não uma simples lesão tendínea.\n\n**Procure a unha e a pele.** Sangramento na prega ungueal, unha avulsionada ou tecido preso no foco sugerem fratura de Seymour, uma fratura aberta que precisa de irrigação, retirada de interposição, redução, antibiótico e, conforme estabilidade, fixação. Tratá-la apenas com tala de dedo em martelo pode deixar infecção, distúrbio de crescimento ou deformidade ungueal.",
-  "correta": "**Certo: o descolamento distal pode produzir flexão da interfalângica distal semelhante a dedo em martelo.** A semelhança visual não exclui fratura aberta.",
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "referencias": [
+   "Seymour N. Juxta-epiphysial fracture of the terminal phalanx of the finger. J Bone Joint Surg Br. 1966;48(2):347-349.",
    "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 5ª edição, p. 281."
   ],
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "A",
-  "geradoEm": "2026-10-01",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0824": {

@@ -1434,14 +1434,18 @@
   "conferido": false
  },
  "trauma-0125": {
+  "conceito": "**Por que classificar pela anatomia.** A luxação do joelho pode reduzir espontaneamente antes do atendimento, e a direção do deslocamento (classificação de Kennedy: anterior, posterior, medial, lateral, rotatória) muitas vezes nem é conhecida. **Schenck** propôs classificar pelos **ligamentos rompidos**, o que reflete a energia do trauma e orienta diretamente o planejamento da reconstrução.\n\n**A classificação anatômica de Schenck (KD, knee dislocation).**\n\n| Tipo | Ligamentos lesados |\n|---|---|\n| KD-I | **Um** cruzado (LCA ou LCP), com o joelho luxado |\n| **KD-II** | **Os dois cruzados**, com **colaterais íntegros** |\n| KD-III M | Os dois cruzados e o **colateral medial** |\n| KD-III L | Os dois cruzados e o **colateral lateral e canto posterolateral** |\n| KD-IV | Os **quatro** ligamentos |\n| KD-V | Fratura-luxação |\n\nModificadores: **C** para lesão arterial e **N** para lesão nervosa (por exemplo, KD-III L C N).\n\n**O tipo KD-II.** É incomum: ruptura dos dois cruzados com preservação dos dois colaterais. O joelho é instável no plano sagital (gaveta anterior e posterior), mas estável em varo e valgo.\n\n**O que não pode faltar em qualquer luxação do joelho.**\n1. **Avaliação vascular**: a artéria poplítea fica fixa no hiato dos adutores e no arco do sóleo e é estirada na luxação. Índice tornozelo-braquial abaixo de 0,9 indica angiotomografia; ausência de pulso indica exploração imediata.\n2. **Avaliação do nervo fibular**, lesado sobretudo nos tipos KD-III L e KD-IV.\n3. Redução urgente e, se instável, fixador externo transarticular.",
+  "correta": "**Correta: B (KD-II).** Na classificação de Schenck, a ruptura dos **dois ligamentos cruzados** com **colaterais íntegros** define a luxação KD-II.",
   "incorretas": {
-   "A": "O KD-I envolve só um cruzado.",
-   "C": "O KD-III tem os dois cruzados e um dos colaterais rotos.",
-   "D": "O KD-IV tem os quatro ligamentos rotos."
+   "A": "**KD-I** é a luxação com lesão de apenas **um** ligamento cruzado.",
+   "C": "**KD-III** acrescenta à lesão dos dois cruzados a ruptura de **um colateral** (medial, KD-IIIM, ou lateral com canto posterolateral, KD-IIIL).",
+   "D": "**KD-IV** é a lesão dos **quatro** ligamentos principais."
   },
-  "conceito": "**Schenck** classifica a **luxação do joelho** pelos **ligamentos rompidos**, o que orienta a reconstrução:\n\n**KD-I**: lesão de **um só cruzado**, com o joelho luxado;\n\n**KD-II**: lesão dos **dois cruzados**, com os **colaterais íntegros**;\n\n**KD-III**: os dois cruzados e **um** colateral: **KD-IIIM** (medial) ou **KD-IIIL** (lateral, com canto posterolateral);\n\n**KD-IV**: os **quatro** ligamentos;\n\n**KD-V**: luxação com **fratura** periarticular.\n\n**Os acréscimos**: as letras **C** (lesão arterial) e **N** (lesão nervosa).\n\n**O que não pode faltar**: avaliar a **artéria poplítea** (lesada em 20 a 40%) com o índice tornozelo-braquial, e o **nervo fibular** (25%), mais lesado nas lesões laterais.\n\n**Na prova**: ruptura dos dois cruzados com colaterais íntegros é **KD-II**.",
-  "correta": "O KD-II é a lesão dos dois cruzados com os dois colaterais preservados.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Schenck RC Jr. The dislocated knee. Instr Course Lect. 1994;43:127-136.",
+   "Rockwood and Green's Fractures in Adults, 9ª edição, capítulo de luxação do joelho"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0126": {
@@ -3896,18 +3900,18 @@
   "conferido": false
  },
  "trauma-0426": {
-  "conceito": "A luxação intra-articular da patela é uma variante rara e distinta da luxação lateral comum, na qual a patela sofre rotação sobre seu próprio eixo e se aloja entre os côndilos femorais, dentro do espaço intercondilar. O tipo mais frequentemente descrito na literatura de casos é a rotação em torno do eixo vertical (luxação vertical), na qual a patela fica com uma de suas bordas voltada anteriormente e a outra posteriormente, encravada entre os côndilos.",
-  "correta": "C. O tipo mais comum de luxação intra-articular da patela é o vertical.",
+  "conceito": "**Duas luxações muito diferentes.** A luxação patelar comum é **lateral** e extra-articular: a patela sai do sulco troclear e desliza sobre o côndilo lateral, geralmente reduzindo espontaneamente com a extensão do joelho. A **luxação intra-articular** é outra entidade, rara: a patela gira sobre o próprio eixo e se encaixa **dentro** da articulação, entre os côndilos femorais ou entre o fêmur e a tíbia. Não reduz com manobras simples e frequentemente exige redução sob anestesia ou cirurgia.\n\n**Os tipos de luxação intra-articular.**\n\n| Tipo | Movimento da patela | Contexto típico |\n|---|---|---|\n| **Vertical** | Gira em torno do seu eixo longitudinal e fica de lado, com uma borda voltada para a frente e outra encaixada no sulco | Padrão mais citado nos relatos |\n| Horizontal | Gira em torno do eixo transversal; o polo superior se encaixa na fossa intercondilar, com avulsão do tendão quadricipital | Adolescentes, trauma direto com joelho fletido |\n\n**Mecanismo.** Trauma direto sobre a patela com o joelho em extensão ou leve flexão, frequentemente associado a força rotacional. No tipo horizontal, o tendão do quadríceps se desinsere do polo superior e a patela vira para dentro da articulação.\n\n**Diagnóstico.** O joelho fica bloqueado, com a patela palpável em posição anômala ou não palpável. A radiografia em AP e perfil mostra a patela de lado (sinal da \"patela de perfil\" no AP, no tipo vertical) ou com a superfície articular voltada para cima ou para baixo.\n\n**Tratamento.** Redução fechada sob anestesia, com flexão e pressão direta, costuma resolver o tipo vertical. O tipo horizontal geralmente exige redução aberta e reinserção do tendão quadricipital.\n\n**Atenção ao enunciado.** As opções **lateral** e **medial** descrevem direções de luxação extra-articular, não tipos de luxação intra-articular.",
+  "correta": "**Correta: C (vertical).** Nos relatos e séries de casos, a luxação intra-articular vertical, em que a patela gira sobre o seu eixo longitudinal e se encaixa de lado entre os côndilos, é o padrão mais descrito.",
   "incorretas": {
-   "A": "A luxação lateral simples é o tipo mais comum de luxação patelar em geral, mas não corresponde à variante intra-articular específica descrita na questão.",
-   "B": "A luxação medial isolada é uma ocorrência rara mesmo entre as luxações extra-articulares, e não é o tipo mais associado à variante intra-articular.",
-   "D": "A rotação em torno do eixo horizontal é uma variante ainda mais rara do que a vertical entre os casos descritos de luxação intra-articular da patela."
+   "A": "**Lateral** é a direção da luxação patelar comum, extra-articular, e não um tipo de luxação intra-articular.",
+   "B": "**Medial** é uma direção rara de luxação extra-articular, quase sempre iatrogênica após liberação lateral excessiva. Não é um tipo de luxação intra-articular.",
+   "D": "A **horizontal** é a outra forma de luxação intra-articular, associada à avulsão do tendão quadricipital, mas é descrita com menor frequência."
   },
-  "alerta": "A luxação intra-articular da patela é uma condição rara, descrita principalmente em relatos e séries pequenas de casos, e a proporção exata entre os tipos vertical e horizontal pode variar entre essas séries. Mantive a alternativa C (vertical) como a mais consistente com o que encontrei, mas é um dado epidemiológico pontual, baseado em poucos casos publicados, que vale confirmar em fonte primária antes de memorizar com confiança total.",
   "referencias": [
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 60"
   ],
-  "geradoEm": "2026-09-17",
+  "alerta": "A luxação intra-articular da patela é uma condição rara, descrita principalmente em relatos e séries pequenas de casos, e a proporção exata entre os tipos vertical e horizontal pode variar entre essas séries. Mantive a alternativa C (vertical) como a mais consistente com o que encontrei, mas é um dado epidemiológico pontual, baseado em poucos casos publicados, que vale confirmar em fonte primária antes de memorizar com confiança total.",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0427": {
