@@ -105,18 +105,18 @@
   "conferido": false
  },
  "pediatria-0008": {
+  "conceito": "**A osteogênese imperfeita (OI).** É uma doença hereditária do **colágeno tipo I**, a principal proteína da matriz óssea, da esclera, da dentina, da pele e dos ligamentos. Na maioria dos casos, a mutação está nos genes **COL1A1** ou **COL1A2**. O osso fica frágil, com fraturas de baixa energia e deformidades.\n\n**A classificação de Sillence (1979).**\n| Tipo | Principais características |\n|---|---|\n| **I** | **Leve**, o mais comum; **esclera azul**; perda auditiva; estatura quase normal; **autossômica dominante**; colágeno **normal em qualidade**, mas em **quantidade reduzida** |\n| **II** | **Letal** no período perinatal; múltiplas fraturas intraútero |\n| **III** | **Grave e progressivo**: deformidades, baixa estatura importante; esclera clareia com a idade |\n| **IV** | Moderado; **esclera normal** (branca) |\n\n**Os subtipos A e B.** Sillence subdividiu os tipos I e IV pela **dentina**:\n- **A**: **dentinogênese normal**;\n- **B**: **dentinogênese imperfeita** (dentes translúcidos, acinzentados ou amarelados, frágeis, que se desgastam rápido).\n\nAssim, o tipo **IB** tem esclera azul, defeito do colágeno **tipo I**, **dentinogênese imperfeita** e herança **autossômica dominante**.\n\n**As formas novas.** Os tipos V em diante (classificação ampliada) envolvem outros genes (IFITM5, SERPINF1, CRTAP e outros), muitos com herança **recessiva**; o tipo V, por exemplo, tem calo hiperplásico e calcificação da membrana interóssea.\n\n**O tratamento ortopédico.** **Bisfosfonatos** (pamidronato, zoledronato) aumentam a densidade óssea e reduzem fraturas; **hastes intramedulares telescópicas** (Fassier-Duval, Sheffield) corrigem deformidades e protegem os ossos longos, acompanhando o crescimento. A escoliose e a invaginação basilar são problemas frequentes nas formas graves.\n\n**O tipo V e o calo hiperplásico.** O **tipo V** (mutação do gene **IFITM5**, autossômica dominante) tem características próprias: **calo hiperplásico** exuberante após fraturas ou osteotomias (às vezes sem fratura evidente), **calcificação da membrana interóssea** do antebraço (que limita a pronossupinação, com luxação da cabeça do rádio) e esclera normal. O calo hiperplásico cresce rápido, é **doloroso**, quente e aumenta o volume do membro, com reação periosteal e massa de osso imaturo na radiografia: **imita um osteossarcoma**. A biópsia pode confundir ainda mais. O conhecimento do tipo V evita amputações desnecessárias.",
+  "correta": "**Correta: D (V).** O tipo V de OI forma calo hiperplásico exuberante, doloroso e de crescimento rápido, que imita um osteossarcoma; somam-se a calcificação da membrana interóssea e a esclera normal.",
   "incorretas": {
-   "A": "O tipo I é leve, com escleras azuis, e não forma calo pseudotumoral.",
-   "B": "O tipo II é letal no período perinatal, com fragilidade difusa.",
-   "C": "O tipo IV é moderado e não tem o calo hiperplásico do tipo V."
+   "A": "O tipo **I** é leve, com esclera azul, e consolida com calo normal.",
+   "B": "O tipo **II** é letal no período perinatal.",
+   "C": "O tipo **IV** é moderado, com esclera normal, sem o calo hiperplásico característico."
   },
-  "conceito": "A **osteogênese imperfeita** é a fragilidade óssea por defeito do **colágeno tipo I** (ou de proteínas ligadas a ele). A classificação de **Sillence modificada**:\n\n**tipo I**: **leve**; escleras **azuis**, surdez, quantidade de colágeno reduzida;\n\n**tipo II**: **letal** no período perinatal, com fraturas ainda dentro do útero;\n\n**tipo III**: **grave e progressiva**: deformidades, baixa estatura, dentinogênese imperfeita;\n\n**tipo IV**: **moderada**, escleras normais;\n\n**tipo V**: moderada, com três marcas próprias: **calo hiperplásico** exuberante depois de fraturas ou cirurgias, **calcificação da membrana interóssea** do antebraço e **luxação da cabeça do rádio**; vem de mutação no gene **IFITM5**, e não do colágeno.\n\n**Por que o tipo V lembra osteossarcoma**: o calo hiperplásico cresce rápido, forma uma massa dolorosa e quente, com aspecto agressivo na radiografia. Sem conhecer a doença, pode ser confundido com tumor, e às vezes é preciso biópsia.\n\n**O tratamento geral**: **bisfosfonatos** (pamidronato, zoledronato) e **hastes telescópicas** (Fassier-Duval, Sheffield) nas deformidades e fraturas de repetição.\n\n**Na prova**: osteogênese imperfeita que simula osteossarcoma = **tipo V** (calo hiperplásico).",
-  "correta": "O tipo V forma calo hiperplásico exuberante, que pode simular osteossarcoma, e calcifica a membrana interóssea do antebraço.",
   "referencias": [
    "Late onset hyperplastic callus formation in osteogenesis imperfecta type V simulating osteosarcoma. https://pmc.ncbi.nlm.nih.gov/articles/PMC7163286/",
    "Pediatric Orthopaedic Society of North America (POSNA). Osteogenesis Imperfecta. https://posna.org/physician-education/study-guide/osteogenesis-imperfecta"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0009": {
@@ -1429,18 +1429,18 @@
   "conferido": false
  },
  "pediatria-0094": {
+  "conceito": "**A coxa vara do desenvolvimento.** É a diminuição progressiva do **ângulo cervicodiafisário** (normal de cerca de 135° a 150° na criança) por um defeito de **ossificação** na parte **inferomedial do colo**. É rara, uni ou bilateral, e aparece quando a criança começa a andar.\n\n**O sinal radiográfico.** Um **triângulo** ósseo isolado na parte inferior do colo, junto à fise (o fragmento triangular de Fairbank), com a fise **verticalizada**.\n\n**O ângulo de Hilgenreiner-epifisário (HE).** Ângulo entre a linha de **Hilgenreiner** e a linha da **fise** proximal do fêmur:\n| Ângulo HE | Conduta |\n|---|---|\n| **Menor que 45°** | Resolve sozinho: observação |\n| **45° a 60°** | Zona cinzenta: acompanhar |\n| **Maior que 60°** | Progride: **osteotomia valgizante** |\n\n**O exame físico e o porquê dos movimentos.** O colo em varo faz o **trocânter maior subir**, encostando no ilíaco. Isso tem duas consequências:\n- **abdução limitada**: o trocânter bate na asa do ilíaco antes do fim do movimento;\n- **rotação medial (interna) limitada**: o colo em varo costuma estar também **retrovertido**, o que reduz a rotação interna.\n\nAlém disso, o glúteo médio fica encurtado e ineficiente (sua alavanca diminui), causando **marcha de Trendelenburg** (bamboleante, se bilateral), **encurtamento** do membro e hiperlordose lombar.\n\n**O tratamento.** A **osteotomia valgizante** subtrocantérica ou intertrocantérica (Pauwels, Borden) corrige o ângulo para cerca de **40° de HE** ou menos e transforma o cisalhamento em compressão na fise; o defeito do colo então ossifica. A recidiva é comum quando a correção é insuficiente.\n\n**A osteotomia valgizante em detalhe.** É o tratamento **definitivo** da coxa vara progressiva (ângulo de Hilgenreiner-epifisário maior que 60°, ou entre 45° e 60° com progressão, ou com marcha de Trendelenburg e encurtamento). Pode ser **intertrocantérica** ou **subtrocantérica** (Pauwels, Borden, Langenskiöld), com fixação por placa ou fixador externo. O objetivo é levar o ângulo HE para **menos de 40°** (idealmente 35° a 38°), hipercorrigindo levemente. Com a fise mais **horizontal**, as forças de cisalhamento viram **compressão**, e o defeito do colo **ossifica** em alguns meses. Muitos associam a **epifisiodese do trocânter maior**, para evitar o hipercrescimento relativo do trocânter. A recidiva é mais comum quando a correção é insuficiente (HE acima de 40° após a cirurgia).",
+  "correta": "**Correta: C (osteotomia valgizante do fêmur proximal).** A osteotomia valgizante horizontaliza a fise, transforma o cisalhamento em compressão e permite a ossificação do defeito do colo; é a correção definitiva da coxa vara progressiva.",
   "incorretas": {
-   "A": "A epifisiodese do trocanter maior é um complemento para evitar o trocanter alto; não corrige o varo.",
-   "B": "A fixação percutânea sem realinhamento não corrige a deformidade em varo.",
-   "D": "Enxerto no colo com fixação, sem valgizar, mantém a fise vertical e não corrige a deformidade."
+   "A": "A **epifisiodese do trocânter** é um procedimento **complementar** (evita o hipercrescimento do trocânter), e não corrige o varo.",
+   "B": "A **fixação** do fêmur proximal não corrige o ângulo; a fise continua vertical e sob cisalhamento.",
+   "D": "A fixação com **enxerto** no colo não corrige o varo nem a orientação da fise; o defeito ossifica quando a fise é horizontalizada pela osteotomia."
   },
-  "conceito": "Na **coxa vara do desenvolvimento**, o colo do fêmur cede para varo por um defeito de ossificação na parte inferomedial (o **triângulo de Fairbank**). A fise fica **vertical**, e o peso do corpo passa a **cisalhar** a fise em vez de comprimi-la, o que faz a deformidade piorar.\n\n**A decisão pelo ângulo de Hilgenreiner-epifisário (HE)**:\n\n**menor que 45°**: tende a corrigir sozinho;\n\n**entre 45 e 60°**: observar com radiografias;\n\n**maior que 60°** (ou piora progressiva, ou ângulo cervicodiafisário abaixo de cerca de 100°): **cirurgia**.\n\n**A correção definitiva**: a **osteotomia valgizante** do fêmur proximal (Pauwels ou intertrocantérica). Ela **corrige o ângulo** do colo e deixa a fise **mais horizontal**, transformando o cisalhamento em compressão; assim o defeito do colo consolida. Costuma-se **hipercorrigir** um pouco (HE abaixo de cerca de 35 a 40°).\n\n**O complemento**: a **epifisiodese do trocanter maior** pode ser associada para evitar que o trocanter cresça demais e volte a ficar alto, mas não corrige o varo.\n\n**Na prova**: correção cirúrgica definitiva da coxa vara do desenvolvimento = **osteotomia valgizante** do fêmur proximal.",
-  "correta": "A osteotomia valgizante corrige o ângulo do colo e horizontaliza a fise, transformando o cisalhamento em compressão.",
   "referencias": [
    "Proximal femoral valgus osteotomy for the treatment of developmental coxa vara: a systematic review. https://pmc.ncbi.nlm.nih.gov/articles/PMC10937198/",
    "Subtrochanteric valgus osteotomy in developmental coxa vara. https://pmc.ncbi.nlm.nih.gov/articles/PMC3134016/"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0095": {
@@ -2825,14 +2825,18 @@
   "conferido": false
  },
  "pediatria-0201": {
+  "conceito": "**A coxa vara do desenvolvimento.** É a diminuição progressiva do **ângulo cervicodiafisário** (normal de cerca de 135° a 150° na criança) por um defeito de **ossificação** na parte **inferomedial do colo**. É rara, uni ou bilateral, e aparece quando a criança começa a andar.\n\n**O sinal radiográfico.** Um **triângulo** ósseo isolado na parte inferior do colo, junto à fise (o fragmento triangular de Fairbank), com a fise **verticalizada**.\n\n**O ângulo de Hilgenreiner-epifisário (HE).** Ângulo entre a linha de **Hilgenreiner** e a linha da **fise** proximal do fêmur:\n| Ângulo HE | Conduta |\n|---|---|\n| **Menor que 45°** | Resolve sozinho: observação |\n| **45° a 60°** | Zona cinzenta: acompanhar |\n| **Maior que 60°** | Progride: **osteotomia valgizante** |\n\n**O exame físico e o porquê dos movimentos.** O colo em varo faz o **trocânter maior subir**, encostando no ilíaco. Isso tem duas consequências:\n- **abdução limitada**: o trocânter bate na asa do ilíaco antes do fim do movimento;\n- **rotação medial (interna) limitada**: o colo em varo costuma estar também **retrovertido**, o que reduz a rotação interna.\n\nAlém disso, o glúteo médio fica encurtado e ineficiente (sua alavanca diminui), causando **marcha de Trendelenburg** (bamboleante, se bilateral), **encurtamento** do membro e hiperlordose lombar.\n\n**O tratamento.** A **osteotomia valgizante** subtrocantérica ou intertrocantérica (Pauwels, Borden) corrige o ângulo para cerca de **40° de HE** ou menos e transforma o cisalhamento em compressão na fise; o defeito do colo então ossifica. A recidiva é comum quando a correção é insuficiente.\n\n**A epidemiologia.** A coxa vara do desenvolvimento é **rara** (cerca de 1 em 25.000 nascidos vivos). Acomete **igualmente meninos e meninas**, **sem predileção racial**, e é **bilateral** em cerca de 30% a 50% dos casos. Há casos familiares, sugerindo herança autossômica dominante com penetrância variável. Aparece quando a criança começa a andar, com marcha **indolor** de Trendelenburg (bamboleante se bilateral).",
+  "correta": "**Correta: D (igualmente meninos e meninas, sem predileção por raça).** A coxa vara do desenvolvimento é rara e não tem predileção por sexo nem por raça; é bilateral em cerca de um terço a metade dos casos.",
   "incorretas": {
-   "A": "Não há predomínio masculino nem predileção por caucasianos.",
-   "B": "A ausência de predileção racial está certa, mas não há predomínio de meninos.",
-   "C": "A igualdade entre os sexos está certa, mas não há predileção por caucasianos."
+   "A": "Não há predomínio **masculino** nem **caucasiano**.",
+   "B": "Não há predomínio masculino; a distribuição entre os sexos é igual.",
+   "C": "A distribuição entre os sexos é igual, mas não há predileção por raça caucasiana."
   },
-  "conceito": "A **coxa vara do desenvolvimento** é a diminuição do **ângulo cervicodiafisário** por um defeito de ossificação na parte **inferomedial do colo** do fêmur. É rara (cerca de 1 em 25.000) e se distribui de forma **igual entre meninos e meninas**, **sem predileção racial**. É bilateral em 30 a 50% dos casos.\n\n**O quadro**: criança que começou a andar com **marcha de Trendelenburg indolor** (ou anserina, se bilateral) e encurtamento discreto do membro.\n\n**O exame**: limitação da **abdução** (o trocanter, alto, bate no ilíaco) e da **rotação medial** (pela retroversão relativa do colo).\n\n**A radiografia**: o **triângulo de Fairbank**, um fragmento ósseo triangular na parte inferior do colo, junto à fise, e a fise verticalizada.\n\n**O ângulo de Hilgenreiner-epifisário** orienta o tratamento:\n\n**abaixo de 45°**: tende a resolver sozinho;\n\n**entre 45 e 60°**: observar;\n\n**acima de 60°** (ou progressão): **osteotomia valgizante** (tipo Pauwels), corrigindo o ângulo para cerca de 40° ou menos.\n\n**Os diferenciais**: deficiência femoral focal proximal, displasias esqueléticas, raquitismo e sequelas de displasia do quadril ou Perthes.\n\n**Na prova**: coxa vara do desenvolvimento acomete **igualmente meninos e meninas**, **sem predileção racial**.",
-  "correta": "A coxa vara do desenvolvimento não tem predomínio de sexo nem de raça.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de coxa vara.",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo do quadril."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0202": {
@@ -2867,15 +2871,19 @@
   "conferido": false
  },
  "pediatria-0204": {
+  "conceito": "**O quadril doloroso agudo na criança.** A criança que **manca** e **não apoia** o membro por dor no quadril exige um raciocínio rápido: a principal preocupação é a **artrite séptica**, uma **urgência** que destrói a cartilagem e a cabeça femoral em horas a dias. A causa mais comum, porém, é a **sinovite transitória**, benigna e autolimitada.\n\n**Os critérios de Kocher.** Ajudam a distinguir a artrite séptica da sinovite transitória:\n| Critério | Valor de corte |\n|---|---|\n| **Febre** | Maior que **38,5 °C** |\n| **Incapacidade de apoiar** o membro | Presente |\n| **VHS** | Maior que **40 mm/h** |\n| **Leucócitos** | Maior que **12.000/mm³** |\n| **PCR** (acrescentado por Caird) | Maior que **2 mg/dL** |\n\n**A probabilidade de artrite séptica** com 0, 1, 2, 3 e 4 critérios é de cerca de 0,2%, 3%, 40%, 93% e 99%, respectivamente.\n\n**O caso da questão.** A criança tem **7 anos**, dor há 1 dia e dificuldade de apoiar (1 critério), mas está **afebril** (37,2 °C), com **VHS de 27** (abaixo de 40), **leucócitos normais** (5.000) e **PCR baixa** (menor que 0,5 mg/dL). Com apenas 1 critério, a probabilidade de artrite séptica é baixa: o diagnóstico mais provável é a **sinovite transitória**.\n\n**A sinovite transitória.** É a causa mais comum de dor aguda no quadril entre **3 e 8 anos**, mais em meninos, muitas vezes após uma **infecção viral** das vias aéreas. A ultrassonografia mostra **derrame**. O tratamento é **repouso** e anti-inflamatório; melhora em dias, e a resolução completa ocorre em 1 a 2 semanas. Deve-se reavaliar a criança em 24 a 48 horas: piora ou febre indicam **punção** do quadril.\n\n**Os outros diagnósticos.** A **epifisiólise** ocorre no adolescente (10 a 16 anos), com quadro mais arrastado e rotação externa obrigatória (sinal de Drehmann). A **psoíte** (abscesso do psoas) causa febre, quadril em flexão e dor à extensão, com marcadores inflamatórios elevados.\n\n**A posição do quadril.** Na sinovite transitória (e em qualquer derrame do quadril), a criança mantém o quadril em **flexão**, **abdução** e **rotação externa**. Nessa posição, a **cápsula** articular tem o **maior volume** e a pressão intra-articular é a **menor**, o que alivia a dor. A tentativa de estender ou rodar internamente o quadril aumenta a pressão e dói: por isso a **limitação funcional** se manifesta com o membro em flexão e rotação externa, e a rotação interna é o movimento mais limitado.",
+  "correta": "**Correta: B (existe limitação funcional do membro afetado, em flexão e rotação externa).** O derrame faz a criança manter o quadril em flexão, abdução e rotação externa, posição de maior volume capsular e menor pressão; os movimentos fora dela doem.",
   "incorretas": {
-   "A": "A dor é aguda e recente; dor crônica sugere outro diagnóstico, como Perthes.",
-   "C": "A febre costuma ser baixa ou ausente, mas não há um corte rígido de 38 °C; o critério de Kocher para séptica é 38,5 °C.",
-   "D": "O estado geral é bom; comprometido sugere artrite séptica.",
-   "E": "A dor referida no joelho é comum, pelo nervo obturador."
+   "A": "A dor da sinovite transitória é **aguda**, de início recente, e não crônica.",
+   "C": "A febre costuma ser baixa ou ausente, mas o limite de 38 °C não é um critério absoluto; o critério de Kocher usa febre maior que **38,5 °C** para sugerir artrite séptica.",
+   "D": "Na sinovite transitória o **estado geral é bom**; criança com estado geral comprometido sugere artrite séptica.",
+   "E": "A dor do quadril pode ser **referida no joelho** (pelo nervo obturador), na sinovite transitória e em outras doenças do quadril."
   },
-  "conceito": "A **sinovite transitória do quadril** é a causa mais comum de dor no quadril na criança de 3 a 8 anos, mais em meninos, muitas vezes depois de uma infecção viral. É um derrame inflamatório **agudo** e autolimitado.\n\n**O quadro clínico**:\n\n**dor aguda** e claudicação, de início recente;\n\n**quadril em flexão, abdução e rotação externa**: é a posição em que a cápsula tem **maior volume**, o que alivia a pressão do derrame; os movimentos ficam limitados, sobretudo a rotação interna;\n\n**dor referida no joelho**: comum, pelo nervo obturador; por isso o joelho doloroso exige exame do quadril;\n\n**estado geral bom**, sem febre ou com febre baixa.\n\n**O diferencial com a artrite séptica**, pelos critérios de Kocher: febre acima de 38,5 °C, recusa de apoiar, VHS acima de 40 mm/h e leucócitos acima de 12.000 (mais a PCR acima de 2 mg/dL). Quanto mais critérios, maior a chance de séptica; estado geral comprometido também aponta para infecção.\n\n**A evolução**: melhora em 1 a 2 semanas com repouso e anti-inflamatório.\n\n**Na prova**: sinovite transitória limita o quadril, que fica em **flexão e rotação externa**.",
-  "correta": "O quadril fica em flexão e rotação externa, posição de maior volume da cápsula, e os movimentos ficam limitados.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de condições do quadril.",
+   "Kocher MS, Zurakowski D, Kasser JR. Differentiating between septic arthritis and transient synovitis of the hip in children: an evidence-based clinical prediction algorithm. J Bone Joint Surg Am. 1999;81(12):1662-70."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0205": {
@@ -3823,14 +3831,18 @@
   "conferido": false
  },
  "pediatria-0318": {
+  "conceito": "**A mielomeningocele e o fechamento do tubo neural.** A mielomeningocele é a forma mais grave e mais comum de **espinha bífida aberta**: a medula e as meninges saem por um defeito dos arcos posteriores e ficam expostas em uma bolsa nas costas, geralmente lombar ou lombossacra.\n\n**A embriologia.** Na terceira semana, a placa neural se dobra e forma o **sulco neural**, cujas bordas se aproximam e se fundem, formando o **tubo neural**. O fechamento começa na região cervical e avança como um zíper nos dois sentidos. O **neuróporo anterior** (cranial) fecha por volta do **25º ao 26º dia**, e o **neuróporo posterior** (caudal), por volta do **26º ao 28º dia**. A falha do fechamento caudal produz a mielomeningocele; a falha do cranial produz a anencefalia. Por isso o defeito acontece **antes que a gestante saiba que está grávida**, e a prevenção precisa ser feita antes da concepção.\n\n**Os fatores de risco.**\n| Fator | Comentário |\n|---|---|\n| **Deficiência de ácido fólico** | O principal fator modificável; a suplementação periconcepcional reduz o risco em cerca de 70% |\n| **Genética** | Risco de recorrência de 2% a 5% após um filho afetado; maior em algumas etnias |\n| **Fármacos** | Ácido valproico e carbamazepina |\n| Diabetes e obesidade maternos, hipertermia | Aumentam o risco |\n\n**O diagnóstico pré-natal.** A **alfafetoproteína** elevada no soro materno e no líquido amniótico, e a ultrassonografia (sinais do \"limão\" e da \"banana\", pela malformação de Chiari II), permitem o diagnóstico precoce.\n\n**As consequências ortopédicas.** O **nível neurológico** (torácico, lombar alto, lombar baixo, sacral) define o prognóstico de marcha e as deformidades: luxação paralítica do quadril, pé torto rígido, pé calcâneo, escoliose e cifose. A **hidrocefalia** (Chiari II) e a **medula presa** podem piorar a função com o crescimento, e a alergia ao **látex** é frequente.\n\n**O fechamento da bolsa.** A mielomeningocele aberta expõe a medula e as meninges, com risco alto de **infecção** (meningite e ventriculite) e de piora neurológica pelo ressecamento e trauma do tecido exposto. Por isso, o fechamento cirúrgico é feito **precocemente**, nas **primeiras horas** de vida, idealmente nas primeiras **24 a 48 horas**. Até a cirurgia, a lesão é protegida com compressa estéril úmida, com o bebê em decúbito ventral, e iniciam-se antibióticos. A **hidrocefalia** (presente em cerca de 80% a 90%) é tratada com derivação ventriculoperitoneal ou terceiroventriculostomia, muitas vezes no mesmo tempo ou nos dias seguintes.\n\n**A cirurgia fetal.** O estudo **MOMS** (2011) mostrou que o fechamento **intrauterino** (antes de 26 semanas) reduz a necessidade de derivação e melhora a função motora, ao custo de mais prematuridade e complicações maternas; é oferecido em centros especializados.",
+  "correta": "**Correta: A (nas primeiras horas após o nascimento).** O fechamento precoce, idealmente nas primeiras 24 a 48 horas, reduz o risco de infecção do sistema nervoso e de piora neurológica pelo tecido exposto.",
   "incorretas": {
-   "B": "Esperar mais de 48 horas aumenta o risco de infecção do sistema nervoso.",
-   "C": "Depois da primeira semana, a infecção já é muito provável.",
-   "D": "Esperar um mês expõe a criança a infecção grave e é inaceitável."
+   "B": "Esperar **mais de 48 horas** aumenta muito o risco de meningite e ventriculite.",
+   "C": "Adiar para **depois da primeira semana** expõe o bebê a infecção e piora neurológica.",
+   "D": "Esperar **um mês** é inaceitável pelo risco de infecção e dano neural."
   },
-  "conceito": "Na **mielomeningocele**, a medula e as meninges ficam expostas nas costas, numa bolsa que muitas vezes vaza líquido cefalorraquidiano. Essa abertura é uma porta direta para **infecção do sistema nervoso**: meningite e ventriculite.\n\n**Por isso o fechamento é precoce**: a bolsa deve ser fechada cirurgicamente **nas primeiras horas** de vida, idealmente nas **primeiras 24 a 48 horas**. Depois disso, o risco de infecção sobe muito.\n\n**Os cuidados até a cirurgia**:\n\n**proteger a bolsa** com compressa úmida e estéril;\n\n**decúbito ventral** ou lateral, para não comprimir o defeito;\n\n**ambiente livre de látex** desde o nascimento, pelo alto risco de sensibilização.\n\n**A hidrocefalia**: acompanha 80 a 90% dos casos, pela malformação de **Chiari II**. Pode precisar de derivação ventriculoperitoneal, no mesmo tempo ou depois.\n\n**A correção intrauterina**: o estudo **MOMS** mostrou que fechar o defeito antes do nascimento reduz a necessidade de derivação e melhora a função motora, com mais risco de prematuridade.\n\n**O papel do ortopedista**: definir o **nível neurológico** pelo exame muscular, que orienta a marcha e as deformidades esperadas.\n\n**Na prova**: a bolsa da mielomeningocele deve ser fechada **nas primeiras horas** após o nascimento.",
-  "correta": "O fechamento precoce, nas primeiras 24 a 48 horas, reduz o risco de meningite e ventriculite.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de mielomeningocele.",
+   "Adzick NS et al. A randomized trial of prenatal versus postnatal repair of myelomeningocele. N Engl J Med. 2011;364(11):993-1004."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0319": {
@@ -4856,14 +4868,18 @@
   "conferido": false
  },
  "pediatria-0392": {
+  "conceito": "**O menisco discoide.** É uma variação anatômica em que o menisco, em vez de ter forma de \"C\" ou de meia-lua, é **largo e em disco**, cobrindo boa parte do platô tibial. Quase sempre é o **menisco lateral** (prevalência de 1% a 5%, maior em asiáticos, até 15%), e é **bilateral** em cerca de 20%.\n\n**A classificação de Watanabe.**\n| Tipo | Descrição |\n|---|---|\n| **I** (completo) | Cobre todo o platô; inserções periféricas normais |\n| **II** (incompleto) | Cobre parte do platô; inserções normais |\n| **III** (Wrisberg) | Forma variável, **sem a inserção posterior** (coronário): só preso pelo ligamento meniscofemoral de **Wrisberg**: **instável** |\n\nA classificação de **Ahn** (pela ressonância) descreve o sentido do deslocamento do menisco instável (anterocentral, posterocentral, central), o que orienta o reparo.\n\n**A apresentação por idade.**\n- **Criança pequena**: o menisco discoide **instável** (sobretudo o tipo Wrisberg) se desloca durante o movimento: é a \"**síndrome do joelho que estala**\" (snapping knee). O menisco salta com um **ressalto** audível e visível, em geral perto da extensão, e a criança tem **limitação da extensão** final. Costuma haver pouca dor.\n- **Criança maior e adolescente**: o menisco discoide, mais espesso e com fibras desorganizadas, tende a **romper**: dor, derrame, bloqueio e falseio, como na lesão meniscal do adulto.\n\n**O diagnóstico.** A radiografia pode mostrar o espaço articular lateral **alargado**, o côndilo femoral lateral achatado e a cabeça da fíbula alta. A **ressonância** confirma: o corpo do menisco aparece em **três ou mais cortes sagitais** consecutivos de 5 mm (sinal da \"gravata-borboleta\" contínua).\n\n**O tratamento.** O menisco discoide **assintomático** é observado. O sintomático é tratado por artroscopia com **saucerização** (remodelação para a forma em C, deixando uma borda de 6 a 8 mm) e **reparo** da periferia instável. A **meniscectomia total**, usada no passado, leva a **artrose** precoce do compartimento lateral e foi abandonada.\n\n**A relação com a osteocondrite dissecante.** O menisco discoide lateral, sobretudo o **instável** (tipo Wrisberg), altera a mecânica do compartimento **lateral**: a sua espessura e o seu movimento anormal concentram carga e atrito sobre o **côndilo femoral lateral**. Por isso, a OCD do **côndilo lateral** (bem menos comum que a do medial na população geral) aparece associada ao menisco discoide, e pode surgir também depois da **meniscectomia** lateral extensa. Diante de uma OCD do côndilo lateral, deve-se procurar o menisco discoide na ressonância.",
+  "correta": "**Correta: D (côndilo femoral lateral).** O menisco discoide lateral, sobretudo o instável de Wrisberg, concentra carga e atrito sobre o côndilo femoral lateral, onde a osteocondrite dissecante aparece associada.",
   "incorretas": {
-   "A": "O planalto medial fica no compartimento oposto ao do menisco discoide.",
-   "B": "A osteocondrite dissecante associada ao discoide é femoral, não do planalto tibial.",
-   "C": "O côndilo medial é o local clássico da osteocondrite comum, não da associada ao menisco discoide."
+   "A": "O menisco discoide é **lateral**; o compartimento medial não é afetado por ele.",
+   "B": "O menisco discoide fica sobre o **platô tibial lateral**, mas a OCD associada é do **côndilo femoral**, e não do platô.",
+   "C": "O **côndilo medial** é o local mais comum da OCD em geral, mas a OCD associada ao menisco discoide lateral é a do côndilo **lateral**."
   },
-  "conceito": "O **menisco discoide** é quase sempre o **lateral**, largo e espesso. O tipo **Wrisberg** (Watanabe III) não tem a fixação tibial posterior e é **hipermóvel**.\n\n**A relação com a osteocondrite dissecante**: o menisco anormal muda a distribuição de carga no **compartimento lateral** do joelho. Com isso, a **osteocondrite dissecante** pode aparecer no **côndilo femoral lateral**, um local **atípico**.\n\n**Onde costuma ser a osteocondrite comum**: na **face lateral do côndilo femoral medial**, que é o local clássico (cerca de 70% dos casos).\n\n**Quando pensar na associação**:\n\n**osteocondrite no côndilo lateral**: procurar menisco discoide na ressonância;\n\n**depois de saucerização ou meniscectomia** de um menisco discoide: a osteocondrite do côndilo lateral pode surgir, pela sobrecarga do compartimento.\n\n**O tratamento**: depende da estabilidade da lesão e da fise; lesões estáveis com fise aberta, repouso; instáveis, fixação ou procedimentos de cartilagem. O menisco é tratado ao mesmo tempo (saucerização e sutura se instável).\n\n**Na prova**: o menisco discoide de Wrisberg se relaciona com a osteocondrite dissecante do **côndilo femoral lateral**.",
-  "correta": "O discoide lateral altera a carga do compartimento lateral e se associa à osteocondrite do côndilo femoral lateral, local atípico.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de condições do joelho.",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo do joelho."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0393": {
@@ -5694,14 +5710,18 @@
   "conferido": false
  },
  "pediatria-0465": {
+  "conceito": "**O pé torto congênito e os músculos.** O pé torto idiopático tem quatro deformidades (sigla **CAVE**: cavo, aduto, varo e equino), mantidas por **músculos encurtados** e **fibróticos** do lado **posterior e medial** da perna, além das alterações ósseas e ligamentares. A panturrilha é **mais fina** e o pé, menor que o normal.\n\n**Os músculos responsáveis.**\n| Músculo | Deformidade que mantém |\n|---|---|\n| **Tríceps sural** (gastrocnêmio e sóleo) | **Equino**; também puxa o calcâneo em varo |\n| **Tibial posterior** | **Adução** e **inversão** (puxa o navicular para medial) |\n| **Flexor longo dos dedos** | Inversão e flexão dos dedos |\n| **Flexor longo do hálux** | Inversão e flexão do hálux |\n| Tibial anterior | Contribui para a supinação do antepé |\n| Abdutor do hálux e fáscia plantar | **Cavo** e adução |\n\nOs **fibulares** (longo e curto), ao contrário, ficam **alongados e fracos**: estão do lado convexo da deformidade.\n\n**A histologia.** Os músculos posteromediais e os ligamentos têm aumento de **fibras colágenas** e de miofibroblastos, o que explica a retração. Os ligamentos do lado medial e posterior (deltoide, calcaneonavicular plantar, talocalcaneano) estão espessados.\n\n**A consequência no tratamento.** O método de **Ponseti** alonga gradualmente esses músculos e ligamentos com manipulações e gessos semanais (o colágeno do recém-nascido se alonga bem). O **tendão calcâneo**, no entanto, costuma precisar de **tenotomia** no fim, porque o equino não se corrige só com gesso. Na recidiva dinâmica, transfere-se o **tibial anterior** para o cuneiforme lateral.",
+  "correta": "**Correta: A (tibial posterior, flexor longo do hálux, flexor longo dos dedos e tríceps sural).** Os músculos posteromediais encurtados mantêm a adução, a inversão e o equino do pé torto; os fibulares ficam alongados.",
   "incorretas": {
-   "B": "O fibular longo fica do lado lateral, alongado e fraco; não contribui para a deformidade.",
-   "C": "O fibular curto também é lateral e alongado; não contribui.",
-   "D": "O tibial anterior não é o principal na deformidade congênita; aparece na supinação dinâmica da recidiva."
+   "B": "O **fibular longo** fica do lado convexo e é **alongado**; não contribui para a deformidade.",
+   "C": "O **fibular curto** é eversor e fica alongado; e falta o tríceps sural, responsável pelo equino.",
+   "D": "O **tibial anterior** contribui pouco; o principal músculo medial deformante é o **tibial posterior**."
   },
-  "conceito": "No **pé torto congênito**, as partes moles do lado **posterior e medial** estão retraídas e fibróticas, e mantêm o pé em cavo, aduto, varo e equino (**CAVE**). Os músculos que mais contribuem são:\n\n**tríceps sural** (gastrocnêmio e sóleo): mantém o **equino**, puxando o calcanhar para cima;\n\n**tibial posterior**: puxa o navicular para medial, gerando **aduto** e **varo**;\n\n**flexor longo do hálux** e **flexor longo dos dedos**: contribuem para o **cavo** e o **varo**, e deixam os dedos fletidos.\n\n**Os que não contribuem**:\n\n**fibulares** (longo e curto): ficam do lado **lateral**, que está **alongado e fraco**; não puxam o pé para a deformidade;\n\n**tibial anterior**: não é o principal na deformidade congênita; ganha importância depois, na **supinação dinâmica** da recidiva, quando fica forte sem oposição dos fibulares.\n\n**Por que isso importa no tratamento**: os gessos de Ponseti alongam aos poucos essas estruturas; a única que geralmente precisa de corte é o **tendão calcâneo** (tenotomia), porque o equino é o mais resistente.\n\n**Na prova**: os músculos da deformidade são **tibial posterior, flexor longo do hálux, flexor longo dos dedos e tríceps sural**.",
-  "correta": "Tibial posterior, flexores longos do hálux e dos dedos e tríceps sural ficam retraídos e mantêm o pé torto.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de pé torto congênito.",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo do pé."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0467": {
@@ -6151,14 +6171,18 @@
   "conferido": false
  },
  "pediatria-0497": {
+  "conceito": "**A doença de Blount (tíbia vara).** É um distúrbio do crescimento da parte **posteromedial** da fise proximal da tíbia, que produz **varo progressivo**, rotação interna da tíbia e recurvato. A causa é **mecânica**: a sobrecarga em compressão sobre a fise medial (Lei de Hueter-Volkmann) **inibe** seu crescimento.\n\n**As formas.**\n| Forma | Perfil |\n|---|---|\n| **Infantil** (antes de 4 anos) | Crianças que **andaram cedo** (antes de 1 ano), **obesas**; frequentemente bilateral |\n| **Juvenil e do adolescente** (após 4 a 10 anos) | Adolescentes muito obesos; geralmente unilateral, varo menor |\n\n**O diagnóstico.** O joelho varo fisiológico melhora até os 2 anos; o varo que **persiste ou piora** após os 2 anos sugere Blount. O **ângulo metafisodiafisário de Drennan** (ou de Levine e Drennan) maior que **16°** sugere fortemente Blount; menor que 10°, varo fisiológico. A classificação de **Langenskiöld** (estágios I a VI) gradua a lesão radiográfica, do bico metafisário à **barra óssea** fisária (estágio VI).\n\n**O crescimento guiado.** Quando a **fise medial** ainda **funciona** (sem barra óssea, estágios iniciais e moderados de Langenskiöld, criança com crescimento restante), a primeira opção cirúrgica moderna é a **hemiepifisiodese lateral temporária** da tíbia proximal (placa em 8 ou grampos): freia o crescimento da parte **lateral** da fise, e a parte medial, que ainda cresce, corrige o varo aos poucos. É menos invasiva, permite carga imediata e é reversível (retira-se a placa quando o alinhamento é corrigido).\n\n**As limitações.** Funciona pior na criança muito obesa, nos estágios avançados e quando o crescimento restante é pequeno; e não corrige bem a **torção** interna. Nesses casos, e nas formas com barra, usam-se:\n| Situação | Tratamento |\n|---|---|\n| Fise medial funcionante | **Crescimento guiado** (hemiepifisiodese lateral) |\n| Criança pequena, varo importante, ou falha do crescimento guiado | **Osteotomia metafisária** valgizante e derrotativa, com hipercorreção |\n| Depressão do platô medial (estágios avançados) | **Elevação do hemiplatô medial** (osteotomia epifisária) |\n| Barra óssea | Ressecção da barra ou epifisiodese completa, com correção da deformidade |",
+  "correta": "**Correta: A (o crescimento guiado).** Com a fise medial ainda funcionante, a hemiepifisiodese lateral temporária freia o lado lateral e deixa o lado medial corrigir o varo com o crescimento, de forma menos invasiva e reversível.",
   "incorretas": {
-   "B": "A osteotomia epifisária é usada nos casos avançados com depressão do planalto medial.",
-   "C": "A osteotomia metafisária é reservada para deformidades maiores ou quando o crescimento guiado não basta.",
-   "D": "A elevação do hemiplatô medial é para os estágios avançados com planalto deprimido."
+   "B": "A **osteotomia epifisária** (elevação do platô medial) é reservada aos estágios **avançados**, com depressão do platô e fise lesada.",
+   "C": "A **osteotomia metafisária** é opção na criança pequena com varo importante ou na falha do crescimento guiado, mas não é a primeira escolha com fise funcionante.",
+   "D": "A **elevação do hemiplatô medial** é para a depressão grave do platô nos estágios avançados."
   },
-  "conceito": "O tratamento da **doença de Blount** depende da idade, do estágio de Langenskiöld e, principalmente, de a **fise medial ainda funcionar**:\n\n**abaixo de 3 anos, estágios I e II**: órtese;\n\n**fise medial funcionante** e crescimento restante: **crescimento guiado**. Uma placa em 8 (ou grampo) no lado **lateral** da fise **freia** o crescimento lateral, enquanto o lado medial continua crescendo e corrige o varo aos poucos. Depende de a fise medial **ainda crescer**;\n\n**deformidade maior, abaixo de 4 anos**: **osteotomia metafisária valgizante** com hipercorreção;\n\n**barra fisária medial**: ressecção da barra com osteotomia, ou epifisiodese completa;\n\n**planalto medial deprimido** (estágios avançados): **elevação do hemiplatô medial** (osteotomia epifisária).\n\n**As vantagens do crescimento guiado**: cirurgia pequena, recuperação rápida e correção gradual; remove-se a placa quando o eixo fica normal, para não passar do ponto.\n\n**A limitação**: não funciona se a fise medial está fechada ou com barra, nem quando falta pouco crescimento.\n\n**Na prova**: na Blount com **fise tibial medial funcionante**, o tratamento de escolha é o **crescimento guiado**.",
-  "correta": "Com a fise medial funcionando, frear o lado lateral com crescimento guiado corrige o varo aos poucos.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de doença de Blount.",
+   "Sabharwal S. Blount disease. J Bone Joint Surg Am. 2009;91(7):1758-76."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0498": {
@@ -6995,17 +7019,18 @@
   "conferido": false
  },
  "pediatria-0559": {
+  "conceito": "**A classificação de Salter-Harris.** Classifica as lesões da fise pelo trajeto do traço em relação à fise, à epífise e à metáfise. A sigla **SALTR** ajuda a lembrar:\n| Tipo | Trajeto | Prognóstico |\n|---|---|---|\n| **I** (Straight across) | Só pela fise | Bom (exceto fêmur distal) |\n| **II** (Above) | Fise e metáfise (fragmento de Thurston-Holland): o **mais comum** | Bom |\n| **III** (Lower) | Fise e **epífise**, até a articulação | Exige redução anatômica |\n| **IV** (Through) | Atravessa **metáfise, fise e epífise** | Alto risco de barra |\n| **V** (Rammed) | **Compressão** da fise; diagnóstico retrospectivo | Ruim |\n\n**O tipo VI de Rang.** Rang acrescentou o tipo **VI**: a lesão do **anel pericondral** (de **LaCroix**) e da **zona de Ranvier**, na **periferia** da fise. Ocorre por **abrasão** (queimadura por corda, arrasto em acidente de moto ou de cortador de grama), trauma direto, queimadura ou pela **avulsão** de um ligamento que leva consigo uma porção do anel pericondral. A lesão da periferia permite que se forme uma **ponte óssea periférica** entre a epífise e a metáfise, com **deformidade angular** progressiva.\n\n**A classificação de Peterson.** Acrescenta outros padrões: o tipo I de Peterson é a fratura **metafisária transversa** que se estende à fise; o tipo VI de Peterson corresponde à **perda** de parte da fise (lesão exposta com perda de tecido).\n\n**A importância.** As lesões tipo VI parecem pequenas no momento do trauma, mas exigem **seguimento** radiográfico prolongado: a ponte periférica pode ser ressecada cedo (técnica de Langenskiöld) ou tratada com hemiepifisiodese do lado oposto antes de a deformidade se instalar.",
+  "correta": "**Correta: C (avulsão na inserção de um ligamento, levando com ela uma porção do anel pericondral).** O tipo VI de Rang é a lesão da periferia da fise (anel pericondral e zona de Ranvier), por avulsão, abrasão ou trauma direto, com risco de ponte óssea periférica e deformidade angular.",
   "incorretas": {
-   "A": "A fratura intra-articular com separação parcial da epífise é o tipo III.",
-   "B": "A fratura que acomete a fise e parte da metáfise é o tipo II.",
-   "D": "A fratura que atravessa da superfície articular, pela fise, até a metáfise é o tipo IV."
+   "A": "A fratura intra-articular com separação parcial da epífise descreve o tipo **III**.",
+   "B": "A fratura que acomete a fise e parte da metáfise descreve o tipo **II**.",
+   "D": "A fratura que atravessa a superfície articular, a fise e a metáfise descreve o tipo **IV**."
   },
-  "conceito": "A **classificação de Salter-Harris** descreve as lesões da fise pelo trajeto do traço:\n\n**tipo I**: só pela **fise**;\n\n**tipo II**: pela fise e por um fragmento da **metáfise** (fragmento de Thurston-Holland); o mais comum;\n\n**tipo III**: pela fise e pela **epífise**, chegando à articulação;\n\n**tipo IV**: atravessa a **metáfise, a fise e a epífise**, da superfície articular até a metáfise;\n\n**tipo V**: **compressão** da fise, em geral diagnosticada só depois, quando o crescimento para.\n\n**O tipo VI de Rang**: é uma lesão da **periferia** da fise, do **anel pericondral** (anel de LaCroix e zona de Ranvier). Acontece por **avulsão** de um ligamento que leva junto uma porção do anel, por abrasão (ralado profundo), queimadura ou ferimento. O osso da metáfise e da epífise se une pela borda, formando uma **barra periférica**, que causa **deformidade angular** com o crescimento.\n\n**Por que importa**: uma lesão pequena e aparentemente superficial pode deixar uma barra; é preciso acompanhar o crescimento e, se aparecer barra, ressecá-la ou fazer epifisiodese.\n\n**Na prova**: o tipo VI de Rang é a **avulsão** na inserção de um ligamento, levando uma porção do **anel pericondral**.",
-  "correta": "O tipo VI de Rang é a lesão periférica do anel pericondral, por avulsão ou abrasão, que forma barra periférica e deformidade angular.",
   "referencias": [
-   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 12.1"
+   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 12.1",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), capítulo de lesões fisárias."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0560": {
@@ -9135,17 +9160,17 @@
   "conferido": false
  },
  "pediatria-0711": {
+  "conceito": "**A fratura da espinha tibial (eminência intercondilar).** É a avulsão óssea da inserção do **ligamento cruzado anterior** (LCA) na tíbia. Na criança de **8 a 14 anos**, a epífise ainda é parcialmente cartilaginosa e **mais fraca** que o ligamento: em vez de romper, o LCA arranca o seu ponto de inserção. É o **equivalente pediátrico** da ruptura do LCA.\n\n**O mecanismo.** Classicamente, a **queda de bicicleta**, e hoje sobretudo os esportes. O mecanismo mais comum é a **hiperextensão** do joelho combinada com **rotação** (em geral rotação lateral ou valgo e rotação), o mesmo que rompe o LCA no adulto. O trauma direto sobre o fêmur distal com o joelho fletido também é descrito.\n\n**A classificação de Meyers e McKeever (modificada por Zaricznyj).**\n| Tipo | Descrição |\n|---|---|\n| **I** | Sem desvio ou desvio mínimo da margem anterior |\n| **II** | Elevação da parte **anterior**, com a dobradiça posterior intacta (aspecto em \"bico de pato\") |\n| **III** | Fragmento **completamente** separado (IIIA só a espinha; IIIB toda a eminência; às vezes rodado) |\n| IV | Fragmento **cominutivo** |\n\n**O tratamento.**\n- **Tipo I** (e II que reduz em extensão): **gesso** com o joelho em extensão ou leve flexão (10° a 20°) por 4 a 6 semanas.\n- **Tipos II que não reduzem, III e IV**: **redução** e **fixação** artroscópica ou aberta, com suturas pela epífise ou parafusos epifisários (sem cruzar a fise).\n- O **corno anterior do menisco** (sobretudo o medial) ou o ligamento intermeniscal pode ficar **interposto** sob o fragmento, impedindo a redução fechada.\n\n**As complicações.** **Artrofibrose** e perda da extensão (a mais comum), frouxidão residual do LCA (o ligamento se alonga antes de arrancar o osso), bloqueio da extensão por consolidação viciosa do fragmento elevado e, raramente, distúrbio de crescimento.\n\n**Por que a perda da extensão é o maior prejuízo.** A **artrofibrose** (cicatrização excessiva com rigidez) e a **consolidação viciosa** do fragmento elevado, que bate no intercôndilo, levam à **perda da extensão** completa. Mesmo poucos graus de déficit de extensão alteram a marcha, sobrecarregam o quadríceps e a patelofemoral e são difíceis de recuperar. A **frouxidão** residual do LCA é frequente na medida (gaveta e Lachman aumentados), mas, na maioria, causa **pouca instabilidade funcional**. Por isso, a mobilização precoce e a redução anatômica do fragmento são essenciais.",
+  "correta": "**Correta: D (perda da extensão total).** A artrofibrose e o fragmento consolidado em posição elevada bloqueiam a extensão; mesmo pequenos déficits causam grande prejuízo funcional, maior que a frouxidão residual do LCA, em geral pouco sintomática.",
   "incorretas": {
-   "A": "O estalido isolado não costuma trazer limitação funcional.",
-   "B": "A lassidão residual é comum no exame, mas raramente causa instabilidade sintomática.",
-   "C": "O derrame de repetição não é a sequela característica dessa fratura."
+   "A": "O **estalido** não é complicação típica nem causa de prejuízo funcional importante.",
+   "B": "A **frouxidão** residual do LCA é frequente na medida, mas costuma causar pouca instabilidade funcional.",
+   "C": "O **derrame de repetição** não é a complicação mais frequente nem a de maior prejuízo."
   },
-  "conceito": "A **fratura da espinha tibial** é a avulsão da inserção do **ligamento cruzado anterior** na criança. Ela deixa duas sequelas frequentes, mas com pesos funcionais muito diferentes:\n\n**lassidão anterior residual**: o LCA **se alonga** antes de arrancar a espinha, e quase todas as crianças ficam com algum grau de lassidão no **exame físico**, mesmo com boa redução. Mas, na maioria, essa lassidão **não causa instabilidade** no dia a dia;\n\n**perda da extensão**: é a sequela que **mais limita a função**. Vem do **fragmento consolidado elevado**, que bate no intercôndilo do fêmur e funciona como um calço, ou da **artrofibrose** depois de imobilização longa ou cirurgia. Poucos graus a menos de extensão já mudam a marcha, deixando o joelho levemente fletido no apoio.\n\n**Como evitar**:\n\n**redução anatômica** do fragmento;\n\n**retirar o menisco** ou o **ligamento intermeniscal** que se interpõe sob o fragmento e impede a redução;\n\n**mobilização precoce**, com foco em recuperar a extensão completa.\n\n**As outras queixas** (estalido isolado, derrame de repetição) não são sequelas características dessa fratura.\n\n**Na prova**: o maior prejuízo funcional na fratura da espinha tibial vem da **perda da extensão total**.",
-  "correta": "A perda da extensão, por impacto do fragmento ou artrofibrose, é a sequela que mais compromete a função.",
   "referencias": [
    "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), Cap. 33"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0712": {
