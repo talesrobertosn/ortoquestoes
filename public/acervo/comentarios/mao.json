@@ -6178,19 +6178,20 @@
   "conferido": false
  },
  "mao-0602": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "C",
-  "conceito": "**Enxertos de pele.** O enxerto parcial pega com mais facilidade e deixa área doadora que cicatriza sozinha, mas se retrai mais (contração secundária) e é menos resistente. O total retrai pouco e é melhor para mão e face.\n\n**Na prova:** parcial pega fácil e retrai; total retrai pouco.",
-  "correta": "**Tem maior tendência à retração.** O parcial tem mais contração secundária.",
+  "conceito": "**Enxerto de pele parcial x total.** O enxerto de pele é um segmento de pele **sem vascularização própria**, que depende do leito receptor para sobreviver. A diferença entre os tipos está na **espessura da derme** incluída.\n\n**Tipos.**\n- **Parcial** (pele fina): epiderme e **parte da derme** (0,2 a 0,45 mm), retirado com dermátomo, geralmente da coxa.\n- **Total**: epiderme e **toda a derme**, retirado com bisturi (região inguinal, hipotenar, retroauricular), e a área doadora é fechada por sutura.\n\n**Integração (pega).** Ocorre em três fases: **embebição plasmática** (primeiras 48 horas), **inosculação** (conexão dos vasos do enxerto aos do leito) e **revascularização** (crescimento de novos vasos). Enxertos finos precisam de menos nutrição e \"pegam\" com mais facilidade, mesmo em leitos menos favoráveis.\n\n**Contração.**\n- **Contração primária**: retração imediata ao ser retirado, pelas fibras elásticas da derme; **maior no enxerto total** (mais derme).\n- **Contração secundária**: retração durante a cicatrização, pelos miofibroblastos do leito; **maior no enxerto parcial**, porque a derme fina inibe pouco essa contração. É a que importa clinicamente.\n\n**Comparação.**\n\n| Característica | Parcial | Total |\n|---|---|---|\n| Integração | Mais fácil | Mais exigente (leito bem vascularizado) |\n| **Contração secundária** | **Maior** | Menor |\n| Durabilidade e textura | Mais frágil, menos maleável | Mais resistente, maleável, cor e textura melhores |\n| Área doadora | Cicatriza sozinha (epitelização), mas fica visível e pode ser dolorosa | Fechada por sutura, cicatriz linear |\n| Uso na mão | Grandes áreas, leitos duvidosos | **Face palmar, dedos, sobre articulações** (evita contratura) |\n\n> Enxerto parcial: pega mais fácil, mas retrai mais e é menos resistente; total: retrai pouco, preferido na mão.",
+  "correta": "**C: tem maior tendência à retração (resposta pela bibliografia).** Com pouca derme, o enxerto parcial inibe pouco a ação dos miofibroblastos do leito e sofre maior contração secundária, que pode gerar contraturas, sobretudo na mão.",
   "incorretas": {
-   "A": "**Tem integração mais difícil.** O parcial tem integração mais fácil.",
-   "B": "**É mais maleável após a cicatrização.** Fica menos maleável e mais frágil.",
-   "D": "**Deixa menos seqüela na área doadora.** A área doadora do parcial reepiteliza, mas a afirmação comparativa principal é a retração."
+   "A": "**Integração mais difícil** é o contrário: o enxerto parcial, mais fino, precisa de menos nutrição e pega com mais facilidade que o total.",
+   "B": "**Mais maleável após a cicatrização** é falso: o enxerto total, com toda a derme, é mais maleável e resistente.",
+   "D": "**Menos sequela na área doadora** não é uma vantagem clara do parcial: sua área doadora cicatriza por epitelização, mas fica visível, discrômica e pode doer; a do total é fechada por sutura com cicatriz linear."
   },
   "referencias": [
-   "Pardini A.Traumatismos da mão. Rio de Janeiro: Medsi. 3ª ed., p. 195."
+   "Pardini A.Traumatismos da mão. Rio de Janeiro: Medsi. 3ª ed., p. 195.",
+   "Green DP, Hotchkiss RN, Pederson WC, Wolfe SW. Green's operative hand surgery. 5th ed. Philadelphia: Elsevier Churchill Livingstone; 2005."
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "C",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0603": {

@@ -3333,19 +3333,20 @@
   "conferido": false
  },
  "joelho-0279": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": "**Torque do quadríceps.** A patela aumenta o braço de alavanca do quadríceps. O torque máximo de extensão é gerado entre cerca de 60 e 45 graus de flexão; nos últimos 15 graus, a força necessária para estender aumenta muito porque o braço de alavanca diminui.\n\n**Na prova:** pico de torque do quadríceps ao redor de 45 a 60 graus.",
-  "correta": "**60 graus e 45 graus.** É a faixa descrita para o torque máximo de extensão.",
+  "conceito": "**Biomecânica do quadríceps e o papel da patela.** O torque de extensão do joelho é o produto da **força do quadríceps** pelo **braço de alavanca** (a distância perpendicular entre a linha de ação do tendão patelar e o centro de rotação do joelho). A **patela** aumenta esse braço de alavanca ao afastar o tendão do eixo de rotação, como uma polia.\n\n**Como o torque varia com a flexão.**\n- O braço de alavanca do quadríceps não é constante: depende da posição da patela na tróclea e do ponto de contato femorotibial, que se desloca com a flexão.\n- O **torque máximo** de extensão (força isométrica máxima) ocorre em flexão intermediária, por volta de **45 a 60 graus**, onde se combinam bom comprimento muscular (relação comprimento-tensão) e braço de alavanca favorável.\n- Nos **últimos 15 a 20 graus** de extensão, o braço de alavanca efetivo diminui e a força exigida do quadríceps para estender **aumenta muito** (até cerca de 60% a mais). Por isso, pacientes com quadríceps fraco têm **déficit de extensão ativa** (extensor lag) nos graus finais.\n\n**Forças na femoropatelar.**\n\n| Atividade | Força de reação femoropatelar |\n|---|---|\n| Marcha em plano | Cerca de 0,5 vez o peso corporal |\n| Subir escadas | Cerca de 3 vezes o peso |\n| Agachamento profundo | Até 7 vezes o peso ou mais |\n\nA reação femoropatelar aumenta com a flexão, ao contrário do braço de alavanca no fim da extensão. Grelsamer e Klein revisaram essas relações.\n\n**Aplicações.** A **patelectomia** reduz o braço de alavanca e exige até 30% mais força do quadríceps; a anteriorização da tuberosidade (Maquet) aumenta o braço de alavanca e reduz a pressão femoropatelar.\n\n> Torque máximo do quadríceps: por volta de 45 a 60 graus de flexão; nos últimos graus de extensão, a força exigida aumenta muito.",
+  "correta": "**A: 60 graus e 45 graus (resposta pela bibliografia).** Nessa faixa, o comprimento muscular e o braço de alavanca proporcionado pela patela se combinam para gerar o maior torque de extensão.",
   "incorretas": {
-   "B": "**45 graus e 30 graus.** Faixa menor do que a do pico de torque.",
-   "C": "**30 graus e 15 graus.** Faixa de braço de alavanca decrescente.",
-   "D": "**15 graus e 0 grau.** Nos últimos 15 graus a força exigida é maior, mas o torque gerado não é o máximo."
+   "B": "**Entre 45 e 30 graus** o torque ainda é alto, mas começa a cair em relação ao pico.",
+   "C": "**Entre 30 e 15 graus** o braço de alavanca e o comprimento muscular já são menos favoráveis; o torque disponível é menor.",
+   "D": "**Entre 15 e 0 grau** é a fase de menor eficiência: o quadríceps precisa gerar muito mais força para estender, origem do déficit de extensão ativa nos pacientes com fraqueza."
   },
   "referencias": [
-   "Rockwood C.A. et al. Fractures. Philadelphia: Lippincott. 6ª ed., p. 1977."
+   "Rockwood C.A. et al. Fractures. Philadelphia: Lippincott. 6ª ed., p. 1977.",
+   "Grelsamer RP, Klein JR. The biomechanics of the patellofemoral joint. J Orthop Sports Phys Ther. 1998;28(5):286-298."
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "A",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "joelho-0280": {
