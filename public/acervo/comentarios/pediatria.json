@@ -176,18 +176,19 @@
   "conferido": false
  },
  "pediatria-0013": {
+  "conceito": "**A hemimelia tibial.** É a **deficiência longitudinal da tíbia**, muito mais **rara** que a hemimelia fibular (cerca de 1 em 1 milhão de nascidos vivos). É uma deficiência **pré-axial** (do lado medial do membro, o lado do hálux). Pode ser **hereditária** (autossômica dominante) e se associar a outras anomalias:\n- **polidactilia pré-axial** do pé ou da mão;\n- mão em fenda;\n- duplicação do fêmur;\n- anomalias cardíacas.\n\n**O quadro clínico na ausência completa da tíbia.**\n- Perna **curta**, com a **fíbula** íntegra e **luxada** proximalmente, subindo ao lado do fêmur.\n- **Joelho instável**, em flexão, com o **quadríceps deficiente**.\n- **Patela ausente** (ou muito hipoplásica): sem tíbia proximal, não há tuberosidade para o tendão patelar, e o aparelho extensor não se forma.\n- **Pé em varo** importante (equinovaro), porque falta o suporte medial do tornozelo. O pé fica **supinado e rodado medialmente**, lembrando um pé torto grave.\n\n**A classificação de Jones.**\n\n| Tipo | Achado |\n|---|---|\n| **1a** | **Ausência completa** da tíbia; epífise distal do fêmur **hipoplásica** |\n| 1b | Tíbia proximal presente, mas **não ossificada** ao nascer (vista na ultrassonografia ou ressonância) |\n| 2 | Tíbia **proximal presente**, distal ausente |\n| 3 | Tíbia distal presente, proximal ausente (raro) |\n| 4 | **Diástase** tibiofibular distal |\n\n**O papel do quadríceps.** No tipo 1, o que define o tratamento é a **presença de um quadríceps funcionante**.\n- **Tipo 1a sem quadríceps**: **desarticulação do joelho** e prótese. É a opção mais funcional.\n- **Tipo 1a com quadríceps e extensão ativa**: pode-se tentar a **centralização da fíbula** sob o fêmur (cirurgia de Brown). Os resultados são irregulares, com contratura em flexão.\n- **Tipo 2**: **sinostose tibiofibular** proximal (a fíbula é unida à tíbia proximal) e amputação de Syme ou reconstrução do pé.\n- **Tipo 4**: reconstrução da pinça do tornozelo ou Syme.",
+  "correta": "**Correta: A (ausência da patela e pé varo).** Na hemimelia tibial com ausência completa da tíbia (tipo 1a de Jones), a **patela está ausente** ou é muito hipoplásica, porque o aparelho extensor não tem onde se inserir. O **pé fica em varo** grave (equinovaro), pela falta do suporte medial da tíbia.",
   "incorretas": {
-   "B": "Na forma completa a patela costuma estar ausente, não presente.",
-   "C": "A patela ausente está certa, mas o pé é varo, não valgo.",
-   "D": "Erra a patela e o pé."
+   "B": "O pé varo está certo, mas, na ausência completa da tíbia, a **patela costuma estar ausente**, com quadríceps deficiente.",
+   "C": "A ausência da patela está certa, mas o pé fica em **varo**, e não em valgo. O pé **valgo** é típico da **hemimelia fibular**.",
+   "D": "Erra os dois achados: a patela está ausente e o pé fica em varo. Patela presente com pé valgo lembra a hemimelia fibular."
   },
-  "conceito": "A **hemimelia tibial** é a deficiência longitudinal do lado **pré-axial** da perna: falta a **tíbia**, total ou parcialmente, e a **fíbula** está presente, às vezes até mais grossa. É rara, muitas vezes **hereditária** (dominante) e associada a alterações da mão, como mão fendida e polidactilia.\n\n**Na forma com ausência completa da tíbia**:\n\n**patela ausente** ou hipoplásica, e **quadríceps deficiente**: não há aparelho extensor;\n\n**joelho** instável e em flexão;\n\n**pé em equinovaro** rígido, porque a fíbula fica do lado lateral e o pé desvia para o lado onde falta osso, o medial.\n\n**A classificação de Jones**: tipo 1 (tíbia ausente, 1a com epífise distal do fêmur pequena, 1b com epífise normal), tipo 2 (falta a tíbia distal), tipo 3 (falta a tíbia proximal) e tipo 4 (diástase tibiofibular distal).\n\n**O tratamento**: sem quadríceps ativo, a melhor opção costuma ser a **desarticulação do joelho** com prótese; com quadríceps funcionando, pode-se tentar a **centralização da fíbula** sob o fêmur (técnica de Brown).\n\n**Na prova**: ausência completa da tíbia = **patela ausente e pé varo**.",
-  "correta": "Na ausência completa da tíbia, falta o aparelho extensor, com patela ausente, e o pé fica em equinovaro rígido.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Tibial Hemimelia. https://posna.org/physician-education/study-guide/tibial-hemimelia",
-   "Intraoperative sectional anatomy of congenital absence of tibia type IA. https://pubmed.ncbi.nlm.nih.gov/10367527/"
+   "Intraoperative sectional anatomy of congenital absence of tibia type IA. https://pubmed.ncbi.nlm.nih.gov/10367527/",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0014": {
@@ -519,19 +520,20 @@
   "conferido": false
  },
  "pediatria-0036": {
+  "conceito": "**A artrogripose múltipla congênita.** \"Artrogripose\" significa **contraturas articulares congênitas** em **duas ou mais áreas** do corpo. Não é uma doença única, e sim um **sinal** com centenas de causas. O ponto comum é a **falta de movimento fetal** (acinesia): sem movimento no útero, as articulações se formam rígidas, com cápsulas espessas e músculos substituídos por gordura e tecido fibroso.\n\n**As causas da falta de movimento fetal.** Neurológicas (as mais comuns), musculares, do tecido conjuntivo, falta de espaço intrauterino (oligoâmnio, útero malformado) e doenças maternas (miastenia, infecções).\n\n**A amioplasia: a forma clássica.** É a forma mais comum, cerca de um terço dos casos. É **esporádica**, simétrica, com os **quatro membros** acometidos, inteligência **normal** e um **hemangioma** facial em linha média frequente. A postura é tão típica que se reconhece à primeira vista:\n\n| Região | Postura típica |\n|---|---|\n| **Ombro** | **Aduzido e em rotação interna** |\n| **Cotovelo** | **Estendido** (às vezes fletido) |\n| Antebraço | Pronado |\n| **Punho** | **Fletido** e com desvio ulnar |\n| Dedos | Fletidos, polegar na palma |\n| Quadril | Fletido, abduzido e em rotação externa, ou **luxado** |\n| Joelho | Estendido ou fletido |\n| Pé | **Pé torto** rígido (equinovaro) ou tálus vertical |\n\nA pele é **lisa**, sem as pregas de flexão normais, com **covinhas** sobre as articulações. Os membros são cilíndricos e com pouca massa muscular. A imagem do braço lembra a de um \"garçom pedindo gorjeta\" (como na paralisia braquial alta).\n\n**As artrogriposes distais.** Grupo **hereditário**, autossômico dominante, que acomete sobretudo as **mãos e os pés**. As grandes articulações são relativamente poupadas. Um exemplo é a síndrome de Freeman-Sheldon.\n\n**Os princípios do tratamento.**\n- **Mobilização precoce** e gessos seriados: o ganho de movimento é maior nos primeiros meses.\n- O objetivo é a **função**, e não a correção perfeita: andar e ser independente nas atividades diárias.\n- No membro superior, o objetivo é levar a mão à boca, o que exige **flexão do cotovelo**. Pode-se usar liberação capsular e transferência de tríceps. Um lado em flexão e o outro em extensão pode ser a melhor combinação.\n- O **pé torto** artrogripótico é **rígido** e recidiva muito. Usa-se o método de Ponseti com mais gessos, e às vezes a talectomia.\n- A luxação **bilateral** do quadril pode ser deixada sem tratamento. A unilateral costuma ser reduzida.",
+  "correta": "**Correta: A (rotação interna e o punho fletido).** Na amioplasia, forma clássica da artrogripose múltipla congênita, o membro superior fica com o ombro **aduzido e em rotação interna**, o cotovelo **estendido**, o antebraço pronado e o punho **fletido** com desvio ulnar.",
   "incorretas": {
-   "B": "O punho fletido está certo, mas o ombro fica em rotação interna.",
-   "C": "A rotação interna está certa, mas o punho fica fletido.",
-   "D": "Erra os dois: o ombro está em rotação interna e o punho, fletido."
+   "B": "O punho fletido está certo, mas o ombro fica em **rotação interna**, e não externa.",
+   "C": "A rotação interna do ombro está certa, mas o punho fica **fletido**, e não estendido.",
+   "D": "Inverte os dois achados: o ombro fica em rotação **interna** e o punho em **flexão**."
   },
-  "conceito": "A **artrogripose múltipla congênita** é o nascimento com contraturas fixas em várias articulações, causadas pela falta de movimento do feto. A forma clássica, a **amioplasia**, é simétrica e tem uma postura típica dos membros superiores:\n\n**ombros** em **adução** e **rotação interna**;\n\n**cotovelos** em **extensão**;\n\n**antebraços** em pronação;\n\n**punhos** em **flexão** e desvio ulnar.\n\nA imagem lembra o \"policial pedindo gorjeta\": braços colados ao corpo, virados para dentro, com os punhos dobrados.\n\n**Nos membros inferiores**: quadris às vezes luxados, joelhos estendidos ou fletidos e **pé torto rígido**.\n\n**Outros sinais**: pele lisa, sem pregas, com covinhas sobre as articulações, músculos substituídos por gordura e fibrose, e **inteligência normal**.\n\n**O objetivo do tratamento** no membro superior é a criança conseguir levar a mão à boca: fisioterapia e órteses precoces e, depois, liberação do cotovelo e transferências para dar flexão.\n\n**Na prova**: artrogripose = cotovelo em extensão, ombro em **rotação interna** e **punho fletido**.",
-  "correta": "Na amioplasia, o ombro fica aduzido e em rotação interna, o cotovelo estendido e o punho fletido.",
   "referencias": [
    "Arthrogryposis: A Review and Update. https://pmc.ncbi.nlm.nih.gov/articles/PMC2698792/",
    "AMC: amyoplasia and distal arthrogryposis. https://pmc.ncbi.nlm.nih.gov/articles/PMC4661149/",
-   "Lovell and Winter's Pediatric Orthopaedics, 7ª edição (Weinstein, Flynn), Cap. 8"
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn)",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0037": {
@@ -824,33 +826,34 @@
   "conferido": false
  },
  "pediatria-0056": {
+  "conceito": "**O aparelho extensor do joelho tem pontos fracos na criança.** Durante o crescimento, o quadríceps puxa a patela, que puxa o tendão patelar, que puxa a tuberosidade da tíbia. Nos pontos de inserção, ainda há **cartilagem** e centros de ossificação, mais frágeis que o tendão. Com a **tração repetida** do esporte (saltos, corrida, chutes), surgem as apofisites e osteocondroses por tração.\n\n**As duas apofisites do joelho.**\n\n| Característica | Sinding-Larsen-Johansson | Osgood-Schlatter |\n|---|---|---|\n| Local | **Polo inferior da patela** (origem do tendão patelar) | **Tuberosidade anterior da tíbia** (inserção) |\n| Idade típica | **10 a 14 anos** (um pouco antes de Osgood) | 12 a 15 anos (meninos), 8 a 12 (meninas) |\n| Sexo | Predomínio **masculino** | Predomínio masculino |\n| Radiografia | Calcificação ou fragmentação no polo inferior | Fragmentação e proeminência da tuberosidade |\n\n**A doença de Sinding-Larsen-Johansson.** É a **tração crônica** sobre o centro de ossificação do polo inferior da patela, no **pré-adolescente** e início da adolescência, geralmente **meninos ativos de 10 a 14 anos** (esportes com saltos e corrida). A criança tem dor **localizada no polo inferior** da patela, que piora com saltos, ajoelhar-se, subir escadas e agachar.\n\n**O \"joelho do saltador\" do adulto, para comparar.** A **tendinopatia patelar** acomete o mesmo local (polo inferior), mas no adulto, com a patela já ossificada. É uma lesão do **tendão**, e não da apófise.\n\n**Os diagnósticos diferenciais.**\n- **Fratura em manga** da patela: avulsão aguda de uma \"manga\" de cartilagem do polo inferior, com pouco osso visível na radiografia. É uma lesão **aguda** e grave, que precisa de cirurgia se houver desvio.\n- **Patela bipartida**: geralmente no polo **superolateral**, e não no inferior.\n\n**O tratamento.** A doença é **autolimitada** e resolve com o fim do crescimento, em geral em 12 a 18 meses.\n- Redução da atividade.\n- **Gelo**, anti-inflamatórios por curto período.\n- **Alongamento** do quadríceps e dos isquiotibiais.\n- Às vezes, uma faixa infrapatelar.\n\nA imobilização raramente é necessária. Não há indicação cirúrgica.",
+  "correta": "**Correta: D (meninos entre 10 e 14 anos).** A síndrome de Sinding-Larsen-Johansson, apofisite por tração do polo inferior da patela, acomete com maior frequência **meninos ativos entre 10 e 14 anos**, sobretudo em esportes com saltos e corrida.",
   "incorretas": {
-   "A": "Erra o sexo e a idade: predomina em meninos e um pouco mais velhos.",
-   "B": "O sexo está certo, mas a idade típica é de 10 a 14 anos.",
-   "C": "A idade está certa, mas predomina no sexo masculino."
+   "A": "Entre **6 e 10 anos**, o polo inferior da patela ainda não está na fase típica de ossificação vulnerável. A doença predomina em meninos mais velhos.",
+   "B": "O sexo masculino está certo, mas a faixa de **6 a 10 anos** é precoce. A idade típica é de 10 a 14 anos.",
+   "C": "A faixa etária está certa, mas a doença predomina no sexo **masculino**."
   },
-  "conceito": "No joelho do adolescente, o tendão patelar puxa dois pontos de cartilagem de crescimento, e cada um tem a sua **apofisite de tração**:\n\n**Sinding-Larsen-Johansson**: no **polo inferior da patela**; **meninos de 10 a 14 anos**, ativos, sobretudo em esportes com **saltos**;\n\n**Osgood-Schlatter**: na **tuberosidade anterior da tíbia**; meninos esportistas entre 10 e 15 anos; bilateral em cerca de 25%;\n\n**joelho do saltador**: no adulto, é tendinopatia do tendão patelar proximal, já sem cartilagem de crescimento.\n\n**O que acontece na Sinding-Larsen-Johansson**: a tração repetida no polo inferior imaturo causa **fragmentação** e **calcificação** visíveis na radiografia, com dor localizada.\n\n**O tratamento**: é **autolimitada**: repouso relativo dos saltos, gelo e alongamento do quadríceps até o fim do crescimento.\n\n**O diferencial importante**: a **fratura-avulsão em manga** (sleeve fracture) do polo inferior da patela, que é **aguda**, depois de um salto, com incapacidade de estender o joelho, e é **cirúrgica**.\n\n**Na prova**: Sinding-Larsen-Johansson = **meninos de 10 a 14 anos**.",
-  "correta": "A Sinding-Larsen-Johansson acomete sobretudo meninos ativos entre 10 e 14 anos.",
   "referencias": [
    "Evaluation and management of knee pain in young athletes. https://pmc.ncbi.nlm.nih.gov/articles/PMC5532199/",
    "Narrative review: knee pain in the pediatric athlete. https://pmc.ncbi.nlm.nih.gov/articles/PMC8137791/",
-   "Incidence and risk factors for lower extremity apophysitis. https://pmc.ncbi.nlm.nih.gov/articles/PMC13018006/"
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0057": {
+  "conceito": "**Duas maneiras de fazer osso.**\n- **Ossificação intramembranosa**: o osso se forma **diretamente** a partir do mesênquima, sem molde de cartilagem. É o caso dos ossos chatos do **crânio**, da face e de boa parte da **clavícula**.\n- **Ossificação endocondral**: primeiro se forma um **molde de cartilagem hialina**, que depois é substituído por osso. É o caso dos **ossos longos**, como o fêmur e a tíbia, e das vértebras.\n\n**A ossificação endocondral, passo a passo.**\n1. O mesênquima se condensa e forma o **molde cartilaginoso** (por volta da 5ª e 6ª semanas).\n2. No meio da diáfise, os condrócitos **hipertrofiam** e a matriz se calcifica.\n3. O pericôndrio vira **periósteo** e forma um **colar ósseo** ao redor da diáfise.\n4. Vasos invadem a cartilagem calcificada, trazendo osteoblastos: surge o **centro de ossificação primário**.\n5. A ossificação avança para as extremidades. Mais tarde, muitas vezes **após o nascimento**, surgem os **centros secundários** nas epífises. Entre os dois centros fica a **fise**, que garante o crescimento em comprimento.\n\n**A cronologia.**\n\n| Época | Evento |\n|---|---|\n| 5ª a 6ª semana | **Clavícula**: o **primeiro osso** a ossificar (intramembranosa); moldes de cartilagem dos ossos longos |\n| **7ª a 8ª semana** | **Centros primários** do **fêmur** e da **tíbia** (e do úmero) |\n| 12ª semana | Centros primários na maioria dos ossos longos e falanges |\n| Perto do nascimento | **Fêmur distal** e, muitas vezes, **tíbia proximal**: os primeiros centros **secundários** |\n\n**Aplicação prática.** A presença do núcleo de ossificação do **fêmur distal** na radiografia do recém-nascido indica gestação a termo. O núcleo da **cabeça femoral** só aparece por volta dos 4 a 6 meses de vida.\n\n**Por que isso importa ao ortopedista.** As **malformações** dos membros ocorrem entre a 4ª e a 8ª semana, quando os brotos se formam e os moldes se organizam. A talidomida, por exemplo, agia nessa janela. Depois da 8ª semana, o esqueleto já está desenhado e só cresce.",
+  "correta": "**Correta: B (7 e 8).** Os centros de ossificação **primários** do fêmur e da tíbia aparecem por volta da **7ª e 8ª semanas** de gestação, no fim do período embrionário, a partir dos moldes de cartilagem formados nas semanas anteriores.",
   "incorretas": {
-   "A": "Na 5ª e 6ª semanas os ossos longos ainda são moldes de cartilagem; só a clavícula começa a ossificar.",
-   "C": "Na 9ª e 10ª semanas o fêmur e a tíbia já estão ossificando.",
-   "D": "Na 10ª e 11ª semanas a ossificação desses ossos já começou há algum tempo."
+   "A": "Nas semanas **5 e 6**, formam-se os **moldes cartilaginosos** dos ossos longos. A ossificação que começa nessa época é a **intramembranosa da clavícula**, o primeiro osso a ossificar.",
+   "C": "Nas semanas **9 e 10**, a ossificação do fêmur e da tíbia **já começou**. Nessa época, surgem os centros de outros ossos, como os metacarpos e as falanges.",
+   "D": "Nas semanas **10 e 11**, os centros primários do fêmur e da tíbia já estão bem estabelecidos. A questão pergunta o início."
   },
-  "conceito": "Os **ossos longos** começam como **moldes de cartilagem** no embrião e depois ossificam de dentro para fora (**ossificação endocondral**). O primeiro osso que aparece é o **centro primário de ossificação**, no meio da diáfise.\n\n**A cronologia**:\n\n**4ª semana**: surgem os brotos dos membros;\n\n**5ª e 6ª semanas**: o mesênquima se condensa e forma os moldes de cartilagem; a **clavícula**, de ossificação membranosa, começa a ossificar nesse período (é o **primeiro osso** a ossificar);\n\n**7ª e 8ª semanas**: aparecem os **centros primários** dos ossos longos, entre eles o **fêmur** e a **tíbia**;\n\n**8ª semana**: termina a organogênese.\n\n**Os centros secundários** (as epífises), em geral, aparecem depois do nascimento. A exceção é o **fêmur distal**, por volta da 36ª semana, usado como sinal de maturidade fetal.\n\n**Curiosidade da clavícula**: é o primeiro osso a ossificar e o último a fechar a fise (a medial, por volta dos 25 anos).\n\n**Na prova**: ossificação do fêmur e da tíbia = **7ª e 8ª semanas**.",
-  "correta": "Os centros primários de ossificação do fêmur e da tíbia aparecem na 7ª e na 8ª semanas de gestação.",
   "referencias": [
-   "The Developing Human: Clinically Oriented Embryology, skeletal system. https://www.ncbi.nlm.nih.gov/books/NBK548949/"
+   "The Developing Human: Clinically Oriented Embryology, skeletal system. https://www.ncbi.nlm.nih.gov/books/NBK548949/",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0058": {
@@ -2183,14 +2186,18 @@
   "conferido": false
  },
  "pediatria-0155": {
+  "conceito": "**As mucopolissacaridoses (MPS).** São doenças de **depósito lisossômico**. Falta uma das **enzimas** que degradam os **glicosaminoglicanos** (antigamente chamados de mucopolissacarídeos). Esses compostos se acumulam nas células, no osso, na cartilagem, no coração, no fígado, na córnea e no cérebro, e o excesso aparece na **urina**. O tipo de glicosaminoglicano eliminado ajuda a identificar a síndrome.\n\n**As principais MPS e o glicosaminoglicano urinário.**\n\n| MPS | Síndrome | Glicosaminoglicano na urina |\n|---|---|---|\n| I (forma grave) | **Hurler** | Dermatan e heparan sulfato |\n| I (forma leve) | **Scheie** | Dermatan e heparan sulfato |\n| II | **Hunter** (ligada ao X) | Dermatan e heparan sulfato |\n| III | Sanfilippo | Heparan sulfato |\n| **IV** | **Morquio** | **Queratan sulfato** |\n| VI | Maroteaux-Lamy | Dermatan sulfato |\n\n**A síndrome de Morquio (MPS IV).** É a MPS de **maior interesse ortopédico**. Na forma A, falta a enzima galactosamina-6-sulfatase, e acumulam-se o **queratan sulfato** e o condroitin-6-sulfato, compostos abundantes na **cartilagem**. Por isso, as alterações são predominantemente **esqueléticas**.\n\n**As características da síndrome de Morquio.**\n- **Inteligência normal**, diferente da Hurler e da Hunter graves.\n- **Nanismo** de tronco curto, com tórax em quilha (pectus carinatum).\n- **Hipoplasia do processo odontoide** e frouxidão ligamentar, com **instabilidade atlantoaxial** e risco de **mielopatia** cervical. É a maior causa de morbidade e exige **artrodese occipitocervical** ou C1-C2 em muitos casos.\n- **Platispondilia** (vértebras achatadas), com bico anterior central.\n- **Geno valgo** acentuado, displasia do quadril e frouxidão articular.\n- Córnea turva.\n\n**A Hurler (MPS I grave), para contraste.** Deficiência intelectual progressiva, face grosseira, hepatoesplenomegalia, cifose toracolombar com vértebra em bico **inferior** (giba) e contraturas articulares. Diferentemente da Morquio, as articulações ficam **rígidas**. O transplante de células-tronco hematopoéticas altera a evolução se feito cedo.\n\n**O tratamento.** Há **terapia de reposição enzimática** para várias MPS, incluindo a Morquio A (elosulfase alfa). A anestesia é de **alto risco**, pela via aérea difícil e pela instabilidade cervical.\n\n**Frouxidão x rigidez articular nas MPS.** Esse é um divisor importante.\n- Na **Morquio**, predomina a **frouxidão ligamentar**: articulações hipermóveis, geno valgo, punhos frouxos e instabilidade atlantoaxial.\n- Na **Hurler**, **Hunter** e **Scheie**, e também na Maroteaux-Lamy, predominam a **rigidez** e as **contraturas** articulares, com mãos em garra e síndrome do túnel do carpo.",
+  "correta": "**Correta: D (Morquio).** Na síndrome de Morquio (MPS IV), predomina a **frouxidão ligamentar**, com articulações hipermóveis, geno valgo e instabilidade atlantoaxial por hipoplasia do odontoide. Nas outras MPS citadas, predominam a rigidez e as contraturas articulares.",
   "incorretas": {
-   "A": "Hurler cursa com rigidez articular, mão em garra e retardo mental.",
-   "B": "Scheie é a forma atenuada da MPS I, com rigidez articular e inteligência normal.",
-   "C": "Hunter, ligada ao X, também cursa com rigidez articular."
+   "A": "Na síndrome de **Hurler**, predominam as **contraturas** e a rigidez articular, com mãos em garra, e não a frouxidão.",
+   "B": "Na síndrome de **Scheie** (MPS I leve), há **rigidez** articular e túnel do carpo, com inteligência normal.",
+   "C": "Na síndrome de **Hunter**, as articulações também ficam **rígidas**, com contraturas progressivas."
   },
-  "conceito": "As **mucopolissacaridoses** são doenças de depósito em que falta uma enzima lisossomal e os glicosaminoglicanos se acumulam. Para a ortopedia, a divisão mais útil é entre as que **enrijecem** e a que **afrouxa** as articulações.\n\n**As que enrijecem**:\n\n**Hurler (tipo I, forma grave)**: retardo mental, face grosseira, opacidade de córnea, giba toracolombar, **mão em garra**, dedo em gatilho múltiplo e túnel do carpo;\n\n**Scheie (tipo I, forma atenuada)**: inteligência normal, mas também com **rigidez articular**;\n\n**Hunter (tipo II)**: **ligada ao X**, sem opacidade de córnea, também com rigidez.\n\n**A que afrouxa**:\n\n**Morquio (tipo IV)**: **hiperfrouxidão ligamentar**, inteligência normal, nanismo de tronco curto, genu valgo e **odontoide hipoplásico com instabilidade C1-C2**; elimina queratan sulfato na urina.\n\n**O cuidado no Morquio**: avaliar a coluna cervical antes de qualquer anestesia; se instável, artrodese occipitocervical.\n\n**Na prova**: mucopolissacaridose com **frouxidão ligamentar** = **Morquio**.",
-  "correta": "O Morquio é a mucopolissacaridose com hiperfrouxidão, e o risco maior é a instabilidade C1-C2 pelo odontoide hipoplásico.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0156": {
@@ -2217,14 +2224,18 @@
   "conferido": false
  },
  "pediatria-0158": {
+  "conceito": "**O metatarso aduto (varo).** É a **deformidade do pé mais comum** no recém-nascido. O **antepé está aduzido** (desviado para medial) em relação ao retropé, na articulação tarsometatarsal (de Lisfranc). O **retropé é normal ou está em leve valgo**, e o tornozelo tem **dorsiflexão normal**, sem equino. É atribuído à posição intrauterina (\"pé apertado\").\n\n**Como se reconhece.**\n- A **borda lateral** do pé é **convexa** (curva em feijão) e a borda medial é côncava, às vezes com uma **prega medial**.\n- O **hálux** pode estar afastado dos outros dedos.\n- O **retropé tem mobilidade preservada**: o calcanhar está em posição normal e se move livremente.\n\n**A linha bissetriz do calcanhar de Bleck.** Divide o calcanhar ao meio e se prolonga até os dedos. No pé normal, ela passa entre o **segundo e o terceiro dedo**.\n\n| Por onde passa a linha | Grau |\n|---|---|\n| Entre o 2º e o 3º dedo | Normal |\n| Pelo 3º dedo | Leve |\n| Entre o 3º e o 4º dedo | Moderado |\n| Entre o 4º e o 5º dedo | Grave |\n\n**Flexível ou rígido.** A flexibilidade é avaliada estabilizando o calcanhar e empurrando o antepé para abdução. O pé **flexível** passa da linha média. O **rígido** não corrige.\n\n**Metatarso aduto x pé torto congênito.** A diferença é crucial.\n\n| Achado | Metatarso aduto | Pé torto congênito |\n|---|---|---|\n| Antepé | Aduzido | Aduzido e **cavo** |\n| **Retropé** | **Normal ou valgo, móvel** | **Varo rígido** |\n| **Tornozelo** | **Dorsiflexão normal** | **Equino rígido** |\n\n**O metatarso aduto e a DDQ.** Como deformidade de \"aperto\" intrauterino, pode se associar à **displasia do quadril**. Por isso, os quadris devem ser examinados.\n\n**O tratamento.**\n- **Flexível**: observação e alongamentos. A maioria **corrige espontaneamente**.\n- **Rígido** ou que persiste: **gessos seriados** (gesso inguinopodálico ou suropodálico) nos primeiros meses, idealmente antes dos 8 meses.\n- **Cirurgia**: rara, em crianças maiores com deformidade rígida e sintomática. Usam-se osteotomias da base dos metatarsos ou do cuneiforme medial (abertura) com o cuboide (fechamento).",
+  "correta": "**Correta: B (mobilidade preservada no retropé).** No metatarso aduto, a deformidade está no **antepé**, aduzido em relação ao retropé. O retropé é normal ou em leve valgo e mantém a **mobilidade**, e o tornozelo não tem equino. É isso que o diferencia do pé torto congênito.",
   "incorretas": {
-   "A": "Retropé varo é achado do pé torto, não do metatarso aduto.",
-   "C": "O arco plantar medial é preservado ou até alto; não está diminuído.",
-   "D": "O antepé aduzido tende à supinação, não à pronação."
+   "A": "O **varo do retropé** é característico do **pé torto congênito**, e não do metatarso aduto, em que o retropé é normal ou em leve valgo.",
+   "C": "O arco plantar medial **não está diminuído**. Ele pode até parecer mais alto pela concavidade da borda medial do pé.",
+   "D": "Quando há componente de rotação do antepé no metatarso aduto, ele é de **supinação** leve, e não de pronação."
   },
-  "conceito": "O **metatarso aduto** é o desvio do **antepé para medial** na articulação tarsometatársica (Lisfranc), com o **retropé normal**. A borda lateral do pé fica convexa, em forma de \"feijão\", e a borda medial, côncava.\n\n**Como diferenciar do pé torto**:\n\n**antepé**: aduzido, às vezes com leve supinação, nos dois;\n\n**retropé**: **normal e móvel** no metatarso aduto; **varo e equino fixos** no pé torto;\n\n**dorsiflexão**: normal no metatarso aduto; limitada no pé torto;\n\n**arco plantar**: preservado ou alto no metatarso aduto; cavo no pé torto.\n\n**A bissetriz do calcanhar (Bleck)**: a linha que divide a planta do retropé ao meio passa normalmente **entre o 2º e o 3º dedos**. No metatarso aduto ela se desloca para **lateral**: sobre o 3º dedo é leve; entre o 3º e o 4º, moderado; entre o 4º e o 5º, grave.\n\n**A conduta pela flexibilidade**: o flexível (corrige além do neutro) só se observa; o parcialmente flexível recebe alongamentos; o rígido recebe gessos seriados.\n\n**Na prova**: metatarso aduto = antepé aduzido com **retropé de mobilidade preservada**.",
-  "correta": "No metatarso aduto, o desvio está só no antepé; o retropé é normal e móvel, o que o separa do pé torto.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0160": {
@@ -2298,14 +2309,18 @@
   "conferido": false
  },
  "pediatria-0165": {
+  "conceito": "**A deficiência femoral focal proximal (DFFP).** Faz parte do espectro das **deficiências longitudinais congênitas do fêmur**, que vai do fêmur curto congênito, com quadril normal, até a quase ausência do fêmur proximal. Geralmente é **unilateral**.\n\n**Como a criança se apresenta.**\n- Coxa **muito curta e volumosa**.\n- Quadril em **flexão, abdução e rotação externa**.\n- Pé geralmente na altura do joelho contralateral.\n\n**Associações frequentes.** **Hemimelia fibular** em cerca de metade dos casos, **deficiência do LCA** e pé com raios ausentes.\n\n**A classificação de Aitken.** Separa os tipos pela presença da **cabeça femoral**, pelo **acetábulo** e pela existência de uma **conexão óssea** entre a cabeça e a diáfise na maturidade.\n\n| Tipo | Cabeça e acetábulo | Conexão cabeça-diáfise |\n|---|---|---|\n| **A** | Cabeça presente; acetábulo **normal** | Defeito subtrocantérico que **ossifica**, deixando coxa vara |\n| **B** | Cabeça presente; acetábulo adequado ou levemente displásico | **Não ossifica**: **pseudoartrose** persistente no colo |\n| **C** | Cabeça **ausente** ou só um ossículo; acetábulo muito displásico | Sem articulação útil |\n| **D** | Cabeça e acetábulo **ausentes**; fêmur muito curto | Sem articulação |\n\n**Como raciocinar.** Nos tipos A e B **existe** uma cabeça dentro de um acetábulo, e por isso existe um quadril potencial. A diferença está no que acontece entre a cabeça e a diáfise. No **A**, a falha cartilaginosa acaba ossificando, e sobra uma coxa vara grave. No **B**, a falha persiste como **pseudoartrose** do colo. Nos tipos C e D, **não há** quadril para reconstruir.\n\n**Implicações no tratamento.**\n- Nos tipos **A e B**, pode-se pensar em estabilizar o quadril e, em casos selecionados, em alongamento.\n- Nos tipos **C e D**, com o membro muito curto, a regra é a **adaptação protética**. Ela pode ser associada à **artrodese do joelho** com amputação de Syme, ou à **rotacionplastia de Van Nes**, em que o tornozelo girado 180° passa a funcionar como joelho.\n- O **cálculo da discrepância final** dos membros orienta se o caso é de alongamento ou de prótese.",
+  "correta": "**Correta: B (B).** Na classificação de Aitken, o tipo B tem cabeça femoral presente num acetábulo adequado, mas **sem conexão óssea** entre a cabeça e a diáfise na maturidade. Ou seja, persiste uma **pseudoartrose do colo**.",
   "incorretas": {
-   "A": "No tipo A a falha do colo ossifica e evolui para coxa vara, sem pseudartrose persistente.",
-   "C": "No tipo C a cabeça está ausente e o acetábulo é displásico.",
-   "D": "No tipo D não há cabeça nem acetábulo."
+   "A": "No tipo **A**, há cabeça e acetábulo normais, e o defeito subtrocantérico **ossifica** até a maturidade, deixando coxa vara. Não sobra pseudoartrose.",
+   "C": "No tipo **C**, a cabeça femoral está **ausente** ou é apenas um ossículo, e o acetábulo é muito displásico. Não existe um colo para formar pseudoartrose.",
+   "D": "No tipo **D**, a cabeça e o acetábulo estão **ausentes** e o fêmur é muito curto. É a forma mais grave, sem qualquer articulação do quadril."
   },
-  "conceito": "A **deficiência femoral focal proximal** (DFFP) é parte do espectro das deficiências congênitas do fêmur: coxa curta, quadril em flexão, abdução e rotação externa, e associação frequente com hemimelia fibular.\n\n**A classificação de Aitken** olha a cabeça, o acetábulo e o colo:\n\n**tipo A**: cabeça **presente**, acetábulo **normal**; o colo tem uma falha cartilaginosa que **acaba ossificando**, e o resultado é **coxa vara**;\n\n**tipo B**: cabeça **presente**, acetábulo **adequado**, mas **sem conexão óssea** entre a cabeça e o fêmur: a **pseudartrose do colo persiste**;\n\n**tipo C**: cabeça **ausente** ou representada por um ossículo, acetábulo **displásico**, fêmur curto;\n\n**tipo D**: cabeça e acetábulo **ausentes**, fêmur muito curto.\n\n**Por que importa**: nos tipos A e B há quadril para reconstruir; nos tipos C e D, não. O tratamento vai do alongamento nos casos leves à **rotacionplastia de Van Nes**, à artrodese do joelho com prótese ou à amputação de Syme nos graves.\n\n**Na prova**: pseudartrose persistente do colo na DFFP = **Aitken B**.",
-  "correta": "No tipo B de Aitken a cabeça está presente, mas não se liga ao fêmur: a pseudartrose do colo persiste.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0166": {
@@ -2922,14 +2937,18 @@
   "conferido": false
  },
  "pediatria-0245": {
+  "conceito": "**O método de Ponseti em duas fases.** O tratamento do pé torto congênito tem uma fase de **correção** e uma fase de **manutenção**.\n\n**Na correção**, há uma sequência de gessos semanais, com manipulação na ordem do mnemônico **CAVE**:\n1. **Cavo**: corrige-se primeiro, supinando o antepé (elevando o primeiro raio).\n2. **Aduto** e **varo**: o pé é abduzido em torno da **cabeça do tálus**, que serve de fulcro.\n3. **Equino**: por último, geralmente com a **tenotomia percutânea do tendão calcâneo**, feita na maioria dos casos.\n\n**Na manutenção**, entra a **órtese de abdução** (botas presas a uma barra, a antiga Denis Browne). Sem ela, o pé torto **recidiva** com muita frequência. A falta de adesão é a principal causa de recidiva.\n\n**Os parâmetros da órtese.**\n\n| Parâmetro | Valor |\n|---|---|\n| Rotação externa do pé **afetado** | **60 a 70°** |\n| Rotação externa do pé **normal** (casos unilaterais) | 30 a 40° |\n| **Dorsiflexão** | **10 a 15°**, pela curvatura da barra |\n| Distância entre as botas | Largura dos **ombros** |\n\n**Por que esses números.**\n- A **rotação externa** mantém o pé abduzido, impedindo que o aduto e o varo voltem.\n- A **dorsiflexão** vem da barra dobrada para baixo no centro, com a convexidade voltada para o chão. Ela mantém o tendão calcâneo alongado e evita a recidiva do equino.\n- A distância entre os ombros deixa os quadris em abdução confortável.\n\n**O tempo de uso.**\n- **23 horas por dia** nos primeiros 3 meses após o último gesso.\n- Depois, **à noite e nos cochilos** até os **4 anos** de idade.\n\n**Quando o pé recidiva.** Na recidiva, repetem-se gessos e às vezes a tenotomia. Na recidiva dinâmica em supinação após os 3 anos, faz-se a **transferência do tibial anterior** para o cuneiforme lateral.\n\n**No pé torto bilateral.** Os **dois** pés são posicionados em **60 a 70°** de rotação externa (o valor clássico citado é **70°**). A regra dos 30 a 40° vale apenas para o pé **normal** nos casos unilaterais.",
+  "correta": "**Correta: C (70 graus).** No pé torto bilateral tratado pelo método de Ponseti, a órtese de abdução mantém **os dois pés** em cerca de **70° de rotação externa** (faixa de 60 a 70°), com 10 a 15° de dorsiflexão e as botas separadas pela largura dos ombros.",
   "incorretas": {
-   "A": "50° fica abaixo do recomendado para o pé torto e não segura bem a correção.",
-   "B": "60° é o limite inferior da faixa; o gabarito adota 70° para o bilateral.",
-   "D": "80° excede a faixa recomendada de rotação externa."
+   "A": "**50°** é uma rotação externa **insuficiente** para manter a correção do pé torto. O aduto e o varo tendem a recidivar.",
+   "B": "**60°** está no limite inferior da faixa, mas o valor clássico de referência para o pé torto é **70°**.",
+   "D": "**80°** excede a rotação recomendada. O excesso pode forçar o joelho e o pé, com risco de valgo e desconforto."
   },
-  "conceito": "Depois dos gessos e da tenotomia do método de **Ponseti**, o pé corrigido precisa ser mantido na posição. Essa é a função da **órtese de abdução** (botas presas a uma barra, a antiga Denis Browne). Sem ela, a recidiva é a regra: a **falta de adesão à órtese** é a principal causa de recidiva do pé torto.\n\n**Como montar a órtese**:\n\n**pé torto**: em **rotação externa de 60 a 70°**; no pé torto **bilateral**, os dois pés ficam em cerca de **70°**;\n\n**pé normal** (no caso unilateral): em **30 a 40°** de rotação externa;\n\n**barra**: na largura dos **ombros** da criança;\n\n**dorsiflexão**: cerca de 10 a 15°, dada por uma leve curvatura da barra.\n\n**Por quanto tempo**: **23 horas por dia por 3 meses** e, depois, **à noite e nas sonecas até 4 a 5 anos**.\n\n**Por que a rotação externa**: mantém o pé abduzido em relação ao tálus, impedindo que o aduto e o varo voltem; a barra impede que a criança \"escape\" girando a perna.\n\n**Na prova**: no pé torto bilateral, a órtese fica com os pés em **70°** de rotação lateral.",
-  "correta": "No pé torto bilateral, os dois pés ficam na órtese em cerca de 70° de rotação externa, o limite superior da faixa recomendada.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Ponseti IV. Congenital Clubfoot: Fundamentals of Treatment. Oxford University Press; 1996."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0246": {
@@ -3784,18 +3803,19 @@
   "conferido": false
  },
  "pediatria-0335": {
+  "conceito": "**As mucopolissacaridoses (MPS).** São doenças de **depósito lisossômico**. Falta uma das **enzimas** que degradam os **glicosaminoglicanos** (antigamente chamados de mucopolissacarídeos). Esses compostos se acumulam nas células, no osso, na cartilagem, no coração, no fígado, na córnea e no cérebro, e o excesso aparece na **urina**. O tipo de glicosaminoglicano eliminado ajuda a identificar a síndrome.\n\n**As principais MPS e o glicosaminoglicano urinário.**\n\n| MPS | Síndrome | Glicosaminoglicano na urina |\n|---|---|---|\n| I (forma grave) | **Hurler** | Dermatan e heparan sulfato |\n| I (forma leve) | **Scheie** | Dermatan e heparan sulfato |\n| II | **Hunter** (ligada ao X) | Dermatan e heparan sulfato |\n| III | Sanfilippo | Heparan sulfato |\n| **IV** | **Morquio** | **Queratan sulfato** |\n| VI | Maroteaux-Lamy | Dermatan sulfato |\n\n**A síndrome de Morquio (MPS IV).** É a MPS de **maior interesse ortopédico**. Na forma A, falta a enzima galactosamina-6-sulfatase, e acumulam-se o **queratan sulfato** e o condroitin-6-sulfato, compostos abundantes na **cartilagem**. Por isso, as alterações são predominantemente **esqueléticas**.\n\n**As características da síndrome de Morquio.**\n- **Inteligência normal**, diferente da Hurler e da Hunter graves.\n- **Nanismo** de tronco curto, com tórax em quilha (pectus carinatum).\n- **Hipoplasia do processo odontoide** e frouxidão ligamentar, com **instabilidade atlantoaxial** e risco de **mielopatia** cervical. É a maior causa de morbidade e exige **artrodese occipitocervical** ou C1-C2 em muitos casos.\n- **Platispondilia** (vértebras achatadas), com bico anterior central.\n- **Geno valgo** acentuado, displasia do quadril e frouxidão articular.\n- Córnea turva.\n\n**A Hurler (MPS I grave), para contraste.** Deficiência intelectual progressiva, face grosseira, hepatoesplenomegalia, cifose toracolombar com vértebra em bico **inferior** (giba) e contraturas articulares. Diferentemente da Morquio, as articulações ficam **rígidas**. O transplante de células-tronco hematopoéticas altera a evolução se feito cedo.\n\n**O tratamento.** Há **terapia de reposição enzimática** para várias MPS, incluindo a Morquio A (elosulfase alfa). A anestesia é de **alto risco**, pela via aérea difícil e pela instabilidade cervical.",
+  "correta": "**Correta: D (Morquio).** Na síndrome de Morquio (MPS IV), a deficiência enzimática leva ao acúmulo e à eliminação urinária de **queratan sulfato**. As outras síndromes listadas (Hurler, Scheie e Hunter) eliminam **dermatan e heparan sulfato**.",
   "incorretas": {
-   "A": "Scheie, forma atenuada da MPS I, elimina dermatan e heparan sulfato.",
-   "B": "Hurler elimina dermatan e heparan sulfato.",
-   "C": "Hunter, ligada ao X, também elimina dermatan e heparan sulfato."
+   "A": "A síndrome de **Scheie** é a forma leve da MPS I. Elimina **dermatan e heparan sulfato** na urina.",
+   "B": "A síndrome de **Hurler** é a forma grave da MPS I. Elimina **dermatan e heparan sulfato**, e não queratan sulfato.",
+   "C": "A síndrome de **Hunter** (MPS II, ligada ao X) também elimina **dermatan e heparan sulfato** na urina."
   },
-  "conceito": "As **mucopolissacaridoses** são doenças em que falta uma enzima do lisossomo e os **glicosaminoglicanos** se acumulam nos tecidos e saem na urina. O tipo de substância na urina ajuda a separar as síndromes:\n\n**Hurler e Scheie** (tipo I): **dermatan e heparan sulfato**;\n\n**Hunter** (tipo II, ligada ao X): **dermatan e heparan sulfato**;\n\n**Sanfilippo** (tipo III): **heparan sulfato**;\n\n**Morquio** (tipo IV): **queratan sulfato**;\n\n**Maroteaux-Lamy** (tipo VI): dermatan sulfato.\n\n**Por que o queratan importa**: o queratan sulfato é abundante na **cartilagem** e no disco intervertebral. Por isso o Morquio é a mucopolissacaridose com mais impacto no **esqueleto** e menos no cérebro: **inteligência normal**, nanismo de tronco curto, genu valgo, **hiperfrouxidão** e **odontoide hipoplásico com instabilidade C1-C2**.\n\n**O cuidado ortopédico no Morquio**: avaliar a coluna cervical antes de qualquer anestesia; se instável, artrodese occipitocervical. Hoje há reposição enzimática.\n\n**Na prova**: queratan sulfato na urina = **Morquio**.",
-  "correta": "O Morquio elimina queratan sulfato na urina, ligado à cartilagem, o que explica o quadro esquelético com inteligência normal.",
   "referencias": [
    "Morquio A Syndrome: Diagnosis and Current and Future Therapies. PMCID: PMC4259875.",
-   "Mucopolysaccharidosis Type I. GeneReviews. NCBI Bookshelf."
+   "Mucopolysaccharidosis Type I. GeneReviews. NCBI Bookshelf.",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0337": {
@@ -4113,14 +4133,18 @@
   "formato": "corrido"
  },
  "pediatria-0360": {
-  "conceito": "### Padrões sagitais de marcha na diplegia (Rodda e Graham)\n| Padrão | Tornozelo | Joelho | Quadril |\n|---|---|---|---|\n| I equino verdadeiro | equino | estendido ou recurvado | estendido |\n| II marcha em salto (jump) | equino | fletido | fletido |\n| III equino aparente | neutro | fletido | fletido |\n| ==IV agachada (crouch)== | ==dorsiflexão excessiva== | ==fletido== | ==fletido== |\n\n### Marcha agachada\n- Causas: ==alongamento excessivo do tendão calcâneo== (sóleo fraco), isquiotibiais e psoas curtos, patela alta, deformidades de alavanca.\n- Consequências: dor anterior no joelho, fratura por estresse da patela, alto gasto energético.\n- Tratamento: órtese de reação ao solo, cirurgia multinível (extensão femoral distal, avanço patelar).\n\n### Lendo o gráfico de cinemática\n- ==Crouch==: joelho ==fletido em todo o apoio== (não chega a 0°), tornozelo em dorsiflexão, quadril fletido; ==bilateral== = diplegia.\n- Stiff knee: pico de flexão no balanço ==reduzido e tardio== (reto femoral ativo).\n- Hemiplegia: curvas assimétricas, lado sadio normal.\n\n> **Na prova:** joelho fletido no apoio bilateralmente = ==crouch no diplégico==",
-  "correta": "**Crouch em diplégico.**\n- Flexão do joelho mantida no apoio.\n- Padrão bilateral.",
+  "conceito": "**O gráfico da análise de marcha.** A **cinemática** mostra o ângulo de uma articulação ao longo do **ciclo da marcha** (0 a 100%). A linha vertical separa a **fase de apoio** (cerca de 60%) da **fase de balanço** (cerca de 40%). A faixa tracejada mostra a **curva normal**.\n\n**A curva normal do joelho no plano sagital.**\n1. **Contato inicial**: joelho quase estendido (cerca de 5°).\n2. **Resposta à carga**: flexão de cerca de **15 a 20°**, para absorver o impacto.\n3. **Apoio médio e terminal**: o joelho volta para quase a **extensão completa**.\n4. **Pré-balanço e balanço inicial**: flexão rápida até cerca de **60°**, o pico no início do balanço, para o pé passar sem tocar o chão.\n5. **Balanço terminal**: extensão de novo, preparando o próximo contato.\n\n**A curva da imagem.** A curva do paciente (linha contínua) mostra o joelho **fletido durante todo o apoio**, sem nunca se aproximar da extensão, em cerca de 40 a 50°. É a **marcha agachada (crouch)**.\n\n**Os dois padrões patológicos do joelho na paralisia cerebral.**\n\n| Padrão | No apoio | No balanço |\n|---|---|---|\n| **Crouch** (agachada) | **Flexão excessiva** e persistente | Pode ter pico reduzido |\n| **Stiff knee** (joelho rígido) | Normal ou pouco alterado | **Pico de flexão reduzido e atrasado** |\n\nNo stiff knee, a curva teria apoio próximo do normal e um pico de flexão no balanço **baixo e tardio**, pela atividade excessiva do **reto femoral**. O tratamento clássico é a **transferência do reto femoral**.\n\n**Por que a marcha agachada é típica da diplegia.** A **diplegia espástica** é a forma de PC que mais leva à marcha agachada. Os mecanismos são:\n- **contratura dos isquiotibiais** e flexão do quadril;\n- **fraqueza do sóleo** e do quadríceps;\n- deformidades em **alavanca** (lever arm dysfunction): torção femoral, torção tibial externa e pé plano valgo, que reduzem o braço de alavanca do tríceps sural;\n- frequentemente, um **alongamento isolado do tendão calcâneo**, feito no passado, que enfraquece o sóleo e piora o crouch.\n\nNa **hemiplegia**, os padrões mais comuns envolvem o **equino** (classificação de Winters, Gage e Hicks). O crouch bilateral é mais típico do diplégico.\n\n**O tratamento do crouch.** **Cirurgia de múltiplos níveis** em um tempo, guiada pela análise de marcha:\n- alongamento dos isquiotibiais;\n- correção das torções ósseas e do pé;\n- nos casos graves, **osteotomia de extensão do fêmur distal** com avanço do tendão patelar.",
+  "correta": "**Correta: A (crouch em paciente diplégico).** O gráfico mostra o joelho **fletido durante toda a fase de apoio**, sem se aproximar da extensão, o que caracteriza a **marcha agachada (crouch)**. Esse padrão é típico da diplegia espástica.",
   "incorretas": {
-   "B": "**Stiff knee.**\n- Afeta o balanço, não o apoio.",
-   "C": "**Hemiplégico.**\n- Seria unilateral.",
-   "D": "**Dupla errada.**\n- Nem stiff knee nem hemiplegia."
+   "B": "No **stiff knee**, o apoio é próximo do normal e o problema é o **pico de flexão reduzido e atrasado** no balanço. O gráfico mostra flexão excessiva no apoio.",
+   "C": "O padrão é de **crouch**, mas ele é **típico do diplégico**. Na hemiplegia, predominam os padrões do equino (Winters, Gage e Hicks).",
+   "D": "O gráfico não mostra o padrão de **stiff knee**, e a hemiplegia não é o contexto típico da marcha agachada."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Gage JR, Schwartz MH, Koop SE, Novacheck TF. The Identification and Treatment of Gait Problems in Cerebral Palsy. 2ª edição. Mac Keith Press; 2009."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0361": {
@@ -4440,14 +4464,18 @@
   "conferido": false
  },
  "pediatria-0384": {
-  "conceito": "### Osteogênese imperfeita (Sillence modificada)\n| Tipo | Gravidade | Detalhe |\n|---|---|---|\n| I | leve | ==escleras azuis==, surdez, colágeno em quantidade reduzida |\n| II | letal perinatal | fraturas múltiplas intrauterinas |\n| III | grave progressiva | deformidade, baixa estatura, dentinogênese |\n| IV | moderada | escleras normais |\n| ==V== | moderada | ==calo hiperplásico== (simula ==osteossarcoma==), ==calcificação da membrana interóssea== do antebraço, luxação da cabeça do rádio; IFITM5 |\n| VI em diante | variadas | genes não colágenos |\n\n### Tratamento\n- ==Bisfosfonato== (pamidronato, zoledronato).\n- Hastes telescópicas (Fassier-Duval, Sheffield) nas deformidades e fraturas repetidas.\n\n### Genes além do colágeno\n| Gene | Tipo | Marca |\n|---|---|---|\n| ==IFITM5== | ==V== | ==calo hiperplásico==, calcificação da membrana interóssea, luxação da cabeça do rádio |\n| SERPINF1 | VI | defeito de mineralização |\n| CRTAP / ==LEPRE1== | VII / VIII | recessivos, graves |\n| WNT1 | XV | osteoporose grave, SNC |\n| COL1A1/COL1A2 | I a IV | 85 a 90% dos casos |\n\n> **Na prova:** calo hiperplásico na OI = ==IFITM5 (tipo V)==",
-  "correta": "**IFITM5.**\n- OI tipo V, dominante.\n- Calo exuberante que simula osteossarcoma.",
+  "conceito": "**O colágeno tipo I.** É a principal proteína do osso, da pele, dos tendões, da esclera e da dentina. Cada molécula é uma **tripla hélice** formada por três cadeias: duas **alfa-1** (gene **COL1A1**) e uma **alfa-2** (gene **COL1A2**).\n\n**Por que a glicina é tão importante.** Na hélice, a sequência de aminoácidos se repete no padrão **Gly-X-Y**: a cada três posições, há uma **glicina**. Muitas vezes, X é **prolina** e Y é **hidroxiprolina**. A glicina é o **menor aminoácido**, e só ela cabe no **centro apertado** da tripla hélice, onde as três cadeias se encontram.\n\n**Os dois tipos de defeito.**\n\n| Defeito | Mecanismo | Gravidade |\n|---|---|---|\n| **Quantitativo** | Um alelo não produz cadeia (alelo nulo): metade do colágeno, mas **normal** | **Leve** (tipo I de Sillence) |\n| **Qualitativo** | **Substituição de uma glicina** por um aminoácido maior: colágeno **anormal** | Moderado a **letal** (tipos II, III e IV) |\n\n**O efeito dominante negativo.** Quando a glicina é substituída, a cadeia defeituosa **entra na hélice** e estraga a molécula inteira. É pior ter colágeno anormal que pouco colágeno.\n\n**A posição da mutação importa.** A hélice se dobra da extremidade **C-terminal** para a N-terminal. Substituições mais próximas da extremidade **C-terminal** tendem a ser **mais graves**, porque perturbam a montagem desde o início.\n\n**Formas recessivas e outras.** Existem formas de OI por defeitos em proteínas que **processam** o colágeno, como **CRTAP**, **P3H1** (LEPRE1) e **PPIB**, ou por outros mecanismos ósseos (**IFITM5** no tipo V e **SERPINF1** no tipo VI).\n\n**Os achados radiográficos.**\n- **Osteopenia** difusa.\n- **Corticais finas** e ossos longos **gráceis** (finos), com **trabéculas finas** e esparsas.\n- **Fraturas múltiplas** em diferentes fases de consolidação, e **encurvamentos**.\n- **Vértebras bicôncavas** (em \"boca de peixe\") e achatadas, por microfraturas.\n- **Ossos wormianos** no crânio.\n- **Calcificações em pipoca** nas metáfises nas formas graves.\n- **Protrusão acetabular** e invaginação basilar.\n- No **tipo V**: **calo hiperplásico** e calcificação da membrana interóssea do antebraço.\n\nA **ossificação** em si acontece no tempo normal. O problema é a **qualidade** da matriz, e não o momento em que ela se forma.\n\n**O tratamento.**\n- **Bisfosfonatos** (pamidronato, zoledronato) aumentam a densidade e reduzem as fraturas.\n- **Hastes telescópicas** (Fassier-Duval) corrigem e previnem as deformidades dos ossos longos.\n- Reabilitação para manter a força e a mobilidade.\n\n**A osteogênese imperfeita tipo V e o gene IFITM5.** O tipo V não é causado por defeito do colágeno tipo I. Ele resulta de uma mutação **dominante** no gene **IFITM5** (que codifica a proteína BRIL, da mineralização). Suas marcas registradas são:\n- **Calo hiperplásico**: depois de uma fratura ou osteotomia, forma-se um calo **enorme e exuberante**, que pode ser confundido com um **osteossarcoma**. É o que a imagem mostra na tíbia.\n- **Calcificação da membrana interóssea** do antebraço, com limitação da prono-supinação.\n- **Luxação da cabeça do rádio**.\n- Banda **densa** na metáfise, abaixo da fise.\n- Esclera normal e dentes normais.",
+  "correta": "**Correta: B (IFITM5).** O excesso de calo ósseo (calo hiperplásico) após fratura ou osteotomia é a marca da **osteogênese imperfeita tipo V**, causada por mutação dominante no gene **IFITM5**. O tipo V também tem calcificação da membrana interóssea e luxação da cabeça do rádio.",
   "incorretas": {
-   "A": "**WNT1.**\n- Osteoporose grave, sem calo hiperplásico.",
-   "C": "**LEPRE1.**\n- Tipo VIII, recessivo.",
-   "D": "**COL1A1.**\n- Tipos clássicos, sem calo hiperplásico."
+   "A": "O gene **WNT1** causa uma forma **recessiva** de OI, grave, às vezes com malformação cerebral. Não se associa ao calo hiperplásico.",
+   "C": "O gene **LEPRE1** (P3H1) causa a forma recessiva grave (tipo VIII), por defeito na modificação do colágeno. Não produz calo hiperplásico.",
+   "D": "O **COL1A1** é o gene das formas **clássicas** de OI (tipos I a IV). O calo hiperplásico não faz parte do seu quadro típico."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Cho TJ, et al. A single recurrent mutation in the 5'-UTR of IFITM5 causes osteogenesis imperfecta type V. Am J Hum Genet. 2012;91(2):343-348."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0385": {
@@ -4563,14 +4591,18 @@
   "conferido": false
  },
  "pediatria-0393": {
+  "conceito": "**A deficiência femoral congênita.** É o nome atual do espectro que vai do **fêmur curto congênito**, com quadril e joelho quase normais, até a **deficiência femoral focal proximal** (DFFP) grave. Paley criou uma classificação voltada à **reconstrução**, que pergunta se a articulação do quadril e o fêmur proximal são **utilizáveis**.\n\n**A classificação de Paley.**\n\n| Tipo | Descrição | Subtipos |\n|---|---|---|\n| **1** | Fêmur **intacto**, quadril e joelho móveis | 1a: ossificação normal; 1b: ossificação **atrasada** (subtrocantérica ou do colo) |\n| **2** | **Pseudoartrose móvel** do fêmur proximal, com joelho móvel | 2a: cabeça **móvel** no acetábulo; 2b: cabeça **ausente** ou fundida ao acetábulo |\n| **3** | Deficiência **diafisária**, com ou sem joelho móvel | 3a: joelho com 45° ou mais; 3b: menos de 45°; 3c: ausência completa |\n| **4** | Deficiência **distal** do fêmur | |\n\n**Lendo o tipo 2.** Existe um **espaço móvel** entre a cabeça e a diáfise, uma **pseudoartrose** no fêmur proximal. No **2a**, a cabeça está presente e se move no acetábulo, e pode ser **conectada** à diáfise cirurgicamente (cirurgia SUPERhip de Paley). No **2b**, não há cabeça móvel utilizável.\n\n**A comparação com Aitken.** O tipo **B** de Aitken (cabeça presente, sem conexão óssea com a diáfise) corresponde, em linhas gerais, ao tipo **2** de Paley. O tipo **A** de Aitken, em que o defeito ossifica, aproxima-se do tipo **1b**.\n\n**Por que a classificação de Paley ajuda.** Ela orienta a sequência de cirurgias:\n- **Tipo 1**: preparar o quadril e o joelho (correção da coxa vara, da displasia acetabular e da instabilidade do joelho) e depois **alongar** o fêmur, às vezes várias vezes.\n- **Tipo 2a**: primeiro **reconstruir** a conexão entre a cabeça e a diáfise; depois alongar.\n- Nos tipos mais graves, com discrepâncias enormes: **rotacionplastia de Van Nes** ou **prótese** com amputação ou artrodese do joelho.\n\n**O cálculo da discrepância.** Na deficiência femoral, o **percentual** de encurtamento se mantém **constante** com o crescimento. Isso permite prever a discrepância final pelo método multiplicador de Paley.",
+  "correta": "**Correta: B (II).** Na classificação de Paley para a deficiência femoral congênita, o tipo 2 é o fêmur com **pseudoartrose móvel** do fêmur proximal e joelho móvel. No subtipo 2a, a cabeça é móvel no acetábulo; no 2b, está ausente ou fundida.",
   "incorretas": {
-   "A": "No tipo 1 o fêmur está íntegro, sem pseudartrose.",
-   "C": "O tipo 3 é a deficiência diafisária.",
-   "D": "O tipo 4 é a deficiência distal do fêmur."
+   "A": "O tipo **1** tem o fêmur **intacto**, sem pseudoartrose, com quadril e joelho móveis. No 1b, há apenas ossificação atrasada do fêmur proximal.",
+   "C": "O tipo **3** é a deficiência **diafisária** do fêmur, subdividida pela mobilidade do joelho.",
+   "D": "O tipo **4** é a deficiência **distal** do fêmur, e não proximal."
   },
-  "conceito": "A **deficiência femoral congênita** vai do fêmur apenas curto à ausência quase total do osso. A **classificação de Paley** foi feita para orientar a **reconstrução**, e não só descrever a radiografia:\n\n**tipo 1**: fêmur **íntegro**, com quadril e joelho móveis; a ossificação pode ser normal (1a) ou tardia no colo (1b);\n\n**tipo 2**: **pseudartrose móvel do fêmur proximal**; no 2a, a cabeça femoral está presente e se move no acetábulo; no 2b, a cabeça está ausente ou rígida;\n\n**tipo 3**: deficiência **diafisária**; subdividida pela mobilidade do joelho (3a com joelho móvel acima de 45°, 3b abaixo de 45°, 3c com ausência total do fêmur);\n\n**tipo 4**: deficiência **distal** do fêmur.\n\n**Por que é útil**: os tipos 1 e 2 podem ser reconstruídos (cirurgias SUPERhip e SUPERknee, que estabilizam o quadril e o joelho) antes dos alongamentos. Nos tipos mais graves, as opções incluem rotacionplastia e prótese.\n\n**A classificação de Aitken** é mais antiga e se baseia só na radiografia do quadril.\n\n**Na prova**: fêmur curto congênito com **pseudartrose móvel do fêmur proximal** = Paley **tipo 2**.",
-  "correta": "O tipo 2 de Paley é a pseudartrose móvel do fêmur proximal, subdividida pela presença e mobilidade da cabeça femoral.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Paley D, Standard SC. Lengthening reconstruction surgery for congenital femoral deficiency. In: Rozbruch SR, Ilizarov S, eds. Limb Lengthening and Reconstruction Surgery. Informa Healthcare; 2007."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0394": {
@@ -4825,14 +4857,18 @@
   "conferido": false
  },
  "pediatria-0425": {
+  "conceito": "**A ultrassonografia de Graf.** É o exame de escolha para a DDQ **antes do aparecimento do núcleo** de ossificação da cabeça femoral, até cerca de 4 a 6 meses. Faz-se um corte **coronal** padronizado do quadril, com o bebê de lado. O corte deve mostrar o ilíaco reto, a borda inferior do ilíaco e o lábio.\n\n**As três linhas e os dois ângulos.**\n1. **Linha de base**: ao longo da superfície lateral do **ilíaco**.\n2. **Linha do teto ósseo**: da borda inferior do ilíaco ao promontório ósseo do acetábulo.\n3. **Linha do teto cartilaginoso**: do promontório ósseo ao centro do **lábio** acetabular.\n\n| Ângulo | Entre (o que avalia) | Normal |\n|---|---|---|\n| **Alfa** | Linha de base e **teto ósseo** (profundidade do acetábulo ósseo) | **60° ou mais** |\n| **Beta** | Linha de base e **teto cartilaginoso** (cobertura cartilaginosa e posição do lábio) | **Menor que 55°** |\n\n**Como interpretar.** O **alfa** é o principal: quanto **maior**, mais profundo e bem formado o acetábulo ósseo. O **beta** é complementar: quanto **maior**, mais o teto cartilaginoso está **empurrado para cima** pela cabeça que sobe e mais \"deslocado\" o quadril.\n\n**Os tipos de Graf.**\n\n| Tipo | Alfa | Situação |\n|---|---|---|\n| I (Ia, Ib) | 60° ou mais | **Normal** (Ia beta menor que 55°; Ib beta maior) |\n| IIa | 50 a 59°, menos de 3 meses | **Imaturo fisiológico**: reavaliar |\n| IIb | 50 a 59°, mais de 3 meses | **Atraso** de ossificação: tratar |\n| IIc | 43 a 49°, beta até 77° | Crítico, ainda centrado |\n| D | 43 a 49°, beta acima de 77° | **Descentrado** (subluxação) |\n| III e IV | Menor que 43° | **Luxados** (III: lábio evertido; IV: lábio invertido) |\n\n**O tratamento.** O tipo IIa é observado com novo exame em algumas semanas. Os tipos IIb, IIc, D, III e IV recebem tratamento, geralmente com o suspensório de Pavlik no lactente pequeno.",
+  "correta": "**Correta: A (porção cartilaginosa do acetábulo).** Na ultrassonografia de Graf, o ângulo **beta** é medido entre a linha de base do ilíaco e a linha do **teto cartilaginoso**, que vai do promontório ósseo ao lábio. Ele avalia a porção **cartilaginosa** do acetábulo e é normal abaixo de 55°.",
   "incorretas": {
-   "B": "A inclinação do teto ósseo é medida pelo ângulo alfa.",
-   "C": "A cartilagem trirradiada não entra na medida do ultrassom de Graf.",
-   "D": "A esfericidade da cabeça femoral não é medida pelos ângulos de Graf."
+   "B": "A **inclinação do teto ósseo** é avaliada pelo ângulo **alfa**, medido entre a linha de base e o teto ósseo. O alfa é normal a partir de 60°.",
+   "C": "A **cartilagem trirradiada** não é o alvo do ângulo beta. No método de Graf, a borda inferior do ilíaco (perto da trirradiada) é apenas um **ponto de referência** para o corte.",
+   "D": "A **esfericidade da cabeça femoral** não é medida pelos ângulos de Graf. Eles avaliam o **acetábulo**."
   },
-  "conceito": "O **ultrassom de Graf** avalia o quadril do bebê num corte coronal padronizado. Traçam-se três linhas:\n\n**linha de base**: ao longo da parede lateral do **ilíaco**;\n\n**linha do teto ósseo**: da borda inferior do ilíaco até a borda do teto **ósseo** do acetábulo;\n\n**linha do teto cartilaginoso**: da borda do teto ósseo até o **lábio** (labrum), passando pela **porção cartilaginosa** do acetábulo.\n\n**Os dois ângulos**:\n\n**alfa**: entre a linha de base e o **teto ósseo**; mede a **cobertura óssea**; normal a partir de **60°**;\n\n**beta**: entre a linha de base e o **teto cartilaginoso**; mede a **cobertura cartilaginosa**; normal abaixo de **55°**. Quando a cabeça empurra o lábio para cima e para fora, o beta **aumenta**.\n\n**Os tipos de Graf**: I (normal, alfa a partir de 60°); IIa (imaturo fisiológico, abaixo de 3 meses); IIb e IIc (tratar); D (descentrando, beta acima de 77°); III e IV (luxados).\n\n**O que o Graf não mede**: a cartilagem trirradiada e a esfericidade da cabeça.\n\n**Na prova**: o ângulo beta de Graf avalia a **porção cartilaginosa** do acetábulo.",
-  "correta": "O ângulo beta é traçado até o lábio e mede a cobertura cartilaginosa do acetábulo.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Graf R. Hip Sonography: Diagnosis and Management of Infant Hip Dysplasia. Springer."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0426": {
@@ -4858,14 +4894,18 @@
   "conferido": false
  },
  "pediatria-0428": {
+  "conceito": "**As mucopolissacaridoses (MPS).** São doenças de **depósito lisossômico**. Falta uma das **enzimas** que degradam os **glicosaminoglicanos** (antigamente chamados de mucopolissacarídeos). Esses compostos se acumulam nas células, no osso, na cartilagem, no coração, no fígado, na córnea e no cérebro, e o excesso aparece na **urina**. O tipo de glicosaminoglicano eliminado ajuda a identificar a síndrome.\n\n**As principais MPS e o glicosaminoglicano urinário.**\n\n| MPS | Síndrome | Glicosaminoglicano na urina |\n|---|---|---|\n| I (forma grave) | **Hurler** | Dermatan e heparan sulfato |\n| I (forma leve) | **Scheie** | Dermatan e heparan sulfato |\n| II | **Hunter** (ligada ao X) | Dermatan e heparan sulfato |\n| III | Sanfilippo | Heparan sulfato |\n| **IV** | **Morquio** | **Queratan sulfato** |\n| VI | Maroteaux-Lamy | Dermatan sulfato |\n\n**A síndrome de Morquio (MPS IV).** É a MPS de **maior interesse ortopédico**. Na forma A, falta a enzima galactosamina-6-sulfatase, e acumulam-se o **queratan sulfato** e o condroitin-6-sulfato, compostos abundantes na **cartilagem**. Por isso, as alterações são predominantemente **esqueléticas**.\n\n**As características da síndrome de Morquio.**\n- **Inteligência normal**, diferente da Hurler e da Hunter graves.\n- **Nanismo** de tronco curto, com tórax em quilha (pectus carinatum).\n- **Hipoplasia do processo odontoide** e frouxidão ligamentar, com **instabilidade atlantoaxial** e risco de **mielopatia** cervical. É a maior causa de morbidade e exige **artrodese occipitocervical** ou C1-C2 em muitos casos.\n- **Platispondilia** (vértebras achatadas), com bico anterior central.\n- **Geno valgo** acentuado, displasia do quadril e frouxidão articular.\n- Córnea turva.\n\n**A Hurler (MPS I grave), para contraste.** Deficiência intelectual progressiva, face grosseira, hepatoesplenomegalia, cifose toracolombar com vértebra em bico **inferior** (giba) e contraturas articulares. Diferentemente da Morquio, as articulações ficam **rígidas**. O transplante de células-tronco hematopoéticas altera a evolução se feito cedo.\n\n**O tratamento.** Há **terapia de reposição enzimática** para várias MPS, incluindo a Morquio A (elosulfase alfa). A anestesia é de **alto risco**, pela via aérea difícil e pela instabilidade cervical.\n\n**A inteligência nas MPS.** O comprometimento cognitivo depende do acúmulo de **heparan sulfato** no sistema nervoso central.\n- **Com deficiência intelectual**: **Hurler** (MPS I grave), **Hunter** (MPS II, forma grave) e **Sanfilippo** (MPS III). Na Sanfilippo, o quadro neurológico **domina**, com regressão e distúrbio de comportamento, enquanto as alterações esqueléticas são leves.\n- **Com inteligência normal**: **Scheie** (MPS I leve), **Morquio** (MPS IV) e **Maroteaux-Lamy** (MPS VI).",
+  "correta": "**Correta: A (Hurler, Hunter e Sanfilippo).** A deficiência intelectual ocorre nas síndromes de **Hurler**, **Hunter** (forma grave) e **Sanfilippo**, que acumulam heparan sulfato no sistema nervoso central. Scheie, Morquio e Maroteaux-Lamy cursam com inteligência normal.",
   "incorretas": {
-   "B": "Hurler e Hunter estão certos, mas Scheie, forma atenuada da MPS I, tem inteligência normal.",
-   "C": "Hurler e Sanfilippo estão certos, mas Scheie tem inteligência normal.",
-   "D": "Hunter e Sanfilippo estão certos, mas Scheie tem inteligência normal."
+   "B": "A síndrome de **Scheie** (MPS I leve) tem **inteligência normal**. A lista correta troca Scheie por Sanfilippo.",
+   "C": "A síndrome de **Scheie** tem inteligência normal, e a **Hunter** grave cursa com deficiência intelectual.",
+   "D": "A síndrome de **Scheie** tem inteligência normal, e a **Hurler** é justamente a forma clássica com deficiência intelectual."
   },
-  "conceito": "Nas **mucopolissacaridoses**, o **retardo mental** aparece quando o glicosaminoglicano que se acumula atinge o **sistema nervoso central**. O principal responsável é o **heparan sulfato**.\n\n**Com retardo mental**:\n\n**Hurler** (MPS I grave): acumula dermatan e heparan sulfato; retardo, face grosseira, opacidade de córnea, giba e rigidez;\n\n**Hunter** (MPS II, ligada ao X): também dermatan e heparan; a forma grave tem retardo;\n\n**Sanfilippo** (MPS III): acumula só **heparan sulfato**; é a mais **neurológica**, com deterioração cognitiva e de comportamento marcantes e pouco acometimento esquelético.\n\n**Com inteligência normal**:\n\n**Scheie** (MPS I atenuada): mesma enzima de Hurler, mas com atividade residual; inteligência normal e rigidez articular;\n\n**Morquio** (MPS IV): queratan sulfato; inteligência normal, hiperfrouxidão e instabilidade C1-C2;\n\n**Maroteaux-Lamy** (MPS VI): dermatan sulfato; inteligência normal.\n\n**Na prova**: retardo mental nas mucopolissacaridoses = **Hurler, Hunter e Sanfilippo**.",
-  "correta": "Hurler, Hunter e Sanfilippo acumulam heparan sulfato no sistema nervoso central e cursam com retardo mental.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0429": {
@@ -4902,14 +4942,18 @@
   "conferido": false
  },
  "pediatria-0432": {
+  "conceito": "**A doença de Blount (tíbia vara).** É um distúrbio de crescimento da **porção posteromedial da fise proximal da tíbia**. O varo é progressivo e associado a torção tibial interna. O mecanismo aceito é **mecânico**, pela lei de Hueter-Volkmann: a **compressão excessiva** no lado medial da fise, num joelho em varo que suporta muito peso, **inibe o crescimento** daquele lado, e o varo se agrava num ciclo vicioso.\n\n**As duas formas.**\n\n| Forma | Início | Perfil |\n|---|---|---|\n| **Infantil** | Antes dos **4 anos** (geralmente aos 2 a 3) | Frequentemente **bilateral**; criança **obesa** que andou cedo |\n| Tardia (juvenil ou do adolescente) | Após os 4 anos | Unilateral com frequência; adolescente obeso; varo menos acentuado |\n\n**Fatores de risco e de pior prognóstico na forma infantil.**\n- **Obesidade**: o principal fator, pela carga sobre a fise medial.\n- **Marcha precoce**, antes de cerca de 1 ano.\n- Ascendência **negra** e **sexo feminino**: nas séries clássicas, as meninas negras evoluem para os estágios mais graves de Langenskiöld com mais frequência.\n- Doença **bilateral**.\n\n**A classificação de Langenskiöld.** Tem **seis estágios** radiográficos de piora do bico medial da metáfise e da epífise. O estágio VI corresponde a uma **barra óssea** fisária medial. Até o estágio III ou IV, a doença pode regredir com tratamento. Nos estágios V e VI, a lesão da fise é definitiva.\n\n**O ângulo metáfise-diáfise de Levine e Drennan (MDA).** É o ângulo entre uma linha que passa pelos **bicos da metáfise proximal da tíbia** e a perpendicular ao **eixo longo da diáfise**. Ele ajuda a separar o varo fisiológico do Blount:\n\n| MDA | Interpretação (Feldman e Schoenecker) |\n|---|---|\n| **10° ou menos** | Baixo risco: provável varo **fisiológico** |\n| Entre 10 e 16° | Zona **cinzenta**: acompanhar |\n| **16° ou mais** | Alto risco de **Blount** |\n\n**As limitações do MDA.**\n- O ângulo **muda com a rotação** do membro na radiografia: a rotação interna aumenta o valor medido.\n- Há **variação** entre observadores e com o posicionamento.\n- O valor de corte original (**11°**) teve muitos falsos-positivos em estudos posteriores.\n\nPor isso, o MDA é **pouco confiável quando usado isoladamente**. Deve ser interpretado com a **idade**, a evolução clínica, a **simetria** e as **radiografias seriadas**.\n\n**O tratamento.**\n- Até cerca de **3 anos**, nos estágios iniciais: **órtese** KAFO, com resultados variáveis.\n- Depois disso, ou se houver falha: **osteotomia valgizante e derrotatória** da tíbia proximal, de preferência **antes dos 4 anos**, com hipercorreção leve.\n- Nos casos avançados: ressecção de barra, elevação do platô medial ou hemiepifisiodese lateral com placa em 8, conforme a idade.\n\n**A radiografia AP no Blount infantil.** Os achados se concentram na região **medial** da tíbia proximal:\n- **Depressão e bico** na **metáfise** medial: o \"bico\" é **metafisário**, e não epifisário.\n- **Epífise medial** menor, em cunha, com **ossificação atrasada e irregular**: a epífise se ossifica de forma **assimétrica**.\n- Fise **medial** alargada, irregular e inclinada.\n- **Subluxação lateral** da tíbia (o \"lateral thrust\" visto na marcha).\n- Varo localizado no nível da metáfise, com angulação abrupta.",
+  "correta": "**Correta: D (ossificação assimétrica da epífise proximal da tíbia).** Na doença de Blount infantil, a porção **medial** da epífise proximal da tíbia é menor, em cunha e com ossificação atrasada, o que torna a ossificação **assimétrica**. Os outros achados incluem o bico metafisário medial e a fise medial irregular.",
   "incorretas": {
-   "A": "A tíbia subluxa para lateral, não para medial.",
-   "B": "A irregularidade é da parte medial da fise, não da lateral.",
-   "C": "O bico ósseo é metafisário, não epifisário."
+   "A": "A tíbia sofre **subluxação lateral**, e não medial. Esse achado corresponde ao impulso lateral (lateral thrust) visto na marcha.",
+   "B": "A irregularidade da fise ocorre na porção **medial**, onde a compressão inibe o crescimento, e não na lateral.",
+   "C": "O \"bico\" ósseo é **metafisário** medial, e não epifisário. A epífise medial fica achatada e menor."
   },
-  "conceito": "Na **doença de Blount infantil**, a carga excessiva inibe a parte **medial** da fise proximal da tíbia. Na **radiografia AP**, isso aparece como:\n\n**ossificação assimétrica da epífise proximal**: a parte **medial** da epífise fica **menor** e em forma de **cunha**, porque ossifica menos que a lateral;\n\n**bico metafisário medial**: a **metáfise** (não a epífise) forma uma saliência em bico, com depressão em degrau nos estágios mais avançados;\n\n**fise medial** irregular, alargada e inclinada para baixo;\n\n**subluxação lateral** da tíbia em relação ao fêmur, vista na marcha como o joelho escapando para fora.\n\n**A medida**: o **ângulo metafisário-diafisário de Drennan**, acima de 16°, sugere Blount; abaixo de 10°, varo fisiológico.\n\n**A classificação de Langenskiöld** gradua as alterações em seis estágios, do bico metafisário (I) ao fechamento medial da fise (VI).\n\n**Os erros comuns**: o bico é **metafisário**, a irregularidade é da fise **medial** e a subluxação é **lateral**.\n\n**Na prova**: na Blount infantil, o AP mostra **ossificação assimétrica da epífise proximal** da tíbia.",
-  "correta": "A parte medial da epífise ossifica menos e fica em cunha, deixando a ossificação epifisária assimétrica.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0433": {
@@ -4939,14 +4983,18 @@
   "conferido": false
  },
  "pediatria-0435": {
+  "conceito": "**O colágeno tipo I.** É a principal proteína do osso, da pele, dos tendões, da esclera e da dentina. Cada molécula é uma **tripla hélice** formada por três cadeias: duas **alfa-1** (gene **COL1A1**) e uma **alfa-2** (gene **COL1A2**).\n\n**Por que a glicina é tão importante.** Na hélice, a sequência de aminoácidos se repete no padrão **Gly-X-Y**: a cada três posições, há uma **glicina**. Muitas vezes, X é **prolina** e Y é **hidroxiprolina**. A glicina é o **menor aminoácido**, e só ela cabe no **centro apertado** da tripla hélice, onde as três cadeias se encontram.\n\n**Os dois tipos de defeito.**\n\n| Defeito | Mecanismo | Gravidade |\n|---|---|---|\n| **Quantitativo** | Um alelo não produz cadeia (alelo nulo): metade do colágeno, mas **normal** | **Leve** (tipo I de Sillence) |\n| **Qualitativo** | **Substituição de uma glicina** por um aminoácido maior: colágeno **anormal** | Moderado a **letal** (tipos II, III e IV) |\n\n**O efeito dominante negativo.** Quando a glicina é substituída, a cadeia defeituosa **entra na hélice** e estraga a molécula inteira. É pior ter colágeno anormal que pouco colágeno.\n\n**A posição da mutação importa.** A hélice se dobra da extremidade **C-terminal** para a N-terminal. Substituições mais próximas da extremidade **C-terminal** tendem a ser **mais graves**, porque perturbam a montagem desde o início.\n\n**Formas recessivas e outras.** Existem formas de OI por defeitos em proteínas que **processam** o colágeno, como **CRTAP**, **P3H1** (LEPRE1) e **PPIB**, ou por outros mecanismos ósseos (**IFITM5** no tipo V e **SERPINF1** no tipo VI).\n\n**Os achados radiográficos.**\n- **Osteopenia** difusa.\n- **Corticais finas** e ossos longos **gráceis** (finos), com **trabéculas finas** e esparsas.\n- **Fraturas múltiplas** em diferentes fases de consolidação, e **encurvamentos**.\n- **Vértebras bicôncavas** (em \"boca de peixe\") e achatadas, por microfraturas.\n- **Ossos wormianos** no crânio.\n- **Calcificações em pipoca** nas metáfises nas formas graves.\n- **Protrusão acetabular** e invaginação basilar.\n- No **tipo V**: **calo hiperplásico** e calcificação da membrana interóssea do antebraço.\n\nA **ossificação** em si acontece no tempo normal. O problema é a **qualidade** da matriz, e não o momento em que ela se forma.\n\n**O tratamento.**\n- **Bisfosfonatos** (pamidronato, zoledronato) aumentam a densidade e reduzem as fraturas.\n- **Hastes telescópicas** (Fassier-Duval) corrigem e previnem as deformidades dos ossos longos.\n- Reabilitação para manter a força e a mobilidade.\n\n**A esclera e os tipos de Sillence.**\n- **Tipo I**: esclera **azulada** característica, pela transparência da esclera fina, que deixa ver a coroide.\n- **Tipo II**: esclera azul-escura.\n- **Tipo III**: esclera azulada ao nascer, que **clareia** com a idade.\n- **Tipo IV**: esclera **normal** ou levemente acinzentada.\n\n**O defeito no tipo IV.** É um colágeno **estruturalmente anormal** (defeito qualitativo, geralmente substituição de glicina). Como as moléculas defeituosas são em parte **degradadas** dentro da célula, a quantidade total de colágeno normal também cai. Por isso, o tipo IV é descrito como tendo defeito **quantitativo e qualitativo**, diferente do tipo I, apenas quantitativo.",
+  "correta": "**Correta: B (tanto quantitativo quanto qualitativo e esclera normal).** No tipo IV de Sillence, o colágeno tipo I é **estruturalmente anormal** e também é produzido em **quantidade reduzida**. A **esclera é normal** ou levemente acinzentada, ao contrário da esclera azul do tipo I.",
   "incorretas": {
-   "A": "A esclera normal está certa, mas o defeito do tipo IV não é só quantitativo.",
-   "C": "Defeito só quantitativo com esclera azulada descreve o tipo I.",
-   "D": "O defeito quantitativo e qualitativo está certo, mas no tipo IV a esclera é normal."
+   "A": "O defeito **somente quantitativo** é o do **tipo I**, a forma leve, em que o colágeno é normal mas produzido pela metade. No tipo I, a esclera é azulada.",
+   "C": "Defeito **somente quantitativo** com **esclera azulada** descreve o **tipo I** de Sillence, e não o IV.",
+   "D": "O defeito quantitativo e qualitativo está certo, mas no tipo IV a esclera é **normal**. A esclera azulada caracteriza o tipo I (e é vista ao nascimento no tipo III)."
   },
-  "conceito": "Na **osteogênese imperfeita**, o colágeno tipo I pode ter defeito de **quantidade**, de **qualidade** ou dos dois:\n\n**tipo I**: defeito **apenas quantitativo**: metade do colágeno, mas com estrutura normal; forma leve, com **escleras azuis**;\n\n**tipos II, III e IV**: o colágeno é **estruturalmente anormal** (defeito **qualitativo**, em geral por troca de glicina), e as fibras normais e anormais juntas também ficam em quantidade alterada: o defeito é **quantitativo e qualitativo**.\n\n**O tipo IV de Sillence**:\n\n**gravidade moderada**, entre o I e o III;\n\n**escleras normais** (podem ser azuladas na infância e clarear);\n\ndeformidades e baixa estatura variáveis;\n\nsubdividido em **IVA** (dentina normal) e **IVB** (dentinogênese imperfeita);\n\nherança autossômica dominante.\n\n**Como lembrar**: esclera **azul** com defeito só de quantidade é o **tipo I**; esclera **normal** com defeito de quantidade e qualidade é o **tipo IV**.\n\n**Na prova**: Sillence IV = defeito **quantitativo e qualitativo** do colágeno tipo I, com **esclera normal**.",
-  "correta": "No tipo IV o colágeno é anormal em estrutura e quantidade, e as escleras são normais.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0436": {
@@ -5091,14 +5139,18 @@
   "conferido": false
  },
  "pediatria-0448": {
+  "conceito": "**O raquitismo.** É a **falha de mineralização** do osso e da **placa de crescimento** na criança. A mesma falha no adulto, com as fises fechadas, chama-se osteomalácia. Para mineralizar, o osso precisa de **cálcio e fosfato** em quantidade suficiente. Qualquer distúrbio que reduza um deles pode causar raquitismo.\n\n**Os sinais clássicos.**\n- **Fises alargadas** e metáfises em taça, desfiadas.\n- **Rosário raquítico**: alargamento das junções costocondrais.\n- Alargamento dos punhos e tornozelos.\n- **Geno varo ou valgo**.\n- Baixa estatura e atraso da marcha.\n\n**Os tipos e o fosfato no sangue.**\n\n| Tipo | Mecanismo | Fosfato sérico |\n|---|---|---|\n| **Nutricional** (carencial) | Falta de **vitamina D** (ou de cálcio) | **Baixo** ou normal (o PTH elevado elimina fosfato) |\n| **Resistente à vitamina D** (hipofosfatêmico ligado ao X) | Perda **renal** de fosfato por excesso de **FGF23** (mutação do PHEX) | **Muito baixo** |\n| **Dependente de vitamina D** (tipos 1 e 2) | Falha na ativação (1-alfa-hidroxilase) ou no **receptor** da vitamina D | Baixo ou normal; **cálcio baixo** |\n| **Osteodistrofia renal** | **Insuficiência renal**: o rim não elimina fosfato nem ativa a vitamina D | **Alto** |\n\n**Por que o fosfato sobe na doença renal.** O rim doente **não consegue excretar o fosfato**, que se acumula no sangue. O fosfato alto se liga ao cálcio e baixa o cálcio sérico. O rim também não produz a vitamina D ativa (calcitriol). O resultado é o **hiperparatireoidismo secundário** grave, com reabsorção óssea, fraturas e deformidades. É a **única** forma de raquitismo com **fosfato alto**.\n\n**Implicações ortopédicas da osteodistrofia renal.**\n- **Epifisiólise** (escorregamento das fises): na proximal do fêmur, frequentemente **bilateral** e atípica, inclusive em crianças menores.\n- **Geno valgo**, com deformidades progressivas.\n- Fraturas e tumores marrons.\n- O tratamento ortopédico só deve ser feito com o **metabolismo controlado** (quelantes de fósforo, calcitriol, diálise ou transplante).\n\n**O raquitismo hipofosfatêmico.** É a forma hereditária mais comum. Tem cálcio normal, **fosfato muito baixo**, fosfatase alcalina alta e deformidades em varo. O tratamento clássico é com **fosfato oral e calcitriol**. O burosumabe, um anticorpo anti-FGF23, é a terapia mais recente.",
+  "correta": "**Correta: B (osteodistrofia renal).** Na osteodistrofia renal, o rim insuficiente **não excreta o fosfato**, que se acumula no sangue. É a única forma de raquitismo com **fosfato elevado**. Nas outras formas, o fosfato está baixo ou normal.",
   "incorretas": {
-   "A": "No raquitismo nutricional o fosfato está baixo.",
-   "C": "No raquitismo resistente à vitamina D, o rim perde fosfato, que fica muito baixo.",
-   "D": "No raquitismo dependente de vitamina D o fosfato também está baixo."
+   "A": "No raquitismo **nutricional**, o fosfato está **baixo** ou normal. A falta de vitamina D eleva o PTH, que aumenta a perda renal de fosfato.",
+   "C": "No raquitismo **resistente à vitamina D** (hipofosfatêmico), o rim **perde fosfato** pelo excesso de FGF23, e o fosfato sérico é **muito baixo**.",
+   "D": "No raquitismo **dependente de vitamina D**, o fosfato está **baixo ou normal** e o cálcio é baixo. O defeito é na ativação ou no receptor da vitamina D."
   },
-  "conceito": "O **raquitismo** é a falha de **mineralização** do osso e da fise em crescimento. O **laboratório** separa os tipos, e o **fosfato** é a chave:\n\n**nutricional** (falta de vitamina D): cálcio normal ou baixo, **fosfato baixo**, fosfatase alcalina e PTH altos, 25-OH-vitamina D baixa;\n\n**hipofosfatêmico** (\"resistente à vitamina D\", ligado ao X): o rim **perde fosfato** (FGF23 alto, gene PHEX); **fosfato muito baixo**, cálcio e PTH normais;\n\n**dependente de vitamina D tipo I** (falta da 1α-hidroxilase) e **tipo II** (receptor defeituoso, com alopecia): cálcio e **fosfato baixos**, PTH alto;\n\n**osteodistrofia renal**: o rim doente **não excreta fosfato** e não ativa a vitamina D. O **fosfato fica alto**, o cálcio cai e o **PTH sobe muito** (hiperparatireoidismo secundário).\n\n**A ortopedia na osteodistrofia renal**: geno valgo, fraturas e **epifisiólise**, inclusive em locais atípicos e em crianças mais novas. O controle metabólico vem antes de qualquer cirurgia.\n\n**Na prova**: o fosfato está **aumentado** na **osteodistrofia renal**.",
-  "correta": "Na osteodistrofia renal, o rim não excreta fosfato, que fica alto, com hiperparatireoidismo secundário.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0449": {
@@ -5286,14 +5338,18 @@
   "conferido": false
  },
  "pediatria-0467": {
+  "conceito": "**O método de Ponseti em duas fases.** O tratamento do pé torto congênito tem uma fase de **correção** e uma fase de **manutenção**.\n\n**Na correção**, há uma sequência de gessos semanais, com manipulação na ordem do mnemônico **CAVE**:\n1. **Cavo**: corrige-se primeiro, supinando o antepé (elevando o primeiro raio).\n2. **Aduto** e **varo**: o pé é abduzido em torno da **cabeça do tálus**, que serve de fulcro.\n3. **Equino**: por último, geralmente com a **tenotomia percutânea do tendão calcâneo**, feita na maioria dos casos.\n\n**Na manutenção**, entra a **órtese de abdução** (botas presas a uma barra, a antiga Denis Browne). Sem ela, o pé torto **recidiva** com muita frequência. A falta de adesão é a principal causa de recidiva.\n\n**Os parâmetros da órtese.**\n\n| Parâmetro | Valor |\n|---|---|\n| Rotação externa do pé **afetado** | **60 a 70°** |\n| Rotação externa do pé **normal** (casos unilaterais) | 30 a 40° |\n| **Dorsiflexão** | **10 a 15°**, pela curvatura da barra |\n| Distância entre as botas | Largura dos **ombros** |\n\n**Por que esses números.**\n- A **rotação externa** mantém o pé abduzido, impedindo que o aduto e o varo voltem.\n- A **dorsiflexão** vem da barra dobrada para baixo no centro, com a convexidade voltada para o chão. Ela mantém o tendão calcâneo alongado e evita a recidiva do equino.\n- A distância entre os ombros deixa os quadris em abdução confortável.\n\n**O tempo de uso.**\n- **23 horas por dia** nos primeiros 3 meses após o último gesso.\n- Depois, **à noite e nos cochilos** até os **4 anos** de idade.\n\n**Quando o pé recidiva.** Na recidiva, repetem-se gessos e às vezes a tenotomia. Na recidiva dinâmica em supinação após os 3 anos, faz-se a **transferência do tibial anterior** para o cuneiforme lateral.",
+  "correta": "**Correta: A (70 graus, seguido de uso noturno por 2 a 4 anos).** No método de Ponseti, a órtese de abdução é usada em tempo integral (23 horas por dia) por cerca de **3 meses** após o último gesso, com o pé em **60 a 70° de rotação externa**. Depois, é usada **à noite e nos cochilos** até os **4 anos** de idade, ou seja, por 2 a 4 anos.",
   "incorretas": {
-   "B": "O uso noturno por 2 a 4 anos está certo, mas 50° é pouca rotação externa para segurar a correção.",
-   "C": "Os 70° estão certos, mas 6 a 12 meses de uso noturno é pouco e aumenta a recidiva.",
-   "D": "Erra os dois pontos: a rotação é de cerca de 70° e o uso noturno dura 2 a 4 anos."
+   "B": "O uso noturno por 2 a 4 anos está certo, mas **50°** de rotação externa é insuficiente para manter a correção.",
+   "C": "A rotação de 70° está certa, mas o uso noturno por apenas **6 a 12 meses** é curto demais. A recidiva é frequente sem a manutenção até os 4 anos.",
+   "D": "Erra os dois parâmetros: a rotação deve ser de 60 a 70° e o uso noturno deve durar até cerca de 4 anos de idade."
   },
-  "conceito": "Depois dos gessos e da tenotomia do **método de Ponseti**, a correção é mantida com a **órtese de abdução** (botas presas a uma barra).\n\n**Como montar**:\n\n**pé torto**: em **rotação externa de 60 a 70°**;\n\n**pé normal** (nos casos unilaterais): em 30 a 40°;\n\n**barra**: na largura dos ombros, com 10 a 15° de dorsiflexão.\n\n**Por quanto tempo**:\n\n**uso contínuo** (23 horas por dia) por cerca de **3 a 4 meses** depois do último gesso;\n\n**uso noturno** (noite e sonecas) por **2 a 4 anos**, ou seja, até cerca de 4 a 5 anos de idade.\n\n**Por que tanto tempo**: as partes moles tendem a retrair de novo enquanto a criança cresce. A **falta de adesão à órtese** é a principal causa de recidiva; quando a família usa como orientado, a recidiva cai muito.\n\n**Os erros comuns**: pouca rotação externa (o pé volta ao aduto) e tempo curto de uso noturno.\n\n**Na prova**: órtese contínua por 3 a 4 meses com o pé em **70°** de rotação externa e depois **uso noturno por 2 a 4 anos**.",
-  "correta": "O pé fica em cerca de 70° de rotação externa no uso contínuo inicial, e depois a órtese é usada à noite por 2 a 4 anos.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Ponseti IV. Congenital Clubfoot: Fundamentals of Treatment. Oxford University Press; 1996."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0468": {
@@ -5425,14 +5481,18 @@
   "conferido": false
  },
  "pediatria-0477": {
+  "conceito": "**O centro de gravidade.** É o ponto onde se pode considerar concentrado **todo o peso do corpo**. No adulto, em posição anatômica (em pé, ereto), ele fica na **linha média**, aproximadamente **5 cm à frente da segunda vértebra sacral (S2)**, dentro da pelve. Corresponde a cerca de **55%** da altura, medida a partir do chão.\n\n**Por que ele importa para a marcha.** Andar é **deslocar o centro de gravidade** para a frente com o mínimo de gasto de energia. Na marcha normal, ele descreve uma **curva senoidal suave**, com oscilação de cerca de **5 cm** no plano vertical e de cerca de 5 cm no plano lateral. Saunders, Inman e Eberhart descreveram os **determinantes da marcha**, mecanismos que **achatam** essa curva e economizam energia:\n1. Rotação da pelve no plano horizontal.\n2. Inclinação da pelve no plano frontal.\n3. Flexão do joelho na fase de apoio.\n4. e 5. Movimentos do pé e do tornozelo.\n6. Deslocamento lateral da pelve.\n\n**Quando o centro de gravidade oscila demais, a marcha gasta mais energia.** É o caso de:\n- **amputados**, em que o gasto aumenta mais nas amputações mais altas;\n- **artrodese** de quadril ou joelho;\n- **paralisia cerebral**, sobretudo na marcha agachada.\n\n**O centro de gravidade muda com a idade.**\n\n| Idade | Posição relativa |\n|---|---|\n| Recém-nascido | Mais **alto**, perto de T12, porque a cabeça e o tronco são proporcionalmente grandes |\n| Criança | Desce progressivamente com o crescimento das pernas |\n| Adulto | Cerca de 5 cm à frente de **S2** |\n\n**A linha de gravidade em pé.** No plano sagital, a linha vertical que passa pelo centro de gravidade cai:\n- um pouco **atrás** da articulação do **quadril**;\n- um pouco **à frente** do **joelho**;\n- **à frente** do **tornozelo**.\n\nIsso permite ficar em pé com pouco esforço muscular: os ligamentos iliofemorais e a cápsula posterior do joelho estabilizam passivamente, e o **sóleo** controla a tendência de o corpo cair para a frente.",
+  "correta": "**Correta: A (5 cm anterior a S2).** No adulto em posição anatômica, o centro de gravidade do corpo fica na linha média, aproximadamente **5 cm à frente da segunda vértebra sacral**, dentro da pelve.",
   "incorretas": {
-   "B": "L2 é alto demais; o centro de gravidade fica na pelve.",
-   "C": "T12 é alto demais para o centro de gravidade do corpo.",
-   "D": "T5 fica no tórax, muito acima do centro de gravidade."
+   "B": "**L2** fica acima do centro de gravidade do adulto. A posição correta é à frente de S2, dentro da pelve.",
+   "C": "A região de **T12** se aproxima do centro de gravidade do **recém-nascido**, cuja cabeça e tronco são proporcionalmente maiores, e não do adulto.",
+   "D": "**T5** fica muito acima. Um centro de gravidade nessa altura tornaria o corpo muito instável."
   },
-  "conceito": "O **centro de gravidade** (ou centro de massa) do corpo é o ponto onde se pode considerar concentrado todo o seu peso. Em pé, na **posição anatômica**, ele fica **dentro da pelve**, cerca de **5 cm à frente da vértebra S2**.\n\n**A linha de gravidade** que desce dele passa:\n\n**atrás** do centro do quadril (o quadril tende a estender, contido pelo ligamento iliofemoral);\n\n**à frente** do joelho (o joelho tende a estender, travado pela cápsula posterior);\n\n**à frente** do tornozelo (o tornozelo tende a dorsifletir, contido pelo sóleo).\n\n**Na marcha**, o centro de gravidade **oscila** em duas direções, numa curva suave:\n\n**vertical**: cerca de 4,5 a 5 cm; mais **baixo** no contato do calcanhar (duplo apoio) e mais **alto** no apoio médio;\n\n**lateral**: cerca de 4 a 5 cm, para o lado do membro de apoio.\n\n**Os determinantes de Saunders** (rotação e inclinação pélvicas, flexão do joelho no apoio, mecanismos do pé e do tornozelo, deslocamento lateral da pelve) reduzem essa oscilação e o gasto de energia.\n\n**Na prova**: o centro de gravidade em posição anatômica fica **5 cm anterior a S2**.",
-  "correta": "Em posição anatômica, o centro de gravidade fica dentro da pelve, cerca de 5 cm à frente de S2.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Perry J, Burnfield JM. Gait Analysis: Normal and Pathological Function. 2ª edição. SLACK; 2010."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0478": {
@@ -6895,17 +6955,18 @@
   "conferido": false
  },
  "pediatria-0593": {
+  "conceito": "**A pelve da criança é diferente.** O anel pélvico infantil é mais **elástico**: as articulações sacroilíacas e a sínfise são mais flexíveis, e há muita cartilagem. Por isso, a pelve absorve mais energia antes de quebrar, e as fraturas são **mais estáveis**. Ao mesmo tempo, a energia necessária para fraturar é **alta**, e as **lesões associadas** (abdominais, urológicas, cranianas) são mais importantes que a própria fratura.\n\n**A fratura em sela (straddle) ou do \"fragmento flutuante\".** É a fratura dos **ramos púbicos superior e inferior dos dois lados**. Ela solta um fragmento central em forma de **borboleta**, que contém a sínfise púbica e a parte medial dos quatro ramos. Esse fragmento não tem mais ligação óssea com o resto da pelve: ele \"flutua\".\n\n**Para onde o fragmento vai.** Os músculos ainda presos ao fragmento definem o desvio. O principal é o **reto do abdome**, que se insere na **crista e no tubérculo púbico**. Sem a ancoragem óssea, o reto **puxa o fragmento para cima** (cranialmente).\n\n**Por que os outros músculos não definem o desvio.**\n- O **sartório** se insere na espinha ilíaca anterossuperior, longe do fragmento.\n- O **iliopsoas** vai do lombo e da fossa ilíaca ao **trocanter menor**, sem se prender no fragmento central.\n- O **reto femoral** nasce na **espinha ilíaca anteroinferior** e no teto do acetábulo.\n\n**Os músculos das avulsões da pelve do adolescente.** São úteis para a prova.\n\n| Apófise | Músculo |\n|---|---|\n| Espinha ilíaca anterossuperior | Sartório (e tensor da fáscia lata) |\n| Espinha ilíaca anteroinferior | Reto femoral |\n| Tuberosidade isquiática | Isquiotibiais |\n| Trocanter menor | Iliopsoas |\n| Crista ilíaca | Músculos abdominais |\n\n**O que procurar na fratura em sela.** A fratura em sela tem alto risco de **lesão da uretra e da bexiga**. Os sinais são sangue no meato, hematúria e retenção urinária. A **uretrocistografia retrógrada** deve ser feita antes da sondagem vesical quando há suspeita de lesão uretral.\n\n**O tratamento.** A maioria das fraturas pélvicas da criança é tratada **sem cirurgia**: repouso, analgesia e carga progressiva. A fixação fica para fraturas instáveis, desvios importantes do anel ou do acetábulo e fraturas expostas.",
+  "correta": "**Correta: D (reto do abdome).** Na fratura bilateral dos ramos púbicos superior e inferior (fratura em sela), o fragmento central \"flutuante\", que contém a sínfise, é desviado **cranialmente** pelo **reto do abdome**, que se insere na crista púbica.",
   "incorretas": {
-   "A": "O sartório se insere na espinha ilíaca anterossuperior.",
-   "B": "O iliopsoas se insere no trocanter menor.",
-   "C": "O reto femoral se insere na espinha ilíaca anteroinferior."
+   "A": "O **sartório** se insere na **espinha ilíaca anterossuperior** e não tem fixação no fragmento central púbico.",
+   "B": "O **iliopsoas** passa à frente da pelve até o **trocanter menor**, sem se inserir no fragmento flutuante.",
+   "C": "O **reto femoral** se origina na **espinha ilíaca anteroinferior** e no teto do acetábulo, fora do fragmento central."
   },
-  "conceito": "Na **fratura bilateral dos ramos púbicos** superior e inferior (fratura em \"**straddle**\" ou a cavaleiro), os quatro ramos se quebram e sobra um **fragmento central**, com a sínfise púbica, solto do resto da pelve: o fragmento **flutuante**.\n\n**O que desloca esse fragmento**: o **reto do abdome**, que se insere na crista púbica e na sínfise. Sem a pelve para segurá-lo, o fragmento é puxado **para cima** pelo músculo.\n\n**Os outros músculos e suas inserções**:\n\n**sartório**: espinha ilíaca anterossuperior; arranca a espinha nas avulsões do adolescente;\n\n**reto femoral**: espinha ilíaca anteroinferior;\n\n**iliopsoas**: trocanter menor;\n\n**isquiotibiais**: tuberosidade isquiática.\n\n**O cuidado mais importante**: a fratura em straddle fica bem na frente da **uretra** e da **bexiga**. Procurar **sangue no meato**, hematúria e hematoma perineal; investigar com uretrocistografia antes de passar sonda, se houver suspeita.\n\n**O tratamento**: em geral conservador, com repouso e carga conforme a dor; a pelve da criança consolida bem.\n\n**Na prova**: o fragmento flutuante desvia pela ação do **reto do abdome**.",
-  "correta": "O reto do abdome se insere no púbis e puxa para cima o fragmento central solto.",
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), Cap. 22"
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), Cap. 22",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0594": {
