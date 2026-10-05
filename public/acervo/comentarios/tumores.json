@@ -1916,16 +1916,19 @@
   "formato": "corrido"
  },
  "tumores-0186": {
-  "conceito": "**Para onde o Ewing vai.** Como quase todos os sarcomas, a disseminação é **hematogênica**, e o primeiro leito capilar no caminho é o pulmonar: o **pulmão** é o sítio mais comum de metástase, seguido do **osso** e da **medula óssea**. Cerca de um quarto dos pacientes já tem metástase ao diagnóstico, e a metástase linfonodal é rara. A ordem importa: a metástase pulmonar isolada ainda permite tratamento com intenção curativa, com quimioterapia, irradiação pulmonar e eventual metastasectomia, enquanto a óssea e a medular são o pior cenário.\n\n**O estadiamento** inclui tomografia de tórax, ressonância do sítio primário, PET-CT ou cintilografia e **biópsia de medula óssea**, porque o Ewing é um dos poucos sarcomas que infiltram a medula.\n\n**Na prova:** metástase de Ewing é mais **pulmonar**; óssea e medular são piores.",
-  "correta": "**Pulmão.** É o sítio mais comum de metástase do sarcoma de Ewing.",
+  "conceito": "**O sarcoma de Ewing.** É um tumor maligno de **pequenas células redondas e azuis**, o segundo sarcoma ósseo primário mais comum na criança e no adolescente (depois do osteossarcoma). A maioria tem a translocação **t(11;22)**, que forma o gene de fusão **EWSR1-FLI1**, e as células expressam o **CD99**. Acomete a **diáfise** dos ossos longos e os ossos **chatos** (pelve, costelas, escápula). Pode vir com **febre**, **VHS** elevada e leucocitose, imitando uma osteomielite.\n\n**Para onde o Ewing vai.** Como quase todos os sarcomas, a disseminação é **hematogênica**. O primeiro leito capilar no caminho do sangue venoso é o **pulmão**.\n\n| Local de metástase | Comentário |\n|---|---|\n| **Pulmão** | O **mais comum** |\n| **Osso** | Segundo lugar; pior prognóstico que a metástase pulmonar isolada |\n| **Medula óssea** | Terceiro lugar; avaliada por biópsia de medula |\n| Linfonodos | **Rara** |\n\nCerca de **um quarto** dos pacientes já tem metástase ao diagnóstico. A ordem importa para o prognóstico: a metástase **pulmonar isolada** ainda permite cura em parte dos casos (com quimioterapia e radioterapia pulmonar total). A metástase **óssea ou medular** tem prognóstico muito pior.\n\n**O estadiamento.** Tomografia de **tórax**, cintilografia óssea ou **PET-CT** e biópsia de **medula óssea**.\n\n**Os fatores prognósticos.**\n- **Metástase** ao diagnóstico: o mais importante.\n- **Localização**: a **pelve** e os tumores centrais têm prognóstico pior que os das extremidades.\n- **Tamanho** do tumor e LDH elevada.\n- **Resposta histológica** à quimioterapia (necrose).\n\n**O tratamento.** **Quimioterapia** neoadjuvante (multiagente), **controle local** com **cirurgia** e/ou **radioterapia** (o Ewing é **radiossensível**) e quimioterapia adjuvante. A sobrevida na doença localizada chega a cerca de **70%**.",
+  "correta": "**Correta: D (pulmão).** No sarcoma de Ewing, como na maioria dos sarcomas, a disseminação é hematogênica, e o local mais comum de metástase é o **pulmão**, seguido do osso e da medula óssea. A metástase em linfonodos é rara.",
   "incorretas": {
-   "A": "**Segundo lugar.** O osso vem depois do pulmão e indica prognóstico pior.",
-   "B": "**Rara.** A metástase linfonodal é incomum no Ewing.",
-   "C": "**Ocorre, mas depois.** A medula deve ser pesquisada por biópsia, mas vem depois do pulmão em frequência."
+   "A": "O **osso** é o **segundo** local mais comum de metástase, com prognóstico pior que a metástase pulmonar isolada.",
+   "B": "A metástase em **linfonodos** é **rara** nos sarcomas, que se disseminam pelo sangue.",
+   "C": "A **medula óssea** é acometida em parte dos casos (terceiro lugar), avaliada pela biópsia de medula no estadiamento."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
+   "Campanacci M. Bone and Soft Tissue Tumors. 2ª edição. Springer; 1999."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "tumores-0187": {
   "conceito": "**A pergunta é sobre primário desconhecido.** Não se pergunta qual primário mais vai ao osso, que seriam mama e próstata, e sim qual mais aparece como metástase **sem primário conhecido**. Mama, próstata, pulmão e tireoide costumam ser achados com facilidade, pela mamografia, pelo PSA e toque retal, pela tomografia de tórax e pelo ultrassom cervical. O **carcinoma de células renais** cresce silencioso no retroperitônio, a hematúria pode faltar, e a metástase pode surgir antes de qualquer suspeita ou anos depois de uma nefrectomia.\n\n**A lesão renal** é lítica, expansiva, muitas vezes solitária e muito vascularizada, exige embolização pré-operatória e, se única, pode ser ressecada com margem ampla e intenção curativa. Por isso, diante de lesão óssea destrutiva acima dos 40 anos sem primário conhecido, a **tomografia de abdome** é tão obrigatória quanto a de tórax.\n\n**Na prova:** metástase de origem desconhecida, **pense no rim**, e também no pulmão.",

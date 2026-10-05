@@ -1654,14 +1654,18 @@
   "conferido": false
  },
  "mao-0148": {
-  "conceito": "### Narakas e prognóstico\n| Grupo | Raízes | Recuperação espontânea |\n|---|---|---|\n| ==I== | ==C5-C6== | ==completa em cerca de 90%==, muitas vezes ==nas primeiras 1 a 8 semanas== |\n| II | C5-C7 | cerca de 65%; mais lenta, frequentemente incompleta |\n| III | C5-T1 sem Horner | pouca; sequelas |\n| IV | C5-T1 com Horner | a pior; lesão pré-ganglionar |\n\n### Marcos de acompanhamento\n- **Bíceps** contra a gravidade aos 3 meses (Gilbert e Tassin): se ausente, considerar cirurgia.\n- **Teste do biscoito** (Toronto): levar o biscoito à boca aos 9 meses.\n- **Escala de Toronto** e escala de movimento ativo (AMS).\n\n### Fatores de pior prognóstico\n- Horner, lesão total, ausência de recuperação do bíceps até 3 meses, avulsões (pré-ganglionares).\n\n> **Na prova:** recuperação total em 1 a 8 semanas = ==Narakas I==.",
-  "correta": "**Grupo I.**\n- A lesão C5-C6 tem o melhor prognóstico.\n- A recuperação costuma se completar nas primeiras semanas.",
+  "conceito": "**A paralisia obstétrica do plexo braquial.** É a lesão do plexo braquial no **parto**, geralmente por **tração** lateral da cabeça quando o ombro fica preso (**distocia de ombro**). Fatores de risco: **macrossomia**, diabetes materno, parto instrumental e apresentação pélvica. A forma mais comum é a **alta** (Erb), de C5-C6.\n\n**A classificação de Narakas.** Combina as **raízes** acometidas com o **prognóstico** de recuperação espontânea.\n\n| Grupo | Raízes | Recuperação espontânea |\n|---|---|---|\n| **I** | **C5-C6** (Erb clássico) | **Completa** em cerca de **90%**, muitas vezes nas **primeiras 1 a 8 semanas** |\n| II | C5-C7 (Erb ampliado) | Cerca de **65%**; mais lenta e frequentemente incompleta |\n| III | C5-T1, **sem** síndrome de Horner | Pouca; sequelas frequentes |\n| IV | C5-T1, **com** síndrome de Horner | A **pior**: lesão **pré-ganglionar** (avulsão) |\n\n**O quadro clínico.**\n- **Grupo I** (C5-C6): braço em **adução e rotação interna**, cotovelo **estendido** e antebraço **pronado**, punho fletido: a postura de **\"garçom pedindo gorjeta\"**. A mão funciona.\n- **Grupo II**: inclui o C7, com fraqueza da extensão do cotovelo, do punho e dos dedos.\n- **Grupos III e IV**: braço **flácido**, mão também paralisada. A **síndrome de Horner** (ptose, miose, enoftalmia) indica avulsão de **T1**, perto da cadeia simpática, e prognóstico ruim.\n\n**O marco do bíceps.** O retorno da **flexão do cotovelo** contra a gravidade (bíceps) é o principal indicador prognóstico:\n- Recuperação do bíceps até cerca de **3 meses**: bom prognóstico.\n- **Sem bíceps aos 3 a 6 meses** (conforme o protocolo, como o de Gilbert ou o teste do \"biscoito\" de Toronto): indicação de **exploração cirúrgica** do plexo, com enxertos de nervo e transferências nervosas.\n\n**As sequelas no ombro.** O desequilíbrio entre rotadores internos fortes e externos fracos leva a **contratura em rotação interna** e à **displasia glenoumeral** (subluxação posterior da cabeça do úmero). O tratamento inclui fisioterapia, toxina botulínica, liberações e **transferências tendíneas** (por exemplo, latíssimo do dorso e redondo maior para o manguito, como na técnica de L'Episcopo ou Hoffer).",
+  "correta": "**Correta: A (I).** No grupo **I** de Narakas (C5-C6, paralisia de Erb clássica), a recuperação espontânea é **completa** em cerca de 90% dos casos, muitas vezes entre a **primeira e a oitava semanas** de vida.",
   "incorretas": {
-   "B": "**Mais lenta.**\n- Com C7 a recuperação é demorada e muitas vezes incompleta.",
-   "C": "**Lesão completa.**\n- Mão flácida, prognóstico reservado.",
-   "D": "**O pior.**\n- Horner indica avulsão de T1; não recupera sozinho."
+   "B": "No grupo **II** (C5-C7), a recuperação é mais **lenta** e frequentemente **incompleta**, em cerca de 65% dos casos.",
+   "C": "No grupo **III** (C5-T1 sem Horner), há pouca recuperação espontânea, com sequelas frequentes.",
+   "D": "O grupo **IV** (C5-T1 com Horner) tem o **pior** prognóstico, por avulsão pré-ganglionar das raízes."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)",
+   "Narakas AO. Obstetrical brachial plexus injuries. In: Lamb DW, ed. The Paralysed Hand. Churchill Livingstone; 1987:116-135."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0149": {
@@ -3330,14 +3334,18 @@
   "conferido": false
  },
  "mao-0319": {
-  "conceito": "### Irrigação do dorso da mão\n- ==Rede carpal dorsal== (radial, ulnar, interósseas).\n- Dela saem as ==artérias metacarpais dorsais==, sobre os interósseos, entre os metacarpos.\n- Comunicam-se com o arco profundo pelas perfurantes.\n\n### Retalhos baseados nelas\n| Retalho | Pedículo | Uso |\n|---|---|---|\n| ==Kite (Foucher)== | ==1ª metacarpal dorsal== | pele sensível do dorso do indicador para o polegar |\n| Quaba | perfurante distal da metacarpal dorsal | dorso dos dedos |\n| Maruyama | 2ª a 4ª metacarpais dorsais | dorso da mão |\n\n### Outras artérias\n| Artéria | Posição |\n|---|---|\n| digitais próprias | laterais dos dedos, volares |\n| interóssea posterior | antebraço, termina antes do punho |\n| radial do indicador | volar, borda radial do indicador |\n\n> **Na prova:** artéria entre os metacarpos no dorso = ==metacarpal dorsal== (pedículo do Kite).",
-  "correta": "**Metacarpal dorsal.**\n- Corre no dorso entre os metacarpos, sobre os interósseos.\n- A 1ª é o pedículo do retalho de Kite para o polegar.",
+  "conceito": "**A imagem.** É uma dissecção do **dorso da mão**. As setas apontam um vaso que corre no **primeiro espaço intermetacarpal**, sobre o **primeiro interósseo dorsal**, entre o primeiro e o segundo metacarpos, em direção ao indicador. É a **primeira artéria metacarpal dorsal**.\n\n**A irrigação do dorso da mão.**\n- A **artéria radial** cruza a tabaqueira anatômica e passa para o dorso. No dorso, ela contribui para a **rede carpal dorsal**, junto com ramos da artéria ulnar e das interósseas anterior e posterior.\n- Da rede carpal dorsal e da própria radial saem as **artérias metacarpais dorsais**, que correm **sobre os músculos interósseos dorsais**, entre os metacarpos.\n- A **primeira** artéria metacarpal dorsal nasce diretamente da **radial**, antes que ela mergulhe entre as duas cabeças do primeiro interósseo dorsal para formar o **arco palmar profundo**.\n- As metacarpais dorsais se comunicam com o arco profundo pelas **perfurantes** e terminam como **artérias digitais dorsais**.\n\n**A anatomia da primeira artéria metacarpal dorsal.** Tem geralmente três ramos: um para o lado **ulnar do polegar**, um para o lado **radial do indicador** e um ramo intermediário. O ramo para o indicador irriga a pele do **dorso da falange proximal do indicador**.\n\n**A importância cirúrgica: o retalho de Foucher (kite flap).**\n\n| Retalho | Pedículo | Uso |\n|---|---|---|\n| **Kite (Foucher)** | **1ª artéria metacarpal dorsal** | Pele do dorso da falange proximal do **indicador**, com o ramo sensitivo do radial, para cobrir o **polegar** |\n| Retalho da 2ª metacarpal dorsal | **2ª artéria metacarpal dorsal** | Defeitos do dorso da mão e dos dedos |\n| Retalhos de fluxo reverso das metacarpais dorsais | Perfurantes distais | Defeitos dos dedos |\n\nO retalho de Foucher é um **retalho em ilha**, levado com o pedículo como a linha de uma pipa. Ele traz pele **sensível** para a polpa ou o dorso do polegar.\n\n**As alternativas.**\n- A **artéria principal do polegar** (princeps pollicis) e a **artéria radial do indicador** são ramos **palmares** do arco profundo.\n- As **artérias digitais próprias** correm nas faces laterais dos dedos, na palma.\n- A **artéria interóssea posterior** corre no **antebraço**, no compartimento extensor, e não na mão.",
+  "correta": "**Correta: C (metacarpeana dorsal).** As setas apontam o vaso que corre no primeiro espaço intermetacarpal, sobre o primeiro interósseo dorsal: a **primeira artéria metacarpal dorsal**. Ela é o pedículo do retalho de Foucher (kite flap).",
   "incorretas": {
-   "A": "**Laterais dos dedos.**\n- Volares ao eixo, não no dorso.",
-   "B": "**Antebraço.**\n- Termina antes do punho.",
-   "D": "**Volar.**\n- Sai do arco palmar."
+   "A": "As **artérias digitais** do indicador correm nas faces laterais do dedo, a partir da palma. A imagem mostra um vaso no dorso, entre os metacarpos.",
+   "B": "A **artéria interóssea posterior** corre no **antebraço**, no compartimento extensor, e não no dorso da mão entre os metacarpos.",
+   "D": "A **artéria principal** do indicador (radial do indicador) é um ramo **palmar** do arco profundo, e não um vaso do dorso."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)",
+   "Foucher G, Braun JB. A new island flap transfer from the dorsum of the index to the thumb. Plast Reconstr Surg. 1979;63(3):344-349."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0320": {
@@ -5751,19 +5759,19 @@
   "conferido": false
  },
  "mao-0569": {
-  "conceito": "### Camadas do compartimento volar\n| Camada | Músculos |\n|---|---|\n| ==superficial== | ==pronador redondo==, flexor radial do carpo, palmar longo, flexor ulnar do carpo |\n| intermediária | flexor superficial dos dedos |\n| profunda | flexor profundo dos dedos, flexor longo do polegar, **pronador quadrado** |\n\n### Pronador redondo\n- Duas cabeças: **umeral** (epicôndilo medial) e **ulnar** (processo coronoide).\n- Trajeto ==oblíquo== até o **terço médio da face lateral do rádio**.\n- O **nervo mediano** passa entre as cabeças (síndrome do pronador).\n- Via de Henry: o pronador é desinserido (com o antebraço em pronação) para expor o terço médio do rádio.\n\n### Pronador quadrado\n- Lâmina **transversa** entre rádio e ulna distais; camada profunda.\n- Desinserido na via volar para placas do rádio distal.\n\n> **Na prova:** grande ventre da camada intermediária = ==flexor superficial dos dedos==",
-  "correta": "**Flexor superficial dos dedos.**\n- Camada intermediária, grande ventre.\n- Anterior ao plano profundo.",
+  "conceito": "**A imagem.** Mostra cortes transversais do antebraço em três níveis. No corte do **terço médio**, a seta aponta um músculo volumoso da **camada intermediária**, logo abaixo da camada superficial e acima dos flexores profundos, ocupando boa parte da face anterior: o **flexor superficial dos dedos**.\n\n**O compartimento anterior (flexor) do antebraço.** Tem **três camadas** musculares, que se entendem melhor de fora para dentro.\n\n| Camada | Músculos |\n|---|---|\n| **Superficial** | Pronador redondo, flexor radial do carpo, palmar longo, flexor ulnar do carpo |\n| **Intermediária** | **Flexor superficial dos dedos** |\n| **Profunda** | Flexor profundo dos dedos, flexor longo do polegar, pronador quadrado |\n\n**Os músculos superficiais** nascem do **epicôndilo medial** pelo tendão flexor comum. Uma forma de memorizar a posição é colocar a mão sobre o antebraço oposto, com o polegar no epicôndilo medial: o polegar e os quatro dedos apontam para o pronador redondo, o flexor radial do carpo, o palmar longo e o flexor ulnar do carpo.\n\n**O flexor superficial dos dedos.** É o **maior** músculo do compartimento e forma sozinho a **camada intermediária**. Tem duas cabeças:\n- **umeroulnar** (epicôndilo medial e processo coronoide);\n- **radial** (face anterior do rádio, na diáfise proximal).\n\nEntre as duas cabeças forma-se um **arco tendíneo**, por onde passam o **nervo mediano** e a artéria ulnar. Esse arco é um dos locais de compressão do mediano na síndrome do pronador. No terço médio do antebraço, o flexor superficial ocupa uma grande área do corte transversal, logo abaixo da camada superficial. O **nervo mediano** corre na face **profunda** do músculo, preso à sua fáscia.\n\n**A camada profunda.**\n- O **flexor profundo dos dedos** fica junto à **ulna** e à membrana interóssea.\n- O **flexor longo do polegar** fica junto ao **rádio**.\n- O **pronador quadrado** fica no quarto distal, junto aos dois ossos.\n- O **nervo interósseo anterior** e a artéria interóssea anterior correm sobre a membrana, entre o flexor profundo e o flexor longo do polegar.\n\n**A inervação.**\n- Quase todos são inervados pelo **mediano** (o interósseo anterior inerva o flexor longo do polegar, a metade radial do flexor profundo e o pronador quadrado).\n- O **ulnar** inerva o **flexor ulnar do carpo** e a metade ulnar do **flexor profundo** (4º e 5º dedos).\n\n**Como testar os flexores dos dedos.**\n- **Flexor superficial**: segura-se os outros dedos em extensão (bloqueando o flexor profundo, que tem um ventre comum) e pede-se para fletir a interfalângica proximal do dedo testado.\n- **Flexor profundo**: segura-se a interfalângica proximal em extensão e pede-se para fletir a distal.",
+  "correta": "**Correta: A (flexor superficial dos dedos).** No corte do terço médio do antebraço, a seta indica o músculo volumoso da **camada intermediária** do compartimento flexor, que é o **flexor superficial dos dedos**. O nervo mediano corre na sua face profunda.",
   "incorretas": {
-   "B": "**Plano profundo.**\n- Junto à ulna e membrana.",
-   "C": "**Profundo e radial.**\n- Junto ao rádio.",
-   "D": "**Superficial.**\n- Ventre menor."
+   "B": "O **flexor profundo dos dedos** fica na camada **profunda**, junto à **ulna** e à membrana interóssea, abaixo do flexor superficial.",
+   "C": "O **flexor longo do polegar** fica na camada **profunda**, junto ao **rádio**.",
+   "D": "O **flexor radial do carpo** fica na camada **superficial**. No terço médio, já é um ventre mais delgado, com o tendão se formando."
   },
   "referencias": [
    "Standring S. Gray's Anatomy. 42nd ed. Elsevier; 2020. Anterior compartment of the forearm.",
    "Netter FH. Atlas of Human Anatomy. 8th ed. Elsevier; 2022. Forearm cross-sectional anatomy.",
    "Netter, Atlas de Anatomia Humana, 7ª edição, Seção 7"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0570": {
@@ -7779,17 +7787,18 @@
   "conferido": false
  },
  "mao-0704": {
-  "conceito": "**A classificação de Regnault é a mais usada para ptose mamária.** Ela usa a posição do complexo areolopapilar em relação ao sulco inframamário: grau I até 1 cm abaixo, grau II de 1 a 3 cm, grau III mais de 3 cm (no contorno inferior), além da pseudoptose e da ptose glandular parcial.\n\n**As outras classificações das alternativas:**\n- **Baker:** contratura capsular após implante mamário (I, mama macia e natural; II, pouco firme, sem deformidade visível; III, firme e visivelmente deformada; IV, dura, dolorosa e fria);\n- **Pitanguy:** nome associado à técnica de mamoplastia redutora e a outras sistematizações em cirurgia plástica, mas não é a classificação padrão da ptose;\n- **Collins:** não é classificação de ptose mamária.",
-  "correta": "**Regnault.** É a classificação de referência da ptose mamária, baseada na relação entre o complexo areolopapilar e o sulco inframamário.",
+  "conceito": "**A ptose mamária.** É a **queda da mama**, com o complexo areolopapilar (CAP) descendo em relação ao **sulco inframamário**. Acontece com o envelhecimento, a gestação, a amamentação, as grandes variações de peso e a perda da elasticidade da pele e dos ligamentos de Cooper.\n\n**A classificação de Regnault.** É a mais usada. Baseia-se na posição do **mamilo** em relação ao **sulco inframamário**.\n\n| Grau | Posição do mamilo |\n|---|---|\n| **I** (leve) | **No nível** do sulco ou até cerca de **1 cm abaixo** |\n| **II** (moderada) | De **1 a 3 cm abaixo** do sulco, ainda acima do contorno inferior da mama |\n| **III** (grave) | **Mais de 3 cm** abaixo do sulco, no contorno **inferior** da mama, apontando para baixo |\n| **Pseudoptose** | Mamilo **acima** do sulco, mas a **glândula** caiu abaixo dele |\n| Ptose glandular parcial | Mamilo bem posicionado, com parte da glândula descida |\n\n**Por que a classificação importa.** Ela orienta a cirurgia:\n- **Pseudoptose** e ptose **leve**: prótese mamária (aumento) ou pequenas ressecções.\n- Ptose **moderada a grave**: **mastopexia**, que reposiciona o CAP e remodela a glândula, com ou sem prótese.\n\n**As outras classificações das alternativas.**\n- **Baker**: classifica a **contratura capsular** após o implante mamário (grau I: mama macia e natural; II: um pouco firme; III: firme e visivelmente alterada; IV: dura, dolorosa e deformada).\n- **Pitanguy**: Ivo Pitanguy descreveu técnicas clássicas de **mamoplastia redutora** e de mastopexia, e não a classificação de ptose mais usada.\n- **Collins**: não corresponde a uma classificação consagrada de ptose mamária.",
+  "correta": "**Correta: A (Regnault).** A classificação de **Regnault** é a mais usada para a ptose mamária. Ela gradua a queda pela posição do mamilo em relação ao sulco inframamário: grau I, II, III e pseudoptose.",
   "incorretas": {
-   "B": "Pitanguy é referência em técnicas de mamoplastia, mas a classificação de ptose usada universalmente é a de Regnault.",
-   "C": "Collins não corresponde a uma classificação de ptose mamária.",
-   "D": "Baker classifica a contratura capsular após implantes mamários, não a ptose."
+   "B": "**Pitanguy** é conhecido pelas técnicas de **mamoplastia redutora** e mastopexia, e não pela classificação de ptose mais usada.",
+   "C": "**Collins** não corresponde a uma classificação consagrada de ptose mamária.",
+   "D": "A classificação de **Baker** gradua a **contratura capsular** após o implante mamário, e não a ptose."
   },
   "referencias": [
-   "Regnault P. Breast ptosis. Definition and treatment. Clin Plast Surg. 1976;3(2):193-203."
+   "Regnault P. Breast ptosis. Definition and treatment. Clin Plast Surg. 1976;3(2):193-203.",
+   "Neligan PC. Plastic Surgery. 5ª edição. Elsevier; 2023."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0705": {
@@ -8980,6 +8989,22 @@
   "geradoEm": "2026-10-04",
   "conferido": false
  },
+ "mao-0783": {
+  "conceito": "**A doença de Kienböck.** É a **necrose avascular do semilunar**, mais comum em homens jovens que fazem trabalho manual. A causa é **multifatorial**: o semilunar recebe cargas altas e, em algumas pessoas, tem uma irrigação frágil e uma anatomia que concentra essas cargas.\n\n**Os fatores de risco anatômicos.**\n- **Variância ulnar negativa** (Hultén): com a ulna mais curta que o rádio, o semilunar fica apoiado sobretudo no rádio, com mais cisalhamento e compressão.\n- **Inclinação radial** mais horizontal.\n- **Irrigação** do semilunar com **um único vaso** nutridor ou com poucas anastomoses intraósseas (padrões de Gelberman).\n- **Forma do semilunar**, descrita pelas classificações de **Zapico** e de **Viegas**.\n\n**A classificação de Zapico (forma no plano coronal).** Considera o ângulo entre as faces proximal e distal do semilunar, relacionado à variância ulnar.\n\n| Tipo | Forma | Relação |\n|---|---|---|\n| **I** | Ápice **proximal** agudo (semilunar em \"cunha\") | Associado à **variância ulnar negativa**; maior concentração de carga: **risco de Kienböck** |\n| II | Faces proximal e distal quase paralelas (retangular) | Variância neutra |\n| III | Ápice proximal arredondado (em \"V\" invertido) | Variância positiva |\n\n**A classificação de Viegas (articulação com o hamato).**\n\n| Tipo | Achado | Relação |\n|---|---|---|\n| **I** | **Sem faceta medial** para o hamato | Carga concentrada no capitato: associado à **doença de Kienböck** |\n| II | **Com faceta medial** para o hamato | Associado à **artrose hamato-semilunar** |\n\n**O resumo.** O semilunar de **Zapico I** (em cunha, com variância ulnar negativa) e de **Viegas I** (sem faceta para o hamato) recebe a carga de forma mais concentrada e é o de maior risco para a doença de Kienböck.\n\n**O estadiamento de Lichtman.**\n- I: radiografia normal; alteração só na ressonância.\n- II: esclerose, forma preservada.\n- IIIA: colapso do semilunar, sem colapso do carpo.\n- IIIB: colapso com **rotação fixa do escafoide** e perda da altura do carpo.\n- IV: artrose radiocarpal ou mediocarpal.\n\n**O tratamento depende do estágio e da variância.**\n- Estágios iniciais com **variância negativa**: **encurtamento do rádio** (nivelamento articular), que descomprime o semilunar.\n- Variância neutra ou positiva: osteotomia em cunha do rádio, descompressão metafisária ou enxertos vascularizados.\n- Estágio IIIB: artrodeses intercárpicas (escafotrapeziotrapezoide, escafocapitato) ou carpectomia proximal.\n- Estágio IV: carpectomia proximal (se o capitato estiver bom), artrodese total do punho ou denervação.",
+  "correta": "**Correta: A (I de Zapico e I de Viegas).** O semilunar **Zapico I** (em cunha, associado à variância ulnar negativa) e **Viegas I** (sem faceta medial para o hamato) concentra a carga e é considerado fator de risco para a doença de Kienböck.",
+  "incorretas": {
+   "B": "O Zapico I está certo, mas o **Viegas II** (com faceta para o hamato) associa-se à **artrose hamato-semilunar**, e não à doença de Kienböck.",
+   "C": "O **Zapico II** tem faces quase paralelas, com variância neutra. O tipo de risco é o Zapico I.",
+   "D": "O **Zapico II** e o **Viegas II** não são as formas associadas à doença de Kienböck.",
+   "E": "O **Zapico III** associa-se à variância ulnar **positiva**, e a classificação de Viegas tem apenas os tipos I e II."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)",
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
  "mao-0784": {
   "conceito": "**Cuidado com os dois Struthers, que comprimem nervos diferentes:**\n\n| Estrutura | Onde | Nervo |\n|---|---|---|\n| **Ligamento de Struthers** | Faixa fibrosa entre um **processo supracondilar** do úmero (espinha óssea na face anteromedial, cerca de 5 cm acima do epicôndilo medial) e o epicôndilo medial | **Mediano** (e às vezes a artéria braquial) |\n| Arcada de Struthers | Faixa fascial na face medial do braço, cerca de 8 cm acima do epicôndilo medial | Ulnar |\n\n**Pontos de compressão do mediano no cotovelo e antebraço proximal (síndrome do pronador), de proximal para distal:**\n1. ligamento de Struthers (com o processo supracondilar);\n2. **lacertus fibrosus** (aponeurose do bíceps);\n3. entre as duas cabeças do **pronador redondo**;\n4. arco fibroso do **flexor superficial dos dedos**.\n\nO processo supracondilar existe em cerca de 1% das pessoas e aparece na radiografia de perfil do úmero distal. A síndrome do pronador causa dor no antebraço proximal e parestesias no território do mediano (inclusive na eminência tenar, pelo ramo cutâneo palmar, o que a diferencia do túnel do carpo).",
   "correta": "**Mediano.** O ligamento de Struthers, junto ao processo supracondilar do úmero, pode comprimir o nervo mediano.",
@@ -8994,6 +9019,22 @@
    "Wolfe SW et al. Green's Operative Hand Surgery. 8ª ed. Elsevier; 2022. Capítulo de neuropatias compressivas."
   ],
   "geradoEm": "2026-10-04",
+  "conferido": false
+ },
+ "mao-0785": {
+  "conceito": "**O canal de Guyon.** É o túnel osteofibroso do **punho** por onde passam o **nervo e a artéria ulnares**. Ele é limitado pelo **pisiforme** (medial), pelo **hâmulo do hamato** (lateral), pelo ligamento carpal volar (teto) e pelo ligamento transverso do carpo (assoalho). Dentro do canal, o nervo ulnar se divide em um **ramo profundo motor** e um **ramo superficial sensitivo**.\n\n**As três zonas de Gross e Gelberman.**\n\n| Zona | Local | Quadro |\n|---|---|---|\n| **I** | **Proximal à bifurcação** do nervo | **Misto**: déficit **motor e sensitivo** |\n| **II** | Ao redor do **ramo profundo motor** | **Só motor** (interósseos, lumbricais ulnares, adutor do polegar), **sem alteração sensitiva** |\n| **III** | Ao redor do **ramo superficial sensitivo** | **Só sensitivo** (face volar do 4º ulnar e do 5º dedo) |\n\n**Os sinais do caso.**\n- **Sinal de Egawa**: o paciente não consegue fazer a **abdução e a adução** do dedo médio com o dedo estendido, pela paralisia dos **interósseos**.\n- **Sinal de Duchenne**: **garra** do 4º e do 5º dedos (hiperextensão das metacarpofalângicas e flexão das interfalângicas), pela paralisia dos **lumbricais** ulnares e dos interósseos.\n- **Sem alteração sensitiva**: a lesão poupa o ramo superficial.\n\nDéficit **motor puro** de músculos intrínsecos inervados pelo ulnar, sem perda sensitiva: lesão do **ramo profundo**, na **zona II**.\n\n**Como diferenciar do túnel cubital (cotovelo).** Na compressão no cotovelo:\n- há **alteração sensitiva** na face volar do 4º e 5º dedos **e no dorso** da mão do lado ulnar, porque o **ramo cutâneo dorsal** do ulnar sai **antes** do punho;\n- podem estar fracos o **flexor ulnar do carpo** e o **flexor profundo** do 4º e 5º dedos.\n\nNa compressão no canal de Guyon, a sensibilidade do **dorso** da mão é **preservada**.\n\n**As causas da compressão no Guyon.** **Gânglio** (a mais comum), fratura do hâmulo do hamato, **trombose ou aneurisma da artéria ulnar** (síndrome do martelo hipotenar), músculos anômalos e traumas repetidos (ciclistas).\n\n**O tratamento.** Remover a causa (ressecção do gânglio, tratamento da artéria) e **descomprimir** o canal, liberando também o ramo profundo, que contorna o hâmulo do hamato.",
+  "correta": "**Correta: B (zona II do canal de Guyon).** Os sinais de Egawa (paralisia dos interósseos) e de Duchenne (garra ulnar), **sem alteração sensitiva**, indicam lesão **motora pura** do nervo ulnar. Isso localiza a compressão no **ramo profundo motor**, na **zona II** do canal de Guyon.",
+  "incorretas": {
+   "A": "Na **zona I**, proximal à bifurcação, a lesão é **mista**: haveria também alteração sensitiva na face volar do 4º e 5º dedos.",
+   "C": "Na **zona III**, a lesão atinge o **ramo superficial**, que é **sensitivo**. O quadro seria só sensitivo, sem garra nem paralisia dos interósseos.",
+   "D": "A classificação de Gross e Gelberman tem **três zonas**. Não há zona IV.",
+   "E": "No **túnel cubital**, haveria **alteração sensitiva**, inclusive no **dorso** da mão do lado ulnar (ramo cutâneo dorsal), e possivelmente fraqueza do flexor ulnar do carpo e do flexor profundo."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)",
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0786": {
@@ -12349,6 +12390,21 @@
   "referencias": [
    "Leechavengvongs S, Witoonchart K, Uerpairojkit C, Thuvasethakul P, Ketmalasiri W. Nerve transfer to deltoid muscle using the nerve to the long head of the triceps, part II: a report of 7 cases. J Hand Surg Am. 2003;28(4):633-638.",
    "Witoonchart K, Leechavengvongs S, Uerpairojkit C, Thuvasethakul P, Wongnopsuwan V. Nerve transfer to deltoid muscle using the nerve to the long head of the triceps, part I: an anatomic feasibility study. J Hand Surg Am. 2003;28(4):628-632."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "mao-1005": {
+  "conceito": "**A arquitetura do nervo periférico.** Um nervo periférico é organizado em camadas de tecido conjuntivo, como um cabo elétrico com vários fios encapados dentro de uma capa comum.\n\n| Camada | O que envolve | Função |\n|---|---|---|\n| **Endoneuro** | Cada **fibra nervosa** (axônio com sua bainha de Schwann) | Tecido frouxo; ambiente da fibra |\n| **Perineuro** | Cada **fascículo** (um grupo de fibras) | **Denso e resistente**; **barreira hematoneural**; resistência à tração |\n| **Epineuro interno** | Preenche o espaço **entre os fascículos** | Amortecimento; vasos |\n| **Epineuro externo** | Envolve o **nervo inteiro** | Proteção; sutura epineural |\n| Mesoneuro | Liga o nervo às estruturas vizinhas | Permite o deslizamento do nervo |\n\n**O perineuro.** É formado por várias camadas de células achatadas, unidas por junções firmes. Ele:\n- mantém a **pressão dentro do fascículo**;\n- forma a **barreira hematoneural**, que protege as fibras de substâncias do sangue;\n- dá ao nervo grande parte da sua **resistência à tração**.\n\n**Por que isso importa na cirurgia.**\n- **Sutura epineural**: pontos no epineuro externo, alinhando o nervo pela posição dos vasos. É a técnica mais usada.\n- **Sutura perineural (fascicular)**: pontos no perineuro, alinhando grupos de fascículos. Mais precisa, mas causa mais trauma e cicatriz; útil quando os fascículos motores e sensitivos estão bem separados (por exemplo, no ulnar distal).\n- **Sutura epiperineural**: combina as duas.\n\n**A relação com as lesões nervosas (Sunderland).**\n- 1º grau: **neuropraxia** (bloqueio de condução, sem lesão do axônio).\n- 2º grau: lesão do **axônio**, com o **endoneuro** íntegro (axonotmese de bom prognóstico).\n- 3º grau: lesão do **endoneuro**, com o **perineuro** íntegro.\n- 4º grau: lesão do **perineuro**, só o epineuro íntegro (neuroma em continuidade).\n- 5º grau: secção completa (**neurotmese**).\n\nQuanto mais camadas lesadas, menor a chance de recuperação espontânea. A partir do 4º grau, a cirurgia é necessária.",
+  "correta": "**Correta: C (perineuro).** O **perineuro** é o tecido conjuntivo denso e resistente que envolve cada **fascículo** (grupo de fibras nervosas). Ele forma a barreira hematoneural e dá ao nervo grande parte da sua resistência à tração.",
+  "incorretas": {
+   "A": "O **epineuro externo** envolve o **nervo inteiro**, e não cada fascículo.",
+   "B": "O **epineuro interno** preenche o espaço **entre** os fascículos. Não é a bainha que envolve cada fascículo.",
+   "D": "O **endoneuro** é um tecido frouxo que envolve **cada fibra nervosa**, e não o fascículo."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)",
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
   ],
   "geradoEm": "2026-10-05",
   "conferido": false

@@ -1370,14 +1370,18 @@
   "conferido": false
  },
  "trauma-0117": {
+  "conceito": "**A fratura da cabeça do fêmur.** É uma lesão rara, que quase sempre acompanha a **luxação posterior do quadril** (em cerca de 5 a 15% delas). O mecanismo típico é o **trauma do painel**: o joelho bate no painel do carro com o quadril fletido, e a força empurra a cabeça femoral para trás.\n\n**Por que o fragmento é anteromedial.** Ao sair do acetábulo para trás, a cabeça **bate na borda posterior** do acetábulo. A borda funciona como uma lâmina e **cisalha** a porção da cabeça que está em contato com ela, a porção **anteromedial** (anteroinferior). Esse fragmento costuma **ficar dentro do acetábulo**, muitas vezes ainda preso ao **ligamento redondo**, enquanto o resto da cabeça sai para trás.\n\n**A classificação de Pipkin.**\n\n| Tipo | Fratura |\n|---|---|\n| **I** | Fragmento **abaixo** da fóvea (fora da área de carga) |\n| **II** | Fragmento **acima** da fóvea (inclui a área de carga) |\n| **III** | Tipo I ou II com **fratura do colo** do fêmur |\n| **IV** | Tipo I ou II com **fratura do acetábulo** |\n\n**O prognóstico.** O tipo **III** é o pior, com alto risco de **necrose avascular**. A luxação em si também ameaça a irrigação da cabeça (artéria circunflexa femoral medial).\n\n**O tratamento.**\n1. **Redução urgente** da luxação, idealmente em menos de **6 horas**, para reduzir o risco de necrose.\n2. **Tomografia** depois da redução, para ver o fragmento, a congruência e fragmentos intra-articulares.\n3. **Pipkin I** com redução congruente: pode ser tratado **sem cirurgia**, ou com excisão de fragmentos pequenos.\n4. **Pipkin II** (área de carga): **redução aberta e fixação**, geralmente por via **anterior** (Smith-Petersen) ou pela luxação cirúrgica (Ganz), já que o fragmento é anteromedial.\n5. **Pipkin III**: fixação do colo e da cabeça no jovem; artroplastia no idoso.\n6. **Pipkin IV**: tratar a fratura do acetábulo e a da cabeça.\n\n**As complicações.** Necrose avascular, artrose pós-traumática, ossificação heterotópica e lesão do nervo ciático (na luxação posterior).",
+  "correta": "**Correta: B (anteromedial).** Na fratura da cabeça do fêmur (Pipkin), associada à luxação posterior do quadril, a borda posterior do acetábulo cisalha a porção **anteromedial** da cabeça. Esse fragmento costuma ficar dentro do acetábulo, preso ao ligamento redondo.",
   "incorretas": {
-   "A": "A parte anterolateral não é o local típico do cisalhamento.",
-   "C": "A parte posterolateral não é a cisalhada pela borda posterior.",
-   "D": "A parte posteromedial não é o fragmento típico."
+   "A": "A porção **anterolateral** não é a cisalhada. O fragmento corresponde à parte da cabeça em contato com a borda posterior durante a luxação, a anteromedial.",
+   "C": "A porção **posterolateral** é a que sai do acetábulo junto com a cabeça, e não o fragmento cisalhado.",
+   "D": "A porção **posteromedial** não é a localização típica do fragmento livre."
   },
-  "conceito": "Na **fratura da cabeça do fêmur** (Pipkin), a cabeça quebra durante a **luxação posterior** do quadril: ao sair, ela bate na **borda posterior** do acetábulo, e a borda **cisalha** um pedaço da cabeça.\n\n**Qual parte quebra**: a porção **anteromedial** da cabeça. Ela fica **dentro do acetábulo**, muitas vezes presa ao **ligamento redondo**, enquanto o resto da cabeça sai para trás.\n\n**A consequência para a cirurgia**: como o fragmento é **anterior**, a via **anterior** de **Smith-Petersen** dá acesso direto para fixá-lo. A luxação cirúrgica do quadril (Ganz) é a alternativa.\n\n**A conduta inicial**: reduzir a luxação com **urgência** (em menos de 6 horas) e fazer **TC** depois da redução, para ver o fragmento e a congruência.\n\n**Na prova**: o fragmento livre da cabeça femoral fica mais comumente na posição **anteromedial**.",
-  "correta": "A borda posterior do acetábulo cisalha a parte anteromedial da cabeça, que fica no acetábulo, presa ao ligamento redondo.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)",
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0118": {
@@ -3714,14 +3718,18 @@
   "conferido": false
  },
  "trauma-0338": {
+  "conceito": "**A síndrome compartimental aguda.** É o aumento da **pressão dentro de um compartimento** osteofascial fechado até um nível que **impede a perfusão** dos tecidos. As causas comuns são fraturas (sobretudo da **tíbia** e do antebraço), esmagamentos, reperfusão após isquemia, queimaduras e gessos apertados.\n\n**O mecanismo.** A pressão no compartimento sobe. Quando ela se aproxima da **pressão de perfusão** (a diferença entre a pressão arterial e a pressão do compartimento), as **vênulas colapsam**, o sangue não sai, a pressão sobe mais, e os capilares param de perfundir. O tecido entra em **isquemia**, mesmo com os **pulsos distais presentes** (a pressão arterial é muito maior que a do compartimento).\n\n**Quanto tempo cada tecido suporta (Matsen).**\n\n| Tecido | Alteração da função | Lesão irreversível |\n|---|---|---|\n| **Nervo** | A partir de **30 minutos** de isquemia | Após **12 a 24 horas** |\n| **Músculo** | Após **2 a 4 horas** | A partir de **4 a 8 horas** (necrose) |\n\n**O que isso explica na clínica.**\n- O **nervo** é o primeiro a mostrar alteração: a **parestesia** e a hipoestesia no território do nervo do compartimento são sinais **precoces**. Na perna, o primeiro sinal costuma ser a alteração sensitiva no **primeiro espaço interdigital** (nervo fibular profundo, compartimento anterior).\n- O **músculo** sofre necrose irreversível em poucas horas, e por isso a **fasciotomia** é uma **urgência**: idealmente, dentro de **6 horas**.\n\n**O diagnóstico.**\n- **Dor desproporcional** à lesão, que não melhora com analgesia: o sinal mais importante.\n- **Dor ao estiramento passivo** dos músculos do compartimento.\n- Compartimento **tenso** à palpação.\n- Parestesia.\n- A **paralisia** e a **ausência de pulso** são sinais **tardios**: esperar por eles é perder o membro.\n- Medida da pressão: **pressão diferencial** (pressão diastólica menos a pressão do compartimento) **menor que 30 mmHg** indica fasciotomia. É especialmente útil no paciente inconsciente ou sedado.\n\n**O tratamento.** **Fasciotomia** de todos os compartimentos envolvidos. Na perna, dos **quatro** compartimentos (anterior, lateral, posterior superficial e profundo), por duas incisões. As feridas ficam abertas e são fechadas depois, ou cobertas com enxerto.",
+  "correta": "**Correta: B (30 minutos).** Segundo Matsen, a função do **nervo** se altera a partir de cerca de **30 minutos** de isquemia, e a lesão nervosa irreversível ocorre após 12 a 24 horas. Por isso, a parestesia é um sinal relativamente precoce da síndrome compartimental.",
   "incorretas": {
-   "A": "10 minutos é cedo demais para alterar a função do nervo.",
-   "C": "Aos 60 minutos, a função do nervo já está alterada.",
-   "D": "90 minutos é tardio para o início da alteração."
+   "A": "**10 minutos** é pouco tempo: a alteração da função nervosa descrita por Matsen começa por volta dos 30 minutos.",
+   "C": "**60 minutos** é mais que o tempo descrito para o início da alteração da função nervosa (cerca de 30 minutos).",
+   "D": "**90 minutos** superestima. Nesse tempo, o nervo já está disfuncional; a necrose muscular começa a partir de 4 horas."
   },
-  "conceito": "**Matsen** mediu quanto tempo cada tecido suporta sem perfusão, base da urgência da **síndrome compartimental**:\n\n**nervo**:\n\n**alteração da função** a partir de **30 minutos** de isquemia;\n\n**lesão irreversível** após 12 a 24 horas;\n\n**músculo**:\n\n**alteração da função** após 2 a 4 horas;\n\n**necrose irreversível** a partir de 4 a 12 horas.\n\n**O que isso explica**: a **parestesia** é um sinal relativamente **precoce**, porque o nervo sofre logo. Mas é a **necrose muscular** que marca o relógio: a fasciotomia deve ser feita idealmente em até **6 horas** do início.\n\n**A fasciotomia tardia**: com o músculo já morto (mais de 8 a 12 horas), abrir expõe tecido necrótico, com risco de **infecção** e **insuficiência renal** por mioglobinúria. Em alguns casos tardios, prefere-se não abrir.\n\n**Na prova**: segundo Matsen, a função do nervo se altera a partir de **30 minutos**.",
-  "correta": "O nervo é o tecido que sofre primeiro: sua função se altera após 30 minutos de isquemia.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)",
+   "Matsen FA. Compartmental syndrome: an unified concept. Clin Orthop Relat Res. 1975;(113):8-14."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0339": {
@@ -6585,17 +6593,18 @@
   "conferido": false
  },
  "trauma-0804": {
+  "conceito": "**A lesão de Monteggia.** É a **fratura da ulna** associada à **luxação da cabeça do rádio**. Giovanni Monteggia descreveu a lesão em 1814. A regra prática é: **em toda fratura da ulna, olhe a articulação radiocapitelar**, e em toda luxação da cabeça do rádio, procure uma lesão da ulna.\n\n**A classificação de Bado.** A luxação da cabeça do rádio segue a direção do **ápice** da fratura da ulna.\n\n| Tipo | Cabeça do rádio | Em quem |\n|---|---|---|\n| **1** | Luxação **anterior**; ulna com ápice anterior | O **mais comum** em geral e na **criança** |\n| **2** | Luxação **posterior** ou posterolateral; ulna com ápice **posterior** | **Quase exclusivo do adulto** (mais em idosos com osso osteoporótico) |\n| **3** | Luxação **lateral**; fratura metafisária da ulna em varo | Comum na **criança** |\n| **4** | Luxação anterior com fratura do rádio **e** da ulna | Raro |\n\n**O tipo 2 no adulto.** O mecanismo lembra o de uma **luxação posterior do cotovelo**: carga axial com o cotovelo fletido, em pessoas com osso mais frágil. A fratura da ulna costuma ser **proximal**, muitas vezes com um fragmento triangular anterior (coronoide) e com **fratura da cabeça do rádio** associada. **Jupiter** subdividiu o tipo 2 pelo nível da fratura da ulna:\n- IIA: na altura do processo coronoide (olécrano distal);\n- IIB: na junção da metáfise com a diáfise, distal ao coronoide;\n- IIC: na diáfise;\n- IID: cominutiva, estendendo-se da metáfise à diáfise.\n\n**Por que é raro na criança.** O osso infantil é elástico e o periósteo é grosso. As forças que produzem uma luxação posterior no adulto tendem a causar, na criança, uma fratura supracondiliana ou do colo do rádio.\n\n**O tratamento no adulto.**\n- **Redução aberta e fixação** da ulna com **placa**, restaurando o **comprimento e o alinhamento**. Com a ulna anatômica, a cabeça do rádio geralmente reduz.\n- Tratar as lesões associadas: **cabeça do rádio** (fixação ou prótese), **coronoide** e ligamento colateral lateral.\n- Os resultados do tipo 2 são **piores** que os dos outros tipos, pela instabilidade e pelas lesões associadas.\n\n**Na criança, o contraste.** A maioria é tratada com **redução fechada** e gesso. A fratura incompleta ou a deformidade plástica da ulna permitem a redução da cabeça do rádio sem cirurgia.",
+  "correta": "**Correta: B (2).** O tipo 2 de Bado, com **luxação posterior** da cabeça do rádio e fratura da ulna com ápice posterior, ocorre **quase exclusivamente em adultos**, sobretudo com osso osteoporótico. É raro na criança.",
   "incorretas": {
-   "A": "O tipo 1 é o mais comum, sobretudo na criança.",
-   "C": "O tipo 3 é comum na criança.",
-   "D": "O tipo 4 é raro, mas não exclusivo de adultos."
+   "A": "O tipo **1** (luxação anterior) é o **mais comum** de todos, inclusive na **criança**.",
+   "C": "O tipo **3** (luxação lateral, com fratura metafisária da ulna em varo) é **comum na criança**.",
+   "D": "O tipo **4** (luxação anterior com fratura dos dois ossos) é raro, mas ocorre em adultos e crianças. Não é o tipo característico do adulto."
   },
-  "conceito": "**Bado** classifica a **Monteggia** pela direção da cabeça do rádio:\n\n**tipo 1**: cabeça **anterior**; o mais comum, sobretudo na **criança**;\n\n**tipo 2**: cabeça **posterior** ou posterolateral; ocorre **quase exclusivamente em adultos**, rara na criança;\n\n**tipo 3**: cabeça **lateral**, com fratura metafisária da ulna; comum na **criança**;\n\n**tipo 4**: cabeça **anterior**, com fratura **dos dois ossos**.\n\n**O tipo 2 do adulto**: é uma lesão de pacientes mais velhos, muitas vezes mulheres com osso frágil; costuma vir com fratura da **cabeça do rádio** e do **coronoide**, como uma fratura-luxação posterior do cotovelo. Tem os **piores resultados**. **Jupiter** o subdividiu pelo nível do traço da ulna.\n\n**O tratamento**: **placa** na ulna, restaurando o comprimento e o alinhamento; tratar a cabeça do rádio e o coronoide.\n\n**Na prova**: a Monteggia quase exclusiva de adultos é o **Bado tipo 2**.",
-  "correta": "O Bado 2, com cabeça do rádio posterior, ocorre quase só em adultos e é raro na criança.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.), Cap. 41"
+   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.), Cap. 41",
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0805": {
@@ -7501,6 +7510,23 @@
   "geradoEm": "2026-09-30",
   "conferido": false
  },
+ "trauma-0906": {
+  "conceito": "**As fraturas periprotéticas da patela.** Ocorrem após a **artroplastia total do joelho**, sobretudo quando a patela foi **recapeada** (com componente patelar). A patela fica mais fina e frágil, e a irrigação pode ter sido prejudicada pela via de acesso medial e pela liberação lateral. Outras causas são o mau alinhamento do componente, o excesso de ressecção óssea e o trauma.\n\n**O que define o tratamento.** Três perguntas:\n1. O **aparelho extensor** está íntegro?\n2. O **componente patelar** está **fixo** ou **solto**?\n3. Há **estoque ósseo** suficiente na patela?\n\n**A classificação de Ortiguera e Berry.**\n\n| Tipo | Achado | Tratamento |\n|---|---|---|\n| I | Componente **fixo**, aparelho extensor **íntegro** | **Conservador** (imobilização em extensão) |\n| II | Aparelho extensor **rompido** | **Cirurgia**: reparo do aparelho extensor e fixação, com ou sem remoção do componente |\n| **III** | **Componente patelar solto**, aparelho extensor íntegro | **IIIa** (bom estoque ósseo): revisão ou **remoção do componente**; **IIIb** (osso pobre): remoção do componente com patelectomia parcial ou patelaplastia |\n\n**O raciocínio para o caso.** No tipo **III**, o componente patelar está **solto**. A imobilização (alternativas A e B) não resolve um componente solto numa fratura desviada. A troca do componente (alternativa C) exige um estoque ósseo que geralmente não existe numa patela fraturada e desviada, e a fixação de um novo componente sobre o foco tende a falhar. Por isso, a conduta mais sensata é **remover o componente patelar** e fazer a **osteossíntese** dos fragmentos, deixando a patela sem recapeamento (patelaplastia).\n\n**Os resultados.** As fraturas periprotéticas da patela têm **altas taxas de complicação** após a cirurgia: pseudoartrose, falha da fixação, infecção e perda da extensão ativa. Por isso, sempre que possível, prefere-se o tratamento conservador (tipo I). Quando a cirurgia é necessária, o objetivo é preservar um aparelho extensor funcional.",
+  "correta": "**Provável correta: D (remoção do componente patelar e osteossíntese de patela).** Numa fratura periprotética desviada da patela do tipo III (componente patelar solto), a conduta mais adequada é **remover o componente** e fixar os fragmentos. A troca do componente sobre uma patela fraturada e sem estoque ósseo tende a falhar.",
+  "incorretas": {
+   "A": "A **imobilização rígida** serve ao tipo I (componente fixo e aparelho extensor íntegro). Não resolve um componente solto numa fratura desviada.",
+   "B": "A **imobilização articulada** também é um tratamento conservador, inadequado para o componente solto do tipo III.",
+   "C": "A **troca do componente** exige bom estoque ósseo, que raramente existe numa patela fraturada e desviada. A fixação de um novo componente sobre o foco tem alto risco de falha."
+  },
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
+   "Ortiguera CJ, Berry DJ. Patellar fracture after total knee arthroplasty. J Bone Joint Surg Am. 2002;84(4):532-540."
+  ],
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada é a sustentada pela bibliografia, assumindo a classificação de Ortiguera e Berry, em que o tipo III corresponde ao componente patelar solto.",
+  "provavel": "D",
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
  "trauma-0907": {
   "incorretas": {
    "B": "A fratura do esterno é menos frequente.",
@@ -8400,19 +8426,19 @@
   "conferido": false
  },
  "trauma-0991": {
-  "conceito": "### Camadas do compartimento volar\n| Camada | Músculos |\n|---|---|\n| ==superficial== | ==pronador redondo==, flexor radial do carpo, palmar longo, flexor ulnar do carpo |\n| intermediária | flexor superficial dos dedos |\n| profunda | flexor profundo dos dedos, flexor longo do polegar, **pronador quadrado** |\n\n### Pronador redondo\n- Duas cabeças: **umeral** (epicôndilo medial) e **ulnar** (processo coronoide).\n- Trajeto ==oblíquo== até o **terço médio da face lateral do rádio**.\n- O **nervo mediano** passa entre as cabeças (síndrome do pronador).\n- Via de Henry: o pronador é desinserido (com o antebraço em pronação) para expor o terço médio do rádio.\n\n### Pronador quadrado\n- Lâmina **transversa** entre rádio e ulna distais; camada profunda.\n- Desinserido na via volar para placas do rádio distal.\n\n> **Na prova:** grande ventre da camada intermediária = ==flexor superficial dos dedos==",
-  "correta": "**Flexor superficial dos dedos.**\n- Camada intermediária, grande ventre.\n- Anterior ao plano profundo.",
+  "conceito": "**A imagem.** Mostra cortes transversais do antebraço em três níveis. No corte do **terço médio**, a seta aponta um músculo volumoso da **camada intermediária**, logo abaixo da camada superficial e acima dos flexores profundos, ocupando boa parte da face anterior: o **flexor superficial dos dedos**.\n\n**O compartimento anterior (flexor) do antebraço.** Tem **três camadas** musculares, que se entendem melhor de fora para dentro.\n\n| Camada | Músculos |\n|---|---|\n| **Superficial** | Pronador redondo, flexor radial do carpo, palmar longo, flexor ulnar do carpo |\n| **Intermediária** | **Flexor superficial dos dedos** |\n| **Profunda** | Flexor profundo dos dedos, flexor longo do polegar, pronador quadrado |\n\n**Os músculos superficiais** nascem do **epicôndilo medial** pelo tendão flexor comum. Uma forma de memorizar a posição é colocar a mão sobre o antebraço oposto, com o polegar no epicôndilo medial: o polegar e os quatro dedos apontam para o pronador redondo, o flexor radial do carpo, o palmar longo e o flexor ulnar do carpo.\n\n**O flexor superficial dos dedos.** É o **maior** músculo do compartimento e forma sozinho a **camada intermediária**. Tem duas cabeças:\n- **umeroulnar** (epicôndilo medial e processo coronoide);\n- **radial** (face anterior do rádio, na diáfise proximal).\n\nEntre as duas cabeças forma-se um **arco tendíneo**, por onde passam o **nervo mediano** e a artéria ulnar. Esse arco é um dos locais de compressão do mediano na síndrome do pronador. No terço médio do antebraço, o flexor superficial ocupa uma grande área do corte transversal, logo abaixo da camada superficial. O **nervo mediano** corre na face **profunda** do músculo, preso à sua fáscia.\n\n**A camada profunda.**\n- O **flexor profundo dos dedos** fica junto à **ulna** e à membrana interóssea.\n- O **flexor longo do polegar** fica junto ao **rádio**.\n- O **pronador quadrado** fica no quarto distal, junto aos dois ossos.\n- O **nervo interósseo anterior** e a artéria interóssea anterior correm sobre a membrana, entre o flexor profundo e o flexor longo do polegar.\n\n**A inervação.**\n- Quase todos são inervados pelo **mediano** (o interósseo anterior inerva o flexor longo do polegar, a metade radial do flexor profundo e o pronador quadrado).\n- O **ulnar** inerva o **flexor ulnar do carpo** e a metade ulnar do **flexor profundo** (4º e 5º dedos).\n\n**Como testar os flexores dos dedos.**\n- **Flexor superficial**: segura-se os outros dedos em extensão (bloqueando o flexor profundo, que tem um ventre comum) e pede-se para fletir a interfalângica proximal do dedo testado.\n- **Flexor profundo**: segura-se a interfalângica proximal em extensão e pede-se para fletir a distal.",
+  "correta": "**Correta: A (flexor superficial dos dedos).** No corte do terço médio do antebraço, a seta indica o músculo volumoso da **camada intermediária** do compartimento flexor, que é o **flexor superficial dos dedos**. O nervo mediano corre na sua face profunda.",
   "incorretas": {
-   "B": "**Plano profundo.**\n- Junto à ulna e membrana.",
-   "C": "**Profundo e radial.**\n- Junto ao rádio.",
-   "D": "**Superficial.**\n- Ventre menor."
+   "B": "O **flexor profundo dos dedos** fica na camada **profunda**, junto à **ulna** e à membrana interóssea, abaixo do flexor superficial.",
+   "C": "O **flexor longo do polegar** fica na camada **profunda**, junto ao **rádio**.",
+   "D": "O **flexor radial do carpo** fica na camada **superficial**. No terço médio, já é um ventre mais delgado, com o tendão se formando."
   },
   "referencias": [
    "Standring S. Gray's Anatomy. 42nd ed. Elsevier; 2020. Anterior compartment of the forearm.",
    "Netter FH. Atlas of Human Anatomy. 8th ed. Elsevier; 2022. Forearm cross-sectional anatomy.",
    "Netter, Atlas de Anatomia Humana, 7ª edição, Seção 7"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0992": {
