@@ -4454,14 +4454,18 @@
   "conferido": false
  },
  "pediatria-0408": {
-  "conceito": "### Sinovite transitória do quadril\n- Causa mais comum de dor no quadril entre ==3 e 8 anos==; meninos; frequentemente após virose.\n- Claudicação, quadril em flexão, abdução e RE; afebril ou febre baixa.\n- Autolimitada: 1 a 2 semanas, repouso e anti-inflamatório.\n- ==Recorrência anual de cerca de 4%==; pequena associação posterior com Perthes.\n\n### Diferencial com artrite séptica (Kocher)\n| Critério |\n|---|\n| febre > 38,5 °C |\n| não apoia o membro |\n| VHS > 40 mm/h |\n| leucócitos > 12.000 |\n| (+ PCR > 2 mg/dL, Caird) |\n\n| Nº de critérios | Probabilidade de séptica |\n|---|---|\n| 0 | < 1% |\n| 2 | cerca de 40% |\n| 3 | cerca de 93% |\n| 4 | > 99% |\n\n- Ultrassom mostra derrame nos dois; punção guiada se dúvida.\n\n> **Na prova:** sinovite transitória = pico entre ==5 e 6 anos== (faixa de 3 a 8)",
-  "correta": "**5 a 6 anos.**\n- Pico dentro da faixa de 3 a 8.\n- Meninos, após virose.",
+  "conceito": "**A causa mais comum de dor no quadril infantil.** A sinovite transitória é uma inflamação aguda, não infecciosa e autolimitada da membrana sinovial do quadril. Geralmente aparece dias após uma infecção viral de vias aéreas superiores, sugerindo um mecanismo imunológico reativo.\n\n**Epidemiologia.**\n- Faixa de **3 a 8 anos**, com **média em torno de 5 a 6 anos**.\n- **Meninos** mais acometidos, cerca de 2 para 1.\n- Geralmente unilateral.\n\n**Quadro clínico.** Claudicação ou recusa em apoiar, dor no quadril, na coxa ou no joelho (dor referida pelo nervo obturador), quadril mantido em **flexão, abdução e rotação externa**, posição de maior volume capsular. A criança está em bom estado geral, afebril ou com febre baixa.\n\n**O diagnóstico diferencial pela idade.**\n\n| Faixa etária | Diagnósticos mais prováveis |\n|---|---|\n| Menos de 3 anos | **Artrite séptica**, displasia do quadril, maus-tratos |\n| **3 a 8 anos** | **Sinovite transitória**, Legg-Calvé-Perthes |\n| 8 a 10 anos | Perthes tardio, início da epifisiólise em obesos |\n| 10 a 15 anos | **Epifisiólise proximal do fêmur**, apofisites |\n\n**O ponto crítico: afastar artrite séptica.** Os **critérios de Kocher** (febre acima de 38,5 °C, recusa de carga, VHS acima de 40 mm/h, leucócitos acima de 12.000) e a PCR elevada aumentam a suspeita de infecção. A ultrassonografia confirma o derrame, e a punção está indicada quando a suspeita de infecção é alta.\n\n**Evolução.** Repouso e anti-inflamatório; os sintomas melhoram em dias e somem em 1 a 2 semanas. Recorrência em cerca de 4% ao ano, e pequena associação posterior com Perthes.",
+  "correta": "**Correta: B (5 a 6 anos).** A sinovite transitória acomete principalmente crianças entre 3 e 8 anos, com pico e média em torno de 5 a 6 anos.",
   "incorretas": {
-   "A": "**2 a 3 anos.**\n- Início da faixa; menos frequente.",
-   "C": "**8 a 10 anos.**\n- Fim da faixa; pensar em Perthes.",
-   "D": "**12 a 14 anos.**\n- Pensar em epifisiólise."
+   "A": "Aos **2 a 3 anos**, a sinovite transitória é menos frequente, e um quadril doloroso nessa idade deve levantar forte suspeita de **artrite séptica**.",
+   "C": "Entre **8 e 10 anos** a frequência já cai, e outras causas, como o Perthes tardio, passam a pesar mais.",
+   "D": "Entre **12 e 14 anos**, a dor no quadril com claudicação deve sugerir **epifisiólise proximal do fêmur**."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Kocher MS, Zurakowski D, Kasser JR. Differentiating between septic arthritis and transient synovitis of the hip in children: an evidence-based clinical prediction algorithm. J Bone Joint Surg Am. 1999;81(12):1662-1670.",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0409": {
@@ -5303,14 +5307,18 @@
   "formato": "corrido"
  },
  "pediatria-0484": {
-  "conceito": "### Neurofibromatoses\n| Tipo | Nome | Gene | Achados | Ortopedia |\n|---|---|---|---|---|\n| ==NF1== | ==periférica== (von Recklinghausen) | neurofibromina (17q) | café-com-leite, neurofibromas, Lisch, Crowe | ==frequente== |\n| NF2 | central | merlina (22q) | ==schwannoma vestibular bilateral==, meningiomas | rara |\n| schwannomatose | | SMARCB1, LZTR1 | schwannomas múltiplos dolorosos | |\n\n### NF1 na ortopedia\n| Manifestação | Detalhe |\n|---|---|\n| escoliose | a mais comum; distrófica (raio curto) |\n| pseudartrose congênita da tíbia | anterolateral |\n| hipertrofia de membro | elefantíase |\n| TMBNP | transformação do plexiforme |\n| deficiência de vitamina D, osteoporose | |\n\n- Herança dominante; metade mutação nova.\n\n> **Na prova:** NF1 = ==periférica, manifestações ortopédicas frequentes==.",
-  "correta": "**Periférica, ortopedia frequente.**\n- Escoliose, pseudartrose da tíbia.\n- Hipertrofia de membro.",
+  "conceito": "**As neurofibromatoses.** São doenças genéticas autossômicas dominantes (cerca de metade dos casos por mutação nova) que predispõem a tumores de bainha nervosa. Antigamente eram divididas em \"periférica\" e \"central\", conforme o tipo de tumor predominante.\n\n| Tipo | Gene | Achados principais |\n|---|---|---|\n| **NF1, periférica** (von Recklinghausen) | Neurofibromina, cromossomo 17 | Manchas café com leite, neurofibromas, nódulos de Lisch, efélides axilares; **manifestações ortopédicas frequentes** |\n| NF2, central | Merlina, cromossomo 22 | **Schwannomas vestibulares bilaterais**, meningiomas; manifestações ortopédicas raras |\n\n**A NF1 é a de interesse ortopédico.** Os critérios diagnósticos (pelo menos dois) incluem seis ou mais manchas café com leite (maiores que 5 mm antes da puberdade, 15 mm depois), dois ou mais neurofibromas ou um plexiforme, efélides axilares ou inguinais, glioma óptico, dois ou mais nódulos de Lisch, lesão óssea característica e parente de primeiro grau afetado.\n\n**As manifestações ortopédicas mais cobradas.**\n- **Escoliose**: a mais comum. A forma **distrófica** (curva curta e angular, vértebras com escavação, costelas em lápis, ectasia dural) progride rapidamente e exige artrodese precoce; a não distrófica comporta-se como idiopática.\n- **Pseudartrose congênita da tíbia**: arqueamento **anterolateral** da tíbia, que fratura e não consolida. Cerca de metade dos pacientes com pseudartrose congênita da tíbia tem NF1.\n- **Hipercrescimento** de um membro (hemi-hipertrofia), por neurofibroma plexiforme ou elefantíase.\n- Displasia do antebraço, pseudartrose da ulna ou do rádio.\n- **Tumor maligno da bainha do nervo periférico**: neurofibroma que cresce rápido ou fica doloroso deve ser investigado.",
+  "correta": "**Correta: C (periférica e apresenta frequentemente manifestações ortopédicas).** A NF1 é a forma **periférica** (von Recklinghausen) e tem manifestações ortopédicas frequentes, como escoliose distrófica e pseudartrose congênita da tíbia.",
   "incorretas": {
-   "A": "**Central.**\n- É a NF2.",
-   "B": "**Central e rara.**\n- Descrição da NF2.",
-   "D": "**Raramente.**\n- NF1 tem muitas manifestações ortopédicas."
+   "A": "A forma **central** é a **NF2**, caracterizada por schwannomas vestibulares bilaterais, e não a NF1.",
+   "B": "Erra duas vezes: a NF1 não é a forma central, e suas manifestações ortopédicas são **frequentes**, não raras.",
+   "D": "A NF1 é periférica, mas as manifestações ortopédicas são **frequentes**: a escoliose é uma das complicações mais comuns da doença."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Morrissy RT, Weinstein SL. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott Manole."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0485": {
@@ -10400,15 +10408,18 @@
   "conferido": false
  },
  "pediatria-0847": {
-  "conceito": "A **classificação de Watson-Jones modificada por Ogden** descreve as fraturas da **tuberosidade anterior da tíbia** no adolescente:\n- **Tipo I**: só a ponta distal da tuberosidade.\n- **Tipo II**: o traço chega à junção da tuberosidade com a epífise proximal.\n- **Tipo III**: o traço **atravessa a epífise e entra na articulação** do joelho.\n- **Tipo IV**: o traço segue pela fise posteriormente (tipo Salter-Harris II); o **tipo V** de Ogden é a forma em \"Y\" com avulsão do tendão.\n\n**Na imagem**: o traço sobe da tuberosidade e chega à superfície articular: **tipo III**.\n\n**Atenção**: o tipo III se associa a lesões intra-articulares e a síndrome compartimental (artéria recorrente tibial anterior).",
-  "correta": "O traço que parte da tuberosidade e entra na articulação do joelho caracteriza o tipo III.",
+  "conceito": "**A tuberosidade anterior da tíbia no adolescente.** A tuberosidade se desenvolve como uma extensão anterior da fise proximal da tíbia, em forma de língua. Pouco antes do fechamento fisário (por volta de 13 a 16 anos), a fise da tuberosidade passa por uma fase em que as colunas de cartilagem são substituídas por fibrocartilagem, mais frágil à tração. Uma contração violenta do quadríceps (salto, aterrissagem) pode então **avulsionar** a tuberosidade. É uma lesão típica de meninos atletas, às vezes com Osgood-Schlatter prévio.\n\n**A classificação de Watson-Jones modificada por Ogden** descreve até onde o traço se estende.\n\n| Tipo | Extensão do traço |\n|---|---|\n| I | Pela ponta distal da tuberosidade (centro de ossificação secundário) |\n| II | Até a junção da tuberosidade com a epífise proximal da tíbia |\n| **III** | **Atravessa a epífise e entra na articulação do joelho** |\n| IV | Segue pela fise proximal da tíbia até a cortical posterior (descrito depois) |\n| V | Combinação em Y do tipo III com o IV (descrito depois) |\n\nCada tipo é subdividido em **A** (fragmento único) e **B** (cominuído ou com desvio maior).\n\n**A imagem.** O perfil do joelho de um adolescente com fises ainda abertas mostra a tuberosidade deslocada para cima e para a frente, com o traço subindo pela epífise proximal da tíbia até a superfície articular. É o **tipo III**, intra-articular.\n\n**Por que o tipo III é diferente.**\n- Por ser **intra-articular**, exige redução anatômica da superfície articular, geralmente aberta, com fixação por parafusos.\n- Pode haver **lesão meniscal** associada, por isso se avalia a articulação.\n- Atenção à **síndrome compartimental**: a artéria recorrente tibial anterior pode ser lesada e sangrar no compartimento anterior.\n- O risco de **recurvato** por parada de crescimento é baixo, porque a lesão ocorre perto do fim do crescimento.",
+  "correta": "**Correta: C (tipo III).** O traço de fratura da tuberosidade anterior da tíbia atravessa a epífise proximal e **entra na articulação** do joelho, o que define o tipo III de Watson-Jones modificado por Ogden.",
   "incorretas": {
-   "A": "No tipo I, só a ponta distal da tuberosidade é arrancada, longe da articulação.",
-   "B": "No tipo II, o traço chega à base da tuberosidade sem entrar na articulação.",
-   "D": "No tipo IV, o traço segue pela fise até a cortical posterior da tíbia."
+   "A": "O **tipo I** acomete apenas a ponta distal da tuberosidade, sem chegar à epífise.",
+   "B": "No **tipo II**, o traço chega à junção da tuberosidade com a epífise, mas **não entra** na articulação.",
+   "D": "O **tipo IV** segue pela fise proximal da tíbia até a cortical posterior, separando toda a epífise; não é o padrão mostrado."
   },
-  "referencias": [],
-  "geradoEm": "2026-10-04T17:01:01+00:00",
+  "referencias": [
+   "Ogden JA, Tross RB, Murphy MJ. Fractures of the tibial tuberosity in adolescents. J Bone Joint Surg Am. 1980;62(2):205-215.",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0848": {
@@ -10427,15 +10438,18 @@
   "conferido": false
  },
  "pediatria-0849": {
-  "conceito": "Na fratura do **terço distal dos ossos do antebraço** na criança, a complicação mais frequente é a **consolidação viciosa** (perda da redução no gesso e consolidação com angulação).\n\n**Por que acontece**: a redução se perde em até um terço dos casos, sobretudo quando as duas corticais estão rompidas ou a redução inicial não foi anatômica. Por isso, a radiografia de controle nas primeiras semanas é obrigatória.\n\n**Remodelação**: perto da fise distal e na criança pequena, angulações moderadas remodelam bem, o que torna muitas dessas consolidações viciosas toleráveis.\n\n**Refratura** é mais típica das fraturas **diafisárias**; pseudoartrose e distúrbio do crescimento são raros.",
-  "correta": "A perda da redução no gesso faz da consolidação viciosa a complicação mais comum da fratura distal do antebraço.",
+  "conceito": "**A fratura mais comum do antebraço infantil.** As fraturas do terço distal do rádio e da ulna são muito frequentes na criança, por queda com a mão estendida. Podem ser em toro (fivela), em galho verde ou completas, e a maioria é tratada com redução fechada e gesso.\n\n**O problema é manter a redução.** Mesmo após uma boa redução, a fratura pode **voltar a desviar dentro do gesso** nas primeiras duas a três semanas. As séries mostram perda da redução em cerca de **um terço** dos casos completos. Os fatores de risco:\n- fratura **completa** (as duas corticais rompidas), sobretudo com translação total;\n- redução inicial **não anatômica** (angulação residual ou translação);\n- fratura isolada do rádio com ulna íntegra, ou fratura das duas ossos no mesmo nível;\n- gesso mal moldado, com **índice de gesso** (largura sagital dividida pela coronal no foco) acima de 0,7 a 0,8;\n- diminuição do edema, que afrouxa o gesso.\n\n**O resultado: consolidação viciosa.** Se a perda não é detectada, a fratura consolida angulada. É a **complicação mais frequente** dessas fraturas. Na maioria das crianças pequenas, a remodelação corrige bem a angulação no plano do movimento do punho, mas angulações grandes em crianças mais velhas, ou deformidades rotacionais, podem limitar a pronossupinação.\n\n**Como prevenir.**\n1. Radiografias de controle semanais nas **primeiras 2 a 3 semanas**.\n2. Gesso bem moldado, com três pontos de apoio e índice de gesso adequado.\n3. Considerar fixação com fios de Kirschner percutâneos em fraturas completas com alto risco de desvio, em adolescentes ou quando a redução é instável.\n4. Repetir a redução se houver perda além dos limites aceitáveis para a idade.\n\n**Outras complicações, menos frequentes.** Refratura (mais comum nas diafisárias), distúrbio do crescimento (raro, principalmente após lesões fisárias com desvio grave ou manipulações repetidas) e síndrome compartimental.",
+  "correta": "**Correta: C (consolidação viciosa).** A complicação mais frequente da fratura do terço distal do antebraço na criança é a **consolidação viciosa**, consequência da perda da redução dentro do gesso, que ocorre em até um terço dos casos completos.",
   "incorretas": {
-   "A": "A refratura é típica das fraturas diafisárias, não das do terço distal.",
-   "B": "A pseudoartrose é rara na criança, que consolida rápido.",
-   "D": "O distúrbio do crescimento é raro e ligado às lesões da fise, não às fraturas metafisárias."
+   "A": "A **refratura** acontece, mas é mais típica das fraturas **diafisárias**, sobretudo após retirada precoce do gesso.",
+   "B": "A **pseudartrose** é muito rara na criança, cuja capacidade de consolidação é excelente.",
+   "D": "O **distúrbio do crescimento** é incomum; ocorre sobretudo após lesões fisárias com desvio grave ou após manipulações repetidas e tardias."
   },
-  "referencias": [],
-  "geradoEm": "2026-10-04T17:01:01+00:00",
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0850": {
