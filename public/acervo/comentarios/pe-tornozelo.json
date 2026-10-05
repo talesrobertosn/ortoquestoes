@@ -1984,17 +1984,18 @@
   "conferido": false
  },
  "pe-tornozelo-0203": {
-  "conceito": "### Equinovaro na PC\n- Desequilíbrio entre ==tibial posterior== e/ou ==tibial anterior== espásticos e fibulares fracos.\n- Mais comum na ==hemiplegia==.\n- Definir o culpado: EMG dinâmica, exame (varo no apoio × balanço).\n\n### Procedimentos\n| Epônimo | Técnica |\n|---|---|\n| ==Hoffer (SPLATT)== | hemitransferência do ==tibial anterior== para o cuboide |\n| ==Rancho== | ==alongamento do tibial posterior + SPLATT== |\n| Green | transferência do tibial posterior pela membrana interóssea |\n| Kaufer | hemitransferência do tibial posterior (SPLOTT) para o fibular curto |\n| Turco | liberação posteromedial (PTC congênito) |\n\n- Transferência total do tibial posterior na PC: risco de ==valgo== (evitada).\n\n> **Na prova:** alongamento do TP + hemitransferência do TA = ==Rancho==",
-  "correta": "**Rancho.**\n- Alonga o tibial posterior.\n- Soma a hemitransferência do tibial anterior (SPLATT).",
+  "conceito": "**O pé equinovaro na paralisia cerebral.** É a deformidade típica da **hemiplegia espástica**: o pé fica em equino e o retropé em varo, com apoio na borda lateral, calosidades e instabilidade na marcha. O varo é causado pelo desequilíbrio entre os inversores espásticos e os eversores (fibulares) mais fracos. Os culpados possíveis são dois:\n- **tibial posterior**: hiperativo em todo o ciclo, sobretudo no apoio, causando varo do retropé;\n- **tibial anterior**: hiperativo no balanço, causando supinação do antepé e varo dinâmico.\n\nA **eletromiografia dinâmica** e a observação da marcha definem qual músculo é o responsável, o que orienta a escolha da cirurgia.\n\n**Os procedimentos com epônimo.**\n\n| Epônimo | Técnica |\n|---|---|\n| Hoffer (SPLATT) | **Hemitransferência do tibial anterior** para o cuboide |\n| **Rancho** | **Alongamento do tibial posterior** associado à **hemitransferência do tibial anterior** |\n| Green (SPOTT) | **Hemitransferência do tibial posterior** para o fibular curto |\n| Turco | Liberação posteromedial no **pé torto congênito**, não na paralisia cerebral |\n\n**A lógica da hemitransferência.** Transferir metade do tendão para o lado lateral transforma um músculo deformante em um estabilizador: a metade medial continua invertendo, a metade lateral passa a everter, e as duas forças se equilibram. Isso evita a hipercorreção em valgo que ocorria com a transferência do tendão inteiro.\n\n**O procedimento de Rancho**, desenvolvido no Rancho Los Amigos, une as duas ações: enfraquece o tibial posterior por **alongamento intramuscular ou em Z** e redistribui a força do tibial anterior com a hemitransferência para o cuboide. É indicado quando os dois músculos contribuem para o varo.",
+  "correta": "**Correta: B (Rancho).** O procedimento de Rancho combina o **alongamento do tibial posterior** com a **hemitransferência do tibial anterior** para o lado lateral do pé, tratando o equinovaro espástico quando os dois músculos participam da deformidade.",
   "incorretas": {
-   "A": "**Hoffer.**\n- Só a SPLATT, sem alongar o TP.",
-   "C": "**Turco.**\n- Liberação do PTC congênito.",
-   "D": "**Green.**\n- Transferência do TP pela membrana interóssea."
+   "A": "**Hoffer** descreveu a hemitransferência do tibial anterior (SPLATT) **isolada**, sem o alongamento do tibial posterior.",
+   "C": "**Turco** descreveu a liberação posteromedial em tempo único para o **pé torto congênito**.",
+   "D": "**Green** descreveu a hemitransferência do **tibial posterior** (SPOTT) para o fibular curto, e não do tibial anterior."
   },
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 31"
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 31",
+   "Green NE, Griffin PP, Shiavi R. Split posterior tibial-tendon transfer in spastic cerebral palsy. J Bone Joint Surg Am. 1983;65(6):748-754."
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pe-tornozelo-0204": {

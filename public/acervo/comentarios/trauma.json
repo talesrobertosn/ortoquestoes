@@ -6356,14 +6356,18 @@
   "conferido": false
  },
  "trauma-0791": {
-  "conceito": "Na fixação percutânea de fraturas do úmero distal com fios ou parafusos de entrada **lateral** (\"fios-bloqueio\" na coluna lateral), o trajeto do implante passa próximo ao **nervo radial**, que cruza posteriormente ao longo do septo intermuscular lateral antes de se dividir, e, se direcionado mais anteriormente, também se aproxima do **nervo musculocutâneo** (ou de seu ramo terminal, o cutâneo lateral do antebraço), que cruza a face anterior do braço distal, lateralmente ao tendão do bíceps.",
-  "correta": "C. Os nervos sob maior risco são o radial e o musculocutâneo.",
+  "conceito": "**O que a figura mostra.** É uma radioscopia do úmero distal com uma **haste intramedular anterógrada** já no canal e dois **parafusos de bloqueio distal**, indicados pela seta. O \"bloqueio\" do enunciado é o **travamento distal da haste**, e não um bloqueio anestésico.\n\n**Por que o bloqueio distal do úmero é perigoso.** No terço distal do braço, os nervos ficam muito próximos do osso e mudam de posição.\n- O **nervo radial** desce no sulco espiral pela face posterior do úmero, perfura o **septo intermuscular lateral** cerca de 10 cm acima do epicôndilo lateral e passa para o compartimento anterior, entre o **braquial** e o **braquiorradial**.\n- O **nervo musculocutâneo** corre na face anterior, entre o **bíceps** e o **braquial**, e termina como nervo cutâneo lateral do antebraço.\n- O **mediano** e a **artéria braquial** ficam na face anteromedial, e o **ulnar** na face posteromedial, atrás do septo intermuscular medial.\n\n**Os riscos pela direção do parafuso.**\n\n| Direção do bloqueio distal | Estruturas em risco |\n|---|---|\n| **Lateral para medial** | **Radial** (no septo lateral e no compartimento anterior); a ponta pode atingir mediano e ulnar se muito longa |\n| **Anterior para posterior** | **Musculocutâneo** e, se muito medial, mediano e artéria braquial; radial se muito lateral |\n\nOs parafusos de bloqueio distal, nas duas direções, cruzam o território do **radial** e do **musculocutâneo** na face anterolateral do braço, que são os nervos mais citados como em risco nessa etapa.\n\n**Como reduzir o risco.**\n1. Fazer uma **incisão maior** que o habitual (mini-aberta), dissecar de forma romba até o osso e usar **protetor de broca**.\n2. No bloqueio anteroposterior, afastar o bíceps medialmente e entrar pelo braquial, protegendo o musculocutâneo.\n3. Evitar parafusos excessivamente longos que atravessem a cortical oposta.\n4. Testar e documentar a função do radial antes e depois da cirurgia.",
+  "correta": "**Correta: C (radial e musculocutâneo).** No bloqueio distal da haste anterógrada do úmero, os nervos mais expostos são o **radial**, que cruza o septo intermuscular lateral e passa para a face anterolateral do terço distal, e o **musculocutâneo**, situado entre o bíceps e o braquial, na face anterior.",
   "incorretas": {
-   "A": "O **nervo ulnar** está sob maior risco em fios de entrada **medial** (posteriores ao epicôndilo medial), não na trajetória lateral indicada pela seta na imagem.",
-   "B": "Tanto o ulnar quanto o mediano estão mais associados a trajetos mediais de fixação, não à entrada lateral mostrada na imagem.",
-   "D": "O **nervo mediano** corre mais medialmente, próximo ao feixe braquial, sendo menos exposto por uma trajetória lateral do que o radial, o principal nervo em risco nessa via."
+   "A": "O **ulnar** fica posteromedial, atrás do septo intermuscular medial, e só é atingido por parafuso muito longo ou mal direcionado.",
+   "B": "**Ulnar e mediano** são estruturas mediais; o bloqueio distal é feito pelas faces lateral ou anterior, onde estão o radial e o musculocutâneo.",
+   "D": "O **mediano** acompanha a artéria braquial na face medial e corre risco apenas se o parafuso anteroposterior for colocado muito medialmente."
   },
-  "geradoEm": "2026-09-21",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 9ª edição, capítulo de fraturas da diáfise do úmero",
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0792": {
