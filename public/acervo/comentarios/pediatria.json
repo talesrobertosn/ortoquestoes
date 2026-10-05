@@ -397,19 +397,20 @@
   "conferido": false
  },
  "pediatria-0028": {
+  "conceito": "**A ultrassonografia de Graf.** É o exame de escolha para a DDQ **antes do aparecimento do núcleo** de ossificação da cabeça femoral, até cerca de 4 a 6 meses. Faz-se um corte **coronal** padronizado do quadril, com o bebê de lado. O corte deve mostrar o ilíaco reto, a borda inferior do ilíaco e o lábio.\n\n**As três linhas e os dois ângulos.**\n1. **Linha de base**: ao longo da superfície lateral do **ilíaco**.\n2. **Linha do teto ósseo**: da borda inferior do ilíaco ao promontório ósseo do acetábulo.\n3. **Linha do teto cartilaginoso**: do promontório ósseo ao centro do **lábio** acetabular.\n\n| Ângulo | Entre (o que avalia) | Normal |\n|---|---|---|\n| **Alfa** | Linha de base e **teto ósseo** (profundidade do acetábulo ósseo) | **60° ou mais** |\n| **Beta** | Linha de base e **teto cartilaginoso** (cobertura cartilaginosa e posição do lábio) | **Menor que 55°** |\n\n**Como interpretar.** O **alfa** é o principal: quanto **maior**, mais profundo e bem formado o acetábulo ósseo. O **beta** é complementar: quanto **maior**, mais o teto cartilaginoso está **empurrado para cima** pela cabeça que sobe e mais \"deslocado\" o quadril.\n\n**Os tipos de Graf.**\n\n| Tipo | Alfa | Situação |\n|---|---|---|\n| I (Ia, Ib) | 60° ou mais | **Normal** (Ia beta menor que 55°; Ib beta maior) |\n| IIa | 50 a 59°, menos de 3 meses | **Imaturo fisiológico**: reavaliar |\n| IIb | 50 a 59°, mais de 3 meses | **Atraso** de ossificação: tratar |\n| IIc | 43 a 49°, beta até 77° | Crítico, ainda centrado |\n| D | 43 a 49°, beta acima de 77° | **Descentrado** (subluxação) |\n| III e IV | Menor que 43° | **Luxados** (III: lábio evertido; IV: lábio invertido) |\n\n**O tratamento.** O tipo IIa é observado com novo exame em algumas semanas. Os tipos IIb, IIc, D, III e IV recebem tratamento, geralmente com o suspensório de Pavlik no lactente pequeno.",
+  "correta": "**Correta: C (beta com valor normal menor que 55 graus).** Na ultrassonografia de Graf, o ângulo entre a linha de base do **ilíaco** e o **teto cartilaginoso** (linha até o lábio) é o ângulo **beta**, normal abaixo de **55°**. O alfa, entre o ilíaco e o teto ósseo, é normal a partir de 60°.",
   "incorretas": {
-   "A": "O alfa mede o teto ósseo, e o normal é 60° ou mais, não menor que 55°.",
-   "B": "O valor está certo para o alfa, mas o alfa mede o teto ósseo, não o cartilaginoso.",
-   "D": "O ângulo é o beta, mas o normal é menor que 55°, não maior que 60°."
+   "A": "O ângulo **alfa** é medido entre o ilíaco e o teto **ósseo**, e seu valor normal é **60° ou mais**. Menor que 55° seria patológico.",
+   "B": "O **alfa** maior que 60° é a definição de quadril normal, mas o alfa mede o teto **ósseo**, e não o cartilaginoso.",
+   "D": "O ângulo **beta** é o do teto cartilaginoso, mas o normal é **menor** que 55°. Um beta alto indica cobertura cartilaginosa deslocada para cima."
   },
-  "conceito": "O **ultrassom de Graf** é o exame da displasia do quadril nos primeiros meses, quando a cabeça ainda é cartilagem. Com o transdutor na lateral do quadril, traçam-se linhas a partir da **linha do ilíaco**:\n\n**ângulo alfa**: entre o ilíaco e o **teto ósseo** do acetábulo; mede a **cobertura óssea**; normal **60° ou mais**;\n\n**ângulo beta**: entre o ilíaco e o **teto cartilaginoso** (o lábio); mede a **cobertura cartilaginosa**; normal **menor que 55°**. Quanto **maior** o beta, mais a cartilagem está sendo empurrada para cima pela cabeça que escapa.\n\n**Os tipos de Graf**:\n\n**I**: alfa 60° ou mais; normal;\n\n**IIa**: alfa entre 50 e 59° antes de 3 meses; imaturo, observar;\n\n**IIb**: o mesmo depois de 3 meses; tratar;\n\n**IIc**: alfa entre 43 e 49°, beta abaixo de 77°; tratar;\n\n**D**: alfa entre 43 e 49°, beta acima de 77°; descentrando;\n\n**III e IV**: alfa abaixo de 43°, quadril luxado (no IV, com o lábio invertido).\n\n**Na prova**: ângulo entre o ilíaco e o teto cartilaginoso = **beta**, normal **menor que 55°**.",
-  "correta": "O ângulo beta é formado pelo ilíaco e o teto cartilaginoso, e o valor normal é menor que 55°.",
   "referencias": [
    "Ultrasonography of the pediatric hip and spine. https://pmc.ncbi.nlm.nih.gov/articles/PMC5494873/",
    "Use of ultrasonography in DDQ. https://pmc.ncbi.nlm.nih.gov/articles/PMC3965765/",
-   "Imaging in early diagnosis of DDQ. https://pmc.ncbi.nlm.nih.gov/articles/PMC8688607/"
+   "Imaging in early diagnosis of DDQ. https://pmc.ncbi.nlm.nih.gov/articles/PMC8688607/",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0029": {
@@ -1523,18 +1524,19 @@
   "conferido": false
  },
  "pediatria-0103": {
+  "conceito": "**A doença de Legg-Calvé-Perthes.** É a **necrose avascular idiopática** da epífise femoral proximal na criança. É mais comum em meninos de **4 a 8 anos**, geralmente baixos e com idade óssea atrasada. A doença segue os **estágios de Waldenström**:\n1. **Necrose** (inicial): epífise densa e menor.\n2. **Fragmentação**: o osso morto é reabsorvido e a epífise se fragmenta.\n3. **Reossificação**: osso novo preenche a epífise.\n4. **Remodelação** (residual): forma final da cabeça.\n\n**A classificação do pilar lateral de Herring.** É feita no **estágio de fragmentação**, no **AP** da bacia. A epífise é dividida em três **pilares**: lateral, central e medial. O **pilar lateral** corresponde aos **15 a 30% laterais** da epífise. A classificação compara a **altura** do pilar lateral doente com a do pilar lateral normal.\n\n| Grupo | Altura do pilar lateral | Prognóstico |\n|---|---|---|\n| **A** | **Sem perda** de altura | Bom |\n| **B** | Mantém **mais de 50%** da altura | Bom abaixo de cerca de 8 anos; pior acima |\n| **B/C** (fronteira) | Cerca de **50%**, ou pilar estreito (2 a 3 mm) ou mal ossificado | Intermediário |\n| **C** | Mantém **menos de 50%** da altura (perde mais da metade) | **Ruim** em qualquer idade |\n\n**Por que o pilar lateral importa.** O pilar lateral é a parte da epífise que **sustenta a carga** e mantém a cabeça dentro do acetábulo. Se ele colapsa, a cabeça **extrui** lateralmente, achata e perde a esfericidade. O resultado é uma cabeça deformada e incongruente, que leva à artrose.\n\n**A idade é o outro grande fator.** Quanto mais nova a criança, maior o potencial de remodelação. Os principais fatores prognósticos são:\n- **Idade de início**: abaixo de 6 anos, prognóstico melhor.\n- **Grupo do pilar lateral**.\n- Os **sinais de cabeça em risco** de Catterall: Gage, calcificação lateral, subluxação, horizontalização da fise, cisto metafisário.\n\n**O tratamento (estudo multicêntrico de Herring).**\n- Nas crianças **acima de 8 anos** (idade cronológica) nos grupos **B e B/C**, a **cirurgia de contenção** (osteotomia femoral varizante ou osteotomia de Salter) deu resultados melhores que o tratamento não cirúrgico.\n- Nos menores de 8 anos e no grupo A, o resultado foi bom sem cirurgia.\n- No grupo **C**, o resultado foi ruim com ou sem cirurgia.\n\n**O desfecho final é avaliado pela classificação de Stulberg**, que considera a esfericidade e a congruência da cabeça na maturidade.\n\n**O exame físico no Perthes.** A criança manca, muitas vezes sem dor ou com dor referida na coxa e no **joelho**. A sinovite e o espasmo muscular limitam sobretudo dois movimentos:\n- A **abdução**, pelo espasmo dos **adutores** e, mais tarde, pela cabeça aumentada e deformada que bate na borda do acetábulo (abdução em dobradiça, ou \"hinge abduction\").\n- A **rotação interna**, pela sinovite e pela deformidade da cabeça.\n\nA perda progressiva da **abdução** é um sinal de mau prognóstico, porque indica cabeça extrusa. Recuperar a abdução é o primeiro passo do tratamento, com fisioterapia, gesso de Petrie ou tenotomia dos adutores.",
+  "correta": "**Correta: C (abdução e rotação interna).** Na doença de Legg-Calvé-Perthes, a limitação do movimento do quadril é predominantemente da **abdução** e da **rotação interna**. A causa é a sinovite com espasmo dos adutores e, depois, a deformidade da cabeça, que pode chegar à abdução em dobradiça.",
   "incorretas": {
-   "A": "A rotação interna está certa, mas a adução fica livre; a limitada é a abdução.",
-   "B": "Adução e rotação externa são os movimentos que ficam livres.",
-   "D": "A abdução está certa, mas a rotação externa fica livre; a limitada é a interna."
+   "A": "A **rotação interna** está limitada, mas a **adução** costuma estar preservada. O espasmo dos adutores limita justamente a abdução.",
+   "B": "A **adução** e a **rotação externa** são, em geral, os movimentos **preservados** no Perthes.",
+   "D": "A abdução está limitada, mas a **rotação externa** é preservada. A rotação perdida é a interna."
   },
-  "conceito": "Na **doença de Legg-Calvé-Perthes**, a criança manca e muitas vezes reclama de dor no **joelho** (dor referida pelo nervo obturatório). No exame do quadril, perdem-se primeiro dois movimentos:\n\n**abdução**: a sinovite e a contratura dos **adutores** limitam, e depois a cabeça deformada também bloqueia;\n\n**rotação interna**: é o movimento mais sensível à sinovite do quadril.\n\nA adução e a rotação externa ficam livres.\n\n**Por que a abdução é tão importante**: o tratamento do Perthes busca a **contenção**, isto é, manter a cabeça femoral **dentro** do acetábulo enquanto ela se refaz, para que o acetábulo funcione como molde. Para isso, o quadril precisa **abrir**. Perder a abdução significa que a cabeça está sendo empurrada para fora (extrusão), um sinal de pior prognóstico. Por isso o primeiro passo costuma ser **recuperar a abdução** com fisioterapia, gessos (Petrie) ou tenotomia dos adutores, antes de qualquer osteotomia.\n\n**Na prova**: Perthes limita a **abdução** e a **rotação interna**.",
-  "correta": "No Perthes, a sinovite e a contratura dos adutores limitam primeiro a abdução e a rotação interna do quadril.",
   "referencias": [
    "https://posna.org/physician-education/study-guide/legg-calve-perthes-disease",
-   "https://pubmed.ncbi.nlm.nih.gov/15466719/"
+   "https://pubmed.ncbi.nlm.nih.gov/15466719/",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0104": {
@@ -1642,17 +1644,18 @@
   "conferido": false
  },
  "pediatria-0111": {
+  "conceito": "**De onde vem o comprimento da perna.** O membro inferior cresce pelas **quatro fises** principais dos ossos longos. A contribuição de cada uma é diferente, e conhecê-la é essencial para **prever a discrepância** e planejar a **epifisiodese**.\n\n**A contribuição de cada fise.**\n\n| Fise | Crescimento anual aproximado | Participação no membro inferior |\n|---|---|---|\n| **Fêmur distal** | **Cerca de 9 a 10 mm/ano** | **A maior**: cerca de 37 a 40% |\n| Tíbia proximal | Cerca de 6 mm/ano | Cerca de 25 a 28% |\n| Fêmur proximal | Cerca de 3 a 4 mm/ano | Cerca de 15% |\n| Tíbia distal | Cerca de 4 a 5 mm/ano | Cerca de 15 a 20% |\n\n**A regra para memorizar: \"perto do joelho\".** As fises **ao redor do joelho** (fêmur distal e tíbia proximal) respondem por cerca de **dois terços** do crescimento do membro inferior. No membro superior é o contrário: as fises que mais crescem ficam **longe do cotovelo** (úmero proximal e rádio e ulna distais).\n\n**O fêmur distal.** Responde por cerca de **70%** do crescimento do fêmur. Uma lesão dessa fise (fratura de Salter-Harris, infecção) numa criança pequena pode causar uma **discrepância enorme**. Por isso, as fraturas da fise distal do fêmur têm o pior prognóstico de crescimento entre as lesões fisárias.\n\n**A previsão da discrepância e o momento da epifisiodese.**\n- Os métodos mais usados são o **Moseley** (gráfico de linha reta), o **Green-Anderson** (tabelas de crescimento remanescente), o **multiplicador de Paley** e a regra de **Menelaus**.\n- A regra de **Menelaus**: o crescimento termina por volta dos **14 anos nas meninas** e dos **16 nos meninos**. O fêmur distal cresce cerca de **3/8 de polegada** (aproximadamente 1 cm) por ano e a tíbia proximal cerca de **1/4 de polegada** (aproximadamente 0,6 cm).\n- A epifisiodese do **fêmur distal** corrige mais por ano que a da tíbia proximal.\n\n**Tratamento da discrepância pelo tamanho previsto na maturidade.**\n- Até cerca de **2 cm**: palmilha ou nada.\n- De **2 a 5 cm**: **epifisiodese** do lado mais longo, no momento certo.\n- Acima de **5 cm**: **alongamento** do lado mais curto, às vezes combinado com epifisiodese.\n- Discrepâncias **muito grandes**: amputação e prótese, em casos selecionados.",
+  "correta": "**Correta: B (do fêmur distal).** A fise do **fêmur distal** é a que mais contribui para o crescimento do membro inferior, com cerca de 9 a 10 mm por ano, cerca de 70% do crescimento do fêmur e cerca de 37 a 40% do membro.",
   "incorretas": {
-   "A": "A tíbia distal contribui com cerca de 20%, bem menos que o fêmur distal.",
-   "C": "A tíbia proximal é a segunda maior, com cerca de 28%.",
-   "D": "O fêmur proximal contribui com cerca de 15%."
+   "A": "A fise da **tíbia distal** contribui com cerca de 4 a 5 mm por ano, menos que as fises ao redor do joelho.",
+   "C": "A fise da **tíbia proximal** é a **segunda** em importância, com cerca de 6 mm por ano, atrás do fêmur distal.",
+   "D": "A fise do **fêmur proximal** contribui com apenas cerca de 3 a 4 mm por ano, cerca de 30% do crescimento do fêmur."
   },
-  "conceito": "No membro inferior, o crescimento vem de quatro fises principais, e cada uma contribui de forma diferente:\n\n**fêmur proximal**: cerca de **3 mm por ano**, cerca de 15% do crescimento do membro;\n\n**fêmur distal**: cerca de **9 a 10 mm por ano**, cerca de **37 a 40%**: é a **maior** contribuição;\n\n**tíbia proximal**: cerca de **6 mm por ano**, cerca de 28%;\n\n**tíbia distal**: cerca de 3 a 5 mm por ano, cerca de 20%.\n\n**Uma regra útil**: as fises **em volta do joelho** (fêmur distal e tíbia proximal) respondem por cerca de **65%** do crescimento do membro inferior.\n\n**Por que isso importa**:\n\n**epifisiodese**: para corrigir uma discrepância, bloquear a fise do **fêmur distal** tem o maior efeito;\n\n**fraturas**: uma lesão da fise do fêmur distal deixa a maior discrepância;\n\n**previsão**: os métodos de Moseley, Paley e Green-Anderson usam essas taxas e a idade óssea; meninos crescem até cerca de 16 anos e meninas até cerca de 14 (idade óssea).\n\n**Na prova**: fise que responde pela maior parte do crescimento do membro inferior = **fêmur distal**.",
-  "correta": "A fise distal do fêmur cresce cerca de 1 cm por ano e responde por cerca de 40% do crescimento do membro.",
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics. 6th edition. Elsevier."
+   "Tachdjian's Pediatric Orthopaedics. 6th edition. Elsevier.",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0112": {
@@ -2440,14 +2443,18 @@
   "conferido": false
  },
  "pediatria-0176": {
+  "conceito": "**As linhas da radiografia na DDQ.** Depois que o núcleo de ossificação da cabeça femoral aparece (por volta dos 4 a 6 meses), a radiografia AP da bacia passa a ser o exame de seguimento.\n\n| Linha ou ângulo | Como se traça | Normal |\n|---|---|---|\n| **Hilgenreiner** | Horizontal pelas duas cartilagens **trirradiadas** | Referência |\n| **Perkins** | Vertical pela **borda lateral** do acetábulo, perpendicular à de Hilgenreiner | Núcleo no **quadrante inferomedial** |\n| **Shenton** | Arco da borda inferior do colo à borda superior do forame obturado | **Contínuo** |\n| **Índice acetabular** | Ângulo entre a linha de Hilgenreiner e a linha do **teto** acetabular | Ver abaixo |\n\n**O índice acetabular.** É o ângulo entre a linha de **Hilgenreiner** e uma linha que vai da **borda lateral da trirradiada** à **borda lateral do teto** ósseo do acetábulo. Mede a **inclinação do teto**: quanto maior, mais raso e oblíquo o acetábulo.\n\n**Os valores normais mudam com a idade.**\n- **Recém-nascido**: em média 27 a 28°, e o **limite superior** aceito é de cerca de **30°**.\n- Diminui rapidamente no primeiro ano, para cerca de **20 a 25°**.\n- Por volta dos **2 anos**: cerca de 20°.\n- Depois, cai devagar até cerca de **15° ou menos** na criança maior.\n\nNa prática: **acima de 30°** é anormal em qualquer idade; **acima de 25°** após cerca de 1 ano e **acima de 20°** após 2 anos sugerem displasia residual.\n\n**Para que serve.**\n- **Diagnosticar** a displasia acetabular.\n- Acompanhar a **remodelação** após a redução: o acetábulo deve melhorar com a cabeça centrada.\n- Indicar a **osteotomia pélvica** (Salter, Pemberton) quando o índice continua alto e não melhora, geralmente após cerca de 18 meses a 2 anos de seguimento.\n\n**Na criança maior e no adulto**, quando a trirradiada fecha, usa-se o **ângulo de Tönnis** (normal de 0 a 10°) e o **centro-borda** de Wiberg.",
+  "correta": "**Correta: C (30 graus).** O índice acetabular, ângulo entre a linha de Hilgenreiner e o teto acetabular, tem média de cerca de 27 a 28° no recém-nascido, com **limite superior** de cerca de **30°**. Diminui com a idade, chegando a cerca de 20° aos 2 anos.",
   "incorretas": {
-   "A": "15° é baixo demais para o lactente; valores assim aparecem só mais tarde.",
-   "B": "20° é o valor esperado por volta dos 2 anos, não o limite do recém-nascido.",
-   "D": "40° está muito acima do limite e indica displasia."
+   "A": "Um índice de **15°** é **normal** na criança maior e no adulto jovem, mas não é o limite superior da normalidade.",
+   "B": "Um índice de **20°** é o valor esperado por volta dos **2 anos**. Não é o limite superior no recém-nascido e no lactente.",
+   "D": "Um índice de **40°** é claramente **patológico**, indicando acetábulo muito raso e oblíquo."
   },
-  "conceito": "O **índice acetabular** é o ângulo entre a **linha de Hilgenreiner** (horizontal, que passa pelas cartilagens trirradiadas) e a linha que vai da trirradiada à borda lateral do teto acetabular. Mede o quanto o acetábulo da criança é inclinado.\n\n**Os valores normais caem com a idade**:\n\n**recém-nascido**: até **30°** (média de cerca de 27°), o limite superior da normalidade;\n\n**1 ano**: cerca de 20 a 25°;\n\n**2 anos**: cerca de 20°;\n\n**adulto**: a medida equivalente é o ângulo de Tönnis, normal até 10°.\n\n**Acima de 30° no lactente**, o acetábulo é displásico.\n\n**Quando usar a radiografia**: antes de 4 a 6 meses, a cabeça femoral ainda é cartilaginosa e o exame é o **ultrassom de Graf** (ângulo alfa normal a partir de 60°). Depois que o **núcleo de ossificação** aparece (entre 4 e 6 meses), a radiografia passa a ser o exame, com as linhas de Hilgenreiner e Perkins, a linha de Shenton e o índice acetabular. O atraso do núcleo do lado afetado também sugere displasia.\n\n**Na prova**: o limite superior do índice acetabular na criança é **30°**.",
-  "correta": "O índice acetabular é normal até cerca de 30° ao nascer e diminui com o crescimento.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0177": {
@@ -3059,14 +3066,18 @@
   "conferido": false
  },
  "pediatria-0264": {
+  "conceito": "**O eixo dos joelhos muda com a idade.** O ângulo tibiofemoral da criança segue uma evolução **fisiológica previsível**, descrita por Salenius e Vankka e confirmada por Heath e Staheli.\n\n| Idade | Eixo esperado |\n|---|---|\n| Nascimento | **Varo** importante, cerca de 15° |\n| 18 a 24 meses | **Neutro** (0°) |\n| **3 a 4 anos** | **Valgo máximo**, cerca de **10 a 12°** |\n| 7 anos em diante | Valgo do adulto, cerca de **5 a 7°** |\n\n**A regra prática.**\n- **Varo até cerca de 2 anos**.\n- **Valgo máximo por volta de 3 a 4 anos**.\n- Estabilização no valgo do adulto por volta dos 7 anos.\n\n**Quando suspeitar de doença.** O desvio é **patológico** quando:\n- o **varo** persiste ou piora **após os 2 anos**;\n- o desvio é **assimétrico** (unilateral);\n- há **baixa estatura** ou outras alterações (raquitismo, displasias esqueléticas);\n- o valgo é **excessivo** (acima de 15°) ou com distância intermaleolar grande, ou persiste após os 7 anos;\n- há **dor** ou alteração de marcha.\n\n**As causas de varo patológico.**\n- **Doença de Blount** (tíbia vara): o **ângulo metáfise-diáfise de Drennan** maior que 16° sugere Blount; menor que 10° sugere varo fisiológico.\n- **Raquitismo** (hipofosfatêmico ou nutricional).\n- **Displasias** (acondroplasia).\n- **Sequela de trauma ou infecção** da fise.\n\n**As causas de valgo patológico.** Raquitismo renal, sequela de fratura da metáfise proximal da tíbia (**fenômeno de Cozen**), displasias e obesidade.\n\n**Conduta no fisiológico.** **Observação**, com orientação aos pais. Órteses e calçados especiais não alteram a evolução.",
+  "correta": "**Correta: B (dois e quatro anos).** Na criança normal, o varo do nascimento chega ao neutro por volta dos 18 a 24 meses. O **valgo máximo**, de cerca de 10 a 12°, ocorre entre os **3 e 4 anos**, dentro da faixa de 2 a 4 anos. Depois, o valgo se reduz ao do adulto (5 a 7°) por volta dos 7 anos.",
   "incorretas": {
-   "A": "De zero a dois anos o alinhamento é varo, passando ao neutro perto dos 2 anos.",
-   "C": "Entre 6 e 8 anos o valgo já diminuiu e está se estabilizando no padrão adulto.",
-   "D": "Entre 8 e 10 anos o alinhamento já é o do adulto."
+   "A": "Entre **zero e dois anos**, o eixo esperado é de **varo**, que diminui até o neutro por volta dos 18 a 24 meses.",
+   "C": "Entre **seis e oito anos**, o valgo já está **diminuindo** e se estabiliza no valor do adulto, de cerca de 5 a 7°.",
+   "D": "Entre **oito e dez anos**, o eixo já é o do **adulto**. Um valgo acentuado nessa idade é patológico."
   },
-  "conceito": "O alinhamento dos joelhos na criança segue uma curva previsível, descrita por **Salenius**:\n\n**ao nascer**: **varo**, que é máximo nessa fase (cerca de 15°);\n\n**por volta de 1,5 a 2 anos**: os joelhos passam pelo **neutro**;\n\n**entre 2 e 4 anos**: o **valgo fisiológico máximo**, de cerca de 10 a 12°, com pico por volta de 3 a 4 anos;\n\n**por volta de 7 anos**: o valgo diminui e se estabiliza no valor do adulto, cerca de 5 a 7°.\n\n**Por que isso importa**: muitos pais procuram o ortopedista porque a criança de 3 anos tem os joelhos \"para dentro\". Na grande maioria, é a curva normal.\n\n**Os sinais de que não é fisiológico**:\n\n**assimetria** entre os lados;\n\n**deformidade fora da época** esperada, como varo depois dos 2 anos (pensar em Blount, raquitismo e displasias) ou valgo acima de 15° depois dos 7 anos;\n\n**baixa estatura**, dor ou progressão.\n\n**O tratamento do valgo patológico**: **crescimento guiado**, com placa em 8 medial, enquanto a fise está aberta.\n\n**Na prova**: o valgo fisiológico máximo ocorre entre **2 e 4 anos**.",
-  "correta": "O valgo fisiológico atinge o máximo entre 2 e 4 anos, com pico por volta de 3 a 4 anos.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Salenius P, Vankka E. The development of the tibiofemoral angle in children. J Bone Joint Surg Am. 1975;57(2):259-261."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0265": {
@@ -5031,14 +5042,18 @@
   "conferido": false
  },
  "pediatria-0444": {
-  "conceito": "### Osteotomias pélvicas na DDQ\n| Tipo | Técnica | Característica |\n|---|---|---|\n| ==Salter== | osteotomia ==inominada completa== acima do acetábulo, cunha de ilíaco anterior | redireciona; ==não muda volume==; 18 meses a 6 anos |\n| Pemberton | pericapsular incompleta, dobradiça na trirradiada | reduz volume, acetábulo grande |\n| Dega | incompleta, posterior preservada | PC, displasia posterolateral |\n| Steel | ==tripla== (ílio, ísquio, púbis) | criança maior |\n| Ganz | ==periacetabular== (Bernese) | trirradiada fechada |\n| Chiari | salvamento, medializa | sem congruência |\n\n### Salter na imagem\n- Linha reta do ciático maior à espinha ilíaca anteroinferior.\n- Enxerto triangular da crista ilíaca, fixado com fios.\n- Pivô na sínfise púbica.\n\n### Ganz (periacetabular, Bernese)\n- Cortes: ísquio parcial, púbis, ilíaco supra-acetabular e ==retroacetabular==, preservando a ==coluna posterior==.\n- ==Trirradiada fechada== (adolescente e adulto jovem).\n- Grande correção, pelve continua estável (marcha precoce), não altera o canal de parto.\n\n> **Na prova:** osteotomia periacetabular com coluna posterior íntegra = ==Ganz==",
-  "correta": "**Ganz.**\n- Periacetabular, coluna posterior preservada.\n- Trirradiada fechada.",
+  "conceito": "**A imagem.** No alto, aparece a via de acesso anterior ao quadril, com a crista ilíaca e a espinha ilíaca anterossuperior osteotomizadas e afastadas, e o acetábulo exposto por dentro da pelve. Embaixo, os desenhos da pelve mostram cortes que **contornam o acetábulo** em forma de polígono: no **púbis**, no **ísquio** (incompleto) e no **ilíaco**, com um corte que desce em ângulo **sem chegar à incisura isquiática**. A **coluna posterior** fica intacta. Essa é a **osteotomia periacetabular de Ganz** (bernense).\n\n**Os cortes da osteotomia de Ganz.**\n1. **Ísquio**: corte **incompleto**, abaixo do acetábulo, por dentro.\n2. **Ramo púbico superior**: corte completo, medial à eminência iliopectínea.\n3. **Ilíaco supra-acetabular**: corte que sai da borda anterior e vai em direção à incisura isquiática, mas **para antes** dela.\n4. **Corte retroacetabular**: desce em ângulo, paralelo à borda posterior, unindo o corte do ilíaco ao do ísquio, **preservando a coluna posterior**.\n\n**As vantagens da técnica.**\n- A **coluna posterior intacta** mantém a pelve **estável**. O paciente pode fazer carga parcial cedo e precisa de pouca fixação (parafusos).\n- O fragmento é grande e **muito móvel**, e permite grandes correções em todos os planos: cobertura lateral, anterior e medialização.\n- A **forma da pelve verdadeira não muda**, o que preserva o canal do parto.\n- A irrigação do acetábulo é preservada pelos ramos da **artéria glútea superior e inferior** e da **obturatória**.\n- Pode ser feita por **uma única via** de acesso.\n\n**A condição: a cartilagem trirradiada fechada.** O corte retroacetabular passaria pela trirradiada. Na criança com a trirradiada aberta, ele pode lesá-la e causar parada do crescimento acetabular. Por isso, a técnica é indicada no **adolescente e no adulto jovem**.\n\n**Indicações.** Displasia **sintomática**, com quadril **congruente** e **sem artrose** avançada (Tönnis 0 ou 1). O objetivo é corrigir o ângulo de Tönnis e o centro-borda lateral.\n\n**As outras técnicas das alternativas.**\n- **Steel**: osteotomia **tripla**, com cortes no ilíaco, no ramo púbico e no **ísquio perto da tuberosidade**. O fragmento é maior e menos móvel, e a pelve é desestabilizada.\n- **Chiari**: corte único supra-acetabular com **deslocamento medial** da pelve. É um salvamento, com cobertura por cápsula interposta.\n- **Staheli**: **prateleira** (shelf) de enxerto acima da cápsula, sem osteotomia do acetábulo. Também é um salvamento.",
+  "correta": "**Correta: A (Ganz).** A imagem mostra a osteotomia periacetabular de Ganz, com cortes no púbis, no ísquio (incompleto) e no ilíaco, contornando o acetábulo e **preservando a coluna posterior**. O fragmento é muito móvel, e a pelve permanece estável.",
   "incorretas": {
-   "B": "**Steel.**\n- Tripla, cortes distantes.",
-   "C": "**Chiari.**\n- Salvamento, medializa.",
-   "D": "**Staheli.**\n- Shelf (prateleira), aumento do teto."
+   "B": "A osteotomia de **Steel** é tripla, com o corte do ísquio **perto da tuberosidade**, longe do acetábulo, e não preserva a continuidade da coluna posterior como a periacetabular.",
+   "C": "A osteotomia de **Chiari** é um **corte único** supra-acetabular com deslocamento medial, sem os cortes do púbis e do ísquio mostrados.",
+   "D": "O procedimento de **Staheli** é uma **prateleira** de enxerto acima da cápsula, sem cortar o osso ao redor do acetábulo."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Ganz R, Klaue K, Vinh TS, Mast JW. A new periacetabular osteotomy for the treatment of hip dysplasias. Clin Orthop Relat Res. 1988;(232):26-36."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0445": {
@@ -5297,14 +5312,18 @@
   "conferido": false
  },
  "pediatria-0469": {
-  "conceito": "### Pseudartrose congênita da tíbia\n- Arqueamento ==anterolateral== da tíbia distal; fratura com pouco trauma e não consolida.\n- ==NF1== em cerca de 50% (e 5 a 10% dos NF1 têm).\n- Também displasia fibrosa, displasia osteofibrosa.\n\n### Boyd\n| Tipo | Achado |\n|---|---|\n| I | pseudartrose ao nascer |\n| II | ampulheta (arqueamento com estreitamento) |\n| III | cisto |\n| IV | esclerose sem estreitamento |\n| V | fíbula displásica |\n| VI | neurofibroma intraósseo |\n\n### Tratamento\n- Antes da fratura: ==órtese protetora== até a maturidade; ==nunca osteotomia corretiva== do arqueamento.\n- Após fratura: ressecção do hamartoma, haste intramedular (Williams), enxerto, fixador (Ilizarov), fíbula vascularizada; BMP; cross-union (Paley).\n\n### Outros arqueamentos\n| Direção | Doença |\n|---|---|\n| posteromedial | benigno, corrige |\n| anteromedial | hemimelia fibular |\n\n### Histologia\n- ==Hamartoma fibroso no periósteo espessado== (tecido fibroso proliferativo) que estrangula o osso.\n- Por isso a ressecção do periósteo doente faz parte do tratamento.\n\n> **Na prova:** pseudartrose congênita da tíbia = alteração no ==periósteo== com ==tecido fibroso==",
-  "correta": "**Anterolateral.**\n- Arqueamento da pseudartrose congênita.\n- NF1 em metade.",
+  "conceito": "**A pseudoartrose congênita da tíbia (PCT).** É uma doença rara em que um segmento da tíbia, geralmente na **junção do terço médio com o distal**, é displásico e fraco. A tíbia se encurva e, cedo ou tarde, **fratura e não consolida**. A **neurofibromatose tipo 1** está presente em cerca de **metade ou mais** dos casos. Por outro lado, só uma pequena parcela dos pacientes com NF1 tem PCT.\n\n**O tecido doente.** Ao redor do foco há um **periósteo espessado** e um **hamartoma fibroso** que estrangula o osso e impede a consolidação. A ressecção completa desse tecido é parte fundamental da cirurgia.\n\n**O encurvamento da tíbia na criança: a direção diz o diagnóstico.**\n\n| Direção | Diagnóstico | Prognóstico |\n|---|---|---|\n| **Anterolateral** | **Pseudoartrose congênita** da tíbia (NF1) | **Ruim**: tende a fraturar e não consolidar |\n| **Posteromedial** | Encurvamento **fisiológico** congênito, com pé calcaneovalgo | **Bom**: corrige espontaneamente; deixa **discrepância** |\n| **Anteromedial** | **Hemimelia fibular** (deficiência da fíbula) | Discrepância importante; deformidade do pé e tornozelo |\n\n**Como lembrar.** **A**nterolateral é **a** ruim (a pseudoartrose). Posteromedial é a \"boa\", que só deixa a perna mais curta. Anteromedial acompanha a ausência da fíbula, com covinha cutânea sobre a tíbia.\n\n**Tratamento.**\n- **Antes da fratura:** proteger a tíbia com uma **órtese** (tipo concha, AFO/KAFO) para evitar a fratura. **Não** se faz osteotomia corretiva para endireitar, porque ela vira pseudoartrose.\n- **Depois da fratura:** a cirurgia é desafiadora. Ela inclui:\n  - **ressecção** do tecido hamartomatoso;\n  - estabilização com **haste intramedular** (de Williams, por exemplo) ou fixador circular de **Ilizarov**;\n  - **enxerto** ósseo autólogo; o enxerto vascularizado de fíbula é uma opção;\n  - a técnica de **cross-union** (união entre tíbia e fíbula) tem mostrado bons resultados.\n- A recidiva de fratura é comum, e a haste costuma ser mantida até a maturidade.\n- Após várias falhas, a **amputação de Syme** com prótese é uma opção funcional legítima.",
+  "correta": "**Correta: A (anterolateral).** A pseudoartrose congênita da tíbia se associa ao encurvamento **anterolateral**, que precede a fratura e a não consolidação. Em mais da metade dos casos, há neurofibromatose tipo 1.",
   "incorretas": {
-   "B": "**Hemimelia fibular.**\n- Anteromedial.",
-   "C": "**Não é padrão.**\n- Posterolateral.",
-   "D": "**Benigno.**\n- Calcaneovalgo associado."
+   "B": "O encurvamento **anteromedial** acompanha a **hemimelia fibular**, e não a pseudoartrose congênita.",
+   "C": "O encurvamento **posterolateral** não é um padrão clássico de nenhuma dessas condições.",
+   "D": "O encurvamento **posteromedial** é o **fisiológico** congênito, com pé calcaneovalgo. Ele se corrige espontaneamente e deixa discrepância, sem pseudoartrose."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "https://posna.org/physician-education/study-guide/congenital-pseudarthrosis-of-the-tibia-%28cpt%29"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0470": {
@@ -6721,17 +6740,18 @@
   "conferido": false
  },
  "pediatria-0582": {
+  "conceito": "**A apófise da base do quinto metatarso.** Na base do quinto metatarso, na tuberosidade onde se inserem o **fibular curto** e a banda lateral da fáscia plantar, existe um **centro de ossificação secundário**: a apófise. Ela aparece por volta dos **9 a 11 anos nas meninas** e dos **11 a 14 anos nos meninos**, e se funde à diáfise cerca de 2 a 3 anos depois.\n\n**A armadilha.** No adolescente com entorse e dor na borda lateral do pé, a radiografia mostra uma linha na base do quinto metatarso. É a fise da apófise ou uma fratura? A **orientação da linha** responde.\n\n| Característica | Apófise normal | Fratura |\n|---|---|---|\n| **Orientação** | **Longitudinal**, paralela ao eixo da diáfise | **Transversal** ou oblíqua, perpendicular ao eixo |\n| Localização | Face **lateral** e plantar da tuberosidade | Atravessa a base |\n| Bordas | Lisas e escleróticas | Irregulares, agudas |\n| Dor | Ausente à palpação | Dor localizada sobre o traço |\n\n**A regra.** A apófise corre **ao longo** do metatarso, como uma \"lasca\" lateral paralela à diáfise. A fratura **cruza** o osso. Na dúvida, compara-se com o pé contralateral e com o ponto de dor.\n\n**As zonas da base do quinto metatarso.**\n- **Zona 1** (tuberosidade): **avulsão** pela tração do fibular curto e da fáscia plantar. É a mais comum e tem bom prognóstico, com bota ou calçado rígido.\n- **Zona 2** (junção metáfise-diáfise): **fratura de Jones**. Fica numa área de **irrigação pobre**, com risco de retardo de consolidação e pseudoartrose. É tratada sem carga ou, no atleta, com **parafuso intramedular**.\n- **Zona 3** (diáfise proximal): fratura por **estresse**, com maior tendência à pseudoartrose.\n\n**A doença de Iselin.** É a **apofisite por tração** da base do quinto metatarso, no adolescente esportista, com dor e edema local sem fratura. Trata-se com repouso relativo e pode haver fragmentação da apófise. É o equivalente, no pé lateral, da doença de Sever no calcâneo.",
+  "correta": "**Correta: D (longitudinal).** A apófise da base do quinto metatarso tem orientação **longitudinal**, paralela ao eixo da diáfise, na face lateral da tuberosidade. O traço de fratura costuma ser **transversal** ou oblíquo, cruzando o osso.",
   "incorretas": {
-   "A": "A orientação oblíqua não é a da apófise.",
-   "B": "Coronal descreve um plano que não se aplica ao traço visto na radiografia padrão.",
-   "C": "O traço transversal é o padrão da fratura, não da apófise."
+   "A": "A orientação **oblíqua** é mais típica de um **traço de fratura** do que da linha fisária da apófise.",
+   "B": "A orientação **coronal** não descreve a apófise do quinto metatarso, que corre ao longo do eixo do osso.",
+   "C": "A orientação **transversal** é a do **traço de fratura** típico (avulsão ou Jones), perpendicular ao eixo. Ela é justamente o que diferencia a fratura da apófise."
   },
-  "conceito": "A **base do 5º metatarso** é um lugar de confusão na radiografia da criança e do adolescente, porque ali existe uma **apófise** (centro de crescimento) entre cerca de 8 e 15 anos, onde se insere o **fibular curto**.\n\n**Como diferenciar a apófise de uma fratura**:\n\n**apófise**: a linha entre ela e o osso é **longitudinal**, quase **paralela ao eixo** do metatarso, na face lateral da base; tem bordas lisas e arredondadas e costuma ser simétrica com o outro pé;\n\n**fratura por avulsão** da tuberosidade (zona 1): traço **transversal**, perpendicular ao eixo, com bordas irregulares;\n\n**fratura de Jones** (zona 2): traço **transversal** na junção da metáfise com a diáfise, com mais risco de pseudartrose.\n\n**A apofisite (doença de Iselin)**: dor e proeminência na base do 5º metatarso, por tração do fibular curto, em adolescentes ativos; a apófise pode ficar alargada e fragmentada.\n\n**Dica**: em caso de dúvida, comparar com a radiografia do outro pé.\n\n**Na prova**: a apófise da base do 5º metatarso tem orientação **longitudinal**, e a fratura, transversal.",
-  "correta": "A apófise tem a linha paralela ao eixo do metatarso; a fratura costuma ser transversal.",
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), Cap. 30"
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), Cap. 30",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0583": {
@@ -7240,17 +7260,18 @@
   "conferido": false
  },
  "pediatria-0619": {
+  "conceito": "**Os músculos explicam o desvio.** Numa fratura da diáfise do fêmur, cada fragmento é puxado pelos músculos que **ficam presos a ele**. Conhecer as inserções permite prever o desvio e planejar a redução.\n\n**O fragmento proximal** (com a cabeça, o colo e os trocânteres):\n- **Flexão**: pelo **iliopsoas**, inserido no trocanter menor.\n- **Abdução**: pelos **glúteos médio e mínimo**, inseridos no trocanter maior.\n- **Rotação lateral**: pelos **rotadores externos curtos** (piriforme, obturadores, gêmeos, quadrado femoral) e pelo próprio iliopsoas.\n\n**O fragmento distal:**\n- **Adução**: pelos **adutores**, inseridos ao longo da linha áspera.\n- **Encurtamento** e cavalgamento: pelo quadríceps e pelos isquiotibiais, que cruzam o foco.\n- Nas fraturas **supracondilianas**, o fragmento distal é puxado em **extensão posterior** pelos gastrocnêmios, com risco para os vasos poplíteos.\n\n**Quanto mais proximal a fratura, maior o desvio do fragmento proximal.** Na fratura subtrocantérica, o fragmento proximal fica muito fletido, abduzido e rodado externamente. Por isso, o membro deve ser posicionado em **flexão e abdução** (por exemplo, no gesso ou na tração 90-90), para alinhar o fragmento distal ao proximal, e não o contrário.\n\n**O tratamento por idade.**\n\n| Idade | Tratamento usual |\n|---|---|\n| Até 6 meses | **Suspensório de Pavlik** ou tala |\n| 6 meses a 5 anos | **Gesso pelvipodálico** imediato (ou após tração) |\n| 5 a 11 anos | **Hastes flexíveis** intramedulares (elásticas de titânio) |\n| Acima de 11 anos ou mais de cerca de 45 kg | **Haste rígida** com entrada **trocantérica lateral** ou placa submuscular |\n\n**Detalhes importantes.**\n- Evitar a entrada da haste rígida na **fossa piriforme** na criança, pelo risco de **necrose avascular** da cabeça (lesão da artéria circunflexa femoral medial).\n- Na criança pequena com fratura de fêmur que **ainda não anda**, pensar em **maus-tratos**.\n- Após a consolidação, ocorre **sobrecrescimento** do fêmur fraturado (cerca de 0,7 a 2 cm, mais entre 2 e 10 anos). Por isso, aceita-se um pequeno **encurtamento** inicial no tratamento com gesso.",
+  "correta": "**Correta: B (flexão, abdução e rotação lateral).** Na fratura da diáfise do fêmur, o fragmento proximal é fletido pelo **iliopsoas**, abduzido pelos **glúteos médio e mínimo** e rodado externamente pelos **rotadores externos curtos**. O fragmento distal é aduzido pelos adutores.",
   "incorretas": {
-   "A": "A adução é o desvio do fragmento distal, puxado pelos adutores.",
-   "C": "Extensão, adução e rotação medial são o oposto do desvio do fragmento proximal.",
-   "D": "O fragmento proximal fica em flexão e rotação lateral, não em extensão e rotação medial."
+   "A": "A flexão e a rotação lateral estão certas, mas a **adução** é o desvio do fragmento **distal**, pelos adutores. O proximal é **abduzido** pelos glúteos.",
+   "C": "Inverte os três desvios. O fragmento proximal fica em **flexão**, **abdução** e **rotação lateral**.",
+   "D": "A abdução está certa, mas o fragmento proximal fica em **flexão** (iliopsoas) e **rotação lateral**, e não em extensão e rotação medial."
   },
-  "conceito": "Na **fratura diafisária do fêmur**, cada fragmento é puxado pelos músculos que se prendem a ele:\n\n**o fragmento proximal**:\n\n**iliopsoas**: puxa em **flexão** (e em rotação lateral);\n\n**glúteos médio e mínimo**: puxam em **abdução**;\n\n**rotadores externos** curtos: puxam em **rotação lateral**.\n\nResultado: o fragmento proximal fica em **flexão, abdução e rotação lateral**.\n\n**o fragmento distal**:\n\n**adutores**: puxam em **adução** e encurtamento;\n\n**gastrocnêmios**: na fratura do terço distal, puxam o fragmento distal para **trás** (posteriorização), ameaçando os vasos poplíteos.\n\n**Quanto mais proximal a fratura**, mais o fragmento proximal flete e abduz, porque fica curto e preso a músculos fortes.\n\n**Por que isso importa no tratamento**: no gesso pelvipodálico, o fragmento distal deve ser levado até o proximal: o membro é posicionado em **flexão, abdução** e alguma rotação lateral, para alinhar.\n\n**Na prova**: o fragmento proximal desvia em **flexão, abdução e rotação lateral**.",
-  "correta": "O iliopsoas flete, os glúteos abduzem e os rotadores externos rodam o fragmento proximal para lateral.",
   "referencias": [
-   "Rockwood and Wilkins's fractures in Children 8th Ed (referência indicada na prova TARO 2017, questão 85)"
+   "Rockwood and Wilkins's fractures in Children 8th Ed (referência indicada na prova TARO 2017, questão 85)",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0620": {
@@ -10555,19 +10576,20 @@
   "conferido": false
  },
  "pediatria-0838": {
+  "conceito": "**A sinostose radioulnar congênita.** É a **fusão** do rádio com a ulna, geralmente **proximal**, por falha da separação dos dois ossos durante a vida embrionária (eles começam como um molde cartilaginoso comum). É **bilateral** em cerca de 60% dos casos e pode se associar a síndromes, como as aneuploidias do cromossomo X.\n\n**O quadro clínico.** O antebraço fica **travado em pronação**, sem rotação, com graus variáveis (de neutro a mais de 60° de pronação). A flexão e a extensão do cotovelo costumam ser **normais**. Muitas crianças compensam bem com o ombro e o punho e o diagnóstico é tardio, quando os pais notam que a criança pega objetos com a palma para baixo ou não consegue receber troco na mão.\n\n**Quando operar.** A sinostose **não pode ser desfeita** com bons resultados: a ressecção da ponte óssea quase sempre recidiva. A cirurgia é uma **osteotomia derrotatória**, que muda a posição fixa do antebraço para uma posição mais **funcional**. Ela é indicada quando a **pronação fixa é acentuada** (geralmente acima de 60°) e causa limitação funcional.\n\n**A posição-alvo.**\n- **Unilateral**: perto do **neutro** ou em leve pronação (cerca de 10 a 20°).\n- **Bilateral**: o lado **dominante** em leve pronação, para escrever e digitar; o outro mais próximo do neutro, para atividades da vida diária. As recomendações variam entre os autores.\n\n**As complicações da derrotação.**\n\n| Complicação | Mecanismo |\n|---|---|\n| **Síndrome compartimental** | Edema após a rotação aguda num compartimento apertado |\n| **Comprometimento vascular** | Torção e estiramento das artérias radial e ulnar |\n| **Paresia nervosa** (interósseo posterior, radial, ulnar) | Estiramento pela rotação |\n| Perda da correção, pseudoartrose | Menos frequentes |\n\n**Como reduzi-las.** Limitar a **magnitude** da rotação aguda e corrigir grandes deformidades **gradualmente** ou em dois tempos. Fazer a osteotomia no local da sinostose ou na diáfise do rádio e da ulna, com encurtamento se necessário. Considerar a **fasciotomia** profilática e monitorar de perto o pós-operatório.\n\n**A questão do \"mais frequente\".** A síndrome compartimental e o comprometimento vascular são as complicações **clássicas e mais temidas** da rotação aguda, e por isso a alternativa D é a provável resposta. Algumas revisões mais recentes, porém, relatam a paresia nervosa com frequência semelhante ou maior. Por isso, esta questão é discutível.",
+  "correta": "**Provável correta: D (síndrome compartimental).** A complicação clássica e mais temida da osteotomia derrotatória aguda na sinostose radioulnar congênita é a **síndrome compartimental**, junto com o comprometimento vascular, pelo edema e pela torção dos vasos após a rotação.",
   "incorretas": {
-   "A": "**Pseudartrose pode ocorrer após osteotomia, porém é pouco relatada.** Não é a principal preocupação imediata da rotação excessiva.",
-   "B": "**Necrose da cabeça radial não é a complicação clássica dessa correção.** A operação reposiciona o antebraço sem necessariamente reconstruir a cabeça.",
-   "C": "**Perda de flexão do cotovelo não é o evento mais típico.** O objetivo é melhorar posição da mão; as complicações enfatizadas são neurovasculares e compartimentais."
+   "A": "A **pseudoartrose** pode ocorrer, mas é **pouco frequente**. A osteotomia é feita em osso de criança, com boa consolidação.",
+   "B": "A **necrose da cabeça do rádio** não é uma complicação característica. Na sinostose proximal, a cabeça está fundida à ulna e a osteotomia não a desvasculariza.",
+   "C": "A **flexão do cotovelo** costuma ser **normal** na sinostose e não é afetada pela derrotação do antebraço."
   },
-  "alerta": "Não há gabarito oficial localizado, e esta questão não conta no desempenho. Mantemos a resposta provável D, que destaca uma complicação grave clássica da rotação aguda. Contudo, revisões recentes registram paresia nervosa com frequência maior que síndrome compartimental em séries agrupadas; “mais frequente” não está bem sustentado como afirmação universal.",
-  "conceito": "**Sinostose radioulnar congênita bloqueia a rotação do antebraço.** Rádio e ulna proximais formam uma ponte óssea; a mão permanece em posição fixa, com dificuldade para receber objetos ou realizar higiene quando a pronação é acentuada. Osteotomia derrotatória não restitui a articulação normal: ela muda a posição funcional fixa do antebraço.\n\n**Rotação aguda tensiona partes moles.** Nervo interósseo posterior, vasos e compartimentos musculares podem sofrer com correções amplas, especialmente perto da sinostose. Síndrome compartimental é complicação grave que exige reconhecimento e fasciotomia urgentes; neuropraxia também é relatada e pode ser numericamente mais comum. A técnica e o grau de correção devem equilibrar função e risco.",
-  "correta": "**Resposta provável D, com ressalva sobre frequência.** Síndrome compartimental é complicação temida, mas não claramente a mais comum nas revisões atuais.",
   "referencias": [
-   "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. p. 939."
+   "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. p. 939.",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
+  "alerta": "Não há gabarito oficial localizado, e esta questão não conta no desempenho. Mantemos a resposta provável D, que destaca uma complicação grave clássica da rotação aguda. Contudo, revisões recentes registram paresia nervosa com frequência maior que síndrome compartimental em séries agrupadas; “mais frequente” não está bem sustentado como afirmação universal.",
   "provavel": "D",
-  "geradoEm": "2026-10-01",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0839": {
