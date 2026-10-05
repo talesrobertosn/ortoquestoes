@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Cardápio da tarde</title>
+<!-- Post da tarde de 5/10/2026: carrossel de 4 slides (1080x1350) e 1 story (1080x1920).
+     Quadro de giz de cafeteria: a classificação de Schenck da luxação do joelho servida como cardápio.
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-05-cardapio-schenck/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Caveat; src: url(../../fontes/caveat-latin-wght-normal.woff2) format('woff2'); font-weight: 400 700; }
+:root { --ouro: #F4CF7C; --giz: #f3efe4; --giz2: rgba(243,239,228,.72); --rosa: #f2a7a0; --menta: #a9dccf; --madeira: #6b4a2f; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1350px; color: var(--giz); padding: 40px; background: #3a2818; }
+section.story { height: 1920px; }
+/* moldura de madeira e quadro */
+.quadro { position: absolute; inset: 34px; border-radius: 18px; padding: 54px 60px; overflow: hidden;
+  background: radial-gradient(ellipse at 30% 20%, rgba(255,255,255,.07), transparent 55%), radial-gradient(ellipse at 80% 90%, rgba(255,255,255,.05), transparent 50%),
+  radial-gradient(circle at 1px 1px, rgba(255,255,255,.035) 1px, transparent 1.2px) 0 0/9px 9px, #1f2e2a;
+  box-shadow: inset 0 0 0 10px #5a3c24, inset 0 0 0 14px #2a1a0e, inset 0 0 90px rgba(0,0,0,.55), 0 20px 50px rgba(0,0,0,.5); }
+section::before { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(92deg, rgba(255,255,255,.03) 0 3px, transparent 3px 22px), linear-gradient(160deg, #6b4a2f, #3a2818); }
+.topo { display: flex; justify-content: space-between; align-items: center; position: relative; }
+.marca { display: flex; align-items: center; gap: 14px; font: 32px Jakarta; letter-spacing: -.02em; }
+.marca svg { width: 50px; height: 50px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; opacity: .9; }
+.cont { font: 700 25px Jakarta; color: rgba(243,239,228,.5); letter-spacing: .08em; }
+.mao { font-family: Caveat; font-weight: 700; }
+.eti { display: inline-block; padding: 8px 22px; border: 2px solid var(--ouro); border-radius: 99px; font: 800 22px Jakarta; letter-spacing: .14em; text-transform: uppercase; color: var(--ouro); }
+h1 { font: 800 118px/0.98 Jakarta; letter-spacing: -.045em; margin-top: 26px; }
+h1 em, h2 em { font-style: normal; color: var(--ouro); }
+h2 { font: 800 66px/1.02 Jakarta; letter-spacing: -.04em; margin-top: 18px; }
+.sub { font-size: 33px; line-height: 1.42; color: var(--giz2); margin-top: 22px; text-wrap: pretty; }
+.sub b { color: var(--giz); }
+.risco { height: 3px; margin: 30px 0; background: repeating-linear-gradient(90deg, rgba(243,239,228,.55) 0 18px, transparent 18px 30px); }
+.xicara { position: absolute; right: 70px; bottom: 120px; width: 330px; opacity: .9; }
+.rodape { position: absolute; left: 60px; right: 60px; bottom: 44px; display: flex; justify-content: space-between; font: 700 25px Jakarta; color: rgba(243,239,228,.5); }
+.rodape b { color: var(--ouro); }
+/* cardápio */
+.prato { display: grid; grid-template-columns: 1fr auto; gap: 6px 20px; align-items: baseline; padding: 20px 0; border-bottom: 2px dashed rgba(243,239,228,.22); }
+.prato:last-child { border-bottom: 0; }
+.prato h3 { font: 800 44px Jakarta; letter-spacing: -.03em; }
+.prato h3 small { font: 700 34px Caveat; color: var(--menta); margin-left: 12px; letter-spacing: 0; }
+.prato p { grid-column: 1 / -1; font-size: 28px; line-height: 1.38; color: var(--giz2); }
+.prato p b { color: var(--giz); }
+.pontos { display: flex; gap: 10px; }
+.pontos i { width: 24px; height: 24px; border-radius: 50%; border: 3px solid var(--ouro); }
+.pontos i.c { background: var(--ouro); }
+.legenda-pts { display: flex; gap: 26px; font: 600 24px Inter; color: var(--giz2); margin-top: 22px; }
+.legenda-pts span { display: flex; gap: 10px; align-items: center; }
+.legenda-pts i { width: 20px; height: 20px; border-radius: 50%; border: 3px solid var(--ouro); display: inline-block; }
+.legenda-pts i.c { background: var(--ouro); }
+.chef { position: absolute; right: 64px; bottom: 96px; transform: rotate(-4deg); font: 700 42px/1.1 Caveat; color: var(--rosa); text-align: right; }
+/* acompanhamentos */
+.acomp { display: grid; gap: 22px; margin-top: 30px; }
+.ac { display: grid; grid-template-columns: 84px 1fr; gap: 24px; align-items: start; padding: 24px 28px; border: 2px solid rgba(243,239,228,.25); border-radius: 22px; background: rgba(255,255,255,.03); }
+.ac b.n { width: 84px; height: 84px; border-radius: 20px; display: grid; place-items: center; background: var(--ouro); color: #1f2e2a; font: 800 40px Jakarta; }
+.ac h3 { font: 800 36px Jakarta; letter-spacing: -.02em; }
+.ac p { font-size: 28px; line-height: 1.38; color: var(--giz2); margin-top: 6px; }
+.ac p b { color: var(--giz); }
+/* pedido */
+.comanda { margin-top: 34px; background: #fbf6ea; color: #12181a; border-radius: 8px; padding: 44px 48px 40px; transform: rotate(-1.6deg); box-shadow: 0 26px 60px rgba(0,0,0,.45);
+  background-image: repeating-linear-gradient(transparent 0 55px, rgba(20,101,94,.14) 55px 57px); }
+.comanda::before { content: ''; position: absolute; left: 0; right: 0; top: -14px; height: 28px; background: radial-gradient(circle at 14px 0, transparent 13px, #fbf6ea 14px) -14px 0/28px 28px repeat-x; }
+.comanda .tit { display: flex; justify-content: space-between; font: 800 24px Jakarta; letter-spacing: .14em; text-transform: uppercase; color: #8a6a2a; }
+.comanda .q { font: 600 37px/1.32 Inter; margin-top: 18px; color: #12181a; }
+.alts { display: grid; gap: 14px; margin-top: 26px; }
+.alts div { display: flex; gap: 22px; align-items: center; font: 600 36px Jakarta; color: #33504b; }
+.alts b { width: 62px; height: 62px; border-radius: 50%; border: 3px solid #14655e; display: grid; place-items: center; color: #14655e; font-weight: 800; }
+.cta { margin-top: 44px; padding: 26px 34px; border-radius: 22px; background: var(--ouro); color: #1f2e2a; font: 800 34px Jakarta; text-align: center; }
+.figurinha { margin-top: 40px; height: 360px; border: 3px dashed rgba(243,239,228,.4); border-radius: 30px; display: grid; place-items: center; font: 700 44px Caveat; color: rgba(243,239,228,.55); }
+.nota { font-size: 22px; color: rgba(243,239,228,.45); margin-top: 18px; }
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/>
+<circle cx="17" cy="20" r="4.5" fill="#9cc3bd"/><rect x="26" y="16.5" width="24" height="7" rx="3.5" fill="#9cc3bd"/>
+<circle cx="17" cy="32" r="4.5" fill="#f4cf7c"/><rect x="26" y="28.5" width="24" height="7" rx="3.5" fill="#f4cf7c"/>
+<circle cx="17" cy="44" r="4.5" fill="#9cc3bd"/><rect x="26" y="40.5" width="19" height="7" rx="3.5" fill="#9cc3bd"/></symbol>
+<symbol id="cafe" viewBox="0 0 200 170"><g fill="none" stroke="#f3efe4" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M30 70 h120 v28 a60 60 0 0 1 -120 0 z"/><path d="M150 80 h12 a18 18 0 0 1 0 36 h-18"/><path d="M14 160 h172"/>
+<path d="M62 52 c-10 -14 10 -20 0 -36" opacity=".7"/><path d="M90 52 c-10 -14 10 -20 0 -36" opacity=".7"/><path d="M118 52 c-10 -14 10 -20 0 -36" opacity=".7"/></g></symbol>
+</defs></svg>
+
+<!-- 1. Capa -->
+<section id="t1-capa"><div class="quadro">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">1/4</span></div>
+  <p class="mao" style="font-size:60px;color:var(--menta);margin-top:70px;transform:rotate(-3deg)">Pausa das 15h</p>
+  <h1>Cardápio<br>da <em>tarde</em></h1>
+  <div class="risco"></div>
+  <p class="sub" style="font-size:40px;max-width:640px">Luxação do joelho, servida <b>à Schenck</b>.</p>
+  <p class="sub" style="max-width:600px">Cinco pratos, dois acompanhamentos que não podem faltar e um pedido para você fazer nos comentários.</p>
+  <svg class="xicara"><use href="#cafe"/></svg>
+  <div class="rodape"><span>Joelho · trauma</span><span>arraste <b>&gt;&gt;</b></span></div>
+</div></section>
+
+<!-- 2. Cardápio -->
+<section id="t2-cardapio"><div class="quadro">
+  <div class="topo"><span class="eti">Pratos do dia</span><span class="cont">2/4</span></div>
+  <h2 style="font-size:58px">Schenck classifica pelos <em>ligamentos rompidos</em>, não pela direção.</h2>
+  <div class="legenda-pts"><span><i class="c"></i>rompido</span><span><i></i>íntegro</span><span style="margin-left:auto">LCA · LCP · LCM · LCL</span></div>
+  <div style="margin-top:6px">
+    <div class="prato"><h3>KD-I<small>entrada leve</small></h3><div class="pontos"><i class="c"></i><i></i><i></i><i></i></div><p>Joelho luxado com <b>um só cruzado</b> rompido.</p></div>
+    <div class="prato"><h3>KD-II<small>o pedido da prova</small></h3><div class="pontos"><i class="c"></i><i class="c"></i><i></i><i></i></div><p><b>Os dois cruzados</b>, com os <b>dois colaterais íntegros</b>.</p></div>
+    <div class="prato"><h3>KD-III M / L</h3><div class="pontos"><i class="c"></i><i class="c"></i><i class="c"></i><i></i></div><p>Dois cruzados e <b>um colateral</b>: M, medial; L, lateral com canto posterolateral.</p></div>
+    <div class="prato"><h3>KD-IV<small>prato cheio</small></h3><div class="pontos"><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i></div><p>Os <b>quatro</b> ligamentos.</p></div>
+    <div class="prato"><h3>KD-V</h3><div class="pontos"><i class="c" style="border-radius:4px"></i></div><p><b>Fratura-luxação.</b></p></div>
+  </div>
+</div></section>
+
+<!-- 3. Acompanhamentos -->
+<section id="t3-acompanhamentos"><div class="quadro">
+  <div class="topo"><span class="eti">Acompanham todos os pratos</span><span class="cont">3/4</span></div>
+  <h2>Antes do ligamento, <em>a perna.</em></h2>
+  <p class="sub">A artéria poplítea fica presa no hiato dos adutores e no arco do sóleo: na luxação, ela é esticada entre os dois pontos.</p>
+  <div class="acomp">
+    <div class="ac"><b class="n">C</b><div><h3>Modificador arterial</h3><p>Pulso e <b>índice tornozelo-braquial</b>. ITB <b>abaixo de 0,9</b>: angiotomografia. Sem pulso: exploração já.</p></div></div>
+    <div class="ac"><b class="n">N</b><div><h3>Modificador neural</h3><p>Examinar o <b>nervo fibular</b> (dorsiflexão do pé e do hálux). Mais lesado no lado lateral, KD-III L e KD-IV.</p></div></div>
+    <div class="ac"><b class="n">+</b><div><h3>A ordem da casa</h3><p>Reduzir logo. Se não segura, <b>fixador externo transarticular</b>. Ligamento fica para depois.</p></div></div>
+  </div>
+  <p class="nota">Exemplo de leitura: KD-III L C N.</p>
+</div></section>
+
+<!-- 4. Pedido -->
+<section id="t4-pedido"><div class="quadro">
+  <div class="topo"><span class="eti">Seu pedido</span><span class="cont">4/4</span></div>
+  <div class="comanda" style="position:relative">
+    <div class="tit"><span>Comanda · mesa 2</span><span>TARO</span></div>
+    <p class="q">Luxação aguda do joelho com ruptura dos ligamentos cruzados e integridade dos colaterais. Segundo Schenck, é:</p>
+    <div class="alts"><div><b>A</b>KD-I</div><div><b>B</b>KD-II</div><div><b>C</b>KD-III</div><div><b>D</b>KD-IV</div></div>
+  </div>
+  <p class="mao" style="font-size:54px;color:var(--menta);margin-top:46px;transform:rotate(-2deg)">Faça o pedido nos comentários: só a letra.</p>
+  <div class="cta">Questões comentadas, letra por letra · ortoquestoes.com.br</div>
+  <div class="rodape"><span>Salve para revisar</span><span>link na <b>bio</b></span></div>
+</div></section>
+
+<!-- Story -->
+<section id="ts1-story" class="story"><div class="quadro">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="eti">Pausa das 15h</span></div>
+  <p class="mao" style="font-size:64px;color:var(--menta);margin-top:70px;transform:rotate(-3deg)">Pedido rápido, antes do café esfriar:</p>
+  <h2 style="font-size:84px;margin-top:20px">Os dois cruzados rompidos, <em>colaterais íntegros.</em></h2>
+  <p class="sub" style="font-size:40px">Luxação do joelho. Qual é o prato de Schenck?</p>
+  <div class="figurinha">figurinha de quiz: KD-I, KD-II, KD-III, KD-IV</div>
+  <div class="risco"></div>
+  <p class="sub">O cardápio completo, com os acompanhamentos que a banca cobra, está no post de hoje.</p>
+  <svg class="xicara" style="bottom:150px;width:300px"><use href="#cafe"/></svg>
+  <div class="rodape"><span>ortoquestoes.com.br</span><span>post no <b>perfil</b></span></div>
+</div></section>
+</body></html>
