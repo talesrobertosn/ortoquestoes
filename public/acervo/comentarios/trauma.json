@@ -1335,14 +1335,18 @@
   "conferido": false
  },
  "trauma-0115": {
+  "conceito": "**O que é o joelho flutuante.** É a combinação de fratura do **fêmur** e da **tíbia** do mesmo lado: o joelho fica \"solto\" entre dois ossos quebrados, sem continuidade óssea acima nem abaixo. É uma lesão de **alta energia**, típica de acidentes de **motocicleta** e **atropelamentos**.\n\n**As lesões associadas mais frequentes.**\n\n| Associação | Comentário |\n|---|---|\n| **Fratura exposta** | Em cerca de **60%** dos casos, geralmente da tíbia |\n| Lesão ligamentar do joelho | Frequente e muitas vezes despercebida; examinar o joelho após a fixação |\n| Lesão vascular | Artéria poplítea; sempre avaliar pulsos e índice tornozelo-braquial |\n| Politrauma | Traumatismo craniano, torácico, abdominal, fraturas da pelve e de outros membros |\n| Embolia gordurosa | Duas fraturas de ossos longos aumentam o risco |\n\n**A classificação de Fraser.**\n- **Tipo I**: as duas fraturas são **diafisárias** (extra-articulares).\n- **Tipo II**: uma ou ambas atingem o joelho: IIa (platô tibial), IIb (fêmur distal), IIc (ambos).\n\n**Tratamento.** No paciente politraumatizado instável, **controle de danos** com fixadores externos, seguido de fixação definitiva quando estável. No paciente estável, **fixação das duas fraturas** o mais cedo possível, o que permite mobilizar o paciente, reduz complicações pulmonares e facilita a reabilitação do joelho. Uma opção para fraturas diafisárias é a **haste retrógrada do fêmur e anterógrada da tíbia** pela mesma incisão no joelho.\n\n**Prognóstico.** Pior quando há fratura articular (Fraser II), fratura exposta e lesão vascular; rigidez do joelho e discrepância de comprimento são sequelas comuns.",
+  "correta": "**Correta: C (60%).** No joelho flutuante, lesão de alta energia, a fratura exposta está presente em aproximadamente **60%** dos casos.",
   "incorretas": {
-   "A": "20% subestima a frequência de exposição.",
-   "B": "40% também subestima a frequência.",
-   "D": "80% superestima a frequência."
+   "A": "**20%** subestima muito a frequência de fratura exposta nessa lesão de alta energia.",
+   "B": "**40%** também está abaixo do valor clássico descrito.",
+   "D": "**80%** superestima a frequência citada nas séries."
   },
-  "conceito": "O **joelho flutuante** é a fratura do **fêmur** e da **tíbia** do mesmo lado: o joelho fica solto entre dois ossos quebrados. É uma lesão de **alta energia**, típica de acidentes de moto e atropelamentos.\n\n**As associações frequentes**:\n\n**fratura exposta**: em cerca de **60%** dos casos;\n\n**lesões ligamentares** do joelho;\n\n**lesão vascular**;\n\n**politrauma**, com lesões de cabeça, tórax e abdome.\n\n**Fraser** classifica: tipo I, as duas fraturas são diafisárias e o joelho está íntegro; tipo II, uma ou as duas entram no joelho (IIA planalto, IIB fêmur distal, IIC as duas).\n\n**O tratamento**: fixar **as duas** fraturas, para permitir a reabilitação do joelho. Uma opção prática é a **haste retrógrada no fêmur** e a **anterógrada na tíbia** pela mesma incisão no joelho.\n\n**Na prova**: no joelho flutuante, a fratura exposta associada ocorre em cerca de **60%**.",
-  "correta": "Por ser uma lesão de alta energia, o joelho flutuante tem fratura exposta em cerca de 60% dos casos.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 9ª edição, capítulo de fraturas da diáfise da tíbia",
+   "Fraser RD, Hunter GA, Waddell JP. Ipsilateral fracture of the femur and tibia. J Bone Joint Surg Br. 1978;60-B(4):510-515."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0116": {

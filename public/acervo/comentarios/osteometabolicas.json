@@ -87,16 +87,18 @@
   "formato": "corrido"
  },
  "osteometabolicas-0008": {
-  "conceito": "**A classificação funcional.** Descrita por Steinbrocker e adotada pela associação americana de reumatologia, ela separa o paciente com artrite reumatoide em quatro classes pelo que ele **ainda consegue fazer** em três domínios: o **autocuidado**, a **atividade profissional** e o **lazer**. A leitura é puramente funcional, do que sobrou, e não depende da radiografia.\n\n**Como as classes se escalonam.** Na **classe I** o paciente faz as três coisas. Na **classe II** mantém o autocuidado e o trabalho, mas perde o lazer. Na **classe III** conserva **só o autocuidado**, já sem trabalho e sem lazer. Na **classe IV** não consegue fazer nenhum dos três.\n\n**Na prova:** paciente limitado a pouca atividade no dia a dia, mas que ainda se cuida sozinho, é **classe III**.",
-  "correta": "**Classe III.** O paciente mantém o autocuidado, mas já perdeu o trabalho e o lazer.",
+  "conceito": "**Classificar pela função, não pela imagem.** A classificação funcional descrita por **Steinbrocker** e revisada pelo Colégio Americano de Reumatologia (1991) separa os pacientes com artrite reumatoide em **quatro classes** conforme o que eles **ainda conseguem fazer** em três domínios:\n- **autocuidado**: vestir-se, alimentar-se, tomar banho, higiene;\n- **atividade profissional**: trabalho, escola, tarefas domésticas;\n- **atividades de lazer**: recreação e lazer.\n\n| Classe | Capacidade |\n|---|---|\n| I | **Completamente capaz** de realizar as atividades habituais (autocuidado, profissionais e de lazer) |\n| II | Capaz de autocuidado e atividades profissionais, **limitado no lazer** |\n| **III** | Capaz de autocuidado, **limitado nas atividades profissionais e de lazer** |\n| IV | **Limitado também no autocuidado** |\n\n**A classe III.** O paciente ainda cuida de si, mas está **limitado** e consegue executar **pouca atividade** além do autocuidado: não trabalha normalmente nem mantém as atividades de lazer. É o perfil descrito no enunciado.\n\n**Para que serve.**\n- Acompanhar a evolução funcional e o efeito do tratamento.\n- Indicar e priorizar intervenções: reabilitação, órteses, cirurgias (sinovectomia, artroplastias, artrodeses).\n- A leitura é **funcional**, independente do grau radiográfico de destruição articular.\n\n**A cirurgia na artrite reumatoide hoje.** Com os medicamentos modificadores da doença (metotrexato) e os biológicos, a necessidade de sinovectomias e de cirurgias reconstrutivas diminuiu muito. Ainda assim, artroplastias de quadril e joelho, cirurgias do pé reumatoide e da coluna cervical (instabilidade atlantoaxial) continuam relevantes.",
+  "correta": "**Correta: C (classe III).** O paciente que mantém o autocuidado, mas está **limitado** e realiza pouca atividade profissional e de lazer, corresponde à classe III da classificação funcional do Colégio Americano de Reumatologia.",
   "incorretas": {
-   "A": "**Sem limitação.** Na classe I o paciente faz tudo, inclusive trabalho e lazer.",
-   "B": "**Perde só o lazer.** Na classe II o trabalho ainda está preservado.",
-   "D": "**Incapacidade completa.** Na classe IV o paciente perde até o autocuidado."
+   "A": "A **classe I** é o paciente completamente capaz de realizar todas as atividades habituais.",
+   "B": "Na **classe II**, o paciente mantém o autocuidado e o trabalho, com limitação apenas nas atividades de lazer.",
+   "D": "Na **classe IV**, há limitação **também no autocuidado**, a forma mais grave."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Hochberg MC, Chang RW, Dwosh I, Lindsey S, Pincus T, Wolfe F. The American College of Rheumatology 1991 revised criteria for the classification of global functional status in rheumatoid arthritis. Arthritis Rheum. 1992;35(5):498-502."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "osteometabolicas-0009": {
   "conceito": "**Remodelação óssea em equilíbrio.** O esqueleto adulto é trocado continuamente pelas unidades de remodelação: o osteoclasto reabsorve e o osteoblasto preenche. Enquanto as duas fases estão acopladas, a massa óssea se mantém. A osteoporose aparece quando a reabsorção supera a formação.\n\n**O eixo RANKL, RANK e osteoprotegerina.** O osteoblasto e o osteócito produzem o **RANKL**, que se liga ao receptor **RANK** dos precursores e ativa a formação e a sobrevida do osteoclasto. A **osteoprotegerina (OPG)** é um receptor solúvel que sequestra o RANKL e funciona como freio.\n\n**O papel do estrogênio.**\n- Aumenta a produção de OPG e reduz a de RANKL.\n- Reduz citocinas pró-reabsortivas (IL-1, IL-6, TNF-alfa).\n- Induz a **apoptose** do osteoclasto e prolonga a vida do osteoblasto e do osteócito.\n\n**O que acontece na menopausa.** A queda abrupta do estrogênio solta esse freio de uma vez. O número de unidades de remodelação ativas dispara, cada osteoclasto vive mais e cava lacunas mais profundas, e o osteoblasto não consegue preencher tudo. Nos primeiros 5 a 10 anos há uma fase de **perda acelerada**, que atinge sobretudo o **osso trabecular**, por ter mais superfície por volume. Por isso as primeiras fraturas típicas são a **vertebral** e a do **rádio distal**; a do quadril, onde predomina o cortical, aparece mais tarde, quando se soma a perda lenta da senilidade.\n\n**Classificação clássica de Riggs e Melton.**\n\n| Tipo | Mecanismo | Fraturas típicas |\n|---|---|---|\n| I, pós-menopausa | Deficiência de estrogênio, perda trabecular rápida | Vértebra, rádio distal |\n| II, senil | Envelhecimento do osteoblasto, hiperparatireoidismo secundário | Quadril, úmero proximal |\n\n**Implicação terapêutica.** A reposição hormonal e os moduladores seletivos do receptor de estrogênio (raloxifeno) atuam restaurando esse freio, e o denosumabe bloqueia diretamente o RANKL, reproduzindo a ação da OPG.",
@@ -297,16 +299,18 @@
   "formato": "corrido"
  },
  "osteometabolicas-0025": {
-  "conceito": "**A cadeia da osteoporose senil**, tipo II: a pele produz **menos vitamina D**, o rim a hidroxila menos e o intestino **absorve menos cálcio**. O cálcio tende a cair, e a paratireoide responde com **PTH elevado**, um hiperparatireoidismo secundário leve.\n\n**Na comparação com a tipo I**, pós-menopausa, a senil tem remodelação baixa em vez de alta, osteoclasto diminuído em vez de aumentado, calciúria normal em vez de alta, **PTH alto** em vez de normal ou baixo, perda cortical e trabecular em vez de só trabecular, e fratura típica no quadril em vez de vértebra e rádio distal. A senil ainda predomina em **mulheres**, cerca de 2 para 1, embora a proporção de homens aumente.\n\n**Na prova:** senil tem **PTH aumentado** e calciúria normal.",
-  "correta": "**Paratormônio aumentado.** É o hiperparatireoidismo secundário à má absorção de cálcio no idoso.",
+  "conceito": "**Duas osteoporoses, dois mecanismos.** Na classificação de Riggs e Melton, a osteoporose involutiva tem dois padrões.\n\n| Aspecto | Tipo I, pós-menopausa | Tipo II, senil |\n|---|---|---|\n| Idade e sexo | 50 a 65 anos, **mulheres** | Acima de 70 anos, mulheres e homens (2:1, ainda predomínio feminino) |\n| Causa principal | Falta de estrogênio | Envelhecimento e déficit de cálcio e vitamina D |\n| Remodelação | **Alta**, osteoclastos hiperativos | **Baixa**, osteoblastos diminuídos |\n| Osso | Trabecular | Cortical e trabecular |\n| **PTH** | **Normal ou baixo** | **Aumentado** |\n| Calciúria | Pode estar aumentada | **Normal ou baixa** |\n| Fraturas | Vértebra, rádio distal | Colo do fêmur, úmero proximal, pelve |\n\n**A cadeia da osteoporose senil.**\n1. A pele idosa produz **menos vitamina D** com o sol, e o rim faz menos a hidroxilação final (calcitriol).\n2. O intestino **absorve menos cálcio**.\n3. O cálcio sérico tende a cair, e as paratireoides respondem com **aumento do PTH**: um **hiperparatireoidismo secundário** leve.\n4. O PTH elevado mobiliza cálcio do osso, sobretudo do **cortical** (reabsorção endosteal), afinando o córtex.\n\n**Por que o PTH difere entre os tipos.** No tipo I, o osso libera muito cálcio pela reabsorção aumentada, o que **suprime** o PTH. No tipo II, o problema é a falta de cálcio que chega ao sangue, o que **estimula** o PTH.\n\n**Tratamento.** No idoso, **cálcio e vitamina D** são essenciais (corrigem o hiperparatireoidismo secundário), além de antirreabsortivos ou anabólicos e prevenção de quedas.",
+  "correta": "**Correta: B (paratormônio aumentado).** Na osteoporose senil, a menor produção e ativação da vitamina D reduzem a absorção de cálcio, e o organismo responde com **hiperparatireoidismo secundário**, com PTH elevado, ao contrário da pós-menopausa.",
   "incorretas": {
-   "A": "**É da tipo I.** Calciúria alta é característica da osteoporose pós-menopausa.",
-   "C": "**É da tipo I.** Osteoclasto aumentado é característica da pós-menopausa.",
-   "D": "**Ainda é feminina.** A proporção de homens cresce na senil, mas eles não predominam."
+   "A": "O **aumento da calciúria** pode ocorrer na pós-menopausa, pela reabsorção óssea acelerada; na senil, a absorção de cálcio está reduzida e a calciúria tende a ser normal ou baixa.",
+   "C": "A **maior atividade dos osteoclastos** caracteriza a osteoporose **pós-menopausa**; na senil, a remodelação é baixa.",
+   "D": "A osteoporose senil afeta os dois sexos, mas ainda **predomina nas mulheres** (cerca de 2 para 1)."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Riggs BL, Melton LJ 3rd. Involutional osteoporosis. N Engl J Med. 1986;314(26):1676-1686."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "osteometabolicas-0026": {
   "conceito": "**Por que a vitamina D é obrigatória.** Sem ela, o cálcio ingerido **não é absorvido**, e o antirreabsortivo trabalha num organismo que continua retirando cálcio do osso. Para adultos mais velhos com osteoporose, a recomendação é de **pelo menos 800 UI por dia**, na faixa de 800 a 1.000 UI; foi com doses assim, associadas ao cálcio, que os ensaios mostraram **redução de fratura**. Doses menores, como as dos multivitamínicos comuns, muitas vezes não alcançam nível sérico suficiente.\n\n**Na prática**, deve-se dosar a **25-OH-vitamina D** e corrigir a deficiência antes de iniciar bisfosfonato ou denosumabe; deficiência importante exige dose de ataque, não só manutenção. O cálcio deve vir preferencialmente da dieta, completado com suplemento se necessário.\n\n**Na prova:** vitamina D na osteoporose é **no mínimo 700 a 800 UI por dia**.",
@@ -826,16 +830,19 @@
   "formato": "corrido"
  },
  "osteometabolicas-0066": {
-  "conceito": "**A pista é a interfalângica distal.** A acro-osteólise é a reabsorção do **tufo** da falange distal, e por isso pede uma doença que ataque a **IFD**. Entre as artropatias inflamatórias, a que faz isso caracteristicamente é a **artrite psoriásica**: erosão do tufo, **alteração ungueal** (pontilhado, onicólise), **dactilite** e, nas formas mutilantes, o **lápis na taça** e o dedo em telescópio, muitas vezes com neoformação óssea junto às erosões.\n\n**Outras causas de acro-osteólise** fora das artrites são a esclerose sistêmica, o hiperparatireoidismo, a exposição ao cloreto de vinila e as lesões térmicas, como queimadura e congelamento.\n\n**Na prova:** acro-osteólise com IFD e unha alterada é **artrite psoriásica**.",
-  "correta": "**Psoriática.** É a artropatia inflamatória da IFD, com erosão do tufo da falange distal.",
+  "conceito": "**A acro-osteólise.** É a **reabsorção do tufo** (a extremidade) da falange distal. Na radiografia, a ponta da falange distal fica afilada, erodida ou desaparece. A localização na falange distal sugere uma doença que ataca a **interfalângica distal** e as estruturas vizinhas (unha, entese).\n\n**A artrite psoriásica.** É a artropatia inflamatória que caracteristicamente acomete a **IFD** e produz:\n- **Erosão do tufo** da falange distal (acro-osteólise).\n- **Alterações ungueais**: pontilhado (pitting), onicólise, hiperceratose subungueal, presentes na maioria dos pacientes com acometimento da IFD.\n- **Dactilite** (dedo em salsicha): inflamação de todo o dedo.\n- **Entesite** e **periostite** (proliferação óssea junto às erosões).\n- Nas formas mutilantes: **lápis na taça** (a ponta da falange afilada encaixada numa base alargada) e **dedo em telescópio** (encurtamento por reabsorção).\n- Assimetria e, muitas vezes, ausência de osteopenia periarticular.\n\n**Comparação com as outras doenças.**\n\n| Doença | Padrão na mão |\n|---|---|\n| **Artrite psoriásica** | **IFD**, erosões com proliferação, acro-osteólise, lápis na taça |\n| Artrite reumatoide | **Metacarpofalângicas e IFP**, simétrica, osteopenia periarticular, **poupa a IFD** |\n| Lúpus | **Deformidades redutíveis** (Jaccoud), sem erosões |\n| Gota | Erosões em **saca-bocado** com borda saliente, tofos, qualquer articulação |\n\n**Outras causas de acro-osteólise.** Esclerodermia (com calcinose), hiperparatireoidismo, lesões térmicas (queimadura, congelamento), exposição ao cloreto de vinila e a síndrome de Hajdu-Cheney. Na prova, a associação clássica entre acro-osteólise e artropatia inflamatória é a **psoriásica**.",
+  "correta": "**Correta: B (psoriática).** A erosão dos tufos das falanges distais (acro-osteólise) é característica da **artrite psoriásica**, que acomete a interfalângica distal, com alterações ungueais e, nas formas graves, deformidade em lápis na taça.",
   "incorretas": {
-   "A": "**Poupa a IFD.** A artrite reumatoide prefere as metacarpofalângicas e as interfalângicas proximais.",
-   "C": "**Não é erosiva.** O lúpus faz a artropatia de Jaccoud, com deformidades redutíveis.",
-   "D": "**Outro padrão.** A gota dá erosões em saca-bocado com borda saliente e tofos."
+   "A": "A **artrite reumatoide** acomete metacarpofalângicas e IFP de forma simétrica e **poupa a IFD**; não produz acro-osteólise típica.",
+   "C": "O **lúpus** causa deformidades redutíveis (artropatia de Jaccoud), geralmente **sem erosões**.",
+   "D": "A **gota** produz erosões em saca-bocado com borda saliente e tofos, e não a reabsorção do tufo."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
+   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição"
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "osteometabolicas-0067": {
   "conceito": "**Duas informações numa pergunta.** A questão pede o osso de onde a doença parte e o movimento que mais se perde.\n\n**O osso: a ulna proximal.** A tuberculose chega por via hematogênica e se instala no osso esponjoso bem vascularizado. No cotovelo, o foco inicial mais típico é o **olécrano**, na ulna proximal, uma grande massa de osso esponjoso subcondral. Do olécrano, a doença invade a articulação. O úmero distal também pode ser sede, mas com menor frequência.\n\n**O movimento: a extensão.** Toda articulação inflamada com derrame busca a posição de **maior volume capsular**, que diminui a pressão e a dor. No cotovelo, essa posição é em torno de **70 a 80° de flexão**. O paciente passa semanas com o cotovelo dobrado, e:\n- a cápsula anterior e o braquial se retraem;\n- o espasmo do bíceps e do braquial mantém a flexão;\n- a sinovite e o tecido de granulação ocupam a fossa olecraniana, bloqueando mecanicamente a extensão.\n\nO resultado é a perda progressiva da **extensão**, com a flexão relativamente preservada nas fases iniciais.\n\n**Apresentação clínica.** Monoartrite arrastada, com aumento de volume fusiforme, **atrofia muscular** do braço e antebraço, dor moderada, às vezes fístulas e abscessos frios. Radiografia com osteopenia periarticular, erosões e preservação relativa do espaço articular no início.\n\n**Diagnóstico e tratamento.** Biópsia sinovial com cultura, pesquisa de BAAR, PCR e histologia. Tratamento com esquema antituberculoso prolongado, associando fisioterapia para preservar o movimento; desbridamento cirúrgico nos casos avançados.",

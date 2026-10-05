@@ -1196,14 +1196,17 @@
   "conferido": false
  },
  "coluna-0084": {
-  "conceito": "### Radiografia na lombalgia aguda\n**Sem sinais de alarme:** não pedir nas primeiras semanas. Não muda a conduta e gera **achados incidentais** (discopatia, artrose em assintomáticos).\n\n**Pedir quando houver:**\n- **Bandeiras vermelhas:**\n  - trauma significativo;\n  - mais de 50 ou menos de 20 anos;\n  - febre, perda de peso, **câncer** (história pessoal);\n  - **corticoide**, drogas injetáveis, abuso de álcool;\n  - déficit neurológico progressivo, **cauda equina**.\n- **Evolução fora do esperado:** dor que não melhora em 4 a 6 semanas, ou ==retorno pelo mesmo motivo em pouco tempo==.\n\n**RM:** quando há suspeita de infecção, tumor, compressão neurológica, ou para planejamento cirúrgico.\n\n> **Na prova:** radiografia indicada = ==retorno em menos de 30 dias pela mesma dor== (ou bandeira vermelha).",
-  "correta": "**Segunda visita em menos de 30 dias pelo mesmo motivo.**",
+  "conceito": "**A lombalgia aguda é benigna na grande maioria.** Mais de 90% dos casos de dor lombar aguda são **inespecíficos** e melhoram em 4 a 6 semanas com analgesia, manutenção da atividade e orientação. Exames de imagem precoces **não mudam a conduta** e frequentemente mostram achados **incidentais** (discopatia, artrose, protrusões) presentes também em pessoas sem dor, o que pode levar a tratamentos desnecessários e a preocupação do paciente.\n\n**Quando pedir radiografia.** A imagem é indicada quando há **sinais de alarme** (bandeiras vermelhas) ou quando a evolução foge do esperado.\n\n**Bandeiras vermelhas.**\n- **Trauma** significativo (ou trauma leve em idoso com osteoporose).\n- Idade **acima de 50** ou **abaixo de 20** anos no início.\n- História de **câncer**, perda de peso inexplicada, dor noturna em repouso.\n- **Febre**, uso de drogas injetáveis, imunossupressão, infecção urinária recente.\n- **Uso prolongado de corticoide**.\n- **Déficit neurológico** progressivo, síndrome da cauda equina (retenção urinária, anestesia em sela).\n\n**Persistência ou recorrência.** Quando o paciente **retorna** pelo mesmo motivo sem melhora esperada, a reavaliação pode incluir radiografia, sobretudo se a dor persiste além de 4 a 6 semanas. Na questão, a **segunda visita em menos de 30 dias** pelo mesmo motivo é a opção que corresponde a esse critério de reavaliação.\n\n**Por que as outras não indicam.**\n- A **intensidade da dor** (escala visual) não diferencia causas graves de benignas.\n- **Parestesia em membros superiores** aponta para a coluna **cervical**, não lombar.\n- **Artrite reumatoide na família** não é bandeira vermelha para lombalgia aguda.\n\n**Na suspeita de causa grave**, o exame de escolha costuma ser a **ressonância**, com exames laboratoriais (VHS, PCR) quando há suspeita de infecção ou tumor.",
+  "correta": "**Correta: D.** Entre as opções, a **segunda visita em menos de 30 dias pelo mesmo motivo** é a que justifica reavaliar com radiografia, por indicar evolução fora do esperado. As demais não são critérios para imagem na lombalgia aguda.",
   "incorretas": {
-   "A": "**Dor acima de 5 na EVA.**\n- A intensidade não prediz doença estrutural.",
-   "B": "**Parestesia nos membros superiores.**\n- Não é lombar; investigar a **cervical**.",
-   "C": "**Artrite reumatoide na família.**\n- Não é bandeira vermelha."
+   "A": "A **intensidade da dor** na escala visual não indica, sozinha, causa grave; dores intensas são comuns na lombalgia mecânica benigna.",
+   "B": "**Parestesia em membros superiores** sugere problema **cervical** ou neurológico central, e não orienta a radiografia lombar.",
+   "C": "**História familiar** de artrite reumatoide não é bandeira vermelha para lombalgia aguda."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Chou R, Qaseem A, Owens DK, Shekelle P. Diagnostic imaging for low back pain: advice for high-value health care from the American College of Physicians. Ann Intern Med. 2011;154(3):181-189."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "coluna-0085": {
