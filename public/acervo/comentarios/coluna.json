@@ -3716,19 +3716,20 @@
   "conferido": false
  },
  "coluna-0321": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "D",
-  "conceito": "**Disco intervertebral e cisalhamento.** As fibras colágenas do disco não se ancoram no osso subcondral, mas na placa cartilaginosa; a interface é o ponto fraco frente às forças de cisalhamento horizontal.\n\n**Na prova:** a interface disco-placa terminal é frágil ao cisalhamento.",
-  "correta": "**Falta de conexão fibrilar do colágeno ósseo subcondral com a cartilagem discal.** A falta de conexão fibrilar com o osso subcondral explica a fragilidade.",
+  "conceito": "**Disco intervertebral e a resistência ao cisalhamento.** O disco é formado por três partes: o **núcleo pulposo** (gel rico em proteoglicanos e água, com colágeno tipo II frouxo), o **anel fibroso** (lamelas concêntricas de colágeno tipo I e II, com fibras em ângulos alternados de cerca de 30 graus) e as **placas terminais cartilaginosas**, que fazem a interface com o corpo vertebral.\n\n**Como o disco resiste às cargas.**\n- **Compressão**: o núcleo, pressurizado, transmite a carga em todas as direções; as fibras do anel ficam sob tensão circunferencial e contêm o núcleo.\n- **Rotação (torção)**: resistida pelas lamelas em ângulos alternados e, sobretudo, pelas facetas articulares.\n- **Cisalhamento horizontal**: é a carga a que o disco **menos resiste**; quem a controla são principalmente as **facetas articulares**.\n\n**O ponto fraco: a ancoragem do disco no osso.** As fibras do **terço externo** do anel ancoram-se firmemente no anel apofisário do corpo vertebral (fibras de Sharpey). As fibras dos **dois terços internos** e o núcleo prendem-se à **placa terminal cartilaginosa**, e esta, por sua vez, **não tem continuidade de fibrilas de colágeno com o osso subcondral**: a ligação é feita por uma camada calcificada, sem fibras atravessando. Por isso, sob cisalhamento, a interface entre a placa cartilaginosa e o osso subcondral é um plano de falha. Bogduk descreve essa anatomia e suas implicações mecânicas.\n\n**Consequências clínicas.**\n- Avulsões da placa terminal e do anel apofisário em adolescentes (fratura do anel apofisário, que simula hérnia).\n- Nódulos de Schmorl (herniação do núcleo através da placa terminal).\n- Na espondilólise e na espondilolistese, a perda do controle facetário expõe o disco ao cisalhamento, contribuindo para o escorregamento.\n\n> O disco resiste mal ao cisalhamento: o colágeno da placa cartilaginosa não se continua com o osso subcondral, e quem segura o cisalhamento são as facetas.",
+  "correta": "**D: falta de conexão fibrilar do colágeno ósseo subcondral com a cartilagem discal (resposta pela bibliografia).** A placa terminal cartilaginosa, onde se prende a maior parte do disco, não tem continuidade de fibras colágenas com o osso subcondral; essa interface é o ponto fraco diante do cisalhamento horizontal.",
   "incorretas": {
-   "A": "**Má ancoragem das fibrilas colágenas nos 2/3 externos do anel fibroso.** As fibras externas se ancoram bem (fibras de Sharpey).",
-   "B": "**Composição do núcleo pulposo prevalentemente de fibrilas colágenas frouxas.** O núcleo é rico em proteoglicanos, não em colágeno frouxo.",
-   "C": "**Composição do anel fibroso de glicosaminoglicanos não agregados.** Não é a explicação para o cisalhamento."
+   "A": "**Má ancoragem nos dois terços externos do anel** está errado: as fibras do terço externo são justamente as mais bem ancoradas, no anel apofisário, por fibras de Sharpey.",
+   "B": "**Núcleo de fibrilas colágenas frouxas** descreve em parte o núcleo, mas sua função é resistir à compressão; não explica a fraqueza ao cisalhamento.",
+   "C": "**Anel fibroso de glicosaminoglicanos não agregados** está errado: o anel é predominantemente colágeno organizado em lamelas; os proteoglicanos agregados (agrecano) predominam no núcleo."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 1958."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 1958.",
+   "Bogduk N. Clinical anatomy of the lumbar spine and sacrum. 4th ed. Edinburgh: Elsevier Churchill Livingstone; 2005."
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "D",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "coluna-0322": {

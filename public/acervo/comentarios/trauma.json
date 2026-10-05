@@ -4770,19 +4770,20 @@
   "conferido": false
  },
  "trauma-0561": {
-  "conceito": "### Por que a não fresada consolida pior\n- Haste de **menor diâmetro**, menor preenchimento do canal.\n- Menos **estabilidade** mecânica.\n- Sem o **produto da fresagem**, que funciona como enxerto.\n\nResultado: mais retardo, **não união** e reoperação que a fresada.\n\n### O número cobrado\nA banca usa ==4,5 vezes== mais risco de não união (veja o alerta: os estudos variam, e não há multiplicador universal).\n\n### Na prática\nNo fêmur, a haste **fresada** é o padrão. A não fresada foi pensada para o politraumatizado com lesão pulmonar, mas o benefício pulmonar não se confirmou de forma consistente.\n\n> **Na prova:** haste não fresada no fêmur = ==~4,5 vezes== mais não união (valor da banca).",
-  "correta": "**4,5 vezes.**\n- O multiplicador adotado pelo gabarito.",
+  "conceito": "**Haste intramedular fresada x não fresada no fêmur.** A haste intramedular bloqueada é o tratamento padrão da fratura diafisária do fêmur no adulto. A dúvida histórica era se o canal deveria ser **fresado** antes da inserção.\n\n**O que a fresagem faz.**\n- Alarga o canal e permite uma haste de **maior diâmetro**, mais rígida e com maior contato com a cortical: mais **estabilidade**.\n- O **produto da fresagem** (osso e medula moídos) deposita-se no foco e funciona como **enxerto autólogo**, rico em células e fatores osteoindutores.\n- Aumenta temporariamente a circulação periosteal, que compensa a lesão da irrigação endosteal.\n\n**Por que se pensou na não fresada.** A fresagem eleva a pressão intramedular e lança **êmbolos de gordura** na circulação, o que, em teoria, piora a função pulmonar em politraumatizados com trauma torácico. A haste não fresada, mais fina, evitaria isso.\n\n**O que mostraram os estudos.** O ensaio randomizado multicêntrico da Canadian Orthopaedic Trauma Society comparou as duas técnicas no fêmur e encontrou **pseudartrose cerca de 4,5 vezes mais frequente** com hastes **não fresadas** (risco relativo de 4,5), além de mais reoperações. Metanálises posteriores confirmaram maior taxa de não união sem fresagem, e o benefício pulmonar da não fresada não se confirmou de forma consistente.\n\n| Técnica | Vantagens | Desvantagens |\n|---|---|---|\n| **Fresada** | Maior estabilidade, enxerto local, **menos pseudartrose** | Embolia gordurosa teórica, tempo cirúrgico maior |\n| Não fresada | Menos embolia teórica, mais rápida | **Mais pseudartrose**, retardo de consolidação, falha do implante |\n\n**Na prática.** A haste **fresada** é o padrão no fêmur; em politraumatizados graves instáveis, o controle de dano com fixador externo e a conversão posterior é a estratégia preferida.\n\n> Fêmur: haste não fresada tem cerca de 4,5 vezes mais pseudartrose que a fresada.",
+  "correta": "**D: 4,5.** É o multiplicador adotado pela prova, que corresponde ao risco relativo de pseudartrose com haste não fresada relatado no ensaio randomizado canadense.",
   "incorretas": {
-   "A": "**Subestima o valor cobrado.**",
-   "B": "**Inferior ao cobrado.**",
-   "C": "**Próximo, não igual.**"
+   "A": "**1,5 vez** subestima o aumento de risco relatado no ensaio de referência.",
+   "B": "**2,5 vezes** também fica abaixo do valor adotado.",
+   "C": "**3,5 vezes** se aproxima, mas não é o valor de referência (4,5)."
   },
-  "alerta": "O valor exato varia entre estudos, técnicas e populações. Revisões mais recentes confirmam maior risco de não união com hastes não fresadas, mas não sustentam um único multiplicador universal para todo paciente.",
   "referencias": [
    "Reamed versus unreamed intramedullary nailing for femoral fractures: meta-analysis of randomized trials. Medicine (Baltimore). 2017;96(12):e6307. https://pmc.ncbi.nlm.nih.gov/articles/PMC5265768/",
-   "el Moumni M et al. The incidence of non-union following unreamed intramedullary nailing of femoral shaft fractures. Injury. 2009;40(2):205-208. doi:10.1016/j.injury.2008.06.022"
+   "el Moumni M et al. The incidence of non-union following unreamed intramedullary nailing of femoral shaft fractures. Injury. 2009;40(2):205-208. doi:10.1016/j.injury.2008.06.022",
+   "Canadian Orthopaedic Trauma Society. Nonunion following intramedullary nailing of the femur with and without reaming. Results of a multicenter randomized clinical trial. J Bone Joint Surg Am. 2003;85(11):2093-2096."
   ],
-  "geradoEm": "2026-09-23",
+  "alerta": "O valor exato varia entre estudos, técnicas e populações. Revisões mais recentes confirmam maior risco de não união com hastes não fresadas, mas não sustentam um único multiplicador universal para todo paciente.",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0562": {
