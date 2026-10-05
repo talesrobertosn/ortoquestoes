@@ -88,17 +88,18 @@
   "conferido": false
  },
  "pediatria-0007": {
+  "conceito": "**A deficiência femoral focal proximal (DFFP).** Faz parte do espectro das **deficiências longitudinais congênitas do fêmur**, que vai do fêmur curto congênito, com quadril normal, até a quase ausência do fêmur proximal. Geralmente é **unilateral**.\n\n**Como a criança se apresenta.**\n- Coxa **muito curta e volumosa**.\n- Quadril em **flexão, abdução e rotação externa**.\n- Pé geralmente na altura do joelho contralateral.\n\n**Associações frequentes.** **Hemimelia fibular** em cerca de metade dos casos, **deficiência do LCA** e pé com raios ausentes.\n\n**A classificação de Aitken.** Separa os tipos pela presença da **cabeça femoral**, pelo **acetábulo** e pela existência de uma **conexão óssea** entre a cabeça e a diáfise na maturidade.\n\n| Tipo | Cabeça e acetábulo | Conexão cabeça-diáfise |\n|---|---|---|\n| **A** | Cabeça presente; acetábulo **normal** | Defeito subtrocantérico que **ossifica**, deixando coxa vara |\n| **B** | Cabeça presente; acetábulo adequado ou levemente displásico | **Não ossifica**: **pseudoartrose** persistente no colo |\n| **C** | Cabeça **ausente** ou só um ossículo; acetábulo muito displásico | Sem articulação útil |\n| **D** | Cabeça e acetábulo **ausentes**; fêmur muito curto | Sem articulação |\n\n**Como raciocinar.** Nos tipos A e B **existe** uma cabeça dentro de um acetábulo, e por isso existe um quadril potencial. A diferença está no que acontece entre a cabeça e a diáfise. No **A**, a falha cartilaginosa acaba ossificando, e sobra uma coxa vara grave. No **B**, a falha persiste como **pseudoartrose** do colo. Nos tipos C e D, **não há** quadril para reconstruir.\n\n**Implicações no tratamento.**\n- Nos tipos **A e B**, pode-se pensar em estabilizar o quadril e, em casos selecionados, em alongamento.\n- Nos tipos **C e D**, com o membro muito curto, a regra é a **adaptação protética**. Ela pode ser associada à **artrodese do joelho** com amputação de Syme, ou à **rotacionplastia de Van Nes**, em que o tornozelo girado 180° passa a funcionar como joelho.\n- O **cálculo da discrepância final** dos membros orienta se o caso é de alongamento ou de prótese.\n\n**Por que flexão, abdução e rotação externa.** Com o fêmur proximal deficiente, os músculos que se inserem nele perdem o contraponto do braço de alavanca normal. O **iliopsoas** (flexor), os **abdutores** (glúteos médio e mínimo) e os **rotadores externos** curtos predominam. O segmento femoral curto fica, então, **fletido, abduzido e rodado externamente**, e o joelho costuma ter contratura em flexão.",
+  "correta": "**Correta: D (abdução e rotação externa).** Na deficiência focal femoral proximal, o quadril fica com contratura em **flexão, abdução e rotação externa**, pela ação sem oposição do iliopsoas, dos abdutores e dos rotadores externos sobre um fêmur curto.",
   "incorretas": {
-   "A": "Adução e rotação interna são o oposto do padrão da doença.",
-   "B": "A rotação externa está certa, mas o quadril fica em abdução, não em adução.",
-   "C": "A abdução está certa, mas a rotação é externa, não interna."
+   "A": "A **adução com rotação interna** é o oposto do padrão da DFFP. Lembra a postura do quadril espástico da paralisia cerebral.",
+   "B": "A rotação externa está certa, mas o quadril fica **abduzido**, e não aduzido.",
+   "C": "A abdução está certa, mas a rotação é **externa**, e não interna."
   },
-  "conceito": "A **deficiência femoral focal proximal** é uma falha de formação da parte **proximal do fêmur**, em geral **unilateral**. A coxa fica muito **curta**, e o quadril assume uma posição típica: **flexão, abdução e rotação externa**, com contratura nessa posição.\n\n**As associações**: **hemimelia fibular** em cerca de metade, deficiência dos **ligamentos cruzados**, pé com raios laterais ausentes.\n\n**A classificação de Aitken** olha a cabeça do fêmur e o acetábulo:\n\n**A**: cabeça presente, acetábulo normal; o colo se une depois;\n\n**B**: cabeça presente, sem ligação óssea com o colo;\n\n**C**: cabeça ausente, acetábulo displásico;\n\n**D**: cabeça e acetábulo ausentes.\n\n**O tratamento** depende da discrepância prevista e da estabilidade do quadril:\n\n**discrepância menor e quadril estável**: alongamento e epifisiodese do outro lado;\n\n**formas graves**: **rotacionplastia de Van Nes** (o tornozelo, girado 180°, funciona como joelho dentro da prótese), artrodese do joelho com prótese, ou amputação de Syme.\n\n**Na prova**: contratura do quadril na deficiência femoral focal proximal = **flexão, abdução e rotação externa**.",
-  "correta": "O quadril na deficiência femoral focal proximal fica contraturado em flexão, abdução e rotação externa.",
   "referencias": [
-   "Pediatric Orthopaedic Society of North America (POSNA). PFFD – Proximal Focal Femoral Deficiency. https://posna.org/physician-education/study-guide/pffd-proximal-focal-femoral-deficiency"
+   "Pediatric Orthopaedic Society of North America (POSNA). PFFD – Proximal Focal Femoral Deficiency. https://posna.org/physician-education/study-guide/pffd-proximal-focal-femoral-deficiency",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0008": {
@@ -148,18 +149,20 @@
   "conferido": false
  },
  "pediatria-0011": {
+  "conceito": "**A hemofilia.** É uma doença **hereditária ligada ao X** (afeta quase só **meninos**) em que falta um fator da coagulação:\n- **hemofilia A**: deficiência do **fator VIII** (a mais comum, cerca de 80%);\n- **hemofilia B**: deficiência do **fator IX** (doença de Christmas).\n\nA gravidade depende do nível do fator: **grave** com menos de 1%, **moderada** de 1 a 5% e **leve** de 5 a 40%. Nos casos graves, os sangramentos ocorrem **espontaneamente** ou com traumas mínimos.\n\n**As hemartroses.** São a manifestação mais comum. As articulações mais acometidas são, em ordem: **joelho**, **cotovelo** e **tornozelo**. O sangue repetido na articulação causa **sinovite** hipertrófica, que sangra ainda mais (articulação-alvo), e destrói a cartilagem: é a **artropatia hemofílica**. A classificação radiográfica de **Arnold e Hilgartner** descreve essa progressão.\n\n**As hemorragias musculares.** São a segunda manifestação mais comum. Ocorrem nos grandes grupos musculares. As séries variam, mas os locais mais citados são o **quadríceps**, o **iliopsoas**, a **panturrilha** (tríceps sural) e os **flexores do antebraço**.\n\n| Local | Particularidade |\n|---|---|\n| **Quadríceps** | Hematomas grandes; risco de **contratura em extensão** do joelho |\n| **Iliopsoas** | Quadril em flexão; **compressão do nervo femoral**; pode imitar apendicite (à direita); perda sanguínea grande |\n| Panturrilha | Risco de **síndrome compartimental** e equino |\n| Flexores do antebraço | Risco de síndrome compartimental e contratura de **Volkmann** |\n\n**O pseudotumor hemofílico.** É um hematoma **crônico** e encapsulado que cresce e erode o osso. Ocorre no fêmur, na pelve e na tíbia. Pode imitar um tumor maligno.\n\n**O tratamento.**\n- **Reposição do fator** deficiente imediatamente, em casa se possível, e **profilaxia** regular nos casos graves (a base da prevenção da artropatia).\n- Hemartrose: repouso, gelo, imobilização curta e reabilitação. A aspiração é feita em casos selecionados, com o fator reposto.\n- Sinovite crônica: **sinovectomia** radioativa (radiossinoviortese) ou cirúrgica.\n- Artropatia avançada: artroplastia ou artrodese.\n- Os novos tratamentos (emicizumabe, terapia gênica) mudaram muito a prevenção.",
+  "correta": "**Correta: D (quadríceps femoral).** Na hemofilia, as hemorragias intramusculares ocorrem nos grandes grupos musculares. O gabarito adota o **quadríceps femoral** como o mais frequente. O iliopsoas, a panturrilha e os flexores do antebraço também estão entre os locais mais acometidos, e as séries variam.",
   "incorretas": {
-   "A": "O sartório é delgado e não é sede frequente de hematoma.",
-   "B": "O hematoma do psoas é grave, com risco para o nervo femoral, mas não é o mais comum.",
-   "C": "O hematoma da panturrilha (tríceps sural) é menos frequente que o do quadríceps."
+   "A": "O **sartório** não está entre os locais mais frequentes de hemorragia muscular na hemofilia.",
+   "B": "O **iliopsoas** é um local clássico e **grave** (compressão do nervo femoral, perda sanguínea), mas, pelo gabarito da prova, não é o mais frequente.",
+   "C": "O **tríceps sural** é um local importante, com risco de síndrome compartimental e equino, mas não é o mais frequente pelo gabarito."
   },
-  "conceito": "A **hemofilia** é a falta de um fator da coagulação: **fator VIII** na hemofilia A (a mais comum) e **fator IX** na hemofilia B. Os sangramentos ortopédicos vêm de traumas pequenos ou acontecem sem trauma nenhum.\n\n**Hemartroses**: o local mais comum de sangramento. Em ordem: **joelho**, cotovelo e tornozelo. Repetidas, levam à sinovite crônica e à **artropatia hemofílica**.\n\n**Hematomas musculares**:\n\n**quadríceps femoral**: o **músculo mais acometido**, grande e exposto a pequenos traumas;\n\n**iliopsoas**: menos comum, mas **grave**: comprime o **nervo femoral**, deixa o quadril fletido e pode imitar **apendicite** do lado direito;\n\n**antebraço e panturrilha**: risco de **síndrome compartimental**.\n\n**As condutas**:\n\n**reposição do fator** antes de tudo: antes de punção, imobilização ou cirurgia;\n\n**pseudotumor hemofílico**: sangramento crônico que forma uma massa que destrói o osso;\n\n**artropatia**: sinovectomia (inclusive radioativa) e, nas fases tardias, artroplastia.\n\n**Na prova**: hematoma intramuscular mais comum na hemofilia = **quadríceps femoral**.",
-  "correta": "O quadríceps femoral, grande e exposto a pequenos traumas, é o músculo em que o hematoma ocorre com mais frequência.",
   "referencias": [
    "Musculoskeletal complications of hemophilia. https://pmc.ncbi.nlm.nih.gov/articles/PMC4691997/",
-   "World Federation of Hemophilia Guidelines. https://www1.wfh.org/publications/files/pdf-1863.pdf"
+   "World Federation of Hemophilia Guidelines. https://www1.wfh.org/publications/files/pdf-1863.pdf",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "alerta": "Os estudos variam quanto ao músculo mais acometido na hemofilia: quadríceps, iliopsoas e panturrilha aparecem entre os mais frequentes, conforme a série. Mantivemos o gabarito registrado (D).",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0012": {
@@ -582,19 +585,19 @@
   "conferido": false
  },
  "pediatria-0040": {
+  "conceito": "**O método de Ponseti em duas fases.** O tratamento do pé torto congênito tem uma fase de **correção** e uma fase de **manutenção**.\n\n**Na correção**, há uma sequência de gessos semanais, com manipulação na ordem do mnemônico **CAVE**:\n1. **Cavo**: corrige-se primeiro, supinando o antepé (elevando o primeiro raio).\n2. **Aduto** e **varo**: o pé é abduzido em torno da **cabeça do tálus**, que serve de fulcro.\n3. **Equino**: por último, geralmente com a **tenotomia percutânea do tendão calcâneo**, feita na maioria dos casos.\n\n**Na manutenção**, entra a **órtese de abdução** (botas presas a uma barra, a antiga Denis Browne). Sem ela, o pé torto **recidiva** com muita frequência. A falta de adesão é a principal causa de recidiva.\n\n**Os parâmetros da órtese.**\n\n| Parâmetro | Valor |\n|---|---|\n| Rotação externa do pé **afetado** | **60 a 70°** |\n| Rotação externa do pé **normal** (casos unilaterais) | 30 a 40° |\n| **Dorsiflexão** | **10 a 15°**, pela curvatura da barra |\n| Distância entre as botas | Largura dos **ombros** |\n\n**Por que esses números.**\n- A **rotação externa** mantém o pé abduzido, impedindo que o aduto e o varo voltem.\n- A **dorsiflexão** vem da barra dobrada para baixo no centro, com a convexidade voltada para o chão. Ela mantém o tendão calcâneo alongado e evita a recidiva do equino.\n- A distância entre os ombros deixa os quadris em abdução confortável.\n\n**O tempo de uso.**\n- **23 horas por dia** nos primeiros 3 meses após o último gesso.\n- Depois, **à noite e nos cochilos** até os **4 anos** de idade.\n\n**Quando o pé recidiva.** Na recidiva, repetem-se gessos e às vezes a tenotomia. Na recidiva dinâmica em supinação após os 3 anos, faz-se a **transferência do tibial anterior** para o cuneiforme lateral.\n\n**A recidiva em detalhe.** A recidiva acontece em boa parte dos pés tratados, sobretudo quando a **órtese não é usada** como orientado. Ela costuma aparecer nos primeiros **2 a 4 anos**. O primeiro sinal é a perda da dorsiflexão (equino) ou o varo do retropé ao andar.\n\n**O tratamento da recidiva segue uma escada.**\n1. **Recidiva precoce** (qualquer componente, sobretudo em criança pequena): **repetir o método de Ponseti**, com novos **gessos seriados**, e voltar à órtese. Às vezes, é preciso **repetir a tenotomia** do tendão calcâneo se o equino persistir.\n2. **Supinação dinâmica** (o pé corrigido em repouso, mas que supina ao andar, pelo tibial anterior mais forte que os fibulares), em criança acima de cerca de **2 anos e meio a 3 anos**, com o cuneiforme lateral ossificado: **transferência do tibial anterior** para o cuneiforme lateral, depois de corrigir com gessos.\n3. Deformidades **rígidas** e recidivas múltiplas em crianças maiores: **liberações de partes moles** e, mais tarde, osteotomias.\n\nA regra é sempre começar pelo **menos invasivo**: os gessos resolvem a maioria das recidivas precoces.",
+  "correta": "**Correta: B (método de Ponseti com gessos seriados).** Na recidiva precoce do pé torto congênito, o tratamento preconizado é **repetir o método de Ponseti**, com novos gessos seriados e retorno à órtese de abdução. A tenotomia e a transferência do tibial anterior entram depois, conforme a deformidade e a idade.",
   "incorretas": {
-   "A": "A transferência do tibial anterior é para a supinação dinâmica em criança maior, com o pé já corrigido.",
-   "C": "A tenotomia do calcâneo é uma etapa dentro do Ponseti, quando o equino não corrige com os gessos.",
-   "D": "A correção cirúrgica de partes moles e osso é último recurso, para pés rígidos e resistentes."
+   "A": "A **transferência do tibial anterior** é indicada para a **supinação dinâmica**, em crianças acima de cerca de 2 anos e meio a 3 anos, depois de corrigir a deformidade com gessos. Não é o primeiro passo na recidiva precoce.",
+   "C": "A **tenotomia** do tendão calcâneo pode ser repetida se o equino persistir, mas faz parte do método, **após** os gessos. Não é o tratamento inicial isolado.",
+   "D": "As **cirurgias de partes moles e ósseas** ficam para deformidades rígidas e recidivas múltiplas em crianças maiores, depois que o tratamento conservador falha."
   },
-  "conceito": "No **pé torto congênito**, a **recidiva** depois do método de Ponseti acontece sobretudo quando a criança **não usa a órtese** de abdução (botas com barra) como deveria, até os 4 ou 5 anos.\n\n**A recidiva precoce**: costuma ainda ser **flexível** e responde bem ao mesmo tratamento que corrigiu o pé no começo: **repetir o método de Ponseti**, com **gessos seriados**. Se o equino não corrigir, faz-se de novo a **tenotomia percutânea** do tendão calcâneo. Depois, a órtese volta, e a família recebe reforço sobre o uso.\n\n**As outras opções, para outras situações**:\n\n**transferência do tibial anterior**: para a **supinação dinâmica** em criança maior (cerca de 2,5 a 3 anos ou mais), com o pé já corrigido e flexível;\n\n**tenotomia do calcâneo**: é uma etapa do próprio Ponseti, quando o equino não cede nos gessos;\n\n**liberação cirúrgica de partes moles e osso**: último recurso, nos pés rígidos que resistem aos gessos.\n\n**Na prova**: recidiva precoce do pé torto = **repetir Ponseti** com gessos seriados.",
-  "correta": "A recidiva precoce costuma ser flexível e volta a corrigir com novos gessos seriados pelo método de Ponseti.",
   "referencias": [
    "Clubfoot. StatPearls/NCBI Bookshelf. https://www.ncbi.nlm.nih.gov/books/NBK551574/",
    "Pediatric Orthopaedic Society of North America (POSNA). Clubfoot. https://posna.org/physician-education/study-guide/clubfoot",
    "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 29"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0041": {
@@ -879,18 +882,19 @@
   "conferido": false
  },
  "pediatria-0059": {
+  "conceito": "**O colágeno tipo I.** É a principal proteína do osso, da pele, dos tendões, da esclera e da dentina. Cada molécula é uma **tripla hélice** formada por três cadeias: duas **alfa-1** (gene **COL1A1**) e uma **alfa-2** (gene **COL1A2**).\n\n**Por que a glicina é tão importante.** Na hélice, a sequência de aminoácidos se repete no padrão **Gly-X-Y**: a cada três posições, há uma **glicina**. Muitas vezes, X é **prolina** e Y é **hidroxiprolina**. A glicina é o **menor aminoácido**, e só ela cabe no **centro apertado** da tripla hélice, onde as três cadeias se encontram.\n\n**Os dois tipos de defeito.**\n\n| Defeito | Mecanismo | Gravidade |\n|---|---|---|\n| **Quantitativo** | Um alelo não produz cadeia (alelo nulo): metade do colágeno, mas **normal** | **Leve** (tipo I de Sillence) |\n| **Qualitativo** | **Substituição de uma glicina** por um aminoácido maior: colágeno **anormal** | Moderado a **letal** (tipos II, III e IV) |\n\n**O efeito dominante negativo.** Quando a glicina é substituída, a cadeia defeituosa **entra na hélice** e estraga a molécula inteira. É pior ter colágeno anormal que pouco colágeno.\n\n**A posição da mutação importa.** A hélice se dobra da extremidade **C-terminal** para a N-terminal. Substituições mais próximas da extremidade **C-terminal** tendem a ser **mais graves**, porque perturbam a montagem desde o início.\n\n**Formas recessivas e outras.** Existem formas de OI por defeitos em proteínas que **processam** o colágeno, como **CRTAP**, **P3H1** (LEPRE1) e **PPIB**, ou por outros mecanismos ósseos (**IFITM5** no tipo V e **SERPINF1** no tipo VI).\n\n**Os achados radiográficos.**\n- **Osteopenia** difusa.\n- **Corticais finas** e ossos longos **gráceis** (finos), com **trabéculas finas** e esparsas.\n- **Fraturas múltiplas** em diferentes fases de consolidação, e **encurvamentos**.\n- **Vértebras bicôncavas** (em \"boca de peixe\") e achatadas, por microfraturas.\n- **Ossos wormianos** no crânio.\n- **Calcificações em pipoca** nas metáfises nas formas graves.\n- **Protrusão acetabular** e invaginação basilar.\n- No **tipo V**: **calo hiperplásico** e calcificação da membrana interóssea do antebraço.\n\nA **ossificação** em si acontece no tempo normal. O problema é a **qualidade** da matriz, e não o momento em que ela se forma.\n\n**O tratamento.**\n- **Bisfosfonatos** (pamidronato, zoledronato) aumentam a densidade e reduzem as fraturas.\n- **Hastes telescópicas** (Fassier-Duval) corrigem e previnem as deformidades dos ossos longos.\n- Reabilitação para manter a força e a mobilidade.",
+  "correta": "**Correta: B (glicina).** Na osteogênese imperfeita, o defeito qualitativo clássico do colágeno tipo I é a **substituição de uma glicina** na sequência repetida Gly-X-Y da tripla hélice. Como a glicina é o único aminoácido pequeno o bastante para ocupar o centro da hélice, a troca deforma a molécula inteira.",
   "incorretas": {
-   "A": "A lisina é hidroxilada para estabilizar o colágeno, mas não é o aminoácido do defeito clássico.",
-   "C": "A cisteína não é o aminoácido envolvido no defeito clássico.",
-   "D": "A arginina não é o aminoácido envolvido no defeito clássico."
+   "A": "A **lisina** participa das **ligações cruzadas** do colágeno após a hidroxilação, mas a mutação típica da OI não é a troca da lisina.",
+   "C": "A **cisteína** pode aparecer **substituindo** a glicina em algumas mutações, mas o aminoácido cuja falta gera o defeito é a glicina.",
+   "D": "A **arginina** também pode substituir a glicina em algumas mutações. Ela é o aminoácido que entra, e não o envolvido no defeito central."
   },
-  "conceito": "O **colágeno tipo I** é formado por três cadeias enroladas em **tripla hélice** (duas α1, do gene COL1A1, e uma α2, do COL1A2). Para a hélice se enrolar bem, cada cadeia repete a sequência **Gly-X-Y**: a **glicina** aparece a cada terceiro aminoácido. Ela é o menor aminoácido, o único que cabe no centro apertado da hélice.\n\n**O defeito na osteogênese imperfeita**:\n\n**substituição da glicina** por outro aminoácido maior (mutação de sentido trocado): a hélice não enrola direito, e o colágeno sai **defeituoso**; são as formas **graves** (tipos II, III e IV);\n\n**mutação que reduz a quantidade** de colágeno (haploinsuficiência, sem defeito na estrutura): é a forma **leve** (tipo I), com escleras azuis.\n\nOs tipos mais recentes (V em diante) vêm de genes que não codificam o colágeno.\n\n**Os outros aminoácidos**: a **lisina** e a **prolina** são hidroxiladas para estabilizar o colágeno (o que depende da vitamina C), mas não são o defeito clássico da osteogênese imperfeita.\n\n**Na prova**: aminoácido envolvido no defeito do colágeno na osteogênese imperfeita = **glicina**.",
-  "correta": "A glicina aparece a cada três posições da tripla hélice, e a troca dela por outro aminoácido desestrutura o colágeno.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Osteogenesis Imperfecta. https://posna.org/physician-education/study-guide/osteogenesis-imperfecta",
-   "GeneReviews. COL1A1- and COL1A2-Related Osteogenesis Imperfecta. https://www.ncbi.nlm.nih.gov/books/NBK1295/"
+   "GeneReviews. COL1A1- and COL1A2-Related Osteogenesis Imperfecta. https://www.ncbi.nlm.nih.gov/books/NBK1295/",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0060": {
@@ -1904,17 +1908,18 @@
   "conferido": false
  },
  "pediatria-0133": {
+  "conceito": "**A displasia do desenvolvimento do quadril (DDQ).** É um espectro que vai do quadril **instável** do recém-nascido à displasia acetabular, à **subluxação** e à **luxação**. Na maioria dos casos, surge no **final da gestação** e logo após o nascimento, quando o quadril é mais instável e sofre forças mecânicas.\n\n**Os fatores de risco e por que eles importam.**\n\n| Fator | Mecanismo |\n|---|---|\n| **Sexo feminino** (cerca de 80%) | Sensibilidade à **relaxina** materna, com frouxidão ligamentar |\n| **Primogênito** | Útero e parede abdominal ainda **não distendidos**: menos espaço |\n| **Apresentação pélvica** (de nádegas) | Quadris em **flexão** com joelhos estendidos: os isquiotibiais empurram a cabeça para fora |\n| **Oligoâmnio** (oligodrâmnio) | Pouco líquido, menos espaço, compressão fetal |\n| **História familiar** | Componente genético de frouxidão e de forma do acetábulo |\n| **Enfaixamento** com os quadris estendidos e aduzidos | Coloca o quadril na posição de luxação após o nascimento |\n| Outras deformidades de \"aperto\" | Torcicolo congênito, metatarso aduto, joelho recurvado |\n\n**O lado mais acometido é o esquerdo.**\n- **Esquerdo**: cerca de **60%** dos casos.\n- **Bilateral**: cerca de **20%**.\n- **Direito**: cerca de **20%**.\n\n**Por que o esquerdo.** Na posição intrauterina mais comum (**occipitoanterior esquerda**), o quadril **esquerdo** do feto fica encostado na **coluna lombossacra** da mãe, em **adução**. A adução forçada empurra a cabeça femoral para fora do acetábulo.\n\n**O rastreamento.**\n- Exame físico de **todos os recém-nascidos**: manobras de **Ortolani** (reduz um quadril luxado) e **Barlow** (luxa um quadril instável). Depois dos 3 meses, a **limitação da abdução** é o sinal mais importante.\n- **Ultrassonografia** (Graf) nos bebês com exame alterado ou com fatores de risco (pélvicos, história familiar), por volta de 4 a 6 semanas.\n- **Radiografia** depois de 4 a 6 meses, quando aparece o núcleo de ossificação.",
+  "correta": "**Correta: B (o lado direito é o mais acometido).** A afirmação **errada** é a B: o lado mais acometido na DDQ é o **esquerdo** (cerca de 60%), pela posição intrauterina occipitoanterior esquerda, em que o quadril esquerdo fica aduzido contra a coluna materna. As outras alternativas são fatores de risco verdadeiros.",
   "incorretas": {
-   "A": "Está correta: o oligoidrâmnio restringe o espaço do feto e é fator de risco.",
-   "C": "Está correta: ser primogênito é fator de risco, pelo útero ainda não distendido.",
-   "D": "Está correta: a apresentação pélvica é o maior fator de risco isolado."
+   "A": "Verdadeira: o **oligoâmnio** reduz o espaço intrauterino e é fator de risco para a DDQ.",
+   "C": "Verdadeira: a DDQ é mais frequente nos **primogênitos**, pelo útero e pela parede abdominal ainda não distendidos.",
+   "D": "Verdadeira: a **apresentação pélvica** é um dos fatores de risco mais fortes, pela posição dos quadris fletidos com os joelhos estendidos."
   },
-  "conceito": "A **displasia do desenvolvimento do quadril** depende de fatores que deixam o quadril frouxo ou apertado no útero. Os principais **fatores de risco** são:\n\n**sexo feminino**: cerca de 80% dos casos; o estrogênio materno e a relaxina aumentam a frouxidão;\n\n**primogênito**: o útero e a parede abdominal ainda não distendidos restringem o feto;\n\n**apresentação pélvica**: o maior fator isolado, sobretudo com joelhos estendidos;\n\n**oligoidrâmnio**: pouco espaço para o feto se mexer;\n\n**história familiar**;\n\n**outras deformidades de compressão**: torcicolo muscular congênito e metatarso aduto.\n\n**O lado**: o **esquerdo** é o mais acometido, em cerca de 60% dos casos. Na posição fetal mais comum, o quadril esquerdo fica **aduzido contra o sacro materno**. Os bilaterais são cerca de 20%, e o lado direito isolado, cerca de 20%.\n\n**Por que o diagnóstico precoce importa**: a cabeça femoral centrada é o estímulo para o acetábulo se aprofundar; reduzida cedo, a articulação remodela.\n\n**Na prova**: é **errado** dizer que o lado direito é o mais acometido; o mais comum é o **esquerdo**.",
-  "correta": "Esta é a afirmação errada: o lado mais acometido é o esquerdo, que fica aduzido contra o sacro materno.",
   "referencias": [
-   "https://pmc.ncbi.nlm.nih.gov/articles/PMC3143976/"
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC3143976/",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0134": {
@@ -2034,18 +2039,19 @@
   "conferido": false
  },
  "pediatria-0142": {
+  "conceito": "**A artrogripose múltipla congênita.** \"Artrogripose\" significa **contraturas articulares congênitas** em **duas ou mais áreas** do corpo. Não é uma doença única, e sim um **sinal** com centenas de causas. O ponto comum é a **falta de movimento fetal** (acinesia): sem movimento no útero, as articulações se formam rígidas, com cápsulas espessas e músculos substituídos por gordura e tecido fibroso.\n\n**As causas da falta de movimento fetal.** Neurológicas (as mais comuns), musculares, do tecido conjuntivo, falta de espaço intrauterino (oligoâmnio, útero malformado) e doenças maternas (miastenia, infecções).\n\n**A amioplasia: a forma clássica.** É a forma mais comum, cerca de um terço dos casos. É **esporádica**, simétrica, com os **quatro membros** acometidos, inteligência **normal** e um **hemangioma** facial em linha média frequente. A postura é tão típica que se reconhece à primeira vista:\n\n| Região | Postura típica |\n|---|---|\n| **Ombro** | **Aduzido e em rotação interna** |\n| **Cotovelo** | **Estendido** (às vezes fletido) |\n| Antebraço | Pronado |\n| **Punho** | **Fletido** e com desvio ulnar |\n| Dedos | Fletidos, polegar na palma |\n| Quadril | Fletido, abduzido e em rotação externa, ou **luxado** |\n| Joelho | Estendido ou fletido |\n| Pé | **Pé torto** rígido (equinovaro) ou tálus vertical |\n\nA pele é **lisa**, sem as pregas de flexão normais, com **covinhas** sobre as articulações. Os membros são cilíndricos e com pouca massa muscular. A imagem do braço lembra a de um \"garçom pedindo gorjeta\" (como na paralisia braquial alta).\n\n**As artrogriposes distais.** Grupo **hereditário**, autossômico dominante, que acomete sobretudo as **mãos e os pés**. As grandes articulações são relativamente poupadas. Um exemplo é a síndrome de Freeman-Sheldon.\n\n**Os princípios do tratamento.**\n- **Mobilização precoce** e gessos seriados: o ganho de movimento é maior nos primeiros meses.\n- O objetivo é a **função**, e não a correção perfeita: andar e ser independente nas atividades diárias.\n- No membro superior, o objetivo é levar a mão à boca, o que exige **flexão do cotovelo**. Pode-se usar liberação capsular e transferência de tríceps. Um lado em flexão e o outro em extensão pode ser a melhor combinação.\n- O **pé torto** artrogripótico é **rígido** e recidiva muito. Usa-se o método de Ponseti com mais gessos, e às vezes a talectomia.\n- A luxação **bilateral** do quadril pode ser deixada sem tratamento. A unilateral costuma ser reduzida.\n\n**A frequência.** A artrogripose múltipla congênita ocorre em cerca de **1 em cada 3.000** nascidos vivos, considerando todas as formas. A **amioplasia** é a forma isolada mais frequente e é **esporádica**: não tem herança genética demonstrada, e o risco de recorrência na família é baixo. Ela é tipicamente **bilateral e simétrica**.",
+  "correta": "**Correta: A (a incidência é de 1:3.000 nascidos vivos).** A artrogripose múltipla congênita, somando todas as suas causas, ocorre em cerca de **1 em cada 3.000** nascidos vivos. As outras afirmações contrariam as características da amioplasia, que é esporádica, bilateral e simétrica.",
   "incorretas": {
-   "B": "A amioplasia é esporádica, não de herança genética.",
-   "C": "É tipicamente simétrica, nos quatro membros, sem lado preferencial.",
-   "D": "O punho fica fletido, e não estendido, e o pé é equinovaro rígido, não calcaneovalgo."
+   "B": "A **amioplasia**, a forma mais comum, é **esporádica**. Não tem herança genética demonstrada, e o risco de recorrência é baixo. As formas hereditárias são as **artrogriposes distais**.",
+   "C": "A artrogripose é tipicamente **bilateral e simétrica**, acometendo frequentemente os quatro membros.",
+   "D": "O padrão mais comum é o **cotovelo em extensão** com o **punho em flexão** (e desvio ulnar), e o pé geralmente é **torto** (equinovaro), e não calcaneovalgo."
   },
-  "conceito": "A **artrogripose múltipla congênita** é a presença, ao nascer, de **contraturas em duas ou mais articulações**, que não progridem. A incidência clássica é de cerca de **1 em 3.000** nascidos vivos, número que varia com a definição usada.\n\n**A causa comum** é a **acinesia fetal**: o feto se mexe pouco e as articulações enrijecem. A origem mais frequente é **neuropática** (redução das células do corno anterior da medula); outras são miopáticas, por restrição de espaço e do tecido conjuntivo.\n\n**A amioplasia**, forma clássica, tem características próprias:\n\n**esporádica**: não é hereditária;\n\n**simétrica**: atinge os **quatro membros**, e não um lado só;\n\n**membros superiores**: ombros aduzidos em rotação interna, **cotovelos estendidos** e **punhos fletidos**;\n\n**membros inferiores**: quadris luxados ou em flexão, joelhos estendidos ou fletidos e **pé torto equinovaro rígido**;\n\n**outros sinais**: pele lisa sem pregas, covinhas sobre as articulações e **inteligência normal**.\n\n**Na prova**: artrogripose tem incidência de cerca de **1:3.000**; a amioplasia é esporádica, simétrica e cursa com pé equinovaro.",
-  "correta": "A incidência clássica da artrogripose é de cerca de 1 em 3.000 nascidos vivos.",
-  "alerta": "A incidência de 1:3.000 é uma estimativa clássica; diferentes séries usam definições distintas de artrogripose e podem apresentar números diferentes.",
   "referencias": [
-   "https://pmc.ncbi.nlm.nih.gov/articles/PMC2698792/"
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC2698792/",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "alerta": "A incidência de 1:3.000 é uma estimativa clássica; diferentes séries usam definições distintas de artrogripose e podem apresentar números diferentes.",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0143": {
@@ -2140,17 +2146,18 @@
   "conferido": false
  },
  "pediatria-0150": {
+  "conceito": "**O pé torto congênito.** O pé torto congênito idiopático (equinovaro) tem quatro componentes, lembrados pelo mnemônico **CAVE**:\n- **C**avo: o arco plantar é alto porque o **primeiro raio está em flexão plantar** (pronado) em relação ao retropé.\n- **A**duto: o antepé está desviado para medial.\n- **V**aro: o calcâneo está invertido sob o tálus.\n- **E**quino: o tornozelo está em flexão plantar fixa.\n\nA deformidade central é a **subluxação medial do navicular sobre a cabeça do tálus**, com o calcâneo girando medialmente sob o tálus.\n\n**A ordem de correção de Ponseti é a ordem do CAVE.** Ponseti entendeu que tentar corrigir o pé \"de uma vez\" ou na ordem errada piora a deformidade.\n\n1. **Cavo primeiro.** O antepé está **pronado** em relação ao retropé, que está em supinação. O primeiro gesso **supina o antepé**, elevando o primeiro raio, para **alinhar o antepé com o retropé**. Parece paradoxal (supinar um pé que já parece supinado), mas o objetivo é colocar todos os metatarsos no mesmo plano.\n2. **Aduto e varo juntos.** Com o pé alinhado, ele é **abduzido** em gessos sucessivos, girando em torno da **cabeça do tálus**, que o polegar do examinador estabiliza lateralmente. Ao abduzir, o calcâneo gira por baixo do tálus e o **varo do retropé se corrige sozinho**, sem pressão direta no calcâneo.\n3. **Equino por último.** Só depois que o pé está abduzido cerca de 60 a 70° corrige-se o equino. Na maioria dos casos, isso exige a **tenotomia percutânea do tendão calcâneo**.\n\n**Erros clássicos que o método evita.**\n\n| Erro | Consequência |\n|---|---|\n| **Pronar** o pé para corrigir o varo | **Aumenta o cavo** e trava o calcâneo sob o tálus |\n| Pressionar o **calcâneo** | Bloqueia a rotação dele sob o tálus |\n| Corrigir o equino **antes** do aduto e do varo | **Pé em mata-borrão** (rocker bottom): a dorsiflexão quebra o mediopé |\n| Fulcro na articulação **calcaneocubóidea** (Kite) | Abdução incompleta, correção mais lenta |\n\n**Depois da correção.** O pé é mantido na **órtese de abdução** (60 a 70° de rotação externa e 10 a 15° de dorsiflexão), 23 horas por dia por 3 meses e à noite até os 4 anos.",
+  "correta": "**Correta: B (cavo).** No método de Ponseti, a primeira manipulação e o primeiro gesso corrigem o **cavo**, supinando o antepé para elevar o primeiro raio e alinhar o antepé com o retropé. Depois vêm a abdução, que corrige o aduto e o varo, e por último o equino.",
   "incorretas": {
-   "A": "O varo é corrigido em terceiro, junto com a abdução do pé.",
-   "C": "O equino é corrigido por último, muitas vezes com tenotomia do tendão calcâneo.",
-   "D": "A abdução do pé é a manobra do segundo passo, que corrige o aduto."
+   "A": "O **varo** do retropé é corrigido indiretamente, durante a **abdução** do pé nos gessos seguintes.",
+   "C": "O **equino** é corrigido por **último**, geralmente com tenotomia do tendão calcâneo. Corrigi-lo primeiro produz o pé em mata-borrão.",
+   "D": "A **abdução** é o movimento usado para corrigir o aduto e o varo, na **segunda** etapa, depois do cavo. Não é uma deformidade a corrigir."
   },
-  "conceito": "O **método de Ponseti** corrige o pé torto numa ordem fixa, resumida pela sigla **CAVE**: **cavo**, **aduto**, **varo** e **equino**.\n\n**1º, o cavo**: no pé torto, o **antepé está pronado** em relação ao retropé (o 1º metatarso está abaixado), formando o cavo. A primeira manipulação e o primeiro gesso **supinam o antepé** e **elevam o 1º metatarso**, alinhando antepé e retropé.\n\n**2º, o aduto**: o pé é abduzido com o polegar fazendo contrapressão na **cabeça do tálus**, na face lateral.\n\n**3º, o varo**: corrige junto com a abdução, porque o calcâneo roda por baixo do tálus.\n\n**4º, o equino**: por último; se a dorsiflexão não passar de cerca de 15°, faz-se a **tenotomia percutânea do tendão calcâneo**.\n\n**Os dois erros clássicos**: **pronar o antepé** (piora o cavo) e **pressionar o calcâneo** (bloqueia sua rotação sob o tálus).\n\n**Depois dos gessos**: a **órtese de abdução** (botas com barra) 23 horas por dia por 3 meses e depois à noite até 4 a 5 anos. A falta de adesão a ela é a principal causa de recidiva.\n\n**Na prova**: a primeira manipulação de Ponseti corrige o **cavo**.",
-  "correta": "A primeira manipulação supina o antepé e eleva o 1º metatarso, corrigindo o cavo e alinhando antepé e retropé.",
   "referencias": [
-   "https://posna.org/physician-education/study-guide/clubfoot"
+   "https://posna.org/physician-education/study-guide/clubfoot",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0151": {
@@ -2842,15 +2849,19 @@
   "conferido": false
  },
  "pediatria-0209": {
+  "conceito": "**O ciclo da marcha.** Começa quando um pé toca o chão (geralmente com o calcanhar, o **contato inicial**) e termina quando o **mesmo pé** toca o chão de novo. Divide-se em duas fases:\n- **Apoio**: cerca de **60%** do ciclo, com o pé no chão.\n- **Balanço**: cerca de **40%** do ciclo, com o pé no ar.\n\nO **duplo apoio**, em que os dois pés estão no chão ao mesmo tempo, ocorre **duas vezes** por ciclo, cerca de 10% cada. Na corrida, o duplo apoio desaparece e surge uma fase de voo.\n\n**Os parâmetros espaço-temporais.**\n\n| Parâmetro | Definição | Unidade |\n|---|---|---|\n| **Passo** | Distância do contato de um pé ao contato do **outro** pé | Metros |\n| **Passada** | Distância do contato de um pé ao **próximo contato do mesmo** pé (= dois passos) | Metros |\n| Largura do passo (base) | Distância entre os dois pés no plano frontal | Centímetros |\n| **Cadência** | Número de **passos por minuto** | Passos/min |\n| **Velocidade** | Distância percorrida por unidade de tempo | m/s |\n\n**Passo x passada.** É a pegadinha clássica.\n- O **passo** envolve **os dois pés**: no duplo apoio, é a distância entre o calcanhar da frente e o de trás.\n- A **passada** envolve **um só pé**: é o comprimento de um ciclo completo, igual a um passo direito mais um passo esquerdo.\n\n**Velocidade = comprimento do passo x cadência.** Para andar mais rápido, aumenta-se o passo, a cadência, ou os dois.\n\n**A marcha da criança.** A criança que começa a andar tem:\n- **base alargada**, passos curtos e cadência alta;\n- **duplo apoio** prolongado;\n- braços em \"guarda alta\";\n- contato inicial com o **pé plano**, sem toque do calcanhar.\n\nA marcha **madura**, com padrão próximo ao do adulto, se estabelece por volta dos **3 a 4 anos**, e a maturação completa ocorre por volta dos 7 anos.\n\n**Utilidade clínica.** A análise de marcha instrumentada (cinemática, cinética e eletromiografia) orienta a **cirurgia de múltiplos níveis** na paralisia cerebral.\n\n**O que acontece na fase de balanço.** A fase de balanço é o período em que o pé está **no ar**, cerca de 40% do ciclo. Ela tem três tarefas:\n1. **Levantar o pé** do chão (folga do pé), com a flexão do quadril, do joelho (cerca de 60°) e a dorsiflexão do tornozelo.\n2. **Avançar o membro** para a frente, como um pêndulo.\n3. **Preparar o próximo apoio**: o joelho estende e o pé se posiciona para o contato do calcanhar.\n\nO desprendimento do calcanhar e dos dedos, o contato do mediopé e o aplanamento do pé pertencem à fase de **apoio**.",
+  "correta": "**Correta: D (tem como característica o levantamento do pé, o avanço do membro e a preparação para o próximo apoio).** A fase de balanço é o período em que o pé está no ar. Suas tarefas são levantar o pé do chão, avançar o membro e preparar o membro para o próximo contato inicial.",
   "incorretas": {
-   "A": "O desprendimento do calcanhar acontece no apoio terminal, ainda com o pé no chão.",
-   "B": "O desprendimento dos dedos encerra o apoio, no pré-balanço; o balanço começa depois.",
-   "C": "O contato do pé com o solo é fase de apoio, não de balanço.",
-   "E": "O aplanamento do pé no solo acontece na resposta à carga, que é fase de apoio."
+   "A": "O **desprendimento do calcanhar** (apoio terminal) faz parte da fase de **apoio**, e não do balanço.",
+   "B": "O **desprendimento dos dedos** é o fim da fase de apoio (pré-balanço). Ele marca a **transição** para o balanço, mas não é a fase de balanço.",
+   "C": "O **contato do mediopé** com o solo ocorre na fase de **apoio**.",
+   "E": "O **aplanamento do pé** (resposta à carga) é um período da fase de **apoio**."
   },
-  "conceito": "O **ciclo da marcha** tem duas fases: o **apoio** (cerca de 60%), em que o pé está no chão, e o **balanço** (cerca de 40%), em que o pé está no ar.\n\n**O balanço tem três tarefas**:\n\n**levantar o pé** do chão, com flexão do quadril e do joelho (até cerca de 60°) e dorsiflexão do tornozelo, para não arrastar;\n\n**avançar o membro** para a frente;\n\n**preparar o próximo apoio**: no fim do balanço, o joelho estende, os isquiotibiais freiam a perna e o tornozelo fica neutro para o calcanhar tocar o chão.\n\n**As subfases (Perry)**: balanço inicial, balanço médio e balanço terminal.\n\n**O que pertence ao apoio**: tudo o que envolve contato com o chão. O contato inicial, a resposta à carga (o pé se aplana no solo), o apoio médio, o **apoio terminal** (o calcanhar se descola) e o **pré-balanço** (os dedos se descolam). O desprendimento dos dedos é o **último evento do apoio**, a passagem para o balanço.\n\n**Na prova**: o balanço = **levantar o pé, avançar o membro e preparar o próximo apoio**.",
-  "correta": "O balanço tem três tarefas: tirar o pé do chão, levar o membro à frente e prepará-lo para o próximo contato.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Perry J, Burnfield JM. Gait Analysis: Normal and Pathological Function. 2ª edição. SLACK; 2010."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0210": {
@@ -3064,14 +3075,18 @@
   "conferido": false
  },
  "pediatria-0251": {
+  "conceito": "**O pé equino na paralisia cerebral.** É a deformidade **mais comum** da PC. O **tríceps sural** espástico e encurtado mantém o tornozelo em flexão plantar. O tríceps sural tem dois componentes:\n- os **gastrocnêmios**, que cruzam o **joelho** e o tornozelo (biarticulares);\n- o **sóleo**, que cruza só o tornozelo (monoarticular).\n\n**O teste de Silfverskiöld.** Mede a dorsiflexão do tornozelo com o **joelho estendido** e com o **joelho fletido**.\n- Se a dorsiflexão **melhora** com o joelho fletido, a contratura é do **gastrocnêmio** (que relaxa com o joelho fletido).\n- Se **não melhora**, o **sóleo** também está encurtado.\n\n**As zonas de alongamento do tríceps sural.** O músculo e o tendão são divididos em três zonas, de proximal para distal.\n\n| Zona | Local | Técnicas |\n|---|---|---|\n| **1** | **Gastrocnêmios**, proximal à junção com o sóleo | **Strayer**; recessão do gastrocnêmio (Baumann, entre os ventres) |\n| **2** | **Aponeurose** do gastrocnêmio sobre o **sóleo** | **Vulpius**; Baker (em língua) |\n| **3** | **Tendão calcâneo** | Alongamento em **Z** ou percutâneo (técnica de **Hoke**, três hemissecções) |\n\n**A técnica de Vulpius.** Faz uma incisão em **V invertido** (ou transversal) na aponeurose conjunta do gastrocnêmio e do sóleo, na **zona 2**. Com a dorsiflexão do tornozelo, as bordas se afastam e o músculo se alonga. O sóleo pode ser alongado junto, com uma incisão na sua fáscia.\n\n**Por que a zona importa.**\n- Quanto mais **proximal**, mais **seletivo** e mais **seguro** é o alongamento. Ele atua só no gastrocnêmio, preservando o sóleo, que é fundamental para controlar a tíbia no apoio.\n- Quanto mais **distal** (zona 3, tendão calcâneo), maior o alongamento e maior o risco de **hiperalongamento**. Na diplegia, o alongamento excessivo do tendão calcâneo **enfraquece o sóleo** e é uma causa clássica de **marcha agachada** (crouch). Por isso, na diplegia, preferem-se as zonas 1 e 2.\n- Na **hemiplegia**, o equino costuma ser mais rígido e envolver o sóleo, e o alongamento do tendão calcâneo (zona 3) é mais aceito.",
+  "correta": "**Correta: B (2).** A técnica de Vulpius alonga o tríceps sural na **zona 2**, por uma incisão em V invertido na aponeurose do gastrocnêmio sobre o sóleo. Ela é mais seletiva que o alongamento do tendão calcâneo e reduz o risco de hiperalongamento.",
   "incorretas": {
-   "A": "A zona 1 fica nos ventres do gastrocnêmio, onde se fazem Strayer e Baumann.",
-   "C": "A zona 3 é o tendão calcâneo, onde se fazem Hoke e White.",
-   "D": "A divisão tem só três zonas; não há zona 4."
+   "A": "Na **zona 1** ficam os **gastrocnêmios**, proximais à junção com o sóleo. As técnicas dessa zona são a de **Strayer** e a recessão de Baumann.",
+   "C": "A **zona 3** é o **tendão calcâneo**, alongado em Z ou pela técnica percutânea de Hoke. Tem maior risco de hiperalongamento.",
+   "D": "A classificação clássica das zonas de alongamento do tríceps sural tem **três zonas**. Não há zona 4."
   },
-  "conceito": "Na **paralisia cerebral**, o **equino** vem do tríceps sural encurtado. O alongamento pode ser feito em três **zonas**, de proximal para distal, e quanto mais distal, mais se alonga e maior o risco de enfraquecer demais:\n\n**zona 1**: nos **ventres do gastrocnêmio**; técnicas de **Strayer** (recessão da aponeurose proximal) e **Baumann** (incisões na fáscia intramuscular); alonga **só o gastrocnêmio**;\n\n**zona 2**: na **aponeurose conjunta** do gastrocnêmio e do sóleo, **distal aos ventres** do gastrocnêmio; técnicas de **Vulpius** (incisão em V invertido) e **Baker** (língua em U); alonga o gastrocnêmio e, de forma moderada, o sóleo;\n\n**zona 3**: no **tendão calcâneo**; técnicas de **Hoke** (três hemissecções percutâneas), White e alongamento em Z; alonga tudo, com maior risco de **hiperalongamento** e marcha agachada.\n\n**Como escolher (teste de Silfverskiöld)**: se o equino **melhora com o joelho fletido**, o problema é só do gastrocnêmio (zonas 1 ou 2); se continua com o joelho fletido, o sóleo também está curto (zonas 2 ou 3).\n\n**Na prova**: a técnica de Vulpius é feita na **zona 2**.",
-  "correta": "A técnica de Vulpius faz uma incisão em V invertido na aponeurose conjunta, distal aos ventres do gastrocnêmio: é a zona 2.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0252": {
@@ -3097,14 +3112,18 @@
   "conferido": false
  },
  "pediatria-0254": {
+  "conceito": "**O menisco discoide.** É uma variante congênita em que o menisco é largo, espesso e em forma de disco, cobrindo boa parte do platô. Quase sempre é **lateral**, é mais comum em populações asiáticas e pode ser **bilateral**. O tecido é desorganizado, com menos fibras circunferenciais, e por isso rompe e degenera com mais facilidade.\n\n**Como se apresenta.**\n- Assintomático, achado de exame.\n- **Joelho em ressalto** (snapping knee): estalido palpável e às vezes visível na flexão e extensão. É típico da criança pequena com menisco **instável**.\n- Dor, derrame e bloqueio, quando há rotura.\n\n**A classificação de Watanabe.**\n\n| Tipo | Forma | Fixação periférica |\n|---|---|---|\n| Completo | Cobre todo o platô | Estável |\n| Incompleto | Cobre parte do platô | Estável |\n| Wrisberg | Forma variável | **Sem inserção posterior** (só o ligamento de Wrisberg) |\n\n**De onde vem a instabilidade.** Por muito tempo, ensinou-se que a instabilidade vinha do tipo Wrisberg, sem fixação **posterior**. As séries artroscópicas mais recentes, que examinaram sistematicamente a borda periférica de cada segmento, mostraram outra realidade. A **instabilidade periférica é frequente** e acomete mais o **corno anterior**, seguido do posterior. O segmento médio é o menos acometido.\n\nAhn e Klingele propuseram classificações que descrevem a **localização** do segmento solto (anterior, posterior ou médio), e não apenas a forma.\n\n**Por que isso importa no tratamento.** O tratamento do discoide sintomático é a **saucerização** artroscópica, que remodela o menisco num formato próximo do normal, preservando uma borda de cerca de 6 a 8 mm. Depois, o cirurgião **testa a estabilidade de cada segmento**. Se houver instabilidade periférica, ela é **suturada** à cápsula. Esquecer de procurar a instabilidade anterior é uma causa de falha. A meniscectomia total foi abandonada pelo risco de artrose precoce.\n\n**Diagnóstico por imagem.** Na radiografia, o compartimento lateral é alargado e o côndilo lateral pode ser achatado. Na ressonância, aparece o **sinal da gravata-borboleta** em três ou mais cortes sagitais consecutivos de 4 a 5 mm.\n\n**E o discoide assintomático?** O menisco discoide **assintomático**, achado por acaso numa ressonância ou numa artroscopia feita por outro motivo, deve ser **deixado intacto**. Ele pode nunca causar problemas, e toda cirurgia no menisco tem riscos: a saucerização remove tecido e expõe o joelho a degeneração futura. O tratamento é reservado aos casos **sintomáticos** (dor, derrame, bloqueio, ressalto doloroso) ou com **rotura**.",
+  "correta": "**Correta: D (deixado intacto sem tratamento).** O menisco discoide **assintomático**, encontrado acidentalmente, deve ser **deixado intacto**. Só os casos sintomáticos ou com rotura recebem tratamento, com saucerização e reparo da instabilidade periférica.",
   "incorretas": {
-   "A": "A saucerização é indicada no menisco discoide sintomático, não no achado casual.",
-   "B": "A meniscoplastia também só se justifica com sintomas.",
-   "C": "A ressecção total leva à artrose precoce e não se faz em menisco assintomático."
+   "A": "A **saucerização** é o tratamento do discoide **sintomático**. Fazê-la num menisco assintomático expõe o joelho a riscos sem benefício.",
+   "B": "A **meniscoplastia** (saucerização com ou sem reparo) é indicada no discoide sintomático, e não no achado acidental.",
+   "C": "A **ressecção total** (meniscectomia) foi abandonada até nos casos sintomáticos, pelo risco de artrose precoce, sobretudo no compartimento lateral."
   },
-  "conceito": "O **menisco discoide** é quase sempre o **lateral**, largo e espesso. Muitos nunca dão sintomas e são achados por acaso, em exame de imagem ou durante uma artroscopia feita por outro motivo.\n\n**A conduta pelo quadro**:\n\n**assintomático**, achado por acaso: **deixar intacto**, sem tratamento. Um menisco discoide estável e sem sintomas continua protegendo a cartilagem; qualquer ressecção só tira tecido que está funcionando;\n\n**sintomático e estável**: **saucerização**, ou seja, meniscectomia parcial que devolve ao menisco o formato de C, deixando uma borda de cerca de 6 a 8 mm;\n\n**instável** (como o tipo Wrisberg): saucerização com **sutura periférica** para estabilizar.\n\n**Por que não a meniscectomia total**: foi o tratamento antigo, mas leva a **artrose precoce** do compartimento lateral, sobretudo em crianças e adolescentes. Hoje fica só para quando nada pode ser preservado.\n\n**Os sintomas que indicariam cirurgia**: estalido doloroso, bloqueio, derrame e dor na interlinha lateral.\n\n**Na prova**: menisco discoide **assintomático**, achado por acaso, deve ser **deixado sem tratamento**.",
-  "correta": "Sem sintomas, o menisco discoide não se trata: ele continua funcionando e protegendo a cartilagem.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Kocher MS, Logan CA, Kramer DE. Discoid lateral meniscus in children: diagnosis, management, and outcomes. J Am Acad Orthop Surg. 2017;25(11):736-743."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0257": {
@@ -3366,19 +3385,18 @@
   "conferido": false
  },
  "pediatria-0286": {
+  "conceito": "**O esqueleto conta a idade.** Os centros de ossificação **secundários** aparecem numa ordem e numa idade **previsíveis**. Na radiografia, eles permitem estimar a idade óssea. Também é preciso conhecê-los para não confundir um centro normal com uma fratura.\n\n**O caso da questão.** A menina **começou a andar com apoio de um braço** (com a mão segura por um adulto ou apoiada nos móveis). Esse marco ocorre por volta dos **10 a 12 meses**. A pergunta, então, é: que centro de ossificação já existe nessa idade?\n\n**Os centros secundários do membro inferior (idade aproximada de aparecimento).**\n\n| Centro | Aparece |\n|---|---|\n| Fêmur distal e tíbia proximal | **Ao nascimento** (sinal de gestação a termo) |\n| Cabeça do fêmur | 4 a 6 meses |\n| **Epífise distal da tíbia** | **Por volta de 6 meses** a 1 ano |\n| Epífise distal da fíbula | Por volta de 1 ano |\n| Trocanter maior | 2 a 4 anos |\n| **Navicular** | **2 a 3 anos** (meninas), até 3 a 5 anos (meninos): o **último** osso do tarso a ossificar |\n| **Epífise proximal da fíbula** | **3 a 4 anos** |\n| **Tuberosidade anterior da tíbia** | **8 a 12 anos** |\n| Apófise do calcâneo | 6 a 8 anos |\n\nNas **meninas**, os centros aparecem um pouco **antes** que nos meninos.\n\n**A resposta.** Aos 10 a 12 meses, já existe a **epífise distal da tíbia**. A epífise proximal da fíbula (3 a 4 anos), o navicular (2 a 5 anos) e a tuberosidade anterior da tíbia (8 a 12 anos) ainda não ossificaram.\n\n**Aplicações práticas.**\n- O **navicular** ossifica a partir de vários pequenos centros e pode parecer **fragmentado** e denso. Isso pode ser normal ou corresponder à **doença de Köhler** (osteocondrose), que tem evolução benigna.\n- A **tuberosidade anterior da tíbia** irregular no adolescente pode ser normal ou corresponder à doença de **Osgood-Schlatter**.\n- O tarso do pé torto e do tálus vertical é avaliado na radiografia antes que o navicular ossifique. Usam-se, por isso, os eixos do tálus e do primeiro metatarso.",
+  "correta": "**Correta: C (da epífise distal da tíbia).** Andar com apoio de um braço ocorre por volta dos **10 a 12 meses**. Nessa idade, a **epífise distal da tíbia**, que aparece por volta dos 6 meses a 1 ano, já está ossificada.",
   "incorretas": {
-   "A": "A tuberosidade anterior da tíbia ossifica só entre 8 e 12 anos.",
-   "B": "A epífise proximal da fíbula ossifica por volta de 3 a 4 anos.",
-   "D": "O navicular é o último osso do tarso a ossificar, entre 3 e 4 anos."
+   "A": "A **tuberosidade anterior da tíbia** só ossifica por volta dos **8 a 12 anos**.",
+   "B": "A **epífise proximal da fíbula** aparece por volta dos **3 a 4 anos**.",
+   "D": "O **navicular** é o último osso do tarso a ossificar, por volta dos **2 a 3 anos** nas meninas (e até 3 a 5 nos meninos)."
   },
-  "conceito": "A questão junta dois relógios da criança: o **desenvolvimento motor** e a **ossificação**. Primeiro, a idade:\n\n**6 meses**: senta com apoio;\n\n**9 meses**: engatinha e fica em pé com apoio;\n\n**10 a 12 meses**: **anda com apoio de uma mão**;\n\n**12 a 15 meses**: anda sozinha;\n\n**2 anos**: corre e sobe escadas.\n\nUma menina que **acabou de andar com apoio de um braço** tem, portanto, **cerca de 1 ano**.\n\n**Os centros de ossificação do membro inferior**, pela ordem:\n\n**fêmur distal e tíbia proximal**: já presentes ao nascer (o do fêmur distal é sinal de maturidade fetal);\n\n**cabeça femoral**: 4 a 6 meses;\n\n**epífise distal da tíbia**: **6 a 12 meses**;\n\n**epífise distal da fíbula**: 1 a 2 anos;\n\n**navicular** e **epífise proximal da fíbula**: 3 a 4 anos;\n\n**tuberosidade anterior da tíbia**: 8 a 12 anos.\n\n**Na prática**: com cerca de 1 ano, a radiografia mostra a epífise distal da tíbia, mas ainda não a fíbula proximal, o navicular nem a tuberosidade da tíbia. Nas meninas, a ossificação costuma vir um pouco antes.\n\n**Na prova**: criança de cerca de 1 ano já tem ossificada a **epífise distal da tíbia**.",
-  "correta": "Andar com apoio de uma mão indica cerca de 1 ano, e o núcleo distal da tíbia aparece entre 6 e 12 meses.",
   "referencias": [
    "Tachdjian's Pediatric Orthopaedics. 6th edition. Elsevier.",
-   "Keats TE, Anderson MW. Atlas of Normal Roentgen Variants That May Simulate Disease. Elsevier.",
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 1"
+   "Keats TE, Anderson MW. Atlas of Normal Roentgen Variants That May Simulate Disease. Elsevier."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0287": {
@@ -3655,19 +3673,19 @@
   "conferido": false
  },
  "pediatria-0317": {
-  "conceito": "### Síndrome de Grisel: apresentação\n- **Quem:** criança após **infecção** de vias aéreas superiores ou **cirurgia** de orofaringe (adenoamigdalectomia).\n- **Quadro:** ==torcicolo doloroso== e **fixo** em \"**cock-robin**\" (pintarroxo):\n  - **inclinação lateral** da cabeça para um lado;\n  - **rotação do queixo** para o lado oposto à inclinação;\n  - leve flexão.\n- **Espasmo:** o **ECM do lado para onde o queixo aponta** fica tenso, tentando corrigir a deformidade (no torcicolo muscular, ao contrário, o ECM encurtado é a causa).\n- **Diagnóstico:** **TC** com rotação para os dois lados (TC dinâmica), que mostra C1-C2 \"travados\". Classificar por **Fielding e Hawkins**.\n\n### Tratamento\n- **Precoce** (menos de 1 semana): colar, anti-inflamatório, antibiótico.\n- **1 a 4 semanas:** tração (halter ou halo).\n- **Crônica, irredutível ou recidivante:** redução e **artrodese C1-C2**.\n\n### Sobre o lado do queixo\nA lateralidade depende da convenção usada para \"lado da lesão\" (ver o alerta). O dado robusto é o ==torcicolo doloroso e fixo==.\n\n> **Na prova:** Grisel = torcicolo ==doloroso== em cock-robin, após infecção.",
-  "correta": "**Com dor, inclinação lateral e queixo rodado para o lado da lesão** (gabarito).",
+  "conceito": "**A síndrome de Grisel.** É a **subluxação rotatória atlantoaxial** (entre C1 e C2) **não traumática**, que surge após uma **inflamação** da região da cabeça e do pescoço:\n- infecções das vias aéreas superiores, faringite, amigdalite, otite, abscesso retrofaríngeo;\n- cirurgias otorrinolaringológicas, como a **adenoamigdalectomia**.\n\n**Por que acontece.** A **drenagem venosa e linfática** da faringe se comunica com a região do atlas e do áxis (plexo faringovertebral). A inflamação chega aos **ligamentos** e às cápsulas da articulação C1-C2, que ficam **frouxos** (hiperemia e edema). O espasmo muscular cervical e a frouxidão permitem que o atlas gire sobre o áxis e **fique travado** em rotação. Na criança, a frouxidão ligamentar natural e as facetas mais horizontais facilitam o problema.\n\n**O quadro clínico.**\n- **Torcicolo doloroso** de início agudo, após o quadro infeccioso ou a cirurgia.\n- A cabeça fica **inclinada** (flexão lateral) para um lado e o **queixo rodado** para o lado oposto à inclinação: a postura de **\"cabeça de pintarroxo\"** (cock robin).\n- O paciente **não consegue corrigir** a posição, e a tentativa causa dor.\n- O espasmo do esternocleidomastóideo aparece no lado **do queixo** (o músculo tenta corrigir a deformidade), diferente do torcicolo muscular congênito.\n- A nomenclatura do \"lado da lesão\" varia entre as fontes (lado da faceta subluxada, da inclinação ou do espasmo), e isso explica descrições diferentes da direção do queixo.\n\n**A classificação de Fielding e Hawkins.**\n\n| Tipo | Achado |\n|---|---|\n| I | Rotação **sem** deslocamento anterior do atlas (intervalo atlantodental até 3 mm); a mais comum e benigna |\n| II | Deslocamento anterior de 3 a 5 mm (lesão do ligamento transverso) |\n| III | Deslocamento anterior **maior que 5 mm** |\n| IV | Deslocamento **posterior** do atlas |\n\n**O diagnóstico.** A **tomografia** dinâmica, com a cabeça girada para um lado e depois para o outro, mostra se o atlas fica **fixo** em rotação sobre o áxis.\n\n**O tratamento depende do tempo de evolução.**\n- **Menos de 1 semana**: colar cervical macio, anti-inflamatório e tratamento da **infecção**.\n- **1 semana a 1 mês**: **tração** cervical (halter ou halo) para reduzir, seguida de imobilização.\n- **Mais de 1 mês**, recidiva ou instabilidade (tipos II a IV): tração com halo e, se falhar, **artrodese C1-C2**.\n\nO prognóstico é bom com o diagnóstico precoce. O atraso favorece a fixação crônica.",
+  "correta": "**Correta: D (com dor, deformidade com flexão lateral do pescoço e o queixo rodado para o lado da lesão).** A síndrome de Grisel produz um **torcicolo doloroso**, com a cabeça em flexão lateral e o queixo rodado, após uma infecção ou cirurgia da faringe. A descrição exata do lado para onde o queixo aponta depende de como se define o \"lado da lesão\". Ver o alerta acima.",
   "incorretas": {
-   "A": "**Sem dor, queixo contralateral.**\n- O torcicolo de Grisel é **doloroso**.",
-   "B": "**Sem dor.**\n- Mesma objeção.",
-   "C": "**Com dor, queixo contralateral.**\n- Acerta a dor, mas usa a direção oposta à convenção do gabarito."
+   "A": "A síndrome de Grisel é **dolorosa**. O torcicolo indolor sugere o **torcicolo muscular congênito** (fibrose do esternocleidomastóideo).",
+   "B": "A síndrome de Grisel cursa com **dor**. Um torcicolo indolor com o queixo para o lado contrário ao músculo encurtado é o quadro do torcicolo congênito.",
+   "C": "A dor e a flexão lateral estão certas, mas a direção do queixo descrita pelo gabarito da prova é para o **lado da lesão**. A lateralidade varia conforme a definição usada pela fonte."
   },
-  "alerta": "A direção do queixo varia conforme se denomina o lado da subluxação, da inclinação ou do espasmo muscular. O achado robusto é o torcicolo doloroso fixo; a lateralidade precisa ser conferida na figura ou fonte original.",
   "referencias": [
    "Fielding JW, Hawkins RJ. Atlanto-axial rotatory fixation. J Bone Joint Surg Am. 1977;59:37-44.",
    "Tachdjian's Pediatric Orthopaedics. 6th ed. Elsevier; 2021."
   ],
-  "geradoEm": "2026-09-23",
+  "alerta": "A direção do queixo varia conforme se denomina o lado da subluxação, da inclinação ou do espasmo muscular. O achado robusto é o torcicolo doloroso fixo; a lateralidade precisa ser conferida na figura ou fonte original.",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0318": {
@@ -3846,14 +3864,18 @@
   "conferido": false
  },
  "pediatria-0334": {
+  "conceito": "**Reconhecer a marcha é fazer meio diagnóstico.** Muitas doenças neurológicas têm uma marcha característica, que pode ser reconhecida ainda no corredor do consultório.\n\n**A marcha da doença de Parkinson.** A doença de Parkinson é a degeneração dos neurônios dopaminérgicos da **substância negra**, nos **núcleos da base**. Os sinais motores cardinais são a **bradicinesia**, a **rigidez** (em roda dentada), o **tremor de repouso** e a **instabilidade postural**. A marcha reflete esses sinais:\n- **Passos curtos** e arrastados, com pouca elevação do pé.\n- **Postura fletida**: tronco, quadris e joelhos levemente fletidos, cabeça para a frente.\n- **Redução do balanço dos braços**, muitas vezes assimétrica.\n- **Festinação**: o paciente inclina o tronco para a frente e os passos ficam cada vez **mais curtos e rápidos**, como se \"perseguisse\" o próprio centro de gravidade.\n- **Congelamento** (freezing): dificuldade para iniciar a marcha, passar por portas ou mudar de direção.\n- **Giro em bloco**: vira o corpo todo de uma vez, com vários pequenos passos.\n\n**As marchas neurológicas, para comparar.**\n\n| Marcha | Característica | Causa típica |\n|---|---|---|\n| **Festinante** (parkinsoniana) | Passos curtos e acelerados, tronco fletido | Doença de Parkinson |\n| **Escarvante** (steppage) | Quadril e joelho fletidos em excesso para o pé caído não tocar o chão | **Pé caído**: lesão do fibular, L5, Charcot-Marie-Tooth |\n| Ceifante | Membro rígido em extensão, circundução | Hemiplegia espástica (AVC) |\n| Em tesoura | Coxas cruzam pela adução | PC diplégica, lesão medular |\n| Atáxica | Base alargada, cambaleante | Lesão cerebelar |\n| Anserina | Oscilação lateral do tronco | Fraqueza dos glúteos médios (distrofias, DDQ bilateral) |\n\n**O joelho em hiperextensão (recurvato) na marcha.** Ocorre por **fraqueza do quadríceps** (o paciente \"trava\" o joelho em extensão), por **equino** (o pé em flexão plantar empurra a tíbia para trás) ou por espasticidade do quadríceps. Não é uma característica da marcha parkinsoniana, que é **fletida**.",
+  "correta": "**Correta: A (festinante, com passos encurtados).** A marcha típica da doença de Parkinson é **festinante**: passos **curtos** e arrastados que ficam cada vez mais rápidos, com o tronco fletido para a frente, pouco balanço dos braços, congelamento e giro em bloco.",
   "incorretas": {
-   "B": "A marcha escarvante é a do pé caído, por lesão do nervo fibular.",
-   "C": "A marcha festinante está certa, mas na Parkinson os joelhos ficam fletidos, não em hiperextensão.",
-   "D": "Erra os dois pontos: a marcha não é escarvante e os joelhos não ficam em hiperextensão."
+   "B": "Os passos curtos estão certos, mas a marcha **escarvante** é a do **pé caído** (lesão do fibular, L5, Charcot-Marie-Tooth), e não a do Parkinson.",
+   "C": "A marcha festinante está certa, mas a postura parkinsoniana é **fletida**, e não com joelhos em hiperextensão.",
+   "D": "A marcha **escarvante** e o joelho em **hiperextensão** não caracterizam o Parkinson. São próprios do pé caído e da fraqueza do quadríceps ou do equino."
   },
-  "conceito": "Cada doença deixa uma marca característica na marcha:\n\n**parkinsoniana (festinante)**: passos **curtos e arrastados** que **aceleram** sem querer, como se a pessoa corresse atrás do próprio centro de gravidade; tronco **fletido** para a frente, joelhos e quadris levemente **fletidos**, pouco balanço dos braços, dificuldade para começar a andar e para virar (congelamento);\n\n**escarvante (steppage)**: a pessoa **eleva muito o joelho** para o pé caído não arrastar; vem da fraqueza dos dorsiflexores, como na lesão do **nervo fibular**;\n\n**Trendelenburg**: a pelve cai do lado oposto ao apoio, por fraqueza do **glúteo médio**;\n\n**glúteo máximo**: o tronco é jogado para trás no apoio;\n\n**mão na coxa**: a pessoa empurra a coxa para estender o joelho, por **quadríceps** fraco;\n\n**ceifante**: circundução do membro, na hemiplegia espástica;\n\n**atáxica**: base alargada e instável, por lesão do cerebelo.\n\n**Na Parkinson**, os joelhos ficam fletidos, e não em hiperextensão.\n\n**Na prova**: Parkinson = marcha **festinante**, com **passos curtos**.",
-  "correta": "Na doença de Parkinson, a marcha é festinante, com passos curtos e arrastados que aceleram e tronco fletido.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Perry J, Burnfield JM. Gait Analysis: Normal and Pathological Function. 2ª edição. SLACK; 2010."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0335": {
@@ -3955,18 +3977,18 @@
   "conferido": false
  },
  "pediatria-0343": {
+  "conceito": "**A coxa vara.** É a redução do **ângulo cervicodiafisário** do fêmur proximal (normal na criança: cerca de 135 a 145°). Ela pode ser:\n- **congênita**: associada à deficiência femoral congênita (fêmur curto);\n- **do desenvolvimento**: surge no início da marcha, num fêmur normal ao nascer;\n- **adquirida**: sequela de displasias esqueléticas, raquitismo, trauma, infecção, Perthes ou osteotomia.\n\n**A coxa vara do desenvolvimento.** O defeito está na **ossificação da porção inferomedial do colo** femoral, junto à fise do colo. Ali se forma um fragmento triangular de osso separado (o **triângulo de Fairbank**), cercado por uma faixa de cartilagem displásica. O colo fica fraco e cede com a carga.\n\n**Por que a fise do colo importa.**\n- Normalmente, a fise do colo é quase **horizontal**, e a carga a **comprime**, estimulando o crescimento normal.\n- Na coxa vara, ela fica **vertical**. A carga passa a produzir forças de **cisalhamento** sobre a fise, e o colo vai cedendo para varo.\n\nO **ângulo de Hilgenreiner-epifisário** (HE) mede essa verticalização: é o ângulo entre a linha de Hilgenreiner e uma linha paralela à fise.\n- HE **menor que 45°**: a deformidade tende a **regredir** espontaneamente.\n- HE de 45 a 60°: zona **intermediária**: acompanhar.\n- HE **maior que 60°**: a deformidade **progride** e precisa de cirurgia.\n\n**O quadro clínico.** Marcha de **Trendelenburg** indolor (bilateral: marcha anserina), encurtamento do membro e limitação da **abdução e da rotação interna**. O trocanter maior fica alto, e os abdutores, encurtados, perdem eficiência.\n\n**O tratamento.**\n- **Osteotomia valgizante subtrocantérica** ou intertrocantérica (de Pauwels, por exemplo), quando o HE é maior que 60°, o ângulo cervicodiafisário é menor que 100 a 110°, ou há progressão.\n- O objetivo é **hipercorrigir**, deixando o HE abaixo de cerca de 40°. Assim, a fise volta a ficar horizontal e sob compressão, e o defeito do colo se consolida.\n- Às vezes, associa-se a **epifisiodese** do trocanter maior.",
+  "correta": "**Correta: D (linha de Hilgenreiner e a linha epifisária femoral proximal).** O ângulo de Hilgenreiner-epifisário (HE) é medido entre a **linha de Hilgenreiner** (horizontal pelas cartilagens trirradiadas) e uma linha **paralela à fise** do fêmur proximal. Ele mede a verticalização da fise na coxa vara: menor que 45° tende a regredir, maior que 60° progride.",
   "incorretas": {
-   "A": "O ângulo entre a diáfise e o colo é o cervicodiafisário, não o de Hilgenreiner-epifisário.",
-   "B": "A referência do ângulo HE é a fise, não o eixo do colo femoral.",
-   "C": "O ângulo entre a diáfise e a fise não é o HE; a referência é a linha de Hilgenreiner."
+   "A": "O ângulo entre o **eixo diafisário e o eixo do colo** é o **ângulo cervicodiafisário**, e não o de Hilgenreiner.",
+   "B": "A linha de Hilgenreiner é usada, mas o segundo lado do ângulo é a **linha da fise** (epifisária), e não o eixo do colo.",
+   "C": "O ângulo entre o **eixo diafisário e a linha da fise** não é o ângulo de Hilgenreiner, que usa a linha horizontal pelas trirradiadas como referência."
   },
-  "conceito": "Na **coxa vara do desenvolvimento**, o problema é a **fise do colo femoral** que fica **vertical**. Quanto mais vertical, mais o peso do corpo a submete a **cisalhamento**, e mais a deformidade progride. O **ângulo de Hilgenreiner-epifisário** (HE) mede exatamente essa verticalização.\n\n**Como medir**: na radiografia AP da bacia, traça-se:\n\n**a linha de Hilgenreiner**: horizontal, passando pelas cartilagens trirradiadas dos dois lados;\n\n**a linha da fise femoral proximal**: ao longo da fise do colo.\n\nO HE é o ângulo entre as duas. O normal fica abaixo de cerca de 25 a 30°.\n\n**A conduta pelo HE**:\n\n**abaixo de 45°**: tende a resolver sozinho;\n\n**entre 45 e 60°**: observar a progressão;\n\n**acima de 60°**: **osteotomia valgizante**, com meta de HE abaixo de cerca de 38°.\n\n**Não confundir**: o **ângulo cervicodiafisário** é entre o eixo do colo e o eixo da diáfise; também diminui na coxa vara, mas não é o HE.\n\n**Na prova**: o ângulo de Hilgenreiner-epifisário é entre a **linha de Hilgenreiner** e a **linha epifisária femoral proximal**.",
-  "correta": "O ângulo HE é formado pela linha de Hilgenreiner e pela linha da fise femoral proximal e mede a verticalização da fise.",
   "referencias": [
    "Surgical correction of coxa vara: Evaluation of neck shaft angle, Hilgenreiner-epiphyseal angle for indication of recurrence. PMCID: PMC6494758.",
    "Tachdjian's Pediatric Orthopaedics. 6th edition. Elsevier."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0344": {
@@ -5994,15 +6016,19 @@
   "conferido": false
  },
  "pediatria-0509": {
+  "conceito": "**Avaliando o resultado final do Perthes.** A doença de Legg-Calvé-Perthes passa pelos estágios de necrose, fragmentação, reossificação e remodelação. Ao final, a cabeça femoral pode ficar **esférica** ou **deformada**. A forma final da cabeça e a sua **congruência** com o acetábulo determinam o risco de **artrose** no adulto.\n\n**A classificação de Stulberg.** É aplicada **na maturidade esquelética**. Herring e colaboradores a padronizaram usando **círculos concêntricos** (de Mose), com uma tolerância de **2 mm**, para decidir se a cabeça é esférica.\n\n| Classe | Forma da cabeça | Congruência e prognóstico |\n|---|---|---|\n| **I** | **Normal**, esférica | Congruência esférica; prognóstico excelente |\n| **II** | **Esférica** (dentro de 2 mm do círculo), mas com **coxa magna**, colo curto ou acetábulo inclinado | Congruência esférica; bom prognóstico |\n| **III** | **Não esférica**: **ovoide ou elíptica**, desviando **mais de 2 mm** do círculo | Congruência asférica; artrose moderada no adulto |\n| **IV** | **Achatada**: área plana de **1 cm ou mais** na superfície de carga, com acetábulo também achatado | Congruência asférica; artrose moderada |\n| **V** | **Achatada**, com acetábulo **normal** | **Incongruência** asférica; artrose **precoce** e grave |\n\n**Como raciocinar.**\n- Classes I e II: a cabeça é **esférica**, e o quadril vai bem por toda a vida.\n- Classes III e IV: a cabeça **não é esférica**, mas o acetábulo se adaptou a ela (**congruência asférica**). A artrose aparece na vida adulta, geralmente após os 40 a 50 anos.\n- Classe V: cabeça achatada num acetábulo redondo (**incongruência**). A artrose aparece **cedo**.\n\n**O caso da questão.** A cabeça **elíptica** que se afasta **mais de 2 mm** do círculo é a **classe III**: não é mais esférica, mas ainda não tem a área plana de 1 cm que define a classe IV.\n\n**Os fatores que levam a um bom resultado.** Início **antes dos 6 anos**, pilar lateral **A ou B** de Herring, poucos sinais de cabeça em risco e boa amplitude de movimento, sobretudo a abdução.",
+  "correta": "**Correta: C (III).** Na classificação de Stulberg modificada por Herring, a cabeça femoral **elíptica** (ovoide) que se desvia **mais de 2 mm** do círculo é da **classe III**. Ela não é esférica, mas não tem a área plana de 1 cm ou mais que define a classe IV.",
   "incorretas": {
-   "A": "A classe I é o quadril normal.",
-   "B": "Na classe II a cabeça continua esférica, dentro de 2 mm do círculo.",
-   "D": "Na classe IV a cabeça tem achatamento de 1 cm ou mais na área de carga.",
-   "E": "Na classe V a cabeça é achatada e incongruente com o acetábulo normal."
+   "A": "A classe **I** é o quadril **normal**, com cabeça esférica.",
+   "B": "A classe **II** tem cabeça **esférica**, dentro de 2 mm do círculo, mas com coxa magna, colo curto ou acetábulo inclinado.",
+   "D": "A classe **IV** tem uma **área plana de 1 cm ou mais** na superfície de carga, com acetábulo também achatado.",
+   "E": "A classe **V** tem cabeça **achatada** num acetábulo **normal** (incongruência), com artrose precoce."
   },
-  "conceito": "A **classificação de Stulberg** avalia o **resultado final** do Perthes na maturidade. **Herring** a modificou usando **círculos concêntricos** (moldes) sobre a radiografia: a cabeça é considerada **esférica** se fica a até **2 mm** do círculo em AP e perfil.\n\n**As classes**:\n\n**I**: quadril **normal**;\n\n**II**: cabeça **esférica** (dentro de 2 mm do círculo), mas grande (coxa magna), com colo curto ou acetábulo inclinado;\n\n**III**: cabeça **não esférica**, de forma **elíptica** (ovoide), que **foge mais de 2 mm** do círculo, mas **sem achatamento** de 1 cm ou mais na área de carga;\n\n**IV**: cabeça **achatada** em 1 cm ou mais na área de carga, com acetábulo também achatado (congruente);\n\n**V**: cabeça achatada com acetábulo normal (incongruente).\n\n**O prognóstico**: I e II, sem artrose; III e IV, artrose na idade adulta média; V, artrose precoce.\n\n**O caso**: cabeça **elíptica**, desviada **mais de 2 mm** do círculo, sem menção a achatamento: **classe III**.\n\n**Na prova**: cabeça femoral elíptica, mais de 2 mm fora do círculo = Stulberg **III**.",
-  "correta": "Na classe III a cabeça é elíptica e foge mais de 2 mm do círculo, sem achatamento de 1 cm na área de carga.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Herring JA, Kim HT, Browne R. Legg-Calve-Perthes disease. Part I: Classification of radiographs with use of the modified lateral pillar and Stulberg classifications. J Bone Joint Surg Am. 2004;86(10):2103-2120."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0510": {
@@ -6019,15 +6045,19 @@
   "conferido": false
  },
  "pediatria-0511": {
+  "conceito": "**A epifisiólise proximal do fêmur (EPF).** É o escorregamento da epífise femoral proximal em relação ao colo, através da fise, no **adolescente** (meninos de 12 a 15 anos, meninas de 10 a 13), frequentemente **obeso**. O colo se desloca para cima, para a frente e em rotação externa, e a cabeça parece escorregar para trás e para baixo. A dor pode ser no quadril, na virilha, na **coxa** ou no **joelho**.\n\n**As duas classificações mais usadas.**\n\n**1. Loder (funcional, a mais importante para o prognóstico).** Baseia-se na **capacidade de apoiar** o membro.\n- **Estável**: o paciente **consegue andar**, **com ou sem muletas**.\n- **Instável**: o paciente **não consegue andar**, nem com muletas, pela dor intensa (como numa fratura).\n\nA diferença é crucial: na EPF **instável**, o risco de **necrose avascular** chega a cerca de **20 a 50%**. Na **estável**, é praticamente **nulo**.\n\n**2. Southwick (gravidade do escorregamento).** Mede o **ângulo cabeça-diáfise** (ângulo epifisário-diafisário) no **perfil** e compara com o lado normal (ou com o valor normal, de cerca de 10 a 12°, se a doença for bilateral).\n\n| Diferença em relação ao lado normal | Gravidade |\n|---|---|\n| **Menos de 30°** | Leve |\n| **30 a 50°** | **Moderado** |\n| **Mais de 50°** | Grave |\n\n**O caso da questão.**\n- O paciente **anda**, ainda que com **duas muletas**: pela definição de Loder, a EPF é **estável**. O uso de muletas não a torna instável.\n- O ângulo cabeça-diáfise é **40°** menor que o do lado normal: entre 30 e 50°, ou seja, escorregamento **moderado**.\n\n**O tratamento.**\n- EPF estável: **fixação in situ** com **um parafuso canulado** central na epífise, sem tentar reduzir.\n- EPF instável: tratamento **urgente**. As opções incluem a fixação com redução suave do posicionamento, a descompressão da cápsula e, em centros especializados, a redução aberta pela luxação cirúrgica (Dunn modificado).\n- A fixação profilática do lado oposto é considerada em pacientes de alto risco (mais jovens, doenças endócrinas).\n- As deformidades residuais graves podem levar a **impacto femoroacetabular** (tipo CAME) e ser corrigidas depois, com osteotomias.",
+  "correta": "**Correta: D (estável com deslizamento moderado).** O paciente consegue andar, mesmo com muletas: pela classificação de **Loder**, a epifisiólise é **estável**. A diferença de **40°** no ângulo cabeça-diáfise em relação ao lado normal corresponde, pela classificação de **Southwick**, a um escorregamento **moderado** (30 a 50°).",
   "incorretas": {
-   "A": "A estabilidade está certa, mas 40° não é leve; leve é abaixo de 30°.",
-   "B": "Ele apoia o membro, então é estável, e 40° não é leve.",
-   "C": "Erra os dois pontos: ele é estável e 40° é moderado, não grave.",
-   "E": "O deslizamento moderado está certo, mas ele consegue andar, então é estável."
+   "A": "A estabilidade está certa, mas uma diferença de 40° é escorregamento **moderado**. O leve é menor que 30°.",
+   "B": "O paciente **anda** com muletas, e por isso a EPF é **estável**. Além disso, 40° é moderado, e não leve.",
+   "C": "O paciente consegue andar, o que define a EPF **estável**. Grave seria uma diferença maior que 50°.",
+   "E": "O escorregamento é moderado, mas a EPF é **estável**: a capacidade de andar com muletas exclui a instabilidade de Loder."
   },
-  "conceito": "A **epifisiólise proximal do fêmur** se classifica por dois critérios independentes:\n\n**Loder (estabilidade)**, pela **capacidade de apoio**:\n\n**estável**: a criança **consegue andar**, **com ou sem muletas**;\n\n**instável**: **não consegue andar**, nem com muletas.\n\n**Southwick (gravidade)**, pela **diferença do ângulo cabeça-diáfise** em relação ao lado normal:\n\n**leve**: menos de 30°;\n\n**moderado**: de **30 a 50°**;\n\n**grave**: mais de 50°.\n\n**Aplicando ao caso**: o adolescente de 13 anos **anda apoiando o membro**, ainda que com duas muletas para aliviar a dor; portanto é **estável**. Usar muletas **não** torna a epifisiólise instável; o que define é conseguir ou não apoiar. A diferença de **40°** fica entre 30 e 50°: **moderado**.\n\n**Por que importa**: a forma estável tem risco de necrose praticamente nulo, e o tratamento é a fixação in situ com um parafuso canulado central. A gravidade orienta, mais tarde, a correção da deformidade residual.\n\n**Na prova**: anda com muletas e diferença de 40° = **estável** com deslizamento **moderado**.",
-  "correta": "Ele apoia o membro, mesmo com muletas, e é estável; 40° fica entre 30 e 50°, deslizamento moderado.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Loder RT, Richards BS, Shapiro PS, Reznick LR, Aronson DD. Acute slipped capital femoral epiphysis: the importance of physeal stability. J Bone Joint Surg Am. 1993;75(8):1134-1140."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0512": {
@@ -6175,32 +6205,34 @@
   "conferido": false
  },
  "pediatria-0523": {
+  "conceito": "**As fraturas do antebraço na criança.** São as fraturas **mais comuns** da infância. O osso da criança é elástico e tem um **periósteo grosso**, e por isso pode quebrar de vários modos:\n\n| Tipo | O que acontece |\n|---|---|\n| **Deformidade plástica** | O osso encurva **sem traço** visível |\n| **Tórus** (em fivela) | A cortical **enruga** por compressão, na metáfise |\n| **Galho verde** | Uma cortical **rompe** (lado da tensão) e a outra **dobra** sem romper (lado da compressão) |\n| **Completa** | As duas corticais rompem |\n| Descolamento epifisário | O traço passa pela **fise** (Salter-Harris) |\n\n**Por que o galho verde refratura mais.** Na fratura em galho verde, a cortical do lado da compressão continua **íntegra, mas curvada**. Essa cortical **não forma calo**: ela não fraturou, apenas se deformou. O calo se forma só do lado rompido. O osso parece consolidado mais cedo, mas fica com uma **zona fraca** por muito tempo. Quando a imobilização é retirada e a criança volta às atividades, o osso quebra de novo no mesmo lugar.\n\n**Os fatores de risco para refratura.**\n- Fraturas **diafisárias** (mais que as metafisárias, que consolidam melhor).\n- Fraturas em **galho verde**.\n- **Imobilização curta**: na diáfise, recomenda-se cerca de **6 semanas** de gesso, mais um período de proteção.\n- Retorno precoce aos **esportes** de contato.\n- Angulação residual.\n\nA refratura ocorre em cerca de **5%** das fraturas diafisárias do antebraço, geralmente nos primeiros meses.\n\n**Dicas de tratamento.**\n- Na redução do galho verde com angulação importante, alguns autores **completam a fratura** de propósito (rompem a cortical dobrada), para evitar a recidiva da angulação. É um tema controverso.\n- A **rotação** da deformidade é corrigida pela pronação ou supinação: a regra clássica é rodar o antebraço **em direção ao ápice** da angulação.\n- O tórus é uma fratura **estável** e se trata com tala removível por 3 semanas, sem refratura relevante.\n\n**A rotação esconde-se na angulação.** Nas fraturas em galho verde do antebraço, a direção do **ápice** da angulação revela a **rotação** que causou a fratura:\n- **Ápice volar** (o antebraço \"curva para a palma\"): lesão por **supinação** com carga axial. O fragmento distal fica supinado.\n- **Ápice dorsal**: lesão por **pronação** com carga axial. O fragmento distal fica pronado.\n\n**A redução inverte o mecanismo.** A regra prática é **girar o antebraço em direção ao ápice**, ou seja, fazer o movimento oposto ao que causou a fratura:\n- Ápice **volar** (supinação): reduz-se com **pronação**.\n- Ápice **dorsal** (pronação): reduz-se com **supinação**.\n\nCorrigir a rotação costuma corrigir boa parte da angulação, e a fratura fica estável no gesso.",
+  "correta": "**Correta: D (supinação).** A fratura em galho verde do antebraço com ápice **volar** decorre, frequentemente, de carga axial associada a **supinação**. A redução é feita com o movimento oposto, a pronação.",
   "incorretas": {
-   "A": "A flexão não explica o ápice; é a rotação associada que o define.",
-   "B": "A extensão também não explica o ápice volar; a força que o determina é a supinação.",
-   "C": "A pronação com carga axial produz ápice dorsal, não volar."
+   "A": "A **flexão** isolada não é o mecanismo que define a direção do ápice. Nas fraturas em galho verde, o componente decisivo é a **rotação**.",
+   "B": "A **extensão** (queda com o punho estendido) dá a carga axial, mas o ápice volar se deve ao componente de **supinação**.",
+   "C": "A **pronação** com carga axial produz a fratura com ápice **dorsal**, e não volar."
   },
-  "conceito": "Na **fratura em galho verde** do antebraço, uma cortical quebra e a outra só entorta. O **sentido do ápice** da angulação mostra a **rotação** que causou a fratura, e isso define a manobra de redução:\n\n**ápice volar** (a deformidade aponta para a palma): carga axial com **supinação**;\n\n**ápice dorsal**: carga axial com **pronação**.\n\n**A regra de Evans para reduzir**: girar o antebraço no **sentido oposto** ao mecanismo, levando a palma em direção ao ápice:\n\n**ápice volar**: **pronar** o antebraço;\n\n**ápice dorsal**: supinar.\n\n**Completar a fratura**: romper a cortical que ficou inteira é controverso; reduz a chance de a deformidade voltar, mas torna a fratura mais instável.\n\n**A remodelação**: é melhor em crianças abaixo de 10 anos, perto da fise e no plano de movimento da articulação vizinha. A **rotação não remodela**: um desvio rotacional deixado vira perda definitiva da pronossupinação.\n\n**Flexão e extensão** descrevem a angulação, mas não explicam por si só o lado do ápice; quem define é a rotação associada.\n\n**Na prova**: galho verde com **ápice volar** vem de carga axial com **supinação**.",
-  "correta": "O ápice volar resulta de carga axial com supinação; a redução é feita pronando o antebraço.",
   "referencias": [
-   "Hebert, Lech, Ortopedia e Traumatologia: Princípios e Práticas, 6ª edição, Cap. 93"
+   "Hebert, Lech, Ortopedia e Traumatologia: Princípios e Práticas, 6ª edição, Cap. 93",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0524": {
+  "conceito": "**A fratura do úmero proximal na criança.** Ocorre na **metáfise** ou na **fise** (geralmente Salter-Harris II no adolescente). O mecanismo é uma queda sobre a mão estendida ou um trauma direto no ombro. No recém-nascido, pode ocorrer no parto, e o diagnóstico diferencial inclui a paralisia braquial obstétrica.\n\n**Os músculos explicam o desvio.** O fragmento **proximal** (a cabeça, com os tubérculos) fica preso ao **manguito rotador**. O **distal** (a diáfise) fica sob a ação do **peitoral maior** e do **deltoide**.\n\n| Fragmento | Músculos | Desvio |\n|---|---|---|\n| **Proximal** (acima do peitoral maior) | **Supraespinal** (abdução), **infraespinal e redondo menor** (rotação externa) | **Abdução, flexão e rotação externa** |\n| Distal | **Peitoral maior** (adução, puxa para medial); **deltoide** (puxa para cima) | Adução, desvio medial e encurtamento |\n\nNa radiografia, o fragmento distal costuma ficar **anterior e medial** ao proximal. O periósteo posterior, espesso, tende a ficar íntegro.\n\n**Por que se aceita tanto desvio.** A fise proximal do úmero responde por cerca de **80%** do crescimento do osso, e o ombro é a articulação **mais móvel** do corpo. O **potencial de remodelação** é enorme, sobretudo nas crianças mais novas.\n\n**A classificação de Neer e Horwitz (desvio).**\n- Grau I: desvio menor que 5 mm.\n- Grau II: até um terço da largura da diáfise.\n- Grau III: até dois terços.\n- Grau IV: mais de dois terços.\n\n**Os limites aceitáveis variam com a idade.** Na criança pequena, aceitam-se praticamente **todos** os desvios. No adolescente, perto do fim do crescimento, os limites são menores, e desvios grandes (por exemplo, angulação muito acima de 30 a 45° ou desvio maior que dois terços da diáfise) podem justificar redução e fixação.\n\n**O tratamento.** A grande maioria é tratada **sem cirurgia**, com tipoia ou imobilização simples por 3 a 4 semanas. A redução fechada com fixação percutânea (fios ou hastes flexíveis) fica para adolescentes com desvio inaceitável, fraturas expostas e politrauma. A **interposição** do tendão do bíceps ou do periósteo pode impedir a redução fechada.",
+  "correta": "**Correta: B (flexão e rotação externa).** Na fratura metafisária do úmero proximal acima da inserção do peitoral maior, o fragmento proximal é puxado pelo manguito rotador em **abdução, flexão e rotação externa**. Entre as alternativas, a que descreve esse desvio é flexão e rotação externa.",
   "incorretas": {
-   "A": "A flexão está certa, mas os rotadores externos vencem o subescapular; a rotação é externa.",
-   "C": "O fragmento proximal fica em flexão e rotação externa, o oposto desta alternativa.",
-   "D": "A rotação externa está certa, mas o fragmento fica fletido, não estendido."
+   "A": "A flexão está certa, mas o manguito (infraespinal e redondo menor) roda o fragmento proximal **externamente**, e não internamente.",
+   "C": "O fragmento proximal fica em **flexão** (e abdução), e não em extensão, e em rotação **externa**.",
+   "D": "A rotação externa está certa, mas o fragmento proximal fica em **flexão**, e não em extensão."
   },
-  "conceito": "Na **fratura do úmero proximal** da criança, a posição dos fragmentos depende dos **músculos** que ficam presos a cada um. Quando o traço passa **acima da inserção do peitoral maior**:\n\n**fragmento proximal**: fica preso só ao **manguito rotador**, sem oposição. O supraespinal o leva em **abdução**, e os rotadores externos (infraespinal e redondo menor) vencem o subescapular; o fragmento fica em **abdução, flexão e rotação externa**;\n\n**fragmento distal**: o **peitoral maior** o puxa em **adução** e para medial, e o **deltoide** o puxa para cima, causando **encurtamento** e anteriorização.\n\n**A boa notícia**: a fise proximal do úmero responde por cerca de **80% do crescimento** do osso, e a **remodelação** é enorme. Em crianças abaixo de 10 anos, quase qualquer desvio é aceito; em adolescentes, até cerca de 30 a 40° de angulação.\n\n**O tratamento**: tipoia ou imobilização tipo Velpeau na maioria; redução e fixação com fios ou hastes nos adolescentes com desvio grande.\n\n**Na prova**: o fragmento proximal fica em **flexão e rotação externa** (e abdução).",
-  "correta": "Preso só ao manguito rotador, o fragmento proximal fica em abdução, flexão e rotação externa.",
-  "alerta": "A literatura descreve o fragmento proximal em abdução, flexão e rotação externa. A banca ofereceu apenas flexão e rotação externa, o que é compatível.",
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 10ª edição (Waters, Skaggs, Flynn), Cap. 19"
+   "Rockwood and Wilkins' Fractures in Children, 10ª edição (Waters, Skaggs, Flynn), Cap. 19",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "alerta": "A literatura descreve o fragmento proximal em abdução, flexão e rotação externa. A banca ofereceu apenas flexão e rotação externa, o que é compatível.",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0525": {
@@ -6392,18 +6424,19 @@
   "conferido": false
  },
  "pediatria-0539": {
+  "conceito": "**A lesão de Monteggia.** É a combinação de uma **fratura da ulna** com a **luxação da cabeça do rádio**. Na criança, a fratura da ulna pode ser só uma **deformidade plástica** ou um galho verde, e a luxação da cabeça do rádio passa despercebida com facilidade. A regra de ouro: **em toda fratura da ulna, olhe a cabeça do rádio**. A linha radiocapitelar (o eixo do rádio) deve passar pelo centro do capítulo em todas as incidências.\n\n**A classificação de Bado.** A direção da luxação da cabeça do rádio acompanha o **ápice** da angulação da ulna.\n\n| Tipo | Cabeça do rádio | Ulna |\n|---|---|---|\n| **I** | Luxação **anterior** | Fratura com ápice **anterior**; o mais comum na criança (cerca de 70%) |\n| **II** | Luxação **posterior** | Ápice **posterior**; raro na criança |\n| **III** | Luxação **lateral** ou anterolateral | Fratura metafisária proximal em **varo** (ápice lateral), muitas vezes no olécrano |\n| **IV** | Luxação **anterior** | Fratura do rádio **e** da ulna no mesmo nível |\n\n**As variantes (equivalentes) de Monteggia.** São lesões que se comportam como uma Monteggia, embora a cabeça do rádio não esteja francamente luxada. Por exemplo: deformidade plástica da ulna com luxação da cabeça do rádio; fratura do colo do rádio no lugar da luxação; fratura do olécrano com luxação da cabeça.\n\n**O caso da questão.** Uma **fratura do colo do rádio desviada lateralmente**, com **deformidade plástica em varo do olécrano**, reproduz o padrão do **tipo III**: a ulna proximal se angula em varo (ápice lateral) e o rádio proximal se desloca para **lateral**. Em vez de luxar, a cabeça do rádio desvia junto com o colo fraturado. Por isso, é uma **variante do tipo III**.\n\n**O tipo III em detalhe.** O mecanismo é uma força em **varo** sobre o cotovelo estendido. Pode haver lesão do **nervo radial** (interósseo posterior), que contorna o colo do rádio.\n\n**O tratamento.**\n- A chave é **restaurar o comprimento e o alinhamento da ulna**. Quando a ulna fica reta e com o comprimento certo, a cabeça do rádio geralmente **reduz sozinha**.\n- Deformidade plástica ou galho verde: **redução fechada** e gesso, na posição que estabiliza a cabeça. No tipo III, em geral com o cotovelo fletido e o antebraço em supinação, corrigindo o varo da ulna.\n- Fratura completa e instável da ulna: **haste intramedular** (oblíquas curtas e transversas) ou **placa** (oblíquas longas e cominutivas).\n- Se a cabeça do rádio não reduzir, procurar o **ligamento anular** interposto.\n\n**A Monteggia não diagnosticada.** A luxação crônica da cabeça do rádio leva a dor, perda de movimento e instabilidade. O tratamento é complexo: osteotomia da ulna e, às vezes, reconstrução do ligamento anular.\n\n**A posição da imobilização depende do tipo de Bado.** A ideia é colocar o cotovelo na posição em que a força que luxou a cabeça do rádio fica **neutralizada** e a ulna fica estável.\n- **Tipo I** (luxação anterior): cotovelo em **flexão** de 100 a 110° e antebraço em **supinação**. A flexão relaxa o **bíceps**, que puxa a cabeça do rádio para a frente.\n- **Tipo II** (luxação posterior): cotovelo em **extensão** (ou quase extensão). A extensão mantém a cabeça do rádio reduzida e a ulna alinhada. Alguns autores usam flexão leve.\n- **Tipo III** (luxação lateral): cotovelo em **flexão** e **supinação**, com molde em **valgo** sobre a ulna para corrigir o varo.",
+  "correta": "**Correta: A (extensão).** No Bado tipo II (luxação **posterior** da cabeça do rádio), após a redução fechada, o cotovelo é imobilizado em **extensão**, posição que mantém a cabeça reduzida e a ulna alinhada. Alguns autores preferem flexão leve.",
   "incorretas": {
-   "B": "A flexão de 45° não é a posição de estabilidade descrita para o Bado II.",
-   "C": "A flexão de 90° pode deixar a cabeça posterior deslocar de novo.",
-   "D": "A flexão de 110° é a posição do Bado I, com a cabeça anterior."
+   "B": "A **flexão de 45°** não é a posição clássica para o Bado II. Pode ser uma variação de alguns autores, mas a referência é a extensão.",
+   "C": "A **flexão de 90°** aproxima-se da posição do **tipo I**, e no tipo II pode favorecer a reluxação posterior.",
+   "D": "A **flexão de 110°**, com supinação, é a posição do **Bado tipo I**, que relaxa o bíceps e estabiliza a cabeça do rádio luxada para a frente."
   },
-  "conceito": "A **lesão de Monteggia** é a fratura da **ulna** com **luxação da cabeça do rádio**. **Bado** classificou pela direção da cabeça:\n\n**tipo I**: cabeça **anterior**, o mais comum na criança;\n\n**tipo II**: cabeça **posterior**;\n\n**tipo III**: cabeça **lateral**, muitas vezes com fratura do olécrano em varo;\n\n**tipo IV**: cabeça anterior com fratura dos dois ossos.\n\n**A regra do tratamento**: restaurar o **comprimento e o alinhamento da ulna** (corrigindo inclusive a deformidade plástica) faz a cabeça do rádio reduzir e se manter. Depois, imobiliza-se na posição em que a cabeça fica mais estável:\n\n**Bado I**: **flexão acima de 100 a 110°** e supinação, que relaxam o bíceps (que puxaria a cabeça para a frente);\n\n**Bado II**: **extensão** (ou flexão leve), porque a cabeça posterior é empurrada de volta quando o cotovelo estende;\n\n**Bado III**: extensão, supinação e valgo;\n\n**Bado IV**: em geral fixação dos dois ossos.\n\n**Se a cabeça não ficar reduzida**: fixação da ulna (fio intramedular ou placa) e, se preciso, redução aberta.\n\n**Na prova**: no Monteggia **Bado II**, imobiliza-se em **extensão**.",
-  "correta": "No Bado II a cabeça do rádio luxa para trás, e a extensão do cotovelo é a posição que a mantém reduzida.",
-  "alerta": "Alguns autores imobilizam o Bado II em flexão leve em vez de extensão completa. A banca aceitou extensão.",
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 29"
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 29",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
-  "geradoEm": "2026-10-04",
+  "alerta": "Alguns autores imobilizam o Bado II em flexão leve em vez de extensão completa. A banca aceitou extensão.",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0540": {
@@ -6464,17 +6497,18 @@
   "conferido": false
  },
  "pediatria-0544": {
+  "conceito": "**A tuberosidade anterior da tíbia na criança.** A tuberosidade é uma **apófise**, uma extensão anterior da epífise proximal da tíbia, onde se insere o **tendão patelar**. Ela tem seu próprio centro de ossificação secundário. A fise proximal da tíbia fecha de **posterior para anterior** e de proximal para distal, e a fise da tuberosidade é a **última** a fechar. No adolescente, perto do fim do crescimento, a tuberosidade é o ponto fraco do aparelho extensor.\n\n**O mecanismo.** É uma contração **violenta do quadríceps**, como no salto (decolagem) ou na aterrissagem com o joelho fletido. É típica de **meninos de 13 a 16 anos**, muitas vezes com antecedente de **Osgood-Schlatter**.\n\n**A classificação de Watson-Jones** (modificada por Ogden, que acrescentou os subtipos A, sem desvio, e B, com cominuição ou desvio).\n\n| Tipo | Traço |\n|---|---|\n| **I** | Avulsão da **ponta distal** da tuberosidade, através da fise da apófise |\n| II | Traço na **junção** entre a apófise da tuberosidade e a epífise proximal da tíbia |\n| III | Traço que se estende **para dentro da articulação**, atravessando a epífise |\n| IV (Ryu) | Traço por **toda a fise** proximal da tíbia, saindo posteriormente |\n| V (McKoy) | Tipo III com tipo IV, em forma de **Y** |\n\n**A correspondência com Salter-Harris.**\n- O tipo **I** é um descolamento **através da fise** da apófise, sem atravessar a epífise. Corresponde a uma lesão do tipo **Salter-Harris I**.\n- Os tipos que atravessam a epífise até a articulação (III) se comportam como **Salter-Harris III** ou IV. Os que percorrem toda a fise (IV) se comportam como **Salter-Harris II**.\n\n**As complicações.**\n- **Síndrome compartimental**: a **artéria recorrente tibial anterior** passa junto à tuberosidade e pode sangrar dentro do compartimento anterior.\n- **Lesão meniscal** e do aparelho extensor nos tipos articulares.\n- **Recurvato** por parada de crescimento anterior: rara, porque a lesão ocorre perto da maturidade.\n\n**O tratamento.**\n- **Sem desvio** (tipo IA): gesso inguinomaleolar em extensão.\n- **Com desvio** (a maioria): **redução aberta e fixação** com parafusos. Nos tipos articulares, avalia-se a superfície articular e o menisco, por artroscopia ou artrotomia.\n\n**O mecanismo em detalhe.** Há duas situações típicas, ambas com o **quadríceps contraído**:\n- **Flexão forçada do joelho** com o quadríceps contraído (contração **excêntrica**): por exemplo, ao **aterrissar** de um salto ou numa freada brusca, quando o joelho é forçado a fletir enquanto o quadríceps tenta mantê-lo estendido. A tuberosidade é arrancada pela tensão do tendão patelar.\n- **Contração violenta** do quadríceps na **impulsão** de um salto, com o joelho fletido.\n\nEm esportes como o tênis, o basquete e o vôlei, com saltos, aterrissagens e mudanças bruscas, o mecanismo mais comum é a **flexão forçada** do joelho contra o quadríceps contraído. O trauma direto e a rotação não são os mecanismos típicos.",
+  "correta": "**Correta: A (flexão forçada do joelho).** A fratura da tuberosidade da tíbia no adolescente ocorre, tipicamente, por **flexão forçada do joelho** com o quadríceps contraído (contração excêntrica), como na aterrissagem ou numa freada brusca. O tendão patelar arranca a tuberosidade, que é o ponto fraco do aparelho extensor perto do fim do crescimento.",
   "incorretas": {
-   "B": "A extensão forçada não traciona a tuberosidade da tíbia.",
-   "C": "O movimento rotacional é mecanismo de lesão do LCA e dos meniscos.",
-   "D": "O trauma direto anterior causaria contusão ou fratura da patela."
+   "B": "A **extensão forçada** isolada não arranca a tuberosidade. A lesão exige tensão do quadríceps contra uma força que flexiona o joelho.",
+   "C": "O **movimento rotacional** do joelho é o mecanismo das lesões **ligamentares e meniscais**, e não da avulsão da tuberosidade.",
+   "D": "O **trauma direto** na face anterior do joelho é mais associado a contusões e fraturas da patela que à avulsão da tuberosidade."
   },
-  "conceito": "A **fratura da tuberosidade anterior da tíbia** acontece no adolescente, em geral menino de 13 a 16 anos, quando a apófise está **fechando** e fica mais frágil que o tendão patelar.\n\n**O mecanismo**: o **quadríceps** está **contraído** e, ao mesmo tempo, o joelho é **fletido à força**. É uma contração **excêntrica**: o músculo puxa enquanto é alongado. O tendão patelar transmite essa força à tuberosidade, que é **arrancada**. Acontece:\n\n**na aterrissagem** de um salto ou numa freada brusca;\n\n**ao saltar**, com uma contração concêntrica violenta com o joelho fletido.\n\n**No caso**: um adolescente jogando tênis, com freadas e mudanças de direção, sofreu a fratura por **flexão forçada** do joelho contra o quadríceps contraído.\n\n**O que não causa**:\n\n**extensão forçada**: não traciona a tuberosidade;\n\n**movimento rotacional**: é o mecanismo das lesões do LCA e dos meniscos;\n\n**trauma direto**: causaria contusão ou fratura da patela.\n\n**Os cuidados**: vigiar síndrome compartimental e, nos tipos intra-articulares, procurar lesão meniscal.\n\n**Na prova**: a fratura da tuberosidade da tíbia vem da **flexão forçada** do joelho.",
-  "correta": "O joelho é fletido à força com o quadríceps contraído, e o tendão patelar arranca a tuberosidade.",
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 30"
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 30",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0545": {
@@ -6878,18 +6912,19 @@
   "conferido": false
  },
  "pediatria-0581": {
+  "conceito": "**A necrose avascular após fratura do colo do fêmur na criança.** É a complicação **mais grave e mais frequente** dessas fraturas. A cabeça femoral da criança depende quase só dos **vasos retinaculares** (ramos da circunflexa femoral medial), que sobem pelo colo e são rompidos ou comprimidos pela fratura e pelo hematoma dentro da cápsula. O risco segue a classificação de **Delbet**: maior nas fraturas mais proximais (tipo I, até quase 100% com luxação; tipo II, cerca de 50%) e menor nas mais distais.\n\n**Quando aparece.** Em geral, nos primeiros **1 a 2 anos** após a fratura. Por isso, o seguimento radiográfico deve durar pelo menos esse tempo.\n\n**A classificação de Ratliff.** Descreve o **padrão** da necrose e tem valor prognóstico.\n\n| Tipo | Região necrosada | Prognóstico |\n|---|---|---|\n| **I** | **Toda a cabeça** femoral (epífise total), às vezes com parte do colo | **O pior**: colapso e deformidade |\n| **II** | **Parte da cabeça** (epifisária parcial), geralmente a anterossuperior | Intermediário |\n| **III** | **Colo** (metáfise), do traço de fratura até a fise, com a cabeça preservada | O melhor |\n\n**Por que cada padrão.**\n- **Tipo I**: lesão de **todos** os vasos epifisários laterais e mediais. Ocorre nas fraturas mais desviadas e proximais.\n- **Tipo II**: lesão de **parte** dos vasos epifisários laterais, com uma área de necrose localizada.\n- **Tipo III**: lesão dos **vasos metafisários** superiores, com necrose do colo entre a fratura e a fise.\n\n**Sobre o gabarito.** Na descrição original de Ratliff, a **necrose parcial da cabeça** (epifisária parcial) é o **tipo II**, e o **tipo III** acomete o **colo** (metáfise). A banca registrou \"epifisária parcial\" como o tipo III.\n\n**O tratamento.** Não há tratamento que reverta a necrose. O objetivo é preservar a **forma** da cabeça:\n- evitar o colapso com **proteção da carga**;\n- manter a **contenção** da cabeça no acetábulo, como no Perthes;\n- tratar a **coxa vara**, o fechamento precoce da fise e a discrepância;\n- em casos avançados, osteotomias de salvamento ou, no adulto jovem, artroplastia.",
+  "correta": "**Gabarito registrado: C (epifisária parcial).** A banca considerou que, no tipo III de Ratliff, a necrose acomete parcialmente a epífise. Na descrição original de Ratliff, porém, a necrose parcial da cabeça é o **tipo II**, e o tipo III acomete o **colo** (metáfise). Ver o alerta acima.",
   "incorretas": {
-   "A": "Na descrição original, o tipo III é a necrose do colo, a região metafisária, mas a banca não aceitou esta alternativa.",
-   "B": "A necrose da cabeça inteira, com o colo, é o tipo I.",
-   "D": "O acometimento da epífise e da metáfise juntas corresponde ao tipo I, difuso."
+   "A": "Na descrição original de Ratliff, o tipo **III** acomete justamente o **colo** (região **metafisária**), do traço de fratura até a fise. Por isso, esta alternativa é defensável.",
+   "B": "A necrose **epifisária total** (de toda a cabeça) é o **tipo I** de Ratliff, o de pior prognóstico.",
+   "D": "A necrose **epifisária e metafisária** corresponde ao padrão mais extenso do **tipo I**, que pode incluir parte do colo, e não ao tipo III."
   },
-  "conceito": "Nas **fraturas do colo do fêmur** da criança, a **necrose avascular** é a complicação mais temida. **Ratliff** a classificou pela **área atingida**:\n\n**tipo I**: necrose **difusa**, da **cabeça inteira e do colo**; o pior prognóstico, com colapso e deformidade;\n\n**tipo II**: necrose **parcial da cabeça** (epífise), em geral da parte anterolateral;\n\n**tipo III**: na descrição original, necrose do **colo**, do traço da fratura até a fise, com a **cabeça poupada**; o melhor prognóstico.\n\n**O que a banca considerou**: a resposta oficial para o tipo III foi **epifisária parcial**. Pela classificação original, a necrose epifisária parcial é o tipo II, e o tipo III é metafisário (do colo); a alternativa A seria defensável num recurso.\n\n**Os fatores de risco da necrose**: fraturas mais proximais (Delbet I e II), desvio inicial grande e demora na redução.\n\n**A prevenção**: redução anatômica urgente e **descompressão da cápsula** para drenar o hematoma.\n\n**Na prova**: a banca indicou **epifisária parcial** para o tipo III de Ratliff.",
-  "correta": "A banca indicou necrose epifisária parcial para o tipo III; na classificação original, essa descrição corresponde ao tipo II.",
-  "alerta": "Na classificação de Ratliff original, o tipo II é a necrose parcial da cabeça e o tipo III acomete o colo (metáfise), do traço de fratura até a fise. A banca indicou epifisária parcial para o tipo III; a alternativa A seria defensável.",
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 30"
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 30",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
-  "geradoEm": "2026-10-04",
+  "alerta": "Na classificação de Ratliff original, o tipo II é a necrose parcial da cabeça e o tipo III acomete o colo (metáfise), do traço de fratura até a fise. A banca indicou epifisária parcial para o tipo III; a alternativa A seria defensável.",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0582": {
@@ -7092,17 +7127,18 @@
   "conferido": false
  },
  "pediatria-0596": {
+  "conceito": "**As lesões osteocondrais do tálus.** São lesões da **cúpula** (domo) do tálus, em que um fragmento de cartilagem e osso subcondral se separa parcial ou totalmente. Na criança e no adolescente, aparecem como **osteocondrite dissecante** (sem trauma claro) ou como **fratura osteocondral** após entorses. Elas são **mais raras** na criança que no adulto.\n\n**As duas localizações clássicas.**\n\n| Característica | Medial (posteromedial) | Lateral (anterolateral) |\n|---|---|---|\n| Frequência | **Mais comum** | Menos comum |\n| Mecanismo | Muitas vezes **sem trauma claro**; entorse em inversão com flexão plantar e rotação | **Trauma** evidente: inversão com **dorsiflexão** |\n| Forma | Lesão **profunda**, em taça | Lesão **rasa**, em lâmina (wafer) |\n| Comportamento | Mais estável | Mais instável; desloca mais |\n\n**Por que a lateral é traumática.** Na **inversão com dorsiflexão**, a borda **anterolateral** do tálus bate contra a **fíbula** e é cisalhada. Na **inversão com flexão plantar e rotação externa da tíbia**, a borda **posteromedial** bate contra a **tíbia**.\n\n**A classificação de Berndt e Harty (radiográfica).**\n- Estágio I: compressão subcondral.\n- Estágio II: fragmento **parcialmente** destacado.\n- Estágio III: fragmento **completamente** destacado, mas **no lugar**.\n- Estágio IV: fragmento **deslocado** (corpo livre).\n\nA **ressonância** e a **tomografia** são melhores para ver a estabilidade do fragmento e a cartilagem.\n\n**O quadro clínico.** Dor profunda no tornozelo, edema e, às vezes, travamento, sobretudo após uma entorse que \"não melhora\". Uma entorse com dor persistente por mais de 6 semanas deve levar a pensar em lesão osteocondral.\n\n**O tratamento.**\n- **Lesões estáveis** (estágios I e II), sobretudo em crianças com a fise aberta: **tratamento conservador** (imobilização e restrição de carga por 6 semanas ou mais). As crianças cicatrizam melhor que os adultos.\n- **Lesões instáveis** ou falha do tratamento conservador: **artroscopia**, com **perfuração** (estímulo da medula), **fixação** do fragmento ou **remoção** do fragmento solto com microfraturas. Lesões grandes podem precisar de enxerto osteocondral.",
+  "correta": "**Correta: A (medial).** Na criança, a lesão osteocondral do tálus é mais comum na região **medial** (posteromedial) da cúpula, onde costuma ser profunda e muitas vezes sem trauma claro. As lesões laterais (anterolaterais) são menos frequentes, rasas e geralmente traumáticas.",
   "incorretas": {
-   "B": "A região lateral (anterolateral) é a segunda localização, com lesões rasas e mais ligadas à inversão.",
-   "C": "A localização central é incomum.",
-   "D": "A localização anterior isolada não é a típica."
+   "B": "As lesões **laterais** (anterolaterais) são **menos frequentes**. São típicas do trauma em inversão com dorsiflexão, em que o tálus bate na fíbula.",
+   "C": "As lesões **centrais** da cúpula do tálus são **raras**.",
+   "D": "A região **anterior** do tálus não é a localização clássica. As lesões típicas são posteromediais e anterolaterais."
   },
-  "conceito": "As **lesões osteocondrais do tálus** atingem a cúpula do tálus, a superfície que se articula com a tíbia. Na criança e no adolescente, podem vir de trauma (entorses) ou de sobrecarga repetida, como na osteocondrite dissecante.\n\n**As duas localizações clássicas**:\n\n**posteromedial**: a **mais frequente**. As lesões são **mais profundas**, em forma de **taça**, e muitas vezes sem história de trauma claro;\n\n**anterolateral**: a segunda localização. As lesões são **mais rasas**, em forma de \"**bolacha**\", e mais associadas a **trauma em inversão** do tornozelo.\n\n**As localizações central e anterior isolada** são incomuns.\n\n**O quadro**: dor profunda no tornozelo depois de entorse que não melhora, derrame, sensação de bloqueio.\n\n**A imagem**: a radiografia pode não mostrar a lesão; a **ressonância** mostra a estabilidade do fragmento, e a tomografia, o tamanho.\n\n**O tratamento**: lesões estáveis com fise aberta, imobilização e afastamento do esporte; lesões instáveis ou com fragmento solto, artroscopia (perfurações, fixação ou remoção).\n\n**Na prova**: a fratura osteocondral do tálus na criança é mais comum na região **medial**.",
-  "correta": "A região posteromedial da cúpula talar é a mais acometida, com lesões mais profundas.",
   "referencias": [
-   "Rockwood and Wilkins's fractures in Children 7 th ed. 1026 pg  (referência indicada na prova TARO 2015, questão 13)"
+   "Rockwood and Wilkins's fractures in Children 7 th ed. 1026 pg  (referência indicada na prova TARO 2015, questão 13)",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0597": {
@@ -7447,17 +7483,18 @@
   "conferido": false
  },
  "pediatria-0621": {
+  "conceito": "**O fenômeno de Cozen.** É o **valgo progressivo** da tíbia que aparece **depois** de uma fratura da **metáfise proximal da tíbia** na criança, geralmente uma fratura em **galho verde** ou incompleta, na faixa de **3 a 6 anos**. O detalhe que surpreende os pais (e o médico) é que a deformidade aparece **mesmo quando a fratura consolidou bem alinhada**.\n\n**Como evolui.**\n- O valgo começa a aparecer nos primeiros meses após a fratura.\n- Atinge o **máximo em cerca de 12 a 18 meses**.\n- Na maioria dos casos, **melhora espontaneamente** nos anos seguintes, com o crescimento.\n\n**Por que acontece.** As explicações propostas, possivelmente combinadas, são:\n- **crescimento assimétrico** da fise proximal da tíbia, com **hiperestimulação** do lado **medial**, pelo aumento do fluxo sanguíneo durante a consolidação;\n- a **fíbula** íntegra funciona como uma \"corda\" do lado lateral, limitando o crescimento desse lado;\n- **interposição de partes moles** (pata de ganso, periósteo) no lado medial do foco, mantendo a fratura aberta medialmente;\n- redução incompleta do valgo inicial.\n\n**Por isso, a deformidade mais frequente é o valgo.** A fratura em galho verde da metáfise proximal da tíbia costuma se abrir do lado **medial** (a cortical medial rompe) e se fechar do lado lateral, já com tendência ao valgo, que depois aumenta.\n\n**A conduta.**\n- **Avisar os pais** desde o início que o valgo pode aparecer, mesmo com bom tratamento.\n- Na fratura, tentar uma **redução em varo** (corrigindo qualquer valgo) e imobilizar com o joelho em extensão, com molde em varo.\n- Diante do valgo: **observar** por pelo menos 18 a 24 meses, porque a maioria **remodela**.\n- Se o valgo persistir e for importante: **hemiepifisiodese medial** temporária (placa em 8), que guia o crescimento. A **osteotomia** precoce é desaconselhada, porque o valgo pode **recidivar** após ela.",
+  "correta": "**Correta: B (valgo).** Após a fratura em galho verde da metáfise proximal da tíbia na criança, a deformidade mais frequente é o **valgo** progressivo (fenômeno de Cozen), que aparece mesmo com boa redução, atinge o máximo em 12 a 18 meses e costuma remodelar espontaneamente.",
   "incorretas": {
-   "A": "O varo é o oposto do desvio típico da fratura de Cozen.",
-   "C": "O recurvato não é o desvio típico dessa fratura.",
-   "D": "O antecurvato não é o desvio típico dessa fratura."
+   "A": "O **varo** não é a deformidade típica. A cortical medial se abre e o crescimento medial é estimulado, levando ao valgo.",
+   "C": "O **recurvato** é uma complicação das lesões da fise **anterior** da tíbia proximal (por exemplo, após fratura da tuberosidade), e não da fratura metafisária em galho verde.",
+   "D": "O **antecurvato** não é a deformidade característica dessa fratura."
   },
-  "conceito": "A **fratura em galho verde da metáfise proximal da tíbia** na criança pequena, em geral entre 3 e 6 anos, é a **fratura de Cozen**. A cortical medial se abre e a lateral entorta, com a fíbula muitas vezes intacta.\n\n**A deformidade tardia típica**: **valgo**, que aparece nos meses seguintes, mesmo depois de boa redução (fenômeno de Cozen).\n\n**As causas propostas**:\n\n**hiperemia** da consolidação, com **hipercrescimento** da parte medial da fise;\n\n**tração da fíbula** intacta, que segura o lado lateral;\n\n**interposição de periósteo** e da **pata de ganso** no lado medial.\n\n**A evolução**: pico do valgo em 12 a 18 meses; a maioria **remodela espontaneamente** em 2 a 3 anos.\n\n**A conduta**:\n\n**gesso inguinopodálico** com o joelho em extensão e moldagem em varo;\n\n**orientar a família desde o início** de que o valgo pode aparecer e costuma melhorar sozinho;\n\n**evitar osteotomia precoce**, que tende a recidivar; se o valgo persistir por anos, crescimento guiado com placa em 8 medial.\n\n**Os outros desvios** (varo, recurvato, antecurvato) não são o padrão dessa fratura.\n\n**Na prova**: a deformidade mais frequente após o galho verde da metáfise proximal da tíbia é o **valgo**.",
-  "correta": "O fenômeno de Cozen é o valgo progressivo, que na maioria remodela sozinho.",
   "referencias": [
-   "Skeletal Trauma in Children 5th Ed (referência indicada na prova TARO 2017, questão 99)"
+   "Skeletal Trauma in Children 5th Ed (referência indicada na prova TARO 2017, questão 99)",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0622": {
@@ -7560,17 +7597,18 @@
   "conferido": false
  },
  "pediatria-0629": {
+  "conceito": "**A fratura do côndilo lateral do úmero.** É a **segunda fratura mais comum** do cotovelo da criança, depois da supracondiliana, geralmente entre **5 e 10 anos**. É uma fratura **intra-articular** e **fisária**. Ela é traiçoeira: a radiografia mostra só um pequeno fragmento metafisário, mas a maior parte do fragmento é **cartilagem**, invisível na radiografia.\n\n**O mecanismo.** Uma força em **varo** sobre o cotovelo estendido (os extensores do antebraço arrancam o côndilo) ou uma queda que empurra a cabeça do rádio contra o capítulo.\n\n**A classificação de Milch.** Baseia-se em onde o traço **entra na articulação**, em relação ao **sulco capitulotroclear**.\n\n| Tipo | Traço articular | Salter-Harris e estabilidade |\n|---|---|---|\n| **I** | **Lateral** ao sulco, atravessando o **núcleo de ossificação do capítulo** | **IV**; cotovelo **estável** |\n| II | **Medial** ao sulco, entrando na **tróclea** | **II**; cotovelo **instável** (pode subluxar) |\n\n**Por que o Milch I é Salter-Harris IV.** O traço começa na **metáfise**, atravessa a **fise** e passa pelo **centro de ossificação do capítulo** (epífise) até a articulação. Metáfise, fise e epífise atravessadas: **tipo IV**. No Milch II, o traço passa pela fise, mas a parte articular segue pela **cartilagem da tróclea**, sem cruzar o núcleo de ossificação. Por isso, ele foi equiparado ao tipo II. Na prática, ambos são lesões articulares que exigem redução anatômica.\n\n**O que realmente decide o tratamento: o desvio.**\n\n| Desvio | Tratamento |\n|---|---|\n| **Menos de 2 mm** | **Gesso**, com radiografias semanais (pode desviar) |\n| 2 a 4 mm, com a superfície articular íntegra (dobradiça cartilaginosa) | Pode ser fixado com fios **percutâneos**; artrografia ajuda |\n| **Mais de 4 mm** ou fragmento rodado | **Redução aberta** e fixação |\n\nA incidência **oblíqua interna** mostra melhor o desvio, que costuma ser maior na face posterolateral.\n\n**As complicações.** São frequentes, por isso esta fratura é tratada com respeito:\n- **Pseudoartrose**: o fragmento é banhado pelo líquido sinovial e puxado pelos extensores. Leva ao **cúbito valgo** progressivo e à **paralisia tardia do nervo ulnar**.\n- **Crescimento excessivo** lateral (esporão lateral), com cúbito varo leve.\n- **Necrose avascular** do fragmento, sobretudo após dissecção posterior excessiva na via aberta. A irrigação do côndilo entra pela face **posterior**.\n- Deformidade em **rabo de peixe** (fishtail) no úmero distal.",
+  "correta": "**Correta: D (IV).** Na fratura do côndilo lateral **Milch I**, o traço entra na articulação lateralmente ao sulco capitulotroclear, atravessando o **núcleo de ossificação do capítulo**. Ele cruza a metáfise, a fise e a epífise, o padrão de uma lesão **Salter-Harris IV**.",
   "incorretas": {
-   "A": "A Salter-Harris I não se aplica, porque há traço pela metáfise e pela epífise.",
-   "B": "A Salter-Harris II corresponde ao Milch II, não ao I.",
-   "C": "A Salter-Harris III não se aplica, porque o traço também passa pela metáfise."
+   "A": "Uma lesão **Salter-Harris I** passaria só pela fise, sem fragmento metafisário nem traço articular. A fratura do côndilo lateral sempre tem fragmento metafisário e é intra-articular.",
+   "B": "O **Salter-Harris II** foi equiparado ao **Milch II**, em que o traço segue pela tróclea cartilaginosa sem cruzar o núcleo de ossificação do capítulo.",
+   "C": "Uma lesão **Salter-Harris III** atravessaria a fise e a epífise sem fragmento metafisário. O Milch I tem fragmento metafisário."
   },
-  "conceito": "A **fratura do côndilo lateral do úmero** é classificada por **Milch** conforme o traço passa em relação à **tróclea**:\n\n**Milch I**: o traço fica **lateral** à tróclea e passa pelo núcleo do **capítulo**. Cruza a metáfise, a fise e a epífise: equivale a uma **Salter-Harris IV**. O cotovelo fica **estável**, porque a tróclea continua inteira;\n\n**Milch II**: o traço é mais **medial** e entra no **sulco troclear**. A tróclea vai junto com o fragmento, e o cotovelo fica **instável**, podendo subluxar. É descrita como equivalente a uma **Salter-Harris II** (o traço passa pela metáfise e pela fise, saindo pela cartilagem não ossificada da tróclea).\n\n**Na prática**: a maioria é Milch II. A classificação de **Jakob**, pelo **desvio**, orienta melhor o tratamento: até 2 mm com a dobradiça articular íntegra, gesso; 2 a 4 mm, fixação com fios; desviada e rodada, redução aberta.\n\n**As complicações**: pseudartrose, cúbito valgo e paralisia tardia do nervo ulnar, quando não tratada adequadamente.\n\n**Na prova**: Milch I corresponde a Salter-Harris **IV**; Milch II, a Salter-Harris II.",
-  "correta": "No Milch I o traço passa lateral à tróclea e cruza metáfise, fise e epífise do capítulo: Salter-Harris IV.",
   "referencias": [
-   "Rockwood and Wilkins’ Fractures in Children 8 Ed. 704 Pg (referência indicada na prova TARO 2018, questão 55)"
+   "Rockwood and Wilkins’ Fractures in Children 8 Ed. 704 Pg (referência indicada na prova TARO 2018, questão 55)",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0630": {
@@ -7588,17 +7626,18 @@
   "conferido": false
  },
  "pediatria-0631": {
+  "conceito": "**A fratura da diáfise do úmero na criança.** É relativamente pouco comum. Nos **recém-nascidos**, pode ocorrer no parto. Nas crianças pequenas que ainda não andam, deve levantar a suspeita de **maus-tratos**. Nas maiores, vem de trauma direto ou quedas. A fratura **espiral** por torção também ocorre.\n\n**Por que se aceita tanto desvio.** O úmero da criança tem **grande potencial de remodelação**, por três motivos:\n- A fise **proximal** do úmero responde por cerca de **80%** do crescimento do osso, e remodela muito.\n- O **ombro** é muito móvel e **compensa** desvios de rotação e de angulação. Um pequeno desvio rotacional é compensado pela rotação do ombro.\n- O braço não suporta peso, e pequenos desvios não têm repercussão funcional nem estética visível.\n\n**Os desvios aceitáveis na criança.**\n- **Rotação**: até cerca de **15°**.\n- **Angulação**: até cerca de **20° de varo** (e algo semelhante em outros planos), sobretudo nas crianças mais novas. Nas mais velhas e nos adolescentes, os limites são menores.\n- **Encurtamento**: até cerca de **2 cm**, compensado pelo crescimento e sem importância funcional no membro superior.\n- **Aposição**: o contato baioneta é aceito na criança pequena.\n\n**O tratamento.** A grande maioria é tratada **sem cirurgia**:\n- **Recém-nascido**: imobilização simples, prendendo o braço ao tronco por 2 a 3 semanas. Consolida rapidamente.\n- **Criança**: tala em **U** (pinça de confeiteiro), **gesso pendente** ou órtese funcional (de Sarmiento), com a gravidade ajudando a alinhar.\n- **Cirurgia** (hastes flexíveis, raramente placa): fraturas **expostas**, politrauma, lesões vasculares, cotovelo flutuante, adolescentes com desvio inaceitável.\n\n**O nervo radial.** Contorna o úmero no **sulco espiral**, na junção do terço médio com o distal. Está em risco nas fraturas desse nível (a fratura de Holstein-Lewis no adulto). Na criança, a paralisia associada à fratura é geralmente uma **neuropraxia** e se recupera espontaneamente. Por isso, a conduta inicial é **observar**.",
+  "correta": "**Correta: A (15 graus e 20 graus de varo).** Na fratura da diáfise do úmero da criança, aceita-se desvio rotacional de até cerca de **15°** e angulação de até cerca de **20° de varo**. A remodelação da fise proximal e a grande mobilidade do ombro compensam esses desvios.",
   "incorretas": {
-   "B": "A rotação está certa, mas 40° de varo é excessivo.",
-   "C": "A rotação de 30° excede o limite, e o desvio citado é em varo, não valgo.",
-   "D": "Os dois valores são excessivos, e a direção da angulação está errada."
+   "B": "A rotação de 15° está certa, mas **40° de varo** excede o limite aceitável, mesmo com a boa remodelação do úmero.",
+   "C": "Uma **rotação de 30°** excede o tolerado, e o desvio de referência é o **varo**, e não o valgo.",
+   "D": "Erra os dois limites: **30°** de rotação e **40°** de angulação excedem o aceitável."
   },
-  "conceito": "A **fratura da diáfise do úmero** na criança é tratada quase sempre de forma **conservadora** (pinça de confeiteiro, órtese funcional, tipoia), porque o **ombro compensa** muito e o úmero **remodela** bem.\n\n**Os desvios aceitáveis citados**:\n\n**rotação**: até cerca de **15°**;\n\n**angulação** (varo): até cerca de **20°**;\n\n**encurtamento**: até 1 a 2 cm.\n\nA criança pequena aceita mais; o adolescente, menos, porque resta pouco crescimento.\n\n**Por que o úmero tolera mais que o antebraço**: o **ombro** é uma articulação que se move em todas as direções e disfarça as deformidades de angulação e rotação. No antebraço, ao contrário, a rotação não remodela e qualquer malrotação tira pronossupinação.\n\n**O nervo radial**: pode ser lesado sobretudo nas fraturas do terço distal (padrão de Holstein-Lewis); na maioria é neuropraxia, observar e esperar a recuperação.\n\n**Quando operar**: fratura exposta, lesão vascular, cotovelo flutuante, politrauma ou adolescente com desvio inaceitável (geralmente com hastes elásticas).\n\n**Na prova**: na diáfise do úmero da criança, aceitam-se **15° de rotação** medial e **20° de varo**.",
-  "correta": "Os limites citados para a diáfise do úmero são cerca de 15° de rotação e 20° de varo.",
   "referencias": [
-   "Rockwood and Green’s Fratures in children 8 Ed. 1076 Pg (referência indicada na prova TARO 2018, questão 76)"
+   "Rockwood and Green’s Fratures in children 8 Ed. 1076 Pg (referência indicada na prova TARO 2018, questão 76)",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0632": {
@@ -7943,17 +7982,18 @@
   "conferido": false
  },
  "pediatria-0656": {
+  "conceito": "**A luxação congênita da cabeça do rádio.** É a anomalia congênita **mais comum do cotovelo**. A cabeça do rádio está fora da sua articulação com o capítulo desde o nascimento, geralmente em direção **posterior** (às vezes posterolateral ou anterior).\n\n**As características.**\n- Na maioria dos casos é **bilateral**.\n- Frequentemente se associa a **outras manifestações**: síndromes e anomalias, como a síndrome **unha-patela**, a síndrome de **Larsen**, a de **Klippel-Feil**, a sinostose radioulnar, a **artrogripose** e várias displasias esqueléticas.\n- **Não há história de trauma**.\n- É frequentemente **assintomática** na infância e descoberta por acaso ou por uma limitação discreta. Na adolescência, pode surgir **dor**, estalido ou uma proeminência palpável.\n\n**Como diferenciar da luxação traumática (Monteggia não diagnosticada).** A distinção é importante, porque a luxação traumática crônica pode ser reconstruída, e a congênita não.\n\n| Achado | Congênita | Traumática (crônica) |\n|---|---|---|\n| Lado | Frequentemente **bilateral** | **Unilateral** |\n| Cabeça do rádio | **Convexa** (abaulada), sem a concavidade normal; colo longo e fino | Côncava, de forma normal |\n| Capítulo | **Hipoplásico** | Normal |\n| Ulna | Pode ser curva | Ulna com sinais da fratura antiga, ou curva |\n| Associações | Síndromes e outras anomalias | Nenhuma; história de trauma |\n\n**O tratamento.**\n- **Observação**: na maioria, a função é boa.\n- Na adolescência ou na vida adulta, se houver **dor** ou limitação por uma cabeça proeminente: **ressecção da cabeça do rádio**, feita **após o fim do crescimento** (para não causar migração do rádio e desvio do punho).\n- A **redução** cirúrgica não costuma funcionar, porque as superfícies articulares são malformadas.",
+  "correta": "**Correta: B (posterior).** Na luxação congênita da cabeça do rádio, o desvio mais frequente é o **posterior** (às vezes posterolateral). Os desvios anterior e lateral são menos comuns.",
   "incorretas": {
-   "A": "O desvio anterior é mais típico da lesão traumática, o Monteggia tipo I.",
-   "C": "O desvio medial é raro.",
-   "D": "O desvio lateral é menos comum que o posterior."
+   "A": "O desvio **anterior** ocorre, mas é **menos frequente** na forma congênita. A luxação anterior isolada e unilateral deve levantar a suspeita de uma Monteggia tipo I não diagnosticada.",
+   "C": "O desvio **medial** da cabeça do rádio não é um padrão típico da luxação congênita.",
+   "D": "O desvio **lateral** puro é menos comum que o posterior. Quando ocorre, costuma ser posterolateral."
   },
-  "conceito": "A **luxação congênita da cabeça do rádio** é rara, muitas vezes **bilateral** e associada a síndromes (unha-patela, Ehlers-Danlos, Larsen) ou a sinostose radioulnar.\n\n**O desvio mais frequente**: **posterior**, seguido do anterior e do lateral.\n\n**Como diferenciar da luxação traumática antiga** (um Monteggia não diagnosticado):\n\n**direção**: congênita em geral **posterior**; o Monteggia mais comum (tipo I de Bado) é **anterior**;\n\n**cabeça do rádio**: congênita **pequena** e **convexa** (em cúpula), porque nunca se moldou contra o capítulo; traumática de tamanho normal e côncava;\n\n**capítulo**: **hipoplásico** na congênita;\n\n**ulna**: na congênita é reta, sem sinais de fratura ou deformidade plástica;\n\n**lado**: congênita muitas vezes bilateral; traumática unilateral.\n\n**O quadro**: limitação da extensão (na posterior), pronossupinação pouco afetada; dor e estalido podem aparecer na adolescência.\n\n**O tratamento**: **observação**, porque a função costuma ser boa e a cabeça deformada não se mantém reduzida; **ressecção da cabeça** no adulto com dor.\n\n**Na prova**: na luxação congênita da cabeça do rádio, o desvio mais frequente é **posterior**.",
-  "correta": "A luxação congênita da cabeça do rádio é mais frequentemente posterior, com cabeça pequena e convexa.",
   "referencias": [
-   "Lovell and Winter’s Pediatric Orthopaedics, 6th Ed., p. 934 (referência indicada na prova TARO 2012, questão 1)"
+   "Lovell and Winter’s Pediatric Orthopaedics, 6th Ed., p. 934 (referência indicada na prova TARO 2012, questão 1)",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0657": {
@@ -8108,14 +8148,18 @@
   "conferido": false
  },
  "pediatria-0668": {
+  "conceito": "**Os seis centros de ossificação secundários do cotovelo.** Eles aparecem numa ordem **previsível**, lembrada pelo mnemônico **CRITOE**:\n\n| Centro | Aparece (aproximado) | Funde (aproximado) |\n|---|---|---|\n| **C**apítulo | 1 ano | 12 a 14 anos |\n| **R**adial (cabeça) | 3 a 5 anos | 14 a 16 anos |\n| **I**nterno (epicôndilo medial) | 5 a 7 anos | **15 a 17 anos (o último)** |\n| **T**róclea | 7 a 9 anos | 12 a 14 anos |\n| **O**lécrano | 9 a 11 anos | 14 a 16 anos |\n| **E**xterno (epicôndilo lateral) | 10 a 11 anos | 12 a 14 anos |\n\nNas meninas, todos aparecem e fundem cerca de 1 a 2 anos antes.\n\n**A ordem de fusão é diferente da ordem de aparecimento.**\n1. Primeiro, o **capítulo**, a **tróclea** e o **epicôndilo lateral** se unem entre si e formam uma única epífise distal, que se funde à metáfise por volta dos 12 a 14 anos.\n2. Depois, a **cabeça do rádio** e o **olécrano**, por volta dos 14 a 16 anos.\n3. Por último, o **epicôndilo medial**, por volta dos **15 a 17 anos**. Ele é uma **apófise extra-articular** e fica separado da epífise principal.\n\n**Por que isso é importante.**\n- **O encarcerado**: o epicôndilo medial é o centro mais avulsionado. Na luxação do cotovelo, ele pode ficar **preso dentro da articulação**. Pela regra do CRITOE, se a tróclea está ossificada e o epicôndilo medial não aparece no lugar, ele pode estar **dentro da articulação**.\n- O epicôndilo medial **aberto até os 15 a 17 anos** explica por que o adolescente arremessador tem apofisite e avulsão medial (little leaguer's elbow).\n- Conhecer as idades evita confundir um centro normal com uma fratura, e uma fratura com um centro ainda não ossificado. Na dúvida, compara-se com o cotovelo contralateral.",
+  "correta": "**Correta: D (epicôndilo medial, cabeça do rádio e capítulo).** Pela sequência CRITOE, aos **7 anos** já apareceram o **capítulo** (cerca de 1 ano), a **cabeça do rádio** (3 a 5 anos) e o **epicôndilo medial** (5 a 7 anos). A tróclea (7 a 9), o olécrano (9 a 11) e o epicôndilo lateral (10 a 11) ainda não ossificaram.",
   "incorretas": {
-   "A": "O epicôndilo lateral e o olécrano aparecem depois dos 7 anos.",
-   "B": "O olécrano só aparece entre 8 e 10 anos.",
-   "C": "O epicôndilo lateral e a tróclea são núcleos mais tardios."
+   "A": "O **epicôndilo lateral** (10 a 11 anos), o **olécrano** (9 a 11) e a **tróclea** (7 a 9) são os últimos centros a aparecer. Aos 7 anos, ainda não estão presentes.",
+   "B": "O **epicôndilo medial** e o **capítulo** já existem aos 7 anos, mas o **olécrano** só aparece por volta dos 9 a 11 anos.",
+   "C": "A **cabeça do rádio** já existe aos 7 anos, mas o **epicôndilo lateral** (10 a 11) e a **tróclea** (7 a 9) ainda não ossificaram."
   },
-  "conceito": "Os **núcleos de ossificação do cotovelo** aparecem numa ordem fixa, lembrada pela sigla **CRITOE**, com idades aproximadas de 1, 3, 5, 7, 9 e 11 anos:\n\n**C, capítulo**: por volta de 1 ano;\n\n**R, cabeça do rádio**: 3 a 5 anos;\n\n**I, epicôndilo interno (medial)**: 5 a 7 anos;\n\n**T, tróclea**: 7 a 9 anos;\n\n**O, olécrano**: 8 a 10 anos;\n\n**E, epicôndilo externo (lateral)**: 10 a 11 anos.\n\n**Aos 7 anos**: já estão ossificados o **capítulo**, a **cabeça do rádio** e o **epicôndilo medial** (C, R, I). A tróclea está apenas começando; o olécrano e o epicôndilo lateral ainda não apareceram.\n\n**Por que a ordem importa na urgência**: se a radiografia mostra um núcleo que **parece a tróclea**, mas o **epicôndilo medial** não está no lugar, é preciso desconfiar de **epicôndilo medial encarcerado** dentro da articulação depois de uma luxação. A tróclea nunca ossifica antes do epicôndilo medial.\n\n**Outras dicas**: a tróclea pode ossificar fragmentada, por vários núcleos, sem ser fratura; comparar com o outro lado ajuda nas dúvidas.\n\n**Na prova**: aos 7 anos, estão ossificados o **epicôndilo medial**, a **cabeça do rádio** e o **capítulo**.",
-  "correta": "Aos 7 anos já apareceram o capítulo, a cabeça do rádio e o epicôndilo medial, as três primeiras letras do CRITOE.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0669": {
@@ -8363,31 +8407,33 @@
   "conferido": false
  },
  "pediatria-0686": {
+  "conceito": "**As fraturas de transição do tornozelo.** São fraturas do **adolescente** em que a fise distal da tíbia **está fechando**. Elas existem por causa da **ordem de fechamento** dessa fise, que leva cerca de 18 meses:\n1. Fecha primeiro a porção **central** (onde fica a ondulação de Kump).\n2. Depois, a **medial**.\n3. Por **último**, a porção **anterolateral**.\n\nDurante esse período, a parte medial já está fundida e firme, mas a **anterolateral** ainda está aberta e frágil.\n\n**A fratura de Tillaux juvenil.**\n- **Mecanismo**: **rotação externa** do pé. O **ligamento tibiofibular anteroinferior** (sindesmose anterior), que se insere na porção **anterolateral** da epífise distal da tíbia, **arranca** esse fragmento.\n- **Traço**: sobe pela fise anterolateral, ainda aberta, e desce verticalmente pela **epífise até a articulação**. Passa pela fise e pela epífise, sem fragmento metafisário: uma fratura **Salter-Harris III**.\n- **Idade**: cerca de **12 a 14 anos** (meninas um pouco antes).\n\n**A fratura triplanar.** É a outra fratura de transição. O traço percorre **três planos**: sagital na epífise, axial na fise e coronal na metáfise. Na radiografia AP, parece uma Salter-Harris III; no perfil, uma Salter-Harris II. Em conjunto, comporta-se como uma **Salter-Harris IV**.\n\n| Fratura | Salter-Harris | Fragmento |\n|---|---|---|\n| **Tillaux** | **III** | **Anterolateral** da epífise |\n| Triplanar | Comporta-se como IV (III no AP, II no perfil) | Dois a quatro fragmentos |\n\n**A tomografia.** É essencial para medir o desvio articular e planejar o tratamento.\n\n**O tratamento.**\n- Desvio **menor que 2 mm** na superfície articular: redução fechada (rotação **interna** do pé) e gesso.\n- Desvio **maior que 2 mm**: redução (fechada ou aberta) e **fixação com parafuso** paralelo à articulação, na epífise. Como a fise está quase fechada, o parafuso pode cruzá-la sem grande risco de distúrbio de crescimento.\n\n**O prognóstico.** É bom quando a superfície articular é restaurada. O distúrbio de crescimento é **raro**, porque o paciente está perto do fim do crescimento.",
+  "correta": "**Correta: C (III).** A fratura de Tillaux juvenil é uma **Salter-Harris III** da porção anterolateral da epífise distal da tíbia. O traço sobe pela fise aberta e desce pela epífise até a articulação, sem fragmento metafisário.",
   "incorretas": {
-   "A": "A Salter-Harris I não é intra-articular; a Tillaux é.",
-   "B": "A Salter-Harris II tem fragmento metafisário, ausente na Tillaux.",
-   "D": "A Salter-Harris IV atravessa a metáfise, o que não acontece na Tillaux clássica."
+   "A": "Uma lesão **Salter-Harris I** passaria só pela fise, sem entrar na articulação. A Tillaux tem traço **articular**.",
+   "B": "Uma lesão **Salter-Harris II** tem fragmento **metafisário** e não entra na articulação. A Tillaux atravessa a epífise até a articulação.",
+   "D": "A **Salter-Harris IV** atravessa a metáfise, a fise e a epífise. Esse padrão corresponde à fratura **triplanar**, e não à Tillaux."
   },
-  "conceito": "A **fratura de Tillaux** juvenil acontece no **adolescente** durante o fechamento da fise distal da tíbia. A fise fecha de **central** para **medial** e por último **lateral**; a parte **anterolateral** é a última aberta.\n\n**O mecanismo**: **rotação externa** do pé; o **ligamento tibiofibular anteroinferior** arranca o fragmento **anterolateral** da epífise.\n\n**O traço**: desce **vertical pela epífise** até a articulação e segue **horizontal pela fise** ainda aberta, **sem passar pela metáfise**. É uma **Salter-Harris III**.\n\n**Por que não as outras**:\n\n**Salter-Harris I**: só pela fise, não entra na articulação;\n\n**Salter-Harris II**: tem fragmento metafisário, que a Tillaux não tem;\n\n**Salter-Harris IV**: atravessa também a metáfise, o que não acontece no Tillaux clássico (alguns autores descrevem variantes como IV).\n\n**O tratamento**: tomografia para medir o degrau; acima de **2 mm**, redução e fixação com **parafuso epifisário** paralelo à fise. Como a fise está fechando, o risco de distúrbio de crescimento é pequeno.\n\n**Na prova**: a fratura de Tillaux corresponde à Salter-Harris **III**.",
-  "correta": "O traço vertical pela epífise e horizontal pela fise, sem metáfise, define a Tillaux como Salter-Harris III.",
   "referencias": [
-   "Sizinio H.: Ortopedia e Traumatologia: Princípios e Práticas, 4ª Ed., p. 981 (referência indicada na prova TARO 2013, questão 98)"
+   "Sizinio H.: Ortopedia e Traumatologia: Princípios e Práticas, 4ª Ed., p. 981 (referência indicada na prova TARO 2013, questão 98)",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0687": {
+  "conceito": "**A paralisia cerebral não é só motora.** A paralisia cerebral é uma lesão **não progressiva** do cérebro em desenvolvimento. Ela produz um distúrbio do movimento e da postura, frequentemente acompanhado de outros problemas: epilepsia, deficiência intelectual, alterações visuais e auditivas, distúrbios da fala e da deglutição.\n\n**A classificação topográfica.**\n\n| Tipo | Membros acometidos | Lesão típica |\n|---|---|---|\n| **Hemiplegia** | Braço e perna do mesmo lado; braço pior | **Cortical** e subcortical unilateral (infarto da artéria cerebral média) |\n| **Diplegia** | Pernas mais que braços | **Substância branca periventricular** (leucomalácia do prematuro) |\n| **Quadriplegia** (tetraplegia) | Os quatro membros, tronco e cabeça | Lesão cerebral difusa e grave |\n| Monoplegia / triplegia | Um ou três membros | Raras; muitas vezes hemiplegia ou diplegia leve |\n\n**Por que a convulsão depende do local da lesão.** A crise epiléptica nasce do **córtex cerebral**. Quanto mais o dano envolve o córtex, maior o risco de epilepsia.\n- Na **hemiplegia**, a lesão costuma ser **cortical** (um infarto que atinge o córtex). Por isso, as convulsões são **frequentes**, em geral **focais**.\n- Na **quadriplegia**, o dano cortical é extenso, e a epilepsia é a mais frequente de todas, com o pior controle.\n- Na **diplegia** espástica do prematuro, a lesão está na **substância branca profunda**, ao redor dos ventrículos, e o córtex fica relativamente preservado. A epilepsia é **menos comum**.\n\n**A ordem aproximada da frequência de epilepsia.** Quadriplegia, depois hemiplegia, depois diplegia. Como a quadriplegia não está entre as alternativas, a **hemiplegia** é a resposta.\n\n**Implicações práticas.** A epilepsia influencia o prognóstico global, o risco anestésico e a escolha dos anticonvulsivantes. Alguns deles, como a fenitoína e o ácido valproico, contribuem para a **osteopenia** e as fraturas, comuns na PC grave.",
+  "correta": "**Correta: D (quadriplégica).** Na paralisia cerebral, as convulsões são mais frequentes na forma **quadriplégica**, em que a lesão cerebral é difusa e envolve extensamente o córtex. A hemiplegia vem em seguida, e a diplegia tem a menor frequência entre as formas espásticas.",
   "incorretas": {
-   "A": "Na diplegia a lesão é periventricular, poupando o córtex, e as convulsões são menos frequentes.",
-   "B": "A hemiplegia tem convulsões com frequência, mas menos que a quadriplegia.",
-   "C": "A monoplegia é rara na paralisia cerebral."
+   "A": "Na **diplegia**, a lesão está na substância branca periventricular, e o córtex é relativamente preservado. A epilepsia é **menos frequente**.",
+   "B": "A **hemiplegia** tem convulsões frequentes, pela lesão cortical unilateral, mas menos que a quadriplegia.",
+   "C": "A **monoplegia** é rara, geralmente uma forma leve de hemiplegia ou diplegia, e não é a forma mais associada a convulsões."
   },
-  "conceito": "A **epilepsia** acompanha a **paralisia cerebral** em cerca de **30 a 50%** dos pacientes, e a frequência depende da forma, que reflete a extensão da lesão cerebral:\n\n**quadriplegia (tetraplegia)**: a mais associada, com convulsões em **50 a 90%**; a lesão cerebral é **extensa**, bilateral e muitas vezes cortical, com hipóxia grave;\n\n**hemiplegia**: frequente, **30 a 50%**, porque a lesão costuma ser **cortical** (por exemplo, infarto da artéria cerebral média);\n\n**diplegia**: menos frequente, 15 a 25%; a lesão típica é a **leucomalácia periventricular** do prematuro, na substância branca, poupando o córtex;\n\n**formas discinéticas**: menor frequência, pela lesão nos núcleos da base.\n\n**Por que importa para o ortopedista**: as convulsões e os anticonvulsivantes afetam o **osso** (osteopenia, fraturas), a **cirurgia** (interações com anestésicos, controle no pós-operatório) e a **reabilitação**. O controle da epilepsia faz parte do preparo cirúrgico.\n\n**A monoplegia** é rara.\n\n**Na prova**: as convulsões na paralisia cerebral são mais frequentes na forma **quadriplégica**.",
-  "correta": "Na quadriplegia, a lesão cerebral é extensa e cortical, e a epilepsia acomete até 50 a 90% dos pacientes.",
   "referencias": [
-   "Lovell and Winter’s Pediatric Orthopaedics 5th Ed., p. 612 (referência indicada na prova TARO 2013, questão 99)"
+   "Lovell and Winter’s Pediatric Orthopaedics 5th Ed., p. 612 (referência indicada na prova TARO 2013, questão 99)",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0688": {
@@ -8435,17 +8481,18 @@
   "conferido": false
  },
  "pediatria-0691": {
+  "conceito": "**A fratura supracondiliana do úmero.** É a fratura do cotovelo **mais comum** na criança, entre 5 e 7 anos. Quase todas (cerca de 95 a 98%) são do tipo em **extensão**: o fragmento distal se desloca para **posterior**. Ele também se desloca para **medial** ou para **lateral**, e essa direção define quais estruturas estão em risco.\n\n**A lógica: a ponta do fragmento proximal.** Quando o fragmento distal vai para trás, a extremidade cortante do fragmento **proximal** (a diáfise) se projeta para a **frente**, no lado **oposto** ao desvio do fragmento distal. É essa ponta que fere os nervos e os vasos.\n\n| Desvio do fragmento distal | Para onde vai a ponta proximal | Estrutura em risco |\n|---|---|---|\n| **Posteromedial** | Anterior e **lateral** | **Nervo radial** |\n| **Posterolateral** | Anterior e **medial** | **Nervo mediano** (interósseo anterior) e **artéria braquial** |\n| Em flexão (raro) | Posterior | **Nervo ulnar** |\n\n**As lesões nervosas.**\n- No total, o nervo mais lesado na fratura em extensão é o **interósseo anterior** (ramo do mediano), que não tem componente sensitivo. Testa-se pedindo o sinal de \"OK\" (flexão da interfalângica do polegar e da distal do indicador).\n- Nas fraturas com desvio **posteromedial**, o nervo **radial** é o mais lesado, pela ponta proximal que perfura o braquiorradial lateralmente.\n- O nervo **ulnar** é lesado nas fraturas em **flexão** e, de forma **iatrogênica**, pelo **fio medial** na fixação percutânea (o nervo passa atrás do epicôndilo medial).\n\n**A maioria das lesões nervosas é neuropraxia.** Recupera-se espontaneamente em semanas a meses. A conduta inicial é observar.\n\n**A artéria braquial.** Está em risco no desvio **posterolateral**. A **mão sem pulso** exige redução imediata. Se a mão estiver **rosada e quente** depois da redução, mesmo sem pulso, pode-se observar de perto. Se estiver **branca e fria**, explora-se a artéria.\n\n**A classificação de Gartland.** Tipo I sem desvio; II com desvio e cortical posterior íntegra; III com desvio completo; IV instável em flexão e extensão (multidirecional).",
+  "correta": "**Correta: B (radial).** Na fratura supracondiliana em extensão com desvio **posteromedial** do fragmento distal, a ponta do fragmento proximal se projeta para **anterior e lateral** e pode ferir o **nervo radial**. O desvio posterolateral põe em risco o mediano e a artéria braquial.",
   "incorretas": {
-   "A": "O nervo ulnar é lesado na fratura em flexão ou pelo pino medial.",
-   "C": "O nervo mediano é lesado no desvio posterolateral.",
-   "D": "O musculocutâneo raramente é lesado nessa fratura."
+   "A": "O nervo **ulnar** é lesado nas fraturas em **flexão** e, de forma iatrogênica, pelo **fio medial** da fixação percutânea.",
+   "C": "O nervo **mediano** (e o interósseo anterior), junto com a artéria braquial, está em risco no desvio **posterolateral**.",
+   "D": "O nervo **musculocutâneo** raramente é lesado nas fraturas supracondilianas."
   },
-  "conceito": "Na **fratura supracondiliana do úmero** em extensão, o fragmento distal vai para **trás** e para um dos lados. O **fragmento proximal** faz o caminho oposto e pode ferir o que estiver no caminho:\n\n**desvio posteromedial** do fragmento distal: o fragmento **proximal** se projeta para **lateral** e anterior, onde passa o **nervo radial**; é o nervo em risco;\n\n**desvio posterolateral**: o fragmento proximal se projeta para **medial**, onde passam o **nervo mediano**, o **interósseo anterior** e a **artéria braquial**;\n\n**fratura em flexão**: risco para o **nervo ulnar**;\n\n**iatrogênico**: o **pino medial** pode lesar o **ulnar**.\n\n**O nervo mais lesado no geral** é o **interósseo anterior**, porque o desvio posterolateral, embora menos comum, é o que mais lesa nervo.\n\n**A evolução**: a maioria das lesões causadas pela fratura é **neuropraxia**, que se recupera em 2 a 3 meses; observar. Lesões que aparecem **depois** da redução podem indicar nervo preso no foco e precisam de avaliação.\n\n**O musculocutâneo** raramente é lesado nessa fratura.\n\n**Na prova**: a supracondiliana com desvio **posteromedial** se relaciona à lesão do nervo **radial**.",
-  "correta": "No desvio posteromedial, o fragmento proximal vai para lateral e estira o nervo radial.",
   "referencias": [
-   "Herring: Tachdjian’s Pediatric Orthopaedics, 4th Ed., p. 2451 (referência indicada na prova TARO 2014, questão 20)"
+   "Herring: Tachdjian’s Pediatric Orthopaedics, 4th Ed., p. 2451 (referência indicada na prova TARO 2014, questão 20)",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0692": {
