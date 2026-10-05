@@ -495,16 +495,19 @@
   "formato": "corrido"
  },
  "tumores-0039": {
-  "conceito": "**Fatores prognósticos no osteossarcoma.** O mais forte é a **metástase ao diagnóstico**. Entre os marcadores laboratoriais, a **desidrogenase láctica elevada** reflete carga tumoral e metástase oculta e indica pior prognóstico; a **fosfatase alcalina** elevada tem valor semelhante e é útil no seguimento. Também pioram o prognóstico a localização axial ou proximal, o tamanho grande, a margem comprometida e a necrose tumoral **abaixo de 90%** após a quimioterapia, pelo critério de Huvos, que é o melhor preditor depois do tratamento.\n\n**Entre os subtipos**, o parosteal tem o melhor prognóstico, com sobrevida acima de 90%, e o secundário ao Paget, o pior, com 5 a 10% em 5 anos.\n\n**Na prova:** o marcador de mau prognóstico no osteossarcoma é a **desidrogenase láctica**.",
-  "correta": "**Desidrogenase láctica.** Reflete carga tumoral e metástase oculta; a fosfatase alcalina tem valor semelhante.",
+  "conceito": "**O osteossarcoma.** É o **tumor ósseo maligno primário mais comum** (excluindo o mieloma), com pico na **adolescência**, durante o estirão de crescimento. As células malignas **produzem osteoide**. Localiza-se na **metáfise** dos ossos longos, sobretudo ao redor do **joelho** (fêmur distal e tíbia proximal) e no **úmero proximal**. Na radiografia, mostra lesão mista, **triângulo de Codman** e reação periosteal em \"raios de sol\".\n\n**Para onde ele vai.** A disseminação é **hematogênica**.\n- **Pulmão**: o local **mais comum** de metástase (cerca de 80% delas). Cerca de **15 a 20%** dos pacientes já têm metástase pulmonar detectável ao diagnóstico, e a maioria dos outros tem micrometástases (por isso a quimioterapia é obrigatória).\n- **Osso**: o **segundo** local.\n- Outros (rins, cérebro, linfonodos): raros.\n\n**A metástase óssea é a de pior prognóstico.**\n\n| Situação | Prognóstico |\n|---|---|\n| Doença localizada | Sobrevida de cerca de **65 a 70%** |\n| Metástase **pulmonar** ressecável (poucos nódulos) | Sobrevida de cerca de 20 a 40%, com ressecção cirúrgica das metástases |\n| Metástase **óssea** | **Muito ruim**: sobrevida de poucos por cento a cerca de 10% |\n\n**Por que a metástase pulmonar não é a pior.** Os nódulos pulmonares, quando em pequeno número, podem ser **ressecados** (metastasectomia), e parte desses pacientes é curada. Já a metástase **óssea** indica doença disseminada pelo esqueleto, e não pode ser controlada da mesma forma.\n\n**As \"skip metastases\".** São focos tumorais no **mesmo osso** (ou do outro lado da articulação), separados do tumor principal. Por isso, a ressonância deve incluir o **osso inteiro**. Elas também indicam pior prognóstico.\n\n**Outros fatores de prognóstico.** A **resposta à quimioterapia** (necrose de **90% ou mais** na peça é boa resposta), a localização (axial é pior), o tamanho e a fosfatase alcalina e a LDH elevadas.\n\n**O tratamento.** Quimioterapia neoadjuvante (metotrexato em altas doses, doxorrubicina e cisplatina), **cirurgia com margem ampla** (preservação do membro na maioria) e quimioterapia adjuvante.\n\n**Os marcadores laboratoriais de mau prognóstico.** No osteossarcoma, dois exames simples refletem a carga e a atividade do tumor:\n- **Desidrogenase láctica (LDH)**: enzima liberada pela destruição celular e pelo metabolismo do tumor. A LDH **elevada** ao diagnóstico se associa a doença mais extensa, metástases e **pior sobrevida**.\n- **Fosfatase alcalina**: reflete a atividade osteoblástica do tumor. Muito elevada, também indica pior prognóstico. Seu retorno ao normal após o tratamento e uma nova elevação podem indicar recidiva.\n\nA VHS, a proteína C reativa e a interleucina 6 podem se alterar, mas não são os marcadores prognósticos consagrados.",
+  "correta": "**Correta: C (desidrogenase láctica).** No osteossarcoma, a elevação da **LDH** (e da fosfatase alcalina) ao diagnóstico é sinal de mau prognóstico, refletindo maior carga tumoral e associação com metástases.",
   "incorretas": {
-   "A": "**Sem papel estabelecido.** A interleucina 6 é marcador inflamatório, sem valor prognóstico definido no osteossarcoma.",
-   "B": "**Inespecífica.** A proteína C reativa sobe em infecção e trauma.",
-   "D": "**Inespecífica.** A VHS não tem valor prognóstico no osteossarcoma."
+   "A": "A **interleucina 6** pode estar alterada em inflamações e tumores, mas não é um marcador prognóstico consagrado do osteossarcoma.",
+   "B": "A **proteína C reativa** é um marcador inflamatório inespecífico e não é o marcador prognóstico estabelecido no osteossarcoma.",
+   "D": "A **VHS** pode se elevar, mas é inespecífica. Os marcadores prognósticos clássicos são a LDH e a fosfatase alcalina."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
+   "Campanacci M. Bone and Soft Tissue Tumors. 2ª edição. Springer; 1999."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "tumores-0040": {
   "conceito": "**Transformação sarcomatosa no Paget.** Considerando todos os pacientes com doença de Paget, a transformação ocorre em **menos de 1%**. O risco acompanha a extensão e o tempo de doença, e na forma **poliostótica** extensa e de longa evolução chega a **5 a 10%**. O tumor mais comum é o osteossarcoma, em 70 a 80% dos casos, seguido do fibrossarcoma e do condrossarcoma, com sobrevida de 5 a 10% em 5 anos. Mudança no padrão da dor ou nova elevação da fosfatase alcalina obrigam a investigar.\n\n**A doença de Paget** é uma remodelação desorganizada, com osso em mosaico, expandido e frágil, em caucasianos acima de 55 anos, com fosfatase alcalina muito elevada e cálcio e fósforo normais; o tratamento é o bisfosfonato.\n\n**Na prova:** no Paget poliostótico, a degeneração sarcomatosa é de **5 a 10%**.",
@@ -3041,16 +3044,19 @@
   "formato": "corrido"
  },
  "tumores-0305": {
-  "conceito": "**O sarcoma de partes moles da criança** é o **rabdomiossarcoma**, o mais comum na infância. Tem pico nos primeiros anos de vida e outro na adolescência, e acomete cabeça e pescoço, trato geniturinário e extremidades. Há duas formas principais: a **embrionária**, das crianças menores, de melhor prognóstico, e a **alveolar**, mais comum nas extremidades e em adolescentes, com fusões PAX3 ou PAX7-FOXO1 e prognóstico pior. O tratamento combina quimioterapia, cirurgia e radioterapia.\n\n**Os outros sarcomas por idade.** O sarcoma sinovial é de adolescentes e adultos jovens, perto das grandes articulações, sobretudo o joelho; o lipossarcoma é do adulto, na coxa e no retroperitônio; o fibrossarcoma tem uma forma congênita de bom prognóstico, mas é raro.\n\n**Na prova:** sarcoma de partes moles mais comum na criança é o **rabdomiossarcoma**.",
-  "correta": "**Rabdomiossarcoma.** É o sarcoma de partes moles mais comum na infância.",
+  "conceito": "**Os tumores de partes moles na criança.** Os tumores **benignos** (como o **hemangioma**) são muito mais frequentes que os malignos. Entre os **sarcomas de partes moles**, o **rabdomiossarcoma** é o **mais comum** na criança e no adolescente, responsável por cerca de **metade** dos sarcomas de partes moles pediátricos.\n\n**O rabdomiossarcoma.** É um sarcoma de células com diferenciação **muscular esquelética** (marcadores **desmina**, **miogenina** e MyoD1). Pode surgir em qualquer lugar, inclusive onde não há músculo esquelético.\n\n| Subtipo | Características |\n|---|---|\n| **Embrionário** | O **mais comum** (cerca de 60 a 70%); crianças **pequenas**; cabeça e pescoço, trato geniturinário; melhor prognóstico |\n| **Alveolar** | Adolescentes; **extremidades** e tronco; translocações **PAX3-FOXO1** ou **PAX7-FOXO1**; pior prognóstico |\n| Pleomórfico | Adultos; raro na criança |\n| Fusiforme e esclerosante | Raros |\n\n**As localizações.** Cabeça e pescoço (órbita, parameníngeo), trato **geniturinário** (bexiga, próstata, vagina, paratesticular) e **extremidades**. Nas extremidades, predomina o subtipo **alveolar**, de pior prognóstico. Os linfonodos regionais podem estar acometidos e devem ser avaliados.\n\n**O tratamento.** Multimodal: **quimioterapia** (vincristina, actinomicina D, ciclofosfamida), **cirurgia** e/ou **radioterapia** para o controle local. A sobrevida na doença localizada é de cerca de 70%.\n\n**Os outros sarcomas das alternativas.**\n- **Sinoviossarcoma**: o sarcoma de partes moles **não rabdomiossarcoma** mais comum em adolescentes e adultos jovens; perto das articulações (joelho), com calcificações; translocação t(X;18).\n- **Fibrossarcoma infantil**: típico do **lactente** (menos de 1 ano); translocação ETV6-NTRK3; prognóstico melhor que o do adulto.\n- **Lipossarcoma**: sarcoma do **adulto**; muito raro na criança.\n\n**No adulto, para comparar.** Os sarcomas de partes moles mais comuns são o **sarcoma pleomórfico indiferenciado** (antigo histiocitoma fibroso maligno) e o **lipossarcoma**.",
+  "correta": "**Correta: B (rabdomiossarcoma).** O **rabdomiossarcoma** é o sarcoma de partes moles mais comum na criança, responsável por cerca de metade desses tumores. O subtipo embrionário predomina nas crianças pequenas, e o alveolar nos adolescentes e nas extremidades.",
   "incorretas": {
-   "A": "**Do adulto.** O lipossarcoma aparece na coxa e no retroperitônio de adultos.",
-   "C": "**Menos frequente.** Há forma congênita de bom prognóstico, mas é rara.",
-   "D": "**Mais velhos.** O sarcoma sinovial é de adolescentes e adultos jovens."
+   "A": "O **lipossarcoma** é um sarcoma do **adulto** e é muito raro na criança.",
+   "C": "O **fibrossarcoma infantil** ocorre sobretudo no **lactente** e é bem menos frequente que o rabdomiossarcoma.",
+   "D": "O **sinoviossarcoma** é o sarcoma não rabdomiossarcoma mais comum em adolescentes e adultos jovens, mas é menos frequente que o rabdomiossarcoma na infância."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
+   "Enneking WF. Musculoskeletal Tumor Surgery. Churchill Livingstone; 1983."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "tumores-0306": {
   "conceito": "**A assinatura histológica do Paget** é o padrão em **mosaico**: linhas de cimento irregulares e desordenadas, deixadas por ciclos descoordenados de reabsorção e formação, desenham ladrilhos no osso. Acompanham osteoclastos gigantes e hipermultinucleados, com muito mais núcleos que o normal, e medula substituída por tecido fibrovascular muito vascularizado, que explica o calor local, o aumento do débito cardíaco nas formas extensas e o sangramento na cirurgia.\n\n**Os outros padrões da questão**, cada um com seu dono: **paliçada**, com corpos de Verocay, é do schwannoma; **roda de carroça**, a cromatina em raios, é do núcleo do plasmócito, no mieloma; **tela de galinheiro**, a calcificação fina ao redor de cada célula, é do condroblastoma.\n\n**Na prova:** Paget é **mosaico**; paliçada é schwannoma; roda de carroça é plasmócito; tela de galinheiro é condroblastoma.",

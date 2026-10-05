@@ -1639,14 +1639,18 @@
   "conferido": false
  },
  "pe-tornozelo-0160": {
-  "conceito": "### Inervação do fibular longo\n- **Nervo:** ==fibular superficial==, ramo do **fibular comum**.\n- **Trajeto:** desce no compartimento **lateral**, entre os fibulares, e perfura a fáscia no terço **distal** da perna.\n- **Distribuição:**\n  - **motor:** fibular longo e curto;\n  - **sensitivo:** **dorso do pé**, exceto o **1º espaço**, que é do fibular profundo.\n\n### Nervos da perna\n| Nervo | Compartimento | Músculos | Sensibilidade |\n|---|---|---|---|\n| ==Fibular superficial== | **lateral** | fibulares longo e curto | dorso do pé |\n| Fibular profundo | **anterior** | tibial anterior, ELH, ELD, fibular terceiro, EDC (pediosos) | **1º espaço** dorsal |\n| Tibial | **posteriores** | tríceps, tibial posterior, FLD, FLH | **planta** (plantares), calcanhar |\n| Fibular comum | nenhum (é o **tronco**) | só a cabeça curta do bíceps (acima do joelho) | nenhuma |\n\n> **Na prova:** fibular longo = ==nervo fibular superficial==.",
-  "correta": "**Nervo fibular superficial.**",
+  "conceito": "**A imagem.** Mostra a **face lateral do joelho e da perna proximal**. Vê-se o **nervo fibular comum** contornando o **colo da fíbula**. A seta aponta o músculo que nasce da **cabeça e da porção proximal da face lateral da fíbula**, no compartimento lateral da perna: o **fibular longo**.\n\n**Os compartimentos da perna e seus nervos.**\n\n| Compartimento | Músculos | Nervo |\n|---|---|---|\n| **Anterior** | Tibial anterior, extensor longo do hálux, extensor longo dos dedos, **fibular terceiro** | **Fibular profundo** |\n| **Lateral** | **Fibular longo** e **fibular curto** | **Fibular superficial** |\n| Posterior superficial | Gastrocnêmio, sóleo, plantar | Tibial |\n| Posterior profundo | Tibial posterior, flexor longo dos dedos, flexor longo do hálux, poplíteo | Tibial |\n\n**O nervo fibular comum.** Ramo do **ciático**, desce pela fossa poplítea junto ao bíceps femoral e **contorna o colo da fíbula**, onde é **superficial** e vulnerável (gessos, joelheiras, fraturas, luxações do joelho, pernas cruzadas). Logo abaixo, **passa por baixo da origem do fibular longo** e se divide em:\n- **Fibular superficial**: desce no **compartimento lateral**, inerva o **fibular longo** e o **fibular curto** e dá a sensibilidade do **dorso do pé**.\n- **Fibular profundo**: passa para o **compartimento anterior**, inerva os **dorsiflexores** e o extensor curto dos dedos e dá a sensibilidade do **primeiro espaço interdigital**.\n\n**O fibular longo.** Nasce na cabeça e nos dois terços proximais da face lateral da fíbula. O tendão passa **atrás do maléolo lateral**, cruza a planta do pé por baixo do cuboide e se insere na **base do primeiro metatarso** e no cuneiforme medial. Ele faz a **eversão** do pé e a **flexão plantar do primeiro raio**, sustentando o arco.\n\n**A lesão do nervo e a clínica.**\n- Lesão do **fibular comum**: **pé caído** (sem dorsiflexão), sem eversão e alteração de sensibilidade no dorso do pé. Marcha **escarvante**.\n- Lesão do **fibular profundo**: pé caído, com a eversão preservada.\n- Lesão do **fibular superficial**: perda da **eversão** e da sensibilidade do dorso do pé, com a dorsiflexão preservada.",
+  "correta": "**Correta: A (nervo fibular superficial).** O músculo apontado é o **fibular longo**, do compartimento lateral da perna. Os músculos desse compartimento (fibular longo e curto) são inervados pelo **nervo fibular superficial**.",
   "incorretas": {
-   "B": "**Fibular comum.**\n- É o **tronco**; o ramo que inerva o fibular longo é o **superficial**.",
-   "C": "**Fibular profundo.**\n- Compartimento **anterior**.",
-   "D": "**Tibial.**\n- Compartimento **posterior**."
+   "B": "O **fibular comum** é o tronco que contorna o colo da fíbula e se divide. A inervação direta do fibular longo vem do seu ramo **superficial**.",
+   "C": "O **fibular profundo** inerva o compartimento **anterior** (tibial anterior, extensores e fibular terceiro), e não o fibular longo.",
+   "D": "O **nervo tibial** inerva os compartimentos **posteriores** (flexores plantares e flexores dos dedos)."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
+   "Netter FH. Atlas de Anatomia Humana. 7ª edição. Elsevier; 2019."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pe-tornozelo-0161": {
