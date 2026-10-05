@@ -1654,14 +1654,18 @@
   "conferido": false
  },
  "mao-0148": {
-  "conceito": "### Narakas e prognóstico\n| Grupo | Raízes | Recuperação espontânea |\n|---|---|---|\n| ==I== | ==C5-C6== | ==completa em cerca de 90%==, muitas vezes ==nas primeiras 1 a 8 semanas== |\n| II | C5-C7 | cerca de 65%; mais lenta, frequentemente incompleta |\n| III | C5-T1 sem Horner | pouca; sequelas |\n| IV | C5-T1 com Horner | a pior; lesão pré-ganglionar |\n\n### Marcos de acompanhamento\n- **Bíceps** contra a gravidade aos 3 meses (Gilbert e Tassin): se ausente, considerar cirurgia.\n- **Teste do biscoito** (Toronto): levar o biscoito à boca aos 9 meses.\n- **Escala de Toronto** e escala de movimento ativo (AMS).\n\n### Fatores de pior prognóstico\n- Horner, lesão total, ausência de recuperação do bíceps até 3 meses, avulsões (pré-ganglionares).\n\n> **Na prova:** recuperação total em 1 a 8 semanas = ==Narakas I==.",
-  "correta": "**Grupo I.**\n- A lesão C5-C6 tem o melhor prognóstico.\n- A recuperação costuma se completar nas primeiras semanas.",
+  "conceito": "**A paralisia obstétrica do plexo braquial.** É a lesão do plexo braquial no **parto**, geralmente por **tração** lateral da cabeça quando o ombro fica preso (**distocia de ombro**). Fatores de risco: **macrossomia**, diabetes materno, parto instrumental e apresentação pélvica. A forma mais comum é a **alta** (Erb), de C5-C6.\n\n**A classificação de Narakas.** Combina as **raízes** acometidas com o **prognóstico** de recuperação espontânea.\n\n| Grupo | Raízes | Recuperação espontânea |\n|---|---|---|\n| **I** | **C5-C6** (Erb clássico) | **Completa** em cerca de **90%**, muitas vezes nas **primeiras 1 a 8 semanas** |\n| II | C5-C7 (Erb ampliado) | Cerca de **65%**; mais lenta e frequentemente incompleta |\n| III | C5-T1, **sem** síndrome de Horner | Pouca; sequelas frequentes |\n| IV | C5-T1, **com** síndrome de Horner | A **pior**: lesão **pré-ganglionar** (avulsão) |\n\n**O quadro clínico.**\n- **Grupo I** (C5-C6): braço em **adução e rotação interna**, cotovelo **estendido** e antebraço **pronado**, punho fletido: a postura de **\"garçom pedindo gorjeta\"**. A mão funciona.\n- **Grupo II**: inclui o C7, com fraqueza da extensão do cotovelo, do punho e dos dedos.\n- **Grupos III e IV**: braço **flácido**, mão também paralisada. A **síndrome de Horner** (ptose, miose, enoftalmia) indica avulsão de **T1**, perto da cadeia simpática, e prognóstico ruim.\n\n**O marco do bíceps.** O retorno da **flexão do cotovelo** contra a gravidade (bíceps) é o principal indicador prognóstico:\n- Recuperação do bíceps até cerca de **3 meses**: bom prognóstico.\n- **Sem bíceps aos 3 a 6 meses** (conforme o protocolo, como o de Gilbert ou o teste do \"biscoito\" de Toronto): indicação de **exploração cirúrgica** do plexo, com enxertos de nervo e transferências nervosas.\n\n**As sequelas no ombro.** O desequilíbrio entre rotadores internos fortes e externos fracos leva a **contratura em rotação interna** e à **displasia glenoumeral** (subluxação posterior da cabeça do úmero). O tratamento inclui fisioterapia, toxina botulínica, liberações e **transferências tendíneas** (por exemplo, latíssimo do dorso e redondo maior para o manguito, como na técnica de L'Episcopo ou Hoffer).",
+  "correta": "**Correta: A (I).** No grupo **I** de Narakas (C5-C6, paralisia de Erb clássica), a recuperação espontânea é **completa** em cerca de 90% dos casos, muitas vezes entre a **primeira e a oitava semanas** de vida.",
   "incorretas": {
-   "B": "**Mais lenta.**\n- Com C7 a recuperação é demorada e muitas vezes incompleta.",
-   "C": "**Lesão completa.**\n- Mão flácida, prognóstico reservado.",
-   "D": "**O pior.**\n- Horner indica avulsão de T1; não recupera sozinho."
+   "B": "No grupo **II** (C5-C7), a recuperação é mais **lenta** e frequentemente **incompleta**, em cerca de 65% dos casos.",
+   "C": "No grupo **III** (C5-T1 sem Horner), há pouca recuperação espontânea, com sequelas frequentes.",
+   "D": "O grupo **IV** (C5-T1 com Horner) tem o **pior** prognóstico, por avulsão pré-ganglionar das raízes."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)",
+   "Narakas AO. Obstetrical brachial plexus injuries. In: Lamb DW, ed. The Paralysed Hand. Churchill Livingstone; 1987:116-135."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0149": {
@@ -3330,14 +3334,18 @@
   "conferido": false
  },
  "mao-0319": {
-  "conceito": "### Irrigação do dorso da mão\n- ==Rede carpal dorsal== (radial, ulnar, interósseas).\n- Dela saem as ==artérias metacarpais dorsais==, sobre os interósseos, entre os metacarpos.\n- Comunicam-se com o arco profundo pelas perfurantes.\n\n### Retalhos baseados nelas\n| Retalho | Pedículo | Uso |\n|---|---|---|\n| ==Kite (Foucher)== | ==1ª metacarpal dorsal== | pele sensível do dorso do indicador para o polegar |\n| Quaba | perfurante distal da metacarpal dorsal | dorso dos dedos |\n| Maruyama | 2ª a 4ª metacarpais dorsais | dorso da mão |\n\n### Outras artérias\n| Artéria | Posição |\n|---|---|\n| digitais próprias | laterais dos dedos, volares |\n| interóssea posterior | antebraço, termina antes do punho |\n| radial do indicador | volar, borda radial do indicador |\n\n> **Na prova:** artéria entre os metacarpos no dorso = ==metacarpal dorsal== (pedículo do Kite).",
-  "correta": "**Metacarpal dorsal.**\n- Corre no dorso entre os metacarpos, sobre os interósseos.\n- A 1ª é o pedículo do retalho de Kite para o polegar.",
+  "conceito": "**A imagem.** É uma dissecção do **dorso da mão**. As setas apontam um vaso que corre no **primeiro espaço intermetacarpal**, sobre o **primeiro interósseo dorsal**, entre o primeiro e o segundo metacarpos, em direção ao indicador. É a **primeira artéria metacarpal dorsal**.\n\n**A irrigação do dorso da mão.**\n- A **artéria radial** cruza a tabaqueira anatômica e passa para o dorso. No dorso, ela contribui para a **rede carpal dorsal**, junto com ramos da artéria ulnar e das interósseas anterior e posterior.\n- Da rede carpal dorsal e da própria radial saem as **artérias metacarpais dorsais**, que correm **sobre os músculos interósseos dorsais**, entre os metacarpos.\n- A **primeira** artéria metacarpal dorsal nasce diretamente da **radial**, antes que ela mergulhe entre as duas cabeças do primeiro interósseo dorsal para formar o **arco palmar profundo**.\n- As metacarpais dorsais se comunicam com o arco profundo pelas **perfurantes** e terminam como **artérias digitais dorsais**.\n\n**A anatomia da primeira artéria metacarpal dorsal.** Tem geralmente três ramos: um para o lado **ulnar do polegar**, um para o lado **radial do indicador** e um ramo intermediário. O ramo para o indicador irriga a pele do **dorso da falange proximal do indicador**.\n\n**A importância cirúrgica: o retalho de Foucher (kite flap).**\n\n| Retalho | Pedículo | Uso |\n|---|---|---|\n| **Kite (Foucher)** | **1ª artéria metacarpal dorsal** | Pele do dorso da falange proximal do **indicador**, com o ramo sensitivo do radial, para cobrir o **polegar** |\n| Retalho da 2ª metacarpal dorsal | **2ª artéria metacarpal dorsal** | Defeitos do dorso da mão e dos dedos |\n| Retalhos de fluxo reverso das metacarpais dorsais | Perfurantes distais | Defeitos dos dedos |\n\nO retalho de Foucher é um **retalho em ilha**, levado com o pedículo como a linha de uma pipa. Ele traz pele **sensível** para a polpa ou o dorso do polegar.\n\n**As alternativas.**\n- A **artéria principal do polegar** (princeps pollicis) e a **artéria radial do indicador** são ramos **palmares** do arco profundo.\n- As **artérias digitais próprias** correm nas faces laterais dos dedos, na palma.\n- A **artéria interóssea posterior** corre no **antebraço**, no compartimento extensor, e não na mão.",
+  "correta": "**Correta: C (metacarpeana dorsal).** As setas apontam o vaso que corre no primeiro espaço intermetacarpal, sobre o primeiro interósseo dorsal: a **primeira artéria metacarpal dorsal**. Ela é o pedículo do retalho de Foucher (kite flap).",
   "incorretas": {
-   "A": "**Laterais dos dedos.**\n- Volares ao eixo, não no dorso.",
-   "B": "**Antebraço.**\n- Termina antes do punho.",
-   "D": "**Volar.**\n- Sai do arco palmar."
+   "A": "As **artérias digitais** do indicador correm nas faces laterais do dedo, a partir da palma. A imagem mostra um vaso no dorso, entre os metacarpos.",
+   "B": "A **artéria interóssea posterior** corre no **antebraço**, no compartimento extensor, e não no dorso da mão entre os metacarpos.",
+   "D": "A **artéria principal** do indicador (radial do indicador) é um ramo **palmar** do arco profundo, e não um vaso do dorso."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)",
+   "Foucher G, Braun JB. A new island flap transfer from the dorsum of the index to the thumb. Plast Reconstr Surg. 1979;63(3):344-349."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0320": {
@@ -7779,17 +7787,18 @@
   "conferido": false
  },
  "mao-0704": {
-  "conceito": "**A classificação de Regnault é a mais usada para ptose mamária.** Ela usa a posição do complexo areolopapilar em relação ao sulco inframamário: grau I até 1 cm abaixo, grau II de 1 a 3 cm, grau III mais de 3 cm (no contorno inferior), além da pseudoptose e da ptose glandular parcial.\n\n**As outras classificações das alternativas:**\n- **Baker:** contratura capsular após implante mamário (I, mama macia e natural; II, pouco firme, sem deformidade visível; III, firme e visivelmente deformada; IV, dura, dolorosa e fria);\n- **Pitanguy:** nome associado à técnica de mamoplastia redutora e a outras sistematizações em cirurgia plástica, mas não é a classificação padrão da ptose;\n- **Collins:** não é classificação de ptose mamária.",
-  "correta": "**Regnault.** É a classificação de referência da ptose mamária, baseada na relação entre o complexo areolopapilar e o sulco inframamário.",
+  "conceito": "**A ptose mamária.** É a **queda da mama**, com o complexo areolopapilar (CAP) descendo em relação ao **sulco inframamário**. Acontece com o envelhecimento, a gestação, a amamentação, as grandes variações de peso e a perda da elasticidade da pele e dos ligamentos de Cooper.\n\n**A classificação de Regnault.** É a mais usada. Baseia-se na posição do **mamilo** em relação ao **sulco inframamário**.\n\n| Grau | Posição do mamilo |\n|---|---|\n| **I** (leve) | **No nível** do sulco ou até cerca de **1 cm abaixo** |\n| **II** (moderada) | De **1 a 3 cm abaixo** do sulco, ainda acima do contorno inferior da mama |\n| **III** (grave) | **Mais de 3 cm** abaixo do sulco, no contorno **inferior** da mama, apontando para baixo |\n| **Pseudoptose** | Mamilo **acima** do sulco, mas a **glândula** caiu abaixo dele |\n| Ptose glandular parcial | Mamilo bem posicionado, com parte da glândula descida |\n\n**Por que a classificação importa.** Ela orienta a cirurgia:\n- **Pseudoptose** e ptose **leve**: prótese mamária (aumento) ou pequenas ressecções.\n- Ptose **moderada a grave**: **mastopexia**, que reposiciona o CAP e remodela a glândula, com ou sem prótese.\n\n**As outras classificações das alternativas.**\n- **Baker**: classifica a **contratura capsular** após o implante mamário (grau I: mama macia e natural; II: um pouco firme; III: firme e visivelmente alterada; IV: dura, dolorosa e deformada).\n- **Pitanguy**: Ivo Pitanguy descreveu técnicas clássicas de **mamoplastia redutora** e de mastopexia, e não a classificação de ptose mais usada.\n- **Collins**: não corresponde a uma classificação consagrada de ptose mamária.",
+  "correta": "**Correta: A (Regnault).** A classificação de **Regnault** é a mais usada para a ptose mamária. Ela gradua a queda pela posição do mamilo em relação ao sulco inframamário: grau I, II, III e pseudoptose.",
   "incorretas": {
-   "B": "Pitanguy é referência em técnicas de mamoplastia, mas a classificação de ptose usada universalmente é a de Regnault.",
-   "C": "Collins não corresponde a uma classificação de ptose mamária.",
-   "D": "Baker classifica a contratura capsular após implantes mamários, não a ptose."
+   "B": "**Pitanguy** é conhecido pelas técnicas de **mamoplastia redutora** e mastopexia, e não pela classificação de ptose mais usada.",
+   "C": "**Collins** não corresponde a uma classificação consagrada de ptose mamária.",
+   "D": "A classificação de **Baker** gradua a **contratura capsular** após o implante mamário, e não a ptose."
   },
   "referencias": [
-   "Regnault P. Breast ptosis. Definition and treatment. Clin Plast Surg. 1976;3(2):193-203."
+   "Regnault P. Breast ptosis. Definition and treatment. Clin Plast Surg. 1976;3(2):193-203.",
+   "Neligan PC. Plastic Surgery. 5ª edição. Elsevier; 2023."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0705": {
