@@ -1970,14 +1970,18 @@
   "conferido": false
  },
  "trauma-0176": {
-  "conceito": "### Conector transverso (crosslink)\n- Une as duas hastes de uma instrumentação pedicular.\n- Aumenta principalmente a ==rigidez rotacional (torsional)==; pouco efeito em flexoextensão e inclinação lateral.\n- Mais útil em construções ==longas==, instabilidade rotacional (fratura-luxação), após laminectomia ampla.\n\n### Instrumentação posterior\n| Elemento | Função |\n|---|---|\n| parafusos pediculares | fixação nas três colunas |\n| hastes | alinhamento sagital, distração/compressão |\n| ==crosslink== | ==estabilidade rotacional== |\n| parafuso no nível fraturado | aumenta rigidez em construções curtas |\n\n> **Na prova:** crosslink = estabilidade ==rotacional==",
-  "correta": "**Rotacional.**\n- Impede torção das hastes.\n- Útil em construções longas.",
+  "conceito": "**Conector transverso (crosslink) na instrumentação pedicular.** Na instrumentação posterior da coluna, parafusos pediculares ligados a duas hastes longitudinais formam uma estrutura que resiste bem à flexão, à extensão e à inclinação lateral. Mas duas hastes paralelas, ligadas só pelos parafusos, comportam-se como um **paralelogramo**: sob **torção**, uma haste pode deslizar em relação à outra, e a montagem gira.\n\n**Lendo as imagens.** A seta aponta uma barra **horizontal** que une as duas hastes, visível no AP e no perfil, no meio da montagem: é o **conector transverso**.\n\n**O que ele faz.** Ao ligar as duas hastes, transforma o paralelogramo em um **quadro rígido** (como uma escada com degraus), aumentando principalmente a **rigidez torcional (rotacional)**. O efeito sobre a flexoextensão (plano sagital) e a inclinação lateral (plano coronal) é pequeno, e sobre a carga axial é desprezível. Estudos biomecânicos (Dick e colaboradores; Kuklo e colaboradores) confirmaram esse ganho seletivo em torção.\n\n| Componente | Função principal |\n|---|---|\n| Parafusos pediculares | Ancoragem nas três colunas, controle segmentar |\n| Hastes | Resistência à flexão, extensão e inclinação lateral; correção |\n| **Conector transverso** | **Rigidez rotacional (torcional)** |\n| Enxerto e artrodese | Estabilidade definitiva |\n\n**Quando usar.** Montagens **longas**, lesões com **instabilidade rotacional** (fraturas-luxações, lesões por translação e rotação), após laminectomias amplas ou osteotomias, e em montagens com parafusos de menor ancoragem. Em montagens curtas com boa ancoragem, o benefício é pequeno, e o conector pode ocupar espaço do enxerto.\n\n> Conector transverso: aumenta principalmente a estabilidade rotacional da instrumentação.",
+  "correta": "**D: rotacional.** O conector transverso une as duas hastes e impede que elas se movam uma em relação à outra sob torção, aumentando sobretudo a rigidez rotacional da montagem.",
   "incorretas": {
-   "A": "**Axial.**\n- Carga axial fica com hastes e parafusos.",
-   "B": "**Sagital.**\n- Pouco efeito.",
-   "C": "**Coronal.**\n- Pouco efeito."
+   "A": "**Axial**: a resistência à carga axial depende do apoio anterior (corpo vertebral, enxerto ou cage) e dos parafusos; o conector quase não contribui.",
+   "B": "**Sagital**: a resistência à flexão e à extensão vem das hastes e dos parafusos; o efeito do conector nesse plano é pequeno.",
+   "C": "**Coronal**: a inclinação lateral também é controlada principalmente pelas hastes; o conector acrescenta pouco."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Dick JC, Zdeblick TA, Bartel BD, Kunz DN. Mechanical evaluation of cross-link designs in rigid pedicle screw systems. Spine (Phila Pa 1976). 1997;22(4):370-375.",
+   "Kuklo TR, Dmitriev AE, Cardoso MJ, Lehman RA Jr, Erickson M, Gill NW. Biomechanical contribution of transverse connectors to segmental stability following long segment instrumentation with thoracic pedicle screws. Spine (Phila Pa 1976). 2008;33(15):E482-E487."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0177": {

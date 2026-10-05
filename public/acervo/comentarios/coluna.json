@@ -3617,17 +3617,20 @@
   "conferido": false
  },
  "coluna-0315": {
+  "conceito": "**Checklist de White e Panjabi para a coluna cervical subaxial.** White, Panjabi e colaboradores estudaram em cadáveres como a secção sequencial de estruturas levava à instabilidade e propuseram um **sistema de pontos**. Soma de **5 ou mais** indica instabilidade clínica.\n\n| Critério | Pontos |\n|---|---|\n| **Elementos anteriores** destruídos ou incapazes de funcionar | **2** |\n| Elementos posteriores destruídos ou incapazes de funcionar | **2** |\n| Teste de estiramento positivo | **2** |\n| **Translação sagital maior que 3,5 mm** ou **angulação sagital maior que 11 graus** | **2** |\n| Lesão medular | **2** |\n| Lesão radicular | **1** |\n| Estreitamento anormal do disco | **1** |\n| Carga perigosa prevista | **1** |\n\n**A lógica dos pesos.** Valem mais (2 pontos) os achados que indicam perda estrutural importante ou dano neurológico grave: falência das colunas anterior ou posterior, deslocamento além dos limites fisiológicos e lesão da medula. Valem menos (1 ponto) os achados que sugerem lesão, mas não a confirmam como instável por si (raiz, disco estreitado, demanda mecânica futura).\n\n**Teste de estiramento.** Tração cervical progressiva com radiografias seriadas, sob supervisão médica: separação discal maior que 1,7 mm ou mudança angular maior que 7,5 graus é positiva. Hoje é pouco usado, substituído pela ressonância.\n\n**Atualmente.** O **SLIC** (Vaccaro e colaboradores) avalia morfologia, complexo discoligamentar e estado neurológico para indicar cirurgia, mas os critérios de White e Panjabi continuam referência conceitual.\n\n> White e Panjabi: 2 pontos para elementos anteriores, posteriores, estiramento, translação acima de 3,5 mm ou angulação acima de 11 graus, e lesão medular.",
+  "correta": "**D: lesão dos elementos anteriores e a angulação sagital maior que 11 graus (resposta pela bibliografia).** Ambos valem 2 pontos no checklist de White e Panjabi; nas outras alternativas, há sempre um item que vale apenas 1 ponto.",
+  "incorretas": {
+   "A": "**Translação de 3,5 mm e lesão radicular**: a translação (maior que 3,5 mm) vale 2 pontos, mas a lesão radicular vale apenas 1.",
+   "B": "**Elementos posteriores e lesão radicular**: os elementos posteriores valem 2, mas a lesão radicular vale 1.",
+   "C": "**Elementos anteriores e estreitamento discal**: os elementos anteriores valem 2, mas o estreitamento anormal do disco vale 1."
+  },
+  "referencias": [
+   "White AA 3rd, Johnson RM, Panjabi MM, Southwick WO. Biomechanical analysis of clinical stability in the cervical spine. Clin Orthop Relat Res. 1975;(109):85-96.",
+   "Vaccaro AR, Hulbert RJ, Patel AA, et al. The subaxial cervical spine injury classification system: a novel approach to recognize the importance of morphology, neurology, and integrity of the disco-ligamentous complex. Spine (Phila Pa 1976). 2007;32(21):2365-2374."
+  ],
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "D",
-  "conceito": "**Checklist de White e Panjabi.** Para a coluna cervical subaxial, valem **2 pontos**: elementos anteriores destruídos, elementos posteriores destruídos, teste de estiramento positivo, translação sagital maior que 3,5 mm, angulação sagital maior que 11 graus e lesão medular. Valem **1 ponto**: lesão radicular, estreitamento anormal do disco e carga perigosa prevista. Soma de 5 ou mais indica instabilidade.\n\n**Na prova:** radicular e disco valem 1; o resto dos itens estruturais vale 2.",
-  "correta": "**Elementos anteriores e angulação maior que 11 graus.** Os dois itens valem 2 pontos cada.",
-  "incorretas": {
-   "A": "**Translação de 3,5 mm e lesão radicular.** A translação vale 2, mas a lesão radicular vale só 1.",
-   "B": "**Elementos posteriores e lesão radicular.** A lesão radicular vale 1 ponto.",
-   "C": "**Elementos anteriores e estreitamento do disco.** O estreitamento anormal do disco vale 1 ponto."
-  },
-  "referencias": [],
-  "geradoEm": "2026-09-30T23:58:02+00:00",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "coluna-0316": {

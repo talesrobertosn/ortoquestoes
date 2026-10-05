@@ -896,17 +896,18 @@
   "conferido": false
  },
  "conceitos-basicos-0078": {
-  "conceito": "### O padrão da água\nInfecção = edema e inflamação:\n- ==Hipossinal em T1==: a água substitui a gordura da medula.\n- ==Hipersinal em T2== e nas sequências com supressão de gordura (STIR).\n\n### O conjunto da espondilodiscite\n- Placas terminais irregulares, erodidas.\n- **Disco** com hipersinal em T2 e perda da fenda intranuclear.\n- **Realce** pelo gadolínio do osso e do disco.\n- **Coleções** paravertebrais e epidurais com realce periférico.\n\nÉ o exame de escolha, com alta sensibilidade e especificidade.\n\n### Diferencial com Modic I\nModic tipo I (degenerativo) também é hipo T1 / hiper T2, mas o **disco** não tem hipersinal líquido, não há coleção e as placas não se destroem.\n\n> **Na prova:** osteomielite vertebral = ==hipo T1, hiper T2==.",
-  "correta": "**Hipossinal em T1 e hipersinal em T2.**",
+  "conceito": "**Osteomielite vertebral (espondilodiscite) na ressonância.** A infecção da coluna no adulto começa geralmente na **placa terminal** do corpo vertebral (região subcondral, bem vascularizada pelas arteríolas terminais), por via **hematogênica** (Staphylococcus aureus é o agente mais comum; Brucella e tuberculose em contextos específicos). Atinge o **disco** (avascular no adulto, destruído pelas enzimas) e o corpo vertebral vizinho.\n\n**O sinal do corpo vertebral.** A infecção substitui a medula gordurosa por **edema, células inflamatórias e exsudato**, ou seja, por **água**.\n- **T1**: a gordura medular, que normalmente brilha, é substituída por água: **hipossinal**.\n- **T2 e STIR** (com supressão de gordura): a água brilha: **hipersinal**.\n- Após **gadolínio**: realce do osso, do disco e das partes moles inflamadas; abscessos aparecem com borda captante e centro sem realce.\n\n**O conjunto que sugere infecção (e não tumor ou alteração degenerativa).**\n\n| Achado | Infecção | Metástase | Modic I (degenerativo) |\n|---|---|---|---|\n| Disco | **Hipersinal em T2, destruído, realça** | Geralmente **preservado** | Desidratado, baixo sinal |\n| Placas terminais | **Erosão, irregularidade** | Preservadas | Íntegras |\n| Partes moles | **Abscesso paravertebral ou epidural** | Massa sólida | Ausente |\n| Corpo vertebral | Hipo T1, hiper T2, nos dois lados do disco | Lesão focal, pedículo | Hipo T1, hiper T2, junto à placa |\n\n**Diagnóstico e tratamento.** Hemoculturas e biópsia guiada por tomografia antes do antibiótico, quando possível; antibiótico por cerca de 6 semanas (Zimmerli); cirurgia para abscessos com déficit, instabilidade, deformidade ou falha do tratamento.\n\n> Infecção no corpo vertebral: hipossinal em T1 e hipersinal em T2, com o disco acometido.",
+  "correta": "**B: hiposinal em T1 e hipersinal em T2.** O edema e o exsudato inflamatório substituem a medula gordurosa: o osso fica escuro em T1 e claro em T2 e STIR.",
   "incorretas": {
-   "A": "**Esclerose ou fibrose.**",
-   "C": "**Gordura ou sangue subagudo.**",
-   "D": "**Gordura ou proteína.**"
+   "A": "**Hipossinal em T1 e T2** é o padrão de esclerose ou fibrose (por exemplo, Modic III ou metástase osteoblástica), não de edema infeccioso.",
+   "C": "**Hipersinal em T1 e hipossinal em T2** não corresponde à infecção; o hipersinal em T1 indica gordura (como na alteração Modic II) ou sangue subagudo.",
+   "D": "**Hipersinal em T1 e T2** lembra gordura (Modic II) ou hemangioma, não a substituição inflamatória da medula."
   },
   "referencias": [
-   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 4.2"
+   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 4.2",
+   "Zimmerli W. Clinical practice. Vertebral osteomyelitis. N Engl J Med. 2010;362(11):1022-1029."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "conceitos-basicos-0079": {
@@ -1924,19 +1925,19 @@
   "conferido": false
  },
  "conceitos-basicos-0199": {
-  "conceito": "### A hierarquia do músculo esquelético\nMúsculo → **fascículo** (envolto pelo perimísio) → **fibra muscular** (a célula, envolta pelo endomísio) → ==miofibrila== → **miofilamentos** (actina e miosina).\n\n### O que a seta aponta\nNa figura, o fascículo é aberto, depois a fibra, e dela sai um cilindro fino **estriado**, com faixas repetidas: a ==miofibrila==, formada por sarcômeros em série.\n\n### O sarcômero\n- Unidade contrátil entre duas **linhas Z**.\n- **Banda A** (miosina), **banda I** (só actina), **zona H**.\n- Na contração, a actina desliza sobre a miosina: a banda I e a zona H encurtam; a banda A não muda.\n\n> **Na prova:** cilindro estriado dentro da fibra = ==miofibrila==.",
-  "correta": "**Miofibrila.**",
+  "conceito": "**A hierarquia do músculo esquelético.** O músculo é organizado em níveis sucessivos, cada um envolvido por tecido conjuntivo próprio, como cabos dentro de cabos.\n\n| Nível | Envoltório | O que é |\n|---|---|---|\n| Músculo | **Epimísio** | O órgão inteiro |\n| **Fascículo** | **Perimísio** | Feixe de fibras musculares |\n| **Fibra muscular** | **Endomísio** | A **célula** muscular, multinucleada, com sarcolema |\n| **Miofibrila** | (dentro da fibra, sem envoltório próprio) | Cilindro **estriado** formado por sarcômeros em série |\n| **Miofilamentos** | | **Actina** (fino) e **miosina** (grosso) |\n\n**Lendo a imagem.** A figura parte do músculo da coxa, abre um **fascículo**, mostra uma **fibra muscular** (célula com núcleos na periferia) e, dela, sai um cilindro fino com **estriações transversais regulares**: é a **miofibrila** (seta amarela), formada por sarcômeros em sequência.\n\n**O sarcômero.** Unidade contrátil entre duas **linhas Z**:\n- **Banda A**: comprimento dos filamentos de miosina (não muda na contração).\n- **Banda I**: só actina; encurta na contração.\n- **Zona H**: só miosina; encurta na contração.\n- **Linha M**: centro do sarcômero.\n\n**Contração.** O cálcio liberado pelo retículo sarcoplasmático liga-se à troponina, desloca a tropomiosina e permite que as pontes de miosina puxem a actina em direção à linha M (teoria dos filamentos deslizantes), com gasto de ATP.\n\n**Relevância ortopédica.** A relação comprimento-tensão do sarcômero explica a perda de força de músculos encurtados ou alongados demais (por exemplo, nas transferências tendíneas, que devem ser fixadas com a tensão adequada).\n\n> Cilindro estriado dentro da fibra muscular: miofibrila; feixe de fibras: fascículo; actina e miosina: miofilamentos.",
+  "correta": "**A: à miofibrila.** A seta aponta o cilindro fino e estriado que sai da fibra muscular, formado por sarcômeros em série: a miofibrila.",
   "incorretas": {
-   "B": "**A célula inteira.**\n- Contém muitas miofibrilas.",
-   "C": "**Menor.**\n- Actina e miosina dentro da miofibrila.",
-   "D": "**Maior.**\n- Conjunto de fibras envolto por perimísio."
+   "B": "**A fibra muscular** é a célula inteira, envolvida pelo endomísio, que contém muitas miofibrilas; aparece na figura como o cilindro maior de onde a miofibrila sai.",
+   "C": "**O miofilamento** (actina ou miosina) é menor, estrutura molecular dentro da miofibrila, não visível nesse nível da figura.",
+   "D": "**O fascículo** é o feixe de fibras envolto pelo perimísio, estrutura maior que a fibra."
   },
   "referencias": [
    "Standring S. Gray's Anatomy. 42nd ed. Elsevier; 2020. Skeletal muscle structure.",
    "Hall JE. Guyton and Hall Textbook of Medical Physiology. 14th ed. Elsevier; 2021. Skeletal muscle contraction.",
    "Netter, Atlas de Anatomia Humana, 7ª edição, Cap. 1"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "conceitos-basicos-0200": {

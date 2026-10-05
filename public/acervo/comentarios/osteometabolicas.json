@@ -1025,19 +1025,20 @@
   "conferido": false
  },
  "osteometabolicas-0082": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "C",
-  "conceito": "**Raquitismo.** Na deficiência de vitamina D, cálcio e fósforo séricos ficam diminuídos, a fosfatase alcalina aumenta e o hiperparatireoidismo secundário reduz a reabsorção tubular de fosfato. Na osteodistrofia renal, a fosfatase está elevada e o fósforo sérico alto.\n\n**Na prova:** raquitismo carencial tem cálcio e fósforo baixos e fosfatase alta.",
-  "correta": "**Por deficiência de vitamina D, os níveis de cálcio e fósforo no sangue estão diminuídos.** Cálcio e fósforo baixos são o padrão carencial.",
+  "conceito": "**Raquitismo: os exames laboratoriais.** O raquitismo é a falha de mineralização da matriz osteoide e da cartilagem de crescimento na criança (na fise). Provoca alargamento das fises, arqueamento dos membros, rosário raquítico, atraso do crescimento. O laboratório indica o tipo.\n\n**Raquitismo por deficiência de vitamina D (carencial).**\n1. Falta vitamina D: cai a absorção intestinal de **cálcio e fósforo**.\n2. O cálcio sérico tende a cair; as paratireoides respondem com **hiperparatireoidismo secundário**.\n3. O PTH mobiliza cálcio do osso (o cálcio fica normal-baixo) e **reduz a reabsorção tubular de fosfato** (fosfatúria), derrubando o **fósforo sérico**.\n4. A **fosfatase alcalina** sobe (atividade osteoblástica aumentada sobre matriz não mineralizada).\n\n**Comparação dos raquitismos.**\n\n| Tipo | Cálcio | Fósforo | Fosfatase alcalina | PTH | Observação |\n|---|---|---|---|---|---|\n| **Deficiência de vitamina D** | **Baixo ou normal-baixo** | **Baixo** | **Alta** | Alto | 25-OH vitamina D baixa |\n| Hipofosfatêmico (ligado ao X) | Normal | **Muito baixo** | Alta | Normal | Fosfatúria por excesso de FGF23 |\n| **Osteodistrofia renal** | Baixo | **Alto** (o rim não excreta) | **Alta** | Muito alto | 1,25-(OH)2 vitamina D baixa |\n| Dependente de vitamina D tipo I | Baixo | Baixo | Alta | Alto | Defeito da 1-alfa-hidroxilase |\n\n**Cálcio urinário.** No raquitismo carencial e na osteodistrofia renal, o cálcio na urina está **baixo** (pouca absorção, ação do PTH e, na doença renal, baixa filtração).\n\n**Tratamento do carencial.** Reposição de vitamina D e cálcio; as deformidades leves se corrigem com o crescimento. Wharton e Bishop revisaram o diagnóstico e o tratamento.\n\n> Raquitismo carencial: cálcio e fósforo baixos, fosfatase alta, PTH alto, fosfatúria (reabsorção de fosfato diminuída).",
+  "correta": "**C: por deficiência de vitamina D, os níveis de cálcio e fósforo no sangue estão diminuídos (resposta pela bibliografia).** Sem vitamina D, cai a absorção intestinal de cálcio e fósforo; o hiperparatireoidismo secundário ainda aumenta a perda urinária de fosfato.",
   "incorretas": {
-   "A": "**Por osteodistrofia renal, os níveis de fosfatase alcalina no sangue estão normais.** A fosfatase alcalina está elevada.",
-   "B": "**Por osteodistrofia renal, os níveis de cálcio na urina estão elevados.** O cálcio urinário está baixo.",
-   "D": "**Por deficiência de vitamina D, a reabsorção tubular de fosfatos está aumentada.** A reabsorção tubular de fosfato está diminuída pelo paratormônio."
+   "A": "**Fosfatase alcalina normal na osteodistrofia renal** está errado: a fosfatase alcalina está elevada em todos os raquitismos, inclusive o renal.",
+   "B": "**Cálcio urinário elevado na osteodistrofia renal** está errado: a filtração reduzida e a baixa absorção intestinal deixam o cálcio urinário baixo.",
+   "D": "**Reabsorção tubular de fosfatos aumentada** é o contrário: o PTH elevado diminui a reabsorção de fosfato, causando fosfatúria e hipofosfatemia."
   },
   "referencias": [
-   "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. 2001. 5ª ed., vol.1, p. 190."
+   "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. 2001. 5ª ed., vol.1, p. 190.",
+   "Wharton B, Bishop N. Rickets. Lancet. 2003;362(9393):1389-1400."
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "C",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "osteometabolicas-0083": {

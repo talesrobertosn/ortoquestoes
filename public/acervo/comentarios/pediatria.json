@@ -2598,14 +2598,18 @@
   "conferido": false
  },
  "pediatria-0200": {
-  "conceito": "### Perfil rotacional (Staheli)\n| Teste | Avalia |\n|---|---|\n| ângulo de progressão do pé | marcha (in-toeing/out-toeing) |\n| rotação do quadril em prono | ==anteversão femoral== (RI > 70° = anteversão aumentada) |\n| ==ângulo coxa-pé== (prono, joelho a 90°) | ==torção tibial== (normal 0 a 20° externo) |\n| eixo transmaleolar | torção tibial |\n| borda lateral do pé (bissetriz) | metatarso aduto |\n\n### Torção tibial\n| Tipo | Idade | Evolução |\n|---|---|---|\n| interna | 1 a 3 anos | corrige espontaneamente |\n| externa | mais tardia | pode piorar; dor patelofemoral |\n\n> **Na prova:** ângulo coxa-pé avalia ==torção tibial==.",
-  "correta": "**Torção tibial.**\n- Ângulo coxa-pé com a criança em prono e joelho a 90°.\n- Normal: leve rotação externa.",
+  "conceito": "**Perfil rotacional da criança (Staheli).** A marcha com os pés para dentro (in-toeing) ou para fora (out-toeing) é queixa muito comum. A causa pode estar no **fêmur** (anteversão), na **tíbia** (torção) ou no **pé** (metatarso aduto). O perfil rotacional de Staheli examina cada nível separadamente.\n\n| Teste | Como | Avalia |\n|---|---|---|\n| Ângulo de progressão do pé | Observação da marcha | Resultado global (dentro ou fora) |\n| Rotação do quadril em prono | Joelhos fletidos a 90 graus, deixar as pernas caírem | **Anteversão femoral** (rotação interna acima de 70 graus sugere anteversão aumentada) |\n| **Ângulo coxa-pé** | Prono, joelho a 90 graus, tornozelo neutro | **Torção tibial** (normal de 0 a 20 graus externos) |\n| **Eixo transmaleolar** | Ângulo entre a linha dos maléolos e o eixo da coxa | **Torção tibial** |\n| Bissetriz do calcanhar (borda lateral do pé) | Prono, sola do pé | Metatarso aduto |\n\n**Lendo a imagem.** A criança está em pé com as patelas voltadas para frente; traça-se o eixo da coxa (vertical) e o eixo do pé, e o ângulo entre eles (marcado pela seta dupla) mostra o pé apontando para fora com a coxa neutra. Esse é o raciocínio do **ângulo coxa-pé**: com o fêmur neutro, o desvio do pé em relação à coxa expressa a **torção da tíbia** (interna ou externa).\n\n**Evolução natural.** A torção tibial interna é comum em crianças de 1 a 3 anos e se corrige espontaneamente na maioria até 4 a 5 anos; a anteversão femoral aumentada (3 a 6 anos, senta em W) melhora até 8 a 10 anos. Staheli e colaboradores estabeleceram os valores normais por idade. Órteses e calçados especiais **não** alteram a evolução; osteotomia derrotativa só em deformidades graves e persistentes após os 8 a 10 anos.\n\n> Ângulo coxa-pé e eixo transmaleolar: torção tibial; rotação do quadril em prono: anteversão femoral; borda lateral do pé: metatarso aduto.",
+  "correta": "**B: torção tibial interna ou externa.** O teste compara o eixo do pé com o eixo da coxa, com o fêmur neutro; o desvio entre eles traduz a torção da tíbia.",
   "incorretas": {
-   "A": "**Plano coronal.**\n- Avaliado em pé.",
-   "C": "**Bissetriz do calcanhar.**\n- Outro teste.",
-   "D": "**Rotação do quadril em prono.**\n- Outro teste."
+   "A": "**Varo ou valgo do joelho** é avaliado pela distância intercondilar ou intermaleolar e pelo ângulo tibiofemoral, não pela relação entre coxa e pé.",
+   "C": "**Adução ou abdução dos metatarsos** é avaliada pela bissetriz do calcanhar e pela borda lateral do pé (metatarso aduto).",
+   "D": "**Anteversão ou retroversão femoral** é avaliada pela amplitude de rotação interna e externa do quadril em prono."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Staheli LT, Corbett M, Wyss C, King H. Lower-extremity rotational problems in children: normal values to guide management. J Bone Joint Surg Am. 1985;67(1):39-47.",
+   "Herring JA. Tachdjian's pediatric orthopaedics. 5th ed. Philadelphia: Elsevier Saunders; 2014."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0201": {
@@ -8263,17 +8267,20 @@
   "conferido": false
  },
  "pediatria-0713": {
+  "conceito": "**Descolamento epifisário proximal da tíbia.** É uma lesão **rara** (menos de 1% das lesões fisárias), mas **perigosa**. A raridade se explica pela anatomia: a fise proximal da tíbia é protegida porque os **ligamentos colaterais** se inserem na **metáfise** (o colateral medial abaixo da fise; o lateral na fíbula), e a **tuberosidade da tíbia** (apófise) funciona como um contraforte anterior. O trauma em varo ou valgo tende a lesar a fise distal do fêmur, não a da tíbia.\n\n**Mecanismo.** O mecanismo típico é a **hiperextensão** do joelho (por exemplo, impacto direto na face anterior com o pé fixo, atropelamento, esportes). A **metáfise desloca-se posteriormente** e pode comprimir ou lesar a **artéria poplítea**, que está fixa no anel do sóleo logo atrás da tíbia proximal.\n\n**Tipos.** Os mais frequentes são os **Salter-Harris I e II** (Shelton e Canale relataram série clássica com predomínio dessas formas), com os tipos III e IV menos comuns.\n\n**Por que a vigilância vascular é obrigatória.**\n- A artéria poplítea pode ser comprimida pela metáfise deslocada ou lesada na hiperextensão.\n- Pode haver **síndrome compartimental**.\n- O exame de pulsos, enchimento capilar e índice tornozelo-braço deve ser repetido antes e depois da redução; alteração indica avaliação vascular imediata.\n\n**Tratamento.** Sem desvio: gesso. Com desvio: **redução fechada** (flexão do joelho, que relaxa as estruturas posteriores) e fixação com fios lisos ou parafusos metafisários; redução aberta se não reduzir. Seguimento por **parada de crescimento** (a fise proximal da tíbia responde por cerca de 55% do crescimento da tíbia), com discrepância e deformidade angular.\n\n> Fise proximal da tíbia: rara, por hiperextensão, geralmente Salter-Harris I e II, com risco para a artéria poplítea.",
+  "correta": "**C: hiperextensão e tipos I e II (resposta pela bibliografia).** O mecanismo típico é a hiperextensão, que desloca a metáfise posteriormente, e os tipos mais frequentes são os Salter-Harris I e II.",
+  "incorretas": {
+   "A": "**Varo e valgo com tipos I e II**: os tipos estão certos, mas os colaterais inserem-se na metáfise e protegem a fise; varo e valgo lesam mais a fise distal do fêmur.",
+   "B": "**Varo e valgo com tipos III e IV** erra o mecanismo e os tipos mais frequentes.",
+   "D": "**Hiperextensão com tipos III e IV**: o mecanismo está certo, mas os tipos III e IV são menos comuns que I e II."
+  },
+  "referencias": [
+   "Rockwood C.A. et al. Fractures in Children. Philadelphia: Lippincott. 6ª ed.",
+   "Shelton WR, Canale ST. Fractures of the tibia through the proximal tibial epiphyseal cartilage. J Bone Joint Surg Am. 1979;61(2):167-173."
+  ],
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "C",
-  "conceito": "**Mecanismo.** O descolamento da fise proximal da tíbia é raro porque a tuberosidade e os ligamentos colaterais, que se inserem na metáfise, protegem a placa. Quando ocorre, o mecanismo típico é a **hiperextensão**, que desloca a metáfise para posterior contra a artéria poplítea.\n\n**Na prova:** hiperextensão, tipos I e II de Salter-Harris e vigilância vascular obrigatória.",
-  "correta": "**Hiperextensão e tipos I e II.** É o padrão descrito: o trauma em hiperextensão separa a epífise, quase sempre pelos tipos I e II.",
-  "incorretas": {
-   "A": "**Varo e valgo e tipos I e II.** Estresse em varo ou valgo lesa mais os ligamentos colaterais; não é o mecanismo típico do descolamento proximal.",
-   "B": "**Varo e valgo e tipos III e IV.** Tipos III e IV são os menos frequentes, e o mecanismo não é o predominante.",
-   "D": "**Hiperextensão e tipos III e IV.** O mecanismo está certo, mas os tipos mais frequentes são I e II."
-  },
-  "referencias": [],
-  "geradoEm": "2026-09-30T23:58:02+00:00",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0714": {
