@@ -736,18 +736,18 @@
   "conferido": false
  },
  "pediatria-0049": {
+  "conceito": "**A coxa vara do desenvolvimento.** É a diminuição progressiva do **ângulo cervicodiafisário** (normal de cerca de 135° a 150° na criança) por um defeito de **ossificação** na parte **inferomedial do colo**. É rara, uni ou bilateral, e aparece quando a criança começa a andar.\n\n**O sinal radiográfico.** Um **triângulo** ósseo isolado na parte inferior do colo, junto à fise (o fragmento triangular de Fairbank), com a fise **verticalizada**.\n\n**O ângulo de Hilgenreiner-epifisário (HE).** Ângulo entre a linha de **Hilgenreiner** e a linha da **fise** proximal do fêmur:\n| Ângulo HE | Conduta |\n|---|---|\n| **Menor que 45°** | Resolve sozinho: observação |\n| **45° a 60°** | Zona cinzenta: acompanhar |\n| **Maior que 60°** | Progride: **osteotomia valgizante** |\n\n**O exame físico e o porquê dos movimentos.** O colo em varo faz o **trocânter maior subir**, encostando no ilíaco. Isso tem duas consequências:\n- **abdução limitada**: o trocânter bate na asa do ilíaco antes do fim do movimento;\n- **rotação medial (interna) limitada**: o colo em varo costuma estar também **retrovertido**, o que reduz a rotação interna.\n\nAlém disso, o glúteo médio fica encurtado e ineficiente (sua alavanca diminui), causando **marcha de Trendelenburg** (bamboleante, se bilateral), **encurtamento** do membro e hiperlordose lombar.\n\n**O tratamento.** A **osteotomia valgizante** subtrocantérica ou intertrocantérica (Pauwels, Borden) corrige o ângulo para cerca de **40° de HE** ou menos e transforma o cisalhamento em compressão na fise; o defeito do colo então ossifica. A recidiva é comum quando a correção é insuficiente.",
+  "correta": "**Correta: D (abdução e rotação medial).** O varo eleva o trocânter maior, que bate no ilíaco e limita a abdução; a retroversão associada do colo reduz a rotação medial.",
   "incorretas": {
-   "A": "A adução e a rotação lateral ficam livres; o que se limita é o oposto.",
-   "B": "A rotação medial está certa, mas a adução fica livre; a limitada é a abdução.",
-   "C": "A abdução está certa, mas a rotação lateral fica livre; a limitada é a medial."
+   "A": "A **adução** está preservada (e até aumentada), porque o fêmur já está em posição aduzida pelo varo.",
+   "B": "A rotação medial está limitada, mas a **adução** não; é a **abdução** que fica limitada.",
+   "C": "A abdução está limitada, mas a **rotação lateral** costuma estar preservada; a que se perde é a **medial**."
   },
-  "conceito": "A **coxa vara do desenvolvimento** é a diminuição do **ângulo cervicodiafisário** por um defeito de ossificação na parte **medial e inferior do colo** do fêmur. Na radiografia aparece o **triângulo de Fairbank**, um fragmento triangular na parte inferior do colo.\n\n**A clínica**: marcha de **Trendelenburg** indolor, encurtamento do membro; bilateral em 30 a 50%.\n\n**Por que limita a abdução e a rotação medial**:\n\no colo varo deixa o **trocanter maior alto**; na **abdução**, o trocanter bate no ilíaco antes do normal;\n\no colo fica **retrovertido** em relação ao normal, o que limita a **rotação medial** (interna).\n\nJá a adução e a rotação lateral ficam livres.\n\n**O ângulo de Hilgenreiner-epifisário** decide a conduta:\n\n**menor que 45°**: tende a melhorar sozinho;\n\n**entre 45 e 60°**: observar;\n\n**maior que 60°**: **osteotomia valgizante** (Pauwels), para pôr a fise na horizontal e o colo em posição melhor.\n\n**Os diferenciais**: deficiência femoral focal proximal, displasias esqueléticas, raquitismo e sequela de displasia do quadril ou Perthes.\n\n**Na prova**: coxa vara do desenvolvimento limita a **abdução** e a **rotação medial**.",
-  "correta": "O trocanter alto bate no ilíaco na abdução, e o colo retrovertido limita a rotação medial.",
   "referencias": [
-   "Proximal femoral valgus osteotomy for developmental coxa vara: systematic review. https://pmc.ncbi.nlm.nih.gov/articles/PMC10937198/",
-   "Valgus osteotomy by external fixation for developmental coxa vara. https://pmc.ncbi.nlm.nih.gov/articles/PMC3800519/"
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de coxa vara.",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo do quadril."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0050": {
@@ -1575,18 +1575,18 @@
   "conferido": false
  },
  "pediatria-0104": {
-  "conceito": "### Epifisiólise: fatores\n| Tipo | Fator |\n|---|---|\n| mecânico | ==obesidade==, ==retroversão relativa (menos anteversão)==, ==coxa vara (menor ângulo cervicodiafisário)==, fise mais oblíqua, estirão |\n| endócrino | hipotireoidismo, deficiência de GH (uso de GH), hipogonadismo, osteodistrofia renal, radioterapia |\n\n- Pedir TSH em ==< 10 anos==, baixa estatura, ou bilateral.\n\n### Classificações\n| Critério | Tipos |\n|---|---|\n| Loder (estabilidade) | estável (anda) × ==instável== (não anda; necrose em até 50%) |\n| Southwick (ângulo) | leve < 30°, moderado 30 a 50°, grave > 50° |\n| tempo | aguda < 3 semanas, crônica, crônica agudizada |\n\n### Tratamento\n- ==Fixação in situ== com um parafuso canulado central.\n- Contralateral profilática: < 10 anos, endocrinopatia.\n\n### Ângulo de Southwick\n- Em ==perfil (rã de Lauenstein)==: ângulo entre a perpendicular à linha epifisária e o eixo da diáfise.\n- Comparar com o lado normal (subtrair o contralateral, ou ~10-12° se bilateral).\n\n### Outros\n| Nome | O que é |\n|---|---|\n| Klein | linha na borda superior do colo no AP deve cortar a epífise |\n| Dunn (modificado) | redução aberta com luxação cirúrgica |\n| Kramer | osteotomia basocervical |\n\n> **Na prova:** técnica da figura = ==ângulo de Southwick==",
-  "correta": "**Southwick.**\n- Ângulo epifisário-diafisário no perfil.\n- Classifica a gravidade do escorregamento.",
+  "conceito": "**A deformidade da epifisiólise e as osteotomias.** Na epifisiólise proximal do fêmur (EPF) grave, a epífise fica para **trás e para baixo** em relação ao colo; na prática, o fêmur proximal fica em **varo**, **retroversão** (extensão) e **rotação externa**. Isso limita a flexão e a rotação interna e causa **impacto femoroacetabular** tipo came, que leva à artrose.\n\n**O ângulo de Southwick.** Mede o deslizamento no perfil (rã): o ângulo entre a epífise e a diáfise, comparado com o lado normal. Classifica em **leve** (menor que 30°), **moderado** (30° a 50°) e **grave** (maior que 50°).\n\n**As osteotomias pelo nível.**\n| Nível | Técnica | Característica |\n|---|---|---|\n| **Colo (subcapital)** | **Dunn** (e Dunn modificada com luxação cirúrgica) | Corrige no local da deformidade; maior risco de necrose |\n| **Base do colo** | **Kramer** e Barmada | Risco intermediário; correção limitada |\n| **Intertrocantérica** | **Southwick** e Imhäuser | Longe da circulação da cabeça; mais segura, mas cria deformidade compensatória |\n\n**A osteotomia de Southwick.** É uma osteotomia **biplanar** (trapezoidal) **intertrocantérica**, ao nível do **trocânter menor**, que retira uma cunha de base **anterolateral**. Ao fechar a cunha, o fragmento distal é colocado em **flexão**, **valgo** (abdução) e **rotação interna**, compensando a deformidade. A figura mostra exatamente isso: o traço intertrocantérico, a cunha retirada e o fragmento distal abduzido e rodado internamente.\n\n**A vantagem e o limite.** Como é feita longe dos vasos retinaculares que nutrem a cabeça, o risco de **necrose avascular** é baixo. Em compensação, corrige a deformidade **à distância**, criando uma deformidade em \"Z\", e não corrige totalmente o came; por isso, hoje muitas vezes é associada a uma **osteoplastia** do colo.\n\n**Os outros nomes da questão.** **Loder** é a classificação clínica da estabilidade (estável ou instável), e não uma técnica.",
+  "correta": "**Correta: D (Southwick).** A figura mostra a osteotomia biplanar intertrocantérica, ao nível do trocânter menor, com o fragmento distal abduzido (valgo), fletido e rodado internamente: é a técnica de Southwick.",
   "incorretas": {
-   "A": "**Cirurgia.**\n- Redução aberta.",
-   "B": "**Estabilidade.**\n- Classificação clínica.",
-   "C": "**Osteotomia.**\n- Basocervical."
+   "A": "A osteotomia de **Dunn** é feita no **colo**, junto à fise (subcapital), corrigindo no local da deformidade.",
+   "B": "**Loder** dá nome à classificação da **estabilidade** da EPF (estável ou instável), e não a uma osteotomia.",
+   "C": "A osteotomia de **Kramer** é feita na **base do colo**, e não na região intertrocantérica mostrada."
   },
   "referencias": [
-   "AO Surgery Reference. https://surgeryreference.aofoundation.org/",
-   "POSNA Study Guide. https://posna.org/physician-education/study-guide"
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de epifisiólise proximal do fêmur.",
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), capítulo de afecções do quadril na criança."
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0105": {
@@ -2009,17 +2009,18 @@
   "conferido": false
  },
  "pediatria-0139": {
+  "conceito": "**A epifisiólise proximal do fêmur (EPF).** É o deslizamento da metáfise em relação à epífise através da fise enfraquecida, típica de adolescentes **obesos** no estirão (meninos de 12 a 15 anos, meninas de 10 a 13). A epífise fica no acetábulo, e o colo desliza para **anterior e superior**, rodando externamente.\n\n**Os exames de imagem.**\n| Exame | Papel |\n|---|---|\n| **Radiografia** AP e perfil (rã ou Lauenstein) | Diagnóstico e graduação: linha de **Klein**, sinal de **Steel**, ângulo de **Southwick** |\n| **Ressonância** | Pré-deslizamento (edema da fise), lado contralateral, suspeita de necrose |\n| **Tomografia** | Avalia o **fechamento da fise**, a deformidade tridimensional e o impacto residual |\n| Ultrassonografia | Derrame articular e instabilidade, pouco usada |\n\n**A tomografia.** Não é necessária para diagnosticar nem para definir o tratamento, que se baseia na **estabilidade** (classificação de Loder) e na radiografia. Sua utilidade está em casos específicos:\n- confirmar se a **fise já fechou** (fusão), por exemplo antes de retirar o parafuso, ou para saber se há crescimento a esperar;\n- avaliar a **posição do parafuso** e excluir penetração articular;\n- planejar a **osteotomia** na deformidade residual e estudar o **impacto femoroacetabular** (giba metafisária e ângulo alfa).\n\n**A estabilidade (Loder).** É o principal fator prognóstico: na EPF **instável** (a criança não consegue apoiar, mesmo com muletas), a necrose avascular chega a cerca de 50%; na **estável**, é praticamente nula. O tratamento padrão é a **fixação in situ** com um parafuso canulado central, perpendicular à fise, sem tentar reduzir o deslizamento estável.\n\n**A radiação.** A tomografia expõe o adolescente a dose significativa de radiação, por isso não é rotina; deve ser indicada quando a resposta muda a conduta.",
+  "correta": "**Correta: D (pode definir fechamento da fise proximal do fêmur).** A tomografia mostra com precisão se a fise já está fusionada, além de avaliar o parafuso e a deformidade residual; não é necessária para o diagnóstico nem para a decisão inicial.",
   "incorretas": {
-   "A": "Não é proscrita; tem indicações, como avaliar fechamento da fise e posição do parafuso.",
-   "B": "O prognóstico depende sobretudo da estabilidade de Loder, uma avaliação clínica.",
-   "C": "A radiografia e a clínica bastam para decidir a fixação in situ."
+   "A": "A tomografia **não é proscrita**: tem indicações específicas (fusão da fise, posição do parafuso, planejamento de osteotomia), apenas não é rotina.",
+   "B": "O prognóstico é definido principalmente pela **estabilidade** clínica (Loder) e pelo grau do deslizamento, e não pela tomografia.",
+   "C": "O tratamento é definido pela **estabilidade** e pela radiografia; a tomografia não é necessária para essa decisão."
   },
-  "conceito": "Na **epifisiólise proximal do fêmur**, o diagnóstico e a decisão do tratamento vêm da **radiografia** em AP e perfil (rã ou Lauenstein), e cada exame tem seu papel:\n\n**radiografia**: confirma o escorregamento, mostra a **linha de Klein** (no AP, deveria cortar a epífise) e mede o **ângulo de Southwick** (leve abaixo de 30°, moderado de 30 a 50°, grave acima de 50°);\n\n**ressonância**: mostra o **pré-deslizamento** (edema da fise antes de escorregar) e vigia o lado oposto;\n\n**tomografia**: mostra se a **fise já fechou**, a posição do parafuso e a deformidade residual (came) para planejar correções.\n\n**O que a tomografia não faz**: não é obrigatória para decidir o tratamento (a fixação in situ se decide pela radiografia e pela clínica) e não define o prognóstico. O fator prognóstico mais forte é a **estabilidade de Loder**: se a criança consegue andar ou não.\n\n**Por que o fechamento da fise importa**: com a fise fechada, o escorregamento não progride mais e o parafuso cumpriu seu papel; também orienta osteotomias tardias.\n\n**Na prova**: a tomografia **pode definir o fechamento da fise** proximal do fêmur.",
-  "correta": "A tomografia mostra com clareza se a fise já fechou, além da posição do implante e da deformidade residual.",
   "referencias": [
-   "SCFE imaging review. https://pmc.ncbi.nlm.nih.gov/articles/PMC5902750/"
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de epifisiólise proximal do fêmur.",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo de epifisiólise proximal do fêmur."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0140": {
@@ -3043,14 +3044,18 @@
   "conferido": false
  },
  "pediatria-0243": {
+  "conceito": "**A deformidade de Sprengel.** É a **elevação congênita da escápula**, a anomalia congênita mais comum da cintura escapular. Na **embriologia**, a escápula se forma na altura de **C4 a C5** e **desce** até o nível de T2 a T7 entre a 9ª e a 12ª semana. Na deformidade de Sprengel, essa **descida falha**.\n\n**As características da escápula.**\n- **Pequena** (hipoplásica) e com forma alterada: mais larga que alta.\n- **Elevada** e **rodada**: o ângulo inferior fica **medial** e o glenoide aponta para baixo (rotação para baixo).\n- **Barra omovertebral** em cerca de um terço dos casos: uma ponte fibrosa, cartilaginosa ou óssea que liga o ângulo superomedial da escápula aos processos espinhosos ou lâminas de C4 a C7.\n- Os músculos periescapulares são **hipoplásicos**.\n\n**A clínica.** O ombro fica mais alto, com o pescoço aparentemente curto. A **abdução** fica **limitada**, porque a escápula não consegue rodar no tórax (o ritmo escapulotorácico está bloqueado); a abdução fica restrita à glenoumeral, em torno de 90° a 120°.\n\n**As associações.** **Klippel-Feil** (fusão de vértebras cervicais), escoliose congênita, costelas anômalas, espinha bífida e anomalias renais.\n\n**A classificação de Cavendish (estética).**\n| Grau | Aspecto |\n|---|---|\n| 1 | Muito leve: ombros nivelados; deformidade invisível vestido |\n| 2 e 3 | Leve a moderada: elevação de 2 a 5 cm, visível vestido |\n| 4 | Grave: ângulo superior perto do occipital |\n\n**O tratamento.** Formas leves: observação e fisioterapia. Cirurgia de preferência entre **3 e 8 anos** (Woodward: transposição da origem do trapézio; Green: liberação e abaixamento), com **ressecção da barra** omovertebral. O risco principal é a **lesão do plexo braquial** ao abaixar a escápula, por isso associa-se a osteotomia da clavícula nas correções maiores.",
+  "correta": "**Correta: C (limitada e a escápula hipoplásica).** A escápula pequena, elevada e rodada, por vezes presa à coluna pela barra omovertebral, não roda no tórax, e a abdução do ombro fica limitada.",
   "incorretas": {
-   "A": "A escápula é hipoplásica, mas a abdução não é normal; é o movimento mais limitado.",
-   "B": "Erra os dois pontos: a abdução é limitada e a escápula é pequena.",
-   "D": "A abdução limitada está certa, mas a escápula é pequena, não hiperplásica."
+   "A": "A escápula é hipoplásica, mas a **abdução** fica limitada, porque o movimento escapulotorácico está bloqueado.",
+   "B": "A abdução fica **limitada**, e a escápula é **pequena** (hipoplásica), e não hiperplásica.",
+   "D": "A abdução está limitada, mas a escápula é **hipoplásica**, e não hiperplásica."
   },
-  "conceito": "Na **deformidade de Sprengel**, a escápula não desce durante a vida fetal. Fica **alta**, **pequena (hipoplásica)** e **rodada**, com o ângulo inferior apontando para a coluna. Muitas vezes está presa à coluna cervical por um **osso omovertebral** ou por faixa fibrosa.\n\n**Por que a abdução é limitada**: a **articulação glenoumeral é normal**. O problema é o **ritmo escapulotorácico**: para elevar o braço acima de cerca de 90°, a escápula precisa rodar sobre o tórax. Presa e pequena, ela não roda, e a **abdução** é o movimento mais limitado.\n\n**As associações**: **Klippel-Feil**, escoliose, costelas anômalas, diastematomielia e anomalias renais. Vale examinar a coluna e pedir ultrassom dos rins.\n\n**A classificação de Cavendish** gradua a deformidade pela aparência, de muito leve (ombros quase nivelados) a grave (escápula quase no occipital).\n\n**A cirurgia**, entre 3 e 8 anos, nas formas moderadas e graves: **Woodward** (transfere a origem dos músculos para baixo) ou **Green** (desinsere na escápula), com ressecção do omovertebral e, muitas vezes, osteotomia da clavícula.\n\n**Na prova**: Sprengel = **abdução limitada** e **escápula hipoplásica**.",
-  "correta": "A escápula pequena e presa não roda sobre o tórax, e a abdução fica limitada.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de afecções do ombro.",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo do membro superior."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0244": {
@@ -3368,17 +3373,18 @@
   "conferido": false
  },
  "pediatria-0280": {
+  "conceito": "**A luxação congênita da cabeça do rádio.** É a anomalia congênita **mais comum do cotovelo**, embora rara. Pode ser **isolada** ou associada a síndromes (unha-patela, Klippel-Feil, Ehlers-Danlos, artrogripose, sinostose radioulnar). É **bilateral** em boa parte dos casos e costuma ser descoberta tarde, na idade escolar, porque a função é quase normal.\n\n**A direção do desvio.**\n| Direção | Frequência |\n|---|---|\n| **Posterior** (ou posterolateral) | A **mais comum** (cerca de 65%) |\n| Anterior | Menos comum: deve-se suspeitar de Monteggia antiga |\n| Lateral | Rara |\n\n**Os sinais que indicam a causa congênita (e não trauma antigo).**\n- **Cabeça do rádio pequena** e **em cúpula** (convexa, e não côncava), porque nunca articulou com o capítulo;\n- **capítulo hipoplásico** e achatado;\n- **rádio longo** em relação à ulna, com a ulna **retificada** (sem a curvatura do Monteggia);\n- **bilateralidade** e associação com síndromes;\n- ausência de história de trauma.\n\n**A diferença com a lesão de Monteggia antiga.** Na Monteggia não diagnosticada, a cabeça costuma estar **anterior**, a ulna tem **arqueamento** ou consolidação viciosa, e a cabeça do rádio inicialmente tem forma normal (côncava). Esse diagnóstico diferencial é importante, porque a Monteggia antiga pode ser reconstruída, e a congênita **não deve** ser reduzida.\n\n**O quadro e o tratamento.** Limitação discreta da extensão (na posterior) ou da flexão (na anterior), e da rotação; dor e saliência palpável na adolescência. O tratamento é **observação**. A tentativa de redução falha. Na dor ou limitação importante, após a maturidade, faz-se a **ressecção da cabeça do rádio**.",
+  "correta": "**Correta: D (posterior, e a cabeça do rádio geralmente é de tamanho menor que o normal).** A luxação congênita é mais comum para posterior, e a cabeça do rádio é pequena e em cúpula, porque nunca se moldou contra o capítulo.",
   "incorretas": {
-   "A": "Desvio anterior com cabeça normal descreve o Monteggia antigo, traumático.",
-   "B": "A cabeça pequena está certa, mas o desvio mais comum é posterior.",
-   "C": "O desvio posterior está certo, mas a cabeça é menor que o normal."
+   "A": "O desvio **anterior** é menos comum e deve levantar a suspeita de **Monteggia antiga**, em que a cabeça tem tamanho normal.",
+   "B": "A cabeça é menor que o normal, mas o desvio mais comum é **posterior**, e não anterior.",
+   "C": "O desvio posterior está correto, mas a cabeça é **pequena e em cúpula**, e não de tamanho normal."
   },
-  "conceito": "A **luxação congênita da cabeça do rádio** é a anomalia congênita mais comum do cotovelo. Costuma ser **bilateral** e vir com outras alterações (sinostose radioulnar, síndrome unha-patela, Ehlers-Danlos, Larsen). A direção mais comum é **posterior**.\n\n**Por que a cabeça é pequena**: a cabeça do rádio se molda contra o capítulo durante o crescimento. Fora do lugar desde cedo, ela não recebe esse molde e cresce **pequena e convexa**, em forma de cúpula. O colo fica alongado, o rádio fica relativamente longo e o **capítulo é hipoplásico**.\n\n**Como diferenciar do Monteggia antigo (traumático)**:\n\n**direção**: congênita **posterior**; traumática em geral **anterior**;\n\n**cabeça**: congênita **pequena e convexa**; traumática de tamanho **normal e côncava**;\n\n**lado**: congênita bilateral; traumática unilateral;\n\n**ulna**: reta na congênita; com deformidade plástica na traumática.\n\n**O quadro e o tratamento**: limitação da extensão (na posterior), pronossupinação pouco limitada. O tratamento é **conservador**; se doer depois da maturidade, ressecção da cabeça.\n\n**Na prova**: luxação congênita = **posterior**, com cabeça **menor que o normal**.",
-  "correta": "Na luxação congênita, a cabeça desvia para trás e, sem o molde do capítulo, cresce pequena e convexa.",
   "referencias": [
-   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), Cap. 21"
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo do cotovelo e do antebraço.",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de afecções congênitas do membro superior."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0281": {
@@ -3790,14 +3796,18 @@
   "conferido": false
  },
  "pediatria-0321": {
+  "conceito": "**A osteocondrite dissecante (OCD) do cotovelo.** É a lesão do **osso subcondral** do **capítulo** do úmero, com separação de um fragmento osteocondral, em adolescentes de **12 a 16 anos**. A causa é a **sobrecarga repetitiva em compressão** da articulação radiocapitelar, sobre um capítulo de vascularização terminal e frágil.\n\n**Os esportes de risco.**\n| Esporte | Mecanismo |\n|---|---|\n| **Ginástica artística** | O cotovelo vira um membro de **carga** (apoio, paradas de mão, saltos): compressão axial radiocapitelar |\n| **Arremesso** (beisebol) | Estresse em **valgo** na fase de aceleração: compressão lateral |\n| Halterofilismo, tênis | Carga repetitiva no cotovelo |\n\n**Ginástica e beisebol.** São os dois esportes classicamente associados. Na ginástica, o mecanismo é a **carga axial**; no arremesso, a **compressão lateral** pelo valgo. Nas provas, a **ginástica** costuma aparecer como resposta.\n\n**A diferença com a doença de Panner.**\n| Aspecto | Panner | OCD do capítulo |\n|---|---|---|\n| Idade | Até **10 anos** | **12 a 16 anos** |\n| Lesão | Fragmentação de **todo** o núcleo | Lesão **focal** subcondral |\n| Evolução | **Benigna**, reossifica sem sequelas | Pode soltar e formar corpo livre |\n\n**O quadro e o tratamento.** Dor lateral, **perda da extensão**, travamento por corpo livre. A ressonância define a **estabilidade**. Lesões estáveis, com fise do capítulo aberta, tratam-se com **repouso** do esporte de 3 a 6 meses. As instáveis ou com corpo livre exigem cirurgia: perfuração, fixação do fragmento ou enxerto osteocondral (mosaicoplastia).",
+  "correta": "**Correta: A (ginástica).** Na ginástica, o cotovelo suporta carga como membro inferior, e a compressão repetitiva da articulação radiocapitelar lesa o capítulo; é o esporte classicamente associado à OCD, junto com o arremesso.",
   "incorretas": {
-   "B": "No vôlei as lesões mais típicas são do ombro, não do capítulo.",
-   "C": "No basquete predominam lesões de joelho e tornozelo.",
-   "D": "No judô predominam traumas agudos, como luxações, não a compressão repetida do capítulo."
+   "B": "O **vôlei** sobrecarrega mais o ombro e os dedos; não é o esporte classicamente associado à OCD do capítulo.",
+   "C": "O **basquete** está associado a lesões de joelho e tornozelo, e não à OCD do cotovelo.",
+   "D": "O **judô** causa trauma agudo (luxações e fraturas do cotovelo), e não a sobrecarga compressiva repetitiva típica da OCD."
   },
-  "conceito": "No cotovelo da criança e do adolescente, a **compressão repetida** entre a cabeça do rádio e o **capítulo** pode lesar o osso subcondral. Duas doenças parecidas aparecem em idades diferentes:\n\n**doença de Panner**: abaixo de 10 anos (5 a 10); atinge o **capítulo inteiro**, com fragmentação difusa; não forma corpos livres e **reossifica** com repouso;\n\n**osteocondrite dissecante do capítulo**: de **12 a 16 anos**; é uma lesão **focal**, na parte anterolateral do capítulo; pode **soltar um fragmento** (corpo livre), com bloqueio e estalido; o prognóstico é variável.\n\n**Quem tem mais risco**: atletas que fazem **carga axial repetida no cotovelo em valgo**:\n\n**ginastas**, que apoiam o peso do corpo nos braços (saltos, paradas de mão); principalmente meninas;\n\n**arremessadores**, como no beisebol;\n\ntambém tenistas e levantadores de peso.\n\n**O tratamento da osteocondrite**: lesão estável com fise aberta, afastamento do esporte; lesão instável ou com corpo livre, **artroscopia** para remover o fragmento, fazer microfratura, fixar o fragmento ou enxertar.\n\n**Na prova**: osteocondrite dissecante do cotovelo é mais vista em **ginastas**.",
-  "correta": "Na ginástica, o cotovelo recebe carga axial repetida em valgo, comprimindo a cabeça do rádio contra o capítulo.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de lesões esportivas.",
+   "Kocher MS, Waters PM, Micheli LJ. Upper extremity injuries in the paediatric athlete. Sports Med. 2000;30(2):117-35."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0322": {
@@ -5197,14 +5207,18 @@
   "conferido": false
  },
  "pediatria-0437": {
+  "conceito": "**O equino na paralisia cerebral.** O pé equino é a deformidade mais comum na paralisia cerebral espástica. Antes da cirurgia, a toxina botulínica, o gesso seriado e as órteses tratam o componente dinâmico. Quando há **contratura fixa**, o alongamento cirúrgico é indicado, e a escolha depende de **qual músculo** está curto: o **gastrocnêmio** (biarticular, cruza o joelho) ou o **sóleo** (monoarticular).\n\n**O teste de Silfverskiöld.** Mede a dorsiflexão do tornozelo com o joelho **estendido** e **fletido**. Se a dorsiflexão melhora com o joelho fletido, o curto é só o **gastrocnêmio**; se não melhora, o **sóleo** também está curto.\n\n**As zonas de alongamento (Shore e colaboradores).**\n| Zona | Local | Técnicas |\n|---|---|---|\n| **I** | **Gastrocnêmio** isolado, acima da junção com o sóleo | **Strayer**, Baumann, recessão do gastrocnêmio |\n| **II** | Aponeurose conjunta gastrocnêmio-sóleo | Vulpius, Baker |\n| **III** | **Tendão calcâneo** | Alongamento em Z, técnica de Hoke (percutânea) |\n\n**A regra.** Quanto mais **distal** o alongamento, **maior** o ganho de dorsiflexão, mas **maior** a perda de força de flexão plantar e o risco de **hiperalongamento**, com marcha em **agachamento** (crouch) e pé calcâneo, uma complicação grave e difícil de reverter. Quanto mais **proximal**, menor o ganho, porém mais seguro, porque preserva o sóleo, que é o principal estabilizador da tíbia na fase de apoio.\n\n**O procedimento de Strayer.** Secciona a **aponeurose do gastrocnêmio** (zona I) e deixa a fáscia deslizar e cicatrizar em posição alongada. Indicado quando o teste de Silfverskiöld mostra contratura isolada do gastrocnêmio, preserva o sóleo e causa **menor perda de força**. Na diplegia, o alongamento do tendão calcâneo (zona III) é evitado pelo risco de crouch.\n\n**A nomenclatura.** Algumas descrições (como a de Firth) colocam o Strayer na zona II, porque ele é feito no ponto em que os ventres do gastrocnêmio terminam; a lógica funcional é a mesma.",
+  "correta": "**Correta: B (zona I e proporciona menor perda de força flexora plantar).** O Strayer alonga apenas o gastrocnêmio, proximal à junção com o sóleo; preserva o sóleo e por isso causa menos perda de força e menos risco de hiperalongamento.",
   "incorretas": {
-   "A": "A zona I está certa, mas é a mais seletiva e causa menor, não maior, perda de força.",
-   "C": "A zona III é o tendão calcâneo, onde não se faz o Strayer; ali a perda de força é maior.",
-   "D": "A menor perda de força está certa, mas o Strayer não é feito na zona III."
+   "A": "O Strayer é feito na zona I, mas, por preservar o sóleo, causa **menor** (e não maior) perda de força.",
+   "C": "A zona **III** é o tendão calcâneo (alongamento em Z ou Hoke), e não o local do Strayer.",
+   "D": "A menor perda de força está correta, mas a zona III é a do tendão calcâneo; o alongamento ali tem, ao contrário, **maior** perda de força e risco de crouch."
   },
-  "conceito": "O **equino** da paralisia cerebral vem do tríceps sural curto. O alongamento pode ser feito em três **zonas**, e o nível muda a **força** que sobra:\n\n**zona I**: nos **ventres do gastrocnêmio**; técnica de **Strayer** (recessão da aponeurose do gastrocnêmio) e Baumann; alonga **só o gastrocnêmio** e preserva o sóleo;\n\n**zona II**: na aponeurose conjunta, abaixo dos ventres; Vulpius e Baker; alonga o gastrocnêmio e, em parte, o sóleo;\n\n**zona III**: no **tendão calcâneo**; Hoke, White e alongamento em Z; alonga tudo.\n\n**A regra**: quanto mais **proximal**, mais **seletivo** e **estável** o alongamento, e **menor a perda de força** de flexão plantar. Na zona III, o alongamento é maior e menos controlado, com risco de **hiperalongamento**, fraqueza do tríceps e **marcha agachada**.\n\n**Como escolher (Silfverskiöld)**: se o equino melhora com o joelho fletido, só o gastrocnêmio está curto, e o Strayer (zona I) é suficiente; se não melhora, o sóleo também está curto, e é preciso alongar mais distal.\n\n**Na prova**: o Strayer é feito na **zona I** e proporciona **menor perda de força** flexora plantar.",
-  "correta": "O Strayer alonga só o gastrocnêmio, na zona I, preservando o sóleo e causando menor perda de força.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Shore BJ, White N, Graham HK. Surgical correction of equinus deformity in children with cerebral palsy: a systematic review. J Child Orthop. 2010;4(4):277-90.",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de paralisia cerebral."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0438": {
@@ -6252,15 +6266,19 @@
   "conferido": false
  },
  "pediatria-0518": {
+  "conceito": "**As osteocondroses.** São distúrbios dos **núcleos de ossificação** (epífises e apófises) de crianças e adolescentes. Algumas são verdadeiras necroses avasculares (Kienböck, Freiberg, Perthes); outras, como a doença de Sever, são **apofisites de tração**, em que a inserção de um tendão forte sobrecarrega a cartilagem de crescimento.\n\n**Os principais epônimos.**\n| Epônimo | Local |\n|---|---|\n| **Sever** | **Apófise do calcâneo** (inserção do tendão calcâneo) |\n| Osgood-Schlatter / Sinding-Larsen-Johansson | Tuberosidade da tíbia / polo inferior da patela |\n| **Köhler** | Navicular do pé |\n| **Freiberg** | **Cabeça do 2º metatarso** |\n| Iselin | Base do 5º metatarso |\n| **Panner** | **Capítulo do úmero** |\n| **Kienböck** | **Semilunar** |\n| Preiser | Escafoide do carpo |\n| **Thiemann** | Epífises das **falanges** da mão |\n| Scheuermann | Placas terminais vertebrais |\n\n**A doença de Sever.** É a causa mais comum de **dor no calcanhar** da criança ativa, de **8 a 13 anos**, sobretudo meninos que praticam futebol, basquete e corrida. Na fase de crescimento rápido, o osso cresce mais depressa que o tríceps sural se alonga; a tensão do tendão calcâneo e o impacto repetido irritam a apófise.\n- **Clínica**: dor posterior no calcâneo ao correr e ao calçar chuteira; **teste de compressão** lateral-medial do calcâneo (squeeze) doloroso; tríceps sural encurtado. É bilateral em até 60%.\n- **Radiografia**: a apófise costuma estar **fragmentada e esclerótica**, mas esse aspecto também aparece em crianças sem dor; o diagnóstico é **clínico**. A radiografia serve para excluir fratura, tumor e infecção.\n- **Tratamento**: conservador, autolimitado até o fechamento da apófise: redução da atividade, **alongamento** do tríceps sural, **calcanheira** de silicone, gelo e analgésicos; gesso por curto período nos casos rebeldes.",
+  "correta": "**Correta: A (doença de Sever).** É a apofisite de tração da apófise do calcâneo, causa mais comum de dor no calcanhar do adolescente esportista; o diagnóstico é clínico e o tratamento, conservador.",
   "incorretas": {
-   "B": "A doença de Panner acomete o capítulo do úmero.",
-   "C": "A doença de Freiberg acomete a cabeça do 2º metatarso.",
-   "D": "A doença de Kienböck é a necrose do semilunar.",
-   "E": "A doença de Thiemann acomete as epífises das falanges da mão."
+   "B": "A **doença de Panner** é a osteocondrose do **capítulo do úmero**, em crianças de até 10 anos.",
+   "C": "A **doença de Freiberg** é a osteonecrose da **cabeça do 2º metatarso**, mais comum em meninas adolescentes.",
+   "D": "A **doença de Kienböck** é a osteonecrose do **semilunar**, típica do adulto jovem.",
+   "E": "A **doença de Thiemann** acomete as epífises das **falanges** da mão."
   },
-  "conceito": "A **doença de Sever** é a **apofisite do calcâneo**: inflamação da apófise posterior por **tração repetida** do **tendão calcâneo** e da fáscia plantar.\n\n**O perfil**: criança ou adolescente de **8 a 13 anos**, ativo, em esportes de corrida e salto, sobretudo **futebol**; a **chuteira com travas** e sem amortecimento no calcanhar piora. É a **causa mais comum de dor no calcanhar** nessa idade.\n\n**O exame**: dor à **compressão lateromedial** do calcâneo (squeeze test) e na inserção do tendão; muitas vezes encurtamento do tríceps sural.\n\n**A radiografia**: a apófise do calcâneo **normal** já é mais densa e fragmentada; esses achados **não fazem** o diagnóstico. A radiografia serve para afastar outras causas (fratura, cisto, tumor).\n\n**O tratamento**: repouso relativo, gelo, **calcanheira** de silicone, alongamento do tríceps e troca do calçado. É **autolimitada** e resolve quando a apófise se funde.\n\n**Outras osteocondroses**:\n\n**Panner**: capítulo do úmero;\n\n**Freiberg**: cabeça do 2º metatarso;\n\n**Kienböck**: semilunar;\n\n**Thiemann**: epífises das falanges da mão.\n\n**Na prova**: osteocondrose da apófise do calcâneo = **doença de Sever**.",
-  "correta": "A doença de Sever é a apofisite do calcâneo, comum em crianças que jogam futebol de chuteira.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de condições do pé.",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo do pé."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0519": {
@@ -6905,17 +6923,18 @@
   "conferido": false
  },
  "pediatria-0568": {
+  "conceito": "**As fraturas de transição do tornozelo.** A fise distal da tíbia não fecha toda de uma vez: o fechamento começa no **centro**, avança para **medial** e termina na parte **anterolateral**, ao longo de cerca de **18 meses** (entre 12 e 15 anos nas meninas, 14 e 18 nos meninos). Nesse período, a parte lateral ainda aberta é o ponto fraco, e surgem as **fraturas de transição**: a de **Tillaux** e a **triplanar**.\n\n**A fratura de Tillaux juvenil.** É a avulsão do fragmento **anterolateral** da epífise distal da tíbia, a última parte da fise a fechar. O mecanismo é a **rotação lateral (externa)** do pé: o **ligamento tibiofibular anteroinferior** (que vai do tubérculo de Chaput, na tíbia, à fíbula) fica tenso e arranca o canto anterolateral da epífise, que ainda não está protegido pela fise fechada.\n\n| Aspecto | Tillaux | Triplanar |\n|---|---|---|\n| Planos do traço | Dois (sagital pela epífise e axial pela fise) | Três (acrescenta o coronal na metáfise posterior) |\n| Salter-Harris | **III** (às vezes descrita como IV) | II no perfil, III no AP; IV em três dimensões |\n| Mecanismo | Rotação externa | Rotação externa |\n\n**A classificação.** O traço desce pela epífise até a articulação e corre pela fise lateral aberta, sem fragmento metafisário: é um **Salter-Harris III**. Quando o traço sagital se estende à metáfise, alguns autores a descrevem como **Salter-Harris IV**.\n\n**O tratamento.** A **tomografia** mede o desvio. Com **desvio articular maior que 2 mm**, faz-se a redução (fechada, com rotação interna do pé, ou aberta) e a fixação com **parafuso epifisário** paralelo à articulação, que pode cruzar a fise, porque ela está quase fechada e o risco de deformidade é mínimo. O objetivo é a congruência articular para evitar artrose.",
+  "correta": "**Correta: C (lateral, por tração do ligamento tibiofibular anteroinferior).** A rotação externa do pé tensiona o ligamento tibiofibular anteroinferior, que arranca o fragmento anterolateral da epífise distal da tíbia, a última parte da fise a fechar.",
   "incorretas": {
-   "A": "O ligamento está certo, mas o mecanismo é rotação lateral, não medial.",
-   "B": "Erra os dois pontos: a rotação é lateral e o ligamento é o anteroinferior.",
-   "D": "A rotação lateral está certa, mas o ligamento que arranca o fragmento é o anteroinferior."
+   "A": "O ligamento está correto, mas o mecanismo é a rotação **lateral** (externa), que é a que tensiona o ligamento anteroinferior.",
+   "B": "Nem o mecanismo nem o ligamento estão corretos: a rotação é lateral e o fragmento é **anterior**, arrancado pelo ligamento anteroinferior.",
+   "D": "A rotação lateral está correta, mas o fragmento é **anterolateral**, arrancado pelo ligamento **anteroinferior**; o posteroinferior está ligado ao fragmento de Volkmann."
   },
-  "conceito": "A **fratura de Tillaux juvenil** acontece no adolescente perto do fim do crescimento, quando só a parte **anterolateral** da fise distal da tíbia ainda está aberta (a fise fecha de central para medial e, por último, lateral).\n\n**O mecanismo**: **rotação lateral (externa)** do pé em relação à perna. Nessa rotação, o **ligamento tibiofibular anteroinferior**, que vai da fíbula à parte anterolateral da epífise da tíbia, fica tenso e **arranca** o fragmento anterolateral ainda solto pela fise aberta.\n\n**O resultado**: uma fratura **Salter-Harris III** anterolateral, com traço vertical pela epífise até a articulação.\n\n**Como reduzir**: fazendo o movimento contrário, **rotação interna** do pé, às vezes com pressão direta sobre o fragmento. Se o degrau articular continuar acima de 2 mm na tomografia, redução aberta e parafuso epifisário.\n\n**O ligamento tibiofibular posteroinferior** se prende à parte posterior da tíbia; não é ele que arranca o fragmento de Tillaux.\n\n**Na prova**: a fratura de Tillaux é provocada por **rotação lateral**, com tração do **ligamento tibiofibular anteroinferior**.",
-  "correta": "Na rotação externa do pé, o ligamento tibiofibular anteroinferior arranca a parte anterolateral da epífise, ainda aberta.",
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), Cap. 29"
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), capítulo de fraturas da tíbia distal e do tornozelo.",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de fraturas do tornozelo."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0569": {
@@ -7526,17 +7545,18 @@
   "conferido": false
  },
  "pediatria-0615": {
+  "conceito": "**As fraturas de transição do tornozelo.** A fise distal da tíbia não fecha toda de uma vez: o fechamento começa no **centro**, avança para **medial** e termina na parte **anterolateral**, ao longo de cerca de **18 meses** (entre 12 e 15 anos nas meninas, 14 e 18 nos meninos). Nesse período, a parte lateral ainda aberta é o ponto fraco, e surgem as **fraturas de transição**: a de **Tillaux** e a **triplanar**.\n\n**A fratura de Tillaux juvenil.** É a avulsão do fragmento **anterolateral** da epífise distal da tíbia, a última parte da fise a fechar. O mecanismo é a **rotação lateral (externa)** do pé: o **ligamento tibiofibular anteroinferior** (que vai do tubérculo de Chaput, na tíbia, à fíbula) fica tenso e arranca o canto anterolateral da epífise, que ainda não está protegido pela fise fechada.\n\n| Aspecto | Tillaux | Triplanar |\n|---|---|---|\n| Planos do traço | Dois (sagital pela epífise e axial pela fise) | Três (acrescenta o coronal na metáfise posterior) |\n| Salter-Harris | **III** (às vezes descrita como IV) | II no perfil, III no AP; IV em três dimensões |\n| Mecanismo | Rotação externa | Rotação externa |\n\n**A classificação.** O traço desce pela epífise até a articulação e corre pela fise lateral aberta, sem fragmento metafisário: é um **Salter-Harris III**. Quando o traço sagital se estende à metáfise, alguns autores a descrevem como **Salter-Harris IV**.\n\n**O tratamento.** A **tomografia** mede o desvio. Com **desvio articular maior que 2 mm**, faz-se a redução (fechada, com rotação interna do pé, ou aberta) e a fixação com **parafuso epifisário** paralelo à articulação, que pode cruzar a fise, porque ela está quase fechada e o risco de deformidade é mínimo. O objetivo é a congruência articular para evitar artrose.",
+  "correta": "**Correta: C (Salter-Harris III ou IV).** A fratura de Tillaux é classicamente um Salter-Harris III (traço pela epífise e pela fise lateral, sem fragmento metafisário); quando o traço se estende à metáfise, alguns autores a descrevem como IV.",
   "incorretas": {
-   "A": "As Salter-Harris I e II não são intra-articulares, e a Tillaux é.",
-   "B": "A Salter-Harris II não descreve a Tillaux, que entra na articulação.",
-   "D": "A Salter-Harris I não descreve a Tillaux, que atravessa a epífise."
+   "A": "Os tipos **I e II** não atravessam a epífise até a articulação; a Tillaux é uma fratura **articular**.",
+   "B": "O tipo III está correto, mas o **II** tem fragmento **metafisário** e não atinge a articulação, ao contrário da Tillaux.",
+   "D": "O tipo **I** passa só pela fise, sem traço epifisário; não descreve a Tillaux."
   },
-  "conceito": "A **fratura de Tillaux juvenil** é uma **fratura transicional** do tornozelo, no adolescente perto do fim do crescimento.\n\n**A base**: a fise distal da tíbia fecha de **central** para **medial** e, por último, **lateral**. Durante alguns meses, só a parte **anterolateral** continua aberta.\n\n**O mecanismo**: **rotação externa** do pé; o **ligamento tibiofibular anteroinferior** arranca o fragmento **anterolateral** da epífise.\n\n**A classificação**:\n\n**Salter-Harris III**: a descrição clássica; o traço desce **vertical pela epífise** até a articulação e segue **horizontal pela fise** ainda aberta;\n\n**Salter-Harris IV**: alguns autores a classificam assim, quando o traço também atravessa um pedaço da metáfise.\n\n**Em qualquer caso, é intra-articular**: Salter-Harris I e II não entram na articulação e não descrevem a Tillaux.\n\n**O tratamento**: tomografia para medir o degrau e o afastamento; acima de **2 mm**, redução e fixação com parafuso epifisário. Como a fise já está fechando, o risco de alteração de crescimento é pequeno; o objetivo é a congruência articular.\n\n**Na prova**: a fratura de Tillaux pode ser classificada como **Salter-Harris III ou IV**.",
-  "correta": "A Tillaux é intra-articular, classicamente Salter-Harris III, descrita por alguns como IV.",
   "referencias": [
-   "Canale & Beaty: Campbell’s Operative Orthopaedics 13th Ed. 1550 Pg (referência indicada na prova TARO 2017, questão 53)"
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), capítulo de fraturas da tíbia distal e do tornozelo.",
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), capítulo de fraturas e luxações em crianças."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0616": {
