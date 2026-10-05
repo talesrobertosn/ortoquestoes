@@ -769,20 +769,20 @@
   "conferido": false
  },
  "pediatria-0051": {
+  "conceito": "**As mucopolissacaridoses (MPS).** São doenças de **depósito lisossômico**: falta uma enzima que degrada os **glicosaminoglicanos** (antigos mucopolissacarídeos), que se acumulam em ossos, cartilagens, vísceras, córnea, coração e sistema nervoso. A herança é **autossômica recessiva**, exceto a de Hunter (**ligada ao X**). O diagnóstico é feito pela dosagem dos glicosaminoglicanos na urina e pela atividade enzimática.\n\n**Os tipos que o ortopedista precisa conhecer.**\n| Tipo | Principais achados |\n|---|---|\n| **I, Hurler** (grave; Scheie é a leve) | **Retardo**, face grosseira, **opacidade de córnea**, **giba** toracolombar, displasia do quadril, túnel do carpo |\n| **II, Hunter** | **Ligada ao X** (meninos); **sem** opacidade de córnea |\n| **III, Sanfilippo** | Predomínio **neurológico**; alterações esqueléticas leves |\n| **IV, Morquio** | **Inteligência normal**, nanismo de tronco curto, **genu valgo**, **instabilidade C1-C2** (odontoide hipoplásico) |\n| VI, Maroteaux-Lamy | Inteligência normal; alterações semelhantes às de Hurler |\n\n**Os pontos ortopédicos.**\n- **Morquio**: avaliar a **coluna cervical** (radiografia dinâmica e ressonância) antes de qualquer anestesia; a instabilidade C1-C2 pode causar **mielopatia** e morte súbita; se instável, **artrodese occipitocervical**.\n- **Hurler**: **cifose** toracolombar (giba) pela vértebra em \"bico\" anteroinferior, displasia do quadril progressiva, **túnel do carpo** e dedos em gatilho em crianças pequenas (algo raro fora das MPS).\n- **Disostose múltipla**: o conjunto de alterações radiográficas (costelas em remo, vértebras ovoides com bico, metacarpos afilados proximalmente, ilíacos alargados e acetábulos rasos).\n\n**O tratamento.** **Reposição enzimática** (laronidase na MPS I, idursulfase na II, elosulfase na IV) e **transplante de células-tronco hematopoéticas** na Hurler antes dos 2 anos, que preserva a cognição, mas não impede as alterações esqueléticas.\n\n**A frequência.** Pela fonte da prova, **Hurler e Morquio** são as mais frequentes; a ordem varia entre países e conforme a triagem neonatal (em várias séries, a MPS II e a MPS III também aparecem entre as mais comuns).",
+  "correta": "**Correta: A (Hurler e Morquio), segundo a fonte da prova.** As síndromes de Hurler (MPS I) e Morquio (MPS IV) são apresentadas pela fonte como as mucopolissacaridoses mais frequentes, embora a ordem varie entre populações.",
   "incorretas": {
    "B": "Morquio está certo, mas Hunter não forma o par mais frequente pela fonte da prova.",
    "C": "Nem Hunter nem Sanfilippo formam o par cobrado.",
    "D": "Hurler está certo, mas Sanfilippo não forma o par cobrado."
   },
-  "conceito": "As **mucopolissacaridoses** são doenças de depósito: falta uma enzima que degrada os glicosaminoglicanos, que se acumulam nos tecidos. Os tipos que o ortopedista precisa conhecer:\n\n**tipo I, Hurler** (forma grave; a forma leve é a de Scheie): herança recessiva; **retardo**, face grosseira, **opacidade de córnea**, cifose toracolombar (giba);\n\n**tipo II, Hunter**: **ligada ao X**; sem opacidade de córnea;\n\n**tipo III, Sanfilippo**: predomínio **neurológico**;\n\n**tipo IV, Morquio**: **inteligência normal**, nanismo de tronco curto, genu valgo e, o mais importante, **instabilidade C1-C2** por odontoide hipoplásico;\n\n**tipo VI, Maroteaux-Lamy**: inteligência normal.\n\n**Os pontos ortopédicos**:\n\n**Morquio**: **avaliar a coluna cervical** antes de qualquer anestesia; se instável, artrodese occipitocervical;\n\n**Hurler**: cifose, displasia do quadril, túnel do carpo e dedos em gatilho múltiplos;\n\n**tratamento**: reposição enzimática e transplante de medula óssea (Hurler).\n\n**A frequência**: pela fonte da prova, **Hurler e Morquio** são as mais frequentes; a ordem varia entre países e conforme a triagem neonatal.\n\n**Na prova**: MPS mais frequentes (fonte da prova) = **Hurler e Morquio**.",
-  "correta": "Pela fonte da prova, Hurler e Morquio são as mucopolissacaridoses mais frequentes, embora a ordem varie entre populações.",
-  "alerta": "A frequência relativa das MPS varia conforme país, triagem neonatal e critério diagnóstico. O par Hurler–Morquio deve ser lido como resposta epidemiológica da fonte da prova, não como ordem universal para todas as populações.",
   "referencias": [
    "A basic understanding of mucopolysaccharidosis. https://pmc.ncbi.nlm.nih.gov/articles/PMC7062595/",
    "Mucopolysaccharidoses: clinical spectrum and frequency. https://pubmed.ncbi.nlm.nih.gov/28292383/",
    "Epidemiology of mucopolysaccharidoses in the United States. https://pmc.ncbi.nlm.nih.gov/articles/PMC8164808/"
   ],
-  "geradoEm": "2026-10-04",
+  "alerta": "A frequência relativa das MPS varia conforme país, triagem neonatal e critério diagnóstico. O par Hurler–Morquio deve ser lido como resposta epidemiológica da fonte da prova, não como ordem universal para todas as populações.",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0052": {
@@ -1397,14 +1397,18 @@
   "conferido": false
  },
  "pediatria-0092": {
-  "conceito": "### Escápula alada\n| Causa | Nervo | Músculo | Escápula |\n|---|---|---|---|\n| ==torácico longo== | C5 a C7 | ==serrátil anterior== | **medial** (ângulo inferior para medial) |\n| acessório espinal | XI par | trapézio | lateral, ombro caído |\n| dorsal da escápula | C5 | romboides | lateral, discreta |\n\n### Lesão do torácico longo\n- Tração (esportes, mochila), compressão, iatrogênica (mastectomia, drenagem torácica), Parsonage-Turner.\n- Observação por 12 a 24 meses (muitas recuperam).\n\n### Transferências na paralisia crônica\n| Paralisia | Transferência de escolha |\n|---|---|\n| ==serrátil (torácico longo)== | ==peitoral maior (cabeça esternal) ao ângulo inferior da escápula==, geralmente com enxerto de fáscia lata |\n| trapézio (acessório) | **Eden-Lange**: levantador da escápula e romboides lateralizados (ou trapézio inferior) |\n\n- Salvamento: **escapulotoracodese**.\n\n### Distrofia facioescapuloumeral\n- Autossômica dominante (4q35, DUX4); assimétrica, progressiva.\n- Acomete face, ==estabilizadores da escápula== (trapézio, romboides, serrátil, elevador) e úmero.\n- ==Deltoide preservado==.\n- Cirurgia: ==escapulotoracodese== (artrodese escapulotorácica): base estável para o deltoide, elevação de cerca de 60° para mais de 120°.\n\n> **Na prova:** músculo preservado na FSH = ==deltoide==",
-  "correta": "**Deltoide.**\n- Preservado enquanto os periescapulares falham.\n- Fundamenta a escapulotoracodese.",
+  "conceito": "**A distrofia muscular facioescapuloumeral (FSH).** É uma das distrofias musculares mais comuns. Tem herança **autossômica dominante** (tipo 1, ligado à contração da região D4Z4 do cromossomo 4q35, que libera a expressão tóxica do gene **DUX4**). Começa geralmente na **adolescência** ou no adulto jovem, com evolução lenta e frequentemente **assimétrica**.\n\n**O padrão de fraqueza.**\n| Região | Achados |\n|---|---|\n| **Face** | Fraqueza do orbicular dos olhos e da boca: não fecha os olhos com força, não assobia, sorriso transverso |\n| **Cintura escapular** | **Estabilizadores da escápula**: **trapézio**, **serrátil anterior**, **romboides** e levantador da escápula; **escápula alada** |\n| **Braço** | Bíceps e tríceps (o \"braço de Popeye\", com antebraço preservado) |\n| Membros inferiores | Tibial anterior (pé caído), em fases mais avançadas |\n\n**O deltoide preservado.** O **deltoide** é classicamente **preservado** na FSH. O problema do ombro não é o motor do braço, e sim a **escápula**: sem trapézio e serrátil, ela não se estabiliza no tórax e roda quando o deltoide contrai, de modo que a força do deltoide se perde e a criança não consegue elevar o braço acima de 90°.\n\n**O tratamento ortopédico: a escapulotoracodese.** A **fixação da escápula** às costelas (artrodese escapulotorácica, com placas, fios ou parafusos e enxerto) cria uma base estável para o **deltoide** funcionar. É justamente porque o deltoide está preservado que a cirurgia melhora a elevação do braço (ganho de cerca de 30° a 40° de flexão e abdução). Antes de indicar, faz-se o **teste**: o examinador fixa manualmente a escápula contra o tórax e pede para o paciente elevar o braço; se a elevação melhora, a cirurgia é indicada.\n\n**As complicações** incluem pneumotórax, lesão do plexo braquial, perda de função respiratória e pseudartrose.",
+  "correta": "**Correta: A (deltoide).** Na FSH, o deltoide é preservado; a fraqueza está nos estabilizadores da escápula, e por isso a fixação escapulotorácica devolve a base para o deltoide elevar o braço.",
   "incorretas": {
-   "B": "**Acometido.**\n- Participa da escápula alada.",
-   "C": "**Acometidos.**\n- Periescapulares.",
-   "D": "**Acometido.**\n- Periescapular."
+   "B": "O **trapézio** é um dos estabilizadores da escápula **acometidos**, o que causa a escápula alada.",
+   "C": "Os **romboides** também estão fracos na FSH.",
+   "D": "O **levantador da escápula** está entre os músculos periescapulares acometidos."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de doenças neuromusculares.",
+   "Copeland SA, Levy O, Warner GC, Dodenhoff RM. The shoulder in patients with muscular dystrophy. Clin Orthop Relat Res. 1999;(368):80-91."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0093": {
@@ -2758,14 +2762,18 @@
   "conferido": false
  },
  "pediatria-0197": {
+  "conceito": "**A anatomia dos meniscos.** Os meniscos são fibrocartilagens em forma de meia-lua que **aumentam a congruência** entre os côndilos femorais e o platô tibial, distribuem a carga (transmitem cerca de 50% a 70% dela), absorvem impacto e contribuem para a estabilidade.\n\n**As diferenças entre os meniscos.**\n| Aspecto | Medial | Lateral |\n|---|---|---|\n| Forma | Em **\"C\"** aberto, mais largo atrás | Quase **circular** (\"O\") |\n| Fixação periférica | **Firme**: aderido à cápsula e ao **colateral medial** profundo | **Mais solta**: o hiato do **poplíteo** interrompe a fixação |\n| Mobilidade | Menor (por isso rompe mais) | Maior (cerca de 1 cm) |\n\n**As fixações do menisco.**\n- **Ligamentos coronários** (meniscotibiais): fibras curtas da cápsula que prendem a **borda periférica** dos meniscos à **borda superior da tíbia**. No menisco medial, o coronário prende firmemente o **corno posterior**.\n- **Ligamento transverso** (intermeniscal): une os cornos anteriores.\n- **Ligamentos meniscofemorais** de **Humphrey** (anterior ao cruzado posterior) e de **Wrisberg** (posterior a ele): ligam o corno posterior do menisco **lateral** ao côndilo femoral medial.\n- **Inserções radiculares** (raízes) dos cornos anterior e posterior no platô intercondilar.\n\n**O ligamento oblíquo posterior** é um reforço capsular posteromedial que se insere no corno posterior do menisco medial e estabiliza o joelho, mas não é a estrutura que fixa o menisco à borda da tíbia. O **poplíteo** se relaciona com o menisco lateral.\n\n**A importância.** Na criança e no adolescente, a lesão em **rampa** (ruptura da junção meniscocapsular posterior do menisco medial, ligada ao coronário) acompanha a lesão do cruzado anterior e deve ser procurada e reparada. As lesões periféricas, na zona vascular (zona \"vermelha\", o terço externo), têm bom potencial de cicatrização; na criança, a vascularização meniscal é maior que no adulto, e o **reparo** deve ser sempre preferido.",
+  "correta": "**Correta: A (do ligamento coronário).** Os ligamentos coronários (meniscotibiais) prendem a borda periférica dos meniscos à borda superior da tíbia; no menisco medial, fixam firmemente o corno posterior.",
   "incorretas": {
-   "B": "O ligamento oblíquo posterior reforça a cápsula posteromedial; não é a fixação tibial do menisco.",
-   "C": "O tendão do poplíteo se relaciona com o menisco lateral, pelo hiato poplíteo.",
-   "D": "Os ligamentos de Humphrey e Wrisberg ligam o menisco lateral ao côndilo femoral medial."
+   "B": "O **ligamento oblíquo posterior** é um reforço capsular posteromedial que se relaciona com o corno posterior, mas não é a fixação do menisco à borda da tíbia.",
+   "C": "O tendão do **poplíteo** se relaciona com o menisco **lateral**, cujo hiato interrompe a fixação periférica.",
+   "D": "Os ligamentos de **Humphrey e Wrisberg** são **meniscofemorais** e ligam o menisco **lateral** ao côndilo femoral medial."
   },
-  "conceito": "Os **meniscos** são presos à tíbia e ao fêmur por ligamentos próprios. Saber qual liga o quê ajuda nas lesões e no menisco discoide:\n\n**ligamento coronário** (meniscotibial): prende a **borda periférica** do menisco à **borda superior da tíbia**; é a fixação tibial dos dois meniscos, inclusive do **corno posterior do medial**;\n\n**ligamento transverso** (intermeniscal): une os **cornos anteriores** dos dois meniscos;\n\n**ligamentos meniscofemorais de Humphrey e Wrisberg**: saem do corno posterior do **menisco lateral** e vão ao **côndilo femoral medial**; o de Humphrey passa à frente do LCP, e o de Wrisberg, atrás;\n\n**tendão do poplíteo**: relaciona-se com o **menisco lateral**, passando pelo hiato poplíteo; o lateral é mais móvel por isso;\n\n**ligamento oblíquo posterior**: reforço da cápsula **posteromedial**; não é a fixação tibial do menisco.\n\n**A relação com o menisco discoide**: no tipo **Wrisberg**, falta justamente o ligamento coronário posterior do menisco lateral; preso só pelo ligamento de Wrisberg, o menisco fica hipermóvel.\n\n**Na prova**: o corno posterior do menisco medial se prende à tíbia pelo **ligamento coronário**.",
-  "correta": "O ligamento coronário, ou meniscotibial, prende a borda do menisco à borda superior da tíbia.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), capítulo de lesões do joelho.",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de condições do joelho."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0198": {
@@ -3871,14 +3879,18 @@
   "conferido": false
  },
  "pediatria-0323": {
+  "conceito": "**A deficiência femoral congênita.** Também chamada de **deficiência femoral focal proximal** (PFFD, no espectro mais grave) ou **fêmur curto congênito** (nas formas leves). É uma falha do desenvolvimento do fêmur, sobretudo da sua parte **proximal**, que vai desde um fêmur discretamente curto até a quase ausência do osso.\n\n**As características.**\n- Fêmur **curto** (do encurtamento leve a menos da metade do lado normal), com coxa vara, retroversão e pseudartrose subtrocantérica nas formas graves;\n- **acetábulo displásico** ou ausente;\n- coxa curta, em flexão, abdução e rotação externa, com o pé na altura do joelho oposto nos casos graves;\n- **joelho instável**, com ausência dos cruzados.\n\n**As associações.** A deficiência femoral congênita se associa à **hemimelia fibular** em **50% a 80%** dos casos: as duas fazem parte do mesmo espectro das **deficiências pós-axiais** do membro inferior. O pé costuma ter equinovalgo, ausência de raios laterais e coalizão tarsal.\n\n**A classificação.**\n| Classificação | Base |\n|---|---|\n| **Aitken** (A a D) | Presença da cabeça femoral e do acetábulo, e a conexão entre a cabeça e a diáfise |\n| **Paley** (1 a 4) | Orienta a reconstrução: tipo 1 (fêmur intacto, com ossificação normal ou retardada) até tipo 4 (fêmur distal ausente) |\n| Gillespie e Torode | Fêmur curto alongável versus ausência proximal grave |\n\n**O tratamento.** Depende da discrepância prevista e da estabilidade do quadril e do joelho. Nas formas leves e moderadas: **reconstrução** do quadril (superquadril de Paley) e do joelho seguida de **alongamentos** sucessivos. Nas formas graves: **prótese** com ou sem amputação de Syme, **rotacionoplastia de Van Nes** (o tornozelo rodado 180° funciona como joelho na prótese) ou fusão do joelho com amputação.",
+  "correta": "**Correta: D (hemimelia fibular).** A deficiência femoral congênita se associa à hemimelia fibular em 50% a 80% dos casos; ambas fazem parte do espectro das deficiências pós-axiais do membro inferior.",
   "incorretas": {
-   "A": "A pseudartrose congênita da tíbia se associa à neurofibromatose, não à deficiência femoral.",
-   "B": "A hemimelia tibial é pré-axial e se associa sobretudo à polidactilia pré-axial.",
-   "C": "A polidactilia, sobretudo a pré-axial, se associa à hemimelia tibial."
+   "A": "A **pseudartrose congênita da tíbia** está associada à neurofibromatose tipo 1, e não à deficiência femoral.",
+   "B": "A **hemimelia tibial** é uma deficiência **pré-axial**, rara, e não é a associação típica da deficiência femoral.",
+   "C": "A **polidactilia** pode acompanhar a hemimelia tibial, mas não é a associação típica da deficiência femoral."
   },
-  "conceito": "As **deficiências congênitas dos membros** costumam aparecer em **grupos**, porque surgem do mesmo erro de desenvolvimento num mesmo lado do membro.\n\n**A deficiência femoral congênita** (incluindo a deficiência femoral focal proximal): fêmur curto, quadril em flexão, abdução e rotação externa. Associa-se com frequência à:\n\n**hemimelia fibular**: em cerca de **metade** dos casos; as duas são deficiências do lado **pós-axial** e fazem parte do mesmo espectro;\n\n**ausência ou hipoplasia do LCA** e instabilidade do joelho;\n\n**pé com raios laterais ausentes** e coalizão tarsal.\n\n**As outras associações das alternativas**:\n\n**pseudartrose congênita da tíbia**: liga-se à **neurofibromatose tipo 1**, não à deficiência femoral;\n\n**hemimelia tibial**: é deficiência **pré-axial**; associa-se à **polidactilia pré-axial** (dedos extras no lado do hálux) e a outras malformações.\n\n**Por que importa**: diante de uma criança com fêmur curto, procurar a fíbula, o pé e os cruzados. O plano de tratamento (alongamento, rotacionplastia, amputação de Syme) depende do conjunto.\n\n**Na prova**: a deficiência congênita do fêmur se associa à **hemimelia fibular**.",
-  "correta": "A hemimelia fibular acompanha cerca de metade das deficiências congênitas do fêmur, no mesmo espectro pós-axial.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de deficiências congênitas dos membros.",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo de deficiências dos membros."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0326": {
@@ -4297,18 +4309,18 @@
   "conferido": false
  },
  "pediatria-0357": {
+  "conceito": "**A doença de Legg-Calvé-Perthes e a classificação de Catterall.** Perthes é a necrose avascular idiopática da cabeça femoral em crescimento, típica de meninos entre **4 e 8 anos**. Catterall (1971) classificou a doença pela **extensão do acometimento** da epífise, vista nas radiografias em AP e perfil durante a fase de fragmentação:\n\n| Grupo | Extensão do acometimento | Achados |\n|---|---|---|\n| **I** | Apenas a parte **anterior** da epífise | Sem sequestro nem colapso; metáfise preservada |\n| **II** | Até **metade** anterior | Sequestro central, com colunas medial e lateral preservadas |\n| **III** | Cerca de **três quartos** | Só uma pequena parte posterior preservada; sequestro grande e alterações metafisárias |\n| **IV** | **Toda** a cabeça | Colapso total, achatamento e alterações metafisárias difusas |\n\n**Os sinais de \"cabeça em risco\".** Catterall descreveu ainda sinais de mau prognóstico: **sinal de Gage** (rarefação em V na parte lateral da epífise), **calcificação lateral** à epífise, **subluxação lateral**, **horizontalização da fise** e **alterações metafisárias** difusas.\n\n**As fases da doença (Waldenström).** Inicial (esclerose e epífise menor), **fragmentação** (a epífise se divide em pedaços com áreas radiotransparentes), **reossificação** (osso novo preenche a epífise) e residual (forma final). Para responder a pergunta é preciso juntar as duas informações: **quanto** da cabeça está acometido e **em que fase** está.\n\n**A limitação.** A classificação de Catterall tem **baixa concordância** entre observadores e só pode ser aplicada após a fragmentação. Por isso, hoje se usa mais a de **Herring** (pilar lateral), que tem maior valor prognóstico.\n\n**A classificação de Stulberg em detalhe.** Avalia, na **maturidade**, a forma da cabeça e a congruência com o acetábulo, usando círculos concêntricos (gabarito de Mose):\n| Classe | Descrição |\n|---|---|\n| **I** | Cabeça **normal** e esférica |\n| **II** | Cabeça **esférica** (encaixa no mesmo círculo em AP e perfil), mas com **coxa magna**, colo curto ou acetábulo vertical: **congruência esférica** |\n| **III** | Cabeça **ovoide** ou em cogumelo (não esférica, mas sem achatamento), com acetábulo adaptado: **congruência não esférica** |\n| **IV** | Cabeça **achatada**, com mais de **1 cm** de achatamento na área de carga, e **acetábulo também achatado**: **congruência não esférica** |\n| **V** | Cabeça **achatada** com colo e acetábulo **normais**: **incongruência não esférica** |\n\n**O prognóstico.** Classes I e II: artrose **rara** na vida adulta. Classes III e IV: artrose **na meia-idade** (a partir dos 40 a 50 anos). Classe V: artrose **precoce**, antes dos 50 anos, por incongruência entre a cabeça achatada e o acetábulo redondo.\n\n**A versão modificada (Herring e colaboradores).** Usa critérios mais simples, com três grupos (I e II: esférica; III: ovoide; IV e V: achatada), para melhorar a concordância entre observadores.",
+  "correta": "**Correta: C (IV, com congruência não esférica, achatamento da cabeça maior que 1 cm nas áreas de carga e acetábulo achatado).** Na classe IV, a cabeça e o acetábulo se achatam juntos, mantendo a congruência, mas não a esfericidade.",
   "incorretas": {
-   "A": "No tipo II a cabeça continua esférica, dentro de 2 mm; não há perda de esfericidade.",
-   "B": "O tipo III é de congruência não esférica, com cabeça ovoide sem achatamento; não é incongruência esférica.",
-   "D": "No tipo V a cabeça é achatada e o acetábulo é normal; a alternativa inverte os dois."
+   "A": "Na classe **II**, a cabeça permanece **esférica** (dentro de 2 mm do círculo); a alteração é coxa magna, colo curto ou acetábulo vertical.",
+   "B": "A classe **III** é de congruência **não esférica**, com cabeça ovoide; \"incongruência esférica\" não descreve nenhuma classe.",
+   "D": "Na classe **V**, a cabeça é **achatada** e o acetábulo é **normal** (esférico), o que gera incongruência; a descrição está invertida."
   },
-  "conceito": "A **classificação de Stulberg** avalia o **resultado final** da doença de Perthes, na maturidade esquelética. Ela olha a **forma da cabeça** e a **congruência** com o acetábulo, que juntas preveem a artrose:\n\n**classe I**: cabeça **normal**;\n\n**classe II**: **congruência esférica**: a cabeça continua **esférica** (dentro de 2 mm em círculos concêntricos), mas grande (coxa magna), com colo curto ou acetábulo inclinado;\n\n**classe III**: **congruência não esférica**: cabeça **ovoide** ou em cogumelo, **sem achatamento**, com acetábulo acompanhando;\n\n**classe IV**: **congruência não esférica**: cabeça **achatada mais de 1 cm** na área de carga, com o **acetábulo também achatado**; as duas superfícies se encaixam, apesar de não serem esféricas;\n\n**classe V**: **incongruência não esférica**: cabeça **achatada** com **acetábulo normal**; as superfícies não se encaixam.\n\n**O prognóstico**: classes I e II, sem artrose; III e IV, artrose na idade adulta média; V, artrose grave e precoce.\n\n**Na prova**: Stulberg IV = **congruência não esférica**, cabeça **achatada mais de 1 cm** e **acetábulo achatado**.",
-  "correta": "No tipo IV, cabeça e acetábulo estão achatados e se encaixam: congruência não esférica, com achatamento maior que 1 cm.",
   "referencias": [
    "Stulberg SD, Cooperman DR, Wallensten R. The natural history of Legg-Calvé-Perthes disease. J Bone Joint Surg Am. 1981.",
    "Legg-Calve-Perthes disease. Part I: Classification of radiographs with use of the modified lateral pillar and Stulberg classifications. PMID: 15466719."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0358": {
@@ -4385,14 +4397,18 @@
   "conferido": false
  },
  "pediatria-0363": {
-  "conceito": "### Menisco discoide\nQuase sempre **lateral**. Classificação de **Watanabe**:\n- **Completo:** cobre todo o platô; estável.\n- **Incompleto:** cobre parcialmente; estável.\n- **Tipo Wrisberg:** sem inserção **posterior** no platô, preso só pelo ligamento de Wrisberg; ==instável==.\n\n### Clínica por idade\n- **Criança pequena**, sobretudo no tipo Wrisberg ou com instabilidade periférica:\n  - **joelho em ressalto** (snapping knee), um **estalo audível/visível** na extensão;\n  - ==limitação da extensão== final.\n  - Muitas vezes **sem dor**.\n- **Criança maior / adolescente:** **dor**, derrame e bloqueio por **lesão** do menisco discoide.\n\n### Imagem\n- **Radiografia:** espaço articular lateral alargado, côndilo lateral achatado, platô lateral côncavo.\n- **RM:** \"**gravata-borboleta**\" contínua em **3 ou mais cortes sagitais** consecutivos de 4 a 5 mm.\n\n### Tratamento\n- **Assintomático:** observação.\n- **Sintomático:** **saucerização** artroscópica, deixando ~6 a 8 mm de borda, e **sutura** da instabilidade periférica.\n- Evitar meniscectomia total.\n\n> **Na prova:** criança pequena com discoide = ==ressalto + falta de extensão==.",
-  "correta": "**Ressalto e limitação da extensão.**\n- Quadro clássico do discoide instável na criança pequena.",
+  "conceito": "**O menisco discoide.** É uma variação anatômica em que o menisco, em vez de ter forma de \"C\" ou de meia-lua, é **largo e em disco**, cobrindo boa parte do platô tibial. Quase sempre é o **menisco lateral** (prevalência de 1% a 5%, maior em asiáticos, até 15%), e é **bilateral** em cerca de 20%.\n\n**A classificação de Watanabe.**\n| Tipo | Descrição |\n|---|---|\n| **I** (completo) | Cobre todo o platô; inserções periféricas normais |\n| **II** (incompleto) | Cobre parte do platô; inserções normais |\n| **III** (Wrisberg) | Forma variável, **sem a inserção posterior** (coronário): só preso pelo ligamento meniscofemoral de **Wrisberg**: **instável** |\n\nA classificação de **Ahn** (pela ressonância) descreve o sentido do deslocamento do menisco instável (anterocentral, posterocentral, central), o que orienta o reparo.\n\n**A apresentação por idade.**\n- **Criança pequena**: o menisco discoide **instável** (sobretudo o tipo Wrisberg) se desloca durante o movimento: é a \"**síndrome do joelho que estala**\" (snapping knee). O menisco salta com um **ressalto** audível e visível, em geral perto da extensão, e a criança tem **limitação da extensão** final. Costuma haver pouca dor.\n- **Criança maior e adolescente**: o menisco discoide, mais espesso e com fibras desorganizadas, tende a **romper**: dor, derrame, bloqueio e falseio, como na lesão meniscal do adulto.\n\n**O diagnóstico.** A radiografia pode mostrar o espaço articular lateral **alargado**, o côndilo femoral lateral achatado e a cabeça da fíbula alta. A **ressonância** confirma: o corpo do menisco aparece em **três ou mais cortes sagitais** consecutivos de 5 mm (sinal da \"gravata-borboleta\" contínua).\n\n**O tratamento.** O menisco discoide **assintomático** é observado. O sintomático é tratado por artroscopia com **saucerização** (remodelação para a forma em C, deixando uma borda de 6 a 8 mm) e **reparo** da periferia instável. A **meniscectomia total**, usada no passado, leva a **artrose** precoce do compartimento lateral e foi abandonada.",
+  "correta": "**Correta: D (ressalto e limitação da extensão).** Na criança pequena, o menisco discoide instável se desloca durante o movimento, produzindo o ressalto (joelho que estala) e a perda da extensão final, geralmente com pouca dor.",
   "incorretas": {
-   "A": "**Dor e claudicação.**\n- Inespecíficos; não é o quadro típico da criança pequena.",
-   "B": "**Dor e bloqueio.**\n- Mais comuns na criança **maior** com o discoide **lesado**.",
-   "C": "**Ressalto e instabilidade.**\n- O ressalto está certo, mas o par clássico é com a **limitação da extensão**."
+   "A": "Dor e claudicação são inespecíficas; na criança pequena, o menisco discoide costuma ser pouco doloroso.",
+   "B": "Dor e **bloqueio** articular são mais típicos da **ruptura** do menisco discoide na criança maior e no adolescente.",
+   "C": "O **ressalto** está certo, mas a criança não tem instabilidade ligamentar; o achado associado é a limitação da extensão."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de condições do joelho.",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo do joelho."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0364": {
@@ -4437,15 +4453,19 @@
   "conferido": false
  },
  "pediatria-0367": {
+  "conceito": "**A paralisia cerebral (PC).** É um grupo de distúrbios **permanentes** do movimento e da postura, causados por uma lesão **não progressiva** do encéfalo **imaturo** (fetal ou nos primeiros anos). A lesão não progride, mas as consequências musculoesqueléticas (contraturas, luxação do quadril, escoliose) **progridem** com o crescimento. A prevalência é de cerca de **2 a 3 por 1.000** nascidos vivos.\n\n**Os fatores de risco pelo momento da lesão.**\n| Momento | Fatores |\n|---|---|\n| **Pré-natal** (a maioria) | Infecções congênitas (TORCH), malformações cerebrais, **gestação múltipla**, **incompatibilidade Rh**, trombofilias, corioamnionite |\n| **Perinatal** | **Prematuridade** (o principal fator), baixo peso, asfixia, hiperbilirrubinemia grave |\n| **Pós-natal** | Meningite, encefalite, trauma craniano, quase afogamento |\n\n**A incompatibilidade Rh e o kernicterus.** Na doença hemolítica do recém-nascido, a mãe Rh negativo sensibilizada produz anticorpos que destroem as hemácias do bebê Rh positivo. A bilirrubina indireta sobe, atravessa a barreira hematoencefálica imatura e se deposita nos **núcleos da base**: é o **kernicterus**. O resultado típico é a **PC discinética** (atetoide), com surdez neurossensorial e paralisia do olhar vertical. Com a imunoglobulina anti-D e a fototerapia, essa causa ficou rara nos países desenvolvidos.\n\n**A classificação pelo tipo de movimento (SCPE).** O tipo de distúrbio reflete o **local** da lesão:\n| Tipo | Local da lesão | Características |\n|---|---|---|\n| **Espástico** (o mais comum, cerca de 80%) | **Piramidal**: córtex motor e trato corticoespinal | Hipertonia dependente da velocidade, reflexos exaltados, Babinski |\n| **Discinético** | **Extrapiramidal**: **núcleos da base** e tálamo | Movimentos involuntários, tônus flutuante |\n| **Atáxico** | **Cerebelo** | Falta de coordenação e equilíbrio, tremor de intenção |\n\n**Os dois subtipos discinéticos.**\n- **Distônico**: predomina a **hipocinesia** com **hipertonia**; o corpo assume **posturas anormais sustentadas**, torcidas, que mudam com a emoção e o esforço. É o subtipo **mais comum**.\n- **Coreoatetoide**: predomina a **hipercinesia** com tônus baixo; movimentos rápidos (coreia) e lentos, contorcidos (atetose).\n\n**As causas típicas do discinético.** **Asfixia** grave no bebê a termo (lesão dos núcleos da base e do tálamo) e **kernicterus**.\n\n**Para o ortopedista.** A cirurgia é mais previsível no **espástico**. No **discinético**, o tônus variável torna o resultado de alongamentos e transferências incerto (transferências tendíneas são, em geral, contraindicadas), e a **mielopatia cervical** por movimentos repetidos do pescoço é uma complicação a lembrar no adulto.",
+  "correta": "**Correta: D (distônico), segundo a banca.** A lesão extrapiramidal dos núcleos da base causa a paralisia cerebral discinética, cujo subtipo mais comum é o distônico, com posturas anormais sustentadas e tônus flutuante.",
   "incorretas": {
    "A": "O tipo atáxico vem de lesão do cerebelo.",
    "B": "O atetoide também é discinético e extrapiramidal, mas a banca considerou o distônico, o subtipo predominante.",
    "C": "O tipo espástico vem de lesão piramidal, não dos núcleos da base."
   },
-  "conceito": "A **paralisia cerebral** é classificada pelo tipo de alteração do movimento, que reflete onde está a lesão:\n\n**espástico**: lesão **piramidal** (córtex motor e trato corticoespinal); hipertonia que aumenta com a velocidade e reflexos exaltados; o tipo mais comum;\n\n**discinético**: lesão **extrapiramidal**, nos **núcleos da base**; movimentos involuntários e tônus flutuante;\n\n**atáxico**: lesão do **cerebelo**; falta de coordenação e de equilíbrio.\n\n**Os dois subtipos discinéticos** (pela classificação europeia SCPE):\n\n**distônico**: predomina a **hipocinesia** com **hipertonia**, e o corpo assume **posturas anormais sustentadas**, que se torcem e mudam com a emoção e o esforço; é o subtipo **mais comum**;\n\n**coreoatetoide**: predomina a **hipercinesia** com tônus baixo; movimentos rápidos, involuntários e contorcidos.\n\n**As causas típicas**: asfixia no bebê a termo e **kernicterus** (hiperbilirrubinemia).\n\n**Para o ortopedista**: a cirurgia é mais previsível no espástico; no discinético, o tônus variável torna o resultado incerto.\n\n**Na prova**: a lesão extrapiramidal predominante nos núcleos da base foi associada pela banca ao tipo **distônico**.",
-  "correta": "O distônico é o subtipo discinético mais comum, por lesão dos núcleos da base, com posturas sustentadas e tônus flutuante.",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de paralisia cerebral.",
+   "Surveillance of Cerebral Palsy in Europe (SCPE). Surveillance of cerebral palsy in Europe: a collaboration of cerebral palsy surveys and registers. Dev Med Child Neurol. 2000;42(12):816-24."
+  ],
   "alerta": "Atetoide e distônico são ambos discinéticos, por lesão dos núcleos da base. A banca considerou apenas o distônico, o subtipo discinético mais frequente.",
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0368": {
@@ -4554,17 +4574,18 @@
   "conferido": false
  },
  "pediatria-0375": {
+  "conceito": "**O quadril doloroso agudo na criança.** A criança que **manca** e **não apoia** o membro por dor no quadril exige um raciocínio rápido: a principal preocupação é a **artrite séptica**, uma **urgência** que destrói a cartilagem e a cabeça femoral em horas a dias. A causa mais comum, porém, é a **sinovite transitória**, benigna e autolimitada.\n\n**Os critérios de Kocher.** Ajudam a distinguir a artrite séptica da sinovite transitória:\n| Critério | Valor de corte |\n|---|---|\n| **Febre** | Maior que **38,5 °C** |\n| **Incapacidade de apoiar** o membro | Presente |\n| **VHS** | Maior que **40 mm/h** |\n| **Leucócitos** | Maior que **12.000/mm³** |\n| **PCR** (acrescentado por Caird) | Maior que **2 mg/dL** |\n\n**A probabilidade de artrite séptica** com 0, 1, 2, 3 e 4 critérios é de cerca de 0,2%, 3%, 40%, 93% e 99%, respectivamente.\n\n**O caso da questão.** A criança tem **7 anos**, dor há 1 dia e dificuldade de apoiar (1 critério), mas está **afebril** (37,2 °C), com **VHS de 27** (abaixo de 40), **leucócitos normais** (5.000) e **PCR baixa** (menor que 0,5 mg/dL). Com apenas 1 critério, a probabilidade de artrite séptica é baixa: o diagnóstico mais provável é a **sinovite transitória**.\n\n**A sinovite transitória.** É a causa mais comum de dor aguda no quadril entre **3 e 8 anos**, mais em meninos, muitas vezes após uma **infecção viral** das vias aéreas. A ultrassonografia mostra **derrame**. O tratamento é **repouso** e anti-inflamatório; melhora em dias, e a resolução completa ocorre em 1 a 2 semanas. Deve-se reavaliar a criança em 24 a 48 horas: piora ou febre indicam **punção** do quadril.\n\n**Os outros diagnósticos.** A **epifisiólise** ocorre no adolescente (10 a 16 anos), com quadro mais arrastado e rotação externa obrigatória (sinal de Drehmann). A **psoíte** (abscesso do psoas) causa febre, quadril em flexão e dor à extensão, com marcadores inflamatórios elevados.",
+  "correta": "**Correta: D (sinovite transitória).** A criança está afebril, com leucócitos normais, VHS abaixo de 40 e PCR baixa; com apenas um critério de Kocher (não apoia), a probabilidade de artrite séptica é baixa, e o diagnóstico mais provável é a sinovite transitória.",
   "incorretas": {
-   "A": "A psoíte cursa com febre, sinais infecciosos e dor à extensão do quadril.",
-   "B": "A epifisiólise é do adolescente e evolui em semanas, não de forma aguda aos 7 anos.",
-   "C": "A artrite séptica exigiria febre e marcadores inflamatórios elevados."
+   "A": "A **psoíte** cursa com febre, quadril em flexão e marcadores inflamatórios elevados, ausentes neste caso.",
+   "B": "A **epifisiólise** é típica do adolescente (10 a 16 anos), com quadro mais arrastado; aos 7 anos é improvável.",
+   "C": "A **artrite séptica** costuma ter febre alta, leucocitose, VHS acima de 40 e PCR elevada; aqui, só a dificuldade de apoio está presente."
   },
-  "conceito": "Na criança que **manca com dor aguda no quadril**, a primeira pergunta é: **sinovite transitória** ou **artrite séptica**? Os **critérios de Kocher** ajudam:\n\n**febre** acima de 38,5 °C;\n\n**não apoiar** o membro;\n\n**VHS** acima de 40 mm/h;\n\n**leucócitos** acima de 12.000;\n\ne a **PCR** acima de 2 mg/dL (Caird).\n\n**Aplicando ao caso**: criança de 7 anos, dor há 1 dia, temperatura de **37,2 °C** (sem febre), **VHS de 27** (normal), **leucócitos de 5.000** (normais), **PCR abaixo de 0,5** (normal). O único critério presente é a **dificuldade de apoiar**. Com um critério, a chance de artrite séptica é de cerca de 3%.\n\n**O diagnóstico**: **sinovite transitória**, a causa mais comum de dor no quadril entre 3 e 8 anos, muitas vezes depois de uma virose; autolimitada, melhora em 1 a 2 semanas com repouso e anti-inflamatório.\n\n**Os outros diagnósticos**:\n\n**psoíte** (abscesso do psoas): febre, sinais infecciosos e dor à extensão do quadril;\n\n**epifisiólise**: adolescente, em geral obeso, com evolução de semanas;\n\n**artrite séptica**: febre alta e marcadores inflamatórios elevados.\n\n**Na prova**: criança afebril, com exames normais e dor aguda aos 7 anos = **sinovite transitória**.",
-  "correta": "Só um critério de Kocher e exames inflamatórios normais apontam para sinovite transitória.",
   "referencias": [
-   "Kocher MS, Zurakowski D, Kasser JR. Differentiating between septic arthritis and transient synovitis of the hip in children: an evidence-based clinical prediction algorithm. J Bone Joint Surg Am. 1999;81:1662-1670. PMID: 10608376."
+   "Kocher MS, Zurakowski D, Kasser JR. Differentiating between septic arthritis and transient synovitis of the hip in children: an evidence-based clinical prediction algorithm. J Bone Joint Surg Am. 1999;81:1662-1670. PMID: 10608376.",
+   "Caird MS, Flynn JM, Leung YL, Millman JE, D'Italia JG, Dormans JP. Factors distinguishing septic arthritis from transient synovitis of the hip in children. J Bone Joint Surg Am. 2006;88(6):1251-7."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0376": {
@@ -6795,18 +6816,18 @@
   "conferido": false
  },
  "pediatria-0549": {
+  "conceito": "**A fratura da metáfise proximal da tíbia (fratura de Cozen).** É uma fratura aparentemente simples, típica de crianças de **3 a 6 anos**, muitas vezes em **galho verde** ou incompleta, com abertura da cortical **medial**. O seu problema é o **valgo progressivo** que aparece nos meses seguintes, mesmo quando a fratura foi bem reduzida: o **fenômeno de Cozen**.\n\n**As causas propostas para o valgo.**\n| Teoria | Explicação |\n|---|---|\n| **Hipercrescimento medial** | A hiperemia da consolidação estimula mais a fise do lado medial da tíbia |\n| **Interposição de partes moles** | **Pata de ganso** (sartório, grácil e semitendíneo), periósteo ou colateral medial presos no foco medial, impedindo o fechamento |\n| **Fíbula íntegra** | Funciona como tirante lateral e limita o crescimento lateral |\n| Redução incompleta | O foco medial fica aberto (valgo residual) |\n\n**A evolução natural.** O valgo aparece nos primeiros **6 a 12 meses**, atinge o máximo em até **18 a 24 meses** e, na maioria das crianças, **corrige espontaneamente** de forma parcial ou completa ao longo de vários anos, à medida que a tíbia cresce e remodela.\n\n**O tratamento.**\n- **Avisar os pais** desde o início que o valgo pode surgir, mesmo com tratamento correto.\n- Redução fechada sob anestesia, com o joelho em **extensão** e força em **varo**, fechando a cortical medial; gesso inguinopodálico moldado em varo.\n- Se a cortical medial não fecha, suspeitar de **interposição** (pata de ganso, periósteo): a exploração e a liberação podem ser necessárias.\n- No valgo estabelecido, **observar** por pelo menos 18 a 24 meses; se não corrigir e for grave, **hemiepifisiodese medial** (placa em 8) ou osteotomia (com risco de recidiva). A osteotomia precoce é **evitada**, porque o valgo tende a voltar.\n\n**O mecanismo e a cortical em tensão.** A fratura de Cozen ocorre por força em **valgo** sobre a tíbia proximal. Pela mecânica, a força em valgo coloca a **cortical medial em tensão** (ela se abre) e a **lateral em compressão** (ela entorta sem romper), produzindo o galho verde com abertura medial. A banca, porém, indicou como resposta o valgo com fratura em tensão da cortical **lateral**.",
+  "correta": "**Correta: C (valgo com fratura em tensão da cortical lateral), segundo a banca.** A força em valgo é o mecanismo; mecanicamente, porém, a cortical em tensão no valgo é a medial, o que tornaria a alternativa D defensável.",
   "incorretas": {
    "A": "O mecanismo da fratura de Cozen é em valgo, não em varo.",
    "B": "O mecanismo é em valgo, não em varo.",
    "D": "Mecanicamente, a cortical medial é a que fica em tensão no valgo, mas a banca não aceitou esta alternativa."
   },
-  "conceito": "A **fratura de Cozen** é a fratura da **metáfise proximal da tíbia** na criança pequena, muitas vezes em **galho verde**, com a fíbula íntegra.\n\n**O mecanismo**: força em **valgo** sobre a tíbia proximal. Pela mecânica, a força em valgo coloca a **cortical medial em tensão** (ela se abre) e a **lateral em compressão** (ela entorta sem romper). A banca, porém, indicou como resposta o valgo com fratura em tensão da cortical **lateral**; a descrição usual seria a cortical medial, e a alternativa D seria defensável num recurso.\n\n**A evolução**: mesmo com boa redução, a tíbia pode ir para **valgo progressivo** nos meses seguintes (fenômeno de Cozen), com pico em 12 a 18 meses, e tende a remodelar em 2 a 4 anos.\n\n**As explicações para o valgo**: crescimento maior da parte medial da fise por hiperemia, tração da fíbula intacta e **interposição** de partes moles no lado medial (pata de ganso, periósteo).\n\n**A conduta**: gesso inguinopodálico em extensão e moldado em varo; explorar se o lado medial ficar aberto; avisar os pais; evitar osteotomia precoce, que recidiva.\n\n**Na prova**: a banca indicou força em **valgo** com fratura em tensão da cortical **lateral**.",
-  "correta": "A força em valgo está certa; a banca indicou a cortical lateral, embora mecanicamente a cortical em tensão no valgo seja a medial.",
-  "alerta": "Pela mecânica, a força em valgo coloca a cortical medial em tensão, e é ela que se rompe na fratura de Cozen; a alternativa D seria a descrição usual. A banca indicou C.",
   "referencias": [
    "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), Cap. 28"
   ],
-  "geradoEm": "2026-10-04",
+  "alerta": "Pela mecânica, a força em valgo coloca a cortical medial em tensão, e é ela que se rompe na fratura de Cozen; a alternativa D seria a descrição usual. A banca indicou C.",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0550": {
@@ -8009,17 +8030,18 @@
   "conferido": false
  },
  "pediatria-0639": {
+  "conceito": "**A fratura supracondiliana do úmero na criança.** É a fratura do cotovelo mais comum da infância, com pico entre **5 e 7 anos**. Cerca de **97%** são do tipo em **extensão**: queda com a mão espalmada e o cotovelo em hiperextensão; o olécrano funciona como fulcro e a região supracondiliana, fina, quebra.\n\n**A classificação de Gartland (modificada).**\n| Tipo | Descrição |\n|---|---|\n| I | Sem desvio |\n| II | Desvio com a **cortical posterior** íntegra (dobradiça) |\n| III | Desvio **completo** |\n| IV | Instabilidade multidirecional (periósteo rompido), definida na redução |\n\n**A direção do desvio.** No tipo em extensão, o fragmento distal desvia para **posterior**. No plano coronal, o desvio mais comum é o **posteromedial** (cerca de 75% dos tipos III), porque a força da queda costuma ter um componente de rotação interna e o periósteo lateral é rompido. O restante é **posterolateral**.\n\n**Por que a direção importa.**\n| Desvio do fragmento distal | Estrutura em risco |\n|---|---|\n| **Posteromedial** | O fragmento proximal empurra para **lateral**: **nervo radial** |\n| **Posterolateral** | O fragmento proximal empurra para **medial**: **artéria braquial** e **nervo mediano** (interósseo anterior) |\n\nO nervo **mais lesado no geral** é o **interósseo anterior** (ramo do mediano). O **ulnar** é lesado sobretudo no tipo em **flexão** e na fixação com fio medial (iatrogênica).\n\n**O tratamento.** Tipo I: gesso. Tipos II desviados, III e IV: **redução fechada** e fixação com **fios percutâneos** (dois ou três laterais divergentes, ou cruzados com cuidado com o ulnar). A **mão sem pulso, mas rosada** (bem perfundida) após a redução pode ser observada com vigilância; a mão **sem pulso e mal perfundida** exige exploração vascular. A complicação mais comum a longo prazo é o **cúbito varo** (deformidade em \"coronha de espingarda\"), por redução com rotação e varo residual.\n\n**O interósseo anterior.** É um ramo **puramente motor** do mediano (flexor longo do polegar, flexor profundo do indicador e pronador quadrado). No desvio **posterolateral** do fragmento distal, o fragmento proximal se projeta para **anterior e medial** e estira o feixe que contém o nervo mediano e a artéria braquial: o interósseo anterior é o primeiro a sofrer. A lesão aparece como incapacidade de fazer o sinal de \"OK\" (pinça achatada), com sensibilidade normal, e quase sempre se recupera espontaneamente em semanas a meses.",
+  "correta": "**Correta: C (extensão e desvio posterolateral).** No tipo em extensão com desvio posterolateral, o fragmento proximal se projeta para medial e estira o feixe do mediano, lesando o interósseo anterior.",
   "incorretas": {
-   "A": "A fratura em flexão se associa à lesão do nervo ulnar.",
-   "B": "A flexão com desvio posteromedial não é o padrão clássico da lesão do interósseo anterior.",
-   "D": "No desvio posteromedial, o fragmento proximal vai para lateral e o nervo em risco é o radial."
+   "A": "O **tipo em flexão** está associado à lesão do **nervo ulnar**, e não do interósseo anterior.",
+   "B": "No tipo em flexão, o nervo mais lesado é o **ulnar**.",
+   "D": "No desvio **posteromedial**, o fragmento proximal se projeta para lateral e lesa o **nervo radial**."
   },
-  "conceito": "Na **fratura supracondiliana do úmero**, o nervo mais lesado é o **interósseo anterior** (ramo motor do mediano). A lesão depende do **tipo** de fratura e da **direção** do desvio:\n\n**extensão com desvio posterolateral** do fragmento distal: o fragmento **proximal** se projeta para **medial** e anterior, onde passam o **nervo mediano**, o **interósseo anterior** e a **artéria braquial**; estes são estirados ou comprimidos;\n\n**extensão com desvio posteromedial**: o fragmento proximal se projeta para **lateral**, onde passa o **nervo radial**;\n\n**flexão** (fragmento distal anterior): risco para o **nervo ulnar**;\n\n**iatrogênica**: o **pino medial** pode lesar o nervo **ulnar**, sobretudo com o cotovelo em hiperflexão.\n\n**Como testar o interósseo anterior**: pedir o **sinal de \"OK\"** (pinça com as pontas do polegar e do indicador). É um nervo **motor puro**: sem teste específico, a lesão passa despercebida.\n\n**A evolução**: a maioria das lesões causadas pela fratura é **neuropraxia**, com recuperação em 2 a 3 meses; observar.\n\n**Na prova**: a lesão do interósseo anterior se associa à supracondiliana em **extensão** com desvio **posterolateral**.",
-  "correta": "No desvio posterolateral, o fragmento proximal vai para medial e estira o mediano e o interósseo anterior.",
   "referencias": [
-   "Browner BD, Jupiter JB, Levine AM, Trafton PG. Skeletal trauma: basic science, management and reconstruction. 5aedição. Philadelphia: Saunders, 2015. 5 Ed. 187 Pg (referência indicada na prova TARO 2019, questão 50)"
+   "Browner BD, Jupiter JB, Levine AM, Trafton PG. Skeletal trauma: basic science, management and reconstruction. 5aedição. Philadelphia: Saunders, 2015. 5 Ed. 187 Pg (referência indicada na prova TARO 2019, questão 50)",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), capítulo de fraturas supracondilianas do úmero."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0640": {
