@@ -48,16 +48,19 @@
   "formato": "corrido"
  },
  "tumores-0005": {
-  "conceito": "**O estadiamento AJCC para sarcomas ósseos** apendiculares combina tamanho, grau e metástase. O **T1** vai até 8 cm, o **T2** passa de 8 cm e o **T3** é o tumor **descontínuo no mesmo osso**, a lesão saltitante ou skip. Os estágios **IA e IB** são de baixo grau, e **IIA e IIB**, de alto grau, separados pelo tamanho; o **estágio III** é o **T3 de alto grau**, ou seja, com metástase saltitante; o **IVA** tem metástase **pulmonar**, e o **IVB**, metástase em outros sítios ou em linfonodo.\n\n**Enneking segue outra lógica**: estágio I para baixo grau, II para alto grau (A intracompartimental e B extracompartimental) e III para qualquer metástase, inclusive a saltitante. Por isso é preciso ler com atenção qual sistema a questão pede.\n\n**Na prova:** AJCC III é **metástase saltitante**, o T3 de alto grau.",
-  "correta": "**Metástases saltitantes.** O estágio III da AJCC é o T3 de alto grau, com tumor descontínuo no mesmo osso.",
+  "conceito": "**Para que serve estadiar.** O estadiamento resume a **extensão** do tumor e o seu **comportamento biológico**, e orienta o tratamento e o prognóstico. Nos sarcomas ósseos, os dois sistemas mais usados são o de **Enneking** (MSTS), cirúrgico, e o do **AJCC**.\n\n**O estadiamento do AJCC para os sarcomas ósseos (apendiculares).** Combina o **tamanho** do tumor, o **grau** histológico, a presença de **metástases** e de focos **descontínuos**.\n\n| Estágio | Características |\n|---|---|\n| **I** (IA, IB) | **Baixo grau**; IA com tumor de até 8 cm, IB maior que 8 cm |\n| **II** (IIA, IIB) | **Alto grau**; IIA até 8 cm, IIB maior que 8 cm |\n| **III** | Tumores **descontínuos** no **mesmo osso**: as **metástases saltitantes** (skip metastases) |\n| **IVA** | Metástases **pulmonares** |\n| **IVB** | Metástases **extrapulmonares** (outros ossos) ou em **linfonodos** |\n\n**As metástases saltitantes.** São focos tumorais **no mesmo osso** do tumor principal (ou do outro lado da articulação vizinha), separados dele por osso **normal**. Elas acontecem sobretudo no **osteossarcoma**. Têm **prognóstico ruim**, próximo ao da doença metastática. Por isso:\n- a **ressonância** de estadiamento deve incluir o **osso inteiro**, de uma articulação à outra;\n- a ressecção deve englobar os focos saltitantes.\n\n**Por que as metástases pulmonares têm estágio próprio.** O pulmão é o local mais comum de metástase dos sarcomas, e a metástase pulmonar **isolada** e ressecável tem prognóstico melhor que as extrapulmonares. Por isso o AJCC separa a **IVA** (pulmonar) da **IVB** (óssea ou linfonodal).\n\n**O estadiamento de Enneking, para comparar.**\n- **I**: baixo grau (IA intracompartimental, IB extracompartimental).\n- **II**: alto grau (IIA intracompartimental, IIB extracompartimental).\n- **III**: metástase à distância.\n- Para os tumores **benignos**: 1 (latente), 2 (ativo) e 3 (agressivo).\n\n**Os exames de estadiamento.** Ressonância do osso inteiro, **tomografia de tórax**, cintilografia óssea ou **PET-CT** e, no Ewing, biópsia de medula óssea.",
+  "correta": "**Correta: A (metástases saltitantes).** No estadiamento do AJCC para os sarcomas ósseos, o **estágio III** corresponde aos tumores **descontínuos** no mesmo osso, as metástases saltitantes (skip metastases). As metástases pulmonares são o estágio IVA, e as extrapulmonares, o IVB.",
   "incorretas": {
-   "B": "**São os estágios I e II.** Sem metástases, os estágios se separam por grau e tamanho.",
-   "C": "**É o IVA.** Metástase pulmonar tem estágio próprio e, se ressecável, ainda permite cura.",
-   "D": "**É o IVB.** Metástase fora do pulmão tem o pior prognóstico."
+   "B": "A **ausência de metástases** corresponde aos estágios **I e II**, separados pelo grau histológico e pelo tamanho.",
+   "C": "As metástases **pulmonares** correspondem ao estágio **IVA**.",
+   "D": "As metástases **extrapulmonares** (outros ossos, linfonodos) correspondem ao estágio **IVB**."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
+   "Amin MB, Edge SB, Greene FL, et al., eds. AJCC Cancer Staging Manual. 8ª edição. Springer; 2017."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "tumores-0006": {
   "conceito": "**Fratura patológica no osteossarcoma.** No passado, a fratura indicava amputação, porque o hematoma contamina os compartimentos vizinhos. Hoje a **preservação do membro** é possível, com sobrevida comparável, desde que a ressecção inclua todo o hematoma. Durante a quimioterapia neoadjuvante, a fratura é tratada de forma **conservadora**, com imobilização, órtese ou tração: a osteossíntese espalharia tumor pelo canal medular e por novos compartimentos, além do risco de infecção no paciente neutropênico. A **quimioterapia é mantida**, porque o controle sistêmico pesa mais no prognóstico.\n\n**Depois**, faz-se a ressecção ampla com reconstrução, e a necrose tumoral de **90% ou mais** (bom respondedor, pelo critério de **Huvos**) é forte preditor de sobrevida.\n\n**Na prova:** fratura patológica durante a quimioterapia é **tratamento conservador, mantendo a quimioterapia**.",

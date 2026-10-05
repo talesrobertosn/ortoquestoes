@@ -2360,14 +2360,18 @@
   "conferido": false
  },
  "conceitos-basicos-0248": {
-  "conceito": "### As etapas do biofilme\n- **Condicionamento:** o implante é revestido por proteínas do hospedeiro (fibronectina, fibrinogênio, colágeno).\n- **Adesão:** a bactéria adere a elas pelas adesinas; primeiro reversível, depois **irreversível**.\n- **Maturação:** a bactéria produz a ==matriz exopolissacarídea== (glicocálix), dentro da qual as células vivem em baixa atividade metabólica.\n- **Dispersão:** liberação de bactérias para novos sítios.\n\n### Por que o biofilme maduro é um problema\n- A matriz impede o **antibiótico** e as **células de defesa** de alcançarem as bactérias.\n- Bactérias em baixa atividade toleram concentrações de antibiótico muito maiores.\n\n### A consequência\nBiofilme maduro (infecção crônica) em geral exige **remover o implante**. Por isso a janela da infecção precoce, antes da maturação, permite tentar manter o implante.\n\n> **Na prova:** maturação do biofilme = ==matriz exopolissacarídea==.",
-  "correta": "**Matriz exopolissacarídea.**\n- O glicocálix define a maturação.",
+  "conceito": "**O biofilme.** É uma comunidade de bactérias **aderidas a uma superfície** (um implante, um osso necrótico) e envolvidas por uma **matriz** que elas mesmas produzem. Nessa forma, as bactérias se comportam de modo muito diferente das bactérias \"livres\" (planctônicas): crescem devagar, trocam sinais entre si e ficam **protegidas** das defesas do hospedeiro e dos antibióticos.\n\n**As etapas da formação do biofilme.**\n1. **Condicionamento**: logo após a implantação, a superfície do implante é coberta por **proteínas do hospedeiro** (**fibronectina**, **fibrinogênio**, fibrina, colágeno). Essa camada serve de ponto de ancoragem.\n2. **Adesão**: as bactérias se prendem à superfície, primeiro de forma **reversível** e depois **irreversível**, por meio de adesinas que reconhecem essas proteínas.\n3. **Acúmulo e proliferação**: as bactérias se multiplicam e começam a produzir a matriz.\n4. **Maturação**: forma-se uma estrutura tridimensional, com canais de água, envolvida pela **matriz extracelular**, composta principalmente de **exopolissacarídeos** (o \"slime\" ou glicocálice), além de proteínas e DNA extracelular. A comunicação entre as bactérias (**quorum sensing**) coordena esse processo.\n5. **Dispersão**: grupos de bactérias se soltam e colonizam outras áreas, causando novas crises de infecção.\n\n**Por que o biofilme é tão difícil de tratar.**\n- A **matriz** dificulta a entrada dos antibióticos e das células de defesa.\n- As bactérias do biofilme crescem **devagar** e muitas ficam **dormentes** (células persistentes), e os antibióticos que agem em bactérias em multiplicação funcionam mal.\n- A concentração de antibiótico necessária para matar as bactérias no biofilme pode ser **centenas a milhares de vezes** maior.\n\n**As consequências para o ortopedista.**\n- As infecções **precoces** (primeiras semanas), com biofilme **imaturo**, podem ser tratadas com **desbridamento**, troca dos componentes móveis e **manutenção do implante** estável, com antibiótico.\n- As infecções **tardias**, com biofilme **maduro**, geralmente exigem a **retirada** do implante (troca em um ou dois tempos).\n- Os antibióticos com ação no biofilme (como a **rifampicina** nas infecções estafilocócicas) são associados ao tratamento.\n- Os germes mais comuns: ***Staphylococcus aureus*** e os **estafilococos coagulase-negativos** (*S. epidermidis*), grandes produtores de biofilme.",
+  "correta": "**Correta: D (matriz exopolissacarídea).** A maturação do biofilme está relacionada à deposição da **matriz extracelular**, composta principalmente de **exopolissacarídeos** (o slime ou glicocálice), produzida pelas próprias bactérias. Ela protege as bactérias dos antibióticos e das defesas do hospedeiro.",
   "incorretas": {
-   "A": "**Fase inicial.**\n- A fibronectina reveste o implante e serve de ancoragem.",
-   "B": "**Fase inicial.**\n- Mesmo papel de condicionamento.",
-   "C": "**Do hospedeiro.**\n- Não é matriz bacteriana."
+   "A": "A **fibronectina** é uma proteína do **hospedeiro** que reveste o implante na fase de **condicionamento** e facilita a **adesão** inicial, e não a maturação.",
+   "B": "O **fibrinogênio** também participa do **condicionamento** da superfície e da **adesão** bacteriana, e não da maturação do biofilme.",
+   "C": "Os **proteoglicanos** são componentes da matriz dos tecidos do hospedeiro (como a cartilagem), e não o principal componente da matriz do biofilme."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
+   "Zimmerli W, Trampuz A, Ochsner PE. Prosthetic-joint infections. N Engl J Med. 2004;351(16):1645-1654."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "conceitos-basicos-0249": {
