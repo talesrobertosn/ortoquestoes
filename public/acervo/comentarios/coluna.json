@@ -3809,35 +3809,37 @@
   "conferido": false
  },
  "coluna-0327": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "C",
-  "conceito": "**Claudicação neurogênica.** A extensão estreita o canal. Andar em esteira, descer ladeira e ficar em pé pioram; subir ladeira, empurrar carrinho e pedalar, com flexão, aliviam.\n\n**Na prova:** estenose melhora inclinado para a frente.",
-  "correta": "**Anda em esteira.** Caminhar ereto na esteira provoca os sintomas.",
+  "conceito": "**Estenose do canal lombar e a claudicação neurogênica.** A estenose degenerativa resulta da soma de protrusão discal, hipertrofia das facetas e do ligamento amarelo e, às vezes, espondilolistese degenerativa. As raízes da cauda equina ficam comprimidas e com fluxo sanguíneo e venoso prejudicado, sobretudo durante a atividade.\n\n**Por que a postura muda os sintomas.**\n- **Extensão** da coluna (ficar em pé, andar ereto, descer ladeira): o ligamento amarelo se dobra para dentro do canal, o disco abaula posteriormente e os forames diminuem. **Piora**.\n- **Flexão** (sentar, inclinar-se para frente, subir ladeira, empurrar carrinho de supermercado, pedalar): canal e forames se ampliam. **Alivia** (sinal do carrinho de compras).\n\n**Claudicação neurogênica x vascular.**\n\n| Característica | Neurogênica | Vascular |\n|---|---|---|\n| Alívio | Sentar ou fletir o tronco (minutos) | Parar em pé (segundos) |\n| Bicicleta | Tolerada (tronco fletido) | Provoca dor |\n| Subida de ladeira | Melhor | Pior |\n| Ficar em pé parado | Pode causar sintomas | Não causa |\n| Pulsos | Normais | Diminuídos |\n\n**O teste da esteira.** Na **esteira**, o paciente anda **ereto**, em extensão, e os sintomas surgem de forma reprodutível; com a esteira inclinada (subida), ou na bicicleta (teste de van Gelderen), o tronco flete e a tolerância aumenta. Essa diferença ajuda a separar a claudicação neurogênica da vascular.\n\n**Tratamento.** Fisioterapia com ênfase em flexão, analgesia, infiltrações; cirurgia (descompressão, com artrodese se houver instabilidade) quando há limitação importante da marcha ou déficit progressivo.\n\n> Estenose lombar piora em extensão (andar ereto, esteira, descer) e melhora em flexão (sentar, subir, pedalar).",
+  "correta": "**C: anda em esteira (resposta pela bibliografia).** Na esteira, o paciente caminha ereto, com a coluna em extensão, o que estreita o canal e reproduz a claudicação neurogênica.",
   "incorretas": {
-   "A": "**Sobe ladeira.** Subir ladeira flexiona a coluna e alivia.",
-   "B": "**Empurra objetos pesados.** Empurrar flexiona e alivia.",
-   "D": "**Pedala bicicleta.** Pedalar flexiona e alivia."
+   "A": "**Subir ladeira** inclina o tronco para frente, ampliando o canal; o paciente com estenose sobe melhor do que desce.",
+   "B": "**Empurrar objetos pesados** (como o carrinho de compras) é feito com o tronco fletido, posição que alivia os sintomas.",
+   "D": "**Pedalar bicicleta** mantém a coluna fletida; o paciente com estenose costuma tolerar bem, ao contrário do paciente com claudicação vascular."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 2064."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 2064.",
+   "Katz JN, Harris MB. Clinical practice. Lumbar spinal stenosis. N Engl J Med. 2008;358(8):818-825."
   ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "C",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "coluna-0328": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "D",
-  "conceito": "**Hérnia de disco torácica central.** Laminectomia simples tem alto risco de lesão medular. Para hérnias centrais, o acesso transtorácico (anterior) dá visão direta.\n\n**Na prova:** disco torácico central se opera por via anterior transtorácica.",
-  "correta": "**O transtorácico.** É o acesso indicado.",
+  "conceito": "**Hérnia de disco torácica central e a escolha do acesso.** A hérnia de disco torácica sintomática é rara (menos de 1% das hérnias operadas), mais comum entre T8 e T12. Frequentemente é **calcificada** e pode aderir à dura-máter. Os sintomas variam de dor torácica ou radicular em faixa até **mielopatia**.\n\n**Por que a laminectomia é perigosa.** A medula torácica tem o canal mais estreito da coluna, a irrigação é precária (zona de vascularização crítica entre T4 e T9) e a medula fica **anterior** ao acesso posterior, apoiada sobre a hérnia. Para alcançar o disco por trás, seria necessário **retrair a medula**, o que historicamente causou altas taxas de paraplegia. Por isso a laminectomia simples foi abandonada para hérnias torácicas.\n\n**Acessos e indicações.**\n\n| Acesso | Visão do disco | Melhor indicação |\n|---|---|---|\n| Laminectomia | Nenhuma, exige retrair a medula | Contraindicada |\n| Transpedicular / transfacetário | Posterolateral | Hérnias laterais ou paramedianas moles |\n| Costotransversectomia / extracavitário lateral | Lateral | Hérnias laterais e algumas paramedianas |\n| **Transtorácico (toracotomia ou toracoscopia)** | **Anterior, direta** | **Hérnias centrais, calcificadas, grandes** |\n\n**Por que o transtorácico nas hérnias centrais.** O acesso anterior permite ver **diretamente** a face ventral da medula e a hérnia, retirando-a sem manipular a medula; é especialmente importante nas hérnias calcificadas e com aderência dural. Stillerman e colaboradores, em grande série, mostraram melhores resultados com acessos que evitam retração medular. A toracoscopia reduz a morbidade da toracotomia.\n\n> Hérnia de disco torácica central: acesso anterior transtorácico; nunca laminectomia simples.",
+  "correta": "**D: o transtorácico (resposta pela bibliografia).** A via anterior transtorácica permite ver diretamente a hérnia central e a face ventral da medula, removendo o disco sem retração medular.",
   "incorretas": {
-   "A": "**Por laminectomia simples.** Contraindicada pelo risco neurológico.",
-   "B": "**O transpedicular.** É para hérnias laterais.",
-   "C": "**Por costotransversectomia.** É para hérnias laterais ou paracentrais."
+   "A": "**A laminectomia simples** exige retrair a medula para alcançar o disco anterior e está associada a altas taxas de lesão neurológica; está contraindicada.",
+   "B": "**O transpedicular** dá acesso posterolateral, adequado a hérnias laterais ou paramedianas moles; não permite ver bem a porção central sem manipular a medula.",
+   "C": "**A costotransversectomia** dá visão mais lateral que o transpedicular e serve a hérnias laterais; para hérnias centrais, especialmente calcificadas, o acesso anterior é superior."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 1995."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 1995.",
+   "Stillerman CB, Chen TC, Couldwell WT, Zhang W, Weiss MH. Experience in the surgical management of 82 symptomatic herniated thoracic discs and review of the literature. J Neurosurg. 1998;88(4):623-633."
   ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "D",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "coluna-0329": {

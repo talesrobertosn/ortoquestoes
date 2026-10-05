@@ -6193,19 +6193,20 @@
   "conferido": false
  },
  "mao-0603": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "C",
-  "conceito": "**Eaton-Littler.** I: articulação normal ou alargada. II: estreitamento com osteófitos menores que 2 mm. III: destruição articular, esclerose, cistos e osteófitos maiores que 2 mm. IV: acomete também a escafotrapeziotrapezoidal.\n\n**Na prova:** osteófito maior que 2 mm é estágio III; STT envolvida é IV.",
-  "correta": "**III.** São os achados do estágio III.",
+  "conceito": "**Rizartrose e a classificação de Eaton e Littler.** Rizartrose é a artrose da articulação **trapeziometacarpal** (base do polegar), muito comum em mulheres acima dos 50 anos. A articulação em sela permite grande mobilidade, mas sofre cargas altas na pinça (forças multiplicadas várias vezes na base). A frouxidão do **ligamento oblíquo anterior** (beak ligament) permite subluxação dorsorradial do metacarpal, desgaste da cartilagem volar e artrose.\n\n**Clínica.** Dor na base do polegar ao pinçar, abrir potes ou girar chaves; teste do **grind** (compressão axial com rotação) positivo; deformidade em adução do metacarpal com hiperextensão compensatória da metacarpofalângica (polegar em Z) nos casos avançados.\n\n**Classificação radiográfica de Eaton e Littler (modificada por Eaton e Glickel).**\n\n| Estágio | Achados |\n|---|---|\n| I | Contornos articulares normais; espaço normal ou alargado (sinovite, frouxidão) |\n| II | Leve estreitamento; osteófitos ou corpos livres **menores que 2 mm** |\n| **III** | **Destruição articular**, esclerose e cistos subcondrais, osteófitos **maiores que 2 mm** |\n| IV | Acometimento também da **escafotrapeziotrapezoidal** (pantrapezial) |\n\n**Tratamento por estágio.**\n- **Todos**: órtese, anti-inflamatórios, infiltração e terapia da mão como primeira linha.\n- **I**: reconstrução ligamentar (Eaton-Littler, com hemitendão do flexor radial do carpo) ou osteotomia de extensão do metacarpal.\n- **II a IV**: trapeziectomia (com ou sem reconstrução ligamentar e interposição tendínea, como LRTI), artrodese trapeziometacarpal (jovens e trabalhadores braçais, estágios II e III) ou artroplastia.\n- **IV**: trapeziectomia total, pois a artrodese ou a prótese trapeziometacarpal não tratam a escafotrapeziotrapezoidal.\n\n> Osteófito maior que 2 mm com destruição articular: estágio III; escafotrapeziotrapezoidal envolvida: estágio IV.",
+  "correta": "**C: III (resposta pela bibliografia).** O estágio III de Eaton e Littler reúne destruição articular, esclerose e cistos subcondrais e osteófitos maiores que 2 mm, com a escafotrapeziotrapezoidal ainda preservada.",
   "incorretas": {
-   "A": "**I.** Estágio inicial, sem destruição.",
-   "B": "**II.** Osteófitos menores que 2 mm.",
-   "D": "**IV.** Exige comprometimento da escafotrapeziotrapezoidal."
+   "A": "**O estágio I** mostra articulação normal ou alargada por sinovite e frouxidão, sem osteófitos.",
+   "B": "**O estágio II** tem estreitamento leve e osteófitos **menores que 2 mm**.",
+   "D": "**O estágio IV** é definido pelo acometimento da articulação escafotrapeziotrapezoidal, além da trapeziometacarpal."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 3717."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 3717.",
+   "Eaton RG, Glickel SZ. Trapeziometacarpal osteoarthritis. Staging as a rationale for treatment. Hand Clin. 1987;3(4):455-471."
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "C",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "mao-0604": {

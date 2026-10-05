@@ -3352,19 +3352,20 @@
   "conferido": false
  },
  "tumores-0328": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "D",
-  "conceito": "**Mieloma múltiplo.** Proliferação de plasmócitos com pico monoclonal na eletroforese e imunofixação, proteinúria de Bence Jones, lesões líticas em saca-bocado e cintilografia muitas vezes normal.\n\n**Na prova:** pico monoclonal e cintilografia fria sugerem mieloma.",
-  "correta": "**No mieloma.** O pico monoclonal é característico.",
+  "conceito": "**Mieloma múltiplo e o pico monoclonal.** O mieloma múltiplo é a neoplasia de **plasmócitos** clonais na medula óssea e o **tumor ósseo maligno primário mais comum** em adultos, sobretudo acima dos 50 anos. Cada clone de plasmócitos produz **uma única imunoglobulina** (ou só cadeias leves), que aparece como uma faixa estreita, o **pico monoclonal** (componente M), na eletroforese de proteínas.\n\n**Como confirmar.**\n- **Eletroforese de proteínas** séricas e urinárias: pico monoclonal (geralmente na região gama).\n- **Imunofixação**: identifica o tipo (IgG, o mais comum; IgA; cadeias leves kappa ou lambda).\n- **Cadeias leves livres** no soro; proteinúria de **Bence Jones** (cadeias leves na urina).\n- **Biópsia de medula**: plasmócitos clonais acima de 10%.\n\n**Critérios CRAB** (lesão de órgão-alvo): hiper**C**alcemia, insuficiência **R**enal, **A**nemia e lesões ósseas (**B**one). Os critérios do International Myeloma Working Group incluem também marcadores que definem doença mesmo sem CRAB.\n\n**Imagem.** Lesões **líticas em saca-bocado** (crânio, coluna, costelas, pelve, fêmur proximal), osteopenia difusa e fraturas patológicas, sobretudo vertebrais. A **cintilografia óssea** é frequentemente **normal** (a lesão é puramente lítica, sem atividade osteoblástica), por isso o inventário é feito com radiografias, tomografia de corpo inteiro de baixa dose, ressonância ou PET-CT.\n\n**Diagnóstico diferencial do pico monoclonal.**\n\n| Condição | Comentário |\n|---|---|\n| **Mieloma múltiplo** | Pico monoclonal com plasmócitos clonais e lesão de órgão-alvo |\n| Gamopatia monoclonal de significado indeterminado | Pico pequeno, sem lesão de órgão-alvo |\n| Plasmocitoma solitário | Lesão única, pico pequeno ou ausente |\n| Macroglobulinemia de Waldenström | Pico IgM, linfoplasmocitário |\n\n> Pico monoclonal, lesões líticas em saca-bocado e cintilografia fria: mieloma.",
+  "correta": "**D: no mieloma (resposta pela bibliografia).** A proliferação clonal de plasmócitos produz uma imunoglobulina única, detectada como pico monoclonal na eletroforese e caracterizada pela imunofixação.",
   "incorretas": {
-   "A": "**No linfoma.** Não é o achado típico do linfoma.",
-   "B": "**No hiperparatireoidismo.** Não produz pico monoclonal.",
-   "C": "**Na osteomielite.** Não produz pico monoclonal."
+   "A": "**O linfoma** pode, raramente, produzir componente monoclonal (sobretudo linfomas linfoplasmocíticos), mas a associação clássica do pico monoclonal na prova é o mieloma.",
+   "B": "**O hiperparatireoidismo** causa reabsorção óssea, tumores marrons e hipercalcemia, mas não gamopatia monoclonal; o PTH elevado e o cálcio alto com fósforo baixo o caracterizam.",
+   "C": "**A osteomielite** pode elevar as globulinas de forma **policlonal** (aumento difuso da faixa gama), pela resposta inflamatória crônica, e não produz pico monoclonal."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 843."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 843.",
+   "Rajkumar SV, Dimopoulos MA, Palumbo A, et al. International Myeloma Working Group updated criteria for the diagnosis of multiple myeloma. Lancet Oncol. 2014;15(12):e538-e548."
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "D",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "tumores-0329": {
