@@ -832,17 +832,18 @@
   "conferido": false
  },
  "trauma-0070": {
+  "conceito": "**O politrauma e a resposta inflamatória.** O trauma grave desencadeia uma resposta **inflamatória sistêmica**. Os tecidos lesados, o sangue extravasado e a isquemia liberam substâncias (os \"padrões moleculares de dano\") que ativam o sistema imune. O resultado é a **síndrome da resposta inflamatória sistêmica (SIRS)**: febre ou hipotermia, taquicardia, taquipneia e leucocitose ou leucopenia.\n\n**A teoria dos dois golpes (two hits).**\n1. **Primeiro golpe**: o próprio trauma (lesões, choque, hipóxia), que \"prepara\" o sistema inflamatório.\n2. **Segundo golpe**: uma agressão adicional, como uma **cirurgia longa e sangrenta** (por exemplo, a fixação definitiva de uma fratura do fêmur no primeiro dia), uma infecção ou uma nova hipóxia.\n\nUm paciente já \"preparado\" pelo primeiro golpe pode responder ao segundo com uma inflamação **exagerada**, levando à **síndrome do desconforto respiratório agudo** (SDRA) e à **disfunção de múltiplos órgãos** (DMOS).\n\n**Os mediadores e a interleucina 6.**\n\n| Mediador | Comportamento |\n|---|---|\n| TNF-alfa e IL-1 | Sobem **cedo** e caem rapidamente; meia-vida curta; difíceis de medir na prática |\n| **IL-6** | Sobe logo após o trauma, permanece elevada e **se correlaciona com a gravidade** da lesão, com a SIRS e com as complicações |\n| IL-10 | Anti-inflamatória; associada à fase de imunossupressão |\n\n**Por que a IL-6 é o melhor marcador.** Os níveis de **IL-6** sobem de forma **proporcional** à gravidade do trauma (ao ISS), são mais **estáveis** que os do TNF e da IL-1 e **predizem** as complicações (SDRA, DMOS, mortalidade). Também sobem de forma marcante depois das cirurgias, refletindo o \"segundo golpe\". Valores muito altos (por exemplo, acima de cerca de 500 pg/mL em alguns estudos) indicam risco elevado.\n\n**A aplicação prática: o controle de danos.** No paciente **instável** ou **em situação limite** (borderline), com sinais de inflamação intensa, prefere-se o **controle de danos ortopédico**:\n- estabilização **rápida** das fraturas com **fixador externo**;\n- correção da fisiologia na UTI (choque, acidose, hipotermia, coagulopatia: a \"tríade letal\");\n- **fixação definitiva** mais tarde, geralmente entre o **5º e o 10º dia** (a \"janela de oportunidade\"), quando a inflamação diminui.\n\nNo paciente **estável**, faz-se o **cuidado total precoce** (fixação definitiva nas primeiras 24 horas), que reduz as complicações pulmonares.",
+  "correta": "**Correta: C (a IL-6).** No politraumatizado, a **interleucina 6** é o melhor marcador para avaliar a gravidade da SIRS: sobe de forma proporcional à gravidade do trauma, é mais estável que o TNF e a IL-1 e prediz complicações como a SDRA e a disfunção de múltiplos órgãos.",
   "incorretas": {
-   "A": "O TNF tem pico fugaz e escapa da dosagem.",
-   "B": "A IL-1 tem meia-vida curta.",
-   "D": "O interferon beta não é marcador de SIRS."
+   "A": "O **TNF** sobe muito cedo e cai rapidamente, com meia-vida curta, o que o torna um marcador pouco prático da gravidade.",
+   "B": "A **IL-1** também tem meia-vida curta e níveis instáveis, sendo menos útil que a IL-6.",
+   "D": "O **interferon beta** não é um marcador usado para avaliar a gravidade da SIRS no trauma."
   },
-  "conceito": "No **politraumatizado**, o trauma desencadeia uma **resposta inflamatória sistêmica** (SIRS). As citocinas medem essa resposta, mas nem todas servem como marcador.\n\n**A melhor: interleucina 6 (IL-6)**:\n\n**sobe de forma previsível** poucas horas após o trauma;\n\n**fica elevada** por tempo suficiente para ser medida;\n\n**se correlaciona** com a gravidade da lesão, com as complicações (SARA, falência de múltiplos órgãos) e com a mortalidade.\n\n**As outras**: o **TNF** e a **IL-1** têm pico **rápido e fugaz**, com meia-vida curta, e escapam da dosagem. O **interferon beta** não é marcador de SIRS.\n\n**A implicação ortopédica**: uma IL-6 acima de cerca de **500 pg/mL** indica risco de **segundo impacto** (\"second hit\"): uma cirurgia longa nesse momento pode piorar a inflamação. Isso favorece o **controle de danos** (fixador externo) em vez da fixação definitiva precoce.\n\n**Na prova**: o melhor marcador inflamatório da gravidade da SIRS no trauma é a **IL-6**.",
-  "correta": "A IL-6 sobe de forma previsível, dura o suficiente para ser medida e acompanha a gravidade do trauma.",
   "referencias": [
-   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 2.3"
+   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 2.3",
+   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0071": {
@@ -1182,14 +1183,18 @@
   "conferido": false
  },
  "trauma-0097": {
+  "conceito": "**A fratura da cabeça do fêmur.** É uma lesão rara, que quase sempre acompanha a **luxação posterior do quadril** (em cerca de 5 a 15% delas). O mecanismo típico é o **trauma do painel**: o joelho bate no painel do carro com o quadril fletido, e a força empurra a cabeça femoral para trás.\n\n**Por que o fragmento é anteromedial.** Ao sair do acetábulo para trás, a cabeça **bate na borda posterior** do acetábulo. A borda funciona como uma lâmina e **cisalha** a porção da cabeça que está em contato com ela, a porção **anteromedial** (anteroinferior). Esse fragmento costuma **ficar dentro do acetábulo**, muitas vezes ainda preso ao **ligamento redondo**, enquanto o resto da cabeça sai para trás.\n\n**A classificação de Pipkin.**\n\n| Tipo | Fratura |\n|---|---|\n| **I** | Fragmento **abaixo** da fóvea (fora da área de carga) |\n| **II** | Fragmento **acima** da fóvea (inclui a área de carga) |\n| **III** | Tipo I ou II com **fratura do colo** do fêmur |\n| **IV** | Tipo I ou II com **fratura do acetábulo** |\n\n**O prognóstico.** O tipo **III** é o pior, com alto risco de **necrose avascular**. A luxação em si também ameaça a irrigação da cabeça (artéria circunflexa femoral medial).\n\n**O tratamento.**\n1. **Redução urgente** da luxação, idealmente em menos de **6 horas**, para reduzir o risco de necrose.\n2. **Tomografia** depois da redução, para ver o fragmento, a congruência e fragmentos intra-articulares.\n3. **Pipkin I** com redução congruente: pode ser tratado **sem cirurgia**, ou com excisão de fragmentos pequenos.\n4. **Pipkin II** (área de carga): **redução aberta e fixação**, geralmente por via **anterior** (Smith-Petersen) ou pela luxação cirúrgica (Ganz), já que o fragmento é anteromedial.\n5. **Pipkin III**: fixação do colo e da cabeça no jovem; artroplastia no idoso.\n6. **Pipkin IV**: tratar a fratura do acetábulo e a da cabeça.\n\n**As complicações.** Necrose avascular, artrose pós-traumática, ossificação heterotópica e lesão do nervo ciático (na luxação posterior).\n\n**O Pipkin I em detalhe.** O fragmento fica **abaixo da fóvea**, fora da principal área de carga. Por isso, o tratamento depende sobretudo da **congruência** da redução e do tamanho do fragmento:\n- Redução **concêntrica**, com o fragmento bem posicionado (desvio menor que cerca de 1 a 2 mm): **tratamento conservador**.\n- Quando a cirurgia é indicada (redução não concêntrica, fragmento desviado ou interposto):\n  - fragmento **grande** e com boa qualidade: **redução e fixação** com parafusos embutidos (abaixo da cartilagem) ou parafusos sem cabeça;\n  - fragmentos **pequenos** e cominutivos, sem possibilidade de fixação: **ressecção**.\nA **artroplastia** não é a indicação no Pipkin I, que preserva a área de carga.",
+  "correta": "**Correta: C (fixação do fragmento fraturado).** Na fratura de Pipkin I, quando o tratamento cirúrgico é indicado (redução não concêntrica ou fragmento desviado), a escolha é a **redução e fixação** do fragmento, sempre que ele tem tamanho e qualidade para isso. A ressecção fica para fragmentos pequenos e irreconstruíveis.",
   "incorretas": {
-   "A": "A artroplastia total é excessiva para um jovem com fragmento fora da carga.",
-   "B": "A artroplastia parcial é desnecessária no Pipkin I.",
-   "D": "A ressecção fica para fragmentos pequenos e cominutos."
+   "A": "A **artroplastia total** é reservada a fraturas do colo associadas no idoso (Pipkin III) ou à artrose estabelecida, e não ao Pipkin I.",
+   "B": "A **artroplastia parcial** também não é indicada no Pipkin I, que não acomete a área de carga.",
+   "D": "A **ressecção** do fragmento é uma opção para fragmentos **pequenos** e cominutivos. Quando o fragmento pode ser fixado, a fixação é preferida."
   },
-  "conceito": "No **Pipkin I**, a fratura da cabeça do fêmur fica **abaixo da fóvea**, fora da área principal de **carga**. Depois da redução urgente da luxação, muitos casos são tratados **sem cirurgia**, se o fragmento ficar reduzido.\n\n**Quando operar**: fragmento **desviado** que deixa a articulação **incongruente** ou **bloqueia** o movimento, ou fragmento **grande**.\n\n**O tratamento cirúrgico indicado**: **fixação** do fragmento, com **parafusos sem cabeça** ou embutidos na cartilagem. A via é **anterior** (Smith-Petersen) ou por **luxação cirúrgica** do quadril (Ganz).\n\n**A excisão**: fica para fragmentos **pequenos** e **cominutos**, impossíveis de fixar.\n\n**As artroplastias**: são excessivas para um paciente jovem com fragmento fora da carga. Ficam para o idoso, sobretudo no **Pipkin III**, com fratura do colo.\n\n**Na prova**: no Pipkin I operado, o tratamento indicado é a **fixação do fragmento**.",
-  "correta": "A fixação com parafusos embutidos devolve a congruência da cabeça e preserva o quadril.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)",
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0098": {
@@ -1446,14 +1451,18 @@
   "conferido": false
  },
  "trauma-0118": {
+  "conceito": "**O tálus e a sua irrigação frágil.** Cerca de **60%** da superfície do tálus é coberta por **cartilagem**, e não há inserções musculares. Os vasos entram por poucas áreas, e a irrigação é **retrógrada** para o corpo:\n- **artéria do canal do tarso** (ramo da tibial posterior): a principal para o corpo;\n- **artéria do seio do tarso** (da fibular e da dorsal do pé);\n- ramos **deltoides** (da tibial posterior), que entram pelo lado medial;\n- ramos do **colo** (da dorsal do pé).\n\n**A fratura do colo do tálus e a necrose.** Na fratura do colo com **luxação**, os vasos que chegam ao corpo pelo colo e pelo canal do tarso são rompidos. O risco de necrose segue a classificação de **Hawkins** (modificada por Canale e Kelly):\n\n| Tipo | Achado | Necrose avascular |\n|---|---|---|\n| I | Sem desvio | Até cerca de 10% |\n| II | Subluxação ou luxação da **subtalar** | Cerca de 40% (menos nas séries recentes) |\n| III | Luxação da subtalar e do **tornozelo** | Até cerca de 90% |\n| IV | Também da **talonavicular** | Próximo de 100% |\n\n**O sinal de Hawkins.** É uma **faixa radiotransparente subcondral** na cúpula do tálus, visível na radiografia **AP do tornozelo** entre **6 e 8 semanas** após a fratura.\n- Ela indica que o osso está sendo **reabsorvido** pela **hiperemia** do desuso, ou seja, que o corpo do tálus **tem irrigação**.\n- **Presente**: bom sinal: o tálus está **vascularizado** (é improvável a necrose).\n- **Ausente**: o corpo continua **denso** (esclerótico) em relação aos ossos vizinhos, que ficaram osteopênicos: sugere **necrose avascular**, embora não seja definitivo.\n\n**Por isso, o diagnóstico radiográfico da necrose é feito por volta de 6 a 8 semanas.** Antes disso, ainda não houve tempo para a diferença entre o osso vivo (que se torna osteopênico) e o osso morto (que permanece denso). A **ressonância** pode mostrar a necrose mais cedo.\n\n**O tratamento das fraturas desviadas.** **Redução anatômica urgente**, sobretudo nas luxações (para aliviar a pele e os vasos), e **fixação** estável. A necrose não impede necessariamente a consolidação, e o colapso pode não ocorrer. O tratamento da necrose estabelecida varia de proteção da carga até a artrodese.",
+  "correta": "**Correta: B (6 a 8 semanas).** Na fratura-luxação do tálus, o diagnóstico radiográfico da osteonecrose é feito entre **6 e 8 semanas**, pela **ausência do sinal de Hawkins**. A faixa radiotransparente subcondral, quando presente, indica que o corpo do tálus está vascularizado.",
   "incorretas": {
-   "A": "De 3 a 4 semanas é cedo demais para a diferença aparecer.",
-   "C": "De 10 a 12 semanas é tardio para o primeiro sinal.",
-   "D": "De 14 a 16 semanas é muito tardio."
+   "A": "Com **3 a 4 semanas**, ainda não houve tempo para a osteopenia de desuso aparecer, e a radiografia não diferencia o osso vivo do necrótico.",
+   "C": "Com **10 a 12 semanas**, a avaliação é possível, mas o sinal de Hawkins já deve ser procurado mais cedo, entre 6 e 8 semanas.",
+   "D": "Com **14 a 16 semanas**, o diagnóstico seria tardio. O sinal de Hawkins é avaliado por volta de 6 a 8 semanas."
   },
-  "conceito": "Depois da **fratura-luxação do tálus**, o corpo pode perder a irrigação, que vem sobretudo da **artéria do canal do tarso**. A radiografia mostra se o osso está vivo ou morto a partir da **6ª a 8ª semana**.\n\n**Por que nessa época**: com a imobilização e sem carga, o osso **vivo** do pé fica **mais claro** (osteopenia por desuso e hiperemia). O osso **morto** não participa dessa reabsorção.\n\n**O que se vê**:\n\n**osso vivo**: o **sinal de Hawkins**, uma faixa clara sob a cúpula do tálus;\n\n**osso necrótico**: **ausência** do sinal e **esclerose relativa** do corpo, que fica mais denso que os ossos em volta.\n\n**O colapso** do domo vem **tardiamente**, meses depois. A **RM** confirma a necrose bem antes da radiografia.\n\n**O risco por Hawkins**: aumenta do tipo I (sem desvio) ao tipo IV (luxação talonavicular também).\n\n**Na prova**: o diagnóstico radiográfico da necrose do tálus é feito a partir de **6 a 8 semanas**.",
-  "correta": "Entre a 6ª e a 8ª semana, o osso vivo clareia e o corpo necrótico fica relativamente denso, sem sinal de Hawkins.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)",
+   "Hawkins LG. Fractures of the neck of the talus. J Bone Joint Surg Am. 1970;52(5):991-1002."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0119": {
@@ -1995,14 +2004,18 @@
   "conferido": false
  },
  "trauma-0164": {
+  "conceito": "**A síndrome compartimental aguda da perna.** A perna é o local mais comum de síndrome compartimental, sobretudo após a **fratura da diáfise da tíbia**. Os quatro compartimentos (anterior, lateral, posterior superficial e posterior profundo) são envoltos por fáscias firmes e pouco complacentes. O **compartimento anterior** é o mais acometido.\n\n**Os fatores de risco (McQueen e outros).**\n\n| Fator | Por quê |\n|---|---|\n| **Sexo masculino** | Muito mais frequente nos homens |\n| **Idade menor que cerca de 35 anos** | Jovens têm **mais massa muscular** num compartimento com fáscia **mais firme**; e sofrem traumas de mais energia |\n| **Fratura da diáfise da tíbia** | A causa mais comum |\n| Lesão de alta energia, esmagamento | Mais edema e sangramento |\n| Fratura **fechada** (e também a exposta) | A fratura exposta não \"descomprime\" o compartimento de forma confiável |\n| **Hastes** intramedulares, tração, posição de litotomia prolongada | Aumentam a pressão |\n| Coagulopatias e anticoagulantes | Mais sangramento |\n\n**Por que os idosos têm menos.** Os pacientes mais velhos têm **menos massa muscular**, fáscias mais complacentes e muitas vezes pressão arterial mais alta (o que mantém a perfusão). Por isso, o risco é menor. Nos estudos de McQueen, o risco foi muito maior em homens jovens.\n\n**O diagnóstico.**\n- **Dor desproporcional**, que não cede com analgesia.\n- **Dor ao estiramento passivo** (por exemplo, flexão plantar passiva dos dedos estira o compartimento anterior).\n- Parestesia (no primeiro espaço interdigital: nervo fibular profundo).\n- Medida da pressão: **pressão diferencial** (diastólica menos compartimental) **menor que 30 mmHg** indica fasciotomia. A monitorização contínua é útil nos pacientes de alto risco e nos inconscientes.\n\n**O tratamento.** **Fasciotomia dos quatro compartimentos**, geralmente por **duas incisões** (anterolateral e posteromedial), o mais cedo possível. A fixação da fratura é feita no mesmo tempo, e as feridas são fechadas depois.",
+  "correta": "**Correta: D (masculino e a idade menor que 55 anos).** Os fatores predisponentes da síndrome compartimental aguda da perna incluem o sexo **masculino** e a idade **jovem**. Os homens jovens têm mais massa muscular dentro de fáscias firmes e sofrem traumas de maior energia.",
   "incorretas": {
-   "A": "Mulheres e idosos têm menor risco.",
-   "B": "A idade está certa, mas o predomínio é masculino.",
-   "C": "O sexo está certo, mas os idosos têm menos risco."
+   "A": "O sexo **feminino** e a idade **avançada** estão associados a **menor** risco de síndrome compartimental.",
+   "B": "A idade mais jovem é fator de risco, mas a síndrome é muito mais frequente no sexo **masculino**.",
+   "C": "O sexo masculino é fator de risco, mas a idade **maior** se associa a menor risco, pela menor massa muscular e fáscias mais complacentes."
   },
-  "conceito": "A **síndrome compartimental aguda** da perna é mais comum em **homens jovens**, abaixo de 35 anos nas séries clássicas (e abaixo de 55 na pergunta).\n\n**Por que homens jovens**:\n\n**massa muscular maior** dentro de uma fáscia **espessa** e pouco complacente;\n\n**trauma de alta energia**, mais frequente nesse grupo.\n\n**Por que idosos têm menos risco**: os músculos são **hipotróficos** e a fáscia é mais **complacente**, o que deixa mais espaço para o inchaço.\n\n**A causa mais comum**: a **fratura da diáfise da tíbia**, em cerca de 40% dos casos. Outras: fraturas do antebraço, esmagamentos, reperfusão e gesso apertado.\n\n**O diagnóstico**: **clínico e seriado**: dor desproporcional e dor ao estiramento passivo. A pressão ajuda nos pacientes que não colaboram: **delta P** (diastólica menos compartimento) **menor que 30 mmHg** indica fasciotomia.\n\n**Na prova**: são fatores predisponentes o sexo **masculino** e a idade **menor que 55 anos**.",
-  "correta": "Homens jovens têm mais músculo dentro de uma fáscia espessa e sofrem mais trauma de alta energia.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)",
+   "McQueen MM, Gaston P, Court-Brown CM. Acute compartment syndrome. Who is at risk? J Bone Joint Surg Br. 2000;82(2):200-203."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0165": {
@@ -2700,17 +2713,18 @@
   "conferido": false
  },
  "trauma-0228": {
+  "conceito": "**As fraturas do idoso andam juntas.** As fraturas transtrocantéricas e as do colo do fêmur no idoso são fraturas por **fragilidade**, resultado da **osteoporose** somada a uma **queda** da própria altura. O mesmo paciente, na mesma queda, pode sofrer mais de uma fratura.\n\n**A associação mais comum: o rádio distal do mesmo lado.** Quando o idoso cai de lado, ele tenta se proteger **apoiando a mão** no chão. O resultado pode ser a fratura do **rádio distal ipsilateral** junto com a fratura do quadril. Essa é a associação de fraturas **mais frequente** com a fratura transtrocantérica.\n\n**Por que isso importa.**\n- Sempre **examinar o punho e o ombro** do idoso com fratura do quadril. As fraturas do membro superior podem passar despercebidas pela dor do quadril.\n- O tratamento da fratura do punho influencia a **reabilitação**: o idoso precisa dos braços para usar o **andador** ou as muletas depois da cirurgia do quadril. Por isso, muitas vezes se prefere **fixar** a fratura do rádio, permitindo a carga precoce no membro superior.\n- A fratura do quadril e a do punho são **marcadores de osteoporose**: o paciente deve ser **investigado e tratado** (vitamina D, cálcio, bisfosfonatos), além de receber medidas para **prevenir quedas**.\n\n**A cascata de fraturas por fragilidade.** A fratura do **rádio distal** costuma ser a **primeira** fratura por fragilidade, por volta dos 50 a 60 anos. Depois vêm as **vertebrais** e, mais tarde, a do **quadril**. Uma fratura por fragilidade prévia **dobra** o risco de uma nova fratura. Por isso, a fratura do punho é uma oportunidade de prevenir a fratura do quadril (os serviços de **ligação de fraturas**, fracture liaison services).\n\n**Os outros diagnósticos das alternativas.** As fraturas do **acetábulo** e do tornozelo associadas ocorrem sobretudo nos traumas de **alta energia** dos jovens. A fratura do úmero proximal é uma fratura por fragilidade comum, mas, associada à do quadril, aparece no lado **ipsilateral** (o lado da queda), e não no contralateral.",
+  "correta": "**Correta: B (rádio distal ipsilateral).** A fratura transtrocantérica do idoso está mais comumente associada à fratura do **rádio distal do mesmo lado**: na queda lateral, o paciente apoia a mão no chão. A associação é importante para a reabilitação (uso do andador) e como marcador de osteoporose.",
   "incorretas": {
-   "A": "A fratura do acetábulo vem de trauma de alta energia.",
-   "C": "O tornozelo contralateral não tem relação com a queda lateral.",
-   "D": "O úmero contralateral não é atingido pelo mecanismo da queda."
+   "A": "A fratura do **acetábulo** ipsilateral associada ocorre nos traumas de **alta energia**, e não na queda típica do idoso com fratura transtrocantérica.",
+   "C": "A fratura do **tornozelo** contralateral não é a associação típica da fratura do quadril por queda.",
+   "D": "A fratura do **úmero proximal** pode acompanhar a fratura do quadril, mas no lado **ipsilateral** (o lado da queda), e é menos frequente que a do rádio distal."
   },
-  "conceito": "A **fratura transtrocantérica** do idoso vem de uma **queda da própria altura**, de lado. Ao cair, o paciente bate o quadril e **apoia a mão do mesmo lado**.\n\n**A associação mais comum**: a fratura do **rádio distal ipsilateral**. A segunda é a do **úmero proximal**, também do mesmo lado.\n\n**O que essas fraturas têm em comum**: são **fraturas de fragilidade**. A fratura do punho depois dos 50 anos é uma **fratura sentinela**: ela prevê uma futura fratura do quadril e deve levar ao tratamento da osteoporose.\n\n**A implicação prática**: o punho fraturado dificulta o uso do **andador** na reabilitação; fixá-lo pode permitir apoiar o peso nos braços.\n\n**As outras opções**: a fratura do **acetábulo** vem de alta energia; as fraturas do lado **contralateral** não são explicadas pelo mecanismo da queda lateral.\n\n**Na prova**: a transtrocantérica se associa mais à fratura do **rádio distal ipsilateral**.",
-  "correta": "Na queda lateral, o idoso apoia a mão do mesmo lado e fratura o rádio distal ipsilateral.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 53"
+   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 53",
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0229": {
@@ -5573,14 +5587,18 @@
   "conferido": false
  },
  "trauma-0690": {
+  "conceito": "**A cabeça do rádio.** Articula-se com o **capítulo** do úmero e com a **incisura radial** da ulna. Ela é um importante **estabilizador secundário** do cotovelo contra o **valgo** e contra a migração proximal do rádio, e participa da transmissão de carga (cerca de 60% da carga passa pela articulação radiocapitelar).\n\n**Por que a região anterolateral fratura mais.** A cabeça do rádio não é coberta por cartilagem em toda a sua circunferência. Um setor de cerca de **90 a 110°**, que fica voltado para **lateral** com o antebraço em posição neutra, **não se articula** com a incisura radial da ulna. Esse setor:\n- não tem cartilagem articular grossa nem osso subcondral espesso;\n- tem osso mais **fraco**;\n- recebe o impacto do capítulo na queda com o cotovelo estendido e em valgo, com o antebraço em pronação.\n\nPor isso, as **fraturas parciais** da cabeça do rádio (fraturas articulares parciais, Mason II) acometem com mais frequência o quadrante **anterolateral**.\n\n**A \"zona segura\" de Smith e Hotchkiss.** Esse mesmo setor que não se articula com a ulna é a **zona segura** para colocar placas e parafusos na cabeça do rádio sem bloquear a rotação. Ela é localizada, com o antebraço em **rotação neutra**, entre referências na face lateral: o processo estiloide do rádio e o tubérculo de Lister.\n\n**A classificação de Mason (modificada).**\n\n| Tipo | Fratura |\n|---|---|\n| **I** | Sem desvio ou desvio menor que 2 mm, sem bloqueio |\n| **II** | Desvio maior que 2 mm, fragmento **parcial** |\n| **III** | **Cominutiva**, acometendo toda a cabeça |\n| IV (Johnston) | Com **luxação** do cotovelo |\n\n**O tratamento.**\n- Tipo I: mobilização precoce.\n- Tipo II: **fixação** (parafusos embutidos) se houver bloqueio mecânico da rotação ou desvio importante; conservador se não houver bloqueio.\n- Tipo III: **fixação** se possível; senão, **prótese** da cabeça do rádio (sobretudo com instabilidade). A ressecção simples é evitada no cotovelo instável.\n- Sempre testar a **rotação** do antebraço (após aspirar o hematoma e infiltrar anestésico) para ver se há bloqueio mecânico, e procurar lesões associadas (ligamentos, coronoide, Essex-Lopresti).",
+  "correta": "**Correta: A (anterolateral).** As fraturas articulares parciais da cabeça do rádio são mais frequentes no quadrante **anterolateral**, o setor que não se articula com a incisura radial da ulna, com osso subcondral mais fraco, e que recebe o impacto do capítulo na queda em valgo.",
   "incorretas": {
-   "B": "A região anteromedial é menos acometida.",
-   "C": "A região posterolateral é menos acometida.",
-   "D": "A região posteromedial é a menos exposta ao impacto."
+   "B": "A região **anteromedial** articula-se com a incisura radial da ulna e tem osso subcondral mais resistente, sendo menos acometida.",
+   "C": "A região **posterolateral** é menos acometida que a anterolateral nas fraturas parciais.",
+   "D": "A região **posteromedial** articula-se com a ulna e é a menos acometida."
   },
-  "conceito": "As **fraturas articulares parciais da cabeça do rádio** (Mason II) acometem mais a região **anterolateral**.\n\n**Por quê**:\n\n**posição na queda**: com o antebraço em posição **neutra** ou em leve supinação, é o quadrante **anterolateral** que se apoia no **capítulo** e recebe a carga;\n\n**osso mais fraco**: o quadrante anterolateral fica na zona que **não articula** com a ulna; tem **menos osso subcondral** e menos trabéculas de suporte.\n\n**A coincidência útil**: a **zona segura** para colocar a placa (Smith e Hotchkiss) fica na face **lateral**, com o antebraço em neutro, perto da área que fratura, o que facilita a fixação pelas vias laterais (Kocher ou Kaplan).\n\n**A indicação de cirurgia no Mason II**: absoluta no **bloqueio mecânico** da rotação; relativa nos fragmentos grandes desviados, no degrau e na instabilidade associada.\n\n**Na prova**: a fratura articular parcial da cabeça do rádio é mais frequente na região **anterolateral**.",
-  "correta": "O quadrante anterolateral recebe o impacto contra o capítulo e tem menos osso de suporte.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)",
+   "Morrey BF, Sanchez-Sotelo J, Morrey ME. Morrey's The Elbow and Its Disorders. 5ª edição. Elsevier; 2018."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0691": {
