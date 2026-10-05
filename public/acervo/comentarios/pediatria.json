@@ -8378,17 +8378,20 @@
   "conferido": false
  },
  "pediatria-0721": {
+  "conceito": "**Fratura do fêmur proximal na criança: classificação de Delbet.** É uma fratura rara na criança (menos de 1% das fraturas pediátricas), causada por **trauma de alta energia** (exceto as patológicas). Sua gravidade vem da **vascularização precária** da cabeça femoral em crescimento: a fise funciona como barreira, e a cabeça depende quase só dos **vasos epifisários laterais** (ramos da circunflexa femoral medial), que correm pelo colo e são facilmente lesados.\n\n**Classificação de Delbet.**\n\n| Tipo | Local | Risco de necrose avascular |\n|---|---|---|\n| I | **Transepifisária** (com ou sem luxação da cabeça) | Altíssimo (até cerca de 80% a 100% se luxada) |\n| II | **Transcervical** (a mais comum) | Alto (cerca de 30% a 50%) |\n| III | **Cervicotrocantérica** (base do colo) | Moderado (cerca de 20% a 30%) |\n| IV | **Intertrocantérica** | **Baixo** (cerca de 5% a 10%) |\n\nMoon e Mehlman, em meta-análise, confirmaram que o risco de necrose cai do tipo I ao IV e aumenta com a idade e o desvio.\n\n**Complicações e o tipo IV.** As principais complicações são **necrose avascular**, **coxa vara** (consolidação em varo), **fechamento fisário prematuro** e **pseudartrose**. No **tipo IV**, a fratura está longe dos vasos retinaculares e a necrose é rara; o problema mais comum é a **consolidação viciosa em varo**, pois a força dos abdutores e do iliopsoas puxa o fragmento proximal em varo, sobretudo quando o tratamento é conservador (gesso) e o controle é insuficiente.\n\n**Tratamento.** Redução anatômica urgente (o desvio aumenta o risco de necrose) e fixação estável (parafusos canulados, placa pediátrica no tipo IV), com descompressão capsular por alguns autores. Gesso pelvipodálico isolado só em fraturas sem desvio de crianças pequenas.\n\n> Delbet IV (intertrocantérica): menos necrose; a complicação mais comum é a coxa vara.",
+  "correta": "**C: deformidade em varo (resposta pela bibliografia).** Na fratura intertrocantérica da criança, a necrose é rara, e a complicação mais frequente é a consolidação em varo, pela tração muscular sobre o fragmento proximal.",
+  "incorretas": {
+   "A": "**A pseudartrose** é complicação possível das fraturas do colo, especialmente transcervicais e com fixação inadequada, mas é rara no tipo IV, região bem vascularizada e de osso trabecular.",
+   "B": "**A necrose avascular** é a complicação mais temida nos tipos I e II; no tipo IV, longe dos vasos retinaculares, é a menos frequente.",
+   "D": "**A deformidade em valgo** não é a tendência dessas fraturas; os músculos deslocam o fragmento proximal em varo."
+  },
+  "referencias": [
+   "Rockwood C.A. et al. Fractures in Children. Philadelphia: Lippincott. 6ª ed.",
+   "Moon ES, Mehlman CT. Risk factors for avascular necrosis after femoral neck fractures in children: 25 Cincinnati cases and meta-analysis of 360 cases. J Orthop Trauma. 2006;20(5):323-329."
+  ],
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "C",
-  "conceito": "**Classificação de Delbet.** Tipo I transepifisária, II transcervical, III cervicotrocantérica e IV intertrocantérica. A necrose avascular é mais frequente nos tipos I e II; o **tipo IV** é o que menos necrosa, e sua complicação mais comum é a **deformidade em varo** (coxa vara).\n\n**Na prova:** Delbet IV tem menos necrose e mais coxa vara.",
-  "correta": "**Deformidade em varo.** É a complicação mais comum da fratura intertrocantérica da criança.",
-  "incorretas": {
-   "A": "**Pseudoartrose.** É mais comum nos tipos II e III.",
-   "B": "**Necrose avascular.** É mais frequente nos tipos I e II, e rara no tipo IV.",
-   "D": "**Deformidade em valgo.** Não é a complicação típica."
-  },
-  "referencias": [],
-  "geradoEm": "2026-09-30T23:58:02+00:00",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0722": {
@@ -8664,35 +8667,37 @@
   "conferido": false
  },
  "pediatria-0739": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": "**Prognóstico no Perthes.** O que define a artrose futura é a forma final da cabeça e sua congruência (Stulberg). Idade de início e extensão são preditores precoces, mas o resultado depende da deformidade residual.\n\n**Na prova:** Stulberg, pela forma da cabeça no final, é o melhor preditor.",
-  "correta": "**Deformidade residual da cabeça femoral.** A deformidade residual determina a evolução para artrose.",
+  "conceito": "**Prognóstico na doença de Legg-Calvé-Perthes.** O Perthes é a necrose idiopática do núcleo de ossificação da cabeça femoral na criança. O osso necrótico é reabsorvido e substituído; durante esse processo, a cabeça fica mole e pode se deformar. O resultado a longo prazo, isto é, se haverá **artrose** na vida adulta, depende de **como a cabeça termina**.\n\n**Preditores precoces x resultado final.**\n\n| Momento | Fator | O que indica |\n|---|---|---|\n| Início | **Idade** (abaixo de 6 anos, melhor; acima de 8, pior) | Tempo de remodelação disponível |\n| Fragmentação | **Pilar lateral de Herring** (A, B, B/C, C), Catterall (extensão) | Risco de colapso e deformidade |\n| Fragmentação | Sinais de \"cabeça em risco\" (Catterall): sinal de Gage, calcificação lateral, subluxação lateral, horizontalização da fise, cistos metafisários | Tendência à extrusão |\n| **Maturidade** | **Forma final da cabeça e congruência (Stulberg)** | **Risco real de artrose** |\n\n**A classificação de Stulberg.** Stulberg, Cooperman e Wallensten acompanharam pacientes por décadas e relacionaram a forma final à artrose:\n- **I e II**: cabeça **esférica** (congruência esférica): praticamente sem artrose.\n- **III e IV**: cabeça **ovoide ou achatada** com acetábulo adaptado (congruência asférica): artrose leve a moderada na meia-idade.\n- **V**: cabeça achatada com acetábulo normal (incongruência asférica): artrose precoce.\n\n**A lógica da questão.** Idade, extensão e sinais radiográficos são **preditores** de como a cabeça vai ficar. O **fator que de fato determina** o mau resultado é a **deformidade residual** (incongruência) da cabeça femoral. Por isso, o tratamento busca **contenção** durante a fase vulnerável, para que a cabeça remodele esférica.\n\n> No Perthes, o pior prognóstico é a deformidade residual da cabeça (Stulberg); idade e extensão são preditores dessa deformidade.",
+  "correta": "**A: deformidade residual da cabeça femoral (resposta pela bibliografia).** A forma final e a congruência da cabeça (Stulberg) determinam a evolução para artrose; cabeças achatadas e incongruentes têm o pior prognóstico.",
   "incorretas": {
-   "B": "**Horizontalização da placa epifisária.** Não é o principal fator.",
-   "C": "**Idade de início da doença.** É preditor precoce, não o de pior prognóstico final.",
-   "D": "**Extensão do envolvimento epifisário.** Também é preditor precoce."
+   "B": "**A horizontalização da fise** é um dos sinais de \"cabeça em risco\" de Catterall, preditor de deformidade, mas não o fator determinante final.",
+   "C": "**A idade de início** é importante preditor (acima de 8 anos é pior), mas atua por meio do potencial de remodelação; o que define o resultado é a forma final da cabeça.",
+   "D": "**A extensão do envolvimento epifisário** (Catterall, pilar lateral) prediz o risco de deformidade, mas é a deformidade residual que determina a artrose."
   },
   "referencias": [
-   "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. 6ª ed., p. 1056-1061."
+   "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. 6ª ed., p. 1056-1061.",
+   "Stulberg SD, Cooperman DR, Wallensten R. The natural history of Legg-Calvé-Perthes disease. J Bone Joint Surg Am. 1981;63(7):1095-1108."
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "A",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0740": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": "**Pé torto congênito.** O navicular fica medializado e preso ao maléolo medial pela retração do ligamento tibionavicular (deltoide superficial), da cápsula e do tibial posterior; o ligamento tibionavicular é o obstáculo mais importante à redução.\n\n**Na prova:** navicular preso ao maléolo pelo tibionavicular.",
-  "correta": "**O ligamento tibionavicular.** É o obstáculo descrito.",
+  "conceito": "**Pé torto congênito: a anatomia patológica do complexo talocalcaneonavicular.** No pé torto, o **navicular** está deslocado **medialmente** sobre a cabeça do tálus, chegando a tocar o **maléolo medial**. O calcâneo está rodado medialmente sob o tálus (varo e adução), e o antepé, aduzido e supinado. Corrigir o pé é, essencialmente, **reduzir o navicular** sobre a cabeça do tálus e rodar o calcâneo para fora.\n\n**Estruturas contraídas no lado medial e posterior.**\n\n| Estrutura | Papel na deformidade |\n|---|---|\n| **Ligamento tibionavicular** (parte superficial do deltoide) | **Ancora o navicular ao maléolo medial**; espesso e encurtado, principal obstáculo à redução |\n| Tendão do tibial posterior | Puxa o navicular medialmente (insere-se nele) |\n| Cápsula talonavicular | Contraída medialmente |\n| Ligamento calcaneonavicular plantar (spring) | Contraído, mas secundário |\n| Tendão calcâneo, cápsula posterior do tornozelo e subtalar | Responsáveis pelo equino |\n| Fáscia plantar, abdutor do hálux | Cavo e adução |\n\n**Por que o tibionavicular é o maior obstáculo.** Ele forma uma **ponte fibrosa espessa** entre o maléolo e o navicular deslocado; enquanto estiver retraído, o navicular não volta para a frente da cabeça do tálus. Na **liberação posteromedial** (técnicas de Turco e McKay), esse ligamento é seccionado junto com a cápsula talonavicular e o tibial posterior é alongado.\n\n**Hoje.** O **método de Ponseti** alonga essas estruturas de forma gradual com manipulações e gessos, evitando a liberação extensa na maioria dos pacientes; a cirurgia ampla ficou reservada aos casos resistentes (Dobbs e Gurnett).\n\n> Pé torto: o ligamento tibionavicular prende o navicular ao maléolo medial e é o maior obstáculo à redução.",
+  "correta": "**A: o ligamento tibionavicular (resposta pela bibliografia).** Espesso e retraído, o ligamento tibionavicular fixa o navicular deslocado medialmente ao maléolo medial, sendo o principal obstáculo à redução do complexo talocalcaneonavicular.",
   "incorretas": {
-   "B": "**O ligamento calcaneonavicular plantar.** O ligamento em mola participa, mas não é o maior obstáculo.",
-   "C": "**A cápsula talonavicular.** A cápsula participa, mas não é o maior obstáculo.",
-   "D": "**O tendão do tibial posterior.** O tendão participa, mas não é o maior obstáculo."
+   "B": "**O ligamento calcaneonavicular plantar** está contraído e é liberado na cirurgia, mas é estrutura secundária na manutenção do desvio medial do navicular.",
+   "C": "**A cápsula talonavicular** contraída contribui, mas a ponte fibrosa mais espessa, que prende o navicular ao maléolo, é o tibionavicular.",
+   "D": "**O tendão do tibial posterior** puxa o navicular medialmente e precisa ser alongado, mas a referência aponta o ligamento tibionavicular como o maior obstáculo."
   },
   "referencias": [
-   "Tachdjian M.O. Pediatric orthopaedics. Philadelphia: Saunders. 2ª ed., p. 2440."
+   "Tachdjian M.O. Pediatric orthopaedics. Philadelphia: Saunders. 2ª ed., p. 2440.",
+   "Dobbs MB, Gurnett CA. Update on clubfoot: etiology and treatment. Clin Orthop Relat Res. 2009;467(5):1146-1153."
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "A",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0741": {

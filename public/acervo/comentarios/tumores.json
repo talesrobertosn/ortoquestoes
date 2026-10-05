@@ -3387,19 +3387,20 @@
   "conferido": false
  },
  "tumores-0330": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "D",
-  "conceito": "**Prognóstico do Ewing.** Pior com metástase ao diagnóstico, localização pélvica e axial, grande volume e má resposta histológica à quimioterapia neoadjuvante (necrose inferior a 90%). A translocação 11;22 é o marcador diagnóstico.\n\n**Na prova:** má resposta à quimioterapia é fator de pior prognóstico.",
-  "correta": "**Se houver baixa resposta à quimioterapia neoadjuvante.** A baixa necrose após quimioterapia indica pior evolução.",
+  "conceito": "**Sarcoma de Ewing e os fatores prognósticos.** O sarcoma de Ewing é um tumor de **pequenas células redondas e azuis** que acomete crianças e adultos jovens (10 a 20 anos), mais em diáfises de ossos longos e na pelve. É mais frequente em **brancos** e raro em negros. A marca molecular é a **translocação t(11;22)**, que gera o gene de fusão **EWSR1-FLI1** (em cerca de 85% dos casos).\n\n**Tratamento.** Multimodal: **quimioterapia neoadjuvante**, controle local (cirurgia, radioterapia ou ambas; o Ewing é radiossensível) e quimioterapia adjuvante.\n\n**Fatores de pior prognóstico.**\n\n| Fator | Comentário |\n|---|---|\n| **Metástase ao diagnóstico** | O principal; pulmão melhor que osso ou medula |\n| **Má resposta histológica à quimioterapia** (necrose inferior a 90% ou com tumor viável) | Forte fator independente (Picci e colaboradores) |\n| Localização axial, sobretudo **pélvica** | Tumores grandes, difícil ressecção |\n| **Grande volume** (mais de 100 a 200 ml ou mais de 8 cm) | Maior carga tumoral |\n| Idade acima de 15 anos | Pior em adolescentes mais velhos e adultos |\n| DHL elevada, febre, anemia | Doença mais extensa |\n\n**O que não é fator de pior prognóstico.**\n- A **translocação t(11;22)** é o **marcador diagnóstico**, presente na maioria; não indica pior evolução (o tipo de fusão não mostrou impacto prognóstico consistente).\n- **Raça negra**: a doença é rara nessa população, mas isso não se traduz em pior prognóstico.\n- **Sexo feminino**: em algumas séries tem prognóstico igual ou até melhor que o masculino.\n\n> Ewing: pior prognóstico com metástase, localização pélvica, grande volume e má resposta à quimioterapia neoadjuvante.",
+  "correta": "**D: se houver baixa resposta à quimioterapia neoadjuvante (resposta pela bibliografia).** A necrose tumoral insuficiente na peça operada após a quimioterapia é um dos principais fatores independentes de pior sobrevida no sarcoma de Ewing.",
   "incorretas": {
-   "A": "**Na raça negra.** O Ewing é raro em negros; não é o fator.",
-   "B": "**No sexo feminino.** Não define o prognóstico.",
-   "C": "**Caso haja translocação entre os cromossomos 11 e 22.** É o marcador diagnóstico, não o prognóstico."
+   "A": "**A raça negra** está associada a menor incidência do Ewing, não a pior prognóstico.",
+   "B": "**O sexo feminino** não é fator de pior prognóstico; algumas séries mostram até evolução semelhante ou melhor.",
+   "C": "**A translocação 11;22** é o marcador diagnóstico do Ewing, presente na maioria dos casos; não indica pior prognóstico."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., vol. 1, p. 836."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., vol. 1, p. 836.",
+   "Picci P, Böhling T, Bacci G, et al. Chemotherapy-induced tumor necrosis as a prognostic factor in localized Ewing's sarcoma of the extremities. J Clin Oncol. 1997;15(4):1553-1559."
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "D",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "tumores-0331": {
