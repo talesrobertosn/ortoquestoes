@@ -3800,19 +3800,20 @@
   "conferido": false
  },
  "coluna-0326": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": "**Síndrome medular anterior.** Lesão dos dois terços anteriores da medula (tratos corticoespinal e espinotalâmico), com perda motora e da sensibilidade dolorosa e térmica. As colunas posteriores (vibração e propriocepção) ficam preservadas. É a de pior prognóstico entre as incompletas.\n\n**Na prova:** medular anterior perde força, dor e temperatura; preserva vibração.",
-  "correta": "**Da motricidade e das sensibilidades térmica e dolorosa.** Perde motricidade, dor e temperatura.",
+  "conceito": "**Síndrome medular anterior.** As lesões medulares incompletas produzem quadros previsíveis conforme a região da medula atingida. Para entendê-las, é preciso lembrar onde correm os principais tratos.\n\n**Os três tratos que definem as síndromes.**\n\n| Trato | Posição | Função | Cruzamento |\n|---|---|---|---|\n| Corticoespinal lateral | Lateral e posterior | Motricidade voluntária | Já cruzou no bulbo (ipsilateral na medula) |\n| **Espinotalâmico lateral** | **Anterolateral** | **Dor e temperatura** | Cruza na medula, 1 a 2 níveis acima da entrada |\n| **Colunas posteriores** (fascículos grácil e cuneiforme) | **Posterior** | **Vibração, propriocepção, tato fino** | Cruzam no bulbo |\n\n**A síndrome medular anterior.** Lesão dos **dois terços anteriores** da medula, território da **artéria espinhal anterior**, por compressão de fragmento ósseo ou disco (fratura explosiva, hérnia em flexão) ou por isquemia (cirurgia de aorta). Atinge os tratos **corticoespinais** e **espinotalâmicos** e poupa as **colunas posteriores**.\n\n**Quadro.** Abaixo do nível: **paralisia** e perda da **dor e da temperatura**, com **vibração e propriocepção preservadas**. É a síndrome incompleta de **pior prognóstico** para recuperação motora.\n\n**Comparação das síndromes incompletas.**\n\n| Síndrome | Perdas | Prognóstico |\n|---|---|---|\n| Central (a mais comum) | Mais nos membros superiores que nos inferiores | Bom |\n| Brown-Séquard | Motora e proprioceptiva ipsilaterais, dor e temperatura contralaterais | O melhor |\n| **Anterior** | **Motora, dor e temperatura**; preserva vibração e propriocepção | **O pior** |\n| Posterior (rara) | Vibração e propriocepção | Bom para a marcha, ataxia sensitiva |\n\nO exame segue os padrões da ASIA (International Standards), que exigem examinar sensibilidade ao toque leve e à picada em todos os dermátomos.\n\n> Medular anterior: perde força, dor e temperatura; preserva vibração e propriocepção; pior prognóstico entre as incompletas.",
+  "correta": "**A: da motricidade e das sensibilidades térmica e dolorosa (resposta pela bibliografia).** A lesão dos dois terços anteriores atinge os tratos corticoespinais e espinotalâmicos, poupando as colunas posteriores, responsáveis pela vibração e propriocepção.",
   "incorretas": {
-   "B": "**Da motricidade e das sensibilidades térmica e vibratória.** A vibração é preservada.",
-   "C": "**Da motricidade e das sensibilidades dolorosa e vibratória.** A vibração é preservada.",
-   "D": "**Das sensibilidades térmica, dolorosa e vibratória.** A motricidade é perdida."
+   "B": "**Motricidade, térmica e vibratória**: a vibração corre nas colunas posteriores, preservadas na síndrome anterior.",
+   "C": "**Motricidade, dolorosa e vibratória**: o mesmo erro; a vibração está preservada.",
+   "D": "**Térmica, dolorosa e vibratória** sem perda motora não corresponde a nenhuma síndrome clássica; a síndrome anterior tem paralisia e preserva a vibração."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 1603."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 1603.",
+   "Kirshblum SC, Burns SP, Biering-Sorensen F, et al. International standards for neurological classification of spinal cord injury (revised 2011). J Spinal Cord Med. 2011;34(6):535-546."
   ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "A",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "coluna-0327": {

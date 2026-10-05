@@ -1510,18 +1510,19 @@
   "conferido": false
  },
  "conceitos-basicos-0151": {
-  "conceito": "A vitamina C é antioxidante e reduz a formação de radicais livres na fase inflamatória da consolidação, e é aí que se acredita estar o efeito preventivo sobre a síndrome dolorosa regional complexa. Os ensaios em fratura do rádio distal usaram 500 mg ao dia por cerca de 50 dias a partir do trauma e mostraram redução da incidência. Vale reter o limite: a evidência é de PREVENÇÃO. Depois de instalada, a síndrome se trata com reabilitação precoce, analgesia multimodal, gabapentinoides e bloqueios, e nenhuma vitamina resolve.",
-  "correta": "Vitamina C.",
+  "conceito": "**Síndrome complexa de dor regional e a vitamina C.** A síndrome complexa de dor regional (SCDR, antiga distrofia simpático-reflexa) é uma resposta desproporcional ao trauma: **dor intensa** fora de proporção, **edema**, alterações de **cor e temperatura**, **sudorese**, rigidez e, tardiamente, **osteoporose** e atrofia. Na ortopedia, a fratura do **rádio distal** é um dos gatilhos mais frequentes.\n\n**Tipos.**\n- Tipo I: sem lesão nervosa definida (a maioria).\n- Tipo II: com lesão nervosa identificável (antiga causalgia).\n\n**Fisiopatologia (multifatorial).** Inflamação exagerada com neuropeptídeos e **radicais livres de oxigênio**, sensibilização periférica e central, disfunção autonômica e alterações corticais. A hipótese do estresse oxidativo deu base ao uso de **antioxidantes**.\n\n**A vitamina C na prevenção.** A vitamina C (ácido ascórbico) neutraliza radicais livres na fase inflamatória inicial. Zollinger e colaboradores, em ensaio randomizado multicêntrico com fraturas do punho, mostraram que **500 mg ao dia por 50 dias**, iniciados logo após o trauma, **reduziram a incidência** de SCDR em relação ao placebo. Metanálises posteriores tiveram resultados conflitantes, mas a recomendação persiste em diretrizes (por exemplo, da AAOS) como medida de baixo custo e baixo risco.\n\n**O limite da evidência.** A vitamina C é usada para **prevenir**; uma vez instalada a síndrome, o tratamento é multidisciplinar: fisioterapia e terapia ocupacional (dessensibilização, terapia do espelho), analgesia (gabapentinoides, antidepressivos), bisfosfonatos e corticoide em casos selecionados, bloqueios simpáticos.\n\n**Diagnóstico.** Critérios de Budapeste (sintomas e sinais em categorias sensitiva, vasomotora, sudomotora e motora ou trófica).\n\n> Prevenção da SCDR na fratura do punho: vitamina C 500 mg ao dia por cerca de 50 dias.",
+  "correta": "**C: vitamina C.** Antioxidante, reduz os radicais livres da fase inflamatória; em ensaio randomizado em fraturas do punho, 500 mg ao dia por 50 dias reduziram a incidência de síndrome complexa de dor regional.",
   "incorretas": {
-   "A": "A vitamina A não tem esse papel descrito.",
-   "B": "As vitaminas do complexo B têm papel em neuropatias carenciais, e não nessa profilaxia.",
-   "D": "A vitamina D importa para mineralização e consolidação, mas não é a estudada nesse cenário."
+   "A": "**A vitamina A** atua na visão, na pele e na imunidade; não tem evidência na prevenção da SCDR.",
+   "B": "**A vitamina B** (complexo B) é usada em neuropatias carenciais, mas não foi demonstrada na prevenção da SCDR.",
+   "D": "**A vitamina D** é importante no metabolismo ósseo e na consolidação em pacientes com deficiência, mas não previne a SCDR."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
   "referencias": [
-   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 17.5"
-  ]
+   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 17.5",
+   "Zollinger PE, Tuinebreijer WE, Breederveld RS, Kreis RW. Can vitamin C prevent complex regional pain syndrome in patients with wrist fractures? A randomized, controlled, multicenter dose-response study. J Bone Joint Surg Am. 2007;89(7):1424-1431."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "conceitos-basicos-0152": {
   "incorretas": {
@@ -2320,17 +2321,18 @@
   "conferido": false
  },
  "conceitos-basicos-0245": {
-  "conceito": "### As cinco fases\n- **Transdução:** estímulo vira potencial de ação no nociceptor.\n- **Condução:** o impulso viaja pela fibra periférica.\n- **Transmissão:** sinapse no corno posterior e subida pelos tratos espinotalâmicos.\n- **Percepção:** experiência consciente no córtex.\n- ==Modulação==: vias que **descem** do tronco encefálico (periaquedutal, núcleo magno da rafe) até o corno posterior.\n\n### A modulação\n- Libera opioides endógenos, **serotonina** e **noradrenalina**.\n- Amplifica ou reduz o sinal.\n- É onde agem **opioides** e **antidepressivos** (duais, tricíclicos) na dor crônica.\n\n> **Na prova:** vias descendentes até a medula = ==modulação==.",
-  "correta": "**Modulação.**",
+  "conceito": "**Fisiopatologia da dor: as cinco fases.** A dor nociceptiva é o resultado de uma sequência de eventos que começa no tecido lesado e termina na experiência consciente. Entender cada fase explica onde agem os analgésicos.\n\n| Fase | O que acontece | Onde agem os tratamentos |\n|---|---|---|\n| **Transdução** | O estímulo nocivo (mecânico, térmico, químico) vira potencial de ação no **nociceptor** | Anti-inflamatórios (reduzem prostaglandinas que sensibilizam o nociceptor), anestésicos tópicos |\n| **Condução** | O impulso percorre a fibra periférica (A-delta e C) até a medula | Anestésicos locais, bloqueios de nervo |\n| **Transmissão** | Sinapse no **corno posterior** da medula e subida pelos tratos espinotalâmicos ao tálamo | Opioides espinhais, gabapentinoides |\n| **Percepção** | Integração no córtex: localização, intensidade, componente emocional | Anestesia geral, abordagens cognitivas |\n| **Modulação** | Vias que **descem** do tronco encefálico até o corno posterior, **inibindo ou facilitando** a transmissão | Opioides, antidepressivos tricíclicos e duais, tramadol |\n\n**A modulação em detalhe.** A **substância cinzenta periaquedutal** (mesencéfalo) e o **núcleo magno da rafe** e o locus coeruleus (bulbo e ponte) enviam fibras **descendentes** ao corno posterior. Liberam **opioides endógenos, serotonina e noradrenalina**, que inibem a transmissão do impulso doloroso (Basbaum e colaboradores revisaram esses mecanismos). As vias descendentes também podem **facilitar** a dor, mecanismo envolvido na dor crônica e na sensibilização central.\n\n**A teoria do portão** (Melzack e Wall) descreve outra forma de modulação, segmentar: fibras de tato (A-beta) ativam interneurônios inibitórios no corno posterior, \"fechando o portão\" (por isso esfregar o local alivia a dor).\n\n> Modulação: vias descendentes do tronco encefálico que inibem ou facilitam a dor no corno posterior.",
+  "correta": "**C: Modulação.** É a fase em que vias descendentes da substância cinzenta periaquedutal e dos núcleos do tronco encefálico chegam ao corno posterior da medula, inibindo ou facilitando a transmissão da dor.",
   "incorretas": {
-   "A": "**Ascendente periférica.**",
-   "B": "**Cortical.**",
-   "D": "**Ascendente medular.**"
+   "A": "**Condução** é a propagação do impulso pela fibra periférica do nociceptor até a medula; não envolve vias descendentes.",
+   "B": "**Percepção** é a experiência consciente da dor no córtex; ocorre no topo da via, não na descida até a medula.",
+   "D": "**Transmissão** é a passagem do impulso no corno posterior e sua subida pelos tratos espinotalâmicos; é ascendente, não descendente."
   },
   "referencias": [
-   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 1.8"
+   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 1.8",
+   "Basbaum AI, Bautista DM, Scherrer G, Julius D. Cellular and molecular mechanisms of pain. Cell. 2009;139(2):267-284."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "conceitos-basicos-0248": {
@@ -2459,14 +2461,18 @@
   "conferido": false
  },
  "conceitos-basicos-0259": {
-  "conceito": "### O tempo diz o germe\n- **Precoce** (primeiras semanas): germes **virulentos** por contaminação intraoperatória ou da ferida. ==S. aureus e bacilos gram-negativos==.\n- **Tardia** (meses): germes de **baixa virulência** com biofilme maduro. Coagulase-negativos, Cutibacterium acnes.\n\n### Na conduta\n- **Precoce:** desbridamento, antibiótico e **manutenção do implante** se estável, até consolidar.\n- **Tardia:** em geral, **remover** o implante.\n\n### Coleta\nMúltiplas amostras de **tecido profundo** (não swab de fístula), antes do antibiótico quando possível; sonicação do implante retirado aumenta o rendimento.\n\n> **Na prova:** infecção precoce pós-osteossíntese = ==S. aureus e BGN==.",
-  "correta": "**S. aureus e BGN.**",
+  "conceito": "**Infecção pós-osteossíntese: o tempo indica o germe.** A infecção relacionada à fixação de fraturas é classificada pelo **tempo** entre a cirurgia e o início dos sintomas (Willenegger e Roth), o que orienta tanto o germe provável quanto a conduta.\n\n| Tipo | Tempo | Germes típicos | Biofilme |\n|---|---|---|---|\n| **Precoce** | Até 2 semanas | **Staphylococcus aureus** e **bacilos gram-negativos** (germes virulentos) | Imaturo |\n| Tardia (retardada) | 3 a 10 semanas | S. aureus, coagulase-negativos | Em amadurecimento |\n| Crônica (tardia) | Mais de 10 semanas | **Coagulase-negativos**, Cutibacterium acnes (germes pouco virulentos) | Maduro |\n\n**Por que precoce é S. aureus e gram-negativos.** Infecções que surgem nas primeiras semanas resultam de contaminação no trauma (fraturas expostas) ou na cirurgia por germes **virulentos**, capazes de causar sinais inflamatórios rápidos (febre, secreção, deiscência). Em fraturas expostas, sobretudo graves, contaminadas por terra e água, os **gram-negativos** são frequentes. Germes pouco virulentos, como os **coagulase-negativos**, produzem quadros insidiosos que aparecem meses depois.\n\n**Conduta, conforme Trampuz e Zimmerli.**\n- **Precoce, implante estável, fratura não consolidada**: desbridamento cirúrgico, lavagem, troca de componentes móveis e **manutenção do implante**, com antibiótico prolongado (com rifampicina para estafilococo, que age sobre o biofilme), até a consolidação.\n- **Crônica**: biofilme maduro; geralmente remoção do implante após a consolidação ou troca da fixação, com desbridamento.\n\nO consenso internacional de infecção relacionada à fratura (FRI) define critérios confirmatórios (fístula, pus, germes em culturas profundas, histologia) e sugestivos.\n\n> Infecção precoce após osteossíntese: S. aureus e gram-negativos; tardia: coagulase-negativos.",
+  "correta": "**B: aureus e BGN.** Nas infecções precoces, os germes são virulentos e vêm da contaminação no trauma ou na cirurgia: Staphylococcus aureus e bacilos gram-negativos.",
   "incorretas": {
-   "A": "**Estreptococo não é o par clássico.**",
-   "C": "**Tardia.**",
-   "D": "**Tardia.**"
+   "A": "**S. aureus e Streptococcus** é combinação possível, mas os estreptococos são menos frequentes que os gram-negativos nas infecções precoces pós-osteossíntese.",
+   "C": "**Coagulase-negativo e Streptococcus**: os coagulase-negativos são germes de baixa virulência, típicos das infecções tardias.",
+   "D": "**Coagulase-negativo e BGN**: os gram-negativos estão corretos, mas os coagulase-negativos são característicos das infecções tardias e crônicas."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Trampuz A, Zimmerli W. Diagnosis and treatment of infections associated with fracture-fixation devices. Injury. 2006;37 Suppl 2:S59-S66.",
+   "Metsemakers WJ, Morgenstern M, McNally MA, et al. Fracture-related infection: a consensus on definition from an international expert group. Injury. 2018;49(3):505-510."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "conceitos-basicos-0260": {

@@ -1858,17 +1858,18 @@
   "conferido": false
  },
  "joelho-0159": {
-  "conceito": "O tendão do músculo poplíteo, junto ao complexo arqueado posterolateral, é um dos principais estabilizadores dinâmicos e estáticos contra a rotação externa excessiva da tíbia e a translação posterolateral, sendo fundamental na prevenção da instabilidade rotatória posterolateral do joelho.",
-  "correta": "D. O tendão do poplíteo tem maior importância na restrição da rotação tibial externa.",
+  "conceito": "**O tendão do poplíteo e a estabilidade posterolateral do joelho.** O músculo poplíteo origina-se na face posterior da tíbia proximal; seu tendão sobe, atravessa o hiato poplíteo (passando sob o colateral lateral, dentro da cápsula mas fora da sinóvia) e insere-se no **côndilo femoral lateral**, anterior e distal à inserção do colateral lateral. Do tendão parte o **ligamento popliteofibular**, que o une à cabeça da fíbula.\n\n**Função.**\n- **Dinâmica**: no início da flexão, o poplíteo **roda a tíbia internamente** (ou o fêmur externamente em cadeia fechada), \"destravando\" o joelho da posição de extensão (mecanismo de parafuso).\n- **Estática**: o complexo tendão do poplíteo e ligamento popliteofibular é o principal restritor da **rotação externa da tíbia**, sobretudo em flexão (30 graus e além), e contribui para restringir a translação posterior e o varo.\n\nLaPrade e colaboradores mostraram a importância estática do tendão na resistência à rotação externa e chamaram-no de \"quinto ligamento\" do joelho.\n\n**Restritores principais do canto posterolateral.**\n\n| Estrutura | Principal função |\n|---|---|\n| Ligamento colateral lateral | Restringe o **varo** (0 a 30 graus) |\n| **Tendão do poplíteo** | Restringe a **rotação externa** da tíbia |\n| Ligamento popliteofibular | Restringe a rotação externa (com o poplíteo) |\n\n**Clínica.** Lesões do canto posterolateral aumentam a rotação externa no **dial test** (mais de 10 graus comparado ao lado oposto a 30 graus). Se não reconstruídas, sobrecarregam e levam à falha de enxertos do LCA e do LCP.\n\n> Tendão do poplíteo: principal restritor da rotação externa da tíbia; o colateral lateral restringe o varo.",
+  "correta": "**D: da rotação tibial externa.** O complexo do tendão do poplíteo e do ligamento popliteofibular é o principal restritor estático da rotação externa da tíbia, especialmente em flexão.",
   "incorretas": {
-   "A": "A restrição ao varo depende principalmente do ligamento colateral lateral e de estruturas laterais estáticas, não do tendão do poplíteo isoladamente.",
-   "B": "A restrição ao valgo depende do ligamento colateral medial, estrutura sem relação direta com a função do poplíteo.",
-   "C": "A rotação tibial interna não é a restringida principalmente pelo poplíteo; a sua função central é limitar a rotação externa."
+   "A": "**O varo** é restringido principalmente pelo ligamento colateral lateral; o poplíteo contribui de forma secundária.",
+   "B": "**O valgo** é restringido pelo ligamento colateral medial e pelas estruturas posteromediais, no lado oposto ao poplíteo.",
+   "C": "**A rotação tibial interna**: o poplíteo produz ativamente a rotação interna da tíbia (função dinâmica), mas, como restritor, sua importância está na rotação externa."
   },
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 45"
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 45",
+   "LaPrade RF, Wozniczka JK, Stellmaker MP, Wijdicks CA. Analysis of the static function of the popliteus tendon and evaluation of an anatomic reconstruction: the \"fifth ligament\" of the knee. Am J Sports Med. 2010;38(3):543-549."
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "joelho-0160": {
@@ -1929,17 +1930,18 @@
   "conferido": false
  },
  "joelho-0164": {
-  "conceito": "### A regra da água\nÁgua (edema, derrame, abscesso, líquor): ==baixo sinal em T1 e alto em T2==.\n\n### A tabela mental\n| Tecido | T1 | T2 |\n|---|---|---|\n| Água, edema | baixo | **alto** |\n| Gordura | **alto** | alto |\n| Osso cortical, ar, fibrose, calcificação | baixo | baixo |\n| Sangue subagudo (meta-hemoglobina) | **alto** | variável |\n\n### Supressão de gordura\nSTIR e T2 fat-sat eliminam o brilho da gordura: o único sinal alto que sobra é o da **água**. Fazem o edema ósseo \"saltar aos olhos\".\n\n### Gadolínio\nRealce em T1: tecido vascularizado, inflamação, tumor; abscesso com realce periférico.\n\n> **Na prova:** água = ==hipo T1, hiper T2==; gordura = hiper nas duas.",
-  "correta": "**Baixo sinal em T1 e alto em T2.**",
+  "conceito": "**Ressonância magnética: T1, T2 e a água.** A ressonância usa o comportamento dos prótons de hidrogênio em um campo magnético. Após o pulso de radiofrequência, os prótons voltam ao equilíbrio por dois processos, e as ponderações destacam cada um deles.\n\n**T1 e T2.**\n- **T1 (relaxação longitudinal)**: tempo para os prótons recuperarem a magnetização no eixo do campo. Tecidos com **T1 curto** (gordura) aparecem **claros**; a **água**, de T1 longo, aparece **escura**. Sequências em T1 (TR e TE curtos) são ótimas para **anatomia** e para a medula óssea gordurosa.\n- **T2 (relaxação transversal)**: tempo de perda da coerência de fase. Tecidos com **T2 longo** (água) aparecem **claros**. Sequências em T2 (TR e TE longos) destacam **líquido, edema e inflamação**: são as sequências da **patologia**.\n\n**A regra prática.** Água (derrame, edema, cisto, abscesso, líquor): **baixo sinal em T1 e alto sinal em T2**.\n\n| Tecido | T1 | T2 |\n|---|---|---|\n| **Água, edema, derrame** | **Baixo** | **Alto** |\n| Gordura | Alto | Alto (intermediário a alto) |\n| Osso cortical, tendões, ligamentos, menisco, ar, calcificação, fibrose | Baixo | Baixo |\n| Sangue subagudo (meta-hemoglobina) | Alto | Variável |\n| Músculo | Intermediário | Intermediário |\n\n**Supressão de gordura.** Como a gordura também brilha em T2, usam-se sequências com **saturação de gordura** (T2 fat-sat, STIR, densidade de prótons fat-sat) para que só a água fique clara; é assim que se vê o **edema ósseo** (contusões, fraturas ocultas, osteonecrose inicial). Bitar e colaboradores revisaram essas sequências.\n\n**Contraste (gadolínio).** Encurta o T1: realça tecidos vascularizados em T1 com supressão de gordura (tumores, sinovite, abscesso com borda captante).\n\n> Água: escura em T1, clara em T2; gordura clara em ambas, por isso a supressão de gordura.",
+  "correta": "**C: baixo sinal em T1, e alto sinal em T2.** A água tem T1 e T2 longos: aparece escura nas sequências ponderadas em T1 e clara nas ponderadas em T2, o que torna o T2 a sequência de escolha para edema e derrame.",
   "incorretas": {
-   "A": "**Gordura.**",
-   "B": "**Sem correspondência comum.**",
-   "D": "**Cortical, ar, fibrose.**"
+   "A": "**Alto em T1 e alto em T2** é o comportamento da gordura (e do sangue subagudo em T1), não da água.",
+   "B": "**Alto em T1 e baixo em T2** não corresponde à água; lembra algumas lesões com conteúdo proteico ou paramagnético específicas.",
+   "D": "**Baixo em T1 e baixo em T2** é o padrão de osso cortical, tendões, ligamentos, menisco, ar, calcificação e fibrose."
   },
   "referencias": [
-   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 9.2"
+   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 9.2",
+   "Bitar R, Leung G, Perng R, et al. MR pulse sequences: what every radiologist wants to know but is afraid to ask. Radiographics. 2006;26(2):513-537."
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "joelho-0165": {
