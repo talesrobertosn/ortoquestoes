@@ -8895,35 +8895,37 @@
   "conferido": false
  },
  "pediatria-0754": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "C",
-  "conceito": "**Pronação dolorosa.** A tração subluxa a cabeça do rádio, e o ligamento anular desliza proximalmente e fica interposto na articulação radiocapitelar.\n\n**Na prova:** o anular sobe e fica na radiocapitelar.",
-  "correta": "**Proximal.** O deslocamento é proximal.",
+  "conceito": "**Pronação dolorosa (cotovelo da babá, subluxação da cabeça do rádio).** É a lesão mais comum do cotovelo em crianças pequenas, entre 1 e 4 anos.\n\n**Mecanismo.** **Tração longitudinal** do braço com o cotovelo estendido e o antebraço pronado (puxar a criança pela mão, levantá-la pelos braços, girá-la segurando as mãos).\n\n**Anatomia da lesão.** O **ligamento anular** envolve o colo do rádio. Na criança pequena, a cabeça do rádio é pouco desenvolvida e a fixação distal do ligamento é frágil. Com a tração, a cabeça do rádio desliza parcialmente para fora do anel, e o **ligamento anular escorrega proximalmente**, ficando **interposto entre a cabeça do rádio e o capítulo** (articulação radiocapitelar).\n\n**Quadro clínico.** Criança que para de usar o braço, mantendo-o junto ao corpo, com o cotovelo levemente fletido e o antebraço pronado; chora ao tentar supinar. Não há edema nem deformidade importantes. A radiografia é normal e só é necessária se a história ou o exame forem atípicos.\n\n**Redução.**\n- **Hiperpronação** do antebraço (mais eficaz e menos dolorosa em vários estudos), ou\n- **Supinação** seguida de **flexão** do cotovelo, com o polegar sobre a cabeça do rádio.\n- Sente-se um estalido, e a criança volta a usar o braço em poucos minutos.\n\n**Orientação aos pais.** Evitar tracionar a criança pelos braços; recidivas são comuns até cerca de 5 anos, quando o ligamento e a cabeça do rádio amadurecem.\n\n> Pronação dolorosa: o ligamento anular desliza proximalmente e fica preso na articulação radiocapitelar.",
+  "correta": "**C: proximal (resposta pela bibliografia).** Na pronação dolorosa, a tração longitudinal faz a cabeça do rádio deslizar distalmente pelo anel, e o ligamento anular escorrega proximalmente, ficando interposto entre a cabeça do rádio e o capítulo. A redução por hiperpronação ou supinação e flexão devolve o ligamento à posição normal.",
   "incorretas": {
-   "A": "**Medial.** Direção incorreta.",
-   "B": "**Lateral.** Direção incorreta.",
-   "D": "**Distal.** Direção incorreta."
+   "A": "**Deslocamento medial** do ligamento anular não é o mecanismo; o ligamento se desloca no eixo longitudinal, para cima.",
+   "B": "**Deslocamento lateral** também não descreve a lesão; o problema é a migração proximal do ligamento sobre a cabeça do rádio.",
+   "D": "**Deslocamento distal** é o movimento da **cabeça do rádio** em relação ao ligamento durante a tração; o ligamento, por sua vez, fica proximal a ela."
   },
   "referencias": [
-   "Rockwood C.A. et al. Fractures in Children. Philadelphia: Lippincott. 6ª ed., p. 696"
+   "Rockwood C.A. et al. Fractures in Children. Philadelphia: Lippincott. 6ª ed., p. 696",
+   "Schunk JE. Radial head subluxation: epidemiology and treatment of 87 episodes. Ann Emerg Med. 1990;19(9):1019-1023."
   ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "C",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0755": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": "**SCIWORA.** Lesão medular sem alteração radiográfica é típica de crianças pequenas, pela elasticidade da coluna, que excede a da medula.\n\n**Na prova:** SCIWORA é pediátrica.",
-  "correta": "**Crianças.** É mais frequente em crianças.",
+  "conceito": "**SCIWORA: lesão medular sem alteração radiográfica.** O termo foi criado por Pang e Wilberger (1982) para descrever crianças com lesão medular traumática e radiografias (e tomografias) normais.\n\n**Por que é típica de crianças.** A coluna da criança é muito mais **elástica** que a medula:\n- Ligamentos e cápsulas frouxos.\n- Facetas mais horizontais, que permitem deslizamento.\n- Corpos vertebrais em cunha anterior e placas terminais cartilaginosas.\n- Cabeça proporcionalmente grande e musculatura cervical fraca.\n\nA coluna pode se deformar transitoriamente além do que a medula suporta (a coluna estica cerca de 5 cm, a medula, menos de 1 cm) e depois voltar ao lugar, sem fratura ou luxação visível. A medula fica lesada por estiramento, contusão ou isquemia.\n\n**Características.**\n- Mais comum em crianças **abaixo de 8 anos**, em que as lesões tendem a ser mais altas (cervical alta) e mais graves.\n- Até metade apresenta **início tardio** dos sintomas (horas a dias após o trauma), às vezes com sintomas transitórios iniciais (parestesias) que regridem e depois retornam.\n- A **ressonância magnética** é essencial: mostra edema, hemorragia ou lesões ligamentares; ressonância normal indica melhor prognóstico.\n\n**Conduta.** Imobilização (colar por cerca de 12 semanas), evitar esportes de contato, seguimento neurológico. Com a era da ressonância, muitas lesões antes chamadas SCIWORA mostram alterações; alguns autores usam SCIWONA (sem alteração neuroimagem).\n\n> SCIWORA: lesão medular sem alteração radiográfica, característica da criança pela elasticidade da coluna.",
+  "correta": "**A: crianças (resposta pela bibliografia).** A SCIWORA é característica de crianças, principalmente abaixo de 8 anos, porque a coluna infantil é muito mais elástica que a medula e pode se deformar transitoriamente sem fratura visível, lesando a medula. A ressonância é fundamental para o diagnóstico e o prognóstico.",
   "incorretas": {
-   "B": "**Adolescentes.** Menos frequente.",
-   "C": "**Adultos jovens.** Raro.",
-   "D": "**Idosos.** O idoso tem a síndrome centromedular."
+   "B": "**Adolescentes** já têm coluna com características mais próximas da do adulto; a SCIWORA é bem menos frequente nessa faixa.",
+   "C": "**Adultos jovens** costumam ter fraturas ou luxações visíveis quando há lesão medular traumática.",
+   "D": "**Idosos** podem ter lesão medular sem fratura (síndrome centromedular por hiperextensão em canal estreito por espondilose), mas o mecanismo é diferente e o termo SCIWORA foi criado para a criança."
   },
   "referencias": [
-   "Rockwood C.A. et al. Fractures in Children. Philadelphia: Lippincott. 6ª ed., p. 779."
+   "Rockwood C.A. et al. Fractures in Children. Philadelphia: Lippincott. 6ª ed., p. 779.",
+   "Pang D, Wilberger JE Jr. Spinal cord injury without radiographic abnormalities in children. J Neurosurg. 1982;57(1):114-129."
   ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "A",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0756": {
@@ -9040,51 +9042,54 @@
   "conferido": false
  },
  "pediatria-0763": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": "**Índice acetabular e centro-borda.** Com índice acetabular de 40 graus, o acetábulo é raso e a cobertura cai; o centro-borda esperado é baixo (20 graus ou menos).\n\n**Na prova:** índice alto, centro-borda baixo.",
-  "correta": "**20º.** É o menor valor entre as opções.",
+  "conceito": "**Medidas da cobertura acetabular na displasia do quadril.** Duas medidas radiográficas complementares avaliam a forma do acetábulo e a cobertura da cabeça femoral.\n\n**Índice acetabular (ângulo acetabular).**\n- Ângulo entre a linha de Hilgenreiner e a linha que vai da cartilagem trirradiada à borda lateral do teto.\n- Mede a **inclinação do teto**.\n- Normal: cerca de 27 a 30 graus ao nascimento, caindo para cerca de 20 graus aos 2 anos e menos de 15 graus mais tarde.\n- **40 graus** é muito aumentado, indicando acetábulo raso e oblíquo (displasia importante).\n\n**Ângulo centro-borda de Wiberg (CE).**\n- Ângulo entre a vertical pelo centro da cabeça femoral e a linha do centro da cabeça à borda lateral do acetábulo.\n- Mede a **cobertura lateral** da cabeça.\n- Normal: acima de cerca de 20 graus na criança de 5 a 8 anos e acima de 25 graus no adolescente e no adulto.\n- **Diminuído** na displasia: abaixo de 20 graus (às vezes negativo, quando a cabeça está fora do acetábulo).\n\n**Relação entre as medidas.** Quanto mais inclinado e raso o teto (índice acetabular alto), menor a cobertura da cabeça (centro-borda baixo). Com um índice de 40 graus, espera-se um centro-borda baixo, em torno de **20 graus ou menos**.\n\n**Na prática.** O centro-borda é pouco confiável antes de cerca de 5 anos, quando o centro da cabeça é difícil de definir. Em crianças pequenas, usa-se mais o índice acetabular; em maiores e adultos, o centro-borda e o índice de Tönnis (inclinação do teto de carga).\n\n> Índice acetabular alto (40 graus) indica teto raso e corresponde a centro-borda baixo (20 graus ou menos).",
+  "correta": "**A: 20º (resposta pela bibliografia).** Com índice acetabular de 40 graus, o teto acetabular é raso e muito inclinado, e a cobertura lateral da cabeça femoral diminui. O ângulo centro-borda esperado é baixo, em torno de 20 graus ou menos, compatível com displasia.",
   "incorretas": {
-   "B": "**30º.** Cobertura normal.",
-   "C": "**40º.** Cobertura aumentada.",
-   "D": "**50º.** Cobertura aumentada."
+   "B": "**30 graus** é um ângulo centro-borda normal, incompatível com um índice acetabular tão alterado.",
+   "C": "**40 graus** de centro-borda indicaria cobertura excessiva (acetábulo profundo), o oposto da displasia.",
+   "D": "**50 graus** seria cobertura muito aumentada, típica de protrusão ou impacto do tipo pinçamento."
   },
   "referencias": [
-   "Tachdjian M.O. Pediatric orthopaedics. Philadelphia: Saunders. 3ª ed., p. 531."
+   "Tachdjian M.O. Pediatric orthopaedics. Philadelphia: Saunders. 3ª ed., p. 531.",
+   "Wiberg G. Studies on dysplastic acetabula and congenital subluxation of the hip joint. Acta Chir Scand. 1939;83(Suppl 58)."
   ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "A",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0764": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": "**Amioplasia.** Associada à diminuição de células do corno anterior da medula.\n\n**Na prova:** amioplasia é corno anterior.",
-  "correta": "**No corno anterior da medula.** É a etiopatogenia aceita.",
+  "conceito": "**Artrogripose múltipla congênita e amioplasia.** Artrogripose não é uma doença única, mas um **sinal**: contraturas congênitas em várias articulações. Resulta da **falta de movimento fetal** (acinesia fetal), que leva à fibrose periarticular e à rigidez. Há mais de 300 causas, que podem ser neurogênicas, miopáticas, do tecido conjuntivo, por restrição de espaço intrauterino ou maternas.\n\n**Amioplasia (artrogripose clássica).** É a forma mais comum, cerca de um terço dos casos.\n- **Esporádica**, não hereditária.\n- **Etiopatogenia**: associada à **diminuição das células do corno anterior da medula**, com músculos substituídos por tecido fibroso e gorduroso; provavelmente por um evento vascular ou isquêmico intrauterino.\n- **Quadro típico**: acometimento simétrico dos quatro membros; ombros em rotação interna e adução, **cotovelos em extensão**, punhos fletidos e desviados ulnarmente, polegares na palma; quadris em flexão e abdução (às vezes luxados), joelhos em flexão ou extensão, **pés tortos rígidos**. Pele lisa, sem pregas sobre as articulações, com covinhas; **inteligência normal**; sensibilidade preservada.\n\n**Tratamento.** Começa logo após o nascimento: fisioterapia e alongamentos, órteses, gessos seriados (os pés tortos respondem ao Ponseti, mas frequentemente precisam de cirurgias adicionais, como talectomia em casos refratários). Cirurgias para obter função: flexão do cotovelo (transferência do tríceps ou flexoplastia de Steindler) para levar a mão à boca, posicionamento do punho, correção de quadris e joelhos para permitir a marcha.\n\n> Amioplasia: forma clássica e esporádica de artrogripose, ligada à redução de células do corno anterior da medula.",
+  "correta": "**B: no corno anterior da medula (resposta pela bibliografia).** A amioplasia está associada à diminuição das células do corno anterior da medula, levando à falta de movimento fetal, à substituição muscular por tecido fibrogorduroso e às contraturas congênitas simétricas dos quatro membros.",
   "incorretas": {
-   "A": "**Na placa motora.** Não é a etiologia.",
-   "C": "**Na cápsula articular.** A contratura capsular é consequência.",
-   "D": "**Na cartilagem articular.** Não é a etiologia."
+   "A": "**Alterações na placa motora** (junção neuromuscular) estão envolvidas em algumas formas raras de artrogripose, como as associadas à miastenia materna ou a síndromes miastênicas congênitas, mas não na amioplasia.",
+   "C": "**A cápsula articular** fica espessada e retraída como **consequência** da falta de movimento, e não como causa da amioplasia.",
+   "D": "**A cartilagem articular** é normal no início; alterações ocorrem secundariamente à falta de movimento e de carga."
   },
   "referencias": [
-   "Tachdjian M.O. Pediatric orthopaedics. Philadelphia: Saunders. 4ª ed., p. 1873."
+   "Tachdjian M.O. Pediatric orthopaedics. Philadelphia: Saunders. 4ª ed., p. 1873.",
+   "Hall JG, Reed SD, Driscoll EP. Part I. Amyoplasia: a common, sporadic condition with congenital contractures. Am J Med Genet. 1983;15(4):571-590."
   ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "B",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0765": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "D",
-  "conceito": "**Morquio.** Platispondilia grave, odontoide hipoplásico e instabilidade atlantoaxial, com inteligência normal.\n\n**Na prova:** Morquio tem platispondilia e C1-C2 instável.",
-  "correta": "**MORQUIO.** É a característica.",
+  "conceito": "**Mucopolissacaridoses (MPS).** São doenças de depósito lisossômico, por deficiência de enzimas que degradam glicosaminoglicanos (mucopolissacarídeos). O acúmulo afeta ossos, articulações, coração, fígado, córnea e, em várias formas, o sistema nervoso.\n\n**Disostose múltipla.** Conjunto de alterações esqueléticas comuns às MPS: costelas em remo, vértebras ovoides ou com bico anterior (gibosidade toracolombar), pelve com ilíacos alargados, metacarpos em projétil, coxa valga.\n\n**Principais tipos e características ortopédicas.**\n\n| Tipo | Nome | Herança | Destaques |\n|---|---|---|---|\n| I | Hurler | Autossômica recessiva | Deficiência intelectual, giba toracolombar, face grosseira, opacidade de córnea |\n| II | Hunter | **Ligada ao X** | Semelhante a Hurler, mais leve, sem opacidade de córnea |\n| III | Sanfilippo | Autossômica recessiva | Predomínio neurológico, alterações esqueléticas leves |\n| **IV** | **Morquio** | Autossômica recessiva | **Platispondilia grave** (vértebras achatadas), **odontoide hipoplásico** com **instabilidade atlantoaxial**, baixa estatura de tronco curto, geno valgo, **inteligência normal** |\n| VI | Maroteaux-Lamy | Autossômica recessiva | Inteligência normal, disostose múltipla |\n\n**Morquio em detalhes.** Acúmulo de queratan sulfato. A **platispondilia universal** e a hipoplasia do dente com frouxidão ligamentar produzem **instabilidade C1-C2** e mielopatia, a principal causa de morbidade e morte. Recomenda-se rastreamento com radiografias dinâmicas e ressonância, e artrodese occipitocervical ou C1-C2 quando há instabilidade ou mielopatia. Antes de qualquer anestesia, avaliar a coluna cervical.\n\n**Tratamento das MPS.** Terapia de reposição enzimática e transplante de células-tronco hematopoéticas em algumas formas (sobretudo Hurler).\n\n> Morquio (MPS IV): platispondilia grave, odontoide hipoplásico e inteligência normal.",
+  "correta": "**D: MORQUIO (resposta pela bibliografia).** A síndrome de Morquio (MPS IV) se caracteriza pela platispondilia grave e universal, associada a hipoplasia do odontoide e instabilidade atlantoaxial, com inteligência preservada. A instabilidade C1-C2 é a principal preocupação ortopédica.",
   "incorretas": {
-   "A": "**HURLER.** Vértebras em gancho, sem platispondilia grave.",
-   "B": "**HUNTER.** Semelhante ao Hurler.",
-   "C": "**SANFILIPPO.** Alteração óssea leve."
+   "A": "**Hurler (MPS I)** tem vértebras com bico anteroinferior e giba toracolombar, mas não a platispondilia grave característica de Morquio; há deficiência intelectual.",
+   "B": "**Hunter (MPS II)** é ligada ao X e semelhante a Hurler em forma mais leve, sem a platispondilia grave de Morquio.",
+   "C": "**Sanfilippo (MPS III)** tem predomínio de manifestações neurológicas, com alterações esqueléticas relativamente leves."
   },
   "referencias": [
-   "Tachdjian M.O. Pediatric orthopaedics. Philadelphia: Saunders. 2ª ed., p. 875."
+   "Tachdjian M.O. Pediatric orthopaedics. Philadelphia: Saunders. 2ª ed., p. 875.",
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Displasias esqueléticas e mucopolissacaridoses."
   ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "D",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0766": {

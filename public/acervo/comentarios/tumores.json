@@ -3448,19 +3448,20 @@
   "conferido": false
  },
  "tumores-0334": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "D",
-  "conceito": "**Condroma periostal.** Lesão cortical de superfície que escava o osso, mais comum no úmero proximal, seguida do fêmur.\n\n**Na prova:** condroma periostal é úmero proximal.",
-  "correta": "**Proximal do úmero.** É a localização mais comum.",
+  "conceito": "**Condroma periosteal (justacortical).** É um tumor cartilaginoso benigno que nasce **sob o periósteo**, na superfície do osso, e não dentro da medula (como o encondroma).\n\n**Características.**\n- **Idade**: crianças e adultos jovens (geralmente abaixo dos 30 anos).\n- **Localização**: metáfise ou diáfise de ossos longos, sendo o **úmero proximal** o local mais frequente, seguido do fêmur (proximal e distal) e da tíbia; também nas mãos.\n- **Clínica**: massa palpável, às vezes dolorosa, de crescimento lento.\n- **Radiografia**: lesão de superfície, geralmente menor que 3 a 4 cm, que **escava a cortical** externa em forma de \"pires\" (saucerização), com **esclerose** da base e às vezes um contraforte (buttress) periosteal nas bordas; pode ter calcificações condroides (anéis e arcos). A medular não é invadida.\n\n**Diagnóstico diferencial.**\n\n| Lesão | Diferença |\n|---|---|\n| Condrossarcoma periosteal | Maior (acima de 5 cm), adultos, mais agressivo |\n| Osteossarcoma periosteal | Espículas perpendiculares (raios de sol), componente condroide de alto grau |\n| Osteocondroma | Continuidade da cortical e da medular com o osso de base |\n| Miosite ossificante | Ossificação madura na periferia, história de trauma |\n\n**Tratamento.** **Ressecção marginal (em bloco)**, incluindo a cortical subjacente, com baixa taxa de recidiva. Lesões grandes exigem diferenciação histológica cuidadosa com o condrossarcoma periosteal.\n\n> Condroma periosteal: lesão cartilaginosa de superfície que escava a cortical, mais comum no úmero proximal.",
+  "correta": "**D: proximal do úmero (resposta pela bibliografia).** O condroma periosteal ocorre com mais frequência na metáfise proximal do úmero, seguida pelo fêmur e pela tíbia. Radiograficamente, escava a cortical em forma de pires, com esclerose da base e sem invadir a medular.",
   "incorretas": {
-   "A": "**Proximal da tíbia.** Menos comum.",
-   "B": "**Distal do rádio.** Menos comum.",
-   "C": "**Distal do fêmur.** Menos comum."
+   "A": "**A tíbia proximal** é um local possível, mas menos frequente que o úmero proximal e o fêmur.",
+   "B": "**O rádio distal** é local raro para o condroma periosteal; lesões cartilaginosas da mão e do punho costumam ser encondromas.",
+   "C": "**O fêmur distal** é o segundo local mais frequente em várias séries, mas fica atrás do úmero proximal."
   },
   "referencias": [
-   "Weinstein SL, Buckwalter JA. Turek’s orthopaedics: principles and their application. Philadelphia: Lippincott/Manole. 5ª ed., p. 313"
+   "Weinstein SL, Buckwalter JA. Turek’s orthopaedics: principles and their application. Philadelphia: Lippincott/Manole. 5ª ed., p. 313",
+   "Lewis MM, Kenan S, Yabut SM, Norman A, Steiner G. Periosteal chondroma: a report of ten cases and review of the literature. Clin Orthop Relat Res. 1990;(256):185-192."
   ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "D",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "tumores-0335": {
