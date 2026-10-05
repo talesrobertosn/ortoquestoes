@@ -2068,14 +2068,18 @@
   "conferido": false
  },
  "quadril-0220": {
-  "conceito": "### Ângulo alfa\n- Círculo sobre a cabeça; linha do centro pelo eixo do colo; linha do centro até onde o contorno **escapa do círculo**.\n- Quanto mais cedo o osso sai do círculo, maior o ângulo e maior a giba.\n- Incidências: **Dunn 45° ou 90°**, cross-table lateral; na RM, cortes radiais.\n\n### Limiar\n| Valor | Interpretação |\n|---|---|\n| abaixo de 50° | normal |\n| 50 a 55° | zona cinzenta |\n| ==acima de 55°== | ==came== |\n| acima de 60 a 65° | giba franca; associação forte com lesão condral |\n\n### Contexto\n- Ângulo alfa alto em assintomáticos é comum (sobretudo atletas): o diagnóstico de impacto exige **clínica + imagem**.\n\n> **Na prova:** came = ângulo alfa ==acima de 55°== (algumas fontes, 50°).",
-  "correta": "**Acima de 55°.**\n- É o limiar mais citado para came; algumas fontes usam 50°.",
+  "conceito": "**O que o ângulo alfa mede.** No impacto femoroacetabular tipo CAME, a junção cabeça-colo perde a concavidade normal (o \"offset\") e forma uma giba anterossuperior. Ao fletir e rodar internamente o quadril, essa giba entra no acetábulo como um came de motor, cisalha a cartilagem acetabular de fora para dentro e descola o lábio. O ângulo alfa, descrito por **Nötzli** em 2002 em cortes de RM, transforma essa giba em número.\n\n**Como traçar.**\n1. Desenha-se um círculo que se ajusta ao contorno da cabeça femoral.\n2. Traça-se uma linha do centro da cabeça pelo eixo do colo (passando pelo ponto médio do colo na sua parte mais estreita).\n3. Traça-se outra linha do centro até o ponto anterior em que o contorno ósseo **sai do círculo**.\n4. O ângulo entre as duas linhas é o alfa.\n\nQuanto mais cedo o osso escapa do círculo, mais perto do eixo do colo e maior o ângulo, ou seja, maior a giba.\n\n**Valores de referência.**\n\n| Ângulo alfa | Interpretação |\n|---|---|\n| Até cerca de 50° | Junção cabeça-colo esférica, normal |\n| **Acima de 55°** | Limiar mais usado para CAME (resposta) |\n| Acima de 60 a 65° | Deformidade mais acentuada, associada a lesão condral |\n\nNo trabalho original de Nötzli, os quadris assintomáticos tiveram média de cerca de 42° e os sintomáticos de cerca de 74°, e o corte proposto foi 50°. Na prática e nas provas brasileiras, o valor de **55°** consolidou-se como o limite acima do qual se considera a morfologia CAME, deixando a faixa de 50 a 55° como zona cinzenta.\n\n**Incidências.** A giba costuma ser anterossuperior e pode ser invisível no AP. Por isso usam-se o **Dunn modificado a 45°** (quadril fletido 45°, abduzido 20°), o perfil cross-table e, na RM, os cortes radiais. Um valor normal em uma única incidência não exclui CAME.\n\n**Lembrete clínico.** Ângulo alfa aumentado é achado frequente em assintomáticos, sobretudo atletas jovens. O diagnóstico de impacto exige a tríade de sintomas (dor inguinal à flexão), sinais (teste FADIR positivo) e imagem compatível.",
+  "correta": "**Correta: B (55°).** É o limiar mais adotado para caracterizar a morfologia CAME. Acima dele, a perda de esfericidade da junção cabeça-colo é suficiente para que a giba entre no acetábulo durante a flexão com rotação interna.",
   "incorretas": {
-   "A": "**Normal.**\n- 45° está dentro da normalidade.",
-   "C": "**Alto demais.**\n- 65° já é giba franca; perderia os casos intermediários.",
-   "D": "**Muito acima.**\n- 75° é giba grande e evidente."
+   "A": "**45°** está dentro da faixa normal. A média dos quadris normais no estudo original foi próxima de 42°, de modo que 45° não indica deformidade.",
+   "C": "**65°** já é claramente patológico, mas não é o limiar. Usá-lo como corte deixaria de reconhecer muitas deformidades CAME moderadas e sintomáticas.",
+   "D": "**75°** corresponde à média dos quadris sintomáticos de Nötzli, ou seja, a uma deformidade franca. Não é o valor a partir do qual o ângulo se torna indicativo de CAME."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Nötzli HP, Wyss TF, Stoecklin CH, Schmid MR, Treiber K, Hodler J. The contour of the femoral head-neck junction as a predictor for the risk of anterior impingement. J Bone Joint Surg Br. 2002;84(4):556-560.",
+   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "quadril-0221": {

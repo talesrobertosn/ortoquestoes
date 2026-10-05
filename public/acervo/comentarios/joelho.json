@@ -769,17 +769,18 @@
   "conferido": false
  },
  "joelho-0067": {
-  "conceito": "A osteotomia de Fulkerson (anteromedialização da tuberosidade tibial) combina correção do TA-GT aumentado com anteriorização da tuberosidade, o que reduz a força de contato patelofemoral, por isso é preferida quando há lesão condral avançada (graus III/IV), diferente de osteotomias puramente mediais como a de Elmslie-Trillat.",
-  "correta": "C. A osteotomia de Fulkerson é indicada nesse cenário, pois associa correção do TA-GT com descarga da articulação patelofemoral, importante na presença de lesão condral avançada.",
+  "conceito": "**A lógica das osteotomias da tuberosidade.** Na instabilidade patelar, o aumento da distância **TA-GT** (tuberosidade anterior da tíbia ao sulco troclear, medida na TC) indica que o vetor do tendão patelar está lateralizado, e a patela é puxada para fora a cada contração do quadríceps. Valores normais ficam em torno de 10 a 15 mm; acima de **20 mm** é considerado patológico e indica a medialização da tuberosidade.\n\nA tuberosidade pode ser movida em três direções, e cada uma tem um efeito.\n\n| Direção | Efeito mecânico |\n|---|---|\n| Medial | Corrige o vetor lateral e estabiliza a patela |\n| Anterior | Aumenta o braço de alavanca do tendão e **reduz a pressão** patelofemoral |\n| Distal | Corrige a patela alta |\n\n**As osteotomias citadas.**\n\n| Técnica | Movimento |\n|---|---|\n| Elmslie-Trillat | Medialização pura, osteotomia plana com pedículo distal |\n| **Fulkerson** | **Anteromedialização**, osteotomia oblíqua |\n| Maquet | Anteriorização pura, com enxerto |\n| Hauser | Medialização com posteriorização (histórica) |\n\n**Por que Fulkerson quando há condropatia.** A osteotomia de Fulkerson é feita num plano oblíquo, de anteromedial para posterolateral. Ao deslizar a tuberosidade ao longo desse plano, ela vai ao mesmo tempo para medial e para anterior. A medialização corrige a instabilidade, e a anteriorização descarrega a cartilagem patelar lesada. Em pacientes com **TA-GT maior que 20 mm e lesão condral grau III ou IV**, as duas ações são necessárias.\n\n**Limite importante.** A anteromedialização transfere a carga para as regiões proximal e medial da patela. Ela funciona melhor em lesões **distais e laterais**; lesões proximais ou difusas e lesões da faceta medial respondem mal.",
+  "correta": "**Correta: C (Fulkerson).** A anteromedialização trata as duas condições ao mesmo tempo: a medialização normaliza o TA-GT aumentado e a anteriorização reduz a força de contato patelofemoral sobre a cartilagem com lesão grau III ou IV.",
   "incorretas": {
-   "A": "A técnica de Maquet eleva a tuberosidade sem corrigi-la medialmente, sendo menos indicada quando há aumento do TA-GT associado.",
-   "B": "A técnica de Hauser (medialização com fixação distal) tem maior associação com artrose patelofemoral em longo prazo, sendo menos indicada quando já existe lesão condral avançada.",
-   "D": "A técnica de Elmslie-Trillat apenas medializa a tuberosidade, sem o componente de anteriorização que protege a cartilagem lesada nos graus III/IV."
+   "A": "**Maquet** anterioriza a tuberosidade sem medializá-la. Alivia a pressão patelofemoral na artrose, mas não corrige o TA-GT e não trata a instabilidade.",
+   "B": "**Hauser** medializa e também **posterioriza** a tuberosidade, aumentando a pressão patelofemoral. Foi abandonada justamente por levar à artrose patelofemoral, o oposto do que se deseja com lesão condral.",
+   "D": "**Elmslie-Trillat** medializa sem anteriorizar. É boa escolha para TA-GT aumentado com cartilagem preservada, mas não descarrega uma cartilagem com lesão avançada."
   },
   "referencias": [
+   "Fulkerson JP. Anteromedialization of the tibial tuberosity for patellofemoral malalignment. Clin Orthop Relat Res. 1983;(177):176-181.",
    "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 9.7"
   ],
-  "geradoEm": "2026-09-17",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "joelho-0068": {

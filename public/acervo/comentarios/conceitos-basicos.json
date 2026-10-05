@@ -1199,18 +1199,19 @@
   "conferido": false
  },
  "conceitos-basicos-0117": {
-  "conceito": "O pino supra-acetabular atravessa um corredor ósseo estreito entre a espinha ilíaca anteroinferior e a incisura isquiática maior, e a fluoroscopia oferece uma imagem que o desenha: na incidência oblíqua obturadora combinada com a de saída, as duas tábuas do ílio (interna e externa) se projetam sobrepostas formando um contorno em gota, cujo fundo é o topo da incisura isquiática maior. Colocar a ponta do pino dentro dessa gota garante que ele caminhe entre as duas corticais, sem sair para a pelve nem para a articulação nem descer sobre a incisura, onde correm os vasos e o nervo glúteo superior.",
-  "correta": "As tábuas interna e externa do ílio, com o topo da incisura isquiática maior formando o limite inferior.",
+  "conceito": "**O corredor supra-acetabular.** Entre a espinha ilíaca anteroinferior (EIAI) e a incisura isquiática maior, o ílio forma uma coluna óssea espessa, delimitada pelas suas duas tábuas cortical interna e externa e situada logo acima do teto do acetábulo. É o osso mais denso da pelve anterior e por isso oferece excelente ancoragem para um pino de Schanz de fixador externo, muito mais forte que a crista ilíaca, onde o pino corre entre tábuas finas e afrouxa com facilidade.\n\n**Por que o sinal da lágrima.** O corredor é estreito e cercado de estruturas nobres: a articulação do quadril embaixo, a incisura isquiática com os vasos glúteos superiores e o nervo isquiático atrás, e a pelve menor medialmente. Para enxergá-lo de topo, combina-se a **incidência oblíqua obturadora** com a de **saída** (inlet invertida). Nessa projeção, o feixe de raios fica paralelo ao corredor e:\n- a **tábua interna** e a **tábua externa** do ílio aparecem como as duas bordas de um contorno em forma de gota;\n- a ponta inferior da gota corresponde ao **topo da incisura isquiática maior**;\n- a EIAI fica no ponto de entrada, na parte alta.\n\nO pino deve entrar no centro da lágrima e permanecer dentro dela durante todo o avanço. Se sair pela borda, perfurou uma das tábuas; se ultrapassar o vértice inferior, aproxima-se da incisura isquiática.\n\n**Confirmação.** Depois de posicionado no corredor, a incidência alar ou a oblíqua ilíaca mostra a profundidade e confirma que o pino passa acima do teto acetabular, e o AP mostra que não penetrou a articulação.\n\n**Cuidado anatômico.** O nervo cutâneo femoral lateral passa perto da EIAI; a incisão deve ser pequena e a dissecção romba até o osso.",
+  "correta": "**Correta: C.** A lágrima é formada pela sobreposição das **tábuas interna e externa do ílio**, e seu vértice inferior corresponde ao **topo da incisura isquiática maior**. É a imagem que delimita os quatro lados do corredor ósseo onde o pino deve ficar.",
   "incorretas": {
-   "A": "A gota é formada pelas DUAS tábuas sobrepostas, é essa sobreposição que define o corredor.",
-   "B": "Além de citar apenas uma tábua, o limite inferior é a incisura isquiática MAIOR, não a menor.",
-   "D": "As tábuas estão certas, mas o limite inferior é a incisura maior."
+   "A": "Cita apenas a **tábua interna**. Uma única cortical não forma um contorno fechado; a lágrima existe justamente porque as duas tábuas convergem e se veem de topo.",
+   "B": "Erra duas vezes: considera só a tábua interna e cita a **incisura isquiática menor**, que fica abaixo da espinha isquiática, distante do corredor supra-acetabular.",
+   "D": "Acerta as duas tábuas, mas troca a incisura maior pela **menor**. O limite inferior do corredor é a incisura isquiática maior, por onde passam os vasos glúteos superiores e o nervo isquiático."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
   "referencias": [
-   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 2.23"
-  ]
+   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 2.23",
+   "Rockwood and Green's Fractures in Adults, 9ª edição, capítulo de fraturas do anel pélvico"
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "conceitos-basicos-0118": {
   "incorretas": {
@@ -2202,14 +2203,18 @@
   "conferido": false
  },
  "conceitos-basicos-0233": {
-  "conceito": "### Kingella kingae\n- Gram-negativo da orofaringe; principal agente de infecção osteoarticular de ==6 meses a 4 anos== em muitas séries.\n- ==Cresce mal em meio comum==: culturas frequentemente negativas.\n- Diagnóstico: inocular o líquido em ==frasco de hemocultura== e sobretudo ==PCR== específica.\n- Quadro mais brando: febre baixa, PCR e leucócitos pouco elevados.\n- Sensível a betalactâmicos (resistente a vancomicina e clindamicina).\n\n### Agentes por idade\n| Idade | Agentes |\n|---|---|\n| neonato | S. aureus, estreptococo B, gram-negativos |\n| ==6 meses a 4 anos== | ==Kingella==, S. aureus |\n| > 4 anos | S. aureus |\n| adolescente sexualmente ativo | gonococo |\n\n> **Na prova:** séptica com cultura negativa = ==Kingella kingae (PCR)==",
-  "correta": "**Kingella kingae.**\n- Fastidiosa, não cresce em meio comum.\n- PCR identifica.",
+  "conceito": "**O agente que as culturas não encontram.** Em crianças pequenas com artrite séptica, cerca de metade das culturas de líquido sinovial convencionais é negativa. Boa parte desses casos é causada por *Kingella kingae*, hoje reconhecida como a principal causa de infecção osteoarticular entre **6 meses e 4 anos** em muitas séries.\n\n**Por que ela escapa.**\n- É um **cocobacilo gram-negativo** fastidioso da família Neisseriaceae, que coloniza a orofaringe de crianças pequenas, sobretudo as que frequentam creche.\n- Invade a corrente sanguínea após lesões da mucosa (viroses, estomatites, erupção dentária) e tem tropismo por osso e articulação.\n- O líquido sinovial contém fatores que inibem seu crescimento em placas de ágar comuns, por isso a semeadura tradicional quase sempre fica negativa.\n\n**Como identificar.**\n1. Inocular o líquido sinovial diretamente em **frasco de hemocultura**, o que dilui os inibidores e aumenta muito o rendimento.\n2. Usar a **PCR** específica (genes *groEL* ou da toxina RTX), hoje o método de referência.\n3. A PCR de swab de orofaringe ajuda: se negativa, praticamente exclui *Kingella*.\n\n**Quadro clínico mais brando.** Febre baixa ou ausente, leucócitos e PCR sérica pouco elevados e velocidade de hemossedimentação moderada. Por isso os critérios de Kocher costumam pontuar pouco e podem subestimar a infecção.\n\n| Agente | Faixa etária típica | Particularidade |\n|---|---|---|\n| *S. aureus* | Todas | Mais comum no geral, cresce bem |\n| *K. kingae* | 6 meses a 4 anos | Cultura negativa, exige PCR |\n| *S. pyogenes* | Pré-escolar | Pode suceder varicela |\n| *H. influenzae* B | Antes da vacinação | Hoje raro |\n\n**Tratamento.** É sensível aos betalactâmicos (cefalosporinas, ampicilina) e resistente naturalmente à vancomicina e à clindamicina, o que tem impacto se o esquema empírico for só antiestafilocócico para resistentes.",
+  "correta": "**Correta: D (*Kingella kingae*).** É um gram-negativo fastidioso, inibido pelo líquido sinovial em meios de cultura comuns, e responde por grande parte das artrites sépticas com cultura negativa em crianças pequenas. A PCR específica é o método diagnóstico de escolha.",
   "incorretas": {
-   "A": "**Haemophilus.**\n- Raro após a vacina; cresce em cultura.",
-   "B": "**S. pyogenes.**\n- Cresce facilmente.",
-   "C": "**S. aureus.**\n- Mais comum; cresce bem."
+   "A": "O ***Haemophilus influenzae* tipo B** exige meios enriquecidos (ágar chocolate), mas cresce em cultura de rotina. Após a vacinação universal, tornou-se causa rara.",
+   "B": "O ***Streptococcus pyogenes*** cresce facilmente em ágar sangue, com hemólise beta, e não depende de PCR para ser identificado.",
+   "C": "O ***Staphylococcus aureus*** é o agente mais frequente em todas as idades e cresce bem nas culturas convencionais. A PCR serve apenas para pesquisa de genes de resistência ou virulência, não para encontrá-lo."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Yagupsky P. Kingella kingae: from medical rarity to an emerging paediatric pathogen. Lancet Infect Dis. 2004;4(6):358-367.",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "conceitos-basicos-0234": {

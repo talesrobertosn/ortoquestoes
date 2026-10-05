@@ -96,16 +96,19 @@
   "formato": "corrido"
  },
  "osteometabolicas-0009": {
-  "conceito": "**O freio do osteoclasto.** O **estrogênio** segura o osteoclasto por várias vias: aumenta a **osteoprotegerina**, reduz o **RANKL** e citocinas como IL-1, IL-6 e TNF, e induz a **apoptose** do osteoclasto.\n\n**Na menopausa**, esse freio se solta de uma vez e a remodelação **dispara**. Perde-se primeiro o osso **trabecular**, que tem mais superfície por volume, e por isso as fraturas **vertebrais e do rádio distal** vêm antes das do colo do fêmur. A perda é mais rápida nos primeiros anos após a menopausa.\n\n**Na prova:** a perda abrupta da pós-menopausa se deve à queda do **estrogênio**.",
-  "correta": "**Estrogênio.** A queda do estrogênio libera a atividade osteoclástica e acelera a remodelação.",
+  "conceito": "**Remodelação óssea em equilíbrio.** O esqueleto adulto é trocado continuamente pelas unidades de remodelação: o osteoclasto reabsorve e o osteoblasto preenche. Enquanto as duas fases estão acopladas, a massa óssea se mantém. A osteoporose aparece quando a reabsorção supera a formação.\n\n**O eixo RANKL, RANK e osteoprotegerina.** O osteoblasto e o osteócito produzem o **RANKL**, que se liga ao receptor **RANK** dos precursores e ativa a formação e a sobrevida do osteoclasto. A **osteoprotegerina (OPG)** é um receptor solúvel que sequestra o RANKL e funciona como freio.\n\n**O papel do estrogênio.**\n- Aumenta a produção de OPG e reduz a de RANKL.\n- Reduz citocinas pró-reabsortivas (IL-1, IL-6, TNF-alfa).\n- Induz a **apoptose** do osteoclasto e prolonga a vida do osteoblasto e do osteócito.\n\n**O que acontece na menopausa.** A queda abrupta do estrogênio solta esse freio de uma vez. O número de unidades de remodelação ativas dispara, cada osteoclasto vive mais e cava lacunas mais profundas, e o osteoblasto não consegue preencher tudo. Nos primeiros 5 a 10 anos há uma fase de **perda acelerada**, que atinge sobretudo o **osso trabecular**, por ter mais superfície por volume. Por isso as primeiras fraturas típicas são a **vertebral** e a do **rádio distal**; a do quadril, onde predomina o cortical, aparece mais tarde, quando se soma a perda lenta da senilidade.\n\n**Classificação clássica de Riggs e Melton.**\n\n| Tipo | Mecanismo | Fraturas típicas |\n|---|---|---|\n| I, pós-menopausa | Deficiência de estrogênio, perda trabecular rápida | Vértebra, rádio distal |\n| II, senil | Envelhecimento do osteoblasto, hiperparatireoidismo secundário | Quadril, úmero proximal |\n\n**Implicação terapêutica.** A reposição hormonal e os moduladores seletivos do receptor de estrogênio (raloxifeno) atuam restaurando esse freio, e o denosumabe bloqueia diretamente o RANKL, reproduzindo a ação da OPG.",
+  "correta": "**Correta: B (estrogênio).** A queda dos níveis de estrogênio na menopausa remove a inibição sobre os osteoclastos, eleva o RANKL e reduz a osteoprotegerina, acelerando a reabsorção e produzindo a perda abrupta de massa óssea, predominantemente trabecular.",
   "incorretas": {
-   "A": "**É excesso, não queda.** Tiroxina em excesso causa osteoporose secundária, mas ela não cai na menopausa.",
-   "C": "**Papel pequeno.** A calcitonina tem pouca importância fisiológica no adulto.",
-   "D": "**Também cai, mas não é a causa.** O efeito protetor sobre o osso é do estrogênio."
+   "A": "A **tiroxina** em excesso (hipertireoidismo ou reposição exagerada) acelera a remodelação e causa perda óssea. É a elevação, não a queda, que prejudica o osso, e ela não explica a perda da menopausa.",
+   "C": "A **calcitonina** inibe o osteoclasto de forma farmacológica, mas sua variação fisiológica tem pouco impacto na massa óssea humana. Pacientes tireoidectomizados, sem calcitonina, não desenvolvem osteoporose por isso.",
+   "D": "A **progesterona** também cai na menopausa e pode ter algum efeito anabólico discreto, mas não é o determinante da perda acelerada. Os estudos de reposição mostram que o efeito protetor vem do estrogênio."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Riggs BL, Khosla S, Melton LJ 3rd. Sex steroids and the construction and conservation of the adult skeleton. Endocr Rev. 2002;23(3):279-302.",
+   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição"
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "osteometabolicas-0010": {
   "conceito": "**Doença de Lyme.** A picada do carrapato do gênero **Ixodes** transmite a **Borrelia burgdorferi**. A doença evolui em fases: primeiro o **eritema migratório** no local da picada; semanas depois, a disseminação, com manifestações neurológicas (paralisia facial, meningite) e cardíacas (bloqueio atrioventricular); e, mais tarde, a **artrite**.\n\n**A artrite de Lyme** é oligoarticular, assimétrica e intermitente, com predileção por grandes articulações, e o **joelho** é de longe a mais acometida. Chama atenção o **derrame volumoso com dor desproporcionalmente pequena**. Na criança pode imitar a **artrite séptica**, mas a dor e a febre costumam ser menores. O tratamento é antibiótico, com doxiciclina ou amoxicilina.\n\n**Na prova:** artrite depois de picada de carrapato é Lyme, e Lyme é **joelho**.",
