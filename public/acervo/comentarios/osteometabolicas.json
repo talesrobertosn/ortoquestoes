@@ -96,16 +96,19 @@
   "formato": "corrido"
  },
  "osteometabolicas-0009": {
-  "conceito": "**O freio do osteoclasto.** O **estrogênio** segura o osteoclasto por várias vias: aumenta a **osteoprotegerina**, reduz o **RANKL** e citocinas como IL-1, IL-6 e TNF, e induz a **apoptose** do osteoclasto.\n\n**Na menopausa**, esse freio se solta de uma vez e a remodelação **dispara**. Perde-se primeiro o osso **trabecular**, que tem mais superfície por volume, e por isso as fraturas **vertebrais e do rádio distal** vêm antes das do colo do fêmur. A perda é mais rápida nos primeiros anos após a menopausa.\n\n**Na prova:** a perda abrupta da pós-menopausa se deve à queda do **estrogênio**.",
-  "correta": "**Estrogênio.** A queda do estrogênio libera a atividade osteoclástica e acelera a remodelação.",
+  "conceito": "**Remodelação óssea em equilíbrio.** O esqueleto adulto é trocado continuamente pelas unidades de remodelação: o osteoclasto reabsorve e o osteoblasto preenche. Enquanto as duas fases estão acopladas, a massa óssea se mantém. A osteoporose aparece quando a reabsorção supera a formação.\n\n**O eixo RANKL, RANK e osteoprotegerina.** O osteoblasto e o osteócito produzem o **RANKL**, que se liga ao receptor **RANK** dos precursores e ativa a formação e a sobrevida do osteoclasto. A **osteoprotegerina (OPG)** é um receptor solúvel que sequestra o RANKL e funciona como freio.\n\n**O papel do estrogênio.**\n- Aumenta a produção de OPG e reduz a de RANKL.\n- Reduz citocinas pró-reabsortivas (IL-1, IL-6, TNF-alfa).\n- Induz a **apoptose** do osteoclasto e prolonga a vida do osteoblasto e do osteócito.\n\n**O que acontece na menopausa.** A queda abrupta do estrogênio solta esse freio de uma vez. O número de unidades de remodelação ativas dispara, cada osteoclasto vive mais e cava lacunas mais profundas, e o osteoblasto não consegue preencher tudo. Nos primeiros 5 a 10 anos há uma fase de **perda acelerada**, que atinge sobretudo o **osso trabecular**, por ter mais superfície por volume. Por isso as primeiras fraturas típicas são a **vertebral** e a do **rádio distal**; a do quadril, onde predomina o cortical, aparece mais tarde, quando se soma a perda lenta da senilidade.\n\n**Classificação clássica de Riggs e Melton.**\n\n| Tipo | Mecanismo | Fraturas típicas |\n|---|---|---|\n| I, pós-menopausa | Deficiência de estrogênio, perda trabecular rápida | Vértebra, rádio distal |\n| II, senil | Envelhecimento do osteoblasto, hiperparatireoidismo secundário | Quadril, úmero proximal |\n\n**Implicação terapêutica.** A reposição hormonal e os moduladores seletivos do receptor de estrogênio (raloxifeno) atuam restaurando esse freio, e o denosumabe bloqueia diretamente o RANKL, reproduzindo a ação da OPG.",
+  "correta": "**Correta: B (estrogênio).** A queda dos níveis de estrogênio na menopausa remove a inibição sobre os osteoclastos, eleva o RANKL e reduz a osteoprotegerina, acelerando a reabsorção e produzindo a perda abrupta de massa óssea, predominantemente trabecular.",
   "incorretas": {
-   "A": "**É excesso, não queda.** Tiroxina em excesso causa osteoporose secundária, mas ela não cai na menopausa.",
-   "C": "**Papel pequeno.** A calcitonina tem pouca importância fisiológica no adulto.",
-   "D": "**Também cai, mas não é a causa.** O efeito protetor sobre o osso é do estrogênio."
+   "A": "A **tiroxina** em excesso (hipertireoidismo ou reposição exagerada) acelera a remodelação e causa perda óssea. É a elevação, não a queda, que prejudica o osso, e ela não explica a perda da menopausa.",
+   "C": "A **calcitonina** inibe o osteoclasto de forma farmacológica, mas sua variação fisiológica tem pouco impacto na massa óssea humana. Pacientes tireoidectomizados, sem calcitonina, não desenvolvem osteoporose por isso.",
+   "D": "A **progesterona** também cai na menopausa e pode ter algum efeito anabólico discreto, mas não é o determinante da perda acelerada. Os estudos de reposição mostram que o efeito protetor vem do estrogênio."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Riggs BL, Khosla S, Melton LJ 3rd. Sex steroids and the construction and conservation of the adult skeleton. Endocr Rev. 2002;23(3):279-302.",
+   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição"
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "osteometabolicas-0010": {
   "conceito": "**Doença de Lyme.** A picada do carrapato do gênero **Ixodes** transmite a **Borrelia burgdorferi**. A doença evolui em fases: primeiro o **eritema migratório** no local da picada; semanas depois, a disseminação, com manifestações neurológicas (paralisia facial, meningite) e cardíacas (bloqueio atrioventricular); e, mais tarde, a **artrite**.\n\n**A artrite de Lyme** é oligoarticular, assimétrica e intermitente, com predileção por grandes articulações, e o **joelho** é de longe a mais acometida. Chama atenção o **derrame volumoso com dor desproporcionalmente pequena**. Na criança pode imitar a **artrite séptica**, mas a dor e a febre costumam ser menores. O tratamento é antibiótico, com doxiciclina ou amoxicilina.\n\n**Na prova:** artrite depois de picada de carrapato é Lyme, e Lyme é **joelho**.",
@@ -879,16 +882,19 @@
   "formato": "corrido"
  },
  "osteometabolicas-0071": {
-  "conceito": "**O segmento preferido** do mal de Pott é a **transição toracolombar**, na faixa de T10 a L2: região de maior concentração de carga, onde a cifose torácica encontra a lordose lombar, e território de irrigação segmentar terminal. Destruída a coluna anterior nessa dobradiça, ela colapsa em **cifose angular**, a giba, e o ápice da angulação é onde a medula corre **maior risco**.\n\n**Os outros segmentos.** A **torácica alta** é acometida, mas menos, e tem canal estreito, com mais risco neurológico. A **cervical** é incomum, porém grave, com abscesso retrofaríngeo, disfagia e estridor. A **lombossacral** é pouco frequente.\n\n**Na prova:** Pott é na **transição toracolombar**.",
-  "correta": "**Transição toracolombar.** É o segmento mais acometido pela tuberculose vertebral.",
+  "conceito": "**Tuberculose da coluna.** O mal de Pott é a forma mais comum de tuberculose osteoarticular, responsável por cerca de metade dos casos. O *Mycobacterium tuberculosis* chega à vértebra por via **hematogênica**, a partir de um foco pulmonar ou linfonodal, através do plexo venoso de Batson ou das artérias segmentares.\n\n**Onde começa a lesão.** O bacilo se instala na região **paradiscal** do corpo vertebral, junto à placa terminal anterior, onde a irrigação é terminal. A partir daí:\n- destrói o corpo vertebral, com o **disco relativamente preservado** no início (o disco não tem enzimas proteolíticas suficientes para ser digerido pelo bacilo, ao contrário da infecção piogênica);\n- espalha-se sob o **ligamento longitudinal anterior**, acometendo vários níveis contíguos;\n- forma **abscessos frios**, que podem descer pela bainha do psoas até a virilha.\n\n**O segmento mais acometido.** A **transição toracolombar** (aproximadamente de T10 a L2) e a coluna torácica baixa concentram a maioria dos casos. Contribuem para isso:\n- a riqueza do plexo venoso e das artérias segmentares nessa região;\n- a grande carga mecânica na dobradiça entre a cifose torácica e a lordose lombar.\n\n**A deformidade.** Quando a coluna anterior colapsa, surge a **cifose angular**, a giba de Pott. O ápice da angulação é onde a medula sofre maior compressão, e a paraplegia pode ocorrer na fase ativa (por abscesso, sequestro ou disco) ou tardiamente, pela própria deformidade.\n\n| Segmento | Frequência relativa |\n|---|---|\n| **Torácica baixa e toracolombar** | **Maior** |\n| Lombar | Intermediária |\n| Cervical e lombossacral | Menores |\n\n**Tratamento.** Esquema antituberculoso prolongado é a base. Cirurgia para déficit neurológico, instabilidade, cifose progressiva ou falha do tratamento clínico, em geral com desbridamento anterior e estabilização.",
+  "correta": "**Correta: C (transição toracolombar).** É a região mais acometida pelo mal de Pott, pela vascularização segmentar abundante e pela concentração de carga na transição entre a cifose torácica e a lordose lombar.",
   "incorretas": {
-   "A": "**Incomum.** A cervical é rara, embora grave quando acometida.",
-   "B": "**Menos que a toracolombar.** A torácica alta é acometida, mas em menor proporção.",
-   "D": "**Pouco frequente.** A transição lombossacral raramente é a sede."
+   "A": "A **coluna cervical** é acometida com menor frequência. Quando ocorre, pode formar abscesso retrofaríngeo, mas não é o segmento mais comum.",
+   "B": "A **torácica alta** é menos acometida que a torácica baixa e a transição toracolombar.",
+   "D": "A **transição lombossacral** é sede rara da doença."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "osteometabolicas-0072": {
   "conceito": "**O polegar reumatoide de Nalebuff.** O **tipo I**, a **botoeira**, é o **mais comum**: nasce na **metacarpofalangeana**, onde a sinovite distende a cápsula dorsal, afrouxa o extensor curto e faz o extensor longo deslizar para ulnar e volar, deixando a MF em flexão e a interfalangeana em hiperextensão. O **tipo II** é a botoeira com subluxação da carpometacarpal, rara; o **tipo III**, o **pescoço de cisne**, nasce na **carpometacarpal**, com MF em hiperextensão e metacarpo aduzido, e é o segundo em frequência; o **tipo IV**, polegar de goleiro, é a instabilidade do colateral ulnar da MF; o **tipo V** é o pescoço de cisne pela placa volar da MF; e o **tipo VI** é a artrite mutilante.\n\n**O tratamento do tipo I** depende do estágio: na fase inicial e flexível, sinovectomia da MF e reconstrução do extensor; com a MF rígida e a IF ainda passível, **artrodese da MF**, com ou sem artroplastia; com MF e IF acometidas, artrodese das duas, evitando fazê-lo quando a carpometacarpal também está rígida.\n\n**Na prova:** a deformidade mais comum do polegar reumatoide é a **botoeira, tipo I**.",
@@ -987,19 +993,19 @@
   "formato": "corrido"
  },
  "osteometabolicas-0079": {
-  "conceito": "**Densitometria no homem.** As indicações usuais são os homens acima de **70 anos**, os que têm entre 50 e 69 anos com fatores de risco, os **acima de 50 anos com fratura por trauma leve**, ou seja, fratura por fragilidade, e os que usam corticoide, têm hipogonadismo ou outras causas secundárias de perda óssea.\n\n**A fratura por trauma leve** é a indicação mais forte, porque já é, por si, sinal de fragilidade óssea: além da densitometria, ela pede investigação de causa secundária e tratamento.\n\n**Na prova:** homem com mais de 50 anos e **fratura de baixa energia** deve fazer densitometria.",
-  "correta": "**50 anos, acometido de fratura por trauma leve.** A fratura por fragilidade já indica investigação da massa óssea.",
+  "conceito": "**A osteoporose masculina é subdiagnosticada.** Cerca de um terço das fraturas de quadril ocorre em homens, e a mortalidade após essa fratura é maior neles do que nas mulheres. Mesmo assim, o rastreamento costuma ser lembrado só para mulheres. Por isso as sociedades definiram indicações próprias de densitometria para homens.\n\n**Quando pedir densitometria no homem.**\n1. **Idade igual ou maior que 70 anos**, de rotina.\n2. **Entre 50 e 69 anos com fatores de risco**: baixo peso, tabagismo, etilismo, sedentarismo, doença pulmonar obstrutiva crônica.\n3. **Acima de 50 anos com fratura por trauma leve** (fratura por fragilidade): queda da própria altura ou menos.\n4. Em qualquer idade, com **causa secundária**: uso de corticoide, hipogonadismo (inclusive por bloqueio androgênico no câncer de próstata), hiperparatireoidismo, má absorção, artrite reumatoide.\n\n**Por que a fratura por trauma leve pesa tanto.** Uma fratura que ocorre com energia que não quebraria um osso saudável já é, por si, sinal de fragilidade. Mais do que isso, ela é o maior preditor isolado de nova fratura: o risco de uma segunda fratura dobra, sobretudo nos dois primeiros anos. Investigar e tratar após a primeira fratura é a estratégia de prevenção secundária mais eficiente.\n\n**Causas secundárias são mais frequentes no homem.** Em até metade dos casos masculinos há uma causa identificável, especialmente hipogonadismo, corticoide e álcool, o que torna a investigação laboratorial (testosterona, cálcio, vitamina D, função renal e hepática) parte da avaliação.",
+  "correta": "**Correta: C (50 anos, com fratura por trauma leve).** A fratura por fragilidade em homem acima de 50 anos é indicação formal de densitometria, por ser sinal clínico de osso frágil e o principal preditor de nova fratura.",
   "incorretas": {
-   "A": "**Não é indicação isolada.** Ser da raça negra, por si só, não indica densitometria.",
-   "B": "**Idade errada.** O rastreamento de rotina no homem é a partir dos 70 anos.",
-   "D": "**Não é indicação.** Anti-hipertensivo não indica densitometria; os tiazídicos até protegem o osso."
+   "A": "**Raça negra** é fator de proteção, por maior pico de massa óssea, e não justifica rastreamento aos 45 anos.",
+   "B": "O rastreamento **rotineiro** no homem começa aos **70 anos**, não aos 60. Entre 50 e 69 anos, exige fator de risco.",
+   "D": "**Anti-hipertensivos** não são causa de osteoporose; os tiazídicos até reduzem a excreção urinária de cálcio. Os medicamentos que justificam densitometria são corticoides, anticonvulsivantes e bloqueio androgênico."
   },
   "referencias": [
+   "Watts NB, Adler RA, Bilezikian JP, et al. Osteoporosis in men: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab. 2012;97(6):1802-1822.",
    "RBO, VOL 45, numero 5, SET-OUT 2010, p.392 (referência indicada na prova TARO 2013, questão 60)"
   ],
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "osteometabolicas-0080": {
   "conceito": "**Tratamento da osteoporose: antirreabsortivos x anabólicos.** A massa óssea depende do equilíbrio entre **reabsorção** (osteoclastos) e **formação** (osteoblastos). Na osteoporose pós-menopausa, a reabsorção supera a formação. Os medicamentos agem em um dos dois lados.\n\n| Classe | Exemplos | Mecanismo |\n|---|---|---|\n| **Antirreabsortivos** | Bisfosfonatos (**alendronato**, risedronato, zoledronato), **denosumabe**, **estrógeno** e moduladores seletivos (raloxifeno), **calcitonina** | **Inibem a reabsorção** pelos osteoclastos |\n| **Anabólicos** | **Paratormônio**: **teriparatida** (PTH 1-34) e abaloparatida | **Estimulam a formação** óssea |\n| Ação mista | Romosozumabe (anticorpo antiesclerostina) | Aumenta a formação e reduz a reabsorção |\n\n**O paradoxo do paratormônio.** No hiperparatireoidismo, o PTH **contínuo** e elevado causa reabsorção e perda óssea. Em **doses intermitentes** (uma injeção diária), o PTH estimula preferencialmente os **osteoblastos** (aumenta sua diferenciação e sobrevida), com ganho de massa e melhora da microarquitetura. Neer e colaboradores mostraram que a teriparatida reduz fraturas vertebrais e não vertebrais em mulheres pós-menopausa.\n\n**Uso prático.** Anabólicos são reservados à **osteoporose grave** (fraturas vertebrais múltiplas, T-score muito baixo, falha de antirreabsortivos), por tempo limitado (até 24 meses), e devem ser seguidos de um antirreabsortivo para manter o ganho. Contraindicações: doença de Paget, radioterapia óssea prévia, hipercalcemia, metástases ósseas (risco teórico de osteossarcoma em ratos).\n\n**Na ortopedia.** O tratamento da osteoporose após uma fratura por fragilidade (programas de linha de cuidado) reduz o risco de nova fratura; há também estudos sugerindo que a teriparatida pode favorecer a consolidação de fraturas.\n\n> Anabólico na osteoporose: paratormônio intermitente (teriparatida); os demais são antirreabsortivos.",

@@ -2850,14 +2850,19 @@
   "conferido": false
  },
  "pe-tornozelo-0285": {
-  "conceito": "### Quatro testes\n| Teste | Como | Avalia |\n|---|---|---|\n| **Pillings** (squeeze) | comprimir tíbia contra fíbula no **terço médio** | **sindesmose** (dor referida no tornozelo) |\n| **Jack** | **em pé**, dorsiflexão passiva da MTF do hálux | arco sobe: pé plano **flexível** |\n| **Kelikian-Ducroquet** | empurrar a cabeça do metatarso para dorsal (carga simulada) | **flexibilidade** da garra |\n| ==Mulder== | compressão **laterolateral** do antepé + pressão no espaço | ==clique== do neuroma de **Morton** |\n\n### A incorreta\n- A alternativa D define Mulder como simples **dor à palpação** plantar.\n- O sinal é o **clique** palpável / audível.\n- Morton fica tipicamente no **3º espaço**.\n\n> **Na prova:** incorreta = ==D (Mulder é clique, não só dor)==.",
-  "correta": "**D é a incorreta:** o sinal de Mulder se define pelo **clique**, não por dor isolada à palpação.",
+  "conceito": "**Quatro testes, quatro estruturas.** A questão pede a afirmativa **incorreta**, e cada alternativa descreve um teste clássico do exame do pé e tornozelo. Entender o que cada um provoca mecanicamente permite reconhecer a descrição errada.\n\n| Teste | Manobra | O que avalia |\n|---|---|---|\n| Compressão da perna (squeeze, citado como Pillings) | Comprimir tíbia contra fíbula no terço médio da perna | Lesão da **sindesmose**: a compressão afasta as extremidades distais e gera dor no tornozelo |\n| Jack (Hubscher) | Paciente **em pé**, dorsiflexão passiva da MTF do hálux | Mecanismo de molinete: a fáscia plantar se tensiona e o arco sobe se o pé plano é **flexível** |\n| Kelikian (push-up) | Pressionar a cabeça dos metatarsos de plantar para dorsal, simulando a carga | Se a garra se corrige, a deformidade é **flexível** e pode ir para partes moles |\n| Mulder | Comprimir lateralmente o antepé (aproximar os metatarsos) e ao mesmo tempo pressionar o espaço intermetatarsal pela planta | **Neuroma de Morton**: produz um **estalido palpável** e doloroso |\n\n**O que é o sinal de Mulder.** Descrito em 1951, o sinal não é a simples dor à palpação. O examinador espreme o antepé latero-lateralmente com uma mão e, com a outra, pressiona o espaço intermetatarsal pela face plantar. O neuroma, uma massa de tecido fibroso em torno do nervo digital plantar comum, é empurrado entre as cabeças dos metatarsos e escapa para a planta com um **clique** (estalido) palpável, geralmente reproduzindo a dor irradiada aos dedos. O terceiro espaço é o mais acometido, porque ali o nervo recebe ramos dos nervos plantares medial e lateral e fica mais espesso e menos móvel.\n\nDor isolada à palpação plantar do terceiro espaço é inespecífica: pode vir de sinovite da MTF, bursite intermetatarsal, fratura de estresse ou do próprio neuroma. O que define o Mulder é o estalido.\n\n**Diagnóstico diferencial do pé plano.** O teste de Jack é a ferramenta mais simples para separar o pé plano flexível (arco se forma) do rígido (coalizão tarsal, artrose), junto com a elevação na ponta dos pés, em que o retropé deve inverter.",
+  "correta": "**Correta (afirmativa incorreta): D.** O sinal de Mulder é positivo quando a **compressão látero-lateral do antepé**, associada à pressão plantar no espaço intermetatarsal, produz um **estalido palpável** e doloroso, pelo deslocamento do neuroma entre as cabeças dos metatarsos. Dor à palpação plantar, sozinha, não define o sinal.",
   "incorretas": {
-   "A": "**Pillings / sindesmose.**\n- Correta.",
-   "B": "**Teste de Jack.**\n- Correta.",
-   "C": "**Kelikian-Ducroquet.**\n- Correta."
+   "A": "**Verdadeira.** O teste de compressão da perna no terço médio é um dos testes clínicos para lesão da sindesmose tibiofibular distal, junto com a rotação externa (Frick), o cruzamento das pernas e o teste de Cotton.",
+   "B": "**Verdadeira.** O teste de Jack é feito com o paciente em pé; a dorsiflexão do hálux tensiona a fáscia plantar pelo mecanismo de molinete, e a elevação do arco indica deformidade flexível.",
+   "C": "**Verdadeira.** O teste de Kelikian-Ducroquet (push-up) simula a carga empurrando as cabeças dos metatarsos para cima. A correção da garra indica deformidade flexível, tratável com transferências tendíneas."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Mulder JD. The causative mechanism in Morton's metatarsalgia. J Bone Joint Surg Br. 1951;33-B(1):94-95.",
+   "Jack EA. Naviculo-cuneiform fusion in the treatment of flat foot. J Bone Joint Surg Br. 1953;35-B(1):75-82.",
+   "Coughlin MJ, Saltzman CL, Anderson RB. Mann's Surgery of the Foot and Ankle, 9ª edição"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pe-tornozelo-0289": {
@@ -3744,17 +3749,18 @@
   "conferido": false
  },
  "pe-tornozelo-0351": {
+  "conceito": "**Contração excêntrica: músculo ativo que se alonga.** Na marcha, boa parte do trabalho muscular não é gerar movimento, mas **frear** movimentos produzidos pela gravidade e pela inércia. O músculo se contrai enquanto suas fibras se alongam, absorvendo energia como um amortecedor.\n\n**O primeiro rolamento (heel rocker).** Na marcha normal, o contato inicial é feito com o **calcâneo**. O vetor de reação do solo passa atrás do eixo do tornozelo e tende a plantarflexionar o pé, baixando o antepé de forma brusca. Os **dorsiflexores** (tibial anterior, extensor longo do hálux e extensor longo dos dedos) se ativam e se alongam ao mesmo tempo, controlando a descida do antepé até o apoio plantar completo. Esse é o trabalho **excêntrico** na **resposta à carga**, início da fase de apoio.\n\n**O mesmo músculo ao longo do ciclo.**\n\n| Fase | Ação do tibial anterior | Tipo de contração |\n|---|---|---|\n| Contato inicial e resposta à carga | Freia a plantiflexão, baixa o antepé suavemente | **Excêntrica** |\n| Apoio médio e terminal | Praticamente silencioso | Nenhuma |\n| Balanço | Dorsiflexiona para o pé não arrastar no chão | Concêntrica, depois isométrica |\n\n**Correlação clínica: a marcha escarvante.** Na paralisia do nervo fibular, o tibial anterior não funciona.\n- No **contato inicial**, o antepé bate no chão logo após o calcanhar (**pé batido**, *foot slap*), porque falta o freio excêntrico.\n- No **balanço**, o pé cai, e o paciente compensa elevando muito o joelho e o quadril para não tropeçar (**marcha escarvante**).\n\n**Contraste com o tríceps sural.** No apoio médio, quando a tíbia avança sobre o pé fixo (segundo rolamento), é o sóleo que trabalha de forma excêntrica para controlar esse avanço. Cada grupo freia um rolamento diferente.",
+  "correta": "**Correta: Certo.** No início do apoio, logo após o contato do calcâneo, o tibial anterior se contrai enquanto se alonga, controlando a plantiflexão passiva e a descida do antepé. É uma contração excêntrica típica da resposta à carga.",
   "incorretas": {
-   "B": "**Errado seria atribuir ao músculo apenas dorsiflexão concêntrica durante toda a marcha.** No início do apoio ele freia, em vez de produzir, a descida do antepé."
+   "B": "**Errado** ignoraria a função de amortecimento do tibial anterior. Sua ausência, na paralisia do nervo fibular, produz exatamente o pé batido no início do apoio, o que demonstra a ação excêntrica nessa fase."
   },
-  "conceito": "**O contato inicial é feito pelo calcâneo.** Logo após o calcanhar tocar o solo, a carga corporal tende a plantarflexionar o tornozelo e baixar o antepé. O tibial anterior, junto aos demais dorsiflexores, ativa-se enquanto se alonga, freando esse movimento. É contração excêntrica na resposta à carga, início da fase de apoio.\n\n**A mesma musculatura muda de tarefa durante o ciclo.** Na fase de balanço, a contração dos dorsiflexores eleva o pé para permitir a passagem dos dedos; na resposta à carga, controla a descida do antepé. Quando o tibial anterior falha, surgem queda do pé durante o balanço e contato ruidoso do antepé com o chão após o toque do calcanhar.",
-  "correta": "**Certo: o tibial anterior trabalha excentricamente no começo do apoio.** Ele desacelera a flexão plantar que acompanha a transferência de peso.",
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "referencias": [
+   "Perry J, Burnfield JM. Gait Analysis: Normal and Pathological Function, 2ª edição. SLACK, 2010.",
    "Tachdjian MO. Pediatric orthopaedics. Philadelphia: Saunders. 1ª edição, p. 6."
   ],
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "A",
-  "geradoEm": "2026-10-01",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pe-tornozelo-0352": {

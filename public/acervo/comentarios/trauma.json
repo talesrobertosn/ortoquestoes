@@ -4618,14 +4618,18 @@
   "conferido": false
  },
  "trauma-0545": {
-  "conceito": "### Ossificação heterotópica nasce do músculo\nCélula mesenquimal exposta a **hematoma** e **fragmentos ósseos** se diferencia em osteoblasto. Quanto mais músculo o pino atravessa, maior o risco.\n\n### No fêmur\n- ==Pino anterior==: atravessa o **reto femoral** e o **vasto intermédio**, no ventre do quadríceps. O que mais traumatiza músculo, e ainda **amarra o quadríceps** ao osso, limitando a flexão do joelho.\n- **Pino lateral:** atravessa a banda iliotibial e a borda do vasto lateral. Menos massa muscular: é o **trajeto preferido**.\n- **Anteromedial:** aproxima-se do feixe femoral.\n\n### Na prática\n- Pinos **laterais** (ou anterolaterais).\n- Mobilização do joelho para evitar aderência do quadríceps.\n\n> **Na prova:** pino de fêmur com mais ossificação heterotópica = ==anterior==.",
-  "correta": "**Anterior.**\n- Atravessa o ventre do quadríceps.",
+  "conceito": "**Como nasce a ossificação heterotópica.** É a formação de osso lamelar maduro em partes moles, fora do esqueleto. O gatilho é a lesão muscular: células mesenquimais pluripotentes do músculo, expostas a hematoma, fragmentos ósseos e mediadores inflamatórios (como as proteínas morfogenéticas ósseas), se diferenciam em osteoblastos. Quanto mais **ventre muscular** um implante atravessa e lesa, maior o risco.\n\n**A anatomia da coxa e a escolha do sítio dos pinos.** O fêmur é envolvido por grande massa muscular em toda a volta, mas não de forma homogênea.\n\n| Posição do pino | Músculos atravessados | Consequência |\n|---|---|---|\n| **Anterior** | Reto femoral e vasto intermédio, no ventre do quadríceps | Maior lesão muscular, ossificação e rigidez do joelho |\n| Anterolateral | Borda do vasto lateral | Intermediário |\n| **Lateral** | Trato iliotibial e vasto lateral, por um plano relativamente avascular | Posição preferida |\n| Anteromedial | Vasto medial; risco à artéria femoral nos terços médio e distal | Evitar |\n\n**Por que o pino anterior é o pior.** Ele transfixa o quadríceps na direção perpendicular ao seu deslizamento. Além de lesar mais fibras musculares e gerar mais hematoma, ele **amarra o quadríceps ao osso**: a cada flexão do joelho, o músculo desliza contra o pino, há movimento na interface, inflamação e infecção do trajeto. O resultado é perda de flexão do joelho e maior incidência de ossificação ao redor dos pinos.\n\n**Por isso a regra.** No fêmur, os pinos de Schanz são colocados preferencialmente no plano **lateral**, pelo septo intermuscular lateral ou logo anterior a ele, com o joelho fletido no momento da inserção para que o trato iliotibial não fique preso em extensão.",
+  "correta": "**Correta: B (anterior).** O pino anterior atravessa o ventre do quadríceps (reto femoral e vasto intermédio), o compartimento muscular mais volumoso e móvel da coxa. A maior lesão muscular e o atrito contínuo durante a flexão do joelho favorecem a ossificação heterotópica e a rigidez.",
   "incorretas": {
-   "A": "**Outro problema.**\n- Risco vascular, não o de ossificação.",
-   "C": "**Menos músculo.**",
-   "D": "**O preferido.**\n- Menor lesão muscular."
+   "A": "**Anteromedial** é evitada por outro motivo: aproxima-se do canal dos adutores e da artéria femoral. O risco principal é vascular, não de ossificação.",
+   "C": "**Anterolateral** atravessa apenas a borda do vasto lateral, com menor volume muscular do que a via anterior pura. É aceitável quando se precisa de um segundo plano.",
+   "D": "**Lateral** é a posição preferida. Passa pelo trato iliotibial e pelo vasto lateral em um corredor seguro e lesa menos o mecanismo extensor."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 9ª edição, capítulo de fraturas da diáfise do fêmur",
+   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0546": {
