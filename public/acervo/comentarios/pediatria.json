@@ -607,19 +607,19 @@
   "conferido": false
  },
  "pediatria-0042": {
+  "conceito": "**O tipo de distúrbio motor revela onde está a lesão.** A paralisia cerebral é uma lesão não progressiva do encéfalo imaturo, e a classificação fisiológica corresponde à região lesada.\n\n| Distúrbio | Sistema lesado | Características |\n|---|---|---|\n| Espasticidade | **Piramidal** (córtex motor, trato corticoespinal) | Hipertonia que aumenta com a velocidade do estiramento, hiper-reflexia, clônus |\n| **Atetose** | **Núcleos da base** (extrapiramidal) | Movimentos involuntários **lentos, contorcidos**, sobretudo nas mãos e na face |\n| Distonia | Núcleos da base | **Contrações sustentadas** que produzem posturas anormais e torções |\n| Coreia | Núcleos da base | Movimentos rápidos, irregulares, sem propósito |\n| Ataxia | **Cerebelo** | Dismetria, tremor de intenção, base alargada |\n\n**O kernicterus e a atetose.** O **kernicterus** é a encefalopatia por **hiperbilirrubinemia** grave no recém-nascido: a bilirrubina não conjugada atravessa a barreira hematoencefálica imatura e se deposita nos **núcleos da base** (globo pálido, núcleo subtalâmico), no hipocampo e nos núcleos do tronco. As sequelas típicas formam uma tétrade:\n1. **Atetose** (coreoatetose);\n2. **perda auditiva neurossensorial**;\n3. **paralisia do olhar vertical** para cima;\n4. displasia do esmalte dos dentes de leite.\n\nA inteligência pode ser relativamente preservada. Com a fototerapia e a exsanguineotransfusão, o kernicterus tornou-se raro, e hoje a causa mais comum das formas discinéticas é a **asfixia perinatal aguda grave** no recém-nascido a termo.\n\n**Implicação ortopédica.** Nas formas atetoides, o tônus **flutua**: cirurgias de alongamento e transferências tendíneas têm resultado **imprevisível** (podem gerar a deformidade oposta), e as artrodeses são mais confiáveis. Os movimentos repetitivos do pescoço causam **espondilose cervical precoce** e mielopatia no adulto.",
+  "correta": "**Correta: B (atetose).** A lesão dos núcleos da base pelo **kernicterus** (bilirrubina depositada no globo pálido) produz a forma discinética da paralisia cerebral, com **atetose**, associada a surdez e paralisia do olhar vertical.",
   "incorretas": {
-   "A": "A ataxia vem da lesão do cerebelo, não dos núcleos da base.",
-   "C": "A distonia também é uma discinesia dos núcleos da base, mas o quadro classicamente ligado ao kernicterus é a atetose.",
-   "D": "A espasticidade vem da lesão piramidal."
+   "A": "A **ataxia** resulta de lesão do **cerebelo**, e não dos núcleos da base.",
+   "C": "A **distonia** também é um distúrbio dos núcleos da base, mas o quadro clássico do kernicterus é a **atetose** (coreoatetose).",
+   "D": "A **espasticidade** resulta de lesão **piramidal** (córtex motor e trato corticoespinal)."
   },
-  "conceito": "Na **paralisia cerebral**, o tipo de distúrbio do movimento indica onde está a lesão:\n\n**espasticidade**: lesão **piramidal** (córtex motor e trato corticoespinal); hipertonia que aumenta com a velocidade do movimento;\n\n**discinesias**: lesão dos **núcleos da base** (sistema extrapiramidal); dois padrões:\n\n**atetose**: movimentos **involuntários, lentos e contorcidos**, sobretudo nas mãos e na face, com tônus que oscila;\n\n**distonia**: contrações sustentadas que fixam **posturas anormais**;\n\n**ataxia**: lesão do **cerebelo**; desequilíbrio, dismetria e tremor de intenção.\n\n**O kernicterus**: a bilirrubina muito alta no recém-nascido se deposita nos **núcleos da base**, e o quadro clássico resultante é a **atetose**, muitas vezes com surdez e alteração do olhar. A asfixia no bebê a termo também pode lesar os núcleos da base.\n\n**Na prova**: lesão dos gânglios da base por kernicterus = **atetose**.",
-  "correta": "A atetose é o distúrbio clássico da lesão dos núcleos da base pelo kernicterus, com movimentos lentos, contorcidos e involuntários.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America (POSNA). Cerebral Palsy. https://posna.org/physician-education/study-guide/cerebral-palsy",
    "Cerebral palsy in children: A clinical practice review. https://pubmed.ncbi.nlm.nih.gov/39168782/",
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 31"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0043": {
@@ -1018,17 +1018,18 @@
   "conferido": false
  },
  "pediatria-0069": {
+  "conceito": "**As fases de Waldenström e o risco de cada uma.** A doença de Legg-Calvé-Perthes é uma necrose avascular da epífise femoral que passa por fases radiográficas previsíveis. Saber o que acontece em cada fase explica quando a cabeça corre risco de se deformar.\n\n| Fase | O que acontece | Risco para a forma da cabeça |\n|---|---|---|\n| Inicial (necrose) | Cabeça **densa** e um pouco menor, alargamento do espaço articular medial, **fratura subcondral** (sinal do crescente) | A cabeça ainda **mantém a forma** |\n| **Fragmentação** | O osso morto é **reabsorvido** e substituído por tecido fibrovascular; a epífise se divide em fragmentos e fica **mole** | **Máximo**: a cabeça **achata**, **colapsa** e **extrui** (sobe e sai para lateral) |\n| Reossificação | Osso novo preenche a epífise a partir da periferia | A cabeça endurece; a forma vai se definindo |\n| Residual | Remodelação até a maturidade | A forma final está estabelecida |\n\n**Por que na fragmentação.** É a fase em que a epífise está **biologicamente plástica**: o osso morto foi removido e o novo ainda não se formou. Nesse momento, a cabeça é como argila: sob a carga do corpo e a pressão da borda lateral do acetábulo, ela **achata** e tende a **subluxar para lateral**. A porção lateral, sem a cobertura do acetábulo, pode crescer para fora (extrusão) e formar a deformidade em **dobradiça** (hinge abduction), em que a cabeça bate na borda do acetábulo durante a abdução.\n\n**A lógica da contenção.** O tratamento busca manter a cabeça **contida** dentro do acetábulo **durante a fragmentação**, para que ela se remodele usando o acetábulo como molde e saia **esférica**. A contenção pode ser:\n- **não cirúrgica**: manter a mobilidade (sobretudo a abdução) com fisioterapia; órteses de abdução (pouco usadas hoje);\n- **cirúrgica**: **osteotomia varizante do fêmur** ou **osteotomia de Salter** (ou ambas), indicadas principalmente em crianças **acima de 8 anos** com pilar lateral B ou B/C.\n\n**Quando operar.** A cirurgia de contenção tem melhor efeito **no início** da fase de fragmentação; depois que a cabeça já se deformou e reossificou, a contenção não funciona, e restam as cirurgias de salvamento (osteotomia valgizante para a dobradiça, osteotomia de Chiari ou de prateleira).",
+  "correta": "**Correta: B (fragmentação).** Na fase de fragmentação, o osso necrótico é reabsorvido e a epífise fica mole e plástica: é quando a cabeça femoral **achata, colapsa e subluxa** para lateral, e por isso é a fase em que a contenção é mais importante.",
   "incorretas": {
-   "A": "Na fase de necrose a cabeça está densa, mas ainda sem colapso.",
-   "C": "Na reossificação, o osso novo já está reparando a cabeça.",
-   "D": "Na fase residual a forma da cabeça já está definida."
+   "A": "Na fase de **necrose**, a cabeça fica densa, mas ainda **mantém a forma**.",
+   "C": "Na **reossificação**, osso novo se forma e a cabeça endurece; a deformidade que se vê já foi produzida na fragmentação.",
+   "D": "Na fase **residual**, a forma final já está estabelecida; não é quando ocorrem o achatamento e a subluxação."
   },
-  "conceito": "A **doença de Legg-Calvé-Perthes** passa por fases radiográficas (**Waldenström**), e cada uma tem o seu risco:\n\n**inicial (necrose)**: a cabeça fica densa e um pouco menor, mas ainda **mantém a forma**;\n\n**fragmentação**: o osso morto é reabsorvido, a epífise se divide em fragmentos e fica **mole**; é nessa fase que a cabeça **achata**, **colapsa** e tende a **subluxar para lateral**, saindo de baixo do acetábulo;\n\n**reossificação**: osso novo preenche a cabeça; a forma vai sendo definida;\n\n**residual**: a cabeça está remodelada, redonda ou deformada.\n\n**Por que a fragmentação é a fase crítica**: é quando a cabeça pode se deformar. O tratamento de **contenção** (manter a cabeça dentro do acetábulo, com órtese ou osteotomia do fêmur ou da pelve) busca proteger justamente esse período, para que o acetábulo funcione como molde.\n\n**A classificação de Herring** (pilar lateral) também é feita nessa fase.\n\n**Na prova**: subluxação e achatamento da cabeça no Perthes = fase de **fragmentação**.",
-  "correta": "Na fragmentação, a epífise amolecida colapsa, achata e tende a subluxar para lateral.",
   "referencias": [
-   "Pediatric Orthopaedic Society of North America (POSNA). Legg-Calve-Perthes Disease. https://posna.org/physician-education/study-guide/legg-calve-perthes-disease"
+   "Pediatric Orthopaedic Society of North America (POSNA). Legg-Calve-Perthes Disease. https://posna.org/physician-education/study-guide/legg-calve-perthes-disease",
+   "Herring JA, Kim HT, Browne R. Legg-Calve-Perthes disease. Part II: Prospective multicenter study of the effect of treatment on outcome. J Bone Joint Surg Am. 2004;86(10):2121-2134."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0070": {
@@ -1437,32 +1438,34 @@
   "conferido": false
  },
  "pediatria-0098": {
+  "conceito": "**Três arqueamentos, três prognósticos.** O arqueamento congênito da tíbia é descrito pela **direção do ápice** da curva, e cada direção tem uma associação e uma evolução completamente diferentes. Errar a direção é errar o prognóstico.\n\n| Direção do ápice | Associação | Evolução |\n|---|---|---|\n| **Posteromedial** | **Pé calcâneo valgo** | **Benigna**: corrige espontaneamente em grande parte |\n| Anterolateral | **Neurofibromatose tipo 1**, pseudartrose congênita | **Maligna**: tende a fraturar e não consolidar |\n| Anteromedial | **Hemimelia fibular** (deficiência longitudinal da fíbula) | Discrepância de comprimento e deformidade do pé |\n\n**O arqueamento posteromedial.**\n- Atribuído à **posição intrauterina**: o pé fica dobrado contra a face anterior da perna.\n- Ao nascimento, o pé está em **calcâneo valgo** acentuado, com o dorso quase encostando na tíbia, e a perna curva com ápice posterior e medial.\n- A angulação melhora muito nos primeiros 2 a 3 anos, mas a tíbia fica **mais curta**: a discrepância residual média é de 3 a 4 cm na maturidade, às vezes exigindo epifisiodese contralateral ou alongamento.\n- O pé calcâneo valgo melhora com alongamentos ou gessos.\n\n**O arqueamento anterolateral.** É o mais perigoso: pode evoluir para fratura e pseudartrose congênita da tíbia, de tratamento muito difícil. Usa-se órtese de proteção; **nunca se faz osteotomia profilática**, que pode precipitar a pseudartrose.\n\n**O arqueamento anteromedial.** Associado à hemimelia fibular: fíbula ausente ou hipoplásica, pé em equinovalgo, ausência de raios laterais, coalizões tarsais e encurtamento importante.",
+  "correta": "**Correta: C (ao pé calcaneovalgo).** O arqueamento posteromedial congênito da tíbia associa-se ao **pé calcaneovalgo**, ambos de origem postural intrauterina, com evolução benigna e discrepância de comprimento residual.",
   "incorretas": {
-   "A": "O pé talovertical (tálus vertical) não é a associação do arqueamento posteromedial.",
-   "B": "A neurofibromatose se associa ao arqueamento anterolateral.",
-   "D": "A pseudartrose congênita se associa ao arqueamento anterolateral."
+   "A": "O **tálus vertical** é uma deformidade rígida do pé, sem relação com o arqueamento posteromedial.",
+   "B": "A **neurofibromatose** associa-se ao arqueamento **anterolateral**.",
+   "D": "A **pseudartrose congênita** é a evolução temida do arqueamento **anterolateral**, e não do posteromedial."
   },
-  "conceito": "A tíbia pode nascer arqueada em três direções, com significados bem diferentes:\n\n**posteromedial**: o pé costuma vir em **calcaneovalgo**: ao nascer, o dorso do pé encosta na frente da perna; a curva **corrige sozinha** nos primeiros anos, mas a tíbia fica **mais curta**, com discrepância de cerca de 3 a 5 cm; é benigna;\n\n**anterolateral**: associada à **neurofibromatose tipo 1** e à **pseudartrose congênita da tíbia**; tende a piorar e a fraturar;\n\n**anteromedial**: associada à **hemimelia fibular**.\n\n**O tratamento do arqueamento posteromedial**: alongamento do pé e observação da curva; mais tarde, cuidar da discrepância com epifisiodese do outro lado ou alongamento.\n\n**O diferencial do pé**: o **tálus vertical** também tem o pé dorsifletido, mas é rígido, com o retropé em equino e o antepé dorsifletido (o pé em \"mata-borrão\"), e não se associa ao arqueamento posteromedial.\n\n**Na prova**: arqueamento posteromedial da tíbia = **pé calcaneovalgo**.",
-  "correta": "No arqueamento posteromedial, o pé nasce em calcaneovalgo, com o dorso encostado na tíbia.",
   "referencias": [
-   "Pediatric Orthopaedic Society of North America (POSNA). Posteromedial Bowing of the Tibia. https://posna.org/physician-education/study-guide/posteromedial-bowing-of-the-tibia"
+   "Pediatric Orthopaedic Society of North America (POSNA). Posteromedial Bowing of the Tibia. https://posna.org/physician-education/study-guide/posteromedial-bowing-of-the-tibia",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0099": {
+  "conceito": "**A causa mais comum de dor no quadril da criança.** A sinovite transitória é uma inflamação aguda, não infecciosa e autolimitada da sinóvia do quadril. Costuma suceder uma infecção de vias aéreas superiores, o que sugere um mecanismo imunológico reativo.\n\n**Epidemiologia.**\n- Faixa de **3 a 8 anos**, com **média em torno de 6 anos**.\n- **Meninos** são mais acometidos, em proporção de cerca de 2 para 1.\n- Geralmente unilateral.\n\n**Quadro clínico.** Claudicação ou recusa em apoiar, dor no quadril, coxa ou joelho (dor referida pelo nervo obturador), quadril mantido em **flexão, abdução e rotação externa**, posição que maximiza o volume da cápsula e alivia a pressão do derrame. A criança está em bom estado geral, afebril ou com febre baixa.\n\n**O diagnóstico é de exclusão.** O ponto crítico é afastar a **artrite séptica**, que exige drenagem urgente. Os critérios de Kocher ajudam:\n\n| Critério | Achado sugestivo de infecção |\n|---|---|\n| Febre | Maior que 38,5 °C |\n| Carga | Recusa em apoiar o membro |\n| VHS | Maior que 40 mm/h |\n| Leucócitos | Mais de 12.000/mm³ |\n\nCom zero critério, a probabilidade de artrite séptica é muito baixa; com quatro, passa de 90%. A PCR sérica acima de 2 mg/dL foi depois acrescentada como fator adicional.\n\n**Evolução.** Repouso e anti-inflamatório; os sintomas melhoram em poucos dias e somem em 1 a 2 semanas. Recorre em cerca de 4% dos casos. Há uma associação pequena com doença de Legg-Calvé-Perthes posterior, e por isso crianças com sintomas prolongados merecem nova radiografia.\n\n**Paralelo com Perthes.** A faixa etária e o predomínio masculino são semelhantes, o que faz da sinovite transitória o principal diagnóstico diferencial inicial da doença.",
+  "correta": "**Correta: C (meninos, idade média de 6 anos).** A sinovite transitória do quadril predomina no sexo masculino, cerca de 2 para 1, e ocorre entre 3 e 8 anos, com idade média em torno de 6 anos.",
   "incorretas": {
-   "A": "A idade está certa, mas o predomínio é masculino.",
-   "B": "Erra o sexo e a idade: predomina em meninos, com média de cerca de 6 anos.",
-   "D": "O sexo está certo, mas a idade média é de cerca de 6 anos, não 2."
+   "A": "A idade média de **6 anos** está certa, mas o predomínio é **masculino**.",
+   "B": "Erra o sexo e a idade: aos 2 anos, a sinovite transitória é incomum, e um quadril doloroso nessa idade deve levantar suspeita de **artrite séptica**.",
+   "D": "O sexo está certo, mas **2 anos** fica abaixo da faixa típica, que começa por volta dos 3 anos."
   },
-  "conceito": "A **sinovite transitória do quadril** é a causa mais comum de dor no quadril e claudicação em crianças. O perfil típico:\n\n**meninos**, cerca de duas vezes mais que meninas;\n\n**idade média de cerca de 6 anos**, na faixa de 3 a 8 (ou 10) anos;\n\nmuitas vezes depois de uma **infecção viral** das vias aéreas.\n\n**O quadro**: claudicação ou recusa em apoiar, quadril em flexão, abdução e rotação externa (a posição de menor pressão dentro da articulação), sem febre ou com febre baixa, criança em bom estado geral.\n\n**A evolução**: benigna e autolimitada, em 1 a 2 semanas, com repouso e anti-inflamatório.\n\n**O diferencial obrigatório**: a **artrite séptica**, pelos critérios de **Kocher** (febre acima de 38,5 °C, não apoiar, VHS acima de 40 e leucócitos acima de 12.000; mais a PCR). Na dúvida, punção guiada por ultrassom. Também lembrar Perthes, osteomielite e, em crianças menores, maus-tratos.\n\n**Na prova**: sinovite transitória = **meninos** com idade média de **6 anos**.",
-  "correta": "A sinovite transitória predomina em meninos, com idade média em torno de 6 anos.",
   "referencias": [
    "What is the clinical course of transient synovitis in children: a systematic review. https://pmc.ncbi.nlm.nih.gov/articles/PMC3831260/",
-   "The prevalence of Legg-Calvé-Perthes disease among paediatric patients with transient synovitis: systematic review and meta-analysis. https://pmc.ncbi.nlm.nih.gov/articles/PMC11391785/"
+   "The prevalence of Legg-Calvé-Perthes disease among paediatric patients with transient synovitis: systematic review and meta-analysis. https://pmc.ncbi.nlm.nih.gov/articles/PMC11391785/",
+   "Kocher MS, Zurakowski D, Kasser JR. Differentiating between septic arthritis and transient synovitis of the hip in children: an evidence-based clinical prediction algorithm. J Bone Joint Surg Am. 1999;81(12):1662-1670."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0100": {
@@ -1703,18 +1706,18 @@
   "conferido": false
  },
  "pediatria-0116": {
+  "conceito": "**A deformidade de Sprengel.** É a **elevação congênita da escápula**, que não desce da posição cervical para a torácica durante o desenvolvimento embrionário (entre a 9ª e a 12ª semana). O problema está na **escápula**, e não na articulação do ombro.\n\n**Como é a escápula.**\n- **Pequena (hipoplásica)**, mais larga que alta.\n- **Alta**, com o ângulo superior perto da base do pescoço.\n- **Rodada**, com o ângulo inferior apontando para medial (rotação para baixo).\n- Presa à coluna cervical em cerca de um terço dos casos por um **osso omovertebral** (ou faixa fibrosa ou cartilaginosa).\n\n**Por que o movimento do ombro fica limitado.** A elevação do braço depende de duas articulações trabalhando juntas: a **glenoumeral** e a **escapulotorácica**, num **ritmo escapuloumeral** de cerca de **2:1** (para cada 3° de elevação, cerca de 2° vêm da glenoumeral e 1° da rotação da escápula sobre o tórax). Na deformidade de Sprengel:\n- a **articulação glenoumeral é normal**: a cabeça do úmero e a glenoide funcionam bem, e o movimento glenoumeral está preservado;\n- o que falta é a **rotação da escápula** sobre o tórax, porque ela é pequena, alta e muitas vezes presa à coluna.\n\nO resultado é a limitação da **abdução e da flexão** do ombro (frequentemente em torno de 90 a 120°), com o movimento glenoumeral **normal** e a escápula **hipoplásica**.\n\n**Associações.** Síndrome de **Klippel-Feil**, escoliose congênita, anomalias de costelas, espinha bífida, hipoplasia da clavícula, anomalias renais.\n\n**A classificação de Cavendish** (estética, de 1 a 4) e o grau de limitação orientam a indicação cirúrgica, geralmente entre **3 e 8 anos**: ressecção do osso omovertebral e da porção supraespinal da escápula e abaixamento da escápula (técnicas de **Woodward** ou **Green**), com osteotomia da clavícula nas crianças maiores para proteger o plexo braquial.",
+  "correta": "**Correta: C (normal com escápula hipoplásica).** Na deformidade de Sprengel, a articulação glenoumeral funciona normalmente; a escápula é que é **hipoplásica**, alta, rodada e às vezes presa à coluna, o que limita a rotação escapulotorácica e a elevação do braço.",
   "incorretas": {
-   "A": "A glenoumeral está certa, mas a escápula é hipoplásica, não normal.",
-   "B": "A glenoumeral costuma ser normal, e a escápula é anormal.",
-   "D": "A escápula hipoplásica está certa, mas a glenoumeral é preservada."
+   "A": "O movimento glenoumeral é normal, mas a **escápula não é normal**: é pequena, alta e rodada.",
+   "B": "O movimento **glenoumeral** é preservado; a limitação está na escapulotorácica, e a escápula é hipoplásica.",
+   "D": "A escápula é hipoplásica, mas o movimento **glenoumeral** é normal; a perda de elevação vem da escápula."
   },
-  "conceito": "Na **deformidade de Sprengel**, o problema está na **escápula**: ela é **pequena (hipoplásica)**, alta e rodada, e fica presa à coluna cervical pelo osso omovertebral ou por faixas fibrosas.\n\n**A articulação glenoumeral é normal**: a cabeça do úmero e a glenoide funcionam bem. O que falta é o movimento da escápula sobre o tórax (o **ritmo escapulotorácico**). Normalmente, na elevação do braço, a escápula gira e contribui com cerca de um terço do movimento. Presa, ela não gira, e a **abdução fica limitada**.\n\n**As associações**: Klippel-Feil, escoliose, costelas anômalas, diastematomielia e anomalias renais.\n\n**A cirurgia**, entre 3 e 8 anos: descer e rodar a escápula (Woodward ou Green), retirar o omovertebral junto com o periósteo e, muitas vezes, fazer osteotomia da clavícula para proteger o plexo braquial. O maior ganho é na **abdução**.\n\n**Na prova**: Sprengel = glenoumeral **normal** com escápula **hipoplásica**.",
-  "correta": "Na Sprengel, a glenoumeral é normal; a escápula pequena e presa é que limita a abdução, por falta de rotação escapulotorácica.",
   "referencias": [
    "https://posna.org/physician-education/study-guide/sprengel-s-deformity",
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 12"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0117": {
@@ -4329,14 +4332,18 @@
   "conferido": false
  },
  "pediatria-0381": {
-  "conceito": "### Artrite séptica no neonato\n- Fatores de risco: ==UTI neonatal==, cateteres (umbilical, venoso femoral), prematuridade, punções.\n- Pouca febre e leucocitose; ==pseudoparalisia== e irritabilidade dominam.\n- Quadril em ==flexão, abdução e rotação externa== (maior volume capsular).\n- Agentes: ==S. aureus==, estreptococo do grupo B, gram-negativos.\n- Osteomielite metafisária associada é frequente (vasos transfisários até cerca de 18 meses).\n\n### Imagem\n- US: derrame. RX: ==alargamento do espaço articular==, subluxação lateral (pressão intracapsular).\n\n### Conduta\n- ==Emergência==: ==drenagem cirúrgica (artrotomia)== + ==antibiótico== IV.\n- Atraso: necrose da cabeça, destruição da fise, luxação (sequela de Hunka/Choi).\n\n### Sinovite transitória\n- Rara antes de 1 a 2 anos; nunca explica febre + pseudoparalisia no lactente.\n\n> **Na prova:** lactente de UTI com febre, pseudoparalisia e derrame = ==artrite séptica: drenar + antibiótico==",
-  "correta": "**Séptica, drenagem e antibiótico.**\n- Quadro clássico do neonato de UTI.\n- Drenagem de urgência preserva a cabeça.",
+  "conceito": "**O caso.** Lactente de 2 meses, com alta recente da **UTI neonatal**, que há 3 dias tem **febre, irritabilidade e pseudoparalisia** do membro inferior direito, com o quadril em **flexão e rotação externa**. A ultrassonografia mostra **derrame** articular, e a radiografia mostra **aumento do espaço articular** do quadril direito (a cabeça femoral, ainda não ossificada, foi empurrada para lateral pelo líquido). É uma **artrite séptica do quadril** no lactente.\n\n**A artrite séptica no recém-nascido e no lactente pequeno.**\n- **Fatores de risco**: internação em **UTI neonatal**, **cateteres** (umbilical, venoso femoral), prematuridade, punções (inclusive a punção de veia femoral, que pode inocular o quadril).\n- **Quadro pobre**: febre e leucocitose podem ser discretas ou ausentes; dominam a **irritabilidade**, a **pseudoparalisia** (a criança não mexe o membro) e a dor à manipulação, como na troca de fraldas.\n- **Posição antálgica**: quadril em **flexão, abdução e rotação externa**, que é a posição de maior volume capsular.\n- **Agentes**: *Staphylococcus aureus*, **estreptococo do grupo B** e **gram-negativos** entéricos; candida em prematuros.\n- **Osteomielite** metafisária associada é frequente: nos lactentes, os **vasos transfisários** permitem a passagem da infecção entre a metáfise e a epífise, e o colo femoral é intracapsular.\n\n**Por que é uma emergência.** O pus sob pressão dentro do quadril pode:\n- **comprimir os vasos** retinaculares e causar **necrose** da cabeça femoral;\n- **luxar** o quadril (a cabeça é empurrada para fora);\n- destruir a **cartilagem** e a **fise** por enzimas.\nAs sequelas (destruição da cabeça e do colo, luxação, discrepância) são graves e irreversíveis.\n\n**O tratamento.** **Drenagem cirúrgica urgente** (artrotomia, geralmente anterior), com lavagem abundante, coleta de culturas, e **antibioticoterapia** venosa empírica que cubra estafilococo, estreptococo do grupo B e gram-negativos, ajustada pelas culturas. No quadril, a artrotomia é preferida à punção isolada.\n\n**Diferencial.** A **sinovite transitória** é rara antes dos 3 anos e não cursa com febre, toxemia nem pseudoparalisia num lactente vindo da UTI. Nessa idade, todo quadril com derrame e febre deve ser tratado como séptico até prova em contrário.",
+  "correta": "**Correta: C (artrite séptica do quadril, drenagem cirúrgica e antibioticoterapia).** Num lactente de 2 meses vindo da UTI neonatal, com febre, pseudoparalisia, quadril em flexão e rotação externa e derrame, o diagnóstico é artrite séptica, que exige drenagem cirúrgica urgente e antibiótico venoso.",
   "incorretas": {
-   "A": "**Diagnóstico errado.**\n- Sinovite não se drena e é rara aos 2 meses.",
-   "B": "**Diagnóstico errado.**\n- Febre e pseudoparalisia apontam infecção.",
-   "D": "**Falta drenar.**\n- Antibiótico isolado não basta no quadril."
+   "A": "A **sinovite transitória** é rara nessa idade e não cursa com febre e pseudoparalisia num lactente com fatores de risco; e não se trata com drenagem.",
+   "B": "Tratar como sinovite transitória com **observação** atrasaria o tratamento de uma emergência, com risco de necrose e destruição do quadril.",
+   "D": "O diagnóstico está certo, mas a artrite séptica do quadril exige **drenagem cirúrgica**; antibiótico com observação não é suficiente."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Lovell and Winter's Pediatric Orthopaedics, 7ª edição (Weinstein, Flynn)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0382": {
@@ -4457,14 +4464,18 @@
   "conferido": false
  },
  "pediatria-0391": {
+  "conceito": "**O que são as mucopolissacaridoses.** São doenças de **depósito lisossômico**: falta uma das enzimas que degradam os **glicosaminoglicanos** (dermatam sulfato, heparam sulfato, queratam sulfato). O material não degradado se acumula nas células de vários tecidos, incluindo ossos, cartilagens, fígado, coração, córnea e sistema nervoso. A herança é **autossômica recessiva**, com exceção da síndrome de Hunter (ligada ao X).\n\n**Cada tipo tem sua enzima.**\n\n| Tipo | Nome | Enzima deficiente |\n|---|---|---|\n| **I** | **Hurler**, Hurler-Scheie, Scheie | **Alfa-L-iduronidase** |\n| II | Hunter (ligada ao X) | Iduronato-2-sulfatase |\n| III A | Sanfilippo A | Heparam N-sulfatase |\n| IV A | Morquio A | Galactose-6-sulfatase |\n| VI | Maroteaux-Lamy | Arilsulfatase B |\n| VII | Sly | Beta-glicuronidase |\n\n**A síndrome de Hurler (MPS I grave).** O espectro da deficiência de alfa-L-iduronidase vai da forma grave (Hurler) à mais branda (Scheie).\n- **Fácies grosseira**, macrocefalia, opacidade da córnea.\n- **Deficiência intelectual** progressiva.\n- Hepatoesplenomegalia, doença cardíaca valvar, obstrução de vias aéreas.\n- **Ortopedia**: **disostose múltipla** (costelas em remo, vértebras ovais com cifose toracolombar em giba, metacarpos em ponta de lápis), **displasia do quadril**, genu valgo, **síndrome do túnel do carpo** (frequente e muitas vezes indolor na criança), dedos em gatilho, rigidez articular.\n\n**O tratamento mudou o prognóstico.** O **transplante de células-tronco hematopoéticas** antes dos 2 anos e a **terapia de reposição enzimática** (laronidase) melhoram a sobrevida e as manifestações viscerais, mas têm pouco efeito sobre o esqueleto; por isso, as deformidades ortopédicas continuam exigindo acompanhamento e cirurgias.\n\n**Comparação com Morquio (MPS IV).** No Morquio, o acúmulo é de queratam sulfato, a inteligência é **normal**, e a manifestação ortopédica dominante é a **hipoplasia do odontoide** com instabilidade atlantoaxial e a frouxidão ligamentar.",
+  "correta": "**Correta: A (tipo I).** A deficiência da alfa-L-iduronidase define a mucopolissacaridose tipo I, que vai da forma grave (Hurler) à branda (Scheie).",
   "incorretas": {
-   "B": "Na MPS II, Hunter, falta a iduronato-2-sulfatase.",
-   "C": "Na MPS III A, Sanfilippo A, falta a heparan N-sulfatase.",
-   "D": "Na MPS IV, Morquio, falta a galactose-6-sulfatase."
+   "B": "O **tipo II** (Hunter, ligada ao X) é a deficiência da **iduronato-2-sulfatase**.",
+   "C": "O **tipo III A** (Sanfilippo A) é a deficiência da **heparam N-sulfatase**.",
+   "D": "O **tipo IV** (Morquio) é a deficiência da **galactose-6-sulfatase** (IV A) ou da beta-galactosidase (IV B)."
   },
-  "conceito": "As **mucopolissacaridoses** são doenças de depósito em que **falta uma enzima** que degrada os glicosaminoglicanos. Cada tipo tem sua enzima:\n\n**tipo I** (Hurler, Hurler-Scheie e Scheie): **α-L-iduronidase**;\n\n**tipo II** (Hunter, ligada ao X): iduronato-2-sulfatase;\n\n**tipo III A** (Sanfilippo A): heparan N-sulfatase;\n\n**tipo IV A** (Morquio A): galactose-6-sulfatase;\n\n**tipo VI** (Maroteaux-Lamy): arilsulfatase B.\n\n**A MPS I** é um espectro: **Hurler** é a forma grave (retardo mental, face grosseira, opacidade de córnea, giba toracolombar, rigidez articular, mão em garra); **Scheie** é a forma atenuada, com inteligência normal; Hurler-Scheie fica no meio.\n\n**O tratamento**: **reposição enzimática** com laronidase e, na forma grave, **transplante de medula óssea** antes dos 2 anos, que preserva a cognição.\n\n**A ortopedia na MPS I**: cifose toracolombar, displasia do quadril, geno valgo, túnel do carpo e dedo em gatilho múltiplo.\n\n**Na prova**: deficiência de **α-L-iduronidase** = MPS **tipo I**.",
-  "correta": "A α-L-iduronidase é a enzima que falta na MPS I, que inclui Hurler, Hurler-Scheie e Scheie.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Muenzer J. Overview of the mucopolysaccharidoses. Rheumatology (Oxford). 2011;50 Suppl 5:v4-12."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0392": {
@@ -4935,14 +4946,18 @@
   "conferido": false
  },
  "pediatria-0443": {
-  "conceito": "### Coxa vara do desenvolvimento\n- Ângulo cervicodiafisário diminuído por defeito de ossificação no colo medial.\n- ==Triângulo de Fairbank== (fragmento triangular inferior no colo).\n- Marcha de Trendelenburg indolor, encurtamento; bilateral em 30 a 50%.\n\n### Por que limita abdução e rotação medial\n- Trocanter alto e colo varo: o trocanter ==bate no ilíaco== na abdução.\n- Retroversão relativa: ==rotação medial== limitada.\n\n### Ângulo de Hilgenreiner-epifisário (HE)\n| Ângulo HE | Conduta |\n|---|---|\n| < 45° | resolve espontaneamente |\n| 45 a 60° | observar |\n| ==> 60°== | ==osteotomia valgizante== (Pauwels) |\n\n### Diferenciais\n- Coxa vara congênita (DFFP), displasias esqueléticas, raquitismo, sequela de DDQ ou Perthes.\n\n### Quadro típico\n- Criança que ==já anda==, claudicação ==indolor==, Trendelenburg, discrepância leve.\n- Limitação de ==abdução e rotação interna==.\n- RX: colo varo, fise vertical, triângulo de Fairbank.\n\n> **Na prova:** claudicação indolor com abdução e RI limitadas aos 4 anos = ==coxa vara==",
-  "correta": "**Coxa vara.**\n- Claudicação indolor e Trendelenburg.\n- Colo varo com fise vertical.",
+  "conceito": "**As imagens.** A radiografia em AP da bacia (A) de um menino de 4 anos mostra o quadril **direito** com o **colo femoral em varo**: o ângulo entre o colo e a diáfise está diminuído, a **fise está verticalizada** e há uma área de ossificação anormal na porção **inferomedial do colo**, junto à fise. O trocânter maior está alto. A ressonância coronal (B) mostra a fise alargada e irregular na porção medial do colo direito, com a epífise preservada. O quadril esquerdo é normal.\n\n**A coxa vara congênita (do desenvolvimento).** Um defeito primário de ossificação na porção inferomedial do colo deixa o osso fraco, e a carga da marcha fecha progressivamente o ângulo cervicodiafisário. Aparece após o início da marcha, geralmente entre 2 e 6 anos.\n\n**Por que o quadro clínico combina.**\n- **Claudicação indolor**: não há inflamação nem necrose.\n- **Limitação da abdução e da rotação interna**: com o colo varo e o trocânter alto, o trocânter **bate no ilíaco** na abdução; o colo frequentemente está **retrovertido**, limitando a rotação interna.\n- **Trendelenburg positivo**: o trocânter alto **encurta o braço de alavanca** e afrouxa o glúteo médio, que perde eficiência.\n- **Dismetria**: o membro do lado varo fica mais curto.\n- **Afebril**: afasta infecção.\n\n**Os achados radiográficos característicos.** Ângulo cervicodiafisário diminuído, **triângulo de Fairbank** (fragmento ósseo triangular inferomedial delimitado por linhas radiotransparentes em \"V\" invertido), fise vertical e ângulo de **Hilgenreiner-epifisário** aumentado. Acima de 60°, a deformidade tende a progredir e indica **osteotomia valgizante**.\n\n**Por que não são as outras.**\n- **Perthes**: a alteração está na **epífise** (densidade, fragmentação, achatamento), com o colo normal; a criança costuma ter dor.\n- **Epifisiólise**: típica do **adolescente** (10 a 15 anos), com escorregamento da epífise.\n- **Sequela de pioartrite**: história de infecção no lactente, com destruição ou ausência da cabeça e do colo, e não um defeito inferomedial isolado.",
+  "correta": "**Correta: A (coxa vara congênita).** Num menino de 4 anos com claudicação indolor, limitação da abdução e da rotação interna, dismetria e Trendelenburg positivo, a radiografia com colo em varo, fise vertical e defeito inferomedial do colo indica coxa vara congênita.",
   "incorretas": {
-   "B": "**Perthes.**\n- Epífise densa ou fragmentada, dor.",
-   "C": "**Epifisiólise.**\n- Adolescente.",
-   "D": "**Sequela de pioartrite.**\n- História de infecção, cabeça destruída."
+   "B": "Na doença de **Perthes**, a alteração é da **epífise** (densa, fragmentada, achatada), e não do colo em varo com defeito inferomedial.",
+   "C": "A **epifisiólise** ocorre na adolescência, com escorregamento da epífise sobre o colo; não é o quadro de uma criança de 4 anos.",
+   "D": "A **sequela de pioartrite** traz história de infecção e destruição da cabeça e do colo, e não o defeito de ossificação típico da coxa vara."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Weinstein JN, Kuo KN, Millar EA. Congenital coxa vara. A retrospective review. J Pediatr Orthop. 1984;4(1):70-77."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0444": {
@@ -5383,16 +5398,18 @@
   "conferido": false
  },
  "pediatria-0483": {
-  "conceito": "**As linhas da radiografia da displasia do quadril.** A **linha de Hilgenreiner** é **horizontal** e passa pelas **cartilagens trirradiadas** dos dois lados; é a referência a partir da qual se medem o índice acetabular e a altura da metáfise. A **linha de Perkins** é **vertical**, perpendicular à de Hilgenreiner, e passa pela borda lateral do teto acetabular; as duas formam os quadrantes de Ombrédanne, e o núcleo da cabeça femoral normal fica no quadrante inferomedial.\n\n**As outras.** O **arco de Shenton** é a curva contínua entre a borda inferior do colo femoral e a borda superior do forame obturado; quando se quebra, sugere subluxação. A **linha de Klein** corre pela borda superior do colo e serve para a **epifisiólise**, não para a displasia.\n\n**Na prova:** linha horizontal pelas trirradiadas é **Hilgenreiner**; vertical pela borda do acetábulo é **Perkins**.",
-  "correta": "**Hilgenreiner.** Linha horizontal que passa pelas cartilagens trirradiadas, base da medida do índice acetabular.",
+  "conceito": "**A figura da questão não está disponível no acervo.** Pelo gabarito, a linha traçada é a de **Hilgenreiner**. A explicação abaixo mostra como reconhecer cada uma das linhas das alternativas.\n\n**As linhas da radiografia do quadril infantil.** Depois dos 4 a 6 meses, quando aparece o núcleo de ossificação da cabeça femoral, a displasia do desenvolvimento do quadril é avaliada na radiografia em AP da bacia com algumas linhas de referência:\n\n| Linha | Como se traça | Para que serve |\n|---|---|---|\n| **Hilgenreiner** | **Horizontal**, unindo as **cartilagens trirradiadas** dos dois lados | Referência para o **índice acetabular** e para a altura da metáfise e da cabeça |\n| Perkin (Perkins) | **Vertical**, perpendicular à de Hilgenreiner, pela **borda lateral do teto acetabular** | Forma com a de Hilgenreiner os **quadrantes de Ombrédanne**; a cabeça deve ficar no inferomedial |\n| Shenton | **Arco** contínuo entre a borda medial do colo femoral e a borda superior do forame obturador | **Rompida** na subluxação e na luxação |\n| Klein | Tangente à **borda superior do colo** femoral, no AP | Na **epifisiólise**, não cruza a epífise (sinal de Trethowan) |\n\n**Como usar a linha de Hilgenreiner.**\n- O **índice acetabular** é o ângulo entre a linha de Hilgenreiner e uma linha que vai da cartilagem trirradiada à borda lateral do acetábulo. Normal: cerca de **30°** ao nascer, diminuindo para cerca de **20 a 25°** aos 2 anos. Valores maiores indicam displasia do acetábulo.\n- A distância da metáfise femoral até a linha de Hilgenreiner (distância h) diminui quando a cabeça está luxada e subida.\n- O **ângulo de Hilgenreiner-epifisário** (entre a linha e a fise) é usado na **coxa vara**.\n\n**Na luxação.** O núcleo da cabeça fica **acima e lateral** (no quadrante superolateral), a linha de Shenton se rompe e o índice acetabular aumenta.",
+  "correta": "**Correta: C (Hilgenreiner).** Pelo gabarito, a linha da figura é a de Hilgenreiner: horizontal, unindo as cartilagens trirradiadas, referência para o índice acetabular e para os quadrantes com a linha de Perkin.",
   "incorretas": {
-   "A": "**É a vertical.** A linha de Perkins desce pela borda lateral do acetábulo, perpendicular à de Hilgenreiner.",
-   "B": "**É um arco.** O arco de Shenton une colo femoral e forame obturado.",
-   "D": "**Outra doença.** A linha de Klein, pela borda superior do colo, é usada na epifisiólise."
+   "A": "A linha de **Perkin** é **vertical**, perpendicular à de Hilgenreiner, passando pela borda lateral do teto acetabular.",
+   "B": "A linha de **Shenton** é um **arco** que une o colo femoral à borda superior do forame obturador.",
+   "D": "A linha de **Klein** é tangente à borda superior do colo femoral e é usada na **epifisiólise**."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "pediatria-0484": {
   "conceito": "**As neurofibromatoses.** São doenças genéticas autossômicas dominantes (cerca de metade dos casos por mutação nova) que predispõem a tumores de bainha nervosa. Antigamente eram divididas em \"periférica\" e \"central\", conforme o tipo de tumor predominante.\n\n| Tipo | Gene | Achados principais |\n|---|---|---|\n| **NF1, periférica** (von Recklinghausen) | Neurofibromina, cromossomo 17 | Manchas café com leite, neurofibromas, nódulos de Lisch, efélides axilares; **manifestações ortopédicas frequentes** |\n| NF2, central | Merlina, cromossomo 22 | **Schwannomas vestibulares bilaterais**, meningiomas; manifestações ortopédicas raras |\n\n**A NF1 é a de interesse ortopédico.** Os critérios diagnósticos (pelo menos dois) incluem seis ou mais manchas café com leite (maiores que 5 mm antes da puberdade, 15 mm depois), dois ou mais neurofibromas ou um plexiforme, efélides axilares ou inguinais, glioma óptico, dois ou mais nódulos de Lisch, lesão óssea característica e parente de primeiro grau afetado.\n\n**As manifestações ortopédicas mais cobradas.**\n- **Escoliose**: a mais comum. A forma **distrófica** (curva curta e angular, vértebras com escavação, costelas em lápis, ectasia dural) progride rapidamente e exige artrodese precoce; a não distrófica comporta-se como idiopática.\n- **Pseudartrose congênita da tíbia**: arqueamento **anterolateral** da tíbia, que fratura e não consolida. Cerca de metade dos pacientes com pseudartrose congênita da tíbia tem NF1.\n- **Hipercrescimento** de um membro (hemi-hipertrofia), por neurofibroma plexiforme ou elefantíase.\n- Displasia do antebraço, pseudartrose da ulna ou do rádio.\n- **Tumor maligno da bainha do nervo periférico**: neurofibroma que cresce rápido ou fica doloroso deve ser investigado.",
@@ -8094,17 +8111,18 @@
   "conferido": false
  },
  "pediatria-0689": {
+  "conceito": "**As lesões fisárias.** Cerca de **15 a 30%** das fraturas da criança envolvem a fise. A fise é o ponto mais fraco do esqueleto imaturo, mais fraca que os ligamentos e a cápsula, por isso traumas que no adulto causariam entorse ou luxação causam **descolamento epifisário** na criança.\n\n**Os locais mais frequentes.**\n\n| Local | Proporção aproximada das lesões fisárias |\n|---|---|\n| **Rádio distal** | **O mais comum**, cerca de 30 a 50% |\n| Falanges da mão | Segundo lugar, cerca de 20 a 30% |\n| Tíbia distal | Cerca de 10% |\n| Úmero distal, fíbula distal, metacarpos | Menos frequentes |\n\n**Por que o rádio distal.** A **queda sobre a mão estendida** é o mecanismo de trauma mais comum da infância, e a força de hiperextensão se concentra justamente na fise distal do rádio. O padrão típico é **Salter-Harris II**: o traço corre pela fise e sai pela metáfise dorsal, com o fragmento de Thurston-Holland dorsal, e a epífise se desloca para **dorsal**.\n\n**O prognóstico do rádio distal.** É geralmente **bom**: a fise distal do rádio responde por cerca de 75 a 80% do crescimento do rádio e tem enorme capacidade de remodelação. A parada de crescimento é rara (cerca de 4 a 5%), mas aumenta com:\n- **manipulações repetidas** ou **tardias** (mais de 7 a 10 dias após a lesão);\n- traumas de alta energia, fraturas expostas, Salter-Harris III a V.\n\n**Conduta.** Redução fechada **suave**, de preferência numa única tentativa, e gesso. Fraturas com mais de 7 a 10 dias de evolução **não devem ser manipuladas**: aceita-se o desvio e confia-se na remodelação, porque a manipulação tardia lesa a fise. Acompanhamento radiográfico por 6 a 12 meses para detectar parada de crescimento (que causa encurtamento do rádio e variância ulnar positiva).",
+  "correta": "**Correta: C (no terço distal do rádio).** O rádio distal é a localização mais comum dos descolamentos epifisários, com cerca de 30 a 50% das lesões fisárias, pela frequência da queda sobre a mão estendida.",
   "incorretas": {
-   "A": "As falanges são o segundo local mais comum, não o primeiro.",
-   "B": "A tíbia distal é o terceiro local mais comum.",
-   "D": "A fíbula distal é um local menos frequente."
+   "A": "As **falanges** são o segundo local mais frequente, depois do rádio distal.",
+   "B": "A **tíbia distal** responde por cerca de 10% das lesões fisárias, atrás do rádio distal e das falanges.",
+   "D": "A **fíbula distal** é acometida com menos frequência, muitas vezes junto com lesões da tíbia distal."
   },
-  "conceito": "As **lesões fisárias** (descolamentos epifisários) se distribuem de forma desigual pelo esqueleto. Os locais mais frequentes:\n\n**rádio distal**: o **mais comum**, com cerca de **30 a 50%** das lesões fisárias; quase sempre **Salter-Harris II** por hiperextensão, na queda sobre a mão estendida;\n\n**falanges**: o segundo lugar, com 20 a 30%;\n\n**tíbia distal**: cerca de 10%, o terceiro;\n\n**úmero distal**: 5 a 10%;\n\n**fíbula distal**: menos frequente;\n\n**fêmur distal**: só 1 a 2%, mas com o **maior risco** de parada de crescimento (30 a 50%).\n\n**Por que o rádio distal**: a queda sobre a mão estendida é o trauma mais comum da criança, e a força se concentra no punho, onde a fise é a parte mais fraca.\n\n**A boa notícia**: as Salter-Harris II do rádio distal remodelam muito e raramente deixam sequela, sobretudo em crianças com bastante crescimento restante. Evitar manipulações repetidas depois de 5 a 7 dias, pelo risco de lesar a fise.\n\n**Na prova**: o descolamento epifisário mais comum é no **terço distal do rádio**.",
-  "correta": "O rádio distal concentra 30 a 50% das lesões fisárias, quase sempre Salter-Harris II.",
   "referencias": [
-   "Rockwood and Wilkins's fractures in Children, 7th Ed., p. 105 (referência indicada na prova TARO 2014, questão 2)"
+   "Rockwood and Wilkins's fractures in Children, 7th Ed., p. 105 (referência indicada na prova TARO 2014, questão 2)",
+   "Peterson HA, Madhok R, Benson JT, Ilstrup DM, Melton LJ 3rd. Physeal fractures: Part 1. Epidemiology in Olmsted County, Minnesota, 1979-1988. J Pediatr Orthop. 1994;14(4):423-430."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0690": {
