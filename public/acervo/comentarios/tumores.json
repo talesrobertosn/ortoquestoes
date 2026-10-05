@@ -3401,19 +3401,20 @@
   "conferido": false
  },
  "tumores-0331": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "C",
-  "conceito": "**Tratamento do osteossarcoma.** Quimioterapia neoadjuvante, ressecção com margem ampla e quimioterapia adjuvante. O tumor é radiorresistente.\n\n**Na prova:** quimio, cirurgia, quimio.",
-  "correta": "**Quimioterapia / cirurgia / quimioterapia.** É a sequência padrão.",
+  "conceito": "**Osteossarcoma e a sequência do tratamento.** O osteossarcoma é o sarcoma ósseo primário mais comum em crianças e adolescentes. Produz **osteoide maligno**, atinge sobretudo a metáfise do fêmur distal, da tíbia proximal e do úmero proximal, e tem micrometástases (principalmente pulmonares) em cerca de 80% dos pacientes ao diagnóstico, mesmo quando os exames são negativos.\n\n**Por que a quimioterapia veio a ser decisiva.** Antes da quimioterapia, mesmo com amputação, a sobrevida em 5 anos era de 15% a 20%, porque as micrometástases cresciam. Com a quimioterapia, passou para 60% a 70% na doença localizada.\n\n**A sequência padrão.**\n1. **Quimioterapia neoadjuvante** (pré-operatória; esquema MAP: metotrexato em alta dose, doxorrubicina e cisplatina), por cerca de 10 semanas. Trata as micrometástases precocemente, reduz o tumor e o edema reativo, facilitando a cirurgia de preservação do membro.\n2. **Cirurgia com margens amplas**: ressecção e reconstrução (endoprótese, aloenxerto) ou amputação.\n3. **Quimioterapia adjuvante** (pós-operatória).\n\n**A resposta à quimioterapia neoadjuvante.** Rosen e colaboradores introduziram a avaliação da necrose tumoral na peça operada. **Necrose de 90% ou mais** (Huvos III e IV) é o principal fator prognóstico, junto com metástases ao diagnóstico.\n\n**E a radioterapia?** O osteossarcoma é **relativamente radiorresistente**; a radioterapia fica restrita a lesões irressecáveis (pelve, coluna, crânio) ou margens positivas sem possibilidade de nova cirurgia. Isso o diferencia do **sarcoma de Ewing**, radiossensível, em que a radioterapia é opção de controle local.\n\n> Osteossarcoma: quimioterapia, cirurgia com margem ampla, quimioterapia.",
+  "correta": "**C: quimioterapia / cirurgia / quimioterapia (resposta pela bibliografia).** A neoadjuvância trata as micrometástases e permite avaliar a necrose na peça; segue-se a ressecção com margens amplas e depois a quimioterapia adjuvante.",
   "incorretas": {
-   "A": "**Cirurgia / quimioterapia / radioterapia.** Não se começa pela cirurgia.",
-   "B": "**Cirurgia / radioterapia / quimioterapia.** Radioterapia não tem papel habitual.",
-   "D": "**Quimioterapia / cirurgia / radioterapia.** Não se usa radioterapia adjuvante."
+   "A": "**Cirurgia, quimioterapia e radioterapia**: começar pela cirurgia atrasa o tratamento sistêmico e perde a avaliação da resposta; a radioterapia não faz parte do tratamento padrão, pois o tumor é radiorresistente.",
+   "B": "**Cirurgia, radioterapia e quimioterapia** combina os mesmos problemas: atraso da quimioterapia e uso de radioterapia num tumor radiorresistente.",
+   "D": "**Quimioterapia, cirurgia e radioterapia**: a sequência inicial está certa, mas o tratamento termina com quimioterapia adjuvante, não com radioterapia."
   },
   "referencias": [
-   "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. 2001. 5ª ed., vol. 1, p. 523."
+   "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. 2001. 5ª ed., vol. 1, p. 523.",
+   "Rosen G, Caparros B, Huvos AG, et al. Preoperative chemotherapy for osteogenic sarcoma: selection of postoperative adjuvant chemotherapy based on the response of the primary tumor to preoperative chemotherapy. Cancer. 1982;49(6):1221-1230."
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "C",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "tumores-0332": {
