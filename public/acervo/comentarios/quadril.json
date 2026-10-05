@@ -1403,14 +1403,18 @@
   "conferido": false
  },
  "quadril-0135": {
-  "conceito": "### Inervação por compartimento da coxa\n| Compartimento | Nervo | Músculos |\n|---|---|---|\n| anterior | femoral | quadríceps, sartório (pectíneo) |\n| ==medial== | ==obturatório== | adutores, grácil, obturador externo |\n| posterior | isquiático | isquiotibiais, porção isquiática do adutor magno |\n\n### Exceções que caem\n- **Pectíneo:** femoral (às vezes duplo).\n- **Adutor magno:** dupla inervação (obturatório e tibial).\n- **Cabeça curta do bíceps:** fibular.\n\n### Nervo safeno\n- Ramo **sensitivo** terminal do femoral; passa pelo canal dos adutores (Hunter).\n- Não inerva músculo.\n\n### Lesão do obturatório\n- Fraqueza de adução e hipoestesia na face medial da coxa.\n- Causas: cirurgia pélvica, fratura do acetábulo, hérnia obturatória.\n\n> **Na prova:** músculo do compartimento adutor = ==obturatório==.",
-  "correta": "**Compartimento adutor.**\n- O músculo indicado pertence ao grupo medial da coxa, suprido pelo nervo obturatório.",
+  "conceito": "**A imagem.** Vista anterior da coxa. A seta aponta um músculo da porção **medial e proximal** da coxa, medial ao sartório, no grupo dos **adutores**: o **adutor longo**.\n\n**O compartimento medial (adutor) da coxa.**\n\n| Músculo | Inervação |\n|---|---|\n| **Pectíneo** | **Femoral** (às vezes também o obturatório): a exceção do grupo |\n| **Adutor longo** | **Obturatório** |\n| Adutor curto | Obturatório |\n| **Adutor magno** | **Duplo**: porção adutora pelo **obturatório**; porção isquiotibial (do ísquio) pelo **ciático** (tibial) |\n| **Grácil** | Obturatório |\n| Obturador externo | Obturatório |\n\n**O nervo obturatório.** Nasce das raízes **L2, L3 e L4** do plexo lombar, desce na pelve e sai pelo **canal obturatório**, dividindo-se em ramo **anterior** (que passa sobre o adutor curto) e ramo **posterior** (sob o adutor curto). Inerva os adutores e dá a sensibilidade de uma pequena área na face medial da coxa.\n\n**O adutor longo.** Nasce no **corpo do púbis**, logo abaixo da crista púbica, e se insere no terço médio da **linha áspera**. É o adutor mais anterior e o mais palpável: forma a borda **medial do triângulo femoral** (o lateral é o sartório, e a base é o ligamento inguinal).\n\n**A importância clínica.**\n- As **lesões do adutor longo** (estiramentos, avulsões na origem) são causa comum de **pubalgia** e dor na virilha em jogadores de futebol.\n- A **tenotomia dos adutores** (adutor longo e grácil, às vezes com a neurectomia do ramo anterior do obturatório) é feita na **paralisia cerebral** para tratar a contratura em adução e prevenir a luxação do quadril.\n- A lesão do nervo obturatório (em cirurgias pélvicas e fraturas do anel) causa **fraqueza da adução** e marcha com o membro em abdução.",
+  "correta": "**Correta: D (obturador).** O músculo indicado pertence ao grupo **adutor** da coxa (adutor longo), inervado pelo **nervo obturatório** (L2 a L4). A exceção do grupo é o pectíneo, inervado pelo femoral.",
   "incorretas": {
-   "A": "**Compartimento posterior.**\n- O isquiático inerva os isquiotibiais.",
-   "B": "**Nervo só sensitivo.**\n- O safeno é ramo sensitivo do femoral e não inerva músculo.",
-   "C": "**Compartimento anterior.**\n- O femoral supre quadríceps e sartório, não os adutores."
+   "A": "O **nervo ciático** inerva os isquiotibiais e a porção isquiotibial do adutor magno, e não o adutor longo.",
+   "B": "O **nervo safeno** é um ramo **sensitivo** do femoral (face medial da perna e do pé) e não inerva músculos.",
+   "C": "O **nervo femoral** inerva o quadríceps, o sartório e o pectíneo, mas não os adutores longos."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
+   "Netter FH. Atlas de Anatomia Humana. 7ª edição. Elsevier; 2019."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "quadril-0136": {
@@ -1425,16 +1429,19 @@
   "conferido": false
  },
  "quadril-0137": {
-  "conceito": "**Os isquiotibiais mediais.** Na face posterior da coxa, o **semitendíneo** e o **semimembranoso** formam o grupo medial. O **semitendíneo** é o mais **superficial**: ventre fusiforme no terço proximal e um **tendão longo e cilíndrico** que ocupa a metade distal da coxa, apoiado sobre o semimembranoso, até a pata de ganso. O **semimembranoso** fica **profundo** a ele, tem origem em lâmina larga (a \"membrana\") e ventre carnoso mais distal.\n\n**Como não confundir.** O **grácil** fica na face **medial** da coxa, fino e alongado, entre os adutores. O bíceps femoral é o isquiotibial **lateral**. Nas figuras da face posterior, o músculo com tendão longo sobre outro músculo mais largo é o semitendíneo.\n\n**Na prova:** isquiotibial medial superficial, de tendão longo, é o **semitendíneo**.",
-  "correta": "**Semitendíneo.** Isquiotibial medial superficial, com tendão longo apoiado sobre o semimembranoso.",
+  "conceito": "**A face posterior da coxa: os isquiotibiais.** O compartimento posterior da coxa tem três músculos principais, que nascem na **tuberosidade isquiática** (exceto a cabeça curta do bíceps) e cruzam o quadril e o joelho:\n\n| Músculo | Posição | Inserção e particularidade |\n|---|---|---|\n| **Bíceps femoral** | **Lateral** | Cabeça da **fíbula**; cabeça curta (da linha áspera) inervada pelo fibular comum |\n| **Semitendíneo** | **Medial e superficial** | Ventre muscular na metade **proximal** e **tendão longo e fino** na metade distal; insere-se na **pata de ganso** (tíbia medial) |\n| **Semimembranoso** | **Medial e profundo** (por baixo do semitendíneo) | Origem **membranosa** e larga; ventre muscular mais **distal**; insere-se na face **posteromedial** da tíbia, com várias expansões |\n\n**Como reconhecer o semitendíneo numa figura.**\n- Fica na face **medial** posterior, **superficial** ao semimembranoso.\n- O nome diz tudo: é \"meio tendão\". O **ventre** carnoso ocupa a parte de cima, e na metade de baixo ele vira um **tendão** longo e fino, que corre sobre o semimembranoso.\n- Muitas vezes, uma **interseção tendínea** atravessa o ventre.\n\n**O semimembranoso**, ao contrário, tem a parte de cima **membranosa** (aponeurótica) e o ventre carnoso mais embaixo, largo, por baixo do semitendíneo.\n\n**O grácil** fica mais **medial** ainda, no compartimento adutor, longo e fino, e também chega à pata de ganso.\n\n**A pata de ganso.** É a inserção conjunta, na face anteromedial da tíbia proximal, do **sartório**, do **grácil** e do **semitendíneo** (de anterior para posterior e de cima para baixo: \"SGT\", Sargento). A bursite da pata de ganso causa dor medial no joelho.\n\n**A importância cirúrgica.** O **semitendíneo** e o **grácil** são os enxertos mais usados na **reconstrução do ligamento cruzado anterior** (enxerto de flexores). Eles são retirados pela face anteromedial da tíbia, na pata de ganso, com um extrator de tendão.\n\n**O \"bíceps sural\"** não é um músculo; o bíceps é o **femoral** (da coxa). O tríceps é que é sural (da panturrilha).",
+  "correta": "**Correta: C (semitendíneo).** O músculo indicado é o **semitendíneo**, isquiotibial medial e superficial, com o ventre carnoso na metade proximal e um tendão longo e fino na metade distal, que se insere na pata de ganso. É o enxerto mais usado na reconstrução do LCA.",
   "incorretas": {
-   "A": "**Face medial.** O grácil corre na face medial da coxa, junto aos adutores.",
-   "B": "**Nome inexistente.** Não há músculo com esse nome; o isquiotibial lateral é o bíceps femoral.",
-   "D": "**Fica por baixo.** O semimembranoso é profundo ao semitendíneo e tem ventre mais largo e distal."
+   "A": "O **grácil** é um músculo do compartimento **adutor**, mais medial, longo e fino, inervado pelo obturatório.",
+   "B": "\"Bíceps sural\" não existe: o bíceps é o **femoral** (da coxa), isquiotibial **lateral**. O músculo da panturrilha é o tríceps sural.",
+   "D": "O **semimembranoso** fica **por baixo** do semitendíneo, com origem membranosa e ventre carnoso mais distal."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
+   "Netter FH. Atlas de Anatomia Humana. 7ª edição. Elsevier; 2019."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "quadril-0138": {
   "conceito": "### Quadrado femoral\n- O **mais inferior** dos rotadores curtos, de formato quadrangular.\n- Origem na **tuberosidade isquiática**, inserção no **tubérculo quadrado** da crista intertrocantérica.\n- Rotação externa do quadril.\n- Inervação: nervo para o quadrado femoral (L4 a S1), que também supre o gêmeo inferior.\n\n### Por que importa\n- A ==artéria circunflexa femoral medial== (ramo profundo) corre na sua **borda superior**.\n- Por isso, no acesso posterior e na luxação cirúrgica, o quadrado femoral **não é desinserido**.\n- **Impacto isquiofemoral:** redução do espaço entre ísquio e trocânter menor, com edema do quadrado femoral na RM.\n\n### Sequência de cima para baixo\n1. piriforme\n2. gêmeo superior\n3. obturador interno\n4. gêmeo inferior\n5. ==quadrado femoral==\n- O **obturador externo** fica mais profundo, sob o quadrado femoral.\n\n> **Na prova:** rotador curto mais inferior e quadrangular = ==quadrado femoral==.",
