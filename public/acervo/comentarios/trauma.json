@@ -3351,14 +3351,18 @@
   "conferido": false
  },
  "trauma-0312": {
-  "conceito": "A classificação de **Ideberg** para fraturas da glenoide descreve, no tipo **Ia**, um fragmento isolado da borda anteroinferior da glenoide (fratura marginal, geralmente associada à luxação anterior do ombro, funcionando como um equivalente ósseo da lesão de Bankart), sem extensão para o corpo ou o colo da escápula, exatamente o padrão do fragmento anteroinferior destacado visível na reconstrução tridimensional.",
-  "correta": "A. A fratura é classificada como tipo Ia.",
+  "conceito": "**A imagem.** Reconstrução tridimensional da tomografia do ombro, vista lateral da glenoide com o úmero removido. Há um **fragmento destacado da borda anteroinferior da glenoide**, sem traço se estendendo para o colo ou o corpo da escápula: é uma fratura **marginal** anterior.\n\n**A classificação de Ideberg** divide as fraturas da glenoide em fraturas da **borda** (tipo I) e fraturas da **fossa** (tipos II a V), que se estendem pelo colo ou corpo da escápula.\n\n| Tipo | Traço |\n|---|---|\n| **Ia** | Borda **anterior** (anteroinferior) |\n| Ib | Borda **posterior** |\n| II | Fossa, traço transverso ou oblíquo que sai pela borda **lateral** da escápula (fragmento inferior) |\n| III | Traço que sai pela borda **superior** (fragmento superior, com o coracoide) |\n| IV | Traço horizontal que atravessa até a borda **medial** da escápula |\n| V | Combinações de II, III e IV (Goss acrescentou o VI, cominutivo) |\n\n**O tipo Ia e a luxação do ombro.** A fratura da borda anteroinferior é o **Bankart ósseo**: ocorre na luxação anterior do ombro, quando a cabeça do úmero cisalha a borda da glenoide. O fragmento leva o lábio e o complexo capsuloligamentar inferior.\n\n**Por que o tamanho do fragmento importa.**\n- A perda óssea da glenoide reduz o arco de estabilidade: perdas a partir de cerca de **20 a 25%** do diâmetro anteroposterior inferior (glenoide em \"pera invertida\") tornam o reparo de partes moles insuficiente.\n- Fragmentos **grandes e desviados** ou com instabilidade do ombro: fixação com parafusos ou âncoras.\n- Fragmentos pequenos com ombro estável: tratamento não cirúrgico ou reparo artroscópico do Bankart ósseo.\n- Perda óssea crônica significativa: procedimentos de reconstrução, como a **cirurgia de Latarjet**.",
+  "correta": "**Correta: A (Ia).** O fragmento isolado da **borda anteroinferior** da glenoide, sem extensão para o colo ou o corpo da escápula, corresponde ao tipo Ia de Ideberg, equivalente ósseo da lesão de Bankart.",
   "incorretas": {
-   "B": "O tipo **Ib** corresponde a um fragmento marginal mais extenso ou de localização posteroinferior, um padrão diferente do fragmento anteroinferior isolado mostrado.",
-   "C": "O tipo **II** corresponde a uma fratura transversa que atravessa toda a cavidade glenoidal, saindo inferiormente pelo corpo da escápula, um padrão muito mais extenso do que o fragmento marginal mostrado.",
-   "D": "O tipo **III** corresponde a uma fratura oblíqua que sai superiormente pela escápula, frequentemente associada a lesão da articulação acromioclavicular, um padrão anatômico diferente do fragmento anteroinferior isolado mostrado."
+   "B": "O tipo **Ib** é a fratura da borda **posterior** da glenoide, típica da luxação posterior.",
+   "C": "No tipo **II**, o traço atravessa a fossa e sai pela borda lateral da escápula, com um fragmento inferior maior.",
+   "D": "No tipo **III**, o traço sai pela borda **superior** da escápula, levando o fragmento superior com o coracoide."
   },
-  "geradoEm": "2026-09-21",
+  "referencias": [
+   "Ideberg R, Grevsten S, Larsson S. Epidemiology of scapular fractures. Incidence and classification of 338 fractures. Acta Orthop Scand. 1995;66(5):395-397.",
+   "Rockwood and Matsen's The Shoulder, 5ª edição"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0313": {
@@ -6351,14 +6355,18 @@
   "conferido": false
  },
  "trauma-0790": {
-  "conceito": "A **zona segura** para osteossíntese da cabeça do rádio corresponde ao arco de aproximadamente 110°, na face posterolateral, que não entra em contato com a incisura radial da ulna durante toda a amplitude de pronossupinação, evitando o impacto do material de síntese contra a articulação radioulnar proximal. Com o antebraço em posição neutra, essa área corresponde à posição indicada pelo número 2 no diagrama, entre o processo estiloide radial e o tubérculo de Lister como referências de superfície.",
-  "correta": "B. A zona de segurança corresponde ao número 2.",
+  "conceito": "**Por que existe uma zona de segurança.** A cabeça do rádio articula-se com o **capítulo** do úmero e, pela sua circunferência, com a **incisura radial da ulna** (articulação radioulnar proximal). Durante a pronossupinação, a cabeça gira dentro do ligamento anular, e cerca de **dois terços** da sua circunferência entram em contato com a incisura radial em algum momento do arco. Uma placa ou parafuso saliente nessa área **bate na ulna**, bloqueando a rotação do antebraço e lesando a cartilagem.\n\n**A zona segura.** Corresponde ao arco da circunferência da cabeça (cerca de **90 a 110°**) que **nunca** articula com a incisura radial em toda a amplitude de rotação. Ela fica na face **lateral**, oposta à ulna.\n\n**Como localizar (Smith e Hotchkiss; Caputo).**\n- Marca-se, na cabeça do rádio, o ponto voltado diretamente para lateral com o antebraço em **posição neutra**, em **supinação máxima** e em **pronação máxima**.\n- A zona segura fica entre os pontos médios desses arcos, aproximadamente entre linhas correspondentes ao **estiloide radial** e ao **tubérculo de Lister** no punho.\n- Com o antebraço em **neutro**, a zona segura está voltada **diretamente para lateral**, longe da incisura radial da ulna, que fica medial.\n\n**Na figura**, o corte da cabeça do rádio está dividido em quatro quadrantes com o antebraço em posição neutra. O quadrante **2** é o voltado para lateral, oposto à ulna: a zona de segurança.\n\n**Aplicação prática.**\n- Fratura de Mason II desviada: fixação com parafusos sem cabeça (enterrados na cartilagem, podem ficar fora da zona segura) ou miniplaca **somente na zona segura**.\n- Durante a cirurgia, testar a pronossupinação completa antes de fechar, verificando que o implante não bate.\n- O **nervo interósseo posterior** cruza o colo do rádio dentro do supinador: dissecção limitada e pronação do antebraço afastam o nervo do campo.",
+  "correta": "**Correta: B (2).** Com o antebraço em posição neutra, a zona de segurança da cabeça do rádio é o arco voltado **diretamente para lateral**, que nunca articula com a incisura radial da ulna durante a pronossupinação; na figura, o quadrante 2.",
   "incorretas": {
-   "A": "O número 1, voltado mais anteriormente, sofre contato articular com a incisura radial da ulna durante parte do arco de pronossupinação, não sendo considerado zona segura.",
-   "C": "O número 3, na região posteromedial, também se articula com a ulna durante a rotação do antebraço, apresentando risco de impacto do implante.",
-   "D": "O número 4, mais medial, corresponde à área de maior contato articular com a ulna, sendo a região de maior risco (e não a mais segura) para posicionamento de material de síntese."
+   "A": "O quadrante **1** inclui parte da circunferência que, em algum momento da rotação, entra em contato com a incisura radial da ulna.",
+   "C": "O quadrante **3** também passa pela incisura radial durante a pronossupinação; implantes ali bloqueiam a rotação.",
+   "D": "O quadrante **4** é o voltado para a ulna, justamente a área que articula com a incisura radial, a mais perigosa para colocar implantes."
   },
-  "geradoEm": "2026-09-21",
+  "referencias": [
+   "Smith GR, Hotchkiss RN. Radial head and neck fractures: anatomic guidelines for proper placement of internal fixation. J Shoulder Elbow Surg. 1996;5(2 Pt 1):113-117.",
+   "Rockwood and Green's Fractures in Adults, 9ª edição, capítulo de fraturas da cabeça e do colo do rádio"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0791": {

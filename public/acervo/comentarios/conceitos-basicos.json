@@ -2469,14 +2469,18 @@
   "conferido": false
  },
  "conceitos-basicos-0258": {
-  "conceito": "### Tensão e geometria\nNo fixador circular (Ilizarov), a estabilidade vem de:\n- ==Fios olivados==: a oliva apoia na cortical e **trava o fragmento contra a translação**. Em pares, com olivas opostas, funcionam como pinça.\n- **Anéis de menor diâmetro**, com o osso **centrado**.\n- Fios cruzando o mais perto possível de **90 graus**.\n- Fios bem **tensionados** (tipicamente 90 a 130 kg).\n- Mais fios e mais anéis por segmento; **meios-pinos** (hidroxiapatita) aumentam a rigidez.\n\n### As três maneiras de afrouxar\n- Anel largo.\n- Fios quase paralelos.\n- Osso excêntrico.\n\n### Por que fio fino funciona\nO fio tensionado permite **micromovimento axial** (efeito trampolim), que estimula o regenerado, mas resiste bem a angulação e cisalhamento.\n\n> **Na prova:** mais estabilidade no circular = ==fios olivados==, anel pequeno, fios a 90°.",
-  "correta": "**O uso de fios olivados.**\n- Travam o fragmento contra a translação.",
+  "conceito": "**Como o fixador circular segura o osso.** O fixador de Ilizarov usa **fios finos** (1,5 a 1,8 mm) **transfixantes** e **tensionados** presos a **anéis**. Diferente dos fixadores monolaterais com pinos grossos, ele cria uma estrutura que permite micromovimento axial (bom para a consolidação) e resiste muito a cisalhamento e flexão. Sua estabilidade depende de vários fatores, e cada um tem uma direção certa.\n\n**O que aumenta a estabilidade.**\n\n| Fator | Mais estabilidade quando |\n|---|---|\n| **Fios olivados** | **Usados**, especialmente em pares com olivas opostas |\n| Diâmetro do anel | **Menor**, próximo da perna |\n| Ângulo entre os fios | **Próximo de 90°** |\n| Tensão dos fios | **Maior** (tipicamente 90 a 130 kg) |\n| Posição do osso | **Centrado** no anel |\n| Número de anéis por segmento | **Mais** anéis, mais afastados entre si no fragmento |\n| Distância entre os anéis próximos ao foco | **Menor** distância do foco |\n| Diâmetro do fio | **Maior** |\n\n**Por que a oliva estabiliza.** O fio liso, mesmo tensionado, permite que o osso **deslize** ao longo dele (translação no eixo do fio). A **oliva** é um pequeno batente no fio que se apoia na cortical e **impede esse deslizamento**. Em pares, com as olivas em lados opostos, o fragmento fica **travado como numa pinça**, eliminando a translação. As olivas também servem para **puxar** fragmentos e corrigir deformidades.\n\n**Os erros das outras alternativas.**\n- **Anéis maiores** aumentam a distância entre o anel e o osso: o fio fica mais longo e mais flexível, e a estabilidade diminui.\n- **Ângulo menor entre os fios** (fios quase paralelos) deixa o osso livre para deslizar no plano dos fios; o ideal é cruzá-los perto de 90°.\n- **Osso excêntrico** no anel gera momentos de flexão desiguais e reduz a estabilidade.\n\n**Limite prático.** A anatomia nem sempre permite fios a 90° (corredores seguros entre nervos e vasos), por isso as olivas e os fios adicionais compensam ângulos menores.",
+  "correta": "**Correta: A (o uso de fios olivados).** A oliva apoia-se na cortical e impede o deslizamento do osso ao longo do fio; usada em pares com olivas opostas, trava o fragmento e aumenta a estabilidade do fixador circular.",
   "incorretas": {
-   "B": "**Reduz.**\n- Anel maior aumenta o vão e a flexão do fio.",
-   "C": "**Reduz.**\n- O ideal é próximo de 90 graus.",
-   "D": "**Reduz.**\n- O osso deve ficar centrado."
+   "B": "**Aumentar o diâmetro dos anéis** afasta o anel do osso e alonga o trecho livre do fio, tornando a montagem **mais flexível**.",
+   "C": "**Menor angulação entre os fios** deixa o osso deslizar no plano dos fios; a estabilidade é máxima com os fios cruzando perto de **90°**.",
+   "D": "O **posicionamento excêntrico** do osso no anel gera cargas desiguais e diminui a estabilidade; o ideal é o osso centrado."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 9ª edição, capítulo de fixação externa",
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "conceitos-basicos-0259": {
