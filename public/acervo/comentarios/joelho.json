@@ -3607,19 +3607,20 @@
   "conferido": false
  },
  "joelho-0296": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": "**Fratura subcondral por insuficiência.** Após meniscectomia, a carga se concentra no osso subcondral e pode levar à fratura (antiga osteonecrose espontânea).\n\n**Na prova:** dor súbita após meniscectomia em idoso, fratura subcondral.",
-  "correta": "**Meniscectomia.** É o fator mais associado.",
+  "conceito": "**Fratura por insuficiência do osso subcondral do joelho.** Durante décadas a entidade foi chamada de **osteonecrose espontânea do joelho** (SONK, descrita por Ahlbäck). Estudos histológicos de Yamamoto e Bullough mostraram que, na maioria dos casos, o evento primário é uma **fratura por insuficiência** do osso subcondral, e a necrose é secundária, limitada ao fragmento acima da fratura.\n\n**Fisiopatologia.** Fratura por insuficiência é a que ocorre com carga normal em osso de resistência reduzida. No joelho, dois fatores se somam:\n- **Osso fraco**: mulheres acima de 60 anos, osteopenia.\n- **Carga concentrada**: perda da função de distribuição de carga do menisco. O menisco transmite de 50% a 70% da carga do compartimento; sem ele (ou com lesão da raiz posterior do menisco medial, que equivale funcionalmente a meniscectomia total), a pressão de contato no osso subcondral sobe muito.\n\n**Relação com a meniscectomia.** Há casos descritos semanas a meses após **meniscectomia artroscópica**, quadro chamado por alguns de osteonecrose pós-artroscopia. A sequência típica é dor súbita, sem melhora ou com piora após a cirurgia, em paciente idoso.\n\n**Quadro e imagem.**\n- Dor aguda e intensa no côndilo femoral medial (local mais comum), pior à noite e com carga.\n- Radiografia inicial normal; depois, achatamento e radioluscência subcondral.\n- Ressonância: linha hipointensa subcondral em T2 com edema medular extenso; a espessura e a extensão da linha predizem colapso.\n\n**Tratamento.** Lesões pequenas: retirada de carga, analgesia e observação. Colapso ou lesões extensas: osteotomia, artroplastia unicompartimental ou total.\n\n> Idoso com dor súbita no côndilo medial após meniscectomia: pensar em fratura subcondral por insuficiência.",
+  "correta": "**B: meniscectomia (resposta pela bibliografia).** A retirada do menisco elimina parte da área de distribuição de carga e concentra a pressão no osso subcondral, que, em osso osteopênico, pode fraturar com carga fisiológica. É o fator iatrogênico mais associado à entidade.",
   "incorretas": {
-   "A": "**Osteotomia.** Menos associado.",
-   "C": "**Condrectomia.** Menos associado.",
-   "D": "**Sinovectomia.** Menos associado."
+   "A": "**A osteotomia** redistribui a carga, aliviando o compartimento sobrecarregado. Ela faz parte do tratamento de lesões estabelecidas, não da sua causa.",
+   "C": "**A condrectomia** (retirada de cartilagem) não é procedimento de rotina no joelho e não guarda associação descrita com fratura subcondral por insuficiência.",
+   "D": "**A sinovectomia** remove a membrana sinovial e não altera a distribuição de carga no osso subcondral."
   },
   "referencias": [
-   "Hebert Sizínio et al. Ortopedia e traumatologia: princípios e prática. Porto Alegre: Artmed. 3ª ed., pg. 536."
+   "Hebert Sizínio et al. Ortopedia e traumatologia: princípios e prática. Porto Alegre: Artmed. 3ª ed., pg. 536.",
+   "Yamamoto T, Bullough PG. Spontaneous osteonecrosis of the knee: the result of subchondral insufficiency fracture. J Bone Joint Surg Am. 2000;82(6):858-866."
   ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "B",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "joelho-0297": {

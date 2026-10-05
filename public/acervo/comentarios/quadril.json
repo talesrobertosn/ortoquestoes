@@ -5835,19 +5835,20 @@
   "conferido": false
  },
  "quadril-0488": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "C",
-  "conceito": "**Sinal da dupla linha.** Em T2, linha hiperintensa interna e hipointensa externa na borda da área necrótica: é patognomônico de osteonecrose.\n\n**Na prova:** dupla linha é osteonecrose.",
-  "correta": "**Osteonecrose da cabeça do fêmur.** É o sinal típico.",
+  "conceito": "**Sinal da dupla linha na ressonância do quadril.** A osteonecrose da cabeça femoral é a morte do osso trabecular e da medula por interrupção do suprimento sanguíneo. Causas: trauma (fratura do colo, luxação), corticoide, álcool, doença falciforme, doença de Gaucher, doença descompressiva, lúpus e idiopática.\n\n**O que é o sinal.** Na sequência ponderada em **T2**, a borda entre o osso necrótico e o osso viável mostra duas linhas paralelas:\n- **Linha externa hipointensa**: esclerose e osso reativo na interface (zona de reparo fibroso e esclerótico).\n- **Linha interna hiperintensa**: tecido de granulação vascularizado da zona de reparo.\n\nEm T1, a interface aparece como uma única linha hipointensa serpiginosa delimitando o segmento necrótico (padrão em mapa geográfico). A dupla linha é considerada **altamente específica** (praticamente patognomônica) de osteonecrose e está presente em grande parte dos casos.\n\n**Por que a ressonância é o exame-chave.** A radiografia só se altera em fases mais avançadas (esclerose, sinal do crescente, colapso). A ressonância detecta a doença ainda na fase pré-radiográfica, com sensibilidade e especificidade acima de 95%, e permite estimar o tamanho da lesão, fator prognóstico importante.\n\n**Diferenciais de imagem.**\n\n| Doença | Achado típico na ressonância |\n|---|---|\n| **Osteonecrose** | Linha serpiginosa delimitando segmento, dupla linha em T2 |\n| Osteoporose transitória | Edema difuso da cabeça e colo, sem linha delimitante |\n| Fratura oculta do colo | Linha de fratura hipointensa em T1 com edema ao redor |\n| Impacto femoroacetabular | Morfologia (giba cam, sobrecobertura), lesão labral |\n\n> Dupla linha em T2 no quadril: osteonecrose.",
+  "correta": "**C: osteonecrose da cabeça do fêmur (resposta pela bibliografia).** A dupla linha em T2 (linha hipointensa externa e hiperintensa interna) representa a zona de reparo entre osso necrótico e viável e é altamente específica de osteonecrose.",
   "incorretas": {
-   "A": "**Osteoporose transitória.** Edema difuso.",
-   "B": "**Fratura oculta do colo do fêmur.** Linha de fratura.",
-   "D": "**Impacto femoroacetabular.** Não é o sinal."
+   "A": "**A osteoporose transitória** mostra edema medular difuso na cabeça e no colo, sem linha que delimite um segmento. Resolve espontaneamente em meses.",
+   "B": "**A fratura oculta do colo** aparece como linha de fratura hipointensa em T1, geralmente perpendicular ou oblíqua às trabéculas, com edema ao redor, e não como a interface serpiginosa da necrose.",
+   "D": "**O impacto femoroacetabular** é diagnosticado pela morfologia óssea (deformidade cam, pincer) e lesões do labrum e da cartilagem, mais bem vistas na artrorressonância."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 11ª ed., pg. 142."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 11ª ed., pg. 142.",
+   "Mitchell DG, Rao VM, Dalinka MK, et al. Femoral head avascular necrosis: correlation of MR imaging, radiographic staging, radionuclide imaging, and clinical findings. Radiology. 1987;162(3):709-715."
   ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "C",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "quadril-0489": {
