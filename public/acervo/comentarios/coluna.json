@@ -3742,19 +3742,20 @@
   "conferido": false
  },
  "coluna-0323": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": "**White e Panjabi.** Translação sagital acima de 3,5 mm ou angulação acima de 11 graus sugerem instabilidade da coluna cervical subaxial.\n\n**Na prova:** 3,5 mm e 11 graus.",
-  "correta": "**3,5 mm.** É o valor de corte.",
+  "conceito": "**Instabilidade clínica da coluna cervical subaxial (White e Panjabi).** White e Panjabi definiram instabilidade clínica como a perda da capacidade da coluna de, sob cargas fisiológicas, manter as relações entre as vértebras de modo a não lesar a medula ou as raízes, não gerar deformidade incapacitante e não causar dor incapacitante.\n\n**Critérios radiográficos clássicos (coluna cervical de C2 a C7).**\n- **Translação sagital** de uma vértebra sobre a outra **maior que 3,5 mm** (ou acima de 20% do diâmetro anteroposterior do corpo vertebral).\n- **Angulação sagital** relativa entre segmentos vizinhos **maior que 11 graus** (em relação ao segmento adjacente).\n- Nas radiografias dinâmicas (flexão e extensão), deslocamentos acima de cerca de 3,5 mm também indicam instabilidade.\n\n**Por que esses valores.** Estudos biomecânicos em cadáver mostraram que esses limites correspondem à falha dos elementos anteriores ou posteriores; além deles, a coluna perde a capacidade de proteger a medula sob cargas fisiológicas.\n\n**Escala de pontuação (checklist) de White e Panjabi.** Soma pontos para elementos anteriores ou posteriores destruídos, translação acima de 3,5 mm, angulação acima de 11 graus, teste de estiramento positivo, lesão medular ou radicular, estreitamento discal anormal e cargas perigosas antecipadas. Cinco pontos ou mais indicam instabilidade.\n\n**Hoje.** Classificações como a SLIC (morfologia, complexo discoligamentar e estado neurológico) e a AO Spine subaxial orientam o tratamento, mas os critérios de White e Panjabi continuam sendo referência conceitual.\n\n> Coluna cervical subaxial instável: translação sagital acima de 3,5 mm ou angulação acima de 11 graus.",
+  "correta": "**B: 3,5 mm (resposta pela bibliografia).** Pelos critérios de White e Panjabi, a translação sagital de uma vértebra cervical sobre a vizinha maior que 3,5 mm (ou acima de 20% do diâmetro do corpo) indica instabilidade clínica. A angulação acima de 11 graus em relação ao segmento vizinho é o critério angular correspondente.",
   "incorretas": {
-   "A": "**2 mm.** Abaixo do corte.",
-   "C": "**5 mm.** Acima do corte.",
-   "D": "**7 mm.** Acima do corte."
+   "A": "**2 mm** é um deslocamento pequeno, que pode ocorrer por frouxidão fisiológica, especialmente em crianças (pseudossubluxação de C2 sobre C3). Não define instabilidade.",
+   "C": "**5 mm** é um valor acima do limite clássico; usar esse corte deixaria de reconhecer lesões instáveis.",
+   "D": "**7 mm** lembra o critério da regra de Spence para a fratura de Jefferson (afastamento das massas laterais de C1, cerca de 6,9 mm), que é outra situação."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 1606."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 1606.",
+   "White AA 3rd, Johnson RM, Panjabi MM, Southwick WO. Biomechanical analysis of clinical stability in the cervical spine. Clin Orthop Relat Res. 1975;(109):85-96."
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "B",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "coluna-0324": {

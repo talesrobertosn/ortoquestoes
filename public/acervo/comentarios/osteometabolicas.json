@@ -1088,19 +1088,20 @@
   "conferido": false
  },
  "osteometabolicas-0086": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": "**Osteoporose primária.** Exames laboratoriais normais; alterações sugerem causa secundária.\n\n**Na prova:** osteoporose com cálcio alterado, procure outra causa.",
-  "correta": "**Normal e normal.** São normais.",
+  "conceito": "**Osteoporose primária e os exames laboratoriais.** A osteoporose é uma doença esquelética caracterizada por **baixa massa óssea** e **deterioração da microarquitetura**, com aumento da fragilidade e do risco de fraturas. A forma **primária** inclui a pós-menopausa (tipo I, por deficiência de estrogênio, com perda predominante de osso trabecular) e a senil (tipo II, com perda trabecular e cortical).\n\n**Laboratório na osteoporose primária.** Os exames de rotina são **normais**:\n- **Cálcio sérico**: normal.\n- **Fósforo**: normal.\n- **Fosfatase alcalina**: normal (pode subir transitoriamente após uma fratura recente, durante a consolidação).\n- **Paratormônio (PTH)**: normal.\n- **Vitamina D**: frequentemente baixa na população idosa, o que deve ser corrigido, mas não define a doença.\n\n**Por que pedir exames, então.** Para **afastar causas secundárias**, que precisam de tratamento específico:\n\n| Alteração | Pense em |\n|---|---|\n| Cálcio elevado | Hiperparatireoidismo primário, mieloma, metástases |\n| Fosfatase alcalina elevada | Osteomalácia, doença de Paget, metástases, fratura recente |\n| Fósforo baixo | Osteomalácia |\n| Anemia, VHS alta, proteínas alteradas | Mieloma múltiplo |\n| TSH baixo | Hipertireoidismo |\n| Creatinina alterada | Doença renal crônica (osteodistrofia) |\n\n**Diagnóstico da osteoporose.** Densitometria óssea (T-escore igual ou menor que -2,5) ou fratura por fragilidade. A ferramenta FRAX estima o risco de fratura em 10 anos.\n\n> Osteoporose primária: cálcio e fosfatase alcalina normais; alterações sugerem causa secundária.",
+  "correta": "**B: normal e normal (resposta pela bibliografia).** Na osteoporose primária, a fosfatase alcalina e o cálcio sérico estão normais. A doença reduz a massa óssea sem alterar o metabolismo mineral de forma detectável nos exames de rotina; alterações desses valores sugerem outras doenças, como osteomalácia, hiperparatireoidismo, mieloma ou metástases.",
   "incorretas": {
-   "A": "**Normal e aumentado.** Cálcio normal.",
-   "C": "**Aumentada e normal.** Fosfatase normal.",
-   "D": "**Aumentada e aumentado.** Ambos normais."
+   "A": "**Fosfatase normal com cálcio aumentado** sugere hiperparatireoidismo primário, mieloma ou metástases, e não osteoporose primária.",
+   "C": "**Fosfatase aumentada com cálcio normal** sugere osteomalácia, doença de Paget, metástases blásticas ou fratura recente em consolidação.",
+   "D": "**Fosfatase e cálcio aumentados** sugerem hiperparatireoidismo ou doença metastática, não osteoporose primária."
   },
   "referencias": [
-   "Tratado de Ortopedia - SBOT. Roca. 2007, pg. 612."
+   "Tratado de Ortopedia - SBOT. Roca. 2007, pg. 612.",
+   "Compston JE, McClung MR, Leslie WD. Osteoporosis. Lancet. 2019;393(10169):364-376."
   ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "B",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "osteometabolicas-0087": {

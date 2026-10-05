@@ -3606,19 +3606,20 @@
   "conferido": false
  },
  "pe-tornozelo-0344": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "D",
-  "conceito": "**Wagner.** 0 pé em risco; 1 úlcera superficial; 2 úlcera profunda até tendão ou cápsula; 3 abscesso ou osteomielite; 4 gangrena localizada; 5 gangrena extensa.\n\n**Na prova:** osteomielite começa no grau 3.",
-  "correta": "**3.** O grau 3 inclui osteomielite.",
+  "conceito": "**Classificação de Wagner das úlceras do pé diabético.** É simples e muito usada para descrever a profundidade da lesão e a presença de infecção profunda ou gangrena.\n\n| Grau | Descrição |\n|---|---|\n| 0 | Pé de risco, sem úlcera (deformidades, calos, pré-ulceração) |\n| 1 | Úlcera superficial, sem infecção |\n| 2 | Úlcera profunda, atingindo tendão, cápsula ou osso, **sem** abscesso ou osteomielite |\n| **3** | **Úlcera profunda com abscesso, osteomielite ou artrite séptica** |\n| 4 | Gangrena localizada (dedos, antepé) |\n| 5 | Gangrena extensa de todo o pé |\n\n**Como suspeitar de osteomielite.**\n- **Teste do toque ósseo (probe-to-bone)**: tocar o osso com uma sonda estéril pela úlcera tem alto valor preditivo para osteomielite.\n- Úlcera de mais de 2 cm, de longa duração, com VHS elevada (acima de 70 mm/h).\n- Imagem: radiografia (alterações tardias), **ressonância** (a mais útil).\n- Confirmação: **biópsia óssea** com cultura, que orienta o antibiótico.\n\n**Tratamento conforme o grau.**\n- 0: educação, calçados e palmilhas adequados.\n- 1 e 2: desbridamento, **alívio de carga** (gesso de contato total), controle glicêmico.\n- **3**: drenagem do abscesso, **ressecção do osso infectado**, antibiótico guiado pela cultura óssea.\n- 4 e 5: avaliação vascular, revascularização e amputações.\n\n**Limitação de Wagner.** Não avalia separadamente a isquemia e a infecção. A classificação da Universidade do Texas acrescenta estágios de infecção e isquemia, com melhor valor prognóstico.\n\n> Wagner: osteomielite ou abscesso a partir do grau 3.",
+  "correta": "**D: 3 (resposta pela bibliografia).** Na classificação de Wagner, a osteomielite (assim como o abscesso e a artrite séptica) caracteriza o grau 3. Nos graus 1 e 2, a úlcera ainda não tem infecção profunda do osso.",
   "incorretas": {
-   "A": "**0.** Pé em risco.",
-   "B": "**1.** Úlcera superficial.",
-   "C": "**2.** Úlcera profunda sem osso."
+   "A": "**O grau 0** é o pé de risco, sem úlcera.",
+   "B": "**O grau 1** é a úlcera superficial, sem infecção.",
+   "C": "**O grau 2** é a úlcera profunda que atinge tendão, cápsula ou osso, mas **sem** osteomielite ou abscesso."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., pg. 4112."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., pg. 4112.",
+   "Wagner FW Jr. The dysvascular foot: a system for diagnosis and treatment. Foot Ankle. 1981;2(2):64-122."
   ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "D",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pe-tornozelo-0345": {
@@ -3638,35 +3639,37 @@
   "conferido": false
  },
  "pe-tornozelo-0346": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": "**Apoio estático.** Calcanhar cerca de 60%, mediopé 8% e antepé 28% a 32%.\n\n**Na prova:** em pé parado, o calcanhar carrega a maior parte.",
-  "correta": "**60%, 8% e 32%.** É a distribuição clássica.",
+  "conceito": "**Distribuição de carga no pé em apoio estático.** Quando a pessoa está parada em pé, descalça, o peso se distribui de forma desigual entre as regiões do pé. Estudos de baropodometria (pressão plantar) mostraram:\n\n| Região | Carga aproximada |\n|---|---|\n| **Calcanhar (retropé)** | **Cerca de 60%** |\n| **Mediopé** | **Cerca de 8%** |\n| **Antepé** | **Cerca de 28% a 32%** |\n| Dedos | Pequena parcela (cerca de 2% a 4%) |\n\n**Por que o calcanhar carrega mais.** Em pé parado, a linha de gravidade passa pouco à frente do tornozelo; o calcâneo, com seu coxim gorduroso espesso, é a principal área de apoio. O mediopé recebe pouca carga por causa do **arco longitudinal medial**; na borda lateral há algum contato.\n\n**Na marcha, a distribuição muda.** No contato inicial a carga vai ao calcanhar; no apoio médio, para o mediopé lateral; no apoio terminal e na impulsão, para as cabeças dos metatarsos (principalmente a primeira e a segunda) e para o hálux. Os picos de pressão na marcha podem ser várias vezes maiores que em pé parado.\n\n**Aplicações clínicas.**\n- Pé cavo: aumento da carga no calcanhar e nas cabeças dos metatarsos (metatarsalgia).\n- Pé plano: aumento da carga no mediopé medial.\n- Pé diabético: as úlceras surgem nas áreas de maior pressão (cabeças dos metatarsos, hálux, calcanhar), e a baropodometria ajuda a planejar palmilhas.\n\n> Em pé parado: calcanhar cerca de 60%, mediopé cerca de 8% e antepé cerca de 30%.",
+  "correta": "**A: 60%, 8% e 32% (resposta pela bibliografia).** No apoio estático, o calcanhar carrega cerca de 60% da carga, o mediopé cerca de 8% (pela presença do arco longitudinal) e o antepé cerca de 28% a 32%. Essa distribuição muda bastante durante a marcha.",
   "incorretas": {
-   "B": "**25%, 45% e 30%.** Não corresponde.",
-   "C": "**50%, 32% e 18%.** Não corresponde.",
-   "D": "**50%, 25% e 25%.** Não corresponde."
+   "B": "**25%, 45% e 30%** atribuiria ao mediopé a maior parcela da carga, o que não ocorre em um pé com arco normal; seria mais compatível com um pé plano grave.",
+   "C": "**50%, 32% e 18%** superestima a carga no mediopé e subestima a do antepé.",
+   "D": "**50%, 25% e 25%** também superestima o mediopé, que recebe pouca carga em pés com arco preservado."
   },
   "referencias": [
-   "Hebert Sizínio et al. Ortopedia e traumatologia: princípios e prática. Porto Alegre: Artmed. 4ª ed., pg. 709."
+   "Hebert Sizínio et al. Ortopedia e traumatologia: princípios e prática. Porto Alegre: Artmed. 4ª ed., pg. 709.",
+   "Cavanagh PR, Rodgers MM, Iiboshi A. Pressure distribution under symptom-free feet during barefoot standing. Foot Ankle. 1987;7(5):262-276."
   ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "A",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pe-tornozelo-0347": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": "**Tálus em cunha.** A tróclea é mais larga anteriormente; na dorsiflexão a distância entre os maléolos aumenta cerca de 1,5 mm.\n\n**Na prova:** dorsiflexão abre a pinça em cerca de 1,5 mm.",
-  "correta": "**1,5 mm.** É o valor descrito.",
+  "conceito": "**A pinça maleolar e a forma do tálus.** O tornozelo (articulação talocrural) é formado pela tíbia distal (plafond e maléolo medial) e pela fíbula distal (maléolo lateral), que abraçam a tróclea do tálus como uma pinça.\n\n**Tálus em cunha.** A tróclea do tálus é **mais larga anteriormente** que posteriormente (diferença de cerca de 2 a 6 mm entre a largura anterior e a posterior). Por isso:\n- Na **dorsiflexão**, a parte larga do tálus entra na pinça, que se abre ligeiramente: a fíbula se move lateralmente, posteriormente e roda externamente, e a distância intermaleolar aumenta cerca de **1 a 1,5 mm**.\n- Na **flexão plantar**, a parte estreita do tálus fica na pinça, que se fecha; o tornozelo é menos estável nessa posição (maior risco de entorse).\n\n**Papel da sindesmose.** Os ligamentos tibiofibulares anterior e posterior, o interósseo e a membrana interóssea permitem esse pequeno movimento da fíbula e mantêm a congruência.\n\n**Implicações clínicas.**\n- Ao fixar a **sindesmose** com parafuso, recomenda-se manter o tornozelo em dorsiflexão neutra, para não fechar a pinça em posição estreita e limitar a dorsiflexão (embora estudos mostrem que o efeito é pequeno).\n- Um deslocamento lateral do tálus de 1 mm reduz a área de contato tibiotalar em cerca de 40% (Ramsey e Hamilton), daí a importância da redução anatômica nas fraturas do tornozelo.\n- O movimento fibular explica por que a sindesmose não deve ser fixada rigidamente por longos períodos, com risco de quebra do parafuso.\n\n> Dorsiflexão: a parte larga do tálus abre a pinça maleolar em cerca de 1,5 mm.",
+  "correta": "**A: 1,5 mm (resposta pela bibliografia).** Como a tróclea do tálus é mais larga anteriormente, a dorsiflexão leva essa porção para dentro da pinça e afasta discretamente a fíbula. A distância intermaleolar aumenta em cerca de 1 a 1,5 mm, movimento permitido pela sindesmose.",
   "incorretas": {
-   "B": "**3,5 mm.** Excessivo.",
-   "C": "**5,5 mm.** Excessivo.",
-   "D": "**7,5 mm.** Excessivo."
+   "B": "**3,5 mm** superestima o afastamento fisiológico; um alargamento dessa ordem sugeriria lesão da sindesmose.",
+   "C": "**5,5 mm** é muito acima do movimento normal da fíbula e indicaria diástase tibiofibular importante.",
+   "D": "**7,5 mm** seria uma ruptura franca da sindesmose, incompatível com o movimento fisiológico."
   },
   "referencias": [
-   "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., pg. 2155."
+   "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., pg. 2155.",
+   "Ramsey PL, Hamilton W. Changes in tibiotalar area of contact caused by lateral talar shift. J Bone Joint Surg Am. 1976;58(3):356-357."
   ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "A",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pe-tornozelo-0348": {
