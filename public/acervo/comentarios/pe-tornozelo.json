@@ -3688,17 +3688,18 @@
  "pe-tornozelo-0349": {
   "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "B",
-  "conceito": "**Myerson.** A: total. B1: parcial medial. B2: parcial lateral. C1: divergente parcial. C2: divergente total.\n\n**Na prova:** B2 é parcial e lateral.",
-  "correta": "**B2.** É a classificação.",
+  "conceito": "**Lesões da articulação de Lisfranc (tarsometatársica).** A articulação de Lisfranc une os cuneiformes e o cuboide às bases dos metatarsos. Sua estabilidade depende do encaixe da base do **segundo metatarso** num recesso entre os cuneiformes (como uma pedra angular) e do **ligamento de Lisfranc**, que vai do cuneiforme medial à base do segundo metatarso. Não há ligamento entre as bases do primeiro e do segundo metatarsos.\n\n**Mecanismos.** Trauma direto (esmagamento) ou indireto (carga axial com o pé em flexão plantar, torção do antepé). Até 20% passam despercebidas no primeiro atendimento.\n\n**Sinais.** Edema do mediopé, equimose plantar (sinal muito sugestivo), dor ao estresse em pronação e abdução do antepé. Radiografias **com carga**: diástase entre o primeiro e o segundo metatarsos, perda do alinhamento da borda medial do segundo metatarso com o cuneiforme médio, sinal da \"mancha\" (fleck sign, avulsão do ligamento de Lisfranc).\n\n**Classificação de Myerson (modificação de Quenu e Küss e de Hardcastle).**\n\n| Tipo | Descrição |\n|---|---|\n| A | Incongruência **total**, com todos os metatarsos desviados na mesma direção (homolateral) |\n| B1 | Incongruência **parcial medial** (primeiro raio desviado medialmente) |\n| **B2** | Incongruência **parcial lateral** (um ou mais dos raios laterais desviados lateralmente) |\n| C1 | **Divergente parcial** (primeiro raio medial, alguns laterais desviados lateralmente) |\n| C2 | Divergente total |\n\n**Tratamento.** Lesões estáveis e sem desvio: imobilização sem carga. Qualquer instabilidade ou desvio acima de 2 mm: **redução anatômica** e fixação (parafusos transarticulares, placas em ponte dorsais); em lesões puramente ligamentares, a **artrodese primária** das colunas medial e média é uma opção com bons resultados.\n\n> Myerson B2: incongruência parcial com desvio lateral.",
+  "correta": "**B: B2 (resposta pela bibliografia).** Na classificação de Myerson, o grupo B corresponde à incongruência parcial; o subtipo B1 é o desvio medial (do primeiro raio) e o B2, o desvio lateral de um ou mais metatarsos laterais. A lesão descrita, parcial e com desvio lateral, é B2.",
   "incorretas": {
-   "A": "**B1.** Medial.",
-   "C": "**C1.** Divergente.",
-   "D": "**C2.** Divergente."
+   "A": "**B1** também é incongruência parcial, mas com desvio **medial**, geralmente do primeiro raio isoladamente.",
+   "C": "**C1** é o padrão **divergente parcial**: o primeiro metatarso vai para medial e alguns dos laterais vão para lateral.",
+   "D": "**C2** é o padrão divergente **total**, com o primeiro metatarso para medial e todos os laterais para lateral."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10 ª ed. pg. 4265."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10 ª ed. pg. 4265.",
+   "Myerson MS, Fisher RT, Burgess AR, Kenzora JE. Fracture dislocations of the tarsometatarsal joints: end results correlated with pathology and treatment. Foot Ankle. 1986;6(5):225-242."
   ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pe-tornozelo-0350": {
