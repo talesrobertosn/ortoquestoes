@@ -4989,5 +4989,96 @@
   ],
   "geradoEm": "2026-10-05",
   "conferido": false
+ },
+ "coluna-0463": {
+  "conceito": "**Classificação de Anderson e D'Alonzo das fraturas do processo odontoide.** Divide as fraturas do dente do áxis (C2) pela altura do traço, o que define a estabilidade, o risco de pseudoartrose e o tratamento.\n\n**Anatomia útil.** O dente se projeta para cima a partir do corpo de C2 e se articula com o arco anterior do atlas. Ele é preso pelo **ligamento transverso** (que o mantém contra o atlas, por trás), pelos **ligamentos alares** (da ponta do dente aos côndilos occipitais) e pelo **ligamento apical** (da ponta ao forame magno).\n\n| Tipo | Localização do traço | Comportamento |\n|---|---|---|\n| I | Ponta do dente, acima do ligamento transverso | Avulsão pelos alares; estável |\n| II | Base do dente, junção com o corpo de C2 | Instável; alta pseudoartrose |\n| III | Estende-se ao corpo esponjoso de C2 | Boa consolidação |\n\n**Tipo I.** Rara, é uma avulsão da ponta pelo ligamento alar. Geralmente estável, tratada com colar. Atenção: pode marcar uma lesão occipitocervical associada.\n\n**Tipo II.** A mais comum, especialmente em idosos. O traço passa na cintura do dente, uma área de pequena superfície óssea, com irrigação limítrofe e sujeita a grande instabilidade. Por isso consolida mal.\n\n**Tipo III.** O traço desce para o corpo de C2, com grande área de osso esponjoso bem vascularizado. Consolida bem com imobilização na maioria dos casos.\n\n**Modificação de Grauer.** Subdivide o tipo II em IIA (sem desvio), IIB (traço de anterossuperior para posteroinferior, favorável ao parafuso anterior) e IIC (traço oposto ou cominutivo, desfavorável ao parafuso anterior).\n\n> Tipo I = ponta (acima do transverso). Tipo II = base. Tipo III = corpo de C2.",
+  "correta": "**B: Errado.** A descrição do item é a da fratura do **tipo I**, que ocorre na ponta do dente, acima do ligamento transverso, por avulsão pelos ligamentos alares (ou apical). A fratura do **tipo II** ocorre na base do dente, na junção com o corpo de C2, abaixo do nível do ligamento transverso, e não é uma avulsão: resulta de forças de flexão ou extensão que quebram a cintura do dente. A troca entre os tipos é a armadilha do item.",
+  "incorretas": {
+   "A": "**Certo seria aceitar como tipo II uma descrição que pertence ao tipo I.** Quem marca certo confunde a altura do traço. Uma forma de memorizar: a classificação desce do topo para o corpo. Tipo I no topo (avulsão ligamentar acima do transverso), tipo II na base (cintura do dente), tipo III já dentro do corpo de C2."
+  },
+  "referencias": [
+   "Anderson LD, D'Alonzo RT. Fractures of the odontoid process of the axis. J Bone Joint Surg Am. 1974;56(8):1663-1674.",
+   "Grauer JN, Shafi B, Hilibrand AS, et al. Proposal of a modified, treatment-oriented classification of odontoid fractures. Spine J. 2005;5(2):123-129."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "coluna-0464": {
+  "conceito": "**Estabilidade e tratamento das fraturas do odontoide.** A altura do traço na classificação de Anderson e D'Alonzo determina o comportamento biológico e mecânico da fratura.\n\n**Por que o tipo II é o mais problemático.**\n- **Pequena área de contato**: a cintura do dente é estreita, com pouco osso esponjoso para consolidar.\n- **Irrigação limítrofe**: o dente recebe sangue pela ponta e pela base; o traço na base fica numa zona de transição vascular.\n- **Instabilidade**: o fragmento superior se move junto com o atlas e o crânio, enquanto o corpo de C2 fica embaixo; a imobilização externa controla mal esse movimento.\n\n**Por que o tipo III consolida melhor.** O traço passa pelo corpo esponjoso de C2, com grande superfície e boa irrigação. A maioria consolida com imobilização (colar rígido ou halo), embora fraturas muito desviadas possam exigir cirurgia.\n\n**Tratamento do tipo II.**\n- **Conservador**: colar rígido ou halo-colete, com taxas de pseudoartrose elevadas, especialmente em idosos e em fraturas desviadas.\n- **Cirúrgico**: parafuso anterior do odontoide (osteossíntese, preserva a rotação C1-C2) quando o traço é favorável e o osso é bom, ou artrodese posterior C1-C2 (técnicas de Harms ou Magerl), mais usada em idosos, fraturas cominutivas ou de traço desfavorável.\n\n| Tipo | Estabilidade | Consolidação |\n|---|---|---|\n| I | Estável | Boa |\n| II | Instável | Ruim |\n| III | Relativamente estável | Boa |\n\n> O tipo II é o mais instável e o que mais evolui para pseudoartrose.",
+  "correta": "**B: Errado.** A primeira parte do item está invertida: as fraturas do tipo II são **menos** estáveis que as do tipo III. O tipo II ocorre na base estreita e mal vascularizada do dente, com instabilidade e alta taxa de pseudoartrose; o tipo III atravessa o corpo esponjoso de C2 e consolida bem. A segunda parte (tratamento conservador ou cirúrgico) é verdadeira para o tipo II, mas não salva o item, porque a comparação de estabilidade está errada.",
+  "incorretas": {
+   "A": "**Marcar certo é cair na armadilha de um item meio verdadeiro.** O tipo II pode, sim, ser tratado de forma conservadora ou cirúrgica, e essa parte final induz à concordância. Porém, a afirmação central (tipo II mais estável que o tipo III) é falsa, e em itens de certo ou errado uma parte falsa torna o item todo errado."
+  },
+  "referencias": [
+   "Anderson LD, D'Alonzo RT. Fractures of the odontoid process of the axis. J Bone Joint Surg Am. 1974;56(8):1663-1674.",
+   "Tornetta P III, Ricci WM, Ostrum RF, McQueen MM, McKee MD, Court-Brown CM, eds. Rockwood and Green's Fractures in Adults. Wolters Kluwer. Lesões da coluna cervical superior."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "coluna-0465": {
+  "conceito": "**Pseudoartrose na fratura do odontoide tipo II.** É a complicação característica dessa fratura. Com tratamento conservador, a literatura relata taxas muito variáveis, em geral citadas entre cerca de 26% e 80%, conforme a idade, o desvio e o tipo de imobilização usados nas séries.\n\n**Explicações para a alta taxa de pseudoartrose.**\n- **Instabilidade**: o fragmento do dente acompanha os movimentos do atlas e do crânio, e nem o halo controla completamente o micromovimento no foco. É a explicação mais enfatizada nos textos clássicos.\n- **Pequena área de contato ósseo** na cintura do dente.\n- **Irrigação limítrofe** na base do dente, entre a vascularização apical e a do corpo de C2.\n- **Interposição de tecidos** e distração no foco.\n\n**Pseudoartrose fibrosa estável.** Em idosos de baixa demanda, uma pseudoartrose sem instabilidade e sem sintomas neurológicos pode ser aceitável. Em pacientes ativos ou com instabilidade, a cirurgia (parafuso anterior ou artrodese C1-C2) é preferida.\n\n**Fatores que aumentam o risco.** Idade acima de 40 a 50 anos, desvio inicial acima de 4 a 6 mm, angulação acima de 10 graus, desvio posterior, cominuição e retardo no diagnóstico ou no tratamento.\n\n> Tipo II tratado sem cirurgia: pseudoartrose frequente, atribuída sobretudo à instabilidade do foco.",
+  "correta": "**A: Certo.** As taxas de pseudoartrose do tipo II tratado de forma conservadora são altas e muito variáveis entre as séries, com números citados entre cerca de 26% e 80%. Os textos de referência atribuem esse risco principalmente à instabilidade da fratura, que mantém micromovimento no foco mesmo com imobilização externa. A pequena superfície de contato e a irrigação limítrofe da base do dente também contribuem, mas não tornam o item falso, porque a instabilidade é de fato um fator causal reconhecido.",
+  "incorretas": {
+   "B": "**Marcar errado seria considerar a explicação incompleta como falsa.** Alguns candidatos lembram apenas da irrigação limítrofe do dente e julgam que a instabilidade não é a causa. Na verdade, as duas coexistem, e a instabilidade é o fator mais citado. A faixa de 26% a 80% também corresponde à variação relatada na literatura."
+  },
+  "referencias": [
+   "Tornetta P III, Ricci WM, Ostrum RF, McQueen MM, McKee MD, Court-Brown CM, eds. Rockwood and Green's Fractures in Adults. Wolters Kluwer. Lesões da coluna cervical superior.",
+   "Anderson LD, D'Alonzo RT. Fractures of the odontoid process of the axis. J Bone Joint Surg Am. 1974;56(8):1663-1674."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "coluna-0466": {
+  "conceito": "**Fatores de risco para pseudoartrose na fratura do odontoide tipo II.** Reconhecê-los é o que orienta a indicação cirúrgica: quanto mais fatores, menor a chance de consolidação com imobilização.\n\n**Fatores da fratura.**\n- **Desvio inicial** maior que 4 a 6 mm (as séries usam cortes entre 4 e 6 mm; acima disso o risco aumenta muito).\n- **Angulação** maior que 10 graus.\n- **Desvio posterior** (pior que o anterior em várias séries).\n- **Cominuição** e traço desfavorável.\n\n**Fatores do paciente e do tratamento.**\n- **Idade** acima de 40 a 50 anos (pior consolidação, osso osteoporótico).\n- **Retardo no diagnóstico**: fraturas descobertas tardiamente já têm reabsorção nas bordas e tecido fibroso no foco.\n- **Falha em manter a redução** durante a imobilização.\n- Tabagismo e comorbidades.\n\n| Fator | Limite de risco |\n|---|---|\n| Desvio | Acima de 4 a 6 mm |\n| Angulação | Acima de 10 graus |\n| Idade | Acima de 40 a 50 anos |\n| Diagnóstico | Tardio |\n\n**Aplicação prática.** Um paciente jovem, com fratura sem desvio, pode ser tratado com halo ou colar. Um paciente com desvio importante ou diagnóstico tardio tem indicação mais forte de fixação cirúrgica.\n\n> Desvio, angulação, idade e atraso no diagnóstico: os quatro pilares do risco de pseudoartrose no tipo II.",
+  "correta": "**A: Certo.** O item lista três fatores de risco reconhecidos para pseudoartrose do odontoide tipo II: desvio inicial acima de 4 a 6 mm, angulação acima de 10 graus e retardo no diagnóstico. Os limites numéricos citados correspondem aos usados nas principais séries e nos livros de referência. Idade avançada e desvio posterior completam a lista, mas sua ausência no item não o torna errado.",
+  "incorretas": {
+   "B": "**Marcar errado pressupõe que algum dos fatores não seja de risco ou que os números estejam trocados.** Os três fatores citados são clássicos. A variação de 4 a 6 mm reflete diferenças entre estudos, não um erro. Como o item não afirma que essa lista é completa, a ausência da idade não o invalida."
+  },
+  "referencias": [
+   "Tornetta P III, Ricci WM, Ostrum RF, McQueen MM, McKee MD, Court-Brown CM, eds. Rockwood and Green's Fractures in Adults. Wolters Kluwer. Lesões da coluna cervical superior.",
+   "Herkowitz HN et al. Rothman-Simeone The Spine. Elsevier. Fraturas do áxis."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "coluna-0467": {
+  "conceito": "**Fraturas cervicais no idoso.** O padrão de lesão da coluna cervical muda com a idade. No adulto jovem, traumas de alta energia predominam e as lesões se concentram na coluna cervical baixa (C5 a C7). No idoso, traumas de baixa energia, como quedas da própria altura, causam lesões principalmente na **coluna cervical alta**.\n\n**Por que C2 no idoso.**\n- A espondilose torna a coluna cervical baixa rígida, e o movimento se concentra na junção craniocervical.\n- A osteoporose enfraquece a base do dente.\n- A queda com impacto na face ou na fronte gera hiperextensão ou flexão que se transmite ao dente.\n\n**Epidemiologia.** A fratura do processo odontoide é a fratura cervical mais comum em pacientes acima de 70 anos, e o tipo II é o padrão mais frequente nessa população.\n\n**Particularidades do tratamento no idoso.**\n- O halo-colete é mal tolerado e se associa a complicações respiratórias, disfagia e mortalidade elevada.\n- Colar rígido com aceitação de pseudoartrose fibrosa estável é opção em pacientes frágeis.\n- A artrodese posterior C1-C2 mostra melhores taxas de união em idosos com condições clínicas para cirurgia.\n- A mortalidade em um ano após fratura do odontoide no idoso é elevada, semelhante à de fraturas do quadril.\n\n> Idoso, queda da própria altura, dor cervical: pense em fratura do odontoide tipo II.",
+  "correta": "**A: Certo.** Na população acima de 70 anos, a fratura do processo odontoide é a fratura cervical mais comum. A combinação de osteoporose, rigidez da coluna cervical subaxial por espondilose e quedas da própria altura concentra as forças na junção craniocervical. O caso da questão, um paciente de 72 anos com queda e fratura tipo II, ilustra exatamente esse padrão.",
+  "incorretas": {
+   "B": "**Marcar errado reflete o raciocínio do adulto jovem.** Na população geral, as fraturas da coluna cervical baixa (C5 a C7) são mais frequentes, mas o item se refere especificamente a pacientes com mais de 70 anos, nos quais as fraturas de C2, em especial do odontoide, predominam."
+  },
+  "referencias": [
+   "Tornetta P III, Ricci WM, Ostrum RF, McQueen MM, McKee MD, Court-Brown CM, eds. Rockwood and Green's Fractures in Adults. Wolters Kluwer. Lesões da coluna cervical superior.",
+   "Herkowitz HN et al. Rothman-Simeone The Spine. Elsevier. Fraturas do áxis."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "coluna-0468": {
+  "conceito": "**Lesão neurológica nas fraturas do odontoide.** Ao contrário do que se poderia imaginar pela gravidade da região, a maioria dos pacientes que chega ao hospital com fratura do odontoide está neurologicamente intacta.\n\n**Por que tão pouco déficit.** O canal vertebral é amplo no nível de C1 e C2. A **regra dos terços de Steel** descreve o espaço dentro do anel do atlas: um terço é ocupado pelo dente, um terço pela medula e um terço é espaço livre. Essa folga permite algum desvio sem compressão medular.\n\n**Frequência.** O envolvimento neurológico é relatado entre cerca de 2% e 27% nas séries, variando conforme a população estudada e o grau de desvio.\n\n**Gravidade quando presente.** A lesão da medula cervical alta compromete o centro respiratório e o nervo frênico (C3 a C5), podendo causar tetraplegia com insuficiência respiratória e morte imediata. Muitos óbitos ocorrem no local do trauma e não entram nas séries hospitalares, o que contribui para a aparente baixa incidência.\n\n**Apresentações possíveis.**\n- Dor cervical alta e sensação de instabilidade (o paciente segura a cabeça com as mãos).\n- Neuralgia occipital (nervo occipital maior, C2).\n- Mielopatia tardia por pseudoartrose instável.\n- Síndromes medulares incompletas, como a síndrome cruzada.\n\n> Raramente há déficit, mas quando existe pode ser fatal.",
+  "correta": "**A: Certo.** As séries relatam envolvimento neurológico entre cerca de 2% e 27% nas fraturas do odontoide. A baixa frequência se explica pelo canal amplo em C1 e C2 (regra dos terços de Steel), mas, quando ocorre, a lesão medular alta pode ser grave ou fatal, pela proximidade com o controle respiratório. Além disso, muitos pacientes com lesão grave morrem antes de chegar ao hospital, o que reforça o caráter de alta gravidade descrito no item.",
+  "incorretas": {
+   "B": "**Marcar errado seria supor que o déficit neurológico é frequente ou que é sempre leve.** Nenhuma das duas ideias é correta: o déficit é pouco comum nos pacientes que chegam vivos, e quando presente envolve a medula cervical alta, com risco de tetraplegia, insuficiência respiratória e morte."
+  },
+  "referencias": [
+   "Tornetta P III, Ricci WM, Ostrum RF, McQueen MM, McKee MD, Court-Brown CM, eds. Rockwood and Green's Fractures in Adults. Wolters Kluwer. Lesões da coluna cervical superior.",
+   "Herkowitz HN et al. Rothman-Simeone The Spine. Elsevier. Fraturas do áxis."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "coluna-0469": {
+  "conceito": "**Teste de Adams e lado da curva.** Na escoliose estrutural, as vértebras giram em direção à **convexidade** da curva. Na coluna torácica, as costelas acompanham a rotação: do lado convexo elas são empurradas para trás e ficam salientes, formando a **gibosidade costal**; do lado côncavo, elas vão para frente.\n\n**Consequência prática.** No teste de Adams (flexão anterior do tronco, com joelhos estendidos e braços pendentes), a gibosidade aparece **do mesmo lado da convexidade**. Gibosidade torácica à direita indica curva torácica de convexidade direita.\n\n**Convenção de nome.** As curvas são nomeadas pelo lado da convexidade. Curva torácica direita = convexa para a direita.\n\n**O padrão mais comum.** Na escoliose idiopática do adolescente, a curva torácica principal é tipicamente **direita**. Uma curva torácica esquerda é atípica e levanta suspeita de causa neurológica (siringomielia, Chiari, tumor medular), indicando ressonância.\n\n**Medindo a gibosidade.** Pode-se usar o escoliômetro (inclinômetro): rotação do tronco acima de 5 a 7 graus justifica radiografia. A altura da gibosidade em centímetros também é registrada no exame físico.\n\n| Achado no Adams | Interpretação |\n|---|---|\n| Gibosidade torácica direita | Curva torácica direita |\n| Gibosidade lombar esquerda | Curva lombar esquerda |\n| Gibosidade torácica esquerda | Atípica, investigar |\n\n> A gibosidade fica do lado da convexidade.",
+  "correta": "**B: Errado.** A gibosidade torácica à direita no teste de Adams indica curva torácica principal de convexidade **direita**, não esquerda. Isso acontece porque a rotação vertebral leva as costelas do lado convexo para trás, criando a saliência. Além disso, a curva torácica direita é o padrão típico da escoliose idiopática do adolescente, compatível com o caso descrito.",
+  "incorretas": {
+   "A": "**Marcar certo seria acreditar que a gibosidade aparece do lado côncavo.** É uma confusão frequente, porque o ombro e o talhe podem parecer mais marcados do lado oposto. Lembre-se da rotação: o corpo vertebral gira para a convexidade e leva as costelas desse lado para trás. Uma curva torácica esquerda, além de não corresponder ao achado, seria atípica e exigiria investigação neurológica."
+  },
+  "referencias": [
+   "Weinstein SL, Dolan LA, Cheng JC, Danielsson A, Morcuende JA. Adolescent idiopathic scoliosis. Lancet. 2008;371(9623):1527-1537.",
+   "Herkowitz HN et al. Rothman-Simeone The Spine. Elsevier. Escoliose idiopática do adolescente."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  }
 }
