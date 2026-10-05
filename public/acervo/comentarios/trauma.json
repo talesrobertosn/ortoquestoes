@@ -764,17 +764,18 @@
   "conferido": false
  },
  "trauma-0065": {
+  "conceito": "**A fratura por estresse.** É uma fratura que surge de **cargas repetidas** num osso normal (fratura por **fadiga**), quando o osso é danificado mais rápido do que consegue se reparar. É comum em **corredores**, militares em treinamento, bailarinos e atletas que aumentam o volume de treino rapidamente.\n\n**Alto risco x baixo risco.** A classificação mais útil para o tratamento separa as fraturas pelo **risco de complicações** (progressão para fratura completa, desvio, pseudoartrose). Isso depende sobretudo de duas coisas:\n- se a fratura está no lado de **tensão** do osso (onde a carga tende a abrir o traço) ou de **compressão**;\n- se a região tem **boa irrigação**.\n\n| Alto risco | Baixo risco |\n|---|---|\n| **Colo do fêmur** (lado de **tensão**, superior) | Colo do fêmur (lado de compressão, inferior) |\n| **Patela** | **Costelas** |\n| **Cortical anterior da tíbia** (a \"linha temida\", dreaded black line) | Diáfise posteromedial da tíbia |\n| Maléolo medial | Fíbula |\n| **Tálus** e **navicular** | **Diáfise da ulna** |\n| **Base do quinto metatarso** (diáfise proximal, zona III) | Diáfise do fêmur |\n| **Sesamoides** do hálux | Metatarsos 2 a 4 (diáfise) |\n\n**Por que a patela e não a costela.** A **patela** é um osso que recebe grande **tração** do aparelho extensor; uma fratura por estresse pode **desviar** e romper o mecanismo extensor. As **costelas** (como nos remadores e golfistas) consolidam bem com repouso relativo.\n\n**O tratamento.**\n- **Baixo risco**: **repouso relativo**, modificação da atividade e retorno gradual. Raramente exigem imobilização.\n- **Alto risco**: **sem carga** ou imobilização rigorosa e, muitas vezes, **fixação cirúrgica** (por exemplo, parafuso no colo do fêmur no lado de tensão, haste na tíbia anterior, parafuso no quinto metatarso do atleta).\n- Em todas: investigar os fatores de risco (erros de treino, calçado, alinhamento, **baixa disponibilidade de energia** na mulher atleta, vitamina D).",
+  "correta": "**Correta: A (a patela e a costela).** Entre as fraturas por estresse, a **patela** é um sítio de **alto risco** (sob tração do aparelho extensor, pode desviar), e a **costela** é um sítio de **baixo risco**, que consolida com repouso relativo.",
   "incorretas": {
-   "B": "A patela está certa, mas a base do quinto metatarso também é de alto risco.",
-   "C": "A costela e a diáfise da ulna são ambas de baixo risco.",
-   "D": "A ulna é de baixo risco, e a base do quinto metatarso, de alto."
+   "B": "A patela é de alto risco, mas a **base do quinto metatarso** (diáfise proximal) também é de **alto risco**, e não de baixo risco.",
+   "C": "A **costela** é de **baixo** risco, e não de alto risco. A diáfise da ulna também é de baixo risco.",
+   "D": "A **diáfise da ulna** é de **baixo** risco, e a **base do quinto metatarso** é de **alto** risco: a ordem está invertida."
   },
-  "conceito": "As **fraturas por estresse** se dividem pelo risco de evoluir mal:\n\n**baixo risco**: ficam no lado de **compressão** do osso ou têm boa irrigação; consolidam com **modificação da atividade** e retorno gradual; exemplos: **costela**, **diáfise da ulna**, face posteromedial da tíbia, diáfises dos metatarsos, ramos do púbis;\n\n**alto risco**: ficam no lado de **tensão** ou em áreas de **irrigação pobre**; tendem a não consolidar, completar a fratura ou desviar; exemplos: **patela**, colo do fêmur (lado de tensão, superolateral), cortical **anterior** da tíbia, maléolo medial, **tálus**, **navicular**, **base do quinto metatarso** (zona de Jones), sesamoides.\n\n**A conduta**:\n\n**baixo risco**: reduzir a carga e voltar aos poucos;\n\n**alto risco**: descarga rigorosa e, com frequência, **fixação cirúrgica**.\n\n**Na prova**: são de alto e baixo risco, respectivamente, a **patela** e a **costela**.",
-  "correta": "A patela fica no lado de tensão e é de alto risco; a costela consolida bem e é de baixo risco.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 23"
+   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 23",
+   "Boden BP, Osbahr DC, Jimenez C. Low-risk stress fractures. Am J Sports Med. 2001;29(1):100-111."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0066": {
@@ -1945,14 +1946,18 @@
   "conferido": false
  },
  "trauma-0159": {
+  "conceito": "**A clavícula flutuante.** A clavícula é o único elo ósseo entre o membro superior e o tronco, presa nas duas pontas: pela articulação **esternoclavicular** (medial) e pela **acromioclavicular** (lateral). A luxação **das duas articulações** ao mesmo tempo é rara e é chamada de **clavícula flutuante** ou luxação **bipolar** da clavícula. O mecanismo é um trauma de **alta energia** sobre o ombro, com compressão e rotação.\n\n**A luxação esternoclavicular: anterior x posterior.**\n\n| Tipo | Frequência | Particularidades |\n|---|---|---|\n| **Anterior** | A **mais comum** (cerca de 9 em cada 10) | Proeminência visível medial; geralmente benigna; muitas vezes instável após a redução, mas bem tolerada |\n| **Posterior** | Rara | **Perigosa**: a extremidade medial da clavícula vai para trás do esterno, em direção à **traqueia**, ao **esôfago** e aos **grandes vasos**; disfagia, dispneia, rouquidão, congestão venosa |\n\n**Na clavícula flutuante.** Como em geral, a luxação esternoclavicular associada à acromioclavicular é **mais frequentemente anterior**. A clavícula inteira fica solta nas duas extremidades e se desloca com o ombro.\n\n**O diagnóstico por imagem.**\n- A radiografia simples é difícil de interpretar. A incidência de **Serendipity** (feixe inclinado 40° em direção cefálica) ajuda.\n- A **tomografia** é o exame de escolha para a esternoclavicular, mostrando a direção da luxação e a relação com as estruturas do mediastino.\n\n**O tratamento.**\n- **Luxação esternoclavicular anterior**: tentativa de redução fechada; se instável, geralmente aceita-se e trata-se com tipoia (bom resultado funcional).\n- **Luxação esternoclavicular posterior**: **redução urgente** (fechada, com tração do braço em abdução e extensão e uma pinça na clavícula), com um **cirurgião torácico** de sobreaviso. Se falhar, redução aberta e estabilização.\n- **Clavícula flutuante**: o tratamento depende da estabilidade e da demanda. Muitas vezes, estabiliza-se a acromioclavicular (a mais incapacitante) e trata-se a esternoclavicular anterior conservadoramente.\n\n**Na criança e no adolescente.** A fise **medial** da clavícula é a **última** do corpo a fechar (por volta dos 23 a 25 anos). Muitas \"luxações esternoclaviculares\" no jovem são, na verdade, **descolamentos epifisários** (Salter-Harris I ou II), que remodelam bem.",
+  "correta": "**Correta: C (anterior).** A luxação esternoclavicular combinada à luxação acromioclavicular (clavícula flutuante) é, mais frequentemente, **anterior**, como a maioria das luxações esternoclaviculares. A posterior é rara, mas perigosa, pela proximidade da traqueia, do esôfago e dos grandes vasos.",
   "incorretas": {
-   "A": "A luxação inferior é rara.",
-   "B": "A luxação superior é rara.",
-   "D": "A luxação posterior é menos frequente, embora mais grave."
+   "A": "A luxação esternoclavicular **inferior** é muito rara e não é o padrão da clavícula flutuante.",
+   "B": "A luxação esternoclavicular **superior** é rara. O padrão mais comum é o anterior.",
+   "D": "A luxação **posterior** é rara e grave, mas não é a mais frequente, nem na luxação isolada nem na combinada."
   },
-  "conceito": "A **luxação bipolar da clavícula** (clavícula flutuante) é a luxação **simultânea** das articulações **esternoclavicular** e **acromioclavicular**. É rara e vem de trauma de **alta energia**.\n\n**As direções mais comuns**: **esternoclavicular anterior** com **acromioclavicular posterior**. Também na luxação esternoclavicular isolada, a forma **anterior** é muito mais frequente que a posterior.\n\n**A luxação esternoclavicular isolada**:\n\n**anterior**: a mais comum; benigna, muitas vezes tratada sem cirurgia, mesmo que fique uma saliência;\n\n**posterior**: menos frequente, mas **grave**: a clavícula comprime **traqueia**, **esôfago** e **grandes vasos**; pede **TC** e redução, com cirurgião torácico disponível.\n\n**O tratamento da bipolar**: em jovens ativos, estabilizar a **acromioclavicular** (e a esternoclavicular, se instável); em baixa demanda, conservador.\n\n**Na prova**: a luxação esternoclavicular associada à acromioclavicular é mais frequentemente **anterior**.",
-  "correta": "Na clavícula flutuante, a esternoclavicular costuma luxar para a frente, a direção mais frequente.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)",
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0160": {
@@ -2362,14 +2367,18 @@
   "conferido": false
  },
  "trauma-0197": {
+  "conceito": "**A luxação anterior do quadril.** É **menos comum** que a posterior (cerca de 10% das luxações traumáticas do quadril). O mecanismo é a **abdução** e a **rotação externa** forçadas do quadril, como num acidente de moto ou numa queda com as pernas abertas. A cabeça femoral sai pela frente, rompendo a cápsula anterior.\n\n**Os tipos.**\n- **Obturatória** (inferior): com o quadril **fletido**; a cabeça vai para a região do forame obturado. O membro fica em flexão, abdução e rotação externa.\n- **Púbica** ou ilíaca (superior): com o quadril **estendido**; a cabeça vai para a região do púbis.\n\n**A lesão associada mais frequente: a fratura por impacção da cabeça.** Ao sair do acetábulo, a cabeça femoral **bate** contra a borda anteroinferior do acetábulo (ou o ramo púbico) e sofre uma **impacção** (um afundamento) na sua superfície, geralmente **superolateral** ou posterossuperior. É uma lesão **condral e subcondral**, semelhante à lesão de Hill-Sachs do ombro.\n\n**Por que ela piora o prognóstico.**\n- A impacção esmaga a **cartilagem** e o osso subcondral da cabeça, criando uma superfície irregular.\n- Associa-se a maior risco de **necrose avascular** e de **artrose pós-traumática**.\n- Impacções **profundas** (mais de cerca de 4 mm) têm pior resultado.\n\n**Outras lesões associadas.** Fraturas da cabeça (por cisalhamento), do acetábulo anterior e lesões do **nervo e dos vasos femorais** (raras).\n\n**O tratamento.**\n1. **Redução urgente** (idealmente em menos de **6 horas**), sob sedação ou anestesia, com tração longitudinal e manobras específicas. Quanto mais tempo luxado, maior o risco de necrose.\n2. **Tomografia** depois da redução para avaliar a cabeça, o acetábulo e fragmentos intra-articulares.\n3. Fragmentos interpostos ou redução não concêntrica: tratamento cirúrgico.\n4. Seguimento por pelo menos 2 anos (necrose avascular, artrose, ossificação heterotópica).",
+  "correta": "**Correta: C (impacção).** Na luxação anterior do quadril, a lesão associada mais frequente é a **fratura por impacção** da cabeça femoral, que bate na borda anteroinferior do acetábulo ao sair. Ela esmaga a cartilagem e o osso subcondral e se associa a maior risco de necrose e artrose.",
   "incorretas": {
-   "A": "A fratura por torção não é o padrão da luxação anterior.",
-   "B": "A avulsão do ligamento redondo tem pouca relevância.",
-   "D": "O cisalhamento é típico da luxação posterior (Pipkin)."
+   "A": "A fratura por **torção** não é o padrão típico associado à luxação anterior do quadril.",
+   "B": "A fratura por **avulsão** (por exemplo, do ligamento redondo) pode ocorrer, mas não é a lesão mais frequente nem a de maior impacto no prognóstico.",
+   "D": "A fratura por **cisalhamento** da cabeça (tipo Pipkin) é mais típica da luxação **posterior**, em que a borda posterior do acetábulo cisalha a cabeça."
   },
-  "conceito": "Na **luxação anterior do quadril**, a cabeça do fêmur bate contra a borda anterior do acetábulo ou contra o ramo do púbis e sofre **impacção** (indentação): um afundamento da superfície, em geral **superolateral**.\n\n**Por que é a lesão mais importante**: é a lesão da cabeça **mais frequente** na luxação anterior e a que mais **piora o prognóstico**. A cartilagem e o osso subcondral esmagados predispõem à **necrose** e à **artrose pós-traumática**, sobretudo com indentação de mais de **4 mm** de profundidade.\n\n**O contraste com a luxação posterior**: nela, a cabeça sofre **cisalhamento** pela borda posterior, com as fraturas de **Pipkin**.\n\n**A avulsão**: do ligamento redondo, na fóvea, tem pouca relevância.\n\n**A conduta**: redução **urgente**, sob anestesia, e TC ou RM depois, para medir a impacção.\n\n**Na prova**: na luxação anterior, a lesão mais frequente e com mais necrose é a fratura por **impacção**.",
-  "correta": "A cabeça bate na borda anterior e afunda; a impacção é a lesão mais frequente e a que mais leva à necrose.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)",
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-0198": {
@@ -9809,17 +9818,18 @@
   "conferido": false
  },
  "trauma-1083": {
+  "conceito": "**A haste intramedular na tíbia proximal.** As fraturas do **terço proximal** da diáfise da tíbia são as mais difíceis de tratar com haste. A haste \"nada\" no canal largo da metáfise e não guia o alinhamento como na diáfise, e os músculos tendem a desviar os fragmentos.\n\n**As deformidades típicas: valgo e antecurvato (procurvato).**\n- **Valgo**: pela tração do **trato iliotibial** e dos músculos do compartimento anterior, e pelo **ponto de entrada** medial.\n- **Antecurvato** (ápice anterior): pela tração do **tendão patelar** sobre o fragmento proximal com o joelho fletido, e pelo ponto de entrada posterior ou muito distal.\n\n**O ponto de entrada correto.** Na radiografia **AP**, o ponto de entrada deve ficar **alinhado com o eixo do canal**, ou seja, logo **medial à espinha tibial lateral** (no centro ou um pouco lateral). No **perfil**, logo **à frente** da borda anterior do platô, na transição com a cortical anterior.\n\n**Por que a entrada medial causa valgo.** Se a haste entra **medial** demais, ela é direcionada obliquamente para **lateral**. Ao descer, ela empurra o fragmento **distal** para o lado **lateral** e inclina o fragmento proximal: o resultado é a deformidade em **valgo**. Pelo mesmo raciocínio, uma entrada **posterior** ou muito baixa causa **antecurvato**.\n\n**Os truques para acertar o alinhamento.**\n- Ponto de entrada **lateral** (logo medial à espinha lateral) e alto.\n- **Técnica semiestendida** ou **suprapatelar**: com o joelho em pouca flexão, o tendão patelar puxa menos o fragmento proximal.\n- **Parafusos de bloqueio** (de Poller): colocados no fragmento proximal, do lado da **concavidade** da deformidade, estreitando o canal e guiando a haste.\n- **Redução antes da fresagem**, com pinças percutâneas ou uma placa unicortical temporária.\n- Hastes com **parafusos proximais oblíquos** múltiplos.\n\n**As alternativas.** Nas fraturas muito proximais, a **placa** (lateral ou dupla) é uma opção, com vias minimamente invasivas.",
+  "correta": "**Correta: B (valgo).** Na fratura do terço proximal da diáfise da tíbia, um ponto de inserção da haste **excessivamente medial** direciona a haste obliquamente para lateral, empurrando o fragmento distal e produzindo a deformidade em **valgo**. O ponto de entrada correto fica logo medial à espinha tibial lateral.",
   "incorretas": {
-   "A": "O varo resultaria de um ponto de entrada lateral demais.",
-   "C": "A rotação não é a deformidade típica do ponto de entrada medial.",
-   "D": "A rotação medial não é a deformidade causada pelo ponto de entrada."
+   "A": "O **varo** resultaria de um ponto de entrada **lateral** demais, que é raro. A entrada medial causa valgo.",
+   "C": "A **rotação lateral** não é a consequência típica de um ponto de entrada medial; o desvio produzido é angular, no plano coronal.",
+   "D": "A **rotação medial** também não é a deformidade típica do ponto de entrada medial."
   },
-  "conceito": "Na **fratura do terço proximal da diáfise da tíbia**, o fragmento proximal é curto e o canal é largo; a haste intramedular tende a empurrar o fragmento para onde o **ponto de entrada** a dirigir.\n\n**O ponto de entrada excessivamente medial**: a haste entra pelo lado medial e, ao descer, encosta na cortical **lateral** da diáfise; isso empurra o fragmento proximal e abre a fratura em **valgo**.\n\n**As deformidades típicas da tíbia proximal com haste**: **valgo** e **antecurvato** (ápice anterior), favorecidas também pela tração do **ligamento patelar** com o joelho fletido.\n\n**Como evitar**:\n\n**ponto de entrada** um pouco **lateral**, logo medial à espinha tibial lateral no AP;\n\n**técnica suprapatelar**, com o joelho em semiextensão;\n\n**parafusos de bloqueio** (Poller) no lado côncavo;\n\n**placa** auxiliar de redução.\n\n**Na prova**: o ponto de inserção excessivamente medial causa deformidade em **valgo**.",
-  "correta": "A haste entrando medial bate na cortical lateral e abre a fratura proximal em valgo.",
   "referencias": [
-   "Rockwood and Green’s Fractures in adults 8 Ed. 2434 Pg (referência indicada na prova TARO 2018, questão 8)"
+   "Rockwood and Green’s Fractures in adults 8 Ed. 2434 Pg (referência indicada na prova TARO 2018, questão 8)",
+   "Rockwood and Green's Fractures in Adults, 10ª edição (Tornetta et al.)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "trauma-1084": {

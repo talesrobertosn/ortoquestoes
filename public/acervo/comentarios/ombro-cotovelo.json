@@ -2489,14 +2489,18 @@
   "conferido": false
  },
  "ombro-cotovelo-0261": {
-  "conceito": "### Rotadores do antebraço\n| Músculo | Origem | Inserção | Nervo |\n|---|---|---|---|\n| ==supinador== | ==crista do supinador da ulna== + epicôndilo lateral, ligamento anular | rádio proximal | interósseo posterior |\n| bíceps | escápula | tuberosidade do rádio | musculocutâneo |\n| pronador redondo | epicôndilo medial + coronoide | terço médio lateral do rádio | mediano |\n| ==pronador quadrado== | ==quarto distal anterior da ulna== | quarto distal do rádio | interósseo anterior |\n\n### Importância cirúrgica\n- Supinador: referência do NIP (arcada de Frohse).\n- Pronador quadrado: descolado na via de Henry distal; reinserir para cobrir a placa volar.\n\n### Flexor profundo dos dedos\n- Origem ampla na face anterior e medial da ulna e membrana interóssea, não pontual.\n\n> **Na prova:** origens na ulna proximal e distal = ==supinador e pronador quadrado==.",
-  "correta": "**Supinador e pronador quadrado.**\n- Supinador na crista do supinador da ulna proximal.\n- Pronador quadrado no quarto distal da ulna.\n- Ambos cruzam para o rádio.",
+  "conceito": "**A imagem.** Vista **anterior** do rádio e da ulna, com as áreas de **origem** muscular coloridas. As setas apontam duas áreas na **ulna**:\n- a de cima, na face lateral da ulna proximal, logo abaixo da incisura radial: a **crista do supinador**, origem do **supinador**;\n- a de baixo, na face anterior do quarto **distal** da ulna: a origem do **pronador quadrado**.\n\n**Os músculos que nascem no rádio e na ulna (face anterior).**\n\n| Osso | Músculos que nascem ou se inserem |\n|---|---|\n| **Ulna** proximal | **Supinador** (crista do supinador), braquial (inserção no coronoide), cabeça ulnar do pronador redondo e do flexor superficial |\n| **Ulna** diáfise | **Flexor profundo dos dedos** (grande área, dois terços proximais da face anterior e medial) |\n| **Ulna** distal | **Pronador quadrado** (origem) |\n| **Rádio** proximal | Bíceps (tuberosidade), supinador (inserção, envolvendo o rádio) |\n| **Rádio** diáfise | Flexor longo do polegar (face anterior), cabeça radial do flexor superficial, **pronador redondo** (inserção, no meio da face lateral) |\n| **Rádio** distal | **Pronador quadrado** (inserção); braquiorradial (estiloide) |\n\n**O supinador.** Nasce do **epicôndilo lateral**, do ligamento colateral radial, do ligamento anular e da **crista do supinador** da ulna. Envolve o colo e o terço proximal do rádio e se insere na sua face lateral. O **nervo interósseo posterior** atravessa o supinador (pela **arcada de Frohse**), local de compressão (síndrome do interósseo posterior).\n\n**O pronador quadrado.** Nasce no quarto distal da face anterior da **ulna** e se insere no quarto distal da face anterior do **rádio**. É o principal pronador, inervado pelo **interósseo anterior**. Na via de Henry distal, ele é desinserido do rádio para expor as fraturas.\n\n**O pronador redondo.** Nasce do **epicôndilo medial** (cabeça umeral) e do **coronoide** (cabeça ulnar) e se insere no **meio da face lateral do rádio**. O nervo mediano passa entre as suas duas cabeças (local de compressão: síndrome do pronador).",
+  "correta": "**Correta: B (supinador e pronador quadrado).** As setas apontam, na ulna, a **crista do supinador** (origem do **supinador**), logo abaixo da incisura radial, e a face anterior do quarto distal (origem do **pronador quadrado**).",
   "incorretas": {
-   "A": "**Pronador redondo.**\n- Nasce do epicôndilo medial e coronoide.",
-   "C": "**Origem ampla.**\n- O FPD não tem origem pontual.",
-   "D": "**Primeira errada.**\n- A origem proximal é do supinador."
+   "A": "O supinador está certo, mas o **pronador redondo** se insere no **meio do rádio**, e sua cabeça ulnar nasce no coronoide, e não na ulna distal.",
+   "C": "O **flexor profundo dos dedos** nasce numa grande área da diáfise da ulna (dois terços proximais), e não na crista do supinador.",
+   "D": "O pronador quadrado está certo, mas a área proximal indicada é a **crista do supinador**, e não a origem do flexor profundo."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)",
+   "Netter FH. Atlas de Anatomia Humana. 7ª edição. Elsevier; 2019."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "ombro-cotovelo-0262": {
