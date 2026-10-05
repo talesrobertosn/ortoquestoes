@@ -331,16 +331,19 @@
   "formato": "corrido"
  },
  "osteometabolicas-0027": {
-  "conceito": "**A lentidão que engana.** O bacilo da tuberculose se multiplica devagar e não desencadeia a resposta aguda de um germe piogênico. A doença leva **meses a anos** até o sinal que traz o paciente, muitas vezes já a **cifose angular** ou o **déficit neurológico**. O quadro é de doença consumptiva, com **febre baixa vespertina**, **sudorese noturna**, **perda de peso**, mal-estar e dor lombar ou torácica arrastada: **sintomas generalizados com progressão indolente**. Dor local intensa e febre alta de início súbito apontam para infecção **piogênica**.\n\n**O diagnóstico** usa ressonância e biópsia guiada, com histologia, cultura e **PCR** (como o GeneXpert). O tratamento é principalmente clínico, com cirurgia para déficit, deformidade ou instabilidade.\n\n**Na prova:** Pott tem **sintomas sistêmicos e evolução lenta**.",
-  "correta": "**Sintomas generalizados e progressão indolente.** É a assinatura da tuberculose vertebral.",
+  "conceito": "**A lentidão que engana.** O *Mycobacterium tuberculosis* se multiplica **devagar** e não provoca a resposta inflamatória aguda e explosiva de uma bactéria piogênica. Por isso, a tuberculose da coluna (mal de Pott) evolui ao longo de **meses a anos**, com sintomas pouco específicos, e o paciente muitas vezes só procura atendimento quando já há deformidade ou déficit neurológico.\n\n**Os sintomas são gerais (constitucionais).**\n- **Febre baixa**, geralmente vespertina.\n- **Sudorese noturna**.\n- **Perda de peso**, inapetência, astenia, mal-estar.\n- **Dor** nas costas, insidiosa, com rigidez e espasmo da musculatura paravertebral.\n\n**A progressão é indolente.**\n1. O foco começa no **terço anterior** do corpo vertebral, junto à placa terminal.\n2. Espalha-se sob o **ligamento longitudinal anterior** para as vértebras vizinhas, poupando o disco por um tempo.\n3. Formam-se **abscessos frios** (sem calor e rubor), que podem descer pela bainha do psoas até a virilha.\n4. A coluna anterior colapsa: surge a **cifose angular** (giba de Pott).\n5. Pode surgir **déficit neurológico**, por abscesso, sequestro ou pela própria deformidade (paraplegia de Pott).\n\n**Comparação com a espondilodiscite piogênica.**\n\n| Aspecto | Tuberculose | Piogênica |\n|---|---|---|\n| Início | **Insidioso**, meses | Agudo, dias a semanas |\n| Sintomas | **Gerais** (febre baixa, emagrecimento) | Febre alta, dor intensa |\n| Disco | Preservado por mais tempo | Destruído cedo |\n| Abscessos | Grandes, frios, extensos | Menores |\n| Deformidade | Cifose angular | Menos comum |\n\n**Tratamento.** Esquema antituberculoso prolongado (9 a 12 meses ou mais) é a base. Cirurgia para déficit neurológico, instabilidade, cifose progressiva, abscessos grandes ou falha do tratamento clínico.",
+  "correta": "**Correta: B (sintomas generalizados e progressão indolente).** O mal de Pott se manifesta com sintomas constitucionais (febre baixa, sudorese noturna, emagrecimento) e evolui de forma lenta e insidiosa, ao longo de meses.",
   "incorretas": {
-   "A": "**Início agudo não.** Começo súbito sugere germe piogênico.",
-   "C": "**Progressão errada.** A doença leva meses a anos para se manifestar.",
-   "D": "**Erra as duas.** Nem o início é agudo nem a progressão é rápida."
+   "A": "Os sintomas não são **agudos**: a tuberculose não desencadeia a resposta inflamatória rápida das infecções piogênicas.",
+   "C": "Os sintomas gerais estão corretos, mas a progressão é **lenta**, não rápida.",
+   "D": "Sintomas agudos com progressão rápida descrevem a espondilodiscite **piogênica**, e não a tuberculosa."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
+   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição"
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "osteometabolicas-0028": {
   "conceito": "**Por que o disco resiste.** O disco do adulto é **avascular**, e o bacilo da tuberculose não produz as enzimas proteolíticas que o germe piogênico usa para destruí-lo. A doença chega pelo sangue à **porção anterior do corpo vertebral**, caminha **por baixo do ligamento longitudinal anterior** até a vértebra vizinha e **contorna o disco** em vez de atravessá-lo. Na imagem, isso aparece como duas vértebras destruídas com a **altura discal ainda razoável**, o inverso da espondilodiscite piogênica, em que o disco some primeiro.\n\n**O que não é poupado.** O canal pode ser invadido por abscesso, tecido de granulação e retropulsão óssea, o que produz a paraplegia de Pott. Os ligamentos longitudinais são justamente o caminho da disseminação.\n\n**Na prova:** a tuberculose vertebral **poupa o disco** no início.",
@@ -788,16 +791,19 @@
   "formato": "corrido"
  },
  "osteometabolicas-0062": {
-  "conceito": "**Dois escores, duas perguntas.** O **T-score** compara com o **adulto jovem** no pico de massa óssea, em torno dos **20** a 30 anos; é ele que define osteopenia e osteoporose pela OMS, na mulher pós-menopausa e no homem acima de 50. O **Z-score** compara com a **mesma idade**, sexo e etnia; um Z muito baixo indica perda além do esperado e manda procurar **causa secundária**. Em criança e adulto jovem só se usa o Z-score, e abaixo de -2 ele indica densidade abaixo do esperado para a idade.\n\n**Os cortes da OMS**, pelo T-score, são: normal a partir de -1; osteopenia entre -1 e -2,5; osteoporose em -2,5 ou abaixo; e osteoporose estabelecida, ou grave, quando há também fratura por fragilidade.\n\n**Na prova:** num paciente de 60 anos, o **T compara com 20 anos, e o Z com 60**.",
-  "correta": "**20 e 60 anos.** O T-score usa o adulto jovem como referência, e o Z-score, a própria idade.",
+  "conceito": "**O que a densitometria mede.** A densitometria por **absorciometria de raios X de dupla energia (DXA)** mede a **densidade mineral óssea** (g/cm²) na coluna lombar, no fêmur proximal e, às vezes, no rádio distal. O valor absoluto é comparado com duas referências, que respondem a perguntas diferentes.\n\n**O T-score: comparar com o adulto jovem.** Número de desvios-padrão em relação à média de **adultos jovens saudáveis** do mesmo sexo, no **pico de massa óssea** (em torno de **20 a 30 anos**). É o escore usado para o **diagnóstico** pela Organização Mundial da Saúde, em mulheres pós-menopausa e homens acima de 50 anos.\n\n| T-score | Diagnóstico |\n|---|---|\n| Igual ou maior que −1,0 | Normal |\n| Entre −1,0 e −2,5 | Osteopenia (baixa massa óssea) |\n| Igual ou menor que −2,5 | **Osteoporose** |\n| Igual ou menor que −2,5 com fratura por fragilidade | Osteoporose estabelecida (grave) |\n\n**O Z-score: comparar com a mesma idade.** Número de desvios-padrão em relação à média de pessoas da **mesma idade**, sexo e etnia.\n- É o escore usado em **crianças**, **mulheres antes da menopausa** e **homens abaixo de 50 anos**.\n- Um Z-score **igual ou menor que −2,0** indica densidade **abaixo do esperado para a idade** e deve levar à busca de **causas secundárias** (corticoide, hipogonadismo, hiperparatireoidismo, doença celíaca, mieloma).\n\n**No paciente de 60 anos.** O **T-score** compara com o adulto jovem, por volta dos **20 anos** (pico de massa óssea); o **Z-score** compara com indivíduos da **mesma idade**, ou seja, **60 anos**.\n\n**Limitações.** Osteófitos, calcificação da aorta e fraturas vertebrais podem **elevar falsamente** a densidade lombar no idoso; por isso, no idoso, o fêmur costuma ser mais confiável.",
+  "correta": "**Correta: A (20 e 60 anos).** O **T-score** compara a densidade do paciente com a de adultos jovens no pico de massa óssea (por volta dos 20 anos), e o **Z-score** com indivíduos da **mesma idade**, no caso 60 anos.",
   "incorretas": {
-   "B": "**Referência errada.** O T-score usa o pico de massa óssea do adulto jovem, por volta dos 20 anos.",
-   "C": "**Invertido.** Quem compara com a mesma idade é o Z-score.",
-   "D": "**Invertido.** Troca T e Z, e ainda erra a referência do adulto jovem."
+   "B": "O Z-score de 60 anos está certo, mas a referência do T-score é o adulto jovem no pico de massa óssea, mais próximo dos **20** do que dos 30 anos nas opções dadas.",
+   "C": "Inverte os escores: o **T** é o do adulto jovem, e o **Z** é o da mesma idade.",
+   "D": "Também inverte os escores; o T-score não compara com a mesma idade."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Kanis JA. Assessment of fracture risk and its application to screening for postmenopausal osteoporosis: synopsis of a WHO report. WHO Study Group. Osteoporos Int. 1994;4(6):368-381.",
+   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição"
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "osteometabolicas-0063": {
   "conceito": "**A vitamina D vem da pele.** A radiação **UVB** converte o 7-desidrocolesterol em colecalciferol, e tudo que reduz essa conversão aumenta a deficiência. A prevalência é maior na **pele mais pigmentada**, porque a **melanina** funciona como filtro solar natural e exige várias vezes mais exposição para produzir a mesma quantidade, e no **sexo feminino**, pela menor exposição solar, pela maior proteção e pela maior longevidade nos levantamentos.\n\n**Outros fatores de risco** são a idade avançada, porque a pele produz menos, a **obesidade**, que sequestra a vitamina na gordura, a institucionalização com pouca exposição solar, a má absorção, as doenças renal e hepática e o uso de anticonvulsivantes.\n\n**Na prova:** hipovitaminose D é mais prevalente em **mulheres e em negros**.",
@@ -977,16 +983,19 @@
   "conferido": false
  },
  "osteometabolicas-0076": {
-  "conceito": "**A lentidão que engana.** O bacilo da tuberculose se multiplica devagar e não desencadeia a resposta aguda de um germe piogênico. A doença leva **meses a anos** até o sinal que traz o paciente, muitas vezes já a **cifose angular** ou o **déficit neurológico**. O quadro é de doença consumptiva, com **febre baixa vespertina**, **sudorese noturna**, **perda de peso**, mal-estar e dor lombar ou torácica arrastada: **sintomas generalizados com progressão indolente**. Dor local intensa e febre alta de início súbito apontam para infecção **piogênica**.\n\n**O diagnóstico** usa ressonância e biópsia guiada, com histologia, cultura e **PCR** (como o GeneXpert). O tratamento é principalmente clínico, com cirurgia para déficit, deformidade ou instabilidade.\n\n**Na prova:** Pott tem **sintomas sistêmicos e evolução lenta**.",
-  "correta": "**Sintomas generalizados e progressão indolente.** É a assinatura da tuberculose vertebral.",
+  "conceito": "**A lentidão que engana.** O *Mycobacterium tuberculosis* se multiplica **devagar** e não provoca a resposta inflamatória aguda e explosiva de uma bactéria piogênica. Por isso, a tuberculose da coluna (mal de Pott) evolui ao longo de **meses a anos**, com sintomas pouco específicos, e o paciente muitas vezes só procura atendimento quando já há deformidade ou déficit neurológico.\n\n**Os sintomas são gerais (constitucionais).**\n- **Febre baixa**, geralmente vespertina.\n- **Sudorese noturna**.\n- **Perda de peso**, inapetência, astenia, mal-estar.\n- **Dor** nas costas, insidiosa, com rigidez e espasmo da musculatura paravertebral.\n\n**A progressão é indolente.**\n1. O foco começa no **terço anterior** do corpo vertebral, junto à placa terminal.\n2. Espalha-se sob o **ligamento longitudinal anterior** para as vértebras vizinhas, poupando o disco por um tempo.\n3. Formam-se **abscessos frios** (sem calor e rubor), que podem descer pela bainha do psoas até a virilha.\n4. A coluna anterior colapsa: surge a **cifose angular** (giba de Pott).\n5. Pode surgir **déficit neurológico**, por abscesso, sequestro ou pela própria deformidade (paraplegia de Pott).\n\n**Comparação com a espondilodiscite piogênica.**\n\n| Aspecto | Tuberculose | Piogênica |\n|---|---|---|\n| Início | **Insidioso**, meses | Agudo, dias a semanas |\n| Sintomas | **Gerais** (febre baixa, emagrecimento) | Febre alta, dor intensa |\n| Disco | Preservado por mais tempo | Destruído cedo |\n| Abscessos | Grandes, frios, extensos | Menores |\n| Deformidade | Cifose angular | Menos comum |\n\n**Tratamento.** Esquema antituberculoso prolongado (9 a 12 meses ou mais) é a base. Cirurgia para déficit neurológico, instabilidade, cifose progressiva, abscessos grandes ou falha do tratamento clínico.",
+  "correta": "**Correta: B (sintomas generalizados e progressão indolente).** O mal de Pott se manifesta com sintomas constitucionais (febre baixa, sudorese noturna, emagrecimento) e evolui de forma lenta e insidiosa, ao longo de meses.",
   "incorretas": {
-   "A": "**Início agudo não.** Começo súbito sugere germe piogênico.",
-   "C": "**Progressão errada.** A doença leva meses a anos para se manifestar.",
-   "D": "**Erra as duas.** Nem o início é agudo nem a progressão é rápida."
+   "A": "Os sintomas não são **agudos**: a tuberculose não desencadeia a resposta inflamatória rápida das infecções piogênicas.",
+   "C": "Os sintomas gerais estão corretos, mas a progressão é **lenta**, não rápida.",
+   "D": "Sintomas agudos com progressão rápida descrevem a espondilodiscite **piogênica**, e não a tuberculosa."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
+   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição"
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  },
  "osteometabolicas-0077": {
   "conceito": "**Distribuição da tuberculose osteoarticular.** A tuberculose chega ao esqueleto por via hematogênica e prefere regiões de osso esponjoso bem vascularizado e articulações que suportam carga. A ordem de frequência é: **coluna** (cerca de metade dos casos), **quadril** e **joelho**. No membro superior, ela é menos comum, mas o **cotovelo** é a articulação mais acometida.\n\n**O cotovelo tuberculoso.**\n- O foco costuma começar no osso, sobretudo no **olécrano e na ulna proximal**, ou na metáfise distal do úmero, e invade a articulação.\n- Apresentação arrastada: monoartrite com aumento de volume fusiforme, dor moderada, **atrofia muscular** precoce e **perda progressiva do movimento**, especialmente da extensão.\n- Sintomas constitucionais (febre baixa vespertina, perda de peso, sudorese noturna) podem estar presentes ou ausentes.\n- Fístulas e abscessos frios nas fases tardias.\n\n**Fases radiográficas.** Osteopenia periarticular, erosões marginais e, mais tarde, destruição articular com relativa preservação do espaço articular no início (ao contrário da artrite piogênica, que destrói rapidamente a cartilagem). A tríade de Phemister (osteopenia, erosões periféricas, redução lenta do espaço) resume o padrão.\n\n**As outras articulações do membro superior.**\n\n| Local | Particularidade |\n|---|---|\n| **Cotovelo** | **Mais frequente** do membro superior |\n| Ombro | Menos comum; forma seca (caries sicca), atrófica, sem pus |\n| Punho | Menos comum; pode cursar com tenossinovite e síndrome do túnel do carpo |\n| Acromioclavicular | Muito rara |\n\n**Diagnóstico e tratamento.** Biópsia sinovial ou óssea com cultura, pesquisa de BAAR, PCR e histologia (granuloma com necrose caseosa). O tratamento é clínico, com esquema antituberculoso prolongado, e a cirurgia fica para desbridamento ou sequelas.",
