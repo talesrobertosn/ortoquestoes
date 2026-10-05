@@ -3207,5 +3207,57 @@
   ],
   "geradoEm": "2026-10-05",
   "conferido": false
+ },
+ "conceitos-basicos-0320": {
+  "conceito": "**Irrigação do tendão calcâneo.** O tendão calcâneo é o maior e mais forte do corpo, mas tem irrigação relativamente pobre. Ele não possui bainha sinovial verdadeira; é envolvido pelo **paratendão** (peritendão), uma camada de tecido areolar frouxo e vascularizado que permite o deslizamento e leva a maior parte do suprimento sanguíneo.\n\n**Três fontes de irrigação.**\n1. **Junção musculotendínea**: vasos que descem do músculo para a porção proximal do tendão.\n2. **Inserção óssea no calcâneo**: vasos que sobem a partir do osso para a porção distal.\n3. **Paratendão**: principal fonte para a porção média, com vasos provenientes sobretudo da **artéria tibial posterior** (que irriga a porção proximal e a distal) e da **artéria fibular** (que irriga a porção média).\n\n**A zona hipovascular.** Cerca de 2 a 6 cm acima da inserção, a densidade de vasos é menor. É justamente onde ocorrem a maioria das rupturas e a tendinopatia não insercional.\n\n**Consequência cirúrgica.** O paratendão deve ser preservado e fechado em camada própria durante a sutura aberta, porque leva sangue ao tendão e reduz aderências. A pele sobre o tendão também é fina e pouco vascularizada, o que explica a frequência de complicações de ferida; por isso se prefere incisão posteromedial, longe do nervo sural.\n\n| Fonte | Região irrigada |\n|---|---|\n| Junção musculotendínea | Porção proximal |\n| Paratendão (tibial posterior e fibular) | Porção média e global |\n| Inserção óssea | Porção distal |\n\n> O tendão calcâneo é nutrido principalmente pelo paratendão, com vasos das artérias tibial posterior e fibular.",
+  "correta": "**A: Certo.** A nutrição do tendão calcâneo vem principalmente dos vasos do paratendão (peritendão), que recebe ramos das artérias tibial posterior e fibular. As junções musculotendínea e osteotendínea contribuem para as extremidades. A região média, 2 a 6 cm acima da inserção, é a menos vascularizada e corresponde à zona de ruptura mais frequente.",
+  "incorretas": {
+   "B": "**Marcar errado seria atribuir a irrigação a outra artéria, como a tibial anterior, ou negar o papel do paratendão.** A tibial anterior irriga o compartimento anterior e o dorso do pé (como artéria dorsal do pé), sem contribuição relevante para o tendão calcâneo. O papel central do paratendão é bem estabelecido."
+  },
+  "referencias": [
+   "Carr AJ, Norris SH. The blood supply of the calcaneal tendon. J Bone Joint Surg Br. 1989;71(1):100-101.",
+   "Maffulli N. Rupture of the Achilles tendon. J Bone Joint Surg Am. 1999;81(7):1019-1036."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "conceitos-basicos-0321": {
+  "conceito": "**Onde o tendão calcâneo rompe e por quê.** A maioria das rupturas agudas ocorre **2 a 6 cm acima da inserção no calcâneo**. Essa localização se explica pela soma de fatores vasculares e mecânicos.\n\n**Fatores vasculares.** A porção média do tendão é a **zona de menor vascularização**. Ela fica longe das duas extremidades (junção musculotendínea e inserção óssea) e depende quase só do paratendão. A irrigação pobre limita o reparo das microlesões do dia a dia, e o tendão acumula degeneração (tendinose) antes de romper.\n\n**Fatores mecânicos.**\n- A área de secção transversa é menor nessa região.\n- As fibras do gastrocnêmio e do sóleo giram cerca de 90 graus ao descer, o que concentra tensões na porção média.\n- A carga excêntrica do arranque se concentra nesse ponto.\n\n**Outras localizações.**\n- **Avulsão da inserção**, às vezes com fragmento ósseo do calcâneo, em idosos ou diabéticos.\n- **Junção musculotendínea**, mais proximal, que corresponde ao estiramento do gastrocnêmio medial (\"tennis leg\"), geralmente tratado sem cirurgia.\n\n| Região | Lesão típica |\n|---|---|\n| Junção musculotendínea | Lesão do gastrocnêmio medial |\n| 2 a 6 cm da inserção | Ruptura do tendão (mais comum) |\n| Inserção | Avulsão e tendinopatia insercional |\n\n> A ruptura ocorre a 2 a 6 cm da inserção, na zona de **menor** vascularização.",
+  "correta": "**B: Errado.** A localização está correta (2 a 6 cm da inserção), mas essa região é a zona de **menor** vascularização do tendão, não de maior. É justamente a irrigação deficiente que favorece a degeneração e a ruptura nesse ponto. O erro está na inversão do conceito vascular.",
+  "incorretas": {
+   "A": "**Marcar certo é aceitar o número correto e não perceber a troca de \"menor\" por \"maior\".** É uma armadilha típica de itens de certo ou errado: a primeira parte é exata e dá credibilidade, mas a justificativa está invertida. Um tendão bem vascularizado repararia melhor as microlesões e romperia menos."
+  },
+  "referencias": [
+   "Carr AJ, Norris SH. The blood supply of the calcaneal tendon. J Bone Joint Surg Br. 1989;71(1):100-101.",
+   "Maffulli N. Rupture of the Achilles tendon. J Bone Joint Surg Am. 1999;81(7):1019-1036."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "conceitos-basicos-0322": {
+  "conceito": "**Fluoroquinolonas e lesão tendínea.** Antibióticos como ciprofloxacino, levofloxacino e moxifloxacino aumentam o risco de tendinopatia e de ruptura tendínea, com predileção pelo tendão calcâneo. O risco é reconhecido por agências reguladoras, que exigem alertas na bula.\n\n**Mecanismo proposto.** As fluoroquinolonas têm efeito tóxico sobre os tenócitos: aumentam a atividade de metaloproteinases que degradam a matriz, reduzem a proliferação celular e a síntese de colágeno e causam estresse oxidativo. O tendão fica mais frágil.\n\n**Características.**\n- Pode surgir em poucos dias de uso ou até meses após a suspensão.\n- Frequentemente bilateral.\n- O risco é maior em **idosos** (acima de 60 anos), em uso **simultâneo de corticoide**, em transplantados e em pacientes com doença renal.\n\n**Outros fatores de risco para ruptura do tendão calcâneo.**\n- Idade de 30 a 50 anos e atividade esportiva recreativa intermitente.\n- Tendinopatia prévia.\n- Corticoide sistêmico ou infiltração local.\n- Doenças sistêmicas: gota, diabetes, artrite reumatoide, hiperparatireoidismo, insuficiência renal.\n- Sexo masculino.\n\n**Conduta prática.** Ao prescrever uma fluoroquinolona, orientar a interromper o antibiótico e procurar atendimento se surgir dor no tendão, e evitar atividades de impacto durante o tratamento em pacientes de risco.\n\n> Fluoroquinolona + corticoide + idade avançada: alto risco de ruptura do tendão calcâneo.",
+  "correta": "**A: Certo.** O uso de fluoroquinolonas é fator de risco reconhecido para tendinopatia e ruptura do tendão calcâneo, por toxicidade direta sobre os tenócitos e a matriz de colágeno. O risco aumenta em idosos e com uso simultâneo de corticoides. Por isso, a história medicamentosa faz parte da avaliação de qualquer ruptura tendínea, especialmente quando o mecanismo é de baixa energia.",
+  "incorretas": {
+   "B": "**Marcar errado seria desconhecer um efeito adverso bem documentado.** A associação entre fluoroquinolonas e lesão tendínea foi demonstrada em estudos populacionais e motivou alertas de agências regulatórias. Não é apenas uma hipótese."
+  },
+  "referencias": [
+   "van der Linden PD, Sturkenboom MC, Herings RM, Leufkens HM, Rowlands S, Stricker BH. Increased risk of Achilles tendon rupture with quinolone antibacterial use, especially in elderly patients taking oral corticosteroids. Arch Intern Med. 2003;163(15):1801-1807.",
+   "Maffulli N. Rupture of the Achilles tendon. J Bone Joint Surg Am. 1999;81(7):1019-1036."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "conceitos-basicos-0323": {
+  "conceito": "**Epidemiologia da ruptura do tendão calcâneo.** É a ruptura tendínea mais frequente do membro inferior e uma das mais comuns do corpo. Sua incidência vem aumentando, acompanhando a popularização dos esportes recreativos em adultos.\n\n**Perfil típico.**\n- **Idade**: 30 a 50 anos, com pico por volta dos 40.\n- **Sexo**: predomínio masculino (várias vezes mais que mulheres).\n- **Atividade**: atleta de fim de semana (\"weekend warrior\"), que pratica esporte de forma intermitente sem preparo regular.\n- **Esportes**: futebol, basquete, tênis, squash, vôlei, que exigem arranques, saltos e mudanças de direção.\n\n**Por que nessa faixa etária.** O tendão já tem degeneração, por envelhecimento e microtraumas, mas a pessoa ainda tem força e motivação para esportes explosivos. O treino irregular deixa o tendão sem adaptação às cargas.\n\n**Distribuição bimodal.** Um segundo pico ocorre em idosos, com mecanismos de baixa energia e associação com corticoides, fluoroquinolonas e doenças sistêmicas.\n\n| Grupo | Característica |\n|---|---|\n| 30 a 50 anos | Esporte recreativo, mecanismo de arranque |\n| Idosos | Baixa energia, fatores sistêmicos e medicamentosos |\n\n> Ruptura do tendão calcâneo: homem de cerca de 40 anos, atleta de fim de semana.",
+  "correta": "**A: Certo.** A ruptura do tendão calcâneo é a lesão tendínea de maior incidência nos atletas recreacionais, e a faixa etária típica é dos 30 aos 50 anos. A paciente da questão, uma atleta de futebol de fim de semana de 40 anos, se encaixa exatamente nesse perfil, embora o predomínio geral seja masculino. (O texto \"Área livre\" no final do item é apenas um resquício da diagramação da prova.)",
+  "incorretas": {
+   "B": "**Marcar errado seria imaginar outra lesão como a mais comum nesse grupo, ou outra faixa etária.** Lesões musculares da panturrilha são frequentes, mas, entre as rupturas tendíneas, o tendão calcâneo lidera. A faixa de 30 a 50 anos é a classicamente citada."
+  },
+  "referencias": [
+   "Maffulli N. Rupture of the Achilles tendon. J Bone Joint Surg Am. 1999;81(7):1019-1036.",
+   "Chiodo CP, Glazebrook M, Bluman EM, et al. Diagnosis and treatment of acute Achilles tendon rupture. J Am Acad Orthop Surg. 2010;18(8):503-510."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  }
 }

@@ -3898,5 +3898,83 @@
   ],
   "geradoEm": "2026-10-05",
   "conferido": false
+ },
+ "joelho-0329": {
+  "conceito": "**Testes meniscais.** O exame físico do menisco combina a palpação da interlinha com manobras que comprimem e giram o menisco entre o fêmur e a tíbia, reproduzindo dor ou estalido.\n\n**Principais testes.**\n- **Dor à palpação da interlinha articular**: é o achado isolado mais sensível. Pode ser feita com o joelho em flexão de cerca de 90 graus.\n- **McMurray**: paciente em decúbito dorsal, joelho em flexão máxima. O examinador **palpa a interlinha com os dedos** de uma mão e, com a outra, roda a tíbia (externamente para o menisco medial, internamente para o lateral) enquanto estende o joelho. O teste é positivo com estalido palpável ou audível na interlinha, acompanhado de dor.\n- **Apley**: paciente em prono, joelho a 90 graus. Compressão axial com rotação (dor sugere lesão meniscal); tração com rotação (dor sugere lesão ligamentar ou capsular).\n- **Thessaly**: paciente em apoio unipodal com o joelho a 20 graus de flexão, gira o corpo três vezes para cada lado. Dor na interlinha ou sensação de bloqueio é positiva. Tem boa acurácia no estudo original.\n- **Steinmann, Childress (marcha de pato)** e outros.\n\n| Teste | Componentes |\n|---|---|\n| McMurray | Rotação, extensão e palpação da interlinha |\n| Apley | Compressão axial com rotação, em prono |\n| Thessaly | Rotação com carga em 20 graus |\n\n**Acurácia.** Nenhum teste isolado é definitivo. A combinação de história (bloqueios, entorse rotacional) com vários testes positivos aumenta muito a probabilidade de lesão.\n\n> O McMurray depende da palpação da interlinha para sentir o estalido.",
+  "correta": "**B: Errado.** As três manobras envolvem rotação do joelho, mas o teste de McMurray **inclui a palpação da interlinha** articular: o examinador posiciona os dedos sobre a interlinha para sentir o estalido produzido pelo fragmento meniscal durante a rotação e a extensão. Além disso, nos testes de Apley e Thessaly a dor é localizada na interlinha. Dizer que não necessitam de palpação da interlinha é incorreto.",
+  "incorretas": {
+   "A": "**Marcar certo é aceitar o item pela primeira parte.** Os três testes de fato usam rotação para provocar o menisco, o que torna o item plausível. O erro está na segunda parte: o McMurray clássico combina rotação, extensão e palpação da interlinha, e a localização da dor ou do estalido na interlinha é o que dá significado ao teste."
+  },
+  "referencias": [
+   "McMurray TP. The semilunar cartilages. Br J Surg. 1942;29(116):407-414.",
+   "Karachalios T, Hantes M, Zibis AH, et al. Diagnostic accuracy of a new clinical test (the Thessaly test) for early detection of meniscal tears. J Bone Joint Surg Am. 2005;87(5):955-962."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "joelho-0330": {
+  "conceito": "**Papel das radiografias na suspeita de lesão meniscal.** O menisco é fibrocartilagem e **não aparece** na radiografia simples. Ainda assim, a radiografia é o primeiro exame de imagem em quase todo joelho com dor e bloqueio, porque afasta outras causas.\n\n**O que a radiografia pode mostrar.**\n- **Corpos livres** osteocartilaginosos, que também causam bloqueio.\n- **Osteocondrite dissecante**, sobretudo na face lateral do côndilo femoral medial.\n- **Fraturas** (como a de Segond, sinal de lesão do LCA, ou fraturas osteocondrais da luxação patelar).\n- **Artrose**: redução do espaço articular, osteófitos. Em pacientes mais velhos, muda a interpretação da lesão meniscal, que pode ser degenerativa.\n- **Condrocalcinose**: calcificação do menisco na doença por depósito de pirofosfato de cálcio.\n- **Tumores** e lesões ósseas.\n\n**Incidências úteis.** AP com carga, perfil, axial de patela e PA em flexão de 45 graus com carga (Rosenberg), que é mais sensível para o pinçamento inicial.\n\n**Diagnóstico da lesão meniscal.** É clínico e confirmado pela ressonância, que tem alta sensibilidade e especificidade, sobretudo no menisco medial.\n\n> A radiografia não vê o menisco, mas vê o que pode imitar a lesão meniscal.",
+  "correta": "**A: Certo.** As radiografias simples não mostram o menisco e não confirmam a lesão. Porém, são importantes para excluir causas de dor e bloqueio que imitam uma lesão meniscal, como corpos livres osteocartilaginosos, osteocondrite dissecante, fraturas e artrose. Também ajudam a planejar o tratamento, já que o resultado da cirurgia meniscal é pior na presença de artrose.",
+  "incorretas": {
+   "B": "**Marcar errado seria considerar a radiografia inútil na lesão meniscal.** Pular a radiografia e ir direto para a ressonância é um erro comum na prática. Sem ela, pode-se deixar de ver a artrose (que muda o prognóstico) ou um corpo livre ósseo como causa do bloqueio."
+  },
+  "referencias": [
+   "Azar FM, Beaty JH, eds. Campbell's Operative Orthopaedics. Elsevier. Lesões do joelho: menisco.",
+   "Scott WN, ed. Insall & Scott Surgery of the Knee. Elsevier. Lesões meniscais."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "joelho-0331": {
+  "conceito": "**Ressonância magnética na lesão meniscal.** É o exame de imagem de escolha para o menisco, com sensibilidade e especificidade em torno de 90% para o menisco medial e um pouco menores para o lateral.\n\n**Como a lesão aparece.** O menisco normal é escuro (hipossinal) em todas as sequências. A lesão é diagnosticada quando há sinal alto que **atinge a superfície articular** em pelo menos duas imagens, ou quando a forma do menisco está alterada (fragmento deslocado, sinal do duplo LCP na alça de balde, menisco \"fantasma\").\n\n**Graduação do sinal intrameniscal.**\n- Grau 1: sinal globular, sem atingir a superfície (degeneração).\n- Grau 2: sinal linear, sem atingir a superfície.\n- Grau 3: sinal que atinge a superfície articular (lesão verdadeira).\n\n**Limitações quanto ao reparo.** A ressonância localiza a lesão e descreve sua forma, mas é **pouco eficaz em prever se ela pode ser reparada**. A decisão depende de dados vistos na artroscopia:\n- Distância da lesão até a periferia (zona vermelha-vermelha, vermelha-branca ou branca-branca).\n- Qualidade do tecido (degenerado ou saudável).\n- Estabilidade e padrão exato do traço.\n- Comprimento real da lesão.\n\nVários estudos mostram que a previsão de reparabilidade pela ressonância é imprecisa, e o consentimento para a cirurgia geralmente inclui as duas possibilidades (reparo ou meniscectomia parcial).\n\n> A ressonância detecta bem a lesão meniscal, mas a reparabilidade se define na artroscopia.",
+  "correta": "**B: Errado.** A ressonância é muito eficiente para detectar lesões do menisco, mas não é eficaz para prever se elas são reparáveis. Fatores decisivos para o reparo, como a qualidade do tecido, a estabilidade do fragmento e a distância exata até a zona vascular periférica, só são avaliados com segurança durante a artroscopia. A segunda parte do item torna-o errado.",
+  "incorretas": {
+   "A": "**Marcar certo é aceitar o item pela primeira metade, que está correta.** A alta acurácia diagnóstica da ressonância é bem estabelecida. Mas prever o reparo exige informações que o exame não fornece com precisão, como a qualidade do tecido meniscal."
+  },
+  "referencias": [
+   "Scott WN, ed. Insall & Scott Surgery of the Knee. Elsevier. Imagem do menisco.",
+   "Azar FM, Beaty JH, eds. Campbell's Operative Orthopaedics. Elsevier. Lesões do joelho: menisco."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "joelho-0332": {
+  "conceito": "**Técnicas de reparo meniscal.** O objetivo é preservar o menisco, que distribui carga e protege a cartilagem. A escolha da técnica depende principalmente da **localização da lesão**.\n\n| Técnica | Melhor indicação |\n|---|---|\n| De fora para dentro (outside-in) | Corno anterior e terço médio |\n| De dentro para fora (inside-out) | Terços médio e posterior |\n| Tudo dentro (all-inside) | Corno posterior |\n\n**De dentro para fora (inside-out).** As agulhas com fio são passadas por dentro da articulação, através do menisco, e saem pela cápsula, onde os fios são amarrados sobre a cápsula por uma pequena incisão posteromedial ou posterolateral.\n- **Vantagens**: suturas verticais em grande número, fixação sólida e reprodutível, baixo custo de material. Por isso é considerada o **padrão-ouro** para comparação.\n- **Desvantagens**: exige incisão acessória e proteção das estruturas neurovasculares (nervo safeno no lado medial; nervo fibular comum e vasos poplíteos no lado lateral).\n\n**De fora para dentro (outside-in).** Agulhas introduzidas de fora para dentro; útil no corno anterior, onde as outras técnicas têm dificuldade.\n\n**Tudo dentro (all-inside).** Dispositivos com âncoras que sutura sem incisão acessória. Ideal para o corno posterior. Mais rápida, mas o material é mais caro e há risco de migração ou irritação do implante.\n\n**Fatores de bom prognóstico do reparo.** Lesão longitudinal na zona vermelha-vermelha, em paciente jovem, com reconstrução simultânea do LCA (o sangramento ajuda a cicatrização).\n\n> Inside-out: o padrão-ouro histórico para lesões dos terços médio e posterior.",
+  "correta": "**A: Certo.** A técnica de dentro para fora é considerada o padrão-ouro do reparo meniscal, porque permite colocar várias suturas verticais com fixação sólida e reprodutível, com bons resultados documentados ao longo de décadas. Ela é especialmente indicada nas lesões dos terços médio e posterior. As técnicas tudo dentro ganharam espaço pela praticidade, mas são comparadas a ela.",
+  "incorretas": {
+   "B": "**Marcar errado seria apontar a técnica tudo dentro como padrão-ouro, por ser mais moderna e prática.** Ela é hoje muito usada, especialmente no corno posterior, mas a referência biomecânica e clínica de comparação continua sendo a técnica de dentro para fora."
+  },
+  "referencias": [
+   "Scott WN, ed. Insall & Scott Surgery of the Knee. Elsevier. Reparo meniscal.",
+   "Azar FM, Beaty JH, eds. Campbell's Operative Orthopaedics. Elsevier. Lesões do joelho: reparo meniscal."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "joelho-0333": {
+  "conceito": "**Técnica tudo dentro (all-inside) no reparo meniscal.** Usa dispositivos que passam pelo menisco e ancoram atrás da cápsula, com o fio tensionado por dentro da articulação. Não precisa de incisão acessória nem de afastadores posteriores.\n\n**Indicação ideal: corno posterior.** É justamente onde as outras técnicas têm mais dificuldade:\n- A técnica de fora para dentro tem acesso difícil e perigoso às porções mais posteriores.\n- A técnica de dentro para fora exige incisão posterior e proteção cuidadosa dos vasos poplíteos e nervos.\n- A tudo dentro alcança o corno posterior pelos portais anteriores, com menor risco de lesão neurovascular, desde que se respeite a profundidade dos dispositivos.\n\n**Limitações.**\n- **Corno anterior**: difícil de alcançar com os dispositivos; aqui a técnica de fora para dentro é preferida.\n- Custo mais alto dos implantes.\n- Risco de migração, irritação ou falha da âncora e de lesão neurovascular se o dispositivo penetrar demais (especialmente no lado lateral, perto da artéria poplítea).\n\n| Localização | Técnica mais adequada |\n|---|---|\n| Corno anterior | De fora para dentro |\n| Corpo e terço médio | De dentro para fora |\n| Corno posterior | Tudo dentro |\n\n> Tudo dentro é a técnica preferida para o corno posterior, não uma contraindicação.",
+  "correta": "**B: Errado.** O corno posterior é a **principal indicação** da técnica tudo dentro, não uma contraindicação. Os dispositivos alcançam essa região pelos portais anteriores sem necessidade de incisão posterior, o que reduz o risco neurovascular. A região de difícil acesso para essa técnica é o corno anterior, onde se prefere a técnica de fora para dentro.",
+  "incorretas": {
+   "A": "**Marcar certo é inverter as indicações das técnicas.** A dificuldade de alcance existe na técnica tudo dentro para o corno anterior, e na técnica de fora para dentro para o corno posterior. Lembrar o sentido das agulhas ajuda: de fora para dentro alcança bem o que está na frente; tudo dentro alcança bem o que está atrás."
+  },
+  "referencias": [
+   "Scott WN, ed. Insall & Scott Surgery of the Knee. Elsevier. Reparo meniscal.",
+   "Azar FM, Beaty JH, eds. Campbell's Operative Orthopaedics. Elsevier. Lesões do joelho: reparo meniscal."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "joelho-0334": {
+  "conceito": "**Por que preservar o menisco.** Os meniscos transmitem cerca de 50% da carga no compartimento medial e até 70% no lateral com o joelho em extensão, aumentam a congruência articular, contribuem para a estabilidade (sobretudo o corno posterior medial em joelhos sem LCA) e participam da lubrificação e da nutrição da cartilagem.\n\n**O que acontece após a meniscectomia total.** Em 1948, Fairbank descreveu as alterações radiográficas que se seguem à retirada do menisco: formação de crista na borda do côndilo, achatamento do côndilo femoral e estreitamento do espaço articular. A pressão de contato na cartilagem aumenta muito, e a **artrose precoce** é frequente, especialmente no compartimento lateral.\n\n**Hierarquia atual do tratamento.**\n1. **Tratamento não cirúrgico** em lesões degenerativas e lesões estáveis pequenas.\n2. **Reparo meniscal** sempre que possível (lesões longitudinais periféricas, em zona vascular, em pacientes jovens).\n3. **Meniscectomia parcial**, retirando apenas o tecido instável e preservando a borda periférica.\n4. **Meniscectomia total** só quando o menisco está irreparavelmente destruído.\n\n**Lesões da raiz e alça de balde.** Recebem atenção especial: a lesão da raiz equivale funcionalmente a uma meniscectomia total, e as alças de balde em jovens costumam ser reparadas.\n\n**Opções após perda meniscal.** Transplante de menisco em pacientes jovens sintomáticos com joelho estável e alinhado; osteotomias para descarga.\n\n> Menisco é para ser preservado: reparar sempre que possível, retirar o mínimo necessário.",
+  "correta": "**A: Certo.** A meniscectomia total foi abandonada como tratamento de rotina, sobretudo em jovens e atletas, porque leva a sobrecarga da cartilagem e artrose precoce. Hoje, a prioridade é o reparo; quando não é possível, faz-se meniscectomia parcial, retirando somente a porção instável. A retirada completa só se justifica quando o menisco está destruído de forma irreparável.",
+  "incorretas": {
+   "B": "**Marcar errado seria defender a meniscectomia total como opção habitual, conceito antigo.** Antes dos trabalhos de Fairbank e da artroscopia, o menisco era visto como estrutura dispensável. As evidências de artrose após a meniscectomia total mudaram completamente essa visão."
+  },
+  "referencias": [
+   "Fairbank TJ. Knee joint changes after meniscectomy. J Bone Joint Surg Br. 1948;30B(4):664-670.",
+   "Scott WN, ed. Insall & Scott Surgery of the Knee. Elsevier. Lesões meniscais."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  }
 }
