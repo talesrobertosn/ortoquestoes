@@ -3843,6 +3843,39 @@
   "geradoEm": "2026-10-04",
   "conferido": false
  },
+ "tumores-0361": {
+  "alerta": "A técnica descrita por Scaglietti (1979) para o cisto ósseo simples é a **punção percutânea com injeção intralesional de acetato de metilprednisolona** (alternativa C). A ressecção em bloco com enxertia (alternativa B), registrada como gabarito, não corresponde ao método de Scaglietti. O gabarito oficial foi mantido no sistema com esta ressalva.",
+  "conceito": "**Cisto ósseo simples (unicameral).** Lesão benigna, cheia de líquido seroso, revestida por uma membrana fina, típica de crianças e adolescentes entre 5 e 15 anos. Localiza-se na **metáfise proximal do úmero** (mais de 50%) e do **fêmur**, junto à fise (cisto ativo) e, com o crescimento, migra para a diáfise (cisto latente).\n\n**Radiografia.** Lesão lítica central, bem delimitada, **insuflante** (afila a cortical), sem reação periosteal, às vezes com septos aparentes. O **sinal do fragmento caído** (fallen fragment), após fratura, é patognomônico: um fragmento de cortical cai para a parte inferior do cisto, mostrando que o conteúdo é líquido.\n\n**Apresentação.** Geralmente assintomático até uma **fratura patológica**, que é a forma mais comum de diagnóstico.\n\n**Tratamento.**\n- Observação em cistos pequenos e em locais de baixo risco.\n- **Técnica de Scaglietti**: aspiração percutânea e **injeção intralesional de acetato de metilprednisolona**, repetida conforme a resposta. Mecanismo: o corticoide reduziria a atividade inflamatória e as prostaglandinas na membrana do cisto. Cura em cerca de metade dos casos, frequentemente com várias injeções.\n- Injeção de medula óssea autóloga ou matriz óssea desmineralizada.\n- **Descompressão** com cânulas ou parafusos canulados (para drenar o cisto continuamente).\n- **Curetagem e enxertia** (com ou sem fixação, como hastes flexíveis), principalmente em cistos do fêmur proximal com risco de fratura.\n\n**Diagnóstico diferencial.** Cisto ósseo aneurismático (expansivo, excêntrico, com níveis líquido-líquido na ressonância), displasia fibrosa (vidro fosco), granuloma eosinofílico.\n\n> Scaglietti: punção e injeção intralesional de metilprednisolona no cisto ósseo simples.",
+  "correta": "**B: ressecção em bloco e enxertia (gabarito oficial).** A banca registrou essa alternativa, mas o método descrito por Scaglietti para o cisto ósseo simples é a punção percutânea com injeção intralesional de acetato de metilprednisolona (alternativa C). A ressecção em bloco é excessiva para uma lesão benigna e não corresponde à técnica de Scaglietti.",
+  "incorretas": {
+   "A": "**Curetagem com cimentação** é usada em lesões agressivas, como o tumor de células gigantes, para reduzir a recidiva; não é o método de Scaglietti para o cisto ósseo simples.",
+   "C": "**Punção com injeção intralesional de metilprednisolona** é exatamente o método de Scaglietti (1979) e a resposta coerente com a literatura.",
+   "D": "**Curetagem com enxertia** é uma opção cirúrgica para cistos com risco de fratura ou falha de outros métodos, mas não é a técnica de Scaglietti.",
+   "E": "**Radioterapia** não é usada no tratamento do cisto ósseo simples, lesão benigna em criança, pelos riscos de lesão fisária e de transformação maligna."
+  },
+  "referencias": [
+   "Scaglietti O, Marchetti PG, Bartolozzi P. The effects of methylprednisolone acetate in the treatment of bone cysts: results of three years follow-up. J Bone Joint Surg Br. 1979;61-B(2):200-204.",
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Tumores ósseos benignos."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "tumores-0362": {
+  "conceito": "**Escore de Mirels.** Estima o risco de fratura patológica em metástases de ossos longos e orienta a fixação profilática. Soma quatro critérios, de 1 a 3 pontos cada (total de 4 a 12).\n\n| Critério | 1 ponto | 2 pontos | 3 pontos |\n|---|---|---|---|\n| Local | Membro superior | **Membro inferior** | Peritrocantérico |\n| Dor | **Leve** | Moderada | Funcional |\n| Tipo | Blástica | Mista | **Lítica** |\n| Tamanho | Menos de 1/3 do diâmetro | **1/3 a 2/3** | Mais de 2/3 |\n\n**Interpretação.**\n- **7 ou menos**: risco baixo (cerca de 4%); radioterapia e observação.\n- **8**: zona limítrofe (risco em torno de 15%); decisão individualizada.\n- **9 ou mais**: risco alto (33% ou mais); fixação profilática.\n\n**Calculando o caso.** Lesão no **fêmur distal** (membro inferior, não peritrocantérico): **2**. **Dor leve**: **1**. Lesão **lítica** (metástase de tireoide, tipicamente lítica e muito vascularizada): **3**. Acometimento de **50%** do diâmetro (entre 1/3 e 2/3): **2**. Total: **8**, zona limítrofe.\n\n**Particularidades da metástase de tireoide.** Lesões líticas e muito vascularizadas: considerar **embolização** antes de qualquer cirurgia; podem responder ao iodo radioativo; lesões solitárias às vezes justificam ressecção ampla pela sobrevida longa.\n\n> Fêmur distal (2), dor leve (1), lítica (3), 50% do diâmetro (2): Mirels 8, zona limítrofe.",
+  "correta": "**C: 8.** A lesão no fêmur distal soma 2 pontos (membro inferior), a dor leve 1 ponto, o padrão lítico 3 pontos e o acometimento de 50% do diâmetro 2 pontos, totalizando 8. É a zona limítrofe do escore de Mirels, em que a decisão de fixar profilaticamente é individualizada.",
+  "incorretas": {
+   "A": "**6** subestima a lesão: exigiria, por exemplo, lesão blástica ou menor que um terço do diâmetro.",
+   "B": "**7** também subestima; somando corretamente os quatro critérios, o total é 8.",
+   "D": "**9** exigiria mais um ponto, como dor moderada ou localização peritrocantérica, o que não ocorre no caso.",
+   "E": "**10** exigiria dor funcional ou acometimento acima de dois terços do diâmetro."
+  },
+  "referencias": [
+   "Mirels H. Metastatic disease in long bones: a proposed scoring system for diagnosing impending pathologic fractures. Clin Orthop Relat Res. 1989;(249):256-264.",
+   "Azar FM, Beaty JH, eds. Campbell's Operative Orthopaedics. Elsevier. Doença metastática óssea."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
  "tumores-0363": {
   "conceito": "**Complicações da osteomielite na criança.** Além da recidiva e da cronificação da infecção, a osteomielite pode deixar sequelas não infecciosas importantes.\n\n**Complicações não infecciosas.**\n- **Fratura patológica**: o osso enfraquecido pela destruição, pela desvascularização e pelas janelas cirúrgicas pode fraturar.\n- **Lesão fisária**: a infecção metafisária pode lesar a fise, levando a **parada do crescimento**, encurtamento ou **deformidade angular** (barra fisária parcial).\n- **Necrose óssea e sequestro**, que levam à osteomielite crônica.\n- **Trombose venosa profunda** (associada a infecções graves por Staphylococcus aureus).\n- **Carcinoma epidermoide (úlcera de Marjolin)**: transformação maligna do epitélio de um **trajeto fistuloso crônico**, após muitos anos (frequentemente décadas) de drenagem. Manifesta-se como aumento da secreção, sangramento, mau cheiro ou mudança da lesão.\n\n**O que não é complicação.** O **osteossarcoma** é um tumor primário maligno do osso e não decorre da osteomielite. Ao contrário, ele pode **imitar** a osteomielite (dor, edema, reação periosteal), e por isso a biópsia deve ser considerada em casos atípicos.\n\n**Diferencial importante.** O sarcoma de Ewing também pode simular osteomielite, com febre e marcadores inflamatórios elevados.\n\n> Complicações não infecciosas da osteomielite: fratura patológica, lesão fisária e carcinoma em fístula crônica. Osteossarcoma não é uma delas.",
   "correta": "**D: O Osteossarcoma.** O osteossarcoma é um tumor primário do osso e não é uma complicação da osteomielite. As complicações não infecciosas descritas são fratura patológica, lesão fisária com distúrbios de crescimento e carcinoma epidermoide em trajeto fistuloso crônico (úlcera de Marjolin). (O texto \"Prova aplicada\" é resquício da diagramação.)",
