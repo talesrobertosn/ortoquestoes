@@ -694,18 +694,19 @@
   "conferido": false
  },
  "pediatria-0047": {
+  "conceito": "**A luxação congênita da cabeça do rádio.** É a anomalia congênita **mais comum do cotovelo**. A cabeça do rádio está fora da sua articulação com o capítulo desde o nascimento, geralmente em direção **posterior** (às vezes posterolateral ou anterior).\n\n**As características.**\n- Na maioria dos casos é **bilateral**.\n- Frequentemente se associa a **outras manifestações**: síndromes e anomalias, como a síndrome **unha-patela**, a síndrome de **Larsen**, a de **Klippel-Feil**, a sinostose radioulnar, a **artrogripose** e várias displasias esqueléticas.\n- **Não há história de trauma**.\n- É frequentemente **assintomática** na infância e descoberta por acaso ou por uma limitação discreta. Na adolescência, pode surgir **dor**, estalido ou uma proeminência palpável.\n\n**Como diferenciar da luxação traumática (Monteggia não diagnosticada).** A distinção é importante, porque a luxação traumática crônica pode ser reconstruída, e a congênita não.\n\n| Achado | Congênita | Traumática (crônica) |\n|---|---|---|\n| Lado | Frequentemente **bilateral** | **Unilateral** |\n| Cabeça do rádio | **Convexa** (abaulada), sem a concavidade normal; colo longo e fino | Côncava, de forma normal |\n| Capítulo | **Hipoplásico** | Normal |\n| Ulna | Pode ser curva | Ulna com sinais da fratura antiga, ou curva |\n| Associações | Síndromes e outras anomalias | Nenhuma; história de trauma |\n\n**O tratamento.**\n- **Observação**: na maioria, a função é boa.\n- Na adolescência ou na vida adulta, se houver **dor** ou limitação por uma cabeça proeminente: **ressecção da cabeça do rádio**, feita **após o fim do crescimento** (para não causar migração do rádio e desvio do punho).\n- A **redução** cirúrgica não costuma funcionar, porque as superfícies articulares são malformadas.",
+  "correta": "**Correta: C (posterior e posterolateral).** Na luxação congênita da cabeça do rádio, os desvios mais comuns são o **posterior** e o **posterolateral**. A luxação anterior isolada e unilateral sugere uma lesão de Monteggia não diagnosticada.",
   "incorretas": {
-   "A": "O desvio anterior, sobretudo unilateral, sugere Monteggia traumático antigo.",
-   "B": "O desvio anteromedial não é o padrão da luxação congênita.",
-   "D": "O desvio posterior está certo, mas o componente associado é o posterolateral, não o posteromedial."
+   "A": "Os desvios **anterior** e anterolateral são menos comuns na forma congênita e sugerem uma luxação traumática (Monteggia).",
+   "B": "Os desvios **anterior** e anteromedial não são os mais frequentes na luxação congênita.",
+   "D": "O desvio posterior está certo, mas o segundo mais comum é o **posterolateral**, e não o posteromedial."
   },
-  "conceito": "A **luxação congênita da cabeça do rádio** é a anomalia congênita mais comum do cotovelo. Os desvios mais comuns são **posterior** e **posterolateral**.\n\n**As características**: em geral **bilateral**, associada a outras anomalias (sinostose radioulnar, síndrome unha-patela, Ehlers-Danlos, Larsen), cabeça do rádio pequena e **convexa** (em cúpula), capítulo hipoplásico e ulna reta.\n\n**Por que a direção importa**: uma luxação **anterior** da cabeça do rádio em criança, sobretudo unilateral, deve fazer pensar em **lesão de Monteggia** antiga que passou despercebida. Ela tem tratamento (reconstrução), ao contrário da congênita.\n\n**Como separar**:\n\n**congênita**: bilateral, posterior ou posterolateral, cabeça convexa, capítulo hipoplásico, ulna reta;\n\n**Monteggia antigo**: unilateral, em geral anterior, cabeça côncava normal, capítulo normal, ulna com curvatura.\n\n**O tratamento da congênita**: observação; se houver dor ou limitação depois da maturidade, ressecção da cabeça do rádio.\n\n**Na prova**: luxação congênita da cabeça do rádio = desvio **posterior** e **posterolateral**.",
-  "correta": "Os desvios mais comuns da luxação congênita da cabeça do rádio são o posterior e o posterolateral.",
   "referencias": [
    "Congenital deformities of the upper limbs: Part II. https://pmc.ncbi.nlm.nih.gov/articles/PMC6565893/",
-   "Congenital radial head dislocation: narrative review. https://pubmed.ncbi.nlm.nih.gov/42611687/"
+   "Congenital radial head dislocation: narrative review. https://pubmed.ncbi.nlm.nih.gov/42611687/",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0048": {
@@ -1355,17 +1356,18 @@
   "conferido": false
  },
  "pediatria-0090": {
+  "conceito": "**A síndrome de Klippel-Feil.** É a **fusão congênita** de duas ou mais vértebras **cervicais**, por falha da **segmentação** dos somitos entre a 3ª e a 8ª semanas de gestação. Pode ser isolada ou fazer parte de síndromes, e há genes envolvidos (como GDF6, GDF3 e MEOX1).\n\n**A tríade clássica.**\n1. **Implantação baixa do cabelo** na nuca.\n2. **Pescoço curto** (\"pescoço de cisne invertido\").\n3. **Limitação do movimento** cervical (sobretudo da rotação e da inclinação lateral).\n\nA tríade completa aparece em **menos da metade** dos pacientes. A limitação do movimento é o achado mais constante. Muitos casos são descobertos por acaso numa radiografia.\n\n**A classificação clássica (Feil).**\n\n| Tipo | Fusão |\n|---|---|\n| I | **Fusão maciça** de muitas vértebras cervicais (e torácicas altas) em bloco |\n| II | Fusão de **um ou dois** níveis (o mais comum), muitas vezes com hemivértebras e occipitalização do atlas |\n| III | Fusões cervicais **associadas** a fusões torácicas ou lombares |\n\n**As associações: o que mais procurar.** São muito frequentes e, às vezes, mais importantes que a própria fusão:\n- **Escoliose** (congênita ou idiopática): a mais comum.\n- **Deformidade de Sprengel** (escápula alta), às vezes com osso omovertebral.\n- **Anomalias renais** (agenesia renal unilateral): pedir **ultrassonografia renal**.\n- **Surdez** e alterações do ouvido.\n- **Cardiopatias** congênitas.\n- **Sincinesia** (movimentos em espelho das mãos).\n- Malformação de Chiari, siringomielia, costelas cervicais.\n\n**O risco neurológico.** Os segmentos **móveis** entre os blocos fundidos sofrem **sobrecarga** e podem desenvolver **instabilidade**, artrose precoce e estenose. Os padrões de maior risco são as fusões longas com um segmento móvel entre elas e as anomalias da junção craniocervical. O paciente pode ter lesão medular com traumas menores.\n\n**A conduta.**\n- Radiografias **dinâmicas** (flexão e extensão) e ressonância nos casos de risco.\n- **Orientação** para evitar esportes de contato e de colisão nos padrões de alto risco.\n- Cirurgia (artrodese ou descompressão) para instabilidade, déficit neurológico ou dor refratária.",
+  "correta": "**Correta: D (síndrome de Klippel-Feil).** A tríade de **implantação baixa do cabelo na nuca**, **pescoço curto** e **limitação do movimento cervical** é a apresentação clássica da síndrome de Klippel-Feil, a fusão congênita de vértebras cervicais. A tríade completa aparece em menos da metade dos pacientes.",
   "incorretas": {
-   "A": "A neurofibromatose se manifesta com manchas café com leite e neurofibromas, não com essa tríade.",
-   "B": "A síndrome de Larsen tem luxações múltiplas e face achatada.",
-   "C": "\"Displasia cervical familiar\" não é a síndrome descrita por essa tríade."
+   "A": "A **neurofibromatose** pode causar deformidades cervicais (cifose distrófica), mas não a tríade clássica de cabelo baixo, pescoço curto e limitação de movimento.",
+   "B": "A **síndrome de Larsen** cursa com luxações múltiplas (joelhos, quadris, cotovelos) e pode ter cifose cervical, mas não define a tríade.",
+   "C": "A **displasia cervical familiar** não é a entidade clássica associada a essa tríade."
   },
-  "conceito": "A **síndrome de Klippel-Feil** é a **fusão congênita de vértebras cervicais**, por falha de segmentação durante a formação da coluna.\n\n**A tríade clássica**: **implantação baixa do cabelo na nuca**, **pescoço curto** e **limitação do movimento cervical**. A tríade completa aparece em **menos da metade** dos pacientes.\n\n**As associações que precisam ser investigadas**:\n\n**escápula**: deformidade de **Sprengel** em cerca de 30%;\n\n**rim**: agenesia e outras malformações (ultrassom);\n\n**audição**: surdez;\n\n**coração**: defeitos septais;\n\n**coluna**: escoliose congênita;\n\n**neurológico**: movimentos em espelho (sincinesia).\n\n**O risco**: os segmentos **móveis** ao lado das fusões trabalham mais e podem ficar **instáveis**; um trauma pequeno pode causar lesão medular. Em alguns padrões de fusão, esportes de contato são desaconselhados.\n\n**As alternativas**: neurofibromatose (manchas café com leite, neurofibromas) e síndrome de Larsen (luxações múltiplas, face achatada).\n\n**Na prova**: cabelo baixo, pescoço curto e pouco movimento cervical = **Klippel-Feil**.",
-  "correta": "A implantação baixa do cabelo, o pescoço curto e a limitação do movimento cervical formam a tríade clássica da Klippel-Feil.",
   "referencias": [
-   "Pediatric Orthopaedic Society of North America (POSNA). Klippel Feil Syndrome. https://posna.org/physician-education/study-guide/klippel-feil-syndrome"
+   "Pediatric Orthopaedic Society of North America (POSNA). Klippel Feil Syndrome. https://posna.org/physician-education/study-guide/klippel-feil-syndrome",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0091": {
@@ -2620,14 +2622,18 @@
   "conferido": false
  },
  "pediatria-0190": {
+  "conceito": "**A deformidade de Sprengel.** É a **elevação congênita da escápula**, a anomalia congênita mais comum da cintura escapular. Durante a vida embrionária, a escápula se forma na região **cervical**, por volta da 5ª semana, e **desce** até sua posição torácica entre a 9ª e a 12ª semana. Na deformidade de Sprengel, essa descida **falha**.\n\n**Os achados.**\n- Escápula **alta, pequena e rodada**: o ângulo inferior aponta para medial e o ângulo superomedial fica alto e curvo para a frente.\n- Limitação da **abdução** do ombro, porque a escápula não roda.\n- Em cerca de **um terço** dos casos, há o **osso omovertebral**: uma barra óssea, cartilaginosa ou fibrosa, que liga o ângulo superomedial da escápula aos processos espinhosos ou às lâminas das vértebras cervicais inferiores.\n- **Associações**: síndrome de **Klippel-Feil**, escoliose congênita, anomalias de costelas e renais.\n\n**A classificação de Cavendish (estética).**\n\n| Grau | Gravidade | Aparência |\n|---|---|---|\n| **1** | **Muito leve** | Ombros nivelados; **sem deformidade visível com a criança vestida** |\n| 2 | Leve | Ombros quase nivelados; deformidade **visível vestido**, como um volume na base do pescoço |\n| 3 | Moderada | Ombro elevado de **2 a 5 cm**; deformidade facilmente visível |\n| 4 | Grave | Ombro muito elevado; ângulo superior da escápula perto do **occipital** |\n\nNão existe grau 0: a escala começa no grau 1.\n\n**A classificação radiográfica de Rigault.** Usa a altura do ângulo superomedial da escápula em relação à coluna: abaixo de T4 (grau I), entre T2 e T4 (grau II) e acima de T2 (grau III).\n\n**O tratamento.**\n- Graus **1 e 2** de Cavendish: geralmente **observação**, pois a função costuma ser boa.\n- Graus **3 e 4**, com limitação funcional ou deformidade estética importante: **cirurgia**, idealmente entre **3 e 8 anos**.\n  - **Woodward**: desinserção dos músculos da linha média e reinserção mais baixa.\n  - **Green**: liberação dos músculos na escápula, com descida e rotação.\n  - Em ambas, faz-se a **ressecção do osso omovertebral** e da porção superomedial da escápula.\n- Para proteger o **plexo braquial** ao abaixar a escápula, muitos associam a **osteotomia da clavícula**.\n\n**As técnicas de Woodward e de Green em detalhe.**\n- **Woodward**: os músculos que prendem a escápula à **coluna** (trapézio e romboides) têm a sua **origem** (nos processos espinhosos) **desinserida** da linha média. A escápula é **abaixada** e rodada até a posição correta, e as origens musculares são **reinseridas mais distalmente** (mais para baixo) nos processos espinhosos. O osso omovertebral e a porção superomedial da escápula são ressecados.\n- **Green**: os músculos são liberados da **escápula** (as inserções), a escápula é abaixada, e os músculos são reinseridos nela na nova posição.",
+  "correta": "**Correta: A (origem da musculatura paraescapular para distal).** Na técnica de Woodward para a deformidade de Sprengel, as **origens** do trapézio e dos romboides nos processos espinhosos são desinseridas, a escápula é abaixada, e as origens são **reinseridas mais distalmente** na linha média.",
   "incorretas": {
-   "B": "Mexer na inserção, na própria escápula, é o princípio da técnica de Green.",
-   "C": "A origem está certa, mas a transferência é para distal, para descer a escápula.",
-   "D": "Erra os dois pontos: Woodward mexe na origem e a leva para distal."
+   "B": "A desinserção das **inserções** musculares (na escápula) caracteriza a técnica de **Green**, e não a de Woodward.",
+   "C": "As origens são transferidas para **distal**, e não para proximal, para levar a escápula para baixo.",
+   "D": "A técnica de Woodward mexe nas **origens**, e não nas inserções, e o sentido é **distal**."
   },
-  "conceito": "Na **deformidade de Sprengel**, a escápula é alta, pequena e rodada, muitas vezes presa à coluna cervical por um **osso omovertebral**. A cirurgia, indicada entre 3 e 8 anos quando há limitação funcional ou estética, busca **descer e rodar** a escápula.\n\n**As duas técnicas clássicas**:\n\n**Woodward**: mexe na **origem** dos músculos paraescapulares, que fica nos **processos espinhosos**. O trapézio e os romboides são desinseridos da coluna, a escápula é puxada para baixo e a origem é reinserida mais **distal** (mais baixo nos processos espinhosos);\n\n**Green**: mexe na **inserção**, desinserindo os músculos na própria **escápula**, que é descida e os músculos reinseridos.\n\n**Os gestos associados**: ressecção **extraperiosteal** do omovertebral e, muitas vezes, **osteotomia da clavícula** para proteger o plexo braquial ao descer a escápula.\n\n**O que se ganha**: principalmente **abdução**, que é o movimento mais limitado, porque a escápula volta a rodar sobre o tórax.\n\n**Na prova**: Woodward = **origem** dos músculos transferida para **distal**.",
-  "correta": "Na técnica de Woodward, a origem do trapézio e dos romboides nos processos espinhosos é desinserida e reinserida mais distal, descendo a escápula.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Woodward JW. Congenital elevation of the scapula: correction by release and transplantation of muscle origins. J Bone Joint Surg Am. 1961;43:219-228."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0191": {
@@ -4576,19 +4582,19 @@
   "conferido": false
  },
  "pediatria-0385": {
+  "conceito": "**A distrofia muscular de Duchenne.** É a distrofia muscular mais comum da infância, de herança **recessiva ligada ao X** (afeta meninos). A mutação no gene da **distrofina** deixa a membrana da fibra muscular frágil: as fibras se rompem a cada contração e são substituídas por **gordura e tecido fibroso**. A **CPK** fica muito elevada desde o nascimento.\n\n**A evolução.** Os primeiros sinais aparecem entre **3 e 5 anos**: quedas frequentes, dificuldade para correr, subir escadas e levantar do chão. A fraqueza começa nos músculos **proximais** (cintura pélvica, depois escapular). Sem tratamento, a marcha se perde por volta dos **10 a 12 anos** (os corticoides atrasam essa perda). Depois surgem **escoliose** e insuficiência respiratória e cardíaca.\n\n**A marcha anserina (de pato).** É a marcha de quem tem os **glúteos médios fracos dos dois lados**: a cada passo, a pelve **cai** para o lado do membro em balanço (Trendelenburg), e o paciente **balança o tronco** de um lado para o outro para manter o equilíbrio. Parece o andar de um pato.\n\n**As compensações típicas da Duchenne.**\n- **Hiperlordose lombar**: com os **glúteos máximos** e os extensores do quadril fracos, o paciente joga o **tronco para trás**, colocando a linha de gravidade **atrás do quadril**, que fica estendido passivamente. O resultado é uma lordose lombar acentuada e o abdome protuso.\n- **Marcha na ponta dos pés**: a contratura do **tendão calcâneo** (e o equino) ajuda a manter a linha de gravidade à frente do joelho, compensando a fraqueza do **quadríceps**.\n- **Base alargada**.\n- **Sinal de Gowers**: para levantar do chão, a criança \"**escala as próprias pernas**\" com as mãos, empurrando as coxas, pela fraqueza dos extensores do quadril.\n- **Pseudo-hipertrofia das panturrilhas**: aumento de volume pela substituição do músculo por gordura e fibrose.\n\n**Por que não é a doença de Parkinson.** Na doença de Parkinson (adulto), a marcha é **festinante**, com passos curtos, o tronco **fletido** para a frente e pouco balanço dos braços.\n\n**O papel do ortopedista.** Órteses noturnas e alongamentos para o equino; cirurgia de partes moles em casos selecionados; e, sobretudo, a **artrodese da coluna** para a escoliose progressiva, de preferência antes que a função pulmonar caia demais.",
+  "correta": "**Correta: D (distrofia muscular de Duchenne, e o paciente apresenta uma hiperlordose lombar).** A marcha anserina, pela fraqueza dos glúteos médios, é típica da distrofia de Duchenne. A fraqueza dos extensores do quadril faz o paciente jogar o tronco para trás, com **hiperlordose lombar**.",
   "incorretas": {
-   "A": "Na Parkinson a marcha é festinante, não anserina.",
-   "B": "Na Parkinson o tronco fica fletido, não lordótico, e a marcha é festinante.",
-   "C": "A Duchenne está certa, mas a compensação é a hiperlordose lombar, não a cifose torácica."
+   "A": "Na doença de **Parkinson**, a marcha é **festinante**, com passos curtos e tronco fletido, e não anserina.",
+   "B": "A marcha anserina não é a da doença de **Parkinson**, que tem marcha festinante.",
+   "C": "A distrofia de Duchenne está certa, mas a postura típica é a **hiperlordose lombar**, e não a hipercifose torácica."
   },
-  "conceito": "A **marcha anserina** (de pato) é a marcha da **fraqueza da cintura pélvica**. A cada passo, sem glúteo médio para segurar, a **pelve cai** para o lado do membro em balanço e o **tronco oscila** para os lados, como um pato.\n\n**Na distrofia muscular de Duchenne**, a marcha anserina vem com outras compensações:\n\n**hiperlordose lombar**: os extensores do quadril (glúteo máximo) estão fracos, e a criança joga o tronco para trás para manter a linha de gravidade **atrás do quadril**, travando-o em extensão sem esforço muscular;\n\n**base alargada**, para ganhar estabilidade;\n\n**marcha na ponta dos pés** (equino), que ajuda a manter o joelho estendido com o quadríceps fraco.\n\n**Outras causas de marcha anserina**: displasia do quadril bilateral e coxa vara bilateral, em que os abdutores ficam sem alavanca.\n\n**A marcha da Parkinson é outra**: **festinante**, com passos curtos e arrastados que aceleram, **tronco fletido** para a frente e **cifose**, sem a lordose compensatória.\n\n**Na prova**: a marcha anserina é observada na **distrofia de Duchenne**, com **hiperlordose lombar**.",
-  "correta": "Na Duchenne, a fraqueza da cintura pélvica gera a marcha anserina, e a hiperlordose compensa os extensores do quadril fracos.",
   "referencias": [
-   "AO Surgery Reference. https://surgeryreference.aofoundation.org/",
    "POSNA Study Guide. https://posna.org/physician-education/study-guide",
-   "Leite, Faloppa, Propedêutica Ortopédica e Traumatológica, 1ª edição, Cap. 20"
+   "Leite, Faloppa, Propedêutica Ortopédica e Traumatológica, 1ª edição, Cap. 20",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0386": {
@@ -6671,17 +6677,18 @@
   "conferido": false
  },
  "pediatria-0558": {
+  "conceito": "**A articulação esternoclavicular na criança e no adolescente.** A **fise medial da clavícula** é a **última** do corpo a se fechar: o centro de ossificação aparece por volta dos 18 a 20 anos e se funde por volta dos **23 a 25 anos**. Os ligamentos esternoclaviculares e costoclaviculares são **mais fortes** que a fise. Por isso, no jovem, o trauma que no adulto luxaria a esternoclavicular produz, na maioria das vezes, um **descolamento epifisário** (Salter-Harris I ou II): a pequena epífise fica no lugar, presa ao esterno, e a **metáfise** (a diáfise da clavícula) é que se desloca.\n\n**A direção do desvio.**\n- **Anterior**: a mais comum. A metáfise faz saliência visível e palpável à frente do esterno.\n- **Posterior**: rara, mas **perigosa**, pela proximidade da traqueia, do esôfago e dos grandes vasos (dispneia, disfagia, congestão venosa).\n\n**A postura do paciente.** O **esternocleidomastóideo** se insere na porção medial da clavícula (no fragmento metafisário que se deslocou). Com o desvio **anterior**, o músculo puxa o fragmento para a **frente** (direção **anterior**), e o paciente **inclina a cabeça para o lado afetado**, encurtando o músculo e aliviando a tração dolorosa sobre a lesão.\n\n**O diagnóstico.** A radiografia é difícil de interpretar; a incidência de **Serendipity** (feixe a 40° em direção cefálica, centrado no manúbrio) ajuda, mas o exame de escolha é a **tomografia**.\n\n**O tratamento.**\n- **Desvio anterior**: redução fechada, se possível; se instável, aceita-se. A fise tem grande potencial de **remodelação** (ainda há muitos anos de crescimento), e o resultado funcional costuma ser excelente.\n- **Desvio posterior**: **redução urgente** (fechada, com tração do braço em abdução e extensão e uma pinça puxando a clavícula para a frente), com cirurgião torácico disponível. Se falhar, **redução aberta** e sutura ou fixação com fios inabsorvíveis (nunca fios lisos de Kirschner, pelo risco de migração para o mediastino).",
+  "correta": "**Correta: A (afetado e anterior).** Na lesão fisária esternoclavicular com desvio **anterior** da metáfise, o esternocleidomastóideo puxa o fragmento para a **frente** (direção anterior), e o paciente **inclina a cabeça para o lado afetado** para relaxar o músculo e aliviar a dor.",
   "incorretas": {
-   "B": "A inclinação para o lado afetado está certa, mas o ECM traciona a metáfise anteriormente.",
-   "C": "A tração anterior está certa, mas a cabeça inclina para o lado afetado.",
-   "D": "Erra os dois pontos: a cabeça inclina para o lado afetado e o ECM traciona para anterior."
+   "B": "A inclinação para o lado afetado está certa, mas, no desvio anterior, a tração do esternocleidomastóideo é para **anterior**, acompanhando o fragmento.",
+   "C": "O paciente inclina a cabeça para o lado **afetado**, e não para o não afetado.",
+   "D": "Erra a inclinação (é para o lado afetado) e a direção da tração (é anterior, no desvio anterior)."
   },
-  "conceito": "A **fise medial da clavícula** é a última fise do corpo a fechar, entre **23 e 25 anos**. Por isso, em crianças, adolescentes e adultos jovens, o que parece uma luxação esternoclavicular é, na maioria das vezes, um **descolamento fisário**: a **epífise** fica presa ao esterno com o periósteo e os ligamentos, e a **metáfise** (o resto da clavícula) se desloca.\n\n**O desvio anterior**, o mais comum e o mais benigno:\n\n**a cabeça inclina para o lado afetado**: o esternocleidomastoideo (ECM) entra em espasmo, e a inclinação alivia a dor;\n\n**o ECM traciona a metáfise anteriormente** (e para cima), porque se insere na parte medial da clavícula;\n\n**tratamento conservador**: tipoia e analgesia; a fise e o periósteo remodelam bem, e a saliência costuma diminuir.\n\n**O desvio posterior**: é **emergência**, porque a metáfise vai em direção à traqueia, ao esôfago e aos grandes vasos. Pede tomografia e redução no centro cirúrgico, com cirurgião torácico disponível.\n\n**Na prova**: no desvio anterior, a cabeça inclina para o **lado afetado** e o ECM traciona para **anterior**.",
-  "correta": "A cabeça inclina para o lado lesado por espasmo antálgico, e o ECM puxa a metáfise para a frente.",
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 29"
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 29",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0559": {
@@ -6972,17 +6979,18 @@
   "conferido": false
  },
  "pediatria-0584": {
+  "conceito": "**A fratura isolada da diáfise da ulna na criança.** É menos comum que a fratura dos dois ossos do antebraço. Antes de aceitar que é uma fratura **isolada**, é obrigatório olhar a **cabeça do rádio**: uma fratura da ulna com a cabeça do rádio luxada é uma **lesão de Monteggia**, e a luxação passa despercebida com frequência. A linha que passa pelo eixo do rádio deve cruzar o **centro do capítulo** em todas as incidências.\n\n**O mecanismo.** Trauma **direto** sobre a ulna (a \"fratura do cassetete\", ao proteger a cabeça com o antebraço) ou queda com o antebraço em rotação.\n\n**A redução descrita por Blount.** A ulna é um osso reto e subcutâneo, e o fragmento distal tende a se desviar em **varo** (para o lado radial), puxado pelo **pronador quadrado** e pela tensão da membrana interóssea. Blount descreveu a redução fechada:\n- aplicar uma força em **valgo** no local da fratura (contrária ao varo, abrindo o lado radial);\n- com **pressão do polegar** sobre o **fragmento distal**, empurrando-o de volta para o alinhamento;\n- e manter com gesso axilopalmar bem **moldado**, com o cotovelo fletido.\n\n**O que se tolera.** Na criança, a remodelação na diáfise é **limitada**, sobretudo para os desvios de **rotação**, que não remodelam. Em geral, aceitam-se angulações pequenas (cerca de 10° na criança maior, um pouco mais na menor) e nenhuma rotação. Desvios maiores comprometem a **prono-supinação**.\n\n**Quando fixar.** Fraturas instáveis, irredutíveis, expostas ou em crianças maiores com desvio inaceitável: **haste intramedular flexível** (entrada pelo olécrano ou pela metáfise distal) ou placa.\n\n**A armadilha: a Monteggia.** Toda fratura da ulna, mesmo uma deformidade plástica, exige a avaliação da cabeça do rádio. Se a cabeça estiver luxada, a ulna deve ser corrigida com restauração do comprimento e do alinhamento, e a cabeça do rádio geralmente reduz.",
+  "correta": "**Correta: B (valgo e pressão com o polegar sobre o fragmento distal).** Na fratura isolada da diáfise da ulna na criança, a manobra descrita por Blount aplica uma força em **valgo** no local da fratura, contrária ao desvio em varo, com **pressão do polegar sobre o fragmento distal**, mantida com gesso bem moldado.",
   "incorretas": {
-   "A": "A pressão sobre o fragmento distal está certa, mas a força é em valgo, não em varo.",
-   "C": "Erra os dois pontos: a força é em valgo e a pressão é sobre o fragmento distal.",
-   "D": "O valgo está certo, mas a pressão do polegar é sobre o fragmento distal."
+   "A": "A pressão sobre o fragmento distal está certa, mas a força é em **valgo**, contrária ao desvio em varo da ulna.",
+   "C": "A força em **varo** acentuaria o desvio. E a pressão é feita sobre o fragmento **distal**.",
+   "D": "A força em valgo está certa, mas a pressão do polegar é sobre o fragmento **distal**, e não sobre o proximal."
   },
-  "conceito": "Na criança, a **fratura isolada da diáfise da ulna** exige, antes de tudo, **descartar uma lesão de Monteggia**: a fratura da ulna pode vir com luxação da cabeça do rádio, às vezes sutil. Em toda radiografia, a **linha radiocapitelar** (o eixo do rádio) deve passar pelo centro do capítulo, em qualquer incidência.\n\n**A ulna é subcutânea**: a deformidade se vê e se palpa, e a redução pode ser guiada pela borda do osso.\n\n**A manobra de redução de Blount**: aplica-se uma força no foco em **valgo**, com o **polegar pressionando o fragmento distal**, para corrigir a angulação típica. Depois, gesso axilopalmar com boa **moldagem interóssea**, que mantém os ossos afastados.\n\n**Quando a fratura é instável** ou não se mantém no gesso: **haste intramedular flexível**.\n\n**Cuidado com a deformidade plástica**: a ulna pode estar apenas encurvada, sem traço visível, e mesmo assim manter a cabeça do rádio luxada; a correção da curvatura é necessária para reduzir a cabeça.\n\n**Na prova**: a manobra de Blount aplica força em **valgo** com **pressão do polegar sobre o fragmento distal**.",
-  "correta": "Blount descreveu a redução com força em valgo no foco e pressão do polegar sobre o fragmento distal.",
   "referencias": [
-   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), Cap. 9"
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn), Cap. 9",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0585": {
@@ -7300,17 +7308,18 @@
   "conferido": false
  },
  "pediatria-0607": {
+  "conceito": "**As lesões da fise.** A **placa de crescimento** é o ponto mais fraco do esqueleto da criança. Cerca de 15 a 30% das fraturas infantis a acometem. O risco principal é o **distúrbio de crescimento** (parada total ou parcial, com encurtamento ou deformidade angular), que depende do tipo de lesão, da fise envolvida e da idade.\n\n**A classificação de Salter-Harris (a mais usada).**\n\n| Tipo | Traço | Prognóstico |\n|---|---|---|\n| I | Só pela **fise** (descolamento) | Bom |\n| II | Fise + fragmento **metafisário** (o mais comum) | Bom |\n| III | Fise + **epífise** até a articulação | Exige redução anatômica |\n| IV | **Metáfise, fise e epífise** | Risco de barra óssea; redução anatômica |\n| V | **Esmagamento** da fise | Diagnóstico tardio; mau prognóstico |\n| VI (Rang) | Lesão do **anel pericondral** (zona de Ranvier) | Barra periférica e deformidade angular |\n\n**A classificação de Peterson.** Baseada num grande estudo epidemiológico, ela reorganiza as lesões e inclui dois tipos que a de Salter-Harris não contemplava:\n\n| Tipo | Descrição |\n|---|---|\n| **I** | Fratura **transversa da metáfise** que se estende **longitudinalmente até a fise**, sem atravessá-la (não existe em Salter-Harris) |\n| II | Equivalente ao Salter-Harris **II** |\n| III | Equivalente ao Salter-Harris **I** |\n| IV | Equivalente ao Salter-Harris **III** |\n| V | Equivalente ao Salter-Harris **IV** |\n| **VI** | **Fratura exposta** com **perda de parte da fise** (por exemplo, lesões por cortador de grama, abrasão por asfalto, ferimentos por arma de fogo) |\n\n**O tipo VI de Peterson.** A fise **perdida** não se regenera. Haverá, quase sempre, uma **barra óssea** e um distúrbio de crescimento, muitas vezes grave. O tratamento inicial é o da fratura exposta (desbridamento, antibióticos, cobertura). Depois, faz-se o acompanhamento do crescimento e o tratamento das deformidades: ressecção da barra (se pequena), epifisiodese do restante da fise ou do osso vizinho, osteotomias e alongamentos.\n\n**Por que não confundir.**\n- A lesão do **anel pericondral** é o tipo **VI de Rang** (acrescentado à classificação de Salter-Harris), e não o VI de Peterson.\n- O **esmagamento completo** da fise é o tipo **V de Salter-Harris**.\n- A **diminuição do crescimento** é uma **consequência** possível de várias lesões, e não a definição de um tipo.",
+  "correta": "**Correta: C (fratura exposta com perda de parte da fise).** Na classificação de Peterson, o tipo VI é a **fratura exposta com perda de parte da fise**, como nas lesões por cortador de grama ou por abrasão. A fise perdida não se regenera, e o distúrbio de crescimento é quase certo.",
   "incorretas": {
-   "A": "A lesão do anel pericondral é o tipo VI de Rang, não de Peterson.",
-   "B": "O esmagamento completo da fise é a Salter-Harris V.",
-   "D": "A diminuição do crescimento é uma consequência possível, não a definição do tipo VI."
+   "A": "A lesão do **anel pericondral** é o tipo **VI de Rang**, acrescentado à classificação de Salter-Harris, e não o tipo VI de Peterson.",
+   "B": "O **esmagamento completo da fise** corresponde ao tipo **V de Salter-Harris**.",
+   "D": "A **diminuição acentuada do crescimento** é uma **consequência** possível de várias lesões fisárias, e não a definição de um tipo da classificação."
   },
-  "conceito": "A **classificação de Peterson** das lesões fisárias se baseia em dados epidemiológicos e acrescenta tipos que **Salter-Harris** não descreveu:\n\n**tipo I**: fratura **metafisária transversa** que se estende até a fise (tipo novo);\n\n**tipo II**: equivale à **Salter-Harris II**;\n\n**tipo III**: equivale à **Salter-Harris I**;\n\n**tipo IV**: equivale à **Salter-Harris III**;\n\n**tipo V**: equivale à **Salter-Harris IV**;\n\n**tipo VI**: **fratura exposta** com **perda de parte da fise**, por cortador de grama, abrasão no asfalto, ferimento por arma de fogo. Não existe em Salter-Harris.\n\n**Por que o tipo VI é grave**: a parte perdida da fise não se regenera, e a cicatrização forma uma **barra óssea**, com alto risco de parada de crescimento e deformidade angular.\n\n**Não confundir com o tipo VI de Rang**: na classificação de Salter-Harris ampliada por Rang, o tipo VI é a **lesão do anel pericondral** (periferia da fise), por avulsão ou abrasão.\n\n**O esmagamento completo da fise** é a Salter-Harris V.\n\n**Na prova**: o tipo VI de Peterson é a **fratura exposta com perda de parte da fise**.",
-  "correta": "O tipo VI de Peterson é a fratura exposta com perda de tecido fisário, como a de cortador de grama, com alto risco de barra.",
   "referencias": [
-   "Herring: Tachdjian’s Pediatric Orthopaedics 5th Ed. 1203 Pg (referência indicada na prova TARO 2016, questão 54)"
+   "Herring: Tachdjian’s Pediatric Orthopaedics 5th Ed. 1203 Pg (referência indicada na prova TARO 2016, questão 54)",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0608": {
@@ -7685,17 +7694,18 @@
   "conferido": false
  },
  "pediatria-0634": {
+  "conceito": "**A fratura do colo do fêmur na criança é rara e perigosa.** Representa menos de 1% das fraturas da criança e exige **trauma de alta energia**, como atropelamento ou queda de altura. Quando ocorre com trauma mínimo, deve-se pensar em **osso patológico** (cisto ósseo, displasia fibrosa). Em lactentes, deve-se pensar em **maus-tratos**.\n\n**Por que é perigosa: a irrigação da cabeça.** Na criança, a cabeça femoral depende quase só dos **vasos retinaculares** (ramos da **artéria circunflexa femoral medial**), que sobem pela face posterossuperior do colo. A artéria do ligamento redondo contribui pouco, e a fise funciona como barreira aos vasos metafisários. Uma fratura desviada do colo **rompe** esses vasos. A **tamponada** do hematoma dentro da cápsula também piora a perfusão.\n\n**A classificação de Delbet (modificada por Colonna).**\n\n| Tipo | Local | Necrose avascular |\n|---|---|---|\n| **I** | **Transepifisário**: descolamento pela fise, com ou sem luxação da cabeça | **Altíssima** (até quase 100% se houver luxação) |\n| **II** | **Transcervical**: no meio do colo | **Alta**, cerca de 50% |\n| **III** | **Cervicotrocantérico** (basocervical) | Cerca de 25% |\n| **IV** | **Intertrocantérico** | Baixa, cerca de 10% ou menos |\n\n**Qual é o mais frequente.** O **tipo II, transcervical**, responde por cerca de **40 a 50%** dos casos. O tipo III vem em seguida, com cerca de 30 a 35%. O IV é menos frequente, e o I é o mais raro, abaixo de 10%.\n\n**A regra do risco.** Quanto mais **proximal** a fratura, maior o risco de **necrose avascular**.\n\n**Complicações.**\n- **Necrose avascular**: a mais temida, de pior prognóstico; aparece nos primeiros 1 a 2 anos.\n- **Coxa vara**.\n- **Pseudoartrose**.\n- **Fechamento precoce da fise**, com discrepância.\n\n**Tratamento.** Na fratura desviada:\n- **redução** anatômica urgente, fechada ou aberta;\n- **descompressão da cápsula** (capsulotomia ou aspiração), que reduz a tamponada;\n- **fixação interna**, com parafusos que podem **cruzar a fise** nos tipos I e II se necessário, porque a estabilidade é prioritária.",
+  "correta": "**Correta: C (osteonecrose).** Na fratura da extremidade proximal do fêmur da criança, a complicação de pior prognóstico é a **osteonecrose** da cabeça femoral, pela lesão dos vasos retinaculares. Ela pode deformar a cabeça e levar à artrose precoce, e seu risco é maior nas fraturas mais proximais (Delbet I e II).",
   "incorretas": {
-   "A": "A infecção é rara nessa fratura.",
-   "B": "A condrólise é mais associada à epifisiólise.",
-   "D": "A pseudartrose ocorre, mas tem solução melhor que a necrose."
+   "A": "A **infecção** é uma complicação rara dessas fraturas, geralmente pós-operatória, e tem tratamento.",
+   "B": "A **condrólise** é rara após a fratura do colo e é mais associada à epifisiólise e à penetração de implantes na articulação.",
+   "D": "A **pseudoartrose** ocorre, mas pode ser tratada com osteotomia valgizante e enxerto, com prognóstico melhor que o da osteonecrose."
   },
-  "conceito": "As **fraturas do fêmur proximal** (colo do fêmur) na criança são raras, mas têm muitas complicações, porque a irrigação da cabeça femoral é frágil e depende dos **vasos retinaculares**, que passam pelo colo.\n\n**A complicação mais frequente e de pior prognóstico**: a **osteonecrose** da cabeça femoral. Leva a colapso, deformidade, artrose precoce e, muitas vezes, a cirurgias de salvamento. O risco cai do **Delbet I** (transepifisário, quase 100% na IB) para o **IV** (intertrocantérico, cerca de 10%).\n\n**As outras complicações**:\n\n**coxa vara**: por consolidação viciosa ou pseudartrose;\n\n**fechamento fisário precoce**: encurtamento do membro;\n\n**pseudartrose**: mais nos tipos II e III; costuma ter solução melhor (osteotomia valgizante com enxerto) que a necrose.\n\n**Como reduzir o risco**: **redução anatômica urgente**, **descompressão da cápsula** para drenar o hematoma e fixação estável.\n\n**As alternativas menos ligadas a essa fratura**: a **infecção** é rara; a **condrólise** é mais associada à **epifisiólise** (inclusive pela penetração do parafuso na articulação).\n\n**Na prova**: a complicação de pior prognóstico da fratura do fêmur proximal da criança é a **osteonecrose**.",
-  "correta": "A osteonecrose da cabeça femoral é a complicação mais frequente e a de pior prognóstico.",
   "referencias": [
-   "Tachdjian’s pediatric orthopaedics 5 Ed. 1393 Pg (referência indicada na prova TARO 2018, questão 96)"
+   "Tachdjian’s pediatric orthopaedics 5 Ed. 1393 Pg (referência indicada na prova TARO 2018, questão 96)",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0635": {
@@ -7713,17 +7723,18 @@
   "conferido": false
  },
  "pediatria-0636": {
+  "conceito": "**A deformidade plástica.** É uma lesão **exclusiva da criança**. O osso infantil é mais **elástico** e poroso. Quando recebe uma força de flexão, ele pode **encurvar sem quebrar**: sofre milhares de **microfraturas** ao longo da diáfise, que não aparecem na radiografia, e fica permanentemente curvo. Não há traço de fratura visível.\n\n**Onde ocorre.** Mais comum no **antebraço**, sobretudo na **ulna**, e às vezes no rádio, na fíbula e na clavícula.\n\n**Por que é importante reconhecer.**\n- A **ulna curva** impede a redução da cabeça do rádio. A deformidade plástica da ulna com **luxação da cabeça do rádio** é uma **lesão de Monteggia** (equivalente), e é facilmente perdida.\n- Num antebraço com fratura de um osso e o outro **curvo**, a fratura não reduz enquanto o osso encurvado não for corrigido.\n- A deformidade plástica **remodela mal**, sobretudo na criança maior, porque não há calo nem fratura para guiar a remodelação. Ela pode **limitar a prono-supinação**.\n\n**Quando corrigir.** O critério clássico depende da **angulação** e da **idade**.\n\n| Situação | Conduta |\n|---|---|\n| Angulação **maior que 20°** em criança **acima de 4 anos** | **Corrigir** |\n| Criança **abaixo de 4 anos** ou angulação pequena | Pode-se aceitar: o potencial de remodelação é maior |\n| Qualquer angulação que **impeça a redução** da cabeça do rádio ou de outro osso fraturado, ou que limite a rotação | **Corrigir** |\n\n**Como corrigir.** A redução exige **força grande e sustentada** sobre o ápice da curva, mantida por **2 a 3 minutos**, sob anestesia geral. O apoio sobre um fulcro acolchoado (o joelho do cirurgião ou um rolo) ajuda. A pressão deve ser distribuída para não criar uma fratura completa, embora, às vezes, se complete a fratura de propósito para conseguir alinhar. Depois, imobiliza-se com gesso axilopalmar bem moldado.\n\n**Na criança pequena (menos de 6 anos).** O potencial de remodelação da **angulação** é maior, e angulações pequenas (como 10°) são aceitas. O critério mais importante passa a ser a **função**: se a deformidade plástica **limita a rotação** do antebraço em cerca de **30° ou mais**, a redução incruenta está indicada, porque a perda de prono-supinação **não remodela** com o crescimento.",
+  "correta": "**Correta: D (limitação da rotação do antebraço de 30º).** Na criança com menos de 6 anos, angulações pequenas da deformidade plástica remodelam. A redução incruenta é indicada quando a deformidade **limita a rotação** do antebraço em cerca de **30°** ou mais, porque essa perda funcional não se corrige com o crescimento.",
   "incorretas": {
-   "A": "A angulação volar de 10° costuma remodelar na criança pequena.",
-   "B": "A angulação dorsal de 10° também costuma remodelar nessa idade.",
-   "C": "A limitação de 50° também indica redução, mas o limite a partir do qual se reduz é 30°."
+   "A": "Uma angulação **volar de 10°** na criança pequena tende a remodelar e não indica redução.",
+   "B": "Uma angulação **dorsal de 10°** também é tolerada na criança pequena.",
+   "C": "Uma limitação de **50°** obviamente indica redução, mas o limiar é menor: a partir de cerca de **30°** de perda de rotação."
   },
-  "conceito": "A **deformidade plástica** do antebraço é o osso encurvado sem traço de fratura. Na criança **pequena**, abaixo de 6 anos, a remodelação é boa, sobretudo para angulações pequenas no plano de movimento.\n\n**Quando a redução incruenta está indicada**:\n\n**limitação da rotação** do antebraço (pronação ou supinação) **maior que 30°**: o osso encurvado fecha o espaço interósseo e trava a rotação, que **não remodela**;\n\n**deformidade clínica** visível;\n\n**deformidade que impede reduzir** uma lesão associada, como a cabeça do rádio luxada no **equivalente de Monteggia**.\n\n**Quando observar**: angulação pequena, de cerca de 10°, com rotação livre, costuma **remodelar** nessa idade.\n\n**A técnica**: sob anestesia, aplicar uma força **lenta e contínua** sobre o ápice da curva, por alguns minutos, até endireitar; depois, gesso axilopalmar.\n\n**Sobre o limite**: uma limitação de **50°** também indica a redução, mas a questão pergunta o ponto a partir do qual se reduz, que é **30°**.\n\n**Na prova**: na deformidade plástica abaixo de 6 anos, reduzir quando há **limitação da rotação de 30°**.",
-  "correta": "A partir de cerca de 30° de perda da rotação, a deformidade plástica deve ser reduzida, porque a rotação não remodela.",
   "referencias": [
-   "Morrissy RT, Weinstein SL. Lovell and Winter’s pediatric orthopaedics. 7º ed. Philadelphia: Lippincott Williams & Wilkins, 2014. 7 Ed. 1755 Pg (referência indicada na prova TARO 2019, questão 47)"
+   "Morrissy RT, Weinstein SL. Lovell and Winter’s pediatric orthopaedics. 7º ed. Philadelphia: Lippincott Williams & Wilkins, 2014. 7 Ed. 1755 Pg (referência indicada na prova TARO 2019, questão 47)",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0637": {
@@ -8012,17 +8023,18 @@
   "conferido": false
  },
  "pediatria-0657": {
+  "conceito": "**A epidemiologia das fraturas na criança.** As fraturas são muito comuns na infância: cerca de **um terço** das crianças sofre pelo menos uma fratura até os 16 anos. A distribuição por local é bem conhecida e ajuda a entender a prática da ortopedia pediátrica.\n\n**As fraturas mais frequentes na criança e no adolescente (aproximadamente).**\n\n| Local | Frequência aproximada |\n|---|---|\n| **Rádio distal** (e antebraço distal) | A **mais comum**, cerca de 20 a 35% |\n| Mão (falanges e metacarpos) | Cerca de 15 a 20% |\n| **Clavícula** | Cerca de **10%** (cerca de 11% na série de Guarniero e colaboradores) |\n| Cotovelo (supracondiliana, côndilo lateral) | Cerca de 10% |\n| Tíbia e fíbula | Cerca de 10% |\n| Fêmur | Menos de 2% |\n\n**A fratura da clavícula na criança.**\n- É a fratura mais comum do **recém-nascido** (no parto, sobretudo na distocia de ombro e em bebês grandes). Pode ser confundida com a **paralisia braquial obstétrica** (pseudoparalisia) ou coexistir com ela.\n- Na criança maior, ocorre por **queda sobre o ombro**.\n- Quase sempre no **terço médio**.\n- Consolida **rapidamente**, com um calo volumoso que **remodela** em meses. Os pais devem ser avisados sobre o \"caroço\" do calo.\n\n**O tratamento.** Quase sempre **conservador**: tipoia simples (ou nada, no recém-nascido, apenas cuidado no manuseio) por 2 a 4 semanas. A imobilização em **oito** não traz vantagem sobre a tipoia e é desconfortável. A cirurgia fica para casos raros: fratura exposta, pele ameaçada, lesão neurovascular e, em discussão, adolescentes perto da maturidade com grande encurtamento.\n\n**As lesões da extremidade medial.** Na criança e no adolescente, as \"luxações esternoclaviculares\" são, na maioria, **descolamentos epifisários** da extremidade medial da clavícula, cuja fise é a **última a fechar** (por volta dos 23 a 25 anos). Os desvios **posteriores** exigem tomografia e redução urgente, pela proximidade dos grandes vasos e da traqueia.",
+  "correta": "**Correta: B (11).** Na série de Guarniero e colaboradores, as fraturas da clavícula representaram cerca de **11%** das fraturas em crianças e adolescentes, de acordo com a literatura, que as coloca em torno de 10% do total.",
   "incorretas": {
-   "A": "3% subestima a frequência das fraturas da clavícula.",
-   "C": "19% superestima a frequência das fraturas da clavícula.",
-   "D": "27% se aproxima da frequência das fraturas do antebraço distal, não da clavícula."
+   "A": "**3%** subestima a frequência das fraturas da clavícula, que estão entre as mais comuns da infância.",
+   "C": "**19%** superestima; essa faixa corresponde a fraturas ainda mais frequentes, como as da mão ou do antebraço distal.",
+   "D": "**27%** se aproxima da frequência das fraturas do **antebraço distal**, as mais comuns da infância, e não da clavícula."
   },
-  "conceito": "A **epidemiologia das fraturas** na criança ajuda a entender o que é comum e o que é raro:\n\n**antebraço distal**: as fraturas **mais frequentes** da infância e da adolescência, com cerca de 20 a 35% de todas;\n\n**clavícula**: responde por cerca de **10 a 15%** das fraturas da infância e da adolescência. O estudo de **Guarniero et al.** (Revista Brasileira de Ortopedia, 2011) encontrou um índice em torno de **11%**;\n\n**úmero distal** (sobretudo a supracondiliana): a fratura mais comum do cotovelo.\n\n**A clavícula em cada idade**:\n\n**recém-nascido**: é a **fratura mais comum**, por trauma de parto;\n\n**lactente sem história**: pensar em maus-tratos;\n\n**idade escolar**: queda sobre o ombro.\n\n**O tratamento**: quase sempre com tipoia; a clavícula da criança **remodela muito**, e o calo palpável diminui com o tempo.\n\n**Como avaliar as alternativas**: 3% subestima a frequência; 19% a superestima; 27% se aproxima mais da frequência das fraturas do antebraço distal, não da clavícula.\n\n**Na prova**: segundo Guarniero et al., as fraturas da clavícula respondem por cerca de **11%** das fraturas da criança e do adolescente.",
-  "correta": "O estudo de Guarniero et al. encontrou as fraturas da clavícula em cerca de 11% das fraturas pediátricas.",
   "referencias": [
-   "RBO, VOL 46, SUPLEMENTO 4, NOV- DEZ 2011, p. 35 (referência indicada na prova TARO 2012, questão 15)"
+   "RBO, VOL 46, SUPLEMENTO 4, NOV- DEZ 2011, p. 35 (referência indicada na prova TARO 2012, questão 15)",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0658": {
