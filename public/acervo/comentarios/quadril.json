@@ -6211,5 +6211,70 @@
   ],
   "geradoEm": "2026-10-05",
   "conferido": false
+ },
+ "quadril-0536": {
+  "conceito": "**Classificação de Young e Burgess das lesões do anel pélvico.** Baseia-se no **vetor de força** do trauma e é muito útil na emergência, porque cada mecanismo tem padrões de lesão associada e de sangramento previsíveis.\n\n| Mecanismo | Padrão típico |\n|---|---|\n| Compressão lateral (LC) | Fraturas transversas dos ramos púbicos, impactação do sacro, rotação interna da hemipelve |\n| Compressão anteroposterior (APC) | **Abertura da sínfise** (\"livro aberto\"), abertura anterior da sacroilíaca |\n| Cisalhamento vertical (VS) | Deslocamento cranial da hemipelve |\n| Mecanismo combinado (CM) | Associação de padrões |\n\n**Graus da compressão anteroposterior.**\n- **APC I**: abertura da sínfise menor que 2,5 cm; ligamentos posteriores íntegros. Estável.\n- **APC II**: sínfise maior que 2,5 cm, ruptura dos ligamentos sacroilíacos anteriores, sacroespinais e sacrotuberais; ligamentos sacroilíacos posteriores íntegros. Instável rotacionalmente.\n- **APC III**: ruptura também dos ligamentos sacroilíacos posteriores; instabilidade rotacional e vertical.\n\n**Sangramento.** As lesões APC II e III aumentam o volume pélvico e lesam o plexo venoso pré-sacral, com alto risco de choque hemorrágico. A medida inicial é o **cinto pélvico** sobre os trocânteres maiores.\n\n**O caso.** Disjunção da sínfise maior que 3 cm em colisão de alta energia é o padrão de livro aberto, por compressão anteroposterior (APC II ou III). A mobilidade anormal ao exame reflete a instabilidade rotacional.\n\n> Sínfise aberta (livro aberto) = compressão anteroposterior; compressão lateral fecha o anel.",
+  "correta": "**B: Errado.** A disjunção da sínfise púbica maior que 3 cm é a lesão em livro aberto, produzida por **compressão anteroposterior**, que abre o anel e roda as hemipelves externamente. A compressão lateral produz o efeito oposto: roda a hemipelve internamente, com fraturas horizontais dos ramos e impactação do sacro, e tende a fechar o anel, não a abrir a sínfise.",
+  "incorretas": {
+   "A": "**Marcar certo seria se deixar levar pelo exame descrito (mobilidade anormal à compressão lateral da bacia).** Esse dado é uma manobra de exame que testa a estabilidade, e não o mecanismo do trauma. O padrão radiográfico de abertura da sínfise identifica o vetor anteroposterior."
+  },
+  "referencias": [
+   "Young JW, Burgess AR, Brumback RJ, Poka A. Pelvic fractures: value of plain radiography in early assessment and management. Radiology. 1986;160(2):445-451.",
+   "Tornetta P III, Ricci WM, Ostrum RF, McQueen MM, McKee MD, Court-Brown CM, eds. Rockwood and Green's Fractures in Adults. Wolters Kluwer. Fraturas do anel pélvico."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "quadril-0537": {
+  "conceito": "**Estabilidade do anel pélvico (classificação de Tile).** A estabilidade depende principalmente do **complexo ligamentar posterior** (ligamentos sacroilíacos posteriores e interósseos), que funciona como uma ponte suspensa sustentando o sacro entre os ilíacos.\n\n| Tipo de Tile | Estabilidade | Exemplos |\n|---|---|---|\n| A | Estável (rotacional e vertical) | Avulsões, fraturas da asa ilíaca, fraturas transversas do sacro baixo |\n| B | **Rotacionalmente instável, verticalmente estável** | B1 livro aberto; B2 compressão lateral ipsilateral; B3 bilateral |\n| C | Instável rotacional e verticalmente | Ruptura completa posterior, cisalhamento vertical |\n\n**Por que o livro aberto é parcialmente instável.** Na lesão em livro aberto (Tile B1, ou APC II), rompem-se a sínfise, os ligamentos sacroilíacos anteriores, o sacroespinal e o sacrotuberal. A hemipelve roda externamente como a capa de um livro, mas os **ligamentos sacroilíacos posteriores permanecem íntegros**, funcionando como dobradiça. Por isso não há deslocamento vertical nem posterior.\n\n**Tratamento.** Fixação anterior (placa na sínfise ou fixador externo) costuma ser suficiente para fechar o livro e restaurar a estabilidade. Nas lesões tipo C, é preciso fixar também o anel posterior (parafusos iliossacrais, placas).\n\n> Livro aberto: instável na rotação, estável no plano vertical (Tile B).",
+  "correta": "**A: Certo.** As lesões em livro aberto (Tile B1, compressão anteroposterior tipo II) são parcialmente instáveis: a hemipelve roda externamente porque a sínfise e os ligamentos anteriores estão rotos, mas os ligamentos sacroilíacos posteriores íntegros mantêm a estabilidade no plano vertical. Se os ligamentos posteriores também se rompem, a lesão passa a ser totalmente instável (Tile C ou APC III).",
+  "incorretas": {
+   "B": "**Marcar errado seria considerar toda abertura da sínfise como instabilidade completa.** A instabilidade vertical só ocorre quando o complexo posterior se rompe. A diferença entre parcial e completamente instável muda a fixação: anterior isolada no livro aberto, anterior e posterior na instabilidade completa."
+  },
+  "referencias": [
+   "Tile M. Pelvic ring fractures: should they be fixed? J Bone Joint Surg Br. 1988;70(1):1-12.",
+   "Tornetta P III, Ricci WM, Ostrum RF, McQueen MM, McKee MD, Court-Brown CM, eds. Rockwood and Green's Fractures in Adults. Wolters Kluwer. Fraturas do anel pélvico."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "quadril-0538": {
+  "conceito": "**Ligamentos do anel pélvico e suas funções.** Cada grupo ligamentar resiste a um tipo de deslocamento, e conhecer essa relação explica os padrões de lesão.\n\n| Ligamento | Função principal |\n|---|---|\n| Sínfise púbica | Resiste à abertura anterior |\n| Sacroilíacos anteriores | Resistem à rotação externa |\n| **Sacroespinal** | Resiste à **rotação externa** da hemipelve |\n| **Sacrotuberal** | Resiste ao **cisalhamento vertical** e à rotação no plano sagital |\n| **Sacroilíacos posteriores e interósseos** | Os mais fortes; principal sustentação posterior, resistem ao **deslocamento vertical e posterior** |\n| Iliolombares | Ligam L5 ao ilíaco; reforçam a estabilidade posterior |\n\n**O conceito da ponte suspensa.** O sacro fica suspenso entre os ilíacos pelos ligamentos sacroilíacos posteriores, como uma ponte pelos cabos. Esses ligamentos são os mais importantes para a estabilidade vertical.\n\n**Aplicação aos padrões de lesão.**\n- Rotação externa (livro aberto): rompe sínfise, sacroilíacos anteriores e sacroespinal; com os posteriores íntegros, a lesão é verticalmente estável.\n- Cisalhamento vertical: rompe também os sacroilíacos posteriores e o sacrotuberal.\n\n> Sacroespinal: rotação externa. Sacrotuberal e sacroilíacos posteriores: estabilidade vertical.",
+  "correta": "**B: Errado.** Os três ligamentos citados não têm a mesma função. O **sacroespinal** (com os sacroilíacos anteriores) é o principal limitador da rotação externa da hemipelve. Os **sacroilíacos posteriores** e o **sacrotuberal** são os principais responsáveis pela estabilidade vertical e posterior. Agrupar todos como limitadores da rotação lateral é incorreto.",
+  "incorretas": {
+   "A": "**Marcar certo é generalizar a função de todos os ligamentos posteriores e do assoalho pélvico.** De fato, o sacroespinal limita a rotação externa, mas os ligamentos sacroilíacos posteriores e o sacrotuberal têm papel predominante na estabilidade vertical, o que explica por que o livro aberto, com os posteriores íntegros, ainda é verticalmente estável."
+  },
+  "referencias": [
+   "Tile M. Pelvic ring fractures: should they be fixed? J Bone Joint Surg Br. 1988;70(1):1-12.",
+   "Tornetta P III, Ricci WM, Ostrum RF, McQueen MM, McKee MD, Court-Brown CM, eds. Rockwood and Green's Fractures in Adults. Wolters Kluwer. Fraturas do anel pélvico."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "quadril-0539": {
+  "conceito": "**Indicações de estabilização cirúrgica na lesão da sínfise púbica.** O limite clássico é a abertura de **2,5 cm**.\n\n**Por que 2,5 cm.** Estudos biomecânicos mostraram que a sínfise pode abrir até cerca de 2,5 cm apenas com a ruptura de seus ligamentos. Acima desse valor, é preciso que os ligamentos sacroespinais e sacroilíacos anteriores também estejam rotos, caracterizando instabilidade rotacional (APC II). Por isso:\n- **Menos de 2,5 cm (APC I)**: tratamento conservador, com carga protegida.\n- **Mais de 2,5 cm (APC II ou III)**: estabilização cirúrgica, geralmente com placa na sínfise (associada a fixação posterior se houver instabilidade vertical).\n\n**Lesão das vias urinárias.** A lesão de bexiga ou uretra é frequente nas lesões de alta energia com abertura da sínfise. Quando a bexiga precisa ser reparada por laparotomia, a sínfise costuma ser fixada no mesmo ato pela via de Pfannenstiel, o que reduz o risco de infecção do material em relação a uma fixação tardia e facilita o reparo urológico.\n\n**Outras indicações de fixação no anel pélvico.**\n- Instabilidade vertical (Tile C).\n- Deslocamento posterior maior que 1 cm.\n- Discrepância de membros.\n- Lesões expostas (após controle de danos).\n\n**Controle de danos.** No paciente instável hemodinamicamente, o cinto pélvico e o fixador externo antecedem a fixação definitiva.\n\n> Sínfise aberta mais de 2,5 cm ou lesão urinária associada: estabilizar cirurgicamente.",
+  "correta": "**A: Certo.** A abertura da sínfise púbica maior que 2,5 cm indica ruptura dos ligamentos anteriores do anel e instabilidade rotacional, sendo critério de estabilização cirúrgica. A associação com lesão das vias urinárias também favorece a fixação, muitas vezes realizada no mesmo tempo do reparo vesical pela via de Pfannenstiel.",
+  "incorretas": {
+   "B": "**Marcar errado seria lembrar outro valor de corte, como 3 ou 4 cm, ou ignorar o papel da lesão urinária.** O valor de 2,5 cm é o mais citado na literatura de trauma pélvico, e a lesão vesical que exige laparotomia é uma indicação aceita para fixar a sínfise no mesmo procedimento."
+  },
+  "referencias": [
+   "Tile M. Pelvic ring fractures: should they be fixed? J Bone Joint Surg Br. 1988;70(1):1-12.",
+   "Tornetta P III, Ricci WM, Ostrum RF, McQueen MM, McKee MD, Court-Brown CM, eds. Rockwood and Green's Fractures in Adults. Wolters Kluwer. Fraturas do anel pélvico."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "quadril-0540": {
+  "conceito": "**Lesões viscerais nas fraturas da pelve.** A pelve contém a bexiga, a uretra, o reto, a vagina, vasos ilíacos, o plexo venoso pré-sacral e o plexo lombossacral. Em traumas de alta energia, essas estruturas podem ser lesadas pelos fragmentos ou pelo deslocamento.\n\n**Frequência.**\n- **Trato urinário inferior (bexiga e uretra)**: o mais frequentemente lesado, em cerca de 5% a 20% das fraturas do anel pélvico. A lesão de uretra é mais comum em homens (uretra posterior, membranosa). Sinais: sangue no meato uretral, hematoma perineal ou escrotal, próstata elevada no toque retal, hematúria.\n- **Reto, ânus e vagina**: menos frequentes, mas transformam a fratura em **fratura exposta** da pelve, com mortalidade elevada pela infecção. Todo paciente com fratura pélvica precisa de toque retal e, em mulheres, de exame vaginal.\n\n**Fratura exposta da pelve.** Pode ser externa (pele do períneo, nádega) ou interna (através da vagina ou do reto). A mortalidade é alta, por sangramento e sepse. A conduta inclui controle de danos, desbridamento, antibioticoterapia e, quando há contaminação retal ou perineal extensa, **colostomia derivativa**.\n\n| Estrutura | Frequência | Ação |\n|---|---|---|\n| Bexiga e uretra | Mais frequentes | Uretrografia antes de sondar se houver sinais |\n| Reto e vagina | Menos frequentes, graves | Toque retal e exame vaginal; colostomia se contaminação |\n\n> Na fratura de pelve, o trato urinário é o mais lesado; reto e vagina são menos comuns, mas graves.",
+  "correta": "**B: Errado.** Nas fraturas da pelve, inclusive nas expostas, as estruturas viscerais mais frequentemente lesadas são as do **trato urinário inferior** (bexiga e uretra). Lesões do reto e do ânus são menos comuns, embora muito graves, porque transformam a fratura em exposta e contaminada, com alta mortalidade e frequente necessidade de colostomia.",
+  "incorretas": {
+   "A": "**Marcar certo é confundir gravidade com frequência.** A lesão retal é uma das mais temidas por causa da contaminação fecal, e por isso costuma ser muito lembrada. Mas, em números, a lesão urológica é mais frequente. (O texto \"Área livre\" no fim do item é resquício da diagramação da prova.)"
+  },
+  "referencias": [
+   "Tornetta P III, Ricci WM, Ostrum RF, McQueen MM, McKee MD, Court-Brown CM, eds. Rockwood and Green's Fractures in Adults. Wolters Kluwer. Fraturas do anel pélvico.",
+   "Tile M, Helfet DL, Kellam JF, Vrahas M, eds. Fractures of the Pelvis and Acetabulum. 4th ed. Thieme; 2015."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  }
 }
