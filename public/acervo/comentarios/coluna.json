@@ -4372,6 +4372,22 @@
   "geradoEm": "2026-10-05",
   "conferido": false
  },
+ "coluna-0365": {
+  "conceito": "**Classificação de Meyerding da espondilolistese.** Mede a translação anterior da vértebra superior sobre a inferior, em porcentagem do comprimento da placa terminal da vértebra de baixo, na radiografia em perfil em pé.\n\n**Como medir.** Divide-se a placa superior da vértebra inferior em quatro partes iguais e observa-se onde fica a borda posterior da vértebra que escorregou.\n\n| Grau | Deslizamento |\n|---|---|\n| I | Até 25% |\n| II | 25% a 50% |\n| III | 50% a 75% |\n| IV | 75% a 100% |\n| V (espondiloptose) | Acima de 100%: a vértebra caiu à frente da inferior |\n\n**Baixo grau e alto grau.** Graus I e II são de baixo grau; graus III a V, de alto grau. A distinção muda o tratamento: alto grau em paciente imaturo, sobretudo sintomático, costuma ser cirúrgico.\n\n**Outras medidas.** O ângulo de escorregamento (cifose lombossacral) e os parâmetros pélvicos (incidência pélvica, inclinação sacral) complementam a avaliação do risco de progressão.\n\n**O caso.** Grau III corresponde a deslizamento entre 50% e 75%; entre as alternativas, o valor compatível é 60%. Vale notar que, no adolescente, o deslizamento é muito mais comum em L5-S1; em L4-L5, deve-se considerar outras causas.\n\n> Meyerding III: deslizamento de 50% a 75%.",
+  "correta": "**C: 60%.** O grau III de Meyerding corresponde a um deslizamento entre 50% e 75% do comprimento da placa terminal da vértebra inferior. O valor de 60% está nessa faixa e caracteriza espondilolistese de alto grau.",
+  "incorretas": {
+   "A": "**20%** corresponde ao grau I (até 25%), espondilolistese de baixo grau.",
+   "B": "**40%** corresponde ao grau II (25% a 50%), ainda considerado de baixo grau.",
+   "D": "**80%** corresponde ao grau IV (75% a 100%).",
+   "E": "**99%** também está no grau IV, no limite da espondiloptose (grau V, acima de 100%)."
+  },
+  "referencias": [
+   "Meyerding HW. Spondylolisthesis. Surg Gynecol Obstet. 1932;54:371-377.",
+   "Herkowitz HN et al. Rothman-Simeone The Spine. Elsevier. Espondilólise e espondilolistese."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
  "coluna-0366": {
   "conceito": "**Reposição volêmica inicial no politraumatizado.** O ATLS recomenda iniciar com **cristalóide isotônico aquecido**, em volume limitado, e passar precocemente para hemoderivados quando houver sinais de hemorragia.\n\n**Ringer lactato ou soro fisiológico.**\n- O **Ringer lactato** é o cristalóide de preferência no trauma. Sua composição é mais próxima do plasma; o lactato é metabolizado no fígado em bicarbonato, o que ajuda a corrigir a acidose.\n- O **soro fisiológico 0,9%**, em grandes volumes, causa **acidose metabólica hiperclorêmica**, que agrava a coagulopatia e a disfunção renal. É uma alternativa aceitável, mas não a preferida.\n- O **Ringer simples** não tem tampão (lactato), e por isso não ajuda na acidose.\n- Coloides como a **albumina** não mostraram benefício no trauma e são mais caros; no TCE, a albumina se associou a maior mortalidade (estudo SAFE).\n\n**Volume inicial.** As diretrizes atuais (ATLS 10ª edição) recomendam bolus de cerca de **1 litro** em adultos (20 mL/kg em crianças), avaliando a resposta. Volumes maiores aumentam o risco de coagulopatia dilucional e hipotermia. Na hemorragia, passa-se a hemoderivados em proporção balanceada.\n\n**O caso.** Hipotensão com **bradicardia** (FC 54) e extremidades bem perfundidas em vítima de capotamento sugere **choque neurogênico** (lesão medular alta), e não apenas hemorragia. Ainda assim, a primeira medida é repor volume com cristalóide, já que a hemorragia não pode ser descartada no início.\n\n| Solução | Papel no trauma |\n|---|---|\n| Ringer lactato | Preferencial |\n| Soro fisiológico 0,9% | Alternativa; risco de acidose hiperclorêmica |\n| Ringer simples | Sem tampão |\n| Albumina | Sem benefício; evitar no TCE |\n\n> Trauma: iniciar com Ringer lactato aquecido.",
   "correta": "**B: Ringer lactato.** É o cristalóide isotônico recomendado pelo ATLS para a reposição inicial no trauma. Sua composição é próxima à do plasma, e o lactato, convertido em bicarbonato, ajuda a corrigir a acidose do choque. Deve ser aquecido e infundido em volume controlado, com reavaliação frequente e passagem precoce para hemoderivados se houver hemorragia.",
