@@ -8981,19 +8981,20 @@
   "conferido": false
  },
  "pediatria-0759": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "conceito": "**Perthes.** Fase de fragmentação: reabsorção do osso necrótico com revascularização, dando aspecto fragmentado.\n\n**Na prova:** fragmentação é reabsorção.",
-  "correta": "**Reabsorção de osso necrótico.** É o que a imagem representa.",
+  "conceito": "**Doença de Legg-Calvé-Perthes e o significado da fragmentação.** O Perthes é a **necrose avascular idiopática do núcleo de ossificação da cabeça femoral** na criança (pico entre 4 e 8 anos, predomínio masculino). A doença é autolimitada: o osso morre, é reabsorvido e substituído, e o resultado depende da forma final da cabeça.\n\n**Estágios de Waldenström.**\n\n| Estágio | O que acontece | Radiografia |\n|---|---|---|\n| Inicial (necrose) | Morte óssea, parada de crescimento do núcleo | Núcleo menor e mais denso, alargamento do espaço articular, fratura subcondral (sinal do crescente) |\n| **Fragmentação** | **Revascularização e reabsorção do osso necrótico** | Núcleo fragmentado, com áreas radiotransparentes e densas |\n| Reossificação | Formação de osso novo | Reaparecimento do osso trabecular a partir da periferia |\n| Residual (remodelação) | Remodelação até a maturidade | Forma final da cabeça (esférica, ovoide ou achatada) |\n\n**Por que a cabeça \"se fragmenta\".** Na fase de fragmentação, vasos novos penetram o osso morto. Os osteoclastos **reabsorvem o osso necrótico** (áreas radiotransparentes), enquanto osso novo é depositado sobre as trabéculas mortas (áreas densas). A cabeça fica mecanicamente fraca e é nessa fase que pode **deformar e extruir** sob carga.\n\n**Implicações.** As classificações prognósticas (pilar lateral de Herring e Catterall) são aplicadas na fase de fragmentação. O tratamento visa **contenção** da cabeça no acetábulo durante esse período vulnerável, para que ela se remodele esférica. A idade de início (acima de 8 anos tem pior prognóstico) e o pilar lateral são os principais preditores.\n\n> Fragmentação no Perthes é a reabsorção do osso necrótico durante a revascularização.",
+  "correta": "**A: reabsorção de osso necrótico (resposta pela bibliografia).** Na fase de fragmentação, a revascularização traz osteoclastos que reabsorvem o osso morto, criando áreas radiotransparentes entremeadas com áreas densas de osso novo depositado.",
   "incorretas": {
-   "B": "**Remodelação da cabeça femoral.** É a fase de remodelação.",
-   "C": "**Microfraturas subcondrais.** É o sinal do crescente na fase inicial.",
-   "D": "**Presença de cistos metafisários.** Achado de pior prognóstico, não a fragmentação."
+   "B": "**A remodelação da cabeça femoral** corresponde ao estágio residual, depois da reossificação, até a maturidade esquelética.",
+   "C": "**As microfraturas subcondrais** ocorrem na fase inicial e aparecem como o sinal do crescente; precedem a fragmentação.",
+   "D": "**Os cistos metafisários** são achados associados (indicam pior prognóstico na classificação de Catterall), mas não explicam o aspecto de fragmentação da epífise."
   },
   "referencias": [
-   "Tachdjian M.O. Pediatric orthopaedics. Philadelphia: Saunders. 2ª ed., p. 946."
+   "Tachdjian M.O. Pediatric orthopaedics. Philadelphia: Saunders. 2ª ed., p. 946.",
+   "Kim HK. Legg-Calvé-Perthes disease. J Am Acad Orthop Surg. 2010;18(11):676-686."
   ],
-  "geradoEm": "2026-10-01T00:08:54+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "A",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0760": {
@@ -9200,19 +9201,20 @@
   "conferido": false
  },
  "pediatria-0772": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "B",
-  "conceito": "**Supracondiliana com fluxo diminuído.** Primeiro redução fechada e fixação; a maioria recupera o pulso. Explora-se a artéria só se a perfusão não voltar.\n\n**Na prova:** reduzir e fixar antes de investigar a artéria.",
-  "correta": "**Redução fechada com fixação.** É a conduta imediata.",
+  "conceito": "**Fratura supracondiliana com perfusão diminuída.** A fratura supracondiliana do úmero com desvio posterior (Gartland III) pode comprimir, estirar ou lesar a **artéria braquial** contra a ponta do fragmento proximal. Ausência de pulso radial ocorre em cerca de 10% a 20% das fraturas muito desviadas.\n\n**Conceito central: mão rosada sem pulso e mão branca.**\n\n| Situação | Significado |\n|---|---|\n| Mão bem perfundida (rosada, quente, enchimento capilar normal) sem pulso | Circulação colateral suficiente; artéria comprimida ou em espasmo |\n| Mão mal perfundida (pálida, fria) | Isquemia: urgência absoluta |\n\n**Por que reduzir primeiro.** Na maioria dos casos, a artéria está **dobrada ou comprimida** pela deformidade, não rompida. A **redução fechada com fixação percutânea**, feita em caráter de urgência, desfaz a dobra e devolve o fluxo na maioria dos pacientes. Atrasar a redução para fazer arteriografia aumenta o tempo de isquemia e não muda a conduta, pois a lesão está no foco de fratura.\n\n**Algoritmo após a redução** (Badkoobehi e colaboradores, entre outros).\n- **Perfusão restabelecida** (com ou sem pulso palpável): observar internado por 24 a 48 horas, com vigilância de síndrome compartimental.\n- **Mão continua mal perfundida**: **explorar a artéria braquial** por via anterior; a artéria pode estar presa no foco, com lesão de íntima ou ruptura; liberar, reparar ou enxertar, e considerar fasciotomia.\n\n**O nervo mediano e o interósseo anterior** costumam acompanhar a lesão arterial e devem ser examinados.\n\n> Supracondiliana com fluxo diminuído: redução fechada e fixação imediatas; explorar a artéria se a perfusão não voltar.",
+  "correta": "**B: redução fechada com fixação (resposta pela bibliografia).** A artéria está geralmente apenas dobrada ou comprimida pela deformidade; a redução urgente com fios percutâneos restaura o fluxo na maioria dos casos, e a exploração fica para quando a mão permanece mal perfundida.",
   "incorretas": {
-   "A": "**Arteriografia.** Atrasa a redução.",
-   "C": "**Redução aberta com fixação.** Só se a fechada falhar.",
-   "D": "**Exploração da artéria braquial.** Só se a perfusão não voltar."
+   "A": "**A arteriografia** atrasa o tratamento, prolonga a isquemia e não acrescenta informação útil, pois o local da lesão é conhecido (o foco da fratura).",
+   "C": "**A redução aberta** não é a primeira escolha: a redução fechada geralmente é possível e resolve. A via aberta anterior é usada se a redução fechada falhar ou se for necessário explorar a artéria.",
+   "D": "**A exploração da artéria braquial** fica para a mão que permanece mal perfundida após a redução; fazê-la de início expõe a criança a uma cirurgia vascular muitas vezes desnecessária."
   },
   "referencias": [
-   "Rockwood C.A. et al. Fractures in Children. Philadelphia: Lippincott. 6ª ed., pg. 567."
+   "Rockwood C.A. et al. Fractures in Children. Philadelphia: Lippincott. 6ª ed., pg. 567.",
+   "Badkoobehi H, Choi PD, Bae DS, Skaggs DL. Management of the pulseless pediatric supracondylar humeral fracture. J Bone Joint Surg Am. 2015;97(11):937-943."
   ],
-  "geradoEm": "2026-10-01T00:11:32+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "B",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0773": {

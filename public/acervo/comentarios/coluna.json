@@ -3727,19 +3727,20 @@
   "conferido": false
  },
  "coluna-0322": {
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "C",
-  "conceito": "**Fratura de Jefferson.** Explosão do anel de C1. A estabilidade depende do ligamento transverso: soma do deslocamento das massas laterais acima de 6,9 mm (regra de Spence) sugere ruptura.\n\n**Na prova:** Jefferson com massas laterais afastadas mais de 7 mm é instável.",
-  "correta": "**Transverso.** O transverso define a estabilidade.",
+  "conceito": "**Fratura de Jefferson e o ligamento transverso.** A fratura de Jefferson é a **explosão do anel de C1** (atlas) por carga axial sobre o vértice do crânio, como no mergulho em água rasa. Os côndilos occipitais são empurrados contra as massas laterais em forma de cunha, que se afastam e rompem o anel, classicamente em quatro pontos (dois anteriores e dois posteriores).\n\n**Por que o ligamento transverso decide a estabilidade.** O **ligamento transverso do atlas** prende o dente do áxis contra o arco anterior de C1. Se ele rompe, C1 pode deslizar sobre C2 e as massas laterais continuam a se afastar, gerando instabilidade atlantoaxial com risco à medula.\n\n**Como avaliar o ligamento.**\n- **Regra de Spence**: na radiografia transoral (AP de boca aberta), soma do deslocamento lateral das massas laterais de C1 sobre C2 acima de **6,9 mm** sugere ruptura do transverso (correções posteriores, pela magnificação, sugerem cerca de 8,1 mm).\n- **Intervalo atlantodental** maior que 3 mm em adultos no perfil.\n- **Ressonância magnética** visualiza o ligamento diretamente (classificação de Dickman: tipo I, ruptura intrassubstancial; tipo II, avulsão óssea do tubérculo da massa lateral, com melhor chance de consolidar).\n\n**Tratamento.**\n\n| Situação | Tratamento usual |\n|---|---|\n| Ligamento transverso íntegro (estável) | Colar rígido ou halo |\n| Avulsão óssea do transverso (Dickman II) | Halo, com boa chance de consolidação |\n| Ruptura intrassubstancial (Dickman I) ou instabilidade | Artrodese C1-C2 ou fixação de C1 |\n\n**Neurologia.** A lesão neurológica é rara, porque a explosão aumenta o diâmetro do canal.\n\n> Jefferson é estável se o ligamento transverso estiver íntegro; massas laterais afastadas mais de 6,9 mm sugerem ruptura.",
+  "correta": "**C: transverso (resposta pela bibliografia).** O ligamento transverso mantém o dente do áxis contra o arco anterior do atlas; sua ruptura, sugerida pela soma do afastamento das massas laterais acima de 6,9 mm, torna a fratura de Jefferson instável.",
   "incorretas": {
-   "A": "**Alar.** Limita a rotação, sem definir a estabilidade.",
-   "B": "**Apical.** É secundário.",
-   "D": "**Nucal.** Não participa."
+   "A": "**Os ligamentos alares** ligam o dente aos côndilos occipitais e limitam a rotação; não são o determinante da estabilidade da fratura do anel de C1.",
+   "B": "**O ligamento apical** une a ponta do dente ao forame magno e tem papel mecânico pequeno.",
+   "D": "**O ligamento nucal** é posterior e superficial, sem papel na estabilidade atlantoaxial."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 1616."
+   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 1616.",
+   "Spence KF Jr, Decker S, Sell KW. Bursting atlantal fracture associated with rupture of the transverse ligament. J Bone Joint Surg Am. 1970;52(3):543-549."
   ],
-  "geradoEm": "2026-10-01T00:05:19+00:00",
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
+  "provavel": "C",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "coluna-0323": {
