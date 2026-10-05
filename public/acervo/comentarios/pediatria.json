@@ -1107,18 +1107,19 @@
   "conferido": false
  },
  "pediatria-0075": {
+  "conceito": "**O suspensório de Pavlik.** É o tratamento de escolha da displasia do desenvolvimento do quadril (DDQ) do recém-nascido e do lactente até cerca de **6 meses**. Ele mantém os quadris em **flexão** (cerca de 90 a 100°) e permite **abdução livre**, dentro de uma zona segura. A própria gravidade e o movimento do bebê levam a cabeça femoral de volta ao acetábulo. É um tratamento **dinâmico**: não força a posição, apenas impede a extensão e a adução.\n\n**Cada exagero de posição tem uma complicação.**\n\n| Posição exagerada | Complicação |\n|---|---|\n| **Abdução forçada** | **Necrose avascular** da cabeça e lesão da **fise** |\n| **Flexão excessiva** (acima de cerca de 120°) | **Paralisia do nervo femoral**; luxação **inferior** (obturatória) |\n| Flexão insuficiente | A cabeça não reduz e o quadril continua luxado |\n| Uso prolongado com o quadril **luxado posteriormente** | **\"Doença do Pavlik\"**: erosão da parede posterior do acetábulo |\n\n**Por que a abdução forçada lesa a fise.** Na abdução extrema, a cabeça femoral é **comprimida** contra o acetábulo, e os vasos que nutrem a epífise e a fise ficam esticados ou comprimidos. Os principais são os ramos da **artéria circunflexa femoral medial**, que passam entre o iliopsoas e a borda do acetábulo. O resultado é a **isquemia** da epífise e da placa fisária, ou seja, a necrose avascular. Ela pode deixar a cabeça deformada, coxa vara ou valga e discrepância de comprimento.\n\nA **zona segura de Ramsey** é o arco entre a abdução máxima e a adução em que o quadril reluxa. Ela deve ser **ampla**, e a posição deve ficar no meio dela, nunca na abdução máxima. A mesma regra vale para o gesso pelvipodálico após a redução fechada (posição \"humana\" de Salter).\n\n**O seguimento.**\n- **Ultrassonografia** semanal ou a cada 2 semanas nas primeiras semanas.\n- Se o quadril **não reduzir em 3 a 4 semanas**, o Pavlik deve ser **suspenso**, e o tratamento muda para redução fechada com gesso. Insistir com um quadril luxado causa a doença do Pavlik.",
+  "correta": "**Correta: C (abdução).** No uso do suspensório de Pavlik, a **abdução forçada** comprime a cabeça femoral contra o acetábulo e compromete a irrigação da epífise e da fise, levando à necrose avascular e ao dano fisário. A abdução deve ser livre, dentro da zona segura.",
   "incorretas": {
-   "A": "A flexão excessiva se relaciona com a paralisia do nervo femoral, não com a lesão fisária.",
-   "B": "A adução é limitada pelo Pavlik, não forçada.",
-   "D": "A rotação lateral não é o mecanismo de lesão da fise no Pavlik."
+   "A": "A **flexão excessiva**, acima de cerca de 120°, causa **paralisia do nervo femoral** e luxação inferior, e não o dano à fise por isquemia.",
+   "B": "O Pavlik **impede** a adução. A adução não é forçada por ele e não é a causa do dano fisário.",
+   "D": "A **rotação lateral** não é a posição forçada associada ao dano fisário. A complicação vascular está ligada à abdução extrema."
   },
-  "conceito": "O **suspensório de Pavlik** trata a displasia do quadril até cerca de 6 meses. Ele mantém o quadril em **flexão** e deixa a criança **abrir as pernas sozinha**:\n\n**tira anterior**: mantém o quadril fletido (cerca de 100 a 110°) e **impede a extensão**;\n\n**tira posterior**: **limita a adução**, mas **não força a abdução**; a abdução é **ativa**, pelo próprio peso das pernas.\n\n**As complicações e de onde vêm**:\n\n**necrose avascular da cabeça femoral** (com lesão da **placa fisária**): vem da **abdução forçada**, além de cerca de 60°, que comprime os vasos que nutrem a cabeça;\n\n**paralisia do nervo femoral**: vem da **flexão excessiva**;\n\n**luxação inferior** (obturatória): também da flexão excessiva;\n\n**doença do Pavlik**: erosão da parede posterior do acetábulo quando o quadril fica luxado no suspensório sem reduzir.\n\n**A regra de segurança**: controle com ultrassom; se o quadril não reduzir em **3 a 4 semanas**, suspender o Pavlik e mudar o tratamento.\n\n**Na prova**: dano à fise no Pavlik = **abdução forçada**.",
-  "correta": "A abdução forçada comprime os vasos da cabeça femoral e causa necrose com lesão da placa fisária.",
   "referencias": [
    "Developmental dysplasia of the hip. https://pmc.ncbi.nlm.nih.gov/articles/PMC3143976/",
-   "Developmental Dysplasia of the Hip – Part 1. https://pmc.ncbi.nlm.nih.gov/articles/PMC10708981/"
+   "Developmental Dysplasia of the Hip – Part 1. https://pmc.ncbi.nlm.nih.gov/articles/PMC10708981/",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0076": {
@@ -1804,18 +1805,18 @@
   "conferido": false
  },
  "pediatria-0122": {
+  "conceito": "**O ciclo da marcha.** Começa quando um pé toca o chão (geralmente com o calcanhar, o **contato inicial**) e termina quando o **mesmo pé** toca o chão de novo. Divide-se em duas fases:\n- **Apoio**: cerca de **60%** do ciclo, com o pé no chão.\n- **Balanço**: cerca de **40%** do ciclo, com o pé no ar.\n\nO **duplo apoio**, em que os dois pés estão no chão ao mesmo tempo, ocorre **duas vezes** por ciclo, cerca de 10% cada. Na corrida, o duplo apoio desaparece e surge uma fase de voo.\n\n**Os parâmetros espaço-temporais.**\n\n| Parâmetro | Definição | Unidade |\n|---|---|---|\n| **Passo** | Distância do contato de um pé ao contato do **outro** pé | Metros |\n| **Passada** | Distância do contato de um pé ao **próximo contato do mesmo** pé (= dois passos) | Metros |\n| Largura do passo (base) | Distância entre os dois pés no plano frontal | Centímetros |\n| **Cadência** | Número de **passos por minuto** | Passos/min |\n| **Velocidade** | Distância percorrida por unidade de tempo | m/s |\n\n**Passo x passada.** É a pegadinha clássica.\n- O **passo** envolve **os dois pés**: no duplo apoio, é a distância entre o calcanhar da frente e o de trás.\n- A **passada** envolve **um só pé**: é o comprimento de um ciclo completo, igual a um passo direito mais um passo esquerdo.\n\n**Velocidade = comprimento do passo x cadência.** Para andar mais rápido, aumenta-se o passo, a cadência, ou os dois.\n\n**A marcha da criança.** A criança que começa a andar tem:\n- **base alargada**, passos curtos e cadência alta;\n- **duplo apoio** prolongado;\n- braços em \"guarda alta\";\n- contato inicial com o **pé plano**, sem toque do calcanhar.\n\nA marcha **madura**, com padrão próximo ao do adulto, se estabelece por volta dos **3 a 4 anos**, e a maturação completa ocorre por volta dos 7 anos.\n\n**Utilidade clínica.** A análise de marcha instrumentada (cinemática, cinética e eletromiografia) orienta a **cirurgia de múltiplos níveis** na paralisia cerebral.",
+  "correta": "**Correta: A (o passo).** O **passo** é a distância entre o contato de um pé e o contato do outro pé. Durante o duplo apoio, corresponde à distância entre os calcanhares dos dois pés.",
   "incorretas": {
-   "B": "A passada é medida entre dois contatos do mesmo pé e soma dois passos.",
-   "C": "Cadência é o número de passos por minuto, uma frequência e não uma distância.",
-   "D": "Velocidade é distância por tempo, não um parâmetro linear entre os pés."
+   "B": "A **passada** é a distância entre dois contatos sucessivos do **mesmo** pé, ou seja, dois passos. Não é a distância entre os dois pés.",
+   "C": "A **cadência** é um parâmetro **temporal**: número de passos por minuto. Não é uma distância.",
+   "D": "A **velocidade** é a distância percorrida por unidade de tempo (comprimento do passo vezes cadência), e não uma medida linear entre os pés."
   },
-  "conceito": "O **ciclo da marcha** vai de um contato do calcanhar até o próximo contato do **mesmo** calcanhar. Dura 100%: cerca de **60% de apoio** (com dois períodos de duplo apoio de 10% e um apoio simples de 40%) e cerca de **40% de balanço**. Na corrida, o duplo apoio some e aparece uma fase de voo.\n\n**Os parâmetros que medem a marcha**:\n\n**passo**: distância entre o **calcanhar de um pé** e o **calcanhar do outro**, medida no duplo apoio;\n\n**passada**: distância entre dois contatos do **mesmo pé**; equivale a **dois passos** e corresponde a um ciclo inteiro;\n\n**cadência**: número de **passos por minuto**; é uma frequência, não uma distância;\n\n**velocidade**: distância percorrida por tempo (passada × cadência, ajustada às unidades);\n\n**base de apoio**: distância lateral entre os dois pés.\n\n**Na criança**: a marcha amadurece por volta dos 3 anos, quando a cadência cai, o passo aumenta e a base de apoio estreita.\n\n**Na prova**: distância entre os calcanhares dos dois pés = **passo**; do mesmo pé = **passada**.",
-  "correta": "O passo é a distância do calcanhar de um pé ao calcanhar do outro, no duplo apoio.",
   "referencias": [
    "Gait analysis: an overview. https://www.ncbi.nlm.nih.gov/books/NBK544254/",
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 5"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0123": {
@@ -3036,14 +3037,18 @@
   "conferido": false
  },
  "pediatria-0262": {
+  "conceito": "**Duas formas de classificar a paralisia cerebral.** A paralisia cerebral (PC) pode ser classificada por **topografia** (que membros são acometidos) e pelo **tipo de distúrbio do movimento**. A classificação **fisiológica**, associada a Phelps e a outros autores clássicos, relaciona o **tipo** de distúrbio motor ao **local** da lesão cerebral.\n\n**Os tipos de PC e o local da lesão.**\n\n| Tipo | Local da lesão | Característica clínica |\n|---|---|---|\n| **Espástico** | **Córtex motor** e trato **piramidal** (corticoespinhal) | Hipertonia velocidade-dependente, hiper-reflexia, Babinski, clônus |\n| **Discinético** (atetoide, distônico, coreico) | **Núcleos da base** (extrapiramidal) | Movimentos involuntários, tônus flutuante |\n| **Atáxico** | **Cerebelo** | Incoordenação, marcha de base alargada, tremor intencional |\n| Misto | Vários locais | Combinação, geralmente espasticidade com discinesia |\n\n**A forma espástica** é a mais comum, em cerca de **70 a 80%** dos casos. É a que mais se beneficia de tratamento ortopédico: alongamentos, transferências tendíneas e osteotomias.\n\n**A forma discinética.** Classicamente, era associada à **asfixia aguda grave** no parto a termo (lesão dos núcleos da base e do tálamo) e ao **kernicterus** (hiperbilirrubinemia). O tônus **varia**: o paciente pode estar hipotônico em repouso e hipertônico ao tentar se mover.\n\n**Por que a cirurgia é arriscada na discinética.** O tônus muda o tempo todo, e o resultado é **imprevisível**. Um alongamento pode produzir a deformidade **oposta**. Por isso, as cirurgias de partes moles são evitadas nesses pacientes.\n\n**A forma atáxica** é a mais rara. Muitas vezes é de origem genética, e não por lesão perinatal.",
+  "correta": "**Correta: B (indivíduos discinéticos apresentam lesão nos núcleos da base).** Na classificação fisiológica da paralisia cerebral, a forma **discinética** (atetoide, distônica) decorre de lesão dos **núcleos da base** (sistema extrapiramidal). A espástica decorre de lesão do córtex e do trato piramidal, e a atáxica, do cerebelo.",
   "incorretas": {
-   "A": "A lesão cerebelar gera o tipo atáxico, não o discinético.",
-   "C": "O espástico tem lesão piramidal, do córtex motor e do trato corticoespinal.",
-   "D": "O espástico é piramidal; lesão cerebelar gera ataxia."
+   "A": "A lesão **cerebelar** produz a forma **atáxica**, com incoordenação e marcha de base alargada, e não a discinética.",
+   "C": "A forma **espástica** decorre de lesão do **córtex motor e do trato piramidal**. Os núcleos da base estão ligados à forma discinética.",
+   "D": "A lesão **cerebelar** produz ataxia, e não espasticidade. A espasticidade vem da lesão piramidal."
   },
-  "conceito": "A **paralisia cerebral** se classifica pelo tipo de alteração do movimento, que reflete **onde** está a lesão no encéfalo. A classificação fisiológica, como a de **Phelps**, liga cada tipo a um sistema:\n\n**espástico**: lesão do sistema **piramidal** (córtex motor e trato corticoespinal); hipertonia que aumenta com a velocidade do movimento, reflexos exaltados e clônus; é o tipo mais comum;\n\n**discinético** (atetoide ou distônico): lesão do sistema **extrapiramidal**, nos **núcleos da base**; movimentos involuntários lentos e contorcidos, tônus que oscila; associado ao **kernicterus** e à asfixia no bebê a termo;\n\n**atáxico**: lesão do **cerebelo**; falta de coordenação, dismetria, tremor de intenção e problema de equilíbrio;\n\n**misto**: combinação dos anteriores.\n\n**Por que isso importa para o ortopedista**: a cirurgia tem resultado **mais previsível no espástico**. No discinético, o tônus variável torna o resultado imprevisível, e alongamentos podem gerar a deformidade oposta.\n\n**Na prova**: discinéticos = lesão nos **núcleos da base**.",
-  "correta": "A paralisia cerebral discinética vem de lesão extrapiramidal, nos núcleos da base.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0264": {
@@ -3593,14 +3598,18 @@
   "conferido": false
  },
  "pediatria-0320": {
+  "conceito": "**O ciclo da marcha.** Começa quando um pé toca o chão (geralmente com o calcanhar, o **contato inicial**) e termina quando o **mesmo pé** toca o chão de novo. Divide-se em duas fases:\n- **Apoio**: cerca de **60%** do ciclo, com o pé no chão.\n- **Balanço**: cerca de **40%** do ciclo, com o pé no ar.\n\nO **duplo apoio**, em que os dois pés estão no chão ao mesmo tempo, ocorre **duas vezes** por ciclo, cerca de 10% cada. Na corrida, o duplo apoio desaparece e surge uma fase de voo.\n\n**Os parâmetros espaço-temporais.**\n\n| Parâmetro | Definição | Unidade |\n|---|---|---|\n| **Passo** | Distância do contato de um pé ao contato do **outro** pé | Metros |\n| **Passada** | Distância do contato de um pé ao **próximo contato do mesmo** pé (= dois passos) | Metros |\n| Largura do passo (base) | Distância entre os dois pés no plano frontal | Centímetros |\n| **Cadência** | Número de **passos por minuto** | Passos/min |\n| **Velocidade** | Distância percorrida por unidade de tempo | m/s |\n\n**Passo x passada.** É a pegadinha clássica.\n- O **passo** envolve **os dois pés**: no duplo apoio, é a distância entre o calcanhar da frente e o de trás.\n- A **passada** envolve **um só pé**: é o comprimento de um ciclo completo, igual a um passo direito mais um passo esquerdo.\n\n**Velocidade = comprimento do passo x cadência.** Para andar mais rápido, aumenta-se o passo, a cadência, ou os dois.\n\n**A marcha da criança.** A criança que começa a andar tem:\n- **base alargada**, passos curtos e cadência alta;\n- **duplo apoio** prolongado;\n- braços em \"guarda alta\";\n- contato inicial com o **pé plano**, sem toque do calcanhar.\n\nA marcha **madura**, com padrão próximo ao do adulto, se estabelece por volta dos **3 a 4 anos**, e a maturação completa ocorre por volta dos 7 anos.\n\n**Utilidade clínica.** A análise de marcha instrumentada (cinemática, cinética e eletromiografia) orienta a **cirurgia de múltiplos níveis** na paralisia cerebral.",
+  "correta": "**Correta: B (passada).** A **passada** é a distância entre um contato de um pé e o próximo contato do **mesmo** pé. Corresponde a um ciclo completo da marcha, ou a dois passos.",
   "incorretas": {
-   "A": "O passo vai do contato de um pé ao contato do outro pé.",
-   "C": "Cadência é o número de passos por minuto, uma frequência.",
-   "D": "O balanço é a fase em que o pé está no ar, cerca de 40% do ciclo, não uma distância."
+   "A": "O **passo** é a distância entre o contato de um pé e o contato do **outro** pé. É metade da passada.",
+   "C": "A **cadência** é o número de **passos por minuto**, um parâmetro temporal, e não uma distância.",
+   "D": "O **balanço** é uma **fase** do ciclo (cerca de 40%), em que o pé está no ar. Não é uma medida de distância."
   },
-  "conceito": "A marcha é descrita por **parâmetros lineares** (distâncias) e **temporais** (tempo):\n\n**passo**: distância entre o contato de **um pé** e o contato do **outro pé**, por exemplo do calcanhar direito ao calcanhar esquerdo;\n\n**passada**: distância entre dois contatos sucessivos do **mesmo pé**, por exemplo de um contato do calcanhar direito até o próximo contato do calcanhar direito. Corresponde a **um ciclo completo** da marcha e equivale a **dois passos**;\n\n**cadência**: número de **passos por minuto**; é uma frequência;\n\n**velocidade**: distância percorrida por unidade de tempo;\n\n**base de apoio**: distância lateral entre os dois pés.\n\n**As fases do ciclo**: **apoio** (cerca de 60%), com o pé no chão, e **balanço** (cerca de 40%), com o pé no ar. O balanço é uma fase, não uma medida de distância.\n\n**Na criança**: a marcha amadurece por volta dos 3 anos, quando a cadência diminui, o passo aumenta e a base estreita.\n\n**Na prova**: do contato de um pé até o próximo contato do **mesmo pé** = **passada**.",
-  "correta": "A passada vai de um contato do pé até o próximo contato do mesmo pé; é um ciclo completo, com dois passos.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Gait analysis: an overview. https://www.ncbi.nlm.nih.gov/books/NBK544254/"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0321": {
@@ -3808,14 +3817,18 @@
   "conferido": false
  },
  "pediatria-0340": {
+  "conceito": "**O dilema clínico.** Uma criança chega mancando, com dor no quadril e talvez febre. As duas causas mais prováveis são a **sinovite transitória**, benigna e autolimitada, e a **artrite séptica**, uma **urgência** que destrói a cartilagem e a cabeça femoral em poucos dias se não for drenada. As duas produzem derrame articular e limitação de movimento, e o exame inicial pode ser parecido.\n\n**Os critérios de Kocher.** Kocher e colaboradores identificaram **quatro fatores preditivos** independentes de artrite séptica:\n1. **Incapacidade de apoiar** o membro (não deambula).\n2. **Febre** acima de **38,5 °C**.\n3. **VHS** acima de **40 mm/h**.\n4. **Leucócitos** acima de **12.000/mm³**.\n\n**A probabilidade de artrite séptica pelo número de fatores (série original).**\n\n| Fatores presentes | Probabilidade de artrite séptica |\n|---|---|\n| 0 | Menos de 0,2% |\n| 1 | Cerca de 3% |\n| 2 | Cerca de 40% |\n| 3 | Cerca de 93% |\n| **4** | Cerca de **99,6%** |\n\n**Lendo a pergunta ao contrário.** A questão pergunta a probabilidade de ser **sinovite transitória** com 4 fatores. Se a chance de artrite séptica é de cerca de 99,6%, a de sinovite transitória é **menor que 1%**, ou seja, **menos de 10%**.\n\n**Atualizações.**\n- **Caird** acrescentou a **proteína C-reativa** acima de **2 mg/dL**. Ela é um preditor forte, e com 5 fatores a probabilidade chega a cerca de 98%.\n- Em validações posteriores, em outros hospitais, o desempenho dos critérios foi **menor** que na série original. Eles **apoiam** a decisão, mas não substituem o julgamento clínico.\n\n**A conduta.**\n- Na suspeita, faz-se **ultrassonografia** para confirmar o derrame e **punção articular** guiada.\n- O líquido da artrite séptica costuma ter mais de **50.000 leucócitos/mm³**, com predomínio de **neutrófilos**.\n- A artrite séptica do quadril exige **drenagem cirúrgica** urgente e antibiótico. O agente mais comum é o *Staphylococcus aureus*. Em menores de 4 anos, a ***Kingella kingae*** é importante.",
+  "correta": "**Correta: A (menos de 10%).** Com os quatro fatores de Kocher (não apoia o membro, febre acima de 38,5 °C, VHS acima de 40 mm/h e leucócitos acima de 12.000), a probabilidade de artrite séptica é de cerca de 99,6%. A de sinovite transitória, portanto, é **menor que 1%**.",
   "incorretas": {
-   "B": "40% é a probabilidade de artrite séptica com dois critérios.",
-   "C": "70% não corresponde a nenhuma faixa da tabela de Kocher.",
-   "D": "90% está invertido: é próximo da chance de artrite séptica com três ou quatro critérios."
+   "B": "Cerca de **40%** é a probabilidade de **artrite séptica** com **dois** fatores. Com quatro, a chance de sinovite transitória é muito menor.",
+   "C": "Uma chance de **70%** de sinovite transitória seria compatível com poucos fatores presentes, e não com os quatro.",
+   "D": "**90%** inverte o raciocínio. Com quatro fatores, cerca de 99% dos casos são **artrite séptica**, e não sinovite transitória."
   },
-  "conceito": "Os **critérios de Kocher** ajudam a separar **artrite séptica** de **sinovite transitória** do quadril na criança que manca:\n\n**febre** acima de 38,5 °C;\n\n**não apoiar** o membro;\n\n**VHS** acima de 40 mm/h;\n\n**leucócitos** acima de 12.000.\n\nCaird acrescentou a **PCR** acima de 2 mg/dL.\n\n**A probabilidade de artrite séptica pelo número de critérios**:\n\n**nenhum**: menos de 1%;\n\n**um**: cerca de 3%;\n\n**dois**: cerca de 40%;\n\n**três**: cerca de 93%;\n\n**quatro**: mais de **99%**.\n\n**O raciocínio inverso**: a questão pergunta a chance de ser **sinovite transitória** com os quatro critérios. Se a chance de séptica é de cerca de 99%, a de sinovite é de **menos de 1%**, portanto **menor que 10%**.\n\n**A conduta**: com critérios altos, **punção** do quadril guiada por ultrassom e drenagem cirúrgica se confirmar. A artrite séptica é urgência: o pus destrói a cartilagem e pode causar necrose da cabeça.\n\n**Na prova**: com 4 critérios de Kocher, a probabilidade de sinovite transitória é **menor que 10%**.",
-  "correta": "Com os quatro critérios, a chance de artrite séptica passa de 99%; a de sinovite transitória fica abaixo de 1%.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Kocher MS, Zurakowski D, Kasser JR. Differentiating between septic arthritis and transient synovitis of the hip in children: an evidence-based clinical prediction algorithm. J Bone Joint Surg Am. 1999;81(12):1662-1670."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0341": {
@@ -3860,18 +3873,18 @@
   "conferido": false
  },
  "pediatria-0344": {
+  "conceito": "**A deficiência femoral focal proximal (DFFP).** Faz parte do espectro das **deficiências longitudinais congênitas do fêmur**, que vai do fêmur curto congênito, com quadril normal, até a quase ausência do fêmur proximal. Geralmente é **unilateral**.\n\n**Como a criança se apresenta.**\n- Coxa **muito curta e volumosa**.\n- Quadril em **flexão, abdução e rotação externa**.\n- Pé geralmente na altura do joelho contralateral.\n\n**Associações frequentes.** **Hemimelia fibular** em cerca de metade dos casos, **deficiência do LCA** e pé com raios ausentes.\n\n**A classificação de Aitken.** Separa os tipos pela presença da **cabeça femoral**, pelo **acetábulo** e pela existência de uma **conexão óssea** entre a cabeça e a diáfise na maturidade.\n\n| Tipo | Cabeça e acetábulo | Conexão cabeça-diáfise |\n|---|---|---|\n| **A** | Cabeça presente; acetábulo **normal** | Defeito subtrocantérico que **ossifica**, deixando coxa vara |\n| **B** | Cabeça presente; acetábulo adequado ou levemente displásico | **Não ossifica**: **pseudoartrose** persistente no colo |\n| **C** | Cabeça **ausente** ou só um ossículo; acetábulo muito displásico | Sem articulação útil |\n| **D** | Cabeça e acetábulo **ausentes**; fêmur muito curto | Sem articulação |\n\n**Como raciocinar.** Nos tipos A e B **existe** uma cabeça dentro de um acetábulo, e por isso existe um quadril potencial. A diferença está no que acontece entre a cabeça e a diáfise. No **A**, a falha cartilaginosa acaba ossificando, e sobra uma coxa vara grave. No **B**, a falha persiste como **pseudoartrose** do colo. Nos tipos C e D, **não há** quadril para reconstruir.\n\n**Implicações no tratamento.**\n- Nos tipos **A e B**, pode-se pensar em estabilizar o quadril e, em casos selecionados, em alongamento.\n- Nos tipos **C e D**, com o membro muito curto, a regra é a **adaptação protética**. Ela pode ser associada à **artrodese do joelho** com amputação de Syme, ou à **rotacionplastia de Van Nes**, em que o tornozelo girado 180° passa a funcionar como joelho.\n- O **cálculo da discrepância final** dos membros orienta se o caso é de alongamento ou de prótese.\n\n**Por que flexão, abdução e rotação externa.** Com o fêmur proximal deficiente, os músculos que se inserem nele perdem o contraponto do braço de alavanca normal. O **iliopsoas** (flexor), os **abdutores** (glúteos médio e mínimo) e os **rotadores externos** curtos predominam. O segmento femoral curto fica, então, **fletido, abduzido e rodado externamente**, e o joelho costuma ter contratura em flexão.",
+  "correta": "**Correta: C (abduzido, com rotação externa do membro).** Na deficiência congênita do fêmur proximal, o quadril fica **fletido, abduzido e em rotação externa**, pela ação sem oposição do iliopsoas, dos abdutores e dos rotadores externos sobre um fêmur curto.",
   "incorretas": {
-   "A": "Adução e rotação interna são o oposto da postura típica.",
-   "B": "A rotação externa está certa, mas o quadril fica abduzido, não aduzido.",
-   "D": "A abdução está certa, mas a rotação é externa, não interna."
+   "A": "A **adução com rotação interna** é o oposto do padrão da deficiência femoral. Lembra a postura do quadril espástico da paralisia cerebral.",
+   "B": "A rotação externa está certa, mas o quadril fica **abduzido**, e não aduzido.",
+   "D": "A abdução está certa, mas a rotação é **externa**, e não interna."
   },
-  "conceito": "Na **deficiência congênita do fêmur** (incluindo a deficiência femoral focal proximal), o fêmur é curto e o quadril é instável ou malformado. A aparência é muito típica:\n\n**coxa curta e volumosa**, como se o membro \"começasse\" no joelho;\n\n**quadril em flexão, abdução e rotação externa**: a postura em que os músculos mais fortes (flexores, abdutores curtos e rotadores externos) puxam o fêmur curto, sem oposição de extensores e adutores eficientes;\n\n**joelho** muitas vezes em flexão, instável pela ausência do LCA;\n\n**pé** na altura do joelho oposto nos casos graves.\n\n**As associações**: hemimelia fibular em cerca de metade dos casos, pé com raios laterais ausentes e coalizão tarsal.\n\n**As classificações**: Aitken (cabeça, acetábulo e colo) e Gillespie (reconstrutível ou não).\n\n**O tratamento**: alongamento nos casos leves; rotacionplastia de Van Nes, artrodese do joelho com prótese ou amputação de Syme nos graves.\n\n**Na prova**: na deficiência congênita do fêmur, o quadril fica **fletido, abduzido e em rotação externa**.",
-  "correta": "A postura típica é quadril fletido, abduzido e em rotação externa, com a coxa curta e volumosa.",
   "referencias": [
    "Pediatric Orthopaedic Society of North America. Proximal Focal Femoral Deficiency Study Guide.",
    "Tachdjian's Pediatric Orthopaedics. 6th edition. Elsevier."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0345": {
@@ -4431,14 +4444,18 @@
   "conferido": false
  },
  "pediatria-0386": {
+  "conceito": "**O núcleo de ossificação da cabeça femoral.** Ao nascer, a cabeça do fêmur é inteiramente **cartilaginosa** e não aparece na radiografia. O **núcleo de ossificação secundário** surge, em geral, entre os **4 e os 6 meses** de vida, com variação normal entre cerca de 2 e 8 meses. Costuma aparecer um pouco antes nas meninas.\n\n**Implicações para a DDQ.**\n- Antes do núcleo aparecer, a radiografia mostra pouco da relação entre a cabeça e o acetábulo. Por isso, até cerca de **4 a 6 meses**, o exame de imagem de escolha é a **ultrassonografia** (Graf).\n- Depois que o núcleo surge, a **radiografia** passa a ser útil, com as linhas de Hilgenreiner, Perkins e Shenton e o índice acetabular.\n- Na DDQ, o núcleo do lado luxado costuma aparecer **mais tarde** e ser **menor**. O atraso é um sinal indireto.\n\n**Ligando o núcleo ao desenvolvimento motor.** Se o núcleo acabou de aparecer, a criança tem cerca de **4 a 6 meses**. A pergunta, então, é qual habilidade se adquire nessa idade.\n\n| Idade aproximada | Marco motor grosso |\n|---|---|\n| 2 a 3 meses | Levanta a cabeça em decúbito ventral |\n| **4 a 6 meses** | **Sustenta cabeça e tronco** em decúbito ventral, apoiado nos antebraços e depois nas mãos; rola |\n| 6 a 8 meses | Senta sem apoio |\n| 9 a 10 meses | **Fica em pé com apoio** (puxa-se para levantar) |\n| 12 a 15 meses | **Anda sem apoio** |\n| 18 a 24 meses | **Sobe escadas** com apoio |\n\n**Os sinais de alerta no desenvolvimento motor.**\n- Não sentar sem apoio aos **9 meses**.\n- Não andar aos **18 meses**.\n\nEsses atrasos devem levar a investigar paralisia cerebral, doenças neuromusculares (como a distrofia de Duchenne) ou DDQ bilateral.",
+  "correta": "**Correta: C (sustentar a cabeça e o tronco em decúbito ventral).** O núcleo de ossificação da cabeça femoral aparece por volta dos **4 a 6 meses**. Nessa idade, o lactente normal acaba de adquirir a capacidade de sustentar a cabeça e o tronco em decúbito ventral, apoiado nos antebraços e nas mãos.",
   "incorretas": {
-   "A": "Andar sem apoio é marco de 12 a 15 meses, bem depois do aparecimento do núcleo.",
-   "B": "Subir escadas com apoio é marco de 18 a 24 meses.",
-   "D": "Ficar em pé com apoio dos braços é marco de 9 a 10 meses."
+   "A": "**Andar sem apoio** é adquirido por volta dos **12 a 15 meses**, muito depois do aparecimento do núcleo da cabeça femoral.",
+   "B": "**Subir escadas com apoio** ocorre por volta dos **18 a 24 meses**.",
+   "D": "**Ficar em pé com apoio**, puxando-se pelos braços, ocorre por volta dos **9 a 10 meses**, alguns meses depois do aparecimento do núcleo."
   },
-  "conceito": "A questão junta dois relógios do bebê: a **ossificação** da cabeça femoral e o **desenvolvimento motor**.\n\n**O núcleo de ossificação da cabeça femoral** aparece entre **4 e 6 meses** (um pouco antes nas meninas). Antes disso, a cabeça é cartilaginosa e invisível na radiografia, e o exame do quadril é o ultrassom de Graf. O atraso do núcleo de um lado pode sugerir displasia do quadril.\n\n**Os marcos motores**:\n\n**3 a 4 meses**: em decúbito ventral, **sustenta a cabeça e o tronco**, apoiando-se nos antebraços;\n\n**6 meses**: rola e senta com apoio;\n\n**9 a 10 meses**: fica **em pé com apoio** dos braços;\n\n**12 a 15 meses**: **anda sem apoio**;\n\n**18 a 24 meses**: **sobe escadas com apoio**.\n\n**Juntando os dois**: se o núcleo da cabeça femoral **acabou de aparecer**, o bebê tem cerca de 4 meses, e o marco motor que acabou de adquirir é **sustentar a cabeça e o tronco em prono**.\n\n**Na prova**: início da ossificação da cabeça femoral = criança que **sustenta cabeça e tronco em decúbito ventral**.",
-  "correta": "O núcleo da cabeça femoral surge por volta de 4 meses, a mesma época em que o bebê sustenta a cabeça e o tronco de bruços.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn)"
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0387": {
@@ -5604,14 +5621,18 @@
   "conferido": false
  },
  "pediatria-0495": {
+  "conceito": "**Como o membro é construído.** O membro surge como um **broto** na parede lateral do embrião, por volta da quarta semana (o superior um pouco antes do inferior). Ele cresce no sentido **proximal para distal**, comandado pela **crista ectodérmica apical** na ponta do broto. Os segmentos se formam um depois do outro, do mais próximo do tronco ao mais distante.\n\n**Os segmentos do membro (nomenclatura embriológica).**\n\n| Segmento | Membro superior | Membro inferior |\n|---|---|---|\n| **Zonoesqueleto** (cinturas) | Escápula e clavícula | Pelve (ilíaco, ísquio, púbis) |\n| **Estilopódio** | **Úmero** | Fêmur |\n| **Zeugopódio** | **Rádio e ulna** | Tíbia e fíbula |\n| **Autopódio** | Mão (carpo, metacarpos, falanges) | Pé |\n\n**As articulações ficam entre os segmentos.**\n- **Ombro** (e quadril): entre o zonoesqueleto e o estilopódio.\n- **Cotovelo** (e joelho): entre o **estilopódio** (úmero) e o **zeugopódio** (rádio e ulna).\n- **Punho** (e tornozelo): entre o zeugopódio e o autopódio.\n\n**Por que isso importa: as deficiências congênitas.** Os mesmos nomes descrevem as malformações.\n- **Focomelia**: ausência dos segmentos intermediários (estilopódio e zeugopódio), com a mão ou o pé ligado diretamente ao tronco. É o exemplo clássico da **talidomida**.\n- **Deficiências longitudinais**: acometem um lado do eixo, como a deficiência radial (pré-axial), a hemimelia fibular e a DFFP.\n- **Deficiências transversas**: ausência de tudo distal a um ponto, como uma \"amputação congênita\".\n\n**Os eixos de sinalização.** O crescimento proximal-distal depende da crista ectodérmica apical. O eixo anteroposterior (do polegar ao dedo mínimo) depende da **zona de atividade polarizante**, via **Sonic hedgehog**. O eixo dorsoventral depende da via **Wnt7a**.",
+  "correta": "**Correta: B (stylopodium e zeugopodium).** O cotovelo se forma entre o **estilopódio** (úmero) e o **zeugopódio** (rádio e ulna), assim como o joelho se forma entre o fêmur e a tíbia com a fíbula.",
   "incorretas": {
-   "A": "Entre a cintura e o estilopódio forma-se o ombro.",
-   "C": "Entre o zeugopódio e o autopódio forma-se o punho.",
-   "D": "A cintura e o autopódio não são contíguos; não formam articulação."
+   "A": "Entre o **zonoesqueleto** (cintura escapular) e o **estilopódio** (úmero) forma-se o **ombro**, e não o cotovelo.",
+   "C": "Entre o **zeugopódio** (rádio e ulna) e o **autopódio** (mão) forma-se o **punho**.",
+   "D": "O **zonoesqueleto** e o **autopódio** não são segmentos vizinhos: entre eles estão o estilopódio e o zeugopódio. Sua ligação direta corresponde à **focomelia**, e não a uma articulação normal."
   },
-  "conceito": "O membro em desenvolvimento se forma de **proximal para distal** e é dividido em segmentos:\n\n**zonoesqueleto (cintura)**: escápula e clavícula no membro superior; pelve no inferior;\n\n**estilopódio**: o segmento de **um osso**: **úmero** ou fêmur;\n\n**zeugopódio**: o segmento de **dois ossos**: **rádio e ulna**, ou tíbia e fíbula;\n\n**autopódio**: a **mão** ou o pé.\n\n**As articulações nascem entre os segmentos**:\n\n**ombro**: entre a cintura e o estilopódio;\n\n**cotovelo**: entre o **estilopódio** (úmero) e o **zeugopódio** (rádio e ulna);\n\n**punho**: entre o zeugopódio e o autopódio.\n\n**Quem controla o crescimento**: a **crista ectodérmica apical**, pelo FGF, comanda o eixo proximal-distal; a zona de atividade polarizante (sonic hedgehog) organiza o eixo radioulnar; o ectoderma dorsal (Wnt7a) define dorso e palma.\n\n**Por que importa**: as deficiências congênitas são descritas por esses segmentos (por exemplo, a focomelia é a falta do estilopódio e do zeugopódio, com a mão presa ao tronco).\n\n**Na prova**: o cotovelo se forma entre o **estilopódio** e o **zeugopódio**.",
-  "correta": "O cotovelo une o úmero (estilopódio) ao rádio e à ulna (zeugopódio).",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
+   "Moore KL, Persaud TVN, Torchia MG. The Developing Human: Clinically Oriented Embryology. Elsevier."
+  ],
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0496": {
@@ -5637,20 +5658,20 @@
   "conferido": false
  },
  "pediatria-0498": {
+  "conceito": "**O eixo dos joelhos muda com a idade.** O ângulo tibiofemoral da criança segue uma evolução **fisiológica previsível**, descrita por Salenius e Vankka e confirmada por Heath e Staheli.\n\n| Idade | Eixo esperado |\n|---|---|\n| Nascimento | **Varo** importante, cerca de 15° |\n| 18 a 24 meses | **Neutro** (0°) |\n| **3 a 4 anos** | **Valgo máximo**, cerca de **10 a 12°** |\n| 7 anos em diante | Valgo do adulto, cerca de **5 a 7°** |\n\n**A regra prática.**\n- **Varo até cerca de 2 anos**.\n- **Valgo máximo por volta de 3 a 4 anos**.\n- Estabilização no valgo do adulto por volta dos 7 anos.\n\n**Quando suspeitar de doença.** O desvio é **patológico** quando:\n- o **varo** persiste ou piora **após os 2 anos**;\n- o desvio é **assimétrico** (unilateral);\n- há **baixa estatura** ou outras alterações (raquitismo, displasias esqueléticas);\n- o valgo é **excessivo** (acima de 15°) ou com distância intermaleolar grande, ou persiste após os 7 anos;\n- há **dor** ou alteração de marcha.\n\n**As causas de varo patológico.**\n- **Doença de Blount** (tíbia vara): o **ângulo metáfise-diáfise de Drennan** maior que 16° sugere Blount; menor que 10° sugere varo fisiológico.\n- **Raquitismo** (hipofosfatêmico ou nutricional).\n- **Displasias** (acondroplasia).\n- **Sequela de trauma ou infecção** da fise.\n\n**As causas de valgo patológico.** Raquitismo renal, sequela de fratura da metáfise proximal da tíbia (**fenômeno de Cozen**), displasias e obesidade.\n\n**Conduta no fisiológico.** **Observação**, com orientação aos pais. Órteses e calçados especiais não alteram a evolução.",
+  "correta": "**Correta: C (10 graus de valgo dos joelhos).** Na criança normal, o varo do nascimento chega ao neutro por volta dos 2 anos. O eixo evolui para um **valgo máximo** de cerca de **10 a 12° aos 3 a 4 anos**, e depois se estabiliza no valgo do adulto, de 5 a 7°, por volta dos 7 anos.",
   "incorretas": {
-   "A": "O varo é esperado só até cerca de 2 anos; aos 4 anos o normal é valgo.",
-   "B": "Varo de 15° aos 4 anos seria patológico, sugerindo Blount ou raquitismo.",
-   "D": "Valgo de 15° está no limite a partir do qual se investiga; o valor médio esperado é menor."
+   "A": "Aos 4 anos, o eixo esperado é de **valgo**. O varo é fisiológico só até cerca de 2 anos; **varo persistente** aos 4 anos é patológico e sugere doença de Blount ou raquitismo.",
+   "B": "Um **varo de 15°** é próximo do eixo do **recém-nascido**. Aos 4 anos, ele é patológico.",
+   "D": "Um **valgo de 15°** está acima da média esperada aos 4 anos (cerca de 10 a 12°). Ele fica no limite superior ou além da faixa normal e merece avaliação."
   },
-  "conceito": "O alinhamento dos joelhos na criança segue uma curva previsível, descrita por **Salenius**:\n\n**ao nascer**: **varo**, máximo nessa fase;\n\n**por volta de 1,5 a 2 anos**: os joelhos passam pelo **neutro**;\n\n**entre 3 e 4 anos**: o **valgo fisiológico máximo**, de cerca de **10°** (as séries variam de 7 a 12°);\n\n**por volta de 7 anos**: o valgo diminui e se estabiliza no valor do adulto, cerca de 5 a 7°.\n\n**Aos 4 anos**, portanto, espera-se encontrar cerca de **10° de valgo**. Os pais costumam se assustar com os joelhos \"para dentro\", mas é a curva normal.\n\n**Os sinais de que não é fisiológico**:\n\n**varo depois dos 2 anos**: pensar em Blount, raquitismo ou displasias;\n\n**valgo acima de cerca de 15°**, ou distância entre os maléolos acima de 8 cm depois dos 7 anos;\n\n**assimetria**, dor, baixa estatura ou progressão.\n\n**O tratamento do valgo patológico**: crescimento guiado com placa em 8 medial, enquanto a fise está aberta.\n\n**Na prova**: aos 4 anos, espera-se cerca de **10° de valgo** dos joelhos.",
-  "correta": "Aos 4 anos a criança está perto do pico de valgo fisiológico, de cerca de 10°.",
-  "alerta": "O número exato varia entre populações e métodos de mensuração. Estudos relatam médias aproximadas entre 7 e 10 graus no pico de valgo. Assim, os 10 graus do gabarito devem ser interpretados como valor didático aproximado, não como normalidade universal rígida.",
   "referencias": [
    "Heath CH, Staheli LT. Normal limits of knee angle in white children--genu varum and genu valgum. J Pediatr Orthop. 1993;13:259-262. PMID: 8459023.",
    "Normal development of the tibiofemoral angle in children. PMID: 11242264.",
    "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), Cap. 26"
   ],
-  "geradoEm": "2026-10-04",
+  "alerta": "O número exato varia entre populações e métodos de mensuração. Estudos relatam médias aproximadas entre 7 e 10 graus no pico de valgo. Assim, os 10 graus do gabarito devem ser interpretados como valor didático aproximado, não como normalidade universal rígida.",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0499": {
@@ -7642,17 +7663,18 @@
   "conferido": false
  },
  "pediatria-0651": {
+  "conceito": "**A fratura do colo do fêmur na criança é rara e perigosa.** Representa menos de 1% das fraturas da criança e exige **trauma de alta energia**, como atropelamento ou queda de altura. Quando ocorre com trauma mínimo, deve-se pensar em **osso patológico** (cisto ósseo, displasia fibrosa). Em lactentes, deve-se pensar em **maus-tratos**.\n\n**Por que é perigosa: a irrigação da cabeça.** Na criança, a cabeça femoral depende quase só dos **vasos retinaculares** (ramos da **artéria circunflexa femoral medial**), que sobem pela face posterossuperior do colo. A artéria do ligamento redondo contribui pouco, e a fise funciona como barreira aos vasos metafisários. Uma fratura desviada do colo **rompe** esses vasos. A **tamponada** do hematoma dentro da cápsula também piora a perfusão.\n\n**A classificação de Delbet (modificada por Colonna).**\n\n| Tipo | Local | Necrose avascular |\n|---|---|---|\n| **I** | **Transepifisário**: descolamento pela fise, com ou sem luxação da cabeça | **Altíssima** (até quase 100% se houver luxação) |\n| **II** | **Transcervical**: no meio do colo | **Alta**, cerca de 50% |\n| **III** | **Cervicotrocantérico** (basocervical) | Cerca de 25% |\n| **IV** | **Intertrocantérico** | Baixa, cerca de 10% ou menos |\n\n**Qual é o mais frequente.** O **tipo II, transcervical**, responde por cerca de **40 a 50%** dos casos. O tipo III vem em seguida, com cerca de 30 a 35%. O IV é menos frequente, e o I é o mais raro, abaixo de 10%.\n\n**A regra do risco.** Quanto mais **proximal** a fratura, maior o risco de **necrose avascular**.\n\n**Complicações.**\n- **Necrose avascular**: a mais temida, de pior prognóstico; aparece nos primeiros 1 a 2 anos.\n- **Coxa vara**.\n- **Pseudoartrose**.\n- **Fechamento precoce da fise**, com discrepância.\n\n**Tratamento.** Na fratura desviada:\n- **redução** anatômica urgente, fechada ou aberta;\n- **descompressão da cápsula** (capsulotomia ou aspiração), que reduz a tamponada;\n- **fixação interna**, com parafusos que podem **cruzar a fise** nos tipos I e II se necessário, porque a estabilidade é prioritária.",
+  "correta": "**Correta: D (IV).** Na classificação de Delbet, o risco de necrose avascular diminui quanto mais **distal** é a fratura. O **tipo IV, intertrocantérico**, tem o menor risco, cerca de 10% ou menos, porque fica fora da cápsula e longe dos vasos retinaculares.",
   "incorretas": {
-   "A": "O tipo I tem o maior risco de necrose, quase 100% com luxação.",
-   "B": "O tipo II tem risco alto, de cerca de 50%.",
-   "C": "O tipo III tem risco intermediário, de cerca de 25%."
+   "A": "O tipo **I** (transepifisário) tem o **maior** risco de necrose avascular, chegando a quase 100% quando há luxação da cabeça.",
+   "B": "O tipo **II** (transcervical) tem risco **alto**, cerca de 50%, porque o traço atravessa o trajeto dos vasos retinaculares dentro da cápsula.",
+   "C": "O tipo **III** (cervicotrocantérico) tem risco intermediário, em torno de 25%, maior que o do tipo IV."
   },
-  "conceito": "Nas **fraturas do fêmur proximal** da criança, a **necrose avascular** da cabeça femoral é a complicação mais temida. O risco depende do **local do traço**, pela classificação de **Delbet**:\n\n**tipo I, transepifisário**: risco de cerca de **90 a 100%** quando há luxação da epífise (IB); o maior de todos;\n\n**tipo II, transcervical**: cerca de **50%**;\n\n**tipo III, cervicotrocantérico**: cerca de **25%**;\n\n**tipo IV, intertrocantérico**: cerca de **10%**, o **menor risco**.\n\n**Por que o risco cai**: a cabeça femoral é nutrida pelos **vasos retinaculares**, que sobem pelo colo vindos da artéria circunflexa femoral medial. Quanto mais **distal** o traço, menos desses vasos são lesados, e a circulação da epífise é mais preservada.\n\n**A prevenção**: redução anatômica urgente, **descompressão da cápsula** (o hematoma aumenta a pressão sobre os vasos) e fixação estável.\n\n**As outras complicações**: coxa vara, fechamento precoce da fise e pseudartrose.\n\n**Na prova**: a necrose avascular é menos observada no tipo **IV** de Delbet.",
-  "correta": "O tipo IV, intertrocantérico, é o mais distal e preserva mais a circulação da cabeça; o risco de necrose é de cerca de 10%.",
   "referencias": [
-   "Rockwood and Wilkins, Fractures in Children. 6th ed., pg. 874 (referência indicada na prova TARO 2011, questão 54)"
+   "Rockwood and Wilkins, Fractures in Children. 6th ed., pg. 874 (referência indicada na prova TARO 2011, questão 54)",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0652": {
