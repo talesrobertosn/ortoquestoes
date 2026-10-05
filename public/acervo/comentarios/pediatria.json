@@ -1257,17 +1257,18 @@
   "conferido": false
  },
  "pediatria-0087": {
-  "conceito": "### GMFCS (6 a 12 anos)\n| Nível | Mobilidade |\n|---|---|\n| I | anda sem restrições; corre e salta com limitação |\n| II | anda na maioria dos ambientes; limitação em distâncias, terreno irregular |\n| III | anda com ==dispositivo manual== (andador, muletas); cadeira para distâncias |\n| ==IV== | ==controle de cabeça e tronco==; anda pouco (casa, com ajuda); ==cadeira de rodas na comunidade== (pode ser motorizada) |\n| V | sem controle de cabeça e tronco; transportado |\n\n### Uso ortopédico\n| Nível | Preocupação |\n|---|---|\n| I-III | marcha: análise, cirurgia multinível |\n| ==IV-V== | ==luxação do quadril== (vigilância radiográfica), escoliose |\n\n- Índice de migração de Reimers > 30 a 40%: cirurgia de partes moles ou osteotomias.\n\n> **Na prova:** sem controle cervical e de tronco = ==GMFCS V==",
-  "correta": "**Nível V.**\n- Sem controle de cabeça e tronco.\n- Transportado em cadeira.",
+  "conceito": "**O que é o GMFCS.** O *Gross Motor Function Classification System* classifica a função motora grossa de crianças com paralisia cerebral em **cinco níveis**, com base no que a criança faz no dia a dia (sentar, andar, usar dispositivos), e não no tipo de alteração do tônus. É estável ao longo do tempo, por isso orienta prognóstico de marcha, risco de luxação do quadril e indicação de cirurgias.\n\n**Os níveis (faixa de 6 a 12 anos).**\n\n| Nível | Mobilidade |\n|---|---|\n| I | Anda sem restrições; corre e salta com alguma limitação de velocidade e coordenação |\n| II | Anda na maioria dos ambientes; dificuldade em terrenos irregulares, longas distâncias e escadas |\n| III | Anda com **dispositivo manual** (andador, muletas); cadeira de rodas para longas distâncias |\n| IV | Mobilidade limitada; **mantém algum controle de tronco** para sentar com apoio; cadeira de rodas motorizada ou empurrada na comunidade |\n| **V** | **Sem controle antigravitacional de cabeça e tronco**; transportado em cadeira de rodas manual por outra pessoa |\n\n**A figura.** As duas crianças estão em cadeiras de rodas. Uma não sustenta a cabeça e o tronco e cai para a frente; a outra precisa de apoio cefálico, cinto de tronco e é **empurrada por um adulto**. É o retrato do **nível V**: limitação grave de todas as funções motoras, sem controle da postura contra a gravidade, mesmo com adaptações.\n\n**Por que importa na ortopedia.**\n- O **risco de luxação do quadril** aumenta progressivamente com o nível: muito baixo no I e acima de 60 a 90% no V. Por isso, crianças nível IV e V fazem vigilância radiográfica periódica do quadril (índice de migração de Reimers).\n- Escoliose neuromuscular é mais frequente e progressiva nos níveis IV e V.\n- Os objetivos do tratamento mudam: nos níveis altos, buscar sentar confortável, higiene e ausência de dor, mais do que marcha.",
+  "correta": "**Correta: C (GMFCS V).** A ausência de controle de cabeça e tronco, com dependência total de transporte em cadeira de rodas empurrada por outra pessoa, define o nível V, o mais grave da classificação.",
   "incorretas": {
-   "A": "**Dispositivo manual.**\n- Anda com andador.",
-   "B": "**Controla o tronco.**\n- Cadeira na comunidade.",
-   "D": "**Não existe.**\n- São cinco níveis."
+   "A": "O **nível III** anda com dispositivo manual (andador ou muletas), e usa cadeira apenas para longas distâncias.",
+   "B": "No **nível IV**, a criança tem **controle de tronco** suficiente para sentar com algum apoio e pode usar cadeira motorizada; o que diferencia do V é exatamente esse controle.",
+   "D": "**Não existe nível VI.** O GMFCS tem cinco níveis."
   },
   "referencias": [
-   "GMFCS Expanded and Revised. CanChild. https://canchild.ca/system/tenon/assets/attachments/000/000/058/original/GMFCS-ER_English.pdf"
+   "GMFCS Expanded and Revised. CanChild. https://canchild.ca/system/tenon/assets/attachments/000/000/058/original/GMFCS-ER_English.pdf",
+   "Palisano R, Rosenbaum P, Walter S, Russell D, Wood E, Galuppi B. Development and reliability of a system to classify gross motor function in children with cerebral palsy. Dev Med Child Neurol. 1997;39(4):214-223."
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0088": {
@@ -9582,17 +9583,18 @@
   "conferido": false
  },
  "pediatria-0790": {
+  "conceito": "**O que o ângulo de Kite mede.** Na radiografia **anteroposterior** do pé, traça-se o eixo longitudinal do **tálus** e o do **calcâneo**. Os dois divergem a partir do retropé, formando o ângulo talocalcâneo AP, conhecido como ângulo de Kite. Ele reflete a relação de rotação entre os dois ossos no plano horizontal, que acompanha a posição em varo ou valgo do retropé.\n\n**A lógica do movimento.** O calcâneo gira sob o tálus como um barco sob o seu ancoradouro.\n- No **varo** (inversão), o calcâneo roda medialmente e se coloca **sob** o tálus. Os eixos ficam quase **paralelos** e o ângulo **diminui**.\n- No **valgo** (eversão), o calcâneo roda lateralmente e se afasta, enquanto a cabeça do tálus aponta para medial. Os eixos **divergem** e o ângulo **aumenta**.\n\n| Ângulo de Kite (AP) | Interpretação |\n|---|---|\n| Menor que cerca de 20° | **Varo do retropé** (pé torto congênito) |\n| Cerca de 20° a 40° | Normal (maior no lactente) |\n| Maior que cerca de 40° | **Valgo do retropé** (pé plano, tálus vertical) |\n\n**Aplicação clínica.**\n- No **pé torto congênito**, o paralelismo talocalcâneo no AP e no perfil é a marca radiográfica do varo do retropé. A soma dos ângulos talocalcâneos AP e perfil (índice talocalcâneo) abaixo de 40° confirma a deformidade.\n- No **tálus vertical congênito** e no **pé plano valgo**, o ângulo aumenta.\n- Em lactentes, os ossos ainda pouco ossificados tornam a medida imprecisa; o tratamento do pé torto pelo método de Ponseti é guiado pela clínica, não pela radiografia.",
+  "correta": "**Resposta provável: Errado.** Um ângulo de Kite menor que 20° indica **eixos talocalcâneos paralelos**, ou seja, **varo** do retropé, como no pé torto congênito. O valgo produz o oposto: divergência maior, com ângulo aumentado.",
   "incorretas": {
-   "A": "**Certo seria associar ângulo talocalcâneo aumentado ao valgo.** O enunciado inverte a direção da relação radiográfica."
+   "A": "**Certo** inverteria a relação. O valgo afasta o calcâneo do tálus e aumenta o ângulo; o ângulo pequeno é o achado do varo."
   },
-  "conceito": "**O ângulo de Kite mede divergência talocalcânea.** Na radiografia anteroposterior do pé com carga, traçam-se os eixos longitudinais do tálus e do calcâneo. A abertura entre eles reflete a posição relativa do retropé e ajuda a interpretar alinhamento em condições como pé torto e pé plano, sempre junto ao exame e a outras projeções.\n\n**Menor abertura sugere varo, não valgo.** Valores inferiores a cerca de 20 graus são classicamente associados à redução da divergência talocalcânea e ao retropé em varo, como no pé torto congênito. Aumento expressivo do ângulo sugere valgo ou abdução, frequentemente no pé plano. Números isolados variam com idade, técnica radiográfica e carga, então o corte serve como orientação, não substitui a avaliação completa.",
-  "correta": "**Errado: ângulo de Kite menor que 20 graus sugere varismo do retropé.** Valgo costuma aumentar a divergência talocalcânea.",
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "referencias": [
-   "Atualização em conhecimentos ortopédicos. Ortopedia pediátrica. AAOS/SBOT. p. 235."
+   "Atualização em conhecimentos ortopédicos. Ortopedia pediátrica. AAOS/SBOT. p. 235.",
+   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
   ],
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "B",
-  "geradoEm": "2026-10-01",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0791": {
@@ -9890,17 +9892,18 @@
   "conferido": false
  },
  "pediatria-0812": {
+  "conceito": "**O que é a pronação dolorosa.** É a **subluxação da cabeça do rádio** sob o ligamento anular, também chamada de cotovelo de babá. Uma tração longitudinal súbita no antebraço com o cotovelo em extensão e o antebraço pronado (puxar a criança pela mão para subir um degrau, balançar pelos braços) faz parte do ligamento anular escorregar sobre a cabeça radial e ficar interposto na articulação radiocapitelar.\n\n**Por que acomete crianças pequenas.**\n- A cabeça do rádio ainda é pouco desenvolvida e quase do mesmo diâmetro do colo, o que oferece pouca resistência ao deslizamento do ligamento.\n- O ligamento anular é frouxo, e sua inserção distal no colo é fraca.\n\nCom o crescimento, a cabeça radial se alarga e o ligamento se fortalece, e a lesão praticamente desaparece **após os 5 anos**.\n\n**Epidemiologia.**\n\n| Aspecto | Dado |\n|---|---|\n| Idade | **1 a 4 anos**, pico por volta de **2 a 3 anos** |\n| Lado | Esquerdo mais comum (a mão do adulto destro segura a esquerda da criança) |\n| Recorrência | Cerca de 5 a 30%, sobretudo antes dos 2 anos |\n\n**Quadro e tratamento.** A criança chora e para de usar o braço, mantendo-o junto ao corpo, com cotovelo levemente fletido e antebraço pronado, sem edema ou deformidade. Radiografia é desnecessária quando a história é típica. A redução é feita por **supinação com flexão** do cotovelo ou por **hiperpronação**, que tem maior taxa de sucesso na primeira tentativa; um clique é palpado sobre a cabeça radial e a criança volta a usar o braço em minutos.",
+  "correta": "**Resposta provável: Errado.** A pronação dolorosa ocorre tipicamente entre **1 e 4 anos**, com pico por volta de 2 a 3 anos. Entre 6 e 8 anos é rara, porque a cabeça do rádio já se alargou e o ligamento anular está mais firme.",
   "incorretas": {
-   "A": "**Certo seria dizer que casos isolados podem ocorrer em idade mais avançada.** Possibilidade não equivale à faixa de maior incidência."
+   "A": "**Certo** deslocaria a lesão para uma faixa em que ela praticamente não ocorre. Dor no cotovelo após trauma aos 6 a 8 anos sugere fraturas (supracondiliana, côndilo lateral), não subluxação da cabeça radial."
   },
-  "conceito": "**Pronação dolorosa é subluxação da cabeça radial na primeira infância.** Uma tração longitudinal no antebraço, muitas vezes com a mão segurada por um adulto, permite que o ligamento anular se desloque e fique interposto. A criança para de usar o braço, mantendo-o próximo ao corpo e geralmente pronado, sem grande edema ou deformidade.\n\n**A idade típica é um a quatro anos, com pico por volta de dois a três.** À medida que a cabeça radial e o ligamento amadurecem, a lesão se torna menos comum. Em criança de seis a oito anos, história atípica, dor óssea localizada, inchaço ou falha de redução exigem pensar em fratura e reavaliar o diagnóstico. Hiperpronação ou supinação-flexão são manobras de redução em apresentação típica.",
-  "correta": "**Errado: a maior incidência não é entre seis e oito anos.** O pico ocorre em crianças bem menores, sobretudo entre dois e três anos.",
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "referencias": [
-   "Hebert Sizínio et al. Ortopedia e traumatologia: princípios e prática. Porto Alegre: Artmed. 3ª edição, p. 1059."
+   "Hebert Sizínio et al. Ortopedia e traumatologia: princípios e prática. Porto Alegre: Artmed. 3ª edição, p. 1059.",
+   "Rockwood and Wilkins' Fractures in Children, 9ª edição (Waters, Skaggs, Flynn)"
   ],
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "B",
-  "geradoEm": "2026-10-01",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0813": {
@@ -9988,17 +9991,18 @@
   "conferido": false
  },
  "pediatria-0819": {
+  "conceito": "**A gravidade da fratura do colo do fêmur na criança.** Ao contrário do adulto, a fratura do colo femoral infantil é rara e resulta de trauma de alta energia. A complicação mais temida é a **necrose avascular**, que ocorre em cerca de 20 a 50% dos casos, e mais nos tipos proximais (transepifisária e transcervical) de **Delbet**. Ela decorre da lesão dos vasos retinaculares, ramos da artéria circunflexa femoral medial, que correm na superfície do colo até a epífise.\n\n**A classificação de Ratliff** descreve **onde** ocorreu a necrose, e isso define o prognóstico.\n\n| Tipo | Área necrótica | Prognóstico |\n|---|---|---|\n| **I** | **Toda a cabeça** e, às vezes, o colo | **Pior**: colapso, deformidade e artrose |\n| II | Parte da epífise | Intermediário |\n| III | Colo, entre o traço de fratura e a fise, poupando a epífise | **Melhor** |\n\n**Por que o tipo I é o pior.** Quando toda a epífise necrosa, ela perde sustentação e colapsa sob carga, a cabeça se deforma, a congruência articular se perde e a artrose surge precocemente. No tipo III, a epífise permanece viável; o colo pode encurtar e haver parada de crescimento, mas a superfície articular é preservada.\n\n**Prevenção.** Redução anatômica precoce e fixação estável, sem violar a fise quando possível. Muitos autores defendem descompressão do hematoma intracapsular (capsulotomia ou aspiração) para reduzir a pressão sobre os vasos, embora a evidência seja limitada.\n\n**Outras complicações.** Coxa vara, pseudartrose e fechamento prematuro da fise, com discrepância de comprimento.",
+  "correta": "**Resposta provável: Errado.** Na classificação de Ratliff, o pior prognóstico é do **tipo I**, com necrose de toda a cabeça femoral. O **tipo III**, restrito ao colo entre a fratura e a fise e poupando a epífise, é o de **melhor** prognóstico.",
   "incorretas": {
-   "A": "**Certo seria reconhecer que o tipo III também pode deixar sequelas importantes.** Isso não o torna pior que a necrose extensa do tipo I."
+   "A": "**Certo** inverteria a classificação. O tipo III preserva a epífise e a superfície articular; o colapso e a artrose são típicos do tipo I."
   },
-  "conceito": "**Ratliff classifica a extensão da necrose após fratura do colo femoral infantil.** No tipo I, há necrose difusa da cabeça, com possível extensão ao colo; no tipo II, o acometimento é parcial da epífise; no tipo III, predomina no colo entre a fise e o traço de fratura, poupando a epífise. Essa classificação descreve a complicação vascular, não o traço inicial da fratura, que pode ser descrito por Delbet.\n\n**A necrose difusa da cabeça é a mais grave.** O tipo I tende a maior colapso, deformidade e perda de congruência. O tipo III pode gerar deformidade do colo e distúrbio de crescimento, mas não é o pior padrão por definição. A avaliação seriada observa esfericidade, comprimento do colo, fise e função do quadril.",
-  "correta": "**Errado: Ratliff I, com necrose difusa da cabeça, tem o pior prognóstico.** Ratliff III envolve principalmente o colo e poupa a epífise.",
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "referencias": [
+   "Ratliff AH. Fractures of the neck of the femur in children. J Bone Joint Surg Br. 1962;44-B(3):528-542.",
    "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 5ª edição, p. 925."
   ],
+  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
   "provavel": "B",
-  "geradoEm": "2026-10-01",
+  "geradoEm": "2026-10-05",
   "conferido": false
  },
  "pediatria-0820": {
