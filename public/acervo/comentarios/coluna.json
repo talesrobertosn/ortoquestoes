@@ -5080,5 +5080,136 @@
   ],
   "geradoEm": "2026-10-05",
   "conferido": false
+ },
+ "coluna-0470": {
+  "conceito": "**Classificação de Lenke para escoliose idiopática do adolescente.** Proposta em 2001, foi criada para orientar quais curvas incluir na artrodese. É tridimensional na prática, porque combina o plano coronal e o sagital, e tem três componentes:\n\n1. **Tipo de curva (1 a 6)**: define quais curvas são estruturais (torácica proximal, torácica principal, toracolombar/lombar).\n2. **Modificador lombar (A, B ou C)**: posição da linha vertical central do sacro em relação à vértebra apical lombar.\n3. **Modificador sagital torácico (-, N ou +)**: cifose de T5 a T12.\n\n**Exames necessários.**\n- **Radiografia panorâmica em pé, AP (ou PA)**: mede o Cobb de cada curva e permite traçar a linha vertical central do sacro.\n- **Radiografia panorâmica em pé, perfil**: mede a cifose T5-T12 e a cifose T2-T5 e T10-L2, que também entram nos critérios estruturais.\n- **Radiografias em inclinação lateral direita e esquerda** (feitas em decúbito dorsal no trabalho original): mostram a flexibilidade de cada curva.\n\n**O que torna uma curva estrutural.**\n- Curva principal (maior Cobb): sempre estrutural.\n- Curvas menores: estruturais se o Cobb na inclinação for de 25 graus ou mais, ou se houver cifose regional de 20 graus ou mais (T2-T5 para a torácica proximal; T10-L2 para a toracolombar).\n\n| Tipo | Curvas estruturais |\n|---|---|\n| 1 | Torácica principal |\n| 2 | Dupla torácica |\n| 3 | Dupla principal (torácica e lombar) |\n| 4 | Tripla principal |\n| 5 | Toracolombar/lombar |\n| 6 | Toracolombar/lombar principal com torácica estrutural |\n\n> Lenke = tipo + modificador lombar + modificador sagital, a partir de AP, perfil e inclinações.",
+  "correta": "**A: Certo.** O item descreve corretamente os três componentes da classificação de Lenke (tipo de curva, modificador lombar e modificador sagital torácico) e os exames necessários: radiografias panorâmicas em pé em AP e perfil e radiografias em inclinação lateral para os dois lados. No trabalho original as inclinações foram feitas em decúbito dorsal, mas isso não altera a correção do item.",
+  "incorretas": {
+   "B": "**Marcar errado exigiria que faltasse um componente ou um exame.** Uma armadilha comum é achar que a classificação usa apenas o plano coronal, mas o modificador sagital (cifose T5-T12) vem do perfil. Outra é esquecer as inclinações, essenciais para separar curvas estruturais de compensatórias. O item contempla ambos."
+  },
+  "referencias": [
+   "Lenke LG, Betz RR, Harms J, et al. Adolescent idiopathic scoliosis: a new classification to determine extent of spinal arthrodesis. J Bone Joint Surg Am. 2001;83(8):1169-1181.",
+   "Herkowitz HN et al. Rothman-Simeone The Spine. Elsevier. Escoliose idiopática do adolescente."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "coluna-0471": {
+  "conceito": "**Modificador lombar de Lenke.** Avalia quanto a coluna lombar se desvia da linha média. Usa a **linha vertical central do sacro** (CSVL), traçada na radiografia AP em pé, perpendicular à horizontal e passando pelo ponto médio do sacro (S1). Observa-se onde essa linha cruza a **vértebra apical lombar** (ou o disco apical).\n\n| Modificador | Posição da CSVL na apical lombar |\n|---|---|\n| A | Entre os pedículos |\n| B | Toca o pedículo ou o corpo, entre a borda medial do pedículo e a borda lateral do corpo |\n| C | Totalmente medial, sem tocar o corpo (a vértebra está toda fora da linha) |\n\n**Por que importa.** Com modificador A, a lombar está quase centrada e a artrodese torácica isolada é a regra. No modificador C, a curva lombar tem desvio grande; em algumas curvas tipo 1C pode-se ainda fazer artrodese torácica seletiva, mas com critérios rigorosos, para evitar descompensação.\n\n**Raciocínio visual.** Pense em quanto a vértebra apical lombar se afasta da CSVL: A pouco (a linha atravessa o meio da vértebra), B intermediário (a linha raspa a borda), C muito (a vértebra está ao lado da linha).\n\n> A = entre os pedículos. B = toca o pedículo ou o corpo. C = fora do corpo.",
+  "correta": "**B: Errado.** A descrição do item (CSVL passando entre os pedículos da vértebra apical) corresponde ao modificador lombar **A**. No modificador **B**, a CSVL toca a vértebra apical entre a borda medial do pedículo côncavo e a borda lateral do corpo, ou seja, a vértebra está mais deslocada da linha média. A troca entre A e B é a armadilha do item.",
+  "incorretas": {
+   "A": "**Marcar certo é confundir os modificadores A e B.** Uma forma de lembrar é a ordem alfabética acompanhar o afastamento da coluna lombar: A, linha no meio da vértebra (entre os pedículos); B, linha na borda (pedículo ou corpo); C, linha fora da vértebra."
+  },
+  "referencias": [
+   "Lenke LG, Betz RR, Harms J, et al. Adolescent idiopathic scoliosis: a new classification to determine extent of spinal arthrodesis. J Bone Joint Surg Am. 2001;83(8):1169-1181.",
+   "Herkowitz HN et al. Rothman-Simeone The Spine. Elsevier. Escoliose idiopática do adolescente."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "coluna-0472": {
+  "conceito": "**Modificador sagital torácico de Lenke.** A escoliose idiopática do adolescente costuma vir acompanhada de **hipocifose torácica**, porque a rotação e o crescimento anterior relativo dos corpos vertebrais achatam a cifose normal. Lenke incluiu esse dado porque o perfil sagital influencia a técnica cirúrgica e o resultado.\n\n**Como medir.** Na radiografia em perfil, em pé, mede-se o ângulo de Cobb entre a placa superior de **T5** e a placa inferior de **T12**.\n\n| Modificador | Cifose T5-T12 |\n|---|---|\n| - (hipocifose) | Menor que 10 graus |\n| N (normal) | 10 a 40 graus |\n| + (hipercifose) | Maior que 40 graus |\n\n**Aplicação prática.**\n- Pacientes hipocifóticos (-) se beneficiam de técnicas que devolvem a cifose (barras com curvatura, translação posterior das vértebras).\n- Pacientes hipercifóticos (+) exigem cuidado para não acentuar a cifose e podem ter indicação de incluir mais níveis.\n\n**Faixa normal.** A cifose torácica fisiológica varia bastante, mas valores entre 20 e 40 graus são considerados típicos em adolescentes. Por isso, 30 graus está dentro do normal, e não é hipercifose.\n\n> Modificador sagital: T5-T12, normal de 10 a 40 graus, hipercifose acima de 40.",
+  "correta": "**B: Errado.** A medida do modificador sagital é de fato a cifose de T5 a T12, mas o limite de hipercifose é **acima de 40 graus**, não de 30. Na classificação de Lenke, valores entre 10 e 40 graus são normais (N), abaixo de 10 graus indicam hipocifose (-) e acima de 40 graus, hipercifose (+). Uma cifose de 35 graus, por exemplo, seria normal.",
+  "incorretas": {
+   "A": "**Marcar certo é aceitar o item pela primeira metade, que está correta.** O segmento T5-T12 é o usado por Lenke, e isso dá credibilidade ao item. O erro está no número: o corte de hipercifose é 40 graus. Em itens de certo ou errado, o detalhe numérico decide."
+  },
+  "referencias": [
+   "Lenke LG, Betz RR, Harms J, et al. Adolescent idiopathic scoliosis: a new classification to determine extent of spinal arthrodesis. J Bone Joint Surg Am. 2001;83(8):1169-1181.",
+   "Herkowitz HN et al. Rothman-Simeone The Spine. Elsevier. Escoliose idiopática do adolescente."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "coluna-0473": {
+  "conceito": "**Como se decide o tratamento da escoliose idiopática do adolescente.** O objetivo é evitar que a curva chegue a uma magnitude que continue progredindo na vida adulta. A decisão se apoia em três parâmetros biológicos.\n\n**1. Gravidade (magnitude da curva).** Medida pelo ângulo de Cobb. Curvas abaixo de cerca de 30 graus na maturidade raramente progridem na vida adulta; curvas acima de 50 graus tendem a progredir cerca de 1 grau por ano.\n\n**2. Localização (padrão da curva).** Curvas torácicas e duplas progridem mais que as lombares isoladas. A localização também influencia o impacto estético, a função pulmonar (curvas torácicas grandes) e a técnica cirúrgica.\n\n**3. Maturidade esquelética.** Quanto mais crescimento resta, maior o risco de progressão. É avaliada pelo sinal de Risser, pela menarca, pela cartilagem trirradiada e pela classificação de Sanders.\n\n**Diretrizes gerais.**\n\n| Situação | Conduta habitual |\n|---|---|\n| Cobb abaixo de 20 a 25 graus | Observação |\n| 25 a 40 graus, imatura | Colete |\n| Acima de 45 a 50 graus | Cirurgia |\n\n**Outros fatores.** Desequilíbrio do tronco, deformidade estética, desejo do paciente e da família e, mais raramente, dor. Mas a tríade gravidade, localização e maturidade é a base da decisão.\n\n> Tratamento da EIA = magnitude + localização + crescimento remanescente.",
+  "correta": "**A: Certo.** Os três parâmetros citados são os pilares da decisão terapêutica na escoliose idiopática do adolescente. A gravidade (Cobb) define em que faixa a curva está; a localização indica o risco de progressão e as repercussões; e a maturidade mostra quanto crescimento ainda pode fazer a curva progredir. O colete, por exemplo, só faz sentido em paciente imatura, e uma curva de 30 graus em paciente madura é apenas observada.",
+  "incorretas": {
+   "B": "**Marcar errado seria imaginar que outro fator, isolado, seja mais importante.** A dor, por exemplo, não é critério habitual de tratamento na escoliose idiopática e, quando intensa, sugere outra causa. A estética e o equilíbrio também pesam, mas sempre em conjunto com magnitude, localização e maturidade."
+  },
+  "referencias": [
+   "Weinstein SL, Dolan LA, Cheng JC, Danielsson A, Morcuende JA. Adolescent idiopathic scoliosis. Lancet. 2008;371(9623):1527-1537.",
+   "Lonstein JE, Carlson JM. The prediction of curve progression in untreated idiopathic scoliosis during growth. J Bone Joint Surg Am. 1984;66(7):1061-1071."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "coluna-0474": {
+  "conceito": "**Indicação cirúrgica na escoliose idiopática do adolescente.** O raciocínio é prever a evolução da curva. Depois da maturidade esquelética, curvas torácicas acima de cerca de 50 graus continuam progredindo lentamente na vida adulta, com piora estética, desequilíbrio e, nas curvas muito grandes, comprometimento pulmonar. Curvas abaixo de 30 graus quase não progridem.\n\n**Paciente imaturo.** Ainda há crescimento pela frente, e uma curva de 40 a 50 graus provavelmente vai ultrapassar 50 graus. Além disso, o colete tem pouca eficácia em curvas acima de cerca de 40 a 45 graus. Por isso, a cirurgia passa a ser considerada a partir de 40 a 45 graus.\n\n**Paciente maduro.** O crescimento terminou, e a progressão depende apenas da magnitude. A cirurgia é indicada para curvas de **50 graus ou mais**, que têm risco de progressão na vida adulta. Curvas entre 30 e 50 graus são acompanhadas.\n\n| Situação | Indicação cirúrgica habitual |\n|---|---|\n| Imaturo | 40 a 50 graus ou mais |\n| Maduro | 50 graus ou mais |\n| Toracolombar/lombar | Considerar também desequilíbrio e rotação |\n\n**Objetivos da cirurgia.** Interromper a progressão (artrodese), corrigir a deformidade de forma segura, equilibrar o tronco no plano coronal e sagital e preservar o maior número possível de segmentos móveis, especialmente lombares.\n\n> Imaturo: cirurgia a partir de 40 a 50 graus. Maduro: a partir de 50 graus.",
+  "correta": "**A: Certo.** O item reproduz a regra geral dos livros de referência: em pacientes imaturos, curvas torácicas entre 40 e 50 graus já têm indicação cirúrgica, porque o crescimento remanescente tende a levá-las além de 50 graus e o colete é pouco eficaz nessa faixa. Em pacientes maduros, a cirurgia fica reservada às curvas de 50 graus ou mais, que são as que continuam progredindo na vida adulta.",
+  "incorretas": {
+   "B": "**Marcar errado seria aplicar o mesmo limite a imaturos e maduros.** A maturidade muda a indicação: o mesmo ângulo de 45 graus tem prognóstico diferente em uma menina pré-menarca e em uma jovem com Risser 5. Os números do item, embora variem um pouco entre autores, correspondem à prática aceita."
+  },
+  "referencias": [
+   "Weinstein SL, Dolan LA, Cheng JC, Danielsson A, Morcuende JA. Adolescent idiopathic scoliosis. Lancet. 2008;371(9623):1527-1537.",
+   "Herkowitz HN et al. Rothman-Simeone The Spine. Elsevier. Escoliose idiopática do adolescente."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "coluna-0475": {
+  "conceito": "**Dermátomos das raízes lombossacrais.** Na hérnia de disco lombar, o exame sensitivo, motor e reflexo permite localizar a raiz comprimida e conferir se o achado bate com a ressonância.\n\n| Raiz | Sensibilidade |\n|---|---|\n| L4 | Face medial da perna e borda medial do pé |\n| L5 | Face lateral da perna, dorso do pé e hálux |\n| S1 | Face posterior da panturrilha, borda lateral e planta do pé, quinto dedo |\n\n**Motor e reflexo.**\n- **L4**: tibial anterior (dorsiflexão do tornozelo); reflexo patelar.\n- **L5**: extensor longo do hálux, extensor longo dos dedos, glúteo médio; sem reflexo confiável (às vezes o tibial posterior ou isquiotibial medial).\n- **S1**: tríceps sural (flexão plantar), fibulares, flexor longo do hálux, glúteo máximo; reflexo aquileu.\n\n**Correlação com a hérnia.** No disco L5-S1, a hérnia posterolateral comprime a raiz que desce, S1. A hérnia foraminal ou extraforaminal comprime a raiz que sai pelo forame, L5. A hérnia central volumosa pode comprimir várias raízes e, raramente, causar síndrome da cauda equina.\n\n> L5 = lateral da perna, dorso do pé e hálux. S1 = planta, borda lateral do pé e quinto dedo.",
+  "correta": "**B: Errado.** A hipoestesia em face lateral da perna, dorso do pé e hálux corresponde ao dermátomo de **L5**. Na paciente, que tem compressão de S1, o esperado é hipoestesia na face posterior da panturrilha, na borda lateral do pé, na planta e no quinto dedo, frequentemente com reflexo aquileu diminuído e fraqueza da flexão plantar.",
+  "incorretas": {
+   "A": "**Marcar certo é confundir os dermátomos de L5 e S1, que são vizinhos.** Uma forma prática de memorizar: L5 é o território do hálux e do dorso do pé (como o extensor longo do hálux); S1 é o território da planta e do quinto dedo (como o tríceps sural, que nos põe na ponta dos pés)."
+  },
+  "referencias": [
+   "Hoppenfeld S. Propedêutica ortopédica: coluna e extremidades. Atheneu.",
+   "American Spinal Injury Association. International Standards for Neurological Classification of Spinal Cord Injury. Revisão de 2019."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "coluna-0476": {
+  "conceito": "**Miótomos das raízes lombossacrais.** Saber qual músculo depende de cada raiz permite reconhecer o déficit motor da hérnia de disco e acompanhar sua evolução.\n\n| Raiz | Músculos-chave |\n|---|---|\n| L4 | Tibial anterior, quadríceps |\n| L5 | Extensor longo do hálux, extensor longo dos dedos, glúteo médio |\n| S1 | Tríceps sural, fibulares, flexor longo do hálux, glúteo máximo |\n\n**Como testar.**\n- **L5**: dorsiflexão do hálux contra resistência; marcha sobre os calcanhares (também L4); abdução do quadril (glúteo médio).\n- **S1**: marcha na ponta dos pés; elevação repetida na ponta de um só pé (mais sensível que a força manual, porque o tríceps sural é muito forte); eversão do pé.\n\n**Reflexos.** Aquileu diminuído ou abolido é o sinal mais objetivo de lesão de S1. A raiz L5 não tem reflexo clássico confiável.\n\n**Gravidade do déficit.** Déficit motor progressivo ou grave (por exemplo, pé caído na lesão de L5) muda a conduta e pode indicar cirurgia precoce.\n\n> Hálux para cima = L5. Ponta dos pés = S1.",
+  "correta": "**B: Errado.** O extensor longo do hálux e o extensor longo dos dedos são inervados predominantemente pela raiz **L5**. Na compressão de S1, a paresia esperada é da flexão plantar (tríceps sural), da eversão (fibulares) e do flexor longo do hálux, com dificuldade para andar na ponta dos pés e reflexo aquileu diminuído.",
+  "incorretas": {
+   "A": "**Marcar certo é atribuir a S1 músculos de L5.** O extensor longo do hálux é o músculo-chave de L5 e um dos testes mais usados para essa raiz. Uma paciente com compressão de S1 caminharia normalmente sobre os calcanhares, mas teria dificuldade na ponta dos pés."
+  },
+  "referencias": [
+   "Hoppenfeld S. Propedêutica ortopédica: coluna e extremidades. Atheneu.",
+   "Herkowitz HN et al. Rothman-Simeone The Spine. Elsevier. Hérnia discal lombar."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "coluna-0477": {
+  "conceito": "**Tratamento inicial da hérnia de disco lombar.** A história natural é favorável: a maioria dos pacientes melhora em 6 a 12 semanas, e fragmentos herniados, sobretudo os grandes e extrusos, podem ser reabsorvidos por reação inflamatória e neovascularização. Por isso, o tratamento inicial é **conservador** na ausência de sinais de alarme.\n\n**Tratamento conservador.**\n- Analgésicos, anti-inflamatórios, medicamentos para dor neuropática quando necessário, e curto período de corticoide oral em casos selecionados.\n- Manter atividades dentro do tolerado (repouso prolongado não ajuda).\n- Fisioterapia e, em casos selecionados, infiltração epidural ou transforaminal.\n\n**Indicações de cirurgia.**\n- **Urgentes**: síndrome da cauda equina (retenção urinária, anestesia em sela, déficit bilateral) e déficit motor grave ou progressivo.\n- **Eletivas**: dor radicular incapacitante que não melhora após cerca de 6 a 12 semanas de tratamento conservador, ou episódios recorrentes.\n\n**O que dizem os estudos.** Trabalhos clássicos (Weber) e ensaios mais recentes (Peul, SPORT) mostram que a cirurgia acelera o alívio da dor ciática, mas os resultados em 1 a 2 anos tendem a se igualar aos do tratamento conservador.\n\n**Tamanho da hérnia.** Uma hérnia volumosa na ressonância não indica cirurgia por si; a decisão é clínica.\n\n> Hérnia lombar sem cauda equina e sem déficit grave: começar pelo tratamento conservador.",
+  "correta": "**B: Errado.** A paciente tem duas semanas de dor, sem sinais de síndrome da cauda equina e sem déficit motor grave ou progressivo descrito. Nessa situação, o tratamento inicial é conservador, porque a maioria das hérnias melhora espontaneamente nas primeiras semanas. A microdiscectomia é uma excelente opção, mas é indicada se a dor persistir e for incapacitante após cerca de 6 a 12 semanas, ou se surgirem sinais de alarme. O volume da hérnia na ressonância, isoladamente, não muda essa conduta.",
+  "incorretas": {
+   "A": "**Marcar certo é deixar o volume da hérnia e a intensidade da dor decidirem a cirurgia.** A descrição da microdiscectomia no item está correta (procedimento de pequeno porte que descomprime a raiz), mas a indicação está precoce. Grandes extrusões têm até maior chance de reabsorção espontânea. A cirurgia de entrada fica reservada à cauda equina e ao déficit motor grave ou progressivo."
+  },
+  "referencias": [
+   "Weber H. Lumbar disc herniation: a controlled, prospective study with ten years of observation. Spine. 1983;8(2):131-140.",
+   "Peul WC, van Houwelingen HC, van den Hout WB, et al. Surgery versus prolonged conservative treatment for sciatica. N Engl J Med. 2007;356(22):2245-2256."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "coluna-0478": {
+  "alerta": "A justificativa do item (raiz do jovem resistente à compressão) não é um conceito bem estabelecido na literatura. O que é consistente é a observação clínica: no paciente jovem, os sinais de tensão radicular (Lasègue) são exuberantes e a dor predomina, enquanto o déficit motor franco é menos frequente. O gabarito oficial (Certo) foi mantido.",
+  "conceito": "**Sinais de tensão radicular e déficit motor na hérnia lombar.** A hérnia de disco produz dois tipos de sinais: os de **irritação** (dor irradiada, Lasègue) e os de **compressão com perda de função** (hipoestesia, fraqueza, reflexo diminuído). Eles não aparecem sempre juntos.\n\n**O sinal de Lasègue (elevação da perna estendida).** Com o paciente deitado, eleva-se a perna com o joelho estendido. Entre cerca de 30 e 70 graus, a raiz L5 ou S1 é tracionada sobre a hérnia e reproduz a dor ciática abaixo do joelho. É muito sensível para hérnia em L4-L5 e L5-S1, mas pouco específico. O **Lasègue cruzado** (dor no lado afetado ao elevar a perna sadia) é bem mais específico.\n\n**O fator idade.**\n- Em **jovens**, o Lasègue costuma ser muito positivo, às vezes com escoliose antálgica e rigidez lombar, mesmo com hérnias pequenas. O disco é mais hidratado, a reação inflamatória é intensa e a dor predomina.\n- Em **idosos**, o Lasègue é menos frequente (a estenose e a rigidez dominam), e a compressão crônica tende a se expressar mais por déficits.\n\n**Déficit motor.** Aparece em uma parcela menor dos pacientes com hérnia, geralmente leve. Déficit grave ou progressivo é sinal de alarme e muda a conduta.\n\n| Sinal | Significado |\n|---|---|\n| Lasègue | Irritação e tensão da raiz |\n| Déficit motor | Perda de função da raiz |\n| Lasègue cruzado | Alta especificidade para hérnia |\n\n> No jovem, a hérnia costuma doer mais do que enfraquecer.",
+  "correta": "**A: Certo (gabarito oficial).** O item expressa uma observação clínica correta: pacientes jovens com hérnia lombar frequentemente têm sinal de Lasègue exuberante e dor intensa, mas sem paresia franca. A explicação dada (raiz resistente à compressão) é uma simplificação; os fatores reais incluem a natureza predominantemente inflamatória da dor e o caráter agudo da compressão, que irrita a raiz antes de lesar suas fibras motoras. A banca considerou o item correto.",
+  "incorretas": {
+   "B": "**Marcar errado é a resposta de quem desconfia da justificativa.** É um raciocínio compreensível, porque a ideia de raiz resistente à compressão é pouco precisa. Mas a afirmação principal, de que o déficit motor franco é incomum apesar do Lasègue positivo no paciente jovem, corresponde à prática clínica, e foi esse o ponto valorizado pela banca."
+  },
+  "referencias": [
+   "Herkowitz HN et al. Rothman-Simeone The Spine. Elsevier. Hérnia discal lombar.",
+   "Hoppenfeld S. Propedêutica ortopédica: coluna e extremidades. Atheneu."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "coluna-0479": {
+  "conceito": "**Instabilidade lombar.** É a perda da capacidade da coluna de manter, sob cargas fisiológicas, as relações normais entre as vértebras, de forma a não causar dor incapacitante, deformidade ou lesão neurológica (conceito de White e Panjabi). Pode surgir na degeneração discal, na espondilolistese, após laminectomias amplas e após traumas.\n\n**Sinais clínicos sugestivos.**\n- Dor lombar mecânica que piora com movimentos e melhora com repouso.\n- Arco doloroso ou movimento interrompido (\"travamento\") ao sair da flexão.\n- Necessidade de apoiar as mãos nas coxas para voltar da flexão (sinal de Gowers lombar).\n- Teste de instabilidade em prono positivo.\n- Sensação de \"degrau\" à palpação em listeses.\n\n**Confirmação por imagem.** As **radiografias dinâmicas em flexão e extensão máximas**, em perfil, mostram o movimento anormal entre duas vértebras. Os critérios mais usados são:\n- **Translação** sagital acima de cerca de 3 a 4 mm (ou acima de 8% a 15% da largura do corpo vertebral).\n- **Angulação** sagital excessiva entre os níveis, acima de cerca de 10 a 15 graus, ou maior que a dos níveis vizinhos.\n\n| Critério | Valor sugestivo |\n|---|---|\n| Translação | Acima de 3 a 4 mm |\n| Angulação | Acima de 10 a 15 graus |\n\n**Outros exames.** A ressonância em decúbito pode subestimar a listese; líquido nas facetas articulares é um sinal indireto. A comparação entre radiografia em pé e ressonância deitada também ajuda.\n\n**Importância.** A presença de instabilidade muda a cirurgia: em uma estenose com listese instável, a descompressão isolada tende a piorar o deslizamento, e associa-se a artrodese.\n\n> Instabilidade: suspeita clínica, confirmação nas radiografias dinâmicas.",
+  "correta": "**A: Certo.** A instabilidade lombar tem sinais clínicos sugestivos (dor mecânica, arco doloroso, travamento ao sair da flexão) e é confirmada principalmente pelas radiografias dinâmicas em flexão e extensão, que mostram translação ou angulação excessivas entre as vértebras. O dado é importante no planejamento cirúrgico, porque a instabilidade costuma indicar artrodese associada à descompressão.",
+  "incorretas": {
+   "B": "**Marcar errado seria considerar que a instabilidade só se confirma por ressonância ou que não tem expressão clínica.** A ressonância é feita em decúbito e pode mascarar o movimento anormal. As radiografias dinâmicas são o exame clássico de confirmação, ainda que os critérios numéricos variem entre autores."
+  },
+  "referencias": [
+   "White AA, Panjabi MM. Clinical Biomechanics of the Spine. 2nd ed. Lippincott; 1990.",
+   "Herkowitz HN et al. Rothman-Simeone The Spine. Elsevier. Instabilidade segmentar lombar."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  }
 }
