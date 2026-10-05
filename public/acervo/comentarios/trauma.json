@@ -11151,5 +11151,71 @@
   "provavel": "C",
   "geradoEm": "2026-10-01",
   "conferido": false
+ },
+ "trauma-1211": {
+  "conceito": "**Classificação de Tscherne para lesões de partes moles.** Tscherne e Oestern descreveram graus separados para fraturas fechadas (Fr. C) e abertas (Fr. O). O foco é a lesão das partes moles, que determina o risco de infecção e de complicações.\n\n**Fraturas abertas.**\n\n| Grau | Descrição |\n|---|---|\n| O1 | Pele perfurada por um fragmento de dentro para fora, ferida pequena, pouca contaminação |\n| O2 | Ferida com contusão de pele e partes moles, contaminação moderada |\n| O3 | **Lesão extensa de partes moles**, frequentemente com **lesão vascular ou nervosa** associada, contaminação importante |\n| O4 | Amputação subtotal ou total (lesão das principais estruturas, com menos de um quarto das partes moles em continuidade) |\n\n**Fraturas fechadas.** C0 (lesão mínima de partes moles, trauma indireto), C1 (escoriações e contusões superficiais), C2 (contusão profunda, risco de síndrome compartimental) e C3 (contusão extensa, desenluvamento fechado, síndrome compartimental instalada, lesão vascular).\n\n**Comparação com Gustilo.** Gustilo classifica apenas as fraturas expostas e depende do tamanho da ferida, da cobertura óssea e da lesão arterial. Tscherne valoriza a contusão das partes moles e a lesão neurovascular, mesmo sem lesão arterial que exija reparo.\n\n**O caso.** Ferida maior que 10 cm, alta energia e lesão completa do nervo fibular: lesão extensa de partes moles com lesão nervosa, ou seja, Tscherne O3.\n\n> Tscherne O3: lesão extensa de partes moles, muitas vezes com lesão nervosa ou vascular.",
+  "correta": "**A: Certo.** Pela classificação de Tscherne, a fratura exposta com laceração extensa de partes moles (maior que 10 cm) por trauma de alta energia e lesão completa do nervo fibular corresponde ao grau III (Fr. O3). Não é O4, porque não há amputação subtotal ou total; a perfusão está preservada e a cobertura óssea é adequada.",
+  "incorretas": {
+   "B": "**Marcar errado seria classificar o caso como O2 (contusão moderada) ou O4 (amputação).** A extensão da lesão e a lesão nervosa elevam para O3, e a perfusão preservada afasta o grau de amputação subtotal."
+  },
+  "referencias": [
+   "Tscherne H, Oestern HJ. Die Klassifizierung des Weichteilschadens bei offenen und geschlossenen Frakturen. Unfallheilkunde. 1982;85(3):111-115.",
+   "Tornetta P III, Ricci WM, Ostrum RF, McQueen MM, McKee MD, Court-Brown CM, eds. Rockwood and Green's Fractures in Adults. Wolters Kluwer. Fraturas expostas."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "trauma-1212": {
+  "conceito": "**Classificação de Gustilo e Anderson das fraturas expostas.** É a mais usada no mundo, com subdivisão do tipo III por Gustilo, Mendoza e Williams (1984). O tipo definitivo deve ser dado **após o desbridamento**, quando a real extensão da lesão é conhecida.\n\n| Tipo | Critérios |\n|---|---|\n| I | Ferida menor que 1 cm, limpa, baixa energia |\n| II | Ferida de 1 a 10 cm, sem lesão extensa de partes moles |\n| IIIA | Lesão extensa de partes moles ou alta energia, **com cobertura óssea adequada** |\n| IIIB | Perda extensa de partes moles com exposição óssea e descolamento periosteal; **exige retalho** para cobertura |\n| IIIC | **Lesão arterial que exige reparo** para salvar o membro, independentemente do tamanho da ferida |\n\n**Situações que elevam automaticamente para o tipo III.** Alta energia, cominuição grave, contaminação maciça (ambiente rural, esgoto), ferimento por arma de fogo de alta velocidade, fraturas segmentares, amputações traumáticas, atraso maior que 8 horas no tratamento (em algumas versões).\n\n**O caso.**\n- Ferida maior que 10 cm, alta energia: tipo III.\n- **Cobertura óssea adequada**: IIIA (não IIIB).\n- **Perfusão preservada**: não há lesão arterial que exija reparo, portanto não é IIIC.\n- A lesão do nervo fibular não muda o tipo de Gustilo, mas pesa no prognóstico.\n\n**Infecção conforme o tipo.** Cerca de 0% a 2% no tipo I, 2% a 5% no II, 5% a 10% no IIIA, 10% a 50% no IIIB e 25% a 50% no IIIC, com altas taxas de amputação no IIIC.\n\n> IIIC exige lesão arterial com necessidade de reparo; com perfusão preservada e boa cobertura, é IIIA.",
+  "correta": "**B: Errado.** O tipo IIIC de Gustilo exige **lesão arterial que necessita de reparo**. O paciente tem perfusão preservada nas extremidades e cobertura óssea adequada, o que caracteriza o tipo **IIIA**. A lesão do nervo fibular é importante para o prognóstico funcional, mas não entra nos critérios de Gustilo.",
+  "incorretas": {
+   "A": "**Marcar certo é supor que qualquer lesão neurovascular define o IIIC.** A classificação considera apenas a lesão arterial que exige reparo. Lesões nervosas, mesmo completas, não alteram o subtipo; em outras classificações, como a de Tscherne, elas pesam mais."
+  },
+  "referencias": [
+   "Gustilo RB, Anderson JT. Prevention of infection in the treatment of one thousand and twenty-five open fractures of long bones: retrospective and prospective analyses. J Bone Joint Surg Am. 1976;58(4):453-458.",
+   "Gustilo RB, Mendoza RM, Williams DN. Problems in the management of type III (severe) open fractures: a new classification of type III open fractures. J Trauma. 1984;24(8):742-746."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "trauma-1213": {
+  "alerta": "O critério dos 4 Cs é o padrão clínico de avaliação da viabilidade muscular, mas estudos clássicos (Scully e colaboradores) mostraram que ele não tem correlação perfeita com a histologia; a contratilidade e o sangramento são os critérios mais confiáveis. O gabarito oficial (Certo) foi mantido, apesar da expressão \"com precisão\".",
+  "conceito": "**Desbridamento da fratura exposta.** É o procedimento mais importante para prevenir infecção. O objetivo é transformar uma ferida contaminada, com tecido desvitalizado, em uma **ferida limpa e vascularizada**, capaz de resistir à infecção e de cicatrizar.\n\n**Princípios.**\n1. Ampliação da ferida no sentido longitudinal do membro, para explorar toda a zona de lesão.\n2. Retirada de corpos estranhos e de **todo tecido desvitalizado**: pele, gordura, fáscia, músculo e fragmentos ósseos sem inserção de partes moles.\n3. Irrigação abundante com soro fisiológico em baixa pressão (o estudo FLOW mostrou que soro simples em baixa pressão é adequado).\n4. Estabilização da fratura.\n5. Novo desbridamento em 24 a 72 horas nas lesões graves (second look).\n\n**Os 4 Cs da viabilidade muscular.**\n\n| Critério | Músculo viável | Músculo inviável |\n|---|---|---|\n| Cor | Vermelho vivo | Escuro, pálido ou acinzentado |\n| Contratilidade | Contrai ao estímulo (pinça ou bisturi elétrico) | Não contrai |\n| Consistência | Firme, elástica | Friável, \"papa\" |\n| Circulação (capacidade de sangrar) | Sangra ao corte | Não sangra |\n\n**Limitação.** O estudo de Scully (1956) comparou os 4 Cs com a histologia e mostrou que nenhum critério é perfeito; contratilidade e sangramento são os mais confiáveis, e a cor é o menos preciso. Por isso, na dúvida, programa-se novo desbridamento.\n\n> Desbridamento: ferida limpa e vascularizada; músculo avaliado pelos 4 Cs.",
+  "correta": "**A: Certo (gabarito oficial).** Um dos objetivos centrais do desbridamento é criar uma ferida limpa e vascularizada. O critério dos 4 Cs (cor, contratilidade, consistência e circulação) deve ser aplicado em toda a zona de trauma para decidir o que remover. A banca considerou que ele define a viabilidade tecidual na prática; vale saber que, embora seja o padrão clínico, sua precisão não é absoluta, e os critérios mais confiáveis são a contratilidade e o sangramento.",
+  "incorretas": {
+   "B": "**Marcar errado é a resposta de quem lembra que os 4 Cs não são precisos.** A crítica tem base na literatura, mas a banca valorizou o uso dos 4 Cs como critério prático de viabilidade e a afirmação correta sobre o objetivo do desbridamento."
+  },
+  "referencias": [
+   "Scully RE, Artz CP, Sako Y. An evaluation of the surgeon's criteria for determining the viability of muscle during debridement. Arch Surg. 1956;73(6):1031-1035.",
+   "FLOW Investigators. A trial of wound irrigation in the initial management of open fracture wounds. N Engl J Med. 2015;373(27):2629-2641."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "trauma-1214": {
+  "conceito": "**Tratamento da fratura exposta tipo I de Gustilo.** O tipo I tem ferida pequena (menor que 1 cm), limpa, geralmente produzida de dentro para fora pela ponta do osso, por trauma de baixa energia e com mínima lesão de partes moles.\n\n**Abordagem.**\n1. Antibiótico precoce (cefalosporina de primeira geração), vacina e imunoglobulina antitetânica conforme o estado vacinal.\n2. Limpeza e desbridamento da ferida (alguns protocolos aceitam desbridamento limitado ou até tratamento sem cirurgia em feridas puntiformes de baixa energia, especialmente em membros superiores e crianças).\n3. **Fixação da fratura com os mesmos critérios usados para uma fratura fechada comparável**: se a fratura fechada equivalente seria tratada com gesso, o tipo I também pode ser; se seria tratada com haste ou placa, faz-se o mesmo, inclusive com fixação interna imediata.\n\n**Por que é possível.** O risco de infecção no tipo I é muito baixo (cerca de 0% a 2%), semelhante ao das fraturas fechadas operadas, desde que a ferida seja adequadamente limpa e o antibiótico seja iniciado cedo.\n\n**Diferença em relação aos tipos mais graves.** No tipo III, a extensão da lesão de partes moles muda a estratégia (controle de danos, fixador externo temporário, desbridamentos repetidos, cobertura com retalhos).\n\n> Fratura exposta tipo I, após limpeza e antibiótico, segue a mesma lógica da fratura fechada equivalente.",
+  "correta": "**A: Certo.** A fratura exposta tipo I de Gustilo, com ferida pequena, limpa e baixa energia, tem risco de infecção semelhante ao de uma fratura fechada quando recebe antibiótico precoce e limpeza adequada. Por isso, após esses cuidados, pode ser tratada com os mesmos métodos de fixação que seriam usados para uma fratura fechada comparável, inclusive fixação interna definitiva imediata.",
+  "incorretas": {
+   "B": "**Marcar errado seria tratar toda fratura exposta como se fosse grave, exigindo fixador externo ou esquemas especiais.** Essa conduta é reservada às lesões de alta energia. No tipo I, o essencial é a limpeza e o antibiótico; a fixação segue os mesmos princípios da fratura fechada."
+  },
+  "referencias": [
+   "Gustilo RB, Anderson JT. Prevention of infection in the treatment of one thousand and twenty-five open fractures of long bones: retrospective and prospective analyses. J Bone Joint Surg Am. 1976;58(4):453-458.",
+   "Tornetta P III, Ricci WM, Ostrum RF, McQueen MM, McKee MD, Court-Brown CM, eds. Rockwood and Green's Fractures in Adults. Wolters Kluwer. Fraturas expostas."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "trauma-1215": {
+  "conceito": "**Antibiótico na fratura exposta: quanto antes, melhor.** A fratura exposta é considerada contaminada desde o momento do trauma. O antibiótico tem papel **profilático e terapêutico precoce**, e o tempo até a primeira dose é um dos fatores que mais influenciam a infecção.\n\n**Evidências.**\n- Patzakis e Wilkins mostraram que o antibiótico iniciado nas primeiras 3 horas reduz significativamente a infecção em relação ao início tardio.\n- Lack e colaboradores mostraram, em fraturas expostas tipo III da tíbia, que o antibiótico em até **1 hora** após o trauma reduz a infecção profunda.\n- Diretrizes atuais (como as do Colégio Americano de Cirurgiões e as britânicas) recomendam iniciar o antibiótico **o mais cedo possível, idealmente na primeira hora**, ainda no atendimento pré-hospitalar ou na sala de emergência.\n\n**Culturas.** Culturas da ferida antes ou depois do desbridamento **não são recomendadas** de rotina, porque não predizem o germe de uma infecção futura (que costuma ser hospitalar). Portanto, não há motivo para atrasar o antibiótico à espera de cultura.\n\n**Esquemas habituais.**\n- Tipos I e II: cefalosporina de primeira geração (cefazolina).\n- Tipo III: cefazolina associada a cobertura para gram-negativos (aminoglicosídeo) ou cefalosporina de terceira geração, conforme o protocolo.\n- Contaminação de solo ou fezes: acrescentar cobertura para anaeróbios (penicilina ou metronidazol).\n- Duração: até 24 horas após o fechamento da ferida, ou até 72 horas no tipo III.\n\n> Antibiótico na fratura exposta: na primeira hora, sem esperar desbridamento nem cultura.",
+  "correta": "**B: Errado.** O antibiótico intravenoso deve ser iniciado **o mais precocemente possível**, idealmente na primeira hora após o trauma, e **antes** do desbridamento. Atrasar a dose para depois da cirurgia aumenta a infecção. Culturas da ferida não são recomendadas de rotina, porque não predizem o agente de infecções futuras, e não justificam esperar.",
+  "incorretas": {
+   "A": "**Marcar certo é aplicar à fratura exposta a lógica de algumas infecções estabelecidas, em que se colhe cultura antes do antibiótico.** Na fratura exposta, o objetivo é impedir que a contaminação se torne infecção, e o fator tempo é decisivo. O termo \"universalmente aceito\" também é um sinal de alerta: o consenso é exatamente o contrário."
+  },
+  "referencias": [
+   "Patzakis MJ, Wilkins J. Factors influencing infection rate in open fracture wounds. Clin Orthop Relat Res. 1989;(243):36-40.",
+   "Lack WD, Karunakar MA, Angerame MR, et al. Type III open tibia fractures: immediate antibiotic prophylaxis minimizes infection. J Orthop Trauma. 2015;29(1):1-6."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  }
 }

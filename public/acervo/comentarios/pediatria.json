@@ -10612,5 +10612,44 @@
   ],
   "geradoEm": "2026-10-05",
   "conferido": false
+ },
+ "pediatria-0902": {
+  "conceito": "**Ângulo metáfiso-diafisário de Levine e Drennan.** É a medida radiográfica usada para separar o **geno varo fisiológico** da criança pequena da **tíbia vara infantil (doença de Blount)**, que pode parecer igual no início.\n\n**Como medir.** Na radiografia AP dos membros inferiores em pé, com as patelas para frente:\n1. Traça-se uma linha unindo os bicos metafisários medial e lateral da tíbia proximal.\n2. Traça-se uma linha perpendicular ao eixo longo da diáfise tibial (pela cortical lateral).\n3. O ângulo entre essas linhas é o ângulo metáfiso-diafisário.\n\n**Interpretação.**\n\n| Ângulo | Interpretação |\n|---|---|\n| Até 10 graus | Provável varo fisiológico |\n| 11 a 16 graus | Zona cinzenta; acompanhar |\n| Acima de 16 graus | Alta probabilidade de Blount |\n\nNo trabalho original, ângulos acima de 11 graus se associaram à evolução para tíbia vara. Estudos posteriores (Feldman e Schoenecker) mostraram melhor precisão com o corte de 16 graus, e o ângulo femorotibial e a relação entre os ângulos femoral e tibial ajudam na zona intermediária.\n\n**Tíbia vara infantil.** Distúrbio de crescimento da porção posteromedial da fise tibial proximal, favorecido por marcha precoce e obesidade, frequentemente bilateral. A classificação de Langenskiöld (estágios I a VI) descreve a progressão até a ponte óssea. O tratamento vai da órtese (até cerca de 3 anos, estágios iniciais) a osteotomias e hemiepifisiodese.\n\n> Ângulo metáfiso-diafisário acima de 11 graus: risco maior de Blount; acima de 16 graus, muito provável.",
+  "correta": "**A: Certo.** No estudo original de Levine e Drennan, ângulos metáfiso-diafisários maiores que 11 graus se associaram a maior possibilidade de evolução para tíbia vara infantil. Estudos posteriores refinaram os cortes (até 10 graus provavelmente fisiológico, acima de 16 graus muito provavelmente Blount), mas o valor de 11 graus continua sendo o descrito pelos autores.",
+  "incorretas": {
+   "B": "**Marcar errado seria lembrar apenas do corte de 16 graus, usado em estudos mais recentes.** A existência de uma zona cinzenta entre 11 e 16 graus não torna o item falso: acima de 11 graus o risco já é maior, como afirmaram os autores."
+  },
+  "referencias": [
+   "Levine AM, Drennan JC. Physiological bowing and tibia vara: the metaphyseal-diaphyseal angle in the measurement of bowleg deformities. J Bone Joint Surg Am. 1982;64(8):1158-1163.",
+   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Tíbia vara (doença de Blount)."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "pediatria-0903": {
+  "conceito": "**Classificação de Weber e Čech das pseudoartroses.** Divide as pseudoartroses conforme a **vitalidade** dos fragmentos e a capacidade biológica, o que orienta o tratamento.\n\n**Pseudoartroses viáveis (vascularizadas, hipertróficas).** A biologia é boa, mas falta estabilidade.\n- **Pata de elefante**: calo abundante, extremidades alargadas. Instabilidade com boa vascularização.\n- **Casco de cavalo**: calo menor, discretamente hipertrófica.\n- **Oligotrófica**: pouco ou nenhum calo, mas extremidades vascularizadas (diferenciadas pela cintilografia).\n\n**Pseudoartroses inviáveis (avasculares, atróficas).** Faltam biologia e, muitas vezes, estabilidade.\n- Em cunha de torção (fragmento intermediário com irrigação comprometida).\n- Cominutiva (fragmentos necróticos).\n- Com defeito ósseo.\n- Atrófica (extremidades afiladas e osteoporóticas).\n\n| Tipo | Biologia | Problema principal | Tratamento |\n|---|---|---|---|\n| Hipertrófica (pata de elefante) | Boa | Instabilidade | Estabilizar (compressão) |\n| Atrófica | Pobre | Biologia e estabilidade | Desbridar, enxerto, estabilizar |\n\n**Por que a hipertrófica tem calo.** O organismo tenta consolidar e forma calo exuberante, mas o movimento excessivo impede a ponte óssea. Basta estabilizar, frequentemente sem enxerto, para que o tecido fibrocartilaginoso se ossifique.\n\n> Pata de elefante: vascularizada, hipertrófica e com calo abundante.",
+  "correta": "**B: Errado.** A pseudoartrose em pata de elefante é o exemplo clássico de pseudoartrose **hipertrófica**: vascularizada, viável, com **calo abundante** e extremidades alargadas. O problema é a instabilidade mecânica, não a biologia. Por isso, o tratamento é estabilizar com compressão, sem necessidade habitual de enxerto.",
+  "incorretas": {
+   "A": "**Marcar certo é confundir a pata de elefante com a pseudoartrose oligotrófica.** A oligotrófica também é vascularizada, mas tem pouco ou nenhum calo. Na pata de elefante, o calo exuberante é justamente o que dá o nome, pelo aspecto alargado das extremidades."
+  },
+  "referencias": [
+   "Weber BG, Čech O. Pseudarthrosis: Pathophysiology, Biomechanics, Therapy, Results. Hans Huber; 1976.",
+   "Tornetta P III, Ricci WM, Ostrum RF, McQueen MM, McKee MD, Court-Brown CM, eds. Rockwood and Green's Fractures in Adults. Wolters Kluwer. Pseudoartroses."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
+ },
+ "pediatria-0904": {
+  "conceito": "**Princípios do tratamento da pseudoartrose asséptica de diáfise.** O tratamento depende do tipo de pseudoartrose e segue o princípio de dar **o que falta**: estabilidade, biologia ou ambos.\n\n**Pseudoartrose hipertrófica.** Precisa de **estabilidade absoluta** ou de rigidez suficiente para que o tecido fibrocartilaginoso se ossifique. Opções:\n- **Placa de compressão** (compressão axial pela placa, com ou sem parafuso interfragmentário).\n- **Haste intramedular fresada** (troca da haste por uma mais calibrosa), especialmente em fêmur e tíbia.\n- Fixador externo com compressão (Ilizarov).\n\n**Pseudoartrose atrófica.** Exige desbridamento do tecido fibroso e do osso desvitalizado, **enxerto ósseo** (autólogo, preferencialmente) ou técnicas biológicas, e fixação estável.\n\n**Por que a placa em ponte não é a escolha.** A placa em ponte é um método de **estabilidade relativa**: atravessa uma zona de cominuição sem compressão do foco, permitindo micromovimento e consolidação por calo. É usada em fraturas cominutivas frescas. Na pseudoartrose, o problema é justamente o movimento excessivo; manter estabilidade relativa perpetua a falha. Além disso, **placa em ponte e compressão interfragmentária são conceitos contraditórios**: quando há compressão interfragmentária, a placa funciona como neutralização ou compressão, não como ponte.\n\n| Estratégia | Tipo de estabilidade | Uso |\n|---|---|---|\n| Placa de compressão ou interfragmentária | Absoluta | Pseudoartrose, fraturas simples |\n| Placa em ponte | Relativa | Fraturas cominutivas frescas |\n| Haste fresada | Relativa com rigidez alta | Pseudoartrose de fêmur e tíbia |\n\n> Na pseudoartrose, a fixação deve dar estabilidade absoluta; placa em ponte não é a indicação.",
+  "correta": "**B: Errado.** A placa em ponte é um método de estabilidade relativa, indicado para fraturas cominutivas frescas, e não é a fixação de escolha para pseudoartrose, cujo problema central é o excesso de movimento. Além disso, a combinação \"placa em ponte com compressão interfragmentária\" é contraditória, porque a compressão do foco caracteriza estabilidade absoluta. Na pseudoartrose asséptica de diáfise, usam-se placa de compressão (com enxerto quando atrófica) ou haste fresada.",
+  "incorretas": {
+   "A": "**Marcar certo seria valorizar a placa em ponte por ser biológica e preservar a vascularização.** Essas vantagens são reais em fraturas frescas cominutivas, mas na pseudoartrose, que já demonstrou falha da consolidação, é preciso estabilidade absoluta e, muitas vezes, estímulo biológico com enxerto."
+  },
+  "referencias": [
+   "Buckley RE, Moran CG, Apivatthakakul T, eds. AO Principles of Fracture Management. 3rd ed. Thieme; 2018.",
+   "Weber BG, Čech O. Pseudarthrosis: Pathophysiology, Biomechanics, Therapy, Results. Hans Huber; 1976."
+  ],
+  "geradoEm": "2026-10-05",
+  "conferido": false
  }
 }
