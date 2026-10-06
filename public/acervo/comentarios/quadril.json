@@ -6643,5 +6643,635 @@
   ],
   "geradoEm": "2026-10-05",
   "conferido": false
+ },
+ "quadril-0541": {
+  "conceito": "### Do que o cimento é feito\n\nO cimento ósseo é o polimetilmetacrilato, o mesmo polímero conhecido como Plexiglas, inventado no início dos anos 1900. Charnley descreveu seu uso como meio de ancoragem da prótese femoral em 1960. O produto chega à sala em duas partes:\n\n| Componente | Conteúdo |\n|---|---|\n| Pó | polimetilmetacrilato já polimerizado, metilmetacrilato e peróxido de benzoíla (o iniciador) |\n| Líquido | metilmetacrilato, o monômero |\n\nQuando pó e líquido se misturam, o peróxido de benzoíla inicia a polimerização: o monômero vira polímero, a viscosidade sobe e, ao fim da reação, a massa fica rígida. Essa reação tem dois efeitos colaterais inevitáveis. O polímero ocupa menos espaço que o monômero, então a massa ==retrai==. E a reação libera calor, ou seja, é ==exotérmica==.\n\n### Por que vir parte do polímero pronta\n\nSe todo o material precisasse polimerizar dentro do paciente, a retração e o calor seriam proporcionais à quantidade total de monômero. Fornecer parte do polímero já formado, em pequenas esferas, diminui a fração que reage in situ. Resultado: menos retração e menos energia térmica liberada junto ao osso.\n\n> **Na prova:** o polímero pré-formado no pó existe para limitar a retração e reduzir a exotermia.",
+  "correta": "**Correta.** O capítulo explica que parte do metilmetacrilato vem polimerizada justamente para diminuir a quantidade de monômero que reage dentro do canal. Como a retração e o calor vêm da polimerização, menos monômero reagindo significa menos retração da massa e menos energia exotérmica liberada na interface com o osso, onde o calor pode causar necrose.",
+  "incorretas": {
+   "A": "**Errada.** O tempo de presa depende do iniciador, da temperatura e da formulação do cimento, não da presença de esferas pré-polimerizadas. A banca tenta associar \"já polimerizado\" a \"endurece mais rápido\", mas a finalidade descrita no capítulo é controlar retração e calor. Encurtar o tempo de trabalho seria, inclusive, uma desvantagem na cimentação femoral, que exige aplicar, pressurizar e inserir a haste com calma.",
+   "B": "**Errada.** Porosidade é defeito, não virtude: bolhas de ar aumentam a porosidade e reduzem a resistência mecânica, e por isso se usa a mistura a vácuo. A interdigitação com o osso esponjoso é obtida pelo preparo do leito (preservar 2 a 3 mm de esponjoso, lavagem pulsátil) e pela pressurização, não por um cimento mais poroso.",
+   "D": "**Errada.** A eluição de antibióticos segue a lei de Fick, por difusão em massa a partir da matriz de cimento endurecida, com pico nos primeiros minutos de contato com o meio. Ela não depende de as esferas do pó estarem pré-polimerizadas. A alternativa mistura dois temas do capítulo (composição e liberação de fármacos) que não têm essa relação de causa."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 16 (Ciência Básica do Cimento Ósseo)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0542": {
+  "conceito": "### Três gerações de técnica\n\nA cimentação evoluiu em gerações. Na **primeira**, o canal era curetado, o cimento misturado à mão, introduzido de forma anterógrada com os dedos e pressurizado manualmente. Na **segunda**, o osso passou a ser irrigado, o cimento entrou por pistola e um restritor distal foi colocado para aumentar a pressão. Na **técnica moderna**, lavagem pulsátil, pistola e restritor para gerar alta pressão são obrigatórios, com cimento de viscosidade média ou alta.\n\n### O passo a passo que cai\n\n1. Preparar o canal ==preservando 2 a 3 mm de osso esponjoso forte==, para o cimento se entrelaçar nas trabéculas.\n2. Lavagem pulsátil para tirar sangue, gordura e trabéculas soltas.\n3. Não fresar agressivamente: isso reduz a resistência ao cisalhamento da interface osso-cimento.\n4. Restritor distal, que pode migrar um pouco, mas idealmente fica no lugar sem vazar.\n5. Mistura a vácuo e aplicação retrógrada por pistola.\n6. Pressurizador femoral para aumentar a pressão intramedular.\n7. Centralizador distal, quando o desenho permite.\n8. Haste imersa a 1 cm por segundo, mantida até o cimento endurecer; retirar o excesso do colo.\n\nA lógica é uma só: o cimento não cola no osso, ele se prende mecanicamente penetrando no esponjoso. Tudo o que limpa os espaços trabeculares e aumenta a pressão melhora essa penetração.\n\n> **Na prova:** preservar 2 a 3 mm de esponjoso, lavagem pulsátil, pistola retrógrada, restritor e pressurizador.",
+  "correta": "**Correta.** O capítulo manda preservar cerca de 2 a 3 mm de osso esponjoso forte no canal. Essa camada é o que o cimento penetra sob pressão e onde se prende mecanicamente; sem ela, o cimento ficaria encostado em cortical lisa, sem trabéculas para se entrelaçar, e a interface seria fraca.",
+  "incorretas": {
+   "A": "**Errada, é o contrário.** O texto diz explicitamente que fresar o canal de forma muito agressiva diminui a resistência ao cisalhamento da interface osso-cimento. Ao remover o esponjoso até a cortical, perde-se a rede trabecular em que o cimento faria a interdigitação. A alternativa usa a ideia intuitiva de \"mais osso firme, melhor fixação\" para inverter a recomendação.",
+   "B": "**Errada.** Aplicação anterógrada com os dedos e pressurização manual descrevem a primeira geração, de técnica pouco refinada. A técnica moderna aplica o cimento de forma retrógrada, por pistola, do fundo do canal para cima, o que evita aprisionar ar e sangue e permite pressurizar com o restritor distal.",
+   "C": "**Errada.** Restritor e pressurização são complementares, não substitutos. O restritor fecha o canal distalmente para que a pressão possa subir; o pressurizador femoral é que aumenta intencionalmente a pressão intramedular, fortalecendo a massa e aumentando a penetração no esponjoso. O capítulo coloca os dois como partes obrigatórias da técnica moderna."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 16 (Ciência Básica do Cimento Ósseo)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0543": {
+  "conceito": "### Dois jeitos de prender a haste no cimento\n\nO cimento faz a ponte entre implante e osso, transferindo carga. A interface haste-cimento pode funcionar de dois modos:\n\n| | Force-closed | Shape-closed |\n|---|---|---|\n| Superfície | polida (desenho original de Charnley, como a Exeter) | fosca, jateada, com esferas, porosa ou pré-revestida |\n| Ligação haste-cimento | não há ligação rígida | ligação rígida, \"em forma\" |\n| Comportamento | a haste subside alguns milímetros nos primeiros anos até o equilíbrio de forças | a haste não deve se mover no cimento |\n| Carga no cimento | compressão radial | depende da integridade da ligação |\n\n### Por que a haste polida funciona\n\nA ligação mecânica entre metal e polimetilmetacrilato existe no início, mas ==acaba cessando, e toda haste implantada migra==. A haste polida aceita isso: ela microsubside no manto, o cimento viscoelástico relaxa as tensões e passa a ser ==comprimido radialmente==, transmitindo energia ao osso cortical. Como o cimento resiste melhor à compressão do que à tração ou ao cisalhamento, essa migração controlada não gera trincas. Charnley teve resultados melhores com hastes polidas do que com jateadas.\n\n> **Na prova:** force-closed é haste polida que subside e comprime o cimento; shape-closed é haste rugosa com ligação rígida.",
+  "correta": "**Correta.** É a definição do modo force-closed apresentada no capítulo: sem ligação rígida, a haste polida desce alguns milímetros no manto nos primeiros anos até atingir equilíbrio de forças, e essa descida comprime o cimento radialmente. A vantagem mecânica vem de o cimento suportar bem a compressão.",
+  "incorretas": {
+   "A": "**Errada, descreve o outro modo.** Superfície fosca ou texturizada, que o cimento permeia criando ligação sólida em forma, é a fixação shape-closed. A banca troca as definições porque os dois termos são parecidos. No force-closed a superfície é polida justamente para não haver essa ligação rígida.",
+   "C": "**Errada.** No desenho polido, a subsidência de alguns milímetros nos primeiros anos é esperada e faz parte do mecanismo, não é sinal de falha. Ela não concentra tração e cisalhamento: ao contrário, produz compressão radial, que é a solicitação que o cimento tolera melhor. Em uma haste shape-closed, sim, a migração indicaria perda da ligação.",
+   "D": "**Errada.** O capítulo afirma que a ligação mecânica entre metal e cimento eventualmente cessa e que todas as hastes implantadas exibem migração. O modo force-closed parte exatamente dessa constatação e transforma a migração inevitável em algo controlado e favorável."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 16 (Ciência Básica do Cimento Ósseo)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0544": {
+  "conceito": "### A promessa do pré-revestimento\n\nHastes rugosas, jateadas ou pré-revestidas buscam a fixação shape-closed: o cimento permeia a superfície e cria ligação rígida. Alguns estudos mostraram ==maior resistência de interface e maior vida em fadiga== da interface cimento-haste, com sobrevida melhor em curto e médio prazo. Na teoria, prender a haste ao cimento parece sempre melhor do que deixá-la deslizar.\n\n### O que aconteceu em longo prazo\n\nOs resultados clínicos contrariaram a teoria:\n\n| Desenho | Resultado citado |\n|---|---|\n| Haste pré-revestida | taxa de soltura de ==24% em seguimento médio de 8 anos== |\n| Exeter modular polida | sobrevida de ==85,8% a 93,5% em 27 anos==, com soltura femoral asséptica como desfecho |\n\nA explicação conecta com a questão anterior: quando a ligação rígida se rompe, e ela tende a se romper, a haste rugosa passa a se mover contra o cimento como uma lixa, gerando detritos e soltura. A haste polida foi desenhada para se mover. Por isso o capítulo conclui que o pré-revestimento é atualmente uma desvantagem para a sobrevida de longo prazo. O colar da haste rugosa da Figura 16.10, pensado para descarregar no calcar, tem desfecho clínico controverso.\n\n> **Na prova:** pré-revestida, 24% de soltura em 8 anos; Exeter polida, 85,8% a 93,5% em 27 anos.",
+  "correta": "**Correta.** O capítulo cita exatamente esse achado: 24% de soltura das hastes pré-revestidas com seguimento médio de 8 anos, sobrevida pior que a das polidas, confirmada por outros estudos pré-clínicos e clínicos. Por isso a vantagem teórica do desenho rugoso totalmente revestido não se traduziu em durabilidade.",
+  "incorretas": {
+   "B": "**Errada.** Mais de 90% em 27 anos é o resultado da haste Exeter, que é polida, e não da pré-revestida. A alternativa atribui ao desenho rugoso o número do desenho concorrente, e usa a lógica da \"ligação rígida\" para torná-la convincente.",
+   "C": "**Errada no número.** A Exeter polida teve sobrevida de 85,8% a 93,5% em 27 anos, tendo a soltura femoral asséptica como desfecho. Um valor em torno de 60% a colocaria como desenho de mau desempenho, o oposto do que o capítulo usa para demonstrar a superioridade das hastes polidas.",
+   "D": "**Errada.** A legenda da Figura 16.10 diz que o colar foi desenhado para transferir carga ao calcar, mas que seu desfecho clínico é controverso. Não há benefício consistente descrito. A alternativa transforma a intenção do desenho em resultado comprovado."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 16 (Ciência Básica do Cimento Ósseo)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0545": {
+  "conceito": "### A retração: de defeito a virtude\n\nO cimento retrai depois de aplicado, por polimerização, vaporização, temperatura e absorção de água, chegando a ==até 10% ao longo do tempo==. Isso foi visto inicialmente como desvantagem. Depois se mostrou importante para algo essencial: a ==revascularização do osso na interface osso-cimento==, que previne necrose.\n\n### Como a retração acontece\n\n- Acontece nos ==primeiros 4 a 10 minutos== após a aplicação.\n- Aumenta quando se aplica pressão.\n- É ==maior no cimento misturado a vácuo== do que no misturado à mão.\n- O cimento a vácuo retrai ==para longe da cortical e em direção à haste metálica==, mas ao mesmo tempo retrai sobre as pequenas trabéculas da cortical interna.\n\nO espaço criado entre cimento e cortical não fica vazio: forma-se uma estrutura trabecular em favo de mel, reforçada por cimento, por onde os pequenos vasos da cortical crescem e revascularizam a interface. É exatamente o que a figura mostra: haste, cimento, a camada em favo de mel e os vasos na cortical.\n\n> **Na prova:** retração de até 10%, nos primeiros 4 a 10 minutos, maior a vácuo, em direção à haste, favorecendo a revascularização.",
+  "correta": "**Correta.** O capítulo descreve que o cimento misturado a vácuo retrai afastando-se da cortical e indo em direção à haste, deixando um espaço trabecular em favo de mel reforçado por cimento. É por esse espaço que os vasos da cortical revascularizam a rede esponjosa da interface, como mostra a figura.",
+  "incorretas": {
+   "A": "**Errada.** Essa era a visão inicial, que o próprio capítulo corrige: a retração mostrou-se importante para a rápida revascularização da interface e para prevenir necrose óssea. O manto não perde a fixação porque continua retraído sobre as trabéculas da cortical interna, formando a estrutura em favo de mel.",
+   "B": "**Errada, é o inverso.** A pré-pressurização e a mistura a vácuo permitem uma porcentagem maior de retração em comparação com o cimento misturado à mão. A alternativa usa a associação intuitiva de vácuo com \"material mais compacto\" para sugerir que ele não retrai.",
+   "D": "**Errada no tempo e no mecanismo.** A retração principal ocorre nos primeiros 4 a 10 minutos após a aplicação e resulta da polimerização entre os monômeros do manto. A absorção de água é um dos fatores citados para a retração ao longo do tempo, mas não é o fenômeno rápido que cria o espaço de revascularização."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 16 (Ciência Básica do Cimento Ósseo)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0546": {
+  "conceito": "### De onde vêm os poros\n\nNa polimerização há evaporação, que aparece como pequenos poros, sobretudo na ==interface cimento-haste==. Parte do ar entra também na aplicação do cimento e na inserção da haste.\n\n| Mistura | Poros |\n|---|---|\n| Manual | distribuição uniforme de poros menores |\n| A vácuo | elimina a microporosidade, mas cria poros grandes |\n\n### Poros: vilões e heróis\n\nOs microporos podem ser o ponto de partida de ==trincas por fadiga==. Mas, se a ponta de uma trinca entra num microporo arredondado, ela fica romba e para: o poro funciona como ==bloqueador de trinca==. Mesmo assim, do ponto de vista mecânico, é favorável reduzir a porosidade na interface haste-cimento, porque mais porosidade interfacial diminui a resistência ao cisalhamento dessa interface.\n\n### Pré-aquecer a haste: os dois lados\n\nAquecer a haste até perto da temperatura corporal ==diminui a porosidade na interface cimento-haste== e encurta a presa. O preço: in vitro, aumenta a temperatura transitória na ==interface osso-cimento==, prolongando a exposição do osso ao calor e elevando o risco de ==necrose térmica==.\n\n> **Na prova:** pré-aquecer a haste reduz poros, mas esquenta a interface com o osso.",
+  "correta": "**Esta é a incorreta.** O capítulo diz exatamente o oposto: o pré-aquecimento aumenta a temperatura transitória na interface osso-cimento e, por manter o osso mais tempo em alta temperatura, aumenta o risco de necrose térmica. O benefício do pré-aquecimento está na outra interface, a cimento-haste, onde reduz a porosidade.",
+  "incorretas": {
+   "A": "**Correta, portanto não é a resposta.** É a comparação descrita no capítulo: a mistura manual dá poros pequenos e uniformes; a mistura a vácuo acaba com a microporosidade, mas pode deixar poros grandes. Vale guardar que \"a vácuo\" não significa \"sem poro nenhum\".",
+   "B": "**Correta, portanto não é a resposta.** O capítulo apresenta os microporos com duplo papel: podem originar trincas por fadiga e também podem deter uma trinca que entra neles, porque a ponta arredondada dissipa a concentração de tensão. É o tópico \"microporos: vilões e heróis\".",
+   "C": "**Correta, portanto não é a resposta.** Um estudo citado no capítulo mostrou que mais porosidade interfacial reduz a resistência ao cisalhamento entre cimento e haste. Por isso, apesar do papel ambíguo dos microporos, o capítulo conclui que é mecanicamente favorável reduzir a porosidade nessa interface."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 16 (Ciência Básica do Cimento Ósseo)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0547": {
+  "conceito": "### Buchholz e a gentamicina\n\nEm 1969, Buchholz começou a estudar a capacidade do polimetilmetacrilato de difundir antibióticos, junto com Lodenkämper. Descobriram que ==nem todos os antibióticos eram liberados da mesma forma==, alguns nem eram liberados, mas a ==gentamicina se difundia de forma constante por longo tempo==. Aplicando isso na clínica, Buchholz reduziu a infecção perioperatória de ==7% para 1%==.\n\n### Como o antibiótico sai do cimento\n\nA eluição segue a ==lei de Fick==, por difusão em massa (bulk). Lindner mostrou, e van Sorge confirmou, que a taxa de difusão é máxima nos primeiros minutos após o contato com o meio livre de soluto; a concentração atinge o pico em minutos e depois cai bastante.\n\n### O antibiótico candidato\n\n1. Ser ==hidrofílico==, para se distribuir uniformemente.\n2. Suportar o calor da polimerização.\n3. Não reagir quimicamente com o metilmetacrilato nem com os mediadores da polimerização.\n4. Sair do cimento em concentração bactericida, ou ao menos inibitória.\n5. Ser relevante para os patógenos das infecções periprotéticas.\n\nMexer nas proporções para acrescentar antibiótico pode reduzir a homogeneidade, piorar as propriedades mecânicas e tornar a eluição imprevisível. Na profilaxia, a gentamicina é a mais usada.\n\n> **Na prova:** lei de Fick, pico nos primeiros minutos; antibiótico hidrofílico e termoestável; gentamicina; Buchholz, de 7% para 1%.",
+  "correta": "**Correta.** É a cinética descrita no capítulo: eluição pela lei de Fick, por difusão em massa, com a maior taxa nos primeiros minutos após o contato com o meio e queda importante depois. Isso explica por que o efeito protetor se concentra no período perioperatório imediato.",
+  "incorretas": {
+   "A": "**Errada.** Não há eluição constante e linear: o pico ocorre nos primeiros minutos e depois a taxa diminui significativamente. A alternativa confunde a observação de Buchholz, de que a gentamicina continua se difundindo por longo tempo, com a ideia de uma taxa constante. Liberação prolongada não é liberação linear.",
+   "C": "**Errada.** O capítulo exige que o antibiótico seja hidrofílico, porque será disperso em solução e precisa se distribuir uniformemente. Um fármaco hidrofóbico tenderia a formar aglomerados, piorando a homogeneidade e tornando a eluição imprevisível.",
+   "D": "**Errada.** O capítulo alerta para o oposto: alterar as proporções dos ingredientes, mesmo pouco, pode mudar as propriedades mecânicas do cimento endurecido; ao adicionar antibiótico há risco de reduzir a homogeneidade, com queda das propriedades mecânicas e eluição imprevisível."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 16 (Ciência Básica do Cimento Ósseo)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0548": {
+  "conceito": "### O que os registros mostram por idade\n\nO capítulo compara registros de Austrália, Canadá, Dinamarca, Noruega, Inglaterra e País de Gales, Nova Zelândia e Suécia.\n\n| Faixa etária | Achado |\n|---|---|\n| 60 anos ou mais (Dinamarca), 65 ou mais (Inglaterra e País de Gales); Nova Zelândia semelhante; Austrália acima de 75 | ==risco significativamente menor para a fixação cimentada== |\n| 55 a 64 (Austrália), 50 a 59 (Dinamarca) | risco maior de revisão para a cimentada; Nova Zelândia sem diferença |\n| Menos de 50 a 55 anos | só a Nova Zelândia acha risco maior para a cimentada; os demais, sem diferença significativa |\n\n### Antibiótico no cimento\n\n- **Engesaeter**, 22.170 artroplastias em 14 anos: a melhor profilaxia foi ==cimento com antibiótico mais antibiótico sistêmico==; quem recebeu só o sistêmico teve risco ==1,4 vez maior== de infecção.\n- Estudo sueco randomizado: cimento com gentamicina com infecção significativamente menor, ==sem aumento de soltura asséptica==.\n- Noruega: desde 2003, todo quadril cimentado usa cimento com antibiótico.\n\n### O uso do cimento no mundo\n\nO uso do cimento caiu em todos os registros. A Suécia, com cerca de 70% de primárias cimentadas, mudou menos por causa dos ótimos resultados de longo prazo do seu registro; Dinamarca e Inglaterra e País de Gales tiveram o aumento mais dramático das não cimentadas.\n\n> **Na prova:** idoso, cimentada com menor risco de revisão; antibiótico no cimento sem aumento de soltura.",
+  "correta": "**Correta.** Para pacientes mais velhos, Dinamarca (60 anos ou mais), Inglaterra e País de Gales (65 ou mais), Nova Zelândia e Austrália (acima de 75) relatam risco de revisão significativamente menor com a fixação cimentada. É o cenário desta paciente, e é o dado que sustenta a conclusão do capítulo de que o cimento oferece durabilidade ao menos comparável à das outras fixações.",
+  "incorretas": {
+   "A": "**Errada, inverte o achado.** É justamente nos mais velhos que a fixação cimentada tem vantagem nos registros. O risco maior para a cimentada aparece em faixas intermediárias (55 a 64 anos na Austrália, 50 a 59 na Dinamarca) e, abaixo de 55, apenas na Nova Zelândia.",
+   "B": "**Errada.** O estudo sueco prospectivo randomizado mostrou menos infecção com o cimento carregado com gentamicina e não encontrou aumento da soltura asséptica. Essa ausência de prejuízo mecânico é parte importante do argumento a favor do cimento com antibiótico.",
+   "C": "**Errada, é o contrário.** A Suécia teve o menor aumento das não cimentadas (de 10% para 15% entre 2006 e 2010), mantendo cerca de 70% das primárias cimentadas. Os maiores aumentos foram da Dinamarca (47% para 68%) e de Inglaterra e País de Gales (25% para 43%)."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 16 (Ciência Básica do Cimento Ósseo)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0549": {
+  "conceito": "### Mesmos princípios do fêmur\n\nNo acetábulo, valem os princípios do fêmur: preparar o leito com ==lavagem pulsátil== e aplicar o cimento sob pressão para que penetre no esponjoso. A sequência:\n\n1. Após a fresagem, perfurar ==orifícios de ancoragem== no leito acetabular, para ampliar a fixação do cimento.\n2. Lavagem pulsátil para tirar sangue e medula.\n3. Aplicar o cimento sob ==pressão contínua==, com pressurizador acetabular ou com uma esponja dentro de uma luva estéril.\n\nO limiar: a pressão deve ==exceder 5 kPa==. Abaixo disso, o sangue que sai do osso se lamina entre o osso e o cimento e compromete a ancoragem. A pressurização deve ser ==completada antes da inserção do componente==.\n\n### Os componentes flangeados\n\nOs primeiros flangeados, de polietileno de alta densidade, surgiram em 1976; o ==Ogee==, de 1981, tem grande flange ==posterior==. O flange foi pensado para aumentar a pressão de injeção e dar orientação e profundidade corretas. Estudos mais recentes, porém, mostraram que os flangeados ==não geram consistentemente pressões maiores==; ainda assim, têm ==77% de sobrevida em 21 anos==.\n\n> **Na prova:** acetábulo, pressão acima de 5 kPa, antes de inserir o componente.",
+  "correta": "**Correta.** O capítulo define o limiar: a pressão precisa exceder 5 kPa para impedir que o sangue se lamine entre o osso e o cimento. Sem essa pressão, uma película de sangue fica na interface e impede a penetração do cimento no esponjoso, prejudicando a ancoragem.",
+  "incorretas": {
+   "A": "**Errada.** O capítulo diz que a pressurização deve ser completada antes da inserção do componente, com pressurizador ou esponja em luva. Confiar no próprio componente para pressurizar era a ideia por trás dos flangeados, e os estudos não mostraram que isso gere pressões consistentemente maiores.",
+   "B": "**Errada.** É a afirmação que o capítulo desmente: os flangeados não geram consistentemente pressões significativamente maiores que os não flangeados. O que se mantém a favor deles é a sobrevida de longo prazo, de 77% em 21 anos.",
+   "D": "**Errada.** Os orifícios de ancoragem fazem parte da técnica descrita: após a fresagem, perfura-se o leito para proporcionar ao cimento uma fixação ampliada. A alternativa aplica ao acetábulo um raciocínio de preservação óssea que o texto não sustenta."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 16 (Ciência Básica do Cimento Ósseo)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0550": {
+  "conceito": "### Desgaste não é propriedade do material\n\nTribologia é a ciência das superfícies que interagem em movimento relativo, com seus aspectos de atrito, desgaste e lubrificação. A ideia central do capítulo é que ==atrito e desgaste não são propriedades intrínsecas de um material==, ao contrário de resistência mecânica e tenacidade. Eles são características de um ==tribossistema específico==.\n\n| Elemento | No quadril artificial |\n|---|---|\n| Corpo | a cabeça femoral |\n| Contracorpo | o componente acetabular |\n| Meio interfacial | líquido sinovial, proteínas, partículas |\n| Ambiente | temperatura (cerca de 37 °C), oxigênio, acidez |\n\nA entrada do sistema são carga, velocidade, temperatura e duração; a saída útil é o movimento, e as perdas são calor, som e detritos. Mudar qualquer elemento muda o comportamento, por isso um bom resultado em laboratório pode não se repetir no paciente.\n\n### Área real e área aparente\n\nSuperfícies técnicas são cheias de irregularidades. A carga passa ==apenas pelos picos que se tocam==, a área real de contato, que pode ser uma fração mínima da área aparente. Leonardo da Vinci e Amontons já haviam notado que o atrito depende da carga normal, mas não da área aparente.\n\n### Detrito pesa mais que dimensão\n\nO desgaste muda dimensões e topografia, mas ==a produção de detritos é muitas vezes mais prejudicial== do que a mudança dimensional: as partículas viram meio interfacial, alteram o mecanismo de desgaste e provocam resposta biológica.\n\n> **Na prova:** desgaste é do sistema, não do material; o detrito é o grande vilão.",
+  "correta": "**Correta.** O capítulo insiste que atrito e desgaste são características de um tribossistema, composto por corpo, contracorpo, meio interfacial e ambiente, e que dependem também das condições de operação. É por isso que a artroplastia não pode ser avaliada pelo material isolado: geometria, carga, movimento, acabamento, lubrificante, ambiente biológico e partículas entram na conta.",
+  "incorretas": {
+   "A": "**Errada.** O capítulo faz exatamente essa distinção: resistência mecânica e tenacidade podem ser descritas como propriedades dos materiais de engenharia, mas atrito e desgaste não. A alternativa coloca os dois grupos no mesmo saco para testar se o leitor percebeu a diferença.",
+   "C": "**Errada.** A carga é transmitida apenas pelos picos das irregularidades que se tocam, ou seja, pela área real de contato, que muda continuamente e pode ser muito menor que a aparente. Desde Leonardo da Vinci e Amontons se sabe que a força de atrito independe da área aparente.",
+   "D": "**Errada.** O capítulo afirma o contrário: a produção de detritos é muitas vezes mais prejudicial do que a alteração dimensional. As partículas aprisionadas mudam o próprio mecanismo de desgaste (por exemplo, de dois para três corpos) e, no organismo, provocam resposta celular e tecidual."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 17 (Tribologia)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0551": {
+  "conceito": "### Atrito é energia que entra, se transforma e sai\n\nO capítulo descreve o atrito como ==introdução, transformação e dissipação de energia==. A energia entra pela deformação elástica ou plástica cíclica dos pontos da área real de contato; transforma-se em deformação das irregularidades intertravadas, podendo iniciar e propagar trincas (o componente de deformação do atrito). Há ainda o componente de ==adesão== entre átomos e moléculas do corpo e do contracorpo. Ambos podem ser reduzidos por modificações de superfície, revestimentos e lubrificação.\n\n### Para onde vai a energia\n\n| Destino | Fração |\n|---|---|\n| Calor | ==pelo menos 90%== |\n| Defeitos de rede, transformações de fase, reações químicas | os 10% restantes |\n\n### Duas temperaturas diferentes\n\n- **Temperatura média** da zona de contato: depende principalmente da ==força normal==.\n- **Temperatura instantânea** nos picos de contato (flash): depende sobretudo da ==velocidade relativa== e dura ==poucos milissegundos==.\n\nEssa distinção importa para as cerâmicas: a baixa condutividade térmica gera ciclos térmicos nos pontos de contato, que podem induzir transformação de fase, especialmente na zircônia.\n\n> **Na prova:** 90% vira calor; média depende da carga, pico depende da velocidade e dura milissegundos.",
+  "correta": "**Correta.** Reúne os três pontos do capítulo: pelo menos 90% da energia introduzida vira calor, a temperatura instantânea nos picos depende sobretudo da velocidade relativa e dura poucos milissegundos.",
+  "incorretas": {
+   "A": "**Errada, inverte as proporções.** Pelo menos 90% vira calor; apenas os 10% restantes ficam armazenados em defeitos de rede, transformações de fase ou reações químicas entre corpo, contracorpo, meio interfacial e ambiente.",
+   "B": "**Errada em dois pontos.** A temperatura instantânea nos picos depende sobretudo da velocidade relativa, não da força normal, e dura poucos milissegundos, não minutos. A alternativa troca a variável da temperatura instantânea com a da temperatura média.",
+   "C": "**Errada.** É a outra metade da troca: a temperatura média depende principalmente da força normal. A velocidade relativa governa a temperatura instantânea dos picos. A banca costuma cobrar justamente esse cruzamento."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 17 (Tribologia)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0552": {
+  "conceito": "### A espessura específica do filme (lambda)\n\nA eficácia do lubrificante é medida pela ==espessura específica do filme==, a letra lambda. Ela depende da viscosidade do lubrificante, da velocidade relativa, da pressão na interface e da rugosidade das superfícies. No gráfico, quanto mais à direita (lambda maior), menor o coeficiente de atrito e menor o desgaste.\n\n| Regime | O que acontece |\n|---|---|\n| Limite | o lubrificante adere à superfície, mas persiste contato completo entre os sólidos |\n| Misto | parte da carga no filme, parte nas irregularidades que se tocam |\n| Elastoidrodinâmico (EHD) | a pressão do fluido deforma elasticamente as irregularidades e pode haver separação completa mesmo com filme fino |\n| Hidrodinâmico | o filme separa totalmente os corpos |\n\n### Onde ficam as próteses\n\n- ==Metal sobre polietileno==, com líquido sinovial e cargas realistas: regime ==misto ou de limite==.\n- ==Duro sobre duro== (metal-metal, cerâmica-cerâmica): predominantemente ==elastoidrodinâmico ou misto==.\n- Com cabeça ==acima de 28 mm==, pode haver transição para ==lubrificação hidrodinâmica por filme completo==.\n\nPausas curtas na atividade diária, que se repetem dezenas de vezes por hora, podem romper o filme, e o metal sobre metal teve o maior aumento de atrito no reinício do movimento.\n\n> **Na prova:** metal-polietileno, misto ou limite; duro-duro, EHD ou misto; acima de 28 mm, pode chegar ao filme completo.",
+  "correta": "**Correta.** É a classificação do capítulo: pares duro sobre duro trabalham predominantemente em regime elastoidrodinâmico ou misto, e o aumento do diâmetro da cabeça acima de 28 mm pode levar à transição para lubrificação hidrodinâmica por filme completo. Cabeça maior significa maior velocidade de deslizamento na superfície e mais arraste de fluido.",
+  "incorretas": {
+   "A": "**Errada.** Com cargas realistas e líquido sinovial, as articulações metal sobre plástico funcionam em regime misto ou de limite, com contato sólido parcial ou total. O filme hidrodinâmico completo é descrito como possibilidade para pares duro sobre duro com cabeças grandes, não para o metal sobre polietileno.",
+   "B": "**Errada, lê o gráfico ao contrário.** À medida que o filme se torna mais eficaz (lambda maior), o contato sólido diminui e o regime progride de não lubrificado para limite, misto, EHD e hidrodinâmico, com queda do coeficiente de atrito e da perda de material.",
+   "D": "**Errada.** Na lubrificação de limite, o lubrificante adere quimicamente a uma superfície, mas persiste contato completo entre os sólidos. A separação total pelo filme é a definição da lubrificação hidrodinâmica. A alternativa troca os extremos da escala."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 17 (Tribologia)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0553": {
+  "conceito": "### O que é e o que não é desgaste\n\nDesgaste é a ==remoção de material de um corpo em contato, como consequência de ação mecânica==, gerando partículas. Daí duas exclusões importantes:\n\n- ==Fluência e deformação plástica não são desgaste==: mudam as dimensões, mas não geram detritos.\n- ==Corrosão, sozinha, não é desgaste==: pode ocorrer sem ativação mecânica. Quando desgaste e corrosão agem juntos, fala-se em tribocorrosão.\n\nPara descrever o fenômeno sem ambiguidade, separa-se ==modo== (as condições mecânicas gerais, como deslizamento, rolamento, micromovimento, abrasão por três corpos), ==aparência== (o que se vê na superfície) e ==mecanismo== (a interação que remove material).\n\n### Os quatro mecanismos\n\n| Mecanismo | Natureza | Aparência típica |\n|---|---|---|\n| Abrasão | mecânica | sulcos e riscos (microaragem, microcorte) |\n| Fadiga superficial | mecânica | pequenas cavidades, delaminação |\n| Adesão | mecânica e química | transferência de material, flocos, fibrilas |\n| Reações triboquímicas | mecânica e química | camadas de reação sobre a superfície |\n\nA adesão lembra uma soldagem por atrito: as microjunções se rompem e liberam ou transferem material. Metais dúcteis articulados contra o mesmo material são particularmente suscetíveis, e os flocos maiores que a folga podem abrasar ou até travar a articulação.\n\n> **Na prova:** fluência e corrosão isoladas não são desgaste; quatro mecanismos, dois mecânicos e dois mecânico-químicos.",
+  "correta": "**Esta é a incorreta.** O capítulo afirma que fluência e deformação plástica não são, por si sós, formas de desgaste, porque produzem alteração dimensional sem gerar detritos. Na avaliação radiográfica, a fluência do polietileno aparece como penetração da cabeça, mas conceitualmente não é perda de material.",
+  "incorretas": {
+   "B": "**Correta, portanto não é a resposta.** São exatamente os quatro mecanismos principais reconhecidos no capítulo: abrasão, fadiga superficial, adesão e reações triboquímicas, que podem coexistir num mesmo sistema.",
+   "C": "**Correta, portanto não é a resposta.** O texto divide os mecanismos assim: abrasão e fadiga superficial são dominadas por processos mecânicos; adesão e reações triboquímicas resultam da combinação de ação mecânica e química.",
+   "D": "**Correta, portanto não é a resposta.** O capítulo diz que metais dúcteis articulados contra o mesmo material são particularmente suscetíveis à adesão. É essa regra clássica da tribologia que torna surpreendente o bom desempenho do metal sobre metal bem funcionante."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 17 (Tribologia)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0554": {
+  "conceito": "### Por que a cerâmica desgasta tão pouco\n\nCerâmica sobre cerâmica tem a ==menor taxa de desgaste== entre os pares usados no quadril. O mecanismo dominante é a ==fadiga superficial leve==, e a superfície permanece polida, com os grãos visíveis à microscopia eletrônica.\n\n- ==Não ocorre adesão==, porque a cerâmica tem baixa ductilidade.\n- Os detritos são frágeis, fragmentam-se e ==tendem a polir==, em vez de abrasar intensamente.\n- Não foram descritas camadas triboquímicas, só depósitos orgânicos.\n\n### Os modos de McKellop\n\n| Modo | Situação |\n|---|---|\n| 1 | movimento pretendido, deslizamento entre as superfícies articulares |\n| 2 | superfície articular contra não articular, como na ==microseparação seguida de colisão da cabeça com o bordo== |\n| 3 | partículas duras na interface (terceiro corpo) |\n| 4 | duas superfícies não articulares, como o colo batendo no bordo |\n\n### O calcanhar de aquiles\n\nO par é sensível a desalinhamento e impacto. O ==desgaste em faixa== é uma cicatriz linear na região superior da cabeça, atribuída à microseparação com colisão no bordo, o ==modo dois==, com fraturas entre e através dos grãos. Inclinação acetabular excessiva gera carga de borda. Os simuladores só reproduziram esse padrão quando passaram a introduzir microseparação no balanço. A baixa condutividade térmica produz ciclos térmicos nos pontos de contato, que podem induzir transformação de fase, ==especialmente na zircônia==; a alumina é mais resistente a eles.\n\n> **Na prova:** cerâmica, fadiga leve e sem adesão; faixa de desgaste é modo dois de McKellop.",
+  "correta": "**Correta.** O capítulo atribui o desgaste em faixa da cabeça principalmente à microseparação seguida de colisão entre a cabeça e o bordo do componente acetabular, que corresponde ao modo dois de McKellop. É o mesmo fenômeno que os simuladores passaram a reproduzir quando introduziram microseparação proposital durante o balanço.",
+  "incorretas": {
+   "A": "**Errada.** Como a cerâmica tem baixa ductilidade, não ocorre adesão. O mecanismo dominante é a fadiga superficial leve. A alternativa usa a regra de que pares idênticos favorecem adesão, que vale para metais dúcteis, não para cerâmicas quimicamente inertes.",
+   "C": "**Errada, inverte os materiais.** Os ciclos térmicos podem induzir transformação de fase especialmente na zircônia; a alumina tem propriedades físicas e químicas mais favoráveis e é considerada mais resistente a esses ciclos.",
+   "D": "**Errada.** As partículas cerâmicas são frágeis, fragmentam-se em detritos finos e tendem a polir, em vez de produzir abrasão intensa por três corpos. A abrasão por três corpos aparece quando grãos ou fragmentos se destacam, por exemplo após fratura de grãos no desgaste em faixa, mas não é o mecanismo principal do par."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 17 (Tribologia)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0555": {
+  "conceito": "### Um par que desafia a regra\n\nArticular o mesmo metal dúctil contra si mesmo viola uma regra clássica da tribologia: pela estrutura ==cúbica de face centrada== do cobalto-cromo, seriam esperadas partículas adesivas em flocos de vários micrômetros. Não é o que se vê. Quando o par funciona bem, a perda total de massa é a ==segunda menor== entre os pares disponíveis.\n\n| Achado | Valor |\n|---|---|\n| Tamanho predominante das partículas | ==cerca de 50 nanômetros== |\n| Adesão em 42 McKee-Farrar com 11,7 anos de média | ==não encontrada== |\n| Mecanismo dominante | fadiga superficial leve, mais reações triboquímicas |\n\n### Por que as partículas são tão pequenas\n\nSob desgaste leve, a liga de cobalto-cromo-molibdênio forma um ==gradiente de deformação que termina numa camada nanocristalina na superfície==. É dessa camada que as partículas se destacam, o que explica seu tamanho. O aço inoxidável 316L também forma camada nanométrica, mas não tem um suporte subsuperficial tão favorável e libera partículas maiores.\n\n### As camadas triboquímicas\n\nNas áreas de articulação forma-se uma película de reação, rica em carbono, com proteínas decompostas, parte delas transformada em material grafítico, que reduz o atrito. A superfície vira um composto metalorgânico que ==impede a adesão==. O EDTA, usado para reduzir precipitados nos simuladores, teve efeito desprezível sobre o desgaste, reforçando que essas camadas vêm de reações triboquímicas.\n\n> **Na prova:** metal-metal, partículas de cerca de 50 nm, camada nanocristalina e camada triboquímica que impede adesão.",
+  "correta": "**Correta.** O capítulo explica que a liga de cobalto-cromo-molibdênio desenvolve um gradiente de deformação com camada nanocristalina na superfície, origem do destacamento e explicação do pequeno tamanho das partículas, com predomínio próximo de 50 nanômetros.",
+  "incorretas": {
+   "A": "**Errada.** Partículas em flocos de vários micrômetros seriam o esperado pela teoria para metais cúbicos de face centrada, mas não é o observado: o predomínio é de partículas próximas de 50 nanômetros. A alternativa apresenta a previsão teórica como se fosse o achado.",
+   "B": "**Errada.** Nas 42 próteses McKee-Farrar estudadas, com média de 11,7 anos no organismo, não foram encontradas aparências de adesão. Esse é um dos dados que mostram que o par bem funcionante escapa da regra da adesão.",
+   "C": "**Errada.** O capítulo descreve efeito benéfico: as camadas triboquímicas dificultam a adesão, e o material grafítico pode reduzir o atrito. O EDTA foi acrescentado ao soro nos simuladores para reduzir precipitados que atrapalhavam as medidas, e teve efeito desprezível sobre o desgaste, o que apoiou a origem triboquímica das camadas."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 17 (Tribologia)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0556": {
+  "conceito": "### Desgaste é função do uso, mas não só da quantidade\n\nSchmalzried encontrou correlação significativa entre progressão do desgaste e passos por dia, mas moderada (coeficiente de determinação de 0,3 após excluir valores extremos). Isso mostra que ==outros fatores do sistema influenciam o desgaste==.\n\n### O estudo dos 13 pacientes\n\nTreze pacientes (seis homens, sete mulheres, idade média de 54 anos), mesma prótese, mesmo diâmetro de cabeça, mesma instituição. A marcha foi analisada em laboratório e o desgaste linear medido em radiografias seriadas.\n\n- As taxas variaram muito: de ==0,009 a 0,395 mm por ano==.\n- A combinação de momentos articulares (marcador de carga) e arco sagital (marcador de distância de deslizamento) correlacionou-se com o desgaste segundo a ==relação de Archard==: o volume gerado é proporcional à ==força aplicada vezes a distância de deslizamento==.\n- O produto explicou ==43% da variância==; sem os valores extremos, o coeficiente subiu para 0,65.\n\n### O recado para os simuladores\n\nForça e movimento variam muito entre pacientes, e muitos não recuperam marcha normal, mas os ensaios usam marcha normal padronizada. Só as diferenças de carga e movimento de entrada entre simuladores (integral de 17,4 a 43,5 N·m) já explicam ampla variação de desgaste entre laboratórios.\n\n> **Na prova:** Archard, volume proporcional a carga vezes distância; momentos vezes arco explicaram quase metade da variabilidade.",
+  "correta": "**Correta.** O capítulo relaciona o desgaste à equação de Archard e mostra que o produto dos momentos somados pelo arco de movimento explicou 43% da variância (r² ajustado de 0,43 no gráfico), chegando a 0,65 sem os valores extremos.",
+  "incorretas": {
+   "B": "**Errada no número.** O produto explicou 43% da variância, e 65% depois de excluídos os extremos. A legenda do capítulo resume: explicaram quase metade da variabilidade. Mais de 90% transformaria uma correlação moderada numa previsão quase perfeita.",
+   "C": "**Errada.** O número de passos teve correlação apenas moderada com o desgaste no estudo de Schmalzried, e o próprio capítulo conclui que outros fatores influenciam a saída. O estudo dos 13 pacientes mostra justamente o peso da carga e da distância de deslizamento.",
+   "D": "**Errada.** Mesmo com prótese, cabeça e instituição iguais, as taxas variaram de 0,009 a 0,395 mm por ano, mais de 40 vezes de diferença. É o ponto principal do estudo: a variação vem do paciente (carga e movimento), não só do implante."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 17 (Tribologia)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0557": {
+  "conceito": "### Como o paciente usa a prótese\n\n| Atividade | Fração do tempo |\n|---|---|\n| Sentado | ==44,3%== |\n| Em pé | 24,5% |\n| Caminhando | 10,2% |\n| Deitado | 5,8% |\n| Subindo escadas | 0,4% |\n\nO paciente médio dá ==6.048 passos por dia==, cerca de ==1,1 milhão de ciclos de marcha por ano==, e sobe 164 degraus. Pausas de 10 a 30 segundos em pé ocorrem até 26 vezes por hora, e pausas de 2 a 5 segundos cerca de 100 vezes por hora; elas podem romper a lubrificação, e o metal sobre metal teve o maior aumento de atrito no reinício.\n\n### Quanto pesa cada atividade\n\nBergmann mediu as forças por telemetria em próteses instrumentadas:\n\n| Atividade | Força de contato |\n|---|---|\n| Marcha a 1,1 m/s | cerca de ==2,4 vezes o peso corporal== |\n| Subir escadas | 2,5 vezes |\n| Descer escadas | 2,6 vezes |\n| Corrida leve | 5,5 vezes |\n| Tropeço inesperado | ==8 vezes== |\n\nA marcha é a atividade mais importante nos ensaios pela frequência e pela carga, mas o pico absoluto vem do tropeço.\n\n> **Na prova:** sentado 44%; 6.048 passos por dia, 1,1 milhão por ano; marcha 2,4 vezes o peso, tropeço 8 vezes.",
+  "correta": "**Correta.** Nos dados de Bergmann, o tropeço inesperado foi a grande exceção, chegando a oito vezes o peso corporal, valor muito superior às 5,5 vezes da corrida leve e às cerca de 2,4 vezes da marcha.",
+  "incorretas": {
+   "A": "**Errada.** Os 44,3% correspondem a permanecer sentado, a atividade mais frequente. Caminhar ocupa cerca de 10,2% do tempo. A alternativa pega o número correto e o atribui à atividade errada.",
+   "B": "**Errada.** Subir escadas gerou cerca de 2,5 vezes o peso corporal e descer, 2,6 vezes, valores próximos da marcha. Cinco vezes é aproximadamente a corrida leve (5,5), e a maior força medida foi a do tropeço (8 vezes).",
+   "D": "**Errada.** O paciente médio dá 6.048 passos por dia, o que equivale a aproximadamente 1,1 milhão de ciclos por ano, não por mês. A alternativa multiplica o número por doze."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 17 (Tribologia)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0558": {
+  "conceito": "### Uma segunda articulação que ninguém planejou\n\nA maioria das artroplastias usa uma ==junção cônica modular== entre cabeça e haste. As duas superfícies têm marcas circunferenciais de usinagem, e um impacto de ==4 kN== é suficiente para uma conexão estável: os picos se deformam plasticamente e travam.\n\nCom encaixe inadequado, surgem ==micromovimentos cíclicos== e forma-se um tribossistema secundário: o cone macho da haste é o corpo, o cone fêmea da cabeça é o contracorpo e o líquido sinovial pode entrar como meio interfacial. Como o curso é muito pequeno, o modo é ==desgaste por micromovimento== (fretting), com fadiga superficial grave, abrasão e adesão.\n\n### Corrosão por micromovimento\n\nAs ligas (cobalto-cromo-molibdênio, titânio com 6% de alumínio e 4% de vanádio) são protegidas por ==filme passivo==, mas em ambiente aquoso o micromovimento ==rompe o filme, que não se recompõe completamente==. O espaço confinado favorece ==corrosão em fresta==, e ligas diferentes em contato podem gerar ==corrosão galvânica==. Pela interação entre os dois processos, fala-se em corrosão por micromovimento.\n\nOutros tribossistemas secundários: a face posterior do inserto contra a carcaça metálica (granulomas em orifícios de parafuso) e a interface cimento-haste.\n\n> **Na prova:** cone, 4 kN; encaixe ruim, micromovimento, corrosão em fresta e galvânica.",
+  "correta": "**Correta.** O capítulo explica que, quando o encaixe é inadequado, os micromovimentos rompem o filme passivo, que não se recompõe completamente em meio aquoso; o espaço confinado do cone amplifica a corrosão e favorece a corrosão em fresta.",
+  "incorretas": {
+   "A": "**Errada no número.** O capítulo cita impacto de 4 kN como suficiente para uma conexão estável. A alternativa multiplica por dez. A estabilidade vem da deformação plástica dos picos de usinagem, que travam as superfícies.",
+   "B": "**Errada.** O deslizamento multidirecional é o modo da articulação primária cabeça-componente acetabular. No cone, o curso é muito pequeno, menor que a área de contato, e o modo é desgaste por micromovimento.",
+   "C": "**Errada.** A corrosão no cone envolve ligas metálicas, como cobalto-cromo e titânio na haste. A corrosão galvânica surge quando ligas diferentes entram em contato; a cabeça cerâmica é apenas uma das opções de cabeça citadas, e não a condição para haver corrosão."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 17 (Tribologia)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0559": {
+  "conceito": "### Precisão, viés e acurácia\n\nUm instrumento de medição é avaliado por dois componentes:\n\n- **Precisão**: a proximidade entre resultados repetidos obtidos em condições semelhantes. É o grau de concordância entre as medições.\n- **Viés**: a diferença ==consistente, sistemática==, entre as medições e o valor de referência.\n\nA ==acurácia== depende da interação dos dois. Um método pode ser muito preciso e, ainda assim, estar sempre afastado do valor verdadeiro.\n\n| Instrumento na figura | Precisão | Viés | Leitura |\n|---|---|---|---|\n| A | baixa | presente | nem preciso nem acurado |\n| B | baixa | média perto do verdadeiro | acerta na média, mas dispersa |\n| C | ==alta== | ==presente== | preciso, mas enviesado |\n| D | alta | ausente | preciso e acurado |\n\n### Por que o C é recuperável\n\nViés ==conhecido e estável pode ser corrigido por calibração==: basta subtrair o desvio sistemático. Já a falta de precisão não se corrige, porque cada medida erra para um lado diferente. Por isso um método preciso com viés corrigível pode se tornar clinicamente útil; um método impreciso, não.\n\n> **Na prova:** precisão é repetição, viés é erro sistemático; viés estável se calibra, imprecisão não.",
+  "correta": "**Correta.** O instrumento C tem as medidas agrupadas (alta precisão), mas o centro do grupo está afastado do valor verdadeiro (viés). Como o capítulo explica, um viés conhecido e estável pode ser corrigido por calibração, e o método preciso passa a ser útil.",
+  "incorretas": {
+   "A": "**Errada.** O instrumento A tem baixa acurácia e baixa precisão: as medidas estão espalhadas e longe do verdadeiro. Mesmo removendo um viés, a dispersão continuaria, então a calibração não o salvaria.",
+   "B": "**Errada.** O instrumento B tem média próxima do valor verdadeiro, ou seja, pouco viés, mas grande dispersão. O problema dele é a imprecisão, que a calibração não corrige: cada medição individual pode errar muito para qualquer lado.",
+   "D": "**Errada.** O instrumento D é simultaneamente preciso e acurado; não precisa de calibração. A pergunta pede o instrumento que tem viés e só se torna útil depois de corrigido."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 18 (Avaliação Clínica do Desgaste)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0560": {
+  "conceito": "### Como descrever um método de medida\n\n| Grandeza | Como o capítulo a apresenta |\n|---|---|\n| Precisão (ASTM E177-90a) | expressa com 95% de confiança: ± t × √2 × desvio padrão das diferenças |\n| Precisão (Bland e Altman) | ± t × desvio padrão das diferenças ÷ √n |\n| Acurácia | ==não há método universal==; a ASTM recomenda ==relatar viés e precisão separadamente== |\n| Erro padrão | raiz do erro quadrático médio, quando há dados brutos |\n| Coeficiente de repetibilidade | ==duas vezes o desvio padrão== da diferença entre duas medições nas mesmas condições |\n\nComo os estudos publicam a acurácia de formas diferentes, comparar técnicas diretamente é difícil.\n\n### De onde vem o erro\n\nA análise dos componentes de variância separa a parte da variação total que vem do ==instrumento==, do ==observador== e das ==diferenças reais entre pacientes==. Num bom sistema, o erro do instrumento e do avaliador deve ser ==menor== que a variação clínica do desgaste; senão, o método não distingue um paciente do outro. A repetibilidade pode ser intraobservador (o mesmo avaliador) ou interobservador (outro avaliador); a detecção automática de bordas reduz as duas fontes.\n\n> **Na prova:** viés e precisão relatados separadamente; repetibilidade é 2 vezes o desvio padrão da diferença.",
+  "correta": "**Correta.** O capítulo informa que não existe método universal para relatar acurácia e que a ASTM recomenda apresentar separadamente viés e precisão, justamente porque são componentes diferentes do erro e se comportam de forma diferente (o viés pode ser calibrado, a imprecisão não).",
+  "incorretas": {
+   "A": "**Errada.** É o oposto: não existe método universalmente padronizado para relatar acurácia, e os estudos a apresentam de maneiras diferentes, o que torna difícil a comparação direta entre técnicas.",
+   "C": "**Errada no fator.** O coeficiente de repetibilidade é duas vezes o desvio padrão da diferença entre duas medições obtidas nas mesmas condições, e não metade. No exemplo da Tabela 18.1, com desvio padrão de 33,4 µm, o coeficiente é 66,8 µm.",
+   "D": "**Errada, inverte a lógica.** Num bom sistema, a variação do instrumento e do avaliador deve ser menor que a variação clínica real. Se o ruído da medida superasse as diferenças entre pacientes, o método não serviria para estudar desgaste."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 18 (Avaliação Clínica do Desgaste)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0561": {
+  "conceito": "### A teoria da ortostase\n\nEm pé, o peso do corpo garante o contato entre a cabeça femoral e o polietileno no momento da radiografia. Em teoria, isso mediria melhor a penetração da cabeça.\n\n### O que os estudos mostraram\n\n| Estudo | Achado |\n|---|---|\n| Vários autores | efeitos significativos e não significativos da carga |\n| Smith | mais desgaste medido em pé que deitado |\n| Digas (análise radiostereométrica) | 50% de diferença entre reticulado e convencional em pé, mas não deitado; porém as radiografias deitadas foram na 1ª semana e as em pé só após 3 meses |\n| Moore (prospectivo, AP da pelve) | ==sem diferença estatisticamente significativa== |\n| Outros autores | a carga não tem efeito reprodutível sobre a posição da cabeça |\n\n==Não há consenso== sobre a necessidade de radiografias em ortostase.\n\n### A armadilha do confundimento\n\nNo estudo de Digas, posição e tempo pós-operatório mudaram juntos. Comparar uma radiografia precoce deitada com uma tardia em pé mistura ==carga e tempo==, e não permite atribuir a diferença só à carga. O protocolo deve manter posição, projeção e momento comparáveis.\n\n> **Na prova:** carga ou não, não há consenso; Moore, sem diferença; Digas confundiu carga com tempo.",
+  "correta": "**Correta.** O capítulo conclui que não há consenso sobre a necessidade de radiografias em ortostase e cita a comparação prospectiva direta de Moore, entre AP da pelve em pé e deitado, sem diferença estatisticamente significativa.",
+  "incorretas": {
+   "B": "**Errada.** Não há obrigatoriedade nem achado uniforme: alguns estudos acharam efeito da carga, outros não, e Moore não encontrou diferença. Smith mediu mais desgaste em pé, mas isso não foi constante em todos os trabalhos.",
+   "C": "**Errada.** Em Digas, as radiografias sem carga foram obtidas na primeira semana e as com carga só após três meses. Carga e tempo variaram juntos, e o capítulo diz que não foi possível atribuir toda a diferença à carga.",
+   "D": "**Errada.** Outros autores demonstraram que a carga não produz efeito reprodutível sobre a posição da cabeça no componente acetabular. A falta de reprodutibilidade é parte do motivo da falta de consenso."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 18 (Avaliação Clínica do Desgaste)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0562": {
+  "conceito": "### As técnicas e suas premissas\n\n| Técnica | Como mede | Limitação |\n|---|---|---|\n| Uma radiografia (Charnley) | distâncias da cabeça aos bordos superior e inferior do acetábulo, numa única radiografia de seguimento | só detecta bem o desgaste ==dirigido ao bordo superior== |\n| Duas radiografias (Livermore) | na final, acha a direção da parte mais fina do polietileno e compara com a espessura inicial na mesma linha | ==pressupõe que os centros da cabeça e do acetábulo coincidiam no início==, o que é ==inválido nos insertos excêntricos== |\n| Dois círculos | acompanha o ==deslocamento do centro da cabeça== em relação ao centro acetabular em exames seriados | depende de localizar os dois centros de forma reprodutível; distorção fora do centro do feixe |\n| Gabarito (Engh) | sobrepõe o molde do fabricante e mede o polietileno remanescente | pouco preciso para pesquisa, mas útil para decidir a troca do inserto |\n\nA técnica dos dois círculos é a mais versátil das bidimensionais justamente porque ==não exige que os centros coincidam no exame inicial==. Programas de detecção de bordas e correção da distorção geométrica aumentam sua precisão.\n\n> **Na prova:** duas radiografias falha no inserto excêntrico; dois círculos não presume centros coincidentes.",
+  "correta": "**Esta é a incorreta.** A técnica com duas radiografias é justamente a que pressupõe que o centro da cabeça coincidia com o centro acetabular no início. Nos insertos excêntricos essa premissa é inválida e pode gerar erro na magnitude e na direção do desgaste. A técnica que não depende dessa premissa é a dos dois círculos.",
+  "incorretas": {
+   "A": "**Correta, portanto não é a resposta.** A técnica com uma radiografia subtrai as distâncias da cabeça aos bordos superior e inferior e só detecta adequadamente o componente do desgaste dirigido ao bordo superior, perdendo desgaste em outras direções.",
+   "B": "**Correta, portanto não é a resposta.** É a definição da técnica dos dois círculos: seguir, em radiografias seriadas, o deslocamento do centro da cabeça femoral em relação ao centro do componente acetabular, sem presumir coincidência inicial.",
+   "C": "**Correta, portanto não é a resposta.** Na técnica por gabarito, o molde ampliado do fabricante representa a espessura da cúpula metálica e permite medir o polietileno residual. Não é a mais precisa para pesquisa, mas responde a pergunta prática de quando trocar o inserto antes de uma falha catastrófica."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 18 (Avaliação Clínica do Desgaste)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0563": {
+  "conceito": "### Do desgaste linear ao volume\n\nO volume de desgaste pode ser estimado a partir do desgaste linear (2D ou 3D), do raio da cabeça e da direção do trajeto em relação à face do componente, definida pelo ==ângulo beta==. Muitos estudos antigos assumiram beta de 90 graus, isto é, trajeto dirigido ao centro do componente. Nesse caso simplificado, o volume é o de um cilindro:\n\n> Volume = π × r² × d, com r o raio da cabeça e d o desgaste linear.\n\n### Por que a direção importa\n\nA cabeça que penetra perpendicularmente à face da cúpula \"escava\" um cilindro inteiro de polietileno. A cabeça que penetra em direção ao bordo sai, em parte, do material: escava aproximadamente ==metade== desse volume.\n\n| Direção do trajeto | Volume relativo |\n|---|---|\n| Perpendicular à face do componente | ==2X== (cilindro) |\n| Dirigido ao bordo | ==1X== (cerca da metade) |\n\nAlém disso, explantes mostram ==múltiplos trajetos==, impossíveis de representar por uma única direção em radiografias seriadas; nesses casos o cálculo ==subestima== o volume real. A tomografia tridimensional pode ajudar.\n\n> **Na prova:** mesmo desgaste linear, até o dobro de volume conforme a direção; cálculos simples subestimam o volume real.",
+  "correta": "**Correta.** É o que a figura mostra e o capítulo explica: para o mesmo desgaste linear, o trajeto perpendicular à face do componente corresponde ao volume de um cilindro, cerca do dobro do volume gerado pelo trajeto dirigido ao bordo.",
+  "incorretas": {
+   "A": "**Errada.** A direção do trajeto, definida pelo ângulo beta, muda o volume para o mesmo desgaste linear. É por isso que fórmulas que incorporam a direção real são mais acuradas que a simplificação do cilindro.",
+   "B": "**Errada, inverte os vetores.** O trajeto perpendicular à face é que gera o volume maior (2X); o dirigido ao bordo gera aproximadamente a metade (1X), como indicado na figura.",
+   "C": "**Errada.** O capítulo aponta o problema oposto: componentes explantados frequentemente têm múltiplos trajetos, e o cálculo a partir de uma única direção subestima o volume real. A simplificação do ângulo beta de 90 graus torna a estimativa menos acurada, mas a conclusão citada é de subestimação."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 18 (Avaliação Clínica do Desgaste)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0564": {
+  "conceito": "### O desgaste não é gaussiano\n\nAs taxas de desgaste ==não seguem distribuição normal==. A maioria dos pacientes se concentra em valores baixos e moderados, e alguns poucos têm desgaste muito alto, formando uma ==cauda à direita==. No histograma:\n\n- a ==mediana== fica à esquerda da ==média==;\n- a média é puxada para cima pelos poucos valores extremos.\n\n### Consequência estatística\n\nSe a distribuição é assimétrica, presumir normalidade e usar testes paramétricos (como o t de Student) é inadequado. O capítulo recomenda ==métodos não paramétricos==, como o ==teste de Mann-Whitney==. Excluir os pacientes de desgaste alto não é a solução: eles são justamente os que interessam clinicamente, porque são os candidatos a osteólise e revisão.\n\n### O que mais deve constar de um estudo\n\nMétodo de medição, número de dimensões, período usado no cálculo, tratamento da acomodação inicial, viés, precisão e a distribuição estatística. Sem isso, comparar estudos de desgaste é comparar números calculados de formas diferentes.\n\n> **Na prova:** desgaste é assimétrico, mediana menor que a média, Mann-Whitney.",
+  "correta": "**Correta.** O capítulo afirma que as taxas de desgaste têm distribuição assimétrica, com valores extremos elevados que aumentam a média (por isso a mediana é menor), e que a análise deve usar métodos não paramétricos, como o teste de Mann-Whitney.",
+  "incorretas": {
+   "A": "**Errada.** O capítulo diz explicitamente que as taxas não seguem distribuição gaussiana e que não se deve presumir normalidade automaticamente. O teste t pressupõe normalidade e seria inadequado.",
+   "B": "**Errada, inverte a relação.** Os poucos pacientes com desgaste muito alto puxam a média para cima; por isso a mediana é menor que a média, e a cauda é à direita, como se vê no histograma.",
+   "D": "**Errada.** O capítulo não recomenda excluir os valores altos para forçar a normalidade; recomenda usar a estatística adequada para dados assimétricos. Os pacientes com desgaste alto são clinicamente os mais relevantes."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 18 (Avaliação Clínica do Desgaste)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0565": {
+  "conceito": "### Duas fases na penetração da cabeça\n\nNos primeiros meses, a cabeça penetra rapidamente no polietileno. Isso não é só desgaste: inclui o ==assentamento== das superfícies, a acomodação do verso do inserto na carcaça e a ==fluência== do polietileno. Essa fase, a ==acomodação inicial==, concentra-se em geral nos ==primeiros 18 meses==. Depois vem o regime estável, em que a penetração cresce de forma linear: esse é o desgaste verdadeiro.\n\n### Como ler o gráfico\n\n| Elemento | Significado |\n|---|---|\n| Linha de 0 a D | inclui a acomodação e ==superestima== o desgaste verdadeiro |\n| Reta de A até D | regime estável |\n| Interceptação da reta de A até D no eixo vertical | estimativa da acomodação, cerca de ==1,4 mm== no exemplo |\n| Inclinação entre 2 e 8 anos | ==taxa verdadeira de desgaste== |\n\nRetrospectivamente, a duração da acomodação é vista na curva; prospectivamente, considera-se terminada quando as taxas de intervalos sucessivos deixam de diferir (na Tabela 18.2, isso acontece após o terceiro ano). A acomodação depende do desenho da cúpula e do travamento do inserto. Deve-se preferir apresentar a taxa verdadeira, sem a acomodação.\n\n> **Na prova:** acomodação inicial nos primeiros 18 meses; a taxa verdadeira é a inclinação do regime estável.",
+  "correta": "**Correta.** O capítulo explica que a magnitude da acomodação pode ser estimada pela interceptação da curva de desgaste com o eixo vertical e que a taxa verdadeira corresponde à inclinação da curva em regime estável, após excluir essa fase inicial (no exemplo, entre 2 e 8 anos).",
+  "incorretas": {
+   "B": "**Errada.** A inclinação entre o tempo zero e o ponto D inclui a acomodação inicial e superestima o desgaste verdadeiro, como diz a legenda da figura. A taxa verdadeira é a da reta de A até D.",
+   "C": "**Errada no tempo.** A acomodação concentra-se nos primeiros 18 meses de funcionamento. No gráfico, a fase íngreme está no início; depois de A a curva fica mais plana e linear.",
+   "D": "**Errada, é o contrário.** Taxas calculadas incluindo a acomodação são maiores que a taxa verdadeira em regime estável, porque somam ao desgaste a penetração por assentamento e fluência."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 18 (Avaliação Clínica do Desgaste)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0566": {
+  "conceito": "### A imagem decide o método\n\nNenhum algoritmo compensa uma radiografia ruim: distorção geométrica, componente incompleto, baixa resolução ou perda de pixels podem tornar qualquer medida impossível.\n\n### Requisitos da radiografia\n\n- O componente acetabular deve estar ==completamente visível==.\n- As AP da pelve devem ser comparáveis, com ==forames obturatórios simétricos==; nos métodos que não corrigem a distorção, o acetábulo deve ocupar posição semelhante em todas.\n- Na incidência lateral, a ==cabeça deve parecer circular==, sinal de placa perpendicular ao feixe; cabeça oval introduz erro inaceitável na análise tridimensional.\n\n### Requisitos dos arquivos\n\n1. Evitar formatos com ==compressão destrutiva, como JPEG==: a perda de pixels piora a detecção de bordas.\n2. Não digitalizar cópias de filmes.\n3. Digitalizar filmes originais com ==pelo menos 300 pontos por polegada==, sem recorte nem compressão.\n4. Exportar estudos digitais no formato ==DICOM==, que preserva a informação do centro do feixe útil para a correção geométrica.\n\nMétodos tridimensionais detectam 5% a 10% mais desgaste que os bidimensionais, mas a lateral é difícil e pode reduzir a precisão.\n\n> **Na prova:** 300 dpi, sem JPEG, sem cópias, DICOM; lateral com cabeça redonda.",
+  "correta": "**Correta.** É o fluxo recomendado pelo capítulo: filmes analógicos originais digitalizados com pelo menos 300 pontos por polegada, sem recorte nem compressão, e estudos digitais exportados no formato médico original, DICOM, que preserva informações do centro do feixe para a correção geométrica.",
+  "incorretas": {
+   "A": "**Errada.** O JPEG é citado como formato a evitar, porque a compressão destrutiva perde pixels e reduz a precisão dos métodos baseados em detecção de bordas.",
+   "B": "**Errada em dois pontos.** O capítulo manda evitar a digitalização de cópias de filmes e exige pelo menos 300 pontos por polegada para os originais. Métodos que corrigem distorção funcionam melhor a partir dessa resolução.",
+   "C": "**Errada.** Na lateral adequada, a cabeça femoral deve parecer circular, indicando placa perpendicular ao feixe. A aparência oval é sinal de técnica inadequada e introduz erro inaceitável."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 18 (Avaliação Clínica do Desgaste)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0567": {
+  "conceito": "### Quanto menor o desgaste, maior a resolução necessária\n\nCom o polietileno altamente reticulado, o desgaste clínico caiu de 50% a 90% em relação ao convencional, e a taxa prevista pode ser ==inferior a 60 µm por ano==. Um método que não separa desgaste verdadeiro de erro de medição pode produzir conclusões falsas. As técnicas manuais de Charnley, Dorr e Livermore podem ser acuradas em mãos experientes, mas ==não têm precisão suficiente para alterações de curto prazo==.\n\n### Os métodos tridimensionais\n\n| Método | Como funciona | Vantagens e limites |\n|---|---|---|\n| Análise radiostereométrica | duas radiografias a 40 graus sobre uma ==gaiola de calibração==, com ==marcadores de tântalo== fixados à prótese e implantados no osso na cirurgia | ==alta precisão e acurácia==; exige marcadores e protocolo desde a cirurgia |\n| Tomografia de alta resolução | dispensa marcadores | mais radiação; precisão inferior no estudo citado; precisa de validação |\n\nNa Tabela 18.4, a análise radiostereométrica aparece com acurácia de 0,030 a 0,077 mm, contra 0,35 mm da técnica de Charnley e 0,18 mm da de Livermore.\n\n> **Na prova:** desgaste pequeno e seguimento curto pedem análise radiostereométrica.",
+  "correta": "**Correta.** Para detectar taxas pequenas em seguimento curto, é preciso o método de maior precisão. A análise radiostereométrica calcula o desgaste diretamente pela mudança das coordenadas tridimensionais do centro da cabeça em relação aos marcadores acetabulares, com elevada precisão e acurácia. O custo é planejar desde a cirurgia: marcadores de tântalo e protocolo específico.",
+  "incorretas": {
+   "A": "**Errada.** A técnica de Charnley é manual, bidimensional e direcionalmente limitada, com acurácia citada de 0,35 mm. Ela pode servir em mãos experientes para seguimentos longos, mas não tem precisão para diferenças de poucas dezenas de micrômetros em dois anos.",
+   "C": "**Errada.** O gabarito é o método mais simples, útil para decidir a troca do inserto, mas o capítulo diz que não é o mais preciso para pesquisa.",
+   "D": "**Errada.** A técnica de Livermore é manual, com acurácia de 0,18 mm, e também pressupõe centros inicialmente coincidentes. As técnicas manuais não têm precisão para avaliar alterações de curto prazo com polietilenos modernos."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 18 (Avaliação Clínica do Desgaste)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0568": {
+  "conceito": "### Duas famílias pela resposta do tecido\n\nCerâmicas são materiais não metálicos e inorgânicos. Em ortopedia, são classificadas pela resposta tecidual quando implantadas no osso:\n\n| Família | Definição | Uso |\n|---|---|---|\n| Inertes | provocam apenas reação fibrosa mínima | totalmente densas, como ==superfícies de deslizamento== nas artroplastias (alumina, zircônia, compósitos) |\n| Bioativas | estabelecem ==ligação biológica com o osso== | ==revestimentos== para fixação e ==substitutos de enxerto== (hidroxiapatita, fosfato tricálcico, vidros bioativos) |\n\n### Osteocondução e osteoindução\n\n- **Osteocondutor**: funciona como ==arcabouço== que favorece a formação óssea sobre sua superfície; só forma osso ==dentro de um ambiente ósseo==.\n- **Osteoindutor**: promove formação óssea ==mesmo em ambiente extraósseo==.\n\nAs cerâmicas bioativas são osteocondutoras. A hidroxiapatita, por exemplo, liga-se ao osso por uma fina camada epitaxial, sem tecido fibroso interposto, e o osso cresce a partir de sua superfície em direção ao centro dos poros.\n\n> **Na prova:** inerte desliza, bioativa fixa; bioativa é osteocondutora, não osteoindutora.",
+  "correta": "**Correta.** O capítulo define as cerâmicas bioativas como osteocondutoras, que atuam como arcabouço e só provocam formação óssea dentro de um ambiente ósseo, diferentemente de um material osteoindutor, que forma osso mesmo fora dele.",
+  "incorretas": {
+   "A": "**Errada, troca as famílias.** As cerâmicas inertes provocam apenas reação fibrosa mínima e são usadas como superfícies de deslizamento. Quem estabelece ligação biológica com o osso e é usada como revestimento é a cerâmica bioativa.",
+   "B": "**Errada, também troca as famílias.** As superfícies de deslizamento são feitas de cerâmicas inertes totalmente densas, por sua resistência ao desgaste e propriedades tribológicas. As bioativas são revestimentos e substitutos de enxerto.",
+   "D": "**Errada.** A hidroxiapatita é uma cerâmica bioativa, portanto osteocondutora: atua como arcabouço em ambiente ósseo. A capacidade de formar osso fora do osso define o material osteoindutor, que não é a categoria das cerâmicas descritas no capítulo."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 19 (Articulações Cerâmicas)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0569": {
+  "conceito": "### Um material duro e frágil\n\nA alumina de grau cirúrgico é sinterizada entre 1.600 e 1.800 °C e padronizada pela ISO 6474 desde 1984. Está em seu ==estado máximo de oxidação==, o que lhe dá estabilidade termodinâmica, inércia química e excelente resistência à corrosão.\n\n| Propriedade | Alumina |\n|---|---|\n| Módulo de Young | 380 GPa (300 vezes o do osso esponjoso, 190 vezes o do cimento) |\n| Resistência à compressão | ==excelente== (4.250 MPa) |\n| Resistência à flexão | ==limitada== (595 MPa) |\n| Comportamento | ==elástico linear==, baixa tenacidade à fratura: não se deforma sem quebrar |\n\n### Como ela quebra\n\nO modo de falha usual é o ==crescimento subcrítico de trinca== a partir de imperfeições: poros, inomogeneidades, riscos e microentalhes. A velocidade depende do tamanho do defeito, da qualidade do material e da carga. Como não é possível eliminar todas as imperfeições, o importante é que a ==trinca inicial seja menor que 100 micrômetros==. Em condições fisiológicas, a intensidade de tensão não alcança o limite de fadiga.\n\n### A margem de segurança\n\n| Valor | Carga |\n|---|---|\n| Resistência ao estouro, cabeça de 32 mm com cone 12/14 | ==102 kN== |\n| Exigência da FDA | 46 kN |\n| Tensões fisiológicas | abaixo de 20 kN |\n\n> **Na prova:** alumina, ótima em compressão, fraca em flexão, sem deformação plástica; falha por crescimento subcrítico de trinca.",
+  "correta": "**Correta.** O capítulo descreve o crescimento subcrítico de trinca, a partir de poros, inomogeneidades, riscos e microentalhes, como o modo usual de falha da alumina, e enfatiza que o comprimento inicial da trinca deve ser menor que 100 micrômetros.",
+  "incorretas": {
+   "A": "**Errada.** A alumina tem comportamento elástico linear e baixa tenacidade à fratura: não tem nenhuma possibilidade de se deformar sem quebrar. Não há fase plástica que avise da falha.",
+   "B": "**Errada, inverte as resistências.** A alumina tem excelente resistência à compressão e resistência à flexão limitada, além de baixa tenacidade. É um material frágil.",
+   "C": "**Errada.** Os 46 kN são a exigência da FDA. A resistência ao estouro de uma cabeça de 32 mm com cone 12/14 é de 102 kN, muito acima tanto da exigência quanto das tensões fisiológicas, que ficam abaixo de 20 kN."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 19 (Articulações Cerâmicas)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0570": {
+  "conceito": "### Por que o detalhe técnico importa\n\nA cabeça cerâmica é frágil: não se deforma, e a fratura ocorre quando o fator de intensidade de tensão de algum ponto ultrapassa a tenacidade do material. Uma das principais razões para a queda das taxas de fratura foi a ==fixação precisa da esfera à haste por um cone Morse bem desenhado==, que evita tensões críticas dentro da cabeça.\n\n### O que fazer na sala\n\nQualquer material interposto entre o metal e a cabeça cerâmica pode criar fatores de intensidade de tensão capazes de ultrapassar o limite de fadiga. Por isso:\n\n1. ==Limpar minuciosamente o cone Morse==, removendo sangue, gordura, fragmentos ósseos ou de partes moles e qualquer partícula.\n2. Introduzir a cabeça de forma ==suave, sem martelada pesada==, com impacção ==axial controlada e alinhada== ao eixo do cone.\n3. ==Evitar contato prévio== da cabeça cerâmica com superfícies metálicas ou instrumentos que possam criar microentalhes na sua superfície interna.\n\n### Os números de fratura\n\nCom essas condições otimizadas, a taxa estimada é de 0,02% para alumina e 0,03% para zircônia. Willmann relatou 0,02% em mais de 1,5 milhão de cabeças desde 1974; Sedel, menos de 1 em 1.000 em 10 anos.\n\n> **Na prova:** cone limpo, impacção suave e axial, nada de metal arranhando a cabeça.",
+  "correta": "**Correta.** São os três cuidados técnicos descritos no capítulo: limpeza minuciosa do cone Morse, introdução suave com impacção axial controlada e alinhada, e nenhum contato prévio da cabeça cerâmica com superfícies metálicas que possam produzir microentalhes na superfície interna.",
+  "incorretas": {
+   "B": "**Errada.** O capítulo pede introdução suave, sem martelada pesada. Golpes vigorosos, especialmente desalinhados, criam concentração de tensão em um material que não se deforma, aumentando o risco de trinca.",
+   "C": "**Errada.** Sangue, gordura e qualquer partícula interposta devem ser removidos. Material interposto não amortece: cria pontos de contato irregulares que elevam o fator de intensidade de tensão acima do limite de fadiga.",
+   "D": "**Errada.** O capítulo manda evitar qualquer contato prévio da cabeça cerâmica com superfícies metálicas ou instrumentos capazes de produzir microentalhes na sua superfície interna. Experimentar a cabeça definitiva sobre um cone metálico de prova é exatamente esse tipo de contato."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 19 (Articulações Cerâmicas)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0571": {
+  "conceito": "### O problema da zircônia\n\nA zircônia foi introduzida para superar limitações mecânicas da alumina. Mas a zircônia pura é ==instável==, com três fases cristalinas (monoclínica, tetragonal e cúbica), e as mudanças de fase provocam grandes variações de volume e trincas. Por isso ela é ==estabilizada com ítrio== para manter a fase tetragonal (ISO 13356, 1997).\n\nA fase tetragonal, a mais resistente, tende a se transformar em monoclínica. Esse fenômeno explica a ==maior resistência ao choque==, mas também as propriedades de deslizamento inferiores e a ==instabilidade ao longo do tempo==.\n\n### O compósito de matriz de alumina\n\nO Biolox Delta tem ==82% de alumina e 17% de zircônia== estabilizada na fase tetragonal. É reforçado por três mecanismos:\n\n1. ==Grãos alongados de óxido de estrôncio==, de estrutura hexagonal, dispersos na matriz, que interrompem a propagação de trincas pela forma.\n2. ==Grãos metaestáveis de zircônia==: diante de uma trinca, passam de tetragonal para monoclínica, ==aumentam de volume== e absorvem a energia da trinca (tenacificação por transformação).\n3. ==Óxido de cromo== em solução sólida, que compensa a perda de dureza trazida pela zircônia.\n\nEm envelhecimento por autoclave de 6 horas (ASTM F-2345), não houve diferença entre espécimes envelhecidos e não envelhecidos: ==excelente estabilidade hidrotérmica==, ao contrário da zircônia pura.\n\n> **Na prova:** Delta, 82% alumina e 17% zircônia; estrôncio, transformação da zircônia e cromo.",
+  "correta": "**Correta.** São dois dos três mecanismos de reforço do compósito descritos no capítulo: os grãos alongados de óxido de estrôncio, que interrompem as trincas pela forma, e os grãos metaestáveis de zircônia, que se transformam diante da trinca e absorvem sua energia.",
+  "incorretas": {
+   "A": "**Errada.** A zircônia pura é instável, com três fases cristalinas e mudanças de volume que geram trincas. Para manter a fase tetragonal, é preciso estabilizá-la com a adição de óxidos, como o de ítrio.",
+   "C": "**Errada em dois pontos.** As proporções estão invertidas: são 82% de alumina e 17% de zircônia. E o compósito mostrou excelente estabilidade hidrotérmica no envelhecimento em autoclave, ao contrário da zircônia pura.",
+   "D": "**Errada.** Na transformação de tetragonal para monoclínica, a zircônia aumenta de volume. É esse aumento que comprime a ponta da trinca e absorve energia, interrompendo sua propagação."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 19 (Articulações Cerâmicas)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0572": {
+  "conceito": "### Um metal com pele de cerâmica\n\nO ==zircônio oxidado== (Oxinium) não é uma cerâmica em sentido estrito. É uma ==liga metálica de 97,5% de zircônio e 2,5% de nióbio==, aquecida a 500 a 700 °C ao ar por 6 horas, o que forma uma camada superficial de ==cerca de 5 µm de dióxido de zircônio monoclínico==.\n\nO detalhe que cai: essa camada ==não é um revestimento==. É um ==continuum== entre o substrato metálico e um metal enriquecido em oxigênio, sem interface adicional. Isso o diferencia dos revestimentos cerâmicos aplicados (aspersão a plasma, carbono tipo diamante), que falharam.\n\n### Vantagens e limites\n\n- Muito mais ==resistente a riscos== que o cromo-cobalto.\n- Como o ==núcleo é metálico, deforma sob a carga de estouro, mas não quebra==.\n- Contra polietileno convencional e reticulado, com cabeças lisas e com rugosidade induzida, desgastou menos que o cromo-cobalto; mas, com ==cabeças lisas contra polietileno altamente reticulado, não houve diferença significativa==.\n- Relatos de ==dano de superfície==: após redução aberta de luxação anterior irredutível, após redução fechada com contato contra o metal-back e até após artroplastia de rotina por via lateral. A figura mostra os riscos após múltiplas luxações.\n\n> **Na prova:** Oxinium é metal com superfície oxidada em continuum, 5 µm; deforma mas não quebra; pode riscar após luxação.",
+  "correta": "**Correta.** O capítulo destaca que a camada oxidada de cerca de 5 µm não é um revestimento, mas um continuum com o metal enriquecido em oxigênio, e que, por ter núcleo metálico, o Oxinium pode se deformar sob a carga de estouro, mas não quebra.",
+  "incorretas": {
+   "A": "**Errada.** O Oxinium é uma liga metálica de zircônio e nióbio com superfície oxidada, não uma cerâmica monobloco. Justamente por ter núcleo metálico, não fratura de forma frágil.",
+   "B": "**Errada.** A figura e os relatos citados mostram o contrário: houve dano de superfície após redução aberta, após redução fechada contra o metal-back e até após artroplastia de rotina por via lateral. A camada é resistente a riscos, mas não imune.",
+   "C": "**Errada.** Foi exatamente nessa condição que não houve diferença: com cabeças lisas contra polietileno altamente reticulado, as taxas de desgaste foram semelhantes entre cromo-cobalto e Oxinium. A vantagem apareceu contra polietileno padrão e com cabeças de rugosidade induzida."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 19 (Articulações Cerâmicas)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0573": {
+  "conceito": "### Por que a alumina desliza tão bem\n\nAs propriedades tribológicas do par vêm de quatro fatores: ==baixa rugosidade== (Ra de 0,02 µm, pelo grão pequeno), ==alta dureza== (resistência a riscos), ==alta molhabilidade== e ==lubrificação por filme fluido==. A estrutura iônica é hidrofílica: a água é adsorvida com força e as proteínas cobrem a superfície em monocamada.\n\n| Dado | Alumina contra alumina |\n|---|---|\n| Coeficiente de atrito | ==0,09== (metal contra polietileno: 0,21) |\n| Fase de amaciamento (1º milhão de ciclos) | 0,1 a 0,2 mm³ por milhão de ciclos |\n| Regime estável | ==menos de 0,01 mm³== por milhão de ciclos |\n| Comparação com metal contra polietileno | 2.000 a 5.000 vezes menos desgaste |\n\n### Parâmetros de projeto\n\n- Desvio ótimo da esfericidade: ±1 µm.\n- ==Folga ótima entre cabeça e cúpula: 20 a 50 µm.==\n- ==Não favorece cabeças pequenas==: cabeças de 32 a 36 mm também geram pouco detrito.\n\n### Quando o simulador ficou realista\n\nO grupo de Fisher, em Leeds, introduziu ==microsseparação== no balanço. Surgiram estrias na cabeça com desgaste no bordo da cúpula, desgaste de 1,24 mm³ por milhão de ciclos e partículas bimodais: nanométricas (1 a 35 nm) do polimento e micrométricas (0,05 a 10 µm) das estrias, por fratura transgranular. Sob fluoroscopia, porém, Komistek não viu microsseparação in vivo.\n\n> **Na prova:** atrito 0,09 contra 0,21; folga de 20 a 50 µm; não favorece cabeça pequena.",
+  "correta": "**Correta.** O capítulo afirma que, ao contrário do metal contra polietileno, o par alumina contra alumina não favorece cabeças de pequeno diâmetro, e que a folga ótima entre a cabeça e a cúpula fica entre 20 e 50 µm, junto com desvio de esfericidade de ±1 µm.",
+  "incorretas": {
+   "A": "**Errada, inverte os valores.** O coeficiente de atrito do par alumina contra alumina é 0,09, contra 0,21 do metal contra polietileno.",
+   "B": "**Errada, inverte as fases.** A fase de amaciamento, no primeiro milhão de ciclos, tem desgaste maior (0,1 a 0,2 mm³ por milhão de ciclos); no regime estável ele cai para menos de 0,01 mm³ por milhão de ciclos.",
+   "D": "**Errada.** A microsseparação foi introduzida justamente para reproduzir o contato da cabeça com o bordo durante o balanço. Ela aumentou o desgaste para 1,24 mm³ por milhão de ciclos e reproduziu as estrias observadas nos componentes retirados."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 19 (Articulações Cerâmicas)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0574": {
+  "conceito": "### Pouca partícula e pouca reação\n\nBohler mostrou que a concentração de partículas nos tecidos periprotéticos de implantes soltos era ==2 a 22 vezes menor== nos pares alumina contra alumina do que no metal contra polietileno. Os detritos de alumina são bem tolerados: depois de uma fase inflamatória inicial, são ==quase bioinertes==, com tecido cicatricial fibroso mínimo, e ==não se observam células gigantes== em contato com eles, ao contrário do que ocorre com polietileno e metal.\n\n### Os estudos que cai\n\n| Estudo | Achado |\n|---|---|\n| Lerouge (12 alumina contra alumina, 18 metal contra polietileno) | reação celular semelhante, mas nos pares de alumina ela respondia à ==zircônia do radiopacificador do cimento==: só ==12%== dos detritos eram articulares e ==76%== eram zircônia |\n| Sedel (prostaglandina E2) | ==69 ± 56== fmol/mg na alumina contra alumina, contra ==202 ± 156== no metal contra polietileno |\n| Liagre | partículas de alumina não alteraram IL-1, IL-6 nem o metabolismo do ácido araquidônico |\n| Catelas e Petit | TNF-alfa ==8 a 10 vezes maior com polietileno==; a alumina é mais fagocitada e induz ==apoptose macrofágica mais rápida e intensa== |\n\nA hipótese é que a apoptose macrofágica induzida pela alumina explique a menor liberação de TNF-alfa e a raridade da osteólise. A osteólise relatada esteve ligada ao sistema de Mittelmeier, com alumina de grão grande e cúpula mal desenhada.\n\n> **Na prova:** alumina, poucas partículas, sem células gigantes, menos PGE2 e TNF; em Lerouge, o detrito era zircônia do cimento.",
+  "correta": "**Correta.** No estudo de Lerouge, a caracterização das partículas mostrou que apenas 12% dos detritos eram de origem articular, enquanto a zircônia usada como radiopacificador do cimento contribuía com 76%. A reação celular nas artroplastias de alumina respondia, portanto, ao cimento.",
+  "incorretas": {
+   "B": "**Errada.** O capítulo destaca que não foram observadas células gigantes em contato com detritos de alumina, ao contrário do que acontece com partículas de polietileno ou metálicas. Reação de corpo estranho só aparece com quantidade maciça de partículas.",
+   "C": "**Errada, inverte os materiais.** A estimulação de TNF-alfa foi 8 a 10 vezes maior com o polietileno do que com a alumina, no trabalho de Petit.",
+   "D": "**Errada, inverte os valores.** O nível de prostaglandina E2 foi de 69 ± 56 fmol/mg nos tecidos ao redor de pares alumina contra alumina e de 202 ± 156 fmol/mg no metal contra polietileno."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 19 (Articulações Cerâmicas)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0575": {
+  "conceito": "### Rangido: frequente e quase sempre benigno\n\nO rangido (squeaking) das artroplastias cerâmica contra cerâmica tem incidência relatada de ==menos de 1% a mais de 20%==. Em geral é ==aceito pelos pacientes, sem consequência funcional==, e às vezes desaparece espontaneamente; alguns, porém, precisam de revisão.\n\n### Fatores de risco\n\n| Grupo | Fatores |\n|---|---|\n| Paciente | ==alto, pesado, jovem e com alto nível de atividade== |\n| Implante | ==alta abdução e anteversão excessiva==, associadas a ==centro de rotação lateralizado== |\n\nO paciente do caso reúne os fatores do primeiro grupo.\n\n### Mecanismos propostos\n\n- **Walter**: desgaste excessivo da cabeça e do inserto, carga na borda e movimento entre inserto e componente metálico; o inserto separado deixaria o metal funcionar como ==oscilador==.\n- Outros: lubrificação por filme fluido comprometida por carga na borda, terceiros corpos cerâmicos ou superfície danificada, aumentando o atrito e gerando vibração induzida por fricção, amplificada pelo metal por ==ressonância==.\n- **Restrepo**: liga, desenho da haste e geometria do colo influenciariam o som.\n\n> **Na prova:** rangido, menos de 1% a mais de 20%; paciente alto, pesado, jovem e ativo; abdução e anteversão altas, centro lateralizado.",
+  "correta": "**Correta.** O capítulo lista como fatores relacionados à posição do implante a alta abdução e a anteversão excessiva, associadas a centro de rotação lateralizado. Esses fatores favorecem a carga na borda, ligada aos mecanismos propostos para o som.",
+  "incorretas": {
+   "A": "**Errada.** O rangido geralmente é aceito pelos pacientes, sem consequência sobre a função, e pode até desaparecer espontaneamente. Alguns pacientes precisam de revisão, mas não todos, e o capítulo não o apresenta como sinal de fratura iminente.",
+   "C": "**Errada.** A incidência é muito variável entre as séries, de menos de 1% a mais de 20%. Não há um valor uniforme, e 50% está fora da faixa citada.",
+   "D": "**Errada, inverte o perfil.** Os fatores do paciente são ser alto, pesado, jovem e com alto nível de atividade, exatamente o perfil do caso, e não o do paciente idoso, baixo e sedentário."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 19 (Articulações Cerâmicas)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0576": {
+  "conceito": "### Da cola ao cone Morse\n\n| Período | Evento |\n|---|---|\n| Abril de 1970 | Pierre Boutin implanta a primeira artroplastia alumina contra alumina |\n| Até 1977 | cabeça colada com resina epóxi ou parafusada: ==5,7% de dissociação== e ==1,3% de fraturas== em 791 casos |\n| 1977 | ==cone Morse== entre cabeça de alumina e haste de titânio, com alumina densa de grau cirúrgico |\n\nResolvida a fratura, o elo fraco passou a ser a ==fixação do componente acetabular==. A fixação da cúpula evoluiu do cimento para a cúpula maciça press-fit, para o metal-back de titânio parafusado e, por fim, para o metal-back revestido de hidroxiapatita com inserto modular de alumina.\n\n### Resultados que caem\n\n| Série | Achado |\n|---|---|\n| Boutin, 118 quadris, 20 anos | cúpula ==não cimentada 85,6%== contra ==cimentada 61,2%==; hastes 84,9% e 87,3%; desgaste indetectável e nenhuma fratura |\n| Bizot | 93,7% em 9 anos com cúpula press-fit de titânio |\n| Lewis, randomizado, 8 anos | alumina contra polietileno ==0,11 mm por ano==, contra ==0,02 mm por ano== na alumina contra alumina |\n| Zircônia contra polietileno | resultados ruins; ==recall da FDA em 2001== |\n\nA preocupação atual, tanto na alumina quanto no compósito, é a ==fratura ou o lascamento do inserto acetabular==, hoje mais frequente que a fratura da cabeça.\n\n> **Na prova:** Boutin 1970; cone Morse 1977; cúpula não cimentada melhor; zircônia recolhida em 2001; hoje o problema é o inserto.",
+  "correta": "**Correta.** O capítulo conclui que, para os pares cerâmicos modernos de alumina e de compósito, a principal preocupação atual é a fratura ou o lascamento do inserto acetabular, que ocorre hoje em taxa mais alta que a fratura da cabeça femoral.",
+  "incorretas": {
+   "A": "**Errada, inverte o resultado.** Na série histórica de Boutin, a cúpula não cimentada teve 85,6% de sobrevida em 20 anos, contra 61,2% da cimentada. A fixação do componente acetabular foi justamente o ponto fraco que levou à evolução das técnicas de fixação.",
+   "B": "**Errada na data.** As cabeças de zircônia foram introduzidas em 1985, e o recall da FDA, por taxa inaceitavelmente alta de fraturas em alguns lotes, ocorreu em 2001.",
+   "C": "**Errada, inverte os grupos.** No ensaio de Lewis, com seguimento mediano de 8 anos, o desgaste foi de 0,11 mm por ano no grupo alumina contra polietileno e de 0,02 mm por ano no grupo alumina contra alumina."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 19 (Articulações Cerâmicas)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0577": {
+  "conceito": "### A linha do tempo\n\n| Ano e autor | O que fez |\n|---|---|\n| 1938, Phillip Wiles | primeiro par articular de ==aço inoxidável contra aço inoxidável== |\n| 1939, Smith-Petersen | prótese de moldagem em ==cobalto-cromo-molibdênio==, uma casca oca e delgada sobre o fêmur proximal, articulada com o acetábulo nativo: ==recobrimento, e não ressecção== |\n| McKee | ==primeiro uso registrado da liga em artroplastia total metal-metal==: componente acetabular metálico articulado com a prótese femoral de Thompson; ==cimentado== no fêmur e no acetábulo, haste em losango e cúpula com projeções em satélite |\n| Peter Ring | prótese metal-metal ==não cimentada==, haste plana tipo Austin-Moore e cúpula com ==longa haste rosqueada no ílio== |\n| Outros | Huggler, Müller, Stanmore |\n\nA experiência de Smith-Petersen deu evidência de biocompatibilidade em longo prazo da liga e um princípio estrutural retomado no recobrimento. Essas próteses foram feitas por ==fundição de precisão com cera perdida== e, como mostraram análises forenses, fornecidas na condição ==como fundida==.\n\nA história não foi linear: alternou uso, abandono e reintrodução à medida que se entenderam microestrutura, geometria, lubrificação, posicionamento e seleção de pacientes.\n\n> **Na prova:** Wiles, aço; Smith-Petersen, molde de cobalto-cromo; McKee, primeira total metal-metal cimentada; Ring, não cimentada.",
+  "correta": "**Correta.** O capítulo atribui a McKee o primeiro uso registrado da liga de cobalto-cromo-molibdênio em artroplastia total metal-metal, com um componente acetabular metálico articulado com a prótese femoral de Thompson, antes usada como hemiartroplastia.",
+  "incorretas": {
+   "B": "**Errada no material.** Em 1938, Wiles implantou um par de aço inoxidável contra aço inoxidável. A liga de cobalto-cromo-molibdênio aparece na prótese de moldagem de Smith-Petersen, de 1939, e na prótese total de McKee.",
+   "C": "**Errada em dois pontos.** O molde de Smith-Petersen era de liga de cobalto-cromo-molibdênio e recobria o fêmur proximal como uma casca delgada articulada com o acetábulo nativo. Era um verdadeiro recobrimento, e não ressecção.",
+   "D": "**Errada, troca as próteses.** Fixação cimentada no fêmur e no acetábulo, haste em losango e cúpula com projeções em satélite descrevem a prótese de McKee. A de Ring era não cimentada, com haste plana e cúpula com longa haste rosqueada no ílio."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 20 (Articulações Metal-Metal)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0578": {
+  "conceito": "### Como a liga solidifica\n\nNa fundição por cera perdida, a solidificação começa na interface com a casca cerâmica, formando uma camada de ==cristais de resfriamento== de cerca de 100 µm, e depois grãos equiaxiais maiores. Os grãos crescem em padrão ==dendrítico==, como galhos de árvore. O último líquido a solidificar entre os braços das dendritas é rico em cromo, molibdênio e carbono, e ali se precipitam os ==carbonetos interdendríticos==, discretos e não contínuos. Pequenas variações de composição geram segregação (coring).\n\n| Característica | Condição como fundida |\n|---|---|\n| Estrutura | ==bifásica==: matriz rica em cobalto e carbonetos precipitados |\n| Carboneto predominante | ==M23C6== |\n| Teor máximo de carbono | ==0,35%== (especificações antigas admitiam cerca de 0,5%) |\n| Resistência à fadiga | ==menor== |\n| Desgaste | carbonetos em bloco, estáveis, relevantes para o ==baixo desgaste== do par metal-metal |\n\n### O papel do limite de carbono\n\nCarbono demais satura a liga e forma uma ==rede contínua de carbonetos nos limites dos grãos==, que fragiliza o material. O limite de 0,35% evita isso. A menor resistência à fadiga contribuiu para fraturas de hastes longas e finas, como a de Ring; mas sistemas de primeira geração funcionaram por mais de quarenta anos.\n\n> **Na prova:** como fundida, bifásica com M23C6; carbono máximo de 0,35%; resiste ao desgaste, mas pouco à fadiga.",
+  "correta": "**Correta.** O capítulo explica que o limite atual de 0,35% de carbono evita uma rede contínua de carbonetos nos limites dos grãos, capaz de reduzir de forma importante as propriedades mecânicas. Especificações mais antigas admitiam cerca de 0,5%, favorecendo saturação de carbono e fragilização.",
+  "incorretas": {
+   "A": "**Errada.** Na condição como fundida, os carbonetos interdendríticos são discretos, não contínuos. Uma rede contínua nos limites dos grãos é justamente o que o limite de carbono busca evitar, porque reduz as propriedades mecânicas.",
+   "B": "**Errada.** Na condição como fundida, o carboneto predominante é o M23C6. O tipo M7C3, pequeno e interdendrítico, aparece nas ligas de alto carbono processadas termomecanicamente, introduzidas no fim da década de 1980.",
+   "D": "**Errada, inverte a propriedade.** A condição como fundida tem menor resistência à fadiga, e isso contribuiu para fraturas em hastes longas e delgadas, como a de Ring, relacionadas também a defeitos de fundição como a microporosidade interdendrítica."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 20 (Articulações Metal-Metal)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0579": {
+  "conceito": "### Por que tratar a liga\n\nA condição como fundida resiste bem ao desgaste, mas pouco à fadiga. Para melhorar a fadiga, vieram os tratamentos pós-fundição, que ==diminuem a segregação==, promovem endurecimento intersticial (carbono e nitrogênio na rede cúbica de face centrada), ==refinam os carbonetos em até 50%== e permitem o crescimento dos grãos, além de aumentar alongamento e redução de área nos ensaios de tração.\n\n| Processo | Condições | Efeito |\n|---|---|---|\n| Homogeneização | ==1.170 °C, abaixo da temperatura eutética== | equaliza a segregação ==sem fundir os carbonetos==; aumenta a tenacidade |\n| Solubilização | ==1.240 °C, acima da temperatura eutética== | melhora resistência à tração e ductilidade |\n| Prensagem isostática a quente (início dos anos 1980) | 1.180 a 1.220 °C, cerca de 1.000 bar, 4 horas, vácuo | ==elimina a microporosidade==, densifica e reduz tamanho e volume dos carbonetos |\n| Forjamento | prensas de 300 a 1.000 t, cerca de 1.000 °C, acabamento abaixo de 900 °C | ==maior resistência à fadiga==, grãos pequenos, encruamento, maclação; carbono ==abaixo de 0,05%==; exige usinagem extensa |\n\nO preço: modificar a microestrutura como fundida mexe nos carbonetos que ajudam a resistir ao desgaste. Foi uma das características dos projetos metal-metal malsucedidos.\n\n> **Na prova:** homogeneização a 1.170 °C abaixo do eutético; solubilização a 1.240 °C acima; prensagem isostática elimina poros; forjado tem menos de 0,05% de carbono.",
+  "correta": "**Esta é a incorreta.** A homogeneização é o recozimento a 1.170 °C, abaixo da temperatura eutética, justamente para equalizar a segregação sem fundir os carbonetos. O tratamento a 1.240 °C, acima da temperatura eutética, é a solubilização, que melhora a resistência à tração e a ductilidade.",
+  "incorretas": {
+   "A": "**Correta, portanto não é a resposta.** A prensagem isostática a quente, introduzida no início dos anos 1980, elimina a microporosidade, densifica a estrutura e reduz de novo o tamanho e o volume dos carbonetos, aumentando a resistência à fadiga.",
+   "C": "**Correta, portanto não é a resposta.** O forjamento produz material com maior resistência à fadiga, adequado para hastes longas, e o teor de carbono foi reduzido para menos de 0,05%, pois concentrações maiores fragilizavam o forjado.",
+   "D": "**Correta, portanto não é a resposta.** Os tratamentos térmicos pós-fundição diminuem a segregação e podem refinar os carbonetos em até cinquenta por cento, além de favorecer o crescimento dos grãos."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 20 (Articulações Metal-Metal)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0580": {
+  "conceito": "### Três geometrias possíveis\n\n| Geometria | Relação | Consequência |\n|---|---|---|\n| ==Polar== | raio da cabeça ==menor== que o da cúpula | contato no polo, com entrada de fluido |\n| Congruente | raios iguais | sem espaço para o lubrificante entrar |\n| Equatorial | raio da cabeça ==maior== que o da cúpula | contato concentrado no equador, mais atrito, mais desgaste e risco para a estabilidade da cúpula |\n\nA diferença entre o raio da cabeça e o raio da cúpula é a ==folga radial==. Na primeira geração, componentes marcados ao mesmo tempo como 19/16 de polegada e 40 mm diferiam cerca de 32 µm, o que podia gerar geometrias não polares. McMinn mostrou que alguns pares testados por Charnley eram anulares (equatoriais) e não deixavam o lubrificante entrar.\n\n### Por que polar\n\nNa figura, a folga (R2 menos R1) deixa uma cunha na periferia. Em movimento, a cabeça arrasta fluido para dentro dessa cunha (o ângulo de entrada do lubrificante), formando uma película que impede que toda a carga passe pelo contato direto entre o polo da cabeça e a cúpula. Sem lubrificante, a carga passa pelas asperidades: é a lubrificação limítrofe, com alto atrito, abrasão e adesão.\n\n> **Na prova:** metal-metal tem de ser polar; folga radial é diferença de raios.",
+  "correta": "**Correta.** O capítulo afirma que a articulação metal-metal deve ser polar, com raio da cabeça menor que o do componente acetabular, para que o movimento arraste fluido para o espaço articular e a lubrificação impeça que toda a carga passe pelo contato direto entre os polos.",
+  "incorretas": {
+   "A": "**Errada.** A geometria equatorial é a que causa problemas: contato concentrado, maior atrito, maior desgaste e possível comprometimento da estabilidade primária do componente acetabular. Mais área de contato periférica não significa lubrificação melhor.",
+   "B": "**Errada.** Com raios iguais não há a folga que permite a entrada do lubrificante. O capítulo exige geometria polar, com folga adequada, para a película fluida se formar.",
+   "D": "**Errada.** O capítulo define a folga radial como a diferença entre o raio da cabeça e o raio do componente acetabular. A diferença entre os diâmetros é a folga diametral, o dobro da radial, termo usado ao descrever o sistema ASR."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 20 (Articulações Metal-Metal)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0581": {
+  "conceito": "### Lendo a curva de Stribeck\n\nO eixo horizontal é o ==número de Sommerfeld==, que cresce com ==viscosidade, velocidade de deslizamento e raio== e diminui com a ==carga==. O eixo vertical é o coeficiente de atrito.\n\n| Regime | O que sustenta a carga | Atrito |\n|---|---|---|\n| Limítrofe (BL) | as ==asperidades em contato direto== | alto, com abrasão e adesão |\n| Misto (ML) | parte pela película, parte pelas asperidades | intermediário |\n| Película fluida completa (FFL) | o ==lubrificante== | mínimo na região ótima |\n\nCom movimento suficiente, raio adequado e folga apropriada, forma-se a película completa. Quando a velocidade não basta para separar as superfícies, o regime é misto. O capítulo considera a ==lubrificação mista provavelmente a condição mais frequente in vivo==, porque mesmo articulações bem funcionantes apresentam desgaste mensurável: se houvesse película completa o tempo todo, praticamente não haveria desgaste.\n\n### O raio não resolve tudo\n\nA equação de desgaste é ==volume = k × L × x ÷ 3p== (k, probabilidade de formar partícula; L, carga; x, distância de deslizamento; p, dureza do material mais macio). Cabeça maior melhora a lubrificação e reduz k, mas ==aumenta a distância de deslizamento x==. O resultado depende do sistema completo.\n\n> **Na prova:** Sommerfeld sobe com viscosidade, velocidade e raio e cai com a carga; in vivo, predomina a lubrificação mista.",
+  "correta": "**Correta.** O capítulo afirma que a lubrificação mista, em que parte da carga atravessa a película e parte as asperidades, é provavelmente a condição mais frequente in vivo, pois mesmo articulações bem funcionantes apresentam desgaste mensurável.",
+  "incorretas": {
+   "A": "**Errada, inverte a relação.** O número de Sommerfeld é dado por viscosidade vezes velocidade de deslizamento vezes raio, dividido pela carga, como aparece no eixo do gráfico. Ele aumenta com viscosidade, velocidade e raio e diminui com a carga.",
+   "B": "**Errada.** Na lubrificação limítrofe, a carga é transmitida pelas asperidades, com alto atrito e desgaste por abrasão e adesão. É a película fluida completa que sustenta a carga pelo lubrificante, com o menor atrito.",
+   "C": "**Errada.** A distância de deslizamento participa da equação de desgaste, e aumentar o raio a aumenta. O benefício da cabeça maior está na lubrificação, que reduz a probabilidade de formar partículas, mas o capítulo ressalta que o resultado clínico depende do sistema completo."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 20 (Articulações Metal-Metal)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0582": {
+  "conceito": "### A equação de desgaste\n\n> Volume de desgaste = k × L × x ÷ 3p\n\n| Símbolo | Significado | Efeito sobre o volume |\n|---|---|---|\n| k | ==probabilidade de produzir uma partícula== | quanto maior, mais desgaste |\n| L | ==carga aplicada== | diretamente proporcional |\n| x | ==distância de deslizamento== | diretamente proporcional |\n| p | ==dureza do material mais macio== | inversamente proporcional |\n\nÉ a mesma lógica da relação de Archard do capítulo de tribologia: volume proporcional à força vezes a distância percorrida.\n\n### Onde entra a lubrificação\n\nA lubrificação atua principalmente sobre ==k==: uma película eficaz separa as superfícies e reduz a probabilidade de gerar partículas. Em metal-metal, aumentar o raio pode melhorar a lubrificação pelo maior percurso de arraste do fluido, reduzindo k. Mas o raio maior também ==aumenta x==, a distância de deslizamento. Por isso o capítulo insiste que o resultado clínico depende do sistema completo, e não de uma variável isolada.\n\n> **Na prova:** desgaste sobe com carga e distância e cai com a dureza do material mais macio; a lubrificação mexe no k.",
+  "correta": "**Correta.** Pela equação, o volume cresce com a carga (L) e com a distância de deslizamento (x) e diminui com a dureza do material mais macio (p), sendo k a probabilidade de produzir uma partícula.",
+  "incorretas": {
+   "B": "**Errada.** A letra p representa a dureza do material mais macio, e não a pressão de contato. Como está no denominador, maior dureza significa menor volume de desgaste.",
+   "C": "**Errada.** A letra k é a probabilidade de produzir uma partícula de desgaste. O raio não aparece diretamente na equação: ele influencia a lubrificação (e, portanto, k) e a distância de deslizamento (x), em sentidos opostos.",
+   "D": "**Errada.** A distância de deslizamento está no numerador: o volume é diretamente proporcional a ela. Movimentos mais longos aumentam o desgaste, não o reduzem."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 20 (Articulações Metal-Metal)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0583": {
+  "conceito": "### O recobrimento renasce\n\nAs tentativas iniciais de recobrimento falharam: Charnley, na década de 1950, com cascas de politetrafluoroetileno; depois Freeman, Wagner e Amstutz, com metal ou cerâmica contra polietileno (e até o desenho invertido). O problema principal foi o ==desgaste do polietileno em articulações de grande diâmetro==, com osteólise extensa (descrita e classificada por Willert em 1988). Em 1988, Weber reintroduziu o metal-metal com o Metasul de 28 mm.\n\n### O que fez o BHR funcionar\n\n| Característica | Birmingham Hip Resurfacing |\n|---|---|\n| Liga | cobalto-cromo-molibdênio ==como fundida==, carbono ==acima de 0,25%== |\n| Fixação acetabular | esferas ==fundidas integralmente== na superfície, evitando tratamentos térmicos que prejudicariam o desgaste |\n| Geometria | ==polar==, com folga baseada na análise forense da primeira geração e funcional mesmo após deformação da cúpula na impactação em osso jovem e denso |\n| Fixação | ==híbrida==: fêmur cimentado com ==cimento de baixa viscosidade==, acetábulo não cimentado revestido de ==hidroxiapatita== |\n\n### Resultados\n\nNa série de McMinn, com ==3.205 dispositivos==, ==96% permaneciam sem revisão aos 14 anos==. No registro australiano de 2013, o BHR teve a menor taxa cumulativa de revisão entre os recobrimentos: 7,1% em 10 anos. As revisões foram ligadas a alinhamento subótimo, impacto com carregamento de borda, indicação para pacientes inadequados e fratura do colo.\n\n> **Na prova:** BHR, como fundido e alto carbono, polar, híbrido; 96% sem revisão aos 14 anos.",
+  "correta": "**Correta.** O capítulo descreve a fixação híbrida do BHR: componente femoral cimentado com cimento de baixa viscosidade e componente acetabular não cimentado revestido de hidroxiapatita, com as esferas de fixação fundidas integralmente na superfície.",
+  "incorretas": {
+   "A": "**Errada.** O BHR foi produzido em liga como fundida, com carbono acima de 0,25%, e as esferas de fixação foram fundidas integralmente justamente para evitar tratamentos térmicos posteriores, potencialmente prejudiciais à resistência ao desgaste.",
+   "C": "**Errada.** A geometria era polar, com cabeça menor que o componente acetabular e folga suficiente para a entrada de fluido. A geometria equatorial aumenta atrito e desgaste.",
+   "D": "**Errada no número.** Na série de McMinn, 96% dos 3.205 recobrimentos permaneciam sem revisão aos quatorze anos. Um valor de 70% colocaria o BHR entre os sistemas de mau desempenho, o oposto do que o capítulo mostra."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 20 (Articulações Metal-Metal)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0584": {
+  "conceito": "### O que o registro mostrou\n\n| Dado (registro australiano de 2013) | Valor |\n|---|---|\n| Revisão cumulativa em 12 anos, artroplastia total metal-metal | ==18,6%== |\n| Revisão cumulativa em 12 anos, recobrimento | ==11,2%== |\n| BHR, todas as patologias, 10 anos | ==7,1%==, a menor entre os recobrimentos |\n| Sistemas de recobrimento que não atendiam ao limite de 1% ao ano até 10 anos | ==6 de 10== |\n\nAlguns produtos foram recolhidos por preocupações de segurança.\n\n### O padrão dos projetos que falharam\n\nTrês modificações apareciam repetidamente:\n\n1. Modificação parcial ou completa da ==microestrutura como fundida==.\n2. ==Redução da folga== e do ângulo convergente de entrada do fluido.\n3. ==Diminuição do ângulo de cobertura== acetabular.\n\nNo ==ASR== (Articular Surface Replacement), as três ocorreram juntas: microestrutura mista, folga diametral próxima de ==100 µm== e cobertura reduzida para acomodar o instrumental.\n\nA sequência de falha: folga insuficiente reduz a entrada de lubrificante; cobertura menor diminui a tolerância ao posicionamento; inclinação ou versão inadequadas causam carregamento de borda, desgaste acelerado e mais partículas e íons. ==Material, desenho e técnica não podem ser avaliados isoladamente==.\n\n> **Na prova:** ASR, microestrutura mista, folga de 100 µm, cobertura menor; o sucesso de um sistema não valida a classe.",
+  "correta": "**Correta.** O capítulo aponta o ASR como o sistema em que as três alterações típicas dos projetos malsucedidos ocorreram em conjunto: microestrutura mista, folga diametral próxima de 100 µm e cobertura reduzida para acomodar o instrumental.",
+  "incorretas": {
+   "A": "**Errada, inverte os números.** A artroplastia total metal-metal teve 18,6% de revisão cumulativa em 12 anos, contra 11,2% do recobrimento.",
+   "B": "**Errada.** No registro australiano de 2013, seis de dez sistemas de recobrimento não atendiam ao limite de 1% de revisão por ano até 10 anos, critério citado pelo National Institute for Clinical Excellence.",
+   "D": "**Errada.** O desempenho reduzido foi atribuído a características de desenho e material que comprometiam tribologia ou fixação, como a modificação da microestrutura, a folga reduzida e a menor cobertura. O capítulo insiste que material, desenho e técnica formam um único sistema."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 20 (Articulações Metal-Metal)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0585": {
+  "conceito": "### Pseudotumores\n\nO desgaste excessivo e as reações teciduais levantaram preocupação com coleções líquidas e massas sólidas periarticulares, chamadas ==pseudotumores== em uma pequena série de Oxford, em 2008. Análises posteriores relacionaram a ==maioria desses casos ao carregamento de borda==, decorrente do ==posicionamento acetabular com inclinação e versão inadequadas== e alto desgaste. O capítulo ressalta que ==pseudotumores não são exclusivos dos pares metal-metal== e podem ocorrer com partículas de outros materiais.\n\n### Corrosão no cone\n\nOutra preocupação é a corrosão entre o cone femoral e a cabeça modular. Hipóteses incluem o ==maior torque de atrito== das cabeças metal-metal grandes. Um par que vai mal como recobrimento provavelmente não melhora ao ser ligado a uma haste por junção cônica. Mas há ==relatos de corrosão também em pares não metal-metal==, o que complica a identificação da causa primária.\n\n### Íons e câncer\n\nO desgaste e a ruptura da camada passiva aumentam a liberação de ==íons de cobalto e cromo==, reacendendo a discussão de efeitos sistêmicos. O capítulo cita ==três estudos importantes que não demonstraram aumento do risco global ou específico de câncer==, e o estudo de Visuri, com pacientes McKee-Farrar seguidos por 30 anos, favorável à adequação da liga em longo prazo.\n\n> **Na prova:** pseudotumor, sobretudo carregamento de borda por posição da cúpula; não é exclusivo do metal-metal; sem aumento de câncer.",
+  "correta": "**Correta.** O capítulo informa que análises posteriores relacionaram a maioria dos casos de pseudotumor ao carregamento de borda decorrente do posicionamento acetabular, com inclinação e versão inadequadas e alto desgaste, como no caso descrito.",
+  "incorretas": {
+   "A": "**Errada.** O capítulo ressalta que pseudotumores não são exclusivos de pares metal-metal e podem ocorrer com partículas provenientes de outros materiais.",
+   "B": "**Errada.** Os três estudos citados não demonstraram aumento do risco global ou específico de câncer em usuários de articulações metal-metal. O estudo de Visuri, com 30 anos de McKee-Farrar, também foi favorável.",
+   "C": "**Errada.** Há relatos de corrosão na junção cônica também em pares não metal-metal, o que, segundo o capítulo, amplia a complexidade para determinar a causa primária do problema."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 20 (Articulações Metal-Metal)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
  }
 }
