@@ -393,6 +393,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
         <label className="campo">Data de nascimento<input className="entrada" type="date" value={nascimento} onChange={e => definirNascimento(e.target.value)} /></label>
         <CamposEtapa situacao={situacao} ano={anoResidencia} provas={provas} aoMudarSituacao={definirSituacao} aoMudarAno={definirAnoResidencia} aoMudarProvas={definirProvas} />
         <label className="campo">Serviço onde faz residência ou trabalha<input className="entrada" value={servico} onChange={e => definirServico(e.target.value)} placeholder="Ex.: Hospital / clínica / instituição" /></label>
+        <OpcaoServicoRanking sessao={sessao} compacta noPerfil />
         <div className="linha-campos linha-campos--2"><label className="campo"><span>WhatsApp <span className="meta">(opcional)</span></span><input className="entrada" type="tel" autoComplete="tel" value={whatsapp} onChange={e => definirWhatsapp(e.target.value)} placeholder="(00) 00000-0000" /></label><label className="campo"><span>Cidade <span className="meta">(opcional)</span></span><input className="entrada" autoComplete="address-level2" value={cidade} onChange={e => definirCidade(e.target.value)} /></label></div>
         <div className="linha-campos linha-campos--2"><label className="campo"><span>UF <span className="meta">(opcional)</span></span><select className="entrada" value={uf} onChange={e => definirUf(e.target.value)}><option value="">Selecione</option>{['AC','AL','AP','AM','BA','CE','DF','ES','GO','MA','MT','MS','MG','PA','PB','PR','PE','PI','RJ','RN','RS','RO','RR','SC','SP','SE','TO'].map(sigla => <option key={sigla}>{sigla}</option>)}</select></label><label className="campo campo--checkbox"><input type="checkbox" checked={receberNovidades} onChange={e => definirReceberNovidades(e.target.checked)} /> Quero receber novidades sobre o OrtoQuestões</label></div>
         <p className="texto-2">WhatsApp, cidade e UF são opcionais. Usamos seus dados de perfil para personalizar sua experiência e nunca exibimos seu contato publicamente.</p>
@@ -420,7 +421,6 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
               : `Você entra no ranking ao responder ${MINIMO_RANKING} questões (faltam ${MINIMO_RANKING - respondidasConta})`}
           </div>
           {perfilRanking.participa && <>
-            <OpcaoServicoRanking sessao={sessao} compacta />
             <label className="campo">Seu apelido no ranking
               <input className="entrada" maxLength={APELIDO_MAXIMO} value={apelidoRanking} onChange={e => definirApelidoRanking(e.target.value)} placeholder={nomeCadastroRanking} />
             </label>

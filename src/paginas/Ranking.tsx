@@ -22,7 +22,7 @@ import { usarContextoLocal } from '../estado/usarContextoLocal'
 import { META_STREAK_DIARIA } from '../estado/streak'
 import { MINIMO_RANKING } from '../util/nomeRanking'
 import { usarPerfilRanking, usarPublicarSequencia } from '../conta/perfilRanking'
-import { OpcaoServicoRanking, SeloServico } from '../componentes/ServicoRanking'
+import { SeloServico } from '../componentes/ServicoRanking'
 import '@fontsource/pixelify-sans/latin-700.css'
 import '../estilos/paginas/Ranking.css'
 
@@ -240,7 +240,6 @@ export function Ranking() {
       <span className="rk-bau__seta" aria-hidden="true"><Icone nome="direita" tamanho={20} /></span>
     </a>
 
-    <OpcaoServicoRanking sessao={sessao} />
 
     {!sessao ? (
       <Estado titulo="Entre na sua conta para ver o ranking" acoes={<a className="botao botao--principal" href={href('/conta?modo=entrar')}>Entrar ou criar conta</a>}>
@@ -308,7 +307,7 @@ export function Ranking() {
       <ul>
         <li><span><Icone nome="grafico" tamanho={18} /></span><div><strong>Conta volume, não acerto.</strong> Cada questão diferente respondida soma um ponto. Refazer a mesma questão não soma de novo.</div></li>
         <li><span><Icone nome="calendario" tamanho={18} /></span><div><strong>Geral ou últimos 7 dias.</strong> O geral mostra o acumulado; a semana dá chance a quem começou agora.</div></li>
-        <li><span><Icone nome="usuario" tamanho={18} /></span><div><strong>Todo mundo com conta participa.</strong> Entra quem respondeu pelo menos {MINIMO_RANKING} questões, com o apelido que escolher ou o nome do cadastro e a inicial do sobrenome. Em <a href={href('/conta?secao=ranking')}>Minha conta</a> você troca o apelido ou sai do ranking. E-mail, telefone e cidade nunca aparecem. O serviço onde você faz residência só aparece se você ligar a opção.</div></li>
+        <li><span><Icone nome="usuario" tamanho={18} /></span><div><strong>Todo mundo com conta participa.</strong> Entra quem respondeu pelo menos {MINIMO_RANKING} questões, com o apelido que escolher ou o nome do cadastro e a inicial do sobrenome. Em <a href={href('/conta?secao=ranking')}>Minha conta</a> você troca o apelido ou sai do ranking. E-mail, telefone e cidade nunca aparecem. O serviço onde você faz residência só aparece se você ligar a opção em <a href={href('/conta?secao=perfil')}>Meu perfil</a>.</div></li>
         <li><span><Icone nome="medalha" tamanho={18} /></span><div><strong>Conquistas e vitrine.</strong> As conquistas ficam no seu inventário para sempre, e você escolhe até três para aparecer ao lado do nome. A fogueira mostra a sua sequência de dias seguidos com pelo menos {META_STREAK_DIARIA} questões: se a sequência acabar, ela some e recomeça do zero.</div></li>
       </ul>
     </details>
