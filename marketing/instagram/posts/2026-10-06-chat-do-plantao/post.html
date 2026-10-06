@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Chat do plantão: o ombro que não vai às costas</title>
+<!-- Sequência de 6 stories (1080x1920), sem figurinha, em forma de conversa de plantão.
+     Caso da questão TARO 2024 (ombro-cotovelo-0454), com a imagem original da prova.
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-06-chat-do-plantao/post.html -->
+<style>
+@font-face{font-family:Jakarta;src:url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2');font-weight:200 800}
+@font-face{font-family:Inter;src:url(../../fontes/inter-latin-wght-normal.woff2) format('woff2');font-weight:100 900}
+:root{--verde:#14655E;--tinta:#0B3A35;--noite:#06110F;--ouro:#F4CF7C;--ouro-e:#C9952F;--creme:#FBF6EA;--acerto:#1F7A4D;--erro:#B3423A;--bolha:#16302C;--minha:#1D6B60}
+*{box-sizing:border-box}body{margin:0;background:#393939;font-family:Inter,Arial,sans-serif}
+section{position:relative;overflow:hidden;margin:0 0 40px;width:1080px;height:1920px;color:#fff;
+  background:radial-gradient(circle at 80% 0%,rgba(244,207,124,.12),transparent 36%),radial-gradient(circle at 1px 1px,rgba(255,255,255,.045) 1.3px,transparent 1.4px) 0 0/30px 30px,linear-gradient(180deg,var(--noite),#0A221F 55%,#0C2B27)}
+h1,h2,p{margin:0}h1,h2{font-family:Jakarta;letter-spacing:-.045em;text-wrap:balance}
+.gold{color:var(--ouro)}
+.marca{display:flex;gap:14px;align-items:center;font:500 30px Jakarta;letter-spacing:-.03em;white-space:nowrap}.marca b{font-weight:800}.marca svg{height:44px;width:44px;flex:none}
+/* barra do chat */
+.barra{position:absolute;left:0;right:0;top:0;padding:64px 64px 26px;display:flex;align-items:center;gap:22px;background:rgba(6,17,15,.82);border-bottom:2px solid rgba(255,255,255,.08)}
+.barra .av{width:84px;height:84px;border-radius:50%;display:grid;place-items:center;background:var(--verde);font:800 30px Jakarta;color:var(--ouro);flex:none}
+.barra strong{display:block;font:800 36px Jakarta;letter-spacing:-.02em}
+.barra small{display:block;font:500 25px Inter;color:rgba(255,255,255,.6);margin-top:2px}
+.barra .hora{margin-left:auto;font:800 30px Jakarta;color:var(--ouro);letter-spacing:.02em}
+.chat{position:absolute;left:56px;right:56px;top:220px;display:flex;flex-direction:column;gap:20px}
+.dia{align-self:center;padding:8px 20px;border-radius:99px;background:rgba(255,255,255,.08);font:700 22px Inter;color:rgba(255,255,255,.65);letter-spacing:.04em}
+.msg{max-width:800px;padding:22px 28px 16px;border-radius:30px;font:500 33px/1.38 Inter;position:relative}
+.msg .quem{display:block;font:800 22px Jakarta;letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px}
+.msg time{display:block;text-align:right;font:600 20px Inter;opacity:.55;margin-top:6px}
+.dele{align-self:flex-start;background:var(--bolha);border-bottom-left-radius:8px}
+.dele .quem{color:var(--ouro)}
+.minha{align-self:flex-end;background:var(--minha);border-bottom-right-radius:8px}
+.minha .quem{color:#bfe9df}
+.msg b{color:#fff;font-weight:800}
+.msg .destaque{color:var(--ouro);font-weight:700}
+.foto{padding:14px 14px 12px;width:760px}
+.foto img{display:block;width:100%;border-radius:20px}
+.foto figcaption{font:600 22px Inter;opacity:.7;margin-top:10px;padding:0 8px}
+.digitando{align-self:flex-start;padding:20px 28px;border-radius:30px;border-bottom-left-radius:8px;background:var(--bolha);display:flex;gap:10px}
+.digitando i{width:14px;height:14px;border-radius:50%;background:rgba(255,255,255,.55)}
+.rodape{position:absolute;left:64px;right:64px;bottom:90px;display:flex;justify-content:space-between;align-items:center;font:700 24px Inter;color:rgba(255,255,255,.6)}
+.passe{position:absolute;left:64px;right:64px;bottom:150px;text-align:center;font:700 30px Jakarta;color:var(--ouro)}
+/* capa */
+.capa .tela{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;padding:230px 70px 0}
+.capa .relogio{font:300 260px/1 Jakarta;letter-spacing:-.06em}
+.capa .data{font:500 34px Inter;color:rgba(255,255,255,.7);margin-top:10px}
+.notif{width:100%;margin-top:120px;border-radius:36px;background:rgba(255,255,255,.1);border:2px solid rgba(255,255,255,.12);padding:28px 32px;backdrop-filter:blur(6px)}
+.notif .de{display:flex;justify-content:space-between;font:700 24px Inter;color:rgba(255,255,255,.7)}
+.notif strong{display:block;margin-top:12px;font:800 34px Jakarta}
+.notif p{margin-top:8px;font:500 31px/1.38 Inter;color:rgba(255,255,255,.9)}
+.notif+.notif{margin-top:20px;opacity:.75}
+.capa h1{margin-top:150px;font-size:96px;line-height:1.02;text-align:center}
+.capa .sub{margin-top:28px;font:500 34px/1.4 Inter;color:rgba(255,255,255,.75);text-align:center;max-width:860px}
+/* sua vez */
+.vez{padding:200px 72px 0}
+.vez .rot{display:inline-block;padding:10px 22px;border:2px solid var(--ouro);border-radius:99px;color:var(--ouro);font:800 22px Jakarta;letter-spacing:.12em;text-transform:uppercase}
+.vez h2{margin-top:36px;font-size:96px;line-height:1.03}
+.vez .resumo{margin-top:28px;font:500 31px/1.42 Inter;color:rgba(255,255,255,.8)}
+.vez .resumo b{color:#fff}
+.alts{margin-top:56px;display:grid;gap:22px}
+.alt{display:grid;grid-template-columns:72px 1fr;gap:22px;align-items:center;border-radius:26px;background:#fff;color:#12181A;padding:28px 28px;font:700 35px/1.3 Jakarta}
+.alt b{display:grid;place-items:center;width:68px;height:68px;border-radius:18px;background:#E8EEEB;color:var(--tinta);font:800 32px Jakarta}
+.alt.certa{background:#E6F3EA;box-shadow:0 0 0 5px var(--acerto)}.alt.certa b{background:var(--acerto);color:#fff}
+.alt.apagada{opacity:.45}
+.vez .pense{margin-top:60px;padding:26px 30px;border-radius:26px;border:2px dashed rgba(244,207,124,.6);font:600 31px/1.4 Inter;color:rgba(255,255,255,.88)}
+/* cola */
+.cola{padding:200px 72px 0}
+.cola h2{font-size:96px;line-height:1.03}
+.testes{margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.teste{border-radius:28px;background:rgba(255,255,255,.07);border:2px solid rgba(255,255,255,.12);padding:32px 30px}
+.teste strong{display:block;font:800 38px Jakarta;color:var(--ouro);letter-spacing:-.02em}
+.teste span{display:block;margin-top:12px;font:500 29px/1.38 Inter;color:rgba(255,255,255,.85)}
+.contra{margin-top:28px;border-radius:28px;background:#fff;color:var(--tinta);padding:30px 32px;font:600 31px/1.4 Inter}
+.extra{margin-top:28px;font:500 30px/1.42 Inter;color:rgba(255,255,255,.8)}
+.extra b{color:#fff}
+.contra strong{font:800 30px Jakarta}
+.cta{position:absolute;left:72px;right:72px;bottom:160px;border-radius:30px;background:var(--ouro);color:var(--tinta);padding:32px 36px;text-align:center;font:800 38px/1.25 Jakarta}
+.cta span{display:block;font:600 28px Inter;margin-top:8px;color:#3d4b2a}
+</style></head><body>
+<template id="simbolo"><svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#14655E"/><g transform="scale(.5)"><g fill="#FFFFFF" opacity=".55"><path transform="translate(13 9.5)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(11 21.2)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(13 44.6)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g><g fill="#F4CF7C"><path transform="translate(11 32.9)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g></g></svg></template>
+
+<section class="capa" id="s1-notificacao">
+  <div class="tela">
+    <div class="relogio">03:14</div>
+    <div class="data">terça-feira, plantão de ortopedia</div>
+    <div class="notif"><div class="de"><span>Chat do plantão</span><span>agora</span></div><strong>R1 do PS</strong><p>Staff, raio-X sem fratura, mas o paciente não consegue pôr a mão nas costas. Libero com tipoia?</p></div>
+    <div class="notif"><div class="de"><span>Chat do plantão</span><span>agora</span></div><strong>R1 do PS</strong><p>Foi queda de cavalo com apoio no braço.</p></div>
+    <h1>Raio-X normal <span class="gold">não é ombro normal.</span></h1>
+    <p class="sub">Um caso de prova contado como ele chega no plantão. Toque para abrir a conversa.</p>
+  </div>
+  <div class="rodape"><div class="marca"></div><span>1/6</span></div>
+</section>
+
+<section id="s2-caso">
+  <div class="barra"><div class="av">PS</div><div><strong>Plantão · Ortopedia</strong><small>R1 do PS, Staff</small></div><span class="hora">03:14</span></div>
+  <div class="chat">
+    <span class="dia">HOJE</span>
+    <div class="msg minha"><span class="quem">R1</span>Paciente de <b>49 anos</b>, destro, sem dor prévia. <b>Queda de cavalo há 2 dias</b>, apoiou no braço direito.<time>03:14</time></div>
+    <div class="msg minha"><span class="quem">R1</span>Dor forte e <span class="destaque">não consegue colocar a mão nas costas</span>. Raio-X descartou fratura.<time>03:15</time></div>
+    <div class="msg dele"><span class="quem">Staff</span>Antes da tipoia: qual movimento ele perdeu?<time>03:16</time></div>
+    <div class="msg minha"><span class="quem">R1</span>Levar a mão às costas é <b>rotação interna</b>...<time>03:16</time></div>
+    <div class="msg dele"><span class="quem">Staff</span>Isso. E quem é o principal rotador interno do manguito?<time>03:17</time></div>
+    <div class="digitando"><i></i><i></i><i></i></div>
+  </div>
+  <p class="passe">Responda na cabeça e passe</p>
+  <div class="rodape"><div class="marca"></div><span>2/6</span></div>
+</section>
+
+<section id="s3-exame">
+  <div class="barra"><div class="av">PS</div><div><strong>Plantão · Ortopedia</strong><small>R1 do PS, Staff</small></div><span class="hora">03:21</span></div>
+  <div class="chat">
+    <div class="msg dele"><span class="quem">Staff</span>Faz o <b>belly-press</b>: mão na barriga, empurrando, cotovelo para a frente.<time>03:18</time></div>
+    <div class="msg minha"><span class="quem">R1</span>O cotovelo <span class="destaque">cai para trás</span> e ele dobra o punho para compensar. O lift-off nem consegue fazer de dor.<time>03:20</time></div>
+    <div class="msg dele"><span class="quem">Staff</span>Pede a ressonância. Me manda quando sair.<time>03:20</time></div>
+    <figure class="msg minha foto"><img src="../../../../public/imagens/ombro-cotovelo/ombro-cotovelo-0454-1.jpeg" alt="Ressonância magnética axial do ombro, imagem original da questão"><figcaption>Imagem da questão original (TARO 2024)</figcaption><time>03:21</time></figure>
+  </div>
+  <div class="rodape"><div class="marca"></div><span>3/6</span></div>
+</section>
+
+<section class="vez" id="s4-sua-vez">
+  <span class="rot">Sua vez · TARO 2024</span>
+  <h2>Qual o diagnóstico <span class="gold">e a conduta?</span></h2>
+  <p class="resumo"><b>49 anos, ativo</b>, queda com apoio no braço, não leva a mão às costas, raio-X sem fratura e a ressonância do story anterior.</p>
+  <div class="alts">
+    <div class="alt"><b>A</b>Lesão do infraespinal; tratamento clínico com reabilitação</div>
+    <div class="alt"><b>B</b>Lesão do infraespinal; reparo cirúrgico</div>
+    <div class="alt"><b>C</b>Lesão do subescapular; reparo cirúrgico</div>
+    <div class="alt"><b>D</b>Lesão do subescapular; tratamento clínico com reabilitação</div>
+  </div>
+  <p class="pense">Escolha a sua letra antes de passar. A resposta vem no próximo story.</p>
+  <div class="rodape"><div class="marca"></div><span>4/6</span></div>
+</section>
+
+<section id="s5-resposta">
+  <div class="barra"><div class="av">PS</div><div><strong>Plantão · Ortopedia</strong><small>R1 do PS, Staff</small></div><span class="hora">03:34</span></div>
+  <div class="chat">
+    <div class="msg dele"><span class="quem">Staff</span>É <b>lesão do subescapular</b>. Resposta <span class="destaque">C</span>.<time>03:30</time></div>
+    <div class="msg dele"><span class="quem">Staff</span>Lesão <b>traumática aguda</b> num paciente <b>ativo</b>: o subescapular <b>retrai e infiltra gordura rápido</b>. Reparo precoce, nas primeiras semanas.<time>03:31</time></div>
+    <div class="msg dele"><span class="quem">Staff</span>Olha o bíceps também: costuma <b>luxar medialmente</b> junto. Tenodese ou tenotomia no mesmo tempo.<time>03:32</time></div>
+    <div class="msg minha"><span class="quem">R1</span>E o infraespinal?<time>03:33</time></div>
+    <div class="msg dele"><span class="quem">Staff</span>É rotador <b>externo</b>. Lesão dele dá retardo em rotação externa, não dificuldade de levar a mão às costas.<time>03:34</time></div>
+    <div class="msg minha"><span class="quem">R1</span>Então tipoia e alta seria perder a janela.<time>03:34</time></div>
+  </div>
+  <div class="rodape"><div class="marca"></div><span>5/6</span></div>
+</section>
+
+<section class="cola" id="s6-cola">
+  <h2>A cola do <span class="gold">subescapular</span></h2>
+  <div class="testes">
+    <div class="teste"><strong>Belly-press</strong><span>Cotovelo cai para trás e o punho flete para compensar.</span></div>
+    <div class="teste"><strong>Lift-off</strong><span>Não afasta a mão das costas. Pode ser impossível pela dor.</span></div>
+    <div class="teste"><strong>Bear-hug</strong><span>Mão no ombro oposto, não segura contra a resistência. Sensível para a parte superior.</span></div>
+    <div class="teste"><strong>RE passiva maior</strong><span>Rotação externa passiva aumentada sugere lesão completa.</span></div>
+  </div>
+  <p class="contra"><strong>Na prova:</strong> trauma, sem fratura, não leva a mão às costas = <strong>subescapular</strong>. Ativo e agudo = <strong>reparo precoce</strong>.</p>
+  <p class="extra">No site, cada questão vem com o comentário <b>da certa e de cada errada</b>, como esta conversa: o porquê, não só a letra.</p>
+  <div class="cta">Mais casos de prova comentados<span>ortoquestoes.com.br</span></div>
+  <div class="rodape"><div class="marca"></div><span>6/6</span></div>
+</section>
+
+<script>const svg=document.getElementById('simbolo').innerHTML;document.querySelectorAll('.marca').forEach(el=>{el.innerHTML=svg+'<div><b>Orto</b> <span>Questões</span></div>'})</script>
+</body></html>
