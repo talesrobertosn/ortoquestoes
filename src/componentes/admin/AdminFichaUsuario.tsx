@@ -6,7 +6,7 @@ import { usarIndice } from '../../dados/usarIndice'
 import { Icone } from '../Icone'
 import { BarrasHorizontais } from './AdminGraficos'
 import type { LinhaUsuario } from './AdminUsuarios'
-import { PLANOS, data, dataHora, haQuanto, motivoFalhaEmail, porcentagem } from './formatos'
+import { PLANOS, acertoAposRevisao, acertoPorTentativa, acertoReal, data, dataHora, haQuanto, motivoFalhaEmail, porcentagem } from './formatos'
 import { escreverRecado } from './recado'
 import { MODELOS, gravarModelosSalvos, lerModelosSalvos, modeloSugerido, preencher, type DadosModelo, type ModeloSalvo } from './modelosEmail'
 
@@ -58,14 +58,22 @@ export function AdminFichaUsuario({ usuario, aoFechar }: { usuario: LinhaUsuario
   const porTema = useMemo(() => {
     if (!indice || !detalhe) return []
     const temaDe = new Map(indice.questoes.map(q => [q.id, q.t]))
-    const soma = new Map<number, { certas: number; erradas: number }>()
+    // Por tema: acerto real (primeira resposta) e depois da revisão (última resposta).
+    const soma = new Map<number, { certas: number; erradas: number; certasPrimeira: number; erradasPrimeira: number }>()
     for (const r of detalhe.respostas) {
       const t = temaDe.get(r.id); if (t === undefined || r.c === null) continue
-      const item = soma.get(t) ?? { certas: 0, erradas: 0 }
+      const item = soma.get(t) ?? { certas: 0, erradas: 0, certasPrimeira: 0, erradasPrimeira: 0 }
       if (r.c === 'true') item.certas++; else if (r.c === 'false') item.erradas++
+      const primeira = r.primeira ?? r.c
+      if (primeira === 'true') item.certasPrimeira++; else if (primeira === 'false') item.erradasPrimeira++
       soma.set(t, item)
     }
-    return [...soma].map(([t, v]) => ({ nome: indice.temas[t]?.nome ?? String(t), acerto: porcentagem(v.certas, v.certas + v.erradas) ?? 0, total: v.certas + v.erradas }))
+    return [...soma].map(([t, v]) => ({
+      nome: indice.temas[t]?.nome ?? String(t),
+      acerto: porcentagem(v.certasPrimeira, v.certasPrimeira + v.erradasPrimeira) ?? 0,
+      aposRevisao: porcentagem(v.certas, v.certas + v.erradas) ?? 0,
+      total: v.certas + v.erradas,
+    }))
       .sort((a, b) => b.total - a.total)
   }, [indice, detalhe])
 
@@ -76,7 +84,10 @@ export function AdminFichaUsuario({ usuario, aoFechar }: { usuario: LinhaUsuario
   }
 
   const nome = usuario.nome ?? usuario.email?.split('@')[0] ?? 'Sem nome'
-  const acertoGeral = porcentagem(usuario.acertos, usuario.acertos + usuario.erros)
+  const acertoPrimeira = acertoReal(usuario)
+  const acertoRevisao = acertoAposRevisao(usuario)
+  // A carta cita o acerto que a pessoa vê no Desempenho (todas as tentativas); sem a migração nova, o real ou o após revisão.
+  const acertoGeral = acertoPorTentativa(usuario) ?? acertoPrimeira ?? acertoRevisao
   const dadosModelo: DadosModelo = {
     respondidas: usuario.respondidas, acerto: acertoGeral, semana: usuario.respondidas_7d,
     diasParado: usuario.ultima_atividade ? Math.floor((Date.now() - new Date(usuario.ultima_atividade).getTime()) / 86_400_000) : null,
@@ -121,7 +132,9 @@ export function AdminFichaUsuario({ usuario, aoFechar }: { usuario: LinhaUsuario
 
         <dl className="adm-cartao__dados adm-ficha__numeros">
           <div><dt>Questões</dt><dd className="numerico">{usuario.respondidas.toLocaleString('pt-BR')}</dd></div>
-          <div><dt>Acerto</dt><dd>{acertoGeral === null ? '—' : `${acertoGeral}%`}</dd></div>
+          {acertoPrimeira !== null && <div><dt>Acerto real</dt><dd title="Na 1ª tentativa de cada questão">{acertoPrimeira}%</dd></div>}
+          <div><dt>{acertoPrimeira !== null ? 'Após revisão' : 'Acerto'}</dt><dd title="Última resposta de cada questão: erros acertados na revisão contam como acerto">{acertoRevisao === null ? '—' : `${acertoRevisao}%`}</dd></div>
+          {acertoPorTentativa(usuario) !== null && <div><dt>Por tentativa</dt><dd title="Todas as tentativas, como a pessoa vê no Desempenho">{acertoPorTentativa(usuario)}%</dd></div>}
           <div><dt>Na semana</dt><dd>{usuario.respondidas_7d}</dd></div>
           <div><dt>Favoritas</dt><dd>{detalhe.favoritas}</dd></div>
           <div><dt>Anotações</dt><dd>{detalhe.anotacoes}</dd></div>
@@ -181,8 +194,8 @@ export function AdminFichaUsuario({ usuario, aoFechar }: { usuario: LinhaUsuario
         </section>
 
         {porTema.length > 0 && <section className="empilha">
-          <h3 className="adm-subtitulo">Acerto por tema</h3>
-          <BarrasHorizontais maximo={100} formato={v => `${v}%`} itens={porTema.map(t => ({ rotulo: t.nome, valor: t.acerto, detalhe: `${t.total} questões`, destaque: t.total >= 10 ? (t.acerto < 55 ? 'ruim' : t.acerto >= 75 ? 'bom' : undefined) : undefined }))} />
+          <h3 className="adm-subtitulo">Acerto real por tema <small className="adm-nota">(1ª tentativa; ao lado, após revisão)</small></h3>
+          <BarrasHorizontais maximo={100} formato={v => `${v}%`} itens={porTema.map(t => ({ rotulo: t.nome, valor: t.acerto, detalhe: `${t.total} questões · ${t.aposRevisao}% após revisão`, destaque: t.total >= 10 ? (t.acerto < 55 ? 'ruim' : t.acerto >= 75 ? 'bom' : undefined) : undefined }))} />
         </section>}
 
         {detalhe.sessoes.length > 0 && <section className="empilha">

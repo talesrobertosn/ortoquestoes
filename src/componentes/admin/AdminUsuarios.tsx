@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { Icone } from '../Icone'
-import { PLANOS, baixarCsv, corresponde, data, haQuanto, normalizar, porcentagem } from './formatos'
+import { PLANOS, acertoAposRevisao, acertoReal, baixarCsv, corresponde, data, haQuanto, normalizar, somarAcertos } from './formatos'
 import { AdminFichaUsuario } from './AdminFichaUsuario'
 import { rotuloEtapa, rotuloProva } from '../../conta/perfilEstudo'
 
@@ -28,6 +28,11 @@ export interface LinhaUsuario {
   ano_residencia?: string | null
   /** Provas de interesse separadas por vírgula (taro,teot,mao,r4,atualizacao). */
   provas?: string | null
+  // Da migração 202610060400 em diante: primeira resposta e todas as tentativas.
+  acertos_primeira?: number | null
+  erros_primeira?: number | null
+  acertos_tentativas?: number | null
+  erros_tentativas?: number | null
 }
 
 export type FiltroUsuarios = 'todos' | 'online' | 'hoje' | 'ativos' | 'novos' | 'novos_parados' | 'assinantes' | 'parados'
@@ -55,7 +60,8 @@ const novoParado = (u: LinhaUsuario) => {
 }
 const passaFiltro = (u: LinhaUsuario, f: Filtro) => f === 'todos' || (f === 'online' && !!u.online) || (f === 'hoje' && ativoHoje(u)) || (f === 'ativos' && ativo7d(u))
   || (f === 'novos' && novo(u)) || (f === 'novos_parados' && novoParado(u)) || (f === 'assinantes' && !!u.plano_vigente) || (f === 'parados' && u.respondidas === 0)
-const acertoDe = (u: LinhaUsuario) => porcentagem(u.acertos, u.acertos + u.erros)
+/** O acerto que ordena e colore: o real (1ª tentativa) quando existe; senão, o após revisão. */
+const acertoDe = (u: LinhaUsuario) => acertoReal(u) ?? acertoAposRevisao(u)
 
 /**
  * Ranking privado: todas as contas (inclusive quem saiu do ranking público),
@@ -70,9 +76,8 @@ export function AdminUsuarios({ usuarios, filtroInicial = 'todos' }: { usuarios:
   const contagem = useMemo(() => Object.fromEntries(FILTROS.map(([f]) => [f, usuarios.filter(u => passaFiltro(u, f)).length])) as Record<Filtro, number>, [usuarios])
 
   const totais = useMemo(() => {
-    const acertos = usuarios.reduce((s, u) => s + u.acertos, 0)
-    const erros = usuarios.reduce((s, u) => s + u.erros, 0)
-    return { respondidas: usuarios.reduce((s, u) => s + u.respondidas, 0), acerto: porcentagem(acertos, acertos + erros) }
+    const soma = somarAcertos(usuarios)
+    return { respondidas: usuarios.reduce((s, u) => s + u.respondidas, 0), real: acertoReal(soma), revisao: acertoAposRevisao(soma) }
   }, [usuarios])
 
   const visiveis = useMemo(() => {
@@ -95,7 +100,7 @@ export function AdminUsuarios({ usuarios, filtroInicial = 'todos' }: { usuarios:
     <div className="adm-secao__cabeca">
       <div>
         <h2 id="adm-titulo-usuarios">Usuários</h2>
-        <p>Ranking privado de todas as contas, inclusive de quem não aparece no ranking público. Somadas, {totais.respondidas.toLocaleString('pt-BR')} questões respondidas{totais.acerto !== null && <>, com {totais.acerto}% de acerto geral</>}.</p>
+        <p>Ranking privado de todas as contas, inclusive de quem não aparece no ranking público. Somadas, {totais.respondidas.toLocaleString('pt-BR')} questões respondidas{totais.real !== null ? <>, com <strong>{totais.real}% de acerto real</strong> (na 1ª tentativa) e {totais.revisao}% depois da revisão</> : totais.revisao !== null && <>, com {totais.revisao}% de acerto depois da revisão</>}.</p>
       </div>
     </div>
 
@@ -109,12 +114,12 @@ export function AdminUsuarios({ usuarios, filtroInicial = 'todos' }: { usuarios:
       </select></label>
     </div>
     {filtro === 'novos_parados' && <p className="adm-nota adm-dica">Chegaram nas últimas semanas, fizeram menos de 10 questões e não voltaram nos últimos 2 dias. Abra a ficha e use um modelo de e-mail de retorno: um recado pessoal costuma trazer de volta.</p>}
-    {ordem === 'acerto' && <p className="adm-nota">Quem respondeu menos de {MINIMO_PARA_ACERTO} questões vai para o fim da lista: com poucas respostas o acerto ainda não diz muito.</p>}
+    {ordem === 'acerto' && <p className="adm-nota">Ordenado pelo acerto real (1ª tentativa). Quem respondeu menos de {MINIMO_PARA_ACERTO} questões vai para o fim da lista: com poucas respostas o acerto ainda não diz muito.</p>}
     <div className="adm-linha-nota">
       <p className="adm-nota" role="status">Mostrando {visiveis.length} de {usuarios.length} conta(s). Toque numa pessoa para abrir a ficha.</p>
       <button type="button" className="adm-link" onClick={() => baixarCsv(`ortoquestoes-usuarios-${new Date().toISOString().slice(0, 10)}.csv`,
-        ['Nome', 'E-mail', 'Etapa', 'Provas de interesse', 'Serviço', 'UF', 'Conta criada', 'Questões', 'Acerto (%)', 'Na semana', 'Última atividade', 'Plano'],
-        visiveis.map(u => [u.nome, u.email, u.situacao ? rotuloEtapa(u.situacao, u.ano_residencia) : '', (u.provas ?? '').split(',').filter(Boolean).map(rotuloProva).join(', '), u.servico, u.uf, data(u.criado_em), u.respondidas, acertoDe(u), u.respondidas_7d, u.ultima_atividade ? data(u.ultima_atividade) : '', u.plano_vigente ? PLANOS[u.plano_vigente] : '']))}>
+        ['Nome', 'E-mail', 'Etapa', 'Provas de interesse', 'Serviço', 'UF', 'Conta criada', 'Questões', 'Acerto real, 1ª tentativa (%)', 'Acerto após revisão (%)', 'Na semana', 'Última atividade', 'Plano'],
+        visiveis.map(u => [u.nome, u.email, u.situacao ? rotuloEtapa(u.situacao, u.ano_residencia) : '', (u.provas ?? '').split(',').filter(Boolean).map(rotuloProva).join(', '), u.servico, u.uf, data(u.criado_em), u.respondidas, acertoReal(u), acertoAposRevisao(u), u.respondidas_7d, u.ultima_atividade ? data(u.ultima_atividade) : '', u.plano_vigente ? PLANOS[u.plano_vigente] : '']))}>
         <Icone nome="baixar" tamanho={15} /> Exportar planilha
       </button>
     </div>
@@ -141,7 +146,8 @@ export function AdminUsuarios({ usuarios, filtroInicial = 'todos' }: { usuarios:
             <div className="adm-usuario__total"><strong className="numerico">{u.respondidas.toLocaleString('pt-BR')}</strong><span>questões</span></div>
             <div className="adm-barra" aria-hidden="true"><span style={{ width: `${(u.respondidas / maior) * 100}%` }} /></div>
             <dl className="adm-usuario__dados">
-              <div><dt>Acerto</dt><dd className={acerto === null ? '' : acerto >= 70 ? 'adm-bom' : acerto < 50 ? 'adm-ruim' : ''}>{acerto === null ? '—' : `${acerto}%`}</dd></div>
+              <div><dt>{acertoReal(u) !== null ? 'Acerto real' : 'Acerto'}</dt><dd className={acerto === null ? '' : acerto >= 70 ? 'adm-bom' : acerto < 50 ? 'adm-ruim' : ''} title={acertoReal(u) !== null ? 'Na 1ª tentativa de cada questão' : undefined}>{acerto === null ? '—' : `${acerto}%`}</dd></div>
+              {acertoReal(u) !== null && <div><dt>Após revisão</dt><dd title="Última resposta de cada questão: erros acertados na revisão contam como acerto">{acertoAposRevisao(u) === null ? '—' : `${acertoAposRevisao(u)}%`}</dd></div>}
               <div><dt>Na semana</dt><dd>{u.respondidas_7d}</dd></div>
               <div><dt>Última atividade</dt><dd title={u.ultima_atividade ? new Date(u.ultima_atividade).toLocaleString('pt-BR') : undefined}>{haQuanto(u.ultima_atividade)}</dd></div>
             </dl>
