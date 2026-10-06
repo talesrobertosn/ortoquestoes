@@ -3,6 +3,7 @@ import { Icone } from '../Icone'
 import { PLANOS, acertoAposRevisao, acertoReal, baixarCsv, corresponde, data, haQuanto, normalizar, somarAcertos } from './formatos'
 import { AdminFichaUsuario } from './AdminFichaUsuario'
 import { rotuloEtapa, rotuloProva } from '../../conta/perfilEstudo'
+import { servicoConhecido } from './servicosConhecidos'
 
 export interface LinhaUsuario {
   id_usuario: string
@@ -82,7 +83,7 @@ export function AdminUsuarios({ usuarios, filtroInicial = 'todos' }: { usuarios:
 
   const visiveis = useMemo(() => {
     const termo = normalizar(busca.trim())
-    const lista = usuarios.filter(u => passaFiltro(u, filtro) && corresponde([u.nome, u.email, u.servico, u.cidade], termo))
+    const lista = usuarios.filter(u => passaFiltro(u, filtro) && corresponde([u.nome, u.email, u.servico, servicoConhecido(u.servico, u.uf), u.cidade], termo))
     const tempo = (v: string | null) => v ? new Date(v).getTime() : 0
     const chave: Record<Ordem, (u: LinhaUsuario) => number> = {
       respondidas: u => u.respondidas,

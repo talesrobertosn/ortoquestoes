@@ -1,8 +1,9 @@
 import { useMemo, useState } from 'react'
 import { PROVAS, rotuloEtapa, rotuloProva } from '../../conta/perfilEstudo'
 import { BarrasHorizontais } from './AdminGraficos'
-import { baixarCsv, normalizar, porcentagem, acertoAposRevisao, acertoReal } from './formatos'
+import { baixarCsv, porcentagem, acertoAposRevisao, acertoReal } from './formatos'
 import type { LinhaUsuario } from './AdminUsuarios'
+import { chaveServico, servicoConhecido } from './servicosConhecidos'
 
 /** Ordem fixa das etapas nas tabelas: da formação para o título. */
 const ORDEM_ETAPAS = ['R1', 'R2', 'R3', 'Residente (ano não informado)', 'R4 / fellowship', 'Residente de mão', 'Ortopedista', 'Estudante', 'Outro', 'Não informado']
@@ -60,11 +61,19 @@ export function AdminPerfis({ usuarios }: { usuarios: LinhaUsuario[] }) {
       porProva: PROVAS.map(([valor]) => base.filter(u => etapaDe(u) === e.rotulo && provasDe(u).includes(valor)).length),
     }))
     const ufs = agrupar(base.filter(u => u.uf), u => [u.uf!]).sort((a, b) => b.contas - a.contas)
-    const servicos = agrupar(base.filter(u => u.servico), u => [normalizar(u.servico!).replace(/\s+/g, ' ').trim()]).sort((a, b) => b.contas - a.contas)
-    const nomeServico = new Map(base.filter(u => u.servico).map(u => [normalizar(u.servico!).replace(/\s+/g, ' ').trim(), u.servico!.trim()]))
+    // Siglas e apelidos conhecidos (HAC, HUC, INTO…) entram no nome completo; o resto, pelo texto escrito.
+    const comServico = base.filter(u => u.servico)
+    const servicos = agrupar(comServico, u => [chaveServico(u.servico!, u.uf)]).sort((a, b) => b.contas - a.contas)
+    const nomeServico = new Map<string, string>()
+    const escritas = new Map<string, Set<string>>()
+    for (const u of comServico) {
+      const chave = chaveServico(u.servico!, u.uf)
+      nomeServico.set(chave, servicoConhecido(u.servico, u.uf) ?? u.servico!.trim())
+      escritas.set(chave, (escritas.get(chave) ?? new Set()).add(u.servico!.trim()))
+    }
     const informaram = base.filter(u => u.situacao).length
     const completos = base.filter(u => u.situacao && (u.situacao !== 'residente' || u.ano_residencia) && provasDe(u).length).length
-    return { base, etapas, provas, comProva: comProva.length, cruzamento, ufs, servicos, nomeServico, informaram, completos }
+    return { base, etapas, provas, comProva: comProva.length, cruzamento, ufs, servicos, nomeServico, escritas, informaram, completos }
   }, [usuarios, criterio])
 
   const total = d.base.length
@@ -140,7 +149,7 @@ export function AdminPerfis({ usuarios }: { usuarios: LinhaUsuario[] }) {
       <div className="adm-tabela-rolagem" role="region" aria-label="Serviços" tabIndex={0}><table className="tabela adm-retencao">
         <thead><tr><th scope="col">Serviço</th><th scope="col">Contas</th><th scope="col">Ativos 7 d</th><th scope="col">Questões/conta</th><th scope="col">Acerto real</th><th scope="col">Após revisão</th><th scope="col">Assinantes</th></tr></thead>
         <tbody>{d.servicos.slice(0, 15).map(s => <tr key={s.rotulo}>
-          <th scope="row">{d.nomeServico.get(s.rotulo)}</th><td className="numerico">{s.contas}</td><td className="numerico">{s.ativos7d}</td>
+          <th scope="row" className="adm-servico">{d.nomeServico.get(s.rotulo)}{(() => { const outras = [...(d.escritas.get(s.rotulo) ?? [])].filter(e => e !== d.nomeServico.get(s.rotulo)); return outras.length > 0 && <small className="adm-servico__escrito">escrito como {outras.join(', ')}</small> })()}</th><td className="numerico">{s.contas}</td><td className="numerico">{s.ativos7d}</td>
           <td className="numerico">{media(s.respondidas, s.contas)}</td><td className="numerico">{acertoReal(s) ?? '—'}{acertoReal(s) !== null ? '%' : ''}</td><td className="numerico">{acertoAposRevisao(s) ?? '—'}{acertoAposRevisao(s) !== null ? '%' : ''}</td><td className="numerico">{s.assinantes}</td>
         </tr>)}</tbody>
       </table></div>
