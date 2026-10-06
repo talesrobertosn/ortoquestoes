@@ -42,35 +42,35 @@ const Ligas = lazy(() => import('./paginas/Ligas').then(({ Ligas }) => ({ defaul
 const AdminAssinaturas = lazy(() => import('./paginas/AdminAssinaturas').then(({ AdminAssinaturas }) => ({ default: AdminAssinaturas })))
 
 const TITULOS: Record<string, string> = {
-  '/': 'OrtoQuestões — banco de questões de ortopedia e traumatologia',
-  '/treinar': 'Montar sessão — OrtoQuestões',
-  '/sessao': 'Respondendo — OrtoQuestões',
-  '/resumo': 'Resumo da sessão — OrtoQuestões',
-  '/sobre': 'O projeto — OrtoQuestões: questões de ortopedia comentadas',
-  '/projeto': 'O projeto — OrtoQuestões: questões de ortopedia comentadas',
-  '/contato': 'Suporte e contato — OrtoQuestões',
-  '/conta': 'Minha conta — OrtoQuestões',
-  '/conta/assinatura': 'Dados da assinatura — OrtoQuestões',
-  '/dados': 'Seu desempenho — OrtoQuestões',
-  '/favoritas': 'Suas favoritas — OrtoQuestões',
-  '/erros': 'Caderno de erros — OrtoQuestões',
-  '/progresso': 'Progresso dos comentários — OrtoQuestões',
-  '/revisao': 'Sua revisão — OrtoQuestões',
-  '/ranking': 'Ranking — OrtoQuestões',
-  '/conquistas': 'Conquistas — OrtoQuestões',
-  '/termos': 'Termos de Uso e Privacidade — OrtoQuestões',
-  '/condicoes-assinatura': 'Condições da assinatura — OrtoQuestões',
-  '/assinatura': 'Planos — OrtoQuestões',
-  '/admin': 'Painel do administrador — OrtoQuestões',
-  '/admin/assinaturas': 'Painel do administrador — OrtoQuestões',
-  '/entrar': 'Entrar ou criar conta — OrtoQuestões',
-  '/emails': 'E-mails de conquistas — OrtoQuestões',
-  '/simulado-nacional': 'Simulado Nacional — OrtoQuestões',
-  '/plano-de-estudo': 'Cronograma — OrtoQuestões',
-  '/cronograma': 'Cronograma — OrtoQuestões',
-  '/ligas': 'Liga da residência — OrtoQuestões',
-  '/indicar': 'Indique e ganhe — OrtoQuestões',
-  '/temas-que-mais-caem': 'Temas que mais caem — OrtoQuestões',
+  '/': 'Orto Questões (OrtoQuestões): banco de questões de ortopedia e traumatologia',
+  '/treinar': 'Montar sessão | Orto Questões',
+  '/sessao': 'Respondendo | Orto Questões',
+  '/resumo': 'Resumo da sessão | Orto Questões',
+  '/sobre': 'O projeto | Orto Questões (OrtoQuestões): questões de ortopedia comentadas',
+  '/projeto': 'O projeto | Orto Questões (OrtoQuestões): questões de ortopedia comentadas',
+  '/contato': 'Suporte e contato | Orto Questões',
+  '/conta': 'Minha conta | Orto Questões',
+  '/conta/assinatura': 'Dados da assinatura | Orto Questões',
+  '/dados': 'Seu desempenho | Orto Questões',
+  '/favoritas': 'Suas favoritas | Orto Questões',
+  '/erros': 'Caderno de erros | Orto Questões',
+  '/progresso': 'Progresso dos comentários | Orto Questões',
+  '/revisao': 'Sua revisão | Orto Questões',
+  '/ranking': 'Ranking | Orto Questões',
+  '/conquistas': 'Conquistas | Orto Questões',
+  '/termos': 'Termos de Uso e Privacidade | Orto Questões',
+  '/condicoes-assinatura': 'Condições da assinatura | Orto Questões',
+  '/assinatura': 'Planos | Orto Questões',
+  '/admin': 'Painel do administrador | Orto Questões',
+  '/admin/assinaturas': 'Painel do administrador | Orto Questões',
+  '/entrar': 'Entrar ou criar conta | Orto Questões',
+  '/emails': 'E-mails de conquistas | Orto Questões',
+  '/simulado-nacional': 'Simulado Nacional | Orto Questões',
+  '/plano-de-estudo': 'Cronograma | Orto Questões',
+  '/cronograma': 'Cronograma | Orto Questões',
+  '/ligas': 'Liga da residência | Orto Questões',
+  '/indicar': 'Indique e ganhe | Orto Questões',
+  '/temas-que-mais-caem': 'Temas que mais caem | Orto Questões',
 }
 
 export function App() {
@@ -84,7 +84,7 @@ export function App() {
     document.title =
       TITULOS[rota.caminho] ??
       (primeiro === 'questao' && segundo
-        ? `Questão ${segundo} — OrtoQuestões`
+        ? `Questão ${segundo} | Orto Questões`
         : `${SITE.nome}`)
   }, [rota.caminho, primeiro, segundo])
 

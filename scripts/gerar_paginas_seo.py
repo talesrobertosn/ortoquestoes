@@ -205,7 +205,7 @@ def topo(titulo: str, descricao: str, caminho: str, extra: str = "", raiz: str =
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="pt_BR">
-<meta property="og:site_name" content="OrtoQuestões">
+<meta property="og:site_name" content="Orto Questões">
 <meta property="og:title" content="{html.escape(titulo, quote=True)}">
 <meta property="og:description" content="{html.escape(descricao, quote=True)}">
 <meta property="og:url" content="{SITE}{caminho}">
@@ -236,7 +236,7 @@ def rodape(raiz: str = "../") -> str:
     return f"""</main>
 <footer class="envoltorio">
   <p class="meta">
-    <strong>OrtoQuestões</strong>: banco de questões de ortopedia e traumatologia para TEOT, TARO e
+    <strong>Orto Questões</strong> (OrtoQuestões): banco de questões de ortopedia e traumatologia para TEOT, TARO e
     ENARE R4. As questões são transcritas das provas originais e o gabarito é o da própria banca;
     as marcadas como OrtoQuestões Simulados são questões autorais do site, elaboradas a partir da
     bibliografia de referência e inspiradas no padrão da prova indicada, sem caráter oficial nem
@@ -318,7 +318,7 @@ def pagina_questao(questao: dict, comentario: dict, tema: dict, anterior: dict |
     slug = tema["slug"]
     subtema = (questao.get("subtemas") or [tema["nome"]])[0]
     origem = origem_da_questao(questao)
-    titulo = resumir(f"{subtema}: {questao['enunciado']}", 64) + " | Questão comentada"
+    titulo = resumir(f"{subtema}: {questao['enunciado']}", 64) + " | Questão comentada | Orto Questões"
     descricao = resumir(
         f"Questão de {tema['nome'].lower()}{' (' + origem + ')' if origem else ''} com gabarito e conceito-chave: {questao['enunciado']}",
         158,
@@ -445,7 +445,7 @@ def principal() -> int:
         # Vitrine: as primeiras questões completas, sem figura, na página do assunto.
         vitrine = [q for q in publicaveis if not q.get("imagens")][:POR_PAGINA] if PAGINAS_DE_QUESTAO else []
         itens = [(q, comentarios[q["id"]]) for q in vitrine]
-        titulo = f"{titulo_pagina} comentadas | OrtoQuestões"
+        titulo = f"{titulo_pagina} comentadas | Orto Questões"
         caminho = f"questoes/{slug}.html"
 
         corpo = [topo(titulo, resumo, caminho, dados_estruturados(itens) if itens else "")]
@@ -516,7 +516,7 @@ def principal() -> int:
         gerados.append((slug, tema["nome"], len(publicaveis), len(dados["questoes"])))
 
     # Índice das páginas por assunto.
-    titulo = "Banco de questões de ortopedia comentadas por assunto | OrtoQuestões"
+    titulo = "Banco de questões de ortopedia comentadas por assunto | Orto Questões (OrtoQuestões)"
     resumo = (
         "Banco de questões de ortopedia e traumatologia: provas anteriores de TEOT, TARO e ENARE R4 "
         "comentadas e organizadas por assunto, com gabarito e conceito-chave."
