@@ -1886,7 +1886,12 @@ kbd {
 .botao-google__ou::before, .botao-google__ou::after { content: ""; flex: 1; height: 1px; background: var(--traco); }
 
 /* Etapa de formação e provas de interesse (cadastro, perfil e aviso único). */
-.campos-etapa { display: grid; gap: 0.9rem; }
+/* Fundo dourado bem suave para chamar a atenção para a etapa e a prova, sem gritar. */
+.campos-etapa {
+  display: grid; gap: 0.9rem; padding: 0.9rem 1rem;
+  background: var(--ouro-veu); border: 1px solid color-mix(in srgb, var(--ouro) 28%, transparent);
+  border-radius: var(--raio-controle);
+}
 .campos-etapa__provas { border: 0; padding: 0; margin: 0; display: grid; gap: 0.5rem; min-width: 0; }
 .campos-etapa__provas legend { font-weight: 600; padding: 0; margin-bottom: 0.5rem; }
 .campos-etapa__opcoes { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr)); gap: 0.5rem; }
