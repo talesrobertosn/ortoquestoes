@@ -7,6 +7,10 @@ import { AREAS, focoPorQuestao, idsDoFoco, pesoIncidenciaDoTema, posicaoDaArea, 
  * semana antes da prova fica reservada para a reta final (erros e simulado).
  * Os temas que mais caem na prova ganham mais espaço e vêm antes, e dentro de
  * cada tema o dia começa pelos assuntos mais cobrados.
+ *
+ * Entram as questões de Ortopedia, inclusive os OrtoQuestões Simulados de
+ * TEOT e TARO. Ficam de fora as áreas à parte (campo `ar`: Fellowship
+ * Quadril, R4, mão), as duplicatas e as anuladas.
  */
 
 export type Intensidade = 'leve' | 'firme' | 'completo'
@@ -83,7 +87,7 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
   const porTema = new Map<number, { faltam: number; certas: number; erradas: number; respondidas: number }>()
   let elegiveis = 0, respondidasNoAcervo = 0
   for (const q of indice.questoes) {
-    if (q.dup || q.ar || q.sim === 1 || q.an === 1) continue
+    if (q.dup || q.ar || q.an === 1) continue
     elegiveis++
     const t = porTema.get(q.t) ?? { faltam: 0, certas: 0, erradas: 0, respondidas: 0 }
     const r = respondidas[q.id]
@@ -115,7 +119,7 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
   // Primeira resposta de hoje (não conta revisão de questão já vista).
   // Só o que entra no cronograma: cirurgia da mão, cópias e anuladas não contam.
   const feitasHoje = indice.questoes.filter((q) => {
-    if (q.dup || q.ar || q.sim === 1 || q.an === 1) return false
+    if (q.dup || q.ar || q.an === 1) return false
     const r = respondidas[q.id]
     const primeira = r?.historico?.[0]?.em ?? r?.q
     return primeira !== undefined && primeira >= hoje.getTime()
@@ -151,7 +155,7 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
   const livresPorTema = new Map<string, string[]>()
   const usadasPorTema = new Map<string, number>()
   for (const q of indice.questoes) {
-    if (q.dup || q.ar || q.sim === 1 || q.an === 1 || respondidas[q.id]) continue
+    if (q.dup || q.ar || q.an === 1 || respondidas[q.id]) continue
     const slug = indice.temas[q.t]?.slug ?? String(q.t)
     const lista = livresPorTema.get(slug) ?? []
     lista.push(q.id)
@@ -219,7 +223,7 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
 
 /** Linha de base do plano: questões do acervo (sem cópias nem anuladas) já respondidas. */
 export function respondidasNoAcervo(indice: Indice, respondidas: Record<string, unknown>): number {
-  return indice.questoes.filter((q) => !q.dup && !q.ar && q.sim !== 1 && q.an !== 1 && respondidas[q.id]).length
+  return indice.questoes.filter((q) => !q.dup && !q.ar && q.an !== 1 && respondidas[q.id]).length
 }
 
 /** Meta diária que um plano novo teria, para mostrar ao escolher a intensidade. */
@@ -278,6 +282,6 @@ function ordemDoTema(indice: Indice, livres: string[]): string[] {
 export function idsDoDia(indice: Indice, slug: string, respondidas: Record<string, unknown>, n: number): string[] {
   const tema = indice.temas.findIndex((t) => t.slug === slug)
   if (tema < 0) return []
-  const livres = indice.questoes.filter((q) => q.t === tema && !q.dup && !q.ar && q.sim !== 1 && q.an !== 1 && !respondidas[q.id]).map((q) => q.id)
+  const livres = indice.questoes.filter((q) => q.t === tema && !q.dup && !q.ar && q.an !== 1 && !respondidas[q.id]).map((q) => q.id)
   return ordemDoTema(indice, livres).slice(0, Math.max(0, n))
 }

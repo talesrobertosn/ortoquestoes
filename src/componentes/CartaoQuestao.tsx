@@ -346,9 +346,9 @@ export function CartaoQuestao({
 
         {questao.simulado && (
           <p className="meta origem-questao">
-            <strong>{ROTULO_SIMULADOS}</strong>: questão autoral do site, elaborada a partir da bibliografia
-            de referência e inspirada no padrão da prova{questao.prova ? ` ${questao.prova}` : ''}. Não é questão
-            oficial da prova nem foi elaborada, revisada ou endossada pela instituição organizadora.
+            <strong>{ROTULO_SIMULADOS}</strong>: questão autoral do site, feita por engenharia reversa do padrão
+            da prova{questao.prova ? ` ${questao.prova}` : ''} a partir da bibliografia de referência, para o aprendizado.
+            Não é questão oficial da prova nem foi elaborada, revisada ou endossada pela instituição organizadora.
           </p>
         )}
         <div className="questao__enunciado"><TextoEmLinha texto={questao.enunciado} /></div>
