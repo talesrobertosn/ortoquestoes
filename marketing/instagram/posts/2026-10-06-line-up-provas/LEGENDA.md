@@ -20,9 +20,11 @@ A prova está chegando. E o line-up do seu treino já saiu.
 
 TEOT e TARO no palco principal, edição por edição: o TARO de 2006 a 2026 e o TEOT de 2021 a 2025, organizados por tema. Cirurgia da mão com as questões de cirurgia plástica junto. Fellowship Quadril, Ombro e Cotovelo, ENARE R4 e R4 Coluna para quem já pensa na próxima prova.
 
-Cada questão é uma aula: a certa e cada errada com o porquê. O que você erra volta na revisão, e o Cronograma monta o estudo até o dia da prova.
+Cada questão é uma aula: a certa e cada errada com o porquê. O que você erra volta na revisão.
 
-A conta é grátis e libera questões todos os dias. Sem limite, nos planos.
+E o Cronograma monta o seu estudo semana a semana até o dia da prova, começando pelos temas que mais caem.
+
+Crie sua conta e treine grátis todos os dias. Sem limite, nos planos.
 
 ortoquestoes.com.br. Link na bio.
 
@@ -32,8 +34,8 @@ Marque quem vai dividir o palco com você em janeiro.
 
 ## Texto do anúncio (Gerenciador de Anúncios)
 
-- Texto principal: "A prova está chegando. TEOT, TARO, cirurgia da mão com plástica, Fellowship Quadril, Ombro e Cotovelo, ENARE R4 e R4 Coluna: provas oficiais comentadas, alternativa por alternativa. Crie a sua conta grátis e treine todos os dias."
-- Título: "O line-up do seu treino até a prova"
+- Texto principal: "A prova está chegando. TEOT, TARO, cirurgia da mão com plástica, Fellowship Quadril, Ombro e Cotovelo, ENARE R4 e R4 Coluna: provas oficiais comentadas, alternativa por alternativa. O Cronograma monta o seu estudo até o dia da prova. Crie sua conta e treine grátis todos os dias."
+- Título: "Crie sua conta e treine grátis todos os dias"
 - Botão: "Saiba mais" (ou "Cadastre-se"), destino ortoquestoes.com.br
 
 ## Stories

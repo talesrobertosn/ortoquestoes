@@ -71,7 +71,12 @@ em { font-style: normal; color: var(--ouro); }
 .contagem .txt { padding: 20px 30px; display: flex; flex-direction: column; justify-content: center; gap: 6px; text-align: left; }
 .contagem .txt b { font: 800 34px/1.1 Jakarta; letter-spacing: -.03em; }
 .contagem .txt span { font: 500 24px/1.3 Inter; color: #3E4A48; }
-.capa-base { position: absolute; left: 72px; right: 72px; bottom: 86px; z-index: 6; }
+.capa-base { position: absolute; left: 72px; right: 72px; bottom: 44px; z-index: 6; }
+.cta { display: flex; align-items: center; justify-content: center; gap: 14px; margin-top: 14px; font: 800 33px Jakarta; letter-spacing: -.02em; color: var(--noite); background: linear-gradient(180deg, #FBE0A0, var(--ouro)); padding: 20px 26px; border-radius: 18px; box-shadow: 0 18px 46px rgba(244,207,124,.38); }
+.cta svg { width: 30px; height: 30px; flex: 0 0 auto; }
+.contagem .txt span b { font: inherit; font-weight: 700; letter-spacing: 0; color: #12181A; }
+.funcao.destaque { background: rgba(244,207,124,.14); border-color: rgba(244,207,124,.6); }
+.funcao.destaque b { color: var(--ouro); }
 
 /* ---------- palcos ---------- */
 .palco-etq { display: inline-flex; align-items: center; gap: 14px; font: 800 24px Jakarta; letter-spacing: .22em; text-transform: uppercase; color: var(--ouro); }
@@ -175,7 +180,8 @@ h2.menor { font-size: 88px; }
   </div>
   <div class="capa-base">
     <div class="contagem"><div class="num"><strong data-faltam>96</strong><span>dias</span></div>
-      <div class="txt"><b>para a prova teórica do TEOT.</b><span>Provas oficiais comentadas, alternativa por alternativa. Arraste e veja o line-up.</span></div></div>
+      <div class="txt"><b>para a prova teórica do TEOT.</b><span>O <b>Cronograma</b> monta o seu estudo, semana a semana, até o dia da prova.</span></div></div>
+    <div class="cta">Crie sua conta e treine grátis todos os dias<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
   </div>
 </section>
 
@@ -250,7 +256,7 @@ h2.menor { font-size: 88px; }
     <div class="funcoes">
       <div class="funcao"><b>Cada alternativa</b><span>a certa e cada errada, com o porquê</span></div>
       <div class="funcao"><b>Revisão</b><span>o que você erra volta no dia certo</span></div>
-      <div class="funcao"><b>Cronograma</b><span>o estudo montado até a prova</span></div>
+      <div class="funcao destaque"><b>Cronograma</b><span>o estudo montado até a prova</span></div>
       <div class="funcao"><b>Desempenho</b><span>por tema, onde gastar o tempo</span></div>
       <div class="funcao"><b>Caderno de erros</b><span>os seus erros num lugar só</span></div>
       <div class="funcao"><b>Ranking</b><span>da semana e da sua residência</span></div>
@@ -263,13 +269,14 @@ h2.menor { font-size: 88px; }
   <div class="conteudo">
     <div class="topo"><div class="palco-etq"><span class="n">5</span>Seu ingresso</div><div class="marca" data-marca><b>Orto</b><span>Questões</span></div></div>
     <h2>O show é<br><em>em janeiro.</em></h2>
-    <p class="sub" style="margin-top:26px">O ensaio <b>começa hoje</b>. Quem treina todo dia chega à prova conhecendo o repertório da banca.</p>
+    <p class="sub" style="margin-top:26px">O ensaio <b>começa hoje</b>: crie sua conta e treine grátis todos os dias. O <b>Cronograma</b> monta o repertório até a prova.</p>
     <div class="ingresso">
       <div class="corpo">
         <div class="t1">Line-up 2027 · Orto Questões</div>
         <h3>Acesso ao<br><em>treino.</em></h3>
         <dl>
-          <dt>Entrada</dt><dd><b>Conta grátis</b>, com questões liberadas todos os dias</dd>
+          <dt>Entrada</dt><dd><b>Crie sua conta</b> e treine grátis todos os dias</dd>
+          <dt>Cronograma</dt><dd>O estudo montado <b>semana a semana</b> até 10/01</dd>
           <dt>Sem limite</dt><dd>Nos planos, com <b>7 dias de garantia</b></dd>
           <dt>Onde</dt><dd><b>ortoquestoes.com.br</b>, no celular ou no computador</dd>
         </dl>
@@ -277,12 +284,12 @@ h2.menor { font-size: 88px; }
       </div>
       <div class="canhoto"><strong data-faltam>96</strong><span>dias<small>até a prova teórica do TEOT, 10/01/2027</small></span></div>
     </div>
-    <div style="text-align:center"><div class="botao">Link na bio<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div>
+    <div style="text-align:center"><div class="botao">Crie sua conta: link na bio<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div>
   </div>
 </section>
 
 <!-- STORY 1: o cartaz em pé (topo e base livres para o selo do anúncio e a figurinha) -->
-<section id="s1" class="story" data-palco data-plateia="420">
+<section id="s1" class="story" data-palco data-plateia="300">
   <div class="conteudo">
     <div class="topo"><div class="marca" data-marca><b>Orto</b><span>Questões</span></div><div class="pilula">Line-up 2027</div></div>
     <div class="cartaz">
@@ -293,8 +300,9 @@ h2.menor { font-size: 88px; }
       <div class="mais">com cirurgia plástica</div>
       <div class="tier3" style="margin-top:40px">FELLOWSHIP QUADRIL<br>ENARE R4<i class="estrela"></i>R4 COLUNA<br>OMBRO E COTOVELO</div>
       <div class="tier4">e as provas de mão de<br><b>INTO, PUC-SP, UFG, IAUPE, FMRP-USP e UERJ</b></div>
-      <div class="contagem" style="margin-top:56px"><div class="num"><strong data-faltam>96</strong><span>dias</span></div>
-        <div class="txt"><b>para a prova teórica do TEOT.</b><span>Provas oficiais comentadas, alternativa por alternativa.</span></div></div>
+      <div class="contagem" style="margin-top:44px"><div class="num"><strong data-faltam>96</strong><span>dias</span></div>
+        <div class="txt"><b>para a prova teórica do TEOT.</b><span>O <b>Cronograma</b> monta o seu estudo até lá.</span></div></div>
+      <div class="cta" style="width:100%;margin-top:16px">Crie sua conta e treine grátis todos os dias<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
     </div>
   </div>
 </section>
@@ -310,7 +318,8 @@ h2.menor { font-size: 88px; }
       <div class="cartao"><div class="tag">Palco R4 e fellowship</div><h4>Quadril, ombro, ENARE, coluna</h4><p><b>Fellowship Quadril</b> em simulados autorais, <b>TECOC</b>, <b>ENARE R4</b> e <b>R4&nbsp;Coluna</b>.</p></div>
     </div>
     <div class="contagem" style="margin-top:34px"><div class="num"><strong data-faltam>96</strong><span>dias</span></div>
-      <div class="txt"><b>Conta grátis, com questões todos os dias.</b><span>Sem limite nos planos. ortoquestoes.com.br</span></div></div>
+      <div class="txt"><b>até a prova teórica do TEOT.</b><span>O <b>Cronograma</b> monta o seu estudo, semana a semana.</span></div></div>
+    <div class="cta">Crie sua conta e treine grátis todos os dias<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
   </div>
 </section>
 
