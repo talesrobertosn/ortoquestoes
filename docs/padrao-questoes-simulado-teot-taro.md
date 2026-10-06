@@ -62,9 +62,25 @@ milímetros, porcentagens, prazos) são frequentes.
 
 ## Comentário
 
-Segue `docs/padrao-editorial-comentarios.md` (aula completa, cada alternativa comentada), sempre
-apoiado no capítulo, com a referência do livro, capítulo e página ("Segundo o Rockwood, capítulo X,
-página Y..."). O conteúdo vem do texto enviado; o que não estiver nele não entra como afirmação.
+Diretriz do dono do projeto (06/10/2026): cada questão de OrtoQuestões Simulados deve funcionar como
+**ler o livro**. O comentário é uma aula independente do trecho do capítulo, no padrão enriquecido
+de `docs/padrao-editorial-comentarios.md` e da referência `docs/exemplos/mao-0853.json`. Vale para
+toda questão de simulado feita a partir de agora.
+
+- **Conceito:** ensina o trecho do capítulo do zero: definições, mecanismo, números do livro com o
+  contexto de cada um, exemplos e figuras citadas, ligação com outros pontos do mesmo capítulo e a
+  armadilha da prova. Parágrafos de texto que conectam as ideias; tabela ou lista só quando
+  comparam ou ordenam de fato. Na escala da referência (em geral 5 a 8 mil caracteres no total).
+- **Cada alternativa, inclusive a correta:** parágrafo próprio com o que a afirmação significa, o
+  mecanismo que a sustenta ou derruba, onde aquele dado aparece no livro (o distrator costuma ser
+  um número ou conceito verdadeiro de outro contexto) e como diferenciar.
+- **Não fazer:** comentário curto em tópicos, frases telegráficas ("Errada. O número importa
+  menos."), marca-texto (`==...==`) espalhado. A primeira versão do Rockwood capítulo 1 foi
+  recusada por isso e reescrita.
+- Sempre apoiado no capítulo, com a referência do livro, capítulo, seção e figura ou tabela (e a
+  página quando o material enviado tiver a numeração impressa). O conteúdo vem do texto enviado;
+  o que não estiver nele não entra como afirmação, salvo conta direta de um princípio do próprio
+  capítulo (por exemplo, a quarta potência do diâmetro), apresentada como tal.
 
 ## No acervo
 
