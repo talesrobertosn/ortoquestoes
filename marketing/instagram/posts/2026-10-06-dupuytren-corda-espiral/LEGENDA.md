@@ -1,15 +1,15 @@
 # Post: Dupuytren, a corda espiral (cirurgia da mão)
 
 Post de 6/10/2026. Carrossel de 3 slides (1080×1350) e 1 story (1080×1920), sem figurinha.
-Questão TARO 2022 (mao-0113) com a imagem original da prova; os cortes do dedo são esquemas
-próprios em SVG ("Esquema ilustrativo").
+Questão TARO 2022 (mao-0113). A única imagem é a original da prova: sem esquemas desenhados,
+para manter a precisão anatômica.
 
 ```
 node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-06-dupuytren-corda-espiral/post.html
 ```
 
-Ordem: feed-01 questão, feed-02 resposta (corte do dedo, Grayson e Cleland), feed-03 a armadilha
-cirúrgica (o nervo muda de lugar) e chamada. Story: story-01, com a resposta já marcada.
+Ordem: feed-01 questão, feed-02 resposta (imagem da questão, Grayson e Cleland), feed-03 a armadilha
+cirúrgica (o nervo muda de lugar, três passos) e chamada. Story: story-01, com a resposta já marcada.
 
 ## Legenda do feed
 
