@@ -383,34 +383,22 @@
   margin-top: 0.85rem; padding: 1rem 1.1rem 1.1rem;
   border-radius: var(--raio-cartao); background: var(--superficie-2); border: var(--borda);
 }
-.tu-cabeca { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; }
-.tu-titulo { display: inline-flex; align-items: center; gap: 0.45rem; margin: 0; font-weight: 750; font-size: var(--corpo-menor); color: var(--texto-2); text-transform: uppercase; letter-spacing: 0.04em; }
-.tu-manchete { margin: 0.55rem 0 0.1rem; font-size: 1.15rem; font-weight: 750; letter-spacing: -0.01em; }
-.tu-sub { margin: 0 0 0.8rem; color: var(--texto-2); font-size: var(--meta); }
-.tu-vazio { margin: 0.5rem 0 0; color: var(--texto-2); font-size: var(--corpo-menor); }
-.tu-barras { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.45rem; }
-.tu-barra { display: grid; grid-template-columns: 1.9rem minmax(0, 1fr) 3rem; grid-template-areas: "letra trilho valor" ". marcas marcas"; align-items: center; column-gap: 0.6rem; }
-.tu-barra__letra {
-  grid-area: letra; display: inline-flex; align-items: center; justify-content: center;
-  width: 1.9rem; height: 1.9rem; border-radius: 50%; background: var(--superficie); border: var(--borda); font-weight: 800; font-size: 0.85rem;
-}
-.tu-barra__trilho { grid-area: trilho; height: 0.8rem; border-radius: 999px; background: color-mix(in srgb, var(--traco) 70%, transparent); overflow: hidden; }
-.tu-barra__cheio { display: block; height: 100%; border-radius: 999px; background: var(--traco-forte); transition: width 0.6s cubic-bezier(.2, .8, .2, 1); }
-.tu-barra__valor { grid-area: valor; text-align: right; font-weight: 750; font-size: var(--corpo-menor); }
-.tu-barra__marcas { grid-area: marcas; display: flex; gap: 0.35rem; }
-.tu-barra__marcas:empty { display: none; }
-.tu-marca { font-style: normal; font-size: 0.7rem; font-weight: 750; padding: 0.05rem 0.45rem; border-radius: 999px; background: var(--superficie); border: var(--borda); color: var(--texto-2); }
-.tu-marca--certa { background: var(--acerto-veu); border-color: color-mix(in srgb, var(--acerto) 35%, transparent); color: var(--acerto); }
-.tu-marca--pegadinha { background: var(--aviso-veu); border-color: color-mix(in srgb, var(--aviso) 35%, transparent); color: var(--aviso); }
-.tu-barra--certa .tu-barra__cheio { background: var(--acerto); }
-.tu-barra--certa .tu-barra__letra { background: var(--acerto); border-color: var(--acerto); color: #fff; }
-.tu-barra--pegadinha .tu-barra__cheio { background: var(--aviso); }
+.alt-turma { display: grid; grid-template-columns: minmax(3rem, 9rem) auto; align-items: center; gap: 0.5rem; margin-top: 0.35rem; }
+.alt-turma__trilho { display: block; height: 0.4rem; border-radius: 999px; background: color-mix(in srgb, var(--traco) 70%, transparent); overflow: hidden; }
+.alt-turma__trilho span { display: block; height: 100%; border-radius: 999px; background: var(--traco-forte); transition: width 0.6s cubic-bezier(.2, .8, .2, 1); }
+.alt-turma__valor { font-size: var(--meta); font-weight: 650; color: var(--texto-2); }
+.alt-turma--certa .alt-turma__trilho span { background: var(--acerto); }
+.alt-turma--certa .alt-turma__valor { color: var(--acerto); }
+.alt-turma--pegadinha .alt-turma__trilho span { background: var(--aviso); }
+.alt-turma--pegadinha .alt-turma__valor { color: var(--aviso); }
+.alt-turma-resumo { display: flex; align-items: center; gap: 0.4rem; margin: 0.6rem 0 0; color: var(--texto-2); font-size: var(--meta); }
 .tu--bloqueado { position: relative; overflow: hidden; min-height: 9.5rem; }
-.tu-previa { display: grid; gap: 0.55rem; filter: blur(5px); opacity: 0.55; pointer-events: none; }
+/* A prévia borrada fica atrás; o texto define a altura do cartão. */
+.tu-previa { position: absolute; inset: 1rem 1.1rem; display: grid; align-content: center; gap: 0.55rem; filter: blur(5px); opacity: 0.55; pointer-events: none; }
 .tu-previa__barra { display: flex; align-items: center; height: 1.1rem; min-width: 2.2rem; border-radius: 999px; background: var(--traco-forte); padding-left: 0.4rem; font-size: 0.7rem; color: var(--texto); }
 .tu-previa__barra:first-child { background: var(--acerto); color: #fff; }
 .tu-bloqueio {
-  position: absolute; inset: 0; display: grid; align-content: center; justify-items: start; gap: 0.45rem;
+  position: relative; margin: -1rem -1.1rem -1.1rem; min-height: 9.5rem; display: grid; align-content: center; justify-items: start; gap: 0.45rem;
   padding: 1rem 1.1rem;
   background: linear-gradient(90deg, var(--superficie-2) 45%, color-mix(in srgb, var(--superficie-2) 55%, transparent));
 }

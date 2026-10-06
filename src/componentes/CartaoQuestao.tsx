@@ -17,7 +17,7 @@ import { urlImagem } from '../dados/edicoes'
 import { usarIndice } from '../dados/usarIndice'
 import { RelatarErro } from './RelatarErro'
 import { EditarQuestaoAdmin } from './EditarQuestaoAdmin'
-import { ComoATurma } from './ComoATurma'
+import { ComoATurma, pessoas, usarTurmaNasAlternativas } from './ComoATurma'
 import '../estilos/paginas/CartaoQuestao.css'
 
 interface Props {
@@ -80,6 +80,8 @@ export function CartaoQuestao({
   const mostrarGabarito = (respondida || (dissertativa && revelada)) && revelarResposta
   const marcada = escolhida ?? resposta?.escolhida ?? null
   const travada = mostrarGabarito
+  // Assinante: a porcentagem da turma aparece embaixo de cada alternativa, sem caixa à parte.
+  const turma = usarTurmaNasAlternativas(questao, mostrarGabarito && respondida && !modoLeitura && !dissertativa)
 
   useEffect(() => {
     definirEscolhida(null)
@@ -406,6 +408,12 @@ export function CartaoQuestao({
                   <span className="alternativa__texto">
                     <span className="so-leitor">Alternativa {letra}. </span>
                     <TextoEmLinha texto={alternativa.texto} />
+                    {turma?.porLetra && mostrarGabarito && (
+                      <span className={'alt-turma' + (letra === questao.gabarito ? ' alt-turma--certa' : letra === turma.pegadinha ? ' alt-turma--pegadinha' : '')}>
+                        <span className="alt-turma__trilho" aria-hidden="true"><span style={{ width: `${Math.max(turma.porLetra[letra] ?? 0, (turma.porLetra[letra] ?? 0) > 0 ? 2 : 0)}%` }} /></span>
+                        <span className="alt-turma__valor numerico">{turma.porLetra[letra] ?? 0}% da turma</span>
+                      </span>
+                    )}
                   </span>
                   {marca && (
                     <span className="alternativa__marca">
@@ -474,7 +482,9 @@ export function CartaoQuestao({
         ) : !modoLeitura && (
           <>
             <Resultado questao={questao} resposta={resposta!} />
-            <ComoATurma questao={questao} resposta={resposta!} posicao="topo" />
+            {turma && <p className="alt-turma-resumo"><Icone nome="grupo" tamanho={15} /> {turma.porLetra
+              ? <>Porcentagens da primeira resposta de {pessoas(turma.respondentes)}. {turma.acertoPrimeira}% acertaram de primeira{resposta!.correta === false && turma.acertoPrimeira >= 80 ? '; quase todo mundo acerta esta, vale reler o comentário' : resposta!.correta === true && turma.acertoPrimeira <= 40 ? '; você acertou uma que a maioria erra' : ''}.</>
+              : <>A porcentagem da turma em cada alternativa aparece a partir de 3 pessoas{turma.respondentes ? ` (até agora, ${pessoas(turma.respondentes)})` : ''}.</>}</p>}
           </>
         )}
 
@@ -490,7 +500,7 @@ export function CartaoQuestao({
 
             <ComentarioDaIA questao={questao} comentario={comentarioIA} carregando={carregandoIA} escolhida={resposta?.escolhida ?? null} />
             {/* Quem não assina vê o convite da turma só aqui, depois do comentário. */}
-            {resposta && !modoLeitura && <ComoATurma questao={questao} resposta={resposta} posicao="rodape" />}
+            {resposta && !modoLeitura && <ComoATurma questao={questao} />}
 
             <div className="bloco-comentario">
               <p className="comentario__titulo">Comentários da comunidade</p>
