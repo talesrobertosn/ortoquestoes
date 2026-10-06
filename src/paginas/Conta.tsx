@@ -24,6 +24,9 @@ import { conquistaAtual, emblemaPorId } from '../estado/conquistas'
 import { ResumoAssinatura } from '../componentes/ResumoAssinatura'
 import { MINIMO_RANKING } from '../util/nomeRanking'
 import { APELIDO_MAXIMO, usarPerfilRanking } from '../conta/perfilRanking'
+import { lerProvas, type ProvaInteresse } from '../conta/perfilEstudo'
+import { CamposEtapa } from '../componentes/CamposEtapa'
+import { OpcaoServicoRanking } from '../componentes/ServicoRanking'
 import '../estilos/paginas/Conta.css'
 
 const ROTULOS_STATUS = {
@@ -95,6 +98,8 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   const [nascimento, definirNascimento] = useState(String(perfil.nascimento ?? ''))
   const [servico, definirServico] = useState(String(perfil.servico ?? perfil.residencia ?? ''))
   const [situacao, definirSituacao] = useState(String(perfil.situacao ?? ''))
+  const [anoResidencia, definirAnoResidencia] = useState(String(perfil.ano_residencia ?? ''))
+  const [provas, definirProvas] = useState<ProvaInteresse[]>(() => lerProvas(perfil.provas_interesse))
   const [whatsapp, definirWhatsapp] = useState(String(perfil.whatsapp ?? ''))
   const [cidade, definirCidade] = useState(String(perfil.cidade ?? ''))
   const [uf, definirUf] = useState(String(perfil.uf ?? ''))
@@ -135,12 +140,16 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     if (sobrenome.trim().length < 2) { definirMensagem('Informe seu sobrenome.'); return false }
     if (!nascimento || new Date(`${nascimento}T12:00:00`).getTime() > Date.now()) { definirMensagem('Informe uma data de nascimento válida.'); return false }
     if (!situacao) { definirMensagem('Informe sua etapa profissional.'); return false }
+    if (situacao === 'residente' && !anoResidencia) { definirMensagem('Informe o ano da residência (R1, R2 ou R3).'); return false }
+    if (!provas.length) { definirMensagem('Marque ao menos uma prova para a qual você estuda.'); return false }
     if (servico.trim().length < 2) { definirMensagem('Informe o serviço onde você atua ou faz residência.'); return false }
     return true
   }
   function dadosPerfil() {
     return {
       nome: nome.trim(), sobrenome: sobrenome.trim(), nascimento, situacao,
+      ano_residencia: situacao === 'residente' ? anoResidencia : null, provas_interesse: provas,
+      perfil_estudo_em: new Date().toISOString(), perfil_estudo_perguntado: true,
       servico: servico.trim(), whatsapp: whatsapp.trim(), cidade: cidade.trim(), uf,
       receber_novidades: receberNovidades,
     }
@@ -266,7 +275,8 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
           {!recuperacao && <label className="campo">E-mail<input className="entrada" type="email" autoComplete="email" required value={email} onChange={e => definirEmail(e.target.value)} placeholder="voce@email.com" /></label>}
           {!recuperacao && modo === 'criar' && <>
             <div className="linha-campos linha-campos--2"><label className="campo">Nome<input className="entrada" autoComplete="given-name" required minLength={2} value={nome} onChange={e => definirNome(e.target.value)} placeholder="Como podemos chamar você?" /></label><label className="campo">Sobrenome<input className="entrada" autoComplete="family-name" required minLength={2} value={sobrenome} onChange={e => definirSobrenome(e.target.value)} /></label></div>
-            <div className="linha-campos linha-campos--2"><label className="campo">Data de nascimento<input className="entrada" type="date" required value={nascimento} onChange={e => definirNascimento(e.target.value)} /></label><label className="campo">Você é <select className="entrada" required value={situacao} onChange={e => definirSituacao(e.target.value)}><option value="">Selecione</option><option value="residente">Residente de ortopedia</option><option value="ortopedista">Ortopedista</option><option value="outro">Outro profissional ou estudante</option></select></label></div>
+            <label className="campo">Data de nascimento<input className="entrada" type="date" required value={nascimento} onChange={e => definirNascimento(e.target.value)} /></label>
+            <CamposEtapa situacao={situacao} ano={anoResidencia} provas={provas} aoMudarSituacao={definirSituacao} aoMudarAno={definirAnoResidencia} aoMudarProvas={definirProvas} obrigatorio />
             <label className="campo">Serviço onde faz residência ou trabalha<input className="entrada" required value={servico} onChange={e => definirServico(e.target.value)} placeholder="Ex.: Hospital / clínica / instituição" /></label>
             <div className="linha-campos linha-campos--2"><label className="campo"><span>WhatsApp <span className="meta">(opcional)</span></span><input className="entrada" type="tel" autoComplete="tel" value={whatsapp} onChange={e => definirWhatsapp(e.target.value)} placeholder="(00) 00000-0000" /></label><label className="campo"><span>Cidade <span className="meta">(opcional)</span></span><input className="entrada" autoComplete="address-level2" value={cidade} onChange={e => definirCidade(e.target.value)} /></label></div>
           </>}
@@ -380,7 +390,8 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
       {secao === 'perfil' && <section id="ct-perfil" className="ct-cartao ct-cartao--largo">
         <header className="ct-cartao__cabeca"><span className="ct-icone"><Icone nome="usuario" tamanho={18} /></span><div><h2>Meu perfil</h2><p>Personaliza sua experiência. Seu contato nunca é exibido publicamente.</p></div></header>
         <div className="linha-campos linha-campos--2"><label className="campo">Nome<input className="entrada" required minLength={2} value={nome} onChange={e => definirNome(e.target.value)} /></label><label className="campo">Sobrenome<input className="entrada" required minLength={2} value={sobrenome} onChange={e => definirSobrenome(e.target.value)} /></label></div>
-        <div className="linha-campos linha-campos--2"><label className="campo">Data de nascimento<input className="entrada" type="date" value={nascimento} onChange={e => definirNascimento(e.target.value)} /></label><label className="campo">Você é <select className="entrada" value={situacao} onChange={e => definirSituacao(e.target.value)}><option value="">Escolha uma opção</option><option value="residente">Residente de ortopedia</option><option value="ortopedista">Ortopedista</option><option value="outro">Outro profissional ou estudante</option></select></label></div>
+        <label className="campo">Data de nascimento<input className="entrada" type="date" value={nascimento} onChange={e => definirNascimento(e.target.value)} /></label>
+        <CamposEtapa situacao={situacao} ano={anoResidencia} provas={provas} aoMudarSituacao={definirSituacao} aoMudarAno={definirAnoResidencia} aoMudarProvas={definirProvas} />
         <label className="campo">Serviço onde faz residência ou trabalha<input className="entrada" value={servico} onChange={e => definirServico(e.target.value)} placeholder="Ex.: Hospital / clínica / instituição" /></label>
         <div className="linha-campos linha-campos--2"><label className="campo"><span>WhatsApp <span className="meta">(opcional)</span></span><input className="entrada" type="tel" autoComplete="tel" value={whatsapp} onChange={e => definirWhatsapp(e.target.value)} placeholder="(00) 00000-0000" /></label><label className="campo"><span>Cidade <span className="meta">(opcional)</span></span><input className="entrada" autoComplete="address-level2" value={cidade} onChange={e => definirCidade(e.target.value)} /></label></div>
         <div className="linha-campos linha-campos--2"><label className="campo"><span>UF <span className="meta">(opcional)</span></span><select className="entrada" value={uf} onChange={e => definirUf(e.target.value)}><option value="">Selecione</option>{['AC','AL','AP','AM','BA','CE','DF','ES','GO','MA','MT','MS','MG','PA','PB','PR','PE','PI','RJ','RN','RS','RO','RR','SC','SP','SE','TO'].map(sigla => <option key={sigla}>{sigla}</option>)}</select></label><label className="campo campo--checkbox"><input type="checkbox" checked={receberNovidades} onChange={e => definirReceberNovidades(e.target.checked)} /> Quero receber novidades sobre o OrtoQuestões</label></div>
@@ -409,6 +420,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
               : `Você entra no ranking ao responder ${MINIMO_RANKING} questões (faltam ${MINIMO_RANKING - respondidasConta})`}
           </div>
           {perfilRanking.participa && <>
+            <OpcaoServicoRanking sessao={sessao} compacta />
             <label className="campo">Seu apelido no ranking
               <input className="entrada" maxLength={APELIDO_MAXIMO} value={apelidoRanking} onChange={e => definirApelidoRanking(e.target.value)} placeholder={nomeCadastroRanking} />
             </label>

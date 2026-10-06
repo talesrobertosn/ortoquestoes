@@ -2,6 +2,8 @@ import { useMemo, useState } from 'react'
 import { PLANOS as PRECOS, real } from '../../dados/planos'
 import { BarrasHorizontais, GraficoColunas, type Ponto } from './AdminGraficos'
 import { baixarCsv, porcentagem } from './formatos'
+import { TabelaMensal } from './AdminMensal'
+import { MES, NOME_MES, cobrancas, dataCancelamento, mesAMes, meioDe, pagaSemCobranca, precoDe, previsao, renovaSozinha, somarMeses } from './receita'
 
 export interface AssinaturaFinanceira {
   id_usuario: string
@@ -16,70 +18,7 @@ export interface AssinaturaFinanceira {
   cancelar_ao_fim?: boolean
   cancelada_em?: string | null
   ultima_atualizacao: string
-}
-
-interface Cobranca { em: Date; valor: number; plano: string; id_usuario: string; estimada: boolean }
-
-const MES = (d: Date) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`
-const NOME_MES = (chave: string, curto = false) => new Date(`${chave}-15T12:00:00`).toLocaleDateString('pt-BR', curto ? { month: 'short' } : { month: 'long', year: 'numeric' })
-const precoDe = (plano: string) => PRECOS.find(p => p.id === plano)
-const somarMeses = (d: Date, meses: number) => { const n = new Date(d); n.setMonth(n.getMonth() + meses); return n }
-
-/**
- * Assinatura que já foi paga, mas cuja cobrança não ficou gravada (o aviso do
- * pagamento do Mercado Pago não chegou ou não foi processado). No cartão, a
- * assinatura só fica ativa depois de a primeira cobrança ser aprovada.
- */
-function pagaSemCobranca(a: AssinaturaFinanceira) {
-  if (a.ultima_cobranca_em || !precoDe(a.plano)) return false
-  if (a.status === 'ativa' || a.status === 'pausada' || a.status === 'vencida') return true
-  // Cancelada depois de ter valido um período: o fim ficou bem depois do início.
-  if (a.status === 'cancelada' && a.fim_periodo && (a.inicio_periodo ?? a.criada_em)) {
-    const dias = (new Date(a.fim_periodo).getTime() - new Date((a.inicio_periodo ?? a.criada_em)!).getTime()) / 86_400_000
-    return dias >= 25
-  }
-  return false
-}
-
-/**
- * Cobranças reconstruídas a partir das assinaturas: a última cobrança paga e,
- * para trás, uma a cada período do plano até a data em que a assinatura foi
- * criada. Pix é sempre uma cobrança só. Reembolso tira a última. Assinatura
- * paga sem cobrança gravada entra com uma cobrança estimada no início.
- */
-function cobrancas(assinaturas: AssinaturaFinanceira[]): Cobranca[] {
-  const lista: Cobranca[] = []
-  for (const a of assinaturas) {
-    const preco = precoDe(a.plano)
-    if (!preco) continue
-    if (!a.ultima_cobranca_em) {
-      if (pagaSemCobranca(a)) lista.push({ em: new Date(a.inicio_periodo ?? a.criada_em ?? a.ultima_atualizacao), valor: preco.total, plano: a.plano, id_usuario: a.id_usuario, estimada: true })
-      continue
-    }
-    const inicio = new Date(a.criada_em ?? a.inicio_periodo ?? a.ultima_cobranca_em).getTime() - 3 * 86_400_000
-    const datas: Date[] = []
-    for (let d = new Date(a.ultima_cobranca_em); d.getTime() >= inicio && datas.length < 120; d = somarMeses(d, -preco.meses)) datas.push(d)
-    if (a.status === 'reembolsada') datas.shift()
-    for (const em of datas) lista.push({ em, valor: preco.total, plano: a.plano, id_usuario: a.id_usuario, estimada: false })
-  }
-  return lista.sort((x, y) => x.em.getTime() - y.em.getTime())
-}
-
-/** Próximas cobranças de quem renova automaticamente, mês a mês, supondo que ninguém cancele. */
-function previsao(assinaturas: AssinaturaFinanceira[], meses: number) {
-  const agora = new Date(), limite = somarMeses(agora, meses)
-  const porMes = new Map<string, number>()
-  for (let i = 0; i < meses; i++) porMes.set(MES(somarMeses(agora, i)), 0)
-  for (const a of assinaturas) {
-    const preco = precoDe(a.plano)
-    if (!preco || a.status !== 'ativa' || a.cancelar_ao_fim || !a.fim_periodo) continue
-    for (let d = new Date(a.fim_periodo); d < limite; d = somarMeses(d, preco.meses)) {
-      if (d < agora) continue
-      const chave = MES(d)
-      if (porMes.has(chave)) porMes.set(chave, (porMes.get(chave) ?? 0) + preco.total)
-    }
-  }
-  return [...porMes]
+  meio?: string | null
 }
 
 /** Financeiro: quanto entrou, mês a mês, de onde veio e o que está previsto. Estimativa; o extrato oficial é o do Mercado Pago. */
@@ -100,15 +39,21 @@ export function AdminFinanceiro({ assinaturas, usuarios, testes = 0 }: { assinat
       return { nome: p.nome, valor: doPlano.reduce((s, c) => s + c.valor, 0), cobrancas: doPlano.length }
     })
     const vigente = (a: AssinaturaFinanceira) => (a.status === 'ativa' || (a.status === 'cancelada' && !!a.cancelar_ao_fim)) && (!a.fim_periodo || new Date(a.fim_periodo) > agora)
-    const renovam = assinaturas.filter(a => a.status === 'ativa' && !a.cancelar_ao_fim && vigente(a))
+    const renovam = assinaturas.filter(a => renovaSozinha(a) && vigente(a))
     const mrr = renovam.reduce((s, a) => { const p = precoDe(a.plano); return s + (p ? p.total / p.meses : 0) }, 0)
     const pagas = assinaturas.filter(a => a.ultima_cobranca_em || pagaSemCobranca(a))
-    const cancelaram = pagas.filter(a => a.cancelar_ao_fim || ['cancelada', 'reembolsada', 'vencida'].includes(a.status)).length
+    // Cancelamento de verdade: cartão com a renovação desligada. Pix é avulso (termina sem renovar) e reembolso conta à parte.
+    const pagasCartao = pagas.filter(a => meioDe(a) === 'cartao')
+    const cancelaram = pagasCartao.filter(a => dataCancelamento(a)).length
     const reembolsos = assinaturas.filter(a => a.status === 'reembolsada').length
+    const pagasPix = pagas.length - pagasCartao.length
+    const renovacoes = todas.filter(c => c.tipo === 'renovacao')
+    const receitaPix = todas.filter(c => c.meio === 'pix').reduce((s, c) => s + c.valor, 0)
     const primeira = todas[0]?.em ?? null
     const mesesDeVida = primeira ? Math.max(1, (agora.getTime() - primeira.getTime()) / (30.44 * 86_400_000)) : 0
     return {
-      total, pagantes, porPlano, mrr, renovam: renovam.length, cancelaram, pagas: pagas.length, reembolsos, primeira,
+      total, pagantes, porPlano, mrr, renovam: renovam.length, cancelaram, pagas: pagas.length, pagasCartao: pagasCartao.length, pagasPix, reembolsos, primeira,
+      renovacoes: renovacoes.length, receitaRenovacoes: renovacoes.reduce((s, c) => s + c.valor, 0), receitaPix,
       esteMes: porMes.get(esteMes) ?? 0, mesPassado: porMes.get(mesPassado) ?? 0,
       ticket: todas.length ? total / todas.length : 0,
       porPagante: pagantes ? total / pagantes : 0,
@@ -119,7 +64,8 @@ export function AdminFinanceiro({ assinaturas, usuarios, testes = 0 }: { assinat
 
   const semCobranca = useMemo(() => assinaturas.filter(pagaSemCobranca), [assinaturas])
   const prev = useMemo(() => previsao(assinaturas, mesesPrevisao), [assinaturas, mesesPrevisao])
-  const totalPrevisto = prev.reduce((s, [, v]) => s + v, 0)
+  const meses = useMemo(() => mesAMes(assinaturas, 12), [assinaturas])
+  const totalPrevisto = prev.reduce((s, [, v]) => s + v.valor, 0)
   const variacao = d.mesPassado ? Math.round(((d.esteMes - d.mesPassado) / d.mesPassado) * 100) : null
   const conversao = usuarios ? porcentagem(d.pagantes, usuarios) : null
 
@@ -130,7 +76,7 @@ export function AdminFinanceiro({ assinaturas, usuarios, testes = 0 }: { assinat
         <p>Valores brutos, reconstruídos a partir das assinaturas (cada cobrança paga pelo preço do plano; reembolsos descontados). Não descontam a taxa do Mercado Pago e não substituem o extrato dele.{testes > 0 && ` ${testes} assinatura(s) de teste do dono ficam de fora.`}</p>
       </div>
         <button type="button" className="adm-link" onClick={() => baixarCsv(`ortoquestoes-cobrancas-${new Date().toISOString().slice(0, 10)}.csv`,
-          ['Data', 'Plano', 'Valor', 'Origem'], todas.map(c => [c.em.toLocaleDateString('pt-BR'), precoDe(c.plano)?.nome ?? c.plano, c.valor.toFixed(2).replace('.', ','), c.estimada ? 'estimada (sem cobrança gravada)' : 'cobrança gravada']))}>Exportar cobranças</button>
+          ['Data', 'Plano', 'Valor', 'Meio', 'Tipo', 'Origem'], todas.map(c => [c.em.toLocaleDateString('pt-BR'), precoDe(c.plano)?.nome ?? c.plano, c.valor.toFixed(2).replace('.', ','), c.meio === 'pix' ? 'Pix' : 'Cartão', c.tipo === 'nova' ? 'Assinatura nova' : 'Renovação automática', c.estimada ? 'estimada (sem cobrança gravada)' : 'cobrança gravada']))}>Exportar cobranças</button>
       </div>
       <div className="adm-kpis">
         <div className="adm-kpi adm-kpi--destaque adm-kpi--dinheiro"><span>Total recebido</span><strong>{real(d.total)}</strong><small>{d.primeira ? `desde ${d.primeira.toLocaleDateString('pt-BR')}` : 'nenhuma cobrança ainda'}</small></div>
@@ -140,7 +86,9 @@ export function AdminFinanceiro({ assinaturas, usuarios, testes = 0 }: { assinat
         <div className="adm-kpi"><span>Ticket médio</span><strong>{real(d.ticket)}</strong><small>por cobrança paga</small></div>
         <div className="adm-kpi"><span>Receita por pagante</span><strong>{real(d.porPagante)}</strong><small>{d.pagantes} pessoa(s) já pagaram</small></div>
         <div className="adm-kpi"><span>Conversão</span><strong>{conversao === null ? '—' : `${conversao}%`}</strong><small>dos cadastrados já pagaram</small></div>
-        <div className="adm-kpi"><span>Cancelamentos</span><strong>{d.pagas ? `${porcentagem(d.cancelaram, d.pagas)}%` : '—'}</strong><small>{d.cancelaram} de {d.pagas} pagas · {d.reembolsos} reembolso(s)</small></div>
+        <div className="adm-kpi"><span>Cancelamentos</span><strong>{d.pagasCartao ? `${porcentagem(d.cancelaram, d.pagasCartao)}%` : '—'}</strong><small>{d.cancelaram} de {d.pagasCartao} no cartão desligaram a renovação · {d.reembolsos} reembolso(s)</small></div>
+        <div className="adm-kpi"><span>Renovações automáticas</span><strong>{d.renovacoes}</strong><small>{real(d.receitaRenovacoes)} vieram de renovação</small></div>
+        <div className="adm-kpi"><span>Pix</span><strong>{d.pagasPix}</strong><small>compra(s) avulsa(s) · {real(d.receitaPix)}{d.total ? ` · ${porcentagem(d.receitaPix, d.total)}% da receita` : ''}</small></div>
       </div>
       {semCobranca.length > 0 && <div className="adm-alerta" role="status">
         <p><strong>{semCobranca.length} assinatura(s) paga(s) sem a cobrança gravada.</strong> Elas já entram no total acima pelo preço do plano, mas vale conferir no Mercado Pago e reprocessar o aviso na aba Pagamentos:</p>
@@ -152,6 +100,11 @@ export function AdminFinanceiro({ assinaturas, usuarios, testes = 0 }: { assinat
       <GraficoColunas titulo="Receita por mês" subtitulo="últimos 12 meses, em reais" pontos={d.serie} unidade="reais" />
     </section>
 
+    <section className="empilha adm-secao" aria-labelledby="adm-titulo-mensal">
+      <div><h2 id="adm-titulo-mensal">Mês a mês</h2><p>Assinaturas novas, renovações automáticas, cancelamentos, reembolsos e Pix encerrados em cada mês.</p></div>
+      <TabelaMensal meses={meses} />
+    </section>
+
     <div className="adm-duas">
       <section className="empilha adm-secao" aria-labelledby="adm-titulo-previsao">
         <div className="adm-secao__cabeca">
@@ -161,7 +114,7 @@ export function AdminFinanceiro({ assinaturas, usuarios, testes = 0 }: { assinat
           </div>
         </div>
         <p className="adm-financeiro__previsto"><strong>{real(totalPrevisto)}</strong> previstos nos próximos {mesesPrevisao} meses</p>
-        <BarrasHorizontais formato={v => real(v)} itens={prev.map(([k, v]) => ({ rotulo: NOME_MES(k), valor: v }))} />
+        <BarrasHorizontais formato={v => real(v)} itens={prev.map(([k, v]) => ({ rotulo: NOME_MES(k), valor: v.valor, detalhe: `${v.quantidade} renovação(ões)` }))} />
       </section>
       <section className="empilha adm-secao" aria-labelledby="adm-titulo-planos-receita">
         <div><h2 id="adm-titulo-planos-receita">De onde veio</h2><p>Total recebido por plano, desde o começo.</p></div>

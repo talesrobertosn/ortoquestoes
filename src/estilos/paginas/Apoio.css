@@ -292,3 +292,26 @@
 .pj-ia p { margin: 0 0 .6rem; color: var(--texto-2); line-height: 1.6; }
 .pj-ia p:last-child { margin-bottom: 0; }
 .pj-ia strong { color: var(--texto); }
+
+/* Desempenho detalhado: números, semanas, provas e dia da semana. */
+.dp-kpis { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 12.5rem), 1fr)); gap: .75rem; }
+.dp-kpi { border: var(--borda); border-radius: var(--raio-controle); padding: .75rem .85rem; display: grid; gap: .15rem; background: var(--superficie-2); }
+.dp-kpi span { color: var(--texto-2); font-size: var(--meta); font-weight: 600; }
+.dp-kpi strong { font-family: var(--fonte-marca); font-size: 1.5rem; line-height: 1.15; font-variant-numeric: tabular-nums; }
+.dp-kpi small { color: var(--texto-2); font-size: var(--meta); line-height: 1.35; }
+.dp-tabela th[scope="row"] { font-weight: 600; text-align: left; white-space: nowrap; }
+.dp-tabela td { white-space: nowrap; }
+.dp-mini-barra { display: inline-block; height: .45rem; max-width: 4rem; margin-right: .4rem; border-radius: 99px; background: var(--verdete); opacity: .55; vertical-align: middle; }
+.dp-variacao { color: var(--texto-2); font-weight: 600; }
+.dp-provas { list-style: none; margin: 0; padding: 0; display: grid; gap: .8rem; }
+.dp-prova { display: grid; gap: .35rem; padding: .65rem .75rem; border: var(--borda); border-radius: var(--raio-controle); }
+.dp-prova--minha { border-color: var(--verdete); background: var(--verdete-veu); }
+.dp-prova__topo { display: flex; justify-content: space-between; gap: .5rem; flex-wrap: wrap; font-size: var(--corpo-menor); }
+.dp-prova__selo { display: inline-flex; align-items: center; gap: .2rem; margin-left: .4rem; font-size: var(--meta); color: var(--verdete); font-weight: 700; }
+.dp-prova small { color: var(--texto-2); font-size: var(--meta); }
+.dp-semana { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: .5rem; align-items: end; }
+.dp-semana__dia { display: grid; gap: .25rem; justify-items: center; text-align: center; }
+.dp-semana__barra { width: 100%; max-width: 2.6rem; height: 7rem; display: flex; align-items: flex-end; background: var(--superficie-2); border-radius: 8px; overflow: hidden; }
+.dp-semana__barra > span { width: 100%; border-radius: 8px 8px 0 0; }
+.dp-semana__dia strong { font-size: var(--corpo-menor); font-variant-numeric: tabular-nums; }
+.dp-semana__dia small { color: var(--texto-2); font-size: var(--meta); }

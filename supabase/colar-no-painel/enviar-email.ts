@@ -433,6 +433,11 @@ function emailLembrete(d) {
   const linkTreinar = `${d.site}#/treinar`;
   const linkRevisao = `${d.site}#/revisao`;
   const linkCronograma = `${d.site}#/cronograma`;
+  const linkAssinatura = `${d.site}#/assinatura`;
+  const dias = Math.max(1, d.diasRestantes ?? 3);
+  const diasTexto = dias === 1 ? "1 dia" : `${dias} dias`;
+  const fimTexto = d.fimEm ? `em ${new Date(d.fimEm).toLocaleDateString("pt-BR", { day: "2-digit", month: "2-digit", timeZone: "America/Sao_Paulo" })}` : `em ${diasTexto}`;
+  const planoTexto = { mensal: "mensal", semestral: "semestral", anual: "anual" }[d.plano ?? ""] ?? (d.plano ?? "");
   const C = {
     nunca: {
       assunto: nome ? `${nome}, sua primeira miss\xE3o no OrtoQuest\xF5es est\xE1 esperando` : "Sua primeira miss\xE3o no OrtoQuest\xF5es est\xE1 esperando",
@@ -478,6 +483,21 @@ function emailLembrete(d) {
       botao: "Retomar minha jornada",
       link: linkTreinar,
       rodape: `Quer um plano dia a dia? Veja o <a href="${linkCronograma}" style="color:#146b61;font-weight:bold;">cronograma at\xE9 a prova</a>.`
+    },
+    renovacao_pix: {
+      assunto: nome ? `${nome}, seu acesso termina em ${diasTexto}: renove e siga em frente` : `Seu acesso termina em ${diasTexto}: renove e siga em frente`,
+      previa: `Seu plano pago no Pix termina ${fimTexto}. Renove para n\xE3o perder o ritmo at\xE9 a prova.`,
+      selo: "Miss\xE3o: renovar a armadura",
+      titulo: nome ? `${nome}, a sua armadura vence ${fimTexto}` : `Sua armadura vence ${fimTexto}`,
+      lide: `Faltam ${diasTexto} para terminar o acesso do seu plano${d.plano ? ` ${planoTexto}` : ""}, pago no Pix. Como o Pix n\xE3o renova sozinho, este \xE9 o lembrete: renove e continue a jornada sem interromper o ritmo.`,
+      corpo: [
+        ["pixel/revisao.png", "Suas revis\xF5es continuam em dia", "A fila de revis\xE3o espa\xE7ada segue chamando cada quest\xE3o no momento certo, sem limite di\xE1rio."],
+        ["pixel/simulado.png", "Simulados, cronograma e relat\xF3rios", 'Simulado Nacional, plano at\xE9 a prova, "como a turma respondeu" e o relat\xF3rio do m\xEAs continuam liberados.'],
+        ["pixel/ranking.png", "Nada se perde", `Suas ${numero(d.respondidas)} quest\xF5es, o caderno de erros e as conquistas ficam guardados, renovando ou n\xE3o.`]
+      ],
+      botao: "Renovar e continuar estudando",
+      link: linkAssinatura,
+      rodape: `Prefere n\xE3o precisar lembrar? No cart\xE3o, a assinatura renova sozinha e voc\xEA cancela quando quiser em <a href="${d.site}#/conta/assinatura" style="color:#146b61;font-weight:bold;">Minha conta</a>.`
     }
   }[d.campanha];
   const blocos = C.corpo.map(([icone, titulo, texto2]) => `
@@ -769,11 +789,11 @@ async function enviarRelatorios(mesPedido, limitePedido) {
   }
   return { mes, enviados, falhas, lote: destinatarios.length, talvez_restem: destinatarios.length === limite };
 }
-var CAMPANHAS = ["nunca", "tres_dias", "sete_dias"];
+var CAMPANHAS = ["nunca", "tres_dias", "sete_dias", "renovacao_pix"];
 var campanhaValida = (c) => CAMPANHAS.includes(c ?? "") ? c : null;
 async function enviarLembretes(campanha, limitePedido, por) {
   const limite = Math.max(1, Math.min(Number(limitePedido) || 40, 80));
-  const r = await banco("rpc/destinatarios_lembrete", { method: "POST", body: JSON.stringify({ p_campanha: campanha, p_limite: limite }) });
+  const r = campanha === "renovacao_pix" ? await banco("rpc/destinatarios_renovacao_pix", { method: "POST", body: JSON.stringify({ p_limite: limite }) }) : await banco("rpc/destinatarios_lembrete", { method: "POST", body: JSON.stringify({ p_campanha: campanha, p_limite: limite }) });
   if (!r.ok) throw new Error("consulta_destinatarios_falhou");
   const destinatarios = await r.json();
   let enviados = 0, falhas = 0;
@@ -791,7 +811,7 @@ async function enviarLembretes(campanha, limitePedido, por) {
     if (!linha) continue;
     try {
       const descadastro = await linkDescadastro(d.id_usuario, "lembretes");
-      const e = emailLembrete({ campanha, nome: d.nome, respondidas: Number(d.respondidas), diasFora: Number(d.dias_fora), site: site(), linkDescadastro: descadastro });
+      const e = emailLembrete({ campanha, nome: d.nome, respondidas: Number(d.respondidas), diasFora: Number(d.dias_fora ?? 0), diasRestantes: Number(d.dias_restantes ?? 3), fimEm: d.fim_periodo ?? null, plano: d.plano ?? null, site: site(), linkDescadastro: descadastro });
       await enviarEmail(d.email, e.assunto, e.html, e.texto, descadastro);
       await banco(`emails_enviados?id=eq.${linha.id}`, { method: "PATCH", body: JSON.stringify({ status: "enviado", assunto: e.assunto }) });
       enviados++;
@@ -826,6 +846,11 @@ Deno.serve(async (req) => {
       if (!await segredoValido(req.headers.get("x-segredo"))) return json({ erro: "acesso_negado" }, 403, req);
       return json(await enviarRelatorios(corpo.mes, corpo.limite), 200, req);
     }
+    if (corpo.acao === "lembretes" && corpo.campanha === "renovacao_pix" && req.headers.get("x-segredo")) {
+      if (!await segredoValido(req.headers.get("x-segredo"))) return json({ erro: "acesso_negado" }, 403, req);
+      if (!emailConfigurado()) return json({ erro: "email_nao_configurado" }, 503, req);
+      return json(await enviarLembretes("renovacao_pix", corpo.limite, null), 200, req);
+    }
     const usuario = await usuarioDoPedido(req);
     if (corpo.acao === "relatorios_mensais" || corpo.acao === "previa_relatorio") {
       if (!await ehAdministrador(usuario.id)) return json({ erro: "acesso_negado" }, 403, req);
@@ -842,7 +867,7 @@ Deno.serve(async (req) => {
       if (!campanha) return json({ erro: "campanha_invalida" }, 400, req);
       if (corpo.acao === "previa_lembrete") {
         const dados = await dadosUsuario(usuario.id);
-        const e = emailLembrete({ campanha, nome: dados?.nome ?? null, respondidas: Number(dados?.respondidas ?? 0), diasFora: campanha === "sete_dias" ? 9 : 3, site: site(), linkDescadastro: await linkDescadastro(usuario.id, "lembretes") });
+        const e = emailLembrete({ campanha, nome: dados?.nome ?? null, respondidas: Number(dados?.respondidas ?? 0), diasFora: campanha === "sete_dias" ? 9 : 3, diasRestantes: 3, fimEm: new Date(Date.now() + 3 * 864e5).toISOString(), plano: "semestral", site: site(), linkDescadastro: await linkDescadastro(usuario.id, "lembretes") });
         return json({ assunto: e.assunto, html: e.html }, 200, req);
       }
       if (!emailConfigurado()) return json({ erro: "email_nao_configurado" }, 503, req);

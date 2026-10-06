@@ -21,6 +21,7 @@ import { usarArmazenado } from '../estado/usarArmazenado'
 import { CHAVE_SESSAO } from '../estado/sessao'
 import type { EstadoSessao } from '../dados/tipos'
 import { usarConta } from '../conta/ContextoConta'
+import { PerguntaEtapa } from '../componentes/PerguntaEtapa'
 import { contasDisponiveis } from '../conta/supabase'
 import { EXIGIR_CONTA_PARA_QUESTOES } from '../config'
 import { planoRevisao } from '../estado/planoRevisao'
@@ -179,6 +180,7 @@ export function Inicio() {
           <Icone nome="direita" tamanho={20} />
         </a>
       )}
+      <PerguntaEtapa />
       <section className="inicio-heroi">
         <div className="inicio-heroi__texto">
           {indice && indice.total > 0 && (

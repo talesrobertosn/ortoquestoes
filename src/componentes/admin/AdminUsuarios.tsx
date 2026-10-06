@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import { Icone } from '../Icone'
 import { PLANOS, baixarCsv, corresponde, data, haQuanto, normalizar, porcentagem } from './formatos'
 import { AdminFichaUsuario } from './AdminFichaUsuario'
+import { rotuloEtapa, rotuloProva } from '../../conta/perfilEstudo'
 
 export interface LinhaUsuario {
   id_usuario: string
@@ -23,6 +24,10 @@ export interface LinhaUsuario {
   servico?: string | null
   cidade?: string | null
   uf?: string | null
+  // Da migração 202610060100 em diante.
+  ano_residencia?: string | null
+  /** Provas de interesse separadas por vírgula (taro,teot,mao,r4,atualizacao). */
+  provas?: string | null
 }
 
 export type FiltroUsuarios = 'todos' | 'online' | 'hoje' | 'ativos' | 'novos' | 'novos_parados' | 'assinantes' | 'parados'
@@ -50,7 +55,6 @@ const novoParado = (u: LinhaUsuario) => {
 }
 const passaFiltro = (u: LinhaUsuario, f: Filtro) => f === 'todos' || (f === 'online' && !!u.online) || (f === 'hoje' && ativoHoje(u)) || (f === 'ativos' && ativo7d(u))
   || (f === 'novos' && novo(u)) || (f === 'novos_parados' && novoParado(u)) || (f === 'assinantes' && !!u.plano_vigente) || (f === 'parados' && u.respondidas === 0)
-const SITUACAO: Record<string, string> = { residente: 'Residente', ortopedista: 'Ortopedista', outro: 'Outro' }
 const acertoDe = (u: LinhaUsuario) => porcentagem(u.acertos, u.acertos + u.erros)
 
 /**
@@ -109,8 +113,8 @@ export function AdminUsuarios({ usuarios, filtroInicial = 'todos' }: { usuarios:
     <div className="adm-linha-nota">
       <p className="adm-nota" role="status">Mostrando {visiveis.length} de {usuarios.length} conta(s). Toque numa pessoa para abrir a ficha.</p>
       <button type="button" className="adm-link" onClick={() => baixarCsv(`ortoquestoes-usuarios-${new Date().toISOString().slice(0, 10)}.csv`,
-        ['Nome', 'E-mail', 'Conta criada', 'Questões', 'Acerto (%)', 'Na semana', 'Última atividade', 'Plano'],
-        visiveis.map(u => [u.nome, u.email, data(u.criado_em), u.respondidas, acertoDe(u), u.respondidas_7d, u.ultima_atividade ? data(u.ultima_atividade) : '', u.plano_vigente ? PLANOS[u.plano_vigente] : '']))}>
+        ['Nome', 'E-mail', 'Etapa', 'Provas de interesse', 'Serviço', 'UF', 'Conta criada', 'Questões', 'Acerto (%)', 'Na semana', 'Última atividade', 'Plano'],
+        visiveis.map(u => [u.nome, u.email, u.situacao ? rotuloEtapa(u.situacao, u.ano_residencia) : '', (u.provas ?? '').split(',').filter(Boolean).map(rotuloProva).join(', '), u.servico, u.uf, data(u.criado_em), u.respondidas, acertoDe(u), u.respondidas_7d, u.ultima_atividade ? data(u.ultima_atividade) : '', u.plano_vigente ? PLANOS[u.plano_vigente] : '']))}>
         <Icone nome="baixar" tamanho={15} /> Exportar planilha
       </button>
     </div>
@@ -124,7 +128,8 @@ export function AdminUsuarios({ usuarios, filtroInicial = 'todos' }: { usuarios:
           <div className="adm-usuario__quem">
             <strong>{u.online && <span className="adm-online" title="Online agora" aria-label="Online agora" />}{u.nome ?? u.email?.split('@')[0] ?? 'Sem nome'}</strong>
             <span className="adm-usuario__email">{u.email ?? 'conta sem e-mail'}</span>
-            {(u.situacao || u.servico || u.cidade) && <span className="adm-usuario__servico"><Icone nome="bandeira" tamanho={13} />{[SITUACAO[u.situacao ?? ''] ?? u.situacao, u.servico, [u.cidade, u.uf].filter(Boolean).join('/')].filter(Boolean).join(' · ')}</span>}
+            {(u.situacao || u.servico || u.cidade) && <span className="adm-usuario__servico"><Icone nome="bandeira" tamanho={13} />{[u.situacao ? rotuloEtapa(u.situacao, u.ano_residencia) : null, u.servico, [u.cidade, u.uf].filter(Boolean).join('/')].filter(Boolean).join(' · ')}</span>}
+            {u.provas && <span className="adm-usuario__servico"><Icone nome="alvo" tamanho={13} />Estuda para {u.provas.split(',').map(rotuloProva).join(', ')}</span>}
             <span className="adm-usuario__selos">
               {u.plano_vigente && <span className="adm-selo adm-selo--ok">Assinante {PLANOS[u.plano_vigente]?.toLowerCase() ?? u.plano_vigente}</span>}
               {u.administrador && <span className="adm-selo">Administrador</span>}

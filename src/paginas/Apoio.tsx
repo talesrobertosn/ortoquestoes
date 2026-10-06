@@ -14,6 +14,7 @@ import { usarIndice } from '../dados/usarIndice'
 import { conquistaAtual, proximaConquista } from '../estado/conquistas'
 import { Medalha } from '../componentes/Medalha'
 import { chaveDia, inicioDia } from '../estado/planoRevisao'
+import { DesempenhoDetalhado } from '../componentes/DesempenhoDetalhado'
 import '../estilos/paginas/Apoio.css'
 
 const BIBLIOGRAFIA = [
@@ -460,6 +461,8 @@ export function DadosLocais() {
           ) : <p className="texto-2">Responda mais algumas questões em temas diferentes para ver seu ponto forte e o que reforçar.</p>}
         </section>
       </div>
+
+      <DesempenhoDetalhado indice={indice} marcadas={marcadas} limite={limite} meta={conta?.user.user_metadata} />
 
       {(porConfianca.seguro.total > 0 || porConfianca.duvida.total > 0 || porConfianca.chute.total > 0) && <section className="cartao cartao__corpo dp-cartao">
         <div className="dp-cartao__cabeca">

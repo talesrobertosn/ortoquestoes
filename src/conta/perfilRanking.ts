@@ -32,7 +32,16 @@ export function usarPerfilRanking(sessao: Session | null) {
   // Falso enquanto o banco não tem a coluna da vitrine (migration ainda não aplicada).
   const [comVitrine, definirComVitrine] = useState(true)
   const [carregado, definirCarregado] = useState(false)
+  // Mostrar o serviço (local da residência) ao lado do nome. null = o banco ainda não tem a coluna.
+  const [mostrarServico, definirMostrarServico] = useState<boolean | null>(null)
   const id = sessao?.user.id
+  useEffect(() => {
+    if (!supabase || !id) return
+    let vivo = true
+    supabase.from('perfis_publicos').select('mostrar_servico').eq('usuario_id', id).maybeSingle()
+      .then(({ data, error }) => { if (vivo) definirMostrarServico(error ? null : Boolean((data as { mostrar_servico?: boolean } | null)?.mostrar_servico)) })
+    return () => { vivo = false }
+  }, [id])
   useEffect(() => {
     if (!supabase || !id) return
     let vivo = true
@@ -67,6 +76,18 @@ export function usarPerfilRanking(sessao: Session | null) {
     return null
   }, [id, perfil])
 
+  /** Liga ou desliga o serviço (local da residência) ao lado do nome no ranking. Desligado por padrão. */
+  const salvarMostrarServico = useCallback(async (valor: boolean): Promise<string | null> => {
+    if (!supabase || !id) return 'Entre na sua conta para alterar o ranking.'
+    if (mostrarServico === null) return 'Esta opção ainda está sendo ativada. Tente de novo mais tarde.'
+    const anterior = mostrarServico
+    definirMostrarServico(valor)
+    const { error } = await supabase.from('perfis_publicos')
+      .upsert({ usuario_id: id, apelido: perfil.apelido, participa_ranking: perfil.participa, mostrar_servico: valor }, { onConflict: 'usuario_id' })
+    if (error) { definirMostrarServico(anterior); return 'Não foi possível salvar agora. Confira sua conexão e tente novamente.' }
+    return null
+  }, [id, perfil, mostrarServico])
+
   /** Grava a vitrine (até três conquistas) que aparece ao lado do nome no ranking. */
   const salvarVitrine = useCallback(async (emblemas: string[]): Promise<string | null> => {
     if (!supabase || !id) return 'Entre na sua conta para escolher seus emblemas.'
@@ -79,7 +100,8 @@ export function usarPerfilRanking(sessao: Session | null) {
   }, [id, perfil, comVitrine])
 
   const nomeCadastro = nomeNoRanking(String(sessao?.user.user_metadata?.nome ?? ''), String(sessao?.user.user_metadata?.sobrenome ?? ''))
-  return { perfil, carregado, salvar, salvarVitrine, comVitrine, nomeExibido: perfil.apelido ?? nomeCadastro, nomeCadastro }
+  const servicoCadastro = String(sessao?.user.user_metadata?.servico ?? '').trim()
+  return { perfil, carregado, salvar, salvarVitrine, comVitrine, nomeExibido: perfil.apelido ?? nomeCadastro, nomeCadastro, mostrarServico, salvarMostrarServico, servicoCadastro }
 }
 
 let ultimaSequenciaPublicada = ''

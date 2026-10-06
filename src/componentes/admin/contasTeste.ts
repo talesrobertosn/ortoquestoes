@@ -2,11 +2,13 @@ import { normalizar } from './formatos'
 
 /**
  * Contas do dono do projeto usadas para testar compras e reembolsos com
- * dinheiro real. Continuam listadas na aba Assinaturas, com o selo "Teste",
+ * dinheiro real (no nome de Tales ou Thales Roberto e de Valéria Godoy). Continuam listadas na aba Assinaturas, com o selo "Teste",
  * mas ficam fora dos números do painel (financeiro, crescimento e visão geral).
  * Os e-mails entram só como hash (FNV-1a), para não ficarem expostos no site.
  */
-const NOMES_TESTE = ['thales roberto', 'tales roberto']
+const NOMES_TESTE = ['thales roberto', 'tales roberto', 'valeria godoy']
+/** Primeiro nome que, sozinho, já marca a conta como de teste (pedido do dono: tudo no nome de Tales). */
+const PRIMEIROS_NOMES_TESTE = ['tales']
 const EMAILS_TESTE = new Set(['d0140159', '9e0ee00a'])
 
 function fnv1a(texto: string) {
@@ -18,5 +20,6 @@ function fnv1a(texto: string) {
 export function contaDeTeste(a: { nome?: string | null; usuario?: string | null }) {
   const nome = normalizar(a.nome ?? '').trim().replace(/\s+/g, ' ')
   const email = (a.usuario ?? '').trim().toLowerCase()
-  return NOMES_TESTE.some(n => nome === n || nome.startsWith(n + ' ')) || (!!email && EMAILS_TESTE.has(fnv1a(email)))
+  return NOMES_TESTE.some(n => nome === n || nome.startsWith(n + ' ')) || PRIMEIROS_NOMES_TESTE.includes(nome.split(' ')[0])
+    || (!!email && EMAILS_TESTE.has(fnv1a(email)))
 }
