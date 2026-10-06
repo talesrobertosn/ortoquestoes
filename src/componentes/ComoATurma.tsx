@@ -1,3 +1,4 @@
+import type { CSSProperties } from 'react'
 import type { Questao } from '../dados/tipos'
 import { MINIMO_TURMA, usarTurmaQuestao } from '../dados/turma'
 import { usarPremium } from '../conta/premium'
@@ -44,19 +45,25 @@ export function ComoATurma({ questao }: { questao: Questao }) {
   const { dados, falhou } = usarTurmaQuestao(questao.id, logado && valida && !premium)
   if (premium || !logado || !valida || falhou || !dados) return null
 
+  const exemplo = [62, 18, 12, 8]
   return (
-    <section className="tu tu--bloqueado" aria-label="Como a turma respondeu">
-      <div className="tu-previa" aria-hidden="true">
-        {questao.alternativas.map((a, i) => <span key={a.letra} className="tu-previa__barra" style={{ width: `${[62, 18, 12, 6, 2][i] ?? 4}%` }}><b>{a.letra}</b></span>)}
-      </div>
-      <div className="tu-bloqueio">
-        <p className="tu-bloqueio__titulo"><Icone nome="grupo" tamanho={18} /> Como a turma respondeu</p>
-        <p className="tu-bloqueio__texto">
+    <section className="tu tu--convite" aria-label="Como a turma respondeu">
+      <div className="tu-convite__texto">
+        <p className="tu-convite__titulo"><Icone nome="grupo" tamanho={18} /> Como a turma respondeu</p>
+        <p className="tu-convite__descricao">
           {dados.respondentes >= MINIMO_TURMA
-            ? <><strong>{pessoas(dados.respondentes)}</strong> já responderam esta questão. Quer saber quantos por cento marcaram cada alternativa? Assinando, a porcentagem da turma aparece embaixo de cada alternativa, e você vê na hora onde a maioria cai.</>
-            : 'Quer saber quantos por cento da turma marcam cada alternativa? Assinando, a porcentagem aparece embaixo de cada alternativa, em todas as questões.'}
+            ? <><strong>{pessoas(dados.respondentes)}</strong> já responderam esta questão. Assinando, você vê quantos por cento marcaram cada alternativa, direto embaixo de cada uma, e descobre na hora onde a maioria cai.</>
+            : 'Assinando, você vê quantos por cento da turma marcam cada alternativa, direto embaixo de cada uma, em todas as questões.'}
         </p>
         <a className="botao botao--ouro" href={href('/assinatura')}><Icone nome="cadeado" tamanho={16} /> Exclusivo para assinantes</a>
+      </div>
+      <div className="tu-convite__demo" aria-hidden="true">
+        {questao.alternativas.slice(0, 4).map((a, i) => (
+          <span key={a.letra} className={'tu-demo' + (i === 0 ? ' tu-demo--destaque' : '')} style={{ '--w': `${exemplo[i] ?? 6}%` } as CSSProperties}>
+            <b>{a.letra}</b>
+            <i>{exemplo[i] ?? 6}%</i>
+          </span>
+        ))}
       </div>
     </section>
   )

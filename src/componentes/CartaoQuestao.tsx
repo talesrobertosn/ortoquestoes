@@ -3,7 +3,7 @@ import { dominada, INTERVALOS } from '../estado/revisao'
 import { TextoEditorial, TextoEmLinha, Referencias } from './TextoEditorial'
 import { NotasQuestao } from './NotasQuestao'
 import { AvaliarComentario } from './AvaliarComentario'
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
 import type { ComentarioIA, Letra, Questao, Resposta } from '../dados/tipos'
 import { ROTULO_DIFICULDADE } from '../dados/tipos'
 import { ROTULO_SIMULADOS } from '../config'
@@ -390,12 +390,19 @@ export function CartaoQuestao({
               classes.push('alternativa--escolhida')
             }
             if (riscada) classes.push('alternativa--riscada')
+            // Assinante: o cartão se preenche até a porcentagem da turma, como numa enquete.
+            const porcentagemTurma = mostrarGabarito && turma?.porLetra ? turma.porLetra[letra] ?? 0 : null
+            if (porcentagemTurma !== null) {
+              classes.push('alternativa--turma')
+              if (letra === turma?.pegadinha) classes.push('alternativa--pegadinha')
+            }
 
             return (
               <li key={letra} className="alternativa-envelope">
                 <button
                   type="button"
                   className={classes.join(' ')}
+                  style={porcentagemTurma !== null ? { '--turma': `${porcentagemTurma}%` } as CSSProperties : undefined}
                   onPointerDown={(e) => { ponteiro.current = { tipo: e.pointerType, x: e.clientX, y: e.clientY, moveu: false } }}
                   onPointerUp={(e) => { ponteiro.current.moveu = Math.hypot(e.clientX - ponteiro.current.x, e.clientY - ponteiro.current.y) > 6 }}
                   onClick={() => escolher(letra, 'ponteiro')}
@@ -408,13 +415,13 @@ export function CartaoQuestao({
                   <span className="alternativa__texto">
                     <span className="so-leitor">Alternativa {letra}. </span>
                     <TextoEmLinha texto={alternativa.texto} />
-                    {turma?.porLetra && mostrarGabarito && (
-                      <span className={'alt-turma' + (letra === questao.gabarito ? ' alt-turma--certa' : letra === turma.pegadinha ? ' alt-turma--pegadinha' : '')}>
-                        <span className="alt-turma__trilho" aria-hidden="true"><span style={{ width: `${Math.max(turma.porLetra[letra] ?? 0, (turma.porLetra[letra] ?? 0) > 0 ? 2 : 0)}%` }} /></span>
-                        <span className="alt-turma__valor numerico">{turma.porLetra[letra] ?? 0}% da turma</span>
-                      </span>
-                    )}
                   </span>
+                  {porcentagemTurma !== null && (
+                    <span className="alternativa__turma">
+                      <b>{porcentagemTurma}%</b>
+                      <small>da turma</small>
+                    </span>
+                  )}
                   {marca && (
                     <span className="alternativa__marca">
                       <Icone nome={marca.icone} tamanho={16} />
