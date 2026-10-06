@@ -9,12 +9,13 @@ import { AvisoBloqueioDiario } from './LimiteRespostas'
 import { usarAssinante } from '../conta/plano'
 import { MenuGeral } from './MenuGeral'
 
-// No celular (até 40rem) a barra de baixo já leva Início, Treinar, Revisão
+// No celular (até 40rem) a barra de baixo já leva Início, Treinar, Cronograma
 // e Desempenho, então estes links somem daqui e o nome da marca volta ao
-// cabeçalho. Entre 40 e 56rem, Revisão e Ranking saem para caber.
+// cabeçalho. Entre 40 e 56rem, Cronograma e Ranking saem para caber.
+// A Revisão continua no menu e na página inicial.
 const LINKS: { destino: string; rotulo: string; icone: NomeIcone; ocultaCelular: boolean }[] = [
   { destino: '/treinar', rotulo: 'Treinar', icone: 'livro', ocultaCelular: false },
-  { destino: '/revisao', rotulo: 'Revisão', icone: 'calendario', ocultaCelular: true },
+  { destino: '/cronograma', rotulo: 'Cronograma', icone: 'calendario', ocultaCelular: true },
   { destino: '/dados', rotulo: 'Desempenho', icone: 'grafico', ocultaCelular: false },
   { destino: '/ranking', rotulo: 'Ranking', icone: 'trofeu', ocultaCelular: true },
 ]
@@ -47,7 +48,7 @@ export function Cabecalho({ caminho }: { caminho: string }) {
               key={link.destino}
               className={'nav-link' + (link.ocultaCelular ? ' nav-link--oculta-celular' : '') + (link.destino === '/dados' ? ' nav-link--oculta-estreito' : '') + (link.destino === '/ranking' ? ' nav-link--ranking' : '')}
               href={href(link.destino)}
-              aria-current={caminho.startsWith(link.destino) || (link.destino === '/ranking' && caminho.startsWith('/conquistas')) ? 'page' : undefined}
+              aria-current={caminho.startsWith(link.destino) || (link.destino === '/ranking' && caminho.startsWith('/conquistas')) || (link.destino === '/cronograma' && caminho.startsWith('/plano-de-estudo')) ? 'page' : undefined}
             >
               <span className="nav-link__icone"><Icone nome={link.icone} tamanho={17} /></span>
               {link.rotulo}
@@ -85,7 +86,7 @@ export function Cabecalho({ caminho }: { caminho: string }) {
     <nav className="navegacao-mobile nao-imprime" aria-label="Navegação móvel">
       <a href={href('/')} aria-current={caminho === '/' ? 'page' : undefined}><Icone nome="mapa" /><span>Início</span></a>
       <a href={href('/treinar')} aria-current={caminho.startsWith('/treinar') ? 'page' : undefined}><Icone nome="filtro" /><span>Treinar</span></a>
-      <a href={href('/revisao')} aria-current={caminho.startsWith('/revisao') ? 'page' : undefined}><Icone nome="reiniciar" /><span>Revisar</span></a>
+      <a href={href('/cronograma')} aria-current={caminho.startsWith('/cronograma') || caminho.startsWith('/plano-de-estudo') ? 'page' : undefined}><Icone nome="calendario" /><span>Cronograma</span></a>
       <a className="navegacao-mobile__ranking" href={href('/ranking')} aria-current={caminho.startsWith('/ranking') || caminho.startsWith('/conquistas') ? 'page' : undefined}><Icone nome="trofeu" /><span>Ranking</span></a>
       <a href={href('/dados')} aria-current={caminho.startsWith('/dados') ? 'page' : undefined}><Icone nome="certo" /><span>Desempenho</span></a>
       {botaoMenu('navegacao-mobile__menu')}

@@ -206,6 +206,8 @@
 @media (max-width: 40rem) {
   .navegacao-mobile { grid-template-columns: repeat(6, minmax(0, 1fr)); }
   .navegacao-mobile a span, .navegacao-mobile__menu span { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  /* Rótulos longos (Cronograma, Desempenho): menos respiro lateral para caber inteiros. */
+  .navegacao-mobile a, .navegacao-mobile__menu { padding-inline: 0; letter-spacing: -0.02em; font-size: 0.62rem; }
   .navegacao-mobile__ranking svg { color: #c9952f; }
   .navegacao-mobile a.navegacao-mobile__ranking[aria-current="page"] { color: #a8761a; }
   .navegacao-mobile__menu { display: grid; justify-items: center; gap: 0.1rem; padding: 0.25rem; border: 0; background: none; color: var(--texto-2); font: inherit; font-size: 0.68rem; cursor: pointer; }
