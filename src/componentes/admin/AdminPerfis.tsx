@@ -1,23 +1,24 @@
 import { useMemo, useState } from 'react'
 import { PROVAS, rotuloEtapa, rotuloProva } from '../../conta/perfilEstudo'
 import { BarrasHorizontais } from './AdminGraficos'
-import { baixarCsv, normalizar, porcentagem } from './formatos'
+import { baixarCsv, normalizar, porcentagem, acertoAposRevisao, acertoReal } from './formatos'
 import type { LinhaUsuario } from './AdminUsuarios'
 
 /** Ordem fixa das etapas nas tabelas: da formação para o título. */
 const ORDEM_ETAPAS = ['R1', 'R2', 'R3', 'Residente (ano não informado)', 'R4 / fellowship', 'Residente de mão', 'Ortopedista', 'Estudante', 'Outro', 'Não informado']
 
-interface Grupo { rotulo: string; contas: number; ativos7d: number; comRespostas: number; respondidas: number; acertos: number; erros: number; assinantes: number; novos30: number }
+interface Grupo { rotulo: string; contas: number; ativos7d: number; comRespostas: number; respondidas: number; acertos: number; erros: number; acertos_primeira: number | null; erros_primeira: number | null; assinantes: number; novos30: number }
 
 function agrupar(lista: LinhaUsuario[], chave: (u: LinhaUsuario) => string[]): Grupo[] {
   const mapa = new Map<string, Grupo>()
   const agora = Date.now()
   for (const u of lista) for (const rotulo of chave(u)) {
-    const g = mapa.get(rotulo) ?? { rotulo, contas: 0, ativos7d: 0, comRespostas: 0, respondidas: 0, acertos: 0, erros: 0, assinantes: 0, novos30: 0 }
+    const g = mapa.get(rotulo) ?? { rotulo, contas: 0, ativos7d: 0, comRespostas: 0, respondidas: 0, acertos: 0, erros: 0, acertos_primeira: null, erros_primeira: null, assinantes: 0, novos30: 0 }
     g.contas++
     if (u.respondidas_7d > 0) g.ativos7d++
     if (u.respondidas > 0) g.comRespostas++
     g.respondidas += Number(u.respondidas); g.acertos += Number(u.acertos); g.erros += Number(u.erros)
+    if (u.acertos_primeira != null) { g.acertos_primeira = (g.acertos_primeira ?? 0) + Number(u.acertos_primeira); g.erros_primeira = (g.erros_primeira ?? 0) + Number(u.erros_primeira ?? 0) }
     if (u.plano_vigente) g.assinantes++
     if (agora - new Date(u.criado_em).getTime() < 30 * 86_400_000) g.novos30++
     mapa.set(rotulo, g)
@@ -28,6 +29,12 @@ function agrupar(lista: LinhaUsuario[], chave: (u: LinhaUsuario) => string[]): G
 const etapaDe = (u: LinhaUsuario) => u.situacao ? rotuloEtapa(u.situacao, u.ano_residencia) : 'Não informado'
 const provasDe = (u: LinhaUsuario) => (u.provas ?? '').split(',').filter(Boolean)
 const pct = (parte: number, todo: number) => `${porcentagem(parte, todo) ?? 0}%`
+/** "62% · 81% após revisão" (o real na frente); sem a migração nova, só o após revisão. */
+const acertoTexto = (g: Grupo | undefined) => {
+  if (!g) return '—'
+  const real = acertoReal(g), revisao = acertoAposRevisao(g)
+  return real !== null ? `${real}% · ${revisao ?? '—'}${revisao !== null ? '%' : ''} após revisão` : revisao !== null ? `${revisao}%` : '—'
+}
 const media = (total: number, n: number) => n ? Math.round(total / n).toLocaleString('pt-BR') : '—'
 
 /**
@@ -86,17 +93,17 @@ export function AdminPerfis({ usuarios }: { usuarios: LinhaUsuario[] }) {
     <div className="adm-linha-nota">
       <h3>Por etapa</h3>
       <button type="button" className="adm-link" onClick={() => baixarCsv(`ortoquestoes-etapas-${new Date().toISOString().slice(0, 10)}.csv`,
-        ['Etapa', 'Contas', '% das contas', 'Novos em 30 dias', 'Ativos 7 dias (%)', 'Começaram (%)', 'Questões por conta', 'Acerto (%)', 'Assinantes (%)'],
-        d.etapas.map(e => [e.rotulo, e.contas, porcentagem(e.contas, total), e.novos30, porcentagem(e.ativos7d, e.contas), porcentagem(e.comRespostas, e.contas), Math.round(e.respondidas / (e.contas || 1)), porcentagem(e.acertos, e.acertos + e.erros), porcentagem(e.assinantes, e.contas)]))}>Exportar</button>
+        ['Etapa', 'Contas', '% das contas', 'Novos em 30 dias', 'Ativos 7 dias (%)', 'Começaram (%)', 'Questões por conta', 'Acerto real, 1ª tentativa (%)', 'Acerto após revisão (%)', 'Assinantes (%)'],
+        d.etapas.map(e => [e.rotulo, e.contas, porcentagem(e.contas, total), e.novos30, porcentagem(e.ativos7d, e.contas), porcentagem(e.comRespostas, e.contas), Math.round(e.respondidas / (e.contas || 1)), acertoReal(e), acertoAposRevisao(e), porcentagem(e.assinantes, e.contas)]))}>Exportar</button>
     </div>
     <div className="adm-tabela-rolagem" role="region" aria-label="Contas por etapa" tabIndex={0}><table className="tabela adm-retencao">
-      <thead><tr><th scope="col">Etapa</th><th scope="col">Contas</th><th scope="col">% do total</th><th scope="col">Novos 30 d</th><th scope="col">Ativos 7 d</th><th scope="col">Começaram</th><th scope="col">Questões/conta</th><th scope="col">Acerto</th><th scope="col">Assinantes</th></tr></thead>
+      <thead><tr><th scope="col">Etapa</th><th scope="col">Contas</th><th scope="col">% do total</th><th scope="col">Novos 30 d</th><th scope="col">Ativos 7 d</th><th scope="col">Começaram</th><th scope="col">Questões/conta</th><th scope="col">Acerto real</th><th scope="col">Após revisão</th><th scope="col">Assinantes</th></tr></thead>
       <tbody>{d.etapas.map(e => {
         const linha = (v: number | null) => <span className="adm-celula" style={{ '--p': `${v ?? 0}%` } as React.CSSProperties}>{v === null ? '—' : `${v}%`}</span>
         return <tr key={e.rotulo}>
           <th scope="row">{e.rotulo}</th><td className="numerico">{e.contas}</td><td>{linha(porcentagem(e.contas, total))}</td><td className="numerico">{e.novos30}</td>
           <td>{linha(porcentagem(e.ativos7d, e.contas))}</td><td>{linha(porcentagem(e.comRespostas, e.contas))}</td>
-          <td className="numerico">{media(e.respondidas, e.contas)}</td><td>{linha(porcentagem(e.acertos, e.acertos + e.erros))}</td><td>{linha(porcentagem(e.assinantes, e.contas))}</td>
+          <td className="numerico">{media(e.respondidas, e.contas)}</td><td>{linha(acertoReal(e))}</td><td>{linha(acertoAposRevisao(e))}</td><td>{linha(porcentagem(e.assinantes, e.contas))}</td>
         </tr>
       })}</tbody>
     </table></div>
@@ -107,7 +114,7 @@ export function AdminPerfis({ usuarios }: { usuarios: LinhaUsuario[] }) {
         <p className="adm-nota">Cada pessoa pode marcar mais de uma; a porcentagem é sobre as {d.comProva} que responderam.</p>
         <BarrasHorizontais maximo={d.comProva || 1} itens={d.provas.map(p => ({
           rotulo: p.rotulo, valor: p.contas,
-          detalhe: p.contas ? `${pct(p.contas, d.comProva)} · ${pct(p.grupo?.ativos7d ?? 0, p.contas)} ativos na semana · acerto ${porcentagem(p.grupo?.acertos ?? 0, (p.grupo?.acertos ?? 0) + (p.grupo?.erros ?? 0)) ?? '—'}% · ${pct(p.grupo?.assinantes ?? 0, p.contas)} assinantes` : 'ninguém marcou ainda',
+          detalhe: p.contas ? `${pct(p.contas, d.comProva)} · ${pct(p.grupo?.ativos7d ?? 0, p.contas)} ativos na semana · acerto ${acertoTexto(p.grupo)} · ${pct(p.grupo?.assinantes ?? 0, p.contas)} assinantes` : 'ninguém marcou ainda',
         }))} />
       </div>
       <div className="empilha">
@@ -131,10 +138,10 @@ export function AdminPerfis({ usuarios }: { usuarios: LinhaUsuario[] }) {
     {d.servicos.length > 0 && <>
       <h3>Serviços com mais contas</h3>
       <div className="adm-tabela-rolagem" role="region" aria-label="Serviços" tabIndex={0}><table className="tabela adm-retencao">
-        <thead><tr><th scope="col">Serviço</th><th scope="col">Contas</th><th scope="col">Ativos 7 d</th><th scope="col">Questões/conta</th><th scope="col">Acerto</th><th scope="col">Assinantes</th></tr></thead>
+        <thead><tr><th scope="col">Serviço</th><th scope="col">Contas</th><th scope="col">Ativos 7 d</th><th scope="col">Questões/conta</th><th scope="col">Acerto real</th><th scope="col">Após revisão</th><th scope="col">Assinantes</th></tr></thead>
         <tbody>{d.servicos.slice(0, 15).map(s => <tr key={s.rotulo}>
           <th scope="row">{d.nomeServico.get(s.rotulo)}</th><td className="numerico">{s.contas}</td><td className="numerico">{s.ativos7d}</td>
-          <td className="numerico">{media(s.respondidas, s.contas)}</td><td className="numerico">{porcentagem(s.acertos, s.acertos + s.erros) ?? '—'}{s.acertos + s.erros ? '%' : ''}</td><td className="numerico">{s.assinantes}</td>
+          <td className="numerico">{media(s.respondidas, s.contas)}</td><td className="numerico">{acertoReal(s) ?? '—'}{acertoReal(s) !== null ? '%' : ''}</td><td className="numerico">{acertoAposRevisao(s) ?? '—'}{acertoAposRevisao(s) !== null ? '%' : ''}</td><td className="numerico">{s.assinantes}</td>
         </tr>)}</tbody>
       </table></div>
     </>}

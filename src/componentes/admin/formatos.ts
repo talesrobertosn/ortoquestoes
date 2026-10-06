@@ -106,3 +106,25 @@ export function baixarCsv(nomeArquivo: string, cabecalho: string[], linhas: Arra
   document.body.appendChild(a); a.click(); a.remove()
   setTimeout(() => URL.revokeObjectURL(url), 1000)
 }
+
+/**
+ * Acerto de uma conta (ou de um grupo somado). "Real" é a primeira resposta de
+ * cada questão; "após revisão" é a última (quem errou e acertou na revisão conta
+ * como acerto); "por tentativa" soma todas as tentativas, como a pessoa vê no
+ * Desempenho. Os dois últimos vêm da migração 202610060400; sem ela, só há o
+ * "após revisão" e o real fica nulo.
+ */
+export interface NumerosAcerto { acertos: number; erros: number; acertos_primeira?: number | null; erros_primeira?: number | null; acertos_tentativas?: number | null; erros_tentativas?: number | null }
+export const acertoReal = (n: NumerosAcerto) => n.acertos_primeira == null ? null : porcentagem(Number(n.acertos_primeira), Number(n.acertos_primeira) + Number(n.erros_primeira ?? 0))
+export const acertoAposRevisao = (n: NumerosAcerto) => porcentagem(Number(n.acertos), Number(n.acertos) + Number(n.erros))
+export const acertoPorTentativa = (n: NumerosAcerto) => n.acertos_tentativas == null ? null : porcentagem(Number(n.acertos_tentativas), Number(n.acertos_tentativas) + Number(n.erros_tentativas ?? 0))
+/** Soma os números de várias contas. */
+export function somarAcertos(lista: NumerosAcerto[]): Required<NumerosAcerto> {
+  const temReal = lista.some(n => n.acertos_primeira != null)
+  const soma = (f: (n: NumerosAcerto) => number | null | undefined) => lista.reduce((t, n) => t + Number(f(n) ?? 0), 0)
+  return {
+    acertos: soma(n => n.acertos), erros: soma(n => n.erros),
+    acertos_primeira: temReal ? soma(n => n.acertos_primeira) : null as unknown as number, erros_primeira: temReal ? soma(n => n.erros_primeira) : null as unknown as number,
+    acertos_tentativas: temReal ? soma(n => n.acertos_tentativas) : null as unknown as number, erros_tentativas: temReal ? soma(n => n.erros_tentativas) : null as unknown as number,
+  }
+}
