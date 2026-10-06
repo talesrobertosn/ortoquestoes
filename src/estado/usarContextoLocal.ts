@@ -19,10 +19,13 @@ export function usarContextoLocal(busca: string, comTurma = false) {
   // "Como a turma respondeu", para os filtros do Treinar. Só assinantes recebem.
   const { premium } = usarPremium()
   const [turma, definirTurma] = useState<ContextoLocal['turma']>(null)
+  // O servidor não respondeu: a tela avisa em vez de ficar em "carregando".
+  const [turmaFalhou, definirTurmaFalhou] = useState(false)
   useEffect(() => {
+    definirTurmaFalhou(false)
     if (!comTurma || !premium) { definirTurma(null); return }
     let vivo = true
-    carregarTurmaAcervo().then((mapa) => { if (vivo) definirTurma(mapa) })
+    carregarTurmaAcervo().then((mapa) => { if (vivo) { definirTurma(mapa); definirTurmaFalhou(!mapa) } })
     return () => { vivo = false }
   }, [comTurma, premium])
   const [respondidas] = usarArmazenado<Record<string, RegistroQuestao>>('respondidas', {})
@@ -50,5 +53,5 @@ export function usarContextoLocal(busca: string, comTurma = false) {
     [respondidas, favoritos, textos, revisaoHoje, turma],
   )
 
-  return { contexto, carregandoBusca: precisa && !textos }
+  return { contexto, carregandoBusca: precisa && !textos, turmaFalhou }
 }

@@ -1,6 +1,6 @@
 import { chamarRpc, ErroRpc } from '../servicos/supabase'
 import { gravar, ler } from '../estado/armazenamento'
-import type { PlanoSalvo } from '../dados/planoEstudo'
+import { incluiSimulados, type PlanoSalvo } from '../dados/planoEstudo'
 
 /**
  * Leitura e gravação do cronograma no servidor. A escolha de incluir os
@@ -40,4 +40,17 @@ export async function salvarPlano(dados: DadosPlano, incluirSimulados: boolean):
     await chamarRpc('salvar_plano_estudo', { ...dados })
   }
   return obterPlano()
+}
+
+/** Planos criados antes da etapa 4 do formulário: a pessoa ainda não escolheu sobre os simulados. */
+const ETAPA_SIMULADOS_EM = Date.parse('2026-10-06T21:45:00Z')
+export function mostrarNovidadeSimulados(plano: PlanoSalvo | null | undefined): plano is PlanoSalvo {
+  return !!plano && incluiSimulados(plano) && Date.parse(plano.criado_em) < ETAPA_SIMULADOS_EM && !avisoSimuladosVisto()
+}
+
+/** Tira os simulados do plano sem recomeçar: ele foi montado quando os simulados ainda não entravam. */
+export async function ficarSoComOficiais(plano: PlanoSalvo): Promise<PlanoSalvo | null> {
+  const salvo = await salvarPlano({ p_data_prova: plano.data_prova, p_intensidade: plano.intensidade, p_folgas: plano.folgas, p_prova: plano.prova, p_base: plano.base_respondidas, p_recomecar: false }, false)
+  marcarAvisoSimulados()
+  return salvo
 }

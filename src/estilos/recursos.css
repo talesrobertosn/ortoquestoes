@@ -445,3 +445,10 @@
 .dissertativa__bloco--esperada .dissertativa__rotulo { color: var(--verdete); }
 .dissertativa__sua { margin: 0; white-space: pre-wrap; }
 .dissertativa__avaliar { display: grid; gap: 0.5rem; }
+
+/* Novidade dos OrtoQuestões Simulados para quem já tinha cronograma (página do Cronograma e Início). */
+.pe-novidade { display: grid; gap: 0.6rem; padding: 1.1rem 1.2rem; border-radius: var(--raio-grande); background: linear-gradient(135deg, var(--verdete-veu), var(--superficie) 75%); border: 1px solid color-mix(in srgb, var(--verdete) 45%, var(--traco)); box-shadow: var(--sombra-media); }
+.pe-novidade h2 { margin: 0; font-size: var(--titulo-3, 1.15rem); }
+.pe-novidade p { margin: 0; }
+.pe-novidade small { color: var(--texto-2); }
+.pe-novidade__selo { justify-self: start; padding: 0.15rem 0.6rem; border-radius: 999px; background: var(--verdete); color: #fff; font-size: var(--meta); font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; }

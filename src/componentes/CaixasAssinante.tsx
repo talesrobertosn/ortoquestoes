@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { usarPremium } from '../conta/premium'
 import { obterPlano } from '../conta/cronograma'
+import { NovidadeSimulados } from './NovidadeSimulados'
 import { usarIndice } from '../dados/usarIndice'
 import { TOP_ASSUNTOS, areaPorId } from '../dados/incidencia'
 import { calcularPlano, type CalculoPlano, type PlanoSalvo } from '../dados/planoEstudo'
@@ -33,7 +34,7 @@ export function usarCronogramaHoje() {
     return () => { vivo = false }
   }, [premium])
   const calculo = useMemo(() => (indice && plano ? calcularPlano(indice, respondidas, plano) : null), [indice, plano, respondidas])
-  return { premium, logado, calculo: premium ? calculo : null, pendente }
+  return { premium, logado, calculo: premium ? calculo : null, pendente, plano: premium ? plano : null, definirPlano }
 }
 export type CronogramaHoje = ReturnType<typeof usarCronogramaHoje>
 
@@ -114,7 +115,7 @@ function TrilhaJornada({ semanas }: { semanas: CalculoPlano['semanas'] }) {
 
 /** Início: o cronograma em destaque, logo abaixo do topo. Quem não tem um vê como montar. */
 export function CartaoCronograma({ cronograma }: { cronograma: CronogramaHoje }) {
-  const { premium, logado, calculo, pendente } = cronograma
+  const { premium, logado, calculo, pendente, plano, definirPlano } = cronograma
 
   const titulo = (
     <div className="cr-destaque__texto">
@@ -130,6 +131,8 @@ export function CartaoCronograma({ cronograma }: { cronograma: CronogramaHoje })
   if (premium && calculo) {
     const pct = calculo.metaDiaria ? Math.min(100, Math.round((calculo.feitasHoje / calculo.metaDiaria) * 100)) : 100
     return (
+      <>
+      <NovidadeSimulados plano={plano} aoMudarPlano={definirPlano} />
       <section className="cr-destaque cr-destaque--jornada" aria-labelledby="cr-destaque-titulo">
         <div className="cr-destaque__texto-trilha">
           {titulo}
@@ -148,6 +151,7 @@ export function CartaoCronograma({ cronograma }: { cronograma: CronogramaHoje })
           {pendente && <a className="cr-destaque__link" href={href('/cronograma')}>Ver o cronograma completo</a>}
         </div>
       </section>
+      </>
     )
   }
 

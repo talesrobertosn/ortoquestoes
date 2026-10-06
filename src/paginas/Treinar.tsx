@@ -92,7 +92,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     }
   }, [filtros])
 
-  const { contexto, carregandoBusca } = usarContextoLocal(filtros.busca, true)
+  const { contexto, carregandoBusca, turmaFalhou } = usarContextoLocal(filtros.busca, true)
   const { premium, carregado: premiumCarregado, logado } = usarPremium()
   const semTurma = (!logado || premiumCarregado) && !premium
   const [conviteTurma, definirConviteTurma] = useState(false)
@@ -373,10 +373,11 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
               >
                 {semTurma && <Icone nome="cadeado" tamanho={14} />}
                 {ROTULO_SITUACAO[situacao]}
-                {!semTurma && <span className="numerico">{contexto.turma ? contagens?.porSituacao[situacao] ?? 0 : '…'}</span>}
+                {!semTurma && !turmaFalhou && <span className="numerico">{contexto.turma ? contagens?.porSituacao[situacao] ?? 0 : '…'}</span>}
               </button>
             ))}
           </div>
+          {!semTurma && turmaFalhou && <p className="tr-dica">Não foi possível carregar agora como a turma respondeu. Tente de novo mais tarde.</p>}
           {conviteTurma && semTurma && (
             <ConvitePremium
               variante="faixa"

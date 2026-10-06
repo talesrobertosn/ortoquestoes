@@ -203,6 +203,7 @@
 .questao-impressa .comentario { padding-top: 1.25rem; }
 .questao-impressa .bloco-comentario { border-radius: var(--raio-cartao); }
 .qz-extras { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 0.6rem; margin-top: 1.5rem; }
+.qz-nota-simulado { margin: 0.9rem 0 0; font-size: var(--meta); line-height: 1.45; color: var(--texto-2); opacity: 0.85; }
 .qz-extras .notas-questao { margin: 0; padding: 0; border-radius: var(--raio-cartao); background: var(--superficie-2); border: var(--borda); overflow: hidden; }
 .qz-extras .notas-questao > summary {
   display: flex; align-items: center; gap: 0.55rem; padding: 0.85rem 1rem; cursor: pointer; list-style: none;
