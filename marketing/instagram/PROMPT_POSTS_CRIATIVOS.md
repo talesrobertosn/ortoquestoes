@@ -32,9 +32,10 @@ estudando para a prova de título (TEOT e TEPOT 2027: 10 de janeiro de 2027).
 
 - Nome sempre "Orto Questões": "Orto" em peso 800 e "Questões" em peso 500, fonte Plus Jakarta Sans.
   Nunca a letra Q sozinha ou dentro de círculo.
-- Símbolo: quadrado verde arredondado com três linhas de "ponto + barra" (alternativas); a do meio,
-  a certa, em dourado. SVG:
-  `<svg viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/><circle cx="17" cy="20" r="4.5" fill="#9cc3bd"/><rect x="26" y="16.5" width="24" height="7" rx="3.5" fill="#9cc3bd"/><circle cx="17" cy="32" r="4.5" fill="#f4cf7c"/><rect x="26" y="28.5" width="24" height="7" rx="3.5" fill="#f4cf7c"/><circle cx="17" cy="44" r="4.5" fill="#9cc3bd"/><rect x="26" y="40.5" width="19" height="7" rx="3.5" fill="#9cc3bd"/></svg>`
+- Símbolo: a "coluna de alternativas": quadrado verde arredondado com quatro vértebras em perfil
+  (corpo e processo espinhoso), a terceira, a certa, em dourado. Use exatamente este SVG (é o de
+  `public/favicon.svg` e `src/marca/Simbolo.tsx`); não redesenhe:
+  `<svg viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#14655E"/><g fill="#FFFFFF" opacity=".55"><path transform="translate(13 9.5)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(11 21.2)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(13 44.6)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g><path fill="#F4CF7C" transform="translate(11 32.9)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></svg>`
 - Cores: verde #14655E, verde-noite #0B3A35 e #071F1C, dourado #F4CF7C (escuro #C9952F),
   creme #FBF6EA, acerto #1F7A4D, erro #B3423A, texto #12181A.
 - Fontes: Plus Jakarta Sans (títulos, 700 a 800, letter-spacing negativo, -0.03em a -0.045em);
@@ -44,6 +45,10 @@ estudando para a prova de título (TEOT e TEPOT 2027: 10 de janeiro de 2027).
   borda dourada e texto em caixa alta espaçada; cartões translúcidos com número em quadrado dourado;
   cartão de questão branco levemente girado (2 a 3 graus) com a alternativa certa em verde e as erradas
   apagadas; selo "ASSINANTE" nas funções pagas; faixa branca no rodapé com o resumo; botão dourado de chamada.
+- Temporada atual do site: RPG pixel art (fonte Pixelify Sans, ícones de `public/pixel/`, mensageiro,
+  baú, coroa, emblemas). Pode usar em posts para combinar com o site, sem tirar o verde e o dourado da base.
+- Estilos oficiais já criados: jogo de cartas, Plantão das 3h14 e Ache os 3 erros
+  (`marketing/instagram/estilos/ESTILOS.md`), além dos abaixo.
 - Varie o estilo de um post para o outro: verde-noite com cartões, editorial creme claro, contagem
   dourada gigante, caderno pautado, investigação (caso para detetive).
 
