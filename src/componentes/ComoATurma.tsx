@@ -10,15 +10,19 @@ const pessoas = (n: number) => `${n.toLocaleString('pt-BR')} ${n === 1 ? 'pessoa
 
 /**
  * "Como a turma respondeu": a primeira resposta de cada pessoa, letra a letra.
- * Aparece depois do gabarito. Sem o plano, só o convite com o número de pessoas.
+ * Para o assinante, logo abaixo do resultado (posicao "topo"). Para quem não
+ * assina, o convite fica discreto no pé, depois do comentário (posicao
+ * "rodape"), para não interromper o estudo a cada questão.
  */
-export function ComoATurma({ questao, resposta }: { questao: Questao; resposta: Resposta }) {
+export function ComoATurma({ questao, resposta, posicao }: { questao: Questao; resposta: Resposta; posicao: 'topo' | 'rodape' }) {
   const { logado, premium } = usarPremium()
   const valida = !!questao.gabarito && !questao.anulada
-  const { dados, falhou } = usarTurmaQuestao(questao.id, logado && valida)
-  if (!logado || !valida || falhou || !dados) return null
+  const minha = posicao === 'topo' ? premium : !premium
+  const { dados, falhou } = usarTurmaQuestao(questao.id, logado && valida && minha)
+  if (!minha || !logado || !valida || falhou || !dados) return null
 
   if (!premium || dados.letras === null) {
+    if (posicao === 'topo') return null
     return (
       <section className="tu tu--bloqueado" aria-label="Como a turma respondeu">
         <div className="tu-previa" aria-hidden="true">

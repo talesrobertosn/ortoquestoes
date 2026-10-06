@@ -474,6 +474,7 @@ export function CartaoQuestao({
         ) : !modoLeitura && (
           <>
             <Resultado questao={questao} resposta={resposta!} />
+            <ComoATurma questao={questao} resposta={resposta!} posicao="topo" />
           </>
         )}
 
@@ -488,8 +489,8 @@ export function CartaoQuestao({
             )}
 
             <ComentarioDaIA questao={questao} comentario={comentarioIA} carregando={carregandoIA} escolhida={resposta?.escolhida ?? null} />
-            {/* Depois do comentário: a porcentagem da turma não disputa espaço com o resultado. */}
-            {resposta && !modoLeitura && <ComoATurma questao={questao} resposta={resposta} />}
+            {/* Quem não assina vê o convite da turma só aqui, depois do comentário. */}
+            {resposta && !modoLeitura && <ComoATurma questao={questao} resposta={resposta} posicao="rodape" />}
 
             <div className="bloco-comentario">
               <p className="comentario__titulo">Comentários da comunidade</p>
