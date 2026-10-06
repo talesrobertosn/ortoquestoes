@@ -202,7 +202,7 @@ def principal() -> int:
             if identificador != "(sem id)":
                 gabaritos[identificador] = gabarito
                 letras_da_questao[identificador] = {l for l in letras if l}
-            if questao.get("area") not in (None, "cirurgia-mao", "r4-enare", "r4-coluna"):
+            if questao.get("area") not in (None, "cirurgia-mao", "r4-enare", "r4-coluna", "fellowship-quadril"):
                 erros.append(f"{onde}: área desconhecida: {questao.get('area')!r}")
             if questao.get("tipo") == "dissertativa":
                 if alternativas or gabarito:

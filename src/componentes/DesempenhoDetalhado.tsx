@@ -19,7 +19,7 @@ const GRUPOS: Array<{ id: string; rotulo: string; interesse: ProvaInteresse[]; p
   { id: 'taro', rotulo: 'TARO', interesse: ['taro'], pertence: (p, a) => !a && (p === 'TARO' || p === 'TEOT/TARO') },
   { id: 'teot', rotulo: 'TEOT', interesse: ['teot'], pertence: (p, a) => !a && (p === 'TEOT' || p === 'TEOT/TARO') },
   { id: 'mao', rotulo: 'Cirurgia da mão', interesse: ['mao'], pertence: (_p, a) => a === 'mao' },
-  { id: 'r4', rotulo: 'R4, fellowship e outras provas', interesse: ['r4'], pertence: (p, a) => a === 'coluna' || a === 'enare' || (!a && !['TARO', 'TEOT', 'TEOT/TARO'].includes(p)) },
+  { id: 'r4', rotulo: 'R4, fellowship e outras provas', interesse: ['r4'], pertence: (p, a) => a === 'coluna' || a === 'enare' || a === 'quadril' || (!a && !['TARO', 'TEOT', 'TEOT/TARO'].includes(p)) },
 ]
 
 /**

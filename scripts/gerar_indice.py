@@ -28,7 +28,7 @@ from comum import (  # noqa: E402
 
 
 # Área da questão no acervo -> código curto no índice.
-AREAS = {"cirurgia-mao": "mao", "r4-enare": "enare", "r4-coluna": "coluna"}
+AREAS = {"cirurgia-mao": "mao", "r4-enare": "enare", "r4-coluna": "coluna", "fellowship-quadril": "quadril"}
 
 DIR_COMENTARIOS = DIR_ACERVO / "comentarios"
 

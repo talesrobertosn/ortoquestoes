@@ -36,6 +36,7 @@ const DESCRICAO_AREA: Record<Area, string> = {
   base: 'TEOT, TARO e afins',
   enare: 'Ano adicional em ortopedia',
   coluna: 'R4 de cirurgia da coluna',
+  quadril: 'Simulados autorais no padrão da prova',
   mao: 'Especialidade à parte, inclui cirurgia plástica',
 }
 
@@ -142,6 +143,11 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   // Filtro que não tem nenhuma opção não vira campo vazio na tela.
   const temProva = gruposProva.length > 0
   const totalSimulados = gerais?.simulados ?? 0
+  // O convite dos simulados olha o acervo todo: hoje eles moram na categoria
+  // Fellowship Quadril, e quem treina só ortopedia também precisa encontrá-los.
+  const areasComSimulados = useMemo(() => (indice ? AREAS_TREINO.filter((a) => indice.questoes.some((q) => q.sim === 1 && (q.ar ?? 'base') === a)) : []), [indice])
+  const simuladosAcervo = useMemo(() => (indice ? contar(indice, { ...FILTROS_VAZIOS, areas: AREAS_TREINO }, contexto).simulados : 0), [indice, contexto])
+  const areasSimulado = AREAS_TREINO.filter((a) => filtros.areas.includes(a) || areasComSimulados.includes(a))
   const soSimulados = filtros.soSimulados
   const temAno = (indice?.anos.length ?? 0) > 0
   const temComentario = useMemo(
@@ -192,7 +198,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
 
   /** Recorte dos OrtoQuestões Simulados já no modo prova, levando ao formato. */
   function montarSimulado() {
-    atualizar({ soSimulados: true })
+    atualizar(areasSimulado.length === filtros.areas.length ? { soSimulados: true } : { soSimulados: true, areas: areasSimulado, provas: [] })
     definirSimulado(true)
     definirFiltrosProvaAbertos(true)
     definirFormatoAberto(true)
@@ -574,18 +580,18 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
         </Estado>
       )}
 
-      {totalSimulados > 0 && (
+      {simuladosAcervo > 0 && (
         <section className="tr-simulados" aria-labelledby="tr-simulados-titulo">
           <div className="tr-simulados__texto">
             <span className="tr-simulados__selo">Autorais</span>
             <h2 id="tr-simulados-titulo">OrtoQuestões Simulados</h2>
             <p>
-              <strong className="numerico">{totalSimulados}</strong> questões do site, no padrão das provas e todas
+              <strong className="numerico">{simuladosAcervo}</strong> questões do site, no padrão das provas e todas
               comentadas. Não são questões oficiais.
             </p>
           </div>
           <div className="tr-simulados__acoes">
-            <button type="button" className="botao" onClick={() => sessaoRapida({ soSimulados: true })}>
+            <button type="button" className="botao" onClick={() => sessaoRapida({ soSimulados: true, areas: areasSimulado })}>
               <Icone nome="raio" tamanho={16} /> 10 questões
             </button>
             <button type="button" className="botao" onClick={montarSimulado}>

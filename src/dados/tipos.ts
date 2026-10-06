@@ -210,9 +210,9 @@ export const SITUACOES_TURMA: Situacao[] = ['turmaErra', 'turmaAcertaVoceErrou']
  * o padrão do site; R4 ENARE, R4 Coluna e Cirurgia da mão são mais avançadas e só
  * entram no treino quando a pessoa marca.
  */
-export type Area = 'base' | 'enare' | 'coluna' | 'mao'
-export const AREAS_TREINO: Area[] = ['base', 'enare', 'coluna', 'mao']
-export const ROTULO_AREA: Record<Area, string> = { base: 'Ortopedia (TEOT e TARO)', enare: 'R4 ENARE', coluna: 'R4 Coluna', mao: 'Cirurgia da mão' }
+export type Area = 'base' | 'enare' | 'coluna' | 'quadril' | 'mao'
+export const AREAS_TREINO: Area[] = ['base', 'enare', 'coluna', 'quadril', 'mao']
+export const ROTULO_AREA: Record<Area, string> = { base: 'Ortopedia (TEOT e TARO)', enare: 'R4 ENARE', coluna: 'R4 Coluna', quadril: 'Fellowship Quadril', mao: 'Cirurgia da mão' }
 
 export interface Filtros {
   /** categorias incluídas no treino */

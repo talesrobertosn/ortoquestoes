@@ -25,8 +25,8 @@ Dois passos:
         "itens": [{"numero": 1, "tema": "trauma", "resposta": "B",
                    "conceito": "...", "correta": "...", "incorretas": {"A": "...", ...}}]}
 
-   Nas provas de cirurgia da mão e de R4 (ENARE, coluna), acrescente "area" no lote
-   ("cirurgia-mao", "r4-enare" ou "r4-coluna"): as questões ficam fora do treino
+   Nas provas de cirurgia da mão, de R4 (ENARE, coluna) e do Fellowship Quadril, acrescente "area" no lote
+   ("cirurgia-mao", "r4-enare", "r4-coluna" ou "fellowship-quadril"): as questões ficam fora do treino
    padrão (TEOT e TARO) e do cronograma.
 
    Só "numero", "tema" e "resposta" bastam: a questão entra com a resposta e
@@ -144,8 +144,8 @@ def aplicar(args: argparse.Namespace) -> int:
     extraido = json.loads((DIR_NOVAS / f"{lote['prova'].lower()}-{lote['ano']}.json").read_text(encoding="utf-8"))
     por_numero = {q["numero"]: q for q in extraido["questoes"]}
     oficial = bool(lote.get("gabaritoOficial"))
-    if lote.get("area") not in (None, "cirurgia-mao", "r4-enare", "r4-coluna"):
-        print(f"Área desconhecida: {lote['area']!r} (use cirurgia-mao, r4-enare, r4-coluna ou deixe sem)")
+    if lote.get("area") not in (None, "cirurgia-mao", "r4-enare", "r4-coluna", "fellowship-quadril"):
+        print(f"Área desconhecida: {lote['area']!r} (use cirurgia-mao, r4-enare, r4-coluna, fellowship-quadril ou deixe sem)")
         return 1
     temas, comentarios, erros = {}, {}, []
     agora = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
