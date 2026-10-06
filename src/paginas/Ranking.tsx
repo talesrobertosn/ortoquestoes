@@ -138,6 +138,7 @@ export function Ranking() {
   const [erro, definirErro] = useState(false)
   // Falso quando o banco ainda responde pelo ranking antigo, sem movimento.
   const [comMovimento, definirComMovimento] = useState(false)
+  const [ate100, definirAte100] = useState(false)
 
   const meuTotal = Object.keys(contexto.respondidas).length
   const { perfil: perfilRanking, carregado: perfilCarregado, nomeExibido } = usarPerfilRanking(sessao)
@@ -183,12 +184,15 @@ export function Ranking() {
   }
 
   const meuEmblema = conquistaAtual(meuTotal)
-  // A RPC devolve a sua linha mesmo fora do top 50; ela alimenta o cartão, não a lista.
+  // A RPC devolve até o top 100 e a sua linha mesmo fora dele; a sua linha
+  // alimenta o cartão, não a lista. A lista mostra o top 50 e abre até o 100.
   const eu = linhas?.find(linha => linha.eh_voce) ?? null
   const top = linhas?.filter(linha => linha.posicao <= 50) ?? null
+  const ate100Linhas = linhas?.filter(linha => linha.posicao > 50 && linha.posicao <= 100) ?? []
+  const visiveis = top ? (ate100 ? [...top, ...ate100Linhas] : top) : null
   const acima = eu && linhas ? linhas.find(linha => linha.posicao === eu.posicao - 1) ?? null : null
   const lider = top?.[0]?.total ?? 1
-  const restantes = top && top.length >= 3 ? top.slice(3) : top ?? []
+  const restantes = visiveis && visiveis.length >= 3 ? visiveis.slice(3) : visiveis ?? []
 
   return <div className="empilha-2 rk">
     <section className="rk-heroi">
@@ -297,7 +301,13 @@ export function Ranking() {
         ))}
       </ol>}
 
-      {top && minhaPosicao && minhaPosicao.posicao > top.length && (
+      {ate100Linhas.length > 0 && (
+        <button type="button" className="botao rk-mais" aria-expanded={ate100} onClick={() => definirAte100(!ate100)}>
+          <Icone nome={ate100 ? 'cima' : 'baixo'} tamanho={16} /> {ate100 ? 'Mostrar só o top 50' : 'Mostrar até o top 100'}
+        </button>
+      )}
+
+      {top && visiveis && minhaPosicao && minhaPosicao.posicao > visiveis.length && (
         <p className="rk-fora">Você está em <strong>#{minhaPosicao.posicao}</strong>, com {minhaPosicao.total.toLocaleString('pt-BR')} questões {periodo === 'semana' ? 'na semana' : 'respondidas'}. Faltam {Math.max(1, (top[top.length - 1]?.total ?? 0) - minhaPosicao.total + 1).toLocaleString('pt-BR')} para entrar no top 50.</p>
       )}
     </>}

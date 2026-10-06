@@ -147,8 +147,16 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   // Fellowship Quadril, e quem treina só ortopedia também precisa encontrá-los.
   const areasComSimulados = useMemo(() => (indice ? AREAS_TREINO.filter((a) => indice.questoes.some((q) => q.sim === 1 && (q.ar ?? 'base') === a)) : []), [indice])
   const simuladosAcervo = useMemo(() => (indice ? contar(indice, { ...FILTROS_VAZIOS, areas: AREAS_TREINO }, contexto).simulados : 0), [indice, contexto])
-  const areasSimulado = AREAS_TREINO.filter((a) => filtros.areas.includes(a) || areasComSimulados.includes(a))
+  const areasSimulado = useMemo(() => AREAS_TREINO.filter((a) => filtros.areas.includes(a) || areasComSimulados.includes(a)), [filtros.areas, areasComSimulados])
   const soSimulados = filtros.soSimulados
+  // O botão de simulados mantém as categorias marcadas; só acrescenta as que têm
+  // simulados quando as marcadas não têm nenhum.
+  const simuladosNoRecorte = useMemo(() => {
+    if (!indice) return { n: 0, areas: filtros.areas }
+    const nasMarcadas = contar(indice, { ...filtros, soSimulados: true, provas: [] }, contexto).total
+    if (nasMarcadas > 0) return { n: nasMarcadas, areas: filtros.areas }
+    return { n: contar(indice, { ...filtros, soSimulados: true, areas: areasSimulado, provas: [] }, contexto).total, areas: areasSimulado }
+  }, [indice, filtros, areasSimulado, contexto])
   const temAno = (indice?.anos.length ?? 0) > 0
   const temComentario = useMemo(
     () => (indice?.questoes ?? []).some((q) => q.c === 1),
@@ -287,6 +295,14 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
                   <span className="numerico">{n.toLocaleString('pt-BR')}</span>
                 </button>
               ))}
+              {simuladosAcervo > 0 && (
+                <button type="button" className="tr-foco__opcao tr-foco__opcao--simulados" aria-pressed={soSimulados}
+                  onClick={() => atualizar(soSimulados ? { soSimulados: false } : { soSimulados: true, areas: simuladosNoRecorte.areas, provas: [] })}>
+                  <strong>OrtoQuestões Simulados</strong>
+                  <small>Só as nossas, por engenharia reversa das provas oficiais</small>
+                  <span className="numerico">{simuladosNoRecorte.n.toLocaleString('pt-BR')}</span>
+                </button>
+              )}
             </div>
           </>
         )}

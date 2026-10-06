@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { chamarRpc, codigoErro } from '../servicos/supabase'
-import { obterPlano, salvarPlano } from '../conta/cronograma'
+import { avisoSimuladosVisto, marcarAvisoSimulados, obterPlano, salvarPlano } from '../conta/cronograma'
 import { usarPremium } from '../conta/premium'
 import { usarIndice } from '../dados/usarIndice'
 import { FILTROS_VAZIOS, type Indice } from '../dados/tipos'
@@ -44,6 +44,7 @@ export function PlanoEstudo() {
   const [plano, definirPlano] = useState<PlanoSalvo | null | undefined>(undefined)
   const [editando, definirEditando] = useState(false)
   const [erro, definirErro] = useState('')
+  const [avisoFechado, definirAvisoFechado] = useState(false)
 
   useEffect(() => {
     if (!premium) { definirPlano(null); return }
@@ -81,18 +82,48 @@ export function PlanoEstudo() {
 
   if (editando || !plano || !calculo) {
     return <FormularioPlano indice={indice} respondidas={respondidas} atual={plano} aoCancelar={plano ? () => definirEditando(false) : undefined}
-      aoSalvar={(novo) => { definirPlano(novo); definirEditando(false) }} />
+      aoSalvar={(novo) => { marcarAvisoSimulados(); definirAvisoFechado(true); definirPlano(novo); definirEditando(false) }} />
+  }
+
+  async function soOficiais() {
+    if (!plano) return
+    definirErro('')
+    try {
+      // Sem recomeçar: o plano foi montado quando os simulados ainda não entravam.
+      const salvo = await salvarPlano({ p_data_prova: plano.data_prova, p_intensidade: plano.intensidade, p_folgas: plano.folgas, p_prova: plano.prova, p_base: plano.base_respondidas, p_recomecar: false }, false)
+      if (salvo) definirPlano(salvo)
+      marcarAvisoSimulados(); definirAvisoFechado(true)
+    } catch { definirErro('Não foi possível salvar agora. Tente de novo.') }
   }
 
   return (
     <div className="empilha-2 pe">
       {erro && <p className="aviso-formulario aviso-formulario--erro" role="alert">{erro}</p>}
+      {!avisoFechado && planoSemEscolha(plano) && !avisoSimuladosVisto() && (
+        <section className="pe-novidade" aria-labelledby="pe-novidade-titulo">
+          <span className="pe-novidade__selo">Novidade</span>
+          <h2 id="pe-novidade-titulo">OrtoQuestões Simulados no seu cronograma</h2>
+          <p>Agora temos questões feitas por <strong>engenharia reversa</strong> das provas oficiais do TEOT e do TARO: o mesmo padrão de enunciado e de cobrança, com perguntas e conteúdo tirados diretamente do livro de referência e cada alternativa comentada com a citação.</p>
+          <p>Elas já foram <strong>adicionadas automaticamente</strong> ao seu cronograma. Quer manter?</p>
+          <div className="linha">
+            <button type="button" className="botao botao--principal" onClick={() => { marcarAvisoSimulados(); definirAvisoFechado(true) }}><Icone nome="certo" tamanho={16} /> Sim, manter no cronograma</button>
+            <button type="button" className="botao botao--fantasma" onClick={soOficiais}>Prefiro só as questões oficiais</button>
+          </div>
+          <small>Dá para mudar quando quiser em Ajustar o cronograma. Os simulados não contam para os temas que mais caem.</small>
+        </section>
+      )}
       <VisaoCronograma plano={plano} calculo={calculo} aberto aoComecar={comecarHoje} aoAdiantar={adiantar} pendente={sessaoPendente(sessao)} />
       <div className="linha">
         <button type="button" className="botao" onClick={() => definirEditando(true)}><Icone nome="lapis" tamanho={16} /> Ajustar o cronograma</button>
       </div>
     </div>
   )
+}
+
+/** Planos criados antes da etapa 4 do formulário: a pessoa ainda não escolheu sobre os simulados. */
+const ETAPA_SIMULADOS_EM = Date.parse('2026-10-06T21:45:00Z')
+function planoSemEscolha(plano: PlanoSalvo): boolean {
+  return incluiSimulados(plano) && Date.parse(plano.criado_em) < ETAPA_SIMULADOS_EM
 }
 
 /**

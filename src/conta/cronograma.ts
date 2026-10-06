@@ -8,6 +8,11 @@ import type { PlanoSalvo } from '../dados/planoEstudo'
  * não tiver a coluna (SQL ainda não aplicado), fica guardada no aparelho.
  */
 const CHAVE = 'cronograma:simulados'
+const CHAVE_AVISO = 'cronograma:aviso-simulados'
+
+/** O aviso de novidade dos simulados aparece uma vez para quem já tinha cronograma. */
+export const avisoSimuladosVisto = () => ler<boolean>(CHAVE_AVISO, false)
+export const marcarAvisoSimulados = () => gravar(CHAVE_AVISO, true)
 
 const funcaoInexistente = (falha: unknown) => falha instanceof ErroRpc && falha.status === 404
 
