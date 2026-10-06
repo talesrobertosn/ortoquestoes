@@ -52,7 +52,7 @@ jobs:
           VITE_SUPABASE_ANON_KEY: ${{ vars.VITE_SUPABASE_ANON_KEY }}
           VITE_LIMITES_HABILITADOS: ${{ vars.VITE_LIMITES_HABILITADOS }}
           VITE_PAGAMENTOS_HABILITADOS: ${{ vars.VITE_PAGAMENTOS_HABILITADOS }}
-          # Pixel do Meta (anúncios). Vazio: sem aviso de cookies e sem pixel.
+          # Pixel do Meta (anúncios). Vazio: usa o do código (src/conta/consentimento.ts).
           VITE_META_PIXEL_ID: ${{ vars.VITE_META_PIXEL_ID }}
         run: npm run build
       - uses: actions/configure-pages@v5

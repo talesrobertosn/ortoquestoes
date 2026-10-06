@@ -5,16 +5,18 @@
  * (ou ainda não escolheu) não baixa nada do Meta. A escolha fica guardada neste
  * aparelho e pode ser trocada a qualquer momento pelo link "Cookies" do rodapé.
  *
- * O número do pixel vem da variável VITE_META_PIXEL_ID na publicação (GitHub,
- * Settings > Secrets and variables > Actions > Variables). Sem ela, não há
- * aviso nem pixel: o site fica como antes.
+ * O número do pixel fica em PIXEL_PADRAO; a variável VITE_META_PIXEL_ID da
+ * publicação (GitHub, Settings > Secrets and variables > Actions > Variables),
+ * se existir, tem prioridade.
  */
 
 // Fora do prefixo "ortoquestoes:", que é apagado quando o visitante não tem conta.
 const CHAVE = 'oq-cookies'
 /** Muda se a lista do que é medido mudar, para perguntar de novo. */
 const VERSAO = 1
-export const PIXEL_META = String(import.meta.env.VITE_META_PIXEL_ID ?? '').trim()
+/** Pixel (conjunto de dados) do Orto Questões no Meta. Não é segredo: aparece no código de qualquer site com pixel. */
+const PIXEL_PADRAO = '1631525295341827'
+export const PIXEL_META = String(import.meta.env.VITE_META_PIXEL_ID ?? '').trim() || PIXEL_PADRAO
 export const EVENTO_ABRIR_COOKIES = 'ortoquestoes:abrir-cookies'
 
 export type Escolha = 'aceito' | 'recusado'
