@@ -8,9 +8,9 @@ import { AREAS, focoPorQuestao, idsDoFoco, pesoIncidenciaDoTema, posicaoDaArea, 
  * Os temas que mais caem na prova ganham mais espaço e vêm antes, e dentro de
  * cada tema o dia começa pelos assuntos mais cobrados.
  *
- * Entram as questões de Ortopedia, inclusive os OrtoQuestões Simulados de
- * TEOT e TARO. Ficam de fora as áreas à parte (campo `ar`: Fellowship
- * Quadril, R4, mão), as duplicatas e as anuladas.
+ * Entram as questões de Ortopedia e, se a pessoa escolher (padrão), os
+ * OrtoQuestões Simulados. Ficam de fora as áreas à parte (campo `ar`:
+ * Fellowship Quadril, R4, mão), as duplicatas e as anuladas.
  */
 
 export type Intensidade = 'leve' | 'firme' | 'completo'
@@ -21,7 +21,15 @@ export interface PlanoSalvo {
   prova: string
   base_respondidas: number
   criado_em: string
+  /** Ausente em planos antigos: conta como sim. */
+  incluir_simulados?: boolean
 }
+
+export const incluiSimulados = (plano: Pick<PlanoSalvo, 'incluir_simulados'> | null | undefined) => plano?.incluir_simulados !== false
+
+type QuestaoIndice = Indice['questoes'][number]
+/** Se a questão entra no cronograma (sem áreas à parte, cópias e anuladas; simulados conforme a escolha). */
+export const entraNoPlano = (q: QuestaoIndice, simulados: boolean) => !q.dup && !q.ar && q.an !== 1 && (simulados || q.sim !== 1)
 
 export const COBERTURA: Record<Intensidade, number> = { leve: 0.5, firme: 0.8, completo: 1 }
 export const ROTULO_INTENSIDADE: Record<Intensidade, { nome: string; texto: string }> = {
@@ -79,6 +87,7 @@ export interface CalculoPlano {
 export function calcularPlano(indice: Indice, respondidas: Record<string, RegistroMinimo>, plano: PlanoSalvo, agora = new Date()): CalculoPlano {
   const hoje = meiaNoite(agora)
   const prova = dataLocal(plano.data_prova)
+  const simulados = incluiSimulados(plano)
   const criado = meiaNoite(new Date(plano.criado_em))
   const inicioRetaFinal = new Date(prova.getFullYear(), prova.getMonth(), prova.getDate() - DIAS_RETA_FINAL)
   const fimEstudo = inicioRetaFinal > hoje ? inicioRetaFinal : prova
@@ -87,7 +96,7 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
   const porTema = new Map<number, { faltam: number; certas: number; erradas: number; respondidas: number }>()
   let elegiveis = 0, respondidasNoAcervo = 0
   for (const q of indice.questoes) {
-    if (q.dup || q.ar || q.an === 1) continue
+    if (!entraNoPlano(q, simulados)) continue
     elegiveis++
     const t = porTema.get(q.t) ?? { faltam: 0, certas: 0, erradas: 0, respondidas: 0 }
     const r = respondidas[q.id]
@@ -119,7 +128,7 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
   // Primeira resposta de hoje (não conta revisão de questão já vista).
   // Só o que entra no cronograma: cirurgia da mão, cópias e anuladas não contam.
   const feitasHoje = indice.questoes.filter((q) => {
-    if (q.dup || q.ar || q.an === 1) return false
+    if (!entraNoPlano(q, simulados)) return false
     const r = respondidas[q.id]
     const primeira = r?.historico?.[0]?.em ?? r?.q
     return primeira !== undefined && primeira >= hoje.getTime()
@@ -155,7 +164,7 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
   const livresPorTema = new Map<string, string[]>()
   const usadasPorTema = new Map<string, number>()
   for (const q of indice.questoes) {
-    if (q.dup || q.ar || q.an === 1 || respondidas[q.id]) continue
+    if (!entraNoPlano(q, simulados) || respondidas[q.id]) continue
     const slug = indice.temas[q.t]?.slug ?? String(q.t)
     const lista = livresPorTema.get(slug) ?? []
     lista.push(q.id)
@@ -222,14 +231,14 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
 }
 
 /** Linha de base do plano: questões do acervo (sem cópias nem anuladas) já respondidas. */
-export function respondidasNoAcervo(indice: Indice, respondidas: Record<string, unknown>): number {
-  return indice.questoes.filter((q) => !q.dup && !q.ar && q.an !== 1 && respondidas[q.id]).length
+export function respondidasNoAcervo(indice: Indice, respondidas: Record<string, unknown>, simulados = true): number {
+  return indice.questoes.filter((q) => entraNoPlano(q, simulados) && respondidas[q.id]).length
 }
 
 /** Meta diária que um plano novo teria, para mostrar ao escolher a intensidade. */
-export function simularMeta(indice: Indice, respondidas: Record<string, RegistroMinimo>, dataProva: string, intensidade: Intensidade, folgas: number[]): number {
-  const base = respondidasNoAcervo(indice, respondidas)
-  return calcularPlano(indice, respondidas, { data_prova: dataProva, intensidade, folgas, prova: '', base_respondidas: base, criado_em: new Date().toISOString() }).metaDiaria
+export function simularMeta(indice: Indice, respondidas: Record<string, RegistroMinimo>, dataProva: string, intensidade: Intensidade, folgas: number[], simulados = true): number {
+  const base = respondidasNoAcervo(indice, respondidas, simulados)
+  return calcularPlano(indice, respondidas, { data_prova: dataProva, intensidade, folgas, prova: '', base_respondidas: base, criado_em: new Date().toISOString(), incluir_simulados: simulados }).metaDiaria
 }
 
 /**
@@ -279,9 +288,9 @@ function ordemDoTema(indice: Indice, livres: string[]): string[] {
  * As questões de hoje dentro de um tema: só as que ainda não foram feitas,
  * começando pelos assuntos que mais caem (sorteadas dentro de cada nível).
  */
-export function idsDoDia(indice: Indice, slug: string, respondidas: Record<string, unknown>, n: number): string[] {
+export function idsDoDia(indice: Indice, slug: string, respondidas: Record<string, unknown>, n: number, simulados = true): string[] {
   const tema = indice.temas.findIndex((t) => t.slug === slug)
   if (tema < 0) return []
-  const livres = indice.questoes.filter((q) => q.t === tema && !q.dup && !q.ar && q.an !== 1 && !respondidas[q.id]).map((q) => q.id)
+  const livres = indice.questoes.filter((q) => q.t === tema && entraNoPlano(q, simulados) && !respondidas[q.id]).map((q) => q.id)
   return ordemDoTema(indice, livres).slice(0, Math.max(0, n))
 }

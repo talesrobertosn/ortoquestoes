@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { usarPremium } from '../conta/premium'
-import { chamarRpc } from '../servicos/supabase'
+import { obterPlano } from '../conta/cronograma'
 import { usarIndice } from '../dados/usarIndice'
 import { TOP_ASSUNTOS, areaPorId } from '../dados/incidencia'
 import { calcularPlano, type CalculoPlano, type PlanoSalvo } from '../dados/planoEstudo'
@@ -29,7 +29,7 @@ export function usarCronogramaHoje() {
   useEffect(() => {
     if (!premium) { definirPlano(null); return }
     let vivo = true
-    chamarRpc<PlanoSalvo[]>('obter_plano_estudo', {}).then(([p]) => { if (vivo) definirPlano(p ?? null) }).catch(() => { if (vivo) definirPlano(null) })
+    obterPlano().then((p) => { if (vivo) definirPlano(p) }).catch(() => { if (vivo) definirPlano(null) })
     return () => { vivo = false }
   }, [premium])
   const calculo = useMemo(() => (indice && plano ? calcularPlano(indice, respondidas, plano) : null), [indice, plano, respondidas])

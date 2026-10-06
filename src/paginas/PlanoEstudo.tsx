@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { chamarRpc, codigoErro } from '../servicos/supabase'
+import { obterPlano, salvarPlano } from '../conta/cronograma'
 import { usarPremium } from '../conta/premium'
 import { usarIndice } from '../dados/usarIndice'
 import { FILTROS_VAZIOS, type Indice } from '../dados/tipos'
@@ -7,7 +8,7 @@ import { usarArmazenado } from '../estado/usarArmazenado'
 import type { RegistroQuestao } from '../estado/revisao'
 import { usarSessao } from '../estado/sessao'
 import type { EstadoSessao } from '../dados/tipos'
-import { calcularPlano, dataLocal, idsDoDia, respondidasNoAcervo, ROTULO_INTENSIDADE, simularMeta, type CalculoPlano, type Intensidade, type PlanoSalvo } from '../dados/planoEstudo'
+import { calcularPlano, dataLocal, idsDoDia, incluiSimulados, respondidasNoAcervo, ROTULO_INTENSIDADE, simularMeta, type CalculoPlano, type Intensidade, type PlanoSalvo } from '../dados/planoEstudo'
 import { Carregando } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
 import { Degustacao, SeloAssinante } from '../componentes/Premium'
@@ -47,8 +48,8 @@ export function PlanoEstudo() {
   useEffect(() => {
     if (!premium) { definirPlano(null); return }
     let vivo = true
-    chamarRpc<PlanoSalvo[]>('obter_plano_estudo', {})
-      .then(([p]) => { if (vivo) { definirPlano(p ?? null); definirEditando(!p) } })
+    obterPlano()
+      .then((p) => { if (vivo) { definirPlano(p); definirEditando(!p) } })
       .catch(() => { if (vivo) { definirPlano(null); definirErro('Não foi possível carregar seu cronograma. Confira a conexão.') } })
     return () => { vivo = false }
   }, [premium])
@@ -64,7 +65,7 @@ export function PlanoEstudo() {
     if (!indice || !calculo?.hoje) return
     if (sessao && !sessao.concluidaEm && !window.confirm('Substituir a sessão em andamento? Seu histórico será mantido.')) return
     const filtros = { ...FILTROS_VAZIOS, temas: [calculo.hoje.slug], situacao: 'naoRespondidas' as const, embaralhar: true, limite: calculo.hoje.n }
-    iniciar(filtros, idsDoDia(indice, calculo.hoje.slug, respondidas, calculo.hoje.n), { origem: 'cronograma' })
+    iniciar(filtros, idsDoDia(indice, calculo.hoje.slug, respondidas, calculo.hoje.n, incluiSimulados(plano)), { origem: 'cronograma' })
     navegar('/sessao')
   }
 
@@ -74,7 +75,7 @@ export function PlanoEstudo() {
     if (!tema) return
     if (sessao && !sessao.concluidaEm && !window.confirm('Substituir a sessão em andamento? Seu histórico será mantido.')) return
     const filtros = { ...FILTROS_VAZIOS, temas: [tema.slug], situacao: 'naoRespondidas' as const, embaralhar: true, limite: n }
-    iniciar(filtros, idsDoDia(indice, tema.slug, respondidas, n), { origem: 'cronograma' })
+    iniciar(filtros, idsDoDia(indice, tema.slug, respondidas, n, incluiSimulados(plano)), { origem: 'cronograma' })
     navegar('/sessao')
   }
 
@@ -179,7 +180,7 @@ function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar, penden
       <div className="pe-heroi__texto">
         <p className="pe-heroi__selo"><Icone nome="rota" tamanho={15} /> {aberto ? 'Cronograma' : 'Prévia do seu cronograma'} · {plano.prova}</p>
         <h1>{calculo.provaPassou ? 'A prova chegou. Boa sorte!' : <>Faltam <span className="numerico">{calculo.diasAteProva}</span> {calculo.diasAteProva === 1 ? 'dia' : 'dias'}</>}</h1>
-        <p>Prova em {longa(plano.data_prova)}. Intensidade {ROTULO_INTENSIDADE[plano.intensidade].nome.toLowerCase()}{plano.folgas.length ? `, folga ${plano.folgas.map((d) => DIAS_SEMANA[d]).join(', ')}` : ''}.</p>
+        <p>Prova em {longa(plano.data_prova)}. Intensidade {ROTULO_INTENSIDADE[plano.intensidade].nome.toLowerCase()}{plano.folgas.length ? `, folga ${plano.folgas.map((d) => DIAS_SEMANA[d]).join(', ')}` : ''}. {incluiSimulados(plano) ? 'Questões oficiais e OrtoQuestões Simulados.' : 'Só questões oficiais.'}</p>
         <p className={`pe-ritmo pe-ritmo--${ritmoTexto.classe}`}><Icone nome={ritmoTexto.classe === 'atras' ? 'baixo' : ritmoTexto.classe === 'frente' ? 'cima' : 'certo'} tamanho={15} /> {ritmoTexto.texto}</p>
       </div>
       <div className="pe-meta">
@@ -357,6 +358,7 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
   const [prova, definirProva] = useState(atual?.prova ?? 'TEOT')
   const [intensidade, definirIntensidade] = useState<Intensidade>(atual?.intensidade ?? 'firme')
   const [folgas, definirFolgas] = useState<number[]>(atual?.folgas ?? [0])
+  const [simulados, definirSimulados] = useState(incluiSimulados(atual))
   const [recomecar, definirRecomecar] = useState(false)
   const [salvando, definirSalvando] = useState(false)
   const [erro, definirErro] = useState('')
@@ -364,15 +366,17 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
 
   async function salvar() {
     if (!dataValida || salvando) return
-    const base = respondidasNoAcervo(indice, respondidas)
+    const base = respondidasNoAcervo(indice, respondidas, simulados)
     if (previa) {
-      aoSalvar({ data_prova: data, intensidade, folgas, prova, base_respondidas: base, criado_em: new Date().toISOString() })
+      aoSalvar({ data_prova: data, intensidade, folgas, prova, base_respondidas: base, criado_em: new Date().toISOString(), incluir_simulados: simulados })
       return
     }
     definirSalvando(true); definirErro('')
     try {
-      await chamarRpc('salvar_plano_estudo', { p_data_prova: data, p_intensidade: intensidade, p_folgas: folgas, p_prova: prova, p_base: base, p_recomecar: !atual || recomecar })
-      const [salvo] = await chamarRpc<PlanoSalvo[]>('obter_plano_estudo', {})
+      // Trocar a escolha dos simulados muda o tamanho do acervo do plano: a contagem recomeça.
+      const mudouSimulados = !!atual && incluiSimulados(atual) !== simulados
+      const salvo = await salvarPlano({ p_data_prova: data, p_intensidade: intensidade, p_folgas: folgas, p_prova: prova, p_base: base, p_recomecar: !atual || recomecar || mudouSimulados }, simulados)
+      if (!salvo) throw new Error('Plano não encontrado depois de salvar.')
       aoSalvar(salvo)
     } catch (falha) {
       definirErro(codigoErro(falha) === 'data_invalida' ? 'Escolha uma data futura, em até dois anos.' : codigoErro(falha) === 'premium_necessario' ? 'O cronograma é exclusivo para assinantes.' : 'Não foi possível salvar agora. Tente de novo.')
@@ -390,7 +394,7 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
         <div>
           <p className="pe-heroi__selo"><Icone nome="rota" tamanho={15} /> {atual ? 'Ajustar' : 'Seu estudo até a prova'}</p>
           <h1 className="pe-heroi__nome">Cronograma</h1>
-          <p>Um plano de estudo até o dia da sua prova. Você responde três perguntas e ele diz <strong>quantas questões fazer por dia</strong> e <strong>qual tema estudar em cada semana</strong>, começando pelo que mais cai no TEOT e no TARO.{previa ? ' Preencha abaixo e veja a prévia do seu.' : ''}</p>
+          <p>Um plano de estudo até o dia da sua prova. Você responde quatro perguntas e ele diz <strong>quantas questões fazer por dia</strong> e <strong>qual tema estudar em cada semana</strong>, começando pelo que mais cai no TEOT e no TARO.{previa ? ' Preencha abaixo e veja a prévia do seu.' : ''}</p>
         </div>
         <ComoFunciona />
       </section>
@@ -419,7 +423,7 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
                 <button key={i} type="button" role="radio" aria-checked={intensidade === i} className="pe-intensidade" onClick={() => definirIntensidade(i)}>
                   <strong>{ROTULO_INTENSIDADE[i].nome}</strong>
                   <span>{ROTULO_INTENSIDADE[i].texto}</span>
-                  {dataValida && <b className="numerico">{simularMeta(indice, respondidas, data, i, folgas)} por dia</b>}
+                  {dataValida && <b className="numerico">{simularMeta(indice, respondidas, data, i, folgas, simulados)} por dia</b>}
                 </button>
               ))}
             </div>
@@ -436,6 +440,24 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
                   onClick={() => definirFolgas(folgas.includes(i) ? folgas.filter((x) => x !== i) : [...folgas, i].sort())}>{d}</button>
               ))}
             </div>
+          </div>
+        </div>
+        <div className="pe-form__passo">
+          <span className="tr-etapa__numero">4</span>
+          <div className="pe-form__campos">
+            <h2>Incluir os OrtoQuestões Simulados?</h2>
+            <p className="texto-2">São questões autorais do site, feitas por <strong>engenharia reversa das provas originais</strong>: o mesmo estilo, o mesmo tipo de cobrança e o mesmo nível, escritas a partir da bibliografia de referência e comentadas com a citação do livro. Cobrem pontos do livro que ainda não caíram e fixam o conteúdo de onde saem as próximas questões. Não contam para os temas que mais caem, que usam só as provas oficiais.</p>
+            <div className="pe-intensidades" role="radiogroup" aria-label="OrtoQuestões Simulados">
+              <button type="button" role="radio" aria-checked={simulados} className="pe-intensidade" onClick={() => definirSimulados(true)}>
+                <strong>Oficiais e Simulados</strong>
+                <span>Recomendado. Mais questões no padrão da prova, para aprender o conteúdo e não só decorar as provas anteriores.</span>
+              </button>
+              <button type="button" role="radio" aria-checked={!simulados} className="pe-intensidade" onClick={() => definirSimulados(false)}>
+                <strong>Só questões oficiais</strong>
+                <span>Apenas as questões das provas anteriores. Os simulados continuam disponíveis no treino livre.</span>
+              </button>
+            </div>
+            {atual && incluiSimulados(atual) !== simulados && <p className="pe-form__resumo"><Icone nome="relogio" tamanho={15} /> Trocar esta opção recomeça a contagem do cronograma a partir de hoje.</p>}
           </div>
         </div>
         {atual && <label className="caixa"><input type="checkbox" checked={recomecar} onChange={(e) => definirRecomecar(e.target.checked)} /><span>Recomeçar a contagem hoje (zera o "à frente ou atrás do cronograma")</span></label>}

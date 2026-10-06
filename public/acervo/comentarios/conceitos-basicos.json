@@ -3428,5 +3428,229 @@
   ],
   "geradoEm": "2026-10-05",
   "conferido": false
+ },
+ "conceitos-basicos-0324": {
+  "conceito": "### Material e estrutura não são a mesma coisa\n\nO Rockwood (capítulo 1, seção Structural Properties e Figura 1-4) separa duas ideias. ==Propriedade do material== é o comportamento do metal em si, medido pelo módulo de elasticidade (E). ==Propriedade estrutural== depende do material ==e também da forma e do tamanho== do implante. Duas placas do mesmo aço podem ter rigidez muito diferente só pela geometria.\n\n### O segundo momento de inércia\n\nA rigidez à flexão é o produto ==E × I==, em que I é o segundo momento de inércia, calculado pela seção transversal. Para uma placa retangular:\n\n==I = largura × espessura³ / 12==\n\n| Mudança | Efeito na rigidez à flexão |\n|---|---|\n| Dobrar a ==largura== | 2 vezes (relação linear) |\n| Dobrar a ==espessura== | ==8 vezes== (2³) |\n| Dobrar o diâmetro de um fio de Kirschner | ==16 vezes== (2⁴, cilindro maciço) |\n\n### Na prática\n\n1. A placa ==1/3 tubular== e a ==placa de compressão de 3,5 mm== têm larguras parecidas, mas a segunda é mais espessa e muito mais rígida.\n2. A mensagem do capítulo: aumentar ==espessura ou diâmetro== muda muito mais a rigidez do construto do que aumentar a largura.\n3. O mesmo raciocínio explica por que o fêmur do idoso, que aumenta de diâmetro com a idade, compensa parte da perda de cortical.\n\n> **Na prova:** espessura entra ao cubo (8 vezes); diâmetro do fio entra à quarta potência (16 vezes).",
+  "correta": "**Correta.** Segundo o Rockwood (capítulo 1, Figura 1-4), a rigidez à flexão da placa depende do cubo da espessura (I = largura × espessura³ / 12). Dobrar a espessura multiplica a rigidez por 2³, ou seja, 8 vezes.",
+  "incorretas": {
+   "A": "**Errada.** Duas vezes é o efeito de dobrar a largura, que entra de forma linear na fórmula do segundo momento de inércia.",
+   "B": "**Errada.** Quatro vezes corresponderia a uma relação quadrática, que não é a da espessura da placa. A espessura entra ao cubo.",
+   "D": "**Errada.** Dezesseis vezes é o efeito de dobrar o diâmetro de um cilindro maciço, como o fio de Kirschner, que entra à quarta potência."
+  },
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 1 (Biomechanics of Fractures and Fracture Fixation; Bottlang, Fitzpatrick, Wilkinson, Claes e Anderson)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0325": {
+  "conceito": "### Por que o tubo é uma estrutura eficiente\n\nO Rockwood (capítulo 1, Structural Properties, Figura 1-4C) mostra que o cilindro oco é uma estrutura ==otimizada para o peso==. A resistência à flexão vem principalmente do material ==mais distante do centro== (eixo neutro). O núcleo, perto do centro, contribui pouco.\n\n### Os números do capítulo\n\n| Situação | Efeito |\n|---|---|\n| Retirar o núcleo de ==50% do diâmetro== | remove ==25% do material== |\n| Rigidez e resistência à flexão | caem só ==cerca de 6%== |\n| Haste maciça de 10 mm | I = 490 mm⁴ |\n| Haste de 10 mm com canal de 3 mm | I = 487 mm⁴ |\n\n### Consequências clínicas\n\n1. A canulação da haste para passar o ==fio-guia não compromete== de forma relevante a resistência à flexão.\n2. A diáfise também é um cilindro oco: aumentar o diâmetro externo de 10 para 12 mm, mantendo 2 mm de parede, aumenta a rigidez à flexão em 82%.\n3. O mesmo princípio explica por que o ==calo periosteal== estabiliza muito mais que o endosteal: está mais longe do eixo neutro.\n\n> **Na prova:** tirar metade do diâmetro do núcleo custa só cerca de 6% da rigidez à flexão.",
+  "correta": "**Correta.** Segundo o capítulo 1 do Rockwood, retirar o núcleo correspondente a 50% do diâmetro remove 25% do material, mas reduz a rigidez e a resistência à flexão em apenas cerca de 6%, porque o material central quase não contribui para resistir à flexão.",
+  "incorretas": {
+   "B": "**Errada.** Vinte e cinco por cento é a quantidade de material removido, e não a perda de rigidez à flexão.",
+   "C": "**Errada.** A perda não é proporcional ao diâmetro retirado. O núcleo fica perto do eixo neutro e contribui pouco para a rigidez à flexão.",
+   "D": "**Errada.** Uma perda de 75% contradiz o exemplo do próprio capítulo, em que a haste de 10 mm com canal de 3 mm mantém praticamente o mesmo segundo momento de inércia da maciça."
+  },
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 1 (Biomechanics of Fractures and Fracture Fixation; Bottlang, Fitzpatrick, Wilkinson, Claes e Anderson)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0326": {
+  "conceito": "### Rigidez e resistência são grandezas diferentes\n\nO Rockwood (capítulo 1, Material Properties, Tabela 1-1 e Figura 1-2) insiste nessa distinção:\n\n1. ==Módulo de elasticidade (E)==: inclinação da parte linear da curva tensão-deformação. Mede a ==rigidez== do material, quanto ele deforma sob carga dentro da região elástica.\n2. ==Resistência ao escoamento==: carga em que começa a deformação ==plástica== (permanente).\n3. ==Resistência máxima==: carga em que o material ==rompe==.\n\n### Os números\n\n| Material | Módulo de elasticidade | Resistência máxima |\n|---|---|---|\n| Aço inoxidável | ==200 GPa== | ==900 MPa== |\n| Titânio | ==110 GPa== | ==860 MPa== |\n| Osso cortical | cerca de 17 GPa | cerca de 4 vezes menor que o aço |\n\nO aço é ==cerca de duas vezes mais rígido==, mas a resistência máxima dos dois é ==semelhante==. Um material mais elástico ==não precisa ser mais fraco==.\n\n### Por que isso importa\n\n1. O titânio, por ser menos rígido, diminui o ==gradiente de rigidez== na ponta da placa e o risco de fratura no parafuso da extremidade.\n2. Por isso as hastes modernas costumam ser de liga de titânio, com ponta afilada e arredondada.\n3. Material ==dúctil== (aço) deforma bastante entre o escoamento e a ruptura; ==frágil== (cimento ósseo, osso cortical) rompe quase sem deformar.\n\n> **Na prova:** titânio é cerca de metade da rigidez do aço, com resistência máxima parecida.",
+  "correta": "**Correta.** Segundo o capítulo 1 do Rockwood, o titânio tem módulo de elasticidade de cerca de 110 GPa contra 200 GPa do aço inoxidável, mas resistência máxima semelhante (860 contra 900 MPa). Um material mais elástico não precisa ser mais fraco.",
+  "incorretas": {
+   "A": "**Errada, inverte a rigidez.** O titânio é cerca de duas vezes menos rígido que o aço; o módulo de elasticidade é menor, e não maior.",
+   "B": "**Errada nos dois pontos.** O módulo do titânio é menor que o do aço, e a resistência máxima dos dois é semelhante.",
+   "D": "**Errada.** O módulo é de fato menor, mas a resistência máxima do titânio (860 MPa) é praticamente a mesma do aço (900 MPa), e não muito menor."
+  },
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 1 (Biomechanics of Fractures and Fracture Fixation; Bottlang, Fitzpatrick, Wilkinson, Claes e Anderson)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0327": {
+  "conceito": "### A direção da carga define o traço\n\nO Rockwood (capítulo 1, Traumatic Loads Resulting in Fracture, Figura 1-6 e Tabela 1-3) resume: ==a direção da carga determina o padrão== da fratura, e a ==magnitude determina a gravidade==. Como o osso é anisotrópico, a energia necessária varia muito conforme o tipo de carga.\n\n| Padrão | Carga |\n|---|---|\n| ==Transverso== | ==tração== (ou flexão de baixa energia, que traciona a cortical oposta) |\n| Oblíquo curto | compressão axial (plano de cisalhamento máximo a 45 graus) ou flexão com compressão |\n| ==Asa de borboleta== | flexão com compressão axial |\n| ==Espiral== | torção |\n| Cominutivo | alta energia |\n\n### As avulsões\n\nA tração interna, transmitida por tendões e ligamentos, rompe o osso num plano ==perpendicular== à força. Exemplos do capítulo: ==base do quinto metatarso, maléolo medial, olécrano e algumas fraturas da patela==.\n\n### Energia de cada tipo de carga\n\n| Osso | Carga | Energia de falha |\n|---|---|---|\n| Patela | tração | 3 J |\n| Tíbia | torção | 10 J |\n| Corpo vertebral | compressão | 100 J |\n\nO osso é ==mais fraco em tração==, por isso as fraturas transversas costumam ser de menor energia.\n\n> **Na prova:** avulsão = tração = traço transverso.",
+  "correta": "**Correta.** Segundo o capítulo 1 do Rockwood, as fraturas transversas resultam de carga em tração, que rompe o osso num plano perpendicular à força. As avulsões por tração interna de tendões, como no olécrano, no maléolo medial, na base do quinto metatarso e em algumas fraturas da patela, são o exemplo clássico.",
+  "incorretas": {
+   "A": "**Errada.** A torção produz a fratura espiral, com traço a cerca de 45 graus e pontas longas, e não o traço transverso.",
+   "C": "**Errada.** A compressão axial pura produz traço oblíquo curto, no plano de cisalhamento máximo, e o osso é justamente mais resistente em compressão.",
+   "D": "**Errada.** O cisalhamento está ligado aos traços oblíquos, inclusive na compressão axial; a fratura por avulsão é por tração."
+  },
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 1 (Biomechanics of Fractures and Fracture Fixation; Bottlang, Fitzpatrick, Wilkinson, Claes e Anderson)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0328": {
+  "conceito": "### Como se forma a borboleta\n\nO Rockwood (capítulo 1, Butterfly Fractures, Figura 1-7) descreve o mecanismo clássico: ==flexão combinada com compressão axial==.\n\n1. A flexão cria ==tração na cortical oposta== ao ponto de aplicação da carga (do outro lado do eixo neutro) e ==compressão na cortical do lado da carga==.\n2. O osso é mais fraco em tração, então a fratura ==começa como traço transverso na cortical oposta==.\n3. Na cortical do lado da carga, a compressão faz o osso falhar em cisalhamento, com ==dois traços oblíquos a 45 graus==.\n4. Os dois traços oblíquos encontram o traço transverso e isolam o ==fragmento em asa de borboleta==, que fica do lado da carga.\n\n### Energia e variações\n\n1. A energia para formar a borboleta é ==maior== que a da fratura transversa ou da oblíqua simples.\n2. O tamanho do fragmento e a orientação dos traços dependem do ponto de impacto e da presença de carga axial.\n3. Também pode surgir por carga progressiva sobre uma oblíqua; nesse caso todos os traços são oblíquos, sem componente transverso.\n\n### Para que serve saber\n\nReconhecer o lado da tração e o da compressão ajuda a escolher o implante e onde colocá-lo: o lado em tração é o lado que se abre sob flexão.\n\n> **Na prova:** borboleta = flexão mais compressão; traço transverso na cortical oposta, em tração; fragmento do lado da carga.",
+  "correta": "**Correta.** Segundo o capítulo 1 do Rockwood, a flexão traciona a cortical do lado oposto ao da carga, onde começa o traço transverso, enquanto a cortical do lado da carga falha em compressão com dois traços oblíquos, que isolam o fragmento em asa de borboleta.",
+  "incorretas": {
+   "A": "**Errada.** A cortical do lado da carga, comprimida, é a que forma os traços oblíquos, e não o traço transverso.",
+   "B": "**Errada.** Do lado da carga a cortical é comprimida, e não tracionada, pela flexão.",
+   "C": "**Errada.** A cortical oposta à carga é submetida à tração, e não à compressão; por isso ela abre em traço transverso."
+  },
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 1 (Biomechanics of Fractures and Fracture Fixation; Bottlang, Fitzpatrick, Wilkinson, Claes e Anderson)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0329": {
+  "conceito": "### O que é a consolidação primária\n\nO Rockwood (capítulo 1, Primary Bone Healing, Figura 1-17) define a consolidação ==direta ou primária== como a que ocorre após ==redução anatômica com compressão== dos fragmentos. Exige:\n\n| Requisito | Valor |\n|---|---|\n| Movimento interfragmentário | ==menor que 0,15 mm== |\n| Deformação (strain) | ==menor que 2% a 5%== |\n| Fenda no foco | ==ausente== |\n\nEla ocorre por ==remodelação direta==: cones de corte de osteoclastos atravessam o traço e osteoblastos formam osso novo (consolidação por contato). Onde sobra uma fenda microscópica, o osso é depositado perpendicular ao eixo e depois remodelado (consolidação por fenda), mais fraca.\n\n### Por que demora e por que refratura\n\n1. Não passa pelas etapas de hematoma, calo mole e calo duro: vai direto à remodelação, mas isso ==não é mais rápido==; é um processo ==lento==.\n2. Em tíbias de ovelha radiograficamente consolidadas com placa de compressão, ==um terço refraturou pelo traço original com 48 semanas==.\n3. Sem calo periosteal, a radiografia ==quase não mostra== o estado da consolidação (a imagem A, com 12 meses, parece \"pronta\").\n4. Retirar a placa cedo arrisca ==refratura pelo traço original==, como na imagem B.\n\n### A recomendação\n\nAdiar a retirada da placa por ==até 2 anos== após a cirurgia, para permitir a consolidação completa. O capítulo lembra ainda que a retirada raramente é necessária.\n\n> **Na prova:** consolidação primária é lenta e invisível; retirada da placa só depois de até 2 anos.",
+  "correta": "**Correta.** O capítulo 1 do Rockwood recomenda adiar a retirada da placa por até 2 anos após a cirurgia, porque a consolidação primária é lenta e quase invisível na radiografia; a retirada precoce arrisca refratura pelo traço original, como na imagem.",
+  "incorretas": {
+   "A": "**Errada.** Seis meses é cedo demais para a consolidação primária, que é lenta; o exemplo da imagem refraturou mesmo com 12 meses.",
+   "B": "**Errada.** A imagem mostra justamente uma placa retirada após 12 meses, com refratura 9 dias depois pelo traço original.",
+   "C": "**Errada.** Dezoito meses ainda é menos do que a recomendação do capítulo, que é adiar por até 2 anos."
+  },
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 1 (Biomechanics of Fractures and Fracture Fixation; Bottlang, Fitzpatrick, Wilkinson, Claes e Anderson)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0330": {
+  "conceito": "### Estabilidade relativa e calo\n\nO Rockwood (capítulo 1, Natural Bone Healing e Tabela 1-7) chama de ==consolidação natural== a que ocorre com ==calo==, sob estabilidade relativa: gesso, órtese funcional, haste intramedular, fixador externo ou placa em ponte flexível. O calo se forma ==ao redor do foco== (periosteal e endosteal), e não dentro da fenda.\n\n### Os quatro fatores mecânicos do calo\n\n| Fator | Objetivo | Evitar |\n|---|---|---|\n| Movimento interfragmentário | ==0,2 a 1 mm== | ==menos de 0,2 mm== |\n| Início do movimento | ==precoce== | tardio |\n| Direção do movimento | ==axial (compressão)== | ==cisalhamento== |\n| Fenda residual | pequena | grande |\n\n### Detalhes que caem\n\n1. O movimento medido no fixador externo com carga ficou entre 0,5 e 1 mm, e simples flexão plantar e dorsal do tornozelo gerou movimento semelhante.\n2. Fraturas da tíbia em órtese consolidaram com até ==4 mm== de movimento, e estudos animais mostram consolidação, mais lenta, com até 6 mm.\n3. Pouco estímulo basta: ==10 ciclos== de compressão por dia já produziram calo robusto.\n4. Movimento iniciado na ==primeira semana== deu o dobro de conteúdo mineral em relação ao iniciado na sexta.\n5. Abaixo de 0,15 mm, com compressão, o alvo passa a ser a consolidação ==primária==, sem calo.\n\n> **Na prova:** calo gosta de 0,2 a 1 mm, axial e precoce; cisalhamento atrapalha.",
+  "correta": "**Correta.** A Tabela 1-7 do capítulo 1 do Rockwood define como objetivo, para a consolidação com calo, um movimento interfragmentário de 0,2 a 1 mm, precoce e axial, evitando movimento menor que 0,2 mm e o cisalhamento.",
+  "incorretas": {
+   "A": "**Errada.** Movimento abaixo de 0,15 mm é o ambiente da consolidação primária, sem calo; para a consolidação com calo, abaixo de 0,2 mm é o que se deve evitar.",
+   "C": "**Errada.** Movimentos de até 4 mm ainda são compatíveis com consolidação na órtese, mas não são a faixa ideal, que é de 0,2 a 1 mm.",
+   "D": "**Errada.** Movimentos de até 6 mm permitiram consolidação em animais, porém mais lenta; ficam muito acima do ideal."
+  },
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 1 (Biomechanics of Fractures and Fracture Fixation; Bottlang, Fitzpatrick, Wilkinson, Claes e Anderson)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0331": {
+  "conceito": "### Duas formas de não consolidar\n\nO Rockwood (capítulo 1, Delayed Union and Nonunion, Figura 1-19) mostra que a pseudartrose pode vir de ==movimento demais ou de movimento de menos==:\n\n| Tipo | Ambiente mecânico | Aspecto |\n|---|---|---|\n| ==Hipertrófica== | ==instabilidade==, movimento excessivo | ==muito calo==, sem ponte no foco |\n| ==Atrófica== | ==construto rígido demais com fenda residual== | pouco ou nenhum calo |\n\n### Por que a placa bloqueada pode dar atrófica\n\n1. A técnica biológica de ponte ==deixa fendas residuais== para preservar a biologia.\n2. Placas bloqueadas e de compressão produzem ambiente de ==alta rigidez==, várias vezes mais rígido que haste e fixador externo.\n3. Com fenda e pouca mobilidade, ==falta estímulo== para o calo. Embaixo da placa, o movimento é quase nulo.\n4. O capítulo cita taxa de pseudartrose de ==cerca de 20%== nas fraturas do fêmur distal fixadas com placa bloqueada por técnica biológica.\n\n### E a hipertrófica\n\nQuando o movimento ultrapassa o que o tecido tolera, deposita-se cartilagem e tecido fibroso para conter a mobilidade, e o calo fica largo, sem fazer ponte.\n\n### A lição\n\nAntes de escolher o implante, definir o ==modo de consolidação desejado==: estabilidade relativa, com rigidez adequada, para o calo; estabilidade absoluta, com compressão, para a primária. Misturar as duas estratégias leva à pseudartrose.\n\n> **Na prova:** fenda mais construto rígido = atrófica; instabilidade = hipertrófica.",
+  "correta": "**Correta.** O capítulo 1 do Rockwood apresenta essas radiografias como pseudartroses atróficas após placas bloqueadas por técnica biológica, com fendas residuais e construto excessivamente rígido, que não permitiu o movimento necessário para estimular o calo.",
+  "incorretas": {
+   "A": "**Errada.** O construto rígido com fenda residual leva à pseudartrose atrófica, com pouco calo, e não à hipertrófica.",
+   "B": "**Errada.** O excesso de mobilidade produz pseudartrose hipertrófica, com calo abundante, o que não é o caso de um construto rígido com fenda.",
+   "C": "**Errada.** O tipo está certo, mas a causa não: excesso de mobilidade gera a forma hipertrófica; a atrófica aqui vem da rigidez excessiva."
+  },
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 1 (Biomechanics of Fractures and Fracture Fixation; Bottlang, Fitzpatrick, Wilkinson, Claes e Anderson)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0332": {
+  "conceito": "### Fixação em alavanca\n\nO Rockwood (capítulo 1, Maximizing Fixation Span, Figura 1-22) usa a ideia de alavanca: o fêmur proximal é um braço longo que gera grande momento fletor sobre o foco, e a placa precisa equilibrá-lo.\n\n### Dois termos que não são sinônimos\n\n| Termo | Definição | Efeito de aumentar |\n|---|---|---|\n| ==Extensão de fixação== (fixation span) | maior distância entre os pontos de fixação ==de um mesmo lado== da fratura | ==aumenta a resistência== e reduz o pico de tensão no parafuso da ponta |\n| ==Comprimento de trabalho== (working length, bridge span) | distância entre os parafusos ==mais próximos do foco==, de cada lado | reduz a extensão de fixação, ==enfraquece== o construto e ==aumenta o cisalhamento== |\n\n### Regras práticas do capítulo\n\n1. ==Placa longa com parafusos diafisários bem espaçados== dá a maior resistência.\n2. O ==número== de parafusos importa menos que a extensão de fixação: acima de três, o quarto melhora pouco a estabilidade axial; mais de quatro bicorticais não aumenta a resistência de forma significativa.\n3. Parafusos adicionais só se justificam com má pega em osso osteoporótico.\n4. Na extremidade, o parafuso ==convencional== reduz o pico de tensão; trocar o bloqueado da ponta por um convencional aumenta a resistência à flexão em cerca de 40%.\n\n> **Na prova:** espaçar os parafusos aumenta a resistência; omitir os perto do foco aumenta o comprimento de trabalho, não a resistência.",
+  "correta": "**Correta.** Segundo o capítulo 1 do Rockwood, uma placa longa com parafusos diafisários amplamente espaçados maximiza a extensão de fixação, ganha vantagem mecânica contra o braço de alavanca do fêmur proximal e reduz o pico de tensão no parafuso da ponta, dando a maior resistência ao construto.",
+  "incorretas": {
+   "A": "**Errada.** O número de parafusos importa menos que o espaçamento; acima de quatro bicorticais não há ganho significativo de resistência.",
+   "B": "**Errada.** O parafuso bloqueado na extremidade aumenta o gradiente de rigidez e o pico de tensão na ponta; o convencional ali aumenta a resistência à flexão em cerca de 40%.",
+   "D": "**Errada.** Omitir os parafusos próximos ao foco aumenta o comprimento de trabalho, mas reduz a extensão de fixação, enfraquece o construto e aumenta o cisalhamento."
+  },
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 1 (Biomechanics of Fractures and Fracture Fixation; Bottlang, Fitzpatrick, Wilkinson, Claes e Anderson)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0333": {
+  "conceito": "### A fratura do idoso é uma fratura de queda\n\nO Rockwood (capítulo 1, Osteoporosis, Figura 1-9) lembra que ==quase 90%== das fraturas osteoporóticas do fêmur proximal ocorrem por ==queda==; só cerca de 10% são espontâneas durante a marcha.\n\n### Onde o osso se mantém e onde se perde\n\n| Região do colo | Densidade | Por quê |\n|---|---|---|\n| ==Inferior== | ==preservada== | recebe as cargas da ==marcha== |\n| ==Posterossuperior== | ==diminuída== | é a região que transmite as cargas da ==queda== |\n\n### Consequências\n\n1. A preservação inferior explica por que fraturas espontâneas na marcha são menos prováveis.\n2. A perda posterossuperior explica por que a maioria das fraturas ocorre numa queda de baixa energia.\n3. Explica também o padrão frequente ==em valgo==: o colo superior colapsa enquanto o comprimento inferior se mantém.\n4. Na queda de pé, o impacto lateral no trocânter gera carga perpendicular ao eixo do fêmur, de ==10 a 17 vezes o peso corporal==.\n\n### Limitações da densitometria\n\nA resistência do osso osteoporótico varia com o ==cubo da densidade mineral==, mas a densitometria (DXA) correlaciona-se só cerca de ==60%== com o risco de fratura do fêmur proximal, porque é uma média bidimensional que ignora a distribuição regional. A tomografia quantitativa detecta essas diferenças locais.\n\n> **Na prova:** colo osteoporótico preserva o inferior (marcha) e perde o posterossuperior (queda).",
+  "correta": "**Correta.** Segundo o capítulo 1 do Rockwood, a tomografia quantitativa mostra osso preservado na região inferior do colo, onde as cargas da marcha são maiores, e densidade diminuída na região posterossuperior, que transmite as cargas da queda.",
+  "incorretas": {
+   "B": "**Errada.** O capítulo não descreve a região anterior como a de maior preservação; a preservação é inferior, ligada às cargas da marcha.",
+   "C": "**Errada.** A porção superior do colo é a que perde densidade e colapsa na queda, o que explica o padrão em valgo; não é a região preservada.",
+   "D": "**Errada, é o contrário.** A região posterossuperior é justamente a de densidade diminuída, a que transmite as cargas da queda."
+  },
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 1 (Biomechanics of Fractures and Fracture Fixation; Bottlang, Fitzpatrick, Wilkinson, Claes e Anderson)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0334": {
+  "conceito": "### Cada fixador tem um perfil de rigidez\n\nO Rockwood (capítulo 1, Stiffness of External Fixator Constructs) compara os valores medidos:\n\n| Construto | Rigidez axial | Rigidez torcional |\n|---|---|---|\n| Monolateral (estudos clínicos) | 174 a 510 N/mm | baixa |\n| ==Circular== | ==33 a 117 N/mm== | ==0,7 a 1,5 Nm/grau, muito maior== |\n\nO fixador circular tem ==rigidez axial menor== que o monolateral, mas ==rigidez torcional muito maior== que a do monolateral e a da haste intramedular. Na prática, o anel ==permite micromovimento axial== (bom para o calo) e ==controla a rotação==, que geraria cisalhamento.\n\n### Do que depende a rigidez do anel\n\n1. Número de anéis e diâmetro dos anéis.\n2. Diâmetro dos fios e número de pinos.\n3. Ângulo entre fios e pinos.\n\nPara aumentar a rigidez: ==mais anéis==, maior distância entre eles, ==manter a pré-tensão dos fios== e trocar fios por ==meio-pinos==.\n\n### E o monolateral\n\nFica mais rígido com a barra ==mais perto do osso==, ==maior distância entre os pinos== do mesmo lado do foco, maior distância entre barras e ==pinos de maior diâmetro==. Com a fíbula íntegra, a rigidez real na perna é cerca de um terço maior que a medida na tíbia isolada.\n\n> **Na prova:** anel = axial baixa (deixa o calo trabalhar) e torcional alta (segura a rotação).",
+  "correta": "**Correta.** Segundo o capítulo 1 do Rockwood, o fixador circular tem rigidez axial menor que a do monolateral (33 a 117 N/mm), mas rigidez torcional muito maior que a do monolateral e a da haste intramedular.",
+  "incorretas": {
+   "A": "**Errada.** A rigidez torcional do anel é de fato maior, mas a axial é menor que a do monolateral, e não maior.",
+   "B": "**Errada nos dois pontos.** O anel tem rigidez axial menor e torcional maior; esta alternativa inverte as duas.",
+   "D": "**Errada.** A rigidez axial é menor, mas a torcional do anel é muito maior que a do monolateral; é justamente a sua vantagem."
+  },
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 1 (Biomechanics of Fractures and Fracture Fixation; Bottlang, Fitzpatrick, Wilkinson, Claes e Anderson)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0335": {
+  "conceito": "### O fixador monolateral nasce pouco rígido\n\nO Rockwood (capítulo 1, Strategies for Improvement of Fracture Fixation, Figura 1-26B) lembra que o fixador monolateral costuma ter ==baixa rigidez axial e ao cisalhamento==. Ajustes simples na montagem corrigem isso.\n\n### Os fatores que aumentam a estabilidade\n\n| Fator | Para aumentar a rigidez |\n|---|---|\n| Distância barra-osso | ==diminuir== |\n| Distância entre as barras | aumentar |\n| ==Diâmetro dos pinos== | ==aumentar== |\n| Distância entre os pinos do mesmo lado do foco | ==aumentar== (um perto e outro longe do foco) |\n\n### Tíbia e fêmur são diferentes\n\n1. Na ==tíbia==, a barra pode ficar ==perto da face anteromedial==, que não tem músculo.\n2. No ==fêmur==, a musculatura volumosa ==impede aproximar a barra==. A saída é usar ==pinos maiores, de 6 mm==.\n3. Em ambos, colocar um pino perto do foco e outro longe ==aumenta a extensão de fixação==; montagens fora do plano também ajudam.\n\n### Por que isso importa\n\nO fixador externo é usado sobretudo de forma temporária, em fraturas expostas ou infectadas, mas precisa de rigidez suficiente para iniciar a consolidação, que às vezes segue até o fim sem trocar o método.\n\n> **Na prova:** monolateral mais rígido = barra perto do osso, pinos grossos e afastados; no fêmur, pinos de 6 mm.",
+  "correta": "**Correta.** O capítulo 1 do Rockwood explica que, no fêmur, os músculos impedem aproximar a barra do osso; por isso a rigidez é otimizada com pinos de maior diâmetro, de 6 mm, além de afastar os pinos entre si.",
+  "incorretas": {
+   "A": "**Errada.** Pinos mais finos reduzem a rigidez; o capítulo recomenda pinos maiores, de 6 mm, no fêmur.",
+   "C": "**Errada.** Afastar a barra do osso diminui a rigidez. O ideal seria aproximá-la, o que no fêmur não é possível pela musculatura.",
+   "D": "**Errada.** Agrupar os pinos reduz a extensão de fixação; o recomendado é um pino perto do foco e outro longe dele."
+  },
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 1 (Biomechanics of Fractures and Fracture Fixation; Bottlang, Fitzpatrick, Wilkinson, Claes e Anderson)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0336": {
+  "conceito": "### O comprimento de trabalho do parafuso\n\nO Rockwood (capítulo 1, Maximizing Fixation Span, Figura 1-23) aplica o conceito de extensão de fixação ao próprio parafuso:\n\n| Parafuso | Comprimento que resiste à torção | Consequência |\n|---|---|---|\n| ==Unicortical== | ==espessura de uma cortical== | pequena torção já gera pico de tensão acima do limite do osso, ==báscula== (toggle) e ==arrancamento== |\n| ==Bicortical== | ==diâmetro externo da diáfise== | resiste à torção sem picos excessivos de tensão |\n\n### O número\n\nAcrescentar ==um único parafuso bicortical== a uma placa bloqueada unicortical aumenta a resistência à torção em ==73%==.\n\n### A lição do fêmur\n\nO capítulo conta que a placa bloqueada unicortical do fêmur foi testada inicialmente só em compressão axial e flexão, com bons resultados. A falha clínica por ==arrancamento dos parafusos== só foi explicada depois, pela ==fraca resistência à torção== dos unicorticais. Por isso, ==resultados de um modo de carga não podem ser extrapolados para outro==.\n\n### No osso osteoporótico\n\nA pega do parafuso depende da espessura cortical: perder 1 mm de cortical pode reduzir a resistência ao arrancamento em 50%. O parafuso bloqueado bicortical muda a carga na interface de arrancamento axial para flexão, por isso o construto bloqueado é muito mais forte no osso fraco.\n\n> **Na prova:** um bicortical a mais na placa unicortical, mais 73% de resistência à torção.",
+  "correta": "**Correta.** O capítulo 1 do Rockwood afirma que acrescentar um único parafuso bicortical a um construto de placa bloqueada unicortical aumenta a resistência à torção em 73%, porque o bicortical trabalha ao longo de todo o diâmetro da diáfise.",
+  "incorretas": {
+   "A": "**Errada.** O ganho descrito é muito maior: o parafuso bicortical aproveita todo o diâmetro da diáfise para resistir à torção.",
+   "B": "**Errada.** Vinte e cinco por cento subestima o efeito; o capítulo cita 73%.",
+   "C": "**Errada.** Quarenta por cento é outro número do capítulo: o ganho de resistência à flexão ao trocar o parafuso bloqueado da extremidade por um convencional."
+  },
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 1 (Biomechanics of Fractures and Fracture Fixation; Bottlang, Fitzpatrick, Wilkinson, Claes e Anderson)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0337": {
+  "conceito": "### O orifício vazio é um concentrador de tensão\n\nO Rockwood (capítulo 1, Hardware Removal and Fracture Risk, Figura 1-11) explica que ==concentradores de tensão== são mudanças locais na distribuição de tensões. Podem ser ==geométricos== (orifício vazio, entalhe cortical) ou ==de material== (ponta da placa, da haste ou da prótese, onde a rigidez muda bruscamente). Numa série de fraturas por concentrador de tensão, ==58% vieram de orifícios vazios== de parafusos, fios-guia ou brocas.\n\n### A curva do defeito\n\n| Diâmetro do defeito (em relação ao osso) | Resistência à torção |\n|---|---|\n| ==Até 10%== | ==sem perda== |\n| ==De 10% para 20%== | ==queda grande, de cerca de 34%== |\n| De 20% a 60% | queda linear |\n| 60% | o defeito tem o diâmetro do canal medular |\n\n### Outros números\n\n1. Orifícios de 3 a 5 mm na tíbia distal reduziram a resistência à torção em 28% a 38%.\n2. Defeito unicortical reduz um pouco menos (22%) que o bicortical (26%).\n3. Na clavícula, o risco é parecido com orifícios em um ou em dois planos.\n\n### Na prática\n\nA retirada de placas e parafusos ==raramente é necessária==. Quando feita, o osso fica com orifícios e com a cortical enfraquecida pela proteção de carga, e a refratura ocorre por flexão ou torção.\n\n> **Na prova:** defeito de até 10% do diâmetro não enfraquece; entre 10% e 20% a resistência despenca.",
+  "correta": "**Correta.** Segundo o capítulo 1 do Rockwood, defeitos de até 10% do diâmetro externo do osso não reduzem a resistência à torção; entre 10% e 20% ocorre a queda grande, de cerca de 34%, seguida de redução linear.",
+  "incorretas": {
+   "B": "**Errada.** Com 30% a resistência já caiu bastante; a perda significativa começa logo acima de 10%.",
+   "C": "**Errada.** Cinquenta por cento está na fase de queda linear, muito além do ponto em que a perda passa a ser relevante.",
+   "D": "**Errada.** Sessenta por cento corresponde ao defeito do tamanho do canal medular, o fim da curva, e não o seu início."
+  },
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 1 (Biomechanics of Fractures and Fracture Fixation; Bottlang, Fitzpatrick, Wilkinson, Claes e Anderson)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0338": {
+  "conceito": "### Por que a haste fina balança dentro do canal\n\nO Rockwood (capítulo 1, Stiffness of Intramedullary Nail Constructs, Figuras 1-25 e 1-26) mostra que a haste não fresada, mais fina que o canal, ==translada lateralmente== dentro dele com forças pequenas, até encostar no endósteo. Isso é ==cisalhamento translacional== e pode gerar ==varo ou valgo==.\n\n### Os números do capítulo (canal de 12 mm)\n\n| Haste | Rigidez ao cisalhamento | Rigidez axial |\n|---|---|---|\n| 9 mm não fresada | 131 N/mm | 723 N/mm |\n| 11 mm (preenche o canal) | 224 N/mm | 1.039 N/mm |\n| 11 mm fresada | | cerca de 4.000 N/mm |\n\n### O cisalhamento rotacional se soma\n\nA haste fina também tem ==baixa rigidez torcional==: sob torção fisiológica, a rotação entre os fragmentos chegou a ==6 a 47 graus==. Folga entre parafuso de bloqueio e orifício da haste piora ainda mais. Por isso o capítulo diz que o ==cisalhamento é a principal preocupação== na fixação intramedular.\n\n### Como melhorar\n\n1. Usar o ==maior diâmetro possível== de haste.\n2. Fraturas próximas ao ==istmo== se dão melhor; perto das metáfises, onde o canal alarga, o cisalhamento aumenta.\n3. ==Parafusos de bloqueio com estabilidade angular== aumentam a rigidez em algum grau.\n4. A dinamização (retirar parafusos de bloqueio) aproxima os fragmentos, mas ==reduz ainda mais== a rigidez ao cisalhamento.\n\n> **Na prova:** haste fina não fresada = cisalhamento (translação e rotação) é o problema.",
+  "correta": "**Correta.** Segundo o capítulo 1 do Rockwood, a haste não fresada de pequeno diâmetro tem baixa rigidez ao cisalhamento, por translação dentro do canal e por rotação, o que torna o cisalhamento a principal preocupação na fixação intramedular.",
+  "incorretas": {
+   "A": "**Errada.** A rigidez axial da haste é adequadamente baixa para permitir o calo e não é a principal limitação; o problema é o cisalhamento.",
+   "B": "**Errada.** O capítulo não aponta a flexão como o ponto fraco da haste; a limitação destacada é a translação e a rotação, isto é, o cisalhamento.",
+   "D": "**Errada.** A rigidez à compressão axial é a mesma grandeza da rigidez axial, que não é o problema principal; o ponto fraco é o cisalhamento."
+  },
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 1 (Biomechanics of Fractures and Fracture Fixation; Bottlang, Fitzpatrick, Wilkinson, Claes e Anderson)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "conceitos-basicos-0339": {
+  "conceito": "### Cada tecido aguenta uma deformação\n\nO Rockwood (capítulo 1, Natural Bone Healing, Figura 1-12 e Tabela 1-6) descreve a consolidação com calo como uma sequência de tecidos cada vez mais rígidos. Cada um tem duas propriedades mecânicas: ==a capacidade de estabilizar o foco== e ==a deformação acima da qual ele falha==.\n\n| Tecido | Deformação máxima | Resistência à tração |\n|---|---|---|\n| ==Hematoma== | ==100%== | 0,1 N/mm² |\n| ==Calo mole== | ==10% a 12,8%== | 4 a 19 N/mm² |\n| ==Calo duro== | ==2%== | 130 N/mm² |\n\n### A sequência\n\n1. ==Hematoma e coágulo de fibrina==: pouca estabilidade, tolera deformação de até 100%; a estabilidade inicial vem das partes moles.\n2. ==Tecido de granulação== perto do foco, enquanto o osso intramembranoso se forma longe dele.\n3. ==Calo mole== (cartilagem, ossificação endocondral): mais estável, ainda flexível.\n4. ==Calo duro==: mineralização, fim da fase de reparação e início da ==remodelação==.\n\n### Por que o calo periosteal manda\n\nA rigidez cresce muito quando o calo é depositado ==longe do eixo neutro==: um calo periosteal de 5 mm dá mais de ==12 vezes== a estabilidade de um calo endosteal da mesma espessura.\n\n### Ligação com a consolidação primária\n\nO osso falha com deformação de 2% a 3%. Por isso a consolidação primária, que vai direto ao osso, exige deformação abaixo de 2% a 5% e movimento abaixo de 0,15 mm.\n\n> **Na prova:** hematoma 100%, calo mole cerca de 10%, calo duro 2%.",
+  "correta": "**Correta.** A Tabela 1-6 do capítulo 1 do Rockwood indica deformação máxima de 2% para o calo duro, contra 10% a 12,8% do calo mole e 100% do hematoma.",
+  "incorretas": {
+   "B": "**Errada.** Cerca de 10% (10% a 12,8%) é a deformação tolerada pelo calo mole, e não pelo calo duro.",
+   "C": "**Errada.** Nenhum tecido da tabela tem limite de 50%; o calo duro, o mais rígido, tolera só 2%.",
+   "D": "**Errada.** Cem por cento é a deformação tolerada pelo hematoma, a fase inicial e menos estável."
+  },
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 1 (Biomechanics of Fractures and Fracture Fixation; Bottlang, Fitzpatrick, Wilkinson, Claes e Anderson)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
  }
 }

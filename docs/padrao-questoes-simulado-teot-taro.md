@@ -68,7 +68,8 @@ página Y..."). O conteúdo vem do texto enviado; o que não estiver nele não e
 
 ## No acervo
 
-- `prova: "TEOT/TARO"`, `ano: null`, `simulado: true`, sem `area` (entram no treino de Ortopedia e
+- `prova: null`, `ano: null`, `simulado: true`, sem `area`: a questão mostra só a etiqueta
+  OrtoQuestões Simulados e os subtemas, sem nome de prova (entram no treino de Ortopedia e
   no Cronograma, mas não no cálculo dos Temas que mais caem).
 - Origem: arquivo do capítulo e página; referência no comentário com livro, edição, capítulo e
   página.
