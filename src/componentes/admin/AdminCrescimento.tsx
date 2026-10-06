@@ -4,37 +4,51 @@ import { chamarRpc } from '../../servicos/supabase'
 import { PLANOS as PRECOS, real } from '../../dados/planos'
 import { BarrasHorizontais, GraficoColunas, type Ponto } from './AdminGraficos'
 import { erroDoPainel, porcentagem } from './formatos'
+import { AdminPerfis } from './AdminPerfis'
+import type { LinhaUsuario } from './AdminUsuarios'
+import { TabelaMensal } from './AdminMensal'
+import { mesAMes, meioDe, previsao, renovaSozinha, vigente, type AssinaturaBase } from './receita'
 
 interface Dia { dia: string; cadastros: number; ativos: number; respostas: number }
 interface Funil { cadastrados: number; confirmaram: number; responderam: number; passaram_50: number; passaram_500: number; assinaram: number }
 interface Coorte { semana: string; cadastros: number; estudaram_1a_semana: number; voltaram_2a_semana: number }
-export interface AssinaturaReceita { plano: string; status: string; fim_periodo?: string | null; cancelar_ao_fim?: boolean; cancelada_em?: string | null; ultima_cobranca_em?: string | null; criada_em?: string | null }
+export type AssinaturaReceita = AssinaturaBase
 
 const MIGRACAO = '202609290200_painel_admin_2.sql'
 const dataCurta = (iso: string) => { const [, m, d] = iso.split('-'); return `${d}/${m}` }
 const dataLonga = (iso: string) => new Date(`${iso}T12:00:00`).toLocaleDateString('pt-BR', { weekday: 'short', day: '2-digit', month: 'short' })
 
-/** Receita estimada: cada assinatura com acesso vale o preço do plano dividido pelos meses dele. */
+/**
+ * Receita: o que renova sozinho (só cartão), o que entrou e saiu no mês e a
+ * série mês a mês. Pix é compra avulsa: não conta como cancelamento quando termina.
+ */
 function receita(assinaturas: AssinaturaReceita[]) {
-  const agora = Date.now(), mes = new Date(); mes.setDate(1); mes.setHours(0, 0, 0, 0)
-  const vigente = (a: AssinaturaReceita) => (a.status === 'ativa' || (a.status === 'cancelada' && a.cancelar_ao_fim)) && (!a.fim_periodo || new Date(a.fim_periodo).getTime() > agora)
-  const renova = (a: AssinaturaReceita) => a.status === 'ativa' && !a.cancelar_ao_fim
+  const agora = Date.now()
+  const comAcesso = assinaturas.filter(a => vigente(a, agora))
   const porPlano = PRECOS.map(p => {
-    const lista = assinaturas.filter(a => a.plano === p.id && vigente(a))
-    return { ...p, vigentes: lista.length, renovam: lista.filter(renova).length, mensal: lista.filter(renova).length * (p.total / p.meses) }
+    const lista = comAcesso.filter(a => a.plano === p.id)
+    const renovam = lista.filter(renovaSozinha)
+    return { ...p, vigentes: lista.length, renovam: renovam.length, pix: lista.filter(a => meioDe(a) === 'pix').length, mensal: renovam.length * (p.total / p.meses) }
   })
-  const proximas30 = assinaturas.filter(a => renova(a) && a.fim_periodo && new Date(a.fim_periodo).getTime() - agora < 30 * 86_400_000 && new Date(a.fim_periodo).getTime() > agora)
+  const meses = mesAMes(assinaturas, 12)
+  const atual = meses[meses.length - 1], anterior = meses[meses.length - 2]
+  const [prox] = previsao(assinaturas, 2)
+  const proximos30 = assinaturas.filter(a => renovaSozinha(a) && a.fim_periodo && new Date(a.fim_periodo).getTime() > agora && new Date(a.fim_periodo).getTime() - agora < 30 * 86_400_000)
+  const pixAcabando = comAcesso.filter(a => meioDe(a) === 'pix' && a.fim_periodo && new Date(a.fim_periodo).getTime() - agora < 30 * 86_400_000)
   return {
-    porPlano,
+    porPlano, meses, atual, anterior, proxMes: prox?.[1],
     mrr: porPlano.reduce((s, p) => s + p.mensal, 0),
-    cancelamentosMes: assinaturas.filter(a => a.cancelada_em && new Date(a.cancelada_em) >= mes).length,
-    novasMes: assinaturas.filter(a => a.criada_em && new Date(a.criada_em) >= mes && a.ultima_cobranca_em).length,
-    renovacoes30: proximas30.length,
-    valorRenovacoes30: proximas30.reduce((s, a) => s + (PRECOS.find(p => p.id === a.plano)?.total ?? 0), 0),
+    comAcesso: comAcesso.length,
+    renovam: comAcesso.filter(renovaSozinha).length,
+    pixComAcesso: comAcesso.filter(a => meioDe(a) === 'pix').length,
+    cartaoSemRenovar: comAcesso.filter(a => meioDe(a) === 'cartao' && !renovaSozinha(a)).length,
+    renovacoes30: proximos30.length,
+    valorRenovacoes30: proximos30.reduce((s, a) => s + (PRECOS.find(p => p.id === a.plano)?.total ?? 0), 0),
+    pixAcabando30: pixAcabando.length,
   }
 }
 
-export function AdminCrescimento({ assinaturas }: { assinaturas: AssinaturaReceita[] }) {
+export function AdminCrescimento({ assinaturas, usuarios }: { assinaturas: AssinaturaReceita[]; usuarios: LinhaUsuario[] | null }) {
   const [dias, definirDias] = useState(30)
   const [serie, definirSerie] = useState<Dia[] | null>(null)
   const [funil, definirFunil] = useState<Funil | null>(null)
@@ -110,15 +124,23 @@ export function AdminCrescimento({ assinaturas }: { assinaturas: AssinaturaRecei
       </section>
     </div>
 
+    {usuarios ? <AdminPerfis usuarios={usuarios} /> : <section className="adm-secao"><p className="adm-vazio">Carregando os perfis…</p></section>}
+
     <section className="empilha adm-secao" aria-labelledby="adm-titulo-receita">
-      <div><h2 id="adm-titulo-receita">Receita</h2><p>Estimativa a partir das assinaturas com renovação automática: cada plano entra pelo valor mensal equivalente. Não substitui o extrato do Mercado Pago.</p></div>
+      <div><h2 id="adm-titulo-receita">Receita</h2><p>Reconstruída a partir das assinaturas, separando cartão (renova sozinho) de Pix (pago uma vez, termina sem renovar). Cancelamento aqui é só quando a pessoa desliga a renovação do cartão; reembolsos e Pix que terminaram aparecem à parte. Contas de teste ficam de fora. Não substitui o extrato do Mercado Pago.</p></div>
       <div className="adm-kpis">
-        <div className="adm-kpi adm-kpi--destaque"><span>Receita mensal recorrente</span><strong>{real(r.mrr)}</strong><small>equivalente por mês</small></div>
-        <div className="adm-kpi"><span>Renovações nos próximos 30 dias</span><strong>{r.renovacoes30}</strong><small>{real(r.valorRenovacoes30)} previstos</small></div>
-        <div className="adm-kpi"><span>Novas assinaturas no mês</span><strong>{r.novasMes}</strong><small>com cobrança confirmada</small></div>
-        <div className="adm-kpi"><span>Cancelamentos no mês</span><strong>{r.cancelamentosMes}</strong><small>pedidos desde o dia 1º</small></div>
+        <div className="adm-kpi adm-kpi--destaque"><span>Receita mensal recorrente</span><strong>{real(r.mrr)}</strong><small>{r.renovam} cartão(ões) que renovam sozinhos, no valor mensal equivalente</small></div>
+        <div className="adm-kpi"><span>Recebido neste mês</span><strong>{real(r.atual?.receita ?? 0)}</strong><small>{r.anterior ? `${real(r.anterior.receita)} no mês passado` : ''}</small></div>
+        <div className="adm-kpi"><span>Assinaturas novas no mês</span><strong>{(r.atual?.novasCartao ?? 0) + (r.atual?.novasPix ?? 0)}</strong><small>{r.atual?.novasCartao ?? 0} no cartão · {r.atual?.novasPix ?? 0} no Pix{r.anterior ? ` · ${r.anterior.novasCartao + r.anterior.novasPix} no mês passado` : ''}</small></div>
+        <div className="adm-kpi"><span>Renovações automáticas no mês</span><strong>{r.atual?.renovacoes ?? 0}</strong><small>{real(r.atual?.receitaRenovacoes ?? 0)} renovados</small></div>
+        <div className="adm-kpi"><span>Cancelamentos no mês</span><strong>{r.atual?.cancelamentos ?? 0}</strong><small>renovação do cartão desligada · {r.atual?.reembolsos ?? 0} reembolso(s)</small></div>
+        <div className="adm-kpi"><span>Renovações nos próximos 30 dias</span><strong>{r.renovacoes30}</strong><small>{real(r.valorRenovacoes30)} previstos, se ninguém cancelar</small></div>
+        <div className="adm-kpi"><span>Com acesso pago agora</span><strong>{r.comAcesso}</strong><small>{r.renovam} renovam · {r.pixComAcesso} no Pix · {r.cartaoSemRenovar} cartão sem renovar</small></div>
+        <div className="adm-kpi"><span>Pix que terminam em 30 dias</span><strong>{r.pixAcabando30}</strong><small>bons candidatos a um lembrete de renovação</small></div>
       </div>
-      <BarrasHorizontais formato={v => real(v)} itens={r.porPlano.map(p => ({ rotulo: `${p.nome} · ${p.vigentes} com acesso`, valor: p.mensal, detalhe: `${real(p.total)} a cada ${p.meses === 1 ? 'mês' : `${p.meses} meses`}${p.vigentes > p.renovam ? ` · ${p.vigentes - p.renovam} com acesso até o fim do período, sem renovar` : ''}` }))} />
+      <BarrasHorizontais formato={v => real(v)} itens={r.porPlano.map(p => ({ rotulo: `${p.nome} · ${p.vigentes} com acesso`, valor: p.mensal, detalhe: `${real(p.total)} a cada ${p.meses === 1 ? 'mês' : `${p.meses} meses`} · ${p.renovam} renovam sozinhos${p.pix ? ` · ${p.pix} no Pix` : ''}${p.vigentes - p.renovam - p.pix > 0 ? ` · ${p.vigentes - p.renovam - p.pix} cartão sem renovar` : ''}` }))} />
+      <h3>Mês a mês</h3>
+      <TabelaMensal meses={r.meses} />
     </section>
   </div>
 }

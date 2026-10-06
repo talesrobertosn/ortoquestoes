@@ -10,6 +10,7 @@ import { AdminConfiguracoes } from '../componentes/admin/AdminConfiguracoes'
 import { AdminUsuarios, ativoHoje, type FiltroUsuarios, type LinhaUsuario } from '../componentes/admin/AdminUsuarios'
 import { AdminFinanceiro } from '../componentes/admin/AdminFinanceiro'
 import { contaDeTeste } from '../componentes/admin/contasTeste'
+import { meioDe } from '../componentes/admin/receita'
 import { usarLidos } from '../componentes/admin/lidos'
 import {
   PLANOS, STATUS_ASSINATURA, STATUS_EVENTO, TIPOS_EVENTO, baixarCsv, corresponde, data, dataHora, erroDoPainel, haQuanto, nomeErro, normalizar,
@@ -32,6 +33,8 @@ interface LinhaAssinatura {
   cancelar_ao_fim?: boolean
   // Da migração 202609290200 em diante.
   cancelada_em?: string | null
+  // Da migração 202610060100 em diante: 'pix' ou 'cartao'.
+  meio?: string | null
 }
 interface LinhaEvento {
   id: number
@@ -91,6 +94,7 @@ export function AdminAssinaturas() {
   // Compras de teste do dono ficam fora das estatísticas; a lista completa continua na aba Assinaturas.
   const reais = useMemo(() => assinaturas?.filter(a => !contaDeTeste(a)) ?? null, [assinaturas])
   const testes = (assinaturas?.length ?? 0) - (reais?.length ?? 0)
+  const usuariosReais = useMemo(() => usuarios?.filter(u => !contaDeTeste({ nome: u.nome, usuario: u.email })) ?? null, [usuarios])
 
   const carregar = useCallback(async () => {
     if (!sessao) return
@@ -158,7 +162,7 @@ export function AdminAssinaturas() {
       {aba === 'financeiro' && <AdminFinanceiro assinaturas={reais ?? []} testes={testes} usuarios={resumo?.usuarios ?? usuarios?.length ?? null} />}
       {aba === 'assinaturas' && <Assinaturas linhas={assinaturas} />}
       {aba === 'pagamentos' && <Pagamentos eventos={eventos ?? []} recarregar={carregar} lidos={lidosPagamento.lidos} marcar={lidosPagamento.marcar} />}
-      {aba === 'crescimento' && <AdminCrescimento assinaturas={reais ?? []} />}
+      {aba === 'crescimento' && <AdminCrescimento assinaturas={reais ?? []} usuarios={usuariosReais} />}
       {aba === 'configuracoes' && <AdminConfiguracoes />}
       {aba === 'questoes' && <AdminQuestoes idInicial={idEditar} />}
       {/* Montada sempre (escondida fora da aba) para o contador de pendências aparecer na barra. */}
@@ -279,16 +283,16 @@ function Assinaturas({ linhas }: { linhas: LinhaAssinatura[] }) {
         return <li key={`${a.id_usuario}:${a.ultima_atualizacao}`} className={'adm-cartao' + (vigente(a) ? ' adm-cartao--ok' : a.status === 'falha_pagamento' ? ' adm-cartao--ruim' : '')}>
           <div className="adm-cartao__topo">
             <div><strong>{a.nome ?? a.usuario}</strong>{a.nome && <span className="adm-usuario__email">{a.usuario}</span>}</div>
-            <span>{contaDeTeste(a) && <span className="adm-selo">Teste</span>} <span className={`adm-selo adm-estado--${a.status}`}>{STATUS_ASSINATURA[a.status] ?? a.status}</span></span>
+            <span>{contaDeTeste(a) && <span className="adm-selo">Teste</span>} <span className="adm-selo adm-selo--neutro">{meioDe(a) === 'pix' ? 'Pix' : 'Cartão'}</span> <span className={`adm-selo adm-estado--${a.status}`}>{STATUS_ASSINATURA[a.status] ?? a.status}</span></span>
           </div>
           <dl className="adm-cartao__dados">
             <div><dt>Plano</dt><dd>{PLANOS[a.plano] ?? a.plano}</dd></div>
             <div><dt>Assinante desde</dt><dd>{data(inicio)} <small>({haQuanto(inicio)})</small></dd></div>
             <div><dt>Última cobrança paga</dt><dd>{a.ultima_cobranca_em !== undefined ? data(a.ultima_cobranca_em) : '—'}</dd></div>
-            <div><dt>{a.cancelar_ao_fim || a.status === 'cancelada' ? 'Acesso até' : 'Próxima cobrança'}</dt><dd>{data(a.proxima_cobranca ?? a.fim_periodo)}</dd></div>
+            <div><dt>{a.cancelar_ao_fim || a.status === 'cancelada' || meioDe(a) === 'pix' ? 'Acesso até' : 'Próxima cobrança'}</dt><dd>{data(a.proxima_cobranca ?? a.fim_periodo)}</dd></div>
           </dl>
           {a.status === 'falha_pagamento' && <small className="adm-ajuda">A cobrança não foi confirmada. Veja a aba Pagamentos e o Mercado Pago.</small>}
-          {a.cancelar_ao_fim && a.status !== 'cancelada' && <small className="adm-ajuda">Pediu cancelamento: o acesso vale até o fim do período pago.</small>}
+          {a.cancelar_ao_fim && a.status !== 'cancelada' && a.status !== 'reembolsada' && <small className="adm-ajuda">{meioDe(a) === 'pix' ? 'Pago no Pix: não renova sozinho; o acesso vale até o fim do período pago.' : 'Pediu cancelamento: o acesso vale até o fim do período pago.'}</small>}
         </li>
       })}
     </ul>}

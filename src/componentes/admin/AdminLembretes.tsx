@@ -5,13 +5,14 @@ import { erroDoPainel } from './formatos'
 
 const MIGRACAO = '202610040100_emails_lembretes.sql'
 
-type Campanha = 'nunca' | 'tres_dias' | 'sete_dias'
+type Campanha = 'nunca' | 'tres_dias' | 'sete_dias' | 'renovacao_pix'
 interface Resumo { campanha: Campanha; pessoas: number; enviados_7d: number; enviados_total: number; falharam_7d: number }
 
 const CAMPANHAS: Array<{ id: Campanha; titulo: string; para: string; arte: string }> = [
   { id: 'nunca', titulo: 'Primeira missão', para: 'Quem criou a conta há pelo menos um dia e nunca respondeu uma questão. Apresenta o site e convida a dar uma chance. Cada pessoa recebe uma vez só.', arte: 'pixel/treinar.png' },
   { id: 'tres_dias', titulo: 'Fogueira apagando', para: 'Quem respondia e está de 3 a 6 dias sem aparecer. Puxa de volta antes de o hábito esfriar.', arte: 'ranking/chama.png' },
   { id: 'sete_dias', titulo: 'Retomar a jornada', para: 'Quem respondia e está de 7 a 90 dias sem aparecer. Tom acolhedor: o progresso está guardado, é só voltar.', arte: 'pixel/planos.png' },
+  { id: 'renovacao_pix', titulo: 'Renovar a armadura (Pix)', para: 'Quem pagou no Pix e tem o acesso terminando em até 3 dias, sem ter renovado. O Pix não renova sozinho: o e-mail lembra de renovar para não perder o ritmo. Um por compra. Pode rodar sozinho todo dia pelo agendador (veja docs/agendar-lembretes.md).', arte: 'ranking/mensageiro.png' },
 ]
 
 /**

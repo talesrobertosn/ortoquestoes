@@ -393,3 +393,9 @@
 .rk-escolher { display: inline-flex; align-items: center; gap: 0.25rem; padding: 0.2rem 0.55rem; border-radius: 999px; border: 1px dashed color-mix(in srgb, var(--ouro) 70%, transparent); background: var(--ouro-veu); color: var(--ouro-texto); font-size: 0.72rem; font-weight: 800; text-decoration: none; white-space: nowrap; }
 .rk-escolher:hover { border-style: solid; }
 @media (prefers-reduced-motion: reduce) { .inv-slot__vazio { animation: none; } }
+
+/* Serviço (local da residência) ao lado do nome: pino que abre o nome do hospital no hover ou no toque. */
+.rk-servico { display: inline-flex; align-items: center; gap: .2rem; margin-left: .35rem; padding: .1rem .35rem; border-radius: 999px; background: var(--verdete-veu); color: var(--verdete); font-size: var(--meta); font-weight: 600; vertical-align: middle; cursor: help; max-width: 100%; }
+.rk-servico__texto { display: inline-block; max-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; transition: max-width .25s ease; }
+.rk-servico:hover .rk-servico__texto, .rk-servico:focus .rk-servico__texto, .rk-servico:focus-within .rk-servico__texto { max-width: 16rem; }
+.rk-servico:focus-visible { outline: 2px solid var(--verdete); outline-offset: 2px; }

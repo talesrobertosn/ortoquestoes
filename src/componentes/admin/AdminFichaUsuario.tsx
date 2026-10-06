@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { rotuloEtapa, rotuloProva } from '../../conta/perfilEstudo'
 import { createPortal } from 'react-dom'
 import { chamarFuncao, chamarRpc } from '../../servicos/supabase'
 import { usarIndice } from '../../dados/usarIndice'
@@ -20,7 +21,6 @@ interface Detalhe {
   perfil: { situacao: string | null; servico: string | null; cidade: string | null; uf: string | null; confirmado: boolean } | null
 }
 
-const SITUACAO: Record<string, string> = { residente: 'Residente de ortopedia', ortopedista: 'Ortopedista', outro: 'Outro profissional ou estudante' }
 
 /** Ficha de uma pessoa: o que ela estudou e o que o administrador pode fazer por ela. */
 export function AdminFichaUsuario({ usuario, aoFechar }: { usuario: LinhaUsuario; aoFechar: () => void }) {
@@ -104,7 +104,7 @@ export function AdminFichaUsuario({ usuario, aoFechar }: { usuario: LinhaUsuario
           <p>{usuario.email}</p>
           {detalhe?.perfil && (detalhe.perfil.situacao || detalhe.perfil.servico || detalhe.perfil.cidade) && <p className="adm-ficha__servico">
             <Icone nome="bandeira" tamanho={16} />
-            <span>{detalhe.perfil.situacao && <strong>{SITUACAO[detalhe.perfil.situacao] ?? detalhe.perfil.situacao}</strong>}{detalhe.perfil.servico && <> · {detalhe.perfil.servico}</>}{(detalhe.perfil.cidade || detalhe.perfil.uf) && <> · {[detalhe.perfil.cidade, detalhe.perfil.uf].filter(Boolean).join('/')}</>}</span>
+            <span>{detalhe.perfil.situacao && <strong>{rotuloEtapa(detalhe.perfil.situacao, usuario.ano_residencia)}</strong>}{detalhe.perfil.servico && <> · {detalhe.perfil.servico}</>}{(detalhe.perfil.cidade || detalhe.perfil.uf) && <> · {[detalhe.perfil.cidade, detalhe.perfil.uf].filter(Boolean).join('/')}</>}{usuario.provas && <> · estuda para {usuario.provas.split(',').map(rotuloProva).join(', ')}</>}</span>
           </p>}
           <div className="adm-usuario__selos">
             {usuario.plano_vigente && <span className="adm-selo adm-selo--ok">Assinante {PLANOS[usuario.plano_vigente]?.toLowerCase()}</span>}

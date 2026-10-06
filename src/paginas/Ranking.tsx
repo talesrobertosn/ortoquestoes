@@ -22,6 +22,7 @@ import { usarContextoLocal } from '../estado/usarContextoLocal'
 import { META_STREAK_DIARIA } from '../estado/streak'
 import { MINIMO_RANKING } from '../util/nomeRanking'
 import { usarPerfilRanking, usarPublicarSequencia } from '../conta/perfilRanking'
+import { OpcaoServicoRanking, SeloServico } from '../componentes/ServicoRanking'
 import '@fontsource/pixelify-sans/latin-700.css'
 import '../estilos/paginas/Ranking.css'
 
@@ -31,6 +32,8 @@ type LinhaRanking = {
   variacao: number | null; variacao_semana: number | null; novo: boolean; referencia_em: string | null
   /** Vitrine escolhida pela pessoa e sequência viva (fogueira). Ausentes antes da migration. */
   emblemas?: string[] | null; sequencia?: number | null
+  /** Serviço (local da residência), só de quem ligou a opção. */
+  servico?: string | null
 }
 type MinhaPosicao = { posicao: number; total: number; total_geral: number } | null
 
@@ -106,7 +109,7 @@ function Podio({ linhas, periodo }: { linhas: LinhaRanking[]; periodo: Periodo }
           <li key={linha.posicao} className={`rk-podio__lugar rk-podio__lugar--${linha.posicao}${linha.eh_voce ? ' rk-podio__lugar--voce' : ''}`}>
             <img className="rk-podio__coroa" src={recurso(`emblemas/podio-${linha.posicao}.png`)} alt="" width={linha.posicao === 1 ? 64 : 48} height={linha.posicao === 1 ? 64 : 48} draggable={false} />
             <span className="rk-podio__avatar">{iniciais(linha.apelido)}</span>
-            <strong className="rk-podio__nome">{linha.apelido}{linha.eh_voce && <span className="rk-voce">você</span>}</strong>
+            <strong className="rk-podio__nome">{linha.apelido}{linha.eh_voce && <span className="rk-voce">você</span>}<SeloServico servico={linha.servico} /></strong>
             <span className="rk-podio__emblemas"><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={36} /><Fogueira dias={linha.sequencia ?? 0} tamanho={20} /></span>
             <span className="rk-podio__total"><b className="numerico">{linha.total.toLocaleString('pt-BR')}</b> {periodo === 'semana' ? 'na semana' : 'questões'}</span>
             <Movimento linha={linha} />
@@ -162,7 +165,7 @@ export function Ranking() {
       const novasLinhas: LinhaRanking[] = (ranking.data ?? []).map((linha: LinhaRanking) => ({
         ...linha, variacao: linha.variacao ?? null, variacao_semana: linha.variacao_semana ?? null,
         novo: linha.novo ?? false, referencia_em: linha.referencia_em ?? null,
-        emblemas: linha.emblemas ?? null, sequencia: linha.sequencia ?? null,
+        emblemas: linha.emblemas ?? null, sequencia: linha.sequencia ?? null, servico: linha.servico ?? null,
       }))
       definirLinhas(novasLinhas)
       definirComMovimento(movimento)
@@ -237,6 +240,8 @@ export function Ranking() {
       <span className="rk-bau__seta" aria-hidden="true"><Icone nome="direita" tamanho={20} /></span>
     </a>
 
+    <OpcaoServicoRanking sessao={sessao} />
+
     {!sessao ? (
       <Estado titulo="Entre na sua conta para ver o ranking" acoes={<a className="botao botao--principal" href={href('/conta?modo=entrar')}>Entrar ou criar conta</a>}>
         <p>O ranking reúne quem mais respondeu questões entre todas as contas com pelo menos 5 questões respondidas.</p>
@@ -284,7 +289,7 @@ export function Ranking() {
             <Movimento linha={linha} />
             <span className="rk-linha__avatar">{iniciais(linha.apelido)}</span>
             <span className="rk-linha__nome">
-              <span className="rk-linha__apelido">{linha.apelido}{linha.eh_voce && <span className="rk-voce">você</span>}</span>
+              <span className="rk-linha__apelido">{linha.apelido}{linha.eh_voce && <span className="rk-voce">você</span>}<SeloServico servico={linha.servico} /></span>
               <span className="rk-linha__selos"><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={32} /><Fogueira dias={linha.sequencia ?? 0} />{linha.eh_voce && <a className="rk-escolher" href={href('/conquistas?escolher=1')}><Icone nome="estrela" tamanho={13} /> {linha.emblemas?.length ? 'Trocar' : 'Escolher emblemas'}</a>}</span>
               <span className="rk-linha__barra" aria-hidden="true"><span style={{ width: `${Math.max(3, (linha.total / lider) * 100)}%` }} /></span>
             </span>
@@ -303,7 +308,7 @@ export function Ranking() {
       <ul>
         <li><span><Icone nome="grafico" tamanho={18} /></span><div><strong>Conta volume, não acerto.</strong> Cada questão diferente respondida soma um ponto. Refazer a mesma questão não soma de novo.</div></li>
         <li><span><Icone nome="calendario" tamanho={18} /></span><div><strong>Geral ou últimos 7 dias.</strong> O geral mostra o acumulado; a semana dá chance a quem começou agora.</div></li>
-        <li><span><Icone nome="usuario" tamanho={18} /></span><div><strong>Todo mundo com conta participa.</strong> Entra quem respondeu pelo menos {MINIMO_RANKING} questões, com o apelido que escolher ou o nome do cadastro e a inicial do sobrenome. Em <a href={href('/conta?secao=ranking')}>Minha conta</a> você troca o apelido ou sai do ranking. E-mail, telefone e cidade nunca aparecem.</div></li>
+        <li><span><Icone nome="usuario" tamanho={18} /></span><div><strong>Todo mundo com conta participa.</strong> Entra quem respondeu pelo menos {MINIMO_RANKING} questões, com o apelido que escolher ou o nome do cadastro e a inicial do sobrenome. Em <a href={href('/conta?secao=ranking')}>Minha conta</a> você troca o apelido ou sai do ranking. E-mail, telefone e cidade nunca aparecem. O serviço onde você faz residência só aparece se você ligar a opção.</div></li>
         <li><span><Icone nome="medalha" tamanho={18} /></span><div><strong>Conquistas e vitrine.</strong> As conquistas ficam no seu inventário para sempre, e você escolhe até três para aparecer ao lado do nome. A fogueira mostra a sua sequência de dias seguidos com pelo menos {META_STREAK_DIARIA} questões: se a sequência acabar, ela some e recomeça do zero.</div></li>
       </ul>
     </details>

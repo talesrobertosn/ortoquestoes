@@ -304,3 +304,8 @@
   .adm-editor__alternativa { grid-template-columns: 1fr; }
   .adm-editor__gabarito { padding-top: 0; }
 }
+
+/* Mês a mês e perfis (aba Crescimento e Financeiro). */
+.adm-secao h3 { font-size: 1rem; margin: 0.5rem 0 0; }
+.adm-mensal small, .adm-retencao small { color: var(--texto-2); font-weight: 400; font-size: var(--meta); }
+.adm-retencao th[scope="row"] { text-align: left; font-weight: 600; }

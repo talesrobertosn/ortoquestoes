@@ -64,6 +64,10 @@ export interface DadosMarco {
   recado?: string | null
   site: string
   linkDescadastro: string
+  /** Renovação do Pix: dias até o acesso acabar, a data e o plano. */
+  diasRestantes?: number
+  fimEm?: string | null
+  plano?: string | null
 }
 
 const esc = (texto: string) => texto.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
@@ -483,7 +487,7 @@ export function emailRelatorio(d: DadosRelatorio): { assunto: string; html: stri
 // Lembretes (reengajamento), disparados pelo painel do administrador
 // ---------------------------------------------------------------------------
 
-export type CampanhaLembrete = 'nunca' | 'tres_dias' | 'sete_dias'
+export type CampanhaLembrete = 'nunca' | 'tres_dias' | 'sete_dias' | 'renovacao_pix'
 
 export interface DadosLembrete {
   campanha: CampanhaLembrete
@@ -506,6 +510,11 @@ export function emailLembrete(d: DadosLembrete): { assunto: string; html: string
   const linkTreinar = `${d.site}#/treinar`
   const linkRevisao = `${d.site}#/revisao`
   const linkCronograma = `${d.site}#/cronograma`
+  const linkAssinatura = `${d.site}#/assinatura`
+  const dias = Math.max(1, d.diasRestantes ?? 3)
+  const diasTexto = dias === 1 ? '1 dia' : `${dias} dias`
+  const fimTexto = d.fimEm ? `em ${new Date(d.fimEm).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', timeZone: 'America/Sao_Paulo' })}` : `em ${diasTexto}`
+  const planoTexto = ({ mensal: 'mensal', semestral: 'semestral', anual: 'anual' } as Record<string, string>)[d.plano ?? ''] ?? (d.plano ?? '')
 
   const C = {
     nunca: {
@@ -552,6 +561,21 @@ export function emailLembrete(d: DadosLembrete): { assunto: string; html: string
       botao: 'Retomar minha jornada',
       link: linkTreinar,
       rodape: `Quer um plano dia a dia? Veja o <a href="${linkCronograma}" style="color:#146b61;font-weight:bold;">cronograma até a prova</a>.`,
+    },
+    renovacao_pix: {
+      assunto: nome ? `${nome}, seu acesso termina em ${diasTexto}: renove e siga em frente` : `Seu acesso termina em ${diasTexto}: renove e siga em frente`,
+      previa: `Seu plano pago no Pix termina ${fimTexto}. Renove para não perder o ritmo até a prova.`,
+      selo: 'Missão: renovar a armadura',
+      titulo: nome ? `${nome}, a sua armadura vence ${fimTexto}` : `Sua armadura vence ${fimTexto}`,
+      lide: `Faltam ${diasTexto} para terminar o acesso do seu plano${d.plano ? ` ${planoTexto}` : ''}, pago no Pix. Como o Pix não renova sozinho, este é o lembrete: renove e continue a jornada sem interromper o ritmo.`,
+      corpo: [
+        ['pixel/revisao.png', 'Suas revisões continuam em dia', 'A fila de revisão espaçada segue chamando cada questão no momento certo, sem limite diário.'],
+        ['pixel/simulado.png', 'Simulados, cronograma e relatórios', 'Simulado Nacional, plano até a prova, "como a turma respondeu" e o relatório do mês continuam liberados.'],
+        ['pixel/ranking.png', 'Nada se perde', `Suas ${numero(d.respondidas)} questões, o caderno de erros e as conquistas ficam guardados, renovando ou não.`],
+      ],
+      botao: 'Renovar e continuar estudando',
+      link: linkAssinatura,
+      rodape: `Prefere não precisar lembrar? No cartão, a assinatura renova sozinha e você cancela quando quiser em <a href="${d.site}#/conta/assinatura" style="color:#146b61;font-weight:bold;">Minha conta</a>.`,
     },
   }[d.campanha]
 

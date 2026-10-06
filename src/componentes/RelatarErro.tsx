@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { usarConta } from '../conta/ContextoConta'
 import { chamarRpc } from '../servicos/supabase'
 import { href } from '../util/rotas'
@@ -8,10 +8,19 @@ const TIPOS: Array<[string, string]> = [
   ['gabarito', 'Gabarito'], ['enunciado', 'Enunciado'], ['imagem', 'Imagem'], ['comentario', 'Comentário'], ['outro', 'Outro'],
 ]
 
+/** Evento para abrir o relato a partir de outro ponto da questão (ex.: "Parece ter erro" no comentário). */
+export const EVENTO_RELATAR = 'ortoquestoes:relatar-erro'
+export function pedirRelato(idQuestao: string, tipo = 'comentario') {
+  window.dispatchEvent(new CustomEvent(EVENTO_RELATAR, { detail: { idQuestao, tipo } }))
+}
+
 /**
  * "Relatar erro" dentro da questão: vai direto para o painel do
- * administrador. Sem conta (ou se o banco ainda não tiver a tabela), cai no
- * formulário de contato, como antes.
+ * administrador, e quem relatou recebe um e-mail quando a questão for
+ * corrigida. É o canal para erros de fato (gabarito, enunciado, imagem,
+ * comentário). A avaliação "Este comentário te ajudou?" fica só para a
+ * qualidade da explicação. Sem conta (ou se o banco ainda não tiver a
+ * tabela), cai no formulário de contato, como antes.
  */
 export function RelatarErro({ idQuestao }: { idQuestao: string }) {
   const { sessao } = usarConta()
@@ -20,6 +29,17 @@ export function RelatarErro({ idQuestao }: { idQuestao: string }) {
   const [texto, definirTexto] = useState('')
   const [estado, definirEstado] = useState<'livre' | 'enviando' | 'enviado' | 'erro' | 'sem_tabela'>('livre')
   const linkContato = href(`/contato?questao=${idQuestao}`)
+  const caixa = useRef<HTMLDivElement>(null)
+  useEffect(() => {
+    function abrir(e: Event) {
+      const d = (e as CustomEvent<{ idQuestao: string; tipo: string }>).detail
+      if (d?.idQuestao !== idQuestao) return
+      definirTipo(d.tipo); definirEstado('livre'); definirAberto(true)
+      requestAnimationFrame(() => caixa.current?.scrollIntoView({ behavior: 'smooth', block: 'center' }))
+    }
+    window.addEventListener(EVENTO_RELATAR, abrir)
+    return () => window.removeEventListener(EVENTO_RELATAR, abrir)
+  }, [idQuestao])
 
   if (!sessao) return <a className="qz-rodape__link" href={linkContato}><Icone nome="alerta" tamanho={16} /> Relatar erro nesta questão</a>
 
@@ -38,12 +58,13 @@ export function RelatarErro({ idQuestao }: { idQuestao: string }) {
     <Icone nome="alerta" tamanho={16} /> Relatar erro nesta questão
   </button>
 
-  return <div className="relato">
+  return <div className="relato" ref={caixa}>
     {estado === 'enviado' ? <>
-      <p className="relato__ok"><Icone nome="certo" tamanho={16} /> Recebido. Obrigado por avisar: a questão vai ser revisada.</p>
+      <p className="relato__ok"><Icone nome="certo" tamanho={16} /> Recebido. Obrigado por avisar: a questão vai ser revisada, e você recebe um e-mail quando ela for corrigida.</p>
       <button type="button" className="botao botao--fantasma" onClick={() => definirAberto(false)}>Fechar</button>
     </> : <>
       <p className="relato__titulo">O que parece errado nesta questão?</p>
+      <p className="relato__ajuda">Use para erros de fato: gabarito, enunciado, imagem ou informação errada no comentário. Avisamos você por e-mail quando corrigirmos.</p>
       <div className="relato__tipos" role="radiogroup" aria-label="Tipo de erro">
         {TIPOS.map(([valor, rotulo]) => <button key={valor} type="button" role="radio" aria-checked={tipo === valor} className="relato__tipo" onClick={() => definirTipo(valor)}>{rotulo}</button>)}
       </div>

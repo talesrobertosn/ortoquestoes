@@ -4,14 +4,15 @@ import { usarConta } from '../conta/ContextoConta'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import { Icone } from './Icone'
 import { alertarAvaliacao } from '../conta/emailsMarco'
+import { pedirRelato } from './RelatarErro'
 
+/** 'errado' fica no tipo por causa de avaliações antigas; hoje erro vai para o relato. */
 type Motivo = 'confuso' | 'raso' | 'errado' | 'outro'
 interface Avaliacao { util: boolean; motivo?: Motivo; observacao?: string; enviada: boolean }
 
 const MOTIVOS: [Motivo, string][] = [
   ['confuso', 'Ficou confuso'],
   ['raso', 'Faltou profundidade'],
-  ['errado', 'Parece ter erro'],
   ['outro', 'Outro motivo'],
 ]
 
@@ -27,7 +28,9 @@ async function enviar(id: string, a: Avaliacao): Promise<boolean> {
 }
 
 /**
- * "Este comentário te ajudou?". A avaliação fica guardada na conta mesmo sem
+ * "Este comentário te ajudou?": só a qualidade da explicação (clareza e
+ * profundidade). Erro de fato (gabarito, informação errada) vai pelo relato
+ * de erro, que avisa a pessoa por e-mail quando a questão é corrigida. A avaliação fica guardada na conta mesmo sem
  * rede e é reenviada depois; o que não ajudou pede um motivo, que é o que
  * diz qual comentário reescrever primeiro.
  */
@@ -84,6 +87,9 @@ export function AvaliarComentario({ idQuestao }: { idQuestao: string }) {
             <button key={valor} className={motivo === valor ? 'ativo' : ''} aria-pressed={motivo === valor} onClick={() => definirMotivo(valor)}>{rotulo}</button>
           ))}
         </div>
+        <button type="button" className="av__erro" onClick={() => { definirPedindoMotivo(false); pedirRelato(idQuestao, 'comentario') }}>
+          <Icone nome="alerta" tamanho={15} /> Encontrou um erro? Relate o erro e avisamos você quando corrigirmos
+        </button>
         <textarea className="entrada av__obs" rows={2} maxLength={1000} placeholder="Se quiser, conte em uma frase (opcional)" value={observacao} onChange={(e) => definirObservacao(e.target.value)} />
         <div className="av__acoes">
           <button className="botao botao--fantasma" onClick={() => definirPedindoMotivo(false)}>Cancelar</button>
@@ -95,7 +101,7 @@ export function AvaliarComentario({ idQuestao }: { idQuestao: string }) {
 
   return (
     <div className="av">
-      <p className="av__pergunta">Este comentário te ajudou?</p>
+      <p className="av__pergunta">Este comentário te ajudou?<small>Sua avaliação mostra quais explicações reescrever primeiro.</small></p>
       <div className="av__botoes">
         <button className="av__botao av__botao--sim" onClick={() => void salvar({ util: true })}><Icone nome="certo" tamanho={16} /> Ajudou</button>
         <button className="av__botao av__botao--nao" onClick={() => definirPedindoMotivo(true)}><Icone nome="errado" tamanho={16} /> Não ajudou</button>

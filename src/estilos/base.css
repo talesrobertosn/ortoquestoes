@@ -1884,3 +1884,41 @@ kbd {
 .botao-google__nota { margin: 0; font-size: var(--meta); color: var(--texto-2); text-align: center; line-height: 1.45; }
 .botao-google__ou { display: flex; align-items: center; gap: 0.75rem; margin: 0.35rem 0 0; color: var(--texto-2); font-size: var(--meta); }
 .botao-google__ou::before, .botao-google__ou::after { content: ""; flex: 1; height: 1px; background: var(--traco); }
+
+/* Etapa de formação e provas de interesse (cadastro, perfil e aviso único). */
+.campos-etapa { display: grid; gap: 0.9rem; }
+.campos-etapa__provas { border: 0; padding: 0; margin: 0; display: grid; gap: 0.5rem; min-width: 0; }
+.campos-etapa__provas legend { font-weight: 600; padding: 0; margin-bottom: 0.5rem; }
+.campos-etapa__opcoes { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr)); gap: 0.5rem; }
+.campos-etapa__prova {
+  display: flex; align-items: flex-start; gap: 0.6rem; text-align: left; min-height: var(--toque);
+  padding: 0.6rem 0.75rem; border: var(--borda); border-radius: var(--raio-controle);
+  background: var(--superficie); color: var(--texto); font: inherit; cursor: pointer;
+}
+.campos-etapa__prova:hover { border-color: var(--traco-forte); }
+.campos-etapa__prova[aria-pressed="true"] { border-color: var(--verdete); background: var(--verdete-veu); }
+.campos-etapa__prova strong { display: block; font-size: var(--corpo-menor); }
+.campos-etapa__prova small { display: block; color: var(--texto-2); font-size: var(--meta); line-height: 1.35; }
+.campos-etapa__marca {
+  flex: 0 0 auto; width: 1.1rem; height: 1.1rem; margin-top: 0.15rem; border-radius: 4px;
+  border: 1.5px solid var(--traco-forte); display: grid; place-items: center; color: var(--sobre-destaque);
+}
+.campos-etapa__prova[aria-pressed="true"] .campos-etapa__marca { background: var(--verdete); border-color: var(--verdete); }
+
+/* Pergunta única sobre etapa e prova, para quem já tinha conta. */
+.pergunta-etapa { border: 1px solid var(--verdete); background: var(--superficie); border-radius: var(--raio-cartao); padding: 1.1rem; display: grid; gap: 0.9rem; box-shadow: var(--sombra-media); }
+.pergunta-etapa__cabeca { display: flex; gap: 0.75rem; align-items: flex-start; }
+.pergunta-etapa__cabeca h2 { font-size: 1.15rem; margin: 0; }
+.pergunta-etapa__cabeca p { margin: 0.25rem 0 0; color: var(--texto-2); font-size: var(--corpo-menor); }
+.pergunta-etapa__selo { font-size: var(--meta); font-weight: 700; color: var(--verdete); text-transform: uppercase; letter-spacing: 0.04em; }
+.pergunta-etapa__acoes { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }
+
+/* Opção de mostrar o serviço no ranking (ranking e Minha conta). */
+.rk-opcao-servico { display: flex; align-items: center; gap: .75rem; padding: .85rem 1rem; border: var(--borda); border-radius: var(--raio-cartao); background: var(--superficie); }
+.rk-opcao-servico--compacta { padding: .7rem .8rem; border-radius: var(--raio-controle); }
+.rk-opcao-servico__icone { flex: 0 0 auto; display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 50%; background: var(--verdete-veu); color: var(--verdete); }
+.rk-opcao-servico__texto { flex: 1 1 auto; display: grid; gap: .15rem; min-width: 0; }
+.rk-opcao-servico__texto small { color: var(--texto-2); font-size: var(--meta); }
+.rk-opcao-servico__aviso { color: var(--erro) !important; }
+.rk-opcao-servico__chave, .rk-opcao-servico__botao { flex: 0 0 auto; }
+@media (max-width: 520px) { .rk-opcao-servico { flex-wrap: wrap; } }
