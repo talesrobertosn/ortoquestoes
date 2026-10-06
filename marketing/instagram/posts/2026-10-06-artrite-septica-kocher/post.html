@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Plantão das 3h14 Orto Questões</title>
+<!-- Plantão das 3h14, 06/10/2026: artrite séptica do quadril na criança (critérios de Kocher).
+     5 slides de feed (1080x1350) + story semeador (1080x1920). Conversa e pessoas fictícias.
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-06-artrite-septica-kocher/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+:root { --verde: #14655E; --tinta: #0B3A35; --ouro: #F4CF7C; --creme: #FBF6EA; --noite: #071312; --balao: #1d2b2a; --vermelho: #f07a6a; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1350px; color: #fff; padding: 64px 72px;
+  background: radial-gradient(circle at 80% 8%, rgba(244,207,124,.16), transparent 34%), radial-gradient(circle at 1px 1px, rgba(255,255,255,.05) 1.4px, transparent 1.5px) 0 0/34px 34px, linear-gradient(170deg, #050d0c, #0B3A35 120%); }
+.topo { display: flex; justify-content: space-between; align-items: center; }
+.marca { display: flex; align-items: center; gap: 14px; font: 34px Jakarta; letter-spacing: -.02em; }
+.marca svg { width: 52px; height: 52px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; opacity: .9; }
+.cont { font: 700 26px Jakarta; color: rgba(255,255,255,.5); letter-spacing: .08em; }
+h1, h2 { font-family: Jakarta; letter-spacing: -.04em; text-wrap: balance; }
+.hora { font: 800 250px/1 Jakarta; letter-spacing: -.06em; margin-top: 70px; color: #fff; }
+.hora span { color: var(--ouro); }
+h1 { font-size: 76px; line-height: 1.04; margin-top: 10px; }
+h1 em, h2 em { font-style: normal; color: var(--ouro); }
+h2 { font-size: 60px; line-height: 1.06; }
+.sub { font-size: 34px; line-height: 1.42; color: rgba(255,255,255,.78); text-wrap: pretty; }
+.sub b { color: #fff; }
+.aviso { margin-top: 70px; display: grid; grid-template-columns: 84px 1fr; gap: 24px; align-items: center; padding: 28px 32px; border-radius: 34px;
+  background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.18); box-shadow: 0 30px 60px rgba(0,0,0,.35); backdrop-filter: blur(8px); }
+.aviso .ava { width: 84px; height: 84px; border-radius: 24px; background: #2f6f68; display: grid; place-items: center; font: 800 32px Jakarta; color: var(--ouro); }
+.aviso strong { font: 800 30px Jakarta; } .aviso small { float: right; font: 500 24px Inter; color: rgba(255,255,255,.55); }
+.aviso p { font-size: 31px; line-height: 1.35; color: rgba(255,255,255,.9); margin-top: 6px; }
+.rodape { position: absolute; left: 72px; right: 72px; bottom: 54px; display: flex; justify-content: space-between; font: 700 26px Jakarta; color: rgba(255,255,255,.55); }
+.rodape b { color: var(--ouro); }
+
+/* Conversa */
+.app { margin-top: 26px; border-radius: 44px; background: var(--noite); border: 2px solid rgba(255,255,255,.1); overflow: hidden; box-shadow: 0 30px 70px rgba(0,0,0,.4); }
+.app .cab { display: flex; align-items: center; gap: 20px; padding: 24px 30px; background: #0f1f1e; border-bottom: 1px solid rgba(255,255,255,.08); }
+.app .cab .ava { width: 66px; height: 66px; border-radius: 50%; background: #2f6f68; display: grid; place-items: center; font: 800 26px Jakarta; color: var(--ouro); }
+.app .cab strong { display: block; font: 800 30px Jakarta; } .app .cab span { font-size: 23px; color: rgba(255,255,255,.55); }
+.msgs { display: flex; flex-direction: column; gap: 14px; padding: 26px 28px 30px; }
+.m { max-width: 82%; padding: 20px 26px 14px; border-radius: 28px; font-size: 32px; line-height: 1.36; }
+.m small { display: block; text-align: right; margin-top: 4px; font-size: 20px; opacity: .55; }
+.ele { align-self: flex-start; background: var(--balao); border-bottom-left-radius: 8px; }
+.eu { align-self: flex-end; background: var(--verde); border-bottom-right-radius: 8px; }
+.eu b { color: var(--ouro); }
+.dia { align-self: center; font: 700 21px Jakarta; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.45); }
+.digitando { align-self: flex-start; display: flex; gap: 10px; padding: 22px 26px; border-radius: 28px; background: var(--balao); }
+.digitando i { width: 14px; height: 14px; border-radius: 50%; background: rgba(255,255,255,.55); }
+
+/* Resumo */
+.cartao { margin-top: 34px; border-radius: 36px; background: var(--creme); color: var(--tinta); padding: 40px 44px; box-shadow: 0 30px 70px rgba(0,0,0,.35); }
+.cartao .eti { display: inline-block; padding: 9px 20px; border-radius: 99px; background: var(--tinta); color: var(--ouro); font: 800 21px Jakarta; letter-spacing: .1em; text-transform: uppercase; }
+.cartao h2 { margin-top: 18px; font-size: 54px; }
+.itens { margin-top: 24px; display: grid; gap: 16px; }
+.it { display: grid; grid-template-columns: 58px 1fr; gap: 20px; align-items: start; }
+.it b { width: 58px; height: 58px; border-radius: 16px; display: grid; place-items: center; background: var(--verde); color: var(--ouro); font: 800 28px Jakarta; }
+.it p { font-size: 30px; line-height: 1.36; color: #33504b; padding-top: 6px; }
+.it p strong { color: var(--tinta); }
+.cta { margin-top: 30px; padding: 26px 34px; border-radius: 26px; background: var(--ouro); color: var(--tinta); font: 800 32px Jakarta; text-align: center; }
+
+/* Kocher: placar e story */
+.m { font-size: 29px; padding: 16px 24px 12px; } .msgs { gap: 12px; } .app { margin-top: 20px; }
+.placar { margin-top: 30px; display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+.placar div { padding: 22px 8px 18px; border-radius: 22px; text-align: center; background: rgba(255,255,255,.07); border: 2px solid rgba(255,255,255,.12); }
+.placar b { display: block; font: 800 30px Jakarta; color: rgba(255,255,255,.7); }
+.placar strong { display: block; margin-top: 6px; font: 800 44px Jakarta; letter-spacing: -.03em; }
+.placar div.on { background: var(--ouro); border-color: var(--ouro); color: var(--tinta); }
+.placar div.on b { color: var(--tinta); }
+.crit { margin-top: 30px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.crit div { padding: 24px 26px; border-radius: 26px; background: rgba(255,255,255,.08); border: 2px solid rgba(244,207,124,.35); }
+.crit small { font: 700 20px Jakarta; letter-spacing: .1em; text-transform: uppercase; color: var(--ouro); }
+.crit p { margin-top: 8px; font: 800 36px/1.15 Jakarta; letter-spacing: -.02em; }
+.crit span { display: block; margin-top: 6px; font-size: 24px; color: rgba(255,255,255,.7); }
+.prova { margin-top: 22px; padding: 26px 34px; border-radius: 30px; background: #fff; color: #12181a; }
+.prova small { font: 800 21px Jakarta; letter-spacing: .1em; color: var(--verde); text-transform: uppercase; }
+.prova p { margin-top: 10px; font: 700 32px/1.3 Jakarta; }
+.prova .al { margin-top: 8px; display: flex; gap: 16px; align-items: center; padding: 14px 18px; border-radius: 16px; background: #f1f3f2; font: 600 27px Jakarta; }
+.prova .al b { flex: none; width: 42px; height: 42px; border-radius: 12px; display: grid; place-items: center; background: #fff; font: 800 22px Jakarta; color: var(--tinta); }
+.prova .al.ok { background: #e3f3e8; box-shadow: inset 0 0 0 3px #1f7a4d; } .prova .al.ok b { background: #1f7a4d; color: #fff; }
+.prova .al.x { opacity: .5; }
+.story { height: 1920px; padding: 200px 84px 0; }
+.story .data { margin-top: 70px; text-align: center; font: 600 40px Jakarta; color: rgba(255,255,255,.7); }
+.story .hora { text-align: center; margin-top: 0; font-size: 300px; }
+.story .aviso { margin-top: 50px; }
+.story h2 { margin-top: 64px; font-size: 76px; text-align: center; }
+.story .figurinha { margin: 44px auto 0; width: 760px; height: 230px; border-radius: 30px; display: grid; place-items: center; text-align: center; border: 5px dashed var(--ouro); color: var(--ouro); opacity: .6; font: 700 30px Jakarta; letter-spacing: .08em; text-transform: uppercase; }
+.story .pe { margin-top: 40px; text-align: center; font: 600 36px/1.4 Jakarta; color: rgba(255,255,255,.75); }
+.story .pe b { color: var(--ouro); }
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#14655E"/><g fill="#FFFFFF" opacity=".55"><path transform="translate(13 9.5)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(11 21.2)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(13 44.6)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g><path fill="#F4CF7C" transform="translate(11 32.9)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></symbol>
+</defs></svg>
+
+<!-- 1. Capa -->
+<section id="p1-capa">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">1/5</span></div>
+  <p class="hora">03<span>:</span>48</p>
+  <h1>Chegou mensagem<br>do <em>R1 de plantão.</em></h1>
+  <div class="aviso"><div class="ava">R1</div><div><strong>R1 · PS infantil</strong><small>agora</small><p>Criança de 4 anos mancando, febre, não quer apoiar a perna. Deve ser sinovite transitória, né?</p></div></div>
+  <div class="aviso" style="margin-top:22px;opacity:.75"><div class="ava">R1</div><div><strong>R1 · PS infantil</strong><small>03:48</small><p>Posso dar anti-inflamatório e alta?</p></div></div>
+  <p class="sub" style="margin-top:50px">O que você responderia? Pense antes de arrastar. <b>A conversa continua.</b></p>
+  <div class="rodape"><span>Ortopedia pediátrica · quadril</span><span>arraste <b>&gt;&gt;</b></span></div>
+</section>
+
+<!-- 2. Conversa: os números -->
+<section id="p2-conversa">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">2/5</span></div>
+  <div class="app">
+    <div class="cab"><div class="ava">R1</div><div><strong>R1 · PS infantil</strong><span>online</span></div></div>
+    <div class="msgs">
+      <p class="dia">Hoje</p>
+      <p class="m ele">Febre de 38,9. Chora quando mexo no quadril direito. Fica com ele fletido e rodado para fora.<small>03:46</small></p>
+      <p class="m eu"><b>Não dá alta ainda.</b> Ele apoia a perna? Já tem hemograma e VHS?<small>03:49</small></p>
+      <p class="m ele">Não apoia de jeito nenhum. Leucócitos 15.800, VHS 52.<small>03:53</small></p>
+      <p class="m eu">Então conta comigo: febre, não apoia, leucócitos e VHS altos. São os <b>4 critérios de Kocher</b>. Ele tem os quatro.<small>03:54</small></p>
+      <p class="m ele">E isso quer dizer o quê?<small>03:54</small></p>
+      <div class="digitando"><i></i><i></i><i></i></div>
+    </div>
+  </div>
+  <div class="rodape"><span>Conversa fictícia</span><span>arraste <b>&gt;&gt;</b></span></div>
+</section>
+
+<!-- 3. Kocher -->
+<section id="p3-kocher">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">3/5</span></div>
+  <h2 style="margin-top:46px">Os 4 critérios de <em>Kocher</em></h2>
+  <div class="crit">
+    <div><small>1 · Febre</small><p>Acima de 38,5 °C</p><span>na história ou na admissão</span></div>
+    <div><small>2 · Apoio</small><p>Não apoia o membro</p><span>recusa a carga, mesmo com ajuda</span></div>
+    <div><small>3 · VHS</small><p>Acima de 40 mm/h</p><span>marcador inflamatório</span></div>
+    <div><small>4 · Leucócitos</small><p>Acima de 12.000</p><span>no sangue periférico</span></div>
+  </div>
+  <p class="sub" style="margin-top:40px">Probabilidade prevista de artrite séptica pelo número de critérios <b>(Kocher, 1999)</b>:</p>
+  <div class="placar">
+    <div><b>0</b><strong>&lt;0,2%</strong></div>
+    <div><b>1</b><strong>3%</strong></div>
+    <div><b>2</b><strong>40%</strong></div>
+    <div><b>3</b><strong>93%</strong></div>
+    <div class="on"><b>4</b><strong>99,6%</strong></div>
+  </div>
+  <p class="sub" style="margin-top:34px;font-size:29px">Depois, Caird somou a <b>PCR acima de 2,0 mg/dL</b> como forte preditor. Mas ela não é um dos 4 critérios originais: a banca adora essa troca.</p>
+  <div class="rodape"><span>Ortopedia pediátrica · quadril</span><span>arraste <b>&gt;&gt;</b></span></div>
+</section>
+
+<!-- 4. Conduta -->
+<section id="p4-conduta">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">4/5</span></div>
+  <div class="app">
+    <div class="cab"><div class="ava">R1</div><div><strong>R1 · PS infantil</strong><span>online</span></div></div>
+    <div class="msgs">
+      <p class="m eu">Ultrassom para ver o derrame e <b>punção do quadril</b>. Colhe hemocultura e o líquido <b>antes</b> do antibiótico.<small>03:55</small></p>
+      <p class="m eu">Confirmou? Vai para o centro cirúrgico: <b>drenagem e lavagem</b>, como urgência.<small>03:56</small></p>
+      <p class="m ele">Por que tanta pressa, se ele já vai tomar antibiótico?<small>03:56</small></p>
+      <p class="m eu">A metáfise do fêmur proximal é intracapsular e o pus aumenta a pressão na cápsula. Isso ameaça a <b>vascularização da cabeça</b> e as enzimas destroem a cartilagem.<small>03:58</small></p>
+      <p class="m eu">Abaixo dos 4 anos, pense também em <b>Kingella kingae</b>: cresce mal na cultura.<small>03:59</small></p>
+    </div>
+  </div>
+  <div class="rodape"><span>Conversa fictícia</span><span>arraste <b>&gt;&gt;</b></span></div>
+</section>
+
+<!-- 5. Resumo e a questão da prova -->
+<section id="p5-resumo">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">5/5</span></div>
+  <div class="cartao" style="margin-top:22px;padding:30px 40px">
+    <span class="eti">Print para o próximo plantão</span>
+    <h2 style="font-size:48px">Quadril séptico <em style="color:var(--verde)">em 5 linhas</em></h2>
+    <div class="itens" style="gap:8px;margin-top:16px">
+      <div class="it"><b>1</b><p><strong>Kocher:</strong> febre &gt; 38,5 °C, não apoia, VHS &gt; 40, leucócitos &gt; 12.000.</p></div>
+      <div class="it"><b>2</b><p>Os 4 presentes: <strong>99,6%</strong>. PCR alta reforça, mas não é critério de Kocher.</p></div>
+      <div class="it"><b>3</b><p>Quadril em <strong>flexão, abdução e rotação externa</strong>: maior volume da cápsula.</p></div>
+      <div class="it"><b>4</b><p>Punção antes do antibiótico; confirmado, <strong>drenagem cirúrgica urgente</strong>.</p></div>
+      <div class="it"><b>5</b><p><strong>S. aureus</strong> é o mais comum; abaixo de 4 anos, lembre de <strong>Kingella</strong>.</p></div>
+    </div>
+  </div>
+  <div class="prova">
+    <small>Caiu assim · TARO 2019</small>
+    <p>Na artrite séptica do quadril, é critério de Kocher:</p>
+    <div class="al x"><b>A</b>VHS de 20 mm</div>
+    <div class="al x"><b>B</b>PCR de 40 mg/L</div>
+    <div class="al x"><b>C</b>Diminuição da mobilidade do quadril</div>
+    <div class="al ok"><b>D</b>Incapacidade de apoio do membro inferior</div>
+  </div>
+  <p style="position:absolute;left:72px;right:72px;bottom:30px;text-align:center;font:700 26px Jakarta;color:rgba(255,255,255,.6)">Mais questões comentadas em <b style="color:var(--ouro)">ortoquestoes.com.br</b></p>
+</section>
+
+<!-- Story semeador (1080x1920): tela bloqueada e enquete -->
+<section id="s1-story" class="story">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">Plantão</span></div>
+  <p class="data">terça-feira, 6 de outubro</p>
+  <p class="hora">03<span>:</span>48</p>
+  <div class="aviso"><div class="ava">R1</div><div><strong>R1 · PS infantil</strong><small>agora</small><p>Criança de 4 anos, febre de 38,9, não apoia a perna, leucócitos 15.800 e VHS 52.</p></div></div>
+  <div class="aviso" style="margin-top:20px;opacity:.78"><div class="ava">R1</div><div><strong>R1 · PS infantil</strong><small>03:48</small><p>Deve ser sinovite transitória. Dou anti-inflamatório e alta?</p></div></div>
+  <h2>Você daria <em>alta?</em></h2>
+  <div class="figurinha">Enquete: Sim / Não</div>
+  <p class="pe">A resposta, com os <b>4 critérios de Kocher</b>,<br>está no post de hoje no feed.</p>
+</section>
+
+</body></html>
