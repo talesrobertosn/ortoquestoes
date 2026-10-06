@@ -1,7 +1,7 @@
 {
   "versao": 1,
-  "geradoEm": "2026-10-06T12:08:59+00:00",
-  "total": 5344,
+  "geradoEm": "2026-10-06T12:30:38+00:00",
+  "total": 5389,
   "temas": [
     {
       "slug": "mao",
@@ -19,7 +19,7 @@
       "slug": "quadril",
       "nome": "Quadril",
       "arquivo": "temas/quadril.json",
-      "total": 527
+      "total": 572
     },
     {
       "slug": "joelho",
@@ -34975,6 +34975,811 @@
       "s": [
         68,
         83
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0586",
+      "t": 2,
+      "s": [
+        83
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0587",
+      "t": 2,
+      "s": [
+        83,
+        68
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0588",
+      "t": 2,
+      "s": [
+        83
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0589",
+      "t": 2,
+      "s": [
+        83
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0590",
+      "t": 2,
+      "s": [
+        83,
+        68
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0591",
+      "t": 2,
+      "s": [
+        83,
+        68
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0592",
+      "t": 2,
+      "s": [
+        83,
+        68
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0593",
+      "t": 2,
+      "s": [
+        83
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0594",
+      "t": 2,
+      "s": [
+        83
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0595",
+      "t": 2,
+      "s": [
+        70
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0596",
+      "t": 2,
+      "s": [
+        70
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0597",
+      "t": 2,
+      "s": [
+        70,
+        69
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0598",
+      "t": 2,
+      "s": [
+        70,
+        74
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0599",
+      "t": 2,
+      "s": [
+        70,
+        76
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0600",
+      "t": 2,
+      "s": [
+        70,
+        69
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0601",
+      "t": 2,
+      "s": [
+        70,
+        81
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0602",
+      "t": 2,
+      "s": [
+        70,
+        76
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0603",
+      "t": 2,
+      "s": [
+        70,
+        69
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0604",
+      "t": 2,
+      "s": [
+        72
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0605",
+      "t": 2,
+      "s": [
+        72,
+        79
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0606",
+      "t": 2,
+      "s": [
+        72,
+        81
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0607",
+      "t": 2,
+      "s": [
+        72,
+        79
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0608",
+      "t": 2,
+      "s": [
+        72,
+        79
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0609",
+      "t": 2,
+      "s": [
+        72,
+        79
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0610",
+      "t": 2,
+      "s": [
+        72,
+        83
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0611",
+      "t": 2,
+      "s": [
+        72,
+        69
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0612",
+      "t": 2,
+      "s": [
+        72,
+        80,
+        82
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0613",
+      "t": 2,
+      "s": [
+        72,
+        84
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0614",
+      "t": 2,
+      "s": [
+        72
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0615",
+      "t": 2,
+      "s": [
+        72,
+        77
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0616",
+      "t": 2,
+      "s": [
+        72,
+        77
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0617",
+      "t": 2,
+      "s": [
+        72,
+        84
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0618",
+      "t": 2,
+      "s": [
+        72,
+        84
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0619",
+      "t": 2,
+      "s": [
+        72,
+        81
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0620",
+      "t": 2,
+      "s": [
+        77
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0621",
+      "t": 2,
+      "s": [
+        72,
+        77
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0622",
+      "t": 2,
+      "s": [
+        72,
+        69
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0623",
+      "t": 2,
+      "s": [
+        72,
+        82
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0624",
+      "t": 2,
+      "s": [
+        72,
+        69
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0625",
+      "t": 2,
+      "s": [
+        72,
+        68
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0626",
+      "t": 2,
+      "s": [
+        72,
+        68,
+        83
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0627",
+      "t": 2,
+      "s": [
+        72,
+        66
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0628",
+      "t": 2,
+      "s": [
+        72,
+        83,
+        84
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0629",
+      "t": 2,
+      "s": [
+        72,
+        80,
+        81
+      ],
+      "p": 12,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "quadril"
+    },
+    {
+      "id": "quadril-0630",
+      "t": 2,
+      "s": [
+        72,
+        69,
+        66
       ],
       "p": 12,
       "a": null,

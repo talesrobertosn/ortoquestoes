@@ -32,6 +32,7 @@ export function Sessao() {
   const [questoes, definirQuestoes] = useState<Questao[] | null>(null)
   const [mapaAberto, definirMapaAberto] = useState(false)
   const [atalhosAbertos, definirAtalhosAbertos] = useState(false)
+  const [dicaTeclado, definirDicaTeclado] = useState(false)
   const [portaoContaAberto, definirPortaoContaAberto] = useState(false)
   const [erro, definirErro] = useState<string | null>(null)
   const areaGestos = useRef<HTMLDivElement>(null)
@@ -115,6 +116,7 @@ export function Sessao() {
       const tecla = evento.key.toLowerCase()
       if (evento.key === 'ArrowRight' || tecla === 'n') {
         evento.preventDefault()
+        if (evento.key === 'ArrowRight') { gravar('dica:teclado', 3); definirDicaTeclado(false) }
         irAdiante()
       } else if (evento.key === 'ArrowLeft' || tecla === 'p') {
         evento.preventDefault()
@@ -169,6 +171,21 @@ export function Sessao() {
     ]
   }, [questoes, temVarias, painelAberto])
   useEffect(() => { if (posicao > 0) definirDicaDeslizar(false) }, [posicao])
+  // No computador, o equivalente: nas primeiras sessões, uma frase lembra que
+  // as setas do teclado trocam de questão. Some sozinha e para de aparecer
+  // assim que a pessoa usa as setas.
+  const temporizadorTeclado = useRef<number[]>([])
+  useEffect(() => () => temporizadorTeclado.current.forEach((t) => window.clearTimeout(t)), [])
+  useEffect(() => {
+    if (temporizadorTeclado.current.length || !questoes || !temVarias || painelAberto) return
+    if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return
+    const vistas = ler<number>('dica:teclado', 0)
+    if (vistas >= 3) return
+    temporizadorTeclado.current = [
+      window.setTimeout(() => { gravar('dica:teclado', vistas + 1); definirDicaTeclado(true) }, 1200),
+      window.setTimeout(() => definirDicaTeclado(false), 7000),
+    ]
+  }, [questoes, temVarias, painelAberto])
 
   // Tempo esgotado encerra o simulado sozinho e leva ao resumo.
   useEffect(() => {
@@ -232,6 +249,7 @@ export function Sessao() {
   return (
     <div className="sessao-gestos" ref={areaGestos}>
       {dicaDeslizar && <p className="dica-deslizar nao-imprime" role="status"><Icone nome="esquerda" tamanho={15} /> Deslize para trocar de questão <Icone nome="direita" tamanho={15} /></p>}
+      {dicaTeclado && !dicaDeslizar && <p className="dica-deslizar dica-teclado nao-imprime" role="status">Use as setas <kbd>←</kbd> <kbd>→</kbd> do teclado para trocar de questão</p>}
       <button
         type="button"
         className="seta-lateral seta-lateral--esquerda nao-imprime"
@@ -365,6 +383,7 @@ export function Sessao() {
         >
           <Icone nome="esquerda" tamanho={16} />
           Anterior
+          <kbd className="nav-sessao__tecla" aria-hidden="true">←</kbd>
         </button>
         <div className="nav-sessao__extras">
           {posicao + 1 < total && !sessao.respostas[questaoAtual?.id ?? ''] && (
@@ -387,6 +406,7 @@ export function Sessao() {
           onClick={avancar}
           disabled={posicao + 1 >= total && respondidas === 0}
         >
+          {posicao + 1 < total && <kbd className="nav-sessao__tecla" aria-hidden="true">→</kbd>}
           {posicao + 1 < total ? 'Próxima' : 'Concluir'}
           <Icone nome="direita" tamanho={16} />
         </button>

@@ -7273,5 +7273,635 @@
   ],
   "geradoEm": "2026-10-06",
   "conferido": false
+ },
+ "quadril-0586": {
+  "conceito": "### Do desgaste à soltura\n\nA ligação entre detritos de desgaste, osteólise e soltura asséptica foi estabelecida por ==Willert, na década de 1980==: a histologia de artroplastias falhadas mostrou que a maior parte das partículas era de ==polietileno de ultra-alto peso molecular==. Hoje se reconhece que a maioria das osteólises periprotéticas decorre dessas partículas. Centenas de milhares delas podem ser produzidas em um único ciclo de marcha.\n\n### Onde as partículas nascem\n\n1. Na articulação propriamente dita, entre cabeça e componente acetabular.\n2. Em interfaces modulares, como cone e cabeça ou inserto e concha.\n3. Em áreas de impacto entre colo e bordo do componente.\n4. Em interfaces não articulantes, por abrasão contra osso ou cimento.\n\n### Os limiares que caem\n\n| Dado | Valor |\n|---|---|\n| Penetração média da cabeça | ==linear==, cerca de ==0,2 mm por ano== |\n| Osteólise radiográfica universal em 10 anos | penetração média ==acima de 0,3 mm por ano== |\n| Maior risco de revisão por soltura (122 Charnley por osteonecrose) | desgaste linear ==acima de 0,1 mm por ano== |\n| Cimentado contra não cimentado | o ==não cimentado== pode gerar mais partículas |\n| Osteólise femoral em 503 híbridas | até 24% em 10 anos, mais em pacientes ativos |\n\nA osteólise fica silenciosa até se associar a sinovite dolorosa, fratura, falha estrutural ou soltura. Por isso o seguimento radiográfico seriado é obrigatório mesmo no paciente sem queixa.\n\n> **Na prova:** penetração linear de 0,2 mm/ano; acima de 0,3 mm/ano, osteólise em todos aos 10 anos; acima de 0,1 mm/ano, mais revisão.",
+  "correta": "**Correta.** O capítulo relata que, dez anos após a implantação, todos os pacientes com penetração média superior a 0,3 mm por ano apresentavam osteólise radiográfica. É o limiar clínico mais citado da relação entre volume de partículas e destruição óssea.",
+  "incorretas": {
+   "A": "**Errada, inverte os componentes.** O capítulo informa que componentes acetabulares não cimentados podem gerar mais partículas do que os cimentados, pelas interfaces adicionais (verso do inserto contra a concha, orifícios de parafuso).",
+   "B": "**Errada em dois pontos.** A penetração tende a ser linear, e não exponencial, com média aproximada de 0,2 mm por ano.",
+   "C": "**Errada no limiar.** Em 122 artroplastias de Charnley por osteonecrose, um desgaste linear acima de 0,1 mm por ano já se associou a maior risco de revisão por soltura asséptica. Esperar 1 mm por ano seria aceitar dez vezes esse valor."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 21 (Resposta Biológica aos Detritos de Desgaste)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0587": {
+  "conceito": "### Tamanho, número e superfície\n\nA biologia da osteólise depende menos do volume perdido pelo implante e mais do ==número, do tamanho e da área superficial== das partículas.\n\n| Origem | Dimensão predominante | Característica biológica |\n|---|---|---|\n| Polietileno convencional | 0,1 a 2 µm, média de ==0,5 µm==; ==90% abaixo de 1 µm== | grande proporção fagocitável, forte estímulo macrofágico |\n| Polietileno altamente reticulado | média de cerca de ==0,2 µm== em simulador | menor volume total, partículas individualmente bioativas |\n| Liga de cobalto, cromo e molibdênio | ==30 a 100 nm==, média abaixo de 50 nm | número enorme, grande área, liberação de íons |\n\n### O paradoxo do metal\n\nO par metal-metal tem ==desgaste linear muito baixo==, entre 1,9 e 6,2 µm por ano. Mas as partículas são cerca de ==uma ordem de grandeza menores== que as de polietileno. Resultado: entre 6,7 × 10¹² e 2,5 × 10¹⁴ partículas por ano, cerca de ==13.500 vezes mais== que um par metal-polietileno convencional. Como o diâmetro médio pode ser ainda menor, esses números podem estar subestimados.\n\nNo ambiente biológico, o metal aparece como partículas de desgaste e corrosão, complexos metal-proteína, íons livres, sais e óxidos e até hemossiderina.\n\n> **Na prova:** polietileno, 0,5 µm e 90% abaixo de 1 µm; metal, abaixo de 50 nm, pouco volume e partículas incontáveis.",
+  "correta": "**Correta.** O capítulo descreve as partículas metálicas como aproximadamente uma ordem de grandeza menores que as de polietileno e estima que uma articulação metal-metal gere cerca de 13.500 vezes mais partículas por ano que uma metal-polietileno convencional, apesar do desgaste linear baixo.",
+  "incorretas": {
+   "A": "**Errada.** Cerca de 90% das partículas de polietileno convencional têm menos de 1 µm, o que, aliás, dificulta vê-las na microscopia óptica. As células gigantes multinucleadas associam-se às poucas partículas maiores que 10 µm.",
+   "C": "**Errada.** Em simuladores, as partículas do polietileno altamente reticulado têm média de cerca de 0,2 µm, ou seja, são menores que as do convencional e menores que as encontradas em explantes clínicos.",
+   "D": "**Errada.** O par metal-metal tem desgaste linear muito baixo, de 1,9 a 6,2 µm por ano. O problema é o número enorme de partículas nanométricas, a grande área superficial e a liberação de íons e produtos de corrosão, e não um grande volume de desgaste."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 21 (Resposta Biológica aos Detritos de Desgaste)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0588": {
+  "conceito": "### A cascata central\n\n> Partícula → reconhecimento pelo macrófago → fator nuclear kappa B → citocinas e quimiocinas → recrutamento de monócitos → aumento do ligante do RANK → osteoclastogênese → reabsorção óssea.\n\nO macrófago reconhece a partícula com ou sem fagocitose, por receptores como os ==semelhantes a Toll== (via proteína adaptadora MyD88), CD14 e integrinas. A sinalização ativa as quinases ativadas por mitógenos e o ==fator nuclear kappa B==, que aumenta TNF-alfa, interleucinas 1, 6 e 8, prostaglandina E2 e quimiocinas como a ==proteína quimiotática de monócitos 1==, que recruta novos monócitos até de forma sistêmica.\n\n### O eixo RANK, RANKL e osteoprotegerina\n\n| Molécula | Papel |\n|---|---|\n| RANK | receptor nos precursores e osteoclastos maduros |\n| ==Ligante do RANK (RANKL)== | membro da superfamília do TNF, expresso por osteoblastos, células estromais e linfócitos T; também solúvel |\n| Fator estimulador de colônias de macrófagos | prolifera precursores, mas ==sozinho não forma osteoclastos funcionais== |\n| ==Osteoprotegerina== | ==receptor solúvel, armadilha== que sequestra o RANKL e reduz a reabsorção |\n| TNF-alfa | potencializa a osteoclastogênese em precursores já expostos ao RANKL |\n\n### O outro lado: menos osso novo\n\nAs partículas e o TNF-alfa ==inibem== células-tronco mesenquimais e osteoblastos: menos proliferação, menos diferenciação, mais apoptose (mais de 300 partículas por célula causaram morte quase completa). A osteólise soma reabsorção acelerada com formação deprimida.\n\n> **Na prova:** RANKL mais M-CSF formam o osteoclasto; osteoprotegerina é a armadilha solúvel; partículas inibem o osteoblasto.",
+  "correta": "**Correta.** O capítulo afirma que o ligante do RANK, em conjunto com o fator estimulador de colônias de macrófagos, é essencial para a diferenciação, a maturação e a sobrevivência dos osteoclastos reabsorvedores. É o sinal final comum da osteólise por partículas.",
+  "incorretas": {
+   "A": "**Errada.** O fator estimulador de colônias de macrófagos isolado aumenta a proliferação dos precursores, mas não é suficiente para produzir células maduras funcionais. Precisa do ligante do RANK.",
+   "B": "**Errada, inverte o efeito.** Como mostra o diagrama, as partículas e o TNF-alfa inibem as células-tronco mesenquimais e os osteoblastos. Concentrações baixas podem estimular a proliferação osteoblástica, mas concentrações elevadas e exposição prolongada a inibem.",
+   "D": "**Errada.** A osteoprotegerina é um receptor solúvel que funciona como armadilha para o ligante do RANK, impedindo sua ligação ao RANK. Ela inibe a formação de osteoclastos, e o bloqueio desse eixo preveniu osteólise experimental."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 21 (Resposta Biológica aos Detritos de Desgaste)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0589": {
+  "conceito": "### O tamanho fagocitável\n\nA resposta celular depende principalmente de ==tamanho, composição, rugosidade e concentração==. As partículas dentro da faixa fagocitável, até cerca de ==10 µm==, e em especial as ==menores que 1 µm==, são as mais estimuladoras.\n\n| Achado | Estudo |\n|---|---|\n| Partículas de ==0,24 µm== mais ativas para citocinas e reabsorção, na proporção de 10 µm³ por macrófago | Green e colaboradores |\n| Partículas de 0,45 e 1,71 µm exigiram doses maiores | idem |\n| Partículas ==maiores que 5 µm inativas== nas doses testadas | idem |\n| Polietileno liberou TNF-alfa ==mais rápido e mais intenso que a alumina== | comparação de tamanho e concentração semelhantes |\n\n### Um problema técnico que cai\n\nA densidade do polietileno é de cerca de ==0,94 g/cm³, menor que a da água==. As partículas ==flutuam== e podem não tocar as células aderidas ao fundo. Daí os sistemas de cultura em meio sólido, a fixação com colágeno, os sistemas invertidos e o revestimento direto das placas.\n\n### Quem fagocita o quê\n\nNas membranas retiradas, os ==macrófagos== associam-se às partículas ==submicrométricas==; as ==células gigantes multinucleadas==, formadas pela fusão de macrófagos, às ==maiores que 10 µm==.\n\n> **Na prova:** o menor fagocitável é o mais bioativo; polietileno flutua; macrófago para o pequeno, célula gigante para o grande.",
+  "correta": "**Correta.** No trabalho de Green e colaboradores com macrófagos peritoneais murinos, as partículas de 0,24 µm foram as mais ativas para liberar citocinas e estimular reabsorção, enquanto as maiores que 5 µm foram inativas nas doses testadas.",
+  "incorretas": {
+   "B": "**Errada.** A densidade do polietileno, cerca de 0,94 g/cm³, é ligeiramente inferior à da água. As partículas flutuam e podem não entrar em contato com as células no fundo do recipiente, o que exigiu técnicas como os sistemas invertidos.",
+   "C": "**Errada, inverte os materiais.** O polietileno gerou liberação de TNF-alfa mais rápida e intensa do que a alumina de tamanho e concentração semelhantes.",
+   "D": "**Errada, inverte as células.** Os macrófagos associam-se principalmente às partículas submicrométricas; as células gigantes multinucleadas, às partículas maiores que 10 µm."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 21 (Resposta Biológica aos Detritos de Desgaste)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0590": {
+  "conceito": "### O paradoxo aparente\n\nO polietileno altamente reticulado pode produzir partículas ==mais bioativas por unidade de volume==, mas gera ==muito menos volume total de detritos==. O resultado clínico predominante é menos desgaste e menos osteólise.\n\n### O que mostram as bancadas\n\n| Experimento | Resultado |\n|---|---|\n| Células cultivadas sobre ==discos em bloco== | interleucina 1 e TNF-alfa ==semelhantes== entre reticulado e convencional |\n| Partículas de ensaio pino sobre placa | TNF-alfa elevado com ==0,1 µm³ por célula== no reticulado, contra ==10 µm³ por célula ou mais== no convencional |\n| Secreção de TNF-alfa e VEGF na mesma dose | partículas reticuladas ==mais inflamatórias== |\n\n### O que mostra a clínica\n\n| Estudo | Resultado |\n|---|---|\n| Randomizado, cabeça de cromo-cobalto | 0,051 contra ==0,003 mm por ano== (mais de dez vezes menos com 100 kGy) |\n| Revisão sistemática | redução de desgaste de 30% |\n| Metanálise de randomizados | risco relativo de osteólise precoce de ==0,40==, favorável ao reticulado |\n| 150 artroplastias, 1ª geração, 7 a 10,5 anos | osteólise acetabular em ==10,6%== |\n\nPor isso ainda não se pode afirmar que o material reduzirá definitivamente as revisões em prazo muito longo.\n\n> **Na prova:** reticulado, partícula mais bioativa, mas muito menos partículas; RR de osteólise 0,40; ainda há 10,6% de osteólise em 10 anos.",
+  "correta": "**Correta.** É o paradoxo que o capítulo destaca: em cultura, as partículas reticuladas elevaram o TNF-alfa com 0,1 µm³ por célula, contra 10 µm³ ou mais do convencional, mas a quantidade total de partículas é muito menor, e os estudos clínicos mostram baixo desgaste e baixa osteólise.",
+  "incorretas": {
+   "A": "**Errada.** Com discos em bloco, monócitos humanos e macrófagos murinos liberaram níveis semelhantes de interleucina 1 e TNF-alfa, sugerindo que o polímero em bloco, reticulado ou não, afeta as células de forma semelhante. A diferença aparece nas partículas.",
+   "B": "**Errada.** A metanálise de estudos randomizados mostrou risco relativo de osteólise radiográfica precoce de 0,40, ou seja, favorável ao polietileno altamente reticulado.",
+   "C": "**Errada.** Nessa série, foram encontradas lesões osteolíticas acetabulares em 10,6% dos quadris. É justamente esse dado que impede afirmar que o material elimina o problema em longo prazo."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 21 (Resposta Biológica aos Detritos de Desgaste)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0591": {
+  "conceito": "### Uma lesão diferente\n\nWillert e Semlitsch descreveram, em próteses metal-metal falhadas, em média ==30 meses== após a implantação, linfócitos B, plasmócitos e exsudação maciça de fibrina. Esse padrão ==não era habitual== nas falhas metal-polietileno ou cerâmica-cerâmica. A reação recebeu o nome de ==lesão associada a vasculite asséptica dominada por linfócitos== (ALVAL).\n\n### Mecanismo provável\n\nÍons de cobalto e cromo formam complexos com proteínas do hospedeiro e podem iniciar reação semelhante à ==hipersensibilidade tardia do tipo IV==, mediada por linfócitos T, favorecendo pseudotumores. A figura mostra o ponto central: ==muitos linfócitos e pouco metal==.\n\n### Por que isso importa\n\n| Achado | Consequência |\n|---|---|\n| ==Sem correlação consistente== entre resposta imune e quantidade de metal | resposta intensa pode ocorrer com poucos detritos |\n| Visto em totais e recobrimentos, ==inclusive em implantes bem fixados== | não depende de soltura |\n| Infiltração linfocitária pode existir sem falha | achado histológico isolado não é sentença |\n| Maior dano e agregados mais densos na suspeita de hipersensibilidade, mesmo sem desgaste alto | o hospedeiro pesa tanto quanto o implante |\n\n> **Na prova:** ALVAL é tipo IV, linfocitária e perivascular; não é proporcional à quantidade de metal.",
+  "correta": "**Correta.** O capítulo afirma que não existe correlação consistente entre a intensidade da resposta imune e a quantidade de detritos metálicos, e que uma resposta intensa pode ocorrer com poucos detritos, o que reforça a participação de mecanismos imunológicos específicos.",
+  "incorretas": {
+   "A": "**Errada.** O padrão de linfócitos B, plasmócitos e fibrina descrito por Willert e Semlitsch não era habitual nas falhas metal-polietileno ou cerâmica-cerâmica, em que predomina a reação macrofágica a corpo estranho.",
+   "C": "**Errada.** O padrão foi observado em artroplastias totais e em recobrimentos, inclusive ao redor de implantes bem fixados, e também em recobrimentos sem desgaste elevado.",
+   "D": "**Errada.** O mecanismo proposto é semelhante à hipersensibilidade tardia do tipo IV, mediada por células T, a partir de complexos entre íons metálicos e proteínas. Não é reação imediata mediada por imunoglobulina E."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 21 (Resposta Biológica aos Detritos de Desgaste)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0592": {
+  "conceito": "### Do que se trata\n\nA reação tecidual local adversa ao metal vai de ==dor inguinal inexplicada== a soltura, massas císticas de partes moles e bursas cheias de líquido, os ==pseudotumores==, complicação devastadora e desafio reconstrutivo.\n\n### Epidemiologia que cai\n\n| Dado | Valor |\n|---|---|\n| Pacientes metal-metal com reação evidente | ==minoria==; a hipersensibilidade é incomum |\n| Falha estimada por reação tecidual local | até ==5%== dos implantes em alguns estudos |\n| Sexo com maior incidência | ==mulheres== |\n| Pseudotumor na ressonância | até ==60%==, em proporção ==semelhante== em próteses assintomáticas e dolorosas |\n| Ocorrência fora do metal-metal | descrita em ==quadris sem par metal-metal== e em recobrimentos ==sem desgaste elevado== |\n\n### Lição prática\n\nComo a imagem pode mostrar coleções em pacientes sem queixa, o achado isolado de pseudotumor ==não define sozinho== a indicação de revisão. Ele precisa ser lido junto com sintomas, íons, posição dos componentes e evolução.\n\n> **Na prova:** mulheres mais acometidas; pseudotumor na RM em até 60%, com ou sem dor; minoria com hipersensibilidade.",
+  "correta": "**Correta.** O capítulo cita estudo por ressonância magnética que encontrou pseudotumores em proporção semelhante, chegando a 60%, tanto em próteses metal-metal assintomáticas e funcionantes quanto nas dolorosas.",
+  "incorretas": {
+   "A": "**Errada.** São as mulheres que apresentam maior incidência de reações de partes moles.",
+   "B": "**Errada.** A maioria dos pacientes com articulação metal-metal não apresenta reação evidente, e a hipersensibilidade é incomum. Ainda assim, até 5% dos implantes poderiam falhar por reação tecidual local adversa.",
+   "D": "**Errada.** O capítulo relata reações em recobrimentos sem desgaste elevado nem hipersensibilidade demonstrada e também em quadris sem articulação metal-metal."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 21 (Resposta Biológica aos Detritos de Desgaste)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0593": {
+  "conceito": "### Mesmo desgaste, osteólise diferente\n\nA geração de partículas correlaciona-se com o risco de revisão, mas a intensidade da osteólise ==varia muito entre pacientes==. A expressão de 29 citocinas em tecidos de artroplastias falhadas mostrou ampla variabilidade individual.\n\n### Fatores intrínsecos\n\n| Fator | Achado |\n|---|---|\n| ==Idade jovem, sexo masculino, Charnley classe A== | menor sobrevida por soltura asséptica |\n| Ciclos de marcha (41 artroplastias antes dos 50 anos) | ==semelhantes== aos dos idosos, cerca de 1,2 milhão por ano; desgaste ==sem correlação== com os ciclos |\n| Esqui | não aumentou soltura femoral em 5 e 10 anos |\n| Escala validada de atividade | mais osteólise femoral cimentada e mais revisão nos muito ativos |\n| Obesidade (433 pacientes, 503 quadris) | ==não aumentou== a osteólise; a maior prevalência foi nos de ==peso normal== |\n| Camundongos sem leptina | preservaram massa óssea diante de partículas |\n| ==Ooforectomia== em camundongos | ==reduziu== paradoxalmente a osteólise, com menos TNF-alfa e RANKL |\n| Genética | alelo do TNF na posição -238 e promotor da IL-6 ligados a osteólise grave |\n\nA mensagem é que a osteólise é ==multifatorial==: atividade, peso, hormônios e genes modulam a resposta ao mesmo estímulo.\n\n> **Na prova:** jovem, homem, Charnley A; obesidade não piorou; ooforectomia reduziu a osteólise no camundongo.",
+  "correta": "**Correta.** O capítulo associa idade jovem, sexo masculino e classificação funcional de Charnley do tipo A a menor sobrevida por soltura asséptica, citando dados de registros e séries clínicas.",
+  "incorretas": {
+   "B": "**Errada.** Nessa série de 433 pacientes com 503 artroplastias e componente femoral cimentado, a obesidade não aumentou a osteólise em cinco e dez anos; a maior prevalência ocorreu nos pacientes de peso normal, mesmo após ajuste da atividade.",
+   "C": "**Errada.** A retirada cirúrgica dos ovários reduziu, paradoxalmente, a osteólise induzida por partículas, com redução local de TNF-alfa e do ligante do RANK.",
+   "D": "**Errada.** Em 41 artroplastias feitas antes dos 50 anos, a média de ciclos foi semelhante à dos mais velhos, cerca de 1,2 milhão por ano, e o desgaste linear não se correlacionou com o número de ciclos."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 21 (Resposta Biológica aos Detritos de Desgaste)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0594": {
+  "conceito": "### Fatores extrínsecos\n\n- **Mecânicos:** micromovimento e ==pressão cíclica do líquido articular==, impulsionado como um pistão hidráulico, levam mediadores e detritos pelo espaço articular efetivo e explicam a osteólise ao redor do componente femoral. Pressão cíclica, sozinha, já produz reabsorção.\n- **Endotoxinas:** soltura asséptica é, por definição, sem infecção, mas lipopolissacarídeos aderidos às partículas amplificam citocinas e osteoclastogênese. A ==adição de antibiótico ao cimento reduziu a soltura asséptica== no registro norueguês. Biofilmes de gram-positivos são uma fonte possível.\n\n### O que já foi testado\n\n| Alvo | Exemplos | Situação |\n|---|---|---|\n| Eicosanoides | anti-inflamatórios não esteroides, inibidores da COX-2, inibidor de leucotrienos | eficazes no laboratório e em animais |\n| Citocinas | ==etanercepte== preveniu a osteólise experimental; anakinra (IL-1) | risco de infecção da prótese |\n| Eixo RANKL | osteoprotegerina, antagonistas do RANKL | promissores |\n| Fatores de crescimento | BMP-7, bloqueio do VEGF | experimentais |\n| Antirreabsortivos | ==bisfosfonatos==: reduzem a reabsorção, mas o uso sistêmico prolongado traz ==osteonecrose dos maxilares e fratura atípica== | via local pode ser melhor |\n| Outros | teriparatida, estatinas, eritromicina | experimentais |\n\n### O limite atual\n\n==Nenhum tratamento farmacológico foi aprovado== para a inflamação crônica e a osteólise por partículas. Soltura manifesta, destruição estrutural e suspeita de infecção continuam exigindo ==revisão==. Em soltura tardia aparentemente asséptica, deve-se excluir infecção de baixo grau.\n\n> **Na prova:** fármacos são experimentais; antibiótico no cimento reduziu soltura asséptica; quem soltou, opera.",
+  "correta": "**Correta.** O capítulo conclui que nenhum tratamento farmacológico foi aprovado para a osteólise por partículas e que soltura manifesta, falha estrutural ou suspeita de infecção continuam exigindo intervenção cirúrgica. A aplicação futura dos fármacos seria a prevenção ou o tratamento local em prótese ainda estável.",
+  "incorretas": {
+   "A": "**Errada, inverte o achado.** A adição de antibióticos ao cimento de polimetilmetacrilato reduziu a soltura asséptica no registro norueguês, o que sustenta o papel das endotoxinas e de biofilmes de baixo grau.",
+   "B": "**Errada.** Os bisfosfonatos reduziram a reabsorção induzida por partículas em laboratório e em animais, mas o tratamento sistêmico prolongado pode causar osteonecrose dos maxilares e fraturas atípicas do fêmur. Não são tratamento aprovado para essa indicação.",
+   "C": "**Errada.** O bloqueio do TNF-alfa com etanercepte preveniu a osteólise induzida por detritos no modelo experimental, e camundongos sem o receptor tipo 1 do TNF não desenvolveram resposta osteolítica."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 21 (Resposta Biológica aos Detritos de Desgaste)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0595": {
+  "conceito": "### Quatro camadas e mais uma\n\n| Camada | Exemplo de diagnóstico | Pioneiros dos testes |\n|---|---|---|\n| 1. Osteocondral | deformidade em came | ==Harris e Ganz== |\n| 2. Capsulolabral | frouxidão capsular e lesão labral | ==McCarthy e Philippon== |\n| 3. Musculotendinosa | lesão do glúteo médio | ==Thomas e Ober== |\n| 4. Neurovascular | glúteo profundo com aprisionamento do isquiático | ==Freiberg e Pace== |\n| 5. Cadeia cinemática | ==artrodese da coluna lombar== | relação com articulações vizinhas |\n\n### A bateria padronizada\n\nSão ==32 testes== ou grupos de manobras, como os exames padrão do joelho e do ombro:\n\n| Camada avaliada | Número de testes |\n|---|---|\n| Osteocondral | ==16== |\n| Capsulolabral | 13 |\n| Musculotendinosa | 11 |\n| Neurovascular | 7 |\n| Cadeia cinemática | 5 |\n\nDezesseis manobras avaliam mais de uma camada, e o exame leva ==até 8 minutos==. A ideia, consolidada pelo grupo MAHORN, é aplicar sempre os mesmos testes, na mesma ordem e ==independentemente da anamnese==, criando um fundo fixo sobre o qual a doença se destaca.\n\n> **Na prova:** osteocondral, capsulolabral, musculotendinosa, neurovascular e cadeia cinemática; 32 testes, 16 osteocondrais.",
+  "correta": "**Correta.** No exemplo de diagnóstico por camadas da Tabela 22.1, a artrodese da coluna lombar ocupa a camada 5, a cadeia cinemática, que representa a relação do quadril com as articulações adjacentes.",
+  "incorretas": {
+   "A": "**Errada.** A frouxidão capsular, junto com a lesão do lábio acetabular, pertence à camada 2, capsulolabral. Na camada musculotendinosa está, por exemplo, a lesão do glúteo médio.",
+   "B": "**Errada.** Freiberg e Pace são os nomes ligados aos testes da camada neurovascular. Os testes capsulolabrais são atribuídos a McCarthy e Philippon.",
+   "D": "**Errada.** A camada mais avaliada é a osteocondral, com 16 testes. A neurovascular é avaliada por 7."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 22 (Anamnese e Exame Físico)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0596": {
+  "conceito": "### Do observador ao paciente\n\nÀ medida que os questionários evoluíram, a ==avaliação funcional ganhou peso== e os ==autoaplicados== passaram a ser preferidos aos aplicados pelo observador.\n\n| Questionário | Ano | População | Itens | Máximo | Aplicação |\n|---|---|---|---|---|---|\n| Merle d'Aubigné e Postel | 1954 | artroplastia em acrílico | 3 (dor, mobilidade, marcha) | ==18== | observador |\n| ==Escore de Harris== | ==1969== | ==artroplastia com prótese em molde== | 8 + 2 medidas | 100 | observador |\n| WOMAC | 1988 | artrose de quadril e joelho | ==24== | 96 | ==autoaplicado== |\n| Harris modificado | 2000 | artroscopia | 8 | 100 (multiplicador 1,1) | observador |\n| Nonarthritic Hip Score | 2003 | 16 a 45 anos, dor há mais de 6 meses | 20 | 100 | autoaplicado |\n| ==iHOT-33== | 2012 | ==adultos ativos de 18 a 60 anos== | 33 | 100 | ==autoaplicado== |\n| iHOT-12 | 2012 | a mesma | 12 | 100 | autoaplicado |\n\nO escore de Harris é o ==mais documentado==. O iHOT-33 foi validado pelo grupo MAHORN para ==pesquisa==; a forma de 12 itens serve à ==prática clínica de rotina==. SF-36 e SF-12 avaliam saúde geral e às vezes acompanham os específicos.\n\n> **Na prova:** Harris, 1969, prótese em molde; WOMAC, 24 itens autoaplicados; iHOT-33 para pesquisa, iHOT-12 para a clínica.",
+  "correta": "**Correta.** O capítulo descreve o iHOT-33 como questionário autoaplicado, desenvolvido em estudo multicêntrico internacional para adultos ativos de 18 a 60 anos com patologia do quadril, e cita a forma curta de 12 itens para a prática clínica de rotina.",
+  "incorretas": {
+   "B": "**Errada, inverte a história.** O escore de Harris é de 1969 e foi descrito para avaliar pacientes submetidos à artroplastia com prótese em molde. A versão modificada para a artroscopia do quadril é de 2000.",
+   "C": "**Errada.** O WOMAC é autoaplicado e tem 24 questões: dor (5), rigidez (2) e função física (17). Trinta e três itens são do iHOT-33.",
+   "D": "**Errada no total.** O escore de Merle d'Aubigné e Postel tem três itens de 6 pontos cada, dor, mobilidade e capacidade de caminhar, somando 18."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 22 (Anamnese e Exame Físico)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0597": {
+  "conceito": "### Uma ordem que economiza tempo\n\nA padronização ==aumenta a confiabilidade==. A sequência mais eficiente de posições é:\n\n1. ==Ortostase==\n2. ==Sentado==\n3. ==Decúbito dorsal==\n4. ==Decúbito lateral==\n5. ==Decúbito ventral==\n\nEm cada posição, a ordem das manobras é: ==inspeção, palpação, testes de congruência femoroacetabular, outros testes específicos e testes de dor posterior extra-articular==. O exame inteiro leva ==até 8 minutos==, menos com a prática, e um assistente que registre os achados num formulário padronizado melhora a completude.\n\n### O começo em pé\n\nO paciente aponta com ==um dedo== o ponto da dor. Dor inguinal sugere problema intra-articular; dor lateral pode ser intra ou extra-articular.\n\n| Sinal | Como é | O que significa |\n|---|---|---|\n| ==Sinal do C== | mão em C acima do trocânter maior, ==polegar posterior==, dedos em direção à virilha | ==dor profunda intra-articular== |\n| Armadilha | parece descrever dor lateral | pode ser confundido com bursite trocantérica ou banda iliotibial |\n\n> **Na prova:** em pé, sentado, dorsal, lateral, ventral; sinal do C é dor intra-articular; até 8 minutos.",
+  "correta": "**Correta.** O capítulo propõe essa sequência como a mais eficiente: testes em ortostase, depois sentado, em decúbito dorsal, em decúbito lateral e, por último, em decúbito ventral.",
+  "incorretas": {
+   "A": "**Errada.** Um exame bem organizado e estruturado leva até 8 minutos, ou menos conforme a prática do examinador.",
+   "B": "**Errada, inverte a ordem.** Em cada posição, a sequência começa pela inspeção e pela palpação, passa pelos testes de congruência e outros testes específicos e termina com os testes de dor posterior extra-articular.",
+   "C": "**Errada.** O sinal do C é característico de dor intra-articular do quadril. O capítulo alerta justamente que ele pode ser mal interpretado como patologia lateral, como bursite trocantérica ou contratura da banda iliotibial."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 22 (Anamnese e Exame Físico)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0598": {
+  "conceito": "### O que olhar no corredor\n\nObserva-se uma marcha de ==seis a oito comprimentos de passada==: ângulo de progressão do pé, rotação pélvica, fase de apoio, comprimento da passada e balanço dos braços (o braço que vai à frente ativa o glúteo máximo contralateral).\n\n### Números da marcha normal\n\n| Parâmetro | Valor |\n|---|---|\n| Ângulo de progressão do pé | ==cerca de 7 graus de rotação externa== |\n| Inclinação pélvica sagital | 10 graus anterior |\n| Inclinação pélvica coronal | 4 graus |\n| Rotação pélvica axial | 7 graus |\n| Rotação da coxa por passada | 15 graus (7 da pelve + 8 do quadril) |\n| Força reativa máxima do solo | ==contato do calcanhar, com 30 graus de flexão do quadril== |\n\nA ==anteversão femoral aumentada== tende a ==rodar internamente== o ângulo de progressão, mas isso pode ser compensado por torção tibial lateral ou por deficiência dos rotadores mediais.\n\n### Padrões anormais\n\n| Marcha | Característica |\n|---|---|\n| ==Pisca-pisca pélvico== | rotação axial excessiva ==em direção ao quadril acometido==, para obter extensão terminal; intra-articular, frouxidão, contratura em flexão, anteversão excessiva |\n| Deficiência abdutora | queda da pelve do lado acometido ou desvio do tronco sobre ele |\n| Antálgica | fase de apoio encurtada do lado doloroso |\n| ==Impacto isquiofemoral== | dor e mão no quadril com ==passada longa==; sem dor com passadas curtas |\n| Membro curto | queda do ombro para o lado curto |\n\n> **Na prova:** progressão do pé, 7 graus de rotação externa; pisca-pisca gira para o lado doente; isquiofemoral dói na passada longa.",
+  "correta": "**Correta.** O capítulo informa que o ângulo de progressão do pé é habitualmente de sete graus de rotação externa e que o aumento da versão femoral pode causar ângulo internamente rodado, embora isso possa ser compensado pela torção lateral da tíbia ou por deficiência dos rotadores mediais.",
+  "incorretas": {
+   "A": "**Errada na direção.** O pisca-pisca pélvico é uma rotação excessiva no plano axial em direção ao quadril acometido, produzindo extensão e rotação na coluna lombar para alcançar a extensão terminal do quadril.",
+   "C": "**Errada.** A força reativa máxima do solo ocorre no contato do calcanhar, com 30 graus de flexão do quadril.",
+   "D": "**Errada, inverte o padrão.** No impacto isquiofemoral, o paciente sente dor e agarra a região posterior do quadril durante a caminhada com passada longa e caminha sem dor com passadas curtas. A extensão do quadril na passada longa aproxima o trocânter menor do ísquio."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 22 (Anamnese e Exame Físico)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0599": {
+  "conceito": "### O que o teste avalia\n\nO apoio unipodal testa a ==musculatura abdutora== e a ==alça neural de propriocepção== do lado que suporta a carga. Na marcha, glúteos máximo, médio e mínimo fornecem a maior parte da força da fase de apoio.\n\n### Como fazer\n\n1. Teste dos ==dois lados==, começando pelo ==não acometido==, que serve de linha de base.\n2. Pés afastados na largura dos ombros; o paciente flete o quadril e o joelho do lado não examinado.\n3. Mantém a posição por ==6 segundos==, observado por trás e pela frente.\n\n### Quando é positivo\n\n| Achado | Interpretação |\n|---|---|\n| Desvio de ==mais de 2 cm== em direção ao lado de apoio | positivo: a translocação dinâmica normal na fase média de apoio é de ==2 cm== |\n| ==Inclinação do tronco== para o lado de apoio | também registrada como ==positiva== |\n\nAlguns examinadores dão um leve empurrão no ombro: esse componente dinâmico revela déficits sutis de força ou de propriocepção.\n\n> **Na prova:** 6 segundos, lado sadio primeiro, mais de 2 cm ou inclinação do tronco é positivo.",
+  "correta": "**Correta.** O capítulo considera positivo o desvio de mais de 2 cm em direção ao lado que suporta a carga, uma vez que a translocação dinâmica normal na fase média de apoio é de 2 cm durante a marcha normal.",
+  "incorretas": {
+   "A": "**Errada.** A posição é mantida por 6 segundos. O objetivo é avaliar força e propriocepção, e não induzir fadiga.",
+   "B": "**Errada.** O teste é feito em ambos os membros, começando pelo não acometido, para estabelecer uma linha de base de comparação.",
+   "D": "**Errada.** A inclinação do tronco para o lado que suporta a carga, isto é, o lado acometido, também é registrada como teste positivo. É a compensação do paciente para reduzir o braço de alavanca que os abdutores fracos precisam vencer."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 22 (Anamnese e Exame Físico)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0600": {
+  "conceito": "### Por que sentado\n\nSentado, o ==ísquio fica aprumado sobre a mesa==, dando estabilidade a 90 graus de flexão e uma ==plataforma reprodutível== para medir a rotação. A rotação passiva é levada até um ponto final suave e comparada lado a lado.\n\n### Valores normais\n\n| Medida | Normal | Anormal |\n|---|---|---|\n| Rotação interna sentado | ==20 a 35 graus== | menor que 20 |\n| Rotação externa sentado | ==30 a 45 graus== | menor que 30 |\n| Rotação interna com o quadril estendido | 20 a 35 | menor que 20 |\n| Rotação externa com o quadril estendido | 30 a 45 | menor que 30 |\n| Flexão em decúbito dorsal | 100 a 110 | menor que 100 |\n| Adução | 20 a 30 | menor que 20 |\n| Abdução | 45 | menor que 45 |\n\n### Interpretação\n\n- A ==perda da rotação interna== é um dos ==primeiros sinais== de distúrbio intra-articular.\n- São necessários ==pelo menos 10 graus== de rotação interna na fase média de apoio; menos que isso sobrecarrega a coluna lombar.\n- Diferenças de ==até 10 graus== entre posições podem vir da função ligamentar, da posição pélvica e do método; acima de 10 graus, levanta-se a questão de ==causa ligamentar contra óssea==.\n- Rotação interna aumentada com externa diminuída sugere ==anteversão femoral excessiva==.\n- A goniometria ==superestima== a amplitude, mas serve para comparações seriadas.\n\n> **Na prova:** rotação interna sentado de 20 a 35 graus; sua perda é sinal precoce intra-articular; goniômetro superestima.",
+  "correta": "**Correta.** O capítulo destaca a perda da rotação interna como um dos primeiros sinais de distúrbio intra-articular, o que torna a rotação sentado uma das avaliações mais importantes; a Tabela 22.6 dá 20 a 35 graus como normal.",
+  "incorretas": {
+   "A": "**Errada.** A rotação externa sentado normal é de 30 a 45 graus e é considerada anormal quando menor que 30 graus.",
+   "B": "**Errada.** As avaliações por goniômetro superestimam a amplitude de movimento do quadril quando comparadas a técnicas mais precisas, embora possam ser usadas com confiança em medidas comparativas sequenciais.",
+   "C": "**Errada.** Uma diferença maior que 10 graus entre as posições sentada e estendida levanta a questão de anormalidade ligamentar versus óssea. Não define sozinha a causa óssea."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 22 (Anamnese e Exame Físico)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0601": {
+  "conceito": "### O ísquio como referência\n\nNa dor posterior extra-articular, a ==tuberosidade isquiática== é o ponto de referência da palpação:\n\n| Local da dor | Pensar em |\n|---|---|\n| Superolateral ao ísquio, na incisura isquiática | ==síndrome do glúteo profundo== |\n| Lateral ao ísquio | síndrome do túnel isquiático ou ==impacto isquiofemoral== |\n| Sobre o ísquio | tendões ==isquiotibiais== |\n| Medial ao ísquio | aprisionamento do ==nervo pudendo== |\n\nA flexão ativa do joelho contra resistência a 30 e a 90 graus, com palpação, ajuda a avaliar os isquiotibiais proximais.\n\n### Estiramento do piriforme sentado\n\n- Paciente sentado e aprumado, ==joelho estendido==, quadril fletido a 90 graus.\n- O examinador leva passivamente o quadril em ==adução e rotação interna==.\n- Palpa ==1 cm lateral ao ísquio== (dedo médio) e proximalmente na ==incisura isquiática== (indicador).\n- Positivo: recriação da ==dor posterior== no nível do piriforme ou dos rotadores externos, indicando envolvimento do ==nervo isquiático==.\n- Os testes ativo e passivo do piriforme são mantidos por ==20 segundos==.\n- Combinado ao teste ativo do piriforme: ==sensibilidade de 0,91 e especificidade de 0,80==.\n\n> **Na prova:** joelho estendido, adução e rotação interna; dor posterior; com o teste ativo, sensibilidade 0,91 e especificidade 0,80.",
+  "correta": "**Correta.** É a técnica descrita: com o joelho estendido e o quadril fletido a 90 graus, o examinador move passivamente o quadril em adução e rotação interna enquanto palpa 1 cm lateral ao ísquio e proximalmente na incisura isquiática. O teste positivo recria a dor posterior e sugere envolvimento do nervo isquiático.",
+  "incorretas": {
+   "B": "**Errada.** A dor medial ao ísquio sugere aprisionamento do nervo pudendo. A síndrome do glúteo profundo dá dor superolateral ao ísquio, na incisura isquiática.",
+   "C": "**Errada em dois pontos.** Os testes ativo e passivo do piriforme são mantidos por 20 segundos, e o teste avalia a camada neurovascular, com envolvimento do nervo isquiático. Seis segundos é o tempo do teste de apoio unipodal.",
+   "D": "**Errada.** O teste é positivo quando recria a dor posterior no nível do piriforme ou dos rotadores externos. Dor inguinal anterior em flexão, adução e rotação interna é o raciocínio dos testes de congruência femoroacetabular."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 22 (Anamnese e Exame Físico)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0602": {
+  "conceito": "### As quatro facetas\n\nO trocânter maior tem quatro facetas: ==anterior, lateral, superoposterior e posterior==. Conhecê-las permite localizar a dor lateral com precisão.\n\n| Faceta | O que se palpa |\n|---|---|\n| ==Anterior== | inserção do ==glúteo mínimo== |\n| ==Lateral== | ==glúteo médio== |\n| ==Superoposterior== | ==glúteo médio== |\n| ==Posterior== | ==bursa trocantérica== |\n\n### A sequência da palpação lateral\n\n1. Área suprassacroilíaca, articulação sacroilíaca e origem do glúteo máximo na borda lateral do sacro e no ílio posterior.\n2. Ísquio, em busca de bursite ou avulsão dos isquiotibiais.\n3. As quatro facetas do trocânter maior.\n4. Piriforme, nervo isquiático e musculatura abdutora (glúteos e tensor da fáscia lata).\n\n### Força e contraturas\n\n- Glúteo médio: abdução com o ==joelho fletido==, que libera a contribuição do glúteo máximo à banda iliotibial.\n- Força abdutora global: joelho ==estendido==.\n- Testes de adução passiva tipo Ober: em extensão (tensor da fáscia lata), neutro (glúteo médio) e flexão (glúteo máximo).\n\n> **Na prova:** mínimo na anterior, médio na lateral e superoposterior, bursa na posterior.",
+  "correta": "**Correta.** O capítulo descreve que a inserção do glúteo mínimo é palpada na faceta anterior, o glúteo médio nas facetas superoposterior e lateral, e a bursa trocantérica na faceta posterior.",
+  "incorretas": {
+   "A": "**Errada.** A bursa trocantérica é palpada na faceta posterior. Na faceta anterior está a inserção do glúteo mínimo.",
+   "C": "**Errada.** O glúteo mínimo insere-se na faceta anterior, e a bursa trocantérica fica na faceta posterior. A faceta lateral recebe o glúteo médio.",
+   "D": "**Errada, troca os músculos.** O glúteo médio ocupa as facetas lateral e superoposterior, e o glúteo mínimo a anterior."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 22 (Anamnese e Exame Físico)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0603": {
+  "conceito": "### Congruência é impacto e é instabilidade\n\nOs testes de congruência femoroacetabular avaliam ==impacto e instabilidade==, e também a contribuição das camadas capsular e musculotendinosa para a estabilidade. ==Nenhum teste isolado é sensível o bastante== para ser usado sozinho.\n\n| Teste | Posição | Impacto | Instabilidade |\n|---|---|---|---|\n| Flexão, adução e rotação interna | lateral ou dorsal | ==anterior== | não se aplica |\n| Dinâmico de impacto rotacional interno | dorsal, quadril oposto em flexão completa | anterior | posterior |\n| ==Dinâmico de impacto rotacional externo== | dorsal, quadril oposto em flexão completa | ==superior e posterior== | ==anteroinferior== |\n| Impacto do rebordo posterior | dorsal, na borda da mesa | posterior | anterior |\n| Impacto do rebordo lateral | lateral | superior e posterior | anteroinferior |\n| Apreensão | lateral | posterior | ==anteroinferior== |\n\n### Como são feitos\n\n- **Rotacional interno:** quadril a 90 graus ou mais, arco amplo de ==adução e rotação interna==.\n- **Rotacional externo:** quadril a 90 graus ou mais, arco amplo de ==abdução e rotação externa==; positivo também na hipoplasia acetabular anteroinferior, na lesão do ligamento redondo e na frouxidão capsular.\n- **Rebordo posterior:** membro pendente na borda da mesa, levado à ==extensão, abdução e rotação externa==.\n- **Apreensão:** da flexão à extensão em rotação externa e abdução, com ==força anterior== no fêmur proximal.\n\nO quadril oposto em flexão completa cria o ==ponto zero pélvico== e elimina a lordose. Em decúbito lateral testa-se a inclinação pélvica dinâmica.\n\n> **Na prova:** FADIR, impacto anterior; rotacional externo e apreensão, instabilidade anteroinferior; rebordo posterior em extensão.",
+  "correta": "**Correta.** Segundo o capítulo, o teste dinâmico de impacto rotacional externo reproduz o impacto superolateral e posterior, mas também pode ser positivo na instabilidade anteroinferior, na hipoplasia acetabular anteroinferior, na lesão do ligamento redondo e na frouxidão capsular.",
+  "incorretas": {
+   "A": "**Errada.** Flexão, adução e rotação interna avaliam o impacto femoroacetabular anterior e a lesão labral. Impacto posterior e instabilidade anterior são avaliados pelo teste de impacto do rebordo posterior.",
+   "B": "**Errada.** No teste de impacto do rebordo posterior, o membro pendente na borda da mesa é levado à extensão completa, com abdução e rotação externa, avaliando a congruência entre a parede posterior e o colo.",
+   "C": "**Errada.** A força anterior sobre o fêmur proximal procura provocar a subluxação anteroinferior da cabeça. O teste de apreensão avalia instabilidade anteroinferior, lesão capsular e do ligamento redondo e hipoplasia acetabular anteroinferior."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 22 (Anamnese e Exame Físico)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0604": {
+  "conceito": "### A AP do quadril bem feita\n\nNa ausência de trauma ou suspeita de fratura, o quadril é ==rodado internamente cerca de 15 graus==. A rotação interna ==compensa a anteversão femoral== e coloca o colo e a junção cabeça-colo no plano adequado ao feixe. Os contornos dos dois trocânteres ficam visíveis, o que aumenta a sensibilidade para lesões destrutivas sutis e fraturas não desviadas.\n\n| Posição | Efeito na imagem |\n|---|---|\n| Rotação interna | ==colo alongado==, trocânter menor encoberto |\n| Rotação externa | trocânter maior ==sobrepõe o colo==, trocânter menor ==mais proeminente== |\n\nO ==erro mais comum é a rotação externa==. Nela, as junções cabeça-colo anterior e posterior não se superpõem, e uma crista de ==osteófitos pode simular linha de fratura esclerótica==.\n\n### Quando não dá para mexer\n\nCom dor intensa ou suspeita de fratura, gira-se o tubo ou o paciente para a AP, e a lateral é feita com ==raios horizontais (cross-table)==: cassete na face lateral, quadril contralateral fletido, feixe com cerca de 15 graus craniocaudais.\n\n### Incidências laterais\n\n| Incidência | Técnica | Uso |\n|---|---|---|\n| Perfil de rã | flexão, abdução e rotação externa | rotina |\n| ==Dunn== | ==rotação neutra, 20 graus de abdução, 45 ou 90 graus de flexão== | ==junção cabeça-colo, asfericidade, ângulo alfa, came== |\n| Raios horizontais | sem mover o quadril | trauma |\n\n> **Na prova:** AP com 15 graus de rotação interna; o erro clássico é a rotação externa; Dunn para came.",
+  "correta": "**Correta.** O capítulo indica rotação interna de cerca de 15 graus para compensar a anteversão femoral na incidência anteroposterior e aponta a rotação externa como o erro de posicionamento mais comum, com sobreposição dos trocânteres ao colo e à região intertrocantérica.",
+  "incorretas": {
+   "A": "**Errada, troca as rotações.** É na rotação interna que o colo se alonga e o trocânter menor fica encoberto. Na rotação externa, o trocânter maior sobrepõe o colo e o trocânter menor fica mais proeminente.",
+   "B": "**Errada.** A incidência de Dunn usa rotação neutra, 20 graus de abdução e 45 ou 90 graus de flexão, com o feixe anteroposterior. É a mais usada na suspeita de impacto femoroacetabular.",
+   "D": "**Errada.** O perfil de rã exige flexão, abdução e rotação externa do quadril. Quando o quadril não pode ser manipulado, usa-se a lateral com raios horizontais, flexionando o quadril contralateral."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 23 (Avaliação Radiográfica do Quadril)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0605": {
+  "conceito": "### Judet\n\nAs incidências de Judet são radiografias oblíquas da pelve com o ==paciente rodado 45 graus== e o feixe anteroposterior. São usadas sobretudo para ==fraturas acetabulares== após trauma ou artroplastia e para avaliar o componente acetabular na suspeita de protrusão.\n\n| Incidência | Mostra melhor |\n|---|---|\n| ==Oblíqua anterior== | ==coluna anterior (iliopúbica)== e ==rebordo posterior== |\n| ==Oblíqua posterior== | ==coluna posterior (ilioisquiática)== e ==rebordo anterior== |\n\nCada oblíqua mostra regiões diferentes ==dos dois acetábulos== ao mesmo tempo; por isso ambas são obtidas para avaliar completamente os dois lados. Na figura, AC e PR aparecem de um lado, PC e AR do outro.\n\n### Inlet e outlet\n\n| Incidência | Feixe | Melhor para |\n|---|---|---|\n| Inlet | ==40 graus caudal==, paralelo ao córtex sacral anterior | anel pélvico, ramos púbicos, ==desalinhamento rotacional== |\n| Outlet | ==40 graus cranial==, perpendicular ao sacro | forames obturatórios, ==desalinhamento vertical== |\n\n> **Na prova:** Judet a 45 graus; cada oblíqua mostra uma coluna e o rebordo oposto; inlet rotacional, outlet vertical.",
+  "correta": "**Correta.** A coluna anterior e o rebordo acetabular posterior são mais bem avaliados na oblíqua anterior, enquanto a coluna posterior e o rebordo anterior aparecem melhor na oblíqua posterior. A regra prática é que cada oblíqua mostra uma coluna e o rebordo oposto.",
+  "incorretas": {
+   "B": "**Errada, inverte as estruturas.** A oblíqua anterior mostra a coluna anterior e o rebordo posterior, e a oblíqua posterior mostra a coluna posterior e o rebordo anterior.",
+   "C": "**Errada em dois pontos.** O paciente é rodado 45 graus, e ambas as incidências de Judet são obtidas para a avaliação completa dos dois acetábulos, pois cada uma mostra regiões diferentes de cada lado.",
+   "D": "**Errada.** O desalinhamento vertical é mais bem demonstrado pela incidência outlet, com o feixe 40 graus cranial. As de Judet servem principalmente às fraturas acetabulares e à posição do componente acetabular."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 23 (Avaliação Radiográfica do Quadril)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0606": {
+  "conceito": "### Sinovite vilonodular pigmentada\n\nProliferação idiopática de sinóvia hemorrágica, ==benigna, porém localmente agressiva==. Mais comum em ==mulheres==, da segunda década em diante, com ==pico na quarta década==. A maioria dos casos é no joelho, mas o quadril não é incomum.\n\n| Exame | Achados |\n|---|---|\n| Radiografia e tomografia | derrame (às vezes ==hiperdenso== pela hemorragia), erosões e cistos subcondrais |\n| Negativos pertinentes | ==densidade mineral normal== e ==cartilagem preservada== até tarde |\n| Ressonância | proliferação nodular com ==baixo sinal== e ==suscetibilidade (florescimento) no eco de gradiente==, pela ==hemossiderina==; frequentemente patognomônica |\n\nDiferencial: hemangioma intra-articular e hemofilia.\n\n### Condromatose sinovial primária\n\nNeoplasia benigna da sinóvia; o quadril é a ==segunda articulação mais acometida, depois do joelho==. Terceira a quinta décadas, mais em ==homens==.\n\n1. Nódulos sinoviais metaplásicos se formam e se multiplicam.\n2. Presos à sinóvia, vascularizam e ossificam (corpos osteocondrais visíveis); soltos, nutrem-se do líquido sinovial.\n3. A impactação mecânica destrói a cartilagem e leva à artrose.\n\nCorpos livres são radiograficamente visíveis em ==cerca de 85%==. Há relatos de degeneração em condrossarcoma sinovial. Pela alta pressão intra-articular do quadril, a doença proliferativa avançada pode causar ==erosões rápidas do colo== e risco de fratura.\n\n> **Na prova:** SVNP, mulher, quarta década, hemossiderina e osso preservado; condromatose, homem, quadril em segundo lugar, 85% visíveis.",
+  "correta": "**Correta.** O capítulo aponta como negativos pertinentes a densidade mineral óssea normal e a cartilagem preservada até tarde no curso da sinovite vilonodular pigmentada, e descreve a ressonância como frequentemente patognomônica, com sinóvia nodular de baixo sinal e suscetibilidade no eco de gradiente pela hemossiderina.",
+  "incorretas": {
+   "A": "**Errada.** O quadril é a segunda articulação mais comumente acometida pela condromatose sinovial, atrás apenas do joelho.",
+   "C": "**Errada.** Os corpos livres cartilaginosos são radiograficamente evidentes em cerca de 85% dos casos. Sem a mineralização característica, tomografia ou ressonância, com ou sem artrografia, ajudam no diagnóstico.",
+   "D": "**Errada.** A sinovite vilonodular pigmentada acomete mais o sexo feminino, ocorre da segunda década em diante, e o pico de apresentação é a quarta década."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 23 (Avaliação Radiográfica do Quadril)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0607": {
+  "conceito": "### O idoso com radiografia negativa\n\nA sensibilidade radiográfica para fratura do quadril ==se aproxima de 90%==, mas o idoso traz armadilhas:\n\n- ==Osteófitos em anel== ao redor da cabeça podem ==simular== linha de fratura esclerótica (falso-positivo de fratura subcapital) ou ==esconder== uma fratura real (falso-negativo).\n- O paciente costuma ser mau informante sobre o trauma e os sintomas.\n\n### O exame certo\n\n| Exame | Papel na fratura oculta |\n|---|---|\n| ==Ressonância sem contraste== | ==mais sensível== para fratura ==trabecular== oculta da cabeça, colo e região intertrocantérica; mostra também estiramentos musculares e lesões tendíneas |\n| Protocolo curto | ==coronal T1 + coronal T2 com saturação de gordura ou STIR==, em ==15 minutos ou menos== |\n| Tomografia | modalidade de escolha no trauma de emergência quando ambas existem; mostra ==fragmentos corticais== não desviados (2% a 10% dos casos com radiografia negativa), mas é inferior na fratura trabecular |\n| Cintilografia | menos específica; costuma exigir ==72 horas== para mostrar a captação típica |\n\nSe o paciente não consegue ficar imóvel, encurta-se o protocolo: quase sempre ainda é possível um diagnóstico confiável.\n\n> **Na prova:** radiografia negativa com alta suspeita: ressonância sem contraste, T1 coronal mais STIR, 15 minutos.",
+  "correta": "**Correta.** Para fratura radiograficamente oculta com alta suspeita clínica, o capítulo indica a ressonância sem contraste como o exame mais sensível, com estudo focado que combina coronal em T1 e coronal em T2 com saturação de gordura ou STIR, concluído em 15 minutos ou menos.",
+  "incorretas": {
+   "A": "**Errada.** A cintilografia saiu da rotina, é menos específica que ressonância e tomografia e tipicamente exige 72 horas para demonstrar a captação de fratura aguda.",
+   "B": "**Errada.** Não há indicação de contraste intra-articular para pesquisar fratura oculta. A ressonância sem contraste já é o exame mais sensível, e a artrografia acrescentaria tempo e invasão sem benefício.",
+   "D": "**Errada.** A tomografia mostra bem pequenos fragmentos corticais e é a escolha no trauma de emergência, mas a ressonância é mais sensível para a fratura trabecular radiograficamente oculta."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 23 (Avaliação Radiográfica do Quadril)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0608": {
+  "conceito": "### Duas fraturas de estresse\n\n| Tipo | Mecanismo |\n|---|---|\n| ==Fadiga== | estresse ==anormal== e cumulativo sobre osso ==normal== |\n| ==Insuficiência== | estresse ==normal== sobre osso ==osteoporótico== |\n\n### Onde cada uma aparece\n\n| Tipo | Localizações |\n|---|---|\n| Fadiga | ==córtex medial do colo basicervical== (mais comum); córtex lateral do colo (menos comum) |\n| Insuficiência | colo ==subcapital==, cabeça ==subcondral==, ==córtex lateral do acetábulo superior== e ==ramos púbicos== |\n| Relacionada a ==bisfosfonato== | ==diáfise femoral proximal==, lucência cortical transversa na ==face lateral==, com reação periosteal madura |\n\n### Imagem\n\nNo início, a radiografia pode ser normal; depois surgem esclerose linear, lucência linear ou reação periosteal. Pela gravidade da fratura completa desviada, ressonância ou cintilografia são valiosas na fratura oculta, e a ressonância oferece melhor anatomia e especificidade. A fratura atípica por bisfosfonato pode progredir para fratura completa; para evitar isso, o tratamento conservador pode dar lugar à ==haste profilática==.\n\n> **Na prova:** fadiga, osso normal e colo medial basicervical; insuficiência, osso fraco e sítios variados; bisfosfonato, diáfise proximal lateral.",
+  "correta": "**Correta.** O capítulo indica o córtex medial do colo femoral basicervical como o sítio mais comum de fratura por fadiga, sendo o córtex lateral do colo um sítio menos comum.",
+  "incorretas": {
+   "A": "**Errada.** Essa é a definição da fratura por insuficiência. A fratura por fadiga resulta de estresses cumulativos anormais sobre osso cortical ou trabecular normal.",
+   "B": "**Errada na localização.** A fratura relacionada ao bisfosfonato envolve a diáfise femoral proximal, com lucência cortical transversa na face lateral, frequentemente com reação periosteal madura.",
+   "C": "**Errada.** O córtex medial basicervical é o sítio típico da fratura por fadiga. As fraturas por insuficiência são mais variadas: colo subcapital, cabeça subcondral, córtex lateral do acetábulo superior e ramos púbicos."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 23 (Avaliação Radiográfica do Quadril)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0609": {
+  "conceito": "### Posterior é a regra\n\n==Noventa por cento== das luxações do quadril são ==posteriores==. Com o quadril fletido, os ligamentos capsulares estão frouxos e a articulação fica mais vulnerável. O mecanismo clássico é o ==joelho contra o painel== do carro: a força atravessa o fêmur e empurra o quadril fletido para trás.\n\n| Luxação | Posição do membro | Achados |\n|---|---|---|\n| ==Posterior (90%)== | ==adução e rotação interna== | cabeça posterior e superior; ==mais próxima do detector, parece menor== (menos magnificada); fratura do rebordo posterior e da cabeça |\n| Anterior obturatória (rara) | coxa em ==flexão== | posição de vulnerabilidade: abdução e rotação externa |\n| Anterior ilíaca (rara) | ==extensão e rotação externa== | ==trocânter menor perfilado== |\n\n### Duas incidências, sempre\n\nNuma única incidência, a cabeça tem aspecto ==semelhante== nas luxações anterior e posterior. Por isso se obtêm ==no mínimo duas incidências==. A tomografia mostra melhor fraturas não desviadas e fragmentos intra-articulares pequenos.\n\n> **Na prova:** posterior, 90%, painel, adução e rotação interna, cabeça menor; anterior ilíaca em extensão; sempre duas incidências.",
+  "correta": "**Correta.** Na luxação posterior, a cabeça desliza posterior e superiormente, forçando o fêmur em adução e rotação interna; como fica mais próxima do detector, aparece menor, menos magnificada, que a cabeça contralateral.",
+  "incorretas": {
+   "A": "**Errada.** Noventa por cento das luxações são posteriores, e a vulnerabilidade é maior com o quadril fletido, quando os ligamentos capsulares estão frouxos.",
+   "B": "**Errada, troca os tipos.** Na luxação anterior obturatória a coxa é forçada em flexão; na ilíaca, em extensão e rotação externa, com o trocânter menor perfilado.",
+   "D": "**Errada.** Em uma única incidência, a cabeça tem aparência semelhante nas luxações anterior e posterior. O capítulo exige no mínimo duas incidências."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 23 (Avaliação Radiográfica do Quadril)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0610": {
+  "conceito": "### Blindagem de estresse\n\nA reabsorção progressiva do ==córtex medial do calcar==, junto à haste, resulta da ==transferência da carga== do colo nativo para a ==haste e o córtex subtrocantérico==. Deve ser lembrada quando há osteopenia progressiva num local onde a descarga de peso ==diminuiu== após a artroplastia. Ao contrário da doença de partículas, ==não há desgaste do inserto== que sustente osteólise.\n\n### Como diferenciar das outras causas\n\n| Diagnóstico | Pistas |\n|---|---|\n| ==Blindagem de estresse== | reabsorção do calcar, haste estável, ==sem desgaste do inserto== |\n| Doença de partículas | inserto afinado, cabeça excêntrica no componente acetabular, lesões líticas na interface; pode simular metástase |\n| Soltura | lucência ==maior que 2 mm== na interface, de largura variável ao longo da haste, esclerose reativa, buttressing, afundamento, fratura do cimento, alargamento distal ao fulcro |\n| Infecção | achados mínimos no início; osteopenia, osteólise, reação periosteal e soltura tardias; confirmar por ==aspiração guiada== |\n\nA tomografia mostra melhor a doença de partículas no osso trabecular (colunas acetabulares e ramos púbicos). As radiografias avaliam bem a parede medial e o fêmur proximal.\n\n> **Na prova:** calcar reabsorvido, haste fixa, inserto íntegro: blindagem de estresse, não osteólise.",
+  "correta": "**Correta.** É a definição do capítulo: reabsorção progressiva do córtex femoral medial no calcar por transferência da carga para a haste e o córtex subtrocantérico, sem soltura e sem desgaste do inserto que sustente osteólise.",
+  "incorretas": {
+   "A": "**Errada.** A doença de partículas exige fonte de detritos, tipicamente o desgaste do inserto de polietileno, que se manifesta por afinamento do polietileno ou excentricidade da cabeça. Aqui o inserto não mostra desgaste.",
+   "C": "**Errada.** O critério de soltura citado é radiolucência maior que 2 mm na interface cimento-osso ou metal-osso, mais confiável quando varia em largura e se associa a esclerose reativa, buttressing ou afundamento. Não há afundamento nem lucência de interface descrita.",
+   "D": "**Errada.** A osteopenia periprotética não é patognomônica de infecção. Na prótese infectada os achados radiográficos podem ser mínimos, e o diagnóstico é mais bem confirmado por aspiração articular guiada por imagem."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 23 (Avaliação Radiográfica do Quadril)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0611": {
+  "conceito": "### Came e pinça\n\n| Tipo | Origem | Imagem |\n|---|---|---|\n| ==Came== | fêmur proximal: saliência ==anterolateral== da junção cabeça-colo | perfil e ==Dunn==: esfericidade, offset, ==ângulo alfa==, pit de herniação |\n| ==Pinça== | rebordo acetabular, por exemplo ==retroversão== | ==AP verdadeira da pelve==: sinal do cruzamento |\n\nAs duas morfologias ==frequentemente coexistem==. Displasia e Perthes predispõem ao came; a epifisiólise oculta é causa importante de deformidade semelhante.\n\n### O sinal do cruzamento\n\nResulta da sobreposição anormal do ==rebordo anterior sobre o posterior==. É relativamente ==específico==, mas só em radiografias otimizadas: centramento e angulação craniocaudal corretos evitam falso-positivos e falso-negativos.\n\n### O os acetabuli\n\nUma ossificação no acetábulo anterossuperior aumenta a cobertura anterior e pode gerar ==retroversão acetabular adquirida==, com sinal do cruzamento. Tem as ==mesmas implicações do acetábulo retrovertido== no impacto tipo pinça.\n\n### Tomografia e ressonância\n\nA tomografia, pela radiação, fica restrita no jovem às deformidades ósseas que serão corrigidas. A ressonância mostra os contornos ósseos e é crucial para lesões labrais e condrais, que guiam o tratamento e o prognóstico.\n\n> **Na prova:** cruzamento é rebordo anterior sobre posterior, na AP verdadeira; os acetabuli equivale a retroversão.",
+  "correta": "**Correta.** O capítulo afirma que o os acetabuli tem as mesmas implicações que o acetábulo retrovertido no diagnóstico de impacto femoroacetabular e, no caso da figura, resulta em retroversão adquirida com sinal do cruzamento, associada ao tipo pinça.",
+  "incorretas": {
+   "A": "**Errada em dois pontos.** O sinal do cruzamento resulta da sobreposição anormal do rebordo anterior em relação ao posterior, e é avaliado em radiografias anteroposteriores verdadeiras de toda a pelve.",
+   "B": "**Errada.** A incidência de Dunn otimiza a junção cabeça-colo e é a mais usada para o tipo came: asfericidade, offset e ângulo alfa. A retroversão é avaliada na AP verdadeira da pelve.",
+   "C": "**Errada.** O capítulo associa o os acetabuli à retroversão acetabular adquirida e ao impacto do tipo pinça; não se trata de achado sem relação com o impacto."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 23 (Avaliação Radiográfica do Quadril)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0612": {
+  "conceito": "### Displasia no adulto\n\n| Gravidade | Achados |\n|---|---|\n| Leve | discreta ==elevação do teto acetabular lateral==, sem degeneração |\n| Mais grave | ângulo acetabular aumentado, acetábulo ==raso==, cobertura inadequada; cabeça achatada, colo curto e largo (==coxa magna==) |\n| ==Fulminante== | cabeça ==luxada==, com pseudartrose contra o osso inominado |\n\nO ==ângulo centro-borda lateral== é formado por uma vertical pelo centro da cabeça e uma linha do centro da cabeça à margem acetabular lateral. Normal de ==20 a 40 graus==; ==diminui== à medida que a cabeça se ==translada lateralmente== (quadril esquerdo da figura). A ==linha de Shenton==, entre a borda inferior do ramo púbico superior e o colo medial, rompe-se nos casos avançados.\n\n### Outras sequelas da infância\n\n- **Perthes:** osteonecrose da epífise, idade mediana de 6 anos; no adulto, ==coxa plana==, coxa magna, encurtamento e artrose.\n- **Epifisiólise:** Salter I por estresse no estirão, mais em meninos obesos, com deslocamento ==posteromedial== da epífise; pode gerar offset semelhante ao came e artrose precoce.\n\n### Para onde a cabeça migra\n\n| Doença | Migração |\n|---|---|\n| ==Osteoartrite avançada== | ==superolateral== |\n| Artrite inflamatória e algumas secundárias | ==medial==, coxa profunda ou protrusão |\n\n> **Na prova:** centro-borda de 20 a 40 graus, menor na displasia; epifisiólise posteromedial; artrose migra superolateral, inflamatória medial.",
+  "correta": "**Correta.** O capítulo define o ângulo centro-borda normal entre 20 e 40 graus e mostra, na figura, que ele diminui à medida que a cabeça femoral se translada lateralmente no quadril displásico.",
+  "incorretas": {
+   "B": "**Errada.** A discreta elevação do teto acetabular lateral, sem degeneração, corresponde aos casos leves. Nos casos fulminantes, a cabeça se luxa e forma pseudartrose com o osso inominado.",
+   "C": "**Errada.** Na epifisiólise proximal do fêmur, há alargamento da fise ou deslocamento posteromedial da epífise.",
+   "D": "**Errada.** Na osteoartrite avançada, a cabeça migra superolateralmente. A migração medial, com coxa profunda ou protrusão, é típica da artrite inflamatória e de algumas formas secundárias."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 23 (Avaliação Radiográfica do Quadril)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0613": {
+  "conceito": "### Gálio sempre ao lado do osso\n\nO gálio-67 e os leucócitos marcados com índio-111 servem para diferenciar ==infecção== (como osteomielite) de outros diagnósticos, entre eles a ==soltura asséptica==. O gálio é ==sempre interpretado junto com a cintilografia óssea==, nunca sozinho.\n\n| Resultado | Critério |\n|---|---|\n| ==Positivo para infecção== | distribuição ==congruente== e gálio ==mais intenso== que o MDP |\n| ==Positivo para infecção== | distribuição ==incongruente==, com o gálio ==excedendo== a atividade óssea |\n| Negativo | gálio negativo |\n| Negativo | distribuição congruente e gálio ==menos intenso== que o MDP |\n\n### Leucócitos marcados\n\nOs leucócitos do próprio paciente são marcados (por exemplo com índio-111) e reinjetados; localizam-se em áreas de ==infecção relativamente recente==. Como a preparação é sobretudo de ==neutrófilos==, favorece as infecções agudas.\n\n### O traçador ósseo\n\nO MDP-tecnécio-99m adere ao osso por ==quimiossorção== na superfície trabecular, sobretudo no osso amorfo recém-formado, nos grupos fosforosos da hidroxiapatita. Por isso marca turnover, e não infecção em si.\n\n> **Na prova:** gálio mais intenso que o osso ou fora do lugar do osso é infecção; gálio menor e congruente, não.",
+  "correta": "**Correta.** São os dois critérios positivos descritos: distribuição espacialmente congruente com intensidade relativa do gálio maior que a do MDP, ou distribuição incongruente com a atividade do gálio excedendo a atividade óssea.",
+  "incorretas": {
+   "A": "**Errada.** Os cintilogramas com gálio-67 são interpretados em conjunto com os cintilogramas ósseos marcados com tecnécio-99m; os critérios dependem justamente dessa comparação.",
+   "B": "**Errada.** Quando ambos os estudos têm distribuição congruente e a intensidade do gálio é menor que a da atividade óssea, o estudo é negativo para infecção.",
+   "D": "**Errada.** Os leucócitos marcados localizam-se nas áreas de infecção relativamente recente. Como a preparação é sobretudo de neutrófilos, o método favorece infecções agudas, e não as crônicas."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 24 (Cintilografia e Tomografia por Emissão de Pósitrons do Quadril)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0614": {
+  "conceito": "### Dois traçadores, dois mecanismos\n\n| Traçador | Mecanismo | Tempo |\n|---|---|---|\n| MDP marcado com tecnécio-99m | ==quimiossorção== na superfície trabecular, sobretudo no osso amorfo recém-formado, nos grupos fosforosos da hidroxiapatita | estudo de cerca de ==4 horas== |\n| ==Fluoreto de flúor-18== (PET) | ==incorporação direta== à matriz: ==hidroxiapatita vira fluorapatita== | ==não se liga a proteínas==: imagem ==1 hora== após a injeção; estudo completo em cerca de ==90 minutos== |\n\nA PET com fluoreto é análoga à cintilografia óssea, mas tem ==resolução substancialmente superior== à aquisição planar.\n\n### O arsenal completo\n\n| Técnica | Uso principal |\n|---|---|\n| Cintilografia óssea com MDP | turnover ósseo, estágio precoce de necrose, fraturas por estresse |\n| Gálio-67 | infecção, sempre com a óssea |\n| Leucócitos com índio-111 | infecção recente, com medula de colóide de enxofre |\n| PET com fluordesoxiglicose | infecção da artroplastia |\n| PET com fluoreto de flúor-18 | osso, alta resolução |\n| Imagem de medula | compartimentos reticuloendotelial, eritroide e mieloide |\n\n> **Na prova:** fluoreto vira fluorapatita, sem ligação proteica, 90 minutos; MDP adere por quimiossorção, 4 horas.",
+  "correta": "**Correta.** O capítulo explica que, ao contrário dos difosfonatos, o fluoreto de flúor-18 é incorporado diretamente à matriz óssea, convertendo hidroxiapatita em fluorapatita; como não se liga a proteínas, a imagem é feita 1 hora após a injeção e o estudo completo leva cerca de 90 minutos.",
+  "incorretas": {
+   "B": "**Errada.** O MDP-tecnécio-99m adere ao osso por quimiossorção na superfície das trabéculas. A conversão de hidroxiapatita em fluorapatita é característica do fluoreto de flúor-18.",
+   "C": "**Errada.** O fluoreto de flúor-18 não se liga a proteínas, e por isso a aquisição pode ser feita mais rapidamente, 1 hora após a injeção.",
+   "D": "**Errada.** A cintilografia óssea tradicional leva cerca de 4 horas. O estudo de cerca de 90 minutos é o da PET com fluoreto de flúor-18."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 24 (Cintilografia e Tomografia por Emissão de Pósitrons do Quadril)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0615": {
+  "conceito": "### A sequência temporal\n\n1. ==Fotopenia== nas fases de perfusão e estática logo após o evento isquêmico: achado ==muito específico== de necrose avascular. A área fotodeficiente aparece cerca de ==7 a 10 dias== após o insulto.\n2. ==Captação aumentada==, semanas a meses depois, por ==revascularização e reparo==.\n3. ==Sinal do donut==, no período intermediário: ==fotopenia central== com ==anel de captação aumentada==, o osso reativo ao redor do infarto.\n\n### Armadilhas\n\n| Tipo | Causas |\n|---|---|\n| ==Falso-negativo== | ==doença bilateral== (captação simétrica passa despercebida); transição infarto-revascularização, falsamente normal em ==6% a 10%== |\n| Falso-positivo por captação reduzida | infecção, mieloma, metástases líticas, hemangioma, radioterapia |\n| Falso-positivo por captação aumentada | osteoporose transitória, artrite, distrofia simpática, malignidade, infecção, hemangioma, fratura por estresse |\n\nA cintilografia é ==inespecífica== e deve ser interpretada com a clínica e as demais imagens. Ela detecta a necrose ==mais cedo que a radiografia==, o que importa porque redução de carga e descompressão do núcleo funcionam melhor nos estágios iniciais.\n\n> **Na prova:** fotopenia em 7 a 10 dias, depois captação; donut é frio no centro e quente na borda; bilateral engana.",
+  "correta": "**Correta.** O capítulo descreve a área fotodeficiente cerca de 7 a 10 dias após o insulto isquêmico, seguida de aumento da captação por revascularização e reparo, semanas a meses depois.",
+  "incorretas": {
+   "A": "**Errada, inverte a ordem.** Primeiro vem a captação diminuída, muito específica de necrose avascular; o aumento da captação pelo reparo surge semanas a meses depois.",
+   "B": "**Errada, inverte o padrão.** O sinal do donut é fotopenia central com zona circundante de captação aumentada, representando o osso reativo em torno da zona infartada.",
+   "C": "**Errada.** A doença bilateral é causa de falso-negativo, porque a captação bilateral simétrica pode passar despercebida."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 24 (Cintilografia e Tomografia por Emissão de Pósitrons do Quadril)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0616": {
+  "conceito": "### Sensibilidade contra especificidade\n\n| Método | Sensibilidade na necrose avascular | Especificidade |\n|---|---|---|\n| ==Ressonância magnética== | ==próxima de 100%== | menor que a da cintilografia, nos relatos |\n| ==Cintilografia óssea== | ==81% a 90%== | ==maior== |\n| Radiografia | baixa no início | não se aplica |\n\nA cintilografia é sensível e útil na doença inicial, sobretudo no ==estágio I==, em relação à radiografia. O ==colimador de orifício (pinhole)== tem ==maior sensibilidade== que o de furos paralelos, mesmo de alta resolução.\n\nAs duas modalidades se complementam e formam a abordagem não invasiva de escolha na população de alto risco.\n\n### Estágios e cintilografia\n\n| Estágio | Clínica | Cintilografia |\n|---|---|---|\n| I | sem dor, infarto à histologia | ==fotopenia== |\n| II | assintomático ou dor leve, contorno íntegro | captação aumentada |\n| III | dor, achatamento e ==sinal do crescente== | captação exacerbada |\n| IV | mais dor, colapso | captação exacerbada |\n| V | dor persistente, cistos na cabeça e no acetábulo | captação persistentemente exacerbada |\n\n### Pesquisa\n\nCom fluoreto de flúor-18, Dasa e colaboradores viram captação acetabular aumentada em 9 de 17 quadris, não vista na ressonância, no SPECT nem na cintilografia planar.\n\n> **Na prova:** RM quase 100% sensível; cintilografia 81% a 90%, porém mais específica; pinhole vence furos paralelos.",
+  "correta": "**Correta.** O capítulo relata sensibilidade próxima de 100% para a ressonância e entre 81% e 90% para a cintilografia, ressalvando que as especificidades relatadas são maiores para a cintilografia óssea.",
+  "incorretas": {
+   "A": "**Errada.** A maioria dos investigadores relata maior sensibilidade para a ressonância magnética. A cintilografia é útil sobretudo na comparação com a radiografia simples nos estágios iniciais.",
+   "C": "**Errada, inverte os colimadores.** A cintilografia com colimador de orifício tem sensibilidade maior que a do colimador de furos paralelos, mesmo de alta resolução.",
+   "D": "**Errada no número.** A falsa normalidade na transição do infarto para a revascularização ocorre em 6% a 10% dos pacientes."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 24 (Cintilografia e Tomografia por Emissão de Pósitrons do Quadril)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0617": {
+  "conceito": "### Onde a captação importa\n\nA acumulação ==inespecífica== de fluordesoxiglicose ao redor da ==cabeça e do colo== da prótese pode persistir por ==meses e possivelmente anos== após a cirurgia. Por isso, no momento:\n\n- ==O sítio e o padrão da captação importam mais que a intensidade.==\n- A captação na ==interface osso-prótese, ao longo da haste (diáfise)==, é a ==mais consistente com infecção==.\n\nA figura separa as duas regiões: colo, reação asséptica inespecífica; interface da haste, infecção.\n\n### Por que a FDG pode superar os leucócitos marcados\n\n| Aspecto | Leucócitos marcados | PET com fluordesoxiglicose |\n|---|---|---|\n| Princípio | migração das células injetadas | captação pelas células inflamatórias já ativadas no local |\n| Células | sobretudo ==neutrófilos==: favorece infecção ==aguda== | população ==muito maior==, inclusive monócitos e linfócitos |\n| Infecção de prótese | maioria ==subaguda ou crônica==, com monócitos e linfócitos | adequada |\n| Antibiótico | interfere mais | ==menos afetada==, por não depender da migração |\n| Logística | ==pelo menos 2 dias==, exigente e caro | mais simples e rápido |\n\n### O debate\n\nOs resultados variam entre grupos sobretudo pela ==falta de critérios uniformes== de interpretação. Na metanálise, a área sob a curva sumária foi de ==0,96==, com Q* de 0,90.\n\n> **Na prova:** FDG no colo pode ser inespecífica por anos; infecção é captação na interface osso-prótese da haste.",
+  "correta": "**Correta.** O capítulo afirma que, no momento, o sítio e o padrão da acumulação de fluordesoxiglicose parecem mais importantes que a intensidade, e que a captação na interface osso-prótese, na região da haste, é a mais consistente com infecção.",
+  "incorretas": {
+   "A": "**Errada.** O critério prático atual privilegia o sítio e o padrão da captação, e não a intensidade, justamente porque há captação inespecífica intensa em regiões sem infecção.",
+   "B": "**Errada.** A captação ao redor da cabeça e do colo pode ser inespecífica por meses e possivelmente anos após a cirurgia, e corresponde no diagrama à reação asséptica.",
+   "D": "**Errada, inverte a lógica.** A captação da fluordesoxiglicose não depende da migração leucocitária; por isso o tratamento antibiótico tem menor probabilidade de reduzir sua sensibilidade. Quem depende da migração são os leucócitos marcados."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 24 (Cintilografia e Tomografia por Emissão de Pósitrons do Quadril)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0618": {
+  "conceito": "### O problema clínico\n\nO ponto central na artroplastia dolorosa é separar ==soltura asséptica== de ==infecção periprotética==.\n\n| Técnica | Situação |\n|---|---|\n| Cintilografia óssea seguida de gálio | primeira geração; criticada por desvantagens práticas |\n| ==Leucócitos com índio-111 + medula com colóide de enxofre-tecnécio== | considerada a ==modalidade de escolha==, mas ==demorada, exigente e cara==: ==pelo menos 2 dias== |\n| PET com fluordesoxiglicose | avaliada prospectivamente e sugerida como procedimento ótimo |\n\n### O limite biológico dos leucócitos marcados\n\nO método supõe que as células injetadas ==migrem== para a infecção. Como a preparação é sobretudo de ==neutrófilos==, funciona melhor nas infecções ==agudas==. Mas a maioria das infecções de prótese é ==subaguda ou crônica==, com predomínio de ==monócitos e linfócitos==.\n\n### O que sustenta a PET\n\n- Imageia população celular ==maior==, as células inflamatórias já ativadas.\n- ==Não depende da migração==: sofre menos com o antibiótico.\n- Procedimento mais simples e curto.\n- Metanálise: área sob a curva sumária de ==0,96== e Q* de ==0,90==.\n- A variabilidade entre estudos vem sobretudo da ==falta de critérios uniformes== de interpretação.\n\n> **Na prova:** leucócito marcado é neutrófilo e infecção aguda; prótese infectada é crônica; FDG com AUC de 0,96.",
+  "correta": "**Correta.** O capítulo explica que a maior parte da preparação de leucócitos marcados consiste em neutrófilos, o que favorece as infecções agudas, enquanto nas artroplastias infectadas predominam monócitos e linfócitos, porque a maioria dessas infecções é subaguda ou crônica.",
+  "incorretas": {
+   "B": "**Errada.** A combinação de leucócitos marcados com índio-111 e medula óssea com colóide de enxofre é demorada, tecnicamente exigente e relativamente cara, e o processo completo requer pelo menos 2 dias.",
+   "C": "**Errada no valor.** Os dados agrupados estimaram área sob a curva de 0,96, com Q* de 0,90, indicando excelente capacidade diagnóstica.",
+   "D": "**Errada.** O capítulo atribui a variabilidade dos resultados principalmente à falta de critérios uniformes para interpretar as imagens, como mostram os diferentes critérios de positividade da Tabela 24.5."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 24 (Cintilografia e Tomografia por Emissão de Pósitrons do Quadril)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0619": {
+  "conceito": "### Osteoporose transitória do quadril\n\nDoença ==autolimitada==, de etiologia desconhecida, que acomete sobretudo:\n\n- ==homens de 40 a 60 anos==;\n- ==mulheres na fase final da gestação==.\n\n| Característica | Dado |\n|---|---|\n| Articulação mais acometida | quadril |\n| Dor | início ==rápido==, geralmente unilateral, mais comum ==à esquerda== |\n| Evolução | recuperação espontânea em ==2 a 6 meses== |\n| Contralateral | ==30%== |\n| Radiografia | osteoporose periarticular |\n| Ressonância | ==edema medular difuso== e pequeno derrame; é a ==investigação de escolha== |\n| Cintilografia | captação ==uniformemente aumentada== da cabeça, estendendo-se ao ==colo e à região intertrocantérica== |\n\nGaucher descreveu como típica a captação intensa e homogênea de toda a cabeça, estendendo-se ao acetábulo e ao colo e às vezes à diáfise.\n\n### O que separa da necrose avascular\n\n| Necrose avascular | Osteoporose transitória |\n|---|---|\n| ==Colapso subcondral== e ==interface serpiginosa== na ressonância | edema difuso sem linha serpiginosa |\n| ==Pontos frios== na cintilografia | captação difusa e homogênea |\n\nA cintilografia é sensível, mas inespecífica: o diferencial inclui necrose avascular, metástases e distrofia simpática reflexa. Não há literatura sobre PET nessa doença.\n\n> **Na prova:** homem de meia-idade ou gestante no fim da gravidez, quadril esquerdo, cura em 2 a 6 meses; pontos frios e linha serpiginosa são de necrose.",
+  "correta": "**Correta.** O quadro é de osteoporose transitória do quadril. O capítulo descreve captação uniformemente aumentada na cabeça femoral, estendendo-se ao colo e à região intertrocantérica, e recuperação espontânea em 2 a 6 meses.",
+  "incorretas": {
+   "A": "**Errada.** Colapso subcondral com interface serpiginosa na ressonância e pontos frios na cintilografia são as características relativamente específicas da necrose avascular, usadas justamente para diferenciá-la da osteoporose transitória.",
+   "B": "**Errada.** O acometimento contralateral é visto em cerca de 30% dos pacientes.",
+   "C": "**Errada.** Não há literatura sobre PET nessa entidade, com fluordesoxiglicose ou com fluoreto de flúor-18. A ressonância é a investigação de escolha, e a cintilografia é complemento valioso."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 24 (Cintilografia e Tomografia por Emissão de Pósitrons do Quadril)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0620": {
+  "conceito": "### Quem e quantos\n\n| Dado | Valor |\n|---|---|\n| Incidência anual nos Estados Unidos | ==10.000 a 20.000== novos casos |\n| Forma mais comum | ==traumática== |\n| Bilateralidade na forma atraumática | cerca de ==50%== |\n| Outros locais | ombro, joelho e tálus; o mais comum é a epífise femoral |\n\n### Fatores de risco da forma atraumática\n\nCorticosteroide em altas doses, álcool em excesso, anemia falciforme, ==doença de Gaucher==, lúpus, coagulopatias, hiperlipidemia, transplante de órgãos, ==doença dos caixões (descompressiva)== e distúrbios tireoidianos.\n\n### A via comum\n\n1. Comprometimento do suprimento sanguíneo (daí os sinônimos necrose avascular e isquêmica).\n2. Morte óssea.\n3. Reabsorção do tecido morto.\n4. Reparo por osso novo, porém ==mais fraco==.\n5. ==Fratura subcondral e colapso==.\n\n### Por que diagnosticar cedo\n\nO estágio orienta o tratamento: ==redução de carga e descompressão do núcleo== são mais úteis nos ==estágios iniciais==. Daí o valor de cintilografia e ressonância, que detectam a doença antes da radiografia. Lembrete do capítulo 23: na ressonância, estudam-se os dois quadris, porque a doença contralateral assintomática é frequente.\n\n> **Na prova:** 10 a 20 mil casos por ano nos EUA; metade bilateral na atraumática; tratar cedo, antes do colapso.",
+  "correta": "**Correta.** O capítulo informa que a osteonecrose traumática é a forma mais comum e que cerca de 50% dos pacientes com a forma atraumática têm acometimento bilateral.",
+  "incorretas": {
+   "A": "**Errada.** A incidência anual nos Estados Unidos é de aproximadamente 10.000 a 20.000 novos casos, e a forma mais comum é a traumática.",
+   "C": "**Errada.** Doença de Gaucher e doença dos caixões, a doença descompressiva, estão na lista de fatores de risco da osteonecrose atraumática.",
+   "D": "**Errada.** A redução da carga e a descompressão do núcleo são mais úteis nos estágios mais iniciais, antes do colapso, o que justifica o esforço de diagnóstico precoce."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 24 (Cintilografia e Tomografia por Emissão de Pósitrons do Quadril)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0621": {
+  "conceito": "### Estágios com a cintilografia ao lado\n\n| Estágio | Clínica | Fisiopatologia | Cintilografia |\n|---|---|---|---|\n| I | ==sem dor== | infarto ósseo à histologia | ==fotopenia== |\n| II | assintomático a dor leve | contorno íntegro; osso novo entre trabéculas necróticas | captação de MDP ==aumentada== |\n| ==III== | ==dor== | ==achatamento== e ==sinal do crescente==: fratura no osso subcondral morto, reabsorção maior que reparo | captação ==exacerbada== pela atividade celular |\n| IV | dor maior que no III | ==colapso== do segmento necrótico, deformidade, reparo ineficaz | captação exacerbada |\n| V | dor persistente | ==cistos== na cabeça e no acetábulo | captação ==persistentemente exacerbada== |\n\n### O raciocínio\n\nA cintilografia acompanha o ==metabolismo==: fria enquanto o osso está morto e sem reparo; quente quando o reparo começa e permanece quente enquanto o reparo é ineficaz. O ==sinal do crescente== é o marco mecânico: a reabsorção vence o reparo e o osso subcondral morto fratura.\n\n> **Na prova:** estágio I frio e sem dor; III com crescente; IV colapso; V cistos e captação persistente.",
+  "correta": "**Correta.** Na Tabela 24.3, o estágio III é sintomático, com achatamento da cabeça e sinal do crescente por fratura através do osso subcondral morto, decorrente do aumento da reabsorção em relação ao reparo, e captação de MDP exacerbada pela atividade celular.",
+  "incorretas": {
+   "A": "**Errada.** O estágio I cursa sem dor, com infarto ósseo apenas à histologia e fotopenia na cintilografia.",
+   "B": "**Errada.** O colapso do segmento necrótico com deformidade da cabeça corresponde ao estágio IV. No estágio II o contorno da cabeça está íntegro.",
+   "D": "**Errada.** No estágio V, com alterações císticas na cabeça e no acetábulo, a captação é persistentemente exacerbada, relacionada ao reparo ineficaz."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 24 (Cintilografia e Tomografia por Emissão de Pósitrons do Quadril)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0622": {
+  "conceito": "### Cada plano, sua especialidade\n\n| Plano | Avalia melhor |\n|---|---|\n| ==Coronal== | ==lábio superior==, cartilagem transversa da cabeça superior e do teto, ==abdutores==, ==rotadores externos curtos==, ligamento iliofemoral, origens dos isquiotibiais e nervos isquiáticos |\n| ==Sagital== | ==lábio anterior== e extensão anteroposterior da cartilagem da cabeça superior e do teto |\n| ==Axial reto== | cartilagem anterior e posterior direta e ==excelente avaliação dos nervos isquiático, femoral e obturatório== |\n| ==Axial oblíquo== | ==junção anterior cabeça-colo==: detecção da ==lesão em came== e planejamento do desbridamento; substitui o axial reto no jovem com suspeita de impacto |\n\n### Técnica\n\n- Campo de ==1,5 a 3,0 Tesla==, com bobina de ombro de duas partes, envolvente de pequeno campo ou cardíaca multicanal.\n- Contraste tecidual ótimo com ==eco de spin rápido de tempo de eco moderado==: TE efetivo de ==34 ms a 1,5 T== ou ==28 ms a 3 T==.\n- Sequências de grande campo avaliam pelve e quadril contralateral.\n\n### Por que o quadril é difícil\n\nPosição em relação ao ==isocentro magnético==, superfícies ==curvilíneas== e cartilagem ==fina==. Com técnica ótima, imagens acuradas são obtidas na rotina sem contraste intra-articular.\n\n> **Na prova:** coronal, lábio superior; sagital, lábio anterior; axial reto, nervos; axial oblíquo, came.",
+  "correta": "**Correta.** O capítulo indica o plano axial oblíquo em indivíduos mais jovens com suspeita de impacto femoroacetabular, porque fornece visualização direta da junção anterior cabeça-colo femoral, facilita a detecção da lesão em came e auxilia o planejamento do desbridamento do colo.",
+  "incorretas": {
+   "A": "**Errada.** Lábio superior, abdutores e rotadores externos curtos são mais bem avaliados no plano coronal. O sagital é o plano do lábio anterior.",
+   "B": "**Errada, troca os planos.** O lábio anterior e a extensão anteroposterior da cartilagem do teto são avaliados no plano sagital; o coronal mostra o lábio superior.",
+   "C": "**Errada.** O plano axial reto oferece excelente avaliação dos nervos isquiático, femoral e obturatório, além da cartilagem anterior e posterior direta."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 25 (Ressonância Magnética do Quadril)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0623": {
+  "conceito": "### Medir a matriz antes do defeito\n\nAs técnicas quantitativas calculam valores de relaxamento relacionados a ==proteoglicano==, ==orientação do colágeno== e ==água livre==, e servem como ==biomarcador da depleção precoce da matriz==, antes do defeito visível.\n\n| Técnica | O que mede | Como lê |\n|---|---|---|\n| ==Mapeamento T2== | colágeno e água livre, pixel a pixel | T2 ==curto na zona profunda (radial)==, ordenada; ==longo na transicional==; prolongamento focal = desorganização |\n| ==T1 rho== | ==proteoglicano==, por travamento de spin no plano transverso | ==prolongamento = perda de proteoglicano== |\n| Realce tardio por gadolínio | proteoglicano | gadolínio-DTPA de carga ==negativa== distribui-se em relação ==inversa== à carga fixa dos glicosaminoglicanos; exercício leve e espera de ==45 a 90 minutos== |\n| Sódio | proteoglicano, com íon de carga ==positiva== natural | exige ==bobinas de sódio e espectroscopia multinuclear==; só em ==pesquisa== |\n| Tempo de eco ultracurto (50 a 250 µs) | tendões, ligamentos, osso cortical, de T2 muito curto | exige gradientes de alto desempenho |\n\nA lamina splendens, vista no joelho, ==geralmente não aparece== no quadril nas intensidades clínicas.\n\n> **Na prova:** T2 é colágeno e água; T1 rho e sódio são proteoglicano; gadolínio tardio é negativo e inverso.",
+  "correta": "**Correta.** O capítulo descreve o T1 rho, relaxamento spin-rede no referencial rotatório, como técnica que detecta interações macromoleculares de baixa frequência envolvendo o proteoglicano, e o prolongamento dos tempos indica áreas de perda de proteoglicano.",
+  "incorretas": {
+   "A": "**Errada, inverte as zonas.** Tempos de T2 relativamente curtos são encontrados na zona profunda ou radial, altamente ordenada; tempos prolongados ocorrem na zona transicional, menos ordenada.",
+   "C": "**Errada.** O gadolínio-DTPA usado tem carga negativa e distribui-se em relação inversa à densidade de carga fixa dos glicosaminoglicanos, que também são negativos. Onde há perda de proteoglicano, entra mais contraste.",
+   "D": "**Errada.** Como os aparelhos clínicos são calibrados para a frequência do hidrogênio, a ressonância com sódio exige bobinas especiais e espectroscopia multinuclear, atualmente só em ambiente de pesquisa."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 25 (Ressonância Magnética do Quadril)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0624": {
+  "conceito": "### Came e pinça na ressonância\n\n| Tipo | Mecanismo | Dano típico |\n|---|---|---|\n| ==Came== | offset ==insuficiente== da junção cabeça-colo, em geral ==anterossuperior==, por proeminência óssea | o colo proeminente entra no acetábulo, degenera o lábio e gera ==cisalhamento na junção condrolabral==, com ==delaminação basilar focal== na margem lateral do ==teto anterossuperior== |\n| ==Pinça== | ==sobrecobertura== acetabular global ou focal | colo bate no lábio e no rebordo; a cabeça ==alavanca== contra a superfície posterior: dano em ==contragolpe== |\n\nOs dois tipos frequentemente coexistem, inclusive com displasia.\n\n### Diferenças entre os sexos\n\n- ==Homens==: lesão em came ==clássica==.\n- ==Mulheres==: esclerose sutil do colo ou neoformação periosteal, muitas vezes com ==coxa valga== ou elemento de displasia.\n\n### Sempre com a clínica\n\nOs sinais de impacto ==nem sempre se correlacionam== com dor. O mapa T2 e o T1 rho mostram a degeneração precoce da matriz que a escala de cinza ainda não revela, como na imagem D da figura.\n\n> **Na prova:** came, homem, delaminação no teto anterossuperior; pinça, contragolpe posterior; imagem sem clínica não opera ninguém.",
+  "correta": "**Correta.** No came clássico, segundo o capítulo, o impacto da junção proeminente contra o lábio provoca degeneração labral e forças de cisalhamento na junção condrolabral, com delaminação basilar focal da cartilagem na margem lateral do aspecto anterossuperior do teto acetabular, como na figura.",
+  "incorretas": {
+   "A": "**Errada.** O dano em contragolpe resulta do alavancamento da cabeça contra a superfície posterior do acetábulo e é característico do impacto tipo pinça, por sobrecobertura acetabular.",
+   "B": "**Errada.** Os homens apresentam mais comumente a lesão em came clássica. Nas mulheres, é frequente a esclerose sutil do colo ou neoformação periosteal, muitas vezes com coxa valga ou displasia.",
+   "D": "**Errada.** O capítulo afirma que os sinais de imagem de impacto nem sempre se correlacionam com a presença de dor, e que os achados devem sempre ser interpretados no contexto clínico."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 25 (Ressonância Magnética do Quadril)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0625": {
+  "conceito": "### Por que o metal atrapalha\n\nO implante perturba localmente o campo magnético e gera ==artefato de suscetibilidade==, que obscurece justamente a região periprotética.\n\n### Ajustes nas sequências convencionais\n\n| Medida | Direção certa |\n|---|---|\n| Largura de banda do receptor | ==alargar== (83 a 100 kHz no protocolo de artroplastia, contra 31,25 no quadril nativo) |\n| Eixo de codificação de frequência | ==alinhado com o eixo longo do implante== |\n| Matriz | ==sobreamostrar== na direção de frequência |\n| Voxel e excitações | voxel ==menor==, ==mais== excitações |\n| Intensidade do campo | ==1,5 T==; ==evitar 3 T==, pois o artefato é ==proporcional ao campo== |\n| Supressão de gordura | ==evitar saturação espectral==; usar ==recuperação de inversão (STIR)== |\n\n### Sequências dedicadas\n\n- ==Combinação de imagens de ressonância variável com aquisições múltiplas== (MAVRIC): várias faixas espectrais combinadas no pós-processamento.\n- ==Correção de artefato metálico com codificação de corte== (SEMAC): inclinação do ângulo de visão e codificação de fase extra no eixo Z.\n\n### Conforme o par articular\n\n| Par | Artefato |\n|---|---|\n| Cerâmica | ==menor== |\n| Metal-metal | ==maior== |\n\n> **Na prova:** com prótese, 1,5 T, banda larga, frequência ao longo do implante e STIR; nada de 3 T nem saturação espectral.",
+  "correta": "**Correta.** O capítulo recomenda imagem a 1,5 Tesla, porque o artefato é diretamente proporcional à intensidade do campo, e pede evitar a saturação espectral de gordura, preferindo a recuperação de inversão, que suprime a gordura de forma mais homogênea e com menos artefato na presença de metal.",
+  "incorretas": {
+   "A": "**Errada.** Para reduzir o artefato, alarga-se a largura de banda do receptor. Na Tabela 25.2, a banda sobe para 83 a 100 kHz, contra 31,25 kHz no quadril nativo.",
+   "B": "**Errada.** Como o artefato é proporcional ao campo, a aquisição a 3 Tesla deve ser evitada em pacientes com implantes metálicos.",
+   "C": "**Errada.** O eixo de codificação de frequência deve ser alinhado com o eixo longo do implante, e não perpendicular a ele."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 25 (Ressonância Magnética do Quadril)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0626": {
+  "conceito": "### Reação adversa local ao tecido por metal\n\nO detrito metálico pode vir da ==articulação metal-metal== ou de ==junções modulares==, como o ==cone (trunnion)== entre haste e cabeça. Por isso, reações típicas do metal podem aparecer ==com outros pares articulares== desde que haja componente modular.\n\n| Subtipo | Mecanismo | Imagem | Determinante |\n|---|---|---|---|\n| ==Hipersensibilidade== (ALVAL, pseudotumor) | ==linfócitos T==, tipo IV, como a dermatite da hera venenosa; metal como hapteno, células apresentadoras destruídas por linfócitos CD8 | ==grande expansão sinovial==, sinovite mista, ==sinóvia espessa==, descompressão em pseudotumor; depósitos hipointensos ==possíveis, mas não necessários== | ==reatividade do hospedeiro==; pouco detrito basta |\n| ==Metalose== | reação histiocítica de corpo estranho (fagocitose ou células gigantes) | expansão sinovial ==menor==, pouca inflamação; ==depósitos de baixo sinal esperados== | ==dose-dependente==; desalinhamento, carga de borda e alto desgaste |\n\nOs dois podem coexistir no mesmo paciente.\n\n### Polietileno e infecção\n\n- Detrito polimérico: expansão sinovial com detrito ==isointenso==, osteólise ou erosões indolentes.\n- Infecção: sinovite ==lamelada hiperintensa==, edema de partes moles, linfonodos e coleções; gadolínio geralmente desnecessário.\n\n> **Na prova:** hipersensibilidade é hospedeiro e sinóvia espessa; metalose é dose e baixo sinal; trunnion também gera reação metálica.",
+  "correta": "**Correta.** A figura mostra o subtipo hipersensibilidade: processo mediado por linfócitos T, análogo à hipersensibilidade tardia do tipo IV, com expansão sinovial, sinovite mista e sinóvia espessa. O capítulo ressalta que os depósitos de baixo sinal podem aparecer, mas não são necessários ao diagnóstico.",
+  "incorretas": {
+   "B": "**Errada.** Na metalose, a inflamação e o espessamento sinovial são muito menos pronunciados que na hipersensibilidade, e os depósitos de baixo sinal, pela grande carga metálica, são o achado esperado.",
+   "C": "**Errada.** É a metalose que é dose-dependente e ocorre apenas diante de grande carga de detritos. A hipersensibilidade depende mais da reatividade imunológica do hospedeiro: num suscetível, pouco detrito pode causar reação grave.",
+   "D": "**Errada.** O detrito metálico também pode surgir em junções modulares, como o cone entre a haste femoral e a cabeça. Assim, reações características do metal podem ocorrer com outros pares articulares, desde que haja componente modular."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 25 (Ressonância Magnética do Quadril)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0627": {
+  "conceito": "### O lábio normal\n\n- Feito de ==fibrocartilagem==, com pouca água móvel: ==escuro== nas sequências convencionais.\n- Quase circunferencial, mas ==incompleto inferiormente==, onde o ==ligamento transverso== cruza a incisura acetabular.\n- Nos cortes, ==triangular, hipointenso, de margens nítidas==, aposto ao rebordo, sem fluido interposto.\n\n### O lábio doente\n\n| Achado | Significado |\n|---|---|\n| Hiperintensidade ==focal==, na base ou na substância | ==rotura== |\n| Hiperintensidade ==difusa== | degeneração |\n| Cistos paralabrais | associados à lesão |\n| Focos de ossificação | ossificação intralabral |\n\nAs lesões são ==mais comuns anteriormente==, ligadas a trauma, degeneração e biomecânica alterada; ==lesões posteriores isoladas== aparecem na ==instabilidade posterior==.\n\n### Contraste ou não\n\nA superioridade da artrorressonância é ==controversa==: alguns autores mostram vantagem, outros equivalência ou superioridade sem contraste. A escolha depende muito do ==radiologista==. Os autores do capítulo ==defendem a técnica sem contraste de alta resolução==, que também mostra a sinóvia e alterações de sinal condral sem defeito focal.\n\n> **Na prova:** lábio escuro e triangular, falta embaixo; rotura anterior é a regra; posterior isolada pensa em instabilidade posterior.",
+  "correta": "**Correta.** O capítulo descreve o lábio normal como estrutura triangular hipointensa, de margens nítidas, quase circunferencial mas incompleta inferiormente, onde o ligamento transverso cruza a incisura, e afirma que as lesões acometem mais comumente o aspecto anterior.",
+  "incorretas": {
+   "A": "**Errada.** As lesões acometem mais o aspecto anterior do lábio. Lesões posteriores isoladas são encontradas no contexto de instabilidade posterior.",
+   "C": "**Errada.** Por ser fibrocartilagem, com relativa ausência de água móvel, o lábio aparece escuro, hipointenso, nas sequências convencionais. Hiperintensidade indica rotura ou degeneração.",
+   "D": "**Errada.** A vantagem da artrorressonância é controversa e depende em grande parte do radiologista. Os autores defendem a imagem sem contraste de alta resolução."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 25 (Ressonância Magnética do Quadril)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0628": {
+  "conceito": "### Artefato conforme o par\n\n| Par articular | Artefato |\n|---|---|\n| ==Cerâmica== | ==menor== |\n| ==Metal-metal== | ==maior==; exige técnica de redução de artefato bem feita |\n\n### Os achados periprotéticos\n\n| Condição | Aparência na ressonância |\n|---|---|\n| ==Soltura por membrana fibrosa== | ==linha fina hiperintensa== com ==margens escleróticas== na interface metal-osso ou cimento-osso, circunferencial |\n| Má integração de componente não cimentado | aparência semelhante |\n| ==Osteólise== | reabsorção focal discreta, tipicamente ==isointensa ao músculo==, com ==margens escleróticas bem definidas==; muito hipointensa quando há muito metal |\n| Fratura periprotética | edema medular nas imagens sensíveis a fluido, sem confundir com o artefato |\n| ==Infecção== | sinovite ==lamelada hiperintensa==, edema de partes moles, linfonodos e coleções; ==gadolínio geralmente desnecessário==, útil para separar flegmão de abscesso e mapear trajetos |\n\n### Complicações neurovasculares e outras\n\nEdema pós-operatório pode irritar o isquiático e melhora sozinho, mas é preciso excluir compressão por implante mal posicionado ou coleção. Tardiamente, a expansão sinovial ou um inserto extrudado podem comprimir nervos e vasos. A ossificação heterotópica madura tem ==sinal de medula gordurosa== interna.\n\n> **Na prova:** cerâmica dá menos artefato e metal-metal mais; soltura é linha fina clara com esclerose; infecção dispensa gadolínio.",
+  "correta": "**Correta.** O capítulo informa que, entre as superfícies de deslizamento, as articulações cerâmicas tipicamente geram o menor artefato e as metal-metal, como nas artroplastias de superfície, o maior.",
+  "incorretas": {
+   "A": "**Errada.** A soltura por membrana fibrosa manifesta-se como falha linear fina hiperintensa com margens escleróticas na interface metal-osso ou cimento-osso.",
+   "B": "**Errada.** O contraste intravenoso à base de gadolínio é geralmente desnecessário para o diagnóstico de infecção; pode ajudar a diferenciar flegmão de abscesso e a definir trajetos fistulosos.",
+   "D": "**Errada.** A osteólise aparece como áreas discretas de reabsorção focal, tipicamente isointensas e com margens escleróticas bem definidas. Com muito detrito metálico, os focos podem ser extremamente hipointensos."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 25 (Ressonância Magnética do Quadril)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0629": {
+  "conceito": "### Displasia do desenvolvimento\n\nA ==subcobertura acetabular== aumenta a carga axial e leva a ==hipertrofia compensatória do lábio== e degeneração precoce da cartilagem. A ressonância decide o caminho:\n\n| Cartilagem na apresentação | Tratamento típico |\n|---|---|\n| ==Relativamente preservada== | ==osteotomia periacetabular==, para cobertura mais anatômica e deter o desgaste |\n| ==Desgaste substancial== | ==artroplastia== |\n\nA Figura 25.7 mostra paciente encaminhada à artroplastia apesar de a radiografia não mostrar estreitamento grave: a ressonância revelou osso exposto.\n\n### Epifisiólise proximal do fêmur\n\n- Escorregamento ==posteromedial== da epífise no adolescente.\n- A ressonância avalia fechamento fisário, deformidade metafisária, cartilagem e necrose.\n- Tratamento: ==fixação com pino in situ==, ==sem redução==, pelo ==alto risco de necrose avascular==.\n- No pós-operatório, a ressonância acompanha o ==desgaste condral== causado pelo ==impacto femoroacetabular secundário== à deformidade residual.\n\n### Perthes\n\nOsteonecrose idiopática da epífise, com curso variável; a deformidade permanente pode levar à artrose, e a ressonância avalia cartilagem e partes moles antes da cirurgia.\n\n> **Na prova:** displasia com cartilagem boa, osteotomia; gasta, prótese; epifisiólise posteromedial, fixar sem reduzir.",
+  "correta": "**Correta.** O capítulo explica que o tratamento da epifisiólise é a fixação com pino da epífise para impedir a progressão, sem reduzir o escorregamento pelo risco elevado de necrose avascular, e que a ressonância pós-operatória monitora o desgaste condral pela deformidade residual, que costuma gerar impacto secundário.",
+  "incorretas": {
+   "A": "**Errada.** A osteotomia periacetabular é indicada quando a cartilagem está relativamente preservada. Com desgaste cartilaginoso substancial, a artroplastia é tipicamente o tratamento de escolha.",
+   "B": "**Errada.** A subcobertura aumenta a carga axial sobre a borda e provoca hipertrofia compensatória do lábio, e não atrofia.",
+   "C": "**Errada.** A epifisiólise resulta em escorregamento posteromedial da epífise da cabeça femoral."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 25 (Ressonância Magnética do Quadril)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0630": {
+  "conceito": "### Outras síndromes de impacto\n\n| Síndrome | Mecanismo | Observações |\n|---|---|---|\n| ==Isquiofemoral== | ==trocânter menor contra o ísquio== | descrita em ==1977== em três pacientes com dor após artroplastia, aliviados pela excisão do trocânter menor; imagem com estreitamento do intervalo isquiofemoral e do espaço do ==quadrado femoral==, com alteração de sinal nesse músculo; ainda controversa |\n| ==Espinha ilíaca anteroinferior== | colo contra a espinha proeminente | em geral deformidade residual de ==avulsão do reto femoral==; benefício relatado com a descompressão |\n\n### Depois da osteoplastia\n\nO objetivo do desbridamento da junção cabeça-colo é restaurar o offset e prevenir a artrose precoce.\n\n| Achado | Leitura |\n|---|---|\n| Desbridamento anterossuperior | ==esperado== |\n| ==Pequeno defeito no ligamento iliofemoral== | ==frequentemente normal== |\n| ==Fratura por estresse do colo== | complicação, por deficiência óssea |\n| ==Instabilidade== | complicação |\n| ==Deficiência do ligamento iliofemoral== | complicação de partes moles |\n\nA Figura 25.18 mostra exatamente isso: came antes, e depois deficiência do iliofemoral e fratura por estresse do colo.\n\n> **Na prova:** isquiofemoral é trocânter menor e ísquio; espinha inferior vem do reto femoral; após osteoplastia, cuidado com fratura do colo e instabilidade.",
+  "correta": "**Correta.** O capítulo lista como complicações pós-operatórias do desbridamento do colo, ligadas sobretudo à deficiência óssea ou de partes moles, a fratura por estresse do colo femoral, a instabilidade articular e a lesão relacionada à deficiência do ligamento iliofemoral.",
+  "incorretas": {
+   "A": "**Errada.** O impacto isquiofemoral é o conflito entre o trocânter menor e o ísquio, descrito em 1977 em três pacientes com dor após artroplastia que melhoraram com a excisão do trocânter menor.",
+   "B": "**Errada.** O impacto pela proeminência da espinha ilíaca anteroinferior é descrito mais comumente como deformidade residual de lesão prévia, como a avulsão do reto femoral, que se origina nessa espinha. O sartório origina-se na espinha ilíaca anterossuperior.",
+   "C": "**Errada.** A imagem pós-operatória normal mostra o desbridamento da junção anterossuperior e, muitas vezes, pequeno defeito cirúrgico no ligamento iliofemoral. A deficiência que vira complicação é a extensa, com instabilidade."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 25 (Ressonância Magnética do Quadril)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
  }
 }

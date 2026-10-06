@@ -208,8 +208,13 @@ function venceHoje(id: string, contexto: ContextoLocal): boolean {
   return contexto.revisaoHoje ? contexto.revisaoHoje.has(id) : revisarHoje(contexto.respondidas[id])
 }
 
+// Categorias que têm cartão próprio, mas continuam no treino geral de ortopedia:
+// quem não marca o Fellowship Quadril também encontra essas questões nos subtemas.
+const AREAS_TAMBEM_NA_BASE: ReadonlySet<string> = new Set(['quadril'])
+
 function noFoco(item: ItemIndice, areas: Filtros['areas']): boolean {
-  return areas.includes(item.ar ?? 'base')
+  const area = item.ar ?? 'base'
+  return areas.includes(area) || (AREAS_TAMBEM_NA_BASE.has(area) && areas.includes('base'))
 }
 
 const mapasPorId = new WeakMap<Indice, Map<string, ItemIndice>>()
