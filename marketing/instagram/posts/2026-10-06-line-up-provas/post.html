@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Orto Questões: Line-up 2027</title>
+<!-- Anúncio "Line-up 2027": as provas viram as atrações de um cartaz de festival.
+     Carrossel de feed (6 slides, 1080x1350) e 2 stories (1080x1920).
+     "Faltam N dias" é calculado na hora de gerar (prova teórica do TEOT e do TEPOT, 10/01/2027):
+     gere de novo no dia de postar.
+     Os percentuais do setlist vêm do índice do acervo (questões de cada prova, por tema), 6/10/2026.
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-06-line-up-provas/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+:root { --noite: #04100E; --verde: #14655E; --menta: #7FD1BF; --ouro: #F4CF7C; --ouro2: #C9952F; --creme: #FBF6EA; --cinza: #A9BBB7; --acerto: #1F7A4D; --erro: #B3423A; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; color: #fff; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1350px; padding: 64px 72px;
+  background:
+    radial-gradient(1100px 520px at 50% 108%, rgba(20,101,94,.75), transparent 70%),
+    radial-gradient(800px 600px at 50% -10%, rgba(244,207,124,.16), transparent 70%),
+    linear-gradient(180deg, #071a17 0%, var(--noite) 55%, #020807 100%); }
+section.story { height: 1920px; padding: 230px 80px 0; }
+
+/* palco: feixes de luz, estrelas e plateia */
+.feixe { position: absolute; top: -60px; width: 300px; height: 1700px; transform-origin: 50% 0;
+  background: linear-gradient(180deg, rgba(255,236,190,.30), rgba(244,207,124,.07) 55%, transparent 85%);
+  clip-path: polygon(46% 0, 54% 0, 100% 100%, 0 100%); filter: blur(6px); z-index: 1; pointer-events: none; }
+.estrelas { position: absolute; inset: 0; z-index: 0; }
+.estrelas i { position: absolute; border-radius: 50%; background: #fff; }
+.plateia { position: absolute; left: 0; right: 0; bottom: 0; height: 300px; z-index: 2; }
+.plateia::before { content: ''; position: absolute; left: -10%; right: -10%; bottom: 0; height: 160%; background: radial-gradient(ellipse 60% 70% at 50% 100%, rgba(244,207,124,.42), rgba(20,101,94,.35) 45%, transparent 75%); }
+.plateia svg { position: relative; overflow: visible; }
+.pt { margin-left: -.07em; }
+.plateia svg { width: 100%; height: 100%; display: block; }
+.conteudo { position: relative; z-index: 5; height: 100%; display: flex; flex-direction: column; }
+
+.topo { display: flex; justify-content: space-between; align-items: center; }
+.marca { display: flex; align-items: center; gap: 14px; font: 34px Jakarta; letter-spacing: -.02em; }
+.marca svg { width: 52px; height: 52px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; }
+.pilula { font: 800 22px Jakarta; letter-spacing: .2em; text-transform: uppercase; color: var(--ouro); border: 2px solid rgba(244,207,124,.7); padding: 11px 20px 10px; border-radius: 999px; background: rgba(244,207,124,.07); }
+.olho { font: 800 24px Jakarta; letter-spacing: .22em; text-transform: uppercase; color: var(--menta); }
+h1, h2 { font-family: Jakarta; font-weight: 800; letter-spacing: -.045em; line-height: .95; }
+em { font-style: normal; color: var(--ouro); }
+.ouro { background: linear-gradient(180deg, #FFF4D6 0%, #F4CF7C 48%, #C9952F 100%); -webkit-background-clip: text; background-clip: text; color: transparent;
+  filter: drop-shadow(0 0 34px rgba(244,207,124,.45)) drop-shadow(0 6px 0 rgba(0,0,0,.35)); }
+.sub { font-size: 32px; line-height: 1.4; color: #C9D6D3; text-wrap: pretty; }
+.sub b { color: #fff; }
+.estrela { display: inline-block; width: .42em; height: .42em; background: var(--ouro); clip-path: polygon(50% 0, 61% 39%, 100% 50%, 61% 61%, 50% 100%, 39% 61%, 0 50%, 39% 39%); vertical-align: middle; filter: drop-shadow(0 0 12px rgba(244,207,124,.8)); }
+.rodape { position: absolute; left: 72px; right: 72px; bottom: 46px; display: flex; justify-content: space-between; align-items: center; font: 700 23px Jakarta; color: var(--cinza); z-index: 6; }
+.rodape b { color: #fff; }
+
+/* ---------- capa (cartaz) ---------- */
+.cartaz { text-align: center; display: flex; flex-direction: column; align-items: center; }
+.gancho { font-size: 104px; margin-top: 46px; }
+.chamada-lineup { margin-top: 34px; display: flex; align-items: center; gap: 22px; }
+.chamada-lineup::before, .chamada-lineup::after { content: ''; width: 120px; height: 2px; background: linear-gradient(90deg, transparent, rgba(127,209,191,.8)); }
+.chamada-lineup::after { transform: scaleX(-1); }
+.headliners { font: 800 178px/1 Jakarta; letter-spacing: -.05em; display: flex; align-items: center; gap: 34px; margin-top: 14px; transform: scaleY(1.12); }
+.headliners .estrela { width: 64px; height: 64px; }
+.tier2 { font: 800 76px/1 Jakarta; letter-spacing: -.035em; margin-top: 30px; }
+.mais { display: inline-block; margin-top: 16px; font: 800 26px Jakarta; letter-spacing: .16em; text-transform: uppercase; color: var(--noite); background: var(--ouro); padding: 10px 20px 9px; border-radius: 10px; transform: rotate(-2deg); box-shadow: 0 10px 30px rgba(244,207,124,.3); }
+.tier3 { font: 800 50px/1.18 Jakarta; letter-spacing: -.025em; margin-top: 30px; color: #EAF2F0; }
+.tier3 .estrela { width: 22px; height: 22px; margin: 0 14px; position: relative; top: -3px; }
+.tier4 { font: 600 25px/1.4 Inter; color: var(--cinza); margin-top: 18px; letter-spacing: .01em; }
+.tier4 b { color: #fff; font-weight: 700; }
+
+/* faixa de contagem */
+.contagem { display: flex; align-items: stretch; background: var(--creme); color: #12181A; border-radius: 22px; overflow: hidden; box-shadow: 0 30px 70px rgba(0,0,0,.5); position: relative; }
+.contagem .num { background: var(--ouro); padding: 18px 30px 16px; display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative; }
+.contagem .num::after { content: ''; position: absolute; right: -1px; top: 10px; bottom: 10px; border-right: 4px dotted rgba(4,16,14,.35); }
+.contagem .num strong { font: 800 92px/0.9 Jakarta; letter-spacing: -.05em; }
+.contagem .num span { font: 800 20px Jakarta; letter-spacing: .24em; text-transform: uppercase; }
+.contagem .txt { padding: 20px 30px; display: flex; flex-direction: column; justify-content: center; gap: 6px; text-align: left; }
+.contagem .txt b { font: 800 34px/1.1 Jakarta; letter-spacing: -.03em; }
+.contagem .txt span { font: 500 24px/1.3 Inter; color: #3E4A48; }
+.capa-base { position: absolute; left: 72px; right: 72px; bottom: 86px; z-index: 6; }
+
+/* ---------- palcos ---------- */
+.palco-etq { display: inline-flex; align-items: center; gap: 14px; font: 800 24px Jakarta; letter-spacing: .22em; text-transform: uppercase; color: var(--ouro); }
+.palco-etq .n { width: 54px; height: 54px; border-radius: 14px; background: var(--ouro); color: var(--noite); display: grid; place-items: center; font: 800 30px Jakarta; letter-spacing: 0; }
+h2 { font-size: 100px; margin-top: 30px; }
+h2.menor { font-size: 88px; }
+.datas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.data { font: 700 25px Jakarta; letter-spacing: -.01em; padding: 12px 18px; border-radius: 12px; background: rgba(255,255,255,.06); border: 1.5px solid rgba(255,255,255,.14); }
+.data b { color: var(--ouro); font-weight: 800; }
+
+.setlist { margin-top: 34px; background: rgba(251,246,234,.97); color: #12181A; border-radius: 26px; padding: 34px 40px 30px; box-shadow: 0 40px 90px rgba(0,0,0,.55); transform: rotate(-1.2deg); position: relative; }
+.setlist::before { content: ''; position: absolute; top: -16px; left: 50%; width: 170px; height: 38px; transform: translateX(-50%) rotate(2deg); background: rgba(244,207,124,.85); box-shadow: 0 4px 10px rgba(0,0,0,.2); }
+.setlist h3 { font: 800 25px Jakarta; letter-spacing: .2em; text-transform: uppercase; color: var(--verde); display: flex; justify-content: space-between; }
+.setlist h3 small { font: 600 21px Inter; letter-spacing: 0; text-transform: none; color: #6B7775; }
+.faixa { display: grid; grid-template-columns: 54px 1fr 92px; align-items: center; gap: 14px; padding: 15px 0; border-bottom: 1.5px dashed rgba(18,24,26,.16); }
+.faixa:last-child { border-bottom: 0; padding-bottom: 4px; }
+.faixa .i { font: 800 30px Jakarta; color: var(--ouro2); }
+.faixa .t { font: 700 31px/1.15 Jakarta; letter-spacing: -.02em; }
+.faixa .barra { height: 10px; border-radius: 6px; background: rgba(20,101,94,.12); margin-top: 10px; overflow: hidden; }
+.faixa .barra i { display: block; height: 100%; border-radius: 6px; background: linear-gradient(90deg, var(--verde), #2a9a8e); }
+.faixa .p { font: 800 34px Jakarta; letter-spacing: -.03em; text-align: right; color: var(--verde); }
+.nota { font: 500 21px/1.35 Inter; color: #7F8E8B; margin-top: 16px; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+.chip { font: 700 25px Jakarta; letter-spacing: -.01em; padding: 13px 20px; border-radius: 999px; background: rgba(244,207,124,.1); border: 1.5px solid rgba(244,207,124,.55); color: #FFE9B8; }
+
+/* cartões dos R4 */
+.grade { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 34px; }
+.cartao { position: relative; border-radius: 24px; padding: 28px 28px 26px; background: linear-gradient(160deg, rgba(255,255,255,.09), rgba(255,255,255,.03)); border: 1.5px solid rgba(255,255,255,.14); box-shadow: 0 24px 60px rgba(0,0,0,.35); }
+.cartao .tag { font: 800 19px Jakarta; letter-spacing: .2em; text-transform: uppercase; color: var(--menta); }
+.cartao h4 { font: 800 44px/1 Jakarta; letter-spacing: -.035em; margin-top: 12px; }
+.cartao p { font: 500 24px/1.38 Inter; color: #C9D6D3; margin-top: 14px; }
+.cartao p b { color: #fff; }
+.cartao ol { list-style: none; margin-top: 16px; display: grid; gap: 9px; counter-reset: f; }
+.cartao li { counter-increment: f; font: 600 23px/1.25 Inter; color: #E6EEEC; display: flex; gap: 12px; }
+.cartao li::before { content: counter(f); flex: 0 0 34px; height: 34px; border-radius: 9px; background: var(--ouro); color: var(--noite); font: 800 20px Jakarta; display: grid; place-items: center; }
+.cartao.destaque { background: linear-gradient(160deg, rgba(244,207,124,.2), rgba(244,207,124,.05)); border-color: rgba(244,207,124,.6); }
+.cartao.destaque .tag { color: var(--ouro); }
+
+/* bastidores: questão */
+.questao { margin-top: 32px; background: #fff; color: #12181A; border-radius: 26px; padding: 34px 38px 30px; transform: rotate(1.6deg); box-shadow: 0 40px 90px rgba(0,0,0,.55); }
+.questao .orig { display: flex; justify-content: space-between; font: 800 21px Jakarta; letter-spacing: .16em; text-transform: uppercase; color: var(--verde); }
+.questao .orig span { color: #7F8E8B; letter-spacing: .08em; }
+.questao .enun { font: 700 33px/1.3 Jakarta; letter-spacing: -.02em; margin-top: 16px; }
+.alts { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 22px; }
+.alt { display: flex; align-items: center; gap: 14px; font: 600 27px Inter; padding: 14px 16px; border-radius: 14px; background: #F1F4F3; color: #8B9795; }
+.alt .l { flex: 0 0 42px; height: 42px; border-radius: 11px; display: grid; place-items: center; font: 800 23px Jakarta; background: #DDE4E2; color: #6B7775; }
+.alt.x { text-decoration: line-through; text-decoration-color: rgba(179,66,58,.6); text-decoration-thickness: 3px; }
+.alt.ok { background: #E3F2EA; color: #12181A; font-weight: 700; box-shadow: 0 0 0 3px var(--acerto) inset; }
+.alt.ok .l { background: var(--acerto); color: #fff; }
+.coment { margin-top: 22px; border-top: 1.5px dashed rgba(18,24,26,.18); padding-top: 18px; font: 500 25px/1.42 Inter; color: #34403E; }
+.coment b { color: #12181A; }
+.coment mark { background: linear-gradient(transparent 55%, rgba(244,207,124,.75) 55%); color: inherit; padding: 0 2px; }
+.funcoes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 40px; }
+.funcao { border-radius: 18px; padding: 20px 20px 18px; background: rgba(255,255,255,.06); border: 1.5px solid rgba(255,255,255,.12); }
+.funcao b { display: block; font: 800 27px/1.1 Jakarta; letter-spacing: -.02em; color: #fff; }
+.funcao span { display: block; font: 500 21px/1.35 Inter; color: var(--cinza); margin-top: 8px; }
+
+/* ingresso */
+.ingresso { position: relative; margin-top: 40px; display: grid; grid-template-columns: 1fr 250px; border-radius: 30px; background: var(--creme); color: #12181A; box-shadow: 0 50px 110px rgba(0,0,0,.6); transform: rotate(-2.2deg);
+  -webkit-mask: radial-gradient(circle 26px at calc(100% - 250px) 0, transparent 98%, #000) top / 100% 51% no-repeat, radial-gradient(circle 26px at calc(100% - 250px) 100%, transparent 98%, #000) bottom / 100% 51% no-repeat; }
+.ingresso .corpo { padding: 40px 40px 36px 44px; }
+.ingresso .corpo .t1 { font: 800 21px Jakarta; letter-spacing: .24em; text-transform: uppercase; color: var(--verde); }
+.ingresso .corpo h3 { font: 800 62px/1 Jakarta; letter-spacing: -.045em; margin-top: 12px; }
+.ingresso .corpo h3 em { color: var(--ouro2); }
+.ingresso dl { display: grid; grid-template-columns: auto 1fr; gap: 12px 20px; margin-top: 26px; font: 500 24px/1.32 Inter; }
+.ingresso dt { font: 800 19px Jakarta; letter-spacing: .16em; text-transform: uppercase; color: #6B7775; padding-top: 4px; }
+.ingresso dd b { font-weight: 700; }
+.ingresso .canhoto { border-left: 4px dotted rgba(18,24,26,.25); background: var(--ouro); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 20px; }
+.ingresso .canhoto strong { font: 800 120px/.9 Jakarta; letter-spacing: -.06em; }
+.ingresso .canhoto span { font: 800 22px/1.2 Jakarta; letter-spacing: .2em; text-transform: uppercase; }
+.ingresso .canhoto small { display: block; font: 600 18px/1.3 Inter; letter-spacing: 0; text-transform: none; margin-top: 10px; color: #3B2F12; }
+.codigo { margin-top: 24px; height: 46px; background: repeating-linear-gradient(90deg, #12181A 0 3px, transparent 3px 7px, #12181A 7px 8px, transparent 8px 12px, #12181A 12px 17px, transparent 17px 20px); opacity: .8; border-radius: 3px; }
+.botao { display: inline-flex; align-items: center; gap: 16px; margin-top: 46px; font: 800 38px Jakarta; letter-spacing: -.02em; color: var(--noite); background: var(--ouro); padding: 24px 36px; border-radius: 20px; box-shadow: 0 20px 50px rgba(244,207,124,.35); }
+.botao svg { width: 34px; height: 34px; }
+
+/* story */
+.story .headliners { font-size: 168px; }
+.story .gancho { font-size: 116px; margin-top: 30px; }
+.story .tier2 { font-size: 84px; }
+.story .tier3 { font-size: 56px; }
+.story .tier4 { font-size: 28px; }
+</style></head>
+<body>
+
+<template id="simbolo"><svg viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#14655E"/><g fill="#FFFFFF" opacity=".55"><path transform="translate(13 9.5)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(11 21.2)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(13 44.6)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g><path fill="#F4CF7C" transform="translate(11 32.9)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></svg></template>
+
+<!-- 1. CAPA: o cartaz -->
+<section id="f1" data-palco data-plateia="230">
+  <div class="conteudo">
+    <div class="topo"><div class="marca" data-marca><b>Orto</b><span>Questões</span></div><div class="pilula">Line-up 2027</div></div>
+    <div class="cartaz">
+      <h1 class="gancho">A prova está<br><em>chegando.</em></h1>
+      <div class="olho chamada-lineup">No palco do seu treino</div>
+      <div class="headliners"><span class="ouro">TEOT</span><i class="estrela"></i><span class="ouro">TARO</span></div>
+      <div class="tier2">CIRURGIA DA MÃO</div>
+      <div class="mais">com cirurgia plástica</div>
+      <div class="tier3">FELLOWSHIP QUADRIL<i class="estrela"></i>ENARE R4<br>OMBRO E COTOVELO<i class="estrela"></i>R4 COLUNA</div>
+      <div class="tier4">e as provas de mão de <b>INTO, PUC-SP, UFG, IAUPE, FMRP-USP e UERJ</b></div>
+    </div>
+  </div>
+  <div class="capa-base">
+    <div class="contagem"><div class="num"><strong data-faltam>96</strong><span>dias</span></div>
+      <div class="txt"><b>para a prova teórica do TEOT.</b><span>Provas oficiais comentadas, alternativa por alternativa. Arraste e veja o line-up.</span></div></div>
+  </div>
+</section>
+
+<!-- 2. PALCO PRINCIPAL -->
+<section id="f2" data-palco data-plateia="150">
+  <div class="conteudo">
+    <div class="topo"><div class="palco-etq"><span class="n">1</span>Palco principal</div><div class="marca" data-marca><b>Orto</b><span>Questões</span></div></div>
+    <h2><span class="ouro">TEOT</span> e <span class="ouro">TARO,</span><br>edição por edição.</h2>
+    <div class="datas"><div class="data">TARO <b>2006 a 2026</b>, todos os anos</div><div class="data">TEOT <b>2021 a 2025</b></div><div class="data">por tema e subtema</div></div>
+    <div class="setlist">
+      <h3>Setlist <small>o que mais cai no TEOT e no TARO</small></h3>
+      <div class="faixa"><span class="i">01</span><div><div class="t">Trauma adulto</div><div class="barra"><i style="width:100%"></i></div></div><span class="p">20%</span></div>
+      <div class="faixa"><span class="i">02</span><div><div class="t">Ortopedia pediátrica</div><div class="barra"><i style="width:89%"></i></div></div><span class="p">18%</span></div>
+      <div class="faixa"><span class="i">03</span><div><div class="t">Mão e punho</div><div class="barra"><i style="width:66%"></i></div></div><span class="p">13%</span></div>
+      <div class="faixa"><span class="i">04</span><div><div class="t">Ombro e cotovelo</div><div class="barra"><i style="width:42%"></i></div></div><span class="p">8%</span></div>
+      <div class="faixa"><span class="i">05</span><div><div class="t">Pé e tornozelo</div><div class="barra"><i style="width:39%"></i></div></div><span class="p">8%</span></div>
+      <p class="nota">Percentual das questões de TEOT e TARO do acervo em cada tema. O Cronograma usa essa conta para decidir o que você estuda primeiro.</p>
+    </div>
+  </div>
+  <div class="rodape"><span>Os <b>temas que mais caem</b>, prova a prova</span><span><b>arraste</b></span></div>
+</section>
+
+<!-- 3. PALCO DA MÃO -->
+<section id="f3" data-palco data-plateia="0">
+  <div class="conteudo">
+    <div class="topo"><div class="palco-etq"><span class="n">2</span>Palco da mão</div><div class="marca" data-marca><b>Orto</b><span>Questões</span></div></div>
+    <h2 class="menor">Cirurgia da mão.<br><em>E a plástica junto.</em></h2>
+    <div class="datas"><div class="data">INTO <b>2023 e 2026</b></div><div class="data">PUC-SP <b>2019 a 2023</b></div><div class="data">UFG <b>2017 e 2019 a 2021</b></div><div class="data">IAUPE <b>2025</b></div><div class="data">FMRP-USP <b>2026</b></div><div class="data">UERJ <b>2023 a 2025</b></div></div>
+    <div class="setlist">
+      <h3>Setlist <small>o que mais cai nas provas da mão</small></h3>
+      <div class="faixa"><span class="i">01</span><div><div class="t">Anatomia da mão e punho</div><div class="barra"><i style="width:100%"></i></div></div><span class="p">18%</span></div>
+      <div class="faixa"><span class="i">02</span><div><div class="t">Fraturas dos metacarpos e falanges</div><div class="barra"><i style="width:60%"></i></div></div><span class="p">11%</span></div>
+      <div class="faixa"><span class="i">03</span><div><div class="t">Tendões flexores</div><div class="barra"><i style="width:43%"></i></div></div><span class="p">8%</span></div>
+      <div class="faixa"><span class="i">04</span><div><div class="t">Tendões extensores</div><div class="barra"><i style="width:43%"></i></div></div><span class="p">8%</span></div>
+      <div class="faixa"><span class="i">05</span><div><div class="t">Retalhos e cobertura cutânea</div><div class="barra"><i style="width:40%"></i></div></div><span class="p">7%</span></div>
+    </div>
+    <div class="olho" style="margin-top:34px">Na parte da plástica</div>
+    <div class="chips"><span class="chip">Retalhos</span><span class="chip">Microcirurgia</span><span class="chip">Enxertos de pele</span><span class="chip">Cicatrização</span><span class="chip">Queimaduras</span></div>
+  </div>
+</section>
+
+<!-- 4. PALCO R4 E FELLOWSHIP -->
+<section id="f4" data-palco data-plateia="120">
+  <div class="conteudo">
+    <div class="topo"><div class="palco-etq"><span class="n">3</span>Palco R4 e fellowship</div><div class="marca" data-marca><b>Orto</b><span>Questões</span></div></div>
+    <h2 class="menor">Depois do R3,<br><em>a próxima prova.</em></h2>
+    <div class="grade">
+      <div class="cartao destaque"><div class="tag">Fellowship</div><h4>Quadril</h4><p><b>Simulados autorais</b> no padrão da prova. Mais cobrados:</p>
+        <ol><li>Artroplastia: componentes e fixação</li><li>Vias de acesso</li><li>Imagem do quadril</li></ol></div>
+      <div class="cartao"><div class="tag">TECOC</div><h4>Ombro e cotovelo</h4><p>Mais cobrados:</p>
+        <ol><li>Cabeça do rádio e instabilidade do cotovelo</li><li>Manguito rotador</li><li>Artroplastia do ombro</li></ol></div>
+      <div class="cartao"><div class="tag">R4 Ortopedia</div><h4>ENARE R4</h4><p><b>2024 e 2025.</b> Mais cobrados:</p>
+        <ol><li>Ortopedia pediátrica</li><li>Trauma adulto</li><li>Quadril</li></ol></div>
+      <div class="cartao"><div class="tag">R4 Coluna</div><h4>Coluna</h4><p><b>SES-DF</b> 2022 e 2024 e <b>Joinville</b>. Mais cobrados:</p>
+        <ol><li>Anatomia da coluna</li><li>Imagem da coluna</li><li>Lesão medular</li></ol></div>
+    </div>
+  </div>
+  <div class="rodape"><span>Você escolhe <b>quais provas entram</b> no treino</span><span><b>arraste</b></span></div>
+</section>
+
+<!-- 5. BASTIDORES -->
+<section id="f5" data-palco data-plateia="0">
+  <div class="conteudo">
+    <div class="topo"><div class="palco-etq"><span class="n">4</span>Bastidores</div><div class="marca" data-marca><b>Orto</b><span>Questões</span></div></div>
+    <h2 class="menor">Cada questão<br>é <em>uma aula.</em></h2>
+    <div class="questao">
+      <div class="orig">TARO 2020 <span>Trauma</span></div>
+      <div class="enun">Na síndrome compartimental da criança, o sintoma mais relevante para o diagnóstico é a:</div>
+      <div class="alts"><div class="alt x"><span class="l">A</span>dor</div><div class="alt ok"><span class="l">B</span>agitação</div><div class="alt x"><span class="l">C</span>parestesia</div><div class="alt x"><span class="l">D</span>ausência de pulso</div></div>
+      <div class="coment"><b>Por que não a dor?</b> A criança não descreve a dor de forma confiável. Na criança valem os <mark>três A: ansiedade, agitação e aumento da necessidade de analgésico</mark>. Parestesia e ausência de pulso são sinais tardios.</div>
+    </div>
+    <div class="funcoes">
+      <div class="funcao"><b>Cada alternativa</b><span>a certa e cada errada, com o porquê</span></div>
+      <div class="funcao"><b>Revisão</b><span>o que você erra volta no dia certo</span></div>
+      <div class="funcao"><b>Cronograma</b><span>o estudo montado até a prova</span></div>
+      <div class="funcao"><b>Desempenho</b><span>por tema, onde gastar o tempo</span></div>
+      <div class="funcao"><b>Caderno de erros</b><span>os seus erros num lugar só</span></div>
+      <div class="funcao"><b>Ranking</b><span>da semana e da sua residência</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. INGRESSO -->
+<section id="f6" data-palco data-plateia="240">
+  <div class="conteudo">
+    <div class="topo"><div class="palco-etq"><span class="n">5</span>Seu ingresso</div><div class="marca" data-marca><b>Orto</b><span>Questões</span></div></div>
+    <h2>O show é<br><em>em janeiro.</em></h2>
+    <p class="sub" style="margin-top:26px">O ensaio <b>começa hoje</b>. Quem treina todo dia chega à prova conhecendo o repertório da banca.</p>
+    <div class="ingresso">
+      <div class="corpo">
+        <div class="t1">Line-up 2027 · Orto Questões</div>
+        <h3>Acesso ao<br><em>treino.</em></h3>
+        <dl>
+          <dt>Entrada</dt><dd><b>Conta grátis</b>, com questões liberadas todos os dias</dd>
+          <dt>Sem limite</dt><dd>Nos planos, com <b>7 dias de garantia</b></dd>
+          <dt>Onde</dt><dd><b>ortoquestoes.com.br</b>, no celular ou no computador</dd>
+        </dl>
+        <div class="codigo"></div>
+      </div>
+      <div class="canhoto"><strong data-faltam>96</strong><span>dias<small>até a prova teórica do TEOT, 10/01/2027</small></span></div>
+    </div>
+    <div style="text-align:center"><div class="botao">Link na bio<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div>
+  </div>
+</section>
+
+<!-- STORY 1: o cartaz em pé (topo e base livres para o selo do anúncio e a figurinha) -->
+<section id="s1" class="story" data-palco data-plateia="420">
+  <div class="conteudo">
+    <div class="topo"><div class="marca" data-marca><b>Orto</b><span>Questões</span></div><div class="pilula">Line-up 2027</div></div>
+    <div class="cartaz">
+      <h1 class="gancho">A prova está<br><em>chegando.</em></h1>
+      <div class="olho chamada-lineup" style="margin-top:46px">No palco do seu treino</div>
+      <div class="headliners" style="margin-top:26px"><span class="ouro">TEOT</span><i class="estrela"></i><span class="ouro">TARO</span></div>
+      <div class="tier2" style="margin-top:44px">CIRURGIA DA MÃO</div>
+      <div class="mais">com cirurgia plástica</div>
+      <div class="tier3" style="margin-top:40px">FELLOWSHIP QUADRIL<br>ENARE R4<i class="estrela"></i>R4 COLUNA<br>OMBRO E COTOVELO</div>
+      <div class="tier4">e as provas de mão de<br><b>INTO, PUC-SP, UFG, IAUPE, FMRP-USP e UERJ</b></div>
+      <div class="contagem" style="margin-top:56px"><div class="num"><strong data-faltam>96</strong><span>dias</span></div>
+        <div class="txt"><b>para a prova teórica do TEOT.</b><span>Provas oficiais comentadas, alternativa por alternativa.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- STORY 2: os palcos e o ingresso -->
+<section id="s2" class="story" data-palco data-plateia="380">
+  <div class="conteudo">
+    <div class="topo"><div class="marca" data-marca><b>Orto</b><span>Questões</span></div><div class="pilula">Line-up 2027</div></div>
+    <h2 style="font-size:104px;margin-top:44px">Três palcos.<br><em>Um treino.</em></h2>
+    <div class="grade" style="grid-template-columns:1fr;gap:18px;margin-top:40px">
+      <div class="cartao destaque"><div class="tag">Palco principal</div><h4>TEOT e TARO</h4><p>TARO de <b>2006 a 2026</b>, todos os anos, e TEOT de <b>2021 a 2025</b>. No topo: <b>trauma adulto</b>, <b>pediatria</b> e <b>mão</b>.</p></div>
+      <div class="cartao"><div class="tag">Palco da mão</div><h4>Cirurgia da mão e plástica</h4><p>INTO, PUC-SP, UFG, IAUPE, FMRP-USP e UERJ. <b>Retalhos, microcirurgia, enxertos e queimaduras</b> junto.</p></div>
+      <div class="cartao"><div class="tag">Palco R4 e fellowship</div><h4>Quadril, ombro, ENARE, coluna</h4><p><b>Fellowship Quadril</b> em simulados autorais, <b>TECOC</b>, <b>ENARE R4</b> e <b>R4&nbsp;Coluna</b>.</p></div>
+    </div>
+    <div class="contagem" style="margin-top:34px"><div class="num"><strong data-faltam>96</strong><span>dias</span></div>
+      <div class="txt"><b>Conta grátis, com questões todos os dias.</b><span>Sem limite nos planos. ortoquestoes.com.br</span></div></div>
+  </div>
+</section>
+
+<script>
+// títulos: o ponto e a vírgula da Jakarta ficam soltos com o espaçamento negativo
+document.querySelectorAll('h1, h2, .tier2').forEach(h => {
+  const w = document.createTreeWalker(h, NodeFilter.SHOW_TEXT), nos = []
+  while (w.nextNode()) nos.push(w.currentNode)
+  nos.forEach(n => { if (/[.,]/.test(n.data)) { const t = document.createElement('span'); t.innerHTML = n.data.replace(/([.,])/g, '<span class="pt">$1</span>'); n.replaceWith(...t.childNodes) } })
+})
+// contagem até a prova teórica do TEOT (10/01/2027)
+const hoje = new Date(); hoje.setHours(0, 0, 0, 0)
+const faltam = Math.round((new Date(2027, 0, 10) - hoje) / 864e5)
+document.querySelectorAll('[data-faltam]').forEach(e => { e.textContent = faltam })
+document.querySelectorAll('[data-marca]').forEach(e => e.prepend(document.getElementById('simbolo').content.cloneNode(true)))
+
+// aleatório com semente, para as imagens saírem iguais a cada geração
+let semente = 7
+const sorte = () => (semente = (semente * 16807) % 2147483647) / 2147483647
+
+document.querySelectorAll('[data-palco]').forEach((sec, k) => {
+  const largura = 1080, altura = sec.offsetHeight
+  // estrelas
+  const est = document.createElement('div'); est.className = 'estrelas'
+  for (let i = 0; i < 70; i++) {
+    const s = document.createElement('i'), r = sorte() * 2.6 + .8
+    s.style.cssText = `left:${sorte() * 100}%;top:${sorte() * 70}%;width:${r}px;height:${r}px;opacity:${.15 + sorte() * .5}`
+    est.appendChild(s)
+  }
+  sec.prepend(est)
+  // feixes de luz
+  ;[[-30, 120, -24], [880, 840, 26], [440, 470, -5]].forEach(([x, _, ang], j) => {
+    const f = document.createElement('div'); f.className = 'feixe'
+    f.style.left = x + 'px'; f.style.transform = `rotate(${ang}deg)`; f.style.opacity = j === 2 ? .45 : 1
+    sec.prepend(f)
+  })
+  // plateia: cabeças e braços erguidos em silhueta
+  const h = +sec.dataset.plateia
+  if (!h) return
+  const ns = 'http://www.w3.org/2000/svg'
+  const pl = document.createElement('div'); pl.className = 'plateia'; pl.style.height = h + 'px'
+  const svg = document.createElementNS(ns, 'svg'); svg.setAttribute('viewBox', `0 0 ${largura} ${h}`); svg.setAttribute('preserveAspectRatio', 'none')
+  const fileira = (y0, cor, n, escala) => {
+    const g = document.createElementNS(ns, 'g'); g.setAttribute('fill', cor)
+    for (let i = 0; i < n; i++) {
+      const x = (i + sorte() * .8) * (largura / (n - 1)), y = y0 + sorte() * 18
+      const c = document.createElementNS(ns, 'circle'); c.setAttribute('cx', x); c.setAttribute('cy', y); c.setAttribute('r', 22 * escala); g.appendChild(c)
+      const corpo = document.createElementNS(ns, 'rect'); corpo.setAttribute('x', x - 34 * escala); corpo.setAttribute('y', y + 14 * escala); corpo.setAttribute('width', 68 * escala); corpo.setAttribute('height', h); corpo.setAttribute('rx', 26 * escala); g.appendChild(corpo)
+      if (sorte() < .42) {
+        const lado = sorte() < .5 ? -1 : 1, ang = lado * (8 + sorte() * 22)
+        const braco = document.createElementNS(ns, 'rect')
+        braco.setAttribute('x', x + lado * 26 * escala - 7 * escala); braco.setAttribute('y', y - 70 * escala); braco.setAttribute('width', 14 * escala); braco.setAttribute('height', 100 * escala); braco.setAttribute('rx', 7 * escala)
+        braco.setAttribute('transform', `rotate(${ang} ${x + lado * 26 * escala} ${y + 20 * escala})`)
+        g.appendChild(braco)
+        if (sorte() < .3) { // celular aceso
+          const luz = document.createElementNS(ns, 'rect'); const lx = x + lado * 26 * escala - 9 * escala; luz.style.filter = 'drop-shadow(0 0 8px rgba(244,207,124,.9))'
+          luz.setAttribute('x', lx + 3 * escala); luz.setAttribute('y', y - 84 * escala); luz.setAttribute('width', 12 * escala); luz.setAttribute('height', 19 * escala); luz.setAttribute('rx', 3)
+          luz.setAttribute('fill', '#F4CF7C'); luz.setAttribute('opacity', '.9'); luz.setAttribute('transform', `rotate(${ang} ${x + lado * 26 * escala} ${y + 20 * escala})`)
+          g.appendChild(luz)
+        }
+      }
+    }
+    svg.appendChild(g)
+  }
+  fileira(h * .38, '#0B201D', 16, 1.1)
+  fileira(h * .58, '#06130F', 13, 1.35)
+  fileira(h * .80, '#020807', 10, 1.6)
+  pl.appendChild(svg); sec.appendChild(pl)
+})
+</script>
+</body></html>
