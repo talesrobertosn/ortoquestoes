@@ -149,7 +149,7 @@ export function AdminPerfis({ usuarios }: { usuarios: LinhaUsuario[] }) {
       <div className="adm-tabela-rolagem" role="region" aria-label="Serviços" tabIndex={0}><table className="tabela adm-retencao">
         <thead><tr><th scope="col">Serviço</th><th scope="col">Contas</th><th scope="col">Ativos 7 d</th><th scope="col">Questões/conta</th><th scope="col">Acerto real</th><th scope="col">Após revisão</th><th scope="col">Assinantes</th></tr></thead>
         <tbody>{d.servicos.slice(0, 15).map(s => <tr key={s.rotulo}>
-          <th scope="row" className="adm-servico">{d.nomeServico.get(s.rotulo)}{(() => { const outras = [...(d.escritas.get(s.rotulo) ?? [])].filter(e => e !== d.nomeServico.get(s.rotulo)); return outras.length > 0 && <small className="adm-servico__escrito">escrito como {outras.join(', ')}</small> })()}</th><td className="numerico">{s.contas}</td><td className="numerico">{s.ativos7d}</td>
+          <th scope="row" className="adm-servico" title={`Escrito como: ${[...(d.escritas.get(s.rotulo) ?? [])].join(', ')}`}>{d.nomeServico.get(s.rotulo)}</th><td className="numerico">{s.contas}</td><td className="numerico">{s.ativos7d}</td>
           <td className="numerico">{media(s.respondidas, s.contas)}</td><td className="numerico">{acertoReal(s) ?? '—'}{acertoReal(s) !== null ? '%' : ''}</td><td className="numerico">{acertoAposRevisao(s) ?? '—'}{acertoAposRevisao(s) !== null ? '%' : ''}</td><td className="numerico">{s.assinantes}</td>
         </tr>)}</tbody>
       </table></div>
