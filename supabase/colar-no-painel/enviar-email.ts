@@ -924,7 +924,7 @@ Deno.serve(async (req) => {
           campanha,
           nome: dados?.nome ?? null,
           respondidas: Number(dados?.respondidas ?? 0),
-          diasFora: campanha === "sete_dias" ? 9 : 3,
+          diasFora: Number(corpo.dias_fora ?? (campanha === "sete_dias" ? 9 : 3)),
           diasRestantes: Number(corpo.dias_restantes ?? (hoje ? 0 : 3)),
           fimEm: corpo.fim_periodo ?? new Date(Date.now() + (hoje ? 0 : 3) * 864e5).toISOString(),
           plano: corpo.plano ?? "semestral",

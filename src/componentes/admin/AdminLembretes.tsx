@@ -6,9 +6,13 @@ import { erroDoPainel } from './formatos'
 const MIGRACAO = '202610040100_emails_lembretes.sql'
 
 type Campanha = 'nunca' | 'tres_dias' | 'sete_dias' | 'renovacao_pix' | 'renovacao_pix_hoje'
-interface PessoaPix { id_usuario: string; nome: string | null; email: string; plano: string; fim_periodo: string; dias_restantes: number; respondidas: number; acertos: number }
-const MIGRACAO_PIX = '202610060200_renovacao_pix_dia.sql'
-const ETAPA: Partial<Record<Campanha, 'tres_dias' | 'hoje'>> = { renovacao_pix: 'tres_dias', renovacao_pix_hoje: 'hoje' }
+/** Quem está na campanha agora, com o histórico de lembretes da pessoa (migração 202610060300). */
+interface Pessoa {
+  id_usuario: string; nome: string | null; email: string; respondidas: number; acertos: number
+  dias_fora: number | null; dias_restantes: number | null; plano: string | null; fim_periodo: string | null
+  ultimo_lembrete_em: string | null; ultimo_lembrete_assunto: string | null; lembretes_30d: number; liberado: boolean
+}
+const MIGRACAO_LISTA = '202610060300_lembretes_sem_spam.sql'
 interface Resumo { campanha: Campanha; pessoas: number; enviados_7d: number; enviados_total: number; falharam_7d: number }
 
 const CAMPANHAS: Array<{ id: Campanha; titulo: string; para: string; arte: string }> = [
@@ -30,29 +34,33 @@ export function AdminLembretes() {
   const [enviando, definirEnviando] = useState<{ campanha: Campanha; texto: string } | null>(null)
   const [previa, definirPrevia] = useState<{ campanha: Campanha; html: string; para?: string | null } | null>(null)
   const [mensagem, definirMensagem] = useState('')
-  const [pessoasPix, definirPessoasPix] = useState<Partial<Record<Campanha, PessoaPix[] | string>>>({})
+  const [listas, definirListas] = useState<Partial<Record<Campanha, Pessoa[] | string>>>({})
 
   const carregar = useCallback(async () => {
     try { definirResumo(await chamarRpc<Resumo[]>('resumo_lembretes_admin', {})); definirErro('') }
     catch (f) { definirErro(erroDoPainel(f, MIGRACAO)) }
-    // Quem recebe cada lembrete do Pix, com os números de cada um.
-    const listas: Partial<Record<Campanha, PessoaPix[] | string>> = {}
-    for (const [campanha, etapa] of Object.entries(ETAPA) as Array<[Campanha, string]>) {
-      try { listas[campanha] = await chamarRpc<PessoaPix[]>('listar_renovacao_pix_admin', { p_etapa: etapa }) }
-      catch (f) { listas[campanha] = erroDoPainel(f, MIGRACAO_PIX) }
-    }
-    definirPessoasPix(listas)
+    // Quem está em cada campanha, pelo nome, com o último lembrete que cada pessoa recebeu.
+    const novas: Partial<Record<Campanha, Pessoa[] | string>> = {}
+    await Promise.all(CAMPANHAS.map(async (c) => {
+      try { novas[c.id] = await chamarRpc<Pessoa[]>('listar_destinatarios_lembrete_admin', { p_campanha: c.id }) }
+      catch (f) { novas[c.id] = erroDoPainel(f, MIGRACAO_LISTA) }
+    }))
+    definirListas(novas)
   }, [])
   useEffect(() => { void carregar() }, [carregar])
 
-  async function verPrevia(campanha: Campanha, pessoa?: PessoaPix) {
-    const extra = pessoa ? { id_usuario: pessoa.id_usuario, dias_restantes: pessoa.dias_restantes, fim_periodo: pessoa.fim_periodo, plano: pessoa.plano } : {}
+  async function verPrevia(campanha: Campanha, pessoa?: Pessoa) {
+    const extra = pessoa ? { id_usuario: pessoa.id_usuario, dias_fora: pessoa.dias_fora ?? undefined, dias_restantes: pessoa.dias_restantes ?? undefined, fim_periodo: pessoa.fim_periodo ?? undefined, plano: pessoa.plano ?? undefined } : {}
     try { const r = await chamarFuncao<{ html: string }>('enviar-email', { acao: 'previa_lembrete', campanha, ...extra }); definirPrevia({ campanha, html: r.html, para: pessoa ? (pessoa.nome ?? pessoa.email) : null }) }
     catch (f) { definirMensagem(`Prévia: ${String(f).replace(/^Error: /, '')}`) }
   }
 
   async function enviar(c: (typeof CAMPANHAS)[number], pessoas: number) {
-    if (!pessoas || !window.confirm(`Enviar "${c.titulo}" para ${pessoas} ${pessoas === 1 ? 'pessoa' : 'pessoas'}?`)) return
+    // A confirmação diz quem vai receber, pelo nome, para não disparar no escuro.
+    const lista = listas[c.id]
+    const nomes = Array.isArray(lista) ? lista.filter((p) => p.liberado).map((p) => p.nome ?? p.email) : []
+    const quem = nomes.length ? `\n\n${nomes.slice(0, 15).join('\n')}${nomes.length > 15 ? `\n… e mais ${nomes.length - 15}` : ''}` : ''
+    if (!pessoas || !window.confirm(`Enviar "${c.titulo}" para ${pessoas} ${pessoas === 1 ? 'pessoa' : 'pessoas'}?${quem}`)) return
     let total = 0, falhas = 0
     try {
       // Lotes de até 40 (limite de tempo da Function); para quando um lote não envia nada.
@@ -71,7 +79,7 @@ export function AdminLembretes() {
 
   return (
     <section className="empilha adm-secao" aria-labelledby="adm-titulo-lembretes">
-      <div><h2 id="adm-titulo-lembretes">Lembretes por e-mail</h2><p>Um botão por campanha. O número mostra quem recebe agora; quem já recebeu nesta ausência ou desligou os lembretes fica de fora.</p></div>
+      <div><h2 id="adm-titulo-lembretes">Lembretes por e-mail</h2><p>Um botão por campanha, com a lista de quem recebe pelo nome e o último lembrete de cada pessoa. Para não virar spam, ninguém recebe dois lembretes em menos de 2 dias (só o "Pix: termina hoje" passa, por ser o último aviso). Quem já recebeu nesta ausência ou desligou os lembretes fica de fora.</p></div>
       {mensagem && <p role="status" className="adm-nota adm-mensagem">{mensagem}</p>}
       <div className="adm-lembretes">
         {CAMPANHAS.map((c) => {
@@ -84,7 +92,7 @@ export function AdminLembretes() {
                 <h3>{c.titulo}</h3>
                 <p>{c.para}</p>
                 <p className="adm-nota">{!resumo ? 'Contando…' : <><strong>{pessoas}</strong> {pessoas === 1 ? 'pessoa recebe' : 'pessoas recebem'} agora · {Number(r?.enviados_7d ?? 0)} enviados nos últimos 7 dias · {Number(r?.enviados_total ?? 0)} no total{r?.falharam_7d ? ` · ${r.falharam_7d} com falha` : ''}</>}</p>
-                {ETAPA[c.id] && <ListaPix lista={pessoasPix[c.id]} aoVerPrevia={(p) => void verPrevia(c.id, p)} />}
+                <ListaPessoas lista={listas[c.id]} pix={c.id === 'renovacao_pix' || c.id === 'renovacao_pix_hoje'} aoVerPrevia={(p) => void verPrevia(c.id, p)} />
               </div>
               <div className="adm-lembrete__acoes">
                 <button type="button" className="botao" onClick={() => void verPrevia(c.id)}>Ver prévia</button>
@@ -96,7 +104,7 @@ export function AdminLembretes() {
           )
         })}
       </div>
-      {previa && <div className="adm-previa">{previa.para && <p className="adm-nota">Prévia do e-mail de <strong>{previa.para}</strong>, com os números dela.</p>}<iframe title="Prévia do lembrete" srcDoc={previa.html} sandbox="" /><button type="button" className="adm-link" onClick={() => definirPrevia(null)}>Fechar prévia</button></div>}
+      {previa && <div className="adm-previa">{previa.para && <p className="adm-nota">Prévia do e-mail de <strong>{previa.para}</strong>, com os números dessa pessoa.</p>}<iframe title="Prévia do lembrete" srcDoc={previa.html} sandbox="" /><button type="button" className="adm-link" onClick={() => definirPrevia(null)}>Fechar prévia</button></div>}
     </section>
   )
 }
@@ -104,20 +112,42 @@ export function AdminLembretes() {
 const DATA = (iso: string) => new Date(iso).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', timeZone: 'America/Sao_Paulo' })
 const PLANO: Record<string, string> = { mensal: 'Mensal', semestral: 'Semestral', anual: 'Anual' }
 
-/** Quem recebe o lembrete do Pix agora: plano, data do fim e desempenho, com a prévia de cada um. */
-function ListaPix({ lista, aoVerPrevia }: { lista: PessoaPix[] | string | undefined; aoVerPrevia: (p: PessoaPix) => void }) {
+/** "há 3 h", "ontem", "há 5 dias". */
+function haQuanto(iso: string) {
+  const horas = (Date.now() - new Date(iso).getTime()) / 3_600_000
+  if (horas < 1) return 'há menos de 1 h'
+  if (horas < 24) return `há ${Math.floor(horas)} h`
+  const dias = Math.floor(horas / 24)
+  return dias === 1 ? 'ontem' : `há ${dias} dias`
+}
+
+/**
+ * Quem está na campanha agora, pelo nome: situação (dias fora ou fim do Pix),
+ * questões, acerto e o último lembrete recebido. Quem recebeu um lembrete há
+ * menos de 2 dias aparece como "aguardando" e fica fora do envio.
+ */
+function ListaPessoas({ lista, pix, aoVerPrevia }: { lista: Pessoa[] | string | undefined; pix: boolean; aoVerPrevia: (p: Pessoa) => void }) {
   if (lista === undefined) return null
   if (typeof lista === 'string') return <p className="adm-nota" role="alert">{lista}</p>
   if (!lista.length) return null
-  return <div className="adm-tabela-rolagem" role="region" aria-label="Quem recebe agora" tabIndex={0}><table className="tabela adm-pix-lista">
-    <thead><tr><th scope="col">Pessoa</th><th scope="col">Plano</th><th scope="col">Termina</th><th scope="col">Questões</th><th scope="col">Acerto</th><th scope="col"><span className="so-leitor">Prévia</span></th></tr></thead>
-    <tbody>{lista.map((p) => <tr key={p.id_usuario}>
-      <th scope="row">{p.nome ?? p.email}<small>{p.nome ? p.email : ''}</small></th>
-      <td>{PLANO[p.plano] ?? p.plano}</td>
-      <td className="numerico">{DATA(p.fim_periodo)}<small>{p.dias_restantes === 0 ? 'hoje' : p.dias_restantes === 1 ? 'amanhã' : `em ${p.dias_restantes} dias`}</small></td>
-      <td className="numerico">{Number(p.respondidas).toLocaleString('pt-BR')}</td>
-      <td className="numerico">{Number(p.respondidas) ? `${Math.round(100 * Number(p.acertos) / Number(p.respondidas))}%` : '-'}</td>
-      <td><button type="button" className="adm-link" onClick={() => aoVerPrevia(p)}>Prévia</button></td>
-    </tr>)}</tbody>
-  </table></div>
+  const aguardando = lista.filter((p) => !p.liberado).length
+  return <details className="adm-pix-detalhes" open={lista.length <= 8}>
+    <summary>Ver quem recebe ({lista.length - aguardando}{aguardando ? ` · ${aguardando} aguardando o intervalo` : ''})</summary>
+    <div className="adm-tabela-rolagem" role="region" aria-label="Quem recebe agora" tabIndex={0}><table className="tabela adm-pix-lista">
+      <thead><tr><th scope="col">Pessoa</th><th scope="col">{pix ? 'Termina' : 'Situação'}</th><th scope="col">Questões</th><th scope="col">Acerto</th><th scope="col">Último lembrete</th><th scope="col"><span className="so-leitor">Prévia</span></th></tr></thead>
+      <tbody>{lista.map((p) => <tr key={p.id_usuario} className={p.liberado ? undefined : 'adm-pix-lista__aguardando'}>
+        <th scope="row">{p.nome ?? p.email}<small>{p.nome ? p.email : ''}</small></th>
+        <td>{pix && p.fim_periodo
+          ? <>{DATA(p.fim_periodo)}<small>{PLANO[p.plano ?? ''] ?? p.plano} · {p.dias_restantes === 0 ? 'hoje' : p.dias_restantes === 1 ? 'amanhã' : `em ${p.dias_restantes} dias`}</small></>
+          : Number(p.respondidas) === 0 ? 'Nunca respondeu' : `${p.dias_fora} dias sem aparecer`}</td>
+        <td className="numerico">{Number(p.respondidas).toLocaleString('pt-BR')}</td>
+        <td className="numerico">{Number(p.respondidas) ? `${Math.round(100 * Number(p.acertos) / Number(p.respondidas))}%` : '-'}</td>
+        <td>{p.ultimo_lembrete_em
+          ? <>{haQuanto(p.ultimo_lembrete_em)}<small>{p.ultimo_lembrete_assunto ?? ''}{Number(p.lembretes_30d) > 1 ? ` · ${p.lembretes_30d} em 30 dias` : ''}</small></>
+          : 'Nenhum ainda'}
+          {!p.liberado && <small className="adm-pix-lista__selo">Aguardando: recebeu há menos de 2 dias</small>}</td>
+        <td><button type="button" className="adm-link" onClick={() => aoVerPrevia(p)}>Prévia</button></td>
+      </tr>)}</tbody>
+    </table></div>
+  </details>
 }

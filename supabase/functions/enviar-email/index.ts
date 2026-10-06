@@ -186,7 +186,7 @@ Deno.serve(async (req) => {
   if (req.method === 'OPTIONS') return new Response(null, { headers: cors(req) })
   if (req.method !== 'POST') return json({ erro: 'metodo_invalido' }, 405, req)
   try {
-    const corpo = await req.json() as { acao?: string; id_usuario?: string; recado?: string; formato?: string; id_questao?: string; u?: string; t?: string; tipo?: string; mes?: string; limite?: number; campanha?: string; id_relato?: number; dias_restantes?: number; fim_periodo?: string; plano?: string }
+    const corpo = await req.json() as { acao?: string; id_usuario?: string; recado?: string; formato?: string; id_questao?: string; u?: string; t?: string; tipo?: string; mes?: string; limite?: number; campanha?: string; id_relato?: number; dias_restantes?: number; dias_fora?: number; fim_periodo?: string; plano?: string }
 
     if (corpo.acao === 'descadastrar') {
       const tipo = corpo.tipo === 'relatorio' ? 'relatorio' : corpo.tipo === 'lembretes' ? 'lembretes' : 'conquistas'
@@ -235,7 +235,7 @@ Deno.serve(async (req) => {
         const dados = await dadosUsuario(alvo)
         const hoje = campanha === 'renovacao_pix_hoje'
         const e = emailLembrete({
-          campanha, nome: dados?.nome ?? null, respondidas: Number(dados?.respondidas ?? 0), diasFora: campanha === 'sete_dias' ? 9 : 3,
+          campanha, nome: dados?.nome ?? null, respondidas: Number(dados?.respondidas ?? 0), diasFora: Number(corpo.dias_fora ?? (campanha === 'sete_dias' ? 9 : 3)),
           diasRestantes: Number(corpo.dias_restantes ?? (hoje ? 0 : 3)),
           fimEm: corpo.fim_periodo ?? new Date(Date.now() + (hoje ? 0 : 3) * 86_400_000).toISOString(),
           plano: corpo.plano ?? 'semestral', acertos: Number(dados?.acertos ?? 0), respondidas7d: Number(dados?.respondidas_7d ?? 0),
