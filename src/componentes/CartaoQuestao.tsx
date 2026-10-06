@@ -474,7 +474,6 @@ export function CartaoQuestao({
         ) : !modoLeitura && (
           <>
             <Resultado questao={questao} resposta={resposta!} />
-            <ComoATurma questao={questao} resposta={resposta!} />
           </>
         )}
 
@@ -489,6 +488,8 @@ export function CartaoQuestao({
             )}
 
             <ComentarioDaIA questao={questao} comentario={comentarioIA} carregando={carregandoIA} escolhida={resposta?.escolhida ?? null} />
+            {/* Depois do comentário: a porcentagem da turma não disputa espaço com o resultado. */}
+            {resposta && !modoLeitura && <ComoATurma questao={questao} resposta={resposta} />}
 
             <div className="bloco-comentario">
               <p className="comentario__titulo">Comentários da comunidade</p>
