@@ -7903,5 +7903,131 @@
   ],
   "geradoEm": "2026-10-06",
   "conferido": false
+ },
+ "quadril-0631": {
+  "conceito": "### Por que medir a capacidade funcional\n\nA artroplastia do quadril é ==cirurgia de risco cardíaco intermediário==, com risco cardíaco predito de ==1% a 5%==. Como o paciente com artrose anda pouco, a história de esforço é a melhor ferramenta para estimar a reserva cardiovascular sem pedir exames em excesso.\n\n### O equivalente metabólico (MET)\n\nUm MET é o consumo de oxigênio em repouso. A tabela do capítulo dá as âncoras:\n\n| Atividade | Equivalentes metabólicos |\n|---|---|\n| Permanecer deitado | 1 |\n| ==Subir dois lances de escada==, trabalhar no quintal | ==4== |\n| Corrida leve, esportes extenuantes | 10 |\n\nAtividades ==abaixo de 4==: assar alimentos, dança de salão lenta, ==golfe com carrinho==, tocar instrumento, caminhar a 3 a 5 km/h. Atividades ==acima de 4==: ciclismo moderado, subir ladeiras, esqui, tênis de simples, corrida leve.\n\n### A regra para prosseguir\n\n1. Sem condição cardíaca ativa, a cirurgia prossegue se a capacidade for de ==4 METs ou mais==.\n2. Capacidade ==menor que 4 METs ou desconhecida==: avaliação adicional.\n3. O marco clínico de má tolerância é não conseguir ==andar quatro quarteirões ou subir dois lances de escada== por dor torácica ou dispneia.\n4. Exame não invasivo que possa mudar a conduta é recomendado quando há ==mais de um fator de risco clínico==.\n\n> **Na prova:** não sobe dois lances de escada = abaixo de 4 METs = investigar antes da artroplastia.",
+  "correta": "**Correta.** O paciente não sobe dois lances de escada, que é o marco de 4 equivalentes metabólicos, e as atividades que consegue fazer ficam abaixo desse limiar. Com capacidade funcional igual ou menor que 4, o capítulo indica investigação cardíaca adicional antes da cirurgia eletiva.",
+  "incorretas": {
+   "A": "**Errada.** A cirurgia ortopédica é classificada como de risco cardíaco intermediário, com risco predito de 1% a 5%, e não como de baixo risco.",
+   "B": "**Errada.** Golfe com carrinho e dança de salão lenta estão justamente entre as atividades com menos de 4 equivalentes metabólicos. Não comprovam boa reserva funcional.",
+   "D": "**Errada.** A espera de 6 meses era a regra antiga para infarto recente e não se aplica aqui. Diante de baixa capacidade funcional, a conduta é avaliar, e não apenas esperar."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 26 (Avaliação Médica Pré-Operatória)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0632": {
+  "conceito": "### Duas listas que a prova adora trocar\n\nO capítulo separa ==condições cardíacas ativas== (que impõem avaliação e tratamento antes de qualquer cirurgia não cardíaca) de ==fatores de risco clínico== (que pesam na decisão de investigar).\n\n| Condições cardíacas ativas | Fatores de risco clínico |\n|---|---|\n| ==Síndromes coronarianas instáveis== (infarto recente, angina grave) | História de doença cardíaca isquêmica |\n| ==Insuficiência cardíaca descompensada== (classe IV, piora ou início recente) | ==Insuficiência cardíaca compensada ou prévia== |\n| ==Arritmias significativas== | Doença cerebrovascular |\n| ==Doença valvar grave== | ==Diabetes== |\n|  | Insuficiência renal |\n\n### Quais são as arritmias significativas\n\nBloqueio atrioventricular ==Mobitz II== e de ==terceiro grau==, arritmias ventriculares sintomáticas, arritmias supraventriculares com resposta ventricular não controlada e taquicardia ventricular de início recente.\n\n### Como as listas se usam\n\n1. Condição ativa presente: tratar antes; a artroplastia é eletiva e espera.\n2. Sem condição ativa: olhar a capacidade funcional (4 METs).\n3. Mais de um fator de risco clínico: considerar exame não invasivo que possa mudar o manejo.\n\n> **Na prova:** insuficiência cardíaca descompensada é condição ativa; compensada é fator de risco clínico.",
+  "correta": "**Correta (é a exceção).** Insuficiência cardíaca compensada e diabetes entram na lista de fatores de risco clínico, e não na de condições cardíacas ativas. Eles pesam na decisão de investigar, mas não obrigam, por si, a tratar o coração antes da cirurgia.",
+  "incorretas": {
+   "A": "**Errada, é condição ativa.** O bloqueio Mobitz II está entre as arritmias significativas, ao lado do bloqueio de terceiro grau e das arritmias ventriculares sintomáticas.",
+   "B": "**Errada, é condição ativa.** A insuficiência cardíaca descompensada inclui a classe funcional IV da New York Heart Association e a piora ou o início recente da insuficiência.",
+   "C": "**Errada, é condição ativa.** A doença valvar grave é a quarta condição. A estenose aórtica grave é, inclusive, a lesão valvar que mais contribui para o risco em cirurgia não cardíaca."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 26 (Avaliação Médica Pré-Operatória)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0633": {
+  "conceito": "### O tempo depende do que foi colocado na coronária\n\nDepois de uma intervenção coronária percutânea, o endotélio leva tempo para recobrir o local tratado. Operar cedo, ainda mais sem antiagregante, expõe ao risco de ==trombose do stent==, que é catastrófica. A abordagem de 2009 do American College of Cardiology Foundation e da American Heart Association, baseada em opinião de especialistas, organiza a espera assim:\n\n| Procedimento coronário | Espera para cirurgia eletiva |\n|---|---|\n| ==Angioplastia só com balão== | ==mais de 14 dias== |\n| ==Stent metálico convencional== (bare-metal) | ==30 a 45 dias== |\n| ==Stent farmacológico== | ==mais de 365 dias== |\n\nNos três casos, depois de cumprido o prazo, a recomendação é ==ir para a sala em uso de aspirina==.\n\n### Por que o farmacológico exige mais tempo\n\nO fármaco liberado pelo stent inibe a proliferação celular. Isso reduz a reestenose, mas ==atrasa a endotelização==, e o stent fica trombogênico por muito mais tempo. Por isso a dupla antiagregação é longa e a cirurgia eletiva espera cerca de um ano.\n\n### A revascularização antes da artroplastia\n\nPacientes com doença coronariana de alto risco que se beneficiem de revascularização cirúrgica devem ser revascularizados antes de procedimentos eletivos como a artroplastia total do quadril.\n\n> **Na prova:** balão 14 dias, metálico 30 a 45 dias, farmacológico 365 dias, sempre com aspirina.",
+  "correta": "**Correta.** Com stent farmacológico de 4 meses, o prazo de mais de 365 dias ainda não foi cumprido. Como a artroplastia é eletiva, ela é adiada e, quando feita, o paciente vai à sala em uso de aspirina.",
+  "incorretas": {
+   "B": "**Errada.** O prazo de 30 a 45 dias é o do stent metálico convencional. O farmacológico atrasa a endotelização e exige mais de 365 dias.",
+   "C": "**Errada.** Catorze dias é a espera após angioplastia apenas com balão. Além disso, a recomendação é operar em uso de aspirina, e não suspendê-la.",
+   "D": "**Errada.** Operar cedo e sem antiagregante é a situação de maior risco de trombose do stent. A cirurgia eletiva deve esperar o prazo, mantendo a aspirina."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 26 (Avaliação Médica Pré-Operatória)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0634": {
+  "conceito": "### De onde veio a regra dos 6 meses\n\nNo passado, esperava-se ==6 meses== após um infarto antes de cirurgia ortopédica eletiva. A base foi o estudo de ==Tahran== (início dos anos 1970), validado depois por Goldman e por Steen. Entre 422 pacientes com infarto prévio:\n\n| Intervalo entre infarto e cirurgia | Reinfarto |\n|---|---|\n| Até 3 meses | ==37%== |\n| 3 a 6 meses | 16% |\n| Após 6 meses | 5% |\n\nRao, com monitorização hemodinâmica invasiva, reduziu esses números para 5,7% (até 3 meses) e 2,3% (3 a 6 meses).\n\n### Por que a regra mudou\n\nMelhor compreensão das síndromes coronarianas agudas, monitorização hemodinâmica e um arsenal maior de medicações cardíacas. Um estudo prospectivo de 1982 mostrou reinfarto de apenas 1,9%.\n\n### A regra atual\n\n1. Definição: ==infarto recente== é o ocorrido há ==mais de 7 dias e menos de 1 mês==.\n2. Todo paciente com infarto recente faz ==teste de estresse==.\n3. Se o teste ==não mostrar miocárdio residual em risco==, a chance de reinfarto após cirurgia não cardíaca é baixa.\n4. Espera recomendada para cirurgia não cardíaca eletiva: ==6 semanas==.\n\n> **Na prova:** a espera passou de 6 meses para 6 semanas, com teste de estresse.",
+  "correta": "**Correta.** O capítulo traz a recomendação atual de aguardar 6 semanas após o infarto para cirurgia não cardíaca eletiva, com teste de estresse; sem miocárdio residual em risco, o reinfarto é pouco provável.",
+  "incorretas": {
+   "A": "**Errada.** A espera de 6 meses é a convenção antiga. Ela foi questionada com a melhora da monitorização e das medicações, e a recomendação atual é de 6 semanas.",
+   "B": "**Errada.** Pela definição citada, infarto recente é o de mais de 7 dias e menos de 1 mês antes do exame.",
+   "D": "**Errada, troca os números.** Na série de Tahran, o reinfarto foi de 37% em até 3 meses; os 5% correspondem às cirurgias feitas após 6 meses."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 26 (Avaliação Médica Pré-Operatória)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0635": {
+  "conceito": "### Cada lesão valvar tem uma conduta\n\nO primeiro passo é diferenciar ==sopro benigno de sopro patológico==. Depois, a conduta muda conforme a lesão:\n\n| Lesão | Conduta antes da artroplastia |\n|---|---|\n| ==Estenose aórtica grave== | ==substituição valvar antes== da cirurgia não emergente; sem condição de troca, mortalidade de ==10%== |\n| Regurgitação aórtica | avaliar intervenção; valvuloplastia por balão no instável; grau desconhecido: ==frequência cardíaca elevada== |\n| Estenose mitral | ==sem intervenção prévia== em cirurgia de risco intermediário; ==controlar a frequência== para evitar congestão pulmonar |\n| Regurgitação mitral | controlar a fração de ejeção; nenhuma outra intervenção |\n\n### A lógica da frequência cardíaca\n\n1. Na ==regurgitação aórtica==, o sangue volta na diástole. Frequência ==mais alta== encurta a diástole e reduz o tempo de regurgitação.\n2. Na ==estenose mitral==, o átrio esvazia lentamente pela valva estreita. Frequência ==controlada== alonga a diástole e evita a congestão pulmonar.\n\n### Prótese valvar mecânica e varfarina\n\nSuspender a varfarina ==3 a 5 dias antes==, fazer ponte com heparina de baixo peso molecular (suspensa na véspera e retomada em até 24 horas) e reiniciar a varfarina na noite da cirurgia, porque ela leva cerca de ==3 dias== para o efeito completo.\n\n> **Na prova:** estenose aórtica grave troca a valva antes; estenose mitral não precisa de intervenção prévia.",
+  "correta": "**Correta.** A estenose aórtica grave é a lesão valvar que mais contribui para o risco em cirurgia não cardíaca e exige substituição valvar antes de uma cirurgia necessária, porém não emergente, como a artroplastia. Sem condições de troca, a cirurgia tem mortalidade de cerca de 10%.",
+  "incorretas": {
+   "A": "**Errada.** A estenose mitral não exige intervenção prévia em cirurgia de risco intermediário. O cuidado é manter frequência cardíaca adequada para evitar congestão pulmonar.",
+   "C": "**Errada.** Na regurgitação mitral, basta a fração de ejeção estar adequadamente controlada; nenhuma outra intervenção está indicada para cirurgia de risco intermediário.",
+   "D": "**Errada.** Na regurgitação aórtica de grau desconhecido, a conduta descrita é manter frequência cardíaca elevada no perioperatório, e não corrigir a valva antes."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 26 (Avaliação Médica Pré-Operatória)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0636": {
+  "conceito": "### Por que o rim importa na escolha do implante\n\nAs superfícies metal contra metal liberam ==íons de cobalto e cromo==, que circulam e são ==excretados pela urina==. Na ==doença renal crônica==, essa excreção cai e os íons se acumulam no soro.\n\n### O que os íons fazem\n\nNo sangue, formam complexos metal-proteína, íons livres e sais inorgânicos. A preocupação é que podem agir como ==ativadores imunológicos, supressores imunológicos ou toxinas potencialmente carcinogênicas==. Ainda ==não há relato== de carcinogênese por metal contra metal em nenhuma população, mas o aumento sérico é motivo de cautela.\n\n### Conduta\n\n1. Doença renal crônica: ==não é candidato a metal contra metal==.\n2. Diabetes grave e hipertensão, mesmo sem doença renal no momento, podem se beneficiar de evitar o metal contra metal, porque a doença renal pode surgir depois.\n\n### A doença renal que aparece depois\n\nNo estudo de Chandran, com veteranos sem doença renal prévia, ==9 anos== após a artroplastia:\n\n| Diagnóstico | Frequência |\n|---|---|\n| Doença renal crônica | 14% |\n| Insuficiência renal aguda | 4% |\n| Doença renal não especificada | 2% |\n\n### Creatinina e risco\n\nCreatinina ==maior que 2 mg/dL== é fator de risco independente para ==complicações cardíacas e renais== pós-operatórias.\n\n> **Na prova:** renal crônico retém íons metálicos e não recebe metal contra metal.",
+  "correta": "**Correta.** Os íons metálicos são eliminados pela urina. Na doença renal crônica eles se acumulam no soro, e por isso o capítulo afirma que esses pacientes não são candidatos a articulações metal contra metal.",
+  "incorretas": {
+   "A": "**Errada.** O argumento do desgaste não se sobrepõe ao risco de retenção de íons metálicos. No renal crônico, o metal contra metal é justamente o par a evitar.",
+   "B": "**Errada.** Creatinina maior que 2 mg/dL é fator de risco independente significativo para complicações cardíacas e renais no pós-operatório.",
+   "C": "**Errada.** O capítulo afirma que não há relatos de carcinogenicidade do metal contra metal em qualquer população; o que preocupa é o potencial teórico do aumento sérico dos íons."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 26 (Avaliação Médica Pré-Operatória)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0637": {
+  "conceito": "### Por que o quadril é de baixo risco pulmonar\n\nPara o American College of Physicians, a artroplastia total do quadril é ==cirurgia de baixo risco== para complicações pulmonares. O sítio operatório fica ==longe do diafragma==, e a capacidade vital e a capacidade residual funcional quase não são afetadas.\n\n### Fatores relacionados ao paciente\n\n| Aumentam o risco | Não aumentam |\n|---|---|\n| Idade acima de 50 anos, DPOC, asma não tratada | ==Asma bem controlada== |\n| ==Tabagismo== (cinco vezes mais complicações) | ==Obesidade mórbida== |\n| ==Hipertensão pulmonar== (risco de morte cerca de 4 vezes maior) | |\n| ==Apneia obstrutiva do sono== (hipercoagulabilidade, embolia, pneumonia) | |\n| Infecção de vias aéreas superiores, dependência funcional | |\n| Estado físico ASA maior que 2 (risco 4,87 vezes maior) | |\n\n### Fatores relacionados ao procedimento\n\n1. Cirurgia com mais de ==3 a 4 horas== aumenta o risco.\n2. ==Anestesia peridural ou raquidiana==, com ou sem geral: ==39% menos pneumonia== e ==59% menos depressão respiratória== que a geral isolada.\n3. Preferir ==bloqueadores neuromusculares de curta ação==, para evitar bloqueio residual.\n\n### O que pedir\n\nHistória e exame físico são a melhor ferramenta. Recomenda-se ==contra a espirometria de rotina== (aceitável na DPOC ou asma quando a clínica não esclarece se o paciente está no melhor estado basal) e contra a ==gasometria arterial== de rotina.\n\n> **Na prova:** quadril é baixo risco pulmonar; bloqueio neuroeixo reduz pneumonia; espirometria só em casos selecionados.",
+  "correta": "**Correta.** O capítulo cita a redução de 39% no risco de pneumonia e de 59% no de depressão respiratória com anestesia peridural ou raquidiana, com ou sem geral, em comparação com a anestesia geral isolada.",
+  "incorretas": {
+   "A": "**Errada.** É o contrário: a artroplastia do quadril é de baixo risco pulmonar justamente porque o sítio operatório é distante do diafragma.",
+   "B": "**Errada.** As diretrizes de 2006 do American College of Physicians recomendam contra a espirometria de rotina; ela é aceitável apenas em DPOC ou asma quando a avaliação clínica não define o estado basal.",
+   "D": "**Errada.** A asma bem controlada não se associou a complicações pulmonares, e a obesidade mórbida, apesar de reduzir volumes pulmonares, não é considerada fator de risco pulmonar pós-operatório."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 26 (Avaliação Médica Pré-Operatória)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0638": {
+  "conceito": "### Tipo I e tipo II não são a mesma doença\n\n| | Tipo I | Tipo II |\n|---|---|---|\n| Mecanismo | ==deficiência de insulina== | ==resistência à insulina endógena== |\n| Cetoacidose | ==sim== | não |\n| Perfil | jovem (pode surgir até a terceira década) | idoso, sobrepeso, mais comum na artroplastia |\n| Insulina regular por queda de glicose | menor | ==maior== (pela resistência) |\n\n### Por que controlar a glicemia\n\nO diabetes aumenta o risco de ==infecção pós-operatória==; glicemia ==maior que 200 mg/dL== associou-se a ==infecção profunda da ferida==. Avalia-se também o dano de órgão-alvo: retinopatia sugere nefropatia; pulsos reduzidos e sopros sugerem doença vascular.\n\n### Tipo I\n\n1. Controle desde ==semanas antes==: glicemia estável de ==100 a 150 mg/dL por pelo menos 7 dias==, o que restaura o ==glicogênio hepático== e reduz a hipoglicemia intraoperatória.\n2. Bem controlado: ==metade da dose matinal== de insulina intermediária, glicemia a cada 4 horas e escala móvel.\n3. Mal controlado: insulina intermediária a ==80% na véspera==, dextrose a 100 mL/h e infusão de insulina regular para glicemia entre ==150 e 240 mg/dL==.\n\n### Tipo II\n\nSuspender ==sulfonilureias, metformina e tiazolidinediona== no dia da cirurgia, medir a glicemia a cada 4 a 6 horas, escala móvel acima de ==250 mg/dL== e dextrose a 5% para evitar cetoacidose.\n\n> **Na prova:** tipo I precisa de insulina basal no perioperatório; tipo II suspende o oral no dia.",
+  "correta": "**Correta.** O capítulo indica que o bom controle começa semanas antes: o diabético tipo I deve atingir glicemia estável de 100 a 150 mg/dL por pelo menos 7 dias. Isso restaura os estoques de glicogênio hepático e reduz o risco de hipoglicemia intraoperatória.",
+  "incorretas": {
+   "A": "**Errada, troca os tipos.** O tipo II é resistência à insulina endógena e não cursa com cetoacidose. A deficiência de insulina com cetoacidose é o tipo I.",
+   "B": "**Errada.** Sulfonilureias, metformina e tiazolidinediona devem ser suspensas no dia da cirurgia; a glicemia é coberta com escala móvel de insulina regular.",
+   "C": "**Errada.** O tipo I não produz insulina e, sem ela, entra em cetoacidose. Usa-se metade da dose matinal de insulina intermediária, com monitorização e escala móvel."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 26 (Avaliação Médica Pré-Operatória)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
+ },
+ "quadril-0639": {
+  "conceito": "### O que a artrite reumatoide acrescenta\n\nO paciente reumatoide é candidato frequente à artroplastia e precisa de avaliação dirigida por três motivos: ==coluna cervical==, ==anemia== e ==acometimento pulmonar==, além do manejo do corticoide.\n\n### Coluna cervical: o ponto crítico da intubação\n\n1. Até ==40%== dos internados têm subluxação radiográfica entre ==a primeira e a segunda vértebras cervicais==.\n2. Risco de comprometimento do ==centro respiratório do bulbo== durante a intubação orotraqueal.\n3. ==Radiografias dinâmicas em flexão e extensão== identificam a subluxação atlantoaxial; a tomografia entra nos casos duvidosos.\n\n### Pulmão e coração\n\n| Órgão | Manifestações | Avaliação |\n|---|---|---|\n| Pulmão | pleurite, fibrose intersticial, nódulos | ==prova de função pulmonar basal== |\n| Coração | pericardite, miocardite, vegetações não infecciosas, defeitos de condução, arterite coronária | ==história, exame físico e eletrocardiograma bastam== |\n\n### Corticoide crônico\n\nReduzir gradualmente até a menor dose tolerada, para diminuir imunossupressão e melhorar a cicatrização. Quem usa ==menos de 7,5 mg/dia de prednisona não precisa de redução gradual==. O uso crônico pode suprimir o eixo hipotálamo-hipófise-adrenal, e o corticoide intraoperatório pode estar indicado.\n\n### Outras medicações do capítulo\n\nContraceptivo oral: ==suspender 3 semanas antes== (trombose). Metotrexato, infliximabe e anti-inflamatórios podem causar leucopenia.\n\n> **Na prova:** reumatoide antes de intubar = radiografia dinâmica da cervical.",
+  "correta": "**Correta.** O capítulo afirma que até 40% dos pacientes com artrite reumatoide internados têm subluxação radiográfica entre a primeira e a segunda vértebras cervicais, com risco de comprometer o centro respiratório do bulbo na intubação. As radiografias em flexão e extensão identificam a subluxação.",
+  "incorretas": {
+   "B": "**Errada.** Pacientes que usam menos de 7,5 mg por dia de prednisona não necessitam de redução gradual. A dose de 5 mg está abaixo desse limite.",
+   "C": "**Errada.** Para o acometimento cardíaco da artrite reumatoide, o capítulo considera suficientes a história, o exame físico e o eletrocardiograma.",
+   "D": "**Errada.** O contraceptivo oral deve ser suspenso 3 semanas antes da cirurgia, justamente pelo risco aumentado de trombose."
+  },
+  "referencias": [
+   "The Adult Hip, John J. Callaghan et al. (editores), 3ª ed., capítulo 26 (Avaliação Médica Pré-Operatória)"
+  ],
+  "geradoEm": "2026-10-06",
+  "conferido": false
  }
 }
