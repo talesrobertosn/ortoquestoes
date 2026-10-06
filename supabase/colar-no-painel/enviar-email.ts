@@ -498,6 +498,21 @@ function emailLembrete(d) {
       botao: "Renovar e continuar estudando",
       link: linkAssinatura,
       rodape: `Prefere n\xE3o precisar lembrar? No cart\xE3o, a assinatura renova sozinha e voc\xEA cancela quando quiser em <a href="${d.site}#/conta/assinatura" style="color:#146b61;font-weight:bold;">Minha conta</a>.`
+    },
+    renovacao_pix_hoje: {
+      assunto: nome ? `${nome}, seu acesso termina hoje: renove e n\xE3o pare agora` : "Seu acesso termina hoje: renove e n\xE3o pare agora",
+      previa: "Hoje \xE9 o \xFAltimo dia do seu plano pago no Pix. Renove para continuar de onde parou.",
+      selo: "Miss\xE3o: \xFAltimo dia da armadura",
+      titulo: nome ? `${nome}, hoje \xE9 o \xFAltimo dia da sua armadura` : "Hoje \xE9 o \xFAltimo dia da sua armadura",
+      lide: `O acesso do seu plano${d.plano ? ` ${planoTexto}` : ""}, pago no Pix, termina hoje. Olha s\xF3 o que voc\xEA j\xE1 construiu at\xE9 aqui: renove agora e mantenha o ritmo at\xE9 a prova.`,
+      corpo: [
+        ["pixel/revisao.png", "As revis\xF5es n\xE3o podem esfriar", "A fila de revis\xE3o espa\xE7ada depende de const\xE2ncia. Renovando hoje, nenhuma quest\xE3o perde o momento certo de voltar."],
+        ["pixel/simulado.png", "Tudo continua liberado", 'Simulados, cronograma at\xE9 a prova, "como a turma respondeu" e o relat\xF3rio do m\xEAs seguem com voc\xEA.'],
+        ["pixel/ranking.png", "Seu progresso est\xE1 guardado", "O caderno de erros, as conquistas e o hist\xF3rico ficam salvos. Renovando, voc\xEA continua exatamente de onde parou."]
+      ],
+      botao: "Renovar hoje e continuar",
+      link: linkAssinatura,
+      rodape: `Prefere n\xE3o precisar lembrar? No cart\xE3o, a assinatura renova sozinha e voc\xEA cancela quando quiser em <a href="${d.site}#/conta/assinatura" style="color:#146b61;font-weight:bold;">Minha conta</a>.`
     }
   }[d.campanha];
   const blocos = C.corpo.map(([icone, titulo, texto2]) => `
@@ -512,6 +527,25 @@ function emailLembrete(d) {
           </tr>
         </table>
       </td></tr>`).join("");
+  const ehPix2 = d.campanha === "renovacao_pix" || d.campanha === "renovacao_pix_hoje";
+  const pct = d.respondidas > 0 ? Math.round(100 * (d.acertos ?? 0) / d.respondidas) : null;
+  const numeros = ehPix2 && d.respondidas > 0 ? [
+    [numero(d.respondidas), d.respondidas === 1 ? "quest\xE3o respondida" : "quest\xF5es respondidas"],
+    [pct === null ? "-" : `${pct}%`, "de acerto"],
+    [numero(d.respondidas7d ?? 0), "nos \xFAltimos 7 dias"]
+  ] : [];
+  const placar = numeros.length ? `
+      <tr><td style="padding:0 40px 18px 40px;">
+        <div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:#7a5a12;padding-bottom:8px;">Sua jornada at\xE9 aqui</div>
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#fbf5e6;border:1px solid #ecdcb0;border-radius:12px;">
+          <tr>${numeros.map(([valor, rotulo], i) => `
+            <td width="33%" align="center" valign="top" style="padding:16px 8px;${i ? "border-left:1px solid #ecdcb0;" : ""}font-family:Arial,Helvetica,sans-serif;">
+              <div style="font-size:26px;line-height:30px;font-weight:bold;color:#0f4f49;">${esc(valor)}</div>
+              <div style="font-size:13px;line-height:18px;color:#5f6d69;padding-top:2px;">${esc(rotulo)}</div>
+            </td>`).join("")}
+          </tr>
+        </table>
+      </td></tr>` : "";
   const html = `<!doctype html>
 <html lang="pt-BR">
 <head>
@@ -541,6 +575,8 @@ function emailLembrete(d) {
       </td></tr>
 
       <tr><td style="padding:26px 40px 18px 40px;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;color:#33413d;">${esc(C.lide)}</td></tr>
+
+      ${placar}
 
       ${blocos}
 
@@ -578,6 +614,7 @@ function emailLembrete(d) {
     "",
     C.lide,
     "",
+    ...numeros.length ? ["Sua jornada at\xE9 aqui: " + numeros.map(([v, r]) => `${v} ${r}`).join(" \xB7 "), ""] : [],
     ...C.corpo.flatMap(([, titulo, texto2]) => [`\u2022 ${titulo}: ${texto2}`]),
     "",
     `${C.botao}: ${C.link}`,
@@ -789,11 +826,12 @@ async function enviarRelatorios(mesPedido, limitePedido) {
   }
   return { mes, enviados, falhas, lote: destinatarios.length, talvez_restem: destinatarios.length === limite };
 }
-var CAMPANHAS = ["nunca", "tres_dias", "sete_dias", "renovacao_pix"];
+var CAMPANHAS = ["nunca", "tres_dias", "sete_dias", "renovacao_pix", "renovacao_pix_hoje"];
+var ehPix = (c) => c === "renovacao_pix" || c === "renovacao_pix_hoje";
 var campanhaValida = (c) => CAMPANHAS.includes(c ?? "") ? c : null;
 async function enviarLembretes(campanha, limitePedido, por) {
   const limite = Math.max(1, Math.min(Number(limitePedido) || 40, 80));
-  const r = campanha === "renovacao_pix" ? await banco("rpc/destinatarios_renovacao_pix", { method: "POST", body: JSON.stringify({ p_limite: limite }) }) : await banco("rpc/destinatarios_lembrete", { method: "POST", body: JSON.stringify({ p_campanha: campanha, p_limite: limite }) });
+  const r = ehPix(campanha) ? await banco("rpc/destinatarios_renovacao_pix", { method: "POST", body: JSON.stringify({ p_etapa: campanha === "renovacao_pix_hoje" ? "hoje" : "tres_dias", p_limite: limite }) }) : await banco("rpc/destinatarios_lembrete", { method: "POST", body: JSON.stringify({ p_campanha: campanha, p_limite: limite }) });
   if (!r.ok) throw new Error("consulta_destinatarios_falhou");
   const destinatarios = await r.json();
   let enviados = 0, falhas = 0;
@@ -811,7 +849,20 @@ async function enviarLembretes(campanha, limitePedido, por) {
     if (!linha) continue;
     try {
       const descadastro = await linkDescadastro(d.id_usuario, "lembretes");
-      const e = emailLembrete({ campanha, nome: d.nome, respondidas: Number(d.respondidas), diasFora: Number(d.dias_fora ?? 0), diasRestantes: Number(d.dias_restantes ?? 3), fimEm: d.fim_periodo ?? null, plano: d.plano ?? null, site: site(), linkDescadastro: descadastro });
+      const numeros = ehPix(campanha) ? await dadosUsuario(d.id_usuario) : null;
+      const e = emailLembrete({
+        campanha,
+        nome: d.nome,
+        respondidas: Number(numeros?.respondidas ?? d.respondidas),
+        diasFora: Number(d.dias_fora ?? 0),
+        diasRestantes: Number(d.dias_restantes ?? 3),
+        fimEm: d.fim_periodo ?? null,
+        plano: d.plano ?? null,
+        acertos: Number(numeros?.acertos ?? 0),
+        respondidas7d: Number(numeros?.respondidas_7d ?? 0),
+        site: site(),
+        linkDescadastro: descadastro
+      });
       await enviarEmail(d.email, e.assunto, e.html, e.texto, descadastro);
       await banco(`emails_enviados?id=eq.${linha.id}`, { method: "PATCH", body: JSON.stringify({ status: "enviado", assunto: e.assunto }) });
       enviados++;
@@ -846,10 +897,10 @@ Deno.serve(async (req) => {
       if (!await segredoValido(req.headers.get("x-segredo"))) return json({ erro: "acesso_negado" }, 403, req);
       return json(await enviarRelatorios(corpo.mes, corpo.limite), 200, req);
     }
-    if (corpo.acao === "lembretes" && corpo.campanha === "renovacao_pix" && req.headers.get("x-segredo")) {
+    if (corpo.acao === "lembretes" && (corpo.campanha === "renovacao_pix" || corpo.campanha === "renovacao_pix_hoje") && req.headers.get("x-segredo")) {
       if (!await segredoValido(req.headers.get("x-segredo"))) return json({ erro: "acesso_negado" }, 403, req);
       if (!emailConfigurado()) return json({ erro: "email_nao_configurado" }, 503, req);
-      return json(await enviarLembretes("renovacao_pix", corpo.limite, null), 200, req);
+      return json(await enviarLembretes(corpo.campanha, corpo.limite, null), 200, req);
     }
     const usuario = await usuarioDoPedido(req);
     if (corpo.acao === "relatorios_mensais" || corpo.acao === "previa_relatorio") {
@@ -866,8 +917,22 @@ Deno.serve(async (req) => {
       const campanha = campanhaValida(corpo.campanha);
       if (!campanha) return json({ erro: "campanha_invalida" }, 400, req);
       if (corpo.acao === "previa_lembrete") {
-        const dados = await dadosUsuario(usuario.id);
-        const e = emailLembrete({ campanha, nome: dados?.nome ?? null, respondidas: Number(dados?.respondidas ?? 0), diasFora: campanha === "sete_dias" ? 9 : 3, diasRestantes: 3, fimEm: new Date(Date.now() + 3 * 864e5).toISOString(), plano: "semestral", site: site(), linkDescadastro: await linkDescadastro(usuario.id, "lembretes") });
+        const alvo = corpo.id_usuario && /^[0-9a-f-]{36}$/.test(corpo.id_usuario) ? corpo.id_usuario : usuario.id;
+        const dados = await dadosUsuario(alvo);
+        const hoje = campanha === "renovacao_pix_hoje";
+        const e = emailLembrete({
+          campanha,
+          nome: dados?.nome ?? null,
+          respondidas: Number(dados?.respondidas ?? 0),
+          diasFora: campanha === "sete_dias" ? 9 : 3,
+          diasRestantes: Number(corpo.dias_restantes ?? (hoje ? 0 : 3)),
+          fimEm: corpo.fim_periodo ?? new Date(Date.now() + (hoje ? 0 : 3) * 864e5).toISOString(),
+          plano: corpo.plano ?? "semestral",
+          acertos: Number(dados?.acertos ?? 0),
+          respondidas7d: Number(dados?.respondidas_7d ?? 0),
+          site: site(),
+          linkDescadastro: await linkDescadastro(alvo, "lembretes")
+        });
         return json({ assunto: e.assunto, html: e.html }, 200, req);
       }
       if (!emailConfigurado()) return json({ erro: "email_nao_configurado" }, 503, req);

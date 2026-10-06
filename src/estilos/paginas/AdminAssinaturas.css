@@ -309,3 +309,8 @@
 .adm-secao h3 { font-size: 1rem; margin: 0.5rem 0 0; }
 .adm-mensal small, .adm-retencao small { color: var(--texto-2); font-weight: 400; font-size: var(--meta); }
 .adm-retencao th[scope="row"] { text-align: left; font-weight: 600; }
+
+/* Lembretes do Pix: quem recebe agora, dentro do cartão da campanha. */
+.adm-pix-lista { margin-top: .6rem; font-size: var(--corpo-menor); }
+.adm-pix-lista th[scope="row"] { font-weight: 600; }
+.adm-pix-lista small { display: block; color: var(--texto-2); font-weight: 400; font-size: var(--meta); }

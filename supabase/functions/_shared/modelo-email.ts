@@ -64,10 +64,6 @@ export interface DadosMarco {
   recado?: string | null
   site: string
   linkDescadastro: string
-  /** Renovação do Pix: dias até o acesso acabar, a data e o plano. */
-  diasRestantes?: number
-  fimEm?: string | null
-  plano?: string | null
 }
 
 const esc = (texto: string) => texto.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
@@ -487,7 +483,7 @@ export function emailRelatorio(d: DadosRelatorio): { assunto: string; html: stri
 // Lembretes (reengajamento), disparados pelo painel do administrador
 // ---------------------------------------------------------------------------
 
-export type CampanhaLembrete = 'nunca' | 'tres_dias' | 'sete_dias' | 'renovacao_pix'
+export type CampanhaLembrete = 'nunca' | 'tres_dias' | 'sete_dias' | 'renovacao_pix' | 'renovacao_pix_hoje'
 
 export interface DadosLembrete {
   campanha: CampanhaLembrete
@@ -496,6 +492,13 @@ export interface DadosLembrete {
   diasFora: number
   site: string
   linkDescadastro: string
+  /** Renovação do Pix: dias até o acesso acabar, a data e o plano. */
+  diasRestantes?: number
+  fimEm?: string | null
+  plano?: string | null
+  /** Renovação do Pix: desempenho da pessoa, para o quadro de números. */
+  acertos?: number
+  respondidas7d?: number
 }
 
 /**
@@ -577,6 +580,21 @@ export function emailLembrete(d: DadosLembrete): { assunto: string; html: string
       link: linkAssinatura,
       rodape: `Prefere não precisar lembrar? No cartão, a assinatura renova sozinha e você cancela quando quiser em <a href="${d.site}#/conta/assinatura" style="color:#146b61;font-weight:bold;">Minha conta</a>.`,
     },
+    renovacao_pix_hoje: {
+      assunto: nome ? `${nome}, seu acesso termina hoje: renove e não pare agora` : 'Seu acesso termina hoje: renove e não pare agora',
+      previa: 'Hoje é o último dia do seu plano pago no Pix. Renove para continuar de onde parou.',
+      selo: 'Missão: último dia da armadura',
+      titulo: nome ? `${nome}, hoje é o último dia da sua armadura` : 'Hoje é o último dia da sua armadura',
+      lide: `O acesso do seu plano${d.plano ? ` ${planoTexto}` : ''}, pago no Pix, termina hoje. Olha só o que você já construiu até aqui: renove agora e mantenha o ritmo até a prova.`,
+      corpo: [
+        ['pixel/revisao.png', 'As revisões não podem esfriar', 'A fila de revisão espaçada depende de constância. Renovando hoje, nenhuma questão perde o momento certo de voltar.'],
+        ['pixel/simulado.png', 'Tudo continua liberado', 'Simulados, cronograma até a prova, "como a turma respondeu" e o relatório do mês seguem com você.'],
+        ['pixel/ranking.png', 'Seu progresso está guardado', 'O caderno de erros, as conquistas e o histórico ficam salvos. Renovando, você continua exatamente de onde parou.'],
+      ],
+      botao: 'Renovar hoje e continuar',
+      link: linkAssinatura,
+      rodape: `Prefere não precisar lembrar? No cartão, a assinatura renova sozinha e você cancela quando quiser em <a href="${d.site}#/conta/assinatura" style="color:#146b61;font-weight:bold;">Minha conta</a>.`,
+    },
   }[d.campanha]
 
   const blocos = C.corpo.map(([icone, titulo, texto]) => `
@@ -591,6 +609,27 @@ export function emailLembrete(d: DadosLembrete): { assunto: string; html: string
           </tr>
         </table>
       </td></tr>`).join('')
+
+  // Renovação do Pix: o quadro com os números da pessoa até aqui.
+  const ehPix = d.campanha === 'renovacao_pix' || d.campanha === 'renovacao_pix_hoje'
+  const pct = d.respondidas > 0 ? Math.round(100 * (d.acertos ?? 0) / d.respondidas) : null
+  const numeros: Array<[string, string]> = ehPix && d.respondidas > 0 ? [
+    [numero(d.respondidas), d.respondidas === 1 ? 'questão respondida' : 'questões respondidas'],
+    [pct === null ? '-' : `${pct}%`, 'de acerto'],
+    [numero(d.respondidas7d ?? 0), 'nos últimos 7 dias'],
+  ] : []
+  const placar = numeros.length ? `
+      <tr><td style="padding:0 40px 18px 40px;">
+        <div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:#7a5a12;padding-bottom:8px;">Sua jornada até aqui</div>
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#fbf5e6;border:1px solid #ecdcb0;border-radius:12px;">
+          <tr>${numeros.map(([valor, rotulo], i) => `
+            <td width="33%" align="center" valign="top" style="padding:16px 8px;${i ? 'border-left:1px solid #ecdcb0;' : ''}font-family:Arial,Helvetica,sans-serif;">
+              <div style="font-size:26px;line-height:30px;font-weight:bold;color:#0f4f49;">${esc(valor)}</div>
+              <div style="font-size:13px;line-height:18px;color:#5f6d69;padding-top:2px;">${esc(rotulo)}</div>
+            </td>`).join('')}
+          </tr>
+        </table>
+      </td></tr>` : ''
 
   const html = `<!doctype html>
 <html lang="pt-BR">
@@ -621,6 +660,8 @@ export function emailLembrete(d: DadosLembrete): { assunto: string; html: string
       </td></tr>
 
       <tr><td style="padding:26px 40px 18px 40px;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;color:#33413d;">${esc(C.lide)}</td></tr>
+
+      ${placar}
 
       ${blocos}
 
@@ -659,6 +700,7 @@ export function emailLembrete(d: DadosLembrete): { assunto: string; html: string
     '',
     C.lide,
     '',
+    ...(numeros.length ? ['Sua jornada até aqui: ' + numeros.map(([v, r]) => `${v} ${r}`).join(' · '), ''] : []),
     ...C.corpo.flatMap(([, titulo, texto]) => [`• ${titulo}: ${texto}`]),
     '',
     `${C.botao}: ${C.link}`,
