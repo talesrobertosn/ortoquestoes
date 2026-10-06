@@ -10,10 +10,16 @@ import { Icone } from './Icone'
  * ligou a opção.
  */
 export function SeloServico({ servico }: { servico?: string | null }) {
+  const [aberto, definirAberto] = useState(false)
   if (!servico) return null
-  return <span className="rk-servico" tabIndex={0} title={servico} aria-label={`Residência: ${servico}`}>
+  // No celular, abrir pelo hover fazia o selo crescer, sair de baixo do dedo e
+  // fechar de novo, em loop. Agora o toque alterna um estado fixo; o hover só
+  // vale em telas com mouse (CSS com @media (hover: hover)).
+  return <button type="button" className={'rk-servico' + (aberto ? ' rk-servico--aberto' : '')} title={servico}
+    aria-label={`Residência: ${servico}`} aria-expanded={aberto}
+    onClick={(e) => { e.preventDefault(); e.stopPropagation(); definirAberto((v) => !v) }}>
     <Icone nome="bandeira" tamanho={12} /><span className="rk-servico__texto">{servico}</span>
-  </span>
+  </button>
 }
 
 /**
