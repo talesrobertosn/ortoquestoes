@@ -26,7 +26,8 @@ export interface Conquista {
 
 export type FamiliaId =
   | 'questoes' | 'sequencia' | 'dias' | 'acertos' | 'dominadas' | 'temas' | 'sessoes'
-  | 'maratona' | 'precisao' | 'redencao' | 'gabarito' | 'mestre' | 'resistencia' | 'colecao' | 'anotacoes' | 'secretas'
+  | 'maratona' | 'precisao' | 'redencao' | 'gabarito' | 'mestre' | 'especialista' | 'aproveitamento'
+  | 'resistencia' | 'colecao' | 'anotacoes' | 'secretas'
 
 export interface Emblema extends Conquista {
   familia: FamiliaId
@@ -55,11 +56,22 @@ export const FAMILIAS: readonly Familia[] = [
   { id: 'redencao', titulo: 'Redenção', unidade: (v) => `${n(v)} erros corrigidos` },
   { id: 'gabarito', titulo: 'Gabarito', unidade: (v) => `${v} ${v === 1 ? 'sessão perfeita' : 'sessões perfeitas'}` },
   { id: 'mestre', titulo: 'Mestres de tema', unidade: (v) => `${v} acertos no tema` },
+  { id: 'especialista', titulo: 'Especialistas por prova', unidade: (v) => `${n(v)} questões da prova` },
+  { id: 'aproveitamento', titulo: 'Aproveitamento', unidade: (v) => `${v}% de acerto` },
   { id: 'resistencia', titulo: 'Resistência', unidade: (v) => `${v} questões numa sessão` },
   { id: 'colecao', titulo: 'Coleção', unidade: (v) => `${v} favoritas` },
   { id: 'anotacoes', titulo: 'Caderno de campo', unidade: (v) => `${v} anotações` },
   { id: 'secretas', titulo: 'Secretas', unidade: () => 'secreta' },
 ]
+
+/** Mestre de tema: acertos no tema e acertos seguidos no tema. */
+export const MESTRE_ACERTOS = 100
+export const MESTRE_SEGUIDOS = 10
+/** Aproveitamento só vale a partir deste número de questões respondidas. */
+export const APROVEITAMENTO_MINIMO = 200
+
+/** Grupos de prova dos emblemas de especialista (sufixo do id). */
+export type GrupoProva = 'teot' | 'taro' | 'mao' | 'coluna' | 'enare' | 'tecoc' | 'quadril'
 
 type Linha = [id: string, minimo: number, rotulo: string, curto: string, nivel: NivelMedalha, descricao: string]
 
@@ -103,12 +115,14 @@ export const EMBLEMAS: readonly Emblema[] = [
     ['acertos-250', 250, 'Olho clínico', '250', 'prata', 'Acerte 250 questões.'],
     ['acertos-1000', 1000, 'Diagnóstico certeiro', '1k', 'ouro', 'Acerte 1.000 questões.'],
     ['acertos-2500', 2500, 'Oráculo da ortopedia', '2,5k', 'esmeralda', 'Acerte 2.500 questões.'],
+    ['acertos-4000', 4000, 'Lenda viva', '4k', 'lendario', 'Acerte 4.000 questões.'],
   ]),
   ...familia('dominadas', 'dominadas', [
     ['dominadas-10', 10, 'Fixou', '10', 'bronze', 'Domine 10 questões, acertando também nas revisões.'],
     ['dominadas-100', 100, 'Memória de elefante', '100', 'prata', 'Domine 100 questões.'],
     ['dominadas-500', 500, 'Biblioteca viva', '500', 'ouro', 'Domine 500 questões.'],
-    ['dominadas-1000', 1000, 'Enciclopédia ortopédica', '1k', 'lendario', 'Domine 1.000 questões.'],
+    ['dominadas-1000', 1000, 'Enciclopédia ortopédica', '1k', 'esmeralda', 'Domine 1.000 questões.'],
+    ['dominadas-2000', 2000, 'Memória absoluta', '2k', 'lendario', 'Domine 2.000 questões.'],
   ]),
   ...familia('temas', 'temas', [
     ['temas-3', 3, 'Curioso', '3', 'bronze', 'Responda questões de 3 temas diferentes.'],
@@ -120,39 +134,61 @@ export const EMBLEMAS: readonly Emblema[] = [
     ['sessoes-10', 10, 'Missões em dia', '10', 'prata', 'Conclua 10 sessões.'],
     ['sessoes-25', 25, 'Veterano de campanha', '25', 'ouro', 'Conclua 25 sessões.'],
     ['sessoes-50', 50, 'Comandante', '50', 'esmeralda', 'Conclua 50 sessões.'],
+    ['sessoes-150', 150, 'General de campanha', '150', 'lendario', 'Conclua 150 sessões.'],
   ]),
   ...familia('maratona', 'maratona', [
     ['maratona-50', 50, 'Maratonista', '50', 'prata', 'Responda 50 questões num mesmo dia.'],
     ['maratona-100', 100, 'Ultramaratona', '100', 'ouro', 'Responda 100 questões num mesmo dia.'],
     ['maratona-200', 200, 'Plantão de 24 horas', '200', 'esmeralda', 'Responda 200 questões num mesmo dia.'],
+    ['maratona-300', 300, 'Plantão de 36 horas', '300', 'lendario', 'Responda 300 questões num mesmo dia.'],
   ]),
   ...familia('precisao', 'precisao', [
     ['precisao-10', 10, 'Em chamas', '10', 'bronze', 'Acerte 10 questões seguidas.'],
     ['precisao-25', 25, 'Imparável', '25', 'ouro', 'Acerte 25 questões seguidas.'],
-    ['precisao-50', 50, 'Perfeição clínica', '50', 'lendario', 'Acerte 50 questões seguidas.'],
+    ['precisao-50', 50, 'Perfeição clínica', '50', 'esmeralda', 'Acerte 50 questões seguidas.'],
+    ['precisao-100', 100, 'Cem sem errar', '100', 'lendario', 'Acerte 100 questões seguidas.'],
   ]),
   ...familia('redencao', 'redencao', [
-    ['redencao-10', 10, 'Volta por cima', '10', 'bronze', 'Acerte 10 questões que você tinha errado.'],
-    ['redencao-100', 100, 'Redenção', '100', 'prata', 'Acerte 100 questões que você tinha errado.'],
-    ['redencao-500', 500, 'Fênix', '500', 'esmeralda', 'Acerte 500 questões que você tinha errado.'],
+    ['redencao-10', 10, 'Curativo', '10', 'bronze', 'Acerte 10 questões que você tinha errado.'],
+    ['redencao-50', 50, 'Calo ósseo', '50', 'prata', 'Acerte 50 questões que você tinha errado.'],
+    ['redencao-100', 100, 'Volta por cima', '100', 'ouro', 'Acerte 100 questões que você tinha errado.'],
+    ['redencao-250', 250, 'Consolidação', '250', 'esmeralda', 'Acerte 250 questões que você tinha errado.'],
+    ['redencao-500', 500, 'Fênix', '500', 'lendario', 'Acerte 500 questões que você tinha errado.'],
   ]),
   ...familia('gabarito', 'gabarito', [
     ['gabarito-1', 1, 'Gabaritou', '100%', 'prata', 'Acerte todas as questões de uma sessão com pelo menos 10.'],
     ['gabarito-10', 10, 'Mestre do gabarito', '10×', 'esmeralda', 'Gabarite 10 sessões com pelo menos 10 questões.'],
+    ['gabarito-25', 25, 'Gabarito de ouro', '25×', 'lendario', 'Gabarite 25 sessões com pelo menos 10 questões.'],
   ]),
   ...familia('mestre', 'acertosTema', [
-    ['mestre-coluna', 50, 'Mestre da coluna', 'Col', 'ouro', 'Acerte 50 questões de coluna.'],
-    ['mestre-conceitos-basicos', 50, 'Mestre dos fundamentos', 'Fun', 'ouro', 'Acerte 50 questões de conceitos básicos.'],
-    ['mestre-joelho', 50, 'Mestre do joelho', 'Joe', 'ouro', 'Acerte 50 questões de joelho.'],
-    ['mestre-mao', 50, 'Mestre da mão', 'Mão', 'ouro', 'Acerte 50 questões de mão e punho.'],
-    ['mestre-ombro-cotovelo', 50, 'Mestre do ombro e cotovelo', 'Omb', 'ouro', 'Acerte 50 questões de ombro e cotovelo.'],
-    ['mestre-osteometabolicas', 50, 'Mestre do metabolismo ósseo', 'Ost', 'ouro', 'Acerte 50 questões de doenças osteometabólicas.'],
-    ['mestre-pe-tornozelo', 50, 'Mestre do pé e tornozelo', 'Pé', 'ouro', 'Acerte 50 questões de pé e tornozelo.'],
-    ['mestre-pediatria', 50, 'Mestre da pediatria', 'Ped', 'ouro', 'Acerte 50 questões de ortopedia pediátrica.'],
-    ['mestre-quadril', 50, 'Mestre do quadril', 'Qua', 'ouro', 'Acerte 50 questões de quadril.'],
-    ['mestre-trauma', 50, 'Mestre do trauma', 'Tra', 'ouro', 'Acerte 50 questões de trauma.'],
-    ['mestre-tumores', 50, 'Mestre dos tumores', 'Tum', 'ouro', 'Acerte 50 questões de tumores.'],
+    ['mestre-coluna', 100, 'Mestre da coluna', 'Col', 'esmeralda', `Acerte ${MESTRE_ACERTOS} questões de coluna, com pelo menos ${MESTRE_SEGUIDOS} acertos seguidos no tema.`],
+    ['mestre-conceitos-basicos', 100, 'Mestre dos fundamentos', 'Fun', 'esmeralda', `Acerte ${MESTRE_ACERTOS} questões de conceitos básicos, com pelo menos ${MESTRE_SEGUIDOS} acertos seguidos no tema.`],
+    ['mestre-joelho', 100, 'Mestre do joelho', 'Joe', 'esmeralda', `Acerte ${MESTRE_ACERTOS} questões de joelho, com pelo menos ${MESTRE_SEGUIDOS} acertos seguidos no tema.`],
+    ['mestre-mao', 100, 'Mestre da mão', 'Mão', 'esmeralda', `Acerte ${MESTRE_ACERTOS} questões de mão e punho, com pelo menos ${MESTRE_SEGUIDOS} acertos seguidos no tema.`],
+    ['mestre-ombro-cotovelo', 100, 'Mestre do ombro e cotovelo', 'Omb', 'esmeralda', `Acerte ${MESTRE_ACERTOS} questões de ombro e cotovelo, com pelo menos ${MESTRE_SEGUIDOS} acertos seguidos no tema.`],
+    ['mestre-osteometabolicas', 100, 'Mestre do metabolismo ósseo', 'Ost', 'esmeralda', `Acerte ${MESTRE_ACERTOS} questões de doenças osteometabólicas, com pelo menos ${MESTRE_SEGUIDOS} acertos seguidos no tema.`],
+    ['mestre-pe-tornozelo', 100, 'Mestre do pé e tornozelo', 'Pé', 'esmeralda', `Acerte ${MESTRE_ACERTOS} questões de pé e tornozelo, com pelo menos ${MESTRE_SEGUIDOS} acertos seguidos no tema.`],
+    ['mestre-pediatria', 100, 'Mestre da pediatria', 'Ped', 'esmeralda', `Acerte ${MESTRE_ACERTOS} questões de ortopedia pediátrica, com pelo menos ${MESTRE_SEGUIDOS} acertos seguidos no tema.`],
+    ['mestre-quadril', 100, 'Mestre do quadril', 'Qua', 'esmeralda', `Acerte ${MESTRE_ACERTOS} questões de quadril, com pelo menos ${MESTRE_SEGUIDOS} acertos seguidos no tema.`],
+    ['mestre-trauma', 100, 'Mestre do trauma', 'Tra', 'esmeralda', `Acerte ${MESTRE_ACERTOS} questões de trauma, com pelo menos ${MESTRE_SEGUIDOS} acertos seguidos no tema.`],
+    ['mestre-tumores', 100, 'Mestre dos tumores', 'Tum', 'esmeralda', `Acerte ${MESTRE_ACERTOS} questões de tumores, com pelo menos ${MESTRE_SEGUIDOS} acertos seguidos no tema.`],
   ]),
+  ...familia('especialista', 'provaGrupo', [
+    ['especialista-teot', 300, 'Especialista TEOT', 'TEOT', 'ouro', 'Responda 300 questões do TEOT.'],
+    ['especialista-taro', 1000, 'Especialista TARO', 'TARO', 'ouro', 'Responda 1.000 questões do TARO.'],
+    ['especialista-mao', 300, 'Cirurgião da mão', 'Mão', 'esmeralda', 'Responda 300 questões das provas de cirurgia da mão.'],
+    ['especialista-coluna', 150, 'Cirurgião de coluna', 'R4C', 'esmeralda', 'Responda 150 questões das provas de R4 de coluna.'],
+    ['especialista-enare', 100, 'R4 do ENARE', 'R4', 'ouro', 'Responda 100 questões do R4 do ENARE.'],
+    ['especialista-tecoc', 100, 'Especialista em ombro e cotovelo', 'Omb', 'ouro', 'Responda 100 questões do TECOC.'],
+    ['especialista-quadril', 150, 'Especialista em quadril', 'Qua', 'esmeralda', 'Responda 150 questões do Fellowship Quadril.'],
+  ]),
+  ...familia('aproveitamento', 'aproveitamento', [
+    ['aproveitamento-60', 60, 'Consistente', '60%', 'prata', `Mantenha 60% de acerto na primeira tentativa, com pelo menos ${APROVEITAMENTO_MINIMO} questões respondidas.`],
+    ['aproveitamento-70', 70, 'Afiado', '70%', 'ouro', `Mantenha 70% de acerto na primeira tentativa, com pelo menos ${APROVEITAMENTO_MINIMO} questões respondidas.`],
+    ['aproveitamento-80', 80, 'Elite', '80%', 'esmeralda', `Mantenha 80% de acerto na primeira tentativa, com pelo menos ${APROVEITAMENTO_MINIMO} questões respondidas.`],
+    ['aproveitamento-90', 90, 'Padrão-ouro', '90%', 'lendario', `Mantenha 90% de acerto na primeira tentativa, com pelo menos ${APROVEITAMENTO_MINIMO} questões respondidas.`],
+  ]),
+
   ...familia('resistencia', 'sessaoLonga', [
     ['resistencia-30', 30, 'Fôlego de residente', '30', 'prata', 'Conclua uma sessão com pelo menos 30 questões.'],
     ['resistencia-60', 60, 'Prova de fogo', '60', 'ouro', 'Conclua uma sessão com pelo menos 60 questões.'],
@@ -178,6 +214,21 @@ export const EMBLEMAS: readonly Emblema[] = [
   ], true),
   ...familia('secretas', 'fimDeSemana', [
     ['secreta-fim-de-semana', 100, 'Sem folga no fim de semana', 'S/D', 'ouro', 'Responda 100 questões em sábados e domingos.'],
+  ], true),
+  ...familia('secretas', 'tresQuatorze', [
+    ['secreta-3h14', 1, 'Plantão das 3h14', '3:14', 'ouro', 'Responda uma questão exatamente às 3h14 da madrugada.'],
+  ], true),
+  ...familia('secretas', 'noitesInsones', [
+    ['secreta-insone', 10, 'Coruja veterana', 'zz', 'esmeralda', 'Estude de madrugada (entre meia-noite e 5h) em 10 noites diferentes.'],
+  ], true),
+  ...familia('secretas', 'virada', [
+    ['secreta-virada', 1, 'Virada de jogo', '↺', 'esmeralda', 'Depois de errar 5 seguidas, acerte as 10 seguintes.'],
+  ], true),
+  ...familia('secretas', 'natal', [
+    ['secreta-natal', 1, 'Plantão de Natal', '25', 'ouro', 'Estude no dia de Natal.'],
+  ], true),
+  ...familia('secretas', 'anoNovo', [
+    ['secreta-ano-novo', 1, 'Ano novo, mesma meta', '1/1', 'ouro', 'Estude no primeiro dia do ano.'],
   ], true),
 ]
 
@@ -221,15 +272,41 @@ export interface Metricas {
   notas: number
   madrugador: number
   sextou: number
+  tresQuatorze: number
+  noitesInsones: number
+  virada: number
+  natal: number
+  anoNovo: number
+  /** Porcentagem de acerto na primeira tentativa (0 enquanto houver menos de APROVEITAMENTO_MINIMO questões). */
+  aproveitamento: number
   /** Marcador das conquistas por tema: o valor real vem de porTema. */
   acertosTema: number
   porTema: Record<string, number>
+  /** Maior sequência de acertos dentro de cada tema. */
+  seguidosTema: Record<string, number>
+  /** Marcador dos especialistas: o valor real vem de porProva. */
+  provaGrupo: number
+  porProva: Partial<Record<GrupoProva, number>>
 }
 
-type MetricaNumerica = Exclude<keyof Metricas, 'porTema'>
+type MetricaNumerica = Exclude<keyof Metricas, 'porTema' | 'seguidosTema' | 'porProva'>
 
 interface SessaoConcluida { respondidas: number; acertos: number }
-export interface Extras { favoritas?: number; notas?: number }
+export interface Extras {
+  favoritas?: number
+  notas?: number
+  /** Grupos de prova de cada questão, vindos do índice do acervo. */
+  grupos?: ReadonlyMap<string, readonly GrupoProva[]>
+}
+
+/** Acertou na primeira vez? Sem erros, sim; com erros, só se o histórico guardado começa na primeira tentativa. */
+function acertouDePrimeira(registro: Partial<RegistroQuestao>): boolean | null {
+  if (registro.c === null || registro.c === undefined) return null
+  if ((registro.erros ?? 0) === 0) return registro.c === true
+  const historico = registro.historico ?? []
+  if (historico.length && historico.length >= (registro.tentativas ?? Infinity)) return historico[0].correta === true
+  return false
+}
 
 /**
  * Lê as métricas das respostas e das sessões. Os eventos por dia vêm do
@@ -240,7 +317,10 @@ export interface Extras { favoritas?: number; notas?: number }
 export function calcularMetricas(respondidas: Record<string, Partial<RegistroQuestao>>, sessoes: readonly SessaoConcluida[] = [], extras: Extras = {}, agora = Date.now()): Metricas {
   const temas = new Set<string>()
   const porDia = new Map<string, number>()
-  const eventos: Array<{ em: number; correta: boolean | null }> = []
+  const eventos: Array<{ em: number; correta: boolean | null; tema: string }> = []
+  const porProva: Partial<Record<GrupoProva, number>> = {}
+  const noites = new Set<string>()
+  let tresQuatorze = 0, natal = 0, anoNovo = 0, primeiras = 0, primeirasCertas = 0
   let acertos = 0, dominadasTotal = 0, redencao = 0, madrugada = 0, fimDeSemana = 0, madrugador = 0
   const porTema: Record<string, number> = {}
   const sextaNoite = new Map<string, number>()
@@ -249,24 +329,43 @@ export function calcularMetricas(respondidas: Record<string, Partial<RegistroQue
     temas.add(tema)
     if (registro.c === true) { acertos++; porTema[tema] = (porTema[tema] ?? 0) + 1 }
     if (dominada(registro)) dominadasTotal++
+    for (const g of extras.grupos?.get(id) ?? []) porProva[g] = (porProva[g] ?? 0) + 1
+    const primeira = acertouDePrimeira(registro)
+    if (primeira !== null) { primeiras++; if (primeira) primeirasCertas++ }
     if (registro.c === true && ((registro.erros ?? 0) > 0 || registro.historico?.some((e) => e.correta === false))) redencao++
     const lista = registro.historico?.length ? registro.historico : registro.q ? [{ em: registro.q, correta: registro.c ?? null }] : []
     for (const evento of lista) {
-      eventos.push(evento)
+      eventos.push({ em: evento.em, correta: evento.correta, tema })
       const chave = chaveDia(evento.em)
       porDia.set(chave, (porDia.get(chave) ?? 0) + 1)
       const data = new Date(evento.em)
-      if (data.getHours() < 5) madrugada++
+      if (data.getHours() < 5) { madrugada++; noites.add(chave) }
+      if (data.getHours() === 3 && data.getMinutes() === 14) tresQuatorze++
+      if (data.getMonth() === 11 && data.getDate() === 25) natal++
+      if (data.getMonth() === 0 && data.getDate() === 1) anoNovo++
       if (data.getHours() >= 5 && data.getHours() < 7) madrugador++
       if (data.getDay() === 5 && data.getHours() >= 20) { const c = chaveDia(evento.em); sextaNoite.set(c, (sextaNoite.get(c) ?? 0) + 1) }
       if (data.getDay() === 0 || data.getDay() === 6) fimDeSemana++
     }
   }
   eventos.sort((a, b) => a.em - b.em)
-  let precisao = 0, seguidos = 0
+  let precisao = 0, seguidos = 0, errosSeguidos = 0, aposErros = -1, virada = 0
+  const seguidosTema: Record<string, number> = {}
+  const atualTema: Record<string, number> = {}
   for (const evento of eventos) {
-    if (evento.correta === true) precisao = Math.max(precisao, ++seguidos)
-    else if (evento.correta === false) seguidos = 0
+    if (evento.correta === true) {
+      precisao = Math.max(precisao, ++seguidos)
+      atualTema[evento.tema] = (atualTema[evento.tema] ?? 0) + 1
+      seguidosTema[evento.tema] = Math.max(seguidosTema[evento.tema] ?? 0, atualTema[evento.tema])
+      // Virada: 5 erros seguidos e, logo depois, 10 acertos seguidos.
+      if (aposErros >= 0 && ++aposErros >= 10) { virada = 1; aposErros = -1 }
+      errosSeguidos = 0
+    } else if (evento.correta === false) {
+      seguidos = 0
+      atualTema[evento.tema] = 0
+      aposErros = -1
+      if (++errosSeguidos >= 5) aposErros = 0
+    }
   }
   return {
     questoes: Object.keys(respondidas).length,
@@ -288,13 +387,30 @@ export function calcularMetricas(respondidas: Record<string, Partial<RegistroQue
     notas: extras.notas ?? 0,
     madrugador,
     sextou: Math.max(0, ...sextaNoite.values()),
+    tresQuatorze,
+    noitesInsones: noites.size,
+    virada,
+    natal,
+    anoNovo,
+    aproveitamento: primeiras >= APROVEITAMENTO_MINIMO ? Math.floor((100 * primeirasCertas) / primeiras) : 0,
     acertosTema: 0,
     porTema,
+    seguidosTema,
+    provaGrupo: 0,
+    porProva,
   }
 }
 
 /** Valor atual da métrica de um emblema; os de tema leem o acerto daquele tema. */
-export const valorDe = (emblema: Emblema, metricas: Metricas): number =>
-  emblema.familia === 'mestre' ? metricas.porTema[emblema.id.replace(/^mestre-/, '')] ?? 0 : metricas[emblema.metrica]
+export function valorDe(emblema: Emblema, metricas: Metricas): number {
+  if (emblema.familia === 'mestre') {
+    const tema = emblema.id.replace(/^mestre-/, '')
+    const acertos = metricas.porTema[tema] ?? 0
+    // Sem os acertos seguidos no tema, o progresso para logo antes da meta.
+    return (metricas.seguidosTema?.[tema] ?? 0) >= MESTRE_SEGUIDOS ? acertos : Math.min(acertos, emblema.minimo - 1)
+  }
+  if (emblema.familia === 'especialista') return metricas.porProva?.[emblema.id.replace(/^especialista-/, '') as GrupoProva] ?? 0
+  return metricas[emblema.metrica]
+}
 
 export const desbloqueado = (emblema: Emblema, metricas: Metricas) => valorDe(emblema, metricas) >= emblema.minimo
