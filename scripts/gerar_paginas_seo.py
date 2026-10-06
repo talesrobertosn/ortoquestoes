@@ -221,7 +221,7 @@ def topo(titulo: str, descricao: str, caminho: str, extra: str = "", raiz: str =
 </head>
 <body>
 <header class="topo"><div class="envoltorio">
-  <a class="marca" href="{raiz}"><span>Orto</span>Questões</a>
+  <a class="marca" href="{raiz}"><span>Orto</span> Questões</a>
   <nav>
     <a href="{raiz}questoes/">Assuntos</a>
     <a href="{raiz}guias/">Guias de estudo</a>
@@ -354,7 +354,7 @@ def pagina_questao(questao: dict, comentario: dict, tema: dict, anterior: dict |
         corpo.append(f"<li>{esc(alternativa['texto'])}</li>")
     corpo.append("</ol>")
     corpo.append(
-        f'<a class="acao" href="{raiz}#/questao/{esc(questao["id"])}">Responder no OrtoQuestões</a>'
+        f'<a class="acao" href="{raiz}#/questao/{esc(questao["id"])}">Responder no Orto Questões</a>'
     )
     corpo.append("<details class=\"resposta\"><summary>Ver gabarito e conceito-chave</summary>")
     corpo.append(f'<p class="gabarito">Gabarito: <strong>{esc(gabarito or "–")}</strong>{" · " + esc(textos.get(gabarito or "", "")) if gabarito else ""}</p>')
@@ -524,7 +524,7 @@ def principal() -> int:
     corpo = [topo(titulo, resumo, "questoes/")]
     corpo.append("<h1>Banco de questões de ortopedia comentadas, por assunto</h1>")
     corpo.append(
-        "<p>O OrtoQuestões reúne questões de provas anteriores de ortopedia e traumatologia "
+        "<p>O Orto Questões (também escrito OrtoQuestões) reúne questões de provas anteriores de ortopedia e traumatologia "
         "(TEOT, TARO, R4 do ENARE e outras), organizadas por assunto. Cada questão traz o "
         "enunciado original, o gabarito da banca e um comentário que explica o conceito e "
         "percorre as alternativas. No site dá para treinar com filtros, revisar no momento "

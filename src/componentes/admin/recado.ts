@@ -30,7 +30,7 @@ function abertura(d: DadosRecado, v: number): string {
   if (d.respondidas < 150) return escolher([
     `Que bom ver você começando por aqui! As primeiras ${n(d.respondidas)} questões são as mais difíceis, porque é quando o hábito ainda está nascendo.`,
     `Parabéns pelo começo: ${n(d.respondidas)} questões já é um passo de verdade. O mais difícil é criar o hábito, e você já está nisso.`,
-    `Fiquei feliz em ver você dando os primeiros passos no OrtoQuestões, com ${n(d.respondidas)} questões feitas.`,
+    `Fiquei feliz em ver você dando os primeiros passos no Orto Questões, com ${n(d.respondidas)} questões feitas.`,
   ], v)
   if (d.semana >= 150) return escolher([
     `Vi que você fez ${n(d.semana)} questões só nesta semana. É um ritmo de quem está levando a prova a sério, e dá gosto de ver.`,
@@ -43,7 +43,7 @@ function abertura(d: DadosRecado, v: number): string {
     `Seu ritmo desta semana, com ${n(d.semana)} questões, mostra que o hábito já está criado. Isso é o mais difícil.`,
   ], v)
   return escolher([
-    `Você já passou de ${n(d.respondidas)} questões no OrtoQuestões, e isso não é pouco. Cada uma delas é um tema a mais que você viu antes da prova.`,
+    `Você já passou de ${n(d.respondidas)} questões no Orto Questões, e isso não é pouco. Cada uma delas é um tema a mais que você viu antes da prova.`,
     `${n(d.respondidas)} questões respondidas! Quis passar para reconhecer esse esforço, que nem sempre é fácil de encaixar na rotina.`,
     `Olhei o seu caminho até aqui e quis te dar os parabéns: ${n(d.respondidas)} questões é trabalho de quem está se preparando de verdade.`,
   ], v)

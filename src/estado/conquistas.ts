@@ -76,7 +76,7 @@ export const EMBLEMAS: readonly Emblema[] = [
     ['questoes-1000', 1000, 'R3', '1k', 'ouro', 'Responda 1.000 questões diferentes.'],
     ['questoes-2000', 2000, 'Preceptor', '2k', 'ouro', 'Responda 2.000 questões diferentes.'],
     ['questoes-3000', 3000, 'Chefe de serviço', '3k', 'esmeralda', 'Responda 3.000 questões diferentes.'],
-    ['questoes-4000', 4000, 'Lenda do OrtoQuestões', '4k', 'lendario', 'Responda 4.000 questões diferentes.'],
+    ['questoes-4000', 4000, 'Lenda do Orto Questões', '4k', 'lendario', 'Responda 4.000 questões diferentes.'],
   ]),
   ...familia('sequencia', 'sequencia', [
     ['sequencia-3', 3, 'Aquecendo', '3d', 'bronze', `Estude ${META_STREAK_DIARIA} questões por dia, 3 dias seguidos.`],

@@ -29,7 +29,7 @@ const residencia = (d: DadosModelo) => d.situacao === 'ortopedista' ? 'a rotina 
 export const MODELOS: Modelo[] = [
   {
     id: 'nunca-comecou', grupo: 'Retorno', titulo: 'Criou a conta e não começou',
-    texto: (d) => `Vi que você criou sua conta no OrtoQuestões${d.diasConta > 1 ? ` há ${d.diasConta} dias` : ''}, mas ainda não respondeu nenhuma questão. Sei que ${residencia(d)}${noServico(d)} não deixa muito tempo livre.
+    texto: (d) => `Vi que você criou sua conta no Orto Questões${d.diasConta > 1 ? ` há ${d.diasConta} dias` : ''}, mas ainda não respondeu nenhuma questão. Sei que ${residencia(d)}${noServico(d)} não deixa muito tempo livre.
 
 Uma sugestão: faça só 5 questões hoje, no intervalo de um plantão. Cada uma tem o comentário da certa e das erradas, então em 10 minutos já dá para aprender alguma coisa nova.
 
@@ -37,7 +37,7 @@ Se travou em alguma coisa no site, me responda este e-mail que eu ajudo.`,
   },
   {
     id: 'comecou-parou', grupo: 'Retorno', titulo: 'Fez poucas e parou',
-    texto: (d) => `Vi que você começou bem no OrtoQuestões, com ${n(d.respondidas)} ${d.respondidas === 1 ? 'questão' : 'questões'}, mas deu uma pausa. Acontece com todo mundo: o mais difícil é transformar o começo em hábito.
+    texto: (d) => `Vi que você começou bem no Orto Questões, com ${n(d.respondidas)} ${d.respondidas === 1 ? 'questão' : 'questões'}, mas deu uma pausa. Acontece com todo mundo: o mais difícil é transformar o começo em hábito.
 
 O que mais funciona é pouco e todo dia. Cinco questões por dia já acendem a sua sequência e, quando você vê, já passou de cem. Tudo o que você fez continua salvo, inclusive os erros, que voltam na revisão para fixar.
 
@@ -67,7 +67,7 @@ Se um dia você atrasar, ele recalcula sozinho. Se adiantar, alivia. A prévia d
   },
   {
     id: 'boas-vindas', grupo: 'Pessoal', titulo: 'Boas-vindas pessoal',
-    texto: (d) => `Que bom ter você no OrtoQuestões! Sou eu que cuido do site, e fico feliz de ver mais alguém${d.servico ? ` do ${d.servico}` : ''} estudando por aqui.
+    texto: (d) => `Que bom ter você no Orto Questões! Sou eu que cuido do site, e fico feliz de ver mais alguém${d.servico ? ` do ${d.servico}` : ''} estudando por aqui.
 
 Três dicas para começar: treine por tema, leia o comentário mesmo quando acertar e deixe a Revisão trazer de volta o que você errou. E se encontrar qualquer erro ou tiver uma ideia, é só responder este e-mail.
 
@@ -81,13 +81,13 @@ Continue assim, no seu ritmo. O esforço de agora aparece lá na frente.`,
   },
   {
     id: 'opiniao', grupo: 'Pessoal', titulo: 'Pedir opinião',
-    texto: (d) => `Você já fez ${n(d.respondidas)} questões no OrtoQuestões, então ninguém melhor para me dizer o que está bom e o que dá para melhorar.
+    texto: (d) => `Você já fez ${n(d.respondidas)} questões no Orto Questões, então ninguém melhor para me dizer o que está bom e o que dá para melhorar.
 
 O que você mais usa? Sentiu falta de alguma coisa? Teve algum comentário que não ajudou? Pode responder este e-mail do jeito que quiser, mesmo que seja uma linha. Eu leio todas.`,
   },
   {
     id: 'indicar', grupo: 'Pessoal', titulo: 'Pedir para indicar',
-    texto: (d) => `Queria te agradecer por estudar no OrtoQuestões. O site é um projeto independente e cresce no boca a boca, então um pedido: se você gosta, manda o link para os colegas${d.servico ? ` do ${d.servico}` : ' da residência'}.
+    texto: (d) => `Queria te agradecer por estudar no Orto Questões. O site é um projeto independente e cresce no boca a boca, então um pedido: se você gosta, manda o link para os colegas${d.servico ? ` do ${d.servico}` : ' da residência'}.
 
 As questões têm uma parte gratuita todo dia, e estudar junto rende mais (e deixa o ranking mais disputado). O endereço é ortoquestoes.com.br.
 
@@ -95,7 +95,7 @@ Muito obrigado!`,
   },
   {
     id: 'obrigado-assinante', grupo: 'Pessoal', titulo: 'Agradecer a assinatura',
-    texto: () => `Queria te agradecer pessoalmente por assinar o OrtoQuestões. É a assinatura que paga o servidor e o tempo de manter as questões e os comentários em dia, e cada uma faz diferença.
+    texto: () => `Queria te agradecer pessoalmente por assinar o Orto Questões. É a assinatura que paga o servidor e o tempo de manter as questões e os comentários em dia, e cada uma faz diferença.
 
 Se tiver qualquer sugestão, problema ou ideia, responda este e-mail que eu leio e respondo. Bons estudos e conte comigo até a prova!`,
   },

@@ -41,7 +41,7 @@ export function Sobre() {
         <p className="pj-heroi__selo">O projeto</p>
         <h1>Questões de ortopedia comentadas, feitas por quem vive a especialidade.</h1>
         <p className="pj-heroi__lide">
-          O OrtoQuestões reúne questões de provas anteriores (TEOT, TARO, R4 do ENARE, TECOC de ombro e cotovelo e outras),
+          O Orto Questões (também escrito OrtoQuestões, no endereço ortoquestoes.com.br) reúne questões de provas anteriores (TEOT, TARO, R4 do ENARE, TECOC de ombro e cotovelo e outras),
           organizadas por assunto, para quem se prepara para o título de especialista ou para a
           residência. Foi criado por um residente de ortopedia para quem estuda entre plantões e
           cirurgias: da página inicial até a primeira questão, no máximo dois cliques.
@@ -197,8 +197,8 @@ export function Contato({ consulta }: { consulta: URLSearchParams }) {
   const [tipo, definirTipo] = useState<AssuntoSuporte>(() => assuntoInicial(consulta))
   const [mensagem, definirMensagem] = useState(() => modeloSuporte(assuntoInicial(consulta), questao, exclusao))
   const tituloAssunto = ASSUNTOS_SUPORTE.find(item => item.id === tipo)?.titulo ?? 'Outro assunto'
-  const assunto = exclusao && tipo === 'dados' ? 'OrtoQuestões — solicitação de exclusão da conta' : questao && tipo === 'questao'
-    ? `OrtoQuestões — questão ${questao}` : `OrtoQuestões — ${tituloAssunto}`
+  const assunto = exclusao && tipo === 'dados' ? 'Orto Questões — solicitação de exclusão da conta' : questao && tipo === 'questao'
+    ? `Orto Questões — questão ${questao}` : `Orto Questões — ${tituloAssunto}`
 
   function selecionarTipo(novoTipo: AssuntoSuporte) {
     if (novoTipo === tipo) return

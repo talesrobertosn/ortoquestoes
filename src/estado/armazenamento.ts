@@ -117,7 +117,7 @@ export function exportarDados(): string {
 export function importarDados(conteudo: string): void {
   const backup = JSON.parse(conteudo) as { produto?: string; versao?: number; dados?: Record<string, unknown> }
   if (backup.produto !== 'OrtoQuestões' || backup.versao !== 1 || !backup.dados) {
-    throw new Error('Este arquivo não é um backup válido do OrtoQuestões.')
+    throw new Error('Este arquivo não é um backup válido do Orto Questões.')
   }
   for (const [chave, valor] of Object.entries(backup.dados)) gravar(chave, valor)
 }

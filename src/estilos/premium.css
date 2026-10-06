@@ -612,6 +612,7 @@
 .rodape-marca__logo { display: inline-flex; color: var(--texto); text-decoration: none; }
 .rodape-marca p { margin: 0.75rem 0 0; color: var(--texto-2); font-size: var(--corpo-menor); max-width: 34ch; }
 .rodape-marca .rodape-marca__autor { color: var(--texto); font-weight: 600; }
+.rodape-marca .rodape-marca__nome { font-size: .85rem; color: var(--texto-2); }
 .rodape-coluna { display: grid; align-content: start; gap: 0.55rem; }
 .rodape-coluna__titulo { margin: 0 0 0.25rem; font-size: var(--meta); font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--texto-2); }
 .rodape-coluna a { width: fit-content; color: var(--texto); text-decoration: none; font-size: var(--corpo-menor); }

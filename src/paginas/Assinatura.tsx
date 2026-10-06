@@ -23,7 +23,7 @@ interface MetricasConta { respostas_total: number; sequencia: number; plano: str
 
 /** O que só o assinante tem. A ordem é a da página e a do comparativo. */
 const RECURSOS: { icone: NomeIcone; titulo: string; texto: string; destino: string; largo?: boolean }[] = [
-  { icone: 'rota', titulo: 'Cronograma baseado no que mais cai', texto: 'Você diz a data da prova e o OrtoQuestões monta a meta de cada dia e os temas de cada semana, na ordem do que mais cai no TEOT e no TARO e com reforço nos seus pontos fracos. Atrasou ou adiantou, ele se ajusta sozinho.', destino: '/cronograma', largo: true },
+  { icone: 'rota', titulo: 'Cronograma baseado no que mais cai', texto: 'Você diz a data da prova e o Orto Questões monta a meta de cada dia e os temas de cada semana, na ordem do que mais cai no TEOT e no TARO e com reforço nos seus pontos fracos. Atrasou ou adiantou, ele se ajusta sozinho.', destino: '/cronograma', largo: true },
   { icone: 'trofeu', titulo: 'Simulado Nacional, todo mês', texto: 'Uma prova igual para todos os assinantes do Brasil, com 50 questões de TEOT e TARO em duas horas. Corrigida na hora, com a sua posição e um relatório de prontidão por tema.', destino: '/simulado-nacional', largo: true },
   { icone: 'grafico', titulo: 'Temas que mais caem', texto: 'O ranking das áreas e dos assuntos mais cobrados. Um toque em qualquer assunto e começa o treino dele.', destino: '/temas-que-mais-caem' },
   { icone: 'grupo', titulo: 'Como a turma respondeu', texto: 'Depois de cada questão, quantos marcaram cada alternativa e qual é a pegadinha. E sessões com as que a turma mais erra.', destino: '/treinar' },
@@ -223,7 +223,7 @@ export function Assinatura() {
         {mensagem && !planoEscolhido && <p role="status" className="vp-aviso">{mensagem}</p>}
         <div className="vp-pagamento-seguro" role="note">
           <Icone nome="cadeado" tamanho={20} />
-          <p><strong>Pagamento protegido pelo Mercado Pago.</strong> No cartão, a renovação é automática na periodicidade escolhida; no Pix, é um pagamento único pelo período completo, sem renovação. Os dados do cartão ficam no Mercado Pago, nunca no OrtoQuestões. <a href={href('/condicoes-assinatura')}>Condições da assinatura</a></p>
+          <p><strong>Pagamento protegido pelo Mercado Pago.</strong> No cartão, a renovação é automática na periodicidade escolhida; no Pix, é um pagamento único pelo período completo, sem renovação. Os dados do cartão ficam no Mercado Pago, nunca no Orto Questões. <a href={href('/condicoes-assinatura')}>Condições da assinatura</a></p>
         </div>
       </section>}
 
@@ -296,7 +296,7 @@ export function Assinatura() {
         <header className="vp-secao__cabeca">
           <p className="vp-sobre">Para onde vai o dinheiro</p>
           <h2>Um projeto independente, feito por quem vive a ortopedia</h2>
-          <p>O OrtoQuestões não tem patrocinador. A assinatura paga o servidor, o banco de dados e o tempo de manter o acervo: questões novas, comentários revisados e correções. Assinar é o jeito mais direto de manter tudo isso no ar e gratuito para quem ainda não pode pagar.</p>
+          <p>O Orto Questões não tem patrocinador. A assinatura paga o servidor, o banco de dados e o tempo de manter o acervo: questões novas, comentários revisados e correções. Assinar é o jeito mais direto de manter tudo isso no ar e gratuito para quem ainda não pode pagar.</p>
         </header>
         {sessao && respondidasConta > 0 && <p className="vp-voce">Você já respondeu <strong>{respondidasConta.toLocaleString('pt-BR')}</strong> questões por aqui{metricas?.sequencia ? <> e está numa sequência de <strong>{metricas.sequencia} {metricas.sequencia === 1 ? 'dia' : 'dias'}</strong></> : null}. Imagine esse ritmo sem teto.</p>}
       </section>}
@@ -361,7 +361,7 @@ export function Assinatura() {
             </>
           )}
           {mensagem && <p role="status" className="ck__mensagem">{mensagem}</p>}
-          <p className="ck__seguro"><Icone nome="cadeado" tamanho={14} /> Checkout seguro do Mercado Pago. Você só paga se confirmar lá; o OrtoQuestões não recebe os dados do cartão. Após os 7 dias da garantia, cancelar interrompe as renovações e mantém o acesso até o fim do período pago.</p>
+          <p className="ck__seguro"><Icone nome="cadeado" tamanho={14} /> Checkout seguro do Mercado Pago. Você só paga se confirmar lá; o Orto Questões não recebe os dados do cartão. Após os 7 dias da garantia, cancelar interrompe as renovações e mantém o acesso até o fim do período pago.</p>
         </div>}
       </JanelaCentral>
 

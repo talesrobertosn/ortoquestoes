@@ -14,7 +14,7 @@ export function recurso(caminho: string): string {
 }
 
 export const SITE = {
-  nome: 'OrtoQuestões',
+  nome: 'Orto Questões',
   descricao:
     'Banco de questões de ortopedia e traumatologia com provas anteriores do TEOT, do TARO e do R4 do ENARE, organizadas por assunto, com comentários baseados na bibliografia de referência e contribuições da comunidade.',
   /** Endereço público, usado em canonical, Open Graph e sitemap. */

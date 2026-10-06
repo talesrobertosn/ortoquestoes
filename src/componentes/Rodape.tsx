@@ -44,8 +44,9 @@ export function Rodape({ comInstagram = false }: { comInstagram?: boolean }) {
 
         <div className="rodape-grade">
           <div className="rodape-marca">
-            <a href={href('/')} className="rodape-marca__logo" aria-label="OrtoQuestões, página inicial"><MarcaHorizontal altura={26} /></a>
+            <a href={href('/')} className="rodape-marca__logo" aria-label="Orto Questões, página inicial"><MarcaHorizontal altura={26} /></a>
             <p>Questões de ortopedia comentadas para TEOT, TARO e ENARE R4.</p>
+            <p className="rodape-marca__nome">Orto Questões, também escrito OrtoQuestões · ortoquestoes.com.br</p>
             <p className="rodape-marca__autor">Feito por {SITE.autor}, para a comunidade de ortopedia.</p>
           </div>
           <nav className="rodape-coluna" aria-label="Estudar">

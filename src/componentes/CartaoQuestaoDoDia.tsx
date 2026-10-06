@@ -42,7 +42,7 @@ export function CartaoQuestaoDoDia({ indice }: { indice: Indice }) {
       }
       const arquivos = blobs.map((b, i) => new File([b], `questao-do-dia-${questao.id}${blobs.length > 1 ? `-${i + 1}` : ''}.png`, { type: 'image/png' }))
       if (podeCompartilhar && navigator.canShare?.({ files: arquivos })) {
-        await navigator.share({ files: arquivos, title: 'Questão do dia · OrtoQuestões' })
+        await navigator.share({ files: arquivos, title: 'Questão do dia · Orto Questões' })
       } else {
         for (const arquivo of arquivos) {
           const url = URL.createObjectURL(arquivo)

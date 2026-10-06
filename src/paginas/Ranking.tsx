@@ -195,7 +195,7 @@ export function Ranking() {
       <div className="rk-heroi__texto">
         <p className="rk-heroi__selo"><Icone nome="trofeu" tamanho={16} /> Top 50</p>
         <h1>Ranking</h1>
-        <p>Quem mais responde questões no OrtoQuestões. Conta volume, não acerto: aqui ganha quem aparece todo dia.</p>
+        <p>Quem mais responde questões no Orto Questões. Conta volume, não acerto: aqui ganha quem aparece todo dia.</p>
       </div>
       {sessao && (
         <div className="rk-heroi__cartao">

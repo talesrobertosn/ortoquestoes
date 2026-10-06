@@ -20,7 +20,7 @@ const ESPERA_ENTRADA = 1500
 const PAUSA_COMPARTILHOU = 90 * DIA
 
 // Texto que chega pronto no WhatsApp; *negrito* é a formatação do próprio app.
-export const MENSAGEM = `Olá! Quero indicar o *OrtoQuestões*, um banco de questões de ortopedia que dá para usar de graça.
+export const MENSAGEM = `Olá! Quero indicar o *Orto Questões*, um banco de questões de ortopedia que dá para usar de graça.
 
 Reúne provas do TEOT, TARO, fellowships e R4, com comentário em cada alternativa e revisão das questões erradas. A conta é grátis e libera um número limitado de questões por dia, renovado todos os dias; os planos liberam sem limite.
 
@@ -104,7 +104,7 @@ export function ConviteCompartilhar({ ativo }: { ativo: boolean }) {
     return (
       <aside
         className={'convite convite--compacto nao-imprime' + (saindo ? ' convite--saindo' : '')}
-        role="dialog" aria-modal="false" aria-label="Convite para compartilhar o OrtoQuestões"
+        role="dialog" aria-modal="false" aria-label="Convite para compartilhar o Orto Questões"
         style={desloca}
         onTouchStart={e => { toque.current = { x: e.touches[0].clientX, y: e.touches[0].clientY } }}
         onTouchMove={e => { if (toque.current) definirArraste({ x: e.touches[0].clientX - toque.current.x, y: e.touches[0].clientY - toque.current.y }) }}
@@ -128,7 +128,7 @@ export function ConviteCompartilhar({ ativo }: { ativo: boolean }) {
     <aside className={'convite nao-imprime' + (saindo ? ' convite--saindo' : '')} role="dialog" aria-modal="false" aria-labelledby="convite-titulo">
       <header className="convite__topo">
         <span className="convite__avatar"><Simbolo tamanho={20} /><i aria-hidden="true" /></span>
-        <span className="convite__quem"><strong id="convite-titulo">OrtoQuestões</strong><small>projeto independente</small></span>
+        <span className="convite__quem"><strong id="convite-titulo">Orto Questões</strong><small>projeto independente</small></span>
         <button type="button" className="convite__fechar" aria-label="Fechar convite" onClick={() => fechar()}><Icone nome="fechar" tamanho={16} /></button>
       </header>
       <div className="convite__conversa" aria-live="polite">

@@ -70,7 +70,7 @@ export function Progresso() {
       <section className="limite-leitura">
         <h1>Como o acervo está sendo comentado</h1>
         <p style={{ marginTop: '0.75rem' }}>
-          Cada questão do OrtoQuestões pode receber duas explicações independentes: o
+          Cada questão do Orto Questões pode receber duas explicações independentes: o
           comentário do site, baseado na bibliografia de referência, e os comentários da comunidade de
           ortopedistas e residentes. Esta página mostra, sem maquiagem, quanto do acervo já
           tem cada um deles — inclusive o que ainda falta.

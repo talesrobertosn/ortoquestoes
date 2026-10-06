@@ -233,7 +233,7 @@ export function Resumo() {
 
   function exportar() {
     const linhas = [
-      `OrtoQuestões — resumo de sessão`,
+      `Orto Questões — resumo de sessão`,
       `Filtro: ${descreverFiltros(sessao!.filtros)}`,
       `Data: ${new Date(fim).toLocaleString('pt-BR')}`,
       `Respondidas: ${dados!.respondidas.length} de ${sessao!.ids.length}`,

@@ -36,7 +36,7 @@ export function ContribuirComentario({ questao }: { questao: Questao }) {
   const alternativaCorreta = questao.alternativas.find((a) => a.letra === questao.gabarito)
   const podeEnviar = texto.trim().length >= 20 && identificacao.nome.trim().length >= 2
 
-  const assunto = `OrtoQuestões — comentário da questão ${questao.id}`
+  const assunto = `Orto Questões — comentário da questão ${questao.id}`
 
   function corpoDoEmail(): string {
     const link = window.location.href.split('#')[0] + href(`/questao/${questao.id}`)

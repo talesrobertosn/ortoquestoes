@@ -175,7 +175,7 @@ function OfertaLimite({ consumidas, limite, sequencia, tempo, aoFechar, larga = 
       </section>
 
       <section className="pw-oferta" aria-label="Assinatura">
-        <p className="pw-oferta__rotulo">Assine o OrtoQuestões</p>
+        <p className="pw-oferta__rotulo">Assine o Orto Questões</p>
         <p className="pw-oferta__preco"><b>{real(POR_MES_ANUAL)}</b><span>por mês no plano anual</span></p>
         <p className="pw-oferta__barato">Um dos bancos de questões de ortopedia mais baratos do Brasil: {real(PLANO_MAIS_EM_CONTA.total)} por ano, menos de {real(CUSTO_POR_DIA)} por dia.</p>
         <ul className="pw-oferta__lista">
@@ -183,7 +183,7 @@ function OfertaLimite({ consumidas, limite, sequencia, tempo, aoFechar, larga = 
         </ul>
         <a className="botao botao--principal botao--grande pw-oferta__cta" href={href('/assinatura')}>Assinar por {real(POR_MES_ANUAL)}/mês</a>
         <p className="pw-oferta__garantia"><Icone nome="certo" tamanho={14} /> Garantia de 7 dias · cancele quando quiser · também há plano mensal</p>
-        <p className="pw-oferta__projeto">O OrtoQuestões é um projeto independente: a assinatura paga o site e mantém para todo mundo o gratuito, com um número limitado de questões por dia.</p>
+        <p className="pw-oferta__projeto">O Orto Questões é um projeto independente: a assinatura paga o site e mantém para todo mundo o gratuito, com um número limitado de questões por dia.</p>
         <button className="pw-oferta__depois" type="button" onClick={aoFechar}>Volto amanhã pelo gratuito</button>
       </section>
     </div>

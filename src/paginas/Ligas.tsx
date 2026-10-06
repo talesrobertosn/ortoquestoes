@@ -204,7 +204,7 @@ function DetalheLiga({ id }: { id: string }) {
     try { await navigator.clipboard.writeText(link); definirCopiado(true); window.setTimeout(() => definirCopiado(false), 2500) }
     catch { window.prompt('Copie o link de convite:', link) }
   }
-  const mensagem = encodeURIComponent(`Entra na nossa liga "${liga.nome}" no OrtoQuestões e vamos ver quem estuda mais até a prova: ${link}`)
+  const mensagem = encodeURIComponent(`Entra na nossa liga "${liga.nome}" no Orto Questões e vamos ver quem estuda mais até a prova: ${link}`)
   async function sair() {
     if (!window.confirm(liga!.sou_dono ? 'Encerrar a liga para todos os membros? Não dá para desfazer.' : 'Sair desta liga?')) return
     try { await chamarRpc('sair_liga', { p_liga: id }); navegar('/ligas') } catch { definirErro('Não foi possível sair agora.') }
