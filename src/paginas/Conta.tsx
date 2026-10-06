@@ -16,6 +16,8 @@ import { planoRevisao } from '../estado/planoRevisao'
 import { usarLeitura, usarEtiquetas, usarRitmoRevisao } from '../estado/preferencias'
 import { usarTema } from '../estado/tema'
 import { dadosAceiteTermos, VERSAO_TERMOS } from '../conta/termos'
+import { dadosOrigem } from '../conta/origem'
+import { eventoMeta } from '../conta/consentimento'
 import { textoErro } from '../conta/erros'
 import { Icone } from '../componentes/Icone'
 import { BotaoGoogle } from '../componentes/BotaoGoogle'
@@ -178,8 +180,9 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
       } else if (modo === 'criar') {
         if (!aceitouTermos) { definirMensagem('Leia e aceite os Termos de Uso para criar sua conta.'); return }
         if (!perfilCompleto()) return
-        const { error } = await supabase.auth.signUp({ email: email.trim(), password: senha, options: { emailRedirectTo: retornoConta(), data: { ...dadosPerfil(), ...dadosAceiteTermos() } } })
+        const { error } = await supabase.auth.signUp({ email: email.trim(), password: senha, options: { emailRedirectTo: retornoConta(), data: { ...dadosPerfil(), ...dadosAceiteTermos(), ...dadosOrigem() } } })
         if (error) throw error
+        eventoMeta('CompleteRegistration', { content_name: 'email' })
         definirSenha(''); definirConfirmacao(''); definirMensagem('Confira seu e-mail para concluir o cadastro. Se já tiver uma conta, use Entrar ou recuperar senha.')
       } else {
         const { error } = await supabase.auth.resetPasswordForEmail(email.trim(), { redirectTo: retornoConta(true) })

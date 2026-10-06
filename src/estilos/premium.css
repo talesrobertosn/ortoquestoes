@@ -617,6 +617,8 @@
 .rodape-coluna__titulo { margin: 0 0 0.25rem; font-size: var(--meta); font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--texto-2); }
 .rodape-coluna a { width: fit-content; color: var(--texto); text-decoration: none; font-size: var(--corpo-menor); }
 .rodape-coluna a:hover { color: var(--verdete); text-decoration: underline; }
+.rodape-coluna__botao { width: fit-content; padding: 0; border: 0; background: none; font: inherit; color: var(--texto); font-size: var(--corpo-menor); cursor: pointer; text-align: left; }
+.rodape-coluna__botao:hover { color: var(--verdete); text-decoration: underline; }
 .rodape-coluna__insta { display: inline-flex; align-items: center; gap: 0.35rem; color: #a3276f !important; font-weight: 700; }
 :root[data-tema="escuro"] .rodape-coluna__insta { color: #f07ab5 !important; }
 .rodape-base { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem 1rem; margin-top: 2rem; padding-top: 1.1rem; border-top: var(--borda); color: var(--texto-2); font-size: var(--meta); }
@@ -631,7 +633,7 @@
   .rodape-marca { grid-column: 1 / -1; }
   /* Alvo de toque de 40px: com 24px era fácil acertar o link do lado. */
   .rodape-coluna { gap: 0; }
-  .rodape-coluna a { display: inline-flex; align-items: center; min-height: 40px; }
+  .rodape-coluna a, .rodape-coluna__botao { display: inline-flex; align-items: center; min-height: 40px; }
 }
 
 /* ==========================================================================

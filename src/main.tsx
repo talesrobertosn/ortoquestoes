@@ -12,6 +12,11 @@ import './estilos/premium.css'
 import './estilos/recursos.css'
 import './estilos/impressao.css'
 import { registrarServiceWorker } from './util/instalacao'
+import { capturarOrigem } from './conta/origem'
+
+// Antes de qualquer troca de endereço: guarda de onde a pessoa chegou (link
+// marcado do anúncio, Instagram, Google…) para o cadastro levar junto.
+capturarOrigem()
 
 const raiz = document.getElementById('raiz')
 if (raiz) {

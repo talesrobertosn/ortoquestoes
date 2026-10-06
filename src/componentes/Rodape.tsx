@@ -2,6 +2,7 @@ import { SITE } from '../config'
 import { MarcaHorizontal } from '../marca/Simbolo'
 import { href } from '../util/rotas'
 import { Icone } from './Icone'
+import { abrirPreferenciasCookies, PIXEL_META } from '../conta/consentimento'
 
 const ESTUDAR = [
   ['/treinar', 'Treinar'],
@@ -60,6 +61,7 @@ export function Rodape({ comInstagram = false }: { comInstagram?: boolean }) {
           <nav className="rodape-coluna" aria-label="Projeto">
             <p className="rodape-coluna__titulo">Projeto</p>
             {PROJETO.map(([destino, rotulo]) => <a key={destino} href={href(destino)}>{rotulo}</a>)}
+            {PIXEL_META && <button type="button" className="rodape-coluna__botao" onClick={abrirPreferenciasCookies}>Cookies</button>}
             <a href={SITE.instagram} target="_blank" rel="noopener noreferrer me" className="rodape-coluna__insta"><Icone nome="instagram" tamanho={16} /> @{SITE.instagramUsuario}</a>
           </nav>
         </div>

@@ -3,7 +3,7 @@
  * registrar, no cadastro de cada conta, qual versão a pessoa efetivamente
  * aceitou.
  */
-export const VERSAO_TERMOS = '2026-10-01'
+export const VERSAO_TERMOS = '2026-10-06'
 
 /** Versão das condições específicas exibidas antes de abrir o checkout. */
 export const VERSAO_CONDICOES_ASSINATURA = '2026-10-01'

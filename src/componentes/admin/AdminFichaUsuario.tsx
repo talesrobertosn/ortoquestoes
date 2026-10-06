@@ -6,7 +6,7 @@ import { usarIndice } from '../../dados/usarIndice'
 import { Icone } from '../Icone'
 import { BarrasHorizontais } from './AdminGraficos'
 import type { LinhaUsuario } from './AdminUsuarios'
-import { PLANOS, acertoAposRevisao, acertoPorTentativa, acertoReal, data, dataHora, haQuanto, motivoFalhaEmail, porcentagem } from './formatos'
+import { PLANOS, acertoAposRevisao, acertoPorTentativa, acertoReal, data, dataHora, haQuanto, motivoFalhaEmail, porcentagem, rotuloOrigem } from './formatos'
 import { escreverRecado } from './recado'
 import { MODELOS, gravarModelosSalvos, lerModelosSalvos, modeloSugerido, preencher, type DadosModelo, type ModeloSalvo } from './modelosEmail'
 
@@ -117,6 +117,7 @@ export function AdminFichaUsuario({ usuario, aoFechar }: { usuario: LinhaUsuario
             <Icone nome="bandeira" tamanho={16} />
             <span>{detalhe.perfil.situacao && <strong>{rotuloEtapa(detalhe.perfil.situacao, usuario.ano_residencia)}</strong>}{detalhe.perfil.servico && <> · {detalhe.perfil.servico}</>}{(detalhe.perfil.cidade || detalhe.perfil.uf) && <> · {[detalhe.perfil.cidade, detalhe.perfil.uf].filter(Boolean).join('/')}</>}{usuario.provas && <> · estuda para {usuario.provas.split(',').map(rotuloProva).join(', ')}</>}</span>
           </p>}
+          {usuario.origem && <p className="adm-ficha__servico"><Icone nome="alvo" tamanho={16} /><span>Chegou por <strong>{rotuloOrigem(usuario.origem)}</strong>{usuario.origem.pagina && usuario.origem.pagina !== '/' && <> · entrou em {usuario.origem.pagina}</>}</span></p>}
           <div className="adm-usuario__selos">
             {usuario.plano_vigente && <span className="adm-selo adm-selo--ok">Assinante {PLANOS[usuario.plano_vigente]?.toLowerCase()}</span>}
             {cortesiaVale && <span className="adm-selo adm-selo--ok">Cortesia{detalhe?.cortesia?.ate ? ` até ${data(detalhe.cortesia.ate)}` : ''}</span>}

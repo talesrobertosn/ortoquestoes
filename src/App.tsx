@@ -8,6 +8,7 @@ import { usarLeitura } from './estado/preferencias'
 import { ErroDePagina } from './componentes/ErroDePagina'
 import { ExigeConta } from './componentes/ExigeConta'
 import { ConviteDiario } from './componentes/ConviteDiario'
+import { AvisoCookies } from './componentes/AvisoCookies'
 
 // Cada página é carregada apenas ao ser visitada. Além de reduzir o JavaScript
 // inicial, isso evita baixar o acervo completo para rotas administrativas,
@@ -211,6 +212,7 @@ export function App() {
           questão; o painel do administrador é ferramenta, sem rodapé do site. */}
       {!['sessao', 'questao', 'admin'].includes(primeiro ?? '') && <Rodape comInstagram={!primeiro || primeiro === 'projeto' || primeiro === 'sobre'} />}
       <ConviteDiario caminho={rota.caminho} />
+      <AvisoCookies />
     </div>
   )
 }

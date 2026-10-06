@@ -44,6 +44,9 @@ Crie sua conta e treine grátis todos os dias. Link na bio: ortoquestoes.com.br
 - Texto principal: "O TEOT e o TEPOT são em 10 de janeiro. O Orto Questões é um banco de questões on-line com as provas do TEOT e do TARO, Cirurgia da Mão (com cirurgia plástica), Fellowship de Quadril e R4, com cada alternativa comentada. O Cronograma te dá questões diárias até a prova. Crie sua conta e treine grátis todos os dias."
 - Título: "Banco de questões para o TEOT e o TEPOT"
 - Botão: "Cadastre-se" (ou "Saiba mais"), destino ortoquestoes.com.br
+- Parâmetros de URL (campo do anúncio, em "Rastreamento"): `utm_source=instagram&utm_medium=anuncio&utm_campaign=teot-tepot`.
+  Assim o painel (Crescimento > De onde vêm os cadastros) separa as contas que vieram deste anúncio.
+- Link da bio do Instagram: `https://ortoquestoes.com.br/?utm_source=instagram&utm_medium=bio`
 
 ## Stories
 

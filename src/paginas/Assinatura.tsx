@@ -6,6 +6,7 @@ import { Icone, type NomeIcone } from '../componentes/Icone'
 import { Simbolo } from '../marca/Simbolo'
 import { JanelaCentral } from '../componentes/JanelaCentral'
 import { VERSAO_CONDICOES_ASSINATURA } from '../conta/termos'
+import { eventoMeta } from '../conta/consentimento'
 import { href } from '../util/rotas'
 import { LIMITE_GRATIS_ATUAL } from '../config'
 import { MENSAL, PLANOS, real } from '../dados/planos'
@@ -91,6 +92,7 @@ export function Assinatura() {
     if (!planoEscolhido || !aceitouCondicoes || !pagamentosHabilitados || !sessao || abrindoCheckout) return
     definirAbrindoCheckout(true)
     definirMensagem('Preparando checkout seguro…')
+    eventoMeta('InitiateCheckout', { content_name: planoEscolhido.id, currency: 'BRL', value: planoEscolhido.total })
     try {
       if (meioPagamento === 'pix') {
         const r = await chamarFuncao<{ url: string; pedido_id: string; expira_em: string }>('criar-pix', {

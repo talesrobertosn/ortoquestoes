@@ -34,6 +34,8 @@ export interface LinhaUsuario {
   erros_primeira?: number | null
   acertos_tentativas?: number | null
   erros_tentativas?: number | null
+  // Da migração 202610070100 em diante: de onde veio o cadastro (null nas contas antigas).
+  origem?: { fonte?: string; meio?: string; campanha?: string; conteudo?: string; marcada?: boolean; pagina?: string; em?: string } | null
 }
 
 export type FiltroUsuarios = 'todos' | 'online' | 'hoje' | 'ativos' | 'novos' | 'novos_parados' | 'assinantes' | 'parados'

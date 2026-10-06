@@ -1579,6 +1579,20 @@ kbd {
 .nota-pessoal .meta { margin: 0.25rem 0 0.625rem; }
 .nota-pessoal textarea { padding: 0.65rem 0.75rem; resize: vertical; line-height: 1.5; }
 
+/* Aviso de cookies (só com o pixel configurado): cartão no rodapé da tela, acima da navegação do celular. */
+.aviso-cookies {
+  position: fixed; z-index: 45; left: 50%; bottom: max(1rem, env(safe-area-inset-bottom)); transform: translateX(-50%);
+  width: min(40rem, calc(100% - 2rem)); display: flex; gap: 1rem; align-items: center;
+  padding: 0.9rem 1rem; border: var(--borda); border-radius: var(--raio-cartao);
+  background: var(--superficie); box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+}
+.aviso-cookies p { margin: 0; font-size: 0.88rem; line-height: 1.45; }
+.aviso-cookies__botoes { display: flex; gap: 0.5rem; flex-shrink: 0; }
+@media (max-width: 40rem) {
+  .aviso-cookies { flex-direction: column; align-items: stretch; bottom: calc(4.6rem + env(safe-area-inset-bottom)); }
+  .aviso-cookies__botoes .botao { flex: 1; }
+}
+
 /* Navegação principal ao alcance do polegar. */
 .navegacao-mobile { display: none; }
 @media (max-width: 40rem) {

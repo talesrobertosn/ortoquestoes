@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import { PROVAS, rotuloEtapa, rotuloProva } from '../../conta/perfilEstudo'
 import { BarrasHorizontais } from './AdminGraficos'
-import { baixarCsv, porcentagem, acertoAposRevisao, acertoReal } from './formatos'
+import { baixarCsv, porcentagem, acertoAposRevisao, acertoReal, rotuloOrigem } from './formatos'
 import type { LinhaUsuario } from './AdminUsuarios'
 import { chaveServico, servicoConhecido } from './servicosConhecidos'
 
@@ -71,9 +71,12 @@ export function AdminPerfis({ usuarios }: { usuarios: LinhaUsuario[] }) {
       nomeServico.set(chave, servicoConhecido(u.servico, u.uf) ?? u.servico!.trim())
       escritas.set(chave, (escritas.get(chave) ?? new Set()).add(u.servico!.trim()))
     }
+    // Origem do cadastro: só as contas criadas depois da medição (as antigas vêm sem origem).
+    const comOrigem = base.filter(u => u.origem)
+    const origens = agrupar(comOrigem, u => [rotuloOrigem(u.origem!)]).sort((a, b) => b.contas - a.contas)
     const informaram = base.filter(u => u.situacao).length
     const completos = base.filter(u => u.situacao && (u.situacao !== 'residente' || u.ano_residencia) && provasDe(u).length).length
-    return { base, etapas, provas, comProva: comProva.length, cruzamento, ufs, servicos, nomeServico, escritas, informaram, completos }
+    return { base, etapas, provas, comProva: comProva.length, cruzamento, ufs, servicos, nomeServico, escritas, comOrigem: comOrigem.length, origens, informaram, completos }
   }, [usuarios, criterio])
 
   const total = d.base.length
@@ -154,5 +157,21 @@ export function AdminPerfis({ usuarios }: { usuarios: LinhaUsuario[] }) {
         </tr>)}</tbody>
       </table></div>
     </>}
+
+    <h3>De onde vêm os cadastros</h3>
+    {!usuarios.some(u => u.origem !== undefined)
+      ? <p className="adm-alerta" role="status">Para ver a origem dos cadastros, rode a migração 202610070100_origem_cadastro.sql (parte 7 em supabase/colar-no-painel).</p>
+      : d.origens.length === 0
+        ? <p className="adm-nota">Nenhuma conta nova com origem registrada ainda. A medição vale para as contas criadas a partir de agora; use os links marcados no anúncio e na bio.</p>
+        : <>
+          <p className="adm-nota">{d.comOrigem} conta(s) com a origem registrada (as criadas desde a medição). Link marcado (utm) diz o anúncio ou a bio; sem ele, vale o site de onde a pessoa chegou.</p>
+          <div className="adm-tabela-rolagem" role="region" aria-label="Origem dos cadastros" tabIndex={0}><table className="tabela adm-retencao">
+            <thead><tr><th scope="col">Origem</th><th scope="col">Contas</th><th scope="col">% das novas</th><th scope="col">Começaram</th><th scope="col">Ativos 7 d</th><th scope="col">Assinantes</th></tr></thead>
+            <tbody>{d.origens.map(o => <tr key={o.rotulo}>
+              <th scope="row" className="adm-servico">{o.rotulo}</th><td className="numerico">{o.contas}</td><td className="numerico">{pct(o.contas, d.comOrigem)}</td>
+              <td className="numerico">{o.comRespostas}</td><td className="numerico">{o.ativos7d}</td><td className="numerico">{o.assinantes}</td>
+            </tr>)}</tbody>
+          </table></div>
+        </>}
   </section>
 }

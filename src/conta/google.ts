@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 import type { User } from '@supabase/auth-js'
 import { chave, supabase, url, type ClienteSupabase } from './supabase'
 import { dadosAceiteTermos, VERSAO_TERMOS } from './termos'
+import { dadosOrigem } from './origem'
+import { eventoMeta } from './consentimento'
 
 /**
  * Entrar com o Google (OAuth pelo Supabase, fluxo PKCE).
@@ -89,6 +91,13 @@ async function completarPerfil(cliente: ClienteSupabase, usuario: User) {
     if (sobrenome) dados.sobrenome = sobrenome
   }
   if (m.termos_versao !== VERSAO_TERMOS) Object.assign(dados, dadosAceiteTermos())
+  // Conta nova pelo Google (criada agora há pouco): registra a origem e conta o cadastro.
+  // Contas antigas não ganham origem, para não parecerem vindas do anúncio de hoje.
+  const nova = Date.now() - Date.parse(usuario.created_at ?? '') < 86_400_000
+  if (nova && !m.origem) {
+    Object.assign(dados, dadosOrigem())
+    eventoMeta('CompleteRegistration', { content_name: 'google' })
+  }
   if (!Object.keys(dados).length) return
   try { await cliente.auth.updateUser({ data: dados }) } catch { /* tenta de novo no próximo login */ }
 }

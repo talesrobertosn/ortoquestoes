@@ -128,3 +128,12 @@ export function somarAcertos(lista: NumerosAcerto[]): Required<NumerosAcerto> {
     acertos_tentativas: temReal ? soma(n => n.acertos_tentativas) : null as unknown as number, erros_tentativas: temReal ? soma(n => n.erros_tentativas) : null as unknown as number,
   }
 }
+
+/** "Instagram · anúncio · teot-tepot": fonte, meio e campanha do cadastro. */
+const NOMES_FONTE: Record<string, string> = { instagram: 'Instagram', facebook: 'Facebook', 'instagram/facebook': 'Instagram ou Facebook', google: 'Google', whatsapp: 'WhatsApp', youtube: 'YouTube', x: 'X (Twitter)', direto: 'Acesso direto' }
+const NOMES_MEIO: Record<string, string> = { anuncio: 'anúncio', bio: 'link da bio', link: 'link', busca: 'busca', stories: 'stories', story: 'stories' }
+export function rotuloOrigem(o: { fonte?: string; meio?: string; campanha?: string }): string {
+  const fonte = o.fonte ? NOMES_FONTE[o.fonte] ?? o.fonte : 'Sem fonte'
+  const meio = o.meio ? NOMES_MEIO[o.meio] ?? o.meio : null
+  return [fonte, meio, o.campanha].filter(Boolean).join(' · ')
+}
