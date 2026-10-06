@@ -7,6 +7,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import type { ComentarioIA, Letra, Questao, Resposta } from '../dados/tipos'
 import { ROTULO_DIFICULDADE } from '../dados/tipos'
 import { ROTULO_SIMULADOS } from '../config'
+import { FiguraAmpliavel } from './FiguraAmpliavel'
 import { href } from '../util/rotas'
 import { EstrelaCheia, Icone } from './Icone'
 import { ContribuirComentario } from './ContribuirComentario'
@@ -359,24 +360,7 @@ export function CartaoQuestao({
         {questao.imagens.length > 0 && (
           <div className="questao__figuras">
             {questao.imagens.map((imagem) => (
-              <figure className="questao__figura" key={imagem.arquivo}>
-                <a
-                  href={urlImagem(imagem.arquivo)}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="Abrir imagem em tamanho original"
-                >
-                  <img
-                    src={urlImagem(imagem.arquivo)}
-                    alt={imagem.legenda ?? `Figura da questão ${questao.id}`}
-                    loading="lazy"
-                    width={imagem.largura ?? undefined}
-                    height={imagem.altura ?? undefined}
-                    style={{ maxHeight: '22rem', width: 'auto' }}
-                  />
-                </a>
-                {imagem.legenda && <figcaption>{imagem.legenda}</figcaption>}
-              </figure>
+              <FiguraAmpliavel key={imagem.arquivo} imagem={imagem} src={urlImagem(imagem.arquivo)} alt={imagem.legenda ?? `Figura da questão ${questao.id}`} largura={imagem.largura} altura={imagem.altura} />
             ))}
           </div>
         )}
@@ -522,15 +506,7 @@ export function CartaoQuestao({
                       {item.imagens && item.imagens.length > 0 && (
                         <div className="questao__figuras" style={{ marginTop: '0.75rem' }}>
                           {item.imagens.map((imagem) => (
-                            <figure className="questao__figura" key={imagem.arquivo}>
-                              <img
-                                src={urlImagem(imagem.arquivo)}
-                                alt={imagem.legenda ?? 'Imagem enviada por colega'}
-                                loading="lazy"
-                                style={{ maxHeight: '18rem', width: 'auto' }}
-                              />
-                              {imagem.legenda && <figcaption>{imagem.legenda}</figcaption>}
-                            </figure>
+                            <FiguraAmpliavel key={imagem.arquivo} imagem={imagem} src={urlImagem(imagem.arquivo)} alt={imagem.legenda ?? 'Imagem enviada por colega'} alturaMaxima="18rem" />
                           ))}
                         </div>
                       )}
@@ -739,12 +715,7 @@ function ComentarioDaIA({
           {comentario.imagens && comentario.imagens.length > 0 && (
             <div className="questao__figuras cm-figuras">
               {comentario.imagens.map((imagem) => (
-                <figure className="questao__figura" key={imagem.arquivo}>
-                  <a href={urlImagem(imagem.arquivo)} target="_blank" rel="noreferrer" aria-label="Abrir imagem em tamanho original">
-                    <img src={urlImagem(imagem.arquivo)} alt={imagem.legenda ?? 'Figura do comentário'} loading="lazy" style={{ maxHeight: '22rem', width: 'auto' }} />
-                  </a>
-                  {imagem.legenda && <figcaption>{imagem.legenda}</figcaption>}
-                </figure>
+                <FiguraAmpliavel key={imagem.arquivo} imagem={imagem} src={urlImagem(imagem.arquivo)} alt={imagem.legenda ?? 'Figura do comentário'} />
               ))}
             </div>
           )}

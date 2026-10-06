@@ -14,6 +14,8 @@ export interface Alternativa {
 export interface Imagem {
   arquivo: string
   legenda?: string | null
+  /** Créditos: de onde a imagem foi tirada, com link se houver. */
+  fonte?: string | null
   largura?: number | null
   altura?: number | null
 }

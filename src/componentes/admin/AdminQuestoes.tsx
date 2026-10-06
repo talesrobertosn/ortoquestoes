@@ -179,6 +179,7 @@ function ListaImagens({ imagens, aoMudar, idQuestao, pasta }: { imagens: Imagem[
         <figure key={img.arquivo} className="adm-editor__imagem">
           <img src={urlImagem(img.arquivo)} alt="" />
           <input className="entrada" placeholder="Legenda (opcional)" value={img.legenda ?? ''} onChange={(e) => aoMudar(imagens.map((x, j) => (j === i ? { ...x, legenda: e.target.value || null } : x)))} />
+          <textarea className="entrada" rows={2} placeholder="Fonte ou créditos (opcional): de onde a imagem foi tirada, com o link. Ex.: Radiopaedia, caso 12345, https://radiopaedia.org/..." value={img.fonte ?? ''} onChange={(e) => aoMudar(imagens.map((x, j) => (j === i ? { ...x, fonte: e.target.value || null } : x)))} />
           <div className="linha">
             <button type="button" className="botao botao--fantasma" disabled={i === 0} onClick={() => { const n = [...imagens]; [n[i - 1], n[i]] = [n[i], n[i - 1]]; aoMudar(n) }}>Subir</button>
             <button type="button" className="botao botao--fantasma" onClick={() => aoMudar(imagens.filter((_, j) => j !== i))}>Remover</button>
