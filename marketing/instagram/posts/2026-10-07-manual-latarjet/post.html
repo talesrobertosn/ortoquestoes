@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Manual Latarjet Orto Questões</title>
+<!-- Manual de montagem, 07/10/2026: a cirurgia de Latarjet como manual de móvel para montar.
+     8 slides de feed (1080x1350), papel claro e traço preto, desenhos em SVG feitos aqui.
+     Questão real: ombro-cotovelo-0244 (TEOT 2024, gabarito D, axilar e musculocutâneo).
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-07-manual-latarjet/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+:root { --verde: #14655E; --tinta: #0B3A35; --ouro: #F4CF7C; --ouro-forte: #E2A92B; --papel: #F6F4EE; --preto: #141414; --cinza: #6d6a63; --linha: #d9d5cb; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1350px; color: var(--preto); padding: 60px 70px; background: var(--papel); }
+section::before { content: ''; position: absolute; inset: 28px; border: 3px solid var(--preto); pointer-events: none; }
+
+.topo { position: relative; display: flex; justify-content: space-between; align-items: center; padding: 6px 4px 0; }
+.marca { display: flex; align-items: center; gap: 14px; font: 32px Jakarta; letter-spacing: -.02em; }
+.marca svg { width: 50px; height: 50px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; }
+.modelo { font: 700 22px Jakarta; letter-spacing: .16em; text-transform: uppercase; color: var(--cinza); }
+.pagina { position: absolute; left: 0; right: 0; bottom: 46px; text-align: center; font: 800 28px Jakarta; }
+.pagina::before, .pagina::after { content: ''; display: inline-block; width: 60px; height: 3px; margin: 0 20px 8px; background: var(--preto); vertical-align: middle; }
+.canto { position: absolute; bottom: 48px; font: 700 22px Jakarta; color: var(--cinza); letter-spacing: .04em; }
+.canto.esq { left: 70px; } .canto.dir { right: 70px; }
+
+h1, h2 { font-family: Jakarta; letter-spacing: -.045em; text-wrap: balance; }
+h1 { font-size: 168px; line-height: .9; font-weight: 800; }
+h2 { font-size: 62px; line-height: 1.04; font-weight: 800; }
+h2 em, h1 em { font-style: normal; background: linear-gradient(transparent 58%, var(--ouro) 58% 92%, transparent 92%); }
+.sub { font-size: 33px; line-height: 1.4; color: #3b3a36; text-wrap: pretty; }
+.sub b { color: var(--preto); }
+
+/* Passos numerados */
+.passo { display: flex; align-items: center; gap: 22px; }
+.passo .n { flex: none; width: 96px; height: 96px; display: grid; place-items: center; border: 5px solid var(--preto); border-radius: 50%; font: 800 52px Jakarta; }
+.passo h3 { font: 800 44px/1.05 Jakarta; letter-spacing: -.035em; }
+.passo p { margin-top: 6px; font-size: 27px; line-height: 1.35; color: #3b3a36; }
+
+/* Quadro de desenho */
+.prancha { position: relative; border: 3px solid var(--preto); border-radius: 18px; background: #fff; }
+.prancha svg.d { display: block; width: 100%; height: 100%; }
+.rot { position: absolute; font: 700 25px/1.2 Jakarta; }
+.rot.c { color: var(--cinza); font-weight: 600; }
+
+/* Aviso */
+.aviso { display: flex; gap: 24px; align-items: center; padding: 22px 28px; border: 4px solid var(--preto); border-radius: 18px; background: var(--ouro); }
+.aviso svg { flex: none; width: 92px; height: 82px; }
+.aviso p { font-size: 29px; line-height: 1.35; } .aviso b { font-weight: 800; }
+
+/* Lista de peças */
+.pecas { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.peca { position: relative; height: 330px; border: 3px solid var(--preto); border-radius: 18px; background: #fff; padding: 20px 24px; }
+.peca .qt { position: absolute; right: 22px; top: 18px; font: 800 44px Jakarta; }
+.peca .cod { font: 800 24px Jakarta; letter-spacing: .1em; color: var(--cinza); }
+.peca h4 { position: absolute; left: 24px; right: 24px; bottom: 18px; font: 700 27px/1.2 Jakarta; letter-spacing: -.02em; }
+.peca h4 small { display: block; margin-top: 4px; font: 500 22px/1.3 Inter; color: var(--cinza); letter-spacing: 0; }
+.peca svg { position: absolute; left: 50%; top: 52px; transform: translateX(-50%); }
+
+/* Mini painéis certo/errado */
+.paineis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.painel { position: relative; height: 330px; border: 3px solid var(--preto); border-radius: 18px; background: #fff; }
+.painel svg.d { position: absolute; left: 0; top: 0; width: 100%; height: 250px; }
+.painel p { position: absolute; left: 14px; right: 14px; bottom: 16px; text-align: center; font: 700 25px/1.2 Jakarta; }
+.painel p small { display: block; font: 500 22px Inter; color: var(--cinza); }
+.selo { position: absolute; right: 12px; top: 12px; width: 62px; height: 62px; }
+
+/* Questão */
+.prova { display: inline-block; padding: 10px 22px; border-radius: 10px; background: var(--preto); color: var(--ouro); font: 800 23px Jakarta; letter-spacing: .16em; text-transform: uppercase; }
+.enun { font: 700 46px/1.2 Jakarta; letter-spacing: -.03em; text-wrap: pretty; }
+.alts { display: grid; gap: 18px; }
+.alt { display: flex; align-items: center; gap: 26px; padding: 22px 26px; border: 3px solid var(--preto); border-radius: 16px; background: #fff; font: 600 36px Jakarta; letter-spacing: -.02em; }
+.alt i { flex: none; width: 58px; height: 58px; border: 4px solid var(--preto); border-radius: 10px; display: grid; place-items: center; font: 800 30px Jakarta; font-style: normal; }
+.alt.certa { background: var(--ouro); }
+.alt.certa i { background: var(--preto); color: var(--ouro); }
+
+.ficha-tec { position: absolute; left: 70px; right: 70px; bottom: 120px; display: grid; grid-template-columns: repeat(4, 1fr); border: 3px solid var(--preto); border-radius: 16px; background: #fff; }
+.ficha-tec div { padding: 16px 18px; font: 600 22px/1.2 Jakarta; color: var(--cinza); border-left: 3px solid var(--preto); }
+.ficha-tec div:first-child { border-left: 0; }
+.ficha-tec b { display: block; font: 800 46px/1 Jakarta; color: var(--preto); margin-bottom: 4px; }
+.dupla { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.cartao { border: 3px solid var(--preto); border-radius: 18px; background: #fff; padding: 26px 28px; }
+.cartao strong { font: 800 22px Jakarta; letter-spacing: .14em; text-transform: uppercase; color: var(--cinza); }
+.cartao h3 { margin-top: 6px; font: 800 40px/1.05 Jakarta; letter-spacing: -.035em; }
+.cartao p { margin-top: 12px; font-size: 26px; line-height: 1.38; color: #3b3a36; }
+.cartao p b { color: var(--preto); }
+.faixa { padding: 24px 30px; border-radius: 18px; background: var(--preto); color: #fff; }
+.faixa strong { font: 800 22px Jakarta; letter-spacing: .14em; text-transform: uppercase; color: var(--ouro); }
+.faixa p { margin-top: 8px; font-size: 28px; line-height: 1.38; color: rgba(255,255,255,.86); }
+.faixa p b { color: #fff; }
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#14655E"/><g fill="#FFFFFF" opacity=".55"><path transform="translate(13 9.5)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(11 21.2)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(13 44.6)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g><path fill="#F4CF7C" transform="translate(11 32.9)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></symbol>
+
+<!-- Glenoide vista de frente (ombro direito, 3h anterior) -->
+<symbol id="glenoide" viewBox="0 0 420 520">
+  <path d="M200 60 C255 60 280 120 285 175 C290 225 330 262 330 330 A130 130 0 0 1 70 330 C70 262 110 225 115 175 C120 120 145 60 200 60 Z" fill="#fff" stroke="#141414" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M200 88 C240 88 258 130 262 178 C266 222 302 262 302 330 A102 102 0 0 1 98 330 C98 262 134 222 138 178 C142 130 160 88 200 88 Z" fill="none" stroke="#141414" stroke-width="2.5" stroke-dasharray="3 9" stroke-linecap="round"/>
+</symbol>
+<!-- Bloco do coracoide encostado entre 3h e 5h, com dois parafusos -->
+<symbol id="bloco" viewBox="0 0 420 520">
+  <path d="M358 318 A158 158 0 0 1 285 462" fill="none" stroke="#141414" stroke-width="62" stroke-linecap="round"/>
+  <path d="M358 318 A158 158 0 0 1 285 462" fill="none" stroke="#F4CF7C" stroke-width="51" stroke-linecap="round"/>
+  <g fill="#141414" opacity=".35"><circle cx="350" cy="352" r="3"/><circle cx="337" cy="404" r="3"/><circle cx="320" cy="430" r="3"/><circle cx="356" cy="384" r="2.5"/><circle cx="300" cy="455" r="2.5"/></g>
+  <g stroke="#141414" stroke-width="5" fill="#fff"><circle cx="352" cy="371" r="15"/><circle cx="312" cy="441" r="15"/></g>
+  <g stroke="#141414" stroke-width="4" stroke-linecap="round"><path d="M344 371h16M352 363v16M304 441h16M312 433v16"/></g>
+</symbol>
+<!-- Montador -->
+<symbol id="montador" viewBox="0 0 120 230">
+  <circle cx="60" cy="36" r="27" fill="#fff" stroke="#141414" stroke-width="5"/>
+  <path d="M20 222 L27 112 C29 84 43 72 60 72 C77 72 91 84 93 112 L100 222 Z" fill="#fff" stroke="#141414" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M52 40 q8 5 16 0" fill="none" stroke="#141414" stroke-width="4" stroke-linecap="round"/>
+</symbol>
+<symbol id="montador-triste" viewBox="0 0 120 230">
+  <circle cx="60" cy="36" r="27" fill="#fff" stroke="#141414" stroke-width="5"/>
+  <path d="M20 222 L27 112 C29 84 43 72 60 72 C77 72 91 84 93 112 L100 222 Z" fill="#fff" stroke="#141414" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M52 46 q8 -6 16 0" fill="none" stroke="#141414" stroke-width="4" stroke-linecap="round"/>
+</symbol>
+<symbol id="aviso" viewBox="0 0 100 90"><path d="M50 6 L95 84 H5 Z" fill="#fff" stroke="#141414" stroke-width="7" stroke-linejoin="round"/><path d="M50 34 V58" stroke="#141414" stroke-width="9" stroke-linecap="round"/><circle cx="50" cy="71" r="5.5" fill="#141414"/></symbol>
+<symbol id="ok" viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="#fff" stroke="#141414" stroke-width="5"/><path d="M19 33 l9 9 l18 -19" fill="none" stroke="#14655E" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="nao" viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="#fff" stroke="#141414" stroke-width="5"/><path d="M21 21 l22 22 M43 21 l-22 22" stroke="#c8332b" stroke-width="7" stroke-linecap="round"/></symbol>
+<!-- Peças -->
+<symbol id="coracoide" viewBox="0 0 260 250">
+  <path d="M100 70 L84 240 H176 L160 70 Z" fill="#fff" stroke="#141414" stroke-width="5" stroke-linejoin="round"/>
+  <g stroke="#141414" stroke-width="2.5" opacity=".55"><path d="M108 90 L100 230M122 90 L118 230M138 90 L142 230M152 90 L160 230"/></g>
+  <rect x="40" y="20" width="180" height="78" rx="36" fill="#F4CF7C" stroke="#141414" stroke-width="5"/>
+  <g fill="#141414" opacity=".35"><circle cx="78" cy="50" r="3.5"/><circle cx="112" cy="70" r="3"/><circle cx="150" cy="44" r="3.5"/><circle cx="182" cy="66" r="3"/><circle cx="96" cy="38" r="2.5"/></g>
+</symbol>
+<symbol id="parafuso" viewBox="0 0 120 260">
+  <rect x="28" y="8" width="64" height="30" rx="10" fill="#fff" stroke="#141414" stroke-width="5"/>
+  <path d="M46 38 V220 L60 250 L74 220 V38" fill="#fff" stroke="#141414" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M40 60 L80 72 M40 84 L80 96 M40 108 L80 120 M40 132 L80 144 M40 156 L80 168 M40 180 L80 192 M42 204 L78 214" stroke="#141414" stroke-width="5" stroke-linecap="round"/>
+</symbol>
+<symbol id="subescapular" viewBox="0 0 320 230">
+  <path d="M20 30 H300 V200 H20 Z" fill="#fff" stroke="#141414" stroke-width="5" stroke-linejoin="round"/>
+  <g stroke="#141414" stroke-width="2.5" opacity=".5"><path d="M30 52H290M30 72H290M30 92H290M30 154H290M30 174H290M30 192H290"/></g>
+  <path d="M60 123 Q160 88 260 123 Q160 158 60 123 Z" fill="#141414"/>
+  <path d="M60 123 Q160 104 260 123 Q160 142 60 123 Z" fill="#F4CF7C"/>
+</symbol>
+<clipPath id="corte"><polygon points="0,0 505,0 204,520 0,520"/></clipPath>
+</defs></svg>
+
+<!-- 1. Capa -->
+<section id="p1-capa">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="modelo">Manual de montagem · 1/8</span></div>
+  <p style="margin-top:70px;font:800 28px Jakarta;letter-spacing:.2em;color:var(--cinza)">MODELO OMBRO-ANTERIOR</p>
+  <h1 style="margin-top:12px">LATAR&shy;JET</h1>
+  <p class="sub" style="margin-top:26px;max-width:640px">Bloqueio ósseo para o ombro que <b>não para no lugar.</b> Monte com calma: tem <b>dois nervos</b> no caminho.</p>
+  <svg style="position:absolute;left:520px;top:470px;width:500px;height:620px" viewBox="0 0 420 520"><use href="#glenoide"/><use href="#bloco"/></svg>
+  <svg style="position:absolute;left:150px;top:740px;width:150px;height:288px"><use href="#montador"/></svg>
+  <div style="position:absolute;left:300px;top:680px;width:150px;height:116px;border:5px solid var(--preto);border-radius:50%;background:#fff;display:grid;place-items:center;font:800 76px Jakarta">?</div>
+  <div style="position:absolute;left:96px;top:1032px;width:440px;height:5px;background:var(--preto);border-radius:3px"></div>
+  <div class="ficha-tec">
+    <div><b>4</b>peças</div><div><b>5</b>passos</div><div><b>2</b>nervos no caminho</div><div><b>1</b>questão de prova</div>
+  </div>
+  <div class="pagina">Arraste para montar</div>
+</section>
+
+<!-- 2. Conteúdo da caixa -->
+<section id="p2-pecas">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="modelo">Conteúdo da caixa · 2/8</span></div>
+  <h2 style="margin-top:44px">Confira as peças<br>antes de <em>começar.</em></h2>
+  <div class="pecas" style="margin-top:36px">
+    <div class="peca"><span class="cod">A</span><span class="qt">1×</span><svg width="210" height="200"><use href="#coracoide"/></svg><h4>Ponta do coracoide<small>com o tendão conjunto preso</small></h4></div>
+    <div class="peca"><span class="cod">B</span><span class="qt">2×</span><svg width="200" height="210" style="top:44px"><use href="#parafuso" x="-30"/><use href="#parafuso" x="50"/></svg><h4>Parafusos<small>bicorticais, no comprimento certo</small></h4></div>
+    <div class="peca"><span class="cod">C</span><span class="qt">1×</span><svg width="250" height="180" style="top:66px"><use href="#subescapular"/></svg><h4>Subescapular<small>dividir as fibras, não desinserir</small></h4></div>
+    <div class="peca"><span class="cod">D</span><span class="qt">1×</span><svg width="190" height="235" style="top:40px" viewBox="40 40 340 470"><path d="M328 307 A130 130 0 0 1 244 452" fill="none" stroke="#c8332b" stroke-width="6" stroke-dasharray="4 12" stroke-linecap="round"/><g clip-path="url(#corte)"><use href="#glenoide"/></g><path d="M328 307 L244 452" stroke="#141414" stroke-width="6" stroke-linecap="round"/></svg><h4>Glenoide com perda óssea<small>na borda anteroinferior</small></h4></div>
+  </div>
+  <div class="faixa" style="margin-top:26px">
+    <strong>Indicação de uso</strong>
+    <p>Instabilidade anterior com <b>perda óssea da glenoide</b> significativa, <b>Hill-Sachs que engata</b> (off-track), falha do Bankart ou paciente de alto risco no <b>ISIS</b>.</p>
+  </div>
+  <div class="pagina">2</div>
+</section>
+
+<!-- 3. Passos 1 e 2 -->
+<section id="p3-coracoide">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="modelo">Passos 1 e 2 · 3/8</span></div>
+  <div class="passo" style="margin-top:46px"><span class="n">1</span><div><h3>Corte o coracoide na base</h3><p>A ponta sai inteira, com o tendão conjunto preso a ela.</p></div></div>
+  <div class="prancha" style="margin-top:34px;height:540px">
+    <svg class="d" viewBox="0 -35 940 540">
+      <path d="M40 60 V410" stroke="#141414" stroke-width="6" stroke-linecap="round"/>
+      <g stroke="#141414" stroke-width="3" opacity=".5"><path d="M40 90 l-24 24M40 150 l-24 24M40 210 l-24 24M40 270 l-24 24M40 330 l-24 24"/></g>
+      <path d="M40 150 C120 130 220 120 300 128 L560 150 C610 156 640 186 632 222 C626 252 600 264 570 260 L330 240 C230 232 150 240 40 262 Z" fill="#fff" stroke="#141414" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M400 168 L620 186 C624 220 600 250 570 250 L400 236 Z" fill="#F4CF7C"/>
+      <path d="M40 150 C120 130 220 120 300 128 L560 150 C610 156 640 186 632 222 C626 252 600 264 570 260 L330 240 C230 232 150 240 40 262" fill="none" stroke="#141414" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M400 112 V290" stroke="#141414" stroke-width="5" stroke-dasharray="14 12" stroke-linecap="round"/>
+      <path d="M520 250 L500 455 H600 L604 252 Z" fill="#fff" stroke="#141414" stroke-width="6" stroke-linejoin="round"/>
+      <g stroke="#141414" stroke-width="2.5" opacity=".55"><path d="M530 270 L518 445M552 272 L546 445M576 274 L576 445"/></g>
+      <g transform="translate(372 46) rotate(8)"><rect x="0" y="0" width="140" height="40" rx="8" fill="#fff" stroke="#141414" stroke-width="5"/><path d="M8 40 l8 12 l8 -12 l8 12 l8 -12 l8 12 l8 -12 l8 12 l8 -12 l8 12 l8 -12 l8 12 l8 -12 l8 12 l8 -12 l8 12 l8 -12" fill="none" stroke="#141414" stroke-width="4" stroke-linejoin="round"/></g>
+      <path d="M690 210 h170" stroke="#141414" stroke-width="5" stroke-linecap="round"/>
+      <path d="M840 190 l26 20 l-26 20" fill="none" stroke="#141414" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span class="rot c" style="left:70px;top:470px">escápula</span>
+    <span class="rot c" style="left:200px;top:340px">base do coracoide</span>
+    <span class="rot" style="left:612px;top:440px">tendão<br>conjunto</span>
+    <span class="rot" style="left:700px;top:280px">vai para<br>a glenoide</span>
+  </div>
+  <div class="passo" style="margin-top:44px"><span class="n">2</span><div><h3>Leve o bloco com o tendão junto</h3><p>Cabeça curta do bíceps e coracobraquial descem presos a ele. Sem tração forte e prolongada.</p></div></div>
+  <div class="aviso" style="margin-top:36px"><svg><use href="#aviso"/></svg><p><b>Cuidado neste passo.</b> Tem um nervo que entra no coracobraquial poucos centímetros abaixo do coracoide. Qual?</p></div>
+  <div class="pagina">3</div>
+</section>
+
+<!-- 4. Passo 3 -->
+<section id="p4-subescapular">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="modelo">Passo 3 · 4/8</span></div>
+  <div class="passo" style="margin-top:46px"><span class="n">3</span><div><h3>Abra o subescapular nas fibras</h3><p>Divisão horizontal, sem desinserir o tendão. Depois, capsulotomia para ver a glenoide.</p></div></div>
+  <div class="prancha" style="margin-top:34px;height:700px">
+    <svg class="d" viewBox="0 0 940 700">
+      <path d="M90 70 H850 V540 H90 Z" fill="#fff" stroke="#141414" stroke-width="6" stroke-linejoin="round"/>
+      <g stroke="#141414" stroke-width="3" opacity=".45"><path d="M110 110H830M110 150H830M110 190H830M110 230H830M110 380H830M110 420H830M110 460H830M110 500H830"/></g>
+      <path d="M200 305 Q470 200 740 305 Q470 410 200 305 Z" fill="#141414"/>
+      <path d="M210 305 Q470 236 730 305 Q470 374 210 305 Z" fill="#F4CF7C"/>
+      <path d="M340 238 v-70 h-60" fill="none" stroke="#141414" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M600 372 v70 h60" fill="none" stroke="#141414" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M60 600 C260 585 420 615 600 595 S820 587 880 605" fill="none" stroke="#c8332b" stroke-width="8" stroke-dasharray="4 18" stroke-linecap="round"/>
+    </svg>
+    <span class="rot" style="left:390px;top:286px;font-size:28px">glenoide</span>
+    <span class="rot c" style="left:110px;top:30px">borda superior</span>
+    <span class="rot c" style="left:90px;top:548px">borda inferior</span>
+    <span class="rot" style="right:40px;top:628px;color:#c8332b">quem passa aqui?</span>
+  </div>
+  <div class="aviso" style="margin-top:36px"><svg><use href="#aviso"/></svg><p><b>Cuidado com o afastador</b> na borda inferior da glenoide: logo abaixo do subescapular corre o segundo nervo, a caminho do espaço quadrangular.</p></div>
+  <div class="pagina">4</div>
+</section>
+
+<!-- 5. Passos 4 e 5 -->
+<section id="p5-fixacao">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="modelo">Passos 4 e 5 · 5/8</span></div>
+  <div class="passo" style="margin-top:46px"><span class="n">4</span><div><h3>Encoste o bloco entre 3h e 5h</h3><p>Na borda anteroinferior, nivelado com a cartilagem.</p></div></div>
+  <div style="display:grid;grid-template-columns:400px 1fr;gap:26px;margin-top:34px">
+    <div class="prancha" style="height:480px">
+      <svg class="d" viewBox="0 0 420 520"><use href="#glenoide"/><use href="#bloco"/>
+        <g font-family="Jakarta" font-weight="800" font-size="30" fill="#141414"><text x="186" y="44">12</text><text x="376" y="300">3</text><text x="252" y="510">5</text></g>
+      </svg>
+    </div>
+    <div style="display:grid;gap:18px">
+      <div class="painel" style="height:148px;display:flex;align-items:center;gap:18px;padding:0 20px"><svg width="62" height="62"><use href="#nao"/></svg><p style="position:static;text-align:left">Lateral demais<small>sobra degrau: artrose</small></p></div>
+      <div class="painel" style="height:148px;display:flex;align-items:center;gap:18px;padding:0 20px"><svg width="62" height="62"><use href="#nao"/></svg><p style="position:static;text-align:left">Medial demais<small>não segura: recidiva</small></p></div>
+      <div class="painel" style="height:148px;display:flex;align-items:center;gap:18px;padding:0 20px;background:#fffbe9"><svg width="62" height="62"><use href="#ok"/></svg><p style="position:static;text-align:left">Nivelado<small>continua a superfície</small></p></div>
+    </div>
+  </div>
+  <div class="passo" style="margin-top:56px"><span class="n">5</span><div><h3>Dois parafusos, comprimento certo</h3><p>Dois parafusos seguram melhor que um.</p></div></div>
+  <div class="aviso" style="margin-top:36px"><svg><use href="#aviso"/></svg><p><b>Parafuso longo demais</b> atravessa a glenoide e sai atrás, onde corre um nervo pelo colo posterior. Guarde esse detalhe: ele aparece na questão.</p></div>
+  <div class="pagina">5</div>
+</section>
+
+<!-- 6. Por que funciona -->
+<section id="p6-triplo">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="modelo">Como funciona · 6/8</span></div>
+  <h2 style="margin-top:44px">Três travas<br>num <em>só</em> procedimento.</h2>
+  <p class="sub" style="margin-top:18px">O efeito triplo descrito por Patte:</p>
+  <div style="display:grid;gap:22px;margin-top:30px">
+    <div class="cartao" style="display:grid;grid-template-columns:200px 1fr;gap:28px;align-items:center">
+      <svg width="200" height="210" viewBox="40 40 360 460"><use href="#glenoide"/><use href="#bloco"/></svg>
+      <div><strong>Trava 1</strong><h3>Efeito ósseo</h3><p>O bloco <b>aumenta a glenoide</b> na borda que foi perdida, e a cabeça volta a ter onde apoiar.</p></div>
+    </div>
+    <div class="cartao" style="display:grid;grid-template-columns:200px 1fr;gap:28px;align-items:center">
+      <svg width="200" height="200" viewBox="0 0 200 200"><circle cx="96" cy="100" r="74" fill="#fff" stroke="#141414" stroke-width="6"/><path d="M30 60 L80 70 C120 80 150 120 170 190" fill="none" stroke="#141414" stroke-width="30" stroke-linecap="round"/><path d="M30 60 L80 70 C120 80 150 120 170 190" fill="none" stroke="#F4CF7C" stroke-width="20" stroke-linecap="round"/></svg>
+      <div><strong>Trava 2</strong><h3>Efeito de rede</h3><p>O <b>tendão conjunto</b> cruza a frente e segura o subescapular inferior com o braço em <b>abdução e rotação externa</b>, a posição em que o ombro sai.</p></div>
+    </div>
+    <div class="cartao" style="display:grid;grid-template-columns:200px 1fr;gap:28px;align-items:center">
+      <svg width="200" height="160" viewBox="0 0 200 160"><path d="M10 60 C60 40 140 40 190 60 M10 100 C60 120 140 120 190 100" fill="none" stroke="#141414" stroke-width="6" stroke-linecap="round"/><path d="M40 50 L52 110 M80 44 L92 116 M120 44 L132 116 M160 50 L172 110" stroke="#c8332b" stroke-width="6" stroke-linecap="round"/></svg>
+      <div><strong>Trava 3</strong><h3>Cápsula</h3><p>A cápsula é reparada ao coto do <b>ligamento coracoacromial</b>, que veio junto com o bloco.</p></div>
+    </div>
+  </div>
+  <div class="pagina">6</div>
+</section>
+
+<!-- 7. A questão -->
+<section id="p7-questao">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="modelo">Controle de qualidade · 7/8</span></div>
+  <span class="prova" style="margin-top:50px">Caiu assim · TEOT 2024</span>
+  <p class="enun" style="margin-top:26px">No tratamento da instabilidade anterior do ombro com o procedimento de LATARJET, os nervos que apresentam maior risco de lesão são</p>
+  <div class="alts" style="margin-top:40px">
+    <div class="alt"><i>A</i>radial e axilar.</div>
+    <div class="alt"><i>B</i>axilar e supraescapular.</div>
+    <div class="alt"><i>C</i>radial e supraescapular.</div>
+    <div class="alt"><i>D</i>axilar e musculocutâneo.</div>
+  </div>
+  <div style="position:absolute;left:70px;right:70px;bottom:130px;display:flex;align-items:flex-end;gap:26px">
+    <svg width="96" height="184"><use href="#montador"/></svg>
+    <div style="margin-bottom:70px;padding:22px 30px;border:4px solid var(--preto);border-radius:24px;background:#fff;font:700 34px/1.25 Jakarta">Comente a sua letra antes de virar a página.</div>
+  </div>
+  <div class="pagina">7</div>
+</section>
+
+<!-- 8. Resposta -->
+<section id="p8-resposta">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="modelo">Resposta · 8/8</span></div>
+  <div class="alt certa" style="margin-top:46px;font-size:44px;font-weight:800"><i>D</i>Axilar e musculocutâneo.</div>
+  <div class="dupla" style="margin-top:26px">
+    <div class="cartao"><strong>Passos 1 e 2</strong><h3>Musculo&shy;cutâneo</h3><p>Entra no <b>coracobraquial</b> em média a cerca de <b>5 cm</b> do coracoide, às vezes bem mais perto. Tracionar o tendão conjunto <b>estira o nervo</b>: fraqueza para fletir o cotovelo e parestesia lateral no antebraço.</p></div>
+    <div class="cartao"><strong>Passo 3</strong><h3>Axilar</h3><p>Corre na <b>borda inferior do subescapular</b> e junto à cápsula anteroinferior. Risco na divisão do músculo, na capsulotomia e com afastador na borda inferior da glenoide.</p></div>
+  </div>
+  <div class="cartao" style="margin-top:22px;display:grid;grid-template-columns:62px 1fr;gap:22px;align-items:start">
+    <svg width="62" height="62"><use href="#nao"/></svg>
+    <p style="margin:0"><b>Radial</b> (A e C) está atrás, no sulco espiral do úmero, fora do campo. <b>Supraescapular</b> (B e C) só corre risco com o parafuso longo do passo 5. Por isso a B é a pegadinha: metade certa.</p>
+  </div>
+  <div class="faixa" style="margin-top:22px">
+    <strong>Para a prova</strong>
+    <p>O TARO 2019 pediu um nervo só: o <b>musculocutâneo</b>. O TEOT 2024 pediu dois: <b>musculocutâneo e axilar</b>.</p>
+  </div>
+  <div style="position:absolute;left:70px;right:70px;bottom:96px;display:flex;align-items:flex-end;gap:22px">
+    <svg width="72" height="138"><use href="#montador"/></svg>
+    <div style="margin-bottom:40px;padding:20px 28px;border:4px solid var(--preto);border-radius:24px;background:#fff;font:700 31px/1.28 Jakarta">Montagem concluída. Salve o manual para revisar antes da prova.</div>
+  </div>
+  <span class="canto esq">Mais questões comentadas</span><span class="canto dir">ortoquestoes.com.br</span>
+</section>
+
+</body></html>

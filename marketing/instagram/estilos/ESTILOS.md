@@ -141,6 +141,39 @@ iPhone e de um MacBook feitos em CSS (sem imagem de aparelho de terceiros).
 - **Bom para:** novidades do site (simulados, Cronograma, Simulado Nacional, ranking) e anúncios
   pagos para quem ainda não conhece o Orto Questões.
 
+## 7. Manual de montagem (`posts/2026-10-07-manual-latarjet/`)
+
+**Ideia:** uma cirurgia vira manual de móvel para montar: lista de peças, passos numerados,
+desenhos de traço preto e o triângulo de atenção onde mora a pegadinha da prova.
+
+- **Quando serve:** técnica cirúrgica com etapas e um risco ligado a cada etapa (Latarjet, vias de
+  acesso, osteotomias, tríade terrível, transferências tendíneas). A questão pergunta o que dá
+  errado (nervo em risco, complicação, ordem dos passos).
+- **Formato:** carrossel 1080×1350 de 8 slides, papel claro com moldura preta, Jakarta e Inter,
+  dourado só para destacar; desenhos esquemáticos em SVG no próprio HTML e o "montador" (boneco
+  sem rosto detalhado).
+- **Estrutura:** capa com nome do "modelo" e ficha técnica → conteúdo da caixa e indicação de uso →
+  passos com avisos que perguntam sem responder → como funciona → a questão real ("controle de
+  qualidade") → resposta, por que as outras erram e o que a banca já cobrou.
+- **Regras:** não citar marca de loja de móveis; a resposta só no último slide; desenhos são
+  esquemas e não podem afirmar anatomia que o comentário não sustenta.
+
+## 8. Cartaz de filme (`posts/2026-10-07-cartaz-triade-terrivel/`)
+
+**Ideia:** uma entidade com nome dramático vira filme de terror: elenco no topo, título enorme,
+slogan, a questão como "roteiro" e a resposta nos créditos finais, com cena pós-créditos.
+
+- **Quando serve:** nomes que já soam como filme (tríade terrível, luxatio erecta, Essex-Lopresti,
+  fratura do enforcado, lesão de Lisfranc) e questões de sequência ou ordem, que viram "ordem de
+  entrada em cena".
+- **Formato:** 2 stories 1080×1920, fundo preto com luz vermelha, garras em CSS, título em
+  Jakarta esticado na vertical; o retângulo tracejado guarda a figurinha de quiz.
+- **Estrutura:** `s1-cartaz` (elenco, título, slogan, enunciado e alternativas reais, quiz, bloco
+  de créditos com o mecanismo) → `s2-creditos` (spoiler, resposta, cada estrutura com seu papel,
+  cena pós-créditos com outra questão da banca e o site).
+- **Regras:** conteúdo importante entre 250 e 1700 px de altura (fora das barras do Instagram);
+  selo "R3" é piada e não imita classificação oficial.
+
 ## Stories semeadores (`stories/`)
 
 Um story por estilo (1080×1920), postado 1 a 2 horas antes do post correspondente: faz a
