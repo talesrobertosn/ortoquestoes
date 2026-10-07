@@ -24,6 +24,23 @@ mencionar IA, não citar o número total de questões).
 
 ---
 
+## Regras permanentes (valem sobre qualquer instrução antiga deste guia)
+
+1. **Stories sem figurinha.** Nada de quiz, enquete, sim/não, caixa de pergunta nem link: o
+   Instagram entrega menos o story que manda o usuário para fora do aplicativo, e a ideia é
+   baixar a imagem e postar rápido. O story é só a imagem: sem retângulo tracejado reservado.
+   A pergunta vai escrita no story e a resposta sai no story seguinte (ou no feed).
+2. **Sem desenho de anatomia.** Nada de SVG ou CSS que imite osso, articulação, músculo, nervo ou
+   vaso: para uma marca de ortopedia, qualquer coisa parecida com erro anatômico é inadmissível.
+   Usar a imagem real da questão (radiografia, foto da prova) ou só texto com apresentação
+   criativa. Objeto simples (parafuso, placa, ícone de aviso) pode aparecer de vez em quando, com
+   moderação.
+
+Os posts e modelos antigos que ainda mostram espaço para figurinha ficam como histórico; ao
+reaproveitar, tirar esse espaço.
+
+---
+
 ## 1. Jogo de cartas (`cartas/`)
 
 **Ideia:** diagnósticos que se confundem viram cartas colecionáveis com atributos, e a última
@@ -41,7 +58,7 @@ rodada é uma questão de prova.
   displasias esqueléticas, artrites inflamatórias, lesões do plexo braquial.
 - **Legenda:** "Quatro X. Quatro cartas. [caso em uma linha]." → o que decide a rodada → "jogue
   sua letra nos comentários" → salvar e marcar quem confunde A com B → site e hashtags.
-- **Story semeador:** arena pixel art com figurinha de **Quiz** de 4 opções (as 4 cartas).
+- **Story semeador:** arena pixel art com as 4 cartas escritas (sem figurinha).
 
 ## 2. Plantão das 3h14 (`plantao/`)
 
@@ -59,7 +76,7 @@ pela dúvida que o R1 tem.
   criança (Kocher), luxação do joelho e lesão vascular (ITB), epifisiólise instável.
 - **Legenda:** a mensagem do R1 entre aspas → "Não está." + o detalhe que a banca cobra →
   "arraste para ler a conversa" → "o último slide é o resumo em 5 linhas" → site e hashtags.
-- **Story semeador:** tela bloqueada com a notificação e figurinha de **Enquete** (Sim/Não).
+- **Story semeador:** tela bloqueada com a notificação (sem figurinha).
 
 ## 3. Ache os 3 erros (`ache-o-erro/`)
 
@@ -76,7 +93,7 @@ pela dúvida que o R1 tem.
   Legg-Calvé-Perthes, lesões do LCA e do menisco.
 - **Legenda:** "Seu colega fez um resumo de X. Sete linhas, três erros." → comente os números
   das linhas → "são os detalhes que a banca troca" → marcar o colega → site e hashtags.
-- **Story semeador:** folha de caderno com uma linha e figurinha de **Enquete** (Certa/Errada).
+- **Story semeador:** folha de caderno com uma linha (sem figurinha).
 
 ## 4. Linhas do metrô (`linhas/`)
 
@@ -94,8 +111,8 @@ estação. Feito para novidades do site (nova categoria, nova banca, novo recurs
 - **Bom para:** anunciar categorias, bancas ou recursos novos; post fixado do perfil.
 - **Legenda:** "Novas linhas no Orto Questões." → o que entrou → onde marcar no site → marcar
   quem está indo para aquela prova → site e hashtags.
-- **Stories:** `s1-linha` é a capa com as linhas grandes, **sem enquete**; `s2-estacoes` lista as
-  estações e leva só a figurinha de **link**. Ficam no próprio `modelo.html`.
+- **Stories:** `s1-linha` é a capa com as linhas grandes; `s2-estacoes` lista as
+  estações (sem figurinha nem link). Ficam no próprio `modelo.html`.
 
 ## 5. Cena do crime (`posts/2026-10-08-cena-do-crime-tornozelo/`)
 
@@ -123,7 +140,7 @@ Salter-Harris, Neer).
 - **Regras:** não entregar a resposta antes do slide 5; carimbos fora do texto; enunciado e
   gabarito iguais ao acervo.
 - **Stories:** `s1-cena` (a evidência e "a investigação está no feed") de manhã e `s2-veredito`
-  à tarde; sem figurinhas nem link quando o pedido for "story normal".
+  à tarde; sem figurinhas nem link.
 
 ## 6. Vitrine nos aparelhos (`posts/2026-10-09-ortoquestoes-simulados/`)
 
@@ -141,22 +158,21 @@ iPhone e de um MacBook feitos em CSS (sem imagem de aparelho de terceiros).
 - **Bom para:** novidades do site (simulados, Cronograma, Simulado Nacional, ranking) e anúncios
   pagos para quem ainda não conhece o Orto Questões.
 
-## 7. Manual de montagem (`posts/2026-10-07-manual-latarjet/`)
+## 7. Jornal (`posts/2026-10-07-diario-segond/`)
 
-**Ideia:** uma cirurgia vira manual de móvel para montar: lista de peças, passos numerados,
-desenhos de traço preto e o triângulo de atenção onde mora a pegadinha da prova.
+**Ideia:** a questão vira edição extra de um jornal fictício, o "Diário do Plantão": manchete,
+foto com legenda (a imagem real da prova), classificados com os suspeitos e o veredito em
+reportagem. Só tipografia e a imagem da questão, nenhum desenho.
 
-- **Quando serve:** técnica cirúrgica com etapas e um risco ligado a cada etapa (Latarjet, vias de
-  acesso, osteotomias, tríade terrível, transferências tendíneas). A questão pergunta o que dá
-  errado (nervo em risco, complicação, ordem dos passos).
-- **Formato:** carrossel 1080×1350 de 8 slides, papel claro com moldura preta, Jakarta e Inter,
-  dourado só para destacar; desenhos esquemáticos em SVG no próprio HTML e o "montador" (boneco
-  sem rosto detalhado).
-- **Estrutura:** capa com nome do "modelo" e ficha técnica → conteúdo da caixa e indicação de uso →
-  passos com avisos que perguntam sem responder → como funciona → a questão real ("controle de
-  qualidade") → resposta, por que as outras erram e o que a banca já cobrou.
-- **Regras:** não citar marca de loja de móveis; a resposta só no último slide; desenhos são
-  esquemas e não podem afirmar anatomia que o comentário não sustenta.
+- **Quando serve:** questão de imagem com alternativas que são achados ou sinais diferentes
+  (cada um tem um "endereço" na imagem), ou questão só de texto que rende manchete.
+- **Formato:** carrossel 1080×1350 de 5 slides, papel de jornal claro, Playfair Display nos
+  títulos e Source Serif 4 no texto (OFL, em `fontes/`), Jakarta nos rótulos, vermelho só no
+  chapéu e no carimbo.
+- **Estrutura:** primeira página (manchete que não entrega a resposta, foto) → a pergunta como caiu
+  e "comente a sua letra" → classificados (cada alternativa com o que é e onde aparece) → o
+  veredito (resposta e mecanismo) → para a prova (tabela de endereços e frase para guardar).
+- **Regras:** nome de jornal inventado, sem imitar jornal real; imagem só a da questão.
 
 ## 8. Cartaz de filme (`posts/2026-10-07-cartaz-triade-terrivel/`)
 
@@ -166,10 +182,10 @@ slogan, a questão como "roteiro" e a resposta nos créditos finais, com cena p�
 - **Quando serve:** nomes que já soam como filme (tríade terrível, luxatio erecta, Essex-Lopresti,
   fratura do enforcado, lesão de Lisfranc) e questões de sequência ou ordem, que viram "ordem de
   entrada em cena".
-- **Formato:** 2 stories 1080×1920, fundo preto com luz vermelha, garras em CSS, título em
-  Jakarta esticado na vertical; o retângulo tracejado guarda a figurinha de quiz.
-- **Estrutura:** `s1-cartaz` (elenco, título, slogan, enunciado e alternativas reais, quiz, bloco
-  de créditos com o mecanismo) → `s2-creditos` (spoiler, resposta, cada estrutura com seu papel,
+- **Formato:** 2 stories 1080×1920, fundo preto com luz vermelha, garras em CSS (efeito, não
+  anatomia), título em Jakarta esticado na vertical; sem figurinha.
+- **Estrutura:** `s1-cartaz` (elenco, título, slogan, enunciado e alternativas reais, "escolha o
+  seu final", bloco de créditos com o mecanismo) → `s2-creditos` (spoiler, resposta, cada estrutura com seu papel,
   cena pós-créditos com outra questão da banca e o site).
 - **Regras:** conteúdo importante entre 250 e 1700 px de altura (fora das barras do Instagram);
   selo "R3" é piada e não imita classificação oficial.
@@ -177,8 +193,8 @@ slogan, a questão como "roteiro" e a resposta nos créditos finais, com cena p�
 ## Stories semeadores (`stories/`)
 
 Um story por estilo (1080×1920), postado 1 a 2 horas antes do post correspondente: faz a
-pergunta, deixa um retângulo tracejado para a figurinha interativa e chama para o feed. Depois
-de publicar o post, compartilhe-o no story com "resposta aqui". Stories não levam legenda.
+pergunta e chama para o feed, sem figurinha (regra 1). Depois de publicar o post, pode
+compartilhá-lo no story. Stories não levam legenda.
 `stories/modelo.html` tem os três visuais (`s1-cartas`, `s2-plantao`, `s3-caderno`): apague as
 seções que não for usar.
 

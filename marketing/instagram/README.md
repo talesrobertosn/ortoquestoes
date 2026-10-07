@@ -6,8 +6,8 @@ Modelos em HTML para os posts do @ortoquestoes. Cada `<section id>` de um HTML v
 node marketing/instagram/gerar.mjs marketing/instagram/casos/01-tcg/caso.html
 ```
 
-Os PNGs saem em `saida/`, ao lado do HTML (fora do git). As fontes (Plus Jakarta Sans e
-Inter, licença OFL) estão em `fontes/`.
+Os PNGs saem em `saida/`, ao lado do HTML (fora do git). As fontes (Plus Jakarta Sans, Inter,
+Caveat, Pixelify Sans, Playfair Display e Source Serif 4, licença OFL) estão em `fontes/`.
 
 Ao entregar um post, mande também a legenda do feed como texto na conversa (além da `LEGENDA.md`):
 no celular é mais fácil de copiar.
@@ -16,6 +16,15 @@ Regras da marca: sem emoji; não mencionar IA nos posts (só nos Termos e no Sob
 com dados de exemplo levam a nota "Tela ilustrativa". Não citar o número total de questões do acervo:
 o destaque é serem as questões das provas oficiais, comentadas (o número só aparece na página
 de assinatura).
+
+**Regras permanentes (mais novas que as seções abaixo; prevalecem sobre elas):**
+
+- **Stories sem figurinha:** nada de quiz, enquete, sim/não, caixa de pergunta nem link (o
+  Instagram entrega menos quando o story tira o usuário do aplicativo). O story é uma imagem
+  simples para baixar e postar; a pergunta vai escrita e a resposta sai no story seguinte.
+- **Sem desenho de anatomia:** nada de SVG ou CSS que imite osso, articulação, músculo, nervo ou
+  vaso. Usar a imagem real da questão ou só texto com apresentação criativa; objeto simples
+  (parafuso, ícone) só de vez em quando.
 
 ## Apresentação da plataforma (`apresentacao.html`)
 

@@ -11,10 +11,10 @@ import { fileURLToPath } from 'url'
 const pasta = dirname(fileURLToPath(import.meta.url))
 const raiz = join(pasta, '..', '..', '..')
 const ESTILOS = {
-  cartas: { nome: 'Jogo de cartas', slides: 7, story: 's1-cartas', figurinha: 'Quiz com as 4 cartas' },
-  plantao: { nome: 'Plantão das 3h14', slides: 5, story: 's2-plantao', figurinha: 'Enquete Sim/Não' },
-  'ache-o-erro': { nome: 'Ache os 3 erros', slides: 3, story: 's3-caderno', figurinha: 'Enquete Certa/Errada' },
-  linhas: { nome: 'Linhas do metrô', slides: 5, story: 's1-linha e s2-estacoes', figurinha: 'só a de link (sem enquete)', proprio: true },
+  cartas: { nome: 'Jogo de cartas', slides: 7, story: 's1-cartas', figurinha: 'nenhuma (só a imagem)' },
+  plantao: { nome: 'Plantão das 3h14', slides: 5, story: 's2-plantao', figurinha: 'nenhuma (só a imagem)' },
+  'ache-o-erro': { nome: 'Ache os 3 erros', slides: 3, story: 's3-caderno', figurinha: 'nenhuma (só a imagem)' },
+  linhas: { nome: 'Linhas do metrô', slides: 5, story: 's1-linha e s2-estacoes', figurinha: 'nenhuma (só a imagem)', proprio: true },
 }
 const arquivoHistorico = join(pasta, 'historico.json')
 const historico = existsSync(arquivoHistorico) ? JSON.parse(readFileSync(arquivoHistorico, 'utf8')) : []
@@ -41,7 +41,7 @@ function sortear() {
 const estilo = escolhido ?? sortear()
 const ficha = ESTILOS[estilo]
 console.log(`Estilo: ${ficha.nome} (${estilo})`)
-console.log(`Carrossel de ${ficha.slides} slides 1080x1350; story semeador "${ficha.story}" com ${ficha.figurinha}.`)
+console.log(`Carrossel de ${ficha.slides} slides 1080x1350; story semeador "${ficha.story}", figurinha: ${ficha.figurinha}.`)
 console.log(`Guia: ${relative(process.cwd(), join(pasta, 'ESTILOS.md'))}`)
 
 if (slug) {

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8"><title>Stories semeados Orto Questões</title>
 <!-- 3 stories (1080x1920), cada um num visual, que semeiam os posts do dia: deixam a pergunta
-     com espaço para uma figurinha interativa e mandam a resposta para o feed.
+     e mandam a resposta para o feed. Sem figurinha (regra 1 de estilos/ESTILOS.md).
      node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-04-stories/stories.html
      Áreas seguras: nada importante nos 210 px de cima nem nos 300 px de baixo. -->
 <style>
@@ -16,7 +16,7 @@ section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080
 .topo { display: flex; justify-content: space-between; align-items: center; position: relative; z-index: 2; }
 .marca { display: flex; align-items: center; gap: 16px; font: 36px Jakarta; letter-spacing: -.02em; }
 .marca svg { width: 58px; height: 58px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; opacity: .9; }
-.figurinha { display: grid; place-items: center; text-align: center; border: 5px dashed currentColor; opacity: .55; font: 700 30px Jakarta; letter-spacing: .08em; text-transform: uppercase; }
+.figurinha { display: grid; place-items: center; text-align: center; opacity: .85; font: 700 30px Jakarta; letter-spacing: .08em; text-transform: uppercase; }
 section > * { position: relative; z-index: 1; }
 
 /* 1. Arena pixel: escolha sua carta */
@@ -76,18 +76,18 @@ section > * { position: relative; z-index: 1; }
 <circle cx="17" cy="44" r="4.5" fill="#9cc3bd"/><rect x="26" y="40.5" width="19" height="7" rx="3.5" fill="#9cc3bd"/></symbol>
 </defs></svg>
 
-<!-- 1. Semente do post das cartas: figurinha de Quiz -->
+<!-- 1. Semente do post das cartas -->
 <section class="arena" id="s1-cartas">
   <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div></div>
   <p class="rot">Rodada relâmpago</p>
   <h1>Qual carta <em>você joga?</em></h1>
   <p class="caso">Menino de <b>15 anos</b>. Lesão <b>lítica na epífise</b> do úmero proximal, com <b>halo esclerótico</b> e fise ainda <b>aberta</b>.</p>
   <div class="verso"><div>A</div><div>B</div><div>C</div><div>D</div></div>
-  <div class="figurinha">figurinha de quiz aqui<br>osteossarcoma · Ewing · TCG · condroblastoma</div>
+  <div class="figurinha">qual é a sua carta?<br>resposta no post de hoje</div>
   <p class="pe">As cartas completas estão <b>no feed</b></p>
 </section>
 
-<!-- 2. Semente do post do plantão: figurinha de enquete -->
+<!-- 2. Semente do post do plantão -->
 <section class="noite" id="s2-plantao">
   <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div></div>
   <p class="data">sábado, de madrugada</p>
@@ -95,11 +95,11 @@ section > * { position: relative; z-index: 1; }
   <div class="aviso"><div class="ava">R1</div><div><strong>R1 · Plantão</strong><small>agora</small><p>A dor do paciente da tíbia não passa com nada.</p></div></div>
   <div class="aviso"><div class="ava">R1</div><div><strong>R1 · Plantão</strong><small>agora</small><p>Mas o pulso está ótimo, então está tranquilo, né?</p></div></div>
   <h2>Pulso presente <em>descarta</em> síndrome compartimental?</h2>
-  <div class="figurinha">figurinha de enquete aqui<br>sim · não</div>
+  <div class="figurinha">você operaria?<br>resposta no post de hoje</div>
   <p class="pe">A conversa inteira está <b>no feed</b></p>
 </section>
 
-<!-- 3. Semente do post dos erros: figurinha de enquete -->
+<!-- 3. Semente do post dos erros -->
 <section class="caderno" id="s3-caderno">
   <div class="espiral"></div>
   <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div></div>
@@ -107,7 +107,7 @@ section > * { position: relative; z-index: 1; }
     <span class="eti">Do resumo de um colega</span>
     <h2>Esta linha está <span>certa?</span></h2>
     <div class="linha"><small>Fratura do escafoide · linha 7</small><p>DISI: semilunar em flexão (volar).</p></div>
-    <div class="figurinha">figurinha de enquete aqui<br>certa · errada</div>
+    <div class="figurinha">certa ou errada?<br>resposta no post de hoje</div>
     <div class="postit">O resumo tem mais dois erros. Ache no feed.</div>
   </div>
 </section>

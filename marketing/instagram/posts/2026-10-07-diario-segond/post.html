@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Diário do Plantão Segond</title>
+<!-- Jornal, 07/10/2026: a questão vira edição extra de um jornal fictício ("Diário do Plantão").
+     5 slides de feed (1080x1350), só tipografia e a radiografia real da prova (nenhum desenho).
+     Questão real: joelho-0188 (TEOT 2025, questão 103, gabarito C, fratura de Segond).
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-07-diario-segond/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Playfair; src: url(../../fontes/playfair-display-latin-wght-normal.woff2) format('woff2'); font-weight: 400 900; }
+@font-face { font-family: Playfair; src: url(../../fontes/playfair-display-latin-wght-italic.woff2) format('woff2'); font-weight: 400 900; font-style: italic; }
+@font-face { font-family: Serif4; src: url(../../fontes/source-serif-4-latin-opsz-normal.woff2) format('woff2'); font-weight: 200 900; }
+@font-face { font-family: Serif4; src: url(../../fontes/source-serif-4-latin-opsz-italic.woff2) format('woff2'); font-weight: 200 900; font-style: italic; }
+:root { --papel: #F2ECDD; --tinta: #1b1a17; --cinza: #5f5a50; --fio: #1b1a17; --verm: #b3261e; --ouro: #E2A92B; --verde: #14655E; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1350px; padding: 56px 64px; color: var(--tinta); font-family: Serif4, serif;
+  background:
+    radial-gradient(circle at 1px 1px, rgba(0,0,0,.05) 1px, transparent 1.2px) 0 0/5px 5px,
+    radial-gradient(ellipse at 50% 0%, #f7f2e6, transparent 70%),
+    var(--papel); }
+
+/* Cabeçalho do jornal */
+.cab { display: flex; justify-content: space-between; align-items: flex-end; font: 700 19px Jakarta; letter-spacing: .14em; text-transform: uppercase; color: var(--cinza); }
+.cab .marca { display: flex; align-items: center; gap: 10px; letter-spacing: 0; text-transform: none; font: 700 24px Jakarta; color: var(--tinta); }
+.cab .marca svg { width: 34px; height: 34px; }
+.titulo-jornal { margin-top: 10px; padding: 14px 0 10px; border-top: 6px double var(--fio); border-bottom: 2px solid var(--fio); text-align: center; font: 900 112px/1 Playfair; letter-spacing: -.02em; }
+.titulo-jornal.p { font-size: 54px; padding: 10px 0 8px; }
+.data { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 6px double var(--fio); font: 600 19px Jakarta; letter-spacing: .1em; text-transform: uppercase; }
+.data b { color: var(--verm); }
+
+.chapeu { display: inline-block; font: 800 20px Jakarta; letter-spacing: .2em; text-transform: uppercase; color: var(--verm); }
+.manchete { font: 900 84px/.98 Playfair; letter-spacing: -.025em; text-wrap: balance; }
+.manchete i { font-weight: 700; }
+.linha-fina { font: italic 400 33px/1.3 Serif4; color: #3a3730; text-wrap: pretty; }
+.texto { font: 400 27px/1.42 Serif4; text-align: left; }
+.texto b { font-weight: 700; }
+.texto p + p { margin-top: 12px; text-indent: 1.4em; }
+.capitular::first-letter { float: left; font: 900 96px/.8 Playfair; margin: 8px 12px 0 0; }
+.colunas { column-count: 2; column-gap: 40px; column-rule: 1.5px solid rgba(0,0,0,.35); }
+
+.foto { position: relative; background: #000; border: 2px solid var(--fio); }
+.foto img { display: block; width: 100%; height: auto; }
+.legenda { margin-top: 10px; font: italic 400 22px/1.35 Serif4; color: var(--cinza); }
+.legenda b { font-style: normal; font: 700 18px Jakarta; letter-spacing: .12em; text-transform: uppercase; color: var(--tinta); }
+
+.box { border: 3px solid var(--fio); padding: 22px 26px; background: rgba(255,255,255,.35); }
+.box h4 { font: 800 21px Jakarta; letter-spacing: .18em; text-transform: uppercase; }
+.fio-h { height: 0; border-top: 2px solid var(--fio); margin: 22px 0; }
+
+/* Alternativas como cédula */
+.cedula { display: grid; gap: 12px; margin-top: 14px; }
+.cedula div { display: flex; align-items: center; gap: 18px; font: 600 30px Serif4; }
+.cedula i { flex: none; width: 50px; height: 50px; border: 3px solid var(--fio); display: grid; place-items: center; font: 800 26px Jakarta; font-style: normal; }
+
+/* Classificados */
+.classif { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-top: 3px solid var(--fio); border-left: 1.5px solid var(--fio); }
+.anuncio { padding: 28px 26px 30px; border-right: 1.5px solid var(--fio); border-bottom: 1.5px solid var(--fio); }
+.anuncio .tipo { font: 800 18px Jakarta; letter-spacing: .2em; text-transform: uppercase; color: var(--cinza); }
+.anuncio h3 { margin-top: 4px; font: 900 44px/1 Playfair; letter-spacing: -.01em; }
+.anuncio h3 small { font: 800 22px Jakarta; letter-spacing: .06em; vertical-align: middle; margin-left: 6px; padding: 2px 10px; border: 2px solid var(--fio); }
+.anuncio p { margin-top: 12px; font: 400 26px/1.4 Serif4; }
+.anuncio p b { font-weight: 700; }
+.anuncio .end { display: block; margin-top: 14px; padding-top: 10px; border-top: 1.5px dashed rgba(0,0,0,.45); font: 700 22px/1.3 Jakarta; }
+
+.carimbo { position: absolute; padding: 8px 22px; border: 6px solid var(--verm); color: var(--verm); font: 800 34px Jakarta; letter-spacing: .14em; text-transform: uppercase; transform: rotate(-9deg); opacity: .88; mix-blend-mode: multiply; }
+.rodape { position: absolute; left: 64px; right: 64px; bottom: 40px; display: flex; justify-content: space-between; padding-top: 10px; border-top: 2px solid var(--fio); font: 700 20px Jakarta; letter-spacing: .08em; text-transform: uppercase; color: var(--cinza); }
+.rodape b { color: var(--tinta); }
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#14655E"/><g fill="#FFFFFF" opacity=".55"><path transform="translate(13 9.5)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(11 21.2)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(13 44.6)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g><path fill="#F4CF7C" transform="translate(11 32.9)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></symbol>
+</defs></svg>
+
+<!-- 1. Primeira página -->
+<section id="p1-capa">
+  <div class="cab"><span class="marca"><svg><use href="#sim"/></svg>Orto Questões</span><span>Edição extra · 1/5</span></div>
+  <div class="titulo-jornal">Diário do Plantão</div>
+  <div class="data"><span>Quarta-feira, 7 de outubro de 2026</span><b>Caderno Joelho</b><span>Prova do TEOT 2025</span></div>
+  <div style="display:grid;grid-template-columns:1fr 360px;gap:40px;margin-top:30px">
+    <div>
+      <span class="chapeu">Radiologia · urgente</span>
+      <h1 class="manchete" style="margin-top:12px;font-size:76px">Lasca de poucos milímetros no joelho põe banca em alerta</h1>
+      <p class="linha-fina" style="margin-top:20px">Seta amarela aponta o fragmento; quatro nomes são investigados. Especialistas dizem que o pedaço de osso é pequeno, mas o que ele denuncia, não.</p>
+      <div class="fio-h"></div>
+      <div class="texto capitular"><p>Uma radiografia simples do joelho, sem história clínica nenhuma ao lado, foi a questão 103 da prova do TEOT 2025. A pergunta cabia numa linha. A resposta exigia saber <b>onde</b> cada achado costuma aparecer.</p></div>
+    </div>
+    <div>
+      <figure class="foto"><img src="../../../../public/imagens/joelho/joelho-0188-teot2025.jpeg" alt=""></figure>
+      <p class="legenda"><b>Flagrante</b><br>A seta aponta o suspeito. Radiografia original da prova.</p>
+    </div>
+  </div>
+  <div class="box" style="margin-top:26px;padding:16px 24px">
+    <h4>Nesta edição</h4>
+    <p class="texto" style="margin-top:6px;text-align:left">Pág. 2 a pergunta · 3 classificados · 4 o veredito · 5 para a prova</p>
+  </div>
+  <div class="rodape"><span>Arraste para ler</span><b>ortoquestoes.com.br</b></div>
+</section>
+
+<!-- 2. A pergunta -->
+<section id="p2-questao">
+  <div class="cab"><span class="marca"><svg><use href="#sim"/></svg>Orto Questões</span><span>Caderno Provas · 2/5</span></div>
+  <div class="titulo-jornal p">Diário do Plantão</div>
+  <div style="display:grid;grid-template-columns:400px 1fr;gap:44px;margin-top:34px">
+    <div>
+      <figure class="foto"><img src="../../../../public/imagens/joelho/joelho-0188-teot2025.jpeg" alt=""></figure>
+      <p class="legenda">Joelho em AP. Repare em que osso a seta encosta e de que lado.</p>
+    </div>
+    <div>
+      <span class="chapeu">Caiu assim · TEOT 2025</span>
+      <h2 class="manchete" style="margin-top:12px;font-size:58px">“Na radiografia de joelho a seguir, a seta evidencia:”</h2>
+      <div class="fio-h"></div>
+      <div class="cedula">
+        <div><i>A</i>A fabela.</div>
+        <div><i>B</i>O sinal arqueado.</div>
+        <div><i>C</i>A fratura de SEGOND.</div>
+        <div><i>D</i>O sinal de PELLEGRINI-STIEDA.</div>
+      </div>
+      <div class="box" style="margin-top:34px">
+        <h4>Participe</h4>
+        <p class="texto" style="margin-top:8px;text-align:left">Comente a sua letra antes de virar a página. Na próxima, os quatro suspeitos publicam o próprio endereço.</p>
+      </div>
+    </div>
+  </div>
+  <div class="rodape"><span>Sua letra nos comentários</span><b>2/5</b></div>
+</section>
+
+<!-- 3. Classificados -->
+<section id="p3-classificados">
+  <div class="cab"><span class="marca"><svg><use href="#sim"/></svg>Orto Questões</span><span>Classificados · 3/5</span></div>
+  <div class="titulo-jornal p">Classificados</div>
+  <p class="linha-fina" style="margin-top:22px;text-align:center">Quatro candidatos à vaga de “o que a seta mostra”. Confira o endereço de cada um.</p>
+  <div class="classif" style="margin-top:26px">
+    <div class="anuncio"><span class="tipo">Apresenta-se</span><h3>Fabela <small>A</small></h3><p>Sesamoide redondinho e de contorno liso, vive dentro do gastrocnêmio lateral. <b>Não é fratura</b> e não tem antecedentes.</p><span class="end">Endereço: atrás do côndilo femoral lateral</span></div>
+    <div class="anuncio"><span class="tipo">Procura-se</span><h3>Sinal arqueado <small>B</small></h3><p>Avulsão causada pela inserção do complexo posterolateral. Quem aparece com ele deve examinar o <b>canto posterolateral</b>.</p><span class="end">Endereço: cabeça da fíbula</span></div>
+    <div class="anuncio"><span class="tipo">Procura-se</span><h3>Segond <small>C</small></h3><p>Fragmento fino e alongado, arrancado pela cápsula lateral e pelo complexo anterolateral. <b>Raramente anda sozinho.</b></p><span class="end">Endereço: borda lateral do planalto tibial, logo abaixo da linha articular</span></div>
+    <div class="anuncio"><span class="tipo">Antigo morador</span><h3>Pellegrini-Stieda <small>D</small></h3><p>Calcificação de uma lesão antiga, junto à origem femoral do <b>colateral medial</b>.</p><span class="end">Endereço: lado medial, côndilo femoral</span></div>
+  </div>
+  <div class="box" style="margin-top:26px"><h4>Nota do editor</h4><p class="texto" style="margin-top:8px;text-align:left">Volte à radiografia: a seta encosta em qual osso, e de qual lado? Só um endereço confere.</p></div>
+  <div class="rodape"><span>O veredito na próxima</span><b>3/5</b></div>
+</section>
+
+<!-- 4. O veredito -->
+<section id="p4-veredito">
+  <div class="cab"><span class="marca"><svg><use href="#sim"/></svg>Orto Questões</span><span>O veredito · 4/5</span></div>
+  <div class="titulo-jornal p">Diário do Plantão</div>
+  <span class="chapeu" style="margin-top:30px">Resposta C · Fratura de Segond</span>
+  <h2 class="manchete" style="margin-top:12px;font-size:76px">Fragmento entrega o cúmplice: o <i>cruzado anterior</i></h2>
+  <p class="linha-fina" style="margin-top:18px">A lasca na borda lateral do planalto tibial é a fratura de Segond, e ela tem forte associação com a lesão do LCA.</p>
+  <div class="carimbo" style="right:90px;bottom:120px">Caso encerrado</div>
+  <div class="fio-h"></div>
+  <div class="texto colunas capitular" style="font-size:29px">
+    <p>É uma pequena <b>avulsão da borda lateral do planalto tibial</b>, logo abaixo da linha articular. Quem arranca o fragmento é a tração da <b>cápsula lateral e do complexo anterolateral</b>, num trauma em <b>rotação interna com varo</b>.</p>
+    <p>Na radiografia em AP aparece como um fragmento <b>fino e alongado</b> ao lado do planalto lateral, exatamente onde a seta da prova aponta.</p>
+    <p>O tamanho engana. O valor do achado está na associação: a fratura de Segond tem <b>forte relação com a lesão do ligamento cruzado anterior</b>.</p>
+    <p>Por isso, diante dela, a investigação não termina na radiografia: é preciso procurar a lesão do <b>LCA</b> e dos <b>meniscos</b>.</p>
+  </div>
+  <div class="rodape"><span>Os outros três na próxima</span><b>4/5</b></div>
+</section>
+
+<!-- 5. Para a prova -->
+<section id="p5-prova">
+  <div class="cab"><span class="marca"><svg><use href="#sim"/></svg>Orto Questões</span><span>Para a prova · 5/5</span></div>
+  <div class="titulo-jornal p">Diário do Plantão</div>
+  <span class="chapeu" style="margin-top:30px">Os outros três foram liberados</span>
+  <h2 class="manchete" style="margin-top:12px;font-size:64px">Cada achado tem um endereço. E cada endereço, um suspeito.</h2>
+  <div style="display:grid;gap:0;margin-top:30px;border-top:3px solid var(--fio)">
+    <div style="display:grid;grid-template-columns:330px 1fr;gap:28px;padding:28px 0;border-bottom:1.5px solid var(--fio)"><b style="font:900 36px Playfair">Planalto tibial lateral</b><p class="texto" style="text-align:left;font-size:31px"><b>Segond</b> → procure o <b>LCA</b> e os meniscos.</p></div>
+    <div style="display:grid;grid-template-columns:330px 1fr;gap:28px;padding:28px 0;border-bottom:1.5px solid var(--fio)"><b style="font:900 36px Playfair">Cabeça da fíbula</b><p class="texto" style="text-align:left;font-size:31px"><b>Sinal arqueado</b> → procure o <b>canto posterolateral</b>.</p></div>
+    <div style="display:grid;grid-template-columns:330px 1fr;gap:28px;padding:28px 0;border-bottom:1.5px solid var(--fio)"><b style="font:900 36px Playfair">Medial, no fêmur</b><p class="texto" style="text-align:left;font-size:31px"><b>Pellegrini-Stieda</b> → lesão antiga do <b>colateral medial</b>.</p></div>
+    <div style="display:grid;grid-template-columns:330px 1fr;gap:28px;padding:28px 0;border-bottom:1.5px solid var(--fio)"><b style="font:900 36px Playfair">Atrás do côndilo</b><p class="texto" style="text-align:left;font-size:31px"><b>Fabela</b> → sesamoide normal, liso e redondo. Não é lesão.</p></div>
+  </div>
+  <div class="box" style="margin-top:34px;background:var(--tinta);color:var(--papel);border-color:var(--tinta)">
+    <h4 style="color:var(--ouro)">Recorte e guarde</h4>
+    <p style="margin-top:8px;font:700 36px/1.25 Playfair">Avulsão da borda lateral do planalto tibial é Segond. E Segond lembra LCA.</p>
+  </div>
+  <div class="rodape"><span>Salve esta edição</span><b>Mais questões comentadas em ortoquestoes.com.br</b></div>
+</section>
+
+</body></html>

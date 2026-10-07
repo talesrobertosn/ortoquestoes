@@ -4,12 +4,10 @@ Só stories (1080×1920), sem post de feed.
 
 ## Ordem de publicação
 
-1. **`s1-cartaz`** de manhã. Colocar a **figurinha de quiz** em cima do retângulo tracejado, com as
-   opções A, B, C e D e a **A** marcada como certa. Pergunta da figurinha: "Qual a ordem?".
-2. **`s2-creditos`** à noite (ou no dia seguinte), depois que o pessoal votou. Pode ir com a
-   figurinha de link para ortoquestoes.com.br logo abaixo do endereço.
+1. **`s1-cartaz`** de manhã: o cartaz com a pergunta e as quatro alternativas.
+2. **`s2-creditos`** à noite (ou no dia seguinte): a resposta nos créditos finais.
 
-Stories não levam legenda.
+Só as imagens: sem figurinha de quiz, enquete ou link. Stories não levam legenda.
 
 ## Conferência
 
