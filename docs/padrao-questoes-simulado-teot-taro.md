@@ -42,6 +42,43 @@ tratamento (ponto de entrada, rotação da placa, distância segura), classifica
 subtipo), incidência radiográfica, complicação mais comum. Números exatos do texto (graus,
 milímetros, porcentagens, prazos) são frequentes.
 
+## Conceitos básicos: como a banca cobra (lido em 07/10/2026)
+
+Leitura das 239 questões oficiais válidas do tema (TARO 2006 a 2026, TEOT 2021 a 2025, TEOT/TARO
+sem ano e CET-PR).
+
+- **Peso dos assuntos:** infecção domina (osteomielite aguda, artrite séptica, infecção
+  pós-osteossíntese e periprotética, cerca de 4 em cada 10). Depois vêm biomecânica da
+  osteossíntese e consolidação (cerca de 3 em 10), dor e síndrome dolorosa complexa regional, lesão
+  muscular, amputações, deformidade (CORA) e fixador externo.
+- **A banca recicla.** O mesmo fato volta ano após ano, às vezes com o texto idêntico (banda de
+  tensão na face convexa em 2022 e 2023; modulação da dor em 2020 e 2023; Salmonella em 2023 e 2025;
+  ácido tranexâmico em 2020 e 2023). Os fatos carimbados: critérios de KOCHER e a probabilidade
+  por número de critérios; osteogênese, osteoindução ou osteocondução de cada enxerto e substituto
+  (BMP, homólogo, biocerâmica, vidro bioativo, fosfato de cálcio); o que aumenta a estabilidade do
+  fixador externo monolateral e circular; CORA; strain e estabilidade absoluta ou relativa por tipo
+  de traço; função das placas (neutralização, banda de tensão, compressão, bloqueada); vitamina C,
+  alodinia, estágios e tipos da síndrome dolorosa complexa regional; metáfises intra-articulares
+  na osteomielite com artrite séptica; agente por contexto (usuário de drogas, ferimento
+  puntiforme no calcâneo, falciforme, Kingella, PVL); CIERNY e MADER; ROBERTS; biofilme;
+  sobrecrescimento do coto no úmero; músculo biarticular, contração excêntrica e fibra tipo II;
+  MASQUELET; BOYD e SYME.
+- **Nível da pergunta:** conceito aplicado à prática (qual enxerto conduz, onde a placa vai, o que
+  deixa o fixador mais rígido, qual exame, qual agente). Biologia molecular aparece pouco e de forma
+  simples (osteoclasto da linhagem hematopoética, interleucina-6 na PCR, polimorfonucleares na fase
+  aguda). Não aparecem detalhes de estudo experimental (camundongo, cadáver, série de N casos).
+- **Formato:** enunciado curto, quatro alternativas, quase nunca imagem (6 de 239) e caso clínico
+  raro, mas crescendo em 2025 e 2026 (artrite séptica no lactente, infecção confirmada após
+  osteossíntese, síndrome dolorosa após túnel do carpo). Pares cruzados 2 por 2 são o formato
+  dominante desde 2021 (por exemplo "glicose diminuída e proteína elevada", "feminino, e pode ser
+  prevenida com vitamina C", "7º dia com 0,25 mm quatro vezes por dia"). Números exatos aparecem
+  (2.500 N, 4 cm, 15 cm, 70 graus, 3 a 5%), sempre ligados a uma decisão.
+
+Para lotes de conceitos básicos: priorizar os fatos carimbados que o capítulo trouxer, preferir o
+par cruzado, perguntar o conceito na forma em que se usa na prática e limitar biologia molecular e
+dado de estudo experimental a no máximo uma ou duas questões por lote. O capítulo 2 do Rockwood
+(lote 0340 a 0359) ficou mais molecular e experimental do que a banca costuma ser.
+
 ## Como escrever cada questão
 
 1. Escolher **um fato** do capítulo que a banca cobraria: um número, um "mais frequente", um tipo
