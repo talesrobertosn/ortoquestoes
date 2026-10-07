@@ -125,6 +125,22 @@ Salter-Harris, Neer).
 - **Stories:** `s1-cena` (a evidência e "a investigação está no feed") de manhã e `s2-veredito`
   à tarde; sem figurinhas nem link quando o pedido for "story normal".
 
+## 6. Vitrine nos aparelhos (`posts/2026-10-09-ortoquestoes-simulados/`)
+
+**Ideia:** propaganda de uma função ou novidade do site mostrada em telas reais dentro de um
+iPhone e de um MacBook feitos em CSS (sem imagem de aparelho de terceiros).
+
+- **Formato:** carrossel 1080×1350 de 6 slides e 3 stories 1080×1920, no fundo escuro da marca
+  (verde-noite com dourado), Jakarta e Inter.
+- **Estrutura:** capa com os dois aparelhos e a promessa → como funciona (passos numerados) → a
+  tela no celular com o que reparar → o comentário em dois celulares → o notebook → chamada.
+- **Telas:** `telas.mjs` captura a questão respondida com `nome=questao/ID>B@seletor`; para o
+  notebook, `LARGURA=1100 ALTURA=688 ESCALA=2` (a 1440 a letra fica pequena demais no mockup).
+- **Regras:** "Tela ilustrativa" em todo slide com tela; nas propagandas dos simulados, a nota de
+  que as questões são autorais e sem vínculo com as instituições das provas.
+- **Bom para:** novidades do site (simulados, Cronograma, Simulado Nacional, ranking) e anúncios
+  pagos para quem ainda não conhece o Orto Questões.
+
 ## Stories semeadores (`stories/`)
 
 Um story por estilo (1080×1920), postado 1 a 2 horas antes do post correspondente: faz a

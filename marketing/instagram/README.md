@@ -87,6 +87,8 @@ Carrossel de 3 slides no feed e os mesmos 3 em story, no visual pixel art da are
 ranking (fonte Pixelify Sans, OFL, em `fontes/`): a novidade, como funciona (ranking, fogueira,
 emblemas) e por que a constância ajuda. Telas, legenda e ordem em `ranking/LEGENDA.md`.
 Para capturar uma tela de celular rolada até um elemento, `telas.mjs` aceita `nome=rota@seletor`.
+Para a questão já respondida (comentário aberto), use `nome=questao/ID>B@seletor`, que escolhe a B
+com "Certeza" antes de rolar; `LARGURA`, `ALTURA` e `ESCALA` mudam a tela (notebook: 1100, 688 e 2).
 
 ## Série "Caso para detetive"
 

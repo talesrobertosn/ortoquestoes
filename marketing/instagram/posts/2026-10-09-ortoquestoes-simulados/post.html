@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Orto Questões: OrtoQuestões Simulados</title>
+<!-- Propaganda dos OrtoQuestões Simulados: questões autorais feitas por engenharia reversa das provas
+     do TEOT, do TARO e da SBQ, a partir da bibliografia. Carrossel de 6 slides (1080x1350) e 3 stories
+     (1080x1920), com iPhone e MacBook em CSS e telas reais do site (conta de exemplo, tema escuro).
+     Telas: node marketing/instagram/telas.mjs 'sim-questao=questao/trauma-1265@.cartao-questao'
+       'sim-resposta=questao/trauma-1265>B@.alternativa' 'sim-comentario=questao/trauma-1265>B@.cm-cabeca'
+       'sim-alternativas=questao/trauma-1265>B@.cm-secao'
+     LARGURA=1100 ALTURA=688 ESCALA=2 node marketing/instagram/telas.mjs
+       'lap-questao=questao/tumores-0382@.cartao-questao' 'lap-comentario=questao/tumores-0382>B@.cm-cabeca'
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-09-ortoquestoes-simulados/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+:root { --noite: #05110F; --verde: #14655E; --menta: #7FD1BF; --ouro: #F4CF7C; --ouro2: #C9952F; --creme: #FBF6EA; --cinza: #A9BBB7; --acerto: #1F7A4D; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; color: #fff; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1350px; padding: 64px 72px;
+  background:
+    radial-gradient(900px 700px at 100% 40%, rgba(20,101,94,.55), transparent 70%),
+    radial-gradient(700px 520px at 0% 0%, rgba(244,207,124,.12), transparent 70%),
+    radial-gradient(900px 500px at 30% 110%, rgba(20,101,94,.45), transparent 70%),
+    linear-gradient(170deg, #0b1d1a 0%, var(--noite) 60%, #030a09 100%); }
+section::before { content: ''; position: absolute; inset: 0; background-image: radial-gradient(rgba(255,255,255,.07) 1.2px, transparent 1.3px); background-size: 26px 26px; -webkit-mask: linear-gradient(180deg, #000, transparent 70%); pointer-events: none; }
+section.story { height: 1920px; padding: 230px 80px 0; }
+.camada { position: relative; z-index: 5; }
+
+.topo { display: flex; justify-content: space-between; align-items: center; position: relative; z-index: 6; }
+.marca { display: flex; align-items: center; gap: 14px; font: 36px Jakarta; letter-spacing: -.02em; }
+.marca svg { width: 56px; height: 56px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; }
+.site { font: 700 24px Jakarta; color: var(--cinza); letter-spacing: .02em; }
+.pilula { display: inline-flex; align-items: center; gap: 12px; font: 800 23px Jakarta; letter-spacing: .14em; text-transform: uppercase; color: var(--noite); background: var(--ouro); padding: 12px 20px 11px; border-radius: 12px; box-shadow: 0 12px 30px rgba(244,207,124,.25); }
+.pilula svg { width: 24px; height: 24px; display: block; }
+.etq { display: inline-flex; align-items: center; gap: 12px; font: 800 23px Jakarta; letter-spacing: .2em; text-transform: uppercase; color: var(--menta); }
+.etq::before { content: ''; width: 34px; height: 3px; background: var(--menta); border-radius: 2px; }
+h1, h2 { font-family: Jakarta; font-weight: 800; letter-spacing: -.045em; line-height: .96; }
+h1 { font-size: 96px; } h2 { font-size: 84px; }
+em { font-style: normal; color: var(--ouro); }
+.sub { font-size: 31px; line-height: 1.38; color: #C9D6D3; text-wrap: pretty; }
+.sub b { color: #fff; }
+.pt { margin-left: -.06em; }
+.selo { display: inline-block; font: 800 17px Jakarta; letter-spacing: .16em; text-transform: uppercase; color: var(--noite); background: var(--ouro); padding: 6px 10px 5px; border-radius: 7px; vertical-align: middle; }
+
+/* lista de provas da capa */
+.provas { margin-top: 24px; display: grid; gap: 10px; }
+.provas .rotulo { font: 800 21px Jakarta; letter-spacing: .22em; text-transform: uppercase; color: var(--cinza); margin-bottom: 2px; }
+.prova { display: grid; grid-template-columns: 46px 1fr; gap: 16px; align-items: center; padding: 11px 18px 11px 14px; border-radius: 18px; background: rgba(255,255,255,.055); border: 1.5px solid rgba(255,255,255,.12); }
+.prova .ck { width: 46px; height: 46px; border-radius: 12px; background: rgba(244,207,124,.16); display: grid; place-items: center; }
+.prova .ck svg { width: 26px; height: 26px; color: var(--ouro); }
+.prova b { display: block; font: 800 32px/1.08 Jakarta; letter-spacing: -.03em; }
+.prova span { display: block; font: 500 22px/1.3 Inter; color: var(--cinza); margin-top: 4px; }
+.prova span strong { color: #FFE3A3; font-weight: 700; }
+.prova.principal { background: linear-gradient(120deg, rgba(244,207,124,.22), rgba(244,207,124,.06)); border-color: rgba(244,207,124,.65); }
+.prova.principal b { font-size: 40px; color: var(--ouro); }
+.prova.principal .ck { background: var(--ouro); } .prova.principal .ck svg { color: var(--noite); }
+
+/* faixas de rodapé */
+.faixa-cron { display: flex; align-items: center; gap: 18px; padding: 18px 22px; border-radius: 18px; background: rgba(20,101,94,.55); border: 1.5px solid rgba(127,209,191,.45); font: 500 25px/1.3 Inter; color: #DDEBE8; }
+.faixa-cron i svg { width: 44px; height: 44px; color: var(--menta); display: block; }
+.faixa-cron b { color: #fff; font-weight: 700; }
+.cta { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 22px 30px; border-radius: 20px; background: linear-gradient(180deg, #FBE2A6, var(--ouro)); color: var(--noite); box-shadow: 0 20px 50px rgba(244,207,124,.35); }
+.cta b { font: 800 35px/1.05 Jakarta; letter-spacing: -.025em; }
+.cta span { font: 700 22px Jakarta; white-space: nowrap; display: flex; align-items: center; gap: 10px; }
+.cta svg { width: 28px; height: 28px; display: block; }
+
+/* iPhone (estilo 15 Pro) */
+.iphone { --w: 400px; position: absolute; width: var(--w); padding: calc(var(--w) * .034); border-radius: calc(var(--w) * .17);
+  background: linear-gradient(145deg, #7b7f84 0%, #3b3e42 18%, #1d1e20 55%, #46494d 100%);
+  box-shadow: 0 0 0 1.5px #8d9196 inset, 0 0 0 calc(var(--w) * .008) #0d0d0e inset, 0 60px 120px rgba(0,0,0,.6), 0 20px 40px rgba(0,0,0,.4); z-index: 4; }
+.iphone .tela { position: relative; border-radius: calc(var(--w) * .138); overflow: hidden; aspect-ratio: 390 / 844; background: #0f1917; }
+.iphone .tela img { width: 100%; height: calc(100% - var(--w) * .115); margin-top: calc(var(--w) * .115); object-fit: cover; object-position: top; display: block; }
+.iphone .tela::before { content: '9:41'; position: absolute; left: 11%; top: calc(var(--w) * .045); font: 700 calc(var(--w) * .042) Inter; color: #fff; z-index: 2; }
+.iphone .tela::after { content: ''; position: absolute; right: 9%; top: calc(var(--w) * .05); width: calc(var(--w) * .07); height: calc(var(--w) * .032); border-radius: 4px; border: 1.5px solid rgba(255,255,255,.85); background: linear-gradient(90deg, #fff 70%, transparent 70%) content-box; padding: 1.5px; z-index: 2; }
+.iphone .ilha { position: absolute; top: calc(var(--w) * .03); left: 50%; transform: translateX(-50%); width: calc(var(--w) * .27); height: calc(var(--w) * .078); border-radius: 999px; background: #000; z-index: 2; }
+.iphone .bt { position: absolute; width: calc(var(--w) * .012); border-radius: 3px; background: linear-gradient(90deg, #2a2c2f, #6b6f73); }
+.iphone .bt.d { right: calc(var(--w) * -.009); top: 26%; height: 11%; }
+.iphone .bt.e1 { left: calc(var(--w) * -.009); top: 20%; height: 5%; }
+.iphone .bt.e2 { left: calc(var(--w) * -.009); top: 28%; height: 8%; }
+.iphone .brilho { position: absolute; inset: calc(var(--w) * .034); border-radius: calc(var(--w) * .138); background: linear-gradient(115deg, rgba(255,255,255,.10), transparent 35%); pointer-events: none; z-index: 3; }
+.nota-tela { position: absolute; font: 500 17px Inter; color: rgba(255,255,255,.4); z-index: 6; }
+
+/* passos (cronograma e comentário) */
+.passos { display: grid; gap: 14px; }
+.passo { display: grid; grid-template-columns: 58px 1fr; gap: 18px; align-items: start; padding: 20px 22px; border-radius: 20px; background: rgba(255,255,255,.06); border: 1.5px solid rgba(255,255,255,.12); }
+.passo .n { width: 58px; height: 58px; border-radius: 15px; background: var(--ouro); color: var(--noite); display: grid; place-items: center; font: 800 30px Jakarta; }
+.passo b { display: block; font: 800 31px/1.1 Jakarta; letter-spacing: -.025em; }
+.passo span { display: block; font: 500 23px/1.38 Inter; color: #C9D6D3; margin-top: 6px; }
+.passo span strong { color: #fff; font-weight: 700; }
+
+/* MacBook (estilo Air M2) */
+.mac { --w: 900px; position: absolute; width: var(--w); z-index: 3; filter: drop-shadow(0 50px 70px rgba(0,0,0,.55)); }
+.mac .tampa { position: relative; padding: calc(var(--w) * .022) calc(var(--w) * .022) calc(var(--w) * .028); border-radius: calc(var(--w) * .032) calc(var(--w) * .032) calc(var(--w) * .008) calc(var(--w) * .008);
+  background: #0b0c0d; box-shadow: 0 0 0 2px #45484c, inset 0 0 0 1px #1d1f21; }
+.mac .tela { position: relative; aspect-ratio: 1100 / 688; overflow: hidden; border-radius: calc(var(--w) * .006); background: #0f1917; }
+.mac .tela img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+.mac .notch { position: absolute; top: calc(var(--w) * .022); left: 50%; transform: translateX(-50%); width: calc(var(--w) * .1); height: calc(var(--w) * .02); background: #0b0c0d; border-radius: 0 0 calc(var(--w) * .008) calc(var(--w) * .008); z-index: 2; }
+.mac .tampa::after { content: ''; position: absolute; inset: calc(var(--w) * .022); background: linear-gradient(120deg, rgba(255,255,255,.08), transparent 30%); pointer-events: none; z-index: 3; border-radius: calc(var(--w) * .006); }
+.mac .base { position: relative; width: 112%; margin-left: -6%; height: calc(var(--w) * .028); border-radius: 2px 2px calc(var(--w) * .03) calc(var(--w) * .03) / 2px 2px calc(var(--w) * .022) calc(var(--w) * .022);
+  background: linear-gradient(180deg, #e4e6e9 0%, #b9bcc0 45%, #8d9094 80%, #5d6064 100%); }
+.mac .base::before { content: ''; position: absolute; left: 50%; top: 0; transform: translateX(-50%); width: 15%; height: 45%; background: linear-gradient(180deg, #8e9195, #b5b8bc); border-radius: 0 0 calc(var(--w) * .012) calc(var(--w) * .012); }
+
+.rodape-nota { position: absolute; left: 72px; right: 72px; bottom: 34px; font: 500 18px/1.4 Inter; color: rgba(255,255,255,.42); z-index: 6; }
+.faixa { display: inline-flex; align-items: center; gap: 14px; padding: 14px 22px; border-radius: 16px; background: rgba(20,101,94,.6); border: 1.5px solid rgba(127,209,191,.5); font: 600 26px/1.25 Inter; color: #E6F2EF; }
+.faixa b { color: #fff; font-weight: 800; }
+.faixa i svg { width: 30px; height: 30px; display: block; color: var(--menta); }
+.bancas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+.banca { font: 800 30px Jakarta; letter-spacing: -.02em; padding: 12px 22px; border-radius: 14px; background: rgba(255,255,255,.07); border: 1.5px solid rgba(255,255,255,.18); }
+.banca small { display: block; font: 600 17px Inter; letter-spacing: 0; color: var(--cinza); margin-top: 2px; }
+.banca.ouro { background: linear-gradient(120deg, rgba(244,207,124,.24), rgba(244,207,124,.06)); border-color: rgba(244,207,124,.65); color: var(--ouro); }
+.marca-tela { position: absolute; z-index: 7; display: flex; align-items: center; gap: 12px; padding: 12px 18px; border-radius: 14px; background: var(--creme); color: #12181A; font: 700 22px/1.25 Inter; box-shadow: 0 18px 40px rgba(0,0,0,.45); max-width: 360px; }
+.marca-tela::before { content: ''; flex: none; width: 14px; height: 14px; border-radius: 50%; background: var(--ouro2); box-shadow: 0 0 0 5px rgba(201,149,47,.25); }
+.lista { display: grid; gap: 14px; }
+.item { display: grid; grid-template-columns: 52px 1fr; gap: 16px; align-items: start; }
+.item .ck2 { width: 52px; height: 52px; border-radius: 14px; background: rgba(244,207,124,.16); display: grid; place-items: center; }
+.item .ck2 svg { width: 28px; height: 28px; color: var(--ouro); display: block; }
+.item b { display: block; font: 800 30px/1.1 Jakarta; letter-spacing: -.025em; }
+.item span { display: block; font: 500 23px/1.38 Inter; color: #C9D6D3; margin-top: 5px; }
+.figurinha { margin: 0 auto; width: 640px; height: 170px; border-radius: 28px; border: 4px dashed rgba(255,255,255,.35); display: grid; place-items: center; font: 600 24px Inter; color: rgba(255,255,255,.45); }
+</style></head>
+<body>
+<template id="simbolo"><svg viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#14655E"/><g fill="#FFFFFF" opacity=".55"><path transform="translate(13 9.5)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(11 21.2)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(13 44.6)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g><path fill="#F4CF7C" transform="translate(11 32.9)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></svg></template>
+<template id="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></template>
+<template id="cal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/><path d="M8.5 14.5l2 2 4-4"/></svg></template>
+<template id="seta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></template>
+<template id="fone"><div class="tela"><img alt=""></div><div class="ilha"></div><div class="brilho"></div><span class="bt d"></span><span class="bt e1"></span><span class="bt e2"></span></template>
+
+
+<template id="mac"><div class="tampa"><div class="tela"><img alt=""></div><div class="notch"></div></div><div class="base"></div></template>
+<template id="livro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></svg></template>
+<template id="novo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"/></svg></template>
+
+<!-- F1. CAPA: o que é, de onde vem e o produto nos dois aparelhos -->
+<section id="f1">
+  <div class="topo"><div class="marca" data-marca><b>Orto</b><span>Questões</span></div><div class="site">ortoquestoes.com.br</div></div>
+  <div class="camada" style="margin-top:42px">
+    <div class="pilula"><i data-icone="novo"></i>OrtoQuestões Simulados</div>
+    <h1 style="margin-top:26px;font-size:92px">Questões novas,<br>no padrão <em>da sua prova.</em></h1>
+    <p class="sub" style="margin-top:22px;width:900px">Feitas por <b>engenharia reversa</b> das provas anteriores do <b>TEOT</b>, do <b>TARO</b> e da <b>Sociedade Brasileira de Quadril (SBQ)</b>.</p>
+  </div>
+  <div class="mac" data-mac="t-lap-questao" style="--w:720px; right:44px; top:650px"></div>
+  <div class="iphone" data-tela="t-sim-questao" style="--w:250px; left:60px; top:690px; transform: rotate(-5deg)"></div>
+  <div class="camada" style="position:absolute; left:72px; right:72px; bottom:82px; display:flex; justify-content:flex-end">
+    <div class="faixa"><i data-icone="novo"></i><div><b>Centenas de questões</b> e novas todos os dias</div></div>
+  </div>
+  <div class="rodape-nota" style="text-align:right">Telas ilustrativas · questões autorais, sem vínculo com as instituições das provas</div>
+</section>
+
+<!-- F2. COMO SÃO FEITAS: a engenharia reversa em quatro passos -->
+<section id="f2">
+  <div class="topo"><div class="etq">Como são feitas</div><div class="marca" data-marca><b>Orto</b><span>Questões</span></div></div>
+  <div class="camada" style="margin-top:44px">
+    <h2>Engenharia reversa<br><em>da prova.</em></h2>
+    <p class="sub" style="margin-top:22px;width:920px">Antes de escrever uma questão, lemos as provas anteriores e mapeamos <b>o que a banca repete</b>. Depois transformamos a bibliografia em questões novas, <b>no mesmo formato</b>.</p>
+    <div class="bancas">
+      <div class="banca ouro">TEOT<small>Título de especialista</small></div>
+      <div class="banca ouro">TARO<small>Residência em ortopedia</small></div>
+      <div class="banca ouro">SBQ<small>Sociedade Brasileira de Quadril</small></div>
+    </div>
+  </div>
+  <div class="camada passos" style="margin-top:34px">
+    <div class="passo"><span class="n">1</span><div><b>Lemos a banca</b><span>As questões oficiais de cada tema: <strong>o que se repete</strong>, o nível e o jeito de perguntar.</span></div></div>
+    <div class="passo"><span class="n">2</span><div><b>Vamos ao livro</b><span>Cada questão sai da <strong>bibliografia de referência</strong>, com capítulo e figura citados.</span></div></div>
+    <div class="passo"><span class="n">3</span><div><b>Escrevemos como a banca</b><span>Enunciado curto, quatro alternativas, <strong>pares cruzados</strong>, epônimo em caixa alta e figura do livro.</span></div></div>
+    <div class="passo"><span class="n">4</span><div><b>Comentamos como uma aula</b><span>O conceito explicado e <strong>cada alternativa</strong>, a certa e as erradas, com o porquê.</span></div></div>
+  </div>
+  <div class="rodape-nota">Questões autorais do Orto Questões, para o aprendizado. Não são questões oficiais e não têm vínculo com as instituições que organizam as provas.</div>
+</section>
+
+<!-- F3. COM CARA DE PROVA: a questão no celular -->
+<section id="f3">
+  <div class="topo"><div class="etq">Na tela</div><div class="marca" data-marca><b>Orto</b><span>Questões</span></div></div>
+  <div class="camada" style="margin-top:44px; width:540px">
+    <h2>Com cara<br><em>de prova.</em></h2>
+    <div class="lista" style="margin-top:40px">
+      <div class="item"><i class="ck2" data-icone="ck"></i><div><b>Frase que a alternativa completa</b><span>Curta e direta, como a banca escreve.</span></div></div>
+      <div class="item"><i class="ck2" data-icone="ck"></i><div><b>Figura do próprio livro</b><span>Com a fonte: obra, capítulo e figura.</span></div></div>
+      <div class="item"><i class="ck2" data-icone="ck"></i><div><b>Distratores de verdade</b><span>O tipo vizinho, o número de outro contexto: os que a prova usa.</span></div></div>
+      <div class="item"><i class="ck2" data-icone="ck"></i><div><b>Sempre identificadas</b><span>A etiqueta <strong style="color:var(--ouro)">OrtoQuestões Simulados</strong> mostra que a questão é autoral.</span></div></div>
+    </div>
+  </div>
+  <div class="iphone" data-tela="t-sim-questao" style="--w:380px; right:44px; top:250px; transform: rotate(3deg)"></div>
+  <div class="rodape-nota">Tela ilustrativa · questão de luxação acromioclavicular, Rockwood and Green's, capítulo 32</div>
+</section>
+
+<!-- F4. CADA QUESTÃO É UMA AULA: comentário em dois celulares -->
+<section id="f4">
+  <div class="topo"><div class="etq">Comentário</div><div class="marca" data-marca><b>Orto</b><span>Questões</span></div></div>
+  <div class="camada" style="margin-top:44px">
+    <h2>Cada questão<br>é <em>uma aula.</em></h2>
+    <p class="sub" style="margin-top:22px;width:930px">Responda e abra o comentário: o <b>conceito-chave</b> ensinado do zero, com tabela quando ajuda, e depois <b>alternativa por alternativa</b>.</p>
+  </div>
+  <div class="iphone" data-tela="t-sim-comentario" style="--w:380px; left:100px; top:560px; transform: rotate(-4deg)"></div>
+  <div class="iphone" data-tela="t-sim-alternativas" style="--w:380px; left:580px; top:530px; transform: rotate(3deg)"></div>
+  <div class="rodape-nota" style="text-align:center;bottom:auto;top:500px">Telas ilustrativas</div>
+</section>
+
+<!-- F5. NO COMPUTADOR TAMBÉM: MacBook com o comentário -->
+<section id="f5">
+  <div class="topo"><div class="etq">Onde treinar</div><div class="marca" data-marca><b>Orto</b><span>Questões</span></div></div>
+  <div class="camada" style="margin-top:44px">
+    <h2>No celular<br><em>e no computador.</em></h2>
+    <p class="sub" style="margin-top:22px;width:920px">Elas entram <b>misturadas no seu treino de TEOT e TARO</b>, ou você treina só elas no filtro <b>OrtoQuestões Simulados</b>.</p>
+  </div>
+  <div class="mac" data-mac="t-lap-comentario" style="--w:900px; left:90px; top:560px"></div>
+  <div class="camada" style="position:absolute; left:72px; right:72px; bottom:80px; display:flex; justify-content:center">
+    <div class="faixa"><i data-icone="novo"></i><div><b>Centenas de questões</b> e novas todos os dias</div></div>
+  </div>
+  <div class="rodape-nota" style="text-align:center">Tela ilustrativa · metástase no colo do fêmur, Rockwood and Green's, capítulo 25</div>
+</section>
+
+<!-- F6. CHAMADA -->
+<section id="f6">
+  <div class="topo"><div class="etq">Comece hoje</div><div class="marca" data-marca><b>Orto</b><span>Questões</span></div></div>
+  <div class="camada" style="margin-top:60px">
+    <h2 style="font-size:96px">As provas antigas<br>mostram o que cai.<br><em>Os simulados treinam<br>o que pode cair.</em></h2>
+    <p class="sub" style="margin-top:30px;width:900px">Questões oficiais e <b>OrtoQuestões Simulados</b> no mesmo lugar, com <b>cada alternativa comentada</b>.</p>
+  </div>
+  <div class="iphone" data-tela="t-sim-resposta" style="--w:270px; right:90px; top:700px; transform: rotate(5deg)"></div>
+  <div class="camada" style="position:absolute; left:72px; width:560px; top:860px; display:grid; gap:16px">
+    <div class="faixa" style="font-size:24px"><i data-icone="ck"></i><div><b>Disponíveis para todos</b>, inclusive na conta grátis</div></div>
+    <div class="faixa" style="font-size:24px"><i data-icone="novo"></i><div><b>Novas questões</b> entrando todos os dias</div></div>
+    <div class="cta" style="margin-top:10px"><b>Crie sua conta grátis</b><span>Link na bio<i data-icone="seta"></i></span></div>
+  </div>
+  <div class="rodape-nota" style="right:420px">Questões autorais, feitas a partir da bibliografia de referência. Não são questões oficiais e não têm vínculo com as instituições organizadoras.</div>
+</section>
+
+<!-- STORY 1: a novidade (topo e base livres para o nome do perfil e as figurinhas) -->
+<section id="s1" class="story">
+  <div class="topo"><div class="marca" data-marca><b>Orto</b><span>Questões</span></div><div class="pilula"><i data-icone="novo"></i>Novidade</div></div>
+  <div class="camada" style="margin-top:46px">
+    <h1 style="font-size:116px">OrtoQuestões<br><em>Simulados.</em></h1>
+    <p class="sub" style="margin-top:24px;font-size:36px">Questões novas por <b>engenharia reversa</b> das provas do <b>TEOT</b>, do <b>TARO</b> e da <b>SBQ</b>.</p>
+    <div class="faixa" style="margin-top:30px"><i data-icone="novo"></i><div><b>Centenas de questões</b> e novas todos os dias</div></div>
+  </div>
+  <div class="iphone" data-tela="t-sim-questao" style="--w:440px; left:320px; top:900px; transform: rotate(-3deg)"></div>
+  <div class="rodape-nota" style="top:1060px; bottom:auto; width:215px; font-size:19px">Tela ilustrativa. Questões autorais, sem vínculo com as instituições das provas.</div>
+</section>
+
+<!-- STORY 2: como são feitas e o comentário -->
+<section id="s2" class="story">
+  <div class="topo"><div class="etq">Como são feitas</div><div class="marca" data-marca><b>Orto</b><span>Questões</span></div></div>
+  <div class="camada" style="margin-top:46px">
+    <h2 style="font-size:96px">Lemos a banca.<br>Vamos ao livro.<br><em>Escrevemos<br>como ela.</em></h2>
+    <p class="sub" style="margin-top:26px;font-size:33px">E cada questão vem com o <b>conceito explicado</b> e <b>cada alternativa comentada</b>.</p>
+  </div>
+  <div class="mac" data-mac="t-lap-questao" style="--w:860px; left:60px; top:1080px"></div>
+  <div class="iphone" data-tela="t-sim-comentario" style="--w:280px; right:50px; top:1230px; transform: rotate(5deg)"></div>
+  <div class="rodape-nota" style="bottom:250px">Telas ilustrativas</div>
+</section>
+
+<!-- STORY 3: chamada com espaço para a figurinha de link -->
+<section id="s3" class="story">
+  <div class="topo"><div class="marca" data-marca><b>Orto</b><span>Questões</span></div><div class="site">ortoquestoes.com.br</div></div>
+  <div class="camada" style="margin-top:60px">
+    <h1 style="font-size:104px">Treine com<br>questões <em>que você<br>ainda não viu.</em></h1>
+    <p class="sub" style="margin-top:28px;font-size:35px">No padrão do <b>TEOT</b>, do <b>TARO</b> e da <b>SBQ</b>, disponíveis para todos, <b>inclusive na conta grátis</b>.</p>
+  </div>
+  <div class="iphone" data-tela="t-sim-resposta" style="--w:290px; left:395px; top:800px; transform: rotate(-3deg)"></div>
+  <div class="camada" style="position:absolute; left:0; right:0; top:1490px">
+    <div class="figurinha">figurinha de link aqui</div>
+  </div>
+</section>
+
+<script>
+document.querySelectorAll('[data-marca]').forEach(e => e.prepend(document.getElementById('simbolo').content.cloneNode(true)))
+document.querySelectorAll('[data-icone]').forEach(e => e.appendChild(document.getElementById(e.dataset.icone).content.cloneNode(true)))
+document.querySelectorAll('[data-tela]').forEach(e => { e.appendChild(document.getElementById('fone').content.cloneNode(true)); e.querySelector('img').src = '../../telas/' + e.dataset.tela + '.png' })
+document.querySelectorAll('[data-mac]').forEach(e => { e.appendChild(document.getElementById('mac').content.cloneNode(true)); e.querySelector('img').src = '../../telas/' + e.dataset.mac + '.png' })
+document.querySelectorAll('h1, h2').forEach(h => {
+  const w = document.createTreeWalker(h, NodeFilter.SHOW_TEXT), nos = []
+  while (w.nextNode()) nos.push(w.currentNode)
+  nos.forEach(n => { if (/[.,]/.test(n.data)) { const t = document.createElement('span'); t.innerHTML = n.data.replace(/([.,])/g, '<span class="pt">$1</span>'); n.replaceWith(...t.childNodes) } })
+})
+</script>
+</body></html>

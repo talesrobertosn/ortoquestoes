@@ -36,7 +36,7 @@ for (const [t, lista] of Object.entries(porTema)) {
 }
 const historico = Array.from({ length: 14 }, (_, i) => ({ id: 's' + i, criadaEm: hojeMs - i * DIA - 4000e3, concluidaEm: hojeMs - i * DIA - 3600e3, total: 20, respondidas: 20, acertos: 14 + (i % 5), segundos: 1500, descricao: ['Joelho · TEOT', 'Trauma adulto', 'Coluna · TARO', 'Mão e punho'][i % 4] }))
 const b = await chromium.launch({ executablePath: process.env.CHROMIUM ?? '/opt/pw-browsers/chromium' })
-const ctx = await b.newContext({ viewport: { width: Number(process.env.LARGURA ?? 390), height: 844 }, deviceScaleFactor: process.env.LARGURA ? 1 : 3, isMobile: !process.env.LARGURA, hasTouch: !process.env.LARGURA, colorScheme: 'light' })
+const ctx = await b.newContext({ viewport: { width: Number(process.env.LARGURA ?? 390), height: Number(process.env.ALTURA ?? 844) }, deviceScaleFactor: Number(process.env.ESCALA ?? (process.env.LARGURA ? 1 : 3)), isMobile: !process.env.LARGURA, hasTouch: !process.env.LARGURA, colorScheme: 'light' })
 const p = await ctx.newPage()
 await p.route(/supabase\.co/, rota => {
   const u = rota.request().url()
@@ -72,11 +72,21 @@ for (const r of rotas) {
     console.log('semana'); continue
   }
   // "nome=rota@seletor": uma tela de celular (390x844) rolada até o seletor, sem a barra de baixo.
-  const ancora = r.match(/^([a-z0-9-]+)=([a-z0-9/-]*)@(.+)$/)
+  // "nome=questao/ID>B@seletor": responde a alternativa B (com "Certeza") antes de rolar, para
+  // mostrar a questão corrigida com o comentário aberto. LARGURA, ALTURA e ESCALA mudam a tela
+  // (por exemplo LARGURA=1440 ALTURA=900 ESCALA=2 para um notebook).
+  const ancora = r.match(/^([a-z0-9-]+)=([a-z0-9/-]*)(?:>([A-D]))?@(.+)$/)
   if (ancora) {
-    const [, nome, rota, seletor] = ancora
+    const [, nome, rota, letra, seletor] = ancora
     await p.goto(BASE + '#/' + rota); await p.waitForTimeout(2000)
-    await p.addStyleTag({ content: '.navegacao-mobile{display:none!important}' })
+    await p.addStyleTag({ content: '.navegacao-mobile,.aviso-cookies{display:none!important}' })
+    if (letra) {
+      // Se a questão já foi respondida nesta captura, os botões ficam desativados: segue adiante.
+      await p.locator('button.alternativa').nth('ABCD'.indexOf(letra)).click({ timeout: 3000 }).catch(() => {})
+      await p.getByRole('button', { name: 'Certeza' }).click({ timeout: 2000 }).catch(() => {})
+      await p.getByRole('button', { name: 'Responder ' + letra }).click({ timeout: 3000 }).catch(() => {})
+      await p.waitForTimeout(1500)
+    }
     await p.evaluate((sel) => { const el = document.querySelector(sel); if (el) scrollTo(0, el.getBoundingClientRect().top + scrollY - 70) }, seletor)
     await p.waitForTimeout(400)
     await p.screenshot({ path: `${PASTA}t-${nome}.png` })
