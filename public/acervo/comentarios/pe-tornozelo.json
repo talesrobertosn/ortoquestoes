@@ -4315,5 +4315,21 @@
   ],
   "geradoEm": "2026-10-05",
   "conferido": false
+ },
+ "pe-tornozelo-0386": {
+  "conceito": "A lesão osteocondral envolve a cartilagem articular e o osso subcondral do tálus. A classificação radiográfica de Berndt-Harty descreve progressiva separação do fragmento: I é compressão subcondral; II, destacamento parcial; III, fragmento completamente separado mas não deslocado; IV, fragmento deslocado. O estágio II desta prova é diferente de uma questão semelhante do acervo que pergunta pelo estágio I.\n\nA perfuração óssea procura estimular revascularização e reparação do osso subcondral. Se a cartilagem está preservada e a lesão é estável, a via retrógrada pode alcançar o foco sem perfurar diretamente a superfície articular. Isso difere de remover um fragmento solto ou fixar um fragmento viável instável.\n\nA banca escolheu perfuração para o estágio II, mas a classificação sozinha não determina toda conduta. Crianças com lesões estáveis podem começar com tratamento conservador, e cirurgia depende de sintomas persistentes, estabilidade, tamanho e características cartilaginosas. Estudos de perfuração em jovens mostram resultados promissores, com limitações de amostra. Ensinar uma operação automática para toda imagem de estágio II seria ir além do que o caso informa.",
+  "correta": "Perfuração é a resposta oficial e tem como objetivo estimular reparo subcondral. Em cartilagem intacta e fragmento estável, pode-se utilizar acesso retrógrado para preservar a superfície. A indicação real não depende apenas do número II: persistência de sintomas e avaliação da lesão completa precisam ser consideradas.",
+  "incorretas": {
+   "A": "Tratamento conservador pode ser apropriado inicialmente em lesões estáveis de crianças e adolescentes. Portanto, não é uma alternativa clinicamente impossível para todo estágio II. O gabarito adota uma associação terapêutica didática com perfuração; a decisão individual exige avaliar sintomas, estabilidade e resposta ao tratamento prévio.",
+   "C": "Ressecção remove um fragmento e pode ser usada quando ele é inviável, solto ou não pode ser preservado. No estágio II, o fragmento ainda está parcialmente aderido, e não se deve eliminá-lo automaticamente. A viabilidade, dimensão e estabilidade orientam a escolha, com preservação sempre que apropriada.",
+   "D": "Fixação busca manter um fragmento viável que precisa de estabilidade. Associá-la universalmente à perfuração no estágio II acrescenta um procedimento que o enunciado não justifica. Há padrões nos quais a fixação é pertinente, mas um destacamento parcial não define, por si, necessidade de parafuso ou outro implante."
+  },
+  "referencias": [
+   "Retrograde Drilling for Osteochondral Lesion of the Talus in Juvenile Patients. https://pubmed.ncbi.nlm.nih.gov/35097373/",
+   "Juvenile Osteochondral Lesions of the Talus: Current Concepts Review and an Update on the Literature. https://pmc.ncbi.nlm.nih.gov/articles/PMC10217026/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "alerta": "Gabarito oficial B. Lesões juvenis estáveis podem receber tratamento conservador inicial; estágio II isolado não impõe perfuração. Não confundir esta questão com a variante do acervo que cobra estágio I."
  }
 }
