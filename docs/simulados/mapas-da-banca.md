@@ -110,6 +110,36 @@ Pendências no acervo: TARO 2006 a 2009 (trauma-1129, 1144, 1178) sem gabarito; 
 temas (trauma-0415 e ombro-cotovelo-0170; trauma-0312 e 0963; ombro-cotovelo-0102 e 0383;
 pediatria-0097 e 0468).
 
+## Fratura da clavícula (lido em 07/10/2026; capítulo ainda não enviado; limite pedido: 20 questões)
+
+Recorte: subtema "Fratura da clavícula" e o da criança, mais o regex de clavícula e ombro flutuante.
+Cerca de 35 questões diretamente sobre a fratura (TARO 2006 a 2025, TEOT 2022 a 2025, provas de ombro
+e cotovelo, SBOT-SP); já existem simulados trauma-1224 e 1225 (conservador e cirurgia contra
+conservador, do cap. 10) e os de ombro flutuante do cap. 33.
+
+Fatos carimbados:
+- **Desvio do fragmento lateral na diáfise.** Translação inferior (e medial) com rotação anterior
+  (TARO 2017, TARO 2021, TEOT 2025, SBOT-SP): a questão mais repetida do tema.
+- **Classificações do terço lateral.** NEER, CRAIG, ALLMAN e ROBINSON e as equivalências: CRAIG IIB
+  com ruptura do conoide (TARO 2016); ALLMAN IIA medial ao conoide (TARO 2011); ROBINSON 3A2 =
+  NEER III (TARO 2015); CRAIG V = ROBINSON 3B2; terço médio com numeração divergente entre ROBINSON
+  e CRAIG; ROBINSON por figura (prova de ombro).
+- **Pseudartrose.** Fator de risco no conservador: alta energia (TARO 2024; distratores encurtamento
+  de 1,5 cm e contato menor que 50%); a não consolidação é a indicação mais frequente de redução
+  cruenta (TARO 2013); cirurgia contra conservador: menor pseudartrose global e sintomática; terço
+  lateral desviado conservador com cerca de 40% de retardo ou pseudartrose.
+- **Tratamento.** Haste intramedular nas fraturas transversas ou oblíquas curtas (TARO 2022); placa
+  gancho com maior índice de complicação no terço lateral (prova de ombro).
+- **Neurovascular.** Complicação mais comum: compressão crônica do plexo braquial (TEOT 2024); veia
+  subclávia presa à clavícula por aponeurose, vulnerável (prova de ombro), posterior ao fragmento
+  medial ao fixar (figura); compressão tardia da veia subclávia.
+- **Criança e ombro flutuante.** Mecanismo na idade escolar (queda sobre o ombro, TARO 2016 e 2019),
+  prevalência do terço médio, periósteo superior no tipo V da criança, tocotraumatismo; ombro
+  flutuante já mapeado na escápula.
+
+Formato: pares de direção (translação e rotação), equivalência entre classificações, ligamento roto
+por tipo e um fato de complicação.
+
 ## Fraturas por estresse (lido em 07/10/2026; Rockwood cap. 24)
 
 - **Carimbados.** Sítios de alto e baixo risco (patela e costela, TARO 2021); KAEDING-MILLER grau IV
