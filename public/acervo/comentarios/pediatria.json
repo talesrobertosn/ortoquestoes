@@ -12749,5 +12749,268 @@
   "geradoEm": "2026-10-07",
   "conferido": false,
   "alerta": "Gabarito do arquivo fornecido: B. A estrutura correta é a fise, ou placa epifisária, e essa opção não está disponível. Epífise e fise não são sinônimos; os tipos I e II não exigem fratura epifisária. A letra foi preservada com ressalva terminológica explícita."
+ },
+ "pediatria-0923": {
+  "conceito": "Dias-Tachdjian descreve padrões de fratura do tornozelo pediátrico pelo posicionamento do pé e pela direção da força. É uma classificação de mecanismo; Salter-Harris descreve o trajeto através da fise, epífise e metáfise. As duas classificações respondem a perguntas diferentes e devem ser utilizadas em conjunto.\n\nNa prancha alfabética tradicional, A representa supinação-inversão, B supinação-flexão plantar, C supinação-rotação externa e D pronação-eversão. A figura fornecida corresponde ao padrão C, com lesão da tíbia distal e componente fibular associado. As letras são referências da prancha: isoladamente, sem a imagem, não descrevem a lesão. A investigação deve localizar o componente fisário e procurar desvios que comprometam congruência e crescimento.",
+  "correta": "A letra C identifica a supinação-rotação externa na prancha de Dias-Tachdjian. Esse é o padrão que a figura representa. O raciocínio é associar o desenho ao mecanismo e, em seguida, identificar separadamente a lesão fisária, sem inferir prognóstico apenas pelo rótulo do mecanismo.",
+  "incorretas": {
+   "A": "O padrão A é de supinação-inversão. A inversão tende a produzir uma lesão medial da tíbia distal e exige avaliação do componente epifisário. Não corresponde à disposição apresentada na figura. A letra A não é sinônimo de Salter-Harris I: são classificações com eixos distintos.",
+   "B": "O padrão B corresponde à supinação-flexão plantar. A força atua em orientação diferente da rotação externa, modificando a posição do fragmento metafisário e do traço distal. Essa distinção é radiográfica e biomecânica, não apenas uma troca de letra.",
+   "D": "O padrão D está relacionado à pronação-eversão. A direção do deslocamento e a ação das forças sobre tíbia e fíbula diferem do padrão em supinação. A associação de uma fratura fibular não basta para classificá-lo como D; é necessário interpretar o conjunto do desenho."
+  },
+  "referencias": [
+   "Dias LS, Tachdjian MO. Physeal injuries of the ankle in children: classification. https://pubmed.ncbi.nlm.nih.gov/103673/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "provavel": "C"
+ },
+ "pediatria-0924": {
+  "conceito": "Monteggia combina lesão da ulna com perda do alinhamento radiocapitelar. A deformidade ulnar altera a relação entre os dois ossos do antebraço e permite a luxação da cabeça radial. Por isso, nas radiografias de uma fratura da ulna, é indispensável verificar a articulação radiocapitelar e incluir o cotovelo.\n\nBado utiliza principalmente a direção da luxação radial: I anterior, II posterior ou posterolateral, III lateral e IV anterior acompanhada de fraturas de rádio e ulna. A carga longitudinal com o cotovelo fletido, descrita no enunciado, é o mecanismo clássico associado ao tipo II. Mecanismo isolado é uma pista de prova; no paciente real, a classificação depende da imagem.",
+  "correta": "O tipo II corresponde à luxação posterior ou posterolateral da cabeça radial. A transmissão longitudinal da força pelo antebraço com o cotovelo em flexão é compatível com esse mecanismo. Para confirmar clinicamente, deve-se demonstrar a direção posterior na radiografia em perfil.",
+  "incorretas": {
+   "A": "O tipo I apresenta luxação anterior da cabeça radial, geralmente acompanhando angulação anterior da ulna. É o padrão frequentemente observado na criança e se relaciona a outros mecanismos de queda e deformação. A carga com cotovelo fletido descrita aqui aponta para a luxação posterior, não para esse padrão.",
+   "C": "O tipo III apresenta luxação lateral ou anterolateral, frequentemente com lesão proximal da ulna em varo. Ele deve ser reconhecido especialmente na incidência anteroposterior. Não é o padrão definido pela carga longitudinal posterior descrita no caso.",
+   "D": "O tipo IV inclui fraturas de rádio e ulna associadas à luxação anterior da cabeça radial. O componente de fratura radial é indispensável para esse rótulo. O enunciado não descreve essa associação, e seu mecanismo corresponde ao tipo II."
+  },
+  "referencias": [
+   "POSNA. Monteggia Fracture. https://posna.org/physician-education/study-guide/monteggia-fracture"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "provavel": "B"
+ },
+ "pediatria-0925": {
+  "conceito": "As classificações de Bado e Letts não são intercambiáveis. Bado prioriza a direção da cabeça radial luxada. Letts foi adaptada à criança e distingue a deformação plástica, a fratura em galho verde e a fratura completa da ulna, além da direção da luxação.\n\nA radiografia apresentada mostra o padrão anterior associado a lesão incompleta da ulna, compatível com Bado I e Letts B. Na leitura, deve-se seguir a linha longitudinal do rádio em direção ao capítulo, avaliar o alinhamento da ulna e reconhecer que uma cortical preservada caracteriza a fratura em galho verde. A correção da deformidade ulnar é fundamental para recuperar e manter a redução radial.",
+  "correta": "Bado I corresponde à luxação anterior; Letts B acrescenta a informação de fratura em galho verde da ulna. Essa combinação descreve os dois aspectos que a imagem permite reconhecer. O tratamento deve corrigir a ulna e confirmar a redução radiocapitelar em mais de uma incidência.",
+  "incorretas": {
+   "A": "Bado II exigiria luxação posterior ou posterolateral, diferente do padrão anterior observado. Letts A indica deformação plástica da ulna, sem a fratura em galho verde característica de B. A opção erra tanto a direção quanto o padrão ulnar.",
+   "C": "Letts B identifica corretamente a fratura em galho verde, mas Bado II troca a luxação anterior por posterior. Uma alternativa pode acertar metade da classificação e permanecer incorreta. O sentido da luxação não deve ser deduzido apenas da presença de fratura ulnar.",
+   "D": "Bado I identifica a direção anterior, mas Letts C corresponde a uma fratura completa da ulna. Na criança, a distinção entre galho verde e completa altera a avaliação da estabilidade e a estratégia de estabilização. A cortical preservada da lesão incompleta favorece Letts B."
+  },
+  "referencias": [
+   "POSNA. Monteggia Fracture. https://posna.org/physician-education/study-guide/monteggia-fracture",
+   "Monteggia fracture-dislocations: A Historical Review, tabela da classificação de Letts. https://pmc.ncbi.nlm.nih.gov/articles/PMC4266382/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "provavel": "B"
+ },
+ "pediatria-0926": {
+  "conceito": "A decisão na fratura do colo radial pediátrico depende de idade, angulação, translação e bloqueio da pronossupinação. A criança pequena possui maior capacidade de remodelação que o adolescente, embora o rádio proximal contribua pouco para o crescimento longitudinal. Não se deve extrapolar a tolerância de uma criança de 5 anos para uma de 14 anos.\n\nO material escolhe tratamento conservador para 40° nessa faixa etária, coerente com critérios históricos mais tolerantes para crianças muito pequenas. Diretrizes frequentemente utilizam 30° como limite geral e recomendam redução acima disso. A ausência de informação sobre translação e bloqueio torna a questão insuficiente para uma indicação universal. A abordagem clínica deve preservar a vascularização e evitar redução aberta quando opções menos invasivas forem adequadas.",
+  "correta": "É a resposta assinalada e pode ser válida em criança pequena, com pouca translação, sem bloqueio e com acompanhamento confiável. A capacidade de remodelação explica a tolerância maior. Entretanto, 40° não é um limite conservador universal: a idade exata, a função e a estabilidade precisam ser avaliadas.",
+  "incorretas": {
+   "B": "Redução aberta com placa é desproporcional ao caso isolado descrito. A exposição amplia o risco de rigidez, lesão vascular da cabeça radial e sinostose. Ela deve ser reservada a indicações específicas após considerar redução fechada ou percutânea, não escolhida apenas por haver 40° de angulação.",
+   "C": "A redução fechada e a fixação percutânea/intramedular podem ser apropriadas quando angulação, translação ou instabilidade exigem correção. Assim, não são técnicas erradas em si. A banca privilegia a maior remodelação aos 5 anos, mas faltam dados para excluir essa opção em todas as interpretações clínicas.",
+   "D": "A fixação transarticular atravessa a articulação radiocapitelar e ameaça cartilagem, fise e mobilidade. Ela não é a estratégia rotineira para o caso. Mesmo quando a redução é necessária, deve-se preferir uma solução que preserve a articulação e limite agressão às partes moles."
+  },
+  "referencias": [
+   "POSNA. Proximal Radius (Radial Neck) Fractures. https://posna.org/physician-education/study-guide/proximal-radius-%28radial-neck%29-fractures",
+   "Radial neck fractures in children: A surgical tip using the Metaizeau technique to improve stability of the reduction. https://pmc.ncbi.nlm.nih.gov/articles/PMC6919370/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "provavel": "A",
+  "alerta": "Gabarito do material: A. A tolerância de 40° aos 5 anos varia entre referências; translação e bloqueio de rotação não foram informados. Não aplicar essa resposta como limite universal."
+ },
+ "pediatria-0927": {
+  "conceito": "A imagem deve ser interpretada pela anatomia do cotovelo em crescimento, no qual parte da epífise ainda é cartilaginosa. O fragmento radiograficamente visível pode representar apenas uma parcela da lesão real. A perda do alinhamento articular e o aspecto do compartimento lateral orientam a associação cobrada com o côndilo lateral.\n\nFraturas laterais podem envolver a superfície articular e o suporte lateral, levando a instabilidade. É preciso distinguir côndilo lateral de epicôndilo lateral: o primeiro inclui uma porção articular, enquanto o segundo corresponde principalmente à origem de estruturas ligamentares e musculares. A associação exata é inferida da figura fornecida, sem substituir o estudo completo em AP e perfil.",
+  "correta": "O côndilo lateral é a associação assinalada e coerente com o compartimento lateral demonstrado. A lesão deve ser avaliada quanto a desvio, rotação e congruência, pois um pequeno componente ósseo pode acompanhar maior fragmento cartilaginoso. Não se deve trocar o diagnóstico por epicôndilo apenas pela localização lateral.",
+  "incorretas": {
+   "A": "A tróclea é a superfície medial que articula com a ulna. Fraturas trocleares isoladas são incomuns e não correspondem à associação lateral que a questão pretende demonstrar. Na criança, sua ossificação tardia pode confundir a leitura, exigindo atenção à cartilagem não visível.",
+   "C": "O olécrano pertence à ulna proximal e forma o suporte posterior da articulação. Sua fratura pode coexistir com outras lesões, mas não é a associação específica apresentada. É necessário identificar o osso de origem e o traço antes de classificar um fragmento próximo ao cotovelo.",
+   "D": "A fratura supracondiliana atravessa a metáfise distal do úmero acima dos côndilos e tem mecanismo e avaliação próprios. Ela não equivale a uma fratura articular do côndilo lateral. A posição distal da lesão na imagem e a associação descrita afastam essa troca classificatória."
+  },
+  "referencias": [
+   "AO Surgery Reference. Lateral approach to the pediatric distal humerus. https://surgeryreference.aofoundation.org/orthopedic-trauma/pediatric-trauma/distal-humerus/approach/lateral-approach"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "provavel": "B"
+ },
+ "pediatria-0928": {
+  "conceito": "A fratura triplanar é uma lesão de transição durante o fechamento assimétrico da fise distal da tíbia. Ela combina traços nos planos sagital, transversal e coronal: o epifisário atinge a articulação, o transversal percorre a fise e o metafisário completa a geometria tridimensional.\n\nUma projeção radiográfica mostra apenas parte dessa estrutura. No padrão clássico, o AP lembra Salter-Harris III e o perfil lembra Salter-Harris II. Isso não significa que existem duas fraturas independentes nem que a lesão completa seja extra-articular. A tomografia pode definir fragmentos, degrau articular e trajetória para planejamento quando há indicação. Salter-Harris IV descreve o comprometimento combinado na avaliação global.",
+  "correta": "É a associação clássica: aspecto de III no AP e de II no perfil. O leitor deve integrar as imagens para reconhecer uma fratura que atravessa epífise, fise e metáfise em três planos. A avaliação do degrau articular é essencial para decidir tratamento.",
+  "incorretas": {
+   "A": "Salter-Harris I atravessa somente a fise. Essa descrição no AP não representa o componente epifisário/articular característico do padrão clássico triplanar. A presença de um componente fisário não permite ignorar o traço que alcança a articulação.",
+   "B": "A alternativa troca a aparência radiográfica clássica. O AP evidencia o componente epifisário semelhante ao III; o perfil destaca o componente metafisário semelhante ao II. A classificação global da lesão e a aparência em cada incidência são perguntas diferentes.",
+   "D": "Salter-Harris V é uma lesão por compressão da fise, não a descrição do traço metafisário visível no perfil de uma triplanar. O padrão triplanar resulta de fratura durante fechamento parcial, e não de simples esmagamento fisário. A alternativa confunde mecanismos e critérios radiográficos."
+  },
+  "referencias": [
+   "Dias LS, Tachdjian MO. Physeal injuries of the ankle in children: classification. https://pubmed.ncbi.nlm.nih.gov/103673/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "provavel": "C"
+ },
+ "pediatria-0929": {
+  "conceito": "Bado IV é uma lesão de Monteggia com fraturas de rádio e ulna e luxação anterior da cabeça radial. Uma fratura dos dois ossos, sem avaliar o cotovelo, pode mascarar esse componente de luxação. Por isso, a linha radiocapitelar deve ser verificada em todas as lesões relevantes do antebraço infantil.\n\nO padrão é relativamente raro em crianças. Na descrição clássica, a fratura radial ocorre no nível da fratura ulnar ou distal a ele. A alternativa cobra dois elementos ao mesmo tempo: frequência relativa e relação dos traços. O nível isolado não confirma Bado IV; a luxação anterior da cabeça radial permanece indispensável à definição.",
+  "correta": "A opção combina a raridade relativa com a relação clássica de fratura radial no mesmo nível ou distal ao traço ulnar. Deve-se acrescentar mentalmente a luxação anterior que define Bado IV. Sem ela, o caso pode representar apenas uma fratura de ambos os ossos.",
+  "incorretas": {
+   "B": "A raridade está correta, mas o nível proximal do traço radial não é a relação clássica cobrada. Uma variante ou um traço atípico requer descrição própria. A classificação não deve ser aplicada sem confirmar também a direção da luxação radial.",
+   "C": "A localização relativa está adequada, mas afirmar que o padrão é comum na criança contraria a distribuição clássica. O tipo I é muito mais lembrado nesse grupo. Frequência baixa, porém, não autoriza deixar de procurar a luxação em uma fratura dos dois ossos.",
+   "D": "A alternativa erra tanto a frequência quanto a relação entre os níveis dos traços. A combinação de duas fraturas não basta para inferir um padrão comum de Monteggia. O método seguro é investigar cotovelo, direção da cabeça radial e configuração de cada osso."
+  },
+  "referencias": [
+   "POSNA. Monteggia Fracture. https://posna.org/physician-education/study-guide/monteggia-fracture"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "provavel": "A"
+ },
+ "pediatria-0930": {
+  "conceito": "Bado III caracteriza luxação lateral ou anterolateral da cabeça radial associada a lesão proximal da ulna. O mecanismo em varo abre lateralmente a relação do cotovelo e deforma a ulna; na criança, a elasticidade óssea favorece uma fratura incompleta em galho verde.\n\nGalho verde significa ruptura de uma cortical com a outra funcionando como dobradiça. Isso não equivale a uma deformação plástica sem traço, nem exclui instabilidade radial. A redução exige corrigir o alinhamento ulnar e verificar que a cabeça radial permanece centrada. O mecanismo e a frequência de um padrão não eliminam a possibilidade de fraturas completas em casos individuais.",
+  "correta": "Varo com fratura em galho verde proximal corresponde ao mecanismo pediátrico clássico do tipo III. A direção lateral da luxação radial deve ser demonstrada radiograficamente. A cortical parcialmente preservada auxilia a redução, mas o alinhamento final e sua manutenção precisam ser verificados.",
+  "incorretas": {
+   "B": "O galho verde é compatível com a criança, porém valgo troca a direção do mecanismo clássico. O varo explica a abertura lateral e a luxação radial. Não basta acertar o tipo de fratura ulnar quando o eixo da força está invertido.",
+   "C": "O varo está corretamente associado, mas a fratura completa não é o padrão geralmente cobrado nessa questão pediátrica. Ela pode ocorrer, sem mudar necessariamente a direção radial de Bado III. A alternativa transforma uma possibilidade em apresentação típica.",
+   "D": "Valgo e fratura completa não reproduzem a combinação clássica. A definição de Bado depende da direção da cabeça radial, enquanto a ulna pode apresentar diferentes graus de ruptura. A questão exige associar o mecanismo em varo ao padrão incompleto mais habitual."
+  },
+  "referencias": [
+   "POSNA. Monteggia Fracture. https://posna.org/physician-education/study-guide/monteggia-fracture"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "provavel": "A"
+ },
+ "pediatria-0931": {
+  "conceito": "O pucker sign é o enrugamento ou depressão da pele anterior na fratura supracondiliana em extensão. O fragmento proximal deslocado atravessa o braquial e traciona os tecidos profundos da pele. A foto e o esquema fornecidos mostram essa associação. O sinal indica lesão importante de partes moles e pode acompanhar interposição muscular e comprometimento neurovascular.\n\nA artéria braquial e o nervo mediano estão próximos do trajeto. Devem ser documentados perfusão, pulso, função sensitiva e motora. O sinal não significa, sozinho, ruptura arterial nem necessidade automática de redução aberta: técnicas adequadas podem liberar o braquial e permitir redução fechada. Insistir em tração agressiva sem reconhecer interposição pode agravar a lesão.",
+  "correta": "A opção identifica o sinal e o fragmento responsável: proximal, atravessando o braquial e envolvendo os tecidos dérmicos profundos. A depressão resulta da tração desses tecidos, não de um corte superficial. Essa anatomia explica por que o achado aumenta a atenção ao feixe neurovascular.",
+  "incorretas": {
+   "B": "A descrição mecânica é compatível com pucker, mas o epônimo está trocado. O sinal de Kirmisson é tradicionalmente associado à equimose anterior nas lesões do cotovelo, não ao enrugamento por transfixação muscular mostrado. Epônimos próximos devem ser separados pelo achado físico.",
+   "C": "O nome do sinal está correto, porém a opção atribui o trajeto ao fragmento distal e à derme superficial. Na lesão em extensão demonstrada, o fragmento proximal é o que penetra o braquial e traciona profundamente os tecidos. A posição do fragmento define a mecânica da depressão.",
+   "D": "A alternativa troca o epônimo e o fragmento responsável. A figura não mostra apenas equimose superficial; mostra aprisionamento/tracionamento de tecidos pelo segmento proximal. Interpretar o esquema antes de decorar a letra permite reconhecer o risco anatômico real."
+  },
+  "referencias": [
+   "AO Surgery Reference. Closed reduction of supracondylar fractures. https://surgeryreference.aofoundation.org/orthopedic-trauma/pediatric-trauma/distal-humerus/basic-technique/closed-reduction-of-supracondylar-fractures"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "provavel": "A"
+ },
+ "pediatria-0932": {
+  "conceito": "Na fratura supracondiliana muito desviada, artéria braquial e nervo mediano podem sofrer contusão, tração ou aprisionamento. A associação de ausência de pulso com déficit mediano aumenta a preocupação com esse feixe, mas pulso e perfusão não são sinônimos. A mão pode permanecer rosada e quente por circulação colateral mesmo sem pulso palpável.\n\nA avaliação deve informar cor, temperatura, enchimento capilar, dor, função neurológica e resposta à redução. A conduta inicial habitual é redução urgente e estabilização, seguidas de reavaliação. Isquemia persistente após redução exige exploração; uma mão bem perfundida sem pulso permanece controversa. O material assinala exploração imediata, porém não informa se a redução já ocorreu nem se há isquemia.",
+  "correta": "É a resposta assinalada pelo material e representa a preocupação com comprometimento simultâneo do feixe braquial/mediano. Sua aplicação clínica exige contexto: se a mão segue isquêmica após redução, exploração é urgente. Sem informação sobre perfusão e redução prévia, não se deve ensinar exploração imediata de toda mão sem pulso.",
+  "incorretas": {
+   "A": "Esperar sem avaliar e tratar uma possível isquemia não é adequado. O intervalo isolado não substitui perfusão e resposta à redução. Uma observação breve pode integrar a reavaliação após redução em situações específicas, mas a opção a coloca antes de qualquer decisão e omite os dados essenciais.",
+   "B": "Retirar fios pode ser pertinente se a perfusão piorou após a fixação, suspeitando-se de aprisionamento ou posição inadequada. Contudo, o enunciado não informa que já houve fixação nem piora iatrogênica. A opção aplica uma etapa pós-operatória a um caso sem essa cronologia.",
+   "C": "Doppler pode complementar a avaliação, mas não deve atrasar redução ou exploração em um membro isquêmico. Ele documenta fluxo sem, sozinho, resolver aprisionamento ou lesão arterial. O exame é um recurso adicional, e não uma alternativa universal ao tratamento urgente."
+  },
+  "referencias": [
+   "AO Surgery Reference. Patient examination: pediatric distal humerus. https://surgeryreference.aofoundation.org/orthopedic-trauma/pediatric-trauma/distal-humerus/further-reading/patient-examination"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "provavel": "D",
+  "alerta": "Gabarito do material: D. Enunciado insuficiente: não descreve perfusão nem redução prévia. A sequência usual inclui redução urgente e reavaliação; exploração é indicada para isquemia persistente. Mão perfundida sem pulso é cenário controverso."
+ },
+ "pediatria-0933": {
+  "conceito": "As fraturas do côndilo lateral infantil têm dois mecanismos clássicos. No pull-off, a força em varo traciona as inserções laterais e produz avulsão do fragmento condilar. No push-off, uma carga transmitida pela cabeça radial comprime o capítulo e pode destacar o segmento lateral. O nome indica se a força predominante é tração ou compressão.\n\nA resposta do material privilegia o mecanismo de avulsão. A frequência relativa dos mecanismos não é um critério para tratar o paciente: importam desvio, rotação, continuidade da dobradiça cartilaginosa e congruência articular. Como grande parte do côndilo ainda é cartilaginosa, uma radiografia aparentemente discreta pode subestimar a lesão. Avaliação adequada e controle do alinhamento evitam pseudartrose, deformidade e instabilidade tardia.",
+  "correta": "Pull-off descreve avulsão do segmento lateral por tração, envolvendo a região capitular. É a resposta assinalada no material. O trecho sobre mecanismo mais comum deve ser entendido como a formulação clássica dessa prova, pois a distribuição varia com o padrão estudado e não determina sozinha o diagnóstico.",
+  "incorretas": {
+   "B": "Push-off corresponde à compressão, e não à avulsão. Além disso, a carga radial atua sobre o capítulo, não primariamente sobre a tróclea. A alternativa troca simultaneamente o tipo de força e o compartimento articular atingido.",
+   "C": "O termo pull-off está associado a tração e avulsão. Compressão na tróclea não descreve esse mecanismo do côndilo lateral. Identificar a superfície radiocapitelar e as inserções laterais ajuda a distinguir uma fratura lateral de uma lesão troclear.",
+   "D": "Push-off com compressão do capítulo é um mecanismo real de fratura do côndilo lateral. O problema é a afirmação de que ele seria o mais comum na formulação adotada pelo material, que assinala A. Essa alternativa não deve ser ensinada como anatomicamente impossível."
+  },
+  "referencias": [
+   "AO Surgery Reference. Lateral approach to the pediatric distal humerus. https://surgeryreference.aofoundation.org/orthopedic-trauma/pediatric-trauma/distal-humerus/approach/lateral-approach"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "provavel": "A",
+  "alerta": "O material assinala A. D descreve corretamente um mecanismo possível; a distinção entre A e D depende da afirmação de frequência, que não é universal."
+ },
+ "pediatria-0934": {
+  "conceito": "A redução fechada do colo radial infantil procura corrigir a inclinação da cabeça sem lesar sua vascularização. A manobra de Israeli utiliza cotovelo fletido a cerca de 90°, pressão sobre a cabeça radial e pronação do antebraço. A figura mostra essa posição e a aplicação direta da força, permitindo reconhecer a técnica.\n\nA rotação deve ser controlada, e o alinhamento precisa ser confirmado por imagem. Tentativas repetidas e agressivas podem aumentar dano cartilaginoso ou vascular. A indicação depende de idade, angulação, translação e possibilidade de redução estável. O epônimo é útil para a questão, mas não substitui a compreensão da direção do deslocamento nem autoriza reproduzir a manobra sem avaliação completa.",
+  "correta": "Israeli é a associação correta: cotovelo em flexão, pressão dirigida sobre a cabeça radial e pronação. A finalidade é recolocar a cabeça sobre o colo sem abrir a articulação. A imagem confirma o mecanismo; estabilidade e angulação residual devem ser avaliadas após a redução.",
+  "incorretas": {
+   "A": "Patterson é outro epônimo de redução do colo radial, porém não identifica a combinação de flexão, pressão direta e pronação mostrada. A posição do cotovelo e o movimento do antebraço são os elementos discriminantes. Decorar apenas uma força de pressão, comum a várias manobras, não basta.",
+   "B": "Kaufman não é o nome da técnica ilustrada. Manobras diferentes podem compartilhar pressão sobre o fragmento ou rotação do antebraço, razão pela qual se deve comparar o conjunto de posições. Aqui o desenho corresponde à técnica de Israeli descrita na literatura.",
+   "C": "Jeffrey também é uma técnica de redução fechada, mas sua sequência não corresponde ao desenho apresentado. O enunciado pede reconhecimento da manobra específica, e não escolha de um tratamento genericamente possível. A flexão do cotovelo associada à pronação orienta a identificação."
+  },
+  "referencias": [
+   "Closed reduction of paediatric radial neck fractures. https://pmc.ncbi.nlm.nih.gov/articles/PMC4473874/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "provavel": "D"
+ },
+ "pediatria-0935": {
+  "conceito": "Na criança pequena, a fratura diafisária do fêmur possui grande potencial de consolidação e remodelação. O gesso pélvico-podálico é uma opção estabelecida na faixa etária desse paciente. Encurtamento próximo de 2 cm pode ser tolerado em situações selecionadas, considerando o crescimento compensatório e o acompanhamento. As angulações devem ser avaliadas por idade e plano.\n\nO caso descreve 3 anos, sem exposição, lesão vascular, politrauma ou impossibilidade de manter redução. Portanto, o tratamento conservador é a melhor opção dentre as apresentadas. Não significa aceitar qualquer deformidade: é necessário reduzir, conferir a posição, proteger a pele e monitorar perda de alinhamento. Rotação remodela menos previsivelmente que angulação e exige atenção própria.",
+  "correta": "O gesso pélvico-podálico é adequado para essa idade e para uma fratura isolada com alinhamento controlável. A redução e o seguimento radiográfico fazem parte do tratamento. Os valores descritos são compatíveis com a tolerância frequentemente utilizada em crianças pequenas, sem dispensar avaliação individual.",
+  "incorretas": {
+   "B": "O fixador externo pode ser útil em exposição, politrauma, dano importante de partes moles ou outras situações de instabilidade. Esses fatores não são apresentados. Para uma fratura isolada de uma criança de 3 anos, acrescenta riscos de pinos e infecção sem oferecer vantagem necessária.",
+   "C": "Hastes rígidas anterógradas são utilizadas em pacientes maiores e demandam atenção ao ponto de entrada e às estruturas de crescimento. Não são a primeira escolha de rotina aos 3 anos. A alternativa ignora o potencial de tratamento conservador e a idade muito baixa.",
+   "D": "Hastes flexíveis retrógradas são uma opção em crianças selecionadas, mais frequentemente maiores. A possibilidade técnica não torna essa estratégia superior ao gesso no caso apresentado. Idade, peso, padrão e condições do paciente orientam a escolha, e não apenas a existência de encurtamento."
+  },
+  "referencias": [
+   "AO Surgery Reference. Hip spica casting. https://surgeryreference.aofoundation.org/orthopedic-trauma/pediatric-trauma/femoral-shaft/32-d-51/hip-spica-casting"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "provavel": "A"
+ },
+ "pediatria-0936": {
+  "conceito": "A avaliação radiográfica da displasia infantil utiliza Hilgenreiner, uma horizontal pelos pontos de referência das cartilagens trirradiadas, e Perkins, uma perpendicular no limite lateral acetabular. Essas linhas formam os quadrantes de Ombredanne. A cabeça femoral deve situar-se no quadrante inferomedial. O índice acetabular mede a inclinação do teto em relação à horizontal.\n\nShenton é o arco formado pela borda inferior do colo e borda superior do ramo púbico. Sua interrupção sugere deslocamento, mas deve ser interpretada com idade e posicionamento. A questão solicita a ordem de letras de uma figura que não aparece no arquivo fornecido. C e D contêm os mesmos elementos e diferem apenas na ordem das duas linhas; sem o desenho não é possível validar uma letra.",
+  "correta": "Sem resposta validada: a figura necessária não está disponível no PDF.",
+  "incorretas": {
+   "A": "A linha de Klein é referência da epifisiólise proximal do fêmur e não substitui Hilgenreiner na análise da displasia. O quadrante esperado é inferomedial, não inferolateral. O índice de Wiberg também não é o índice acetabular do lactente. A opção mistura referências de problemas distintos.",
+   "B": "A alternativa reúne algumas referências pertinentes, mas Klein e índice femoral não correspondem ao conjunto clássico apresentado nas outras opções. A localização inferomedial é correta como princípio. Ainda assim, uma sequência de letras só poderia ser validada com a imagem original.",
+   "C": "O conjunto de Hilgenreiner, Perkins, Shenton, índice acetabular e quadrante inferomedial é anatomicamente coerente. O material assinala C, mas a figura necessária não está visível. Portanto, não se pode certificar que A identifica Hilgenreiner e B identifica Perkins.",
+   "D": "Os mesmos elementos corretos aparecem aqui, trocando apenas a ordem inicial de Perkins e Hilgenreiner. Dependendo da marcação da figura, essa ordem poderia ser a válida. A falta da imagem impede distinguir C de D e exige manter a questão pendente."
+  },
+  "referencias": [
+   "Developmental Dysplasia of the Hip: Etiology, Diagnosis, and Management. https://pmc.ncbi.nlm.nih.gov/articles/PMC10488138/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "alerta": "Figura ausente no PDF fornecido. O material assinala C, mas não é possível validar a ordem das letras; questão sem resposta provável e com figura pendente."
+ },
+ "pediatria-0937": {
+  "conceito": "A tabela compara três doenças por bilateralidade, sequelas e necessidade de cirurgia. Sever é a apofisite calcânea por tração, com dor relacionada à atividade e frequente bilateralidade; não é uma osteonecrose articular. Köhler envolve o navicular tarsal infantil e costuma evoluir com reossificação e bom resultado conservador. Freiberg compromete uma cabeça metatarsal, geralmente a segunda, podendo deixar deformidade e artrose.\n\nNa tabela original, o perfil 1 tem maior bilateralidade e não prevê sequela/cirurgia; o 2 tem menor bilateralidade e também não prevê sequela/cirurgia; o 3 admite ambas. Isso corresponde a Sever, Köhler e Freiberg, respectivamente. A resposta marcada C no material contradiz essa sequência. As características são tendências clínicas, não percentuais universais nem garantias individuais.",
+  "correta": "A sequência corresponde aos perfis da tabela: Sever em 1, Köhler em 2 e Freiberg em 3. A possibilidade de sequela articular e cirurgia torna o perfil 3 particularmente discriminante. A é a resposta bibliograficamente provável, apesar da marcação C no material.",
+  "incorretas": {
+   "B": "A opção coloca Freiberg no perfil sem sequelas/cirurgia e Sever no perfil que admite ambas. Isso inverte a história natural das duas entidades. A doença de Freiberg pode exigir tratamento cirúrgico quando sintomas e lesão estrutural persistem.",
+   "C": "É a letra assinalada pelo material, mas coloca Freiberg em 1 e Köhler em 3, em desacordo com os dados apresentados. A marcação não deve superar o conteúdo da tabela. O conflito é registrado, mantendo o gabarito oficial vazio e indicando A como provável.",
+   "D": "Freiberg está corretamente em 3, porém os perfis iniciais são trocados. A bilateralidade maior apresentada em 1 favorece Sever, enquanto o perfil 2 corresponde a Köhler. Ler todas as colunas evita escolher apenas pelo elemento mais fácil."
+  },
+  "referencias": [
+   "American Academy of Pediatrics. Osteochondroses. https://publications.aap.org/pediatriccare/article/doi/10.1542/aap.ppcqr.396205/57/Osteochondroses"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "provavel": "A",
+  "alerta": "Divergência interna: material assinala C; tabela e características clínicas sustentam A. Gabarito oficial mantido vazio."
+ },
+ "pediatria-0938": {
+  "conceito": "Perthes é uma osteonecrose da epífise femoral em crescimento. Após necrose e fragmentação, ocorre reossificação; a forma final depende de extensão da lesão, contenção, mobilidade e potencial de remodelação. Crianças mais novas dispõem de mais crescimento para recuperar a forma, enquanto início mais tardio tende a piorar o prognóstico.\n\nEntre as alternativas, idade é o fator prognóstico mais estabelecido. Isso não significa que seja o único ou sempre superior à gravidade radiográfica. A classificação do pilar lateral, especialmente combinada com idade, tem grande importância. Estatura, peso e sexo podem associar-se a características populacionais, mas não substituem idade e extensão da lesão na decisão de tratamento.",
+  "correta": "A idade ao início é um determinante importante do potencial de remodelação. Crianças pequenas costumam ter prognóstico melhor que crianças mais velhas com lesão semelhante. É a melhor opção listada, mas deve ser integrada à gravidade e à contenção da cabeça.",
+  "incorretas": {
+   "B": "Estatura baixa pode aparecer em estudos de características dos pacientes, porém não é o parâmetro prognóstico principal dentre os apresentados. A medida não informa diretamente a extensão da necrose nem a forma final. Não deve substituir idade ao início e classificação radiográfica.",
+   "C": "Obesidade pode afetar carga, mobilidade e dificuldades de tratamento, mas não é a resposta clássica para esse conjunto de opções. O prognóstico estrutural depende fortemente de idade e gravidade da epífise. Peso isolado não define a expectativa de esfericidade final.",
+   "D": "O sexo pode relacionar-se a diferenças de maturidade esquelética e distribuição da doença, mas é menos discriminante que a idade nessa pergunta. Uma criança não deve receber previsão apenas pelo gênero. A combinação de idade, extensão e mobilidade fornece uma avaliação mais útil."
+  },
+  "referencias": [
+   "POSNA. Legg-Calve-Perthes Disease. https://posna.org/physician-education/study-guide/legg-calve-perthes-disease"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "provavel": "A"
+ },
+ "pediatria-0939": {
+  "conceito": "O pé torto congênito reúne cavo, aduto, varo e equino, com alterações ósseas e de partes moles. A panturrilha e vários músculos do membro afetado apresentam menor volume; estudos mostram que essa hipotrofia pode ser primária, não apenas resultado da imobilização. Estruturas ligamentares e capsulares em regiões retraídas podem estar espessadas e encurtadas.\n\nA combinação cobrada é músculos hipotrofiados e ligamentos espessados. Não se deve interpretar a frase como descrição uniforme de cada músculo e ligamento: diferentes estruturas têm envolvimento desigual. A anatomia das retrações fundamenta a correção progressiva e a manutenção da posição. O menor volume da panturrilha pode persistir mesmo após boa correção, sem significar recidiva.",
+  "correta": "Hipotrofia muscular e espessamento das estruturas ligamentares retraídas formam a associação clássica. Volume e comprimento são propriedades distintas: um músculo pode ser menor e, ao mesmo tempo, participar de uma unidade musculotendínea encurtada. A alternativa reconhece essa diferença.",
+  "incorretas": {
+   "A": "O espessamento ligamentar nas regiões retraídas é compatível, mas hipertrofia muscular não descreve o padrão típico. O membro afetado costuma apresentar panturrilha menor. Uma musculatura com menor volume não pode ser chamada de hipertrofiada apenas por haver contratura.",
+   "C": "A opção inverte ambos os achados cobrados. Hipertrofia não caracteriza a musculatura típica, e ligamentos delgados não descrevem as estruturas espessadas e retraídas do pé torto. A análise deve considerar regiões anatômicas, sem supor uniformidade de todos os tecidos.",
+   "D": "A hipotrofia está correta, mas a descrição ligamentar está invertida. O componente capsuloligamentar retraído ajuda a explicar a resistência à correção. Boa correção clínica não exige que a panturrilha passe a ter o mesmo volume do lado normal."
+  },
+  "referencias": [
+   "Leg muscle atrophy in idiopathic congenital clubfoot: is it primitive or acquired? https://pubmed.ncbi.nlm.nih.gov/19418086/",
+   "Anatomical study for an updated comprehension of clubfoot. Part II: Ligaments, tendons and muscles. https://pubmed.ncbi.nlm.nih.gov/19308510/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "provavel": "B"
  }
 }

@@ -1,7 +1,7 @@
 {
   "tema": "Coluna",
   "slug": "coluna",
-  "geradoEm": "2026-09-05T15:37:27+00:00",
+  "geradoEm": "2026-10-07",
   "questoes": [
     {
       "id": "coluna-0001",
@@ -4724,7 +4724,7 @@
         "Vias de acesso à coluna",
         "Hérnia de disco e mielopatia cervical"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Dentre as complicações pós-operatorias da cirurgia de fusão anterior da coluna cervical qual a mais comum?",
@@ -4754,15 +4754,20 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 9,
+        "numeroOriginal": 30
+      }
     },
     {
       "id": "coluna-0147",
       "tema": "Coluna",
       "subtemas": [
-        "Hérnia de disco lombar"
+        "Hérnia de disco e mielopatia cervical"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Qual situações abaixo é contraindicação a artroplastia de disco cervical?",
@@ -4792,16 +4797,20 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 9,
+        "numeroOriginal": 31
+      }
     },
     {
       "id": "coluna-0148",
       "tema": "Coluna",
       "subtemas": [
-        "Lombalgia",
-        "Fraturas da coluna toracolombar"
+        "Lombalgia"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Qual das situações abaixo é indicação para realização de raio-x em paciente com dor lombar?",
@@ -4831,7 +4840,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 9,
+        "numeroOriginal": 32
+      }
     },
     {
       "id": "coluna-0149",
@@ -4839,7 +4853,7 @@
       "subtemas": [
         "Hérnia de disco lombar"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "A gravura abaixo corresponde a qual tipo de hérnia de disco?",
@@ -4876,7 +4890,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 9,
+        "numeroOriginal": 33
+      }
     },
     {
       "id": "coluna-0150",
@@ -4884,7 +4903,7 @@
       "subtemas": [
         "Escoliose idiopática"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Em relação ao uso dos Parafusos Pediculares no tratamento da escoliose torácica, qual afirmação abaixo corresponde a uma vantagem da utilização dos mesmos?",
@@ -4914,7 +4933,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 10,
+        "numeroOriginal": 34
+      }
     },
     {
       "id": "coluna-0151",
@@ -4922,7 +4946,7 @@
       "subtemas": [
         "Escoliose idiopática"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Durante o tratamento expectante de escoliose idiopática juvenil,uma progressão da curva acima de quantos graus no rx periódico indica a utilização da órtese?",
@@ -4952,16 +4976,21 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 10,
+        "numeroOriginal": 35
+      }
     },
     {
       "id": "coluna-0152",
       "tema": "Coluna",
       "subtemas": [
         "Lesão medular e síndromes medulares",
-        "Hérnia de disco e mielopatia cervical"
+        "Fraturas da coluna cervical"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Num paciente vítima de acidente a não identificação de uma lesão cervical aumenta cem quantas vezes o risco de sequela neurológica?",
@@ -4991,16 +5020,20 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 17,
+        "numeroOriginal": 65
+      }
     },
     {
       "id": "coluna-0153",
       "tema": "Coluna",
       "subtemas": [
-        "Hérnia de disco e mielopatia cervical",
-        "Fraturas da coluna cervical"
+        "Exame neurológico e radiculopatias"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Em relação ao exame físico da coluna cervical, qual dos movimentos abaixo avalia a função motora da raiz de C7?",
@@ -5030,7 +5063,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 18,
+        "numeroOriginal": 66
+      }
     },
     {
       "id": "coluna-0154",
@@ -5038,7 +5076,7 @@
       "subtemas": [
         "Imagem da coluna"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na gravura abaixo qual linha está representada?",
@@ -5075,7 +5113,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 23,
+        "numeroOriginal": 85
+      }
     },
     {
       "id": "coluna-0155",
@@ -5083,7 +5126,7 @@
       "subtemas": [
         "Lesão medular e síndromes medulares"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Uma Lesão da medula espinhal em qual região pode desencadear um choque neurogênico ?",
@@ -5113,7 +5156,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 26,
+        "numeroOriginal": 97
+      }
     },
     {
       "id": "coluna-0156",
@@ -6413,7 +6461,7 @@
       "subtemas": [
         "Exame neurológico e radiculopatias"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "O teste de NACHLAS, representado abaixo, quando positivo pode indicar",
@@ -6450,16 +6498,20 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 33,
+        "numeroOriginal": 133
+      }
     },
     {
       "id": "coluna-0204",
       "tema": "Coluna",
       "subtemas": [
-        "Outros temas da coluna",
-        "Escoliose idiopática"
+        "Escoliose congênita e neuromuscular"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na escoliose congênita, as más formações associadas mais comuns são",
@@ -6489,7 +6541,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 34,
+        "numeroOriginal": 134
+      }
     },
     {
       "id": "coluna-0205",
@@ -6497,7 +6554,7 @@
       "subtemas": [
         "Espondilólise e espondilolistese"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na espondilolistese da criança e adolescente, a manifestação inicial mais frequente é",
@@ -6527,7 +6584,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 34,
+        "numeroOriginal": 135
+      }
     },
     {
       "id": "coluna-0206",
@@ -6535,7 +6597,7 @@
       "subtemas": [
         "Anatomia da coluna"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "A estrutura apontada na figura abaixo é",
@@ -6572,16 +6634,21 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 34,
+        "numeroOriginal": 136
+      }
     },
     {
       "id": "coluna-0207",
       "tema": "Coluna",
       "subtemas": [
-        "Hérnia de disco lombar",
+        "Hérnia de disco e mielopatia cervical",
         "Exame neurológico e radiculopatias"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "O paciente com hérnia de disco C6-C7 pode apresentar",
@@ -6611,7 +6678,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 34,
+        "numeroOriginal": 137
+      }
     },
     {
       "id": "coluna-0208",
@@ -6619,7 +6691,7 @@
       "subtemas": [
         "Anatomia da coluna"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "A coluna lombar tem maior mobilidade em flexão e extensão devido a",
@@ -6649,7 +6721,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 35,
+        "numeroOriginal": 140
+      }
     },
     {
       "id": "coluna-0209",
@@ -6657,7 +6734,7 @@
       "subtemas": [
         "Anatomia da coluna"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "A nutrição das células do disco intervertebral se dá",
@@ -6687,7 +6764,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 35,
+        "numeroOriginal": 141
+      }
     },
     {
       "id": "coluna-0210",
@@ -6695,7 +6777,7 @@
       "subtemas": [
         "Coluna cervical da criança e torcicolo"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na síndrome de GRISEL o paciente apresenta-se clinicamente",
@@ -6725,16 +6807,20 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 42,
+        "numeroOriginal": 176
+      }
     },
     {
       "id": "coluna-0211",
       "tema": "Coluna",
       "subtemas": [
-        "Lesão medular e síndromes medulares",
-        "Hérnia de disco e mielopatia cervical"
+        "Lesão medular e síndromes medulares"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na lesão de SCIWORA cervical o mecanismo mais envolvido é a",
@@ -6764,7 +6850,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 43,
+        "numeroOriginal": 177
+      }
     },
     {
       "id": "coluna-0212",
@@ -6772,7 +6863,7 @@
       "subtemas": [
         "Estenose do canal lombar"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na estenose de canal central os sintomas tipicamente",
@@ -6802,7 +6893,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 44,
+        "numeroOriginal": 182
+      }
     },
     {
       "id": "coluna-0216",
@@ -8517,8 +8613,8 @@
       "subtemas": [
         "Lesão medular e síndromes medulares"
       ],
-      "prova": "TARO",
-      "ano": 2013,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "Na SCIWORA (Spinal Cord Injury without Radiographic Abnormality), o déficit neurológico é mais comum na",
       "imagens": [],
@@ -8547,7 +8643,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 48,
+        "numeroOriginal": 204
+      }
     },
     {
       "id": "coluna-0274",
@@ -8555,8 +8656,8 @@
       "subtemas": [
         "Exame neurológico e radiculopatias"
       ],
-      "prova": "TARO",
-      "ano": 2020,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "No exame físico da coluna, o déficit do músculo glúteo médio está associado à lesão da raiz",
       "imagens": [],
@@ -8587,9 +8688,9 @@
       "revisado": false,
       "subtemasPendentes": false,
       "origem": {
-        "arquivo": "TARO-2020.pdf",
-        "pagina": 8,
-        "numeroOriginal": 19
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 58,
+        "numeroOriginal": 248
       }
     },
     {
@@ -18088,6 +18189,93 @@
         "arquivo": "TEOT 2025.pdf",
         "pagina": 25,
         "numeroOriginal": 65
+      }
+    },
+    {
+      "id": "coluna-0490",
+      "tema": "Coluna",
+      "subtemas": [
+        "Fraturas da coluna toracolombar"
+      ],
+      "prova": "SBOT-SP",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Em relação à lesão de \"Chance\" na coluna sua localização clássica é?",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Parte superior da coluna dorsal"
+        },
+        {
+          "letra": "B",
+          "texto": "Parte inferior da coluna dorsal"
+        },
+        {
+          "letra": "C",
+          "texto": "Parte superior da coluna lombar"
+        },
+        {
+          "letra": "D",
+          "texto": "Parte inferior da coluna lombar"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 18,
+        "numeroOriginal": 69
+      }
+    },
+    {
+      "id": "coluna-0491",
+      "tema": "Coluna",
+      "subtemas": [
+        "Escoliose idiopática",
+        "Imagem da coluna"
+      ],
+      "prova": "SBOT-SP",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "As referências para traçar o ângulo de Cobb são:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Superfície inferior da vértebra extrema superior e superfície superior da vértebra extrema inferior."
+        },
+        {
+          "letra": "B",
+          "texto": "Superfície superior da vértebra extrema superior e superfície inferior da vértebra extrema inferior."
+        },
+        {
+          "letra": "C",
+          "texto": "Superfície superior e inferior da vértebra apical."
+        },
+        {
+          "letra": "D",
+          "texto": "Pedículos da vértebra apical e fio de prumo a partir de C7."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 58,
+        "numeroOriginal": 249
       }
     }
   ]

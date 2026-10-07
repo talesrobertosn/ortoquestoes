@@ -4604,5 +4604,50 @@
   ],
   "geradoEm": "2026-10-07",
   "conferido": false
+ },
+ "conceitos-basicos-0408": {
+  "conceito": "A terapia por ondas de choque aplica estímulos mecânicos capazes de desencadear respostas biológicas. Estudos experimentais e trabalhos em pseudartrose observaram alterações em mediadores relacionados à angiogênese e osteogênese, incluindo VEGF, TGF-beta e BMP. Esse conjunto fundamenta a resposta fatores de crescimento.\n\nA passagem de um achado experimental para benefício clínico exige cautela. Pseudartrose depende também de estabilidade, vascularização, infecção e biologia local. Um estímulo não corrige automaticamente instabilidade mecânica nem substitui tratamento de infecção. O enunciado pergunta o mecanismo proposto; a resposta não estabelece eficácia universal nem indicação para todo padrão de pseudartrose.",
+  "correta": "Fatores de crescimento é a resposta correta para o mecanismo proposto. Mediadores como VEGF, TGF-beta e BMP relacionam-se à vascularização e diferenciação osteogênica. A existência dessa resposta biológica não dispensa avaliar estabilidade e causa da pseudartrose.",
+  "incorretas": {
+   "A": "Osteoclastos participam da remodelação, mas aumento de sua produção não é o efeito osteogênico central cobrado. Formação e reabsorção são processos relacionados, porém distintos. A resposta busca mediadores que estimulem reparo e vascularização, não apenas células reabsortivas.",
+   "B": "A inflamação participa do reparo inicial e pode ser modulada por estímulos mecânicos, mas fatores inflamatórios é uma expressão inespecífica. O conjunto melhor documentado para a formulação da questão inclui fatores de crescimento. Não se deve equiparar inflamação persistente a consolidação eficaz.",
+   "D": "Fatores de degradação óssea não descrevem a finalidade regenerativa estudada. Reabsorção ocorre na remodelação, mas não equivale a promover uma ponte óssea estável. A alternativa confunde turnover com o estímulo de reparação cobrado."
+  },
+  "referencias": [
+   "The effects of shockwave on bone healing and systemic concentrations of NO, TGF-beta1, VEGF and BMP-2 in long bone non-unions. https://pubmed.ncbi.nlm.nih.gov/19281856/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "provavel": "C"
+ },
+ "conceitos-basicos-0409": {
+  "conceito": "Osteoindução é o estímulo à diferenciação de células precursoras em linhagem formadora de osso. Fatores de sinalização, como proteínas morfogenéticas, podem participar desse processo. A expressão produção de osteoblastos utilizada na alternativa resume esse recrutamento e diferenciação; não significa que o enxerto contenha necessariamente osteoblastos vivos.\n\nOsteocondução é oferecer uma estrutura pela qual células e vasos possam crescer. Osteogênese é a contribuição de células capazes de formar osso. Um mesmo enxerto pode reunir propriedades, como o autólogo, mas elas não são sinônimos. A escolha clínica depende de defeito, ambiente, estabilidade e riscos. A questão exige distinguir estímulo biológico de suporte estrutural.",
+  "correta": "A opção descreve a diferenciação para células formadoras de osso, conceito de osteoindução. A redação simplifica o processo, que envolve precursores e sinais locais. Não se deve confundir essa capacidade com presença de células vivas no material.",
+  "incorretas": {
+   "B": "Servir de scaffold define osteocondução. A estrutura permite invasão celular e vascular, mas isso não demonstra que o material induza diferenciação osteoblástica. Suporte físico e sinalização biológica são propriedades complementares, avaliadas separadamente.",
+   "C": "Osteoclastos reabsorvem osso; sua geração não define osteoindução. Eles participam de remodelação e integração, mas a propriedade perguntada é estimular formação. A alternativa troca a linhagem celular central.",
+   "D": "Acelerar reabsorção não é o conceito de osteoindução. Um enxerto pode ser reabsorvido durante integração, porém a velocidade de degradação deve equilibrar-se com formação e estabilidade. Desaparecimento rápido do material não prova maior capacidade osteoindutora."
+  },
+  "referencias": [
+   "Osteoinduction, osteoconduction and osseointegration. https://pubmed.ncbi.nlm.nih.gov/11716023/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "provavel": "A"
+ },
+ "conceitos-basicos-0410": {
+  "conceito": "A alma é o núcleo central do parafuso, medido entre as raízes da rosca, sem incluir suas cristas. O diâmetro externo inclui a rosca. Na figura, A marca o núcleo, B o diâmetro externo e C a distância entre filetes, relacionada ao passo. A identificação dessas dimensões orienta perfuração e compreensão da resistência.\n\nNo parafuso de tração, o fragmento próximo recebe um orifício de deslizamento adequado ao diâmetro externo, enquanto o distante recebe o orifício piloto apropriado ao sistema. A rosca deve ancorar no fragmento distante para produzir compressão. A ilustração ensina geometria, mas o diâmetro de broca nunca deve ser escolhido apenas pela aparência: utiliza-se a especificação do implante.",
+  "correta": "A marca a largura central sem as cristas da rosca, isto é, a alma. Essa dimensão distingue núcleo de diâmetro total. O núcleo contribui para resistência mecânica, enquanto a rosca estabelece contato e ancoragem no osso.",
+  "incorretas": {
+   "B": "B inclui as cristas dos filetes e representa o diâmetro externo. Confundi-lo com a alma leva a interpretações erradas sobre orifício piloto e deslizamento. Cada etapa de perfuração deve seguir a medida definida pelo sistema de implantes.",
+   "C": "C marca a separação axial entre filetes, associada ao passo da rosca. É uma distância longitudinal, não a largura do núcleo. Passo, diâmetro e perfil influenciam comportamento, mas são parâmetros geométricos distintos.",
+   "D": "D destaca um detalhe localizado do filete, não a dimensão transversal do núcleo. A alma estende-se centralmente ao longo do corpo roscado. O círculo sobre a rosca não representa o diâmetro central indicado por A."
+  },
+  "referencias": [
+   "AO Surgery Reference. Cortical lag screw insertion. https://surgeryreference.aofoundation.org/orthopedic-trauma/basic-technique/cortical-lag-screws"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "provavel": "A"
  }
 }

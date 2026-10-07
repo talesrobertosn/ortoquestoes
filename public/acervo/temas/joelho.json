@@ -1,7 +1,7 @@
 {
   "tema": "Joelho",
   "slug": "joelho",
-  "geradoEm": "2026-09-21T16:48:55+00:00",
+  "geradoEm": "2026-10-07",
   "questoes": [
     {
       "id": "joelho-0001",
@@ -5091,7 +5091,7 @@
       "subtemas": [
         "Artroplastia total do joelho"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Quais os valores considerados razoáveis de abertura em valgo e varo num joelho submetido a prótese total?",
@@ -5121,7 +5121,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 8,
+        "numeroOriginal": 24
+      }
     },
     {
       "id": "joelho-0127",
@@ -5129,7 +5134,7 @@
       "subtemas": [
         "Outros temas do joelho"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Nos casos de rigidez pós-traumatica do joelho a partir de quantos graus de perda da extensão indica-se o release posterior aberto?",
@@ -5159,7 +5164,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 8,
+        "numeroOriginal": 25
+      }
     },
     {
       "id": "joelho-0128",
@@ -5167,7 +5177,7 @@
       "subtemas": [
         "Lesões meniscais"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Segundo a classificação de O'Connor das lesões meniscais no joelho, as lesões degenerativas do menisco correspondem a qual tipo?",
@@ -5197,7 +5207,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 8,
+        "numeroOriginal": 26
+      }
     },
     {
       "id": "joelho-0129",
@@ -5205,7 +5220,7 @@
       "subtemas": [
         "Lesões condrais"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na cirurgia para o tratamento das lesões osteocondrais do joelho qual fator não piora o prognóstico do resultado?",
@@ -5235,15 +5250,20 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 8,
+        "numeroOriginal": 27
+      }
     },
     {
       "id": "joelho-0130",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do ligamento cruzado anterior"
+        "Reconstrução do LCA: enxertos e túneis"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Qual das situações citadas abaixo é falsa sobre o uso do uso de aloenxertos na cirurgia de reconstrução do ligamento cruzado anterior?",
@@ -5273,15 +5293,20 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 8,
+        "numeroOriginal": 28
+      }
     },
     {
       "id": "joelho-0131",
       "tema": "Joelho",
       "subtemas": [
-        "Artroplastia total do joelho"
+        "Gonartrose e osteotomias"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Em relação ao tratamento da osteoartrite do joelho qual método de tratamento abaixo apresenta evidência de melhora na evolução da patologia?",
@@ -5311,15 +5336,20 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 9,
+        "numeroOriginal": 29
+      }
     },
     {
       "id": "joelho-0132",
       "tema": "Joelho",
       "subtemas": [
-        "Ruptura dos tendões patelar e quadricipital"
+        "Imagem do joelho"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "A relação entre o comprimento do tendão e o comprimento da patela acima de qual dos valores abaixo indica lesão no tendão patelar?",
@@ -5349,7 +5379,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 20,
+        "numeroOriginal": 79
+      }
     },
     {
       "id": "joelho-0133",
@@ -5395,10 +5430,10 @@
       "id": "joelho-0134",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do ligamento cruzado anterior",
-        "Lesão do ligamento cruzado posterior"
+        "Lesões meniscais",
+        "Joelho na criança"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Nas crianças e adolescentes qual o tipo mais comum de lesão meniscal?",
@@ -5428,7 +5463,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 24,
+        "numeroOriginal": 87
+      }
     },
     {
       "id": "joelho-0135",
@@ -7103,7 +7143,7 @@
       "subtemas": [
         "Lesão do ligamento cruzado posterior"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "O ligamento cruzado posterior é formado por duas bandas, sendo a mais espessa a banda",
@@ -7133,7 +7173,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 41,
+        "numeroOriginal": 167
+      }
     },
     {
       "id": "joelho-0175",
@@ -7141,7 +7186,7 @@
       "subtemas": [
         "Osteocondrite dissecante"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "A osteocondrite dissecante do joelho é mais frequentemente encontrada na",
@@ -7171,7 +7216,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 41,
+        "numeroOriginal": 169
+      }
     },
     {
       "id": "joelho-0176",
@@ -7179,7 +7229,7 @@
       "subtemas": [
         "Instabilidade femoropatelar"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na luxação patelar recidivante, o ligamento patelofemoral medial é responsável isoladamente por cerca de",
@@ -7209,7 +7259,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 41,
+        "numeroOriginal": 171
+      }
     },
     {
       "id": "joelho-0177",
@@ -7217,7 +7272,7 @@
       "subtemas": [
         "Exame físico do joelho"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "O teste de recurvato e rotação externa do joelho representado na figura foi descrito por",
@@ -7247,7 +7302,12 @@
       "anulada": false,
       "figuraPendente": true,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 42,
+        "numeroOriginal": 172
+      }
     },
     {
       "id": "joelho-0178",
@@ -7255,7 +7315,7 @@
       "subtemas": [
         "Gonartrose e osteotomias"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na osteoartrose do joelho unicompartimental medial, a osteotomia valgizante está contraindicada se houver necessidade de correção maior do que",
@@ -7285,7 +7345,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 42,
+        "numeroOriginal": 173
+      }
     },
     {
       "id": "joelho-0179",
@@ -9980,7 +10045,7 @@
       "subtemas": [
         "Artroplastia total do joelho"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Durante a artroplastia total do joelho, se várias incisões prévias estiverem presentes no momento da cirurgia, devemos escolher a incisão:",
@@ -10010,7 +10075,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 59,
+        "numeroOriginal": 252
+      }
     },
     {
       "id": "joelho-0245",
@@ -10018,7 +10088,7 @@
       "subtemas": [
         "Artroplastia total do joelho"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na artroplastia total do joelho com valgo grave, a técnica do corte femoral que utiliza os côndilos posteriores como referência tem como limitação a hipoplasia do côndilo",
@@ -10048,7 +10118,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 59,
+        "numeroOriginal": 253
+      }
     },
     {
       "id": "joelho-0248",
@@ -10057,8 +10132,8 @@
         "Artroplastia total do joelho",
         "Vias de acesso ao joelho"
       ],
-      "prova": "TEOT",
-      "ano": 2022,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "A via de acesso subvasto anteromedial do joelho preserva avascularização da patela ao poupar",
       "imagens": [],
@@ -10087,7 +10162,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 72,
+        "numeroOriginal": 307
+      }
     },
     {
       "id": "joelho-0249",
@@ -10095,7 +10175,7 @@
       "subtemas": [
         "Lesão do ligamento cruzado anterior"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "São manobras para avaliação de lesão do LCA (ligamento cruzado anterior):",
@@ -10125,7 +10205,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 72,
+        "numeroOriginal": 308
+      }
     },
     {
       "id": "joelho-0250",
@@ -10133,7 +10218,7 @@
       "subtemas": [
         "Lesão do ligamento cruzado anterior"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "A tríade infeliz de O’Donoghue caracteriza-se pela lesão das seguintes estruturas na seguinte seqüência:",
@@ -10163,7 +10248,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 73,
+        "numeroOriginal": 309
+      }
     },
     {
       "id": "joelho-0251",
@@ -13907,6 +13997,94 @@
         "arquivo": "SES-DF 2022 - Ortopedia e Traumatologia em Cirurgia da Coluna R4",
         "pagina": 6,
         "numeroOriginal": 90
+      }
+    },
+    {
+      "id": "joelho-0341",
+      "tema": "Joelho",
+      "subtemas": [
+        "Biomecânica do joelho",
+        "Instabilidade femoropatelar"
+      ],
+      "prova": "SBOT-SP",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Os fatores que podem aumentar o ângulo Q são:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Geno valgo, aumento da anteversão femoral e lateralização da tuberosidade da tíbia."
+        },
+        {
+          "letra": "B",
+          "texto": "Geno varo, aumento da retroversão femoral e medialização da tuberosidade da tíbia."
+        },
+        {
+          "letra": "C",
+          "texto": "Geno valgo, aumento da retroversão femoral e medialização da tuberosidade da tíbia."
+        },
+        {
+          "letra": "D",
+          "texto": "Geno varo, aumento da anteversão femoral e lateralização da tuberosidade da tíbia."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 59,
+        "numeroOriginal": 254
+      }
+    },
+    {
+      "id": "joelho-0342",
+      "tema": "Joelho",
+      "subtemas": [
+        "Canto posterolateral",
+        "Anatomia do joelho"
+      ],
+      "prova": "SBOT-SP",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "São estruturas constituintes do canto posterolateral do joelho:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Ligamento colateral lateral, ligamento cruzado posterior e ligamento fabelofibular."
+        },
+        {
+          "letra": "B",
+          "texto": "Ligamento poplíteo oblíquo, ligamento popliteofibular e ligamento colateral lateral."
+        },
+        {
+          "letra": "C",
+          "texto": "Ligamento colateral lateral, tendão poplíteo e ligamento popliteofibular."
+        },
+        {
+          "letra": "D",
+          "texto": "Ligamento popliteofibular, ligamento fabelofibular e ligamento poplíteo oblíquo."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 70,
+        "numeroOriginal": 298
       }
     }
   ]

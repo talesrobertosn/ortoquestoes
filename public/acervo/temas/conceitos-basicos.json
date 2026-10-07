@@ -1,16 +1,16 @@
 {
   "tema": "Conceitos básicos",
   "slug": "conceitos-basicos",
-  "geradoEm": "2026-09-05T15:45:08+00:00",
+  "geradoEm": "2026-10-07",
   "questoes": [
     {
       "id": "conceitos-basicos-0001",
       "tema": "Conceitos básicos",
       "subtemas": [
-        "Pseudartrose e retardo de consolidação"
+        "Consolidação óssea"
       ],
-      "prova": "TARO",
-      "ano": 2020,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "Na consolidação das fraturas diafisárias, a maior parte da resposta vascular provém do:",
       "imagens": [],
@@ -41,9 +41,9 @@
       "revisado": false,
       "subtemasPendentes": false,
       "origem": {
-        "arquivo": "TARO-2020.pdf",
-        "pagina": 4,
-        "numeroOriginal": 3
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 67,
+        "numeroOriginal": 291
       }
     },
     {
@@ -2451,10 +2451,10 @@
       "id": "conceitos-basicos-0064",
       "tema": "Conceitos básicos",
       "subtemas": [
-        "Osteomielite aguda"
+        "Outras infecções osteoarticulares"
       ],
-      "prova": "TEOT",
-      "ano": 2022,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "Na infecção pós-osteossíntese, a maturação do biofilme está relacionada à deposição de",
       "imagens": [],
@@ -2483,7 +2483,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 74,
+        "numeroOriginal": 314
+      }
     },
     {
       "id": "conceitos-basicos-0065",
@@ -3514,8 +3519,8 @@
       "subtemas": [
         "Dor e analgesia"
       ],
-      "prova": "TEOT",
-      "ano": 2023,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "Na fisiopatologia da dor, a fase na qual as vias inibitórias ou excitatórias descendem para o nível medular é a de",
       "imagens": [],
@@ -3546,9 +3551,9 @@
       "revisado": false,
       "subtemasPendentes": false,
       "origem": {
-        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
-        "pagina": 10,
-        "numeroOriginal": 32
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 68,
+        "numeroOriginal": 294
       }
     },
     {
@@ -3557,8 +3562,8 @@
       "subtemas": [
         "Deformidades ósseas e alongamento"
       ],
-      "prova": "TEOT",
-      "ano": 2023,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "Na deformidade angular diafisária da tíbia, o centro de rotação angular (CORA) é mensurado no ponto",
       "imagens": [],
@@ -3589,9 +3594,9 @@
       "revisado": false,
       "subtemasPendentes": false,
       "origem": {
-        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
-        "pagina": 14,
-        "numeroOriginal": 51
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 75,
+        "numeroOriginal": 318
       }
     },
     {
@@ -4352,10 +4357,9 @@
       "id": "conceitos-basicos-0137",
       "tema": "Conceitos básicos",
       "subtemas": [
-        "Outros temas de conceitos básicos",
-        "Consolidação óssea"
+        "Fixadores externos"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na realização do fixador externo nas fraturas da diáfise do fêmur em qual posição a colocação dos pinos de schanz aumentam o risco de ossificação heterotópica?",
@@ -4385,15 +4389,20 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 17,
+        "numeroOriginal": 64
+      }
     },
     {
       "id": "conceitos-basicos-0138",
       "tema": "Conceitos básicos",
       "subtemas": [
-        "Consolidação óssea"
+        "Outros temas de conceitos básicos"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Numa criança que sofreu um politrauma em qual das articulações abaixo é mais comum o surgimento de calcificação heterotópica?",
@@ -4423,7 +4432,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 22,
+        "numeroOriginal": 83
+      }
     },
     {
       "id": "conceitos-basicos-0139",
@@ -4431,7 +4445,7 @@
       "subtemas": [
         "Pseudartrose e retardo de consolidação"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "O plasma rico em plaquetas quando utilizado para regeneração óssea deve apresentar uma concentração de plaquetas quantas vezes maior que os valores fisiológicos?",
@@ -4461,7 +4475,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 25,
+        "numeroOriginal": 90
+      }
     },
     {
       "id": "conceitos-basicos-0140",
@@ -4469,7 +4488,7 @@
       "subtemas": [
         "Tratamento conservador e imobilização"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "O gesso Burkhalter quando confeccionado para o tratamento de uma fratura de metacarpo, o punho deve ser mantido em qual posição?",
@@ -4499,7 +4518,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 25,
+        "numeroOriginal": 92
+      }
     },
     {
       "id": "conceitos-basicos-0141",
@@ -4507,7 +4531,7 @@
       "subtemas": [
         "Fixadores externos"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Pra diminuir o risco de fratura quando realiza-se um fixador externo unilateral,o diâmetro do pino de Schanz não deve ultrapassar qual percentual do diâmetro do osso?",
@@ -4537,7 +4561,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 25,
+        "numeroOriginal": 93
+      }
     },
     {
       "id": "conceitos-basicos-0142",
@@ -4545,7 +4574,7 @@
       "subtemas": [
         "Princípios de osteossíntese"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "A utilização das hastes intramedulares não fresadas aumenta o risco de não união nas fraturas diafisarias do fêmur em quantas vezes?",
@@ -4575,7 +4604,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 25,
+        "numeroOriginal": 94
+      }
     },
     {
       "id": "conceitos-basicos-0143",
@@ -4583,7 +4617,7 @@
       "subtemas": [
         "Princípios de osteossíntese"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Em relação as características dos materiais a Ductilidade corresponde a qual característica baixo?",
@@ -4613,7 +4647,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 26,
+        "numeroOriginal": 95
+      }
     },
     {
       "id": "conceitos-basicos-0144",
@@ -4621,7 +4660,7 @@
       "subtemas": [
         "Princípios de osteossíntese"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "A técnica cirúrgica \"pass-through\" é utilizada nas fraturas em que região do osso?",
@@ -4651,7 +4690,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 26,
+        "numeroOriginal": 96
+      }
     },
     {
       "id": "conceitos-basicos-0145",
@@ -5520,7 +5564,7 @@
       "subtemas": [
         "Consolidação óssea"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na histologia da matriz óssea o osteóide é uma camada de matriz",
@@ -5550,15 +5594,20 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 42,
+        "numeroOriginal": 174
+      }
     },
     {
       "id": "conceitos-basicos-0181",
       "tema": "Conceitos básicos",
       "subtemas": [
-        "Princípios de osteossíntese"
+        "Consolidação óssea"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "A consolidação óssea direta é encontrada na",
@@ -5588,7 +5637,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 42,
+        "numeroOriginal": 175
+      }
     },
     {
       "id": "conceitos-basicos-0182",
@@ -5596,7 +5650,7 @@
       "subtemas": [
         "Lesões musculares"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na rotura do músculo peitoral maior, existe perda de força em",
@@ -5626,7 +5680,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 44,
+        "numeroOriginal": 185
+      }
     },
     {
       "id": "conceitos-basicos-0184",
@@ -7473,7 +7532,7 @@
       "subtemas": [
         "Deformidades ósseas e alongamento"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "São contra indicações para a osteotomia de Clamshell:",
@@ -7503,7 +7562,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 60,
+        "numeroOriginal": 260
+      }
     },
     {
       "id": "conceitos-basicos-0242",
@@ -7550,8 +7614,8 @@
       "subtemas": [
         "Medicamentos e exames laboratoriais"
       ],
-      "prova": "TARO",
-      "ano": 2020,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "O ácido tranexâmico é um medicamento que atua no mecanismo de",
       "imagens": [],
@@ -7582,9 +7646,9 @@
       "revisado": false,
       "subtemasPendentes": false,
       "origem": {
-        "arquivo": "TARO-2020.pdf",
-        "pagina": 14,
-        "numeroOriginal": 41
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 68,
+        "numeroOriginal": 292
       }
     },
     {
@@ -7672,7 +7736,7 @@
       "subtemas": [
         "Osteomielite aguda"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "A osteomielite aguda hematogênica em crianças tem umadistribuição:",
@@ -7702,7 +7766,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 74,
+        "numeroOriginal": 315
+      }
     },
     {
       "id": "conceitos-basicos-0250",
@@ -7711,7 +7780,7 @@
         "Artrite séptica",
         "Outras infecções osteoarticulares"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Assinale a alternativa que contenha as fises articulares em que as infecções podem levar a artrite séptica:",
@@ -7741,7 +7810,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 74,
+        "numeroOriginal": 316
+      }
     },
     {
       "id": "conceitos-basicos-0251",
@@ -14560,6 +14634,141 @@
         "arquivo": "Rockwood_10e_cap12_13_Internal_Fixation.pdf",
         "pagina": 64,
         "numeroOriginal": null
+      }
+    },
+    {
+      "id": "conceitos-basicos-0408",
+      "tema": "Conceitos básicos",
+      "subtemas": [
+        "Pseudartrose e retardo de consolidação",
+        "Consolidação óssea"
+      ],
+      "prova": "SBOT-SP",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Estudos in vitro demonstraram que as ondas de choque, para o tratamento de pseudartrose, estimulam a produção de:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Osteoclastos."
+        },
+        {
+          "letra": "B",
+          "texto": "Fatores inflamatórios."
+        },
+        {
+          "letra": "C",
+          "texto": "Fatores de crescimento."
+        },
+        {
+          "letra": "D",
+          "texto": "Fatores de degradação óssea."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 68,
+        "numeroOriginal": 293
+      }
+    },
+    {
+      "id": "conceitos-basicos-0409",
+      "tema": "Conceitos básicos",
+      "subtemas": [
+        "Consolidação óssea"
+      ],
+      "prova": "SBOT-SP",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Enxertos osteoindutores são aqueles que:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Apresentam a capacidade para induzir a produção de osteoblastos."
+        },
+        {
+          "letra": "B",
+          "texto": "Servem como um scaffold permitindo o crescimento ósseo."
+        },
+        {
+          "letra": "C",
+          "texto": "Apresentam a capacidade para induzir a produção de osteoclastos."
+        },
+        {
+          "letra": "D",
+          "texto": "Aceleram o processo de reabsorção óssea."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 68,
+        "numeroOriginal": 295
+      }
+    },
+    {
+      "id": "conceitos-basicos-0410",
+      "tema": "Conceitos básicos",
+      "subtemas": [
+        "Princípios de osteossíntese"
+      ],
+      "prova": "SBOT-SP",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "A alma do parafuso abaixo corresponde à alternativa:",
+      "imagens": [
+        {
+          "arquivo": "sbot-sp-296.png",
+          "legenda": null
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A"
+        },
+        {
+          "letra": "B",
+          "texto": "B"
+        },
+        {
+          "letra": "C",
+          "texto": "C"
+        },
+        {
+          "letra": "D",
+          "texto": "D"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 68,
+        "numeroOriginal": 296
       }
     }
   ]

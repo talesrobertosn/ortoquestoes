@@ -1,0 +1,5867 @@
+{
+  "fonte": "SBOT-SP",
+  "ano": null,
+  "questoes": 318,
+  "correspondenciasExistentes": 271,
+  "novas": 47,
+  "subtemasExistentesCorrigidos": 54,
+  "gabaritosExistentesPreservados": true,
+  "gabaritosNovosOficiais": 0,
+  "respostasProvaveisNovas": 46,
+  "figurasNovas": 7,
+  "figurasPendentes": [
+    172,
+    269
+  ],
+  "divergenciasComAcervo": [
+    109,
+    111,
+    204
+  ],
+  "questoesMapeadas": [
+    {
+      "numero": 1,
+      "pagina": 3,
+      "id": "quadril-0116",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Artroplastia total: componentes e fixação"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 2,
+      "pagina": 3,
+      "id": "quadril-0117",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Osteotomias do quadril"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 3,
+      "pagina": 3,
+      "id": "quadril-0118",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Osteonecrose da cabeça femoral"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 4,
+      "pagina": 4,
+      "id": "quadril-0119",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Artroplastia total: componentes e fixação"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 5,
+      "pagina": 4,
+      "id": "quadril-0120",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Imagem do quadril"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 6,
+      "pagina": 4,
+      "id": "quadril-0121",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Artroplastia total: componentes e fixação"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 7,
+      "pagina": 4,
+      "id": "ombro-cotovelo-0230",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Peitoral maior e outras rupturas tendíneas",
+          "Omartrose e artroplastia do ombro"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 8,
+      "pagina": 4,
+      "id": "ombro-cotovelo-0231",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Omartrose e artroplastia do ombro"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 9,
+      "pagina": 5,
+      "id": "ombro-cotovelo-0232",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Lesões do manguito rotador"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 10,
+      "pagina": 5,
+      "id": "ombro-cotovelo-0233",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Omartrose e artroplastia do ombro"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 11,
+      "pagina": 5,
+      "id": "ombro-cotovelo-0234",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Instabilidade anterior do ombro",
+          "Instabilidade posterior e multidirecional"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 12,
+      "pagina": 5,
+      "id": "ombro-cotovelo-0235",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Lesões do manguito rotador"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 13,
+      "pagina": 5,
+      "id": "pe-tornozelo-0170",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Fraturas do tornozelo e do pilão tibial",
+          "Biomecânica e marcha"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 14,
+      "pagina": 6,
+      "id": "pe-tornozelo-0171",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Artrose do tornozelo, artrodese e artroplastia",
+          "Artroscopia do tornozelo"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 15,
+      "pagina": 6,
+      "id": "pe-tornozelo-0172",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Artroscopia do tornozelo",
+          "Fraturas do tornozelo e do pilão tibial"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 16,
+      "pagina": 6,
+      "id": "pe-tornozelo-0173",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Hálux valgo"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 17,
+      "pagina": 6,
+      "id": "pe-tornozelo-0174",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Pé diabético e neuroartropatia de Charcot"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 18,
+      "pagina": 6,
+      "id": "pe-tornozelo-0175",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Outros temas do pé e tornozelo"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 19,
+      "pagina": 7,
+      "id": "mao-0292",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Artrose do punho e artroscopia"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 20,
+      "pagina": 7,
+      "id": "mao-0293",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Retalhos e cobertura cutânea"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 21,
+      "pagina": 7,
+      "id": "mao-0294",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Doença de Kienböck"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 22,
+      "pagina": 7,
+      "id": "mao-0295",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Doença de Dupuytren"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 23,
+      "pagina": 7,
+      "id": "mao-0296",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Exame físico da mão e punho",
+          "Neuropatia ulnar e outras compressões"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 24,
+      "pagina": 8,
+      "id": "joelho-0126",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Artroplastia total do joelho"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 25,
+      "pagina": 8,
+      "id": "joelho-0127",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Outros temas do joelho"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 26,
+      "pagina": 8,
+      "id": "joelho-0128",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Lesões meniscais"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 27,
+      "pagina": 8,
+      "id": "joelho-0129",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Lesões condrais"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 28,
+      "pagina": 8,
+      "id": "joelho-0130",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Lesão do ligamento cruzado anterior"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 29,
+      "pagina": 9,
+      "id": "joelho-0131",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Artroplastia total do joelho"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 30,
+      "pagina": 9,
+      "id": "coluna-0146",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Vias de acesso à coluna",
+          "Hérnia de disco e mielopatia cervical"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 31,
+      "pagina": 9,
+      "id": "coluna-0147",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Hérnia de disco lombar"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 32,
+      "pagina": 9,
+      "id": "coluna-0148",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Lombalgia",
+          "Fraturas da coluna toracolombar"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 33,
+      "pagina": 9,
+      "id": "coluna-0149",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Hérnia de disco lombar"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 34,
+      "pagina": 10,
+      "id": "coluna-0150",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Escoliose idiopática"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 35,
+      "pagina": 10,
+      "id": "coluna-0151",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Escoliose idiopática"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 36,
+      "pagina": 11,
+      "id": "pediatria-0236",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Paralisia cerebral"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 37,
+      "pagina": 11,
+      "id": "pediatria-0237",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Paralisia cerebral"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 38,
+      "pagina": 11,
+      "id": "mao-0297",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Outras malformações congênitas"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 39,
+      "pagina": 11,
+      "id": "pediatria-0238",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Tíbia vara (Blount)"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 40,
+      "pagina": 12,
+      "id": "pediatria-0239",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Desenvolvimento neuropsicomotor",
+          "Artrogripose e doenças neuromusculares"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 41,
+      "pagina": 12,
+      "id": "pediatria-0240",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Displasia do desenvolvimento do quadril"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 42,
+      "pagina": 13,
+      "id": "tumores-0184",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Doença de Paget"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 43,
+      "pagina": 13,
+      "id": "tumores-0185",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Estadiamento, biópsia e margens",
+          "Osteoblastoma"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 44,
+      "pagina": 13,
+      "id": "tumores-0186",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Sarcoma de Ewing",
+          "Metástases ósseas"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 45,
+      "pagina": 13,
+      "id": "tumores-0187",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Metástases ósseas"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 46,
+      "pagina": 13,
+      "id": "tumores-0188",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Tumores benignos de partes moles",
+          "Sarcomas de partes moles"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 47,
+      "pagina": 13,
+      "id": "trauma-0530",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Fratura da escápula"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 48,
+      "pagina": 14,
+      "id": "trauma-0531",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Luxação acromioclavicular"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 49,
+      "pagina": 14,
+      "id": "trauma-0532",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Fratura da diáfise do úmero"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 50,
+      "pagina": 14,
+      "id": "trauma-0533",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Fratura do úmero proximal"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 51,
+      "pagina": 14,
+      "id": "trauma-0534",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Fratura da cabeça do rádio e instabilidade do cotovelo"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 52,
+      "pagina": 14,
+      "id": "trauma-0535",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Fratura da cabeça do rádio e instabilidade do cotovelo"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 53,
+      "pagina": 15,
+      "id": "trauma-0536",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Fratura da diáfise da tíbia"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 54,
+      "pagina": 15,
+      "id": "trauma-0537",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Fratura do tornozelo"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 55,
+      "pagina": 15,
+      "id": "trauma-0538",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Fraturas do tálus e do calcâneo"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 56,
+      "pagina": 15,
+      "id": "trauma-0539",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Fraturas do tálus e do calcâneo"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 57,
+      "pagina": 15,
+      "id": "trauma-0540",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Fraturas do mediopé e antepé"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 58,
+      "pagina": 16,
+      "id": "trauma-0541",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Fratura do pilão tibial"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 59,
+      "pagina": 16,
+      "id": "quadril-0122",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Anatomia do quadril",
+          "Imagem do quadril"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 60,
+      "pagina": 16,
+      "id": "trauma-0542",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Luxação do quadril e fratura da cabeça femoral"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 61,
+      "pagina": 16,
+      "id": "quadril-0123",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Vias de acesso ao quadril"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 62,
+      "pagina": 16,
+      "id": "trauma-0543",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Fratura transtrocantérica"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 63,
+      "pagina": 17,
+      "id": "trauma-0544",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Fratura transtrocantérica"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 64,
+      "pagina": 17,
+      "id": "conceitos-basicos-0137",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Outros temas de conceitos básicos",
+          "Consolidação óssea"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 65,
+      "pagina": 17,
+      "id": "coluna-0152",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Lesão medular e síndromes medulares",
+          "Hérnia de disco e mielopatia cervical"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 66,
+      "pagina": 18,
+      "id": "coluna-0153",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Hérnia de disco e mielopatia cervical",
+          "Fraturas da coluna cervical"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 67,
+      "pagina": 18,
+      "id": "trauma-0546",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Fraturas da coluna toracolombar"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 68,
+      "pagina": 18,
+      "id": "trauma-0547",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Fraturas da coluna toracolombar"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 69,
+      "pagina": 18,
+      "id": "coluna-0490",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "C",
+      "respostaProvavel": "C",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 70,
+      "pagina": 19,
+      "id": "trauma-0548",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Fraturas da coluna toracolombar"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 71,
+      "pagina": 19,
+      "id": "trauma-0549",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Fraturas diafisárias do antebraço"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 72,
+      "pagina": 19,
+      "id": "mao-0298",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Fratura do rádio distal"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 73,
+      "pagina": 19,
+      "id": "trauma-0551",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Fratura do rádio distal"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 74,
+      "pagina": 19,
+      "id": "trauma-0552",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Fratura do escafoide e do carpo"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 75,
+      "pagina": 20,
+      "id": "mao-0299",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Instabilidade do carpo"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 76,
+      "pagina": 20,
+      "id": "trauma-0553",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Fraturas dos metacarpos e falanges"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 77,
+      "pagina": 20,
+      "id": "trauma-0554",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Fratura do fêmur distal"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 78,
+      "pagina": 20,
+      "id": "trauma-0555",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Fratura da patela e lesão do aparelho extensor"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 79,
+      "pagina": 20,
+      "id": "joelho-0132",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Ruptura dos tendões patelar e quadricipital"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 80,
+      "pagina": 21,
+      "id": "trauma-0556",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Luxação do joelho e lesões ligamentares"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 81,
+      "pagina": 21,
+      "id": "trauma-0557",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Luxação do joelho e lesões ligamentares"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 82,
+      "pagina": 21,
+      "id": "trauma-0558",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Fratura do planalto tibial"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 83,
+      "pagina": 22,
+      "id": "conceitos-basicos-0138",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Consolidação óssea"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 84,
+      "pagina": 23,
+      "id": "mao-0300",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Fraturas dos metacarpos e falanges",
+          "Fraturas do escafoide e do carpo"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 85,
+      "pagina": 23,
+      "id": "coluna-0154",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Imagem da coluna"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 86,
+      "pagina": 24,
+      "id": "pediatria-0923",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "C",
+      "respostaProvavel": "C",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 87,
+      "pagina": 24,
+      "id": "joelho-0134",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Lesão do ligamento cruzado anterior",
+          "Lesão do ligamento cruzado posterior"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 88,
+      "pagina": 24,
+      "id": "pediatria-0924",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "B",
+      "respostaProvavel": "B",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 89,
+      "pagina": 24,
+      "id": "trauma-0559",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Fraturas por estresse"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 90,
+      "pagina": 25,
+      "id": "conceitos-basicos-0139",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Pseudartrose e retardo de consolidação"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 91,
+      "pagina": 25,
+      "id": "osteometabolicas-0037",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Osteoporose: diagnóstico",
+          "Osteoporose: tratamento"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 92,
+      "pagina": 25,
+      "id": "conceitos-basicos-0140",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Tratamento conservador e imobilização"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 93,
+      "pagina": 25,
+      "id": "conceitos-basicos-0141",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Fixadores externos"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 94,
+      "pagina": 25,
+      "id": "conceitos-basicos-0142",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Princípios de osteossíntese"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 95,
+      "pagina": 26,
+      "id": "conceitos-basicos-0143",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Princípios de osteossíntese"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 96,
+      "pagina": 26,
+      "id": "conceitos-basicos-0144",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Princípios de osteossíntese"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 97,
+      "pagina": 26,
+      "id": "coluna-0155",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Lesão medular e síndromes medulares"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 98,
+      "pagina": 26,
+      "id": "mao-0301",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Retalhos e cobertura cutânea"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 99,
+      "pagina": 26,
+      "id": "quadril-0170",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Dor peritrocantérica e tendinopatias"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 100,
+      "pagina": 27,
+      "id": "quadril-0171",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Osteonecrose da cabeça femoral"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 101,
+      "pagina": 27,
+      "id": "quadril-0172",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Osteonecrose da cabeça femoral",
+          "Outros temas do quadril"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 102,
+      "pagina": 27,
+      "id": "quadril-0173",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Exame físico do quadril"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 103,
+      "pagina": 27,
+      "id": "osteometabolicas-0047",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Outros temas osteometabólicos"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 104,
+      "pagina": 27,
+      "id": "trauma-0717",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Fratura subtrocantérica"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 105,
+      "pagina": 27,
+      "id": "trauma-0718",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Fratura do anel pélvico"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 106,
+      "pagina": 28,
+      "id": "quadril-0174",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Artroplastia total: componentes e fixação"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 107,
+      "pagina": 28,
+      "id": "pe-tornozelo-0217",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Metatarsalgia e neuroma de Morton"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 108,
+      "pagina": 28,
+      "id": "pe-tornozelo-0218",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Hálux valgo"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 109,
+      "pagina": 28,
+      "id": "trauma-0719",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Fratura do pilão tibial"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 110,
+      "pagina": 28,
+      "id": "pe-tornozelo-0219",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Tendão calcâneo"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 111,
+      "pagina": 29,
+      "id": "pe-tornozelo-0220",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Hálux rígido"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 112,
+      "pagina": 29,
+      "id": "pe-tornozelo-0221",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Pé cavo"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 113,
+      "pagina": 29,
+      "id": "pe-tornozelo-0222",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": null,
+        "subtemas": [
+          "Pé diabético e neuroartropatia de Charcot"
+        ]
+      },
+      "respostaMaterial": null,
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 114,
+      "pagina": 29,
+      "id": "trauma-0720",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Fraturas do mediopé e antepé"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 115,
+      "pagina": 29,
+      "id": "pe-tornozelo-0223",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Pé plano adquirido do adulto"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 116,
+      "pagina": 30,
+      "id": "ombro-cotovelo-0567",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "D",
+      "respostaProvavel": "D",
+      "alerta": "A resposta do material é D. A alternativa B pode representar uma medida anatômica possível; sua redação como valor absoluto torna a questão discutível. A faixa 0°-55° é histórica e dependente do método.",
+      "figuraPendente": false
+    },
+    {
+      "numero": 117,
+      "pagina": 30,
+      "id": "ombro-cotovelo-0568",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "B",
+      "respostaProvavel": "B",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 118,
+      "pagina": 30,
+      "id": "trauma-0721",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Fratura do úmero proximal"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 119,
+      "pagina": 30,
+      "id": "tumores-0240",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Cisto ósseo simples",
+          "Cisto ósseo aneurismático"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 120,
+      "pagina": 30,
+      "id": "tumores-0241",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Tumor de células gigantes"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 121,
+      "pagina": 30,
+      "id": "trauma-0722",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Fratura da cabeça do rádio e instabilidade do cotovelo"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 122,
+      "pagina": 31,
+      "id": "ombro-cotovelo-0569",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "B",
+      "respostaProvavel": "B",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 123,
+      "pagina": 31,
+      "id": "ombro-cotovelo-0570",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "A",
+      "respostaProvavel": "A",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 124,
+      "pagina": 31,
+      "id": "pediatria-0310",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Genuvaro, genuvalgo e torções"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 125,
+      "pagina": 31,
+      "id": "pediatria-0925",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "B",
+      "respostaProvavel": "B",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 126,
+      "pagina": 32,
+      "id": "pediatria-0926",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "A",
+      "respostaProvavel": "A",
+      "alerta": "Gabarito do material: A. A tolerância de 40° aos 5 anos varia entre referências; translação e bloqueio de rotação não foram informados. Não aplicar essa resposta como limite universal.",
+      "figuraPendente": false
+    },
+    {
+      "numero": 127,
+      "pagina": 32,
+      "id": "pediatria-0311",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Desenvolvimento neuropsicomotor",
+          "Genuvaro, genuvalgo e torções"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 128,
+      "pagina": 32,
+      "id": "pediatria-0312",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Genuvaro, genuvalgo e torções"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 129,
+      "pagina": 32,
+      "id": "pe-tornozelo-0224",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Pé plano flexível"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 130,
+      "pagina": 32,
+      "id": "pediatria-0313",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Osteogênese imperfeita"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 131,
+      "pagina": 33,
+      "id": "trauma-0723",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Fraturas expostas"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 132,
+      "pagina": 33,
+      "id": "pe-tornozelo-0225",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Metatarsalgia e neuroma de Morton"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 133,
+      "pagina": 33,
+      "id": "coluna-0203",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Exame neurológico e radiculopatias"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 134,
+      "pagina": 34,
+      "id": "coluna-0204",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Outros temas da coluna",
+          "Escoliose idiopática"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 135,
+      "pagina": 34,
+      "id": "coluna-0205",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Espondilólise e espondilolistese"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 136,
+      "pagina": 34,
+      "id": "coluna-0206",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Anatomia da coluna"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 137,
+      "pagina": 34,
+      "id": "coluna-0207",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Hérnia de disco lombar",
+          "Exame neurológico e radiculopatias"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 138,
+      "pagina": 34,
+      "id": "trauma-0724",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Fraturas da coluna toracolombar"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 139,
+      "pagina": 35,
+      "id": "trauma-0725",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Fraturas da coluna toracolombar"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 140,
+      "pagina": 35,
+      "id": "coluna-0208",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Anatomia da coluna"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 141,
+      "pagina": 35,
+      "id": "coluna-0209",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Anatomia da coluna"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 142,
+      "pagina": 35,
+      "id": "pediatria-0315",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Displasia do desenvolvimento do quadril"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 143,
+      "pagina": 36,
+      "id": "quadril-0175",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Impacto femoroacetabular",
+          "Imagem do quadril"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 144,
+      "pagina": 36,
+      "id": "trauma-0726",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Fratura do acetábulo"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 145,
+      "pagina": 36,
+      "id": "trauma-0727",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Fratura do colo do fêmur"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 146,
+      "pagina": 36,
+      "id": "quadril-0176",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Impacto femoroacetabular",
+          "Artroscopia do quadril e lesão labral"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 147,
+      "pagina": 36,
+      "id": "quadril-0177",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Vias de acesso ao quadril"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 148,
+      "pagina": 37,
+      "id": "trauma-0728",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Fratura subtrocantérica"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 149,
+      "pagina": 37,
+      "id": "quadril-0178",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Impacto femoroacetabular"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 150,
+      "pagina": 37,
+      "id": "mao-0393",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Biomecânica da mão"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 151,
+      "pagina": 37,
+      "id": "mao-0394",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Anatomia da mão e punho",
+          "Lesões dos tendões extensores"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 152,
+      "pagina": 37,
+      "id": "mao-0395",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Lesões de nervos periféricos",
+          "Exame físico da mão e punho"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 153,
+      "pagina": 38,
+      "id": "mao-0396",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Lesões de nervos periféricos",
+          "Exame físico da mão e punho"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 154,
+      "pagina": 38,
+      "id": "mao-0397",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Doença de Dupuytren"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 155,
+      "pagina": 38,
+      "id": "mao-0398",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Deformidades dos dedos"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 156,
+      "pagina": 38,
+      "id": "mao-0399",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Doença de Kienböck"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 157,
+      "pagina": 38,
+      "id": "mao-0400",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Deformidades dos dedos",
+          "Sindactilia e polidactilia"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 158,
+      "pagina": 38,
+      "id": "pediatria-0316",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Outras doenças congênitas",
+          "Outros temas de ortopedia pediátrica"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 159,
+      "pagina": 39,
+      "id": "trauma-0729",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Fratura do rádio distal"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 160,
+      "pagina": 39,
+      "id": "trauma-0730",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Fraturas dos metacarpos e falanges"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 161,
+      "pagina": 39,
+      "id": "mao-1259",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "A",
+      "respostaProvavel": "A",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 162,
+      "pagina": 40,
+      "id": "trauma-0731",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Fratura do escafoide e do carpo"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 163,
+      "pagina": 40,
+      "id": "mao-0401",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Fibrocartilagem triangular e punho ulnar"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 164,
+      "pagina": 40,
+      "id": "mao-0402",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Lesões dos tendões flexores"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 165,
+      "pagina": 40,
+      "id": "mao-0403",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Anatomia da mão e punho"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 166,
+      "pagina": 41,
+      "id": "trauma-1292",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "D",
+      "respostaProvavel": "D",
+      "alerta": "Gabarito do material: D. A alternativa A contém uma observação também plausível sobre a limitação do perfil. O conceito decisivo é acrescentar a incidência axial, e não declarar que o traço vertical nunca aparece no AP.",
+      "figuraPendente": false
+    },
+    {
+      "numero": 167,
+      "pagina": 41,
+      "id": "joelho-0174",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Lesão do ligamento cruzado posterior"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 168,
+      "pagina": 41,
+      "id": "trauma-0732",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Fratura da diáfise da tíbia"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 169,
+      "pagina": 41,
+      "id": "joelho-0175",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Osteocondrite dissecante"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 170,
+      "pagina": 41,
+      "id": "tumores-0242",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Tumores benignos de partes moles"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 171,
+      "pagina": 41,
+      "id": "joelho-0176",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Instabilidade femoropatelar"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 172,
+      "pagina": 42,
+      "id": "joelho-0177",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Exame físico do joelho"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": true
+    },
+    {
+      "numero": 173,
+      "pagina": 42,
+      "id": "joelho-0178",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Gonartrose e osteotomias"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 174,
+      "pagina": 42,
+      "id": "conceitos-basicos-0180",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Consolidação óssea"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 175,
+      "pagina": 42,
+      "id": "conceitos-basicos-0181",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Princípios de osteossíntese"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 176,
+      "pagina": 42,
+      "id": "coluna-0210",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Coluna cervical da criança e torcicolo"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 177,
+      "pagina": 43,
+      "id": "coluna-0211",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Lesão medular e síndromes medulares",
+          "Hérnia de disco e mielopatia cervical"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 178,
+      "pagina": 43,
+      "id": "osteometabolicas-0048",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Osteoporose: diagnóstico"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 179,
+      "pagina": 43,
+      "id": "tumores-0243",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Metástases ósseas"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 180,
+      "pagina": 43,
+      "id": "tumores-0244",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Sarcoma de Ewing"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 181,
+      "pagina": 43,
+      "id": "pediatria-0318",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Mielomeningocele"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 182,
+      "pagina": 44,
+      "id": "coluna-0212",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Estenose do canal lombar"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 183,
+      "pagina": 44,
+      "id": "ombro-cotovelo-0571",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "B",
+      "respostaProvavel": "B",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 184,
+      "pagina": 44,
+      "id": "ombro-cotovelo-0572",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "D",
+      "respostaProvavel": "D",
+      "alerta": "Gabarito do material: D. A proporção de 50% é um dado didático aproximado e depende do denominador epidemiológico; não é prevalência populacional.",
+      "figuraPendente": false
+    },
+    {
+      "numero": 185,
+      "pagina": 44,
+      "id": "conceitos-basicos-0182",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Lesões musculares"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 186,
+      "pagina": 44,
+      "id": "trauma-0733",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Fratura do úmero proximal"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 187,
+      "pagina": 44,
+      "id": "trauma-0734",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Fratura da cabeça do rádio e instabilidade do cotovelo"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 188,
+      "pagina": 45,
+      "id": "ombro-cotovelo-0573",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "A",
+      "respostaProvavel": "A",
+      "alerta": "Questão ambígua: o material assinala A (>6 mm), mas C (>50% da espessura) também corresponde habitualmente ao grau III. A relação percentual depende da espessura do tendão.",
+      "figuraPendente": false
+    },
+    {
+      "numero": 189,
+      "pagina": 45,
+      "id": "trauma-0735",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Fratura da clavícula"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 190,
+      "pagina": 45,
+      "id": "ombro-cotovelo-0574",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "C",
+      "respostaProvavel": "C",
+      "alerta": "A classificação original utiliza A/B/C. O “tipo 3” do enunciado corresponde ao terceiro grupo, C; o critério atual é a localização distal à ponta da haste.",
+      "figuraPendente": false
+    },
+    {
+      "numero": 191,
+      "pagina": 45,
+      "id": "pediatria-0319",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Displasia do desenvolvimento do quadril"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 192,
+      "pagina": 45,
+      "id": "pediatria-0927",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "B",
+      "respostaProvavel": "B",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 193,
+      "pagina": 46,
+      "id": "osteometabolicas-0049",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Tuberculose osteoarticular"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 194,
+      "pagina": 46,
+      "id": "pediatria-0320",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Marcha na criança"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 195,
+      "pagina": 47,
+      "id": "pediatria-0321",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Osteocondroses",
+          "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 196,
+      "pagina": 47,
+      "id": "pediatria-0322",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Doença de Legg-Calvé-Perthes"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 197,
+      "pagina": 47,
+      "id": "pediatria-0928",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "C",
+      "respostaProvavel": "C",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 198,
+      "pagina": 47,
+      "id": "pediatria-0323",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Genuvaro, genuvalgo e torções",
+          "Pseudartrose congênita da tíbia e deformidades da perna"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 199,
+      "pagina": 47,
+      "id": "trauma-0914",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TARO",
+        "ano": 2012,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Fratura da diáfise da tíbia"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 200,
+      "pagina": 47,
+      "id": "trauma-0915",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TARO",
+        "ano": 2022,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Politrauma e controle de danos"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 201,
+      "pagina": 48,
+      "id": "trauma-0916",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Síndrome compartimental"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 202,
+      "pagina": 48,
+      "id": "trauma-0917",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TARO",
+        "ano": 2020,
+        "origem": {
+          "arquivo": "TARO-2020.pdf",
+          "pagina": 12,
+          "numeroOriginal": 34
+        },
+        "gabarito": "C",
+        "subtemas": [
+          "Síndrome compartimental"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 203,
+      "pagina": 48,
+      "id": "trauma-0918",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TARO",
+        "ano": 2013,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Fraturas da coluna cervical baixa"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 204,
+      "pagina": 48,
+      "id": "coluna-0273",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TARO",
+        "ano": 2013,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Lesão medular e síndromes medulares"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 205,
+      "pagina": 48,
+      "id": "trauma-0085",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TARO",
+        "ano": 2016,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Fratura da clavícula"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 206,
+      "pagina": 49,
+      "id": "trauma-0920",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Fratura da escápula"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 207,
+      "pagina": 49,
+      "id": "trauma-1293",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "A",
+      "respostaProvavel": "A",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 208,
+      "pagina": 49,
+      "id": "trauma-0922",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Luxação acromioclavicular"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 209,
+      "pagina": 49,
+      "id": "ombro-cotovelo-0575",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "D",
+      "respostaProvavel": "D",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 210,
+      "pagina": 49,
+      "id": "trauma-0924",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Fratura do úmero proximal"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 211,
+      "pagina": 50,
+      "id": "trauma-1294",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "C",
+      "respostaProvavel": "C",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 212,
+      "pagina": 50,
+      "id": "trauma-0926",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Fratura do úmero proximal"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 213,
+      "pagina": 50,
+      "id": "trauma-0649",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Fratura do úmero distal"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 214,
+      "pagina": 50,
+      "id": "ombro-cotovelo-0373",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Rigidez do cotovelo",
+          "Ossificação heterotópica"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 215,
+      "pagina": 50,
+      "id": "ombro-cotovelo-0374",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Instabilidade do cotovelo"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 216,
+      "pagina": 50,
+      "id": "trauma-1295",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "C",
+      "respostaProvavel": "C",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 217,
+      "pagina": 51,
+      "id": "trauma-1296",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "B",
+      "respostaProvavel": "B",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 218,
+      "pagina": 51,
+      "id": "trauma-0928",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TARO",
+        "ano": 2015,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Fraturas diafisárias do antebraço"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 219,
+      "pagina": 51,
+      "id": "trauma-0929",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TARO",
+        "ano": 2017,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Fraturas diafisárias do antebraço"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 220,
+      "pagina": 51,
+      "id": "mao-1260",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "D",
+      "respostaProvavel": "D",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 221,
+      "pagina": 52,
+      "id": "trauma-0931",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TARO",
+        "ano": 2019,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Fratura do rádio distal",
+          "Fratura da diáfise do úmero"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 222,
+      "pagina": 52,
+      "id": "trauma-0326",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT",
+        "ano": 2023,
+        "origem": {
+          "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+          "pagina": 15,
+          "numeroOriginal": 56
+        },
+        "gabarito": "B",
+        "subtemas": [
+          "Fratura do escafoide e do carpo"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 223,
+      "pagina": 52,
+      "id": "mao-1261",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "C",
+      "respostaProvavel": "C",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 224,
+      "pagina": 52,
+      "id": "mao-1262",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "A",
+      "respostaProvavel": "A",
+      "alerta": "Gabarito do material: A. Interposição do flexor profundo também é causa documentada de irredução; a literatura não demonstra uma frequência universal para todos os padrões.",
+      "figuraPendente": false
+    },
+    {
+      "numero": 225,
+      "pagina": 52,
+      "id": "mao-0328",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Lesões ligamentares dos dedos"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 226,
+      "pagina": 53,
+      "id": "trauma-0934",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TARO",
+        "ano": 2017,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Fratura do anel pélvico"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 227,
+      "pagina": 53,
+      "id": "trauma-0935",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT",
+        "ano": 2022,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Fratura do anel pélvico"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 228,
+      "pagina": 53,
+      "id": "trauma-1297",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "B",
+      "respostaProvavel": "B",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 229,
+      "pagina": 53,
+      "id": "trauma-0936",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Luxação do quadril e fratura da cabeça femoral"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 230,
+      "pagina": 53,
+      "id": "trauma-0937",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Fratura da diáfise do fêmur"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 231,
+      "pagina": 53,
+      "id": "pediatria-0583",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT",
+        "ano": 2023,
+        "origem": {
+          "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+          "pagina": 24,
+          "numeroOriginal": 97
+        },
+        "gabarito": "C",
+        "subtemas": [
+          "Fraturas do antebraço e punho na criança",
+          "Lesões fisárias"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 232,
+      "pagina": 54,
+      "id": "pediatria-0702",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT",
+        "ano": 2022,
+        "origem": {
+          "arquivo": "TEOT_2022.pdf",
+          "pagina": 49,
+          "numeroOriginal": 80
+        },
+        "gabarito": "B",
+        "subtemas": [
+          "Fraturas do antebraço e punho na criança"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 233,
+      "pagina": 54,
+      "id": "pediatria-0929",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "A",
+      "respostaProvavel": "A",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 234,
+      "pagina": 54,
+      "id": "pediatria-0930",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "A",
+      "respostaProvavel": "A",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 235,
+      "pagina": 54,
+      "id": "pediatria-0931",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "A",
+      "respostaProvavel": "A",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 236,
+      "pagina": 55,
+      "id": "pediatria-0932",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "D",
+      "respostaProvavel": "D",
+      "alerta": "Gabarito do material: D. Enunciado insuficiente: não descreve perfusão nem redução prévia. A sequência usual inclui redução urgente e reavaliação; exploração é indicada para isquemia persistente. Mão perfundida sem pulso é cenário controverso.",
+      "figuraPendente": false
+    },
+    {
+      "numero": 237,
+      "pagina": 55,
+      "id": "pediatria-0933",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "A",
+      "respostaProvavel": "A",
+      "alerta": "O material assinala A. D descreve corretamente um mecanismo possível; a distinção entre A e D depende da afirmação de frequência, que não é universal.",
+      "figuraPendente": false
+    },
+    {
+      "numero": 238,
+      "pagina": 56,
+      "id": "pediatria-0934",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "D",
+      "respostaProvavel": "D",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 239,
+      "pagina": 56,
+      "id": "pediatria-0935",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "A",
+      "respostaProvavel": "A",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 240,
+      "pagina": 56,
+      "id": "pediatria-0580",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT",
+        "ano": 2023,
+        "origem": {
+          "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+          "pagina": 22,
+          "numeroOriginal": 86
+        },
+        "gabarito": "C",
+        "subtemas": [
+          "Joelho da criança"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 241,
+      "pagina": 57,
+      "id": "pediatria-0615",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TARO",
+        "ano": 2017,
+        "origem": {
+          "arquivo": "taro2017.pdf",
+          "pagina": 12,
+          "numeroOriginal": 53
+        },
+        "gabarito": "C",
+        "subtemas": [
+          "Lesões fisárias"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 242,
+      "pagina": 57,
+      "id": "pediatria-0650",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TARO",
+        "ano": 2011,
+        "origem": {
+          "arquivo": "taro2011.pdf",
+          "pagina": 8,
+          "numeroOriginal": 40
+        },
+        "gabarito": "D",
+        "subtemas": [
+          "Lesões fisárias"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 243,
+      "pagina": 57,
+      "id": "pediatria-0718",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TARO",
+        "ano": 2020,
+        "origem": {
+          "arquivo": "TARO-2020.pdf",
+          "pagina": 12,
+          "numeroOriginal": 33
+        },
+        "gabarito": null,
+        "subtemas": [
+          "Fraturas do pé na criança"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 244,
+      "pagina": 57,
+      "id": "ombro-cotovelo-0376",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Omartrose e artroplastia do ombro"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 245,
+      "pagina": 57,
+      "id": "ombro-cotovelo-0377",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TARO",
+        "ano": 2014,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Instabilidade anterior do ombro"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 246,
+      "pagina": 58,
+      "id": "ombro-cotovelo-0378",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Omartrose e artroplastia do ombro"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 247,
+      "pagina": 58,
+      "id": "mao-0150",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT",
+        "ano": 2023,
+        "origem": {
+          "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+          "pagina": 3,
+          "numeroOriginal": 5
+        },
+        "gabarito": "D",
+        "subtemas": [
+          "Doença de Kienböck"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 248,
+      "pagina": 58,
+      "id": "coluna-0274",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TARO",
+        "ano": 2020,
+        "origem": {
+          "arquivo": "TARO-2020.pdf",
+          "pagina": 8,
+          "numeroOriginal": 19
+        },
+        "gabarito": "C",
+        "subtemas": [
+          "Exame neurológico e radiculopatias"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 249,
+      "pagina": 58,
+      "id": "coluna-0491",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "B",
+      "respostaProvavel": "B",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 250,
+      "pagina": 58,
+      "id": "quadril-0216",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Artroscopia do quadril e lesão labral"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 251,
+      "pagina": 59,
+      "id": "quadril-0644",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "B",
+      "respostaProvavel": "B",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 252,
+      "pagina": 59,
+      "id": "joelho-0244",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Artroplastia total do joelho"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 253,
+      "pagina": 59,
+      "id": "joelho-0245",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Artroplastia total do joelho"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 254,
+      "pagina": 59,
+      "id": "joelho-0341",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "A",
+      "respostaProvavel": "A",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 255,
+      "pagina": 59,
+      "id": "pe-tornozelo-0197",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Exame físico do pé e tornozelo"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 256,
+      "pagina": 60,
+      "id": "pe-tornozelo-0345",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TARO",
+        "ano": 2009,
+        "origem": {
+          "arquivo": "taro2009.pdf",
+          "pagina": 5,
+          "numeroOriginal": 17
+        },
+        "gabarito": null,
+        "subtemas": [
+          "Outros temas do pé e tornozelo"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 257,
+      "pagina": 60,
+      "id": "tumores-0387",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "C",
+      "respostaProvavel": "C",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 258,
+      "pagina": 60,
+      "id": "tumores-0070",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT",
+        "ano": 2022,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Tumor de células gigantes"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 259,
+      "pagina": 60,
+      "id": "tumores-0302",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TARO",
+        "ano": 2023,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Osteossarcoma"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 260,
+      "pagina": 60,
+      "id": "conceitos-basicos-0241",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Deformidades ósseas e alongamento"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 261,
+      "pagina": 60,
+      "id": "tumores-0136",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TARO",
+        "ano": 2023,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Outras lesões pseudotumorais"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 262,
+      "pagina": 61,
+      "id": "pediatria-0264",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TARO",
+        "ano": 2011,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Desenvolvimento neuropsicomotor",
+          "Genuvaro, genuvalgo e torções"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 263,
+      "pagina": 61,
+      "id": "quadril-0218",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Exame físico do quadril",
+          "Biomecânica e marcha"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 264,
+      "pagina": 61,
+      "id": "pediatria-0453",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT",
+        "ano": 2023,
+        "origem": {
+          "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+          "pagina": 5,
+          "numeroOriginal": 10
+        },
+        "gabarito": "B",
+        "subtemas": [
+          "Genuvaro, genuvalgo e torções"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 265,
+      "pagina": 62,
+      "id": "pediatria-0454",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TARO",
+        "ano": 2010,
+        "origem": {
+          "arquivo": "taro2010.pdf",
+          "pagina": 3,
+          "numeroOriginal": 5
+        },
+        "gabarito": "D",
+        "subtemas": [
+          "Epifisiólise proximal do fêmur"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 266,
+      "pagina": 62,
+      "id": "pediatria-0455",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TARO",
+        "ano": 2020,
+        "origem": {
+          "arquivo": "TARO-2020.pdf",
+          "pagina": 11,
+          "numeroOriginal": 28
+        },
+        "gabarito": "D",
+        "subtemas": [
+          "Epifisiólise proximal do fêmur"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 267,
+      "pagina": 62,
+      "id": "pediatria-0456",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TARO",
+        "ano": 2013,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Displasia do desenvolvimento do quadril"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 268,
+      "pagina": 62,
+      "id": "pediatria-0417",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TARO",
+        "ano": 2011,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Displasia do desenvolvimento do quadril"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 269,
+      "pagina": 62,
+      "id": "pediatria-0936",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": "Figura ausente no PDF fornecido. O material assinala C, mas não é possível validar a ordem das letras; questão sem resposta provável e com figura pendente.",
+      "figuraPendente": true
+    },
+    {
+      "numero": 270,
+      "pagina": 63,
+      "id": "pediatria-0459",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Genuvaro, genuvalgo e torções"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 271,
+      "pagina": 63,
+      "id": "pediatria-0099",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT",
+        "ano": 2022,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Sinovite transitória e artrite séptica do quadril"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 272,
+      "pagina": 63,
+      "id": "pediatria-0937",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "C",
+      "respostaProvavel": "A",
+      "alerta": "Divergência interna: material assinala C; tabela e características clínicas sustentam A. Gabarito oficial mantido vazio.",
+      "figuraPendente": false
+    },
+    {
+      "numero": 273,
+      "pagina": 64,
+      "id": "pediatria-0759",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TARO",
+        "ano": 2008,
+        "origem": {
+          "arquivo": "taro2008.pdf",
+          "pagina": 13,
+          "numeroOriginal": 80
+        },
+        "gabarito": null,
+        "subtemas": [
+          "Doença de Legg-Calvé-Perthes",
+          "Displasia do desenvolvimento do quadril"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 274,
+      "pagina": 64,
+      "id": "pediatria-0938",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "A",
+      "respostaProvavel": "A",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 275,
+      "pagina": 65,
+      "id": "pediatria-0018",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TARO",
+        "ano": 2019,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Doença de Legg-Calvé-Perthes"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 276,
+      "pagina": 65,
+      "id": "pediatria-0003",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TARO",
+        "ano": 2020,
+        "origem": {
+          "arquivo": "TARO-2020.pdf",
+          "pagina": 10,
+          "numeroOriginal": 26
+        },
+        "gabarito": "D",
+        "subtemas": [
+          "Paralisia cerebral"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 277,
+      "pagina": 65,
+      "id": "pediatria-0465",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Pé torto congênito"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 278,
+      "pagina": 65,
+      "id": "pediatria-0939",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "B",
+      "respostaProvavel": "B",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 279,
+      "pagina": 65,
+      "id": "pediatria-0467",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT",
+        "ano": 2023,
+        "origem": {
+          "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+          "pagina": 8,
+          "numeroOriginal": 24
+        },
+        "gabarito": "A",
+        "subtemas": [
+          "Pé torto congênito"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 280,
+      "pagina": 65,
+      "id": "pediatria-0715",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TARO",
+        "ano": 2020,
+        "origem": {
+          "arquivo": "TARO-2020.pdf",
+          "pagina": 5,
+          "numeroOriginal": 7
+        },
+        "gabarito": null,
+        "subtemas": [
+          "Displasia do desenvolvimento do quadril"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 281,
+      "pagina": 66,
+      "id": "pe-tornozelo-0289",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT",
+        "ano": 2022,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Pé cavo"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 282,
+      "pagina": 66,
+      "id": "pe-tornozelo-0290",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT",
+        "ano": 2023,
+        "origem": {
+          "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+          "pagina": 24,
+          "numeroOriginal": 96
+        },
+        "gabarito": "B",
+        "subtemas": [
+          "Deformidades congênitas do pé"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 283,
+      "pagina": 66,
+      "id": "pediatria-0097",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT",
+        "ano": 2022,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Maus-tratos"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 284,
+      "pagina": 66,
+      "id": "pediatria-0175",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT",
+        "ano": 2023,
+        "origem": {
+          "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+          "pagina": 13,
+          "numeroOriginal": 46
+        },
+        "gabarito": "A",
+        "subtemas": [
+          "Genuvaro, genuvalgo e torções",
+          "Pseudartrose congênita da tíbia e deformidades da perna"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 285,
+      "pagina": 66,
+      "id": "mao-1263",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "C",
+      "respostaProvavel": "C",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 286,
+      "pagina": 67,
+      "id": "pediatria-0006",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TARO",
+        "ano": 2020,
+        "origem": {
+          "arquivo": "TARO-2020.pdf",
+          "pagina": 11,
+          "numeroOriginal": 30
+        },
+        "gabarito": "C",
+        "subtemas": [
+          "Mielomeningocele"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 287,
+      "pagina": 67,
+      "id": "mao-0548",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT",
+        "ano": 2022,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Outras malformações congênitas"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 288,
+      "pagina": 67,
+      "id": "osteometabolicas-0031",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT",
+        "ano": 2023,
+        "origem": {
+          "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+          "pagina": 10,
+          "numeroOriginal": 31
+        },
+        "gabarito": "D",
+        "subtemas": [
+          "Raquitismo e osteomalácia",
+          "Hiperparatireoidismo e osteodistrofia renal"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 289,
+      "pagina": 67,
+      "id": "trauma-1298",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "A",
+      "respostaProvavel": "A",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 290,
+      "pagina": 67,
+      "id": "trauma-0939",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Fratura da clavícula"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 291,
+      "pagina": 67,
+      "id": "conceitos-basicos-0001",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TARO",
+        "ano": 2020,
+        "origem": {
+          "arquivo": "TARO-2020.pdf",
+          "pagina": 4,
+          "numeroOriginal": 3
+        },
+        "gabarito": "D",
+        "subtemas": [
+          "Pseudartrose e retardo de consolidação"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 292,
+      "pagina": 68,
+      "id": "conceitos-basicos-0243",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TARO",
+        "ano": 2020,
+        "origem": {
+          "arquivo": "TARO-2020.pdf",
+          "pagina": 14,
+          "numeroOriginal": 41
+        },
+        "gabarito": "C",
+        "subtemas": [
+          "Medicamentos e exames laboratoriais"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 293,
+      "pagina": 68,
+      "id": "conceitos-basicos-0408",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "C",
+      "respostaProvavel": "C",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 294,
+      "pagina": 68,
+      "id": "conceitos-basicos-0094",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT",
+        "ano": 2023,
+        "origem": {
+          "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+          "pagina": 10,
+          "numeroOriginal": 32
+        },
+        "gabarito": "C",
+        "subtemas": [
+          "Dor e analgesia"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 295,
+      "pagina": 68,
+      "id": "conceitos-basicos-0409",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "A",
+      "respostaProvavel": "A",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 296,
+      "pagina": 68,
+      "id": "conceitos-basicos-0410",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "A",
+      "respostaProvavel": "A",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 297,
+      "pagina": 69,
+      "id": "ombro-cotovelo-0379",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Anatomia do ombro"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 298,
+      "pagina": 70,
+      "id": "joelho-0342",
+      "nova": true,
+      "metadataAnterior": null,
+      "respostaMaterial": "C",
+      "respostaProvavel": "C",
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 299,
+      "pagina": 70,
+      "id": "mao-0549",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Anatomia da mão e punho"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 300,
+      "pagina": 70,
+      "id": "mao-0550",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Anatomia da mão e punho",
+          "Outros temas da mão"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 301,
+      "pagina": 70,
+      "id": "mao-0151",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT",
+        "ano": 2023,
+        "origem": {
+          "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+          "pagina": 5,
+          "numeroOriginal": 11
+        },
+        "gabarito": "B",
+        "subtemas": [
+          "Exame físico da mão e punho"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 302,
+      "pagina": 70,
+      "id": "mao-0094",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Anatomia da mão e punho",
+          "Lesões dos tendões extensores"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 303,
+      "pagina": 71,
+      "id": "ombro-cotovelo-0381",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Biomecânica do ombro e cotovelo"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 304,
+      "pagina": 71,
+      "id": "ombro-cotovelo-0382",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TARO",
+        "ano": 2020,
+        "origem": {
+          "arquivo": "TARO-2020.pdf",
+          "pagina": 10,
+          "numeroOriginal": 25
+        },
+        "gabarito": "B",
+        "subtemas": [
+          "Exame físico do cotovelo",
+          "Instabilidade do cotovelo"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 305,
+      "pagina": 71,
+      "id": "quadril-0007",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TARO",
+        "ano": 2018,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Anatomia do quadril"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 306,
+      "pagina": 72,
+      "id": "quadril-0219",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Anatomia do quadril"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 307,
+      "pagina": 72,
+      "id": "joelho-0248",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT",
+        "ano": 2022,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Artroplastia total do joelho",
+          "Vias de acesso ao joelho"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 308,
+      "pagina": 72,
+      "id": "joelho-0249",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "A",
+        "subtemas": [
+          "Lesão do ligamento cruzado anterior"
+        ]
+      },
+      "respostaMaterial": "A",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 309,
+      "pagina": 73,
+      "id": "joelho-0250",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Lesão do ligamento cruzado anterior"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 310,
+      "pagina": 73,
+      "id": "pe-tornozelo-0291",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "B",
+        "subtemas": [
+          "Exame físico do pé e tornozelo"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 311,
+      "pagina": 73,
+      "id": "pe-tornozelo-0292",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TARO",
+        "ano": 2020,
+        "origem": {
+          "arquivo": "TARO-2020.pdf",
+          "pagina": 4,
+          "numeroOriginal": 1
+        },
+        "gabarito": "B",
+        "subtemas": [
+          "Biomecânica e marcha",
+          "Fraturas do tornozelo e do pilão tibial"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 312,
+      "pagina": 74,
+      "id": "pe-tornozelo-0293",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT",
+        "ano": 2023,
+        "origem": {
+          "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+          "pagina": 24,
+          "numeroOriginal": 99
+        },
+        "gabarito": "C",
+        "subtemas": [
+          "Hálux valgo",
+          "Hálux rígido"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 313,
+      "pagina": 74,
+      "id": "pe-tornozelo-0294",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TARO",
+        "ano": 2020,
+        "origem": {
+          "arquivo": "TARO-2020.pdf",
+          "pagina": 16,
+          "numeroOriginal": 48
+        },
+        "gabarito": "B",
+        "subtemas": [
+          "Artrose do tornozelo, artrodese e artroplastia",
+          "Fraturas do tornozelo e do pilão tibial"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 314,
+      "pagina": 74,
+      "id": "conceitos-basicos-0064",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT",
+        "ano": 2022,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Osteomielite aguda"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 315,
+      "pagina": 74,
+      "id": "conceitos-basicos-0249",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Osteomielite aguda"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 316,
+      "pagina": 74,
+      "id": "conceitos-basicos-0250",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "C",
+        "subtemas": [
+          "Artrite séptica",
+          "Outras infecções osteoarticulares"
+        ]
+      },
+      "respostaMaterial": "C",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 317,
+      "pagina": 74,
+      "id": "osteometabolicas-0070",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "gabarito": "D",
+        "subtemas": [
+          "Tuberculose osteoarticular",
+          "Outros temas osteometabólicos"
+        ]
+      },
+      "respostaMaterial": "D",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    },
+    {
+      "numero": 318,
+      "pagina": 75,
+      "id": "conceitos-basicos-0095",
+      "nova": false,
+      "metadataAnterior": {
+        "prova": "TEOT",
+        "ano": 2023,
+        "origem": {
+          "arquivo": "TEOT 2023 - prova teórica verde.pdf",
+          "pagina": 14,
+          "numeroOriginal": 51
+        },
+        "gabarito": "B",
+        "subtemas": [
+          "Deformidades ósseas e alongamento"
+        ]
+      },
+      "respostaMaterial": "B",
+      "respostaProvavel": null,
+      "alerta": null,
+      "figuraPendente": false
+    }
+  ],
+  "figurasNovasPendentes": [
+    269
+  ]
+}

@@ -8090,5 +8090,20 @@
   ],
   "geradoEm": "2026-10-07",
   "conferido": false
+ },
+ "quadril-0644": {
+  "conceito": "A classificação de Ficat organiza a osteonecrose por alterações radiográficas e falência estrutural. No estágio I, radiografias convencionais permanecem normais, embora exames sensíveis possam detectar necrose. No estágio II, aparecem esclerose ou cistos. Na versão subdividida utilizada pela questão, IIA conserva o contorno sem crescente; IIB inclui a fratura subcondral do crescente.\n\nO crescente representa perda de suporte subcondral e antecede ou acompanha o colapso. No estágio III há perda de esfericidade/colapso, e no estágio IV aparecem alterações degenerativas secundárias. Existem versões da classificação e sistemas distintos, como ARCO: seus números não devem ser intercambiados. Aqui a densidade alterada com contorno preservado e ausência de crescente aponta para IIA.",
+  "correta": "IIA combina alterações de densidade com preservação de esfericidade e ausência de crescente. Esse é o conjunto descrito. A avaliação prognóstica também depende da extensão e localização da necrose, pois o estágio isolado não mede toda a carga de risco.",
+  "incorretas": {
+   "A": "No estágio I, a radiografia ainda não apresenta as alterações estruturais descritas. A ressonância pode demonstrar necrose antes de alterações no raio X. A presença de mudança de densidade afasta I na versão radiográfica utilizada.",
+   "C": "IIB, na subdivisão apresentada, inclui o sinal do crescente, indicativo de fratura subcondral. O enunciado o exclui expressamente. Preservação aparente do contorno não permite ignorar um crescente quando presente, pois ele já sinaliza falência estrutural.",
+   "D": "III exige colapso ou perda da forma esférica. A questão afirma que essa forma está mantida. A diferença entre alteração de densidade e colapso é central: uma cabeça com necrose ainda sem colapso pode ter opções de preservação diferentes."
+  },
+  "referencias": [
+   "Core decompression of the osteonecrotic femoral head. https://pubmed.ncbi.nlm.nih.gov/7744892/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "provavel": "B"
  }
 }
