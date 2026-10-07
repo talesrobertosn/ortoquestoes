@@ -5543,8 +5543,8 @@
       "subtemas": [
         "Mieloma múltiplo e plasmocitoma"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "ENARE R4 Ortopedia",
+      "ano": 2023,
       "dificuldade": null,
       "enunciado": "No caso de um paciente que está em tratamento para Mieloma, quais características laboratoriais se esperam encontrar?",
       "imagens": [],
@@ -5577,7 +5577,13 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "area": "r4-enare",
+      "origem": {
+        "arquivo": "ENARE R4 do ANO 2023.pdf",
+        "pagina": 3,
+        "numeroOriginal": 4
+      }
     },
     {
       "id": "tumores-0171",
@@ -5585,8 +5591,8 @@
       "subtemas": [
         "Cordoma"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "ENARE R4 Ortopedia",
+      "ano": 2023,
       "dificuldade": null,
       "enunciado": "Em relação ao cordoma, assinale a alternativa correta.",
       "imagens": [],
@@ -5619,16 +5625,22 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "area": "r4-enare",
+      "origem": {
+        "arquivo": "ENARE R4 do ANO 2023.pdf",
+        "pagina": 5,
+        "numeroOriginal": 11
+      }
     },
     {
       "id": "tumores-0172",
       "tema": "Tumores ósseos e de partes moles",
       "subtemas": [
-        "Outras lesões pseudotumorais"
+        "Displasias esqueléticas e síndromes"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "ENARE R4 Ortopedia",
+      "ano": 2023,
       "dificuldade": null,
       "enunciado": "Na Síndrome de Morquio-Brailsford do tipo B, a deficiência é da enzima",
       "imagens": [],
@@ -5661,7 +5673,13 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "area": "r4-enare",
+      "origem": {
+        "arquivo": "ENARE R4 do ANO 2023.pdf",
+        "pagina": 5,
+        "numeroOriginal": 12
+      }
     },
     {
       "id": "tumores-0173",
@@ -5669,8 +5687,8 @@
       "subtemas": [
         "Estadiamento, biópsia e margens"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "ENARE R4 Ortopedia",
+      "ano": 2023,
       "dificuldade": null,
       "enunciado": "Familiares vem à consulta de um paciente portador de tumor ósseo e questionam a solicitação da tomografia por emissão de pósitrons (PET-CT). Ao explicar a funcionalidade desse tipo de tomografia, assinale uma informação que NÃO deve ser informada.",
       "imagens": [],
@@ -5703,7 +5721,13 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "area": "r4-enare",
+      "origem": {
+        "arquivo": "ENARE R4 do ANO 2023.pdf",
+        "pagina": 10,
+        "numeroOriginal": 37
+      }
     },
     {
       "id": "tumores-0178",
@@ -7129,7 +7153,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2025.pdf",
+        "pagina": 4,
+        "numeroOriginal": 6
+      }
     },
     {
       "id": "tumores-0246",
@@ -7167,7 +7196,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2025.pdf",
+        "pagina": 14,
+        "numeroOriginal": 37
+      }
     },
     {
       "id": "tumores-0247",
@@ -7205,7 +7239,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2025.pdf",
+        "pagina": 15,
+        "numeroOriginal": 40
+      }
     },
     {
       "id": "tumores-0248",
@@ -7213,8 +7252,8 @@
       "subtemas": [
         "Displasia fibrosa"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2025,
       "dificuldade": null,
       "enunciado": "A síndrome de Mazabraud é caracterizada pela associação entre:",
       "imagens": [],
@@ -7243,7 +7282,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2025.pdf",
+        "pagina": 20,
+        "numeroOriginal": 53
+      }
     },
     {
       "id": "tumores-0249",
@@ -7281,7 +7325,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2025.pdf",
+        "pagina": 21,
+        "numeroOriginal": 57
+      }
     },
     {
       "id": "tumores-0250",
@@ -7320,7 +7369,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2025.pdf",
+        "pagina": 30,
+        "numeroOriginal": 80
+      }
     },
     {
       "id": "tumores-0251",
@@ -7358,7 +7412,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2025.pdf",
+        "pagina": 34,
+        "numeroOriginal": 92
+      }
     },
     {
       "id": "tumores-0252",

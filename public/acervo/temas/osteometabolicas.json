@@ -1309,8 +1309,8 @@
       "subtemas": [
         "Osteoporose: diagnóstico"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "ENARE R4 Ortopedia",
+      "ano": 2023,
       "dificuldade": null,
       "enunciado": "Assinale a alternativa que apresenta apenas fatores de risco genéticos e biológicos para Osteoporose.",
       "imagens": [],
@@ -1343,7 +1343,13 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "area": "r4-enare",
+      "origem": {
+        "arquivo": "ENARE R4 do ANO 2023.pdf",
+        "pagina": 3,
+        "numeroOriginal": 3
+      }
     },
     {
       "id": "osteometabolicas-0035",
@@ -1351,8 +1357,8 @@
       "subtemas": [
         "Osteoporose: diagnóstico"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "ENARE R4 Ortopedia",
+      "ano": 2023,
       "dificuldade": null,
       "enunciado": "Assinale a alternativa que apresenta apenas fatores de risco comportamentais para Osteoporose.",
       "imagens": [],
@@ -1385,16 +1391,22 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "area": "r4-enare",
+      "origem": {
+        "arquivo": "ENARE R4 do ANO 2023.pdf",
+        "pagina": 4,
+        "numeroOriginal": 10
+      }
     },
     {
       "id": "osteometabolicas-0036",
       "tema": "Osteometabólicas",
       "subtemas": [
-        "Espondiloartrites e outras artrites"
+        "Osteoartrose"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "ENARE R4 Ortopedia",
+      "ano": 2023,
       "dificuldade": null,
       "enunciado": "Considerando os critérios de Altman para osteoartrite, assinale a alternativa que apresenta um critério clínico.",
       "imagens": [],
@@ -1427,7 +1439,13 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "area": "r4-enare",
+      "origem": {
+        "arquivo": "ENARE R4 do ANO 2023.pdf",
+        "pagina": 6,
+        "numeroOriginal": 16
+      }
     },
     {
       "id": "osteometabolicas-0037",
@@ -1992,7 +2010,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2025.pdf",
+        "pagina": 12,
+        "numeroOriginal": 30
+      }
     },
     {
       "id": "osteometabolicas-0051",
@@ -2069,7 +2092,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2025.pdf",
+        "pagina": 29,
+        "numeroOriginal": 74
+      }
     },
     {
       "id": "osteometabolicas-0053",

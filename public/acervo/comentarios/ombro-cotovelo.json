@@ -2109,7 +2109,8 @@
   "conceito": "**Como dói o manguito.** A dor da lesão **crônica** do manguito é **surda**, mal localizada, sentida na face **lateral** do braço, perto da **inserção do deltoide**, e raramente passa do cotovelo. Pode ser contínua ou intermitente, piora com os movimentos acima da cabeça, ao pegar peso ou ao levar a mão às costas, e tem uma marca registrada: a **piora noturna**, que tira o sono e impede deitar sobre o lado afetado.\n\n**Por que dói mais à noite.** Várias explicações se somam. Deitado, perde-se a tração da gravidade que, de dia, alivia levemente o espaço subacromial. Deitar sobre o ombro comprime diretamente a bursa e o tendão. À noite, a circulação e a pressão venosa intraóssea mudam, e há o **nadir do cortisol** endógeno. E, sem distrações, a percepção da dor aumenta.\n\n**O que foge do padrão.** Dor **latejante** ou em **agulhada** sugere outros diagnósticos: inflamação aguda (como a **tendinite calcária** na fase de reabsorção, que dói intensamente), infecção, dor neuropática (radiculopatia cervical, neuropatia do supraescapular, **Parsonage-Turner**) ou tumor. Dor que desce abaixo do cotovelo com parestesia aponta para o **pescoço**. A dor **matutina** com rigidez que melhora com o movimento lembra doença inflamatória, como a **polimialgia reumática**.\n\n**O restante da história.** Idade acima de 50 anos, atividades acima da cabeça, fraqueza e, nas lesões grandes, perda de elevação ativa com passivo preservado. A **capsulite adesiva** também dói à noite, mas limita o movimento **passivo**, sobretudo a rotação externa, o que a separa do manguito.\n\n**Na prova:** lesão crônica do manguito dói de forma **surda**, contínua ou não, com piora **noturna**, na face lateral do braço.",
   "correta": "**Surda, contínua ou não, com exacerbação noturna.** É o padrão típico: dor profunda e mal localizada na face lateral do braço, que piora ao deitar pela perda da tração gravitacional, pela compressão direta e pelo ritmo do cortisol.",
   "geradoEm": "2026-09-30",
-  "conferido": false
+  "conferido": false,
+  "alerta": "Divergência de fontes: a questão 7 do arquivo ENARE R4 2023 fornecido indica B; o acervo e o comentário preexistentes indicam D. O gabarito D foi preservado até conferência de gabarito oficial da banca. A qualidade da dor, isoladamente, não deve ser usada como critério diagnóstico absoluto."
  },
  "ombro-cotovelo-0218": {
   "incorretas": {
@@ -5978,6 +5979,126 @@
   "referencias": [
    "Rockwood and Matsen's The Shoulder, 6ª ed.",
    "Campbell's Operative Orthopaedics, 14ª ed."
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false
+ },
+ "ombro-cotovelo-0559": {
+  "conceito": "Na figura, a seta 1 indica o coracobraquial e a seta 2 indica o nervo musculocutâneo em sua relação com esse músculo. O coracobraquial nasce no processo coracoide e se insere na face medial da diáfise umeral. Como termina no úmero, participa da flexão e adução do ombro, sem cruzar o cotovelo.\n\nA cabeça curta do bíceps também nasce no coracoide, formando com o coracobraquial o tendão conjunto proximal. Essa origem compartilhada explica a confusão visual, mas os músculos seguem destinos diferentes: o bíceps continua até o rádio e participa da flexão do cotovelo e da supinação.\n\nO musculocutâneo sai do fascículo lateral do plexo braquial, tipicamente perfura o coracobraquial e depois segue entre bíceps e braquial. Após fornecer ramos motores, continua como nervo cutâneo lateral do antebraço. O mediano tem outro trajeto, acompanhando o eixo vascular do braço sem ser o nervo que tipicamente perfura o coracobraquial. Existem variações, mas a imagem cobra a disposição anatômica habitual.",
+  "correta": "Coracobraquial e musculocutâneo formam o par característico demonstrado. Reconhecer a origem coracoide, a inserção umeral e a passagem do nervo pelo músculo resolve a figura. Essa relação tem aplicação cirúrgica: afastamento excessivo do tendão conjunto pode tracionar o musculocutâneo, mesmo que o nervo não esteja imediatamente visível no campo.",
+  "incorretas": {
+   "A": "A identificação do coracobraquial está correta, mas a do nervo está errada. O mediano desce no braço associado à artéria braquial e não é o elemento que tipicamente atravessa esse músculo. A opção mistura uma estrutura muscular corretamente reconhecida com um nervo cujo território funcional e percurso são diferentes.",
+   "C": "A cabeça curta do bíceps compartilha a origem coracoide, mas não corresponde ao músculo de inserção medial umeral marcado. Além disso, o mediano não fornece a inervação motora usual do bíceps. Portanto, a alternativa erra tanto a continuidade do músculo quanto o nervo relacionado à perfuração mostrada.",
+   "D": "O musculocutâneo realmente inerva o bíceps, o que torna a alternativa plausível. Contudo, inervar um músculo e perfurá-lo são relações diferentes: a passagem característica assinalada ocorre no coracobraquial. A cabeça curta segue para o ventre do bíceps e para o tendão distal, não para uma inserção na diáfise umeral."
+  },
+  "referencias": [
+   "Anatomy, Shoulder and Upper Limb, Musculocutaneous Nerve. NCBI Bookshelf. https://www.ncbi.nlm.nih.gov/books/NBK534199/",
+   "A Review of the Typical Course of the Musculocutaneous Nerve into the Coracobrachialis Muscle: Its Variability and Possible Clinical Implications. https://pubmed.ncbi.nlm.nih.gov/37933506/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false
+ },
+ "ombro-cotovelo-0560": {
+  "conceito": "O lábio glenoidal é um anel fibrocartilaginoso que amplia a profundidade da glenoide e participa da inserção capsuloligamentar. Na instabilidade anterior, a lesão pode envolver seu segmento anteroinferior, como na lesão de Bankart. Para interpretar a ressonância é necessário localizar essa margem, e não apenas reconhecer que existe uma lesão labral.\n\nO plano axial mostra diretamente as margens anterior e posterior da glenoide, a relação com a cabeça umeral e a continuidade do complexo capsulolabral. Por isso, é a resposta entre os planos apresentados. O protocolo clínico continua multiplanar: cortes coronais oblíquos e sagitais oblíquos acrescentam informações sobre manguito, musculatura, osso e outros segmentos do lábio.\n\nQuando há dúvida, a artroressonância e sequências em abdução e rotação externa, posição conhecida como ABER, podem ampliar a demonstração de algumas lesões anteroinferiores. O aumento de sensibilidade depende da técnica e não transforma qualquer ressonância axial em exame definitivo. A pergunta cobra a orientação anatômica mais útil para o lábio anterior.",
+  "correta": "O plano axial permite visualizar a margem anterior da glenoide e a separação entre lábio, cápsula e superfície óssea. Em uma lesão anteroinferior, pode demonstrar desinserção ou deslocamento do tecido labral. A resposta se apoia nessa relação espacial; a interpretação final ainda exige integrar os demais planos e o quadro clínico.",
+  "incorretas": {
+   "B": "O plano sagital é útil para outras relações, como a distribuição muscular e a morfologia da glenoide, especialmente em reconstruções adequadas. Entretanto, não é o plano convencional que melhor separa lábio anterior e posterior ao longo da margem articular. O nome do plano deve ser relacionado à estrutura que ele atravessa.",
+   "C": "O coronal oferece boa visão do eixo superior-inferior do ombro, mas a lesão perguntada é anterior. A avaliação do lábio superior não deve ser confundida com a do segmento anteroinferior. Embora o coronal possa mostrar achados complementares, a demonstração direta desse território favorece os cortes axiais.",
+   "D": "O coronal oblíquo é orientado para estudar o manguito e estruturas superiores, incluindo a região do lábio superior e o complexo bicipital. Ele integra o protocolo, mas não substitui o axial para a margem anterior. A presença de cortes oblíquos no protocolo não significa que qualquer plano oblíquo tenha a mesma finalidade."
+  },
+  "referencias": [
+   "Comparison between conventional MR arthrography and abduction and external rotation MR arthrography in revealing tears of the antero-inferior glenoid labrum. https://pubmed.ncbi.nlm.nih.gov/11754329/",
+   "Using abduction and external rotation of the shoulder to increase the sensitivity of MR arthrography in revealing tears of the anterior glenoid labrum. https://pubmed.ncbi.nlm.nih.gov/9275908/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false
+ },
+ "ombro-cotovelo-0561": {
+  "conceito": "A secção transversal proximal do braço mostra a veia cefálica na região anterior e lateral, próxima ao intervalo deltopeitoral. A outra seta marca o peitoral maior, estrutura anterior que se dirige à inserção umeral. A orientação do corte deve ser estabelecida antes de atribuir nomes às estruturas.\n\nA veia cefálica segue no lado lateral do membro superior e ascende pelo sulco entre deltoide e peitoral maior antes de desembocar na circulação profunda. A basílica segue predominantemente pelo lado medial do braço. Assim, as duas não são intercambiáveis apenas porque ambas são superficiais.\n\nO bíceps ocupa o compartimento anterior do braço, mas na figura o músculo indicado é a estrutura anterior relacionada ao sulco deltopeitoral e à inserção do peitoral. A questão combina identificação vascular e muscular: acertar uma delas não basta. Essa relação também explica por que a veia cefálica é um reparo anatômico importante no acesso deltopeitoral ao ombro.",
+  "correta": "Veia cefálica e peitoral maior correspondem aos elementos marcados. A cefálica é reconhecida por sua posição no corredor deltopeitoral; o peitoral forma o limite medial desse intervalo. A interpretação reúne posição relativa, profundidade e continuidade muscular, evitando depender apenas do tamanho ou da cor do desenho.",
+  "incorretas": {
+   "B": "O peitoral maior está corretamente identificado, mas a veia basílica pertence ao trajeto superficial medial do braço. Ela não é a veia característica do sulco deltopeitoral. A opção explora a confusão entre as duas principais veias superficiais; lateral e medial são referências fundamentais para diferenciá-las.",
+   "C": "A cefálica está correta, porém a segunda seta não marca o bíceps. O bíceps se dispõe no compartimento anterior e segue para um tendão distal no rádio. Na secção proximal apresentada, a posição do músculo em relação ao sulco deltopeitoral identifica o peitoral maior e afasta esta opção.",
+   "D": "A alternativa erra ambos os componentes. A basílica não ocupa o corredor deltopeitoral, e o músculo indicado não é o ventre do bíceps. Para resolver cortes anatômicos, estabeleça primeiro os lados medial e lateral, depois identifique os planos musculares e só então nomeie vasos pequenos."
+  },
+  "referencias": [
+   "AO Surgery Reference. Deltopectoral approach to the proximal humerus. https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-humerus/approach/deltopectoral-approach-to-the-proximal-humerus",
+   "The clinical anatomy of the cephalic vein in the deltopectoral triangle. https://pubmed.ncbi.nlm.nih.gov/18335417/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false
+ },
+ "ombro-cotovelo-0562": {
+  "conceito": "Apesar do nome cotovelo do tenista, a epicondilite lateral não depende de praticar tênis. O quadro é frequentemente uma tendinopatia da origem extensora, sobretudo do extensor radial curto do carpo, relacionada a cargas repetidas de preensão e extensão do punho. No processo crônico, degeneração tendínea é um conceito mais adequado do que presumir inflamação aguda persistente.\n\nA apresentação clássica da prova é em não atletas na quarta e quinta décadas. Atividades ocupacionais e domésticas também exigem preensão, levantamento de objetos e estabilização do punho. Estudos em trabalhadores demonstram associação com esforços vigorosos e determinadas exposições biomecânicas, o que ajuda a compreender por que a doença é comum fora do esporte.\n\nA dor sobre a origem extensora pode ser reproduzida por extensão resistida do punho ou preensão. O diagnóstico diferencial inclui síndrome do túnel radial, doença articular e dor referida. Idade e atividade orientam a probabilidade, mas não excluem doença em pacientes mais jovens ou atletas. A questão é epidemiológica, não um critério diagnóstico absoluto.",
+  "correta": "Não atletas na quarta e quinta décadas corresponde ao padrão cobrado. A exposição repetida dos extensores durante preensão e tarefas manuais explica a presença de muitos casos ocupacionais. A resposta descreve uma distribuição epidemiológica: não permite concluir que a ausência de esporte ou a idade sejam causas suficientes por si mesmas.",
+  "incorretas": {
+   "A": "A faixa etária se aproxima do perfil clássico, mas restringir o grupo predominante a atletas é o erro. O uso esportivo pode provocar a tendinopatia, porém cargas do trabalho e da vida diária também são suficientes. O epônimo cotovelo do tenista não descreve a maioria dos casos como uma doença exclusivamente esportiva.",
+   "B": "A alternativa erra tanto o grupo predominante quanto a faixa etária clássica. Um atleta jovem pode ter dor lateral no cotovelo, mas outras hipóteses também precisam ser consideradas conforme modalidade e mecanismo. A questão pede onde a epicondilite é mais frequente, e não onde ela é possível.",
+   "D": "O grupo de não atletas é adequado, mas a segunda e terceira décadas não representam a faixa clássica mais frequente. A carga acumulada e alterações do tecido tendíneo ajudam a entender a apresentação em adultos de meia-idade. O erro está no momento de maior frequência, não na possibilidade de ocorrer em jovens."
+  },
+  "referencias": [
+   "Quantitative exposure-response relations between physical workload and prevalence of lateral epicondylitis in a working population. https://pubmed.ncbi.nlm.nih.gov/19347903/",
+   "Epidemiology of lateral and medial epicondylitis in a military population. https://pubmed.ncbi.nlm.nih.gov/20486505/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false
+ },
+ "ombro-cotovelo-0563": {
+  "conceito": "O lábio glenoidal tem funções diferentes conforme o território. A linha entre três e nove horas divide a glenoide em regiões superior e inferior. Superiormente, o complexo bicipitolabral e as lesões SLAP, lesões superiores que se estendem de anterior para posterior, podem coexistir com doença do manguito rotador. Inferiormente, o complexo capsulolabral tem relação fundamental com a estabilidade, especialmente nas lesões anteroinferiores de Bankart.\n\nA prova usa essa divisão como associação clínica predominante: acima do equador, manguito; abaixo, instabilidade. Isso é uma orientação, não uma lei anatômica. Lesões superiores também podem ocorrer em atletas de arremesso ou junto de instabilidade. Além disso, alterações labrais na ressonância tornam-se mais comuns com a idade e nem sempre explicam os sintomas.\n\nNa prática, deve-se integrar a localização da lesão, a idade, o exame e a presença de ruptura do manguito. Encontrar uma alteração superior não significa que ela deva ser reparada automaticamente. A questão pede a associação mais frequente segundo o esquema apresentado, sem oferecer dados para indicar uma cirurgia.",
+  "correta": "Lesão do manguito rotador é a associação escolhida pela prova para o território superior. Estudos de pacientes com lesões concomitantes do manguito e SLAP confirmam a coexistência, especialmente em grupos mais velhos. Essa associação orienta o raciocínio, mas não prova causalidade nem determina que todo achado superior seja sintomático ou precise de reparo.",
+  "incorretas": {
+   "A": "A tendinite calcária costuma envolver depósitos nos tendões do manguito, mas não é a associação definidora da divisão labral em superior e inferior. O fato de ocorrer no mesmo ombro não explica o critério geométrico da pergunta. A alternativa usa uma doença tendínea específica onde a banca cobra a categoria mais ampla de lesão do manguito.",
+   "B": "A artrose glenoumeral pode acompanhar degeneração do lábio, porém envolve a cartilagem e o conjunto da articulação. A distribuição acima da linha equatorial não a torna a associação predominante específica cobrada. Não se deve confundir qualquer alteração degenerativa labral com osteoartrose clinicamente relevante.",
+   "C": "Instabilidade é uma relação clássica das lesões capsulolabrais anteroinferiores, abaixo do equador. Lesões SLAP podem coexistir com instabilidade, portanto a frase não é impossível em todos os contextos. Contudo, o esquema da questão reserva a associação predominante acima da linha para o manguito e distingue os territórios."
+  },
+  "referencias": [
+   "Arthroscopic treatment of concomitant superior labral anterior posterior (SLAP) lesions and rotator cuff tears in patients over the age of 45 years. https://pubmed.ncbi.nlm.nih.gov/19364887/",
+   "Imaging-Based Prevalence of Superior Labral Anterior-Posterior Tears Significantly Increases in the Aging Shoulder. https://pubmed.ncbi.nlm.nih.gov/30238014/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false
+ },
+ "ombro-cotovelo-0564": {
+  "conceito": "As setas acompanham um ramo que sai do plexo braquial em direção ao compartimento anterior do braço, no trajeto do musculocutâneo. Ele nasce do fascículo lateral e segue para o coracobraquial, bíceps e braquial. Sua continuação sensitiva é o nervo cutâneo lateral do antebraço.\n\nO reconhecimento em uma dissecção exige seguir continuidade e destino. O mediano se forma pela união de raízes dos fascículos lateral e medial e acompanha o eixo vascular do braço. O ulnar segue medialmente e passa atrás do epicôndilo medial. O radial, proveniente do fascículo posterior, dirige-se ao compartimento posterior e ao sulco do úmero.\n\nA questão não pode ser resolvida apenas associando cor amarela a nervo ou pela posição de uma seta isolada. As duas setas ajudam a seguir o mesmo trajeto. Essa anatomia também explica déficits: perda de flexão e supinação pode ocorrer em lesão musculocutânea, enquanto as funções distais da mão dependem principalmente dos outros ramos terminais.",
+  "correta": "O musculocutâneo corresponde ao trajeto indicado em direção ao coracobraquial e ao compartimento anterior. Sua inervação de bíceps e braquial e a continuação cutânea lateral no antebraço compõem um mapa funcional coerente com a anatomia. Na dissecção, seguir o ramo é mais confiável que reconhecer apenas uma posição aproximada.",
+  "incorretas": {
+   "A": "O ulnar segue pelo lado medial do braço e depois pela região posterior ao epicôndilo medial. Seu território distal inclui interósseos e outros músculos intrínsecos da mão. Ele não é o ramo que penetra o compartimento anterior em direção ao coracobraquial indicado na dissecção.",
+   "B": "O radial origina-se do fascículo posterior e passa para o compartimento posterior, relacionado ao úmero e ao aparelho extensor. Na figura, o percurso anterior assinalado afasta essa identificação. A distinção exige observar o destino anatômico do ramo, porque todos os ramos terminais estão próximos na axila.",
+   "C": "O mediano é reconhecido pela contribuição de duas raízes e por acompanhar o eixo braquial rumo ao antebraço. Não é o ramo motor habitual do coracobraquial e do bíceps. A alternativa explora a proximidade no plexo, mas origem, continuidade e alvo muscular distinguem mediano de musculocutâneo."
+  },
+  "referencias": [
+   "A Review of the Typical Course of the Musculocutaneous Nerve into the Coracobrachialis Muscle: Its Variability and Possible Clinical Implications. https://pubmed.ncbi.nlm.nih.gov/37933506/",
+   "UCSF Department of Orthopaedic Surgery. Ortho Anatomy Core, deltopectoral approach and conjoint tendon. https://orthosurgery.ucsf.edu/igot/ucsf-ortho-anatomy-core"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false
+ },
+ "ombro-cotovelo-0565": {
+  "conceito": "O manguito rotador estabiliza dinamicamente a cabeça umeral. Uma ruptura anterossuperior envolve o componente anterior, especialmente o subescapular, associado em diferentes extensões ao supraespinhal. A perda desse componente compromete a rotação interna e o equilíbrio de forças que mantém a cabeça centrada na glenoide.\n\nNa transferência tendinosa, um músculo funcional é redirecionado para substituir parte da ação perdida. Para a lesão anterossuperior irreparável, a resposta clássica entre as opções é o peitoral maior, um rotador interno que pode ser transferido para compensar a deficiência anterior. Já o grande dorsal é classicamente lembrado para rupturas posterosuperiores, situação funcional diferente.\n\nIrreparabilidade não se define apenas por tamanho: retração, infiltração gordurosa, qualidade do tendão e possibilidade de mobilização importam. A escolha atual também depende de artropatia, centralização da cabeça, idade, demanda e alternativas de reconstrução ou artroplastia. O texto usa enxerto, mas descreve funcionalmente uma transferência tendinosa, que mantém uma unidade musculotendínea ativa. O gabarito não deve ser aplicado como escolha universal para todo ombro irreparável.",
+  "correta": "O peitoral maior pode ser transferido para compensar a deficiência do subescapular e do setor anterossuperior. Sua função de rotação interna fornece o fundamento biomecânico da escolha. Os resultados dependem de seleção, técnica e estado articular; cabeça descentralizada e artropatia avançada limitam a aplicação dessa solução.",
+  "incorretas": {
+   "A": "O grande dorsal é uma opção clássica para lesões irreparáveis posterosuperiores, com seleção apropriada do subescapular e dos demais estabilizadores. A pergunta trata do setor anterior, cujo déficit funcional é diferente. Existem técnicas contemporâneas para outras indicações, mas elas não substituem a associação tradicional cobrada entre anterossuperior e peitoral maior.",
+   "C": "O redondo maior é rotador interno e adutor, mas não é a transferência isolada clássica escolhida nesta questão. Pode integrar outras reconstruções, por exemplo associada ao grande dorsal em situações selecionadas de deficiência de rotação externa. Compartilhar uma ação muscular não significa ter o mesmo vetor, excursão e indicação cirúrgica.",
+   "D": "O tendão conjunto inclui a cabeça curta do bíceps e o coracobraquial. Ele participa de técnicas que têm outras finalidades, incluindo procedimentos de estabilidade do ombro. Não corresponde ao substituto ativo clássico do subescapular apresentado entre as opções. A indicação depende do problema funcional, não apenas de existir um tendão próximo."
+  },
+  "referencias": [
+   "Long-Term Outcome After Pectoralis Major Transfer for Irreparable Anterosuperior Rotator Cuff Tears. https://pubmed.ncbi.nlm.nih.gov/28145955/",
+   "Tendon transfers for irreparable rotator cuff tears: An update. https://pubmed.ncbi.nlm.nih.gov/28461910/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false
+ },
+ "ombro-cotovelo-0566": {
+  "conceito": "O tendão distal do bíceps se insere na tuberosidade radial e transmite força para flexão do cotovelo e, sobretudo, supinação. Sua ruptura completa pode passar despercebida se a deformidade for pequena ou se a aponeurose bicipital permanecer íntegra. A palpação precisa distinguir o tendão verdadeiro de outras estruturas fibrosas.\n\nNo Hook test, ou teste do gancho, o cotovelo fica fletido e o paciente realiza supinação ativa, tensionando o tendão. O examinador introduz o indicador pelo lado lateral, de lateral para medial, tentando enganchá-lo por baixo do cordão tendíneo. Não conseguir enganchar um tendão identificável sugere ruptura completa.\n\nA entrada medial pode encontrar a aponeurose bicipital, chamada lacertus fibrosus, e produzir uma falsa impressão de continuidade. A supinação passiva também não reproduz a ativação muscular padronizada. O teste não tem sensibilidade perfeita em todas as populações, especialmente em rupturas parciais ou com estruturas adjacentes preservadas; história, comparação contralateral e imagem quando indicada complementam o exame.",
+  "correta": "De lateral para medial, em supinação ativa, descreve a técnica correta. A ativação do bíceps destaca o tendão, e a entrada lateral ajuda a afastar a confusão com o lacertus medial. O resultado deve ser integrado à força, à dor e ao restante do exame, porque um teste aparentemente íntegro não exclui toda lesão parcial.",
+  "incorretas": {
+   "B": "A supinação ativa está correta, mas o acesso medial pode enganchar a aponeurose bicipital em vez do tendão distal verdadeiro. Uma aponeurose preservada pode persistir mesmo quando o tendão foi avulsionado. A direção da palpação, portanto, não é um detalhe cosmético: ela modifica a possibilidade de falso resultado tranquilizador.",
+   "C": "A direção lateral para medial é adequada, mas a técnica descrita originalmente utiliza supinação ativa. Ativação muscular torna o tendão mais reconhecível e padroniza a tensão examinada. Apenas girar o antebraço passivamente não equivale a testar a continuidade do tendão sob contração do bíceps.",
+   "D": "A alternativa erra a direção e a forma de supinação. A entrada medial favorece confusão com o lacertus, e a supinação passiva reduz a padronização da tensão tendínea. A combinação pode produzir palpação de uma estrutura fibrosa sem demonstrar que ela seja o tendão distal funcional que a prova pretende avaliar."
+  },
+  "referencias": [
+   "O’Driscoll SW et al. The hook test for distal biceps tendon avulsion. https://pubmed.ncbi.nlm.nih.gov/17687121/",
+   "Distal biceps hook test: sensitivity in acute and chronic tears and ability to predict the need for graft reconstruction. https://pmc.ncbi.nlm.nih.gov/articles/PMC7400716/"
   ],
   "geradoEm": "2026-10-07",
   "conferido": false

@@ -6269,5 +6269,36 @@
   ],
   "geradoEm": "2026-10-05",
   "conferido": false
+ },
+ "coluna-0488": {
+  "conceito": "O líquido cefalorraquidiano é produzido principalmente pelo plexo coroide por mecanismos de transporte iônico e água. A anidrase carbônica participa da disponibilidade de bicarbonato necessária a esse processo. A acetazolamida inibe essa enzima e reduz a produção liquórica, motivo pelo qual é descrita como um recurso de redução de fluxo após algumas lesões durais.\n\nA expressão dreno químico é figurativa: o medicamento reduz produção, não retira líquido por um tubo e não fecha o defeito da dura-máter. Uma durotomia durante cirurgia da coluna exige avaliação da possibilidade de reparo e do controle da fuga. Fístula persistente, pseudomeningocele e infecção são problemas que não se resolvem apenas identificando o mecanismo farmacológico.\n\nO mecanismo pedido é bem estabelecido, mas a eficácia clínica como adjuvante pós-operatório não é igualmente demonstrada. Um ensaio randomizado em cirurgia da coluna não encontrou redução estatisticamente significativa da fuga liquórica com o uso estudado. Portanto, acertar a alternativa não autoriza prescrição rotineira ou substituir reparo dural por tratamento medicamentoso.",
+  "correta": "Acetazolamida corresponde ao inibidor da anidrase carbônica descrito. A redução da produção liquórica é o fundamento da resposta. Entretanto, o benefício clínico depende do contexto e permanece incerto após algumas lesões durais espinhais; sua utilização deve ser individualizada e não substitui o manejo do defeito anatômico.",
+  "incorretas": {
+   "A": "Naloxona é antagonista de receptores opioides e pode reverter depressão respiratória provocada por esses fármacos. Não é um inibidor da anidrase carbônica usado para reduzir a secreção do plexo coroide. A alternativa explora a familiaridade com um medicamento do ambiente perioperatório, mas seu alvo farmacológico é outro.",
+   "B": "Ibuprofeno é um anti-inflamatório não esteroidal que atua por inibição das ciclo-oxigenases. Pode ter papel analgésico em contextos selecionados, mas não corresponde ao mecanismo de redução liquórica perguntado. O controle da dor depois de uma cirurgia e o controle de uma fístula liquórica são objetivos distintos.",
+   "C": "Acetaminofeno, ou paracetamol, é um analgésico e antipirético. A semelhança inicial do nome com acetazolamida não significa ação farmacológica semelhante. Ele não é o fármaco que inibe anidrase carbônica no plexo coroide para reduzir a produção de líquido cefalorraquidiano."
+  },
+  "referencias": [
+   "Investigating acetazolamide effectiveness on CSF leak in adult patients after spinal surgery. https://pubmed.ncbi.nlm.nih.gov/35811251/",
+   "Acetazolamide, Short Bed Rest, and Subfascial Off-Suction Drainage in Preventing Persistent Spinal Fluid Leaks from Incidental Dural Tears. https://pubmed.ncbi.nlm.nih.gov/36693410/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "alerta": "A questão cobra o mecanismo farmacológico da acetazolamida. O gabarito não deve ser interpretado como recomendação universal: a evidência de benefício clínico após lesão dural na coluna é limitada e inclui ensaio randomizado sem diferença significativa."
+ },
+ "coluna-0489": {
+  "conceito": "Espondilolistese é o deslizamento de uma vértebra em relação à adjacente. A classificação de Wiltse, Newman e Macnab organiza as causas, enquanto Meyerding quantifica a magnitude do deslizamento. Confundir etiologia com percentual de deslocamento é uma armadilha frequente.\n\nNo esquema, a alteração do arco posterior na região da pars interarticularis acompanha o deslizamento, correspondendo ao tipo ístmico. A pars é a ponte óssea entre os processos articulares superior e inferior. Sua falha ou alongamento compromete a continuidade do arco e pode permitir o deslocamento anterior do segmento vertebral.\n\nNo tipo displásico, o problema primário está no desenvolvimento da junção lombossacra. No degenerativo, ocorre falha do conjunto disco-facetas com pars preservada. No traumático, a fratura causal está em outra região do arco posterior: uma fratura aguda da própria pars continua incluída no grupo ístmico dessa classificação. Esse último detalhe mostra por que a palavra trauma, isoladamente, não define o tipo IV.",
+  "correta": "Ístmico é o tipo relacionado à alteração da pars interarticularis representada. O grupo inclui lise por fadiga, alongamento após repetidas lesões e fratura aguda da pars. O nome descreve o local estrutural do problema; não estabelece, por si só, o grau de deslizamento nem uma indicação automática de artrodese.",
+  "incorretas": {
+   "B": "Displásico corresponde a alterações congênitas da articulação lombossacra, como morfologia anormal do sacro e de seus elementos posteriores. É uma causa importante na criança, mas não é o nome escolhido para o defeito ístmico mostrado. Idade e localização podem se sobrepor entre tipos, de modo que a anatomia causal é decisiva.",
+   "C": "Traumático, no sentido específico da classificação, envolve fratura posterior fora da pars. Uma lesão aguda da pars pode ser classificada como ístmica, apesar do mecanismo traumático. A alternativa explora a tendência de atribuir o nome pelo mecanismo genérico, ignorando o local da falha no arco vertebral.",
+   "D": "Degenerativo resulta da falha progressiva de disco, facetas e estabilizadores, habitualmente sem defeito da pars. Pode provocar estenose e sintomas radiculares, mas esses achados não foram apresentados como o elemento do esquema. A ponte óssea alterada é a pista para distinguir o tipo ístmico do degenerativo."
+  },
+  "referencias": [
+   "Wiltse. Treatment of spondylolisthesis and spondylolysis in children. https://pubmed.ncbi.nlm.nih.gov/1277690/",
+   "Pars Interarticularis Injury: classificação de Wiltse e subtipos. https://pubmed.ncbi.nlm.nih.gov/31424775/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false
  }
 }
