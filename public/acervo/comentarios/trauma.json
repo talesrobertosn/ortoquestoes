@@ -12879,5 +12879,22 @@
   ],
   "geradoEm": "2026-10-07",
   "conferido": false
+ },
+ "trauma-1291": {
+  "conceito": "A classificação AO Spine exige avaliar separadamente a lesão do corpo vertebral e a falha das estruturas estabilizadoras. A letra A descreve padrões de compressão; B descreve falha de uma banda de tensão; C indica deslocamento ou translação. Uma lesão B pode coexistir com uma fratura A, e ambas devem ser especificadas.\n\nNo corte sagital apresentado, a perda de relação posterior em T12-L1 e o afastamento das estruturas posteriores sustentam lesão da banda de tensão posterior. O gabarito identifica B2, padrão osteoligamentar, em vez da falha puramente transóssea de B1, a fratura de Chance clássica. O corpo de L1 tem padrão de explosão completo, A4, que envolve parede posterior e ambos os platôs, diferentemente do A3, que envolve um platô.\n\nA combinação é, portanto, T12-L1 B2 com L1 A4. B2 nomeia o segmento móvel lesado, enquanto A4 nomeia a vértebra fraturada. As imagens fornecidas são recortes sagitais; o estudo completo em todos os planos e, quando indicado, a ressonância são necessários para avaliação clínica integral. Não se deve inferir status neurológico ou um tratamento específico de uma figura sem esses dados.",
+  "correta": "T12-L1 B2 e L1 A4 reúne a lesão segmentar da banda posterior e a explosão completa do corpo vertebral. Registrar ambas impede que a fratura seja reduzida a uma lesão de compressão com estabilidade presumida. A classificação morfológica deve depois ser complementada por exame neurológico e modificadores quando aplicáveis.",
+  "incorretas": {
+   "A": "B1 exige uma falha predominantemente transóssea contínua da banda posterior; A3 descreve explosão incompleta com apenas um platô envolvido. A alternativa erra os dois componentes adotados no gabarito. Ela seria adequada para um padrão de Chance ósseo associado a lesão incompleta do corpo, que não é a combinação apresentada.",
+   "B": "A4 corresponde ao componente de explosão completa, mas B1 troca o tipo de falha posterior. A distração não deve ser chamada de B1 apenas porque existe fratura: o trajeto de falha precisa ser puramente transósseo. Quando a lesão envolve elementos capsuloligamentares da banda posterior, a categoria B2 é a pertinente.",
+   "C": "B2 identifica corretamente a falha posterior osteoligamentar. O erro é A3, que restringe a explosão a um platô. A diferença entre A3 e A4 não é apenas a quantidade de fragmentos nem a presença de déficit neurológico; é o envolvimento de um ou ambos os platôs junto à parede posterior."
+  },
+  "referencias": [
+   "AO Surgery Reference. B2 Posterior tension band disruption. https://surgeryreference.aofoundation.org/spine/trauma/thoracolumbar/b2/definition",
+   "AO Surgery Reference. A3 Incomplete burst fractures. https://surgeryreference.aofoundation.org/spine/trauma/thoracolumbar/a3/definition",
+   "AO Surgery Reference. A4 Complete burst fractures. https://surgeryreference.aofoundation.org/spine/trauma/thoracolumbar/a4",
+   "AO Spine. Thoracolumbar Injury Classification System poster. https://media.aofoundation.org/spine/-/media/project/aocd/aospine/documents/aos_injury_classification_systems_poster_thoracolumbar.pdf"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false
  }
 }

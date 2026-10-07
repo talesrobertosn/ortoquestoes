@@ -7279,7 +7279,9 @@
       "id": "joelho-0179",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do ligamento cruzado posterior"
+        "Lesão do ligamento cruzado posterior",
+        "Canto posterolateral",
+        "Gonartrose e osteotomias"
       ],
       "prova": "TEOT",
       "ano": 2025,
@@ -7311,13 +7313,19 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2025.pdf",
+        "pagina": 3,
+        "numeroOriginal": 2
+      }
     },
     {
       "id": "joelho-0180",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do ligamento cruzado anterior"
+        "Lesão do ligamento cruzado anterior",
+        "Lesões meniscais"
       ],
       "prova": "TEOT",
       "ano": 2025,
@@ -7349,7 +7357,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2025.pdf",
+        "pagina": 4,
+        "numeroOriginal": 7
+      }
     },
     {
       "id": "joelho-0181",
@@ -7387,7 +7400,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2025.pdf",
+        "pagina": 10,
+        "numeroOriginal": 21
+      }
     },
     {
       "id": "joelho-0182",
@@ -7425,7 +7443,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2025.pdf",
+        "pagina": 11,
+        "numeroOriginal": 23
+      }
     },
     {
       "id": "joelho-0183",
@@ -7433,8 +7456,8 @@
       "subtemas": [
         "Artroplastia total do joelho"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2025,
       "dificuldade": null,
       "enunciado": "Na artroplastia do joelho, o risco de paralisia do nervo fibular está relacionado à correção da deformidade acentuada combinada em:",
       "imagens": [],
@@ -7463,7 +7486,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2025.pdf",
+        "pagina": 11,
+        "numeroOriginal": 27
+      }
     },
     {
       "id": "joelho-0184",
@@ -7471,11 +7499,18 @@
       "subtemas": [
         "Anatomia do joelho"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2025,
       "dificuldade": null,
       "enunciado": "Na imagem a seguir, a estrutura assinalada pela seta é:",
-      "imagens": [],
+      "imagens": [
+        {
+          "arquivo": "joelho/joelho-0184-teot2025.jpeg",
+          "legenda": "TEOT 2025, questão 48. Figura original do arquivo fornecido.",
+          "largura": 138,
+          "altura": 259
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -7499,9 +7534,14 @@
       "comentariosComunidade": [],
       "referencias": [],
       "anulada": false,
-      "figuraPendente": true,
+      "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2025.pdf",
+        "pagina": 18,
+        "numeroOriginal": 48
+      }
     },
     {
       "id": "joelho-0185",
@@ -7509,8 +7549,8 @@
       "subtemas": [
         "Anatomia do joelho"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2025,
       "dificuldade": null,
       "enunciado": "Na imagem a seguir, a estrutura anatômica apontada pela seta é o nervo:",
       "imagens": [
@@ -7546,7 +7586,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2025.pdf",
+        "pagina": 22,
+        "numeroOriginal": 60
+      }
     },
     {
       "id": "joelho-0186",
@@ -7584,7 +7629,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2025.pdf",
+        "pagina": 26,
+        "numeroOriginal": 66
+      }
     },
     {
       "id": "joelho-0187",
@@ -7592,8 +7642,8 @@
       "subtemas": [
         "Anatomia do joelho"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2025,
       "dificuldade": null,
       "enunciado": "Na imagem a seguir, a artéria indicada pela seta é a:",
       "imagens": [
@@ -7629,7 +7679,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2025.pdf",
+        "pagina": 39,
+        "numeroOriginal": 100
+      }
     },
     {
       "id": "joelho-0188",
@@ -7642,7 +7697,14 @@
       "ano": 2025,
       "dificuldade": null,
       "enunciado": "Na radiografia de joelho a seguir, a seta evidencia:",
-      "imagens": [],
+      "imagens": [
+        {
+          "arquivo": "joelho/joelho-0188-teot2025.jpeg",
+          "legenda": "TEOT 2025, questão 103. Figura original do arquivo fornecido.",
+          "largura": 185,
+          "altura": 350
+        }
+      ],
       "alternativas": [
         {
           "letra": "A",
@@ -7666,16 +7728,20 @@
       "comentariosComunidade": [],
       "referencias": [],
       "anulada": false,
-      "figuraPendente": true,
+      "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2025.pdf",
+        "pagina": 40,
+        "numeroOriginal": 103
+      }
     },
     {
       "id": "joelho-0189",
       "tema": "Joelho",
       "subtemas": [
-        "Lesão do ligamento cruzado anterior",
-        "Lesão do ligamento cruzado posterior"
+        "Lesões meniscais"
       ],
       "prova": "TEOT",
       "ano": 2025,
@@ -7714,7 +7780,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2025.pdf",
+        "pagina": 40,
+        "numeroOriginal": 105
+      }
     },
     {
       "id": "joelho-0190",
@@ -7752,14 +7823,19 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2025.pdf",
+        "pagina": 43,
+        "numeroOriginal": 111
+      }
     },
     {
       "id": "joelho-0191",
       "tema": "Joelho",
       "subtemas": [
-        "Outros temas do joelho",
-        "Artroplastia total do joelho"
+        "Artroplastia total do joelho",
+        "Outras infecções osteoarticulares"
       ],
       "prova": "TEOT",
       "ano": 2025,
@@ -7791,7 +7867,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2025.pdf",
+        "pagina": 43,
+        "numeroOriginal": 114
+      }
     },
     {
       "id": "joelho-0192",
