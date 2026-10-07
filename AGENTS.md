@@ -19,3 +19,6 @@ bibliografia, leia antes
 [docs/padrao-questoes-simulado-teot-taro.md](docs/padrao-questoes-simulado-teot-taro.md):
 as questões devem ficar o mais próximas possível da prova real (diretriz do dono do projeto de
 07/10/2026), no assunto, no nível e no formato, e o comentário segue o padrão enriquecido.
+Use as ferramentas e o passo a passo de [scripts/simulados/README.md](scripts/simulados/README.md)
+e consulte e atualize os mapas da banca em
+[docs/simulados/mapas-da-banca.md](docs/simulados/mapas-da-banca.md) e as lições aprendidas do guia.

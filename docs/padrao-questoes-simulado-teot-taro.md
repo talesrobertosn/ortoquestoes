@@ -102,8 +102,41 @@ dado de estudo experimental a no máximo uma ou duas questões por lote. O capí
    número sem consequência prática, trocar por outro fato do capítulo (no máximo 1 ou 2 dessas por
    lote).
 9. Imagem quando a figura do livro permitir uma pergunta do tipo da prova (estrutura assinalada,
-   técnica demonstrada, classificação da imagem). Legenda: "Fonte: Rockwood and Green's Fractures
-   in Adults, edição, figura N (página P)". Não usar figura que entregue a resposta.
+   técnica demonstrada, classificação da imagem). Legenda (gerada pelo script): "Fonte: Rockwood
+   and Green's Fractures in Adults, 10ª ed., capítulo N, figura N-M." Recortar o painel certo e
+   tirar rótulos que entreguem a resposta; olhar o recorte antes de aplicar.
+
+## Fluxo de trabalho e ferramentas
+
+O passo a passo com os comandos está em [scripts/simulados/README.md](../scripts/simulados/README.md):
+registro do que já existe, mapa da banca, extração do capítulo (texto, legendas, figuras e mosaico),
+lotes a partir de `scripts/simulados/exemplo_lote.py`, conferência automática (`--conferir`),
+aplicação e validação. Os mapas da banca por assunto ficam em
+[docs/simulados/mapas-da-banca.md](simulados/mapas-da-banca.md) e devem ser atualizados a cada
+capítulo.
+
+## Lições aprendidas (atualizar a cada capítulo)
+
+- **Tamanho do comentário (07/10/2026).** Os capítulos aprovados 1, 2 e 4 ficaram com mediana de 4,5
+  a 5,8 mil caracteres; os seguintes caíram para 3 a 3,8 mil (24 e 25 ficaram em 3 mil). O que mais
+  encurta é a análise das alternativas: cada uma precisa de um parágrafo de verdade (o que diz, de
+  onde vem o distrator no livro, por que não serve, como diferenciar), em geral 400 a 700
+  caracteres, e não uma frase. Meta: mediana do lote de 4,5 mil ou mais; o script avisa abaixo de 4
+  mil. Conferir com `scripts/simulados/registro.py`.
+- **Subtema pertence ao tema.** "Fratura do colo do fêmur" é subtema de trauma e não de tumores;
+  o script agora lista os subtemas válidos quando erra.
+- **Só o que o capítulo diz.** Explicações de mecanismo que não estão no texto (por exemplo, por que
+  uma cortical é de tensão) devem ser evitadas ou apresentadas como consequência direta de um
+  princípio do próprio capítulo. Revisar cada lote procurando frases assim antes de aplicar.
+- **Edição do livro e banca.** A banca às vezes cobra algo de edição anterior (ALLMAN para a
+  esternoclavicular não está no Rockwood 10ª ed.; a técnica de MAZZOCCA aparece sem o nome). Usar o
+  que o capítulo atual traz e citar a questão da banca no conceito, sem afirmar o que o livro não diz.
+- **Números divergentes no próprio capítulo** (texto contra legenda): perguntar só o valor
+  inequívoco.
+- **Tabela da figura entrega a resposta.** Tabelas do livro em imagem (como a de exames
+  laboratoriais) viram questão em texto, não em figura.
+- **Gabarito.** Ordenar os pares 2 por 2 para controlar a letra e fechar o lote equilibrado (o
+  script mostra a contagem).
 
 ## Comentário
 
