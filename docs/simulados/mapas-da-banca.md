@@ -45,7 +45,7 @@ Atenção no texto do livro: as distâncias dos túneis aparecem de forma ligeir
 texto (trapezoide 15 mm lateral ao conoide, nunca a menos de 25 mm) e a legenda (20 a 25 mm).
 Perguntou-se apenas o que é inequívoco (conoide a 45 mm, túnel até 5,5 mm).
 
-## Fratura da escápula (lido em 07/10/2026; capítulo ainda não enviado)
+## Fratura da escápula (lido em 07/10/2026; Rockwood cap. 33)
 
 Recorte: subtema "Fratura da escápula" mais o regex de glenoide, acrômio, coracoide, ombro flutuante,
 escapulotorácica, IDEBERG e KUHN. 49 questões (TEOT, TARO e provas de ombro e cotovelo), sendo cerca
@@ -81,6 +81,30 @@ Fatos carimbados:
 Formato: números exatos com distratores vizinhos (20, 30, 40, 45 graus; 15, 17, 20 mm; 25, 50,
 75, 100%), epônimo mais estrutura em risco, classificação por descrição ou figura e pares de
 direção do desvio.
+
+Aproveitamento do capítulo 33 (Bartoníček; trauma-1299 a 1348, 50 questões, 3 figuras): epidemiologia,
+pilares e ângulo espinomedial, corpo biomecânico, escoras do CSSO, supraescapular e circunflexa da
+escápula, avulsões superestimadas (coracoide por impacto), Neer I e II, vistas da TC 3D, ângulo
+glenopolar (padrão 41 graus; crítico menor que 20 ou maior que 60), "medialização" que é desvio lateral
+do corpo (figura 33-26A), ADA e MILLER IIC = corpo em duas partes, GOSS III por figura, OTA/AO 14,
+os cinco padrões da glenoide (borda posterior 4%, inferior por impacto em abdução e via de JUDET,
+fenda vertical anterior, superior com limiar de 4 mm, artroscopia não serve para a inferior), os três
+colos (anatômico distal e valgo; cirúrgico com CC e CA rotos distal e medial; base do coracoide solta
+distal e valgo, figura 33-13D; transespinhal em varo com dois pilares), pilar lateral, técnica (borda
+lateral primeiro, 2 + 2, espinomedial tolerado abaixo de 5 mm), coracoide (ápice excisado, base com
+HILL), coracoide com AC, espinha medial no corpo e ângulo acromial, espinha lateral em varo com
+pseudartrose, critérios de ANAVIAN e HILL, critérios relativos (40 graus, 20 mm), subluxação na
+glenoide, conservador (2 semanas; 5 a 6 nas exceções), politrauma (esperar; 2ª ou 3ª semana), JUDET e
+DUPONT e EVRARD, clavícula depois da escápula, pós-operatório (6 a 8 semanas; manipulação com 6),
+ombro flutuante do autor, WILLIAMS, HERSCOVICI, ZELLE 3, prognóstico pelo plexo, mecanismo da
+dissociação, consolidação viciosa e os acromiale, LANTRY e ZLOWODSKI.
+
+Atenção à edição: a banca e as provas de ombro usam angulação de 45 graus e translação de 100%
+(outras fontes); o Rockwood 10ª ed. dá 40 graus e 20 mm (15 a 20 mm no quadro do algoritmo). As
+questões perguntam o número do livro e citam a banca no comentário. O índice escapular de 1,5 (TEOT
+2022) e a classificação de KUHN do acrômio (TEOT 2022) não estão neste capítulo, que usa OGAWA
+modificado. A legenda da figura 33-9 tem erro de digitação no tipo Vc (II, III e IV); a questão de
+GOSS usa só o tipo III, inequívoco na figura.
 
 Pendências no acervo: TARO 2006 a 2009 (trauma-1129, 1144, 1178) sem gabarito; duplicatas entre
 temas (trauma-0415 e ombro-cotovelo-0170; trauma-0312 e 0963; ombro-cotovelo-0102 e 0383;

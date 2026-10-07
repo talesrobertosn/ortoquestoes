@@ -136,6 +136,13 @@ capítulo.
   inequívoco.
 - **Tabela da figura entrega a resposta.** Tabelas do livro em imagem (como a de exames
   laboratoriais) viram questão em texto, não em figura.
+- **Figura com rótulo da resposta (07/10/2026, cap. 33).** Quando o painel traz o tipo escrito (por
+  exemplo, "III" no desenho de GOSS), recortar e cobrir o rótulo com branco num arquivo próprio em
+  `PASTA/img/` antes de aplicar; conferir o recorte abrindo a imagem.
+- **Mediana do comentário (cap. 33).** Os lotes saíram com mediana de 4,3 a 4,5 mil; um parágrafo a
+  mais na alternativa correta, com dado do capítulo que contextualiza (série do autor, tabela,
+  protocolo), levou o conjunto a 4,55 mil sem enchimento. Escrever esse parágrafo já na primeira
+  versão.
 - **Gabarito.** Ordenar os pares 2 por 2 para controlar a letra e fechar o lote equilibrado (o
   script mostra a contagem).
 
