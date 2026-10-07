@@ -9,6 +9,9 @@ node marketing/instagram/gerar.mjs marketing/instagram/casos/01-tcg/caso.html
 Os PNGs saem em `saida/`, ao lado do HTML (fora do git). As fontes (Plus Jakarta Sans e
 Inter, licença OFL) estão em `fontes/`.
 
+Ao entregar um post, mande também a legenda do feed como texto na conversa (além da `LEGENDA.md`):
+no celular é mais fácil de copiar.
+
 Regras da marca: sem emoji; não mencionar IA nos posts (só nos Termos e no Sobre); telas
 com dados de exemplo levam a nota "Tela ilustrativa". Não citar o número total de questões do acervo:
 o destaque é serem as questões das provas oficiais, comentadas (o número só aparece na página
