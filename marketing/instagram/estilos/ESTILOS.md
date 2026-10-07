@@ -104,6 +104,15 @@ cortiça, as alternativas são os suspeitos e a classificação é o "manual do 
 melhor com questões de imagem e classificação que reconstrói mecanismo (Lauge-Hansen, Weber,
 Salter-Harris, Neer).
 
+- **Quando serve:** a questão traz imagem; as alternativas são tipos de uma mesma
+  classificação; e cada tipo deixa uma marca que dá para ver na radiografia (traço, desvio,
+  direção da luxação). Melhores: Lauge-Hansen e Young-Burgess (ambas contam o mecanismo),
+  Salter-Harris, Schatzker, Bado, Weber. Funcionam com algum ajuste: Garden, Neer, Mason,
+  Hawkins, Sanders.
+- **Quando não serve:** conduta, epidemiologia, anatomia decorada, questão sem imagem, ou
+  alternativas que não são "suspeitos" da mesma família. Para essas, usar Plantão das 3h14 ou
+  Ache os 3 erros.
+
 - **Formato:** carrossel 1080×1350, 6 slides, fundo escuro, fita amarela de isolamento, quadro
   de cortiça e polaroides com alfinete feitos em CSS, bilhetes adesivos em Caveat. O único SVG
   é o símbolo da marca.
