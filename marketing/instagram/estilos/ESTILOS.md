@@ -97,6 +97,25 @@ estação. Feito para novidades do site (nova categoria, nova banca, novo recurs
 - **Stories:** `s1-linha` é a capa com as linhas grandes, **sem enquete**; `s2-estacoes` lista as
   estações e leva só a figurinha de **link**. Ficam no próprio `modelo.html`.
 
+## 5. Cena do crime (`posts/2026-10-08-cena-do-crime-tornozelo/`)
+
+**Ideia:** a questão vira investigação. A imagem da prova é a evidência presa num quadro de
+cortiça, as alternativas são os suspeitos e a classificação é o "manual do detetive". Funciona
+melhor com questões de imagem e classificação que reconstrói mecanismo (Lauge-Hansen, Weber,
+Salter-Harris, Neer).
+
+- **Formato:** carrossel 1080×1350, 6 slides, fundo escuro, fita amarela de isolamento, quadro
+  de cortiça e polaroides com alfinete feitos em CSS, bilhetes adesivos em Caveat. O único SVG
+  é o símbolo da marca.
+- **Estrutura:** capa com a evidência → as evidências com perguntas neutras nos bilhetes →
+  manual do detetive (a regra) → os suspeitos (enunciado real e alternativas em fichas, "comente
+  sua letra antes de arrastar") → interrogatório (por que cada errada é inocente, carimbo verde)
+  → veredito (carimbo vermelho, estágios e o que importa na prova e no plantão).
+- **Regras:** não entregar a resposta antes do slide 5; carimbos fora do texto; enunciado e
+  gabarito iguais ao acervo.
+- **Stories:** `s1-cena` (a evidência e "a investigação está no feed") de manhã e `s2-veredito`
+  à tarde; sem figurinhas nem link quando o pedido for "story normal".
+
 ## Stories semeadores (`stories/`)
 
 Um story por estilo (1080×1920), postado 1 a 2 horas antes do post correspondente: faz a

@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Cena do crime Orto Questões</title>
+<!-- Cena do crime, 08/10/2026: fratura do tornozelo pela classificação de Lauge-Hansen.
+     6 slides de feed (1080x1350) + 2 stories (1080x1920), sem figurinhas nem link.
+     Questão real: trauma-0716 (CET-PR, gabarito D, supinação-rotação externa II).
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-08-cena-do-crime-tornozelo/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Caveat; src: url(../../fontes/caveat-latin-wght-normal.woff2) format('woff2'); font-weight: 400 700; }
+:root { --verde: #14655E; --tinta: #0B3A35; --ouro: #F4CF7C; --creme: #FBF6EA; --fio: #c8332b; --cortica: #a87a4f; --papel: #f6efdf; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #222; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1350px; color: #fff; padding: 60px 70px;
+  background:
+    radial-gradient(ellipse at 50% -10%, rgba(255,226,160,.22), transparent 55%),
+    radial-gradient(circle at 1px 1px, rgba(255,255,255,.035) 1.2px, transparent 1.4px) 0 0/26px 26px,
+    linear-gradient(180deg, #14100c, #0b0907 70%); }
+section.story { height: 1920px; padding: 110px 76px; }
+
+/* Topo e rodapé */
+.topo { position: relative; z-index: 3; display: flex; justify-content: space-between; align-items: center; }
+.marca { display: flex; align-items: center; gap: 14px; font: 34px Jakarta; letter-spacing: -.02em; }
+.marca svg { width: 52px; height: 52px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; opacity: .9; }
+.cont { font: 700 24px Jakarta; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.5); }
+.rodape { position: absolute; z-index: 3; left: 70px; right: 70px; bottom: 46px; display: flex; justify-content: space-between; font: 700 24px Jakarta; color: rgba(255,255,255,.5); }
+.rodape b { color: var(--ouro); }
+
+/* Fita amarela de isolamento */
+.fita { position: absolute; z-index: 2; left: -60px; right: -60px; height: 64px; background: repeating-linear-gradient(-45deg, #f2c230 0 46px, #1b1408 46px 92px);
+  box-shadow: 0 10px 30px rgba(0,0,0,.45); display: grid; place-items: center; }
+.fita span { background: #f2c230; color: #1b1408; font: 800 26px Jakarta; letter-spacing: .32em; padding: 6px 26px; }
+
+/* Quadro de cortiça */
+.quadro { position: relative; border-radius: 22px; padding: 34px;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(0,0,0,.12) 1.5px, transparent 2px) 0 0/18px 18px,
+    radial-gradient(circle at 70% 60%, rgba(255,255,255,.08) 1.5px, transparent 2px) 0 0/23px 23px,
+    linear-gradient(135deg, #b8875a, #8e623b);
+  border: 16px solid #3a2616; box-shadow: inset 0 0 60px rgba(0,0,0,.35), 0 30px 70px rgba(0,0,0,.55); }
+
+/* Polaroide com alfinete */
+.polaroide { position: relative; background: #fbfaf6; padding: 18px 18px 64px; box-shadow: 0 18px 40px rgba(0,0,0,.45); color: #222; }
+.polaroide img { display: block; width: 100%; height: auto; filter: contrast(1.08); }
+.polaroide figcaption { position: absolute; left: 18px; right: 18px; bottom: 12px; font: 700 40px/1 Caveat; color: #1f2c5a; text-align: center; }
+.alfinete { position: absolute; z-index: 4; top: -16px; left: 50%; width: 40px; height: 40px; margin-left: -20px; border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #ff8a7a, #c8332b 55%, #7a1611); box-shadow: 0 8px 12px rgba(0,0,0,.45); }
+.alfinete.az { background: radial-gradient(circle at 35% 30%, #9fc4ff, #2a5fbf 55%, #13306a); }
+
+/* Fio vermelho */
+.fio { position: absolute; z-index: 3; height: 4px; background: var(--fio); transform-origin: 0 50%; box-shadow: 0 3px 6px rgba(0,0,0,.4); border-radius: 2px; }
+
+/* Bilhete adesivo */
+.bilhete { position: absolute; z-index: 4; background: #ffe680; color: #3a2b00; padding: 22px 26px; font: 700 40px/1.12 Caveat; box-shadow: 0 16px 30px rgba(0,0,0,.4); }
+.bilhete.rosa { background: #ffc2cf; color: #4a1222; }
+.bilhete.verde { background: #c9f0d8; color: #0f3a22; }
+
+/* Títulos */
+.eti { display: inline-block; padding: 10px 22px; border-radius: 8px; background: var(--fio); color: #fff; font: 800 22px Jakarta; letter-spacing: .18em; text-transform: uppercase; }
+h1, h2 { font-family: Jakarta; letter-spacing: -.04em; text-wrap: balance; }
+h1 { font-size: 92px; line-height: .98; }
+h2 { font-size: 64px; line-height: 1.04; }
+h1 em, h2 em { font-style: normal; color: var(--ouro); }
+.sub { font-size: 33px; line-height: 1.42; color: rgba(255,255,255,.78); text-wrap: pretty; }
+.sub b { color: #fff; }
+
+/* Ficha de suspeito */
+.suspeitos { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+.ficha { position: relative; background: var(--papel); color: #2a2218; border-radius: 6px; padding: 26px 28px 26px; box-shadow: 0 16px 34px rgba(0,0,0,.45); }
+.ficha .num { font: 800 22px Jakarta; letter-spacing: .16em; text-transform: uppercase; color: #8a7a62; }
+.ficha .letra { position: absolute; right: 22px; top: 18px; width: 70px; height: 70px; border-radius: 12px; display: grid; place-items: center; background: #2a2218; color: var(--ouro); font: 800 40px Jakarta; }
+.ficha h3 { margin-top: 10px; font: 800 38px/1.06 Jakarta; letter-spacing: -.03em; padding-right: 70px; }
+.ficha p { margin-top: 12px; font-size: 26px; line-height: 1.38; color: #4c4030; }
+.ficha p b { color: #2a2218; }
+.altura { height: 18px; margin-top: 18px; background: repeating-linear-gradient(90deg, #2a2218 0 2px, transparent 2px 22px); opacity: .25; }
+
+/* Carimbo */
+.carimbo { position: absolute; z-index: 5; padding: 8px 22px; border: 6px solid currentColor; border-radius: 10px; font: 800 34px Jakarta; letter-spacing: .14em; text-transform: uppercase; transform: rotate(-12deg); opacity: .9; mix-blend-mode: multiply; }
+.inocente { color: #1d6b45; }
+.culpado { color: #c8332b; }
+
+/* Linha do tempo SER */
+.estagios { display: grid; gap: 14px; margin-top: 22px; }
+.est { display: grid; grid-template-columns: 74px 1fr; gap: 20px; align-items: center; padding: 16px 20px; border-radius: 14px; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.1); }
+.est > b { width: 74px; height: 74px; border-radius: 14px; display: grid; place-items: center; background: rgba(255,255,255,.1); font: 800 30px Jakarta; color: rgba(255,255,255,.8); }
+.est p { font-size: 29px; line-height: 1.3; color: rgba(255,255,255,.82); }
+.est.foco { background: rgba(244,207,124,.16); border-color: rgba(244,207,124,.55); }
+.est.foco > b { background: var(--ouro); color: var(--tinta); }
+.est.foco p { color: #fff; }
+.estagios.dois { grid-template-columns: 1fr 1fr; }
+.estagios.dois .est { grid-template-columns: 74px 1fr; padding: 14px 16px; }
+.estagios.dois .est p { font-size: 26px; }
+
+.caixa { margin-top: 26px; padding: 26px 30px; border-radius: 18px; background: var(--creme); color: var(--tinta); }
+.caixa strong { font: 800 26px Jakarta; letter-spacing: .12em; text-transform: uppercase; color: var(--verde); }
+.caixa p { margin-top: 8px; font-size: 30px; line-height: 1.36; color: #23423d; }
+.caixa p b { color: var(--tinta); }
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#14655E"/><g fill="#FFFFFF" opacity=".55"><path transform="translate(13 9.5)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(11 21.2)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(13 44.6)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g><path fill="#F4CF7C" transform="translate(11 32.9)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></symbol>
+</defs></svg>
+
+<!-- 1. Capa -->
+<section id="p1-capa">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">Cena do crime · 1/6</span></div>
+  <div class="fita" style="top:170px;transform:rotate(-3deg)"><span>NÃO ULTRAPASSE</span></div>
+  <div style="margin-top:150px">
+    <span class="eti">Caso 0716 · tornozelo</span>
+    <h1 style="margin-top:22px">A fratura <em>confessa</em><br>como aconteceu.</h1>
+    <p class="sub" style="margin-top:22px;max-width:820px">Uma radiografia, quatro suspeitos e uma classificação que reconstrói o mecanismo do trauma. <b>Você consegue apontar o culpado?</b></p>
+  </div>
+  <div class="quadro" style="position:absolute;left:70px;right:70px;top:720px;bottom:120px">
+    <figure class="polaroide" style="position:absolute;left:60px;top:40px;width:330px;transform:rotate(-5deg)"><i class="alfinete"></i><img src="../../../../public/imagens/trauma/trauma-0716-2.jpeg" alt=""><figcaption>evidência 01</figcaption></figure>
+    <figure class="polaroide" style="position:absolute;left:420px;top:70px;width:330px;transform:rotate(4deg)"><i class="alfinete az"></i><img src="../../../../public/imagens/trauma/trauma-0716-1.jpeg" alt=""><figcaption>evidência 02</figcaption></figure>
+    <div class="bilhete" style="right:-20px;bottom:30px;transform:rotate(6deg);width:250px">Lauge-Hansen<br>sabe quem foi.</div>
+  </div>
+  <div class="rodape"><span>Arraste para investigar</span><b>ortoquestoes.com.br</b></div>
+</section>
+
+<!-- 2. Evidências -->
+<section id="p2-evidencias">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">As evidências · 2/6</span></div>
+  <h2 style="margin-top:46px">Antes de acusar,<br><em>olhe as provas.</em></h2>
+  <div class="quadro" style="margin-top:34px;height:880px">
+    <figure class="polaroide" style="position:absolute;left:60px;top:40px;width:360px;transform:rotate(-3deg)"><i class="alfinete"></i><img src="../../../../public/imagens/trauma/trauma-0716-2.jpeg" alt=""><figcaption>AP</figcaption></figure>
+    <figure class="polaroide" style="position:absolute;left:480px;top:60px;width:360px;transform:rotate(3deg)"><i class="alfinete az"></i><img src="../../../../public/imagens/trauma/trauma-0716-1.jpeg" alt=""><figcaption>perfil</figcaption></figure>
+    <div class="bilhete" style="left:40px;bottom:40px;transform:rotate(-4deg);width:260px">Onde quebrou a fíbula? Acima, no nível ou abaixo da sindesmose?</div>
+    <div class="bilhete rosa" style="left:330px;bottom:26px;transform:rotate(3deg);width:250px">O traço é oblíquo ou transverso?</div>
+    <div class="bilhete verde" style="right:36px;bottom:44px;transform:rotate(-2deg);width:250px">E o lado medial: maléolo e espaço claro?</div>
+  </div>
+  <div class="rodape"><span>Anote suas respostas</span><b>2/6</b></div>
+</section>
+
+<!-- 3. Método -->
+<section id="p3-metodo">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">O método · 3/6</span></div>
+  <span class="eti" style="margin-top:40px">Manual do detetive</span>
+  <h2 style="margin-top:20px">Lauge-Hansen dá<br>o nome em <em>duas palavras.</em></h2>
+  <div class="suspeitos" style="margin-top:40px">
+    <div class="ficha"><span class="num">Palavra 1</span><h3>Posição do pé</h3><p>No momento do trauma, o pé estava em <b>supinação</b> ou em <b>pronação</b>. Isso decide qual lado sofre primeiro.</p><div class="altura"></div></div>
+    <div class="ficha"><span class="num">Palavra 2</span><h3>Força que agiu</h3><p><b>Rotação externa</b>, <b>adução</b> ou <b>abdução</b> do tálus. Isso decide o desenho do traço.</p><div class="altura"></div></div>
+  </div>
+  <div class="caixa" style="margin-top:34px">
+    <strong>A pista mais forte</strong>
+    <p>Supinação começa pelo lado <b>lateral</b>, que está tenso; pronação começa pelo <b>medial</b>. Depois a lesão avança em <b>estágios</b>, sempre na mesma ordem. O traço da <b>fíbula</b> é a assinatura do criminoso:</p>
+  </div>
+  <div class="estagios dois" style="margin-top:20px">
+    <div class="est"><b>SA</b><p>transverso, <b>abaixo</b> da sindesmose</p></div>
+    <div class="est"><b>SER</b><p>oblíquo, <b>no nível</b> da sindesmose</p></div>
+    <div class="est"><b>PA</b><p>transverso ou cominutivo lateral, no nível ou acima</p></div>
+    <div class="est"><b>PER</b><p>oblíquo ou espiral, <b>acima</b> da sindesmose</p></div>
+  </div>
+  <div class="rodape"><span>Agora os suspeitos</span><b>3/6</b></div>
+</section>
+
+<!-- 4. Os suspeitos (a questão) -->
+<section id="p4-suspeitos">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">Os suspeitos · 4/6</span></div>
+  <span class="eti" style="margin-top:46px">Caiu assim · CET-PR</span>
+  <h2 style="margin-top:18px;font-size:56px">A fratura abaixo é melhor classificada por <em>Lauge-Hansen</em> como:</h2>
+  <div class="suspeitos" style="margin-top:38px">
+    <div class="ficha"><span class="num">Suspeito</span><span class="letra">A</span><h3>Pronação-<br>rotação externa III</h3><div class="altura"></div></div>
+    <div class="ficha"><span class="num">Suspeito</span><span class="letra">B</span><h3>Pronação-<br>abdução III</h3><div class="altura"></div></div>
+    <div class="ficha"><span class="num">Suspeito</span><span class="letra">C</span><h3>Supinação-<br>adução II</h3><div class="altura"></div></div>
+    <div class="ficha"><span class="num">Suspeito</span><span class="letra">D</span><h3>Supinação-<br>rotação externa II</h3><div class="altura"></div></div>
+  </div>
+  <div class="quadro" style="margin-top:34px;height:330px;padding:24px">
+    <figure class="polaroide" style="position:absolute;left:40px;top:24px;width:210px;padding:12px 12px 12px;transform:rotate(-4deg)"><i class="alfinete"></i><img src="../../../../public/imagens/trauma/trauma-0716-2.jpeg" alt=""></figure>
+    <figure class="polaroide" style="position:absolute;left:270px;top:30px;width:210px;padding:12px;transform:rotate(3deg)"><i class="alfinete az"></i><img src="../../../../public/imagens/trauma/trauma-0716-1.jpeg" alt=""></figure>
+    <div class="bilhete" style="right:40px;top:60px;transform:rotate(4deg);width:380px;font-size:46px">Comente sua letra<br>antes de arrastar.</div>
+  </div>
+  <div class="rodape"><span>Interrogatório no próximo</span><b>4/6</b></div>
+</section>
+
+<!-- 5. Interrogatório -->
+<section id="p5-interrogatorio">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">Interrogatório · 5/6</span></div>
+  <h2 style="margin-top:46px">Três suspeitos têm <em>álibi.</em></h2>
+  <div style="display:grid;gap:24px;margin-top:38px">
+    <div class="ficha"><span class="letra">A</span><span class="num">Pronação-rotação externa III</span><h3>Começa pelo lado medial</h3><p>A fíbula quebra <b>alta</b>, acima da sindesmose (Weber C), e a sindesmose rompe junto. Aqui o traço está <b>no nível</b> da sindesmose.</p><span class="carimbo inocente" style="right:112px;top:20px;font-size:24px;transform:rotate(-7deg)">Inocente</span></div>
+    <div class="ficha"><span class="letra">B</span><span class="num">Pronação-abdução III</span><h3>Deixaria um traço transverso</h3><p>A abdução produz fratura <b>transversa ou cominutiva</b> da fíbula, com cunha lateral, e lesão medial antes dela. Aqui o traço é <b>oblíquo</b> e o medial está íntegro.</p><span class="carimbo inocente" style="right:112px;top:20px;font-size:24px;transform:rotate(-7deg)">Inocente</span></div>
+    <div class="ficha"><span class="letra">C</span><span class="num">Supinação-adução II</span><h3>Quebraria baixo e no medial</h3><p>A adução faz fratura <b>transversa abaixo</b> da sindesmose (Weber A) e, no estágio II, fratura <b>vertical</b> do maléolo medial. Nada disso aparece.</p><span class="carimbo inocente" style="right:112px;top:20px;font-size:24px;transform:rotate(-7deg)">Inocente</span></div>
+  </div>
+  <div class="bilhete" style="left:110px;top:1050px;transform:rotate(-3deg);width:560px;font-size:44px">O desenho do traço na fíbula já descarta três suspeitos.</div>
+  <div class="rodape"><span>O veredito no último slide</span><b>5/6</b></div>
+</section>
+
+<!-- 6. Veredito -->
+<section id="p6-veredito">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">Veredito · 6/6</span></div>
+  <div class="ficha" style="margin-top:44px;padding:30px 34px">
+    <span class="letra">D</span><span class="num">Culpado</span>
+    <h3 style="font-size:50px">Supinação-rotação externa II</h3>
+    <p style="max-width:590px">Fíbula <b>oblíqua</b>, de anteroinferior para posterossuperior, <b>no nível da sindesmose</b>, com o lado medial íntegro. É o padrão mais comum de todos.</p>
+    <span class="carimbo culpado" style="right:34px;bottom:26px;font-size:36px">Culpado</span>
+  </div>
+  <p class="sub" style="margin-top:28px;font-size:30px"><b>A ficha completa da SER:</b> a lesão anda de lateral para medial, por trás.</p>
+  <div class="estagios dois">
+    <div class="est"><b>I</b><p>Ligamento tibiofibular <b>anteroinferior</b> rompe</p></div>
+    <div class="est foco"><b>II</b><p>Fratura <b>oblíqua da fíbula</b> na sindesmose (Weber B)</p></div>
+    <div class="est"><b>III</b><p>Ligamento posterior ou <b>maléolo posterior</b></p></div>
+    <div class="est"><b>IV</b><p><b>Maléolo medial</b> ou ligamento deltoide</p></div>
+  </div>
+  <div class="caixa">
+    <strong>Na prova e no plantão</strong>
+    <p>Fíbula oblíqua isolada na sindesmose é <b>SER II</b>. A pergunta que decide a conduta: <b>o deltoide está íntegro?</b> Radiografia com carga ou de estresse; espaço claro medial acima de 4 a 5 mm sugere instabilidade.</p>
+  </div>
+  <p style="position:absolute;left:70px;right:70px;bottom:36px;text-align:center;font:700 26px Jakarta;color:rgba(255,255,255,.6)">Mais questões comentadas em <b style="color:var(--ouro)">ortoquestoes.com.br</b></p>
+</section>
+
+<!-- Story 1 (1080x1920), manhã: a cena -->
+<section id="s1-cena" class="story">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">Cena do crime</span></div>
+  <div class="fita" style="top:250px;transform:rotate(-4deg)"><span>NÃO ULTRAPASSE</span></div>
+  <h1 style="margin-top:250px;font-size:104px">Quem fez isso com <em>este tornozelo?</em></h1>
+  <div class="quadro" style="margin-top:60px;height:860px">
+    <figure class="polaroide" style="position:absolute;left:50px;top:60px;width:430px;transform:rotate(-4deg)"><i class="alfinete"></i><img src="../../../../public/imagens/trauma/trauma-0716-2.jpeg" alt=""><figcaption>AP</figcaption></figure>
+    <figure class="polaroide" style="position:absolute;right:50px;top:110px;width:430px;transform:rotate(4deg)"><i class="alfinete az"></i><img src="../../../../public/imagens/trauma/trauma-0716-1.jpeg" alt=""><figcaption>perfil</figcaption></figure>
+  </div>
+  <p class="sub" style="margin-top:60px;font-size:42px;text-align:center">Quatro suspeitos de <b>Lauge-Hansen</b>.<br>A investigação completa está <b>no feed</b>.</p>
+</section>
+
+<!-- Story 2 (1080x1920), tarde: o veredito -->
+<section id="s2-veredito" class="story">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="cont">Caso encerrado</span></div>
+  <h1 style="margin-top:120px;font-size:100px">O culpado<br><em>confessou.</em></h1>
+  <div class="ficha" style="margin-top:70px;padding:40px 40px">
+    <span class="letra">D</span><span class="num">Fratura do tornozelo</span>
+    <h3 style="font-size:54px;padding-right:90px">Supinação-rotação<br>externa II</h3>
+    <p style="font-size:32px;max-width:560px">Fíbula oblíqua, no nível da sindesmose, com o lado medial íntegro.</p>
+    <span class="carimbo culpado" style="right:44px;bottom:44px;font-size:44px">Culpado</span>
+  </div>
+  <div class="estagios" style="margin-top:50px">
+    <div class="est"><b>SA</b><p>transverso, abaixo da sindesmose</p></div>
+    <div class="est foco"><b>SER</b><p>oblíquo, no nível da sindesmose</p></div>
+    <div class="est"><b>PA</b><p>transverso ou cominutivo, no nível ou acima</p></div>
+    <div class="est"><b>PER</b><p>oblíquo ou espiral, acima da sindesmose</p></div>
+  </div>
+  <p class="sub" style="margin-top:60px;font-size:40px;text-align:center">Salve o post do feed para revisar<br>os quatro suspeitos antes da prova.</p>
+</section>
+
+</body></html>
