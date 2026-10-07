@@ -22,3 +22,5 @@ as questões devem ficar o mais próximas possível da prova real (diretriz do d
 Use as ferramentas e o passo a passo de [scripts/simulados/README.md](scripts/simulados/README.md)
 e consulte e atualize os mapas da banca em
 [docs/simulados/mapas-da-banca.md](docs/simulados/mapas-da-banca.md) e as lições aprendidas do guia.
+Antes de cada capítulo, faça a engenharia reversa do assunto (seção "Engenharia reversa por tema" de
+[docs/padrao-questoes-simulado-teot-taro.md](docs/padrao-questoes-simulado-teot-taro.md)) e escreva o lote a partir dela.

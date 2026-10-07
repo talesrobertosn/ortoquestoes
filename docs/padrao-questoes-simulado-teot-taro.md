@@ -115,6 +115,43 @@ aplicação e validação. Os mapas da banca por assunto ficam em
 [docs/simulados/mapas-da-banca.md](simulados/mapas-da-banca.md) e devem ser atualizados a cada
 capítulo.
 
+## Engenharia reversa por tema (fazer antes de cada capítulo)
+
+Pedido do dono do projeto (07/10/2026): antes de escrever, ler todas as questões oficiais do assunto
+e extrair os padrões, o que é cobrado, como enunciado e alternativas são escritos e como o examinador
+pensa. O resultado vai para `docs/simulados/mapas-da-banca.md` e orienta o lote. Primeiro exemplo
+completo: a seção de instabilidade glenoumeral desse arquivo.
+
+1. **Recorte.** `scripts/simulados/mapear_banca.py` com regex específico, os subtemas do assunto,
+   `--tema` para o tema do acervo e `--excluir` para os falsos positivos. Ler a lista inteira (TEOT e
+   TARO; usar `--todas-as-provas` só para conferir o estilo das provas de subespecialidade). O resumo
+   na saída de erro dá as medidas: anos, tamanho do enunciado e das alternativas, como termina,
+   imagem, caso clínico, pares, gabarito, aberturas, epônimos e enunciados repetidos.
+2. **Frequência.** Quantas por ano e desde quando; se o tema cai todo ano, merece mais questões.
+3. **Fatos carimbados.** Agrupar por assunto (epidemiologia e fator de risco, anatomia, exame e
+   imagem, classificação, conduta, técnica e estrutura em risco, complicação) e marcar o que se
+   repete entre anos, com prova e ano. A repetição muitas vezes vem com outro texto (por exemplo,
+   "idade" como principal fator de recidiva em 2010, 2012 e 2024): o script só pega texto parecido,
+   o resto é leitura.
+4. **Tendência.** O que entrou nos últimos 5 anos e o que sumiu (na instabilidade: perda óssea e
+   track a partir de 2021; anatomia ligamentar nas provas antigas).
+5. **Forma.** Abertura típica ("Na luxação...", "Na instabilidade..."), tamanho, final em palavra ou
+   dois-pontos, uso de "respectivamente", imagem e caso clínico. Copiar essa forma; sem lacunas.
+6. **Como o examinador pensa.** Registrar:
+   - o tipo de pergunta ("o principal", "o mais frequente", "a estrutura em risco", "é indicado");
+   - os pares 2 por 2 usados, e quais atributos ele cruza (idade com momento, porcentagem com
+     on-track ou off-track, nervo com artéria, posição com estrutura);
+   - a conduta com justificativa na mesma alternativa, em que o distrator troca só a justificativa;
+   - de onde vêm os distratores: fato verdadeiro de outro contexto do mesmo assunto (outro nervo,
+     outra cirurgia, outro ligamento, o fator de risco popular no lugar do principal);
+   - a concentração do gabarito no tema (na instabilidade, C e D) para não viciar o lote.
+7. **Divergências e lacunas.** Gabaritos que contrariam o ensino clássico ou o capítulo (cobrar o
+   capítulo e citar a banca no comentário), questões sem gabarito e assuntos do capítulo que a banca
+   ainda não cobrou mas têm cara de prova (números, cortes, epônimos, "o principal").
+8. **Do mapa ao lote.** Cada questão do simulado deve ter um motivo no mapa: fato carimbado com outro
+   ângulo, tendência recente ou lacuna com cara de prova. Não repetir o que já existe no acervo de
+   simulados (o script lista) nem fatos pouco cobráveis; a quantidade é a que o capítulo sustenta.
+
 ## Lições aprendidas (atualizar a cada capítulo)
 
 - **Tamanho do comentário (07/10/2026).** Os capítulos aprovados 1, 2 e 4 ficaram com mediana de 4,5

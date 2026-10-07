@@ -10,7 +10,7 @@ repositório. Rode o que lê o PDF com `python3 -I`.
 | Passo | Comando | Saída |
 |---|---|---|
 | 0. O que já existe | `python3 scripts/simulados/registro.py` | capítulos já feitos, ids, gabarito e tamanho dos comentários |
-| 1. Ler a banca | `python3 scripts/simulados/mapear_banca.py --regex 'acromioclavic\|esternoclavic' --subtema 'Luxação acromioclavicular' > PASTA/oficiais.txt` | questões oficiais do TEOT e do TARO sobre o assunto e simulados já existentes |
+| 1. Ler a banca (engenharia reversa) | `python3 scripts/simulados/mapear_banca.py --regex '...' --subtema '...' --tema <tema> [--excluir ids] > PASTA/oficiais.txt` | questões oficiais de TEOT e TARO, resumo de formato e fatos repetidos na saída de erro; seguir o roteiro "Engenharia reversa por tema" do guia e registrar no mapa da banca |
 | 2. Extrair o capítulo | `python3 -I scripts/simulados/extrair_capitulo.py capitulo.pdf PASTA prefixo` | `r.txt`, `secoes.txt`, `figuras.txt`, `img/` e `mosaico*.png` |
 | 3. Escrever os lotes | copiar `scripts/simulados/exemplo_lote.py` para `PASTA/lote_a.py` etc. | 6 a 9 questões por lote |
 | 4. Conferir | `python3 scripts/simulados/aplicar_lote.py PASTA tema lote_a,lote_b --conferir` | erros bloqueiam; avisos mostram comentários curtos e enunciados fora da faixa |
