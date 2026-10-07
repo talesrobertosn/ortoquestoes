@@ -45,6 +45,47 @@ Atenção no texto do livro: as distâncias dos túneis aparecem de forma ligeir
 texto (trapezoide 15 mm lateral ao conoide, nunca a menos de 25 mm) e a legenda (20 a 25 mm).
 Perguntou-se apenas o que é inequívoco (conoide a 45 mm, túnel até 5,5 mm).
 
+## Fratura da escápula (lido em 07/10/2026; capítulo ainda não enviado)
+
+Recorte: subtema "Fratura da escápula" mais o regex de glenoide, acrômio, coracoide, ombro flutuante,
+escapulotorácica, IDEBERG e KUHN. 49 questões (TEOT, TARO e provas de ombro e cotovelo), sendo cerca
+de 30 diretamente sobre o assunto; nenhum simulado próprio ainda (os 4 do recorte são da cap. 32).
+
+Fatos carimbados:
+- **Indicação cirúrgica por medida.** Ângulo glenopolar menor que 20 graus (TARO 2018 e outra
+  prova; normal 30 a 45); angulação no perfil escapular de 45 graus (três provas de ombro);
+  translação de 100% da borda lateral; medialização de 20 mm ou 15 mm com angulação de 30 graus
+  (as alternativas usam 17 mm, 15 mm + 10 graus, 5 mm como distratores); colo com desvio acima de
+  40 graus ou 1 cm (TARO 2006 e 2007, ADA e MILLER).
+- **Glenoide.** Indicação de fixação por subluxação persistente da cabeça (os distratores são
+  degrau de 3 mm, polo superior e 12% da superfície); IDEBERG tipo III = terço superior com
+  coracoide (TARO 2015); Ia por figura (duas vezes); parafuso abaixo do equador no tipo Ia para
+  poupar o supraescapular; cabeça batendo no centro gera tipo transverso; artroscopia nas fraturas
+  anteriores ou posteriores da borda (TARO 2026).
+- **Complexo suspensor superior e ombro flutuante.** Lesão dupla mais frequente: clavícula e colo
+  (TARO 2019); instabilidade com colo e lesão AC (TARO 2013); definição como clavícula mais
+  escápula (TARO 2014) ou glenoide mais coracoclaviculares (TARO 2012); fragmento glenoidal desvia
+  distal e medialmente (TEOT 2023) e em valgo nas provas de ombro.
+- **Acesso de JUDET.** Liberação da origem do infraespinal; tração excessiva lesa o supraescapular
+  (TARO 2023, cobrada igual em duas provas).
+- **Acrômio e coracoide.** KUHN tipo III = desvio inferior com redução do espaço subacromial
+  (TEOT 2022); coracoide melhor visto na STRYKER (TARO 2011 e 2018); AC tipo III com CC íntegros
+  quando o coracoide fratura (TARO 2015).
+- **Dissociação escapulotorácica.** Índice escapular 1,5 vez o contralateral (TEOT 2022); ZELLE 2B
+  = musculoesquelético e neurológico incompleto (TEOT 2024); plexo completo sem recuperação leva à
+  amputação acima do cotovelo (TARO 2026); associa-se à fratura da clavícula.
+- **Epidemiologia e complicações.** Costela é a fratura associada mais comum; consolidação viciosa é
+  a complicação do conservador; na criança, fratura da escápula é de alta especificidade para
+  maus-tratos (KLEINMAN, TEOT 2022); pseudoluxação AC na criança por figura (TEOT 2025).
+
+Formato: números exatos com distratores vizinhos (20, 30, 40, 45 graus; 15, 17, 20 mm; 25, 50,
+75, 100%), epônimo mais estrutura em risco, classificação por descrição ou figura e pares de
+direção do desvio.
+
+Pendências no acervo: TARO 2006 a 2009 (trauma-1129, 1144, 1178) sem gabarito; duplicatas entre
+temas (trauma-0415 e ombro-cotovelo-0170; trauma-0312 e 0963; ombro-cotovelo-0102 e 0383;
+pediatria-0097 e 0468).
+
 ## Fraturas por estresse (lido em 07/10/2026; Rockwood cap. 24)
 
 - **Carimbados.** Sítios de alto e baixo risco (patela e costela, TARO 2021); KAEDING-MILLER grau IV
