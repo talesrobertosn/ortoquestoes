@@ -12,6 +12,27 @@ souls-like: a pessoa precisa brigar pelo emblema. Ao criar um emblema novo:
   metas menores;
 - não tirar emblema de quem já conquistou: endurecer é criar níveis novos acima.
 
+## Estilo da arte (decisão do dono do projeto, 07/10/2026)
+
+**Sempre pixel art, com pegada de RPG medieval.** Os motivos vêm do mundo de fantasia medieval:
+armas e armaduras (espada, elmo, escudo), castelos e estandartes, grimórios e pergaminhos,
+poções e elixires, runas, dados, velas, forja e bigorna, coroas e gemas. Nada de anatomia
+desenhada. O metal e o brilho seguem o nível (bronze, prata, ouro, esmeralda e lendário com aura
+roxa), e dentro da família cada degrau acrescenta um detalhe (pluma, asas, mais torres, runas).
+
+Arte gerada por `python3 scripts/gerar_emblemas_provisorios.py` (grade 32×32 ampliada para
+128×128, sem suavização); a arte feita à mão entra em `ARTE_PROPRIA` e nunca é sobrescrita.
+
+| Família | Arte |
+|---|---|
+| Pseudartrose | Espada partida e reforjada com cintas de metal (runas no lendário) |
+| Olho de radiologista | Espelho de vidência com o olho, gemas na moldura |
+| Certeza cirúrgica | Elmo de cavaleiro; pluma, depois asas |
+| Provas vencidas | Torre, castelo, fortaleza com bandeira dourada |
+| Generalista | Grimório com gema e runas |
+| Hora de ouro | Elixir dourado; mais frascos a cada nível |
+| Secretas | Dado (chute), triângulo rúnico de três gemas (tríade), vela da vigília (véspera), bigorna e martelo (Wolff) |
+
 O código está em `src/estado/conquistas.ts`; os dados do índice que os emblemas usam são montados
 em `src/estado/usarConquistas.ts`; o teste é `node fixtures/testar_conquistas.mjs`. A arte em pixel
 art, quando existir, vai em `public/emblemas/<id>.png` e o id entra em `src/dados/imagensEmblemas.ts`;

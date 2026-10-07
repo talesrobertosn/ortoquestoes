@@ -1,5 +1,7 @@
 """Desenha em pixel art os emblemas que ainda não têm arte feita à mão.
 
+Estilo obrigatório: pixel art com pegada de RPG medieval (docs/emblemas.md).
+
 Cada família tem uma silhueta própria (chama, calendário, escudo, cristal,
 mapa, espadas, raio, alvo, coração alado, troféu, lua, sol, medalha), desenhada
 numa grade de 32x32 com contorno, luz no alto à esquerda e sombra embaixo à
@@ -903,6 +905,196 @@ FORMAS.update({
 for _tema in ICONES_TEMA:
     FORMAS[f"mestre-{_tema}"] = mestre_tema(f"mestre-{_tema}")
 
+
+# ================= Emblemas difíceis (07/10/2026): RPG medieval =================
+# Regra do dono do projeto: emblema é sempre pixel art com pegada de RPG medieval
+# (armas, armaduras, castelos, grimórios, poções, runas, forja), nunca anatomia desenhada.
+COURO = ["#2a0d08", "#5e1d12", "#8a2f1c", "#b4513a", "#e08b6f"]
+VIDRO = ["#2f3a3e", "#9fc3d6", "#cfe6f2", "#eef8fd", "#ffffff"]
+ELIXIR = ["#7a4a12", "#d97706", "#fbbf24", "#fde68a", "#fffbeb"]
+RUNA = {"ouro": "#fde68a", "esmeralda": "#5cf2c8", "lendario": "#e9c8ff", "prata": "#e0f2fe", "bronze": "#fed7aa"}
+
+
+def elipse(cx: float, cy: float, rx: float, ry: float) -> set[tuple[int, int]]:
+    return {(x, y) for y in range(N) for x in range(N) if ((x + 0.5 - cx) / rx) ** 2 + ((y + 0.5 - cy) / ry) ** 2 <= 1}
+
+
+def runas(t: Tela, nivel: str, pontos: list[tuple[int, int]]) -> None:
+    for (x, y) in pontos:
+        t.ponto(x, y, hexa(RUNA[nivel]))
+
+
+def espada_reforjada(t: Tela, nivel: str, degrau: int) -> None:
+    """Pseudartrose: a espada partida e reforjada, presa por cintas de metal."""
+    t.camada(linha(11, 21, 26, 6, 2.6), METAIS["prata"])
+    t.pintar(linha(12.5, 19, 25, 6.5, 0.5), "#ffffff")
+    t.pintar({(15, 16), (16, 15), (16, 16), (17, 16), (14, 17)}, "#232c30")
+    cintas = [(18.5, 13.5)] + ([(22.3, 9.7)] if degrau >= 1 else [])
+    for (cx, cy) in cintas:
+        t.camada(linha(cx - 1.9, cy - 1.9, cx + 1.9, cy + 1.9, 2.4), METAIS[nivel])
+        t.ponto(round(cx - 1), round(cy - 1), hexa("#ffffff"))
+    t.camada(linha(8.4, 18.4, 13.6, 23.6, 2.2), METAIS[nivel])
+    t.camada(linha(10.5, 21.5, 6.5, 25.5, 2.2), MADEIRA)
+    t.camada(circulo(5.6, 26.4, 1.9), METAIS[nivel])
+    if degrau >= 2:
+        runas(t, nivel, [(15, 17), (21, 11), (24, 8)])
+    for (x, y) in ((16, 9), (22, 17)):
+        t.brilho(x, y, "#fde68a")
+
+
+def espelho_vidente(t: Tela, nivel: str, degrau: int) -> None:
+    """Olho de radiologista: o espelho de vidência, que mostra o que está por dentro."""
+    t.camada(poligono([(10, 30), (22, 30), (19, 26), (13, 26)]), MADEIRA)
+    t.camada(retangulo(15, 22, 16, 26), METAIS[nivel])
+    t.camada(elipse(16, 13, 9.5, 11), METAIS[nivel])
+    t.camada(elipse(16, 13, 7, 8.5), ["#0b1f4a", "#14306e", "#1e3f8f", "#3d62c2", "#cfe0ff"], contorno=False)
+    olho = elipse(16, 13, 5, 2.6)
+    t.pintar(olho, "#e8f1ff")
+    t.pintar(circulo(16, 13, 1.9), RUNA[nivel] if nivel != "prata" else "#5cc9ad")
+    t.pintar(circulo(16, 13, 0.9), "#0b1f4a")
+    t.ponto(12, 8, hexa("#ffffff"))
+    gemas = [(16, 2.6)] + ([(7.4, 9), (24.6, 9)] if degrau >= 1 else [])
+    for (x, y) in gemas:
+        t.camada(circulo(x, y, 1.6), VERMELHO)
+
+
+def elmo(t: Tela, nivel: str, degrau: int) -> None:
+    """Certeza cirúrgica: o elmo do cavaleiro que não treme."""
+    if degrau >= 1:
+        t.camada(poligono([(17, 7), (20, 1), (25, 1), (27, 4), (22, 5), (19, 9)]), VERMELHO)
+    corpo = poligono([(7, 13), (9, 8), (13, 6), (19, 6), (23, 8), (25, 13), (25, 27), (7, 27)])
+    t.camada(corpo, METAIS["prata"])
+    t.camada(retangulo(15, 6, 16, 27) | retangulo(7, 25, 25, 27), METAIS[nivel], contorno=False)
+    t.pintar(retangulo(9, 14, 23, 15), "#141414")
+    t.pintar(retangulo(15, 14, 16, 15), "#141414")
+    for x in (10, 12, 19, 21):
+        t.pintar(retangulo(x, 19, x, 20), "#232c30")
+    if degrau >= 2:
+        for lado in (-1, 1):
+            asa = poligono([(16 + lado * 9, 12), (16 + lado * 15, 6), (16 + lado * 14, 11), (16 + lado * 15.5, 14), (16 + lado * 10, 18)])
+            t.camada(asa, METAIS[nivel])
+    t.brilho(11, 10)
+
+
+def castelo(t: Tela, nivel: str, degrau: int) -> None:
+    """Provas vencidas: o castelo conquistado, com a bandeira no alto."""
+    def torre(x0: int, x1: int, y0: int) -> set[tuple[int, int]]:
+        corpo = retangulo(x0, y0, x1, 28)
+        ameias = {(x, y) for x in range(x0, x1 + 1) for y in range(y0 - 2, y0) if (x - x0) % 3 != 2}
+        return corpo | ameias
+    if degrau >= 1:
+        t.camada(torre(3, 9, 16), PEDRA)
+        t.camada(torre(22, 28, 16), PEDRA)
+    t.camada(torre(10, 21, 11), PEDRA)
+    t.camada(poligono([(13, 28.5), (13, 23), (15.5, 20.5), (18, 23), (18, 28.5)]), MADEIRA)
+    for (x, y) in ((12, 14), (19, 14)) + (((6, 19), (25, 19)) if degrau >= 1 else ()):
+        t.pintar(retangulo(x, y, x, y + 2), "#1c1917")
+    t.camada(linha(15.5, 9, 15.5, 2, 0.8), METAIS["prata"])
+    bandeira = poligono([(16.5, 1.5), (25, 3.5), (16.5, 6.5)])
+    cor = VERMELHO if degrau < 2 else METAIS["ouro"]
+    t.camada(bandeira, cor)
+    t.camada(retangulo(10, 26, 21, 26), METAIS[nivel], contorno=False)
+
+
+def grimorio(t: Tela, nivel: str, degrau: int) -> None:
+    """Generalista: o grimório que reúne todos os assuntos."""
+    t.camada(retangulo(24, 6, 26, 26), PERGAMINHO)
+    capa = retangulo(7, 4, 24, 27)
+    t.camada(capa, COURO)
+    t.camada(retangulo(5, 4, 7, 27), ["#1a0805", "#3d130b", "#5e1d12", "#7a2a18", "#a14a33"])
+    for (x, y) in ((8, 5), (22, 5), (8, 25), (22, 25)):
+        t.camada(retangulo(x, y, x + 1, y + 1), METAIS[nivel], contorno=False)
+    t.camada(retangulo(23, 13, 27, 17), METAIS[nivel])
+    t.camada(circulo(15.5, 15.5, 4.4), METAIS[nivel])
+    joia = {"ouro": VERMELHO, "esmeralda": METAIS["esmeralda"], "lendario": ROXO}.get(nivel, AZUL)
+    t.camada(circulo(15.5, 15.5, 2.6), joia, contorno=False)
+    t.ponto(14, 14, hexa("#ffffff"))
+    if degrau >= 1:
+        runas(t, nivel, [(10, 9), (12, 8), (19, 9), (21, 8), (10, 22), (21, 22)])
+    if degrau >= 2:
+        runas(t, nivel, [(15, 8), (16, 8), (15, 23), (16, 23), (11, 15), (20, 15)])
+
+
+def elixir(t: Tela, nivel: str, degrau: int) -> None:
+    """Hora de ouro: o elixir dourado que cura antes que a hora acabe."""
+    def frasco(cx: float, cy: float, r: float, gargalo: float) -> None:
+        t.camada(circulo(cx, cy, r) | retangulo(round(cx - gargalo), round(cy - r - 4), round(cx + gargalo) - 1, round(cy - r + 1)), VIDRO)
+        liquido = circulo(cx, cy, r - 1.5) & {(x, y) for y in range(N) for x in range(N) if y >= cy - r * 0.25}
+        t.camada(liquido, ELIXIR, contorno=False)
+        t.camada(retangulo(round(cx - gargalo) - 1, round(cy - r - 5), round(cx + gargalo), round(cy - r - 4)), METAIS[nivel])
+        t.camada(retangulo(round(cx - gargalo), round(cy - r - 8), round(cx + gargalo) - 1, round(cy - r - 6)), MADEIRA)
+    if degrau >= 1:
+        frasco(6, 25, 4, 1)
+    if degrau >= 2:
+        frasco(26, 25, 4, 1)
+    frasco(16, 19, 8.5, 2)
+    t.brilho(12, 16, "#ffffff")
+    for (x, y) in ((15, 23), (18, 20)):
+        t.ponto(x, y, hexa("#fffbeb"))
+
+
+def dado(t: Tela, nivel: str, degrau: int) -> None:
+    """Chute de mestre: o dado da sorte."""
+    topo = poligono([(16, 3), (28, 9.5), (16, 16), (4, 9.5)])
+    esq = poligono([(4, 9.5), (16, 16), (16, 29), (4, 22.5)])
+    dir_ = poligono([(16, 16), (28, 9.5), (28, 22.5), (16, 29)])
+    t.camada(topo | esq | dir_, OSSO)
+    t.pintar(topo, "#fbf6ea")
+    t.pintar(esq, "#e9dfc6")
+    t.pintar(dir_, "#c9b996")
+    t.pintar(linha(4.5, 9.8, 15.8, 16, 0.4) | linha(16, 16, 27.5, 9.8, 0.4) | linha(16, 16.5, 16, 28.5, 0.4), "#4a3f2c")
+    t.pintar(retangulo(15, 9, 16, 10), "#b3423a")
+    for (x, y) in ((7, 14), (12, 21)):
+        t.pintar(retangulo(x, y, x + 1, y + 1), "#1c1917")
+    for (x, y) in ((19, 15), (21, 19), (24, 23)):
+        t.pintar(retangulo(x, y, x + 1, y + 1), "#1c1917")
+    t.brilho(27, 27, "#fde68a")
+
+
+def triangulo_runico(t: Tela, nivel: str, degrau: int) -> None:
+    """Tríade terrível: três gemas presas num triângulo de runas."""
+    disco(t, ["#120a1f", "#1f1235", "#2c1a4a", "#3d2766", "#6b4fa0"])
+    externo = poligono([(16, 3.5), (28.5, 25.5), (3.5, 25.5)])
+    interno = poligono([(16, 9), (23.8, 22.8), (8.2, 22.8)])
+    t.camada(externo - interno, METAIS[nivel])
+    t.pintar(interno, "#2c1a4a")
+    for (x, y, c) in ((16, 5.5, VERMELHO), (26, 24, METAIS["esmeralda"]), (6, 24, AZUL)):
+        t.camada(circulo(x, y, 2.3), c)
+        t.ponto(round(x - 1), round(y - 1), hexa("#ffffff"))
+    runas(t, nivel, [(16, y) for y in range(13, 21)] + [(14, 13), (15, 14), (18, 13), (17, 14)])
+
+
+def vela_vigilia(t: Tela, nivel: str, degrau: int) -> None:
+    """Véspera: a vela da vigília na noite antes da batalha."""
+    disco(t, NOITE)
+    t.camada(elipse(16, 26, 9, 2.6) | retangulo(14, 21, 17, 25), METAIS[nivel])
+    t.camada(retangulo(13, 11, 18, 21), ["#6b6355", "#d8d0bf", "#f2ecdf", "#fbf8f1", "#ffffff"])
+    t.pintar(retangulo(13, 11, 14, 13), "#fbf8f1")
+    t.pintar(linha(15.5, 10, 15.5, 11, 0.4), "#1c1917")
+    chama_livre(t, "ouro", 15.5, 10, 7, 5)
+    for (x, y) in ((6, 9), (25, 8), (24, 16)):
+        t.brilho(x, y, "#fff4cf")
+
+
+def bigorna(t: Tela, nivel: str, degrau: int) -> None:
+    """Lei de Wolff: a bigorna e o martelo; o osso se molda à carga."""
+    forma = poligono([(3, 13), (9, 12), (27, 12), (27, 16), (22, 17), (20, 20), (20, 23), (24, 27), (8, 27), (12, 23), (12, 20), (10, 17), (6, 16)])
+    t.camada(forma, ["#0f1214", "#2d3439", "#4a555c", "#78858c", "#c7d0d4"])
+    t.camada(retangulo(9, 26, 23, 28), METAIS[nivel])
+    t.camada(linha(19, 10, 27, 2, 1.8), MADEIRA)
+    ux, uy = 0.707, 0.707
+    t.camada(poligono([(13.5, 4.5), (17.8, 0.2), (22.8, 5.2), (18.5, 9.5)]), METAIS["prata"])
+    for (x, y) in ((9, 9), (12, 7), (7, 6), (14, 10)):
+        t.ponto(x, y, hexa("#fbbf24"))
+    t.brilho(10, 8, "#fde68a")
+
+
+FORMAS.update({
+    "pseudartrose": espada_reforjada, "imagem": espelho_vidente, "certeza": elmo, "provas": castelo,
+    "assuntos": grimorio, "horaDeOuro": elixir,
+    "secreta-chute": dado, "secreta-triade": triangulo_runico, "secreta-vespera": vela_vigilia, "secreta-wolff": bigorna,
+})
+
 def desenhar(id_: str, familia: str, nivel: str, degrau: int) -> Tela:
     t = Tela()
     FORMAS.get(id_, FORMAS.get(familia, medalha))(t, nivel, degrau)
@@ -935,7 +1127,7 @@ def catalogo() -> list[tuple[str, str, str]]:
     """(id, família, nível) de cada emblema, lidos de src/estado/conquistas.ts."""
     texto = CATALOGO.read_text(encoding="utf-8")
     saida = []
-    for bloco in re.finditer(r"familia\('([a-z]+)', '[a-zA-Z]+', \[(.*?)\](?:, true)?\)", texto, re.S):
+    for bloco in re.finditer(r"familia\('([a-zA-Z]+)', '[a-zA-Z]+', \[(.*?)\](?:, true)?\)", texto, re.S):
         for m in re.finditer(r"\['([a-z0-9-]+)', [\d]+, '[^']*', '[^']*', '([a-z]+)'", bloco.group(2)):
             saida.append((m.group(1), bloco.group(1), m.group(2)))
     return saida
