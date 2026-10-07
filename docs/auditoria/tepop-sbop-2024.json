@@ -1,0 +1,2100 @@
+{
+  "prova": "TEPOP",
+  "organizadora": "Sociedade Brasileira de Ortopedia Pediátrica (SBOP)",
+  "ano": 2024,
+  "importadoEm": "2026-10-07",
+  "total": 100,
+  "existentes": 79,
+  "adicionadas": 21,
+  "gabaritosCorrigidos": [
+    17,
+    59
+  ],
+  "novasTags": {
+    "pediatria": [
+      "Deficiências longitudinais dos membros",
+      "Discrepância de comprimento dos membros"
+    ],
+    "trauma": [
+      "Trauma pediátrico"
+    ],
+    "pe-tornozelo": [
+      "Osteocondroses do pé"
+    ],
+    "conceitos-basicos": [
+      "Doenças autoinflamatórias ósseas"
+    ]
+  },
+  "fontes": {
+    "prova": "https://www.sbop.org.br/uploads/artigos/files/5dffbdcf67abc0056d666507ac721d17.pdf",
+    "gabarito": "https://www.sbop.org.br/uploads/artigos/files/e1e192f87833e3081f3ae26f0cd4db6b.jpg"
+  },
+  "criterio": "Correspondência de enunciado e alternativas, conferência com gabarito oficial e preservação de IDs, imagens e comentários anteriores, exceto comentários das questões 17 e 59 que contradiziam o gabarito oficial. Questão 68 não é duplicata da questão sobre estágio I. PDFs não incluídos no repositório.",
+  "questoes": [
+    {
+      "numeroOriginal": 1,
+      "pagina": 1,
+      "id": "pediatria-0337",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "B",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Displasias esqueléticas e síndromes"
+        ],
+        "gabarito": "B"
+      },
+      "subtemas": [
+        "Displasias esqueléticas e síndromes"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 2,
+      "pagina": 1,
+      "id": "quadril-0185",
+      "tema": "quadril",
+      "acao": "atualizada",
+      "gabaritoOficial": "D",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Vias de acesso ao quadril"
+        ],
+        "gabarito": "D"
+      },
+      "subtemas": [
+        "Vias de acesso ao quadril"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 3,
+      "pagina": 1,
+      "id": "pediatria-0338",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "D",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Genuvaro, genuvalgo e torções"
+        ],
+        "gabarito": "D"
+      },
+      "subtemas": [
+        "Genuvaro, genuvalgo e torções"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 4,
+      "pagina": 1,
+      "id": "osteometabolicas-0053",
+      "tema": "osteometabolicas",
+      "acao": "atualizada",
+      "gabaritoOficial": "B",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Espondiloartrites e outras artrites"
+        ],
+        "gabarito": "B"
+      },
+      "subtemas": [
+        "Espondiloartrites e outras artrites"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 5,
+      "pagina": 2,
+      "id": "pediatria-0340",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "A",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Sinovite transitória e artrite séptica do quadril"
+        ],
+        "gabarito": "A"
+      },
+      "subtemas": [
+        "Sinovite transitória e artrite séptica do quadril"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 6,
+      "pagina": 2,
+      "id": "pediatria-0341",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "D",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Artrogripose e doenças neuromusculares"
+        ],
+        "gabarito": "D"
+      },
+      "subtemas": [
+        "Artrogripose e doenças neuromusculares"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 7,
+      "pagina": 2,
+      "id": "pediatria-0342",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Displasias esqueléticas e síndromes",
+          "Artrogripose e doenças neuromusculares"
+        ],
+        "gabarito": "C"
+      },
+      "subtemas": [
+        "Artrogripose e doenças neuromusculares"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 8,
+      "pagina": 2,
+      "id": "coluna-0223",
+      "tema": "coluna",
+      "acao": "atualizada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Cifose e doença de Scheuermann"
+        ],
+        "gabarito": "C"
+      },
+      "subtemas": [
+        "Cifose e doença de Scheuermann"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 9,
+      "pagina": 2,
+      "id": "pediatria-0343",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "D",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Displasia do desenvolvimento do quadril",
+          "Genuvaro, genuvalgo e torções"
+        ],
+        "gabarito": "D"
+      },
+      "subtemas": [
+        "Coxa vara do desenvolvimento"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 10,
+      "pagina": 3,
+      "id": "pe-tornozelo-0238",
+      "tema": "pe-tornozelo",
+      "acao": "atualizada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Coalizões tarsais"
+        ],
+        "gabarito": "C"
+      },
+      "subtemas": [
+        "Coalizões tarsais"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 11,
+      "pagina": 3,
+      "id": "tumores-0252",
+      "tema": "tumores",
+      "acao": "atualizada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Estadiamento, biópsia e margens",
+          "Cisto ósseo simples"
+        ],
+        "gabarito": "C"
+      },
+      "subtemas": [
+        "Cisto ósseo simples"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 12,
+      "pagina": 3,
+      "id": "pediatria-0344",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Genuvaro, genuvalgo e torções"
+        ],
+        "gabarito": "C"
+      },
+      "subtemas": [
+        "Deficiências longitudinais dos membros"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 13,
+      "pagina": 3,
+      "id": "pediatria-0345",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "A",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Genuvaro, genuvalgo e torções"
+        ],
+        "gabarito": "A"
+      },
+      "subtemas": [
+        "Deficiências longitudinais dos membros"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 14,
+      "pagina": 3,
+      "id": "pediatria-0346",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "A",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Genuvaro, genuvalgo e torções"
+        ],
+        "gabarito": "A"
+      },
+      "subtemas": [
+        "Deficiências longitudinais dos membros"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 15,
+      "pagina": 4,
+      "id": "pediatria-0347",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "B",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Outras doenças congênitas"
+        ],
+        "gabarito": "B"
+      },
+      "subtemas": [
+        "Outras doenças congênitas"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 16,
+      "pagina": 4,
+      "id": "pediatria-0348",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "A",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Tíbia vara (Blount)",
+          "Genuvaro, genuvalgo e torções"
+        ],
+        "gabarito": "A"
+      },
+      "subtemas": [
+        "Tíbia vara (Blount)"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 17,
+      "pagina": 4,
+      "id": "pediatria-0349",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Desenvolvimento neuropsicomotor"
+        ],
+        "gabarito": "D"
+      },
+      "subtemas": [
+        "Marcha na criança",
+        "Genuvaro, genuvalgo e torções"
+      ],
+      "comentarioCriadoOuRefeito": true,
+      "ressalvaBibliografica": "Gabarito oficial TEPOP 2024: C. O acervo anterior, de origem indefinida, trazia D. As fontes verificadas confirmam sinais e variação etária, mas não corroboram a faixa exata de C; manter a ressalva e não utilizar esses números como indicação automática de tratamento."
+    },
+    {
+      "numeroOriginal": 18,
+      "pagina": 4,
+      "id": "pediatria-0350",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "D",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Genuvaro, genuvalgo e torções",
+          "Ossificação e crescimento"
+        ],
+        "gabarito": "D"
+      },
+      "subtemas": [
+        "Discrepância de comprimento dos membros"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 19,
+      "pagina": 4,
+      "id": "pediatria-0351",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "A",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Displasia do desenvolvimento do quadril"
+        ],
+        "gabarito": "A"
+      },
+      "subtemas": [
+        "Displasia do desenvolvimento do quadril"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 20,
+      "pagina": 5,
+      "id": "pediatria-0352",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Displasia do desenvolvimento do quadril"
+        ],
+        "gabarito": "C"
+      },
+      "subtemas": [
+        "Displasia do desenvolvimento do quadril"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 21,
+      "pagina": 5,
+      "id": "pediatria-0353",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "A",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Marcha na criança",
+          "Lesões fisárias"
+        ],
+        "gabarito": "A"
+      },
+      "subtemas": [
+        "Displasias esqueléticas e síndromes"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 22,
+      "pagina": 5,
+      "id": "tumores-0253",
+      "tema": "tumores",
+      "acao": "atualizada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Displasia fibrosa"
+        ],
+        "gabarito": "C"
+      },
+      "subtemas": [
+        "Displasia fibrosa"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 23,
+      "pagina": 5,
+      "id": "pe-tornozelo-0239",
+      "tema": "pe-tornozelo",
+      "acao": "atualizada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Pé cavo"
+        ],
+        "gabarito": "C"
+      },
+      "subtemas": [
+        "Pé cavo"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 24,
+      "pagina": 5,
+      "id": "pediatria-0354",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Displasias esqueléticas e síndromes",
+          "Marcha na criança"
+        ],
+        "gabarito": "C"
+      },
+      "subtemas": [
+        "Artrogripose e doenças neuromusculares",
+        "Marcha na criança"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 25,
+      "pagina": 6,
+      "id": "pediatria-0355",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "B",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Epifisiólise proximal do fêmur"
+        ],
+        "gabarito": "B"
+      },
+      "subtemas": [
+        "Epifisiólise proximal do fêmur"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 26,
+      "pagina": 6,
+      "id": "pediatria-0356",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "D",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Epifisiólise proximal do fêmur"
+        ],
+        "gabarito": "D"
+      },
+      "subtemas": [
+        "Epifisiólise proximal do fêmur"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 27,
+      "pagina": 6,
+      "id": "coluna-0224",
+      "tema": "coluna",
+      "acao": "atualizada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Escoliose idiopática",
+          "Anatomia da coluna"
+        ],
+        "gabarito": "C"
+      },
+      "subtemas": [
+        "Escoliose congênita e neuromuscular"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 28,
+      "pagina": 6,
+      "id": "coluna-0225",
+      "tema": "coluna",
+      "acao": "atualizada",
+      "gabaritoOficial": "A",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Exame neurológico e radiculopatias"
+        ],
+        "gabarito": "A"
+      },
+      "subtemas": [
+        "Exame neurológico e radiculopatias"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 29,
+      "pagina": 7,
+      "id": "coluna-0226",
+      "tema": "coluna",
+      "acao": "atualizada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Espondilólise e espondilolistese"
+        ],
+        "gabarito": "C"
+      },
+      "subtemas": [
+        "Espondilólise e espondilolistese"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 30,
+      "pagina": 7,
+      "id": "pediatria-0940",
+      "tema": "pediatria",
+      "acao": "adicionada",
+      "gabaritoOficial": "B",
+      "metadadosAnteriores": null,
+      "subtemas": [
+        "Fraturas do antebraço e punho na criança"
+      ],
+      "comentarioCriadoOuRefeito": true,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 31,
+      "pagina": 7,
+      "id": "pediatria-0941",
+      "tema": "pediatria",
+      "acao": "adicionada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": null,
+      "subtemas": [
+        "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+      ],
+      "comentarioCriadoOuRefeito": true,
+      "ressalvaBibliografica": "Gabarito oficial C. A nomenclatura caudal da alternativa diverge das descrições publicadas com angulação cranial de 45°. Preservar a letra da banca sem ensinar que as duas direções são equivalentes."
+    },
+    {
+      "numeroOriginal": 32,
+      "pagina": 7,
+      "id": "pediatria-0942",
+      "tema": "pediatria",
+      "acao": "adicionada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": null,
+      "subtemas": [
+        "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+      ],
+      "comentarioCriadoOuRefeito": true,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 33,
+      "pagina": 8,
+      "id": "pediatria-0943",
+      "tema": "pediatria",
+      "acao": "adicionada",
+      "gabaritoOficial": "D",
+      "metadadosAnteriores": null,
+      "subtemas": [
+        "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+      ],
+      "comentarioCriadoOuRefeito": true,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 34,
+      "pagina": 8,
+      "id": "trauma-0769",
+      "tema": "trauma",
+      "acao": "atualizada",
+      "gabaritoOficial": "A",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Fratura da patela e lesão do aparelho extensor"
+        ],
+        "gabarito": "A"
+      },
+      "subtemas": [
+        "Fratura da patela e lesão do aparelho extensor",
+        "Trauma pediátrico"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 35,
+      "pagina": 8,
+      "id": "trauma-0770",
+      "tema": "trauma",
+      "acao": "atualizada",
+      "gabaritoOficial": "D",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Luxação do joelho e lesões ligamentares"
+        ],
+        "gabarito": "D"
+      },
+      "subtemas": [
+        "Luxação do joelho e lesões ligamentares",
+        "Trauma pediátrico"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 36,
+      "pagina": 9,
+      "id": "pediatria-0944",
+      "tema": "pediatria",
+      "acao": "adicionada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": null,
+      "subtemas": [
+        "Fraturas do antebraço e punho na criança"
+      ],
+      "comentarioCriadoOuRefeito": true,
+      "ressalvaBibliografica": "Gabarito oficial C. Com ápice volar, a descrição clássica da AO preserva o periósteo dorsal, compatível com B. Possível inversão do ápice ou da ordem dos tecidos na redação/gabarito. Não modificar a letra oficial nem ensinar a inversão como regra anatômica."
+    },
+    {
+      "numeroOriginal": 37,
+      "pagina": 9,
+      "id": "pediatria-0945",
+      "tema": "pediatria",
+      "acao": "adicionada",
+      "gabaritoOficial": "D",
+      "metadadosAnteriores": null,
+      "subtemas": [
+        "Fraturas da clavícula e do úmero proximal na criança"
+      ],
+      "comentarioCriadoOuRefeito": true,
+      "ressalvaBibliografica": "Os limites são dependentes da idade e variam entre protocolos. A faixa do gabarito não deve ser apresentada como regra universal ou indicação automática de aceitar todo desvio."
+    },
+    {
+      "numeroOriginal": 38,
+      "pagina": 10,
+      "id": "pediatria-0946",
+      "tema": "pediatria",
+      "acao": "adicionada",
+      "gabaritoOficial": "B",
+      "metadadosAnteriores": null,
+      "subtemas": [
+        "Fraturas do fêmur e da perna na criança",
+        "Lesões fisárias"
+      ],
+      "comentarioCriadoOuRefeito": true,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 39,
+      "pagina": 10,
+      "id": "pediatria-0947",
+      "tema": "pediatria",
+      "acao": "adicionada",
+      "gabaritoOficial": "B",
+      "metadadosAnteriores": null,
+      "subtemas": [
+        "Fraturas da pelve e do quadril na criança"
+      ],
+      "comentarioCriadoOuRefeito": true,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 40,
+      "pagina": 10,
+      "id": "pediatria-0948",
+      "tema": "pediatria",
+      "acao": "adicionada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": null,
+      "subtemas": [
+        "Fraturas do fêmur e da perna na criança",
+        "Joelho da criança"
+      ],
+      "comentarioCriadoOuRefeito": true,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 41,
+      "pagina": 10,
+      "id": "pediatria-0949",
+      "tema": "pediatria",
+      "acao": "adicionada",
+      "gabaritoOficial": "A",
+      "metadadosAnteriores": null,
+      "subtemas": [
+        "Joelho da criança",
+        "Fraturas do fêmur e da perna na criança"
+      ],
+      "comentarioCriadoOuRefeito": true,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 42,
+      "pagina": 10,
+      "id": "pediatria-0950",
+      "tema": "pediatria",
+      "acao": "adicionada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": null,
+      "subtemas": [
+        "Fraturas do fêmur e da perna na criança"
+      ],
+      "comentarioCriadoOuRefeito": true,
+      "ressalvaBibliografica": "A associação torção/distal é clássica na criança pequena; não deve ser generalizada como distribuição universal de todas as fraturas diafisárias até 11 anos."
+    },
+    {
+      "numeroOriginal": 43,
+      "pagina": 11,
+      "id": "pediatria-0951",
+      "tema": "pediatria",
+      "acao": "adicionada",
+      "gabaritoOficial": "A",
+      "metadadosAnteriores": null,
+      "subtemas": [
+        "Fraturas do fêmur e da perna na criança"
+      ],
+      "comentarioCriadoOuRefeito": true,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 44,
+      "pagina": 11,
+      "id": "pediatria-0952",
+      "tema": "pediatria",
+      "acao": "adicionada",
+      "gabaritoOficial": "B",
+      "metadadosAnteriores": null,
+      "subtemas": [
+        "Fraturas do antebraço e punho na criança"
+      ],
+      "comentarioCriadoOuRefeito": true,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 45,
+      "pagina": 11,
+      "id": "pediatria-0953",
+      "tema": "pediatria",
+      "acao": "adicionada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": null,
+      "subtemas": [
+        "Fraturas da clavícula e do úmero proximal na criança"
+      ],
+      "comentarioCriadoOuRefeito": true,
+      "ressalvaBibliografica": "O gabarito cobra uma complicação potencial. As fontes recentes descrevem prognóstico geralmente excelente; não há base para ensinar rotação interna como sequela frequente de toda fratura obstétrica."
+    },
+    {
+      "numeroOriginal": 46,
+      "pagina": 11,
+      "id": "pediatria-0954",
+      "tema": "pediatria",
+      "acao": "adicionada",
+      "gabaritoOficial": "B",
+      "metadadosAnteriores": null,
+      "subtemas": [
+        "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+      ],
+      "comentarioCriadoOuRefeito": true,
+      "ressalvaBibliografica": "Gabarito B conforme referência de 4 mm. Os cortes operatórios variam; estudos utilizam também 3 mm. Integridade extensora, estabilidade e congruência podem mudar a conduta."
+    },
+    {
+      "numeroOriginal": 47,
+      "pagina": 12,
+      "id": "pediatria-0955",
+      "tema": "pediatria",
+      "acao": "adicionada",
+      "gabaritoOficial": "D",
+      "metadadosAnteriores": null,
+      "subtemas": [
+        "Fraturas do tornozelo na criança",
+        "Lesões fisárias"
+      ],
+      "comentarioCriadoOuRefeito": true,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 48,
+      "pagina": 12,
+      "id": "trauma-0771",
+      "tema": "trauma",
+      "acao": "atualizada",
+      "gabaritoOficial": "A",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Fraturas por estresse"
+        ],
+        "gabarito": "A"
+      },
+      "subtemas": [
+        "Fraturas por estresse",
+        "Trauma pediátrico"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 49,
+      "pagina": 12,
+      "id": "pediatria-0956",
+      "tema": "pediatria",
+      "acao": "adicionada",
+      "gabaritoOficial": "D",
+      "metadadosAnteriores": null,
+      "subtemas": [
+        "Fraturas supracondilianas do úmero"
+      ],
+      "comentarioCriadoOuRefeito": true,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 50,
+      "pagina": 13,
+      "id": "joelho-0192",
+      "tema": "joelho",
+      "acao": "atualizada",
+      "gabaritoOficial": "B",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Instabilidade femoropatelar"
+        ],
+        "gabarito": "B"
+      },
+      "subtemas": [
+        "Instabilidade femoropatelar"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 51,
+      "pagina": 13,
+      "id": "pediatria-0357",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Doença de Legg-Calvé-Perthes"
+        ],
+        "gabarito": "C"
+      },
+      "subtemas": [
+        "Doença de Legg-Calvé-Perthes"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 52,
+      "pagina": 13,
+      "id": "trauma-0772",
+      "tema": "trauma",
+      "acao": "atualizada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Fratura da cabeça do rádio e instabilidade do cotovelo"
+        ],
+        "gabarito": "C"
+      },
+      "subtemas": [
+        "Fratura da cabeça do rádio e instabilidade do cotovelo",
+        "Trauma pediátrico"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 53,
+      "pagina": 13,
+      "id": "joelho-0193",
+      "tema": "joelho",
+      "acao": "atualizada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Lesão do ligamento cruzado anterior"
+        ],
+        "gabarito": "C"
+      },
+      "subtemas": [
+        "Lesão do ligamento cruzado anterior"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 54,
+      "pagina": 14,
+      "id": "coluna-0227",
+      "tema": "coluna",
+      "acao": "atualizada",
+      "gabaritoOficial": "B",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Lesão medular e síndromes medulares",
+          "Hérnia de disco e mielopatia cervical"
+        ],
+        "gabarito": "B"
+      },
+      "subtemas": [
+        "Lesão medular e síndromes medulares"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 55,
+      "pagina": 14,
+      "id": "joelho-0194",
+      "tema": "joelho",
+      "acao": "atualizada",
+      "gabaritoOficial": "A",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Instabilidade femoropatelar"
+        ],
+        "gabarito": "A"
+      },
+      "subtemas": [
+        "Instabilidade femoropatelar"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 56,
+      "pagina": 14,
+      "id": "pediatria-0957",
+      "tema": "pediatria",
+      "acao": "adicionada",
+      "gabaritoOficial": "D",
+      "metadadosAnteriores": null,
+      "subtemas": [
+        "Luxações na criança",
+        "Ombro e cotovelo da criança"
+      ],
+      "comentarioCriadoOuRefeito": true,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 57,
+      "pagina": 14,
+      "id": "pediatria-0358",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Pé torto congênito",
+          "Outras doenças congênitas"
+        ],
+        "gabarito": "C"
+      },
+      "subtemas": [
+        "Joelho da criança",
+        "Outras doenças congênitas"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 58,
+      "pagina": 14,
+      "id": "pediatria-0958",
+      "tema": "pediatria",
+      "acao": "adicionada",
+      "gabaritoOficial": "A",
+      "metadadosAnteriores": null,
+      "subtemas": [
+        "Luxações na criança",
+        "Fraturas da pelve e do quadril na criança"
+      ],
+      "comentarioCriadoOuRefeito": true,
+      "ressalvaBibliografica": "O percentual de 25% é uma referência didática, relatada como até cerca de um quarto, e varia entre séries. Não é uma taxa universal nem um critério operatório individual."
+    },
+    {
+      "numeroOriginal": 59,
+      "pagina": 15,
+      "id": "pediatria-0359",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "D",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Outras doenças congênitas"
+        ],
+        "gabarito": "C"
+      },
+      "subtemas": [
+        "Mão da criança",
+        "Outras doenças congênitas"
+      ],
+      "comentarioCriadoOuRefeito": true,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 60,
+      "pagina": 15,
+      "id": "pediatria-0360",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "A",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Marcha na criança"
+        ],
+        "gabarito": "A"
+      },
+      "subtemas": [
+        "Marcha na criança"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 61,
+      "pagina": 16,
+      "id": "pediatria-0959",
+      "tema": "pediatria",
+      "acao": "adicionada",
+      "gabaritoOficial": "B",
+      "metadadosAnteriores": null,
+      "subtemas": [
+        "Maus-tratos",
+        "Fraturas do fêmur e da perna na criança",
+        "Fraturas do antebraço e punho na criança"
+      ],
+      "comentarioCriadoOuRefeito": true,
+      "ressalvaBibliografica": "A correlação indica mecanismos e suspeitas, não comprova maus-tratos isoladamente. Traço espiral pode ser acidental na criança que anda; lactentes exigem avaliação da compatibilidade com o desenvolvimento."
+    },
+    {
+      "numeroOriginal": 62,
+      "pagina": 16,
+      "id": "pediatria-0362",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "D",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Maus-tratos"
+        ],
+        "gabarito": "D"
+      },
+      "subtemas": [
+        "Maus-tratos"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 63,
+      "pagina": 16,
+      "id": "joelho-0195",
+      "tema": "joelho",
+      "acao": "atualizada",
+      "gabaritoOficial": "D",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Menisco discoide"
+        ],
+        "gabarito": "D"
+      },
+      "subtemas": [
+        "Menisco discoide"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 64,
+      "pagina": 17,
+      "id": "pediatria-0364",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "D",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Mielomeningocele"
+        ],
+        "gabarito": "D"
+      },
+      "subtemas": [
+        "Mielomeningocele"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 65,
+      "pagina": 17,
+      "id": "pediatria-0365",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Outras doenças congênitas"
+        ],
+        "gabarito": "C"
+      },
+      "subtemas": [
+        "Displasias esqueléticas e síndromes"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 66,
+      "pagina": 17,
+      "id": "coluna-0228",
+      "tema": "coluna",
+      "acao": "atualizada",
+      "gabaritoOficial": "B",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Escoliose idiopática"
+        ],
+        "gabarito": "B"
+      },
+      "subtemas": [
+        "Escoliose idiopática"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 67,
+      "pagina": 17,
+      "id": "joelho-0196",
+      "tema": "joelho",
+      "acao": "atualizada",
+      "gabaritoOficial": "B",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Osteocondrite dissecante"
+        ],
+        "gabarito": "B"
+      },
+      "subtemas": [
+        "Osteocondrite dissecante"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 68,
+      "pagina": 18,
+      "id": "pe-tornozelo-0386",
+      "tema": "pe-tornozelo",
+      "acao": "adicionada",
+      "gabaritoOficial": "B",
+      "metadadosAnteriores": null,
+      "subtemas": [
+        "Lesões osteocondrais do tálus"
+      ],
+      "comentarioCriadoOuRefeito": true,
+      "ressalvaBibliografica": "Gabarito oficial B. Lesões juvenis estáveis podem receber tratamento conservador inicial; estágio II isolado não impõe perfuração. Não confundir esta questão com a variante do acervo que cobra estágio I."
+    },
+    {
+      "numeroOriginal": 69,
+      "pagina": 18,
+      "id": "tumores-0254",
+      "tema": "tumores",
+      "acao": "atualizada",
+      "gabaritoOficial": "D",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Osteocondroma e exostoses múltiplas"
+        ],
+        "gabarito": "D"
+      },
+      "subtemas": [
+        "Osteocondroma e exostoses múltiplas"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 70,
+      "pagina": 18,
+      "id": "pediatria-0366",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "B",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Osteogênese imperfeita"
+        ],
+        "gabarito": "B"
+      },
+      "subtemas": [
+        "Osteogênese imperfeita"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 71,
+      "pagina": 19,
+      "id": "conceitos-basicos-0192",
+      "tema": "conceitos-basicos",
+      "acao": "atualizada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Osteomielite aguda"
+        ],
+        "gabarito": "C"
+      },
+      "subtemas": [
+        "Doenças autoinflamatórias ósseas"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 72,
+      "pagina": 19,
+      "id": "conceitos-basicos-0193",
+      "tema": "conceitos-basicos",
+      "acao": "atualizada",
+      "gabaritoOficial": "A",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Osteomielite aguda"
+        ],
+        "gabarito": "A"
+      },
+      "subtemas": [
+        "Osteomielite aguda"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 73,
+      "pagina": 19,
+      "id": "pe-tornozelo-0241",
+      "tema": "pe-tornozelo",
+      "acao": "atualizada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Tendões fibulares e outras tendinopatias"
+        ],
+        "gabarito": "C"
+      },
+      "subtemas": [
+        "Osteocondroses do pé"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 74,
+      "pagina": 19,
+      "id": "joelho-0197",
+      "tema": "joelho",
+      "acao": "atualizada",
+      "gabaritoOficial": "D",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Osteocondrite dissecante",
+          "Tendinopatias do aparelho extensor"
+        ],
+        "gabarito": "D"
+      },
+      "subtemas": [
+        "Joelho na criança",
+        "Tendinopatias do aparelho extensor"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 75,
+      "pagina": 20,
+      "id": "osteometabolicas-0054",
+      "tema": "osteometabolicas",
+      "acao": "atualizada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Outros temas osteometabólicos"
+        ],
+        "gabarito": "C"
+      },
+      "subtemas": [
+        "Outros temas osteometabólicos"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 76,
+      "pagina": 20,
+      "id": "pediatria-0367",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "D",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Paralisia cerebral"
+        ],
+        "gabarito": "D"
+      },
+      "subtemas": [
+        "Paralisia cerebral"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 77,
+      "pagina": 20,
+      "id": "pediatria-0368",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "B",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Paralisia cerebral"
+        ],
+        "gabarito": "B"
+      },
+      "subtemas": [
+        "Paralisia cerebral"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 78,
+      "pagina": 20,
+      "id": "mao-0421",
+      "tema": "mao",
+      "acao": "atualizada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Plexo braquial e paralisia obstétrica"
+        ],
+        "gabarito": "C"
+      },
+      "subtemas": [
+        "Plexo braquial e paralisia obstétrica"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 79,
+      "pagina": 20,
+      "id": "pe-tornozelo-0242",
+      "tema": "pe-tornozelo",
+      "acao": "atualizada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Pé cavo"
+        ],
+        "gabarito": "C"
+      },
+      "subtemas": [
+        "Pé cavo"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 80,
+      "pagina": 21,
+      "id": "pe-tornozelo-0243",
+      "tema": "pe-tornozelo",
+      "acao": "atualizada",
+      "gabaritoOficial": "B",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Pé plano flexível"
+        ],
+        "gabarito": "B"
+      },
+      "subtemas": [
+        "Pé plano flexível"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 81,
+      "pagina": 21,
+      "id": "pediatria-0369",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Genuvaro, genuvalgo e torções"
+        ],
+        "gabarito": "C"
+      },
+      "subtemas": [
+        "Outras deformidades do pé na criança"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 82,
+      "pagina": 21,
+      "id": "pediatria-0370",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Pé torto congênito"
+        ],
+        "gabarito": "C"
+      },
+      "subtemas": [
+        "Pé torto congênito"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 83,
+      "pagina": 21,
+      "id": "pediatria-0371",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "A",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Pé torto congênito"
+        ],
+        "gabarito": "A"
+      },
+      "subtemas": [
+        "Pé torto congênito"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 84,
+      "pagina": 21,
+      "id": "mao-0422",
+      "tema": "mao",
+      "acao": "atualizada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Dedo em gatilho e outras tenossinovites"
+        ],
+        "gabarito": "C"
+      },
+      "subtemas": [
+        "Dedo em gatilho e outras tenossinovites"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 85,
+      "pagina": 22,
+      "id": "mao-0423",
+      "tema": "mao",
+      "acao": "atualizada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Outras malformações congênitas"
+        ],
+        "gabarito": "C"
+      },
+      "subtemas": [
+        "Sindactilia e polidactilia"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 86,
+      "pagina": 22,
+      "id": "coluna-0229",
+      "tema": "coluna",
+      "acao": "atualizada",
+      "gabaritoOficial": "A",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Lesão medular e síndromes medulares"
+        ],
+        "gabarito": "A"
+      },
+      "subtemas": [
+        "Exame neurológico e radiculopatias"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 87,
+      "pagina": 22,
+      "id": "pe-tornozelo-0244",
+      "tema": "pe-tornozelo",
+      "acao": "atualizada",
+      "gabaritoOficial": "B",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Pé cavo",
+          "Exame físico do pé e tornozelo"
+        ],
+        "gabarito": "B"
+      },
+      "subtemas": [
+        "Pé cavo",
+        "Exame físico do pé e tornozelo"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 88,
+      "pagina": 22,
+      "id": "pediatria-0372",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "A",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Genuvaro, genuvalgo e torções"
+        ],
+        "gabarito": "A"
+      },
+      "subtemas": [
+        "Pseudartrose congênita da tíbia e deformidades da perna"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 89,
+      "pagina": 23,
+      "id": "osteometabolicas-0055",
+      "tema": "osteometabolicas",
+      "acao": "atualizada",
+      "gabaritoOficial": "A",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Raquitismo e osteomalácia"
+        ],
+        "gabarito": "A"
+      },
+      "subtemas": [
+        "Raquitismo e osteomalácia"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 90,
+      "pagina": 23,
+      "id": "tumores-0255",
+      "tema": "tumores",
+      "acao": "atualizada",
+      "gabaritoOficial": "B",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Sarcoma de Ewing"
+        ],
+        "gabarito": "B"
+      },
+      "subtemas": [
+        "Sarcoma de Ewing"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 91,
+      "pagina": 23,
+      "id": "tumores-0256",
+      "tema": "tumores",
+      "acao": "atualizada",
+      "gabaritoOficial": "B",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Osteossarcoma"
+        ],
+        "gabarito": "B"
+      },
+      "subtemas": [
+        "Osteossarcoma"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 92,
+      "pagina": 23,
+      "id": "tumores-0257",
+      "tema": "tumores",
+      "acao": "atualizada",
+      "gabaritoOficial": "A",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Encondroma e encondromatoses",
+          "Condrossarcoma"
+        ],
+        "gabarito": "A"
+      },
+      "subtemas": [
+        "Encondroma e encondromatoses"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 93,
+      "pagina": 23,
+      "id": "tumores-0258",
+      "tema": "tumores",
+      "acao": "atualizada",
+      "gabaritoOficial": "A",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Condrossarcoma"
+        ],
+        "gabarito": "A"
+      },
+      "subtemas": [
+        "Encondroma e encondromatoses"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 94,
+      "pagina": 24,
+      "id": "mao-0424",
+      "tema": "mao",
+      "acao": "atualizada",
+      "gabaritoOficial": "B",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Sindactilia e polidactilia",
+          "Outras malformações congênitas"
+        ],
+        "gabarito": "B"
+      },
+      "subtemas": [
+        "Sindactilia e polidactilia",
+        "Outras malformações congênitas"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 95,
+      "pagina": 24,
+      "id": "pediatria-0373",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "A",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Displasias esqueléticas e síndromes"
+        ],
+        "gabarito": "A"
+      },
+      "subtemas": [
+        "Displasias esqueléticas e síndromes"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 96,
+      "pagina": 24,
+      "id": "pediatria-0374",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "B",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Displasias esqueléticas e síndromes"
+        ],
+        "gabarito": "B"
+      },
+      "subtemas": [
+        "Displasias esqueléticas e síndromes"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 97,
+      "pagina": 24,
+      "id": "pediatria-0375",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "D",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Sinovite transitória e artrite séptica do quadril"
+        ],
+        "gabarito": "D"
+      },
+      "subtemas": [
+        "Sinovite transitória e artrite séptica do quadril"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 98,
+      "pagina": 25,
+      "id": "pediatria-0376",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Tíbia vara (Blount)"
+        ],
+        "gabarito": "C"
+      },
+      "subtemas": [
+        "Tíbia vara (Blount)"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 99,
+      "pagina": 25,
+      "id": "pediatria-0377",
+      "tema": "pediatria",
+      "acao": "atualizada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Coluna e pescoço da criança"
+        ],
+        "gabarito": "C"
+      },
+      "subtemas": [
+        "Coluna e pescoço da criança"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    },
+    {
+      "numeroOriginal": 100,
+      "pagina": 25,
+      "id": "coluna-0230",
+      "tema": "coluna",
+      "acao": "atualizada",
+      "gabaritoOficial": "C",
+      "metadadosAnteriores": {
+        "prova": "TEOT/TARO",
+        "ano": null,
+        "origem": null,
+        "subtemas": [
+          "Infecções da coluna"
+        ],
+        "gabarito": "C"
+      },
+      "subtemas": [
+        "Infecções da coluna"
+      ],
+      "comentarioCriadoOuRefeito": false,
+      "ressalvaBibliografica": null
+    }
+  ]
+}

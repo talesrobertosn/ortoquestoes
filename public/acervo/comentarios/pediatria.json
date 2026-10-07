@@ -4367,19 +4367,21 @@
   "conferido": false
  },
  "pediatria-0349": {
-  "conceito": "**O que é o ângulo de progressão do pé.** É o ângulo entre o **eixo longitudinal do pé** e a **linha de progressão da marcha**, observado enquanto a criança anda (ou medido em pegadas). Por convenção:\n- **positivo** quando o pé aponta **para fora** (marcha divergente, *out-toeing*);\n- **negativo** quando o pé aponta **para dentro** (marcha convergente, *in-toeing*).\n\nÉ o primeiro item do **perfil rotacional de Staheli**, porque resume na marcha a **soma** de todos os componentes rotacionais do membro inferior.\n\n**O perfil rotacional de Staheli.**\n\n| Item | O que avalia |\n|---|---|\n| Ângulo de progressão do pé | Resultado global da marcha |\n| Rotação interna e externa do quadril (em decúbito ventral) | **Versão femoral** (anteversão) |\n| Ângulo coxa-pé | **Torção tibial** |\n| Eixo transmaleolar | Torção tibial |\n| Forma do pé (borda lateral, bissetriz do retropé) | **Metatarso aduto** |\n\n**Os valores normais variam muito com a idade.** Na criança pequena, a variação é ampla, porque coexistem anteversão femoral aumentada, torção tibial interna fisiológica e pé ainda em desenvolvimento.\n- Entre **1 e 4 anos**, o ângulo de progressão do pé pode variar de cerca de **15° para dentro (−15°)** até **25° para fora (+25°)**.\n- Em crianças maiores e adultos, a média é de cerca de **+10°**, com variação aproximada de −5° a +20°.\n\n**As causas de marcha convergente por idade.**\n- **Lactente**: **metatarso aduto**.\n- **1 a 3 anos**: **torção tibial interna**, que melhora espontaneamente.\n- **3 a 8 anos**: **anteversão femoral** aumentada (a criança senta em W), que também tende a melhorar.\n\n**Conduta.** A grande maioria das alterações rotacionais na infância é **fisiológica** e se corrige com o crescimento. Órteses, palmilhas e sapatos especiais **não** alteram a evolução. A osteotomia rotacional fica para deformidades graves e persistentes após os 8 a 10 anos, com prejuízo funcional.",
-  "correta": "**Correta: D (+25° e −15°).** Entre 1 e 4 anos, o ângulo de progressão do pé tem grande variação normal, de cerca de 25° para fora (+25°) até 15° para dentro (−15°), pela coexistência de anteversão femoral, torção tibial e pé em desenvolvimento.",
+  "conceito": "O ângulo de progressão do pé mede a direção do eixo longitudinal do pé em relação à linha de marcha. Valores positivos representam o pé apontando para fora e negativos, para dentro, na convenção usada pela POSNA e por estudos de marcha. A medida não identifica sozinha a origem da rotação: versão femoral, torção tibial e formato do pé contribuem para o resultado global.\n\nPor isso, o perfil rotacional inclui rotação do quadril, ângulo coxa-pé, eixo transmaleolar e alinhamento do antepé. Uma criança pode ter um componente interno compensado por outro externo, apresentando progressão aparentemente normal. É necessário observar a marcha e examinar os segmentos, não diagnosticar apenas por uma pegada.\n\nExiste um conflito documental nesta questão. O gabarito oficial de 2024 assinala C (+15° a -25°), enquanto o registro anterior do acervo utilizava D (+25° a -15°). As fontes acessadas confirmam a convenção e a ampla variação relacionada à idade, mas não permitiram corroborar exatamente a faixa escrita em C para todo o grupo de 1 a 4 anos. O registro passa a seguir a letra oficial, mantendo a ressalva. Esses números não devem ser convertidos em limite automático de doença ou indicação cirúrgica: sintomas, assimetria e evolução importam.",
+  "correta": "C é a resposta oficialmente publicada pela SBOP. Pela convenção usual, corresponde a até 15° externo e 25° interno. A faixa exata não foi confirmada nas fontes consultadas, portanto a justificativa registra a autoridade do gabarito e sua limitação, sem apresentar esse intervalo como consenso clínico universal.",
   "incorretas": {
-   "A": "**0 a +15°** é uma faixa estreita demais e ignora a marcha levemente convergente, que é normal nessa idade.",
-   "B": "**0 a −15°** considera apenas a marcha para dentro e exclui a marcha divergente, também normal.",
-   "C": "**+15 a −25°** inverte os limites: a marcha para dentro normal não chega a 25°, enquanto a divergente pode chegar a 25°."
+   "A": "A faixa de 0° a +15° inclui apenas progressão neutra ou externa. Crianças pequenas podem apresentar progressão interna fisiológica, conforme seu perfil e desenvolvimento. A opção não representa a amplitude que a banca pretende cobrar; não se pode diagnosticar patologia apenas porque uma medida é negativa.",
+   "B": "A faixa de 0° a -15° inclui somente neutro e interno, excluindo valores externos também possíveis. Ela não descreve a variabilidade global. O sentido do sinal precisa ser explicado antes de comparar números, para não confundir torção externa com interna.",
+   "D": "D era a resposta cadastrada anteriormente e contém os limites numéricos invertidos em relação a C. Ela não é a letra do gabarito oficial enviado. A substituição documental não deve ocultar a limitação da confirmação bibliográfica: referências variam com população, idade e método de medida, e a faixa exata precisa ser conferida antes de ser aplicada à avaliação clínica."
   },
   "referencias": [
-   "Staheli LT, Corbett M, Wyss C, King H. Lower-extremity rotational problems in children. Normal values to guide management. J Bone Joint Surg Am. 1985;67(1):39-47.",
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+   "Staheli LT et al. Lower-extremity rotational problems in children. Normal values to guide management. https://pubmed.ncbi.nlm.nih.gov/3968103/",
+   "POSNA. Torsional Problems. https://posna.org/physician-education/study-guide/torsional-problems",
+   "Is in-toing gait physiological in children? Results of a large cohort study in 5910 healthy (pre-) school children. https://www.sciencedirect.com/science/article/pii/S0966636218314310"
   ],
-  "geradoEm": "2026-10-05",
-  "conferido": false
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "alerta": "Gabarito oficial TEPOP 2024: C. O acervo anterior, de origem indefinida, trazia D. As fontes verificadas confirmam sinais e variação etária, mas não corroboram a faixa exata de C; manter a ressalva e não utilizar esses números como indicação automática de tratamento."
  },
  "pediatria-0350": {
   "conceito": "**A discrepância de comprimento dos membros na criança.** Um membro pode ficar diferente do outro por **encurtamento** (o membro acometido cresce menos) ou por **hipercrescimento** (cresce mais). A causa costuma estar na **fise**: o que a lesa ou a desliga encurta; o que aumenta o fluxo sanguíneo para ela estimula o crescimento.\n\n**As causas pelo mecanismo.**\n| Mecanismo | Exemplos |\n|---|---|\n| **Encurtamento** (congênito) | Hemimelia fibular, deficiência femoral, hemiatrofia, pé torto |\n| **Encurtamento** (adquirido) | Lesão fisária (fratura, infecção, tumor), **Perthes**, DDQ com necrose, epifisiólise, paralisia (pólio, paralisia cerebral), radiação |\n| **Hipercrescimento** | **Klippel-Trénaunay**, **hemangiomas** e malformações vasculares, **Beckwith-Wiedemann**, Proteus, neurofibromatose, fratura diafisária do fêmur, **inflamação** e infecção **metafisária** crônica (hiperemia), artrite idiopática juvenil |\n\n**O Perthes e o encurtamento.** Na doença de Legg-Calvé-Perthes, a necrose e o colapso da epífise **achatam** a cabeça femoral (coxa plana), e a lesão da fise pode encurtar o **colo** (coxa breva), com o trocânter alto. O membro fica mais curto, em geral de **1 a 2 cm**; a discrepância raramente precisa de tratamento.\n\n**Por que as outras causas alongam.** O **aumento do fluxo sanguíneo** para a fise estimula o crescimento:\n- nas **malformações vasculares** (Klippel-Trénaunay, hemangiomas), o membro tem mais vasos e cresce mais;\n- no **abscesso de Brodie metafisário** e nas infecções crônicas, a hiperemia inflamatória perto da fise estimula o crescimento, desde que a fise não seja destruída;\n- na **síndrome de Beckwith-Wiedemann** (macroglossia, onfalocele, hemi-hipertrofia), há **hemi-hipertrofia**, com risco de tumor de Wilms e hepatoblastoma (exige rastreamento com ultrassonografia abdominal).\n\n**A avaliação.** Escanometria (ou telerradiografia) e idade óssea; a previsão da discrepância final pelo método de Moseley, de Paley (multiplicador) ou de Green-Anderson orienta a epifisiodese ou o alongamento.\n\n**O hipercrescimento generalizado de um membro.** A síndrome de **Proteus** (AKT1, hipercrescimento progressivo e assimétrico, nevo cerebriforme) e a síndrome de **Klippel-Trénaunay-Weber** (malformação capilar, venosa e linfática, com hipercrescimento; o componente arteriovenoso caracteriza a de Parkes Weber) são causas clássicas de **hipercrescimento** de todo um membro. Outras: Beckwith-Wiedemann (hemi-hipertrofia), neurofibromatose (gigantismo localizado), hemi-hipertrofia isolada.\n\n**Os erros das outras afirmações.** O encurtamento pós-traumático é **menos** comum após a fratura de fêmur na criança, que costuma **hipercrescer** (0,7 a 1 cm entre 2 e 10 anos). A artrite inflamatória e as malformações arteriovenosas causam **aumento** do fluxo sanguíneo (e hipercrescimento), e não diminuição. A escanometria e a panorâmica dos membros são **essenciais** para medir e acompanhar a discrepância.",
@@ -4518,19 +4520,18 @@
   "conferido": false
  },
  "pediatria-0359": {
-  "conceito": "**A macrodactilia.** É o **crescimento exagerado** de um ou mais dedos, envolvendo **todos os tecidos**: osso, gordura, nervo, pele e unhas. É rara e quase sempre **unilateral**.\n\n**Onde ocorre.** Na mão, acomete mais o **indicador** e o **dedo médio**, e muitas vezes segue o **território de um nervo**, geralmente o **mediano**. No pé, acomete mais o segundo e o terceiro dedos. Pode ocorrer nas duas regiões e envolver mais de um dedo, em geral vizinhos.\n\n**A causa.** Muitos casos fazem parte do espectro de **crescimento excessivo relacionado ao PIK3CA** (PROS), por mutações em mosaico (somáticas). O nervo acometido fica **aumentado**, com infiltração **fibrogordurosa** (lipofibromatose do nervo). Também deve-se pensar em diagnósticos diferenciais: neurofibromatose, síndrome de Proteus, malformações vasculares (Klippel-Trenaunay) e doença de Ollier ou Maffucci.\n\n**Os dois padrões de crescimento.**\n\n| Tipo | Comportamento |\n|---|---|\n| **Estático** | O dedo nasce grande e cresce **proporcionalmente** ao resto |\n| **Progressivo** | O dedo cresce **mais rápido** que os outros, sobretudo na infância |\n\n**O que acontece no tecido.** Há um **aumento** do tecido **fibrogorduroso**, e não uma diminuição. O **osso** fica aumentado em **comprimento e largura**, e as articulações podem ficar rígidas e desviadas (o dedo se curva para o lado menos acometido).\n\n**A função é afetada.** Não é um problema apenas estético:\n- **rigidez** articular e desvio angular;\n- **compressão nervosa**, como a síndrome do túnel do carpo;\n- dificuldade de preensão, de calçar sapatos e de usar a mão.\n\n**O tratamento.** É difícil, e as recidivas são comuns.\n- **Redução de partes moles** (debulking) em etapas, com cuidado com o nervo.\n- **Epifisiodese** para frear o crescimento longitudinal, quando o dedo atinge o tamanho do dedo correspondente de um adulto do mesmo sexo na família.\n- **Osteotomias** para corrigir o desvio e encurtar.\n- **Amputação** do dedo ou **ressecção do raio**, nos casos graves, que muitas vezes dão o melhor resultado funcional, sobretudo no pé.\n\n**Sobre o gabarito desta questão.** O gabarito registrado é a alternativa **C**. A descrição clássica, porém, é a da alternativa **D**: o tecido fibrogorduroso está **aumentado**, e o osso cresce em comprimento e largura.",
-  "correta": "**Gabarito registrado: C.** A bibliografia descreve a macrodactilia com **aumento** do tecido fibrogorduroso e osso aumentado em comprimento e largura, o que corresponde à alternativa **D**. A afirmação C, de diminuição do tecido fibrogorduroso, contraria essa descrição. Ver o alerta acima.",
+  "conceito": "Macrodactilia é o crescimento excessivo de um ou mais dedos, envolvendo proporções variáveis de osso, gordura, pele, nervos e outros tecidos. Não é simplesmente um dedo edemaciado: trata-se de uma alteração de desenvolvimento que pode aumentar comprimento e largura e mudar alinhamento e mobilidade. Alguns casos integram o espectro de crescimento relacionado a mutações somáticas ativadoras de PIK3CA, presentes em mosaico, isto é, apenas em parte das células.\n\nO padrão pode ser estático, crescendo aproximadamente em proporção ao restante do membro, ou progressivo, aumentando de forma desproporcional. O tecido fibrogorduroso está aumentado, e o esqueleto do raio também pode crescer excessivamente. A frase da alternativa D descreve essa associação; não demonstra que toda a fisiopatologia se resuma a gordura empurrando o osso.\n\nA função pode ser prejudicada por rigidez, deformidade, dificuldade de preensão ou de calçar. Planejamento considera crescimento, alinhamento, sensibilidade e necessidades do paciente. Redução de partes moles, procedimentos ósseos e outras estratégias são individualizados, e recidiva/crescimento persistente podem exigir novas intervenções. O gabarito oficial resolve o erro antigo de cadastro: D, e não a afirmação de diminuição de tecido fibrogorduroso.",
+  "correta": "O osso pode aumentar em comprimento e largura em associação com crescimento excessivo fibrogorduroso, a descrição correta do gabarito. A interpretação deve reconhecer envolvimento de vários tecidos e mecanismos de crescimento, sem reduzir todo caso a uma única causa. Essa alternativa substitui a resposta C que estava cadastrada incorretamente.",
   "incorretas": {
-   "A": "A macrodactilia é quase sempre **unilateral**, e é mais frequente na **mão** (indicador e médio, território do nervo mediano), embora também ocorra no pé.",
-   "B": "A macrodactilia **afeta a função**: causa rigidez, desvio, compressão nervosa e dificuldade de preensão ou de calçar sapatos. O tratamento não é só estético.",
-   "D": "Pela bibliografia, esta é a descrição correta: o **tecido fibrogorduroso aumentado** e o osso **aumentado em comprimento e largura**. O gabarito registrado, porém, é a C."
+   "A": "Macrodactilia pode acometer mão ou pé e pode ocorrer bilateralmente, mas a frase afirma um predomínio bilateral nos pés que não caracteriza universalmente a entidade. Muitos casos são unilaterais e envolvem raios específicos. A distribuição varia e deve ser descrita no paciente, sem inferir um padrão obrigatório.",
+   "B": "O tratamento tem objetivos funcionais além dos estéticos. Um dedo muito grande pode tornar a preensão difícil, restringir movimento ou impedir calçar adequadamente. Aspecto visual também importa, mas dizer que a função não é afetada ignora consequências mecânicas e neurológicas do crescimento excessivo.",
+   "C": "O achado é aumento de tecido fibrogorduroso, não diminuição. A opção também atribui a condição a osteoclastos, células de reabsorção, sem fundamento para essa explicação causal. Ela contradiz o padrão de crescimento ósseo e de partes moles documentado nas séries e estudos moleculares."
   },
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
-   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)"
+   "Somatic gain-of-function mutations in PIK3CA in patients with macrodactyly. https://pmc.ncbi.nlm.nih.gov/articles/PMC3542862/",
+   "Congenital macrodactyly: a clinical study. https://pubmed.ncbi.nlm.nih.gov/16184993/"
   ],
-  "alerta": "O gabarito registrado (C) contraria a descrição clássica da macrodactilia, em que o tecido fibrogorduroso está aumentado, e não diminuído; pela bibliografia, a afirmação correta seria a D. Pode tratar-se de erro de gabarito ou de transcrição da prova.",
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-10-07",
   "conferido": false
  },
  "pediatria-0360": {
@@ -13012,5 +13013,316 @@
   "geradoEm": "2026-10-07",
   "conferido": false,
   "provavel": "B"
+ },
+ "pediatria-0940": {
+  "conceito": "Galeazzi é a associação de fratura do rádio, geralmente no segmento distal da diáfise, com lesão da articulação radioulnar distal. A ulna pode estar intacta, mas a relação articular entre os dois ossos está perdida. Na criança também existem lesões equivalentes em que a fise ulnar se separa, em vez de ocorrer a luxação típica. Por isso, uma radiografia do rádio isoladamente não encerra a avaliação: punho e cotovelo precisam ser incluídos.\n\nNa criança, a restauração do comprimento e do alinhamento radial costuma permitir reduzir a articulação distal. A imobilização axilopalmar controla a rotação, e a supinação favorece a posição do complexo estabilizador distal no padrão clássico cobrado. Esse tratamento tem resultados diferentes dos do adulto, em que a lesão geralmente demanda fixação do rádio. A estabilidade deve ser testada e acompanhada; irredução, interposição ou perda da redução podem exigir cirurgia. A afirmação raramente opera não significa que toda lesão de Galeazzi infantil seja estável.",
+  "correta": "A resposta combina supinação com tratamento predominantemente fechado na criança. Reduzir bem o rádio restaura sua relação com a ulna, e a imobilização que inclui o cotovelo limita forças rotacionais. A redução articular e sua estabilidade devem ser verificadas, pois o sucesso depende de tratar ambos os componentes da lesão.",
+  "incorretas": {
+   "A": "Pronação não é a posição clássica escolhida para manter a redução distal nessa questão. O segmento radial pode consolidar, mas a articulação distal precisa permanecer congruente. A parte sobre cirurgia pouco frequente é compatível com o comportamento pediátrico; o erro está em associá-la à posição de imobilização inadequada ao padrão descrito.",
+   "C": "A opção troca a posição clássica e atribui à criança uma frequência operatória mais característica do adulto ou de casos instáveis selecionados. A maturidade esquelética modifica a resistência ligamentar e a capacidade de manter redução. Não se deve transportar automaticamente o tratamento da fratura de necessidade cirúrgica do adulto para o paciente pediátrico.",
+   "D": "A supinação está correta, mas a cirurgia frequente não representa a evolução habitual do padrão infantil redutível e estável. Operar pode ser necessário se a articulação distal não reduz ou não se mantém. O enunciado cobra o tratamento conservador pediátrico típico, não todos os cenários possíveis de instabilidade."
+  },
+  "referencias": [
+   "POSNA. Distal Radius and Galeazzi Fractures. https://posna.org/physician-education/study-guide/distal-radius-and-galeazzi-fractures",
+   "Eberl R et al. Galeazzi lesions in children and adolescents: treatment and outcome. https://pubmed.ncbi.nlm.nih.gov/18443894/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false
+ },
+ "pediatria-0941": {
+  "conceito": "A incidência radiocapitelar é uma projeção complementar para separar a cabeça do rádio e o capítulo de estruturas que se sobrepõem no perfil convencional. Ela ajuda a procurar fraturas sutis da cabeça radial e alterações osteocondrais do capítulo. O conceito é geométrico: inclinar o feixe em relação ao braço muda a projeção sem depender apenas da rotação do paciente.\n\nO posicionamento clássico utiliza cotovelo fletido a 90° e antebraço em posição neutra, com inclinação aproximada de 45°. Contudo, há um problema de redação: o gabarito oficial escolhe C, que diz caudal, enquanto descrições publicadas da incidência de Greenspan referem angulação cranial, em direção ao ombro. Não é adequado ensinar que cranial e caudal são sinônimos. Entre as opções, C é a única que reúne a flexão e a posição neutra esperadas, mas a direção do feixe merece a ressalva registrada.\n\nNa prática, o técnico deve seguir a descrição da projeção e seu posicionamento anatômico, não reproduzir uma palavra isolada de uma questão. AP e perfil continuam necessários; a incidência adicional responde a uma dificuldade específica de sobreposição.",
+  "correta": "É a resposta oficial, por reunir cotovelo a 90° e antebraço neutro. A expressão caudal, entretanto, conflita com a angulação cranial descrita na literatura consultada. O comentário mantém a letra da banca e explicita esse limite, sem transformar a redação problemática em orientação radiográfica universal.",
+  "incorretas": {
+   "A": "A flexão de 90° é um elemento compatível, mas o antebraço pronado não corresponde ao posicionamento neutro cobrado. A pronação altera a orientação radial e pode mudar a sobreposição. Além disso, a direção caudal não é a descrição encontrada nas referências consultadas para a projeção clássica.",
+   "B": "A direção cranial se aproxima da descrição publicada do feixe, porém flexão de 45° e pronação trocam dois componentes do posicionamento. Acertar um detalhe técnico não valida a combinação inteira. A questão exige avaliar separadamente flexão, rotação do antebraço e angulação da ampola.",
+   "D": "Antebraço neutro e referência cranial são compatíveis com partes da técnica, mas a flexão de 45° não é o posicionamento clássico de 90°. A alternativa não resolve integralmente a inconsistência do enunciado. Posicionar a articulação corretamente é tão importante quanto inclinar o feixe."
+  },
+  "referencias": [
+   "Greenspan A, Norman A. The radial head, capitellum view: useful technique in elbow trauma. https://pubmed.ncbi.nlm.nih.gov/6979227/",
+   "[Modified profiles of the elbow in traumatology. The value of the radial head-capitellum view and a new coronoid-trochlea view]. https://pubmed.ncbi.nlm.nih.gov/3772878/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "alerta": "Gabarito oficial C. A nomenclatura caudal da alternativa diverge das descrições publicadas com angulação cranial de 45°. Preservar a letra da banca sem ensinar que as duas direções são equivalentes."
+ },
+ "pediatria-0942": {
+  "conceito": "Song organiza as fraturas do côndilo lateral pela estabilidade e pela configuração do traço, e não apenas pelo tamanho do desvio. A cartilagem articular da criança pode formar uma dobradiça ainda não visível no raio X; sua integridade distingue uma fratura que se mantém de outra que perde redução. A oblíqua interna é importante porque pode mostrar um afastamento subestimado no AP.\n\n| Tipo | Padrão relevante |\n|---|---|\n| 1 | Traço estável, restrito à metáfise, com pequeno desvio |\n| 2 | Pequeno desvio, estabilidade potencialmente incerta |\n| 3 | Pequeno desvio, mas padrão intra-articular instável |\n| 4 | Desvio maior que 2 mm, sem rotação do fragmento |\n| 5 | Desvio maior que 2 mm, com rotação |\n\nO caso descreve exatamente o tipo 4. Instabilidade pede controle do fragmento e congruência articular; em casos selecionados, é possível reduzir e fixar de forma fechada. Isso não significa que a ausência de rotação torne a fratura estável. Desvio tardio, pseudartrose e deformidade podem resultar de uma lesão inicialmente subestimada.",
+  "correta": "O tipo 4 é deslocado acima de 2 mm e não rodado. Essa combinação distingue-o do 5 e explica a necessidade de redução e estabilização. Algumas fraturas podem ser tratadas com redução fechada e fixação percutânea, mas o resultado deve ser confirmado pela congruência, não apenas pela letra do tipo.",
+  "incorretas": {
+   "A": "O tipo 2 tem desvio pequeno e estabilidade potencialmente duvidosa. A questão já informa afastamento superior a 2 mm, que a coloca além desse grupo. Dobradiça cartilaginosa e incidência oblíqua ajudam a avaliar estabilidade, mas não tornam esse traço deslocado um tipo 2.",
+   "B": "O tipo 3 é instável, portanto essa palavra isolada pode atrair a escolha. Entretanto, seu padrão tem pequeno desvio, enquanto a descrição informa mais de 2 mm. A classificação combina estabilidade e deslocamento; acertar apenas o primeiro eixo não identifica o tipo.",
+   "D": "O tipo 5 exige rotação do fragmento, explicitamente ausente no enunciado. A rotação modifica a dificuldade de redução e frequentemente conduz à abordagem aberta. Todo tipo 5 é um padrão avançado, mas nem toda fratura com grande desvio e instabilidade é tipo 5."
+  },
+  "referencias": [
+   "The Song Classification Is Reliable and Guides Prognosis and Treatment for Pediatric Lateral Condyle Fractures: An Independent Validation Study With Treatment Algorithm. https://pubmed.ncbi.nlm.nih.gov/31415016/",
+   "POSNA. Lateral Condyle Fractures. https://posna.org/physician-education/study-guide/lateral-condyle-fractures"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false
+ },
+ "pediatria-0943": {
+  "conceito": "O epicôndilo medial dá origem ao grupo flexor-pronador e participa da inserção do complexo colateral medial. Uma avulsão desloca essas inserções; a relação com estabilidade, nervo ulnar e demanda esportiva deve ser considerada. Em luxações do cotovelo, o fragmento pode entrar na articulação e ficar encarcerado após a redução. Nessa situação, ele impede congruência e pode aprisionar tecidos ou comprometer o nervo.\n\nEncarceramento intra-articular é uma indicação consolidada de retirada do fragmento da articulação e tratamento da fratura, habitualmente por redução aberta e fixação. O debate é maior nas fraturas deslocadas, mas sem encarceramento, exposição ou comprometimento neurovascular. Os limites radiográficos variam e uma união fibrosa pode ser funcionalmente satisfatória. Portanto, pseudartrose radiográfica não é sinônimo de dor intensa ou incapacidade.\n\nExcisar o fragmento não é uma solução neutra: pode exigir reparo das inserções estabilizadoras. A avaliação procura um cotovelo congruente e estável, com função neurológica documentada, evitando decidir apenas pelo número de milímetros em uma incidência.",
+  "correta": "O fragmento encarcerado precisa ser liberado para restabelecer congruência articular. É a indicação mais inequívoca dentre as opções. A presença de nervo ulnar próximo reforça a necessidade de exame e planejamento, mas a decisão se fundamenta na interposição intra-articular, não apenas no grau de desvio.",
+  "incorretas": {
+   "A": "A união fibrosa ou ausência de união óssea pode ocorrer após tratamento conservador. A afirmação de que isso causa muitos sintomas não é verdadeira para todos: diversas crianças mantêm boa função. Deve-se distinguir achado radiográfico de pseudartrose sintomática, dor em valgo ou instabilidade funcional.",
+   "B": "Não existe reserva universal da cirurgia apenas para desvios acima de 2 cm. Encarceramento, exposição e comprometimento do nervo podem indicar intervenção com desvio medido menor. Além disso, a distância aparente depende da incidência. A alternativa transforma um valor alto em regra que ignora indicações anatômicas.",
+   "C": "A ausência de excisão não é a causa principal universal de instabilidade tardia. Preservar e restaurar as inserções do fragmento pode contribuir para estabilidade; excisão sem reconstrução pode prejudicá-la. A alternativa inverte a lógica do complexo flexor-pronador e colateral medial."
+  },
+  "referencias": [
+   "POSNA. Humerus Medial Epicondyle Fractures. https://posna.org/physician-education/study-guide/humerus-medial-epicondyle-fractures",
+   "Farsetti P et al. Long-term results of treatment of fractures of the medial humeral epicondyle in children. https://pubmed.ncbi.nlm.nih.gov/11568189/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false
+ },
+ "pediatria-0944": {
+  "conceito": "O periósteo é a camada que recobre o osso e, na criança, é espessa e resistente. Na fratura desviada, uma parte pode permanecer como dobradiça e outra romper ou interpor-se. Essa manga residual ajuda a explicar tanto a estabilidade quanto a dificuldade de redução: tracionar sem liberar o contato pode apenas tensionar tecidos.\n\nHá uma inconsistência importante nesta questão. Ápice volar significa angulação com convexidade voltada para a face palmar, geralmente com o fragmento distal angulado dorsalmente. No padrão clássico descrito pela AO, o periósteo dorsal pode permanecer íntegro e atuar como banda de tensão; a face volar é a que rompe. Isso corresponde à combinação da alternativa B. O gabarito oficial, entretanto, assinala C, volar íntegro e dorsal rompido.\n\nO comentário preserva a resposta oficial e não inverte a anatomia para justificá-la. Desvio em baioneta descreve sobreposição dos fragmentos e encurtamento; não define sozinho qual manga periosteal sobrevive em todo caso. A redução real depende da imagem e da configuração da lesão, podendo haver padrões mais complexos com ruptura maior.",
+  "correta": "C é a letra oficial. Volar íntegro e dorsal rompido corresponderia mais naturalmente ao padrão oposto de angulação, e não ao ápice volar tal como escrito. A discrepância deve permanecer visível; marcar essa letra na prova não significa que o tecido dorsal sempre se rompa em uma fratura pediátrica angulada dorsalmente.",
+  "incorretas": {
+   "A": "Integridade das duas faces não é o padrão habitual de uma fratura completa com grande sobreposição. Uma fratura incompleta pode preservar muito periósteo, mas a descrição em baioneta não autoriza assumir duas mangas intactas. A alternativa também não resolve a discrepância da direção do ápice.",
+   "B": "Volar rompido e dorsal íntegro é a associação clássica da fratura com angulação dorsal e ápice volar descrita pela AO. O dorsal atua como banda de tensão e pode dificultar a tração longitudinal direta. Apesar de ser a leitura anatomicamente mais compatível, não é a letra publicada no gabarito da SBOP.",
+   "D": "Ruptura de ambos os lados pode ocorrer em lesões muito instáveis, mas não é a combinação clássica solicitada. A extensão da ruptura não pode ser inferida apenas pelo encurtamento em baioneta. A alternativa descreve uma possibilidade de gravidade, sem estabelecer o padrão periosteal típico."
+  },
+  "referencias": [
+   "AO Surgery Reference. Closed reduction; K-wire fixation for Metaphyseal, simple complete, radius. https://surgeryreference.aofoundation.org/orthopedic-trauma/pediatric-trauma/distal-forearm/23r-m-31/closed-reduction-k-wire-fixation",
+   "Noonan KJ, Price CT. Forearm and distal radius fractures in children. https://pubmed.ncbi.nlm.nih.gov/9689186/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "alerta": "Gabarito oficial C. Com ápice volar, a descrição clássica da AO preserva o periósteo dorsal, compatível com B. Possível inversão do ápice ou da ordem dos tecidos na redação/gabarito. Não modificar a letra oficial nem ensinar a inversão como regra anatômica."
+ },
+ "pediatria-0945": {
+  "conceito": "A fise proximal do úmero fornece grande parte do crescimento longitudinal desse osso, e o ombro possui amplitude capaz de compensar parte de uma deformidade residual. Isso explica por que uma criança pequena pode obter excelente função com um desvio que seria inaceitável em um adolescente próximo da maturidade. Idade, crescimento restante e padrão da fratura devem ser considerados juntos.\n\nO gabarito escolhe 40° a 70° de angulação e 50% a 100% de translação para 7 anos. Essas faixas correspondem a uma questão de tolerância pediátrica, não a um consenso único: recomendações publicadas variam. A POSNA apresenta, como exemplo, limites dependentes da idade propostos por Dobbs, com maior tolerância abaixo de 7 anos e menor à medida que o crescimento termina.\n\nPercentual de desvio é translação em relação à largura óssea, não percentual de osso fraturado. Cem por cento significa perda do contato cortical direto nessa projeção. Mesmo com grande potencial de remodelação, lesão aberta, comprometimento neurovascular, irredução por interposição ou instabilidade relevante mudam a decisão. A faixa aceita não dispensa examinar nem acompanhar o alinhamento.",
+  "correta": "D é a combinação assinalada para 7 anos. O fundamento é o crescimento proximal ainda importante e a capacidade funcional do ombro. A amplitude dessas faixas exige contexto: não existe concordância universal sobre todos os cortes, e o aspecto radiográfico deve ser integrado a idade, estabilidade e integridade neurovascular.",
+  "incorretas": {
+   "A": "Noventa graus e translação completa representam tolerância muito ampla. Desvios extremos podem ser manejados sem cirurgia em crianças muito pequenas selecionadas, mas essa não é a faixa adotada pela banca para 7 anos. A idade específica impede tratar toda a população infantil como se tivesse o mesmo potencial de remodelação.",
+   "B": "A angulação está na faixa oficial, mas limitar a translação a menos de 50% não corresponde à tolerância maior cobrada para essa idade. Translação e angulação são medidas independentes. A opção reúne um componente correto e um limite mais restritivo que o escolhido no gabarito.",
+   "C": "A translação de 50% a 100% coincide com a faixa oficial, mas a angulação inferior a 40° é mais restrita. Limites menores podem ser adotados em pacientes mais velhos ou contextos selecionados. A questão exige a combinação etária específica, não apenas um valor que parece mais seguro."
+  },
+  "referencias": [
+   "POSNA. Proximal Humerus Fractures. https://posna.org/physician-education/study-guide/proximal-humerus-fractures",
+   "Dobbs MB et al. Severely displaced proximal humeral epiphyseal fractures. https://pubmed.ncbi.nlm.nih.gov/12604953/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "alerta": "Os limites são dependentes da idade e variam entre protocolos. A faixa do gabarito não deve ser apresentada como regra universal ou indicação automática de aceitar todo desvio."
+ },
+ "pediatria-0946": {
+  "conceito": "Salter-Harris II atravessa a fise e sai pela metáfise, deixando um fragmento metafisário ligado à epífise. A cartilagem articular não é atravessada pelo traço como nos tipos III e IV. Na tíbia proximal, ligamentos e estruturas adjacentes distribuem forças de maneira particular; a fíbula proximal oferece contenção lateral, e uma força em valgo pode abrir o lado medial e lesar a região fisária.\n\nA resposta oficial identifica valgo como o mecanismo clássico cobrado. Isso não exclui hiperextensão nem outros mecanismos em séries de fraturas fisárias proximais. É necessário distinguir uma pergunta específica sobre o padrão II de uma distribuição global que inclui espinha tibial, tuberosidade, metáfise e lesões intra-articulares.\n\nA proximidade da artéria poplítea torna obrigatória a avaliação vascular antes e depois da redução. Devem-se procurar síndrome compartimental e acompanhar crescimento, porque uma fratura aparentemente extra-articular ainda pode produzir barra fisária, discrepância ou deformidade angular. O mecanismo orienta a leitura e a redução, mas não substitui os exames.",
+  "correta": "Valgo é a resposta oficial e a associação clássica desta formulação. A força abre medialmente a região proximal, onde a fise pode ceder antes das estruturas ligamentares. Após reconhecer o traço, é essencial avaliar perfusão e crescimento restante, pois a lesão tem riscos além da angulação inicial.",
+  "incorretas": {
+   "A": "Varo é um mecanismo possível de lesão proximal da tíbia, mas não é o padrão que o gabarito associa ao tipo II. A contenção lateral oferecida pela fíbula participa dessa diferença. Não se deve declarar que varo nunca causa fratura: localização e trajeto precisam ser confirmados na imagem.",
+   "C": "Flexão com avulsão do aparelho extensor lembra a tuberosidade tibial, especialmente em adolescentes. Esse padrão pode estender-se à epífise ou metáfise, mas não equivale à associação fisária de valgo cobrada. O centro anatômico da lesão distingue os mecanismos próximos.",
+   "D": "Hiperextensão pode causar fratura fisária proximal e está associada a preocupação vascular quando a metáfise se desloca posteriormente. É uma possibilidade real, não uma impossibilidade. A banca escolheu valgo nesta pergunta específica; a alternativa não autoriza ignorar lesões por extensão na prática."
+  },
+  "referencias": [
+   "Classification of proximal tibial fractures in children. https://pmc.ncbi.nlm.nih.gov/articles/PMC2686808/",
+   "Physeal fractures about the knee. https://pmc.ncbi.nlm.nih.gov/articles/PMC5127950/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false
+ },
+ "pediatria-0947": {
+  "conceito": "A pelve infantil possui cartilagem, periósteo e estruturas ligamentares que lhe conferem maior elasticidade. Essa flexibilidade modifica o padrão de lesão em comparação com o adulto, mas não funciona como proteção absoluta. Para romper o anel ou a região acetabular, frequentemente é necessário trauma importante, e lesões associadas podem determinar a gravidade imediata.\n\nÉ útil separar duas famílias: fraturas do anel/acetábulo por alta energia e avulsões apofisárias por contração ou estiramento musculotendíneo em adolescentes. Atropelamentos, colisões e quedas de altura pedem avaliação completa de vísceras, sistema urinário, cabeça e outros segmentos. Hematúria, incapacidade de urinar e sinais perineais merecem investigação apropriada.\n\nNo acetábulo, a cartilagem trirradiada participa do crescimento. Uma lesão pode alterar o desenvolvimento mesmo com pequena deformidade inicial. O tratamento depende de estabilidade, desvio, congruência e maturidade; a questão cobra mecanismo geral, sem informar uma fratura que permita escolher implante ou abordagem.",
+  "correta": "Trauma de alta energia ou queda de altura é a associação correta para as fraturas relevantes do anel e acetábulo. A energia que rompe a estrutura pode atingir vísceras e sistema urinário. O exame ortopédico precisa integrar-se à avaliação global do trauma, sem se limitar à radiografia pélvica.",
+  "incorretas": {
+   "A": "Avulsões apofisárias são tipicamente produzidas por tração do músculo ou tendão sobre um centro em desenvolvimento. Exemplos incluem espinhas ilíacas e tuberosidade isquiática durante esporte. Trauma direto pode causar outras fraturas, mas não é a definição mecânica usual das avulsões citadas.",
+   "C": "Fraturas dos membros superiores podem coexistir, mas não são a associação principal que deve orientar a avaliação de risco visceral e geniturinário. O perfil depende do mecanismo, e membros inferiores também podem estar envolvidos. A alternativa reduz indevidamente o problema a outra fratura periférica.",
+   "D": "Maior elasticidade não elimina lesões urinárias. Uretra e bexiga podem ser atingidas em trauma pélvico pediátrico, e a ausência de grande desvio ósseo não garante integridade visceral. A alternativa transforma uma característica anatômica verdadeira em uma conclusão clínica falsa."
+  },
+  "referencias": [
+   "POSNA. Pelvic Fractures. https://posna.org/physician-education/study-guide/pelvic-fractures",
+   "Pelvic Fractures and Associated Urogenital Injuries in Children: A Systematic Review. https://pubmed.ncbi.nlm.nih.gov/40191896/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false
+ },
+ "pediatria-0948": {
+  "conceito": "A tuberosidade tibial é uma apófise, um centro de ossificação de inserção tendínea, onde se fixa o tendão patelar. O quadríceps transmite sua força à patela e desta à tuberosidade. No adolescente próximo do fechamento fisário, uma carga súbita pode superar a resistência da região em desenvolvimento e produzir avulsão.\n\nDois mecanismos são reconhecidos: contração forte durante o salto e flexão forçada do joelho contra quadríceps contraído na aterrissagem. Na segunda situação, o músculo trabalha de modo excêntrico: produz força enquanto se alonga para desacelerar o corpo. A questão especifica flexão passiva rápida e cobra a aterrissagem. Não significa que a fase de impulsão nunca cause a fratura.\n\nDeve-se avaliar integridade do mecanismo extensor, extensão articular do traço e perfusão. A síndrome compartimental pode ocorrer e precisa ser procurada, inclusive por dor crescente e necessidade progressiva de analgesia. A escolha de tratamento depende de desvio e padrão, não apenas do mecanismo esportivo.",
+  "correta": "Na aterrissagem, o joelho tende a fletir enquanto o quadríceps contrai para frear o movimento. Uma flexão súbita produz tração elevada pelo tendão patelar e pode avulsionar a apófise. Essa relação entre força externa e resistência muscular torna C a associação mecânica correta.",
+  "incorretas": {
+   "A": "A impulsão pode causar avulsão por contração potente do quadríceps, mas a alternativa associa a ela flexão passiva rápida contra o músculo contraído. Esse é o componente clássico da aterrissagem descrito na resposta C. O erro é a combinação da fase com o modo de carga, não a ideia de que saltar seja uma causa possível.",
+   "B": "A impulsão é uma fase possível de lesão, porém a flexão passiva lenta não reproduz o pico excêntrico súbito cobrado. A velocidade e o antagonismo entre flexão externa e quadríceps contraído explicam a tensão apofisária. Uma carga progressiva não é equivalente ao impacto rápido do pouso.",
+   "D": "A fase de aterrissagem está correta, mas lenta troca a característica súbita do mecanismo típico. A força de desaceleração cresce em pouco tempo durante o pouso, elevando a tração no centro de ossificação. A alternativa contém parte verdadeira e erra o elemento temporal decisivo."
+  },
+  "referencias": [
+   "POSNA. Tibial Tubercle Fractures. https://posna.org/physician-education/study-guide/tibial-tubercle-fractures",
+   "Classification of proximal tibial fractures in children. https://pmc.ncbi.nlm.nih.gov/articles/PMC2686808/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false
+ },
+ "pediatria-0949": {
+  "conceito": "A espinha ou eminência tibial é a região óssea na qual se insere o ligamento cruzado anterior. Na criança, o osso imaturo pode ceder antes do ligamento, produzindo uma avulsão que funciona como equivalente de lesão do cruzado anterior. O fragmento elevado pode bloquear extensão, e os meniscos ou o ligamento intermeniscal podem ficar interpostos no leito da fratura.\n\nA associação meniscal é importante por duas razões diferentes: pode existir uma rotura e pode haver aprisionamento sem rotura completa. Em ambos os casos, a redução do fragmento pode ficar impedida. A ressonância pode ajudar a reconhecer tecidos associados, enquanto a avaliação artroscópica permite inspecioná-los e liberar barreiras quando há indicação de cirurgia.\n\nO tratamento busca restabelecer a superfície e a tensão funcional do cruzado, preservando a fise. A classificação de Meyers-McKeever distingue lesões sem desvio, parcialmente elevadas e completamente deslocadas; a extensão do desvio e a possibilidade de redução orientam o tratamento. A pergunta não exige essa classificação, mas entender a anatomia explica por que a lesão meniscal é a resposta.",
+  "correta": "A proximidade dos meniscos e de suas inserções com o fragmento avulsionado explica a associação. Além de rotura, o menisco pode ser uma barreira mecânica à redução. Não basta baixar o fragmento radiograficamente: é preciso assegurar que nenhum tecido permaneceu preso entre ele e seu leito.",
+  "incorretas": {
+   "B": "O colateral lateral é um estabilizador periférico, mais distante da inserção tibial do cruzado anterior. Pode lesar-se em traumas combinados, mas não constitui a associação mais característica da avulsão descrita. A alternativa troca uma relação anatômica imediata por uma lesão possível, porém não predominante.",
+   "C": "O cruzado posterior tem inserção tibial posterior própria e pode apresentar sua própria avulsão. Isso é outra localização e outro padrão. Uma fratura da espinha tibial vinculada ao cruzado anterior não implica que o ligamento posterior seja a lesão associada mais comum.",
+   "D": "Fratura supracondiliana do fêmur pode coexistir em trauma importante, mas não é a associação local mais típica. São lesões de estruturas e mecanismos diferentes. O menisco está diretamente relacionado ao leito da avulsão e à dificuldade de redução, o que o torna o elemento discriminante."
+  },
+  "referencias": [
+   "POSNA. Tibial Spine Fractures. https://posna.org/physician-education/study-guide/tibial-spine-fractures",
+   "POSNA. Meniscus Tears. https://posna.org/physician-education/study-guide/meniscus-tears"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false
+ },
+ "pediatria-0950": {
+  "conceito": "O mecanismo torcional ocorre quando o corpo gira sobre um pé apoiado, transmitindo rotação à tíbia. A força tende a produzir traço espiral ou oblíquo, diferente do esmagamento por carga axial. Na criança pequena que já anda, a chamada fratura do toddler é o exemplo clássico: geralmente uma fratura pouco desviada na metade distal da tíbia, que pode ser difícil de perceber no primeiro raio X.\n\nO gabarito escolhe trauma torcional no terço distal para crianças menores de 11 anos. A associação é didática e não descreve todas as idades desse intervalo: crianças maiores também sofrem trauma esportivo direto e atropelamentos, e séries gerais podem encontrar muitas fraturas no terço médio. O importante é reconhecer o padrão torcional distal infantil sem transformá-lo em regra universal.\n\nA avaliação inclui fíbula, joelho e tornozelo. O estado da fíbula influencia estabilidade e tendência de angulação. Dor crescente, edema e alterações neurovasculares exigem reavaliação. Em lactentes que não deambulam, a compatibilidade entre mecanismo, desenvolvimento e lesão precisa ser investigada; um traço espiral isolado não prova violência.",
+  "correta": "Torção distal é a resposta oficial e corresponde ao padrão clássico da criança pequena, especialmente à fratura espiral ou oblíqua com pé apoiado. Sua identificação ajuda a explicar dor e claudicação com pouco edema. A faixa etária ampla do enunciado deve ser lida com cautela, pois não uniformiza todos os mecanismos antes dos 11 anos.",
+  "incorretas": {
+   "A": "Carga axial é diferente de torção: transmite compressão longitudinal em vez de giro sobre o pé fixo. Uma fratura distal pode ocorrer por vários mecanismos, mas essa combinação não é a associação escolhida para o padrão infantil cobrado. A localização sozinha não permite inferir o tipo de força.",
+   "B": "A alternativa troca tanto o mecanismo quanto a localização mais característica do padrão torcional infantil. Lesões proximais por carga ou trauma direto são possíveis, mas exigem uma história e uma imagem próprias. Não representam o exemplo típico de criança que torce o membro durante marcha ou queda.",
+   "D": "O mecanismo torcional é compatível com a infância, mas terço proximal não é a localização clássica cobrada. Uma fratura por giro pode ocorrer em outro nível; o erro é apresentá-lo como o padrão predominante dessa formulação. A resposta requer avaliar força e região juntas."
+  },
+  "referencias": [
+   "Pediatric Tibial Shaft Fractures. https://pmc.ncbi.nlm.nih.gov/articles/PMC6142797/",
+   "AO Surgery Reference. Toddler’s fracture. https://surgeryreference.aofoundation.org/orthopedic-trauma/pediatric-trauma/tibial-shaft/toddler-fracture/definition"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "alerta": "A associação torção/distal é clássica na criança pequena; não deve ser generalizada como distribuição universal de todas as fraturas diafisárias até 11 anos."
+ },
+ "pediatria-0951": {
+  "conceito": "Uma fratura estável em comprimento consegue resistir a encurtamento quando recebe carga; uma cominuição ou obliquidade longa tende a deslizar e perder comprimento. Hastes elásticas funcionam bem em muitos padrões estáveis, mas podem controlar pior fraturas instáveis ou próximas das extremidades. A placa em ponte submuscular oferece outra solução: estabiliza os segmentos principais sem expor e desvascularizar todos os fragmentos intermediários.\n\nA placa é introduzida por pequenas incisões, com redução indireta e preservação relativa do envelope periosteal. O objetivo não é comprimir cada fragmento, mas manter comprimento, eixo e rotação para permitir consolidação. Estudos de técnica e séries pediátricas sustentam seu uso em fraturas complexas, inclusive proximais ou distais.\n\nNúmero de parafusos não é uma regra universal de quatro ou cinco por segmento; depende de comprimento da placa, qualidade da ancoragem, tipo de parafuso e extensão do fragmento. A retirada do material também é individualizada. Não se deve inferir um sentido único de deformidade por haver placa lateral, nem decidir somente pela idade acima de 5 anos.",
+  "correta": "A placa submuscular em ponte é particularmente útil quando a fratura não mantém comprimento, como nas cominutivas e oblíquas longas. Ela controla os fragmentos principais e evita dissecção extensa do foco. Ideal deve ser entendido entre as estratégias para esse padrão, não como superioridade automática em toda criança maior de 5 anos.",
+  "incorretas": {
+   "B": "A presença de placa lateral distal exige atenção a crescimento, alinhamento e proximidade da fise, mas não estabelece uma regra universal de deformidade em varo. A retirada pode ser indicada por motivos específicos, porém não decorre automaticamente dessa afirmação. Direção da deformidade e conduta precisam ser verificadas no caso e no seguimento.",
+   "C": "A abordagem aberta convencional expõe mais o foco e pode aumentar dissecção e sangramento. Não existe fundamento para afirmar, como regra, menor perda de sangue e menor falha que a técnica submuscular. A biologia preservada e a estabilidade adequada são vantagens buscadas pela inserção em ponte.",
+   "D": "Uma exigência fixa de quatro ou cinco parafusos em cada lado não é um princípio universal. A placa em ponte justamente pode ser útil em fraturas proximais e distais em que as hastes elásticas controlam pior os segmentos. O planejamento depende da ancoragem disponível, respeitando a fise e a geometria do implante."
+  },
+  "referencias": [
+   "Submuscular Plate for Pediatric Femoral Fractures. https://pmc.ncbi.nlm.nih.gov/articles/PMC6132589/",
+   "Submuscular Bridge Plating for Complex Pediatric Femur Fractures Is Reliable. https://pmc.ncbi.nlm.nih.gov/articles/PMC3734415/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false
+ },
+ "pediatria-0952": {
+  "conceito": "Rádio e ulna formam uma unidade funcional que permite pronação e supinação. A curva radial, o espaço interósseo e a relação entre os dois ossos precisam ser mantidos. Uma pequena deformidade rotacional ou uma angulação que estreita esse espaço pode reduzir o movimento, mesmo que a consolidação seja rápida.\n\nNo galho verde há ruptura de uma cortical e deformação da outra. Classicamente, força em pronação produz ápice dorsal e força em supinação produz ápice volar; a redução procura desfazer esse componente. A relação entre direção do ápice e mecanismo é uma pista, mas o padrão completo e o nível também importam. Fraturas proximais do rádio estão sob influência do bíceps e supinador, que atuam sobre o fragmento proximal.\n\nDeformação plástica é curvatura permanente sem traço completo visível e pode ocorrer particularmente na ulna associada a outra lesão. A radiografia deve incluir articulações proximal e distal, porque uma lesão de Monteggia ou Galeazzi pode passar despercebida. Tratamento conservador é frequente na infância, desde que o alinhamento e a estabilidade sejam aceitáveis.",
+  "correta": "A relação clássica é pronação com ápice dorsal e supinação com ápice volar. O mecanismo rotacional ajuda a planejar a manobra inversa, sobretudo no galho verde. Depois da correção, devem ser conferidos espaço interósseo, curva radial e congruência, sem reduzir a avaliação apenas à posição da palma.",
+  "incorretas": {
+   "A": "A deformação plástica é particularmente lembrada na ulna, inclusive associada a fratura radial ou luxação da cabeça radial. Dizer que é mais comum no rádio troca essa associação clássica. Deve-se procurar curvatura e alinhamento das articulações, pois ausência de um traço nítido não significa osso sem lesão.",
+   "C": "Fraturas do antebraço são comuns, mas não se pode afirmar que sua maioria seja exposta ou que toda a frequência geral corresponda a exposição. Uma fratura exposta exige cuidados próprios e frequentemente estabilização operatória, porém a alternativa usa essa gravidade para distorcer a epidemiologia da lesão infantil.",
+   "D": "No rádio proximal, bíceps e supinador tendem a manter o fragmento proximal em supinação. Imobilizar indiscriminadamente em pronação não equilibra esse padrão e pode aumentar desalinhamento rotacional. A posição depende do nível e da redução obtida; a alternativa propõe uma regra que contraria a ação muscular descrita."
+  },
+  "referencias": [
+   "POSNA. Forearm: Radius and Ulnar Shaft Fractures. https://posna.org/physician-education/study-guide/forearm-radius-and-ulnar-shaft-fractures",
+   "Noonan KJ, Price CT. Forearm and distal radius fractures in children. https://pubmed.ncbi.nlm.nih.gov/9689186/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false
+ },
+ "pediatria-0953": {
+  "conceito": "A fratura diafisária do úmero no parto pode ocorrer durante extração difícil, distocia ou outras forças obstétricas. Dor e pseudoparalisia podem ser confundidas com lesão do plexo braquial: na pseudoparalisia, o bebê reduz movimento por dor, não necessariamente por perda de função neural. O diagnóstico deve localizar a fratura e avaliar a movimentação e os reflexos com cuidado.\n\nEssas fraturas geralmente consolidam com tratamento conservador e têm grande potencial de remodelação angular. A rotação merece atenção particular: deformidade em rotação interna pode ser produzida ou mantida se o braço for imobilizado com orientação inadequada. O gabarito cobra essa complicação potencial, não a afirmação de que ela seja um desfecho frequente.\n\nUm relato técnico documenta especificamente a preocupação com rotação interna/contratura, enquanto revisões recentes destacam prognóstico habitualmente excelente e ausência esperada de sequelas. A conclusão prática é proteger e orientar o membro adequadamente, sem manipulações agressivas nem prometer que todo tipo de desvio se corrige igualmente. Uma deformidade angular visível no início pode remodelar muito bem.",
+  "correta": "Rotação interna é a resposta oficial e a complicação potencial enfatizada no relato técnico de imobilização. O segmento distal pode consolidar orientado para dentro se essa posição for mantida. A ressalva é essencial: a maioria das fraturas neonatais evolui muito bem, e a fonte não estabelece que todos ou muitos bebês apresentem essa sequela.",
+  "incorretas": {
+   "A": "Valgo é um desvio angular e não a complicação rotacional específica cobrada para a diáfise obstétrica. O úmero neonatal tem grande capacidade de remodelar angulação. Deve-se distinguir esse cenário de lesões distais ou fisárias, cuja anatomia e possíveis deformidades são diferentes.",
+   "B": "Flexão também descreve um plano angular. Pode existir desalinhamento inicial, mas a questão pretende a deformidade rotacional relacionada à orientação do braço. Crescimento e movimento articular favorecem correção angular; isso não autoriza tratar angulação e torção como se fossem a mesma medida.",
+   "D": "Rotação externa não é a direção descrita como preocupação clássica do padrão e método de tratamento citados. Ambas as rotações devem ser observadas no exame, mas a associação cobrada é interna. O cuidado visa preservar orientação do membro e função, não aceitar uma rotação fixa apenas porque a criança é recém-nascida."
+  },
+  "referencias": [
+   "Neonatal Humerus Shaft Fracture Appropriate Treatment Method. https://pmc.ncbi.nlm.nih.gov/articles/PMC4922975/",
+   "Neonatal Birth Fractures. https://pmc.ncbi.nlm.nih.gov/articles/PMC12088161/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "alerta": "O gabarito cobra uma complicação potencial. As fontes recentes descrevem prognóstico geralmente excelente; não há base para ensinar rotação interna como sequela frequente de toda fratura obstétrica."
+ },
+ "pediatria-0954": {
+  "conceito": "O olécrano recebe o tendão do tríceps e participa da articulação ulnoumeral. Uma fratura desviada pode prejudicar tanto a continuidade do mecanismo extensor quanto a congruência articular. Na criança, a cartilagem ainda não ossificada dificulta estimar exatamente o degrau apenas pela radiografia.\n\nO gabarito associa cirurgia a desvio maior que 4 mm com acometimento articular. Uma revisão sistemática encontrou bons resultados conservadores nas lesões pouco desviadas e uso frequente de cirurgia a partir de aproximadamente 4 mm. Entretanto, não há corte universal: uma coorte mais recente utilizou 3 mm para orientar sua prática. Estabilidade, integridade extensora e lesões associadas também pesam.\n\nA pergunta é sobre a combinação mais clara de desvio e superfície atingida. Não se deve convertê-la em orientação para deixar toda fratura de 3 mm sem avaliar, nem operar todo afastamento extra-articular somente pelo número. O exame procura extensão ativa, edema, lesões associadas e congruência; a conduta preserva a superfície e respeita o desenvolvimento.",
+  "correta": "A alternativa reúne desvio significativo e comprometimento articular, a combinação mais inequívoca dentre as opções. A cirurgia busca restaurar a superfície e a função do tríceps. O limite de 4 mm deve ser entendido como referência da questão, com variação entre estudos e necessidade de avaliar estabilidade e extensão ativa.",
+  "incorretas": {
+   "A": "Desvio maior que 4 mm é relevante, mas superfície íntegra não identifica a indicação articular típica cobrada. Uma lesão extra-articular ainda pode operar por falha do mecanismo extensor ou instabilidade, portanto a frase não descreve uma impossibilidade. O erro é apresentá-la como a associação principal da questão.",
+   "C": "Entre 2 e 4 mm com superfície íntegra não configura por si uma indicação operatória universal. Muitos padrões estáveis e pouco desviados podem ser imobilizados e acompanhados. Integridade extensora e manutenção da redução continuam importantes, porque o número isolado não descreve todo o caso.",
+   "D": "Acometimento articular merece atenção mesmo com desvio menor, e alguns protocolos podem operar nessa faixa. Contudo, a questão adota o corte acima de 4 mm para a associação típica. A alternativa não deve ser ensinada como sempre conservadora: a literatura mostra variação de critérios."
+  },
+  "referencias": [
+   "Paediatric olecranon fractures: a systematic review. https://pmc.ncbi.nlm.nih.gov/articles/PMC7265082/",
+   "Characteristics and Treatment of Isolated Pediatric Olecranon Fractures. https://pubmed.ncbi.nlm.nih.gov/41277579/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "alerta": "Gabarito B conforme referência de 4 mm. Os cortes operatórios variam; estudos utilizam também 3 mm. Integridade extensora, estabilidade e congruência podem mudar a conduta."
+ },
+ "pediatria-0955": {
+  "conceito": "Dias-Tachdjian classifica fraturas do tornozelo infantil pelo posicionamento do pé e pela força deformante. Salter-Harris responde a outra pergunta: quais partes da fise, metáfise e epífise o traço atravessa. Um mesmo paciente pode receber descrições das duas classificações, sem que seus nomes sejam intercambiáveis.\n\nAs radiografias originais mostram uma lesão fisária distal da tíbia com desvio, associada a lesão fibular. O gabarito identifica pronação, eversão e rotação externa. A combinação das forças explica a sequência de falha óssea e fisária. Uma fratura da fíbula isoladamente não define o grupo; posição e padrão da tíbia distal devem ser lidos juntos.\n\nA avaliação clínica documenta perfusão, pele e função neurológica. Na imagem, a investigação procura desvio fisário e eventual componente articular, porque crescimento e congruência são prioridades diferentes. Redução e estabilização dependem da lesão completa. O nome do mecanismo é uma ferramenta de raciocínio, não uma decisão terapêutica automática.",
+  "correta": "D é o grupo identificado no gabarito oficial para as imagens originais. Pronação e eversão associadas à rotação externa explicam o padrão combinado distal da tíbia e fíbula. Depois de reconhecer o mecanismo, é necessário descrever separadamente a fise, o desvio e a superfície articular para planejar tratamento.",
+  "incorretas": {
+   "A": "Pronação-inversão não é a combinação clássica representada nesta questão. A inversão e a eversão produzem forças em sentidos opostos; trocar uma pela outra muda a sequência de tensão e compressão. Não basta manter a palavra pronação para identificar o mecanismo correto.",
+   "B": "Supinação-flexão plantar é um grupo reconhecido, mas envolve posicionamento e vetor diferentes do padrão assinalado nas radiografias. Flexão plantar não substitui rotação externa/eversão. A alternativa é um mecanismo possível de tornozelo infantil, porém não o correspondente ao caso mostrado.",
+   "C": "Supinação-rotação externa compartilha rotação externa com a resposta, mas a posição inicial do pé muda a distribuição das forças e o padrão resultante. A classificação não é feita pelo último termo isolado. A banca exige a combinação completa de pronação, eversão e rotação externa."
+  },
+  "referencias": [
+   "Dias LS, Tachdjian MO. Physeal injuries of the ankle in children: classification. https://pubmed.ncbi.nlm.nih.gov/103673/",
+   "Ankle fractures in children. EFORT Open Reviews. https://pmc.ncbi.nlm.nih.gov/articles/PMC8335959/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false
+ },
+ "pediatria-0956": {
+  "conceito": "Na fratura supracondiliana em extensão, o fragmento distal pode deslocar-se posteriormente com componente medial ou lateral. O fragmento proximal torna-se uma ameaça às estruturas anteriores. A direção do desvio ajuda a antecipar o nervo em risco, mas o exame deve documentar todos os territórios e a perfusão, antes e depois de redução e fixação.\n\nNo padrão clássico, desvio posteromedial associa-se mais ao radial, e posterolateral ao mediano/interósseo anterior e à artéria braquial. O ulnar merece atenção nas lesões em flexão e na passagem de pino medial. Essas relações são tendências anatômicas, não exclusões de lesões atípicas.\n\nA linha umeral anterior é traçada no perfil pela cortical anterior do úmero e deve relacionar-se ao capítulo. Baumann é uma referência de alinhamento coronal no AP. Ambos ajudam a detectar e avaliar desvio, com limitações de idade e posicionamento. Gartland III representa perda completa da continuidade cortical e habitualmente requer redução e fixação; urgência depende especialmente de perfusão e sinais compartimentais, não sendo correto chamá-la genericamente de cirurgia eletiva.",
+  "correta": "Linha umeral anterior e ângulo de Baumann são referências úteis para avaliar a fratura e seu alinhamento nas projeções adequadas. A primeira ajuda no plano sagital; o segundo, no coronal. Posição radiográfica, idade e comparação clínica são importantes, pois nenhuma medida substitui a avaliação neurovascular.",
+  "incorretas": {
+   "A": "Posterolateral coloca classicamente o complexo mediano/interósseo anterior e a artéria braquial em maior risco, não o ulnar como associação principal. O ulnar pode sofrer lesão, mas é particularmente lembrado em flexão e em fixação com pino medial. A alternativa troca os territórios típicos.",
+   "B": "Gartland III é uma fratura instável e não deve ser classificada genericamente como problema eletivo. Comprometimento vascular ou síndrome compartimental exige intervenção emergente. Mão bem perfundida pode permitir organizar o tratamento em condições apropriadas, porém essa nuance não transforma o tipo III em indicação eletiva universal.",
+   "C": "Posteromedial está classicamente associado a risco do radial. O mediano e sua divisão interóssea anterior são mais lembrados no desvio posterolateral. Como lesões podem variar, todos os nervos precisam ser examinados; a opção erra a associação anatômica mais característica."
+  },
+  "referencias": [
+   "POSNA. Supracondylar Humerus Fractures. https://posna.org/physician-education/study-guide/supracondylar-humerus-fractures",
+   "Management of Pediatric Elbow Fractures and Dislocations. https://pmc.ncbi.nlm.nih.gov/articles/PMC11352739/",
+   "Journal of POSNA. The Open Approach to a Supracondylar Humerus Fracture. https://www.jposna.org/index.php/jposna/article/view/416/680"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false
+ },
+ "pediatria-0957": {
+  "conceito": "A luxação posterior do cotovelo separa as superfícies ulnoumeral e radiocapitelar e lesa o envelope capsuloligamentar. Fraturas associadas devem ser procuradas, particularmente o epicôndilo medial. Um fragmento encarcerado ou uma articulação incongruente após redução modifica o tratamento. O estado neurológico e a perfusão precisam ser documentados antes e depois da manobra.\n\nA pergunta distingue complicações presentes no trauma de sequelas que aparecem ou persistem na recuperação. Lesão arterial e neuropraxias podem surgir imediatamente. A redução do arco de movimento é uma consequência tardia clássica, relacionada a cicatrização capsular, lesão associada, dor e tempo de imobilização. Isso não significa que toda criança desenvolverá rigidez importante: séries pediátricas também mostram resultados funcionais bons.\n\nA estabilidade determina quando mobilizar e por quanto tempo proteger a articulação. Recuperação deve ser acompanhada, sem supor que manter imobilização cada vez mais longa sempre melhora a segurança. Um cotovelo estável, mas permanentemente rígido, não representa recuperação funcional completa.",
+  "correta": "Diminuição do arco é a resposta: após a lesão e cicatrização, pode persistir limitação de flexão, extensão ou rotação. Lesões associadas e imobilização contribuem para esse risco. A prevenção e recuperação dependem de redução congruente, estabilidade e mobilização no momento adequado.",
+  "incorretas": {
+   "A": "Lesão ulnar pode ocorrer no trauma, no encarceramento associado ou durante tratamento, exigindo exame imediato. Uma neuropatia pode persistir ou aparecer tardiamente em situações particulares, mas essa não é a complicação tardia típica que melhor distingue as opções. A cronologia e o mecanismo do déficit precisam ser especificados.",
+   "B": "Lesão da artéria braquial é uma preocupação aguda potencialmente grave. Perfusão deve ser checada antes e depois da redução, e uma mão comprometida não pode aguardar a fase tardia de recuperação. A alternativa não corresponde à sequela funcional clássica perguntada.",
+   "C": "Lesão mediana pode acompanhar o deslocamento ou aprisionamento, geralmente como problema reconhecido na avaliação inicial ou pós-redução. Pode deixar consequências, mas não é a escolha mais característica para complicação tardia nesse conjunto. Dormência ou fraqueza exigem investigação própria, não devem ser confundidas com rigidez."
+  },
+  "referencias": [
+   "Pure elbow dislocation in the paediatric age group. https://pubmed.ncbi.nlm.nih.gov/26686496/",
+   "POSNA. Humerus Medial Epicondyle Fractures. https://posna.org/physician-education/study-guide/humerus-medial-epicondyle-fractures",
+   "Early Outcomes of Pediatric Elbow Dislocation: Risk Factors Associated With Morbidity. https://pubmed.ncbi.nlm.nih.gov/26536011/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false
+ },
+ "pediatria-0958": {
+  "conceito": "A luxação traumática do quadril infantil é rara, mas precisa ser reconhecida e reduzida rapidamente para diminuir o risco de osteonecrose. Crianças pequenas podem luxar com energia menor que adultos; adolescentes tendem a exigir maior força. A avaliação procura fraturas, posição da cabeça femoral e congruência após redução.\n\nA maioria pode ser reduzida de modo fechado, com manipulação cuidadosa e condições adequadas. Redução aberta é indicada se não há redução fechada satisfatória ou se um fragmento/tecido permanece interposto. Uma imagem aparentemente melhor não basta se a articulação continua alargada ou incongruente. Tentativas forçadas repetidas podem causar lesões adicionais, especialmente no adolescente com fise aberta.\n\nA resposta de 25% é um valor didático relatado como até cerca de um quarto em publicações, não uma frequência universal. A proporção depende de idade, lesões associadas e composição da série. A conduta real é determinada por congruência e segurança, nunca pelo desejo de reproduzir uma porcentagem.",
+  "correta": "Vinte e cinco por cento é o valor escolhido pela banca e aparece na literatura como proporção de casos que podem precisar de redução aberta. A maioria ainda reduz de forma fechada. O percentual resume uma referência didática; a indicação individual é irredução ou interposição, não a posição do paciente numa estatística.",
+  "incorretas": {
+   "B": "Cinquenta por cento faria da necessidade de abertura metade dos casos, valor superior à referência usada na questão. Séries selecionadas podem ter lesões mais complexas, mas não se deve extrapolá-las para toda criança com luxação. A alternativa não corresponde ao dado didático assinalado.",
+   "C": "Setenta e cinco por cento inverte a ideia de que a maioria das luxações pediátricas pode ser reduzida fechadamente. A cirurgia permanece essencial quando indicada, mas não é a evolução rotineira desse percentual. A urgência de reduzir não significa necessidade universal de abrir a articulação.",
+   "D": "Noventa por cento sugeriria necessidade quase universal de redução aberta, em desacordo com a experiência relatada. A possibilidade de reduzir com manipulação cuidadosa é parte central do tratamento. Congruência final e investigação de fragmentos são mais importantes que escolher uma porcentagem alta por parecer uma lesão grave."
+  },
+  "referencias": [
+   "Traumatic hip dislocation in a 3-year-old girl. https://pubmed.ncbi.nlm.nih.gov/22158279/",
+   "Traumatic hip dislocations in children and adolescents: pitfalls and complications. https://pubmed.ncbi.nlm.nih.gov/19136423/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "alerta": "O percentual de 25% é uma referência didática, relatada como até cerca de um quarto, e varia entre séries. Não é uma taxa universal nem um critério operatório individual."
+ },
+ "pediatria-0959": {
+  "conceito": "Uma fratura pediátrica precisa ser interpretada pelo padrão, pela idade e pela capacidade de movimento da criança. Um mecanismo possível em uma criança que corre pode ser incompatível com um lactente que não se desloca. A imagem original reúne quatro situações para testar essa relação, não para diagnosticar maus-tratos apenas pelo formato do traço.\n\nI mostra um padrão tibial espiral/oblíquo aos 3 anos, compatível com torção de baixa energia sobre um pé apoiado. II mostra lesões costais em um bebê de 9 meses; compressão do tórax é uma hipótese relevante de trauma infligido. III mostra uma fratura supracondiliana aos 5 anos, idade e padrão compatíveis com queda cotidiana sobre o membro. IV mostra fraturas do antebraço em um lactente de 4 meses, cuja incapacidade de produzir sozinho um mecanismo de queda/torção do membro exige investigação de trauma externo.\n\nA sequência oficial é I-C, II-B, III-A e IV-D. A palavra provável é fundamental. História incompatível, múltiplas lesões e fraturas em estágios diferentes aumentam suspeita; doença óssea, trauma significativo documentado e circunstâncias perinatais devem ser considerados quando pertinentes. A avaliação é multidisciplinar, com exame completo e investigação por imagem apropriada à idade. Uma hipótese de violência não deve ser reduzida a uma acusação automática baseada num único raio X.",
+  "correta": "B reúne a sequência coerente com imagens e idade. Torção explica I; compressão torácica explica II; queda comum é compatível com III; trauma externo com torção/compressão é a hipótese cobrada para IV. A interpretação de possível maus-tratos permanece probabilística e precisa ser integrada à história, ao desenvolvimento e às demais lesões.",
+  "incorretas": {
+   "A": "I-A atribui ao padrão espiral o mecanismo de queda cotidiana em lugar da torção explicitamente oferecida; ambos podem coexistir numa história real, mas a associação mecânica mais específica é I-C. II-C não explica adequadamente a compressão costal. Além disso, III-D e IV-B trocam o padrão supracondiliano da criança que anda pelo contexto dos lactentes.",
+   "C": "I-A é menos específico que torção para o traço apresentado. III-C atribui mecanismo torcional à fratura supracondiliana, em vez da queda habitual. II-D e IV-B invertem a associação mais direta de compressão torácica com as costelas. A análise deve começar pelo osso e padrão, depois pela idade, não apenas pelas letras.",
+   "D": "I-C e IV-D estão de acordo com a sequência oficial, mas II-A atribui queda da própria altura às lesões costais do lactente, mecanismo que não explica adequadamente esse padrão sem uma história compatível. III-B associa compressão torácica/trauma suspeito à imagem supracondiliana de 5 anos. Acertar dois pares não torna a combinação completa válida."
+  },
+  "referencias": [
+   "European Society of Paediatric Radiology. ESR Essentials: imaging of suspected child abuse. https://pmc.ncbi.nlm.nih.gov/articles/PMC11914366/",
+   "Are There Hallmarks of Child Abuse? I. Osseous Injuries. https://pmc.ncbi.nlm.nih.gov/articles/PMC6474500/",
+   "Pediatric Tibial Shaft Fractures. https://pmc.ncbi.nlm.nih.gov/articles/PMC6142797/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "alerta": "A correlação indica mecanismos e suspeitas, não comprova maus-tratos isoladamente. Traço espiral pode ser acidental na criança que anda; lactentes exigem avaliação da compatibilidade com o desenvolvimento."
  }
 }

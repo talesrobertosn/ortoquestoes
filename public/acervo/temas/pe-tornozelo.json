@@ -8544,8 +8544,8 @@
       "subtemas": [
         "Coalizões tarsais"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEPOP",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "Na coalizão tarsal é comum encontrarmos",
       "imagens": [],
@@ -8574,7 +8574,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEPOP-SBOP-2024.pdf",
+        "pagina": 3,
+        "numeroOriginal": 10
+      }
     },
     {
       "id": "pe-tornozelo-0239",
@@ -8582,8 +8587,8 @@
       "subtemas": [
         "Pé cavo"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEPOP",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "Na doença de CHARCOT-MARIE-TOOTH temos",
       "imagens": [],
@@ -8612,7 +8617,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEPOP-SBOP-2024.pdf",
+        "pagina": 5,
+        "numeroOriginal": 23
+      }
     },
     {
       "id": "pe-tornozelo-0240",
@@ -8656,10 +8666,10 @@
       "id": "pe-tornozelo-0241",
       "tema": "Pé e tornozelo",
       "subtemas": [
-        "Tendões fibulares e outras tendinopatias"
+        "Osteocondroses do pé"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEPOP",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "Em relação à doença de SEVER",
       "imagens": [],
@@ -8688,7 +8698,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEPOP-SBOP-2024.pdf",
+        "pagina": 19,
+        "numeroOriginal": 73
+      }
     },
     {
       "id": "pe-tornozelo-0242",
@@ -8696,8 +8711,8 @@
       "subtemas": [
         "Pé cavo"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEPOP",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "Sobre o pé cavo, o retropé e antepé encontram-se respectivamente em",
       "imagens": [],
@@ -8726,7 +8741,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEPOP-SBOP-2024.pdf",
+        "pagina": 20,
+        "numeroOriginal": 79
+      }
     },
     {
       "id": "pe-tornozelo-0243",
@@ -8734,8 +8754,8 @@
       "subtemas": [
         "Pé plano flexível"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEPOP",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "Paciente masculino, 7 anos, apresenta pé plano, varização do calcâneo na ponta dos pés, sem queixas de dor, e reconstituição do arco plantar medial durante flexão plantar tem como melhor tratamento",
       "imagens": [],
@@ -8764,7 +8784,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEPOP-SBOP-2024.pdf",
+        "pagina": 21,
+        "numeroOriginal": 80
+      }
     },
     {
       "id": "pe-tornozelo-0244",
@@ -8773,8 +8798,8 @@
         "Pé cavo",
         "Exame físico do pé e tornozelo"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEPOP",
+      "ano": 2024,
       "dificuldade": null,
       "enunciado": "No teste dos blocos de COLEMAN utilizado para avaliação do pé cavo, o que ocorre quando a deformidade é flexível e onde deverá ser a correção da mesma",
       "imagens": [],
@@ -8803,7 +8828,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEPOP-SBOP-2024.pdf",
+        "pagina": 22,
+        "numeroOriginal": 87
+      }
     },
     {
       "id": "pe-tornozelo-0245",
@@ -14341,6 +14371,49 @@
         "arquivo": "SES-DF 2022 - Ortopedia e Traumatologia em Cirurgia da Coluna R4",
         "pagina": 3,
         "numeroOriginal": 30
+      }
+    },
+    {
+      "id": "pe-tornozelo-0386",
+      "tema": "Pé e tornozelo",
+      "subtemas": [
+        "Lesões osteocondrais do tálus"
+      ],
+      "prova": "TEPOP",
+      "ano": 2024,
+      "dificuldade": null,
+      "enunciado": "Nas lesões do tálus de acordo com a classificação por BERNDT e HARTY, a melhor opção para o estágio II é",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "conservador."
+        },
+        {
+          "letra": "B",
+          "texto": "perfuração óssea."
+        },
+        {
+          "letra": "C",
+          "texto": "ressecção do fragmento."
+        },
+        {
+          "letra": "D",
+          "texto": "perfuração óssea e fixação do fragmento."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEPOP-SBOP-2024.pdf",
+        "pagina": 18,
+        "numeroOriginal": 68
       }
     }
   ]
