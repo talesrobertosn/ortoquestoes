@@ -6051,8 +6051,8 @@
       "subtemas": [
         "Anatomia do quadril"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2025,
       "dificuldade": null,
       "enunciado": "Os músculos assinalados a seguir são, respectivamente:",
       "imagens": [
@@ -6088,7 +6088,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2025.pdf",
+        "pagina": 24,
+        "numeroOriginal": 63
+      }
     },
     {
       "id": "quadril-0185",
@@ -26298,6 +26303,196 @@
         "numeroOriginal": null
       },
       "area": "fellowship-quadril"
+    },
+    {
+      "id": "quadril-0640",
+      "tema": "Quadril",
+      "subtemas": [
+        "Vias de acesso ao quadril",
+        "Anatomia do quadril"
+      ],
+      "prova": "TEOT",
+      "ano": 2025,
+      "dificuldade": null,
+      "enunciado": "Os vasos corona mortis devem ser identificados e afastados ou ligados na via de acesso de:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "HARDINGE."
+        },
+        {
+          "letra": "B",
+          "texto": "STOPPA modificada."
+        },
+        {
+          "letra": "C",
+          "texto": "GIBSON modificada."
+        },
+        {
+          "letra": "D",
+          "texto": "KOCHER-LANGENBECK."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2025.pdf",
+        "pagina": 3,
+        "numeroOriginal": 5
+      }
+    },
+    {
+      "id": "quadril-0641",
+      "tema": "Quadril",
+      "subtemas": [
+        "Anatomia do quadril",
+        "Imagem do quadril"
+      ],
+      "prova": "TEOT",
+      "ano": 2025,
+      "dificuldade": null,
+      "enunciado": "Na imagem de ressonância magnética de quadril apresentada a seguir, as estruturas indicadas pelas setas são:",
+      "imagens": [
+        {
+          "arquivo": "quadril/quadril-0641-teot2025.jpeg",
+          "legenda": "TEOT 2025, questão 13. Figura original do arquivo fornecido.",
+          "largura": 269,
+          "altura": 261
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Cápsula articular e tendão do músculo glúteo médio."
+        },
+        {
+          "letra": "B",
+          "texto": "Cápsula articular e tendão do músculo glúteo mínimo."
+        },
+        {
+          "letra": "C",
+          "texto": "Tendão dos músculos reto femoral e glúteo médio."
+        },
+        {
+          "letra": "D",
+          "texto": "Tendão dos músculos reto femoral e glúteo mínimo."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2025.pdf",
+        "pagina": 7,
+        "numeroOriginal": 13
+      }
+    },
+    {
+      "id": "quadril-0642",
+      "tema": "Quadril",
+      "subtemas": [
+        "Osteonecrose da cabeça femoral",
+        "Imagem do quadril"
+      ],
+      "prova": "TEOT",
+      "ano": 2025,
+      "dificuldade": null,
+      "enunciado": "Na osteonecrose do quadril, as imagens de ressonância magnética a seguir demonstram o método de:",
+      "imagens": [
+        {
+          "arquivo": "quadril/quadril-0642-teot2025.jpeg",
+          "legenda": "TEOT 2025, questão 59. Figura original do arquivo fornecido.",
+          "largura": 652,
+          "altura": 327
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "FICAT, cuja soma dos ângulos tem valor preditivo quanto ao colapso subcondral."
+        },
+        {
+          "letra": "B",
+          "texto": "FICAT, cuja soma dos ângulos não tem valor preditivo quanto ao colapso subcondral."
+        },
+        {
+          "letra": "C",
+          "texto": "KERBOUL, cuja soma dos ângulos tem valor preditivo quanto ao colapso subcondral."
+        },
+        {
+          "letra": "D",
+          "texto": "KERBOUL, cuja soma dos ângulos não tem valor preditivo quanto ao colapso subcondral."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2025.pdf",
+        "pagina": 22,
+        "numeroOriginal": 59
+      }
+    },
+    {
+      "id": "quadril-0643",
+      "tema": "Quadril",
+      "subtemas": [
+        "Impacto femoroacetabular",
+        "Exame físico do quadril"
+      ],
+      "prova": "TEOT",
+      "ano": 2025,
+      "dificuldade": null,
+      "enunciado": "Na semiologia do quadril, a manobra utilizada para avaliação do impacto femoroacetabular é o teste de:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "CRAIG."
+        },
+        {
+          "letra": "B",
+          "texto": "PHELPS."
+        },
+        {
+          "letra": "C",
+          "texto": "FREIBERG."
+        },
+        {
+          "letra": "D",
+          "texto": "McCARTHY."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2025.pdf",
+        "pagina": 42,
+        "numeroOriginal": 109
+      }
     }
   ]
 }

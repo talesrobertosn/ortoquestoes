@@ -6835,7 +6835,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2025.pdf",
+        "pagina": 19,
+        "numeroOriginal": 51
+      }
     },
     {
       "id": "coluna-0219",
@@ -6873,13 +6878,17 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2025.pdf",
+        "pagina": 28,
+        "numeroOriginal": 72
+      }
     },
     {
       "id": "coluna-0220",
       "tema": "Coluna",
       "subtemas": [
-        "Escoliose idiopática",
         "Escoliose congênita e neuromuscular"
       ],
       "prova": "TEOT",
@@ -6919,7 +6928,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2025.pdf",
+        "pagina": 30,
+        "numeroOriginal": 79
+      }
     },
     {
       "id": "coluna-0221",
@@ -6957,7 +6971,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2025.pdf",
+        "pagina": 34,
+        "numeroOriginal": 89
+      }
     },
     {
       "id": "coluna-0222",
@@ -6965,8 +6984,8 @@
       "subtemas": [
         "Anatomia da coluna"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "TEOT",
+      "ano": 2025,
       "dificuldade": null,
       "enunciado": "Na imagem a seguir, a seta representa o ligamento:",
       "imagens": [
@@ -7002,7 +7021,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2025.pdf",
+        "pagina": 37,
+        "numeroOriginal": 96
+      }
     },
     {
       "id": "coluna-0223",
@@ -17957,6 +17981,101 @@
         "arquivo": "SES-DF 2022 - Ortopedia e Traumatologia em Cirurgia da Coluna R4",
         "pagina": 7,
         "numeroOriginal": 112
+      }
+    },
+    {
+      "id": "coluna-0488",
+      "tema": "Coluna",
+      "subtemas": [
+        "Hérnia de disco lombar",
+        "Medicamentos e exames laboratoriais"
+      ],
+      "prova": "TEOT",
+      "ano": 2025,
+      "dificuldade": null,
+      "enunciado": "No tratamento cirúrgico da hérnia discal, quando ocorre lesão da dura-máter, o medicamento que funciona como um dreno químico, promovendo a diminuição da produção liquórica pelo plexo coroide através da inibição da anidrase carbônica é:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A naloxona."
+        },
+        {
+          "letra": "B",
+          "texto": "O ibuprofeno."
+        },
+        {
+          "letra": "C",
+          "texto": "O acetaminofeno."
+        },
+        {
+          "letra": "D",
+          "texto": "A acetazolamida."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2025.pdf",
+        "pagina": 22,
+        "numeroOriginal": 58
+      }
+    },
+    {
+      "id": "coluna-0489",
+      "tema": "Coluna",
+      "subtemas": [
+        "Espondilólise e espondilolistese",
+        "Imagem da coluna"
+      ],
+      "prova": "TEOT",
+      "ano": 2025,
+      "dificuldade": null,
+      "enunciado": "Na espondilolistese, conforme a classificação de WILTSE, NEWMAN e MACNAB, a figura a seguir ilustra o tipo:",
+      "imagens": [
+        {
+          "arquivo": "coluna/coluna-0489-teot2025.jpeg",
+          "legenda": "TEOT 2025, questão 65. Figura original do arquivo fornecido.",
+          "largura": 230,
+          "altura": 237
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Ístmico."
+        },
+        {
+          "letra": "B",
+          "texto": "Displásico."
+        },
+        {
+          "letra": "C",
+          "texto": "Traumático."
+        },
+        {
+          "letra": "D",
+          "texto": "Degenerativo."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2025.pdf",
+        "pagina": 25,
+        "numeroOriginal": 65
       }
     }
   ]
