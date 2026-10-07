@@ -2,13 +2,16 @@
 // Uso: node marketing/instagram/gerar.mjs marketing/instagram/casos/01-tcg/caso.html
 // Os PNGs saem na pasta do HTML, em saida/ (ignorada pelo git).
 import { chromium } from 'playwright'
-import { mkdirSync } from 'fs'
+import { existsSync, mkdirSync } from 'fs'
 import { dirname, resolve } from 'path'
 
 const html = resolve(process.argv[2] ?? '')
 const saida = resolve(dirname(html), 'saida')
 mkdirSync(saida, { recursive: true })
-const navegador = await chromium.launch({ executablePath: process.env.CHROMIUM ?? '/opt/pw-browsers/chromium' })
+// Chromium do ambiente (CHROMIUM ou /opt/pw-browsers); sem ele, o do próprio Playwright
+// (npx playwright install chromium), como no Codex.
+const caminho = process.env.CHROMIUM ?? '/opt/pw-browsers/chromium'
+const navegador = await chromium.launch(existsSync(caminho) ? { executablePath: caminho } : {})
 const pagina = await navegador.newPage({ viewport: { width: 1200, height: 1920 } })
 await pagina.goto('file://' + html)
 await pagina.evaluate(() => document.fonts.ready)

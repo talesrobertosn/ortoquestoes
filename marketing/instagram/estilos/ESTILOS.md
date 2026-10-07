@@ -202,7 +202,9 @@ slogan, a questão como "roteiro" e a resposta nos créditos finais, com cena p�
 - **Regras:** conteúdo importante entre 250 e 1700 px de altura (fora das barras do Instagram);
   selo "R3" é piada e não imita classificação oficial; sem figurinha.
 
-## 9. Receituário (`posts/2026-10-08-receita-fratura-exposta/`)
+## 9. Receituário (`receita/`)
+
+Modelo: `receita/modelo.html` (5 slides de feed e 2 stories; original: `posts/2026-10-08-receita-fratura-exposta/`).
 
 **Ideia:** a questão vira uma receita médica para completar: o enunciado é a prescrição com as
 palavras em dúvida circuladas em vermelho, e cada slide decide uma palavra. Só tipografia (papel de

@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Receita Fratura Exposta</title>
+<!-- Receituário (estilo receita), 08/10/2026: a questão vira uma receita médica para completar.
+     5 slides de feed (1080x1350) e 2 stories (1080x1920, sem figurinha), só tipografia: papel de receituário, letra de médico em Caveat.
+     Questão real: trauma-0762 (TEOT 2025, gabarito A: cefalosporina de 1ª geração, de forma terapêutica).
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-08-receita-fratura-exposta/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Caveat; src: url(../../fontes/caveat-latin-wght-normal.woff2) format('woff2'); font-weight: 400 700; }
+@font-face { font-family: Playfair; src: url(../../fontes/playfair-display-latin-wght-normal.woff2) format('woff2'); font-weight: 400 900; }
+:root { --verde: #14655E; --tinta: #0B3A35; --ouro: #F4CF7C; --azul: #1f3f8f; --vermelho: #b3261e; --papel: #fdfcf7; --linha: #d6e3f3; --texto: #1d2733; --cinza: #6b7480; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #2b2b2b; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1350px; padding: 54px; font-family: Inter, sans-serif; color: var(--texto);
+  background: radial-gradient(ellipse at 30% 0%, #1b7a71, #0B3A35 70%); }
+.folha { position: absolute; inset: 54px 54px 54px 54px; border-radius: 14px; background:
+    repeating-linear-gradient(180deg, transparent 0 57px, var(--linha) 57px 59px) 0 300px / 100% calc(100% - 300px) no-repeat,
+    var(--papel);
+  box-shadow: 0 30px 70px rgba(0,0,0,.45); padding: 40px 54px; }
+.folha::before { content: ''; position: absolute; left: 22px; top: 300px; bottom: 30px; width: 2px; background: rgba(179,38,30,.35); }
+.cab { display: flex; justify-content: space-between; align-items: center; padding-bottom: 18px; border-bottom: 4px solid var(--verde); }
+.cab .marca { display: flex; align-items: center; gap: 12px; font: 30px Jakarta; letter-spacing: -.02em; color: var(--tinta); }
+.cab .marca svg { width: 46px; height: 46px; } .cab .marca b { font-weight: 800; }
+.cab .tipo { text-align: right; font: 800 22px Jakarta; letter-spacing: .2em; text-transform: uppercase; color: var(--verde); }
+.cab .tipo small { display: block; margin-top: 4px; font: 600 18px Inter; letter-spacing: .04em; text-transform: none; color: var(--cinza); }
+.campos { margin-top: 22px; display: grid; gap: 6px; font: 600 25px Jakarta; letter-spacing: .06em; text-transform: uppercase; color: var(--cinza); }
+.campos span b { font: 700 48px/1 Caveat; letter-spacing: 0; text-transform: none; color: var(--azul); margin-left: 12px; }
+.rx { font: 900 150px/1 Playfair; color: var(--verde); }
+.mao { font: 700 68px/1.2 Caveat; color: var(--azul); }
+.mao .duvida { display: inline-block; padding: 0 16px; border: 4px solid var(--vermelho); border-radius: 50%; color: var(--vermelho); transform: rotate(-4deg); }
+h1, h2 { font-family: Jakarta; letter-spacing: -.04em; color: var(--tinta); text-wrap: balance; }
+h1 { font-size: 82px; line-height: 1.02; font-weight: 800; }
+h2 { font-size: 64px; line-height: 1.05; font-weight: 800; }
+h1 em, h2 em { font-style: normal; color: var(--verde); }
+.texto { font-size: 34px; line-height: 1.42; color: #2b3540; text-wrap: pretty; }
+.texto b { color: var(--texto); }
+.chip { display: inline-block; padding: 8px 18px; border-radius: 8px; background: var(--tinta); color: var(--ouro); font: 800 21px Jakarta; letter-spacing: .16em; text-transform: uppercase; }
+.alts { display: grid; gap: 14px; }
+.alt { display: grid; grid-template-columns: 56px 1fr; gap: 20px; align-items: center; padding: 16px 20px; border: 3px solid #c8d3df; border-radius: 14px; background: #fff; font: 600 38px Jakarta; letter-spacing: -.02em; }
+.alt i { width: 56px; height: 56px; border-radius: 10px; display: grid; place-items: center; background: var(--tinta); color: var(--ouro); font: 800 28px Jakarta; font-style: normal; }
+.alt.certa { border-color: var(--verde); background: #e9f6f2; }
+.alt.certa i { background: var(--verde); color: #fff; }
+.dupla { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.cartao { padding: 24px 26px; border-radius: 16px; border: 3px solid #c8d3df; background: #fff; }
+.cartao.bom { border-color: var(--verde); background: #eef8f5; }
+.cartao strong { font: 800 20px Jakarta; letter-spacing: .14em; text-transform: uppercase; color: var(--cinza); }
+.cartao.bom strong { color: var(--verde); }
+.cartao h3 { margin-top: 6px; font: 800 44px/1.08 Jakarta; letter-spacing: -.03em; color: var(--tinta); }
+.cartao p { margin-top: 12px; font-size: 29px; line-height: 1.4; color: #2b3540; }
+.carimbo { position: absolute; padding: 10px 26px; border: 6px solid var(--vermelho); border-radius: 12px; color: var(--vermelho); font: 800 34px Jakarta; letter-spacing: .14em; text-transform: uppercase; transform: rotate(-10deg); opacity: .85; mix-blend-mode: multiply; }
+.carimbo.verde { border-color: var(--verde); color: var(--verde); }
+.prova { padding: 22px 26px; border-radius: 16px; background: var(--tinta); color: #fff; }
+.prova strong { font: 800 20px Jakarta; letter-spacing: .16em; text-transform: uppercase; color: var(--ouro); }
+.prova p { margin-top: 8px; font: 700 36px/1.3 Jakarta; letter-spacing: -.02em; }
+.rodape { position: absolute; left: 108px; right: 108px; bottom: 82px; display: flex; justify-content: space-between; font: 700 21px Jakarta; letter-spacing: .06em; text-transform: uppercase; color: var(--cinza); }
+.rodape b { color: var(--verde); }
+section.story { height: 1920px; }
+section.story .folha { inset: 200px 54px 230px 54px; }
+section.story .rodape { bottom: 262px; }
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#14655E"/><g fill="#FFFFFF" opacity=".55"><path transform="translate(13 9.5)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(11 21.2)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(13 44.6)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g><path fill="#F4CF7C" transform="translate(11 32.9)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></symbol>
+</defs></svg>
+
+<!-- 1. Capa: a receita incompleta -->
+<section id="p1-capa">
+  <div class="folha">
+    <div class="cab"><span class="marca"><svg><use href="#sim"/></svg><b>Orto</b> Questões</span><span class="tipo">Receituário<small>Sala de emergência · 1/5</small></span></div>
+    <div class="campos">
+      <span>Paciente:<b>fratura exposta GUSTILO tipo I</b></span>
+      <span>Ferida:<b>menor que 1 cm, limpa</b></span>
+    </div>
+    <div style="display:grid;grid-template-columns:130px 1fr;gap:20px;margin-top:56px;align-items:start">
+      <span class="rx">&#8478;</span>
+      <div class="mao" style="padding-top:18px">Cefalosporina de <span class="duvida">?</span> geração,<br>de forma <span class="duvida">?</span><br><span style="font-size:50px;color:#5a6f9a">iniciar já na sala de emergência</span></div>
+    </div>
+    <h1 style="margin-top:150px">Duas palavras desta receita valem <em>um ponto no TEOT.</em></h1>
+    <p class="texto" style="margin-top:18px">Uma é fácil. A outra derruba muita gente boa.</p>
+  </div>
+  <div class="rodape"><span>Arraste para prescrever</span><b>ortoquestoes.com.br</b></div>
+</section>
+
+<!-- 2. A questão -->
+<section id="p2-questao">
+  <div class="folha">
+    <div class="cab"><span class="marca"><svg><use href="#sim"/></svg><b>Orto</b> Questões</span><span class="tipo">Caiu assim<small>TEOT 2025 · 2/5</small></span></div>
+    <h2 style="margin-top:56px;font-size:56px;line-height:1.16">Na fratura exposta GUSTILO tipo I, o uso de antibiótico deve ser iniciado, já na sala de emergência, com cefalosporina de:</h2>
+    <div class="alts" style="margin-top:50px">
+      <div class="alt"><i>A</i>1ª geração, de forma terapêutica.</div>
+      <div class="alt"><i>B</i>1ª geração, de forma profilática.</div>
+      <div class="alt"><i>C</i>3ª geração, de forma terapêutica.</div>
+      <div class="alt"><i>D</i>3ª geração, de forma profilática.</div>
+    </div>
+    <p class="mao" style="margin-top:70px;font-size:60px">Comente a sua letra antes de arrastar.</p>
+  </div>
+  <div class="rodape"><span>Duas decisões, quatro combinações</span><b>2/5</b></div>
+</section>
+
+<!-- 3. Primeira decisão: a geração -->
+<section id="p3-geracao">
+  <div class="folha">
+    <div class="cab"><span class="marca"><svg><use href="#sim"/></svg><b>Orto</b> Questões</span><span class="tipo">1ª decisão<small>Qual geração · 3/5</small></span></div>
+    <h2 style="margin-top:56px">Ferida pequena e limpa pede <em>cobertura para a pele.</em></h2>
+    <p class="texto" style="margin-top:22px">No tipo I de GUSTILO a contaminação é mínima. Os germes que importam são os <b>cocos Gram-positivos</b> da pele, como o <b>Staphylococcus aureus</b>.</p>
+    <div class="dupla" style="margin-top:44px">
+      <div class="cartao bom"><strong>Escolha padrão</strong><h3>1ª geração</h3><p>A <b>cefazolina</b>. Cobre bem os Gram-positivos, que é o que o tipo I precisa.</p></div>
+      <div class="cartao"><strong>Não é a primeira escolha aqui</strong><h3>3ª geração</h3><p>Espectro voltado aos <b>Gram-negativos</b>. A cobertura é ampliada nas exposições mais graves, conforme o protocolo do serviço, e não no tipo I.</p></div>
+    </div>
+    <p class="mao" style="margin-top:60px;font-size:62px">Primeira palavra: 1ª geração. Isso tira C e D.</p>
+  </div>
+  <div class="rodape"><span>Falta a segunda palavra</span><b>3/5</b></div>
+</section>
+
+<!-- 4. Segunda decisão: profilática ou terapêutica -->
+<section id="p4-intencao">
+  <div class="folha">
+    <div class="cab"><span class="marca"><svg><use href="#sim"/></svg><b>Orto</b> Questões</span><span class="tipo">2ª decisão<small>Profilaxia ou tratamento · 4/5</small></span></div>
+    <h2 style="margin-top:56px">A pegadinha: o osso <em>já encontrou</em> o ambiente.</h2>
+    <p class="texto" style="margin-top:22px">Profilaxia é prevenir uma contaminação que ainda não aconteceu. Na fratura exposta, a ferida é <b>contaminada por definição</b> no momento do trauma.</p>
+    <div class="dupla" style="margin-top:44px">
+      <div class="cartao"><strong>Cirurgia eletiva limpa</strong><h3>Profilática</h3><p>Pele íntegra até a incisão. O antibiótico <b>previne</b> uma infecção futura.</p></div>
+      <div class="cartao bom"><strong>Fratura exposta</strong><h3>Terapêutica</h3><p>A contaminação <b>já está estabelecida</b>. O antibiótico trata, e por isso começa o quanto antes, ainda na emergência.</p></div>
+    </div>
+    <p class="mao" style="margin-top:60px;font-size:62px">Segunda palavra: terapêutica. Isso tira a B.</p>
+  </div>
+  <div class="rodape"><span>A receita completa na próxima</span><b>4/5</b></div>
+</section>
+
+<!-- 5. Resposta -->
+<section id="p5-resposta">
+  <div class="folha">
+    <div class="cab"><span class="marca"><svg><use href="#sim"/></svg><b>Orto</b> Questões</span><span class="tipo">Receita completa<small>Resposta · 5/5</small></span></div>
+    <div style="display:grid;grid-template-columns:130px 1fr;gap:20px;margin-top:40px;align-items:start">
+      <span class="rx">&#8478;</span>
+      <div class="mao" style="padding-top:18px">Cefalosporina de <u>1ª geração</u>,<br>de forma <u>terapêutica</u>,<br><span style="font-size:50px;color:#5a6f9a">já na sala de emergência</span></div>
+    </div>
+    <div class="carimbo verde" style="right:90px;bottom:190px">Resposta A</div>
+    <div class="alts" style="margin-top:36px">
+      <div class="alt certa"><i>A</i>1ª geração, de forma terapêutica.</div>
+    </div>
+    <p class="texto" style="margin-top:22px"><b>B</b> acerta a geração e erra a intenção. <b>C</b> erra a geração e acerta a intenção. <b>D</b> erra as duas.</p>
+    <div class="prova" style="margin-top:30px"><strong>Para a prova</strong><p>Fratura exposta não é ferida limpa: o antibiótico é tratamento. No tipo I, cefalosporina de 1ª geração, o quanto antes.</p></div>
+  </div>
+  <div class="rodape"><span>Salve a receita</span><b>Mais questões em ortoquestoes.com.br</b></div>
+</section>
+
+<!-- Stories: a receita incompleta de manhã e a completa à noite -->
+<section id="s1-receita" class="story">
+  <div class="folha">
+    <div class="cab"><span class="marca"><svg><use href="#sim"/></svg><b>Orto</b> Questões</span><span class="tipo">Receituário<small>Sala de emergência</small></span></div>
+    <div class="campos" style="margin-top:30px">
+      <span>Paciente:<b>fratura exposta GUSTILO tipo I</b></span>
+      <span>Ferida:<b>menor que 1 cm, limpa</b></span>
+    </div>
+    <div style="display:grid;grid-template-columns:130px 1fr;gap:20px;margin-top:80px;align-items:start">
+      <span class="rx">&#8478;</span>
+      <div class="mao" style="padding-top:18px;font-size:62px">Cefalosporina de <span class="duvida">?</span> geração,<br>de forma <span class="duvida">?</span></div>
+    </div>
+    <h1 style="margin-top:140px;font-size:88px">Você completaria esta receita <em>sem errar?</em></h1>
+    <p class="texto" style="margin-top:26px;font-size:38px">Caiu no TEOT 2025. A segunda palavra é a pegadinha.</p>
+    <p class="mao" style="margin-top:70px;font-size:66px">A resposta está no post de hoje.</p>
+  </div>
+  <div class="rodape"><span>Receita do dia</span><b>ortoquestoes.com.br</b></div>
+</section>
+
+<section id="s2-receita" class="story">
+  <div class="folha">
+    <div class="cab"><span class="marca"><svg><use href="#sim"/></svg><b>Orto</b> Questões</span><span class="tipo">Receita completa<small>TEOT 2025 · resposta A</small></span></div>
+    <div style="display:grid;grid-template-columns:130px 1fr;gap:20px;margin-top:70px;align-items:start">
+      <span class="rx">&#8478;</span>
+      <div class="mao" style="padding-top:18px;font-size:62px">Cefalosporina de <u>1ª geração</u>,<br>de forma <u>terapêutica</u>,<br><span style="font-size:54px;color:#5a6f9a">já na sala de emergência</span></div>
+    </div>
+    <div class="dupla" style="margin-top:70px">
+      <div class="cartao bom"><strong>1ª geração</strong><h3>Cobre a pele</h3><p>No tipo I a contaminação é mínima: <b>Gram-positivos</b>, cefazolina.</p></div>
+      <div class="cartao bom"><strong>Terapêutica</strong><h3>Já contaminou</h3><p>Ferida exposta é <b>contaminada por definição</b>. Profilaxia é para cirurgia limpa.</p></div>
+    </div>
+    <div class="carimbo verde" style="right:110px;top:1150px">Resposta A</div>
+    <div class="prova" style="margin-top:60px"><strong>Para a prova</strong><p>Fratura exposta não é ferida limpa: o antibiótico é tratamento.</p></div>
+  </div>
+  <div class="rodape"><span>Mais questões comentadas no site</span><b>ortoquestoes.com.br</b></div>
+</section>
+
+</body></html>

@@ -53,6 +53,14 @@ algo em poucos segundos e dar vontade de responder.
   a explicação em passos e a resposta no fim, com uma frase "para a prova".
 - Estilos novos são bem-vindos; quando um for aprovado, vira modelo em `marketing/instagram/estilos/`.
 
+## Outros agentes (Codex)
+
+Quando o post for feito por outro agente, ele deve seguir o roteiro passo a passo de
+[docs/prompts/codex-instagram.md](../prompts/codex-instagram.md). Ponto central: as imagens **não**
+são geradas por IA de imagem (nada de ultrarrealista, foto, ilustração ou 3D); são HTML e CSS a partir
+dos modelos de `marketing/instagram/estilos/`, transformados em PNG por `marketing/instagram/gerar.mjs`.
+Para os simulados de questões, o roteiro é [docs/prompts/codex-simulados.md](../prompts/codex-simulados.md).
+
 ## Rotina de cada post
 
 1. Escolher a questão (TEOT ou TARO de preferência, de um tema diferente do dia anterior) e ler o
