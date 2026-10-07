@@ -1,6 +1,6 @@
 # Simulado: Princípios da fixação externa
 
-Lote autoral de 21 questões, conceitos-basicos-0372 a conceitos-basicos-0392. Fonte: arquivo fornecido pelo usuário, capítulo 11 de J. Tracy Watson, Principles of External Fixation, 89 páginas. Referências indicam páginas do PDF; não se atribui edição ou paginação impressa ausente no arquivo.
+Lote autoral de 21 questões, conceitos-basicos-0408 a conceitos-basicos-0428. Fonte: arquivo fornecido pelo usuário, capítulo 11 de J. Tracy Watson, Principles of External Fixation, 89 páginas. Referências indicam páginas do PDF; não se atribui edição ou paginação impressa ausente no arquivo.
 
 ## Leitura do acervo anterior à redação
 
@@ -30,3 +30,5 @@ Conferência individual de gabarito, mecanismo de cada alternativa, páginas e s
 ## Estado da inclusão
 
 O PR contém somente o lote autoral novo e a rotina de importação. Os arquivos existentes do banco não foram substituídos remotamente. A importação permanece explícita: executar primeiro a rotina sem flags para validar, e depois com --aplicar para adicionar o lote e regenerar o índice, a busca e o progresso com os scripts do projeto. A rotina rejeita colisões de IDs, preserva comentários anteriores e restaura os arquivos caso a regeneração ou validação falhe.
+
+Numeração revista ao concluir: outros lotes ocuparam os IDs inicialmente propostos durante a redação. Os IDs finais foram conferidos contra o acervo atual; a rotina permanece recusando colisões futuras.
