@@ -240,3 +240,41 @@
 .tr-foco__opcao[aria-pressed="true"] { border-color: var(--verdete); background: var(--verdete-veu); box-shadow: inset 0 0 0 1px var(--verdete); }
 .tr-foco__titulo { margin: 0 0 0.5rem; font-weight: 700; font-size: var(--corpo-menor); }
 .tr-foco__titulo small { font-weight: 500; color: var(--texto-2); }
+
+/* ---------- Seletor de assuntos em árvore (lista, 08/10/2026) ---------- */
+.arv__caixa { border: 1px solid var(--traco-forte); border-radius: var(--raio-cartao); background: var(--superficie); overflow: hidden; }
+.seletor:not(.seletor--lista) .arv__caixa { position: absolute; z-index: 30; top: calc(100% + 4px); left: 0; right: 0; box-shadow: 0 6px 20px rgba(18, 24, 26, 0.12); }
+.arv__topo { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--traco-forte); background: var(--superficie-2); }
+.arv__etiqueta {
+  display: inline-flex; align-items: center; gap: 0.35rem; min-height: 30px; padding: 0 0.6rem;
+  border: 0; border-radius: 6px; background: var(--verdete); color: var(--sobre-destaque);
+  font: inherit; font-size: var(--meta); font-weight: 600; cursor: pointer;
+}
+.arv__etiqueta span { font-size: 1.05em; opacity: 0.85; }
+.arv__busca { flex: 1 1 10rem; min-width: 8rem; min-height: 36px; padding: 0 0.25rem; border: 0; background: none; color: var(--texto); font: inherit; outline: none; }
+.arv__busca::placeholder { color: var(--texto-2); }
+.arv__lista { list-style: none; margin: 0; padding: 0.35rem 0; max-height: min(30rem, 62dvh); overflow-y: auto; overscroll-behavior: contain; }
+.arv__subtemas { list-style: none; margin: 0 0 0.35rem; padding: 0; }
+.arv__linha { display: flex; align-items: center; }
+.arv__linha:hover { background: var(--superficie-2); }
+.arv__linha--sub { padding-left: 3.1rem; }
+.arv__linha--vazia { opacity: 0.55; }
+.arv__seta { flex: 0 0 auto; width: 2.4rem; height: 2.4rem; display: grid; place-items: center; border: 0; background: none; color: var(--texto-2); cursor: pointer; }
+.arv__seta:hover { color: var(--verdete); }
+.arv__rotulo { flex: 1 1 auto; min-width: 0; display: flex; align-items: center; gap: 0.6rem; min-height: 2.4rem; padding-right: 0.9rem; cursor: pointer; }
+.arv__rotulo input { flex: 0 0 auto; width: 1.05rem; height: 1.05rem; margin: 0; accent-color: var(--verdete); }
+.arv__nome { flex: 1 1 auto; min-width: 0; line-height: 1.3; }
+.arv__linha--tema .arv__nome { font-weight: 700; }
+.arv__linha--sub .arv__nome { font-size: 0.95em; }
+.arv__tema--ativo > .arv__linha--tema .arv__nome { color: var(--verdete); }
+.arv__parcial { flex: 0 0 auto; font-size: var(--meta); color: var(--verdete); font-weight: 600; }
+.arv__qtd { flex: 0 0 auto; font-size: var(--meta); color: var(--texto-2); font-variant-numeric: tabular-nums; }
+.arv__tema + .arv__tema { border-top: 1px solid var(--traco); }
+.arv__vazio { padding: 0.75rem 1rem; color: var(--texto-2); font-size: var(--meta); }
+.arv__rodape { display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 0.75rem; border-top: 1px solid var(--traco-forte); }
+.arv__rodape .meta { flex: 1 1 auto; min-width: 0; }
+.arv__rodape .botao { min-height: 36px; }
+@media (max-width: 40rem) {
+  .arv__linha--sub { padding-left: 2.4rem; }
+  .arv__rotulo { padding-right: 0.6rem; }
+}
