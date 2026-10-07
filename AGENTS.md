@@ -13,3 +13,9 @@ Não tratar uma justificativa breve por alternativa como enriquecimento concluí
 Não alterar gabaritos oficiais nem inventar evidência. As instruções atuais do
 usuário prevalecem. Para tarefas sem relação com comentários, manter o escopo
 solicitado e as convenções existentes do repositório.
+
+Para criar questões de OrtoQuestões Simulados (TEOT e TARO) a partir de um capítulo da
+bibliografia, leia antes
+[docs/padrao-questoes-simulado-teot-taro.md](docs/padrao-questoes-simulado-teot-taro.md):
+as questões devem ficar o mais próximas possível da prova real (diretriz do dono do projeto de
+07/10/2026), no assunto, no nível e no formato, e o comentário segue o padrão enriquecido.

@@ -81,6 +81,10 @@ dado de estudo experimental a no máximo uma ou duas questões por lote. O capí
 
 ## Como escrever cada questão
 
+0. **Antes de escrever, ler as questões oficiais do tema do capítulo** no acervo (como foi feito
+   para conceitos básicos acima) e anotar os fatos que a banca repete, o nível e o formato. A meta,
+   diretriz do dono do projeto de 07/10/2026, é que cada questão pareça ter saído da prova real.
+   Do capítulo, aproveitar primeiro o que coincide com esses fatos carimbados.
 1. Escolher **um fato** do capítulo que a banca cobraria: um número, um "mais frequente", um tipo
    de classificação, uma estrutura em risco, um desvio, um passo técnico. Nada que dependa de
    opinião ou de outra obra.
@@ -93,7 +97,11 @@ dado de estudo experimental a no máximo uma ou duas questões por lote. O capí
 5. Epônimos em CAIXA ALTA, como a banca escreve.
 6. Gabarito distribuído no lote, sem padrão, puxando um pouco para C e D.
 7. Caso clínico só de vez em quando (até 1 em 10) e curto.
-8. Imagem quando a figura do livro permitir uma pergunta do tipo da prova (estrutura assinalada,
+8. Conferência final do lote: cada questão poderia estar numa prova do TARO ou do TEOT de 2021 em
+   diante? Se ela depende de detalhe de estudo experimental, de biologia molecular fina ou de um
+   número sem consequência prática, trocar por outro fato do capítulo (no máximo 1 ou 2 dessas por
+   lote).
+9. Imagem quando a figura do livro permitir uma pergunta do tipo da prova (estrutura assinalada,
    técnica demonstrada, classificação da imagem). Legenda: "Fonte: Rockwood and Green's Fractures
    in Adults, edição, figura N (página P)". Não usar figura que entregue a resposta.
 
