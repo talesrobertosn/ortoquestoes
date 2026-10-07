@@ -24,3 +24,6 @@ e consulte e atualize os mapas da banca em
 [docs/simulados/mapas-da-banca.md](docs/simulados/mapas-da-banca.md) e as lições aprendidas do guia.
 Antes de cada capítulo, faça a engenharia reversa do assunto (seção "Engenharia reversa por tema" de
 [docs/padrao-questoes-simulado-teot-taro.md](docs/padrao-questoes-simulado-teot-taro.md)) e escreva o lote a partir dela.
+
+Agentes externos (por exemplo, ChatGPT Codex) que forem criar simulados a partir de um capítulo devem
+seguir o roteiro passo a passo de [docs/prompts/codex-simulados.md](docs/prompts/codex-simulados.md).
