@@ -75,7 +75,7 @@ for (const r of rotas) {
   // "nome=questao/ID>B@seletor": responde a alternativa B (com "Certeza") antes de rolar, para
   // mostrar a questão corrigida com o comentário aberto. LARGURA, ALTURA e ESCALA mudam a tela
   // (por exemplo LARGURA=1440 ALTURA=900 ESCALA=2 para um notebook).
-  const ancora = r.match(/^([a-z0-9-]+)=([a-z0-9/-]*)(?:>([A-D]))?@(.+)$/)
+  const ancora = r.match(/^([a-z0-9-]+)=([a-z0-9/-]*(?:\?[^@>]*)?)(?:>([A-D]))?@(.+)$/)
   if (ancora) {
     const [, nome, rota, letra, seletor] = ancora
     await p.goto(BASE + '#/' + rota); await p.waitForTimeout(2000)

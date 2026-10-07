@@ -131,6 +131,27 @@ export function SeletorArvore({
 
       {aberto && (
         <div className="seletor__painel">
+          {lista && total > 0 && (
+            <ul className="seletor__marcados" aria-label="Assuntos marcados">
+              {temas.map((slug) => {
+                const no = arvore.find((n) => n.slug === slug)
+                return (
+                  <li key={'t' + slug}>
+                    <button type="button" className="seletor__etiqueta" onClick={() => no && alternarTema(slug, no)} aria-label={`Tirar ${no?.nome ?? slug}`}>
+                      {no?.nome ?? slug} <span aria-hidden="true">×</span>
+                    </button>
+                  </li>
+                )
+              })}
+              {subtemas.map((nome) => (
+                <li key={'s' + nome}>
+                  <button type="button" className="seletor__etiqueta seletor__etiqueta--sub" onClick={() => aoMudar(temas, subtemas.filter((s) => s !== nome))} aria-label={`Tirar ${nome}`}>
+                    {nome} <span aria-hidden="true">×</span>
+                  </button>
+                </li>
+              ))}
+            </ul>
+          )}
           <label className="so-leitor" htmlFor={idBusca}>
             Buscar assunto
           </label>

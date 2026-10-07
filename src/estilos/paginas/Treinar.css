@@ -267,3 +267,14 @@
 .subtemas-lista__item--ativo .subtemas-lista__qtd { background: var(--verdete); color: var(--sobre-destaque); }
 .subtemas-lista__item--vazio { opacity: 0.55; }
 @media (max-width: 46rem) { .subtemas-lista { columns: 1; } }
+
+/* Assuntos marcados em etiquetas removíveis, acima da busca */
+.seletor__marcados { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 0.7rem; padding: 0; list-style: none; }
+.seletor__etiqueta {
+  display: inline-flex; align-items: center; gap: 0.4rem; min-height: 32px; padding: 0 0.7rem; border-radius: 999px;
+  border: 1px solid var(--verdete); background: var(--verdete-veu); color: var(--verdete);
+  font: inherit; font-size: var(--meta); font-weight: 650; cursor: pointer;
+}
+.seletor__etiqueta span { font-size: 1.1em; line-height: 1; opacity: 0.8; }
+.seletor__etiqueta:hover { background: var(--verdete); color: var(--sobre-destaque); }
+.seletor__etiqueta--sub { background: var(--superficie); }
