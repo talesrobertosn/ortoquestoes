@@ -143,6 +143,13 @@ capítulo.
   mais na alternativa correta, com dado do capítulo que contextualiza (série do autor, tabela,
   protocolo), levou o conjunto a 4,55 mil sem enchimento. Escrever esse parágrafo já na primeira
   versão.
+- **Sem lacunas (07/10/2026, pedido do dono do projeto).** Não usar enunciado de completar com
+  "______" (por exemplo, "a conduta é ______; a cirurgia é feita na ______"). A banca quase não usa
+  esse formato e ele fica artificial na tela. Escrever como pergunta direta que a alternativa completa
+  ("Na fratura X, o desvio típico do fragmento lateral é") ou, quando forem dois dados, como par com
+  "respectivamente" ("Na fratura X, a conduta inicial e o momento habitual da cirurgia são,
+  respectivamente,"), com as alternativas "dado 1; dado 2" ou "dado 1 e dado 2". O
+  `aplicar_lote.py` bloqueia enunciados com lacuna.
 - **Gabarito.** Ordenar os pares 2 por 2 para controlar a letra e fechar o lote equilibrado (o
   script mostra a contagem).
 

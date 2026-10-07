@@ -22,7 +22,7 @@ repositório. Rode o que lê o PDF com `python3 -I`.
 O que o `aplicar_lote.py` confere: 4 alternativas distintas; gabarito coerente com as chaves de
 `inc`; `correta` começando com `**X:`; subtema existente no tema escolhido (lista os válidos se
 errar); ausência de travessão, meia-risca, itálico com asterisco simples e marca-texto; enunciado
-sem EXCETO, INCORRETA ou "assinale"; figura existente. Avisa quando o comentário tem menos de 4.000
+sem EXCETO, INCORRETA, "assinale" ou lacuna de completar (______); figura existente. Avisa quando o comentário tem menos de 4.000
 caracteres. Mostra a distribuição do gabarito e a mediana dos comentários do lote.
 
 A figura usa `img=("arquivo_sem_ext", "figura 32-11", (x0, y0, x1, y1))`; a caixa é opcional e

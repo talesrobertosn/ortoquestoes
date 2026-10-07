@@ -78,6 +78,8 @@ for m, q in QS:
             erros.append(f"{rot}: marca-texto em '{t[:40]}'")
     if re.search(r"\b(EXCETO|INCORRETA|assinale)\b", q["enun"], re.I):
         erros.append(f"{rot}: enunciado negativo ou com 'assinale' (a banca não usa)")
+    if re.search(r"_{3,}", q["enun"]):
+        erros.append(f"{rot}: enunciado de completar lacuna (______); reescrever como pergunta direta ou par com 'respectivamente'")
     if not 40 <= len(q["enun"]) <= 320:
         avisos.append(f"{rot}: enunciado com {len(q['enun'])} caracteres")
     total = len(q["conceito"]) + len(q["correta"]) + sum(len(v) for v in q["inc"].values())

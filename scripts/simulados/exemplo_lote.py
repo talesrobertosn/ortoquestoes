@@ -8,7 +8,8 @@ AC = "Luxação acromioclavicular"   # subtema: precisa existir no tema escolhid
 QUESTOES = [
 dict(sub=[AC], pag=19, gab="A",
      # img=("ac-p21-1", "figura 32-22E", (0, 0, 400, 300)),  # opcional: arquivo em <pasta>/img, figura, recorte
-     enun="Luxação acromioclavicular completa com distância coracoclavicular igual à do lado normal sugere ______, e a melhor incidência para confirmá-la é a de ______.",
+     # Sem lacunas (______): pergunta direta ou par com "respectivamente".
+     enun="Na luxação acromioclavicular completa com distância coracoclavicular igual à do lado normal, a lesão associada suspeita e a melhor incidência para confirmá-la são, respectivamente,",
      alts=["fratura da base do processo coracoide; STRYKER", "fratura da base do processo coracoide; WEST POINT",
            "fratura da clavícula distal; STRYKER", "fratura da clavícula distal; WEST POINT"],
      conceito="""**Título do primeiro bloco.** Aula do trecho do capítulo: definição, mecanismo, números com contexto,
