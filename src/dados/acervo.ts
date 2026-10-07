@@ -212,6 +212,11 @@ function venceHoje(id: string, contexto: ContextoLocal): boolean {
 // quem não marca o Fellowship Quadril também encontra essas questões nos subtemas.
 const AREAS_TAMBEM_NA_BASE: ReadonlySet<string> = new Set(['quadril'])
 
+// Os OrtoQuestões Simulados de ortopedia seguem o padrão do TEOT e do TARO e
+// entram, misturados, quando uma dessas provas é escolhida no filtro de provas.
+const PROVAS_DOS_SIMULADOS: ReadonlySet<string> = new Set(['TEOT', 'TARO'])
+const simuladoDeOrtopedia = (item: ItemIndice) => item.sim === 1 && item.p === null && (item.ar ?? 'base') === 'base'
+
 function noFoco(item: ItemIndice, areas: Filtros['areas']): boolean {
   const area = item.ar ?? 'base'
   return areas.includes(area) || (AREAS_TAMBEM_NA_BASE.has(area) && areas.includes('base'))
@@ -255,7 +260,8 @@ function aplicaUm(
   }
   if (ignorar !== 'provas' && filtros.provas.length > 0) {
     const prova = item.p === null ? null : indice.provas[item.p]
-    if (!prova || !filtros.provas.includes(prova)) return false
+    const naProva = prova ? filtros.provas.includes(prova) : simuladoDeOrtopedia(item) && filtros.provas.some((x) => PROVAS_DOS_SIMULADOS.has(x))
+    if (!naProva) return false
   }
   if (ignorar !== 'anos' && filtros.anos.length > 0) {
     if (item.a === null || !filtros.anos.includes(item.a)) return false
@@ -369,9 +375,13 @@ export function contar(
         if (nome) contagens.porSubtema[nome] = (contagens.porSubtema[nome] ?? 0) + 1
       }
     }
-    if (aplicaUm(indice, item, filtros, contexto, 'provas') && item.p !== null) {
-      const prova = indice.provas[item.p]
-      if (prova) contagens.porProva[prova] = (contagens.porProva[prova] ?? 0) + 1
+    if (aplicaUm(indice, item, filtros, contexto, 'provas')) {
+      if (item.p !== null) {
+        const prova = indice.provas[item.p]
+        if (prova) contagens.porProva[prova] = (contagens.porProva[prova] ?? 0) + 1
+      } else if (simuladoDeOrtopedia(item)) {
+        for (const prova of PROVAS_DOS_SIMULADOS) contagens.porProva[prova] = (contagens.porProva[prova] ?? 0) + 1
+      }
     }
     if (item.sim === 1 && aplicaUm(indice, item, filtros, contexto, 'soSimulados')) contagens.simulados++
     if (aplicaUm(indice, item, filtros, contexto, 'anos') && item.a !== null) {

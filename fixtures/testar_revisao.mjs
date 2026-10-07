@@ -56,6 +56,21 @@ try {
   const contagens = m.contar(indice, m.FILTROS_VAZIOS, contexto)
   assert.equal(contagens.porSituacao.revisarHoje, 1)
   assert.equal(contagens.porSituacao.dominadas, 1)
+  // Simulados de ortopedia entram misturados quando TEOT ou TARO é escolhido; os do quadril, não.
+  const comSimulados = {
+    questoes: [
+      { id: 'teot', t: 0, s: [], p: 0, a: 2024, d: null },
+      { id: 'cet', t: 0, s: [], p: 1, a: null, d: null },
+      { id: 'sim', t: 0, s: [], p: null, a: null, d: null, sim: 1 },
+      { id: 'simq', t: 0, s: [], p: 2, a: null, d: null, sim: 1, ar: 'quadril' },
+    ],
+    temas: [{ slug: 'x', nome: 'X' }], provas: ['TEOT', 'CET-PR', 'Fellowship Quadril'], subtemas: [],
+  }
+  const ctxVazio = { respondidas: {}, favoritos: [], textos: null }
+  const soTeot = m.contar(comSimulados, { ...m.FILTROS_VAZIOS, provas: ['TEOT'] }, ctxVazio)
+  assert.equal(soTeot.total, 2)
+  assert.equal(soTeot.porProva.TEOT, 2)
+  assert.equal(m.contar(comSimulados, { ...m.FILTROS_VAZIOS, provas: ['CET-PR'] }, ctxVazio).total, 1)
   const backup = { aplicativo: 'OrtoQuestões', versao: 1, exportadoEm: new Date().toISOString(), respondidas: { '1': erro }, favoritos: ['1'], notas: { '1': '**Lembrar**' }, historico: [] }
   assert.deepEqual(m.validarBackup(JSON.stringify(backup)), backup)
   for (const invalido of [{ ...backup, versao: 2 }, { ...backup, respondidas: { '1': { c: 'sim', q: 1 } } }, { ...backup, notas: { '1': 3 } }, { ...backup, historico: [{}] }]) assert.throws(() => m.validarBackup(JSON.stringify(invalido)))
