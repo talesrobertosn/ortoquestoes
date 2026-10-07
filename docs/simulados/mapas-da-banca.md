@@ -110,7 +110,7 @@ Pendências no acervo: TARO 2006 a 2009 (trauma-1129, 1144, 1178) sem gabarito; 
 temas (trauma-0415 e ombro-cotovelo-0170; trauma-0312 e 0963; ombro-cotovelo-0102 e 0383;
 pediatria-0097 e 0468).
 
-## Instabilidade glenoumeral (lido em 07/10/2026; capítulo ainda não enviado)
+## Instabilidade glenoumeral (lido em 07/10/2026; Rockwood cap. 35)
 
 Recorte: subtemas de instabilidade anterior e posterior do ombro, mais regex de luxação glenoumeral,
 BANKART, HILL-SACHS, LATARJET, BRISTOW, remplissage, track, HAGL, MCLAUGHLIN, ISIS, sulco e apreensão.
@@ -169,6 +169,24 @@ HILL-SACHS, efeito triplo do LATARJET, imobilização em rotação externa, reci
 luxação posterior por convulsão ou choque elétrico, sinais radiográficos da posterior (lâmpada, linha
 de MOLONEY, trough), manobras de redução, instabilidade multidirecional (BEIGHTON, desvio capsular de
 NEER), ALPSA, PERTHES e GLAD.
+
+Aproveitamento do capítulo 35 (ombro-cotovelo-0576 a 0598, 23 questões, 2 figuras, todas sem
+lacuna): cada questão ligada ao mapa. Carimbados com outro ângulo: idade como preditor e o grupo que
+vai bem sem cirurgia; ISIS (idade na cirurgia, acima de 6 = 70%); nervo axilar 13,5%; ligamentos
+superior (adução) e médio (45 graus e rotação externa); remplissage (infraespinal, suturas antes do
+lábio anterior); LATARJET (divisão horizontal do subescapular, parafuso único associado a falha);
+STRYKER e WEST POINT; ABER e PERTHES; jerk doloroso (KIM). Tendência: perda subcrítica de 13,5%
+(SHAHA), cálculo do track (0,83D menos d; HSI maior = off-track), algoritmo (17,4% a 30% LATARJET,
+acima de 30% enxerto). Lacunas: surpresa como teste mais acurado, GAGEY, sulco em rotação externa e
+intervalo, imobilização em rotação externa sem efeito na metanálise, BANKART artroscópico (âncora
+baixa às 5h a 5h30, três âncoras), aberto contra artroscópico, posterior (20 graus e 20%),
+instabilidade multidirecional (6 a 12 meses; luxador voluntário), BEIGHTON (mais de 5 de 9), luxação
+posterior travada e luxatio erecta por figura.
+
+O capítulo não traz MCLAUGHLIN, BRISTOW nem manobras de redução: os carimbados de HILL-SACHS reverso
+(TARO 2018, TEOT 2023) e do bloqueio dinâmico do BRISTOW ficam para outra fonte. Atenção: um trecho do
+capítulo troca engaging e nonengaging; os algoritmos usam a correspondência correta (on-track não
+engata).
 
 ## Fratura da clavícula (lido em 07/10/2026; Rockwood cap. 34)
 
