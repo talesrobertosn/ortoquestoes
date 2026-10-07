@@ -1,7 +1,7 @@
 # Propaganda: OrtoQuestões Simulados
 
 Post de 9/10/2026 para apresentar os OrtoQuestões Simulados: questões autorais feitas por
-engenharia reversa das provas do TEOT, do TARO e da SBQ, a partir da bibliografia de referência.
+engenharia reversa das provas do TEOT, do TARO e do Fellowship de Quadril, a partir da bibliografia de referência.
 Carrossel de 6 slides (1080×1350) e 3 stories (1080×1920), com iPhone e MacBook em CSS e telas
 reais do site (conta de exemplo, tema escuro). Sem número exato de questões ("centenas"), sem
 emoji, sem mencionar IA. Os slides trazem a nota de que as questões são autorais e sem vínculo com
@@ -20,7 +20,7 @@ no retângulo tracejado. Stories não levam legenda.
 
 Questões novas, no padrão da sua prova.
 
-Os OrtoQuestões Simulados são questões autorais feitas por engenharia reversa: lemos as provas anteriores do TEOT, do TARO e da Sociedade Brasileira de Quadril (SBQ), mapeamos o que a banca repete e como pergunta, e escrevemos questões novas a partir da bibliografia de referência, no mesmo formato.
+Os OrtoQuestões Simulados são questões autorais feitas por engenharia reversa: lemos as provas anteriores do TEOT, do TARO e do Fellowship de Quadril, mapeamos o que a banca repete e como pergunta, e escrevemos questões novas a partir da bibliografia de referência, no mesmo formato.
 
 Cada uma vem com o comentário completo: o conceito explicado do zero e cada alternativa comentada, a certa e as erradas, com o porquê.
 
@@ -32,4 +32,4 @@ Crie sua conta e treine grátis todos os dias. Link na bio: ortoquestoes.com.br
 
 Questões autorais, para o aprendizado: não são questões oficiais e não têm vínculo com as instituições que organizam as provas.
 
-#ortopedia #TEOT #TARO #residenciamedica #quadril #questoes
+#ortopedia #TEOT #TARO #residenciamedica #quadril #fellowship #questoes
