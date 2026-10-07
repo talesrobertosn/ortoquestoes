@@ -3,7 +3,7 @@
 
 A página "Temas que mais caem" e o Cronograma usam esta contagem, e não uma
 lista montada à mão: entram só as questões de prova oficial (TEOT, TARO,
-TECOC, ENARE), sem cópias, sem anuladas e sem as questões autorais do site.
+CET-PR, TECOC, ENARE), sem cópias, sem anuladas e sem as questões autorais do site.
 Rode de novo sempre que o acervo ou a classificação mudar:
 
     python3 scripts/gerar_incidencia.py

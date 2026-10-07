@@ -8,7 +8,7 @@ import { nomeEdicao } from '../../estado/sessao'
 import { dataHora, erroDoPainel } from './formatos'
 
 const MIGRACAO = '202609300100_recursos_pagos.sql'
-const PROVAS_NACIONAL = new Set(['TEOT/TARO', 'TEOT', 'TARO'])
+const PROVAS_NACIONAL = new Set(['TEOT/TARO', 'TEOT', 'TARO', 'CET-PR'])
 
 interface Edicao { edicao: string; titulo: string; abre_em: string; fecha_em: string; duracao_min: number; total: number; iniciaram: number; entregaram: number; media: number | null; ids: string[] | null }
 interface ResumoRelatorio { pendentes: number; enviados: number; falharam: number }

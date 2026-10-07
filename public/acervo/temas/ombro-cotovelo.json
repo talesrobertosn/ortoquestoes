@@ -183,7 +183,7 @@
       "id": "ombro-cotovelo-0005",
       "tema": "Ombro e cotovelo",
       "subtemas": [
-        "Exame físico do ombro",
+        "Exame físico do cotovelo",
         "Instabilidade do cotovelo"
       ],
       "prova": "TARO",
@@ -1047,6 +1047,7 @@
       "id": "ombro-cotovelo-0027",
       "tema": "Ombro e cotovelo",
       "subtemas": [
+        "Exame físico do cotovelo",
         "Lesões do bíceps"
       ],
       "prova": "TARO",
@@ -4144,6 +4145,7 @@
       "id": "ombro-cotovelo-0108",
       "tema": "Ombro e cotovelo",
       "subtemas": [
+        "Osteonecrose da cabeça umeral",
         "Omartrose e artroplastia do ombro",
         "Fraturas do úmero proximal e da escápula"
       ],
@@ -6453,6 +6455,7 @@
       "id": "ombro-cotovelo-0196",
       "tema": "Ombro e cotovelo",
       "subtemas": [
+        "Artroscopia do cotovelo",
         "Fraturas do cotovelo e antebraço"
       ],
       "prova": "TECOC/SBCOC Ombro e Cotovelo",
@@ -7681,7 +7684,7 @@
       "id": "ombro-cotovelo-0238",
       "tema": "Ombro e cotovelo",
       "subtemas": [
-        "Exame físico do ombro",
+        "Exame físico do cotovelo",
         "Lesões do bíceps"
       ],
       "prova": "TEOT",
@@ -9207,7 +9210,7 @@
       "id": "ombro-cotovelo-0298",
       "tema": "Ombro e cotovelo",
       "subtemas": [
-        "Exame físico do ombro",
+        "Exame físico do cotovelo",
         "Epicondilite lateral e medial"
       ],
       "prova": "TARO",
@@ -9361,6 +9364,7 @@
       "id": "ombro-cotovelo-0302",
       "tema": "Ombro e cotovelo",
       "subtemas": [
+        "Exame físico do cotovelo",
         "Lesões do bíceps"
       ],
       "prova": "TARO",
@@ -9885,6 +9889,7 @@
       "id": "ombro-cotovelo-0314",
       "tema": "Ombro e cotovelo",
       "subtemas": [
+        "Exame físico do cotovelo",
         "Epicondilite lateral e medial"
       ],
       "prova": "TARO",
@@ -12457,7 +12462,7 @@
       "id": "ombro-cotovelo-0382",
       "tema": "Ombro e cotovelo",
       "subtemas": [
-        "Exame físico do ombro",
+        "Exame físico do cotovelo",
         "Instabilidade do cotovelo"
       ],
       "prova": "TARO",
@@ -14397,8 +14402,8 @@
       "id": "ombro-cotovelo-0432",
       "tema": "Ombro e cotovelo",
       "subtemas": [
-        "Artrose e artroplastia do cotovelo",
-        "Artroscopia e vias de acesso do ombro"
+        "Artroscopia do cotovelo",
+        "Artrose e artroplastia do cotovelo"
       ],
       "prova": "TECOC/SBCOC Ombro e Cotovelo",
       "ano": null,
@@ -14700,6 +14705,7 @@
       "id": "ombro-cotovelo-0439",
       "tema": "Ombro e cotovelo",
       "subtemas": [
+        "Artroscopia do cotovelo",
         "Artrose e artroplastia do cotovelo"
       ],
       "prova": "TECOC/SBCOC Ombro e Cotovelo",
@@ -18024,7 +18030,7 @@
       "id": "ombro-cotovelo-0516",
       "tema": "Ombro e cotovelo",
       "subtemas": [
-        "Exame físico do ombro",
+        "Exame físico do cotovelo",
         "Instabilidade do cotovelo"
       ],
       "prova": "TARO",
@@ -18239,7 +18245,7 @@
       "area": "cirurgia-mao",
       "tema": "Ombro e cotovelo",
       "subtemas": [
-        "Artroscopia e vias de acesso do ombro",
+        "Artroscopia do cotovelo",
         "Epicondilite lateral e medial"
       ],
       "prova": "INTO",
@@ -18825,6 +18831,7 @@
       "area": "r4-enare",
       "tema": "Ombro e cotovelo",
       "subtemas": [
+        "Exame físico do cotovelo",
         "Epicondilite lateral e medial"
       ],
       "prova": "ENARE R4 Ortopedia",
@@ -18922,6 +18929,7 @@
       "area": "r4-enare",
       "tema": "Ombro e cotovelo",
       "subtemas": [
+        "Exame físico do cotovelo",
         "Instabilidade do cotovelo"
       ],
       "prova": "ENARE R4 Ortopedia",
@@ -19478,6 +19486,448 @@
         "arquivo": "SES-DF 2022 - Ortopedia e Traumatologia em Cirurgia da Coluna R4",
         "pagina": 4,
         "numeroOriginal": 60
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0549",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Imagem do ombro e cotovelo",
+        "Fraturas do úmero proximal e da escápula"
+      ],
+      "prova": "CET-PR",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Na fratura do úmero proximal, faz parte da série radiográfica padrão a incidência",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Stryker notch."
+        },
+        {
+          "letra": "B",
+          "texto": "Grashey view."
+        },
+        {
+          "letra": "C",
+          "texto": "West point view."
+        },
+        {
+          "letra": "D",
+          "texto": "Rockwood view."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "CET-PR.pdf",
+        "pagina": 3,
+        "numeroOriginal": 2
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0550",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Omartrose e artroplastia do ombro"
+      ],
+      "prova": "CET-PR",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Na hemiartroplastia do ombro para tratamento da osteoartrite, o principal resultado esperado é",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "o retorno da amplitude de movimento."
+        },
+        {
+          "letra": "B",
+          "texto": "a restauração da força muscular do deltóide."
+        },
+        {
+          "letra": "C",
+          "texto": "o controle doloroso."
+        },
+        {
+          "letra": "D",
+          "texto": "a estabilidade da articulação."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "CET-PR.pdf",
+        "pagina": 3,
+        "numeroOriginal": 4
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0551",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Epicondilite lateral e medial"
+      ],
+      "prova": "CET-PR",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Na epicondilite lateral",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "o tratamento conservador apresenta taxa de sucesso maior que 85%."
+        },
+        {
+          "letra": "B",
+          "texto": "o PRP é mais eficaz que outros métodos."
+        },
+        {
+          "letra": "C",
+          "texto": "o tratamento cirúrgico é contraindicado."
+        },
+        {
+          "letra": "D",
+          "texto": "o tratamento cirúrgico evolui com rigidez articular em 25% dos casos."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "CET-PR.pdf",
+        "pagina": 4,
+        "numeroOriginal": 7
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0552",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Instabilidade anterior do ombro"
+      ],
+      "prova": "CET-PR",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Na luxação anterior crônica do ombro, há perda dos movimentos de",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "abdução e rotação interna."
+        },
+        {
+          "letra": "B",
+          "texto": "adução e rotação externa."
+        },
+        {
+          "letra": "C",
+          "texto": "abdução e rotação externa."
+        },
+        {
+          "letra": "D",
+          "texto": "adução e rotação interna."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "CET-PR.pdf",
+        "pagina": 16,
+        "numeroOriginal": 59
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0553",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Osteonecrose da cabeça umeral"
+      ],
+      "prova": "CET-PR",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Na classificação de CRUESS para osteonecrose de cabeça umeral, o tipo 3 apresenta",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "colapso do osso subcondral."
+        },
+        {
+          "letra": "B",
+          "texto": "corpos livres articulares."
+        },
+        {
+          "letra": "C",
+          "texto": "alterações escleróticas e remodelação óssea."
+        },
+        {
+          "letra": "D",
+          "texto": "fragmento desviado intrarticular."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "CET-PR.pdf",
+        "pagina": 16,
+        "numeroOriginal": 60
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0554",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Artroscopia e vias de acesso do ombro",
+        "Lesões do manguito rotador"
+      ],
+      "prova": "CET-PR",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Na artroscopia do ombro, o portal de NEVIASER foi descrito inicialmente para reparo do",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Tendão bíceps."
+        },
+        {
+          "letra": "B",
+          "texto": "Manguito rotador."
+        },
+        {
+          "letra": "C",
+          "texto": "Lesão SLAP."
+        },
+        {
+          "letra": "D",
+          "texto": "Labrum posterior."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "CET-PR.pdf",
+        "pagina": 17,
+        "numeroOriginal": 62
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0555",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Exame físico do cotovelo",
+        "Instabilidade do cotovelo"
+      ],
+      "prova": "CET-PR",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "No exame físico de cotovelo, o teste da ordenha, quando positivo, indica lesão do",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "ligamento colateral lateral."
+        },
+        {
+          "letra": "B",
+          "texto": "bíceps distal."
+        },
+        {
+          "letra": "C",
+          "texto": "músculo supinador."
+        },
+        {
+          "letra": "D",
+          "texto": "ligamento colateral medial."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "CET-PR.pdf",
+        "pagina": 17,
+        "numeroOriginal": 63
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0556",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Artroscopia e vias de acesso do ombro",
+        "Fraturas do úmero proximal e da escápula"
+      ],
+      "prova": "CET-PR",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "O acesso antero lateral estendido do ombro é utilizado para",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "tenodese bíceps."
+        },
+        {
+          "letra": "B",
+          "texto": "fixação do úmero proximal com placa."
+        },
+        {
+          "letra": "C",
+          "texto": "artroplastia total do ombro."
+        },
+        {
+          "letra": "D",
+          "texto": "reparo do manguito rotador."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "CET-PR.pdf",
+        "pagina": 17,
+        "numeroOriginal": 64
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0557",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Lesões do manguito rotador",
+        "Imagem do ombro e cotovelo"
+      ],
+      "prova": "CET-PR",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "O tipo de lesão parcial do manguito rotador, segundo classificação de Elman representado na figura é do tipo:",
+      "imagens": [
+        {
+          "arquivo": "ombro-cotovelo/ombro-cotovelo-0557-1.jpeg",
+          "legenda": null,
+          "largura": 250,
+          "altura": 239
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "l."
+        },
+        {
+          "letra": "B",
+          "texto": "II."
+        },
+        {
+          "letra": "C",
+          "texto": "III."
+        },
+        {
+          "letra": "D",
+          "texto": "IV."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "CET-PR.pdf",
+        "pagina": 17,
+        "numeroOriginal": 65
+      }
+    },
+    {
+      "id": "ombro-cotovelo-0558",
+      "tema": "Ombro e cotovelo",
+      "subtemas": [
+        "Artroscopia do cotovelo"
+      ],
+      "prova": "CET-PR",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Na artroscopia de cotovelo, é considerada uma contraindicação ao procedimento",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "bursite olecraniana."
+        },
+        {
+          "letra": "B",
+          "texto": "osteocondrite dissecante."
+        },
+        {
+          "letra": "C",
+          "texto": "transposição nervo ulnar."
+        },
+        {
+          "letra": "D",
+          "texto": "artrose radio capitelar."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "CET-PR.pdf",
+        "pagina": 18,
+        "numeroOriginal": 66
       }
     }
   ]

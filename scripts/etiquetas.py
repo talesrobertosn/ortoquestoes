@@ -72,6 +72,7 @@ TAGS: dict[str, list[tuple[str, str | None]]] = {
         ('Anatomia do cotovelo', None),
         ('Anatomia do ombro', 'anatomi|inervad|inserc|origem|arteria|coracoide'),
         ('Biomecânica do ombro e cotovelo', 'biomecan|ritmo escapulotoracico|par de forcas'),
+        ('Exame físico do cotovelo', 'teste do gancho|hook test|squeeze|cozen|mill|maudsley|gardner|teste da cadeira|ordenha|milking|moving valgus|gaveta posterolateral|semiologia do cotovelo|propedeutica d[ao] .{0,30}(cotovelo|bicep)'),
         ('Exame físico do ombro', 'jobe|neer|hawkins|speed|yergason|o.?brien|apreensao|recolocacao|patte|gerber|lift-?off|belly|napoleao|drop arm|teste|manobra'),
         ('Imagem do ombro e cotovelo', 'radiograf|incidencia|ressonancia|tomograf|west point|stryker|garth|velpeau|zanca'),
         ('Instabilidade anterior do ombro', 'luxacao anterior|instabilidade anterior|bankart|hill-?sachs|latarjet|bristow|glenoid track|off-?track|isis'),
@@ -84,15 +85,17 @@ TAGS: dict[str, list[tuple[str, str | None]]] = {
         ('Lesões SLAP e do lábio superior', 'slap|labio superior|snyder'),
         ('Lesões do bíceps', 'bicep'),
         ('Peitoral maior e outras rupturas tendíneas', 'peitoral|triceps|grande dorsal'),
+        ('Osteonecrose da cabeça umeral', 'cruess|(osteonecrose|necrose avascular).{0,40}(umer|ombro)|(umer|ombro).{0,40}(osteonecrose|necrose avascular)'),
         ('Omartrose e artroplastia do ombro', 'artroplastia|protese|omartrose|artrose|hemiartroplastia|reversa|artropatia do manguito|hamada'),
         ('Luxação acromioclavicular e esternoclavicular', 'acromioclavicular|esternoclavicular|rockwood|allman'),
         ('Fraturas do úmero proximal e da escápula', 'umero proximal|escapula|glenoide|neer|colo cirurgico|tuberosidade'),
+        ('Artroscopia do cotovelo', 'artroscop.{0,40}cotovelo|cotovelo.{0,40}artroscop'),
         ('Artroscopia e vias de acesso do ombro', 'portal|via de acesso|deltopeitoral|artroscop'),
         ('Instabilidade do cotovelo', 'instabilidade (do cotovelo|posterolateral)|colateral (ulnar|medial|lateral)|luxacao do cotovelo|triade terrivel|pivot shift|o.?driscoll'),
         ('Epicondilite lateral e medial', 'epicondil|tenista|golfista'),
         ('Rigidez do cotovelo', 'rigidez|contratura|artrolise'),
         ('Ossificação heterotópica', 'ossificacao heterotopica|brooker|hastings'),
-        ('Artrose e artroplastia do cotovelo', 'artrose do cotovelo|artroplastia do cotovelo|artroscopia do cotovelo|osteocondrite|panner'),
+        ('Artrose e artroplastia do cotovelo', 'artrose do cotovelo|artroplastia do cotovelo|osteocondrite|panner'),
         ('Fraturas do cotovelo e antebraço', 'fratura'),
         ('Lesões nervosas do ombro e cotovelo', 'lesao do nervo|paralisia do nervo|neuropatia|supraescapular|torax longo|parsonage|plexo|escapula alada|tunel cubital'),
         ('Outros temas do ombro e cotovelo', None),
@@ -189,11 +192,13 @@ TAGS: dict[str, list[tuple[str, str | None]]] = {
         ('Exame físico do pé e tornozelo', 'teste|manobra|thompson|coleman|gaveta'),
         ('Imagem do pé e tornozelo', 'radiograf|incidencia|angulo|meary|bohler|ressonancia'),
         ('Hálux valgo', 'halux valgo|joanete|angulo intermetatarsal|chevron|scarf|lapidus'),
-        ('Hálux rígido', 'halux rigido|queilectomia|coughlin'),
-        ('Metatarsalgia e neuroma de Morton', 'metatarsalgia|morton|freiberg|sesamoide|placa plantar'),
+        ('Hálux rígido', 'halux rigido|queilectomia'),
+        ('Metatarsalgia e neuroma de Morton', 'metatarsalgia|morton|freiberg|sesamoide|placa plantar|instabilidade da (2a|segunda) (articulacao )?metatarsofalang'),
         ('Dedos menores em garra e em martelo', 'garra|martelo|dedos menores'),
-        ('Pé plano adquirido do adulto', 'pe plano|tibial posterior|insuficiencia do tibial|johnson'),
-        ('Pé cavo', 'pe cavo|cavovaro|charcot-marie'),
+        ('Pé plano adquirido do adulto', 'pe plano adquirido|tibial posterior|insuficiencia do tibial|johnson|myerson|muitos dedos|cotton'),
+        ('Pé plano flexível', 'pe plano (flexivel|valgo|evolutivo|da crianca|infantil)|artrorrise|giannestras|grice|navicular acessorio'),
+        ('Deformidades congênitas do pé', 'talo vertical|talus vertical|metatarso (aduto|varo)|calcaneovalgo|pe torto|ponseti|polidactilia|camptodactil'),
+        ('Pé cavo', 'pe cavo|cavovaro|charcot-marie|coleman'),
         ('Coalizões tarsais', 'coaliz'),
         ('Tendão calcâneo', 'tendao calcaneo|aquiles|haglund|thompson'),
         ('Tendões fibulares e outras tendinopatias', 'tendoes fibulares|tendao fibular|fibular (curto|longo)|tendinopat|flexor longo do halux'),
@@ -214,7 +219,8 @@ TAGS: dict[str, list[tuple[str, str | None]]] = {
         ('Marcha na criança', 'marcha|andar'),
         ('Ossificação e crescimento', 'ossificac|nucleo de ossificacao|centro de ossificacao|crescimento'),
         ('Fraturas supracondilianas do úmero', 'supracondil|gartland'),
-        ('Côndilo lateral, epicôndilo medial e rádio proximal na criança', 'condilo lateral|epicondilo medial|monteggia|colo do radio|cotovelo|olecrano|pulled elbow|pronacao dolorosa'),
+        ('Luxações na criança', 'pronacao dolorosa|pulled elbow|cotovelo da baba|subluxacao da cabeca do radio|luxacao (do|de) cotovelo'),
+        ('Côndilo lateral, epicôndilo medial e rádio proximal na criança', 'condilo lateral|epicondilo medial|monteggia|colo do radio|cotovelo|olecrano'),
         ('Fraturas do antebraço e punho na criança', 'antebraco|radio distal|galho verde|torus|punho'),
         ('Fraturas do fêmur e da perna na criança', 'fratura.{0,40}(femur|tibia|perna)|(femur|tibia).{0,40}fratura|toddler|spica|pavlik'),
         ('Fraturas do tornozelo na criança', 'tornozelo|tillaux|triplanar'),
@@ -322,7 +328,9 @@ TAGS: dict[str, list[tuple[str, str | None]]] = {
 }
 
 # Depois de escolhida a tag, separa pelo texto (anatomia do ombro x do cotovelo).
-REFINO = {'ombro-cotovelo': [('Anatomia do ombro', 'Anatomia do cotovelo', 'cotovelo|olecrano|epicondil|radio proximal|ulna proximal|coronoide|antebraco')]}
+REFINO = {'ombro-cotovelo': [('Anatomia do ombro', 'Anatomia do cotovelo', 'cotovelo|olecrano|epicondil|radio proximal|ulna proximal|coronoide|antebraco'),
+                            ('Exame físico do ombro', 'Exame físico do cotovelo', 'cotovelo|epicondil|olecrano|bicep(s)? distal|porcao distal do bicep'),
+                            ('Artroscopia e vias de acesso do ombro', 'Artroscopia do cotovelo', 'artroscop.{0,40}cotovelo|cotovelo.{0,40}artroscop')]}
 
 
 def normalizar(texto: str) -> str:

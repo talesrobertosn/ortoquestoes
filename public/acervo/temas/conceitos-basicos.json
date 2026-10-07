@@ -5369,7 +5369,7 @@
       "subtemas": [
         "Amputações e próteses"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "CET-PR",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na amputação ao nível do pé e tornozelo, a figura abaixo corresponde a técnica de",
@@ -5406,7 +5406,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "CET-PR.pdf",
+        "pagina": 5,
+        "numeroOriginal": 13
+      }
     },
     {
       "id": "conceitos-basicos-0177",
@@ -5454,7 +5459,7 @@
         "Pseudartrose e retardo de consolidação",
         "Consolidação óssea"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "CET-PR",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na cicatrização óssea, utilizando o mecanismo do tutor, as fraturas consolidam mediante",
@@ -5484,7 +5489,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "CET-PR.pdf",
+        "pagina": 15,
+        "numeroOriginal": 51
+      }
     },
     {
       "id": "conceitos-basicos-0180",

@@ -29,7 +29,8 @@ import '../estilos/paginas/Treinar.css'
 
 // TEOT e TARO vêm primeiro, cada um na sua pílula. "TEOT/TARO" fica para as
 // questões cuja prova de origem ainda não foi confirmada com o PDF oficial.
-const ORDEM_PROVAS = ['TEOT', 'TARO', 'TEOT/TARO']
+// CET-PR: prova da Comissão de Ensino e Treinamento da Regional Paraná.
+const ORDEM_PROVAS = ['TEOT', 'TARO', 'TEOT/TARO', 'CET-PR']
 
 // Ortopedia é o padrão do site; cirurgia da mão só entra quando a pessoa escolhe.
 const DESCRICAO_AREA: Record<Area, string> = {

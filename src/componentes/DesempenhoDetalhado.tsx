@@ -14,12 +14,15 @@ const pctDe = (parte: number, todo: number) => (todo ? Math.round((100 * parte) 
 const faixa = (p: number) => (p >= 70 ? 'bom' : p >= 50 ? 'medio' : 'baixo')
 const n = (v: number) => v.toLocaleString('pt-BR')
 
+/** Provas de preparação que contam tanto para o TEOT quanto para o TARO (origem a confirmar e CET-PR). */
+const PROVAS_GERAIS = ['TEOT/TARO', 'CET-PR']
+
 /** Grupos de prova do acervo, com o que cada prova de interesse do perfil inclui. */
 const GRUPOS: Array<{ id: string; rotulo: string; interesse: ProvaInteresse[]; pertence: (prova: string, area?: string) => boolean }> = [
-  { id: 'taro', rotulo: 'TARO', interesse: ['taro'], pertence: (p, a) => !a && (p === 'TARO' || p === 'TEOT/TARO') },
-  { id: 'teot', rotulo: 'TEOT', interesse: ['teot'], pertence: (p, a) => !a && (p === 'TEOT' || p === 'TEOT/TARO') },
+  { id: 'taro', rotulo: 'TARO', interesse: ['taro'], pertence: (p, a) => !a && (p === 'TARO' || PROVAS_GERAIS.includes(p)) },
+  { id: 'teot', rotulo: 'TEOT', interesse: ['teot'], pertence: (p, a) => !a && (p === 'TEOT' || PROVAS_GERAIS.includes(p)) },
   { id: 'mao', rotulo: 'Cirurgia da mão', interesse: ['mao'], pertence: (_p, a) => a === 'mao' },
-  { id: 'r4', rotulo: 'R4, fellowship e outras provas', interesse: ['r4'], pertence: (p, a) => a === 'coluna' || a === 'enare' || a === 'quadril' || (!a && !['TARO', 'TEOT', 'TEOT/TARO'].includes(p)) },
+  { id: 'r4', rotulo: 'R4, fellowship e outras provas', interesse: ['r4'], pertence: (p, a) => a === 'coluna' || a === 'enare' || a === 'quadril' || (!a && !['TARO', 'TEOT', ...PROVAS_GERAIS].includes(p)) },
 ]
 
 /**

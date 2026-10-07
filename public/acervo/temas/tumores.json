@@ -6649,7 +6649,7 @@
       "subtemas": [
         "Osteoblastoma"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "CET-PR",
       "ano": null,
       "dificuldade": null,
       "enunciado": "O osteoblastoma",
@@ -6679,16 +6679,20 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "CET-PR.pdf",
+        "pagina": 3,
+        "numeroOriginal": 6
+      }
     },
     {
       "id": "tumores-0210",
       "tema": "Tumores ósseos e de partes moles",
       "subtemas": [
-        "Condrossarcoma",
         "Encondroma e encondromatoses"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "CET-PR",
       "ano": null,
       "dificuldade": null,
       "enunciado": "O tumor ósseo primário mais comum na mão é o",
@@ -6718,15 +6722,21 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "CET-PR.pdf",
+        "pagina": 9,
+        "numeroOriginal": 31
+      }
     },
     {
       "id": "tumores-0211",
       "tema": "Tumores ósseos e de partes moles",
       "subtemas": [
-        "Sarcoma de Ewing"
+        "Sarcoma de Ewing",
+        "Outras lesões pseudotumorais"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "CET-PR",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na osteomielite subaguda segundo ROBERTS, cujo diagnóstico diferencial é o sarcoma de Ewing é o tipo",
@@ -6756,15 +6766,20 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "CET-PR.pdf",
+        "pagina": 12,
+        "numeroOriginal": 39
+      }
     },
     {
       "id": "tumores-0212",
       "tema": "Tumores ósseos e de partes moles",
       "subtemas": [
-        "Condrossarcoma"
+        "Encondroma e encondromatoses"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "CET-PR",
       "ano": null,
       "dificuldade": null,
       "enunciado": "O aspecto radiológico do condroma demonstra uma lesão ovóide",
@@ -6794,7 +6809,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "CET-PR.pdf",
+        "pagina": 15,
+        "numeroOriginal": 53
+      }
     },
     {
       "id": "tumores-0213",
@@ -6802,7 +6822,7 @@
       "subtemas": [
         "Osteossarcoma"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "CET-PR",
       "ano": null,
       "dificuldade": null,
       "enunciado": "No osteossarcoma o sítio de envolvimento mais frequente é a metáfise",
@@ -6832,7 +6852,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "CET-PR.pdf",
+        "pagina": 15,
+        "numeroOriginal": 54
+      }
     },
     {
       "id": "tumores-0214",
@@ -6840,7 +6865,7 @@
       "subtemas": [
         "Cordoma"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "CET-PR",
       "ano": null,
       "dificuldade": null,
       "enunciado": "O cordoma é o tumor maligno primário mais comum",
@@ -6870,7 +6895,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "CET-PR.pdf",
+        "pagina": 16,
+        "numeroOriginal": 55
+      }
     },
     {
       "id": "tumores-0240",
