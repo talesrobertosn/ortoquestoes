@@ -110,7 +110,7 @@ Pendências no acervo: TARO 2006 a 2009 (trauma-1129, 1144, 1178) sem gabarito; 
 temas (trauma-0415 e ombro-cotovelo-0170; trauma-0312 e 0963; ombro-cotovelo-0102 e 0383;
 pediatria-0097 e 0468).
 
-## Fratura da clavícula (lido em 07/10/2026; capítulo ainda não enviado; limite pedido: 20 questões)
+## Fratura da clavícula (lido em 07/10/2026; Rockwood cap. 34)
 
 Recorte: subtema "Fratura da clavícula" e o da criança, mais o regex de clavícula e ombro flutuante.
 Cerca de 35 questões diretamente sobre a fratura (TARO 2006 a 2025, TEOT 2022 a 2025, provas de ombro
@@ -139,6 +139,21 @@ Fatos carimbados:
 
 Formato: pares de direção (translação e rotação), equivalência entre classificações, ligamento roto
 por tipo e um fato de complicação.
+
+Aproveitamento do capítulo 34 (trauma-1349 a 1370, 22 questões; o pedido foi "não 50, só as boas"):
+epidemiologia por terço, desvio do fragmento lateral, fragmentos distraídos e dissociação
+escapulotorácica, encurtamento (30% de assimetria; radiografia superestima), radiografia inclinada em
+pé, terço medial (placa ao esterno retirada; fios lisos contraindicados), ROBINSON 3B2 = CRAIG V, NEER
+IIB, distâncias dos vasos e do plexo, indicações mais absolutas, pseudartrose 15% a 20% contra 2%,
+CLEMENT (tabagismo e DASH 35), fixação tardia e plexo aderido (C5 e C6), Cutibacterium acnes na
+pseudartrose após placa, desfiladeiro torácico e osteotomia, haste retrógrada, montagem da placa (seis
+corticais), placa anteroinferior (retirada 5% contra 11%), terço lateral conservador, placa-gancho
+(gancho posterior, retirada de 60% a 83%), botão coracoclavicular, DAIR.
+
+Descartados por redundância ou baixo rendimento: tipoia contra oito e cirurgia contra conservador
+(já em trauma-1224 e 1225), ombro flutuante (feito na escápula; atenção: o cap. 34 defende fixar a
+clavícula primeiro e reavaliar a glenoide, o oposto do cap. 33), ossificação, nervos
+supraclaviculares, embolia gasosa, platô funcional em 1 ano, adolescentes, fixador externo.
 
 ## Fraturas por estresse (lido em 07/10/2026; Rockwood cap. 24)
 
