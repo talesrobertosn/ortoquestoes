@@ -21,6 +21,9 @@ export interface AssinaturaBase {
   ultima_atualizacao?: string | null
   /** 'pix' ou 'cartao' (migração 202610060100 em diante). */
   meio?: string | null
+  /** E-mail e nome, quando a lista vem do painel (para conferir uma a uma). */
+  usuario?: string | null
+  nome?: string | null
 }
 
 export type Meio = 'pix' | 'cartao'
@@ -46,6 +49,18 @@ export const vigente = (a: AssinaturaBase, agora = Date.now()) =>
   (a.status === 'ativa' || (a.status === 'cancelada' && !!a.cancelar_ao_fim)) && (!a.fim_periodo || new Date(a.fim_periodo).getTime() > agora)
 /** Cartão que vai renovar sozinho. */
 export const renovaSozinha = (a: AssinaturaBase) => meioDe(a) === 'cartao' && a.status === 'ativa' && !a.cancelar_ao_fim
+
+/**
+ * Cartões com acesso agora que vão renovar sozinhos, com o valor do plano (o que será cobrado na
+ * renovação) e o equivalente por mês (anual dividido por 12, semestral por 6), da próxima
+ * renovação para a mais distante.
+ */
+export function recorrentesNoCartao(assinaturas: AssinaturaBase[], agora = Date.now()) {
+  return assinaturas
+    .filter(a => vigente(a, agora) && renovaSozinha(a))
+    .map(a => { const p = precoDe(a.plano); return { assinatura: a, plano: p?.nome ?? a.plano, valor: p?.total ?? 0, mensal: p ? p.total / p.meses : 0, proxima: a.fim_periodo ?? null } })
+    .sort((x, y) => (x.proxima ?? '').localeCompare(y.proxima ?? ''))
+}
 
 /** Data em que a pessoa (ou o Mercado Pago) desligou a renovação de um cartão; null se não desligou. */
 export function dataCancelamento(a: AssinaturaBase): Date | null {

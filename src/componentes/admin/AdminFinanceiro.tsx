@@ -41,6 +41,7 @@ export function AdminFinanceiro({ assinaturas, usuarios, testes = 0 }: { assinat
     const vigente = (a: AssinaturaFinanceira) => (a.status === 'ativa' || (a.status === 'cancelada' && !!a.cancelar_ao_fim)) && (!a.fim_periodo || new Date(a.fim_periodo) > agora)
     const renovam = assinaturas.filter(a => renovaSozinha(a) && vigente(a))
     const mrr = renovam.reduce((s, a) => { const p = precoDe(a.plano); return s + (p ? p.total / p.meses : 0) }, 0)
+    const valorRecorrente = renovam.reduce((s, a) => s + (precoDe(a.plano)?.total ?? 0), 0)
     const pagas = assinaturas.filter(a => a.ultima_cobranca_em || pagaSemCobranca(a))
     // Cancelamento de verdade: cartão com a renovação desligada. Pix é avulso (termina sem renovar) e reembolso conta à parte.
     const pagasCartao = pagas.filter(a => meioDe(a) === 'cartao')
@@ -52,7 +53,7 @@ export function AdminFinanceiro({ assinaturas, usuarios, testes = 0 }: { assinat
     const primeira = todas[0]?.em ?? null
     const mesesDeVida = primeira ? Math.max(1, (agora.getTime() - primeira.getTime()) / (30.44 * 86_400_000)) : 0
     return {
-      total, pagantes, porPlano, mrr, renovam: renovam.length, cancelaram, pagas: pagas.length, pagasCartao: pagasCartao.length, pagasPix, reembolsos, primeira,
+      total, pagantes, porPlano, mrr, valorRecorrente, renovam: renovam.length, cancelaram, pagas: pagas.length, pagasCartao: pagasCartao.length, pagasPix, reembolsos, primeira,
       renovacoes: renovacoes.length, receitaRenovacoes: renovacoes.reduce((s, c) => s + c.valor, 0), receitaPix,
       esteMes: porMes.get(esteMes) ?? 0, mesPassado: porMes.get(mesPassado) ?? 0,
       ticket: todas.length ? total / todas.length : 0,
@@ -81,7 +82,7 @@ export function AdminFinanceiro({ assinaturas, usuarios, testes = 0 }: { assinat
       <div className="adm-kpis">
         <div className="adm-kpi adm-kpi--destaque adm-kpi--dinheiro"><span>Total recebido</span><strong>{real(d.total)}</strong><small>{d.primeira ? `desde ${d.primeira.toLocaleDateString('pt-BR')}` : 'nenhuma cobrança ainda'}</small></div>
         <div className="adm-kpi"><span>Neste mês</span><strong>{real(d.esteMes)}</strong><small>{variacao === null ? 'sem base no mês passado' : `${variacao >= 0 ? '+' : ''}${variacao}% sobre ${real(d.mesPassado)} do mês passado`}</small></div>
-        <div className="adm-kpi"><span>Receita mensal recorrente</span><strong>{real(d.mrr)}</strong><small>{d.renovam} assinatura(s) que renovam sozinhas</small></div>
+        <div className="adm-kpi"><span>Receita recorrente no cartão</span><strong>{real(d.valorRecorrente)}</strong><small>{d.renovam} assinatura(s) que renovam sozinhas, somando o valor de cada plano · equivale a {real(d.mrr)} por mês</small></div>
         <div className="adm-kpi"><span>Média por mês</span><strong>{real(d.mediaMensal)}</strong><small>desde a primeira cobrança</small></div>
         <div className="adm-kpi"><span>Ticket médio</span><strong>{real(d.ticket)}</strong><small>por cobrança paga</small></div>
         <div className="adm-kpi"><span>Receita por pagante</span><strong>{real(d.porPagante)}</strong><small>{d.pagantes} pessoa(s) já pagaram</small></div>

@@ -7,7 +7,7 @@ import { erroDoPainel, porcentagem } from './formatos'
 import { AdminPerfis } from './AdminPerfis'
 import type { LinhaUsuario } from './AdminUsuarios'
 import { TabelaMensal } from './AdminMensal'
-import { mesAMes, meioDe, previsao, renovaSozinha, vigente, type AssinaturaBase } from './receita'
+import { mesAMes, meioDe, previsao, recorrentesNoCartao, renovaSozinha, vigente, type AssinaturaBase } from './receita'
 
 interface Dia { dia: string; cadastros: number; ativos: number; respostas: number }
 interface Funil { cadastrados: number; confirmaram: number; responderam: number; passaram_50: number; passaram_500: number; assinaram: number }
@@ -35,9 +35,11 @@ function receita(assinaturas: AssinaturaReceita[]) {
   const [prox] = previsao(assinaturas, 2)
   const proximos30 = assinaturas.filter(a => renovaSozinha(a) && a.fim_periodo && new Date(a.fim_periodo).getTime() > agora && new Date(a.fim_periodo).getTime() - agora < 30 * 86_400_000)
   const pixAcabando = comAcesso.filter(a => meioDe(a) === 'pix' && a.fim_periodo && new Date(a.fim_periodo).getTime() - agora < 30 * 86_400_000)
+  const recorrentes = recorrentesNoCartao(assinaturas, agora)
   return {
-    porPlano, meses, atual, anterior, proxMes: prox?.[1],
+    porPlano, meses, atual, anterior, proxMes: prox?.[1], recorrentes,
     mrr: porPlano.reduce((s, p) => s + p.mensal, 0),
+    valorRecorrente: recorrentes.reduce((s, x) => s + x.valor, 0),
     comAcesso: comAcesso.length,
     renovam: comAcesso.filter(renovaSozinha).length,
     pixComAcesso: comAcesso.filter(a => meioDe(a) === 'pix').length,
@@ -129,7 +131,7 @@ export function AdminCrescimento({ assinaturas, usuarios }: { assinaturas: Assin
     <section className="empilha adm-secao" aria-labelledby="adm-titulo-receita">
       <div><h2 id="adm-titulo-receita">Receita</h2><p>Reconstruída a partir das assinaturas, separando cartão (renova sozinho) de Pix (pago uma vez, termina sem renovar). Cancelamento aqui é só quando a pessoa desliga a renovação do cartão; reembolsos e Pix que terminaram aparecem à parte. Contas de teste ficam de fora. Não substitui o extrato do Mercado Pago.</p></div>
       <div className="adm-kpis">
-        <div className="adm-kpi adm-kpi--destaque"><span>Receita mensal recorrente</span><strong>{real(r.mrr)}</strong><small>{r.renovam} cartão(ões) que renovam sozinhos, no valor mensal equivalente</small></div>
+        <div className="adm-kpi adm-kpi--destaque"><span>Receita recorrente no cartão</span><strong>{real(r.valorRecorrente)}</strong><small>{r.renovam} cartão(ões) que renovam sozinhos, somando o valor de cada plano · equivale a {real(r.mrr)} por mês (anual ÷ 12, semestral ÷ 6)</small></div>
         <div className="adm-kpi"><span>Recebido neste mês</span><strong>{real(r.atual?.receita ?? 0)}</strong><small>{r.anterior ? `${real(r.anterior.receita)} no mês passado` : ''}</small></div>
         <div className="adm-kpi"><span>Assinaturas novas no mês</span><strong>{(r.atual?.novasCartao ?? 0) + (r.atual?.novasPix ?? 0)}</strong><small>{r.atual?.novasCartao ?? 0} no cartão · {r.atual?.novasPix ?? 0} no Pix{r.anterior ? ` · ${r.anterior.novasCartao + r.anterior.novasPix} no mês passado` : ''}</small></div>
         <div className="adm-kpi"><span>Renovações automáticas no mês</span><strong>{r.atual?.renovacoes ?? 0}</strong><small>{real(r.atual?.receitaRenovacoes ?? 0)} renovados</small></div>
@@ -138,6 +140,18 @@ export function AdminCrescimento({ assinaturas, usuarios }: { assinaturas: Assin
         <div className="adm-kpi"><span>Com acesso pago agora</span><strong>{r.comAcesso}</strong><small>{r.renovam} renovam · {r.pixComAcesso} no Pix · {r.cartaoSemRenovar} cartão sem renovar</small></div>
         <div className="adm-kpi"><span>Pix que terminam em 30 dias</span><strong>{r.pixAcabando30}</strong><small>bons candidatos a um lembrete de renovação</small></div>
       </div>
+      <details className="adm-grafico__tabela"><summary>Ver os {r.recorrentes.length} cartões que renovam sozinhos</summary>
+        {r.recorrentes.length === 0 ? <p className="adm-vazio">Nenhum cartão renovando sozinho agora.</p> :
+          <div className="adm-tabela-rolagem" role="region" aria-label="Cartões que renovam sozinhos" tabIndex={0}><table className="tabela">
+            <thead><tr><th scope="col">Assinante</th><th scope="col">Plano</th><th scope="col">Valor do plano</th><th scope="col">Por mês</th><th scope="col">Próxima renovação</th></tr></thead>
+            <tbody>{r.recorrentes.map((x, i) => <tr key={`${x.assinatura.id_usuario}-${i}`}>
+              <td>{x.assinatura.nome || x.assinatura.usuario || x.assinatura.id_usuario.slice(0, 8)}</td><td>{x.plano}</td>
+              <td className="numerico">{real(x.valor)}</td><td className="numerico">{real(x.mensal)}</td>
+              <td>{x.proxima ? new Date(x.proxima).toLocaleDateString('pt-BR') : 'sem data'}</td>
+            </tr>)}</tbody>
+          </table></div>}
+      </details>
+      <p className="adm-vazio">As barras abaixo mostram o equivalente por mês de cada plano.</p>
       <BarrasHorizontais formato={v => real(v)} itens={r.porPlano.map(p => ({ rotulo: `${p.nome} · ${p.vigentes} com acesso`, valor: p.mensal, detalhe: `${real(p.total)} a cada ${p.meses === 1 ? 'mês' : `${p.meses} meses`} · ${p.renovam} renovam sozinhos${p.pix ? ` · ${p.pix} no Pix` : ''}${p.vigentes - p.renovam - p.pix > 0 ? ` · ${p.vigentes - p.renovam - p.pix} cartão sem renovar` : ''}` }))} />
       <h3>Mês a mês</h3>
       <TabelaMensal meses={r.meses} />
