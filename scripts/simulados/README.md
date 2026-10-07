@@ -16,6 +16,7 @@ repositório. Rode o que lê o PDF com `python3 -I`.
 | 4. Conferir | `python3 scripts/simulados/aplicar_lote.py PASTA tema lote_a,lote_b --conferir` | erros bloqueiam; avisos mostram comentários curtos e enunciados fora da faixa |
 | 5. Aplicar | o mesmo comando sem `--conferir` (opcional `--data AAAA-MM-DD`) | questões e comentários no tema, figuras em `public/imagens/<tema>/` |
 | 6. Validar | `python3 scripts/gerar_indice.py && python3 scripts/validar_acervo.py && npm test && node fixtures/testar_revisao.mjs` | tudo verde antes do commit |
+| 6b. Enriquecer depois | `python3 scripts/simulados/enriquecer.py PASTA/acrescimos.py [--conferir]` | acrescenta texto a comentários já publicados (por id), sem mexer em gabarito e enunciado |
 | 7. Registrar | atualizar `docs/simulados/mapas-da-banca.md` com o mapa do assunto e as lições do capítulo | o conhecimento fica para o próximo |
 
 O que o `aplicar_lote.py` confere: 4 alternativas distintas; gabarito coerente com as chaves de

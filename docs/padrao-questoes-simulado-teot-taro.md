@@ -122,7 +122,8 @@ capítulo.
   encurta é a análise das alternativas: cada uma precisa de um parágrafo de verdade (o que diz, de
   onde vem o distrator no livro, por que não serve, como diferenciar), em geral 400 a 700
   caracteres, e não uma frase. Meta: mediana do lote de 4,5 mil ou mais; o script avisa abaixo de 4
-  mil. Conferir com `scripts/simulados/registro.py`.
+  mil. Conferir com `scripts/simulados/registro.py`. Os capítulos 24/25 e 32 foram enriquecidos com
+  `scripts/simulados/enriquecer.py` (para cerca de 4,2 mil de mediana).
 - **Subtema pertence ao tema.** "Fratura do colo do fêmur" é subtema de trauma e não de tumores;
   o script agora lista os subtemas válidos quando erra.
 - **Só o que o capítulo diz.** Explicações de mecanismo que não estão no texto (por exemplo, por que
