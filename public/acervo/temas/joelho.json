@@ -4995,8 +4995,8 @@
         "Artroplastia total do joelho",
         "Gonartrose e osteotomias"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "ENARE R4 Ortopedia",
+      "ano": 2023,
       "dificuldade": null,
       "enunciado": "Na classificação de Alback, modificada por Keyes, para a artrose do joelho, é uma característica do grau 3",
       "imagens": [],
@@ -5029,7 +5029,13 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "area": "r4-enare",
+      "origem": {
+        "arquivo": "ENARE R4 do ANO 2023.pdf",
+        "pagina": 3,
+        "numeroOriginal": 2
+      }
     },
     {
       "id": "joelho-0125",
@@ -5037,8 +5043,8 @@
       "subtemas": [
         "Osteocondrite dissecante"
       ],
-      "prova": "TEOT/TARO",
-      "ano": null,
+      "prova": "ENARE R4 Ortopedia",
+      "ano": 2023,
       "dificuldade": null,
       "enunciado": "Das seguintes classificações, qual pode ser utilizada na Osteocondrite Dissecante do Joelho?",
       "imagens": [],
@@ -5071,7 +5077,13 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "area": "r4-enare",
+      "origem": {
+        "arquivo": "ENARE R4 do ANO 2023.pdf",
+        "pagina": 4,
+        "numeroOriginal": 9
+      }
     },
     {
       "id": "joelho-0126",
