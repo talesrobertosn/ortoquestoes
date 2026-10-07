@@ -168,6 +168,24 @@ export function mesAMes(assinaturas: AssinaturaBase[], meses = 12): Mes[] {
   return [...mapa.values()]
 }
 
+/**
+ * Quanto as renovações automáticas do cartão trazem de hoje até daqui a `meses` meses, supondo que
+ * ninguém cancele: cada assinatura cobra o valor do plano na próxima renovação e, depois, a cada
+ * período do plano (o mensal cobra todo mês, o anual só uma vez em 12 meses). Pix não entra.
+ */
+export function aReceberNoCartao(assinaturas: AssinaturaBase[], meses: number, agora = new Date()) {
+  const limite = somarMeses(agora, meses)
+  let valor = 0, cobrancas = 0
+  for (const a of assinaturas) {
+    const preco = precoDe(a.plano)
+    if (!preco || !vigente(a, agora.getTime()) || !renovaSozinha(a) || !a.fim_periodo) continue
+    for (let d = new Date(a.fim_periodo); d < limite; d = somarMeses(d, preco.meses)) {
+      if (d >= agora) { valor += preco.total; cobrancas++ }
+    }
+  }
+  return { valor, cobrancas }
+}
+
 /** Próximas renovações automáticas, mês a mês, supondo que ninguém cancele. */
 export function previsao(assinaturas: AssinaturaBase[], meses: number) {
   const agora = new Date(), limite = somarMeses(agora, meses)

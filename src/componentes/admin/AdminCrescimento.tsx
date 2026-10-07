@@ -7,7 +7,7 @@ import { erroDoPainel, porcentagem } from './formatos'
 import { AdminPerfis } from './AdminPerfis'
 import type { LinhaUsuario } from './AdminUsuarios'
 import { TabelaMensal } from './AdminMensal'
-import { mesAMes, meioDe, previsao, recorrentesNoCartao, renovaSozinha, vigente, type AssinaturaBase } from './receita'
+import { aReceberNoCartao, mesAMes, meioDe, previsao, recorrentesNoCartao, renovaSozinha, vigente, type AssinaturaBase } from './receita'
 
 interface Dia { dia: string; cadastros: number; ativos: number; respostas: number }
 interface Funil { cadastrados: number; confirmaram: number; responderam: number; passaram_50: number; passaram_500: number; assinaram: number }
@@ -40,6 +40,7 @@ function receita(assinaturas: AssinaturaReceita[]) {
     porPlano, meses, atual, anterior, proxMes: prox?.[1], recorrentes,
     mrr: porPlano.reduce((s, p) => s + p.mensal, 0),
     valorRecorrente: recorrentes.reduce((s, x) => s + x.valor, 0),
+    aReceber: ([1, 6, 12] as const).map(m => ({ meses: m, ...aReceberNoCartao(assinaturas, m) })),
     comAcesso: comAcesso.length,
     renovam: comAcesso.filter(renovaSozinha).length,
     pixComAcesso: comAcesso.filter(a => meioDe(a) === 'pix').length,
@@ -132,6 +133,7 @@ export function AdminCrescimento({ assinaturas, usuarios }: { assinaturas: Assin
       <div><h2 id="adm-titulo-receita">Receita</h2><p>Reconstruída a partir das assinaturas, separando cartão (renova sozinho) de Pix (pago uma vez, termina sem renovar). Cancelamento aqui é só quando a pessoa desliga a renovação do cartão; reembolsos e Pix que terminaram aparecem à parte. Contas de teste ficam de fora. Não substitui o extrato do Mercado Pago.</p></div>
       <div className="adm-kpis">
         <div className="adm-kpi adm-kpi--destaque"><span>Receita recorrente no cartão</span><strong>{real(r.valorRecorrente)}</strong><small>{r.renovam} cartão(ões) que renovam sozinhos, somando o valor de cada plano · equivale a {real(r.mrr)} por mês (anual ÷ 12, semestral ÷ 6)</small></div>
+        {r.aReceber.map(x => <div className="adm-kpi adm-kpi--destaque" key={x.meses}><span>A receber {x.meses === 1 ? 'no próximo mês' : `nos próximos ${x.meses} meses`}</span><strong>{real(x.valor)}</strong><small>{x.cobrancas} renovação(ões) no cartão, se ninguém cancelar · Pix não entra</small></div>)}
         <div className="adm-kpi"><span>Recebido neste mês</span><strong>{real(r.atual?.receita ?? 0)}</strong><small>{r.anterior ? `${real(r.anterior.receita)} no mês passado` : ''}</small></div>
         <div className="adm-kpi"><span>Assinaturas novas no mês</span><strong>{(r.atual?.novasCartao ?? 0) + (r.atual?.novasPix ?? 0)}</strong><small>{r.atual?.novasCartao ?? 0} no cartão · {r.atual?.novasPix ?? 0} no Pix{r.anterior ? ` · ${r.anterior.novasCartao + r.anterior.novasPix} no mês passado` : ''}</small></div>
         <div className="adm-kpi"><span>Renovações automáticas no mês</span><strong>{r.atual?.renovacoes ?? 0}</strong><small>{real(r.atual?.receitaRenovacoes ?? 0)} renovados</small></div>
