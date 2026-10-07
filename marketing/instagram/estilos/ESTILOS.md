@@ -202,6 +202,17 @@ slogan, a questão como "roteiro" e a resposta nos créditos finais, com cena p�
 - **Regras:** conteúdo importante entre 250 e 1700 px de altura (fora das barras do Instagram);
   selo "R3" é piada e não imita classificação oficial; sem figurinha.
 
+## 9. Receituário (`posts/2026-10-08-receita-fratura-exposta/`)
+
+**Ideia:** a questão vira uma receita médica para completar: o enunciado é a prescrição com as
+palavras em dúvida circuladas em vermelho, e cada slide decide uma palavra. Só tipografia (papel de
+receituário pautado, letra de médico em Caveat, o símbolo de receita em Playfair).
+
+- **Quando serve:** questões de conduta e prescrição (antibiótico, dose, momento, via), e as de par
+  2 por 2 em que cada atributo vira uma "palavra" da receita.
+- **Estrutura (5 slides):** a receita incompleta com o gancho → a questão como caiu → 1ª decisão →
+  2ª decisão (a pegadinha) → a receita completa, o carimbo da resposta e a frase para a prova.
+
 ## Stories semeadores (`stories/`)
 
 Um story por estilo (1080×1920), postado 1 a 2 horas antes do post correspondente: faz a

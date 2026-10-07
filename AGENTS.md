@@ -27,3 +27,7 @@ Antes de cada capítulo, faça a engenharia reversa do assunto (seção "Engenha
 
 Agentes externos (por exemplo, ChatGPT Codex) que forem criar simulados a partir de um capítulo devem
 seguir o roteiro passo a passo de [docs/prompts/codex-simulados.md](docs/prompts/codex-simulados.md).
+
+Para qualquer conteúdo de divulgação (Instagram, propaganda, e-mail), siga
+[docs/marketing/orientacoes.md](docs/marketing/orientacoes.md): público, horários de postagem,
+frequência e regras da marca definidas pelo dono do projeto.

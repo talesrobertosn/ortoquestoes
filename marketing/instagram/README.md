@@ -17,6 +17,8 @@ com dados de exemplo levam a nota "Tela ilustrativa". Não citar o número total
 o destaque é serem as questões das provas oficiais, comentadas (o número só aparece na página
 de assinatura).
 
+**Orientações gerais de marketing (público, horários, frequência, regras): [docs/marketing/orientacoes.md](../../docs/marketing/orientacoes.md).**
+
 **Regras permanentes (mais novas que as seções abaixo; prevalecem sobre elas):**
 
 - **Stories sem figurinha:** nada de quiz, enquete, sim/não, caixa de pergunta nem link (o

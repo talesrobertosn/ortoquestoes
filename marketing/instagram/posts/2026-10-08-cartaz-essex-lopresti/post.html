@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Cartaz Essex-Lopresti</title>
+<!-- Cartaz de cinema (estilo cinema), 08/10/2026: a lesão de ESSEX-LOPRESTI como filme de suspense.
+     2 stories (1080x1920), sem figurinha: s1-cartaz com a pergunta e s2-creditos com a resposta.
+     Questão real: trauma-0431 (TARO 2023, gabarito C). Cena pós-créditos: trauma-0106 (TARO 2017, gabarito B).
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-08-cartaz-essex-lopresti/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+:root { --sangue: #e3262f; --brasa: #ff5a3c; --ouro: #F4CF7C; --verde: #14655E; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #111; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1920px; color: #fff; text-align: center;
+  background:
+    radial-gradient(circle at 1px 1px, rgba(255,255,255,.05) 1.1px, transparent 1.3px) 0 0/7px 7px,
+    radial-gradient(ellipse 70% 45% at 50% 40%, rgba(227,38,47,.42), transparent 70%),
+    radial-gradient(ellipse 120% 80% at 50% 50%, transparent 40%, rgba(0,0,0,.9) 100%),
+    linear-gradient(180deg, #050304, #1a0507 45%, #070203); }
+
+.apresenta { position: absolute; top: 250px; left: 0; right: 0; display: flex; justify-content: center; align-items: center; gap: 16px; font: 600 24px Jakarta; letter-spacing: .42em; text-transform: uppercase; color: rgba(255,255,255,.7); }
+.apresenta svg { width: 44px; height: 44px; }
+.elenco { position: absolute; top: 322px; left: 60px; right: 60px; display: flex; justify-content: space-between; font: 700 25px/1.15 Jakarta; letter-spacing: .2em; text-transform: uppercase; }
+.elenco span { width: 30%; }
+
+/* Arte: as três garras */
+.garras { position: absolute; left: 0; right: 0; top: 400px; height: 700px; }
+.garra { position: absolute; top: 0; width: 26px; height: 760px; border-radius: 50%; transform: rotate(18deg);
+  background: linear-gradient(180deg, transparent, #ffd2c4 30%, #fff 50%, #ffb3a3 70%, transparent);
+  box-shadow: 0 0 30px 10px rgba(255,60,50,.65), 0 0 90px 30px rgba(227,38,47,.45); }
+.garra::after { content: ''; position: absolute; inset: 20% 6px; border-radius: 50%; background: #2a0003; }
+
+.titulo { position: absolute; top: 580px; left: 0; right: 0; }
+.titulo small { display: block; font: 800 74px Jakarta; letter-spacing: .3em; padding-left: .3em; text-shadow: 0 6px 30px #000; }
+.titulo b { display: block; margin-top: 16px; font: 800 168px/1 Jakarta; letter-spacing: -.02em; color: var(--sangue); transform: scaleY(1.45); transform-origin: top;
+  text-shadow: 0 0 40px rgba(227,38,47,.6), 0 10px 0 #3a0306; }
+.slogan { position: absolute; top: 945px; left: 90px; right: 90px; font: 500 36px/1.35 Inter; color: rgba(255,255,255,.88); text-wrap: balance; }
+.slogan b { color: #fff; font-weight: 700; }
+
+.roteiro { position: absolute; top: 1080px; left: 70px; right: 70px; padding: 28px 34px 30px; border: 2px solid rgba(255,255,255,.22); border-radius: 22px; background: rgba(0,0,0,.55); text-align: left; }
+.roteiro .eti { font: 800 22px Jakarta; letter-spacing: .26em; text-transform: uppercase; color: var(--ouro); }
+.roteiro p { margin-top: 10px; font: 600 30px/1.32 Jakarta; letter-spacing: -.01em; }
+.finais { display: grid; gap: 10px; margin-top: 18px; }
+.final { display: grid; grid-template-columns: 50px 1fr; gap: 18px; align-items: center; font: 500 26px/1.25 Inter; color: rgba(255,255,255,.9); }
+.final i { width: 50px; height: 50px; border-radius: 12px; display: grid; place-items: center; background: var(--sangue); font: 800 28px Jakarta; font-style: normal; }
+
+.estreia { position: absolute; left: 70px; right: 70px; top: 1600px; font: 800 30px/1.3 Jakarta; letter-spacing: .22em; text-transform: uppercase; color: var(--ouro); }
+.estreia span { display: block; margin-top: 10px; font: 500 28px Inter; letter-spacing: 0; text-transform: none; color: rgba(255,255,255,.75); }
+
+.creditos { position: absolute; left: 70px; right: 70px; bottom: 52px; font: 400 18px/1.3 Inter; letter-spacing: .06em; text-transform: uppercase; color: rgba(255,255,255,.55); transform: scaleY(1.25); }
+.creditos b { font-weight: 800; color: rgba(255,255,255,.8); }
+.selo { position: absolute; right: 70px; top: 1778px; display: flex; align-items: center; gap: 12px; text-align: left; font: 600 17px/1.2 Inter; color: rgba(255,255,255,.6); }
+.selo b { width: 58px; height: 58px; display: grid; place-items: center; border-radius: 8px; background: #fff; color: #000; font: 800 26px Jakarta; }
+
+/* Story 2: créditos finais */
+.spoiler { position: absolute; left: -60px; right: -60px; top: 300px; height: 74px; transform: rotate(-4deg); background: var(--sangue); display: grid; place-items: center; font: 800 34px Jakarta; letter-spacing: .5em; box-shadow: 0 14px 40px rgba(0,0,0,.6); }
+.fim { position: absolute; top: 430px; left: 0; right: 0; }
+.fim small { font: 700 26px Jakarta; letter-spacing: .4em; color: rgba(255,255,255,.6); text-transform: uppercase; }
+.fim h2 { margin-top: 12px; font: 800 84px/1 Jakarta; letter-spacing: -.03em; }
+.fim h2 em { font-style: normal; color: var(--sangue); }
+.fim p { margin-top: 18px; font: 500 32px Inter; color: rgba(255,255,255,.75); }
+.ordem { position: absolute; top: 700px; left: 90px; right: 90px; display: grid; gap: 30px; }
+.cena { display: grid; grid-template-columns: 96px 1fr; gap: 28px; align-items: start; text-align: left; }
+.cena > b { width: 96px; height: 96px; border-radius: 50%; display: grid; place-items: center; border: 4px solid var(--sangue); font: 800 46px Jakarta; color: #fff; }
+.cena h3 { font: 800 44px/1.05 Jakarta; letter-spacing: -.02em; }
+.cena h3 span { display: block; font: 700 21px Jakarta; letter-spacing: .26em; text-transform: uppercase; color: var(--brasa); margin-bottom: 6px; }
+.cena p { margin-top: 8px; font: 400 27px/1.38 Inter; color: rgba(255,255,255,.8); }
+.cena p b { color: #fff; font-weight: 700; }
+.cena.especial > b { border-style: dashed; color: rgba(255,255,255,.8); }
+.dentro { position: absolute; left: 90px; right: 90px; top: 1440px; padding: 26px 30px; border-radius: 20px; background: rgba(255,255,255,.08); border: 2px solid rgba(255,255,255,.18); text-align: left; }
+.dentro strong { font: 800 22px Jakarta; letter-spacing: .24em; text-transform: uppercase; color: var(--ouro); }
+.dentro p { margin-top: 8px; font: 400 27px/1.4 Inter; color: rgba(255,255,255,.85); }
+.dentro p b { color: #fff; }
+.site { position: absolute; left: 0; right: 0; top: 1700px; font: 700 30px Jakarta; letter-spacing: .04em; color: var(--ouro); }
+.site span { display: block; margin-bottom: 8px; font: 500 24px Inter; letter-spacing: 0; color: rgba(255,255,255,.6); }
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#14655E"/><g fill="#FFFFFF" opacity=".55"><path transform="translate(13 9.5)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(11 21.2)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(13 44.6)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g><path fill="#F4CF7C" transform="translate(11 32.9)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></symbol>
+</defs></svg>
+
+<!-- 1. O cartaz -->
+<section id="s1-cartaz">
+  <div class="apresenta"><svg><use href="#sim"/></svg>Orto Questões apresenta</div>
+  <div class="elenco"><span>Cabeça do rádio</span><span>Membrana interóssea</span><span>Radioulnar distal</span></div>
+  <div class="garras"><i class="garra" style="left:330px"></i><i class="garra" style="left:520px;top:-30px"></i><i class="garra" style="left:710px"></i></div>
+  <div class="titulo"><small>ESSEX-</small><b>LOPRESTI</b></div>
+  <p class="slogan">A dor está no cotovelo. <b>O crime está no punho.</b></p>
+  <div class="roteiro">
+    <span class="eti">O roteiro · TARO 2023</span>
+    <p>O sinal clínico que sugere fratura-luxação ESSEX-LOPRESTI é a</p>
+    <div class="finais">
+      <div class="final"><i>A</i>diminuição da pronação.</div>
+      <div class="final"><i>B</i>diminuição da supinação.</div>
+      <div class="final"><i>C</i>dor à palpação da articulação radiulnar distal.</div>
+      <div class="final"><i>D</i>dor à palpação da articulação radiulnar proximal.</div>
+    </div>
+  </div>
+  <p class="estreia">Quem é o culpado?<span>A revelação estreia no próximo story.</span></p>
+  <div class="selo"><b>R3</b><span>Impróprio para quem<br>só olha o cotovelo</span></div>
+  <p class="creditos" style="right:350px;text-align:left"><b>Orto Questões</b> apresenta <b>Essex-Lopresti</b> · um suspense em três atos: a fratura que todo mundo vê, a membrana que rompe em silêncio e o punho que ninguém examina · em cartaz na sua prova</p>
+</section>
+
+<!-- 2. Créditos finais (a resposta) -->
+<section id="s2-creditos">
+  <div class="apresenta" style="top:200px"><svg><use href="#sim"/></svg>Orto Questões</div>
+  <div class="spoiler">SPOILER</div>
+  <div class="fim"><small>Créditos finais</small><h2>Resposta <em>C</em></h2><p>Dor à palpação da radioulnar distal.</p></div>
+  <div class="ordem">
+    <div class="cena"><b>1</b><div><h3><span>A vítima à vista</span>Cabeça do rádio</h3><p>A <b>fratura</b> que leva o paciente ao pronto-socorro, com dor no cotovelo.</p></div></div>
+    <div class="cena"><b>2</b><div><h3><span>O cúmplice silencioso</span>Membrana interóssea</h3><p>Rompe e deixa o rádio livre para <b>migrar para cima</b>.</p></div></div>
+    <div class="cena"><b>3</b><div><h3><span>A pista decisiva</span>Radioulnar distal</h3><p><b>Dor no punho</b> num paciente com fratura da cabeça do rádio. Sem esse exame, a lesão passa despercebida.</p></div></div>
+    <div class="cena especial"><b>×</b><div><h3><span>Os falsos suspeitos</span>A, B e D</h3><p>Perder <b>pronação</b> ou <b>supinação</b> acontece em muitas lesões do cotovelo. Dor na radioulnar <b>proximal</b> vem da própria fratura.</p></div></div>
+  </div>
+  <div class="dentro" style="top:1495px">
+    <strong>Cena pós-créditos · TARO 2017</strong>
+    <p>Na lesão crônica, a banca quis <b>encurtamento da ulna e artroplastia da cabeça do rádio</b>. A regra de ouro: não ressecar a cabeça do rádio sem repor.</p>
+  </div>
+  <p class="site" style="top:1740px"><span>A questão comentada, e muitas outras, no site</span>ortoquestoes.com.br</p>
+</section>
+
+</body></html>
