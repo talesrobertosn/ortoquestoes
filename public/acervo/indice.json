@@ -1,7 +1,7 @@
 {
   "versao": 1,
-  "geradoEm": "2026-10-07T11:40:51+00:00",
-  "total": 5535,
+  "geradoEm": "2026-10-07T12:05:03+00:00",
+  "total": 5572,
   "temas": [
     {
       "slug": "mao",
@@ -43,7 +43,7 @@
       "slug": "trauma",
       "nome": "Trauma adulto",
       "arquivo": "temas/trauma.json",
-      "total": 900
+      "total": 918
     },
     {
       "slug": "pediatria",
@@ -55,7 +55,7 @@
       "slug": "tumores",
       "nome": "Tumores ósseos e de partes moles",
       "arquivo": "temas/tumores.json",
-      "total": 283
+      "total": 300
     },
     {
       "slug": "conceitos-basicos",
@@ -67,7 +67,7 @@
       "slug": "osteometabolicas",
       "nome": "Osteometabólicas",
       "arquivo": "temas/osteometabolicas.json",
-      "total": 105
+      "total": 107
     }
   ],
   "subtemas": [
@@ -67836,6 +67836,305 @@
       "sim": 1
     },
     {
+      "id": "trauma-1237",
+      "t": 6,
+      "s": [
+        178
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1238",
+      "t": 6,
+      "s": [
+        178
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1239",
+      "t": 6,
+      "s": [
+        178
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1240",
+      "t": 6,
+      "s": [
+        178
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1241",
+      "t": 6,
+      "s": [
+        178,
+        187
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1242",
+      "t": 6,
+      "s": [
+        178,
+        177
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1243",
+      "t": 6,
+      "s": [
+        178
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1244",
+      "t": 6,
+      "s": [
+        178
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1245",
+      "t": 6,
+      "s": [
+        178
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1246",
+      "t": 6,
+      "s": [
+        178,
+        183
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1247",
+      "t": 6,
+      "s": [
+        178,
+        175
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1248",
+      "t": 6,
+      "s": [
+        178,
+        187
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1249",
+      "t": 6,
+      "s": [
+        178,
+        177
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1250",
+      "t": 6,
+      "s": [
+        178,
+        177
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1251",
+      "t": 6,
+      "s": [
+        178,
+        177
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1252",
+      "t": 6,
+      "s": [
+        178,
+        177
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1253",
+      "t": 6,
+      "s": [
+        178,
+        181
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1254",
+      "t": 6,
+      "s": [
+        178,
+        193
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
       "id": "pediatria-0001",
       "t": 7,
       "s": [
@@ -85087,6 +85386,281 @@
       "ar": "coluna"
     },
     {
+      "id": "tumores-0370",
+      "t": 8,
+      "s": [
+        248
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0371",
+      "t": 8,
+      "s": [
+        248
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0372",
+      "t": 8,
+      "s": [
+        248
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0373",
+      "t": 8,
+      "s": [
+        248
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0374",
+      "t": 8,
+      "s": [
+        248
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0375",
+      "t": 8,
+      "s": [
+        248,
+        240
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0376",
+      "t": 8,
+      "s": [
+        237,
+        248
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0377",
+      "t": 8,
+      "s": [
+        237
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0378",
+      "t": 8,
+      "s": [
+        248
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0379",
+      "t": 8,
+      "s": [
+        248
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0380",
+      "t": 8,
+      "s": [
+        248,
+        240
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0381",
+      "t": 8,
+      "s": [
+        248
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0382",
+      "t": 8,
+      "s": [
+        248
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0383",
+      "t": 8,
+      "s": [
+        248
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0384",
+      "t": 8,
+      "s": [
+        248
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0385",
+      "t": 8,
+      "s": [
+        242
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "tumores-0386",
+      "t": 8,
+      "s": [
+        238
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
       "id": "conceitos-basicos-0001",
       "t": 9,
       "s": [
@@ -92347,6 +92921,38 @@
       "t": 10,
       "s": [
         276
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "osteometabolicas-0119",
+      "t": 10,
+      "s": [
+        277
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "osteometabolicas-0120",
+      "t": 10,
+      "s": [
+        278
       ],
       "p": null,
       "a": null,

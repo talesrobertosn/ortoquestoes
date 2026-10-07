@@ -4800,6 +4800,94 @@
         "pagina": 10,
         "numeroOriginal": null
       }
+    },
+    {
+      "id": "osteometabolicas-0119",
+      "tema": "Osteometabólicas",
+      "subtemas": [
+        "Outros temas osteometabólicos"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Na fratura patológica associada a doença esquelética não neoplásica, são consideradas condições não corrigíveis (genéticas ou hereditárias):",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "hiperparatireoidismo, osteomalácia e osteodistrofia renal."
+        },
+        {
+          "letra": "B",
+          "texto": "osteoporose por desuso, osteomalácia e osteogênese imperfeita."
+        },
+        {
+          "letra": "C",
+          "texto": "doença de Paget, hiperparatireoidismo e osteopetrose."
+        },
+        {
+          "letra": "D",
+          "texto": "osteogênese imperfeita, displasia fibrosa poliostótica e osteopetrose."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Rockwood_10e_cap24_25_Stress_and_Pathologic_Fractures.pdf",
+        "pagina": 24,
+        "numeroOriginal": null
+      }
+    },
+    {
+      "id": "osteometabolicas-0120",
+      "tema": "Osteometabólicas",
+      "subtemas": [
+        "Hiperparatireoidismo e osteodistrofia renal"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Paciente com osteopenia e fratura de baixa energia apresenta cálcio sérico baixo, fósforo sérico alto e fosfatase alcalina sérica alta. Pelo quadro de distúrbios que produzem osteopenia do Rockwood, o diagnóstico mais provável é",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "osteodistrofia renal."
+        },
+        {
+          "letra": "B",
+          "texto": "osteomalácia."
+        },
+        {
+          "letra": "C",
+          "texto": "hiperparatireoidismo."
+        },
+        {
+          "letra": "D",
+          "texto": "doença de Paget."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Rockwood_10e_cap24_25_Stress_and_Pathologic_Fractures.pdf",
+        "pagina": 27,
+        "numeroOriginal": null
+      }
     }
   ]
 }
