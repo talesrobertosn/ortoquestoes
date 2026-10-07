@@ -3,7 +3,7 @@
 ## Ordem de publicação
 
 1. **Feed às 7h** (carrossel, 5 imagens): `p1-capa`, `p2-questao`, `p3-geracao`, `p4-intencao`, `p5-resposta`.
-2. Stories do dia: o cartaz `cartaz-essex-lopresti` (s1 às 7h, s2 ao meio-dia ou às 19h).
+2. **Stories no mesmo estilo:** `s1-receita` às 7h (a receita incompleta, "a resposta está no post de hoje") e `s2-receita` ao meio-dia ou às 19h (a receita completa). Sem figurinha.
 
 ## Legenda do feed
 

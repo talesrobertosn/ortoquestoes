@@ -1,4 +1,4 @@
-# Cartaz de cinema: Essex-Lopresti (08/10/2026)
+# Cartaz de cinema: Essex-Lopresti (10/10/2026)
 
 Só stories (1080×1920), sem figurinha nem link. Stories não levam legenda.
 
@@ -13,3 +13,5 @@ Só stories (1080×1920), sem figurinha nem link. Stories não levam legenda.
 - Conteúdo alinhado ao comentário da trauma-0431: fratura da cabeça do rádio, ruptura da membrana interóssea,
   lesão da radioulnar distal, migração proximal do rádio; perda de pronação ou supinação não é específica; dor
   na radioulnar proximal vem da própria fratura.
+
+Adiado de 08/10 para 10/10: já houve cartaz de cinema em 07/10 (regra dos 2 dias entre estilos iguais).

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8"><title>Receita Fratura Exposta</title>
 <!-- Receituário (estilo receita), 08/10/2026: a questão vira uma receita médica para completar.
-     5 slides de feed (1080x1350), só tipografia: papel de receituário, letra de médico em Caveat.
+     5 slides de feed (1080x1350) e 2 stories (1080x1920, sem figurinha), só tipografia: papel de receituário, letra de médico em Caveat.
      Questão real: trauma-0762 (TEOT 2025, gabarito A: cefalosporina de 1ª geração, de forma terapêutica).
      node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-08-receita-fratura-exposta/post.html -->
 <style>
@@ -55,6 +55,9 @@ h1 em, h2 em { font-style: normal; color: var(--verde); }
 .prova p { margin-top: 8px; font: 700 36px/1.3 Jakarta; letter-spacing: -.02em; }
 .rodape { position: absolute; left: 108px; right: 108px; bottom: 82px; display: flex; justify-content: space-between; font: 700 21px Jakarta; letter-spacing: .06em; text-transform: uppercase; color: var(--cinza); }
 .rodape b { color: var(--verde); }
+section.story { height: 1920px; }
+section.story .folha { inset: 200px 54px 230px 54px; }
+section.story .rodape { bottom: 262px; }
 </style></head><body>
 
 <svg width="0" height="0" style="position:absolute"><defs>
@@ -141,6 +144,42 @@ h1 em, h2 em { font-style: normal; color: var(--verde); }
     <div class="prova" style="margin-top:30px"><strong>Para a prova</strong><p>Fratura exposta não é ferida limpa: o antibiótico é tratamento. No tipo I, cefalosporina de 1ª geração, o quanto antes.</p></div>
   </div>
   <div class="rodape"><span>Salve a receita</span><b>Mais questões em ortoquestoes.com.br</b></div>
+</section>
+
+<!-- Stories: a receita incompleta de manhã e a completa à noite -->
+<section id="s1-receita" class="story">
+  <div class="folha">
+    <div class="cab"><span class="marca"><svg><use href="#sim"/></svg><b>Orto</b> Questões</span><span class="tipo">Receituário<small>Sala de emergência</small></span></div>
+    <div class="campos" style="margin-top:30px">
+      <span>Paciente:<b>fratura exposta GUSTILO tipo I</b></span>
+      <span>Ferida:<b>menor que 1 cm, limpa</b></span>
+    </div>
+    <div style="display:grid;grid-template-columns:130px 1fr;gap:20px;margin-top:80px;align-items:start">
+      <span class="rx">&#8478;</span>
+      <div class="mao" style="padding-top:18px;font-size:62px">Cefalosporina de <span class="duvida">?</span> geração,<br>de forma <span class="duvida">?</span></div>
+    </div>
+    <h1 style="margin-top:140px;font-size:88px">Você completaria esta receita <em>sem errar?</em></h1>
+    <p class="texto" style="margin-top:26px;font-size:38px">Caiu no TEOT 2025. A segunda palavra é a pegadinha.</p>
+    <p class="mao" style="margin-top:70px;font-size:66px">A resposta está no post de hoje.</p>
+  </div>
+  <div class="rodape"><span>Receita do dia</span><b>ortoquestoes.com.br</b></div>
+</section>
+
+<section id="s2-receita" class="story">
+  <div class="folha">
+    <div class="cab"><span class="marca"><svg><use href="#sim"/></svg><b>Orto</b> Questões</span><span class="tipo">Receita completa<small>TEOT 2025 · resposta A</small></span></div>
+    <div style="display:grid;grid-template-columns:130px 1fr;gap:20px;margin-top:70px;align-items:start">
+      <span class="rx">&#8478;</span>
+      <div class="mao" style="padding-top:18px;font-size:62px">Cefalosporina de <u>1ª geração</u>,<br>de forma <u>terapêutica</u>,<br><span style="font-size:54px;color:#5a6f9a">já na sala de emergência</span></div>
+    </div>
+    <div class="dupla" style="margin-top:70px">
+      <div class="cartao bom"><strong>1ª geração</strong><h3>Cobre a pele</h3><p>No tipo I a contaminação é mínima: <b>Gram-positivos</b>, cefazolina.</p></div>
+      <div class="cartao bom"><strong>Terapêutica</strong><h3>Já contaminou</h3><p>Ferida exposta é <b>contaminada por definição</b>. Profilaxia é para cirurgia limpa.</p></div>
+    </div>
+    <div class="carimbo verde" style="right:110px;top:1150px">Resposta A</div>
+    <div class="prova" style="margin-top:60px"><strong>Para a prova</strong><p>Fratura exposta não é ferida limpa: o antibiótico é tratamento.</p></div>
+  </div>
+  <div class="rodape"><span>Mais questões comentadas no site</span><b>ortoquestoes.com.br</b></div>
 </section>
 
 </body></html>

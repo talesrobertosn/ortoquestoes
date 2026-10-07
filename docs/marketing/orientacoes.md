@@ -44,7 +44,10 @@ algo em poucos segundos e dar vontade de responder.
 
 ## Estilos que funcionam (e como escolher)
 
-- Variar o estilo a cada dia; não repetir o do dia anterior (ver `estilos/historico.json`).
+- **Esperar pelo menos 2 dias para repetir um estilo** (feed ou stories; orientação de 07/10/2026).
+  Exemplo: cartaz de cinema postado em 07/10, o próximo cartaz só a partir de 10/10. Antes de criar,
+  conferir `marketing/instagram/estilos/historico.json`.
+- Stories podem usar o mesmo estilo do feed do dia (teaser de manhã, resposta à noite).
 - Favoritos do dono: **Cartaz de cinema** (stories; "fenomenal") e **Jornal** (feed).
 - Um post bom tem: gancho na capa sem entregar a resposta, a questão real com "comente a sua letra",
   a explicação em passos e a resposta no fim, com uma frase "para a prova".
