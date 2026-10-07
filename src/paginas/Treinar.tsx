@@ -293,7 +293,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
                 <button key={area} type="button" className="tr-foco__opcao" aria-pressed={filtros.areas.includes(area)} onClick={() => alternarArea(area)}>
                   <strong>{ROTULO_AREA[area]}</strong>
                   <small>{DESCRICAO_AREA[area]}</small>
-                  <span className="numerico">{n.toLocaleString('pt-BR')}</span>
+                  <span className="numerico tr-foco__qtd">{n.toLocaleString('pt-BR')} {n === 1 ? 'questão' : 'questões'}</span>
                 </button>
               ))}
               {simuladosAcervo > 0 && (
@@ -301,7 +301,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
                   onClick={() => atualizar(soSimulados ? { soSimulados: false } : { soSimulados: true, areas: simuladosNoRecorte.areas, provas: [] })}>
                   <strong>OrtoQuestões Simulados</strong>
                   <small>Só as nossas, por engenharia reversa das provas oficiais</small>
-                  <span className="numerico">{simuladosNoRecorte.n.toLocaleString('pt-BR')}</span>
+                  <span className="numerico tr-foco__qtd">{simuladosNoRecorte.n.toLocaleString('pt-BR')} {simuladosNoRecorte.n === 1 ? 'questão' : 'questões'}</span>
                 </button>
               )}
             </div>

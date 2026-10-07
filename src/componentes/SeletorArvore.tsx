@@ -40,7 +40,7 @@ export function SeletorArvore({
   const [busca, definirBusca] = useState('')
   // Temas começam fechados: a grade mostra todos de uma vez, e os subtemas
   // abrem sob demanda logo abaixo do cartão.
-  const [abertos, definirAbertos] = useState<string[]>(['ombro-cotovelo'])
+  const [abertos, definirAbertos] = useState<string[]>([])
   const caixa = useRef<HTMLDivElement>(null)
   const idBusca = useId()
 
