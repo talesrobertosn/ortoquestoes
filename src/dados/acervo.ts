@@ -103,15 +103,16 @@ async function questoesDoTema(slug: string, ids: string[]): Promise<Questao[]> {
 }
 
 /** Carrega as questões de uma lista de ids, baixando só o necessário de cada tema. */
-export async function carregarQuestoes(indice: Indice, ids: string[]): Promise<Questao[]> {
+export async function carregarQuestoes(indice: Indice, ids: string[], { incluirOcultas = false } = {}): Promise<Questao[]> {
   const temaPorId = new Map<string, number>()
   for (const item of indice.questoes) temaPorId.set(item.id, item.t)
 
   const porTema = new Map<string, string[]>()
   for (const id of ids) {
     const t = temaPorId.get(id)
-    if (t === undefined || !indice.temas[t]) continue
-    const slug = indice.temas[t].slug
+    // Questão escondida pelo painel sai do índice; só o editor do administrador ainda a abre, pelo prefixo do id.
+    const slug = t !== undefined ? indice.temas[t]?.slug : incluirOcultas ? indice.temas.find((x) => x.slug === id.replace(/-\d+$/, ''))?.slug : undefined
+    if (!slug) continue
     porTema.set(slug, [...(porTema.get(slug) ?? []), id])
   }
 

@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import { usarIndice } from '../../dados/usarIndice'
 import { carregarQuestoes, recarregarAcervo } from '../../dados/acervo'
 import { carregarComentario } from '../../dados/comentarios'
-import { carregarEdicoes, esquecerEdicoes, urlImagem, type EdicaoQuestao } from '../../dados/edicoes'
+import { carregarEdicoes, esquecerEdicoes, foraDoSite, urlImagem, type EdicaoQuestao } from '../../dados/edicoes'
 import type { ComentarioIA, Imagem, Letra, Questao } from '../../dados/tipos'
 import { chamarRpc, enviarImagemQuestao } from '../../servicos/supabase'
 import { TextoEditorial } from '../TextoEditorial'
@@ -204,7 +204,10 @@ export function AdminQuestoes({ idInicial }: { idInicial?: string | null }) {
   const [comentarioOriginal, definirComentarioOriginal] = useState<ComentarioIA | null>(null)
   const [form, definirForm] = useState<Formulario | null>(null)
   const [editada, definirEditada] = useState(false)
+  /** A edição gravada no Supabase para a questão aberta (para preservar o que não vem do formulário). */
+  const [salva, definirSalva] = useState<EdicaoQuestao | null>(null)
   const [editadas, definirEditadas] = useState<string[]>([])
+  const [fora, definirFora] = useState<Array<{ id: string; apagada: boolean }>>([])
   const [estado, definirEstado] = useState('')
   const [erro, definirErro] = useState('')
   const [salvando, definirSalvando] = useState(false)
@@ -216,7 +219,8 @@ export function AdminQuestoes({ idInicial }: { idInicial?: string | null }) {
   const atualizarListaEditadas = useCallback(async () => {
     esquecerEdicoes()
     const mapa = await carregarEdicoes()
-    definirEditadas([...mapa.keys()].sort())
+    definirEditadas([...mapa.keys()].filter((k) => !foraDoSite(mapa.get(k))).sort())
+    definirFora([...mapa].filter(([, e]) => foraDoSite(e)).map(([k, e]) => ({ id: k, apagada: !!e.apagada })).sort((a, b) => a.id.localeCompare(b.id)))
     return mapa
   }, [])
   useEffect(() => { void atualizarListaEditadas() }, [atualizarListaEditadas])
@@ -228,7 +232,7 @@ export function AdminQuestoes({ idInicial }: { idInicial?: string | null }) {
     ;(async () => {
       const mapa = await atualizarListaEditadas()
       recarregarAcervo()
-      const [q] = await carregarQuestoes(indice, [id])
+      const [q] = await carregarQuestoes(indice, [id], { incluirOcultas: true })
       if (!vivo) return
       if (!q) { definirErro(`Questão ${id} não encontrada no acervo.`); return }
       const slug = indice.temas.find((t) => t.nome === q.tema)?.slug ?? id.replace(/-\d+$/, '')
@@ -240,6 +244,7 @@ export function AdminQuestoes({ idInicial }: { idInicial?: string | null }) {
       definirComentarioOriginal(c)
       definirForm(paraFormulario(q, c))
       definirEditada(mapa.has(id))
+      definirSalva(mapa.get(id) ?? null)
     })().catch(() => vivo && definirErro('Não foi possível carregar a questão.'))
     return () => { vivo = false }
   }, [id, indice, atualizarListaEditadas])
@@ -259,7 +264,9 @@ export function AdminQuestoes({ idInicial }: { idInicial?: string | null }) {
     if (form.ano && !/^\d{4}$/.test(form.ano.trim())) { definirErro('Ano com 4 dígitos, ou deixe em branco.'); return }
     definirSalvando(true); definirErro('')
     try {
-      const quando = await chamarRpc<string>('salvar_edicao_questao', { p_id: id, p_dados: paraEdicao(form, comentarioOriginal) })
+      const dados = { ...paraEdicao(form, comentarioOriginal), ...(salva?.oculta ? { oculta: true } : {}), ...(salva?.apagada ? { apagada: true } : {}) }
+      const quando = await chamarRpc<string>('salvar_edicao_questao', { p_id: id, p_dados: dados })
+      definirSalva(dados)
       await atualizarListaEditadas()
       recarregarAcervo()
       definirEditada(true)
@@ -282,6 +289,37 @@ export function AdminQuestoes({ idInicial }: { idInicial?: string | null }) {
       setTimeout(() => definirId(atual), 0)
     } catch (f) {
       definirErro(erroDoPainel(f, MIGRACAO))
+    }
+  }
+
+  /**
+   * Esconder, apagar ou devolver ao site. A marcação vai junto da edição gravada
+   * (o resto dela fica intacto); sem nenhuma outra edição, devolver ao site apaga
+   * a linha e a questão volta a ser exatamente a do acervo.
+   */
+  async function mudarPresenca(acao: 'esconder' | 'apagar' | 'mostrar') {
+    if (!id) return
+    if (acao === 'esconder' && !window.confirm(`Esconder ${id} do site? Ela sai do treino, dos simulados e das contagens, e o link deixa de abrir. Dá para mostrar de novo depois.`)) return
+    if (acao === 'apagar' && !window.confirm(`Apagar ${id}? Ela some do site agora e sai dos arquivos do acervo na próxima limpeza. Até lá, ainda dá para desfazer aqui.`)) return
+    const { oculta: _o, apagada: _a, ...resto } = salva ?? {}
+    const dados: EdicaoQuestao = acao === 'mostrar' ? resto : { ...resto, oculta: true, ...(acao === 'apagar' ? { apagada: true } : {}) }
+    definirSalvando(true); definirErro('')
+    try {
+      if (Object.keys(dados).length) {
+        await chamarRpc<string>('salvar_edicao_questao', { p_id: id, p_dados: dados })
+        definirSalva(dados)
+      } else {
+        await chamarRpc('remover_edicao_questao', { p_id: id })
+        definirSalva(null)
+        definirEditada(false)
+      }
+      await atualizarListaEditadas()
+      recarregarAcervo()
+      definirEstado(acao === 'mostrar' ? 'A questão voltou ao site.' : acao === 'apagar' ? 'Questão apagada: já não aparece no site.' : 'Questão escondida: já não aparece no site.')
+    } catch (f) {
+      definirErro(erroDoPainel(f, MIGRACAO))
+    } finally {
+      definirSalvando(false)
     }
   }
 
@@ -313,6 +351,13 @@ export function AdminQuestoes({ idInicial }: { idInicial?: string | null }) {
         </details>
       )}
 
+      {fora.length > 0 && (
+        <details className="adm-editor__editadas">
+          <summary>{fora.length} questão(ões) fora do site</summary>
+          <div className="linha">{fora.map((f) => <button key={f.id} type="button" className="adm-chip" onClick={() => definirId(f.id)}>{f.id} · {f.apagada ? 'apagada' : 'escondida'}</button>)}</div>
+        </details>
+      )}
+
       {erro && <p role="alert" className="adm-alerta">{erro}</p>}
       {id && !form && !erro && <p role="status">Carregando {id}…</p>}
 
@@ -322,6 +367,7 @@ export function AdminQuestoes({ idInicial }: { idInicial?: string | null }) {
             <div>
               <strong>{questao.tema} · {id}</strong>
               {editada && <span className="adm-selo adm-selo--neutro">editada</span>}
+              {salva?.apagada ? <span className="adm-selo adm-selo--ruim">apagada</span> : salva?.oculta ? <span className="adm-selo adm-selo--ruim">escondida</span> : null}
             </div>
             <a className="botao botao--fantasma" href={href(`/questao/${id}`)} target="_blank" rel="noopener noreferrer">Ver no site</a>
           </div>
@@ -389,6 +435,23 @@ export function AdminQuestoes({ idInicial }: { idInicial?: string | null }) {
             <button type="button" className="botao botao--principal" disabled={salvando} onClick={() => void salvar()}>{salvando ? 'Salvando…' : 'Salvar edição'}</button>
             <button type="button" className="botao botao--fantasma" onClick={() => definirPrevia(!previa)}>{previa ? 'Esconder prévia' : 'Prévia do texto'}</button>
             {editada && <button type="button" className="botao botao--fantasma" onClick={() => void desfazer()}>Desfazer edições</button>}
+          </div>
+
+          <div className="adm-editor__presenca">
+            {foraDoSite(salva ?? undefined) ? (
+              <>
+                <p>{salva?.apagada ? 'Esta questão está apagada: não aparece no site e sai dos arquivos do acervo na próxima limpeza.' : 'Esta questão está escondida: não aparece no site, nem no treino, nem nas contagens.'}</p>
+                <button type="button" className="botao botao--fantasma" disabled={salvando} onClick={() => void mudarPresenca('mostrar')}>Mostrar de novo no site</button>
+              </>
+            ) : (
+              <>
+                <p>Tirar do site: esconder é reversível; apagar também some na hora e marca a questão para sair do acervo.</p>
+                <div className="linha">
+                  <button type="button" className="botao botao--fantasma" disabled={salvando} onClick={() => void mudarPresenca('esconder')}>Esconder do site</button>
+                  <button type="button" className="botao botao--perigo" disabled={salvando} onClick={() => void mudarPresenca('apagar')}>Apagar questão</button>
+                </div>
+              </>
+            )}
           </div>
           {estado && <p role="status" className="adm-nota">{estado}</p>}
 

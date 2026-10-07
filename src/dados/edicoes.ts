@@ -23,7 +23,14 @@ export interface EdicaoQuestao {
   comentario?: string | null
   /** Comentário completo (conceito, correta, erradas, alerta, imagens). */
   comentarioIA?: ComentarioIA | null
+  /** Escondida do site: sai do índice (treino, simulados, contagens) e o link deixa de abrir. Reversível. */
+  oculta?: boolean
+  /** Apagada pelo painel: escondida e marcada para sair dos arquivos do acervo na próxima limpeza. */
+  apagada?: boolean
 }
+
+/** A edição tira a questão do site (escondida ou apagada)? */
+export const foraDoSite = (e: EdicaoQuestao | undefined) => !!(e?.oculta || e?.apagada)
 
 /** Quanto o site espera pelas edições antes de seguir sem elas. */
 const PRAZO_MS = 3_000
@@ -75,7 +82,7 @@ export function aplicarEdicoesNoIndice(indice: Indice, edicoes: Map<string, Edic
   if (!edicoes.size) return indice
   const provas = [...indice.provas]
   const anos = new Set(indice.anos)
-  const questoes = indice.questoes.map((item) => {
+  const questoes = indice.questoes.filter((item) => !foraDoSite(edicoes.get(item.id))).map((item) => {
     const e = edicoes.get(item.id)
     if (!e) return item
     const novo = { ...item }

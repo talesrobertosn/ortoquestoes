@@ -366,3 +366,7 @@
 @media (max-width: 480px) {
   .adm-kpi strong { font-size: clamp(1rem, 4.4vw, 1.6rem); white-space: nowrap; }
 }
+
+/* Editor: tirar a questão do site */
+.adm-editor__presenca { display: grid; gap: 0.6rem; padding: 0.9rem 1rem; border-radius: var(--raio-cartao); border: 1px solid color-mix(in srgb, var(--erro) 35%, var(--traco)); background: var(--erro-veu); }
+.adm-editor__presenca p { margin: 0; font-size: var(--corpo-menor); color: var(--texto-2); }
