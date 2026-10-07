@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { registrarFeito } from '../conta/feitos'
 import type { Indice } from '../dados/tipos'
 import { carregarComentario } from '../dados/comentarios'
 import { usarQuestaoDoDia } from '../estado/questaoDoDia'
@@ -17,6 +18,9 @@ export function CartaoQuestaoDoDia({ indice }: { indice: Indice }) {
   const [respondidas] = usarArmazenado<Record<string, RegistroQuestao>>('respondidas', {})
   const [gerando, definirGerando] = useState(false)
   const [baixou, definirBaixou] = useState(false)
+  const respondidaHoje = !!questao && (respondidas[questao.id]?.q ?? 0) >= inicioDia().getTime()
+  // Emblema "Pontual": a Questão do Dia respondida no próprio dia.
+  useEffect(() => { if (respondidaHoje) registrarFeito('questao_do_dia') }, [respondidaHoje])
   if (!questao) return null
 
   const registro = respondidas[questao.id]

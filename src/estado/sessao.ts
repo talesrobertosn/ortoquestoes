@@ -19,6 +19,11 @@ export interface ResumoHistorico {
   acertos: number
   segundos: number
   descricao: string
+  /** Simulado cronometrado: o limite, em segundos (para os emblemas de chefão). */
+  limite?: number | null
+  /** Recorte da sessão, quando escolhido: provas e anos. */
+  provas?: string[]
+  anos?: number[]
 }
 
 export interface OpcoesSessao {
@@ -182,6 +187,9 @@ function registrarHistorico(sessao: EstadoSessao) {
     descricao: sessao.nacional
       ? `Simulado Nacional · ${nomeEdicao(sessao.nacional)}`
       : (sessao.simulado ? 'Simulado · ' : '') + descreverFiltros(sessao.filtros),
+    ...(sessao.simulado && sessao.limiteSegundos ? { limite: sessao.limiteSegundos } : {}),
+    ...(sessao.filtros?.provas?.length ? { provas: sessao.filtros.provas } : {}),
+    ...(sessao.filtros?.anos?.length ? { anos: sessao.filtros.anos } : {}),
   }
   const historico = ler<ResumoHistorico[]>(CHAVE_HISTORICO, [])
   gravar(CHAVE_HISTORICO, [resumo, ...historico].slice(0, 50))

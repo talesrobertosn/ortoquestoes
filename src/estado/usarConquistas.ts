@@ -1,8 +1,9 @@
-import { useMemo } from 'react'
 import { usarContextoLocal } from './usarContextoLocal'
 import { lerHistorico } from './sessao'
 import { ler } from './armazenamento'
-import { calcularMetricas, desbloqueado, EMBLEMAS, type DadosAcervo, type GrupoProva, type Metricas } from './conquistas'
+import { useEffect, useMemo } from 'react'
+import { calcularMetricas, completarMetricas, desbloqueado, EMBLEMAS, type DadosAcervo, type GrupoProva, type Metricas } from './conquistas'
+import { registrarConquistas, usarFeitos } from '../conta/feitos'
 import { usarIndice } from '../dados/usarIndice'
 import type { Indice } from '../dados/tipos'
 import { calcularStreak, type Streak } from './streak'
@@ -34,8 +35,12 @@ function dadosDoAcervo(indice: Indice | null): DadosAcervo | undefined {
   const subtemas = new Map<string, number[]>()
   const prova = new Map<string, string>()
   const totalProva = new Map<string, number>()
+  const totalTema = new Map<string, number>()
+  const anuladas = new Set<string>()
   for (const q of indice.questoes) {
     if (q.dup) continue
+    if (q.an) anuladas.add(q.id)
+    else { const tema = q.id.replace(/-\d+$/, ''); totalTema.set(tema, (totalTema.get(tema) ?? 0) + 1) }
     if (q.img) imagem.add(q.id)
     if (q.s.length) subtemas.set(q.id, q.s)
     const nome = q.p === null ? '' : indice.provas[q.p] ?? ''
@@ -45,7 +50,7 @@ function dadosDoAcervo(indice: Indice | null): DadosAcervo | undefined {
       totalProva.set(chave, (totalProva.get(chave) ?? 0) + 1)
     }
   }
-  return { imagem, subtemas, prova, totalProva }
+  return { imagem, subtemas, prova, totalProva, totalTema, anuladas }
 }
 
 export function usarConquistas(): { metricas: Metricas; streak: Streak; conquistadas: number; total: number } {
@@ -53,15 +58,23 @@ export function usarConquistas(): { metricas: Metricas; streak: Streak; conquist
   const { indice } = usarIndice()
   const grupos = useMemo(() => gruposDoIndice(indice), [indice])
   const acervo = useMemo(() => dadosDoAcervo(indice), [indice])
-  return useMemo(() => {
+  const servidor = usarFeitos()
+  const resultado = useMemo(() => {
     const favoritas = ler<string[]>('favoritos', []).length
     const notas = Object.values(ler<Record<string, string>>('notas', {})).filter((t) => String(t ?? '').trim()).length
-    const metricas = calcularMetricas(contexto.respondidas, lerHistorico(), { favoritas, notas, grupos, acervo })
+    const base = calcularMetricas(contexto.respondidas, lerHistorico(), { favoritas, notas, grupos, acervo, servidor })
+    const metricas = completarMetricas({ ...base, travadas: new Set(servidor?.conquistas ?? []) })
     return {
       metricas,
       streak: calcularStreak(contexto.respondidas),
       conquistadas: EMBLEMAS.filter((e) => desbloqueado(e, metricas)).length,
       total: EMBLEMAS.length,
     }
-  }, [contexto.respondidas, grupos, acervo])
+  }, [contexto.respondidas, grupos, acervo, servidor])
+  // Trava no servidor o que acabou de ser conquistado (a sequência de dias não trava: ela se perde de propósito).
+  useEffect(() => {
+    if (!servidor || !acervo) return
+    registrarConquistas(EMBLEMAS.filter((e) => e.familia !== 'sequencia' && desbloqueado(e, resultado.metricas)).map((e) => e.id))
+  }, [resultado, servidor, acervo])
+  return resultado
 }

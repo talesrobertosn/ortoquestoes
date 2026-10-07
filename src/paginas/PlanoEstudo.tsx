@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import { conferirMetaCronograma } from '../conta/feitos'
 import { chamarRpc, codigoErro } from '../servicos/supabase'
 import { marcarAvisoSimulados, obterPlano, salvarPlano } from '../conta/cronograma'
 import { NovidadeSimulados } from '../componentes/NovidadeSimulados'
@@ -56,6 +57,7 @@ export function PlanoEstudo() {
   }, [premium])
 
   const calculo = useMemo(() => (indice && plano ? calcularPlano(indice, respondidas, plano) : null), [indice, plano, respondidas])
+  useEffect(() => { conferirMetaCronograma(calculo) }, [calculo])
 
   if (logado && !carregado) return <Carregando linhas={4} rotulo="Carregando" />
   if (!indice) return <Carregando linhas={5} rotulo="Carregando o acervo" />

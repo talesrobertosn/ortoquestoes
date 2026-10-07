@@ -13,6 +13,8 @@ import type { RegistroQuestao } from './revisao'
 import { dominada } from './revisao'
 import { calcularStreak, META_STREAK_DIARIA } from './streak'
 import { chaveDia } from './planoRevisao'
+import { DIAS_RETA_FINAL } from '../dados/planoEstudo'
+import type { FeitosServidor } from '../conta/feitos'
 
 export type NivelMedalha = 'bronze' | 'prata' | 'ouro' | 'esmeralda' | 'lendario'
 
@@ -30,7 +32,8 @@ export type FamiliaId =
   | 'questoes' | 'sequencia' | 'dias' | 'acertos' | 'dominadas' | 'temas' | 'sessoes'
   | 'maratona' | 'precisao' | 'redencao' | 'gabarito' | 'mestre' | 'especialista' | 'aproveitamento'
   | 'resistencia' | 'colecao' | 'anotacoes' | 'pseudartrose' | 'imagem' | 'certeza' | 'provas' | 'assuntos'
-  | 'horaDeOuro' | 'secretas'
+  | 'horaDeOuro' | 'calibrado' | 'contraCorrente' | 'completo' | 'notaDeCorte' | 'curva' | 'runSemDano' | 'chefes'
+  | 'pontual' | 'filaZerada' | 'cronograma' | 'nacional' | 'arena' | 'indicacao' | 'revisor' | 'editorial' | 'secretas'
 
 export interface Emblema extends Conquista {
   familia: FamiliaId
@@ -70,6 +73,21 @@ export const FAMILIAS: readonly Familia[] = [
   { id: 'provas', titulo: 'Provas vencidas', unidade: (v) => `${v} ${v === 1 ? 'prova vencida' : 'provas vencidas'}` },
   { id: 'assuntos', titulo: 'Generalista', unidade: (v) => `${v} assuntos com 80%` },
   { id: 'horaDeOuro', titulo: 'Hora de ouro', unidade: (v) => `${v} acertos numa hora` },
+  { id: 'calibrado', titulo: 'Calibragem', unidade: (v) => `${v}% de acerto quando tem certeza` },
+  { id: 'contraCorrente', titulo: 'Contra a corrente', unidade: (v) => `${n(v)} acertos que a turma erra` },
+  { id: 'completo', titulo: 'Ortopedista completo', unidade: (v) => `${v} temas com 80%` },
+  { id: 'notaDeCorte', titulo: 'Nota de corte', unidade: (v) => `${v} provas de 100 com 70%` },
+  { id: 'curva', titulo: 'Curva de aprendizado', unidade: (v) => `+${v} pontos de acerto` },
+  { id: 'runSemDano', titulo: 'Run sem dano', unidade: (v) => `${v} dias seguidos com 70%` },
+  { id: 'chefes', titulo: 'Chefões', unidade: (v) => `${v}` },
+  { id: 'pontual', titulo: 'Questão do Dia', unidade: (v) => `${v} dias seguidos` },
+  { id: 'filaZerada', titulo: 'Fila zerada', unidade: (v) => `${v} dias seguidos` },
+  { id: 'cronograma', titulo: 'Cronograma', unidade: (v) => `${v} dias de meta seguidos` },
+  { id: 'nacional', titulo: 'Simulado Nacional', unidade: (v) => `${v} edições seguidas` },
+  { id: 'arena', titulo: 'Arena semanal', unidade: (v) => `${v} semanas seguidas` },
+  { id: 'indicacao', titulo: 'Indicação', unidade: (v) => `${v} amigos` },
+  { id: 'revisor', titulo: 'Revisor de banca', unidade: (v) => `${v} erros corrigidos` },
+  { id: 'editorial', titulo: 'Conselho editorial', unidade: (v) => `${n(v)} comentários avaliados` },
   { id: 'secretas', titulo: 'Secretas', unidade: () => 'secreta' },
 ]
 
@@ -98,6 +116,26 @@ export const DATAS_PROVA = ['2027-01-10'] as const
 export const WOLFF_PRIMEIRA_SEMANA = 50
 /** Tríade terrível: sessões perfeitas no mesmo dia, cada uma com pelo menos isto. */
 export const TRIADE_QUESTOES = 20
+
+/** Calibrado: só conta com pelo menos esta quantidade de respostas marcadas com certeza. */
+export const CALIBRADO_MINIMO = 300
+/** Ortopedista completo: acerto de primeira e respostas mínimas em cada tema. */
+export const COMPLETO_ACERTO = 0.8
+export const COMPLETO_MINIMO = 100
+/** Nota de corte: sessões com pelo menos estas questões e este acerto. */
+export const CORTE_QUESTOES = 100
+export const CORTE_ACERTO = 0.7
+/** Curva de aprendizado: compara as primeiras e as últimas questões respondidas pela primeira vez. */
+export const CURVA_JANELA = 500
+/** Run sem dano: acerto mínimo de cada dia da sequência. */
+export const RUN_ACERTO = 0.7
+/** Chefões. TEOT inteiro: tempo por questão de prova real (100 questões em 4 horas). */
+export const CHEFE_TEOT_ACERTO = 0.75
+export const CHEFE_SEGUNDOS_POR_QUESTAO = 144
+export const SEM_MORRER_QUESTOES = 100
+export const SEM_MORRER_ACERTO = 0.85
+/** Simulado Nacional: elite (10% melhores) e campeão só valem em edições com pelo menos tantos classificados. */
+export const NACIONAL_MINIMO_CLASSIFICADOS = 20
 
 /** Grupos de prova dos emblemas de especialista (sufixo do id). */
 export type GrupoProva = 'teot' | 'taro' | 'mao' | 'coluna' | 'enare' | 'tecoc' | 'quadril'
@@ -262,6 +300,103 @@ export const EMBLEMAS: readonly Emblema[] = [
     ['hora-50', 50, 'Sala vermelha', '50', 'esmeralda', 'Acerte 50 questões dentro de uma mesma hora.'],
     ['hora-70', 70, 'Politrauma', '70', 'lendario', 'Acerte 70 questões dentro de uma mesma hora.'],
   ]),
+  ...familia('calibrado', 'calibrado', [
+    ['calibrado-90', 90, 'Calibrado', '90%', 'ouro', `Acerte 90% das respostas marcadas com "tenho certeza", com pelo menos ${CALIBRADO_MINIMO} delas.`],
+    ['calibrado-95', 95, 'Olho de lince', '95%', 'esmeralda', `Acerte 95% das respostas marcadas com "tenho certeza", com pelo menos ${CALIBRADO_MINIMO} delas.`],
+    ['calibrado-98', 98, 'Vidente', '98%', 'lendario', `Acerte 98% das respostas marcadas com "tenho certeza", com pelo menos ${CALIBRADO_MINIMO} delas.`],
+  ]),
+  ...familia('contraCorrente', 'contraCorrente', [
+    ['contra-50', 50, 'Contra a corrente', '50', 'ouro', 'Acerte de primeira 50 questões em que a turma acerta menos da metade.'],
+    ['contra-150', 150, 'Lobo solitário', '150', 'esmeralda', 'Acerte de primeira 150 questões em que a turma acerta menos da metade.'],
+    ['contra-300', 300, 'Cavaleiro errante', '300', 'lendario', 'Acerte de primeira 300 questões em que a turma acerta menos da metade.'],
+  ]),
+  ...familia('completo', 'completo', [
+    ['completo-4', 4, 'Escudeiro das áreas', '4', 'ouro', `Tenha ${COMPLETO_ACERTO * 100}% de acerto de primeira em 4 temas, com pelo menos ${COMPLETO_MINIMO} questões respondidas em cada.`],
+    ['completo-8', 8, 'Cavaleiro das áreas', '8', 'esmeralda', `Tenha ${COMPLETO_ACERTO * 100}% de acerto de primeira em 8 temas, com pelo menos ${COMPLETO_MINIMO} questões em cada.`],
+    ['completo-11', 11, 'Ortopedista completo', '11', 'lendario', `Tenha ${COMPLETO_ACERTO * 100}% de acerto de primeira em todos os 11 temas, com pelo menos ${COMPLETO_MINIMO} questões em cada.`],
+  ]),
+  ...familia('notaDeCorte', 'notaDeCorte', [
+    ['corte-3', 3, 'Nota de corte', '3', 'ouro', `Conclua 3 sessões de pelo menos ${CORTE_QUESTOES} questões com ${CORTE_ACERTO * 100}% de acerto.`],
+    ['corte-10', 10, 'Aprovado de novo', '10', 'esmeralda', `Conclua 10 sessões de pelo menos ${CORTE_QUESTOES} questões com ${CORTE_ACERTO * 100}% de acerto.`],
+    ['corte-25', 25, 'Titular da banca', '25', 'lendario', `Conclua 25 sessões de pelo menos ${CORTE_QUESTOES} questões com ${CORTE_ACERTO * 100}% de acerto.`],
+  ]),
+  ...familia('curva', 'curva', [
+    ['curva-10', 10, 'Curva de aprendizado', '+10', 'ouro', `Acerte de primeira 10 pontos percentuais a mais nas suas últimas ${CURVA_JANELA} questões novas do que nas primeiras ${CURVA_JANELA}.`],
+    ['curva-15', 15, 'Ascensão', '+15', 'esmeralda', `Melhore 15 pontos de acerto de primeira entre as suas primeiras e as últimas ${CURVA_JANELA} questões novas.`],
+    ['curva-20', 20, 'Transformação', '+20', 'lendario', `Melhore 20 pontos de acerto de primeira entre as suas primeiras e as últimas ${CURVA_JANELA} questões novas.`],
+  ]),
+  ...familia('runSemDano', 'runSemDano', [
+    ['run-7', 7, 'Run sem dano', '7', 'ouro', `Estude ${META_STREAK_DIARIA} questões por dia, 7 dias seguidos, com pelo menos ${RUN_ACERTO * 100}% de acerto em cada dia.`],
+    ['run-30', 30, 'Intocável', '30', 'esmeralda', `Estude ${META_STREAK_DIARIA} questões por dia, 30 dias seguidos, com pelo menos ${RUN_ACERTO * 100}% de acerto em cada dia.`],
+    ['run-60', 60, 'Imortal', '60', 'lendario', `Estude ${META_STREAK_DIARIA} questões por dia, 60 dias seguidos, com pelo menos ${RUN_ACERTO * 100}% de acerto em cada dia.`],
+  ]),
+  ...familia('chefes', 'semMorrer', [
+    ['chefe-sem-morrer', 1, 'Sem morrer', '85%', 'esmeralda', `Conclua um simulado cronometrado de pelo menos ${SEM_MORRER_QUESTOES} questões com ${SEM_MORRER_ACERTO * 100}% de acerto.`],
+  ]),
+  ...familia('chefes', 'chefeTeot', [
+    ['chefe-teot', 1, 'Chefe: TEOT inteiro', 'TEOT', 'lendario', `Faça uma prova do TEOT de um ano inteira, num simulado só, com no máximo ${CHEFE_SEGUNDOS_POR_QUESTAO / 60 * 100} minutos para cada 100 questões, e acerte ${CHEFE_TEOT_ACERTO * 100}%.`],
+  ]),
+  ...familia('chefes', 'newGamePlus', [
+    ['chefe-new-game', 1, 'New Game+', 'NG+', 'lendario', 'Domine todas as questões de um tema inteiro.'],
+  ]),
+  ...familia('chefes', 'platina', [
+    ['chefe-platina', 1, 'Platina', 'PT', 'lendario', 'Conquiste todos os outros emblemas que não são secretos (a sequência de dias não entra).'],
+  ]),
+  ...familia('pontual', 'pontual', [
+    ['pontual-30', 30, 'Pontual', '30', 'ouro', 'Responda a Questão do Dia 30 dias seguidos.'],
+    ['pontual-100', 100, 'Guardião do dia', '100', 'esmeralda', 'Responda a Questão do Dia 100 dias seguidos.'],
+    ['pontual-365', 365, 'Sentinela eterna', '365', 'lendario', 'Responda a Questão do Dia 365 dias seguidos.'],
+  ]),
+  ...familia('filaZerada', 'filaZerada', [
+    ['fila-7', 7, 'Fila zerada', '7', 'ouro', `Zere a fila de Revisar hoje 7 dias seguidos, estudando pelo menos ${META_STREAK_DIARIA} questões em cada dia.`],
+    ['fila-30', 30, 'Mesa limpa', '30', 'esmeralda', `Zere a fila de Revisar hoje 30 dias seguidos, estudando pelo menos ${META_STREAK_DIARIA} questões em cada dia.`],
+    ['fila-90', 90, 'Masmorra vazia', '90', 'lendario', `Zere a fila de Revisar hoje 90 dias seguidos, estudando pelo menos ${META_STREAK_DIARIA} questões em cada dia.`],
+  ]),
+  ...familia('cronograma', 'cronograma', [
+    ['cronograma-28', 28, 'Cronograma em dia', '28', 'ouro', 'Cumpra a meta do Cronograma 28 dias de estudo seguidos (as folgas do seu plano não quebram).'],
+    ['cronograma-84', 84, 'Cronograma impecável', '84', 'esmeralda', 'Cumpra a meta do Cronograma 84 dias de estudo seguidos (12 semanas).'],
+  ]),
+  ...familia('cronograma', 'cronogramaCompleto', [
+    ['cronograma-completo', 1, 'Do início ao fim', 'fim', 'lendario', 'Cumpra a meta do Cronograma em todos os dias de estudo, do dia em que montou o plano até a reta final da prova.'],
+  ]),
+  ...familia('nacional', 'nacionalSeguidas', [
+    ['nacional-3', 3, 'Presença confirmada', '3', 'ouro', 'Entregue no tempo 3 edições seguidas do Simulado Nacional.'],
+    ['nacional-6', 6, 'Veterano nacional', '6', 'esmeralda', 'Entregue no tempo 6 edições seguidas do Simulado Nacional.'],
+    ['nacional-12', 12, 'Um ano de nacionais', '12', 'lendario', 'Entregue no tempo 12 edições seguidas do Simulado Nacional.'],
+  ]),
+  ...familia('nacional', 'nacionalElite', [
+    ['nacional-elite', 1, 'Elite nacional', '10%', 'esmeralda', `Termine um Simulado Nacional entre os 10% melhores (edição com pelo menos ${NACIONAL_MINIMO_CLASSIFICADOS} classificados).`],
+  ]),
+  ...familia('nacional', 'nacionalCampeao', [
+    ['nacional-campeao', 1, 'Campeão nacional', '1º', 'lendario', `Termine um Simulado Nacional em 1º lugar (edição com pelo menos ${NACIONAL_MINIMO_CLASSIFICADOS} classificados).`],
+  ]),
+  ...familia('arena', 'arenaCampeao', [
+    ['arena-campeao', 1, 'Campeão da semana', '1º', 'ouro', 'Termine uma semana em 1º lugar no ranking semanal.'],
+  ]),
+  ...familia('arena', 'arenaPodio', [
+    ['arena-podio-4', 4, 'Dono da arena', '4', 'esmeralda', 'Termine 4 semanas seguidas no pódio (1º a 3º) do ranking semanal.'],
+  ]),
+  ...familia('arena', 'arenaReinado', [
+    ['arena-rei', 4, 'Rei da arena', '4×1º', 'lendario', 'Termine 4 semanas seguidas em 1º lugar no ranking semanal.'],
+  ]),
+  ...familia('indicacao', 'indicadosAssinantes', [
+    ['indicacao-1', 1, 'Padrinho', '1', 'ouro', 'Indique um amigo que assine o Orto Questões.'],
+    ['indicacao-3', 3, 'Chefe da residência', '3', 'esmeralda', 'Indique 3 amigos que assinem o Orto Questões.'],
+    ['indicacao-10', 10, 'Fundador do serviço', '10', 'lendario', 'Indique 10 amigos que assinem o Orto Questões.'],
+  ]),
+  ...familia('indicacao', 'indicados30', [
+    ['indicacao-turma', 5, 'Turma completa', '5', 'esmeralda', 'Indique 5 amigos que estudem pelo menos 30 dias cada um.'],
+  ]),
+  ...familia('revisor', 'relatosResolvidos', [
+    ['revisor-3', 3, 'Revisor de banca', '3', 'ouro', 'Relate 3 erros em questões que forem corrigidos no acervo.'],
+    ['revisor-10', 10, 'Inquisidor de gabaritos', '10', 'esmeralda', 'Relate 10 erros em questões que forem corrigidos no acervo.'],
+    ['revisor-25', 25, 'Guardião do acervo', '25', 'lendario', 'Relate 25 erros em questões que forem corrigidos no acervo.'],
+  ]),
+  ...familia('editorial', 'comentariosAvaliados', [
+    ['editorial-100', 100, 'Conselho editorial', '100', 'ouro', 'Avalie os comentários de 100 questões (útil ou não, com o motivo).'],
+    ['editorial-300', 300, 'Crítico implacável', '300', 'esmeralda', 'Avalie os comentários de 300 questões.'],
+    ['editorial-1000', 1000, 'Escriba-mor', '1k', 'lendario', 'Avalie os comentários de 1.000 questões.'],
+  ]),
   ...familia('secretas', 'chuteMestre', [
     ['secreta-chute', 5, 'Chute de mestre', 'gol', 'esmeralda', 'Acerte 5 chutes seguidos (questões marcadas como chute).'],
   ], true),
@@ -360,6 +495,32 @@ export interface Metricas {
   triade: number
   vespera: number
   wolff: number
+  calibrado: number
+  contraCorrente: number
+  completo: number
+  notaDeCorte: number
+  curva: number
+  runSemDano: number
+  semMorrer: number
+  chefeTeot: number
+  newGamePlus: number
+  platina: number
+  pontual: number
+  filaZerada: number
+  cronograma: number
+  cronogramaCompleto: number
+  nacionalSeguidas: number
+  nacionalElite: number
+  nacionalCampeao: number
+  arenaCampeao: number
+  arenaPodio: number
+  arenaReinado: number
+  indicadosAssinantes: number
+  indicados30: number
+  relatosResolvidos: number
+  comentariosAvaliados: number
+  /** Emblemas já conquistados e travados no servidor: não se perdem. */
+  travadas?: ReadonlySet<string>
   /** Porcentagem de acerto na primeira tentativa (0 enquanto houver menos de APROVEITAMENTO_MINIMO questões). */
   aproveitamento: number
   /** Marcador das conquistas por tema: o valor real vem de porTema. */
@@ -372,9 +533,18 @@ export interface Metricas {
   porProva: Partial<Record<GrupoProva, number>>
 }
 
-type MetricaNumerica = Exclude<keyof Metricas, 'porTema' | 'seguidosTema' | 'porProva'>
+type MetricaNumerica = Exclude<keyof Metricas, 'porTema' | 'seguidosTema' | 'porProva' | 'travadas'>
 
-interface SessaoConcluida { respondidas: number; acertos: number; concluidaEm?: number }
+interface SessaoConcluida {
+  respondidas: number
+  acertos: number
+  concluidaEm?: number
+  total?: number
+  /** Limite de tempo do simulado, em segundos (sessões antigas não têm). */
+  limite?: number | null
+  provas?: string[]
+  anos?: number[]
+}
 /** O que os emblemas precisam saber de cada questão, vindo do índice do acervo. */
 export interface DadosAcervo {
   imagem: ReadonlySet<string>
@@ -382,6 +552,9 @@ export interface DadosAcervo {
   /** Prova vencível ("TEOT 2024") de cada questão; anuladas e cópias ficam de fora. */
   prova: ReadonlyMap<string, string>
   totalProva: ReadonlyMap<string, number>
+  /** Questões de cada tema (sem anuladas e cópias), para o New Game+. */
+  totalTema?: ReadonlyMap<string, number>
+  anuladas?: ReadonlySet<string>
 }
 export interface Extras {
   favoritas?: number
@@ -389,9 +562,90 @@ export interface Extras {
   /** Grupos de prova de cada questão, vindos do índice do acervo. */
   grupos?: ReadonlyMap<string, readonly GrupoProva[]>
   acervo?: DadosAcervo
+  servidor?: FeitosServidor | null
 }
 
 const HORA = 60 * 60 * 1000
+const DIA = 86400000
+/** "AAAA-MM-DD" → número do dia (só a data do calendário, sem fuso). */
+function numeroDia(chave: string) {
+  const [a, m, d] = chave.split('-').map(Number)
+  return Math.round(Date.UTC(a, m - 1, d) / DIA)
+}
+const diaDaSemana = (numero: number) => new Date(numero * DIA).getUTCDay()
+/** Maior sequência de dias seguidos; os dias em `pular` (folgas) não quebram nem somam. */
+function maiorSequencia(dias: readonly string[], pular: readonly number[] = []): number {
+  const numeros = [...new Set(dias.map(numeroDia))].sort((a, b) => a - b)
+  let maior = 0, atual = 0, anterior = NaN
+  for (const d of numeros) {
+    let seguido = atual > 0
+    for (let x = anterior + 1; seguido && x < d; x++) if (!pular.includes(diaDaSemana(x))) seguido = false
+    atual = seguido ? atual + 1 : 1
+    maior = Math.max(maior, atual)
+    anterior = d
+  }
+  return maior
+}
+/** Maior sequência de itens seguidos (em ordem) que cumprem a condição. */
+function maiorSeguidos<T>(lista: readonly T[], ok: (x: T) => boolean): number {
+  let maior = 0, atual = 0
+  for (const x of lista) { atual = ok(x) ? atual + 1 : 0; maior = Math.max(maior, atual) }
+  return maior
+}
+
+/** Métricas que vêm do servidor (RPC meus_feitos); zero enquanto não houver dados. */
+function metricasDoServidor(f: FeitosServidor | null | undefined, hoje: string) {
+  const zero = { pontual: 0, filaZerada: 0, cronograma: 0, cronogramaCompleto: 0, nacionalSeguidas: 0, nacionalElite: 0, nacionalCampeao: 0,
+    arenaCampeao: 0, arenaPodio: 0, arenaReinado: 0, indicadosAssinantes: 0, indicados30: 0, relatosResolvidos: 0, comentariosAvaliados: 0, contraCorrente: 0 }
+  if (!f) return zero
+  const folgas = f.plano?.folgas ?? []
+  const metas = f.dias?.meta_cronograma ?? []
+  let cronogramaCompleto = 0
+  if (f.plano && f.plano.data_prova <= hoje) {
+    const inicio = numeroDia(f.plano.criado_em.slice(0, 10)), fim = numeroDia(f.plano.data_prova) - DIAS_RETA_FINAL
+    const feitos = new Set(metas.map(numeroDia))
+    let tudo = fim > inicio
+    for (let d = inicio; tudo && d < fim; d++) if (!folgas.includes(diaDaSemana(d)) && !feitos.has(d)) tudo = false
+    cronogramaCompleto = tudo ? 1 : 0
+  }
+  const participou = new Map((f.simulado_participacoes ?? []).map((p) => [p.edicao, p]))
+  const contam = (f.simulado_participacoes ?? []).filter((p) => p.classificados >= NACIONAL_MINIMO_CLASSIFICADOS)
+  // Semana do ranking: a última posição registrada de cada semana já encerrada (segunda a domingo).
+  const semanaDe = (dia: string) => Math.floor((numeroDia(dia) + 3) / 7)
+  const semanaAtual = semanaDe(hoje)
+  const finais = new Map<number, { dia: string; posicao: number }>()
+  for (const r of f.ranking_semana ?? []) {
+    const s = semanaDe(r.dia)
+    if (s < semanaAtual && (!finais.has(s) || finais.get(s)!.dia < r.dia)) finais.set(s, r)
+  }
+  const semanas = [...finais.keys()].sort((a, b) => a - b)
+  const seguidas = (ok: (posicao: number) => boolean) => {
+    let maior = 0, atual = 0, anterior = NaN
+    for (const s of semanas) {
+      atual = ok(finais.get(s)!.posicao) ? (s === anterior + 1 ? atual + 1 : 1) : 0
+      maior = Math.max(maior, atual)
+      anterior = s
+    }
+    return maior
+  }
+  return {
+    pontual: maiorSequencia(f.dias?.questao_do_dia ?? []),
+    filaZerada: maiorSequencia(f.dias?.fila_zerada ?? []),
+    cronograma: maiorSequencia(metas, folgas),
+    cronogramaCompleto,
+    nacionalSeguidas: maiorSeguidos(f.simulado_edicoes ?? [], (e) => participou.has(e)),
+    nacionalElite: contam.some((p) => p.posicao <= Math.max(1, Math.floor(p.classificados / 10))) ? 1 : 0,
+    nacionalCampeao: contam.some((p) => p.posicao === 1) ? 1 : 0,
+    arenaCampeao: seguidas((p) => p === 1) ? 1 : 0,
+    arenaPodio: seguidas((p) => p <= 3),
+    arenaReinado: seguidas((p) => p === 1),
+    indicadosAssinantes: Number(f.indicados_assinantes) || 0,
+    indicados30: Number(f.indicados_30_dias) || 0,
+    relatosResolvidos: Number(f.relatos_resolvidos) || 0,
+    comentariosAvaliados: Number(f.comentarios_avaliados) || 0,
+    contraCorrente: Number(f.contra_corrente) || 0,
+  }
+}
 /** Semana (segunda a domingo) do horário local, contada desde 1970. */
 function semanaDe(em: number) {
   const d = new Date(em)
@@ -425,6 +679,9 @@ export function calcularMetricas(respondidas: Record<string, Partial<RegistroQue
   let pseudartrose = 0, imagem = 0
   const porAssunto = new Map<number, { r: number; c: number }>()
   const porProvaAno = new Map<string, number>()
+  const primeirasTema = new Map<string, { n: number; c: number }>()
+  const primeirasNoTempo: Array<{ em: number; certa: boolean }> = []
+  const dominadasTema = new Map<string, number>()
   const porProva: Partial<Record<GrupoProva, number>> = {}
   const noites = new Set<string>()
   let tresQuatorze = 0, natal = 0, anoNovo = 0, primeiras = 0, primeirasCertas = 0
@@ -438,7 +695,17 @@ export function calcularMetricas(respondidas: Record<string, Partial<RegistroQue
     if (dominada(registro)) dominadasTotal++
     for (const g of extras.grupos?.get(id) ?? []) porProva[g] = (porProva[g] ?? 0) + 1
     const primeira = acertouDePrimeira(registro)
-    if (primeira !== null) { primeiras++; if (primeira) primeirasCertas++ }
+    if (primeira !== null) {
+      primeiras++
+      if (primeira) primeirasCertas++
+      const t = primeirasTema.get(tema) ?? { n: 0, c: 0 }
+      t.n++
+      if (primeira) t.c++
+      primeirasTema.set(tema, t)
+      const em = registro.historico?.[0]?.em ?? registro.q
+      if (em) primeirasNoTempo.push({ em, certa: primeira })
+    }
+    if (dominada(registro) && !acervo?.anuladas?.has(id)) dominadasTema.set(tema, (dominadasTema.get(tema) ?? 0) + 1)
     if (registro.c === true && ((registro.erros ?? 0) > 0 || registro.historico?.some((e) => e.correta === false))) redencao++
     if ((registro.erros ?? 0) >= PSEUDARTROSE_ERROS && dominada(registro)) pseudartrose++
     if (acervo && registro.c !== null && registro.c !== undefined) {
@@ -497,6 +764,39 @@ export function calcularMetricas(respondidas: Record<string, Partial<RegistroQue
     semanaAnterior = semana
     volumeAnterior = volume
   }
+  // Calibragem: acerto entre as respostas com certeza (o padrão da tela é "tenho certeza").
+  let comCerteza = 0, certasComCerteza = 0
+  for (const e of eventos) if (e.correta !== null && (e.confianca ?? 'seguro') === 'seguro') { comCerteza++; if (e.correta) certasComCerteza++ }
+  // Run sem dano: dias seguidos com a meta diária e 70% de acerto.
+  const diaStats = new Map<string, { n: number; c: number }>()
+  for (const e of eventos) {
+    if (e.correta === null) continue
+    const k = chaveDia(e.em), d = diaStats.get(k) ?? { n: 0, c: 0 }
+    d.n++
+    if (e.correta) d.c++
+    diaStats.set(k, d)
+  }
+  const runSemDano = maiorSequencia([...diaStats].filter(([, d]) => d.n >= META_STREAK_DIARIA && d.c >= RUN_ACERTO * d.n).map(([k]) => k))
+  // Curva de aprendizado: primeiras e últimas questões respondidas pela primeira vez.
+  primeirasNoTempo.sort((a, b) => a.em - b.em)
+  let curva = 0
+  if (primeirasNoTempo.length >= 2 * CURVA_JANELA) {
+    const pct = (l: typeof primeirasNoTempo) => (100 * l.filter((x) => x.certa).length) / l.length
+    curva = Math.max(0, Math.floor(pct(primeirasNoTempo.slice(-CURVA_JANELA)) - pct(primeirasNoTempo.slice(0, CURVA_JANELA))))
+  }
+  let completo = 0
+  for (const t of primeirasTema.values()) if (t.n >= COMPLETO_MINIMO && t.c >= COMPLETO_ACERTO * t.n) completo++
+  let newGamePlus = 0
+  for (const [tema, total] of acervo?.totalTema ?? []) if (total > 0 && (dominadasTema.get(tema) ?? 0) >= total) newGamePlus++
+  const notaDeCorte = sessoes.filter((s) => s.respondidas >= CORTE_QUESTOES && s.acertos >= CORTE_ACERTO * s.respondidas).length
+  const semMorrer = sessoes.some((s) => s.limite && (s.total ?? s.respondidas) >= SEM_MORRER_QUESTOES
+    && s.acertos >= SEM_MORRER_ACERTO * (s.total ?? s.respondidas)) ? 1 : 0
+  const chefeTeot = sessoes.some((s) => {
+    if (!s.limite || s.provas?.length !== 1 || s.provas[0] !== 'TEOT' || s.anos?.length !== 1) return false
+    const total = acervo?.totalProva.get(`TEOT ${s.anos[0]}`) ?? Infinity
+    const n = s.total ?? s.respondidas
+    return n >= total && s.limite <= CHEFE_SEGUNDOS_POR_QUESTAO * n && s.acertos >= CHEFE_TEOT_ACERTO * n
+  }) ? 1 : 0
   let assuntos = 0
   for (const a of porAssunto.values()) if (a.r >= ASSUNTO_MINIMO && a.c >= ASSUNTO_ACERTO * a.r) assuntos++
   let provasVencidas = 0
@@ -566,6 +866,16 @@ export function calcularMetricas(respondidas: Record<string, Partial<RegistroQue
     triade: Math.max(0, ...perfeitasPorDia.values()),
     vespera,
     wolff,
+    calibrado: comCerteza >= CALIBRADO_MINIMO ? Math.floor((100 * certasComCerteza) / comCerteza) : 0,
+    completo,
+    notaDeCorte,
+    curva,
+    runSemDano,
+    semMorrer,
+    chefeTeot,
+    newGamePlus,
+    platina: 0,
+    ...metricasDoServidor(extras.servidor, chaveDia(agora)),
     acertosTema: 0,
     porTema,
     seguidosTema,
@@ -586,4 +896,13 @@ export function valorDe(emblema: Emblema, metricas: Metricas): number {
   return metricas[emblema.metrica]
 }
 
-export const desbloqueado = (emblema: Emblema, metricas: Metricas) => valorDe(emblema, metricas) >= emblema.minimo
+export const desbloqueado = (emblema: Emblema, metricas: Metricas): boolean =>
+  (emblema.familia !== 'sequencia' && !!metricas.travadas?.has(emblema.id)) || valorDe(emblema, metricas) >= emblema.minimo
+
+/** Entra na Platina: tudo o que não é secreto, menos a sequência (que pode se perder) e a própria Platina. */
+const contaParaPlatina = (e: Emblema) => !e.secreta && e.familia !== 'sequencia' && e.id !== 'chefe-platina'
+/** Fecha as métricas: a Platina depende de todos os outros emblemas. */
+export function completarMetricas(metricas: Metricas): Metricas {
+  const platina = EMBLEMAS.filter(contaParaPlatina).every((e) => desbloqueado(e, metricas)) ? 1 : 0
+  return { ...metricas, platina }
+}

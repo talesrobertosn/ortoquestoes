@@ -1,4 +1,5 @@
 import { lazy, Suspense, useEffect, type ReactNode } from 'react'
+import { vigiarFilaZerada } from './conta/feitos'
 import { usarRota } from './util/rotas'
 import { Cabecalho } from './componentes/Cabecalho'
 import { Rodape } from './componentes/Rodape'
@@ -80,6 +81,8 @@ export function App() {
   const { densidade, fonte } = usarLeitura()
 
   useEffect(() => { window.scrollTo({ top: 0, behavior: 'auto' }) }, [rota.caminho])
+  // Emblemas "Fila zerada": observa as respostas e marca o dia em que a revisão zerou.
+  useEffect(() => vigiarFilaZerada(), [])
 
   useEffect(() => {
     document.title =

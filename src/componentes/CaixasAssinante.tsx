@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import { conferirMetaCronograma } from '../conta/feitos'
 import { usarPremium } from '../conta/premium'
 import { obterPlano } from '../conta/cronograma'
 import { NovidadeSimulados } from './NovidadeSimulados'
@@ -34,6 +35,7 @@ export function usarCronogramaHoje() {
     return () => { vivo = false }
   }, [premium])
   const calculo = useMemo(() => (indice && plano ? calcularPlano(indice, respondidas, plano) : null), [indice, plano, respondidas])
+  useEffect(() => { if (premium) conferirMetaCronograma(calculo) }, [premium, calculo])
   return { premium, logado, calculo: premium ? calculo : null, pendente, plano: premium ? plano : null, definirPlano }
 }
 export type CronogramaHoje = ReturnType<typeof usarCronogramaHoje>

@@ -53,15 +53,35 @@ até lá aparece a medalha desenhada.
 | Secreta: Véspera | esmeralda | No dia anterior à prova teórica do TEOT, sessão de 100 questões com 70%. Atualizar `DATAS_PROVA` todo ano. |
 | Secreta: Lei de Wolff | esmeralda | 6 semanas seguidas, cada uma com mais questões que a anterior, começando com 50. |
 
-## Guardados para depois (precisam de dado do servidor ou de registro novo)
+## Feitos em 07/10/2026, segundo lote (todas as ideias do brainstorm)
 
-| Ideia | Regra proposta (já endurecida) | O que falta |
-|---|---|---|
-| Pontual | Responder a Questão do Dia 30 dias, depois 100 e 365 | Registrar em que dia cada questão do dia foi respondida. |
-| Simulado Nacional | Participar de 3 edições seguidas; ficar entre os 10% melhores; 1º lugar (lendário) | Ler a classificação de cada edição. |
-| Cronograma impecável | Cumprir a meta semanal 4, 12 semanas seguidas; lendário: do primeiro dia até a prova sem falhar nenhuma semana | Guardar o resultado de cada semana do Cronograma. |
-| Pódio da liga | Terminar a semana no pódio 4 semanas seguidas; 1º lugar; chegar à liga mais alta | Histórico de posição da liga por semana. |
-| Indicação | Amigos indicados que **assinam**: 1 "Padrinho", 3 "Chefe da residência", 10 "Fundador do serviço" | Ler as indicações convertidas. |
+Os de servidor dependem da migração `202610070500_emblemas_dificeis.sql` (parte 11 do painel):
+ela cria `feitos_diarios` (Questão do Dia, fila zerada, meta do Cronograma), `conquistas_usuario`
+(trava: emblema conquistado não se perde, nem quando o histórico de 50 sessões ou o ranking de 30
+dias esquecem) e a RPC `meus_feitos()`. Sem o SQL aplicado, esses emblemas ficam em zero.
+O cliente está em `src/conta/feitos.ts`.
+
+| Família | Níveis | Regra | Arte |
+|---|---|---|---|
+| Calibragem | 90%, 95%, 98% | Acerto entre as respostas com "tenho certeza" (300 no mínimo) | Balança |
+| Contra a corrente | 50, 150, 300 | Acertos de primeira onde a turma acerta menos da metade (servidor) | Escudo do cavaleiro errante |
+| Ortopedista completo | 4, 8, 11 temas | 80% de primeira com 100+ respostas no tema | Távola Redonda |
+| Nota de corte | 3, 10, 25 | Sessões de 100+ com 70% | Edital com lacre |
+| Curva de aprendizado | +10, +15, +20 | Primeiras 500 contra últimas 500 questões novas | Escadaria até a torre |
+| Run sem dano | 7, 30, 60 dias | Meta diária e 70% em cada dia seguido | Amuleto de proteção |
+| Chefões | 1 cada | Sem morrer (simulado cronometrado de 100 com 85%); TEOT inteiro (um ano, simulado só, 2,4 min por questão, 75%); New Game+ (tema inteiro dominado); Platina (todos os não secretos) | Frasco de Estus, espada na pedra, anel rúnico, cálice |
+| Questão do Dia | 30, 100, 365 dias seguidos | Registrada ao abrir o cartão depois de responder | Sino da torre |
+| Fila zerada | 7, 30, 90 dias seguidos | Revisar hoje vazio e meta diária cumprida | Portão da masmorra aberto |
+| Cronograma | 28, 84 dias; Do início ao fim | Meta do dia cumprida (folgas não quebram); lendário: todos os dias até a reta final | Relógio de sol |
+| Simulado Nacional | 3, 6, 12 seguidas; elite (10%); campeão | Entregue no tempo; elite e campeão em edições com 20+ classificados | Estandarte, brasão, coroa de louros |
+| Arena semanal | 1º uma semana; 4 seguidas no pódio; 4 seguidas em 1º | Última posição de cada semana encerrada no ranking semanal | Lança de justa, escudo de torneio, trono |
+| Indicação | 1, 3, 10 assinantes; 5 com 30 dias | Indicados que assinaram; indicados com 30 dias de estudo | Chaves do castelo, tenda |
+| Revisor de banca | 3, 10, 25 | Relatos de erro marcados como resolvidos | Lupa sobre o pergaminho |
+| Conselho editorial | 100, 300, 1.000 | Comentários avaliados (útil ou não) | Livro aberto com pena |
+
+Adaptação: a ideia "Professor" (comentários seus marcados como úteis) virou **Conselho editorial**,
+porque o site não tem comentários escritos por usuários; a avaliação dos comentários é o que existe
+e ajuda a melhorar o acervo.
 
 ## Banco de ideias (brainstorm, ainda não decidido)
 
