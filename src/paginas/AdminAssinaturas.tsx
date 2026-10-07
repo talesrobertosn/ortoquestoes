@@ -162,7 +162,7 @@ export function AdminAssinaturas() {
       {aba === 'financeiro' && <AdminFinanceiro assinaturas={reais ?? []} testes={testes} usuarios={resumo?.usuarios ?? usuarios?.length ?? null} />}
       {aba === 'assinaturas' && <Assinaturas linhas={assinaturas} />}
       {aba === 'pagamentos' && <Pagamentos eventos={eventos ?? []} recarregar={carregar} lidos={lidosPagamento.lidos} marcar={lidosPagamento.marcar} />}
-      {aba === 'crescimento' && <AdminCrescimento assinaturas={reais ?? []} usuarios={usuariosReais} />}
+      {aba === 'crescimento' && <AdminCrescimento usuarios={usuariosReais} />}
       {aba === 'configuracoes' && <AdminConfiguracoes />}
       {aba === 'questoes' && <AdminQuestoes idInicial={idEditar} />}
       {/* Montada sempre (escondida fora da aba) para o contador de pendências aparecer na barra. */}

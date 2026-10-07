@@ -176,14 +176,19 @@ export function mesAMes(assinaturas: AssinaturaBase[], meses = 12): Mes[] {
 export function aReceberNoCartao(assinaturas: AssinaturaBase[], meses: number, agora = new Date()) {
   const limite = somarMeses(agora, meses)
   let valor = 0, cobrancas = 0
+  // Mês a mês dentro da mesma janela (o mês de hoje até o mês do limite), para o gráfico somar igual.
+  const porMes = new Map<string, { valor: number; quantidade: number }>()
+  for (let d = new Date(agora.getFullYear(), agora.getMonth(), 1); d < limite; d = somarMeses(d, 1)) porMes.set(MES(d), { valor: 0, quantidade: 0 })
   for (const a of assinaturas) {
     const preco = precoDe(a.plano)
     if (!preco || !vigente(a, agora.getTime()) || !renovaSozinha(a) || !a.fim_periodo) continue
     for (let d = new Date(a.fim_periodo); d < limite; d = somarMeses(d, preco.meses)) {
-      if (d >= agora) { valor += preco.total; cobrancas++ }
+      if (d < agora) continue
+      valor += preco.total; cobrancas++
+      const m = porMes.get(MES(d)); if (m) { m.valor += preco.total; m.quantidade++ }
     }
   }
-  return { valor, cobrancas }
+  return { valor, cobrancas, porMes: [...porMes] }
 }
 
 /** Próximas renovações automáticas, mês a mês, supondo que ninguém cancele. */

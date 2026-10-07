@@ -320,3 +320,49 @@
 .adm-pix-detalhes summary { cursor: pointer; font-size: var(--corpo-menor); font-weight: 600; color: var(--verdete); }
 .adm-pix-lista__aguardando { opacity: .6; }
 .adm-pix-lista__selo { color: var(--aviso) !important; font-weight: 600 !important; }
+
+/* Financeiro: séries fixas (cartão sempre verde, Pix sempre dourado), legendas, composição e destaque. */
+.adm-serie-cartao { fill: var(--verdete); background: var(--verdete); }
+.adm-serie-pix { fill: var(--ouro); background: var(--ouro); }
+.adm-serie-mensal { fill: var(--verdete); background: var(--verdete); }
+.adm-legenda { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .35rem 1rem; font-size: var(--corpo-menor); color: var(--texto-2); }
+.adm-legenda li { display: inline-flex; align-items: center; gap: .4rem; }
+.adm-legenda i, .adm-composicao__itens i, .adm-grafico__dica--lista i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; flex: none; }
+.adm-grafico__apagado { opacity: .45; transition: opacity .12s; }
+.adm-grafico__dica--lista { justify-items: stretch; min-width: 170px; gap: .15rem; }
+.adm-grafico__dica--lista span { display: flex; align-items: center; gap: .4rem; color: var(--texto-2); font-size: .78rem; }
+.adm-grafico__dica--lista span b { margin-left: auto; color: var(--texto); font-weight: 650; }
+.adm-grafico__dica--lista strong { border-top: var(--borda); padding-top: .2rem; text-align: right; }
+.adm-grafico--previsto .adm-grafico__coluna { fill: color-mix(in srgb, var(--verdete) 38%, transparent); stroke: var(--verdete); stroke-width: 1.2; stroke-dasharray: 3 2; }
+.adm-grafico--previsto .adm-grafico__coluna--ativa { fill: color-mix(in srgb, var(--verdete) 62%, transparent); }
+.adm-composicao { display: grid; gap: .8rem; }
+.adm-composicao__barra { display: flex; gap: 2px; height: 14px; border-radius: 999px; overflow: hidden; background: var(--superficie); }
+.adm-composicao__barra span { min-width: 4px; }
+.adm-composicao__itens { list-style: none; margin: 0; padding: 0; display: grid; gap: .55rem; }
+.adm-composicao__itens li { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: .1rem .5rem; font-size: var(--corpo-menor); }
+.adm-composicao__itens strong { font-variant-numeric: tabular-nums; }
+.adm-composicao__itens small { grid-column: 2 / -1; color: var(--texto-2); font-size: .75rem; }
+
+.adm-fin-bloco { display: grid; gap: 1rem; }
+.adm-fin-rotulo { margin: 0; color: var(--verdete); font-size: .72rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.adm-fin-heroi { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 2fr); gap: 1rem; align-items: stretch; }
+.adm-fin-heroi__principal { display: grid; align-content: space-between; gap: .75rem; padding: 1.25rem 1.35rem; border-radius: var(--raio-cartao);
+  background: linear-gradient(140deg, var(--verdete-veu), var(--superficie)); border: 1px solid color-mix(in srgb, var(--verdete) 35%, var(--traco)); }
+.adm-fin-heroi__principal > span { color: var(--texto-2); font-size: var(--meta); font-weight: 700; }
+.adm-fin-heroi__principal strong { display: block; font-size: 2.6rem; line-height: 1; color: var(--verdete); font-variant-numeric: tabular-nums; letter-spacing: -.02em; }
+.adm-fin-heroi__principal p { margin: 0; color: var(--texto-2); font-size: var(--corpo-menor); }
+.adm-fin-heroi__principal p b { color: var(--texto); }
+.adm-fin-receber { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .75rem; }
+.adm-fin-receber .adm-kpi { border-top: 3px solid var(--verdete); }
+.adm-fin-receber .adm-kpi strong { color: var(--texto); font-size: clamp(1.25rem, 1.9vw, 1.6rem); }
+.adm-kpis--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 760px) {
+  .adm-fin-heroi, .adm-fin-receber, .adm-kpis--3 { grid-template-columns: 1fr; }
+  .adm-fin-heroi__principal strong { font-size: 2.1rem; }
+}
+
+/* Na aba Financeiro, os KPIs ficam colados ao gráfico seguinte sem este respiro. */
+.adm-secao > .adm-kpis + .adm-grafico { margin-top: .5rem; }
+@media (max-width: 480px) {
+  .adm-kpi strong { font-size: clamp(1rem, 4.4vw, 1.6rem); white-space: nowrap; }
+}
