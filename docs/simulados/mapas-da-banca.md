@@ -110,6 +110,66 @@ Pendências no acervo: TARO 2006 a 2009 (trauma-1129, 1144, 1178) sem gabarito; 
 temas (trauma-0415 e ombro-cotovelo-0170; trauma-0312 e 0963; ombro-cotovelo-0102 e 0383;
 pediatria-0097 e 0468).
 
+## Instabilidade glenoumeral (lido em 07/10/2026; capítulo ainda não enviado)
+
+Recorte: subtemas de instabilidade anterior e posterior do ombro, mais regex de luxação glenoumeral,
+BANKART, HILL-SACHS, LATARJET, BRISTOW, remplissage, track, HAGL, MCLAUGHLIN, ISIS, sulco e apreensão.
+62 questões úteis: 41 de TEOT e TARO (2006 a 2026, duas por ano em média, sem interrupção), 10 da prova
+de ombro e cotovelo, 6 da SES-DF (certo ou errado), outras. Nenhum simulado próprio ainda.
+
+Medidas (TEOT e TARO): enunciado mediano de 108 caracteres, alternativa de 21; 24 terminam numa
+palavra e 11 em dois-pontos; 3 com imagem (todas recentes, RM); 3 casos clínicos; gabarito C e D em 23
+de 37 (A 7, B 4). Aberturas: "Na luxação..." (9), "Na instabilidade..." (8), "Na avaliação..." (4).
+
+Fatos carimbados (repetidos):
+- **Idade é o principal fator de recidiva** (TARO 2010, 2012 e 2024; distratores esporte de colisão,
+  arremesso, hiperfrouxidão, BANKART, tempo de imobilização).
+- **MCLAUGHLIN**: lesão anteromedial da cabeça na luxação posterior (TARO 2007, 2008 duas vezes);
+  HILL-SACHS reverso de 25% tratado com transferência do subescapular, a cirurgia de MCLAUGHLIN
+  (TARO 2018, TEOT 2023 duas vezes; distratores hemiartroplastia, reversa, LATARJET).
+- **LATARJET e BRISTOW**: nervo em risco musculocutâneo (TARO 2019), axilar e musculocutâneo (TEOT
+  2024); bloqueio dinâmico pelo tendão conjunto em abdução e rotação externa (TARO 2014 e SBOT-SP).
+- **Ligamentos**: glenoumeral inferior é o principal estabilizador estático (TARO 2017) e rompe na
+  inserção glenoidal (TARO 2015); HAGL é avulsão umeral do inferior (TARO 2013); glenoumeral superior
+  é restritor primário da subluxação inferior com o ombro neutro (TARO 2010); coracoacromial na
+  instabilidade anterossuperior da artropatia do manguito (TARO 2020).
+- **Perda óssea e track** (tendência de 2021 em diante): HILL-SACHS menor que o glenoid track = on-track,
+  reparo artroscópico, risco de enganche baixo (TEOT 2021); remplissage = tenodese do infraespinal
+  (TARO 2021), indicado com BANKART ósseo menor que 25% e off-track (TARO 2022); 12,5% de perda e
+  on-track = BANKART artroscópico (prova sem ano).
+- **ISIS**: esporte de contato e idade no ato da cirurgia (TARO 2017).
+- **Exame e imagem**: apreensão positiva já em 45 graus de abdução sugere defeito ósseo glenoidal
+  (TEOT 2022); sulco em zero grau (TARO 2012, gabarito: complexo glenoumeral inferior; atenção, o ensino
+  clássico liga o sulco em rotação externa ao intervalo dos rotadores); RM em ABER com lesão
+  anteroinferior (TARO 2025); plano axial para o lábio anterior (TEOT 2025); STRYKER para HILL-SACHS
+  (duas provas sem ano); VELPEAU para o sentido da luxação (TARO 2009); equador da glenoide: lesão acima
+  ligada ao manguito, abaixo à instabilidade (TEOT 2025).
+- **Epidemiologia e complicações**: nervo axilar e artéria axilar na luxação anterior (TARO 2020);
+  acima de 40 anos, lesão do manguito (TARO 2011); instabilidade por manguito em homens acima de 40
+  (TARO 2026); luxação inveterada atraumática acima de 50 anos (TARO 2026); luxação anterior crônica
+  perde abdução e rotação interna (CET-PR).
+
+Como o examinador pensa:
+- Um fato por questão, quase sempre "o principal", "o mais frequente", "a estrutura em risco".
+- Pares 2 por 2 com atributos que o candidato confunde: idade ou gênero com primeiro episódio ou ato
+  cirúrgico (ISIS); menor ou maior que 25% com on ou off-track; jovem ou velho com alta ou baixa
+  velocidade (HAGL); FABS ou ABER com posterior ou anteroinferior; superficial ou profunda com superior
+  ou inferior (reabsorção do LATARJET); nervo com artéria.
+- Conduta com justificativa na mesma alternativa ("reparo artroscópico, pois o risco de enganche é
+  baixo"): o distrator troca só a justificativa.
+- Distratores verdadeiros de outro contexto: radial e supraescapular no LATARJET; transferência do
+  coracoide para o HILL-SACHS reverso; esporte de colisão contra idade; ligamento médio ou superior
+  contra inferior.
+- Epônimos em caixa alta (LATARJET, BRISTOW, MCLAUGHLIN, HILL-SACHS, BANKART, EDEN-HYBINETTE, KIM).
+- Recicla o mesmo fato com texto quase idêntico (TEOT 2023 repetiu a mesma questão duas vezes).
+
+Lacunas que um simulado pode cobrir (a confirmar no capítulo): pontos do ISIS e corte de 6, perda
+glenoidal subcrítica e crítica, cálculo do glenoid track (83% da largura menos a perda), intervalo do
+HILL-SACHS, efeito triplo do LATARJET, imobilização em rotação externa, recidiva por faixa etária,
+luxação posterior por convulsão ou choque elétrico, sinais radiográficos da posterior (lâmpada, linha
+de MOLONEY, trough), manobras de redução, instabilidade multidirecional (BEIGHTON, desvio capsular de
+NEER), ALPSA, PERTHES e GLAD.
+
 ## Fratura da clavícula (lido em 07/10/2026; Rockwood cap. 34)
 
 Recorte: subtema "Fratura da clavícula" e o da criança, mais o regex de clavícula e ombro flutuante.
