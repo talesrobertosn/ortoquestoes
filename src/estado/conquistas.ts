@@ -6,6 +6,8 @@
  *
  * A família "questões" continua sendo o emblema padrão ao lado do nome; a
  * pessoa pode trocar por até três conquistas à escolha (a vitrine).
+ *
+ * Emblema tem que ser difícil (estilo souls-like): ler docs/emblemas.md antes de criar um.
  */
 import type { RegistroQuestao } from './revisao'
 import { dominada } from './revisao'
@@ -27,7 +29,8 @@ export interface Conquista {
 export type FamiliaId =
   | 'questoes' | 'sequencia' | 'dias' | 'acertos' | 'dominadas' | 'temas' | 'sessoes'
   | 'maratona' | 'precisao' | 'redencao' | 'gabarito' | 'mestre' | 'especialista' | 'aproveitamento'
-  | 'resistencia' | 'colecao' | 'anotacoes' | 'secretas'
+  | 'resistencia' | 'colecao' | 'anotacoes' | 'pseudartrose' | 'imagem' | 'certeza' | 'provas' | 'assuntos'
+  | 'horaDeOuro' | 'secretas'
 
 export interface Emblema extends Conquista {
   familia: FamiliaId
@@ -61,6 +64,12 @@ export const FAMILIAS: readonly Familia[] = [
   { id: 'resistencia', titulo: 'Resistência', unidade: (v) => `${v} questões numa sessão` },
   { id: 'colecao', titulo: 'Coleção', unidade: (v) => `${v} favoritas` },
   { id: 'anotacoes', titulo: 'Caderno de campo', unidade: (v) => `${v} anotações` },
+  { id: 'pseudartrose', titulo: 'Pseudartrose', unidade: (v) => `${n(v)} erros antigos dominados` },
+  { id: 'imagem', titulo: 'Olho de radiologista', unidade: (v) => `${n(v)} acertos com imagem` },
+  { id: 'certeza', titulo: 'Certeza cirúrgica', unidade: (v) => `${v} acertos com certeza seguidos` },
+  { id: 'provas', titulo: 'Provas vencidas', unidade: (v) => `${v} ${v === 1 ? 'prova vencida' : 'provas vencidas'}` },
+  { id: 'assuntos', titulo: 'Generalista', unidade: (v) => `${v} assuntos com 80%` },
+  { id: 'horaDeOuro', titulo: 'Hora de ouro', unidade: (v) => `${v} acertos numa hora` },
   { id: 'secretas', titulo: 'Secretas', unidade: () => 'secreta' },
 ]
 
@@ -69,6 +78,26 @@ export const MESTRE_ACERTOS = 100
 export const MESTRE_SEGUIDOS = 10
 /** Aproveitamento só vale a partir deste número de questões respondidas. */
 export const APROVEITAMENTO_MINIMO = 200
+
+/**
+ * Emblemas difíceis de propósito (estilo souls-like): a pessoa tem que brigar por eles.
+ * Pseudartrose: questão errada pelo menos esta quantidade de vezes e hoje dominada.
+ */
+export const PSEUDARTROSE_ERROS = 3
+/** Generalista: o assunto conta com pelo menos estas respostas e este acerto. */
+export const ASSUNTO_MINIMO = 5
+export const ASSUNTO_ACERTO = 0.8
+/** Prova vencida (TEOT ou TARO de um ano): todas as questões respondidas e este acerto sobre o total. */
+export const PROVA_ACERTO = 0.7
+/** Véspera: a sessão concluída no dia anterior à prova precisa deste tamanho e deste acerto. */
+export const VESPERA_QUESTOES = 100
+export const VESPERA_ACERTO = 0.7
+/** Datas da prova teórica do TEOT e do TEPOT (AAAA-MM-DD). Acrescentar a de cada ano. */
+export const DATAS_PROVA = ['2027-01-10'] as const
+/** Lei de Wolff: a primeira semana da escada precisa de pelo menos isto. */
+export const WOLFF_PRIMEIRA_SEMANA = 50
+/** Tríade terrível: sessões perfeitas no mesmo dia, cada uma com pelo menos isto. */
+export const TRIADE_QUESTOES = 20
 
 /** Grupos de prova dos emblemas de especialista (sufixo do id). */
 export type GrupoProva = 'teot' | 'taro' | 'mao' | 'coluna' | 'enare' | 'tecoc' | 'quadril'
@@ -203,6 +232,48 @@ export const EMBLEMAS: readonly Emblema[] = [
     ['anotacoes-25', 25, 'Caderno de campo', '25', 'prata', 'Escreva anotações em 25 questões.'],
     ['anotacoes-100', 100, 'Tratado de ortopedia', '100', 'ouro', 'Escreva anotações em 100 questões.'],
   ]),
+  ...familia('pseudartrose', 'pseudartrose', [
+    ['pseudartrose-10', 10, 'Pseudartrose tratada', '10', 'ouro', `Domine 10 questões que você errou ${PSEUDARTROSE_ERROS} vezes ou mais, acertando também em todas as revisões.`],
+    ['pseudartrose-50', 50, 'Enxerto e placa', '50', 'esmeralda', `Domine 50 questões que você errou ${PSEUDARTROSE_ERROS} vezes ou mais.`],
+    ['pseudartrose-150', 150, 'Consolidação impossível', '150', 'lendario', `Domine 150 questões que você errou ${PSEUDARTROSE_ERROS} vezes ou mais.`],
+  ]),
+  ...familia('imagem', 'imagem', [
+    ['imagem-50', 50, 'Olho de radiologista', '50', 'prata', 'Acerte 50 questões com imagem.'],
+    ['imagem-200', 200, 'Negatoscópio', '200', 'ouro', 'Acerte 200 questões com imagem.'],
+    ['imagem-500', 500, 'Raio X humano', '500', 'lendario', 'Acerte 500 questões com imagem.'],
+  ]),
+  ...familia('certeza', 'certeza', [
+    ['certeza-30', 30, 'Certeza cirúrgica', '30', 'ouro', 'Acerte 30 questões seguidas marcadas com "tenho certeza". Qualquer erro zera; acerto com dúvida ou chute não soma.'],
+    ['certeza-60', 60, 'Mão de cirurgião', '60', 'esmeralda', 'Acerte 60 questões seguidas com "tenho certeza", sem nenhum erro no meio.'],
+    ['certeza-120', 120, 'Sem tremor', '120', 'lendario', 'Acerte 120 questões seguidas com "tenho certeza", sem nenhum erro no meio.'],
+  ]),
+  ...familia('provas', 'provasVencidas', [
+    ['provas-1', 1, 'Prova vencida', '1', 'ouro', `Responda todas as questões de um TEOT ou de um TARO de um ano e fique com pelo menos ${PROVA_ACERTO * 100}% delas certas.`],
+    ['provas-8', 8, 'Arqueólogo de provas', '8', 'esmeralda', `Vença 8 provas (TEOT ou TARO de um ano): todas as questões respondidas e ${PROVA_ACERTO * 100}% certas.`],
+    ['provas-20', 20, 'Guardião das provas', '20', 'lendario', `Vença 20 provas (TEOT ou TARO de um ano): todas as questões respondidas e ${PROVA_ACERTO * 100}% certas.`],
+  ]),
+  ...familia('assuntos', 'assuntos', [
+    ['assuntos-30', 30, 'Generalista', '30', 'ouro', `Tenha ${ASSUNTO_ACERTO * 100}% de acerto em 30 assuntos diferentes, com pelo menos ${ASSUNTO_MINIMO} questões respondidas em cada.`],
+    ['assuntos-100', 100, 'Ortopedista geral', '100', 'esmeralda', `Tenha ${ASSUNTO_ACERTO * 100}% de acerto em 100 assuntos diferentes, com pelo menos ${ASSUNTO_MINIMO} questões em cada.`],
+    ['assuntos-200', 200, 'Tratado vivo', '200', 'lendario', `Tenha ${ASSUNTO_ACERTO * 100}% de acerto em 200 assuntos diferentes, com pelo menos ${ASSUNTO_MINIMO} questões em cada.`],
+  ]),
+  ...familia('horaDeOuro', 'horaDeOuro', [
+    ['hora-30', 30, 'Hora de ouro', '30', 'ouro', 'Acerte 30 questões dentro de uma mesma hora.'],
+    ['hora-50', 50, 'Sala vermelha', '50', 'esmeralda', 'Acerte 50 questões dentro de uma mesma hora.'],
+    ['hora-70', 70, 'Politrauma', '70', 'lendario', 'Acerte 70 questões dentro de uma mesma hora.'],
+  ]),
+  ...familia('secretas', 'chuteMestre', [
+    ['secreta-chute', 5, 'Chute de mestre', 'gol', 'esmeralda', 'Acerte 5 chutes seguidos (questões marcadas como chute).'],
+  ], true),
+  ...familia('secretas', 'triade', [
+    ['secreta-triade', 3, 'Tríade terrível', 'III', 'lendario', `Gabarite 3 sessões de pelo menos ${TRIADE_QUESTOES} questões no mesmo dia.`],
+  ], true),
+  ...familia('secretas', 'vespera', [
+    ['secreta-vespera', 1, 'Véspera', 'D-1', 'esmeralda', `Na véspera da prova teórica do TEOT, conclua uma sessão de ${VESPERA_QUESTOES} questões com ${VESPERA_ACERTO * 100}% de acerto.`],
+  ], true),
+  ...familia('secretas', 'wolff', [
+    ['secreta-wolff', 6, 'Lei de Wolff', 'W', 'esmeralda', `Estude 6 semanas seguidas, cada uma com mais questões que a anterior, começando com pelo menos ${WOLFF_PRIMEIRA_SEMANA}.`],
+  ], true),
   ...familia('secretas', 'madrugador', [
     ['secreta-madrugador', 10, 'Galo do plantão', '6h', 'prata', 'Responda 10 questões entre 5 e 7 da manhã.'],
   ], true),
@@ -277,6 +348,18 @@ export interface Metricas {
   virada: number
   natal: number
   anoNovo: number
+  pseudartrose: number
+  imagem: number
+  /** Maior sequência de acertos com certeza (qualquer erro zera; dúvida e chute não somam). */
+  certeza: number
+  provasVencidas: number
+  assuntos: number
+  /** Mais acertos dentro de uma janela de 60 minutos. */
+  horaDeOuro: number
+  chuteMestre: number
+  triade: number
+  vespera: number
+  wolff: number
   /** Porcentagem de acerto na primeira tentativa (0 enquanto houver menos de APROVEITAMENTO_MINIMO questões). */
   aproveitamento: number
   /** Marcador das conquistas por tema: o valor real vem de porTema. */
@@ -291,12 +374,32 @@ export interface Metricas {
 
 type MetricaNumerica = Exclude<keyof Metricas, 'porTema' | 'seguidosTema' | 'porProva'>
 
-interface SessaoConcluida { respondidas: number; acertos: number }
+interface SessaoConcluida { respondidas: number; acertos: number; concluidaEm?: number }
+/** O que os emblemas precisam saber de cada questão, vindo do índice do acervo. */
+export interface DadosAcervo {
+  imagem: ReadonlySet<string>
+  subtemas: ReadonlyMap<string, readonly number[]>
+  /** Prova vencível ("TEOT 2024") de cada questão; anuladas e cópias ficam de fora. */
+  prova: ReadonlyMap<string, string>
+  totalProva: ReadonlyMap<string, number>
+}
 export interface Extras {
   favoritas?: number
   notas?: number
   /** Grupos de prova de cada questão, vindos do índice do acervo. */
   grupos?: ReadonlyMap<string, readonly GrupoProva[]>
+  acervo?: DadosAcervo
+}
+
+const HORA = 60 * 60 * 1000
+/** Semana (segunda a domingo) do horário local, contada desde 1970. */
+function semanaDe(em: number) {
+  const d = new Date(em)
+  return Math.floor((Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) / 86400000 + 3) / 7)
+}
+function vesperaDe(prova: string) {
+  const [a, m, d] = prova.split('-').map(Number)
+  return chaveDia(new Date(a, m - 1, d - 1, 12).getTime())
 }
 
 /** Acertou na primeira vez? Sem erros, sim; com erros, só se o histórico guardado começa na primeira tentativa. */
@@ -317,7 +420,11 @@ function acertouDePrimeira(registro: Partial<RegistroQuestao>): boolean | null {
 export function calcularMetricas(respondidas: Record<string, Partial<RegistroQuestao>>, sessoes: readonly SessaoConcluida[] = [], extras: Extras = {}, agora = Date.now()): Metricas {
   const temas = new Set<string>()
   const porDia = new Map<string, number>()
-  const eventos: Array<{ em: number; correta: boolean | null; tema: string }> = []
+  const eventos: Array<{ em: number; correta: boolean | null; tema: string; confianca?: string }> = []
+  const acervo = extras.acervo
+  let pseudartrose = 0, imagem = 0
+  const porAssunto = new Map<number, { r: number; c: number }>()
+  const porProvaAno = new Map<string, number>()
   const porProva: Partial<Record<GrupoProva, number>> = {}
   const noites = new Set<string>()
   let tresQuatorze = 0, natal = 0, anoNovo = 0, primeiras = 0, primeirasCertas = 0
@@ -333,9 +440,22 @@ export function calcularMetricas(respondidas: Record<string, Partial<RegistroQue
     const primeira = acertouDePrimeira(registro)
     if (primeira !== null) { primeiras++; if (primeira) primeirasCertas++ }
     if (registro.c === true && ((registro.erros ?? 0) > 0 || registro.historico?.some((e) => e.correta === false))) redencao++
-    const lista = registro.historico?.length ? registro.historico : registro.q ? [{ em: registro.q, correta: registro.c ?? null }] : []
+    if ((registro.erros ?? 0) >= PSEUDARTROSE_ERROS && dominada(registro)) pseudartrose++
+    if (acervo && registro.c !== null && registro.c !== undefined) {
+      if (registro.c === true && acervo.imagem.has(id)) imagem++
+      for (const s of acervo.subtemas.get(id) ?? []) {
+        const a = porAssunto.get(s) ?? { r: 0, c: 0 }
+        a.r++
+        if (registro.c === true) a.c++
+        porAssunto.set(s, a)
+      }
+      const prova = acervo.prova.get(id)
+      if (prova && registro.c === true) porProvaAno.set(prova, (porProvaAno.get(prova) ?? 0) + 1)
+      if (prova) porProvaAno.set(`${prova}#r`, (porProvaAno.get(`${prova}#r`) ?? 0) + 1)
+    }
+    const lista = registro.historico?.length ? registro.historico : registro.q ? [{ em: registro.q, correta: registro.c ?? null, confianca: registro.confianca }] : []
     for (const evento of lista) {
-      eventos.push({ em: evento.em, correta: evento.correta, tema })
+      eventos.push({ em: evento.em, correta: evento.correta, tema, confianca: evento.confianca })
       const chave = chaveDia(evento.em)
       porDia.set(chave, (porDia.get(chave) ?? 0) + 1)
       const data = new Date(evento.em)
@@ -350,6 +470,49 @@ export function calcularMetricas(respondidas: Record<string, Partial<RegistroQue
   }
   eventos.sort((a, b) => a.em - b.em)
   let precisao = 0, seguidos = 0, errosSeguidos = 0, aposErros = -1, virada = 0
+  let certeza = 0, certezaAtual = 0, chuteMestre = 0, chuteAtual = 0
+  for (const evento of eventos) {
+    if (evento.correta === null) continue
+    // Certeza: só acerto marcado com certeza soma; qualquer erro zera; acerto com dúvida ou chute não soma nem zera.
+    if (!evento.correta) certezaAtual = 0
+    else if ((evento.confianca ?? 'seguro') === 'seguro') certeza = Math.max(certeza, ++certezaAtual)
+    if (evento.confianca === 'chute') chuteMestre = Math.max(chuteMestre, chuteAtual = evento.correta ? chuteAtual + 1 : 0)
+  }
+  // Hora de ouro: janela deslizante de 60 minutos sobre os acertos.
+  const certos = eventos.filter((e) => e.correta === true).map((e) => e.em)
+  let horaDeOuro = 0
+  for (let i = 0, j = 0; j < certos.length; j++) {
+    while (certos[j] - certos[i] >= HORA) i++
+    horaDeOuro = Math.max(horaDeOuro, j - i + 1)
+  }
+  // Lei de Wolff: semanas consecutivas, cada uma com mais questões que a anterior.
+  const porSemana = new Map<number, number>()
+  for (const e of eventos) porSemana.set(semanaDe(e.em), (porSemana.get(semanaDe(e.em)) ?? 0) + 1)
+  let wolff = 0, escada = 0, semanaAnterior = NaN, volumeAnterior = 0
+  for (const semana of [...porSemana.keys()].sort((a, b) => a - b)) {
+    const volume = porSemana.get(semana)!
+    if (escada && semana === semanaAnterior + 1 && volume > volumeAnterior) escada++
+    else escada = volume >= WOLFF_PRIMEIRA_SEMANA ? 1 : 0
+    wolff = Math.max(wolff, escada)
+    semanaAnterior = semana
+    volumeAnterior = volume
+  }
+  let assuntos = 0
+  for (const a of porAssunto.values()) if (a.r >= ASSUNTO_MINIMO && a.c >= ASSUNTO_ACERTO * a.r) assuntos++
+  let provasVencidas = 0
+  for (const [prova, total] of acervo?.totalProva ?? []) {
+    if ((porProvaAno.get(`${prova}#r`) ?? 0) >= total && (porProvaAno.get(prova) ?? 0) >= PROVA_ACERTO * total) provasVencidas++
+  }
+  const perfeitasPorDia = new Map<string, number>()
+  for (const s of sessoes) {
+    if (s.concluidaEm && s.respondidas >= TRIADE_QUESTOES && s.acertos === s.respondidas) {
+      const dia = chaveDia(s.concluidaEm)
+      perfeitasPorDia.set(dia, (perfeitasPorDia.get(dia) ?? 0) + 1)
+    }
+  }
+  const vesperas = new Set(DATAS_PROVA.map(vesperaDe))
+  const vespera = sessoes.some((s) => s.concluidaEm && vesperas.has(chaveDia(s.concluidaEm))
+    && s.respondidas >= VESPERA_QUESTOES && s.acertos >= VESPERA_ACERTO * s.respondidas) ? 1 : 0
   const seguidosTema: Record<string, number> = {}
   const atualTema: Record<string, number> = {}
   for (const evento of eventos) {
@@ -393,6 +556,16 @@ export function calcularMetricas(respondidas: Record<string, Partial<RegistroQue
     natal,
     anoNovo,
     aproveitamento: primeiras >= APROVEITAMENTO_MINIMO ? Math.floor((100 * primeirasCertas) / primeiras) : 0,
+    pseudartrose,
+    imagem,
+    certeza,
+    provasVencidas,
+    assuntos,
+    horaDeOuro,
+    chuteMestre,
+    triade: Math.max(0, ...perfeitasPorDia.values()),
+    vespera,
+    wolff,
     acertosTema: 0,
     porTema,
     seguidosTema,
