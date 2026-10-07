@@ -15,6 +15,9 @@ const ESTILOS = {
   plantao: { nome: 'Plantão das 3h14', slides: 5, story: 's2-plantao', figurinha: 'nenhuma (só a imagem)' },
   'ache-o-erro': { nome: 'Ache os 3 erros', slides: 3, story: 's3-caderno', figurinha: 'nenhuma (só a imagem)' },
   linhas: { nome: 'Linhas do metrô', slides: 5, story: 's1-linha e s2-estacoes', figurinha: 'nenhuma (só a imagem)', proprio: true },
+  jornal: { nome: 'Jornal (Diário do Plantão)', slides: 5, story: 's1-cartaz do estilo cinema ou o post compartilhado', figurinha: 'nenhuma (só a imagem)' },
+  // Só stories: não entra no sorteio do feed; use "criar cinema <slug>".
+  cinema: { nome: 'Cartaz de cinema', slides: 0, story: 's1-cartaz e s2-creditos', figurinha: 'nenhuma (só a imagem)', proprio: true, soStories: true },
 }
 const arquivoHistorico = join(pasta, 'historico.json')
 const historico = existsSync(arquivoHistorico) ? JSON.parse(readFileSync(arquivoHistorico, 'utf8')) : []
@@ -34,14 +37,16 @@ if (comando === 'criar' && !slug) {
 // Aleatório, só sem repetir o último estilo publicado.
 function sortear() {
   const ultimo = historico.at(-1)?.estilo
-  const opcoes = Object.keys(ESTILOS).filter((e) => e !== ultimo)
+  const opcoes = Object.keys(ESTILOS).filter((e) => e !== ultimo && !ESTILOS[e].soStories)
   return opcoes[Math.floor(Math.random() * opcoes.length)]
 }
 
 const estilo = escolhido ?? sortear()
 const ficha = ESTILOS[estilo]
 console.log(`Estilo: ${ficha.nome} (${estilo})`)
-console.log(`Carrossel de ${ficha.slides} slides 1080x1350; story semeador "${ficha.story}", figurinha: ${ficha.figurinha}.`)
+console.log(ficha.soStories
+  ? `Só stories 1080x1920 (${ficha.story}), figurinha: ${ficha.figurinha}.`
+  : `Carrossel de ${ficha.slides} slides 1080x1350; story semeador "${ficha.story}", figurinha: ${ficha.figurinha}.`)
 console.log(`Guia: ${relative(process.cwd(), join(pasta, 'ESTILOS.md'))}`)
 
 if (slug) {
@@ -56,15 +61,13 @@ if (slug) {
   const caminhoPost = relative(raiz, join(destino, 'post.html'))
   writeFileSync(join(destino, 'LEGENDA.md'), `# Post: ${slug} (estilo ${ficha.nome})
 
-Carrossel de ${ficha.slides} slides (1080×1350), a partir de \`estilos/${estilo}/modelo.html\`.
+${ficha.soStories ? 'Stories 1080×1920' : `Carrossel de ${ficha.slides} slides (1080×1350)`}, a partir de \`estilos/${estilo}/modelo.html\`.
 
 \`\`\`
 node marketing/instagram/gerar.mjs ${caminhoPost}
 \`\`\`
 
-## Legenda do feed
-
-(escrever seguindo a fórmula do estilo em estilos/ESTILOS.md)
+${ficha.soStories ? '## Stories\n\nSó as imagens, sem legenda e sem figurinha.' : '## Legenda do feed\n\n(escrever seguindo a fórmula do estilo em estilos/ESTILOS.md)'}
 
 ## Story semeador
 

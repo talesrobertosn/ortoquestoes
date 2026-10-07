@@ -158,7 +158,9 @@ iPhone e de um MacBook feitos em CSS (sem imagem de aparelho de terceiros).
 - **Bom para:** novidades do site (simulados, Cronograma, Simulado Nacional, ranking) e anúncios
   pagos para quem ainda não conhece o Orto Questões.
 
-## 7. Jornal (`posts/2026-10-07-diario-segond/`)
+## 7. Jornal (`jornal/`)
+
+Modelo: `jornal/modelo.html` (original publicado: `posts/2026-10-07-diario-segond/`).
 
 **Ideia:** a questão vira edição extra de um jornal fictício, o "Diário do Plantão": manchete,
 foto com legenda (a imagem real da prova), classificados com os suspeitos e o veredito em
@@ -174,7 +176,11 @@ reportagem. Só tipografia e a imagem da questão, nenhum desenho.
   veredito (resposta e mecanismo) → para a prova (tabela de endereços e frase para guardar).
 - **Regras:** nome de jornal inventado, sem imitar jornal real; imagem só a da questão.
 
-## 8. Cartaz de filme (`posts/2026-10-07-cartaz-triade-terrivel/`)
+## 8. Cartaz de cinema (`cinema/`), só stories
+
+Modelo: `cinema/modelo.html` (original publicado: `posts/2026-10-07-cartaz-triade-terrivel/`).
+Aprovado como um dos melhores formatos: usar sempre que aparecer uma entidade com nome de filme.
+Não entra no sorteio do feed; criar com `sortear.mjs criar cinema <slug>`.
 
 **Ideia:** uma entidade com nome dramático vira filme de terror: elenco no topo, título enorme,
 slogan, a questão como "roteiro" e a resposta nos créditos finais, com cena pós-créditos.
@@ -187,8 +193,14 @@ slogan, a questão como "roteiro" e a resposta nos créditos finais, com cena p�
 - **Estrutura:** `s1-cartaz` (elenco, título, slogan, enunciado e alternativas reais, "escolha o
   seu final", bloco de créditos com o mecanismo) → `s2-creditos` (spoiler, resposta, cada estrutura com seu papel,
   cena pós-créditos com outra questão da banca e o site).
+- **Como trocar o filme:** elenco no topo = as três estruturas ou achados da questão; título =
+  o nome da entidade (primeira linha pequena espaçada, segunda enorme em vermelho); slogan de
+  três frases curtas, a última em negrito; "O roteiro" = enunciado e alternativas exatamente como
+  no acervo; bloco de créditos com o mecanismo ("baseado em fatos reais"); no `s2-creditos`,
+  "Resposta X" e cada estrutura com o seu papel ("abre o filme", "participação especial"), e a
+  cena pós-créditos com outra questão da banca sobre o mesmo tema.
 - **Regras:** conteúdo importante entre 250 e 1700 px de altura (fora das barras do Instagram);
-  selo "R3" é piada e não imita classificação oficial.
+  selo "R3" é piada e não imita classificação oficial; sem figurinha.
 
 ## Stories semeadores (`stories/`)
 
