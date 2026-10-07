@@ -3049,7 +3049,7 @@
   },
   "conceito": "A sigla SCIWORA vem do inglês e quer dizer lesão medular sem anormalidade radiográfica. É o quadro em que a criança tem um déficit neurológico depois de um trauma, mas a radiografia e a tomografia não mostram fratura nem desalinhamento. Foi descrita por Pang e Wilberger em 1982 e é quase exclusiva da infância, principalmente abaixo dos 8 anos.\n\nA explicação está na diferença de elasticidade. A coluna da criança pequena é muito flexível: ligamentos e cápsulas frouxos, facetas mais horizontais, corpos vertebrais em forma de cunha, cabeça proporcionalmente grande e musculatura do pescoço fraca. No trauma, ela pode se deslocar ou se alongar bastante e voltar sozinha para o lugar. A medula não tem essa elasticidade e se lesa no caminho. Quando a imagem é feita, a coluna já está alinhada.\n\nQuanto à localização, as grandes séries pediátricas mostram predomínio da **coluna cervical**, em especial nas crianças menores, em que o fulcro de movimento do pescoço fica mais alto. Lesões torácicas existem, muitas vezes ligadas a traumas de alta energia, e tendem a ser mais graves, mas são menos frequentes. Por isso este gabarito, que marcou a coluna torácica, merece a ressalva do alerta.\n\nHoje a ressonância mostra alguma alteração (edema, sangramento na medula, lesão de ligamentos ou de disco) na maioria desses pacientes, e alguns autores reservam o termo para quando até a ressonância é normal. Dois cuidados práticos: o déficit pode aparecer de forma tardia, horas ou dias depois do trauma, e a conduta inclui imobilização por cerca de 12 semanas e afastamento de esportes de contato.",
   "correta": "Coluna torácica, segundo o gabarito oficial. A literatura pediátrica, porém, aponta a coluna cervical como a localização mais comum da SCIWORA, como explicado no alerta.",
-  "alerta": "**Provável erro de gabarito.** Revisões pediátricas identificam a coluna cervical como o local mais comum de SCIWORA; a alternativa A deve ser conferida e provavelmente substituir B.",
+  "alerta": "**Provável erro de gabarito.** Revisões pediátricas identificam a coluna cervical como o local mais comum de SCIWORA; a alternativa A deve ser conferida e provavelmente substituir B.\n\nDivergência na compilação SBOT-SP, questão 204: o material assinala A; o gabarito já existente no acervo é B e foi preservado. A marcação do material não foi promovida a gabarito oficial.",
   "referencias": [
    "Pediatric Cervical Spine Injuries and SCIWORA: WFNS Spine Committee Recommendations. Neurospine. 2020;17:797-808. https://pmc.ncbi.nlm.nih.gov/articles/PMC7788416/",
    "Carroll T et al. Spinal cord injuries without radiologic abnormality in children: systematic review. Spinal Cord. 2015;53:842-848."
@@ -6300,5 +6300,35 @@
   ],
   "geradoEm": "2026-10-07",
   "conferido": false
+ },
+ "coluna-0490": {
+  "conceito": "A fratura de Chance é uma lesão de flexão-distração: o tronco avança sobre um ponto de apoio anterior, enquanto os elementos posteriores são submetidos a tração. Na variante transóssea, o traço atravessa os elementos posteriores e o corpo vertebral; corresponde à lesão B1 da classificação AO. Lesões ligamentares por mecanismo semelhante não devem ser chamadas indiscriminadamente de B1.\n\nA distribuição clássica envolve a transição toracolombar e a região lombar superior. A altura do cinto e a anatomia do paciente modificam o nível, especialmente na criança. O mecanismo também exige investigação de lesões abdominais. O nível anatômico ajuda a reconhecer o padrão, mas não substitui a avaliação da integridade ligamentar, do alinhamento e do estado neurológico.",
+  "correta": "A região lombar superior é a localização clássica assinalada. Ela participa da transição entre a região torácica relativamente rígida e a coluna lombar mais móvel, sobre a qual atuam as forças do cinto. A concentração de flexão e tração explica o padrão, e a suspeita obriga a avaliar também o abdome.",
+  "incorretas": {
+   "A": "A região torácica superior não é a localização clássica. Ela possui contenção adicional da caixa torácica e está distante do ponto de apoio habitual do cinto abdominal. Isso não torna impossível uma lesão por distração nesse segmento, mas não é o padrão solicitado pelo enunciado.",
+   "B": "A região torácica inferior integra a transição toracolombar e pode ser acometida. Contudo, a resposta anatômica clássica entre as opções é a região lombar superior. Não se deve transformar essa escolha de prova em exclusão de fraturas por distração acima de L1.",
+   "D": "A região lombar inferior não é a localização clássica da fratura por cinto. O ponto importante é a concentração de movimento e de forças na transição toracolombar e no segmento lombar superior. O nível pode variar, mas essa variação não transforma a região inferior na resposta padrão."
+  },
+  "referencias": [
+   "AO Surgery Reference. B1 Transosseous tension band disruption / Chance fracture. https://surgeryreference.aofoundation.org/spine/trauma/thoracolumbar/b1/definition"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "provavel": "C"
+ },
+ "coluna-0491": {
+  "conceito": "O ângulo de Cobb mede a inclinação da curva no plano coronal. Escolhem-se as vértebras terminais mais inclinadas, superior e inferior. Traça-se uma linha no platô superior da vértebra terminal superior e outra no platô inferior da terminal inferior; o ângulo entre as linhas, ou entre suas perpendiculares, é a medida.\n\nA vértebra apical é a mais lateralmente desviada e frequentemente a mais rodada, mas não fornece os dois limites dessa medida. O fio de prumo de C7 avalia equilíbrio global, outro parâmetro. Comparações seriadas exigem posição radiográfica e seleção de vértebras consistentes, pois pequenas diferenças podem refletir variação de medida, sem verdadeira progressão.",
+  "correta": "Essa é a seleção correta dos platôs. A curva inteira fica delimitada pelas duas vértebras terminais mais inclinadas. Podem-se prolongar as linhas diretamente ou usar perpendiculares quando o encontro extrapola a imagem; a geometria produz o mesmo ângulo.",
+  "incorretas": {
+   "A": "A alternativa utiliza as faces internas dos limites vertebrais, invertendo os platôs convencionais. A técnica padronizada usa os platôs externos: superior na terminal superior e inferior na terminal inferior. Padronização evita comparar valores obtidos por critérios diferentes.",
+   "C": "Os dois platôs da vértebra apical avaliam apenas sua própria orientação ou deformidade, não a extensão angular da curva. O ápice pode servir à avaliação de rotação e morfologia. Cobb requer os limites superior e inferior da curva.",
+   "D": "Pedículos ajudam a estimar rotação vertebral, enquanto o fio de prumo de C7 informa equilíbrio do tronco. São medidas complementares, com objetivos distintos. A alternativa reúne referências úteis para escoliose, mas não as empregadas no ângulo de Cobb."
+  },
+  "referencias": [
+   "POSNA. Congenital Scoliosis, medidas radiográficas. https://posna.org/physician-education/study-guide/congenital-scoliosis"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "provavel": "B"
  }
 }

@@ -1,7 +1,7 @@
 {
   "tema": "Ortopedia pediátrica",
   "slug": "pediatria",
-  "geradoEm": "2026-09-05T15:37:12+00:00",
+  "geradoEm": "2026-10-07",
   "questoes": [
     {
       "id": "pediatria-0001",
@@ -95,8 +95,8 @@
       "subtemas": [
         "Paralisia cerebral"
       ],
-      "prova": "TARO",
-      "ano": 2020,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "Na paralisia cerebral, o tipo atetoide apresenta acometimento no nível:",
       "imagens": [],
@@ -127,9 +127,9 @@
       "revisado": false,
       "subtemasPendentes": false,
       "origem": {
-        "arquivo": "TARO-2020.pdf",
-        "pagina": 10,
-        "numeroOriginal": 26
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 65,
+        "numeroOriginal": 276
       }
     },
     {
@@ -220,8 +220,8 @@
       "subtemas": [
         "Mielomeningocele"
       ],
-      "prova": "TARO",
-      "ano": 2020,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "Na Mielomeningocele, a presença de medula presa na ressonância magnética é:",
       "imagens": [],
@@ -252,9 +252,9 @@
       "revisado": false,
       "subtemasPendentes": false,
       "origem": {
-        "arquivo": "TARO-2020.pdf",
-        "pagina": 11,
-        "numeroOriginal": 30
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 67,
+        "numeroOriginal": 286
       }
     },
     {
@@ -711,8 +711,8 @@
       "subtemas": [
         "Doença de Legg-Calvé-Perthes"
       ],
-      "prova": "TARO",
-      "ano": 2019,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "Na doença de Legg-Calve-Perthes, a classificação de Hering baseia-se na radiografia:",
       "imagens": [],
@@ -741,7 +741,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 65,
+        "numeroOriginal": 275
+      }
     },
     {
       "id": "pediatria-0019",
@@ -3772,8 +3777,8 @@
       "subtemas": [
         "Maus-tratos"
       ],
-      "prova": "TEOT",
-      "ano": 2022,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "Na síndrome dos maus-tratos da criança, de acordo com KLEINMAN, é considerada uma lesão esquelética com alta especificidade a fratura",
       "imagens": [],
@@ -3802,7 +3807,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 66,
+        "numeroOriginal": 283
+      }
     },
     {
       "id": "pediatria-0098",
@@ -3848,8 +3858,8 @@
       "subtemas": [
         "Sinovite transitória e artrite séptica do quadril"
       ],
-      "prova": "TEOT",
-      "ano": 2022,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "A sinovite transitória do quadril acomete mais frequentemente",
       "imagens": [],
@@ -3878,7 +3888,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 63,
+        "numeroOriginal": 271
+      }
     },
     {
       "id": "pediatria-0100",
@@ -6664,11 +6679,10 @@
       "id": "pediatria-0175",
       "tema": "Ortopedia pediátrica",
       "subtemas": [
-        "Genuvaro, genuvalgo e torções",
         "Pseudartrose congênita da tíbia e deformidades da perna"
       ],
-      "prova": "TEOT",
-      "ano": 2023,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "A pseudartrose congênita da tíbia está associada à deformidade angular do tipo",
       "imagens": [],
@@ -6699,9 +6713,9 @@
       "revisado": false,
       "subtemasPendentes": false,
       "origem": {
-        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
-        "pagina": 13,
-        "numeroOriginal": 46
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 66,
+        "numeroOriginal": 284
       }
     },
     {
@@ -7983,7 +7997,7 @@
       "subtemas": [
         "Paralisia cerebral"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Em relação as condições abaixo qual delas predispões a paralisia cerebral?",
@@ -8013,7 +8027,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 11,
+        "numeroOriginal": 36
+      }
     },
     {
       "id": "pediatria-0237",
@@ -8021,7 +8040,7 @@
       "subtemas": [
         "Paralisia cerebral"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "A liberação do psoas é utilizada no tratamento da contratura em flexo do quadril nos pacientes com PC, quando esta flexão é até quantos graus?",
@@ -8051,7 +8070,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 11,
+        "numeroOriginal": 37
+      }
     },
     {
       "id": "pediatria-0238",
@@ -8059,7 +8083,7 @@
       "subtemas": [
         "Tíbia vara (Blount)"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "A figura abaixo corresponde a qual de tipo de osteotomia utilizada no tratamento da tibia vara de Blount?",
@@ -8096,7 +8120,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 11,
+        "numeroOriginal": 39
+      }
     },
     {
       "id": "pediatria-0239",
@@ -8105,7 +8134,7 @@
         "Desenvolvimento neuropsicomotor",
         "Artrogripose e doenças neuromusculares"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Em relação a Distrofia muscular de Duchenne,qual afirmação é verdadeira?",
@@ -8135,7 +8164,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 12,
+        "numeroOriginal": 40
+      }
     },
     {
       "id": "pediatria-0240",
@@ -8143,7 +8177,7 @@
       "subtemas": [
         "Displasia do desenvolvimento do quadril"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Nos pacientes com displasia do desenvolvimento do quadril, os que evoluem com luxação posterior apresentam tensão em qual grupo muscular?",
@@ -8173,7 +8207,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 12,
+        "numeroOriginal": 41
+      }
     },
     {
       "id": "pediatria-0241",
@@ -8850,11 +8889,10 @@
       "id": "pediatria-0264",
       "tema": "Ortopedia pediátrica",
       "subtemas": [
-        "Desenvolvimento neuropsicomotor",
         "Genuvaro, genuvalgo e torções"
       ],
-      "prova": "TARO",
-      "ano": 2011,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "Na criança, o valgo fisiológico máximo do joelho ocorre na idade compreendida entre",
       "imagens": [],
@@ -8883,7 +8921,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 61,
+        "numeroOriginal": 262
+      }
     },
     {
       "id": "pediatria-0265",
@@ -10125,9 +10168,9 @@
       "id": "pediatria-0310",
       "tema": "Ortopedia pediátrica",
       "subtemas": [
-        "Genuvaro, genuvalgo e torções"
+        "Coxa vara do desenvolvimento"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "No quadril pediátrico a imagem abaixo corresponde a",
@@ -10164,16 +10207,20 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 31,
+        "numeroOriginal": 124
+      }
     },
     {
       "id": "pediatria-0311",
       "tema": "Ortopedia pediátrica",
       "subtemas": [
-        "Desenvolvimento neuropsicomotor",
         "Genuvaro, genuvalgo e torções"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "O valor do ângulo coxa pé, no perfil rotacional do membro inferior, aos 2 e 8 anos são, em média, respectivamente",
@@ -10203,15 +10250,20 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 32,
+        "numeroOriginal": 127
+      }
     },
     {
       "id": "pediatria-0312",
       "tema": "Ortopedia pediátrica",
       "subtemas": [
-        "Genuvaro, genuvalgo e torções"
+        "Pseudartrose congênita da tíbia e deformidades da perna"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na pseudoartrose congênita de tíbia, segundo a classificação de BOYD, o tipo de pior prognóstico é",
@@ -10241,7 +10293,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 32,
+        "numeroOriginal": 128
+      }
     },
     {
       "id": "pediatria-0313",
@@ -10249,7 +10306,7 @@
       "subtemas": [
         "Osteogênese imperfeita"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na osteogênese imperfeita, segundo a classificação de SILLENCE, o tipo I é caracterizado por",
@@ -10279,7 +10336,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 32,
+        "numeroOriginal": 130
+      }
     },
     {
       "id": "pediatria-0314",
@@ -10327,7 +10389,7 @@
       "subtemas": [
         "Displasia do desenvolvimento do quadril"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na displasia do desenvolvimento do quadril, o ângulo demonstrado abaixo é",
@@ -10364,16 +10426,21 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 35,
+        "numeroOriginal": 142
+      }
     },
     {
       "id": "pediatria-0316",
       "tema": "Ortopedia pediátrica",
       "subtemas": [
-        "Outras doenças congênitas",
-        "Outros temas de ortopedia pediátrica"
+        "Mão da criança",
+        "Outras doenças congênitas"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na mão torta radial, o radio mais fino e curto que a ulna e sem fise de crescimento, segundo BAYNE e KLUG, caracteriza o tipo",
@@ -10403,7 +10470,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 38,
+        "numeroOriginal": 158
+      }
     },
     {
       "id": "pediatria-0317",
@@ -10450,7 +10522,7 @@
       "subtemas": [
         "Mielomeningocele"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na mielomeningocele recomenda-se que a bolsa deva ser fechada cirurgicamente",
@@ -10480,7 +10552,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 43,
+        "numeroOriginal": 181
+      }
     },
     {
       "id": "pediatria-0319",
@@ -10488,7 +10565,7 @@
       "subtemas": [
         "Displasia do desenvolvimento do quadril"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na radiografia da bacia pediátrica, o índice de REIMERS é utilizado em pacientes com",
@@ -10518,7 +10595,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 45,
+        "numeroOriginal": 191
+      }
     },
     {
       "id": "pediatria-0320",
@@ -10526,7 +10608,7 @@
       "subtemas": [
         "Marcha na criança"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na análise da marcha, a distância entre os pontos de contato de um pé e a repetição desse evento com o mesmo pé é conhecido por",
@@ -10556,7 +10638,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 46,
+        "numeroOriginal": 194
+      }
     },
     {
       "id": "pediatria-0321",
@@ -10565,7 +10652,7 @@
         "Osteocondroses",
         "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "A osteocondrite dissecante de cotovelo é mais observada em atletas de",
@@ -10595,7 +10682,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 47,
+        "numeroOriginal": 195
+      }
     },
     {
       "id": "pediatria-0322",
@@ -10603,7 +10695,7 @@
       "subtemas": [
         "Doença de Legg-Calvé-Perthes"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na doença de LEGG-CALVÉ-PERTHES, a classificação baseada no desfecho radiográfico da doença é a de",
@@ -10633,16 +10725,20 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 47,
+        "numeroOriginal": 196
+      }
     },
     {
       "id": "pediatria-0323",
       "tema": "Ortopedia pediátrica",
       "subtemas": [
-        "Genuvaro, genuvalgo e torções",
-        "Pseudartrose congênita da tíbia e deformidades da perna"
+        "Outras doenças congênitas"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "A doença congênita femoral está comumente relacionada com",
@@ -10672,7 +10768,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 47,
+        "numeroOriginal": 198
+      }
     },
     {
       "id": "pediatria-0326",
@@ -13806,8 +13907,8 @@
       "subtemas": [
         "Displasia do desenvolvimento do quadril"
       ],
-      "prova": "TARO",
-      "ano": 2011,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "O principal sinal da displasia do desenvolvimento do quadril na criança com dois anos de idade é",
       "imagens": [],
@@ -13836,7 +13937,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 62,
+        "numeroOriginal": 268
+      }
     },
     {
       "id": "pediatria-0418",
@@ -15263,10 +15369,10 @@
       "id": "pediatria-0453",
       "tema": "Ortopedia pediátrica",
       "subtemas": [
-        "Genuvaro, genuvalgo e torções"
+        "Outras doenças congênitas"
       ],
-      "prova": "TEOT",
-      "ano": 2023,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "No defeito femoral focal proximal (DFFP), a imagem a seguir, levando em consideração a classificação de AITKEN, corresponde ao tipo",
       "imagens": [
@@ -15306,9 +15412,9 @@
       "revisado": false,
       "subtemasPendentes": false,
       "origem": {
-        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
-        "pagina": 5,
-        "numeroOriginal": 10
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 61,
+        "numeroOriginal": 264
       }
     },
     {
@@ -15317,8 +15423,8 @@
       "subtemas": [
         "Epifisiólise proximal do fêmur"
       ],
-      "prova": "TARO",
-      "ano": 2010,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "A classificação de Loder para a epifisiólise proximal do fêmur é relacionada:",
       "imagens": [],
@@ -15349,9 +15455,9 @@
       "revisado": false,
       "subtemasPendentes": false,
       "origem": {
-        "arquivo": "taro2010.pdf",
-        "pagina": 3,
-        "numeroOriginal": 5
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 62,
+        "numeroOriginal": 265
       }
     },
     {
@@ -15360,8 +15466,8 @@
       "subtemas": [
         "Epifisiólise proximal do fêmur"
       ],
-      "prova": "TARO",
-      "ano": 2020,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "Na epifisiolise proximal do fêmur, são fatores biomecânicos associados à etiologia",
       "imagens": [],
@@ -15392,9 +15498,9 @@
       "revisado": false,
       "subtemasPendentes": false,
       "origem": {
-        "arquivo": "TARO-2020.pdf",
-        "pagina": 11,
-        "numeroOriginal": 28
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 62,
+        "numeroOriginal": 266
       }
     },
     {
@@ -15403,8 +15509,8 @@
       "subtemas": [
         "Displasia do desenvolvimento do quadril"
       ],
-      "prova": "TARO",
-      "ano": 2013,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "Órtese de PAVLIK, quando colocada em hiperflexão, tem como principal complicação a",
       "imagens": [],
@@ -15433,7 +15539,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 62,
+        "numeroOriginal": 267
+      }
     },
     {
       "id": "pediatria-0457",
@@ -15478,9 +15589,9 @@
       "id": "pediatria-0459",
       "tema": "Ortopedia pediátrica",
       "subtemas": [
-        "Genuvaro, genuvalgo e torções"
+        "Coxa vara do desenvolvimento"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Os sinais clínicos mais observados nos pacientes com Coxa Vara do Desenvolvimento, são:",
@@ -15510,7 +15621,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 63,
+        "numeroOriginal": 270
+      }
     },
     {
       "id": "pediatria-0460",
@@ -15635,7 +15751,7 @@
       "subtemas": [
         "Pé torto congênito"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Os músculos que mais contribuem para a deformidade do pé torto congênito são:",
@@ -15665,7 +15781,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 65,
+        "numeroOriginal": 277
+      }
     },
     {
       "id": "pediatria-0467",
@@ -15673,8 +15794,8 @@
       "subtemas": [
         "Pé torto congênito"
       ],
-      "prova": "TEOT",
-      "ano": 2023,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "Na correção do pé torto congênito com o método de PONSETI, após a retirada do gesso, a órtese de abdução deve ser mantida em uso contínuo por 3 a 4 meses com rotação externa do pé em",
       "imagens": [],
@@ -15705,9 +15826,9 @@
       "revisado": false,
       "subtemasPendentes": false,
       "origem": {
-        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
-        "pagina": 8,
-        "numeroOriginal": 24
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 65,
+        "numeroOriginal": 279
       }
     },
     {
@@ -20165,10 +20286,10 @@
       "id": "pediatria-0580",
       "tema": "Ortopedia pediátrica",
       "subtemas": [
-        "Joelho da criança"
+        "Fraturas do fêmur e da perna na criança"
       ],
-      "prova": "TEOT",
-      "ano": 2023,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "Na fratura da tuberosidade anterior da tíbia na criança, a lesão meniscal está mais frequentemente associada, segundo à classificação de WATSON-JONES modificada por OGDEN, ao tipo",
       "imagens": [],
@@ -20199,9 +20320,9 @@
       "revisado": false,
       "subtemasPendentes": false,
       "origem": {
-        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
-        "pagina": 22,
-        "numeroOriginal": 86
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 56,
+        "numeroOriginal": 240
       }
     },
     {
@@ -20296,11 +20417,11 @@
       "id": "pediatria-0583",
       "tema": "Ortopedia pediátrica",
       "subtemas": [
-        "Fraturas do antebraço e punho na criança",
+        "Mão da criança",
         "Lesões fisárias"
       ],
-      "prova": "TEOT",
-      "ano": 2023,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "A fratura da falange proximal na criança devido à avulsão dos ligamentos colaterais metacarpofalangianos é, quase exclusivamente, do tipo",
       "imagens": [],
@@ -20331,9 +20452,9 @@
       "revisado": false,
       "subtemasPendentes": false,
       "origem": {
-        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
-        "pagina": 24,
-        "numeroOriginal": 97
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 53,
+        "numeroOriginal": 231
       }
     },
     {
@@ -21698,10 +21819,11 @@
       "id": "pediatria-0615",
       "tema": "Ortopedia pediátrica",
       "subtemas": [
+        "Fraturas do tornozelo na criança",
         "Lesões fisárias"
       ],
-      "prova": "TARO",
-      "ano": 2017,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "A fratura de TILLAUX no tornozelo de uma criança pode ser classificada como",
       "imagens": [],
@@ -21732,9 +21854,9 @@
       "revisado": false,
       "subtemasPendentes": false,
       "origem": {
-        "arquivo": "taro2017.pdf",
-        "pagina": 12,
-        "numeroOriginal": 53
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 57,
+        "numeroOriginal": 241
       }
     },
     {
@@ -23222,10 +23344,11 @@
       "id": "pediatria-0650",
       "tema": "Ortopedia pediátrica",
       "subtemas": [
+        "Fraturas do tornozelo na criança",
         "Lesões fisárias"
       ],
-      "prova": "TARO",
-      "ano": 2011,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "Na fratura triplanar do tornozelo, o fator responsável pelo padrão de lesão é",
       "imagens": [],
@@ -23256,9 +23379,9 @@
       "revisado": false,
       "subtemasPendentes": false,
       "origem": {
-        "arquivo": "taro2011.pdf",
-        "pagina": 8,
-        "numeroOriginal": 40
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 57,
+        "numeroOriginal": 242
       }
     },
     {
@@ -25524,8 +25647,8 @@
       "subtemas": [
         "Fraturas do antebraço e punho na criança"
       ],
-      "prova": "TEOT",
-      "ano": 2022,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "Na fratura em galho verde dos ossos do antebraço da criança, em diferentes níveis e com ápice dorsal, a redução deve ser realizada por meio de",
       "imagens": [],
@@ -25556,9 +25679,9 @@
       "revisado": false,
       "subtemasPendentes": false,
       "origem": {
-        "arquivo": "TEOT_2022.pdf",
-        "pagina": 49,
-        "numeroOriginal": 80
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 54,
+        "numeroOriginal": 232
       }
     },
     {
@@ -26096,10 +26219,10 @@
       "id": "pediatria-0715",
       "tema": "Ortopedia pediátrica",
       "subtemas": [
-        "Displasia do desenvolvimento do quadril"
+        "Outras deformidades do pé na criança"
       ],
-      "prova": "TARO",
-      "ano": 2020,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "No pé talo vertical, nas incidências radiográficas em AP e perfil, o ângulo de KITE está, respectivamente,",
       "imagens": [],
@@ -26130,9 +26253,9 @@
       "revisado": false,
       "subtemasPendentes": false,
       "origem": {
-        "arquivo": "TARO-2020.pdf",
-        "pagina": 5,
-        "numeroOriginal": 7
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 65,
+        "numeroOriginal": 280
       }
     },
     {
@@ -26228,8 +26351,8 @@
       "subtemas": [
         "Fraturas do pé na criança"
       ],
-      "prova": "TARO",
-      "ano": 2020,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "Na fratura dos ossos do pé da criança, é sinal radiográfico altamente sugestivo da lesão de LISFRANC, a concomitância da fratura da base do",
       "imagens": [],
@@ -26260,9 +26383,9 @@
       "revisado": false,
       "subtemasPendentes": false,
       "origem": {
-        "arquivo": "TARO-2020.pdf",
-        "pagina": 12,
-        "numeroOriginal": 33
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 57,
+        "numeroOriginal": 243
       }
     },
     {
@@ -28076,11 +28199,10 @@
       "id": "pediatria-0759",
       "tema": "Ortopedia pediátrica",
       "subtemas": [
-        "Doença de Legg-Calvé-Perthes",
-        "Displasia do desenvolvimento do quadril"
+        "Doença de Legg-Calvé-Perthes"
       ],
-      "prova": "TARO",
-      "ano": 2008,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "Na doença de LEGG-CALVÉ-PERTHES, o aspecto radiográfico de fragmentação representa",
       "imagens": [],
@@ -28113,9 +28235,9 @@
       "revisado": false,
       "subtemasPendentes": false,
       "origem": {
-        "arquivo": "taro2008.pdf",
-        "pagina": 13,
-        "numeroOriginal": 80
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 64,
+        "numeroOriginal": 273
       }
     },
     {
@@ -34969,6 +35091,769 @@
         "arquivo": "ENARE R4 do ANO 2023.pdf",
         "pagina": 13,
         "numeroOriginal": 51
+      }
+    },
+    {
+      "id": "pediatria-0923",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Fraturas do tornozelo na criança",
+        "Lesões fisárias"
+      ],
+      "prova": "SBOT-SP",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Segundo a classificação de Dias-Tachdjian a gravura abaixo corresponde a qual tipo?",
+      "imagens": [
+        {
+          "arquivo": "sbot-sp-086.png",
+          "legenda": null
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A"
+        },
+        {
+          "letra": "B",
+          "texto": "B"
+        },
+        {
+          "letra": "C",
+          "texto": "C"
+        },
+        {
+          "letra": "D",
+          "texto": "D"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 24,
+        "numeroOriginal": 86
+      }
+    },
+    {
+      "id": "pediatria-0924",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Fraturas do antebraço e punho na criança"
+      ],
+      "prova": "SBOT-SP",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "O mecanismo de fratura a seguir refere-se a qual tipo de fratura de Monteggia na criança? \"Queda com o cotovelo fletido 60° e carga longitudinal no antebraço\":",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "I"
+        },
+        {
+          "letra": "B",
+          "texto": "II"
+        },
+        {
+          "letra": "C",
+          "texto": "III"
+        },
+        {
+          "letra": "D",
+          "texto": "IV"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 24,
+        "numeroOriginal": 88
+      }
+    },
+    {
+      "id": "pediatria-0925",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Fraturas do antebraço e punho na criança"
+      ],
+      "prova": "SBOT-SP",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Na fratura de MONTEGGIA no esqueleto imaturo a imagem abaixo corresponde às classificações de",
+      "imagens": [
+        {
+          "arquivo": "sbot-sp-125.png",
+          "legenda": null
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "BADO II e LETTS A."
+        },
+        {
+          "letra": "B",
+          "texto": "BADO I e LETTS B."
+        },
+        {
+          "letra": "C",
+          "texto": "BADO II e LETTS B."
+        },
+        {
+          "letra": "D",
+          "texto": "BADO I e LETTS C."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 31,
+        "numeroOriginal": 125
+      }
+    },
+    {
+      "id": "pediatria-0926",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+      ],
+      "prova": "SBOT-SP",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Na fratura do colo do rádio isolada em uma criança de 5 anos com desvio angular de 40 graus o tratamento indicado é",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "conservador."
+        },
+        {
+          "letra": "B",
+          "texto": "redução aberta e fixação com placa e parafusos."
+        },
+        {
+          "letra": "C",
+          "texto": "redução incruenta + fixação percutânea intramedular."
+        },
+        {
+          "letra": "D",
+          "texto": "redução aberta e fixação transarticular."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 32,
+        "numeroOriginal": 126
+      }
+    },
+    {
+      "id": "pediatria-0927",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+      ],
+      "prova": "SBOT-SP",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Na fratura do cotovelo pediátrico, a lesão abaixo está comumente associada à fratura",
+      "imagens": [
+        {
+          "arquivo": "sbot-sp-192.png",
+          "legenda": null
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "da tróclea."
+        },
+        {
+          "letra": "B",
+          "texto": "do côndilo lateral do úmero."
+        },
+        {
+          "letra": "C",
+          "texto": "de olécrano."
+        },
+        {
+          "letra": "D",
+          "texto": "supracondiliana do úmero."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 45,
+        "numeroOriginal": 192
+      }
+    },
+    {
+      "id": "pediatria-0928",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Fraturas do tornozelo na criança",
+        "Lesões fisárias"
+      ],
+      "prova": "SBOT-SP",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "A fratura triplanar do tornozelo é caracterizada por ser uma",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "SALTER-HARRIS I na incidência AP e SALTER-HARRIS II no perfil."
+        },
+        {
+          "letra": "B",
+          "texto": "SALTER-HARRIS IV na incidência AP e SALTER-HARRIS III no perfil."
+        },
+        {
+          "letra": "C",
+          "texto": "SALTER-HARRIS III na incidência AP e SALTER-HARRIS II no perfil."
+        },
+        {
+          "letra": "D",
+          "texto": "SALTER-HARRIS IV na incidência AP e SALTER-HARRIS V no perfil."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 47,
+        "numeroOriginal": 197
+      }
+    },
+    {
+      "id": "pediatria-0929",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Fraturas do antebraço e punho na criança"
+      ],
+      "prova": "SBOT-SP",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "As lesões de Monteggia Bado IV são:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Relativamente raras em crianças, correspondendo a uma fratura do rádio no mesmo nível ou distal à fratura da ulna"
+        },
+        {
+          "letra": "B",
+          "texto": "Relativamente raras em crianças, correspondendo a uma fratura do rádio no mesmo nível ou proximal à fratura da ulna"
+        },
+        {
+          "letra": "C",
+          "texto": "Relativamente comuns em crianças, correspondendo a uma fratura do rádio no mesmo nível ou distal à fratura da ulna"
+        },
+        {
+          "letra": "D",
+          "texto": "Relativamente comuns em crianças, correspondendo a uma fratura do rádio no mesmo nível ou proximal à fratura da ulna"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 54,
+        "numeroOriginal": 233
+      }
+    },
+    {
+      "id": "pediatria-0930",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Fraturas do antebraço e punho na criança"
+      ],
+      "prova": "SBOT-SP",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "As lesões de Monteggia do tipo III de Bado são causadas por uma lesão em:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Varo e geralmente causa uma fratura em galho verde da ulna proximal."
+        },
+        {
+          "letra": "B",
+          "texto": "Valgo e geralmente causa uma fratura em galho verde da ulna proximal."
+        },
+        {
+          "letra": "C",
+          "texto": "Varo e geralmente causa uma fratura completa da ulna proximal."
+        },
+        {
+          "letra": "D",
+          "texto": "Valgo e geralmente causa uma fratura completa da ulna proximal."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 54,
+        "numeroOriginal": 234
+      }
+    },
+    {
+      "id": "pediatria-0931",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Fraturas supracondilianas do úmero"
+      ],
+      "prova": "SBOT-SP",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "O sinal clínico demonstrado na figura abaixo é:",
+      "imagens": [
+        {
+          "arquivo": "sbot-sp-235.png",
+          "legenda": null
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Sinal de pucker: é um sinal de dano considerável de partes moles, em que o fragmento proximal perfura o músculo braquial e acomete a derme profunda, resultando em um enrugamento da pele"
+        },
+        {
+          "letra": "B",
+          "texto": "Sinal de Kirmisson: é um sinal de dano considerável de partes moles, em que o fragmento proximal perfura o músculo braquial e acomete a derme profunda, resultando em um enrugamento da pele"
+        },
+        {
+          "letra": "C",
+          "texto": "Sinal de pucker: é um sinal de dano considerável de partes moles, em que o fragmento distal perfura o músculo braquial e acomete a derme superficial, resultando em um enrugamento da pele"
+        },
+        {
+          "letra": "D",
+          "texto": "Sinal de Kirmisson: é um sinal de dano considerável de partes moles, em que o fragmento distal perfura o músculo braquial e acomete a derme superficial, resultando em um enrugamento da pele"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 54,
+        "numeroOriginal": 235
+      }
+    },
+    {
+      "id": "pediatria-0932",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Fraturas supracondilianas do úmero"
+      ],
+      "prova": "SBOT-SP",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Nas fraturas supracondilianas do úmero de crianças Gartland 3, em que há ausência de pulso associada à lesão do nervo mediano, a conduta mais adequada é:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Observação por 10 a 15 minutos antes de qualquer decisão."
+        },
+        {
+          "letra": "B",
+          "texto": "Retirar os fios e realizar exploração arterial se o pulso não retornar rapidamente."
+        },
+        {
+          "letra": "C",
+          "texto": "Realizar Doppler arterial."
+        },
+        {
+          "letra": "D",
+          "texto": "Realizar exploração arterial imediatamente."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 55,
+        "numeroOriginal": 236
+      }
+    },
+    {
+      "id": "pediatria-0933",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+      ],
+      "prova": "SBOT-SP",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Sobre o mecanismo de trauma das lesões fisárias do côndilo lateral, assinale a alternativa correta:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Pull-off representa o mecanismo de trauma mais comum e está relacionado com mecanismo de avulsão no capítulo."
+        },
+        {
+          "letra": "B",
+          "texto": "Push-off representa o mecanismo de trauma mais comum e está relacionado com mecanismo de avulsão na tróclea."
+        },
+        {
+          "letra": "C",
+          "texto": "Pull-off representa o mecanismo de trauma mais comum e está relacionado com mecanismo de compressão na tróclea."
+        },
+        {
+          "letra": "D",
+          "texto": "Push-off representa o mecanismo de trauma mais comum e está relacionado com mecanismo de compressão no capítulo."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 55,
+        "numeroOriginal": 237
+      }
+    },
+    {
+      "id": "pediatria-0934",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Côndilo lateral, epicôndilo medial e rádio proximal na criança"
+      ],
+      "prova": "SBOT-SP",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Qual o nome da técnica a seguir, utilizada para redução das fraturas do colo do rádio em crianças?",
+      "imagens": [
+        {
+          "arquivo": "sbot-sp-238.png",
+          "legenda": null
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Patterson."
+        },
+        {
+          "letra": "B",
+          "texto": "Kaufman."
+        },
+        {
+          "letra": "C",
+          "texto": "Jeffrey."
+        },
+        {
+          "letra": "D",
+          "texto": "Israeli."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 56,
+        "numeroOriginal": 238
+      }
+    },
+    {
+      "id": "pediatria-0935",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Fraturas do fêmur e da perna na criança"
+      ],
+      "prova": "SBOT-SP",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Menino, 3 anos de idade, apresentou fratura diafisária do fêmur direito após cair do balanço no parquinho da escola. As radiografias realizadas no pronto-socorro demonstraram encurtamento de 2 cm, angulação em varo de 15° e posterior de 20°. Assinale a alternativa que contenha a melhor opção de tratamento para este paciente:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Gesso pélvico-podálico."
+        },
+        {
+          "letra": "B",
+          "texto": "Fixador externo."
+        },
+        {
+          "letra": "C",
+          "texto": "Haste intramedular anterógrada."
+        },
+        {
+          "letra": "D",
+          "texto": "Haste intramedular retrógrada."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 56,
+        "numeroOriginal": 239
+      }
+    },
+    {
+      "id": "pediatria-0936",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Displasia do desenvolvimento do quadril"
+      ],
+      "prova": "SBOT-SP",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Nomeie as linhas indicadas, na sequência (A-B-C-D-E):",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Linha de Perkins / Linha de Kleine / Arco de Shenton / índice de Wiberg / Quadrante inferolateral de Ombredanne"
+        },
+        {
+          "letra": "B",
+          "texto": "Linha de Kleine / Linha de Perkins / Quadrante inferomedial de Ombredanne / índice femoral / Arco de Shenton"
+        },
+        {
+          "letra": "C",
+          "texto": "Linha de Hilgenreiner / Linha de Perkins / Arco de Shenton / índice acetabular / Quadrante inferomedial de Ombredanne"
+        },
+        {
+          "letra": "D",
+          "texto": "Linha de Perkins / Linha de Hilgenreiner / Arco de Shenton / índice acetabular / Quadrante inferomedial de Ombredanne"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": true,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 62,
+        "numeroOriginal": 269
+      }
+    },
+    {
+      "id": "pediatria-0937",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Osteocondroses"
+      ],
+      "prova": "SBOT-SP",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Com relação às osteocondrites (OC) do pé, assinale a alternativa que melhor representa as características citadas abaixo:",
+      "imagens": [
+        {
+          "arquivo": "sbot-sp-272.png",
+          "legenda": null
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "1: Sever, 2: Köhler e 3: Freiberg."
+        },
+        {
+          "letra": "B",
+          "texto": "1: Köhler, 2: Freiberg e 3: Sever."
+        },
+        {
+          "letra": "C",
+          "texto": "1: Freiberg, 2: Sever e 3: Köhler."
+        },
+        {
+          "letra": "D",
+          "texto": "1: Köhler, 2: Sever e 3: Freiberg."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 63,
+        "numeroOriginal": 272
+      }
+    },
+    {
+      "id": "pediatria-0938",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Doença de Legg-Calvé-Perthes"
+      ],
+      "prova": "SBOT-SP",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Assinale a alternativa que contenha o melhor fator prognóstico para a doença de Legg-Calvé-Perthes:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Idade."
+        },
+        {
+          "letra": "B",
+          "texto": "Estatura."
+        },
+        {
+          "letra": "C",
+          "texto": "Obesidade."
+        },
+        {
+          "letra": "D",
+          "texto": "Gênero."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 64,
+        "numeroOriginal": 274
+      }
+    },
+    {
+      "id": "pediatria-0939",
+      "tema": "Ortopedia pediátrica",
+      "subtemas": [
+        "Pé torto congênito"
+      ],
+      "prova": "SBOT-SP",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "No pé torto congênito, os músculos e os ligamentos estão:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Hipertrofiados e espessados."
+        },
+        {
+          "letra": "B",
+          "texto": "Hipotrofiados e espessados."
+        },
+        {
+          "letra": "C",
+          "texto": "Hipertrofiados e delgados."
+        },
+        {
+          "letra": "D",
+          "texto": "Hipotrofiados e delgados."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 65,
+        "numeroOriginal": 278
       }
     }
   ]

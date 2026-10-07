@@ -1,7 +1,7 @@
 {
   "tema": "Mão e punho",
   "slug": "mao",
-  "geradoEm": "2026-09-06T00:29:54+00:00",
+  "geradoEm": "2026-10-07",
   "questoes": [
     {
       "id": "mao-0001",
@@ -3647,7 +3647,7 @@
         "Anatomia da mão e punho",
         "Lesões dos tendões extensores"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "No acesso demonstrado na imagem a seguir, o músculo indicado pela seta é o",
@@ -3684,7 +3684,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 70,
+        "numeroOriginal": 302
+      }
     },
     {
       "id": "mao-0095",
@@ -5740,8 +5745,8 @@
       "subtemas": [
         "Doença de Kienböck"
       ],
-      "prova": "TEOT",
-      "ano": 2023,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "Na doença de KIENBÖCK, a carpectomia da fileira proximal está indicada, de acordo com a classificação de LITCHMAN, para o tipo",
       "imagens": [],
@@ -5772,9 +5777,9 @@
       "revisado": false,
       "subtemasPendentes": false,
       "origem": {
-        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
-        "pagina": 3,
-        "numeroOriginal": 5
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 58,
+        "numeroOriginal": 247
       }
     },
     {
@@ -5783,8 +5788,8 @@
       "subtemas": [
         "Exame físico da mão e punho"
       ],
-      "prova": "TEOT",
-      "ano": 2023,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "Na semiologia da mão, quando a manobra de FROMENT é positiva, o paciente prende o papel usando o",
       "imagens": [],
@@ -5815,9 +5820,9 @@
       "revisado": false,
       "subtemasPendentes": false,
       "origem": {
-        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
-        "pagina": 5,
-        "numeroOriginal": 11
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 70,
+        "numeroOriginal": 301
       }
     },
     {
@@ -10376,7 +10381,7 @@
       "subtemas": [
         "Artrose do punho e artroscopia"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "A cirurgia de artroscopia do punho o portal volar pode ser realizado?",
@@ -10406,7 +10411,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 7,
+        "numeroOriginal": 19
+      }
     },
     {
       "id": "mao-0293",
@@ -10414,7 +10424,7 @@
       "subtemas": [
         "Retalhos e cobertura cutânea"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Em qual das situações abaixo o retalho tipo Cross finger pode ser indicado?",
@@ -10444,7 +10454,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 7,
+        "numeroOriginal": 20
+      }
     },
     {
       "id": "mao-0294",
@@ -10452,7 +10467,7 @@
       "subtemas": [
         "Doença de Kienböck"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "A ressecção da fileira proximal do carpo é um dos tratamentos de escolha na doença de Kienböck em qual estagio segundo a classificação de Lichtman ?",
@@ -10482,7 +10497,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 7,
+        "numeroOriginal": 21
+      }
     },
     {
       "id": "mao-0295",
@@ -10490,7 +10510,7 @@
       "subtemas": [
         "Doença de Dupuytren"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "A técnica \"Jacobsen flap\", é utilizada no tratamento da doença de Dupuytren quando esta acomete qual dedo ?",
@@ -10520,16 +10540,21 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 7,
+        "numeroOriginal": 22
+      }
     },
     {
       "id": "mao-0296",
       "tema": "Mão e punho",
       "subtemas": [
         "Exame físico da mão e punho",
-        "Neuropatia ulnar e outras compressões"
+        "Síndrome do túnel do carpo"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "A descrição a seguir corresponde a qual teste utilizado no diagnóstico da Síndrome do túnel do carpo? \"Compressão na região do carpo sobro o nervo mediano por 30 segundos\".",
@@ -10559,7 +10584,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 7,
+        "numeroOriginal": 23
+      }
     },
     {
       "id": "mao-0297",
@@ -10567,7 +10597,7 @@
       "subtemas": [
         "Outras malformações congênitas"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Qual das descrições abaixo corresponde ao tipo lll, na classificação de Tachdjian:",
@@ -10597,7 +10627,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 11,
+        "numeroOriginal": 38
+      }
     },
     {
       "id": "mao-0298",
@@ -10605,7 +10640,7 @@
       "subtemas": [
         "Fratura do rádio distal"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Quando o teardrop angle (ângulo da lágrima) está em valores aproximados de 45º, pode indicar uma lesão em qual região?",
@@ -10635,7 +10670,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 19,
+        "numeroOriginal": 72
+      }
     },
     {
       "id": "mao-0299",
@@ -10643,7 +10683,7 @@
       "subtemas": [
         "Instabilidade do carpo"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Segundo a classificação de Mayfield, a ruptura do ligamento lunopiramidal, ocorre em qual estágio?",
@@ -10673,16 +10713,20 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 20,
+        "numeroOriginal": 75
+      }
     },
     {
       "id": "mao-0300",
       "tema": "Mão e punho",
       "subtemas": [
-        "Fraturas dos metacarpos e falanges",
-        "Fraturas do escafoide e do carpo"
+        "Anatomia da mão e punho"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "A ossificação do escafoide nas crianças ocorre geralmente em qual idade?",
@@ -10712,7 +10756,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 23,
+        "numeroOriginal": 84
+      }
     },
     {
       "id": "mao-0301",
@@ -10720,7 +10769,7 @@
       "subtemas": [
         "Retalhos e cobertura cutânea"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Em qual das situações abaixo o retalho de rotação axial do músculo gastrocnêmio medial não é indicado para cobertura de partes moles?",
@@ -10750,7 +10799,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 26,
+        "numeroOriginal": 98
+      }
     },
     {
       "id": "mao-0302",
@@ -11732,7 +11786,7 @@
       "subtemas": [
         "Lesões ligamentares dos dedos"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "A lesão de Stener ocorre quando há lesão do ligamento:",
@@ -11762,7 +11816,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 52,
+        "numeroOriginal": 225
+      }
     },
     {
       "id": "mao-0332",
@@ -13140,7 +13199,7 @@
       "subtemas": [
         "Biomecânica da mão"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na biomecânica do punho, articulação mediocárpica e radiocárpica representam respectivamente",
@@ -13170,7 +13229,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 37,
+        "numeroOriginal": 150
+      }
     },
     {
       "id": "mao-0394",
@@ -13179,7 +13243,7 @@
         "Anatomia da mão e punho",
         "Lesões dos tendões extensores"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na anatomia da mão e punho, os tendões extensor radial curto do carpo, extensor próprio indicador, extensor comum dos dedos e extensor próprio do dedo mínimo estão respectivamente, nos compartimentos extensores",
@@ -13209,16 +13273,21 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 37,
+        "numeroOriginal": 151
+      }
     },
     {
       "id": "mao-0395",
       "tema": "Mão e punho",
       "subtemas": [
-        "Lesões de nervos periféricos",
+        "Neuropatia ulnar e outras compressões",
         "Exame físico da mão e punho"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na síndrome compressiva do membro superior, o paciente com teste de FROMENT positivo é classificado por MCGOWAN como tipo",
@@ -13248,16 +13317,21 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 37,
+        "numeroOriginal": 152
+      }
     },
     {
       "id": "mao-0396",
       "tema": "Mão e punho",
       "subtemas": [
-        "Lesões de nervos periféricos",
+        "Síndrome do túnel do carpo",
         "Exame físico da mão e punho"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na síndrome do túnel do carpo o teste mais preciso para determinar o diagnóstico da doença na fase inicial é o",
@@ -13287,7 +13361,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 38,
+        "numeroOriginal": 153
+      }
     },
     {
       "id": "mao-0397",
@@ -13295,7 +13374,7 @@
       "subtemas": [
         "Doença de Dupuytren"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "A doença de DUPUYTREN é mais frequente e grave em pessoas com",
@@ -13325,15 +13404,20 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 38,
+        "numeroOriginal": 154
+      }
     },
     {
       "id": "mao-0398",
       "tema": "Mão e punho",
       "subtemas": [
-        "Deformidades dos dedos"
+        "Mão reumatoide"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "No polegar reumatóide, segundo a classificação de NALEBUFF, a deformidade em \"colo de cisne\" é característica do tipo",
@@ -13363,7 +13447,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 38,
+        "numeroOriginal": 155
+      }
     },
     {
       "id": "mao-0399",
@@ -13371,7 +13460,7 @@
       "subtemas": [
         "Doença de Kienböck"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "No tratamento da doença de KIEMBOCK, a técnica descrita por ALMQUIST consiste",
@@ -13401,16 +13490,20 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 38,
+        "numeroOriginal": 156
+      }
     },
     {
       "id": "mao-0400",
       "tema": "Mão e punho",
       "subtemas": [
-        "Deformidades dos dedos",
         "Sindactilia e polidactilia"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na polidactilia radial, segundo a classificação de WASSEL, a deformidade mais frequente é o tipo",
@@ -13440,7 +13533,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 38,
+        "numeroOriginal": 157
+      }
     },
     {
       "id": "mao-0401",
@@ -13448,7 +13546,7 @@
       "subtemas": [
         "Fibrocartilagem triangular e punho ulnar"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "A lesão traumática central da fibrocartilagem triangular, segundo PALMER, é característica do tipo",
@@ -13478,7 +13576,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 40,
+        "numeroOriginal": 163
+      }
     },
     {
       "id": "mao-0402",
@@ -13486,7 +13589,7 @@
       "subtemas": [
         "Lesões dos tendões flexores"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na figura abaixo demonstra uma tenorrafia pela técnica descrita por",
@@ -13523,7 +13626,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 40,
+        "numeroOriginal": 164
+      }
     },
     {
       "id": "mao-0403",
@@ -13531,7 +13639,7 @@
       "subtemas": [
         "Anatomia da mão e punho"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na figura abaixo, os músculos identificados nas setas com a letra A e B são inervados respectivamente pelos nervos",
@@ -13568,7 +13676,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 40,
+        "numeroOriginal": 165
+      }
     },
     {
       "id": "mao-0404",
@@ -19018,8 +19131,8 @@
       "subtemas": [
         "Outras malformações congênitas"
       ],
-      "prova": "TEOT",
-      "ano": 2022,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "Na distrofia muscular facioescapuloumeral, o músculo com a função preservada é o",
       "imagens": [],
@@ -19048,7 +19161,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 67,
+        "numeroOriginal": 287
+      }
     },
     {
       "id": "mao-0549",
@@ -19056,7 +19174,7 @@
       "subtemas": [
         "Anatomia da mão e punho"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Quais músculos lumbricais são bipenados:",
@@ -19086,16 +19204,20 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 70,
+        "numeroOriginal": 299
+      }
     },
     {
       "id": "mao-0550",
       "tema": "Mão e punho",
       "subtemas": [
-        "Anatomia da mão e punho",
-        "Outros temas da mão"
+        "Anatomia da mão e punho"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "As conexões de Richie-Cannie ocorrem entre os nervos",
@@ -19125,7 +19247,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 70,
+        "numeroOriginal": 300
+      }
     },
     {
       "id": "mao-0551",
@@ -50723,6 +50850,223 @@
         "arquivo": "SES-DF 2022 - Ortopedia e Traumatologia em Cirurgia da Coluna R4",
         "pagina": 7,
         "numeroOriginal": 120
+      }
+    },
+    {
+      "id": "mao-1259",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Imagem da mão e punho",
+        "Fraturas do escafoide e do carpo"
+      ],
+      "prova": "SBOT-SP",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "A radiografia de punho na incidência de ZITER é uma imagem adicional que auxilia no diagnóstico da",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "fratura de escafoide."
+        },
+        {
+          "letra": "B",
+          "texto": "instabilidade escafossemilunar."
+        },
+        {
+          "letra": "C",
+          "texto": "fratura do hâmulo do hamato."
+        },
+        {
+          "letra": "D",
+          "texto": "fratura do pisiforme."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 39,
+        "numeroOriginal": 161
+      }
+    },
+    {
+      "id": "mao-1260",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Fratura do rádio distal"
+      ],
+      "prova": "SBOT-SP",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Segundo a classificação de Fernandez para as fraturas do rádio distal, as fraturas por avulsão ligamentar do processo estiloide da ulna e do rádio são do tipo:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "1"
+        },
+        {
+          "letra": "B",
+          "texto": "2"
+        },
+        {
+          "letra": "C",
+          "texto": "3"
+        },
+        {
+          "letra": "D",
+          "texto": "4"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 51,
+        "numeroOriginal": 220
+      }
+    },
+    {
+      "id": "mao-1261",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Lesões dos tendões extensores",
+        "Deformidades dos dedos"
+      ],
+      "prova": "SBOT-SP",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "A lesão em dedo martelo da mão com arrancamento ósseo e queda da falange distal <30°, de acordo com a classificação de Albertoni, é do tipo:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A1"
+        },
+        {
+          "letra": "B",
+          "texto": "A2"
+        },
+        {
+          "letra": "C",
+          "texto": "B1"
+        },
+        {
+          "letra": "D",
+          "texto": "B2"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 52,
+        "numeroOriginal": 223
+      }
+    },
+    {
+      "id": "mao-1262",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Lesões ligamentares dos dedos"
+      ],
+      "prova": "SBOT-SP",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "A principal causa de irredutibilidade nas luxações fechadas da articulação interfalangeana distal dos dedos da mão é:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Interposição da placa volar."
+        },
+        {
+          "letra": "B",
+          "texto": "Interposição do tendão flexor profundo dos dedos."
+        },
+        {
+          "letra": "C",
+          "texto": "Tamanho do fragmento ósseo."
+        },
+        {
+          "letra": "D",
+          "texto": "Interposição do ligamento colateral do dedo."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 52,
+        "numeroOriginal": 224
+      }
+    },
+    {
+      "id": "mao-1263",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Deficiências longitudinais e mão torta"
+      ],
+      "prova": "SBOT-SP",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Pela classificação de Swanson para malformação congênita, a mão torta radial é considerada uma:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Anomalia generalizada do esqueleto."
+        },
+        {
+          "letra": "B",
+          "texto": "Falha de diferenciação das partes."
+        },
+        {
+          "letra": "C",
+          "texto": "Falha de formação das partes."
+        },
+        {
+          "letra": "D",
+          "texto": "Duplicação."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 66,
+        "numeroOriginal": 285
       }
     }
   ]

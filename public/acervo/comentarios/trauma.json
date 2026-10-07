@@ -5899,7 +5899,7 @@
    "B": "**Entre dois fibulares.** O intervalo entre os fibulares longo e curto não leva à tíbia posterior.",
    "C": "**Descrição clássica.** Fibulares e flexor longo do hálux é o intervalo mais citado para a via posterolateral, mas a banca adotou outra resposta."
   },
-  "alerta": "O gabarito aponta o intervalo entre o FLEXOR LONGO DO HÁLUX e o FLEXOR LONGO DOS DEDOS para o acesso póstero-lateral ao pilão tibial. A `trauma-0161`, neste mesmo acervo, responde a uma pergunta equivalente com a combinação TENDÕES FIBULARES e FLEXOR LONGO DO HÁLUX, que é, de fato, a descrição mais amplamente citada na literatura de vias de acesso para essa via específica (o intervalo entre o flexor longo do hálux e o flexor longo dos dedos fica mais profundo e medial, correspondendo antes a uma exploração do compartimento posterior profundo do que à via posterolateral clássica). O item merece conferência.",
+  "alerta": "O gabarito aponta o intervalo entre o FLEXOR LONGO DO HÁLUX e o FLEXOR LONGO DOS DEDOS para o acesso póstero-lateral ao pilão tibial. A `trauma-0161`, neste mesmo acervo, responde a uma pergunta equivalente com a combinação TENDÕES FIBULARES e FLEXOR LONGO DO HÁLUX, que é, de fato, a descrição mais amplamente citada na literatura de vias de acesso para essa via específica (o intervalo entre o flexor longo do hálux e o flexor longo dos dedos fica mais profundo e medial, correspondendo antes a uma exploração do compartimento posterior profundo do que à via posterolateral clássica). O item merece conferência.\n\nDivergência na compilação SBOT-SP, questão 109: o material assinala C; o gabarito já existente no acervo é D e foi preservado. A marcação do material não foi promovida a gabarito oficial.",
   "conceito": "**As vias do pilão tibial.** A fratura do **pilão** (plafond tibial) é uma lesão articular de **alta energia** por **carga axial**, com grande sofrimento de partes moles. O tratamento é em **etapas**: fixador externo transarticular e, depois que a pele permite (sinal da ruga, bolhas epitelizadas, em geral 10 a 21 dias), fixação definitiva. A **via** é escolhida pela localização dos fragmentos na **tomografia**: anteromedial, anterolateral, medial ou **posterolateral**.\n\n**A via posterolateral clássica.** Com o paciente em decúbito ventral, a incisão fica entre o **tendão calcâneo** e a borda posterior da **fíbula**. O intervalo é entre os **tendões fibulares**, lateralmente, e o **flexor longo do hálux**, medialmente. Afastando o flexor longo do hálux para medial, expõe-se a **face posterior** da tíbia distal, o fragmento **posterolateral** (Volkmann) e, pela mesma incisão, a **fíbula**. O nervo **sural** e a veia safena parva ficam no subcutâneo e devem ser protegidos.\n\n**A via posteromedial.** Entre o **flexor longo do hálux** e o **flexor longo dos dedos** (ou medial ao tibial posterior), abordando o fragmento **posteromedial** e o maléolo medial por trás, com o **feixe neurovascular tibial posterior** entre os tendões, que deve ser protegido. A banca indicou esse intervalo como resposta.\n\n**Os princípios da fixação.** Restaurar o **comprimento** (muitas vezes pela fíbula), reconstruir a **superfície articular** (degraus abaixo de 2 mm), preencher o defeito **metafisário** com enxerto e fixar com placas de **suporte** na direção do desvio. Complicações: necrose de pele, infecção, artrose e pseudartrose.\n\n**Na prova:** para esta banca, a via **posterolateral** do pilão usa o intervalo **flexor longo do hálux e flexor longo dos dedos**; a descrição clássica cita **fibulares e flexor longo do hálux**.",
   "correta": "**Flexor longo do hálux e flexor longo dos dedos.** Foi o intervalo indicado pela banca; na descrição mais citada da via posterolateral, o intervalo é entre os fibulares e o flexor longo do hálux, e o intervalo entre os flexores longos corresponde à abordagem posteromedial.",
   "geradoEm": "2026-09-30",
@@ -12896,5 +12896,112 @@
   ],
   "geradoEm": "2026-10-07",
   "conferido": false
+ },
+ "trauma-1292": {
+  "conceito": "A visibilidade de uma fratura depende da orientação do traço em relação ao feixe e da sobreposição óssea. Na fratura vertical ou sagital da patela, o perfil pode superpor os fragmentos, e a projeção anteroposterior pode não demonstrar um traço pouco desviado. A incidência axial permite observar as facetas e o plano sagital de separação.\n\nO estudo da patela costuma combinar anteroposterior, perfil e axial, quando a dor e a condição do paciente permitem posicionamento seguro. A questão privilegia a incidência axial para evitar perder uma fratura vertical. Isso não significa que a fratura seja invisível em todo AP nem que o perfil seja dispensável: ele também avalia deslocamento, altura da patela e aparelho extensor.",
+  "correta": "É a resposta assinalada e destaca a utilidade da axial quando o AP não revela claramente a fratura. Ela separa as facetas e evidencia o traço sagital, auxiliando também na avaliação da congruência. A interpretação deve manter o conjunto de incidências, sem estabelecer uma superioridade absoluta para todos os casos.",
+  "incorretas": {
+   "A": "A sobreposição no perfil pode realmente dificultar a percepção de uma fratura vertical. A incidência AP pode ajudar, portanto a primeira parte não é uma falsidade absoluta. O problema é apresentá-la como complemento suficiente, sem a axial que demonstra diretamente a separação sagital e a superfície patelofemoral.",
+   "B": "O AP pode falhar, mas o perfil não resolve necessariamente a dificuldade das fraturas verticais. Nessa projeção, os fragmentos medial e lateral tendem a sobrepor-se. O perfil é útil em outras perguntas, sobretudo fratura transversal, deslocamento e altura patelar, sem substituir a incidência axial.",
+   "C": "A axial é especialmente útil para o padrão sagital; por isso, não se deve afirmar genericamente que ela perde esse traço e que o AP é a solução principal. Técnica inadequada pode limitar qualquer projeção. O raciocínio correto exige relacionar o plano da fratura à imagem obtida."
+  },
+  "referencias": [
+   "AO Surgery Reference. Patient examination: patella. https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/patella/further-reading/patient-examination",
+   "AO Surgery Reference. Intraoperative imaging of the patella. https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/patella/further-reading/intraoperative-imaging-of-the-knee-patella"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "provavel": "D",
+  "alerta": "Gabarito do material: D. A alternativa A contém uma observação também plausível sobre a limitação do perfil. O conceito decisivo é acrescentar a incidência axial, e não declarar que o traço vertical nunca aparece no AP."
+ },
+ "trauma-1293": {
+  "conceito": "Ogawa utiliza a inserção dos ligamentos coracoclaviculares como marco funcional. Uma fratura posterior/proximal a essa inserção separa o coracoide e os ligamentos da escápula; uma fratura anterior/distal pode preservar a conexão coracoclavicular principal. Por isso, o mecanismo de instabilidade depende do local do traço, não apenas do tamanho do fragmento.\n\nO tipo I é posterior à inserção e foi o mais frequente na série original. O tipo II fica anterior. Fraturas associadas do anel suspensor superior do ombro devem ser procuradas, pois múltiplas interrupções podem produzir instabilidade maior. Nem toda fratura tipo I exige automaticamente cirurgia: desvio, lesões associadas e estabilidade orientam a decisão.",
+  "correta": "A definição e a frequência estão corretas. O traço posterior à inserção constitui tipo I e pode interromper a ligação entre escápula e clavícula. A identificação desse padrão motiva a busca de outras lesões do anel suspensor, evitando tratar o coracoide como um achado isolado.",
+  "incorretas": {
+   "B": "O tipo I foi mais frequente, mas a posição anterior à inserção corresponde ao tipo II. A opção combina uma informação epidemiológica verdadeira com uma definição anatômica errada. A referência ligamentar é o critério que deve decidir a classificação.",
+   "C": "A localização posterior descreve tipo I, e não II. Além disso, o tipo II não foi o mais frequente na série original. O erro não é simplesmente uma letra: ele troca um padrão potencialmente dissociativo por outro em que a conexão principal pode estar preservada.",
+   "D": "A localização anterior está correta para o tipo II, mas a afirmação de maior frequência não corresponde à série original. A definição anatômica pode ser verdadeira e a alternativa continuar incorreta por outro componente. A frequência não substitui a avaliação de instabilidade de um caso individual."
+  },
+  "referencias": [
+   "Ogawa K et al. Fractures of the coracoid process. https://pubmed.ncbi.nlm.nih.gov/9020438/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "provavel": "A"
+ },
+ "trauma-1294": {
+  "conceito": "A fratura proximal do úmero pode lesar nervos por tração, contusão e deslocamento dos fragmentos. O exame clínico não detecta todas as lesões: dor e incapacidade de mobilizar o ombro dificultam distinguir fraqueza por fratura de desnervação. Estudos com eletromiografia documentam acometimento subclínico relevante.\n\nO axilar e o supraescapular foram os mais envolvidos em uma série prospectiva específica. O axilar inerva deltoide e redondo menor; o supraescapular, supraespinal e infraespinal. A resposta refere-se a essa distribuição, não a uma taxa universal de lesão grave. Neuropraxias podem recuperar, e lesão eletrofisiológica não significa indicação automática de exploração.",
+  "correta": "Axilar e supraescapular foram os mais atingidos na avaliação eletromiográfica prospectiva citada. A fraqueza pode envolver simultaneamente deltoide e manguito, prolongando a recuperação funcional. O achado exige acompanhamento e documentação, sem inferir que toda lesão é irreversível.",
+  "incorretas": {
+   "A": "O axilar é um nervo importante nesse cenário, mas o peitoral lateral não constitui o segundo mais frequentemente documentado na série que fundamenta a questão. O peitoral participa da inervação do peitoral maior, não do principal conjunto de músculos do manguito posterior.",
+   "B": "O supraescapular está corretamente incluído; o radial não é a associação mais típica para o úmero proximal. O radial merece atenção especial em fraturas da diáfise e determinadas lesões distais. A questão exige relacionar o nervo ao segmento anatômico fraturado.",
+   "D": "O axilar está correto, mas a associação com radial desloca o raciocínio para um padrão mais conhecido de fratura diafisária. Lesões radiais podem ocorrer, porém não são a segunda frequência que a questão cobra. A presença de dor não dispensa avaliação neurológica por território."
+  },
+  "referencias": [
+   "Nerve lesions in proximal humeral fractures. https://pubmed.ncbi.nlm.nih.gov/11641698/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "provavel": "C"
+ },
+ "trauma-1295": {
+  "conceito": "A tríade terrível combina luxação do cotovelo, fratura da cabeça radial e fratura do coronoide. O conjunto perde contenção óssea e ligamentar, com risco de instabilidade recorrente. A cabeça radial participa da estabilidade em valgo, e o coronoide ajuda a impedir deslocamentos e a sustentar a congruência ulnohumeral.\n\nDepois de reconstruir os componentes ósseos necessários, repara-se o complexo lateral e testa-se se o cotovelo permanece reduzido no arco funcional. Se persistir instabilidade, podem ser necessários reparo medial e estabilização adicional. Um ligamento medial lesado não precisa ser reparado em todos os casos, porque pode cicatrizar quando a articulação permanece congruente. A sequência busca restaurar estabilidade com a menor agressão necessária.",
+  "correta": "A sequência lateral primeiro e medial se necessário é a resposta clássica. Após reparar o lateral, testa-se a manutenção da redução; o medial é acrescentado quando persiste instabilidade clinicamente relevante. O objetivo não é reconstruir todas as estruturas lesionadas por definição, mas obter uma articulação estável e mobilizável.",
+  "incorretas": {
+   "A": "Começar pelo medial e deixar o lateral para uma eventual persistência de instabilidade não reproduz o algoritmo habitual. O complexo lateral é essencial para controlar a instabilidade rotatória posterolateral. A lesão medial pode existir, mas sua presença não obriga a priorizá-la antes da reconstrução lateral.",
+   "B": "O fixador articulado pode ajudar em instabilidade residual, porém não deve substituir de início o reparo de estruturas reparáveis. O suporte externo mantém congruência durante a cicatrização, sem resolver sozinho a insuficiência ligamentar. A escolha depende da estabilidade após a reconstrução, não de uma ordem automática.",
+   "D": "Usar fixação articulada antes de considerar reparo medial não é uma exigência universal. Existem cenários em que a estabilização adicional é preferida, mas a opção a transforma em etapa obrigatória. O algoritmo assinalado prioriza o reparo medial quando a reconstrução óssea e lateral não mantém congruência."
+  },
+  "referencias": [
+   "AO Surgery Reference. Open reduction internal fixation for Terrible triad. https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/proximal-forearm/fracture-dislocation-radial-head-and-or-coronoid-terrible-triad/open-reduction-internal-fixation"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "provavel": "C"
+ },
+ "trauma-1296": {
+  "conceito": "A borda da cabeça radial articula com a incisura radial da ulna durante a pronossupinação. Colocar uma placa em uma região de contato pode bloquear a rotação e gerar impacto. A zona de segurança para implantes proeminentes é a parcela que não articula com a ulna.\n\nCaputo e colaboradores relacionaram um setor útil de 90° aos marcos distais palpáveis: estiloide radial e tubérculo de Lister. A projeção longitudinal desses marcos auxilia a localização proximal. O arco anatômico não articular médio do estudo foi maior que 90°, mas a região operacional garantida não deve ser confundida com toda essa média. Outra técnica utiliza marcas durante a rotação; ela precisa respeitar limites próprios.",
+  "correta": "Estiloide radial e tubérculo de Lister são os marcos corretos. Como ambos pertencem ao rádio, permitem transportar uma referência angular ao longo do mesmo osso. O setor de 90° assim localizado foi utilizado para posicionar implantes sem impedir a rotação nos espécimes estudados.",
+  "incorretas": {
+   "A": "A medida aproximada de 110° lembra o arco não articular médio, mas a alternativa mistura essa medida com uma técnica de marcação rotacional diferente. Arco médio de anatomia e setor operacional para implante não são automaticamente equivalentes. O estudo solicitado enfatiza os marcos distais palpáveis.",
+   "C": "O estiloide ulnar pertence ao outro osso do antebraço e não substitui o estiloide radial nessa referência. Durante a rotação, rádio e ulna mudam sua relação espacial. A troca do marco torna a projeção inadequada, mesmo mantendo o tubérculo de Lister na descrição.",
+   "D": "Noventa graus é uma medida associada ao setor seguro, mas as marcas rotacionais não definem seus limites simplesmente como um diâmetro AP nas três posições. A opção combina partes de métodos diferentes. Para a referência de Caputo solicitada, a identificação pelos marcos distais é a resposta precisa."
+  },
+  "referencias": [
+   "The nonarticulating portion of the radial head: anatomic and clinical correlations for internal fixation. https://pubmed.ncbi.nlm.nih.gov/9848563/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "provavel": "B"
+ },
+ "trauma-1297": {
+  "conceito": "Na fratura das duas colunas, toda a superfície articular acetabular se separa da porção estável da pelve que permanece conectada ao sacro. O fragmento ilíaco estável remanescente pode projetar-se como um esporão ao lado do acetábulo deslocado. É o spur sign.\n\nA incidência obturatriz evidencia esse remanescente e ajuda a reconhecer o padrão de dupla coluna. A incidência alar complementa a avaliação da coluna posterior e asa ilíaca. A parede posterior é uma estrutura distinta de coluna posterior: fraturar uma parede não significa desconectar toda a articulação do esqueleto axial. A leitura deve integrar AP, oblíquas de Judet e tomografia quando indicada.",
+  "correta": "Dupla coluna com sinal melhor demonstrado na obturatriz é a associação correta. O esporão corresponde à parte estável do ílio, ainda ligada ao esqueleto axial, enquanto o segmento articular se deslocou. Esse mecanismo diferencia a fratura de dupla coluna de traços que conservam parte da superfície conectada.",
+  "incorretas": {
+   "A": "A fratura de dupla coluna está corretamente identificada, mas o sinal clássico é mostrado na obturatriz, não na alar. A asa ilíaca pode ser estudada pela alar, o que cria a confusão. O achado depende da projeção do remanescente estável em relação à articulação deslocada.",
+   "C": "A fratura isolada da parede posterior não produz a desconexão global das duas colunas que define o sinal. Além disso, a projeção alar não é a referência clássica do esporão. Parede e coluna devem ser reconhecidas como componentes anatômicos diferentes.",
+   "D": "A obturatriz pode mostrar bem a parede posterior, mas essa utilidade da incidência não transforma o esporão em sinal de parede posterior. A alternativa usa uma associação radiológica parcialmente verdadeira para trocar o diagnóstico. O significado do fragmento estável é o que decide."
+  },
+  "referencias": [
+   "AO Surgery Reference. Characteristics of associated acetabular fracture types. https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/acetabulum/further-reading/characteristics-of-associated-fracture-types"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "provavel": "B"
+ },
+ "trauma-1298": {
+  "conceito": "A profilaxia da fratura exposta precisa ser iniciada cedo e acompanhada de desbridamento e estabilização adequados. A escolha antimicrobiana depende do grau da lesão, contaminação e protocolos locais. A recomendação clássica da EAST observa que fluoroquinolonas não oferecem vantagem sobre os esquemas de referência e podem prejudicar a consolidação, além de associarem-se a maior infecção em lesões graves em estudos citados.\n\nA questão cobra a preocupação com o reparo ósseo, não um efeito adverso renal genérico. Essa afirmação é específica da profilaxia de fraturas expostas e não significa que toda indicação de quinolona seja proibida. Infecção estabelecida, resultados microbiológicos e alergias constituem outro contexto, com decisões individualizadas.",
+  "correta": "A preocupação com consolidação é a associação cobrada e citada pela diretriz. Dados experimentais e clínicos sustentaram evitar seu uso rotineiro nesse cenário. A decisão de profilaxia deve seguir protocolo e cobertura apropriada, sem confundir essa ressalva com proibição em qualquer infecção.",
+  "incorretas": {
+   "B": "Nefrotoxicidade é uma preocupação importante com outros antimicrobianos e com função renal em geral, mas não é a razão específica que fundamenta essa resposta. Ajuste de dose e riscos renais devem ser avaliados para qualquer esquema. A questão se refere ao efeito sobre reparação óssea.",
+   "C": "Deiscência pode acompanhar problemas de partes moles e infecção, porém não é o efeito específico que distingue quinolonas na recomendação cobrada. O risco depende do ferimento, cobertura e tratamento. A alternativa substitui o motivo de consolidação por uma complicação inespecífica.",
+   "D": "Hematomas não são o fundamento para evitar fluoroquinolonas na profilaxia de fraturas expostas. Sangramento e hemostasia têm determinantes próprios. A alternativa não se relaciona ao mecanismo de preocupação com reparação óssea apresentado na diretriz."
+  },
+  "referencias": [
+   "EAST. Open Fractures, Prophylactic Antibiotic Use in: Update. https://www.east.org/education-resources/practice-management-guidelines/details/open-fractures-prophylactic-antibiotic-use-in-update"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "provavel": "A"
  }
 }

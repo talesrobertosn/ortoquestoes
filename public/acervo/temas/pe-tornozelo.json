@@ -1,7 +1,7 @@
 {
   "tema": "Pé e tornozelo",
   "slug": "pe-tornozelo",
-  "geradoEm": "2026-09-05T23:13:29+00:00",
+  "geradoEm": "2026-10-07",
   "questoes": [
     {
       "id": "pe-tornozelo-0001",
@@ -5859,10 +5859,9 @@
       "id": "pe-tornozelo-0170",
       "tema": "Pé e tornozelo",
       "subtemas": [
-        "Fraturas do tornozelo e do pilão tibial",
         "Biomecânica e marcha"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Em relação a articulação do tornozelo qual o grau de flexão necessária para o individuo realizar as atividades cotidianas como correr e subir escadas?",
@@ -5892,7 +5891,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 5,
+        "numeroOriginal": 13
+      }
     },
     {
       "id": "pe-tornozelo-0171",
@@ -5901,7 +5905,7 @@
         "Artrose do tornozelo, artrodese e artroplastia",
         "Artroscopia do tornozelo"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Em relação a artrodese do tornozelo,em qual dos fatores listados abaixo a técnica por artroscopia é superior a técnica aberta?",
@@ -5931,16 +5935,20 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 6,
+        "numeroOriginal": 14
+      }
     },
     {
       "id": "pe-tornozelo-0172",
       "tema": "Pé e tornozelo",
       "subtemas": [
-        "Artroscopia do tornozelo",
-        "Fraturas do tornozelo e do pilão tibial"
+        "Artroscopia do tornozelo"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Nos paciente submetidos a tratamento cirúrgico na articulação do tornozelo por via artroscopica,qual o tipo de complicação mais comum?",
@@ -5970,7 +5978,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 6,
+        "numeroOriginal": 15
+      }
     },
     {
       "id": "pe-tornozelo-0173",
@@ -5978,7 +5991,7 @@
       "subtemas": [
         "Hálux valgo"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Em qual das situações abaixo a osteotomia na base do primeiro metatarso é o método de escolha no tratamento do Hallux Valgus?",
@@ -6008,7 +6021,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 6,
+        "numeroOriginal": 16
+      }
     },
     {
       "id": "pe-tornozelo-0174",
@@ -6016,7 +6034,7 @@
       "subtemas": [
         "Pé diabético e neuroartropatia de Charcot"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Segundo a classificação de Wagner de úlcera no pé o tipo III corresponde a qual descrição abaixo?",
@@ -6046,7 +6064,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 6,
+        "numeroOriginal": 17
+      }
     },
     {
       "id": "pe-tornozelo-0175",
@@ -6054,7 +6077,7 @@
       "subtemas": [
         "Outros temas do pé e tornozelo"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "A síndrome do túnel tarsal anterior acomete qual nervo?",
@@ -6084,7 +6107,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 6,
+        "numeroOriginal": 18
+      }
     },
     {
       "id": "pe-tornozelo-0176",
@@ -6865,7 +6893,7 @@
       "subtemas": [
         "Exame físico do pé e tornozelo"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Sobre as manobras e testes clínicos no exame físico do pé e tornozelo, assinale a alternativa incorreta:",
@@ -6895,7 +6923,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 59,
+        "numeroOriginal": 255
+      }
     },
     {
       "id": "pe-tornozelo-0200",
@@ -7625,7 +7658,7 @@
       "subtemas": [
         "Metatarsalgia e neuroma de Morton"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na instabilidade da articulação metatarsofalangeana, segundo a classificação de COUGHLIN, a presença de uma articulação luxável, caracteriza o estágio",
@@ -7655,7 +7688,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 28,
+        "numeroOriginal": 107
+      }
     },
     {
       "id": "pe-tornozelo-0218",
@@ -7663,7 +7701,7 @@
       "subtemas": [
         "Hálux valgo"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "No hálux valgo, a osteotomia representada na figura, corresponde a técnica de",
@@ -7700,7 +7738,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 28,
+        "numeroOriginal": 108
+      }
     },
     {
       "id": "pe-tornozelo-0219",
@@ -7708,7 +7751,7 @@
       "subtemas": [
         "Tendão calcâneo"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na ruptura do tendão calcâneo, a lesão é considerada crônica quando é diagnosticada após",
@@ -7738,7 +7781,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 28,
+        "numeroOriginal": 110
+      }
     },
     {
       "id": "pe-tornozelo-0220",
@@ -7746,7 +7794,7 @@
       "subtemas": [
         "Hálux rígido"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "No hálux rígido, a artrodese deve ser realizada com o ângulo de inclinação entre o primeiro metatarso e a falange proximal de",
@@ -7776,7 +7824,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 29,
+        "numeroOriginal": 111
+      }
     },
     {
       "id": "pe-tornozelo-0221",
@@ -7784,7 +7837,7 @@
       "subtemas": [
         "Pé cavo"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "No pé cavo, a principal etiologia neuromuscular é a",
@@ -7814,7 +7867,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 29,
+        "numeroOriginal": 112
+      }
     },
     {
       "id": "pe-tornozelo-0222",
@@ -7822,7 +7880,7 @@
       "subtemas": [
         "Pé diabético e neuroartropatia de Charcot"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Na artropatia de CHARCOT, as articulações mais comumente acometidas são",
@@ -7852,7 +7910,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 29,
+        "numeroOriginal": 113
+      }
     },
     {
       "id": "pe-tornozelo-0223",
@@ -7860,7 +7923,7 @@
       "subtemas": [
         "Pé plano adquirido do adulto"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "No pé plano evolutivo, a osteotomia de medialização do calcâneo associada a transferência do flexor longo dos dedos é indicada, segundo JOHNSON e STROM, no estágio",
@@ -7890,7 +7953,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 29,
+        "numeroOriginal": 115
+      }
     },
     {
       "id": "pe-tornozelo-0224",
@@ -7898,7 +7966,7 @@
       "subtemas": [
         "Pé plano flexível"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "No pé plano flexível, o posicionamento do retropé e antepé está, respectivamente",
@@ -7928,7 +7996,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 32,
+        "numeroOriginal": 129
+      }
     },
     {
       "id": "pe-tornozelo-0225",
@@ -7936,7 +8009,7 @@
       "subtemas": [
         "Metatarsalgia e neuroma de Morton"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "A osteocondrose de FREIBERG é mais comumente diagnosticada em",
@@ -7966,7 +8039,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 33,
+        "numeroOriginal": 132
+      }
     },
     {
       "id": "pe-tornozelo-0227",
@@ -10134,8 +10212,8 @@
       "subtemas": [
         "Pé cavo"
       ],
-      "prova": "TEOT",
-      "ano": 2022,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "No pé cavo da criança com doença de CHARCOT-MARIE-TOOTH, a inversão do retropé e a depressão da cabeça do primeiro metatarso se devem à manutenção da força dos músculos",
       "imagens": [],
@@ -10164,7 +10242,12 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 66,
+        "numeroOriginal": 281
+      }
     },
     {
       "id": "pe-tornozelo-0290",
@@ -10172,8 +10255,8 @@
       "subtemas": [
         "Deformidades congênitas do pé"
       ],
-      "prova": "TEOT",
-      "ano": 2023,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "No tratamento do metatarso aduto com manipulação e trocasgessadas seriadas não se deve fazer",
       "imagens": [],
@@ -10204,9 +10287,9 @@
       "revisado": false,
       "subtemasPendentes": false,
       "origem": {
-        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
-        "pagina": 24,
-        "numeroOriginal": 96
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 66,
+        "numeroOriginal": 282
       }
     },
     {
@@ -10215,7 +10298,7 @@
       "subtemas": [
         "Exame físico do pé e tornozelo"
       ],
-      "prova": "TEOT/TARO",
+      "prova": "SBOT-SP",
       "ano": null,
       "dificuldade": null,
       "enunciado": "Qual o teste clínico para a avaliação do tendão de Aquiles, demonstrado na figura abaixo?",
@@ -10252,17 +10335,21 @@
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
-      "subtemasPendentes": false
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 73,
+        "numeroOriginal": 310
+      }
     },
     {
       "id": "pe-tornozelo-0292",
       "tema": "Pé e tornozelo",
       "subtemas": [
-        "Biomecânica e marcha",
-        "Fraturas do tornozelo e do pilão tibial"
+        "Biomecânica e marcha"
       ],
-      "prova": "TARO",
-      "ano": 2020,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "Na biomecânica do tornozelo, o efeito do eixo",
       "imagens": [],
@@ -10293,20 +10380,19 @@
       "revisado": false,
       "subtemasPendentes": false,
       "origem": {
-        "arquivo": "TARO-2020.pdf",
-        "pagina": 4,
-        "numeroOriginal": 1
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 73,
+        "numeroOriginal": 311
       }
     },
     {
       "id": "pe-tornozelo-0293",
       "tema": "Pé e tornozelo",
       "subtemas": [
-        "Hálux valgo",
         "Hálux rígido"
       ],
-      "prova": "TEOT",
-      "ano": 2023,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "Na artrodese da articulação metatarsofalangiana do primeiro raio, ohálux deve ser posicionado em relação ao primeiro metatarso emdorsifl exão de",
       "imagens": [],
@@ -10337,20 +10423,19 @@
       "revisado": false,
       "subtemasPendentes": false,
       "origem": {
-        "arquivo": "TEOT 2023 - prova teórica verde.pdf",
-        "pagina": 24,
-        "numeroOriginal": 99
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 74,
+        "numeroOriginal": 312
       }
     },
     {
       "id": "pe-tornozelo-0294",
       "tema": "Pé e tornozelo",
       "subtemas": [
-        "Artrose do tornozelo, artrodese e artroplastia",
-        "Fraturas do tornozelo e do pilão tibial"
+        "Artrose do tornozelo, artrodese e artroplastia"
       ],
-      "prova": "TARO",
-      "ano": 2020,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "Na artroplastia do tornozelo, as fraturas que ocorrem mais frequentemente no intraoperatório são as",
       "imagens": [],
@@ -10381,9 +10466,9 @@
       "revisado": false,
       "subtemasPendentes": false,
       "origem": {
-        "arquivo": "TARO-2020.pdf",
-        "pagina": 16,
-        "numeroOriginal": 48
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 74,
+        "numeroOriginal": 313
       }
     },
     {
@@ -12608,10 +12693,10 @@
       "id": "pe-tornozelo-0345",
       "tema": "Pé e tornozelo",
       "subtemas": [
-        "Outros temas do pé e tornozelo"
+        "Hálux rígido"
       ],
-      "prova": "TARO",
-      "ano": 2009,
+      "prova": "SBOT-SP",
+      "ano": null,
       "dificuldade": null,
       "enunciado": "No hálux rigidus, a alteração primária da cartilagem articular situa-se na face",
       "imagens": [],
@@ -12644,9 +12729,9 @@
       "revisado": false,
       "subtemasPendentes": false,
       "origem": {
-        "arquivo": "taro2009.pdf",
-        "pagina": 5,
-        "numeroOriginal": 17
+        "arquivo": "SBOT-SP.pdf",
+        "pagina": 60,
+        "numeroOriginal": 256
       }
     },
     {

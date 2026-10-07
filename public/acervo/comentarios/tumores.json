@@ -4291,5 +4291,20 @@
   ],
   "geradoEm": "2026-10-07",
   "conferido": false
+ },
+ "tumores-0387": {
+  "conceito": "O estadiamento cirúrgico de Enneking para sarcomas musculoesqueléticos combina grau histológico, extensão local e metástases. I indica baixo grau e II alto grau. A significa lesão intracompartimental; B, extracompartimental. III identifica doença metastática, independentemente da combinação local.\n\nAssim, IIB significa alto grau, extensão além do compartimento e ausência de metástases. Compartimento é uma unidade anatômica delimitada por barreiras naturais, não apenas o limite visível do tumor. Planejamento da biópsia e ressecção deve respeitar essas barreiras. O sistema não substitui critérios específicos de outros tumores, nem pode ser aplicado mecanicamente a toda neoplasia hematológica.",
+  "correta": "Alto grau define II, extracompartimental define B e ausência de metástases mantém o caso fora do estágio III. A alternativa reúne corretamente os três critérios. O sufixo não informa margem cirúrgica já obtida, mas extensão anatômica da doença.",
+  "incorretas": {
+   "A": "Alto grau corresponderia a II, mas intracompartimental exige A. Metástases mudam o estágio para III. A opção não corresponde a IIB porque erra tanto a extensão local quanto a condição metastática.",
+   "B": "Extracompartimental e ausência de metástases são compatíveis com o sufixo B em doença localizada, porém baixo grau exige I. Essa combinação define IB, não IIB. Grau e extensão são eixos independentes do sistema.",
+   "D": "Baixo grau intracompartimental sem metástases seria IA. Ao acrescentar metástases, a classificação passa a III. A opção não pode representar IIB; confunde todos os componentes do estadiamento."
+  },
+  "referencias": [
+   "Enneking WF, Spanier SS, Goodman MA. A system for the surgical staging of musculoskeletal sarcoma. https://pubmed.ncbi.nlm.nih.gov/7449206/"
+  ],
+  "geradoEm": "2026-10-07",
+  "conferido": false,
+  "provavel": "C"
  }
 }
