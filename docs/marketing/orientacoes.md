@@ -25,6 +25,7 @@ algo em poucos segundos e dar vontade de responder.
 
 ## Regras da marca (todas permanentes)
 
+- Cirurgia da mão é outra especialidade e tem prova própria; não apresentar como R4 de ortopedia (orientação de 08/10/2026).
 - Nome por extenso: **Orto Questões**. Sem emoji. Não mencionar IA nos posts.
 - Não citar o número total de questões do acervo. O destaque é serem as questões das provas oficiais,
   comentadas.
