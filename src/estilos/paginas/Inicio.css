@@ -491,6 +491,8 @@ a.inicio-kpi:hover { background: rgba(255, 255, 255, 0.15); color: var(--sobre-h
 }
 .inicio-atalho-heroi:hover { background: rgba(255, 255, 255, 0.15); color: var(--sobre-heroi); transform: translateY(-1px); }
 .inicio-atalho-heroi span { flex: 1; }
+.inicio-guias { display: flex; flex-wrap: wrap; gap: 0.75rem 1.25rem; margin-top: 1rem; }
+.inicio-guias a { line-height: 1.5; }
 .inicio-atalho-heroi__contador {
   min-width: 1.9rem; padding: 0.15rem 0.5rem;
   border-radius: 999px;

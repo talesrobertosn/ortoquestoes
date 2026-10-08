@@ -260,6 +260,19 @@ export function Inicio() {
           </div>
         )}
       </section>
+      {!conta && (
+        <section className="inicio-bloco" aria-labelledby="inicio-apresentacao">
+          <h2 id="inicio-apresentacao">Orto Questões: banco de questões comentadas</h2>
+          <p>O Orto Questões, também escrito OrtoQuestões, reúne questões para TEOT, TARO, cirurgia da mão, R4 ENARE, quadril e coluna. Estude por assunto, entenda as alternativas e revise seus erros.</p>
+          <nav className="inicio-guias" aria-label="Conheça o banco e organize sua preparação">
+            <a href={recurso('questoes/')}>Questões por assunto</a>
+            <a href={recurso('guias/preparacao-teot-taro.html')}>Preparação para TEOT e TARO</a>
+            <a href={recurso('guias/como-estudar-para-o-taro.html')}>Como estudar para o TARO</a>
+            <a href={recurso('guias/questoes-cirurgia-da-mao.html')}>Cirurgia da mão</a>
+            <a href={recurso('guias/questoes-r4-quadril-coluna.html')}>R4 de quadril e coluna</a>
+          </nav>
+        </section>
+      )}
       <ModalEntrar aberto={modalEntrarAberto} aoFechar={() => definirModalEntrarAberto(false)} />
 
       {carregando && <Carregando linhas={3} rotulo="Carregando o acervo" />}

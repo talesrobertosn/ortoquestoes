@@ -44,7 +44,7 @@ const Ligas = lazy(() => import('./paginas/Ligas').then(({ Ligas }) => ({ defaul
 const AdminAssinaturas = lazy(() => import('./paginas/AdminAssinaturas').then(({ AdminAssinaturas }) => ({ default: AdminAssinaturas })))
 
 const TITULOS: Record<string, string> = {
-  '/': 'Orto Questões (OrtoQuestões): banco de questões de ortopedia e traumatologia',
+  '/': 'Orto Questões: banco de questões de ortopedia e cirurgia da mão',
   '/treinar': 'Montar sessão | Orto Questões',
   '/sessao': 'Respondendo | Orto Questões',
   '/resumo': 'Resumo da sessão | Orto Questões',

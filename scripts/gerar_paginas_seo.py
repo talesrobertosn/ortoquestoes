@@ -236,8 +236,8 @@ def rodape(raiz: str = "../") -> str:
     return f"""</main>
 <footer class="envoltorio">
   <p class="meta">
-    <strong>Orto Questões</strong> (OrtoQuestões): banco de questões de ortopedia e traumatologia para TEOT, TARO e
-    ENARE R4. As questões são transcritas das provas originais e o gabarito é o da própria banca;
+    <strong>Orto Questões</strong> (OrtoQuestões): banco de questões para TEOT, TARO, cirurgia da mão,
+    R4 ENARE, quadril e coluna. As questões são transcritas das provas originais e o gabarito é o da própria banca;
     as marcadas como OrtoQuestões Simulados são questões autorais do site, elaboradas a partir da
     bibliografia de referência e inspiradas no padrão da prova indicada, sem caráter oficial nem
     vínculo com as instituições organizadoras.
