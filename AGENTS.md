@@ -33,3 +33,9 @@ Para qualquer conteúdo de divulgação (Instagram, propaganda, e-mail), siga
 frequência e regras da marca definidas pelo dono do projeto. Para fazer os posts, siga o roteiro
 [docs/prompts/codex-instagram.md](docs/prompts/codex-instagram.md) (imagens em HTML a partir dos
 modelos; nunca imagem gerada por IA).
+
+## SQL para o Supabase (orientação do dono, 08/10/2026)
+
+Toda migração nova também vai para `supabase/colar-no-painel/` e, ao entregar, o SQL completo é
+mandado **como texto na conversa**, num bloco de código, para copiar direto no SQL Editor (o dono
+não consegue copiar bem a partir do arquivo).
