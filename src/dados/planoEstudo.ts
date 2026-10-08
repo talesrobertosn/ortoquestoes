@@ -292,5 +292,43 @@ export function idsDoDia(indice: Indice, slug: string, respondidas: Record<strin
   const tema = indice.temas.findIndex((t) => t.slug === slug)
   if (tema < 0) return []
   const livres = indice.questoes.filter((q) => q.t === tema && entraNoPlano(q, simulados) && !respondidas[q.id]).map((q) => q.id)
-  return ordemDoTema(indice, livres).slice(0, Math.max(0, n))
+  const ids = ordemDoTema(indice, livres).slice(0, Math.max(0, n))
+  return simulados ? comSimulados(indice, ids, tema, respondidas) : ids
+}
+
+/** Mínimo de OrtoQuestões Simulados em cada sessão do cronograma (decisão do dono, 08/10/2026). */
+export const SIMULADOS_POR_SESSAO = 2
+
+/**
+ * Garante, sem aviso na tela, ao menos SIMULADOS_POR_SESSAO questões dos
+ * OrtoQuestões Simulados em cada sessão do cronograma: sorteadas entre as
+ * ainda não respondidas, de preferência do tema do dia (senão, de qualquer
+ * tema), no lugar das últimas da fila, e em posições sorteadas. O tamanho da
+ * sessão não muda. Quem escolheu "apenas provas anteriores" não recebe.
+ */
+export function comSimulados(indice: Indice, ids: string[], tema: number, respondidas: Record<string, unknown>, sortear: () => number = Math.random): string[] {
+  const minimo = Math.min(SIMULADOS_POR_SESSAO, ids.length)
+  const naSessao = new Set(ids)
+  const temaDe = new Map(indice.questoes.map((q) => [q.id, q]))
+  const faltam = minimo - ids.filter((id) => temaDe.get(id)?.sim === 1).length
+  if (faltam <= 0) return ids
+  const candidatas = (doTema: boolean) => indice.questoes
+    .filter((q) => q.sim === 1 && entraNoPlano(q, true) && !respondidas[q.id] && !naSessao.has(q.id) && (doTema ? q.t === tema : q.t !== tema))
+    .map((q) => q.id)
+  const embaralhar = (lista: string[]) => {
+    for (let i = lista.length - 1; i > 0; i--) { const j = Math.floor(sortear() * (i + 1)); [lista[i], lista[j]] = [lista[j], lista[i]] }
+    return lista
+  }
+  const escolhidas = [...embaralhar(candidatas(true)), ...embaralhar(candidatas(false))].slice(0, faltam)
+  if (!escolhidas.length) return ids
+  // Sai o fim da fila (as de menor prioridade), mas nunca um simulado que já estava.
+  const resultado = [...ids]
+  for (let k = 0; k < escolhidas.length; k++) {
+    let i = resultado.length - 1
+    while (i >= 0 && temaDe.get(resultado[i])?.sim === 1) i--
+    if (i < 0) break
+    resultado.splice(i, 1)
+  }
+  for (const id of escolhidas.slice(0, ids.length - resultado.length)) resultado.splice(Math.floor(sortear() * (resultado.length + 1)), 0, id)
+  return resultado
 }
