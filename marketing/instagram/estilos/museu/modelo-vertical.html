@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Exposição: lesão de Stener</title>
+<!-- Variante para imagem VERTICAL (o modelo.html é para imagem horizontal). Estilo "museu": a imagem real da questão vira obra emoldurada numa galeria, com placa,
+     audioguia e catálogo. Questão mao-0586 (TARO 2025), gabarito C (Stener).
+     Feed 1080x1350 (p1 a p6) e stories 1080x1920 (s1, s2), sem figurinha e sem desenho de anatomia.
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-10-museu-lesao-de-stener/post.html -->
+<style>
+@font-face { font-family: Playfair; src: url(../../fontes/playfair-display-latin-wght-normal.woff2) format('woff2'); font-weight: 400 900; }
+@font-face { font-family: Playfair; src: url(../../fontes/playfair-display-latin-wght-italic.woff2) format('woff2'); font-weight: 400 900; font-style: italic; }
+@font-face { font-family: Serif4; src: url(../../fontes/source-serif-4-latin-opsz-normal.woff2) format('woff2'); font-weight: 200 900; }
+@font-face { font-family: Serif4; src: url(../../fontes/source-serif-4-latin-opsz-italic.woff2) format('woff2'); font-weight: 200 900; font-style: italic; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+:root { --parede: #1d2624; --parede2: #121816; --ouro: #c9a45c; --ouro-claro: #e6cf98; --papel: #f3ede0; --tinta: #1f2321; --cinza: #6c6a62; --vinho: #7a2e2e; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Serif4, serif; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1350px; padding: 70px 84px; color: var(--papel);
+  background: radial-gradient(ellipse 60% 48% at 50% 34%, rgba(255,236,190,.20), transparent 70%), linear-gradient(180deg, var(--parede), var(--parede2)); }
+section::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 120px; background: linear-gradient(180deg, #2a201a, #1a1410); border-top: 3px solid #3a2c22; z-index: 0; }
+section.story { height: 1920px; padding: 210px 84px 300px; }
+section.story::after { height: 300px; }
+section > * { position: relative; z-index: 1; }
+.marca { display: flex; align-items: center; gap: 14px; font: 32px Jakarta; letter-spacing: -.02em; color: var(--papel); }
+.marca svg { width: 50px; height: 50px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; opacity: .85; }
+.topo { display: flex; justify-content: space-between; align-items: center; }
+.sala { font: 600 22px Inter; letter-spacing: .32em; text-transform: uppercase; color: var(--ouro-claro); }
+.pag { font: italic 500 28px Serif4; color: rgba(243,237,224,.6); }
+
+/* Moldura */
+.quadro { position: relative; margin: 0 auto; padding: 26px; background: linear-gradient(135deg, #8a6a32, #e3c47c 30%, #9b7838 55%, #d9b86c 80%, #7d5e2a); box-shadow: 0 50px 80px rgba(0,0,0,.6), 0 0 0 2px #4d3818; }
+.quadro .passe { padding: 46px; background: #f6f1e6; box-shadow: inset 0 0 0 1px rgba(0,0,0,.15), inset 0 6px 14px rgba(0,0,0,.18); }
+.quadro img { display: block; width: 100%; filter: contrast(1.05); box-shadow: 0 0 0 1px rgba(0,0,0,.4); }
+.placa { background: var(--papel); color: var(--tinta); padding: 26px 30px; box-shadow: 0 16px 30px rgba(0,0,0,.45); }
+.placa .autor { font: italic 600 34px Playfair; }
+.placa .obra { margin-top: 4px; font: 700 26px Inter; letter-spacing: .02em; }
+.placa .tec { margin-top: 8px; font: 400 23px/1.35 Serif4; color: var(--cinza); }
+.rodape { position: absolute; left: 84px; right: 84px; bottom: 40px; display: flex; justify-content: space-between; align-items: center; font: italic 500 26px Serif4; color: rgba(243,237,224,.65); z-index: 2; }
+.rodape b { font-style: normal; font-family: Jakarta; font-weight: 700; color: var(--ouro-claro); }
+
+/* p1 capa */
+.capa .quadro { width: 520px; margin-top: 58px; transform: rotate(-.6deg); }
+.capa .placa { position: absolute; right: 84px; top: 520px; width: 280px; transform: rotate(1deg); }
+.capa .placa .autor { font-size: 30px; }
+.capa h1 { margin-top: 60px; text-align: center; font: 700 86px/1.02 Playfair; letter-spacing: -.01em; }
+.capa h1 em { font-weight: 500; color: var(--ouro-claro); }
+.capa .sub { margin-top: 18px; text-align: center; font: italic 400 36px/1.35 Serif4; color: rgba(243,237,224,.82); }
+
+/* p2 ficha da obra */
+.ficha { margin-top: 40px; display: grid; grid-template-columns: 380px 1fr; gap: 44px; align-items: start; }
+.ficha .quadro { padding: 16px; } .ficha .quadro .passe { padding: 24px; }
+.cartao { background: var(--papel); color: var(--tinta); padding: 40px 42px; box-shadow: 0 24px 46px rgba(0,0,0,.5); }
+.cartao small { display: block; font: 700 22px Inter; letter-spacing: .26em; text-transform: uppercase; color: var(--vinho); }
+.cartao p { margin-top: 18px; font: 500 40px/1.3 Serif4; }
+.cartao hr { margin: 28px 0 22px; border: 0; border-top: 1px solid rgba(31,35,33,.25); }
+.cartao ol { list-style: none; display: grid; gap: 14px; }
+.cartao li { display: flex; gap: 18px; align-items: baseline; font: 600 38px Playfair; }
+.cartao li b { font: 700 26px Inter; color: var(--vinho); width: 36px; }
+.convite { margin-top: 44px; text-align: center; font: italic 500 46px Playfair; color: var(--ouro-claro); }
+
+/* títulos de seção */
+h2 { margin-top: 50px; font: 700 76px/1.04 Playfair; letter-spacing: -.01em; }
+h2 em { font-weight: 500; color: var(--ouro-claro); }
+.lead { margin-top: 18px; font: italic 400 34px/1.4 Serif4; color: rgba(243,237,224,.8); }
+
+/* p3 audioguia */
+.faixas { margin-top: 44px; display: grid; gap: 22px; }
+.faixa { display: grid; grid-template-columns: 110px 1fr; gap: 28px; align-items: start; padding: 36px 36px; background: rgba(243,237,224,.06); border: 1px solid rgba(230,207,152,.28); }
+.faixa .num { font: 700 64px/1 Playfair; color: var(--ouro); }
+.faixa .num small { display: block; margin-top: 8px; font: 600 18px Inter; letter-spacing: .2em; color: rgba(243,237,224,.55); }
+.faixa p { font: 400 36px/1.45 Serif4; } .faixa p strong { font-weight: 700; color: var(--ouro-claro); }
+
+/* p4 atribuição */
+.atrib { margin-top: 46px; display: grid; grid-template-columns: 400px 1fr; gap: 46px; align-items: center; }
+.atrib .quadro { padding: 18px; } .atrib .quadro .passe { padding: 26px; }
+.atrib .placa { padding: 34px 36px; }
+.atrib .placa .letra { font: 700 22px Inter; letter-spacing: .26em; color: var(--vinho); text-transform: uppercase; }
+.atrib .placa .autor { margin-top: 6px; font-size: 70px; line-height: 1; }
+.atrib .placa .tec { font-size: 28px; margin-top: 16px; }
+.resumo { margin-top: 54px; font: 400 39px/1.5 Serif4; }
+.resumo strong { color: var(--ouro-claro); font-weight: 700; }
+
+/* p5 exame */
+.tabela { margin-top: 40px; background: var(--papel); color: var(--tinta); box-shadow: 0 24px 46px rgba(0,0,0,.5); }
+.tabela div { display: grid; grid-template-columns: 1.15fr 1fr; gap: 30px; padding: 26px 36px; border-bottom: 1px solid rgba(31,35,33,.18); font: 400 31px/1.35 Serif4; }
+.tabela div:last-child { border-bottom: 0; }
+.tabela div.cab { background: #e6dcc6; font: 700 21px Inter; letter-spacing: .2em; text-transform: uppercase; color: var(--vinho); }
+.tabela strong { font-weight: 700; }
+.nota { margin-top: 30px; font: italic 400 32px/1.4 Serif4; color: rgba(243,237,224,.85); }
+.nota strong { font-style: normal; color: var(--ouro-claro); }
+
+/* p6 outras salas */
+.salas { margin-top: 40px; display: grid; gap: 20px; }
+.outra { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 20px; padding: 26px 34px; background: rgba(243,237,224,.06); border: 1px solid rgba(230,207,152,.25); }
+.outra p { font: 600 44px Playfair; } .outra p small { display: block; margin-top: 4px; font: 400 29px Serif4; color: rgba(243,237,224,.75); }
+.outra span { font: 600 20px Inter; letter-spacing: .24em; text-transform: uppercase; color: var(--ouro); border: 1px solid var(--ouro); padding: 10px 16px; }
+.prova { margin-top: 34px; background: var(--papel); color: var(--tinta); padding: 34px 40px; box-shadow: 0 24px 46px rgba(0,0,0,.5); font: 500 37px/1.38 Serif4; }
+.prova small { display: block; margin-bottom: 10px; font: 700 21px Inter; letter-spacing: .26em; text-transform: uppercase; color: var(--vinho); }
+.prova strong { font-weight: 700; }
+
+/* stories */
+.story .quadro { width: 640px; margin-top: 80px; }
+.story h1 { margin-top: 60px; text-align: center; font: 700 96px/1.02 Playfair; }
+.story h1 em { font-weight: 500; color: var(--ouro-claro); }
+.story .sub { margin-top: 22px; text-align: center; font: italic 400 40px/1.35 Serif4; color: rgba(243,237,224,.85); }
+.story .opcoes { margin-top: 40px; display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+.story .opcoes span { padding: 14px 26px; border: 1px solid rgba(230,207,152,.5); font: 600 36px Playfair; color: var(--papel); }
+.story .opcoes b { font: 700 24px Inter; color: var(--ouro); margin-right: 10px; }
+.story .placa { margin: 60px auto 0; width: 760px; padding: 40px 46px; }
+.story .placa .autor { font-size: 72px; line-height: 1; }
+.story .placa .obra { font-size: 30px; margin-top: 12px; }
+.story .placa .tec { font-size: 32px; }
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/>
+<circle cx="17" cy="20" r="4.5" fill="#9cc3bd"/><rect x="26" y="16.5" width="24" height="7" rx="3.5" fill="#9cc3bd"/>
+<circle cx="17" cy="32" r="4.5" fill="#f4cf7c"/><rect x="26" y="28.5" width="24" height="7" rx="3.5" fill="#f4cf7c"/>
+<circle cx="17" cy="44" r="4.5" fill="#9cc3bd"/><rect x="26" y="40.5" width="19" height="7" rx="3.5" fill="#9cc3bd"/></symbol>
+</defs></svg>
+
+<!-- p1 capa -->
+<section id="p1-capa" class="capa">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="sala">Sala da mão</span></div>
+  <div class="quadro"><div class="passe"><img src="../../../../public/imagens/mao/mao-0586-1.jpeg" alt=""></div></div>
+  <div class="placa"><p class="autor">Autor desconhecido</p><p class="obra">Polegar, 2025</p><p class="tec">Ressonância magnética. Acervo da prova TARO.</p></div>
+  <h1>Nova obra em exposição. <em>Quem assina?</em></h1>
+  <p class="sub">A banca pendurou esta ressonância na parede. Arraste e descubra o autor.</p>
+  <div class="rodape"><span>Arraste para visitar a sala</span><span>1/6</span></div>
+</section>
+
+<!-- p2 ficha -->
+<section id="p2-ficha">
+  <div class="topo"><span class="sala">Ficha da obra</span><span class="pag">2/6</span></div>
+  <div class="ficha">
+    <div class="quadro"><div class="passe"><img src="../../../../public/imagens/mao/mao-0586-1.jpeg" alt=""></div></div>
+    <div class="cartao">
+      <small>TARO 2025 · Mão</small>
+      <p>A imagem a seguir corresponde a uma ressonância magnética do polegar com evidência de lesão ligamentar de</p>
+      <hr>
+      <ol><li><b>A</b>HIBBS.</li><li><b>B</b>AICHE.</li><li><b>C</b>STENER.</li><li><b>D</b>GERBER.</li></ol>
+    </div>
+  </div>
+  <p class="convite">Deixe a sua atribuição nos comentários.</p>
+  <div class="rodape"><span>Questão real da prova</span><span><b>ortoquestoes.com.br</b></span></div>
+</section>
+
+<!-- p3 audioguia -->
+<section id="p3-audioguia">
+  <div class="topo"><span class="sala">Audioguia</span><span class="pag">3/6</span></div>
+  <h2>Antes de ler a placa, <em>repare em três detalhes.</em></h2>
+  <div class="faixas">
+    <div class="faixa"><p class="num">01<small>FAIXA</small></p><p><strong>O cenário.</strong> Lesão do colateral ulnar da metacarpofalângica do polegar: o polegar do esquiador, no valgo forçado agudo, ou do guarda-caça, na atenuação crônica.</p></div>
+    <div class="faixa"><p class="num">02<small>FAIXA</small></p><p><strong>A pincelada.</strong> No corte coronal, procure o coto do colateral enovelado proximal à MF, por cima da aponeurose do adutor: o ioiô na corda.</p></div>
+    <div class="faixa"><p class="num">03<small>FAIXA</small></p><p><strong>O drama.</strong> Com a aponeurose no meio do caminho, o ligamento não volta ao lugar e não cicatriza sozinho.</p></div>
+  </div>
+  <div class="rodape"><span>Arraste para ver a atribuição</span><span>3/6</span></div>
+</section>
+
+<!-- p4 atribuição -->
+<section id="p4-atribuicao">
+  <div class="topo"><span class="sala">Atribuição</span><span class="pag">4/6</span></div>
+  <div class="atrib">
+    <div class="quadro"><div class="passe"><img src="../../../../public/imagens/mao/mao-0586-1.jpeg" alt=""></div></div>
+    <div class="placa"><p class="letra">Resposta C</p><p class="autor">Stener</p><p class="tec">Coto do colateral ulnar retraído sobre a aponeurose do adutor.</p></div>
+  </div>
+  <p class="resumo">A aponeurose do adutor se <strong>interpõe</strong> entre o coto e a sua inserção. Por isso a lesão de Stener é de <strong>cirurgia obrigatória</strong>: a imobilização não recoloca o ligamento. Aparece em cerca de <strong>60 a 80%</strong> das rupturas completas, às vezes como um nódulo palpável proximal à MF.</p>
+  <div class="rodape"><span>Arraste para o exame</span><span>4/6</span></div>
+</section>
+
+<!-- p5 exame -->
+<section id="p5-exame">
+  <div class="topo"><span class="sala">Catálogo · o exame</span><span class="pag">5/6</span></div>
+  <h2>Como a obra se revela <em>no consultório</em></h2>
+  <div class="tabela">
+    <div class="cab"><span>Achado no estresse em valgo</span><span>Leitura</span></div>
+    <div><span>Abertura acima de <strong>30 a 35°</strong> com a MF a 30° de flexão</span><span>Ruptura do colateral próprio</span></div>
+    <div><span>Abre também em <strong>extensão</strong></span><span>Colateral acessório junto: lesão completa</span></div>
+    <div><span><strong>15°</strong> a mais que o outro lado</span><span>Instabilidade</span></div>
+    <div><span>Sem <strong>ponto final</strong> firme</span><span>Ruptura completa</span></div>
+  </div>
+  <p class="nota">Radiografia <strong>antes</strong> do estresse, para não deslocar uma fratura-avulsão. Ultrassom ou ressonância para ver o Stener.</p>
+  <div class="rodape"><span>Arraste para o lado</span><span>5/6</span></div>
+</section>
+
+<!-- p6 outras salas -->
+<section id="p6-prova">
+  <div class="topo"><span class="sala">As outras assinaturas</span><span class="pag">6/6</span></div>
+  <h2>Nomes de <em>outras salas</em></h2>
+  <div class="salas">
+    <div class="outra"><p>Hibbs<small>Sem relação com o polegar.</small></p><span>Coluna</span></div>
+    <div class="outra"><p>Aiche<small>Reconstrução da banda central, na botoeira.</small></p><span>Dedos</span></div>
+    <div class="outra"><p>Gerber<small>Lift-off, para o subescapular.</small></p><span>Ombro</span></div>
+  </div>
+  <p class="prova"><small>Para a prova</small>Coto do colateral ulnar <strong>por cima</strong> da aponeurose do adutor na ressonância: <strong>lesão de Stener</strong>, e o tratamento é cirúrgico.</p>
+  <div class="rodape"><span>Mais questões comentadas em</span><span><b>ortoquestoes.com.br</b></span></div>
+</section>
+
+<!-- s1 story da manhã -->
+<section id="s1-exposicao" class="story">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="sala">Sala da mão</span></div>
+  <div class="quadro"><div class="passe"><img src="../../../../public/imagens/mao/mao-0586-1.jpeg" alt=""></div></div>
+  <h1>Nova obra. <em>Quem assina?</em></h1>
+  <p class="sub">Ressonância do polegar com lesão ligamentar. TARO 2025.</p>
+  <div class="opcoes"><span><b>A</b>Hibbs</span><span><b>B</b>Aiche</span><span><b>C</b>Stener</span><span><b>D</b>Gerber</span></div>
+  <p class="sub" style="margin-top:50px;color:var(--ouro-claro)">A placa com o nome sai mais tarde.</p>
+</section>
+
+<!-- s2 story da noite -->
+<section id="s2-placa" class="story">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="sala">Atribuição</span></div>
+  <div class="quadro"><div class="passe"><img src="../../../../public/imagens/mao/mao-0586-1.jpeg" alt=""></div></div>
+  <div class="placa"><p class="autor">Stener</p><p class="obra">Resposta C · TARO 2025</p><p class="tec">Coto do colateral ulnar por cima da aponeurose do adutor. Não cicatriza sozinho: cirurgia.</p></div>
+  <p class="sub" style="margin-top:50px;color:var(--ouro-claro)">A visita completa está no feed.</p>
+</section>
+</body></html>

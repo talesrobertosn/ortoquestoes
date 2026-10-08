@@ -1,9 +1,8 @@
 <!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><title>Exposição: lesão de Stener</title>
-<!-- Estilo novo "museu": a imagem real da questão vira obra emoldurada numa galeria, com placa,
-     audioguia e catálogo. Questão mao-0586 (TARO 2025), gabarito C (Stener).
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Exposição: pseudoluxação acromioclavicular</title>
+<!-- Estilo "museu" (modelo em estilos/museu/modelo.html). Questão pediatria-0915 (TEOT 2025), gabarito C.
      Feed 1080x1350 (p1 a p6) e stories 1080x1920 (s1, s2), sem figurinha e sem desenho de anatomia.
-     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-10-museu-lesao-de-stener/post.html -->
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-10-museu-pseudoluxacao-ac/post.html -->
 <style>
 @font-face { font-family: Playfair; src: url(../../fontes/playfair-display-latin-wght-normal.woff2) format('woff2'); font-weight: 400 900; }
 @font-face { font-family: Playfair; src: url(../../fontes/playfair-display-latin-wght-italic.woff2) format('woff2'); font-weight: 400 900; font-style: italic; }
@@ -38,8 +37,8 @@ section > * { position: relative; z-index: 1; }
 .rodape b { font-style: normal; font-family: Jakarta; font-weight: 700; color: var(--ouro-claro); }
 
 /* p1 capa */
-.capa .quadro { width: 520px; margin-top: 58px; transform: rotate(-.6deg); }
-.capa .placa { position: absolute; right: 84px; top: 520px; width: 280px; transform: rotate(1deg); }
+.capa .quadro { width: 860px; margin-top: 70px; transform: rotate(-.5deg); }
+.capa .placa { margin: -36px 30px 0 auto; width: 470px; transform: rotate(1.2deg); }
 .capa .placa .autor { font-size: 30px; }
 .capa h1 { margin-top: 60px; text-align: center; font: 700 86px/1.02 Playfair; letter-spacing: -.01em; }
 .capa h1 em { font-weight: 500; color: var(--ouro-claro); }
@@ -109,6 +108,21 @@ h2 em { font-weight: 500; color: var(--ouro-claro); }
 .story .placa .autor { font-size: 72px; line-height: 1; }
 .story .placa .obra { font-size: 30px; margin-top: 12px; }
 .story .placa .tec { font-size: 32px; }
+</style><style>
+.largo .quadro { padding: 18px; } .largo .quadro .passe { padding: 28px; }
+.ficha2 { margin-top: 34px; } .ficha2 .quadro { width: 640px; margin: 0 auto; }
+.ficha2 .cartao { margin-top: 30px; padding: 32px 40px; }
+.ficha2 .cartao p { font-size: 36px; margin-top: 12px; }
+.ficha2 .cartao ol { grid-template-columns: 1fr 1fr; gap: 12px 24px; }
+.ficha2 .cartao li { font-size: 30px; font-family: Serif4; font-weight: 600; }
+.ficha2 .cartao hr { margin: 22px 0 18px; }
+.atrib2 { margin-top: 40px; } .atrib2 .quadro { width: 720px; }
+.atrib2 .placa { margin: -40px 0 0 auto; width: 560px; position: relative; padding: 32px 36px; transform: rotate(.8deg); }
+.atrib2 .placa .letra { font: 700 22px Inter; letter-spacing: .26em; color: var(--vinho); text-transform: uppercase; }
+.atrib2 .placa .autor { margin-top: 6px; font-size: 56px; line-height: 1.02; }
+.atrib2 .placa .tec { font-size: 27px; margin-top: 12px; }
+.tabela div { grid-template-columns: .8fr 1fr 1fr; }
+.story .quadro { width: 900px; }
 </style></head><body>
 
 <svg width="0" height="0" style="position:absolute"><defs>
@@ -120,27 +134,27 @@ h2 em { font-weight: 500; color: var(--ouro-claro); }
 
 <!-- p1 capa -->
 <section id="p1-capa" class="capa">
-  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="sala">Sala da mão</span></div>
-  <div class="quadro"><div class="passe"><img src="../../../../public/imagens/mao/mao-0586-1.jpeg" alt=""></div></div>
-  <div class="placa"><p class="autor">Autor desconhecido</p><p class="obra">Polegar, 2025</p><p class="tec">Ressonância magnética. Acervo da prova TARO.</p></div>
-  <h1>Nova obra em exposição. <em>Quem assina?</em></h1>
-  <p class="sub">A banca pendurou esta ressonância na parede. Arraste e descubra o autor.</p>
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="sala">Sala da pediatria</span></div>
+  <div class="quadro"><div class="passe"><img src="../../../../public/imagens/pediatria/pediatria-0915-teot2025.jpeg" alt=""></div></div>
+  <div class="placa"><p class="autor">Autor desconhecido</p><p class="obra">Ombro esquerdo, 11 anos</p><p class="tec">Radiografia. Acervo da prova TEOT 2025.</p></div>
+  <h1 style="margin-top:46px">Parece obra de adulto. <em>Não é.</em></h1>
+  <p class="sub">Menino atropelado, com dor no ombro. Arraste e leia a placa.</p>
   <div class="rodape"><span>Arraste para visitar a sala</span><span>1/6</span></div>
 </section>
 
 <!-- p2 ficha -->
-<section id="p2-ficha">
+<section id="p2-ficha" class="largo">
   <div class="topo"><span class="sala">Ficha da obra</span><span class="pag">2/6</span></div>
-  <div class="ficha">
-    <div class="quadro"><div class="passe"><img src="../../../../public/imagens/mao/mao-0586-1.jpeg" alt=""></div></div>
+  <div class="ficha2">
+    <div class="quadro"><div class="passe"><img src="../../../../public/imagens/pediatria/pediatria-0915-teot2025.jpeg" alt=""></div></div>
     <div class="cartao">
-      <small>TARO 2025 · Mão</small>
-      <p>A imagem a seguir corresponde a uma ressonância magnética do polegar com evidência de lesão ligamentar de</p>
+      <small>TEOT 2025 · Pediatria</small>
+      <p>Um menino de 11 anos, vítima de atropelamento por carro, apresenta-se na emergência com queixa de dor no ombro esquerdo e impotência funcional. Conforme a imagem a seguir, o diagnóstico mais provável é de:</p>
       <hr>
-      <ol><li><b>A</b>HIBBS.</li><li><b>B</b>AICHE.</li><li><b>C</b>STENER.</li><li><b>D</b>GERBER.</li></ol>
+      <ol><li><b>A</b>Fratura do úmero proximal.</li><li><b>B</b>Fratura do colo da escápula.</li><li><b>C</b>Pseudoluxação acromioclavicular.</li><li><b>D</b>Rotura dos ligamentos coracoclaviculares.</li></ol>
     </div>
   </div>
-  <p class="convite">Deixe a sua atribuição nos comentários.</p>
+  <p class="convite" style="margin-top:30px">Deixe a sua atribuição nos comentários.</p>
   <div class="rodape"><span>Questão real da prova</span><span><b>ortoquestoes.com.br</b></span></div>
 </section>
 
@@ -149,67 +163,67 @@ h2 em { font-weight: 500; color: var(--ouro-claro); }
   <div class="topo"><span class="sala">Audioguia</span><span class="pag">3/6</span></div>
   <h2>Antes de ler a placa, <em>repare em três detalhes.</em></h2>
   <div class="faixas">
-    <div class="faixa"><p class="num">01<small>FAIXA</small></p><p><strong>O cenário.</strong> Lesão do colateral ulnar da metacarpofalângica do polegar: o polegar do esquiador, no valgo forçado agudo, ou do guarda-caça, na atenuação crônica.</p></div>
-    <div class="faixa"><p class="num">02<small>FAIXA</small></p><p><strong>A pincelada.</strong> No corte coronal, procure o coto do colateral enovelado proximal à MF, por cima da aponeurose do adutor: o ioiô na corda.</p></div>
-    <div class="faixa"><p class="num">03<small>FAIXA</small></p><p><strong>O drama.</strong> Com a aponeurose no meio do caminho, o ligamento não volta ao lugar e não cicatriza sozinho.</p></div>
+    <div class="faixa"><p class="num">01<small>FAIXA</small></p><p><strong>O olhar.</strong> A clavícula distal está deslocada em relação ao ombro, num esqueleto que ainda está crescendo.</p></div>
+    <div class="faixa"><p class="num">02<small>FAIXA</small></p><p><strong>O truque.</strong> A epífise distal, pouco ossificada, fica alinhada ao acrômio enquanto a metáfise se desloca. A parte de cartilagem não aparece no raio X.</p></div>
+    <div class="faixa"><p class="num">03<small>FAIXA</small></p><p><strong>Os bastidores.</strong> Os ligamentos coracoclaviculares costumam seguir presos na manga periosteal.</p></div>
   </div>
   <div class="rodape"><span>Arraste para ver a atribuição</span><span>3/6</span></div>
 </section>
 
 <!-- p4 atribuição -->
-<section id="p4-atribuicao">
+<section id="p4-atribuicao" class="largo">
   <div class="topo"><span class="sala">Atribuição</span><span class="pag">4/6</span></div>
-  <div class="atrib">
-    <div class="quadro"><div class="passe"><img src="../../../../public/imagens/mao/mao-0586-1.jpeg" alt=""></div></div>
-    <div class="placa"><p class="letra">Resposta C</p><p class="autor">Stener</p><p class="tec">Coto do colateral ulnar retraído sobre a aponeurose do adutor.</p></div>
+  <div class="atrib2">
+    <div class="quadro"><div class="passe"><img src="../../../../public/imagens/pediatria/pediatria-0915-teot2025.jpeg" alt=""></div></div>
+    <div class="placa"><p class="letra">Resposta C</p><p class="autor">Pseudoluxação acromioclavicular</p><p class="tec">Lesão fisária ou metafisária da clavícula distal.</p></div>
   </div>
-  <p class="resumo">A aponeurose do adutor se <strong>interpõe</strong> entre o coto e a sua inserção. Por isso a lesão de Stener é de <strong>cirurgia obrigatória</strong>: a imobilização não recoloca o ligamento. Aparece em cerca de <strong>60 a 80%</strong> das rupturas completas, às vezes como um nódulo palpável proximal à MF.</p>
-  <div class="rodape"><span>Arraste para o exame</span><span>4/6</span></div>
+  <p class="resumo" style="margin-top:40px">Na criança, a aparência de luxação acromioclavicular costuma ser <strong>lesão da fise</strong> da clavícula distal. Reconhecer a pseudoluxação evita aplicar <strong>classificações e tratamentos do adulto</strong> a uma lesão pediátrica.</p>
+  <div class="rodape"><span>Arraste para o catálogo</span><span>4/6</span></div>
 </section>
 
-<!-- p5 exame -->
-<section id="p5-exame">
-  <div class="topo"><span class="sala">Catálogo · o exame</span><span class="pag">5/6</span></div>
-  <h2>Como a obra se revela <em>no consultório</em></h2>
+<!-- p5 adulto x criança -->
+<section id="p5-catalogo">
+  <div class="topo"><span class="sala">Catálogo · duas obras parecidas</span><span class="pag">5/6</span></div>
+  <h2>Mesma moldura, <em>outra técnica</em></h2>
   <div class="tabela">
-    <div class="cab"><span>Achado no estresse em valgo</span><span>Leitura</span></div>
-    <div><span>Abertura acima de <strong>30 a 35°</strong> com a MF a 30° de flexão</span><span>Ruptura do colateral próprio</span></div>
-    <div><span>Abre também em <strong>extensão</strong></span><span>Colateral acessório junto: lesão completa</span></div>
-    <div><span><strong>15°</strong> a mais que o outro lado</span><span>Instabilidade</span></div>
-    <div><span>Sem <strong>ponto final</strong> firme</span><span>Ruptura completa</span></div>
+    <div class="cab"><span></span><span>Adulto</span><span>Criança</span></div>
+    <div><strong>Lesão</strong><span>Separação acromioclavicular, ligamentar</span><span>Fise ou metáfise da clavícula distal</span></div>
+    <div><strong>Epífise distal</strong><span>Não se aplica</span><span>Fica alinhada ao acrômio, pouco visível</span></div>
+    <div><strong>Ligamentos CC</strong><span>Rompidos na separação típica</span><span>Seguem presos na manga periosteal</span></div>
+    <div><strong>Cuidado</strong><span>Classificar como luxação</span><span>Não usar a régua do adulto</span></div>
   </div>
-  <p class="nota">Radiografia <strong>antes</strong> do estresse, para não deslocar uma fratura-avulsão. Ultrassom ou ressonância para ver o Stener.</p>
+  <p class="nota">Idade e mecanismo entram na leitura da imagem. A conduta depende do <strong>deslocamento</strong>, das partes moles e da avaliação completa.</p>
   <div class="rodape"><span>Arraste para o lado</span><span>5/6</span></div>
 </section>
 
 <!-- p6 outras salas -->
 <section id="p6-prova">
   <div class="topo"><span class="sala">As outras assinaturas</span><span class="pag">6/6</span></div>
-  <h2>Nomes de <em>outras salas</em></h2>
+  <h2>Por que <em>não são</em> as outras</h2>
   <div class="salas">
-    <div class="outra"><p>Hibbs<small>Sem relação com o polegar.</small></p><span>Coluna</span></div>
-    <div class="outra"><p>Aiche<small>Reconstrução da banda central, na botoeira.</small></p><span>Dedos</span></div>
-    <div class="outra"><p>Gerber<small>Lift-off, para o subescapular.</small></p><span>Ombro</span></div>
+    <div class="outra"><p>Úmero proximal<small>Seria vista no úmero; a imagem aponta a clavícula distal.</small></p><span>A</span></div>
+    <div class="outra"><p>Colo da escápula<small>Exige linha de fratura na escápula.</small></p><span>B</span></div>
+    <div class="outra"><p>Rotura coracoclavicular<small>Leva o mecanismo do adulto para a criança.</small></p><span>D</span></div>
   </div>
-  <p class="prova"><small>Para a prova</small>Coto do colateral ulnar <strong>por cima</strong> da aponeurose do adutor na ressonância: <strong>lesão de Stener</strong>, e o tratamento é cirúrgico.</p>
+  <p class="prova"><small>Para a prova</small>Criança com cara de luxação acromioclavicular: pense primeiro em <strong>pseudoluxação</strong>, com os ligamentos coracoclaviculares presos à manga periosteal.</p>
   <div class="rodape"><span>Mais questões comentadas em</span><span><b>ortoquestoes.com.br</b></span></div>
 </section>
 
 <!-- s1 story da manhã -->
 <section id="s1-exposicao" class="story">
-  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="sala">Sala da mão</span></div>
-  <div class="quadro"><div class="passe"><img src="../../../../public/imagens/mao/mao-0586-1.jpeg" alt=""></div></div>
-  <h1>Nova obra. <em>Quem assina?</em></h1>
-  <p class="sub">Ressonância do polegar com lesão ligamentar. TARO 2025.</p>
-  <div class="opcoes"><span><b>A</b>Hibbs</span><span><b>B</b>Aiche</span><span><b>C</b>Stener</span><span><b>D</b>Gerber</span></div>
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="sala">Sala da pediatria</span></div>
+  <div class="quadro"><div class="passe"><img src="../../../../public/imagens/pediatria/pediatria-0915-teot2025.jpeg" alt=""></div></div>
+  <h1>Parece de adulto. <em>Que lesão é esta?</em></h1>
+  <p class="sub">Menino de 11 anos, atropelado, com dor no ombro esquerdo. TEOT 2025.</p>
+  <div class="opcoes"><span><b>A</b>Úmero proximal</span><span><b>B</b>Colo da escápula</span><span><b>C</b>Pseudoluxação AC</span><span><b>D</b>Rotura coracoclavicular</span></div>
   <p class="sub" style="margin-top:50px;color:var(--ouro-claro)">A placa com o nome sai mais tarde.</p>
 </section>
 
 <!-- s2 story da noite -->
 <section id="s2-placa" class="story">
   <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="sala">Atribuição</span></div>
-  <div class="quadro"><div class="passe"><img src="../../../../public/imagens/mao/mao-0586-1.jpeg" alt=""></div></div>
-  <div class="placa"><p class="autor">Stener</p><p class="obra">Resposta C · TARO 2025</p><p class="tec">Coto do colateral ulnar por cima da aponeurose do adutor. Não cicatriza sozinho: cirurgia.</p></div>
+  <div class="quadro"><div class="passe"><img src="../../../../public/imagens/pediatria/pediatria-0915-teot2025.jpeg" alt=""></div></div>
+  <div class="placa"><p class="autor">Pseudoluxação acromioclavicular</p><p class="obra">Resposta C · TEOT 2025</p><p class="tec">Na criança, a clavícula distal desloca pela fise, e os ligamentos coracoclaviculares seguem presos à manga periosteal.</p></div>
   <p class="sub" style="margin-top:50px;color:var(--ouro-claro)">A visita completa está no feed.</p>
 </section>
 </body></html>

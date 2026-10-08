@@ -240,6 +240,8 @@ museu, audioguia e catálogo. Aprovado pelo dono em 08/10/2026 ("esse estilo aí
 - **Estrutura:** capa (obra + placa "Autor desconhecido" + gancho) → ficha da obra (questão inteira)
   → audioguia (3 faixas: o que observar) → atribuição (placa com a resposta) → catálogo (tabela que
   a prova cobra) → outras assinaturas (por que não são as outras) + "Para a prova".
-- **Precisa de:** questão com imagem real (radiografia, ressonância, foto da prova). Imagem vertical
-  usa o layout do `modelo.html`; horizontal, o de `posts/2026-10-10-museu-pseudoluxacao-ac`.
+- **Precisa de:** questão com imagem real (radiografia, ressonância, foto da prova). Imagem
+  horizontal usa o `modelo.html` (pseudoluxação AC, o post aprovado); vertical, o
+  `modelo-vertical.html` (lesão de Stener; essa questão já foi publicada, não repetir).
+- **Criar:** `node marketing/instagram/estilos/sortear.mjs criar museu <slug>`.
 - **Stories:** `s1` obra + "Quem assina?" + alternativas curtas; `s2` obra + placa com a resposta.
