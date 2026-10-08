@@ -154,6 +154,12 @@ completo: a seção de instabilidade glenoumeral desse arquivo.
 
 ## Lições aprendidas (atualizar a cada capítulo)
 
+- **Paginação de capítulo isolado (08/10/2026, pedido do dono do projeto).** Não citar nos
+  comentários a posição da folha no PDF recortado como se fosse página do livro. Usar livro,
+  edição, capítulo, seção e figura ou tabela. A posição no PDF fica no plano e no campo interno
+  `origem.pagina`, para conferir a fonte; página bibliográfica só quando a numeração impressa
+  do livro estiver efetivamente visível no material enviado.
+
 - **Tamanho do comentário (07/10/2026).** Os capítulos aprovados 1, 2 e 4 ficaram com mediana de 4,5
   a 5,8 mil caracteres; os seguintes caíram para 3 a 3,8 mil (24 e 25 ficaram em 3 mil). O que mais
   encurta é a análise das alternativas: cada uma precisa de um parágrafo de verdade (o que diz, de
@@ -217,7 +223,8 @@ toda questão de simulado feita a partir de agora.
 - `prova: null`, `ano: null`, `simulado: true`, sem `area`: a questão mostra só a etiqueta
   OrtoQuestões Simulados e os subtemas, sem nome de prova (entram no treino de Ortopedia e
   no Cronograma, mas não no cálculo dos Temas que mais caem).
-- Origem: arquivo do capítulo e página; referência no comentário com livro, edição, capítulo e
-  página.
+- Origem: arquivo do capítulo e posição no PDF, para auditoria interna; referência no comentário
+  com livro, edição, capítulo, seção e figura ou tabela. Não exibir a posição no capítulo
+  recortado como página bibliográfica.
 - O aviso da questão explica que ela é autoral, feita por engenharia reversa das provas anteriores
   a partir da bibliografia, visando o aprendizado, e que não é questão oficial.

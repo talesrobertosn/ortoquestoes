@@ -1198,5 +1198,119 @@ Esses são **alvos de leitura**, não fatos já confirmados nem uma quantidade p
 questões. O plano posterior terá uma linha por questão, com fato e página do PDF, motivo
 (repetição, tendência ou lacuna de prova) e formato. A autorização vigente permite publicar
 o lote pronto sem nova confirmação, mas não dispensa leitura, plano, conferência e validação.
-**Falta o PDF específico deste capítulo** para avançar para essa etapa. Nesta tarefa foram
-concluídos a leitura do banco e o mapa; nenhuma questão nova foi redigida ou publicada.
+**Estado ao concluir a engenharia reversa, antes do envio do capítulo:** faltava o PDF específico.
+Naquela etapa foram concluídos a leitura do banco e o mapa, sem redigir ou publicar questões.
+O recebimento e o aproveitamento posterior estão registrados abaixo.
+
+
+### Capítulo recebido, confronto e plano executado (08/10/2026)
+
+Foi recebido e lido integralmente **Rockwood and Green's Fractures in Adults, 10ª edição,
+capítulo 40, Elbow Dislocations and Terrible Triad Injuries**, de Graham J. W. King,
+Daphne M. Beingessner e J. Whitcomb Pollock: **63 folhas do PDF isolado**, incluindo
+figuras, algoritmos e referências. O capítulo também abrange cabeça radial, coronoide,
+instabilidade posteromedial e ulna proximal. A leitura integral não foi substituída pelas
+legendas ou pelos comentários anteriores do banco.
+
+**Paginação:** o dono do projeto esclareceu nesta etapa que a contagem do PDF recortado
+não corresponde à paginação do livro. Nenhum comentário novo cita essa contagem.
+Livro, edição, capítulo, seção e figuras são as referências apresentadas ao leitor.
+Os localizadores abaixo e `origem.pagina` permanecem internos, apenas para auditoria.
+
+Confronto da banca com a fonte:
+
+- O modelo clássico lateral, cápsula e medial está descrito, mas a edição também relata
+  padrões mediais iniciais e preservação lateral. O item de HORII delimita o modelo,
+  sem chamá-lo de regra universal de todas as luxações.
+- Mecanismos típicos confirmados: posterolateral com valgo/supinação/carga axial;
+  posteromedial com varo/pronação/carga axial. Não incorporar as inversões de ENARE
+  0536/0539 ao conteúdo novo.
+- Tubérculo sublime recebe o feixe anterior medial. A banda ulnar lateral se insere
+  na crista do supinador. A figura lateral de 0249 e seu comentário conflitante
+  permanecem como pendência dos registros oficiais, sem reutilização.
+- Pronação favorece a deficiência lateral, e o reparo lateral descrito usa 90°.
+  Deficiência combinada de coronoide e lateral tem orientação inicial em neutro:
+  não extrapolar a proteção lateral isolada a todos os padrões.
+- Tríade selecionada pode ser conservadora: congruência, ausência de bloqueio,
+  fragmento adequado e arco estável, com acompanhamento rigoroso. Reluxação acima
+  de 30° na luxação simples é outro contexto e exige considerar cirurgia.
+- Ponta pequena pode receber sutura capsular ou, seletivamente, não ser fixada se
+  o conjunto é estável. Faceta anteromedial operada exige suporte estável contra varo.
+  O'DRISCOLL não é equivalente automático aos cortes de altura de REGAN-MORREY.
+- Medial é reparado conforme instabilidade residual após ossos e lateral. Dispositivos
+  temporários não são obrigatórios para toda tríade, e preferência de fixador dos
+  autores não foi transformada em superioridade universal.
+- Drop sign isolado pode melhorar com tônus e movimento ativo protegido; reluxação
+  franca e subluxação persistente exigem outra avaliação. O item conserva essa condição.
+- Excesso de altura é causa técnica mais comum de falha da prótese radial; afrouxamento
+  asséptico é causa mais frequente de revisão na revisão sistemática citada. Não misturar
+  esses rankings nem dimensionar a prótese pelo espaço lateral aberto da lesão.
+- Transolecraniana anterior mantém relativamente a radioulnar proximal; Monteggia
+  posterior exige restaurar comprimento, angulação dorsal e forma da ulna.
+
+O plano foi escrito e apresentado antes das questões. As linhas abaixo registram sua
+execução. O destino é **trauma**, subtema de cabeça radial e instabilidade do cotovelo;
+transolecraniana está no olécrano, e Monteggia também nas fraturas do antebraço.
+
+| ID | Gabarito | Fato e localizador interno no PDF | Motivo | Formato |
+|---|---|---|---|---|
+| trauma-1407 | A | Varo e pronação na instabilidade posteromedial, p. 38 | Fato carimbado: TARO 2020/2025 e TEOT 2024 | Par 2 × 2 |
+| trauma-1408 | D | Modelo clássico de Horii: lateral, cápsula, medial, p. 3 | Fato carimbado: TARO 2010/2012/2019; explicitar limite do modelo | Sequência |
+| trauma-1409 | D | Feixe anterior medial no tubérculo sublime, p. 4 | Fato carimbado: TARO 2016 e TEOT 2023 | Anatomia direta |
+| trauma-1410 | C | Reparo lateral a 90° em pronação, p. 8 | Tendência recente: TEOT/TARO 2021 e TEOT 2023 | Par 2 × 2 |
+| trauma-1411 | A | Nervo ulnar mais atingido na luxação simples, p. 3 | Tendência recente: TARO 2025 | Mais frequente |
+| trauma-1412 | D | Drop sign pode melhorar com recuperação do tônus e movimento ativo, p. 6 | Tendência recente: TARO 2024; limitar ao achado sem reluxação franca | Conduta |
+| trauma-1413 | C | Reluxação acima de 30° de flexão sinaliza instabilidade importante, p. 5 | Lacuna com cara de prova: limiar que muda a conduta | Número |
+| trauma-1414 | D | Bloqueio mecânico versus dor na fratura radial, p. 14/17 | Fato carimbado: TARO 2011/2015 | Indicação |
+| trauma-1415 | B | Zona segura lateral da cabeça radial com antebraço neutro, p. 14/21 | Fato carimbado: TARO 2020; tendência TARO 2025 | Par 2 × 2 |
+| trauma-1416 | C | Fixação da cabeça radial tem resultados melhores com até três fragmentos, p. 17/23 | Lacuna com cara de prova: corte sem tornar Mason III sinônimo de prótese | Número |
+| trauma-1417 | B | Excesso de altura é a falha técnica mais comum da prótese radial, p. 24 | Fato carimbado: TARO 2019, sobrecarga do capitelo; distinguir causa de revisão | Mais frequente |
+| trauma-1418 | B | Diâmetro menor da cabeça elíptica orienta prótese axissimétrica, p. 24 | Lacuna com cara de prova: medida anatômica decisiva | Medida |
+| trauma-1419 | D | Essex-Lopresti: cabeça radial, membrana interóssea e radioulnar distal, p. 13/27 | Fato carimbado: TARO 2012/2019 | Associação |
+| trauma-1420 | C | O'Driscoll II.3 inclui tubérculo sublime, p. 30 | Tendência recente: TEOT 2024 | Tipo |
+| trauma-1421 | B | Coronoide tipo I associado à fratura da cabeça radial, p. 31 | Fato carimbado: TARO 2018; outro ângulo da tríade | Associação |
+| trauma-1422 | A | Coronoide antes da cabeça radial e do lateral, p. 34 | Tendência recente: TEOT 2022 | Sequência |
+| trauma-1423 | A | Tríade selecionada: redução concêntrica, arco estável e ausência de bloqueio, p. 32 | Lacuna com cara de prova: exceção verificável ao tratamento cirúrgico usual | Critério |
+| trauma-1424 | C | Ponta pequena: sutura capsular; faceta anteromedial: placa de suporte, p. 34/45 | Fato carimbado: tipos I/II; lacuna de técnica por padrão | Par 2 × 2 |
+| trauma-1425 | D | Reparo medial depende da instabilidade após ossos e lateral, p. 35 | Tendência recente: TEOT 2022, sem tornar reparo medial obrigatório | Próxima etapa |
+| trauma-1426 | C | Imagem da figura 40-19C: faceta anteromedial, O'Driscoll II, p. 43 | Tendência recente: TEOT 2025, classificação por TC | Imagem e par 2 × 2 |
+| trauma-1427 | B | TC 3D recomendada na suspeita de fratura anteromedial, p. 39 | Tendência recente: reconhecimento radiográfico/TC de TEOT 2025 | Exame |
+| trauma-1428 | A | Reabilitação da deficiência lateral e do coronoide em rotação neutra, p. 41 | Fato carimbado: pronação protetora; lacuna sobre deficiência combinada | Posição |
+| trauma-1429 | A | Transolecraniana anterior preserva radioulnar proximal, p. 48/55 | Lacuna com cara de prova: distinguir transolecraniana e Monteggia | Imagem e par 2 × 2 |
+| trauma-1430 | B | Monteggia posterior exige restaurar comprimento e angulação dorsal da ulna, p. 56/58 | Fato carimbado: TARO 2012; tendência TARO 2025 | Princípio de redução |
+
+**Aproveitamento:** trauma-1407 a trauma-1430, **24 questões**, duas com imagem:
+1426 usa a TC recortada da figura 40-19C; 1429 usa as radiografias iniciais da figura
+40-23A/B. Ambos os recortes foram abertos e conferidos antes de aplicar. O caso da
+figura 40-19 é congruente e conservador; o item pergunta pelo padrão associado ao
+fragmento, sem afirmar subluxação presente na imagem.
+
+**Conferência editorial:** seis pares 2 × 2 (25%), zero casos clínicos longos,
+enunciados de 83 a 131 caracteres, alternativas em ordem crescente de tamanho, com
+prioridade numérica nos pares de graus. Gabarito **A 6, B 6, C 6, D 6**.
+Comentários: mediana **6.835**, mínimo **6.243**, máximo **7.224** caracteres.
+Cada distrator tem análise independente de 400 a 700 caracteres. Mediana superior
+à do capítulo 39 aprovado (6.150). Todos os comentários permanecem `conferido: false`.
+Questões e comentários anteriores foram comparados estruturalmente e preservados.
+
+**Validação:** conferência dos lotes sem erros ou avisos; índice, busca e progresso
+regenerados; acervo validado sem erros; 23 casos de detecção, contrato de paywall,
+revisão/migração/filtros/URLs/backup e build passaram. Há avisos gerais de cadastro e
+revisão humana do acervo, que não foram ocultados ou convertidos em revisão médica.
+Interface local conferida em quatro itens, incluindo tabelas e as duas imagens;
+layout móvel do item 1426 sem overflow. A autenticação e as requisições Supabase
+foram simuladas somente no teste local de apresentação, sem alteração de dados remotos.
+
+**Pendências e exclusões:** Parvin, milking e a limitação inveterada atribuída ao
+bíceps não receberam questões por falta de descrição suficiente nesta fonte.
+Não cobrar marcas comerciais, porcentagens de pequenas séries, números de biomecânica
+experimental, prótese universal em MASON III, profilaxia comprovada com indometacina
+ou superioridade obrigatória de fixador articulado. Os defeitos dos registros oficiais
+listados na engenharia reversa continuam rastreáveis e não foram modificados.
+
+**Inconsistências internas do capítulo:** o texto de Mayo inverte A/B em relação à
+figura 40-20 e às próprias indicações de fixação. Não foi formulado item sobre essa
+subdivisão. O algoritmo 40-3 contém rótulos finais de estabilidade incompatíveis com
+os respectivos caminhos de estabilização; as questões se apoiam na narrativa técnica,
+que indica medial e proteção adicional conforme instabilidade residual. Nenhuma
+inconsistência gráfica foi ensinada como regra clínica.
