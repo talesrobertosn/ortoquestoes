@@ -238,7 +238,7 @@
   cursor: pointer;
 }
 .acesso__olho:hover { background: var(--superficie-2); color: var(--texto); }
-.entrada.entrada--invalida { border-color: var(--erro); }
+.entrada.entrada--invalida, .entrada.entrada--invalida:focus { border-color: var(--erro); box-shadow: 0 0 0 3px var(--erro-veu); }
 .acesso__confere { display: inline-flex; align-items: center; gap: 0.35rem; font-size: var(--meta); font-weight: 600; }
 .acesso__confere--ok { color: var(--acerto); }
 .acesso__confere--nao { color: var(--erro); }

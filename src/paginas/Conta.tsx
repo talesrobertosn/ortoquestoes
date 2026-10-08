@@ -19,6 +19,8 @@ import { dadosAceiteTermos, VERSAO_TERMOS } from '../conta/termos'
 import { dadosOrigem } from '../conta/origem'
 import { eventoMeta } from '../conta/consentimento'
 import { textoErro } from '../conta/erros'
+import { gravarConfirmacaoPendente, lerConfirmacaoPendente, limparConfirmacaoPendente } from '../conta/confirmacaoPendente'
+import { ModalConfirmarEmail } from '../componentes/ModalConfirmarEmail'
 import { Icone } from '../componentes/Icone'
 import { BotaoGoogle } from '../componentes/BotaoGoogle'
 import { Medalha } from '../componentes/Medalha'
@@ -56,6 +58,19 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   // já usado, aberto em outro navegador). Ver conta/retornoAuth.ts.
   const [ocupado, definirOcupado] = useState(false), [mensagem, definirMensagem] = useState(avisoConta)
   const [novoEmail, definirNovoEmail] = useState('')
+  // Erro do formulário de entrar/cadastrar: aparece grande, junto do botão (o
+  // aviso no topo passava batido, principalmente com o teclado do celular aberto).
+  const [erroForm, definirErroForm] = useState<{ texto: string; codigo?: string; n: number } | null>(null)
+  const falhar = (texto: string, codigo?: string) => { definirMensagem(''); definirErroForm((e) => ({ texto, codigo, n: (e?.n ?? 0) + 1 })) }
+  // Cadastro feito e e-mail ainda não confirmado: pop-up no meio da tela.
+  const [pendente, definirPendente] = useState<string | null>(lerConfirmacaoPendente)
+  useEffect(() => { if (sessao) { limparConfirmacaoPendente(); definirPendente(null) } }, [sessao])
+  useEffect(() => {
+    if (!erroForm) return
+    // Senha errada: o foco volta para a senha, já selecionada, para redigitar.
+    if (erroForm.codigo === 'invalid_credentials') document.querySelector<HTMLInputElement>('#acesso-senha')?.select()
+    document.querySelector('.aviso-formulario--destaque')?.scrollIntoView({ block: 'center', behavior: 'smooth' })
+  }, [erroForm])
   const [importado, definirImportado] = useState(false)
   const administrador = usarAdministrador(sessao?.user.id)
   // null = ainda não sabemos (ou o banco não tem a preferência): o interruptor fica escondido.
@@ -137,14 +152,14 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     } catch { definirMensagem('Não foi possível salvar o perfil agora.') }
     finally { definirSalvandoPerfil(false) }
   }
-  function perfilCompleto() {
-    if (nome.trim().length < 2) { definirMensagem('Informe seu nome.'); return false }
-    if (sobrenome.trim().length < 2) { definirMensagem('Informe seu sobrenome.'); return false }
-    if (!nascimento || new Date(`${nascimento}T12:00:00`).getTime() > Date.now()) { definirMensagem('Informe uma data de nascimento válida.'); return false }
-    if (!situacao) { definirMensagem('Informe sua etapa profissional.'); return false }
-    if (situacao === 'residente' && !anoResidencia) { definirMensagem('Informe o ano da residência (R1, R2 ou R3).'); return false }
-    if (!provas.length) { definirMensagem('Marque ao menos uma prova para a qual você estuda.'); return false }
-    if (servico.trim().length < 2) { definirMensagem('Informe o serviço onde você atua ou faz residência.'); return false }
+  function perfilCompleto(avisar: (texto: string) => void = definirMensagem) {
+    if (nome.trim().length < 2) { avisar('Informe seu nome.'); return false }
+    if (sobrenome.trim().length < 2) { avisar('Informe seu sobrenome.'); return false }
+    if (!nascimento || new Date(`${nascimento}T12:00:00`).getTime() > Date.now()) { avisar('Informe uma data de nascimento válida.'); return false }
+    if (!situacao) { avisar('Informe sua etapa profissional.'); return false }
+    if (situacao === 'residente' && !anoResidencia) { avisar('Informe o ano da residência (R1, R2 ou R3).'); return false }
+    if (!provas.length) { avisar('Marque ao menos uma prova para a qual você estuda.'); return false }
+    if (servico.trim().length < 2) { avisar('Informe o serviço onde você atua ou faz residência.'); return false }
     return true
   }
   function dadosPerfil() {
@@ -161,7 +176,8 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     e.preventDefault()
     if (!supabase || ocupado) return
     const pedeConfirmacao = recuperacao || modo === 'criar'
-    if (pedeConfirmacao && senha !== confirmacao) { definirMensagem('As senhas não coincidem. Digite a mesma senha nos dois campos.'); return }
+    definirErroForm(null)
+    if (pedeConfirmacao && senha !== confirmacao) { falhar('As senhas não coincidem. Digite a mesma senha nos dois campos.'); return }
     definirOcupado(true); definirMensagem(''); definirAvisoConta('')
     try {
       if (recuperacao && sessao) {
@@ -172,24 +188,35 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
         const { error } = await supabase.auth.signInWithPassword({ email: email.trim(), password: senha })
         if (error) throw error
         lembrarEmail(email.trim())
+        limparConfirmacaoPendente()
         definirSenha('')
         // Convite aberto antes de entrar (liga da residência): volta para ele.
         const voltar = consulta?.get('voltar')
         if (voltar && voltar.startsWith('/') && !voltar.startsWith('//')) navegar(voltar)
         else navegar('/')
       } else if (modo === 'criar') {
-        if (!aceitouTermos) { definirMensagem('Leia e aceite os Termos de Uso para criar sua conta.'); return }
-        if (!perfilCompleto()) return
-        const { error } = await supabase.auth.signUp({ email: email.trim(), password: senha, options: { emailRedirectTo: retornoConta(), data: { ...dadosPerfil(), ...dadosAceiteTermos(), ...dadosOrigem() } } })
+        if (!aceitouTermos) { falhar('Marque que leu e aceita os Termos de Uso para criar sua conta.'); return }
+        if (!perfilCompleto(falhar)) return
+        const { data, error } = await supabase.auth.signUp({ email: email.trim(), password: senha, options: { emailRedirectTo: retornoConta(), data: { ...dadosPerfil(), ...dadosAceiteTermos(), ...dadosOrigem() } } })
         if (error) throw error
+        // Com a confirmação ligada, o Supabase não revela que o e-mail já existe:
+        // devolve um usuário sem identidades. É o sinal de cadastro repetido.
+        if (data.user && data.user.identities?.length === 0) { falhar('Este e-mail já tem cadastro no Orto Questões. Entre com a sua senha ou recupere o acesso.', 'ja_cadastrado'); return }
         eventoMeta('CompleteRegistration', { content_name: 'email' })
-        definirSenha(''); definirConfirmacao(''); definirMensagem('Confira seu e-mail para concluir o cadastro. Se já tiver uma conta, use Entrar ou recuperar senha.')
+        if (data.session) { navegar('/'); return }
+        gravarConfirmacaoPendente(email.trim())
+        definirPendente(email.trim())
       } else {
         const { error } = await supabase.auth.resetPasswordForEmail(email.trim(), { redirectTo: retornoConta(true) })
         if (error) throw error
         definirMensagem('Se houver uma conta para esse e-mail, você receberá um link para redefinir a senha. Abra o link neste mesmo navegador.')
       }
-    } catch (e) { definirMensagem(textoErro((e as { code?: string }).code)) }
+    } catch (e) {
+      const codigo = (e as { code?: string }).code
+      // Conta criada mas ainda sem confirmar: o pop-up explica e reenvia.
+      if (codigo === 'email_not_confirmed') { definirPendente(email.trim()); return }
+      falhar(textoErro(codigo), codigo)
+    }
     finally { definirOcupado(false) }
   }
   async function reenviar() {
@@ -198,7 +225,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     try {
       const { error } = await supabase.auth.resend({ type: 'signup', email: email.trim(), options: { emailRedirectTo: retornoConta() } })
       if (error) throw error
-      definirMensagem('Se houver um cadastro pendente, enviaremos uma nova confirmação. Abra o link neste mesmo navegador.')
+      definirPendente(email.trim())
     } catch (e) { definirMensagem(textoErro((e as { code?: string }).code)) }
     finally { definirOcupado(false) }
   }
@@ -246,7 +273,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     const pendentes = [...planoRevisao(indice, contexto.respondidas, 1, ritmo).values()].reduce((total, dia) => total + dia.ids.length, 0)
     return { respondidas: registros.length, acerto: tentativas ? Math.round((acertos / tentativas) * 100) : null, pendentes }
   })() : null
-  const trocarModo = (m: typeof modo) => { definirModo(m); definirMensagem(''); definirSenha(''); definirConfirmacao('') }
+  const trocarModo = (m: typeof modo) => { definirModo(m); definirMensagem(''); definirErroForm(null); definirSenha(''); definirConfirmacao('') }
   const pedeConfirmacao = recuperacao || modo === 'criar'
   const senhasConferem = confirmacao.length > 0 && confirmacao === senha
   if (!sessao || recuperacao) {
@@ -275,7 +302,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
         {mensagem && <p className="aviso-formulario" role="status">{mensagem}</p>}
         {!recuperacao && modo !== 'recuperar' && <BotaoGoogle />}
         <form className="empilha acesso__form" onSubmit={enviar}>
-          {!recuperacao && <label className="campo">E-mail<input className="entrada" type="email" autoComplete="email" required value={email} onChange={e => definirEmail(e.target.value)} placeholder="voce@email.com" /></label>}
+          {!recuperacao && <label className="campo">E-mail<input id="acesso-email" className={'entrada' + (erroForm?.codigo === 'ja_cadastrado' ? ' entrada--invalida' : '')} type="email" autoComplete="email" required value={email} onChange={e => definirEmail(e.target.value)} placeholder="voce@email.com" /></label>}
           {!recuperacao && modo === 'criar' && <>
             <div className="linha-campos linha-campos--2"><label className="campo">Nome<input className="entrada" autoComplete="given-name" required minLength={2} value={nome} onChange={e => definirNome(e.target.value)} placeholder="Como podemos chamar você?" /></label><label className="campo">Sobrenome<input className="entrada" autoComplete="family-name" required minLength={2} value={sobrenome} onChange={e => definirSobrenome(e.target.value)} /></label></div>
             <label className="campo">Data de nascimento<input className="entrada" type="date" required value={nascimento} onChange={e => definirNascimento(e.target.value)} /></label>
@@ -286,7 +313,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
           {(recuperacao || modo !== 'recuperar') && <div className="campo">
             <span className="acesso__rotulo-senha"><label htmlFor="acesso-senha">{recuperacao ? 'Nova senha' : 'Senha'}</label>{modo === 'entrar' && !recuperacao && <button type="button" className="acesso__link" onClick={() => trocarModo('recuperar')}>Esqueceu a senha?</button>}</span>
             <span className="acesso__senha">
-              <input id="acesso-senha" className="entrada" type={verSenha ? 'text' : 'password'} autoComplete={modo === 'entrar' && !recuperacao ? 'current-password' : 'new-password'} minLength={modo === 'entrar' && !recuperacao ? undefined : 8} required value={senha} onChange={e => definirSenha(e.target.value)} />
+              <input id="acesso-senha" className={'entrada' + (erroForm?.codigo === 'invalid_credentials' ? ' entrada--invalida' : '')} aria-invalid={erroForm?.codigo === 'invalid_credentials' || undefined} type={verSenha ? 'text' : 'password'} autoComplete={modo === 'entrar' && !recuperacao ? 'current-password' : 'new-password'} minLength={modo === 'entrar' && !recuperacao ? undefined : 8} required value={senha} onChange={e => definirSenha(e.target.value)} />
               <button type="button" className="acesso__olho" onClick={() => definirVerSenha(v => !v)} aria-label={verSenha ? 'Ocultar senha' : 'Mostrar senha'} aria-pressed={verSenha}><Icone nome={verSenha ? 'olho-riscado' : 'olho'} tamanho={18} /></button>
             </span>
             {pedeConfirmacao && <span className="meta">Mínimo de 8 caracteres.</span>}
@@ -300,12 +327,26 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
             <label className="campo campo--checkbox"><input type="checkbox" checked={receberNovidades} onChange={e => definirReceberNovidades(e.target.checked)} /> Quero receber novidades sobre o Orto Questões</label>
             <label className="campo campo--checkbox"><input type="checkbox" required checked={aceitouTermos} onChange={e => definirAceitouTermos(e.target.checked)} /> <span>Li e concordo com os <a href={href('/termos')} target="_blank" rel="noopener noreferrer">Termos de Uso</a> do Orto Questões. O cadastro é gratuito; assinaturas são opcionais e têm condições próprias antes da compra.</span></label>
           </>}
+          {erroForm && <div key={erroForm.n} className="aviso-formulario aviso-formulario--erro aviso-formulario--destaque" role="alert">
+            <Icone nome="alerta" tamanho={20} />
+            <span>{erroForm.texto}{erroForm.codigo === 'invalid_credentials' && ' Se você criou a conta pelo Google, use o botão do Google acima.'}</span>
+            {(erroForm.codigo === 'invalid_credentials' || erroForm.codigo === 'ja_cadastrado') && <span className="aviso-formulario__acoes">
+              {erroForm.codigo === 'ja_cadastrado' && <button type="button" onClick={() => trocarModo('entrar')}>Entrar com este e-mail</button>}
+              <button type="button" onClick={() => trocarModo('recuperar')}>Criar uma senha nova</button>
+            </span>}
+          </div>}
           <button className="botao botao--principal acesso__enviar" disabled={ocupado}>{ocupado ? 'Aguarde…' : recuperacao ? 'Salvar nova senha' : modo === 'criar' ? 'Criar conta gratuita' : modo === 'recuperar' ? 'Enviar link de recuperação' : 'Entrar'}</button>
         </form>
         {modo === 'entrar' && !recuperacao && <p className="acesso__alternativa">Não recebeu a confirmação? <button type="button" className="acesso__link" onClick={() => { void reenviar() }} disabled={ocupado || !email.trim()}>Reenviar e-mail</button></p>}
         {!recuperacao && modo === 'criar' && <p className="meta">Seus dados de perfil não ficam visíveis a outros usuários, com uma exceção: depois de 5 questões respondidas, você entra no ranking, visível a quem tem conta, com o apelido que escolher (ou seu nome e a inicial do sobrenome). Você pode sair do ranking quando quiser.</p>}
-        <p className="acesso__seguranca"><Icone nome="certo" tamanho={14} /> Autenticação segura pelo Supabase. O Orto Questões não guarda sua senha. Abra os links de confirmação neste mesmo navegador.</p>
+        <p className="acesso__seguranca"><Icone nome="certo" tamanho={14} /> Autenticação segura pelo Supabase. O Orto Questões não guarda sua senha.</p>
       </section>
+      {pendente && <ModalConfirmarEmail
+        email={pendente}
+        aoFechar={() => { definirPendente(null); definirMensagem(`Falta confirmar o e-mail ${pendente}. Abra o link que enviamos para liberar a conta.`) }}
+        aoCorrigir={() => { limparConfirmacaoPendente(); definirPendente(null); definirModo('criar'); definirMensagem(''); setTimeout(() => document.querySelector<HTMLInputElement>('#acesso-email')?.select(), 50) }}
+        aoEntrar={() => { definirEmail(pendente); definirPendente(null); trocarModo('entrar') }}
+      />}
     </div>
   }
   const inicialNome = (nome.trim().charAt(0) || sessao.user.email?.charAt(0) || '?').toUpperCase()

@@ -4,6 +4,8 @@ import { textoErro } from '../conta/erros'
 import { href, navegar } from '../util/rotas'
 import { Icone } from './Icone'
 import { BotaoGoogle } from './BotaoGoogle'
+import { ModalConfirmarEmail } from './ModalConfirmarEmail'
+import { limparConfirmacaoPendente } from '../conta/confirmacaoPendente'
 
 /**
  * Entrar sem sair da página inicial: um pop-up pequeno e centralizado, não um
@@ -15,7 +17,8 @@ export function ModalEntrar({ aberto, aoFechar }: { aberto: boolean; aoFechar: (
   const [email, definirEmail] = useState('')
   const [senha, definirSenha] = useState('')
   const [ocupado, definirOcupado] = useState(false)
-  const [erro, definirErro] = useState('')
+  const [erro, definirErro] = useState<{ texto: string; codigo?: string; n: number } | null>(null)
+  const [pendente, definirPendente] = useState<string | null>(null)
   const referencia = useRef<HTMLDivElement>(null)
   const anterior = useRef<HTMLElement | null>(null)
   const fechar = () => { definirSenha(''); aoFechar() }
@@ -50,18 +53,24 @@ export function ModalEntrar({ aberto, aoFechar }: { aberto: boolean; aoFechar: (
     e.preventDefault()
     if (!supabase || ocupado) return
     definirOcupado(true)
-    definirErro('')
+    definirErro(null)
     try {
       const { error } = await supabase.auth.signInWithPassword({ email: email.trim(), password: senha })
       if (error) throw error
+      limparConfirmacaoPendente()
       definirSenha('')
       fechar()
     } catch (e) {
-      definirErro(textoErro((e as { code?: string }).code))
+      const codigo = (e as { code?: string }).code
+      if (codigo === 'email_not_confirmed') { definirPendente(email.trim()); return }
+      definirErro((anterior) => ({ texto: textoErro(codigo), codigo, n: (anterior?.n ?? 0) + 1 }))
+      if (codigo === 'invalid_credentials') referencia.current?.querySelector<HTMLInputElement>('input[type=password]')?.select()
     } finally {
       definirOcupado(false)
     }
   }
+
+  if (pendente) return <ModalConfirmarEmail email={pendente} aoFechar={() => { definirPendente(null); fechar() }} aoEntrar={() => definirPendente(null)} />
 
   return (
     <>
@@ -75,15 +84,18 @@ export function ModalEntrar({ aberto, aoFechar }: { aberto: boolean; aoFechar: (
         </div>
         <BotaoGoogle />
         <form className="empilha" onSubmit={enviar}>
-          {erro && <p className="aviso-formulario aviso-formulario--erro" role="alert">{erro}</p>}
           <label className="campo">
             E-mail
             <input className="entrada" type="email" autoComplete="email" required autoFocus value={email} onChange={(e) => definirEmail(e.target.value)} />
           </label>
           <label className="campo">
             Senha
-            <input className="entrada" type="password" autoComplete="current-password" required value={senha} onChange={(e) => definirSenha(e.target.value)} />
+            <input className={'entrada' + (erro?.codigo === 'invalid_credentials' ? ' entrada--invalida' : '')} type="password" autoComplete="current-password" required value={senha} onChange={(e) => definirSenha(e.target.value)} />
           </label>
+          {erro && <div key={erro.n} className="aviso-formulario aviso-formulario--erro aviso-formulario--destaque" role="alert">
+            <Icone nome="alerta" tamanho={20} />
+            <span>{erro.texto}{erro.codigo === 'invalid_credentials' && ' Criou a conta pelo Google? Use o botão do Google acima.'}</span>
+          </div>}
           <button className="botao botao--principal botao--largo" disabled={ocupado}>{ocupado ? 'Entrando…' : 'Entrar'}</button>
         </form>
         <a

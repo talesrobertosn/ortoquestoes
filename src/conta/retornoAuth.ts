@@ -87,6 +87,11 @@ export function avisoConta(): string { return aviso }
 export function textoErroLink(codigo: string, recuperacao: boolean): string {
   const oque = recuperacao ? 'de redefinição de senha' : 'de confirmação'
   if (codigo === 'otp_expired') return `Este link ${oque} expirou ou já foi usado. Peça um novo link abaixo e abra o mais recente.`
+  // No cadastro, o Supabase confirma o e-mail antes de redirecionar: se o link
+  // caiu em outro navegador (o do app de e-mail, por exemplo), o e-mail já
+  // está confirmado e só falta entrar. Dizer "não foi possível" fazia gente
+  // desistir de uma conta pronta.
+  if (codigo === 'navegador' && !recuperacao) return 'E-mail confirmado! Agora é só entrar com o seu e-mail e a senha que você criou.'
   if (codigo === 'navegador') return `Não foi possível abrir o link ${oque} neste navegador. Abra o link no mesmo navegador em que fez o pedido, ou peça um novo link abaixo.`
   return `O link ${oque} não pôde ser aceito. Peça um novo link abaixo e tente novamente.`
 }
