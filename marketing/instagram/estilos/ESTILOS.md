@@ -228,3 +228,20 @@ seções que não for usar.
 - Conteúdo médico revisado (o post diz qual é a fonte: livro-texto ou questão `tema-NNNN`).
 - Gerar as imagens e olhar uma a uma: texto cortado, sobreposição, acentos, contador "N/total".
 - Registrar o post na seção "Estilos oficiais" do `README.md` se virar referência.
+
+## Museu (`museu/`)
+
+**Ideia:** a imagem real da questão vira obra de arte emoldurada numa galeria escura, com placa de
+museu, audioguia e catálogo. Aprovado pelo dono em 08/10/2026 ("esse estilo aí é muito bom").
+
+- **Formato:** carrossel de feed, 1080x1350, 6 slides; parede verde-carvão com luz de spot, rodapé
+  de madeira, moldura dourada com passe-partout, placas em papel creme. Fontes Playfair Display
+  (títulos, itálico dourado) e Source Serif 4 (texto).
+- **Estrutura:** capa (obra + placa "Autor desconhecido" + gancho) → ficha da obra (questão inteira)
+  → audioguia (3 faixas: o que observar) → atribuição (placa com a resposta) → catálogo (tabela que
+  a prova cobra) → outras assinaturas (por que não são as outras) + "Para a prova".
+- **Precisa de:** questão com imagem real (radiografia, ressonância, foto da prova). Imagem
+  horizontal usa o `modelo.html` (pseudoluxação AC, o post aprovado); vertical, o
+  `modelo-vertical.html` (lesão de Stener; essa questão já foi publicada, não repetir).
+- **Criar:** `node marketing/instagram/estilos/sortear.mjs criar museu <slug>`.
+- **Stories:** `s1` obra + "Quem assina?" + alternativas curtas; `s2` obra + placa com a resposta.

@@ -38,6 +38,7 @@ algo em poucos segundos e dar vontade de responder.
   Para uma marca de ortopedia, qualquer coisa parecida com erro anatômico é inadmissível. Usar a imagem
   real da questão ou só texto com apresentação criativa; objeto simples (parafuso, ícone) só de vez em
   quando.
+- **Não repetir questão já publicada:** antes de escolher, conferir `marketing/instagram/publicadas.md` e buscar o id em `marketing/instagram/posts/`. Ao entregar um post, anotar o id nessa lista (orientação de 08/10/2026).
 - Conteúdo médico sempre de uma questão real do acervo (com o id) e do comentário dela; nada inventado.
   Enunciado, alternativas e gabarito iguais aos do acervo.
 - Ao entregar um post, mandar a **legenda do feed como texto** na conversa, além da `LEGENDA.md`

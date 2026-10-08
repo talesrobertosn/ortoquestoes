@@ -16,6 +16,7 @@ const ESTILOS = {
   'ache-o-erro': { nome: 'Ache os 3 erros', slides: 3, story: 's3-caderno', figurinha: 'nenhuma (só a imagem)' },
   linhas: { nome: 'Linhas do metrô', slides: 5, story: 's1-linha e s2-estacoes', figurinha: 'nenhuma (só a imagem)', proprio: true },
   jornal: { nome: 'Jornal (Diário do Plantão)', slides: 5, story: 's1-cartaz do estilo cinema ou o post compartilhado', figurinha: 'nenhuma (só a imagem)' },
+  museu: { nome: 'Exposição no museu', slides: 6, story: 's1-exposicao e s2-placa', figurinha: 'nenhuma (só a imagem)' },
   // Só stories: não entra no sorteio do feed; use "criar cinema <slug>".
   cinema: { nome: 'Cartaz de cinema', slides: 0, story: 's1-cartaz e s2-creditos', figurinha: 'nenhuma (só a imagem)', proprio: true, soStories: true },
 }
