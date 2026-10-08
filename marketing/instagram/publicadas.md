@@ -1,0 +1,10 @@
+# Questões já publicadas no Instagram
+
+Antes de escolher a questão de um post, conferir esta lista **e** buscar o id em `posts/`
+(`grep -r <id> marketing/instagram`). Posts feitos fora deste repositório (no celular, por outro
+agente) também entram aqui: o dono avisa e o id é anotado.
+
+| Id | Assunto | Onde |
+|---|---|---|
+| mao-0586 | Lesão de Stener (RM do polegar) | Feed, publicado fora do repositório (aviso de 08/10/2026) |
+| pediatria-0915 | Pseudoluxação acromioclavicular | posts/2026-10-10-museu-pseudoluxacao-ac |
