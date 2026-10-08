@@ -33,22 +33,16 @@ navegador (`src/conta/retornoAuth.ts`).
 Painel do Supabase > Authentication > Emails > Templates > **Confirm signup**:
 
 - Subject: `Confirme seu e-mail no Orto Questões`
-- Message body:
+- Message body: colar o conteúdo inteiro de
+  [`supabase/modelos-email/confirmar-cadastro.html`](../supabase/modelos-email/confirmar-cadastro.html).
 
-```html
-<div style="margin:0;padding:24px 12px;background:#1b1208;font-family:Arial,Helvetica,sans-serif">
-  <div style="max-width:460px;margin:0 auto;padding:28px 24px;background:#3a2913;border:4px solid #f4cf7c;color:#fbf3df;text-align:center">
-    <img src="https://ortoquestoes.com.br/ranking/mensageiro.png" width="72" height="90" alt="" style="image-rendering:pixelated">
-    <p style="display:inline-block;margin:14px 0 0;padding:4px 10px;background:#f4cf7c;color:#1b1208;font-weight:700;font-size:12px;letter-spacing:1px;text-transform:uppercase">Missão: confirmar o e-mail</p>
-    <h1 style="margin:14px 0 8px;font-size:24px;color:#ffffff">Falta só um toque</h1>
-    <p style="margin:0 0 20px;font-size:15px;line-height:1.5">Toque no botão para confirmar o seu e-mail e liberar a sua conta no Orto Questões: questões das provas oficiais, comentadas, com revisão e ranking.</p>
-    <a href="{{ .SiteURL }}/?token_hash={{ .TokenHash }}&type=email" style="display:inline-block;padding:14px 26px;background:#f4cf7c;color:#1b1208;font-weight:700;font-size:16px;text-decoration:none">Confirmar meu e-mail</a>
-    <p style="margin:20px 0 0;font-size:12px;color:#d8c9a6">Se você não criou uma conta, ignore este e-mail.</p>
-  </div>
-</div>
-```
+É o modelo antigo (tabelas, saudação com o nome, benefícios, link reserva), com três mudanças: o
+link usa `{{ .SiteURL }}/?token_hash={{ .TokenHash }}&type=email` no lugar de
+`{{ .ConfirmationURL }}`; entrou o mensageiro em pixel art com o selo "Missão: confirmar o
+e-mail", igual ao pop-up do site; e um pré-cabeçalho, o texto que aparece ao lado do assunto na
+caixa de entrada.
 
-Em Authentication > URL Configuration, o **Site URL** precisa ser `https://ortoquestoes.com.br`.
+Em Authentication > URL Configuration, o **Site URL** precisa ser `https://ortoquestoes.com.br`, sem barra no fim (o modelo já põe a barra).
 
 Depois de salvar, criar uma conta de teste com um e-mail próprio, abrir o link no celular (dentro
 do aplicativo do Gmail) e conferir que o site entra direto.
