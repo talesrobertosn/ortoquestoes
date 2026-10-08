@@ -1314,3 +1314,28 @@ subdivisão. O algoritmo 40-3 contém rótulos finais de estabilidade incompatí
 os respectivos caminhos de estabilização; as questões se apoiam na narrativa técnica,
 que indica medial e proteção adicional conforme instabilidade residual. Nenhuma
 inconsistência gráfica foi ensinada como regra clínica.
+
+
+## Anatomia do TEOT e do TARO (engenharia reversa em 08/10/2026)
+
+Mapa completo: [Anatomia: engenharia reversa do TEOT e do TARO](anatomia-teot-taro.md).
+Recorte auditável: [IDs, exclusões e medidas](anatomia-teot-taro-recorte.json).
+
+Foram lidos 417 registros candidatos e selecionados 328 após exclusões de conteúdo
+não anatômico e duplicatas declaradas. O recorte tem 87 TEOT, 123 TARO e 118
+TEOT/TARO sem ano; estes últimos não sustentam tendência temporal. Entre os itens
+recentes com quatro alternativas, 73/87 do TEOT (2021–2025) e 43/56 do TARO
+(2021–2026) têm imagem cadastrada. Medianas de enunciado: 54 e 74 caracteres.
+
+O padrão específico é anatomia visual e relacional: reconhecer a estrutura, recuperar
+inervação/inserção/função e distinguir vizinhos anatômicos. As famílias recorrentes
+incluem pronadores, intrínsecos da mão, nervo radial e seus ramos, plexo,
+ligamentos do cotovelo e joelho, inserções musculares, vascularização do quadril,
+compartimentos da perna e planos/ligamentos da coluna. ADAMKIEWICZ repete nível/lado
+no TARO 2010 e 2017; a identificação de músculos volta por outros atributos e
+perspectivas. Embriologia permanece pontual. O mapa detalha prova, ano, IDs e
+limites de cada conclusão. Não confundir duplicata no banco com repetição anual.
+
+Pendências documentadas: três comandos visuais sem imagem, gabaritos sem confirmação,
+terminologia vascular e item sem ano com “cabeça curta do tríceps” na resposta.
+Nenhuma questão oficial foi alterada e nenhum simulado foi criado nesta etapa.
