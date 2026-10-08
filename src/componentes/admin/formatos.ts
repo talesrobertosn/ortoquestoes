@@ -137,3 +137,31 @@ export function rotuloOrigem(o: { fonte?: string; meio?: string; campanha?: stri
   const meio = o.meio ? NOMES_MEIO[o.meio] ?? o.meio : null
   return [fonte, meio, o.campanha].filter(Boolean).join(' · ')
 }
+
+const PAGINAS: Record<string, string> = {
+  '/': 'Início', '/treinar': 'Montando uma sessão', '/sessao': 'Respondendo questões', '/resumo': 'Resumo da sessão',
+  '/questao': 'Vendo uma questão', '/dados': 'Desempenho', '/revisao': 'Revisão', '/erros': 'Caderno de erros',
+  '/favoritas': 'Favoritas', '/ranking': 'Ranking', '/conquistas': 'Emblemas', '/conta': 'Minha conta',
+  '/conta/assinatura': 'Dados da assinatura', '/assinatura': 'Planos (olhando preços)', '/cronograma': 'Cronograma',
+  '/plano-de-estudo': 'Cronograma', '/simulado-nacional': 'Simulado Nacional', '/temas-que-mais-caem': 'Temas que mais caem',
+  '/indicar': 'Indique e ganhe', '/ligas': 'Liga da residência', '/admin': 'Painel do administrador', '/termos': 'Termos de uso',
+  '/contato': 'Suporte e contato', '/sobre': 'O projeto', '/projeto': 'O projeto', '/progresso': 'Progresso dos comentários',
+  '/emails': 'Preferências de e-mail',
+}
+/** "/sessao · 3 de 10" vira "Respondendo questões (3 de 10)". */
+export function rotuloPagina(pagina: string | null | undefined): string {
+  if (!pagina) return 'sem registro'
+  const [rota, extra] = pagina.split(' · ')
+  const nome = PAGINAS[rota] ?? (rota.startsWith('/convite') ? 'Abrindo um convite' : rota)
+  return extra ? `${nome} (${extra})` : nome
+}
+/** "agora", "há 4 min", "há 2 h", ou a data. */
+export function haQuantoTempo(valor: string | null | undefined): string {
+  if (!valor) return 'nunca'
+  const min = Math.floor((Date.now() - new Date(valor).getTime()) / 60_000)
+  if (min < 1) return 'agora'
+  if (min < 60) return `há ${min} min`
+  const h = Math.floor(min / 60)
+  if (h < 24) return `há ${h} h`
+  return haQuanto(valor)
+}

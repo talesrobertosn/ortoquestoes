@@ -4,9 +4,10 @@ import { createPortal } from 'react-dom'
 import { chamarFuncao, chamarRpc } from '../../servicos/supabase'
 import { usarIndice } from '../../dados/usarIndice'
 import { Icone } from '../Icone'
-import { BarrasHorizontais } from './AdminGraficos'
-import type { LinhaUsuario } from './AdminUsuarios'
-import { PLANOS, acertoAposRevisao, acertoPorTentativa, acertoReal, data, dataHora, haQuanto, motivoFalhaEmail, porcentagem, rotuloOrigem } from './formatos'
+import { BarrasHorizontais, GraficoColunas } from './AdminGraficos'
+import { OQueVe, type LinhaUsuario } from './AdminUsuarios'
+import { href } from '../../util/rotas'
+import { PLANOS, acertoAposRevisao, acertoPorTentativa, acertoReal, data, dataHora, haQuanto, haQuantoTempo, motivoFalhaEmail, porcentagem, rotuloOrigem, rotuloPagina } from './formatos'
 import { escreverRecado } from './recado'
 import { MODELOS, gravarModelosSalvos, lerModelosSalvos, modeloSugerido, preencher, type DadosModelo, type ModeloSalvo } from './modelosEmail'
 
@@ -21,6 +22,20 @@ interface Detalhe {
   perfil: { situacao: string | null; servico: string | null; cidade: string | null; uf: string | null; confirmado: boolean } | null
 }
 
+/** Da migração 202610080100: o dia a dia da pessoa e o que está aberto agora. */
+interface Atividade {
+  por_dia: Array<{ dia: string; tentativas: number; questoes: number; acertos: number }>
+  horas: Array<{ hora: number; n: number }>
+  visitas: Array<{ pagina: string; questao: string | null; em: string }>
+  agora: { pagina: string | null; questao: string | null; pagina_em: string | null; visto_em: string; online: boolean } | null
+  conta: { nascimento: string | null; whatsapp: string | null; novidades: boolean | null; confirmado_em: string | null; ultimo_login: string | null; provedor: string | null } | null
+}
+const diaSP = (d: Date) => d.toLocaleDateString('sv-SE', { timeZone: 'America/Sao_Paulo' })
+const idade = (nascimento: string | null | undefined) => {
+  if (!nascimento) return null
+  const anos = Math.floor((Date.now() - new Date(`${nascimento}T12:00:00`).getTime()) / (365.25 * 864e5))
+  return anos > 0 && anos < 110 ? anos : null
+}
 
 /** Ficha de uma pessoa: o que ela estudou e o que o administrador pode fazer por ela. */
 export function AdminFichaUsuario({ usuario, aoFechar }: { usuario: LinhaUsuario; aoFechar: () => void }) {
@@ -37,6 +52,35 @@ export function AdminFichaUsuario({ usuario, aoFechar }: { usuario: LinhaUsuario
   const [cortesiaMotivo, definirCortesiaMotivo] = useState('')
   const [salvos, definirSalvos] = useState<ModeloSalvo[]>(lerModelosSalvos)
   const [modeloEscolhido, definirModeloEscolhido] = useState('')
+
+  const [atividade, definirAtividade] = useState<Atividade | null>(null)
+  const [semAtividade, definirSemAtividade] = useState(false)
+  useEffect(() => {
+    let vivo = true
+    const ler = () => chamarRpc<Atividade>('atividade_usuario_admin', { p_id: usuario.id_usuario })
+      .then(a => { if (vivo) definirAtividade(a) }).catch(() => { if (vivo) definirSemAtividade(true) })
+    void ler()
+    // Ficha aberta: o "agora" se renova a cada 20 s.
+    const t = window.setInterval(() => { if (document.visibilityState === 'visible') void ler() }, 20_000)
+    return () => { vivo = false; window.clearInterval(t) }
+  }, [usuario.id_usuario])
+  const dias30 = useMemo(() => {
+    if (!atividade) return []
+    const porDia = new Map(atividade.por_dia.map(d => [d.dia, d]))
+    return Array.from({ length: 30 }, (_, i) => {
+      const d = new Date(Date.now() - (29 - i) * 864e5), chave = diaSP(d)
+      return { rotulo: d.toLocaleDateString('pt-BR', { weekday: 'short', day: '2-digit', month: '2-digit', timeZone: 'America/Sao_Paulo' }), rotuloCurto: d.toLocaleDateString('pt-BR', { day: '2-digit', timeZone: 'America/Sao_Paulo' }), valor: porDia.get(chave)?.questoes ?? 0, dados: porDia.get(chave) }
+    })
+  }, [atividade])
+  const hojeAtividade = dias30[29]?.dados
+  const visitasPorDia = useMemo(() => {
+    const grupos = new Map<string, Atividade['visitas']>()
+    for (const v of atividade?.visitas ?? []) {
+      const chave = new Date(v.em).toLocaleDateString('pt-BR', { weekday: 'long', day: '2-digit', month: '2-digit', timeZone: 'America/Sao_Paulo' })
+      grupos.set(chave, [...(grupos.get(chave) ?? []), v])
+    }
+    return [...grupos]
+  }, [atividade])
 
   const carregar = useCallback(async () => {
     try { definirDetalhe(await chamarRpc<Detalhe>('detalhe_usuario_admin', { p_id: usuario.id_usuario })) }
@@ -142,7 +186,58 @@ export function AdminFichaUsuario({ usuario, aoFechar }: { usuario: LinhaUsuario
           <div><dt>Conta criada</dt><dd>{data(usuario.criado_em)}</dd></div>
           <div><dt>Última atividade</dt><dd>{haQuanto(usuario.ultima_atividade)}</dd></div>
           <div><dt>Aparelho</dt><dd>{detalhe.aparelho?.descricao && detalhe.aparelho.descricao !== 'suporte' ? detalhe.aparelho.descricao : '—'}</dd></div>
+          {atividade?.conta && <>
+            {idade(atividade.conta.nascimento) && <div><dt>Idade</dt><dd>{idade(atividade.conta.nascimento)} anos</dd></div>}
+            {atividade.conta.whatsapp && <div><dt>WhatsApp</dt><dd><a href={`https://wa.me/55${atividade.conta.whatsapp.replace(/\D/g, '').replace(/^55(?=\d{10,11}$)/, '')}`} target="_blank" rel="noopener noreferrer">{atividade.conta.whatsapp}</a></dd></div>}
+            <div><dt>Entrou por</dt><dd>{atividade.conta.provedor === 'google' ? 'Google' : 'E-mail e senha'}</dd></div>
+            <div><dt>Último login</dt><dd title={atividade.conta.ultimo_login ? dataHora(atividade.conta.ultimo_login) : undefined}>{haQuantoTempo(atividade.conta.ultimo_login)}</dd></div>
+            <div><dt>E-mail confirmado</dt><dd>{atividade.conta.confirmado_em ? data(atividade.conta.confirmado_em) : 'não'}</dd></div>
+            <div><dt>Quer novidades</dt><dd>{atividade.conta.novidades ? 'sim' : 'não'}</dd></div>
+          </>}
         </dl>
+
+        {semAtividade ? <p className="adm-nota">Para ver o que a pessoa está vendo e as questões por dia, rode no Supabase a migração 202610080100_monitor_usuarios.sql.</p> : atividade && <>
+          <section className={'adm-agora' + (atividade.agora?.online ? ' adm-agora--online' : '')}>
+            <h3 className="adm-subtitulo">{atividade.agora?.online ? <><span className="adm-online" aria-hidden="true" />Agora</> : 'Última página vista'}</h3>
+            {atividade.agora ? <OQueVe u={atividade.agora} /> : <span className="adm-ve adm-ve--vazio">Ainda sem registro de navegação</span>}
+            {atividade.agora && !atividade.agora.online && <small className="adm-nota">Visto pela última vez {haQuantoTempo(atividade.agora.visto_em)} ({dataHora(atividade.agora.visto_em)})</small>}
+          </section>
+
+          <section className="empilha">
+            <h3 className="adm-subtitulo">Hoje</h3>
+            <div className="adm-usuario__placar adm-usuario__placar--ficha">
+              <div className="adm-placar adm-placar--hoje"><strong className="numerico">{hojeAtividade?.questoes ?? 0}</strong><span>questões</span></div>
+              <div className="adm-placar"><strong className="numerico">{hojeAtividade?.tentativas ?? 0}</strong><span>tentativas</span></div>
+              <div className="adm-placar"><strong className="numerico">{hojeAtividade?.tentativas ? `${Math.round((hojeAtividade.acertos / hojeAtividade.tentativas) * 100)}%` : '—'}</strong><span>acerto hoje</span></div>
+              <div className="adm-placar"><strong className="numerico">{atividade.por_dia.length}</strong><span>dias com estudo em 30</span></div>
+            </div>
+          </section>
+
+          <GraficoColunas titulo="Questões por dia" subtitulo="Últimos 30 dias, questões diferentes respondidas em cada dia" pontos={dias30} unidade="questões" />
+          {atividade.horas.length > 0 && <GraficoColunas titulo="Horário em que estuda" subtitulo="Tentativas por hora do dia (Brasília), últimos 30 dias" rotuloTabela="Hora"
+            pontos={Array.from({ length: 24 }, (_, h) => ({ rotulo: `${h}h`, rotuloCurto: `${h}h`, valor: atividade.horas.find(x => x.hora === h)?.n ?? 0 }))} unidade="tentativas" />}
+
+          {visitasPorDia.length > 0 && <section className="empilha">
+            <h3 className="adm-subtitulo">Por onde andou <small className="adm-nota">(páginas e questões abertas, mais recentes primeiro)</small></h3>
+            <div className="adm-trilha">{visitasPorDia.map(([dia, lista]) => <div key={dia}>
+              <p className="adm-trilha__dia">{dia}</p>
+              <ol>{lista.map((v, i) => <li key={i}>
+                <time>{new Date(v.em).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo' })}</time>
+                <span>{rotuloPagina(v.pagina)}{v.questao && <> · <a href={href(`/questao/${v.questao}`)} target="_blank" rel="noopener noreferrer">{v.questao}</a></>}</span>
+              </li>)}</ol>
+            </div>)}</div>
+          </section>}
+        </>}
+
+        {porTema.length > 0 && <section className="empilha">
+          <h3 className="adm-subtitulo">Acerto real por tema <small className="adm-nota">(1ª tentativa; ao lado, após revisão)</small></h3>
+          <BarrasHorizontais maximo={100} formato={v => `${v}%`} itens={porTema.map(t => ({ rotulo: t.nome, valor: t.acerto, detalhe: `${t.total} questões · ${t.aposRevisao}% após revisão`, destaque: t.total >= 10 ? (t.acerto < 55 ? 'ruim' : t.acerto >= 75 ? 'bom' : undefined) : undefined }))} />
+        </section>}
+
+        {detalhe.sessoes.length > 0 && <section className="empilha">
+          <h3 className="adm-subtitulo">Últimas sessões</h3>
+          <ul className="adm-mini">{detalhe.sessoes.slice(0, 8).map(s => <li key={s.id}><span className="adm-mini__nome">{s.descricao}<small>{dataHora(new Date(s.concluidaEm).toISOString())}</small></span><span className="adm-mini__valor numerico">{s.acertos !== undefined && s.total ? `${s.acertos}/${s.total}` : s.total ?? ''}</span></li>)}</ul>
+        </section>}
 
         <section className="empilha">
           <h3 className="adm-subtitulo">Mandar uma carta por e-mail</h3>
@@ -193,16 +288,6 @@ export function AdminFichaUsuario({ usuario, aoFechar }: { usuario: LinhaUsuario
             {previa && <div className="adm-previa"><div className="adm-previa__topo"><span>Prévia do e-mail</span><button type="button" className="adm-link" onClick={() => definirPrevia(null)}>Fechar prévia</button></div><iframe title="Prévia do e-mail" srcDoc={previa} sandbox="" /></div>}
           </>}
         </section>
-
-        {porTema.length > 0 && <section className="empilha">
-          <h3 className="adm-subtitulo">Acerto real por tema <small className="adm-nota">(1ª tentativa; ao lado, após revisão)</small></h3>
-          <BarrasHorizontais maximo={100} formato={v => `${v}%`} itens={porTema.map(t => ({ rotulo: t.nome, valor: t.acerto, detalhe: `${t.total} questões · ${t.aposRevisao}% após revisão`, destaque: t.total >= 10 ? (t.acerto < 55 ? 'ruim' : t.acerto >= 75 ? 'bom' : undefined) : undefined }))} />
-        </section>}
-
-        {detalhe.sessoes.length > 0 && <section className="empilha">
-          <h3 className="adm-subtitulo">Últimas sessões</h3>
-          <ul className="adm-mini">{detalhe.sessoes.slice(0, 8).map(s => <li key={s.id}><span className="adm-mini__nome">{s.descricao}<small>{dataHora(new Date(s.concluidaEm).toISOString())}</small></span><span className="adm-mini__valor numerico">{s.acertos !== undefined && s.total ? `${s.acertos}/${s.total}` : s.total ?? ''}</span></li>)}</ul>
-        </section>}
 
         <section className="empilha">
           <h3 className="adm-subtitulo">Ações</h3>

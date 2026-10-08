@@ -1,6 +1,8 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Icone } from '../Icone'
-import { PLANOS, acertoAposRevisao, acertoReal, baixarCsv, corresponde, data, haQuanto, normalizar, somarAcertos } from './formatos'
+import { PLANOS, acertoAposRevisao, acertoReal, baixarCsv, corresponde, data, haQuanto, haQuantoTempo, normalizar, rotuloPagina, somarAcertos } from './formatos'
+import { chamarRpc } from '../../servicos/supabase'
+import { href } from '../../util/rotas'
 import { AdminFichaUsuario } from './AdminFichaUsuario'
 import { rotuloEtapa, rotuloProva } from '../../conta/perfilEstudo'
 import { servicoConhecido } from './servicosConhecidos'
@@ -36,15 +38,22 @@ export interface LinhaUsuario {
   erros_tentativas?: number | null
   // Da migração 202610070100 em diante: de onde veio o cadastro (null nas contas antigas).
   origem?: { fonte?: string; meio?: string; campanha?: string; conteudo?: string; marcada?: boolean; pagina?: string; em?: string } | null
+  // Da migração 202610080100 em diante: o dia de hoje e o que está aberto agora.
+  respondidas_hoje?: number
+  tentativas_hoje?: number
+  pagina?: string | null
+  questao?: string | null
+  pagina_em?: string | null
+  visto_em?: string | null
 }
 
 export type FiltroUsuarios = 'todos' | 'online' | 'hoje' | 'ativos' | 'novos' | 'novos_parados' | 'assinantes' | 'parados'
 type Filtro = FiltroUsuarios
-type Ordem = 'respondidas' | 'acerto' | 'semana' | 'atividade' | 'cadastro'
+type Ordem = 'respondidas' | 'hoje' | 'acerto' | 'semana' | 'atividade' | 'cadastro'
 
 const FILTROS: Array<[Filtro, string]> = [['todos', 'Todos'], ['online', 'Online agora'], ['hoje', 'Ativos hoje'], ['ativos', 'Ativos na semana'], ['novos', 'Recém-cadastrados'], ['novos_parados', 'Novos que pararam'], ['assinantes', 'Assinantes'], ['parados', 'Sem respostas']]
 const ORDENS: Array<[Ordem, string]> = [
-  ['respondidas', 'Mais questões'], ['acerto', 'Maior acerto'], ['semana', 'Mais na semana'],
+  ['respondidas', 'Mais questões'], ['hoje', 'Mais questões hoje'], ['acerto', 'Maior acerto'], ['semana', 'Mais na semana'],
   ['atividade', 'Atividade mais recente'], ['cadastro', 'Cadastro mais recente'],
 ]
 /** Com poucas respostas o acerto oscila demais para comparar. */
@@ -70,7 +79,37 @@ const acertoDe = (u: LinhaUsuario) => acertoReal(u) ?? acertoAposRevisao(u)
  * Ranking privado: todas as contas (inclusive quem saiu do ranking público),
  * com total de questões, acerto e atividade. Só o administrador vê.
  */
-export function AdminUsuarios({ usuarios, filtroInicial = 'todos' }: { usuarios: LinhaUsuario[]; filtroInicial?: FiltroUsuarios }) {
+/** Atualização do "ao vivo": a lista inteira, a cada 30 s, só com a aba visível. */
+const AO_VIVO_MS = 30_000
+const iniciais = (u: LinhaUsuario) => (u.nome ?? u.email ?? '?').split(/[\s@.]+/).filter(Boolean).slice(0, 2).map(p => p[0]?.toUpperCase()).join('')
+/** Cor fixa por pessoa, para reconhecer de relance. */
+const corDe = (id: string) => `hsl(${[...id].reduce((a, c) => (a * 31 + c.charCodeAt(0)) % 360, 7)} 45% 42%)`
+const hojeDe = (u: LinhaUsuario) => u.respondidas_hoje ?? (ativoHoje(u) ? null : 0)
+
+/** O que a pessoa está vendo agora, com link para a questão. */
+export function OQueVe({ u }: { u: Pick<LinhaUsuario, 'pagina' | 'questao' | 'pagina_em'> }) {
+  if (!u.pagina) return <span className="adm-ve adm-ve--vazio">Página ainda não registrada</span>
+  return <span className="adm-ve">
+    <Icone nome="olho" tamanho={14} />
+    <span>{rotuloPagina(u.pagina)}{u.questao && <> · <a href={href(`/questao/${u.questao}`)} target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()}>{u.questao}</a></>}</span>
+    {u.pagina_em && <small>{haQuantoTempo(u.pagina_em)}</small>}
+  </span>
+}
+
+export function AdminUsuarios({ usuarios: iniciaisUsuarios, filtroInicial = 'todos' }: { usuarios: LinhaUsuario[]; filtroInicial?: FiltroUsuarios }) {
+  // Cópia viva: o painel carrega a lista uma vez; aqui ela se renova sozinha.
+  const [usuarios, definirUsuarios] = useState(iniciaisUsuarios)
+  const [atualizadoEm, definirAtualizadoEm] = useState(() => Date.now())
+  const [, definirTique] = useState(0)
+  useEffect(() => { definirUsuarios(iniciaisUsuarios); definirAtualizadoEm(Date.now()) }, [iniciaisUsuarios])
+  useEffect(() => {
+    const t = window.setInterval(() => {
+      definirTique(n => n + 1)
+      if (document.visibilityState !== 'visible') return
+      chamarRpc<LinhaUsuario[]>('listar_usuarios_admin', {}).then(lista => { definirUsuarios(lista); definirAtualizadoEm(Date.now()) }).catch(() => undefined)
+    }, AO_VIVO_MS)
+    return () => window.clearInterval(t)
+  }, [])
   const [busca, definirBusca] = useState('')
   const [filtro, definirFiltro] = useState<Filtro>(filtroInicial)
   const [ordem, definirOrdem] = useState<Ordem>(filtroInicial === 'novos' || filtroInicial === 'novos_parados' ? 'cadastro' : filtroInicial === 'hoje' ? 'atividade' : 'respondidas')
@@ -80,7 +119,14 @@ export function AdminUsuarios({ usuarios, filtroInicial = 'todos' }: { usuarios:
 
   const totais = useMemo(() => {
     const soma = somarAcertos(usuarios)
-    return { respondidas: usuarios.reduce((s, u) => s + u.respondidas, 0), real: acertoReal(soma), revisao: acertoAposRevisao(soma) }
+    const hojeSP = new Date().toLocaleDateString('sv-SE', { timeZone: 'America/Sao_Paulo' })
+    return {
+      respondidas: usuarios.reduce((s, u) => s + u.respondidas, 0), real: acertoReal(soma), revisao: acertoAposRevisao(soma),
+      online: usuarios.filter(u => u.online).length, ativosHoje: usuarios.filter(ativoHoje).length,
+      questoesHoje: usuarios.reduce((s, u) => s + (u.respondidas_hoje ?? 0), 0), tentativasHoje: usuarios.reduce((s, u) => s + (u.tentativas_hoje ?? 0), 0),
+      novosHoje: usuarios.filter(u => new Date(u.criado_em).toLocaleDateString('sv-SE', { timeZone: 'America/Sao_Paulo' }) === hojeSP).length,
+      comDadosHoje: usuarios.some(u => u.respondidas_hoje !== undefined),
+    }
   }, [usuarios])
 
   const visiveis = useMemo(() => {
@@ -89,6 +135,7 @@ export function AdminUsuarios({ usuarios, filtroInicial = 'todos' }: { usuarios:
     const tempo = (v: string | null) => v ? new Date(v).getTime() : 0
     const chave: Record<Ordem, (u: LinhaUsuario) => number> = {
       respondidas: u => u.respondidas,
+      hoje: u => u.respondidas_hoje ?? 0,
       acerto: u => u.acertos + u.erros >= MINIMO_PARA_ACERTO ? acertoDe(u) ?? -1 : -1,
       semana: u => u.respondidas_7d,
       atividade: u => tempo(u.ultima_atividade),
@@ -107,6 +154,24 @@ export function AdminUsuarios({ usuarios, filtroInicial = 'todos' }: { usuarios:
       </div>
     </div>
 
+    <div className="adm-kpis-usuarios">
+      <div className="adm-kpi-u adm-kpi-u--vivo"><span><span className="adm-online" aria-hidden="true" />Online agora</span><strong>{totais.online}</strong></div>
+      <div className="adm-kpi-u"><span>Estudaram hoje</span><strong>{totais.ativosHoje}</strong></div>
+      {totais.comDadosHoje && <div className="adm-kpi-u"><span>Questões hoje</span><strong>{totais.questoesHoje.toLocaleString('pt-BR')}</strong><small>{totais.tentativasHoje.toLocaleString('pt-BR')} tentativas</small></div>}
+      <div className="adm-kpi-u"><span>Contas novas hoje</span><strong>{totais.novosHoje}</strong></div>
+    </div>
+
+    {usuarios.some(u => u.online) && <section className="adm-aovivo" aria-labelledby="adm-aovivo-titulo">
+      <header><h3 id="adm-aovivo-titulo"><span className="adm-online" aria-hidden="true" />Ao vivo</h3><small>atualiza sozinho a cada 30 s · última leitura {haQuantoTempo(new Date(atualizadoEm).toISOString())}</small></header>
+      <ul>{usuarios.filter(u => u.online).sort((a, b) => (b.pagina_em ?? '').localeCompare(a.pagina_em ?? '')).map(u => <li key={u.id_usuario}>
+        <button type="button" onClick={() => definirAberto(u)}>
+          <span className="adm-avatar" style={{ background: corDe(u.id_usuario) }} aria-hidden="true">{iniciais(u)}</span>
+          <span className="adm-aovivo__quem"><strong>{u.nome ?? u.email?.split('@')[0] ?? 'Sem nome'}</strong><OQueVe u={u} /></span>
+          <span className="adm-aovivo__hoje"><strong className="numerico">{u.respondidas_hoje ?? '—'}</strong><small>hoje</small></span>
+        </button>
+      </li>)}</ul>
+    </section>}
+
     <div className="adm-filtros" role="group" aria-label="Filtrar usuários">
       {FILTROS.map(([valor, rotulo]) => <button key={valor} type="button" className="adm-chip" aria-pressed={filtro === valor} onClick={() => definirFiltro(valor)}>{rotulo}<span>{contagem[valor]}</span></button>)}
     </div>
@@ -121,8 +186,8 @@ export function AdminUsuarios({ usuarios, filtroInicial = 'todos' }: { usuarios:
     <div className="adm-linha-nota">
       <p className="adm-nota" role="status">Mostrando {visiveis.length} de {usuarios.length} conta(s). Toque numa pessoa para abrir a ficha.</p>
       <button type="button" className="adm-link" onClick={() => baixarCsv(`ortoquestoes-usuarios-${new Date().toISOString().slice(0, 10)}.csv`,
-        ['Nome', 'E-mail', 'Etapa', 'Provas de interesse', 'Serviço', 'UF', 'Conta criada', 'Questões', 'Acerto real, 1ª tentativa (%)', 'Acerto após revisão (%)', 'Na semana', 'Última atividade', 'Plano'],
-        visiveis.map(u => [u.nome, u.email, u.situacao ? rotuloEtapa(u.situacao, u.ano_residencia) : '', (u.provas ?? '').split(',').filter(Boolean).map(rotuloProva).join(', '), u.servico, u.uf, data(u.criado_em), u.respondidas, acertoReal(u), acertoAposRevisao(u), u.respondidas_7d, u.ultima_atividade ? data(u.ultima_atividade) : '', u.plano_vigente ? PLANOS[u.plano_vigente] : '']))}>
+        ['Nome', 'E-mail', 'Etapa', 'Provas de interesse', 'Serviço', 'UF', 'Conta criada', 'Questões', 'Hoje', 'Acerto real, 1ª tentativa (%)', 'Acerto após revisão (%)', 'Na semana', 'Última atividade', 'Plano'],
+        visiveis.map(u => [u.nome, u.email, u.situacao ? rotuloEtapa(u.situacao, u.ano_residencia) : '', (u.provas ?? '').split(',').filter(Boolean).map(rotuloProva).join(', '), u.servico, u.uf, data(u.criado_em), u.respondidas, u.respondidas_hoje ?? '', acertoReal(u), acertoAposRevisao(u), u.respondidas_7d, u.ultima_atividade ? data(u.ultima_atividade) : '', u.plano_vigente ? PLANOS[u.plano_vigente] : '']))}>
         <Icone nome="baixar" tamanho={15} /> Exportar planilha
       </button>
     </div>
@@ -130,12 +195,17 @@ export function AdminUsuarios({ usuarios, filtroInicial = 'todos' }: { usuarios:
     {visiveis.length === 0 ? <p>Ninguém neste filtro.</p> : <ol className="adm-usuarios">
       {visiveis.map((u, i) => {
         const acerto = acertoDe(u)
-        return <li key={u.id_usuario} className="adm-usuario adm-usuario--clicavel" role="button" tabIndex={0} aria-label={`Abrir ficha de ${u.nome ?? u.email ?? 'usuário'}`}
+        const hoje = hojeDe(u)
+        return <li key={u.id_usuario} className={'adm-usuario adm-usuario--clicavel' + (u.online ? ' adm-usuario--online' : '')} role="button" tabIndex={0} aria-label={`Abrir ficha de ${u.nome ?? u.email ?? 'usuário'}`}
           onClick={() => definirAberto(u)} onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); definirAberto(u) } }}>
-          <span className={'adm-usuario__pos' + (i < 3 && ordem === 'respondidas' && filtro === 'todos' && !busca ? ` adm-usuario__pos--${i + 1}` : '')}>{i + 1}</span>
+          <span className="adm-usuario__lado">
+            <span className="adm-avatar" style={{ background: corDe(u.id_usuario) }} aria-hidden="true">{iniciais(u)}{u.online && <span className="adm-online" />}</span>
+            <span className={'adm-usuario__pos' + (i < 3 && ordem === 'respondidas' && filtro === 'todos' && !busca ? ` adm-usuario__pos--${i + 1}` : '')}>{i + 1}º</span>
+          </span>
           <div className="adm-usuario__quem">
-            <strong>{u.online && <span className="adm-online" title="Online agora" aria-label="Online agora" />}{u.nome ?? u.email?.split('@')[0] ?? 'Sem nome'}</strong>
+            <strong>{u.nome ?? u.email?.split('@')[0] ?? 'Sem nome'}</strong>
             <span className="adm-usuario__email">{u.email ?? 'conta sem e-mail'}</span>
+            {u.online && <OQueVe u={u} />}
             {(u.situacao || u.servico || u.cidade) && <span className="adm-usuario__servico"><Icone nome="bandeira" tamanho={13} />{[u.situacao ? rotuloEtapa(u.situacao, u.ano_residencia) : null, u.servico, [u.cidade, u.uf].filter(Boolean).join('/')].filter(Boolean).join(' · ')}</span>}
             {u.provas && <span className="adm-usuario__servico"><Icone nome="alvo" tamanho={13} />Estuda para {u.provas.split(',').map(rotuloProva).join(', ')}</span>}
             <span className="adm-usuario__selos">
@@ -146,13 +216,16 @@ export function AdminUsuarios({ usuarios, filtroInicial = 'todos' }: { usuarios:
             </span>
           </div>
           <div className="adm-usuario__numeros">
-            <div className="adm-usuario__total"><strong className="numerico">{u.respondidas.toLocaleString('pt-BR')}</strong><span>questões</span></div>
+            <div className="adm-usuario__placar">
+              <div className={hoje ? 'adm-placar adm-placar--hoje' : 'adm-placar'}><strong className="numerico">{hoje ?? '—'}</strong><span>hoje</span></div>
+              <div className="adm-placar"><strong className="numerico">{u.respondidas_7d}</strong><span>na semana</span></div>
+              <div className="adm-placar"><strong className="numerico">{u.respondidas.toLocaleString('pt-BR')}</strong><span>no total</span></div>
+            </div>
             <div className="adm-barra" aria-hidden="true"><span style={{ width: `${(u.respondidas / maior) * 100}%` }} /></div>
             <dl className="adm-usuario__dados">
               <div><dt>{acertoReal(u) !== null ? 'Acerto real' : 'Acerto'}</dt><dd className={acerto === null ? '' : acerto >= 70 ? 'adm-bom' : acerto < 50 ? 'adm-ruim' : ''} title={acertoReal(u) !== null ? 'Na 1ª tentativa de cada questão' : undefined}>{acerto === null ? '—' : `${acerto}%`}</dd></div>
               {acertoReal(u) !== null && <div><dt>Após revisão</dt><dd title="Última resposta de cada questão: erros acertados na revisão contam como acerto">{acertoAposRevisao(u) === null ? '—' : `${acertoAposRevisao(u)}%`}</dd></div>}
-              <div><dt>Na semana</dt><dd>{u.respondidas_7d}</dd></div>
-              <div><dt>Última atividade</dt><dd title={u.ultima_atividade ? new Date(u.ultima_atividade).toLocaleString('pt-BR') : undefined}>{haQuanto(u.ultima_atividade)}</dd></div>
+              <div><dt>Visto pela última vez</dt><dd title={(u.visto_em ?? u.ultima_atividade) ? new Date((u.visto_em ?? u.ultima_atividade)!).toLocaleString('pt-BR') : undefined}>{u.online ? 'agora' : haQuantoTempo(u.visto_em ?? u.ultima_atividade)}</dd></div>
             </dl>
           </div>
         </li>

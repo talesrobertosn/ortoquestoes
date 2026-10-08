@@ -1,5 +1,6 @@
-import { chamarRpc } from '../servicos/supabase'
+import { ErroRpc, chamarRpc } from '../servicos/supabase'
 import { gerarId } from '../util/id'
+import { ler } from '../estado/armazenamento'
 
 /**
  * Uma conta, um aparelho por vez. Cada navegador tem um identificador fixo
@@ -15,6 +16,26 @@ const CHAVE_ID = 'oq-aparelho'
 /** Conta para a qual este aparelho já se registrou: sem ela, é um login novo aqui. */
 const CHAVE_REGISTRO = 'oq-aparelho-conta'
 const INTERVALO_MS = 60_000
+/** De quanto em quanto tempo olha se a página ou a questão mudou (só manda sinal se mudou). */
+const OLHAR_PAGINA_MS = 15_000
+
+/**
+ * O que está aberto agora, para o painel do administrador: a rota (sem os
+ * parâmetros) e, numa questão ou numa sessão, o id da questão na tela.
+ */
+export function paginaAtual(): { pagina: string; questao: string | null } {
+  const rota = (location.hash.replace(/^#/, '').split('?')[0] || '/').slice(0, 100)
+  const avulsa = rota.match(/^\/questao\/([a-z0-9-]{3,80})/)
+  if (avulsa) return { pagina: '/questao', questao: avulsa[1] }
+  if (rota === '/sessao') {
+    const sessao = ler<{ ids?: string[]; posicao?: number } | null>('sessao:atual', null)
+    const ids = sessao?.ids ?? []
+    const i = Math.min(Math.max(0, sessao?.posicao ?? 0), Math.max(0, ids.length - 1))
+    const id = ids[i]
+    return { pagina: ids.length ? `/sessao · ${i + 1} de ${ids.length}` : '/sessao', questao: id && /^[a-z0-9-]{3,80}$/.test(id) ? id : null }
+  }
+  return { pagina: rota, questao: null }
+}
 
 let idMemoria: string | null = null
 
@@ -65,6 +86,9 @@ export function vigiarAparelho(usuario: string, aoPerder: (outro: string | null)
   const id = idAparelho()
   let parado = false
   let emAndamento = false
+  // Banco sem a migração do monitor (sinal com página): usa o sinal antigo.
+  let semPagina = false
+  let ultimaEnviada = ''
 
   const registrar = async () => {
     await chamarRpc('registrar_aparelho', { p_aparelho: id, p_descricao: descreverAparelho() })
@@ -76,7 +100,19 @@ export function vigiarAparelho(usuario: string, aoPerder: (outro: string | null)
     emAndamento = true
     try {
       if (lerRegistro() !== usuario) { await registrar(); return }
-      const [resposta] = await chamarRpc<Sinal[]>('sinal_aparelho', { p_aparelho: id })
+      const agora = paginaAtual()
+      let resposta: Sinal | undefined
+      if (!semPagina) {
+        try {
+          ;[resposta] = await chamarRpc<Sinal[]>('sinal_aparelho', { p_aparelho: id, p_pagina: agora.pagina, p_questao: agora.questao })
+          ultimaEnviada = agora.pagina + '|' + agora.questao
+        } catch (f) {
+          // 404: o banco ainda não tem o sinal com página. Outra falha (rede) segue como antes.
+          if (f instanceof ErroRpc && f.status === 404) semPagina = true
+          else throw f
+        }
+      }
+      if (semPagina) [resposta] = await chamarRpc<Sinal[]>('sinal_aparelho', { p_aparelho: id })
       if (!parado && resposta && resposta.ativo === false) {
         parado = true
         gravarRegistro(null)
@@ -86,13 +122,24 @@ export function vigiarAparelho(usuario: string, aoPerder: (outro: string | null)
   }
 
   const aoMudarVisibilidade = () => { if (document.visibilityState === 'visible') void sinal() }
+  // Mudou de página ou de questão: avisa logo, sem esperar o sinal do minuto.
+  const olharPagina = () => {
+    if (semPagina) return
+    const agora = paginaAtual()
+    if (agora.pagina + '|' + agora.questao !== ultimaEnviada) void sinal()
+  }
   void sinal()
   const temporizador = window.setInterval(() => void sinal(), INTERVALO_MS)
+  const temporizadorPagina = window.setInterval(olharPagina, OLHAR_PAGINA_MS)
+  const aoMudarRota = () => window.setTimeout(olharPagina, 1500)
+  window.addEventListener('hashchange', aoMudarRota)
   document.addEventListener('visibilitychange', aoMudarVisibilidade)
   window.addEventListener('focus', aoMudarVisibilidade)
   return () => {
     parado = true
     window.clearInterval(temporizador)
+    window.clearInterval(temporizadorPagina)
+    window.removeEventListener('hashchange', aoMudarRota)
     document.removeEventListener('visibilitychange', aoMudarVisibilidade)
     window.removeEventListener('focus', aoMudarVisibilidade)
   }
