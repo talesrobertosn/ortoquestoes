@@ -1355,3 +1355,7 @@ nomes removidos e seta amarela foi registrada nas lições permanentes do guia.
 ## Netter — anatomia da coluna (08/10/2026)
 
 [Mapa e resultados](netter-coluna.md), [plano por questão](netter-coluna-plano.md) e [recorte oficial auditável](netter-coluna-recorte.json). 37 candidatos lidos, 18 questões de anatomia selecionadas, 13 com imagem. Lote de 16 autorais (`coluna-0492` a `coluna-0507`), três figuras com seta amarela. Exame físico excluído. Comentários sem mínimo de caracteres e sem blocos artificiais sobre a produção; motivos e provas ficam na documentação. A divergência dos níveis de ADAMKIEWICZ foi evitada cobrando conexão arterial, sem mudar gabaritos oficiais.
+
+## Netter — anatomia do braço (08/10/2026)
+
+[Mapa, limites e resultados](netter-braco.md), [plano](netter-braco-plano.md) e [recorte anatômico](netter-braco-recorte.json). 14 autorais, `ombro-cotovelo-0631` a `0644`, dez com imagem. Leitura das questões oficiais e pesquisa complementar em todos os temas; prioridade a musculocutâneo, músculos anteriores, tendão/aponeurose, radial e ulnar. Somente anatomia. Referências públicas limpas, com detalhes de produção apenas na documentação interna.

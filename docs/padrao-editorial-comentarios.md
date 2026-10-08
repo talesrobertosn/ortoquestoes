@@ -22,6 +22,14 @@ Usar títulos, tabelas e fechos apenas quando ajudarem o leitor.
 Esta orientação prevalece sobre as metas antigas de 4.000/4.500 caracteres e a
 exigência de parágrafos entre 400 e 700 caracteres dos roteiros de simulados.
 
+## Referências para o aluno (08/10/2026)
+
+Usar apenas a fonte bibliográfica pertinente: livro, edição confirmada e seção.
+Não mostrar nome do PDF, posição da folha recortada, “fornecido pelo usuário”,
+“recorte enviado” ou instruções de edição como “sem nomes e com seta amarela”.
+A legenda pode ser simplesmente “Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.”
+Os detalhes de adaptação e os arquivos usados ficam na documentação interna.
+
 ## Resultado esperado
 
 O leitor deve compreender o assunto e conseguir resolver questões semelhantes, mesmo
