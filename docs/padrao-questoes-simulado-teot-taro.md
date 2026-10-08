@@ -154,6 +154,21 @@ completo: a seção de instabilidade glenoumeral desse arquivo.
 
 ## Lições aprendidas (atualizar a cada capítulo)
 
+- **Anatomia com seta amarela (08/10/2026, modelo aprovado pelo dono).** Priorizar
+  figuras quando a identificação anatômica sustentar uma pergunta de prova. Remover
+  nomes e linhas que entreguem a resposta, manter a orientação da vista e colocar
+  uma única seta amarela com contorno escuro, com a ponta no ventre ou estrutura
+  exata. Questões sem imagem continuam válidas para trajetos, inserções e relações.
+  Conferir a figura original rotulada, a adaptação e a exibição no celular antes de
+  publicar. Não confiar apenas no prompt de edição: conferir anatomia e ponta da
+  seta visualmente. Figuras adaptadas devem ser identificadas como tal, com fonte.
+  O modelo e o registro completo estão em
+  [netter-ombro.md](simulados/netter-ombro.md); o exemplo aprovado está em
+  [amostras/netter](https://ortoquestoes.com.br/amostras/netter/).
+  Para entregar amostras ao dono, usar página pública com imagens e comentários:
+  links locais e anexos não foram acessíveis no cliente, mas a página do site foi.
+
+
 - **Paginação de capítulo isolado (08/10/2026, pedido do dono do projeto).** Não citar nos
   comentários a posição da folha no PDF recortado como se fosse página do livro. Usar livro,
   edição, capítulo, seção e figura ou tabela. A posição no PDF fica no plano e no campo interno

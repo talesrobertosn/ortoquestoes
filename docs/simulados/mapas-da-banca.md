@@ -1339,3 +1339,15 @@ limites de cada conclusão. Não confundir duplicata no banco com repetição an
 Pendências documentadas: três comandos visuais sem imagem, gabaritos sem confirmação,
 terminologia vascular e item sem ano com “cabeça curta do tríceps” na resposta.
 Nenhuma questão oficial foi alterada e nenhum simulado foi criado nesta etapa.
+
+
+## Netter: anatomia do ombro e modelo de seta amarela (08/10/2026)
+
+Engenharia reversa regional, provas/anos, padrão visual aprovado pelo dono,
+plano, divergências e aproveitamento em [netter-ombro.md](netter-ombro.md).
+O mapa amplo de anatomia TEOT/TARO continua em
+[anatomia-teot-taro.md](anatomia-teot-taro.md). O lote aproveitou 13 folhas do
+recorte, com oito questões comentadas, quatro figuras e dois pares,
+`ombro-cotovelo-0623` a `ombro-cotovelo-0630`. Gabaritos A2/B2/C2/D2;
+mediana dos comentários 6.420 caracteres. A preferência por anatomia com figura,
+nomes removidos e seta amarela foi registrada nas lições permanentes do guia.
