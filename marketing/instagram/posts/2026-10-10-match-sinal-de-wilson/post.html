@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Match da prova: sinal de Wilson</title>
+<!-- Estilo novo "match": a questão procura o par perfeito; as alternativas são perfis de um
+     aplicativo de encontros genérico (sem marca real). Questão joelho-0182 (TEOT 2025), gabarito A.
+     Feed 1080x1350 (p1 a p6) e stories 1080x1920 (s1, s2), sem figurinha e sem desenho de anatomia.
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-10-match-sinal-de-wilson/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Caveat; src: url(../../fontes/caveat-latin-wght-normal.woff2) format('woff2'); font-weight: 400 700; }
+:root { --rosa: #e8506b; --rosa-veu: #fde3e8; --coral: #f47c5c; --verde: #14655E; --tinta: #0B3A35; --ouro: #f4cf7c; --creme: #fff8f3; --cinza: #6b6f76; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1350px; padding: 70px 80px; color: var(--tinta);
+  background: radial-gradient(circle at 85% 8%, rgba(232,80,107,.16), transparent 40%), radial-gradient(circle at 10% 95%, rgba(244,124,92,.14), transparent 40%), var(--creme); }
+section.story { height: 1920px; padding: 210px 80px 300px; }
+.topo { display: flex; justify-content: space-between; align-items: center; }
+.marca { display: flex; align-items: center; gap: 14px; font: 34px Jakarta; letter-spacing: -.02em; }
+.marca svg { width: 54px; height: 54px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; }
+.app { display: inline-flex; align-items: center; gap: 10px; padding: 10px 20px; border-radius: 99px; background: #fff; box-shadow: 0 8px 20px rgba(232,80,107,.15); font: 800 24px Jakarta; color: var(--rosa); letter-spacing: .06em; text-transform: uppercase; }
+.app svg { width: 26px; height: 26px; }
+.pag { font: 700 26px Jakarta; color: var(--cinza); }
+h1 { font: 800 104px/.95 Jakarta; letter-spacing: -.05em; }
+h1 em, h2 em { font-style: normal; color: var(--rosa); }
+h2 { font: 800 70px/1.02 Jakarta; letter-spacing: -.04em; }
+.rodape { position: absolute; left: 80px; right: 80px; bottom: 56px; display: flex; justify-content: space-between; font: 600 26px Inter; color: var(--cinza); }
+.rodape b { color: var(--rosa); }
+
+/* Cartão de perfil */
+.perfil { position: relative; border-radius: 44px; background: #fff; box-shadow: 0 30px 60px rgba(11,58,53,.16); overflow: hidden; }
+.perfil .foto { height: 330px; display: grid; place-items: center; background: linear-gradient(150deg, var(--coral), var(--rosa)); color: #fff; font: 800 190px Jakarta; letter-spacing: -.06em; }
+.perfil .foto.v { background: linear-gradient(150deg, #1f8a7f, var(--tinta)); color: var(--ouro); }
+.perfil .info { padding: 30px 36px 34px; }
+.perfil .nome { font: 800 52px Jakarta; letter-spacing: -.03em; }
+.perfil .nome small { font: 600 34px Jakarta; color: var(--cinza); margin-left: 8px; }
+.perfil .bio { margin-top: 10px; font: 500 30px/1.35 Inter; color: #3d4448; }
+.botoes { display: flex; justify-content: center; gap: 70px; margin-top: 44px; }
+.botoes i { display: grid; place-items: center; width: 132px; height: 132px; border-radius: 50%; background: #fff; box-shadow: 0 18px 36px rgba(11,58,53,.16); }
+.botoes svg { width: 60px; height: 60px; }
+
+/* p1 capa */
+.capa .pilha { position: relative; margin: 60px auto 0; width: 720px; height: 640px; }
+.capa .pilha .perfil { position: absolute; inset: 0; }
+.capa .pilha .perfil:nth-child(1) { transform: rotate(-9deg) translate(-40px, 30px); opacity: .55; }
+.capa .pilha .perfil:nth-child(2) { transform: rotate(6deg) translate(40px, 14px); opacity: .75; }
+.capa .pilha .perfil .foto { height: 420px; font-size: 230px; }
+.capa h1 { margin-top: 58px; }
+.capa .sub { margin-top: 18px; font: 500 34px/1.35 Inter; color: #3d4448; }
+
+/* p2 caso */
+.caso .ficha { margin-top: 46px; padding: 44px 46px; border-radius: 40px; background: #fff; box-shadow: 0 24px 50px rgba(11,58,53,.12); }
+.caso .ficha small { font: 800 24px Jakarta; letter-spacing: .1em; text-transform: uppercase; color: var(--rosa); }
+.caso .ficha p { margin-top: 18px; font: 600 44px/1.32 Jakarta; letter-spacing: -.01em; }
+.caso .alts { margin-top: 34px; display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.caso .alts span { display: flex; align-items: center; gap: 18px; padding: 24px 28px; border-radius: 26px; background: #fff; border: 3px solid #f1d5da; font: 800 38px Jakarta; }
+.caso .alts b { display: grid; place-items: center; width: 58px; height: 58px; border-radius: 50%; background: var(--rosa-veu); color: var(--rosa); font-size: 30px; }
+.caso .comente { margin-top: 40px; font: 700 54px Caveat; color: var(--rosa); text-align: center; }
+
+/* p3 grade de perfis */
+.grade4 { margin-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+.grade4 .perfil .foto { height: 210px; font-size: 140px; }
+.grade4 .perfil .info { padding: 22px 28px 26px; }
+.grade4 .perfil .nome { font-size: 44px; }
+.grade4 .perfil .bio { font-size: 27px; }
+.dica { margin-top: 26px; text-align: center; font: 700 50px Caveat; color: var(--rosa); }
+
+/* p4 deu match */
+.match { color: #fff; background: radial-gradient(circle at 50% 30%, rgba(255,255,255,.18), transparent 50%), linear-gradient(160deg, var(--coral), var(--rosa) 55%, #b93a63); }
+.match .pag, .match .rodape { color: rgba(255,255,255,.8); } .match .rodape b { color: #fff; }
+.match .marca { color: #fff; }
+.match .grito { margin-top: 70px; text-align: center; font: 700 150px/.9 Caveat; transform: rotate(-4deg); text-shadow: 0 10px 30px rgba(0,0,0,.18); }
+.match .par { display: flex; justify-content: center; align-items: center; gap: 30px; margin-top: 50px; }
+.match .bola { display: grid; place-items: center; width: 250px; height: 250px; border-radius: 50%; border: 8px solid #fff; box-shadow: 0 20px 40px rgba(0,0,0,.2); text-align: center; }
+.match .bola.q { background: var(--tinta); color: var(--ouro); font: 800 40px/1.1 Jakarta; padding: 20px; }
+.match .bola.w { background: #fff; color: var(--rosa); font: 800 130px Jakarta; letter-spacing: -.05em; }
+.match .par svg { width: 80px; height: 80px; }
+.match h2 { margin-top: 50px; text-align: center; color: #fff; font-size: 74px; }
+.match .porque { margin-top: 30px; padding: 34px 40px; border-radius: 34px; background: rgba(255,255,255,.95); color: var(--tinta); font: 500 34px/1.4 Inter; }
+.match .porque b { color: var(--rosa); }
+
+/* p5 explicação */
+.passos { margin-top: 40px; display: grid; gap: 22px; }
+.passo { display: grid; grid-template-columns: 90px 1fr; gap: 26px; align-items: start; padding: 30px 34px; border-radius: 32px; background: #fff; box-shadow: 0 16px 34px rgba(11,58,53,.1); }
+.passo b { display: grid; place-items: center; width: 90px; height: 90px; border-radius: 28px; background: var(--rosa-veu); color: var(--rosa); font: 800 48px Jakarta; }
+.passo p { font: 500 33px/1.38 Inter; } .passo p strong { font-family: Jakarta; font-weight: 800; }
+
+/* p6 recusados e resumo */
+.recusas { margin-top: 36px; display: grid; gap: 18px; }
+.recusa { display: grid; grid-template-columns: 96px 1fr; gap: 24px; align-items: center; padding: 26px 30px; border-radius: 30px; background: #fff; box-shadow: 0 12px 26px rgba(11,58,53,.08); }
+.recusa i { display: grid; place-items: center; width: 96px; height: 96px; border-radius: 50%; background: #f2f3f4; }
+.recusa i svg { width: 46px; height: 46px; }
+.recusa p { font: 500 30px/1.35 Inter; } .recusa p strong { display: block; font: 800 38px Jakarta; letter-spacing: -.02em; }
+.prova { margin-top: 30px; padding: 32px 38px; border-radius: 32px; background: var(--tinta); color: #fff; font: 600 36px/1.35 Jakarta; }
+.prova small { display: block; margin-bottom: 8px; font: 800 24px Jakarta; letter-spacing: .1em; text-transform: uppercase; color: var(--ouro); }
+.prova em { font-style: normal; color: var(--ouro); }
+
+/* Stories */
+.story h1 { margin-top: 70px; font-size: 118px; }
+.story .sub { margin-top: 24px; font: 500 40px/1.35 Inter; color: #3d4448; }
+.story .lista { margin-top: 56px; display: grid; gap: 22px; }
+.story .lista span { display: flex; align-items: center; gap: 26px; padding: 30px 36px; border-radius: 34px; background: #fff; box-shadow: 0 16px 34px rgba(11,58,53,.1); font: 800 52px Jakarta; letter-spacing: -.02em; }
+.story .lista b { display: grid; place-items: center; width: 84px; height: 84px; border-radius: 50%; background: linear-gradient(150deg, var(--coral), var(--rosa)); color: #fff; font-size: 44px; }
+.story .pe { margin-top: 60px; text-align: center; font: 700 70px/1.05 Caveat; color: var(--rosa); }
+.story.match h1 { margin-top: 40px; }
+.story.match .grito { margin-top: 90px; font-size: 190px; }
+.story.match .bola { width: 300px; height: 300px; }
+.story.match .bola.w { font-size: 160px; }
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/>
+<circle cx="17" cy="20" r="4.5" fill="#9cc3bd"/><rect x="26" y="16.5" width="24" height="7" rx="3.5" fill="#9cc3bd"/>
+<circle cx="17" cy="32" r="4.5" fill="#f4cf7c"/><rect x="26" y="28.5" width="24" height="7" rx="3.5" fill="#f4cf7c"/>
+<circle cx="17" cy="44" r="4.5" fill="#9cc3bd"/><rect x="26" y="40.5" width="19" height="7" rx="3.5" fill="#9cc3bd"/></symbol>
+<symbol id="cor" viewBox="0 0 24 24"><path fill="currentColor" d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.8 4.5c2.1 0 3.6 1.2 5.2 3 1.6-1.8 3.1-3 5.2-3 3.8 0 5.9 3.9 4.4 7.3C19.5 16.4 12 21 12 21z"/></symbol>
+<symbol id="xis" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></symbol>
+</defs></svg>
+
+<!-- p1 capa -->
+<section id="p1-capa" class="capa">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="app"><svg style="color:var(--rosa)"><use href="#cor"/></svg>Match da prova</span></div>
+  <div class="pilha">
+    <div class="perfil"><div class="foto">?</div></div>
+    <div class="perfil"><div class="foto v">?</div></div>
+    <div class="perfil"><div class="foto">?</div><div class="info"><p class="nome">Sinal procura joelho<small>TEOT 2025</small></p><p class="bio">Gosta de adolescentes ativos e de andar com o pé virado para fora.</p></div></div>
+  </div>
+  <h1>Quatro sinais. <em>Um match.</em></h1>
+  <p class="sub">A banca abriu o aplicativo. Arraste e descubra com quem a questão combina.</p>
+  <div class="rodape"><span>Arraste para o lado</span><span>1/6</span></div>
+</section>
+
+<!-- p2 caso -->
+<section id="p2-caso" class="caso">
+  <div class="topo"><span class="app"><svg style="color:var(--rosa)"><use href="#cor"/></svg>O que a questão procura</span><span class="pag">2/6</span></div>
+  <div class="ficha">
+    <small>TEOT 2025 · joelho</small>
+    <p>Em pacientes com osteocondrite dissecante do joelho, a marcha em rotação externa para evitar o contato entre o côndilo femoral medial e a espinha tibial medial caracteriza o sinal:</p>
+  </div>
+  <div class="alts"><span><b>A</b>WILSON</span><span><b>B</b>SLOCUM</span><span><b>C</b>McINTOSH</span><span><b>D</b>DREHMANN</span></div>
+  <p class="comente">Comente a sua letra antes de arrastar</p>
+  <div class="rodape"><span>Questão real da prova</span><span><b>ortoquestoes.com.br</b></span></div>
+</section>
+
+<!-- p3 perfis -->
+<section id="p3-perfis">
+  <div class="topo"><span class="app"><svg style="color:var(--rosa)"><use href="#cor"/></svg>Os candidatos</span><span class="pag">3/6</span></div>
+  <h2 style="margin-top:40px">Quatro perfis, <em>só um é do joelho com OCD.</em></h2>
+  <div class="grade4">
+    <div class="perfil"><div class="foto">W</div><div class="info"><p class="nome">Wilson<small>A</small></p><p class="bio">Discreto. Descrito em 1967 e pouca gente lembra o nome.</p></div></div>
+    <div class="perfil"><div class="foto">S</div><div class="info"><p class="nome">Slocum<small>B</small></p><p class="bio">Gosta de girar a tíbia antes de puxar.</p></div></div>
+    <div class="perfil"><div class="foto">M</div><div class="info"><p class="nome">McIntosh<small>C</small></p><p class="bio">Famoso por dar um tranco no meio do movimento.</p></div></div>
+    <div class="perfil"><div class="foto">D</div><div class="info"><p class="nome">Drehmann<small>D</small></p><p class="bio">Nem é do joelho: trabalha no quadril.</p></div></div>
+  </div>
+  <p class="dica">Já sabe quem leva o coração?</p>
+</section>
+
+<!-- p4 deu match -->
+<section id="p4-match" class="match">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="pag">4/6</span></div>
+  <p class="grito">Deu match!</p>
+  <div class="par"><div class="bola q">OCD do joelho</div><svg style="color:#fff"><use href="#cor"/></svg><div class="bola w">W</div></div>
+  <h2>Resposta A: sinal de Wilson</h2>
+  <p class="porque">Rodar a tíbia <b>para fora</b> afasta a espinha tibial medial da lesão no côndilo femoral medial. Por isso o paciente anda em <b>rotação externa</b>: é o jeito de não sentir dor.</p>
+  <div class="rodape"><span>Arraste para entender</span><span>4/6</span></div>
+</section>
+
+<!-- p5 explicação -->
+<section id="p5-porque">
+  <div class="topo"><span class="app"><svg style="color:var(--rosa)"><use href="#cor"/></svg>Por que combinam</span><span class="pag">5/6</span></div>
+  <h2 style="margin-top:40px">O sinal em <em>três passos</em></h2>
+  <div class="passos">
+    <div class="passo"><b>1</b><p><strong>Onde está a lesão.</strong> Na osteocondrite dissecante do joelho, o local clássico é a face lateral do côndilo femoral medial, de frente para o centro da articulação.</p></div>
+    <div class="passo"><b>2</b><p><strong>A manobra.</strong> Paciente sentado, joelho a 90 graus. Estende devagar com a tíbia rodada para dentro: perto de 30 graus, a espinha tibial medial encosta na lesão e dói. Rodando para fora, a dor some.</p></div>
+    <div class="passo"><b>3</b><p><strong>A marcha.</strong> Alguns pacientes andam em rotação externa sem perceber, para fugir desse contato. Sinal de sensibilidade baixa: o diagnóstico vem da radiografia em túnel e da ressonância.</p></div>
+  </div>
+  <div class="rodape"><span>Arraste para o lado</span><span>5/6</span></div>
+</section>
+
+<!-- p6 recusas e para a prova -->
+<section id="p6-prova">
+  <div class="topo"><span class="app"><svg style="color:var(--rosa)"><use href="#cor"/></svg>Não foi dessa vez</span><span class="pag">6/6</span></div>
+  <div class="recusas">
+    <div class="recusa"><i><svg style="color:#9aa0a6"><use href="#xis"/></svg></i><p><strong>Slocum</strong>Gaveta anterior com a tíbia rodada: instabilidade rotatória do joelho.</p></div>
+    <div class="recusa"><i><svg style="color:#9aa0a6"><use href="#xis"/></svg></i><p><strong>McIntosh</strong>É o pivot shift: subluxação anterolateral da tíbia na insuficiência do LCA.</p></div>
+    <div class="recusa"><i><svg style="color:#9aa0a6"><use href="#xis"/></svg></i><p><strong>Drehmann</strong>É do quadril: na epifisiólise, o quadril roda para fora quando é fletido.</p></div>
+  </div>
+  <p class="prova"><small>Para a prova</small>OCD no côndilo femoral medial, dor com a tíbia em <em>rotação interna</em>, alívio em <em>rotação externa</em>: sinal de <em>Wilson</em>.</p>
+  <div class="rodape"><span>Mais questões comentadas em</span><span><b>ortoquestoes.com.br</b></span></div>
+</section>
+
+<!-- s1 story da manhã -->
+<section id="s1-procura" class="story">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="app"><svg style="color:var(--rosa)"><use href="#cor"/></svg>Match da prova</span></div>
+  <h1>Procura-se <em>um sinal.</em></h1>
+  <p class="sub">Adolescente com osteocondrite dissecante do joelho anda com a perna em rotação externa. Qual sinal é esse?</p>
+  <div class="lista"><span><b>A</b>Wilson</span><span><b>B</b>Slocum</span><span><b>C</b>McIntosh</span><span><b>D</b>Drehmann</span></div>
+  <p class="pe">Quem dá match?<br>Resposta no feed</p>
+</section>
+
+<!-- s2 story da noite -->
+<section id="s2-match" class="story match">
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div></div>
+  <p class="grito">Deu match!</p>
+  <div class="par"><div class="bola q">OCD do joelho</div><svg style="color:#fff"><use href="#cor"/></svg><div class="bola w">W</div></div>
+  <h2>Sinal de Wilson</h2>
+  <p class="porque">Tíbia em <b>rotação interna</b> encosta a espinha tibial medial na lesão do côndilo femoral medial e dói. Em <b>rotação externa</b>, alivia. Por isso a marcha vira para fora.</p>
+  <p class="pe" style="color:#fff">O passo a passo está no feed</p>
+</section>
+</body></html>
