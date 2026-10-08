@@ -155,7 +155,10 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   function perfilCompleto(avisar: (texto: string) => void = definirMensagem) {
     if (nome.trim().length < 2) { avisar('Informe seu nome.'); return false }
     if (sobrenome.trim().length < 2) { avisar('Informe seu sobrenome.'); return false }
-    if (!nascimento || new Date(`${nascimento}T12:00:00`).getTime() > Date.now()) { avisar('Informe uma data de nascimento válida.'); return false }
+    // Quem estuda para prova de ortopedia tem pelo menos 18 anos; o campo de data
+    // às vezes fica com o dia de hoje quando a pessoa só toca nele.
+    const anos = nascimento ? (Date.now() - new Date(`${nascimento}T12:00:00`).getTime()) / (365.25 * 864e5) : NaN
+    if (!(anos >= 18 && anos <= 100)) { avisar('Confira a data de nascimento: ela parece incompleta ou com o ano errado.'); return false }
     if (!situacao) { avisar('Informe sua etapa profissional.'); return false }
     if (situacao === 'residente' && !anoResidencia) { avisar('Informe o ano da residência (R1, R2 ou R3).'); return false }
     if (!provas.length) { avisar('Marque ao menos uma prova para a qual você estuda.'); return false }
