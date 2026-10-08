@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Stories caderno DDQ Orto Questões</title>
+<!-- 08/10/2026. 2 stories (1080x1920) no visual de caderno (stories/modelo.html, s3-caderno), sem figurinha.
+     Questão pediatria-0005 (TARO 2020), gabarito oficial A (sinal de Hart). Conteúdo do comentário da questão.
+     s1-pergunta de manhã; s2-resposta ao meio-dia ou às 19h.
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-08-caderno-ddq-hart/post.html
+     Áreas seguras: nada importante nos 210 px de cima nem nos 300 px de baixo. -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Caveat; src: url(../../fontes/caveat-latin-wght-normal.woff2) format('woff2'); font-weight: 400 700; }
+:root { --ouro: #f4cf7c; --verde: #14655E; --tinta: #0B3A35; --vermelho: #c8412f; --caneta: #1f4f9e; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1920px; padding: 210px 84px 300px; }
+.topo { display: flex; justify-content: space-between; align-items: center; position: relative; z-index: 2; }
+.marca { display: flex; align-items: center; gap: 16px; font: 36px Jakarta; letter-spacing: -.02em; }
+.marca svg { width: 58px; height: 58px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; opacity: .9; }
+.topo .prova { font: 800 26px Jakarta; letter-spacing: .1em; text-transform: uppercase; color: var(--verde); }
+section > * { position: relative; z-index: 1; }
+
+/* Caderno (do stories/modelo.html) */
+.caderno { color: #16211f; background: radial-gradient(ellipse at 60% 40%, transparent 55%, rgba(120,100,60,.10)), repeating-linear-gradient(180deg, transparent 0 62px, rgba(74,128,196,.28) 62px 64px), #fffdf6; }
+.caderno::after { content: ''; position: absolute; top: 0; bottom: 0; left: 176px; width: 12px; border-left: 3px solid rgba(214,70,70,.55); border-right: 2px solid rgba(214,70,70,.55); z-index: 0; }
+.caderno .espiral { position: absolute; left: 0; top: 0; bottom: 0; width: 120px; z-index: 5; padding: 0; }
+.caderno .espiral i { position: absolute; left: 44px; width: 30px; height: 30px; border-radius: 50%; background: #2f3431; box-shadow: inset 0 3px 5px rgba(0,0,0,.6); }
+.caderno .espiral b { position: absolute; left: -6px; width: 72px; height: 22px; border-radius: 12px; background: linear-gradient(180deg, #f4f5f6, #9da3a8 45%, #e6e8ea 60%, #7d8388); box-shadow: 0 3px 4px rgba(0,0,0,.28); transform: rotate(-14deg); }
+.caderno .dentro { margin-left: 146px; }
+.caderno .topo { margin-left: 146px; }
+.caderno .eti { display: inline-block; margin-top: 70px; padding: 10px 22px; border-radius: 99px; background: var(--tinta); color: #f7d57f; font: 800 24px Jakarta; letter-spacing: .1em; text-transform: uppercase; }
+.caderno h2 { margin-top: 30px; font: 800 92px/1.02 Jakarta; letter-spacing: -.04em; text-wrap: balance; }
+.caderno h2 span { background: linear-gradient(transparent 55%, #f7d57f 55%, #f7d57f 92%, transparent 92%); padding: 0 6px; margin: 0 -6px; }
+.caderno .folha { margin-top: 56px; padding: 38px 42px 34px; background: rgba(255,255,255,.93); border-radius: 26px; box-shadow: 0 16px 34px rgba(20,32,30,.1); transform: rotate(-1.2deg); }
+.caderno .folha small { font: 700 26px Jakarta; color: #5a5d58; letter-spacing: .06em; text-transform: uppercase; }
+.caderno .folha .enun { margin-top: 14px; font: 600 38px/1.35 Inter; color: #16211f; }
+.caderno .alts { margin-top: 22px; list-style: none; }
+.caderno .alts li { display: grid; grid-template-columns: 62px 1fr; align-items: baseline; padding: 6px 0; font: 700 64px/1.05 Caveat; color: var(--caneta); }
+.caderno .alts li b { font: 800 34px Jakarta; color: var(--tinta); }
+.caderno .alts li.risca span { text-decoration: line-through 4px var(--vermelho); color: rgba(31,79,158,.55); }
+.caderno .alts li em { display: block; font: 600 28px/1.3 Inter; font-style: normal; color: #4a4f4b; margin-top: 2px; }
+.caderno .alts li.certa span { padding: 0 14px; margin-left: -14px; border: 5px solid var(--vermelho); border-radius: 50% 46% 52% 44%; }
+.caderno .postit { margin: 64px 0 0 auto; width: 600px; padding: 30px 34px; background: #fde68a; box-shadow: 0 20px 34px rgba(120,90,0,.25); transform: rotate(3deg); font: 700 52px/1.05 Caveat; color: #5b3d00; }
+.caderno .pe { margin-top: 48px; font: 700 30px Jakarta; color: var(--verde); letter-spacing: .02em; }
+
+/* Resposta */
+#s2-resposta h2 { font-size: 84px; }
+#s2-resposta .folha { margin-top: 40px; padding: 30px 38px 26px; }
+#s2-resposta .alts { margin-top: 4px; }
+#s2-resposta .alts li { font-size: 54px; padding: 4px 0; }
+#s2-resposta .alts li em { font-size: 26px; margin-top: 6px; }
+#s2-resposta .alts li.certa em { margin-top: 14px; }
+#s2-resposta .postit { margin-top: 40px; font-size: 46px; width: 640px; padding: 24px 30px; }
+.caderno .idade { margin-top: 32px; display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.caderno .idade div { padding: 20px 26px; border-radius: 22px; background: rgba(255,255,255,.93); box-shadow: 0 12px 26px rgba(20,32,30,.08); }
+.caderno .idade div.agora { background: var(--tinta); color: #fff; }
+.caderno .idade small { font: 800 24px Jakarta; letter-spacing: .08em; text-transform: uppercase; color: #5a5d58; }
+.caderno .idade .agora small { color: #f7d57f; }
+.caderno .idade p { margin-top: 10px; font: 600 32px/1.3 Inter; }
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/>
+<circle cx="17" cy="20" r="4.5" fill="#9cc3bd"/><rect x="26" y="16.5" width="24" height="7" rx="3.5" fill="#9cc3bd"/>
+<circle cx="17" cy="32" r="4.5" fill="#f4cf7c"/><rect x="26" y="28.5" width="24" height="7" rx="3.5" fill="#f4cf7c"/>
+<circle cx="17" cy="44" r="4.5" fill="#9cc3bd"/><rect x="26" y="40.5" width="19" height="7" rx="3.5" fill="#9cc3bd"/></symbol>
+</defs></svg>
+
+<!-- 1. Pergunta (manhã) -->
+<section class="caderno" id="s1-pergunta">
+  <div class="espiral"></div>
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="prova">TARO 2020</span></div>
+  <div class="dentro">
+    <span class="eti">Caiu na prova</span>
+    <h2>Aos 9 meses, o Ortolani ainda <span>resolve?</span></h2>
+    <div class="folha">
+      <small>Displasia do desenvolvimento do quadril</small>
+      <p class="enun">Na displasia do desenvolvimento do quadril diagnosticada tardiamente (9 meses de idade), o achado mais confiável é:</p>
+      <ul class="alts">
+        <li><b>A</b><span>o sinal de Hart</span></li>
+        <li><b>B</b><span>o teste de Barlow</span></li>
+        <li><b>C</b><span>o teste de Ortolani</span></li>
+        <li><b>D</b><span>o sinal de Peter-Bade</span></li>
+      </ul>
+    </div>
+    <div class="postit">Guarde a sua letra. A resposta sai no próximo story.</div>
+    <p class="pe">ortoquestoes.com.br</p>
+  </div>
+</section>
+
+<!-- 2. Resposta (meio-dia ou 19h) -->
+<section class="caderno" id="s2-resposta">
+  <div class="espiral"></div>
+  <div class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div><span class="prova">TARO 2020</span></div>
+  <div class="dentro">
+    <span class="eti">Resposta</span>
+    <h2>Letra A: <span>sinal de Hart</span></h2>
+    <div class="folha">
+      <ul class="alts">
+        <li class="certa"><b>A</b><div><span>o sinal de Hart</span><em>Abdução limitada com quadril e joelho fletidos: os adutores retraídos travam a abdução.</em></div></li>
+        <li class="risca"><b>B</b><div><span>o teste de Barlow</span><em>Neonatal: com o quadril fixo luxado, não há o que luxar.</em></div></li>
+        <li class="risca"><b>C</b><div><span>o teste de Ortolani</span><em>O quadril retraído não reduz mais com a manobra.</em></div></li>
+        <li class="risca"><b>D</b><div><span>o sinal de Peter-Bade</span><em>Pregas assimétricas: pouco específico, aparece em crianças normais.</em></div></li>
+      </ul>
+    </div>
+    <div class="idade">
+      <div><small>Até 2 a 3 meses</small><p>Ortolani e Barlow</p></div>
+      <div class="agora"><small>Depois dos 3 meses</small><p>Abdução limitada (Hart)</p></div>
+    </div>
+    <div class="postit">Para a prova: passou dos 3 meses, procure a abdução limitada.</div>
+    <p class="pe" style="margin-top:34px">Mais questões comentadas em ortoquestoes.com.br</p>
+  </div>
+</section>
+
+<script>
+document.querySelectorAll('.espiral').forEach(e => {
+  for (let y = 70; y < 1920; y += 86) e.innerHTML += `<i style="top:${y}px"></i><b style="top:${y + 4}px"></b>`
+})
+</script>
+</body></html>
