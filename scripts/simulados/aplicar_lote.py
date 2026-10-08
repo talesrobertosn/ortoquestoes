@@ -39,7 +39,8 @@ a = ap.parse_args()
 
 RAIZ = Path(__file__).resolve().parents[2]
 PASTA = Path(a.pasta)
-MIN_COMENTARIO = 4000  # aviso: abaixo disso o comentário tende a ficar raso; meta de mediana do lote 4500 ou mais (caps 1, 2 e 4)
+# Diretriz do dono, 08/10/2026: extensão proporcional ao assunto, sem piso de
+# caracteres. A qualidade e a utilidade de cada alternativa exigem revisão manual.
 
 
 def carregar(nome):
@@ -84,8 +85,8 @@ for m, q in QS:
         avisos.append(f"{rot}: enunciado com {len(q['enun'])} caracteres")
     total = len(q["conceito"]) + len(q["correta"]) + sum(len(v) for v in q["inc"].values())
     tamanhos.append(total)
-    if total < MIN_COMENTARIO:
-        avisos.append(f"{rot}: comentário com {total} caracteres (meta de {MIN_COMENTARIO} ou mais)")
+    if not q["conceito"].strip() or not q["correta"].strip() or any(not t.strip() for t in q["inc"].values()):
+        erros.append(f"{rot}: conceito ou análise de alternativa vazio")
     if q.get("img") and not (PASTA / "img" / f"{q['img'][0]}.png").exists():
         erros.append(f"{rot}: figura {q['img'][0]}.png não encontrada")
 

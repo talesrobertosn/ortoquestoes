@@ -154,6 +154,13 @@ completo: a seção de instabilidade glenoumeral desse arquivo.
 
 ## Lições aprendidas (atualizar a cada capítulo)
 
+- **Comentário natural e útil (08/10/2026, ajuste do dono).** Sem piso de caracteres.
+  Explicar a relação anatômica e a dúvida de cada alternativa com a extensão que
+  elas pedem. Cortar repetição, títulos artificiais e explicações sobre por que a
+  questão existe. A engenharia reversa fica no mapa e no plano. Esta orientação
+  substitui as metas antigas de tamanho abaixo e no prompt; preservar profundidade
+  quando ela for necessária, sem fabricar volume.
+
 - **Anatomia com seta amarela (08/10/2026, modelo aprovado pelo dono).** Priorizar
   figuras quando a identificação anatômica sustentar uma pergunta de prova. Remover
   nomes e linhas que entreguem a resposta, manter a orientação da vista e colocar
@@ -175,13 +182,12 @@ completo: a seção de instabilidade glenoumeral desse arquivo.
   `origem.pagina`, para conferir a fonte; página bibliográfica só quando a numeração impressa
   do livro estiver efetivamente visível no material enviado.
 
-- **Tamanho do comentário (07/10/2026).** Os capítulos aprovados 1, 2 e 4 ficaram com mediana de 4,5
-  a 5,8 mil caracteres; os seguintes caíram para 3 a 3,8 mil (24 e 25 ficaram em 3 mil). O que mais
-  encurta é a análise das alternativas: cada uma precisa de um parágrafo de verdade (o que diz, de
-  onde vem o distrator no livro, por que não serve, como diferenciar), em geral 400 a 700
-  caracteres, e não uma frase. Meta: mediana do lote de 4,5 mil ou mais; o script avisa abaixo de 4
-  mil. Conferir com `scripts/simulados/registro.py`. Os capítulos 24/25 e 32 foram enriquecidos com
-  `scripts/simulados/enriquecer.py` (para cerca de 4,2 mil de mediana).
+- **Profundidade sem enchimento (ajustado em 08/10/2026).** Os lotes antigos usavam
+  metas de tamanho para evitar justificativas superficiais. O dono corrigiu essa
+  estratégia: extensão não comprova qualidade. Cada alternativa precisa esclarecer
+  sua diferença relevante, mas um comentário curto e suficiente é preferível a
+  repetir contexto ou narrar a elaboração da questão. A mediana é apenas um dado
+  descritivo, sem comparação obrigatória com outros capítulos.
 - **Subtema pertence ao tema.** "Fratura do colo do fêmur" é subtema de trauma e não de tumores;
   o script agora lista os subtemas válidos quando erra.
 - **Só o que o capítulo diz.** Explicações de mecanismo que não estão no texto (por exemplo, por que
@@ -221,7 +227,7 @@ toda questão de simulado feita a partir de agora.
 - **Conceito:** ensina o trecho do capítulo do zero: definições, mecanismo, números do livro com o
   contexto de cada um, exemplos e figuras citadas, ligação com outros pontos do mesmo capítulo e a
   armadilha da prova. Parágrafos de texto que conectam as ideias; tabela ou lista só quando
-  comparam ou ordenam de fato. Na escala da referência (em geral 5 a 8 mil caracteres no total).
+  comparam ou ordenam de fato. Com extensão proporcional ao assunto, sem meta mínima de caracteres.
 - **Cada alternativa, inclusive a correta:** parágrafo próprio com o que a afirmação significa, o
   mecanismo que a sustenta ou derruba, onde aquele dado aparece no livro (o distrator costuma ser
   um número ou conceito verdadeiro de outro contexto) e como diferenciar.

@@ -63,8 +63,8 @@ Se o PDF veio anexado, copie para `/tmp/simulado/capitulo.pdf`. **O PDF nunca en
 python3 scripts/simulados/registro.py
 ```
 
-Anote: se esse capítulo ou assunto já tem simulados (não repetir), e a mediana de tamanho dos
-comentários aprovados (a sua tem de ficar igual ou maior).
+Anote: se esse capítulo ou assunto já tem simulados (não repetir), e a profundidade dos
+comentários aprovados. O lote novo não precisa igualar ou superar o tamanho deles.
 
 ---
 
@@ -198,25 +198,29 @@ referência) e a lista `QUESTOES`. Cada questão é um `dict` com:
 
 ## 7. O comentário (o padrão que mais erra; leia com atenção)
 
+**Atualização do dono em 08/10/2026:** comentário natural e útil, sem piso de
+caracteres. Explicar cada alternativa sem enchimento. A engenharia reversa e os
+motivos para criar a questão ficam no mapa e no plano, não em parágrafos artificiais
+no comentário. Esta diretriz substitui os limites de extensão abaixo.
+
 O comentário é **uma aula do trecho do capítulo**, que permite entender o assunto sem abrir o
-livro. Siga `docs/padrao-editorial-comentarios.md` e o tamanho de `docs/exemplos/mao-0853.json`.
+livro. Siga `docs/padrao-editorial-comentarios.md` e a profundidade de `docs/exemplos/mao-0853.json`, ajustada ao assunto.
 
 - `conceito`: ensina do zero, em parágrafos que conectam as ideias. Definição, mecanismo, os números
-  do livro com o contexto de cada um, a figura ou tabela citada, a ligação com outros pontos do
-  capítulo e com a banca ("A banca já cobrou isso: TARO 2018 perguntou ..."). Tabela só quando
-  compara de verdade. Termine com `> **Na prova:** <a frase que fica>.`
+  do livro com o contexto de cada um, a figura ou tabela citada, relações relevantes com outros pontos do
+  capítulo. Tabela só quando
+  compara de verdade. Use o fecho `> **Na prova:**` somente quando ele ajudar.
 - `correta`: começa EXATAMENTE com `**X: texto da alternativa.**` (X = letra do gabarito) e explica
-  por que está certa, com o dado do livro e onde ele aparece. Escreva também um parágrafo a mais com
-  contexto do capítulo (série do autor, tabela, protocolo).
-- `inc`: um texto para CADA uma das três letras erradas. Cada um é **um parágrafo de verdade, de 400
-  a 700 caracteres**: o que a alternativa diz, de onde vem esse dado no livro (o distrator é
+  por que está certa, com o dado do livro e onde ele aparece. Acrescente contexto
+  somente quando ele ajudar a entender a resposta.
+- `inc`: um texto para CADA uma das três letras erradas. Cada um tem uma **explicação própria, sem extensão fixa**: o que a alternativa diz, de onde vem esse dado no livro (o distrator é
   verdadeiro em outro contexto), por que não serve aqui e como diferenciar. Comece com uma frase
   curta em negrito, por exemplo `**É o nervo do acesso posterior.**`.
-- **Tamanho:** cada questão com 4.000 caracteres ou mais no total; a mediana do lote, 4.500 ou mais.
-  Não encha linguiça: o tamanho vem de explicar o mecanismo e cada alternativa.
+- **Tamanho:** sem mínimo de caracteres. Escrever o necessário para entender a relação e
+  diferenciar cada alternativa; cortar repetição e conteúdo que não ajuda a resolver.
 - **Só o que o capítulo diz.** Não invente número, autor, mecanismo ou estatística. Se o texto e a
   legenda do livro divergem, pergunte só o valor que não diverge. Se a banca cobrou algo de outra
-  edição, cobre o capítulo atual e cite a banca no comentário.
+  edição, cobre uma relação inequívoca do capítulo atual e registre a diferença no mapa.
 - **Proibido no texto:** travessão (—) e meia-risca (–) (use vírgula, dois-pontos ou parênteses),
   itálico com asterisco simples (`*assim*`), marca-texto `==assim==`, emoji, frases telegráficas
   ("Errada. Não é isso.").
@@ -233,9 +237,8 @@ python3 scripts/simulados/aplicar_lote.py /tmp/simulado <tema> lote_a,lote_b,lot
 
 O script bloqueia: alternativas repetidas, gabarito incoerente com as chaves de `inc`, `correta`
 sem `**X:`, subtema inexistente, travessão, meia-risca, itálico simples, `==`, EXCETO, INCORRETA,
-"assinale", lacuna e figura ausente. Avisa: comentário abaixo de 4.000 caracteres e enunciado fora
-da faixa. **Corrija todos os erros E todos os avisos.** Ele mostra a distribuição do gabarito e a
-mediana dos comentários: ajuste até ficar equilibrado e com mediana de 4.500 ou mais.
+"assinale", lacuna e figura ausente. Avisa: enunciado fora da faixa. **Corrija todos os erros E todos os avisos.** Ele mostra a distribuição do gabarito e a
+mediana dos comentários: ajuste até ficar equilibrado. A mediana é descritiva, não uma meta.
 
 ### Revisão manual, questão por questão (obrigatória, além do script)
 

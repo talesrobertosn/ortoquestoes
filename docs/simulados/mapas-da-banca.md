@@ -1351,3 +1351,7 @@ recorte, com oito questões comentadas, quatro figuras e dois pares,
 `ombro-cotovelo-0623` a `ombro-cotovelo-0630`. Gabaritos A2/B2/C2/D2;
 mediana dos comentários 6.420 caracteres. A preferência por anatomia com figura,
 nomes removidos e seta amarela foi registrada nas lições permanentes do guia.
+
+## Netter — anatomia da coluna (08/10/2026)
+
+[Mapa e resultados](netter-coluna.md), [plano por questão](netter-coluna-plano.md) e [recorte oficial auditável](netter-coluna-recorte.json). 37 candidatos lidos, 18 questões de anatomia selecionadas, 13 com imagem. Lote de 16 autorais (`coluna-0492` a `coluna-0507`), três figuras com seta amarela. Exame físico excluído. Comentários sem mínimo de caracteres e sem blocos artificiais sobre a produção; motivos e provas ficam na documentação. A divergência dos níveis de ADAMKIEWICZ foi evitada cobrando conexão arterial, sem mudar gabaritos oficiais.

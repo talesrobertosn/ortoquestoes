@@ -1,0 +1,619 @@
+{
+  "data": "2026-10-08",
+  "candidatosLidos": 37,
+  "selecionados": [
+    "coluna-0281",
+    "coluna-0286",
+    "coluna-0216",
+    "coluna-0222",
+    "coluna-0233",
+    "coluna-0097",
+    "coluna-0098",
+    "coluna-0023",
+    "coluna-0054",
+    "coluna-0027",
+    "coluna-0262",
+    "coluna-0085",
+    "coluna-0099",
+    "coluna-0101",
+    "coluna-0169",
+    "coluna-0264",
+    "coluna-0265",
+    "coluna-0272"
+  ],
+  "excluidos": [
+    "coluna-0296",
+    "coluna-0163",
+    "coluna-0010",
+    "coluna-0304",
+    "coluna-0327",
+    "coluna-0321",
+    "coluna-0337",
+    "coluna-0344",
+    "coluna-0345",
+    "coluna-0346",
+    "coluna-0347",
+    "coluna-0348",
+    "coluna-0349",
+    "coluna-0354",
+    "coluna-0067",
+    "coluna-0068",
+    "coluna-0075",
+    "coluna-0167",
+    "coluna-0279",
+    "coluna-0002",
+    "coluna-0004",
+    "coluna-0059",
+    "coluna-0084",
+    "coluna-0087",
+    "coluna-0095",
+    "coluna-0112",
+    "coluna-0134",
+    "coluna-0182",
+    "coluna-0186",
+    "coluna-0232",
+    "coluna-0276",
+    "coluna-0279"
+  ],
+  "questoes": [
+    {
+      "id": "coluna-0023",
+      "prova": "TARO",
+      "ano": 2021,
+      "enunciado": "Na via de acesso à coluna cervical alta, deve-se dissecar lateralmente o arco posterior de C1 até no máximo 1,5 cm da linha média para evitar lesionar",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "a artéria vertebral."
+        },
+        {
+          "letra": "B",
+          "texto": "a raiz nervosa de C1."
+        },
+        {
+          "letra": "C",
+          "texto": "a raiz nervosa de C2."
+        },
+        {
+          "letra": "D",
+          "texto": "o segundo gânglio cervical."
+        }
+      ],
+      "gabarito": "A",
+      "imagens": []
+    },
+    {
+      "id": "coluna-0027",
+      "prova": "TARO",
+      "ano": 2017,
+      "enunciado": "Na anatomia da coluna vertebral, a artéria de ADAMKIEWICZ está localizada mais frequentemente entre os níveis",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "T7-T9 e à direita."
+        },
+        {
+          "letra": "B",
+          "texto": "T9-T11 e à direita."
+        },
+        {
+          "letra": "C",
+          "texto": "T7-T9 e à esquerda."
+        },
+        {
+          "letra": "D",
+          "texto": "T9-T11 e à esquerda"
+        }
+      ],
+      "gabarito": "D",
+      "imagens": []
+    },
+    {
+      "id": "coluna-0054",
+      "prova": "TEOT",
+      "ano": 2021,
+      "enunciado": "Na imagem a seguir, o acesso paraespinhal lombar faz-se no plano entre os músculos:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "multífido e rotadores."
+        },
+        {
+          "letra": "B",
+          "texto": "Iliolombar e multífido."
+        },
+        {
+          "letra": "C",
+          "texto": "Iliolombar e longuíssimo."
+        },
+        {
+          "letra": "D",
+          "texto": "multífido e longuíssimo."
+        }
+      ],
+      "gabarito": "D",
+      "imagens": [
+        {
+          "arquivo": "coluna/coluna-0054-1.jpeg",
+          "legenda": null,
+          "largura": 418,
+          "altura": 313
+        }
+      ]
+    },
+    {
+      "id": "coluna-0085",
+      "prova": "TEOT/TARO",
+      "ano": null,
+      "enunciado": "O tubérculo carotídeo é ponto de referência para qual vértebra cervical?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "C3"
+        },
+        {
+          "letra": "B",
+          "texto": "C4"
+        },
+        {
+          "letra": "C",
+          "texto": "C5"
+        },
+        {
+          "letra": "D",
+          "texto": "C6"
+        }
+      ],
+      "gabarito": "D",
+      "imagens": []
+    },
+    {
+      "id": "coluna-0097",
+      "prova": "TEOT",
+      "ano": 2023,
+      "enunciado": "A estrutura assinalada é o",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "nervo sinuvertebral."
+        },
+        {
+          "letra": "B",
+          "texto": "ramo ventral da raiz."
+        },
+        {
+          "letra": "C",
+          "texto": "ramo dorsal lateral da raiz."
+        },
+        {
+          "letra": "D",
+          "texto": "ramo dorsal medial da raiz."
+        }
+      ],
+      "gabarito": "A",
+      "imagens": [
+        {
+          "arquivo": "coluna/coluna-0097-1.jpeg",
+          "legenda": null,
+          "largura": 317,
+          "altura": 245
+        }
+      ]
+    },
+    {
+      "id": "coluna-0098",
+      "prova": "TEOT",
+      "ano": 2023,
+      "enunciado": "A estrutura assinalada é a raiz de",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "L3."
+        },
+        {
+          "letra": "B",
+          "texto": "L4."
+        },
+        {
+          "letra": "C",
+          "texto": "L5."
+        },
+        {
+          "letra": "D",
+          "texto": "S1."
+        }
+      ],
+      "gabarito": "C",
+      "imagens": [
+        {
+          "arquivo": "coluna/coluna-0098-1.jpeg",
+          "legenda": null,
+          "largura": 512,
+          "altura": 249
+        }
+      ]
+    },
+    {
+      "id": "coluna-0099",
+      "prova": "TEOT/TARO",
+      "ano": null,
+      "enunciado": "A estrutura assinalada é",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "o tubérculo do corpo."
+        },
+        {
+          "letra": "B",
+          "texto": "o tubérculo posterior."
+        },
+        {
+          "letra": "C",
+          "texto": "a lâmina do arco vertebral."
+        },
+        {
+          "letra": "D",
+          "texto": "o pedículo do arco vertebral."
+        }
+      ],
+      "gabarito": "C",
+      "imagens": [
+        {
+          "arquivo": "coluna/coluna-0099-1.jpeg",
+          "legenda": null,
+          "largura": 331,
+          "altura": 324
+        }
+      ]
+    },
+    {
+      "id": "coluna-0101",
+      "prova": "TEOT/TARO",
+      "ano": null,
+      "enunciado": "A estrutura assinalada é a artéria",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "espinal anterior."
+        },
+        {
+          "letra": "B",
+          "texto": "radicular anterior."
+        },
+        {
+          "letra": "C",
+          "texto": "de ADAMKIEWICZ."
+        },
+        {
+          "letra": "D",
+          "texto": "intercostal posterior."
+        }
+      ],
+      "gabarito": "A",
+      "imagens": [
+        {
+          "arquivo": "coluna/coluna-0101-1.jpeg",
+          "legenda": null,
+          "largura": 342,
+          "altura": 320
+        }
+      ]
+    },
+    {
+      "id": "coluna-0169",
+      "prova": "TEOT/TARO",
+      "ano": null,
+      "enunciado": "Na figura a seguir, a região anatômica vertebral correspondente à seta é",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "a faceta articular."
+        },
+        {
+          "letra": "B",
+          "texto": "o pars interarticularis."
+        },
+        {
+          "letra": "C",
+          "texto": "o processo transverso."
+        },
+        {
+          "letra": "D",
+          "texto": "o tubérculo de CHASSAIGNAC."
+        }
+      ],
+      "gabarito": "B",
+      "imagens": [
+        {
+          "arquivo": "coluna/coluna-0169-1.jpeg",
+          "legenda": null,
+          "largura": 470,
+          "altura": 417
+        }
+      ]
+    },
+    {
+      "id": "coluna-0216",
+      "prova": "TEOT",
+      "ano": 2025,
+      "enunciado": "Na imagem abaixo, a seta representa o ligamento:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Alar."
+        },
+        {
+          "letra": "B",
+          "texto": "Transverso."
+        },
+        {
+          "letra": "C",
+          "texto": "Interespinhoso."
+        },
+        {
+          "letra": "D",
+          "texto": "Atlanto-occipital anterior."
+        }
+      ],
+      "gabarito": "A",
+      "imagens": [
+        {
+          "arquivo": "coluna/coluna-0216-1.jpeg",
+          "legenda": null,
+          "largura": 280,
+          "altura": 238
+        }
+      ]
+    },
+    {
+      "id": "coluna-0222",
+      "prova": "TEOT",
+      "ano": 2025,
+      "enunciado": "Na imagem a seguir, a seta representa o ligamento:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Amarelo."
+        },
+        {
+          "letra": "B",
+          "texto": "Supraespinal."
+        },
+        {
+          "letra": "C",
+          "texto": "Interespinhoso."
+        },
+        {
+          "letra": "D",
+          "texto": "Longitudinal posterior."
+        }
+      ],
+      "gabarito": "A",
+      "imagens": [
+        {
+          "arquivo": "coluna/coluna-0222-1.jpeg",
+          "legenda": null,
+          "largura": 255,
+          "altura": 303
+        }
+      ]
+    },
+    {
+      "id": "coluna-0233",
+      "prova": "TARO",
+      "ano": 2025,
+      "enunciado": "Na imagem a seguir, a estrutura anatômica apontada pela seta é o",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "fascículo cuneiforme."
+        },
+        {
+          "letra": "B",
+          "texto": "trato vestíbulo-espinal."
+        },
+        {
+          "letra": "C",
+          "texto": "trato espinotalâmico anterior."
+        },
+        {
+          "letra": "D",
+          "texto": "trato corticoespinhal anterior."
+        }
+      ],
+      "gabarito": "D",
+      "imagens": [
+        {
+          "arquivo": "coluna/coluna-0233-1.jpeg",
+          "legenda": "Fonte: NETTER, F. H. Atlas de anatomia humana. 7. ed. Rio de Janeiro: Elsevier, 2019.",
+          "largura": 1141,
+          "altura": 824
+        }
+      ]
+    },
+    {
+      "id": "coluna-0262",
+      "prova": "TARO",
+      "ano": 2010,
+      "enunciado": "A artéria de ADAMKIEWICZ é localizada, em 80% dos indivíduos, entre os níveis",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "T7 e T9 à direita."
+        },
+        {
+          "letra": "B",
+          "texto": "T7 e T9 à esquerda."
+        },
+        {
+          "letra": "C",
+          "texto": "T9 e T11 à direita."
+        },
+        {
+          "letra": "D",
+          "texto": "T9 e T11 à esquerda."
+        }
+      ],
+      "gabarito": "D",
+      "imagens": []
+    },
+    {
+      "id": "coluna-0264",
+      "prova": "TEOT/TARO",
+      "ano": null,
+      "enunciado": "Na imagem a seguir, a estrutura indicada pela seta corresponde:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "À raiz de L2."
+        },
+        {
+          "letra": "B",
+          "texto": "À raiz de L3."
+        },
+        {
+          "letra": "C",
+          "texto": "Ao nervo femoral."
+        },
+        {
+          "letra": "D",
+          "texto": "Ao nervo ilioinguinal."
+        }
+      ],
+      "gabarito": "C",
+      "imagens": [
+        {
+          "arquivo": "coluna/coluna-0264-1.png",
+          "legenda": null,
+          "largura": 784,
+          "altura": 612
+        }
+      ]
+    },
+    {
+      "id": "coluna-0265",
+      "prova": "TEOT/TARO",
+      "ano": null,
+      "enunciado": "Na imagem a seguir, o músculo lombar apontado pela seta, localizado em camada profunda e que serve de referência para o acesso posterior paraespinhal é:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Multífido."
+        },
+        {
+          "letra": "B",
+          "texto": "Iliocostal."
+        },
+        {
+          "letra": "C",
+          "texto": "Longuíssimo."
+        },
+        {
+          "letra": "D",
+          "texto": "Quadrado lombar."
+        }
+      ],
+      "gabarito": "A",
+      "imagens": [
+        {
+          "arquivo": "coluna/coluna-0265-1.png",
+          "legenda": null,
+          "largura": 604,
+          "altura": 639
+        }
+      ]
+    },
+    {
+      "id": "coluna-0272",
+      "prova": "TEOT/TARO",
+      "ano": null,
+      "enunciado": "A ramificação do ramo dorsal responsável pela inervação das facetas articulares, alvo do bloqueio com finalidade diagnóstica ou terapêutica na dor lombar facetaria é o:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Lateral."
+        },
+        {
+          "letra": "B",
+          "texto": "Medial."
+        },
+        {
+          "letra": "C",
+          "texto": "Sinuverterbral."
+        },
+        {
+          "letra": "D",
+          "texto": "Intermediário."
+        }
+      ],
+      "gabarito": "B",
+      "imagens": []
+    },
+    {
+      "id": "coluna-0281",
+      "prova": "TARO",
+      "ano": 2026,
+      "enunciado": "No acesso anterior ao nível C6-C7, o músculo apontado pela seta que deve ser afastado lateralmente até exposição da articulação unciforme é o",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "omohioide."
+        },
+        {
+          "letra": "B",
+          "texto": "longus colli."
+        },
+        {
+          "letra": "C",
+          "texto": "splenius cervicis."
+        },
+        {
+          "letra": "D",
+          "texto": "escaleno anterior."
+        }
+      ],
+      "gabarito": "B",
+      "imagens": [
+        {
+          "arquivo": "coluna/coluna-0281-1.png",
+          "legenda": null,
+          "largura": 595,
+          "altura": 514
+        }
+      ]
+    },
+    {
+      "id": "coluna-0286",
+      "prova": "TARO",
+      "ano": 2026,
+      "enunciado": "Na imagem a seguir, a estrutura indicada pela seta corresponde",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "à dura-máter."
+        },
+        {
+          "letra": "B",
+          "texto": "ao ligamento amarelo."
+        },
+        {
+          "letra": "C",
+          "texto": "ao ligamento interespinhoso."
+        },
+        {
+          "letra": "D",
+          "texto": "ao ligamento longitudinal posterior."
+        }
+      ],
+      "gabarito": "A",
+      "imagens": [
+        {
+          "arquivo": "coluna/coluna-0286-1.png",
+          "legenda": null,
+          "largura": 423,
+          "altura": 386
+        }
+      ]
+    }
+  ]
+}

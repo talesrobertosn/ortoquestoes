@@ -5,6 +5,23 @@ Diretriz de Tales Roberto, aprovada em 04/10/2026. Aplica-se a todo pedido de
 Esta é a referência editorial do projeto. Substitui limites antigos de caracteres,
 número de frases e proibições de tabelas ou listas dos prompts de enriquecimento.
 
+## Ajuste editorial de 08/10/2026, pedido do dono
+
+A explicação precisa ser útil e natural. Não há piso de caracteres: um comentário
+menor é preferível a texto esticado. Manter os fundamentos necessários e a análise
+de cada alternativa, com tamanho proporcional à dúvida que ela cria.
+
+Eliminar parágrafos artificiais sobre como a banca transforma a imagem, sobre a
+existência da questão ou sobre a organização do lote. A engenharia reversa, com
+IDs, provas e anos, fica no mapa e no plano. Quando uma pegadinha merecer explicação
+no comentário, mostrar a diferença anatômica diretamente, sem um discurso sobre o
+examinador. Evitar repetir que o dado aparece no recorte, narrar como ler as quatro
+opções ou acrescentar atributos sem relação com a pergunta só para ganhar volume.
+Usar títulos, tabelas e fechos apenas quando ajudarem o leitor.
+
+Esta orientação prevalece sobre as metas antigas de 4.000/4.500 caracteres e a
+exigência de parágrafos entre 400 e 700 caracteres dos roteiros de simulados.
+
 ## Resultado esperado
 
 O leitor deve compreender o assunto e conseguir resolver questões semelhantes, mesmo
