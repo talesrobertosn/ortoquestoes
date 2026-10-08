@@ -171,6 +171,7 @@ Se o problema é começar uma rotina, use um roteiro de estudo e escolha blocos 
             ("Montar uma sessão de treino", "../#/treinar"),
             ("Conhecer o projeto", "../#/sobre"),
             ("Consultar os planos", "../#/assinatura"),
+            ("Curso de ortopedia: como escolher", "./curso-de-ortopedia.html"),
         ],
     },
     {
@@ -233,6 +234,45 @@ O aplicativo também oferece R4 ENARE e provas de TEOT e TARO. Cirurgia da mão 
             ("Questões por assunto: quadril", "../questoes/quadril.html"),
             ("Questões por assunto: coluna", "../questoes/coluna.html"),
             ("Questões de cirurgia da mão: outra especialidade", "./questoes-cirurgia-da-mao.html"),
+        ],
+    },
+    {
+        "slug": "curso-de-ortopedia",
+        "title": "Curso de ortopedia: como escolher e estudar | Orto Questões",
+        "description": "Procura um curso de ortopedia? Veja como avaliar aulas, questões comentadas e revisão para TEOT, TARO e seleções, conforme seu objetivo e sua rotina.",
+        "headline": "Curso de ortopedia: como escolher para o seu objetivo",
+        "atualizado_em": "2026-10-08",
+        "content": """
+A busca por um curso de ortopedia pode ter objetivos diferentes: começar a estudar a área, acompanhar a residência, preparar-se para o TEOT ou revisar para uma seleção de R4. Antes de escolher, defina qual problema você precisa resolver e como vai verificar o que aprendeu. Este guia ajuda a avaliar a proposta de um curso e a organizar o estudo com questões comentadas.
+
+### Primeiro, identifique para quem o curso foi feito
+Confira o público e os conhecimentos exigidos. Uma formação voltada à atualização do médico generalista tem uma proposta diferente de um preparatório para o TEOT. Na residência, o estudo para o TARO também precisa acompanhar as orientações da avaliação e do serviço. Para R4 de coluna ou fellowship de quadril, compare o programa de estudo com as exigências da seleção escolhida. Cirurgia da mão é outra especialidade e tem prova própria; não deve ser agrupada como R4 de ortopedia.
+
+### Confira a proposta antes de comparar preços
+Procure uma descrição clara dos assuntos, do formato das aulas, do período de acesso e das formas de tirar dúvidas. Se houver cronograma, veja se ele cabe entre plantões e estágios. Confira também o que está incluído na contratação: aulas, materiais, banco de questões e simulados podem ter condições distintas. Uma promessa de aprovação não substitui essas informações.
+
+### Avalie uma amostra do material
+Se o curso disponibilizar uma aula ou material de demonstração, observe se você consegue acompanhar o raciocínio e explicar a ideia central depois. Para questões comentadas, confira a origem da prova, o gabarito e a análise das alternativas. Ao terminar uma amostra, tente resolver outra questão do assunto sem consulta: isso ajuda a avaliar se o recurso atende à sua dificuldade.
+
+### Transforme o calendário de aulas em uma rotina de estudo
+Antes de uma aula, registre as dúvidas do tema. Depois, responda um bloco de questões e identifique o que ainda não consegue justificar. Use os erros para escolher a próxima leitura e reserve outro dia para retomar o assunto. Se tiver pouco tempo, reduza o tamanho do bloco para conseguir concluir também a correção. O plano precisa prever estudo e revisão, além do tempo de assistir às aulas.
+
+### Como o Orto Questões entra nessa preparação
+O Orto Questões é um banco de questões comentadas de ortopedia e cirurgia da mão. Você pode usá-lo junto à bibliografia e às aulas que escolher: explorar os assuntos, montar sessões no aplicativo, ler a explicação das alternativas e acompanhar os erros. O acervo inclui provas anteriores e questões autorais de simulado identificadas pela origem. As páginas públicas apresentam questões por assunto; o aplicativo oferece os filtros e o acompanhamento do treino. Consulte os planos para verificar o acesso gratuito e os recursos da assinatura.
+
+### Escolha um recurso para cada dificuldade
+Se você precisa construir a base de um tema, organize a leitura e as aulas. Se a dificuldade aparece ao resolver enunciados, faça treino dirigido e compare as alternativas. Se entende na hora, mas esquece depois, reserve sessões de revisão. Na preparação para uma prova, confira também as etapas e regras vigentes: um bloco de questões não reproduz todas as habilidades que podem ser avaliadas.
+
+### Um roteiro para decidir
+Defina a prova ou o objetivo, examine uma amostra, confira as condições de acesso e monte uma semana de estudo que caiba na sua rotina. Depois compare o que conseguiu explicar antes e após o estudo, incluindo os erros que se repetiram. Escolher um curso de ortopedia fica mais claro quando você sabe qual lacuna deseja resolver e como vai acompanhar o progresso.
+""",
+        "links": [
+            ("Conhecer o banco de questões por assunto", "../questoes/"),
+            ("Organizar a preparação para TEOT e TARO", "./preparacao-teot-taro.html"),
+            ("Estudar para o TARO durante a residência", "./como-estudar-para-o-taro.html"),
+            ("Preparação para R4 de quadril e coluna", "./questoes-r4-quadril-coluna.html"),
+            ("Questões da especialidade Cirurgia da mão", "./questoes-cirurgia-da-mao.html"),
+            ("Conhecer o Orto Questões e seus planos", "../#/assinatura"),
         ],
     },
 ]

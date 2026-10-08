@@ -267,6 +267,7 @@ export function Inicio() {
           <nav className="inicio-guias" aria-label="Conheça o banco e organize sua preparação">
             <a href={recurso('questoes/')}>Questões por assunto</a>
             <a href={recurso('guias/preparacao-teot-taro.html')}>Preparação para TEOT e TARO</a>
+            <a href={recurso('guias/curso-de-ortopedia.html')}>Curso de ortopedia: como escolher</a>
             <a href={recurso('guias/como-estudar-para-o-taro.html')}>Como estudar para o TARO</a>
             <a href={recurso('guias/questoes-cirurgia-da-mao.html')}>Cirurgia da mão</a>
             <a href={recurso('guias/questoes-r4-quadril-coluna.html')}>R4 de quadril e coluna</a>
