@@ -58,7 +58,7 @@ O recorte situa ADAMKIEWICZ geralmente em T10–T12, enquanto TARO 2010 e 2017 u
 
 Comentários explicam a relação anatômica e as alternativas. Não têm meta mínima de caracteres nem parágrafos artificiais justificando por que a questão foi criada. Provas, IDs e motivos de seleção ficam neste mapa e no plano. Não se impõe o título “Como a banca transforma a mesma imagem”. O texto público deve responder à dúvida do aluno, sem narrar o processo de produção.
 
-A orientação foi incorporada aos padrões editoriais, ao roteiro e ao aplicador de lotes. O aplicador continua exigindo conceito, justificativa da correta e análise das incorretas preenchidos; ausência de piso de caracteres não dispensa revisão do conteúdo. Mediana descritiva deste lote: 1.586 caracteres, intervalo 1.411–2.007. `conferido` permanece falso: validação técnica e conferência autoral não equivalem ao selo de revisão humana do sistema.
+A orientação foi incorporada aos padrões editoriais, ao roteiro e ao aplicador de lotes. O aplicador continua exigindo conceito, justificativa da correta e análise das incorretas preenchidos; ausência de piso de caracteres não dispensa revisão do conteúdo. Mediana descritiva deste lote: 1.586 caracteres, intervalo 1.249–2.007. `conferido` permanece falso: validação técnica e conferência autoral não equivalem ao selo de revisão humana do sistema.
 
 ## Entrega e verificação
 
