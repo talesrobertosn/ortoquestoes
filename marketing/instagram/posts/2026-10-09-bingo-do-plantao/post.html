@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Bingo do plantão</title>
+<!-- Stories 1080x1920, estilo novo "bingo". Sem figurinha: a pessoa tira print, marca as dela
+     e reposta marcando o colega. Sem conteúdo de questão e sem desenho de anatomia.
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-09-bingo-do-plantao/post.html
+     Áreas seguras: nada importante nos 210 px de cima nem nos 300 px de baixo. -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Caveat; src: url(../../fontes/caveat-latin-wght-normal.woff2) format('woff2'); font-weight: 400 700; }
+:root { --ouro: #f4cf7c; --verde: #14655E; --tinta: #0B3A35; --creme: #fbf4e2; --vermelho: #c8412f; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1920px; padding: 200px 70px 300px; color: var(--creme);
+  background: radial-gradient(circle at 1px 1px, rgba(255,255,255,.06) 1.4px, transparent 1.5px) 0 0/30px 30px, radial-gradient(ellipse at 50% 0%, #1d7a70 0%, transparent 60%), linear-gradient(175deg, #0f4d47, #071f1c); }
+.marca { display: flex; align-items: center; gap: 16px; font: 36px Jakarta; letter-spacing: -.02em; }
+.marca svg { width: 58px; height: 58px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; opacity: .9; }
+.eti { display: inline-block; margin-top: 46px; padding: 10px 22px; border-radius: 99px; background: var(--ouro); color: var(--tinta); font: 800 26px Jakarta; letter-spacing: .12em; text-transform: uppercase; }
+h1 { margin-top: 22px; font: 800 118px/.92 Jakarta; letter-spacing: -.05em; }
+h1 em { font-style: normal; color: var(--ouro); }
+.sub { margin-top: 18px; font: 500 34px/1.3 Inter; color: rgba(251,244,226,.8); }
+
+/* Cartela */
+.cartela { margin-top: 38px; padding: 22px; border-radius: 34px; background: var(--creme); box-shadow: 0 30px 60px rgba(0,0,0,.4), inset 0 0 0 4px rgba(11,58,53,.12); transform: rotate(-1deg); }
+.cartela .cab { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 12px; }
+.cartela .cab b { display: grid; place-items: center; height: 70px; border-radius: 18px; background: var(--verde); color: var(--ouro); font: 800 46px Jakarta; }
+.grade { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.grade p { position: relative; display: grid; place-items: center; height: 192px; padding: 14px 12px; border-radius: 18px; background: #fff; border: 3px solid rgba(11,58,53,.14); color: var(--tinta); text-align: center; font: 700 27px/1.18 Jakarta; letter-spacing: -.01em; text-wrap: balance; }
+.grade p:nth-child(odd) { background: #fffaf0; }
+.grade p.livre { background: var(--ouro); border-color: var(--ouro); }
+.grade p.marcada::after { content: ''; position: absolute; inset: 14px 10px; border: 7px solid var(--vermelho); border-radius: 50% 46% 52% 44%; transform: rotate(-8deg); opacity: .85; }
+.exemplo { position: absolute; right: -6px; top: -22px; padding: 2px 14px; background: var(--vermelho); color: #fff; font: 700 30px Caveat; border-radius: 8px; transform: rotate(6deg); }
+.pe { margin-top: 30px; text-align: center; font: 700 64px/1.05 Caveat; color: var(--ouro); }
+.pe span { display: block; margin-top: 8px; font: 500 30px Inter; color: rgba(251,244,226,.75); }
+
+/* Placar */
+.placar h1 { margin-top: 40px; font-size: 128px; }
+.faixas { margin-top: 50px; display: grid; gap: 22px; }
+.faixa { display: grid; grid-template-columns: 210px 1fr; align-items: center; gap: 30px; padding: 30px 34px; border-radius: 30px; background: rgba(251,244,226,.08); border: 2px solid rgba(251,244,226,.14); }
+.faixa b { font: 800 66px Jakarta; color: var(--ouro); letter-spacing: -.04em; }
+.faixa p { font: 700 40px/1.2 Jakarta; }
+.faixa p small { display: block; margin-top: 6px; font: 500 30px/1.3 Inter; color: rgba(251,244,226,.72); }
+.faixa.topo-bingo { background: var(--ouro); border-color: var(--ouro); color: var(--tinta); }
+.faixa.topo-bingo b { color: var(--verde); } .faixa.topo-bingo small { color: rgba(11,58,53,.75); }
+.chamada { margin-top: 50px; padding: 38px 40px; border-radius: 30px; background: var(--creme); color: var(--tinta); box-shadow: 0 24px 50px rgba(0,0,0,.35); transform: rotate(1deg); }
+.chamada p { font: 800 46px/1.15 Jakarta; letter-spacing: -.02em; }
+.chamada p em { font-style: normal; color: var(--verde); }
+.chamada small { display: block; margin-top: 14px; font: 600 32px Inter; color: #4b5a57; }
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/>
+<circle cx="17" cy="20" r="4.5" fill="#9cc3bd"/><rect x="26" y="16.5" width="24" height="7" rx="3.5" fill="#9cc3bd"/>
+<circle cx="17" cy="32" r="4.5" fill="#f4cf7c"/><rect x="26" y="28.5" width="24" height="7" rx="3.5" fill="#f4cf7c"/>
+<circle cx="17" cy="44" r="4.5" fill="#9cc3bd"/><rect x="26" y="40.5" width="19" height="7" rx="3.5" fill="#9cc3bd"/></symbol>
+</defs></svg>
+
+<section id="s1-cartela">
+  <div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div>
+  <span class="eti">Tire print e marque</span>
+  <h1>Bingo do <em>plantão</em></h1>
+  <p class="sub">Quantas destas já aconteceram com você nesta semana?</p>
+  <div class="cartela">
+    <div class="grade">
+      <p class="marcada">Dormiu menos de 4 horas<span class="exemplo">tipo assim</span></p>
+      <p>"É só uma torção, doutor"</p>
+      <p>Gesso às 3 da manhã</p>
+      <p>Almoçou às 16h</p>
+      <p>Café esquecido esfriando na bancada</p>
+      <p>Redução que entrou de primeira</p>
+      <p>Radiografia na incidência errada, de novo</p>
+      <p>Celular com 3% de bateria</p>
+      <p>Gesso grudado no sapato</p>
+      <p>"Você é o ortopedista ou o gesseiro?"</p>
+      <p class="livre">Estudou no celular entre dois pacientes</p>
+      <p>Tala perfeita na primeira tentativa</p>
+      <p>Moto no fim da tarde</p>
+      <p>Revisou Gustilo de cabeça antes de entrar na sala</p>
+      <p>Paciente que "só caiu da própria altura"</p>
+      <p>Saiu do plantão direto para a aula</p>
+    </div>
+  </div>
+  <p class="pe">Reposte marcando quem faz bingo<span>O placar sai no próximo story</span></p>
+</section>
+
+<section id="s2-placar" class="placar">
+  <div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div>
+  <h1>Quantas você <em>marcou?</em></h1>
+  <div class="faixas">
+    <div class="faixa"><b>0 a 4</b><p>Plantão tranquilo<small>Existe? Conta para a gente onde.</small></p></div>
+    <div class="faixa"><b>5 a 9</b><p>Residente raiz<small>A semana normal de quem escolheu a ortopedia.</small></p></div>
+    <div class="faixa"><b>10 a 15</b><p>Merece uma folga<small>E um café que chegue quente.</small></p></div>
+    <div class="faixa topo-bingo"><b>16</b><p>Bingo<small>Desligue o celular e vá dormir. Sério.</small></p></div>
+  </div>
+  <div class="chamada">
+    <p>Sobrou energia? <em>Dez questões comentadas</em> antes de dormir já contam.</p>
+    <small>ortoquestoes.com.br</small>
+  </div>
+</section>
+</body></html>
