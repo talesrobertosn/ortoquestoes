@@ -8880,11 +8880,11 @@
   },
   "conceitos-basicos-0119": {
    "questaoSha256": "ab34439fd3fa16e1c33d75038fe6dc0ea7952a9ba85ff8cdb9426e1104643022",
-   "comentarioSha256": "53b1578c6599aaed4626595da853857b9b403787488d7bee35d6e361fa493fb7",
+   "comentarioSha256": "bd671fc02441f28283d4724b376baccbee183ace8688e0bfd0db7b70727f7d99",
    "estado": "na_branch",
-   "data": "2026-10-03",
+   "data": "2026-10-08",
    "fontes": [
-    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 22"
+    "Kocher et al. Differentiating between septic arthritis and transient synovitis of the hip in children: an evidence-based clinical prediction algorithm. https://pubmed.ncbi.nlm.nih.gov/10608376/"
    ]
   },
   "conceitos-basicos-0120": {
@@ -25041,6 +25041,25 @@
    "data": "2026-10-04",
    "fontes": [
     "AO Surgery Reference. Classification of fracture wound infection. https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/further-reading/classification-of-fracture-wound-infection"
+   ]
+  },
+  "conceitos-basicos-0051": {
+   "questaoSha256": "1fbaf2f0e942cfe6ce6800e152162d5a5d3eecdb8962a96686e088d59824ee14",
+   "comentarioSha256": "6a511f0146a251377ab19c49455325ae96d9cda4eb49e91d3ee9211c86dde6ec",
+   "estado": "na_branch",
+   "data": "2026-10-08",
+   "fontes": [
+    "Bhattacharyya et al. The accuracy of computed tomography for the diagnosis of tibial nonunion. https://pubmed.ncbi.nlm.nih.gov/16595457/"
+   ]
+  },
+  "conceitos-basicos-0288": {
+   "questaoSha256": "a92732f1cdc0bd86dd73ef843c3f7684223a90dacd7d6c786f8e3101b4342b8b",
+   "comentarioSha256": "0ebc420c73c23b38e66f483140c7825a9d0190d8cd53495c458191e838109471",
+   "estado": "na_branch",
+   "data": "2026-10-08",
+   "fontes": [
+    "CDC. Gonococcal Infections Among Adolescents and Adults, STI Treatment Guidelines. https://www.cdc.gov/std/treatment-guidelines/gonorrhea-adults.htm",
+    "Pneumococcal Septic Arthritis among Adults, France, com comparação etiológica. https://wwwnc.cdc.gov/eid/article/31/1/24-0321_article"
    ]
   }
  },
