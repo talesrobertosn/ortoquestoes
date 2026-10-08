@@ -538,3 +538,165 @@ O limite superior do espaço quadrilateral tem erro textual no próprio PDF e fi
 Bíceps interposto não ganhou item isolado, embora apareça como contexto de distrator;
 ProFHER já tinha simulado e não foi repetido. BOILEAU não teve exposição completa no PDF.
 Não se criou indicação universal de reversa ou hemiartroplastia para toda fratura em quatro partes.
+
+## Fraturas da diáfise do úmero no adulto (engenharia reversa em 07/10/2026)
+
+Leitura dos enunciados, alternativas e gabaritos do acervo atual, com inspeção das três imagens
+pertinentes e dos comentários relacionados. Nesta primeira etapa ainda não havia sido recebido o capítulo específico deste assunto.
+As respostas abaixo descrevem os gabaritos registrados; comentários atuais não substituem a fonte
+bibliográfica de um futuro lote. Nenhuma questão nova foi redigida ou aplicada nesta etapa.
+
+### Recorte e depuração
+
+- **9 questões distintas de TEOT/TARO diretamente sobre a diáfise umeral adulta:** seis com quatro
+  alternativas e gabarito; três de certo/errado, todas TARO 2006 e sem gabarito oficial.
+- Anos do núcleo, incluindo certo/errado: 2006: 3; 2010: 1; 2017: 1; 2020: 1; 2023: 1;
+  2024: 1; TEOT/TARO sem ano: 1. Não foram localizadas questões diretamente pertinentes de
+  TEOT/TARO 2025 ou 2026. A ausência no acervo não prova ausência na prova.
+- `conceitos-basicos-0008` repete `trauma-0021` (TARO 2020, SARMIENTO). Contar uma vez.
+- **7 questões complementares distintas**, todas sem ano, TECOC/SBCOC ou SBOT-SP. A questão
+  de bloqueio distal `trauma-0791` é duplicata de `ombro-cotovelo-0308`; foi contada uma vez.
+  O primeiro tem etiqueta de diáfise, o segundo etiqueta de úmero proximal/escápula, apesar da
+  mesma imagem de bloqueio distal da haste. Nenhum metadado foi alterado.
+- Comparativa adjacente: `trauma-0306` (TEOT/TARO sem ano) dá diáfise do úmero como a menos
+  associada a síndrome compartimental entre as alternativas. Não entra nas medidas do núcleo.
+- Pediatria separada: TARO 2017 (`pediatria-0618`, faixa 0 a 3 anos); TARO 2018
+  (`pediatria-0631`, rotação medial de 15 graus e varo de 20 graus); TEPOP 2024
+  (`pediatria-0953`, gabarito registrado de rotação interna após trauma no parto). Não transferir esses dados ao adulto.
+- Falsos positivos: SARMIENTO em amputação, tíbia e osteotomia femoral; HENRY da diáfise do rádio
+  (`trauma-0866`); pré-tensionamento radial de pinos (`trauma-1151`, não nervo radial); seis
+  perguntas supracondilianas infantis etiquetadas como diáfise (`trauma-1217` a 1222); caso de C6
+  e anatomia do plexo (`trauma-1208`); CAMPBELL periprotético (`trauma-0926`) e stress shielding.
+  Foram lidas para delimitar o assunto e excluídas do núcleo estatístico.
+
+### Fatos cobrados e reforços
+
+| Grupo | Resposta registrada no acervo | Prova, ano e id |
+|---|---|---|
+| Tratamento conservador | Contração muscular ativa, efeito hidráulico das partes moles e gravidade identificam órtese de SARMIENTO. | TARO 2020, trauma-0021; cópia conceitos-basicos-0008. |
+| Anatomia na fixação aberta | Paralisia do radial como complicação mais frequente da redução aberta e fixação rígida pela via anterolateral. | TARO 2017, trauma-0087. |
+| Anatomia na MIPO | Na técnica LIVANI-BELANGERO, o nervo com maior risco é musculocutâneo. | TEOT 2023, trauma-0322; reforço TECOC/SBCOC, trauma-0970, especificando incisão distal. |
+| Técnica auxiliar | EGLSEDER usa placa de minimicro como auxiliar. | TARO 2024, trauma-0674. |
+| Mecânica por padrão | Traço transverso: compressão interfragmentar. | TARO 2010, trauma-0876. |
+| Indicação cirúrgica | Cotovelo flutuante, em contraste com pequenos desvios isolados. | TEOT/TARO sem ano, trauma-0266. |
+| Bloqueio distal por imagem | Radial e musculocutâneo em risco no bloqueio indicado. | TECOC/SBCOC sem ano, ombro-cotovelo-0308 / trauma-0791. |
+| Técnica de bloqueio | Haste longa anterógrada: bloqueio distal mais seguro aberto, à mão livre. | TECOC/SBCOC sem ano, trauma-0981. |
+| Falha iatrogênica por imagem | Espessura da haste como causa da fratura apresentada. | TECOC/SBCOC sem ano, trauma-0787, duas imagens abertas. |
+| Mecânica da haste | AO 12C3 com extensão distal: área de trabalho longa proximal, curta distal e maior stress nos bloqueios distais. | TECOC/SBCOC sem ano, trauma-0451. |
+| Pseudartrose | Tipo atrófico e tratamento mais frequente com placa. | TECOC/SBCOC sem ano, conceitos-basicos-0195. |
+| Supinação na MIPO, com ressalva | Gabarito musculocutâneo para a manobra de supinação; comentário já registra divergência com estudos sobre segurança do radial. | SBOT-SP sem ano, trauma-0532. |
+
+O núcleo TEOT/TARO é pequeno e não mostra repetição literal de um mesmo fato em anos diferentes.
+A recorrência mais clara ao incluir provas complementares é **técnica e estrutura neural em risco**.
+Não contar a cópia de SARMIENTO como duas provas independentes, nem atribuir anos às provas
+complementares para criar uma tendência artificial.
+
+### Tendência e forma
+
+As únicas questões diretamente pertinentes datadas de 2021 em diante localizadas são TEOT 2023
+(MIPO e musculocutâneo) e TARO 2024 (EGLSEDER). Sugerem foco em **técnica e segurança**, mas dois
+itens não bastam para afirmar mudança geral da banca. Conservador, indicação de cirurgia e
+compressão aparecem nas questões mais antigas. Não há caso clínico nem imagem nas seis questões
+atuais de quatro alternativas de TEOT/TARO do núcleo; imagens aparecem nas provas complementares.
+
+Medidas dessas seis questões: enunciado mediano **124 caracteres**, alternativa mediana **18**;
+cinco terminam em palavra e uma em dois-pontos. Aberturas: “Na fratura”, 3; “No tratamento”, 2;
+“O tratamento”, 1. Nenhuma usa “respectivamente” ou par cruzado. Gabarito **A1/B2/C0/D3**.
+São apenas seis respostas: não usar a ausência de C nem a concentração em D como regra autoral.
+As provas complementares acrescentam pares de nervo e incisão, pseudartrose e implante, além de
+comprimento de trabalho e local de stress.
+
+### Como o examinador pensa
+
+1. **O procedimento seleciona o nervo.** Radial na fixação aberta anterolateral não substitui
+   musculocutâneo na MIPO anterior. Os distratores são nervos reais da região, mas de outro acesso,
+   plano ou etapa. Bloqueio distal pede um par, não o nervo mais conhecido da fratura.
+2. **O epônimo pede um gesto concreto.** SARMIENTO identifica princípios da órtese;
+   LIVANI-BELANGERO identifica técnica minimamente invasiva; EGLSEDER identifica implante auxiliar.
+3. **O traço seleciona a função do implante.** Na transversa, compressão compete com tutor,
+   suporte e neutralização. Na extensão distal com haste, a geometria seleciona o bloqueio em risco.
+4. **O contexto vence um número isolado.** Cotovelo flutuante disputa com encurtamento,
+   angulação e rotação modestos. Os limites exatos só poderão ser ensinados após confronto com o capítulo.
+5. **A imagem é causal.** A prova de ombro pergunta qual erro produziu a fratura ao redor da
+   haste, ou quais nervos estão expostos no bloqueio assinalado. Não usa imagem só como decoração.
+
+### Divergências e itens já existentes
+
+- `trauma-0532`: separar risco do musculocutâneo na incisão distal de efeito da supinação sobre
+  a distância do radial à placa. O alerta já existente menciona a divergência. Preservar gabarito
+  oficial e conferir o capítulo antes de escrever uma nova questão sobre a manobra.
+- TARO 2006 sem gabarito: `trauma-1160` (exposição posterior e alegação de menor paralisia),
+  `trauma-1161` (30 graus sem plano especificado, 2 a 3 cm, 15 graus de rotação), `trauma-1167`
+  (canal <9 mm ou paralisia radial como motivos para evitar haste). Comentários têm resposta
+  provável e ressalvas; nenhuma foi promovida a resposta oficial neste mapa.
+- Comentários atuais são não conferidos e alguns fazem afirmações amplas sobre incidência,
+  recuperação neural, segurança de acesso ou pseudartrose. Usá-los para localizar dúvidas,
+  nunca para substituir leitura da fonte de um lote autoral.
+- Dois simulados realmente pertinentes já existem: `conceitos-basicos-0364`, gesso pendente,
+  gravidade e efeito da alça; `trauma-1226`, consolidação com órtese conforme o terço da diáfise.
+  O resultado automático `conceitos-basicos-0373` é falso positivo: úmero é distrator, mas
+  o dado de pseudartrose com haste não fresada é do fêmur. Não contar como simulado de úmero.
+
+**Aproveitamento:** leitura e mapa concluídos. Sem lote novo, sem capítulo específico recebido,
+sem aplicação ou publicação de questões nesta etapa.
+
+
+### Confronto com o capítulo 37 e lote autoral
+
+PDF recebido posteriormente: **Humeral Shaft Fractures**, Rockwood and Green's Fractures in Adults,
+10ª edição, capítulo 37, Dominique M. Rouleau, Claire Bastard, Rocio Branes e Julien Chapleau.
+Leitura do texto integral extraído (60 páginas) e inspeção da figura 37-4. As páginas nesta seção
+são as do PDF/r.txt, não uma paginação impressa presumida. O PDF permaneceu fora do repositório.
+A quantidade foi escolhida pela utilidade dos fatos, e o usuário autorizou criação e publicação.
+Destino: **trauma**, subtema exato **Fratura da diáfise do úmero**.
+
+**Confronto bibliográfico:** o capítulo sustenta observação inicial da paralisia radial primária
+isolada em fratura fechada (p. 4 e 16), sem tornar HOLSTEIN-LEWIS indicação automática de exploração.
+Lesão vascular, lesão aberta ou penetrante e partes moles gravemente comprometidas mudam o contexto.
+A página 30 nomeia musculocutâneo na janela distal anterior da MIPO e menciona supinação nessa
+proteção; não foi criada pergunta sobre o efeito isolado da supinação, mantendo a ressalva do
+acervo sobre a relação do radial com a placa. O texto não sustenta generalizar menor paralisia
+para toda via posterior nem proibir haste em qualquer canal abaixo de 9 mm. Os itens TARO 2006
+continuam sem gabarito oficial, com a natureza histórica preservada.
+
+**Plano registrado antes da redação:**
+
+| # | Fato do capítulo, página | Motivo | Formato |
+|---|---|---|---|
+| 1 | HOLSTEIN-LEWIS: espiral distal, p. 4 e fig. 37-4, p. 5 | Lacuna com cara de prova: epônimo e padrão ligado ao radial | par, figura |
+| 2 | Paralisia radial primária isolada em fratura fechada: observação inicial, p. 4 e 16 | Fato carimbado: anatomia neural TARO 2017; outro ângulo, momento da lesão | direta |
+| 3 | Lesão vascular concomitante: exploração precoce do radial, p. 4 | Fato carimbado: indicação cirúrgica trauma-0266; outro contexto decisivo | direta |
+| 4 | Apoiar cotovelo no início da órtese pode causar varo, p. 17 | Fato carimbado: SARMIENTO, TARO 2020; outro ângulo, erro na reabilitação | direta |
+| 5 | Musculocutâneo na janela anterior distal da MIPO, p. 30 | Tendência recente: TEOT 2023 | direta |
+| 6 | Braquial: inervação lateral radial, medial musculocutânea, p. 22 | Tendência recente: TEOT 2023; plano protetor dos nervos | par |
+| 7 | Radial e braquial profunda entre cabeças longa e lateral do tríceps, p. 23 | Fato carimbado: acesso posterior TARO 2006, sem assumir menor incidência de lesão | par |
+| 8 | Traço simples em compressão, cominuição em ponte, p. 27 e 28 | Fato carimbado: compressão TARO 2010; contraste do padrão | par |
+| 9 | Placa convencional sem lag screw: quatro parafusos/oito corticais por fragmento, p. 28 | Lacuna com cara de prova: número ligado à estabilidade | numérica |
+| 10 | Bloqueio distal anterógrado aberto à mão livre, p. 36 e 38 | Fato carimbado: técnica e proteção neural, reforço trauma-0981 | direta |
+| 11 | Nervo axilar em risco no bloqueio proximal, p. 14 e 55 | Fato carimbado: técnica e estrutura em risco, contraste com bloqueio distal | direta |
+| 12 | Haste retrógrada: fratura supracondiliana durante introdução, p. 45 | Lacuna com cara de prova: complicação específica e prevenção | direta |
+| 13 | Pseudartrose mais frequentemente atrófica, p. 50 | Fato carimbado: reforço conceitos-basicos-0195 | direta |
+| 14 | Placa de aumento sobre haste preservada: controle rotacional, p. 50 | Lacuna com cara de prova: atributo mecânico da revisão | direta |
+| 15 | Haste na diáfise com metástase: proteção de todo o úmero, p. 56 | Lacuna com cara de prova: objetivo do implante em fratura patológica | direta |
+| 16 | Periprotética com haste solta: revisão por haste longa, p. 59 | Lacuna com cara de prova: estabilidade da prótese determina conduta | direta |
+
+**Aproveitamento do capítulo:** trauma-1371 a trauma-1386, **16 questões comentadas**, uma figura
+(fig. 37-4, HOLSTEIN-LEWIS), quatro itens em pares. Gabarito A4/B4/C4/D4; comentários de 5.315 a
+5.794 caracteres, mediana **5.500**. Cobertura: padrão espiral distal, observação e exploração radial,
+varo na órtese, musculocutâneo na MIPO, inervação do braquial, radial/braquial profunda posterior,
+compressão/ponte, ancoragem convencional, bloqueio distal aberto, axilar proximal, risco
+supracondiliano retrógrado, pseudartrose atrófica, placa complementar e controle rotacional,
+proteção do úmero na metástase e revisão de haste protética solta. Todos os comentários permanecem
+com `conferido: false`; questões e comentários preexistentes foram preservados integralmente.
+
+**Pendências e exclusões:** EGLSEDER não é descrito nominalmente no PDF, portanto seu fato recente
+não ganhou pergunta. O corte de angulação das tabelas (20 graus), o texto com 15 a 20 graus e os
+valores de séries (15 graus de varo) não viraram um limite universal; tampouco se adotou o valor
+sem plano do TARO 2006. O tempo de EMG aparece como seis semanas na investigação e cerca de três
+meses no acompanhamento: não se cobrou prazo único. A conduta na paralisia secundária tem debate
+entre observação e exploração, sem item universal. Foram excluídos números de séries,
+experimentos, superioridade não conclusiva de métodos, repetição de gesso pendente/alça e de
+consolidação conforme o terço (simulados anteriores). A descrição textual da classificação cita
+2007 enquanto a legenda da figura refere 2018, portanto subgrupos detalhados não foram cobrados.
+O parágrafo anatômico remete equivocadamente o úmero proximal ao capítulo 37; não foi replicado.
+O fragmento de referência final incompleto do PDF não foi tratado como instrução ou evidência nova.
