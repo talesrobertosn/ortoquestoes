@@ -1197,6 +1197,18 @@ textarea {
   color: var(--erro);
 }
 
+/* Erro do formulário de entrar ou cadastrar: grande, vermelho, junto do botão, e treme. */
+.aviso-formulario--destaque {
+  display: grid; grid-template-columns: auto 1fr; gap: 0.2rem 0.7rem; align-items: start;
+  padding: 0.85rem 1rem; border-width: 2px; font-size: 0.98rem; font-weight: 650; line-height: 1.4;
+  animation: aviso-treme 0.45s ease both;
+}
+.aviso-formulario--destaque svg { margin-top: 0.15rem; }
+.aviso-formulario__acoes { grid-column: 2; display: flex; flex-wrap: wrap; gap: 0.3rem 1rem; margin-top: 0.15rem; }
+.aviso-formulario__acoes button { padding: 0; border: 0; background: none; color: inherit; font: inherit; font-weight: 750; text-decoration: underline; cursor: pointer; }
+@keyframes aviso-treme { 0%, 100% { transform: translateX(0); } 20% { transform: translateX(-6px); } 40% { transform: translateX(6px); } 60% { transform: translateX(-4px); } 80% { transform: translateX(3px); } }
+@media (prefers-reduced-motion: reduce) { .aviso-formulario--destaque { animation: none; } }
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
