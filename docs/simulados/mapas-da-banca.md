@@ -700,3 +700,259 @@ consolidação conforme o terço (simulados anteriores). A descrição textual d
 2007 enquanto a legenda da figura refere 2018, portanto subgrupos detalhados não foram cobrados.
 O parágrafo anatômico remete equivocadamente o úmero proximal ao capítulo 37; não foi replicado.
 O fragmento de referência final incompleto do PDF não foi tratado como instrução ou evidência nova.
+
+## Distal Humerus Fractures: fraturas do úmero distal no adulto (engenharia reversa em 08/10/2026)
+
+### Escopo, leitura e depuração
+
+Engenharia reversa do **acervo atual**, antes de receber o PDF específico de Distal Humerus
+Fractures. Foram lidos enunciados, todas as alternativas e os comentários disponíveis de
+36 registros selecionados, além de cinco questões de fundamentos adjacentes. Foram abertas
+as cinco imagens desses registros: radial no acesso anterolateral (ombro-cotovelo-0125),
+osteonecrose da tróclea (trauma-0579), fragmento osteocondral fino (trauma-0975), transmissão
+axial (trauma-0682) e intervalo de KOCHER (ombro-cotovelo-0122). Os comentários são não
+conferidos e servem para localizar dúvidas, não para validar fatos de um novo lote.
+A lista de enunciados e alternativas pediátricos recuperados também foi lida separadamente;
+essa leitura delimitou fronteiras, sem incorporar sua estatística ao padrão adulto.
+
+- **Núcleo: 23 questões distintas de TEOT/TARO diretamente relacionadas ao adulto**, das quais
+  21 têm quatro alternativas e duas são certo/errado (TARO 2006). **18 possuem gabarito
+  registrado e cinco não possuem gabarito oficial disponível.**
+- Anos do núcleo: 2006: 2; 2007: 1; 2008: 1; 2010: 1; 2012: 1; 2014: 1; 2016: 2;
+  2017: 1; 2020: 1; 2021: 2; 2022: 1; 2023: 2; 2026: 1; sem ano: 6.
+  Não foram localizados itens adultos diretos datados de TEOT/TARO 2025. O TEOT 2024
+  sobre osteonecrose da tróclea fica no recorte transversal de idade abaixo.
+- **Quatro questões complementares diretas distintas:** INTO 2026 (duplo arco), ENARE R4 2024
+  (AO extra-articular espiral), TECOC/SBCOC sem ano (pseudartrose supracondilar e BRYAN-MORREY
+  II por imagem). Não misturar medidas de provas com cinco opções às de TEOT/TARO.
+- Duplicatas: trauma-0233 / trauma-1064 (TARO 2022, transposição ulnar, pequena variação entre
+  neuropatia e neuropraxia); trauma-0270 / ombro-cotovelo-0098 (artroplastia, mesmo texto e
+  opções, com título incorporado no segundo); trauma-0927 / trauma-0649 (epidemiologia,
+  mesmo texto/opções, rotulagem TEOT/TARO sem ano versus SBOT-SP sem ano).
+  Não contar cópias como novas cobranças independentes nem atribuir-lhes ano.
+- Etiquetas falsas: trauma-0986 (TARO 2026) e trauma-1004 (ENARE 2024) são fêmur distal;
+  trauma-1038 (TARO 2024) é LCA/espaço intercondilar do joelho; trauma-1138 e trauma-1181
+  são fêmur supracondiliano. Não entram no núcleo apesar da etiqueta de úmero distal.
+  trauma-1217 a 1222 são um caso supracondiliano de criança de seis anos, embora estejam em
+  trauma e parcialmente etiquetados como diáfise/distal. Nenhum metadado foi alterado.
+- Falsos positivos de busca: KOCHER do quadril ou artrite séptica, MCKEEVER da espinha tibial,
+  tróclea femoral, nervo troclear craniano, cistos ósseos, úmero distal como distrator,
+  osteocondrite/PANNER, MONTEGGIA, coronoide e cabeça do rádio isolada. São outros assuntos.
+- Os seis itens sem ano com rótulo TEOT/TARO são tratados como registros do acervo com
+  proveniência temporal incompleta, sem inferir edição, recência ou repetição anual.
+
+### Fatos cobrados, com prova e ano
+
+As respostas abaixo são **gabaritos registrados**, com divergências identificadas. Não promovem
+respostas prováveis a oficiais nem substituem o capítulo a receber.
+
+| Grupo | Fato/resposta registrada | Prova, ano e id |
+|---|---|---|
+| Classificação do capítulo | BRYAN-MORREY III: cominuição grave multifragmentar, BROBERG-MORREY. | TARO 2026, trauma-0987. |
+| Extensão articular | Cisalhamento do capítulo com maior parte da tróclea: tipo IV, modificação de MCKEE. | TARO 2014, trauma-0154. |
+| AO/OTA | Fratura coronal típica do capítulo: grupo B3. | TARO 2016, trauma-0109; TARO 2008, trauma-1132 sem gabarito oficial, provável D. |
+| Discriminação de tipos | Grau de cominuição separa BRYAN-MORREY II de III. | TEOT/TARO sem ano, trauma-0528, D. |
+| Imagem | Duplo crescente no perfil: capítulo com extensão para tróclea. | TARO 2020, trauma-0017, D; reforço INTO 2026, ombro-cotovelo-0520, E com redação menos específica. |
+| Complicação do capítulo | Diminuição da mobilidade articular. | TARO 2017, trauma-0103, D; TEOT/TARO sem ano, trauma-0310, A. TARO 2007, trauma-1122, sem oficial, provável B. |
+| Divergência na complicação | Enunciado semelhante, mas gabarito necrose avascular, não limitação articular. | TARO 2012, trauma-0812, B; comentário atual contém alerta. |
+| Nervo acometido | Úmero distal adulto: ulnar. | TARO 2016, trauma-0108, A. |
+| Mecanismo e nervo | Supracondiliana adulta por flexão: ulnar. | TARO 2010, trauma-0878, A. |
+| Complicação cirúrgica neural | Neuropatia ulnar. | TEOT/TARO sem ano, trauma-0267, B. |
+| Estrutura por acesso | Radial assinalado na via anterolateral ao terço distal. | TEOT 2023, ombro-cotovelo-0125, C; figura aberta. |
+| Manejo do ulnar | Transposição após placas, com opções neuropatia prévia/placa medial/tróclea e capítulo/placas paralelas. | TARO 2022, trauma-0233 e cópia trauma-1064, **sem gabarito e sem comentário**. |
+| Fratura exposta | Região posterior. | TARO 2023, trauma-0430, D. |
+| Via cirúrgica | BRYAN-MORREY com reflexão do tríceps: substituição artroplástica total. | TEOT 2021, trauma-0211, B. |
+| Fixação no idoso | AO-C3 e osteoporose: gabarito placas bloqueadas ortogonais. | TARO 2021, trauma-0075, D; **alerta bibliográfico no comentário atual**. |
+| Artroplastia | Alternativa quando estabilização é insuficiente para mobilidade precoce. | TEOT/TARO sem ano, trauma-0270, D; cópia ombro-cotovelo-0098. |
+| Anatomia das colunas | Colunas lateral e medial no plano coronal: 20° e 45°, nessa ordem. | TEOT/TARO sem ano, trauma-0903, A; confirmar referências/medidas no capítulo. |
+| Epidemiologia | Gabarito distribuição bimodal em homens e mulheres para articulares parciais. | TEOT/TARO sem ano, trauma-0927, C; cópia SBOT-SP trauma-0649. Confirmar se capítulo descreve esse subgrupo ou o conjunto das fraturas distais. |
+| Conservador histórico | Afirmação de que bag of bones causa rigidez. | TARO 2006, ombro-cotovelo-0514, sem oficial; comentário propõe B e distingue mobilização precoce de imobilização prolongada. |
+| Lesão associada histórica | Afirmação de superioridade da excisão da cabeça radial após seis semanas quando há fratura do capítulo. | TARO 2006, ombro-cotovelo-0517, sem oficial; comentário propõe B, sem regra temporal universal. |
+
+**Complementares diretas:**
+
+| Fato | Prova e id | Resposta registrada |
+|---|---|---|
+| Extra-articular, simples e espiral | ENARE R4 2024, trauma-1012 | A, 13A2.1. |
+| Local típico de pseudartrose | TECOC/SBCOC sem ano, trauma-0968 | D, supracondilar. |
+| Fragmento fino por desenho | TECOC/SBCOC sem ano, trauma-0975 | A, BRYAN-MORREY II. A figura mostra lâmina articular, não cominuição; aberta diretamente. |
+| Duplo arco no perfil | INTO 2026, ombro-cotovelo-0520 | E, fratura coronal do capítulo. A opção não explicita tróclea; o comentário explicita essa extensão. |
+
+**Fundamentos adjacentes, fora das medidas:** carga axial umeroulnar/radiocapitelar 40%/60%
+(ombro-cotovelo-0060, TEOT/TARO sem ano; cópia SBOT-SP ombro-cotovelo-0381; figura TECOC
+trauma-0682). Eixo de flexoextensão no centro da tróclea (TARO 2015, ombro-cotovelo-0043),
+estabilizadores primários (TARO 2018, ombro-cotovelo-0016), arco funcional de MORREY
+30° a 130° e 50° em cada sentido de pronossupinação (TARO 2006, ombro-cotovelo-0506,
+sem oficial, provável A), KOCHER entre extensor ulnar do carpo e ancôneo (TEOT 2023,
+ombro-cotovelo-0122, B, figura aberta) e contraindicação artroplástica por anquilose do
+ombro ipsilateral em questão de artrose (TEOT 2023, ombro-cotovelo-0109, C).
+Não contam como repetição direta de fratura distal; só serão aproveitados se o capítulo
+os desenvolver no contexto relevante.
+
+### Tendência recente
+
+No núcleo, **seis itens de 2021 em diante**: dois em 2021 (fixação de C3 no idoso e via
+BRYAN-MORREY), um em 2022 (transposição ulnar, sem resposta), dois em 2023 (radial por figura
+e localização da ferida exposta) e um em 2026 (BRYAN-MORREY III). Predomina **procedimento,
+segurança anatômica e discriminação de padrão articular**. A classificação do capítulo retorna
+em 2026 depois dos registros de 2008, 2014 e 2016, com mudança do atributo pedido.
+O INTO 2026 reforça imagem/classificação, mas é prova complementar e não cria, sozinho,
+uma tendência TEOT/TARO. Não há evidência de que fatos antigos tenham deixado de ser cobrados.
+
+### Forma, medida depois da depuração
+
+Medidas das **21 questões de quatro opções** do núcleo, incluindo três sem gabarito:
+
+- Enunciado mediano **93 caracteres**, intervalo 52 a 245; alternativa mediana **19**.
+- **15** terminam em palavra, **quatro** em dois-pontos e **duas** em interrogação.
+  Zero casos clínicos; uma figura (radial no acesso distal); um “respectivamente”.
+- Dois itens têm atributos cruzados: colunas lateral/medial e bimodalidade por sexo.
+  Pares não dominam este pequeno recorte, apesar de terem utilidade para reforçar relações.
+- Aberturas: “Na fratura”, oito; “A complicação”, três; “As fraturas”, duas;
+  “A fratura”, duas. As demais variam entre “Nas fraturas”, “Na via”, “A artroplastia” etc.
+- Gabaritos disponíveis: **A4/B3/C3/D8**, apenas 18 respostas. Concentração em D não é regra
+  para novos lotes; não incluir as cinco questões sem oficial nessa distribuição.
+- **12/21** têm alternativas em ordem crescente de comprimento; **48/84** opções começam
+  com minúscula. Epônimos/siglas incluem BRYAN, MORREY, MCKEE, KOCHER-LORENZ e RAFI.
+- No subconjunto recente de seis questões, enunciado mediano **118** e alternativa **28**.
+  Não generalizar o desvio de ordem de tamanho desse subconjunto para abandonar o padrão
+  editorial atual de alternativas crescentes e início em minúscula.
+
+### Como o examinador pensa
+
+1. **Troca o atributo dentro da mesma classificação.** O capítulo pode ser perguntado pela
+   cominuição (III), espessura osteocondral (II), extensão à tróclea (IV) ou plano coronal AO
+   (B3). Distratores são tipos vizinhos, sem intercambiar sistemas. BRYAN-MORREY também
+   nomeia uma via com reflexão do tríceps: o contexto decide se o epônimo é acesso ou classificação.
+2. **Relaciona imagem e extensão real.** Duplo arco aponta extensão do fragmento; desenho de
+   lâmina pede tipo II; seta no acesso pede identificação neural. Imagem deve trazer informação
+   utilizável, e não decorar uma questão textual.
+3. **Escolhe o nervo pelo contexto.** Ulnar no trauma distal adulto e na complicação cirúrgica;
+   radial no intervalo anterolateral distal. Não responder radial para toda pergunta umeral nem
+   musculocutâneo por transportar o gabarito da MIPO diafisária do capítulo anterior.
+4. **A função desejada orienta a conduta.** Fixação suficiente para mobilizar, artroplastia
+   quando essa estabilidade não é obtida, e acesso que possibilita a substituição. Cominuição,
+   qualidade óssea e demanda clínica importam; um gabarito sobre ortogonalidade não prova
+   superioridade universal.
+5. **Pergunta a complicação dominante entre complicações plausíveis.** Rigidez, pseudartrose,
+   osteonecrose e consolidação viciosa competem. O registro de 2012 impede transformar repetição
+   de enunciado em repetição uniforme de resposta.
+6. **Cruza lados e categorias.** Coluna lateral/medial com ângulos, articulares parciais com
+   distribuição por sexo. A ordem “respectivamente” muda a alternativa mesmo quando ambos os
+   números existem. Distinguir também conjunto de fraturas distais de um subgrupo específico.
+7. **Os distratores frequentemente pertencem a outro cenário verdadeiro.** Nervo da diáfise
+   versus distal, placa versus artroplastia, via lateral do capítulo versus via posterior para
+   substituição. Algumas opções antigas são menos adequadas, como tipo V de BRYAN-MORREY;
+   não reproduzir opções inexistentes no novo lote.
+
+### Fronteira pediátrica e itens sem idade explícita
+
+- trauma-0191 (TEOT 2022, D) pede deformidade tipo B de osteonecrose da tróclea e associa côndilo
+  medial/descolamento fisário. É **pediátrica apesar da etiqueta em trauma** e não entrou no núcleo.
+- trauma-0579 (TEOT 2024, A) pede osteonecrose da tróclea por radiografia, sem declarar idade
+  ou trauma prévio. A figura foi aberta e mostra alteração do contorno troclear; não fornece,
+  sozinha, uma história causal ou idade. Registrada como **transversal de idade**, sem promovê-la
+  a incidência ou sequência típica de fratura adulta. O comentário atual aborda fishtail/HEGEMANN.
+- ombro-cotovelo-0278 (TEOT/TARO sem ano, B) pede coxim gorduroso posterior em fratura oculta
+  supracondiliana. Sem idade no enunciado; mantida como fundamento de imagem, não dado específico adulto.
+- Nas pediátricas lidas, recorrências claras são deformidade/remodelação, direção do desvio,
+  periósteo e manobra, nervo e perfusão. Exemplos: consolidação viciosa como causa de varo
+  (TARO 2011, pediatria-0652; TARO 2025, pediatria-0532 com medialização/rotação), desvio
+  posteromedial com periósteo lateral roto e pronação (TARO 2021, pediatria-0592), flexão/pronação
+  na redução desse desvio (TEOT 2025, pediatria-0914), radial no posteromedial (TARO 2014,
+  pediatria-0691), interósseo anterior em extensão/posterolateral (TARO 2019, pediatria-0639),
+  síndrome compartimental em extensão com lesão do mediano (TEOT 2021, pediatria-0850).
+  Registro de ossificação, fise e remodelação não deve gerar limites adultos.
+- Os itens pediátricos de perfusão de 2007 e 2009, pronação de 2010, nervo de 2008 e remodelação
+  de 2020 não têm gabarito oficial; não extrapolar nem completar por memória.
+  Esse panorama é uma **fronteira do recorte adulto**, não uma engenharia reversa completa
+  de todo o capítulo pediátrico, que exigiria busca própria por côndilos, fises e epicôndilos.
+
+### Divergências, lacunas e pendências para o capítulo
+
+- **TARO 2012 versus 2017:** trauma-0812 tem gabarito B, necrose avascular, e alerta que reconhece
+  rigidez como complicação frequentemente descrita; trauma-0103 tem D, diminuição da mobilidade.
+  TARO 2007 tem resposta provável, sem oficial. Não atribuir a mudança a uma edição específica
+  sem examinar a bibliografia e o desfecho. Preservar todos os gabaritos do acervo.
+- **TARO 2021:** trauma-0075 marca fixação com placas ortogonais. O comentário traz alerta sobre
+  artroplastia em fratura irreconstruível do idoso e resultados clínicos de montagens paralelas
+  versus ortogonais. O alerta é uma pendência de confronto com a fonte, não autorização para
+  afirmar que o enunciado necessariamente descreve um bloco irreconstruível ou que a banca errou.
+- **TARO 2022:** transposição ulnar tem duas cópias sem oficial e sem comentário. Não inferir A,
+  não converter identificação/proteção em indicação rotineira de transposição. Conferir déficit
+  prévio, relação com implante e contexto da recomendação no capítulo.
+- **AO:** trauma-1132 não explicita o plano e tem apenas provável D. Para um novo item, delimitar
+  cisalhamento coronal, em vez de equiparar toda fratura lateral que envolve capítulo a B3.
+  Subgrupos e versões AO devem coincidir com a tabela do capítulo recebido.
+- **Epidemiologia:** bimodalidade no registro de articulares parciais carece de referência no
+  comentário. Conferir se a fonte distingue A/B/C, capitelo isolado, idade e sexo; não transferir
+  epidemiologia de todas as fraturas distais para cada subgrupo.
+- **Comentários atuais:** expressões como “TC sempre/obrigatória”, superioridade universal,
+  contraindicação absoluta no jovem, ausência de anastomoses e excisão genericamente tolerada
+  precisam de contexto e fonte. O duplo arco não deve ser atribuído a toda fratura isolada do
+  capítulo quando ele sinaliza extensão à tróclea. A anatomia exata dos ângulos das colunas
+  deve ser confrontada com texto/figuras, sem repetir números por memória.
+- Lacunas **com cara de prova, ainda candidatas**: DUBBERLEY e cominuição posterior, princípio de
+  parafusos distais entre colunas, escolha de via e osteotomia, fixação estável versus artroplastia
+  por reconstruibilidade/demanda, revisão de pseudartrose, mobilização e prevenção de rigidez.
+  Só entram no plano depois de leitura integral e comprovação por página do capítulo; não são
+  perguntas prometidas nem fatos já confirmados nesta etapa.
+- Busca de simulados: **zero itens diretamente do recorte adulto** depois da depuração.
+  trauma-1382 aborda fratura supracondiliana iatrogênica na haste retrógrada, mas sua fonte é
+  o capítulo de diáfise; trauma-1383 trata pseudartrose diafisária. Não contá-los como lote distal,
+  e evitar repetir seus mecanismos se o próximo capítulo voltar a eles.
+
+**Aproveitamento nesta etapa:** engenharia reversa e memória documental concluídas. Nenhuma
+questão nova, alteração de gabarito/comentário oficial, aplicação ou publicação de lote distal.
+O próximo plano será guiado por esse mapa e por páginas do PDF específico quando ele chegar.
+
+### Confronto com o capítulo recebido e plano anterior à redação
+
+# Plano anterior à redação: úmero distal
+Fonte: Rockwood and Green's Fractures in Adults, 10ª ed., cap. 39, Distal Humerus Fractures, George S. Athwal e Ryan Gao. Páginas do PDF/r.txt, 76 páginas lidas integralmente. Tema trauma; subtema Fratura do úmero distal. Autorização vigente permite redigir e publicar sem pausa para aprovação.
+
+| # | Fato e página | Motivo | Formato |
+|---|---|---|---|
+| 1 | BRYAN-MORREY I com osso subcondral, II fragmento osteocondral fino, p. 12-13 | Fato carimbado: TARO 2026 e questão sem ano; distinguir tipos vizinhos | par 2 por 2 |
+| 2 | BRYAN-MORREY III cominuído, IV extensão troclear, p. 13 | Tendência recente: TARO 2026; carimbado TARO 2014 | par 2 por 2 |
+| 3 | Duplo arco: capitelo e crista lateral da tróclea, p. 46 | Fato carimbado: TARO 2020; reforço INTO 2026 | imagem da fig. 39-31A |
+| 4 | AO B3 fratura parcial frontal, p. 8 e 46 | Fato carimbado: TARO 2016; explicitar plano coronal ausente em item 2008 | direta |
+| 5 | DUBBERLEY II capitelo/tróclea unidos, III separados, p. 13 | Lacuna com cara de prova: tipos vizinhos com consequência técnica | par 2 por 2 |
+| 6 | Colunas lateral 20 e medial 45 graus no plano coronal, p. 14-15 | Fato carimbado: TEOT/TARO sem ano; explicitar plano e ordem | par numérico |
+| 7 | Neuropatia mais comum ulnar, placa lateral longa risco radial, p. 51 e 73 | Fato carimbado: TARO 2016; tendência TEOT 2023 estrutura em risco | par 2 por 2 |
+| 8 | Descompressão in situ e transposição têm resultados equivalentes no ensaio citado, p. 28 e 73 | Tendência recente: TARO 2022 sem gabarito; cobrar evidência e não preferência | direta |
+| 9 | Ferida grau I posterior/posterolateral, p. 69 | Tendência recente: TARO 2023 | direta |
+| 10 | Paratricipital preserva inserção tricipital, p. 29-30 | Lacuna com cara de prova: diferencial de via e mobilização | direta |
+| 11 | Osteotomia olecraniana na área nua entre facetas olecraniana e coronoide, p. 28 | Lacuna com cara de prova: reparo anatômico e proteção cartilagem | direta |
+| 12 | Via BRYAN-MORREY reflete tríceps com periósteo e ancôneo, p. 57-58 | Tendência recente: TEOT 2021; desfazer confusão triceps-sparing | direta |
+| 13 | Idoso baixa demanda com fratura irreconstruível pode receber artroplastia total, p. 52 e 60 | Tendência recente: TARO 2021; cenário explicitamente irreconstruível | caso curto |
+| 14 | Infecção ativa contraindicação absoluta à artroplastia, p. 54 | Lacuna com cara de prova: contraindicador absoluto contra fatores relativos | direta |
+| 15 | Artroplastia vinculada preferida quando estabilizadores não reconstruíveis, p. 59-60 | Lacuna com cara de prova: desenho e dependência ligamentar | direta |
+| 16 | Hemiartroplastia exige colunas reconstruíveis e ligamentos reparáveis, p. 63 | Lacuna com cara de prova: requisito anatômico definidor | direta |
+| 17 | Parafusos posicionais preservam largura de tróclea com cominuição central, p. 39 | Lacuna com cara de prova: armadilha técnica e mecanismo | direta |
+| 18 | Pseudartrose pós-fixação geralmente supracondiliana, p. 69 | Fato carimbado: TECOC sem ano como complemento; lacuna TEOT/TARO | direta |
+| 19 | Não demonstrada superioridade clínica paralelas vs ortogonais, p. 41 e 49 | Tendência recente: TARO 2021; distinguir clínica de biomecânica | direta |
+| 20 | HASTINGS II C limitação nos dois planos, p. 72 | Lacuna com cara de prova: epônimo e subtipos funcionais | direta com tabela no comentário |
+
+Exclusões: incidência geral sem contexto de série; extrapolação pediátrica; técnica experimental; subgrupo AO 13A2.1 sem edição; ranking AVN/rigidez sem afirmação explícita no capítulo; resultados porcentuais de pequenos estudos; novos simulados de diáfise já existentes. Cinco pares (25%), um caso (5%), uma imagem diagnóstica. Três módulos 7+7+6.
+
+### Aproveitamento do capítulo 39 (lote publicado em 08/10/2026)
+
+- Leitura integral das 76 páginas do PDF recebido, incluindo tabelas, legendas e referências. Páginas citadas correspondem à extração `r.txt`, não à paginação impressa do volume. Fonte: Athwal e Gao, Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 39, Distal Humerus Fractures.
+- Vinte simulados em `trauma`, subtema `Fratura do úmero distal`, ids **trauma-1387 a trauma-1406**. Uma imagem: painel lateral inicial da figura 39-31A em trauma-1389, recortado e aberto para inspeção. Cinco pares (25%) e um caso curto (5%). Três módulos de sete, sete e seis questões.
+- Cobertura: BRYAN-MORREY I/II e III/IV, duplo arco, AO B3, DUBBERLEY II/III, ângulos das colunas, ulnar versus radial, evidência de manejo ulnar, ferida exposta posterior, paratricipital, área nua da osteotomia, via BRYAN-MORREY, artroplastia por irreconstruibilidade, contraindicação absoluta, desenho vinculado, requisitos da hemiartroplastia, largura troclear e parafuso posicional, pseudartrose supracondiliana, ausência de superioridade clínica entre orientações de placas e HASTINGS II C.
+- Distribuição **A 5, B 5, C 5, D 5**. Comentários: mediana **6.150 caracteres**, mínimo 5.734 e máximo 6.388. Todas as análises das alternativas erradas têm 400 a 700 caracteres. Enunciados de 60 a 160 caracteres. Alternativas ordenadas por tamanho, com ordem numérica crescente nos pares angulares e em HASTINGS.
+- A conferência dos lotes terminou sem erros ou avisos. Conferência de integridade preservou as questões e os comentários anteriores; as inclusões mantêm `conferido: false`. Validação estrutural sem erros; testes de detecção, paywall, revisão e reinício aprovados. Os avisos históricos do acervo geral permanecem separados da conferência limpa deste lote.
+
+### Divergências resolvidas e pendências depois da leitura
+
+1. **Epidemiologia articular parcial:** o texto da página 3 informa distribuição bimodal em mulheres e unimodal em homens. Isso contraria o gabarito do item TEOT/TARO sem ano, trauma-0927, que indica bimodal nos dois sexos. Não criar regra universal nem alterar o oficial; esse fato ficou fora do lote.
+2. **Rigidez versus necrose do capitelo:** os gabaritos de TARO 2012 e 2017 divergem. Este capítulo descreve desfechos e complicações, mas não estabelece um ranking único da complicação mais comum nas fraturas do capitelo para reproduzir essa pergunta. Não criar resposta com frequência deduzida. O lote cobra uma classificação funcional de ossificação, explicitamente tabelada, e registra a divergência histórica.
+3. **Placas em idoso C3:** o gabarito ortogonal de TARO 2021 não demonstra superioridade universal. Páginas 41 e 49 aceitam paralelas e ortogonais se houver fixação rígida; páginas 52 e 60 sustentam artroplastia para fratura não passível de estabilização em paciente apropriado. Trauma-1399 declara irreconstruibilidade; trauma-1405 cobra a conclusão clínica, sem alterar o oficial.
+4. **Transposição ulnar:** TARO 2022 segue sem gabarito oficial disponível. Páginas 28 e 73 descrevem equivalência entre descompressão in situ e transposição no ensaio randomizado, embora os autores prefiram transposição. Trauma-1394 distingue resultado comparativo, estudo retrospectivo, preferência e reparo de laceração; não inventa indicação rotineira baseada no item sem chave.
+5. **AO por versão:** a figura 39-3 reproduz classificação de 2007 e usa A2.1 para oblíqua descendente medial. O item ENARE 2024 complementar atribui 13A2.1 a espiral. Não perguntar esse subgrupo sem explicitar versão. Trauma-1390 usa apenas B3 e plano coronal, evitando o enunciado ambíguo de 2008 sem gabarito.
+6. **Legenda inconsistente:** figura 39-16 identifica fratura da coluna medial como B1.3, em desacordo com a definição medial B2 do texto. Não usar esse código da legenda como fonte de novo item.
+7. **BRYAN-MORREY e tríceps:** a página 57 esclarece que a via historicamente chamada triceps-sparing desinsere o tríceps junto ao periósteo e ancôneo. Trauma-1398 cobra o gesto real e diferencia a via paratricipital triceps-on. A classificação III/IV está na página 12; a figura I/II e DUBBERLEY estão na página 13.
+8. **Exclusões conscientes:** distribuição por idade parcialmente pediátrica; porcentagens de pequenas séries; mapa experimental de fraturas; números de testes biomecânicos; diâmetros preferidos de implantes; tratamentos de resgate raros; implantes comerciais; progressão extensa de RING; técnicas artroscópicas com evidência limitada. Não duplicar o lote de diáfise, incluindo fratura supracondiliana iatrogênica no encavilhamento retrógrado e revisão periprotética diafisária.
+
+O aprendizado reaproveitável é distinguir plano do traço, anatomia reconstruível, preferência técnica e evidência clínica antes de transformar um dado em resposta única. Gabaritos oficiais divergentes permanecem preservados e identificados por prova e ano.
