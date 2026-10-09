@@ -10,3 +10,4 @@ agente) também entram aqui: o dono avisa e o id é anotado.
 | pediatria-0915 | Pseudoluxação acromioclavicular | posts/2026-10-10-museu-pseudoluxacao-ac |
 | ombro-cotovelo-0120 | Acesso de Thompson, interósseo posterior | posts/2026-10-10-gps-interosseo-posterior |
 | mao-1279 | Ramo superficial do radial (Simulados, anatomia) | posts/2026-10-10-planta-ramo-superficial |
+| quadril-0050 | Ressalto interno do quadril, iliopsoas (TARO 2022) | posts/2026-10-09-banca-ressalto-quadril |

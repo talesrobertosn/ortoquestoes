@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Banca examinadora: ressalto do quadril</title>
+<!-- Estilo novo "banca" (ficha de prova oral, carimbos e caneta vermelha). Questão quadril-0050
+     (TARO 2022), gabarito B. Apresenta o ranking (tela ilustrativa) e termina na ficha de inscrição.
+     Feed 1080x1350 (p1 a p6) e stories 1080x1920 (s1 a s3), sem figurinha.
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-09-banca-ressalto-quadril/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Caveat; src: url(../../fontes/caveat-latin-wght-normal.woff2) format('woff2'); font-weight: 400 700; }
+@font-face { font-family: Serif4; src: url(../../fontes/source-serif-4-latin-opsz-normal.woff2) format('woff2'); font-weight: 200 900; }
+:root { --mesa: #1f3a35; --papel: #fbf7ec; --linha: rgba(43, 85, 140, .16); --tinta: #1d2a2f; --cinza: #5d6a6e; --vermelho: #c0392b; --azul: #1f4f9e; --verde: #14655E; --ouro: #f4cf7c; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; }
+section { display: flex; flex-direction: column; justify-content: center; position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1350px; padding: 70px 70px;
+  background: radial-gradient(circle at 20% 10%, rgba(255,255,255,.06), transparent 40%), repeating-linear-gradient(90deg, rgba(0,0,0,.05) 0 2px, transparent 2px 9px), var(--mesa); color: var(--tinta); }
+section.story { height: 1920px; padding: 210px 70px 300px; }
+.folha { position: relative; padding: 60px 62px 56px; background:
+    linear-gradient(90deg, transparent 96px, rgba(192,57,43,.35) 96px 98px, transparent 98px),
+    repeating-linear-gradient(180deg, transparent 0 54px, var(--linha) 54px 56px), var(--papel);
+  box-shadow: 0 30px 60px rgba(0,0,0,.45); }
+.folha--torta { transform: rotate(-1.2deg); }
+.cab { display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; padding-bottom: 18px; border-bottom: 3px double var(--tinta); }
+.cab p { font: 800 24px Inter; letter-spacing: .14em; text-transform: uppercase; color: var(--tinta); }
+.cab p small { display: block; margin-top: 6px; font: 600 22px Inter; letter-spacing: .06em; color: var(--cinza); text-transform: none; }
+.cab .marca { display: flex; align-items: center; gap: 10px; font: 26px Jakarta; letter-spacing: -.02em; text-transform: none; }
+.cab .marca svg { width: 40px; height: 40px; } .cab .marca b { font-weight: 800; }
+.campos { margin-top: 26px; display: grid; gap: 14px; font: 500 28px Serif4; color: var(--cinza); }
+.campos span b { color: var(--tinta); font: 700 32px Caveat; color: var(--azul); margin-left: 8px; }
+h1 { margin-top: 30px; font: 800 92px/.96 Jakarta; letter-spacing: -.045em; color: var(--tinta); }
+h1 em { font-style: normal; color: var(--vermelho); }
+h2 { font: 800 60px/1.02 Jakarta; letter-spacing: -.035em; }
+.carimbo { position: absolute; display: inline-grid; place-items: center; padding: 12px 26px; border: 6px solid var(--vermelho); border-radius: 10px; color: var(--vermelho);
+  font: 900 40px Inter; letter-spacing: .1em; text-transform: uppercase; transform: rotate(-12deg); opacity: .88; mix-blend-mode: multiply; }
+.carimbo small { font: 800 18px Inter; letter-spacing: .14em; }
+.caneta { font: 700 50px/1.1 Caveat; color: var(--vermelho); }
+.caneta--azul { color: var(--azul); }
+.pergunta { margin-top: 30px; font: 600 46px/1.32 Serif4; color: var(--tinta); }
+.opcoes { margin-top: 26px; display: grid; gap: 14px; }
+.opcoes span { display: flex; align-items: center; gap: 22px; font: 500 40px Serif4; }
+.opcoes i { flex: 0 0 auto; display: grid; place-items: center; width: 52px; height: 52px; border: 3px solid var(--tinta); font: 800 26px Inter; font-style: normal; }
+.rodape { position: absolute; left: 70px; right: 70px; bottom: 34px; display: flex; justify-content: space-between; font: 600 24px Inter; color: rgba(251,247,236,.75); }
+.rodape b { color: var(--ouro); }
+
+/* p3: resposta do candidato */
+.resposta-candidato { margin-top: 36px; position: relative; padding: 30px 0 0; }
+.resposta-candidato .letra { display: inline-block; font: 700 120px/1 Caveat; color: var(--azul); }
+.resposta-candidato .letra small { font-size: 66px; margin-left: 10px; }
+.risco { position: absolute; left: -10px; right: 120px; top: 110px; height: 8px; background: var(--vermelho); transform: rotate(-3deg); border-radius: 6px; opacity: .9; }
+.nota-margem { margin-top: 40px; padding: 26px 30px; border-left: 8px solid var(--vermelho); background: rgba(192,57,43,.06); }
+
+/* p4: correção */
+.tabela { margin-top: 30px; display: grid; grid-template-columns: 1fr 1fr; border: 3px solid var(--tinta); }
+.tabela div { padding: 22px 24px; border-bottom: 2px solid rgba(29,42,47,.25); font: 500 30px/1.3 Serif4; }
+.tabela div:nth-child(odd) { border-right: 2px solid rgba(29,42,47,.25); }
+.tabela .t { background: var(--tinta); color: var(--papel); font: 800 24px Inter; letter-spacing: .1em; text-transform: uppercase; border-bottom: 0; }
+.tabela .t.certo { background: var(--verde); }
+.tabela strong { font-weight: 800; }
+.tabela div:nth-last-child(-n+2) { border-bottom: 0; }
+
+/* p5: nota da banca e ranking */
+.foto { position: relative; margin: 30px auto 0; width: 560px; padding: 14px 14px 46px; background: #fff; box-shadow: 0 18px 34px rgba(0,0,0,.3); transform: rotate(2deg); }
+.foto img { display: block; width: 100%; }
+.foto small { position: absolute; left: 0; right: 0; bottom: 10px; text-align: center; font: 700 30px Caveat; color: var(--cinza); }
+.clipe { position: absolute; top: -26px; left: 60px; width: 40px; height: 110px; border: 6px solid #9aa4a8; border-radius: 20px; transform: rotate(-8deg); }
+
+/* p6: inscrição */
+.inscricao .linha-campo { margin-top: 26px; display: grid; gap: 6px; }
+.inscricao .linha-campo small { font: 800 22px Inter; letter-spacing: .14em; color: var(--cinza); text-transform: uppercase; }
+.inscricao .linha-campo span { display: block; height: 64px; border-bottom: 3px solid var(--tinta); font: 700 46px/64px Caveat; color: var(--azul); }
+.caixas { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 18px 36px; font: 600 32px Inter; }
+.caixas span { display: flex; align-items: center; gap: 12px; }
+.caixas i { width: 40px; height: 40px; border: 3px solid var(--tinta); display: grid; place-items: center; font: 700 44px/1 Caveat; color: var(--azul); font-style: normal; }
+.botao-insc { display: block; margin-top: 40px; padding: 28px; text-align: center; background: var(--verde); color: #fff; font: 800 52px Jakarta; letter-spacing: -.02em; box-shadow: 0 10px 0 #0b3a35; }
+section.story .pergunta { font-size: 58px; }
+section.story .opcoes span { font-size: 52px; }
+section.story .opcoes i { width: 64px; height: 64px; font-size: 30px; }
+section.story .grande { font: 500 52px/1.42 Serif4; margin-top: 30px; }
+.botao-insc small { display: block; margin-top: 6px; font: 600 28px Inter; letter-spacing: 0; opacity: .9; }
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/>
+<circle cx="17" cy="20" r="4.5" fill="#9cc3bd"/><rect x="26" y="16.5" width="24" height="7" rx="3.5" fill="#9cc3bd"/>
+<circle cx="17" cy="32" r="4.5" fill="#f4cf7c"/><rect x="26" y="28.5" width="24" height="7" rx="3.5" fill="#f4cf7c"/>
+<circle cx="17" cy="44" r="4.5" fill="#9cc3bd"/><rect x="26" y="40.5" width="19" height="7" rx="3.5" fill="#9cc3bd"/></symbol>
+</defs></svg>
+
+<!-- p1 capa -->
+<section id="p1-capa">
+  <div class="folha folha--torta" style="margin-top:40px">
+    <div class="cab"><p>Banca examinadora<small>Prova oral de ortopedia</small></p><span class="marca"><svg><use href="#sim"/></svg><b>Orto</b>Questões</span></div>
+    <div class="campos"><span>Candidato:<b>você</b></span><span>Pergunta:<b>1 de 1 · TARO 2022</b></span><span>Assunto:<b>quadril</b></span></div>
+    <h1>A banca vai perguntar o que <em>quase todo mundo troca.</em></h1>
+    <p class="caneta caneta--azul" style="margin-top:30px">Arraste e responda antes do examinador.</p>
+    <span class="carimbo" style="right:50px;top:150px">Convocado<small>prova oral</small></span>
+  </div>
+  <div class="rodape"><span>Arraste para a prova</span><span>1/6</span></div>
+</section>
+
+<!-- p2 pergunta -->
+<section id="p2-pergunta">
+  <div class="folha">
+    <div class="cab"><p>Pergunta do examinador<small>TARO 2022 · questão real</small></p><span class="marca"><svg><use href="#sim"/></svg><b>Orto</b>Questões</span></div>
+    <p class="pergunta">No ressalto interno do quadril, o músculo que geralmente está envolvido na origem do impacto é o</p>
+    <div class="opcoes"><span><i>A</i>piriforme.</span><span><i>B</i>iliopsoas.</span><span><i>C</i>trato iliotibial.</span><span><i>D</i>adutor magno.</span></div>
+    <p class="caneta caneta--azul" style="margin-top:34px">Comente a sua letra antes de arrastar.</p>
+  </div>
+  <div class="rodape"><span>A banca anota tudo</span><span>2/6</span></div>
+</section>
+
+<!-- p3 resposta do candidato -->
+<section id="p3-candidato">
+  <div class="folha folha--torta">
+    <div class="cab"><p>Resposta do candidato<small>a mais marcada na sala</small></p></div>
+    <div class="resposta-candidato"><span class="letra">C)<small>trato iliotibial</small></span><span class="risco"></span></div>
+    <div class="nota-margem">
+      <p class="caneta">Cuidado: esse é o ressalto EXTERNO.</p>
+      <p style="margin-top:14px;font:500 34px/1.4 Serif4">O trato iliotibial escorrega sobre o <strong>trocânter maior</strong>, do lado de fora do quadril. A pergunta era o <strong>interno</strong>.</p>
+    </div>
+    <span class="carimbo" style="right:50px;top:260px;transform:rotate(9deg)">Reprovado<small>pela pegadinha</small></span>
+  </div>
+  <div class="rodape"><span>Arraste para a correção</span><span>3/6</span></div>
+</section>
+
+<!-- p4 correção -->
+<section id="p4-correcao">
+  <div class="folha">
+    <div class="cab"><p>Correção da banca<small>Resposta B · iliopsoas</small></p></div>
+    <h2 style="margin-top:30px">Ressalto interno é o <span style="color:var(--verde)">iliopsoas</span></h2>
+    <p style="margin-top:18px;font:500 34px/1.42 Serif4">O tendão do iliopsoas escorrega sobre a <strong>eminência iliopectínea</strong> ou a cabeça do fêmur. O estalo é ouvido e sentido na <strong>virilha</strong>.</p>
+    <div class="tabela">
+      <div class="t certo">Interno</div><div class="t">Externo</div>
+      <div><strong>Iliopsoas</strong></div><div><strong>Trato iliotibial</strong> ou glúteo máximo</div>
+      <div>Sobre a eminência iliopectínea</div><div>Sobre o trocânter maior</div>
+      <div>Estalo na virilha, ouvido</div><div>Estalo lateral, visível e palpável</div>
+    </div>
+    <p class="caneta" style="margin-top:24px">Piriforme? Outra história: compressão do isquiático.</p>
+  </div>
+  <div class="rodape"><span>Arraste para a nota</span><span>4/6</span></div>
+</section>
+
+<!-- p5 nota e ranking -->
+<section id="p5-ranking">
+  <div class="folha folha--torta">
+    <div class="cab"><p>Parecer da banca<small>No Orto Questões, cada resposta vale nota</small></p></div>
+    <h2 style="margin-top:26px">Sua nota entra no <span style="color:var(--vermelho)">ranking da residência.</span></h2>
+    <div class="foto"><span class="clipe"></span><img src="podio.png" alt=""><small>Tela ilustrativa</small></div>
+    <p style="margin-top:28px;font:500 32px/1.4 Serif4">Provas oficiais comentadas e os <strong>OrtoQuestões Simulados</strong>, feitos por <strong>engenharia reversa</strong> da prova.</p>
+  </div>
+  <div class="rodape"><span>Arraste para a inscrição</span><span>5/6</span></div>
+</section>
+
+<!-- p6 inscrição -->
+<section id="p6-inscricao" class="inscricao">
+  <div class="folha">
+    <div class="cab"><p>Ficha de inscrição<small>Orto Questões · treino diário</small></p><span class="marca"><svg><use href="#sim"/></svg><b>Orto</b>Questões</span></div>
+    <div class="linha-campo"><small>Nome</small><span>você</span></div>
+    <div class="linha-campo"><small>Prova</small><span>TEOT · TARO · R4</span></div>
+    <div class="caixas"><span><i>x</i>Questões grátis todo dia</span><span><i>x</i>Ranking</span><span><i>x</i>Revisão dos erros</span></div>
+    <span class="botao-insc">Crie sua conta grátis<small>ortoquestoes.com.br</small></span>
+    <span class="carimbo" style="right:50px;top:210px">Grátis<small>sem cartão</small></span>
+  </div>
+  <div class="rodape"><span>Inscrição aberta</span><span>6/6</span></div>
+</section>
+
+<!-- s1 convocação -->
+<section id="s1-convocacao" class="story">
+  <div class="folha folha--torta">
+    <div class="cab"><p>Banca examinadora<small>Prova oral · hoje, 19h</small></p><span class="marca"><svg><use href="#sim"/></svg><b>Orto</b>Questões</span></div>
+    <h1 style="font-size:96px">Você foi <em>convocado.</em></h1>
+    <p class="pergunta">No ressalto interno do quadril, qual músculo está na origem do impacto?</p>
+    <div class="opcoes"><span><i>A</i>piriforme.</span><span><i>B</i>iliopsoas.</span><span><i>C</i>trato iliotibial.</span><span><i>D</i>adutor magno.</span></div>
+    <p class="caneta caneta--azul" style="margin-top:30px">Resposta no próximo story.</p>
+    <span class="carimbo" style="right:360px;top:-40px">TARO<small>2022</small></span>
+  </div>
+</section>
+
+<!-- s2 correção -->
+<section id="s2-correcao" class="story">
+  <div class="folha">
+    <div class="cab"><p>Correção da banca<small>Resposta B</small></p></div>
+    <h1 style="font-size:150px">Iliopsoas.</h1>
+    <p class="grande">Ressalto <strong>interno</strong>: o iliopsoas salta sobre a eminência iliopectínea, estalo na virilha.</p>
+    <p class="grande">Ressalto <strong>externo</strong>: o trato iliotibial salta sobre o trocânter maior.</p>
+    <p class="caneta" style="margin-top:34px;font-size:60px">Quem marcou C caiu na pegadinha.</p>
+    <span class="carimbo" style="right:40px;top:-34px">Corrigido</span>
+  </div>
+</section>
+
+<!-- s3 inscrição -->
+<section id="s3-inscricao" class="story inscricao">
+  <div class="folha folha--torta">
+    <div class="cab"><p>Ficha de inscrição<small>Orto Questões</small></p><span class="marca"><svg><use href="#sim"/></svg><b>Orto</b>Questões</span></div>
+    <h1 style="font-size:100px">Treine com <em>questões grátis</em> todo dia.</h1>
+    <div class="foto" style="width:760px"><span class="clipe"></span><img src="podio.png" alt=""><small>Tela ilustrativa · ranking</small></div>
+    <span class="botao-insc" style="font-size:60px">Crie sua conta grátis<small>ortoquestoes.com.br</small></span>
+    <span class="carimbo" style="right:380px;top:-40px">Grátis<small>sem cartão</small></span>
+  </div>
+</section>
+</body></html>
