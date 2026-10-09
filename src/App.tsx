@@ -1,4 +1,5 @@
 import { lazy, Suspense, useEffect, type ReactNode } from 'react'
+import { EsperaPixel } from './componentes/EsperaPixel'
 import { vigiarFilaZerada } from './conta/feitos'
 import { usarRota } from './util/rotas'
 import { Cabecalho } from './componentes/Cabecalho'
@@ -205,7 +206,7 @@ export function App() {
       <main className="principal" id="conteudo-principal" tabIndex={-1}>
         <div className={'conteudo' + (estreita ? ' conteudo--estreito' : '')}>
           <ErroDePagina caminho={rota.caminho}>
-          <Suspense fallback={<p className="estado" role="status">Carregando…</p>}>
+          <Suspense fallback={<EsperaPixel />}>
             {pagina}
           </Suspense>
           </ErroDePagina>

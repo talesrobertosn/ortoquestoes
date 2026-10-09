@@ -1,0 +1,26 @@
+/* Espera em pixel art: o guerreiro (tira de 2 quadros, 136x148 cada) balança o fêmur. */
+.espera-pixel { display: grid; justify-items: center; gap: .2rem; padding: clamp(2.5rem, 12vh, 6rem) 1rem 2rem; text-align: center; animation: espera-aparece .15s ease both; }
+.espera-pixel__guerreiro {
+  display: block; width: 136px; height: 148px; image-rendering: pixelated;
+  background-repeat: no-repeat; background-size: 272px 148px; background-position: 0 0;
+  animation: espera-golpe .7s steps(1, end) infinite;
+}
+.espera-pixel__chao { display: block; width: 120px; height: 10px; margin-top: -6px; border-radius: 50%; background: color-mix(in srgb, var(--texto) 18%, transparent); }
+.espera-pixel__frase { margin: .9rem 0 0; font-family: var(--fonte-pixel); font-weight: 700; font-size: 1.35rem; color: var(--texto); letter-spacing: .02em; }
+.espera-pixel__frase::after { content: ''; display: inline-block; width: .5em; height: .1em; margin-left: .15em; background: currentColor; animation: espera-cursor 1s steps(1) infinite; }
+.espera-pixel__acao { margin-top: 1rem; animation: espera-aparece .3s ease both; }
+@keyframes espera-golpe { 0% { background-position: 0 0; } 50% { background-position: -136px 0; } }
+@keyframes espera-cursor { 50% { opacity: 0; } }
+@keyframes espera-aparece { from { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .espera-pixel__guerreiro, .espera-pixel__frase::after { animation: none; } }
+
+/* Fim de sessão (cartão de missão do ModalConfirmarEmail) e botão flutuante de concluir. */
+.fim-sessao__guerreiro { margin: 0 auto; transform: scale(.8); transform-origin: center bottom; }
+.concluir-flutuante {
+  position: fixed; left: 50%; bottom: calc(env(safe-area-inset-bottom, 0px) + 6.2rem); z-index: 45; transform: translateX(-50%);
+  padding: .85rem 1.4rem; border: 0; cursor: pointer; white-space: nowrap;
+  background: #f4cf7c; color: #1b1208; font: inherit; font-weight: 800; font-size: 1.05rem;
+  box-shadow: 0 0 0 3px #1b1208, 5px 5px 0 3px rgba(0, 0, 0, .35); animation: espera-aparece .25s ease both;
+}
+.concluir-flutuante:hover { background: #ffdf95; }
+@media (min-width: 56rem) { .concluir-flutuante { bottom: 1.5rem; } }

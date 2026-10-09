@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { BotaoConcluirFlutuante, ModalFimSessao } from '../componentes/ModalFimSessao'
 import { usarDeslizar } from '../util/usarDeslizar'
 import { preCarregarComentario } from '../dados/comentarios'
 import { usarIndice } from '../dados/usarIndice'
@@ -71,6 +72,19 @@ export function Sessao() {
   const respondidas = sessao ? Object.keys(sessao.respostas).length : 0
   const painelAberto = mapaAberto || atalhosAbertos || limiteAberto
   const simulado = !!sessao?.simulado
+  // Fim de sessão: ao responder a última, o pop-up abre no meio da tela (uma vez
+  // por sessão); quem prefere ler o comentário antes ganha o botão flutuante.
+  const tudoRespondido = total > 0 && respondidas === total
+  const [fim, definirFim] = useState<'fechado' | 'aberto' | 'lendo'>('fechado')
+  const fimMostrado = useRef<string | null>(null)
+  const idSessao = sessao ? sessao.ids.join(',') + ':' + (sessao.criadaEm ?? '') : ''
+  useEffect(() => {
+    if (!tudoRespondido || fimMostrado.current === idSessao) return
+    fimMostrado.current = idSessao
+    const t = window.setTimeout(() => definirFim('aberto'), simulado ? 300 : 900)
+    return () => window.clearTimeout(t)
+  }, [tudoRespondido, idSessao, simulado])
+  const acertosSessao = sessao ? Object.values(sessao.respostas).filter((r) => r.correta === true).length : 0
   const combo = useMemo(() => {
     if (!sessao || simulado) return 0
     let n = 0
@@ -441,6 +455,8 @@ export function Sessao() {
         <Atalhos />
       </Painel>
 
+      {fim === 'aberto' && <ModalFimSessao total={total} acertos={simulado ? null : acertosSessao} simulado={simulado} aoConcluir={concluir} aoLer={() => definirFim('lendo')} />}
+      {fim === 'lendo' && tudoRespondido && <BotaoConcluirFlutuante aoConcluir={concluir} simulado={simulado} />}
       <PortaoConta aberto={portaoContaAberto} aoFechar={() => definirPortaoContaAberto(false)} />
       <PainelLimite estado={estadoLimite} aberto={limiteAberto} aoFechar={() => { definirLimiteAberto(false); if (resumoAoFechar) { definirResumoAoFechar(false); concluir() } }} />
     </div>

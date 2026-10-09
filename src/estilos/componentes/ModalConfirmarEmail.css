@@ -34,7 +34,7 @@
 .cf-email__carta::before { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom right, transparent 47%, #c9b48a 47% 53%, transparent 53%), linear-gradient(to bottom left, transparent 47%, #c9b48a 47% 53%, transparent 53%); background-size: 100% 60%; background-repeat: no-repeat; }
 .cf-email__carta::after { content: ''; position: absolute; left: 14px; top: 10px; width: 8px; height: 8px; background: #c8412f; }
 .cf-email__selo {
-  display: inline-block; margin: 0.8rem 0 0; padding: 0.3rem 0.7rem; font-family: var(--fonte-pixel); font-weight: 700; font-size: 0.85rem;
+  display: inline-block; margin: 0.8rem 0 0; padding: 0.3rem 0.7rem; font-weight: 800; font-size: 0.8rem;
   letter-spacing: 0.04em; text-transform: uppercase; color: #1b1208; background: #f4cf7c; box-shadow: 3px 3px 0 #1b1208;
 }
 .cf-email h2 { margin: 0.7rem 0 0.4rem; font-family: var(--fonte-pixel); font-weight: 700; font-size: clamp(1.5rem, 6vw, 1.85rem); line-height: 1.1; color: #fff; text-shadow: 3px 3px 0 #1b1208; }

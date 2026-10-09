@@ -1,4 +1,5 @@
 import { createContext, useContext, useEffect, useRef, useState, type ReactNode } from 'react'
+import { EsperaPixel } from '../componentes/EsperaPixel'
 import type { Session } from '@supabase/auth-js'
 import { definirUsuarioLocal, gravar, limparTudo } from '../estado/armazenamento'
 import { supabase, contasDisponiveis } from './supabase'
@@ -143,7 +144,7 @@ export function ProvedorConta({ children }: { children: ReactNode }) {
     },
     sincronizar: () => { void sync.current?.sincronizar() }, resolver: (doc, manterLocal) => sync.current?.resolver(doc, manterLocal),
     reenviarRejeitados: () => sync.current?.reenviarRejeitados(), descartarRejeitados: () => sync.current?.descartarRejeitados() }}>
-    {carregando ? <div className="conteudo empilha" role="status"><p>Preparando sua conta…</p><button className="botao" onClick={() => { definirUsuarioLocal(null); definirCarregando(false); navegar('/') }}>Continuar sem conta</button></div> : <div key={sessao?.user.id ?? 'visitante'}>{children}</div>}
+    {carregando ? <EsperaPixel rotulo="Preparando sua conta" acao={<button className="botao" onClick={() => { definirUsuarioLocal(null); definirCarregando(false); navegar('/') }}>Continuar sem conta</button>} /> : <div key={sessao?.user.id ?? 'visitante'}>{children}</div>}
   </Contexto.Provider>
 }
 export function usarConta() {
