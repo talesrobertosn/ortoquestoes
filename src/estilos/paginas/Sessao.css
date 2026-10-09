@@ -206,3 +206,6 @@
 @keyframes dica-empurra-dir { 50% { transform: translateX(3px); } }
 .dica-teclado kbd { color: #1b1208; background: #f4cf7c; border-radius: 0; box-shadow: 2px 2px 0 #1b1208; }
 @media (prefers-reduced-motion: reduce) { .dica-deslizar svg { animation: none; } }
+/* A dica sobe para o meio da tela (no rodapé ela passava despercebida) e fica um pouco maior. */
+.dica-deslizar { top: 42%; bottom: auto; font-size: 1.05rem; padding: 0.75rem 1.1rem; }
+@media (min-width: 40.01rem) { .dica-deslizar { top: 42%; bottom: auto; } }

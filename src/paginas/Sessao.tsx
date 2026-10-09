@@ -178,28 +178,34 @@ export function Sessao() {
   const temporizadoresDica = useRef<number[]>([])
   useEffect(() => () => temporizadoresDica.current.forEach((t) => window.clearTimeout(t)), [])
   const temVarias = !!sessao && sessao.ids.length > 1
+  // A chave da sessão em que a dica já foi armada (troca de sessão sem remontar a página também conta).
+  const dicaArmada = useRef('')
   useEffect(() => {
-    if (temporizadoresDica.current.length || !questoes || !temVarias || painelAberto) return
+    if (!questoes || !temVarias || !chaveDica || dicaArmada.current === chaveDica) return
     if (!window.matchMedia('(pointer: coarse)').matches || ler('dica:sessao', '') === chaveDica) return
+    dicaArmada.current = chaveDica
     const primeiraVez = !ler('dica:deslizar', false)
+    temporizadoresDica.current.forEach((t) => window.clearTimeout(t))
     temporizadoresDica.current = [
       window.setTimeout(() => { gravar('dica:sessao', chaveDica); gravar('dica:deslizar', true); definirDicaDeslizar(true); if (primeiraVez) espiarAtual.current() }, 900),
       window.setTimeout(() => definirDicaDeslizar(false), 900 + 3200),
     ]
-  }, [questoes, temVarias, painelAberto, chaveDica])
+  }, [questoes, temVarias, chaveDica])
   useEffect(() => { if (posicao > 0) definirDicaDeslizar(false) }, [posicao])
   // No computador, o equivalente: a frase lembra que as setas do teclado
   // trocam de questão, e some sozinha (ou assim que a pessoa usa as setas).
   const temporizadorTeclado = useRef<number[]>([])
   useEffect(() => () => temporizadorTeclado.current.forEach((t) => window.clearTimeout(t)), [])
   useEffect(() => {
-    if (temporizadorTeclado.current.length || !questoes || !temVarias || painelAberto) return
+    if (!questoes || !temVarias || !chaveDica || dicaArmada.current === chaveDica) return
     if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches || ler('dica:sessao', '') === chaveDica) return
+    dicaArmada.current = chaveDica
+    temporizadorTeclado.current.forEach((t) => window.clearTimeout(t))
     temporizadorTeclado.current = [
       window.setTimeout(() => { gravar('dica:sessao', chaveDica); definirDicaTeclado(true) }, 900),
       window.setTimeout(() => definirDicaTeclado(false), 900 + 3200),
     ]
-  }, [questoes, temVarias, painelAberto, chaveDica])
+  }, [questoes, temVarias, chaveDica])
 
   // Tempo esgotado encerra o simulado sozinho e leva ao resumo.
   useEffect(() => {
@@ -262,8 +268,8 @@ export function Sessao() {
   }
   return (
     <div className="sessao-gestos" ref={areaGestos}>
-      {dicaDeslizar && <p className="dica-deslizar nao-imprime" role="status"><Icone nome="esquerda" tamanho={15} /> Deslize para trocar de questão <Icone nome="direita" tamanho={15} /></p>}
-      {dicaTeclado && !dicaDeslizar && <p className="dica-deslizar dica-teclado nao-imprime" role="status">Use as setas <kbd>←</kbd> <kbd>→</kbd> do teclado para trocar de questão</p>}
+      {dicaDeslizar && !painelAberto && <p className="dica-deslizar nao-imprime" role="status"><Icone nome="esquerda" tamanho={15} /> Deslize para trocar de questão <Icone nome="direita" tamanho={15} /></p>}
+      {dicaTeclado && !dicaDeslizar && !painelAberto && <p className="dica-deslizar dica-teclado nao-imprime" role="status">Use as setas <kbd>←</kbd> <kbd>→</kbd> do teclado para trocar de questão</p>}
       <button
         type="button"
         className="seta-lateral seta-lateral--esquerda nao-imprime"
