@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>GPS do nervo: interósseo posterior</title>
+<!-- Estilo novo "gps": o trajeto do nervo vira navegação de um aplicativo de mapa genérico (sem marca
+     real). O mapa é abstrato (ruas), sem desenho de anatomia; a anatomia vem só da imagem da questão.
+     Questão ombro-cotovelo-0120 (TEOT 2023), gabarito C. Par dos stories "planta" do mesmo dia.
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-10-gps-interosseo-posterior/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+:root { --mapa: #18222c; --rua: #2b3947; --rua2: #3a4b5c; --rota: #3fb6ff; --verde: #1f9d6b; --verde2: #157a52; --texto: #f2f6f9; --cinza: #9fb0bf; --ouro: #f4cf7c; --vermelho: #e5574a; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1350px; color: var(--texto); background: var(--mapa); }
+/* Mapa abstrato: quarteirões e avenidas. */
+.mapa { position: absolute; inset: 0;
+  background:
+    linear-gradient(28deg, transparent 47%, var(--rua2) 47% 49.5%, transparent 49.5%) 0 0 / 100% 100%,
+    linear-gradient(-62deg, transparent 63%, var(--rua2) 63% 64.6%, transparent 64.6%) 0 0 / 100% 100%,
+    linear-gradient(var(--rua) 10px, transparent 10px) 0 40px / 100% 170px,
+    linear-gradient(90deg, var(--rua) 10px, transparent 10px) 60px 0 / 210px 100%,
+    radial-gradient(circle at 80% 85%, #1d3b2e 0 120px, transparent 121px),
+    radial-gradient(circle at 15% 20%, #1d3b2e 0 90px, transparent 91px),
+    var(--mapa); }
+.mapa--suave { opacity: .45; }
+.instrucao, .capa h1, .camera, .pergunta, .comente, .passos, .chegou, .erradas, .titulo-sec, .alerta, .prova, .marca { position: relative; z-index: 1; }
+.folha, .pag { z-index: 2; }
+.rota { position: absolute; inset: 0; z-index: 0; }
+/* Faixa verde de instrução, como a de um aplicativo de navegação. */
+.instrucao { display: grid; grid-template-columns: 110px 1fr; gap: 26px; align-items: center; margin: 40px 40px 0; padding: 28px 34px; border-radius: 28px; background: var(--verde); box-shadow: 0 18px 40px rgba(0,0,0,.4); }
+.instrucao svg { width: 100px; height: 100px; }
+.instrucao small { display: block; font: 700 28px Inter; opacity: .85; }
+.instrucao strong { display: block; font: 800 50px/1.08 Jakarta; letter-spacing: -.02em; }
+.folha { position: absolute; left: 0; right: 0; bottom: 0; padding: 36px 48px 44px; border-radius: 40px 40px 0 0; background: #f6f8fa; color: #16212b; box-shadow: 0 -18px 50px rgba(0,0,0,.45); }
+.folha::before { content: ''; display: block; width: 90px; height: 9px; margin: 0 auto 26px; border-radius: 9px; background: #c9d2da; }
+.folha .eta { display: flex; align-items: baseline; gap: 18px; font: 800 52px Jakarta; letter-spacing: -.02em; }
+.folha .eta span { color: var(--verde2); }
+.folha .eta small { font: 600 30px Inter; color: #5c6b78; }
+.folha p { margin-top: 10px; font: 500 32px/1.4 Inter; color: #34424e; }
+.folha p strong { color: #16212b; }
+.marca { display: flex; align-items: center; gap: 12px; font: 30px Jakarta; letter-spacing: -.02em; }
+.marca svg { width: 46px; height: 46px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; }
+.pag { position: absolute; right: 48px; top: 48px; z-index: 2; padding: 8px 18px; border-radius: 99px; background: rgba(0,0,0,.45); font: 700 24px Inter; color: var(--cinza); }
+
+/* p1 capa */
+.capa h1 { max-width: 900px; margin: 60px 56px 0; font: 800 100px/.98 Jakarta; letter-spacing: -.045em; text-shadow: 0 6px 30px rgba(0,0,0,.6); }
+.capa h1 em { font-style: normal; color: var(--rota); }
+.pino { position: absolute; z-index: 1; display: grid; place-items: center; width: 70px; height: 70px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); background: var(--vermelho); box-shadow: 0 10px 20px rgba(0,0,0,.4); }
+.pino::after { content: ''; width: 24px; height: 24px; border-radius: 50%; background: #fff; }
+.carro { position: absolute; z-index: 1; width: 64px; height: 64px; border-radius: 50%; background: var(--rota); box-shadow: 0 0 0 12px rgba(63,182,255,.25), 0 0 0 4px #fff inset; }
+
+/* p2 questão */
+.camera { margin: 34px 48px 0; border-radius: 26px; overflow: hidden; background: #fff; box-shadow: 0 18px 40px rgba(0,0,0,.45); }
+.camera header { display: flex; align-items: center; gap: 14px; padding: 16px 24px; background: #0e151c; font: 700 24px Inter; letter-spacing: .08em; color: var(--cinza); text-transform: uppercase; }
+.camera header i { width: 16px; height: 16px; border-radius: 50%; background: var(--vermelho); box-shadow: 0 0 0 5px rgba(229,87,74,.3); }
+.camera img { display: block; width: 100%; }
+.pergunta { margin: 30px 48px 0; padding: 30px 34px; border-radius: 26px; background: rgba(12,18,24,.88); }
+.pergunta small { font: 700 24px Inter; letter-spacing: .14em; color: var(--rota); text-transform: uppercase; }
+.pergunta p { margin-top: 10px; font: 700 46px/1.2 Jakarta; letter-spacing: -.02em; }
+.pergunta .alts { margin-top: 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.pergunta .alts span { display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-radius: 16px; background: #22303d; font: 600 30px Inter; }
+.pergunta .alts b { display: grid; place-items: center; flex: 0 0 auto; width: 48px; height: 48px; border-radius: 50%; background: var(--rota); color: #0b1620; font: 800 26px Jakarta; }
+.comente { margin: 26px 48px 0; text-align: center; font: 700 34px Jakarta; color: var(--ouro); }
+
+/* p3 rota */
+.passos { margin: 34px 48px 0; border-radius: 30px; overflow: hidden; background: #f6f8fa; color: #16212b; box-shadow: 0 18px 40px rgba(0,0,0,.45); }
+.passos header { padding: 26px 34px; background: var(--verde); color: #fff; font: 800 38px Jakarta; letter-spacing: -.02em; }
+.passos header small { display: block; font: 600 26px Inter; opacity: .9; letter-spacing: 0; }
+.passos ol { list-style: none; }
+.passos li { display: grid; grid-template-columns: 80px 1fr; gap: 22px; align-items: center; padding: 22px 34px; border-bottom: 2px solid #e1e7ec; }
+.passos li:last-child { border-bottom: 0; }
+.passos li svg { width: 64px; height: 64px; }
+.passos li p { font: 500 31px/1.34 Inter; color: #34424e; }
+.passos li p strong { display: block; font: 800 35px/1.15 Jakarta; color: #16212b; letter-spacing: -.01em; }
+.passos li.fim { background: #e7f6ee; }
+
+/* p4 chegou */
+.chegou { margin: 60px 48px 0; text-align: center; }
+.chegou .bandeira { display: inline-grid; place-items: center; width: 150px; height: 150px; border-radius: 50%; background: var(--verde); box-shadow: 0 0 0 18px rgba(31,157,107,.25); }
+.chegou .bandeira svg { width: 80px; height: 80px; }
+.chegou h2 { margin-top: 40px; font: 800 84px/1 Jakarta; letter-spacing: -.04em; }
+.chegou h2 em { font-style: normal; color: var(--rota); }
+.chegou .resp { margin-top: 18px; font: 700 34px Inter; color: var(--ouro); letter-spacing: .04em; }
+
+/* p5 rotas erradas */
+.erradas { margin: 40px 48px 0; display: grid; gap: 24px; }
+.errada { display: grid; grid-template-columns: 90px 1fr; gap: 24px; align-items: center; padding: 26px 30px; border-radius: 26px; background: rgba(12,18,24,.9); border: 2px solid #3a4b5c; }
+.errada i { display: grid; place-items: center; width: 80px; height: 80px; border-radius: 50%; background: rgba(229,87,74,.18); color: var(--vermelho); font: 800 44px Jakarta; font-style: normal; }
+.errada p { font: 500 33px/1.4 Inter; color: #cfdae3; }
+.errada p strong { display: block; font: 800 38px Jakarta; color: var(--texto); letter-spacing: -.01em; }
+.errada p strong small { font: 700 26px Inter; color: var(--cinza); margin-left: 8px; }
+.titulo-sec { margin: 110px 48px 0; font: 800 64px/1.02 Jakarta; letter-spacing: -.035em; }
+.titulo-sec em { font-style: normal; color: var(--rota); }
+
+/* p6 alerta e prova */
+.alerta { margin: 110px 48px 0; padding: 34px 38px; border-radius: 30px; background: #fff4d6; color: #3d2e05; box-shadow: 0 18px 40px rgba(0,0,0,.4); }
+.alerta header { display: flex; align-items: center; gap: 18px; font: 800 40px Jakarta; letter-spacing: -.02em; }
+.alerta header svg { width: 60px; height: 60px; flex: 0 0 auto; }
+.alerta ul { margin-top: 18px; padding-left: 0; list-style: none; display: grid; gap: 12px; }
+.alerta li { position: relative; padding-left: 34px; font: 500 35px/1.4 Inter; }
+.alerta li::before { content: ''; position: absolute; left: 0; top: .5em; width: 14px; height: 14px; border-radius: 50%; background: #c9952f; }
+.prova { margin: 26px 48px 0; padding: 32px 38px; border-radius: 30px; background: var(--verde); }
+.prova small { font: 800 24px Inter; letter-spacing: .16em; text-transform: uppercase; opacity: .9; }
+.prova p { margin-top: 10px; font: 700 44px/1.25 Jakarta; letter-spacing: -.01em; }
+.cta { margin: 30px 48px 0; display: flex; justify-content: space-between; align-items: center; font: 700 30px Inter; color: var(--cinza); }
+.cta b { color: var(--rota); font-family: Jakarta; font-size: 34px; }
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/>
+<circle cx="17" cy="20" r="4.5" fill="#9cc3bd"/><rect x="26" y="16.5" width="24" height="7" rx="3.5" fill="#9cc3bd"/>
+<circle cx="17" cy="32" r="4.5" fill="#f4cf7c"/><rect x="26" y="28.5" width="24" height="7" rx="3.5" fill="#f4cf7c"/>
+<circle cx="17" cy="44" r="4.5" fill="#9cc3bd"/><rect x="26" y="40.5" width="19" height="7" rx="3.5" fill="#9cc3bd"/></symbol>
+<symbol id="frente" viewBox="0 0 64 64"><path d="M32 8 L50 30 H38 V56 H26 V30 H14 Z" fill="currentColor"/></symbol>
+<symbol id="direita" viewBox="0 0 64 64"><path d="M18 58 V34 Q18 24 28 24 H40 V12 L58 30 L40 48 V36 H30 V58 Z" fill="currentColor"/></symbol>
+<symbol id="tunel" viewBox="0 0 64 64"><path d="M8 54 V32 A24 24 0 0 1 56 32 V54 H44 V34 A12 12 0 0 0 20 34 V54 Z" fill="currentColor"/></symbol>
+<symbol id="curva" viewBox="0 0 64 64"><path d="M14 58 V40 Q14 18 36 18 H42 V8 L58 24 L42 40 V30 H36 Q26 30 26 40 V58 Z" fill="currentColor"/></symbol>
+<symbol id="bandeira" viewBox="0 0 64 64"><path d="M14 6 H20 V60 H14 Z M20 8 H52 L44 20 L52 32 H20 Z" fill="currentColor"/></symbol>
+<symbol id="alerta" viewBox="0 0 64 64"><path d="M32 6 L60 56 H4 Z" fill="#c9952f"/><path d="M29 24 H35 V42 H29 Z M29 46 H35 V52 H29 Z" fill="#fff"/></symbol>
+</defs></svg>
+
+<!-- p1 capa -->
+<section id="p1-capa" class="capa">
+  <div class="mapa"></div>
+  <svg class="rota" viewBox="0 0 1080 1350"><path d="M120 1240 C 240 1120, 220 1000, 400 950 S 640 880, 700 800 S 860 720, 900 660" fill="none" stroke="#3fb6ff" stroke-width="22" stroke-linecap="round" opacity=".95"/><path d="M120 1240 C 240 1120, 220 1000, 400 950 S 640 880, 700 800 S 860 720, 900 660" fill="none" stroke="#bfe6ff" stroke-width="5" stroke-dasharray="2 28" stroke-linecap="round"/></svg>
+  <span class="pag">1/6</span>
+  <div class="instrucao"><svg style="color:#fff"><use href="#frente"/></svg><div><small>Iniciando rota</small><strong>Siga pelo nervo radial</strong></div></div>
+  <h1>A banca quer saber <em>onde o nervo está.</em> Ative o GPS.</h1>
+  <span class="carro" style="left:92px;top:1180px"></span>
+  <span class="pino" style="left:866px;top:588px"></span>
+  <div class="folha">
+    <div class="eta"><span>TEOT 2023</span><small>· acesso de Thompson</small></div>
+    <p>Destino: <strong>a estrutura assinalada na imagem da prova.</strong> Arraste para começar a rota.</p>
+  </div>
+</section>
+
+<!-- p2 questão -->
+<section id="p2-questao">
+  <div class="mapa mapa--suave"></div>
+  <span class="pag">2/6</span>
+  <div class="marca" style="margin:48px 48px 0"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div>
+  <div class="camera"><header><i></i>Câmera ao vivo do trecho</header><img src="../../../../public/imagens/ombro-cotovelo/ombro-cotovelo-0120-1.jpeg" alt=""></div>
+  <div class="pergunta">
+    <small>TEOT 2023 · questão real</small>
+    <p>No acesso de THOMPSON, a estrutura assinalada é o nervo</p>
+    <div class="alts"><span><b>A</b>mediano.</span><span><b>B</b>sensitivo radial.</span><span><b>C</b>interósseo posterior.</span><span><b>D</b>cutâneo lateral do antebraço.</span></div>
+  </div>
+  <p class="comente">Comente a sua letra antes de seguir a rota</p>
+</section>
+
+<!-- p3 rota -->
+<section id="p3-rota">
+  <div class="mapa mapa--suave"></div>
+  <span class="pag">3/6</span>
+  <div class="instrucao"><svg style="color:#fff"><use href="#direita"/></svg><div><small>Em 200 m</small><strong>Pegue a saída do ramo profundo</strong></div></div>
+  <div class="passos">
+    <header>Rota completa<small>Do cotovelo ao dorso do antebraço</small></header>
+    <ol>
+      <li><svg style="color:#1f9d6b"><use href="#frente"/></svg><p><strong>Siga pelo nervo radial</strong>até perto da cabeça do rádio.</p></li>
+      <li><svg style="color:#1f9d6b"><use href="#direita"/></svg><p><strong>Na bifurcação, pegue o ramo profundo</strong>O motor. O superficial, sensitivo, segue sob o braquiorradial.</p></li>
+      <li><svg style="color:#1f9d6b"><use href="#tunel"/></svg><p><strong>Entre no supinador</strong>pela arcada de Frohse.</p></li>
+      <li><svg style="color:#1f9d6b"><use href="#curva"/></svg><p><strong>Contorne o colo do rádio</strong>por dentro do supinador.</p></li>
+      <li class="fim"><svg style="color:#1f9d6b"><use href="#bandeira"/></svg><p><strong>Saia no dorso do antebraço</strong>como interósseo posterior.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- p4 chegou -->
+<section id="p4-chegou">
+  <div class="mapa"></div>
+  <svg class="rota" viewBox="0 0 1080 1350"><path d="M60 1300 C 260 1180, 300 1020, 540 940" fill="none" stroke="#3fb6ff" stroke-width="22" stroke-linecap="round" opacity=".9"/></svg>
+  <span class="pag">4/6</span>
+  <div class="chegou">
+    <span class="bandeira"><svg style="color:#fff"><use href="#bandeira"/></svg></span>
+    <h2>Você chegou: <em>interósseo posterior</em></h2>
+    <p class="resp">RESPOSTA C</p>
+  </div>
+  <div class="folha">
+    <div class="eta"><span>Acesso de Thompson</span><small>· via dorsal</small></div>
+    <p>A entrada fica entre o <strong>extensor radial curto do carpo</strong> e o <strong>extensor comum dos dedos</strong>. No terço proximal, o rádio está coberto pelo <strong>supinador</strong>, e dentro dele passa o interósseo posterior: <strong>identifique e proteja</strong> antes de desinserir o músculo do rádio.</p>
+  </div>
+</section>
+
+<!-- p5 rotas erradas -->
+<section id="p5-erradas">
+  <div class="mapa mapa--suave"></div>
+  <span class="pag">5/6</span>
+  <h2 class="titulo-sec">As outras rotas <em>levam para longe</em></h2>
+  <div class="erradas">
+    <div class="errada"><i>A</i><p><strong>Mediano<small>outra avenida</small></strong>Corre na face volar, entre o flexor superficial e o profundo. É das vias anteriores.</p></div>
+    <div class="errada"><i>B</i><p><strong>Sensitivo radial<small>a outra saída</small></strong>O ramo superficial desce sob o braquiorradial e aparece no terço distal. Não é a estrutura dentro do supinador.</p></div>
+    <div class="errada"><i>D</i><p><strong>Cutâneo lateral do antebraço<small>outro bairro</small></strong>Sai lateral ao tendão do bíceps. É lembrado na via anterior do cotovelo.</p></div>
+  </div>
+  <div class="folha">
+    <div class="eta"><span>Rota recalculada</span></div>
+    <p>O ramo superficial seguiu para o punho; o profundo entrou no supinador. <strong>Nos stories de hoje, siga o ramo superficial.</strong></p>
+  </div>
+</section>
+
+<!-- p6 alerta e prova -->
+<section id="p6-prova">
+  <div class="mapa mapa--suave"></div>
+  <span class="pag">6/6</span>
+  <div class="alerta">
+    <header><svg><use href="#alerta"/></svg>Acidente no trecho: se lesar</header>
+    <ul>
+      <li>Dedos e polegar não estendem.</li>
+      <li>O punho ainda estende, mas em desvio radial: o extensor radial longo é inervado antes.</li>
+      <li>Sem perda de sensibilidade: o ramo sensitivo é o superficial.</li>
+    </ul>
+  </div>
+  <div class="prova"><small>Para a prova</small><p>Acesso de Thompson: a estrutura a proteger dentro do supinador é o nervo interósseo posterior.</p></div>
+  <div class="folha">
+    <div class="eta"><span>Próxima rota</span><small>· treine grátis</small></div>
+    <p>Questões das provas oficiais comentadas, e agora anatomia nos <strong>OrtoQuestões Simulados</strong>, em <strong>ortoquestoes.com.br</strong></p>
+  </div>
+</section>
+</body></html>

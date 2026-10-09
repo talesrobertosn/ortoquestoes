@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Planta: engenharia reversa e ramo superficial do radial</title>
+<!-- Estilo novo "planta" (planta técnica azul, engenharia reversa). Stories 1080x1920, sem figurinha.
+     Questão mao-1279 (OrtoQuestões Simulados, anatomia do antebraço), gabarito D. Imagem da questão
+     (redesenhada pelo dono, autorizada para uso). Par do feed GPS do mesmo dia (interósseo posterior).
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-10-planta-ramo-superficial/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Caveat; src: url(../../fontes/caveat-latin-wght-normal.woff2) format('woff2'); font-weight: 400 700; }
+:root { --azul: #12406e; --azul2: #0b2c50; --linha: rgba(196, 226, 255, .16); --linha2: rgba(196, 226, 255, .07); --giz: #eaf4ff; --ciano: #8fd3ff; --ouro: #f4cf7c; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1920px; padding: 210px 84px 300px; color: var(--giz);
+  background:
+    linear-gradient(var(--linha) 2px, transparent 2px) 0 0 / 120px 120px,
+    linear-gradient(90deg, var(--linha) 2px, transparent 2px) 0 0 / 120px 120px,
+    linear-gradient(var(--linha2) 1px, transparent 1px) 0 0 / 24px 24px,
+    linear-gradient(90deg, var(--linha2) 1px, transparent 1px) 0 0 / 24px 24px,
+    radial-gradient(ellipse at 50% 30%, #1a5590, var(--azul) 55%, var(--azul2));
+}
+.marca { display: flex; align-items: center; gap: 14px; font: 34px Jakarta; letter-spacing: -.02em; }
+.marca svg { width: 54px; height: 54px; } .marca b { font-weight: 800; } .marca span { font-weight: 500; opacity: .9; }
+.eti { display: inline-block; margin-top: 56px; padding: 10px 20px; border: 3px solid var(--ciano); color: var(--ciano); font: 700 26px Inter; letter-spacing: .18em; text-transform: uppercase; }
+h1 { margin-top: 30px; font: 800 100px/.98 Jakarta; letter-spacing: -.045em; }
+h1 em { font-style: normal; color: var(--ouro); }
+.nota { font: 700 50px/1.05 Caveat; color: var(--ouro); }
+
+/* s1: os três passos */
+.passos { margin-top: 64px; display: grid; gap: 30px; }
+.passo { position: relative; display: grid; grid-template-columns: 120px 1fr; gap: 30px; align-items: start; padding: 34px 36px; border: 3px solid rgba(234,244,255,.75); background: rgba(11,44,80,.55); }
+.passo::before, .passo::after { content: ''; position: absolute; width: 22px; height: 22px; border: 3px solid var(--ciano); }
+.passo::before { left: -12px; top: -12px; border-right: 0; border-bottom: 0; }
+.passo::after { right: -12px; bottom: -12px; border-left: 0; border-top: 0; }
+.passo b { font: 800 84px/1 Jakarta; color: var(--ciano); letter-spacing: -.04em; }
+.passo p { font: 500 38px/1.35 Inter; } .passo p strong { display: block; margin-bottom: 6px; font: 800 44px Jakarta; color: #fff; }
+.s1 .nota { margin-top: 50px; }
+
+/* s2: a questão */
+.ficha { margin-top: 44px; display: grid; grid-template-columns: 400px 1fr; gap: 40px; align-items: start; }
+.prancha { position: relative; padding: 18px; background: #fff; box-shadow: 0 0 0 3px var(--giz), 14px 14px 0 rgba(0,0,0,.25); }
+.prancha img { display: block; width: 100%; }
+.cota { position: absolute; left: -46px; top: 18px; bottom: 18px; width: 20px; border: 3px solid var(--ciano); border-right: 0; }
+.cota span { position: absolute; left: -36px; top: 50%; transform: rotate(-90deg) translateX(-50%); transform-origin: 0 0; white-space: nowrap; font: 600 20px Inter; letter-spacing: .14em; color: var(--ciano); }
+.enun { font: 600 42px/1.28 Jakarta; letter-spacing: -.01em; }
+.enun small { display: block; margin-bottom: 18px; font: 700 24px Inter; letter-spacing: .16em; color: var(--ciano); text-transform: uppercase; }
+.alts { margin-top: 30px; display: grid; gap: 14px; }
+.alts span { display: flex; align-items: center; gap: 18px; padding: 16px 18px; border: 2px dashed rgba(234,244,255,.6); font: 600 31px Inter; }
+.alts b { display: grid; place-items: center; flex: 0 0 auto; width: 54px; height: 54px; border: 3px solid var(--ouro); color: var(--ouro); font: 800 28px Jakarta; }
+.s2 .nota { margin-top: 44px; text-align: center; }
+
+/* s3: a resposta */
+.resposta { margin-top: 50px; padding: 40px 44px; background: var(--giz); color: var(--azul2); box-shadow: 14px 14px 0 rgba(0,0,0,.25); }
+.resposta small { font: 800 24px Inter; letter-spacing: .18em; text-transform: uppercase; color: #2a6db0; }
+.resposta h2 { margin-top: 12px; font: 800 70px/1 Jakarta; letter-spacing: -.035em; }
+.resposta p { margin-top: 24px; font: 500 40px/1.45 Inter; }
+.resposta p strong { font-weight: 800; }
+.chamada { margin-top: 56px; display: grid; gap: 14px; }
+.chamada p { font: 800 64px/1.06 Jakarta; letter-spacing: -.03em; }
+.chamada p em { font-style: normal; color: var(--ouro); }
+.chamada small { font: 600 34px Inter; color: var(--ciano); }
+.s3 .nota { margin-top: 50px; font-size: 58px; }
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/>
+<circle cx="17" cy="20" r="4.5" fill="#9cc3bd"/><rect x="26" y="16.5" width="24" height="7" rx="3.5" fill="#9cc3bd"/>
+<circle cx="17" cy="32" r="4.5" fill="#f4cf7c"/><rect x="26" y="28.5" width="24" height="7" rx="3.5" fill="#f4cf7c"/>
+<circle cx="17" cy="44" r="4.5" fill="#9cc3bd"/><rect x="26" y="40.5" width="19" height="7" rx="3.5" fill="#9cc3bd"/></symbol>
+</defs></svg>
+
+<section id="s1-engenharia" class="s1">
+  <div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div>
+  <span class="eti">Engenharia reversa</span>
+  <h1>Como nasce uma questão dos <em>OrtoQuestões Simulados</em></h1>
+  <div class="passos">
+    <div class="passo"><b>01</b><p><strong>Lemos a prova</strong>O que o TEOT e o TARO já cobraram, assunto por assunto.</p></div>
+    <div class="passo"><b>02</b><p><strong>Desmontamos</strong>Qual detalhe a banca quer ver e onde ela costuma pegar.</p></div>
+    <div class="passo"><b>03</b><p><strong>Montamos de novo</strong>Uma questão autoral, inédita, no mesmo padrão da prova.</p></div>
+  </div>
+  <p class="nota">Chegou a parte de anatomia. Teste no próximo story.</p>
+</section>
+
+<section id="s2-questao" class="s2">
+  <div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div>
+  <span class="eti">Prancha 01 · Antebraço</span>
+  <div class="ficha">
+    <div class="prancha"><span class="cota"><span>VISTA ANTERIOR</span></span><img src="../../../../public/imagens/mao/mao-1279-1.jpeg" alt=""></div>
+    <div>
+      <p class="enun"><small>OrtoQuestões Simulados · anatomia</small>Sob o músculo indicado, o nervo que segue distalmente na região lateral do antebraço é o</p>
+      <div class="alts"><span><b>A</b>interósseo anterior.</span><span><b>B</b>interósseo posterior.</span><span><b>C</b>ramo profundo do radial.</span><span><b>D</b>ramo superficial do radial.</span></div>
+    </div>
+  </div>
+  <p class="nota">Pensou na sua? A resposta está no próximo story.</p>
+</section>
+
+<section id="s3-resposta" class="s3">
+  <div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div>
+  <span class="eti">Prancha 01 · Resposta</span>
+  <div class="resposta">
+    <small>Resposta D</small>
+    <h2>Ramo superficial do radial</h2>
+    <p>A seta aponta o <strong>braquiorradial</strong>. Sob ele desce o <strong>ramo superficial</strong> do radial, sensitivo, rumo ao punho. O <strong>ramo profundo</strong> faz outro caminho: atravessa o supinador e sai como <strong>interósseo posterior</strong>.</p>
+  </div>
+  <div class="chamada">
+    <p>Anatomia nova no treino, <em>no padrão da prova.</em></p>
+    <small>Treine grátis em ortoquestoes.com.br</small>
+  </div>
+  <p class="nota">E o ramo profundo? Siga a rota no feed de hoje.</p>
+</section>
+</body></html>

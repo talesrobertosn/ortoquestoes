@@ -245,3 +245,24 @@ museu, audioguia e catálogo. Aprovado pelo dono em 08/10/2026 ("esse estilo aí
   `modelo-vertical.html` (lesão de Stener; essa questão já foi publicada, não repetir).
 - **Criar:** `node marketing/instagram/estilos/sortear.mjs criar museu <slug>`.
 - **Stories:** `s1` obra + "Quem assina?" + alternativas curtas; `s2` obra + placa com a resposta.
+
+## GPS do nervo (`posts/2026-10-10-gps-interosseo-posterior/`)
+
+**Ideia:** o trajeto de um nervo (ou tendão, ou artéria) vira navegação de GPS: faixa verde de
+instrução ("Pegue a saída do ramo profundo"), mapa escuro abstrato só com ruas, linha azul da rota
+e folha branca no rodapé. Nada de desenhar anatomia: a anatomia vem só da imagem real da questão,
+mostrada como "câmera ao vivo do trecho".
+
+- **Formato:** carrossel 1080x1350, 6 slides: capa (rota + "Ative o GPS") → questão com a câmera →
+  rota completa passo a passo → "Você chegou" (resposta) → outras rotas (por que não são as outras)
+  → acidente no trecho (se lesar) + para a prova + treine grátis.
+- **Bom para:** trajetos de nervo, vias de acesso, pontos de compressão.
+
+## Planta de engenharia (`posts/2026-10-10-planta-ramo-superficial/`)
+
+**Ideia:** planta técnica azul com grade, para falar da **engenharia reversa** dos OrtoQuestões
+Simulados: questões autorais feitas a partir do que as provas oficiais cobram.
+
+- **Formato:** 3 stories 1080x1920: como nasce uma questão (3 passos) → a questão na "prancha" →
+  resposta + "Treine grátis". Sem figurinha nem link.
+- **Bom para:** divulgar os Simulados e novidades do acervo (ex.: a parte de anatomia).
