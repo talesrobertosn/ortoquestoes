@@ -83,5 +83,7 @@ crie sua conta grátis. Esses textos são sempre os maiores da tela.
   vai escrito).
 - Não redesenhar o modelo: copiar o `modelo.html`, trocar os textos e a imagem, gerar, **abrir os PNGs
   e conferir** se nada encosta ou sai da tela antes de entregar.
+- Legenda do feed: **no máximo 5 hashtags** e **sem endereço do site nem a palavra "link"**; a chamada
+  leva para o perfil ("Treine grátis: o caminho está no nosso perfil, @ortoquestoes").
 - Ao entregar: a legenda do feed como texto, os PNGs, e anotar no `estilos/historico.json` e no
   `publicadas.md`.

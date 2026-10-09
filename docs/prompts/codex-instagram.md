@@ -119,8 +119,9 @@ espaço vazio demais, acentos, o contador 1/5, 2/5... Corrija no HTML e gere de 
 1. Crie `LEGENDA.md` na pasta do post, no formato dos posts anteriores:
    - ordem de publicação com horário (feed às 7h; story de resposta ao meio-dia ou às 19h);
    - a legenda do feed: gancho, o que a questão cobra, "comente a sua letra (A, B, C ou D)", "salve
-     e mande para...", "Mais questões comentadas em ortoquestoes.com.br (link na bio)" e 8 a 10
-     hashtags (#ortopedia #residenciaemortopedia #teot #taro e as do assunto);
+     e mande para..." e uma chamada para o **perfil**, sem endereço do site e sem a palavra "link"
+     ("Treine grátis: o caminho está no nosso perfil, @ortoquestoes"); no fim, **no máximo 5
+     hashtags** (o Instagram recusa mais que isso);
    - conferência: id da questão, gabarito oficial e de onde veio o conteúdo.
 2. Acrescente o post em `marketing/instagram/estilos/historico.json` (`data`, `estilo`, `post`).
 3. Se criou um estilo novo e ele foi aprovado, registre em `ESTILOS.md` e copie o HTML para

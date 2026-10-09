@@ -18,6 +18,6 @@ E nos stories de hoje, o outro ramo: uma questão de anatomia dos OrtoQuestões 
 
 Salve para revisar antes da prova e marque quem sempre se perde no antebraço.
 
-Treine grátis em ortoquestoes.com.br
+Treine grátis: o caminho está no nosso perfil, @ortoquestoes
 
-#ortopedia #residenciamedica #teot #taro #anatomia #cirurgiadamao #ortoquestoes
+#ortopedia #residenciamedica #teot #anatomia #ortoquestoes

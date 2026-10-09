@@ -154,11 +154,11 @@ Outras candidatas: `pediatria-0102` (osteocondrose: Köhler), `pediatria-0194`
 >
 > Salve para revisar e marque quem da sua residência precisa ver esta.
 >
-> Mais questões comentadas: ortoquestoes.com.br
+> Treine grátis: o caminho está no nosso perfil, @ortoquestoes
 >
 > #ortopedia #TEOT #residenciamedica #ortopediapediatrica #traumatologia
 
-**Stories do Cronograma:** sem legenda; no último, figurinha de link para o site.
+**Stories do Cronograma:** sem legenda e sem figurinha (regra de 07/10/2026).
 
 ## Resumos de caderno (feed, 1080×1350)
 

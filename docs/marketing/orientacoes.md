@@ -41,6 +41,11 @@ algo em poucos segundos e dar vontade de responder.
 - **Não repetir questão já publicada:** antes de escolher, conferir `marketing/instagram/publicadas.md` e buscar o id em `marketing/instagram/posts/`. Ao entregar um post, anotar o id nessa lista (orientação de 08/10/2026).
 - Conteúdo médico sempre de uma questão real do acervo (com o id) e do comentário dela; nada inventado.
   Enunciado, alternativas e gabarito iguais aos do acervo.
+- **Legenda: no máximo 5 hashtags** (o Instagram recusa mais que isso). Orientação de 09/10/2026.
+- **Legenda sem endereço do site e sem a palavra "link":** o Instagram entrega menos o post que tenta
+  levar o usuário para fora. A legenda leva para o **perfil** (onde o site já está na bio), por
+  exemplo "Treine grátis: o caminho está no nosso perfil, @ortoquestoes" ou "Mais no nosso perfil".
+  Orientação de 09/10/2026.
 - Ao entregar um post, mandar a **legenda do feed como texto** na conversa, além da `LEGENDA.md`
   (no celular é mais fácil de copiar).
 
