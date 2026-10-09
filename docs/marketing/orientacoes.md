@@ -46,6 +46,9 @@ algo em poucos segundos e dar vontade de responder.
   levar o usuário para fora. A legenda leva para o **perfil** (onde o site já está na bio), por
   exemplo "Treine grátis: o caminho está no nosso perfil, @ortoquestoes" ou "Mais no nosso perfil".
   Orientação de 09/10/2026.
+- **Site escrito dentro da imagem pode e é bom** ("ortoquestoes.com.br" no último slide ou story): o
+  dono gosta e não é clicável. O que evitar é link **clicável**: na legenda, nos comentários e a
+  figurinha de link nos stories.
 - Ao entregar um post, mandar a **legenda do feed como texto** na conversa, além da `LEGENDA.md`
   (no celular é mais fácil de copiar).
 
