@@ -168,8 +168,10 @@ export function Sessao() {
     podeAvancar: !!sessao && posicao + 1 < sessao.ids.length, podeVoltar: posicao > 0,
     aoAvancar: irAdiante, aoVoltar: () => irPara(posicao - 1),
   })
-  // Na primeira sessão pelo celular, uma vez só: o cartão espia para o lado
-  // e uma frase curta avisa do gesto. Some sozinha em poucos segundos.
+  // Em toda sessão nova (uma vez por sessão, não a cada recarregar), a dica
+  // aparece por uns 3 s: no celular, deslizar; no computador, as setas.
+  // O cartão só espia para o lado na primeiríssima vez.
+  const chaveDica = sessao ? String(sessao.criadaEm ?? sessao.ids.join(',')) : ''
   const [dicaDeslizar, definirDicaDeslizar] = useState(false)
   const espiarAtual = useRef(espiar)
   espiarAtual.current = espiar
@@ -178,28 +180,26 @@ export function Sessao() {
   const temVarias = !!sessao && sessao.ids.length > 1
   useEffect(() => {
     if (temporizadoresDica.current.length || !questoes || !temVarias || painelAberto) return
-    if (!window.matchMedia('(pointer: coarse)').matches || ler('dica:deslizar', false)) return
+    if (!window.matchMedia('(pointer: coarse)').matches || ler('dica:sessao', '') === chaveDica) return
+    const primeiraVez = !ler('dica:deslizar', false)
     temporizadoresDica.current = [
-      window.setTimeout(() => { gravar('dica:deslizar', true); definirDicaDeslizar(true); espiarAtual.current() }, 1400),
-      window.setTimeout(() => definirDicaDeslizar(false), 6000),
+      window.setTimeout(() => { gravar('dica:sessao', chaveDica); gravar('dica:deslizar', true); definirDicaDeslizar(true); if (primeiraVez) espiarAtual.current() }, 900),
+      window.setTimeout(() => definirDicaDeslizar(false), 900 + 3200),
     ]
-  }, [questoes, temVarias, painelAberto])
+  }, [questoes, temVarias, painelAberto, chaveDica])
   useEffect(() => { if (posicao > 0) definirDicaDeslizar(false) }, [posicao])
-  // No computador, o equivalente: nas primeiras sessões, uma frase lembra que
-  // as setas do teclado trocam de questão. Some sozinha e para de aparecer
-  // assim que a pessoa usa as setas.
+  // No computador, o equivalente: a frase lembra que as setas do teclado
+  // trocam de questão, e some sozinha (ou assim que a pessoa usa as setas).
   const temporizadorTeclado = useRef<number[]>([])
   useEffect(() => () => temporizadorTeclado.current.forEach((t) => window.clearTimeout(t)), [])
   useEffect(() => {
     if (temporizadorTeclado.current.length || !questoes || !temVarias || painelAberto) return
-    if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return
-    const vistas = ler<number>('dica:teclado', 0)
-    if (vistas >= 3) return
+    if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches || ler('dica:sessao', '') === chaveDica) return
     temporizadorTeclado.current = [
-      window.setTimeout(() => { gravar('dica:teclado', vistas + 1); definirDicaTeclado(true) }, 1200),
-      window.setTimeout(() => definirDicaTeclado(false), 7000),
+      window.setTimeout(() => { gravar('dica:sessao', chaveDica); definirDicaTeclado(true) }, 900),
+      window.setTimeout(() => definirDicaTeclado(false), 900 + 3200),
     ]
-  }, [questoes, temVarias, painelAberto])
+  }, [questoes, temVarias, painelAberto, chaveDica])
 
   // Tempo esgotado encerra o simulado sozinho e leva ao resumo.
   useEffect(() => {
