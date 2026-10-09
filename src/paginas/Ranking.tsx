@@ -103,17 +103,20 @@ function Podio({ linhas, periodo }: { linhas: LinhaRanking[]; periodo: Periodo }
     <section className="rk-arena" aria-label="Três primeiros colocados" style={{ backgroundImage: `url(${recurso('ranking/arena.png')})` }}>
       <img className="rk-arena__tocha rk-arena__tocha--esq" src={recurso('ranking/tocha.png')} alt="" width={24} height={48} draggable={false} />
       <img className="rk-arena__tocha rk-arena__tocha--dir" src={recurso('ranking/tocha.png')} alt="" width={24} height={48} draggable={false} />
-      <p className="rk-arena__titulo">Salão dos campeões</p>
+      <p className="rk-arena__titulo"><span>Salão dos campeões</span></p>
       <ol className="rk-podio">
         {ordem.map((linha) => (
           <li key={linha.posicao} className={`rk-podio__lugar rk-podio__lugar--${linha.posicao}${linha.eh_voce ? ' rk-podio__lugar--voce' : ''}`}>
+            {linha.posicao === 1 && <span className="rk-podio__luz" aria-hidden="true" />}
             <img className="rk-podio__coroa" src={recurso(`emblemas/podio-${linha.posicao}.png`)} alt="" width={linha.posicao === 1 ? 64 : 48} height={linha.posicao === 1 ? 64 : 48} draggable={false} />
             <span className="rk-podio__avatar">{iniciais(linha.apelido)}</span>
             <strong className="rk-podio__nome">{linha.apelido}{linha.eh_voce && <span className="rk-voce">você</span>}<SeloServico servico={linha.servico} /></strong>
-            <span className="rk-podio__emblemas"><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={36} /><Fogueira dias={linha.sequencia ?? 0} tamanho={20} /></span>
-            <span className="rk-podio__total"><b className="numerico">{linha.total.toLocaleString('pt-BR')}</b> {periodo === 'semana' ? 'na semana' : 'questões'}</span>
-            <Movimento linha={linha} />
-            <span className="rk-podio__base" aria-hidden="true">{linha.posicao}º</span>
+            <span className="rk-podio__emblemas"><EmblemasDoNome ids={linha.emblemas} totalGeral={linha.total_geral} tamanho={32} /><Fogueira dias={linha.sequencia ?? 0} tamanho={20} /></span>
+            <div className="rk-podio__degrau">
+              <span className="rk-podio__posicao" aria-label={`${linha.posicao}º lugar`}>{linha.posicao}º</span>
+              <span className="rk-podio__total"><b className="numerico">{linha.total.toLocaleString('pt-BR')}</b>{periodo === 'semana' ? 'na semana' : 'questões'}</span>
+              <Movimento linha={linha} />
+            </div>
           </li>
         ))}
       </ol>

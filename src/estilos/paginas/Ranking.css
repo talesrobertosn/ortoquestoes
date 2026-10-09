@@ -404,3 +404,56 @@
   .rk-servico:hover .rk-servico__texto { max-width: 16rem; }
 }
 .rk-servico:focus-visible { outline: 2px solid var(--verdete); outline-offset: 2px; }
+
+/* ---------- Pódio, versão 2 (09/10/2026): os números dentro do degrau, holofote no 1º ---------- */
+.rk-arena { padding: 0.8rem clamp(1.6rem, 5vw, 3.5rem) 0; }
+.rk-arena::after { background: radial-gradient(ellipse 70% 55% at 50% 35%, rgba(5, 10, 25, 0.15), rgba(5, 10, 25, 0.62) 75%), linear-gradient(180deg, rgba(5, 10, 25, 0.35), rgba(5, 10, 25, 0.55)); }
+.rk-arena__titulo { position: relative; z-index: 1; margin: 0 0 0.6rem; }
+.rk-arena__titulo span {
+  display: inline-block; padding: 0.35rem 1.1rem; background: #6b1d16; color: #ffe08a;
+  box-shadow: 0 0 0 3px #1b1208, 0 0 0 5px #c99a3b, 4px 4px 0 5px rgba(0, 0, 0, 0.35);
+  clip-path: polygon(0 0, 100% 0, calc(100% - 10px) 50%, 100% 100%, 0 100%, 10px 50%);
+  padding-inline: 1.6rem;
+}
+.rk-podio { align-items: end; gap: clamp(0.3rem, 1.6vw, 0.8rem); }
+.rk-podio__lugar { padding: 0; gap: 0.25rem; }
+.rk-podio__nome { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; max-width: 100%; }
+.rk-podio__emblemas { min-height: 2.1rem; }
+/* Holofote de cima sobre o 1º lugar, com brilhos em pixel. */
+.rk-podio__luz {
+  position: absolute; z-index: -1; left: 50%; top: -3rem; width: 190%; height: calc(100% + 3rem); transform: translateX(-50%);
+  background: linear-gradient(180deg, rgba(255, 224, 138, 0.38), rgba(255, 224, 138, 0.06) 70%, transparent);
+  clip-path: polygon(38% 0, 62% 0, 100% 100%, 0 100%); pointer-events: none;
+}
+.rk-podio__lugar--1::before, .rk-podio__lugar--1::after {
+  content: ""; position: absolute; z-index: 2; width: 6px; height: 6px; background: #fff6cf; pointer-events: none;
+  box-shadow: 0 0 6px #ffe08a; animation: rk-brilho 2.4s steps(1) infinite;
+}
+.rk-podio__lugar--1::before { top: 0.4rem; left: 12%; }
+.rk-podio__lugar--1::after { top: 2.2rem; right: 10%; animation-delay: 1.2s; }
+@keyframes rk-brilho { 0%, 60% { opacity: 0; transform: scale(0.5); } 70%, 90% { opacity: 1; transform: scale(1); } }
+/* O degrau: bloco de metal com a posição e o placar dentro. */
+.rk-podio__degrau {
+  align-self: stretch; display: flex; flex-direction: column; align-items: center; gap: 0.1rem;
+  margin-top: 0.35rem; padding: 0.7rem 0.3rem 0.5rem; min-height: 6.4rem; color: #1b1208;
+  background:
+    repeating-linear-gradient(90deg, transparent 0 22px, rgba(0, 0, 0, 0.13) 22px 24px),
+    repeating-linear-gradient(180deg, transparent 0 14px, rgba(0, 0, 0, 0.13) 14px 16px),
+    linear-gradient(180deg, var(--metal-claro) 0 6px, var(--metal) 6px 55%, var(--metal-escuro));
+  box-shadow: inset 4px 0 0 rgba(255, 255, 255, 0.35), inset -4px 0 0 rgba(0, 0, 0, 0.25), 0 -2px 0 #1b1208;
+  clip-path: polygon(0 6px, 6px 6px, 6px 0, calc(100% - 6px) 0, calc(100% - 6px) 6px, 100% 6px, 100% 100%, 0 100%);
+}
+.rk-podio__lugar--2 .rk-podio__degrau { min-height: 7.6rem; }
+.rk-podio__lugar--1 .rk-podio__degrau { min-height: 9.4rem; padding-top: 0.9rem; }
+.rk-podio__posicao { font-family: var(--fonte-pixel); font-weight: 700; font-size: 1.5rem; line-height: 1; color: #1b1208; text-shadow: 1px 1px 0 var(--metal-claro); }
+.rk-podio__lugar--1 .rk-podio__posicao { font-size: 2rem; }
+.rk-podio__degrau .rk-podio__total { color: rgba(27, 18, 8, 0.75); text-shadow: none; font-size: 0.72rem; font-weight: 700; }
+.rk-podio__degrau .rk-podio__total b { color: #1b1208; font-size: clamp(1.05rem, 4vw, 1.35rem); text-shadow: 1px 1px 0 var(--metal-claro); }
+.rk-podio__lugar--1 .rk-podio__degrau .rk-podio__total b { font-size: clamp(1.25rem, 5vw, 1.6rem); }
+/* Mesma posição ("="): no pódio só ocupa espaço; subir, descer e as chamas continuam. */
+.rk-podio .rk-movimento--parado { display: none; }
+@media (prefers-reduced-motion: reduce) { .rk-podio__lugar--1::before, .rk-podio__lugar--1::after { animation: none; opacity: 0.8; } }
+/* Nomes, iniciais e títulos em maiúsculas saem da fonte de pixel: nela, o "C" e o "B" em negrito
+   viram "O" e "G" ("Oaio O." no lugar de "Caio C."). Fonte da marca, em negrito, com sombra de pixel. */
+.rk-podio__nome, .rk-alta__nome strong, .rk-alta__avatar, .rk-arena__titulo, .rk-alta__titulo { font-family: var(--fonte-marca); font-weight: 800; letter-spacing: 0.01em; }
+.rk-arena__titulo, .rk-alta__titulo { letter-spacing: 0.08em; }
