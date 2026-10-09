@@ -17,6 +17,9 @@ const ESTILOS = {
   linhas: { nome: 'Linhas do metrô', slides: 5, story: 's1-linha e s2-estacoes', figurinha: 'nenhuma (só a imagem)', proprio: true },
   jornal: { nome: 'Jornal (Diário do Plantão)', slides: 5, story: 's1-cartaz do estilo cinema ou o post compartilhado', figurinha: 'nenhuma (só a imagem)' },
   museu: { nome: 'Exposição no museu', slides: 6, story: 's1-exposicao e s2-placa', figurinha: 'nenhuma (só a imagem)' },
+  gps: { nome: 'GPS do nervo', slides: 6, story: 'planta (s1 a s3) no mesmo dia, sobre o mesmo nervo', figurinha: 'nenhuma (só a imagem)' },
+  // Só stories (engenharia reversa dos Simulados): use "criar planta <slug>".
+  planta: { nome: 'Planta de engenharia', slides: 0, story: 's1-engenharia, s2-questao e s3-resposta', figurinha: 'nenhuma (só a imagem)', soStories: true },
   // Só stories: não entra no sorteio do feed; use "criar cinema <slug>".
   cinema: { nome: 'Cartaz de cinema', slides: 0, story: 's1-cartaz e s2-creditos', figurinha: 'nenhuma (só a imagem)', proprio: true, soStories: true },
 }

@@ -40,7 +40,9 @@ Se você se pegar pensando em "gerar uma imagem", pare: o caminho é editar o HT
 ## 2. Escolher o estilo
 
 - Modelos prontos em `marketing/instagram/estilos/<estilo>/modelo.html`: `jornal`, `receita`,
-  `cinema` (só stories), `cartas`, `plantao`, `ache-o-erro`, `linhas`, `stories`.
+  `cinema` (só stories), `cartas`, `plantao`, `ache-o-erro`, `linhas`, `stories`, `museu`,
+  `gps` (feed) e `planta` (só stories). **GPS e Planta andam em dupla no mesmo dia:** antes de usar,
+  leia o passo a passo em `marketing/instagram/estilos/GPS-E-PLANTA.md`.
 - **Não repita um estilo usado nos últimos 2 dias** (confira o `historico.json`, feed e stories).
 - O feed e os stories do mesmo dia podem usar o mesmo estilo (teaser de manhã, resposta à noite).
 - Estilo novo é bem-vindo, mas só com tipografia e layout (veja a seção 1).

@@ -246,7 +246,9 @@ museu, audioguia e catálogo. Aprovado pelo dono em 08/10/2026 ("esse estilo aí
 - **Criar:** `node marketing/instagram/estilos/sortear.mjs criar museu <slug>`.
 - **Stories:** `s1` obra + "Quem assina?" + alternativas curtas; `s2` obra + placa com a resposta.
 
-## GPS do nervo (`posts/2026-10-10-gps-interosseo-posterior/`)
+## GPS do nervo (`gps/`)
+
+Passo a passo completo, em dupla com a Planta: [GPS-E-PLANTA.md](GPS-E-PLANTA.md).
 
 **Ideia:** o trajeto de um nervo (ou tendão, ou artéria) vira navegação de GPS: faixa verde de
 instrução ("Pegue a saída do ramo profundo"), mapa escuro abstrato só com ruas, linha azul da rota
@@ -258,7 +260,7 @@ mostrada como "câmera ao vivo do trecho".
   → acidente no trecho (se lesar) + para a prova + treine grátis.
 - **Bom para:** trajetos de nervo, vias de acesso, pontos de compressão.
 
-## Planta de engenharia (`posts/2026-10-10-planta-ramo-superficial/`)
+## Planta de engenharia (`planta/`, só stories)
 
 **Ideia:** planta técnica azul com grade, para falar da **engenharia reversa** dos OrtoQuestões
 Simulados: questões autorais feitas a partir do que as provas oficiais cobram.
