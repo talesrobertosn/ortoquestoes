@@ -192,3 +192,17 @@
 .xp-bloco--errada { background: #d9605a; box-shadow: inset 0 -3px 0 #b3423a; }
 .xp-bloco--feito { background: var(--verdete); box-shadow: inset 0 -3px 0 var(--verdete-tinta); }
 .xp-bloco--atual { background: #f4cf7c; box-shadow: inset 0 -3px 0 #c9952f; outline: 2px solid var(--texto); outline-offset: 1px; }
+/* Dica de deslizar em pixel art (09/10/2026): plaquinha de pergaminho escuro com borda dourada em
+   degraus, letra de pixel e setas que empurram para os lados. */
+.dica-deslizar {
+  border-radius: 0; padding: 0.55rem 0.9rem; gap: 0.5rem; backdrop-filter: none;
+  background: linear-gradient(180deg, #3a2913, #22170b); color: #ffe08a;
+  font-family: var(--fonte-pixel); font-weight: 700; font-size: 0.95rem; letter-spacing: 0.02em; text-shadow: 1px 1px 0 #1b1208;
+  box-shadow: 0 0 0 3px #f4cf7c, 0 0 0 6px #1b1208, 5px 5px 0 6px rgba(0, 0, 0, 0.3);
+}
+.dica-deslizar svg { color: #f4cf7c; animation: dica-empurra-esq 0.8s steps(2, end) infinite; }
+.dica-deslizar svg:last-of-type { animation-name: dica-empurra-dir; }
+@keyframes dica-empurra-esq { 50% { transform: translateX(-3px); } }
+@keyframes dica-empurra-dir { 50% { transform: translateX(3px); } }
+.dica-teclado kbd { color: #1b1208; background: #f4cf7c; border-radius: 0; box-shadow: 2px 2px 0 #1b1208; }
+@media (prefers-reduced-motion: reduce) { .dica-deslizar svg { animation: none; } }
