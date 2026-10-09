@@ -217,6 +217,10 @@ completo: a seção de instabilidade glenoumeral desse arquivo.
 - **Gabarito.** Ordenar os pares 2 por 2 para controlar a letra e fechar o lote equilibrado (o
   script mostra a contagem).
 
+### Anatomia: inserções musculares
+
+Pedido do dono (08/10/2026): incluir perguntas sobre onde o músculo se insere. Quando a figura permite identificação inequívoca, pode-se apontar o ventre e pedir a inserção, comparando fixações reais de músculos próximos. Explicar como a inserção se relaciona à função e distinguir origem de inserção; evitar apenas repetir o gabarito. A ponta da seta precisa ser conferida com a legenda original, inclusive quando a edição preserva a aparência geral da figura.
+
 ## Comentário
 
 Diretriz do dono do projeto (06/10/2026): cada questão de OrtoQuestões Simulados deve funcionar como

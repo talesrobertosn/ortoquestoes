@@ -1359,3 +1359,10 @@ nomes removidos e seta amarela foi registrada nas lições permanentes do guia.
 ## Netter — anatomia do braço (08/10/2026)
 
 [Mapa, limites e resultados](netter-braco.md), [plano](netter-braco-plano.md) e [recorte anatômico](netter-braco-recorte.json). 14 autorais, `ombro-cotovelo-0631` a `0644`, dez com imagem. Leitura das questões oficiais e pesquisa complementar em todos os temas; prioridade a musculocutâneo, músculos anteriores, tendão/aponeurose, radial e ulnar. Somente anatomia. Referências públicas limpas, com detalhes de produção apenas na documentação interna.
+
+
+## Netter: anatomia do antebraço (08/10/2026)
+
+[Mapa, evidências e auditoria](netter-antebraco.md), [plano por questão](netter-antebraco-plano.md) e [26 questões do recorte](netter-antebraco-recorte.json). Foram lidos 65 candidatos anatômicos. Pronadores, extensores radiais e flexores digitais sustentam reconhecimento visual seguido de inervação, ação, compartimento ou inserção. A recorrência está documentada com prova e ano; itens sem ano servem apenas como repertório.
+
+Aproveitamento: mao-1264 a 1281, 18 questões, 14 com imagem e seis de inserção muscular. Anatomia do antebraço e fixações distais, sem exame, doenças ou técnica. Pendências: variabilidade nervosa do dedo médio e nomenclatura dos ramos radiais não foram transformadas em respostas rígidas; corte transversal sem fonte visual suficiente ficou fora. Perguntar a inserção após reconhecer o músculo é um formato a conservar, usando outras fixações como distratores. Fontes limpas para o aluno; folhas e detalhes de adaptação somente na auditoria.

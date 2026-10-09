@@ -1,0 +1,2767 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,follow"><title>Netter: anatomia do antebraço | Orto Questões</title><style>/* Só o nome da marca usa esta fonte; o resto do site fica na fonte do sistema. */
+
+
+/* ==========================================================================
+   OrtoQuestões — tokens
+   Tema claro é o padrão. O tema escuro é desenhado à parte, não invertido:
+   as superfícies escuras têm um leve viés verde para acompanhar o verdete,
+   e o destaque ganha luminância para manter contraste acima de 4,5:1.
+   ========================================================================== */
+
+:root {
+  /* Paleta base — tema claro */
+  --porcelana: #f1f3f2;
+  --superficie: #ffffff;
+  --superficie-2: #f7f9f8; /* superfície recuada: cabeçalhos de tabela, campos */
+  --traco: #dce2e0;
+  --traco-forte: #c3ccc9;
+  --grafite: #12181a;
+  --ardosia: #5b686c;
+  --verdete: #14655e;
+  --verdete-tinta: #0f4f49; /* estado pressionado */
+  --verdete-veu: #e6efee; /* fundo de seleção, 1 uso por tela */
+
+  /* Semânticos — só em resultado de resposta */
+  --acerto: #1f7a4d;
+  --acerto-veu: #e8f3ec;
+  --erro: #b3423a;
+  --erro-veu: #f8ebea;
+  /* Aviso: severidade intermediária fora do contexto de resposta (carga alta
+     no calendário, ações destrutivas como zerar progresso). */
+  --aviso: #9a6b12;
+  --aviso-veu: #f6ecd9;
+
+  /* Papéis */
+  --fundo: var(--porcelana);
+  --texto: var(--grafite);
+  --texto-2: var(--ardosia);
+  --sobre-destaque: #ffffff; /* texto sobre o verdete */
+
+  /* Tipografia */
+  --fonte-texto: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+  /* Nome da marca escrito por extenso (Plus Jakarta Sans, licença OFL). */
+  --fonte-marca: "Plus Jakarta Sans", var(--fonte-texto);
+  /* Fonte pixel, só no ranking e nas conquistas (licença OFL, carregada nessas telas). */
+  --fonte-pixel: "Pixelify Sans", var(--fonte-marca);
+  --fonte-dados: ui-monospace, "SF Mono", "Cascadia Mono", "Roboto Mono", Menlo,
+    Consolas, monospace;
+  --corpo: 1.0625rem; /* 17px */
+  --corpo-menor: 0.9375rem; /* 15px */
+  --meta: 0.8125rem; /* 13px */
+  --entrelinha: 1.6;
+  --coluna-leitura: 76ch;
+
+  /* Estrutura */
+  /* Dois raios no site todo: controles (botões, campos, chips quadrados) e
+     cartões (blocos, heróis, painéis). Cápsulas usam 999px. */
+  --raio-controle: 10px;
+  --raio-cartao: 16px;
+  --raio: var(--raio-controle);
+  --raio-pequeno: 4px;
+  --sombra: 0 1px 2px rgba(18, 24, 26, 0.06);
+  --borda: 1px solid var(--traco);
+  --toque: 44px; /* alvo mínimo de toque */
+  --raio-grande: var(--raio-cartao);
+  --sombra-media: 0 1px 2px rgba(18, 24, 26, 0.04), 0 10px 28px rgba(18, 24, 26, 0.07);
+
+  /* Faixas de destaque (heróis): verdete profundo com texto claro */
+  --heroi: linear-gradient(135deg, #0b3a35 0%, #14655e 58%, #1d8074 100%);
+  --sobre-heroi: #ffffff;
+  --sobre-heroi-2: rgba(255, 255, 255, 0.8);
+  --heroi-vidro: rgba(255, 255, 255, 0.1);
+  --heroi-traco: rgba(255, 255, 255, 0.2);
+
+  /* Metais dos emblemas */
+  --ouro: #a87a1f;
+  --ouro-veu: #f8efd9;
+  /* Texto dourado sobre --ouro-veu: --ouro puro fica abaixo de 4,5:1 nesse fundo. */
+  --ouro-texto: #7a5710;
+  --prata: #6f7d82;
+  --prata-veu: #eef1f2;
+  --bronze: #9a5b2e;
+  --bronze-veu: #f5e9df;
+
+  /* Símbolo da marca (src/marca/Simbolo.tsx): ladrilho, vértebras e a certa. */
+  --marca-ladrilho: #14655e;
+  --marca-contorno: none;
+  --marca-osso: #ffffff;
+  --marca-osso-opacidade: 0.55;
+  --marca-certa: #f4cf7c;
+
+  color-scheme: light;
+}
+
+:root[data-tema="escuro"] {
+  --porcelana: #0f1413;
+  --superficie: #171e1d;
+  --superficie-2: #1e2726;
+  --traco: #2a3432;
+  --traco-forte: #3b4745;
+  --grafite: #e7ecea;
+  --ardosia: #9aa8a5;
+  --verdete: #4fb3a5;
+  --verdete-tinta: #6cc7ba;
+  --verdete-veu: #17302e;
+
+  --acerto: #4fbe85;
+  --acerto-veu: #14291f;
+  --erro: #e8776c;
+  --erro-veu: #2c1a18;
+  --aviso: #e0b15c;
+  --aviso-veu: #362c17;
+
+  --sobre-destaque: #0f1413;
+  --sombra: none;
+  --sombra-media: 0 0 0 1px var(--traco);
+
+  --heroi: linear-gradient(135deg, #0d2623 0%, #143b37 58%, #1a4a44 100%);
+  --sobre-heroi: #eef3f1;
+  --sobre-heroi-2: rgba(238, 243, 241, 0.75);
+  --heroi-vidro: rgba(255, 255, 255, 0.06);
+  --heroi-traco: rgba(255, 255, 255, 0.14);
+
+  --ouro: #e0b862;
+  --ouro-veu: #33291a;
+  --ouro-texto: #e0b862;
+  --prata: #b4c0c3;
+  --prata-veu: #232b2c;
+  --bronze: #d99a6c;
+  --bronze-veu: #2f231b;
+
+  --marca-ladrilho: #171e1d;
+  --marca-contorno: #2a3432;
+  --marca-osso: #39776e;
+  --marca-osso-opacidade: 1;
+  --marca-certa: #e0b862;
+
+  color-scheme: dark;
+}
+
+/* ==========================================================================
+   OrtoQuestões — base e componentes
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--fundo);
+  color: var(--texto);
+  font-family: var(--fonte-texto);
+  font-size: var(--corpo);
+  line-height: var(--entrelinha);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  line-height: 1.25;
+  font-family: var(--fonte-marca);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 1.1rem + 1.6vw, 2rem);
+}
+h2 {
+  font-size: clamp(1.25rem, 1.05rem + 0.8vw, 1.5rem);
+}
+h3 {
+  font-size: 1.0625rem;
+}
+
+p {
+  margin: 0 0 0.75em;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  color: var(--verdete);
+  text-underline-offset: 0.2em;
+}
+a:hover {
+  color: var(--verdete-tinta);
+}
+
+ul,
+ol {
+  margin: 0 0 0.75em;
+  padding-left: 1.25em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--verdete);
+  outline-offset: 2px;
+  border-radius: var(--raio-pequeno);
+}
+
+.numerico {
+  font-family: var(--fonte-dados);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+}
+
+.so-leitor {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.pular-para-conteudo {
+  position: absolute;
+  left: 0.5rem;
+  top: -3rem;
+  z-index: 100;
+  background: var(--superficie);
+  border: var(--borda);
+  border-radius: var(--raio);
+  padding: 0.5rem 0.75rem;
+  transition: top 0.12s ease-out;
+}
+.pular-para-conteudo:focus {
+  top: 0.5rem;
+}
+
+/* ---------- Estrutura de página ---------------------------------------- */
+
+.pagina {
+  min-height: 100dvh;
+  /* Nada pode alargar a página no celular: o que passar da tela é cortado
+     (clip não cria rolagem, então barras fixas e sticky continuam valendo). */
+  overflow-x: clip;
+  display: flex;
+  flex-direction: column;
+}
+
+.conteudo {
+  width: 100%;
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 0 0.75rem;
+}
+
+@media (min-width: 30rem) {
+  .conteudo {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width: 48rem) {
+  .conteudo {
+    padding: 0 1.75rem;
+  }
+}
+
+/* Coluna de leitura da questão. O enunciado tem limite próprio de caracteres
+   por linha; o cartão pode ser mais largo do que ele, e as alternativas
+   agradecem — enunciado de duas linhas cabe em uma. */
+.conteudo--estreito {
+  max-width: 64rem;
+}
+
+.principal {
+  flex: 1 0 auto;
+  padding: 1.25rem 0 3rem;
+}
+
+@media (min-width: 48rem) {
+  .principal {
+    padding: 2rem 0 4rem;
+  }
+}
+
+/* ---------- Cabeçalho ---------------------------------------------------- */
+
+.cabecalho {
+  border-bottom: var(--borda);
+  background: var(--superficie);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.cabecalho__interno {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  min-height: 60px;
+}
+
+.cabecalho__marca {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--texto);
+  flex: 0 0 auto;
+  border-radius: var(--raio);
+  transition: color .12s ease-out;
+}
+.cabecalho__marca:hover { color: var(--verdete); }
+.cabecalho__selo { display: inline-flex; }
+
+.cabecalho__nav {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.cabecalho__nav-principal { gap: 0.125rem; }
+.cabecalho__acoes {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  margin-left: auto;
+}
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  min-height: 38px;
+  padding: 0 0.75rem;
+  border-radius: 999px;
+  color: var(--texto-2);
+  text-decoration: none;
+  font-size: var(--corpo-menor);
+  font-weight: 550;
+  transition: background-color .12s ease-out, color .12s ease-out;
+}
+.nav-link:hover {
+  color: var(--texto);
+  background: var(--superficie-2);
+}
+
+.nav-link[aria-current="page"] {
+  color: var(--verdete);
+  background: var(--verdete-veu);
+}
+
+.nav-link--conta { color: var(--texto); }
+.nav-link--logado { background: var(--superficie-2); }
+.nav-link--logado:hover { background: var(--traco); }
+.avatar-mini {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 1.5rem; height: 1.5rem; border-radius: 50%;
+  background: var(--verdete); color: var(--sobre-destaque);
+  font-size: .75rem; font-weight: 700; flex: 0 0 auto;
+}
+
+/* Em telas estreitas o cabeçalho fica mais apertado: Revisão já vive na
+   barra fixa de baixo (junto com Início), então some daqui em cima, e
+   sobra espaço para Treinar, Desempenho e a conta lado a lado. */
+@media (max-width: 34rem) {
+  .nav-link--oculta-celular { display: none; }
+  .nav-link { padding: 0 0.5rem; }
+  .cabecalho__rotulo-conta { display: none; }
+  .nav-link--conta { padding: 0; width: 38px; justify-content: center; }
+  /* Com Treinar e Desempenho por extenso na barra, o nome por extenso da
+     marca não cabe mais ao lado deles — some o texto e fica só o símbolo. */
+  .cabecalho__marca .marca-horizontal__texto { display: none; }
+}
+
+/* ---------- Rodapé ------------------------------------------------------ */
+
+.rodape {
+  border-top: var(--borda);
+  background: var(--superficie);
+  padding: 1.25rem 0;
+  color: var(--texto-2);
+  font-size: var(--corpo-menor);
+}
+.rodape__interno {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  align-items: center;
+}
+.rodape__social {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.rodape__creditos {
+  margin-left: auto;
+}
+
+/* ---------- Botões ------------------------------------------------------ */
+
+.botao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: var(--toque);
+  padding: 0 1rem;
+  border: var(--borda);
+  border-radius: var(--raio);
+  background: var(--superficie);
+  color: var(--texto);
+  font-size: var(--corpo-menor);
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.12s ease-out, border-color 0.12s ease-out;
+}
+.botao:hover:not(:disabled) {
+  background: var(--superficie-2);
+  border-color: var(--traco-forte);
+}
+.botao:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.botao--principal {
+  background: var(--verdete);
+  border-color: var(--verdete);
+  color: var(--sobre-destaque);
+  font-weight: 600;
+}
+.botao--principal:hover:not(:disabled) {
+  background: var(--verdete-tinta);
+  border-color: var(--verdete-tinta);
+}
+
+.botao--principal:disabled {
+  /* Desabilitado não pode virar texto ilegível: vira botão neutro, não apagado. */
+  background: var(--superficie-2);
+  border-color: var(--traco);
+  color: var(--texto-2);
+  opacity: 1;
+}
+
+.botao--fantasma {
+  border-color: transparent;
+  background: transparent;
+  color: var(--texto-2);
+}
+.botao--fantasma:hover:not(:disabled) {
+  background: var(--superficie-2);
+  color: var(--texto);
+}
+
+.botao--largo {
+  width: 100%;
+}
+
+.botao--perigo {
+  background: transparent;
+  border-color: var(--erro);
+  color: var(--erro);
+}
+.botao--perigo:hover:not(:disabled) {
+  background: var(--erro);
+  border-color: var(--erro);
+  color: #fff;
+}
+
+.botao--grande {
+  min-height: 52px;
+  font-size: var(--corpo);
+  padding: 0 1.5rem;
+}
+
+.botao--vinculo {
+  display: inline;
+  margin-left: 0.4rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--verdete);
+  font-size: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.botao--vinculo:hover { color: var(--verdete-tinta); }
+.ponto-sincronia { width: .5rem; height: .5rem; border-radius: 50%; background: var(--traco-forte); flex: 0 0 auto; }
+.ponto-sincronia--salvo { background: var(--verdete); }
+.ponto-sincronia--sincronizando { background: var(--verdete); animation: pulso-vivo 1.2s ease-in-out infinite; }
+.ponto-sincronia--erro, .ponto-sincronia--conflito { background: var(--erro); }
+.ponto-sincronia--offline { background: var(--aviso); }
+
+.botao__contador {
+  font-family: var(--fonte-dados);
+  font-variant-numeric: tabular-nums;
+}
+
+.botao-icone {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--toque);
+  height: var(--toque);
+  border: 1px solid transparent;
+  border-radius: var(--raio);
+  background: transparent;
+  color: var(--texto-2);
+  cursor: pointer;
+}
+.botao-icone:hover:not(:disabled) {
+  background: var(--superficie-2);
+  color: var(--texto);
+}
+.botao-icone:disabled {
+  opacity: .35;
+  cursor: default;
+}
+.botao-icone[aria-pressed="true"] {
+  color: var(--verdete);
+}
+
+/* ---------- Cartões e superfícies --------------------------------------- */
+
+.cartao {
+  background: var(--superficie);
+  border: var(--borda);
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+}
+
+.cartao__corpo {
+  padding: 0.875rem;
+}
+
+@media (min-width: 30rem) {
+  .cartao__corpo {
+    padding: 1.125rem;
+  }
+}
+
+@media (min-width: 40rem) {
+  .cartao__corpo {
+    padding: 1.75rem 2rem;
+  }
+}
+
+/* Sessão em andamento: precisa ser a primeira coisa vista ao abrir a home,
+   porque é exatamente aí que quem trocou de aba e perdeu o fio vai olhar
+   primeiro para tentar voltar. */
+
+/* ---------- Herói da página inicial ------------------------------------ */
+
+/* No computador o herói vira duas colunas: título à esquerda, texto de
+   apoio à direita. Em uma só coluna, a largura de leitura confortável
+   deixaria dois terços da tela vazios e o título quebrado em quatro linhas. */
+
+.treino-rapido {
+  border: var(--borda);
+  border-radius: var(--raio);
+  background: var(--superficie);
+  padding: 1.25rem;
+}
+
+.treino-rapido__titulo {
+  font-size: 1.0625rem;
+  margin-bottom: 0.125rem;
+}
+
+@media (min-width: 40rem) {
+  .treino-rapido {
+    padding: 1.5rem;
+  }
+  .treino-rapido .botao {
+    min-width: 10rem;
+  }
+}
+
+/* ---------- Formulário -------------------------------------------------- */
+
+.campo {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.campo__rotulo {
+  display: block;
+  font-size: var(--meta);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--texto-2);
+  margin-bottom: 0.375rem;
+}
+
+.campo__auxilio {
+  display: block;
+  font-size: var(--meta);
+  color: var(--texto-2);
+  margin-top: 0.375rem;
+}
+
+.entrada,
+.selecao {
+  width: 100%;
+  min-height: var(--toque);
+  padding: 0 0.75rem;
+  border: var(--borda);
+  border-radius: var(--raio);
+  background: var(--superficie);
+  color: var(--texto);
+  font-size: var(--corpo-menor);
+}
+.entrada::placeholder {
+  color: var(--texto-2);
+}
+
+.caixa {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  min-height: 36px;
+  padding: 0.25rem 0;
+  cursor: pointer;
+  font-size: var(--corpo-menor);
+}
+.caixa input {
+  margin: 0.3rem 0 0;
+  accent-color: var(--verdete);
+  width: 1.125rem;
+  height: 1.125rem;
+  flex: 0 0 auto;
+}
+
+/* ---------- Seletor em árvore ------------------------------------------- */
+
+.seletor {
+  position: relative;
+}
+
+.seletor__gatilho {
+  width: 100%;
+  min-height: var(--toque);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border: var(--borda);
+  border-radius: var(--raio);
+  background: var(--superficie);
+  color: var(--texto);
+  text-align: left;
+  font-size: var(--corpo-menor);
+  cursor: pointer;
+}
+.seletor__gatilho[aria-expanded="true"] {
+  border-color: var(--verdete);
+}
+.seletor__resumo {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.seletor__resumo--vazio {
+  color: var(--texto-2);
+}
+
+.seletor__painel {
+  position: absolute;
+  z-index: 30;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: var(--superficie);
+  border: 1px solid var(--traco-forte);
+  border-radius: var(--raio);
+  box-shadow: 0 6px 20px rgba(18, 24, 26, 0.12);
+  padding: 0.5rem;
+  max-height: min(32rem, 70dvh);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Variante sempre aberta: sem sombra, sem flutuar, ocupando o lugar dela. */
+.seletor--lista .seletor__painel {
+  position: static;
+  box-shadow: none;
+  border-color: var(--traco);
+  max-height: none;
+}
+.seletor--lista .seletor__lista {
+  max-height: 26rem;
+}
+
+.seletor__lista {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.seletor__rodape {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: var(--borda);
+}
+.seletor__rodape .meta {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.seletor__rodape .botao {
+  min-height: 36px;
+}
+
+.arvore__tema {
+  border-top: var(--borda);
+  padding-top: 0.25rem;
+  margin-top: 0.25rem;
+}
+.arvore__tema:first-child {
+  border-top: 0;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.arvore__linha {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem;
+  border-radius: var(--raio-pequeno);
+  min-height: 38px;
+}
+.arvore__linha:hover {
+  background: var(--superficie-2);
+}
+.arvore__linha--filho {
+  padding-left: 1.75rem;
+}
+
+.arvore__abrir {
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background: transparent;
+  color: var(--texto-2);
+  cursor: pointer;
+  border-radius: var(--raio-pequeno);
+  flex: 0 0 auto;
+}
+
+.arvore__contagem {
+  margin-left: auto;
+  font-family: var(--fonte-dados);
+  font-size: var(--meta);
+  color: var(--texto-2);
+}
+
+/* ---------- Etiquetas --------------------------------------------------- */
+
+.etiquetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  align-items: center;
+}
+
+.etiqueta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.125rem 0.5rem;
+  border: var(--borda);
+  border-radius: 999px;
+  background: var(--superficie-2);
+  color: var(--texto-2);
+  font-size: var(--meta);
+  line-height: 1.6;
+  white-space: nowrap;
+}
+.etiqueta--dado {
+  font-family: var(--fonte-dados);
+  font-variant-numeric: tabular-nums;
+}
+.etiqueta--alerta {
+  border-color: var(--erro);
+  color: var(--erro);
+  background: var(--erro-veu);
+}
+
+/* ---------- Questão ------------------------------------------------------ */
+
+.questao__topo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.questao__acoes {
+  margin-left: auto;
+  display: flex;
+  gap: 0.125rem;
+}
+
+.questao__enunciado {
+  max-width: var(--coluna-leitura);
+  margin-bottom: 1.5rem;
+  white-space: pre-wrap;
+  font-size: 1.09375rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 30rem) {
+  .questao__enunciado {
+    font-size: 1.0625rem;
+  }
+}
+
+.questao__figuras {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+.questao__figura {
+  margin: 0;
+  border: var(--borda);
+  border-radius: var(--raio);
+  overflow: hidden;
+  background: var(--superficie-2);
+  max-width: 100%;
+}
+.questao__figura img {
+  display: block;
+  cursor: zoom-in;
+}
+.questao__figura figcaption {
+  padding: 0.375rem 0.5rem;
+  font-size: var(--meta);
+  color: var(--texto-2);
+  border-top: var(--borda);
+}
+/* Botão que envolve a figura: abre a janela com a imagem ampliada. */
+.figura-ampliavel { display: block; padding: 0; border: 0; background: none; cursor: zoom-in; max-width: 100%; }
+.figura-ampliavel img { max-width: 100%; }
+.figura-ampliavel:focus-visible { outline: 2px solid var(--verdete); outline-offset: -2px; }
+.figura-fonte { display: block; margin-top: 0.15rem; font-size: 0.92em; overflow-wrap: anywhere; }
+.figura-fonte a { color: inherit; text-decoration: underline; }
+
+/* Janela da imagem ampliada: imagem inteira na tela; toque aproxima no ponto. */
+.janela-imagem {
+  /* A imagem cabe sempre na tela, com folga em volta: nunca no tamanho real. */
+  --janela-largura: min(88vw, 56rem);
+  --janela-altura: min(calc(100vh - 12rem), 76vh);
+  position: fixed; inset: 0; z-index: 200;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem;
+  padding: max(1rem, env(safe-area-inset-top)) 1rem max(1rem, env(safe-area-inset-bottom));
+  background: rgba(8, 12, 12, 0.88); color: #f2f4f3;
+}
+@supports (height: 100dvh) { .janela-imagem { --janela-altura: min(calc(100dvh - 12rem), 76dvh); } }
+.janela-imagem__area { max-width: var(--janela-largura); max-height: var(--janela-altura); overflow: hidden; border-radius: 8px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5); }
+.janela-imagem__area img { display: block; width: auto; height: auto; max-width: var(--janela-largura); max-height: var(--janela-altura); object-fit: contain; cursor: zoom-in; }
+.janela-imagem__area--zoom { width: var(--janela-largura); height: var(--janela-altura); overflow: auto; -webkit-overflow-scrolling: touch; }
+.janela-imagem__area--zoom img { width: 220%; max-width: none; max-height: none; cursor: zoom-out; }
+.janela-imagem__fechar { position: absolute; z-index: 1; top: max(0.6rem, env(safe-area-inset-top)); right: 0.6rem; display: grid; place-items: center; width: 2.6rem; height: 2.6rem; border: 0; border-radius: 50%; background: rgba(255, 255, 255, 0.14); color: #fff; cursor: pointer; }
+.janela-imagem__fechar:hover { background: rgba(255, 255, 255, 0.24); }
+.janela-imagem__legenda { margin: 0 auto; max-width: 48rem; text-align: center; font-size: var(--corpo-menor); }
+.janela-imagem__legenda .figura-fonte a { color: #bfe7dd; }
+.janela-imagem__dica { margin: 0; text-align: center; font-size: var(--meta); opacity: 0.7; }
+
+/* Alternativas: linha inteira clicável, chip de letra à esquerda,
+   como uma folha de respostas. */
+.alternativas {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  list-style: none;
+}
+
+.alternativa {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  gap: 0;
+  border: var(--borda);
+  border-radius: var(--raio);
+  background: var(--superficie);
+  color: var(--texto);
+  text-align: left;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border-color 0.12s ease-out, background-color 0.12s ease-out;
+}
+.alternativa:hover:not(:disabled) {
+  border-color: var(--traco-forte);
+  background: var(--superficie-2);
+}
+
+.alternativa__letra {
+  flex: 0 0 auto;
+  width: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: var(--borda);
+  background: var(--superficie-2);
+  font-family: var(--fonte-dados);
+  font-weight: 600;
+  font-size: var(--corpo-menor);
+  color: var(--texto-2);
+}
+
+.alternativa__texto {
+  padding: 0.875rem 1rem;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.alternativa__marca {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 0 0.75rem;
+  gap: 0.375rem;
+  font-size: var(--meta);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.alternativa--escolhida {
+  border-color: var(--verdete);
+  background: var(--verdete-veu);
+}
+.alternativa--escolhida .alternativa__letra {
+  background: var(--verdete);
+  color: var(--sobre-destaque);
+  border-right-color: var(--verdete);
+}
+
+.alternativa--certa {
+  border-color: var(--acerto);
+  background: var(--acerto-veu);
+}
+.alternativa--certa .alternativa__letra {
+  background: var(--acerto);
+  color: #fff;
+  border-right-color: var(--acerto);
+}
+.alternativa--certa .alternativa__marca {
+  color: var(--acerto);
+}
+
+.alternativa--errada {
+  border-color: var(--erro);
+  background: var(--erro-veu);
+}
+.alternativa--errada .alternativa__letra {
+  background: var(--erro);
+  color: #fff;
+  border-right-color: var(--erro);
+}
+.alternativa--errada .alternativa__marca {
+  color: var(--erro);
+}
+
+.alternativa--riscada .alternativa__texto {
+  text-decoration: line-through;
+  color: var(--texto-2);
+  opacity: 0.7;
+}
+.riscar {
+  flex: 0 0 auto;
+  width: 2.25rem;
+  border: var(--borda);
+  border-radius: var(--raio);
+  background: transparent;
+  color: var(--texto-2);
+  cursor: pointer;
+  font-family: var(--fonte-dados);
+  font-size: var(--meta);
+}
+.riscar:hover {
+  background: var(--superficie-2);
+  color: var(--texto);
+}
+.riscar[aria-pressed="true"] {
+  color: var(--erro);
+  border-color: var(--erro);
+}
+
+.questao__id {
+  margin-left: auto;
+  opacity: 0.65;
+}
+
+@media (max-width: 30rem) {
+  .questao__id {
+    display: none;
+  }
+}
+
+/* ---------- Resultado e comentário -------------------------------------- */
+
+.resultado {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 0.875rem;
+  border: 1px solid;
+  border-radius: var(--raio);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.resultado--acerto {
+  border-color: var(--acerto);
+  background: var(--acerto-veu);
+  color: var(--acerto);
+}
+.resultado--erro {
+  border-color: var(--erro);
+  background: var(--erro-veu);
+  color: var(--erro);
+}
+.resultado--neutro {
+  border-color: var(--traco-forte);
+  background: var(--superficie-2);
+  color: var(--texto-2);
+}
+
+.comentario {
+  border-top: var(--borda);
+  padding-top: 1rem;
+  margin-top: 1rem;
+  max-width: var(--coluna-leitura);
+}
+.comentario__titulo {
+  font-size: var(--meta);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--texto-2);
+  margin-bottom: 0.5rem;
+}
+.comentario__pendente {
+  font-size: var(--corpo-menor);
+  color: var(--texto-2);
+}
+
+/* Os três comentários — do autor, da IA e da comunidade — moram em blocos
+   separados e nomeados. De onde vem o texto muda o peso que ele tem. */
+
+.selo {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.0625rem 0.4rem;
+  border: var(--borda);
+  border-radius: 999px;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--texto-2);
+  vertical-align: 1px;
+}
+.selo--conferido {
+  border-color: var(--acerto);
+  background: var(--acerto-veu);
+  color: var(--acerto);
+}
+
+.aviso-ia {
+  margin-bottom: 0.875rem;
+  padding: 0.625rem 0.75rem;
+  border-left: 3px solid var(--traco-forte);
+  background: var(--superficie-2);
+  border-radius: 0 var(--raio-pequeno) var(--raio-pequeno) 0;
+  font-size: var(--corpo-menor);
+  color: var(--texto-2);
+}
+
+/* Aviso de gabarito duvidoso: precisa se distinguir do aviso de rotina sobre
+   o texto ser de IA, porque diz respeito ao conteúdo da própria questão. */
+.aviso-ia--gabarito {
+  border-left-color: var(--erro);
+  background: var(--erro-veu);
+  color: var(--texto);
+}
+
+.ia__conceito {
+  margin-bottom: 0.875rem;
+}
+
+.ia__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  padding: 0.5rem 0;
+  font-size: var(--corpo-menor);
+}
+.ia__item + .ia__item {
+  border-top: 1px dashed var(--traco);
+}
+
+.ia__letra {
+  flex: 0 0 auto;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: grid;
+  place-items: center;
+  border: var(--borda);
+  border-radius: var(--raio-pequeno);
+  font-family: var(--fonte-dados);
+  font-size: var(--meta);
+  font-weight: 700;
+  color: var(--texto-2);
+}
+.ia__item--certa .ia__letra {
+  border-color: var(--acerto);
+  background: var(--acerto-veu);
+  color: var(--acerto);
+}
+
+/* ---------- Progresso e mapa -------------------------------------------- */
+
+/* Setas fixas ao lado da questão, para avançar sem descer até o rodapé do
+   cartão. Só cabem quando sobra margem de verdade fora da coluna de
+   conteúdo (64rem, ou 76rem no modo Foco) — por isso a posição é calculada
+   a partir do centro da tela, não de uma distância fixa da borda, e elas
+   somem quando a tela é estreita demais para não sobrepor o cartão. */
+
+.progresso {
+  flex: 1 1 auto;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--traco);
+  overflow: hidden;
+  min-width: 3rem;
+}
+.progresso__preenchido {
+  height: 100%;
+  background: var(--verdete);
+  transition: width 0.2s ease-out;
+}
+
+.mapa {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(2.5rem, 1fr));
+  gap: 0.375rem;
+}
+
+.mapa__item {
+  aspect-ratio: 1;
+  min-height: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  border: var(--borda);
+  border-radius: var(--raio-pequeno);
+  background: var(--superficie);
+  color: var(--texto-2);
+  font-family: var(--fonte-dados);
+  font-size: var(--meta);
+  cursor: pointer;
+  padding: 0;
+}
+.mapa__item:hover {
+  border-color: var(--traco-forte);
+}
+.mapa__glifo {
+  font-size: 0.6875rem;
+  line-height: 1;
+}
+.mapa__item--certa {
+  border-color: var(--acerto);
+  color: var(--acerto);
+  background: var(--acerto-veu);
+}
+.mapa__item--errada {
+  border-color: var(--erro);
+  color: var(--erro);
+  background: var(--erro-veu);
+}
+.mapa__item--marcada {
+  border-color: var(--verdete);
+  color: var(--verdete);
+  background: var(--verdete-veu);
+}
+.mapa__item--atual {
+  outline: 2px solid var(--verdete);
+  outline-offset: 1px;
+  color: var(--texto);
+  font-weight: 700;
+}
+.mapa__item--revisar {
+  border-style: dashed;
+  border-color: var(--verdete);
+}
+
+.legenda {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  font-size: var(--meta);
+  color: var(--texto-2);
+  margin-top: 1rem;
+}
+.legenda__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+/* ---------- Cronômetro do simulado -------------------------------------- */
+
+/* ---------- Painel lateral / folha deslizante --------------------------- */
+
+.veu {
+  position: fixed;
+  inset: 0;
+  background: rgba(18, 24, 26, 0.35);
+  z-index: 40;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.painel {
+  position: fixed;
+  z-index: 41;
+  background: var(--superficie);
+  display: flex;
+  flex-direction: column;
+  inset: auto 0 0 0;
+  max-height: 85dvh;
+  border-top: var(--borda);
+  border-radius: var(--raio) var(--raio) 0 0;
+  animation: subir 0.18s ease-out;
+}
+
+@media (min-width: 48rem) {
+  .painel {
+    inset: 0 0 0 auto;
+    width: min(26rem, 100%);
+    max-height: none;
+    border-top: 0;
+    border-left: var(--borda);
+    border-radius: 0;
+    animation: entrar 0.18s ease-out;
+  }
+}
+
+@keyframes subir {
+  from {
+    transform: translateY(12px);
+    opacity: 0;
+  }
+}
+
+@keyframes entrar {
+  from {
+    transform: translateX(16px);
+    opacity: 0;
+  }
+}
+
+.painel__topo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-bottom: var(--borda);
+}
+.painel__titulo {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.painel__corpo {
+  padding: 1rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.painel__fechar {
+  margin-left: auto;
+}
+
+/* ---------- Pop-up de login ---------------------------------------------- */
+@keyframes modal-entrar {
+  from { transform: translate(-50%, -50%) scale(0.96); opacity: 0; }
+}
+
+.aviso-formulario {
+  padding: 0.75rem 1rem;
+  border-radius: var(--raio);
+  background: var(--verdete-veu);
+  border: 1px solid var(--verdete);
+  color: var(--texto);
+  font-size: var(--corpo-menor);
+  font-weight: 550;
+}
+.aviso-formulario--erro {
+  background: var(--erro-veu);
+  border-color: var(--erro);
+  color: var(--erro);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---------- Estados: vazio, carregando, erro ---------------------------- */
+
+.estado {
+  border: 1px dashed var(--traco-forte);
+  border-radius: var(--raio);
+  padding: 1.5rem;
+  text-align: left;
+  color: var(--texto-2);
+  background: var(--superficie);
+  max-width: var(--coluna-leitura);
+}
+.estado__titulo {
+  color: var(--texto);
+  font-weight: 600;
+  margin-bottom: 0.375rem;
+}
+.estado__acoes {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+@keyframes brilho {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+/* ---------- Listas de dados --------------------------------------------- */
+
+/* Onze temas empilhados em uma coluna só desperdiçam a largura do
+   computador e alongam a página. Em duas colunas a lista cabe na dobra. */
+@media (min-width: 60rem) {
+
+  /* Numa grade de duas colunas, quem abre cada coluna são os dois
+     primeiros itens — e são eles que dispensam a linha de cima. */
+}
+
+.favorita {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.25rem 0;
+}
+
+.favorita__texto {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0.25rem;
+  border-radius: var(--raio-pequeno);
+  color: var(--texto);
+  text-decoration: none;
+}
+.favorita__texto:hover {
+  background: var(--superficie-2);
+  color: var(--texto);
+}
+
+.numeros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  gap: 1px;
+  background: var(--traco);
+  border: var(--borda);
+  border-radius: var(--raio);
+  overflow: hidden;
+}
+.numeros__celula {
+  background: var(--superficie);
+  padding: 0.875rem 1rem;
+}
+.numeros__valor {
+  font-family: var(--fonte-dados);
+  font-size: 1.5rem;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.2;
+  display: block;
+}
+.numeros__rotulo {
+  font-size: var(--meta);
+  color: var(--texto-2);
+}
+.numeros--destaque { margin-top: .5rem; border-color: transparent; background: transparent; }
+.numeros--destaque .numeros__celula { background: var(--superficie-2); border-radius: var(--raio-pequeno); }
+.numeros--destaque .numeros__valor { font-size: 1.875rem; color: var(--verdete); }
+.numeros-apoio { display: flex; flex-wrap: wrap; gap: .3rem 1.25rem; margin-top: .75rem; color: var(--texto-2); font-size: var(--corpo-menor); }
+.numeros-apoio a { color: var(--texto-2); }
+.numeros-apoio a:hover { color: var(--verdete); }
+
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--corpo-menor);
+}
+.tabela th,
+.tabela td {
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  border-bottom: var(--borda);
+}
+.tabela th {
+  font-size: var(--meta);
+  color: var(--texto-2);
+  font-weight: 600;
+  background: var(--superficie-2);
+}
+.tabela td.numerico,
+.tabela th.numerico {
+  text-align: right;
+}
+.tabela tr.linha-destaque td,
+.tabela tr.linha-destaque th {
+  background: var(--verdete-veu);
+  font-weight: 600;
+}
+
+/* ---------- Atalhos ------------------------------------------------------ */
+
+.atalhos {
+  display: grid;
+  gap: 0.5rem;
+  font-size: var(--corpo-menor);
+}
+.atalhos__linha {
+  display: flex;
+  gap: 0.75rem;
+  align-items: baseline;
+}
+kbd {
+  font-family: var(--fonte-dados);
+  font-size: var(--meta);
+  border: var(--borda);
+  border-bottom-width: 2px;
+  border-radius: var(--raio-pequeno);
+  padding: 0.0625rem 0.375rem;
+  background: var(--superficie-2);
+  white-space: nowrap;
+}
+
+/* ---------- Utilidades --------------------------------------------------- */
+
+.empilha > * + * {
+  margin-top: 1rem;
+}
+.empilha-2 > * + * {
+  margin-top: 1.5rem;
+}
+.linha {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+.linha--fim {
+  justify-content: flex-end;
+}
+.entre {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Linha de ações: no celular o botão principal ocupa a largura toda e vai
+   para cima, em vez de espremer o contador contra a borda. */
+.acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 30rem) {
+  .acoes {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+  .acoes > .botao {
+    width: 100%;
+  }
+}
+
+.texto-2 {
+  color: var(--texto-2);
+}
+.menor {
+  font-size: var(--corpo-menor);
+}
+.meta {
+  font-size: var(--meta);
+  color: var(--texto-2);
+}
+.limite-leitura {
+  max-width: var(--coluna-leitura);
+}
+
+/* Lista dentro de texto corrido: itens longos precisam respirar entre si. */
+.lista > li + li {
+  margin-top: 0.6em;
+}
+
+/* Dica de teclado não serve a quem está no toque. */
+
+/* No celular o botão de ação ocupa a linha inteira: alvo grande e ao alcance
+   do polegar vale mais do que economia de espaço. */
+@media (max-width: 30rem) {
+  .acao-responder .botao,
+  .heroi + .linha .botao,
+  .linha--empilha-celular .botao {
+    width: 100%;
+  }
+  .riscar {
+    width: 1.875rem;
+  }
+  .alternativa__letra {
+    width: 2.125rem;
+  }
+  .alternativa__texto {
+    padding: 0.75rem 0.625rem;
+  }
+  /* No celular o rótulo do resultado desce para a própria linha: ao lado do
+     texto ele espremia a alternativa a ponto de quebrar palavra no meio. */
+  .alternativa {
+    flex-wrap: wrap;
+  }
+  /* base zero: o texto encolhe em vez de pular para a linha de baixo, o que
+     deixaria a letra sozinha no topo. */
+  .alternativa__texto {
+    flex: 1 1 0;
+  }
+  .alternativa__marca {
+    flex: 1 0 100%;
+    justify-content: flex-start;
+    padding: 0 0.625rem 0.625rem 2.75rem;
+  }
+  /* No celular a margem lateral é espaço de leitura desperdiçado: o cartão
+     encosta na borda e o enunciado ganha a largura de volta. */
+  .principal > .conteudo--estreito {
+    padding: 0;
+  }
+  .conteudo--estreito .cartao {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+  }
+  .conteudo--estreito .barra-sessao__interno,
+  .conteudo--estreito > nav,
+  .conteudo--estreito > .linha {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+
+/* ---------- Contribuições da comunidade -------------------------------- */
+
+/* ---------- Retorno diário e sessões ----------------------------------- */
+
+.sobretitulo {
+  margin: 0 0 0.25rem;
+  color: var(--verdete);
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.09em;
+}
+
+.painel-diario {
+  padding: 1.25rem;
+  border: 1px solid color-mix(in srgb, var(--verdete) 34%, var(--traco));
+  border-radius: calc(var(--raio) * 2);
+  background: linear-gradient(135deg, var(--superficie), var(--verdete-veu));
+  box-shadow: var(--sombra);
+}
+.painel-diario__cabecalho {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.painel-diario__numeros { display: flex; gap: 1rem; color: var(--texto-2); font-size: var(--corpo-menor); }
+.painel-diario__numeros strong { color: var(--texto); font-family: var(--fonte-dados); font-size: 1.25rem; }
+.painel-diario__apoio { margin-top: 0.75rem; }
+.opcoes-avancadas { border-bottom: var(--borda); padding-bottom: 1rem; }
+.opcoes-avancadas summary { cursor: pointer; font-weight: 600; font-size: var(--corpo-menor); color: var(--texto-2); }
+.opcoes-avancadas__corpo { margin: 0.875rem 0 0; }
+.limite-personalizado input { width: 6rem; min-height: 40px; padding: 0 0.625rem; border: var(--borda); border-radius: var(--raio); background: var(--superficie); }
+
+/* ---------- Limite diário e planos ------------------------------------- */
+.aviso-limite { margin: 0 0 0.75rem; padding: 0.55rem 0.75rem; border: var(--borda); border-radius: var(--raio); color: var(--texto-2); background: var(--superficie-2); font-size: var(--meta); }
+.aviso-bloqueio-topo {
+  position: relative; overflow: hidden; color: #fff;
+  background: radial-gradient(120% 180% at 100% 0%, rgba(243, 198, 90, .22), transparent 55%), linear-gradient(110deg, #0c3b36 0%, #145a52 55%, #1d6b5f 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, .08); box-shadow: 0 6px 18px rgba(8, 40, 36, .18);
+}
+.aviso-bloqueio-topo__interno { display: flex; align-items: center; gap: .75rem 1.25rem; padding-block: .7rem; }
+.aviso-bloqueio-topo__selo {
+  flex: none; display: grid; place-content: center; text-align: center; width: 3rem; height: 3rem; border-radius: 999px; line-height: 1;
+  background: radial-gradient(closest-side, #0f4841 76%, transparent 79% 100%), conic-gradient(#f3c65a 100%, transparent 0);
+}
+.aviso-bloqueio-topo__selo b { font-size: 1.05rem; color: #ffe3a3; }
+.aviso-bloqueio-topo__selo small { font-size: .55rem; font-weight: 700; color: rgba(255, 255, 255, .7); }
+.aviso-bloqueio-topo__texto { display: grid; gap: .1rem; min-width: 0; flex: 1; font-size: var(--meta); line-height: 1.35; color: rgba(255, 255, 255, .78); }
+.aviso-bloqueio-topo__texto strong { font-size: .98rem; color: #fff; }
+.aviso-bloqueio-topo__relogio { display: grid; justify-items: center; gap: .2rem; flex: none; }
+.aviso-bloqueio-topo__rotulo { font-size: .66rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: rgba(255, 255, 255, .7); }
+.aviso-bloqueio-topo__relogio time { display: flex; gap: .3rem; }
+.aviso-bloqueio-topo__bloco { display: inline-flex; align-items: baseline; gap: .12rem; padding: .22rem .45rem; border-radius: var(--raio-controle); background: rgba(255, 255, 255, .1); border: 1px solid rgba(255, 255, 255, .14); }
+.aviso-bloqueio-topo__bloco b { font-size: 1.05rem; font-weight: 800; color: #ffe3a3; font-variant-numeric: tabular-nums; }
+.aviso-bloqueio-topo__bloco small { font-size: .62rem; font-weight: 700; color: rgba(255, 255, 255, .65); }
+.aviso-bloqueio-topo__cta {
+  flex: none; display: inline-flex; align-items: center; gap: .35rem; min-height: 2.5rem; padding: .35rem 1.1rem; border-radius: 999px;
+  background: linear-gradient(135deg, #ffe7a8 0%, #f3c65a 55%, #e0a93a 100%); color: #3d2903; font-weight: 800; font-size: var(--corpo-menor); text-decoration: none;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, .22), inset 0 1px 0 rgba(255, 255, 255, .6); transition: transform .15s ease, box-shadow .15s ease;
+}
+.aviso-bloqueio-topo__cta:hover { color: #3d2903; transform: translateY(-1px); box-shadow: 0 8px 20px rgba(0, 0, 0, .28), inset 0 1px 0 rgba(255, 255, 255, .7); }
+.aviso-bloqueio-topo__cta:focus-visible { outline: 2px solid #ffe3a3; outline-offset: 3px; }
+@media (max-width: 52rem) {
+  .aviso-bloqueio-topo__interno { display: grid; grid-template-columns: auto 1fr; gap: .6rem .8rem; }
+  .aviso-bloqueio-topo__relogio { grid-column: 1 / -1; grid-template-columns: auto 1fr; align-items: center; justify-items: start; gap: .6rem; }
+  .aviso-bloqueio-topo__cta { grid-column: 1 / -1; justify-content: center; }
+}
+@media (max-width: 52rem) and (min-width: 30rem) {
+  .aviso-bloqueio-topo__interno { grid-template-columns: auto 1fr auto; }
+  .aviso-bloqueio-topo__relogio { grid-column: auto; display: grid; grid-template-columns: none; justify-items: end; }
+}
+@media (prefers-reduced-motion: reduce) { .aviso-bloqueio-topo__cta:hover { transform: none; } }
+.liberacao-limite { display: grid; gap: 0.2rem; padding: 1rem; border: var(--borda); border-radius: var(--raio); background: var(--superficie-2); }
+.liberacao-limite strong { font-size: 1.65rem; color: var(--verdete); }
+.assinatura__heroi h1 { margin-bottom: 0.5rem; }
+.grade-planos { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1rem; margin-top: 1rem; }
+.plano { position: relative; display: flex; flex-direction: column; padding: 1.25rem; border: var(--borda); border-radius: calc(var(--raio) * 1.5); background: var(--superficie); }
+.plano--destaque { border: 2px solid var(--verdete); }
+.plano__selo { align-self: flex-start; margin-bottom: 0.75rem; padding: 0.15rem 0.5rem; border-radius: 999px; background: var(--verdete-veu); color: var(--verdete); font-size: var(--meta); font-weight: 700; }
+.plano__preco { margin: 0.65rem 0 0; font-size: 1.75rem; font-weight: 700; letter-spacing: -0.025em; }
+.plano .botao { margin-top: 1rem; }
+.cta-planos { padding: 1.5rem; border-radius: calc(var(--raio) * 1.5); background: var(--verdete-veu); }
+.cta-planos p { margin-top: 0.4rem; }
+
+/* ---------- Termos e consentimento ------------------------------------- */
+
+.termos { display: grid; gap: 2rem; }
+.termos__cabecalho { padding-bottom: 1.25rem; border-bottom: 2px solid var(--verdete); }
+.termos__resumo { margin-top: 0.75rem; color: var(--texto-2); font-size: 1.08rem; }
+.termos__destaque {
+  padding: 1rem 1.125rem;
+  border: 1px solid var(--verdete);
+  border-radius: var(--raio);
+  background: var(--verdete-veu);
+}
+.termos__destaque p { margin-top: 0.25rem; }
+.termos__indice {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  padding: 1rem;
+  border: var(--borda);
+  border-radius: var(--raio);
+  background: var(--superficie-2);
+  font-size: var(--corpo-menor);
+}
+.termos__indice strong { flex-basis: 100%; }
+.termos section { scroll-margin-top: 5rem; }
+.termos section > h2 { margin-bottom: 0.75rem; }
+.termos section > h3 { margin: 1.25rem 0 0.5rem; }
+.termos section > p { line-height: 1.72; }
+.termos__aceite {
+  position: sticky;
+  bottom: 0.75rem;
+  z-index: 10;
+  padding: 1.25rem;
+  border: 1px solid var(--verdete);
+  border-radius: calc(var(--raio) * 1.5);
+  background: color-mix(in srgb, var(--superficie) 96%, transparent);
+  box-shadow: 0 8px 30px rgba(18, 24, 26, 0.14);
+  backdrop-filter: blur(12px);
+}
+.termos__aceite .botao { margin-top: 0.75rem; }
+
+/* ---------- Leitura dos comentários ------------------------------------ */
+
+.comentario { max-width: 72ch; padding-top: 1.5rem; }
+.comentario__cabecalho { display: flex; align-items: flex-start; justify-content: space-between; gap: 0.75rem; padding-bottom: 0.875rem; margin-bottom: 1rem; border-bottom: var(--borda); }
+.comentario__cabecalho .comentario__titulo { margin: 0; color: var(--texto); font-size: 1rem; letter-spacing: 0; text-transform: none; }
+.comentario__apoio { margin: 0.1rem 0 0; color: var(--texto-2); font-size: var(--meta); }
+.comentario__subtitulo { margin: 0 0 0.5rem; color: var(--texto); font-size: var(--corpo-menor); font-weight: 700; }
+.ia__conceito { padding: 0.875rem 1rem; border-left: 3px solid var(--verdete); border-radius: 0 var(--raio) var(--raio) 0; background: var(--verdete-veu); }
+.analise-alternativas { margin-top: 1.1rem; }
+.ia__item { padding: 0.75rem 0; line-height: 1.62; }
+.nota-pessoal { margin-top: 1rem; padding: 0.875rem 1rem; border: 1px dashed var(--traco-forte); border-radius: var(--raio); background: var(--superficie); }
+.nota-pessoal summary { cursor: pointer; font-weight: 650; }
+.nota-pessoal .meta { margin: 0.25rem 0 0.625rem; }
+.nota-pessoal textarea { padding: 0.65rem 0.75rem; resize: vertical; line-height: 1.5; }
+
+/* Aviso de cookies (só com o pixel configurado): cartão no rodapé da tela, acima da navegação do celular. */
+.aviso-cookies {
+  position: fixed; z-index: 45; left: 50%; bottom: max(1rem, env(safe-area-inset-bottom)); transform: translateX(-50%);
+  width: min(40rem, calc(100% - 2rem)); display: flex; gap: 1rem; align-items: center;
+  padding: 0.9rem 1rem; border: var(--borda); border-radius: var(--raio-cartao);
+  background: var(--superficie); box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+}
+.aviso-cookies p { margin: 0; font-size: 0.88rem; line-height: 1.45; }
+.aviso-cookies__botoes { display: flex; gap: 0.5rem; flex-shrink: 0; }
+@media (max-width: 40rem) {
+  .aviso-cookies { flex-direction: column; align-items: stretch; bottom: calc(4.6rem + env(safe-area-inset-bottom)); }
+  .aviso-cookies__botoes .botao { flex: 1; }
+}
+
+/* Navegação principal ao alcance do polegar. */
+.navegacao-mobile { display: none; }
+@media (max-width: 40rem) {
+  body { padding-bottom: calc(4.25rem - 0.35rem + max(0.35rem, env(safe-area-inset-bottom))); }
+  .navegacao-mobile {
+    position: fixed; z-index: 40; bottom: 0; left: 0; right: 0;
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    padding: 0.35rem max(0.35rem, env(safe-area-inset-right)) max(0.35rem, env(safe-area-inset-bottom));
+    border-top: var(--borda); background: color-mix(in srgb, var(--superficie) 94%, transparent);
+    backdrop-filter: blur(12px);
+  }
+  .navegacao-mobile a { display: grid; justify-items: center; gap: 0.1rem; padding: 0.25rem; color: var(--texto-2); text-decoration: none; font-size: 0.68rem; }
+  .navegacao-mobile a[aria-current="page"] { color: var(--verdete); font-weight: 700; }
+  .painel-diario__cabecalho { display: grid; }
+  .painel-diario__numeros { justify-content: space-between; }
+  .painel-diario__numeros span { display: grid; }
+  .comentario__cabecalho { display: grid; }
+  .comentario__cabecalho .selo { margin-left: 0; width: fit-content; }
+  .termos { gap: 1.5rem; }
+  .termos__indice { display: grid; }
+  .termos__aceite { bottom: calc(4.6rem - 0.35rem + max(0.35rem, env(safe-area-inset-bottom))); margin: 0 -0.25rem; padding: 1rem; }
+  .termos__aceite .botao { width: 100%; }
+  .grade-planos { grid-template-columns: 1fr; }
+}
+
+/* ---------- Página de progresso ---------------------------------------- */
+
+/* Figura de destaque na mesma fonte do resto e com algarismos
+   proporcionais: `tabular-nums` só serve onde números se alinham em coluna. */
+
+/* Barra de cobertura: trilho recuado, parte preenchida na cor da marca.
+   Ponta arredondada só na extremidade do dado — a base fica reta. */
+
+/* ---------- Gráfico ----------------------------------------------------- */
+
+.grafico {
+  margin: 0;
+  border: var(--borda);
+  border-radius: var(--raio);
+  background: var(--superficie);
+  padding: 1rem;
+}
+
+.grafico__svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Grade e eixos: traço de 1px, sólido, um passo fora da superfície. */
+.grafico__grade {
+  stroke: var(--traco);
+  stroke-width: 1;
+}
+
+.grafico__tique {
+  fill: var(--texto-2);
+  font-size: 11px;
+  font-family: var(--fonte-dados);
+}
+
+.grafico__area {
+  fill: var(--verdete);
+  opacity: 0.1;
+}
+
+.grafico__linha {
+  fill: none;
+  stroke: var(--verdete);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.grafico__mira {
+  stroke: var(--traco-forte);
+  stroke-width: 1;
+}
+
+/* Anel na cor da superfície para o ponto continuar legível sobre a linha. */
+.grafico__ponto {
+  fill: var(--verdete);
+  stroke: var(--superficie);
+  stroke-width: 2;
+}
+
+.grafico__legenda {
+  margin-top: 0.6rem;
+  font-size: var(--corpo-menor);
+  color: var(--texto-2);
+}
+
+.grafico__tabela {
+  margin-top: 0.75rem;
+  font-size: var(--corpo-menor);
+}
+
+.grafico__tabela summary {
+  cursor: pointer;
+  color: var(--texto-2);
+}
+
+/* Rotina diária e leitura editorial, nos dois temas. */
+.painel-diario { padding: clamp(1.25rem, 3vw, 2rem); border: var(--borda); border-radius: var(--raio-cartao); background: var(--superficie); }
+.painel-diario__intro { max-width: 65ch; margin-bottom: 1.5rem; }
+.painel-diario__intro h2 { margin: .4rem 0 .75rem; }
+.painel-diario__intro p { margin-bottom: 1rem; }
+/* É um <span> logo após a linha de botões — sem margem própria ele fica
+   colado nela, com espaço só do lado errado (esquerda, não em cima). */
+.acao-calendario { display: flex; width: fit-content; margin: 1rem 0 0; }
+/* No mesmo ponto em que os botões da linha de cima passam a ocupar a largura
+   inteira, este também passa — senão ele sobra pequeno ao lado deles, como se
+   fosse de outro grupo. Repetida aqui, depois da regra de largura acima, para
+   vencer o empate de especificidade: a última regra no arquivo é que vale. */
+@media (max-width: 30rem) {
+  .acao-calendario,
+  .acao-calendario .botao {
+    width: 100%;
+  }
+}
+/* ---------- Início: contador ao vivo e ações rápidas -------------------- */
+@keyframes pulso-vivo { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
+
+.acoes-rapidas { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; padding: 0; margin: 0; list-style: none; }
+@media (min-width: 40rem) {
+  .acoes-rapidas { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; }
+}
+
+.cartao-instagram { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; background: linear-gradient(135deg, var(--verdete-veu), var(--superficie)); }
+.cartao-instagram__icone { display: inline-flex; align-items: center; justify-content: center; width: 3rem; height: 3rem; border-radius: 50%; background: var(--superficie); color: var(--verdete); flex: 0 0 auto; box-shadow: var(--sombra); }
+.cartao-instagram__texto { flex: 1 1 16rem; }
+.cartao-instagram__texto h2 { margin-bottom: .2rem; }
+
+.provas-selecao { display: flex; flex-wrap: wrap; gap: .6rem; padding: 0; margin: 0; list-style: none; }
+.provas-selecao a { display: inline-flex; align-items: center; gap: .4rem; padding: .55rem 1.1rem; border-radius: 999px; border: var(--borda); background: var(--superficie); color: var(--texto); text-decoration: none; font-weight: 600; font-size: var(--corpo-menor); transition: background-color .12s ease-out, border-color .12s ease-out; }
+.provas-selecao a:hover { background: var(--superficie-2); border-color: var(--traco-forte); color: var(--texto); }
+::highlight(ortoquestoes-grifo), .grifo-temporario { background: #f5df72; color: #241f00; border-radius: 2px; }
+.calendario__nav { display:flex; gap:.375rem; flex:0 0 auto; }
+.calendario__cabecalho { display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:.5rem; margin-top:1rem; text-align:center; }
+.calendario__cabecalho span { color:var(--texto-2); font-size:var(--meta); text-transform:uppercase; }
+.calendario { display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:.5rem; margin-top:.5rem; }.calendario__dia { min-height:4.5rem; padding:.5rem; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:.15rem; border:var(--borda); border-radius:var(--raio-controle); background:var(--superficie); color:var(--texto); font:inherit; cursor:pointer; }.calendario__dia small { color:var(--texto-2); font-size:var(--meta); }.calendario__dia strong { font-variant-numeric:tabular-nums; font-size:1.2rem; }.calendario__dia--leve { background:var(--verdete-veu); border-color:var(--verdete); }.calendario__dia--alto { background:var(--aviso-veu); border-color:var(--aviso); }.calendario__dia--atrasado { background:var(--erro-veu); border-color:var(--erro); }.calendario__dia--selecionado { outline:2px solid var(--texto); outline-offset:2px; }.calendario__dia--passado { opacity:.4; cursor:default; }.calendario__dia:disabled { cursor:default; }.calendario__vazio { min-height:4.5rem; }
+.intencoes { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .75rem; }
+.intencao { display: flex; flex-direction: column; gap: .5rem; text-align: left; padding: 1.25rem; border: var(--borda); border-radius: var(--raio-controle); background: var(--superficie); color: var(--texto); cursor: pointer; font: inherit; }
+.intencao:hover, .intencao:focus-visible { border-color: var(--verdete); background: var(--verdete-veu); }
+.intencao span { color: var(--texto-2); font-size: var(--corpo-menor); }
+.filtros-detalhes > summary, .referencias > summary, .notas-questao > summary { cursor: pointer; min-height: 44px; padding: .65rem 0; font-weight: 650; }
+.filtros-detalhes[open] > .campo, .filtros-detalhes[open] > .linha-campos { margin-top: 1.5rem; }
+.filtros-destaque { padding: 1rem; border: 1px solid var(--linha); border-radius: var(--raio); background: var(--superficie-2); }
+.filtros-destaque + .filtros-destaque { margin-top: 1rem; }
+.filtros-destaque h2 { margin: 0; font-size: 1.1rem; }
+.filtros-destaque > .texto-2 { margin: .25rem 0 .85rem; }
+.modo-explicacao { display: grid; gap: .2rem; padding: .8rem 1rem; border-radius: var(--raio); background: var(--superficie-2); border: 1px solid var(--linha); }
+.modo-explicacao span { color: var(--texto-2); font-size: .95rem; }
+.comentario { max-width: none; border-top: 0; }
+.comentario__titulo { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; color: var(--texto); font-size: 1.1rem; letter-spacing: 0; margin-bottom: 1.2rem; }
+.comentario__titulo .selo { margin-left: 0; }
+.ia__conceito { padding: 1.25rem; background: var(--verdete-veu); border-left: 3px solid var(--verdete); border-radius: var(--raio-controle); margin-bottom: 1.5rem; }
+.ia__conceito h3 { color: var(--verdete); font-size: 1rem; margin: 0 0 .75rem; }
+.ia__item { padding: 1.25rem 0; gap: 1rem; font-size: var(--corpo); }
+.ia__item > div { min-width: 0; }
+.ia__item > div > strong { display: block; font-size: var(--corpo-menor); margin-bottom: .65rem; }
+.ia__letra { width: 2rem; height: 2rem; border-radius: 50%; }
+.referencias { margin-top: 1rem; padding-top: .5rem; border-top: var(--borda); color: var(--texto-2); font-size: var(--corpo-menor); overflow-wrap: anywhere; }
+.referencias__nota { margin: .65rem 0 0; font-style: italic; }
+.referencias ul { margin: .65rem 0 0; padding-left: 1.2rem; }
+.referencias li + li { margin-top: .65rem; }
+.nav-mobile { display: none; }
+@media (max-width: 48rem) {
+  .calendario__dia, .calendario__vazio { min-height:3.25rem; padding:.35rem; }
+  .calendario__dia strong { font-size:1rem; }
+  .intencoes { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pagina { padding-bottom: calc(4.5rem + env(safe-area-inset-bottom)); }
+  .nav-mobile { position: fixed; inset: auto 0 0; display: grid; grid-template-columns: repeat(4, 1fr); z-index: 25; background: var(--superficie); border-top: var(--borda); padding: .35rem .3rem calc(.35rem + env(safe-area-inset-bottom)); }
+  .nav-mobile a { display: grid; place-items: center; min-height: 48px; font-size: .8rem; color: var(--texto-2); text-decoration: none; border-radius: 6px; }
+  .nav-mobile a[aria-current="page"] { background: var(--verdete-veu); color: var(--verdete); font-weight: 700; }
+  .ia__item { gap: .65rem; }
+}
+@media print { .nav-mobile, .notas-questao { display: none; } .pagina { padding-bottom: 0; } }
+
+.conta-pagina header p { margin: .75rem 0; }
+.conta-pagina h2 { overflow-wrap: anywhere; }
+.conta-pagina pre { overflow-wrap: anywhere; white-space: pre-wrap; max-height: 18rem; overflow-y: auto; font: inherit; padding: 1rem; background: var(--superficie-2); }
+.conta-pagina .campo { display: grid; gap: .5rem; }
+.campo.campo--checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+}
+.campo.campo--checkbox input {
+  margin: 0.3rem 0 0;
+  accent-color: var(--verdete);
+  width: 1.125rem;
+  height: 1.125rem;
+  flex: 0 0 auto;
+}
+.pagina--compacta .cartao__corpo { padding: .9rem; }
+.pagina--compacta .empilha { gap: .7rem; }
+.pagina--foco .conteudo--estreito { max-width: 76rem; }
+.pagina--foco .alternativas { max-width: 72ch; }
+
+
+/* ---------- Escada de revisão (página de revisão) ----------------------- */
+
+/* Os degraus mostram, em dias, quando a questão volta. Três linhas lado a
+   lado deixam a comparação imediata: chute volta amanhã, certeza volta em
+   três dias. */
+.escada {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+.escada__linha {
+  border: var(--borda);
+  border-left: 3px solid var(--traco-forte);
+  border-radius: var(--raio);
+  padding: 0.75rem 0.9rem;
+  background: var(--superficie-2);
+}
+.escada__linha--nivel2 { border-left-color: var(--verdete); opacity: .92; }
+.escada__linha--nivel3 { border-left-color: var(--verdete); background: var(--verdete-veu); }
+.escada__topo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+}
+.escada__icone {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  background: var(--superficie);
+  color: var(--texto-2);
+  flex: 0 0 auto;
+}
+.escada__linha--nivel2 .escada__icone,
+.escada__linha--nivel3 .escada__icone { color: var(--verdete); }
+.escada__topo strong {
+  min-width: 11ch;
+}
+.escada__degraus {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+.escada__degraus em {
+  font-style: normal;
+  font-family: var(--fonte-dados);
+  font-size: var(--meta);
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--raio-pequeno);
+  background: var(--verdete-veu);
+  color: var(--verdete);
+  font-weight: 600;
+}
+.escada__linha small {
+  display: block;
+  margin-top: 0.4rem;
+  color: var(--texto-2);
+  font-size: var(--corpo-menor);
+}
+.escada__regra {
+  font-size: var(--corpo-menor);
+  color: var(--texto-2);
+}
+.aviso-bloqueio-topo__fechar { flex: none; display: grid; place-items: center; width: 2.25rem; height: 2.25rem; border: 0; border-radius: 999px; background: rgba(255, 255, 255, .1); color: rgba(255, 255, 255, .85); cursor: pointer; }
+.aviso-bloqueio-topo__fechar:hover { background: rgba(255, 255, 255, .2); color: #fff; }
+@media (max-width: 52rem) { .aviso-bloqueio-topo__fechar { position: absolute; top: .45rem; right: .5rem; width: 2rem; height: 2rem; } .aviso-bloqueio-topo__texto { padding-right: 2rem; } }
+.chip-limite { display: none; align-items: center; gap: .3rem; min-height: 32px; padding: 0 .7rem; border: 1px solid var(--traco); border-radius: 999px; background: var(--superficie-2); color: var(--texto-2); font: inherit; font-size: .78rem; font-weight: 650; cursor: pointer; white-space: nowrap; }
+.chip-limite:hover { color: var(--texto); border-color: color-mix(in srgb, var(--verdete) 35%, var(--traco)); }
+.chip-limite svg { color: var(--verdete); }
+@media (min-width: 64rem) { .chip-limite { display: inline-flex; } .chip-limite + .nav-link--planos { display: none; } }
+@media (min-width: 64rem) and (max-width: 80rem) { .chip-limite { padding: 0 .6rem; } .chip-limite svg { display: none; } }
+
+/* Faixa do limite diário, versão discreta: uma linha só. */
+.aviso-bloqueio-topo .aviso-bloqueio-topo__interno { display: flex !important; align-items: center; gap: .6rem; padding-block: .4rem; font-size: var(--meta); }
+.aviso-bloqueio-topo__interno > svg { flex: none; color: #ffe3a3; }
+.aviso-bloqueio-topo .aviso-bloqueio-topo__texto { display: block; flex: 1; min-width: 0; padding-right: 0; font-size: var(--meta); color: rgba(255, 255, 255, .82); }
+.aviso-bloqueio-topo__texto time { font-weight: 800; color: #fff; }
+.aviso-bloqueio-topo .aviso-bloqueio-topo__cta { flex: none; padding: .3rem .8rem; min-height: 0; font-size: var(--meta); border-radius: 999px; box-shadow: none; }
+.aviso-bloqueio-topo .aviso-bloqueio-topo__fechar { position: static; width: 1.8rem; height: 1.8rem; }
+@media (max-width: 40rem) { .aviso-bloqueio-topo .aviso-bloqueio-topo__cta { display: none; } }
+
+/*
+ * iPhone (Safari) dá zoom sozinho ao tocar num campo com letra menor que 16px
+ * e a página fica ampliada, com botões e barra cortados. Em telas de toque,
+ * todo campo de texto tem pelo menos 16px.
+ */
+@media (hover: none) and (pointer: coarse) {
+  input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="color"]), select, select.entrada, .campo select, textarea { font-size: 16px !important; }
+}
+.backup-progresso__restaurar { cursor: pointer; }
+.backup-progresso__restaurar:focus-within { outline: 2px solid var(--verdete); outline-offset: 2px; }
+
+/* Continuar com Google: cores do botão oficial (claro e escuro). */
+.botao-google__bloco { display: grid; gap: 0.55rem; }
+.botao.botao-google { display: inline-flex; align-items: center; justify-content: center; gap: 0.7rem; min-height: 48px; background: #ffffff; color: #1f1f1f; border: 1px solid #747775; font-weight: 600; }
+.botao.botao-google:hover:not(:disabled) { background: #f2f2f2; color: #1f1f1f; }
+:root[data-tema="escuro"] .botao.botao-google { background: #131314; color: #e3e3e3; border-color: #8e918f; }
+:root[data-tema="escuro"] .botao.botao-google:hover:not(:disabled) { background: #1f1f20; color: #e3e3e3; }
+.botao-google__nota { margin: 0; font-size: var(--meta); color: var(--texto-2); text-align: center; line-height: 1.45; }
+.botao-google__ou { display: flex; align-items: center; gap: 0.75rem; margin: 0.35rem 0 0; color: var(--texto-2); font-size: var(--meta); }
+.botao-google__ou::before, .botao-google__ou::after { content: ""; flex: 1; height: 1px; background: var(--traco); }
+
+/* Etapa de formação e provas de interesse (cadastro, perfil e aviso único). */
+/* Fundo dourado bem suave para chamar a atenção para a etapa e a prova, sem gritar. */
+.campos-etapa {
+  display: grid; gap: 0.9rem; padding: 0.9rem 1rem;
+  background: var(--ouro-veu); border: 1px solid color-mix(in srgb, var(--ouro) 28%, transparent);
+  border-radius: var(--raio-controle);
+}
+.campos-etapa__provas { border: 0; padding: 0; margin: 0; display: grid; gap: 0.5rem; min-width: 0; }
+.campos-etapa__provas legend { font-weight: 600; padding: 0; margin-bottom: 0.5rem; }
+.campos-etapa__opcoes { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr)); gap: 0.5rem; }
+.campos-etapa__prova {
+  display: flex; align-items: flex-start; gap: 0.6rem; text-align: left; min-height: var(--toque);
+  padding: 0.6rem 0.75rem; border: var(--borda); border-radius: var(--raio-controle);
+  background: var(--superficie); color: var(--texto); font: inherit; cursor: pointer;
+}
+.campos-etapa__prova:hover { border-color: var(--traco-forte); }
+.campos-etapa__prova[aria-pressed="true"] { border-color: var(--verdete); background: var(--verdete-veu); }
+.campos-etapa__prova strong { display: block; font-size: var(--corpo-menor); }
+.campos-etapa__prova small { display: block; color: var(--texto-2); font-size: var(--meta); line-height: 1.35; }
+.campos-etapa__marca {
+  flex: 0 0 auto; width: 1.1rem; height: 1.1rem; margin-top: 0.15rem; border-radius: 4px;
+  border: 1.5px solid var(--traco-forte); display: grid; place-items: center; color: var(--sobre-destaque);
+}
+.campos-etapa__prova[aria-pressed="true"] .campos-etapa__marca { background: var(--verdete); border-color: var(--verdete); }
+
+/* Pergunta única sobre etapa e prova, para quem já tinha conta. */
+.pergunta-etapa { border: 1px solid var(--verdete); background: var(--superficie); border-radius: var(--raio-cartao); padding: 1.1rem; display: grid; gap: 0.9rem; box-shadow: var(--sombra-media); }
+.pergunta-etapa__cabeca { display: flex; gap: 0.75rem; align-items: flex-start; }
+.pergunta-etapa__cabeca h2 { font-size: 1.15rem; margin: 0; }
+.pergunta-etapa__cabeca p { margin: 0.25rem 0 0; color: var(--texto-2); font-size: var(--corpo-menor); }
+.pergunta-etapa__selo { font-size: var(--meta); font-weight: 700; color: var(--verdete); text-transform: uppercase; letter-spacing: 0.04em; }
+.pergunta-etapa__acoes { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }
+
+/* Opção de mostrar o serviço no ranking (ranking e Minha conta). */
+.rk-opcao-servico { display: flex; align-items: center; gap: .75rem; padding: .85rem 1rem; border: var(--borda); border-radius: var(--raio-cartao); background: var(--superficie); }
+.rk-opcao-servico--compacta { padding: .7rem .8rem; border-radius: var(--raio-controle); }
+.rk-opcao-servico__icone { flex: 0 0 auto; display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 50%; background: var(--verdete-veu); color: var(--verdete); }
+.rk-opcao-servico__texto { flex: 1 1 auto; display: grid; gap: .15rem; min-width: 0; }
+.rk-opcao-servico__texto small { color: var(--texto-2); font-size: var(--meta); }
+.rk-opcao-servico__aviso { color: var(--erro) !important; }
+.rk-opcao-servico__chave, .rk-opcao-servico__botao { flex: 0 0 auto; }
+@media (max-width: 520px) { .rk-opcao-servico { flex-wrap: wrap; } }
+
+/* Estilos do cartão da questão e do que vem junto com ele (portão de conta, anotações, comentários da comunidade).
+   Saíram do CSS global para não descer em toda página. */
+.grupo-opcoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.opcao-segmento {
+  min-height: 40px;
+  padding: 0 0.875rem;
+  border: var(--borda);
+  border-radius: var(--raio);
+  background: var(--superficie);
+  color: var(--texto-2);
+  font-size: var(--corpo-menor);
+  cursor: pointer;
+}
+.opcao-segmento[aria-pressed="true"] {
+  background: var(--verdete-veu);
+  border-color: var(--verdete);
+  color: var(--verdete);
+  font-weight: 600;
+}
+.opcao-segmento:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.alternativa-envelope {
+  display: flex;
+  align-items: stretch;
+  gap: 0.375rem;
+}
+.alternativa-envelope .alternativa {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.bloco-comentario + .bloco-comentario {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: var(--borda);
+}
+@media (max-width: 47.99rem), (pointer: coarse) {
+  .so-teclado {
+    display: none;
+  }
+}
+.contribuicao {
+  border-left: 3px solid var(--verdete);
+  padding: 0.125rem 0 0.125rem 0.875rem;
+}
+.contribuicao__credito {
+  margin: 0.5rem 0 0;
+  font-size: var(--meta);
+  color: var(--texto-2);
+}
+.bloco-comentario {
+  padding: 1.125rem;
+  border: var(--borda);
+  border-radius: calc(var(--raio) * 1.5);
+  background: var(--superficie-2);
+}
+.bloco-comentario + .bloco-comentario { margin-top: 1rem; padding-top: 1.125rem; border-top: var(--borda); }
+.bloco-comentario--ia { border-top: 3px solid var(--verdete); background: var(--superficie); }
+.bloco-comentario--comunidade { border-top: 3px solid color-mix(in srgb, var(--verdete) 55%, var(--traco)); }
+.contribuicao { padding: 0.875rem 1rem; border: var(--borda); border-left: 3px solid var(--verdete); border-radius: var(--raio); background: var(--superficie); }
+@media (max-width: 40rem) {
+  .acao-responder--pronta { position: sticky; bottom: calc(4.2rem - 0.35rem + max(0.35rem, env(safe-area-inset-bottom))); z-index: 10; padding: 0.5rem; margin: 0 -0.5rem; background: color-mix(in srgb, var(--superficie) 94%, transparent); backdrop-filter: blur(8px); }
+}
+.questao-impressa ::selection { background: color-mix(in srgb, var(--verdete) 35%, transparent); }
+.questao-impressa { position:relative; }
+.grifo-overlay { position:absolute; z-index:1; pointer-events:none; background:#f5df72; opacity:.52; border-radius:2px; mix-blend-mode:multiply; }
+.menu-grifo { position:fixed; z-index:50; transform:translate(-50%,-100%); display:inline-flex; align-items:center; gap:.35rem; min-height:2.25rem; padding:.4rem .7rem; color:#241f00; background:#f5df72; border:1px solid #c9a900; border-radius:var(--raio-controle); box-shadow:0 6px 20px rgba(0,0,0,.18); font:600 .875rem var(--fonte-texto); cursor:pointer; }
+.menu-grifo:hover { background:#ffe878; }
+.bloco-comentario { padding: clamp(1rem, 3vw, 1.75rem); border: var(--borda); border-radius: var(--raio-controle); background: var(--superficie-2); }
+.bloco-comentario + .bloco-comentario { padding-top: clamp(1rem, 3vw, 1.75rem); margin-top: 1.25rem; }
+.contribuicao { padding: 1.25rem; background: var(--superficie); border: var(--borda); border-radius: var(--raio-controle); }
+.notas-questao { margin-top: 1.5rem; padding: .5rem 1rem; border: var(--borda); border-radius: var(--raio-controle); }
+.notas-questao textarea { width: 100%; margin: .75rem 0; resize: vertical; }
+.origem-questao { margin-bottom: 1rem; }
+@media (max-width: 48rem) {
+  .acao-responder--pronta { position: sticky; bottom: calc(4rem + env(safe-area-inset-bottom)); padding: .75rem 0; background: var(--superficie); z-index: 20; }
+}
+@media (max-width: 48rem) {
+  .bloco-comentario .aviso-ia { padding: .75rem; }
+}
+.pagina--foco .questao-impressa .questao__topo { margin-bottom: 1.25rem; }
+.pagina--foco .questao-impressa .questao__enunciado { font-size: 1.15em; line-height: 1.8; max-width: 68ch; }
+@media (max-width: 40rem) {
+  .alternativa-envelope { gap: 0.3rem; }
+}
+@media (max-width: 40rem) {
+  .acao-responder { gap: 0.5rem; }
+}
+@media (max-width: 40rem) {
+  .acao-responder .confianca {
+    display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px; width: 100%;
+    padding: 4px; border-radius: var(--raio-controle); background: var(--superficie-2); border: var(--borda);
+  }
+}
+@media (max-width: 40rem) {
+  .acao-responder .confianca .opcao-segmento {
+    min-height: 38px; padding: 0 0.3rem; border: 0; border-radius: var(--raio-controle); background: transparent;
+    font-size: 0.9rem; justify-content: center;
+  }
+}
+@media (max-width: 40rem) {
+  .acao-responder .confianca .opcao-segmento[aria-pressed="true"] { background: var(--superficie); color: var(--verdete); box-shadow: 0 1px 3px rgba(18, 24, 26, 0.12); font-weight: 700; }
+}
+@media (max-width: 40rem) {
+  :root[data-tema="escuro"] .acao-responder .confianca .opcao-segmento[aria-pressed="true"] { background: var(--verdete-veu); box-shadow: none; }
+}
+@media (max-width: 40rem) {
+  .acao-responder .botao--grande { width: 100%; min-height: 48px; border-radius: var(--raio-controle); }
+}
+@media (max-width: 40rem) {
+  .acao-responder__dica { display: none; }
+}
+.questao-impressa { border-radius: var(--raio-cartao); box-shadow: var(--sombra-media); }
+.questao-impressa > .cartao__corpo { padding: clamp(1.1rem, 3.2vw, 2.1rem); }
+.qz-topo { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.75rem 1rem; margin-bottom: 0.9rem; }
+.qz-topo__info { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.75rem; min-width: 0; }
+.qz-numero { margin: 0; font-weight: 800; font-size: 1.05rem; line-height: inherit; letter-spacing: -0.01em; }
+.qz-numero small { font-weight: 500; font-size: 0.9rem; color: var(--texto-2); }
+.qz-origem {
+  display: inline-flex; align-items: center; padding: 0.2rem 0.7rem; border-radius: 999px;
+  background: var(--grafite); color: var(--porcelana); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.03em;
+}
+:root[data-tema="escuro"] .qz-origem { background: var(--superficie-2); color: var(--texto); border: var(--borda); }
+.qz-ferramentas {
+  display: inline-flex; align-items: center; gap: 2px; padding: 3px;
+  border-radius: 999px; background: var(--superficie-2); border: var(--borda);
+}
+.qz-ferramenta {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 38px; height: 38px; border: 0; border-radius: 50%;
+  background: transparent; color: var(--texto-2); cursor: pointer;
+  transition: background-color 0.12s ease, color 0.12s ease, transform 0.12s ease;
+}
+.qz-ferramenta:hover { background: var(--superficie); color: var(--texto); }
+.qz-ferramenta:active { transform: scale(0.94); }
+.qz-ferramenta[aria-pressed="true"], .qz-ferramenta--ativa { background: var(--verdete-veu); color: var(--verdete); }
+.qz-ferramenta--ouro, .qz-ferramenta--ouro[aria-pressed="true"] { background: var(--ouro-veu); color: var(--ouro); }
+.qz-etiquetas { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1.1rem; }
+.qz-chip {
+  display: inline-flex; align-items: center; padding: 0.25rem 0.7rem; border-radius: 999px;
+  background: var(--superficie-2); border: var(--borda); color: var(--texto-2);
+  font-size: 0.78rem; font-weight: 600;
+}
+.qz-chip--tema { background: var(--verdete-veu); border-color: transparent; color: var(--verdete); }
+.qz-chip--dificuldade { border-style: dashed; }
+.qz-chip--alerta { background: var(--aviso-veu); border-color: transparent; color: var(--aviso); }
+.questao-impressa .questao__enunciado { font-size: 1.08rem; line-height: 1.72; margin-bottom: 1.4rem; }
+.questao-impressa .alternativas { gap: 0.6rem; }
+.questao-impressa .alternativa {
+  align-items: center; border-radius: var(--raio-cartao); border-width: 1.5px;
+  transition: border-color 0.12s ease, background-color 0.12s ease, box-shadow 0.12s ease, transform 0.08s ease;
+}
+.questao-impressa .alternativa:active:not(:disabled) { transform: scale(0.995); }
+.questao-impressa .alternativa__letra {
+  width: 2.1rem; height: 2.1rem; margin: 0.65rem 0 0.65rem 0.75rem; flex: 0 0 auto; align-self: center;
+  border: 1.5px solid var(--traco-forte); border-radius: 50%; background: var(--superficie);
+  font-family: var(--fonte-texto); font-weight: 800; font-size: 0.9rem; color: var(--texto-2);
+}
+.questao-impressa .alternativa__texto { padding: 0.8rem 1rem 0.8rem 0.8rem; line-height: 1.5; }
+.questao-impressa .alternativa--escolhida { box-shadow: 0 0 0 3px color-mix(in srgb, var(--verdete) 18%, transparent); }
+.questao-impressa .alternativa--escolhida .alternativa__letra,
+.questao-impressa .alternativa--certa .alternativa__letra,
+.questao-impressa .alternativa--errada .alternativa__letra { border-color: transparent; color: #fff; }
+.questao-impressa .alternativa--escolhida .alternativa__letra { background: var(--verdete); color: var(--sobre-destaque); }
+.questao-impressa .alternativa--certa .alternativa__letra { background: var(--acerto); }
+.questao-impressa .alternativa--errada .alternativa__letra { background: var(--erro); }
+.questao-impressa .alternativa__marca { padding: 0.25rem 0.65rem; margin-right: 0.7rem; border-radius: 999px; background: var(--superficie); }
+.questao-impressa .riscar { border-radius: var(--raio-controle); border-color: transparent; background: transparent; }
+@media (hover: hover) {
+  .questao-impressa .riscar { opacity: 0.35; transition: opacity 0.12s ease, background-color 0.12s ease; }
+}
+@media (hover: hover) {
+  .questao-impressa .alternativa-envelope:hover .riscar, .questao-impressa .riscar:focus-visible, .questao-impressa .riscar[aria-pressed="true"] { opacity: 1; }
+}
+@media (hover: hover) {
+  .questao-impressa .riscar:hover { background: var(--superficie-2); }
+}
+.questao-impressa .acao-responder { display: flex; flex-wrap: wrap; align-items: center; gap: 0.65rem 0.9rem; }
+.acao-responder .confianca {
+  display: inline-grid; grid-template-columns: repeat(3, auto); gap: 3px; margin: 0;
+  padding: 4px; border-radius: var(--raio-cartao); background: var(--superficie-2); border: var(--borda);
+}
+.acao-responder .confianca .opcao-segmento {
+  min-height: 40px; padding: 0 1rem; border: 0; border-radius: var(--raio-controle); background: transparent; color: var(--texto-2); font-weight: 600;
+}
+.acao-responder .confianca .opcao-segmento[aria-pressed="true"] { background: var(--superficie); color: var(--verdete); box-shadow: 0 1px 3px rgba(18, 24, 26, 0.12); font-weight: 750; }
+:root[data-tema="escuro"] .acao-responder .confianca .opcao-segmento[aria-pressed="true"] { background: var(--verdete-veu); box-shadow: none; }
+.questao-impressa .acao-responder .botao--grande { min-height: 48px; border-radius: var(--raio-cartao); padding-inline: 1.6rem; box-shadow: 0 6px 18px color-mix(in srgb, var(--verdete) 28%, transparent); }
+.questao-impressa .acao-responder .botao--grande:disabled { box-shadow: none; }
+.questao-impressa .acao-responder__dica, .questao-impressa .acao-responder .so-teclado { flex-basis: 100%; margin: 0; }
+@media (min-width: 40.01rem) {
+  .questao-impressa .acao-responder .so-teclado { flex-basis: auto; }
+}
+.questao-impressa .resultado { gap: 0.75rem; padding: 0.85rem 1rem; border-radius: var(--raio-cartao); border-width: 1.5px; font-size: 1.02rem; }
+.questao-impressa .resultado svg { flex: 0 0 auto; width: 2rem; height: 2rem; padding: 0.4rem; border-radius: 50%; background: currentColor; }
+.questao-impressa .resultado svg path { stroke: var(--superficie); }
+.questao-impressa .resultado--neutro svg path { stroke: var(--superficie); }
+.questao-impressa .comentario { padding-top: 1.25rem; }
+.questao-impressa .bloco-comentario { border-radius: var(--raio-cartao); }
+.qz-extras { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 0.6rem; margin-top: 1.5rem; }
+.qz-nota-simulado { margin: 0.9rem 0 0; font-size: var(--meta); line-height: 1.45; color: var(--texto-2); opacity: 0.85; }
+.qz-extras .notas-questao { margin: 0; padding: 0; border-radius: var(--raio-cartao); background: var(--superficie-2); border: var(--borda); overflow: hidden; }
+.qz-extras .notas-questao > summary {
+  display: flex; align-items: center; gap: 0.55rem; padding: 0.85rem 1rem; cursor: pointer; list-style: none;
+  font-weight: 650; font-size: var(--corpo-menor);
+}
+.qz-extras .notas-questao > summary::-webkit-details-marker { display: none; }
+.qz-extras .notas-questao > summary::after { content: ""; margin-left: auto; width: 0.5rem; height: 0.5rem; border-right: 2px solid var(--texto-2); border-bottom: 2px solid var(--texto-2); transform: rotate(45deg); transition: transform 0.15s ease; }
+.qz-extras .notas-questao[open] > summary::after { transform: rotate(-135deg); }
+.qz-extras .notas-questao > summary svg { color: var(--verdete); }
+.qz-extras .notas-questao[open] { background: var(--superficie); grid-column: 1 / -1; }
+.qz-extras .notas-questao > :not(summary) { margin-inline: 1rem; }
+.qz-extras .notas-questao > :last-child { margin-bottom: 1rem; }
+.qz-extras .notas-questao textarea { width: calc(100% - 2rem); border-radius: var(--raio-controle); }
+.qz-contador { display: inline-flex; align-items: center; justify-content: center; min-width: 1.3rem; height: 1.3rem; padding: 0 0.35rem; border-radius: 999px; background: var(--verdete); color: var(--sobre-destaque); font-size: 0.7rem; font-weight: 800; }
+.qz-linha-tempo { list-style: none; display: flex; flex-wrap: wrap; gap: 0.4rem; padding: 0; margin: 0.25rem 1rem 1rem; }
+.qz-linha-tempo li {
+  display: inline-flex; align-items: center; gap: 0.3rem; padding: 0.3rem 0.65rem; border-radius: 999px;
+  background: var(--superficie-2); border: var(--borda); font-size: var(--meta); font-weight: 600; color: var(--texto-2);
+}
+.qz-linha-tempo li small { opacity: 0.8; }
+.qz-linha-tempo--acerto { background: var(--acerto-veu) !important; color: var(--acerto) !important; border-color: transparent !important; }
+.qz-linha-tempo--erro { background: var(--erro-veu) !important; color: var(--erro) !important; border-color: transparent !important; }
+.qz-rodape { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; margin-top: 1.25rem; padding-top: 1rem; border-top: var(--borda); }
+.qz-rodape__link {
+  display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.35rem 0.1rem; border: 0; background: none;
+  color: var(--texto-2); font: inherit; font-size: var(--corpo-menor); font-weight: 600; text-decoration: none; cursor: pointer;
+}
+.qz-rodape__link:hover { color: var(--erro); }
+.qz-rodape__id { margin-left: auto; font-size: 0.75rem; color: var(--texto-2); opacity: 0.7; font-family: var(--fonte-dados); }
+@media (max-width: 40rem) {
+  .questao-impressa { border-radius: var(--raio-cartao); }
+}
+@media (max-width: 40rem) {
+  .qz-topo { margin-bottom: 0.7rem; }
+}
+@media (max-width: 40rem) {
+  .qz-ferramenta { width: 36px; height: 36px; }
+}
+@media (max-width: 40rem) {
+  .qz-etiquetas { margin-bottom: 0.85rem; }
+}
+@media (max-width: 40rem) {
+  .questao-impressa .questao__enunciado { font-size: 1.02rem; line-height: 1.62; margin-bottom: 1rem; }
+}
+@media (max-width: 40rem) {
+  .questao-impressa .alternativa__letra { width: 1.85rem; height: 1.85rem; margin-left: 0.6rem; font-size: 0.82rem; }
+}
+@media (max-width: 40rem) {
+  .questao-impressa .alternativa__texto { padding: 0.65rem 0.75rem 0.65rem 0.65rem; }
+}
+@media (max-width: 40rem) {
+  .questao-impressa .riscar { background: var(--superficie-2); }
+}
+@media (max-width: 40rem) {
+  .acao-responder .confianca { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); width: 100%; }
+}
+@media (max-width: 40rem) {
+  .acao-responder .confianca .opcao-segmento { padding: 0 0.3rem; }
+}
+@media (max-width: 40rem) {
+  .qz-extras { grid-template-columns: 1fr; margin-top: 1.1rem; }
+}
+.qz-chip--origem { display: none; background: var(--grafite); border-color: transparent; color: var(--porcelana); font-weight: 700; }
+.qz-etiquetas--so-origem { display: none; }
+:root[data-tema="escuro"] .qz-chip--origem { background: var(--superficie-2); color: var(--texto); border: var(--borda); }
+@media (max-width: 40rem) {
+  .qz-topo { flex-wrap: nowrap; }
+}
+@media (max-width: 40rem) {
+  .qz-topo .qz-origem { display: none; }
+}
+@media (max-width: 40rem) {
+  .qz-chip--origem { display: inline-flex; }
+}
+@media (max-width: 40rem) {
+  .qz-etiquetas--so-origem { display: flex; }
+}
+@media (max-width: 40rem) {
+  .qz-ferramentas { flex: 0 0 auto; }
+}
+@media (max-width: 40rem) {
+  .qz-ferramenta { width: 34px; height: 34px; }
+}
+@media (max-width: 40rem) {
+  .qz-numero { font-size: 1rem; white-space: nowrap; }
+}
+@media (max-width: 40rem) { .qz-chip { font-size: 0.72rem; padding: 0.2rem 0.6rem; } }
+@media (max-width: 40rem) { .qz-etiquetas { gap: 0.3rem; } }
+.bloco-comentario.cm { padding: clamp(1.1rem, 3vw, 1.9rem); background: var(--superficie); border-radius: var(--raio-cartao); }
+.cm-cabeca { display: flex; align-items: center; gap: 0.85rem; margin-bottom: 1.25rem; }
+.cm-cabeca__icone { display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; width: 2.6rem; height: 2.6rem; border-radius: var(--raio-controle); background: var(--verdete); color: var(--sobre-destaque); }
+.cm-cabeca__titulo { margin: 0; font-size: 1.2rem; font-weight: 800; }
+.cm-cabeca__sub { margin: 0.1rem 0 0; color: var(--texto-2); font-size: var(--corpo-menor); }
+.cm-conceito {
+  position: relative; margin-bottom: 1.6rem; padding: clamp(1.05rem, 2.6vw, 1.6rem) clamp(1rem, 2.8vw, 1.75rem);
+  border-radius: var(--raio-cartao); background: color-mix(in srgb, var(--verdete-veu) 55%, var(--superficie));
+  border: 1px solid color-mix(in srgb, var(--verdete) 16%, transparent);
+}
+.cm-rotulo {
+  display: flex; align-items: center; gap: 0.45rem; margin: 0 0 0.9rem; padding-bottom: 0.7rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--verdete) 16%, transparent);
+  color: var(--verdete); font-size: 0.76rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
+}
+.cm-secao {
+  display: flex; align-items: center; gap: 0.75rem; margin: 0 0 0.85rem; color: var(--texto-2);
+  font-size: 0.76rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
+}
+.cm-secao::after { content: ""; flex: 1; height: 1px; background: var(--traco); }
+.cm-alternativas { display: grid; gap: 0.7rem; }
+.cm-alt {
+  position: relative; padding: 0.95rem 1.15rem 0.35rem 1.35rem; border-radius: var(--raio-cartao); border: var(--borda);
+  background: var(--superficie); overflow: hidden;
+}
+.cm-alt::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--traco-forte); }
+.cm-alt--certa { border-color: color-mix(in srgb, var(--acerto) 35%, var(--traco)); background: color-mix(in srgb, var(--acerto-veu) 60%, var(--superficie)); }
+.cm-alt--certa::before { background: var(--acerto); }
+.cm-alt--marcada { border-color: color-mix(in srgb, var(--erro) 30%, var(--traco)); background: color-mix(in srgb, var(--erro-veu) 45%, var(--superficie)); }
+.cm-alt--marcada::before { background: var(--erro); }
+.cm-alt__cabeca { display: flex; flex-wrap: wrap; align-items: center; gap: 0.45rem 0.65rem; margin-bottom: 0.6rem; }
+.cm-alt__letra {
+  display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; width: 1.75rem; height: 1.75rem; border-radius: 50%;
+  border: 1.5px solid var(--traco-forte); background: var(--superficie); color: var(--texto-2); font-weight: 800; font-size: 0.82rem;
+}
+.cm-alt--certa .cm-alt__letra { background: var(--acerto); border-color: var(--acerto); color: #fff; }
+.cm-alt--marcada .cm-alt__letra { background: var(--erro); border-color: var(--erro); color: #fff; }
+.cm-alt__texto { flex: 1 1 14rem; min-width: 0; font-size: 0.98rem; font-weight: 700; line-height: 1.4; color: var(--texto); }
+.cm-alt:not(.cm-alt--certa):not(.cm-alt--marcada) .cm-alt__texto { color: var(--texto-2); font-weight: 650; }
+.cm-selo { display: inline-flex; align-items: center; gap: 0.25rem; padding: 0.18rem 0.55rem; border-radius: 999px; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.03em; background: var(--superficie-2); color: var(--texto-2); border: var(--borda); }
+.cm-selo--certa { background: var(--acerto); color: #fff; border-color: transparent; }
+.cm-selo--erro { background: var(--erro); color: #fff; border-color: transparent; }
+.cm-selo--neutro { background: transparent; }
+@media (max-width: 40rem) {
+  .cm-alt { padding: 0.85rem 0.9rem 0.3rem; }
+}
+@media (max-width: 40rem) {
+  .cm-cabeca__sub { display: none; }
+}
+@media (max-width: 40rem) {
+  .bloco-comentario.cm { padding: 0.9rem 0.8rem; }
+}
+@media (max-width: 40rem) {
+  .cm-conceito { padding: 0.95rem 0.9rem; }
+}
+.av {
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .75rem 1rem;
+  margin-top: 1.1rem; padding: .9rem 1.1rem; border-radius: var(--raio-cartao);
+  background: var(--superficie-2); border: var(--borda);
+}
+.av__pergunta { margin: 0; font-weight: 700; }
+.av__botoes { display: flex; gap: .5rem; }
+.av__botao {
+  display: inline-flex; align-items: center; gap: .4rem; min-height: 42px; padding: .45rem 1rem; border-radius: 999px;
+  border: 1px solid var(--traco-forte, var(--borda)); background: var(--superficie); color: var(--texto);
+  font: 600 var(--corpo-menor) var(--fonte-texto); cursor: pointer; white-space: nowrap; transition: background-color .12s, border-color .12s, color .12s;
+}
+.av__botao--sim:hover { border-color: var(--acerto); color: var(--acerto); background: var(--acerto-veu); }
+.av__botao--nao:hover { border-color: var(--erro); color: var(--erro); background: var(--erro-veu); }
+.av--feito { justify-content: flex-start; color: var(--texto-2); font-size: var(--corpo-menor); }
+.av--feito > svg { color: var(--acerto); flex: 0 0 auto; }
+.av--feito span { flex: 1 1 14rem; }
+.av__mudar { border: 0; background: none; color: var(--verdete); font: 600 var(--corpo-menor) var(--fonte-texto); cursor: pointer; text-decoration: underline; padding: .25rem; }
+.av--motivo { display: grid; gap: .7rem; justify-content: stretch; }
+.av__motivos { display: flex; flex-wrap: wrap; gap: .45rem; }
+.av__motivos button {
+  border: 1px solid var(--traco-forte, var(--borda)); background: var(--superficie); color: var(--texto); border-radius: 999px;
+  padding: .45rem .9rem; font: 600 var(--corpo-menor) var(--fonte-texto); cursor: pointer; min-height: 40px;
+}
+.av__motivos button.ativo { background: var(--verdete); border-color: var(--verdete); color: #fff; }
+.av__obs { width: 100%; resize: vertical; }
+.av__acoes { display: flex; justify-content: flex-end; gap: .5rem; }
+@media (max-width: 560px) { .av__botoes { width: 100%; } }
+@media (max-width: 560px) { .av__botao { flex: 1 1 0; min-width: 0; justify-content: center; padding-inline: .5rem; } }
+@media print { .av { display: none; } }
+.qz-origem--simulado, .qz-chip--origem.qz-chip--simulado { background: linear-gradient(135deg, #ffe3a3, var(--ouro)); color: #5c3f06; border-color: transparent; }
+:root[data-tema="escuro"] .qz-origem--simulado, :root[data-tema="escuro"] .qz-chip--origem.qz-chip--simulado { background: linear-gradient(135deg, #ffe3a3, var(--ouro)); color: #5c3f06; border-color: transparent; }
+.tu {
+  margin-top: 0.85rem; padding: 1rem 1.1rem 1.1rem;
+  border-radius: var(--raio-cartao); background: var(--superficie-2); border: var(--borda);
+}
+/* Assinante: o cartão da alternativa se preenche até a porcentagem da turma. */
+.alternativa--turma { position: relative; isolation: isolate; --turma-cor: var(--texto-2); }
+.alternativa--turma::after {
+  content: ""; position: absolute; z-index: -1; inset: 0 auto 0 0; width: var(--turma, 0%);
+  background: color-mix(in srgb, var(--turma-cor) 11%, transparent);
+  border-right: 2px solid color-mix(in srgb, var(--turma-cor) 30%, transparent);
+  animation: turma-enche 0.8s cubic-bezier(.2, .8, .2, 1) both;
+}
+@keyframes turma-enche { from { width: 0; } }
+.alternativa--turma.alternativa--certa { --turma-cor: var(--acerto); }
+.alternativa--turma.alternativa--errada { --turma-cor: var(--erro); }
+.alternativa--turma.alternativa--pegadinha:not(.alternativa--errada) { --turma-cor: var(--aviso); }
+.alternativa__turma { flex: 0 0 auto; display: grid; justify-items: end; align-content: center; padding: 0.4rem 0.9rem 0.4rem 0.4rem; line-height: 1.1; }
+.alternativa__turma b { font-size: 1.05rem; font-weight: 800; font-variant-numeric: tabular-nums; color: var(--turma-cor); }
+.alternativa__turma small { font-size: 0.68rem; font-weight: 600; color: var(--texto-2); letter-spacing: 0.01em; }
+.alternativa--turma:not(.alternativa--certa):not(.alternativa--errada):not(.alternativa--pegadinha) .alternativa__turma b { color: var(--texto); }
+@media (prefers-reduced-motion: reduce) { .alternativa--turma::after { animation: none; } }
+.alt-turma-resumo { display: flex; align-items: center; gap: 0.4rem; margin: 0.6rem 0 0; color: var(--texto-2); font-size: var(--meta); }
+.tu--convite { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(11rem, 1fr); align-items: center; gap: 1.25rem 2rem; margin: 1.25rem 0 1.5rem; padding: 1.15rem 1.25rem; background: linear-gradient(135deg, color-mix(in srgb, var(--ouro) 9%, var(--superficie-2)), var(--superficie-2) 70%); border-color: color-mix(in srgb, var(--ouro) 28%, var(--traco)); }
+.tu-convite__texto { display: grid; justify-items: start; gap: 0.55rem; }
+.tu-convite__titulo { display: inline-flex; align-items: center; gap: 0.45rem; margin: 0; font-weight: 800; }
+.tu-convite__descricao { margin: 0; color: var(--texto-2); font-size: var(--corpo-menor); line-height: 1.55; }
+.tu-convite__texto .botao { min-height: 38px; }
+.tu-convite__demo { display: grid; gap: 0.4rem; }
+/* Miniatura do que o assinante vê: alternativas preenchidas, número borrado. */
+.tu-demo { position: relative; isolation: isolate; display: flex; align-items: center; justify-content: space-between; height: 2rem; padding: 0 0.7rem 0 0.35rem; border: var(--borda); border-radius: 999px; background: var(--superficie); overflow: hidden; font-size: var(--meta); }
+.tu-demo::before { content: ""; position: absolute; z-index: -1; inset: 0 auto 0 0; width: var(--w); background: color-mix(in srgb, var(--texto-2) 14%, transparent); }
+.tu-demo b { display: grid; place-items: center; width: 1.4rem; height: 1.4rem; border-radius: 50%; border: var(--borda); background: var(--superficie-2); font-size: 0.7rem; color: var(--texto-2); }
+.tu-demo i { font-style: normal; font-weight: 800; filter: blur(4px); color: var(--texto); user-select: none; }
+.tu-demo--destaque { border-color: color-mix(in srgb, var(--acerto) 55%, transparent); }
+.tu-demo--destaque::before { background: color-mix(in srgb, var(--acerto) 18%, transparent); }
+.tu-demo--destaque b { background: var(--acerto); border-color: var(--acerto); color: #fff; }
+@media (max-width: 40rem) { .tu--convite { grid-template-columns: 1fr; gap: 1rem; } .tu-convite__demo { gap: 0.3rem; } .tu-demo { height: 1.6rem; } .tu-demo b { width: 1.2rem; height: 1.2rem; } }
+
+/* "Este comentário te ajudou?" e o atalho para relatar erro. */
+.av__pergunta small { display: block; font-weight: 400; color: var(--texto-2); font-size: var(--meta); margin-top: .15rem; }
+.av__erro { display: inline-flex; align-items: center; gap: .4rem; border: 1px dashed var(--erro); background: var(--erro-veu); color: var(--erro); border-radius: var(--raio-controle); padding: .5rem .75rem; font: 600 var(--corpo-menor) var(--fonte-texto); cursor: pointer; text-align: left; min-height: var(--toque); }
+.relato__ajuda { margin: 0; color: var(--texto-2); font-size: var(--corpo-menor); }
+main{max-width:850px;margin:auto;padding:16px}header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:12px 0 24px}header img{width:210px;max-width:55%;height:auto}article{margin:24px 0}figure{margin:0 0 20px}figure img{display:block;width:100%;height:auto;border-radius:10px;border:1px solid var(--traco)}figcaption,.fonte{font-size:13px;color:var(--texto-2);line-height:1.5}.acoes{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:20px}.resultado{padding:14px;background:var(--verdete-veu);border-radius:10px;margin:18px 0}details{margin-top:20px}summary{cursor:pointer;font-weight:700;color:var(--verdete)}table{display:block;overflow-x:auto;max-width:100%;border-collapse:collapse}td,th{padding:10px;border:1px solid var(--traco)}.comentario h4{margin-top:24px}.comentario p{margin:14px 0}.qz-etiquetas{margin-top:14px}.aviso{font-size:14px;color:var(--texto-2)}</style></head>
+<body><main><header><a href="../../../"><img src="../../../marca/marca-horizontal.svg" alt="Orto Questões"></a><span class="aviso">Anatomia do antebraço</span></header><h1>Netter: anatomia do antebraço</h1><p>18 questões autorais no padrão TEOT e TARO, com 14 figuras. Responda e veja a explicação de cada alternativa.</p>
+<article class="cartao questao-impressa" data-q="1" data-gab="A"><div class="cartao__corpo"><div class="qz-topo"><div class="qz-topo__info"><h2 class="qz-numero">Questão 1<small> de 18</small></h2><span class="qz-origem">OrtoQuestões Simulados</span></div></div><div class="qz-etiquetas"><span class="qz-chip qz-chip--tema">Antebraço</span><span class="qz-chip">Anatomia do antebraço</span></div><div class="questao__enunciado">Na vista anterior do antebraço, o músculo indicado e seu nervo motor são, respectivamente,</div>
+<figure><img src="../../../imagens/mao/mao-1264-1.jpeg" alt="Ilustração anatômica do antebraço" width="845" height="1862"><figcaption>Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.</figcaption></figure>
+<ul class="alternativas">
+<li><button type="button" class="alternativa" data-letra="A" aria-pressed="false"><span class="alternativa__letra">A</span><span class="alternativa__texto">pronador redondo; mediano.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="B" aria-pressed="false"><span class="alternativa__letra">B</span><span class="alternativa__texto">pronador quadrado; mediano.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="C" aria-pressed="false"><span class="alternativa__letra">C</span><span class="alternativa__texto">pronador redondo; interósseo anterior.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="D" aria-pressed="false"><span class="alternativa__letra">D</span><span class="alternativa__texto">pronador quadrado; interósseo anterior.</span></button></li>
+</ul><div class="acoes"><button class="botao confirmar" type="button">Confirmar resposta</button><a href="../../../#/questao/mao-1264">Abrir no acervo</a></div><div class="resultado" role="status" hidden></div><details><summary>Gabarito e comentário completo</summary><div class="comentario"><h3>Gabarito: A</h3><p>O pronador redondo cruza obliquamente a região anterior proximal do antebraço. Tem uma cabeça umeral no epicôndilo medial e outra ulnar na ulna proximal, terminando na face lateral do terço médio do rádio. Sua ação combina pronação e flexão do antebraço.</p>
+<p>O mediano passa entre suas duas cabeças e fornece sua inervação. O pronador quadrado tem outra localização: é profundo e distal, entre ulna e rádio, e recebe o interósseo anterior. O nome pronador não basta para escolher o nervo; o formato e o nível do músculo separam os dois.</p><p><strong>A: pronador redondo; mediano.</strong> A seta aponta o ventre oblíquo proximal do pronador redondo. A localização superficial e o trajeto até o rádio correspondem ao músculo inervado diretamente pelo mediano.</p>
+<h4>Alternativa B</h4><p><strong>A posição e o nervo foram trocados.</strong> O quadrado é profundo e distal, e sua inervação vem do interósseo anterior. A massa oblíqua proximal indicada é o redondo.</p>
+<h4>Alternativa C</h4><p><strong>O músculo está correto, mas o ramo não.</strong> O redondo recebe o mediano; o interósseo anterior se dirige aos flexores profundos e ao pronador quadrado.</p>
+<h4>Alternativa D</h4><p><strong>É uma associação correta para outro músculo.</strong> O quadrado recebe o interósseo anterior, mas ocupa o plano profundo distal e não o ventre oblíquo apontado.</p>
+<p class="fonte">Netter, Atlas de Anatomia Ortopédica, 2ª edição, seção Antebraço: músculos, nervos e artérias.</p></div></details></div></article>
+<article class="cartao questao-impressa" data-q="2" data-gab="B"><div class="cartao__corpo"><div class="qz-topo"><div class="qz-topo__info"><h2 class="qz-numero">Questão 2<small> de 18</small></h2><span class="qz-origem">OrtoQuestões Simulados</span></div></div><div class="qz-etiquetas"><span class="qz-chip qz-chip--tema">Antebraço</span><span class="qz-chip">Anatomia do antebraço</span></div><div class="questao__enunciado">Na camada anterior profunda do antebraço, o músculo indicado apresenta inserção na face anterior do</div>
+<figure><img src="../../../imagens/mao/mao-1265-1.jpeg" alt="Ilustração anatômica do antebraço" width="1047" height="1503"><figcaption>Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.</figcaption></figure>
+<ul class="alternativas">
+<li><button type="button" class="alternativa" data-letra="A" aria-pressed="false"><span class="alternativa__letra">A</span><span class="alternativa__texto">ulna distal.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="B" aria-pressed="false"><span class="alternativa__letra">B</span><span class="alternativa__texto">rádio distal.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="C" aria-pressed="false"><span class="alternativa__letra">C</span><span class="alternativa__texto">ulna proximal.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="D" aria-pressed="false"><span class="alternativa__letra">D</span><span class="alternativa__texto">rádio proximal.</span></button></li>
+</ul><div class="acoes"><button class="botao confirmar" type="button">Confirmar resposta</button><a href="../../../#/questao/mao-1265">Abrir no acervo</a></div><div class="resultado" role="status" hidden></div><details><summary>Gabarito e comentário completo</summary><div class="comentario"><h3>Gabarito: B</h3><p>O pronador quadrado ocupa a região anterior distal, com fibras que seguem transversalmente entre ulna e rádio. Origina-se na região medial da ulna distal e se insere na face anterior do rádio distal. Recebe o nervo interósseo anterior e participa da pronação.</p>
+<p>A forma curta e transversal o diferencia dos flexores profundos, que têm ventres longitudinais e tendões dirigidos aos dedos. Também difere do pronador redondo, cuja inserção fica no terço médio do rádio. Ao olhar a figura, acompanhe a direção das fibras antes de escolher o osso e o nível.</p><p><strong>B: rádio distal.</strong> A seta identifica o pronador quadrado. Sua origem é ulnar e sua inserção radial, ambas no segmento distal. A fixação pedida é no rádio, não na ulna.</p>
+<h4>Alternativa A</h4><p><strong>É a região de origem.</strong> O quadrado parte da ulna distal e termina no rádio distal. A alternativa oferece a fixação correta no papel oposto.</p>
+<h4>Alternativa C</h4><p><strong>Desloca o músculo para perto do cotovelo.</strong> A ulna proximal participa das origens de músculos como pronador redondo e supinador. O quadrado está distalmente.</p>
+<h4>Alternativa D</h4><p><strong>É uma referência do supinador.</strong> O supinador se fixa na região proximal lateral do rádio. O músculo transversal anterior indicado se insere no rádio distal.</p>
+<p class="fonte">Netter, Atlas de Anatomia Ortopédica, 2ª edição, seção Antebraço: músculos, nervos e artérias.</p></div></details></div></article>
+<article class="cartao questao-impressa" data-q="3" data-gab="D"><div class="cartao__corpo"><div class="qz-topo"><div class="qz-topo__info"><h2 class="qz-numero">Questão 3<small> de 18</small></h2><span class="qz-origem">OrtoQuestões Simulados</span></div></div><div class="qz-etiquetas"><span class="qz-chip qz-chip--tema">Antebraço</span><span class="qz-chip">Anatomia do antebraço</span></div><div class="questao__enunciado">O músculo indicado na camada anterior intermediária do antebraço atua principalmente na</div>
+<figure><img src="../../../imagens/mao/mao-1266-1.jpeg" alt="Ilustração anatômica do antebraço" width="1024" height="1536"><figcaption>Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.</figcaption></figure>
+<ul class="alternativas">
+<li><button type="button" class="alternativa" data-letra="A" aria-pressed="false"><span class="alternativa__letra">A</span><span class="alternativa__texto">flexão do polegar.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="B" aria-pressed="false"><span class="alternativa__letra">B</span><span class="alternativa__texto">pronação do antebraço.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="C" aria-pressed="false"><span class="alternativa__letra">C</span><span class="alternativa__texto">flexão das interfalangeanas distais.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="D" aria-pressed="false"><span class="alternativa__letra">D</span><span class="alternativa__texto">flexão das interfalangeanas proximais.</span></button></li>
+</ul><div class="acoes"><button class="botao confirmar" type="button">Confirmar resposta</button><a href="../../../#/questao/mao-1266">Abrir no acervo</a></div><div class="resultado" role="status" hidden></div><details><summary>Gabarito e comentário completo</summary><div class="comentario"><h3>Gabarito: D</h3><p>O flexor superficial dos dedos ocupa o plano intermediário entre os flexores superficiais e profundos. Seus tendões terminam nas falanges médias dos dedos, sem incluir o polegar, e permitem flexão das articulações interfalangeanas proximais.</p>
+<p>O flexor profundo segue até as falanges distais e participa da flexão interfalangeana distal. O flexor longo do polegar é um músculo separado, que termina na falange distal do polegar. A palavra superficial descreve o nome do músculo, mas não o coloca na camada mais superficial do antebraço.</p><p><strong>D: flexão das interfalangeanas proximais.</strong> A figura mostra o flexor superficial dos dedos após o afastamento de músculos superficiais. A inserção nas falanges médias o relaciona à flexão interfalangeana proximal.</p>
+<h4>Alternativa A</h4><p><strong>É a ação do flexor longo do polegar.</strong> Ele tem tendão próprio para a falange distal do polegar. O superficial se dirige aos outros dedos.</p>
+<h4>Alternativa B</h4><p><strong>Corresponde aos pronadores.</strong> Redondo e quadrado atuam na rotação do antebraço. O ventre indicado converge para tendões digitais.</p>
+<h4>Alternativa C</h4><p><strong>É a função distintiva do profundo.</strong> Seus tendões chegam às falanges distais. O superficial termina antes, nas falanges médias.</p>
+<p class="fonte">Netter, Atlas de Anatomia Ortopédica, 2ª edição, seção Antebraço: músculos, nervos e artérias.</p></div></details></div></article>
+<article class="cartao questao-impressa" data-q="4" data-gab="D"><div class="cartao__corpo"><div class="qz-topo"><div class="qz-topo__info"><h2 class="qz-numero">Questão 4<small> de 18</small></h2><span class="qz-origem">OrtoQuestões Simulados</span></div></div><div class="qz-etiquetas"><span class="qz-chip qz-chip--tema">Antebraço</span><span class="qz-chip">Anatomia do antebraço</span></div><div class="questao__enunciado">Na exposição anterior profunda do antebraço, o músculo indicado envia seus tendões para as</div>
+<figure><img src="../../../imagens/mao/mao-1267-1.jpeg" alt="Ilustração anatômica do antebraço" width="949" height="1657"><figcaption>Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.</figcaption></figure>
+<ul class="alternativas">
+<li><button type="button" class="alternativa" data-letra="A" aria-pressed="false"><span class="alternativa__letra">A</span><span class="alternativa__texto">falanges médias dos dedos.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="B" aria-pressed="false"><span class="alternativa__letra">B</span><span class="alternativa__texto">base do quinto metacarpal.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="C" aria-pressed="false"><span class="alternativa__letra">C</span><span class="alternativa__texto">falange distal do polegar.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="D" aria-pressed="false"><span class="alternativa__letra">D</span><span class="alternativa__texto">falanges distais dos dedos.</span></button></li>
+</ul><div class="acoes"><button class="botao confirmar" type="button">Confirmar resposta</button><a href="../../../#/questao/mao-1267">Abrir no acervo</a></div><div class="resultado" role="status" hidden></div><details><summary>Gabarito e comentário completo</summary><div class="comentario"><h3>Gabarito: D</h3><p>O flexor profundo dos dedos nasce na ulna anterior e na membrana interóssea. Seus tendões seguem até as falanges distais e participam da flexão das articulações interfalangeanas distais. Na figura, aparece no plano profundo, medial ao flexor longo do polegar.</p>
+<p>O flexor superficial termina nas falanges médias, enquanto o longo do polegar chega à falange distal do polegar. Essas fixações explicam por que três músculos próximos têm destinos e ações que não são intercambiáveis. O profundo apresenta ainda distribuição nervosa dividida entre interósseo anterior e ulnar.</p><p><strong>D: falanges distais dos dedos.</strong> A seta está no flexor profundo dos dedos. O destino nas falanges distais o diferencia do superficial, de plano intermediário e inserção nas falanges médias.</p>
+<h4>Alternativa A</h4><p><strong>São as inserções do superficial.</strong> Essa fixação se relaciona à flexão interfalangeana proximal, não à distal.</p>
+<h4>Alternativa B</h4><p><strong>É a inserção do extensor ulnar do carpo.</strong> Esse músculo posterior termina no metacarpal e atua no punho. O profundo dos dedos é anterior e envia seus tendões até as falanges distais.</p>
+<h4>Alternativa C</h4><p><strong>É o destino do flexor longo do polegar.</strong> Esse músculo está no mesmo plano profundo, mas tem ventre e tendão próprios para o polegar.</p>
+<p class="fonte">Netter, Atlas de Anatomia Ortopédica, 2ª edição, seção Antebraço: músculos, nervos e artérias.</p></div></details></div></article>
+<article class="cartao questao-impressa" data-q="5" data-gab="C"><div class="cartao__corpo"><div class="qz-topo"><div class="qz-topo__info"><h2 class="qz-numero">Questão 5<small> de 18</small></h2><span class="qz-origem">OrtoQuestões Simulados</span></div></div><div class="qz-etiquetas"><span class="qz-chip qz-chip--tema">Antebraço</span><span class="qz-chip">Anatomia do antebraço</span></div><div class="questao__enunciado">Na camada anterior profunda do antebraço, o músculo indicado tem inserção distal na</div>
+<figure><img src="../../../imagens/mao/mao-1268-1.jpeg" alt="Ilustração anatômica do antebraço" width="811" height="1938"><figcaption>Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.</figcaption></figure>
+<ul class="alternativas">
+<li><button type="button" class="alternativa" data-letra="A" aria-pressed="false"><span class="alternativa__letra">A</span><span class="alternativa__texto">pisiforme.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="B" aria-pressed="false"><span class="alternativa__letra">B</span><span class="alternativa__texto">base do 2º metacarpal.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="C" aria-pressed="false"><span class="alternativa__letra">C</span><span class="alternativa__texto">falange distal do polegar.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="D" aria-pressed="false"><span class="alternativa__letra">D</span><span class="alternativa__texto">falange proximal do polegar.</span></button></li>
+</ul><div class="acoes"><button class="botao confirmar" type="button">Confirmar resposta</button><a href="../../../#/questao/mao-1268">Abrir no acervo</a></div><div class="resultado" role="status" hidden></div><details><summary>Gabarito e comentário completo</summary><div class="comentario"><h3>Gabarito: C</h3><p>O flexor longo do polegar ocupa a porção radial do plano anterior profundo. Seu tendão segue até a falange distal do polegar. Sua inervação vem do interósseo anterior.</p>
+<p>A fixação distal explica a flexão da articulação interfalangeana do polegar. Não deve ser confundido com os extensores do polegar, que são posteriores, nem com o flexor radial do carpo, que termina em bases metacarpais e atua no punho.</p><p><strong>C: falange distal do polegar.</strong> O alvo é o flexor longo do polegar, situado lateralmente ao profundo dos dedos. Seu tendão termina na falange distal do polegar.</p>
+<h4>Alternativa A</h4><p><strong>É uma fixação do flexor ulnar do carpo.</strong> Esse músculo é superficial e ulnar. Não envia o tendão indicado para o polegar.</p>
+<h4>Alternativa B</h4><p><strong>É uma inserção do flexor radial do carpo.</strong> Ele atua na flexão e no desvio radial do punho. O longo do polegar ultrapassa o metacarpal para chegar à falange distal.</p>
+<h4>Alternativa D</h4><p><strong>É a inserção do extensor curto do polegar.</strong> A alternativa troca músculo anterior por posterior e muda a falange de destino.</p>
+<p class="fonte">Netter, Atlas de Anatomia Ortopédica, 2ª edição, seção Antebraço: músculos, nervos e artérias.</p></div></details></div></article>
+<article class="cartao questao-impressa" data-q="6" data-gab="A"><div class="cartao__corpo"><div class="qz-topo"><div class="qz-topo__info"><h2 class="qz-numero">Questão 6<small> de 18</small></h2><span class="qz-origem">OrtoQuestões Simulados</span></div></div><div class="qz-etiquetas"><span class="qz-chip qz-chip--tema">Antebraço</span><span class="qz-chip">Anatomia do antebraço</span></div><div class="questao__enunciado">Na região lateral proximal do antebraço, a ação principal do músculo indicado é a</div>
+<figure><img src="../../../imagens/mao/mao-1269-1.jpeg" alt="Ilustração anatômica do antebraço" width="828" height="1899"><figcaption>Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.</figcaption></figure>
+<ul class="alternativas">
+<li><button type="button" class="alternativa" data-letra="A" aria-pressed="false"><span class="alternativa__letra">A</span><span class="alternativa__texto">flexão do antebraço.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="B" aria-pressed="false"><span class="alternativa__letra">B</span><span class="alternativa__texto">pronação do antebraço.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="C" aria-pressed="false"><span class="alternativa__letra">C</span><span class="alternativa__texto">extensão do antebraço.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="D" aria-pressed="false"><span class="alternativa__letra">D</span><span class="alternativa__texto">supinação do antebraço.</span></button></li>
+</ul><div class="acoes"><button class="botao confirmar" type="button">Confirmar resposta</button><a href="../../../#/questao/mao-1269">Abrir no acervo</a></div><div class="resultado" role="status" hidden></div><details><summary>Gabarito e comentário completo</summary><div class="comentario"><h3>Gabarito: A</h3><p>O braquiorradial integra o compartimento móvel, junto aos extensores radiais longo e curto do carpo. Origina-se na região lateral do úmero e se insere na parte distal lateral do rádio. Apesar de receber o nervo radial, sua ação principal é flexão do antebraço.</p>
+<p>Inervação radial não significa necessariamente extensão. O ancôneo atua na extensão do antebraço; os extensores radiais atuam na extensão da mão. O braquiorradial compartilha a região lateral e o nervo com músculos extensores, mas tem outra função.</p><p><strong>A: flexão do antebraço.</strong> A seta aponta o braquiorradial na margem lateral proximal. A associação correta é nervo radial e flexão do antebraço.</p>
+<h4>Alternativa B</h4><p><strong>É função dos pronadores.</strong> Redondo e quadrado recebem mediano e interósseo anterior, respectivamente. O braquiorradial não é o pronador indicado no quadro.</p>
+<h4>Alternativa C</h4><p><strong>É a ação do ancôneo.</strong> Ambos recebem o radial, mas diferem em posição, inserção e função. O nervo comum não iguala as ações.</p>
+<h4>Alternativa D</h4><p><strong>É a ação do supinador.</strong> O supinador fica profundo e se fixa no rádio proximal. O braquiorradial é a referência lateral mais superficial.</p>
+<p class="fonte">Netter, Atlas de Anatomia Ortopédica, 2ª edição, seção Antebraço: músculos, nervos e artérias.</p></div></details></div></article>
+<article class="cartao questao-impressa" data-q="7" data-gab="A"><div class="cartao__corpo"><div class="qz-topo"><div class="qz-topo__info"><h2 class="qz-numero">Questão 7<small> de 18</small></h2><span class="qz-origem">OrtoQuestões Simulados</span></div></div><div class="qz-etiquetas"><span class="qz-chip qz-chip--tema">Antebraço</span><span class="qz-chip">Anatomia do antebraço</span></div><div class="questao__enunciado">Na figura posterior do antebraço, o extensor radial indicado apresenta inserção na</div>
+<figure><img src="../../../imagens/mao/mao-1270-1.jpeg" alt="Ilustração anatômica do antebraço" width="828" height="1899"><figcaption>Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.</figcaption></figure>
+<ul class="alternativas">
+<li><button type="button" class="alternativa" data-letra="A" aria-pressed="false"><span class="alternativa__letra">A</span><span class="alternativa__texto">base do 2º metacarpal.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="B" aria-pressed="false"><span class="alternativa__letra">B</span><span class="alternativa__texto">base do 3º metacarpal.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="C" aria-pressed="false"><span class="alternativa__letra">C</span><span class="alternativa__texto">base do 5º metacarpal.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="D" aria-pressed="false"><span class="alternativa__letra">D</span><span class="alternativa__texto">falange distal do polegar.</span></button></li>
+</ul><div class="acoes"><button class="botao confirmar" type="button">Confirmar resposta</button><a href="../../../#/questao/mao-1270">Abrir no acervo</a></div><div class="resultado" role="status" hidden></div><details><summary>Gabarito e comentário completo</summary><div class="comentario"><h3>Gabarito: A</h3><p>O extensor radial longo do carpo nasce na região lateral distal do úmero e termina na base do segundo metacarpal. O curto nasce no epicôndilo lateral e termina na base do terceiro. Ambos integram o compartimento móvel e estendem a mão.</p>
+<p>Na figura, o longo ocupa a faixa proximal lateral, ao lado do braquiorradial. O curto aparece mais distalmente nessa exposição. A distinção entre segundo e terceiro metacarpais permite conferir a identidade do músculo sem depender apenas da semelhança dos nomes.</p><p><strong>A: base do 2º metacarpal.</strong> A seta aponta o extensor radial longo do carpo. Sua inserção é a base do segundo metacarpal; a do curto é a base do terceiro.</p>
+<h4>Alternativa B</h4><p><strong>É a inserção do radial curto.</strong> Os dois tendões são radiais e participam da extensão, mas chegam a metacarpais diferentes.</p>
+<h4>Alternativa C</h4><p><strong>É a inserção do extensor ulnar do carpo.</strong> Ele ocupa o lado ulnar e participa da extensão com desvio ulnar.</p>
+<h4>Alternativa D</h4><p><strong>É o destino do extensor longo do polegar.</strong> Esse músculo está no grupo posterior profundo e tem ação específica sobre o polegar.</p>
+<p class="fonte">Netter, Atlas de Anatomia Ortopédica, 2ª edição, seção Antebraço: músculos, nervos e artérias.</p></div></details></div></article>
+<article class="cartao questao-impressa" data-q="8" data-gab="B"><div class="cartao__corpo"><div class="qz-topo"><div class="qz-topo__info"><h2 class="qz-numero">Questão 8<small> de 18</small></h2><span class="qz-origem">OrtoQuestões Simulados</span></div></div><div class="qz-etiquetas"><span class="qz-chip qz-chip--tema">Antebraço</span><span class="qz-chip">Anatomia do antebraço</span></div><div class="questao__enunciado">O extensor radial indicado na região posterior do antebraço termina distalmente na</div>
+<figure><img src="../../../imagens/mao/mao-1271-1.jpeg" alt="Ilustração anatômica do antebraço" width="828" height="1899"><figcaption>Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.</figcaption></figure>
+<ul class="alternativas">
+<li><button type="button" class="alternativa" data-letra="A" aria-pressed="false"><span class="alternativa__letra">A</span><span class="alternativa__texto">base do 2º metacarpal.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="B" aria-pressed="false"><span class="alternativa__letra">B</span><span class="alternativa__texto">base do 3º metacarpal.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="C" aria-pressed="false"><span class="alternativa__letra">C</span><span class="alternativa__texto">base do 5º metacarpal.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="D" aria-pressed="false"><span class="alternativa__letra">D</span><span class="alternativa__texto">falange proximal do polegar.</span></button></li>
+</ul><div class="acoes"><button class="botao confirmar" type="button">Confirmar resposta</button><a href="../../../#/questao/mao-1271">Abrir no acervo</a></div><div class="resultado" role="status" hidden></div><details><summary>Gabarito e comentário completo</summary><div class="comentario"><h3>Gabarito: B</h3><p>O extensor radial curto do carpo nasce no epicôndilo lateral e termina na base do terceiro metacarpal. É um dos três músculos do compartimento móvel, com braquiorradial e extensor radial longo. O longo termina no segundo metacarpal.</p>
+<p>A imagem permite comparar as faixas musculares laterais. A seta está no curto, abaixo da região proximal ocupada pelo longo. A inserção no terceiro metacarpal é o atributo que distingue o destino de seu tendão.</p><p><strong>B: base do 3º metacarpal.</strong> O músculo indicado é o extensor radial curto. A base do terceiro metacarpal é sua inserção; trocar por segundo metacarpal corresponde ao longo.</p>
+<h4>Alternativa A</h4><p><strong>Corresponde ao radial longo.</strong> É o tendão vizinho do mesmo compartimento, mas não o músculo assinalado.</p>
+<h4>Alternativa C</h4><p><strong>Corresponde ao ulnar do carpo.</strong> Essa inserção acompanha um músculo do lado ulnar, diferente dos extensores radiais.</p>
+<h4>Alternativa D</h4><p><strong>Corresponde ao extensor curto do polegar.</strong> Curto do carpo e curto do polegar não são sinônimos: têm destinos e ações diferentes.</p>
+<p class="fonte">Netter, Atlas de Anatomia Ortopédica, 2ª edição, seção Antebraço: músculos, nervos e artérias.</p></div></details></div></article>
+<article class="cartao questao-impressa" data-q="9" data-gab="D"><div class="cartao__corpo"><div class="qz-topo"><div class="qz-topo__info"><h2 class="qz-numero">Questão 9<small> de 18</small></h2><span class="qz-origem">OrtoQuestões Simulados</span></div></div><div class="qz-etiquetas"><span class="qz-chip qz-chip--tema">Antebraço</span><span class="qz-chip">Anatomia do antebraço</span></div><div class="questao__enunciado">Na margem ulnar posterior do antebraço, o músculo indicado recebe inervação motora do nervo</div>
+<figure><img src="../../../imagens/mao/mao-1272-1.jpeg" alt="Ilustração anatômica do antebraço" width="828" height="1899"><figcaption>Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.</figcaption></figure>
+<ul class="alternativas">
+<li><button type="button" class="alternativa" data-letra="A" aria-pressed="false"><span class="alternativa__letra">A</span><span class="alternativa__texto">ulnar.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="B" aria-pressed="false"><span class="alternativa__letra">B</span><span class="alternativa__texto">mediano.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="C" aria-pressed="false"><span class="alternativa__letra">C</span><span class="alternativa__texto">musculocutâneo.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="D" aria-pressed="false"><span class="alternativa__letra">D</span><span class="alternativa__texto">interósseo posterior.</span></button></li>
+</ul><div class="acoes"><button class="botao confirmar" type="button">Confirmar resposta</button><a href="../../../#/questao/mao-1272">Abrir no acervo</a></div><div class="resultado" role="status" hidden></div><details><summary>Gabarito e comentário completo</summary><div class="comentario"><h3>Gabarito: D</h3><p>O extensor ulnar do carpo pertence ao grupo posterior superficial. Origina-se no epicôndilo lateral, termina na base do quinto metacarpal e atua na extensão e adução, ou desvio ulnar, da mão. Sua inervação é pelo interósseo posterior.</p>
+<p>O flexor ulnar do carpo também tem ulnar no nome e participa do desvio ulnar, mas fica anteriormente, flexiona o punho e recebe o nervo ulnar. A localização e o movimento de flexão ou extensão separam os dois músculos.</p><p><strong>D: interósseo posterior.</strong> A seta aponta o extensor ulnar do carpo, músculo posterior do lado ulnar. O nome descreve sua posição e ação, sem significar inervação pelo nervo ulnar.</p>
+<h4>Alternativa A</h4><p><strong>É o nervo do flexor ulnar do carpo.</strong> O flexor é anterior e não corresponde ao extensor indicado.</p>
+<h4>Alternativa B</h4><p><strong>Inerva vários músculos anteriores.</strong> Pronador redondo, flexor radial, palmar longo e superficial dos dedos estão em sua distribuição. O extensor ulnar é posterior.</p>
+<h4>Alternativa C</h4><p><strong>Sua distribuição motora é no braço.</strong> No antebraço, ele continua como nervo cutâneo lateral. Não é o nervo motor do extensor ulnar do carpo.</p>
+<p class="fonte">Netter, Atlas de Anatomia Ortopédica, 2ª edição, seção Antebraço: músculos, nervos e artérias.</p></div></details></div></article>
+<article class="cartao questao-impressa" data-q="10" data-gab="C"><div class="cartao__corpo"><div class="qz-topo"><div class="qz-topo__info"><h2 class="qz-numero">Questão 10<small> de 18</small></h2><span class="qz-origem">OrtoQuestões Simulados</span></div></div><div class="qz-etiquetas"><span class="qz-chip qz-chip--tema">Antebraço</span><span class="qz-chip">Anatomia do antebraço</span></div><div class="questao__enunciado">Na camada posterior profunda do antebraço, o músculo indicado apresenta inserção na</div>
+<figure><img src="../../../imagens/mao/mao-1273-1.jpeg" alt="Ilustração anatômica do antebraço" width="770" height="2043"><figcaption>Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.</figcaption></figure>
+<ul class="alternativas">
+<li><button type="button" class="alternativa" data-letra="A" aria-pressed="false"><span class="alternativa__letra">A</span><span class="alternativa__texto">base do 1º metacarpal.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="B" aria-pressed="false"><span class="alternativa__letra">B</span><span class="alternativa__texto">base do 3º metacarpal.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="C" aria-pressed="false"><span class="alternativa__letra">C</span><span class="alternativa__texto">falange distal do polegar.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="D" aria-pressed="false"><span class="alternativa__letra">D</span><span class="alternativa__texto">falange proximal do polegar.</span></button></li>
+</ul><div class="acoes"><button class="botao confirmar" type="button">Confirmar resposta</button><a href="../../../#/questao/mao-1273">Abrir no acervo</a></div><div class="resultado" role="status" hidden></div><details><summary>Gabarito e comentário completo</summary><div class="comentario"><h3>Gabarito: C</h3><p>O extensor longo do polegar nasce na face posterior da ulna e se insere na base da falange distal do polegar. Recebe o interósseo posterior. Seu tendão muda de direção junto ao tubérculo dorsal do rádio, de LISTER, antes de seguir ao polegar.</p>
+<p>O extensor curto nasce no rádio e termina na falange proximal. O abdutor longo nasce posteriormente no rádio e na ulna e termina na base do primeiro metacarpal. São músculos próximos no plano profundo, mas cada tendão alcança um ponto diferente.</p><p><strong>C: falange distal do polegar.</strong> A seta identifica o ventre do extensor longo do polegar. O destino distal o diferencia do curto, que termina na falange proximal, e do abdutor longo, que termina no metacarpal.</p>
+<h4>Alternativa A</h4><p><strong>É a inserção do abdutor longo.</strong> O longo do polegar pedido é extensor, não abdutor, e seu tendão chega à falange distal.</p>
+<h4>Alternativa B</h4><p><strong>É a inserção do extensor radial curto do carpo.</strong> Ele estende a mão, sem terminar em uma falange do polegar.</p>
+<h4>Alternativa D</h4><p><strong>É a inserção do extensor curto.</strong> A diferença entre longo e curto corresponde também à falange de destino.</p>
+<p class="fonte">Netter, Atlas de Anatomia Ortopédica, 2ª edição, seção Antebraço: músculos, nervos e artérias.</p></div></details></div></article>
+<article class="cartao questao-impressa" data-q="11" data-gab="D"><div class="cartao__corpo"><div class="qz-topo"><div class="qz-topo__info"><h2 class="qz-numero">Questão 11<small> de 18</small></h2><span class="qz-origem">OrtoQuestões Simulados</span></div></div><div class="qz-etiquetas"><span class="qz-chip qz-chip--tema">Antebraço</span><span class="qz-chip">Anatomia do antebraço</span></div><div class="questao__enunciado">No músculo profundo indicado junto ao rádio proximal, a estrutura nervosa que o atravessa é o</div>
+<figure><img src="../../../imagens/mao/mao-1274-1.jpeg" alt="Ilustração anatômica do antebraço" width="770" height="2043"><figcaption>Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.</figcaption></figure>
+<ul class="alternativas">
+<li><button type="button" class="alternativa" data-letra="A" aria-pressed="false"><span class="alternativa__letra">A</span><span class="alternativa__texto">ulnar.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="B" aria-pressed="false"><span class="alternativa__letra">B</span><span class="alternativa__texto">mediano.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="C" aria-pressed="false"><span class="alternativa__letra">C</span><span class="alternativa__texto">radial superficial.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="D" aria-pressed="false"><span class="alternativa__letra">D</span><span class="alternativa__texto">ramo profundo do radial.</span></button></li>
+</ul><div class="acoes"><button class="botao confirmar" type="button">Confirmar resposta</button><a href="../../../#/questao/mao-1274">Abrir no acervo</a></div><div class="resultado" role="status" hidden></div><details><summary>Gabarito e comentário completo</summary><div class="comentario"><h3>Gabarito: D</h3><p>O supinador envolve a região proximal do rádio. Sua origem é posterior e medial na ulna, e sua inserção é na região proximal lateral do rádio. Faz supinação do antebraço.</p>
+<p>O radial se divide em ramos superficial e profundo. O profundo atravessa o supinador e continua como interósseo posterior; o superficial segue sob o braquiorradial. A arcada proximal do supinador é a arcada de FROHSE, uma referência do trajeto profundo.</p><p><strong>D: ramo profundo do radial.</strong> A seta está no supinador. É o ramo profundo do radial que o atravessa, antes de prosseguir como interósseo posterior.</p>
+<h4>Alternativa A</h4><p><strong>Tem trajeto medial anterior.</strong> Após passar atrás do epicôndilo medial e pelas cabeças do flexor ulnar, segue sobre o profundo dos dedos. Não perfura o supinador.</p>
+<h4>Alternativa B</h4><p><strong>Passa entre as cabeças do pronador redondo.</strong> Essa é outra relação entre nervo e músculo proximal, situada anteriormente.</p>
+<h4>Alternativa C</h4><p><strong>Segue sob o braquiorradial.</strong> Ele não acompanha o trajeto motor através do supinador. Os dois ramos precisam ser diferenciados.</p>
+<p class="fonte">Netter, Atlas de Anatomia Ortopédica, 2ª edição, seção Antebraço: músculos, nervos e artérias.</p></div></details></div></article>
+<article class="cartao questao-impressa" data-q="12" data-gab="C"><div class="cartao__corpo"><div class="qz-topo"><div class="qz-topo__info"><h2 class="qz-numero">Questão 12<small> de 18</small></h2><span class="qz-origem">OrtoQuestões Simulados</span></div></div><div class="qz-etiquetas"><span class="qz-chip qz-chip--tema">Antebraço</span><span class="qz-chip">Anatomia do antebraço</span></div><div class="questao__enunciado">O nervo que percorre a membrana interóssea entre flexor longo do polegar e profundo dos dedos é o</div>
+<ul class="alternativas">
+<li><button type="button" class="alternativa" data-letra="A" aria-pressed="false"><span class="alternativa__letra">A</span><span class="alternativa__texto">ulnar.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="B" aria-pressed="false"><span class="alternativa__letra">B</span><span class="alternativa__texto">radial superficial.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="C" aria-pressed="false"><span class="alternativa__letra">C</span><span class="alternativa__texto">interósseo anterior.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="D" aria-pressed="false"><span class="alternativa__letra">D</span><span class="alternativa__texto">interósseo posterior.</span></button></li>
+</ul><div class="acoes"><button class="botao confirmar" type="button">Confirmar resposta</button><a href="../../../#/questao/mao-1275">Abrir no acervo</a></div><div class="resultado" role="status" hidden></div><details><summary>Gabarito e comentário completo</summary><div class="comentario"><h3>Gabarito: C</h3><p>O interósseo anterior é ramo do mediano. Desce com a artéria interóssea anterior, entre flexor longo do polegar e flexor profundo dos dedos, próximo à membrana interóssea. Inerva o longo do polegar, a porção radial do profundo e o pronador quadrado.</p>
+<p>O interósseo posterior pertence ao sistema radial e segue para os extensores. O ulnar percorre um plano sobre o profundo dos dedos, sob o superficial. Compartilhar a região profunda não torna esses trajetos equivalentes.</p><p><strong>C: interósseo anterior.</strong> A associação de plano anterior profundo, membrana interóssea, longo do polegar e profundo dos dedos identifica o interósseo anterior.</p>
+<h4>Alternativa A</h4><p><strong>Passa sobre o profundo dos dedos.</strong> O nervo segue medialmente e sob o superficial, acompanhado da artéria ulnar. Não é o ramo que desce entre longo do polegar e profundo.</p>
+<h4>Alternativa B</h4><p><strong>Permanece sob o braquiorradial.</strong> Seu trajeto é lateral e não corresponde ao plano entre os flexores profundos.</p>
+<h4>Alternativa D</h4><p><strong>É o ramo para o plano extensor.</strong> Atravessa o supinador e segue posteriormente, ao longo da membrana interóssea. A alternativa troca anterior por posterior.</p>
+<p class="fonte">Netter, Atlas de Anatomia Ortopédica, 2ª edição, seção Antebraço: músculos, nervos e artérias.</p></div></details></div></article>
+<article class="cartao questao-impressa" data-q="13" data-gab="B"><div class="cartao__corpo"><div class="qz-topo"><div class="qz-topo__info"><h2 class="qz-numero">Questão 13<small> de 18</small></h2><span class="qz-origem">OrtoQuestões Simulados</span></div></div><div class="qz-etiquetas"><span class="qz-chip qz-chip--tema">Antebraço</span><span class="qz-chip">Anatomia do antebraço</span></div><div class="questao__enunciado">Na face anterior distal do antebraço, a artéria indicada situa-se em relação ao tendão do flexor radial do carpo</div>
+<figure><img src="../../../imagens/mao/mao-1276-1.jpeg" alt="Ilustração anatômica do antebraço" width="845" height="1860"><figcaption>Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.</figcaption></figure>
+<ul class="alternativas">
+<li><button type="button" class="alternativa" data-letra="A" aria-pressed="false"><span class="alternativa__letra">A</span><span class="alternativa__texto">medialmente.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="B" aria-pressed="false"><span class="alternativa__letra">B</span><span class="alternativa__texto">lateralmente.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="C" aria-pressed="false"><span class="alternativa__letra">C</span><span class="alternativa__texto">posteriormente.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="D" aria-pressed="false"><span class="alternativa__letra">D</span><span class="alternativa__texto">entre suas duas cabeças.</span></button></li>
+</ul><div class="acoes"><button class="botao confirmar" type="button">Confirmar resposta</button><a href="../../../#/questao/mao-1276">Abrir no acervo</a></div><div class="resultado" role="status" hidden></div><details><summary>Gabarito e comentário completo</summary><div class="comentario"><h3>Gabarito: B</h3><p>A artéria radial percorre a região radial anterior do antebraço e fica lateral ao flexor radial do carpo. A figura mostra o vaso vermelho no lado radial do tendão, antes de seu trajeto em direção ao punho.</p>
+<p>O ramo superficial do radial também percorre a região lateral, sob o braquiorradial, e é descrito lateral à artéria. No lado ulnar, o nervo ulnar fica medial à artéria ulnar. Nervos e vasos próximos exigem reconhecer tanto a cor na figura quanto a referência muscular.</p><p><strong>B: lateralmente.</strong> A seta termina na artéria radial. A referência solicitada é o flexor radial do carpo, cujo tendão fica medial ao vaso.</p>
+<h4>Alternativa A</h4><p><strong>Inverte a relação com o tendão.</strong> O vaso radial está lateral ao flexor radial do carpo, não medial.</p>
+<h4>Alternativa C</h4><p><strong>Não é a relação topográfica apresentada.</strong> A comparação da figura anterior usa a posição radial, lateral, do vaso em relação ao tendão.</p>
+<h4>Alternativa D</h4><p><strong>É uma relação de outro nervo com outro músculo.</strong> O mediano passa entre as cabeças do pronador redondo. O vaso assinalado está ao lado do tendão do flexor radial.</p>
+<p class="fonte">Netter, Atlas de Anatomia Ortopédica, 2ª edição, seção Antebraço: músculos, nervos e artérias.</p></div></details></div></article>
+<article class="cartao questao-impressa" data-q="14" data-gab="C"><div class="cartao__corpo"><div class="qz-topo"><div class="qz-topo__info"><h2 class="qz-numero">Questão 14<small> de 18</small></h2><span class="qz-origem">OrtoQuestões Simulados</span></div></div><div class="qz-etiquetas"><span class="qz-chip qz-chip--tema">Antebraço</span><span class="qz-chip">Anatomia do antebraço</span></div><div class="questao__enunciado">No antebraço, o compartimento móvel reúne braquiorradial e os músculos</div>
+<ul class="alternativas">
+<li><button type="button" class="alternativa" data-letra="A" aria-pressed="false"><span class="alternativa__letra">A</span><span class="alternativa__texto">flexores radial e ulnar do carpo.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="B" aria-pressed="false"><span class="alternativa__letra">B</span><span class="alternativa__texto">extensor dos dedos e extensor do mínimo.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="C" aria-pressed="false"><span class="alternativa__letra">C</span><span class="alternativa__texto">extensores radiais longo e curto do carpo.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="D" aria-pressed="false"><span class="alternativa__letra">D</span><span class="alternativa__texto">abdutor longo e extensor curto do polegar.</span></button></li>
+</ul><div class="acoes"><button class="botao confirmar" type="button">Confirmar resposta</button><a href="../../../#/questao/mao-1277">Abrir no acervo</a></div><div class="resultado" role="status" hidden></div><details><summary>Gabarito e comentário completo</summary><div class="comentario"><h3>Gabarito: C</h3><p>O compartimento móvel, também chamado coxim móvel, reúne braquiorradial, extensor radial longo e extensor radial curto do carpo. É um grupo lateral distinto dos planos flexor anterior e extensor posterior.</p>
+<p>Seus músculos não têm ação idêntica: o braquiorradial flexiona o antebraço, enquanto os radiais estendem a mão. A classificação é topográfica, não uma lista de músculos que realizam o mesmo movimento.</p><p><strong>C: extensores radiais longo e curto do carpo.</strong> Os dois extensores radiais completam o trio com o braquiorradial. Supinador e extensores do polegar pertencem ao grupo posterior profundo.</p>
+<h4>Alternativa A</h4><p><strong>São do plano anterior superficial.</strong> Participam da flexão do punho e não compõem o coxim móvel lateral.</p>
+<h4>Alternativa B</h4><p><strong>São posteriores superficiais.</strong> O grupo compartilha extensão, mas não a classificação lateral do compartimento móvel.</p>
+<h4>Alternativa D</h4><p><strong>São posteriores profundos.</strong> Estão no plano dos músculos do polegar, não no trio lateral com braquiorradial.</p>
+<p class="fonte">Netter, Atlas de Anatomia Ortopédica, 2ª edição, seção Antebraço: músculos, nervos e artérias.</p></div></details></div></article>
+<article class="cartao questao-impressa" data-q="15" data-gab="B"><div class="cartao__corpo"><div class="qz-topo"><div class="qz-topo__info"><h2 class="qz-numero">Questão 15<small> de 18</small></h2><span class="qz-origem">OrtoQuestões Simulados</span></div></div><div class="qz-etiquetas"><span class="qz-chip qz-chip--tema">Antebraço</span><span class="qz-chip">Anatomia do antebraço</span></div><div class="questao__enunciado">No flexor profundo dos dedos, as porções destinadas ao indicador e ao mínimo são inervadas, respectivamente, por</div>
+<ul class="alternativas">
+<li><button type="button" class="alternativa" data-letra="A" aria-pressed="false"><span class="alternativa__letra">A</span><span class="alternativa__texto">ulnar; ulnar.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="B" aria-pressed="false"><span class="alternativa__letra">B</span><span class="alternativa__texto">interósseo anterior; ulnar.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="C" aria-pressed="false"><span class="alternativa__letra">C</span><span class="alternativa__texto">ulnar; interósseo anterior.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="D" aria-pressed="false"><span class="alternativa__letra">D</span><span class="alternativa__texto">interósseo anterior; interósseo anterior.</span></button></li>
+</ul><div class="acoes"><button class="botao confirmar" type="button">Confirmar resposta</button><a href="../../../#/questao/mao-1278">Abrir no acervo</a></div><div class="resultado" role="status" hidden></div><details><summary>Gabarito e comentário completo</summary><div class="comentario"><h3>Gabarito: B</h3><p>O flexor profundo tem inervação dividida. A porção para o indicador recebe o interósseo anterior, ramo do mediano; a destinada ao mínimo recebe o ulnar. A tabela assinala possibilidade de distribuição variável para o dedo médio, por isso os extremos são referências mais claras.</p>
+<p>Esse músculo se insere nas falanges distais. O superficial, que termina nas falanges médias, recebe o mediano. Não se deve aplicar a todo flexor profundo a inervação única do superficial.</p><p><strong>B: interósseo anterior; ulnar.</strong> Indicador corresponde ao interósseo anterior; mínimo, ao ulnar. A ordem das duas porções é essencial para ler o par.</p>
+<h4>Alternativa A</h4><p><strong>Conserva apenas a porção do mínimo.</strong> A do indicador recebe o interósseo anterior. O ulnar não é o nervo exclusivo de todo o profundo.</p>
+<h4>Alternativa C</h4><p><strong>Inverte as duas porções.</strong> Indicador é radial e recebe o interósseo anterior; mínimo é ulnar e recebe o ulnar.</p>
+<h4>Alternativa D</h4><p><strong>Conserva apenas a porção do indicador.</strong> A porção para o mínimo pertence à distribuição ulnar, não ao interósseo anterior.</p>
+<p class="fonte">Netter, Atlas de Anatomia Ortopédica, 2ª edição, seção Antebraço: músculos, nervos e artérias.</p></div></details></div></article>
+<article class="cartao questao-impressa" data-q="16" data-gab="D"><div class="cartao__corpo"><div class="qz-topo"><div class="qz-topo__info"><h2 class="qz-numero">Questão 16<small> de 18</small></h2><span class="qz-origem">OrtoQuestões Simulados</span></div></div><div class="qz-etiquetas"><span class="qz-chip qz-chip--tema">Antebraço</span><span class="qz-chip">Anatomia do antebraço</span></div><div class="questao__enunciado">Sob o músculo indicado, o nervo que segue distalmente na região lateral do antebraço é o</div>
+<figure><img src="../../../imagens/mao/mao-1279-1.jpeg" alt="Ilustração anatômica do antebraço" width="828" height="1899"><figcaption>Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.</figcaption></figure>
+<ul class="alternativas">
+<li><button type="button" class="alternativa" data-letra="A" aria-pressed="false"><span class="alternativa__letra">A</span><span class="alternativa__texto">interósseo anterior.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="B" aria-pressed="false"><span class="alternativa__letra">B</span><span class="alternativa__texto">interósseo posterior.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="C" aria-pressed="false"><span class="alternativa__letra">C</span><span class="alternativa__texto">ramo profundo do radial.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="D" aria-pressed="false"><span class="alternativa__letra">D</span><span class="alternativa__texto">ramo superficial do radial.</span></button></li>
+</ul><div class="acoes"><button class="botao confirmar" type="button">Confirmar resposta</button><a href="../../../#/questao/mao-1279">Abrir no acervo</a></div><div class="resultado" role="status" hidden></div><details><summary>Gabarito e comentário completo</summary><div class="comentario"><h3>Gabarito: D</h3><p>O ramo superficial do radial passa sob o braquiorradial, em direção à região radial distal. O ramo profundo segue por outro caminho: atravessa o supinador e continua como interósseo posterior.</p>
+<p>A seta aponta uma referência muscular, não o próprio nervo. Reconhecer o braquiorradial permite localizar o ramo superficial abaixo dele. Esse nervo sensitivo não deve ser confundido com os ramos motores que seguem para o plano extensor.</p><p><strong>D: ramo superficial do radial.</strong> A referência é o braquiorradial; o ramo que segue sob ele é o superficial do radial. O profundo atravessa o supinador.</p>
+<h4>Alternativa A</h4><p><strong>É ramo do mediano.</strong> Desce entre os flexores profundos no plano anterior, acompanhado de sua artéria.</p>
+<h4>Alternativa B</h4><p><strong>É a continuação do ramo profundo.</strong> Segue para os extensores após atravessar o supinador. A alternativa troca a cobertura muscular e o trajeto.</p>
+<h4>Alternativa C</h4><p><strong>Atravessa o supinador.</strong> É a divisão motora que prossegue como interósseo posterior, não o trajeto sob o braquiorradial.</p>
+<p class="fonte">Netter, Atlas de Anatomia Ortopédica, 2ª edição, seção Antebraço: músculos, nervos e artérias.</p></div></details></div></article>
+<article class="cartao questao-impressa" data-q="17" data-gab="A"><div class="cartao__corpo"><div class="qz-topo"><div class="qz-topo__info"><h2 class="qz-numero">Questão 17<small> de 18</small></h2><span class="qz-origem">OrtoQuestões Simulados</span></div></div><div class="qz-etiquetas"><span class="qz-chip qz-chip--tema">Antebraço</span><span class="qz-chip">Anatomia do antebraço</span></div><div class="questao__enunciado">Na organização dos músculos anteriores do antebraço, o músculo assinalado pertence à camada</div>
+<figure><img src="../../../imagens/mao/mao-1280-1.jpeg" alt="Ilustração anatômica do antebraço" width="1024" height="1536"><figcaption>Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.</figcaption></figure>
+<ul class="alternativas">
+<li><button type="button" class="alternativa" data-letra="A" aria-pressed="false"><span class="alternativa__letra">A</span><span class="alternativa__texto">média.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="B" aria-pressed="false"><span class="alternativa__letra">B</span><span class="alternativa__texto">profunda.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="C" aria-pressed="false"><span class="alternativa__letra">C</span><span class="alternativa__texto">superficial.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="D" aria-pressed="false"><span class="alternativa__letra">D</span><span class="alternativa__texto">posterior profunda.</span></button></li>
+</ul><div class="acoes"><button class="botao confirmar" type="button">Confirmar resposta</button><a href="../../../#/questao/mao-1280">Abrir no acervo</a></div><div class="resultado" role="status" hidden></div><details><summary>Gabarito e comentário completo</summary><div class="comentario"><h3>Gabarito: A</h3><p>O flexor superficial dos dedos constitui o plano médio ou intermediário anterior. Fica abaixo dos músculos superficiais e sobre os flexores profundos. O nome superficial descreve sua relação com o profundo dos dedos, não com toda a musculatura do antebraço.</p>
+<p>Pronador redondo, flexor radial, palmar longo e flexor ulnar formam o plano superficial. Profundo dos dedos, longo do polegar e pronador quadrado compõem o profundo. O FSD tem origem com cabeças umeroulnar e radial e termina nas falanges médias.</p><p><strong>A: média.</strong> A seta aponta o flexor superficial dos dedos. No esquema de compartimentos do atlas, ele ocupa sozinho a camada média anterior.</p>
+<h4>Alternativa B</h4><p><strong>É o plano do FPD, FLP e quadrado.</strong> O superficial dos dedos fica acima deles, em um plano próprio.</p>
+<h4>Alternativa C</h4><p><strong>O nome pode induzir essa troca.</strong> A camada superficial anterior inclui pronador redondo e os flexores radial e ulnar, além do palmar longo. O FSD é intermediário.</p>
+<h4>Alternativa D</h4><p><strong>É outro compartimento.</strong> Supinador e extensores profundos do polegar estão posteriormente. O músculo indicado pertence à face anterior.</p>
+<p class="fonte">Netter, Atlas de Anatomia Ortopédica, 2ª edição, seção Antebraço: músculos, nervos e artérias.</p></div></details></div></article>
+<article class="cartao questao-impressa" data-q="18" data-gab="B"><div class="cartao__corpo"><div class="qz-topo"><div class="qz-topo__info"><h2 class="qz-numero">Questão 18<small> de 18</small></h2><span class="qz-origem">OrtoQuestões Simulados</span></div></div><div class="qz-etiquetas"><span class="qz-chip qz-chip--tema">Antebraço</span><span class="qz-chip">Anatomia do antebraço</span></div><div class="questao__enunciado">Na flexão do punho, os desvios produzidos pelos flexores radial e ulnar do carpo são, respectivamente,</div>
+<ul class="alternativas">
+<li><button type="button" class="alternativa" data-letra="A" aria-pressed="false"><span class="alternativa__letra">A</span><span class="alternativa__texto">ulnar; ulnar.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="B" aria-pressed="false"><span class="alternativa__letra">B</span><span class="alternativa__texto">radial; ulnar.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="C" aria-pressed="false"><span class="alternativa__letra">C</span><span class="alternativa__texto">ulnar; radial.</span></button></li>
+<li><button type="button" class="alternativa" data-letra="D" aria-pressed="false"><span class="alternativa__letra">D</span><span class="alternativa__texto">radial; radial.</span></button></li>
+</ul><div class="acoes"><button class="botao confirmar" type="button">Confirmar resposta</button><a href="../../../#/questao/mao-1281">Abrir no acervo</a></div><div class="resultado" role="status" hidden></div><details><summary>Gabarito e comentário completo</summary><div class="comentario"><h3>Gabarito: B</h3><p>O flexor radial do carpo termina na base do segundo e também do terceiro metacarpal e combina flexão do punho com desvio radial. O flexor ulnar tem fixações no pisiforme, hâmulo do hamato e quinto metacarpal e combina flexão com desvio ulnar.</p>
+<p>Os dois são superficiais anteriores, mas diferem em lado, inserção e nervo: mediano para o radial e ulnar para o ulnar. O componente de flexão compartilhado não elimina o desvio distinto de cada músculo.</p><p><strong>B: radial; ulnar.</strong> O radial desvia radialmente e o ulnar, ulnarmente. As inserções de cada lado ajudam a associar o nome ao movimento.</p>
+<h4>Alternativa A</h4><p><strong>Mantém só a ação do segundo músculo.</strong> O flexor radial acrescenta desvio radial, não ulnar.</p>
+<h4>Alternativa C</h4><p><strong>Inverte os dois músculos.</strong> As inserções radial e ulnar se relacionam aos desvios de mesmo nome.</p>
+<h4>Alternativa D</h4><p><strong>Mantém só a ação do primeiro.</strong> O flexor ulnar combina flexão com desvio ulnar, sem repetir o componente radial.</p>
+<p class="fonte">Netter, Atlas de Anatomia Ortopédica, 2ª edição, seção Antebraço: músculos, nervos e artérias.</p></div></details></div></article>
+<p class="fonte">Questões autorais, não oficiais.</p></main><script>document.querySelectorAll("article").forEach(card=>{const opts=[...card.querySelectorAll(".alternativa")];opts.forEach(b=>b.addEventListener("click",()=>{opts.forEach(x=>{x.classList.toggle("alternativa--escolhida",x===b);x.setAttribute("aria-pressed",String(x===b))});card.dataset.escolha=b.dataset.letra}));card.querySelector(".confirmar").addEventListener("click",()=>{const r=card.querySelector(".resultado");r.hidden=false;if(!card.dataset.escolha){r.textContent="Selecione uma alternativa para responder.";return}const certo=card.dataset.escolha===card.dataset.gab;r.textContent=(certo?"Resposta correta. ":"Resposta incorreta. ")+"Gabarito: "+card.dataset.gab+".";opts.forEach(b=>{b.classList.toggle("alternativa--certa",b.dataset.letra===card.dataset.gab);b.classList.toggle("alternativa--errada",b.dataset.letra===card.dataset.escolha&&!certo)});card.querySelector("details").open=true})});</script></body></html>
