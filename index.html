@@ -62,11 +62,19 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <script>
       // Aplica o tema antes da primeira pintura, para não haver piscada.
-      // O padrão é o escuro; só fica claro quem escolheu o claro.
+      // Quem escolheu um tema fica nele; sem escolha, o site sorteia claro ou
+      // escuro a cada visita (o sorteio vale para a aba inteira, sem trocar no recarregar).
       (function () {
         try {
           // O app grava o tema em JSON ("escuro", com aspas); aceita os dois formatos.
           var t = (localStorage.getItem('ortoquestoes:tema') || '').replace(/"/g, '')
+          if (t !== 'claro' && t !== 'escuro') {
+            try { t = sessionStorage.getItem('ortoquestoes:tema-sorteado') || '' } catch (e) { t = '' }
+            if (t !== 'claro' && t !== 'escuro') {
+              t = Math.random() < 0.5 ? 'claro' : 'escuro'
+              try { sessionStorage.setItem('ortoquestoes:tema-sorteado', t) } catch (e) {}
+            }
+          }
           var claro = t === 'claro'
           document.documentElement.dataset.tema = claro ? 'claro' : 'escuro'
           if (claro) document.querySelector('meta[name="theme-color"]').setAttribute('content', '#F1F3F2')

@@ -14,11 +14,13 @@ function aplicar(tema: Tema) {
 }
 
 export function usarTema() {
-  // O site abre no tema escuro. Só quem escolheu o claro (em Minha conta ou
-  // no botão do cabeçalho) fica no claro, e essa escolha vale para sempre.
+  // Quem escolheu um tema (em Minha conta ou no botão do cabeçalho) fica nele
+  // para sempre. Sem escolha, vale o sorteio feito no index.html antes da
+  // primeira pintura (claro ou escuro a cada visita), que não é gravado.
   const [tema, definir] = useState<Tema>(() => {
-    const salvo = ler<Tema>('tema', 'escuro')
-    return salvo === 'claro' ? 'claro' : 'escuro'
+    const salvo = ler<Tema | null>('tema', null)
+    if (salvo === 'claro' || salvo === 'escuro') return salvo
+    return document.documentElement.dataset.tema === 'claro' ? 'claro' : 'escuro'
   })
 
   useEffect(() => {
