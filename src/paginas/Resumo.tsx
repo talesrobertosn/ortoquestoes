@@ -22,6 +22,7 @@ import { ConviteLimiteDoDia, DiaCumprido } from '../componentes/LimiteRespostas'
 import { ConviteCompartilhar } from '../componentes/ConviteCompartilhar'
 import { conviteDiarioMostradoHoje } from '../componentes/ConviteDiario'
 import { lerBloqueioDiario } from '../estado/limiteDiario'
+import '../estilos/componentes/EsperaPixel.css'
 import '../estilos/paginas/Resumo.css'
 
 type Confianca = NonNullable<Resposta['confianca']>
@@ -276,6 +277,7 @@ export function Resumo() {
       {sessao.nacional && sessao.concluidaEm && <EntregaNacional sessao={sessao} />}
       <section className="rs-heroi">
         {mostrarBatalha && <span className="rs-tochas" aria-hidden="true"><img src={recurso('ranking/tocha.png')} width={24} height={48} alt="" /><img src={recurso('ranking/tocha.png')} width={24} height={48} alt="" /></span>}
+        {mostrarBatalha && <span className="espera-pixel__guerreiro rs-guerreiro" aria-hidden="true" style={{ backgroundImage: `url(${recurso('ranking/guerreiro.png')})` }} />}
         {mostrarBatalha && <p className="rs-batalha__grito">{pct! >= 70 ? 'Vitória!' : pct! >= 50 ? 'Boa batalha!' : 'Batalha difícil'}</p>}
         <div className="rs-heroi__texto">
           <p className="rs-heroi__selo">
