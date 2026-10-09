@@ -27,14 +27,18 @@ h1 em { font-style: normal; color: var(--ouro); }
 .nota { font: 700 50px/1.05 Caveat; color: var(--ouro); }
 
 /* s1: os três passos */
-.passos { margin-top: 64px; display: grid; gap: 30px; }
-.passo { position: relative; display: grid; grid-template-columns: 120px 1fr; gap: 30px; align-items: start; padding: 34px 36px; border: 3px solid rgba(234,244,255,.75); background: rgba(11,44,80,.55); }
+.gigante { margin-top: 50px; font: 800 150px/.9 Jakarta; letter-spacing: -.05em; color: #fff; text-shadow: 8px 8px 0 rgba(0,0,0,.25); }
+.gigante em { font-style: normal; color: var(--ouro); }
+.padrao { margin-top: 30px; padding: 26px 30px; border-left: 10px solid var(--ouro); background: rgba(11,44,80,.6); font: 500 40px/1.35 Inter; }
+.padrao strong { color: var(--ouro); font-weight: 800; }
+.passos { margin-top: 44px; display: grid; gap: 22px; }
+.passo { position: relative; display: grid; grid-template-columns: 110px 1fr; gap: 26px; align-items: start; padding: 26px 32px; border: 3px solid rgba(234,244,255,.75); background: rgba(11,44,80,.55); }
 .passo::before, .passo::after { content: ''; position: absolute; width: 22px; height: 22px; border: 3px solid var(--ciano); }
 .passo::before { left: -12px; top: -12px; border-right: 0; border-bottom: 0; }
 .passo::after { right: -12px; bottom: -12px; border-left: 0; border-top: 0; }
-.passo b { font: 800 84px/1 Jakarta; color: var(--ciano); letter-spacing: -.04em; }
-.passo p { font: 500 38px/1.35 Inter; } .passo p strong { display: block; margin-bottom: 6px; font: 800 44px Jakarta; color: #fff; }
-.s1 .nota { margin-top: 50px; }
+.passo b { font: 800 76px/1 Jakarta; color: var(--ciano); letter-spacing: -.04em; }
+.passo p { font: 500 34px/1.32 Inter; } .passo p strong { display: block; margin-bottom: 4px; font: 800 42px Jakarta; color: #fff; }
+.s1 .nota { margin-top: 36px; font-size: 56px; }
 
 /* s2: a questão */
 .ficha { margin-top: 44px; display: grid; grid-template-columns: 400px 1fr; gap: 40px; align-items: start; }
@@ -47,19 +51,23 @@ h1 em { font-style: normal; color: var(--ouro); }
 .alts { margin-top: 30px; display: grid; gap: 14px; }
 .alts span { display: flex; align-items: center; gap: 18px; padding: 16px 18px; border: 2px dashed rgba(234,244,255,.6); font: 600 31px Inter; }
 .alts b { display: grid; place-items: center; flex: 0 0 auto; width: 54px; height: 54px; border: 3px solid var(--ouro); color: var(--ouro); font: 800 28px Jakarta; }
+.faixa { margin-top: 44px; font: 800 82px/1 Jakarta; letter-spacing: -.04em; }
+.faixa em { font-style: normal; color: var(--ouro); }
 .s2 .nota { margin-top: 44px; text-align: center; }
 
 /* s3: a resposta */
 .resposta { margin-top: 50px; padding: 40px 44px; background: var(--giz); color: var(--azul2); box-shadow: 14px 14px 0 rgba(0,0,0,.25); }
 .resposta small { font: 800 24px Inter; letter-spacing: .18em; text-transform: uppercase; color: #2a6db0; }
-.resposta h2 { margin-top: 12px; font: 800 70px/1 Jakarta; letter-spacing: -.035em; }
-.resposta p { margin-top: 24px; font: 500 40px/1.45 Inter; }
+.resposta h2 { margin-top: 10px; font: 800 64px/1 Jakarta; letter-spacing: -.035em; }
+.resposta p { margin-top: 20px; font: 500 36px/1.42 Inter; }
 .resposta p strong { font-weight: 800; }
-.chamada { margin-top: 56px; display: grid; gap: 14px; }
-.chamada p { font: 800 64px/1.06 Jakarta; letter-spacing: -.03em; }
+.chamada { margin-top: 48px; display: grid; gap: 14px; }
+.botao-cta { justify-self: start; margin-top: 10px; padding: 26px 44px; background: var(--ouro); color: var(--azul2); font: 800 54px Jakarta; letter-spacing: -.02em; box-shadow: 10px 10px 0 rgba(0,0,0,.3); }
+.chamada small { font-size: 36px !important; }
+.chamada p { font: 800 84px/1.02 Jakarta; letter-spacing: -.03em; }
 .chamada p em { font-style: normal; color: var(--ouro); }
 .chamada small { font: 600 34px Inter; color: var(--ciano); }
-.s3 .nota { margin-top: 50px; font-size: 58px; }
+.s3 .nota { margin-top: 34px; font-size: 50px; }
 </style></head><body>
 
 <svg width="0" height="0" style="position:absolute"><defs>
@@ -71,19 +79,19 @@ h1 em { font-style: normal; color: var(--ouro); }
 
 <section id="s1-engenharia" class="s1">
   <div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div>
-  <span class="eti">Engenharia reversa</span>
-  <h1>Como nasce uma questão dos <em>OrtoQuestões Simulados</em></h1>
+  <p class="gigante">ENGENHARIA<br><em>REVERSA</em></p>
+  <p class="padrao">Questões autorais no <strong>padrão da prova original</strong>. É assim que nascem os OrtoQuestões Simulados:</p>
   <div class="passos">
     <div class="passo"><b>01</b><p><strong>Lemos a prova</strong>O que o TEOT e o TARO já cobraram, assunto por assunto.</p></div>
     <div class="passo"><b>02</b><p><strong>Desmontamos</strong>Qual detalhe a banca quer ver e onde ela costuma pegar.</p></div>
     <div class="passo"><b>03</b><p><strong>Montamos de novo</strong>Uma questão autoral, inédita, no mesmo padrão da prova.</p></div>
   </div>
-  <p class="nota">Chegou a parte de anatomia. Teste no próximo story.</p>
+  <p class="nota">Agora com anatomia. Teste no próximo story.</p>
 </section>
 
 <section id="s2-questao" class="s2">
   <div class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></div>
-  <span class="eti">Prancha 01 · Antebraço</span>
+  <p class="faixa">Anatomia no <em>padrão TEOT</em></p>
   <div class="ficha">
     <div class="prancha"><span class="cota"><span>VISTA ANTERIOR</span></span><img src="../../../../public/imagens/mao/mao-1279-1.jpeg" alt=""></div>
     <div>
@@ -103,8 +111,9 @@ h1 em { font-style: normal; color: var(--ouro); }
     <p>A seta aponta o <strong>braquiorradial</strong>. Sob ele desce o <strong>ramo superficial</strong> do radial, sensitivo, rumo ao punho. O <strong>ramo profundo</strong> faz outro caminho: atravessa o supinador e sai como <strong>interósseo posterior</strong>.</p>
   </div>
   <div class="chamada">
-    <p>Anatomia nova no treino, <em>no padrão da prova.</em></p>
-    <small>Treine grátis em ortoquestoes.com.br</small>
+    <p>Treine anatomia para o TEOT <em>com o Orto Questões</em></p>
+    <span class="botao-cta">Crie sua conta grátis</span>
+    <small>Conheça a plataforma: ortoquestoes.com.br</small>
   </div>
   <p class="nota">E o ramo profundo? Siga a rota no feed de hoje.</p>
 </section>
