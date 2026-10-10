@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Notificações: propaganda</title>
+<!-- Estilo "notificações" (propaganda): tela bloqueada às 19:00 com avisos do Orto Questões e a pílula
+     "Crie sua conta grátis". Tela ilustrativa. Feed 1080x1350 (feed) e stories 1080x1920 (story).
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-10-notificacao-propaganda/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1350px; }
+section > * { position: absolute; }
+
+/* C: notificações */
+.tela { background: radial-gradient(circle at 20% 15%, #2a8f84 0, transparent 45%), radial-gradient(circle at 90% 70%, #c0392b 0, transparent 40%), linear-gradient(160deg, #0b3a35, #0a1f2c); color: #fff; }
+.tela .hora { left: 0; right: 0; top: 70px; text-align: center; }
+.tela .hora small { font: 600 36px Inter; opacity: .85; }
+.tela .hora b { display: block; font: 300 230px/1 Jakarta; letter-spacing: -.04em; }
+.notif { left: 60px; right: 60px; display: flex; gap: 26px; padding: 30px 32px; border-radius: 44px; background: rgba(255,255,255,.88); color: #111; box-shadow: 0 20px 40px rgba(0,0,0,.25); }
+.notif svg { flex: 0 0 auto; width: 90px; height: 90px; }
+.notif div { flex: 1; }
+.notif small { display: flex; justify-content: space-between; font: 700 26px Inter; color: #555; letter-spacing: .04em; text-transform: uppercase; }
+.notif b { display: block; margin-top: 6px; font: 800 48px/1.08 Jakarta; letter-spacing: -.03em; }
+.notif p { margin-top: 6px; font: 500 30px/1.25 Inter; color: #333; }
+.notif--grande { background: #fff; transform: scale(1.03); }
+.notif--grande b { font-size: 58px; color: #14655E; }
+.tela .cta { left: 60px; right: 60px; bottom: 70px; padding: 30px; border-radius: 999px; background: #f4cf7c; color: #0b3a35; text-align: center; }
+.tela .cta b { display: block; font: 800 64px Jakarta; letter-spacing: -.03em; }
+.tela .cta span { display: block; font: 800 32px Inter; }
+.tela .ilus { left: 0; right: 0; bottom: 26px; text-align: center; font: 600 20px Inter; opacity: .7; }
+
+section.story { height: 1920px; }
+section.story .hora { top: 230px; }
+section.story .hora b { font-size: 270px; }
+section.story .notif b { font-size: 52px; }
+section.story .notif--grande b { font-size: 62px; }
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/>
+<circle cx="17" cy="20" r="4.5" fill="#9cc3bd"/><rect x="26" y="16.5" width="24" height="7" rx="3.5" fill="#9cc3bd"/>
+<circle cx="17" cy="32" r="4.5" fill="#f4cf7c"/><rect x="26" y="28.5" width="24" height="7" rx="3.5" fill="#f4cf7c"/>
+<circle cx="17" cy="44" r="4.5" fill="#9cc3bd"/><rect x="26" y="40.5" width="19" height="7" rx="3.5" fill="#9cc3bd"/></symbol>
+</defs></svg>
+
+<section id="feed" class="tela">
+  <div class="hora"><small>sábado, 10 de outubro</small><b>19:00</b></div>
+  <div class="notif notif--grande" style="top:390px"><svg><use href="#sim"/></svg><div><small><span>Orto Questões</span><span>agora</span></small><b>Suas questões grátis de hoje chegaram</b><p>Prova oficial comentada esperando você.</p></div></div>
+  <div class="notif" style="top:690px"><svg><use href="#sim"/></svg><div><small><span>Orto Questões</span><span>agora</span></small><b>Você subiu 3 posições no ranking</b></div></div>
+  <div class="notif" style="top:880px"><svg><use href="#sim"/></svg><div><small><span>Orto Questões</span><span>agora</span></small><b>Simulado novo: engenharia reversa</b></div></div>
+  <div class="cta" style="bottom:90px"><b>Crie sua conta grátis</b><span>ortoquestoes.com.br</span></div>
+  <p class="ilus">Tela ilustrativa</p>
+</section>
+
+<section id="story" class="story tela">
+  <div class="hora"><small>sábado, 10 de outubro</small><b>19:00</b></div>
+  <div class="notif notif--grande" style="top:640px"><svg><use href="#sim"/></svg><div><small><span>Orto Questões</span><span>agora</span></small><b>Suas questões grátis de hoje chegaram</b><p>Prova oficial comentada esperando você.</p></div></div>
+  <div class="notif" style="top:985px"><svg><use href="#sim"/></svg><div><small><span>Orto Questões</span><span>agora</span></small><b>Você subiu 3 posições no ranking</b></div></div>
+  <div class="notif" style="top:1215px"><svg><use href="#sim"/></svg><div><small><span>Orto Questões</span><span>agora</span></small><b>Simulado novo: engenharia reversa</b></div></div>
+  <div class="cta" style="bottom:255px"><b>Crie sua conta grátis</b><span>ortoquestoes.com.br</span></div>
+  <p class="ilus" style="bottom:212px">Tela ilustrativa</p>
+</section>
+</body></html>

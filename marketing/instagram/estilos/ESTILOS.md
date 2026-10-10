@@ -269,10 +269,11 @@ Simulados: questões autorais feitas a partir do que as provas oficiais cobram.
   resposta + "Treine grátis". Sem figurinha nem link.
 - **Bom para:** divulgar os Simulados e novidades do acervo (ex.: a parte de anatomia).
 
-## Cápsula (`posts/2026-10-10-bula-propaganda/`), propaganda de 3 segundos
+## Notificações (`posts/2026-10-10-notificacao-propaganda/`), propaganda
 
-Fundo amarelo com raios de cartaz, "QUESTÕES GRÁTIS" gigante (grátis em vermelho com contorno e sombra
-preta), uma cápsula enorme verde e vermelha ("1 por dia · até a prova"), três etiquetas curtas
-(Comentadas, Simulados, Ranking) e a faixa preta "Crie sua conta grátis · ortoquestoes.com.br".
-Imagem única no feed e um story. Regra da propaganda: o que importa é lido em 3 segundos, grande e
-colorido; nada de bloco de texto. A primeira versão (bula com texto pequeno) foi recusada por isso.
+Tela bloqueada de celular às 19:00 (fundo verde-escuro com brilho vermelho), três avisos do Orto
+Questões ("Suas questões grátis de hoje chegaram", ranking, simulado por engenharia reversa) e a pílula
+dourada "Crie sua conta grátis · ortoquestoes.com.br". Imagem única no feed e um story, com "Tela
+ilustrativa". Regra da propaganda: o essencial lido em 3 segundos, numa imagem só.
+Recusados antes desta: bula com texto pequeno e cápsula amarela (chamativa demais, fora da marca).
+Outros caminhos prontos e não usados: `posts/2026-10-10-propaganda-opcoes/` (ingresso, placa de estrada).
