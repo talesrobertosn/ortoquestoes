@@ -1366,3 +1366,12 @@ nomes removidos e seta amarela foi registrada nas lições permanentes do guia.
 [Mapa, evidências e auditoria](netter-antebraco.md), [plano por questão](netter-antebraco-plano.md) e [26 questões do recorte](netter-antebraco-recorte.json). Foram lidos 65 candidatos anatômicos. Pronadores, extensores radiais e flexores digitais sustentam reconhecimento visual seguido de inervação, ação, compartimento ou inserção. A recorrência está documentada com prova e ano; itens sem ano servem apenas como repertório.
 
 Aproveitamento: mao-1264 a 1281, 18 questões, 14 com imagem e seis de inserção muscular. Anatomia do antebraço e fixações distais, sem exame, doenças ou técnica. Pendências: variabilidade nervosa do dedo médio e nomenclatura dos ramos radiais não foram transformadas em respostas rígidas; corte transversal sem fonte visual suficiente ficou fora. Perguntar a inserção após reconhecer o músculo é um formato a conservar, usando outras fixações como distratores. Fontes limpas para o aluno; folhas e detalhes de adaptação somente na auditoria.
+
+## Netter: anatomia da mão (10/10/2026, em preparação)
+
+[Mapa regional e limites](netter-mao.md), [plano anterior à escrita](netter-mao-plano.md)
+e [recorte auditável](netter-mao-recorte.json). Lidos 102 candidatos e selecionados
+24 registros anatômicos. Reconhecimento de lumbricais e interósseos se repete no
+TEOT 2023–2025 e TARO 2025; a inervação é perguntada após identificação, e inserção
+ou ação oferece outro atributo. Plano de 26 questões, 17 com figura, sem exame
+físico, doenças ou procedimentos. Ainda não aplicado: registrar IDs ao concluir.
