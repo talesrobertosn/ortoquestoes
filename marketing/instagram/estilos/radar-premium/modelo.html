@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1080, initial-scale=1">
+<title>Radar premium · modelo de stories</title>
+<style>
+@font-face{font-family:Jakarta;src:url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2');font-weight:200 800}
+@font-face{font-family:Inter;src:url(../../fontes/inter-latin-wght-normal.woff2) format('woff2');font-weight:200 900}
+:root{--night:#071f1c;--green:#0b3a35;--pine:#14655e;--lime:#b5ef86;--gold:#f4cf7c;--paper:#f4f2e9;--muted:#a8bbb2;--line:#badcca18}
+*{box-sizing:border-box}body{margin:0;background:#111;color:var(--paper);font-family:Inter,Arial,sans-serif}
+section{position:relative;isolation:isolate;overflow:hidden;width:1080px;height:1920px;padding:250px 76px 246px;background:radial-gradient(ellipse at 88% 30%,#153d35 0%,var(--night) 48%,#06191d 100%)}
+section:before{content:"";position:absolute;inset:0;z-index:-1;opacity:.22;background-image:linear-gradient(#badcca0b 1px,transparent 1px),linear-gradient(90deg,#badcca0b 1px,transparent 1px);background-size:96px 96px}
+.brand{display:flex;align-items:center;gap:16px;font:700 28px Jakarta,sans-serif}.brand svg{width:48px;height:48px;flex:none}.count{margin-left:auto;color:var(--muted);font:500 20px Jakarta;letter-spacing:2px}
+.kicker{display:flex;align-items:center;gap:16px;margin:44px 0 24px;color:var(--lime);font:700 22px Jakarta;letter-spacing:2px;text-transform:uppercase}.kicker:before{content:"";width:10px;height:10px;border-radius:50%;background:var(--lime);box-shadow:0 0 18px #b5ef8630}
+h1,h2,p{margin:0}h1{max-width:770px;font:800 86px/1.02 Jakarta,sans-serif;letter-spacing:-.025em}h2{font:800 66px/1.06 Jakarta,sans-serif;letter-spacing:-.02em}.accent{color:var(--lime)}.gold{color:var(--gold)}
+.copy{font:400 31px/1.48 Inter,Arial,sans-serif;color:#e4e9df}.copy b{color:var(--paper);font-weight:700}
+.radar{position:absolute;z-index:-1;right:76px;top:405px;width:320px;height:320px;border:1px solid #badc9b42;border-radius:50%;opacity:.7;background:repeating-radial-gradient(circle at center,transparent 0 52px,#b5ef8633 53px,transparent 55px),conic-gradient(from 30deg,transparent 0 260deg,#b5ef8640 310deg,transparent 311deg);box-shadow:0 0 70px #8ffa4d06,inset 0 0 40px #b5ef8605}
+.radar:before{content:"";position:absolute;left:50%;top:-14px;bottom:-14px;border-left:1px solid #b5ef8640}.radar:after{content:"";position:absolute;top:50%;left:-14px;right:-14px;border-top:1px solid #b5ef8640}.blip{position:absolute;left:68%;top:28%;width:10px;height:10px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 10px #f4cf7c15,0 0 22px #f4cf7c}
+.card{border-radius:26px;background:linear-gradient(130deg,#1c3a33cc,#12302988);box-shadow:0 12px 36px #00000016;padding:28px}.facts{display:flex;gap:12px;flex-wrap:wrap}.pill{border-radius:30px;background:#d9eab810;padding:11px 20px;color:#d3d9be;font:600 22px Jakarta}.image-frame{overflow:hidden;border-radius:28px;background:#e9ece5;padding:16px;box-shadow:0 12px 48px #00000035}.image-frame img{display:block;width:100%;height:100%;object-fit:contain;border-radius:14px}.micro{display:flex;justify-content:space-between;margin-top:18px;color:var(--muted);font:500 17px Jakarta;letter-spacing:1.5px;text-transform:uppercase}
+.option{display:flex;align-items:center;gap:18px;margin-top:10px;padding:16px 20px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(120deg,#16352fbb,#12302a55);font:500 28px/1.3 Inter}.letter{display:grid;place-items:center;flex:none;width:40px;height:40px;border-radius:50%;background:#b5ef860d;color:#c4dfa7;font:700 21px Jakarta}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:18px}.duo .card{min-height:280px}.label{color:var(--muted);font:700 16px Jakarta;letter-spacing:2px}.card-title{margin:16px 0;color:var(--paper);font:700 34px/1.18 Jakarta}.rule{height:1px;margin:26px 0;background:linear-gradient(90deg,#aecdb030,transparent)}.answer{border-radius:28px;background:linear-gradient(120deg,#23473899,#19352b66);padding:28px 32px}.footer{position:absolute;left:76px;right:76px;bottom:246px;display:flex;justify-content:space-between;color:var(--muted);font:600 18px Jakarta;letter-spacing:1px;text-transform:uppercase}.footer b{color:var(--lime)}
+.signal{display:flex;align-items:center;gap:30px;margin-top:56px}.spectrum{position:relative;width:132px;height:76px;flex:none;border-bottom:1px solid #b5ef86;background:repeating-linear-gradient(90deg,#b5ef8660 0 2px,transparent 2px 12px)}.spectrum:after{content:"";position:absolute;left:58%;top:-8px;width:3px;height:94px;background:var(--gold);box-shadow:0 0 16px #f4cf7c60}.cta{margin-top:70px;border-radius:28px;background:linear-gradient(120deg,#294a3899,#18362d66);padding:30px 34px;box-shadow:0 12px 36px #00000018}.cta strong{color:var(--lime);font:700 32px Jakarta}.cta p{margin-top:12px;font-size:24px}
+</style>
+</head>
+<body>
+<!-- Símbolo oficial da marca; preservar sem redesenhar. -->
+<svg width="0" height="0" style="position:absolute"><defs><symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#14655E"/><g fill="#FFFFFF" opacity=".55"><path transform="translate(13 9.5)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(11 21.2)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(13 44.6)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g><path fill="#F4CF7C" transform="translate(11 32.9)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></symbol></defs></svg>
+
+<!-- STORY 1 — Gancho. Ajuste o nome do sinal e a chamada para a questão. -->
+<section id="s1-alerta">
+  <header class="brand"><svg viewBox="0 0 64 64"><use href="#sim"/></svg><span>Orto Questões</span><span class="count">01 / 04</span></header>
+  <div class="radar"><i class="blip"></i></div>
+  <div class="kicker">Alerta · sinais conflitantes</div>
+  <h1>Um exame <span class="accent">normal.</span><br>Um caso que não fecha.</h1>
+  <div class="facts" style="margin-top:34px"><span class="pill">[Pista clínica 1]</span><span class="pill">[Pista clínica 2]</span></div>
+  <p class="copy" style="margin-top:34px">[Gancho curto que apresenta a contradição e deixa a pergunta para o próximo story.]</p>
+  <footer class="footer"><span>Radar clínico</span><b>Analise as pistas</b></footer>
+</section>
+
+<!-- STORY 2 — Questão real: substitua o placeholder pela imagem original e copie enunciado, opções e gabarito do acervo sem alterar. -->
+<section id="s2-questao">
+  <header class="brand"><svg viewBox="0 0 64 64"><use href="#sim"/></svg><span>Orto Questões</span><span class="count">02 / 04</span></header>
+  <div class="kicker">Central de análise · 4 hipóteses</div>
+  <h2>Identifique<br>o alvo clínico.</h2>
+  <p class="copy" style="margin:24px 0">[Enunciado integral da questão, exatamente como no banco.]</p>
+  <div class="image-frame" style="height:360px"><img src="[CAMINHO_DA_IMAGEM_REAL]" alt="Imagem original da questão"></div>
+  <div class="option"><span class="letter">A</span><span>[Alternativa A literal]</span></div>
+  <div class="option"><span class="letter">B</span><span>[Alternativa B literal]</span></div>
+  <div class="option"><span class="letter">C</span><span>[Alternativa C literal]</span></div>
+  <div class="option"><span class="letter">D</span><span>[Alternativa D literal]</span></div>
+  <footer class="footer"><span>Escolha sua hipótese</span><b>Resposta no próximo</b></footer>
+</section>
+
+<!-- STORY 3 — Resposta e explicação do mecanismo. Conferir comentário médico no acervo. -->
+<section id="s3-resposta">
+  <header class="brand"><svg viewBox="0 0 64 64"><use href="#sim"/></svg><span>Orto Questões</span><span class="count">03 / 04</span></header>
+  <div class="radar"><i class="blip"></i></div>
+  <div class="kicker gold">Alvo identificado · alternativa [X]</div>
+  <h1>[Diagnóstico]<br><span class="accent">[complemento]</span></h1>
+  <p class="copy" style="margin-top:28px">[Frase breve que nomeia a pegadinha.]</p>
+  <div class="rule"></div>
+  <p class="label" style="margin-bottom:22px">Análise do ponto cego</p>
+  <div class="duo">
+    <div class="card"><p class="label">[Mecanismo / pista 1]</p><p class="card-title">[Achado importante]</p><p class="copy" style="font-size:24px">[Como ele contribui para o diagnóstico.]</p></div>
+    <div class="card"><p class="label">[Mecanismo / pista 2]</p><p class="card-title">[Achado importante]</p><p class="copy" style="font-size:24px">[Como ele explica o exame ou a clínica.]</p></div>
+  </div>
+  <p class="copy" style="margin-top:26px">[Síntese clínica precisa, em uma ou duas frases.]</p>
+  <div class="answer" style="margin-top:26px"><p class="card-title" style="margin:0">[Regra prática para guardar]</p><p class="copy" style="font-size:24px;margin-top:10px">[Como aplicar essa regra em questões semelhantes.]</p></div>
+  <footer class="footer"><span>Radar clínico</span><b>Entenda a pegadinha</b></footer>
+</section>
+
+<!-- STORY 4 — Chamada: informar com precisão o limite da conta gratuita vigente. -->
+<section id="s4-cta">
+  <header class="brand"><svg viewBox="0 0 64 64"><use href="#sim"/></svg><span>Orto Questões</span><span class="count">04 / 04</span></header>
+  <div class="radar"><i class="blip"></i></div>
+  <div class="kicker">Transmissão diária · acesso livre</div>
+  <h1>Questão<br><span class="accent">grátis</span><br>todo dia.</h1>
+  <div class="rule" style="margin:38px 0"></div>
+  <p class="copy" style="font-size:38px">Para reconhecer a pista.<br>Entender a pegadinha.<br><b>Chegar à resposta.</b></p>
+  <div class="signal"><div class="spectrum"></div><p class="copy" style="font-size:25px;color:var(--muted)">Sintonize seu raciocínio.<br>Um caso por dia.</p></div>
+  <div class="cta"><strong>Siga @ortoquestoes</strong><p class="copy">Uma nova questão. Um novo desafio.</p></div>
+  <footer class="footer"><span>Orto Questões</span><b>ortoquestoes.com.br</b></footer>
+</section>
+</body></html>
