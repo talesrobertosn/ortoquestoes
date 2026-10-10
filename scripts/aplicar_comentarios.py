@@ -53,6 +53,17 @@ def carregar_acervo() -> dict[str, tuple[str, dict]]:
 
 def conferir(qid: str, comentario: dict, questao: dict) -> list[str]:
     problemas: list[str] = []
+    if questao.get("anulada"):
+        # A análise existe para estudo, sem eleger uma alternativa oficial.
+        if questao.get("gabarito") or comentario.get("provavel"):
+            problemas.append(f"{qid}: anulada não pode receber resposta oficial ou provável")
+        if not str(comentario.get("correta") or "").strip():
+            problemas.append(f"{qid}: falta explicar a anulação")
+        letras = {a["letra"] for a in questao["alternativas"]}
+        analises = comentario.get("incorretas") or {}
+        if set(analises) != letras or any(not str(t or "").strip() for t in analises.values()):
+            problemas.append(f"{qid}: anulada precisa de análise de todas as alternativas")
+        return problemas
     # Dissertativa não tem alternativas: o comentário é a resposta comentada.
     if questao.get("tipo") == "dissertativa":
         if not str(comentario.get("correta", "")).strip():
@@ -67,8 +78,6 @@ def conferir(qid: str, comentario: dict, questao: dict) -> list[str]:
     if not gabarito:
         problemas.append(f"{qid}: questão sem gabarito nem resposta pela bibliografia — não dá para dizer qual está certa")
         return problemas
-    if questao.get("anulada"):
-        problemas.append(f"{qid}: questão anulada — comentar como se tivesse resposta engana")
 
     if not str(comentario.get("correta", "")).strip():
         problemas.append(f"{qid}: falta o texto da alternativa correta")

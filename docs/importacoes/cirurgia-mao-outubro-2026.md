@@ -119,6 +119,19 @@ sessão de teste interceptada localmente; não foram gravadas respostas no Supab
 
 ## Em andamento
 
+Primeiro bloco da USP-SP 2025 preparado: números 1–10 (`mao-1283` a
+`mao-1292`), com comentários desenvolvidos e imagens originais. A questão 10
+foi registrada como anulada, com resposta nula e análise neutra das quatro
+alternativas. Os avisos de 7 e 9 preservam o gabarito sem universalizar dados
+de mortalidade ou excluir reimplante auricular viável.
+
+O importador passou a preservar imagens, subtemas, referências e alertas e
+a recusar duplicação de número na mesma prova. Anuladas não recebem selo de
+correta/incorreta e não contam no desempenho. Cinco testes específicos do
+fluxo de importação passaram. A incidência do cronograma foi corrigida para
+excluir as áreas próprias (Cirurgia da Mão, R4 e Fellowship), como já previsto
+na separação do treino TEOT/TARO.
+
 USP-SP ingresso 2024, 2025 e 2026: 120 questões por caderno. Anuladas: 2024 nº 114;
 2025 nº 10, 66, 93; 2026 nº 100, 105, 110. Extração e revisão em andamento.
 Após as provas oficiais, anatomia da mão do Netter em OrtoQuestões Simulados,

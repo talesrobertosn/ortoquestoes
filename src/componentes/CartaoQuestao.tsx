@@ -374,7 +374,7 @@ export function CartaoQuestao({
             const classes = ['alternativa']
             let marca: { texto: string; icone: 'certo' | 'errado' } | null = null
 
-            if (mostrarGabarito) {
+            if (mostrarGabarito && !questao.anulada) {
               const eGabarito = questao.gabarito === letra
               const eEscolhida = resposta!.escolhida === letra
               if (eGabarito) {
@@ -386,7 +386,7 @@ export function CartaoQuestao({
                 marca = { texto: 'Sua resposta', icone: 'errado' }
               }
               if (eEscolhida && eGabarito) marca = { texto: 'Sua resposta, correta', icone: 'certo' }
-            } else if (marcada === letra) {
+            } else if (marcada === letra || (mostrarGabarito && questao.anulada && resposta?.escolhida === letra)) {
               classes.push('alternativa--escolhida')
             }
             if (riscada) classes.push('alternativa--riscada')
@@ -690,7 +690,7 @@ function ComentarioDaIA({
   escolhida: Letra | null
 }) {
   // Sem gabarito oficial, o comentário pode indicar a resposta pela bibliografia.
-  const referencia = questao.gabarito ?? (questao.anulada ? null : comentario?.provavel ?? null)
+  const referencia = questao.anulada ? null : questao.gabarito ?? comentario?.provavel ?? null
   const erradas = questao.alternativas
     .map((a) => a.letra)
     .filter((letra) => letra !== referencia && comentario?.incorretas[letra])
@@ -704,7 +704,7 @@ function ComentarioDaIA({
         <span className="cm-cabeca__icone"><Icone nome="livro" tamanho={20} /></span>
         <div>
           <p className="cm-cabeca__titulo">Comentário</p>
-          <p className="cm-cabeca__sub">O conceito, por que a correta está certa e por que as outras não servem.</p>
+          <p className="cm-cabeca__sub">{questao.anulada ? 'O tema e a análise das alternativas de uma questão anulada.' : 'O conceito, por que a correta está certa e por que as outras não servem.'}</p>
         </div>
       </header>
 
@@ -748,6 +748,7 @@ function ComentarioDaIA({
             )
           ) : (<>
           <p className="cm-secao">Alternativa por alternativa</p>
+          {questao.anulada && comentario.correta.trim() && <TextoEditorial texto={comentario.correta} />}
           <div className="cm-alternativas">
             {referencia && (
               <article className="cm-alt cm-alt--certa">
@@ -764,11 +765,13 @@ function ComentarioDaIA({
             )}
 
             {erradas.map((letra) => (
-              <article className={'cm-alt' + (escolhida === letra ? ' cm-alt--marcada' : '')} key={letra}>
+              <article className={'cm-alt' + (escolhida === letra && !questao.anulada ? ' cm-alt--marcada' : '')} key={letra}>
                 <header className="cm-alt__cabeca">
                   <span className="cm-alt__letra">{letra}</span>
                   <strong className="cm-alt__texto">{textoAlternativa(letra) ?? 'Alternativa'}</strong>
-                  {escolhida === letra
+                  {questao.anulada
+                    ? <span className="cm-selo cm-selo--neutro">Análise</span>
+                    : escolhida === letra
                     ? <span className="cm-selo cm-selo--erro"><Icone nome="errado" tamanho={13} /> Sua resposta</span>
                     : <span className="cm-selo cm-selo--neutro">Incorreta</span>}
                 </header>

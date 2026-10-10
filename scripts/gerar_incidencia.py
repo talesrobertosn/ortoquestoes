@@ -26,7 +26,8 @@ TOP = 20
 
 
 def conta(questao: dict) -> bool:
-    return not questao.get("duplicataDe") and not questao.get("anulada") and not questao.get("simulado")
+    return (not questao.get("duplicataDe") and not questao.get("anulada")
+            and not questao.get("simulado") and not questao.get("area"))
 
 
 def nivel_por_posicao(posicao: int, total: int) -> int:

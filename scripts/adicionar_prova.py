@@ -32,6 +32,13 @@ Dois passos:
    Só "numero", "tema" e "resposta" bastam: a questão entra com a resposta e
    o comentário fica para depois (o site avisa que está em preparação).
 
+   Campos opcionais por item: "subtemas" (nomes da taxonomia), "imagens"
+   (arquivos já presentes em public/imagens), "referencias" e "alerta".
+   Para uma anulada oficial, informar "anulada": true e "resposta": null,
+   explicar a anulação em "correta" e analisar todas as letras em "incorretas".
+   A interface apresenta essas análises sem julgamento de acerto ou erro.
+   O importador recusa números já presentes na mesma prova e ano.
+
    Sem gabarito oficial (gabaritoOficial false), a questão entra sem gabarito
    e a resposta vai no comentário como "provavel": o site mostra a resposta
    pela bibliografia, com aviso, e a questão não conta no desempenho.
@@ -50,7 +57,7 @@ import pymupdf
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from casar_prova import CASADA, REVISAR, carregar_acervo, ler_questoes, melhor_par, sem_fonte  # noqa: E402
-from comum import DIR_ACERVO, DIR_TEMAS, RAIZ  # noqa: E402
+from comum import DIR_ACERVO, DIR_TEMAS, DIR_IMAGENS, RAIZ, carregar_taxonomia  # noqa: E402
 from etiquetas import etiquetar  # noqa: E402
 
 DIR_NOVAS = RAIZ / "relatorios" / "novas"
@@ -150,41 +157,63 @@ def aplicar(args: argparse.Namespace) -> int:
     temas, comentarios, erros = {}, {}, []
     agora = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
     criadas = []
+    taxonomia = {t["slug"]: set(t["subtemas"]) for t in carregar_taxonomia()["temas"]}
     for item in lote["itens"]:
         q = por_numero.get(item["numero"])
         if not q:
             erros.append(f"{item['numero']}: não está entre as novas extraídas")
             continue
         slug = item["tema"]
+        subtemas = item.get("subtemas")
+        if subtemas is not None and (not isinstance(subtemas, list) or not subtemas or set(subtemas) - taxonomia.get(slug, set())):
+            erros.append(f"{item['numero']}: subtemas ausentes ou fora da taxonomia")
+            continue
+        imagens = item.get("imagens") or []
+        if any(not (DIR_IMAGENS / imagem["arquivo"]).is_file() for imagem in imagens):
+            erros.append(f"{item['numero']}: imagem referenciada ausente")
+            continue
         if slug not in temas:
             temas[slug] = json.loads((DIR_TEMAS / f"{slug}.json").read_text(encoding="utf-8"))
             comentarios[slug] = json.loads((DIR_COMENTARIOS / f"{slug}.json").read_text(encoding="utf-8"))
         letras = "ABCDE"[: len(q["alternativas"])]
-        resposta = item["resposta"]
+        anulada = bool(item.get("anulada"))
+        resposta = item.get("resposta")
         incorretas = item.get("incorretas") or {}
-        if resposta not in letras:
+        if anulada and (resposta is not None or not oficial):
+            erros.append(f"{item['numero']}: anulação exige fonte oficial e resposta nula")
+            continue
+        if not anulada and resposta not in letras:
             erros.append(f"{item['numero']}: resposta {resposta} fora de {letras}")
             continue
-        faltam = set(letras) - {resposta} - set(incorretas)
+        faltam = set(letras) - ({resposta} if not anulada else set()) - set(incorretas)
         # Sem "correta", a questão entra só com a resposta; o comentário vem depois.
         so_resposta = not str(item.get("correta") or "").strip()
+        if anulada and so_resposta:
+            erros.append(f"{item['numero']}: falta explicar a anulação e analisar as alternativas")
+            continue
         if not so_resposta and (faltam or resposta in incorretas):
             erros.append(f"{item['numero']}: explicação das erradas incompleta ({sorted(faltam)})")
             continue
         dados = temas[slug]
+        if any(existente.get("prova") == lote["prova"]
+               and existente.get("ano") == lote["ano"]
+               and (existente.get("origem") or {}).get("numeroOriginal") == item["numero"]
+               for existente in dados["questoes"]):
+            erros.append(f"{item['numero']}: já importada para esta prova e ano")
+            continue
         qid = proximo_id(slug, dados)
-        certa = q["alternativas"][letras.index(resposta)]
+        certa = "" if anulada else q["alternativas"][letras.index(resposta)]
         questao = {
             "id": qid, "tema": dados["tema"],
-            "subtemas": etiquetar(slug, q["enunciado"], certa, item.get("conceito", "")),
+            "subtemas": subtemas or etiquetar(slug, q["enunciado"], certa, item.get("conceito", "")),
             "prova": lote["prova"], "ano": lote["ano"], "dificuldade": None,
-            "enunciado": q["enunciado"], "imagens": [],
+            "enunciado": q["enunciado"], "imagens": imagens,
             "alternativas": [{"letra": l, "texto": t} for l, t in zip(letras, q["alternativas"])],
-            "gabarito": resposta if oficial else None,
+            "gabarito": resposta if oficial and not anulada else None,
             "comentario": None, "comentariosComunidade": [],
             "referencias": [q["referencia"]] if q.get("referencia") else [],
             **({"area": lote["area"]} if lote.get("area") else {}),
-            "anulada": False, "figuraPendente": bool(q.get("figura")) and not item.get("semFigura"),
+            "anulada": anulada, "figuraPendente": bool(q.get("figura")) and not imagens and not item.get("semFigura"),
             "revisado": False, "subtemasPendentes": False,
             "origem": {"arquivo": lote.get("arquivo") or extraido["arquivo"], "pagina": q["pagina"], "numeroOriginal": q["numero"]},
         }
@@ -193,6 +222,10 @@ def aplicar(args: argparse.Namespace) -> int:
             "referencias": [q["referencia"]] if q.get("referencia") else [],
             "geradoEm": agora, "conferido": False,
         }
+        if item.get("referencias"):
+            comentario["referencias"] = item["referencias"]
+        if item.get("alerta"):
+            comentario["alerta"] = item["alerta"]
         if so_resposta:
             comentario.update(conceito=None, geradoEm=None)
         if not oficial:
