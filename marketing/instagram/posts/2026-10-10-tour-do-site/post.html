@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Tour do Orto Questões</title>
+<!-- Propaganda em carrossel: o que tem no site, com telas reais (conta de exemplo, tema claro).
+     Feed 3 slides (1080x1350) e stories 3 (1080x1920). Questão de exemplo: ombro-cotovelo-0623
+     (OrtoQuestões Simulados, anatomia com seta amarela, gabarito B).
+     Telas: TEMA=claro ESCONDER='.tr-foco__qtd' node marketing/instagram/telas.mjs
+       'an-questao=questao/ombro-cotovelo-0623@.cartao-questao' 'an-provas=treinar@.tr-foco'
+       'an-comentario=questao/ombro-cotovelo-0623>B@.cm-cabeca' 'an-ranking=ranking@.rk-arena'
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-10-tour-do-site/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+:root { --noite: #05110F; --verde: #14655E; --menta: #7FD1BF; --ouro: #F4CF7C; --creme: #FBF6EA; --amarelo: #ffe14d; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1350px; color: var(--creme);
+  background: radial-gradient(circle at 85% 20%, rgba(127,209,191,.28), transparent 45%), radial-gradient(circle at 10% 95%, rgba(244,207,124,.18), transparent 45%), linear-gradient(160deg, #0d4a43, var(--noite) 75%); }
+section.story { height: 1920px; }
+section > * { position: absolute; }
+.iphone { --w: 400px; position: absolute; width: var(--w); padding: calc(var(--w) * .034); border-radius: calc(var(--w) * .17);
+  background: linear-gradient(145deg, #7b7f84 0%, #3b3e42 18%, #1d1e20 55%, #46494d 100%);
+  box-shadow: 0 0 0 1.5px #8d9196 inset, 0 0 0 calc(var(--w) * .008) #0d0d0e inset, 0 60px 120px rgba(0,0,0,.6), 0 20px 40px rgba(0,0,0,.4); z-index: 4; }
+.iphone .tela { position: relative; border-radius: calc(var(--w) * .138); overflow: hidden; aspect-ratio: 390 / 844; background: #fff; }
+.iphone .tela img { width: 100%; height: calc(100% - var(--w) * .115); margin-top: calc(var(--w) * .115); object-fit: cover; object-position: top; display: block; }
+.iphone .tela::before { content: '9:41'; position: absolute; left: 11%; top: calc(var(--w) * .045); font: 700 calc(var(--w) * .042) Inter; color: #fff; z-index: 2; }
+.iphone .tela::after { content: ''; position: absolute; right: 9%; top: calc(var(--w) * .05); width: calc(var(--w) * .07); height: calc(var(--w) * .032); border-radius: 4px; border: 1.5px solid rgba(255,255,255,.85); background: linear-gradient(90deg, #fff 70%, transparent 70%) content-box; padding: 1.5px; z-index: 2; }
+.iphone .ilha { position: absolute; top: calc(var(--w) * .03); left: 50%; transform: translateX(-50%); width: calc(var(--w) * .27); height: calc(var(--w) * .078); border-radius: 999px; background: #000; z-index: 2; }
+.iphone .bt { position: absolute; width: calc(var(--w) * .012); border-radius: 3px; background: linear-gradient(90deg, #2a2c2f, #6b6f73); }
+.iphone .bt.d { right: calc(var(--w) * -.009); top: 26%; height: 11%; }
+.iphone .bt.e1 { left: calc(var(--w) * -.009); top: 20%; height: 5%; }
+.iphone .bt.e2 { left: calc(var(--w) * -.009); top: 28%; height: 8%; }
+.iphone .brilho { position: absolute; inset: calc(var(--w) * .034); border-radius: calc(var(--w) * .138); background: linear-gradient(115deg, rgba(255,255,255,.10), transparent 35%); pointer-events: none; z-index: 3; }
+.kicker { left: 70px; top: 70px; display: flex; align-items: center; gap: 14px; font: 800 28px Inter; letter-spacing: .16em; text-transform: uppercase; color: var(--menta); }
+.kicker svg { width: 50px; height: 50px; }
+h1 { left: 70px; right: 70px; font: 800 104px/.95 Jakarta; letter-spacing: -.05em; }
+h1 em { font-style: normal; color: var(--ouro); }
+.sub { left: 70px; font: 500 38px/1.3 Inter; color: rgba(251,246,234,.85); }
+.sub b { color: #fff; }
+.provas { display: flex; flex-direction: column; gap: 16px; }
+.provas span { display: flex; align-items: center; gap: 16px; padding: 16px 26px; border-radius: 18px; background: rgba(255,255,255,.08); border: 2px solid rgba(255,255,255,.14); font: 800 38px Jakarta; letter-spacing: -.02em; }
+.provas i { width: 22px; height: 22px; border-radius: 50%; flex: 0 0 auto; }
+.provas small { font: 600 26px Inter; color: rgba(251,246,234,.7); letter-spacing: 0; }
+.selo { display: grid; place-items: center; width: 230px; height: 230px; border-radius: 50%; background: var(--ouro); color: #0b3a35; text-align: center;
+  font: 800 56px/1 Jakarta; letter-spacing: -.03em; transform: rotate(-12deg); box-shadow: 0 20px 40px rgba(0,0,0,.4); z-index: 6; }
+.selo small { display: block; margin-top: 6px; font: 800 22px Inter; letter-spacing: .1em; }
+.zoom { width: 360px; height: 360px; border-radius: 50%; overflow: hidden; border: 10px solid var(--amarelo); box-shadow: 0 30px 60px rgba(0,0,0,.5); z-index: 6; background: #fff; }
+.zoom img { width: 100%; height: 100%; object-fit: cover; }
+.balao { padding: 20px 28px; border-radius: 22px; background: var(--amarelo); color: #111; font: 800 40px/1.1 Jakarta; letter-spacing: -.02em; z-index: 7; box-shadow: 0 14px 30px rgba(0,0,0,.35); }
+.cta { left: 0; right: 0; bottom: 0; padding: 36px 70px 44px; background: var(--ouro); color: #0b3a35; z-index: 8; }
+.cta b { display: block; font: 800 76px/1 Jakarta; letter-spacing: -.04em; }
+.cta span { display: block; margin-top: 10px; font: 800 38px Inter; }
+.ilus { font: 600 20px Inter; color: rgba(251,246,234,.6); }
+.pag { z-index: 9; right: 70px; bottom: 50px; font: 700 26px Inter; color: rgba(251,246,234,.7); }
+.pag b { color: var(--ouro); }
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/>
+<circle cx="17" cy="20" r="4.5" fill="#9cc3bd"/><rect x="26" y="16.5" width="24" height="7" rx="3.5" fill="#9cc3bd"/>
+<circle cx="17" cy="32" r="4.5" fill="#f4cf7c"/><rect x="26" y="28.5" width="24" height="7" rx="3.5" fill="#f4cf7c"/>
+<circle cx="17" cy="44" r="4.5" fill="#9cc3bd"/><rect x="26" y="40.5" width="19" height="7" rx="3.5" fill="#9cc3bd"/></symbol>
+</defs></svg>
+<template id="fone"><div class="tela"><img alt=""></div><div class="ilha"></div><div class="brilho"></div><span class="bt d"></span><span class="bt e1"></span><span class="bt e2"></span></template>
+<template id="lista-provas">
+  <span><i style="background:#7ee0c8"></i>TEOT e TARO</span>
+  <span><i style="background:#f0c46a"></i>Título de cirurgia da mão</span>
+  <span><i style="background:#8fb6ef"></i>R4 Coluna</span>
+  <span><i style="background:#f08f78"></i>R4 ENARE</span>
+  <span><i style="background:#c5a8f0"></i>Fellowship de Quadril</span>
+  <span><i style="background:#9fd8f2"></i>TECOC <small>ombro e cotovelo</small></span>
+</template>
+
+<!-- p1: grátis e as provas -->
+<section id="p1-provas">
+  <p class="kicker"><svg><use href="#sim"/></svg>Orto Questões</p>
+  <h1 style="top:150px">Questões <em>grátis</em> para a sua prova.</h1>
+  <div class="provas" data-t="lista-provas" style="left:70px;top:520px;width:520px"></div>
+  <div class="iphone" data-tela="t-an-provas" style="--w:360px;left:650px;top:470px;transform:rotate(4deg)"></div>
+  <div class="selo" style="left:840px;top:340px">Grátis<small>TODO DIA</small></div>
+  <p class="ilus" style="left:70px;bottom:50px">Tela ilustrativa</p>
+  <p class="pag">Arraste <b>1/3</b></p>
+</section>
+
+<!-- p2: simulados com anatomia -->
+<section id="p2-simulados">
+  <p class="kicker"><svg><use href="#sim"/></svg>OrtoQuestões Simulados</p>
+  <h1 style="top:150px">Anatomia com <em>seta amarela,</em> como cai na prova.</h1>
+  <p class="sub" style="top:520px;width:500px">Questões inéditas feitas por <b>engenharia reversa</b> da prova, com comentário completo.</p>
+  <div class="iphone" data-tela="t-an-questao" style="--w:380px;left:620px;top:500px;transform:rotate(4deg)"></div>
+  <div class="zoom" style="left:150px;top:820px"><img src="zoom-seta.jpg" alt=""></div>
+  <p class="balao" style="left:70px;top:760px;transform:rotate(-4deg)">Qual músculo a seta aponta?</p>
+  <p class="ilus" style="left:70px;bottom:50px">Tela ilustrativa</p>
+  <p class="pag">Arraste <b>2/3</b></p>
+</section>
+
+<!-- p3: comentário, ranking e cadastro -->
+<section id="p3-cadastro">
+  <p class="kicker"><svg><use href="#sim"/></svg>Orto Questões</p>
+  <h1 style="top:150px">Comentário de cada letra e <em>ranking.</em></h1>
+  <div class="iphone" data-tela="t-an-comentario" style="--w:330px;left:110px;top:440px;transform:rotate(-5deg)"></div>
+  <div class="iphone" data-tela="t-an-ranking" style="--w:330px;left:610px;top:420px;transform:rotate(5deg)"></div>
+  <div class="cta"><b>Crie sua conta grátis</b><span>ortoquestoes.com.br</span></div>
+</section>
+
+<!-- s1 -->
+<section id="s1-provas" class="story">
+  <p class="kicker" style="top:220px"><svg><use href="#sim"/></svg>Orto Questões</p>
+  <h1 style="top:310px;font-size:120px">Questões <em>grátis</em> para a sua prova.</h1>
+  <div class="provas" data-t="lista-provas" style="left:70px;top:760px;width:540px;gap:22px"></div>
+  <div class="iphone" data-tela="t-an-provas" style="--w:400px;left:630px;top:760px;transform:rotate(4deg)"></div>
+  <div class="selo" style="left:790px;top:580px">Grátis<small>TODO DIA</small></div>
+  <p class="sub" style="left:70px;bottom:300px;font:800 52px Jakarta;color:var(--ouro);letter-spacing:-.02em">Crie sua conta grátis<br><span style="font:700 36px Inter;color:#fff">ortoquestoes.com.br</span></p>
+  <p class="ilus" style="left:70px;bottom:250px">Tela ilustrativa</p>
+</section>
+
+<!-- s2 -->
+<section id="s2-simulados" class="story">
+  <p class="kicker" style="top:220px"><svg><use href="#sim"/></svg>OrtoQuestões Simulados</p>
+  <h1 style="top:310px;font-size:116px">Anatomia com <em>seta amarela,</em> como cai na prova.</h1>
+  <p class="sub" style="top:780px;right:70px">Questões inéditas feitas por <b>engenharia reversa</b> da prova.</p>
+  <div class="iphone" data-tela="t-an-questao" style="--w:420px;left:590px;top:960px;transform:rotate(4deg)"></div>
+  <div class="zoom" style="left:110px;top:1080px;width:400px;height:400px"><img src="zoom-seta.jpg" alt=""></div>
+  <p class="balao" style="left:70px;top:1000px;transform:rotate(-4deg)">Qual músculo a seta aponta?</p>
+  <p class="ilus" style="left:70px;bottom:270px">Tela ilustrativa</p>
+</section>
+
+<!-- s3 -->
+<section id="s3-cadastro" class="story">
+  <p class="kicker" style="top:220px"><svg><use href="#sim"/></svg>Orto Questões</p>
+  <h1 style="top:310px;font-size:116px">Comentário de cada letra e <em>ranking.</em></h1>
+  <div class="iphone" data-tela="t-an-comentario" style="--w:390px;left:80px;top:700px;transform:rotate(-5deg)"></div>
+  <div class="iphone" data-tela="t-an-ranking" style="--w:390px;left:600px;top:680px;transform:rotate(5deg)"></div>
+  <div class="cta" style="bottom:250px;left:40px;right:40px;border-radius:30px;padding:40px 50px"><b style="font-size:84px">Crie sua conta grátis</b><span style="font-size:42px">ortoquestoes.com.br</span></div>
+</section>
+
+<script>
+document.querySelectorAll('[data-t]').forEach(e => e.append(document.getElementById(e.dataset.t).content.cloneNode(true)))
+document.querySelectorAll('[data-tela]').forEach(e => { e.appendChild(document.getElementById('fone').content.cloneNode(true)); e.querySelector('img').src = '../../telas/' + e.dataset.tela + '.png' })
+</script>
+</body></html>

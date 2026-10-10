@@ -52,15 +52,17 @@ await p.route(/supabase\.co/, rota => {
   if (u.includes('obter_aviso_site')) return rota.fulfill({ json: [] })
   return rota.fulfill({ json: [] })
 })
-await p.addInitScript(([s, id, r, h]) => {
+await p.addInitScript(([s, id, r, h, t]) => {
   localStorage.setItem('sb-ortoquestoes-auth', s)
   localStorage.setItem('oq-aparelho-conta', id)
+  // O site sorteia claro ou escuro a cada visita; TEMA=claro|escuro fixa um dos dois.
+  if (t) localStorage.setItem('ortoquestoes:tema', JSON.stringify(t))
   const k = 'ortoquestoes:conta:' + id + ':'
   if (!localStorage.getItem(k + 'respondidas')) {
     localStorage.setItem(k + 'respondidas', JSON.stringify(r))
     localStorage.setItem(k + 'historico', JSON.stringify(h))
   }
-}, [JSON.stringify(sessao), uid, respondidas, historico])
+}, [JSON.stringify(sessao), uid, respondidas, historico, process.env.TEMA ?? ''])
 const rotas = process.argv.slice(2).length ? process.argv.slice(2) : ['', 'treinar', 'progresso', 'revisao', 'ranking', 'erros']
 for (const r of rotas) {
   // "semana": só o cartão da semana atual do cronograma, aberto, com os assuntos e o porquê.
@@ -79,7 +81,7 @@ for (const r of rotas) {
   if (ancora) {
     const [, nome, rota, letra, seletor] = ancora
     await p.goto(BASE + '#/' + rota); await p.waitForTimeout(2000)
-    await p.addStyleTag({ content: '.navegacao-mobile,.aviso-cookies{display:none!important}' })
+    await p.addStyleTag({ content: '.navegacao-mobile,.aviso-cookies{display:none!important}' + (process.env.ESCONDER ? process.env.ESCONDER + '{display:none!important}' : '') })
     if (letra) {
       // Se a questão já foi respondida nesta captura, os botões ficam desativados: segue adiante.
       await p.locator('button.alternativa').nth('ABCD'.indexOf(letra)).click({ timeout: 3000 }).catch(() => {})

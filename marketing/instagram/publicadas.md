@@ -11,3 +11,4 @@ agente) também entram aqui: o dono avisa e o id é anotado.
 | ombro-cotovelo-0120 | Acesso de Thompson, interósseo posterior | posts/2026-10-10-gps-interosseo-posterior |
 | mao-1279 | Ramo superficial do radial (Simulados, anatomia) | posts/2026-10-10-planta-ramo-superficial |
 | quadril-0050 | Ressalto interno do quadril, iliopsoas (TARO 2022) | posts/2026-10-09-banca-ressalto-quadril |
+| ombro-cotovelo-0623 | Redondo maior com seta amarela (Simulados, anatomia), só como tela de exemplo | posts/2026-10-10-tour-do-site |
