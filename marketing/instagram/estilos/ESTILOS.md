@@ -268,3 +268,10 @@ Simulados: questões autorais feitas a partir do que as provas oficiais cobram.
 - **Formato:** 3 stories 1080x1920: como nasce uma questão (3 passos) → a questão na "prancha" →
   resposta + "Treine grátis". Sem figurinha nem link.
 - **Bom para:** divulgar os Simulados e novidades do acervo (ex.: a parte de anatomia).
+
+## Bula (`posts/2026-10-10-bula-propaganda/`), propaganda
+
+Caixa de remédio do Orto Questões (tarja "Venda livre · Grátis", selo vermelho "Grátis, sem cartão")
+ao lado da bula (composição, posologia, efeitos colaterais, contraindicação) e faixa verde "Crie sua
+conta grátis · ortoquestoes.com.br". Imagem única no feed e um story: toda a informação numa parte só,
+para quem não vai arrastar. Reusar o `post.html` trocando o texto da bula quando houver recurso novo.
