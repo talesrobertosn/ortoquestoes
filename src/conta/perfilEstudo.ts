@@ -9,7 +9,8 @@
  *   feita pelos residentes do R1 ao R3 dos serviços credenciados.
  * - TEOT (Título de Especialista em Ortopedia e Traumatologia): prova da SBOT
  *   ao fim da residência, que dá o título de especialista.
- * - Título de cirurgia da mão: prova da SBCM ao fim da residência em mão.
+ * - Prova para cirurgia da mão: seleção feita depois da ortopedia para começar a
+ *   residência em cirurgia da mão.
  * - R4 e fellowship: seleções para a subespecialização (ENARE e provas próprias).
  */
 
@@ -31,7 +32,7 @@ export const ANOS: Array<[AnoResidencia, string]> = [['r1', 'R1'], ['r2', 'R2'],
 export const PROVAS: Array<[ProvaInteresse, string, string]> = [
   ['taro', 'TARO', 'avaliação anual dos residentes, do R1 ao R3'],
   ['teot', 'TEOT', 'título de especialista, ao fim da residência'],
-  ['mao', 'Título de cirurgia da mão', 'prova da SBCM'],
+  ['mao', 'Prova para cirurgia da mão', 'seleção para a residência em mão'],
   ['r4', 'R4 ou fellowship', 'seleção para subespecialidade'],
   ['atualizacao', 'Atualização', 'estudo sem prova marcada'],
 ]

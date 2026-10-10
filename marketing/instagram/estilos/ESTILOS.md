@@ -272,11 +272,12 @@ Simulados: questões autorais feitas a partir do que as provas oficiais cobram.
 ## Notificações (`posts/2026-10-10-notificacao-propaganda/`), anúncio para quem não conhece o site
 
 Tela bloqueada às 19:00 com cinco avisos do Orto Questões, cada um explicando uma parte: o que é (banco
-de questões de ortopedia, no celular ou no computador), para quais provas (TEOT, TARO, Título de cirurgia
+de questões de ortopedia, no celular ou no computador), para quais provas (TEOT, TARO, prova para cirurgia
 da mão, R4 Coluna, R4 ENARE, Fellowship de Quadril, TECOC), como funciona (provas anteriores com cada
 alternativa comentada), OrtoQuestões Simulados (engenharia reversa) e quanto custa (conta grátis com o
 limite diário de `LIMITE_GRATIS_ATUAL` em `src/config.ts`; planos sem limite). Fecha com a pílula
 "Crie sua conta grátis · ortoquestoes.com.br" e "Tela ilustrativa". Imagem única no feed e um story.
-Regra do anúncio: quem nunca ouviu falar do site precisa entender tudo só pela imagem; nada vago.
+Cirurgia da mão: escrever "prova para cirurgia da mão" (a seleção para começar a residência em mão,
+depois da ortopedia), nunca "título de cirurgia da mão". Regra do anúncio: quem nunca ouviu falar do site precisa entender tudo só pela imagem; nada vago.
 Recusados antes desta: bula com texto pequeno, cápsula amarela e a primeira versão das notificações
 (bonita, mas vaga para quem não conhece). Outros caminhos não usados: `posts/2026-10-10-propaganda-opcoes/`.
