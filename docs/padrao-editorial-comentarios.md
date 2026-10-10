@@ -18,6 +18,14 @@ Questões complexas precisam de mais fundamentos, mecanismos, classificações e
 relações clínicas; questões simples podem ser mais curtas. A concisão desejada
 elimina redundância, não o conteúdo que o aluno precisa aprender.
 
+O dono aprovou explicitamente a versão refeita de `mao-0459`, Einstein 2026,
+questão 19 (estadiamento de Enneking): “ficou bem bom o comentario. esse deve
+ser o padrao”. O conteúdo aprovado está em
+[exemplos/einstein-2026-19.json](exemplos/einstein-2026-19.json).
+Aplicar essa profundidade às provas da USP e aos próximos lotes: explicação do
+tema, comparações úteis e análise desenvolvida de cada alternativa. A
+organização pode variar; não repetir tabelas ou estruturas por obrigação.
+
 A explicação precisa ser útil e natural. Não há piso de caracteres: um comentário
 menor é preferível a texto esticado. Manter os fundamentos necessários e a análise
 de cada alternativa, com tamanho proporcional à dúvida que ela cria.

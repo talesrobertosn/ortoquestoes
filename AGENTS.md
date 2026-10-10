@@ -9,6 +9,13 @@ temas e provas. Tem precedência sobre limites antigos de tamanho e restrições
 editoriais dos prompts. O exemplo aprovado está em
 [docs/exemplos/mao-0853.json](docs/exemplos/mao-0853.json).
 
+Em 10/10/2026, o dono também aprovou o comentário refeito de `mao-0459`
+(Einstein 2026, questão 19, estadiamento de Enneking) como padrão para os
+próximos comentários e revisões. O exemplo completo está em
+[docs/exemplos/einstein-2026-19.json](docs/exemplos/einstein-2026-19.json).
+Manter a explicação do tema e a análise desenvolvida de cada alternativa,
+com profundidade proporcional à questão, sem preencher texto por tamanho.
+
 Não tratar uma justificativa breve por alternativa como enriquecimento concluído.
 Não alterar gabaritos oficiais nem inventar evidência. As instruções atuais do
 usuário prevalecem. Para tarefas sem relação com comentários, manter o escopo
