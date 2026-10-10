@@ -117,9 +117,9 @@ A captura de `mao-0459` foi solicitada pelo dono e está disponível em
 `public/amostras/einstein-2026-19-comentario.png`. É uma visualização do site com
 sessão de teste interceptada localmente; não foram gravadas respostas no Supabase.
 
-## Em andamento
+## USP-SP, ingresso 2025
 
-USP-SP 2025, números 1–50 (`mao-1283` a `mao-1332`), publicados em blocos,
+120 questões (`mao-1283` a `mao-1402`), importadas e conferidas com o caderno e o gabarito enviados. Publicação em blocos,
 com comentários desenvolvidos e imagens originais. A questão 10
 foi registrada como anulada, com resposta nula e análise neutra das quatro
 alternativas. Os avisos de 7 e 9 preservam o gabarito sem universalizar dados
@@ -139,7 +139,12 @@ fluxo de importação passaram. A incidência do cronograma foi corrigida para
 excluir as áreas próprias (Cirurgia da Mão, R4 e Fellowship), como já previsto
 na separação do treino TEOT/TARO.
 
-USP-SP ingresso 2024, 2025 e 2026: 120 questões por caderno. Anuladas: 2024 nº 114;
-2025 nº 10, 66, 93; 2026 nº 100, 105, 110. Extração e revisão em andamento.
+Na prova de 2025, as anuladas são 10, 66 e 93, com gabarito nulo e quatro análises neutras. São 18 questões com figuras originais, incluindo casos compartilhados, e 26 comentários com ressalvas de redação ou divergência médica. Conferidos os 120 números únicos, os enunciados, as 480 alternativas e todas as respostas oficiais. O acesso às figuras, aos comentários e às anuladas foi verificado na interface, inclusive em largura de celular.
+
+Referências adicionais foram pesquisadas em registros e resumos do PubMed. Não se equiparou consulta de resumo a leitura integral, nem se acrescentaram referências sem relação com o tema. O comentário sobre clampes vasculares não recebeu uma referência individual não verificada. Nenhum comentário foi marcado como revisão médica.
+
+## Em andamento
+
+USP-SP ingresso 2024 e 2026: 120 questões por caderno. Anuladas: 2024 nº 114; 2026 nº 100, 105, 110. Extração e revisão em andamento.
 Após as provas oficiais, anatomia da mão do Netter em OrtoQuestões Simulados,
 com engenharia reversa e figuras pertinentes; sem exame físico ou tratamento.
