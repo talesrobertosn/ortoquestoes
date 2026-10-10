@@ -14,6 +14,13 @@ Não alterar gabaritos oficiais nem inventar evidência. As instruções atuais 
 usuário prevalecem. Para tarefas sem relação com comentários, manter o escopo
 solicitado e as convenções existentes do repositório.
 
+Orientação do dono de 10/10/2026: tomar as decisões editoriais e de importação
+necessárias sem pedir confirmação, inclusive ao reconciliar respostas antigas
+sem fonte com um gabarito oficial enviado. Preservar a letra da banca e explicar
+divergências médicas no campo `alerta`, sem ensinar uma afirmação falsa para
+defender o gabarito. Registrar a origem e a alteração na documentação interna.
+Publicação já está autorizada; concluir os checks e publicar sem nova pergunta.
+
 Para criar questões de OrtoQuestões Simulados (TEOT e TARO) a partir de um capítulo da
 bibliografia, leia antes
 [docs/padrao-questoes-simulado-teot-taro.md](docs/padrao-questoes-simulado-teot-taro.md):

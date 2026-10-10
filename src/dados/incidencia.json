@@ -1,6 +1,6 @@
 {
-  "geradoEm": "2026-10-07",
-  "base": 5157,
+  "geradoEm": "2026-10-10",
+  "base": 5156,
   "areas": [
     {
       "id": "mao",
@@ -11,12 +11,12 @@
         {
           "nome": "Anatomia da mão e punho",
           "nivel": 4,
-          "n": 193
+          "n": 194
         },
         {
           "nome": "Lesões dos tendões flexores",
           "nivel": 4,
-          "n": 102
+          "n": 101
         },
         {
           "nome": "Lesões dos tendões extensores",
@@ -416,7 +416,7 @@
       "id": "pediatria",
       "nome": "Ortopedia pediátrica",
       "slug": "pediatria",
-      "n": 823,
+      "n": 822,
       "focos": [
         {
           "nome": "Lesões fisárias",
@@ -431,7 +431,7 @@
         {
           "nome": "Displasia do desenvolvimento do quadril",
           "nivel": 4,
-          "n": 59
+          "n": 58
         },
         {
           "nome": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
@@ -630,7 +630,7 @@
         }
       ],
       "peso": 7,
-      "pct": 16.0
+      "pct": 15.9
     },
     {
       "id": "ombro-cotovelo",
@@ -1592,12 +1592,12 @@
     {
       "area": "mao",
       "nome": "Anatomia da mão e punho",
-      "n": 193
+      "n": 194
     },
     {
       "area": "mao",
       "nome": "Lesões dos tendões flexores",
-      "n": 102
+      "n": 101
     },
     {
       "area": "pediatria",
@@ -1650,14 +1650,14 @@
       "n": 60
     },
     {
-      "area": "pediatria",
-      "nome": "Displasia do desenvolvimento do quadril",
-      "n": 59
-    },
-    {
       "area": "ombro-cotovelo",
       "nome": "Anatomia do ombro",
       "n": 59
+    },
+    {
+      "area": "pediatria",
+      "nome": "Displasia do desenvolvimento do quadril",
+      "n": 58
     },
     {
       "area": "mao",
