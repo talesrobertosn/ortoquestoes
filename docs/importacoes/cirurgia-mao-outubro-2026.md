@@ -143,8 +143,29 @@ Na prova de 2025, as anuladas são 10, 66 e 93, com gabarito nulo e quatro anál
 
 Referências adicionais foram pesquisadas em registros e resumos do PubMed. Não se equiparou consulta de resumo a leitura integral, nem se acrescentaram referências sem relação com o tema. O comentário sobre clampes vasculares não recebeu uma referência individual não verificada. Nenhum comentário foi marcado como revisão médica.
 
+## USP-SP, ingresso 2024
+
+120 questões (`mao-1403` a `mao-1522`) com comentários do tema e das 480 alternativas.
+A fonte usa codificação incompatível com extração nativa; o texto foi recuperado por OCR,
+com correções conferidas no caderno. Casos compartilhados e figuras foram preservados.
+São 17 questões com imagens e 22 com alertas. A questão 114 está anulada, com resposta
+nula e análises neutras; nenhum motivo administrativo foi inventado.
+
+Divergências relevantes: 82, gabarito D para amputação apesar de dedo viável com lesão
+ungueal tratável; o comentário explica que B é a conduta clínica coerente. Em 86, a
+faceta anteromedial do coronoide se associa à instabilidade posteromedial em varo,
+ausente das alternativas; o gabarito D foi mantido com aviso. O gabarito retificado de
+18/12/2023 foi conferido diretamente. As demais ressalvas distinguem limites de
+redação, frequências dependentes de séries e aplicações selecionadas de técnicas.
+
+Registros e resumos bibliográficos consultados adicionalmente para Fournier,
+camptodactilia, fáscia temporoparietal, peitoral maior, tuberculose, amputação de raio,
+Caprini, Masquelet, túnel radial, pescoço de cisne, Budapest, transferência AIN-ulnar e
+carpal boss. Consulta de resumo não foi registrada como leitura integral. Nenhum
+comentário recebeu selo de revisão médica individual.
+
 ## Em andamento
 
-USP-SP ingresso 2024 e 2026: 120 questões por caderno. Anuladas: 2024 nº 114; 2026 nº 100, 105, 110. Extração e revisão em andamento.
+USP-SP ingresso 2026: 120 questões. Anuladas: 100, 105, 110. Extração e revisão em andamento.
 Após as provas oficiais, anatomia da mão do Netter em OrtoQuestões Simulados,
 com engenharia reversa e figuras pertinentes; sem exame físico ou tratamento.
