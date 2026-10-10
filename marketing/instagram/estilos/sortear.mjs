@@ -14,6 +14,8 @@ const ESTILOS = {
   cartas: { nome: 'Jogo de cartas', slides: 7, story: 's1-cartas', figurinha: 'nenhuma (só a imagem)' },
   plantao: { nome: 'Plantão das 3h14', slides: 5, story: 's2-plantao', figurinha: 'nenhuma (só a imagem)' },
   'ache-o-erro': { nome: 'Ache os 3 erros', slides: 3, story: 's3-caderno', figurinha: 'nenhuma (só a imagem)' },
+  // Só stories (investigação clínica em interface de radar): use "criar radar-premium <slug>".
+  'radar-premium': { nome: 'Radar premium', slides: 0, story: 's1-alerta, s2-questao, s3-resposta e s4-cta', figurinha: 'nenhuma (só a imagem)', proprio: true, soStories: true },
   linhas: { nome: 'Linhas do metrô', slides: 5, story: 's1-linha e s2-estacoes', figurinha: 'nenhuma (só a imagem)', proprio: true },
   jornal: { nome: 'Jornal (Diário do Plantão)', slides: 5, story: 's1-cartaz do estilo cinema ou o post compartilhado', figurinha: 'nenhuma (só a imagem)' },
   museu: { nome: 'Exposição no museu', slides: 6, story: 's1-exposicao e s2-placa', figurinha: 'nenhuma (só a imagem)' },

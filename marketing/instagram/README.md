@@ -194,10 +194,10 @@ revisar. Cada uma em `questoes/NN-tema/post.html`, com legenda e instruções em
 
 ## Estilos oficiais (`estilos/`)
 
-Jogo de cartas, Plantão das 3h14 e Ache os 3 erros são estilos fixos da marca, com modelo,
-ficha (estrutura, regras, ideias de tema, fórmula da legenda) e story semeador em
-`estilos/ESTILOS.md`. Para o próximo post, sorteie o estilo (aleatório, sem repetir o último)
-e crie a pasta já com o modelo:
+Jogo de cartas, Plantão das 3h14, Ache os 3 erros e Radar premium são estilos fixos da marca,
+com modelo e ficha em `estilos/ESTILOS.md`. Radar premium é exclusivo para uma sequência de 4 stories,
+com painéis arredondados, acabamento suave e metáfora visual de radar. Para o próximo post, sorteie
+o estilo (aleatório, sem repetir o último) ou chame o estilo específico e crie a pasta já com o modelo:
 
 ```
 node marketing/instagram/estilos/sortear.mjs criar <slug>

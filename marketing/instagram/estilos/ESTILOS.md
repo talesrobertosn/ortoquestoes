@@ -281,3 +281,25 @@ Cirurgia da mão: escrever "prova para cirurgia da mão" (a seleção para come�
 depois da ortopedia), nunca "título de cirurgia da mão". Regra do anúncio: quem nunca ouviu falar do site precisa entender tudo só pela imagem; nada vago.
 Recusados antes desta: bula com texto pequeno, cápsula amarela e a primeira versão das notificações
 (bonita, mas vaga para quem não conhece). Outros caminhos não usados: `posts/2026-10-10-propaganda-opcoes/`.
+
+ 
+## Radar premium (`radar-premium/`), só stories
+
+Modelo: `radar-premium/modelo.html`. Criar com
+`node marketing/instagram/estilos/sortear.mjs criar radar-premium <slug>`.
+
+**Ideia:** uma questão real é apresentada como investigação numa central de monitoramento: alerta
+de sinais conflitantes, painel de hipóteses, análise do ponto cego e transmissão diária. A
+varredura circular é um motivo gráfico abstrato; não representa exame nem anatomia.
+
+- **Formato:** 4 stories 1080×1920; verde-noite em gradiente, verde-lima e dourado com contraste
+  contido; tipografia Plus Jakarta Sans e Inter; painéis translúcidos e cartões com cantos amplos,
+  sem contornos duros ou estética de interface técnica carregada.
+- **Estrutura:** alerta/gancho → questão real integral, imagem original e alternativas → gabarito e
+  mecanismo clínico → chamada “Questão grátis todo dia”.
+- **Regras:** substituir os campos entre colchetes; preservar enunciado, alternativas e gabarito do
+  acervo; conferir mecanismo no comentário médico da questão; a imagem médica é exclusivamente a
+  original do banco. Sem figurinha nem espaço reservado. Na chamada, respeitar a regra vigente para
+  explicar que a conta gratuita tem limite diário.
+- **Bom para:** questões com exame aparentemente normal, pistas discordantes ou um mecanismo
+  diagnóstico que mereça uma explicação visual curta.
