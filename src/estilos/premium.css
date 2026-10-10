@@ -959,3 +959,16 @@
   .cd__depois { padding: 0.15rem 0.8rem; }
 }
 @media (prefers-reduced-motion: reduce) { .cd, .cd__mensageiro, .cd__cursor { animation: none; } }
+
+/* Cadastro: campos obrigatórios marcados ao lado do rótulo e o erro de cada um embaixo. */
+.campo__rotulo { display: inline-flex; flex-wrap: wrap; align-items: baseline; gap: 0 0.45rem; }
+.campo__obrigatorio { font-size: 0.72rem; font-weight: 750; letter-spacing: 0.03em; text-transform: uppercase; color: var(--erro); opacity: 0.85; }
+.campo__erro { display: flex; align-items: center; gap: 0.35rem; margin-top: 0.35rem; color: var(--erro); font-size: var(--meta); font-weight: 700; }
+.campo--checkbox-invalido { outline: 2px solid var(--erro); outline-offset: 4px; border-radius: var(--raio-controle); }
+.campos-etapa__provas--invalida .campos-etapa__opcoes { outline: 2px solid var(--erro); outline-offset: 4px; border-radius: var(--raio-controle); }
+.campos-etapa__prova[aria-pressed="true"] { box-shadow: inset 0 0 0 1.5px var(--verdete); }
+.campos-etapa__prova[aria-pressed="true"] strong { color: var(--verdete); }
+.campos-etapa__marca { width: 1.3rem; height: 1.3rem; }
+.campos-etapa__resumo { display: flex; align-items: flex-start; gap: 0.4rem; margin: 0.25rem 0 0; font-size: var(--corpo-menor); font-weight: 600; color: var(--texto-2); }
+.campos-etapa__resumo svg { flex: 0 0 auto; margin-top: 0.2rem; }
+.campos-etapa__resumo--ok { color: var(--verdete); }

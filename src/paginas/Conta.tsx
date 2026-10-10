@@ -37,6 +37,7 @@ const ROTULOS_STATUS = {
   sincronizando: 'Sincronizando seu progresso…', salvo: 'Progresso sincronizado', offline: 'Sem conexão. As alterações serão enviadas quando você voltar à internet.',
   erro: 'Não foi possível sincronizar agora. Seu progresso continua neste navegador; tente novamente.', conflito: 'Há alterações simultâneas para conferir abaixo.',
 }
+const UFS = ['AC', 'AL', 'AP', 'AM', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MT', 'MS', 'MG', 'PA', 'PB', 'PR', 'PE', 'PI', 'RJ', 'RN', 'RS', 'RO', 'RR', 'SC', 'SP', 'SE', 'TO']
 const ROTULOS_TIPO = { respondidas: 'Resposta', notas: 'Anotação', favoritos: 'Favorita', historico: 'Sessão' }
 const SECOES_CONTA = [['perfil', 'usuario', 'Perfil'], ['assinatura', 'medalha', 'Assinatura'], ['estudo', 'livro', 'Estudo'], ['ranking', 'trofeu', 'Ranking'], ['seguranca', 'cadeado', 'Segurança'], ['dados', 'baixar', 'Dados']] as const
 type SecaoConta = (typeof SECOES_CONTA)[number][0]
@@ -60,8 +61,17 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   const [novoEmail, definirNovoEmail] = useState('')
   // Erro do formulário de entrar/cadastrar: aparece grande, junto do botão (o
   // aviso no topo passava batido, principalmente com o teclado do celular aberto).
-  const [erroForm, definirErroForm] = useState<{ texto: string; codigo?: string; n: number } | null>(null)
-  const falhar = (texto: string, codigo?: string) => { definirMensagem(''); definirErroForm((e) => ({ texto, codigo, n: (e?.n ?? 0) + 1 })) }
+  const [erroForm, definirErroForm] = useState<{ texto: string; codigo?: string; campo?: string; n: number } | null>(null)
+  const falhar = (texto: string, codigo?: string, campo?: string) => { definirMensagem(''); definirErroForm((e) => ({ texto, codigo, campo, n: (e?.n ?? 0) + 1 })) }
+  // Depois da primeira tentativa de criar a conta, cada campo que falta fica em
+  // vermelho com a explicação embaixo, e some assim que é preenchido.
+  const [tentouCriar, definirTentouCriar] = useState(false)
+  function irParaCampo(campo: string) {
+    const caixa = document.querySelector<HTMLElement>(`[data-campo="${campo}"]`)
+    if (!caixa) return
+    caixa.scrollIntoView({ block: 'center', behavior: 'smooth' })
+    setTimeout(() => caixa.querySelector<HTMLElement>('input, select, button')?.focus({ preventScroll: true }), 450)
+  }
   // Cadastro feito e e-mail ainda não confirmado: pop-up no meio da tela.
   const [pendente, definirPendente] = useState<string | null>(lerConfirmacaoPendente)
   useEffect(() => { if (sessao) { limparConfirmacaoPendente(); definirPendente(null) } }, [sessao])
@@ -69,7 +79,9 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     if (!erroForm) return
     // Senha errada: o foco volta para a senha, já selecionada, para redigitar.
     if (erroForm.codigo === 'invalid_credentials') document.querySelector<HTMLInputElement>('#acesso-senha')?.select()
-    document.querySelector('.aviso-formulario--destaque')?.scrollIntoView({ block: 'center', behavior: 'smooth' })
+    // Cadastro incompleto: a tela volta até o primeiro campo que falta.
+    if (erroForm.campo) irParaCampo(erroForm.campo)
+    else document.querySelector('.aviso-formulario--destaque')?.scrollIntoView({ block: 'center', behavior: 'smooth' })
   }, [erroForm])
   const [importado, definirImportado] = useState(false)
   const administrador = usarAdministrador(sessao?.user.id)
@@ -165,6 +177,26 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     if (servico.trim().length < 2) { avisar('Informe o serviço onde você atua ou faz residência.'); return false }
     return true
   }
+  /** Campos do cadastro que faltam, na ordem da tela: [campo, nome curto, explicação]. */
+  function faltasCadastro(): Array<[string, string, string]> {
+    const f: Array<[string, string, string]> = []
+    const anos = nascimento ? (Date.now() - new Date(`${nascimento}T12:00:00`).getTime()) / (365.25 * 864e5) : NaN
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) f.push(['email', 'e-mail', 'Informe um e-mail válido.'])
+    if (nome.trim().length < 2) f.push(['nome', 'nome', 'Informe seu nome.'])
+    if (sobrenome.trim().length < 2) f.push(['sobrenome', 'sobrenome', 'Informe seu sobrenome.'])
+    if (!(anos >= 18 && anos <= 100)) f.push(['nascimento', 'data de nascimento', nascimento ? 'Confira dia, mês e ano: a data parece incompleta ou com o ano errado.' : 'Informe sua data de nascimento.'])
+    if (!situacao) f.push(['situacao', 'sua etapa ("Você é")', 'Escolha uma opção.'])
+    if (situacao === 'residente' && !anoResidencia) f.push(['ano', 'ano da residência', 'Escolha R1, R2 ou R3.'])
+    if (!provas.length) f.push(['provas', 'a prova que você estuda', 'Marque ao menos uma prova.'])
+    if (servico.trim().length < 2) f.push(['servico', 'hospital ou serviço', 'Informe o hospital ou serviço onde faz residência ou trabalha.'])
+    if (cidade.trim().length < 2) f.push(['cidade', 'cidade', 'Informe sua cidade.'])
+    if (!uf) f.push(['uf', 'UF', 'Escolha o estado.'])
+    if (whatsapp.replace(/\D/g, '').length < 10) f.push(['whatsapp', 'WhatsApp', 'Informe o WhatsApp com DDD.'])
+    if (senha.length < 8) f.push(['senha', 'senha', 'Use pelo menos 8 caracteres.'])
+    else if (confirmacao !== senha) f.push(['confirmacao', 'confirmação da senha', 'Digite a mesma senha nos dois campos.'])
+    if (!aceitouTermos) f.push(['termos', 'aceite dos Termos de Uso', 'Marque que leu e aceita os Termos de Uso.'])
+    return f
+  }
   function dadosPerfil() {
     return {
       nome: nome.trim(), sobrenome: sobrenome.trim(), nascimento, situacao,
@@ -180,6 +212,16 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     if (!supabase || ocupado) return
     const pedeConfirmacao = recuperacao || modo === 'criar'
     definirErroForm(null)
+    if (modo === 'criar' && !recuperacao) {
+      const faltas = faltasCadastro()
+      if (faltas.length) {
+        definirTentouCriar(true)
+        const nomes = faltas.map(([, n]) => n)
+        const lista = nomes.length > 1 ? `${nomes.slice(0, -1).join(', ')} e ${nomes[nomes.length - 1]}` : nomes[0]
+        falhar(`${faltas.length > 1 ? `Faltam ${faltas.length} campos` : 'Falta um campo'}: ${lista}. ${faltas.length > 1 ? 'Eles estão marcados' : 'Ele está marcado'} em vermelho.`, 'incompleto', faltas[0][0])
+        return
+      }
+    }
     if (pedeConfirmacao && senha !== confirmacao) { falhar('As senhas não coincidem. Digite a mesma senha nos dois campos.'); return }
     definirOcupado(true); definirMensagem(''); definirAvisoConta('')
     try {
@@ -279,6 +321,11 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   const trocarModo = (m: typeof modo) => { definirModo(m); definirMensagem(''); definirErroForm(null); definirSenha(''); definirConfirmacao('') }
   const pedeConfirmacao = recuperacao || modo === 'criar'
   const senhasConferem = confirmacao.length > 0 && confirmacao === senha
+  const criando = !recuperacao && modo === 'criar'
+  const errosCadastro: Record<string, string> = criando && tentouCriar ? Object.fromEntries(faltasCadastro().map(([c, , m]) => [c, m])) : {}
+  const inv = (c: string) => errosCadastro[c] ? ' entrada--invalida' : ''
+  const erroDe = (c: string) => errosCadastro[c] && <span className="campo__erro" role="alert"><Icone nome="alerta" tamanho={14} />{errosCadastro[c]}</span>
+  const obrig = criando && <span className="campo__obrigatorio">obrigatório</span>
   if (!sessao || recuperacao) {
     const titulo = recuperacao ? 'Crie uma nova senha' : modo === 'criar' ? 'Criar conta gratuita' : modo === 'recuperar' ? 'Recuperar senha' : 'Entrar na sua conta'
     const subtitulo = recuperacao ? 'Escolha a nova senha e confirme logo abaixo.' : modo === 'criar' ? 'Leva menos de um minuto. Depois é só confirmar o e-mail.' : modo === 'recuperar' ? 'Informe seu e-mail e enviaremos um link para criar uma nova senha.' : 'Continue de onde parou, em qualquer dispositivo.'
@@ -304,35 +351,39 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
         </header>
         {mensagem && <p className="aviso-formulario" role="status">{mensagem}</p>}
         {!recuperacao && modo !== 'recuperar' && <BotaoGoogle />}
-        <form className="empilha acesso__form" onSubmit={enviar}>
-          {!recuperacao && <label className="campo">E-mail<input id="acesso-email" className={'entrada' + (erroForm?.codigo === 'ja_cadastrado' ? ' entrada--invalida' : '')} type="email" autoComplete="email" required value={email} onChange={e => definirEmail(e.target.value)} placeholder="voce@email.com" /></label>}
+        <form className="empilha acesso__form" onSubmit={enviar} noValidate={criando}>
+          {!recuperacao && <label className="campo" data-campo="email"><span className="campo__rotulo">E-mail {obrig}</span><input id="acesso-email" className={'entrada' + (erroForm?.codigo === 'ja_cadastrado' ? ' entrada--invalida' : inv('email'))} type="email" autoComplete="email" required value={email} onChange={e => definirEmail(e.target.value)} placeholder="voce@email.com" />{erroDe('email')}</label>}
           {!recuperacao && modo === 'criar' && <>
-            <div className="linha-campos linha-campos--2"><label className="campo">Nome<input className="entrada" autoComplete="given-name" required minLength={2} value={nome} onChange={e => definirNome(e.target.value)} placeholder="Como podemos chamar você?" /></label><label className="campo">Sobrenome<input className="entrada" autoComplete="family-name" required minLength={2} value={sobrenome} onChange={e => definirSobrenome(e.target.value)} /></label></div>
-            <label className="campo">Data de nascimento<input className="entrada" type="date" required value={nascimento} onChange={e => definirNascimento(e.target.value)} /></label>
-            <CamposEtapa situacao={situacao} ano={anoResidencia} provas={provas} aoMudarSituacao={definirSituacao} aoMudarAno={definirAnoResidencia} aoMudarProvas={definirProvas} obrigatorio />
-            <label className="campo">Serviço onde faz residência ou trabalha<input className="entrada" required value={servico} onChange={e => definirServico(e.target.value)} placeholder="Ex.: Hospital / clínica / instituição" /></label>
-            <div className="linha-campos linha-campos--2"><label className="campo"><span>WhatsApp <span className="meta">(opcional)</span></span><input className="entrada" type="tel" autoComplete="tel" value={whatsapp} onChange={e => definirWhatsapp(e.target.value)} placeholder="(00) 00000-0000" /></label><label className="campo"><span>Cidade <span className="meta">(opcional)</span></span><input className="entrada" autoComplete="address-level2" value={cidade} onChange={e => definirCidade(e.target.value)} /></label></div>
+            <div className="linha-campos linha-campos--2"><label className="campo" data-campo="nome"><span className="campo__rotulo">Nome {obrig}</span><input className={'entrada' + inv('nome')} autoComplete="given-name" required minLength={2} value={nome} onChange={e => definirNome(e.target.value)} placeholder="Como podemos chamar você?" />{erroDe('nome')}</label><label className="campo" data-campo="sobrenome"><span className="campo__rotulo">Sobrenome {obrig}</span><input className={'entrada' + inv('sobrenome')} autoComplete="family-name" required minLength={2} value={sobrenome} onChange={e => definirSobrenome(e.target.value)} />{erroDe('sobrenome')}</label></div>
+            <label className="campo" data-campo="nascimento"><span className="campo__rotulo">Data de nascimento {obrig}</span><input className={'entrada' + inv('nascimento')} type="date" required value={nascimento} onChange={e => definirNascimento(e.target.value)} />{erroDe('nascimento')}</label>
+            <CamposEtapa situacao={situacao} ano={anoResidencia} provas={provas} aoMudarSituacao={definirSituacao} aoMudarAno={definirAnoResidencia} aoMudarProvas={definirProvas} obrigatorio erros={errosCadastro} />
+            <label className="campo" data-campo="servico"><span className="campo__rotulo">Hospital ou serviço onde faz residência ou trabalha {obrig}</span><input className={'entrada' + inv('servico')} required value={servico} onChange={e => definirServico(e.target.value)} placeholder="Ex.: Hospital / clínica / instituição" />{erroDe('servico')}</label>
+            <div className="linha-campos linha-campos--2"><label className="campo" data-campo="cidade"><span className="campo__rotulo">Cidade {obrig}</span><input className={'entrada' + inv('cidade')} autoComplete="address-level2" required value={cidade} onChange={e => definirCidade(e.target.value)} />{erroDe('cidade')}</label><label className="campo" data-campo="uf"><span className="campo__rotulo">UF {obrig}</span><select className={'entrada' + inv('uf')} required value={uf} onChange={e => definirUf(e.target.value)}><option value="">Selecione</option>{UFS.map(sigla => <option key={sigla}>{sigla}</option>)}</select>{erroDe('uf')}</label></div>
+            <label className="campo" data-campo="whatsapp"><span className="campo__rotulo">WhatsApp com DDD {obrig}</span><input className={'entrada' + inv('whatsapp')} type="tel" autoComplete="tel" required value={whatsapp} onChange={e => definirWhatsapp(e.target.value)} placeholder="(00) 00000-0000" />{erroDe('whatsapp')}</label>
           </>}
-          {(recuperacao || modo !== 'recuperar') && <div className="campo">
-            <span className="acesso__rotulo-senha"><label htmlFor="acesso-senha">{recuperacao ? 'Nova senha' : 'Senha'}</label>{modo === 'entrar' && !recuperacao && <button type="button" className="acesso__link" onClick={() => trocarModo('recuperar')}>Esqueceu a senha?</button>}</span>
+          {(recuperacao || modo !== 'recuperar') && <div className="campo" data-campo="senha">
+            <span className="acesso__rotulo-senha"><label htmlFor="acesso-senha">{recuperacao ? 'Nova senha' : 'Senha'} {obrig}</label>{modo === 'entrar' && !recuperacao && <button type="button" className="acesso__link" onClick={() => trocarModo('recuperar')}>Esqueceu a senha?</button>}</span>
             <span className="acesso__senha">
-              <input id="acesso-senha" className={'entrada' + (erroForm?.codigo === 'invalid_credentials' ? ' entrada--invalida' : '')} aria-invalid={erroForm?.codigo === 'invalid_credentials' || undefined} type={verSenha ? 'text' : 'password'} autoComplete={modo === 'entrar' && !recuperacao ? 'current-password' : 'new-password'} minLength={modo === 'entrar' && !recuperacao ? undefined : 8} required value={senha} onChange={e => definirSenha(e.target.value)} />
+              <input id="acesso-senha" className={'entrada' + (erroForm?.codigo === 'invalid_credentials' ? ' entrada--invalida' : inv('senha'))} aria-invalid={erroForm?.codigo === 'invalid_credentials' || undefined} type={verSenha ? 'text' : 'password'} autoComplete={modo === 'entrar' && !recuperacao ? 'current-password' : 'new-password'} minLength={modo === 'entrar' && !recuperacao ? undefined : 8} required value={senha} onChange={e => definirSenha(e.target.value)} />
               <button type="button" className="acesso__olho" onClick={() => definirVerSenha(v => !v)} aria-label={verSenha ? 'Ocultar senha' : 'Mostrar senha'} aria-pressed={verSenha}><Icone nome={verSenha ? 'olho-riscado' : 'olho'} tamanho={18} /></button>
             </span>
             {pedeConfirmacao && <span className="meta">Mínimo de 8 caracteres.</span>}
+            {erroDe('senha')}
           </div>}
-          {pedeConfirmacao && <div className="campo">
-            <label htmlFor="acesso-confirmacao">Confirmar senha</label>
-            <input id="acesso-confirmacao" className={`entrada${confirmacao && !senhasConferem ? ' entrada--invalida' : ''}`} type={verSenha ? 'text' : 'password'} autoComplete="new-password" required value={confirmacao} onChange={e => definirConfirmacao(e.target.value)} aria-describedby="acesso-confere" />
+          {pedeConfirmacao && <div className="campo" data-campo="confirmacao">
+            <label htmlFor="acesso-confirmacao">Confirmar senha {obrig}</label>
+            <input id="acesso-confirmacao" className={`entrada${(confirmacao && !senhasConferem) || errosCadastro.confirmacao ? ' entrada--invalida' : ''}`} type={verSenha ? 'text' : 'password'} autoComplete="new-password" required value={confirmacao} onChange={e => definirConfirmacao(e.target.value)} aria-describedby="acesso-confere" />
             {confirmacao && <span id="acesso-confere" className={`acesso__confere ${senhasConferem ? 'acesso__confere--ok' : 'acesso__confere--nao'}`} role="status"><Icone nome={senhasConferem ? 'certo' : 'errado'} tamanho={14} />{senhasConferem ? 'As senhas coincidem' : 'As senhas ainda não coincidem'}</span>}
           </div>}
           {!recuperacao && modo === 'criar' && <>
             <label className="campo campo--checkbox"><input type="checkbox" checked={receberNovidades} onChange={e => definirReceberNovidades(e.target.checked)} /> Quero receber novidades sobre o Orto Questões</label>
-            <label className="campo campo--checkbox"><input type="checkbox" required checked={aceitouTermos} onChange={e => definirAceitouTermos(e.target.checked)} /> <span>Li e concordo com os <a href={href('/termos')} target="_blank" rel="noopener noreferrer">Termos de Uso</a> do Orto Questões. O cadastro é gratuito; assinaturas são opcionais e têm condições próprias antes da compra.</span></label>
+            <label className={'campo campo--checkbox' + (errosCadastro.termos ? ' campo--checkbox-invalido' : '')} data-campo="termos"><input type="checkbox" required checked={aceitouTermos} onChange={e => definirAceitouTermos(e.target.checked)} /> <span>Li e concordo com os <a href={href('/termos')} target="_blank" rel="noopener noreferrer">Termos de Uso</a> do Orto Questões. O cadastro é gratuito; assinaturas são opcionais e têm condições próprias antes da compra.</span></label>
+            {erroDe('termos')}
           </>}
           {erroForm && <div key={erroForm.n} className="aviso-formulario aviso-formulario--erro aviso-formulario--destaque" role="alert">
             <Icone nome="alerta" tamanho={20} />
             <span>{erroForm.texto}{erroForm.codigo === 'invalid_credentials' && ' Se você criou a conta pelo Google, use o botão do Google acima.'}</span>
+            {erroForm.campo && <span className="aviso-formulario__acoes"><button type="button" onClick={() => irParaCampo(erroForm.campo!)}>Ir para o campo que falta</button></span>}
             {(erroForm.codigo === 'invalid_credentials' || erroForm.codigo === 'ja_cadastrado') && <span className="aviso-formulario__acoes">
               {erroForm.codigo === 'ja_cadastrado' && <button type="button" onClick={() => trocarModo('entrar')}>Entrar com este e-mail</button>}
               <button type="button" onClick={() => trocarModo('recuperar')}>Criar uma senha nova</button>
@@ -442,7 +493,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
         <label className="campo">Serviço onde faz residência ou trabalha<input className="entrada" value={servico} onChange={e => definirServico(e.target.value)} placeholder="Ex.: Hospital / clínica / instituição" /></label>
         <OpcaoServicoRanking sessao={sessao} compacta noPerfil />
         <div className="linha-campos linha-campos--2"><label className="campo"><span>WhatsApp <span className="meta">(opcional)</span></span><input className="entrada" type="tel" autoComplete="tel" value={whatsapp} onChange={e => definirWhatsapp(e.target.value)} placeholder="(00) 00000-0000" /></label><label className="campo"><span>Cidade <span className="meta">(opcional)</span></span><input className="entrada" autoComplete="address-level2" value={cidade} onChange={e => definirCidade(e.target.value)} /></label></div>
-        <div className="linha-campos linha-campos--2"><label className="campo"><span>UF <span className="meta">(opcional)</span></span><select className="entrada" value={uf} onChange={e => definirUf(e.target.value)}><option value="">Selecione</option>{['AC','AL','AP','AM','BA','CE','DF','ES','GO','MA','MT','MS','MG','PA','PB','PR','PE','PI','RJ','RN','RS','RO','RR','SC','SP','SE','TO'].map(sigla => <option key={sigla}>{sigla}</option>)}</select></label><label className="campo campo--checkbox"><input type="checkbox" checked={receberNovidades} onChange={e => definirReceberNovidades(e.target.checked)} /> Quero receber novidades sobre o Orto Questões</label></div>
+        <div className="linha-campos linha-campos--2"><label className="campo"><span>UF <span className="meta">(opcional)</span></span><select className="entrada" value={uf} onChange={e => definirUf(e.target.value)}><option value="">Selecione</option>{UFS.map(sigla => <option key={sigla}>{sigla}</option>)}</select></label><label className="campo campo--checkbox"><input type="checkbox" checked={receberNovidades} onChange={e => definirReceberNovidades(e.target.checked)} /> Quero receber novidades sobre o Orto Questões</label></div>
         <p className="texto-2">WhatsApp, cidade e UF são opcionais. Usamos seus dados de perfil para personalizar sua experiência e nunca exibimos seu contato publicamente.</p>
         <button className="botao botao--principal" type="button" onClick={salvarPerfil} disabled={salvandoPerfil}>{salvandoPerfil ? 'Salvando…' : 'Salvar perfil'}</button>
       </section>}
