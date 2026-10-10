@@ -269,11 +269,14 @@ Simulados: questões autorais feitas a partir do que as provas oficiais cobram.
   resposta + "Treine grátis". Sem figurinha nem link.
 - **Bom para:** divulgar os Simulados e novidades do acervo (ex.: a parte de anatomia).
 
-## Notificações (`posts/2026-10-10-notificacao-propaganda/`), propaganda
+## Notificações (`posts/2026-10-10-notificacao-propaganda/`), anúncio para quem não conhece o site
 
-Tela bloqueada de celular às 19:00 (fundo verde-escuro com brilho vermelho), três avisos do Orto
-Questões ("Suas questões grátis de hoje chegaram", ranking, simulado por engenharia reversa) e a pílula
-dourada "Crie sua conta grátis · ortoquestoes.com.br". Imagem única no feed e um story, com "Tela
-ilustrativa". Regra da propaganda: o essencial lido em 3 segundos, numa imagem só.
-Recusados antes desta: bula com texto pequeno e cápsula amarela (chamativa demais, fora da marca).
-Outros caminhos prontos e não usados: `posts/2026-10-10-propaganda-opcoes/` (ingresso, placa de estrada).
+Tela bloqueada às 19:00 com cinco avisos do Orto Questões, cada um explicando uma parte: o que é (banco
+de questões de ortopedia, no celular ou no computador), para quais provas (TEOT, TARO, Título de cirurgia
+da mão, R4 Coluna, R4 ENARE, Fellowship de Quadril, TECOC), como funciona (provas anteriores com cada
+alternativa comentada), OrtoQuestões Simulados (engenharia reversa) e quanto custa (conta grátis com o
+limite diário de `LIMITE_GRATIS_ATUAL` em `src/config.ts`; planos sem limite). Fecha com a pílula
+"Crie sua conta grátis · ortoquestoes.com.br" e "Tela ilustrativa". Imagem única no feed e um story.
+Regra do anúncio: quem nunca ouviu falar do site precisa entender tudo só pela imagem; nada vago.
+Recusados antes desta: bula com texto pequeno, cápsula amarela e a primeira versão das notificações
+(bonita, mas vaga para quem não conhece). Outros caminhos não usados: `posts/2026-10-10-propaganda-opcoes/`.
