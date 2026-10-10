@@ -7,6 +7,17 @@ número de frases e proibições de tabelas ou listas dos prompts de enriquecime
 
 ## Ajuste editorial de 08/10/2026, pedido do dono
 
+### Profundidade solicitada em 10/10/2026
+
+Os comentários do Einstein devem ser reescritos: justificativas curtas não
+atingiram a qualidade esperada. O exemplo adicional aprovado é `pediatria-0313`
+(osteogênese imperfeita e classificação de Sillence). Desenvolver uma aula do
+tema e explicar cada alternativa. Usar, como referência flexível, cerca de
+500 a 4.000 caracteres, sem transformar essa faixa em limite ou preenchimento.
+Questões complexas precisam de mais fundamentos, mecanismos, classificações e
+relações clínicas; questões simples podem ser mais curtas. A concisão desejada
+elimina redundância, não o conteúdo que o aluno precisa aprender.
+
 A explicação precisa ser útil e natural. Não há piso de caracteres: um comentário
 menor é preferível a texto esticado. Manter os fundamentos necessários e a análise
 de cada alternativa, com tamanho proporcional à dúvida que ela cria.

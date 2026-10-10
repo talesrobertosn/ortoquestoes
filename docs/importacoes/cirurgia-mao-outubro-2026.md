@@ -96,6 +96,27 @@ Ressalvas: 5 (embriologia), 12 (classificações variáveis), 24 (artroscopia),
 PDFs e arquivos de trabalho fora do repositório. Referências públicas não mencionam
 nomes dos uploads nem folhas isoladas.
 
+## Revisão de profundidade do Einstein, 10/10/2026
+
+Após avaliação do dono, os 50 comentários foram reescritos como aulas do tema.
+As 200 alternativas foram conferidas; as justificativas que exigiam mais raciocínio
+foram desenvolvidas. O exemplo adicional de qualidade é `pediatria-0313`.
+
+Os conceitos incluem mecanismos, classificações comparadas, limites das técnicas
+e consequências clínicas pertinentes. Não foram acrescentados dados ao caso original.
+Os nove avisos de ambiguidade ou divergência continuam preservados. Letras oficiais,
+enunciados, alternativas, IDs e imagens não foram alterados nesta revisão.
+Nenhum comentário recebeu confirmação de revisão médica individual.
+
+Foram consultados registros e resumos bibliográficos no PubMed e textos integrais
+abertos para hipoplasia do polegar, paroníquia, Moberg, Atasoy e retalho do côndilo
+femoral medial. As fontes citadas estão associadas ao tema que sustentam; PDFs,
+extrações e arquivos de pesquisa permanecem fora do repositório.
+
+A captura de `mao-0459` foi solicitada pelo dono e está disponível em
+`public/amostras/einstein-2026-19-comentario.png`. É uma visualização do site com
+sessão de teste interceptada localmente; não foram gravadas respostas no Supabase.
+
 ## Em andamento
 
 USP-SP ingresso 2024, 2025 e 2026: 120 questões por caderno. Anuladas: 2024 nº 114;
