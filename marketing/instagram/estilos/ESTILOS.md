@@ -269,9 +269,10 @@ Simulados: questões autorais feitas a partir do que as provas oficiais cobram.
   resposta + "Treine grátis". Sem figurinha nem link.
 - **Bom para:** divulgar os Simulados e novidades do acervo (ex.: a parte de anatomia).
 
-## Bula (`posts/2026-10-10-bula-propaganda/`), propaganda
+## Cápsula (`posts/2026-10-10-bula-propaganda/`), propaganda de 3 segundos
 
-Caixa de remédio do Orto Questões (tarja "Venda livre · Grátis", selo vermelho "Grátis, sem cartão")
-ao lado da bula (composição, posologia, efeitos colaterais, contraindicação) e faixa verde "Crie sua
-conta grátis · ortoquestoes.com.br". Imagem única no feed e um story: toda a informação numa parte só,
-para quem não vai arrastar. Reusar o `post.html` trocando o texto da bula quando houver recurso novo.
+Fundo amarelo com raios de cartaz, "QUESTÕES GRÁTIS" gigante (grátis em vermelho com contorno e sombra
+preta), uma cápsula enorme verde e vermelha ("1 por dia · até a prova"), três etiquetas curtas
+(Comentadas, Simulados, Ranking) e a faixa preta "Crie sua conta grátis · ortoquestoes.com.br".
+Imagem única no feed e um story. Regra da propaganda: o que importa é lido em 3 segundos, grande e
+colorido; nada de bloco de texto. A primeira versão (bula com texto pequeno) foi recusada por isso.
