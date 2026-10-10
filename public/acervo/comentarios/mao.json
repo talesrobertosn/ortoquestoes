@@ -16786,5 +16786,544 @@
   "referencias": [],
   "geradoEm": "2026-10-10T19:13:22+00:00",
   "conferido": false
+ },
+ "mao-1293": {
+  "conceito": "**Uma falha neural precisa ser reconstruída sem tensão.** Forçar os cotos a se encontrarem pode comprometer perfusão e regeneração. Quando a aproximação segura não é possível, o autoenxerto continua sendo uma referência: fornece arquitetura endoneural e células de suporte, mas produz morbidade no nervo doador.\n\nUm conduto cria uma câmara protegida entre os cotos. Sua utilidade depende de comprimento da falha, diâmetro, função do nervo e condições do leito. Resultados de pequenas falhas sensitivas digitais não podem ser extrapolados para grandes defeitos de nervos mistos. A expressão “comparáveis” da alternativa C deve ser lida nesse contexto, e não como equivalência garantida para qualquer falha menor que 3 cm.\n\n| Reconstrução | Limitação que precisa ser considerada |\n| :--- | :--- |\n| Autoenxerto | Déficit do doador e quantidade disponível |\n| Conduto absorvível | Comprimento e indicação limitados; não dispensa seleção |\n| Veia autógena | Possibilidade de colapso, especialmente em falhas maiores |\n| Silicone | Material não absorvível; compressão e reação local podem exigir retirada |\n\nEnxertos vascularizados têm aplicações selecionadas, sobretudo em leitos desfavoráveis ou defeitos extensos, mas a existência de uma indicação não demonstra superioridade clínica geral. O princípio central é escolher uma ponte que preserve um ambiente de regeneração, sem sacrificar a coaptação por tensão.",
+  "correta": "O gabarito aceita condutos de policaprolactona para falhas curtas. Essa é uma indicação selecionada, especialmente em nervos sensitivos; comprimento pequeno é necessário, mas não suficiente para prometer o mesmo resultado do autoenxerto. Diâmetro, nervo misto, trauma e qualidade do leito também pesam.",
+  "incorretas": {
+   "A": "Não há uma hierarquia universal em que veia seja sempre pior que todo conduto absorvível. O resultado depende do defeito e da construção; a veia pode colapsar em falhas maiores. Comparações entre materiais só fazem sentido com nervos e comprimentos semelhantes.",
+   "B": "Enxertos vascularizados são empregados em situações selecionadas, mas a afirmação de eficácia comprovada de forma ampla é mais forte que a evidência comparativa disponível. Não se deve transformar o gabarito em proibição da técnica: a questão privilegia a indicação limitada de condutos para falhas curtas.",
+   "D": "Silicone não é absorvido e pode provocar compressão, fibrose ou outras complicações, além de demandar remoção. Um eventual custo menor não elimina esses problemas. A alternativa erra ao apresentar ausência de complicações importantes como propriedade do material."
+  },
+  "referencias": [
+   "Fabrication of Artificial Nerve Conduits Used in a Long Nerve Gap: Current Reviews and Future Studies. https://pubmed.ncbi.nlm.nih.gov/38671830/"
+  ],
+  "geradoEm": "2026-10-10T19:31:27+00:00",
+  "conferido": false,
+  "alerta": "O gabarito oficial é C. A comparação com autoenxerto não é equivalência universal para todo nervo com falha inferior a 3 cm; enxertos vascularizados também têm indicações selecionadas, com evidência comparativa limitada."
+ },
+ "mao-1294": {
+  "conceito": "**A figura mostra um retalho keystone, uma opção local baseada na vascularização por perfurantes.** O desenho lembra uma pedra central de arco: uma ilha de pele e tecido subcutâneo adjacente ao defeito avança para cobri-lo. Os extremos do desenho permitem um fechamento semelhante a dois avanços V–Y.\n\nO tecido transferido permanece ligado à circulação local por perfurantes. Não é obrigatório isolar uma única artéria axial longa, nem seccionar o pedículo para fazer anastomoses em outro local. A disponibilidade de pele vizinha, sua mobilidade e a integridade dos vasos determinam se o avanço é seguro.\n\nNa imagem, a sequência apresenta o defeito, o planejamento ao lado dele e o fechamento. Isso explica por que a geometria descrita em B é mais informativa que procurar um nervo específico no desenho. O nome não substitui a avaliação do leito: um grande descolamento traumático pode ter destruído as perfurantes e tornar o tecido aparentemente disponível pouco confiável.\n\nO planejamento deve evitar tensão excessiva, avaliar fechamento da área doadora e preservar perfusão nas bordas. É um retalho local versátil, mas sua facilidade geométrica não transforma pele traumatizada em tecido saudável.",
+  "correta": "A geometria de pedra central e o fechamento dos extremos por avanço V–Y caracterizam o keystone. O ganho de mobilidade distribui a tensão para permitir cobertura do defeito com tecido próximo, preservando perfurantes. Não se trata apenas de suturar uma ferida por tração.",
+  "incorretas": {
+   "A": "A descrição corresponde a outro conceito de retalho, com associação sural. No keystone, a nutrição se apoia nas perfurantes locais e não na elevação obrigatória de um nervo junto com uma artéria axial. O desenho da imagem e o avanço V–Y são os dados decisivos.",
+   "C": "O retalho mostrado é local, e não livre por definição. Monitorização de perfusão também importa em retalhos locais, mas o protocolo de anastomoses microcirúrgicas não identifica esta técnica. A necessidade de observar um retalho não prova que ele seja microcirúrgico.",
+   "D": "Um descolamento extenso pode romper as perfurantes e comprometer a viabilidade da pele adjacente. Portanto, o tecido traumatizado não constitui a aplicação ideal só por estar perto do defeito. A escolha depende de perfusão e mobilidade preservadas."
+  },
+  "referencias": [
+   "Utility and Outcomes of a Keystone Perforator Island Flap for Reconstruction at Various Anatomical Locations: A Prospective Study. https://pubmed.ncbi.nlm.nih.gov/39553139/"
+  ],
+  "geradoEm": "2026-10-10T19:31:27+00:00",
+  "conferido": false
+ },
+ "mao-1295": {
+  "conceito": "**O retalho anterolateral da coxa (ALT) oferece pele e tecido subcutâneo para reconstruções de grande extensão.** Habitualmente é nutrido por perfurantes do sistema da artéria circunflexa femoral **lateral**, em particular do ramo descendente. As perfurantes podem atravessar o músculo vasto lateral ou seguir pelo septo; essa variação muda a dissecção.\n\nPode ser elevado como retalho fasciocutâneo, incorporar músculo conforme a necessidade e receber componente sensitivo do nervo cutâneo lateral da coxa. Seu pedículo costuma permitir anastomoses com comprimento e calibre úteis, motivo pelo qual não depende de supermicrocirurgia para ter aplicação clínica.\n\nApós transferência livre, o êxito depende também de reconhecer precocemente falha arterial ou congestão venosa. Cor, temperatura, turgor, enchimento capilar, sangramento à punção e Doppler são combinados conforme o retalho e o protocolo. Nenhum sinal isolado resolve todos os casos.\n\nB é a única alternativa que não troca a anatomia do ALT. O intervalo de 2–4 horas citado no caderno não deve ser tratado como teto de vigilância: muitos serviços fazem avaliações mais frequentes nas primeiras horas. Suspeita de falha exige avaliação imediata e eventual reexploração, sem esperar a próxima checagem agendada.",
+  "correta": "A monitorização precoce e repetida é essencial. O gabarito aceita a alternativa, mas o intervalo deve seguir o protocolo e o risco; avaliações horárias são comuns inicialmente. Alteração suspeita de perfusão demanda ação imediata, pois vigilância serve para recuperar um retalho ameaçado a tempo.",
+  "incorretas": {
+   "A": "O vaso foi trocado: a irrigação clássica deriva da circunflexa femoral lateral, e não medial. O componente sensitivo pode utilizar o nervo cutâneo lateral da coxa, não um ramo do ciático como regra. Os dois erros mudam o planejamento anatômico do retalho.",
+   "C": "As perfurantes do ALT podem ser musculocutâneas ou septocutâneas. Há um septo relevante entre reto femoral e vasto lateral; dizer que não se identifica septo durante a dissecção apaga uma referência anatômica importante. O retalho não exige ser musculocutâneo em todos os casos.",
+   "D": "O ALT é amplamente empregado por características favoráveis de pedículo e área doadora. Não é um retalho de uso apenas excepcional por pedículo obrigatoriamente curto e diminuto. Supermicrocirurgia é uma técnica distinta e não a condição que tornou o ALT clinicamente utilizável."
+  },
+  "referencias": [
+   "The Anterolateral Thigh Flap in Head and Neck Reconstruction. https://pubmed.ncbi.nlm.nih.gov/39142949/"
+  ],
+  "geradoEm": "2026-10-10T19:31:27+00:00",
+  "conferido": false,
+  "alerta": "Gabarito oficial B. A frequência de monitorização varia por protocolo e costuma ser maior nas primeiras horas; 2–4 horas não deve ser entendido como intervalo universal ideal ou como motivo para adiar avaliação de alteração suspeita."
+ },
+ "mao-1296": {
+  "conceito": "**Escarotomia libera a restrição imposta pela escara de uma queimadura circunferencial.** A pele queimada perde elasticidade; o edema dos tecidos abaixo aumenta a pressão e pode comprometer a circulação. A incisão deve atravessar a escara até permitir expansão, preservando estruturas profundas.\n\nNão é o mesmo procedimento que fasciotomia. Esta abre fáscias para descomprimir compartimentos musculares e pode ser necessária em queimadura elétrica com lesão profunda. Uma escarotomia adequada não exclui síndrome compartimental quando o problema se encontra abaixo da fáscia.\n\nA decisão integra mecanismo, extensão circunferencial, tensão da escara, perfusão distal e evolução. Pulsos palpáveis não asseguram perfusão microvascular normal, e a perda dos pulsos é um achado tardio. Doppler, oximetria e medidas de pressão podem complementar um exame seriado, sem substituí-lo.\n\nNos dedos, as incisões devem poupar os feixes e as superfícies usadas em pinça e contato. A posição não pode ser uma regra radial igual para todos os dedos. B valoriza o julgamento clínico, mas isso exige reconhecer sinais e usar dados objetivos quando necessários; experiência não significa dispensar avaliação.",
+  "correta": "A avaliação clínica experiente é central porque a indicação depende da combinação e da evolução dos achados. Deve ser apoiada por exame seriado e recursos objetivos quando houver dúvida. Não é autorização para escolher a conduta apenas por impressão, ignorando perfusão e mecanismo.",
+  "incorretas": {
+   "A": "A perda de pulso é tardia. A circulação capilar e a perfusão dos tecidos podem deteriorar antes de cessar fluxo numa artéria palpável. Esperar ausência dos pulsos radial e ulnar pode atrasar uma descompressão necessária.",
+   "C": "As incisões digitais precisam respeitar feixes neurovasculares e áreas de contato. Uma recomendação radial para todos os dedos longos não considera a face de pinça do indicador nem as diferenças entre dedos. A localização deve ser planejada para descomprimir com menor morbidade.",
+   "D": "Pressão de 10 mmHg, isoladamente, não define indicação de escarotomia. Além de não ser um limiar habitual de síndrome compartimental, confunde a restrição cutânea com pressão muscular. O diagnóstico combina perfusão, exame e, quando pertinente, pressão absoluta ou diferencial."
+  },
+  "referencias": [
+   "The Anatomy of Grayson's Ligament and Cleland's Ligament: The Basis of Digit Escharotomy for Circumferential Full Thickness Burns of the Fingers. https://pubmed.ncbi.nlm.nih.gov/40498969/"
+  ],
+  "geradoEm": "2026-10-10T19:31:27+00:00",
+  "conferido": false
+ },
+ "mao-1297": {
+  "conceito": "**Na mão reumatoide, a rotura extensora costuma ocorrer num tendão já doente.** Sinovite, atrito contra superfícies ósseas e alterações da articulação radioulnar distal favorecem ruptura progressiva, frequentemente começando pelo lado ulnar. É o padrão clássico de Vaughan–Jackson.\n\nO paciente perde extensão ativa, mas a possibilidade de extensão passiva precisa ser examinada. Tendões adicionais podem estar prestes a romper; tratar apenas a primeira falha, sem controlar sinovite e atrito, deixa a causa atuando sobre a reconstrução.\n\nUma sutura término-terminal simples costuma ser inviável porque os cotos são degenerados e retraídos. Transferências e solidarizações distribuem força de um motor íntegro. A escolha depende de quantos extensores restaram, excursão, qualidade dos receptores e equilíbrio do conjunto.\n\nQuando todos os extensores do indicador ao mínimo estão comprometidos, podem ser usados flexores superficiais do médio e anelar como motores de transferência. Quando a ruptura é mais limitada, outras combinações são possíveis, mas não se deve sobrecarregar indiscriminadamente um único extensor vizinho.\n\nA cirurgia reconstrutiva deve ser acompanhada do tratamento da articulação e da sinovite responsáveis pelo desgaste. Recuperar movimento sem remover a fonte de atrito facilita uma nova falha.",
+  "correta": "Na rotura extensa, flexores superficiais do médio e anelar podem fornecer motores para restaurar extensão dos dedos. A transferência precisa de trajeto e tensão apropriados e de controle da causa de desgaste. Não é simples sutura de tecido degenerado, mas substituição funcional do motor perdido.",
+  "incorretas": {
+   "A": "Solidarização é possível em rupturas selecionadas, mas colocar anelar e mínimo no extensor do médio como solução automática pode sobrecarregar um motor e não considerar doença dos tendões restantes. A estratégia exige avaliar extensores próprios, qualidade e distribuição das forças.",
+   "C": "O início clássico é ulnar, associado ao atrito próximo à radioulnar distal, e a ruptura pode progredir radialmente. Frequência de uso na pinça não explica a distribuição típica de Vaughan–Jackson. Esse padrão deve motivar avaliação dos demais tendões.",
+   "D": "Tenorrafia primária raramente é a primeira escolha numa ruptura espontânea sobre tendão reumatoide degenerado. A sutura em tecido sem resistência pode falhar. Reconstrução por transferência ou enxerto selecionado e tratamento do leito são mais coerentes com o mecanismo."
+  },
+  "referencias": [
+   "Treatment of Distal Radioulnar Joint in Rheumatoid Arthritis. https://pubmed.ncbi.nlm.nih.gov/39521592/"
+  ],
+  "geradoEm": "2026-10-10T19:31:27+00:00",
+  "conferido": false
+ },
+ "mao-1298": {
+  "conceito": "**As radiografias mostram uma luxação dorsal metacarpofalângica complexa.** A falange está deslocada em relação à cabeça metacarpal; estruturas interpostas, sobretudo a placa volar, podem impedir redução fechada. Tração insistente não corrige uma barreira mecânica e pode piorar a interposição.\n\nA anatomia da luxação complexa inclui a cabeça metacarpal aprisionada entre estruturas de partes moles. A placa volar pode ficar interposta no espaço articular; os tendões e músculos vizinhos contribuem para o encarceramento. Não se deve atribuir o bloqueio de rotina ao ligamento colateral radial.\n\nA redução aberta pode ser realizada por acesso dorsal, volar ou combinação. O dorsal facilita visualizar a placa interposta e tende a evitar a exposição direta dos feixes deslocados. O volar permite abordar os tecidos da face palmar, mas exige atenção aos nervos digitais, cuja posição está alterada.\n\nUma luxação deve ser distinguida de lesão fisária ou fratura associada antes da manobra. Após redução, verificar estabilidade, congruência e função dos tendões. O objetivo é remover a interposição com o menor dano adicional, não obter alinhamento à custa de cortes sem relação com o bloqueio.",
+  "correta": "As três possibilidades de acesso existem. A escolha depende da lesão, de estruturas interpostas e da necessidade de tratar componentes associados. Não há um único acesso obrigatório para toda luxação complexa; a anatomia e os riscos dos feixes precisam orientar a decisão.",
+  "incorretas": {
+   "B": "A placa volar interposta é o bloqueio clássico da luxação dorsal complexa. Afirmar que o colateral radial inviabiliza de rotina a redução troca a estrutura determinante. Lesões colaterais podem coexistir, mas não são a explicação típica do encarceramento.",
+   "C": "A polia A2 situa-se sobre a falange proximal e não é a liberação clássica que resolve a interposição metacarpofalângica. Em acesso volar pode ser necessário abordar a região de A1 conforme a técnica, mas cortar A2 sem indicação cria risco de arco de corda.",
+   "D": "O feixe radial do indicador merece particular cuidado na luxação dorsal complexa porque pode ficar superficial e deslocado. A alternativa troca esse detalhe por uma regra sobre o feixe ulnar. Ambos devem ser protegidos, mas a relação clássica cobrada não é essa."
+  },
+  "referencias": [
+   "Complex dorsal metacarpophalangeal joint dislocation associated with proximal metacarpal fracture: case report and review of the literature. https://pubmed.ncbi.nlm.nih.gov/38581936/"
+  ],
+  "geradoEm": "2026-10-10T19:31:27+00:00",
+  "conferido": false
+ },
+ "mao-1299": {
+  "conceito": "**A anastomose microvascular depende de preservar um endotélio pouco traumatizado.** Um clampe interrompe temporariamente o fluxo e permite sutura em campo controlado, mas a compressão do vaso pode produzir lesão íntima. Superfície endotelial danificada, estase e condições locais inadequadas favorecem trombose.\n\nO instrumento deve ser apropriado ao calibre e aplicado com a menor força que impeça o fluxo. Tempo de oclusão, manipulação, ressecamento e contato com estruturas internas também importam. Um clampe pequeno não é automaticamente atraumático, e apertar mais não é uma forma segura de garantir o resultado.\n\nÉ necessário separar a função do clampe da resistência da sutura. O clampe controla o vaso temporariamente; a anastomose precisa ficar patente, sem vazamento relevante, torção ou tensão após sua retirada. A escolha do dispositivo não corrige uma discrepância mal tratada ou uma íntima lesada.\n\nA desvantagem perguntada é o risco trombótico relacionado à agressão vascular. Isso não torna o clampe proibido: explica o cuidado com força, posicionamento e duração da aplicação.",
+  "correta": "Compressão e manipulação podem lesar a íntima e favorecer trombose. A prevenção envolve instrumento adequado, mínima força eficaz, tempo controlado e preservação do vaso. O benefício de controlar o fluxo precisa ser obtido com o menor trauma possível.",
+  "incorretas": {
+   "A": "Resistência final à tração depende da construção da anastomose e das condições do vaso. O clampe é temporário e não fica sustentando a união. Portanto, menor resistência não é a principal desvantagem característica de seu uso durante a sutura.",
+   "C": "Clampes ajudam a controlar os cotos e o campo, podendo facilitar a técnica. Sua colocação exige habilidade, mas maior dificuldade não é a desvantagem biológica central. A alternativa confunde execução do gesto com risco de lesão endotelial.",
+   "D": "Custo varia com o dispositivo e não constitui a principal desvantagem clínica cobrada. Um instrumento barato que traumatiza a íntima pode comprometer toda a reconstrução; preservar patência importa mais que uma comparação isolada de preços."
+  },
+  "referencias": [],
+  "geradoEm": "2026-10-10T19:31:27+00:00",
+  "conferido": false
+ },
+ "mao-1300": {
+  "conceito": "**Tecido mole interposto transforma uma fratura potencialmente redutível numa lesão com bloqueio mecânico.** No descolamento epifisário, a separação ocorre na região da fise. Tendão, periósteo ou outro tecido pode ocupar o espaço e impedir que os fragmentos voltem à posição.\n\nA presença de interposição já foi dada no enunciado. Portanto, a dúvida não é apenas quanto tempo imobilizar: é como remover a barreira à redução. A abordagem aberta permite identificar e liberar o tecido preso, obter alinhamento e avaliar estabilidade. Fixação adicional depende do padrão e da estabilidade obtida.\n\nA manipulação deve preservar a fise e sua irrigação. Manobras repetidas ou força excessiva podem aumentar lesão dos tecidos sem vencer o bloqueio. Após a redução, é necessário acompanhamento de consolidação, alinhamento e crescimento, porque uma fise traumatizada pode desenvolver alteração tardia.\n\nRedução fechada é apropriada em muitas fraturas pediátricas, mas sua preferência habitual não se sobrepõe a uma interposição demonstrada. O princípio é conseguir redução segura, e não insistir numa técnica menos invasiva que já não consegue resolver a causa.",
+  "correta": "A redução aberta remove o tecido interposto e permite reposicionar a epífise. É a conduta coerente com o bloqueio descrito. Deve-se proteger a fise, verificar estabilidade e acompanhar crescimento; abrir a lesão não elimina automaticamente o risco de sequelas do trauma inicial.",
+  "incorretas": {
+   "B": "Redução fechada e imobilização podem tratar lesões sem bloqueio, mas não removem um tecido interposto já reconhecido. Se a posição continuar inadequada, imobilizar apenas conserva a deformidade. Insistência em manipulações pode agravar a lesão fisária.",
+   "C": "Tração gradual não resolve de forma confiável a presença de tecido no foco fisário e prolonga uma situação que necessita redução anatômica. A interposição deve ser abordada diretamente, em vez de aumentar progressivamente a força sobre uma barreira mecânica.",
+   "D": "Observar sem reduzir uma lesão bloqueada deixa a fise e o alinhamento em situação inadequada. A capacidade de remodelação infantil não justifica aceitar qualquer desvio, especialmente com interposição. O acompanhamento é necessário depois do tratamento, não em substituição a ele."
+  },
+  "referencias": [],
+  "geradoEm": "2026-10-10T19:31:27+00:00",
+  "conferido": false
+ },
+ "mao-1301": {
+  "conceito": "**Uma ferida crônica pode ficar presa numa fase inflamatória e não avançar para fechamento.** Perfusão deficiente, pressão, edema, infecção, biofilme e doenças sistêmicas precisam ser corrigidos. Escolher uma cobertura sem tratar esses fatores limita o resultado.\n\nA terapia de pressão negativa remove exsudato e produz deformação do leito. A macrodeformação aproxima bordas; a microdeformação transmite estímulos mecânicos às células e pode favorecer granulação e vias associadas à angiogênese, incluindo VEGF. Isso não significa que o aparelho esterilize uma ferida ou substitua desbridamento e controle da causa.\n\n| Recurso | Aplicação e limite |\n| :--- | :--- |\n| Alginato e hidrofibra | Absorção de exsudato; escolha depende da umidade do leito |\n| Prata | Ação antimicrobiana em situações selecionadas; uso deve ser reavaliado |\n| Pressão negativa | Manejo do exsudato e preparo do leito, com indicação e proteção adequadas |\n\nEm feridas crônicas, bactérias podem se organizar em biofilme, uma comunidade protegida por matriz, além da forma livre. Essa organização ajuda a explicar persistência e necessidade de manejo repetido do leito. “Mais antimicrobiano” não é sempre melhor: toxicidade para células reparadoras e uso sem indicação também prejudicam a cicatrização.",
+  "correta": "A microdeformação é um dos mecanismos da pressão negativa e pode estimular vias de granulação e angiogênese, incluindo VEGF. A associação explica um benefício biológico sem prometer cura independente de perfusão, desbridamento e controle de fatores sistêmicos.",
+  "incorretas": {
+   "B": "Bactérias também podem formar biofilmes em feridas crônicas. Descrevê-las apenas como organismos livres ignora uma forma de organização que dificulta erradicação e contribui para persistência. A colonização deve ser diferenciada de infecção clínica.",
+   "C": "Alginatos e hidrofibras são justamente opções de boa absorção para feridas exsudativas. Em leito seco podem ser inadequados; essa limitação não significa incapacidade de absorver. O curativo deve equilibrar umidade e proteção, evitando maceração ou ressecamento.",
+   "D": "Prata pode exercer citotoxicidade e não deve ser empregada indefinidamente ou como prevenção automática. Seu benefício depende da indicação e da reavaliação. Reduzir carga microbiana não justifica lesar células responsáveis por reparar uma ferida sem infecção."
+  },
+  "referencias": [
+   "Revisiting negative pressure wound therapy from a mechanobiological perspective supported by clinical and pathological data. https://pubmed.ncbi.nlm.nih.gov/39694469/"
+  ],
+  "geradoEm": "2026-10-10T19:31:27+00:00",
+  "conferido": false
+ },
+ "mao-1302": {
+  "conceito": "**Kienböck é osteonecrose do semilunar; Lichtman descreve sua evolução estrutural por imagem.** O estágio II é marcado por esclerose radiográfica, com a forma do semilunar ainda preservada. É preciso separar mudança de densidade de perda de altura ou colapso.\n\n| Estágio | Achado central |\n| :--- | :--- |\n| I | Radiografia pode ser normal; ressonância demonstra alteração do semilunar |\n| II | Esclerose, sem colapso estrutural |\n| IIIA | Colapso do semilunar sem alteração fixa importante do alinhamento do carpo |\n| IIIB | Colapso com alteração do alinhamento, incluindo flexão fixa do escafoide |\n| IV | Artrose associada |\n\nModificações incluem IIIC para fratura coronal do semilunar. A classificação descreve um eixo do problema, mas o planejamento também considera cartilagem, sintomas, variância ulnar, perfusão e condições articulares. Não se escolhe um procedimento apenas pela palavra “esclerose”.\n\nNa prova, a pergunta é restrita ao critério radiográfico do estágio II. Fragmentação e colapso representam dano estrutural mais avançado; cisto subcondral isolado não define este estágio e pode aparecer em outros processos.",
+  "correta": "Esclerose é o achado clássico do estágio II, sem colapso do semilunar. A radiografia já está alterada, diferentemente do estágio I, mas a perda estrutural que define estágios mais avançados ainda não está presente.",
+  "incorretas": {
+   "B": "Fragmentação indica comprometimento estrutural e não é o critério que caracteriza o estágio II. É necessário avaliar fratura, colapso e alinhamento para enquadrar a doença avançada, em vez de usar qualquer aumento de densidade como equivalente a fragmentação.",
+   "C": "Colapso passa a situar a doença no estágio III, com subdivisão conforme alinhamento e outros achados. A distinção é útil porque um semilunar esclerótico ainda pode conservar forma; perder altura modifica a mecânica e as possibilidades de reconstrução.",
+   "D": "Cisto subcondral não é o marco do estágio II. Pode integrar processos degenerativos ou outros diagnósticos. O dado específico de Lichtman neste estágio é a esclerose com arquitetura preservada, e não uma cavidade isolada."
+  },
+  "referencias": [
+   "Classification and Radiographic Characterization of Kienböck Disease. https://pubmed.ncbi.nlm.nih.gov/36244708/"
+  ],
+  "geradoEm": "2026-10-10T19:31:27+00:00",
+  "conferido": false
+ },
+ "mao-1303": {
+  "conceito": "**Osteotomia corretiva trata uma deformidade consolidada que provoca um problema funcional.** Inclinação, comprimento e alinhamento do rádio influenciam a distribuição de carga no punho e a congruência da radioulnar distal. O grau radiográfico isolado não determina indicação.\n\nDor, limitação de rotação, perda de força, instabilidade e impacto nas atividades devem ser relacionados à deformidade. É necessário distinguir sintomas decorrentes do osso de uma lesão isolada do complexo da fibrocartilagem triangular (TFCC), de artrose avançada ou de outro problema que uma osteotomia não corrigirá.\n\nB associa consolidação viciosa a instabilidade, oferecendo um motivo funcional para reconstruir a anatomia. O tratamento pode exigir correção óssea e avaliação dos estabilizadores da radioulnar distal; não basta reparar o TFCC se a geometria continua alterada.\n\nCartilagem preservada favorece uma reconstrução anatômica. Em artrose estabelecida, procedimentos de salvamento podem ser mais apropriados. O padrão dorsal ou volar, por si só, não torna uma osteotomia indicada ou contraindicada. A deformidade em dorso de garfo também pode justificar correção se for sintomática; a pergunta não fornece todos os dados para uma decisão clínica completa.",
+  "correta": "Instabilidade associada à consolidação viciosa sugere alteração funcional que pode beneficiar-se de correção óssea. Deve-se confirmar o mecanismo e a relação com a radioulnar distal e o TFCC. A alternativa é a escolhida pela banca, mas não define uma indicação automática em todo desvio volar.",
+  "incorretas": {
+   "A": "Desvio leve com pouco impacto funcional pode ser acompanhado, pois o risco da cirurgia precisa ser comparado ao benefício esperado. A imagem não é tratada isoladamente. Se houver sintomas relevantes não descritos, a avaliação pode mudar.",
+   "C": "A presença de artrose exige avaliar se ainda há superfície articular que se beneficiará de correção anatômica. Artrose inicial não é proibição absoluta, porém a alternativa não caracteriza sintomas, congruência e extensão da degeneração, elementos necessários para indicar osteotomia.",
+   "D": "Dorso de garfo é uma deformidade classicamente associada ao desvio dorsal do rádio distal. A descrição mistura “desvio ulnar” com esse aspecto e não informa repercussão funcional. Uma consolidação dorsal sintomática pode, sim, ser indicação de osteotomia; não se deve excluí-la apenas pela letra do gabarito."
+  },
+  "referencias": [
+   "Validation of the Lift-Off Screw Technique in Patients Undergoing Corrective Osteotomy for Malunited Distal Radius Fractures. https://pubmed.ncbi.nlm.nih.gov/39340526/"
+  ],
+  "geradoEm": "2026-10-10T19:31:27+00:00",
+  "conferido": false,
+  "alerta": "Gabarito oficial B. A indicação de osteotomia depende de sintomas, deformidade, congruência e cartilagem. O enunciado não permite concluir que outros padrões de consolidação viciosa sejam contraindicações."
+ },
+ "mao-1304": {
+  "conceito": "**Os três números identificam extensor radial longo do carpo, abdutor longo do polegar e extensor do indicador.** O reconhecimento depende do plano e do trajeto: um músculo que termina na base de metacarpo não deve ser confundido com outro que acompanha um dedo até sua expansão extensora.\n\n| Estrutura | Inserção e função principal |\n| :--- | :--- |\n| Extensor radial longo do carpo | Base do segundo metacarpo; extensão e desvio radial do punho |\n| Abdutor longo do polegar | Base do primeiro metacarpo; abdução na articulação trapézio-metacarpal |\n| Extensor do indicador | Expansão extensora do indicador; extensão independente |\n\nO radial curto termina na base do terceiro metacarpo. Abdutor longo e extensor curto do polegar passam pelo primeiro compartimento dorsal; o extensor longo ocupa o terceiro e muda de direção junto ao tubérculo de Lister. O extensor do indicador acompanha o extensor comum no quarto compartimento.\n\nEssas relações tornam a identificação útil além da imagem: distinguem motores de punho dos de polegar e indicador, orientam localização de lesões e ajudam a compreender transferências. O nome “longo” não indica necessariamente um trajeto mais superficial em qualquer corte; o tendão e sua inserção precisam ser seguidos.",
+  "correta": "A sequência corresponde ao desenho. O primeiro estende o punho, o segundo movimenta o primeiro metacarpo e o terceiro oferece extensão independente do indicador. Relacionar localização, inserção e função evita memorizar apenas três nomes numa ordem.",
+  "incorretas": {
+   "A": "O número 1 está correto, mas 2 e 3 foram trocados. Abdutor longo chega ao primeiro metacarpo, enquanto extensor curto alcança a base da falange proximal do polegar. O extensor do indicador não deve ser confundido com o extensor longo do polegar, cujo trajeto passa pelo terceiro compartimento.",
+   "B": "Os números 2 e 3 correspondem às estruturas indicadas, mas 1 é o radial longo, que se insere no segundo metacarpo. O radial curto termina no terceiro. A comparação das inserções é mais segura que diferenciar apenas pelo tamanho aparente do ventre muscular.",
+   "D": "Todos os nomes foram substituídos por vizinhos anatômicos. Radial curto, extensor curto e extensor longo do polegar têm trajetos e inserções distintos dos indicados. Os compartimentos dorsais ajudam a recuperar essas relações quando a figura muda."
+  },
+  "referencias": [
+   "Netter, Atlas de Anatomia Ortopédica, 2ª edição, capítulo Mão: Músculos e Tendões."
+  ],
+  "geradoEm": "2026-10-10T19:31:27+00:00",
+  "conferido": false
+ },
+ "mao-1305": {
+  "conceito": "**Os ligamentos dorsais participam da estabilidade do carpo, e não apenas da proteção dos tendões.** O radiocarpal dorsal liga rádio a ossos do carpo; o intercarpal dorsal percorre a fileira carpal e conecta estruturas que precisam manter relações durante movimento e carga.\n\nA estabilidade resulta de um sistema. Ligamentos intrínsecos, como escafolunar e lunopiramidal, mantêm relações entre ossos; ligamentos extrínsecos conectam carpo ao antebraço. Lesões combinadas podem permitir instabilidade que uma estrutura isolada inicialmente compensaria.\n\nÉ útil distinguir esses ligamentos do retináculo dos extensores. O retináculo mantém tendões próximos ao dorso e organiza compartimentos; os ligamentos citados controlam relações articulares. Ambos ficam dorsalmente, mas não exercem a mesma função.\n\nAlgumas fibras podem tensionar em posições específicas e limitar movimentos extremos. A pergunta solicita a função central do conjunto: **estabilizar as articulações e coordenar a mecânica carpal**. Essa função é mais abrangente que uma única direção de movimento.",
+  "correta": "A estabilização das relações radiocarpais e intercarpais é a função central. Ela complementa ligamentos intrínsecos e outros extrínsecos, limitando movimentos anormais sem eliminar a mobilidade fisiológica. A lesão de estabilizadores secundários pode agravar uma dissociação já existente.",
+  "incorretas": {
+   "A": "Os ligamentos podem limitar deslocamentos em determinadas posições, mas sua função não se resume a impedir flexão. Eles controlam relações entre ossos durante vários movimentos e cargas. A alternativa oferece um efeito parcial no lugar da função estabilizadora do conjunto.",
+   "B": "Proteção e contenção dos tendões dorsais se relacionam sobretudo ao retináculo e às bainhas. Os ligamentos radiocarpal e intercarpal dorsais pertencem ao sistema de estabilidade articular. Compartilhar a face dorsal do punho não torna suas funções iguais.",
+   "D": "Rádio e ulna são unidos por estruturas da radioulnar distal e pela membrana interóssea em outros níveis. Os ligamentos nomeados conectam rádio e/ou ossos do carpo, não constituem a ligação radioulnar descrita. O destino anatômico de suas fibras elimina essa opção."
+  },
+  "referencias": [
+   "Treatment of scapholunate ligament injury: Current concepts. https://pmc.ncbi.nlm.nih.gov/articles/PMC5644424/"
+  ],
+  "geradoEm": "2026-10-10T19:31:27+00:00",
+  "conferido": false
+ },
+ "mao-1306": {
+  "conceito": "**Reimplantar um polegar exige circulação de entrada e de saída, estabilidade e recuperação funcional.** A prioridade funcional do polegar favorece tentativa de reimplante quando o segmento e o paciente permitem. Idade de 64 anos, isoladamente, não é indicação para omitir reparação nervosa.\n\nA sequência clássica costuma começar por estabilização óssea, seguida de reparos tendinosos e microcirúrgicos conforme a exposição e a estratégia. Se a isquemia exigir reperfusão antecipada, uma anastomose arterial precoce ou shunt temporário pode ser planejado; isso é uma adaptação, não uma ordem universal “artéria primeiro”.\n\nA ausência de veias dorsais adequadas cria um problema de drenagem. Podem ser consideradas veias alternativas, enxertos e técnicas especiais para desviar o fluxo a uma via de saída. C descreve uma solução arteriovenosa com enxerto, cuja configuração deve ser compreendida como recurso para viabilizar drenagem, não como simples aumento do aporte arterial.\n\nUm segmento rosado pode permanecer ameaçado se não drena. Depois das anastomoses, a vigilância busca distinguir insuficiência arterial de congestão venosa. Nervos reparados e alinhamento estável têm importância para que um polegar vivo também seja sensível e funcional.",
+  "correta": "Um enxerto e uma configuração arteriovenosa apropriada podem oferecer uma alternativa quando não se encontram veias dorsais utilizáveis. É uma estratégia especializada para resolver o problema de drenagem. A anatomia disponível e a vigilância pós-operatória continuam decisivas.",
+  "incorretas": {
+   "A": "A reperfusão pode ser antecipada quando necessário, mas 12 horas não impõem sempre artéria como primeira estrutura. Segmentos digitais toleram isquemia de forma diferente de segmentos musculares, e tipo de conservação importa. Estabilização e estratégia precisam permitir uma anastomose protegida.",
+   "B": "Idade não elimina a necessidade de sensibilidade no polegar. Reparação nervosa contribui para pinça útil e proteção contra trauma. Encurtar a cirurgia pode ser necessário por condição sistêmica, mas omitir nervos de rotina em todo paciente considerado idoso não é uma regra adequada.",
+   "D": "Estabilizar o osso após suturar ambos os tendões pode dificultar exposição e submeter os reparos a manipulação adicional. A sequência deve proteger as estruturas e pode variar, mas a ordem apresentada não corresponde à sequência clássica usada como referência."
+  },
+  "referencias": [
+   "Upper extremity and digital replantation. https://pmc.ncbi.nlm.nih.gov/articles/PMC3213257/"
+  ],
+  "geradoEm": "2026-10-10T19:31:27+00:00",
+  "conferido": false
+ },
+ "mao-1307": {
+  "conceito": "**O pé diabético combina neuropatia, alterações de perfusão e risco de infecção.** Perda de sensibilidade permite pressão e lesões repetidas; isquemia limita cicatrização; infecção pode aprofundar destruição. A reconstrução precisa tratar essas causas, e não apenas fechar a pele.\n\nApós amputação de membro inferior, a mortalidade em cinco anos pode ser muito elevada. A faixa ampla de 39–80% da alternativa resume séries heterogêneas e deve ser entendida como sinal de grave doença sistêmica, não como uma previsão individual. Doença cardiovascular, insuficiência renal, nível da amputação e estado funcional modificam o risco.\n\nO índice tornozelo-braço (ITB) inferior a 0,7 sugere doença arterial e não cicatrização normal. No diabetes, calcificação arterial também pode tornar o ITB falsamente alto, exigindo avaliação com pressão digital, formas de onda ou outros métodos conforme o caso.\n\nSe houver infecção, cultura de tecido adequadamente coletado após limpeza/desbridamento costuma ser mais informativa que swab superficial. Antibióticos tratam infecção clínica; não substituem desbridamento, perfusão e descarga de pressão. Retalhos livres podem ser indicados em pacientes selecionados, inclusive após planejamento vascular.",
+  "correta": "A mortalidade tardia elevada é o ponto aceito pela banca. A amplitude depende das populações estudadas; ela mostra que amputação é um marcador de grande vulnerabilidade sistêmica. O seguimento precisa incluir risco cardiovascular, renal, reabilitação e proteção do membro remanescente.",
+  "incorretas": {
+   "A": "Diabetes aumenta riscos e exige seleção cuidadosa, mas não contraindica automaticamente um retalho livre. Perfusão, controle da infecção, possibilidade de descarga e condição sistêmica são avaliados. A alternativa transforma uma comparação de risco em proibição universal.",
+   "C": "ITB baixo indica comprometimento arterial e pode reduzir a chance de cicatrizar. Além disso, vasos calcificados podem produzir medida falsamente tranquilizadora no diabético. Não se deve declarar cicatrização normal com base num índice patológico.",
+   "D": "Swab superficial pode colher colonizadores sem representar os agentes da infecção profunda. Quando indicado, tecido coletado de forma adequada oferece informação mais útil. A facilidade da coleta não a torna a melhor base para escolher antibiótico."
+  },
+  "referencias": [],
+  "geradoEm": "2026-10-10T19:31:27+00:00",
+  "conferido": false,
+  "alerta": "A faixa de mortalidade da alternativa B é a citada pela banca e varia entre séries e perfis de pacientes; não representa estimativa individual nem valor universal."
+ },
+ "mao-1308": {
+  "conceito": "**A toxina botulínica reduz a liberação presináptica de acetilcolina.** A toxina tipo A cliva proteínas do complexo SNARE, como SNAP-25, necessárias à fusão das vesículas. O efeito não decorre de impedir captação de acetilcolina nem de bloquear diretamente o receptor muscular.\n\nA consequência é desnervação química temporária. A aplicação pode reduzir atividade muscular ou secretória conforme o alvo, com usos em espasticidade, distonias, hiperidrose e outras condições. O efeito clínico depende de produto, dose, músculo e paciente; costuma durar meses, não obrigatoriamente um ano.\n\nÉ uma substância de enorme potência biológica. C expressa essa toxicidade numa ordem de grandeza histórica, mas não é um cálculo de dose clínica: via de exposição, preparação e estimativa de dose letal mudam o número. Unidades dos diferentes produtos também não devem ser convertidas como se fossem uma medida universal de massa.\n\nDoenças da junção neuromuscular, como miastenia gravis, aumentam preocupação com fraqueza e efeitos sistêmicos. Na prática, o uso exige avaliação especializada e atenção às contraindicações e precauções do produto, sem assumir segurança por ser aplicação local.",
+  "correta": "A alternativa comunica a extraordinária potência da toxina e foi aceita no gabarito. O número não deve ser usado como parâmetro de prescrição ou exposição: é uma estimativa dependente de condições experimentais, sem equivalência direta às unidades dos medicamentos.",
+  "incorretas": {
+   "A": "A toxina atua na liberação, antes da chegada da acetilcolina à fenda. “Captação” descreve outro processo. Identificar o passo presináptico explica por que o músculo enfraquece apesar de seu receptor não ser o alvo primário da toxina.",
+   "B": "O efeito habitualmente dura alguns meses e varia conforme indicação e preparação. Um ano não é a duração geral esperada. Planejamento de reaplicação depende da evolução e da dose, evitando presumir o mesmo intervalo em todas as condições.",
+   "D": "Miastenia compromete a transmissão neuromuscular; reduzir ainda mais a liberação de acetilcolina pode agravar fraqueza. Não é uma situação para afirmar uso indiferenciado seguro. Se houver indicação excepcional, ela exige avaliação especializada e precauções rigorosas."
+  },
+  "referencias": [],
+  "geradoEm": "2026-10-10T19:31:27+00:00",
+  "conferido": false,
+  "alerta": "Gabarito oficial C. A estimativa expressa a potência tóxica e depende de via, preparação e dose letal considerada; não é dado utilizável para calcular doses médicas."
+ },
+ "mao-1309": {
+  "conceito": "**Uma lesão pigmentada suspeita deve ser biopsiada de modo a permitir diagnóstico e medida adequada de profundidade.** A biópsia excisional de espessura completa com pequena margem é geralmente preferida quando viável. Em lesões grandes ou locais especiais, uma biópsia incisional bem planejada pode ser necessária.\n\nO principal risco da amostragem parcial é não colher a área mais representativa ou profunda, e não uma proibição universal de biópsia incisional. A escolha deve considerar o padrão clínico e dermatoscópico, o local e a pergunta histológica. Cortes superficiais inadequados podem prejudicar avaliação de Breslow, relevante para estadiamento e conduta.\n\nNa unha, o sinal de Hutchinson é pigmentação periungueal associada à lesão melanocítica. É um sinal de alerta, porém não patognomônico: pode haver apresentações benignas e pseudo-Hutchinson, quando o pigmento é visto através de tecidos translúcidos. Crianças exigem interpretação particular, pois achados alarmantes em adultos podem ter comportamento diferente.\n\nDermatoscopia complementa exame e seleção da área de biópsia, mas sua sensibilidade não é um percentual fixo independente do examinador e do estudo. A decisão final deve integrar clínica e anatomopatologia; um número isolado não afasta uma lesão suspeita.",
+  "correta": "Biópsia incisional é uma opção em lesões extensas ou locais em que excisão inicial completa não é adequada. A amostra precisa ser representativa e de espessura suficiente. “Baixo risco” não dispensa planejamento nem torna aceitável colher uma área incapaz de esclarecer a lesão.",
+  "incorretas": {
+   "A": "Congelação não é o método de rotina preferido para classificar uma lesão pigmentada suspeita e medir adequadamente sua profundidade. O diagnóstico requer processamento histológico apropriado e, quando necessário, métodos complementares. A pressa intraoperatória não deve comprometer estadiamento.",
+   "C": "Sensibilidade da dermatoscopia depende do cenário, experiência e critérios usados. Não é uma constante de 70%. Mesmo um exame aparentemente benigno não encerra investigação quando há mudança, características preocupantes ou discordância clínica.",
+   "D": "Hutchinson é um alerta, mas não prova melanoma sozinho. Pigmentação periungueal ou sua aparência pode ocorrer em condições benignas, sobretudo na população pediátrica. Histologia e contexto são necessários para evitar tanto falsa tranquilidade quanto diagnóstico excessivo."
+  },
+  "referencias": [
+   "Melanoma-like features in pediatric longitudinal melanonychia: A systematic review and meta-analysis. https://pubmed.ncbi.nlm.nih.gov/38500311/"
+  ],
+  "geradoEm": "2026-10-10T19:31:27+00:00",
+  "conferido": false
+ },
+ "mao-1310": {
+  "conceito": "**Cicatriz hipertrófica e queloide compartilham excesso de tecido cicatricial, mas têm evolução diferente.** A hipertrófica permanece nos limites da lesão original e pode regredir; o queloide ultrapassa esses limites, pode continuar crescendo e tem maior tendência a recidiva.\n\nTratamento é escolhido por sintomas, volume, localização, tensão e histórico. Silicone pode ser utilizado na prevenção e no tratamento de cicatrizes elevadas. Compressão é empregada em contextos selecionados, especialmente em sequelas de queimadura, mas adesão é difícil: desconforto, calor, tempo de uso e ajustes interferem no resultado.\n\nQueloides frequentemente exigem combinação de medidas, como infiltrações, tratamento de sintomas, laser selecionado e, quando indicada, excisão com adjuvância. Excisão isolada pode apresentar recidiva importante. Radioterapia tem indicação individualizada, não é automaticamente aplicada a toda lesão.\n\nD transmite o valor da abordagem combinada, mas “sempre” é excessivo: uma lesão pequena pode responder a modalidade não cirúrgica única. O aprendizado prático é evitar a ideia de que retirar o queloide encerra seu tratamento e planejar controle da atividade e prevenção de recorrência.",
+  "correta": "A banca valoriza tratamento multimodal, sobretudo para queloide recidivante ou quando há excisão. A combinação reduz a dependência de uma medida isolada. Contudo, “sempre” não é uma regra clínica absoluta: casos selecionados podem ser tratados com uma única modalidade não cirúrgica.",
+  "incorretas": {
+   "A": "Silicone é uma das medidas utilizadas para prevenir cicatriz hipertrófica em situações apropriadas. Seu benefício não significa garantia de prevenção, e o uso depende de ferida já adequadamente fechada e tolerância. Negar toda ação preventiva torna a alternativa incorreta.",
+   "B": "Silicone também pode ser empregado em cicatriz hipertrófica estabelecida para melhorar características e sintomas. A resposta varia com maturidade e gravidade; não é justificável afirmar ausência geral de efeito. Pode integrar um plano com outras medidas.",
+   "C": "Malhas compressivas exigem uso prolongado e podem ser desconfortáveis, difíceis de vestir e inadequadas sem ajuste. Adesão precisa ser trabalhada e acompanhada. Sua possibilidade de benefício não torna o uso universalmente fácil."
+  },
+  "referencias": [
+   "Are there any good treatments for keloid scarring after sternotomy? https://pubmed.ncbi.nlm.nih.gov/21737540/"
+  ],
+  "geradoEm": "2026-10-10T19:31:27+00:00",
+  "conferido": false,
+  "alerta": "Gabarito oficial D. A abordagem combinada é especialmente importante em queloides complexos ou após excisão; o termo “sempre” não exclui tratamento único em casos selecionados."
+ },
+ "mao-1311": {
+  "conceito": "**A figura expõe músculos profundos da região tenar e hipotenar.** Os números correspondem ao oponente do polegar, flexor curto do polegar e oponente do dedo mínimo. O plano importa: uma estrutura profunda ao abdutor curto não pode ser identificada apenas pela localização geral na eminência tenar.\n\n| Músculo | Inserção e ação |\n| :--- | :--- |\n| Oponente do polegar | Face lateral do primeiro metacarpo; posiciona o metacarpo para oposição |\n| Flexor curto do polegar | Base da falange proximal, associado ao sesamoide radial; flexiona a metacarpofalângica |\n| Oponente do mínimo | Quinto metacarpo; move esse metacarpo e ajuda a aprofundar a concavidade palmar |\n\nO abdutor curto do polegar é mais superficial e realiza abdução palmar. O flexor curto do mínimo termina na base da falange proximal, enquanto o oponente se relaciona ao metacarpo. Essa distinção da inserção permite reconhecer as duas opções hipotenárias mesmo quando a dissecação muda.\n\nO ramo recorrente do mediano inerva o oponente do polegar; o ramo profundo do ulnar inerva o oponente do mínimo. O flexor curto do polegar pode ter inervação dupla de suas cabeças. Assim, reconhecer o ventre também permite recuperar função e nervo, em vez de guardar apenas a sequência D.",
+  "correta": "A sequência é compatível com o plano exposto. Os dois oponentes atuam sobre metacarpos; o flexor curto do polegar atua na metacarpofalângica. Essa diferença explica tanto a identificação quanto o efeito motor de cada estrutura.",
+  "incorretas": {
+   "A": "Abdutor curto foi colocado no lugar do oponente. O primeiro é superficial e chega à falange proximal; o oponente acompanha o primeiro metacarpo num plano mais profundo. O número 2 também não é oponente: corresponde ao flexor curto que atua na metacarpofalângica.",
+   "B": "Os números 1 e 2 estão de acordo com a figura, mas 3 acompanha o quinto metacarpo e corresponde ao oponente do mínimo. O flexor curto do mínimo se dirige à falange proximal. A inserção distingue músculos hipotenários próximos.",
+   "C": "A alternativa troca o oponente por abdutor curto em 1 e atribui a 2 um músculo mais profundo de outra inserção. Além disso, 3 é oponente do mínimo. Comparar plano, destino do tendão e osso de inserção esclarece os três erros."
+  },
+  "referencias": [
+   "Netter, Atlas de Anatomia Ortopédica, 2ª edição, capítulo Mão: Músculos e Tendões."
+  ],
+  "geradoEm": "2026-10-10T19:31:27+00:00",
+  "conferido": false
+ },
+ "mao-1312": {
+  "conceito": "**A fratura do colo do quinto metacarpo deve ser julgada pela função, sobretudo rotação e equilíbrio extensor.** Angulação pode ser tolerada em graus maiores nesse raio que nos raios centrais, mas limites variam com método de medida, sintomas e exigência funcional. Um corte de 45° não decide todos os casos.\n\nA pseudogarra associa hiperextensão metacarpofalângica a dificuldade de extensão interfalângica pelo desequilíbrio produzido pela deformidade. Ao flexionar a metacarpofalângica, a extensão interfalângica pode melhorar. Esse achado mostra repercussão funcional da fratura e favorece correção.\n\nRotação é especialmente mal tolerada: o dedo pode cruzar os demais na flexão mesmo com radiografia aparentemente aceitável. O exame deve comparar cascata digital, alinhamento das unhas e movimento ativo, além de avaliar lesões abertas e instabilidade.\n\nA manobra de Jahss auxilia redução, mas sua posição de execução não é automaticamente a posição ideal de imobilização prolongada. A fixação intramedular com parafuso também exige conhecer a via e o risco para a superfície articular; não existe regra de que só a introdução anterógrada seja usada.",
+  "correta": "A pseudogarra revela comprometimento do equilíbrio extensor e fortalece a indicação de correção. O achado funcional é mais relevante que um ângulo isolado. Deve ser integrado a rotação, estabilidade e demandas do paciente para escolher tratamento.",
+  "incorretas": {
+   "A": "45° não é um limite cirúrgico universal para o quinto metacarpo. Medida, rotação, pseudogarra, encurtamento, estabilidade e demanda funcional precisam ser considerados. Operar apenas pelo ângulo ignora tanto casos toleráveis quanto deformidades pequenas mas rotacionais.",
+   "B": "A fixação intramedular com parafuso pode ser realizada por via retrógrada, que tem implicações para a cartilagem da cabeça metacarpal. A alternativa transforma uma preocupação real com superfície articular numa exigência técnica exclusiva que não corresponde às opções utilizadas.",
+   "D": "Jahss é uma manobra de redução, não um comando para manter imobilização prolongada exatamente na mesma posição. Deve-se preservar alinhamento numa posição segura e acompanhar estabilidade. Flexão excessiva mantida pode produzir problemas adicionais."
+  },
+  "referencias": [],
+  "geradoEm": "2026-10-10T19:31:27+00:00",
+  "conferido": false
+ },
+ "mao-1313": {
+  "conceito": "**Fasciíte necrotizante é uma infecção rapidamente progressiva que exige tratamento urgente.** No início, a pele pode parecer apenas inflamada, semelhante à celulite. Dor intensa ou desproporcional, progressão rápida, toxicidade sistêmica e alterações de perfusão devem aumentar a suspeita; bolhas, necrose e crepitação podem ser tardias.\n\nA disseminação pelos planos profundos causa trombose de pequenos vasos e perda de viabilidade. A aparência superficial pode subestimar o comprometimento, mas a pele não é permanentemente poupada. Ausência de gás na imagem ou de crepitação não exclui o diagnóstico.\n\nA conduta envolve avaliação cirúrgica imediata, desbridamento de tecidos inviáveis, antibióticos de amplo espectro e suporte sistêmico. Reavaliações e novos desbridamentos podem ser necessários. Exames de imagem e escores laboratoriais não devem atrasar cirurgia quando a suspeita clínica é forte.\n\nReconhecer a fase semelhante à celulite importa justamente porque esperar a necrose evidente perde tempo. Tratamento precoce melhora a chance de controle, mas não transforma essa infecção numa doença de baixa morbidade.",
+  "correta": "O quadro inicial pode imitar celulite. A distinção depende da evolução, dor, sinais sistêmicos e avaliação dos planos profundos. Uma área de pele relativamente discreta não tranquiliza quando o paciente apresenta dor desproporcional ou deterioração rápida.",
+  "incorretas": {
+   "B": "A evolução pode ser rápida e extensa, seguindo planos fasciais. Descrever progressão lenta e bem localizada reduz indevidamente a urgência. A delimitação da vermelhidão não demonstra que a infecção profunda esteja contida.",
+   "C": "Fáscia e tecidos profundos podem estar gravemente comprometidos antes da pele, mas esta não é poupada como característica permanente. Isquemia e necrose cutânea podem surgir. A aparência inicial não deve ser confundida com ausência de envolvimento posterior.",
+   "D": "Mesmo com tratamento precoce, há risco importante de morte, perda de tecidos e necessidade de reconstrução. A oportunidade de melhorar o prognóstico não autoriza classificar a doença como de baixa morbidade ou mortalidade."
+  },
+  "referencias": [
+   "Necrotizing Fasciitis of the Upper Extremity - A Review. https://pubmed.ncbi.nlm.nih.gov/36034724/"
+  ],
+  "geradoEm": "2026-10-10T19:37:12+00:00",
+  "conferido": false
+ },
+ "mao-1314": {
+  "conceito": "**Na lesão de Monteggia, restaurar a ulna é essencial para reduzir e manter a cabeça do rádio.** A relação radiocapitelar e a radioulnar proximal dependem do comprimento e do alinhamento ulnar. Uma ulna aparentemente consolidada, mas angulada ou encurtada, pode manter a cabeça radial subluxada.\n\nApós redução ou fixação ulnar, deve-se confirmar a congruência em diferentes projeções e ao longo da rotação. A linha radiocapitelar auxilia a leitura, mas precisa de incidência adequada. Uma redução que parece boa numa imagem não garante estabilidade em todo o arco.\n\nPersistência de subluxação pede primeiro revisar a anatomia da ulna e a qualidade da redução. Interposição de ligamento anular ou outros tecidos é possível, sobretudo em situações específicas, mas não deve ser assumida antes de excluir um problema ósseo.\n\nEssex–Lopresti é outro padrão: envolve cabeça radial, membrana interóssea e radioulnar distal, com instabilidade longitudinal. Compartilhar o rádio como estrutura lesada não torna os dois diagnósticos equivalentes. O ponto da questão é compreender o osso que governa a redução na lesão de Monteggia.",
+  "correta": "Redução ulnar não anatômica altera a geometria que estabiliza a cabeça do rádio. Corrigir comprimento e alinhamento pode resolver a subluxação persistente. A avaliação deve incluir rotação e projeções adequadas, sem aceitar uma ulna mal reduzida apenas porque está fixada.",
+  "incorretas": {
+   "A": "Interposição do ligamento anular pode impedir redução em alguns casos, mas não é a causa principal a assumir de rotina. Antes de abrir a articulação, deve-se revisar comprimento, angulação e redução da ulna, pois a cabeça radial frequentemente acompanha sua correção.",
+   "C": "Essex–Lopresti descreve instabilidade longitudinal do antebraço, geralmente com fratura da cabeça radial e lesões da membrana interóssea e radioulnar distal. Não é a explicação principal da subluxação proximal residual numa Monteggia.",
+   "D": "Lesão ligamentar lateral pode gerar instabilidade do cotovelo, mas não substitui a necessidade de redução anatômica da ulna. O enunciado pede a causa principal do problema residual, e a relação óssea do antebraço é decisiva."
+  },
+  "referencias": [],
+  "geradoEm": "2026-10-10T19:37:12+00:00",
+  "conferido": false
+ },
+ "mao-1315": {
+  "conceito": "**A lesão flexora deve ser avaliada pelo exame de cada tendão e pela condição vascular do dedo.** Isolar flexor superficial e profundo ajuda a localizar a perda funcional; postura em repouso, efeito de tenodese e exploração da ferida complementam o exame. Ultrassom ou ressonância podem esclarecer dúvida, mas não são obrigatórios para confirmar todo corte evidente.\n\nUma lesão com isquemia digital exige prioridade diferente da lesão com perfusão preservada. Quando ambas as artérias não estão comprometidas e o dedo está viável, o reparo pode ser organizado precocemente por equipe adequada; o caderno adota até sete dias como referência para o reparo da zona II.\n\n| Avulsão do profundo: Leddy–Packer | Retração e vínculas |\n| :--- | :--- |\n| I | Retração à palma, perda das vínculas e maior urgência |\n| II | Retração até a região da interfalângica proximal, com vínculo longo preservado |\n| III | Fragmento ósseo limita retração mais distalmente |\n\nZona I envolve o profundo distal à inserção do superficial; zona II contém ambos dentro da bainha. Não se deve misturar uma zona anatômica com um tipo de avulsão nem atribuir melhor prognóstico ao tipo que perdeu irrigação e retraiu mais.",
+  "correta": "Com perfusão preservada, reparo precoce por equipe preparada é apropriado; o gabarito usa até sete dias. A condição vascular deve ser verificada, pois isquemia muda a urgência. Não se deve usar esse prazo para adiar desnecessariamente uma lesão pronta para tratamento.",
+  "incorretas": {
+   "A": "O exame pode estabelecer o diagnóstico de uma secção flexora. Imagem é um complemento em situações duvidosas, localização de retração ou lesões parciais, não uma exigência universal antes de tratar. Aguardar exame desnecessário pode atrasar o reparo.",
+   "B": "Leddy–Packer I retrai à palma e perde suporte vascular das vínculas, exigindo maior urgência. Não corresponde ao melhor prognóstico apenas por ser “tipo I”. A classificação descreve retração e condições do tendão, não uma ordem crescente simples de gravidade.",
+   "D": "No tipo II, o vínculo longo permanece e limita retração até a região da interfalângica proximal. A perda de todas as vínculas é o cenário clássico do tipo I. Essa diferença influencia viabilidade e urgência do reparo."
+  },
+  "referencias": [
+   "Netter, Atlas de Anatomia Ortopédica, 2ª edição, capítulo Mão."
+  ],
+  "geradoEm": "2026-10-10T19:37:12+00:00",
+  "conferido": false
+ },
+ "mao-1316": {
+  "conceito": "**Tenólise libera aderências que limitam o deslizamento de um tendão já cicatrizado.** O candidato típico tem amplitude passiva melhor que a ativa, tendão íntegro, tecidos adequados e platô apesar de reabilitação. Se a articulação também não move passivamente, apenas soltar o tendão não resolve toda a limitação.\n\nÉ preciso aguardar maturação suficiente do reparo e dos tecidos. O caderno adota não realizar antes de quatro meses; na prática, momento depende de cicatrização, evolução e capacidade de participar da terapia. Esperar indefinidamente também não é um objetivo: a indicação ocorre quando os pré-requisitos estão presentes e o ganho conservador estagnou.\n\nWALANT, anestesia local com paciente acordado, pode permitir verificar movimento ativo durante a liberação. Ajuda a observar se o tendão desliza e se persistem aderências, mas não elimina riscos de rotura ou formação de novas aderências.\n\nReabilitação planejada começa precocemente, respeitando a condição intraoperatória. Aguardar retirada dos pontos para iniciar todo movimento favorece nova aderência. O procedimento depende tanto da liberação segura quanto da manutenção do deslizamento conquistado.",
+  "correta": "A banca usa quatro meses como referência mínima. O princípio é evitar liberar um reparo ainda imaturo e operar antes de um platô conservador real. Tempo isolado não basta: integridade, amplitude passiva, leito e adesão à reabilitação precisam ser avaliados.",
+  "incorretas": {
+   "A": "WALANT pode ser uma opção útil porque permite movimento ativo durante a cirurgia. Sua indicação depende do paciente e do procedimento, mas não há a proibição geral descrita. O ganho é avaliar deslizamento funcional, e não apenas movimentar passivamente o dedo.",
+   "C": "Mais de um ano não garante resultado superior. Espera excessiva pode acompanhar rigidez adicional e não corrige seleção inadequada. O momento é definido pela cicatrização e pelo platô funcional, não por uma regra de que quanto mais tarde melhor.",
+   "D": "A mobilização deve ser planejada precocemente para evitar aderências recorrentes, conforme integridade do tendão e orientações da equipe. Esperar cerca de quinze dias para iniciar todo programa perde parte da finalidade da liberação. Cuidado com a pele e movimento protegido podem coexistir."
+  },
+  "referencias": [],
+  "geradoEm": "2026-10-10T19:37:12+00:00",
+  "conferido": false
+ },
+ "mao-1317": {
+  "conceito": "**Artrodese elimina movimento numa articulação dolorosa ou instável para obter uma posição funcional estável.** O ângulo escolhido é tão importante quanto a consolidação: um dedo unido em posição inadequada pode dificultar pinça, preensão ou colocação da mão em superfícies.\n\nNa interfalângica proximal, os raios radiais costumam precisar de menos flexão que os ulnares, que participam mais do fechamento da mão. Valores são ajustados à função e às articulações restantes. No indicador, 50° não é a referência usual como regra; frequentemente se busca uma posição menos fletida.\n\nNa interfalângica distal, posição varia com dedo, demandas e método de fixação. Um parafuso intramedular pode limitar o ângulo que se consegue obter; fio e banda de tensão oferecem outra configuração. Assim, 20° não é uma exigência universal para o indicador.\n\nFixação estável e compressão favorecem união, mas dependem de preparo das superfícies, alinhamento, qualidade óssea e proteção. D compara técnicas com capacidade de fornecer estabilidade; “garantem” deve ser entendido como favorecem a consolidação, não como promessa de ausência de pseudartrose.",
+  "correta": "Parafuso de compressão e fio associado à banda de tensão são meios de obter estabilidade para união. Nenhuma fixação garante consolidação sem bom preparo e condições biológicas. A técnica também precisa ser compatível com a posição funcional desejada.",
+  "incorretas": {
+   "A": "Flexão na distal pode ser útil em situações selecionadas, mas 20° não é posição obrigatória para todo indicador. A função, o restante do dedo e o dispositivo influenciam o planejamento. Um número isolado não define uma artrodese adequada.",
+   "B": "O acesso dorsal é frequentemente usado para artrodeses interfalângicas. Via volar não é a escolha universalmente mais indicada e exige considerar estruturas flexoras e neurovasculares. A escolha depende da articulação e da técnica.",
+   "C": "50° é excessivo como referência geral para a proximal do indicador, que precisa participar da pinça e de abertura da mão. Os raios ulnares toleram maior flexão funcional. O ângulo é individualizado, em vez de copiar o mesmo valor entre dedos."
+  },
+  "referencias": [],
+  "geradoEm": "2026-10-10T19:37:12+00:00",
+  "conferido": false,
+  "alerta": "Gabarito oficial D. Nenhum dispositivo garante união; ângulos de artrodese são ajustados ao dedo, às demandas e à técnica."
+ },
+ "mao-1318": {
+  "conceito": "**O carpo tem estabilizadores que podem compensar uma lesão inicial.** O ligamento escafolunar é central, mas outros ligamentos e o sistema musculotendíneo participam do controle. Uma lesão escafolunar pode ser predinâmica ou dinâmica antes de produzir deformidade estática visível na radiografia simples.\n\n| Situação | Comportamento da imagem |\n| :--- | :--- |\n| Instabilidade predinâmica | Radiografias podem permanecer normais |\n| Instabilidade dinâmica | Alteração aparece com carga ou manobra |\n| Instabilidade estática | Diástase ou mudança de alinhamento em repouso |\n\nA alternativa A é aceita ao lembrar que a lesão aguda isolada não necessariamente aumenta espaço e ângulo. A frase não deve ser universalizada: lesões associadas e estado dos estabilizadores secundários podem produzir alterações já na fase aguda.\n\nNo desvio radial, a primeira fileira tende a flexionar; no desvio ulnar, tende a estender. O rádio recebe a maior parte da carga axial do punho, distribuída entre fossas do escafoide e semilunar; o valor de 50% para a fossa do semilunar não é a referência habitual do caderno.\n\nEssas relações explicam por que radiografia normal não exclui lesão e por que o exame pode exigir carga, comparação e métodos adicionais conforme a suspeita.",
+  "correta": "Uma lesão aguda isolada pode não causar diástase ou aumento do ângulo em repouso se os estabilizadores secundários compensam. É esse conceito que sustenta o gabarito. A redação “não causa” é mais absoluta que o comportamento real: alteração aguda pode existir em lesões combinadas.",
+  "incorretas": {
+   "B": "Músculos e tendões contribuem para estabilização dinâmica do punho, mesmo que não substituam a integridade ligamentar. A alternativa elimina um componente importante do sistema. Estabilidade resulta da interação entre estruturas passivas e forças ativas.",
+   "C": "A carga não se divide pela regra proposta de metade na fossa do semilunar. Há distribuição entre rádio, TFCC e regiões carpais, modificada por posição e variância ulnar. Um percentual deslocado muda o raciocínio biomecânico.",
+   "D": "A primeira fileira tende a estender no desvio ulnar e flexionar no radial. A alternativa inverte essa relação. É útil relacionar o movimento dos ossos às restrições ligamentares, em vez de tratar a fileira como bloco rígido."
+  },
+  "referencias": [
+   "Treatment of scapholunate ligament injury: Current concepts. https://pmc.ncbi.nlm.nih.gov/articles/PMC5644424/"
+  ],
+  "geradoEm": "2026-10-10T19:37:12+00:00",
+  "conferido": false,
+  "alerta": "Gabarito oficial A. Uma lesão aguda pode não alterar a radiografia em repouso; a ausência de diástase não é universal e não exclui lesão escafolunar."
+ },
+ "mao-1319": {
+  "conceito": "**Fratura do escafoide exige atenção à localização, estabilidade e irrigação.** Grande parte do fluxo entra distalmente e segue para o polo proximal, que tem maior risco de não união e necrose. Desvio, fragmentação, diagnóstico tardio e outros fatores também modificam o prognóstico.\n\nRadiografias iniciais podem não revelar uma fratura. Suspeita clínica persistente pede proteção e investigação apropriada, com ressonância ou tomografia conforme a finalidade: a primeira ajuda a detectar fratura oculta, a segunda caracteriza geometria e consolidação. “Radiografia normal” não encerra avaliação quando o exame é sugestivo.\n\nO acesso dorsal pode favorecer posicionamento do parafuso e abordagem do polo proximal. Flexão do punho facilita exposição em certas técnicas, mas pode piorar alinhamento de uma fratura da cintura; facilitar acesso não significa facilitar redução.\n\nC traz a estimativa de não união aceita pela banca. Essa proporção varia conforme a série e tratamento, não vale igualmente para uma fratura distal estável e uma proximal desviada. O valor deve lembrar o risco que exige acompanhamento, e não substituir avaliação individual.",
+  "correta": "A banca cita 10–15% como estimativa de não união. A taxa depende da população, localização, desvio, demora e tratamento. Clinicamente, a fratura precisa ser acompanhada até comprovar consolidação, sobretudo em padrões de risco.",
+  "incorretas": {
+   "A": "Polo proximal é frequentemente abordado dorsalmente para permitir acesso e fixação apropriados. Via volar não é obrigatória para esse padrão e pode dificultar o fragmento proximal. Localização e geometria definem a estratégia.",
+   "B": "Flexão pode facilitar exposição dorsal, mas não necessariamente reduz a fratura; em alguns padrões favorece deformidade. É necessário confirmar alinhamento em vez de presumir que a posição do punho resolve o foco automaticamente.",
+   "D": "Uma parte das fraturas é oculta inicialmente, mas 50% não é um valor universal adotado para toda fratura do escafoide. O conceito válido é que radiografia negativa não exclui a lesão; investigação depende da suspeita e do método."
+  },
+  "referencias": [],
+  "geradoEm": "2026-10-10T19:37:12+00:00",
+  "conferido": false,
+  "alerta": "A proporção de não união em C é a estimativa do caderno; séries e padrões de fratura apresentam riscos diferentes."
+ },
+ "mao-1320": {
+  "conceito": "**Uma neurotização aproxima axônios funcionantes dos músculos que perderam inervação.** Na lesão radial alta, o nervo mediano pode fornecer ramos motores selecionados, desde que esteja íntegro. O objetivo é restaurar extensão de punho, dedos e polegar antes de perder a possibilidade de reinervar os músculos-alvo.\n\nO nervo interósseo posterior é um ramo motor do radial que inerva grande parte dos extensores dos dedos e do polegar. Um ramo destinado ao flexor radial do carpo pode ser usado como doador em uma configuração de transferência. Planejamento exige confirmar força doadora, anatomia e compatibilidade, sem sacrificar indiscriminadamente funções preservadas.\n\nTransferência nervosa e tendinosa resolvem o problema por mecanismos diferentes. A primeira depende de regeneração e tempo até recuperação; a segunda redireciona um motor já ativo. Podem ser alternativas ou estratégias combinadas conforme duração, alvos, demandas e lesões associadas.\n\nNão há obrigação de tentar uma neurotização em todo paciente antes de indicar transferência tendinosa. Lesão antiga, músculo não reinervável ou necessidade funcional podem mudar a escolha. A avaliação deve decidir o que ainda é biologicamente possível, e não obedecer uma sequência fixa de técnicas.",
+  "correta": "O ramo do flexor radial do carpo pode ser transferido ao interósseo posterior em estratégias selecionadas para lesão radial. Exige nervo mediano e músculo doador funcionantes, além de alvo ainda reinervável. A utilidade está em oferecer um trajeto distal para axônios motores.",
+  "incorretas": {
+   "A": "O ramo do flexor profundo não é o doador clássico descrito para extensor radial curto nessa configuração. Existem variações de neurotização, mas não se valida uma associação apenas porque ambos são ramos motores. Função doadora e mapa anatômico precisam ser conhecidos.",
+   "C": "Neurotizações podem ser associadas a transferências tendinosas selecionadas. Não existe proibição geral de combinar técnicas no mesmo ato. O planejamento deve considerar que uma fornece recuperação imediata do motor redirecionado e outra exige regeneração posterior.",
+   "D": "Transferência tendinosa não depende obrigatoriamente de tentativa prévia de neurotização. A duração, a viabilidade muscular e as demandas orientam a decisão. Insistir em nervo quando o alvo já não pode recuperar função pode apenas atrasar uma reconstrução útil."
+  },
+  "referencias": [],
+  "geradoEm": "2026-10-10T19:37:12+00:00",
+  "conferido": false
+ },
+ "mao-1321": {
+  "conceito": "**Portais artroscópicos são definidos por relações com tendões e níveis articulares.** O portal 3–4 fica entre os terceiro e quarto compartimentos extensores e permite acesso radiocarpal. O mediocarpal radial situa-se aproximadamente 1 cm distal a ele, agora no nível mediocarpal.\n\n| Referência | Relação útil |\n| :--- | :--- |\n| 3–4 | Entre extensor longo do polegar e extensores do quarto compartimento |\n| 4–5 | Entre extensores do quarto compartimento e extensor do mínimo |\n| Mediocarpal radial | Distal ao 3–4, para a articulação mediocarpal |\n| Mediocarpal ulnar | Acesso ao lado ulnar da articulação mediocarpal |\n\nPortal não é sinônimo de estrutura intra-articular: o ligamento de Testut, ou radioscafolunar, é uma referência distinta. Também não se localiza o portal mediocarpal ulnar pelo polo proximal do escafoide, que está do outro lado e noutra relação.\n\nA construção de um portal deve proteger tendões e ramos nervosos, com identificação adequada e abertura cuidadosa. Um centímetro é uma referência aproximada, não substitui palpação, posicionamento e confirmação da articulação.",
+  "correta": "O mediocarpal radial é localizado aproximadamente 1 cm distal ao 3–4. A relação muda o nível de entrada da radiocarpal para a mediocarpal. A medida ajuda a orientar, mas a anatomia deve ser confirmada para não atravessar um tendão ou entrar no nível errado.",
+  "incorretas": {
+   "B": "O 4–5 é um portal dorsal entre compartimentos extensores. Testut corresponde a uma referência ligamentar radiocarpal, não ao portal externo. A alternativa mistura ponto de entrada e estrutura observada dentro da articulação.",
+   "C": "O mediocarpal ulnar se relaciona à região ulnar da articulação, não ao polo proximal do escafoide. Nome, lado e nível precisam coincidir. Confundir esses planos pode levar a uma identificação anatômica incorreta mesmo reconhecendo o escafoide.",
+   "D": "Portais volares exigem atenção ao flexor radial, vasos e nervos e são descritos com relações específicas conforme a técnica. A posição “imediatamente ulnar” não é a referência do portal volar radial aceito nesta questão; não se deve usar a frase para abrir um acesso sem localizar estruturas."
+  },
+  "referencias": [],
+  "geradoEm": "2026-10-10T19:37:12+00:00",
+  "conferido": false
+ },
+ "mao-1322": {
+  "conceito": "**Ganglião do punho é uma lesão cística benigna ligada à cápsula ou a estruturas periarticulares.** A localização ajuda a prever a origem e os riscos. O dorsal costuma ter relação com a região escafolunar; o volar pode originar-se da radiocarpal ou da região escafotrapeziotrapezoidal.\n\nUm ganglião pode variar de tamanho e ser assintomático. Em crianças há possibilidade importante de resolução espontânea, favorecendo observação quando não existe repercussão relevante. Dor persistente, limitação e preocupação diagnóstica podem justificar outra conduta, sem transformar toda massa em indicação de cirurgia.\n\nNo cisto volar radial, a proximidade da artéria radial exige cuidado. Uma incisão escolhida apenas pelo aspecto cosmético não garante segurança. Identificar pedículo, vasos e ramos nervosos importa tanto quanto retirar a parede visível.\n\nA recorrência depende de vários fatores e pode ocorrer mesmo após ressecção. O planejamento considera sintomas, origem e alternativas de tratamento. A localização dorsal não significa origem no ligamento radiocarpal dorsal, e a posição volar não elimina comunicação articular.",
+  "correta": "Gangliões volares frequentemente se relacionam à articulação radiocarpal ou à região escafotrapézio. Essa origem orienta pesquisa do pedículo e proteção das estruturas adjacentes. A localização da massa na pele não informa sozinha todo o seu trajeto.",
+  "incorretas": {
+   "B": "Crianças podem apresentar resolução espontânea, e esse comportamento apoia acompanhamento em situações apropriadas. A alternativa inverte essa possibilidade. Observar não significa ignorar crescimento atípico, déficit ou dúvida sobre o diagnóstico.",
+   "C": "O acesso deve permitir exposição segura conforme localização e relação com vasos e nervos. Não há regra de que uma incisão transversal seja sempre mais segura para cistos dorsais e volares. A artéria radial é uma preocupação especial no volar.",
+   "D": "A origem clássica dos dorsais é a região escafolunar. Atribuí-la predominantemente ao radiocarpal dorsal troca a referência anatômica. Conhecer o pedículo ajuda a planejar ressecção e compreender recidiva."
+  },
+  "referencias": [],
+  "geradoEm": "2026-10-10T19:37:12+00:00",
+  "conferido": false
+ },
+ "mao-1323": {
+  "conceito": "**Indicação de reimplante depende do valor funcional esperado e da condição do segmento, não apenas da possibilidade técnica de suturar vasos.** Polegar, múltiplos dedos e amputações em crianças são situações favoráveis clássicas. Em lesões por anel, nível e preservação das estruturas mudam o prognóstico.\n\nO jovem com inserção do flexor superficial preservada pode manter uma articulação interfalângica proximal útil após reconstrução, conforme extensão do dano. O desluvamento por anel pode causar avulsão vascular longa, exigindo ressecção e enxertos; a alternativa A é a melhor entre as apresentadas, não uma garantia de bom resultado para qualquer avulsão.\n\nO dedo longo único em zona II pode resultar rígido e interferir na preensão dos demais. A decisão é individualizada, sobretudo em amputação proximal do indicador. Um dedo vivo, mas rígido e doloroso, não equivale a função recuperada.\n\nMacrorreimplantes contêm músculo, que tolera menos isquemia que um dedo. Vinte e seis horas de isquemia fria ultrapassam a referência usual para segmentos musculares e aumentam preocupação com necrose e reperfusão. Acondicionamento correto é necessário, mas não torna qualquer tempo seguro.",
+  "correta": "Juventude e preservação da inserção do superficial oferecem uma perspectiva funcional favorável entre as opções. Ainda é preciso avaliar avulsão, vasos, articulações e tecidos. O mérito é a possibilidade de um dedo funcional, não apenas perfundir pele avulsionada.",
+  "incorretas": {
+   "B": "Reimplantar um dedo longo único em zona II pode produzir rigidez importante pela lesão de tendões, bainha e estruturas articulares. Não é sempre contraindicado, mas a avaliação deve comparar a função esperada com alternativas. A letra não deve ser memorizada como proibição universal.",
+   "C": "Esse segmento contém músculo e tem maior risco com isquemia prolongada. Frio e armazenamento adequado reduzem dano, mas 26 horas não se tornam seguras apenas por boa conservação. Necrose muscular e efeitos sistêmicos da reperfusão também importam.",
+   "D": "Amputação proximal do indicador pode resultar num dedo rígido que dificulta preensão e pinça. Existem indicações selecionadas, mas o benefício precisa ser comparado à função restante. A opção não é a melhor do conjunto apenas por se tratar de indicador."
+  },
+  "referencias": [
+   "Upper extremity and digital replantation. https://pmc.ncbi.nlm.nih.gov/articles/PMC3213257/"
+  ],
+  "geradoEm": "2026-10-10T19:37:12+00:00",
+  "conferido": false
+ },
+ "mao-1324": {
+  "conceito": "**O retalho descrito por Amarante é uma opção distalmente baseada na face medial da perna.** Perfurantes da artéria tibial posterior permitem transferir tecido fasciocutâneo para defeitos distais. Na descrição original, duas perfurantes constantes foram identificadas em dissecções, e o desenho foi usado para cobertura regional.\n\nO enunciado especifica um retalho **peninsular**. Isso significa que permanece uma ponte de tecido com a área doadora. Um retalho em ilha tem a pele completamente separada ao redor e mantém conexão pelo pedículo; um propeller roda a ilha sobre uma perfurante. São configurações distintas, ainda que compartilhem vascularização por perfurantes.\n\nNa classificação modificada citada pela prova, a variante pertence ao tipo B. A identificação depende de qual modificação é utilizada: nomes de classificações não devem apagar o desenho e a base vascular descritos no caso.\n\nComo a base é distal, o arco de alcance favorece a região distal da perna e tornozelo, não o joelho. Planejamento exige perfurantes íntegras, tecido viável e mobilidade suficiente; a existência anatômica do vaso não garante segurança após trauma local.",
+  "correta": "A classificação modificada adotada pela banca é tipo B. Essa letra deve ser vinculada à versão citada e ao desenho peninsular com perfurantes tibiais posteriores. Classificações diferentes ou versões originais podem usar critérios distintos.",
+  "incorretas": {
+   "A": "“Peninsular” e “em ilha” não descrevem o mesmo desenho. A ilha perde a conexão cutânea periférica e depende do pedículo preservado; no peninsular permanece uma ponte de tecido. A vascularização por perfurantes não obriga o desenho em ilha.",
+   "B": "Propeller caracteriza uma ilha que roda sobre seu pedículo perfurante. O desenho original descrito no enunciado é peninsular, e não automaticamente um retalho em hélice. É necessário distinguir o princípio vascular da configuração de transferência.",
+   "C": "O pedículo distal e a localização na perna oferecem alcance para defeitos distais. Joelho não é o destino regional coerente com essa base e esse arco. Para cobertura proximal, outros retalhos e outros pedículos podem ser mais apropriados."
+  },
+  "referencias": [
+   "Amarante J, Costa H, Reis J, Soares R. A new distally based fasciocutaneous flap of the leg. 1986. https://pubmed.ncbi.nlm.nih.gov/3730679/"
+  ],
+  "geradoEm": "2026-10-10T19:37:12+00:00",
+  "conferido": false
+ },
+ "mao-1325": {
+  "conceito": "**Osteomielite crônica persiste por alterações do osso, do hospedeiro e da organização bacteriana.** Sequestro é osso desvitalizado que pode servir de reservatório; biofilme protege comunidades bacterianas; invasão intracelular pode permitir persistência mesmo quando a bactéria é sensível em testes convencionais.\n\nO *Staphylococcus aureus* pode entrar em osteoblastos. Essa localização contribui para escapar de mecanismos de defesa e reduzir a efetividade de alguns antibióticos. Não significa que todo caso seja incurável, mas explica por que tratamento não se resume a escolher uma droga pelo antibiograma.\n\n| Cierny–Mader: anatomia | Padrão |\n| :--- | :--- |\n| I | Medular |\n| II | Superficial |\n| III | Localizada |\n| IV | Difusa |\n\nO sistema também avalia o hospedeiro e orienta planejamento. Desbridamento, controle de espaço morto, estabilidade, cobertura e antibióticos dirigidos podem precisar ser combinados. MRSA exige medicamento ativo contra resistência à meticilina; oxacilina não é esse tratamento. Biofilme requer uma abordagem diferente da bactéria livre, sem presumir que uma menor concentração basta para eliminá-lo.",
+  "correta": "A invasão de osteoblastos por S. aureus pode contribuir para persistência e menor resposta ao tratamento. O conceito integra a necessidade de tratar o foco e o leito, não apenas bactérias circulantes ou presentes numa cultura superficial.",
+  "incorretas": {
+   "B": "Biofilme aumenta tolerância e dificulta erradicação, em vez de permitir menores concentrações do que bactérias planctônicas. Resultados de sensibilidade de organismos livres não descrevem integralmente a comunidade protegida em osso e material de síntese.",
+   "C": "Os dois primeiros tipos foram invertidos: I é medular e II superficial; III localizada e IV difusa estão corretos. A diferença importa para extensão do desbridamento e reconstrução, e a avaliação do hospedeiro completa a classificação.",
+   "D": "Oxacilina é um betalactâmico e não um representante de glicopeptídeos, oxazolidinonas ou lipopeptídeos. MRSA é resistente à meticilina/oxacilina; tratamento exige agente ativo escolhido por quadro, cultura e condições do paciente. A duração e a via também não são fixas em todo caso."
+  },
+  "referencias": [],
+  "geradoEm": "2026-10-10T19:37:12+00:00",
+  "conferido": false
+ },
+ "mao-1326": {
+  "conceito": "**Pressão negativa auxilia preparo e proteção do leito, mas não substitui desbridamento.** Ela remove exsudato, aproxima tecidos e transmite estímulos mecânicos que favorecem granulação em condições adequadas. Tecido desvitalizado e fonte de infecção precisam ser tratados.\n\nHá sistemas que associam pressão negativa à instilação programada de soluções. A solução, o intervalo e o tempo de contato dependem de indicação, equipamento e protocolo. Poliexanida é uma opção em alguns esquemas; essa possibilidade não significa uso obrigatório de antisséptico em toda ferida.\n\nA pressão negativa também pode ajudar a estabilizar enxertos ou matrizes dérmicas, manter contato com o leito e controlar exsudato. É preciso proteger estruturas vulneráveis e respeitar as condições do produto. A existência de uma matriz de colágeno não é, por si só, uma proibição universal.\n\nModos contínuo e intermitente têm usos e tolerâncias diferentes. A terapia intermitente não foi criada para reduzir granulação como objetivo. O recurso funciona dentro de um plano que inclui perfusão, controle da carga bacteriana, cobertura e tratamento da causa da ferida.",
+  "correta": "O equipamento não remove sozinho tecido morto que exige desbridamento. Alguns sistemas permitem instilar soluções programadas, incluindo poliexanida conforme protocolo. São funções complementares, e não equivalentes à excisão cirúrgica do tecido inviável.",
+  "incorretas": {
+   "A": "A granulação é um dos resultados procurados; alternância de pressão pode modular estímulos mecânicos, não é definida pelo objetivo de reduzi-la. Tolerância e estabilidade do leito também influenciam a escolha do modo.",
+   "B": "Pressão negativa pode ser associada a matrizes em situações indicadas. Manter contato e controlar exsudato pode favorecer integração. A proibição absoluta e a ideia de que sempre impede migração celular contradizem essa aplicação; técnica e condições do leito são decisivas.",
+   "D": "A afirmação de incorporação em 2014 não corresponde à decisão referida pela prova. Registro de uma tecnologia, avaliação pela CONITEC e incorporação ao SUS são eventos diferentes; uma recomendação de uso clínico também não prova incorporação administrativa."
+  },
+  "referencias": [],
+  "geradoEm": "2026-10-10T19:37:12+00:00",
+  "conferido": false
+ },
+ "mao-1327": {
+  "conceito": "**Um retalho precisa ser identificado pelo tecido, pela circulação e pelo trajeto do pedículo.** Nomes próprios podem representar opções próximas, mas sacrificar um vaso principal ou preservar um nervo muda a aplicação.\n\nO retalho da interóssea posterior utiliza a região posterior do antebraço e comunicações distais para fluxo reverso. O pedículo segue o intervalo entre extensor do mínimo e extensor ulnar do carpo; isso não é a posição entre quarto e quinto compartimentos extensores indicada em A.\n\nO sural reverso envolve o eixo neurocutâneo sural, veia safena parva e fáscia, apoiado em comunicações distais. Nervo cluneal pertence a outra região e não é seu componente. O dorsoulnar de Becker usa ramo dorsal da artéria ulnar e pode preservar o tronco principal, ao contrário da desvantagem alegada.\n\nRetalhos palmares e plantares oferecem pele glabra, adequada a áreas de contato. O gabarito C valoriza essa característica de tecido especializado. “Amelanótico”, entretanto, não deve ser convertido em ausência universal de melanócitos ou pigmentação: pele palmar e plantar também apresenta pigmento e variação individual.",
+  "correta": "O ponto útil é a pele glabra de regiões palmares/plantares, apropriada para superfícies de contato. A banca usa “amelanóticos”, mas essa expressão não significa que essas áreas não tenham melanócitos. A seleção procura semelhança de textura e resistência, não ausência biológica de pigmento.",
+  "incorretas": {
+   "A": "O intervalo clássico do pedículo é entre extensor do mínimo e extensor ulnar do carpo, relacionado ao lado ulnar do dorso. A alternativa desloca a referência para outro par de compartimentos. Seguir o vaso é mais seguro que decorar uma numeração incompleta.",
+   "B": "O nervo associado ao eixo é o sural, não o cluneal. Veia safena parva e fáscia fazem parte do planejamento, mas um componente correto não compensa a troca do nervo. O retalho também exige atenção ao retorno venoso e às perfurantes distais.",
+   "D": "O retalho dorsoulnar de Becker baseia-se num ramo da ulnar e não exige, como regra, ligadura de seu tronco principal. Preservar a artéria é uma vantagem em comparação a retalhos que a sacrificam. O desenho e a origem do ramo devem ser confirmados."
+  },
+  "referencias": [],
+  "geradoEm": "2026-10-10T19:37:12+00:00",
+  "conferido": false,
+  "alerta": "Gabarito oficial C. Pele glabra não é sinônimo de ausência de melanócitos; o termo “amelanótico” da alternativa não deve ser ensinado como propriedade universal."
+ },
+ "mao-1328": {
+  "conceito": "**O retalho antebraquial radial, conhecido como “chinês”, é baseado na artéria radial.** Oferece tecido fino e pedículo de comprimento útil. Pode ser transferido livremente ou usado com outras configurações, desde que a circulação da mão e a anatomia sejam avaliadas.\n\nO componente osteocutâneo pode incluir um segmento do rádio, com risco de enfraquecer o osso doador. Quantidade retirada, local e eventual proteção precisam ser planejados; dizer que se pode incluir osso não equivale a recomendar retirar indiscriminadamente metade de sua secção.\n\nC é a associação aceita pela banca na classificação citada. Já B descreve uma possibilidade real de retalho sensitivo: inclusão de nervo cutâneo e neurorrafia receptora pode oferecer recuperação sensitiva. Logo, o gabarito não deve levar o aluno a aprender que o radial nunca pode ser sensitivo.\n\nEm fluxo reverso, a irrigação depende das comunicações distais e o arco favorece cobertura de mão e punho, não automaticamente cotovelo. Para qualquer variante, é necessário conhecer o custo da área doadora, o destino do pedículo e os vasos que ficam preservados.",
+  "correta": "A banca classifica a composição osteomiofasciocutânea como tipo D no sistema citado. A inclusão do rádio amplia os tecidos disponíveis, mas aumenta morbidade e risco de fratura doador. Classificação não é uma recomendação automática de quanto osso retirar.",
+  "incorretas": {
+   "A": "O fluxo reverso é organizado a partir de comunicações distais para cobertura distal. Essa configuração não é a referência para alcançar cotovelo, que exige outro arco ou estratégia. O nome do retalho não determina o alcance sem conhecer sua base.",
+   "B": "O retalho pode ser sensitivo com inclusão e coaptação de nervo cutâneo apropriado, inclusive nervo cutâneo lateral do antebraço em descrições da técnica. Portanto, existe plausibilidade médica nessa alternativa. A letra oficial C foi mantida, com a ressalva de que B não deve ser rejeitada como impossibilidade anatômica.",
+   "D": "O vaso principal é a artéria radial. A colateral radial posterior está relacionada a outro eixo de retalho, especialmente da região braquial lateral. Confundir os vasos modifica toda a dissecção e a avaliação da área doadora."
+  },
+  "referencias": [
+   "End-to-side innervated sensate radial forearm flap in the hand: A 5-year follow-up. https://pubmed.ncbi.nlm.nih.gov/30953796/"
+  ],
+  "geradoEm": "2026-10-10T19:37:12+00:00",
+  "conferido": false,
+  "alerta": "Gabarito oficial C. A alternativa B também descreve uma possibilidade reconhecida de retalho radial sensitivo com neurorrafia; não deve ser ensinada como impossibilidade. A quantidade de osso doador exige planejamento para reduzir risco de fratura."
+ },
+ "mao-1329": {
+  "conceito": "**A deformidade em supinação da paralisia obstétrica reflete desequilíbrio muscular e, com o tempo, retração estrutural.** O bíceps preservado ou recuperado pode exercer um vetor supinador importante quando os pronadores estão fracos. Primeiro é necessário distinguir deformidade flexível de contratura fixa.\n\nTransferir a inserção do bíceps para o braquial pode reduzir seu efeito supinador e manter participação na flexão do cotovelo. A lógica é retirar um vetor que sustenta o desequilíbrio. Isso auxilia a posição em pronação, mas não equivale a criar um pronador ativo normal.\n\nOutras técnicas podem redirecionar o bíceps para produzir um vetor pronador, conforme a anatomia e a flexibilidade. Nas deformidades fixas, liberação ou osteotomia podem ser necessárias; nenhuma transferência corrige automaticamente uma rotação que já não é obtida passivamente.\n\nA escolha exige testar motores, amplitudes e função global do membro. Corrigir posição sem considerar flexão do cotovelo, punho e mão pode trocar uma limitação por outra. C é a única opção que aborda o vetor do bíceps relacionado à supinação.",
+  "correta": "A transferência ao braquial reduz a ação supinadora do bíceps preservando um mecanismo flexor do cotovelo. Isso pode favorecer equilíbrio em direção à pronação. Deve-se distinguir neutralização de um supinador de criação de um novo pronador ativo.",
+  "incorretas": {
+   "A": "Transferir extensor ulnar para extensor radial longo altera vetores do punho e não é a solução descrita para reduzir a supinação pelo bíceps. A estrutura receptora não produz o efeito de rotação solicitado.",
+   "B": "Flexor superficial para extensor comum restaura extensão digital em outras situações. É uma transferência de função dos dedos, não uma técnica para corrigir o vetor supinador do antebraço.",
+   "D": "Pronador quadrado já tem função pronadora, mas a inserção na membrana interóssea proposta não corresponde à transferência que a banca pede. A alternativa não aborda o bíceps como fonte do desequilíbrio e não é a associação funcional indicada."
+  },
+  "referencias": [],
+  "geradoEm": "2026-10-10T19:37:12+00:00",
+  "conferido": false
+ },
+ "mao-1330": {
+  "conceito": "**A artéria radial atravessa a tabaqueira anatômica e alcança a palma através do primeiro espaço interósseo.** Sua relação com o primeiro interósseo dorsal leva ao arco palmar profundo. Ramos radiais também participam da irrigação do polegar, com variações de origem e comunicação.\n\n| Estrutura | Relação que diferencia as alternativas |\n| :--- | :--- |\n| Lumbricais 1 e 2 | Habitualmente mediano |\n| Lumbricais 3 e 4 | Habitualmente ulnar |\n| Interósseos dorsais | Quatro, classicamente bipenados |\n| Interósseos palmares | Três na descrição clássica, unipenados |\n| Riché–Cannieu | Comunicação motora na região palmar/tenar |\n\nA comunicação sensitiva entre nervos digitais comuns de mediano e ulnar é associada ao nome de Berrettini, não Riché–Cannieu. Variações de comunicação podem modificar achados de exame e estudos elétricos, mas não apagam a descrição habitual.\n\nA distinção entre arco superficial e profundo também importa: o superficial é predominantemente ulnar, enquanto o profundo é predominantemente radial. Reconhecer o vaso na tabaqueira permite seguir seu caminho, em vez de supor que todo arco palmar tenha a mesma artéria dominante.",
+  "correta": "O trajeto é o clássico da radial: tabaqueira, passagem pelo primeiro interósseo dorsal e contribuição ao arco profundo e à irrigação do polegar. Existem variações, mas a sequência anatômica apresentada é a correta entre as opções.",
+  "incorretas": {
+   "A": "Os quatro lumbricais não são todos ulnares: primeiro e segundo costumam receber o mediano, terceiro e quarto o ulnar. A distribuição explica diferenças motoras em lesões dos dois nervos e precisa ser distinguida de variações anatômicas.",
+   "B": "A pennação foi invertida. Os dorsais são classicamente bipenados e os palmares unipenados. Além da contagem, a origem em metacarpos vizinhos e a função de abdução/adução ajudam a separar os grupos.",
+   "C": "A comunicação descrita é sensitiva e corresponde à associação clássica de Berrettini. Riché–Cannieu liga ramos motores na palma, relacionada à inervação tenar. Misturar os nomes confunde anatomia e interpretação eletrofisiológica."
+  },
+  "referencias": [
+   "Netter, Atlas de Anatomia Ortopédica, 2ª edição, capítulo Mão."
+  ],
+  "geradoEm": "2026-10-10T19:37:12+00:00",
+  "conferido": false
+ },
+ "mao-1331": {
+  "conceito": "**Cobertura da mão deve preservar tecido especializado e estruturas úteis para função.** Retalhos locais ou de dedos vizinhos podem resolver defeitos pequenos, mas cada opção oferece textura, sensibilidade e área doadora diferentes.\n\nO cross-finger clássico utiliza pele dorsal de um dedo adjacente, transferida sobre o defeito do receptor. A área doadora costuma precisar de enxerto, e a separação do pedículo é feita numa etapa posterior. Imobilização temporária e rigidez são custos a considerar.\n\nMoberg é um avanço volar do polegar baseado nos dois feixes neurovasculares, preservando sensibilidade da polpa. O retalho da primeira artéria metacarpal dorsal, ou kite, pode incluir ramo sensitivo e oferecer cobertura sensitiva. Portanto, nem todo retalho dorsal é não sensitivo.\n\nRetalhos digitais de fluxo reverso dependem de comunicações vasculares distais. A dissecção precisa respeitar essas comunicações e o desenho, mas a prega da interfalângica proximal não é um limite universal para toda variante. Nível do defeito e perfusão determinam o planejamento.",
+  "correta": "Cross-finger clássico transfere pele dorsal do dedo vizinho. Ele oferece cobertura regional, com necessidade de manejar a área doadora e separar o pedículo depois. A vantagem de tecido próximo deve ser comparada ao custo de imobilização e possível rigidez.",
+  "incorretas": {
+   "A": "O limite não é uma regra única definida pela prega da interfalângica proximal. A segurança do retalho de fluxo reverso depende das conexões distais e da técnica escolhida. Uma referência cutânea isolada não descreve toda a anatomia do pedículo.",
+   "C": "Moberg é classicamente bipediculado, incluindo ambos os feixes digitais volares do polegar. Preserva sensibilidade e perfusão do avanço. Descrevê-lo como baseado numa única artéria troca uma característica central da técnica.",
+   "D": "O kite pode ser sensitivo ao incluir um ramo nervoso e oferecer cobertura com sensibilidade. Não é correto defini-lo como sempre não sensitivo. O componente neural e sua preservação precisam fazer parte da dissecção."
+  },
+  "referencias": [
+   "Moberg/Elliot flap. https://pmc.ncbi.nlm.nih.gov/articles/PMC11105812/"
+  ],
+  "geradoEm": "2026-10-10T19:37:12+00:00",
+  "conferido": false
+ },
+ "mao-1332": {
+  "conceito": "**O quadro é agudo, com inflamação dolorosa periungueal e aspecto de coleção.** Nessa apresentação, *Staphylococcus aureus* é um agente frequente. A paroníquia aguda costuma surgir após ruptura da barreira entre pele e unha, como trauma, manipulação de cutícula ou pequenos ferimentos.\n\nA análise deve separar inflamação sem coleção de abscesso. Quando há pus organizado, drenagem é um componente importante; antibiótico isolado pode não resolver. Extensão, celulite, condição do hospedeiro e exposições orientam necessidade e escolha de tratamento adicional.\n\nCandida é mais associada ao contexto de paroníquia crônica, mas mesmo ali pode representar colonização sobre uma dermatite da barreira. Pseudomonas lembra coloração esverdeada e exposição à umidade. Eikenella ganha relevância em exposição oral ou mordedura humana, que o caso não descreve.\n\nA imagem e três dias de evolução não identificam microbiologicamente o agente. D é o mais provável do conjunto; cultura e revisão do diagnóstico podem ser necessárias em apresentação atípica, recorrente ou refratária. Vesículas e contexto sugestivo de panarício herpético também mudariam a conduta, pois não se deve drenar lesão herpética como abscesso bacteriano.",
+  "correta": "S. aureus é uma causa frequente de paroníquia aguda bacteriana. A escolha expressa probabilidade, não confirmação por fotografia. O tratamento deve procurar coleção e extensão, porque a presença de abscesso modifica a necessidade de drenagem.",
+  "incorretas": {
+   "A": "Candida não é a associação principal para uma coleção periungueal aguda de três dias. Em quadros crônicos, dano de barreira e exposição à umidade são importantes, e a levedura pode ser secundária. Não se deve tratar toda paroníquia como micose.",
+   "B": "Pseudomonas pode estar associada a unha verde e contextos úmidos, mas o caso não oferece esse padrão como dado dominante. Aspecto agudo e purulento favorece o agente bacteriano mais habitual entre as opções.",
+   "C": "Eikenella relaciona-se à flora oral, mordeduras humanas e certas lesões contaminadas por saliva. Sem esse mecanismo descrito, ela é menos provável que S. aureus. Perguntar sobre exposição pode mudar a cobertura antimicrobiana."
+  },
+  "referencias": [
+   "Acute and Chronic Paronychia Revisited: A Narrative Review. https://pmc.ncbi.nlm.nih.gov/articles/PMC9153310/"
+  ],
+  "geradoEm": "2026-10-10T19:37:12+00:00",
+  "conferido": false
  }
 }

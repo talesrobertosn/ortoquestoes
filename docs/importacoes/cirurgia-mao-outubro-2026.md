@@ -119,11 +119,18 @@ sessão de teste interceptada localmente; não foram gravadas respostas no Supab
 
 ## Em andamento
 
-Primeiro bloco da USP-SP 2025 preparado: números 1–10 (`mao-1283` a
-`mao-1292`), com comentários desenvolvidos e imagens originais. A questão 10
+USP-SP 2025, números 1–50 (`mao-1283` a `mao-1332`), publicados em blocos,
+com comentários desenvolvidos e imagens originais. A questão 10
 foi registrada como anulada, com resposta nula e análise neutra das quatro
 alternativas. Os avisos de 7 e 9 preservam o gabarito sem universalizar dados
 de mortalidade ou excluir reimplante auricular viável.
+
+Nos números 11–50, as ressalvas de 11, 13, 21, 25, 26, 28, 35, 36, 37,
+45 e 46 registram limites de redação ou divergências sem alterar respostas
+oficiais. A possibilidade de retalho radial sensitivo em 46 foi conferida em
+publicação com neurorrafia do nervo cutâneo lateral do antebraço
+(https://pubmed.ncbi.nlm.nih.gov/30953796/). Figuras e comentários foram
+verificados na interface, inclusive em largura de celular.
 
 O importador passou a preservar imagens, subtemas, referências e alertas e
 a recusar duplicação de número na mesma prova. Anuladas não recebem selo de
