@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Propaganda: três opções</title>
+<!-- Três caminhos de propaganda (feed 1080x1350): ingresso, placa de estrada e notificações.
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-10-propaganda-opcoes/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1350px; }
+section > * { position: absolute; }
+
+/* A: ingresso */
+#a-ingresso { background: radial-gradient(circle at 50% 40%, #1d7a71 0, #0b3a35 70%); color: #fff; }
+#a-ingresso .luzes { inset: 0; background: radial-gradient(circle, rgba(244,207,124,.55) 0 3px, transparent 4px) 0 0/90px 90px; opacity: .35; }
+#a-ingresso .topo { left: 0; right: 0; top: 80px; text-align: center; font: 800 34px Inter; letter-spacing: .3em; color: #f4cf7c; text-transform: uppercase; }
+.ingresso { left: 70px; right: 70px; top: 170px; height: 820px; display: flex; transform: rotate(-4deg); filter: drop-shadow(0 40px 40px rgba(0,0,0,.45)); }
+.ingresso .corpo { flex: 1; min-width: 0; position: relative; padding: 56px 50px; color: #3a2a00;
+  background: linear-gradient(135deg, #fbe39b, #f4cf7c 45%, #e3b24f);
+  -webkit-mask: radial-gradient(circle at 0 50%, transparent 40px, #000 41px) left/51% 100% no-repeat, radial-gradient(circle at 100% 50%, transparent 0, #000 0) right/50% 100% no-repeat; border-radius: 28px 0 0 28px; }
+.ingresso .corpo::after { content: ""; position: absolute; inset: 18px; border: 3px dashed rgba(58,42,0,.35); border-radius: 18px 0 0 18px; }
+.ingresso .canhoto { position: relative; flex: 0 0 190px; border-left: 6px dotted #0b3a35; background: linear-gradient(135deg, #f7d98a, #e3b24f); border-radius: 0 28px 28px 0;
+  display: grid; place-items: center; }
+.ingresso .canhoto span { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%) rotate(90deg); white-space: nowrap; font: 900 44px Inter; letter-spacing: .2em; color: #3a2a00; }
+.ingresso small { font: 900 30px Inter; letter-spacing: .24em; text-transform: uppercase; }
+.ingresso h2 { margin-top: 18px; font: 800 170px/.86 Jakarta; letter-spacing: -.06em; color: #0b3a35; }
+.ingresso h2 em { font-style: normal; color: #c0392b; }
+.ingresso p { margin-top: 30px; font: 700 44px/1.2 Jakarta; letter-spacing: -.02em; }
+.ingresso .valido { position: absolute; left: 50px; bottom: 56px; padding: 14px 24px; background: #0b3a35; color: #f4cf7c; font: 900 30px Inter; letter-spacing: .1em; text-transform: uppercase; }
+#a-ingresso .cta { left: 70px; right: 70px; bottom: 80px; text-align: center; }
+#a-ingresso .cta b { display: block; font: 800 78px Jakarta; letter-spacing: -.04em; }
+#a-ingresso .cta span { display: block; margin-top: 8px; font: 800 40px Inter; color: #f4cf7c; }
+
+/* B: placa de estrada */
+#b-placa { background: linear-gradient(180deg, #5fb0e0 0, #cfe9f6 60%, #9ccf8a 60.1%, #5f9f4f 100%); }
+#b-placa .faixa { left: 50%; bottom: 0; width: 30px; height: 600px; transform: translateX(-50%) perspective(400px) rotateX(60deg); transform-origin: bottom;
+  background: repeating-linear-gradient(180deg, #fff 0 80px, transparent 80px 160px); }
+#b-placa .poste { width: 34px; height: 900px; top: 500px; background: linear-gradient(90deg, #8a9196, #c9cfd3, #8a9196); }
+.placa { left: 60px; right: 60px; top: 90px; padding: 46px 50px 50px; background: #0f6b45; border-radius: 26px; border: 8px solid #fff; outline: 4px solid #0f6b45;
+  color: #fff; box-shadow: 0 30px 50px rgba(0,0,0,.35); }
+.placa small { font: 800 38px Inter; letter-spacing: .06em; opacity: .9; }
+.placa h2 { margin-top: 10px; font: 800 150px/.9 Jakarta; letter-spacing: -.05em; }
+.placa .saida { display: flex; justify-content: space-between; align-items: center; margin-top: 30px; padding-top: 30px; border-top: 5px solid rgba(255,255,255,.8); }
+.placa .saida b { font: 800 66px Jakarta; letter-spacing: -.03em; }
+.placa .seta { font: 900 120px/1 Inter; transform: rotate(45deg); }
+.placa2 { left: 160px; right: 160px; top: 760px; padding: 30px 40px; background: #f4cf7c; border-radius: 20px; border: 7px solid #111; text-align: center; color: #111; box-shadow: 0 20px 40px rgba(0,0,0,.35); }
+.placa2 b { display: block; font: 800 76px/1 Jakarta; letter-spacing: -.04em; }
+.placa2 span { display: block; margin-top: 10px; font: 800 34px Inter; }
+#b-placa .cta { left: 0; right: 0; bottom: 0; padding: 40px 70px 50px; text-align: center; color: #fff; background: #111; }
+#b-placa .cta b { display: block; font: 800 74px Jakarta; letter-spacing: -.04em; text-shadow: 0 4px 20px rgba(0,0,0,.4); }
+#b-placa .cta span { display: inline-block; margin-top: 12px; padding: 10px 26px; background: #fff; color: #0f6b45; font: 800 40px Inter; border-radius: 12px; }
+
+/* C: notificações */
+#c-notificacao { background: radial-gradient(circle at 20% 15%, #2a8f84 0, transparent 45%), radial-gradient(circle at 90% 70%, #c0392b 0, transparent 40%), linear-gradient(160deg, #0b3a35, #0a1f2c); color: #fff; }
+#c-notificacao .hora { left: 0; right: 0; top: 70px; text-align: center; }
+#c-notificacao .hora small { font: 600 36px Inter; opacity: .85; }
+#c-notificacao .hora b { display: block; font: 300 230px/1 Jakarta; letter-spacing: -.04em; }
+.notif { left: 60px; right: 60px; display: flex; gap: 26px; padding: 30px 32px; border-radius: 44px; background: rgba(255,255,255,.88); color: #111; box-shadow: 0 20px 40px rgba(0,0,0,.25); }
+.notif svg { flex: 0 0 auto; width: 90px; height: 90px; }
+.notif div { flex: 1; }
+.notif small { display: flex; justify-content: space-between; font: 700 26px Inter; color: #555; letter-spacing: .04em; text-transform: uppercase; }
+.notif b { display: block; margin-top: 6px; font: 800 48px/1.08 Jakarta; letter-spacing: -.03em; }
+.notif p { margin-top: 6px; font: 500 30px/1.25 Inter; color: #333; }
+.notif--grande { background: #fff; transform: scale(1.03); }
+.notif--grande b { font-size: 58px; color: #14655E; }
+#c-notificacao .cta { left: 60px; right: 60px; bottom: 70px; padding: 30px; border-radius: 999px; background: #f4cf7c; color: #0b3a35; text-align: center; }
+#c-notificacao .cta b { display: block; font: 800 64px Jakarta; letter-spacing: -.03em; }
+#c-notificacao .cta span { display: block; font: 800 32px Inter; }
+#c-notificacao .ilus { left: 0; right: 0; bottom: 26px; text-align: center; font: 600 20px Inter; opacity: .7; }
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/>
+<circle cx="17" cy="20" r="4.5" fill="#9cc3bd"/><rect x="26" y="16.5" width="24" height="7" rx="3.5" fill="#9cc3bd"/>
+<circle cx="17" cy="32" r="4.5" fill="#f4cf7c"/><rect x="26" y="28.5" width="24" height="7" rx="3.5" fill="#f4cf7c"/>
+<circle cx="17" cy="44" r="4.5" fill="#9cc3bd"/><rect x="26" y="40.5" width="19" height="7" rx="3.5" fill="#9cc3bd"/></symbol>
+</defs></svg>
+
+<section id="a-ingresso">
+  <span class="luzes"></span>
+  <p class="topo">Orto Questões apresenta</p>
+  <div class="ingresso">
+    <div class="corpo">
+      <small>Ingresso · treino de ortopedia</small>
+      <h2>Entrada<br><em>grátis.</em></h2>
+      <p>Questões comentadas, simulados e ranking.</p>
+      <span class="valido">Válido todos os dias</span>
+    </div>
+    <div class="canhoto"><span>Nº 0001 · ORTO</span></div>
+  </div>
+  <div class="cta"><b>Crie sua conta grátis</b><span>ortoquestoes.com.br</span></div>
+</section>
+
+<section id="b-placa">
+  <span class="poste" style="left:200px"></span><span class="poste" style="right:200px"></span>
+  <div class="placa">
+    <small>Residência em ortopedia</small>
+    <h2>Aprovação</h2>
+    <div class="saida"><b>Próxima saída</b><span class="seta">↑</span></div>
+  </div>
+  <div class="placa2"><b>Questões grátis</b><span>Comentadas · Simulados · Ranking</span></div>
+  <div class="cta"><b>Crie sua conta grátis</b><span>ortoquestoes.com.br</span></div>
+</section>
+
+<section id="c-notificacao">
+  <div class="hora"><small>sábado, 10 de outubro</small><b>19:00</b></div>
+  <div class="notif notif--grande" style="top:390px"><svg><use href="#sim"/></svg><div><small><span>Orto Questões</span><span>agora</span></small><b>Suas questões grátis de hoje chegaram</b><p>Prova oficial comentada esperando você.</p></div></div>
+  <div class="notif" style="top:690px"><svg><use href="#sim"/></svg><div><small><span>Orto Questões</span><span>agora</span></small><b>Você subiu 3 posições no ranking</b></div></div>
+  <div class="notif" style="top:880px"><svg><use href="#sim"/></svg><div><small><span>Orto Questões</span><span>agora</span></small><b>Simulado novo: engenharia reversa</b></div></div>
+  <div class="cta" style="bottom:90px"><b>Crie sua conta grátis</b><span>ortoquestoes.com.br</span></div>
+  <p class="ilus">Tela ilustrativa</p>
+</section>
+</body></html>
