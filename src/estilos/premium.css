@@ -855,7 +855,7 @@
 
 .pw-conteudo { display: grid; gap: 1rem; }
 .pw-conteudo--larga { grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 0; }
-.pw-lado { position: relative; display: grid; gap: 0.6rem; align-content: center; padding: 1.4rem; border-radius: var(--raio-cartao); color: var(--sobre-heroi); background: radial-gradient(circle at 90% 5%, rgba(242, 193, 78, 0.32), transparent 45%), var(--heroi); }
+.pw-lado { position: relative; display: grid; gap: 0.6rem; align-content: center; padding: 1.4rem; border-radius: var(--raio-cartao); color: var(--sobre-heroi); background: var(--heroi); }
 .pw-conteudo--larga .pw-lado { padding: 2.6rem 2.2rem; border-radius: 28px 0 0 28px; }
 .pw-anel { display: grid; place-items: center; align-content: center; width: 5.2rem; height: 5.2rem; border-radius: 50%; border: 5px solid #ffe38a; background: rgba(255, 255, 255, 0.06); }
 .pw-anel b { font-size: 1.7rem; line-height: 1; color: #fff; }

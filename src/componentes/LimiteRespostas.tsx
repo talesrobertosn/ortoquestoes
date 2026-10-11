@@ -160,7 +160,7 @@ function OfertaLimite({ consumidas, limite, sequencia, tempo, aoFechar, larga = 
   consumidas: number; limite: number | null; sequencia: number; tempo: { faltam: number; libera: Date } | null; aoFechar: () => void; larga?: boolean
 }) {
   const beneficios: Array<[string, string]> = [
-    ['Questões sem limite', 'Resolva quantas quiser, todo dia.'],
+    ['Questões sem limite', 'Resolva quantas quiser, todo dia, do celular ou do computador.'],
     ['Cronograma até a prova', 'A meta de cada dia, começando pelo que mais cai.'],
     ['Simulado Nacional todo mês', 'Sua nota e sua posição entre os residentes.'],
     ['Temas que mais caem', 'O ranking do que a prova mais cobra.'],

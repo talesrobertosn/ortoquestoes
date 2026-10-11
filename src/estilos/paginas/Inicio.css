@@ -412,10 +412,7 @@ a.inicio-kpi:hover { background: rgba(255, 255, 255, 0.15); color: var(--sobre-h
 .inicio-ranking {
   display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 1rem 1.5rem;
   padding: clamp(1.1rem, 3vw, 1.6rem); border-radius: var(--raio-grande); color: #fff;
-  background:
-    radial-gradient(circle at 8% 40%, rgba(244, 207, 124, 0.32), transparent 40%),
-    radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px) 0 0 / 14px 14px,
-    linear-gradient(135deg, #071f1c, #0b3a35 55%, #14655e);
+  background: var(--heroi);
   box-shadow: inset 0 0 0 2px rgba(244, 207, 124, 0.45), var(--sombra-media);
 }
 .inicio-ranking__coroa { image-rendering: pixelated; filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.4)); animation: inicio-coroa 3s ease-in-out infinite; }
@@ -544,3 +541,9 @@ a.inicio-kpi:hover { background: rgba(255, 255, 255, 0.15); color: var(--sobre-h
 .podio-previa__lugar--1 { box-shadow: inset 0 0 0 2px #f4cf7c; }
 .podio-previa__total { color: rgba(255, 255, 255, 0.75); font-size: 0.8rem; }
 .podio-previa__legenda { flex: 1 1 100%; font-size: 0.75rem; color: rgba(255, 255, 255, 0.65); }
+/* Estilo B: céu em faixas, sem os brilhos e arcos do degradê antigo. */
+.inicio-heroi::before, .inicio-heroi::after { display: none; }
+
+
+.inicio-heroi__pratico { flex: 1 1 100%; display: flex; gap: 0.4rem; align-items: center; justify-content: center; margin: 0.1rem 0 0; font-size: 0.85rem; color: var(--sobre-heroi-2); text-align: center; }
+.inicio-heroi__pratico svg { flex: none; color: #f4cf7c; }

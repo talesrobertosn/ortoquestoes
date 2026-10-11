@@ -362,7 +362,9 @@ export function DadosLocais() {
           ? 'Há espaço para melhorar. Revise as questões que errou e tente novamente.'
           : 'Atenção redobrada agora: revise com calma os temas mais difíceis e reforce a base.'
 
-  const pct = percentualGeral === null ? null : Math.round(percentualGeral * 100)
+  // Sem conta e sem respostas: números de exemplo, marcados como exemplo, no lugar dos zeros.
+  const exemplo = !conta && respondidas === 0
+  const pct = exemplo ? 72 : percentualGeral === null ? null : Math.round(percentualGeral * 100)
   const perimetro = 2 * Math.PI * 52
   const faixa = (p: number) => (p >= 70 ? 'bom' : p >= 50 ? 'medio' : 'baixo')
   return (
@@ -371,7 +373,11 @@ export function DadosLocais() {
         <div className="dp-heroi__texto">
           <p className="dp-heroi__selo"><Icone nome="grafico" tamanho={16} /> Seu desempenho</p>
           <h1>{nome ? `Olha seu desempenho, ${nome}` : 'Seu desempenho'}</h1>
-          <p>{mensagemDesempenho}</p>
+          {exemplo ? <>
+            <p className="dp-heroi__exemplo">Exemplo com números fictícios</p>
+            <p>É assim que fica o seu desempenho: acerto por tema, ritmo da semana e onde você mais erra. Cada resposta entra aqui, do celular ou do computador.</p>
+            <a className="botao botao--claro" href={href('/conta?modo=criar&voltar=%2Fdados')}>Criar conta grátis e ver o meu</a>
+          </> : <p>{mensagemDesempenho}</p>}
           {conta && (
             <p className="dp-heroi__sync" role="status">
               <span className={`ponto-sincronia ponto-sincronia--${statusSync.estado}`} aria-hidden="true" />
@@ -390,10 +396,10 @@ export function DadosLocais() {
           <span className="dp-anel__valor"><strong>{pct === null ? '0%' : `${pct}%`}</strong><small>{periodo.tipo === 'tudo' ? 'de acerto' : 'no período'}</small></span>
         </div>
         <dl className="dp-heroi__numeros">
-          <div><dt>{periodo.tipo === 'tudo' ? 'Respondidas' : 'Questões no período'}</dt><dd>{(periodo.tipo === 'tudo' ? respondidas : questoesNoPeriodo).toLocaleString('pt-BR')}{minhaConquista && <span className="medalha-inline"><Medalha conquista={minhaConquista} tamanho={20} titulo={`Emblema ${minhaConquista.rotulo}`} /></span>}</dd></div>
-          <div><dt>Sessões</dt><dd>{periodo.tipo === 'tudo' ? historico.length : sessoesNoPeriodo}</dd></div>
-          <div><dt>{periodo.tipo === 'tudo' ? 'Erros acumulados' : 'Erros no período'}</dt><dd><a href={href('/erros')} title="Abrir o caderno de erros">{errosTotais}</a></dd></div>
-          <div><dt>Favoritas</dt><dd><a href={href('/favoritas')}>{favoritos.length}</a></dd></div>
+          <div><dt>{periodo.tipo === 'tudo' ? 'Respondidas' : 'Questões no período'}</dt><dd>{exemplo ? '1.240' : (periodo.tipo === 'tudo' ? respondidas : questoesNoPeriodo).toLocaleString('pt-BR')}{minhaConquista && <span className="medalha-inline"><Medalha conquista={minhaConquista} tamanho={20} titulo={`Emblema ${minhaConquista.rotulo}`} /></span>}</dd></div>
+          <div><dt>Sessões</dt><dd>{exemplo ? 58 : periodo.tipo === 'tudo' ? historico.length : sessoesNoPeriodo}</dd></div>
+          <div><dt>{periodo.tipo === 'tudo' ? 'Erros acumulados' : 'Erros no período'}</dt><dd><a href={href('/erros')} title="Abrir o caderno de erros">{exemplo ? 347 : errosTotais}</a></dd></div>
+          <div><dt>Favoritas</dt><dd><a href={href('/favoritas')}>{exemplo ? 23 : favoritos.length}</a></dd></div>
         </dl>
       </section>
 

@@ -315,3 +315,5 @@
 .dp-semana__barra > span { width: 100%; border-radius: 8px 8px 0 0; }
 .dp-semana__dia strong { font-size: var(--corpo-menor); font-variant-numeric: tabular-nums; }
 .dp-semana__dia small { color: var(--texto-2); font-size: var(--meta); }
+.dp-heroi__exemplo { justify-self: start; display: inline-block; margin: 0 0 0.4rem !important; padding: 0.1rem 0.5rem; background: #f4cf7c; color: #1b1208 !important; font-family: var(--fonte-pixel); font-weight: 700; font-size: 0.75rem !important; letter-spacing: 0.06em; text-transform: uppercase; }
+.dp-heroi__texto .botao { margin-top: 0.8rem; }

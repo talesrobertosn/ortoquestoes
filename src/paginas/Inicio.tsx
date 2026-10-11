@@ -6,6 +6,7 @@ import { AREAS_TREINO, FILTROS_VAZIOS } from '../dados/tipos'
 import { href, navegar } from '../util/rotas'
 import { Carregando, Estado } from '../componentes/Estados'
 import { AmostraQuestao } from '../componentes/AmostraQuestao'
+import { AteAProva } from '../componentes/AteAProva'
 import { PodioPrevia } from '../componentes/PodioPrevia'
 import { Icone } from '../componentes/Icone'
 import { ModalEntrar } from '../componentes/ModalEntrar'
@@ -207,6 +208,7 @@ export function Inicio() {
                     <Icone nome="raio" tamanho={18} /> Criar conta grátis e treinar
                   </a>
                   <button type="button" className="inicio-heroi__entrar" onClick={() => definirModalEntrarAberto(true)}>Já tenho conta · Entrar</button>
+                  <p className="inicio-heroi__pratico"><Icone nome="certo" tamanho={14} /> No celular ou no computador, de onde estiver: sua conta continua de onde você parou.</p>
                 </>
               ) : sessaoEmAndamento ? (
                 <a className="botao botao--claro botao--grande" href={href('/sessao')}>
@@ -289,6 +291,8 @@ export function Inicio() {
       {indice && contagens && indice.total > 0 && (
         <>
           <CartaoCronograma cronograma={cronograma} />
+
+          {!cronograma.calculo && <AteAProva total={indice.total} conta={Boolean(conta)} />}
 
           <section className="inicio-ranking" aria-label="Ranking e conquistas">
             <img className="inicio-ranking__coroa" src={recurso('emblemas/podio-1.png')} alt="" width={72} height={72} />

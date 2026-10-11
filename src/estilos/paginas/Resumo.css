@@ -212,7 +212,7 @@ a.rs-marco:hover { color: var(--texto); border-color: var(--traco-forte); }
 .rs-ganho {
   display: grid; gap: 0.2rem; justify-items: center; text-align: center; padding: 0.8rem 0.5rem;
   border-radius: var(--raio-controle); color: #fff;
-  background: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px) 0 0 / 14px 14px, linear-gradient(160deg, #071f1c, #0b3a35 60%, #14655e);
+  background: var(--heroi);
   box-shadow: inset 0 0 0 2px rgba(244, 207, 124, 0.4);
 }
 .rs-ganho b { display: inline-flex; align-items: center; gap: 0.3rem; font-family: var(--fonte-pixel); font-size: 1.5rem; line-height: 1; color: #f4cf7c; }

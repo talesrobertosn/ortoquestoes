@@ -1988,3 +1988,7 @@ kbd {
   main section[class$="-heroi"] h1 { font-size: clamp(1.7rem, 8vw, 2.1rem); line-height: 1.08; margin-bottom: 0.4rem; }
   main section[class$="-heroi"] p { font-size: 0.97rem; line-height: 1.5; }
 }
+
+/* Estilo B (temporada pixel): as aberturas usam o céu em faixas com horizonte em pixels;
+   os brilhos e arcos redondos do degradê antigo saem de todas. */
+section[class$="-heroi"]::before, section[class$="-heroi"]::after, .heroi-escuro::before, .cr-destaque::before { display: none !important; }

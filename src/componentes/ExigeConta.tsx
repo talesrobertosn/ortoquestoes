@@ -30,9 +30,9 @@ export function ExigeConta({ caminho, children }: { caminho: string; children: R
         Entre, pratique e aproveite. Para estudar sem limite, <a href={href('/assinatura')}>conheça os planos</a>.
       </p>
       <ul className="exige-conta__lista">
-        <li><Icone nome="alvo" tamanho={18} /> Treino por tema, prova e ano</li>
-        <li><Icone nome="calendario" tamanho={18} /> Revisão no tempo certo</li>
-        <li><Icone nome="grafico" tamanho={18} /> Seu desempenho guardado em qualquer aparelho</li>
+        <li><Icone nome="grafico" tamanho={18} /> Responda no celular no plantão e continue no computador em casa</li>
+        <li><Icone nome="calendario" tamanho={18} /> O site escolhe o que revisar, no tempo certo: você só responde</li>
+        <li><Icone nome="alvo" tamanho={18} /> Quem faz mais questões chega mais preparado na prova</li>
       </ul>
       <div className="exige-conta__acoes">
         <a className="botao botao--principal botao--grande" href={href(`/conta?modo=criar&voltar=${voltar}`)}>Criar conta grátis</a>
