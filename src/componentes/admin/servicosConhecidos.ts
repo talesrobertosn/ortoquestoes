@@ -41,6 +41,21 @@ export function servicoConhecido(servico: string | null | undefined, uf?: string
   return null
 }
 
-/** Chave para agrupar: o serviço conhecido, ou o texto escrito sem acento e sem espaços repetidos. */
-export const chaveServico = (servico: string, uf?: string | null) =>
-  servicoConhecido(servico, uf) ?? normalizar(servico).replace(/\s+/g, ' ').trim()
+/** Palavras genéricas que não distinguem um lugar de outro ("Ortopedia do Hospital X" = "Hospital X"). */
+const GENERICAS = new Set(['hospital', 'hosp', 'ortopedia', 'ortopedia e traumatologia', 'traumatologia', 'servico', 'residencia', 'medica', 'medico', 'de', 'da', 'do', 'das', 'dos', 'e', 'em'])
+
+/** Rótulo de quem escreveu só "ortopedia", "hospital" ou marcou que atua em vários lugares. */
+export const SERVICO_GERAL = 'Vários lugares ou não especificado'
+
+/**
+ * Chave para agrupar: o serviço conhecido; "Vários serviços" e textos só com
+ * palavras genéricas ("Ortopedia", "Hospital") num grupo só; o resto, pelo
+ * texto sem acento e sem as palavras genéricas.
+ */
+export function chaveServico(servico: string, uf?: string | null): string {
+  const conhecido = servicoConhecido(servico, uf)
+  if (conhecido) return conhecido
+  const palavras = limpar(servico).split(' ').filter((p) => p && !GENERICAS.has(p))
+  if (!palavras.length || limpar(servico) === 'varios servicos') return SERVICO_GERAL
+  return palavras.join(' ')
+}

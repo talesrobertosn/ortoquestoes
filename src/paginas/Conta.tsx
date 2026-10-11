@@ -29,6 +29,7 @@ import { ResumoAssinatura } from '../componentes/ResumoAssinatura'
 import { MINIMO_RANKING } from '../util/nomeRanking'
 import { APELIDO_MAXIMO, usarPerfilRanking } from '../conta/perfilRanking'
 import { lerProvas, type ProvaInteresse } from '../conta/perfilEstudo'
+import { CampoServico } from '../componentes/CampoServico'
 import { CamposEtapa } from '../componentes/CamposEtapa'
 import { OpcaoServicoRanking } from '../componentes/ServicoRanking'
 import '../estilos/paginas/Conta.css'
@@ -191,7 +192,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     if (servico.trim().length < 2) f.push(['servico', 'hospital ou serviço', 'Informe o hospital ou serviço onde faz residência ou trabalha.'])
     if (cidade.trim().length < 2) f.push(['cidade', 'cidade', 'Informe sua cidade.'])
     if (!uf) f.push(['uf', 'UF', 'Escolha o estado.'])
-    if (whatsapp.replace(/\D/g, '').length < 10) f.push(['whatsapp', 'WhatsApp', 'Informe o WhatsApp com DDD.'])
+    if (whatsapp.trim() && whatsapp.replace(/\D/g, '').length < 10) f.push(['whatsapp', 'WhatsApp', 'Confira o WhatsApp: use o DDD e o número (ou deixe em branco).'])
     if (senha.length < 8) f.push(['senha', 'senha', 'Use pelo menos 8 caracteres.'])
     else if (confirmacao !== senha) f.push(['confirmacao', 'confirmação da senha', 'Digite a mesma senha nos dois campos.'])
     if (!aceitouTermos) f.push(['termos', 'aceite dos Termos de Uso', 'Marque que leu e aceita os Termos de Uso.'])
@@ -325,7 +326,8 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   const errosCadastro: Record<string, string> = criando && tentouCriar ? Object.fromEntries(faltasCadastro().map(([c, , m]) => [c, m])) : {}
   const inv = (c: string) => errosCadastro[c] ? ' entrada--invalida' : ''
   const erroDe = (c: string) => errosCadastro[c] && <span className="campo__erro" role="alert"><Icone nome="alerta" tamanho={14} />{errosCadastro[c]}</span>
-  const obrig = criando && <span className="campo__obrigatorio">obrigatório</span>
+  // Sem o selo "obrigatório" em cada campo: a validação continua e só avisa o que faltou ao enviar.
+  const obrig = null
   if (!sessao || recuperacao) {
     const titulo = recuperacao ? 'Crie uma nova senha' : modo === 'criar' ? 'Criar conta gratuita' : modo === 'recuperar' ? 'Recuperar senha' : 'Entrar na sua conta'
     const subtitulo = recuperacao ? 'Escolha a nova senha e confirme logo abaixo.' : modo === 'criar' ? 'Leva menos de um minuto. Depois é só confirmar o e-mail.' : modo === 'recuperar' ? 'Informe seu e-mail e enviaremos um link para criar uma nova senha.' : 'Continue de onde parou, em qualquer dispositivo.'
@@ -357,9 +359,9 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
             <div className="linha-campos linha-campos--2"><label className="campo" data-campo="nome"><span className="campo__rotulo">Nome {obrig}</span><input className={'entrada' + inv('nome')} autoComplete="given-name" required minLength={2} value={nome} onChange={e => definirNome(e.target.value)} placeholder="Como podemos chamar você?" />{erroDe('nome')}</label><label className="campo" data-campo="sobrenome"><span className="campo__rotulo">Sobrenome {obrig}</span><input className={'entrada' + inv('sobrenome')} autoComplete="family-name" required minLength={2} value={sobrenome} onChange={e => definirSobrenome(e.target.value)} />{erroDe('sobrenome')}</label></div>
             <label className="campo" data-campo="nascimento"><span className="campo__rotulo">Data de nascimento {obrig}</span><input className={'entrada' + inv('nascimento')} type="date" required value={nascimento} onChange={e => definirNascimento(e.target.value)} />{erroDe('nascimento')}</label>
             <CamposEtapa situacao={situacao} ano={anoResidencia} provas={provas} aoMudarSituacao={definirSituacao} aoMudarAno={definirAnoResidencia} aoMudarProvas={definirProvas} obrigatorio erros={errosCadastro} />
-            <label className="campo" data-campo="servico"><span className="campo__rotulo">Hospital ou serviço onde faz residência ou trabalha {obrig}</span><input className={'entrada' + inv('servico')} required value={servico} onChange={e => definirServico(e.target.value)} placeholder="Ex.: Hospital / clínica / instituição" />{erroDe('servico')}</label>
+            <CampoServico situacao={situacao} valor={servico} aoMudar={definirServico} obrigatorio classeEntrada={inv('servico')} extra={erroDe('servico')} />
             <div className="linha-campos linha-campos--2"><label className="campo" data-campo="cidade"><span className="campo__rotulo">Cidade {obrig}</span><input className={'entrada' + inv('cidade')} autoComplete="address-level2" required value={cidade} onChange={e => definirCidade(e.target.value)} />{erroDe('cidade')}</label><label className="campo" data-campo="uf"><span className="campo__rotulo">UF {obrig}</span><select className={'entrada' + inv('uf')} required value={uf} onChange={e => definirUf(e.target.value)}><option value="">Selecione</option>{UFS.map(sigla => <option key={sigla}>{sigla}</option>)}</select>{erroDe('uf')}</label></div>
-            <label className="campo" data-campo="whatsapp"><span className="campo__rotulo">WhatsApp com DDD {obrig}</span><input className={'entrada' + inv('whatsapp')} type="tel" autoComplete="tel" required value={whatsapp} onChange={e => definirWhatsapp(e.target.value)} placeholder="(00) 00000-0000" />{erroDe('whatsapp')}</label>
+            <label className="campo" data-campo="whatsapp"><span className="campo__rotulo">WhatsApp com DDD <span className="meta">(opcional)</span></span><input className={'entrada' + inv('whatsapp')} type="tel" autoComplete="tel" value={whatsapp} onChange={e => definirWhatsapp(e.target.value)} placeholder="(00) 00000-0000" />{erroDe('whatsapp')}</label>
           </>}
           {(recuperacao || modo !== 'recuperar') && <div className="campo" data-campo="senha">
             <span className="acesso__rotulo-senha"><label htmlFor="acesso-senha">{recuperacao ? 'Nova senha' : 'Senha'} {obrig}</label>{modo === 'entrar' && !recuperacao && <button type="button" className="acesso__link" onClick={() => trocarModo('recuperar')}>Esqueceu a senha?</button>}</span>
@@ -490,7 +492,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
         <div className="linha-campos linha-campos--2"><label className="campo">Nome<input className="entrada" required minLength={2} value={nome} onChange={e => definirNome(e.target.value)} /></label><label className="campo">Sobrenome<input className="entrada" required minLength={2} value={sobrenome} onChange={e => definirSobrenome(e.target.value)} /></label></div>
         <label className="campo">Data de nascimento<input className="entrada" type="date" value={nascimento} onChange={e => definirNascimento(e.target.value)} /></label>
         <CamposEtapa situacao={situacao} ano={anoResidencia} provas={provas} aoMudarSituacao={definirSituacao} aoMudarAno={definirAnoResidencia} aoMudarProvas={definirProvas} />
-        <label className="campo">Serviço onde faz residência ou trabalha<input className="entrada" value={servico} onChange={e => definirServico(e.target.value)} placeholder="Ex.: Hospital / clínica / instituição" /></label>
+        <CampoServico situacao={situacao} valor={servico} aoMudar={definirServico} />
         <OpcaoServicoRanking sessao={sessao} compacta noPerfil />
         <div className="linha-campos linha-campos--2"><label className="campo"><span>WhatsApp <span className="meta">(opcional)</span></span><input className="entrada" type="tel" autoComplete="tel" value={whatsapp} onChange={e => definirWhatsapp(e.target.value)} placeholder="(00) 00000-0000" /></label><label className="campo"><span>Cidade <span className="meta">(opcional)</span></span><input className="entrada" autoComplete="address-level2" value={cidade} onChange={e => definirCidade(e.target.value)} /></label></div>
         <div className="linha-campos linha-campos--2"><label className="campo"><span>UF <span className="meta">(opcional)</span></span><select className="entrada" value={uf} onChange={e => definirUf(e.target.value)}><option value="">Selecione</option>{UFS.map(sigla => <option key={sigla}>{sigla}</option>)}</select></label><label className="campo campo--checkbox"><input type="checkbox" checked={receberNovidades} onChange={e => definirReceberNovidades(e.target.checked)} /> Quero receber novidades sobre o Orto Questões</label></div>
