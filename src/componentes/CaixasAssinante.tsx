@@ -125,7 +125,7 @@ export function CartaoCronograma({ cronograma }: { cronograma: CronogramaHoje })
       <h2 id="cr-destaque-titulo" className="cr-destaque__nome">Cronograma</h2>
       <p className="cr-destaque__lide">{calculo
         ? (calculo.provaPassou ? 'A prova chegou. Boa sorte!' : <>Faltam <strong>{calculo.diasAteProva} dias</strong> para a sua prova. Siga a meta de hoje e o cronograma cuida do resto.</>)
-        : 'Um plano de estudo até o dia da sua prova: quanto fazer por dia e qual tema em cada semana, começando pelo que mais cai no TEOT e no TARO.'}</p>
+        : 'Você não perde tempo decidindo o que estudar: ele diz quanto fazer por dia e qual tema em cada semana, começando pelo que mais cai. Um pouco por dia, e no dia da prova você chega pronto.'}</p>
     </div>
   )
 

@@ -1,3 +1,4 @@
+import { AteAProva } from '../componentes/AteAProva'
 import { useEffect, useMemo, useState } from 'react'
 import { usarConta } from '../conta/ContextoConta'
 import { lerRespondidas } from '../estado/sessao'
@@ -33,7 +34,10 @@ const RECURSOS: { icone: NomeIcone; titulo: string; texto: string; destino: stri
 ]
 
 /** O que vem com qualquer plano, listado embaixo do preço. */
-const INCLUI = ['Cronograma baseado no que mais cai na prova', 'Ranking dos temas que mais caem', 'Simulado Nacional todo mês, com sua posição', 'Como a turma respondeu cada questão', 'Liga da residência e relatório mensal', 'Questões sem limite', 'Garantia de 7 dias em cada cobrança']
+const INCLUI = ['Cronograma baseado no que mais cai na prova', 'Estude de qualquer aparelho, de onde parou', 'Ranking dos temas que mais caem', 'Simulado Nacional todo mês, com sua posição', 'Como a turma respondeu cada questão', 'Liga da residência e relatório mensal', 'Questões sem limite', 'Garantia de 7 dias em cada cobrança']
+
+/** Para a conta do "até a prova": não vale baixar o índice só por isso. */
+const TOTAL_ACERVO_APROXIMADO = 6300
 
 export function Assinatura() {
   const { sessao } = usarConta()
@@ -137,7 +141,7 @@ export function Assinatura() {
           <p className="vp-heroi__selo"><Simbolo tamanho={16} variante="traco" /> Plano do assinante</p>
           <h1>Tudo o que você precisa para chegar pronto na prova.</h1>
           <p className="vp-heroi__lide">
-            {nome ? `${nome}, questões` : 'Questões'} sem limite, cronograma pelo que mais cai e Simulado Nacional todo mês.
+            {nome ? `${nome}, questões` : 'Questões'} sem limite, cronograma pelo que mais cai e Simulado Nacional todo mês. Do celular ou do computador, no tempo que você tem.
           </p>
           <div className="vp-heroi__acoes">
             <a className="botao botao--claro botao--grande" href="#planos" onClick={(e) => { e.preventDefault(); document.getElementById('planos')?.scrollIntoView({ behavior: 'smooth' }) }}>Ver os planos</a>
@@ -164,6 +168,8 @@ export function Assinatura() {
           <span className="vp-vitrine__nota-rodape">Ilustração com números de exemplo</span>
         </div>
       </section>}
+
+      {!comAcessoPago && <AteAProva total={TOTAL_ACERVO_APROXIMADO} conta={Boolean(sessao)} />}
 
       {(ativa || acessoPagoAteOFim) && metricas && (
         <section className="vp-ativo">

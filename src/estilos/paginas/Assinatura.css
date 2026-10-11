@@ -9,7 +9,7 @@
   position: relative; overflow: hidden; isolation: isolate;
   display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(15rem, 1fr); gap: 2rem 2.5rem; align-items: center;
   padding: clamp(1.75rem, 5vw, 3.5rem); border-radius: var(--raio-cartao);
-  background: radial-gradient(circle at 90% 10%, rgba(232, 179, 79, 0.3), transparent 45%), var(--heroi);
+  background: var(--heroi);
   color: var(--sobre-heroi); box-shadow: var(--sombra-media);
 }
 .vp-heroi::before {
@@ -340,7 +340,7 @@
 .ck__corpo { display: grid; gap: 1rem; padding: 1.4rem 1.4rem 1.2rem; }
 .ck__resumo {
   display: grid; gap: 0.3rem; margin: -1.4rem -1.4rem 0; padding: 1.5rem 4.5rem 1.2rem 1.4rem; color: #fff;
-  background: radial-gradient(120% 80% at 100% 0%, rgba(244, 207, 124, 0.3), transparent 60%), linear-gradient(150deg, #071f1c, #0b3a35 55%, #14655e);
+  background: var(--heroi);
 }
 .ck__selo { display: inline-flex; align-items: center; gap: 0.4rem; width: fit-content; padding: 0.25rem 0.7rem; border-radius: 999px; background: rgba(255, 255, 255, 0.12); color: #ffe3a3; font-size: var(--meta); font-weight: 750; }
 .ck__preco { display: flex; align-items: baseline; gap: 0.25rem; margin: 0.3rem 0 0; }

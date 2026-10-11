@@ -3,7 +3,7 @@
 .ti-heroi {
   position: relative; overflow: hidden; isolation: isolate;
   padding: clamp(1.5rem, 4.5vw, 2.75rem); border-radius: var(--raio-cartao); color: var(--sobre-heroi); box-shadow: var(--sombra-media);
-  background: radial-gradient(circle at 90% 8%, rgba(61, 191, 170, 0.25), transparent 45%), var(--heroi);
+  background: var(--heroi);
 }
 .ti-heroi h1 { margin: 0 0 0.5rem; color: var(--sobre-heroi); font-size: clamp(1.9rem, 5vw, 2.9rem); letter-spacing: -0.02em; line-height: 1.05; max-width: 20ch; }
 .ti-heroi > p:not(.ti-heroi__selo) { margin: 0; max-width: 58ch; color: var(--sobre-heroi-2); }
