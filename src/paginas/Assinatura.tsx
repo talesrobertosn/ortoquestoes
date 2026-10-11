@@ -83,6 +83,7 @@ export function Assinatura() {
   function escolher(plano: (typeof PLANOS)[number]) {
     if (!pagamentosHabilitados || !sessao) return
     definirPlanoEscolhido(plano)
+    if (renovarPix) definirMeioPagamento('pix')
     definirPix(null)
     definirCpf('')
     definirAceitouCondicoes(false)
@@ -122,6 +123,12 @@ export function Assinatura() {
 
   // Quem já tem acesso pago vê o estado do plano no topo, e não a página de vendas.
   const comAcessoPago = Boolean((ativa || acessoPagoAteOFim) && metricas)
+  // Pix (ativo, sem renovação automática) nos 7 dias finais: pode renovar já, e o
+  // período novo começa quando o atual termina (o servidor soma os dias).
+  const fimAtual = metricas?.fim_periodo ? Date.parse(metricas.fim_periodo) : NaN
+  const renovarPix = pixHabilitado && ativa && Boolean(metricas?.cancelar_ao_fim) && Number.isFinite(fimAtual) && fimAtual - Date.now() <= 7 * 864e5
+  const diasRestantes = renovarPix ? Math.max(1, Math.ceil((fimAtual - Date.now()) / 864e5)) : 0
+  const fimAtualTexto = renovarPix ? new Date(fimAtual).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' }) : ''
 
   return (
     <div className="empilha-2 vp">
@@ -168,11 +175,12 @@ export function Assinatura() {
               <a className="botao botao--principal" href={href('/cronograma')}>Abrir o cronograma</a>
               <a className="botao" href={href('/conta/assinatura')}>Gerenciar renovação ou pedir reembolso</a>
             </div>
+            {renovarPix && <p className="vp-ativo__renovar"><strong>Faltam {diasRestantes} {diasRestantes === 1 ? 'dia' : 'dias'}. Renove agora pelo Pix sem perder nada:</strong> os dias que restam continuam valendo e o novo período começa em {fimAtualTexto}, quando o atual termina. <a href="#planos">Escolher o plano</a></p>}
           </div>
         </section>
       )}
 
-      {!ativa && <section className="vp-secao vp-precos" id="planos">
+      {(!ativa || renovarPix) && <section className="vp-secao vp-precos" id="planos">
         <header className="vp-secao__cabeca vp-precos__cabeca">
           <p className="vp-sobre">Planos</p>
           <h2>Tudo liberado em qualquer plano. Você escolhe só o ritmo de pagamento.</h2>
@@ -210,7 +218,7 @@ export function Assinatura() {
                 <p className="vp-plano__pix"><IconePix /> Pix ou cartão</p>
                 {!sessao
                   ? <a className={'botao botao--largo vp-plano__cta' + (p.destaque ? ' botao--principal' : '')} href={href('/conta?modo=criar')}>Criar conta para assinar</a>
-                  : <button className={'botao botao--largo vp-plano__cta' + (p.destaque ? ' botao--principal' : '')} type="button" disabled={!pagamentosHabilitados || ativa} onClick={() => escolher(p)}>{ativa ? 'Plano ativo' : pagamentosHabilitados ? `Assinar ${p.nome.toLowerCase()}` : 'Em breve'}</button>}
+                  : <button className={'botao botao--largo vp-plano__cta' + (p.destaque ? ' botao--principal' : '')} type="button" disabled={!pagamentosHabilitados || (ativa && !renovarPix)} onClick={() => escolher(p)}>{renovarPix ? `Renovar no Pix: ${p.nome.toLowerCase()}` : ativa ? 'Plano ativo' : pagamentosHabilitados ? `Assinar ${p.nome.toLowerCase()}` : 'Em breve'}</button>}
                 <details className="vp-plano__detalhes">
                   <summary><span>Ver o que inclui</span><Icone nome="baixo" tamanho={16} /></summary>
                   <ul className="vp-plano__itens">
@@ -225,7 +233,7 @@ export function Assinatura() {
         {mensagem && !planoEscolhido && <p role="status" className="vp-aviso">{mensagem}</p>}
         <div className="vp-pagamento-seguro" role="note">
           <Icone nome="cadeado" tamanho={20} />
-          <p><strong>Pagamento protegido pelo Mercado Pago.</strong> No cartão, a renovação é automática na periodicidade escolhida; no Pix, é um pagamento único pelo período completo, sem renovação. Os dados do cartão ficam no Mercado Pago, nunca no Orto Questões. <a href={href('/condicoes-assinatura')}>Condições da assinatura</a></p>
+          <p><strong>Pagamento protegido pelo Mercado Pago.</strong> No cartão, a renovação é automática na periodicidade escolhida; no Pix, é um pagamento único pelo período completo, sem renovação; nos 7 dias finais dá para pagar o próximo antecipadamente sem perder nenhum dia. Os dados do cartão ficam no Mercado Pago, nunca no Orto Questões. <a href={href('/condicoes-assinatura')}>Condições da assinatura</a></p>
         </div>
       </section>}
 
@@ -310,6 +318,7 @@ export function Assinatura() {
         <details><summary>Como funciona o cancelamento?</summary><p>Em Minha conta, você escolhe entre impedir a próxima renovação ou, dentro de sete dias da última cobrança, pedir reembolso integral. Impedir a renovação não reembolsa a cobrança atual: o acesso pago continua até o fim do período. Se o Mercado Pago confirmar o reembolso, o acesso pago termina e sua conta volta ao gratuito.</p></details>
         <details><summary>Se eu cancelar o semestral após três meses, recebo os três restantes?</summary><p>Após os sete dias para reembolso integral, não há devolução proporcional automática. Você mantém o acesso até completar os seis meses pagos, e a assinatura não renova. A mesma regra vale para o plano anual. Seus direitos previstos em lei permanecem preservados. Consulte as <a href={href('/condicoes-assinatura')}>condições da assinatura</a> antes de comprar.</p></details>
         <details><summary>Como funciona a garantia?</summary><p>Até 7 dias depois de cada cobrança aprovada, você pode pedir reembolso integral em Minha conta. Se a solicitação automática não for confirmada pelo Mercado Pago, use o canal de contato para atendimento manual. O acesso pago só é encerrado após confirmação do reembolso. Depois desse prazo não há reembolso proporcional por esta garantia.</p></details>
+        <details><summary>Paguei no Pix. Posso renovar antes de acabar sem perder dias?</summary><p>Pode. O Pix não renova sozinho, por isso enviamos um aviso por e-mail 3 dias antes do fim. A partir de 7 dias antes do término, a página de planos libera a renovação pelo Pix: os dias que faltam continuam valendo e o novo período começa no dia em que o atual termina. Exemplo: faltando 3 dias, quem paga o mensal hoje fica com esses 3 dias mais 1 mês completo. Nada se perde por pagar antes.</p></details>
         <details><summary>O que acontece com meu histórico se eu cancelar?</summary><p>Nada. Respostas, revisões, favoritas, anotações e desempenho ficam guardados. Ao impedir a renovação, o acesso pago continua até o fim do período; após um reembolso confirmado, a conta volta ao limite gratuito.</p></details>
         <details><summary>O que o assinante tem a mais?</summary><p>Questões sem limite{limitesHabilitados ? '' : ' (nesta fase, o gratuito também não tem limite)'} e os recursos exclusivos: o cronograma até a prova baseado no que mais cai, o Simulado Nacional mensal com posição e relatório de prontidão, o ranking dos temas que mais caem, como a turma respondeu cada questão (com os filtros pela turma no Treinar), a liga da residência e o relatório do mês por e-mail. Revisões, calendário e comentários são iguais para todos.</p></details>
         <details><summary>Como o cronograma é montado?</summary><p>Você informa a data da prova, a intensidade (leve, firme ou completo) e os dias de folga. O cronograma divide as questões que faltam pelos dias até a prova, coloca primeiro as áreas e os assuntos que mais caem, dá mais espaço aos temas em que você está abaixo da média e reserva a última semana para a reta final. Todo dia ele se recalcula: se você atrasar, a meta sobe um pouco; se adiantar, alivia. Quem não assina pode ver a prévia do próprio cronograma antes de decidir.</p></details>
@@ -348,13 +357,14 @@ export function Assinatura() {
                   <span className="ck__meio-texto"><strong>Pix</strong><small>Pagamento único, liberado na hora em que cai. Sem renovação automática.</small></span>
                   <span className="ck__meio-marca" aria-hidden="true"><Icone nome="certo" tamanho={14} /></span>
                 </label>}
-                <label className={'ck__meio' + (meioPagamento === 'cartao' ? ' ck__meio--ativo' : '')}>
+                {!renovarPix && <label className={'ck__meio' + (meioPagamento === 'cartao' ? ' ck__meio--ativo' : '')}>
                   <input type="radio" name="meio-pagamento" checked={meioPagamento === 'cartao'} onChange={() => { definirMeioPagamento('cartao'); definirAceitouCondicoes(false) }} />
                   <span className="ck__meio-icone"><IconeCartao tamanho={24} /></span>
                   <span className="ck__meio-texto"><strong>Cartão de crédito</strong><small>Renovação automática a cada {planoEscolhido.meses === 1 ? 'mês' : `${planoEscolhido.meses} meses`}. Cancele quando quiser.</small></span>
                   <span className="ck__meio-marca" aria-hidden="true"><Icone nome="certo" tamanho={14} /></span>
-                </label>
+                </label>}
               </fieldset>
+              {renovarPix && <p className="ck__renovacao"><Icone nome="calendario" tamanho={14} /> Renovação antecipada: os {diasRestantes} {diasRestantes === 1 ? 'dia que falta' : 'dias que faltam'} continuam valendo. O novo período de {planoEscolhido.meses === 1 ? '1 mês' : `${planoEscolhido.meses} meses`} começa em {fimAtualTexto}, quando o atual termina.</p>}
               {meioPagamento === 'pix' && <label className="campo ck__cpf"><span>CPF de quem vai pagar</span><input inputMode="numeric" autoComplete="off" maxLength={14} placeholder="000.000.000-00" value={cpf} onChange={evento => definirCpf(evento.target.value)} /><small>Só para o Mercado Pago gerar o Pix. Não fica salvo no seu perfil.</small></label>}
               <label className="ck__aceite"><input type="checkbox" checked={aceitouCondicoes} onChange={evento => definirAceitouCondicoes(evento.target.checked)} /> <span>Li e aceito as <a href={href('/condicoes-assinatura')} target="_blank" rel="noopener noreferrer">Condições da Assinatura</a> (versão {VERSAO_CONDICOES_ASSINATURA}) e os <a href={href('/termos')} target="_blank" rel="noopener noreferrer">Termos de Uso</a> para este plano e este valor.</span></label>
               <button className="botao botao--principal botao--largo ck__cta" type="button" disabled={!aceitouCondicoes || abrindoCheckout || (meioPagamento === 'pix' && cpf.replace(/\D/g, '').length !== 11)} onClick={() => void confirmarCompra()}>

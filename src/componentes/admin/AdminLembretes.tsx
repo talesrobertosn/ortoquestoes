@@ -103,6 +103,7 @@ export function AdminLembretes() {
             </article>
           )
         })}
+        <ResumoQuinzenal aoPrevia={(html) => definirPrevia({ campanha: 'nunca', html, para: null })} />
       </div>
       {previa && <div className="adm-previa">{previa.para && <p className="adm-nota">Prévia do e-mail de <strong>{previa.para}</strong>, com os números dessa pessoa.</p>}<iframe title="Prévia do lembrete" srcDoc={previa.html} sandbox="" /><button type="button" className="adm-link" onClick={() => definirPrevia(null)}>Fechar prévia</button></div>}
     </section>
@@ -150,4 +151,67 @@ function ListaPessoas({ lista, pix, aoVerPrevia }: { lista: Pessoa[] | string | 
       </tr>)}</tbody>
     </table></div>
   </details>
+}
+
+/** Última quinzena encerrada no fuso de São Paulo (mesma regra da Function). */
+function quinzenaAnterior(agora = new Date()) {
+  const sp = new Date(agora.getTime() - 3 * 3_600_000)
+  if (sp.getUTCDate() >= 16) return `${sp.getUTCFullYear()}-${String(sp.getUTCMonth() + 1).padStart(2, '0')}-q1`
+  const ant = new Date(Date.UTC(sp.getUTCFullYear(), sp.getUTCMonth() - 1, 1))
+  return `${ant.getUTCFullYear()}-${String(ant.getUTCMonth() + 1).padStart(2, '0')}-q2`
+}
+const MESES_NOME = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro']
+function nomeQuinzena(ref: string) {
+  const [ano, mes] = ref.split('-').map(Number)
+  const ultimo = new Date(Date.UTC(ano, mes, 0)).getUTCDate()
+  return `${ref.endsWith('q1') ? '1 a 15' : `16 a ${ultimo}`} de ${MESES_NOME[mes - 1]}`
+}
+
+/**
+ * Resumo quinzenal: o relatório de estudo (questões, acerto, temas e próximo
+ * passo) para todos que estudaram na quinzena. Sai sozinho pelo agendador nos
+ * dias 1 e 16; aqui dá para ver a prévia e mandar o que ficou pendente.
+ */
+function ResumoQuinzenal({ aoPrevia }: { aoPrevia: (html: string) => void }) {
+  const [ref] = useState(quinzenaAnterior)
+  const [resumo, definirResumo] = useState<{ pendentes: number; enviados: number; falharam: number } | null | string>(null)
+  const [enviando, definirEnviando] = useState('')
+  const [mensagem, definirMensagem] = useState('')
+  useEffect(() => {
+    chamarRpc<Array<{ pendentes: number; enviados: number; falharam: number }>>('resumo_quinzenal_admin', { p_ref: ref })
+      .then(([r]) => definirResumo(r ?? { pendentes: 0, enviados: 0, falharam: 0 }))
+      .catch((f) => definirResumo(erroDoPainel(f, '202610110200_quinzenal_e_pix_antecipado.sql')))
+  }, [ref, enviando])
+  async function previa() {
+    try { const r = await chamarFuncao<{ html: string }>('enviar-email', { acao: 'previa_quinzenal', quinzena: ref }); aoPrevia(r.html) }
+    catch (f) { definirMensagem(`Prévia: ${String(f).replace(/^Error: /, '')}`) }
+  }
+  async function enviar(pendentes: number) {
+    if (!window.confirm(`Enviar o resumo de ${nomeQuinzena(ref)} para ${pendentes} ${pendentes === 1 ? 'pessoa' : 'pessoas'}?`)) return
+    let total = 0, falhas = 0
+    try {
+      for (let volta = 0; volta < 25; volta++) {
+        definirEnviando(`Enviando… ${total}`)
+        const r = await chamarFuncao<{ enviados: number; falhas: number; talvez_restem: boolean }>('enviar-email', { acao: 'relatorios_quinzenais', quinzena: ref, limite: 40 })
+        total += r.enviados; falhas += r.falhas
+        if (!r.talvez_restem || r.enviados === 0) break
+      }
+      definirMensagem(`Resumo de ${nomeQuinzena(ref)}: ${total} enviados${falhas ? `, ${falhas} com falha` : ''}.`)
+    } catch (f) { definirMensagem(`Envio interrompido: ${String(f).replace(/^Error: /, '')}. ${total} já tinham saído.`) }
+    finally { definirEnviando('') }
+  }
+  const pendentes = resumo && typeof resumo === 'object' ? Number(resumo.pendentes) : 0
+  return <article className="adm-lembrete">
+    <img src={recurso('pixel/relatorio.png')} width={40} height={40} alt="" />
+    <div className="adm-lembrete__texto">
+      <h3>Resumo quinzenal · {nomeQuinzena(ref)}</h3>
+      <p>Quantas questões a pessoa fez na quinzena, o acerto comparado com a anterior, os temas e o próximo passo. Vai para todos que estudaram na quinzena e não desligaram os resumos. Sai sozinho nos dias 1 e 16 pelo agendador; no dia 1, assinantes recebem só o relatório do mês.</p>
+      <p className="adm-nota">{resumo === null ? 'Contando…' : typeof resumo === 'string' ? resumo : <><strong>{pendentes}</strong> pendentes · {Number(resumo.enviados)} enviados{Number(resumo.falharam) ? ` · ${resumo.falharam} com falha` : ''}</>}</p>
+      {mensagem && <p role="status" className="adm-nota">{mensagem}</p>}
+    </div>
+    <div className="adm-lembrete__acoes">
+      <button type="button" className="botao" onClick={() => void previa()}>Ver prévia</button>
+      <button type="button" className="botao botao--principal" disabled={!pendentes || !!enviando} onClick={() => void enviar(pendentes)}>{enviando || (pendentes ? `Enviar para ${pendentes}` : 'Ninguém agora')}</button>
+    </div>
+  </article>
 }

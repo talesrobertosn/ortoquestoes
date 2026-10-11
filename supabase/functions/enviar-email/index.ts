@@ -16,6 +16,11 @@ import { MARCOS, emailCarta, emailLembrete, emailMarco, emailRelatoResolvido, em
  *   relatorios_mensais administrador (ou o agendador, com o cabeçalho x-segredo igual
  *                      a EMAIL_SEGREDO): envia o relatório do mês a um lote de assinantes.
  *   previa_relatorio   administrador: o relatório de uma pessoa, sem enviar.
+ *   relatorios_quinzenais  administrador ou agendador (x-segredo): o resumo da
+ *                      quinzena ("AAAA-MM-q1", dias 1 a 15, ou "AAAA-MM-q2", 16 ao
+ *                      fim; sem "quinzena", a última que terminou) para quem estudou
+ *                      nela. Na q2, quem recebe o relatório mensal fica de fora.
+ *   previa_quinzenal   administrador: o resumo quinzenal de uma pessoa, sem enviar.
  *   lembretes          administrador: envia um lote do lembrete de uma campanha
  *                      ("nunca", "tres_dias", "sete_dias", "renovacao_pix", 3 dias
  *                      antes do fim do Pix, ou "renovacao_pix_hoje", no dia). Um por
@@ -87,6 +92,31 @@ async function montarRelatorio(id: string, mes: string) {
   return { ...email, para: dados.email }
 }
 
+/** Última quinzena encerrada, no fuso de São Paulo: no dia 16 em diante, a 1ª do mês; antes, a 2ª do mês anterior. */
+function quinzenaAnterior(agora = new Date()): string {
+  const sp = new Date(agora.getTime() - 3 * 3600_000)
+  if (sp.getUTCDate() >= 16) return `${sp.getUTCFullYear()}-${String(sp.getUTCMonth() + 1).padStart(2, '0')}-q1`
+  return `${mesAnterior(agora)}-q2`
+}
+const quinzenaValida = (q?: string) => (q && /^\d{4}-(0[1-9]|1[0-2])-q[12]$/.test(q) ? q : quinzenaAnterior())
+function limitesQuinzena(ref: string): [string, string] {
+  const [ano, mes] = ref.split('-').map(Number)
+  const dois = (n: number) => String(n).padStart(2, '0')
+  if (ref.endsWith('q1')) return [`${ano}-${dois(mes)}-01`, `${ano}-${dois(mes)}-16`]
+  const seguinte = mes === 12 ? `${ano + 1}-01-01` : `${ano}-${dois(mes + 1)}-01`
+  return [`${ano}-${dois(mes)}-16`, seguinte]
+}
+
+async function montarQuinzenal(id: string, ref: string) {
+  const [inicio, fim] = limitesQuinzena(ref)
+  const r = await banco('rpc/dados_relatorio_periodo', { method: 'POST', body: JSON.stringify({ p_id: id, p_inicio: inicio, p_fim: fim, p_ref: ref }) })
+  if (!r.ok) throw new Error('consulta_relatorio_falhou')
+  const dados = await r.json() as Omit<DadosRelatorio, 'site' | 'linkDescadastro'> & { email: string | null }
+  if (!dados?.email) return null
+  const email = emailRelatorio({ ...dados, site: site(), linkDescadastro: await linkDescadastro(id, 'relatorio') })
+  return { ...email, para: dados.email }
+}
+
 const esperar = (ms: number) => new Promise((resolver) => setTimeout(resolver, ms))
 
 /**
@@ -95,10 +125,12 @@ const esperar = (ms: number) => new Promise((resolver) => setTimeout(resolver, m
  * registrada e é tentada de novo no próximo lote. O Resend aceita 2 envios
  * por segundo no plano grátis, daí a pausa entre um e outro.
  */
-async function enviarRelatorios(mesPedido?: string, limitePedido?: number) {
-  const mes = mesValido(mesPedido)
+async function enviarRelatorios(mesPedido?: string, limitePedido?: number, quinzenal = false) {
+  const mes = quinzenal ? quinzenaValida(mesPedido) : mesValido(mesPedido)
   const limite = Math.max(1, Math.min(Number(limitePedido) || 40, 80))
-  const r = await banco('rpc/destinatarios_relatorio_mensal', { method: 'POST', body: JSON.stringify({ p_mes: mes, p_limite: limite }) })
+  const r = quinzenal
+    ? await banco('rpc/destinatarios_relatorio_quinzenal', { method: 'POST', body: JSON.stringify({ p_ref: mes, p_limite: limite }) })
+    : await banco('rpc/destinatarios_relatorio_mensal', { method: 'POST', body: JSON.stringify({ p_mes: mes, p_limite: limite }) })
   if (!r.ok) throw new Error('consulta_destinatarios_falhou')
   const destinatarios = (await r.json() as Array<{ id_usuario: string }>).map((d) => d.id_usuario)
   let enviados = 0, falhas = 0
@@ -114,7 +146,7 @@ async function enviarRelatorios(mesPedido?: string, limitePedido?: number) {
     }
     if (!linha) continue
     try {
-      const pronto = await montarRelatorio(id, mes)
+      const pronto = quinzenal ? await montarQuinzenal(id, mes) : await montarRelatorio(id, mes)
       if (!pronto) throw new Error('usuario_sem_email')
       await enviarEmail(pronto.para, pronto.assunto, pronto.html, pronto.texto, await linkDescadastro(id, 'relatorio'))
       await banco(`emails_enviados?id=eq.${linha.id}`, { method: 'PATCH', body: JSON.stringify({ status: 'enviado', assunto: pronto.assunto }) })
@@ -186,7 +218,7 @@ Deno.serve(async (req) => {
   if (req.method === 'OPTIONS') return new Response(null, { headers: cors(req) })
   if (req.method !== 'POST') return json({ erro: 'metodo_invalido' }, 405, req)
   try {
-    const corpo = await req.json() as { acao?: string; id_usuario?: string; recado?: string; formato?: string; id_questao?: string; u?: string; t?: string; tipo?: string; mes?: string; limite?: number; campanha?: string; id_relato?: number; dias_restantes?: number; dias_fora?: number; fim_periodo?: string; plano?: string }
+    const corpo = await req.json() as { acao?: string; id_usuario?: string; recado?: string; formato?: string; id_questao?: string; u?: string; t?: string; tipo?: string; mes?: string; quinzena?: string; limite?: number; campanha?: string; id_relato?: number; dias_restantes?: number; dias_fora?: number; fim_periodo?: string; plano?: string }
 
     if (corpo.acao === 'descadastrar') {
       const tipo = corpo.tipo === 'relatorio' ? 'relatorio' : corpo.tipo === 'lembretes' ? 'lembretes' : 'conquistas'
@@ -203,6 +235,13 @@ Deno.serve(async (req) => {
     if (corpo.acao === 'relatorios_mensais' && req.headers.get('x-segredo')) {
       if (!await segredoValido(req.headers.get('x-segredo')!)) return json({ erro: 'acesso_negado' }, 403, req)
       return json(await enviarRelatorios(corpo.mes, corpo.limite), 200, req)
+    }
+
+    // Resumo quinzenal pelo agendador (dias 1 e 16): autenticado pelo segredo, sem usuário.
+    if (corpo.acao === 'relatorios_quinzenais' && req.headers.get('x-segredo')) {
+      if (!await segredoValido(req.headers.get('x-segredo')!)) return json({ erro: 'acesso_negado' }, 403, req)
+      if (!emailConfigurado()) return json({ erro: 'email_nao_configurado' }, 503, req)
+      return json(await enviarRelatorios(corpo.quinzena, corpo.limite, true), 200, req)
     }
 
     // Lembrete de renovação do Pix pelo agendador diário: autenticado pelo segredo, sem usuário.
@@ -222,6 +261,16 @@ Deno.serve(async (req) => {
       }
       if (!emailConfigurado()) return json({ erro: 'email_nao_configurado' }, 503, req)
       return json(await enviarRelatorios(corpo.mes, corpo.limite), 200, req)
+    }
+
+    if (corpo.acao === 'relatorios_quinzenais' || corpo.acao === 'previa_quinzenal') {
+      if (!await ehAdministrador(usuario.id)) return json({ erro: 'acesso_negado' }, 403, req)
+      if (corpo.acao === 'previa_quinzenal') {
+        const pronto = await montarQuinzenal(corpo.id_usuario && /^[0-9a-f-]{36}$/.test(corpo.id_usuario) ? corpo.id_usuario : usuario.id, quinzenaValida(corpo.quinzena))
+        return pronto ? json({ assunto: pronto.assunto, html: pronto.html }, 200, req) : json({ erro: 'usuario_sem_email' }, 404, req)
+      }
+      if (!emailConfigurado()) return json({ erro: 'email_nao_configurado' }, 503, req)
+      return json(await enviarRelatorios(corpo.quinzena, corpo.limite, true), 200, req)
     }
 
     if (corpo.acao === 'lembretes' || corpo.acao === 'previa_lembrete') {
