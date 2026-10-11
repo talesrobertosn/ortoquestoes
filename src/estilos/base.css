@@ -913,6 +913,13 @@ textarea {
   background: var(--erro-veu);
   color: var(--erro);
 }
+.resultado__nota {
+  display: block;
+  margin-top: 0.25rem;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: var(--texto-2);
+}
 .resultado--neutro {
   border-color: var(--traco-forte);
   background: var(--superficie-2);

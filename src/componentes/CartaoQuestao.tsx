@@ -278,6 +278,7 @@ export function CartaoQuestao({
             {numero && total ? <h1 className="qz-numero">Questão {numero}<small> de {total}</small></h1> : <h1 className="qz-numero">Questão</h1>}
             {(questao.prova || questao.ano) && <span className="qz-origem">{[questao.prova, questao.ano].filter(Boolean).join(' · ')}</span>}
             {questao.simulado && <span className="qz-origem qz-origem--simulado">{ROTULO_SIMULADOS}</span>}
+            {questao.gabaritoBibliografia && <span className="qz-origem" title="A banca não divulgou o gabarito desta prova. A resposta foi definida pelo Orto Questões a partir da bibliografia.">Gabarito não oficial</span>}
             {questao.anulada && <span className="qz-chip qz-chip--alerta">Anulada</span>}
           </div>
 
@@ -379,7 +380,7 @@ export function CartaoQuestao({
               const eEscolhida = resposta!.escolhida === letra
               if (eGabarito) {
                 classes.push('alternativa--certa')
-                marca = { texto: 'Gabarito', icone: 'certo' }
+                marca = { texto: questao.gabaritoBibliografia ? 'Resposta pela bibliografia' : 'Gabarito', icone: 'certo' }
               }
               if (eEscolhida && !eGabarito) {
                 classes.push('alternativa--errada')
@@ -640,15 +641,23 @@ function Resultado({ questao, resposta }: { questao: Questao; resposta: Resposta
       </div>
     )
   }
+  // Prova sem gabarito oficial: a resposta vem da bibliografia e já conta no desempenho.
+  const rotulo = questao.gabaritoBibliografia ? 'Resposta pela bibliografia' : 'Gabarito'
+  const nota = questao.gabaritoBibliografia && (
+    <small className="resultado__nota">
+      A banca não divulgou o gabarito oficial desta prova. A resposta {questao.gabarito} foi definida pelo Orto Questões a partir da bibliografia
+      e conta no seu desempenho e no ranking.
+    </small>
+  )
   return resposta.correta ? (
     <div className="resultado resultado--acerto" role="status">
       <Icone nome="certo" />
-      Você acertou. Gabarito {questao.gabarito}.
+      <span>Você acertou. {rotulo}: {questao.gabarito}.{nota}</span>
     </div>
   ) : (
     <div className="resultado resultado--erro" role="status">
       <Icone nome="errado" />
-      Você errou. Gabarito {questao.gabarito}, você marcou {resposta.escolhida}.
+      <span>Você errou. {rotulo}: {questao.gabarito}, você marcou {resposta.escolhida}.{nota}</span>
     </div>
   )
 }
@@ -712,7 +721,7 @@ function ComentarioDaIA({
 
       {!carregando && !comentario && (
         <p className="comentario__pendente">
-          {questao.tipo === 'dissertativa' ? 'Esta questão ainda não tem comentário.' : 'Esta questão ainda não tem comentário. O gabarito acima é o oficial da prova.'}
+          {questao.tipo === 'dissertativa' ? 'Esta questão ainda não tem comentário.' : questao.gabaritoBibliografia ? 'Esta questão ainda não tem comentário. A resposta acima é a da bibliografia, porque a banca não divulgou gabarito oficial.' : 'Esta questão ainda não tem comentário. O gabarito acima é o oficial da prova.'}
         </p>
       )}
 
@@ -755,7 +764,7 @@ function ComentarioDaIA({
                 <header className="cm-alt__cabeca">
                   <span className="cm-alt__letra">{referencia}</span>
                   <strong className="cm-alt__texto">{textoAlternativa(referencia) ?? 'Alternativa correta'}</strong>
-                  <span className="cm-selo cm-selo--certa"><Icone nome="certo" tamanho={13} /> {questao.gabarito ? 'Correta' : 'Resposta pela bibliografia'}</span>
+                  <span className="cm-selo cm-selo--certa"><Icone nome="certo" tamanho={13} /> {questao.gabarito && !questao.gabaritoBibliografia ? 'Correta' : 'Resposta pela bibliografia'}</span>
                   {escolhida === referencia && <span className="cm-selo">Sua resposta</span>}
                 </header>
                 {comentario.correta.trim()

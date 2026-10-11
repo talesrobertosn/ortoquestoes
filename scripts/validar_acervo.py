@@ -157,6 +157,8 @@ def principal() -> int:
     # Alimentam a conferência dos comentários, logo adiante.
     gabaritos: dict[str, str | None] = {}
     letras_da_questao: dict[str, set[str]] = {}
+    # Resposta pela bibliografia que passou a valer como gabarito de correção.
+    bibliograficas: dict[str, str] = {}
     # cópia -> questão mantida (campo duplicataDe)
     duplicatas: dict[str, str] = {}
 
@@ -208,12 +210,21 @@ def principal() -> int:
                 if alternativas or gabarito:
                     erros.append(f"{onde}: dissertativa não leva alternativas nem gabarito")
             elif gabarito is None:
-                if not questao.get("anulada"):
+                if not questao.get("anulada") and not questao.get("gabaritoBibliografia"):
                     avisos.append(f"{onde}: sem gabarito")
             elif gabarito not in letras:
                 erros.append(
                     f"{onde}: gabarito '{gabarito}' não existe entre as alternativas {letras}"
                 )
+
+            bibliografia = questao.get("gabaritoBibliografia")
+            if bibliografia is not None:
+                if gabarito or questao.get("anulada"):
+                    erros.append(f"{onde}: 'gabaritoBibliografia' só vale para questão sem gabarito oficial e não anulada")
+                elif bibliografia not in letras:
+                    erros.append(f"{onde}: 'gabaritoBibliografia' aponta letra inexistente {bibliografia}")
+                else:
+                    bibliograficas[identificador] = bibliografia
 
             if questao.get("duplicataDe"):
                 duplicatas[identificador] = questao["duplicataDe"]
@@ -266,6 +277,21 @@ def principal() -> int:
     )
     erros.extend(erros_ia)
     avisos.extend(avisos_ia)
+
+    # A letra que vale para a correção tem de ser a mesma que o comentário defende.
+    if bibliograficas:
+        provaveis = {
+            qid: c.get("provavel")
+            for arquivo in DIR_COMENTARIOS.glob("*.json")
+            for qid, c in (ler_json(arquivo, {}) or {}).items()
+            if isinstance(c, dict)
+        }
+        for qid, letra in sorted(bibliograficas.items()):
+            if provaveis.get(qid) != letra:
+                erros.append(
+                    f"{qid}: gabaritoBibliografia {letra} diferente do 'provavel' do comentário "
+                    f"({provaveis.get(qid)})"
+                )
 
     indice = ler_json(CAMINHO_INDICE, None)
     if indice is None:
