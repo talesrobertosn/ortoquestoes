@@ -275,7 +275,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
         </div>
       </section>
 
-      {!conta && <p className="aviso-ia">Crie sua conta gratuita para guardar respostas, favoritos e revisões entre acessos e dispositivos. No gratuito, você responde um número limitado de questões por dia, renovado todos os dias; os planos liberam sem limite. <a href={href('/conta')}>Criar minha conta</a></p>}
+      {!conta && <p className="aviso-ia">Crie sua conta gratuita para guardar respostas, favoritos e revisões entre acessos e dispositivos. No gratuito, você responde um número limitado de questões a cada 24 horas; os planos liberam sem limite. <a href={href('/conta')}>Criar minha conta</a></p>}
 
       <section className="tr-etapa">
         <header className="tr-etapa__cabeca">

@@ -40,6 +40,7 @@
 .adm-link { display: inline-flex; align-items: center; gap: .25rem; flex: 0 0 auto; min-height: 36px; padding: 0 .4rem; border: 0; background: none; color: var(--verdete); font: inherit; font-weight: 700; cursor: pointer; }
 .adm-vazio { margin: 0; padding: 1rem; border-radius: var(--raio-controle); background: var(--superficie-2); color: var(--texto-2); }
 .adm-nota { margin: 0; color: var(--texto-2); font-size: var(--corpo-menor); }
+.adm-subtitulo { margin: .4rem 0 0; font-size: var(--corpo-menor); font-weight: 750; color: var(--texto); }
 .adm-ajuda { color: var(--texto-2); line-height: 1.4; }
 .adm-mini { list-style: none; margin: 0; padding: 0; display: grid; }
 .adm-mini li { display: flex; align-items: center; justify-content: space-between; gap: .75rem; padding: .6rem 0; border-bottom: var(--borda); }

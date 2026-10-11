@@ -11,16 +11,18 @@ const CHAVE_SALDO = 'limite:saldo'
 /**
  * Último saldo informado pelo servidor, só para avisos de interface (quem
  * decide é autorizar_resposta). Sem registro, o limite não vale para esta
- * conta; registro de outro dia significa cota cheia de novo.
+ * conta; janela de 24 h já vencida significa cota cheia de novo.
  */
 export function saldoGratuitoHoje(): number | null {
   if (!LIMITES_HABILITADOS) return null
-  const saldo = ler<{ dia: string; restantes: number; limite: number } | null>(CHAVE_SALDO, null)
+  const saldo = ler<{ liberaEm?: string; dia?: string; restantes: number; limite: number } | null>(CHAVE_SALDO, null)
   if (!saldo) return null
-  return saldo.dia === chaveDia() ? saldo.restantes : saldo.limite
+  // Registros anteriores à janela de 24 h guardavam o dia de São Paulo.
+  const valendo = saldo.liberaEm ? Date.parse(saldo.liberaEm) > Date.now() : saldo.dia === chaveDia()
+  return valendo ? saldo.restantes : saldo.limite
 }
 
-/** Quantas questões grátis por dia a conta tinha na última resposta do servidor (o painel pode mudar). */
+/** Quantas questões grátis por janela de 24 h a conta tinha na última resposta do servidor (o painel pode mudar). */
 export function limiteGratisConhecido(): number | null {
   if (!LIMITES_HABILITADOS) return null
   const saldo = ler<{ limite?: number } | null>(CHAVE_SALDO, null)
@@ -103,9 +105,9 @@ export function usarLimiteDiario() {
         liberaEm: String(r.libera_em), sequencia: Number(r.sequencia ?? 0), motivo: r.motivo ? String(r.motivo) : undefined,
       }
       if (normalizado.paywallAtivo) registrarAssinante(normalizado.ilimitado)
-      if (normalizado.paywallAtivo && !normalizado.ilimitado && normalizado.restantes !== null) gravar(CHAVE_SALDO, { dia: chaveDia(), restantes: normalizado.restantes, limite: normalizado.limite })
+      if (normalizado.paywallAtivo && !normalizado.ilimitado && normalizado.restantes !== null) gravar(CHAVE_SALDO, { liberaEm: normalizado.liberaEm, restantes: normalizado.restantes, limite: normalizado.limite })
       else if (!normalizado.paywallAtivo || normalizado.ilimitado) gravar(CHAVE_SALDO, null)
-      // A 20ª resposta já fecha o dia: o aviso e o convite aparecem sem esperar a 21ª tentativa.
+      // A 20ª resposta já fecha a janela: o aviso e o convite aparecem sem esperar a 21ª tentativa.
       if ((!normalizado.permitido && !normalizado.falhaValidacao && normalizado.paywallAtivo) || (normalizado.permitido && normalizado.paywallAtivo && !normalizado.ilimitado && normalizado.restantes === 0)) registrarBloqueioDiario(normalizado.liberaEm)
       else if (normalizado.permitido && (normalizado.ilimitado || !normalizado.paywallAtivo || (normalizado.restantes ?? 0) > 0)) limparBloqueioDiario()
       definirEstado(normalizado)
@@ -122,7 +124,7 @@ export function usarLimiteDiario() {
 }
 
 const CHAVE_CONVITE = 'limite:convite-visto'
-/** O convite do limite aparece uma vez por dia bloqueado, sozinho; depois só quando a pessoa tenta responder. */
+/** O convite do limite aparece uma vez por janela bloqueada, sozinho; depois só quando a pessoa tenta responder. */
 export function conviteLimiteJaVisto(liberaEm: string): boolean {
   return ler<string | null>(CHAVE_CONVITE, null) === liberaEm
 }

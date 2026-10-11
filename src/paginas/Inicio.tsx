@@ -254,7 +254,7 @@ export function Inicio() {
           </div>
         ) : (
           <div className="inicio-heroi__painel inicio-heroi__painel--visitante">
-            <p className="inicio-heroi__convite"><strong>Crie sua conta grátis</strong> e o site passa a guardar seu progresso, montar sua revisão e colocar você no ranking. No gratuito, você responde um número limitado de questões por dia, renovado todos os dias; os planos liberam sem limite.</p>
+            <p className="inicio-heroi__convite"><strong>Crie sua conta grátis</strong> e o site passa a guardar seu progresso, montar sua revisão e colocar você no ranking. No gratuito, você responde um número limitado de questões a cada 24 horas; os planos liberam sem limite.</p>
             <a className="botao botao--claro" href={href('/conta?modo=criar')}>Criar conta grátis</a>
             <button type="button" className="botao botao--vidro" onClick={() => definirModalEntrarAberto(true)}>Já tenho conta · Entrar</button>
           </div>

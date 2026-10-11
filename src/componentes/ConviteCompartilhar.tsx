@@ -22,7 +22,7 @@ const PAUSA_COMPARTILHOU = 90 * DIA
 // Texto que chega pronto no WhatsApp; *negrito* é a formatação do próprio app.
 export const MENSAGEM = `Olá! Quero indicar o *Orto Questões*, um banco de questões de ortopedia que dá para usar de graça.
 
-Reúne provas do TEOT, TARO, fellowships e R4, com comentário em cada alternativa e revisão das questões erradas. A conta é grátis e libera um número limitado de questões por dia, renovado todos os dias; os planos liberam sem limite.
+Reúne provas do TEOT, TARO, fellowships e R4, com comentário em cada alternativa e revisão das questões erradas. A conta é grátis e libera um número limitado de questões a cada 24 horas; os planos liberam sem limite.
 
 ${SITE.url}`
 

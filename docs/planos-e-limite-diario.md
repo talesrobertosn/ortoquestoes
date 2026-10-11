@@ -81,8 +81,22 @@ Configurar o webhook somente por HTTPS para a função `webhook-mercado-pago`. A
 3. Criar um usuário Supabase próprio e inserir seu UUID em `contas_teste`.
 4. Publicar frontend ainda com ambas as flags Vite falsas: usuários reais não percebem mudança.
 5. Publicar Edge Functions com as duas flags privadas falsas.
-6. Ativar apenas `VITE_LIMITES_HABILITADOS=true` em uma prévia protegida e testar a conta de teste: respostas 1–17, aviso 18–20, bloqueio 21, repetição da mesma chave e virada de meia-noite de São Paulo.
+6. Ativar apenas `VITE_LIMITES_HABILITADOS=true` em uma prévia protegida e testar a conta de teste: respostas 1–17, aviso 18–20, bloqueio 21, repetição da mesma chave e liberação 24 h depois da primeira resposta da janela.
 7. Validar sandbox do Mercado Pago, assinatura do webhook, duplicatas, aprovação, falha, cancelamento e reembolso em até sete dias.
 8. Somente depois definir `MERCADO_PAGO_INTEGRACAO_VALIDADA=true`, `PAGAMENTOS_HABILITADOS=true` e `VITE_PAGAMENTOS_HABILITADOS=true`.
 9. Manter `paywall_ativo=false` enquanto o checkout é observado com a conta de teste.
 10. Ativar `paywall_ativo=true` em janela acompanhada. Para rollback instantâneo, voltar esse campo para `false`; não é necessário deploy.
+
+## Janela de 24 horas (11/10/2026)
+
+Pedido do dono: o gratuito deixou de zerar à meia-noite de São Paulo. Agora funciona como o
+limite de uso do Claude: a janela começa na primeira questão contabilizada e as questões grátis
+voltam inteiras 24 horas depois desse início. Migração `202610110100_limite_janela_24h.sql`
+(cópia para colar em `supabase/colar-no-painel/sql-202610110100-parte13.sql`):
+
+- `janela_gratis` guarda, por pessoa, o início da janela e quantas questões já gastou nela;
+- `autorizar_resposta` decide pela janela e devolve `libera_em = início + 24 h`;
+- `consumo_diario` continua somado pelo dia de São Paulo (sequência de dias e painel).
+
+Na interface, o contador regressivo é o `RelogioPixel` (ampulheta em pixel art que esvazia ao
+longo das 24 h), no convite do limite e no resumo da sessão.

@@ -51,7 +51,7 @@ export const EXIGIR_CONTA_PARA_QUESTOES = true
 export const LIMITE_GRATIS_ATUAL = 20
 
 /** Frase curta para convites: o que o gratuito dá e que os planos tiram o limite. */
-export const FRASE_GRATIS = 'A conta é grátis e libera um número limitado de questões por dia, renovado todos os dias. Para estudar sem limite, há os planos.'
+export const FRASE_GRATIS = 'A conta é grátis e libera um número limitado de questões a cada 24 horas. Para estudar sem limite, há os planos.'
 
 /** Prefixo de todas as chaves gravadas no localStorage. */
 export const PREFIXO_ARMAZENAMENTO = 'ortoquestoes:'
