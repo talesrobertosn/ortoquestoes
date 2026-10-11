@@ -36,8 +36,8 @@ const ORDEM_PROVAS = ['TEOT', 'TARO', 'TEOT/TARO', 'CET-PR']
 const DESCRICAO_AREA: Record<Area, string> = {
   base: 'TEOT, TARO e afins',
   enare: 'Ano adicional em ortopedia',
-  coluna: 'R4 de cirurgia da coluna',
-  quadril: 'Simulados autorais no padrão da prova',
+  coluna: 'R4 de coluna e todas as questões de coluna do site',
+  quadril: 'Fellowship e todas as questões de quadril do site',
   mao: 'Especialidade à parte, inclui cirurgia plástica',
 }
 
