@@ -1,0 +1,193 @@
+<!doctype html>
+<!--
+  Post de 12/10/2026 · estilo novo "Seleção de personagem" (arcade em pixel art, temporada do site)
+  Questão: tumores-0065 · TEOT 2022 · gabarito D (tumor de células gigantes)
+  Conteúdo médico: comentário da questão em public/acervo/comentarios/tumores.json
+  Gerar: node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-12-selecao-tcg/post.html
+-->
+<html lang="pt-BR"><head><meta charset="utf-8"><style>
+@font-face { font-family: Jersey; src: url(../../fontes/jersey-10-latin-400-normal.woff2) format('woff2'); font-weight: 400; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #222; }
+section { position: relative; width: 1080px; height: 1350px; overflow: hidden; color: #f7ecd2; font-family: Inter, sans-serif;
+  background: #0f1c1a; background-image: radial-gradient(rgba(244, 207, 124, 0.09) 2px, transparent 2px); background-size: 16px 16px; }
+section.story { height: 1920px; }
+img { image-rendering: auto; }
+.px { image-rendering: pixelated; }
+/* céu em faixas e horizonte em pixels no pé, como no site */
+.ceu { position: absolute; inset: 0 0 auto 0; height: 300px; background: linear-gradient(180deg, #0b3a35 0 25%, #0e4740 25% 50%, #11554c 50% 75%, #146359 75% 100%); }
+.horizonte { position: absolute; left: 0; right: 0; bottom: 0; height: 64px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 8' shape-rendering='crispEdges'%3E%3Cpath fill='%230a2f2b' d='M0 6h4V5h4V4h4V6h4V3h4V5h4V2h4V4h4V3h4V6h4V4h4V2h4V5h4V3h4V6h4V8H0z'/%3E%3Crect y='7' width='60' height='1' fill='%23072320'/%3E%3C/svg%3E") left bottom / 480px 64px repeat-x; }
+.topo { position: relative; z-index: 2; display: flex; justify-content: space-between; align-items: center; padding: 44px 64px 0; }
+.marca { display: flex; align-items: center; gap: 16px; font-size: 34px; color: #fff; }
+.marca svg { width: 54px; height: 54px; }
+.fase { font-family: Jersey; font-size: 34px; letter-spacing: 2px; text-transform: uppercase; padding: 8px 16px; background: #0b2b27; color: #9fe3d4; box-shadow: 4px 4px 0 #072320; }
+.conteudo { position: relative; z-index: 2; padding: 0 64px; }
+.selo { display: inline-block; font-family: Jersey; font-size: 36px; letter-spacing: 2px; text-transform: uppercase; padding: 8px 18px; background: #c99a3b; color: #1b1208; box-shadow: 4px 4px 0 #6b4a0c; }
+h1, h2 { font-family: Jersey; font-weight: 400; line-height: 0.92; letter-spacing: 1px; color: #f4cf7c; text-shadow: 0 6px 0 #072320; }
+h1 { font-size: 168px; }
+h2 { font-size: 112px; }
+h3 { font-family: Jersey; font-weight: 400; font-size: 54px; line-height: 1; color: #fff; letter-spacing: 1px; }
+p { font-size: 34px; line-height: 1.4; }
+.lide { color: #d8e6e2; }
+.placa { background: #13211e; box-shadow: 0 0 0 5px #f4cf7c, 0 0 0 10px #13211e, 12px 12px 0 10px rgba(0, 0, 0, 0.45); }
+.foto { background: #fff; padding: 10px; box-shadow: 0 0 0 5px #f4cf7c, 0 0 0 10px #13211e, 12px 12px 0 10px rgba(0, 0, 0, 0.45); }
+.foto img { display: block; width: 100%; height: 100%; object-fit: contain; background: #fff; }
+.rodape { position: absolute; z-index: 3; left: 64px; right: 64px; bottom: 84px; display: flex; justify-content: space-between; align-items: center; font-family: Jersey; font-size: 36px; letter-spacing: 2px; color: #cdbb94; }
+.rodape b { font-family: Jersey; font-weight: 400; font-size: 44px; color: #f4cf7c; letter-spacing: 2px; }
+.pisca { color: #f4cf7c; }
+.guerreiro { width: 136px; height: 148px; background: url(../../../../public/ranking/guerreiro.png) 0 0 / 272px 148px no-repeat; image-rendering: pixelated; }
+.tocha { width: 36px; height: 72px; image-rendering: pixelated; }
+/* cartões de personagem */
+.grade { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+.char { position: relative; padding: 26px 26px 24px; background: #1c2e2a; box-shadow: inset 0 0 0 4px rgba(255, 255, 255, 0.12), 8px 8px 0 rgba(0, 0, 0, 0.4); }
+.char .letra { display: inline-grid; place-items: center; width: 70px; height: 70px; font-family: Jersey; font-size: 58px; color: #1b1208; background: #f4cf7c; box-shadow: 4px 4px 0 #6b4a0c; }
+.char h3 { margin-top: 18px; font-size: 50px; }
+.char .stats { margin-top: 14px; display: grid; gap: 8px; }
+.stat { display: grid; grid-template-columns: 96px 1fr; gap: 12px; font-size: 25px; line-height: 1.3; color: #d8e6e2; }
+.stat dt { font-family: Jersey; font-size: 28px; line-height: 1; letter-spacing: 1px; text-transform: uppercase; color: #9fe3d4; padding-top: 3px; }
+.char--x { opacity: 0.55; }
+.char--x::after { content: "FORA"; position: absolute; top: 24px; right: 22px; font-family: Jersey; font-size: 30px; letter-spacing: 2px; padding: 2px 12px; color: #fff; background: #b3423a; box-shadow: 3px 3px 0 #5a1a16; }
+.char--ok { background: #2a3a22; box-shadow: inset 0 0 0 5px #f4cf7c, 8px 8px 0 rgba(0, 0, 0, 0.4); }
+.alt { display: flex; gap: 22px; align-items: center; padding: 14px 22px; background: #1c2e2a; box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.12), 6px 6px 0 rgba(0, 0, 0, 0.4); font-size: 36px; color: #fff; }
+.alt i { flex: none; display: grid; place-items: center; width: 60px; height: 60px; font-style: normal; font-family: Jersey; font-size: 48px; color: #1b1208; background: #f4cf7c; box-shadow: 3px 3px 0 #6b4a0c; }
+.dica { display: flex; gap: 22px; align-items: flex-start; padding: 18px 24px; background: #1c2e2a; box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.12), 6px 6px 0 rgba(0, 0, 0, 0.4); }
+.dica .n { flex: none; font-family: Jersey; font-size: 64px; line-height: 0.85; color: #f4cf7c; }
+.dica p { font-size: 31px; color: #e8f1ee; }
+.dica b { color: #f4cf7c; }
+.creme { padding: 26px 30px; background: #f6e9c6; color: #3b2410; box-shadow: 0 0 0 4px #1b1208, 8px 8px 0 4px #6b4a0c; }
+.creme p { font-size: 31px; }
+.creme small { display: block; font-family: Jersey; font-size: 30px; letter-spacing: 2px; text-transform: uppercase; color: #8a5a12; margin-bottom: 8px; }
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#14655E"/><g fill="#FFFFFF" opacity=".55"><path transform="translate(13 9.5)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(11 21.2)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(13 44.6)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g><path fill="#F4CF7C" transform="translate(11 32.9)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></symbol></svg>
+
+<!-- 1/5 · capa -->
+<section id="feed-01" data-question="tumores-0065">
+  <div class="ceu"></div>
+  <header class="topo"><div class="marca"><svg><use href="#sim"/></svg><span><b>Orto</b> Questões</span></div><span class="fase">Fase TEOT · Tumores</span></header>
+  <div class="conteudo" style="margin-top:96px">
+    <span class="selo">Seleção de personagem</span>
+    <h1 style="margin-top:34px">Quem é o<br>chefão?</h1>
+    <p class="lide" style="margin-top:22px;max-width:900px">Mulher, 30 anos. Dor progressiva e aumento de volume no joelho. Quatro suspeitos, um só diagnóstico.</p>
+    <div style="display:flex;gap:44px;align-items:flex-end;margin-top:46px">
+      <div class="foto" style="width:640px;height:440px"><img src="../../../../public/imagens/tumores/tumores-0065-1.jpeg" alt="Imagem original da questão"></div>
+      <div style="display:grid;justify-items:center;gap:18px;padding-bottom:6px">
+        <img class="tocha" src="../../../../public/ranking/tocha.png" alt="">
+        <div class="guerreiro"></div>
+      </div>
+    </div>
+  </div>
+  <div class="horizonte"></div>
+  <footer class="rodape"><span><span class="pisca">▶</span> Arraste para jogar</span><b>1 / 5</b></footer>
+</section>
+
+<!-- 2/5 · a questão como caiu -->
+<section id="feed-02" data-question="tumores-0065">
+  <header class="topo"><div class="marca"><svg><use href="#sim"/></svg><span><b>Orto</b> Questões</span></div><span class="fase">TEOT 2022</span></header>
+  <div class="conteudo" style="margin-top:56px">
+    <span class="selo">A questão como caiu</span>
+    <div style="display:flex;gap:40px;margin-top:36px;align-items:flex-start">
+      <div class="foto" style="width:440px;height:340px;flex:none"><img src="../../../../public/imagens/tumores/tumores-0065-1.jpeg" alt="Imagem original da questão"></div>
+      <p style="font-size:36px;color:#fff">Feminino, 30 anos, dor progressiva e aumento de volume no joelho. O diagnóstico mais provável é</p>
+    </div>
+    <div style="display:grid;gap:16px;margin-top:36px">
+      <div class="alt"><i>A</i><span>osteossarcoma.</span></div>
+      <div class="alt"><i>B</i><span>condroblastoma.</span></div>
+      <div class="alt"><i>C</i><span>condrossarcoma.</span></div>
+      <div class="alt"><i>D</i><span>tumor de células gigantes.</span></div>
+    </div>
+    <div class="creme" style="margin-top:32px"><small>Sua vez</small><p><b>Comente a sua letra</b> antes de arrastar.</p></div>
+  </div>
+  <footer class="rodape"><span>Escolha o personagem</span><b>2 / 5</b></footer>
+</section>
+
+<!-- 3/5 · as pistas da fase -->
+<section id="feed-03" data-question="tumores-0065">
+  <header class="topo"><div class="marca"><svg><use href="#sim"/></svg><span><b>Orto</b> Questões</span></div><span class="fase">Pistas da fase</span></header>
+  <div class="conteudo" style="margin-top:56px">
+    <h2 style="font-size:100px">Três pistas<br>na imagem</h2>
+    <div class="foto" style="width:952px;height:330px;margin-top:34px"><img src="../../../../public/imagens/tumores/tumores-0065-1.jpeg" alt="Imagem original da questão"></div>
+    <div style="display:grid;gap:18px;margin-top:40px">
+      <div class="dica"><span class="n">1</span><p>Na radiografia, lesão <b>lítica</b> no fêmur distal que chega ao <b>osso subcondral</b>, sem matriz mineralizada.</p></div>
+      <div class="dica"><span class="n">2</span><p>Na ressonância, lesão <b>expansiva</b> com áreas de alto sinal, compatíveis com componentes císticos ou hemorrágicos.</p></div>
+      <div class="dica"><span class="n">3</span><p>Na lâmina, <b>células gigantes multinucleadas</b> entre células mononucleares.</p></div>
+    </div>
+  </div>
+  <footer class="rodape"><span>Junte as pistas</span><b>3 / 5</b></footer>
+</section>
+
+<!-- 4/5 · ficha dos personagens -->
+<section id="feed-04" data-question="tumores-0065">
+  <header class="topo"><div class="marca"><svg><use href="#sim"/></svg><span><b>Orto</b> Questões</span></div><span class="fase">Ficha dos personagens</span></header>
+  <div class="conteudo" style="margin-top:40px">
+    <h2 style="font-size:90px">Idade, lugar<br>e matriz</h2>
+    <div class="grade" style="margin-top:32px">
+      <div class="char char--x"><span class="letra">A</span><h3>Osteossarcoma</h3><dl class="stats">
+        <div class="stat"><dt>Idade</dt><dd>segunda década</dd></div><div class="stat"><dt>Lugar</dt><dd>metáfise</dd></div><div class="stat"><dt>Marca</dt><dd>matriz osteoide e reação periosteal agressiva</dd></div></dl></div>
+      <div class="char char--x"><span class="letra">B</span><h3>Condroblastoma</h3><dl class="stats">
+        <div class="stat"><dt>Idade</dt><dd>adolescente, fise aberta</dd></div><div class="stat"><dt>Lugar</dt><dd>epífise</dd></div><div class="stat"><dt>Marca</dt><dd>costuma ter halo esclerótico</dd></div></dl></div>
+      <div class="char char--x"><span class="letra">C</span><h3>Condrossarcoma</h3><dl class="stats">
+        <div class="stat"><dt>Idade</dt><dd>em geral após os 40 anos</dd></div><div class="stat"><dt>Marca</dt><dd>matriz condroide, ausente aqui</dd></div></dl></div>
+      <div class="char char--ok"><span class="letra">D</span><h3>Células gigantes</h3><dl class="stats">
+        <div class="stat"><dt>Idade</dt><dd>20 a 40 anos, fise fechada</dd></div><div class="stat"><dt>Lugar</dt><dd>epífise até o subcondral; joelho</dd></div><div class="stat"><dt>Marca</dt><dd>lítico, excêntrico, em geral sem halo</dd></div></dl></div>
+    </div>
+  </div>
+  <footer class="rodape"><span>Só um bate com o caso</span><b>4 / 5</b></footer>
+</section>
+
+<!-- 5/5 · a resposta -->
+<section id="feed-05" data-question="tumores-0065">
+  <div class="ceu"></div>
+  <header class="topo"><div class="marca"><svg><use href="#sim"/></svg><span><b>Orto</b> Questões</span></div><span class="fase">Chefão revelado</span></header>
+  <div class="conteudo" style="margin-top:96px">
+    <span class="selo">Resposta · letra D</span>
+    <h2 style="margin-top:30px;font-size:118px">Tumor de<br>células gigantes</h2>
+    <div class="placa" style="margin-top:50px;padding:34px 38px;display:flex;gap:30px;align-items:center">
+      <img class="px" src="../../../../public/emblemas/chefe-teot.png" width="150" height="150" alt="">
+      <p style="font-size:33px">Mulher de 30 anos, joelho, lesão lítica epifisária até o subcondral e células gigantes na lâmina: <b style="color:#f4cf7c">tumor de células gigantes</b>.</p>
+    </div>
+    <div class="creme" style="margin-top:46px"><small>Para a prova</small><p>Antes de fechar o diagnóstico, dosar <b>cálcio e PTH</b> para afastar o tumor marrom, e pedir <b>tomografia de tórax</b>, pela possibilidade de metástase pulmonar benigna.</p></div>
+    <p style="margin-top:44px;font-size:32px;color:#d8e6e2">Questões oficiais comentadas, alternativa por alternativa.<br><b style="font-family:Jersey;font-weight:400;font-size:54px;color:#f4cf7c;letter-spacing:1px">ortoquestoes.com.br</b></p>
+  </div>
+  <div class="horizonte"></div>
+  <footer class="rodape"><span>Fase concluída</span><b>5 / 5</b></footer>
+</section>
+
+<!-- Story 1 · pergunta (manhã) -->
+<section id="story-01" class="story" data-question="tumores-0065">
+  <div class="ceu" style="height:520px"></div>
+  <header class="topo" style="padding-top:250px"><div class="marca"><svg><use href="#sim"/></svg><span><b>Orto</b> Questões</span></div><span class="fase">TEOT 2022</span></header>
+  <div class="conteudo" style="margin-top:56px">
+    <span class="selo">Seleção de personagem</span>
+    <h1 style="margin-top:26px;font-size:136px">Quem é o<br>chefão?</h1>
+    <p class="lide" style="margin-top:20px">Mulher, 30 anos. Dor progressiva e aumento de volume no joelho.</p>
+    <div class="foto" style="width:952px;height:480px;margin-top:34px"><img src="../../../../public/imagens/tumores/tumores-0065-1.jpeg" alt="Imagem original da questão"></div>
+    <div class="grade" style="margin-top:36px;gap:18px">
+      <div class="alt"><i>A</i><span>osteossarcoma</span></div>
+      <div class="alt"><i>B</i><span>condroblastoma</span></div>
+      <div class="alt"><i>C</i><span>condrossarcoma</span></div>
+      <div class="alt"><i>D</i><span style="font-size:32px">tumor de células gigantes</span></div>
+    </div>
+    <p style="margin-top:40px;font-family:Jersey;font-size:44px;letter-spacing:2px;color:#f4cf7c">▶ A resposta sai no próximo story</p>
+  </div>
+</section>
+
+<!-- Story 2 · resposta (meio-dia ou noite) -->
+<section id="story-02" class="story" data-question="tumores-0065">
+  <div class="ceu" style="height:520px"></div>
+  <header class="topo" style="padding-top:250px"><div class="marca"><svg><use href="#sim"/></svg><span><b>Orto</b> Questões</span></div><span class="fase">Chefão revelado</span></header>
+  <div class="conteudo" style="margin-top:80px">
+    <span class="selo">Resposta · letra D</span>
+    <h2 style="margin-top:30px;font-size:124px">Tumor de<br>células gigantes</h2>
+    <div style="display:grid;gap:24px;margin-top:50px">
+      <div class="dica"><span class="n">1</span><p><b>30 anos</b>, fise fechada: a idade do tumor de células gigantes.</p></div>
+      <div class="dica"><span class="n">2</span><p>Lesão <b>lítica epifisária</b> no fêmur distal, até o subcondral, sem matriz.</p></div>
+      <div class="dica"><span class="n">3</span><p><b>Células gigantes</b> multinucleadas na lâmina.</p></div>
+    </div>
+    <div class="creme" style="margin-top:46px"><small>Pegadinha</small><p>Condroblastoma também é epifisário, mas de <b>adolescente com fise aberta</b>.</p></div>
+    <p style="margin-top:46px;font-family:Jersey;font-size:60px;color:#f4cf7c;letter-spacing:1px">ortoquestoes.com.br</p>
+  </div>
+  <div class="horizonte"></div>
+</section>
+</body></html>
