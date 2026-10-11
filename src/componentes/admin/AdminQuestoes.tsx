@@ -42,7 +42,8 @@ function paraFormulario(q: Questao, c: ComentarioIA | null): Formulario {
     dissertativa: q.tipo === 'dissertativa',
     respostaEsperada: q.respostaEsperada ?? '',
     alternativas: q.alternativas.map((a) => ({ letra: a.letra, texto: a.texto })),
-    gabarito: q.gabarito ?? '',
+    // A resposta pela bibliografia não é gabarito oficial: o formulário mostra o oficial (vazio).
+    gabarito: q.gabaritoBibliografia ? '' : q.gabarito ?? '',
     autor: q.comentario ?? '',
     temComentario: !!c,
     alerta: c?.alerta ?? '',

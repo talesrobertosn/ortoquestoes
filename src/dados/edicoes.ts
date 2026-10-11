@@ -58,7 +58,7 @@ export function esquecerEdicoes() {
 
 /** A questão com a edição por cima. Sem edição, devolve a mesma questão. */
 export function aplicarEdicao(q: Questao, e: EdicaoQuestao | undefined): Questao {
-  if (!e) return q
+  if (!e) return gabaritoDeCorrecao(q)
   const nova: Questao = { ...q }
   if (e.prova !== undefined) nova.prova = e.prova
   if (e.ano !== undefined) nova.ano = e.ano
@@ -74,7 +74,22 @@ export function aplicarEdicao(q: Questao, e: EdicaoQuestao | undefined): Questao
   }
   if (e.comentario !== undefined) nova.comentario = e.comentario
   if (e.comentarioIA !== undefined) nova.comentarioIA = e.comentarioIA
-  return nova
+  return gabaritoDeCorrecao(nova)
+}
+
+/**
+ * Prova sem gabarito oficial (TARO 2006 e 2007): a resposta pela bibliografia
+ * vira o gabarito de correção, e a questão passa a contar no desempenho. O
+ * campo gabaritoBibliografia só fica na questão enquanto é ele que vale; se o
+ * painel registrar um gabarito oficial ou anular a questão, ele sai.
+ */
+export function gabaritoDeCorrecao(q: Questao): Questao {
+  if (!q.gabaritoBibliografia) return q
+  if (q.gabarito || q.anulada) {
+    const { gabaritoBibliografia: _, ...sem } = q
+    return sem
+  }
+  return { ...q, gabarito: q.gabaritoBibliografia }
 }
 
 /** Ajusta no índice o que a edição muda nos filtros (prova, ano, anulada, imagem, comentário). */

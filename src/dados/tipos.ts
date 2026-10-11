@@ -102,6 +102,12 @@ export interface Questao {
   imagens: Imagem[]
   alternativas: Alternativa[]
   gabarito: Letra | null
+  /**
+   * Prova sem gabarito oficial divulgado (TARO 2006 e 2007): a letra que a
+   * bibliografia sustenta, definida pelo Orto Questões. Ao carregar, vira o
+   * gabarito de correção e conta no desempenho; a tela avisa que não é oficial.
+   */
+  gabaritoBibliografia?: Letra
   comentario: string | null
   comentarioIA?: ComentarioIA | null
   comentariosComunidade?: ComentarioComunidade[]
