@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Diário do Plantão — Mirels</title>
+<!-- Jornal, revisão em 10/10/2026. Questão tumores-0293, TEOT/TARO, ano não informado no acervo, gabarito D.
+5 slides de feed 1080x1350 e 2 stories 1080x1920. Modelo oficial Jornal, CSS e símbolo preservados.
+Gerar: node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-10-mirels-antes-da-fratura/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Playfair; src: url(../../fontes/playfair-display-latin-wght-normal.woff2) format('woff2'); font-weight: 400 900; }
+@font-face { font-family: Playfair; src: url(../../fontes/playfair-display-latin-wght-italic.woff2) format('woff2'); font-weight: 400 900; font-style: italic; }
+@font-face { font-family: Serif4; src: url(../../fontes/source-serif-4-latin-opsz-normal.woff2) format('woff2'); font-weight: 200 900; }
+@font-face { font-family: Serif4; src: url(../../fontes/source-serif-4-latin-opsz-italic.woff2) format('woff2'); font-weight: 200 900; font-style: italic; }
+:root { --papel: #F2ECDD; --tinta: #1b1a17; --cinza: #5f5a50; --fio: #1b1a17; --verm: #b3261e; --ouro: #E2A92B; --verde: #14655E; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1350px; padding: 56px 64px; color: var(--tinta); font-family: Serif4, serif;
+  background:
+    radial-gradient(circle at 1px 1px, rgba(0,0,0,.05) 1px, transparent 1.2px) 0 0/5px 5px,
+    radial-gradient(ellipse at 50% 0%, #f7f2e6, transparent 70%),
+    var(--papel); }
+
+/* Cabeçalho do jornal */
+.cab { display: flex; justify-content: space-between; align-items: flex-end; font: 700 19px Jakarta; letter-spacing: .14em; text-transform: uppercase; color: var(--cinza); }
+.cab .marca { display: flex; align-items: center; gap: 10px; letter-spacing: 0; text-transform: none; font: 700 24px Jakarta; color: var(--tinta); }
+.cab .marca svg { width: 34px; height: 34px; }
+.titulo-jornal { margin-top: 10px; padding: 14px 0 10px; border-top: 6px double var(--fio); border-bottom: 2px solid var(--fio); text-align: center; font: 900 112px/1 Playfair; letter-spacing: -.02em; }
+.titulo-jornal.p { font-size: 54px; padding: 10px 0 8px; }
+.data { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 6px double var(--fio); font: 600 19px Jakarta; letter-spacing: .1em; text-transform: uppercase; }
+.data b { color: var(--verm); }
+
+.chapeu { display: inline-block; font: 800 20px Jakarta; letter-spacing: .2em; text-transform: uppercase; color: var(--verm); }
+.manchete { font: 900 84px/.98 Playfair; letter-spacing: -.025em; text-wrap: balance; }
+.manchete i { font-weight: 700; }
+.linha-fina { font: italic 400 33px/1.3 Serif4; color: #3a3730; text-wrap: pretty; }
+.texto { font: 400 27px/1.42 Serif4; text-align: left; }
+.texto b { font-weight: 700; }
+.texto p + p { margin-top: 12px; text-indent: 1.4em; }
+.capitular::first-letter { float: left; font: 900 96px/.8 Playfair; margin: 8px 12px 0 0; }
+.colunas { column-count: 2; column-gap: 40px; column-rule: 1.5px solid rgba(0,0,0,.35); }
+
+.foto { position: relative; background: #000; border: 2px solid var(--fio); }
+.foto img { display: block; width: 100%; height: auto; }
+.legenda { margin-top: 10px; font: italic 400 22px/1.35 Serif4; color: var(--cinza); }
+.legenda b { font-style: normal; font: 700 18px Jakarta; letter-spacing: .12em; text-transform: uppercase; color: var(--tinta); }
+
+.box { border: 3px solid var(--fio); padding: 22px 26px; background: rgba(255,255,255,.35); }
+.box h4 { font: 800 21px Jakarta; letter-spacing: .18em; text-transform: uppercase; }
+.fio-h { height: 0; border-top: 2px solid var(--fio); margin: 22px 0; }
+
+/* Alternativas como cédula */
+.cedula { display: grid; gap: 12px; margin-top: 14px; }
+.cedula div { display: flex; align-items: center; gap: 18px; font: 600 30px Serif4; }
+.cedula i { flex: none; width: 50px; height: 50px; border: 3px solid var(--fio); display: grid; place-items: center; font: 800 26px Jakarta; font-style: normal; }
+
+/* Classificados */
+.classif { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-top: 3px solid var(--fio); border-left: 1.5px solid var(--fio); }
+.anuncio { padding: 28px 26px 30px; border-right: 1.5px solid var(--fio); border-bottom: 1.5px solid var(--fio); }
+.anuncio .tipo { font: 800 18px Jakarta; letter-spacing: .2em; text-transform: uppercase; color: var(--cinza); }
+.anuncio h3 { margin-top: 4px; font: 900 44px/1 Playfair; letter-spacing: -.01em; }
+.anuncio h3 small { font: 800 22px Jakarta; letter-spacing: .06em; vertical-align: middle; margin-left: 6px; padding: 2px 10px; border: 2px solid var(--fio); }
+.anuncio p { margin-top: 12px; font: 400 26px/1.4 Serif4; }
+.anuncio p b { font-weight: 700; }
+.anuncio .end { display: block; margin-top: 14px; padding-top: 10px; border-top: 1.5px dashed rgba(0,0,0,.45); font: 700 22px/1.3 Jakarta; }
+
+.carimbo { position: absolute; padding: 8px 22px; border: 6px solid var(--verm); color: var(--verm); font: 800 34px Jakarta; letter-spacing: .14em; text-transform: uppercase; transform: rotate(-9deg); opacity: .88; mix-blend-mode: multiply; }
+.rodape { position: absolute; left: 64px; right: 64px; bottom: 40px; display: flex; justify-content: space-between; padding-top: 10px; border-top: 2px solid var(--fio); font: 700 20px Jakarta; letter-spacing: .08em; text-transform: uppercase; color: var(--cinza); }
+.rodape b { color: var(--tinta); }
+
+.story{height:1920px;padding-top:258px}.story .rodape{bottom:248px}.story .cedula{gap:14px}.story .cedula div{font-size:27px}.story-row{display:flex;align-items:center;justify-content:space-between;font:500 32px Serif4;padding:21px 3px;border-bottom:1.5px solid var(--fio)}.story-row b{font:900 42px Playfair;color:var(--verde)}</style></head><body><svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#14655E"/><g fill="#FFFFFF" opacity=".55"><path transform="translate(13 9.5)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(11 21.2)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(13 44.6)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g><path fill="#F4CF7C" transform="translate(11 32.9)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></symbol>
+</defs></svg>
+<section id="feed-01"><div class="cab"><span class="marca"><svg><use href="#sim"/></svg>Orto Questões</span><span>Edição extra · 1/5</span></div><div class="titulo-jornal">Diário do Plantão</div>
+<div class="data"><span>Sábado, 10 de outubro de 2026</span><b>Oncologia ortopédica</b><span>TEOT / TARO</span></div>
+<div style="display:grid;grid-template-columns:1fr 360px;gap:38px;margin-top:30px">
+ <div><span class="chapeu">Fêmur sob ameaça</span>
+ <h1 class="manchete" style="margin-top:15px;font-size:78px">A fratura ainda não aconteceu.<br><i>E agora?</i></h1>
+ <p class="linha-fina" style="margin-top:24px">57 anos. Metástase renal. Dor moderada no quadril.</p>
+ <div class="fio-h"></div>
+ <div class="texto capitular"><p>A imagem põe em pauta duas decisões: <b>quantos pontos tem o Mirels</b> e qual deve ser o próximo passo para este fêmur.</p></div>
+ </div><div><figure class="foto" style="border-radius:20px;overflow:hidden"><img src="../../../../public/imagens/tumores/tumores-0293-1.png" alt="Radiografia original do fêmur proximal da questão tumores-0293"></figure>
+ <p class="legenda"><b>Documento do caso</b><br>Radiografia original da questão. O risco está nos detalhes.</p>
+ <div style="margin-top:28px;padding-top:20px;border-top:1.5px solid var(--fio)"><span class="chapeu" style="font-size:16px">Plantão em debate</span><p style="font:700 31px/1.2 Playfair;margin-top:10px">O escore muda a ordem do tratamento.</p></div>
+ </div></div>
+ <div class="box" style="border-radius:20px;margin-top:28px;padding:17px 22px">
+ <h4>Nesta edição</h4><p class="texto" style="font-size:24px;margin-top:5px">A questão · quatro pistas · a conduta · o gabarito</p></div>
+ <div class="rodape"><span>Arraste para investigar</span><b>ortoquestoes.com.br</b></div></section>
+<section id="feed-02"><div class="cab"><span class="marca"><svg><use href="#sim"/></svg>Orto Questões</span><span>Caderno Provas · 2/5</span></div><div class="titulo-jornal p">Diário do Plantão</div>
+<div style="display:grid;grid-template-columns:360px 1fr;gap:38px;margin-top:34px">
+<div><figure class="foto" style="border-radius:20px;overflow:hidden"><img src="../../../../public/imagens/tumores/tumores-0293-1.png" alt="Radiografia original do fêmur proximal da questão tumores-0293"></figure>
+<p class="legenda"><b>Leia a radiografia</b><br>Localização, natureza da lesão e quanto osso está comprometido.</p></div>
+<div><span class="chapeu">A questão como caiu</span>
+<h2 class="enunciado" style="margin-top:16px;font:600 38px/1.17 Serif4">Paciente com 57 anos refere dor moderada no quadril esquerdo e diagnóstico de neoplasia renal com metástase para o fêmur. O escore de MIRELS e a conduta mais adequada são, respectivamente:</h2><div class="fio-h"></div><div class="cedula"><div class="alternativa"><i style="border-radius:12px">A</i><span>8 e radioterapia.</span></div><div class="alternativa"><i style="border-radius:12px">B</i><span>8 e fixação cirúrgica.</span></div><div class="alternativa"><i style="border-radius:12px">C</i><span>11 e radioterapia.</span></div><div class="alternativa"><i style="border-radius:12px">D</i><span>11 e fixação cirúrgica.</span></div></div>
+</div></div>
+<div class="box" style="border-radius:20px;margin-top:35px">
+<h4>Sua letra vai para a redação</h4><p class="texto" style="margin-top:10px;font-size:30px"><b>Comente A, B, C ou D antes de arrastar.</b><br>A próxima página traz as quatro pistas do Mirels.</p></div>
+<div class="rodape"><span>Faça seu palpite</span><b>2/5</b></div></section>
+<section id="feed-03"><div class="cab"><span class="marca"><svg><use href="#sim"/></svg>Orto Questões</span><span>Dossiê da radiografia · 3/5</span></div><div class="titulo-jornal p">Quatro pistas</div>
+<p class="linha-fina" style="margin-top:23px;text-align:center">O Mirels organiza o risco. Faça a soma antes de virar a página.</p>
+<div class="classif" style="margin-top:28px"><div class="anuncio"><span class="tipo">Localização</span><h3 style="font-size:41px;line-height:1.04">Região<br>peritrocantérica</h3><p style="font-size:28px">O sítio peritrocantérico suporta <b>alta carga</b> e tem o maior peso neste critério do Mirels.</p><span class="end" style="color:var(--verde);font-size:25px">3 pontos</span></div><div class="anuncio"><span class="tipo">Componente clínico</span><h3 style="font-size:41px;line-height:1.04">Dor<br>moderada</h3><p style="font-size:28px">A intensidade da dor vem do <b>enunciado</b>. Dor moderada vale dois pontos no escore.</p><span class="end" style="color:var(--verde);font-size:25px">2 pontos</span></div><div class="anuncio"><span class="tipo">Natureza radiográfica</span><h3 style="font-size:41px;line-height:1.04">Lesão<br>lítica</h3><p style="font-size:28px">A radiografia mostra <b>destruição óssea</b>. Lesões líticas recebem a maior pontuação deste critério.</p><span class="end" style="color:var(--verde);font-size:25px">3 pontos</span></div><div class="anuncio"><span class="tipo">Tamanho</span><h3 style="font-size:41px;line-height:1.04">Mais de ⅔<br>do diâmetro</h3><p style="font-size:28px">A lesão ocupa <b>mais de dois terços da largura do osso</b>. O comprometimento extenso recebe a maior pontuação.</p><span class="end" style="color:var(--verde);font-size:25px">3 pontos</span></div></div>
+<div class="box" style="border-radius:20px;margin-top:30px"><h4>Nota do editor</h4><p class="texto" style="font-size:28px;margin-top:10px">Cada critério vale de 1 a 3. <b>Peritrocantérico já vale 3.</b> Este é um dos detalhes que a prova espera que você reconheça.</p></div>
+<div class="rodape"><span>A soma está nas pistas</span><b>3/5</b></div></section>
+<section id="feed-04"><div class="cab"><span class="marca"><svg><use href="#sim"/></svg>Orto Questões</span><span>Editorial · 4/5</span></div><div class="titulo-jornal p">Diário do Plantão</div>
+<span class="chapeu" style="margin-top:32px">A segunda decisão</span>
+<h2 class="manchete" style="font-size:73px;margin-top:13px">O risco mecânico<br>define a prioridade.</h2>
+<p class="linha-fina" style="margin-top:20px">Aliviar a dor e proteger o osso são dois objetivos do tratamento.</p>
+<div class="fio-h"></div>
+<div style="display:grid;grid-template-columns:300px 1fr;gap:37px;align-items:center">
+<div class="box" style="border-radius:24px;background:var(--verde);border-color:var(--verde);color:var(--papel);padding:24px;text-align:center">
+<h4 style="font-size:17px">Mirels elevado</h4><div style="font:900 108px/1 Playfair;margin-top:8px">≥9</div><p style="font:600 24px/1.25 Jakarta;margin-top:15px">alto risco<br>de fratura</p></div>
+<p class="texto" style="font-size:31px;line-height:1.4">A radioterapia isolada pode aliviar a dor, mas <b>não devolve resistência ao osso a tempo</b>. Um fêmur vulnerável precisa de proteção mecânica.</p>
+</div>
+<div class="fio-h" style="margin-top:32px"></div>
+<div class="texto colunas" style="font-size:29px;line-height:1.38">
+<p><b>Primeiro, a estabilidade.</b> A fixação cirúrgica profilática protege a estrutura antes que uma fratura patológica aconteça.</p>
+<p><b>Depois, o tratamento local.</b> A radioterapia no leito vem após a estabilização, na sequência indicada para este caso.</p>
+</div>
+<div style="margin-top:26px;font:italic 400 23px/1.3 Serif4;color:var(--cinza)">O escore apoia a avaliação clínica e radiográfica da equipe.</div>
+<div class="rodape"><span>O gabarito na próxima página</span><b>4/5</b></div></section>
+<section id="feed-05"><div class="cab"><span class="marca"><svg><use href="#sim"/></svg>Orto Questões</span><span>Gabarito · 5/5</span></div><div class="titulo-jornal p">O veredito</div>
+<span class="chapeu" style="margin-top:26px">Resposta oficial · alternativa D</span>
+<h2 class="manchete" style="font-size:62px;line-height:1.04;margin-top:12px">11 e fixação cirúrgica.</h2>
+<p style="font:700 31px Jakarta;margin-top:20px;color:var(--verde)">3 + 2 + 3 + 3 = 11 pontos</p>
+<div style="margin-top:25px;border-top:3px solid var(--fio)"><div style="display:grid;grid-template-columns:46px 1fr;gap:20px;padding:18px 0;border-bottom:1.5px solid var(--fio)"><b style="font:900 43px Playfair;color:var(--verm)">A</b><p class="texto" style="font-size:27px;line-height:1.25"><b>8 e radioterapia.</b><br>Erra a soma e a conduta: o escore é maior e o risco mecânico exige estabilização.</p></div><div style="display:grid;grid-template-columns:46px 1fr;gap:20px;padding:18px 0;border-bottom:1.5px solid var(--fio)"><b style="font:900 43px Playfair;color:var(--verm)">B</b><p class="texto" style="font-size:27px;line-height:1.25"><b>8 e fixação cirúrgica.</b><br>A conduta está certa. A soma, não: os quatro critérios totalizam 11.</p></div><div style="display:grid;grid-template-columns:46px 1fr;gap:20px;padding:18px 0;border-bottom:1.5px solid var(--fio)"><b style="font:900 43px Playfair;color:var(--verm)">C</b><p class="texto" style="font-size:27px;line-height:1.25"><b>11 e radioterapia.</b><br>Acerta a soma. A radioterapia isolada deixa o fêmur vulnerável à fratura.</p></div></div>
+<div class="box" style="border-radius:22px;margin-top:25px;background:var(--tinta);color:var(--papel);border-color:var(--tinta)"><h4 style="color:var(--ouro)">Para a prova</h4><p style="font:700 35px/1.17 Playfair;margin-top:10px">Mirels alto no fêmur:<br>estabilizar antes de irradiar.</p></div>
+<div style="margin-top:23px;display:flex;justify-content:space-between;align-items:center;gap:20px">
+<div><b style="font:800 24px Jakarta;color:var(--verde)">Questão grátis todo dia.</b><p style="font:400 20px Jakarta;margin-top:5px">Conta gratuita com limite diário.</p></div>
+<span style="font:700 22px Jakarta">Salve e revise depois.</span></div>
+<div class="rodape"><span>Orto Questões</span><b>ortoquestoes.com.br</b></div></section>
+<section id="story-01" class="story"><div class="cab"><span class="marca"><svg><use href="#sim"/></svg>Orto Questões</span><span>Boletim do plantão · 1/2</span></div><div class="titulo-jornal p">Diário do Plantão</div>
+<div class="data" style="font-size:17px"><span>Oncologia ortopédica</span><b>Questão do dia</b><span>TEOT / TARO</span></div>
+<h1 class="manchete" style="font-size:76px;margin-top:25px">Fêmur sob ameaça.<br><i>E agora?</i></h1>
+<div style="display:grid;grid-template-columns:340px 1fr;gap:35px;margin-top:32px">
+<div><figure class="foto" style="border-radius:20px;overflow:hidden"><img src="../../../../public/imagens/tumores/tumores-0293-1.png" alt="Radiografia original do fêmur proximal da questão tumores-0293"></figure><p class="legenda">Imagem original da questão.</p></div>
+<div><p class="enunciado" style="font:500 31px/1.2 Serif4">Paciente com 57 anos refere dor moderada no quadril esquerdo e diagnóstico de neoplasia renal com metástase para o fêmur. O escore de MIRELS e a conduta mais adequada são, respectivamente:</p>
+<div class="fio-h" style="margin:17px 0"></div><div class="cedula"><div class="alternativa"><i style="border-radius:12px">A</i><span>8 e radioterapia.</span></div><div class="alternativa"><i style="border-radius:12px">B</i><span>8 e fixação cirúrgica.</span></div><div class="alternativa"><i style="border-radius:12px">C</i><span>11 e radioterapia.</span></div><div class="alternativa"><i style="border-radius:12px">D</i><span>11 e fixação cirúrgica.</span></div></div></div></div>
+<div class="box" style="border-radius:22px;margin-top:34px;padding:22px 24px"><h4>Antes de ver a resposta</h4><p class="texto" style="font-size:30px;margin-top:10px">Faça a soma e escolha a conduta.<br><b>O gabarito está no próximo story.</b></p></div>
+<div class="rodape"><span>A · B · C · D</span><b>1/2</b></div></section>
+<section id="story-02" class="story"><div class="cab"><span class="marca"><svg><use href="#sim"/></svg>Orto Questões</span><span>Resposta comentada · 2/2</span></div><div class="titulo-jornal p">O veredito</div>
+<span class="chapeu" style="margin-top:30px">Alternativa D</span>
+<h2 class="manchete" style="font-size:78px;margin-top:16px">11 e fixação<br>cirúrgica.</h2>
+<p class="linha-fina" style="margin-top:21px">Quatro pistas explicam a decisão.</p>
+<div style="margin-top:30px;border-top:3px solid var(--fio)">
+<div class="story-row"><span>Região peritrocantérica</span><b>3</b></div>
+<div class="story-row"><span>Dor moderada</span><b>2</b></div>
+<div class="story-row"><span>Lesão lítica</span><b>3</b></div>
+<div class="story-row"><span>Tamanho &gt; ⅔ do diâmetro</span><b>3</b></div>
+</div>
+<div class="box" style="border-radius:22px;margin-top:31px;background:var(--verde);border-color:var(--verde);color:var(--papel)">
+<h4 style="color:#F4CF7C">Para a prova</h4><p style="font:700 39px/1.18 Playfair;margin-top:12px">Mirels alto no fêmur:<br>estabilizar antes de irradiar.</p></div>
+<p class="texto" style="font-size:29px;margin-top:24px">No caso da questão, a radioterapia isolada não resolve o risco mecânico do osso.</p>
+<div class="fio-h" style="margin-top:28px"></div>
+<h3 style="font:900 46px/1.07 Playfair;color:var(--verde)">Questão grátis todo dia.</h3>
+<p style="font:500 22px/1.4 Jakarta;margin-top:14px">Treine com questões de prova comentadas.<br>Conta gratuita com limite diário.</p>
+<div class="rodape"><span>Orto Questões</span><b>ortoquestoes.com.br</b></div></section>
+</body></html>
