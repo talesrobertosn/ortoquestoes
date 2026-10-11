@@ -52,6 +52,7 @@
 .vp-ativo__icone { display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; width: 2.6rem; height: 2.6rem; border-radius: 50%; background: var(--acerto); color: #fff; }
 .vp-ativo h2 { margin: 0 0 0.3rem; font-size: 1.2rem; }
 .vp-ativo p { margin: 0 0 0.75rem; }
+.vp-ativo .vp-ativo__renovar { margin: 0.9rem 0 0; padding: 0.75rem 0.9rem; border-radius: var(--raio-cartao); background: var(--superficie); border: 1px dashed color-mix(in srgb, var(--acerto) 55%, transparent); line-height: 1.5; }
 .vp-secao { display: grid; gap: 1.25rem; padding: clamp(1.4rem, 4vw, 2.5rem); border-radius: var(--raio-cartao); background: var(--superficie); border: var(--borda); box-shadow: var(--sombra-media); }
 .vp-secao__cabeca { max-width: 62ch; }
 .vp-sobre { margin: 0 0 0.35rem; font-size: var(--meta); font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--verdete); }
@@ -371,6 +372,7 @@
 .ck__cpf { margin: 0; }
 .ck__aceite { display: flex; align-items: flex-start; gap: 0.6rem; padding: 0.75rem 0.85rem; border-radius: var(--raio-cartao); background: var(--superficie-2); font-size: var(--meta); line-height: 1.45; cursor: pointer; }
 .ck__aceite input { width: 1.15rem; height: 1.15rem; margin-top: 0.1rem; flex: none; accent-color: var(--verdete); }
+.ck__renovacao { display: flex; align-items: flex-start; gap: 0.5rem; margin: 0; padding: 0.7rem 0.85rem; border-radius: var(--raio-cartao); background: var(--acerto-veu); font-size: var(--meta); line-height: 1.45; }
 .ck__cta { min-height: 56px; border-radius: var(--raio-cartao); font-size: 1.05rem; gap: 0.5rem; }
 .ck__mensagem { margin: 0; padding: 0.7rem 0.9rem; border-radius: var(--raio-controle); background: var(--aviso-veu); font-size: var(--corpo-menor); }
 .ck__seguro { display: flex; gap: 0.45rem; align-items: flex-start; margin: 0; color: var(--texto-2); font-size: 0.75rem; line-height: 1.45; }

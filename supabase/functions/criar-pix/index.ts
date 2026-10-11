@@ -27,9 +27,15 @@ Deno.serve(async req => {
     if (typeof body.cpf !== 'string' || !cpfValido(body.cpf)) return json({ erro: 'Informe um CPF válido para o pagamento.' }, 400, req)
     const email = ambiente === 'teste' ? Deno.env.get('MERCADO_PAGO_PAYER_EMAIL_TESTE') : usuario.email
     if (!email) return json({ erro: 'checkout_nao_configurado' }, 503, req)
-    const ativo = await banco(`assinaturas?id_usuario=eq.${encodeURIComponent(usuario.id)}&status=in.(ativa,cancelada)&or=(fim_periodo.is.null,fim_periodo.gt.${encodeURIComponent(new Date().toISOString())})&select=id&limit=1`)
+    // Renovação antecipada: com um Pix terminando nos próximos 7 dias, pode pagar o
+    // próximo agora. confirmar_pagamento_pix começa o período novo no fim do atual,
+    // então nenhum dia se perde. Cartão vigente ou Pix longe do fim continuam barrados.
+    const ativo = await banco(`assinaturas?id_usuario=eq.${encodeURIComponent(usuario.id)}&status=in.(ativa,cancelada)&or=(fim_periodo.is.null,fim_periodo.gt.${encodeURIComponent(new Date().toISOString())})&select=id_externo,fim_periodo`)
     if (!ativo.ok) throw new Error('consulta_assinatura_falhou')
-    if ((await ativo.json()).length) return json({ erro: 'Você já tem um período pago vigente. Aguarde o término antes de comprar outro.' }, 409, req)
+    const vigentes = await ativo.json() as Array<{ id_externo: string | null; fim_periodo: string | null }>
+    const limiteRenovacao = Date.now() + 7 * 864e5
+    const podeRenovar = vigentes.every((a) => a.id_externo?.startsWith('pix:') && a.fim_periodo && Date.parse(a.fim_periodo) <= limiteRenovacao)
+    if (vigentes.length && !podeRenovar) return json({ erro: 'Você já tem um período pago vigente. A renovação pelo Pix abre nos 7 dias antes do fim, e os dias que faltam continuam valendo.' }, 409, req)
     // Expiração local só libera outro pedido; jamais ativa ou revoga acesso.
     const expirar = await banco(`pedidos_pix?id_usuario=eq.${encodeURIComponent(usuario.id)}&status=in.(criando,pending)&expira_em=lt.${encodeURIComponent(new Date().toISOString())}`, { method: 'PATCH', body: JSON.stringify({ status: 'expired' }) })
     if (!expirar.ok) throw new Error('consulta_pix_falhou')

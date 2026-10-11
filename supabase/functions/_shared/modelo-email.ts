@@ -69,6 +69,106 @@ export interface DadosMarco {
 const esc = (texto: string) => texto.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 const numero = (n: number) => n.toLocaleString('pt-BR')
 
+/**
+ * Moldura comum dos e-mails automáticos: cartão branco, cabeçalho em texto (sem
+ * faixa de imagem), uma chamada só e rodapé discreto. É o desenho do relatório,
+ * que o Gmail entrega em Atualizações: conteúdo pessoal, poucos links e nada de
+ * vitrine. `extraTopo` entra à direita do título (um emblema ou um ícone).
+ */
+interface Moldura {
+  assunto: string
+  previa: string
+  selo: string
+  corSelo?: string
+  titulo: string
+  subtitulo?: string
+  extraTopo?: string
+  corpo: string
+  botao?: { texto: string; link: string }
+  depoisDoBotao?: string
+  motivo: string
+  descadastro: { texto: string; link: string }
+}
+const FONTE = 'font-family:Arial,Helvetica,sans-serif;'
+function moldura(m: Moldura): string {
+  return `<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="supported-color-schemes" content="light">
+<title>${esc(m.assunto)}</title>
+</head>
+<body style="margin:0;padding:0;background:#f1f4f3;">
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;color:#f1f4f3;">${esc(m.previa)}</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f1f4f3;">
+  <tr><td align="center" style="padding:24px 12px;">
+    <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background:#ffffff;border-radius:16px;border:1px solid #e1e8e6;">
+      <tr><td style="padding:22px 36px 0 36px;${FONTE}font-size:15px;line-height:20px;color:#0f4f49;"><strong>Orto</strong> Questões</td></tr>
+      <tr><td style="padding:18px 36px 4px 36px;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+          <td valign="top" style="${FONTE}">
+            <div style="font-size:12px;line-height:16px;letter-spacing:1.5px;text-transform:uppercase;font-weight:bold;color:${m.corSelo ?? '#146b61'};">${esc(m.selo)}</div>
+            <div style="font-size:25px;line-height:31px;font-weight:bold;color:#16211f;padding-top:6px;">${esc(m.titulo)}</div>
+            ${m.subtitulo ? `<div style="font-size:16px;line-height:24px;color:#4b5a56;padding-top:6px;">${m.subtitulo}</div>` : ''}
+          </td>
+          ${m.extraTopo ? `<td width="104" valign="middle" align="right" style="padding-left:12px;">${m.extraTopo}</td>` : ''}
+        </tr></table>
+      </td></tr>
+      ${m.corpo}
+      ${m.botao ? `<tr><td align="left" style="padding:22px 36px 4px 36px;">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-radius:10px;background:#146b61;">
+          <a href="${m.botao.link}" style="display:inline-block;padding:14px 28px;${FONTE}font-size:16px;line-height:20px;font-weight:bold;color:#ffffff;text-decoration:none;border-radius:10px;">${esc(m.botao.texto)}</a>
+        </td></tr></table>
+        ${m.depoisDoBotao ? `<div style="${FONTE}font-size:14px;line-height:21px;color:#5f6d69;padding-top:12px;">${m.depoisDoBotao}</div>` : ''}
+      </td></tr>` : ''}
+      <tr><td style="padding:24px 36px 28px 36px;">
+        <div style="border-top:1px solid #e6ecea;padding-top:16px;${FONTE}font-size:14px;line-height:21px;color:#33413d;">Bons estudos,<br><strong>Tales</strong>, do Orto Questões</div>
+      </td></tr>
+    </table>
+    <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;">
+      <tr><td align="center" style="padding:16px 24px 24px 24px;${FONTE}font-size:11px;line-height:17px;color:#98a4a1;">
+        ${esc(m.motivo)}<br><a href="${m.descadastro.link}" style="color:#98a4a1;text-decoration:underline;">${esc(m.descadastro.texto)}</a>
+      </td></tr>
+    </table>
+  </td></tr>
+</table>
+</body>
+</html>`
+}
+/** Parágrafo do corpo. */
+const paragrafo = (html: string, topo = 14) => `<tr><td style="padding:${topo}px 36px 0 36px;${FONTE}font-size:16px;line-height:25px;color:#33413d;">${html}</td></tr>`
+/** Três números lado a lado, num quadro só. */
+function placar(itens: Array<[string, string]>, titulo?: string) {
+  return `<tr><td style="padding:20px 36px 0 36px;">
+    ${titulo ? `<div style="${FONTE}font-size:12px;line-height:16px;letter-spacing:1.5px;text-transform:uppercase;color:#5f6d69;font-weight:bold;padding-bottom:8px;">${esc(titulo)}</div>` : ''}
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f5f8f7;border:1px solid #e3eae8;border-radius:12px;"><tr>
+      ${itens.map(([valor, rotulo], i) => `<td width="${Math.floor(100 / itens.length)}%" align="center" valign="top" style="padding:16px 6px;${i ? 'border-left:1px solid #e3eae8;' : ''}${FONTE}">
+        <div style="font-size:24px;line-height:28px;font-weight:bold;color:#0f4f49;">${esc(valor)}</div>
+        <div style="font-size:12px;line-height:16px;color:#5f6d69;padding-top:4px;">${esc(rotulo)}</div>
+      </td>`).join('')}
+    </tr></table>
+  </td></tr>`
+}
+/** Lista curta de tópicos em texto (sem ícones: menos imagem, mais carta). */
+function topicos(itens: Array<[string, string]>) {
+  return `<tr><td style="padding:16px 36px 0 36px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+      ${itens.map(([titulo, texto]) => `<tr>
+        <td width="18" valign="top" style="padding:3px 0 10px 0;${FONTE}font-size:16px;line-height:22px;color:#146b61;font-weight:bold;">•</td>
+        <td valign="top" style="padding:3px 0 10px 0;${FONTE}font-size:15px;line-height:23px;color:#33413d;"><strong style="color:#16211f;">${esc(titulo)}.</strong> ${esc(texto)}</td>
+      </tr>`).join('')}
+    </table>
+  </td></tr>`
+}
+/** Caixa de destaque (recado, aviso do Pix). */
+const destaque = (html: string, cor = '#146b61', fundo = '#f1f7f5') => `<tr><td style="padding:18px 36px 0 36px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:${fundo};border-left:4px solid ${cor};border-radius:8px;"><tr>
+    <td style="padding:14px 18px;${FONTE}font-size:15px;line-height:23px;color:#23302d;">${html}</td>
+  </tr></table>
+</td></tr>`
+
 export function emailMarco(d: DadosMarco): { assunto: string; html: string; texto: string } {
   const nome = d.nome?.trim().split(/\s+/)[0] ?? ''
   const cor = CORES[d.marco.nivel]
@@ -80,128 +180,50 @@ export function emailMarco(d: DadosMarco): { assunto: string; html: string; text
   const progresso = proximo ? Math.max(4, Math.min(100, Math.round(((d.respondidas - base) / (proximo.minimo - base)) * 100))) : 100
   const assunto = nome
     ? `${nome}, você chegou a ${numero(d.marco.minimo)} questões`
-    : `Você chegou a ${numero(d.marco.minimo)} questões no OrtoQuestões`
+    : `Você chegou a ${numero(d.marco.minimo)} questões no Orto Questões`
   const linkTreinar = `${d.site}#/treinar`
   const linkRevisao = `${d.site}#/revisao`
-  const selo = d.marco.minimo >= 1000 ? `${d.marco.minimo / 1000}k` : String(d.marco.minimo)
+  const linkConquistas = `${d.site}#/conquistas`
 
-  const recado = d.recado?.trim()
-    ? `<tr><td style="padding:0 40px 8px 40px;">
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f3f7f6;border-left:3px solid #146b61;border-radius:8px;">
-          <tr><td style="padding:14px 18px;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:22px;color:#23302d;">
-            <strong style="color:#0f4f49;">Um recado do Tales:</strong><br>${esc(d.recado.trim()).replace(/\n/g, '<br>')}
-          </td></tr>
-        </table>
-      </td></tr>`
-    : ''
+  // O emblema do site, em pixel art. Sem imagem, o texto do selo diz o mesmo.
+  const emblema = `<img src="${d.site}emblemas/questoes-${d.marco.minimo}.png" width="96" height="96" alt="Emblema ${esc(d.marco.rotulo)}" style="display:block;border:0;image-rendering:pixelated;-ms-interpolation-mode:nearest-neighbor;">`
+  const recado = d.recado?.trim() ? destaque(`<strong style="color:#0f4f49;">Um recado do Tales:</strong><br>${esc(d.recado.trim()).replace(/\n/g, '<br>')}`) : ''
+  const barra = proximo ? `<tr><td style="padding:20px 36px 0 36px;">
+    <div style="${FONTE}font-size:14px;line-height:20px;color:#33413d;">Próximo emblema: <strong>${esc(proximo.rotulo)}</strong>, em ${numero(proximo.minimo)} questões. Faltam <strong>${numero(faltam)}</strong>.</div>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:8px;background:#e6ecea;border-radius:6px;"><tr>
+      <td width="${progresso}%" style="height:10px;line-height:10px;font-size:0;background:${cor.faixa};border-radius:6px;">&nbsp;</td><td style="font-size:0;line-height:10px;">&nbsp;</td>
+    </tr></table>
+  </td></tr>` : paragrafo('Você chegou ao último emblema de volume. Agora a missão é manter tudo afiado com as revisões.', 20)
 
-  const estatistica = (valor: string, rotulo: string) => `
-    <td width="33%" align="center" valign="top" style="padding:14px 6px;background:#f6f8f7;border-radius:10px;">
-      <div style="font-family:Arial,Helvetica,sans-serif;font-size:24px;line-height:28px;font-weight:bold;color:#0f4f49;">${valor}</div>
-      <div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;color:#5f6d69;padding-top:4px;">${rotulo}</div>
-    </td>`
-
-  const html = `<!doctype html>
-<html lang="pt-BR">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light">
-<meta name="supported-color-schemes" content="light">
-<title>${esc(assunto)}</title>
-</head>
-<body style="margin:0;padding:0;background:#eef2f1;">
-<div style="display:none;max-height:0;overflow:hidden;opacity:0;color:#eef2f1;">${esc(`Emblema ${d.marco.rotulo} desbloqueado. ${msg.titulo}.`)}</div>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#eef2f1;">
-  <tr><td align="center" style="padding:28px 12px;">
-    <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background:#ffffff;border-radius:18px;overflow:hidden;">
-
-      <tr><td style="background:#0f4f49;background-image:linear-gradient(135deg,#0c3f3a 0%,#146b61 55%,#1d8a7c 100%);padding:26px 40px 30px 40px;">
-        <div style="font-family:Arial,Helvetica,sans-serif;font-size:18px;line-height:22px;color:#ffffff;"><strong>Orto</strong> Questões</div>
-        <div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;letter-spacing:2px;color:#bfe3dc;padding-top:22px;text-transform:uppercase;">Nova conquista</div>
-        <div style="font-family:Arial,Helvetica,sans-serif;font-size:28px;line-height:34px;font-weight:bold;color:#ffffff;padding-top:6px;">
-          ${nome ? `Parabéns, ${esc(nome)}!` : 'Parabéns!'}
-        </div>
-        <div style="font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:24px;color:#dff1ed;padding-top:6px;">
-          Você chegou a ${numero(d.marco.minimo)} questões respondidas.
-        </div>
-      </td></tr>
-
-      <tr><td align="center" style="padding:30px 40px 6px 40px;">
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0">
-          <tr><td align="center" valign="middle" width="112" height="112" style="width:112px;height:112px;border-radius:56px;background:${cor.fundo};border:4px solid ${cor.borda};">
-            <div style="font-family:Arial,Helvetica,sans-serif;font-size:34px;line-height:38px;font-weight:bold;color:${cor.texto};">${selo}</div>
-            <div style="font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:14px;letter-spacing:1px;color:${cor.texto};text-transform:uppercase;">questões</div>
-          </td></tr>
-        </table>
-        <div style="font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:18px;letter-spacing:1px;color:${cor.texto};text-transform:uppercase;padding-top:14px;font-weight:bold;">Emblema desbloqueado</div>
-        <div style="font-family:Arial,Helvetica,sans-serif;font-size:22px;line-height:28px;font-weight:bold;color:#1b2624;padding-top:2px;">${esc(d.marco.rotulo)}</div>
-      </td></tr>
-
-      <tr><td style="padding:22px 40px 8px 40px;">
-        <div style="font-family:Arial,Helvetica,sans-serif;font-size:19px;line-height:26px;font-weight:bold;color:#0f4f49;">${esc(msg.titulo)}</div>
-        <div style="font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;color:#33413d;padding-top:8px;">${esc(msg.texto)}</div>
-      </td></tr>
-
-      ${recado}
-
-      <tr><td style="padding:16px 34px 4px 34px;">
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="6" border="0">
-          <tr>
-            ${estatistica(numero(d.respondidas), 'questões respondidas')}
-            ${estatistica(acerto === null ? '—' : `${acerto}%`, 'de acerto')}
-            ${estatistica(numero(d.respondidas7d), 'nos últimos 7 dias')}
-          </tr>
-        </table>
-      </td></tr>
-
-      ${proximo ? `<tr><td style="padding:18px 40px 4px 40px;">
-        <div style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#33413d;">
-          Próximo emblema: <strong>${esc(proximo.rotulo)}</strong>. Faltam <strong>${numero(faltam)}</strong> questões.
-        </div>
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:8px;background:#e6ecea;border-radius:6px;">
-          <tr><td width="${progresso}%" style="height:10px;line-height:10px;font-size:0;background:${cor.faixa};border-radius:6px;">&nbsp;</td><td style="font-size:0;line-height:10px;">&nbsp;</td></tr>
-        </table>
-      </td></tr>` : ''}
-
-      <tr><td align="center" style="padding:28px 40px 8px 40px;">
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0">
-          <tr><td align="center" style="border-radius:12px;background:#146b61;">
-            <a href="${linkTreinar}" style="display:inline-block;padding:15px 34px;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:20px;font-weight:bold;color:#ffffff;text-decoration:none;border-radius:12px;">Continuar estudando</a>
-          </td></tr>
-        </table>
-        <div style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#5f6d69;padding-top:14px;">
-          Ou comece pela <a href="${linkRevisao}" style="color:#146b61;font-weight:bold;">revisão de hoje</a>, onde o estudo rende mais.
-        </div>
-      </td></tr>
-
-      <tr><td style="padding:26px 40px 30px 40px;">
-        <div style="border-top:1px solid #e3e9e7;padding-top:18px;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;color:#33413d;">
-          Bons estudos,<br><strong>Tales</strong>, do OrtoQuestões
-        </div>
-      </td></tr>
-    </table>
-
-    <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;">
-      <tr><td align="center" style="padding:18px 24px 6px 24px;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:18px;color:#7a8784;">
-        Siga <a href="https://www.instagram.com/ortoquestoes" style="color:#146b61;font-weight:bold;text-decoration:none;">@ortoquestoes</a> no Instagram: questão comentada e macetes de prova.
-      </td></tr>
-      <tr><td align="center" style="padding:4px 24px 24px 24px;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:17px;color:#98a4a1;">
-        Você recebe este e-mail porque tem uma conta no OrtoQuestões e atingiu um novo emblema.<br>
-        <a href="${d.linkDescadastro}" style="color:#98a4a1;text-decoration:underline;">Não quero mais receber e-mails de conquistas</a>
-      </td></tr>
-    </table>
-  </td></tr>
-</table>
-</body>
-</html>`
+  const html = moldura({
+    assunto,
+    previa: `Emblema ${d.marco.rotulo} desbloqueado. ${msg.titulo}.`,
+    selo: `Emblema ${d.marco.rotulo} desbloqueado`,
+    corSelo: cor.texto,
+    titulo: nome ? `Parabéns, ${nome}!` : 'Parabéns!',
+    subtitulo: `Você chegou a <strong style="color:#16211f;">${numero(d.marco.minimo)} questões</strong> respondidas.`,
+    extraTopo: emblema,
+    corpo: [
+      paragrafo(`<strong style="color:#0f4f49;">${esc(msg.titulo)}.</strong> ${esc(msg.texto)}`, 20),
+      recado,
+      placar([
+        [numero(d.respondidas), 'questões respondidas'],
+        [acerto === null ? '—' : `${acerto}%`, 'de acerto'],
+        [numero(d.respondidas7d), 'nos últimos 7 dias'],
+      ], 'Seus números hoje'),
+      barra,
+    ].join(''),
+    botao: { texto: 'Continuar estudando', link: linkTreinar },
+    depoisDoBotao: `Ou comece pela <a href="${linkRevisao}" style="color:#146b61;font-weight:bold;">revisão de hoje</a>, onde o estudo rende mais. Seus emblemas ficam em <a href="${linkConquistas}" style="color:#146b61;">Conquistas</a>.`,
+    motivo: 'Você recebe este e-mail porque tem uma conta no Orto Questões e atingiu um novo emblema.',
+    descadastro: { texto: 'Não quero mais receber e-mails de conquistas', link: d.linkDescadastro },
+  })
 
   const texto = [
     nome ? `Parabéns, ${nome}!` : 'Parabéns!',
     `Você chegou a ${numero(d.marco.minimo)} questões respondidas e desbloqueou o emblema ${d.marco.rotulo}.`,
     '',
-    msg.titulo,
-    msg.texto,
+    `${msg.titulo}. ${msg.texto}`,
     ...(d.recado?.trim() ? ['', `Um recado do Tales: ${d.recado.trim()}`] : []),
     '',
     `Questões respondidas: ${numero(d.respondidas)}`,
@@ -212,7 +234,7 @@ export function emailMarco(d: DadosMarco): { assunto: string; html: string; text
     `Continuar estudando: ${linkTreinar}`,
     '',
     'Bons estudos,',
-    'Tales, do OrtoQuestões',
+    'Tales, do Orto Questões',
     '',
     `Não quer mais receber e-mails de conquistas? ${d.linkDescadastro}`,
   ].join('\n')
@@ -284,6 +306,13 @@ export const TEMAS: Record<string, string> = {
   'tumores': 'Tumores ósseos e de partes moles', 'conceitos-basicos': 'Conceitos básicos', 'osteometabolicas': 'Osteometabólicas',
 }
 const MESES = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro']
+/** "2026-10-q1" → "1 a 15 de outubro"; "2026-10-q2" → "16 a 31 de outubro". */
+export function nomeQuinzena(ref: string): string | null {
+  const m = ref.match(/^(\d{4})-(\d{2})-q([12])$/)
+  if (!m) return null
+  const ultimo = new Date(Date.UTC(Number(m[1]), Number(m[2]), 0)).getUTCDate()
+  return `${m[3] === '1' ? '1 a 15' : `16 a ${ultimo}`} de ${MESES[Number(m[2]) - 1]}`
+}
 /** "2026-09" → "setembro de 2026". */
 export function nomeMes(mes: string): string {
   const [ano, m] = mes.split('-').map(Number)
@@ -327,19 +356,24 @@ export function analisarMes(d: DadosRelatorio) {
 
 export function emailRelatorio(d: DadosRelatorio): { assunto: string; html: string; texto: string } {
   const nome = d.nome?.trim().split(/\s+/)[0] ?? ''
-  const mes = nomeMes(d.mes)
+  // O mesmo relatório serve ao mês (assinantes) e à quinzena (todos que estudaram).
+  const quinzena = nomeQuinzena(d.mes)
+  const mes = quinzena ?? nomeMes(d.mes)
   const Mes = mes[0].toUpperCase() + mes.slice(1)
+  const L = quinzena
+    ? { em: `de ${quinzena}`, curto: 'na quinzena', anterior: 'quinzena anterior', no: 'nas questões da quinzena', proximo: 'a próxima quinzena', topo: `Seu resumo de ${quinzena}`, estudados: 'Mais estudados na quinzena', motivo: 'Você recebe este resumo a cada 15 dias porque estudou no Orto Questões.', sair: 'Não quero mais receber os resumos de estudo' }
+    : { em: `em ${mes.split(' ')[0]}`, curto: 'no mês', anterior: 'mês anterior', no: `em ${mes.split(' ')[0]}`, proximo: 'o próximo mês', topo: `Seu relatório de ${mes}`, estudados: 'Mais estudados no mês', motivo: 'Você recebe este relatório porque é assinante do Orto Questões.', sair: 'Não quero mais receber o relatório mensal' }
   const a = analisarMes(d)
   const parado = d.respostas === 0
   const assunto = parado
-    ? `${nome ? `${nome}, s` : 'S'}eu ${mes.split(' ')[0]} no OrtoQuestões`
-    : `${nome ? `${nome}, v` : 'V'}ocê respondeu ${numero(d.respostas)} questões em ${mes.split(' ')[0]}`
+    ? `${nome ? `${nome}, s` : 'S'}eu ${mes.split(' ')[0]} no Orto Questões`
+    : `${nome ? `${nome}, v` : 'V'}ocê respondeu ${numero(d.respostas)} questões ${L.em}`
   const variacao = (agora: number, antes: number, unidade = '') => {
     const delta = agora - antes
     if (!antes && !agora) return ''
-    if (delta === 0) return `<span style="color:#5f6d69;">igual ao mês anterior</span>`
+    if (delta === 0) return `<span style="color:#5f6d69;">igual ${quinzena ? 'à' : 'ao'} ${L.anterior}</span>`
     const cor = delta > 0 ? '#1f7a4d' : '#b3423a'
-    return `<span style="color:${cor};font-weight:bold;">${delta > 0 ? '▲' : '▼'} ${numero(Math.abs(delta))}${unidade}</span> <span style="color:#5f6d69;">vs. mês anterior</span>`
+    return `<span style="color:${cor};font-weight:bold;">${delta > 0 ? '▲' : '▼'} ${numero(Math.abs(delta))}${unidade}</span> <span style="color:#5f6d69;">vs. ${L.anterior}</span>`
   }
   const cartao = (valor: string, rotulo: string, extra: string) => `
     <td width="33%" align="center" valign="top" style="padding:14px 6px;background:#f6f8f7;border-radius:10px;">
@@ -359,7 +393,7 @@ export function emailRelatorio(d: DadosRelatorio): { assunto: string; html: stri
   const temasHtml = [
     a.subiram.length ? bloco('Subiram', a.subiram.map((t) => linhaTema(t.nome, `${t.antes}% → ${t.agora}%`, '#1f7a4d')).join('')) : '',
     a.cairam.length ? bloco('Caíram', a.cairam.map((t) => linhaTema(t.nome, `${t.antes}% → ${t.agora}%`, '#b3423a')).join('')) : '',
-    !a.subiram.length && !a.cairam.length && a.maisEstudados.length ? bloco('Mais estudados no mês', a.maisEstudados.map((t) => linhaTema(t.nome, `${t.total} questões · ${t.acerto}%`, '#0f4f49')).join('')) : '',
+    !a.subiram.length && !a.cairam.length && a.maisEstudados.length ? bloco(L.estudados, a.maisEstudados.map((t) => linhaTema(t.nome, `${t.total} questões · ${t.acerto}%`, '#0f4f49')).join('')) : '',
   ].join('')
 
   const simulado = d.simulado ? `
@@ -375,11 +409,11 @@ export function emailRelatorio(d: DadosRelatorio): { assunto: string; html: stri
   const passo = parado
     ? { titulo: 'Recomece com 10 questões', texto: 'Um mês parado não apaga o que você já estudou. Dez questões hoje e a revisão do dia colocam tudo de volta nos trilhos.', botao: 'Fazer 10 questões', link: `${d.site}#/treinar` }
     : a.maisFraco && a.maisFraco.acerto < 70
-      ? { titulo: `Comece o próximo mês por ${a.maisFraco.nome}`, texto: `Foi o seu menor acerto em ${mes.split(' ')[0]} (${a.maisFraco.acerto}%). É o tema em que cada sessão mais faz a nota subir.`, botao: `Treinar ${a.maisFraco.nome}`, link: `${d.site}#/treinar?temas=${a.maisFraco.slug}` }
+      ? { titulo: `Comece ${L.proximo} por ${a.maisFraco.nome}`, texto: `Foi o seu menor acerto ${L.no} (${a.maisFraco.acerto}%). É o tema em que cada sessão mais faz a nota subir.`, botao: `Treinar ${a.maisFraco.nome}`, link: `${d.site}#/treinar?temas=${a.maisFraco.slug}` }
       : { titulo: 'Mantenha o plano rodando', texto: 'Seu acerto está sólido nos temas que você estudou. Agora vale ampliar: temas que você ainda não viu e o Simulado Nacional do mês.', botao: 'Abrir meu plano até a prova', link: `${d.site}#/plano-de-estudo` }
 
   const manchete = parado
-    ? `${Mes} passou sem questões. Tudo bem: o próximo mês começa hoje.`
+    ? `${Mes} passou sem questões. Tudo bem: ${L.proximo} começa hoje.`
     : `Você respondeu ${numero(d.respostas)} ${d.respostas === 1 ? 'questão' : 'questões'} em ${d.dias_ativos} ${d.dias_ativos === 1 ? 'dia' : 'dias'} de estudo.`
 
   const html = `<!doctype html>
@@ -398,7 +432,7 @@ export function emailRelatorio(d: DadosRelatorio): { assunto: string; html: stri
     <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background:#ffffff;border-radius:18px;overflow:hidden;">
       <tr><td style="background:#0f4f49;background-image:linear-gradient(135deg,#0c3f3a 0%,#146b61 55%,#1d8a7c 100%);padding:26px 40px 30px 40px;">
         <div style="font-family:Arial,Helvetica,sans-serif;font-size:18px;line-height:22px;color:#ffffff;"><strong>Orto</strong> Questões</div>
-        <div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;letter-spacing:2px;color:#bfe3dc;padding-top:22px;text-transform:uppercase;">Seu relatório de ${esc(mes)}</div>
+        <div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;letter-spacing:2px;color:#bfe3dc;padding-top:22px;text-transform:uppercase;">${esc(L.topo)}</div>
         <div style="font-family:Arial,Helvetica,sans-serif;font-size:26px;line-height:32px;font-weight:bold;color:#ffffff;padding-top:6px;">${nome ? `Olá, ${esc(nome)}` : 'Olá'}</div>
         <div style="font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:24px;color:#dff1ed;padding-top:6px;">${esc(manchete)}</div>
       </td></tr>
@@ -406,7 +440,7 @@ export function emailRelatorio(d: DadosRelatorio): { assunto: string; html: stri
       <tr><td style="padding:24px 34px 4px 34px;">
         <table role="presentation" width="100%" cellpadding="0" cellspacing="6" border="0">
           <tr>
-            ${cartao(numero(d.respostas), 'questões no mês', variacao(d.respostas, d.respostas_anterior))}
+            ${cartao(numero(d.respostas), `questões ${L.curto}`, variacao(d.respostas, d.respostas_anterior))}
             ${cartao(a.acerto === null ? '—' : `${a.acerto}%`, 'de acerto', a.acerto !== null && a.acertoAnterior !== null ? variacao(a.acerto, a.acertoAnterior, ' pts') : '')}
             ${cartao(String(d.dias_ativos), d.dias_ativos === 1 ? 'dia de estudo' : 'dias de estudo', '')}
           </tr>
@@ -439,15 +473,15 @@ export function emailRelatorio(d: DadosRelatorio): { assunto: string; html: stri
 
       <tr><td style="padding:26px 40px 30px 40px;">
         <div style="border-top:1px solid #e3e9e7;padding-top:18px;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;color:#33413d;">
-          Bons estudos,<br><strong>Tales</strong>, do OrtoQuestões
+          Bons estudos,<br><strong>Tales</strong>, do Orto Questões
         </div>
       </td></tr>
     </table>
 
     <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;">
       <tr><td align="center" style="padding:18px 24px 24px 24px;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:17px;color:#98a4a1;">
-        Você recebe este relatório porque é assinante do OrtoQuestões.<br>
-        <a href="${d.linkDescadastro}" style="color:#98a4a1;text-decoration:underline;">Não quero mais receber o relatório mensal</a>
+        ${esc(L.motivo)}<br>
+        <a href="${d.linkDescadastro}" style="color:#98a4a1;text-decoration:underline;">${esc(L.sair)}</a>
       </td></tr>
     </table>
   </td></tr>
@@ -456,12 +490,12 @@ export function emailRelatorio(d: DadosRelatorio): { assunto: string; html: stri
 </html>`
 
   const texto = [
-    `Seu relatório de ${mes}`,
+    L.topo,
     nome ? `Olá, ${nome}.` : 'Olá.',
     manchete,
     '',
-    `Questões no mês: ${numero(d.respostas)} (mês anterior: ${numero(d.respostas_anterior)})`,
-    `Acerto: ${a.acerto === null ? '—' : `${a.acerto}%`}${a.acertoAnterior !== null ? ` (mês anterior: ${a.acertoAnterior}%)` : ''}`,
+    `Questões ${L.curto}: ${numero(d.respostas)} (${L.anterior}: ${numero(d.respostas_anterior)})`,
+    `Acerto: ${a.acerto === null ? '—' : `${a.acerto}%`}${a.acertoAnterior !== null ? ` (${L.anterior}: ${a.acertoAnterior}%)` : ''}`,
     `Dias de estudo: ${d.dias_ativos}`,
     ...(a.subiram.length ? ['', 'Subiram: ' + a.subiram.map((t) => `${t.nome} (${t.antes}% → ${t.agora}%)`).join(', ')] : []),
     ...(a.cairam.length ? ['', 'Caíram: ' + a.cairam.map((t) => `${t.nome} (${t.antes}% → ${t.agora}%)`).join(', ')] : []),
@@ -471,9 +505,9 @@ export function emailRelatorio(d: DadosRelatorio): { assunto: string; html: stri
     passo.link,
     '',
     'Bons estudos,',
-    'Tales, do OrtoQuestões',
+    'Tales, do Orto Questões',
     '',
-    `Não quer mais receber o relatório mensal? ${d.linkDescadastro}`,
+    `${L.sair}? ${d.linkDescadastro}`,
   ].join('\n')
 
   return { assunto, html, texto }
@@ -502,113 +536,116 @@ export interface DadosLembrete {
 }
 
 /**
- * Lembrete no clima da temporada RPG: o mensageiro do ranking chega com a
- * carta. Imagens em pixel art servidas pelo próprio site; se o e-mail
- * bloquear imagens, o texto continua completo sozinho.
+ * Lembrete na moldura comum: título pessoal, os números da pessoa, poucos
+ * tópicos em texto e um botão. Um ícone em pixel art do site só enfeita; se o
+ * e-mail bloquear imagens, o texto continua completo sozinho.
  */
 export function emailLembrete(d: DadosLembrete): { assunto: string; html: string; texto: string } {
   const nome = d.nome?.trim().split(/\s+/)[0] ?? ''
-  const img = (caminho: string, largura: number, altura: number, alt = '') =>
-    `<img src="${d.site}${caminho}" width="${largura}" height="${altura}" alt="${esc(alt)}" style="display:block;border:0;image-rendering:pixelated;-ms-interpolation-mode:nearest-neighbor;">`
+  // Altura fixa de 64 px, largura pela proporção da arte (o mensageiro é mais alto que largo).
+  const icone = (caminho: string, alt: string) => {
+    const largura = caminho === 'ranking/mensageiro.png' ? 51 : 64
+    return `<img src="${d.site}${caminho}" width="${largura}" height="64" alt="${esc(alt)}" style="display:block;border:0;image-rendering:pixelated;-ms-interpolation-mode:nearest-neighbor;">`
+  }
   const linkTreinar = `${d.site}#/treinar`
   const linkRevisao = `${d.site}#/revisao`
   const linkCronograma = `${d.site}#/cronograma`
   const linkAssinatura = `${d.site}#/assinatura`
   const dias = Math.max(1, d.diasRestantes ?? 3)
   const diasTexto = dias === 1 ? '1 dia' : `${dias} dias`
-  const fimTexto = d.fimEm ? `em ${new Date(d.fimEm).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', timeZone: 'America/Sao_Paulo' })}` : `em ${diasTexto}`
+  const fimData = d.fimEm ? new Date(d.fimEm).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', timeZone: 'America/Sao_Paulo' }) : null
+  const fimTexto = fimData ? `em ${fimData}` : `em ${diasTexto}`
   const planoTexto = ({ mensal: 'mensal', semestral: 'semestral', anual: 'anual' } as Record<string, string>)[d.plano ?? ''] ?? (d.plano ?? '')
+  const mesesPlano = ({ mensal: '1 mês', semestral: '6 meses', anual: '12 meses' } as Record<string, string>)[d.plano ?? ''] ?? '1 mês'
+  const forte = (t: string) => `<strong style="color:#16211f;">${t}</strong>`
 
-  const C = {
+  type Conteudo = { assunto: string; previa: string; selo: string; corSelo?: string; titulo: string; lide: string; icone: [string, string]; aviso?: string; topicos: Array<[string, string]>; botao: string; link: string; rodape: string }
+  const C: Conteudo = ({
     nunca: {
-      assunto: nome ? `${nome}, sua primeira missão no OrtoQuestões está esperando` : 'Sua primeira missão no OrtoQuestões está esperando',
+      assunto: nome ? `${nome}, sua conta no Orto Questões está pronta` : 'Sua conta no Orto Questões está pronta',
       previa: 'Questões oficiais de TEOT, TARO e ENARE R4 comentadas, alternativa por alternativa. Comece com 10.',
-      selo: 'Missão: primeira batalha',
-      titulo: nome ? `${nome}, o mensageiro trouxe um convite` : 'O mensageiro trouxe um convite',
-      lide: 'Você criou sua conta, mas ainda não respondeu nenhuma questão. Que tal dar uma chance? Leva uns 15 minutos.',
-      corpo: [
-        ['pixel/treinar.png', 'Provas oficiais comentadas', 'TEOT, TARO e ENARE R4 separadas por tema, com a explicação de cada alternativa: por que a certa está certa e cada errada está errada.'],
-        ['pixel/revisao.png', 'Revisão que lembra por você', 'Errou? A questão volta no momento certo. Acertou com certeza? Só reaparece daqui a semanas.'],
-        ['pixel/ranking.png', 'Ranking, emblemas e sequência', 'Cada questão soma pontos, destrava emblemas e acende a sua fogueira de dias seguidos.'],
+      selo: 'Primeiros passos',
+      titulo: nome ? `${nome}, que tal começar com 10 questões?` : 'Que tal começar com 10 questões?',
+      lide: 'Você criou sua conta, mas ainda não respondeu nenhuma questão. Uma sessão curta, de uns 15 minutos, já mostra como funciona.',
+      icone: ['pixel/treinar.png', 'Treinar'],
+      topicos: [
+        ['Provas oficiais comentadas', 'TEOT, TARO e ENARE R4 por tema, com a explicação de cada alternativa.'],
+        ['Revisão que lembra por você', 'Errou? A questão volta no momento certo. Acertou com certeza? Só reaparece daqui a semanas.'],
+        ['Seu progresso fica salvo', 'Respostas, revisões e emblemas acompanham você em qualquer aparelho.'],
       ],
-      botao: 'Começar minha primeira missão',
+      botao: 'Responder minhas primeiras 10',
       link: linkTreinar,
-      rodape: 'Comece por um tema de que você gosta. Dez questões já mostram como funciona.',
+      rodape: 'Comece por um tema de que você gosta.',
     },
     tres_dias: {
-      assunto: nome ? `${nome}, sua fogueira está apagando` : 'Sua fogueira de estudo está apagando',
-      previa: 'Faz alguns dias que você não aparece. Dez questões hoje mantêm o hábito vivo.',
-      selo: 'Missão: manter a chama',
+      assunto: nome ? `${nome}, sua fogueira de estudo está apagando` : 'Sua fogueira de estudo está apagando',
+      previa: `Faz ${d.diasFora} dias sem estudar. Dez questões hoje mantêm o hábito vivo.`,
+      selo: 'Fogueira apagando',
+      corSelo: '#b25a12',
       titulo: nome ? `${nome}, a fogueira está esperando lenha` : 'A fogueira está esperando lenha',
-      lide: `Faz ${d.diasFora} dias que você não aparece. Constância vence intensidade: uma sessão curta hoje vale mais do que uma maratona no fim de semana.`,
-      corpo: [
-        ['ranking/chama.png', 'Dez questões, quinze minutos', 'É o suficiente para manter o hábito e não deixar as revisões acumularem.'],
-        ['pixel/revisao.png', 'Suas revisões estão prontas', 'As questões que você errou já voltaram para a fila. É onde o estudo rende mais por minuto.'],
-        ['pixel/ranking.png', 'O ranking continua andando', `Você já respondeu ${numero(d.respondidas)} questões. Cada uma nova soma um ponto.`],
+      lide: `Faz ${forte(`${d.diasFora} dias`)} que você não responde questões. Constância vence intensidade: uma sessão curta hoje vale mais do que uma maratona no fim de semana.`,
+      icone: ['ranking/chama.png', 'Fogueira'],
+      topicos: [
+        ['Dez questões, quinze minutos', 'É o suficiente para manter o hábito e não deixar as revisões acumularem.'],
+        ['Suas revisões estão prontas', 'As questões que você errou já voltaram para a fila: é onde o estudo rende mais por minuto.'],
+        ['Você já tem ' + numero(d.respondidas) + ' questões', 'Cada nova soma no ranking e no caminho para o próximo emblema.'],
       ],
       botao: 'Voltar com 10 questões',
       link: linkTreinar,
       rodape: `Prefere começar pelo que já errou? Abra a <a href="${linkRevisao}" style="color:#146b61;font-weight:bold;">revisão de hoje</a>.`,
     },
     sete_dias: {
-      assunto: nome ? `${nome}, uma semana longe acontece. O importante é voltar` : 'Uma semana longe acontece. O importante é voltar',
-      previa: 'Sua jornada até a prova continua de onde parou. Volte com uma sessão curta.',
-      selo: 'Missão: retomar a jornada',
+      assunto: nome ? `${nome}, seu progresso no Orto Questões está guardado` : 'Seu progresso no Orto Questões está guardado',
+      previa: 'Uma semana longe acontece. Volte com uma sessão curta, de onde parou.',
+      selo: 'Retomar a jornada',
       titulo: nome ? `${nome}, sua jornada continua de onde parou` : 'Sua jornada continua de onde parou',
-      lide: `Faz ${d.diasFora} dias desde a última visita. Plantão, cansaço, vida: acontece com todo mundo. O que separa quem chega pronto na prova é voltar, não ser perfeito.`,
-      corpo: [
-        ['pixel/treinar.png', 'Recomece pequeno', 'Uma sessão de 10 questões hoje. Amanhã, outra. O hábito volta mais rápido do que parece.'],
-        ['pixel/planos.png', 'Seu progresso está guardado', `As ${numero(d.respondidas)} questões que você respondeu, as revisões e o caderno de erros continuam lá, esperando.`],
-        ['pixel/simulado.png', 'Um plano até a prova', 'O cronograma divide o que falta pelos dias até a prova e diz o que estudar hoje.'],
+      lide: `Faz ${forte(`${d.diasFora} dias`)} desde a última sessão. Plantão, cansaço, vida: acontece com todo mundo. O que separa quem chega pronto na prova é voltar, não ser perfeito.`,
+      icone: ['pixel/planos.png', 'Jornada'],
+      topicos: [
+        ['Recomece pequeno', 'Dez questões hoje, dez amanhã. O hábito volta mais rápido do que parece.'],
+        ['Nada se perdeu', `As ${numero(d.respondidas)} questões que você respondeu, as revisões e o caderno de erros continuam lá.`],
+        ['Um plano até a prova', 'O cronograma divide o que falta pelos dias até a prova e diz o que estudar hoje.'],
       ],
-      botao: 'Retomar minha jornada',
+      botao: 'Retomar com 10 questões',
       link: linkTreinar,
       rodape: `Quer um plano dia a dia? Veja o <a href="${linkCronograma}" style="color:#146b61;font-weight:bold;">cronograma até a prova</a>.`,
     },
     renovacao_pix: {
-      assunto: nome ? `${nome}, seu acesso termina em ${diasTexto}: renove e siga em frente` : `Seu acesso termina em ${diasTexto}: renove e siga em frente`,
-      previa: `Seu plano pago no Pix termina ${fimTexto}. Renove para não perder o ritmo até a prova.`,
-      selo: 'Missão: renovar a armadura',
-      titulo: nome ? `${nome}, a sua armadura vence ${fimTexto}` : `Sua armadura vence ${fimTexto}`,
-      lide: `Faltam ${diasTexto} para terminar o acesso do seu plano${d.plano ? ` ${planoTexto}` : ''}, pago no Pix. Como o Pix não renova sozinho, este é o lembrete: renove e continue a jornada sem interromper o ritmo.`,
-      corpo: [
-        ['pixel/revisao.png', 'Suas revisões continuam em dia', 'A fila de revisão espaçada segue chamando cada questão no momento certo, sem limite diário.'],
-        ['pixel/simulado.png', 'Simulados, cronograma e relatórios', 'Simulado Nacional, plano até a prova, "como a turma respondeu" e o relatório do mês continuam liberados.'],
-        ['pixel/ranking.png', 'Nada se perde', `Suas ${numero(d.respondidas)} questões, o caderno de erros e as conquistas ficam guardados, renovando ou não.`],
+      assunto: nome ? `${nome}, seu acesso termina ${fimTexto}: renove sem perder dias` : `Seu acesso termina ${fimTexto}: renove sem perder dias`,
+      previa: `Renovando agora pelo Pix, os ${diasTexto} que faltam continuam valendo. O novo período começa quando o atual termina.`,
+      selo: `Faltam ${diasTexto}`,
+      corSelo: '#8a6110',
+      titulo: nome ? `${nome}, seu plano termina ${fimTexto}` : `Seu plano termina ${fimTexto}`,
+      lide: `O acesso do seu plano${d.plano ? ` ${planoTexto}` : ''}, pago no Pix, termina ${fimTexto}. Como o Pix não renova sozinho, este é o lembrete para você seguir sem interromper o ritmo.`,
+      icone: ['ranking/mensageiro.png', 'Mensageiro'],
+      aviso: `${forte('Pode renovar já, sem perder nenhum dia.')} Os ${diasTexto} que faltam continuam valendo: o novo período começa${fimData ? ` em ${fimData}` : ''}, quando o atual termina. Exemplo: renovando hoje o mesmo plano, você fica com esses ${diasTexto} mais ${mesesPlano} completo${mesesPlano === '1 mês' ? '' : 's'}.`,
+      topicos: [
+        ['Na página de planos', 'Escolha o plano, gere o Pix e pague. A renovação fica aberta nos 7 dias finais do seu período.'],
+        ['Tudo continua liberado', 'Questões sem limite, cronograma, Simulado Nacional e o relatório do mês.'],
+        ['Nada se perde', `Suas ${numero(d.respondidas)} questões, o caderno de erros e as conquistas ficam guardados, renovando ou não.`],
       ],
-      botao: 'Renovar e continuar estudando',
+      botao: 'Renovar no Pix agora',
       link: linkAssinatura,
       rodape: `Prefere não precisar lembrar? No cartão, a assinatura renova sozinha e você cancela quando quiser em <a href="${d.site}#/conta/assinatura" style="color:#146b61;font-weight:bold;">Minha conta</a>.`,
     },
     renovacao_pix_hoje: {
-      assunto: nome ? `${nome}, seu acesso termina hoje: renove e não pare agora` : 'Seu acesso termina hoje: renove e não pare agora',
-      previa: 'Hoje é o último dia do seu plano pago no Pix. Renove para continuar de onde parou.',
-      selo: 'Missão: último dia da armadura',
-      titulo: nome ? `${nome}, hoje é o último dia da sua armadura` : 'Hoje é o último dia da sua armadura',
-      lide: `O acesso do seu plano${d.plano ? ` ${planoTexto}` : ''}, pago no Pix, termina hoje. Olha só o que você já construiu até aqui: renove agora e mantenha o ritmo até a prova.`,
-      corpo: [
-        ['pixel/revisao.png', 'As revisões não podem esfriar', 'A fila de revisão espaçada depende de constância. Renovando hoje, nenhuma questão perde o momento certo de voltar.'],
-        ['pixel/simulado.png', 'Tudo continua liberado', 'Simulados, cronograma até a prova, "como a turma respondeu" e o relatório do mês seguem com você.'],
-        ['pixel/ranking.png', 'Seu progresso está guardado', 'O caderno de erros, as conquistas e o histórico ficam salvos. Renovando, você continua exatamente de onde parou.'],
+      assunto: nome ? `${nome}, seu acesso termina hoje` : 'Seu acesso termina hoje',
+      previa: 'Hoje é o último dia do seu plano pago no Pix. Renovando hoje, você não fica nenhum dia sem acesso.',
+      selo: 'Último dia',
+      corSelo: '#b3423a',
+      titulo: nome ? `${nome}, hoje é o último dia do seu plano` : 'Hoje é o último dia do seu plano',
+      lide: `O acesso do seu plano${d.plano ? ` ${planoTexto}` : ''}, pago no Pix, termina hoje. Olha o que você já construiu até aqui:`,
+      icone: ['ranking/chama.png', 'Fogueira'],
+      aviso: `${forte('Renovando hoje, você não fica nenhum dia sem acesso.')} O novo período começa quando o atual termina e vale ${mesesPlano === '1 mês' ? '1 mês completo' : `${mesesPlano} completos`} a partir daí. Se renovar depois, ele começa no dia do pagamento.`,
+      topicos: [
+        ['As revisões não esfriam', 'A fila de revisão espaçada depende de constância. Renovando hoje, nenhuma questão perde o momento certo de voltar.'],
+        ['Seu progresso está guardado', 'Caderno de erros, conquistas e histórico ficam salvos. Renovando, você continua de onde parou.'],
       ],
-      botao: 'Renovar hoje e continuar',
+      botao: 'Renovar hoje no Pix',
       link: linkAssinatura,
       rodape: `Prefere não precisar lembrar? No cartão, a assinatura renova sozinha e você cancela quando quiser em <a href="${d.site}#/conta/assinatura" style="color:#146b61;font-weight:bold;">Minha conta</a>.`,
     },
-  }[d.campanha]
-
-  const blocos = C.corpo.map(([icone, titulo, texto]) => `
-      <tr><td style="padding:0 40px 14px 40px;">
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f6f8f7;border-radius:12px;">
-          <tr>
-            <td width="64" valign="middle" align="center" style="padding:14px 6px 14px 14px;">${img(icone, 44, 44)}</td>
-            <td valign="middle" style="padding:14px 18px 14px 8px;font-family:Arial,Helvetica,sans-serif;">
-              <div style="font-size:16px;line-height:22px;font-weight:bold;color:#0f4f49;">${esc(titulo)}</div>
-              <div style="font-size:14px;line-height:21px;color:#33413d;padding-top:3px;">${esc(texto)}</div>
-            </td>
-          </tr>
-        </table>
-      </td></tr>`).join('')
+  } as Record<CampanhaLembrete, Conteudo>)[d.campanha]
 
   // Renovação do Pix: o quadro com os números da pessoa até aqui.
   const ehPix = d.campanha === 'renovacao_pix' || d.campanha === 'renovacao_pix_hoje'
@@ -618,95 +655,40 @@ export function emailLembrete(d: DadosLembrete): { assunto: string; html: string
     [pct === null ? '-' : `${pct}%`, 'de acerto'],
     [numero(d.respondidas7d ?? 0), 'nos últimos 7 dias'],
   ] : []
-  const placar = numeros.length ? `
-      <tr><td style="padding:0 40px 18px 40px;">
-        <div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:#7a5a12;padding-bottom:8px;">Sua jornada até aqui</div>
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#fbf5e6;border:1px solid #ecdcb0;border-radius:12px;">
-          <tr>${numeros.map(([valor, rotulo], i) => `
-            <td width="33%" align="center" valign="top" style="padding:16px 8px;${i ? 'border-left:1px solid #ecdcb0;' : ''}font-family:Arial,Helvetica,sans-serif;">
-              <div style="font-size:26px;line-height:30px;font-weight:bold;color:#0f4f49;">${esc(valor)}</div>
-              <div style="font-size:13px;line-height:18px;color:#5f6d69;padding-top:2px;">${esc(rotulo)}</div>
-            </td>`).join('')}
-          </tr>
-        </table>
-      </td></tr>` : ''
 
-  const html = `<!doctype html>
-<html lang="pt-BR">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light">
-<meta name="supported-color-schemes" content="light">
-<title>${esc(C.assunto)}</title>
-</head>
-<body style="margin:0;padding:0;background:#eef2f1;">
-<div style="display:none;max-height:0;overflow:hidden;opacity:0;color:#eef2f1;">${esc(C.previa)}</div>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#eef2f1;">
-  <tr><td align="center" style="padding:28px 12px;">
-    <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background:#ffffff;border-radius:18px;overflow:hidden;">
+  const html = moldura({
+    assunto: C.assunto,
+    previa: C.previa,
+    selo: C.selo,
+    corSelo: C.corSelo,
+    titulo: C.titulo,
+    extraTopo: icone(C.icone[0], C.icone[1]),
+    corpo: [
+      paragrafo(C.lide, 18),
+      numeros.length ? placar(numeros, 'Sua jornada até aqui') : '',
+      C.aviso ? destaque(C.aviso, '#c9962c', '#fbf6e8') : '',
+      topicos(C.topicos),
+    ].join(''),
+    botao: { texto: C.botao, link: C.link },
+    depoisDoBotao: C.rodape,
+    motivo: 'Você recebe este e-mail porque tem uma conta no Orto Questões.',
+    descadastro: { texto: 'Não quero mais receber lembretes', link: d.linkDescadastro },
+  })
 
-      <tr><td style="background:#0b3a35;background-image:linear-gradient(135deg,#071f1c 0%,#0b3a35 55%,#14655e 100%);padding:26px 40px 28px 40px;border-bottom:4px solid #e0b862;">
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-          <tr>
-            <td valign="top" style="font-family:Arial,Helvetica,sans-serif;">
-              <div style="font-size:18px;line-height:22px;color:#ffffff;"><strong>Orto</strong> Questões</div>
-              <div style="display:inline-block;margin-top:20px;padding:4px 10px;background:#e0b862;color:#2b1d02;font-size:12px;line-height:16px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;">${esc(C.selo)}</div>
-              <div style="font-size:26px;line-height:32px;font-weight:bold;color:#ffffff;padding-top:12px;">${esc(C.titulo)}</div>
-            </td>
-            <td width="96" valign="bottom" align="right" style="padding-left:12px;">${img('ranking/mensageiro.png', 72, 90, 'O mensageiro do OrtoQuestões')}</td>
-          </tr>
-        </table>
-      </td></tr>
-
-      <tr><td style="padding:26px 40px 18px 40px;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;color:#33413d;">${esc(C.lide)}</td></tr>
-
-      ${placar}
-
-      ${blocos}
-
-      <tr><td align="center" style="padding:16px 40px 6px 40px;">
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0">
-          <tr><td align="center" style="border-radius:12px;background:#146b61;box-shadow:inset 0 -4px 0 #0f4f49;">
-            <a href="${C.link}" style="display:inline-block;padding:16px 34px;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:20px;font-weight:bold;color:#ffffff;text-decoration:none;border-radius:12px;">${esc(C.botao)}</a>
-          </td></tr>
-        </table>
-        <div style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;color:#5f6d69;padding-top:14px;">${C.rodape}</div>
-      </td></tr>
-
-      <tr><td style="padding:24px 40px 30px 40px;">
-        <div style="border-top:1px solid #e3e9e7;padding-top:18px;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;color:#33413d;">
-          Bons estudos,<br><strong>Tales</strong>, do OrtoQuestões
-        </div>
-      </td></tr>
-    </table>
-
-    <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;">
-      <tr><td align="center" style="padding:18px 24px 6px 24px;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:18px;color:#7a8784;">
-        Siga <a href="https://www.instagram.com/ortoquestoes" style="color:#146b61;font-weight:bold;text-decoration:none;">@ortoquestoes</a> no Instagram: questão comentada e macetes de prova.
-      </td></tr>
-      <tr><td align="center" style="padding:4px 24px 24px 24px;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:17px;color:#98a4a1;">
-        Você recebe este e-mail porque tem uma conta no OrtoQuestões.<br>
-        <a href="${d.linkDescadastro}" style="color:#98a4a1;text-decoration:underline;">Não quero mais receber lembretes</a>
-      </td></tr>
-    </table>
-  </td></tr>
-</table>
-</body>
-</html>`
-
+  const semTags = (t: string) => t.replace(/<[^>]+>/g, '')
   const texto = [
     C.titulo,
     '',
-    C.lide,
+    semTags(C.lide),
     '',
     ...(numeros.length ? ['Sua jornada até aqui: ' + numeros.map(([v, r]) => `${v} ${r}`).join(' · '), ''] : []),
-    ...C.corpo.flatMap(([, titulo, texto]) => [`• ${titulo}: ${texto}`]),
+    ...(C.aviso ? [semTags(C.aviso), ''] : []),
+    ...C.topicos.map(([titulo, texto]) => `• ${titulo}: ${texto}`),
     '',
     `${C.botao}: ${C.link}`,
     '',
     'Bons estudos,',
-    'Tales, do OrtoQuestões',
+    'Tales, do Orto Questões',
     '',
     `Não quer mais receber lembretes? ${d.linkDescadastro}`,
   ].join('\n')

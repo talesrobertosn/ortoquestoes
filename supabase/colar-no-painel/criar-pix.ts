@@ -113,9 +113,12 @@ Deno.serve(async (req) => {
     if (typeof body.cpf !== "string" || !cpfValido(body.cpf)) return json({ erro: "Informe um CPF v\xE1lido para o pagamento." }, 400, req);
     const email = ambiente === "teste" ? Deno.env.get("MERCADO_PAGO_PAYER_EMAIL_TESTE") : usuario.email;
     if (!email) return json({ erro: "checkout_nao_configurado" }, 503, req);
-    const ativo = await banco(`assinaturas?id_usuario=eq.${encodeURIComponent(usuario.id)}&status=in.(ativa,cancelada)&or=(fim_periodo.is.null,fim_periodo.gt.${encodeURIComponent((/* @__PURE__ */ new Date()).toISOString())})&select=id&limit=1`);
+    const ativo = await banco(`assinaturas?id_usuario=eq.${encodeURIComponent(usuario.id)}&status=in.(ativa,cancelada)&or=(fim_periodo.is.null,fim_periodo.gt.${encodeURIComponent((/* @__PURE__ */ new Date()).toISOString())})&select=id_externo,fim_periodo`);
     if (!ativo.ok) throw new Error("consulta_assinatura_falhou");
-    if ((await ativo.json()).length) return json({ erro: "Voc\xEA j\xE1 tem um per\xEDodo pago vigente. Aguarde o t\xE9rmino antes de comprar outro." }, 409, req);
+    const vigentes = await ativo.json();
+    const limiteRenovacao = Date.now() + 7 * 864e5;
+    const podeRenovar = vigentes.every((a) => a.id_externo?.startsWith("pix:") && a.fim_periodo && Date.parse(a.fim_periodo) <= limiteRenovacao);
+    if (vigentes.length && !podeRenovar) return json({ erro: "Voc\xEA j\xE1 tem um per\xEDodo pago vigente. A renova\xE7\xE3o pelo Pix abre nos 7 dias antes do fim, e os dias que faltam continuam valendo." }, 409, req);
     const expirar = await banco(`pedidos_pix?id_usuario=eq.${encodeURIComponent(usuario.id)}&status=in.(criando,pending)&expira_em=lt.${encodeURIComponent((/* @__PURE__ */ new Date()).toISOString())}`, { method: "PATCH", body: JSON.stringify({ status: "expired" }) });
     if (!expirar.ok) throw new Error("consulta_pix_falhou");
     const abertos = await banco(`pedidos_pix?id_usuario=eq.${encodeURIComponent(usuario.id)}&status=in.(criando,pending)&select=*&limit=1`);
