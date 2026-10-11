@@ -218,9 +218,15 @@ const AREAS_TAMBEM_NA_BASE: ReadonlySet<string> = new Set(['quadril'])
 const PROVAS_DOS_SIMULADOS: ReadonlySet<string> = new Set(['TEOT', 'TARO'])
 const simuladoDeOrtopedia = (item: ItemIndice) => item.sim === 1 && item.p === null && (item.ar ?? 'base') === 'base'
 
-function noFoco(item: ItemIndice, areas: Filtros['areas']): boolean {
+// Quem marca R4 Coluna ou Fellowship Quadril treina também todas as questões
+// do tema no site (as de coluna e de quadril do TEOT, TARO e demais provas).
+const TEMA_DA_AREA: Readonly<Partial<Record<string, string>>> = { coluna: 'coluna', quadril: 'quadril' }
+
+function noFoco(item: ItemIndice, areas: Filtros['areas'], indice?: Indice): boolean {
   const area = item.ar ?? 'base'
-  return areas.includes(area) || (AREAS_TAMBEM_NA_BASE.has(area) && areas.includes('base'))
+  if (areas.includes(area) || (AREAS_TAMBEM_NA_BASE.has(area) && areas.includes('base'))) return true
+  const tema = indice?.temas[item.t]?.slug
+  return !!tema && areas.some((a) => TEMA_DA_AREA[a] === tema)
 }
 
 const mapasPorId = new WeakMap<Indice, Map<string, ItemIndice>>()
@@ -240,12 +246,12 @@ function aplicaUm(
   contexto: ContextoLocal,
   ignorar?: ChaveFaceta,
 ): boolean {
-  if (!noFoco(item, filtros.areas)) return false
+  if (!noFoco(item, filtros.areas, indice)) return false
   // Cópias duplicadas continuam no índice para o histórico, mas nunca são sorteadas nem contadas,
   // salvo quando a original fica fora do foco (a mesma questão numa prova de ortopedia e numa da mão).
   if (item.dup) {
     const original = porId(indice).get(item.dup)
-    if (!original || noFoco(original, filtros.areas)) return false
+    if (!original || noFoco(original, filtros.areas, indice)) return false
   }
   if (!filtros.incluirAnuladas && item.an === 1) return false
 
