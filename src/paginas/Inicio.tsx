@@ -5,6 +5,8 @@ import { contar, montarSessao } from '../dados/acervo'
 import { AREAS_TREINO, FILTROS_VAZIOS } from '../dados/tipos'
 import { href, navegar } from '../util/rotas'
 import { Carregando, Estado } from '../componentes/Estados'
+import { AmostraQuestao } from '../componentes/AmostraQuestao'
+import { PodioPrevia } from '../componentes/PodioPrevia'
 import { Icone } from '../componentes/Icone'
 import { ModalEntrar } from '../componentes/ModalEntrar'
 import { VitrineAssinante } from '../componentes/VitrineAssinante'
@@ -200,9 +202,12 @@ export function Inicio() {
           {indice && contagens && indice.total > 0 && (
             <div className="inicio-heroi__acoes">
               {pedeConta ? (
-                <a className="botao botao--claro botao--grande" href={href('/conta?modo=criar&voltar=%2Ftreinar')}>
-                  <Icone nome="raio" tamanho={18} /> Criar conta grátis e treinar
-                </a>
+                <>
+                  <a className="botao botao--claro botao--grande" href={href('/conta?modo=criar&voltar=%2Ftreinar')}>
+                    <Icone nome="raio" tamanho={18} /> Criar conta grátis e treinar
+                  </a>
+                  <button type="button" className="inicio-heroi__entrar" onClick={() => definirModalEntrarAberto(true)}>Já tenho conta · Entrar</button>
+                </>
               ) : sessaoEmAndamento ? (
                 <a className="botao botao--claro botao--grande" href={href('/sessao')}>
                   <Icone nome="raio" tamanho={18} /> Continuar sessão · {Object.keys(sessao!.respostas).length}/{sessao!.ids.length}
@@ -253,27 +258,9 @@ export function Inicio() {
             </a>
           </div>
         ) : (
-          <div className="inicio-heroi__painel inicio-heroi__painel--visitante">
-            <p className="inicio-heroi__convite"><strong>Crie sua conta grátis</strong> e o site passa a guardar seu progresso, montar sua revisão e colocar você no ranking. No gratuito, você responde um número limitado de questões a cada 24 horas; os planos liberam sem limite.</p>
-            <a className="botao botao--claro" href={href('/conta?modo=criar')}>Criar conta grátis</a>
-            <button type="button" className="botao botao--vidro" onClick={() => definirModalEntrarAberto(true)}>Já tenho conta · Entrar</button>
-          </div>
+          <AmostraQuestao />
         )}
       </section>
-      {!conta && (
-        <section className="inicio-bloco" aria-labelledby="inicio-apresentacao">
-          <h2 id="inicio-apresentacao">Orto Questões: banco de questões comentadas</h2>
-          <p>O Orto Questões, também escrito OrtoQuestões, reúne questões para TEOT, TARO, cirurgia da mão, R4 ENARE, quadril e coluna. Estude por assunto, entenda as alternativas e revise seus erros.</p>
-          <nav className="inicio-guias" aria-label="Conheça o banco e organize sua preparação">
-            <a href={recurso('questoes/')}>Questões por assunto</a>
-            <a href={recurso('guias/preparacao-teot-taro.html')}>Preparação para TEOT e TARO</a>
-            <a href={recurso('guias/curso-de-ortopedia.html')}>Curso de ortopedia: como escolher</a>
-            <a href={recurso('guias/como-estudar-para-o-taro.html')}>Como estudar para o TARO</a>
-            <a href={recurso('guias/questoes-cirurgia-da-mao.html')}>Cirurgia da mão</a>
-            <a href={recurso('guias/questoes-r4-quadril-coluna.html')}>R4 de quadril e coluna</a>
-          </nav>
-        </section>
-      )}
       <ModalEntrar aberto={modalEntrarAberto} aoFechar={() => definirModalEntrarAberto(false)} />
 
       {carregando && <Carregando linhas={3} rotulo="Carregando o acervo" />}
@@ -311,12 +298,15 @@ export function Inicio() {
               <p>{conta
                 ? <>Você tem <b>{conquistadas}</b> de {totalConquistas} conquistas{sequenciaViva.atual >= 3 ? <> · <b>{sequenciaViva.atual} dias</b> seguidos</> : ''}. Exiba três no seu nome.</>
                 : 'Cada questão respondida conta pontos, destrava emblemas e acende a sua fogueira de dias seguidos.'}</p>
+              {!conta && <PodioPrevia />}
             </div>
             <div className="inicio-ranking__acoes">
               <a className="botao botao--ouro" href={href('/ranking')}>Ver ranking</a>
               <a className="botao inicio-ranking__secundario" href={href('/conquistas')}>Minhas conquistas</a>
             </div>
           </section>
+
+          <CartaoPlanos />
 
           <SecaoIndique />
 
@@ -342,13 +332,13 @@ export function Inicio() {
               <span className="inicio-atalho__nota">{conta ? 'Sua posição e seus emblemas' : 'Quem mais estuda por aqui'}</span>
             </a>
           </nav>
-          <CartaoPlanos />
 
           <div className="inicio-grade">
             <section className="inicio-hoje" aria-labelledby="inicio-hoje-titulo">
               <h2 id="inicio-hoje-titulo">Seu estudo de hoje</h2>
-              {Object.keys(contexto.respondidas).length > 0 || conta ? <>
-              <p className="inicio-hoje__intro">{textoDoDia.explicacao}</p>
+              <p className="inicio-hoje__intro">{Object.keys(contexto.respondidas).length > 0 || conta
+                ? textoDoDia.explicacao
+                : <>Com a conta, esta área organiza o seu dia: o que revisar, o que ainda é novo e o que você já domina. <a href={href('/conta?modo=criar')}>Criar conta grátis</a></>}</p>
               {(
                 <div className="inicio-hoje__lista">
                   <a className="inicio-hoje__item inicio-hoje__item--destaque" href={href('/treinar?areas=base,enare,coluna,mao&situacao=revisarHoje&limite=20')}>
@@ -367,8 +357,6 @@ export function Inicio() {
                     <b className="numerico">{(contagens.porSituacao.dominadas ?? 0).toLocaleString('pt-BR')}</b>
                   </a>
                 </div>
-              )}</> : (
-                <p className="texto-2">Escolha uma sessão curta. Depois da primeira resposta, esta área passa a mostrar suas revisões, evolução e próximos passos.</p>
               )}
             </section>
 
@@ -465,8 +453,21 @@ export function Inicio() {
             </ul>
           </section>
 
-
         </>
+      )}
+      {!conta && (
+        <section className="inicio-bloco inicio-seo" aria-labelledby="inicio-apresentacao">
+          <h2 id="inicio-apresentacao">Orto Questões: banco de questões comentadas</h2>
+          <p>O Orto Questões reúne questões para TEOT, TARO, cirurgia da mão, R4 ENARE, quadril e coluna. Estude por assunto, entenda as alternativas e revise seus erros.</p>
+          <nav className="inicio-guias" aria-label="Conheça o banco e organize sua preparação">
+            <a href={recurso('questoes/')}>Questões por assunto</a>
+            <a href={recurso('guias/preparacao-teot-taro.html')}>Preparação para TEOT e TARO</a>
+            <a href={recurso('guias/curso-de-ortopedia.html')}>Curso de ortopedia: como escolher</a>
+            <a href={recurso('guias/como-estudar-para-o-taro.html')}>Como estudar para o TARO</a>
+            <a href={recurso('guias/questoes-cirurgia-da-mao.html')}>Cirurgia da mão</a>
+            <a href={recurso('guias/questoes-r4-quadril-coluna.html')}>R4 de quadril e coluna</a>
+          </nav>
+        </section>
       )}
     </div>
   )

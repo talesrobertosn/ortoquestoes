@@ -457,3 +457,5 @@
    viram "O" e "G" ("Oaio O." no lugar de "Caio C."). Fonte da marca, em negrito, com sombra de pixel. */
 .rk-podio__nome, .rk-alta__nome strong, .rk-alta__avatar, .rk-arena__titulo, .rk-alta__titulo { font-family: var(--fonte-marca); font-weight: 800; letter-spacing: 0.01em; }
 .rk-arena__titulo, .rk-alta__titulo { letter-spacing: 0.08em; }
+.rk-visitante { display: flex; gap: 0.5rem; align-items: flex-start; margin: 0; padding: 0.7rem 0.9rem; border-radius: var(--raio-cartao); background: var(--superficie-2); border: 1px dashed var(--traco-forte); font-size: 0.9rem; line-height: 1.45; }
+.rk-visitante svg { flex: none; margin-top: 0.15rem; color: var(--ouro, #c9962c); }
