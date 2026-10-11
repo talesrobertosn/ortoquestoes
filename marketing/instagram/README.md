@@ -221,3 +221,6 @@ instruções no `LEGENDA.md` de cada pasta.
 
 Anúncio das categorias novas (cirurgia da mão, R4 ENARE, R4 Coluna) no visual de mapa de metrô:
 carrossel de 5 slides e 2 stories, sem números de questões.
+
+## Arsenal aprovado: Cofre e Mecânica fina
+Modelos aprovados por Tales em 11/10/2026: [Cofre de duas chaves](estilos/cofre-duas-chaves/modelo.html), seis imagens de feed, e [Mecânica fina](estilos/mecanica-fina/modelo.html), seis stories na versão final de mão. [Guia de escolha, adaptação e revisão para Claude/Codex](estilos/COFRE-E-MECANICA-FINA.md). Possibilidades do arsenal, sem obrigatoriedade de repetir. Copiar o HTML para uma nova pasta de post e gerar pelo script habitual.

@@ -303,3 +303,9 @@ varredura circular é um motivo gráfico abstrato; não representa exame nem ana
   explicar que a conta gratuita tem limite diário.
 - **Bom para:** questões com exame aparentemente normal, pistas discordantes ou um mecanismo
   diagnóstico que mereça uma explicação visual curta.
+
+## Cofre de duas chaves e Mecânica fina — aprovados em 11/10/2026
+- **Cofre de duas chaves:** seis slides de feed; pares que precisam coincidir, porta de cofre e dois seletores, verde-noite e ouro fosco. [Modelo](cofre-duas-chaves/modelo.html).
+- **Mecânica fina / Relojoaria anatômica:** seis stories; leitura anatômica de precisão, azul-petróleo, moldura metálica arredondada e comentário no celular. Referência final: mão, mao-1644. [Modelo](mecanica-fina/modelo.html).
+
+[Orientações detalhadas para Claude e Codex](COFRE-E-MECANICA-FINA.md). Reutilizar por cópia direta; os estilos não foram adicionados ao sorteador. Escolher novas questões e adaptar toda a narrativa.
