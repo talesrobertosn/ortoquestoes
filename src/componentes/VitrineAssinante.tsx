@@ -26,10 +26,12 @@ export function VitrineAssinante() {
       <div className="pg-vitrine__grade">
         {RECURSOS.map((r) => (
           <a key={r.destino} className="pg-recurso" href={href(r.destino)}>
-            {!premium && <SeloAssinante />}
-            <span className="pg-recurso__icone pg-recurso__icone--pixel" aria-hidden="true"><IconePixel nome={r.icone} tamanho={40} /></span>
+            <span className="pg-recurso__topo">
+              <span className="pg-recurso__icone pg-recurso__icone--pixel" aria-hidden="true"><IconePixel nome={r.icone} tamanho={40} /></span>
+              {!premium && <SeloAssinante />}
+            </span>
             <strong>{r.titulo}</strong>
-            <span>{r.texto(mes)}</span>
+            <span className="pg-recurso__texto">{r.texto(mes)}</span>
           </a>
         ))}
       </div>

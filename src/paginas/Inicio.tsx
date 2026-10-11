@@ -294,7 +294,7 @@ export function Inicio() {
             <img className="inicio-ranking__coroa" src={recurso('emblemas/podio-1.png')} alt="" width={72} height={72} />
             <div className="inicio-ranking__texto">
               <p className="inicio-ranking__selo">Ranking e conquistas</p>
-              <h2>{conta ? 'Suba no ranking e destrave emblemas' : 'Entre no ranking de quem mais estuda'}</h2>
+              <h2>{conta ? <>Suba no <em>ranking</em> e destrave emblemas</> : <>Entre no <em>ranking</em> de quem mais estuda</>}</h2>
               <p>{conta
                 ? <>Você tem <b>{conquistadas}</b> de {totalConquistas} conquistas{sequenciaViva.atual >= 3 ? <> · <b>{sequenciaViva.atual} dias</b> seguidos</> : ''}. Exiba três no seu nome.</>
                 : 'Cada questão respondida conta pontos, destrava emblemas e acende a sua fogueira de dias seguidos.'}</p>

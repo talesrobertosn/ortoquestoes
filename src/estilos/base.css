@@ -1981,3 +1981,10 @@ kbd {
 .rk-opcao-servico__aviso { color: var(--erro) !important; }
 .rk-opcao-servico__chave, .rk-opcao-servico__botao { flex: 0 0 auto; }
 @media (max-width: 520px) { .rk-opcao-servico { flex-wrap: wrap; } }
+
+/* Celular: aberturas de página mais compactas, para o primeiro botão aparecer sem rolar. */
+@media (max-width: 40rem) {
+  main section[class$="-heroi"] { padding: 1.25rem 1.1rem !important; gap: 0.9rem !important; }
+  main section[class$="-heroi"] h1 { font-size: clamp(1.7rem, 8vw, 2.1rem); line-height: 1.08; margin-bottom: 0.4rem; }
+  main section[class$="-heroi"] p { font-size: 0.97rem; line-height: 1.5; }
+}

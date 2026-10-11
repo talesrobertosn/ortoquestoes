@@ -6,6 +6,7 @@ import { ErroDePagina } from './componentes/ErroDePagina'
 // CSS global: só o que várias páginas usam. O que é de uma página só mora em
 // estilos/paginas/ e é importado pela própria página, para descer junto com
 // ela e não em toda visita (a inicial usava menos de 10% do CSS antigo).
+import '@fontsource/jersey-10/latin-400.css'
 import './estilos/tokens.css'
 import './estilos/base.css'
 import './estilos/premium.css'

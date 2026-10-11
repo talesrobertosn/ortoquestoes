@@ -398,7 +398,7 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
         <div>
           <p className="pe-heroi__selo"><Icone nome="rota" tamanho={15} /> {atual ? 'Ajustar' : 'Seu estudo até a prova'}</p>
           <h1 className="pe-heroi__nome">Cronograma</h1>
-          <p>Um plano de estudo até o dia da sua prova. Você responde quatro perguntas e ele diz <strong>quantas questões fazer por dia</strong> e <strong>qual tema estudar em cada semana</strong>, começando pelo que mais cai no TEOT e no TARO.{previa ? ' Preencha abaixo e veja a prévia do seu.' : ''}</p>
+          <p>Quatro perguntas e ele diz <strong>quantas questões fazer por dia</strong> e <strong>qual tema estudar em cada semana</strong>, começando pelo que mais cai.{previa ? ' Veja a prévia do seu abaixo.' : ''}</p>
         </div>
         <ComoFunciona />
       </section>

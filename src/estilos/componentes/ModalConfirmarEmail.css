@@ -37,7 +37,7 @@
   display: inline-block; margin: 0.8rem 0 0; padding: 0.3rem 0.7rem; font-weight: 800; font-size: 0.8rem;
   letter-spacing: 0.04em; text-transform: uppercase; color: #1b1208; background: #f4cf7c; box-shadow: 3px 3px 0 #1b1208;
 }
-.cf-email h2 { margin: 0.7rem 0 0.4rem; font-family: var(--fonte-pixel); font-weight: 700; font-size: clamp(1.5rem, 6vw, 1.85rem); line-height: 1.1; color: #fff; text-shadow: 3px 3px 0 #1b1208; }
+.cf-email h2 { margin: 0.7rem 0 0.4rem; font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: clamp(1.9rem, 7vw, 2.3rem); line-height: 1.1; color: #fff; text-shadow: 3px 3px 0 #1b1208; }
 .cf-email__texto { margin: 0; font-size: 1rem; line-height: 1.5; color: rgba(251, 243, 223, 0.92); }
 .cf-email__texto strong { color: #f4cf7c; word-break: break-all; }
 .cf-email__acao { width: 100%; margin-top: 1rem; }

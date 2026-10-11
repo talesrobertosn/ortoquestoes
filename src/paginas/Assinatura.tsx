@@ -137,7 +137,7 @@ export function Assinatura() {
           <p className="vp-heroi__selo"><Simbolo tamanho={16} variante="traco" /> Plano do assinante</p>
           <h1>Tudo o que você precisa para chegar pronto na prova.</h1>
           <p className="vp-heroi__lide">
-            {nome ? `${nome}, questões` : 'Questões'} {limitesHabilitados ? 'sem limite diário' : 'sem limite'} e o que só o assinante tem: um cronograma até a prova montado pelo que mais cai, o Simulado Nacional todo mês, o ranking dos temas mais cobrados, como a turma respondeu, a liga da residência e o relatório mensal.
+            {nome ? `${nome}, questões` : 'Questões'} sem limite, cronograma pelo que mais cai e Simulado Nacional todo mês.
           </p>
           <div className="vp-heroi__acoes">
             <a className="botao botao--claro botao--grande" href="#planos" onClick={(e) => { e.preventDefault(); document.getElementById('planos')?.scrollIntoView({ behavior: 'smooth' }) }}>Ver os planos</a>
@@ -185,7 +185,7 @@ export function Assinatura() {
           <p className="vp-sobre">Planos</p>
           <h2>Tudo liberado em qualquer plano. Você escolhe só o ritmo de pagamento.</h2>
           <p>Os três planos têm exatamente os mesmos recursos. Quanto mais longo, menor o preço por mês.</p>
-          {!limitesHabilitados && <p className="vp-precos__fase">O acesso gratuito está sem limite diário nesta fase: o que o assinante ganha a mais são os recursos exclusivos, e o acesso ilimitado fica garantido se o limite gratuito for ativado.</p>}
+          {!limitesHabilitados && <p className="vp-precos__fase">O acesso gratuito está sem limite diário nesta fase. O plano libera os recursos exclusivos e garante questões sem limite se o limite for ligado.</p>}
           <ul className="vp-meios" aria-label="Formas de pagamento">
             <li><IconePix /> Pix em todos os planos</li>
             <li><IconeCartao /> Cartão de crédito</li>
