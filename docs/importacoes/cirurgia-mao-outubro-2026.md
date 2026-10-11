@@ -164,8 +164,29 @@ Caprini, Masquelet, túnel radial, pescoço de cisne, Budapest, transferência A
 carpal boss. Consulta de resumo não foi registrada como leitura integral. Nenhum
 comentário recebeu selo de revisão médica individual.
 
-## Em andamento
+## USP-SP, ingresso 2026
 
-USP-SP ingresso 2026: 120 questões. Anuladas: 100, 105, 110. Extração e revisão em andamento.
-Após as provas oficiais, anatomia da mão do Netter em OrtoQuestões Simulados,
-com engenharia reversa e figuras pertinentes; sem exame físico ou tratamento.
+120 questões (`mao-1523` a `mao-1642`) com aula do tema e análise das 480 alternativas.
+As sete questões com figuras preservam as imagens do caderno. Anuladas 100, 105 e 110
+ficam com resposta nula e quatro análises neutras. Foram conferidos números únicos,
+enunciados, alternativas e todas as letras do gabarito oficial. Nenhum comentário foi
+marcado como revisão médica individual.
+
+Há 19 alertas de redação, contexto ou divergência. Em 21, frouxidão de 30° acima do
+lado oposto também sugere ruptura completa; em 78, ulceração continua prognóstica;
+em 80, avaliação clínica experiente também é válida. Em 93, refazer reparo curto é
+coerente, mas ressecar mais tendão pode agravar quadriga. Em 103, a sequência A
+também tem plausibilidade farmacológica. Letras oficiais preservadas, sem justificar
+uma falsidade para defendê-las. O motivo administrativo das anulações não foi inferido.
+
+Referências adicionais consultadas em registros e resumos para felon, articulação
+radioulnar distal reumatoide, gatilho adulto, perdas da mão, queimaduras, queloides,
+grácil e neuropatia ulnar no cotovelo. Títulos bibliográficos reconciliados com os
+registros efetivamente obtidos. Consulta de resumo não foi tratada como leitura integral.
+As figuras e três anuladas foram verificadas na interface; apresentação no celular
+conferida sem transbordamento.
+
+## Próxima etapa
+
+Anatomia da mão do Netter em OrtoQuestões Simulados: mapa e plano registrados;
+26 questões planejadas, 17 com figuras pertinentes. Sem exame físico ou tratamento.
