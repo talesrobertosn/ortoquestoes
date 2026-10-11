@@ -303,3 +303,11 @@ varredura circular é um motivo gráfico abstrato; não representa exame nem ana
   explicar que a conta gratuita tem limite diário.
 - **Bom para:** questões com exame aparentemente normal, pistas discordantes ou um mecanismo
   diagnóstico que mereça uma explicação visual curta.
+
+## Cofre de duas chaves (`posts/2026-10-11-cofre-duas-chaves/`), feed
+
+Conceito aprovado em 11/10/2026. Seis telas 1080×1350: gancho, questão, duas identificações, combinação correta e distratores, engenharia reversa dos Simulados, comentário e acesso gratuito. Fundo verde-noite, metal grafite, seletores em CSS, ouro fosco e imagem original. Bom para pares associados (nervo/vaso, achado/conduta); não desenhar anatomia. Modelo reutilizável: `posts/2026-10-11-cofre-duas-chaves/post.html`.
+
+## Relojoaria anatômica (`posts/2026-10-11-relojoaria-anatomica/`), stories
+
+Conceito aprovado em 11/10/2026. Seis stories 1080×1920: gancho, questão, leitura das fixações, resposta e comparação, criação dos Simulados, comentário e acesso gratuito. Azul-petróleo, prata e dourado, caixa metálica e mostradores em CSS; imagem médica sempre original, sem engrenagens que simulem anatomia. Conteúdo essencial entre 250 e 1700px. Modelo reutilizável: `posts/2026-10-11-relojoaria-anatomica/post.html`.
