@@ -5,6 +5,8 @@ import { BarrasHorizontais, GraficoColunas, type Ponto } from './AdminGraficos'
 import { erroDoPainel, porcentagem } from './formatos'
 import { AdminPerfis } from './AdminPerfis'
 import type { LinhaUsuario } from './AdminUsuarios'
+import { AdminRitmo } from './AdminRitmo'
+import type { AssinaturaBase } from './receita'
 
 interface Dia { dia: string; cadastros: number; ativos: number; respostas: number }
 interface Funil { cadastrados: number; confirmaram: number; responderam: number; passaram_50: number; passaram_500: number; assinaram: number }
@@ -14,7 +16,7 @@ const MIGRACAO = '202609290200_painel_admin_2.sql'
 const dataCurta = (iso: string) => { const [, m, d] = iso.split('-'); return `${d}/${m}` }
 const dataLonga = (iso: string) => new Date(`${iso}T12:00:00`).toLocaleDateString('pt-BR', { weekday: 'short', day: '2-digit', month: 'short' })
 
-export function AdminCrescimento({ usuarios }: { usuarios: LinhaUsuario[] | null }) {
+export function AdminCrescimento({ usuarios, assinaturas }: { usuarios: LinhaUsuario[] | null; assinaturas: AssinaturaBase[] }) {
   const [dias, definirDias] = useState(30)
   const [serie, definirSerie] = useState<Dia[] | null>(null)
   const [funil, definirFunil] = useState<Funil | null>(null)
@@ -57,6 +59,8 @@ export function AdminCrescimento({ usuarios }: { usuarios: LinhaUsuario[] | null
         <GraficoColunas titulo="Cadastros novos" pontos={pontos.cadastros} unidade="cadastros" />
       </div>}
     </section>
+
+    {usuarios ? <AdminRitmo usuarios={usuarios} assinaturas={assinaturas} /> : <section className="adm-secao"><p className="adm-vazio">Carregando cadastros e assinaturas…</p></section>}
 
     <div className="adm-duas">
       <section className="empilha adm-secao" aria-labelledby="adm-titulo-funil">

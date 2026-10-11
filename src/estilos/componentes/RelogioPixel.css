@@ -1,0 +1,27 @@
+/* Contagem do gratuito em pixel art: placa escura de jogo, igual nos dois temas. */
+.relogio-pixel {
+  display: inline-flex; align-items: center; gap: 1rem; justify-self: start;
+  padding: .8rem 1.1rem .8rem .9rem; background: #1b1208; color: #f7ecd2;
+  box-shadow: 0 0 0 3px #f4cf7c, 0 0 0 6px #1b1208, 6px 6px 0 6px rgba(0, 0, 0, .3);
+  margin: .5rem 6px 6px;
+}
+.relogio-pixel--compacto { gap: .75rem; padding: .6rem .9rem .6rem .7rem; }
+.relogio-pixel__ampulheta { display: block; flex: none; image-rendering: pixelated; }
+.relogio-pixel__texto { display: grid; gap: .15rem; font-family: var(--fonte-pixel); font-weight: 700; line-height: 1.05; }
+.relogio-pixel__rotulo { font-size: .85rem; letter-spacing: .04em; text-transform: uppercase; color: #f4cf7c; }
+.relogio-pixel__digitos { font-size: 2.3rem; letter-spacing: .04em; color: #fff; text-shadow: 0 3px 0 #6b4a0c; font-variant-numeric: tabular-nums; }
+.relogio-pixel--compacto .relogio-pixel__digitos { font-size: 1.8rem; }
+.relogio-pixel__digitos i { font-style: normal; animation: rp-pisca 1s steps(1) infinite; }
+.relogio-pixel__quando { font-size: .85rem; color: #cdbb94; }
+
+.rp-madeira { fill: #8a5a2b; }
+.rp-madeira-sombra { fill: #5e3b19; }
+.rp-vidro { fill: #a9d6e5; }
+.rp-brilho { fill: #ffffff; opacity: .7; }
+.rp-areia { fill: #f4cf7c; }
+.rp-areia--baixo { fill: #e3b45a; }
+.rp-grao { animation: rp-cai .6s steps(3, end) infinite; }
+
+@keyframes rp-pisca { 50% { opacity: .25; } }
+@keyframes rp-cai { from { transform: translateY(0); } to { transform: translateY(3px); } }
+@media (prefers-reduced-motion: reduce) { .relogio-pixel__digitos i, .rp-grao { animation: none; } }

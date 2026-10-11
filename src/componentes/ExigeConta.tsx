@@ -26,7 +26,7 @@ export function ExigeConta({ caminho, children }: { caminho: string; children: R
         Criar a conta não pede cartão e leva menos de um minuto.
       </p>
       <p className="exige-conta__gratis">
-        <strong>A conta é grátis</strong> e libera um número limitado de questões por dia, renovado todos os dias.
+        <strong>A conta é grátis</strong> e libera um número limitado de questões a cada 24 horas.
         Entre, pratique e aproveite. Para estudar sem limite, <a href={href('/assinatura')}>conheça os planos</a>.
       </p>
       <ul className="exige-conta__lista">

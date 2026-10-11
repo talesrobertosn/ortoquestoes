@@ -11,6 +11,7 @@ import { Icone } from './Icone'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import { CUSTO_POR_DIA, PLANO_MAIS_EM_CONTA, real } from '../dados/planos'
 import { registrarAssinante, usarAssinante } from '../conta/plano'
+import { RelogioPixel } from './RelogioPixel'
 
 /** "as 20 questões grátis" quando o número é conhecido (o painel pode mudá-lo); "as questões grátis" quando não é. */
 function asQuestoesGratis(limite: number | null | undefined): string {
@@ -23,12 +24,12 @@ function suasQuestoesGratis(limite: number | null | undefined): string {
 export function AvisoLimite({ estado }: { estado: EstadoLimite | null }) {
   if (!estado?.permitido || estado.ilimitado || estado.restantes === null || estado.restantes > 3) return null
   return <p className="aviso-limite" role="status">{estado.restantes === 0
-    ? 'Estudo gratuito de hoje completo. Bom trabalho!'
-    : <>Falta{estado.restantes === 1 ? '' : 'm'} {estado.restantes} para completar o estudo gratuito de hoje.</>}</p>
+    ? 'Rodada grátis completa. Bom trabalho!'
+    : <>Falta{estado.restantes === 1 ? '' : 'm'} {estado.restantes} para completar a rodada grátis.</>}</p>
 }
 
 /**
- * Fica junto ao cabeçalho até a virada do dia. A pessoa pode recolher a
+ * Fica junto ao cabeçalho até a janela de 24 h acabar. A pessoa pode recolher a
  * faixa: ela vira um contador pequeno no cabeçalho (variante "chip", só em
  * telas largas) e volta a abrir com um toque.
  */
@@ -99,11 +100,11 @@ export function AvisoBloqueioDiario({ caminho, variante = 'faixa' }: { caminho: 
   if (recolhida || caminho === '/resumo') return null
   const horas = Math.floor(faltam / 3600), minutos = Math.floor((faltam % 3600) / 60)
   const tempo = horas > 0 ? `${horas}h ${String(minutos).padStart(2, '0')}min` : `${Math.max(1, minutos)}min`
-  return <aside className="aviso-bloqueio-topo" aria-label="Limite diário de respostas">
+  return <aside className="aviso-bloqueio-topo" aria-label="Limite de questões grátis">
     <div className="conteudo aviso-bloqueio-topo__interno">
       <Icone nome="relogio" tamanho={16} />
       <span className="aviso-bloqueio-topo__texto">
-        {suasQuestoesGratis(limiteGratisConhecido())} de hoje acabaram. Voltam em <time className="numerico" dateTime={liberaEm} aria-label={formatarDuracao(faltam)}>{tempo}</time>.
+        {suasQuestoesGratis(limiteGratisConhecido())} acabaram. Voltam em <time className="numerico" dateTime={liberaEm} aria-label={formatarDuracao(faltam)}>{tempo}</time>.
       </span>
       <a className="aviso-bloqueio-topo__cta" href={href('/assinatura')}>Continuar sem limite</a>
       <button type="button" className="aviso-bloqueio-topo__fechar" aria-label="Recolher aviso" title="Recolher aviso" onClick={() => definirRecolhidaAte(liberaEm)}><Icone nome="fechar" tamanho={14} /></button>
@@ -137,7 +138,7 @@ export function PainelLimite({ estado, aberto, aoFechar }: { estado: EstadoLimit
   const limite = estado?.limite || limiteGratisConhecido()
   const consumidas = estado?.consumidas ?? limite ?? 0
   const tempo = libera && faltam !== null ? { faltam, libera } : null
-  const titulo = `${suasQuestoesGratis(limite)} de hoje acabaram`
+  const titulo = `${suasQuestoesGratis(limite)} acabaram`
   if (telaLarga) {
     return (
       <JanelaCentral aberta={aberto} aoFechar={aoFechar} rotulo={titulo} className="pw">
@@ -154,7 +155,7 @@ export function PainelLimite({ estado, aberto, aoFechar }: { estado: EstadoLimit
 
 const POR_MES_ANUAL = PLANO_MAIS_EM_CONTA.total / PLANO_MAIS_EM_CONTA.meses
 
-/** O convite do limite diário: direto, com o preço e o que o assinante ganha. */
+/** O convite do limite grátis: direto, com o preço e o que o assinante ganha. */
 function OfertaLimite({ consumidas, limite, sequencia, tempo, aoFechar, larga = false }: {
   consumidas: number; limite: number | null; sequencia: number; tempo: { faltam: number; libera: Date } | null; aoFechar: () => void; larga?: boolean
 }) {
@@ -168,10 +169,10 @@ function OfertaLimite({ consumidas, limite, sequencia, tempo, aoFechar, larga = 
     <div className={'pw-conteudo' + (larga ? ' pw-conteudo--larga' : '')}>
       <section className="pw-lado">
         <span className="pw-anel" aria-hidden="true"><b className="numerico">{consumidas}</b>{limite ? <small>de {limite}</small> : null}</span>
-        <p className="pw-lado__selo">Plano gratuito · hoje</p>
-        <h2 className="pw-lado__titulo">Você fez {asQuestoesGratis(limite)} de hoje.</h2>
-        <p className="pw-lado__texto">{sequencia > 0 ? <>São <b>{sequencia} {sequencia === 1 ? 'dia' : 'dias'} seguidos</b> de estudo. </> : null}A cota grátis se renova todo dia, à meia-noite. Se quiser continuar agora, é só assinar.</p>
-        {tempo && <p className="pw-lado__relogio"><Icone nome="relogio" tamanho={16} /> Grátis de novo em <strong className="numerico">{formatarDuracao(tempo.faltam)}</strong></p>}
+        <p className="pw-lado__selo">Plano gratuito · a cada 24 h</p>
+        <h2 className="pw-lado__titulo">Você fez {asQuestoesGratis(limite)}.</h2>
+        <p className="pw-lado__texto">{sequencia > 0 ? <>São <b>{sequencia} {sequencia === 1 ? 'dia' : 'dias'} seguidos</b> de estudo. </> : null}A cota grátis volta 24 horas depois da primeira questão da rodada. Se quiser continuar agora, é só assinar.</p>
+        {tempo && <RelogioPixel liberaEm={tempo.libera.toISOString()} />}
       </section>
 
       <section className="pw-oferta" aria-label="Assinatura">
@@ -183,15 +184,15 @@ function OfertaLimite({ consumidas, limite, sequencia, tempo, aoFechar, larga = 
         </ul>
         <a className="botao botao--principal botao--grande pw-oferta__cta" href={href('/assinatura')}>Assinar por {real(POR_MES_ANUAL)}/mês</a>
         <p className="pw-oferta__garantia"><Icone nome="certo" tamanho={14} /> Garantia de 7 dias · cancele quando quiser · também há plano mensal</p>
-        <p className="pw-oferta__projeto">O Orto Questões é um projeto independente: a assinatura paga o site e mantém para todo mundo o gratuito, com um número limitado de questões por dia.</p>
-        <button className="pw-oferta__depois" type="button" onClick={aoFechar}>Volto amanhã pelo gratuito</button>
+        <p className="pw-oferta__projeto">O Orto Questões é um projeto independente: a assinatura paga o site e mantém para todo mundo o gratuito, com um número limitado de questões a cada 24 horas.</p>
+        <button className="pw-oferta__depois" type="button" onClick={aoFechar}>Espero o relógio zerar</button>
       </section>
     </div>
   )
 }
 
 /**
- * No resumo da sessão, quando o gratuito do dia acabou: fecha o dia com
+ * No resumo da sessão, quando a rodada grátis acabou: fecha a rodada com
  * reconhecimento e deixa a assinatura como uma linha discreta.
  */
 export function DiaCumprido({ erradas = 0 }: { erradas?: number }) {
@@ -207,24 +208,23 @@ export function DiaCumprido({ erradas = 0 }: { erradas?: number }) {
   if (!sessao || assinante || !liberaEm) return null
   const faltam = Math.max(0, Math.ceil((Date.parse(liberaEm) - agora) / 1000))
   if (faltam === 0) return null
-  const horas = Math.floor(faltam / 3600), minutos = Math.floor((faltam % 3600) / 60)
-  return <section className="dia-cumprido" aria-label="Estudo gratuito de hoje">
+  return <section className="dia-cumprido" aria-label="Rodada grátis completa">
     <span className="dia-cumprido__anel" aria-hidden="true"><Icone nome="certo" tamanho={26} espesso={2.4} /></span>
     <div className="dia-cumprido__texto">
-      <p className="dia-cumprido__selo">Estudo gratuito de hoje</p>
-      <h2>Dia cumprido. Bom trabalho!</h2>
-      <p>Você completou {asQuestoesGratis(limiteGratisConhecido())} de hoje, e a cota se renova à meia-noite. Enquanto isso, comentários, revisões e desempenho seguem abertos{erradas > 0 ? ': vale reler os comentários das que você errou.' : '. E nesta sessão você não errou nenhuma.'}</p>
+      <p className="dia-cumprido__selo">Rodada grátis completa</p>
+      <h2>Missão cumprida. Bom trabalho!</h2>
+      <p>Você completou {asQuestoesGratis(limiteGratisConhecido())}, e a cota volta 24 horas depois da primeira questão da rodada. Enquanto isso, comentários, revisões e desempenho seguem abertos{erradas > 0 ? ': vale reler os comentários das que você errou.' : '. E nesta sessão você não errou nenhuma.'}</p>
       <p className="dia-cumprido__rodape">
-        <span><Icone nome="relogio" tamanho={14} /> Grátis de novo em {horas > 0 ? `${horas}h ${String(minutos).padStart(2, '0')}min` : `${minutos}min`}</span>
         <a href={href('/assinatura')}>Prefere continuar agora? Conheça a assinatura</a>
       </p>
+      <RelogioPixel liberaEm={liberaEm} compacto />
     </div>
   </section>
 }
 
 /**
- * Abre o convite do limite uma vez por dia, sozinho, quando as questões grátis de
- * hoje já acabaram e a pessoa ainda não o viu (por exemplo, ao voltar para a
+ * Abre o convite do limite uma vez por janela, sozinho, quando as questões grátis da
+ * janela já acabaram e a pessoa ainda não o viu (por exemplo, ao voltar para a
  * página inicial ou ao chegar no resumo).
  */
 export function ConviteLimiteDoDia() {
