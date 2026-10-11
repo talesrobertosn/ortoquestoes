@@ -20,7 +20,8 @@ interface Props {
  * Enquanto a pessoa não mexe nas provas, elas acompanham a etapa escolhida.
  */
 export function CamposEtapa({ situacao, ano, provas, aoMudarSituacao, aoMudarAno, aoMudarProvas, obrigatorio, erros = {} }: Props) {
-  const tag = obrigatorio && <span className="campo__obrigatorio">obrigatório</span>
+  // Campos exigidos sem o selo "obrigatório": o aviso aparece só se faltar algo ao enviar.
+  const tag = null
   const erro = (c: keyof typeof erros) => erros[c] && <span className="campo__erro" role="alert"><Icone nome="alerta" tamanho={14} />{erros[c]}</span>
   const marcadas = PROVAS.filter(([v]) => provas.includes(v)).map(([, rotulo]) => rotulo)
   const mexeuNasProvas = useRef(provas.length > 0)

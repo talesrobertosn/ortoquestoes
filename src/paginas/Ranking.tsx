@@ -78,16 +78,27 @@ function EmAlta({ linhas }: { linhas: LinhaRanking[] }) {
     .slice(0, 3)
   if (!subindo.length) return null
   return <section className="rk-alta" aria-label="Subindo rápido">
-    <p className="rk-alta__titulo"><img src={recurso('ranking/chama.png')} width={24} height={24} alt="" draggable={false} />Subindo rápido<img src={recurso('ranking/chama.png')} width={24} height={24} alt="" draggable={false} /></p>
+    <header className="rk-alta__cabeca">
+      <img src={recurso('ranking/chama.png')} width={28} height={28} alt="" draggable={false} />
+      <h2>Subindo rápido</h2>
+      <img src={recurso('ranking/chama.png')} width={28} height={28} alt="" draggable={false} />
+    </header>
     <ol className="rk-alta__lista">
-      {subindo.map(linha => (
-        <li key={linha.posicao} className={'rk-alta__item' + (linha.eh_voce ? ' rk-alta__item--voce' : '')}>
-          <img className="rk-alta__prego" src={recurso('ranking/tachinha.png')} width={18} height={18} alt="" draggable={false} />
-          <span className="rk-alta__avatar">{iniciais(linha.apelido)}</span>
-          <span className="rk-alta__nome"><strong>{linha.apelido}{linha.eh_voce && <span className="rk-voce">você</span>}</strong><small>agora em #{linha.posicao}</small></span>
-          <Movimento linha={linha} />
-        </li>
-      ))}
+      {subindo.map((linha, i) => {
+        const hoje = linha.variacao ?? 0, semana = linha.variacao_semana ?? 0
+        const salto = hoje > 0 ? hoje : semana
+        return (
+          <li key={linha.posicao} className={'rk-alta__item' + (linha.eh_voce ? ' rk-alta__item--voce' : '') + (i === 0 ? ' rk-alta__item--lider' : '')}>
+            <span className="rk-alta__salto"><b className="numerico">+{salto}</b><small>{hoje > 0 ? 'hoje' : 'na semana'}</small></span>
+            <span className="rk-alta__avatar">{iniciais(linha.apelido)}</span>
+            <span className="rk-alta__nome">
+              <strong>{linha.apelido}{linha.eh_voce && <span className="rk-voce">você</span>}</strong>
+              <small>{salto > 0 ? <>#{linha.posicao + salto} <span aria-hidden="true">→</span> <b>#{linha.posicao}</b></> : <>agora em <b>#{linha.posicao}</b></>}</small>
+            </span>
+            {emChamas(linha) && <img className="rk-alta__fogo" src={recurso('ranking/chama.png')} width={22} height={22} alt="em chamas" draggable={false} />}
+          </li>
+        )
+      })}
     </ol>
   </section>
 }
@@ -217,10 +228,17 @@ export function Ranking() {
 
   return <div className="empilha-2 rk">
     <section className="rk-heroi">
+      <img className="rk-heroi__tocha rk-heroi__tocha--esq" src={recurso('ranking/tocha.png')} alt="" width={20} height={40} draggable={false} />
+      <img className="rk-heroi__tocha rk-heroi__tocha--dir" src={recurso('ranking/tocha.png')} alt="" width={20} height={40} draggable={false} />
       <div className="rk-heroi__texto">
-        <p className="rk-heroi__selo"><Icone nome="trofeu" tamanho={16} /> Top 50</p>
+        <p className="rk-heroi__selo"><Icone nome="trofeu" tamanho={16} /> Arena dos residentes · Top 50</p>
         <h1>Ranking</h1>
-        <p>Quem mais responde questões no Orto Questões. Conta volume, não acerto: aqui ganha quem aparece todo dia.</p>
+        <p>Onde quem estuda todo dia se encontra. Cada questão é um ponto, cada dia acende a fogueira, e o Brasil inteiro vê quem está subindo.</p>
+        {top && top.length > 0 && <dl className="rk-heroi__placar">
+          <div><dt>na arena</dt><dd className="numerico">{top.length >= 50 ? '50+' : top.length}</dd></div>
+          <div><dt>questões do top 50</dt><dd className="numerico">{top.reduce((s, l) => s + l.total, 0).toLocaleString('pt-BR')}</dd></div>
+          <div><dt>{periodo === 'semana' ? 'líder da semana' : 'líder'}</dt><dd>{top[0].apelido}</dd></div>
+        </dl>}
       </div>
       {!sessao && (
         <div className="rk-heroi__cartao">

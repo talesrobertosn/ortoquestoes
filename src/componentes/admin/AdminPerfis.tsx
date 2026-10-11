@@ -3,7 +3,7 @@ import { PROVAS, rotuloEtapa, rotuloProva } from '../../conta/perfilEstudo'
 import { BarrasHorizontais } from './AdminGraficos'
 import { baixarCsv, porcentagem, acertoAposRevisao, acertoReal, rotuloOrigem } from './formatos'
 import type { LinhaUsuario } from './AdminUsuarios'
-import { chaveServico, servicoConhecido } from './servicosConhecidos'
+import { chaveServico, servicoConhecido, SERVICO_GERAL } from './servicosConhecidos'
 
 /** Ordem fixa das etapas nas tabelas: da formação para o título. */
 const ORDEM_ETAPAS = ['R1', 'R2', 'R3', 'Residente (ano não informado)', 'R4 / fellowship', 'Residente de mão', 'Ortopedista', 'Estudante', 'Outro', 'Não informado']
@@ -45,6 +45,8 @@ const media = (total: number, n: number) => n ? Math.round(total / n).toLocaleSt
  */
 export function AdminPerfis({ usuarios }: { usuarios: LinhaUsuario[] }) {
   const [criterio, definirCriterio] = useState<'contas' | 'ativos'>('contas')
+  const [ordemServicos, definirOrdemServicos] = useState<'contas' | 'acerto' | 'ativos' | 'questoes'>('contas')
+  const [todosServicos, definirTodosServicos] = useState(false)
   const comMigracao = usuarios.some(u => u.provas !== undefined)
   const d = useMemo(() => {
     const base = criterio === 'ativos' ? usuarios.filter(u => u.respondidas_7d > 0) : usuarios
@@ -68,7 +70,7 @@ export function AdminPerfis({ usuarios }: { usuarios: LinhaUsuario[] }) {
     const escritas = new Map<string, Set<string>>()
     for (const u of comServico) {
       const chave = chaveServico(u.servico!, u.uf)
-      nomeServico.set(chave, servicoConhecido(u.servico, u.uf) ?? u.servico!.trim())
+      nomeServico.set(chave, chave === SERVICO_GERAL ? SERVICO_GERAL : servicoConhecido(u.servico, u.uf) ?? nomeServico.get(chave) ?? u.servico!.trim())
       escritas.set(chave, (escritas.get(chave) ?? new Set()).add(u.servico!.trim()))
     }
     // Origem do cadastro: só as contas criadas depois da medição (as antigas vêm sem origem).
@@ -80,6 +82,12 @@ export function AdminPerfis({ usuarios }: { usuarios: LinhaUsuario[] }) {
   }, [usuarios, criterio])
 
   const total = d.base.length
+  // Serviços na ordem escolhida. Por acerto, só quem tem ao menos 50 respostas, para um aluno sozinho não liderar.
+  const acertoDe = (g: Grupo) => acertoReal(g) ?? acertoAposRevisao(g) ?? -1
+  const servicosOrdenados = [...d.servicos]
+    .filter((s) => ordemServicos !== 'acerto' || s.respondidas >= 50)
+    .sort((a, b) => ordemServicos === 'acerto' ? acertoDe(b) - acertoDe(a) : ordemServicos === 'ativos' ? b.ativos7d - a.ativos7d : ordemServicos === 'questoes' ? b.respondidas / b.contas - a.respondidas / a.contas : b.contas - a.contas)
+  const servicosVisiveis = todosServicos ? servicosOrdenados : servicosOrdenados.slice(0, 15)
   const residentes = d.etapas.filter(e => ['R1', 'R2', 'R3', 'Residente (ano não informado)'].includes(e.rotulo)).reduce((s, e) => s + e.contas, 0)
   const provaTopo = [...d.provas].sort((a, b) => b.contas - a.contas)[0]
 
@@ -148,14 +156,21 @@ export function AdminPerfis({ usuarios }: { usuarios: LinhaUsuario[] }) {
     </>}
 
     {d.servicos.length > 0 && <>
-      <h3>Serviços com mais contas</h3>
+      <div className="adm-linha-nota">
+        <h3>Serviços</h3>
+        <div className="adm-filtros" role="group" aria-label="Ordenar serviços">
+          {([['contas', 'Mais contas'], ['acerto', 'Maior acerto'], ['ativos', 'Mais ativos'], ['questoes', 'Mais questões por conta']] as const).map(([v, r]) => <button key={v} type="button" className="adm-chip" aria-pressed={ordemServicos === v} onClick={() => definirOrdemServicos(v)}>{r}</button>)}
+        </div>
+      </div>
+      <p className="adm-nota">Variações do mesmo lugar ficam juntas ("Ortopedia do Hospital X" e "Hospital X"). Quem escreveu só "ortopedia" ou "hospital", ou marcou que atua em vários lugares, entra em "{SERVICO_GERAL}".{ordemServicos === 'acerto' ? ' Por acerto, só serviços com pelo menos 50 respostas.' : ''}</p>
       <div className="adm-tabela-rolagem" role="region" aria-label="Serviços" tabIndex={0}><table className="tabela adm-retencao">
         <thead><tr><th scope="col">Serviço</th><th scope="col">Contas</th><th scope="col">Ativos 7 d</th><th scope="col">Questões/conta</th><th scope="col">Acerto real</th><th scope="col">Após revisão</th><th scope="col">Assinantes</th></tr></thead>
-        <tbody>{d.servicos.slice(0, 15).map(s => <tr key={s.rotulo}>
+        <tbody>{servicosVisiveis.map(s => <tr key={s.rotulo}>
           <th scope="row" className="adm-servico" title={`Escrito como: ${[...(d.escritas.get(s.rotulo) ?? [])].join(', ')}`}>{d.nomeServico.get(s.rotulo)}</th><td className="numerico">{s.contas}</td><td className="numerico">{s.ativos7d}</td>
           <td className="numerico">{media(s.respondidas, s.contas)}</td><td className="numerico">{acertoReal(s) ?? '—'}{acertoReal(s) !== null ? '%' : ''}</td><td className="numerico">{acertoAposRevisao(s) ?? '—'}{acertoAposRevisao(s) !== null ? '%' : ''}</td><td className="numerico">{s.assinantes}</td>
         </tr>)}</tbody>
       </table></div>
+      {servicosOrdenados.length > 15 && <button type="button" className="adm-link" onClick={() => definirTodosServicos(!todosServicos)}>{todosServicos ? 'Mostrar só os 15 primeiros' : `Ver todos os ${servicosOrdenados.length} serviços`}</button>}
     </>}
 
     <h3>De onde vêm os cadastros</h3>

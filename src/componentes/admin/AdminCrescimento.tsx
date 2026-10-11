@@ -6,6 +6,7 @@ import { erroDoPainel, porcentagem } from './formatos'
 import { AdminPerfis } from './AdminPerfis'
 import type { LinhaUsuario } from './AdminUsuarios'
 import { AdminRitmo } from './AdminRitmo'
+import { AdminIndicacoes } from './AdminIndicacoes'
 import type { AssinaturaBase } from './receita'
 
 interface Dia { dia: string; cadastros: number; ativos: number; respostas: number }
@@ -92,6 +93,8 @@ export function AdminCrescimento({ usuarios, assinaturas }: { usuarios: LinhaUsu
           </table></div>}
       </section>
     </div>
+
+    <AdminIndicacoes />
 
     {usuarios ? <AdminPerfis usuarios={usuarios} /> : <section className="adm-secao"><p className="adm-vazio">Carregando os perfis…</p></section>}
 
