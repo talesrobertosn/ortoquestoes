@@ -1392,3 +1392,11 @@ Detalhes e tabela de IDs em [netter-mao-entrega.md](netter-mao-entrega.md).
 Aproveitamento: `quadril-0645` a `quadril-0684`, 40 simulados TEOT/TARO, sem área Fellowship; 24 com imagem, 18 adaptações distintas. Trinta anatômicos e dez de anatomia com acessos. Inserções têm perguntas próprias após reconhecimento visual. As vias incluem SMITH-PETERSEN, WATSON-JONES, HARDINGE, MOORE/SOUTHERN, LUDLOFF, acesso lateral à coxa e portal anterolateral. Comentários desenvolvidos, análise de cada alternativa e tabelas comparativas quando úteis.
 
 Limites: erros ou simplificações internos do atlas sobre TFL, obturador externo, iliofemoral e psoas foram evitados como gabarito. Estatísticas antigas de artroplastia não foram cobradas. Não confundir a figura de MOORE/SOUTHERN com KOCHER modificado. Páginas e detalhes de adaptação ficam na auditoria; fontes públicas indicam apenas livro, edição e assunto. Nenhuma questão oficial foi alterada.
+
+## Netter: complemento de anatomia da coxa/quadril (11/10/2026)
+
+[Mapa regional com 74 oficiais lidas](netter-quadril-complemento.md), [plano](netter-quadril-complemento-plano.md) e [entrega](netter-quadril-complemento-entrega.md). O capítulo recebido é o mesmo capítulo 8 do material anterior; foram escolhidos atributos e alvos visuais adicionais após comparar as 40 questões anteriores e 59 simulados antigos do recorte.
+
+Tendência: TEOT 2023, 0081/0082 cruza reconhecimento e fixações; TEOT 2024, 0130/0134 cobra semimembranáceo e 0131 cruza adutor longo/obturatório; TEOT 2025, 0183 e TARO 2025, 0191 sustentam tensor/trato. TARO 2025, 0190 destaca safeno e femoral no canal dos adutores. TARO 2023, 0097 mantém WARD no repertório ósseo. Duplicatas no mesmo ano não contam como recorrência entre anos.
+
+Aproveitamento: `quadril-0685` a `quadril-0708`, 24 autorais, 14 com imagem e 12 adaptações distintas, sem área Fellowship. Novos alvos: fóvea, linha áspera, vastos medial/intermédio, semitendíneo, cabeça curta do bíceps, obturador externo, tensor, adutor curto e nervos genitofemoral/cutâneo lateral/safeno. Inserções seguem a identificação; itens textuais cobrem raízes, ramos, territórios e vasos. Perguntas sobre acessos, exames físicos e tratamento foram excluídas. Todo o conteúdo anterior permaneceu idêntico.
