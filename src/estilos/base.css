@@ -1618,18 +1618,19 @@ kbd {
 .nota-pessoal .meta { margin: 0.25rem 0 0.625rem; }
 .nota-pessoal textarea { padding: 0.65rem 0.75rem; resize: vertical; line-height: 1.5; }
 
-/* Aviso de cookies (só com o pixel configurado): cartão no rodapé da tela, acima da navegação do celular. */
+/* Aviso de cookies (só com o pixel configurado): faixa fina no pé da tela, acima da navegação do celular. */
 .aviso-cookies {
-  position: fixed; z-index: 45; left: 50%; bottom: max(1rem, env(safe-area-inset-bottom)); transform: translateX(-50%);
-  width: min(40rem, calc(100% - 2rem)); display: flex; gap: 1rem; align-items: center;
-  padding: 0.9rem 1rem; border: var(--borda); border-radius: var(--raio-cartao);
-  background: var(--superficie); box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+  position: fixed; z-index: 45; left: 50%; bottom: max(0.75rem, env(safe-area-inset-bottom)); transform: translateX(-50%);
+  width: min(38rem, calc(100% - 1rem)); display: flex; gap: 0.75rem; align-items: center;
+  padding: 0.5rem 0.5rem 0.5rem 0.9rem; border: var(--borda); border-radius: 999px;
+  background: var(--superficie); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
 }
-.aviso-cookies p { margin: 0; font-size: 0.88rem; line-height: 1.45; }
-.aviso-cookies__botoes { display: flex; gap: 0.5rem; flex-shrink: 0; }
+.aviso-cookies p { margin: 0; flex: 1; font-size: 0.8rem; line-height: 1.35; }
+.aviso-cookies__botoes { display: flex; gap: 0.35rem; flex-shrink: 0; }
+.aviso-cookies .botao--pequeno { min-height: 2.1rem; padding: 0.3rem 0.8rem; font-size: 0.82rem; }
 @media (max-width: 40rem) {
-  .aviso-cookies { flex-direction: column; align-items: stretch; bottom: calc(4.6rem + env(safe-area-inset-bottom)); }
-  .aviso-cookies__botoes .botao { flex: 1; }
+  .aviso-cookies { border-radius: var(--raio-cartao); bottom: calc(4.4rem + env(safe-area-inset-bottom)); padding: 0.5rem 0.5rem 0.5rem 0.75rem; }
+  .aviso-cookies p { font-size: 0.76rem; }
 }
 
 /* Navegação principal ao alcance do polegar. */
@@ -1980,3 +1981,10 @@ kbd {
 .rk-opcao-servico__aviso { color: var(--erro) !important; }
 .rk-opcao-servico__chave, .rk-opcao-servico__botao { flex: 0 0 auto; }
 @media (max-width: 520px) { .rk-opcao-servico { flex-wrap: wrap; } }
+
+/* Celular: aberturas de página mais compactas, para o primeiro botão aparecer sem rolar. */
+@media (max-width: 40rem) {
+  main section[class$="-heroi"] { padding: 1.25rem 1.1rem !important; gap: 0.9rem !important; }
+  main section[class$="-heroi"] h1 { font-size: clamp(1.7rem, 8vw, 2.1rem); line-height: 1.08; margin-bottom: 0.4rem; }
+  main section[class$="-heroi"] p { font-size: 0.97rem; line-height: 1.5; }
+}

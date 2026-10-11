@@ -142,11 +142,29 @@ export function Ranking() {
   // Falso quando o banco ainda responde pelo ranking antigo, sem movimento.
   const [comMovimento, definirComMovimento] = useState(false)
   const [ate100, definirAte100] = useState(false)
+  // Sem conta: o ranking aberto (só iniciais). Falso se o banco ainda não tem a função.
+  const [visitanteDisponivel, definirVisitanteDisponivel] = useState(true)
 
   const meuTotal = Object.keys(contexto.respondidas).length
   const { perfil: perfilRanking, carregado: perfilCarregado, nomeExibido } = usarPerfilRanking(sessao)
   const { streak, conquistadas, total: totalConquistas } = usarConquistas()
   usarPublicarSequencia(sessao, streak.atual, streak.ateDia)
+
+  // Visitante: top 50 com as iniciais, pela função aberta (migração 202610110300).
+  useEffect(() => {
+    if (!supabase || sessao) return
+    let vivo = true
+    definirErro(false)
+    definirLinhas(null)
+    supabase.rpc('obter_ranking_visitante', { periodo }).then((resultado) => {
+      if (!vivo) return
+      if (resultado.error) { definirVisitanteDisponivel(false); return }
+      definirLinhas((resultado.data ?? []) as LinhaRanking[])
+      definirComMovimento(true)
+      definirMinhaPosicao(null)
+    })
+    return () => { vivo = false }
+  }, [sessao, periodo])
 
   useEffect(() => {
     if (!supabase || !sessao) return
@@ -204,6 +222,14 @@ export function Ranking() {
         <h1>Ranking</h1>
         <p>Quem mais responde questões no Orto Questões. Conta volume, não acerto: aqui ganha quem aparece todo dia.</p>
       </div>
+      {!sessao && (
+        <div className="rk-heroi__cartao">
+          <span className="rk-heroi__rotulo">Você entra no ranking com {MINIMO_RANKING} questões</span>
+          <strong className="rk-heroi__posicao">Sua vez</strong>
+          <a className="botao botao--ouro" href={href('/conta?modo=criar&voltar=%2Franking')}>Criar conta grátis</a>
+          <span className="rk-heroi__rotulo">Com a conta, você vê os nomes e a sua posição</span>
+        </div>
+      )}
       {sessao && (
         <div className="rk-heroi__cartao">
           {perfilCarregado && !perfilRanking.participa ? <>
@@ -248,11 +274,12 @@ export function Ranking() {
     </a>
 
 
-    {!sessao ? (
+    {!sessao && !visitanteDisponivel ? (
       <Estado titulo="Entre na sua conta para ver o ranking" acoes={<a className="botao botao--principal" href={href('/conta?modo=entrar')}>Entrar ou criar conta</a>}>
         <p>O ranking reúne quem mais respondeu questões entre todas as contas com pelo menos 5 questões respondidas.</p>
       </Estado>
     ) : <>
+      {!sessao && <p className="rk-visitante"><Icone nome="cadeado" tamanho={15} /> <span>Sem conta, você vê as iniciais. <a href={href('/conta?modo=criar&voltar=%2Franking')}>Crie a sua grátis</a> para ver os nomes e disputar uma vaga no top 50.</span></p>}
       <div className="rk-topo-abas">
         <div className="rk-abas" role="tablist" aria-label="Período do ranking">
           {(['geral', 'semana'] as const).map((p) => (

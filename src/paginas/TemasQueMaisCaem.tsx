@@ -75,7 +75,7 @@ function Ranking({ indice, respondidas, treinar, aberto }: { indice: Indice; res
       <section className="ti-heroi">
         <p className="ti-heroi__selo">Temas que mais caem</p>
         <h1>Estude primeiro o que a prova mais cobra</h1>
-        <p>Contamos, uma a uma, as questões das provas oficiais do acervo (TEOT, TARO, TECOC e ENARE) e somamos por área e por assunto. O resultado é o ranking abaixo, com o número de questões de cada assunto. Cada um abre um treino, começando pelas que você ainda não fez.</p>
+        <p>Somamos as questões das provas oficiais (TEOT, TARO, TECOC e ENARE) por assunto. Cada assunto abre um treino com as que você ainda não fez.</p>
         {!aberto && <p className="ti-heroi__previa"><Icone nome="cadeado" tamanho={14} /> Você está vendo uma prévia. O ranking completo é do assinante.</p>}
         <ul className="ti-heroi__legenda" aria-label="Legenda">
           {([4, 3, 2, 1] as Nivel[]).map((n) => <li key={n}><NivelCobranca nivel={n} /></li>)}
