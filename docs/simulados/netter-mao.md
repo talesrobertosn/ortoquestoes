@@ -72,5 +72,23 @@ explicam anatomia, sem blocos sobre a existência da questão ou sobre a banca.
 
 ## Estado
 
-Mapa e plano preparados. Figuras, escrita, aplicação e publicação do lote ainda
-pendentes; atualizar esta seção com IDs e resultados reais quando concluídos.
+Lote aplicado: `mao-1643` a `mao-1668`, 26 questões de anatomia, 17 com figura.
+Cobertos lumbricais, interósseos, adutor e oponente do polegar, palmar curto,
+flexor curto, polias, aparelho extensor, arcos e ligamentos cutâneos.
+Gabarito A: 6, B: 6, C: 7, D: 7; comentário completo mediano de 1.427 caracteres.
+Tabela de IDs e motivos em [netter-mao-entrega.md](netter-mao-entrega.md).
+
+Figuras adaptadas com ferramenta de edição a partir das ilustrações fornecidas,
+comparadas às originais. A primeira seta do interósseo tocava o osso e foi refeita
+para apontar claramente o ventre. Nomes e linhas de identificação foram removidos;
+a legenda pública contém apenas a bibliografia. A adaptação foi conferida por alvo,
+orientação e relações pertinentes, sem atribuir revisão médica individual.
+
+Exame, doenças, procedimentos, percentuais de variantes e formulações ambíguas do
+capítulo ficaram fora. Essa exclusão segue o recorte de anatomia e o mapa, sem
+transformar possíveis erros de tabela em gabaritos autorais.
+
+Validação sem erros, build, testes e fixture de revisão passaram. Os 26 comentários
+carregaram com quatro análises e as 17 imagens apareceram. As sete adaptações foram
+conferidas também no celular, sem transbordamento. Questões oficiais e comentários
+anteriores foram comparados ao commit anterior e preservados integralmente.

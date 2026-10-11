@@ -1375,3 +1375,12 @@ e [recorte auditável](netter-mao-recorte.json). Lidos 102 candidatos e selecion
 TEOT 2023–2025 e TARO 2025; a inervação é perguntada após identificação, e inserção
 ou ação oferece outro atributo. Plano de 26 questões, 17 com figura, sem exame
 físico, doenças ou procedimentos. Ainda não aplicado: registrar IDs ao concluir.
+
+### Aproveitamento: anatomia da mão, Netter (10/10/2026)
+
+`mao-1643` a `mao-1668`: 26 questões, 17 com figura, a partir do
+[mapa](netter-mao.md) e do [plano](netter-mao-plano.md). Inserções foram cruzadas
+com reconhecimento visual; os demais atributos incluem origem, ação, inervação,
+polias, aparelho extensor e arcos. Exame físico e tratamento não entram.
+Ambiguidades internas do atlas e frequências de variantes foram excluídas.
+Detalhes e tabela de IDs em [netter-mao-entrega.md](netter-mao-entrega.md).

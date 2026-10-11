@@ -186,7 +186,14 @@ registros efetivamente obtidos. Consulta de resumo não foi tratada como leitura
 As figuras e três anuladas foram verificadas na interface; apresentação no celular
 conferida sem transbordamento.
 
-## Próxima etapa
+## Anatomia da mão, Netter
 
-Anatomia da mão do Netter em OrtoQuestões Simulados: mapa e plano registrados;
-26 questões planejadas, 17 com figuras pertinentes. Sem exame físico ou tratamento.
+26 simulados (`mao-1643` a `mao-1668`), 17 com figuras conferidas. Somente anatomia,
+sem exame físico ou tratamento. Mapa, plano e tabela de entrega em `docs/simulados/`.
+Distribuição A: 6, B: 6, C: 7, D: 7. A mediana do comentário completo é 1.427 caracteres,
+sem piso de tamanho ou preenchimento artificial. Nenhum comentário anterior foi alterado.
+
+Validação sem erros, build, testes do projeto e fixture de revisão passaram. Os 26
+comentários e as 17 figuras foram verificados na interface; sete adaptações também
+em largura de celular, sem transbordamento. As referências públicas contêm livro e
+edição, sem nome de PDF, paginação recortada ou instruções de produção.
