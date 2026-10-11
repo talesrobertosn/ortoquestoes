@@ -1384,3 +1384,11 @@ com reconhecimento visual; os demais atributos incluem origem, ação, inervaç�
 polias, aparelho extensor e arcos. Exame físico e tratamento não entram.
 Ambiguidades internas do atlas e frequências de variantes foram excluídas.
 Detalhes e tabela de IDs em [netter-mao-entrega.md](netter-mao-entrega.md).
+
+## Netter: anatomia da pelve/quadril e vias de acesso (10/10/2026)
+
+[Mapa regional, evidências e limites](netter-quadril.md), [plano anterior à escrita](netter-quadril-plano.md) e [entrega com os 40 IDs](netter-quadril-entrega.md). Leitura integral dos capítulos 7 e 8 e de 90 oficiais do recorte amplo. Identificação muscular e recuperação de origem, inserção ou inervação predominam no repertório recente: TEOT 2023–2025 (0081–0086, 0130–0135, 0183, 0641). Gêmeo superior e semimembranáceo aparecem duplicados na mesma edição; isso não prova repetição entre anos. No TARO 2025, 0188 cobra o intervalo de WATSON-JONES; nervos em risco e portais complementam a cobrança.
+
+Aproveitamento: `quadril-0645` a `quadril-0684`, 40 simulados TEOT/TARO, sem área Fellowship; 24 com imagem, 18 adaptações distintas. Trinta anatômicos e dez de anatomia com acessos. Inserções têm perguntas próprias após reconhecimento visual. As vias incluem SMITH-PETERSEN, WATSON-JONES, HARDINGE, MOORE/SOUTHERN, LUDLOFF, acesso lateral à coxa e portal anterolateral. Comentários desenvolvidos, análise de cada alternativa e tabelas comparativas quando úteis.
+
+Limites: erros ou simplificações internos do atlas sobre TFL, obturador externo, iliofemoral e psoas foram evitados como gabarito. Estatísticas antigas de artroplastia não foram cobradas. Não confundir a figura de MOORE/SOUTHERN com KOCHER modificado. Páginas e detalhes de adaptação ficam na auditoria; fontes públicas indicam apenas livro, edição e assunto. Nenhuma questão oficial foi alterada.
