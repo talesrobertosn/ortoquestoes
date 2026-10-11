@@ -121,6 +121,8 @@ function sessaoPendente(sessao: EstadoSessao | null): { feitas: number; total: n
 }
 
 function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar, pendente = null }: { plano: PlanoSalvo; calculo: CalculoPlano; aberto: boolean; aoComecar?: () => void; aoAdiantar?: (n: number) => void; pendente?: { feitas: number; total: number; tema: string } | null }) {
+  // Dia da semana marcado como folga: sem tarefa hoje, e isso não é "meta cumprida".
+  const folgaHoje = plano.folgas.includes(new Date().getDay())
   const proximo = proximoTema(calculo)
   const [explicacaoAberta] = useState(primeiraVisita)
   const podeAdiantar = aberto && !!aoAdiantar && !!proximo && !calculo.naRetaFinal && !calculo.provaPassou && calculo.restante > 0
@@ -192,7 +194,7 @@ function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar, penden
         <strong className="numerico">{calculo.metaDiaria}</strong>
         <span className="pe-meta__rotulo">questões novas</span>
         <span className="pe-meta__barra" aria-label={`${calculo.feitasHoje} de ${calculo.metaDiaria} feitas hoje`}><span style={{ width: `${calculo.metaDiaria ? Math.min(100, (calculo.feitasHoje / calculo.metaDiaria) * 100) : 100}%` }} /></span>
-        <small>{calculo.faltaHoje ? `${calculo.feitasHoje} feitas · faltam ${calculo.faltaHoje}` : 'Meta de hoje cumprida'}</small>
+        <small>{!calculo.hoje && folgaHoje ? 'Hoje é folga' : calculo.faltaHoje ? `${calculo.feitasHoje} feitas · faltam ${calculo.faltaHoje}` : 'Meta de hoje cumprida'}</small>
       </div>
     </section>
 
@@ -217,6 +219,8 @@ function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar, penden
           <><h2>{calculo.hoje.n} questões de {calculo.hoje.nome}</h2><p className="texto-2">{calculo.hoje.focos.length ? <>Começando pelo que mais cai: {calculo.hoje.focos.join(', ')}. </> : 'Questões que você ainda não fez. '}Depois, passe pela revisão do dia.</p></>
         ) : calculo.restante === 0 ? (
           <><h2>Você cumpriu o cronograma inteiro</h2><p className="texto-2">Mantenha a revisão em dia e faça o Simulado Nacional do mês.</p></>
+        ) : folgaHoje ? (
+          <><h2>Hoje é folga</h2><p className="texto-2">Dia de descanso no seu cronograma: a meta foi espalhada pelos outros dias. Se quiser, adiante as próximas logo abaixo.</p></>
         ) : (
           <><h2>Meta de hoje cumprida</h2><p className="texto-2">Amanhã tem mais. Se sobrar fôlego, adiante as próximas logo abaixo.</p></>
         )}
@@ -402,6 +406,7 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
         </div>
         <ComoFunciona />
       </section>
+      <div className="pe-montar">
       <section className="cartao cartao__corpo pe-form">
         <div className="pe-form__passo">
           <span className="tr-etapa__numero">1</span>
@@ -473,6 +478,39 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
         </div>
         {previa && <p className="texto-2 pe-form__nota"><Icone nome="cadeado" tamanho={14} /> A prévia mostra o dia de hoje e as duas primeiras semanas. O cronograma completo, salvo e ajustado todo dia, é do assinante.</p>}
       </section>
+      <ResultadoAoVivo indice={indice} respondidas={respondidas} data={dataValida ? data : null} intensidade={intensidade} folgas={folgas} simulados={simulados} prova={prova} />
+      </div>
     </div>
+  )
+}
+
+/**
+ * Painel ao lado do formulário: o cronograma se formando enquanto a pessoa
+ * responde. Dias até a prova, meta por dia (com o tempo que leva), dias de
+ * estudo na semana e quantas questões novas terá feito no dia da prova.
+ */
+function ResultadoAoVivo({ indice, respondidas, data, intensidade, folgas, simulados, prova }: {
+  indice: Indice; respondidas: Respondidas; data: string | null; intensidade: Intensidade; folgas: number[]; simulados: boolean; prova: string
+}) {
+  const dias = data ? Math.ceil((dataLocal(data).getTime() - Date.now()) / 86_400_000) : 0
+  const meta = data ? simularMeta(indice, respondidas, data, intensidade, folgas, simulados) : 0
+  const diasEstudo = 7 - folgas.length
+  const total = data ? Math.round(meta * dias * (diasEstudo / 7)) : 0
+  const minutos = Math.round(meta * 1.5)
+  const tempo = minutos >= 60 ? `${Math.floor(minutos / 60)}h${String(minutos % 60).padStart(2, '0')}` : `${minutos} min`
+  return (
+    <aside className="pe-ao-vivo" aria-live="polite" aria-label="Seu cronograma">
+      <p className="pe-ao-vivo__selo">Seu cronograma</p>
+      {data ? <>
+        <p className="pe-ao-vivo__dias"><strong className="numerico">{dias}</strong> dias até a prova{prova ? ` (${prova})` : ''}</p>
+        <dl className="pe-ao-vivo__lista">
+          <div><dt>Meta por dia</dt><dd><b className="numerico">{meta}</b> questões novas <small>≈ {tempo}</small></dd></div>
+          <div><dt>Dias de estudo</dt><dd><b className="numerico">{diasEstudo}</b> por semana{folgas.length ? <small>folga: {folgas.map((d) => DIAS_SEMANA[d]).join(', ')}</small> : null}</dd></div>
+          <div><dt>Ritmo</dt><dd><b>{ROTULO_INTENSIDADE[intensidade].nome}</b>{simulados ? <small>com os OrtoQuestões Simulados</small> : <small>só questões oficiais</small>}</dd></div>
+        </dl>
+        <p className="pe-ao-vivo__total">cerca de <span className="numerico">{total.toLocaleString('pt-BR')}</span> questões novas feitas até o dia da prova</p>
+        <p className="pe-ao-vivo__nota">Um pouco por dia, do celular ou do computador. Atrasou, a meta sobe um pouco; adiantou, alivia.</p>
+      </> : <p className="pe-ao-vivo__vazio">Escolha a data da prova e o cronograma aparece aqui, se formando enquanto você responde.</p>}
+    </aside>
   )
 }

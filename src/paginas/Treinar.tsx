@@ -253,18 +253,17 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     <div className="empilha-2 treinar-pagina">
       <section className="tr-heroi">
         <div className="tr-heroi__texto">
+          <p className="tr-heroi__selo">Montar sessão</p>
           <h1>Treinar</h1>
-          <p>Sem tempo para montar? Comece 10 questões agora. Quer um recorte? Escolha os filtros abaixo.</p>
+          <p>Escolha o que estudar, quais questões, e quantas. Sem tempo? Comece já com 10.</p>
+          <a className="tr-heroi__link" href={href('/cronograma')}><Icone nome="rota" tamanho={15} /> {cronograma.calculo?.hoje ? `${rotuloCronograma}: hoje, ${cronograma.calculo.hoje.nome} · ${cronograma.calculo.feitasHoje} de ${cronograma.calculo.metaDiaria}` : 'Prefere que alguém monte por você? Use o cronograma'}</a>
         </div>
         <button type="button" className="botao botao--claro tr-heroi__rapida" onClick={() => sessaoRapida()} disabled={!indice}>
           <Icone nome="raio" tamanho={20} />
           <span><strong>Sessão rápida</strong><small>10 questões de todo o acervo</small></span>
         </button>
-        <a className="botao botao--ouro tr-heroi__cronograma" href={href('/cronograma')}>
-          <Icone nome="rota" tamanho={20} />
-          <span><strong>{rotuloCronograma}</strong><small>{cronograma.calculo?.hoje ? `Hoje: ${cronograma.calculo.hoje.nome} · ${cronograma.calculo.feitasHoje} de ${cronograma.calculo.metaDiaria}` : 'A meta de cada dia até a prova, pelo que mais cai'}</small></span>
-        </a>
-        <div className="tr-rapidas" aria-label="Sessões rápidas de 10 questões">
+        <div className="tr-rapidas" aria-label="Atalhos de 10 questões">
+          <span className="tr-rapidas__rotulo">Atalhos de 10:</span>
           {rapidas.map((r) => (
             <button key={r.titulo} type="button" className="tr-rapida" disabled={r.quantidade === 0} onClick={() => sessaoRapida(r.preset)}>
               <Icone nome={r.icone} tamanho={16} />
@@ -275,19 +274,35 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
         </div>
       </section>
 
+      <nav className="tr-trilha" aria-label="Passos para montar a sessão">
+        {[
+          ['etapa-1', 'O que estudar', selecionados ? `${selecionados} ${selecionados === 1 ? 'assunto' : 'assuntos'}` : 'todos os assuntos'],
+          ['etapa-2', 'Quais questões', ROTULO_SITUACAO[filtros.situacao]],
+          ['etapa-3', 'Filtrar mais', 'opcional'],
+          ['etapa-formato', 'Quantas e como', `${filtros.limite ?? 'todas'} · ${simulado ? 'prova' : 'estudo'}`],
+        ].map(([alvo, titulo, resumo], i) => (
+          <a key={alvo} className="tr-trilha__passo" href={`#${alvo}`} onClick={(e) => { e.preventDefault(); document.getElementById(alvo)?.scrollIntoView({ behavior: 'smooth', block: 'start' }) }}>
+            <b>{i + 1}</b><span><strong>{titulo}</strong><small>{resumo}</small></span>
+          </a>
+        ))}
+        <button type="button" className="tr-trilha__passo tr-trilha__passo--fim" disabled={total === 0 || carregandoBusca} onClick={comecar}>
+          <b>▶</b><span><strong>Começar</strong><small>{total === 0 ? 'ajuste os filtros' : `${quantidadeSessao} ${quantidadeSessao === 1 ? 'questão' : 'questões'}`}</small></span>
+        </button>
+      </nav>
+
       {!conta && <p className="aviso-ia">Crie sua conta gratuita para guardar respostas, favoritos e revisões entre acessos e dispositivos. No gratuito, você responde um número limitado de questões a cada 24 horas; os planos liberam sem limite. <a href={href('/conta')}>Criar minha conta</a></p>}
 
-      <section className="tr-etapa">
+      <section className="tr-etapa" id="etapa-1">
         <header className="tr-etapa__cabeca">
           <span className="tr-etapa__numero">1</span>
           <div>
-            <h2>Assuntos</h2>
+            <h2>O que estudar</h2>
             <p>{selecionados ? `${selecionados} ${selecionados === 1 ? 'selecionado' : 'selecionados'}. Toque de novo para desmarcar.` : 'Marque um ou mais temas. Abra os subtemas para um recorte mais fino.'}</p>
           </div>
         </header>
         {porArea && (
           <>
-            <p className="tr-foco__titulo">Quais provas entram no treino? <small>Marque uma ou mais.</small></p>
+            <p className="tr-foco__titulo"><span className="tr-sub">A</span> Provas <small>Marque uma ou mais.</small></p>
             <div className="tr-foco" role="group" aria-label="Categorias de prova">
               {porArea.map(({ area }) => (
                 <button key={area} type="button" className="tr-foco__opcao" aria-pressed={filtros.areas.includes(area)} onClick={() => alternarArea(area)}>
@@ -305,6 +320,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
             </div>
           </>
         )}
+        <p className="tr-foco__titulo"><span className="tr-sub">B</span> Temas <small>Sem marcar nenhum, entram todos.</small></p>
         <SeletorArvore
           variante="lista"
           arvore={arvore}
@@ -319,6 +335,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
           <span>Não sabe por onde começar? <b>Veja os temas que mais caem</b></span>
           {!premium && <SeloAssinante />}
         </a>
+        <p className="tr-foco__titulo"><span className="tr-sub">C</span> Palavra-chave <small>opcional: procura no texto das questões</small></p>
         <div className="tr-busca">
           <Icone nome="busca" tamanho={18} />
           <label className="so-leitor" htmlFor="busca-acervo">Buscar no texto das questões</label>
@@ -328,7 +345,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
             type="search"
             name="busca"
             autoComplete="off"
-            placeholder="Ou busque por palavras: Salter-Harris, Weber, manguito…"
+            placeholder="Ex.: Salter-Harris, Weber, manguito…"
             value={filtros.busca}
             onChange={(e) => atualizar({ busca: e.target.value })}
           />
@@ -336,12 +353,12 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
         {carregandoBusca && <span className="campo__auxilio">Carregando o texto das questões…</span>}
       </section>
 
-      <details className="tr-etapa tr-etapa--recolhivel" open={situacaoAberta} onToggle={(e) => definirSituacaoAberta((e.currentTarget as HTMLDetailsElement).open)}>
+      <details className="tr-etapa tr-etapa--recolhivel" id="etapa-2" open={situacaoAberta} onToggle={(e) => definirSituacaoAberta((e.currentTarget as HTMLDetailsElement).open)}>
         <summary className="tr-etapa__cabeca">
           <span className="tr-etapa__numero">2</span>
           <div>
-            <h2>Situação</h2>
-            <p>{situacaoAberta ? 'Escolha a partir do que você já respondeu.' : `${ROTULO_SITUACAO[filtros.situacao]} · ${(contagens?.porSituacao[filtros.situacao] ?? 0).toLocaleString('pt-BR')} questões`}</p>
+            <h2>Quais questões</h2>
+            <p>{situacaoAberta ? 'Todas, só as novas, as que você errou ou as que vencem hoje.' : `${ROTULO_SITUACAO[filtros.situacao]} · ${(contagens?.porSituacao[filtros.situacao] ?? 0).toLocaleString('pt-BR')} questões`}</p>
           </div>
           <Icone nome="baixo" tamanho={18} />
         </summary>
@@ -397,13 +414,14 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
       {(temProva || temAno || totalSimulados > 0 || Object.keys(contagens?.porDificuldade ?? {}).length > 0) && (
         <details
           className="tr-etapa tr-etapa--recolhivel"
+          id="etapa-3"
           open={filtrosProvaAbertos}
           onToggle={(e) => definirFiltrosProvaAbertos((e.currentTarget as HTMLDetailsElement).open)}
         >
           <summary className="tr-etapa__cabeca">
             <span className="tr-etapa__numero">3</span>
             <div>
-              <h2>Prova, ano e dificuldade <small className="tr-opcional">opcional</small></h2>
+              <h2>Filtrar mais <small className="tr-opcional">opcional</small></h2>
               <p>{resumoProva}</p>
             </div>
             <Icone nome="baixo" tamanho={18} />
@@ -502,8 +520,8 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
         <summary className="tr-etapa__cabeca">
           <span className="tr-etapa__numero">4</span>
           <div>
-            <h2>Formato</h2>
-            <p>{formatoAberto ? 'Quantas questões e como você quer ver o gabarito.' : `${filtros.limite ?? 'Todas as'} questões · ${simulado ? 'modo prova' : 'modo estudo'}`}</p>
+            <h2>Quantas e como</h2>
+            <p>{formatoAberto ? 'O número de questões e se o gabarito vem a cada resposta ou só no fim.' : `${filtros.limite ?? 'Todas as'} questões · ${simulado ? 'modo prova' : 'modo estudo'}`}</p>
           </div>
           <Icone nome="baixo" tamanho={18} />
         </summary>
