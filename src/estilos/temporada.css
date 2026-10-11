@@ -1,0 +1,183 @@
+/*
+ * Temporada pixel (aprovada em 11/10/2026): o padrão comum de Treinar, Cronograma,
+ * Desempenho e Admin. Cartões com borda firme e sombra "de jogo" deslocada,
+ * números em selo dourado com a Jersey 10, selecionados com sombra em degrau.
+ * Carregado depois dos outros estilos, só ajusta o que já existe.
+ */
+:root {
+  --px-borda: #c9d5d1;
+  --px-sombra: rgba(20, 101, 94, 0.16);
+  --px-ouro: #f4cf7c;
+  --px-ouro-sombra: #6b4a0c;
+  --px-tinta: #1b1208;
+}
+:root[data-tema="escuro"] {
+  --px-borda: #34423f;
+  --px-sombra: rgba(0, 0, 0, 0.45);
+}
+
+/* Cartão de jogo. */
+.px-cartao,
+.treinar-pagina .tr-etapa,
+.pe .cartao,
+.dp .cartao,
+.adm-secao {
+  border: 2px solid var(--px-borda) !important;
+  border-radius: 6px !important;
+  box-shadow: 5px 5px 0 var(--px-sombra) !important;
+}
+
+/* Número de passo: selo dourado em pixel. */
+.px-numero,
+.tr-etapa__numero,
+.pe-form__num {
+  display: inline-grid !important; place-items: center; flex: none;
+  width: 2.3rem !important; height: 2.3rem !important; border-radius: 0 !important;
+  background: var(--px-ouro) !important; color: var(--px-tinta) !important;
+  font-family: var(--fonte-pixel-titulo) !important; font-weight: 400 !important; font-size: 1.6rem !important; line-height: 1 !important;
+  box-shadow: 0 0 0 2px var(--px-tinta), 3px 3px 0 2px var(--px-ouro-sombra) !important;
+  margin: 2px 4px 4px 2px;
+}
+
+/* ---------- Treinar ---------------------------------------------------- */
+.tr-heroi__selo { display: inline-block; margin: 0 0 0.4rem; padding: 0.1rem 0.5rem; background: #0b2b27; color: #9fe3d4; font-family: var(--fonte-pixel); font-weight: 700; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; box-shadow: 2px 2px 0 #072320; }
+.tr-heroi__link { display: inline-flex; align-items: center; gap: 0.35rem; margin-top: 0.7rem; color: #f4cf7c; font-weight: 650; font-size: 0.92rem; text-decoration: underline; text-underline-offset: 3px; }
+.tr-heroi__link:hover { color: #ffe3a3; }
+.treinar-pagina .tr-heroi { padding-bottom: calc(clamp(1.5rem, 4vw, 2.5rem) + 1.25rem); }
+.treinar-pagina .botao.tr-heroi__rapida {
+  border-radius: 0; background: var(--px-ouro); color: var(--px-tinta);
+  box-shadow: 0 0 0 2px var(--px-tinta), 5px 5px 0 2px var(--px-ouro-sombra);
+}
+.treinar-pagina .botao.tr-heroi__rapida:hover { background: #ffdf95; transform: translate(-1px, -1px); }
+.treinar-pagina .tr-heroi__rapida svg { border-radius: 0; background: var(--px-tinta); color: var(--px-ouro); }
+.tr-rapidas__rotulo { align-self: center; font-size: 0.85rem; font-weight: 700; color: var(--sobre-heroi-2); }
+.treinar-pagina .tr-rapida { border-radius: 4px; }
+
+/* Trilha dos passos: o mapa da montagem, como as casas de um jogo. */
+.tr-trilha { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0.5rem; }
+.tr-trilha__passo {
+  position: relative; display: flex; gap: 0.55rem; align-items: center; min-width: 0;
+  padding: 0.6rem 0.7rem; background: var(--superficie); color: var(--texto); text-decoration: none; text-align: left;
+  border: 2px solid var(--px-borda); border-radius: 6px; box-shadow: 3px 3px 0 var(--px-sombra);
+  font: inherit; cursor: pointer;
+}
+.tr-trilha__passo:hover { border-color: var(--verdete); color: var(--texto); transform: translate(-1px, -1px); }
+.tr-trilha__passo b { display: inline-grid; place-items: center; flex: none; width: 1.8rem; height: 1.8rem; background: var(--verdete); color: #fff; font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 1.25rem; }
+.tr-trilha__passo span { display: grid; min-width: 0; line-height: 1.2; }
+.tr-trilha__passo strong { font-size: 0.88rem; }
+.tr-trilha__passo small { overflow: hidden; color: var(--texto-2); font-size: 0.76rem; white-space: nowrap; text-overflow: ellipsis; }
+.tr-trilha__passo:not(:last-child)::after { content: ""; position: absolute; right: -0.45rem; top: 50%; width: 0.4rem; height: 4px; background: var(--px-borda); transform: translateY(-50%); }
+.tr-trilha__passo--fim { background: var(--px-ouro); border-color: var(--px-tinta); color: var(--px-tinta); box-shadow: 3px 3px 0 var(--px-ouro-sombra); }
+.tr-trilha__passo--fim b { background: var(--px-tinta); color: var(--px-ouro); font-size: 0.9rem; }
+.tr-trilha__passo--fim small { color: #3b2410; }
+.tr-trilha__passo--fim:disabled { opacity: 0.55; cursor: default; transform: none; }
+@media (max-width: 56rem) {
+  .tr-trilha { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; padding: 0 6px 6px 0; scrollbar-width: none; }
+  .tr-trilha::-webkit-scrollbar { display: none; }
+  .tr-trilha__passo { flex: 0 0 9.5rem; scroll-snap-align: start; }
+  .tr-trilha__passo::after { display: none; }
+}
+.tr-rapidas__rotulo { flex-basis: 100%; grid-column: 1 / -1; }
+
+/* Subpassos do "O que estudar": A provas, B temas, C palavra-chave. */
+.tr-foco__titulo { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem; margin-top: 0.4rem !important; font-size: 1rem !important; }
+.tr-sub { display: inline-grid; place-items: center; width: 1.45rem; height: 1.45rem; background: var(--verdete); color: #fff; font-family: var(--fonte-pixel-titulo); font-size: 1.05rem; line-height: 1; align-self: center; }
+.treinar-pagina .tr-foco__opcao { border-radius: 4px; }
+.treinar-pagina .tr-foco__opcao[aria-pressed="true"] { box-shadow: 3px 3px 0 var(--verdete) !important; }
+.treinar-pagina .tr-pilula { border-radius: 4px; }
+.treinar-pagina .tr-pilula[aria-pressed="true"] { box-shadow: 2px 2px 0 color-mix(in srgb, var(--verdete) 55%, #000); }
+.treinar-pagina .tr-incidencia { border-radius: 4px; }
+.treinar-pagina .tr-busca .entrada { border-radius: 4px; }
+
+/* Simulados autorais: placa dourada pontilhada. */
+.treinar-pagina .tr-simulados { border-radius: 6px; border: 2px dashed #c99a3b; background: color-mix(in srgb, var(--px-ouro) 14%, var(--superficie)); box-shadow: 5px 5px 0 rgba(201, 154, 59, 0.25); }
+
+/* Barra fixa da sessão: placa de jogo. */
+.treinar-pagina .tr-barra { border-radius: 6px; border: 2px solid var(--px-tinta); box-shadow: 5px 5px 0 var(--px-sombra), 0 12px 30px rgba(18, 24, 26, 0.14); }
+.treinar-pagina .tr-barra .botao--principal { border-radius: 0; box-shadow: 3px 3px 0 color-mix(in srgb, var(--verdete) 50%, #000); }
+
+/* ---------- Cronograma ------------------------------------------------- */
+/* Montar: formulário à esquerda e o resultado se formando ao lado. */
+.pe-montar { display: grid; grid-template-columns: minmax(0, 1fr) minmax(16rem, 21rem); gap: 1.25rem; align-items: start; }
+.pe-ao-vivo {
+  position: sticky; top: 5.5rem; display: grid; gap: 0.7rem; padding: 1.1rem 1.1rem 2.4rem;
+  background: var(--heroi); color: var(--sobre-heroi);
+  border: 2px solid var(--px-tinta); border-radius: 6px; box-shadow: 5px 5px 0 var(--px-sombra);
+}
+.pe-ao-vivo__selo { justify-self: start; margin: 0; padding: 0.1rem 0.5rem; background: #0b2b27; color: #9fe3d4; font-family: var(--fonte-pixel); font-weight: 700; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; box-shadow: 2px 2px 0 #072320; }
+.pe-ao-vivo__dias { margin: 0; color: var(--sobre-heroi-2); }
+.pe-ao-vivo__dias strong { display: block; font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 3.4rem; line-height: 0.9; color: var(--px-ouro); text-shadow: 0 3px 0 #072320; }
+.pe-ao-vivo__lista { display: grid; gap: 0.45rem; margin: 0; }
+.pe-ao-vivo__lista div { display: grid; gap: 0.05rem; padding: 0.5rem 0.65rem; background: rgba(7, 35, 32, 0.5); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12); }
+.pe-ao-vivo__lista dt { font-size: 0.72rem; font-weight: 750; letter-spacing: 0.05em; text-transform: uppercase; color: #9fe3d4; }
+.pe-ao-vivo__lista dd { margin: 0; color: #fff; }
+.pe-ao-vivo__lista dd b { font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 1.45rem; color: var(--px-ouro); }
+.pe-ao-vivo__lista small { display: block; color: var(--sobre-heroi-2); font-size: 0.8rem; }
+.pe-ao-vivo__total { margin: 0.2rem 0 0; color: #fff; font-weight: 650; }
+.pe-ao-vivo__total span { font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 1.9rem; color: var(--px-ouro); }
+.pe-ao-vivo__nota, .pe-ao-vivo__vazio { margin: 0; font-size: 0.85rem; line-height: 1.45; color: var(--sobre-heroi-2); }
+@media (max-width: 56rem) {
+  .pe-montar { grid-template-columns: minmax(0, 1fr); }
+  .pe-ao-vivo { position: static; }
+  .pe-heroi--form .pe-como { display: none; }
+}
+.pe .pe-heroi__nome { font-family: var(--fonte-pixel-titulo); font-weight: 400 !important; letter-spacing: 0.02em !important; color: var(--px-ouro); text-shadow: 0 3px 0 #072320; font-size: clamp(3.2rem, 9vw, 5rem) !important; }
+.pe .pe-intensidade { border-radius: 4px; }
+.pe .pe-intensidade[aria-checked="true"] { box-shadow: 3px 3px 0 var(--verdete) !important; }
+.pe .tr-pilula { border-radius: 4px; }
+.pe .pe-form__passo + .pe-form__passo { padding-top: 1.2rem; border-top: 2px dashed var(--px-borda); }
+
+/* Acompanhar: o dia de hoje como missão, a linha das semanas como trilha de jogo. */
+.pe .pe-hoje, .pe .pe-adiantar, .pe .pe-retomar, .pe .pe-incidencia {
+  border-radius: 6px !important; border: 2px solid var(--px-borda) !important; box-shadow: 5px 5px 0 var(--px-sombra) !important;
+}
+.pe .pe-hoje { background: color-mix(in srgb, var(--px-ouro) 16%, var(--superficie)) !important; border-color: #c99a3b !important; box-shadow: 5px 5px 0 rgba(201, 154, 59, 0.3) !important; }
+.pe .pe-hoje h2 { font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: clamp(1.7rem, 4vw, 2.2rem); line-height: 1; letter-spacing: 0.01em; }
+.pe .pe-meta { border-radius: 4px; box-shadow: 0 0 0 2px var(--px-tinta), 4px 4px 0 2px #072320; }
+.pe .pe-meta strong { font-family: var(--fonte-pixel-titulo); font-weight: 400; }
+.pe .pe-semana { border-left: 4px dotted var(--px-borda); }
+.pe .pe-semana::before { left: -9px; border-radius: 0; width: 14px; height: 14px; }
+.pe .pe-semana--atual { border-left: 4px solid var(--verdete); }
+.pe .pe-semana--atual::before { box-shadow: 2px 2px 0 color-mix(in srgb, var(--verdete) 50%, #000); }
+.pe .pe-semana--final::before { background: var(--px-ouro); border-color: var(--px-tinta); }
+.pe .pe-chip { border-radius: 3px; }
+
+/* ---------- Desempenho ------------------------------------------------- */
+.dp .dp-periodo { border: 2px solid var(--px-borda) !important; border-radius: 6px !important; box-shadow: 5px 5px 0 var(--px-sombra) !important; }
+.dp .dp-heroi { padding-bottom: calc(clamp(1.5rem, 4vw, 2.5rem) + 1.25rem); }
+.dp .dp-heroi__numeros > div { border-radius: 4px; background: rgba(7, 35, 32, 0.45); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.14); border: 0; }
+.dp .dp-heroi__numeros dd { font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 2rem; line-height: 1; color: var(--px-ouro); }
+.dp .dp-heroi__numeros dd a { color: var(--px-ouro); }
+.dp .dp-anel__valor strong { font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 3.2rem; letter-spacing: 0.01em; }
+.dp .dp-cartao__cabeca h2 { display: flex; align-items: center; gap: 0.5rem; }
+.dp .dp-cartao__cabeca h2::before { content: ""; width: 0.65rem; height: 0.65rem; background: var(--px-ouro); box-shadow: 2px 2px 0 var(--px-ouro-sombra); flex: none; }
+/* Barras do mês em blocos, como uma barra de vida de jogo. */
+.dp .dp-barras__barra { border-radius: 0; background: repeating-linear-gradient(0deg, var(--verdete) 0 6px, color-mix(in srgb, var(--verdete) 70%, #7ee0c8) 6px 8px); }
+.dp .dp-barras__dia:last-child .dp-barras__barra { background: repeating-linear-gradient(0deg, var(--ouro) 0 6px, #ffe3a3 6px 8px); }
+.dp .dp-tema__trilho, .dp .dp-tema__trilho > span { border-radius: 0 !important; }
+.dp .dp-destaque { border-radius: 4px; }
+
+/* ---------- Admin: quartel-general da temporada ------------------------ */
+.adm .adm-heroi {
+  padding: 1.2rem 1.4rem 2.6rem; color: var(--sobre-heroi); background: var(--heroi);
+  border: 2px solid var(--px-tinta); border-radius: 6px; box-shadow: 5px 5px 0 var(--px-sombra);
+}
+.adm .adm-heroi h1 { font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: clamp(2rem, 4vw, 2.6rem); line-height: 1; letter-spacing: 0.02em; color: var(--px-ouro); text-shadow: 0 3px 0 #072320; }
+.adm .adm-heroi p { color: var(--sobre-heroi-2); }
+.adm .adm-heroi__sobre { display: inline-flex; padding: 0.1rem 0.5rem; background: #0b2b27; color: #9fe3d4 !important; font-family: var(--fonte-pixel); letter-spacing: 0.06em; text-transform: uppercase; box-shadow: 2px 2px 0 #072320; }
+.adm .adm-heroi__atualizar { border-radius: 0; background: var(--px-ouro); color: var(--px-tinta); border: 0; box-shadow: 0 0 0 2px var(--px-tinta), 3px 3px 0 2px var(--px-ouro-sombra); }
+.adm .adm-abas { border: 2px solid var(--px-borda); border-radius: 6px; box-shadow: 4px 4px 0 var(--px-sombra); }
+.adm .adm-aba { border-radius: 0; }
+.adm .adm-aba[aria-selected="true"] { background: var(--px-ouro); color: var(--px-tinta); box-shadow: 0 0 0 2px var(--px-tinta), 2px 2px 0 2px var(--px-ouro-sombra); }
+.adm .adm-aba[aria-selected="true"] b { background: var(--px-tinta); color: var(--px-ouro); }
+.adm .adm-kpi { border: 2px solid var(--px-borda); border-radius: 6px; box-shadow: 4px 4px 0 var(--px-sombra); }
+.adm .adm-kpi strong { font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 2.4rem; line-height: 0.95; letter-spacing: 0.01em; }
+.adm .adm-kpi--destaque { border-color: #c99a3b; background: color-mix(in srgb, var(--px-ouro) 14%, var(--superficie)); }
+.adm .adm-kpi--alerta { border-color: var(--erro); box-shadow: 4px 4px 0 color-mix(in srgb, var(--erro) 30%, transparent); }
+.adm .adm-kpi--botao:hover { transform: translate(-1px, -1px); }
+.adm .adm-secao h2 { display: flex; align-items: center; gap: 0.5rem; }
+.adm .adm-secao h2::before { content: ""; width: 0.6rem; height: 0.6rem; background: var(--px-ouro); box-shadow: 2px 2px 0 var(--px-ouro-sombra); flex: none; }
+.adm .adm-grafico, .adm .adm-lembrete { border: 2px solid var(--px-borda); border-radius: 4px; }
+.adm .adm-chip { border-radius: 4px; }
+.adm .adm-chip[aria-pressed="true"] { box-shadow: 2px 2px 0 var(--verdete); }
+.adm .adm-heroi .botao { flex: none; }
