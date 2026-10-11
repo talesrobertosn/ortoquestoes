@@ -253,3 +253,5 @@ toda questão de simulado feita a partir de agora.
   recortado como página bibliográfica.
 - O aviso da questão explica que ela é autoral, feita por engenharia reversa das provas anteriores
   a partir da bibliografia, visando o aprendizado, e que não é questão oficial.
+
+- **Conferência de tabelas anatômicas versus exame físico (11/10/2026).** Uma tabela de exame pode contradizer a prancha anatômica de nervos ou trocar as cabeças de um músculo. Para um lote só de anatomia, conferir origem, inserção e nervo diretamente nas pranchas e tabelas anatômicas; não importar a associação clínica como gabarito. Registrar a divergência no mapa e excluir o atributo que continuar duvidoso. Setas em tendões muito finos podem ser substituídas por perguntas textuais quando a distinção visual não ficar inequívoca.

@@ -1400,3 +1400,10 @@ Limites: erros ou simplificações internos do atlas sobre TFL, obturador extern
 Tendência: TEOT 2023, 0081/0082 cruza reconhecimento e fixações; TEOT 2024, 0130/0134 cobra semimembranáceo e 0131 cruza adutor longo/obturatório; TEOT 2025, 0183 e TARO 2025, 0191 sustentam tensor/trato. TARO 2025, 0190 destaca safeno e femoral no canal dos adutores. TARO 2023, 0097 mantém WARD no repertório ósseo. Duplicatas no mesmo ano não contam como recorrência entre anos.
 
 Aproveitamento: `quadril-0685` a `quadril-0708`, 24 autorais, 14 com imagem e 12 adaptações distintas, sem área Fellowship. Novos alvos: fóvea, linha áspera, vastos medial/intermédio, semitendíneo, cabeça curta do bíceps, obturador externo, tensor, adutor curto e nervos genitofemoral/cutâneo lateral/safeno. Inserções seguem a identificação; itens textuais cobrem raízes, ramos, territórios e vasos. Perguntas sobre acessos, exames físicos e tratamento foram excluídas. Todo o conteúdo anterior permaneceu idêntico.
+
+
+## Netter: anatomia do joelho e da perna (11/10/2026)
+
+[Mapa regional](netter-joelho-perna.md), [plano](netter-joelho-perna-plano.md), [47 oficiais auditáveis](netter-joelho-perna-recorte.json) e [entrega](netter-joelho-perna-entrega.md). Lidos 74 candidatos oficiais e todas as 82 folhas do capítulo 9. TEOT 2023/2024 retoma o ramo infrapatelar do safeno; TEOT 2023, 0108 e TARO 2026, 0265 cruzam imagem e inserção. Ligamentos, meniscos, compartimentos e pares neurovasculares complementam o repertório. Sem anos ou com duplicatas não se conclui recorrência anual.
+
+Aproveitamento: `joelho-0343` a `joelho-0378`, 36 autorais, 23 com figura, 21 adaptações distintas. Somente anatomia: osso, fixações dos cruzados e meniscos, colaterais, músculos e inserções, nervos cutâneos/motores e vasos. O item do tendão plantar ficou textual por proximidade visual com o tendão calcâneo. Tabelas de exame físico com erros nervosos, números fixos de variantes e relações contraditórias ficaram fora. Conteúdo anterior de joelho preservado.
