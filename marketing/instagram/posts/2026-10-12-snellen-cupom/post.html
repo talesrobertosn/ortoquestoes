@@ -1,0 +1,251 @@
+<!doctype html>
+<!--
+  Post de 12/10/2026 · dois estilos novos
+  Feed "Tabela de Snellen": a questão escrita como exame de vista, o detalhe que decide na linha mais miúda.
+  Questão: trauma-0761 · TEOT 2025 · gabarito B (Monteggia Bado II, subtipo IIB de Jupiter)
+  Conteúdo médico: comentário da questão em public/acervo/comentarios/trauma.json
+  Stories "Cupom fiscal": propaganda, o mês de estudo impresso item por item (preços de src/dados/planos.ts)
+  Gerar: node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-12-snellen-cupom/post.html
+-->
+<html lang="pt-BR"><head><meta charset="utf-8"><style>
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Source; src: url(../../fontes/source-serif-4-latin-opsz-normal.woff2) format('woff2'); font-weight: 200 900; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #222; }
+section { position: relative; width: 1080px; height: 1350px; overflow: hidden; font-family: Inter, sans-serif; }
+section.story { height: 1920px; }
+b, strong { font-weight: 800; }
+
+/* ===================== FEED · TABELA DE SNELLEN ===================== */
+.sn { background: #e9e6df; color: #121212;
+  background-image: linear-gradient(90deg, rgba(0,0,0,0.035) 1px, transparent 1px); background-size: 120px 100%; }
+.sn::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 120px; background: #d9d4ca; border-top: 6px solid #c9c2b5; }
+.sn .topo { position: absolute; z-index: 3; left: 64px; right: 64px; top: 44px; display: flex; justify-content: space-between; align-items: center; }
+.marca { display: flex; align-items: center; gap: 14px; font-size: 32px; color: #121212; letter-spacing: -0.5px; }
+.marca svg { width: 52px; height: 52px; }
+.etiqueta { font-size: 24px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #5a554c; padding: 8px 16px; border: 2px solid #b8b0a2; border-radius: 40px; }
+.pagina { position: absolute; z-index: 3; left: 64px; right: 64px; bottom: 40px; display: flex; justify-content: space-between; align-items: center; font-size: 24px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #6b655a; }
+.pagina b { color: #121212; }
+/* o quadro iluminado */
+.quadro { position: absolute; z-index: 2; left: 150px; right: 150px; top: 132px; bottom: 170px; background: #fdfdfb; border-radius: 22px;
+  box-shadow: 0 0 0 14px #fff, 0 0 0 18px #cfc8bb, 0 40px 70px rgba(0,0,0,0.18), inset 0 0 80px rgba(240, 236, 220, 0.9); padding: 46px 40px 40px; }
+.quadro.largo { left: 70px; right: 70px; }
+.quadro.centro { display: flex; flex-direction: column; justify-content: center; }
+.linhas { display: grid; gap: 14px; }
+.ln { display: grid; grid-template-columns: 92px 1fr 92px; align-items: center; }
+.ln .n { font-size: 20px; font-weight: 700; color: #9a9385; letter-spacing: 1px; }
+.ln .n:last-child { text-align: right; }
+.ln .t { text-align: center; font-weight: 800; letter-spacing: 0.14em; line-height: 1.12; white-space: nowrap; }
+.ln.vermelho .n { color: #c23b2e; }
+.chamada { font-family: Source; font-weight: 700; color: #121212; letter-spacing: -1px; }
+.oclusor { position: absolute; z-index: 4; width: 120px; height: 300px; }
+.oclusor i { position: absolute; left: 0; top: 0; width: 120px; height: 150px; border-radius: 60px 60px 56px 56px; background: #141414; box-shadow: inset -10px -10px 0 rgba(255,255,255,0.06), 10px 14px 24px rgba(0,0,0,0.25); }
+.oclusor i::after { content: ""; position: absolute; left: 48px; top: 140px; width: 24px; height: 170px; border-radius: 12px; background: #141414; }
+.lupa { position: absolute; z-index: 5; border-radius: 50%; background: #fffef8; box-shadow: 0 0 0 16px #1c1c1c, 0 0 0 22px #3a3a3a, 0 30px 50px rgba(0,0,0,0.3), inset 0 0 50px rgba(200, 190, 160, 0.35); display: grid; place-items: center; text-align: center; }
+.lupa::after { content: ""; position: absolute; width: 230px; height: 46px; border-radius: 23px; background: #1c1c1c; right: -230px; top: 50%; transform: rotate(-28deg); transform-origin: left center; }
+.cartao { background: #fff; border-radius: 18px; box-shadow: 0 0 0 3px #e2ddd2; padding: 26px 30px; }
+.cartao p { font-size: 32px; line-height: 1.42; color: #2a2722; }
+.cartao p b { color: #121212; }
+.real { background: #fff3a8; padding: 0 6px; border-radius: 6px; }
+.otipos { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.otipos div { display: grid; place-items: center; gap: 6px; padding: 18px 0 14px; border-radius: 16px; background: #fff; box-shadow: 0 0 0 3px #e2ddd2; }
+.otipos i { font-style: normal; font-size: 26px; font-weight: 800; color: #9a9385; letter-spacing: 2px; }
+.otipos span { font-size: 92px; font-weight: 800; letter-spacing: 0.06em; line-height: 1; }
+.escada { display: grid; gap: 20px; }
+.degrau { display: grid; grid-template-columns: 160px 1fr; gap: 24px; align-items: center; padding: 30px 28px; border-radius: 16px; background: #fff; box-shadow: 0 0 0 3px #e2ddd2; }
+.degrau strong { font-size: 72px; letter-spacing: 0.06em; line-height: 1; }
+.degrau p { font-size: 31px; line-height: 1.35; color: #3a362f; }
+.degrau p b { color: #121212; }
+.degrau.ok { background: #121212; box-shadow: 0 0 0 4px #121212, 0 16px 30px rgba(0,0,0,0.2); }
+.degrau.ok strong, .degrau.ok p, .degrau.ok p b { color: #fff; }
+.degrau.ok .sel { display: inline-block; margin-top: 8px; font-size: 21px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; background: #fff3a8; color: #121212; padding: 4px 12px; border-radius: 20px; }
+.duo { display: grid; grid-template-columns: 1fr 1fr; border-radius: 18px; overflow: hidden; box-shadow: 0 0 0 4px #121212; }
+.duo div { padding: 30px 30px 32px; color: #121212; }
+.duo .r { background: #e0533f; }
+.duo .g { background: #4fae6a; }
+.duo small { display: block; font-size: 22px; font-weight: 800; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 10px; opacity: 0.8; }
+.duo p { font-size: 29px; line-height: 1.38; }
+
+/* ===================== STORIES · CUPOM FISCAL ===================== */
+.cp { background: #123a35; color: #1d1a14;
+  background-image: radial-gradient(rgba(255,255,255,0.05) 2px, transparent 2px); background-size: 22px 22px; }
+.cp .topo { position: absolute; z-index: 3; left: 70px; right: 70px; top: 250px; display: flex; justify-content: space-between; align-items: center; color: #fff; }
+.cp .marca { color: #fff; }
+.cp .etiqueta { color: #a8dcd1; border-color: rgba(168,220,209,0.45); }
+.impressora { position: absolute; z-index: 4; left: 90px; right: 90px; top: 350px; height: 96px; border-radius: 26px 26px 18px 18px; background: linear-gradient(#2c2c2c, #151515); box-shadow: 0 20px 40px rgba(0,0,0,0.35); }
+.impressora::before { content: ""; position: absolute; left: 70px; right: 70px; bottom: 18px; height: 14px; border-radius: 8px; background: #050505; }
+.impressora::after { content: ""; position: absolute; right: 40px; top: 26px; width: 18px; height: 18px; border-radius: 50%; background: #7ee28f; box-shadow: 0 0 14px #7ee28f; }
+.papel { position: absolute; z-index: 3; left: 150px; right: 150px; top: 420px; padding: 50px 50px 70px; background: #fbf8ef;
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.06), transparent 60px), repeating-linear-gradient(0deg, rgba(120,100,60,0.025) 0 2px, transparent 2px 5px);
+  font-family: "DejaVu Sans Mono", "Liberation Mono", monospace; font-size: 30px; line-height: 1.5; box-shadow: 0 30px 50px rgba(0,0,0,0.35); }
+.papel.serrilha::after { content: ""; position: absolute; left: 0; right: 0; bottom: -24px; height: 24px;
+  background: linear-gradient(-45deg, transparent 16px, #fbf8ef 0) 0 0 / 32px 24px repeat-x, linear-gradient(45deg, transparent 16px, #fbf8ef 0) 0 0 / 32px 24px repeat-x; }
+.papel .c { text-align: center; }
+.papel h2 { font-family: inherit; font-size: 44px; font-weight: 700; letter-spacing: 2px; text-align: center; line-height: 1.2; }
+.papel .tr { border: 0; border-top: 3px dashed #8b8473; margin: 22px 0; }
+.papel .it { display: grid; grid-template-columns: 52px 1fr auto; gap: 14px; align-items: baseline; }
+.papel .it + .it { margin-top: 16px; }
+.papel .it span:first-child { color: #8b8473; }
+.papel .it em { font-style: normal; color: #2d6a5f; font-weight: 700; }
+.papel .peq { font-size: 24px; color: #6b6555; }
+.papel .total { display: flex; justify-content: space-between; align-items: baseline; font-size: 40px; font-weight: 700; }
+.papel .valor { font-size: 120px; font-weight: 700; letter-spacing: -4px; line-height: 1; text-align: center; margin: 10px 0 6px; }
+.papel .valor small { font-size: 46px; letter-spacing: 0; }
+.papel .marcado { background: #1d1a14; color: #fbf8ef; padding: 2px 12px; }
+.barras { height: 110px; margin: 26px 20px 8px; background: repeating-linear-gradient(90deg, #1d1a14 0 4px, transparent 4px 7px, #1d1a14 7px 9px, transparent 9px 15px, #1d1a14 15px 21px, transparent 21px 24px, #1d1a14 24px 26px, transparent 26px 33px); }
+.chamada-cp { position: absolute; z-index: 5; left: 70px; right: 70px; font-family: Source; font-weight: 700; color: #fff; letter-spacing: -1px; }
+.chamada-cp em { font-style: normal; color: #f4cf7c; }
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#14655E"/><g fill="#FFFFFF" opacity=".55"><path transform="translate(13 9.5)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(11 21.2)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(13 44.6)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g><path fill="#F4CF7C" transform="translate(11 32.9)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></symbol></svg>
+
+<!-- ============ FEED 1/5 · capa ============ -->
+<section id="feed-01" class="sn" data-question="trauma-0761">
+  <header class="topo"><div class="marca"><svg><use href="#sim"/></svg><span><b>Orto</b> Questões</span></div><span class="etiqueta">Exame de vista · TEOT 2025</span></header>
+  <div class="quadro centro">
+    <p class="chamada" style="font-size:72px;line-height:1.02;text-align:center;margin-bottom:50px">Até que linha<br>você lê?</p>
+    <div class="linhas">
+      <div class="ln"><span class="n">1</span><span class="t" style="font-size:150px">BADO</span><span class="n">20/200</span></div>
+      <div class="ln"><span class="n">2</span><span class="t" style="font-size:96px">TIPO 2</span><span class="n">20/100</span></div>
+      <div class="ln"><span class="n">3</span><span class="t" style="font-size:62px">MONTEGGIA</span><span class="n">20/70</span></div>
+      <div class="ln"><span class="n">4</span><span class="t" style="font-size:46px">QUAL SUBTIPO</span><span class="n">20/50</span></div>
+      <div class="ln"><span class="n">5</span><span class="t" style="font-size:34px">2A · 2B · 2C · 2D</span><span class="n">20/40</span></div>
+      <div class="ln vermelho"><span class="n">6</span><span class="t" style="font-size:24px;letter-spacing:0.08em">o traço fica na junção da</span><span class="n">20/30</span></div>
+      <div class="ln vermelho"><span class="n">7</span><span class="t" style="font-size:19px;letter-spacing:0.06em">metáfise com a diáfise da ulna</span><span class="n">20/20</span></div>
+    </div>
+  </div>
+  <div class="oclusor" style="right:52px;top:540px;transform:rotate(14deg)"><i></i></div>
+  <footer class="pagina"><span>A resposta mora na <b>última linha</b></span><span>Arraste</span></footer>
+</section>
+
+<!-- ============ FEED 2/5 · a questão ============ -->
+<section id="feed-02" class="sn" data-question="trauma-0761">
+  <header class="topo"><div class="marca"><svg><use href="#sim"/></svg><span><b>Orto</b> Questões</span></div><span class="etiqueta">Questão oficial · TEOT 2025</span></header>
+  <div class="quadro largo centro" style="padding:54px 50px">
+    <p class="chamada" style="font-size:60px;line-height:1.05;margin-bottom:30px">Leia o enunciado inteiro, até a letra miúda.</p>
+    <div class="cartao"><p>A fratura de <b>Monteggia tipo 2</b> na classificação de <b>BADO</b> que ocorre na <span class="real"><b>junção da metáfise com a diáfise da ulna</b></span> é subclassificada como tipo:</p></div>
+    <div class="otipos" style="margin-top:34px">
+      <div><i>A</i><span>2A</span></div>
+      <div><i>B</i><span>2B</span></div>
+      <div><i>C</i><span>2C</span></div>
+      <div><i>D</i><span>2D</span></div>
+    </div>
+    <p style="margin-top:40px;font-size:32px;line-height:1.4;color:#3a362f;text-align:center">Comente a sua letra <b style="color:#121212">antes</b> de arrastar.<br>Quatro opções iguais na linha de cima: quem decide é a de baixo.</p>
+  </div>
+  <footer class="pagina"><span>Linha por linha</span><span><b>2</b> / 5</span></footer>
+</section>
+
+<!-- ============ FEED 3/5 · a lupa ============ -->
+<section id="feed-03" class="sn" data-question="trauma-0761">
+  <header class="topo"><div class="marca"><svg><use href="#sim"/></svg><span><b>Orto</b> Questões</span></div><span class="etiqueta">Com a lupa</span></header>
+  <div class="quadro largo" style="padding:54px 50px">
+    <div class="linhas" style="opacity:0.22">
+      <div class="ln"><span class="n">1</span><span class="t" style="font-size:120px">BADO</span><span class="n"></span></div>
+      <div class="ln"><span class="n">2</span><span class="t" style="font-size:80px">TIPO 2</span><span class="n"></span></div>
+    </div>
+    <div class="lupa" style="width:470px;height:470px;left:200px;top:110px">
+      <div><p style="font-size:24px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:#c23b2e">Linhas 6 e 7, ampliadas</p>
+      <p style="font-size:46px;font-weight:800;line-height:1.15;margin-top:14px;letter-spacing:0.02em">junção da<br>metáfise com<br>a diáfise</p></div>
+    </div>
+    <div style="position:absolute;left:50px;right:50px;bottom:46px;display:grid;gap:16px">
+      <div class="cartao"><p><b>Bado 2</b> já resolve a primeira metade: é a <b>Monteggia posterior</b>, com luxação posterior da cabeça do rádio, o padrão do adulto.</p></div>
+      <div class="cartao"><p>A subclassificação de <b>Jupiter</b> só pergunta uma coisa: <b>em que nível da ulna está o traço?</b> A palavra que responde está na linha mais miúda.</p></div>
+    </div>
+  </div>
+  <footer class="pagina"><span>O detalhe que decide</span><span><b>3</b> / 5</span></footer>
+</section>
+
+<!-- ============ FEED 4/5 · a resposta ============ -->
+<section id="feed-04" class="sn" data-question="trauma-0761">
+  <header class="topo"><div class="marca"><svg><use href="#sim"/></svg><span><b>Orto</b> Questões</span></div><span class="etiqueta">Resposta · letra B</span></header>
+  <div class="quadro largo centro" style="padding:50px 46px">
+    <p class="chamada" style="font-size:52px;line-height:1.05;margin-bottom:28px">Jupiter: o tipo 2 lido de cima para baixo na ulna.</p>
+    <div class="escada">
+      <div class="degrau"><strong>2A</strong><p>Traço na <b>incisura troclear</b> distal, envolvendo o <b>coronoide</b>.</p></div>
+      <div class="degrau ok"><strong>2B</strong><p>Traço na <b>junção da metáfise com a diáfise</b>, logo distal ao coronoide.<br><span class="sel">Gabarito · o mais comum do tipo 2</span></p></div>
+      <div class="degrau"><strong>2C</strong><p>Traço <b>diafisário</b>.</p></div>
+      <div class="degrau"><strong>2D</strong><p><b>Cominutiva</b>, estendendo-se da incisura à diáfise, em vários níveis.</p></div>
+    </div>
+  </div>
+  <footer class="pagina"><span>Letra <b>B</b> · 2B</span><span><b>4</b> / 5</span></footer>
+</section>
+
+<!-- ============ FEED 5/5 · para a prova ============ -->
+<section id="feed-05" class="sn" data-question="trauma-0761">
+  <header class="topo"><div class="marca"><svg><use href="#sim"/></svg><span><b>Orto</b> Questões</span></div><span class="etiqueta">Teste do vermelho e verde</span></header>
+  <div class="quadro largo centro" style="padding:54px 50px">
+    <p class="chamada" style="font-size:60px;line-height:1.05;margin-bottom:30px">Para a prova, enxergue os dois lados.</p>
+    <div class="duo">
+      <div class="r"><small>Coronoide envolvido</small><p><b>2A e 2D</b>: mais instabilidade do cotovelo e mais artrose. O coronoide deve ser fixado.</p></div>
+      <div class="g"><small>Em todos</small><p><b>Placa dorsal longa</b> na ulna; cabeça do rádio fixada ou substituída conforme a lesão.</p></div>
+    </div>
+    <div class="cartao" style="margin-top:26px"><p>O tipo 2 do adulto vai pior que o tipo 1 da criança, e a <b>pseudartrose da ulna</b> é a principal causa de reoperação.</p></div>
+    <p class="chamada" style="font-size:48px;line-height:1.1;margin-top:46px;text-align:center">A banca esconde o detalhe<br>na última linha.<br><span style="color:#2d6a5f">A gente treina o seu olho.</span></p>
+  </div>
+  <footer class="pagina"><span><b>ortoquestoes.com.br</b></span><span>@ortoquestoes</span></footer>
+</section>
+
+<!-- ============ STORY 1/3 · o cupom começa a sair ============ -->
+<section id="story-01" class="cp story">
+  <header class="topo"><div class="marca"><svg><use href="#sim"/></svg><span><b>Orto</b> Questões</span></div><span class="etiqueta">Cupom do mês</span></header>
+  <div class="impressora"></div>
+  <div class="papel serrilha">
+    <h2>ORTO QUESTÕES</h2>
+    <p class="c peq">preparação para TEOT e TARO</p>
+    <hr class="tr">
+    <p class="c" style="font-weight:700">CUPOM DO SEU MÊS DE ESTUDO</p>
+    <p class="c peq">qtd. 30 dias · cliente: residente</p>
+    <hr class="tr">
+    <div class="it"><span>01</span><span>Questões oficiais do TEOT e do TARO</span><em>OK</em></div>
+    <div class="it"><span>02</span><span>Comentário alternativa por alternativa</span><em>OK</em></div>
+    <div class="it"><span>03</span><span>Cronograma até o dia da prova</span><em>OK</em></div>
+    <hr class="tr">
+    <p class="c peq">imprimindo...</p>
+  </div>
+  <p class="chamada-cp" style="top:1430px;font-size:76px;line-height:1.05">Quanto custa um mês<br>de preparação <em>de verdade?</em></p>
+  <p class="chamada-cp" style="top:1630px;font-family:Inter;font-weight:600;font-size:32px;letter-spacing:0;color:#a8dcd1">A nota continua no próximo story.</p>
+</section>
+
+<!-- ============ STORY 2/3 · os itens ============ -->
+<section id="story-02" class="cp story">
+  <header class="topo"><div class="marca"><svg><use href="#sim"/></svg><span><b>Orto</b> Questões</span></div><span class="etiqueta">Cupom do mês</span></header>
+  <div class="impressora"></div>
+  <div class="papel serrilha">
+    <p class="c peq">...continuação</p>
+    <hr class="tr">
+    <div class="it"><span>04</span><span>Simulados feitos dos livros da bibliografia</span><em>OK</em></div>
+    <div class="it"><span>05</span><span>Engenharia reversa: o que a banca repete</span><em>OK</em></div>
+    <div class="it"><span>06</span><span>Revisão das questões que você errou</span><em>OK</em></div>
+    <div class="it"><span>07</span><span>Desempenho por tema e subtema</span><em>OK</em></div>
+    <div class="it"><span>08</span><span>Quanto a turma marcou em cada letra</span><em>OK</em></div>
+    <div class="it"><span>09</span><span>Ranking com quem estuda junto</span><em>OK</em></div>
+    <hr class="tr">
+    <div class="it"><span></span><span>Tempo procurando o que estudar</span><em style="color:#b3423a">0 h</em></div>
+    <div class="it"><span></span><span>Itens cobrados à parte</span><em style="color:#b3423a">0</em></div>
+    <hr class="tr">
+    <p class="c peq">calculando o total...</p>
+  </div>
+  <p class="chamada-cp" style="top:1560px;font-size:68px;line-height:1.05">Tudo na mesma nota.<br><em>Nada cobrado à parte.</em></p>
+</section>
+
+<!-- ============ STORY 3/3 · o total ============ -->
+<section id="story-03" class="cp story">
+  <header class="topo"><div class="marca"><svg><use href="#sim"/></svg><span><b>Orto</b> Questões</span></div><span class="etiqueta">Cupom do mês</span></header>
+  <div class="impressora"></div>
+  <div class="papel serrilha">
+    <div class="total"><span>TOTAL</span><span class="peq">plano anual</span></div>
+    <p class="valor"><small>R$ </small>19,99<small>/mês</small></p>
+    <p class="c peq">R$ 239,90 pelo ano · cerca de R$ 0,66 por dia</p>
+    <p class="c" style="margin-top:14px"><span class="marcado">MENOS QUE UM ALMOÇO</span></p>
+    <hr class="tr">
+    <div class="it"><span></span><span>Pagamento</span><em>Pix ou cartão</em></div>
+    <div class="it"><span></span><span>Garantia</span><em>7 dias</em></div>
+    <p class="peq" style="margin-top:14px">Troca sem fila: até 7 dias após a cobrança, o reembolso integral é pedido por um botão na sua conta, sem falar com ninguém.</p>
+    <hr class="tr">
+    <div class="barras"></div>
+    <p class="c peq">ortoquestoes.com.br</p>
+    <p class="c" style="font-weight:700;letter-spacing:4px;margin-top:6px">VOLTE SEMPRE</p>
+  </div>
+  <p class="chamada-cp" style="top:1590px;font-size:56px;line-height:1.1">Grátis para começar.<br><em>O caminho está no perfil.</em></p>
+</section>
+
+</body></html>

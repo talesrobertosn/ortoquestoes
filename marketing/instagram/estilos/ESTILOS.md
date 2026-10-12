@@ -309,3 +309,7 @@ varredura circular é um motivo gráfico abstrato; não representa exame nem ana
 - **Mecânica fina / Relojoaria anatômica:** seis stories; leitura anatômica de precisão, azul-petróleo, moldura metálica arredondada e comentário no celular. Referência final: mão, mao-1644. [Modelo](mecanica-fina/modelo.html).
 
 [Orientações detalhadas para Claude e Codex](COFRE-E-MECANICA-FINA.md). Reutilizar por cópia direta; os estilos não foram adicionados ao sorteador. Escolher novas questões e adaptar toda a narrativa.
+
+## Tabela de Snellen e Cupom fiscal (12/10/2026, aguardando aprovação)
+- **Tabela de Snellen (feed):** a questão escrita como exame de vista, com letras que diminuem e o detalhe que decide na linha 20/20. Fundo de consultório, quadro iluminado, oclusor, lupa e teste do vermelho e verde no fechamento. Bom para questões em que uma palavra do enunciado decide (nível, lado, idade, tempo). [Exemplo](../posts/2026-10-12-snellen-cupom/post.html), slides feed-01 a feed-05.
+- **Cupom fiscal (stories):** propaganda em nota térmica saindo da impressora. Os itens são os recursos reais do site e o total é o preço vigente de `src/dados/planos.ts`, nunca inventado. Fechamento com a garantia de 7 dias e "volte sempre". [Exemplo](../posts/2026-10-12-snellen-cupom/post.html), story-01 a story-03.
