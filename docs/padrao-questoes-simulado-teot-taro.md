@@ -154,6 +154,22 @@ completo: a seção de instabilidade glenoumeral desse arquivo.
 
 ## Lições aprendidas (atualizar a cada capítulo)
 
+- **Gêmeas do que já caiu (12/10/2026, pedido do dono).** A banca se repete: o mesmo fato volta
+  em anos diferentes, às vezes com o texto quase igual (Galeazzi três vezes no TARO 2010; BELL-TAWSE
+  em 2011 e 2023; interósseo posterior na Monteggia em 2009, 2010 e 2015). Por isso o lote deve ter
+  uma boa parte de **questões gêmeas**: o mesmo fato carimbado, a mesma abertura, o mesmo tamanho e
+  o mesmo par 2 × 2 da prova, com redação própria e um destes giros:
+  1. **a mesma pergunta, outra variável do par** (perguntou o tipo pela luxação; agora a luxação
+     pelo tipo);
+  2. **o espelho** (pronado e punho estendido contra supinado e ápice volar);
+  3. **o número vizinho** (5 mm e 7,5 cm; a gêmea troca a ordem ou o distrator para 2 mm e 10 cm);
+  4. **o mesmo fato em outra porta de entrada** (o nervo da Monteggia; agora o nervo da cirurgia
+     do antebraço);
+  5. **a reprise quase literal**, quando o fato caiu duas vezes ou mais, com alternativas
+     reordenadas e redação própria, nunca copiando o enunciado oficial.
+  O item 8 do roteiro acima continua valendo para as questões novas; para as gêmeas, o motivo no
+  mapa é o próprio fato carimbado. O comentário cita a prova e o ano em que o fato caiu.
+
 - **Comentário natural e útil (08/10/2026, ajuste do dono).** Sem piso de caracteres.
   Explicar a relação anatômica e a dúvida de cada alternativa com a extensão que
   elas pedem. Cortar repetição, títulos artificiais e explicações sobre por que a
