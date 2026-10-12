@@ -1746,3 +1746,86 @@ halo (ausente no capítulo) e fratura do "cavador de argila" (só um parágrafo)
 Carimbados: forças e fragmentos de BENNETT (TARO 2016/2017/2020, TEOT 2022), posição intrínseco plus (TARO 2017, TEOT 2023), falange média e flexor superficial (TARO 2016/2018/2020), placa volar na luxação MCF (TARO 2024 e séries UFG), IFP e reconstrução hemi-hamato (TARO 2022/2023, TEOT 2024), SEYMOUR (INTO/PUC 2023), parafusos interfragmentários (TARO 2014 e USP 2024/2026), BREWERTON (PUC 2019/USP 2024) e classificação condilar (PUC 2021/2022/FMRP 2026).
 
 Limites: ápice volar versus deslocamento dorsal não são necessariamente divergentes; distinguir a pergunta por tendão da pergunta pelo obstáculo mais comum à redução. Alertas existentes em KOZIN, pilão IFP e amputação de ponta viável foram preservados como pendências de fonte, sem alteração de letras. Conferir percentuais articulares, definição de cominuição e orientação tridimensional de parafusos antes de criar o lote. JAHSS já existe em trauma-1230; não repetir o mesmo par. Nenhuma nova questão escrita nesta etapa.
+
+## Fraturas e luxações da coluna toracolombar (engenharia reversa em 13/10/2026)
+
+Recorte: subtema "Fraturas da coluna toracolombar" (43 itens em `trauma`, 29 em `coluna`) mais regex de
+toracolombar, CHANCE, TLICS, DENIS, explosão e complexo ligamentar posterior, todas as provas
+(`mapear_banca.py --todas-as-provas`). Dos 86 candidatos, **66 formam o núcleo** depois de tirar ruído
+(escoliose na neurofibromatose e no CHARCOT-MARIE-TOOTH, abscesso epidural, SCHOBER, estenose, joelho de
+DENNIS, fêmur, LENKE e itens cervicais com o subtema trocado). Núcleo: 50 TEOT/TARO, 7 SBOT-SP, 6 R4
+Coluna SES-DF 2024, 1 R4 Coluna Joinville 2010, 1 ENARE R4 2024 e 1 CET-PR; 10 com imagem. TEOT/TARO
+de 2007 a 2026, concentrado em 2022 (9), 2023 (6), 2024 (5) e 2025 (6). Enunciado mediano de 96
+caracteres, alternativa de 24; 13 itens em par; um caso clínico. Gabarito do núcleo TEOT/TARO: A11,
+B19, C8, D9. Sem gabarito: `coluna-0334`, `trauma-1113`, `coluna-0350`, `coluna-0351` (certo/errado de
+2006) e `coluna-0490`. Repetidos: `trauma-0343` = `trauma-0957`. Nenhum OrtoQuestões Simulado
+toracolombar no recorte (os quatro que aparecem são cervicais do lote de 13/10).
+
+Os itens oficiais estão divididos entre os temas Trauma e Coluna. Os simulados novos entram no tema
+**Coluna**: assim aparecem no filtro TEOT/TARO e no de R4 coluna (`TEMA_DA_AREA`).
+
+O que a banca repete (o que mais vale gêmea):
+- **Sacro (cerca de 1/6 do núcleo).** DENIS: zona I (lateral ao forame) é a mais comum e zona III
+  (canal central) a de maior lesão neurológica, 50% a 60% (2012, 2016, TEOT 2022, TARO 2024, sem ano
+  duas vezes, imagem para classificar a zona); parafuso iliossacral em S1 ameaça a raiz de L5 (TEOT
+  2023 e 2024); instabilidade espinopélvica com traço medial à faceta L5-S1 (2019) e AO C1 pela faceta
+  L5-S1 (sem ano); "fratura do suicida" = separação do corpo e das asas do sacro (2010).
+- **Classificações e escores.** TLICS: distração é a morfologia de maior pontuação (2013, 2025),
+  escore que soma morfologia, neurologia e complexo ligamentar posterior (TEOT 2022 duas vezes),
+  conta de compressão + ligamento indeterminado + lesão completa = 5, cirúrgico (sem ano). AO Spine:
+  parede posterior separa A1/A2 de A3/A4 (2022), A4 em imagem (TEOT 2022), T12-L1 B2 com L1 A4 em
+  imagem (TEOT 2025), A3 do caso do R4 SES-DF. DENIS (três colunas), load sharing acima de 6 indica
+  via anterior (2015), WHITE e PANJABI no caso do R4.
+- **Explosão.** Aumento da distância interpedicular no AP (2017, TEOT 2022 com imagem), placa
+  superior a mais acometida (2011), sem translação (2010), fratura vertical da lâmina associada à
+  lesão da dura (2020, 2021; SBOT-SP diz L2-L4), critérios cirúrgicos clássicos (perda de altura acima
+  de 50%, cifose acima de 30 graus, sem ano), colete no paciente intacto (R4 2024) e déficit
+  neurológico tardio como a complicação mais temida (R4 2024).
+- **Flexão-distração (CHANCE).** Lesão abdominal associada (2023), eixo de rotação anterior ao corpo
+  (2007), ligamento longitudinal anterior preservado (2006), localização na transição toracolombar
+  e lombar alta (SBOT-SP).
+- **SCIWORA.** Criança e coluna cervical (2022), flexão-distração como mecanismo (2017), radiografia
+  normal com déficit (TEOT 2024), imobilização na maioria (2024).
+- **Osteoporose e cimentação.** Falha da coluna anterior (2013); extravasamento de cimento em até 90%
+  com complicação neurológica em 0,1% (TEOT 2025) e mais frequente para o disco (TARO 2025); objetivo
+  da vertebroplastia (sem ano); sinal do líquido na ressonância a favor de fratura benigna (sem ano);
+  cifoplastia de L5 por insuficiência no R4 2024.
+- **Criança.** Fratura do limbo vertebral, TAKATA e EPSTEIN tipo IV (2026); fratura da apófise
+  posterior no adolescente (2025); compressão na criança com cirurgia a partir de 30 graus e 50% de
+  acunhamento (2022).
+- **Anatomia e técnica.** Acesso paraespinhal (WILTSE) entre multífido e longuíssimo (2021, sem ano
+  com imagem), barra transversa dá estabilidade rotacional (TEOT 2022 com imagem), resistência do
+  parafuso depende da densidade óssea (sem ano), L4-L5 e L5-S1 dão 67% da lordose (2024), transição
+  T11-L2 com maior risco neurológico (SBOT-SP), déficit em geral completo quando presente (sem ano).
+
+Lacunas com potencial (a confirmar no capítulo do Rockwood, Thoracolumbar Spine Fractures and
+Dislocations): escore AO Spine TL (TLAOSIS) com modificadores M1 e M2 e graus neurológicos N0 a NX;
+como a ressonância avalia o complexo ligamentar posterior; explosão sem déficit com e sem colete e
+cirurgia contra tratamento conservador (ensaios randomizados); fixação curta com parafuso no nível
+fraturado e fixação percutânea; síndrome do cone medular contra cauda equina; fratura em extensão na
+espondilite anquilosante e na DISH da coluna torácica; fratura-luxação por translação; cifose
+pós-traumática; lesão por arma de fogo; lesões não contíguas.
+
+### Aproveitamento do capítulo 49: coluna toracolombar (13/10/2026)
+
+Leitura integral do capítulo 49 do Rockwood, 10ª ed. (Thoracolumbar Spine Fractures and
+Dislocations; Kitto, Edwards e Tannoury). 25 questões no tema Coluna, `coluna-0533` a `coluna-0557`
+(filtros TEOT/TARO e R4 coluna), duas com figuras (distância interpedicular no AP e fratura em
+extensão na espondilite). A6/B6/C7/D6, comentário mediano de 3.057 caracteres, cada um citando
+capítulo e seção.
+
+- **Gêmeas dos temas repetidos (13):** TLICS (pontos de morfologia, conta de 4 pontos, neurologia
+  de 3 pontos), AO Spine (A3 contra A4, B1 contra B2, notação T12-L1 B2; L1 A3, B3; N3; M2 na
+  espondilite), distância interpedicular, coluna média de DENIS, critérios de instabilidade (50%,
+  30 graus, 2,5 mm), fratura vertical da lâmina e dura, CHANCE (tratamento em compressão sem
+  artrodese), load sharing acima de 6 e cimentação (disco e 0,1%).
+- **Lacunas (12):** cone medular, órtese por nível (HTLSO abaixo de L3), ensaio de BAILEY,
+  limites da ligamentotaxia, acesso anterior pela esquerda e ADAMKIEWICZ, canal comprometido sem
+  déficit, transporte na coluna anquilosada, fratura-luxação tipo C, diretriz da AAOS para
+  vertebroplastia, projétil entre T12 e L4 e osteotomia de subtração pedicular.
+
+O capítulo confirma a fonte das questões de cimentação do TEOT e do TARO 2025 (extravasamento em até
+90%, disco 45%, neurológica 0,1%). A tabela TLICS do capítulo lista a explosão como "+1"; o comentário
+usa o total de 2 pontos (compressão 1 + explosão 1). Não cobre sacro (DENIS, iliossacral), criança
+(limbo vertebral, SCIWORA) nem acesso de WILTSE: esses temas ficam para os capítulos de pelve e
+coluna pediátrica.
