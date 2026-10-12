@@ -1350,17 +1350,6 @@
     "geradoEm": "2026-10-03",
     "conferido": false
   },
-  "mao-0118": {
-    "incorretas": {
-      "A": "A A1 pode ser liberada, como no dedo em gatilho, sem causar arqueamento relevante; não é uma das essenciais.",
-      "C": "A C1 é uma polia cruciforme, que permite a dobra da bainha e não retém o tendão contra o osso.",
-      "D": "A A4 está certa, mas a C2 é cruciforme e não tem função de retenção."
-    },
-    "conceito": "Os **tendões flexores** dos dedos correm dentro de uma bainha presa ao osso por uma série de **polias**: faixas fibrosas que funcionam como os anéis de uma vara de pescar, mantendo a linha encostada na vara.\n\n**Os dois tipos de polia**:\n\n**anulares (A)**: faixas firmes, em anel, numeradas de **A1 a A5**. As **pares** (A2 e A4) ficam sobre os **ossos** (as diáfises das falanges); as **ímpares** (A1, A3 e A5), sobre as **articulações**;\n\n**cruciformes (C)**: faixas finas, em forma de cruz (C1, C2, C3), que ficam entre as anulares. São flexíveis e permitem que a bainha dobre quando o dedo flete. Elas **não seguram** bem o tendão.\n\n**As polias essenciais**: **A2**, sobre a falange proximal, e **A4**, sobre a falange média. São as mais largas e fortes.\n\n**O efeito em corda de arco**: sem A2 ou A4, quando o dedo dobra, o tendão **se afasta do osso**, como a corda de um arco. Consequências:\n\no tendão perde **excursão** útil: ele se move, mas o dedo não fecha completamente;\n\na força de flexão na ponta do dedo diminui.\n\n**Por isso**: A2 e A4 devem ser **preservadas** ou **reconstruídas** (com uma tira de tendão passada em volta da falange). Já a **A1** pode ser cortada sem problema: é o que se faz no tratamento do **dedo em gatilho**.\n\n**Curiosidade**: escaladores podem romper a A2 ao se pendurar pelas pontas dos dedos.\n\n**Na prova**: as polias mais importantes para evitar o efeito em corda de arco são A2 e A4.",
-    "correta": "A2 e A4 são as polias longas e fortes sobre as falanges proximal e média; sem elas o tendão arqueia e a ponta do dedo não fecha.",
-    "geradoEm": "2026-10-03",
-    "conferido": false
-  },
   "mao-0121": {
     "incorretas": {
       "B": "Edema e eritema estão certos, mas a pele seca é achado tardio; na fase inicial há aumento do suor.",
@@ -2023,17 +2012,6 @@
     "geradoEm": "2026-09-21",
     "conferido": false
   },
-  "mao-0176": {
-    "incorretas": {
-      "A": "O interósseo anterior é um ramo do mediano, volar e profundo, fora do campo das vias laterais.",
-      "C": "O mediano passa pela fossa cubital, na frente e do lado medial, longe das vias de Kocher e Kaplan.",
-      "D": "O ulnar corre atrás e medialmente, no túnel cubital, fora do campo lateral."
-    },
-    "conceito": "As **vias laterais do cotovelo** são usadas para chegar à cabeça e ao colo do rádio, por exemplo em fraturas. O grande risco nelas é o **nervo interósseo posterior** (NIP), o ramo motor do nervo radial.\n\n**As vias**:\n\n**Kocher**: entre o **ancôneo** e o **extensor ulnar do carpo**;\n\n**Kaplan**: entre o **extensor radial curto do carpo** e o **extensor comum dos dedos**, um pouco mais anterior.\n\n**Onde está o NIP**: ele contorna o **colo do rádio** dentro do músculo **supinador**, passando muito perto do osso. Uma dissecção ou um afastador mal colocado no colo pode lesá-lo, causando paralisia dos extensores dos dedos.\n\n**Como a pronação protege o nervo**: quando o antebraço é **pronado** (palma para baixo), o rádio gira e leva o NIP para **longe** do campo lateral, deslocando-o para medial e para baixo. Isso dá uma margem de segurança maior sobre a cabeça e o colo do rádio.\n\n**Outros cuidados**:\n\nnão dissecar mais de cerca de 3 a 4 cm abaixo da cabeça do rádio sem ter identificado o nervo;\n\nevitar afastadores na frente do colo.\n\n**Atenção**: na **via de Thompson**, mais distal e dorsal, usada para a diáfise do rádio, a manobra é a **supinação**, que afasta o nervo do campo ao soltar o supinador.\n\n**Os outros nervos** ficam fora do campo lateral: o **mediano** e o **interósseo anterior**, na frente e do lado medial; o **ulnar**, atrás e medial, no túnel cubital.\n\n**Na prova**: a pronação do antebraço nas vias de Kocher e Kaplan protege o nervo interósseo posterior.",
-    "correta": "A pronação desloca o interósseo posterior para medial e distal, afastando-o do campo lateral e dando margem de segurança sobre o colo do rádio.",
-    "geradoEm": "2026-10-03",
-    "conferido": false
-  },
   "mao-0177": {
     "incorretas": {
       "A": "A botoeira do polegar começa na metacarpofalângica e é tratada por outras técnicas.",
@@ -2144,153 +2122,6 @@
       "D": "O trapézio inferior tem vetor posterior e medial, oposto ao que se precisa para trazer a borda medial da escápula contra o gradil costal. Ele é usado em outro cenário do ombro: a transferência para o troquiter nas lesões irreparáveis do manguito posterossuperior com perda de rotação externa."
     },
     "geradoEm": "2026-09-08",
-    "conferido": false
-  },
-  "mao-0185": {
-    "incorretas": {
-      "A": "O polegar não tem flexor profundo; seu flexor é o flexor longo do polegar.",
-      "C": "O flexor superficial se insere na falange média e não alcança a zona I.",
-      "D": "O flexor profundo do médio pode ser acometido, mas bem menos que o do anelar."
-    },
-    "conceito": "A **zona I** dos flexores fica **além da inserção do flexor superficial**, que termina na falange média. Por isso, na zona I, **só existe o flexor profundo dos dedos** (FPD), que vai até a falange distal.\n\n**A avulsão do flexor profundo** (o **dedo de jérsei**): acontece quando a pessoa está fazendo força para dobrar o dedo e ele é **estendido à força**, como ao agarrar a camisa de um adversário que se afasta no futebol americano ou no rúgbi. O tendão se solta da falange distal, às vezes com um pedaço de osso.\n\n**O dedo mais acometido é o anelar**, em cerca de três quartos dos casos. Algumas explicações:\n\nao fechar a mão em volta de algo, a polpa do anelar fica mais saliente e recebe a força;\n\na inserção do FPD no anelar parece ser mais fraca;\n\no FPD do anelar é ligado aos do médio e do mínimo por um ventre muscular comum, o que limita sua mobilidade independente.\n\n**O exame**: segurando a interfalângica proximal estendida, pede-se para o paciente dobrar a ponta do dedo. Na avulsão, ele **não consegue**. Muitas vezes se palpa o coto do tendão retraído na palma ou na altura da interfalângica proximal.\n\n**Sobre o polegar**: ele **não tem flexor profundo**. Seu flexor é o **flexor longo do polegar**.\n\n**Na prova**: na avulsão de flexor na zona I, o tendão é o flexor profundo, e o dedo mais acometido é o anelar.",
-    "correta": "Na zona I só existe o flexor profundo, e o anelar é o dedo mais acometido no dedo de jérsei.",
-    "geradoEm": "2026-10-03",
-    "conferido": false
-  },
-  "mao-0186": {
-    "conceito": "### Escalada e lesões do dedo\n| Lesão | Mecanismo | Clínica |\n|---|---|---|\n| ruptura da polia A2 (A3, A4) | pegada em **crimp** | dor na falange proximal, **corda de arco** à flexão resistida; IFD **flete** |\n| ==avulsão do FPD== | tração com IFD fletida | ==IFD não flete== |\n\n### Classificação de Leddy e Packer\n| Tipo | Retração | Vínculas | Reparo |\n|---|---|---|---|\n| I | palma | ambas rompidas | 7 a 10 dias |\n| ==II== | ==até a IFP== | ==vínculo longo íntegro== | ==até cerca de 6 semanas== (idealmente precoce) |\n| III | fragmento grande retido na A4 | íntegras | fixar fragmento |\n| IV | fragmento + tendão solto dele | | fixar e reinserir |\n\n### Lesões de polia (Schöffl)\n- Graus I a IV, da distensão à ruptura múltipla; A2 isolada completa costuma ser conservadora (anel de proteção), múltiplas: reconstrução.\n\n> **Na prova:** escalador com IFD sem flexão e coto na IFP = ==FPD tipo 2==.",
-    "correta": "**FPD, tipo 2.**\n- O coto retraiu até a IFP, preso pelo vínculo longo.\n- Tolera algum atraso, mas 10 dias já pedem reparo.",
-    "incorretas": {
-      "B": "**A IFD fletiria.**\n- A lesão de polia dá dor e corda de arco, sem perda de flexão; e não tem esses tipos.",
-      "C": "**Fragmento na A4.**\n- O tipo 3 tem fragmento ósseo grande, sem retração do tendão.",
-      "D": "**FSD íntegro.**\n- Na avulsão fechada o superficial fica preservado."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0187": {
-    "conceito": "### Técnicas de sutura tendínea\n| Técnica | Desenho | Uso |\n|---|---|---|\n| ==Bunnell== | ==X cruzados sucessivos== em cada coto | resistente, mas **estrangula a irrigação**; hoje em extensores e transferências |\n| Kessler modificado (Pennington) | alças em ângulo reto com pegas bloqueantes, 2 fios | clássico dos flexores |\n| Strickland, cruciate (Adelaide), Tang, MGH | 4 a 6 fios cruzando o foco | permitem movimento ativo precoce |\n| ==Pulvertaft== | ==entrelaçamento== de um tendão através do outro | transferências (calibres diferentes) |\n| Mason-Allen | horizontal + vertical | manguito rotador (tendão-osso) |\n| Krackow | pegas bloqueantes laterais em série | tendões grossos, ligamentos |\n\n### Princípios de um bom reparo\n- Número de fios cruzando o foco, pegas de cerca de 1 cm, bloqueio, epitendínea contínua, preservar a vascularização dorsal.\n\n> **Na prova:** X cruzados ao longo do coto = ==Bunnell==.",
-    "correta": "**Bunnell.**\n- O desenho em X cruzado ao longo de cada coto é a sutura de Bunnell.\n- É resistente, mas estrangula a circulação intratendínea.",
-    "incorretas": {
-      "A": "**Entrelaçamento.**\n- Pulvertaft une tendões de calibres diferentes nas transferências.",
-      "B": "**Desenho retangular.**\n- O Kessler usa alças em ângulo reto.",
-      "C": "**Manguito rotador.**\n- Mason-Allen une tendão a osso no ombro."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0188": {
-    "incorretas": {
-      "A": "\"Lumbrical minus\" não é um termo usado; a perda dos lumbricais causa a garra, e não a extensão paradoxal.",
-      "B": "O efeito quadriga é o quadro oposto, com o flexor profundo curto impedindo a flexão dos dedos vizinhos.",
-      "D": "As aderências limitam o movimento do tendão, mas não produzem extensão paradoxal."
-    },
-    "conceito": "O **dedo lumbrical plus** é uma situação em que o paciente, ao tentar **dobrar o dedo com força**, faz o contrário: as **interfalângicas se estendem**. É a \"extensão paradoxal\".\n\n**A anatomia que explica**: os **lumbricais** nascem nos tendões do **flexor profundo dos dedos** (FPD), na palma, e se inserem no aparelho **extensor** do dedo. Normalmente, quando o FPD contrai, ele dobra o dedo puxando a ponta, e o lumbrical acompanha.\n\n**O que acontece no lumbrical plus**: o FPD **perde a continuidade com a ponta do dedo**, por exemplo:\n\no FPD foi cortado **depois** da origem do lumbrical;\n\nhouve uma amputação na falange distal;\n\nfoi colocado um **enxerto de tendão longo demais**, frouxo.\n\nNessas situações, quando o FPD contrai, ele **não consegue puxar a ponta do dedo**. Em vez disso, toda a força vai para o **lumbrical**, que é puxado para trás e, como se insere no extensor, **estende as interfalângicas**. O dedo \"abre\" quando o paciente quer fechar.\n\n**Tratamento**: **cortar o lumbrical**, desfazendo a ligação.\n\n**Para não confundir**:\n\n**efeito quadriga**: o oposto. O FPD está **curto demais** e, ao fechar a mão, impede que os dedos vizinhos dobrem completamente;\n\n**aderências**: limitam o movimento, mas não o invertem;\n\n**perda dos lumbricais** (paralisia): causa a **garra**, com a metacarpofalângica hiperestendida e as interfalângicas dobradas.\n\n**Na prova**: a extensão paradoxal das interfalângicas na flexão vigorosa é o dedo lumbrical plus.",
-    "correta": "Sem continuidade distal do flexor profundo, sua contração puxa o lumbrical, que estende as interfalângicas de forma paradoxal.",
-    "geradoEm": "2026-10-03",
-    "conferido": false
-  },
-  "mao-0189": {
-    "incorretas": {
-      "A": "A extensão das interfalângicas ao fletir com força, por ruptura do flexor profundo distal aos lumbricais, descreve o dedo lumbrical plus.",
-      "B": "Um enxerto longo e frouxo causa o lumbrical plus; a quadriga vem do tendão curto.",
-      "C": "Aderências causam limitação do deslizamento do tendão, mas não se relacionam com o ventre muscular comum."
-    },
-    "conceito": "O **efeito quadriga** recebe o nome das **quadrigas** romanas, carros puxados por quatro cavalos cujas rédeas eram presas juntas. Se uma rédea fosse encurtada, o condutor não conseguia puxar as outras até o fim.\n\n**A anatomia**: os **flexores profundos** do médio, do anelar e do mínimo compartilham um **ventre muscular comum**. É como se fossem rédeas presas na mesma mão: o músculo se contrai uma vez e puxa os três tendões juntos.\n\n**O que acontece**: se um desses tendões fica **curto demais**, ao fechar a mão esse dedo chega ao fim do seu curso **antes** dos outros. Como o ventre é comum, ele não pode mais contrair, e os **dedos vizinhos não conseguem completar a flexão**. O paciente perde força de preensão e não fecha a mão por completo.\n\n**As causas**:\n\n**enxerto de tendão curto**, tensionado demais;\n\n**avanço** do flexor profundo maior que cerca de 1 cm num reparo;\n\nnuma amputação, suturar o flexor profundo ao extensor por cima do coto.\n\n**Tratamento**: liberar o tendão encurtado.\n\n**Para não confundir com o dedo lumbrical plus**: no lumbrical plus, o problema é o oposto. O flexor profundo fica **sem continuidade** ou **longo demais** (por exemplo, um enxerto frouxo), e ao tentar dobrar o dedo as interfalângicas **se estendem** paradoxalmente.\n\n**Na prova**: o efeito quadriga é a limitação da flexão dos dedos causada por um tendão curto, como um enxerto tensionado demais.",
-    "correta": "O efeito quadriga é a limitação da flexão dos dedos vizinhos, causada por um flexor profundo encurtado, como num enxerto curto tensionado demais.",
-    "geradoEm": "2026-10-03",
-    "conferido": false
-  },
-  "mao-0190": {
-    "incorretas": {
-      "B": "A zona V corresponde à metacarpofalângica dos dedos longos, e não do polegar.",
-      "C": "A zona T-II do polegar fica sobre a falange proximal, distal à metacarpofalângica.",
-      "D": "A zona VI pertence à série dos dedos longos, sobre os metacarpos, e não existe no polegar."
-    },
-    "conceito": "As lesões dos **tendões extensores** são classificadas em zonas. O **polegar** tem uma série própria, com a letra **T** (de *thumb*), indo de **T-I a T-V**:\n\n**T-I**: interfalângica;\n\n**T-II**: falange proximal;\n\n**T-III**: **metacarpofalângica**;\n\n**T-IV**: metacarpo;\n\n**T-V**: punho e base do polegar.\n\n**Os dedos longos** têm outra numeração, de I a VIII, em que as zonas ímpares ficam sobre as articulações: I (interfalângica distal), III (interfalângica proximal), **V (metacarpofalângica)**, VII (retináculo do punho); e as pares sobre os ossos, como a VI (metacarpos) e a VIII (antebraço).\n\n**A pegadinha**: a metacarpofalângica é **zona V** nos **dedos longos**, mas **T-III** no **polegar**. Por isso é preciso sempre ver de qual dedo se está falando.\n\n**A lesão do extensor longo do polegar em T-III**: sobre a metacarpofalângica, o aparelho extensor é fino e largo e corre junto com o extensor curto. O reparo deve ser cuidadoso, e depois o polegar é protegido com órtese em extensão por cerca de 4 a 6 semanas, ou com mobilização controlada.\n\n**Na prova**: a lesão do extensor longo do polegar ao nível da metacarpofalângica corresponde à zona T-III.",
-    "correta": "No polegar, a metacarpofalângica é a zona T-III, dentro da série própria de T-I a T-V.",
-    "geradoEm": "2026-10-03",
-    "conferido": false
-  },
-  "mao-0191": {
-    "incorretas": {
-      "B": "O desvio radial não gera a torção necessária; o desvio é ulnar.",
-      "C": "Erra a energia e a rotação: é um trauma de alta energia e com supinação intercarpal.",
-      "D": "A rotação está errada: a fileira distal gira em supinação, e não em pronação."
-    },
-    "conceito": "A **luxação perissemilunar** (e suas formas com fratura, como a transescafoperissemilunar) é uma lesão grave do carpo. O **semilunar** fica preso ao rádio, enquanto o resto do carpo se desloca em volta dele, geralmente para dorsal.\n\n**O mecanismo**:\n\n**trauma de alta energia**: queda de altura, acidente de moto, esmagamento. É preciso muita força para romper os ligamentos fortes do carpo;\n\n**hiperextensão** do punho;\n\n**desvio ulnar**;\n\n**supinação intercarpal**: a fileira distal do carpo gira em supinação em relação à proximal.\n\nEssa combinação foi descrita por **Mayfield**, que mostrou que a lesão avança em volta do semilunar, de radial para ulnar, em quatro estágios.\n\n**Atenção ao diagnóstico**: até cerca de um quarto dessas lesões **passa despercebida** no pronto-socorro. Na radiografia:\n\nno **PA**, as linhas que contornam as fileiras do carpo (linhas de **Gilula**) ficam quebradas, e os ossos se sobrepõem;\n\nno **perfil**, o capitato não fica mais encaixado sobre o semilunar, ou o próprio semilunar aparece virado para a palma, como uma \"xícara derramada\".\n\n**Tratamento**: redução fechada **urgente**, liberação do nervo mediano se houver sintomas, e depois cirurgia para reparar os ligamentos, fixar os ossos com fios e tratar as fraturas.\n\n**Na prova**: a luxação perissemilunar ocorre por trauma de alta energia, com hiperextensão, desvio ulnar e supinação intercarpal.",
-    "correta": "É um trauma de alta energia com hiperextensão, desvio ulnar e supinação intercarpal, e o carpo gira ao redor do semilunar retido.",
-    "geradoEm": "2026-10-03",
-    "conferido": false
-  },
-  "mao-0198": {
-    "incorretas": {
-      "B": "O Froment é do ulnar, mas o Kiloh-Nevin, o sinal do \"O\", avalia o interósseo anterior, ramo do mediano.",
-      "C": "Os testes de extensão do polegar e do punho contra resistência avaliam o nervo radial e o interósseo posterior.",
-      "D": "O Jeanne é um teste do ulnar, mas o Watson avalia a instabilidade do escafoide, e não um nervo."
-    },
-    "conceito": "O **nervo ulnar** inerva quase todos os **músculos intrínsecos** da mão: o **adutor do polegar**, os **interósseos**, os dois lumbricais ulnares e os músculos da eminência hipotenar. Na lesão do ulnar **no punho**, todos esses músculos ficam fracos. Vários testes exploram isso:\n\n**Froment**: o paciente segura um papel entre o polegar e o indicador. Com o **adutor do polegar** fraco, ele compensa dobrando a ponta do polegar com o flexor longo (do mediano);\n\n**Jeanne**: na mesma pinça, a metacarpofalângica do polegar hiperestende;\n\n**Egawa**: com a mão espalmada sobre a mesa, o paciente tenta **desviar o dedo médio para os lados**. Esse movimento depende dos **interósseos**; se eles estão fracos, o paciente não consegue;\n\n**Wartenberg**: o dedo mínimo fica afastado dos outros;\n\n**Pitres-Testut**: dificuldade para cruzar os dedos;\n\n**garra** do anelar e do mínimo.\n\n**Testes de outros nervos**:\n\n**Kiloh-Nevin** (sinal do \"O\"): avalia o nervo **interósseo anterior**, ramo do mediano;\n\nextensão do polegar e do punho contra resistência: avaliam o nervo **radial** e o interósseo posterior;\n\n**Watson**: não é um teste de nervo; avalia a instabilidade do **escafoide** (ligamento escafossemilunar).\n\n**Na prova**: na lesão do ulnar no punho, os testes de Froment e de Egawa são positivos.",
-    "correta": "O Froment revela a fraqueza do adutor do polegar, e o Egawa, a dos interósseos, ambos inervados pelo ramo profundo do ulnar.",
-    "geradoEm": "2026-10-03",
-    "conferido": false
-  },
-  "mao-0211": {
-    "conceito": "**A imagem.** Mostra a face **volar do antebraço distal**, com os tendões flexores e o nervo mediano afastados. A seta aponta um músculo **quadrado**, de fibras **transversais**, colado à face anterior da porção distal do rádio e da ulna: o **pronador quadrado**. Ele é exposto e **desinserido** na **via de Henry** (via anterior) para chegar ao rádio distal.\n\n**A via de Henry (anterior ao rádio).** É a via clássica para todo o rádio pela face **volar**.\n- **Intervalo distal**: entre o **braquiorradial** (inervado pelo radial) e o **flexor radial do carpo** (inervado pelo mediano). Hoje, para as fraturas do rádio distal, usa-se muito a via **pelo leito do flexor radial do carpo** (via de Henry modificada).\n- **Intervalo proximal**: entre o braquiorradial e o **pronador redondo**.\n- A **artéria radial** corre no intervalo e deve ser protegida.\n\n**O plano profundo no rádio distal.**\n1. Afasta-se o **flexor longo do polegar** para ulnar.\n2. Aparece o **pronador quadrado**, cobrindo a metáfise distal do rádio.\n3. O pronador quadrado é **desinserido** da borda **radial** do rádio (em forma de \"L\") e afastado para ulnar, expondo o osso.\n4. A placa volar é colocada **abaixo da linha divisória** (watershed line), para não irritar os tendões flexores.\n5. No final, o pronador quadrado pode ser **reparado** sobre a placa, protegendo os tendões.\n\n**No rádio proximal.** O **pronador redondo** é abordado na parte média e proximal da via de Henry (desinserido do rádio com o antebraço em pronação), e o **supinador** é desinserido com o antebraço em **supinação**, para afastar o nervo interósseo posterior.\n\n**A via de Thompson** é a via **posterior** ao rádio, entre o extensor radial curto do carpo e o extensor comum dos dedos. Ela não expõe o pronador quadrado.\n\n**O pronador quadrado.** Nasce na face anterior da **ulna distal** e se insere na face anterior do **rádio distal**. É o principal **pronador** do antebraço (o pronador redondo ajuda na pronação rápida e com força). É inervado pelo **nervo interósseo anterior**.",
-    "correta": "**Correta: C (pronador quadrado, via de Henry).** A seta aponta o **pronador quadrado**, músculo de fibras transversais sobre a face anterior do rádio e da ulna distais. Ele é desinserido da borda radial do rádio na **via de Henry** (anterior) para expor o rádio distal, como na fixação das fraturas com placa volar.",
-    "incorretas": {
-      "A": "O **pronador redondo** é abordado na via de Henry, mas no terço **médio e proximal** do rádio, e não é o músculo transversal distal da imagem.",
-      "B": "O **pronador redondo** não é aberto na via de Thompson (posterior), e não é o músculo indicado.",
-      "D": "O pronador quadrado está certo, mas ele fica na face **anterior** e não é exposto pela via **posterior** de Thompson."
-    },
-    "referencias": [
-      "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)",
-      "Hoppenfeld S, deBoer P, Buckley R. Surgical Exposures in Orthopaedics: The Anatomic Approach. 5ª edição. Wolters Kluwer."
-    ],
-    "geradoEm": "2026-10-05",
-    "conferido": false
-  },
-  "mao-0212": {
-    "conceito": "### Sistema de polias flexoras\n| Nº na figura | Polia | Local | Importância |\n|---|---|---|---|\n| 1 | A1 | MF | liberada no dedo em gatilho |\n| ==2== | ==A2== | ==falange proximal (diáfise)== | ==essencial== |\n| 3 | C1 | cruciforme | permite dobrar a bainha |\n| 4 | A3 | IFP | fina |\n| 5 | C2 | cruciforme | |\n| ==6== | ==A4== | ==falange média (diáfise)== | ==essencial== |\n| (7) | C3, A5 | IFD | fina |\n\n- Polias **pares** (A2, A4) sobre ossos; **ímpares** (A1, A3, A5) sobre articulações.\n\n### Efeito corda de arco\n- Tendão se afasta do osso na flexão: aumenta o braço de alavanca na base, **perde excursão** na ponta e força de flexão da IFD.\n- Reconstrução: tira de tendão em torno da falange (sob o extensor na A2, por cima na A4), loop triplo.\n\n### Escaladores\n- Ruptura da A2 (e A3, A4) por pegada em crimp.\n\n> **Na prova:** dedo em gatilho = ==A1==; corda de arco = perda de ==A2 e A4==.",
-    "correta": "**A1; A2 e A4.**\n- O dedo em gatilho trava na A1, que pode ser seccionada.\n- A2 e A4 impedem o efeito corda de arco.",
-    "incorretas": {
-      "A": "**A2 não é do gatilho.**\n- Seccioná-la gera corda de arco iatrogênica.",
-      "B": "**A3 e A5 são finas.**\n- A perda isolada delas é tolerada.",
-      "C": "**Erra as duas.**\n- Gatilho na A1; corda de arco por A2 e A4."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0213": {
-    "incorretas": {
-      "B": "Trinta graus é o critério absoluto, a abertura do próprio polegar lesado, e não a diferença em relação ao outro lado.",
-      "C": "Quarenta e cinco graus de diferença só ocorreriam praticamente numa luxação; não é o limiar usado.",
-      "D": "Nenhum critério de instabilidade usa uma diferença de 60°."
-    },
-    "conceito": "O **ligamento colateral ulnar** da metacarpofalângica do polegar impede que o polegar se abra para o lado radial. Sua ruptura é o **polegar do esquiador** (ou do goleiro). O exame decide se a lesão é parcial (tratada com imobilização) ou completa (geralmente cirúrgica).\n\n**Como é feito o teste**: o examinador força o polegar para o lado radial (**estresse em valgo**), com a metacarpofalângica **fletida a cerca de 30°**. Nessa posição, o colateral próprio fica tenso e é ele que se avalia, sem que a placa volar segure a articulação e mascare a lesão.\n\n**Os critérios de instabilidade** (lesão completa):\n\nabertura **mais de 15° maior que a do polegar do outro lado**;\n\nou abertura absoluta maior que cerca de **30° a 35°**;\n\nou ausência de um **ponto final firme** (o ligamento não \"segura\" no fim do movimento).\n\nO critério comparativo de **15°** é importante porque algumas pessoas têm o polegar naturalmente mais frouxo; comparar com o outro lado evita confundir frouxidão natural com lesão.\n\n**Outros cuidados**:\n\nfazer a **radiografia antes** do teste de estresse, para não deslocar uma fratura-avulsão;\n\num **nódulo palpável** acima da metacarpofalângica sugere a **lesão de Stener**, em que o ligamento fica preso por cima da aponeurose do adutor e não cicatriza sem cirurgia.\n\n**O tratamento**: lesões parciais e estáveis, órtese por 4 a 6 semanas; lesões completas, instáveis ou de Stener, reparo cirúrgico; lesões crônicas, reconstrução com enxerto ou artrodese.\n\n**Na prova**: uma diferença de abertura acima de 15° em relação ao lado normal torna a lesão passível de cirurgia.",
-    "correta": "Uma abertura mais de 15° maior que a do polegar normal caracteriza instabilidade e torna a lesão passível de tratamento cirúrgico.",
-    "geradoEm": "2026-10-03",
-    "conferido": false
-  },
-  "mao-0214": {
-    "incorretas": {
-      "A": "A vitamina A não tem ação descrita na síndrome de dor regional complexa.",
-      "B": "As vitaminas do complexo B são usadas como adjuvantes em neuropatias, sem evidência específica nessa síndrome.",
-      "D": "A vitamina D tem papel no metabolismo ósseo, mas não na prevenção da síndrome de dor regional complexa."
-    },
-    "conceito": "O caso descreve uma mulher que, um mês depois de operar uma fratura do rádio distal, desenvolve **dor intensa**, desproporcional, com **inchaço** e **alterações vasomotoras** (mudanças de cor e temperatura) no membro operado. É o quadro da **síndrome de dor regional complexa** (SDRC), antes chamada de distrofia simpático-reflexa.\n\n**O que é a SDRC**: uma resposta exagerada e anormal do organismo a um trauma ou cirurgia, com dor muito maior do que o esperado e alterações na circulação, no suor, na pele e no movimento. A fratura do **rádio distal** é um dos desencadeantes mais comuns.\n\n**O diagnóstico**: usa os critérios de Budapeste, com dor contínua desproporcional e sinais em várias categorias (sensibilidade, circulação, suor e inchaço, movimento e pele). Na fase inicial, a mão fica quente, inchada e avermelhada.\n\n**O papel da vitamina C**: estudos mostraram que a **vitamina C**, tomada em doses diárias (cerca de 500 mg por dia, por cerca de 50 dias) depois de uma fratura do rádio distal, **reduziu a ocorrência** da SDRC. O efeito provável é antioxidante, diminuindo a inflamação. É a vitamina com ação descrita nessa situação. As revisões mais recentes são menos conclusivas, mas a vitamina C continua sendo a resposta cobrada.\n\n**O tratamento do quadro instalado** deve ser **precoce**: controle da dor, fisioterapia com dessensibilização e técnicas de imagem motora, corticoide, bisfosfonatos e bloqueios.\n\n**Na prova**: a vitamina com ação descrita na síndrome de dor regional complexa após fratura do rádio distal é a vitamina C.",
-    "correta": "A vitamina C é a estudada na prevenção da síndrome de dor regional complexa após fratura do rádio distal, com redução da sua ocorrência.",
-    "geradoEm": "2026-10-03",
-    "conferido": false
-  },
-  "mao-0217": {
-    "conceito": "### Técnicas de sutura tendínea\n| Técnica | Desenho | Uso |\n|---|---|---|\n| ==Bunnell== | ==X cruzados sucessivos== em cada coto | resistente, mas **estrangula a irrigação**; hoje em extensores e transferências |\n| Kessler modificado (Pennington) | alças em ângulo reto com pegas bloqueantes, 2 fios | clássico dos flexores |\n| Strickland, cruciate (Adelaide), Tang, MGH | 4 a 6 fios cruzando o foco | permitem movimento ativo precoce |\n| ==Pulvertaft== | ==entrelaçamento== de um tendão através do outro | transferências (calibres diferentes) |\n| Mason-Allen | horizontal + vertical | manguito rotador (tendão-osso) |\n| Krackow | pegas bloqueantes laterais em série | tendões grossos, ligamentos |\n\n### Princípios de um bom reparo\n- Número de fios cruzando o foco, pegas de cerca de 1 cm, bloqueio, epitendínea contínua, preservar a vascularização dorsal.\n\n### Pulvertaft (entrelaçamento)\n- Um tendão passa por dentro do outro em 2 a 3 janelas, em direções alternadas, com sutura em cada passagem.\n- Resistência pelo atrito e pela área de contato: permite **mobilização precoce**.\n- Padrão em transferências tendíneas e junção de enxertos.\n\n> **Na prova:** entrelaçamento para reparo crônico = ==Pulvertaft==.",
-    "correta": "**Pulvertaft.**\n- Um tendão é entrelaçado no outro em janelas alternadas.\n- É a técnica padrão de enxertos e transferências.",
-    "incorretas": {
-      "A": "**Travamento lateral.**\n- Krackow é para reinserções e ligamentos.",
-      "B": "**Manguito rotador.**\n- Mason-Allen une tendão a osso.",
-      "D": "**Reparo agudo.**\n- O Kessler aproxima cotos frescos de mesmo calibre."
-    },
-    "geradoEm": "2026-09-24",
     "conferido": false
   },
   "mao-0225": {
@@ -2966,51 +2797,6 @@
     "geradoEm": "2026-10-03",
     "conferido": false
   },
-  "mao-0281": {
-    "conceito": "### Fáscia palmar normal → corda patológica\n| Estrutura normal | Orientação | Corda | Efeito |\n|---|---|---|---|\n| banda pré-tendínea | longitudinal | pré-tendínea (central na palma) | flexão da MF |\n| ==ligamento natatório== | ==transversa, nas comissuras== | ==natatória== | ==fecha a comissura, limita abdução== |\n| banda espiral + lâmina digital lateral + Grayson | espiral | ==corda espiral== | flexão da IFP, desloca o feixe |\n| lâmina digital lateral | longitudinal no dedo | lateral | flexão da IFP e IFD |\n| fibras transversas (lig. palmar transverso) | transversa proximal | ==poupada== | |\n| ligamento de Cleland | dorsal ao feixe | ==poupado== | |\n\n### Memória\n- Pré-tendínea limita ==extensão== do dedo.\n- Natatória limita ==abertura== entre os dedos.\n\n> **Na prova:** banda transversa nas comissuras = ==ligamento natatório== (corda natatória).",
-    "correta": "**Ligamento natatório.**\n- Banda transversa na base dos dedos, nas comissuras.\n- Vira a corda natatória, que fecha a comissura.\n- A liberação precisa incluí-la.",
-    "incorretas": {
-      "A": "**Mais distal, no dedo.**\n- Região da lâmina digital lateral, que forma a corda espiral.",
-      "C": "**Longitudinal.**\n- Forma a corda central na palma, não a transversa.",
-      "D": "**Termo genérico.**\n- A estrutura transversa nomeada ali é o natatório."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0283": {
-    "alerta": "A figura desta questão não veio no PDF de origem, então a letra da resposta não pôde ser conferida com a imagem. Estude a classificação.",
-    "conceito": "### Ruptura da banda sagital\n- Mais comum: ==lado radial do dedo médio== (boxer's knuckle).\n- O extensor subluxa para **ulnar**, no vale intermetacarpal.\n\n### Por que o médio\n- Dedo mais longo e proeminente no soco.\n- A banda radial sofre tração no desvio ulnar forçado durante a flexão.\n\n### Clínica\n- Dor e edema dorsais na MF, estalido.\n- ==Não estende ativamente a partir da flexão==, mas ==mantém a extensão== se o dedo for estendido passivamente.\n- Desvio ulnar do dedo ao fletir.\n\n### Tratamento\n| Situação | Conduta |\n|---|---|\n| aguda (até cerca de 3 semanas) | órtese com MF em extensão (ou yoke) por 4 a 6 semanas |\n| crônica ou falha | reparo direto ou reconstrução (faixa do extensor, junctura) |\n\n### Não traumática\n- Artrite reumatoide: frouxidão das bandas radiais contribui para o desvio ulnar.\n\n### Rayan e Murray\n| Tipo | Achado | Tratamento |\n|---|---|---|\n| I | lesão da banda, ==tendão estável== | órtese |\n| ==II== | ==tendão subluxado== (ainda sobre a cabeça) | órtese se aguda (< 3 semanas) |\n| III | ==tendão luxado== no vale intermetacarpal | reconstrução |\n\n- Só três tipos.\n\n> **Na prova:** Rayan e Murray tipo II = ==subluxação do extensor==.",
-    "correta": "**Tipo II, conforme o gabarito.**\n- Tendão subluxado, escorregando mas ainda sobre a cabeça do metacarpo.\n- Agudo: órtese com MF em extensão por cerca de 6 semanas.\n- A figura não veio (veja o alerta).",
-    "incorretas": {
-      "A": "**Tendão estável.**\n- Dor e edema, extensor centrado.",
-      "C": "**Luxação franca.**\n- Tendão caído entre as cabeças, pede reconstrução.",
-      "D": "**Não existe.**\n- A classificação tem três tipos."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0286": {
-    "incorretas": {
-      "A": "O hipersinal em T2 está certo, mas em T1 o nervo comprimido fica isointenso, e não com hipossinal.",
-      "B": "A ultrassonografia é um complemento útil, mas depende do examinador e não é o padrão-ouro.",
-      "C": "Hipossinal em T1 e T2 descreve fibrose ou calcificação, e não o edema da compressão nervosa."
-    },
-    "conceito": "Nas **síndromes compressivas** dos nervos periféricos (como o túnel do carpo e o túnel cubital), o diagnóstico é principalmente **clínico**, mas os exames complementares ajudam a confirmar, graduar e localizar a compressão.\n\n**A eletroneuromiografia** (ENMG): é o **padrão-ouro**. Ela mede diretamente o que a compressão faz com o nervo:\n\na **velocidade** com que o impulso passa (fica mais lenta);\n\na **latência** (o tempo de resposta, que aumenta);\n\na **amplitude** do sinal (que cai quando fibras se perdem);\n\nsinais de **desnervação** nos músculos.\n\nCom isso, ela **gradua** a gravidade (leve, moderada, grave), **localiza** o ponto de compressão e **afasta** outros diagnósticos, como problemas na coluna cervical ou neuropatias gerais. Uma limitação: pode vir **normal** nos casos iniciais; nesse caso, a clínica prevalece.\n\n**A ultrassonografia**: mede a área do nervo, que incha antes da compressão, e mostra causas como cistos e variações anatômicas. É útil, mas depende muito de quem faz o exame.\n\n**A ressonância magnética**: o nervo comprimido fica com **edema**, que aparece como **hipersinal em T2** (mais claro). Em **T1**, o nervo fica com sinal parecido com o normal (isointenso). Ela também mostra lesões que comprimem o nervo. Não mede a função.\n\n**Sobre os sinais na ressonância**: hipossinal (escuro) em T1 e T2 ao mesmo tempo é próprio de fibrose ou calcificação, e não do edema da compressão.\n\n**Na prova**: o padrão-ouro para o diagnóstico das síndromes compressivas é a eletroneuromiografia.",
-    "correta": "A eletroneuromiografia mede a lentificação, o bloqueio e a desnervação causados pela compressão, graduando, localizando e afastando outros diagnósticos.",
-    "geradoEm": "2026-10-03",
-    "conferido": false
-  },
-  "mao-0289": {
-    "incorretas": {
-      "A": "Os tempos estão invertidos: o Phalen dura 60 segundos e o Durkan, 30.",
-      "B": "O Durkan está certo, mas 30 segundos de Phalen é pouco e aumenta os falsos negativos.",
-      "D": "O Phalen está certo, mas o tempo descrito para o Durkan é de 30 segundos."
-    },
-    "conceito": "Os **testes provocativos** da síndrome do túnel do carpo tentam **reproduzir os sintomas** (formigamento no polegar, indicador e médio) aumentando a pressão sobre o nervo mediano. Para funcionarem, precisam ser mantidos por um **tempo mínimo**.\n\n**Teste de Phalen**:\n\no paciente **dobra os punhos ao máximo**, geralmente encostando o dorso de uma mão no da outra;\n\na flexão aumenta a pressão dentro do túnel de forma **indireta**;\n\ndeve ser mantido por **60 segundos**.\n\n**Teste de Durkan** (compressão do carpo):\n\no examinador **aperta diretamente** com o polegar sobre o túnel do carpo;\n\na compressão é **direta**, por isso os sintomas aparecem mais depressa;\n\ndeve ser mantido por **30 segundos**;\n\né o teste com **melhor sensibilidade e especificidade**.\n\n**Outros testes e seus tempos**: o Phalen reverso (punhos estendidos) também por 60 segundos; o teste de elevação da mão (mão acima da cabeça) por 2 minutos.\n\n**Por que o tempo importa**: encurtar o teste aumenta os **falsos negativos**, principalmente nas compressões iniciais. Por outro lado, quando os sintomas aparecem muito rápido, sugerem uma compressão mais grave.\n\n**Uma forma de lembrar**: o Phalen age de forma indireta (dobrando o punho) e precisa do **dobro** do tempo do Durkan, que comprime diretamente.\n\n**Na prova**: o Phalen dura 60 segundos e o Durkan, 30 segundos.",
-    "correta": "O Phalen age indiretamente pela flexão do punho e dura 60 segundos; o Durkan comprime o nervo diretamente e dura 30 segundos.",
-    "geradoEm": "2026-10-03",
-    "conferido": false
-  },
   "mao-0292": {
     "incorretas": {
       "A": "Medial ao flexor ulnar do carpo, a dissecção se aproxima do feixe ulnar.",
@@ -3392,28 +3178,6 @@
     "geradoEm": "2026-09-24",
     "conferido": false
   },
-  "mao-0324": {
-    "incorretas": {
-      "A": "Na zona I só passa o flexor profundo, com mais espaço e menos aderência.",
-      "C": "Na zona III, a palma, o tecido é frouxo e não há bainha apertada.",
-      "D": "Na zona IV, o túnel do carpo, há risco de aderência, mas menor que na zona II."
-    },
-    "conceito": "As **zonas de Verdan** dividem os tendões flexores da mão de distal para proximal:\n\n**zona I**: distal à inserção do flexor superficial; só o **flexor profundo**;\n\n**zona II**: do início da bainha (polia A1) até a inserção do superficial; **dois tendões dentro de um túnel osteofibroso apertado**;\n\n**zona III**: palma, entre o túnel do carpo e a A1;\n\n**zona IV**: dentro do **túnel do carpo**;\n\n**zona V**: antebraço.\n\n**Por que a zona II tem mais aderências**: ficou conhecida como **terra de ninguém** (Bunnell), porque por muito tempo se achava que ali não se devia reparar o tendão.\n\ndois tendões, o superficial e o profundo, **competem pelo mesmo espaço**;\n\no canal é rígido e não cede quando o reparo engrossa o tendão;\n\na nutrição depende das **vínculas** e do líquido sinovial, que a lesão prejudica.\n\n**O que mudou o prognóstico**: suturas mais fortes, com **4 a 6 fios** passando pelo foco e sutura epitendínea, que permitem a **mobilização ativa precoce**. O movimento faz o tendão deslizar e evita que ele cole na bainha. Se necessário, abre-se parte das polias A2 ou A4 para o reparo passar.\n\n**Na prova**: mais aderências = **zona II**.",
-    "correta": "Na zona II os dois flexores dividem um túnel osteofibroso rígido, o cenário que mais favorece aderências.",
-    "geradoEm": "2026-10-03",
-    "conferido": false
-  },
-  "mao-0326": {
-    "incorretas": {
-      "A": "A compressão insuficiente pode acontecer, mas é erro técnico, e não a causa anatômica que a questão pede.",
-      "B": "Uma artéria radial acessória não é a variação habitual que mantém a perfusão nesse teste.",
-      "C": "Uma artéria ulnar acessória não é a variação habitual; a terceira via típica é a mediana."
-    },
-    "conceito": "O **teste de Allen** avalia se as artérias **radial** e **ulnar** conseguem, cada uma sozinha, irrigar a mão.\n\n**Como fazer**:\n\ncomprimir ao mesmo tempo a artéria radial e a ulnar no punho;\n\npedir ao paciente que abra e feche a mão até ela **empalidecer**;\n\nsoltar uma artéria de cada vez e contar o tempo até a mão voltar a ficar rosada; o normal é **menos de 5 a 7 segundos**.\n\n**Se a mão continua rosada com as duas comprimidas**, há uma **terceira via** de sangue. A causa anatômica habitual é a **artéria mediana persistente**: uma artéria do embrião, que acompanha o nervo mediano e normalmente regride, mas em algumas pessoas continua calibrosa até a palma.\n\n**Por que ela importa**:\n\npode causar **síndrome do túnel do carpo em jovens**, por ocupar espaço no túnel ou por trombosar;\n\ndeve ser conhecida antes de cirurgias do punho e antes de **retirar a artéria radial** para ponte de safena coronária;\n\nassocia-se ao **nervo mediano bífido**.\n\n**Também pode ser erro técnico** (compressão insuficiente), mas a questão pergunta a causa anatômica.\n\n**Na prova**: mão perfundida no Allen com radial e ulnar comprimidas = **artéria mediana calibrosa**.",
-    "correta": "Uma artéria mediana persistente e calibrosa leva sangue à mão mesmo com a radial e a ulnar ocluídas.",
-    "geradoEm": "2026-10-03",
-    "conferido": false
-  },
   "mao-0328": {
     "incorretas": {
       "A": "O ligamento está certo, mas a avulsão típica é distal, na falange proximal, e não no metacarpo.",
@@ -3741,94 +3505,6 @@
     },
     "conceito": "Nas **lesões da ponta do dedo**, o objetivo é preservar o **comprimento**, a **sensibilidade** e o **coxim** da polpa, e dar suporte ósseo para a unha não crescer em garra.\n\n**A escolha do retalho depende da inclinação do corte**:\n\n**corte transverso**: retalhos de avanço em V-Y, como **Kutler** ou **Atasoy**;\n\n**corte com inclinação dorsal** (sobra mais polpa): **V-Y volar** de Atasoy;\n\n**corte com inclinação volar** (perde-se polpa): retalhos regionais, como o cruzado de dedo ou o tenar.\n\n**O retalho de Kutler**: são **dois triângulos** de pele em V-Y, um de **cada lado** do dedo. Cada triângulo é avançado para a ponta e eles se encontram na **linha média**, cobrindo o osso exposto. Cada um leva o seu feixe neurovascular, por isso a **sensibilidade é mantida**. Serve para perdas pequenas.\n\n**Os outros avanços**:\n\n**Atasoy-Kleinert**: um **único** triângulo em V-Y da face **volar**;\n\n**Moberg**: avanço de toda a pele volar, usado no **polegar**;\n\n**avanço adipofascial com enxerto**: outra opção de cobertura, sem o desenho de Kutler.\n\n**Na prova**: Kutler = **avanço de pele lateral duplo** em V-Y.",
     "correta": "O retalho de Kutler usa dois triângulos em V-Y, um de cada lado do dedo, que se encontram na linha média sobre a ponta.",
-    "geradoEm": "2026-10-03",
-    "conferido": false
-  },
-  "mao-0361": {
-    "incorretas": {
-      "A": "O palmar longo é flexor; a extensão do punho relaxa o músculo e o tendão não aparece.",
-      "B": "A extensão é a direção errada, e o movimento passivo não faz o músculo contrair.",
-      "D": "Na flexão passiva o músculo não contrai, e o tendão não se destaca."
-    },
-    "conceito": "O **palmar longo** é um músculo **flexor fraco do punho** que fica no meio da face volar do antebraço. Está **ausente** em parte das pessoas, uni ou bilateralmente, por isso se testa a presença antes de usá-lo como **enxerto de tendão**.\n\n**Como testar** (teste de Schaeffer): o paciente **opõe o polegar ao dedo mínimo** (polpa contra polpa) e **flexiona ativamente o punho**. Se o músculo existe, o tendão **salta** na linha média da face volar do punho.\n\n**Por que a flexão ativa**: o palmar longo só aparece quando **contrai**. Na extensão ele relaxa, e no movimento passivo ele não se contrai, por isso o tendão não se destaca.\n\n**Outros tendões usados como enxerto**: **plantar delgado** (também pode faltar), extensores dos dedos do pé e flexor superficial.\n\n**Referência cirúrgica**: no punho, o **nervo mediano** fica logo **abaixo e um pouco radial** ao tendão do palmar longo. É preciso cuidado ao infiltrar ou fazer a incisão ali.\n\n**Na prova**: palmar longo = oposição do polegar ao mínimo com **flexão ativa do punho**.",
-    "correta": "Com a oposição do polegar ao mínimo e a flexão ativa do punho, o palmar longo contrai e o tendão salta na linha média do punho.",
-    "geradoEm": "2026-10-03",
-    "conferido": false
-  },
-  "mao-0362": {
-    "incorretas": {
-      "A": "A discriminação de dois pontos depende de o paciente dizer o que sente, o que a criança pequena não faz de forma confiável.",
-      "C": "O teste de Allen avalia as artérias radial e ulnar, e não os nervos.",
-      "D": "Os monofilamentos medem o limiar de pressão e também dependem do relato do paciente."
-    },
-    "conceito": "Para avaliar a sensibilidade dos dedos, a maioria dos testes depende de o paciente **responder** ao que sente. Na **criança pequena**, no paciente **inconsciente** e em quem pode estar **simulando**, essa resposta não é confiável.\n\n**O teste do enrugamento**: a mão fica mergulhada em **água morna** por cerca de 5 a 30 minutos. A pele da polpa normal **enruga**. Se o **nervo digital está cortado**, a polpa daquele território **não enruga**.\n\n**Por que funciona**: o enrugamento depende das fibras **simpáticas** (autonômicas) que viajam junto com o nervo sensitivo. Cortado o nervo, perde-se também esse controle. É um fenômeno **objetivo**: não exige que o paciente diga nada.\n\n**Outras pistas na criança com corte no dedo**:\n\nobservar a **postura** da mão e se o dedo participa da preensão;\n\na polpa denervada fica **seca**, sem suor;\n\nna dúvida, **explorar cirurgicamente**: o reparo precoce do nervo tem ótimo resultado na infância.\n\n**Os testes que exigem resposta**: **discriminação de dois pontos** (densidade de inervação) e **monofilamentos de Semmes-Weinstein** (limiar de pressão). São úteis no adulto colaborativo, não na criança pequena.\n\n**Na prova**: lesão de nervo digital em criança = **teste do enrugamento**.",
-    "correta": "O teste do enrugamento é objetivo: a polpa sem nervo não enruga na água morna, sem depender da resposta da criança.",
-    "geradoEm": "2026-10-03",
-    "conferido": false
-  },
-  "mao-0363": {
-    "incorretas": {
-      "B": "Os intrínsecos encurtados impedem a flexão da IFP, e não a extensão, que eles próprios produzem.",
-      "C": "Com a MF fletida os intrínsecos relaxam, e é justamente quando a flexão da IFP melhora.",
-      "D": "O movimento e a posição estão trocados: o déficit é de flexão, e aparece com a MF estendida."
-    },
-    "conceito": "Os **músculos intrínsecos** da mão (interósseos e lumbricais) passam **na frente** do eixo da metacarpofalângica (MF) e **atrás** do eixo das interfalângicas. Por isso, **fletem a MF e estendem as interfalângicas**.\n\n**O teste de Bunnell-Littler** (também atribuído a Finochietto) separa uma rigidez por **músculos intrínsecos encurtados** de uma rigidez da **própria articulação**:\n\ncom a **MF estendida**, os intrínsecos ficam **esticados** ao máximo e puxam a interfalângica proximal (IFP) em extensão. Se estão encurtados, a **flexão passiva da IFP fica limitada**;\n\ncom a **MF fletida**, os intrínsecos **relaxam**, e a flexão da IFP **melhora**.\n\n**Como interpretar**:\n\nflexão da IFP pior com a MF estendida e melhor com a MF fletida: **contratura dos intrínsecos**;\n\nlimitação **igual** nas duas posições: problema na **cápsula** e nos ligamentos da IFP.\n\n**Causas de contratura intrínseca**: síndrome compartimental da mão, esmagamento, artrite reumatoide, espasticidade e isquemia.\n\n**O teste análogo para os extrínsecos**: se o **extensor longo** está aderido, a flexão da IFP piora com a **MF fletida**, o contrário.\n\n**Na prova**: contratura intrínseca = **déficit de flexão da IFP com a MF estendida**.",
-    "correta": "Com a MF estendida, os intrínsecos encurtados ficam esticados e impedem a flexão passiva da interfalângica proximal.",
-    "geradoEm": "2026-10-03",
-    "conferido": false
-  },
-  "mao-0372": {
-    "incorretas": {
-      "A": "A lesão do colateral radial é menos comum e não é o polegar do esquiador.",
-      "C": "O colateral acessório é parte do ligamento colateral, testada em extensão, e não o nome da lesão.",
-      "D": "Não existe ligamento colateral circunflexo; é um distrator."
-    },
-    "conceito": "O **polegar do esquiador** é a lesão aguda do **ligamento colateral ulnar** da metacarpofalângica (MF) do polegar. O mecanismo é a **abdução forçada**: o esquiador cai com a mão presa no bastão, que empurra o polegar para longe da mão. A forma **crônica**, por estiramento repetido, é o **polegar do guarda-caça**.\n\n**O ligamento colateral** tem duas partes: o **colateral próprio**, testado com a MF em cerca de 30° de flexão, e o **colateral acessório**, testado com a MF em extensão. Não são lesões diferentes, mas partes do mesmo ligamento.\n\n**Exame**: radiografia **antes** do teste de estresse, para não desviar uma fratura-avulsão. Abertura acima de cerca de 30 a 35°, ou 15° a mais que o outro lado, **sem ponto final firme**, sugere ruptura completa.\n\n**Lesão de Stener**: na ruptura completa, o coto do ligamento pode **retrair e ficar por cima da aponeurose do adutor**. Com a aponeurose no meio, o ligamento não cicatriza, e a cirurgia é necessária.\n\n**O colateral radial** também pode romper, mas é **menos comum**. Como não há aponeurose interposta desse lado, **não existe lesão de Stener radial**.\n\n**Na prova**: polegar do esquiador = **colateral ulnar** da MF do polegar.",
-    "correta": "A abdução forçada do polegar preso no bastão rompe o ligamento colateral ulnar da metacarpofalângica.",
-    "geradoEm": "2026-10-03",
-    "conferido": false
-  },
-  "mao-0373": {
-    "incorretas": {
-      "B": "O oponente do polegar é inervado pelo ramo motor do mediano.",
-      "C": "O abdutor curto do polegar é do mediano e é o primeiro a atrofiar no túnel do carpo avançado.",
-      "D": "A cabeça superficial do flexor curto do polegar é do mediano; a profunda é do ulnar."
-    },
-    "conceito": "Na mão, o nervo **mediano** inerva poucos músculos. Uma forma fácil de lembrar é a sigla **LOAF**:\n\n**L**umbricais do 1º e 2º dedos;\n\n**O**ponente do polegar;\n\n**A**bdutor curto do polegar;\n\n**F**lexor curto do polegar, **cabeça superficial**.\n\n**Todo o resto é do ulnar**: os interósseos, os lumbricais do 3º e 4º, os músculos hipotênares, a cabeça profunda do flexor curto do polegar e o **adutor do polegar**, inervado pelo **ramo profundo do ulnar**. O flexor curto do polegar tem, portanto, **inervação dupla**.\n\n**Na clínica**:\n\no **sinal de Froment** aparece quando falta o adutor (lesão do ulnar): para segurar um papel entre o polegar e o indicador, o paciente flete a interfalângica do polegar com o **flexor longo do polegar**, que é do mediano;\n\nna **síndrome do túnel do carpo** avançada, a atrofia aparece na **eminência tenar**, principalmente no **abdutor curto**. É sinal tardio: não se espera por ela para operar;\n\no **ramo motor** do mediano pode sair antes, por baixo ou através do ligamento transverso (variações de Lanz), o que importa na cirurgia.\n\n**Na prova**: o **adutor do polegar** é inervado pelo **ulnar**, e não pelo mediano.",
-    "correta": "O adutor do polegar é inervado pelo ramo profundo do nervo ulnar, e por isso é a exceção.",
-    "geradoEm": "2026-10-03",
-    "conferido": false
-  },
-  "mao-0378": {
-    "incorretas": {
-      "A": "A A2 do polegar fica sobre a interfalângica e não tem o papel de retenção da oblíqua.",
-      "B": "Não existe polia P4; é um distrator.",
-      "D": "As polias cruciformes ficam nos dedos longos e permitem dobrar a bainha, sem reter o tendão."
-    },
-    "conceito": "As **polias** são faixas fibrosas que seguram os tendões flexores junto ao osso. Sem elas, ao fletir o dedo, o tendão se afasta do osso como a **corda de um arco** (*bowstringing*): perde **excursão** e força na ponta do dedo.\n\n**Nos dedos longos**: há polias **anulares** (A1 a A5) e **cruciformes** (C1 a C3). As mais importantes são a **A2** (sobre a falange proximal) e a **A4** (sobre a falange média). As cruciformes são finas e deixam a bainha **dobrar** na flexão; não seguram o tendão.\n\n**No polegar**, o sistema é diferente:\n\n**A1**: sobre a metacarpofalângica;\n\n**polia oblíqua**: sobre a **falange proximal**, em continuidade com o adutor do polegar. É a **mais importante** para manter o **flexor longo do polegar** junto ao osso;\n\n**A2**: sobre a interfalângica;\n\nàs vezes uma polia anular variável (Av).\n\n**Na prática**: no **polegar em gatilho**, libera-se **só a A1**. Lesar a polia oblíqua causa **efeito em corda de arco**. Na incisão, cuidado com o **nervo digital radial**, que cruza a A1 obliquamente.\n\n**Na prova**: polia que evita a corda de arco no polegar = **oblíqua**.",
-    "correta": "A polia oblíqua, sobre a falange proximal do polegar, é a principal responsável por manter o flexor longo junto ao osso.",
-    "geradoEm": "2026-10-03",
-    "conferido": false
-  },
-  "mao-0383": {
-    "conceito": "### Zonas dos flexores (Verdan)\n| Zona | Limites | Particularidade |\n|---|---|---|\n| I | distal à inserção do FSD | só o FPD; avulsão (jersey finger) |\n| ==II== | ==polia A1 até inserção do FSD== | ==terra de ninguém==: dois tendões em túnel rígido, quiasma de Camper |\n| III | palma, fim do túnel até A1 | origem dos lumbricais; bom prognóstico |\n| IV | túnel do carpo | nove tendões + mediano |\n| V | antebraço | lesões múltiplas (\"punho espaguete\") |\n\n### Por que a zona II adere\n- Reparo mais volumoso que o tendão em canal que não cede.\n- Dois tendões competem pelo mesmo espaço.\n- Nutrição dependente de vínculas e líquido sinovial.\n\n### O que mudou o prognóstico\n- Suturas de ==4 a 6 fios== no foco + sutura epitendínea.\n- ==Mobilização precoce== (ativa controlada).\n- Liberação parcial de A2/A4 se necessário.\n\n### Corte na falange proximal\n| Estrutura | Posição |\n|---|---|\n| ==flexor superficial== | ==duas fitas== laterais (após o quiasma de Camper) |\n| flexor profundo | tendão único central, dorsal às fitas |\n| lumbrical | palma, borda radial; não aparece ali |\n\n> **Na prova:** duas fitas que abraçam o profundo = ==flexor superficial==",
-    "correta": "**Flexor superficial.**\n- Dividido em duas fitas que flanqueiam o profundo.\n- Insere-se nas laterais da falange média.",
-    "incorretas": {
-      "A": "**Tendão central.**\n- Único, dorsal às fitas.",
-      "C": "**Palma.**\n- Borda radial, fora da bainha.",
-      "D": "**Metacarpos.**\n- Proximal a esse nível."
-    },
-    "geradoEm": "2026-09-24",
-    "conferido": false
-  },
-  "mao-0391": {
-    "incorretas": {
-      "A": "A aderência entre superficial e profundo limita o próprio dedo, e não os dedos vizinhos.",
-      "C": "A lesão do nervo mediano causa déficit neurológico, e não uma limitação mecânica dos tendões.",
-      "D": "A ruptura tardia faz o próprio dedo perder a flexão, o oposto do mecanismo da quadriga."
-    },
-    "conceito": "O **efeito quadriga** é uma limitação da flexão dos **dedos vizinhos** causada por um **flexor profundo** (FPD) **encurtado ou tensionado** no dedo operado.\n\n**O nome**: a quadriga era uma carruagem puxada por quatro cavalos, cujas rédeas eram seguradas juntas. Se uma rédea fica mais curta, as outras não podem ser puxadas até o fim.\n\n**Por que acontece**: os flexores profundos do médio, do anelar e do mínimo (e às vezes do indicador) saem de um **ventre muscular comum**. Se um tendão foi **encurtado** (avanço exagerado, reparo sob tensão, ou foi suturado ao extensor numa amputação), ele chega à flexão total **antes** dos outros. O músculo esgota sua excursão e os **dedos vizinhos não conseguem fechar** por completo. O paciente se queixa de **fraqueza para fechar a mão**.\n\n**Prevenção**: no reparo do flexor profundo na zona I, avançar o tendão **no máximo cerca de 1 cm**; nas amputações, **não suturar** o flexor profundo ao extensor por cima do coto.\n\n**Tratamento**: liberar o flexor profundo encurtado (tenólise ou tenotomia do coto).\n\n**Não confundir com o lumbrical plus**: quando o flexor profundo está **solto** ou longo demais, ele puxa o **lumbrical** e o dedo **estende paradoxalmente** ao tentar fletir. Trata-se seccionando o lumbrical.\n\n**Na prova**: quadriga = **flexor encurtado ou reparado sob tensão** limitando os dedos vizinhos.",
-    "correta": "Um flexor profundo encurtado esgota a excursão do ventre comum e impede que os dedos vizinhos fechem por completo.",
     "geradoEm": "2026-10-03",
     "conferido": false
   },
@@ -5206,28 +4882,6 @@
     },
     "conceito": "No **polegar reumatoide**, a classificação de **Nalebuff** organiza as deformidades pela articulação onde a sinovite começa.\n\n**tipo I, botoeira**: a mais comum; começa na **MF**: a sinovite distende a cápsula dorsal, o extensor curto afrouxa, e o extensor longo escorrega para ulnar e volar; a MF flete e a IF hiperestende;\n\n**tipo II**: botoeira com subluxação da carpometacarpal; rara;\n\n**tipo III, pescoço de cisne**: começa na **carpometacarpal**: a base subluxa, o metacarpo aduz, a MF hiperestende e a IF flete;\n\n**tipo IV, polegar do goleiro (guarda-caça)**: a sinovite distende o **ligamento colateral ulnar da MF**; na pinça, a MF abre em desvio radial e o metacarpo aduz em compensação;\n\n**tipo V**: pescoço de cisne pela frouxidão da **placa volar da MF**, com a carpometacarpal estável;\n\n**tipo VI**: artrite mutilante.\n\n**O tratamento do tipo IV**: com cartilagem boa, **reconstrução do colateral ulnar**; com a cartilagem destruída, **artrodese da MF**.\n\n**Na prova**: Nalebuff IV = frouxidão do **colateral ulnar da MF**.",
     "correta": "No tipo IV, a sinovite distende o colateral ulnar da metacarpofalângica, e a MF se abre na pinça, como no polegar do goleiro.",
-    "geradoEm": "2026-10-03",
-    "conferido": false
-  },
-  "mao-0506": {
-    "incorretas": {
-      "B": "O intrínseco contraturado impede a flexão da IFP, não a extensão.",
-      "C": "Com a MF fletida os intrínsecos relaxam, e a flexão da IFP melhora.",
-      "D": "Erra o movimento e a posição: o que se perde é a flexão da IFP, e com a MF estendida."
-    },
-    "conceito": "Os **músculos intrínsecos** (interósseos e lumbricais) passam **volar** ao eixo da metacarpofalângica e **dorsal** ao eixo das interfalangianas. Por isso, eles **fletem a MF** e **estendem as IF**. Quando estão contraturados, ficam curtos e não deixam a mão fazer o movimento oposto: **MF estendida com IF fletida**.\n\n**O teste de Bunnell-Littler (Finochietto)** compara a flexão passiva da IFP em duas posições da MF:\n\n**MF estendida**: os intrínsecos ficam esticados; se estiverem contraturados, a **flexão passiva da IFP fica limitada**;\n\n**MF fletida**: os intrínsecos relaxam, e a IFP passa a **dobrar melhor**.\n\n**Como interpretar**:\n\nflexão da IFP pior com a MF estendida e melhor com ela fletida = **contratura intrínseca** (teste positivo);\n\nflexão da IFP igualmente limitada nas duas posições = **contratura capsular** da própria IFP.\n\n**Os testes parecidos**: o do **retinacular oblíquo** (Haines-Zancolli) olha a flexão da IFD com a IFP estendida; o da **contratura extrínseca dos extensores** mostra a IFP pior com a MF **fletida**.\n\n**Causas de contratura intrínseca**: síndrome compartimental da mão, esmagamento, artrite reumatoide, espasticidade e isquemia.\n\n**Na prova**: Bunnell-Littler positivo = **flexão da IFP limitada com a MF estendida**.",
-    "correta": "Com a MF estendida, os intrínsecos contraturados ficam esticados e impedem a flexão da IFP; ao fletir a MF, eles relaxam e a IFP dobra melhor.",
-    "geradoEm": "2026-10-03",
-    "conferido": false
-  },
-  "mao-0508": {
-    "incorretas": {
-      "A": "Punho fletido corresponde à tala de bloqueio dorsal clássica dos flexores, não à posição intrínseco plus.",
-      "B": "MF quase estendida e IF fletidas é a posição a evitar, que leva à mão em garra rígida.",
-      "D": "O punho está certo, mas a MF quase estendida e as IF fletidas enrijecem a mão."
-    },
-    "conceito": "A **posição intrínseco plus** (ou posição segura, de James) é a forma de imobilizar a mão sem deixar rigidez. Cada articulação fica na posição em que os **ligamentos estão esticados**, para que não encurtem.\n\n**Punho**: **30 a 45° de extensão**, deixando os flexores em comprimento favorável;\n\n**metacarpofalângicas**: **70 a 90° de flexão**; a cabeça do metacarpo tem forma de **came**, e os colaterais ficam **tensos na flexão**; imobilizada em extensão, a MF fica rígida;\n\n**interfalangianas**: **em extensão**, com a placa volar e os colaterais da IFP no comprimento máximo; imobilizadas em flexão, ficam com contratura;\n\n**polegar**: em **abdução palmar**, mantendo a comissura aberta.\n\n**A posição a evitar** é a oposta: punho fletido, MF estendida e IF fletidas, que leva à **mão em garra rígida**.\n\n**A tala dos tendões flexores**: depois de um reparo de flexor, usa-se uma **tala de bloqueio dorsal**, com o punho em leve **flexão** (nos protocolos clássicos) ou neutro a leve extensão (nos atuais), MF fletida e IF livres para estender contra a tala. Ela protege o reparo, mas não é a posição intrínseco plus.\n\n**Na prova**: intrínseco plus = **punho 30 a 45° em extensão, MF 70 a 90° em flexão e IF estendidas**.",
-    "correta": "Punho estendido, MF fletida e IF estendidas mantêm os colaterais da MF e a placa volar da IFP esticados, evitando rigidez.",
     "geradoEm": "2026-10-03",
     "conferido": false
   },
