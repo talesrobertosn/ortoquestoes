@@ -16,3 +16,5 @@ Para posts, leia [docs/marketing/orientacoes.md](docs/marketing/orientacoes.md).
 Em 12/10/2026, Tales também aprovou a **Tabela de Snellen** (feed de questão em que a linha miúda decide) e o **Cupom fiscal** (stories: primeiro uma questão com a resposta, depois uma propaganda leve e sem preço; a variante com preço só a pedido). Veja [o guia](marketing/instagram/estilos/SNELLEN-E-CUPOM.md).
 
 Também em 12/10/2026, Tales aprovou o **VAR da questão** (feed e stories: cada alternativa revisada como um lance de futebol). Veja [o guia](marketing/instagram/estilos/VAR-DA-QUESTAO.md).
+
+Também em 12/10/2026, Tales aprovou o **Treine grátis** (story de propaganda com MacBook e iPhone, botão "Treine grátis" e espaço para a figurinha de link com utm, que abre direto em criar conta). Veja [o guia](marketing/instagram/estilos/TREINE-GRATIS.md).

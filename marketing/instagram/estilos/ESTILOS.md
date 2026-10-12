@@ -318,3 +318,6 @@ varredura circular é um motivo gráfico abstrato; não representa exame nem ana
 
 ## VAR da questão: aprovado em 12/10/2026
 - **Feed (5 slides) e stories (3):** transmissão esportiva com placar, tarja inferior e monitor do VAR, e cada alternativa revisada como um lance (anulado ou gol validado). Funciona melhor quando as alternativas combinam itens e alguns deles "jogam em outro time". [Modelo](var-da-questao/modelo.html) e [guia](VAR-DA-QUESTAO.md).
+
+## Treine grátis: aprovado em 12/10/2026
+- **Story de propaganda (1 tela):** MacBook e iPhone com telas reais, os quatro recursos do plano gratuito, o botão dourado "Treine grátis" e um espaço livre para a figurinha de link com utm, que abre direto em "criar conta". É a exceção autorizada à regra dos stories sem figurinha. [Modelo](treine-gratis/modelo.html) e [guia](TREINE-GRATIS.md).
