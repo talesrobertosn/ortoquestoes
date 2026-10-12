@@ -1901,3 +1901,98 @@ Divergências tratadas no comentário: a diástase de 2,5 cm (média de 2,2 cm e
 de lesão pélvica, e não de instabilidade vertical. Ficaram de fora REBOA e ácido tranexâmico (citados
 só no conceito do tamponamento), os escores funcionais (MAJEED e Iowa) e a lesão de MOREL-LAVALLÉE,
 já coberta pela oficial trauma-0988.
+
+## Fratura do acetábulo (engenharia reversa em 13/10/2026)
+
+**Recorte.** Subtema "Fratura do acetábulo" (Trauma) mais um regex de acetábulo, LETOURNEL, JUDET,
+colunas e paredes, KOCHER-LANGENBECK, ilioinguinal, STOPPA, gaivota (gull sign), esporão, arco de
+teto (MATTA), transtectal e corona mortis, nos temas Trauma e Quadril, em todas as provas.
+
+**Ruído descartado.** Dos 91 candidatos, **35 formam o núcleo**. Saíram:
+- artroplastia, displasia, impacto femoroacetabular e osteonecrose;
+- colo do fêmur e fratura por estresse;
+- escápula (via de JUDET) e coluna toracolombar (TAKATA);
+- anel pélvico (pino supra-acetabular);
+- associações de outras fraturas (transtrocantérica, diáfise do fêmur, planalto).
+
+**Composição do núcleo:**
+- 27 TEOT/TARO, ou 20 enunciados distintos. São 18 com gabarito e quatro alternativas e 2 sem gabarito (TARO 2008 e o certo/errado de 2006);
+- 4 ENARE R4 2024 e 2025, com cinco alternativas;
+- 3 SBOT-SP;
+- 1 CET-PR.
+
+**Anos e imagem.** TEOT/TARO de 2006 a 2026, espalhados: no máximo 5 itens por ano, e em 2015 isso se deve só às cópias. Só 1 item com imagem: `trauma-0563`, corte axial com os planos dos traços.
+
+**Formato.** Enunciado mediano de 104 caracteres e alternativa de 27; muitas alternativas em par, como local e conduta ou mecanismo e posição. Abertura típica: "Na fratura do acetábulo, ...".
+
+**Gabarito dos 18 distintos de TEOT/TARO:** A6, B6, C5, D1. O D só aparece na lágrima de KÖHLER.
+
+**Repetidos (o tema que a banca mais recicla):**
+- dissociação entre a linha ilioisquiática e a lágrima de KÖHLER = fratura da superfície quadrilátera. São 5 cópias do TARO 2015 (`trauma-0133`, `0309`, `0952`, `quadril-0053`, `0076`), e o ENARE 2025 repete (`quadril-0510`);
+- "asa de gaivota" = impacção do teto. São 3 cópias do TARO 2016 (`trauma-0112`, `0342`, `0945`), e o SBOT-SP repete com "mau prognóstico";
+- tenotomia do piriforme e do obturador interno a 1,5 cm do trocanter, para poupar a circunflexa medial (TARO 2023, `trauma-0418` = `quadril-0093`).
+
+**Sem gabarito:**
+- `trauma-1140` (TARO 2008, coluna anterior com hemitransversa posterior; a via esperada é a ilioinguinal);
+- `trauma-1175` (2006, coluna anterior baixa sem cirurgia);
+- `trauma-1297` (SBOT-SP, sinal do esporão: dupla coluna, melhor visto na oblíqua obturatriz).
+
+**Simulados que já existem no recorte:**
+- `trauma-1232`: a exceção no conservador sem desvio, do capítulo 10 do Rockwood;
+- `quadril-0270`: arcos de MATTA;
+- `quadril-0413`, `0418` e `0420`: vias ilioinguinal, iliofemoral estendida e combinadas, do Callaghan;
+- `quadril-0605`: oblíquas de JUDET;
+- `quadril-0609`: luxação traumática.
+
+Não há lote dedicado à fratura do acetábulo.
+
+O que a banca repete (o que mais vale gêmea):
+- **Imagem (o núcleo da prova).**
+  - As seis linhas do AP e as oblíquas de JUDET: a coluna posterior é mais bem vista na alar, ou oblíqua ilíaca (TARO 2010), e a oblíqua ilíaca mostra a borda posterior do inominado (SBOT-SP).
+  - A lágrima de KÖHLER: dissociação com a ilioisquiática indica superfície quadrilátera (2015 cinco vezes, ENARE 2025). A parte medial da lágrima aparece no TARO 2014.
+  - Sinais nomeados: gaivota (2011, 2016 três vezes, 2026, SBOT-SP) e esporão (SBOT-SP).
+  - Planos do traço no corte axial: o transverso é sagital (anteroposterior) e o de coluna é coronal (TEOT 2024, com imagem).
+  - Arco de teto de MATTA, com a parede posterior avaliada à parte (TARO 2022).
+- **Classificação de LETOURNEL.**
+  - A parede posterior é a fratura mais comum (sem ano).
+  - A transversa é elementar e responde por 5% a 19% (TARO 2024).
+  - A dupla coluna é a associada mais frequente (TARO 2013).
+  - Na dupla coluna, a congruência secundária se deve ao lábio (TARO 2019).
+  - A impacção marginal aparece na parede posterior (CET-PR).
+- **Mecanismo.** A parede anterior resulta de força no trocanter maior pelo eixo do colo, com rotação lateral de cerca de 20 graus e adução neutra (TARO 2016 e 2018). Na luxação posterior, a fratura da borda acontece com menos adução e rotação interna (TARO 2021, `trauma-0077`, periférico).
+- **Indicação.**
+  - Conservador: transversas baixas, infratectais (TEOT 2021) e coluna anterior baixa (2006).
+  - Artroplastia imediata no idoso com fratura do colo associada (TARO 2021).
+  - Gaivota no idoso: impacção superomedial, tratada com osteossíntese combinada à artroplastia (TARO 2026).
+- **Vias.**
+  - KOCHER-LANGENBECK: tenotomia a 1,5 cm, circunflexa medial (TARO 2023). Também é a via da coluna e parede posteriores (ENARE 2025, AO 62A2).
+  - Ilioinguinal: coluna anterior (ENARE 2024) e coluna anterior com hemitransversa posterior (TARO 2008).
+  - STOPPA modificada: corona mortis (TEOT 2025, `quadril-0640`). O ENARE 2024 cita a anatomia das colunas e a corona mortis.
+
+Divergências a resolver com o capítulo do Rockwood antes de escrever gêmeas:
+- **Sinal da gaivota.**
+  - O TARO 2011 (`trauma-0854`) dá "coluna posterior" como gabarito.
+  - O TARO 2016, o SBOT-SP e o TARO 2026 descrevem impacção superomedial do teto, típica do idoso com fratura da coluna anterior e da superfície quadrilátera.
+  - Nos simulados, seguir a impacção superomedial e não reaproveitar o gabarito de 2011.
+- **Parte medial da lágrima** (`quadril-0035`, TARO 2014, gabarito C, "fossa acetabular"). Na descrição clássica, o ramo lateral da lágrima é a parede da fossa acetabular e o medial é a superfície quadrilátera. Conferir antes de usar.
+- **Corona mortis em 80%** (`quadril-0229`, ENARE 2024). A prevalência varia muito entre as séries; usar o número do capítulo, não o do ENARE.
+
+**Lacunas com potencial** (a confirmar no capítulo do Rockwood sobre o acetábulo):
+- **Classificação e imagem:**
+  - as dez formas de LETOURNEL, com a lógica elementar e associada e as frequências de cada uma;
+  - o que cada oblíqua de JUDET mostra (obturatriz: coluna anterior e parede posterior; ilíaca: coluna posterior e parede anterior);
+  - os arcos de teto em números (medial, anterior e posterior) e o equivalente na tomografia;
+- **Estabilidade e indicação:**
+  - a estabilidade da parede posterior (tamanho do fragmento e exame sob anestesia);
+  - o desvio aceitável no teto (cerca de 2 mm) e o tempo ideal da cirurgia;
+- **Complicações:**
+  - lesão do ciático (divisão fibular);
+  - ossificação heterotópica (BROOKER, indometacina ou radioterapia, mais na via posterior e na iliofemoral estendida);
+  - artrose pós-traumática ligada à qualidade da redução;
+  - osteonecrose;
+  - tromboembolismo;
+- **Idoso:** fixação e artroplastia no mesmo ato e o tratamento percutâneo.
+
+**Destino dos simulados.** Tema Trauma, subtema "Fratura do acetábulo", onde estão as oficiais e que entra no filtro TEOT/TARO, a menos que se prefira o tema Quadril (que soma o filtro do fellowship).
+
+**Aproveitamento.** Aguardando o capítulo do Rockwood sobre fraturas do acetábulo para escrever o lote, com gêmeas dos repetidos e novas das lacunas.
