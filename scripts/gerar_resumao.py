@@ -9,6 +9,9 @@ arquivo leve (public/acervo/resumao.json), para ler na reta final sem baixar
 os comentários inteiros. Questões oficiais vêm antes; os OrtoQuestões
 Simulados completam quando o assunto tem poucas.
 
+O resumão cresce sozinho: cada comentário novo ou reescrito com a linha
+"**Na prova:**" entra na próxima publicação (até 6 frases por assunto).
+
 Uso: python3 scripts/gerar_resumao.py  (a publicação roda a cada deploy)
 """
 
@@ -26,7 +29,7 @@ from comum import DIR_ACERVO, DIR_COMENTARIOS, DIR_TEMAS, RAIZ, gravar_json, nor
 
 INCIDENCIA = RAIZ / "src" / "dados" / "incidencia.json"
 SAIDA = DIR_ACERVO / "resumao.json"
-FRASES_POR_ASSUNTO = 4
+FRASES_POR_ASSUNTO = 6
 DEPENDE = re.compile(r"\b(seta|imagem|figura|apontad|assinalad|indicad[oa] (?:na|pela)|alerta)|(?:^|[\s,;])\d\s*=", re.I)
 NA_PROVA = re.compile(r"\*\*Na prova:?\*\*:?\s*(.+?)(?:\n\n|$)", re.S)
 

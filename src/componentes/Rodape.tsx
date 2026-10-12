@@ -16,6 +16,7 @@ const ESTUDAR = [
 const ASSINANTE = [
   ['/cronograma', 'Cronograma'],
   ['/temas-que-mais-caem', 'Temas que mais caem'],
+  ['/resumao', 'Resumão'],
   ['/simulado-nacional', 'Simulado Nacional'],
   ['/ligas', 'Liga da residência'],
   ['/indicar', 'Indique e ganhe'],

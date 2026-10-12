@@ -383,6 +383,11 @@ export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar,
       <span><strong>O cronograma segue os temas que mais caem</strong><small>As áreas com mais questões nas provas ganham mais espaço, e cada dia começa pelos assuntos de prioridade máxima. Veja a contagem.</small></span>
       <Icone nome="direita" tamanho={18} />
     </a>
+    <a className="pe-incidencia" href={href('/resumao')}>
+      <span className="pe-incidencia__icone" aria-hidden="true"><Icone nome="livro" tamanho={20} /></span>
+      <span><strong>Resumão: o que cai, em uma frase</strong><small>As frases "Na prova" dos assuntos que mais caem, área por área. Bom a qualquer momento e indispensável na reta final.</small></span>
+      <Icone nome="direita" tamanho={18} />
+    </a>
 
     <section className="cartao cartao__corpo pe-semanas" aria-labelledby="pe-semanas-titulo">
       <header className="pe-semanas__cabeca">
