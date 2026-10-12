@@ -7,7 +7,7 @@ Marque `[x]` ao concluir e anote a data e o PR. Uma etapa só começa quando a a
 - [x] Documentação em `docs/flashcards/` (12/10/2026)
 - [x] Protótipo visual `prototipos/flashcards/torneio.html`, com Estudo, Batalha e 3 cenários (12/10/2026)
 - [x] Referências visuais do Tales registradas em REFERENCIAS.md (12/10/2026)
-- [ ] Protótipo 2 (`torneio-v2.html`): testar com prints, corrigir e publicar
+- [x] Protótipo 2: testado com prints, corrigido, com mais efeitos visuais, promovido a `torneio.html` e publicado (12/10/2026)
 - [ ] O Tales avalia o protótipo: estética, cenários, tamanho do flashcard no celular, fluidez da Batalha
 - [ ] Respostas às decisões pendentes de [DECISOES.md](DECISOES.md)
 

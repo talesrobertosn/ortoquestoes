@@ -19,7 +19,8 @@ Uma aba **Flashcards** dentro de **Treinar**, com o **modo Estudo** (calmo: vira
 | O quê | Onde |
 |---|---|
 | Protótipo visual (HTML autocontido, sem dependências) | [prototipos/flashcards/torneio.html](../../prototipos/flashcards/torneio.html) |
-| Protótipo publicado (link privado do Tales) | https://claude.ai/artifact/J7653MBJ9VzGZ6Suv2FmjL |
+| Protótipo publicado (link privado do Tales, versão 2) | https://claude.ai/artifact/H9bLf2bWXvvjftgbFXtDxJ |
+| Script de prints (celular e computador) | [prototipos/flashcards/testar-prototipo.mjs](../../prototipos/flashcards/testar-prototipo.mjs) |
 | Gerador do Resumão (base para extrair as linhas "Na prova") | [scripts/gerar_resumao.py](../../scripts/gerar_resumao.py) |
 | Motor da revisão espaçada de questões (intervalos por confiança) | [src/estado/revisao.ts](../../src/estado/revisao.ts) |
 | Limite diário do plano grátis (contrato no servidor) | [docs/planos-e-limite-diario.md](../planos-e-limite-diario.md) |
@@ -33,7 +34,7 @@ Uma aba **Flashcards** dentro de **Treinar**, com o **modo Estudo** (calmo: vira
   - 12 flashcards de exemplo tirados de questões reais.
 - **12/10/2026, fim do dia (troca de conta):**
   - o Tales gostou da imagem e do mecanismo do protótipo 1 e mandou 5 referências (veja [REFERENCIAS.md](REFERENCIAS.md));
-  - a **versão 2** está escrita em `prototipos/flashcards/torneio-v2.html`, **ainda sem teste visual**:
+  - a **versão 2** está escrita em `prototipos/flashcards/torneio-v2.html` (testada e promovida a `torneio.html` na noite de 12/10):
     - tabuleiro emoldurado;
     - adversário com vida em cima;
     - alternativas na mão em leque;
@@ -41,7 +42,7 @@ Uma aba **Flashcards** dentro de **Treinar**, com o **modo Estudo** (calmo: vira
     - golpe com esfera de luz;
     - partículas.
   - **Para continuar:**
-    1. rodar `node prototipos/flashcards/testar-prototipo.mjs prototipos/flashcards/torneio-v2.html <pasta-temporária>`. O script tirava prints no celular e no computador, mas falhou na linha 6: o caminho do `import` do Playwright precisa ser ajustado, por exemplo para `playwright` ou `node_modules/playwright/index.js`.
+    1. rodar `node prototipos/flashcards/testar-prototipo.mjs prototipos/flashcards/torneio-v2.html <pasta-temporária>`. (Feito na noite de 12/10, ver abaixo.)
     2. olhar os prints e corrigir;
     3. quando estiver bom, trocar o `torneio.html` pela v2 e republicar o artifact.
   - **Mudança de mecânica na v2 (proposta, falta o Tales aprovar):** o andar não tem mais 5 flashcards fixos. Cada andar tem um adversário com vida:
@@ -49,6 +50,21 @@ Uma aba **Flashcards** dentro de **Treinar**, com o **modo Estudo** (calmo: vira
     - o erro faz ele golpear você, com os danos de sempre (2, 5 e 10);
     - derrotou o adversário, você sobe de andar e escolhe um poder.
     - Adversários: Golem de Gesso, Serpente do Ciático e o chefe Guardião do Acetábulo.
+- **12/10/2026, noite:**
+  - o script de prints voltou a rodar (acha o Playwright local ou o global);
+  - os prints mostraram dois defeitos de layout, corrigidos:
+    - o flashcard sumia do tabuleiro (a mesa caía numa linha de altura zero do grid);
+    - no celular a página vazava para a direita (a coluna do `.app` crescia com o conteúdo);
+  - no celular, o flashcard estreito da Batalha esconde o brasão e diminui a gema de dano, para o título caber;
+  - o Tales mandou mais referências e pediu **"quanto mais efeitos visuais melhor"**. Entraram:
+    - rastro de cometa na esfera do golpe e onda de choque no impacto;
+    - corte dourado sobre o adversário no acerto (Runeterra) e garras vermelhas sobre você no erro;
+    - número grande "CRÍTICO" ou "GOLPE DUPLO" quando o dano chega a 30 (Artifact);
+    - barra de vida do adversário com rastro branco que esvazia depois do golpe;
+    - aura girando atrás do flashcard, na cor da raridade, e brilho passando na alternativa levantada;
+    - raios de luz e confete na vitória;
+    - tudo desligado em "reduzir movimento".
+  - `torneio.html` agora é a versão 2 (a versão 1 fica no histórico do git). O link antigo era da outra conta e não pôde ser atualizado; a v2 foi publicada num link novo (tabela acima).
 - **Próximo passo:** etapa 1 do [ROTEIRO.md](ROTEIRO.md). O Tales avalia o protótipo e escolhe os ajustes de visual; depois vem a fábrica (`scripts/flashcards/`), com uma amostra de cerca de 30 flashcards para aprovação.
 
 ## Regras que valem para todo o projeto

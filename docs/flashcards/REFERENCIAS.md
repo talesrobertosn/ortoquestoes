@@ -34,10 +34,24 @@ As imagens **não ficam no repositório** (são de outros jogos, com direitos); 
    - vaga-lumes no Campo.
 10. **Gemas nos cantos do flashcard:** dano (dificuldade) no canto de cima, à esquerda, e raridade no canto de cima, à direita.
 
+## Segunda leva (12/10/2026, noite)
+
+O Tales mandou mais capturas e disse: "quanto mais efeitos visuais melhor".
+
+| Referência | O que chama a atenção | O que entrou |
+|---|---|---|
+| Legends of Runeterra (duas capturas) | linha central com joias; magia azul ligando cartas; **corte dourado em arco** varrendo a fileira inimiga, com fagulhas | corte dourado no acerto, fagulhas maiores, onda de choque |
+| Faeria | tabuleiro em hexágonos sobre um cenário rico; mão em leque **saindo da borda de baixo**; carta ampliada ao lado; botão redondo "fim de turno" | a mão já sai da borda, como lá; carta ampliada segue nas ideias guardadas |
+| Artifact | carta no centro com brilho; **número de dano grande e vermelho** | número grande "CRÍTICO" quando o dano chega a 30 |
+| O Senhor dos Anéis (card game) | personagens em medalhões redondos com números; régua de pontos nas bordas | os retratos redondos já seguem esse padrão |
+
+Também entraram efeitos que não vêm de uma captura só: rastro de cometa na esfera, garras no erro, rastro branco na barra de vida, aura da raridade, brilho na alternativa levantada, raios e confete na vitória.
+
 ## Ideias guardadas para depois
 
 - **Casas gravadas na mesa** (como na mesa de madeira): os flashcards do andar ficam expostos como troféus, e os errados do lado do adversário.
 - **Carta ampliada ao segurar** (como na referência roxa): segurar um flashcard da mão mostra uma versão grande ao lado.
 - **Cristais de energia** (Hearthstone, Runeterra): energia ganha nos acertos para gastar em poderes, em vez de poderes só por andar.
 - **Relógio de partida** (referência roxa): variante "contra o relógio" no Desafio do dia.
+- **Tabuleiro em hexágonos** (Faeria): mapa do Torneio em casas hexagonais, uma por tema.
 - **Retrato do herói personalizável:** emblemas da conta viram molduras do retrato.

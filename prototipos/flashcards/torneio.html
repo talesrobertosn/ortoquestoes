@@ -3,22 +3,38 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Alegreya:ital,wght@0,400;0,600;0,800;1,400&family=Pixelify+Sans:wght@500;700&display=swap">
 <style>
-/* Mesa de jogo de cartas: cenário em pixel art ao fundo (canvas), a mesa com o baralho à esquerda,
-   a carta no centro e o descarte à direita; HUD em cima, controles embaixo. Visual único, escuro. */
+/* Versão 2 (12/10/2026), inspirada nas referências do Tales (docs/flashcards/REFERENCIAS.md):
+   cenário em pixel art ao fundo (canvas); por cima, um tabuleiro emoldurado com linha central.
+   Batalha: adversário em cima, flashcard da pergunta no centro, você embaixo com a vida e os
+   poderes, alternativas na mão em leque e botão redondo à direita. Visual único, escuro. */
 :root {
-  --noite: #0d0b10;          /* fundo da página */
-  --madeira: #2a1a12;        /* mesa */
-  --pergaminho: #f1e2bf;     /* face da carta */
-  --tinta: #2b1d14;          /* texto na carta */
-  --ouro: #e3b04b;           /* lendária, destaques */
-  --brasa: #d9542c;          /* dano, erro */
-  --musgo: #5fae6a;          /* acerto, cura */
-  --nevoa: #c9bda6;          /* texto secundário na mesa */
+  --noite: #0d0b10;
+  --pergaminho: #f1e2bf;
+  --tinta: #2b1d14;
+  --ouro: #e3b04b;
+  --ouro-escuro: #8a6420;
+  --brasa: #d9542c;
+  --musgo: #5fae6a;
+  --nevoa: #c9bda6;
   --raro: #4f8fd6; --epico: #9a64d6; --comum: #8d8273;
   --f-titulo: "Cinzel", "Trajan Pro", Georgia, serif;
   --f-texto: "Alegreya", Georgia, "Times New Roman", serif;
   --f-pixel: "Pixelify Sans", ui-monospace, "Courier New", monospace;
+  /* tampo do tabuleiro; muda com o cenário */
+  --tampo: repeating-linear-gradient(0deg, rgba(0,0,0,.38) 0 2px, transparent 2px 58px),
+           repeating-linear-gradient(90deg, rgba(255,235,200,.035) 0 1px, transparent 1px 7px),
+           linear-gradient(90deg, #4e2f1d, #62402a 28%, #553521 55%, #66432b 80%, #4e2f1d);
   color-scheme: dark;
+}
+body[data-cena="masmorra"] {
+  --tampo: repeating-linear-gradient(0deg, rgba(0,0,0,.45) 0 2px, transparent 2px 64px),
+           repeating-linear-gradient(90deg, rgba(0,0,0,.4) 0 2px, transparent 2px 104px),
+           radial-gradient(120% 90% at 50% 50%, #5d616b, #3d4048);
+}
+body[data-cena="campo"] {
+  --tampo: radial-gradient(4px 3px at 20% 30%, rgba(255,255,255,.08), transparent),
+           repeating-linear-gradient(115deg, rgba(0,0,0,.08) 0 3px, transparent 3px 11px),
+           radial-gradient(110% 90% at 50% 50%, #5c8a3e, #3f6a2c 70%, #31531f);
 }
 * { box-sizing: border-box; }
 html, body { height: 100%; }
@@ -26,7 +42,7 @@ body { margin: 0; background: var(--noite); color: var(--pergaminho); font-famil
 button { font: inherit; color: inherit; cursor: pointer; }
 button:focus-visible, [tabindex]:focus-visible { outline: 3px solid var(--ouro); outline-offset: 3px; }
 
-.app { position: relative; height: 100%; display: grid; grid-template-rows: auto auto 1fr auto; padding-inline: 16px; padding-block: 10px 12px; gap: 8px; max-width: 1100px; margin: 0 auto; }
+.app { position: relative; height: 100%; display: grid; grid-template-rows: auto minmax(0, 1fr) auto; grid-template-columns: minmax(0, 1fr); padding-inline: 16px; padding-block: 10px 12px; gap: 8px; max-width: 1100px; margin: 0 auto; }
 #cena { position: fixed; inset: 0; width: 100%; height: 100%; image-rendering: pixelated; z-index: 0; }
 .app > * { position: relative; z-index: 1; }
 
@@ -34,82 +50,111 @@ button:focus-visible, [tabindex]:focus-visible { outline: 3px solid var(--ouro);
 .topo { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
 .marca { font: 800 clamp(17px, 4.4vw, 24px)/1 var(--f-titulo); letter-spacing: .04em; color: var(--ouro); text-shadow: 0 2px 0 #000, 0 0 18px rgba(227,176,75,.35); margin-right: auto; }
 .marca small { display: block; font: 500 11px var(--f-pixel); letter-spacing: .14em; color: var(--nevoa); text-shadow: none; margin-top: 4px; text-transform: uppercase; }
-.abas { display: flex; background: rgba(0,0,0,.45); border: 2px solid #4a3424; border-radius: 10px; padding: 3px; }
+.abas { display: flex; background: rgba(0,0,0,.5); border: 2px solid #4a3424; border-radius: 10px; padding: 3px; }
 .abas button { border: 0; background: none; padding: 7px 12px; border-radius: 7px; font: 700 13px var(--f-pixel); letter-spacing: .06em; color: var(--nevoa); }
 .abas button[aria-pressed="true"] { background: linear-gradient(#6b4a2c, #4a3120); color: #fff3d6; box-shadow: inset 0 -2px 0 rgba(0,0,0,.4); }
 .opcoes { display: flex; gap: 6px; flex-wrap: wrap; }
-.chip { border: 2px solid #4a3424; background: rgba(0,0,0,.45); border-radius: 999px; padding: 5px 10px; font: 500 12px var(--f-pixel); color: var(--nevoa); }
+.chip { border: 2px solid #4a3424; background: rgba(0,0,0,.5); border-radius: 999px; padding: 5px 10px; font: 500 12px var(--f-pixel); color: var(--nevoa); }
 .chip[aria-pressed="true"] { border-color: var(--ouro); color: #fff3d6; }
 
-/* HUD */
-.hud { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; min-height: 34px; font-family: var(--f-pixel); }
-.vida { display: flex; align-items: center; gap: 8px; flex: 1 1 220px; min-width: 0; }
-.coracao { width: 22px; height: 20px; flex: none; image-rendering: pixelated; }
-.barra { position: relative; flex: 1; height: 16px; background: #1b1215; border: 2px solid #000; box-shadow: 0 0 0 2px #5a3b2a; border-radius: 3px; overflow: hidden; }
+/* Tabuleiro emoldurado, com cantos de ouro e linha central */
+.tabuleiro { position: relative; display: grid; grid-template-rows: auto auto minmax(0, 1fr); gap: 6px; padding: 10px 12px 12px; border-radius: 18px; background: var(--tampo);
+  box-shadow: 0 0 0 2px #000, 0 0 0 5px #b8913f, 0 0 0 6px #fff0b8, 0 0 0 8px #6b4a1c, 0 0 0 10px #000, 0 22px 50px rgba(0,0,0,.65), inset 0 0 50px rgba(0,0,0,.55); margin: 10px; min-height: 0; }
+.canto { position: absolute; width: 18px; height: 18px; transform: rotate(45deg); background: linear-gradient(135deg, #fff0b8, #d4a64a 45%, #7a5520); border: 2px solid #000; z-index: 2; }
+.canto.c1 { left: -19px; top: -19px; } .canto.c2 { right: -19px; top: -19px; } .canto.c3 { left: -19px; bottom: -19px; } .canto.c4 { right: -19px; bottom: -19px; }
+
+/* Adversário (Batalha) */
+.inimigo { grid-row: 1; display: flex; align-items: center; gap: 10px; min-width: 0; }
+.retrato { position: relative; flex: none; width: 58px; height: 58px; border-radius: 50%; display: grid; place-items: center; overflow: hidden;
+  background: radial-gradient(circle at 50% 40%, #5a3a52, #24131f 70%); box-shadow: 0 0 0 2px #000, 0 0 0 5px #c9a14a, 0 0 0 7px #000, 0 6px 14px rgba(0,0,0,.6); }
+.retrato canvas { width: 70%; height: 70%; image-rendering: pixelated; }
+.ret-heroi { background: radial-gradient(circle at 50% 40%, #3e5a86, #142035 70%); }
+.retrato.chefe { box-shadow: 0 0 0 2px #000, 0 0 0 5px #ffd76a, 0 0 0 7px #000, 0 0 22px rgba(255,200,80,.6); }
+.placa { flex: 1; min-width: 0; display: grid; gap: 4px; }
+.placa strong { font: 800 clamp(12px, 3.4vw, 15px)/1.1 var(--f-titulo); letter-spacing: .04em; color: #fff3d6; text-shadow: 0 2px 0 #000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.placa strong em { font: 700 10px var(--f-pixel); font-style: normal; letter-spacing: .1em; color: #1b130b; background: var(--ouro); border-radius: 4px; padding: 2px 5px; margin-left: 6px; vertical-align: 2px; }
+.barra { position: relative; height: 15px; background: #1b1215; border: 2px solid #000; box-shadow: 0 0 0 2px #5a3b2a; border-radius: 3px; overflow: hidden; }
 .barra i { position: absolute; inset: 0 auto 0 0; width: 100%; background: linear-gradient(#ef6b4d, #b8321c); transition: width .45s steps(12); }
-.barra b { position: absolute; inset: 0; display: grid; place-items: center; font: 700 11px var(--f-pixel); color: #fff; text-shadow: 0 1px 0 #000; }
-.selo-hud { font: 700 12px var(--f-pixel); padding: 4px 9px; border-radius: 6px; background: rgba(0,0,0,.5); border: 2px solid #4a3424; color: #fff3d6; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.barra.inim i { background: linear-gradient(#b48cf0, #6a3fb0); }
+.barra b { position: absolute; inset: 0; display: grid; place-items: center; font: 700 11px var(--f-pixel); color: #fff; text-shadow: 0 1px 0 #000; font-variant-numeric: tabular-nums; }
+.placar { display: grid; gap: 4px; justify-items: end; }
+.selo-hud { font: 700 12px var(--f-pixel); padding: 3px 8px; border-radius: 6px; background: rgba(0,0,0,.55); border: 2px solid #4a3424; color: #fff3d6; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .selo-hud.ouro { border-color: var(--ouro); color: var(--ouro); }
-.poderes { display: flex; gap: 6px; flex-wrap: wrap; }
-.poder-ativo { font: 700 11px var(--f-pixel); padding: 3px 8px; border-radius: 6px; background: #22324a; border: 2px solid var(--raro); color: #dbe9ff; }
-.contador { display: flex; align-items: center; gap: 8px; font: 700 13px var(--f-pixel); color: var(--nevoa); }
+
+/* HUD do Estudo */
+.hud { grid-row: 2; display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap; min-height: 26px; font-family: var(--f-pixel); }
+.contador { display: flex; align-items: center; gap: 8px; font: 700 13px var(--f-pixel); color: #fff3d6; background: rgba(0,0,0,.5); border-radius: 8px; padding: 4px 10px; }
 .contador .pips { display: flex; gap: 3px; }
 .contador .pips i { width: 9px; height: 13px; background: #3a2a20; border: 1px solid #000; }
 .contador .pips i.usado { background: var(--ouro); }
 
-/* Mesa */
-.mesa { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; justify-items: center; gap: 10px; min-height: 0; }
-.pilha { position: relative; width: clamp(54px, 13vw, 110px); aspect-ratio: 63/88; justify-self: end; }
+/* Mesa: baralho, flashcard, descarte; a linha central passa por trás */
+.mesa { grid-row: 3; position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 3fr) minmax(0, 1fr); align-items: center; justify-items: center; gap: 10px; min-height: 0; }
+.mesa::before { content: ""; position: absolute; left: -12px; right: -12px; top: 50%; height: 4px; transform: translateY(-50%); background: linear-gradient(90deg, transparent, #000 4%, #c9a14a 8%, #fff0b8 50%, #c9a14a 92%, #000 96%, transparent); box-shadow: 0 0 0 1px rgba(0,0,0,.6); opacity: .85; }
+.mesa::after { content: ""; position: absolute; left: 50%; top: 50%; width: 16px; height: 16px; transform: translate(-50%, -50%) rotate(45deg); background: radial-gradient(circle at 35% 35%, #bfe4ff, #3a7fd0 60%, #163a6a); border: 2px solid #000; box-shadow: 0 0 0 2px #c9a14a, 0 0 14px #5fb0ff; }
+.slot-palco { position: relative; z-index: 1; width: 100%; height: 100%; min-height: 0; container-type: size; display: grid; place-items: center; }
+.pilha { position: relative; z-index: 1; width: clamp(54px, 11vw, 100px); aspect-ratio: 63/88; justify-self: end; }
 .pilha.descarte { justify-self: start; }
 .pilha .costas { position: absolute; inset: 0; border-radius: 10px; }
 .pilha .costas:nth-child(2) { transform: translate(3px, -3px); }
 .pilha .costas:nth-child(3) { transform: translate(6px, -6px); }
-.pilha span { position: absolute; left: 0; right: 0; bottom: -22px; text-align: center; font: 700 11px var(--f-pixel); color: var(--nevoa); }
+.pilha span { position: absolute; left: 50%; bottom: -12px; transform: translateX(-50%); font: 700 12px var(--f-pixel); color: #fff3d6; background: #1d140e; border: 2px solid #c9a14a; border-radius: 999px; padding: 1px 8px; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .costas { background:
     radial-gradient(circle at 50% 50%, #e3b04b 0 12%, transparent 13%),
     radial-gradient(circle at 50% 50%, #7a2a1c 0 19%, transparent 20%),
     repeating-linear-gradient(45deg, #3b2216 0 6px, #4a2c1c 6px 12px);
   border: 3px solid #1a0f0a; box-shadow: inset 0 0 0 3px #a57b3a, 0 6px 14px rgba(0,0,0,.5); }
-.pilha.descarte .costas { opacity: .55; filter: grayscale(.4); }
+.pilha.descarte .costas { opacity: .6; filter: grayscale(.4); }
 
-.palco { position: relative; width: min(330px, 74vw, 46vh); aspect-ratio: 63/88; perspective: 1400px; touch-action: none; }
+.palco { position: relative; width: min(340px, 100cqw, calc(100cqh * 63 / 88)); aspect-ratio: 63/88; perspective: 1400px; touch-action: none; transition: width .35s ease; }
+body.batalha .palco { touch-action: pan-y; }
 .carta { position: absolute; inset: 0; transform-style: preserve-3d; transition: transform .6s cubic-bezier(.2,.75,.25,1.15); cursor: pointer; }
 .carta.virada { transform: rotateY(180deg); }
 .carta.entra { animation: comprar .55s cubic-bezier(.2,.8,.25,1.1) both; }
+.carta.lancada { animation: lancar .5s cubic-bezier(.2,.8,.25,1.1) both; }
 @keyframes comprar { from { transform: translate(-90%, 8%) rotate(-14deg) scale(.55); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes lancar { from { transform: translateY(-75%) rotate(10deg) scale(.45); opacity: 0; } to { transform: none; opacity: 1; } }
 .carta.virada.sai-direita { transition: transform .38s ease-in, opacity .38s; transform: rotateY(180deg) translate(-130%, -6%) rotate(-18deg); opacity: 0; }
 .carta.virada.sai-esquerda { transition: transform .38s ease-in, opacity .38s; transform: rotateY(180deg) translate(130%, -6%) rotate(18deg); opacity: 0; }
 .carta.virada.sai-cima { transition: transform .38s ease-in, opacity .38s; transform: rotateY(180deg) translateY(-120%) rotate(-4deg); opacity: 0; }
-.palco.treme { animation: tremer .35s linear; }
-@keyframes tremer { 20% { transform: translateX(-8px); } 40% { transform: translateX(7px); } 60% { transform: translateX(-5px); } 80% { transform: translateX(3px); } }
 
-.face { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; border-radius: 14px; padding: 9px; display: flex; }
+.face { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; border-radius: 14px; padding: 8px; display: flex;
+  background: linear-gradient(145deg, color-mix(in srgb, var(--cor) 92%, #fff), var(--cor) 40%, color-mix(in srgb, var(--cor) 55%, #000));
+  box-shadow: 0 0 0 2px #000, 0 14px 30px rgba(0,0,0,.6), 0 0 26px color-mix(in srgb, var(--cor) 45%, transparent); }
 .face.verso { transform: rotateY(180deg); }
-.moldura { flex: 1; display: flex; flex-direction: column; border-radius: 9px; overflow: hidden; color: var(--tinta);
-  background:
-    radial-gradient(120% 80% at 50% 0%, rgba(255,255,255,.35), transparent 60%),
-    radial-gradient(90% 60% at 80% 100%, rgba(120,80,30,.18), transparent 70%),
-    linear-gradient(#f4e7c6, #e6d2a4);
+.moldura { flex: 1; min-width: 0; display: flex; flex-direction: column; border-radius: 9px; overflow: hidden; color: var(--tinta);
+  background: radial-gradient(120% 80% at 50% 0%, rgba(255,255,255,.35), transparent 60%), radial-gradient(90% 60% at 80% 100%, rgba(120,80,30,.18), transparent 70%), linear-gradient(#f4e7c6, #e6d2a4);
   box-shadow: inset 0 0 0 2px rgba(60,35,15,.55), inset 0 0 18px rgba(90,55,20,.35); }
-.face { background: linear-gradient(145deg, color-mix(in srgb, var(--cor) 92%, #fff), var(--cor) 40%, color-mix(in srgb, var(--cor) 55%, #000)); box-shadow: 0 0 0 2px #000, 0 14px 30px rgba(0,0,0,.6), 0 0 26px color-mix(in srgb, var(--cor) 45%, transparent); }
 .r-lendaria { --cor: var(--ouro); } .r-epica { --cor: var(--epico); } .r-rara { --cor: var(--raro); } .r-comum { --cor: var(--comum); }
 .r-lendaria .face::after { content: ""; position: absolute; inset: 0; border-radius: 14px; pointer-events: none; background: linear-gradient(115deg, transparent 30%, rgba(255,255,255,.45) 45%, transparent 60%); background-size: 260% 100%; animation: brilho 3.2s ease-in-out infinite; mix-blend-mode: overlay; }
 @keyframes brilho { from { background-position: 130% 0; } to { background-position: -130% 0; } }
+/* Gema de dano no canto (Batalha): quanto custa errar */
+.gema-dano { display: none; position: absolute; left: -9px; top: -9px; z-index: 3; width: 36px; height: 36px; border-radius: 50%; place-items: center; font: 700 14px var(--f-pixel); color: #fff; text-shadow: 0 1px 0 #000;
+  background: radial-gradient(circle at 35% 30%, #ff9a7a, #c2361d 55%, #6e140a); box-shadow: 0 0 0 2px #000, 0 0 0 4px #e3b04b, 0 0 0 6px #000, 0 4px 8px rgba(0,0,0,.5); }
+body.batalha .gema-dano { display: grid; }
 
-.cabeca { display: flex; align-items: center; gap: 8px; padding: 7px 9px 6px; background: linear-gradient(#3b2416, #2a190f); color: #f6e6c2; }
-.brasao { width: 26px; height: 30px; flex: none; image-rendering: pixelated; }
-.cabeca strong { font: 800 clamp(10px, 2.9vw, 13px)/1.1 var(--f-titulo); letter-spacing: .05em; text-transform: uppercase; min-width: 0; }
+.cabeca { display: flex; align-items: center; gap: 7px; padding: 6px 8px 5px; background: linear-gradient(#3b2416, #2a190f); color: #f6e6c2; }
+.brasao { width: 22px; height: 26px; flex: none; image-rendering: pixelated; }
+body.batalha .cabeca { padding-left: 26px; }
+.cabeca strong { font: 800 clamp(9.5px, 2.6vw, 12.5px)/1.1 var(--f-titulo); letter-spacing: .05em; text-transform: uppercase; min-width: 0; display: block; }
 .cabeca em { display: block; font: 500 10px var(--f-pixel); font-style: normal; letter-spacing: .08em; color: #d8bf8a; margin-top: 2px; }
 .raridade { margin-left: auto; font: 700 9px var(--f-pixel); letter-spacing: .1em; padding: 3px 6px; border-radius: 4px; color: #1b130b; background: var(--cor); white-space: nowrap; }
-.corpo { flex: 1; display: flex; flex-direction: column; gap: 8px; padding: 10px 12px; min-height: 0; overflow: hidden; }
+/* Flashcard estreito (celular na Batalha): gema menor e sem brasão, para o título caber */
+@container (max-height: 340px) {
+  body.batalha .gema-dano { width: 30px; height: 30px; left: -12px; top: -12px; font-size: 12px; }
+  body.batalha .cabeca { padding-left: 16px; }
+  body.batalha .cabeca .brasao { display: none; }
+}
+.corpo { flex: 1; display: flex; flex-direction: column; gap: 7px; padding: 9px 11px; min-height: 0; overflow: hidden; }
+.verso .corpo { overflow-y: auto; scrollbar-width: thin; }
 .tipo { font: 700 10px var(--f-pixel); letter-spacing: .12em; text-transform: uppercase; color: #7a5a35; }
-.pergunta { font: 600 clamp(14px, 3.9vw, 18px)/1.3 var(--f-texto); text-wrap: balance; }
+.pergunta { font: 600 clamp(13px, 3.7vw, 18px)/1.3 var(--f-texto); text-wrap: balance; }
 .lacuna { display: inline-block; min-width: 3.2em; border-bottom: 2px dashed #7a5a35; color: transparent; }
-.janela { flex: 1; min-height: 0; border-radius: 6px; background: #1b1410 center/contain no-repeat; box-shadow: inset 0 0 0 2px #6b4a2c; }
-.resposta { font: 800 clamp(16px, 4.5vw, 21px)/1.2 var(--f-texto); color: #3a1f0d; text-wrap: balance; }
-.explica { font: 400 clamp(12.5px, 3.4vw, 15px)/1.38 var(--f-texto); }
+.janela { flex: 1; min-height: 40px; border-radius: 6px; background: #1b1410 center/contain no-repeat; box-shadow: inset 0 0 0 2px #6b4a2c; }
+.resposta { font: 800 clamp(15px, 4.3vw, 21px)/1.2 var(--f-texto); color: #3a1f0d; text-wrap: balance; }
+.explica { font: 400 clamp(12.5px, 3.3vw, 15px)/1.38 var(--f-texto); }
 .explica b { color: #7a2a1c; }
-.pe { display: flex; align-items: center; justify-content: space-between; gap: 6px; padding: 6px 10px 8px; border-top: 1px solid rgba(90,55,20,.3); font: 500 10px var(--f-pixel); color: #6d5233; }
+.pe { display: flex; align-items: center; justify-content: space-between; gap: 6px; padding: 5px 10px 7px; border-top: 1px solid rgba(90,55,20,.3); font: 500 10px var(--f-pixel); color: #6d5233; }
 .estrelas { letter-spacing: 2px; color: var(--cor); text-shadow: 0 1px 0 #000; }
 .origem { display: flex; gap: 6px; flex-wrap: wrap; }
 .origem button { border: 2px solid #6b4a2c; background: #2f1d12; color: #f6e6c2; border-radius: 6px; padding: 5px 8px; font: 700 11px var(--f-pixel); }
@@ -120,8 +165,8 @@ button:focus-visible, [tabindex]:focus-visible { outline: 3px solid var(--ouro);
   background: radial-gradient(circle at 35% 30%, #d4533b, #8f1f12 60%, #5c120a); box-shadow: 0 6px 14px rgba(0,0,0,.55), inset 0 -4px 8px rgba(0,0,0,.4); font: 800 22px var(--f-titulo); color: #f7cfa0; }
 
 /* Controles */
-.controles { display: grid; gap: 8px; justify-items: center; padding-bottom: env(safe-area-inset-bottom, 0px); }
-.dica { font: 500 12px var(--f-pixel); color: var(--nevoa); text-align: center; min-height: 15px; }
+.controles { display: grid; gap: 6px; justify-items: center; padding-bottom: env(safe-area-inset-bottom, 0px); }
+.dica { font: 500 12px var(--f-pixel); color: var(--nevoa); text-align: center; min-height: 15px; text-shadow: 0 1px 0 #000; }
 .botoes { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; width: 100%; max-width: 560px; }
 .btn { flex: 1 1 0; min-width: 0; border: 3px solid #000; border-radius: 10px; padding: 11px 8px 9px; font: 700 14px var(--f-pixel); letter-spacing: .04em; color: #fff7e6; box-shadow: inset 0 -4px 0 rgba(0,0,0,.35), 0 3px 0 #000; transition: transform .08s; text-shadow: 0 1px 0 #000; }
 .btn:active { transform: translateY(2px); box-shadow: inset 0 -2px 0 rgba(0,0,0,.35), 0 1px 0 #000; }
@@ -130,27 +175,124 @@ button:focus-visible, [tabindex]:focus-visible { outline: 3px solid var(--ouro);
 .b-hesitei { background: linear-gradient(#b98a2c, #7d5a17); }
 .b-sabia { background: linear-gradient(#4d9a5a, #2c6735); }
 .b-virar { background: linear-gradient(#6b4a2c, #432c1b); }
-.b-opcao { background: linear-gradient(#3b4a6b, #253049); text-align: left; font: 600 14px/1.25 var(--f-texto); text-shadow: none; padding: 10px 12px; flex: 1 1 calc(50% - 8px); }
-.b-opcao.certa { background: linear-gradient(#4d9a5a, #2c6735); }
-.b-opcao.errada { background: linear-gradient(#c8492b, #8f2d18); }
-.b-opcao.riscada { opacity: .35; text-decoration: line-through; }
-.b-opcao:disabled { cursor: default; }
+.btn-largo { width: 100%; }
 
-/* Números flutuantes, flash e toasts */
-.flutua { position: absolute; left: 50%; top: 30%; transform: translateX(-50%); font: 700 34px var(--f-pixel); pointer-events: none; text-shadow: 0 3px 0 #000; animation: subir 1s ease-out forwards; z-index: 5; }
-@keyframes subir { to { transform: translate(-50%, -70px); opacity: 0; } }
-.flash { position: fixed; inset: 0; pointer-events: none; z-index: 4; background: radial-gradient(transparent 40%, rgba(200,40,20,.55)); animation: apagar .5s forwards; }
+/* Barra do herói (Batalha): retrato, vida, encaixes de poder, baralho e botão redondo */
+.barra-heroi { display: flex; align-items: center; gap: 10px; width: 100%; max-width: 640px; }
+.heroi { position: relative; flex: none; }
+.gema-vida { position: absolute; right: -14px; bottom: -8px; width: 40px; height: 36px; display: grid; place-items: center; }
+.gema-vida canvas { position: absolute; inset: 0; width: 100%; height: 100%; image-rendering: pixelated; filter: drop-shadow(0 2px 0 #000); }
+.gema-vida b { position: relative; font: 700 13px var(--f-pixel); color: #fff; text-shadow: 0 1px 0 #000, 0 0 3px #000; margin-top: -3px; font-variant-numeric: tabular-nums; }
+.gema-vida.baixa { animation: pulsar .8s ease-in-out infinite; }
+@keyframes pulsar { 50% { transform: scale(1.15); } }
+.encaixes { display: flex; gap: 6px; margin-left: 14px; }
+.encaixe { position: relative; width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; background: radial-gradient(circle at 50% 40%, #2a2230, #0f0b12); box-shadow: 0 0 0 2px #000, 0 0 0 4px #7a5a2a, inset 0 2px 6px rgba(0,0,0,.8); }
+.encaixe canvas { width: 22px; height: 22px; image-rendering: pixelated; }
+.encaixe.ativo { box-shadow: 0 0 0 2px #000, 0 0 0 4px #c9a14a, 0 0 12px rgba(150,120,255,.7), inset 0 2px 6px rgba(0,0,0,.6); }
+.encaixe sup { position: absolute; right: -4px; top: -6px; font: 700 10px var(--f-pixel); background: #1d140e; border: 2px solid #c9a14a; border-radius: 999px; padding: 0 4px; color: #fff3d6; }
+.baralho-mini { position: relative; margin-left: auto; width: 34px; height: 46px; }
+.baralho-mini .costas { position: absolute; inset: 0; border-radius: 6px; border-width: 2px; }
+.baralho-mini b { position: absolute; left: 50%; bottom: -8px; transform: translateX(-50%); font: 700 11px var(--f-pixel); background: #1d140e; border: 2px solid #c9a14a; border-radius: 999px; padding: 0 6px; color: #fff3d6; font-variant-numeric: tabular-nums; }
+.redondo { flex: none; width: 76px; height: 76px; border-radius: 50%; border: 3px solid #000; font: 700 14px var(--f-pixel); letter-spacing: .04em; color: #fff7e6; text-shadow: 0 2px 0 #000;
+  background: radial-gradient(circle at 40% 32%, #8a7a66, #4a3e33 60%, #2a221c); box-shadow: 0 0 0 3px #c9a14a, 0 0 0 5px #000, 0 6px 14px rgba(0,0,0,.6), inset 0 -5px 0 rgba(0,0,0,.35); transition: transform .1s, filter .2s; }
+.redondo:disabled { filter: grayscale(.8) brightness(.7); cursor: default; }
+.redondo.pronto { background: radial-gradient(circle at 40% 32%, #8ff0a6, #2f9a4c 58%, #155a28); animation: chamar 1.4s ease-in-out infinite; }
+.redondo.seguir { background: radial-gradient(circle at 40% 32%, #ffe7a0, #d39a2c 58%, #7a4f10); animation: chamar 1.4s ease-in-out infinite; }
+.redondo:active:not(:disabled) { transform: scale(.94); }
+@keyframes chamar { 50% { box-shadow: 0 0 0 3px #c9a14a, 0 0 0 5px #000, 0 0 26px 6px rgba(255,230,140,.55), inset 0 -5px 0 rgba(0,0,0,.35); } }
+
+/* Mão em leque: as alternativas */
+.mao { position: relative; display: flex; justify-content: center; align-items: flex-end; width: 100%; height: calc(clamp(84px, 21vw, 124px) * 1.4 + 6px); transition: opacity .3s, transform .35s; }
+.mao.recolhe { opacity: 0; transform: translateY(40%); pointer-events: none; }
+.slot-mao { position: relative; margin-inline: -5px; transform: rotate(var(--r)) translateY(var(--y)); transform-origin: 50% 130%; transition: transform .2s; }
+.carta-mao { position: relative; display: flex; width: clamp(84px, 21vw, 124px); aspect-ratio: 5/7; padding: 5px; border: 0; border-radius: 10px; text-align: center;
+  background: linear-gradient(145deg, #9db2d6, #3b4f78 45%, #1f2b45); box-shadow: 0 0 0 2px #000, 0 8px 16px rgba(0,0,0,.55);
+  transition: transform .22s cubic-bezier(.2,.8,.25,1.2), box-shadow .2s, filter .2s; animation: dar .42s cubic-bezier(.2,.8,.25,1.1) both; animation-delay: calc(var(--i) * 70ms); }
+@keyframes dar { from { transform: translate(140px, 60px) rotate(25deg) scale(.5); opacity: 0; } }
+.carta-mao > span { flex: 1; display: grid; place-items: center; border-radius: 6px; padding: 14px 5px 6px; background: linear-gradient(#f4e7c6, #e3cd9c); color: var(--tinta); box-shadow: inset 0 0 0 2px rgba(60,35,15,.45);
+  font: 600 clamp(11px, 2.8vw, 14px)/1.18 var(--f-texto); overflow: hidden; overflow-wrap: anywhere; hyphens: auto; }
+.carta-mao i { position: absolute; left: -6px; top: -6px; width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center; font: 700 12px var(--f-pixel); font-style: normal; color: #fff; text-shadow: 0 1px 0 #000;
+  background: radial-gradient(circle at 35% 30%, #a9d4ff, #2f6fc0 60%, #143563); box-shadow: 0 0 0 2px #000, 0 0 0 3px #c9a14a; }
+@media (hover: hover) { .slot-mao:hover .carta-mao:not(:disabled) { transform: translateY(-10px); } }
+.slot-mao.sel { z-index: 5; }
+.slot-mao.sel .carta-mao { transform: translateY(-34%) scale(1.25); box-shadow: 0 0 0 2px #000, 0 0 0 4px #7ff0a0, 0 0 24px rgba(127,240,160,.7), 0 14px 26px rgba(0,0,0,.6); }
+.carta-mao:disabled { cursor: default; }
+.carta-mao.riscada { filter: grayscale(1) brightness(.55); }
+.carta-mao.riscada > span { text-decoration: line-through; }
+.carta-mao.certa { box-shadow: 0 0 0 2px #000, 0 0 0 4px #7ff0a0, 0 0 22px rgba(127,240,160,.8); }
+.carta-mao.errada { box-shadow: 0 0 0 2px #000, 0 0 0 4px #ff6a4a, 0 0 22px rgba(255,90,60,.8); }
+
+/* Efeitos: números, esfera de golpe, fagulhas, flash, toasts */
+.flutua { position: fixed; z-index: 30; transform: translate(-50%, -50%); font: 700 30px var(--f-pixel); pointer-events: none; text-shadow: 0 3px 0 #000, 0 0 8px #000; animation: subir 1s ease-out forwards; white-space: nowrap; }
+@keyframes subir { to { transform: translate(-50%, calc(-50% - 60px)); opacity: 0; } }
+.orbe { position: fixed; left: 0; top: 0; z-index: 25; width: 26px; height: 26px; margin: -13px 0 0 -13px; border-radius: 50%; pointer-events: none; }
+.orbe.bom { background: radial-gradient(circle, #fff, #ffe08a 35%, rgba(255,190,60,.0) 70%); box-shadow: 0 0 24px 10px rgba(255,210,100,.75); }
+.orbe.mau { background: radial-gradient(circle, #fff, #ff8a6a 35%, rgba(255,70,40,0) 70%); box-shadow: 0 0 24px 10px rgba(255,80,50,.75); }
+.fagulha { position: fixed; left: 0; top: 0; z-index: 26; width: 6px; height: 6px; pointer-events: none; }
+.retrato.atingido { animation: atingido .4s linear; }
+@keyframes atingido { 0% { filter: brightness(3); } 25% { transform: translateX(-6px); } 50% { transform: translateX(5px); filter: brightness(1.6) saturate(.4); } 75% { transform: translateX(-3px); } 100% { filter: none; } }
+.retrato.ataca { animation: ataca .35s ease-in-out; }
+@keyframes ataca { 50% { transform: translateY(14px) scale(1.18); } }
+.retrato.cai { animation: cai .6s ease-in forwards; }
+@keyframes cai { 30% { transform: scale(1.2); filter: brightness(2.5); } 100% { transform: scale(0) rotate(30deg); opacity: 0; } }
+.retrato.chega { animation: chega .5s cubic-bezier(.2,.8,.25,1.3) both; }
+@keyframes chega { from { transform: translateY(-40px) scale(.3); opacity: 0; } }
+.flash { position: fixed; inset: 0; pointer-events: none; z-index: 24; background: radial-gradient(transparent 40%, rgba(200,40,20,.55)); animation: apagar .5s forwards; }
 .flash.cura { background: radial-gradient(transparent 40%, rgba(80,190,100,.45)); }
 @keyframes apagar { to { opacity: 0; } }
-.toast { position: fixed; left: 50%; bottom: calc(20px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); max-width: min(92vw, 460px); background: #1d140e; border: 2px solid var(--ouro); border-radius: 10px; padding: 10px 14px; font: 500 13px/1.35 var(--f-pixel); color: #fff3d6; z-index: 20; box-shadow: 0 8px 24px rgba(0,0,0,.6); }
+.tabuleiro.treme { animation: tremer .35s linear; }
+@keyframes tremer { 20% { transform: translateX(-7px); } 40% { transform: translateX(6px); } 60% { transform: translateX(-4px); } 80% { transform: translateX(2px); } }
+.toast { position: fixed; left: 50%; bottom: calc(20px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); max-width: min(92vw, 460px); background: #1d140e; border: 2px solid var(--ouro); border-radius: 10px; padding: 10px 14px; font: 500 13px/1.35 var(--f-pixel); color: #fff3d6; z-index: 40; box-shadow: 0 8px 24px rgba(0,0,0,.6); }
+.faixa { position: fixed; left: 50%; top: 38%; z-index: 28; transform: translate(-50%, -50%); padding: 10px 28px; font: 800 clamp(20px, 6vw, 34px)/1 var(--f-titulo); color: #ffe7a0; text-shadow: 0 3px 0 #000; white-space: nowrap; pointer-events: none;
+  background: linear-gradient(90deg, transparent, rgba(60,20,10,.9) 15%, rgba(60,20,10,.9) 85%, transparent); animation: faixa 1.3s ease-out forwards; }
+@keyframes faixa { 0% { opacity: 0; transform: translate(-50%, -50%) scale(1.6); } 15% { opacity: 1; transform: translate(-50%, -50%) scale(1); } 80% { opacity: 1; } 100% { opacity: 0; } }
 
-/* Janelas (poderes, chefe, derrota) */
-.veu { position: fixed; inset: 0; z-index: 15; display: grid; place-items: center; padding: 16px; background: rgba(5,3,6,.78); backdrop-filter: blur(3px); }
+/* Efeitos extras (referências: corte dourado do Runeterra, número grande do Artifact, auras) */
+.rastro { position: fixed; left: 0; top: 0; z-index: 24; width: 16px; height: 16px; margin: -8px 0 0 -8px; border-radius: 50%; pointer-events: none; mix-blend-mode: screen; }
+.onda { position: fixed; z-index: 25; width: 20px; height: 20px; margin: -10px 0 0 -10px; border-radius: 50%; pointer-events: none; border: 3px solid var(--c, #ffe08a); box-shadow: 0 0 18px var(--c, #ffe08a), inset 0 0 12px var(--c, #ffe08a); animation: onda .55s ease-out forwards; }
+@keyframes onda { from { transform: scale(.3); opacity: 1; } to { transform: scale(7); opacity: 0; } }
+.corte { position: fixed; z-index: 27; width: 170px; height: 170px; margin: -85px 0 0 -85px; pointer-events: none; border-radius: 50%;
+  border-top: 7px solid #fff6d0; border-right: 4px solid rgba(255,200,90,.85); filter: drop-shadow(0 0 8px #ffb84a) drop-shadow(0 0 18px #ff8a2a); animation: corte .42s cubic-bezier(.2,.8,.3,1) forwards; }
+.corte.b { animation-delay: .07s; border-top-color: #ffe7a0; transform: rotate(140deg); opacity: 0; }
+@keyframes corte { 0% { transform: rotate(-70deg) scale(.6); opacity: 0; } 25% { opacity: 1; } 100% { transform: rotate(60deg) scale(1.15); opacity: 0; } }
+.garra { position: fixed; z-index: 27; width: 6px; height: 90px; margin: -45px 0 0 -3px; border-radius: 3px; pointer-events: none; background: linear-gradient(transparent, #fff 30%, #ff6a4a 70%, transparent);
+  box-shadow: 0 0 12px #ff4a2a, 0 0 24px #d9252b; animation: garra .4s ease-out forwards; }
+@keyframes garra { 0% { clip-path: inset(0 0 100% 0); opacity: 1; } 50% { clip-path: inset(0 0 0 0); opacity: 1; } 100% { clip-path: inset(100% 0 0 0); opacity: 0; } }
+.flutua.grande { font-size: 46px; animation: subir-grande 1.2s cubic-bezier(.2,.9,.3,1) forwards; }
+.flutua.grande small { display: block; font-size: 13px; letter-spacing: .14em; text-align: center; color: #fff3c0; }
+@keyframes subir-grande { 0% { transform: translate(-50%, -50%) scale(2.4); opacity: 0; } 18% { transform: translate(-50%, -50%) scale(1); opacity: 1; } 70% { opacity: 1; } 100% { transform: translate(-50%, calc(-50% - 70px)) scale(.9); opacity: 0; } }
+.raios { position: fixed; z-index: 23; width: 520px; height: 520px; margin: -260px 0 0 -260px; pointer-events: none; border-radius: 50%;
+  background: repeating-conic-gradient(rgba(255,226,140,.55) 0 6deg, transparent 6deg 22deg); -webkit-mask: radial-gradient(circle, #000 15%, transparent 68%); mask: radial-gradient(circle, #000 15%, transparent 68%);
+  animation: raios 1.6s ease-out forwards; }
+@keyframes raios { 0% { transform: scale(.2) rotate(0); opacity: 0; } 20% { opacity: 1; } 100% { transform: scale(1.3) rotate(50deg); opacity: 0; } }
+.confete { position: fixed; left: 0; top: 0; z-index: 29; width: 7px; height: 11px; pointer-events: none; }
+/* barra de vida com "rastro" branco que esvazia depois do golpe */
+.barra.inim s { position: absolute; inset: 0 auto 0 0; width: 100%; background: #fff3d6; transition: width .6s ease-in .35s; }
+.barra.inim i { z-index: 1; } .barra.inim b { z-index: 2; }
+.barra.inim.ferida i { filter: brightness(2.2); }
+/* aura girando atrás do flashcard da Batalha, na cor da raridade */
+body.batalha .palco::before { content: ""; position: absolute; inset: -14px; border-radius: 24px; z-index: -1; pointer-events: none; opacity: .55;
+  background: conic-gradient(from var(--giro, 0deg), transparent, var(--aura, #e3b04b), transparent 30%, transparent 50%, var(--aura, #e3b04b), transparent 80%);
+  filter: blur(10px); animation: aura 4s linear infinite; }
+@property --giro { syntax: "<angle>"; inherits: false; initial-value: 0deg; }
+@keyframes aura { to { --giro: 360deg; } }
+body.batalha .palco:has(.r-rara) { --aura: #5fa8ff; } body.batalha .palco:has(.r-epica) { --aura: #b07cff; } body.batalha .palco:has(.r-lendaria) { --aura: #ffcf5a; }
+body.batalha .palco:has(.r-lendaria)::before, body.batalha .palco:has(.r-epica)::before { opacity: .85; }
+/* brilho que passa pela alternativa levantada */
+.slot-mao.sel .carta-mao::after { content: ""; position: absolute; inset: 0; border-radius: 10px; pointer-events: none;
+  background: linear-gradient(115deg, transparent 35%, rgba(255,255,255,.55) 50%, transparent 65%) no-repeat; background-size: 250% 100%; animation: brilho 1.6s ease-in-out infinite; }
+@keyframes brilho { from { background-position: 130% 0; } to { background-position: -130% 0; } }
+.tabuleiro.impacto { animation: impacto .3s ease-out; }
+@keyframes impacto { 30% { transform: scale(1.012); filter: brightness(1.25); } }
+
+/* Janelas (poderes, derrota) */
+.veu { position: fixed; inset: 0; z-index: 35; display: grid; place-items: center; padding: 16px; background: rgba(5,3,6,.78); backdrop-filter: blur(3px); }
 .janela-jogo { width: min(560px, 100%); max-height: 100%; overflow: auto; background: linear-gradient(#2a1a12, #1a100b); border: 3px solid #000; box-shadow: 0 0 0 3px #a57b3a, 0 20px 50px rgba(0,0,0,.7); border-radius: 14px; padding: 18px; text-align: center; }
 .janela-jogo h2 { margin: 0 0 4px; font: 800 clamp(20px, 5.5vw, 28px)/1.1 var(--f-titulo); color: var(--ouro); text-wrap: balance; }
 .janela-jogo p { margin: 0 0 14px; color: var(--nevoa); font-size: 15px; }
 .escolhas { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; }
-.aug { border: 3px solid #000; border-radius: 12px; padding: 12px 10px; background: linear-gradient(#3b2a52, #231834); box-shadow: inset 0 0 0 2px var(--epico); text-align: center; color: #f3e8ff; transition: transform .15s; }
+.aug { border: 3px solid #000; border-radius: 12px; padding: 12px 10px; background: linear-gradient(#3b2a52, #231834); box-shadow: inset 0 0 0 2px var(--epico); text-align: center; color: #f3e8ff; transition: transform .15s; animation: dar .4s cubic-bezier(.2,.8,.25,1.1) both; }
+.aug:nth-child(2) { animation-delay: .08s; } .aug:nth-child(3) { animation-delay: .16s; }
 .aug:hover { transform: translateY(-3px); }
 .aug canvas { width: 40px; height: 40px; image-rendering: pixelated; display: block; margin: 0 auto 6px; }
 .aug b { display: block; font: 800 15px var(--f-titulo); margin-bottom: 4px; }
@@ -158,34 +300,43 @@ button:focus-visible, [tabindex]:focus-visible { outline: 3px solid var(--ouro);
 .lista-derrota { text-align: left; display: grid; gap: 6px; margin: 0 0 14px; padding: 0; list-style: none; }
 .lista-derrota li { background: rgba(0,0,0,.35); border: 2px solid #4a3424; border-radius: 8px; padding: 7px 10px; font-size: 14px; }
 .lista-derrota li small { display: block; font: 500 10px var(--f-pixel); color: var(--nevoa); }
-.btn-largo { width: 100%; }
 
-body.batalha .palco { width: min(300px, 70vw, 40vh); }
+/* O que aparece em cada modo */
+body:not(.batalha) .inimigo, body:not(.batalha) .barra-heroi, body:not(.batalha) .mao { display: none; }
+body.batalha .botoes, body.batalha .hud { display: none; }
+body.batalha .mesa { grid-template-columns: minmax(0, 1fr); }
+body.batalha .pilha { display: none; }
+.mao.fora { display: none; }
+
 @media (max-width: 520px) {
-  .mesa { grid-template-columns: 1fr; gap: 0; }
+  .mesa { grid-template-columns: minmax(0, 1fr); gap: 0; }
   .pilha { display: none; }
-  .palco { width: min(318px, 84vw, 48vh); }
-  body.batalha .palco { width: min(280px, 72vw, 38vh); }
   .marca small { display: none; }
   .abas button { padding: 6px 10px; font-size: 12px; }
   .opcoes { width: 100%; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
   .chip { padding: 4px 9px; font-size: 11px; white-space: nowrap; }
-  .b-opcao { font-size: 13px; padding: 8px 10px; }
+  .tabuleiro { margin: 8px 6px; padding: 8px 8px 10px; }
+  .retrato { width: 46px; height: 46px; }
+  .canto { width: 14px; height: 14px; }
+  .canto.c1 { left: -15px; top: -15px; } .canto.c2 { right: -15px; top: -15px; } .canto.c3 { left: -15px; bottom: -15px; } .canto.c4 { right: -15px; bottom: -15px; }
+  .redondo { width: 64px; height: 64px; font-size: 13px; }
+  .encaixe { width: 30px; height: 30px; }
+  .encaixes { margin-left: 12px; gap: 5px; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .carta, .carta.entra, .barra i { transition: none; animation: none; }
+  .carta, .carta.entra, .carta.lancada, .barra i, .palco, .carta-mao, .slot-mao, .mao { transition: none; animation: none; }
   .carta.virada { transform: none; }
   .carta.virada .frente { visibility: hidden; }
   .carta .verso { transform: none; visibility: hidden; }
   .carta.virada .verso { visibility: visible; }
-  .palco.treme, .flutua, .r-lendaria .face::after { animation: none; }
+  body.batalha .palco::before, .slot-mao.sel .carta-mao::after, .tabuleiro.treme, .flutua, .r-lendaria .face::after, .redondo, .retrato, .gema-vida.baixa, .aug, .faixa { animation: none !important; }
 }
 </style>
 
 <canvas id="cena" aria-hidden="true"></canvas>
 <div class="app">
   <header class="topo">
-    <div class="marca">Torneio de Flashcards<small>Protótipo · Orto Questões</small></div>
+    <div class="marca">Torneio de Flashcards<small>Protótipo 2 · Orto Questões</small></div>
     <div class="abas" role="group" aria-label="Modo">
       <button id="aba-estudo" aria-pressed="true">Estudo</button>
       <button id="aba-batalha" aria-pressed="false">Batalha</button>
@@ -198,16 +349,31 @@ body.batalha .palco { width: min(300px, 70vw, 40vh); }
     </div>
   </header>
 
-  <div class="hud" id="hud"></div>
-
-  <main class="mesa">
-    <div class="pilha" aria-hidden="true"><div class="costas"></div><div class="costas"></div><div class="costas"></div><span id="n-baralho"></span></div>
-    <div class="palco" id="palco"></div>
-    <div class="pilha descarte" aria-hidden="true"><div class="costas"></div><span id="n-descarte"></span></div>
-  </main>
+  <section class="tabuleiro" id="tabuleiro" aria-label="Mesa">
+    <span class="canto c1"></span><span class="canto c2"></span><span class="canto c3"></span><span class="canto c4"></span>
+    <div class="inimigo" id="inimigo">
+      <div class="retrato" id="ret-inimigo"><canvas id="spr-inimigo"></canvas></div>
+      <div class="placa"><strong id="nome-inimigo"></strong><div class="barra inim"><s id="hp-inim-rastro"></s><i id="hp-inim-barra"></i><b id="hp-inim"></b></div></div>
+      <div class="placar"><span class="selo-hud" id="selo-andar"></span><span class="selo-hud ouro" id="selo-pontos"></span></div>
+    </div>
+    <div class="hud" id="hud"></div>
+    <main class="mesa">
+      <div class="pilha" aria-hidden="true"><div class="costas"></div><div class="costas"></div><div class="costas"></div><span id="n-baralho"></span></div>
+      <div class="slot-palco"><div class="palco" id="palco"></div></div>
+      <div class="pilha descarte" aria-hidden="true"><div class="costas"></div><span id="n-descarte"></span></div>
+    </main>
+  </section>
 
   <footer class="controles">
-    <div class="dica" id="dica"></div>
+    <div class="dica" id="dica" aria-live="polite"></div>
+    <div class="barra-heroi">
+      <div class="heroi"><div class="retrato ret-heroi" id="ret-heroi"><canvas id="spr-heroi"></canvas></div>
+        <div class="gema-vida" id="gema-vida"><canvas id="coracao"></canvas><b id="hp"></b></div></div>
+      <div class="encaixes" id="encaixes" aria-label="Poderes ativos"></div>
+      <div class="baralho-mini" aria-label="Flashcards no baralho"><span class="costas"></span><b id="n-bar"></b></div>
+      <button class="redondo" id="redondo" disabled>Jogar</button>
+    </div>
+    <div class="mao" id="mao" role="group" aria-label="Sua mão: alternativas"></div>
     <div class="botoes" id="botoes"></div>
   </footer>
 </div>
@@ -272,30 +438,84 @@ const DIF = { 1: ['Fácil', 2], 2: ['Moderada', 5], 3: ['Difícil', 10] };
 const LIMITE_GRATIS = 10;
 
 const $ = (s) => document.querySelector(s);
-const palco = $('#palco'), botoes = $('#botoes'), dica = $('#dica'), hud = $('#hud');
+const palco = $('#palco'), botoes = $('#botoes'), dica = $('#dica'), hud = $('#hud'), mao = $('#mao'), redondo = $('#redondo'), tabuleiro = $('#tabuleiro');
 const menosMov = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const embaralhar = (a) => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
 const vibrar = (p) => { try { navigator.vibrate && navigator.vibrate(p); } catch (e) {} };
+const centro = (el) => { const r = el.getBoundingClientRect(); return [r.left + r.width / 2, r.top + r.height / 2]; };
 function toast(t) { const el = document.createElement('div'); el.className = 'toast'; el.textContent = t; document.body.appendChild(el); setTimeout(() => el.remove(), 2600); }
-function flutuar(txt, cor) { const el = document.createElement('div'); el.className = 'flutua'; el.textContent = txt; el.style.color = cor; palco.appendChild(el); setTimeout(() => el.remove(), 1000); }
+function flutuar(txt, cor, alvo, dy = 0) { let [x, y] = centro(alvo); x = Math.min(Math.max(x, 50), innerWidth - 50); const el = document.createElement('div'); el.className = 'flutua'; el.textContent = txt; el.style.color = cor; el.style.left = x + 'px'; el.style.top = (y + dy) + 'px'; document.body.appendChild(el); setTimeout(() => el.remove(), 1000); }
 function flash(cura) { if (menosMov) return; const el = document.createElement('div'); el.className = 'flash' + (cura ? ' cura' : ''); document.body.appendChild(el); setTimeout(() => el.remove(), 500); }
+function faixa(txt) { const el = document.createElement('div'); el.className = 'faixa'; el.textContent = txt; document.body.appendChild(el); setTimeout(() => el.remove(), 1300); }
+function animar(el, nome) { if (menosMov) return; el.classList.remove(nome); void el.offsetWidth; el.classList.add(nome); setTimeout(() => el.classList.remove(nome), 700); }
 
-// ---------- Pixel art (canvas): brasões, coração e ícones dos poderes ----------
-function pixel(canvas, mapa, cores, escala) {
+function efeito(cls, x, y, ms, estilo = '') { if (menosMov) return; const el = document.createElement('div'); el.className = cls; el.style.cssText = `left:${x}px;top:${y}px;` + estilo; document.body.appendChild(el); setTimeout(() => el.remove(), ms); return el; }
+function onda(x, y, cor) { efeito('onda', x, y, 600, `--c:${cor}`); depois(90, () => efeito('onda', x, y, 600, `--c:${cor};border-width:2px`)); }
+function corte(alvo) { const [x, y] = centro(alvo); efeito('corte', x, y, 500); efeito('corte b', x, y, 560); }
+function garras(alvo) { const [x, y] = centro(alvo); [-16, 0, 16].forEach((dx, k) => depois(k * 45, () => efeito('garra', x + dx, y, 450, 'transform:rotate(28deg)'))); }
+function numeroGrande(txt, rotulo, alvo) { let [x, y] = centro(alvo); x = Math.min(Math.max(x + 40, 80), innerWidth - 80); const el = document.createElement('div'); el.className = 'flutua grande'; el.style.color = '#ffd34a'; el.style.left = x + 'px'; el.style.top = (y + 30) + 'px'; el.innerHTML = `${txt}<small>${rotulo}</small>`; document.body.appendChild(el); setTimeout(() => el.remove(), 1200); }
+function confete(x, y, n = 40) {
+  if (menosMov) return;
+  const cores = ['#e3b04b', '#fff3c0', '#b48cf0', '#7fe08f', '#5fa8ff', '#ff7a5c'];
+  for (let i = 0; i < n; i++) {
+    const c = document.createElement('div'); c.className = 'confete'; c.style.background = cores[i % cores.length]; document.body.appendChild(c);
+    const a = -Math.PI / 2 + (Math.random() - .5) * 2.4, v = 120 + Math.random() * 160, dx = Math.cos(a) * v, dy = Math.sin(a) * v, giro = (Math.random() - .5) * 900;
+    c.animate([{ transform: `translate(${x}px, ${y}px) rotate(0)`, opacity: 1 }, { transform: `translate(${x + dx}px, ${y + dy}px) rotate(${giro / 2}deg)`, opacity: 1, offset: .45 },
+      { transform: `translate(${x + dx * 1.3}px, ${y + dy + 260}px) rotate(${giro}deg)`, opacity: 0 }], { duration: 1400 + Math.random() * 600, easing: 'cubic-bezier(.2,.6,.4,1)' }).onfinish = () => c.remove();
+  }
+}
+
+// Esfera de luz que viaja de um ponto a outro (o golpe), com rastro de cometa e fagulhas no impacto.
+function golpe(de, para, bom, aoAcertar) {
+  if (menosMov) { aoAcertar(); return; }
+  const [x0, y0] = centro(de), [x1, y1] = centro(para);
+  const o = document.createElement('div'); o.className = 'orbe ' + (bom ? 'bom' : 'mau'); document.body.appendChild(o);
+  const meio = [(x0 + x1) / 2 + (bom ? 40 : -40), Math.min(y0, y1) - 30];
+  const caminho = [
+    { transform: `translate(${x0}px, ${y0}px) scale(.5)` },
+    { transform: `translate(${meio[0]}px, ${meio[1]}px) scale(1.1)`, offset: .55 },
+    { transform: `translate(${x1}px, ${y1}px) scale(1.35)` },
+  ];
+  o.animate(caminho, { duration: 420, easing: 'cubic-bezier(.45,0,.85,.6)' }).onfinish = () => {
+    o.remove(); fagulhas(x1, y1, bom ? ['#fff3c0', '#ffd27a', '#e3b04b'] : ['#ffd0c0', '#ff7a5c', '#d9452b'], 22); onda(x1, y1, bom ? '#ffe08a' : '#ff6a4a'); aoAcertar();
+  };
+  // rastro: esferas menores seguindo o mesmo caminho, um pouco atrasadas
+  for (let k = 1; k <= 6; k++) {
+    const r = document.createElement('div'); r.className = 'rastro'; r.style.background = `radial-gradient(circle, ${bom ? 'rgba(255,240,180,.9)' : 'rgba(255,150,120,.9)'}, transparent 70%)`; document.body.appendChild(r);
+    r.animate(caminho.map((q) => ({ ...q, opacity: 1 - k / 7 })), { duration: 420, delay: k * 28, easing: 'cubic-bezier(.45,0,.85,.6)', fill: 'backwards' }).onfinish = () => r.remove();
+  }
+}
+function fagulhas(x, y, cores, n = 14) {
+  if (menosMov) return;
+  for (let i = 0; i < n; i++) {
+    const f = document.createElement('div'); f.className = 'fagulha'; f.style.background = cores[i % cores.length]; document.body.appendChild(f);
+    const a = (i / n) * Math.PI * 2 + Math.random() * .4, d = 30 + Math.random() * 40;
+    f.animate([{ transform: `translate(${x}px, ${y}px)`, opacity: 1 }, { transform: `translate(${x + Math.cos(a) * d}px, ${y + Math.sin(a) * d + 18}px)`, opacity: 0 }], { duration: 520 + Math.random() * 200, easing: 'cubic-bezier(.2,.7,.4,1)' }).onfinish = () => f.remove();
+  }
+}
+
+// ---------- Pixel art (canvas): brasões, retratos e ícones dos poderes ----------
+function pixel(canvas, mapa, cores) {
   const w = Math.max(...mapa.map((l) => l.length)), h = mapa.length; canvas.width = w; canvas.height = h;
   const c = canvas.getContext('2d');
   mapa.forEach((linha, y) => [...linha].forEach((ch, x) => { if (cores[ch]) { c.fillStyle = cores[ch]; c.fillRect(x, y, 1, 1); } }));
 }
 const SPR = {
   brasao: ['.kkkkkkkkk.', 'kooooooooook', 'kogggggggok', 'kogwwgwwgok', 'koggwwwggok', 'kogggwgggok', 'kogggwgggok', '.kogggggok.', '..kogggok..', '...kooook..', '....kook...', '.....kk....'],
-  coracao: ['.kk...kk.', 'krrk.krrk', 'krwrkrrrk', 'krrrrrrrk', '.krrrrrk.', '..krrrk..', '...krk...', '....k....'],
+  coracao: ['.kkk...kkk.', 'krrrk.krrrk', 'krwrrkrrrrk', 'krrrrrrrrrk', 'krrrrrrrrrk', '.krrrrrrrk.', '..krrrrrk..', '...krrrk...', '....krk....', '.....k.....'],
   escudo: ['kkkkkkkk', 'kbbbbbbk', 'kbwbbbbk', 'kbbbbbbk', 'kbbbbbbk', '.kbbbbk.', '..kbbk..', '...kk...'],
   pocao: ['..kkk...', '...k....', '..kgk...', '.kgggk..', 'kgwgggk.', 'kgggggk.', 'kgggggk.', '.kkkkk..'],
   coroa: ['k..k..k.', 'ko.ko.ko', 'kookookk', 'koooooko', 'korooook', 'koooooko', 'kkkkkkkk', '........'],
   pergaminho: ['kkkkkkk.', 'kyyyyyyk', '.kyyyyk.', '.kyrryk.', '.kyyyyk.', '.kyyyyk.', 'kyyyyyyk', 'kkkkkkk.'],
   espada: ['......kk', '.....kwk', '....kwk.', '.k.kwk..', '.kkwk...', '..kk....', '.k.kk...', 'k...k...'],
+  // Adversários e herói (sem anatomia e sem caveira)
+  golem: ['.....kkkkkk.....', '....kwwwwwwk....', '...kwwswwswwk...', '...kwkrwwkrwk...', '...kwwwwwwwwk...', '...kwwkkkkwwk...', '....kwwwwwwk....', '..kkkwwwwwwkkk..', '.kwwwkwwswwkwwk.', '.kwswkwwwwwkwsk.', '.kwwwkwswwwkwwk.', '.kwwkkwwwwwkkwk.', '..kk.kwwwwwk.k..', '.....kwkkkwk....', '....kwwk.kwwk...', '....kkkk.kkkk...'],
+  serpente: ['................', '.......kkkk.....', '......kyyyyk....', '.....kyrykyyk...', '.....kyyyyyyk...', '......kyyyykr...', '.......kyyk..r..', '......kydk......', '.....kydk.......', '....kydk..kkk...', '....kydk.kyyyk..', '....kyddkydkyk..', '.....kyyyydk.k..', '......kkkkk.....'],
+  guardiao: ['.......kk.......', '......krrk......', '......krrk......', '....kkkkkkkk....', '...koooooooook..', '..koooooooooook.', '..kokkkkkkkkok..', '..kok.r..r.kok..', '..kokkkkkkkkok..', '..koookkkkoook..', '..koookkkkoook..', '...kooookooook..', '....koooooook...', '.....kkkkkkk....'],
+  heroi: ['......kkk.......', '.....kbbbk......', '......kbbk......', '....kkkkkkkk....', '...kssssssssk...', '..kssssssssssk..', '..kskkkkkkkksk..', '..ksk.w..w.ksk..', '..kskkkkkkkksk..', '..ksssskkssssk..', '..ksssskkssssk..', '...ksssssssk....', '....kkkkkkk.....'],
 };
-const PAL = { k: '#120a06', o: '#e3b04b', g: '#7a2a1c', w: '#f6e6c2', r: '#d9452b', b: '#4f8fd6', y: '#efd9a0' };
+const PAL = { k: '#120a06', o: '#e3b04b', g: '#7a2a1c', w: '#ece6d8', r: '#d9452b', b: '#4f8fd6', y: '#d9b44a', d: '#8a6a1f', s: '#9aa6b5' };
+const sprCanvas = (nome) => { const c = document.createElement('canvas'); pixel(c, SPR[nome], PAL); return c; };
 
 // ---------- Cenários (pixel art em canvas de baixa resolução, ampliado) ----------
 const cena = $('#cena'), cx = cena.getContext('2d');
@@ -311,12 +531,14 @@ function desenharCena() {
     cx.fillStyle = '#3c2a3a'; for (let x = 0; x < W; x++) { const y = H * .6 + Math.sin(x / 17) * 6 + Math.sin(x / 7) * 2; cx.fillRect(x, y, 1, H); }
     cx.fillStyle = '#25331f'; for (let x = 0; x < W; x++) { const y = H * .72 + Math.sin(x / 11 + 2) * 3; cx.fillRect(x, y, 1, H); }
     cx.fillStyle = '#34482b'; for (let x = 0; x < W; x += 3) { const s = Math.sin(t / 6 + x / 9) > 0 ? 1 : 0; cx.fillRect(x + s, H * .72 - 2 + Math.sin(x) * 1, 1, 3); }
-    [[.12, '#8f2d18'], [.88, '#2c4f8f']].forEach(([px, cor], i) => { const x = Math.round(W * px), y = Math.round(H * .44); cx.fillStyle = '#2a1a12'; cx.fillRect(x, y, 2, H * .3); const ond = Math.round(Math.sin(t / 5 + i) * 2); cx.fillStyle = cor; cx.fillRect(x + 2, y + 1, 14 + ond, 9); cx.fillStyle = '#e3b04b'; cx.fillRect(x + 6, y + 4, 3, 3); });
+    [[.06, '#8f2d18'], [.94, '#2c4f8f']].forEach(([px, cor], i) => { const x = Math.round(W * px), y = Math.round(H * .4); cx.fillStyle = '#2a1a12'; cx.fillRect(x, y, 2, H * .34); const ond = Math.round(Math.sin(t / 5 + i) * 2); cx.fillStyle = cor; cx.fillRect(i ? x - 14 - ond : x + 2, y + 1, 14 + ond, 9); cx.fillStyle = '#e3b04b'; cx.fillRect(i ? x - 9 : x + 6, y + 4, 3, 3); });
+    // vaga-lumes
+    for (let i = 0; i < 16; i++) { if (Math.sin(t / 3 + i * 1.7) < .2) continue; const x = (i * 47 + Math.sin(t / 11 + i) * 10 + W) % W, y = H * .5 + (i * 23) % (H * .4) + Math.sin(t / 5 + i * 2) * 3; cx.fillStyle = '#f4ff9a'; cx.fillRect(Math.round(x), Math.round(y), 1, 1); }
   } else {
     const fundo = cenario === 'masmorra' ? ['#140f14', '#1c1519', '#241b1f'] : ['#1a110c', '#24170f', '#2e1d13'];
     cx.fillStyle = fundo[0]; cx.fillRect(0, 0, W, H);
     for (let y = 0; y < H; y += 8) for (let x = (y / 8 % 2) * 8; x < W; x += 16) { cx.fillStyle = (x * 7 + y * 3) % 5 ? fundo[1] : fundo[2]; cx.fillRect(x, y, 15, 7); }
-    const luzes = cenario === 'masmorra' ? [[.08, .3], [.92, .3]] : [[.1, .55], [.25, .62], [.75, .62], [.9, .55]];
+    const luzes = cenario === 'masmorra' ? [[.05, .25], [.95, .25], [.05, .7], [.95, .7]] : [[.05, .3], [.95, .3], [.06, .78], [.94, .78]];
     luzes.forEach(([px, py], i) => {
       const x = Math.round(W * px), y = Math.round(H * py), f = Math.sin(t * .9 + i * 2) * .5 + Math.sin(t * 2.3 + i) * .3;
       const g = cx.createRadialGradient(x, y - 4, 1, x, y - 4, 34 + f * 4); g.addColorStop(0, 'rgba(255,170,70,.35)'); g.addColorStop(1, 'rgba(255,170,70,0)'); cx.fillStyle = g; cx.fillRect(x - 40, y - 44, 80, 80);
@@ -324,9 +546,13 @@ function desenharCena() {
       else { cx.fillStyle = '#efe3c4'; cx.fillRect(x - 1, y, 3, 9 - (i % 2) * 3); cx.fillStyle = '#5a3b2a'; cx.fillRect(x - 3, y + 9 - (i % 2) * 3, 7, 2); }
       cx.fillStyle = '#ffb347'; cx.fillRect(x - 1, y - 4 + Math.round(f), 3, 4); cx.fillStyle = '#fff1b8'; cx.fillRect(x, y - 3 + Math.round(f), 1, 2);
     });
-    if (cenario === 'velas') { cx.fillStyle = '#5a1f16'; cx.fillRect(W * .42, 0, W * .16, H * .34); cx.fillStyle = '#e3b04b'; cx.fillRect(W * .42, H * .34, W * .16, 2); cx.fillRect(W * .49, H * .12, 5, 5); }
+    if (cenario === 'velas') { cx.fillStyle = '#5a1f16'; cx.fillRect(W * .44, 0, W * .12, H * .1); cx.fillStyle = '#e3b04b'; cx.fillRect(W * .44, H * .1, W * .12, 1); }
+    // brasas na masmorra, poeira dourada nas velas
+    for (let i = 0; i < 22; i++) {
+      if (cenario === 'masmorra') { const y = H - ((t * 1.6 + i * 41) % (H * .95)), x = (i * 53 + Math.sin(t / 7 + i) * 6 + W) % W; cx.fillStyle = i % 3 ? '#ff8a3c' : '#ffd27a'; cx.fillRect(Math.round(x), Math.round(y), 1, i % 4 ? 1 : 2); }
+      else { const x = (i * 61 + t * .5) % W, y = (i * 29 + Math.sin(t / 9 + i) * 8 + t * .25) % H; cx.fillStyle = 'rgba(255,220,150,.55)'; cx.fillRect(Math.round(x), Math.round(y), 1, 1); }
+    }
   }
-  const mesaY = Math.round(cena.height * .78); cx.fillStyle = '#2a1a12'; cx.fillRect(0, mesaY, W, H - mesaY); cx.fillStyle = '#3b2416'; cx.fillRect(0, mesaY, W, 2);
   const v = cx.createRadialGradient(W / 2, H / 2, H * .2, W / 2, H / 2, H * .9); v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, 'rgba(0,0,0,.55)'); cx.fillStyle = v; cx.fillRect(0, 0, W, H);
 }
 let ultimo = 0;
@@ -334,37 +560,36 @@ function loop(ts) { if (ts - ultimo > 90) { ultimo = ts; tempo += 1; desenharCen
 desenharCena(); if (!menosMov) requestAnimationFrame(loop);
 
 // ---------- Estado ----------
-const E = { modo: 'estudo', assinante: false, vistos: 0, fila: [], descarte: 0, atual: null,
-  hp: 100, andar: 1, pontos: 0, rodada: 0, seq: 0, escudo: 0, imortal: false, pocao: 0, pista: 0, duplo: false, derrubaram: [], respondida: false };
+const E = { modo: 'estudo', assinante: false, vistos: 0, fila: [], descarte: 0, atual: null, geracao: 0,
+  hp: 100, andar: 1, pontos: 0, rodada: 0, seq: 0, escudo: 0, imortal: false, pocao: 0, pista: 0, duplo: false, derrubaram: [], respondida: false, sel: -1,
+  inimigo: null, hpInim: 0, hpInimMax: 0 };
 try { const s = JSON.parse(localStorage.getItem('torneio-prototipo') || '{}'); if (s.cenario) cenario = s.cenario; } catch (e) {}
-
 function salvar() { try { localStorage.setItem('torneio-prototipo', JSON.stringify({ cenario })); } catch (e) {} }
+// Atrasos que morrem quando a pessoa troca de modo ou começa outra partida.
+function depois(ms, fn) { const g = E.geracao; setTimeout(() => { if (g === E.geracao) fn(); }, menosMov ? Math.min(ms, 60) : ms); }
 
-function brasaoCanvas() { const c = document.createElement('canvas'); c.className = 'brasao'; pixel(c, SPR.brasao, PAL); return c; }
-
-function montarCarta(f, lacrada) {
+function montarCarta(f, lacrada, classeEntrada = 'entra') {
   const [rot, est] = RAR[f.raridade];
   const carta = document.createElement('div');
-  carta.className = `carta entra r-${f.raridade}` + (lacrada ? ' lacrada' : '');
-  carta.tabIndex = 0; carta.setAttribute('role', 'button'); carta.setAttribute('aria-label', 'Flashcard. Toque para virar.');
+  carta.className = `carta ${classeEntrada} r-${f.raridade}` + (lacrada ? ' lacrada' : '');
+  carta.tabIndex = 0; carta.setAttribute('role', 'button'); carta.setAttribute('aria-label', E.modo === 'batalha' ? 'Flashcard do adversário' : 'Flashcard. Toque para virar.');
   const cab = `<div class="cabeca"><span class="slot-brasao"></span><div><strong>${f.assunto}</strong><em>${f.area} · ${DIF[f.dif][0]}</em></div><span class="raridade">${rot}</span></div>`;
   const janela = f.img ? `<div class="janela" role="img" aria-label="Figura da questão" style="background-image:url('${IMG[f.img]}')"></div>` : '';
   carta.innerHTML = `
-    <div class="face frente"><div class="moldura">${cab}
+    <div class="face frente"><span class="gema-dano" title="Dano se errar">-${DIF[f.dif][1]}</span><div class="moldura">${cab}
       <div class="corpo"><span class="tipo">${f.tipo}</span><div class="pergunta">${f.pergunta}</div>${janela}</div>
-      <div class="pe"><span>${f.fonte ? 'Fonte: ' + f.fonte : 'Toque para virar'}</span><span class="estrelas">${est}</span></div></div></div>
+      <div class="pe"><span>${f.fonte ? 'Fonte: ' + f.fonte : E.modo === 'batalha' ? 'Responda com uma da sua mão' : 'Toque para virar'}</span><span class="estrelas">${est}</span></div></div></div>
     <div class="face verso"><div class="moldura">${cab}
       <div class="corpo"><span class="tipo">Resposta</span><div class="resposta">${f.resposta}</div><div class="explica">${f.explica}</div>
-        <div class="origem"><button data-acao="ver">De onde veio · ${f.id}</button><button data-acao="fazer">Enfrentar a questão</button></div></div>
+        <div class="origem"><button data-acao="ver">De onde veio · ${f.id}</button><button data-acao="fazer">Fazer a questão</button></div></div>
       <div class="pe"><span>Orto Questões</span><span class="estrelas">${est}</span></div></div></div>`;
-  carta.querySelectorAll('.slot-brasao').forEach((s) => s.replaceWith(brasaoCanvas()));
+  carta.querySelectorAll('.slot-brasao').forEach((s) => { const c = sprCanvas('brasao'); c.className = 'brasao'; s.replaceWith(c); });
   if (lacrada) { const cera = document.createElement('div'); cera.className = 'cera'; cera.textContent = 'OQ'; carta.querySelector('.frente').appendChild(cera); }
   carta.querySelector('[data-acao="ver"]').onclick = (e) => { e.stopPropagation(); toast(`No site, abre ${f.id} com o comentário completo.`); };
   carta.querySelector('[data-acao="fazer"]').onclick = (e) => { e.stopPropagation(); toast(`No site, abre ${f.id} para responder como questão.`); };
   return carta;
 }
-
-function pilhas() { $('#n-baralho').textContent = `${E.fila.length} no baralho`; $('#n-descarte').textContent = `${E.descarte} feitos`; }
+function pilhas() { $('#n-baralho').textContent = E.fila.length; $('#n-descarte').textContent = E.descarte; $('#n-bar').textContent = E.fila.length; }
 
 // ---------- Modo Estudo ----------
 function hudEstudo() {
@@ -385,15 +610,14 @@ function proximaEstudo() {
     $('#b-assinar').onclick = () => { E.assinante = true; $('#c-assinante').setAttribute('aria-pressed', 'true'); proximaEstudo(); };
     return;
   }
-  dica.textContent = 'Toque na carta ou aperte espaço para virar';
+  dica.textContent = 'Toque no flashcard ou aperte espaço para virar';
   botoes.innerHTML = `<button class="btn b-virar btn-largo" id="b-virar">Virar<small>espaço</small></button>`;
   $('#b-virar').onclick = virar;
   carta.addEventListener('click', virar);
   arrastavel(carta);
 }
 function virar() {
-  const carta = palco.querySelector('.carta'); if (!carta || carta.classList.contains('virada') || carta.classList.contains('lacrada')) return;
-  if (E.modo === 'batalha') return;
+  const carta = palco.querySelector('.carta'); if (!carta || carta.classList.contains('virada') || carta.classList.contains('lacrada') || E.modo === 'batalha') return;
   carta.classList.remove('entra'); carta.classList.add('virada'); vibrar(12);
   E.vistos += 1; hudEstudo();
   dica.textContent = 'Arraste: direita Sabia, esquerda Errei, para cima Hesitei';
@@ -401,14 +625,14 @@ function virar() {
   botoes.querySelectorAll('[data-r]').forEach((b) => (b.onclick = () => avaliar(b.dataset.r)));
 }
 function avaliar(r) {
-  const carta = palco.querySelector('.carta.virada'); if (!carta) return;
+  const carta = palco.querySelector('.carta.virada'); if (!carta || carta.dataset.saindo) return; carta.dataset.saindo = '1';
   carta.classList.add(r === 'sabia' ? 'sai-direita' : r === 'errei' ? 'sai-esquerda' : 'sai-cima');
   vibrar(r === 'errei' ? [20, 40, 20] : 15);
-  E.descarte += 1; setTimeout(proximaEstudo, menosMov ? 0 : 360);
+  E.descarte += 1; depois(360, proximaEstudo);
 }
 function arrastavel(carta) {
   let x0 = 0, y0 = 0, dx = 0, dy = 0, ativo = false;
-  carta.addEventListener('pointerdown', (e) => { if (!carta.classList.contains('virada')) return; ativo = true; x0 = e.clientX; y0 = e.clientY; carta.setPointerCapture(e.pointerId); carta.style.transition = 'none'; });
+  carta.addEventListener('pointerdown', (e) => { if (!carta.classList.contains('virada') || e.target.closest('button')) return; ativo = true; x0 = e.clientX; y0 = e.clientY; carta.setPointerCapture(e.pointerId); carta.style.transition = 'none'; });
   carta.addEventListener('pointermove', (e) => { if (!ativo) return; dx = e.clientX - x0; dy = e.clientY - y0; carta.style.transform = `rotateY(180deg) translate(${-dx}px, ${dy}px) rotate(${-dx / 18}deg)`; });
   const fim = () => { if (!ativo) return; ativo = false; carta.style.transition = ''; carta.style.transform = '';
     if (dx > 90) avaliar('sabia'); else if (dx < -90) avaliar('errei'); else if (dy < -90) avaliar('hesitei'); dx = dy = 0; };
@@ -416,79 +640,159 @@ function arrastavel(carta) {
 }
 
 // ---------- Modo Batalha ----------
+// Cada andar tem um adversário com vida. Acertar causa dano nele (fácil 10, moderada 20, difícil 30);
+// errar faz ele golpear você (fácil 2, moderada 5, difícil 10). Derrotou o adversário, sobe de andar e escolhe um poder.
+const INIMIGOS = [
+  { nome: 'Golem de Gesso', spr: 'golem', hp: 60 },
+  { nome: 'Serpente do Ciático', spr: 'serpente', hp: 70 },
+  { nome: 'Guardião do Acetábulo', spr: 'guardiao', hp: 110, chefe: true },
+];
 const PODERES = [
   { id: 'escudo', nome: 'Escudo', txt: 'Anula o próximo dano.', spr: 'escudo', usar: () => { E.escudo += 1; } },
   { id: 'imortal', nome: 'Imortal', txt: 'Uma vez, não morre: fica com 1 de vida.', spr: 'coroa', usar: () => { E.imortal = true; } },
-  { id: 'pocao', nome: 'Poção do desafio', txt: '+20 de vida se acertar as próximas 3.', spr: 'pocao', usar: () => { E.pocao = 3; } },
-  { id: 'pista', nome: 'Pergaminho da pista', txt: 'Elimina uma alternativa errada na próxima.', spr: 'pergaminho', usar: () => { E.pista += 1; } },
-  { id: 'duplo', nome: 'Golpe duplo', txt: 'O próximo acerto vale pontos em dobro.', spr: 'espada', usar: () => { E.duplo = true; } },
+  { id: 'pocao', nome: 'Poção do desafio', txt: '+20 de vida se acertar os próximos 3.', spr: 'pocao', usar: () => { E.pocao = 3; } },
+  { id: 'pista', nome: 'Pergaminho da pista', txt: 'Elimina uma alternativa errada no próximo.', spr: 'pergaminho', usar: () => { E.pista += 1; } },
+  { id: 'duplo', nome: 'Golpe duplo', txt: 'O próximo acerto causa o dobro de dano.', spr: 'espada', usar: () => { E.duplo = true; } },
 ];
+const ATAQUE = { 1: 10, 2: 20, 3: 30 };
+
 function hudBatalha() {
-  const chefe = E.andar % 3 === 0;
-  const ativos = [E.escudo ? `Escudo ×${E.escudo}` : '', E.imortal ? 'Imortal' : '', E.pocao ? `Poção: faltam ${E.pocao}` : '', E.pista ? `Pista ×${E.pista}` : '', E.duplo ? 'Golpe duplo' : ''].filter(Boolean);
-  hud.innerHTML = `<div class="vida"><canvas class="coracao" id="hud-coracao"></canvas><div class="barra"><i style="width:${E.hp}%"></i><b>${E.hp} / 100</b></div></div>
-    <span class="selo-hud ${chefe ? 'ouro' : ''}">${chefe ? 'Chefe · ' : ''}Andar ${E.andar}</span><span class="selo-hud">${E.pontos} pts</span>
-    <span class="poderes">${ativos.map((a) => `<span class="poder-ativo">${a}</span>`).join('')}</span>`;
-  pixel($('#hud-coracao'), SPR.coracao, PAL);
+  const ret = $('#ret-inimigo'), I = E.inimigo;
+  $('#nome-inimigo').innerHTML = I.nome + (I.chefe ? '<em>CHEFE</em>' : '');
+  ret.classList.toggle('chefe', !!I.chefe);
+  $('#hp-inim-barra').style.width = $('#hp-inim-rastro').style.width = (100 * E.hpInim / E.hpInimMax) + '%'; $('#hp-inim').textContent = `${E.hpInim} / ${E.hpInimMax}`;
+  $('#selo-andar').textContent = `Andar ${E.andar}`; $('#selo-pontos').textContent = `${E.pontos} pts`;
+  $('#hp').textContent = E.hp; $('#gema-vida').classList.toggle('baixa', E.hp > 0 && E.hp <= 25);
+  const ativos = [E.escudo && ['escudo', E.escudo], E.imortal && ['coroa', ''], E.pocao && ['pocao', E.pocao], E.pista && ['pergaminho', E.pista], E.duplo && ['espada', '']].filter(Boolean);
+  const enc = $('#encaixes'); enc.innerHTML = '';
+  for (let i = 0; i < 3; i++) {
+    const s = document.createElement('div'); s.className = 'encaixe';
+    if (ativos[i]) { s.classList.add('ativo'); s.appendChild(sprCanvas(ativos[i][0])); if (ativos[i][1] !== '') { const n = document.createElement('sup'); n.textContent = ativos[i][1]; s.appendChild(n); } s.title = ativos[i][0]; }
+    enc.appendChild(s);
+  }
+  pilhas();
+}
+function novoInimigo() {
+  const base = INIMIGOS[(E.andar - 1) % INIMIGOS.length];
+  E.inimigo = base; E.hpInimMax = E.hpInim = base.hp + Math.floor((E.andar - 1) / 3) * 30;
+  pixel($('#spr-inimigo'), SPR[base.spr], PAL);
+  const ret = $('#ret-inimigo'); ret.classList.remove('cai'); animar(ret, 'chega');
+  hudBatalha();
 }
 function iniciarBatalha() {
+  E.geracao += 1;
   Object.assign(E, { hp: 100, andar: 1, pontos: 0, rodada: 0, seq: 0, escudo: 0, imortal: false, pocao: 0, pista: 0, duplo: false, derrubaram: [], fila: embaralhar(FLASHCARDS), descarte: 0 });
-  proximaBatalha();
+  pixel($('#spr-heroi'), SPR.heroi, PAL); pixel($('#coracao'), SPR.coracao, PAL);
+  novoInimigo(); proximaBatalha();
 }
 function proximaBatalha() {
   if (!E.fila.length) E.fila = embaralhar(FLASHCARDS);
-  const chefe = E.andar % 3 === 0;
   let f = E.fila.shift();
-  if (chefe) { const dificil = E.fila.find((x) => x.dif === 3); if (dificil && f.dif < 3) { E.fila.push(f); f = dificil; E.fila.splice(E.fila.indexOf(dificil), 1); } }
-  E.atual = f; E.respondida = false; palco.innerHTML = '';
-  const carta = montarCarta(f, false); palco.appendChild(carta); pilhas(); hudBatalha();
-  const ordem = embaralhar(f.opcoes.map((t, i) => ({ t, i })));
-  dica.textContent = chefe ? 'Andar do chefe: o Guardião só joga flashcards difíceis.' : `Errar uma ${DIF[f.dif][0].toLowerCase()} tira ${DIF[f.dif][1]} de vida`;
-  botoes.innerHTML = ordem.map((o) => `<button class="btn b-opcao" data-i="${o.i}">${o.t}</button>`).join('');
+  if (E.inimigo.chefe && f.dif < 3) { const dificil = E.fila.find((x) => x.dif === 3); if (dificil) { E.fila.push(f); f = dificil; E.fila.splice(E.fila.indexOf(dificil), 1); } }
+  E.atual = f; E.respondida = false; E.sel = -1; palco.innerHTML = '';
+  palco.appendChild(montarCarta(f, false, 'lancada')); animar($('#ret-inimigo'), 'ataca');
+  dica.textContent = E.inimigo.chefe ? 'O chefe só joga flashcards difíceis.' : 'Toque numa alternativa para levantar; toque de novo para jogar.';
+  // A mão: as alternativas, em leque
+  const ordem = embaralhar(f.opcoes.map((t, i) => ({ t, i }))), n = ordem.length;
+  mao.classList.remove('fora', 'recolhe'); mao.innerHTML = '';
+  ordem.forEach((o, k) => {
+    const d = k - (n - 1) / 2, slot = document.createElement('div'); slot.className = 'slot-mao';
+    slot.style.setProperty('--r', `${d * 5}deg`); slot.style.setProperty('--y', `${Math.abs(d) ** 2 * 5}px`);
+    slot.innerHTML = `<button class="carta-mao" style="--i:${k}" data-i="${o.i}" aria-label="Alternativa ${k + 1}: ${o.t}"><i>${k + 1}</i><span>${o.t}</span></button>`;
+    mao.appendChild(slot);
+  });
   if (E.pista) {
-    const erradas = [...botoes.querySelectorAll('.b-opcao')].filter((b) => +b.dataset.i !== f.certa);
-    const r = erradas[Math.floor(Math.random() * erradas.length)]; r.classList.add('riscada'); r.disabled = true; E.pista -= 1; hudBatalha();
+    const erradas = [...mao.querySelectorAll('.carta-mao')].filter((b) => +b.dataset.i !== f.certa);
+    const r = erradas[Math.floor(Math.random() * erradas.length)]; r.classList.add('riscada'); r.disabled = true; E.pista -= 1;
   }
-  botoes.querySelectorAll('.b-opcao').forEach((b) => (b.onclick = () => responder(+b.dataset.i, b)));
+  mao.querySelectorAll('.carta-mao').forEach((b) => (b.onclick = () => escolher(b)));
+  redondo.className = 'redondo'; redondo.textContent = 'Jogar'; redondo.disabled = true; redondo.onclick = () => { const b = mao.querySelector('.slot-mao.sel .carta-mao'); if (b) jogar(b); };
+  hudBatalha();
 }
-function responder(i, botao) {
+function escolher(b) {
+  if (E.respondida || b.disabled) return;
+  const slot = b.parentElement;
+  if (slot.classList.contains('sel')) return jogar(b);
+  mao.querySelectorAll('.slot-mao.sel').forEach((s) => s.classList.remove('sel'));
+  slot.classList.add('sel'); vibrar(8);
+  redondo.disabled = false; redondo.classList.add('pronto');
+}
+function jogar(b) {
   if (E.respondida) return; E.respondida = true;
-  const f = E.atual, certo = i === f.certa;
-  botoes.querySelectorAll('.b-opcao').forEach((b) => { b.disabled = true; if (+b.dataset.i === f.certa) b.classList.add('certa'); });
-  const carta = palco.querySelector('.carta'); carta.classList.remove('entra'); carta.classList.add('virada');
-  if (certo) {
-    E.seq += 1; let pts = 10 * f.dif; if (E.duplo) { pts *= 2; E.duplo = false; } E.pontos += pts; flutuar(`+${pts}`, '#ffd98a'); vibrar(15);
+  const f = E.atual, i = +b.dataset.i, certo = i === f.certa;
+  redondo.disabled = true; redondo.className = 'redondo';
+  mao.querySelectorAll('.carta-mao').forEach((x) => { x.disabled = true; });
+  // A alternativa voa da mão para a mesa
+  if (!menosMov) {
+    const [x0, y0] = centro(b), [x1, y1] = centro(palco);
+    b.style.transition = 'transform .3s cubic-bezier(.5,0,.75,0), opacity .3s'; b.style.zIndex = 10;
+    b.style.transform = `translate(${x1 - x0}px, ${y1 - y0}px) scale(.9) rotate(${certo ? 0 : -6}deg)`; b.style.opacity = '.0';
+  }
+  depois(300, () => {
+    const carta = palco.querySelector('.carta'); carta.classList.remove('lancada'); carta.classList.add('virada');
+    mao.querySelectorAll('.carta-mao').forEach((x) => { if (+x.dataset.i === f.certa) x.classList.add('certa'); else if (x === b) x.classList.add('errada'); });
+    b.style.opacity = '1'; b.style.transform = '';
+    if (certo) acerto(f); else erro(f);
+  });
+}
+function acerto(f) {
+  E.seq += 1; let dano = ATAQUE[f.dif]; if (E.duplo) { dano *= 2; E.duplo = false; }
+  E.pontos += dano; vibrar(15);
+  golpe(palco, $('#ret-inimigo'), true, () => {
+    E.hpInim = Math.max(0, E.hpInim - dano); corte($('#ret-inimigo')); animar(tabuleiro, 'impacto'); animar($('.barra.inim'), 'ferida');
+    if (dano >= 30) numeroGrande(`-${dano}`, dano > ATAQUE[f.dif] ? 'GOLPE DUPLO' : 'CRÍTICO', $('#ret-inimigo')); else flutuar(`-${dano}`, '#ffd98a', $('#ret-inimigo'), 10);
+    animar($('#ret-inimigo'), 'atingido');
     let cura = 0; if (E.seq % 3 === 0) cura += 5; if (f.raridade === 'lendaria') cura += 3;
     if (E.pocao) { E.pocao -= 1; if (!E.pocao) { cura += 20; toast('Poção do desafio: +20 de vida!'); } }
-    if (cura) { E.hp = Math.min(100, E.hp + cura); setTimeout(() => { flutuar(`+${cura} vida`, '#7fe08f'); flash(true); }, 350); }
-  } else {
-    botao.classList.add('errada'); E.seq = 0; if (E.pocao) { E.pocao = 0; toast('A poção se perdeu.'); }
-    E.derrubaram.push(f);
-    if (E.escudo) { E.escudo -= 1; flutuar('Bloqueado', '#9cc6ff'); }
-    else { const dano = DIF[f.dif][1]; E.hp -= dano; flutuar(`-${dano}`, '#ff7a5c'); flash(false); vibrar([30, 50, 30]);
-      if (!menosMov) { palco.classList.remove('treme'); void palco.offsetWidth; palco.classList.add('treme'); }
-      if (E.hp <= 0 && E.imortal) { E.hp = 1; E.imortal = false; setTimeout(() => toast('Imortal: você resistiu com 1 de vida!'), 400); } }
-  }
-  E.hp = Math.max(0, E.hp); E.rodada += 1; E.descarte += 1; hudBatalha();
-  dica.textContent = certo ? 'Acertou!' : 'Leia a resposta e siga.';
-  const seguir = document.createElement('button'); seguir.className = 'btn b-virar btn-largo'; seguir.textContent = E.hp <= 0 ? 'Ver o resultado' : 'Próximo flashcard';
-  setTimeout(() => { botoes.appendChild(seguir); seguir.focus(); }, 350);
-  seguir.onclick = () => {
-    if (E.hp <= 0) return derrota();
-    if (E.rodada % 5 === 0) { E.andar += 1; return escolherPoder(); }
-    proximaBatalha();
-  };
+    if (cura) { E.hp = Math.min(100, E.hp + cura); depois(250, () => { flutuar(`+${cura}`, '#7fe08f', $('#ret-heroi'), -10); flash(true); }); }
+    hudBatalha(); fimDaJogada(true);
+  });
 }
-function sprCanvas(nome) { const c = document.createElement('canvas'); pixel(c, SPR[nome], PAL); return c; }
+function erro(f) {
+  E.seq = 0; if (E.pocao) { E.pocao = 0; toast('A poção se perdeu.'); }
+  E.derrubaram.push(f);
+  animar($('#ret-inimigo'), 'ataca');
+  golpe($('#ret-inimigo'), $('#ret-heroi'), false, () => {
+    if (E.escudo) { E.escudo -= 1; flutuar('Bloqueado', '#9cc6ff', $('#ret-heroi'), -10); }
+    else {
+      const dano = DIF[f.dif][1]; E.hp = Math.max(0, E.hp - dano); flutuar(`-${dano}`, '#ff7a5c', $('#ret-heroi'), -10); flash(false); vibrar([30, 50, 30]);
+      animar($('#ret-heroi'), 'atingido'); animar(tabuleiro, 'treme'); garras($('#ret-heroi'));
+      if (E.hp <= 0 && E.imortal) { E.hp = 1; E.imortal = false; depois(400, () => toast('Imortal: você resistiu com 1 de vida!')); }
+    }
+    hudBatalha(); fimDaJogada(false);
+  });
+}
+function fimDaJogada(certo) {
+  E.rodada += 1; E.descarte += 1;
+  const venceu = E.hpInim <= 0, caiu = E.hp <= 0;
+  dica.textContent = caiu ? 'Você caiu.' : venceu ? `${E.inimigo.nome} derrotado!` : certo ? 'Acertou! Leia o verso e siga.' : 'Leia a resposta no verso e siga.';
+  if (venceu) { const ret = $('#ret-inimigo'); fagulhas(...centro(ret), ['#e3b04b', '#fff3c0', '#b48cf0'], 30); efeito('raios', ...centro(tabuleiro), 1600); confete(...centro(ret)); onda(...centro(ret), '#ffe08a'); if (!menosMov) ret.classList.add('cai'); faixa('Vitória!'); }
+  depois(650, () => {
+    mao.classList.add('recolhe'); depois(320, () => mao.classList.add('fora'));
+    redondo.disabled = false; redondo.className = 'redondo seguir'; redondo.textContent = caiu ? 'Fim' : venceu ? 'Poder' : 'Seguir';
+    redondo.onclick = seguir; redondo.focus({ preventScroll: true });
+  });
+}
+function seguir() {
+  if (!E.respondida || redondo.disabled) return;
+  redondo.disabled = true;
+  if (E.hp <= 0) return derrota();
+  if (E.hpInim <= 0) return escolherPoder();
+  proximaBatalha();
+}
 function escolherPoder() {
   const tres = embaralhar(PODERES).slice(0, 3);
-  const chefe = E.andar % 3 === 0;
+  const prox = INIMIGOS[E.andar % INIMIGOS.length];
   const veu = document.createElement('div'); veu.className = 'veu';
-  veu.innerHTML = `<div class="janela-jogo" role="dialog" aria-modal="true" aria-labelledby="t-poder"><h2 id="t-poder">${chefe ? 'O Guardião do Acetábulo se aproxima' : `Andar ${E.andar}`}</h2>
-    <p>${chefe ? 'Andar do chefe: só flashcards difíceis. ' : ''}Escolha um poder para levar.</p><div class="escolhas">${tres.map((p) => `<button class="aug" data-id="${p.id}"><span class="spr" data-spr="${p.spr}"></span><b>${p.nome}</b><span>${p.txt}</span></button>`).join('')}</div></div>`;
+  veu.innerHTML = `<div class="janela-jogo" role="dialog" aria-modal="true" aria-labelledby="t-poder"><h2 id="t-poder">${E.inimigo.nome} caiu</h2>
+    <p>Andar ${E.andar + 1}: ${prox.chefe ? 'o <b>chefe</b> espera, e só joga flashcards difíceis' : `vem aí ${prox.nome}`}. Escolha um poder para levar.</p>
+    <div class="escolhas">${tres.map((p) => `<button class="aug" data-id="${p.id}"><span class="spr" data-spr="${p.spr}"></span><b>${p.nome}</b><span>${p.txt}</span></button>`).join('')}</div></div>`;
   document.body.appendChild(veu);
   veu.querySelectorAll('.spr').forEach((s) => s.replaceWith(sprCanvas(s.dataset.spr)));
-  veu.querySelectorAll('.aug').forEach((b) => (b.onclick = () => { PODERES.find((p) => p.id === b.dataset.id).usar(); veu.remove(); toast(`${b.querySelector('b').textContent} ativado.`); proximaBatalha(); }));
+  veu.querySelectorAll('.aug').forEach((b) => (b.onclick = () => {
+    PODERES.find((p) => p.id === b.dataset.id).usar(); veu.remove(); toast(`${b.querySelector('b').textContent} ativado.`);
+    E.andar += 1; novoInimigo(); if (E.inimigo.chefe) faixa('Chefe!'); proximaBatalha();
+  }));
   veu.querySelector('.aug').focus();
 }
 function derrota() {
@@ -504,12 +808,13 @@ function derrota() {
 
 // ---------- Trocas de modo e cenário ----------
 function modo(m) {
-  E.modo = m; document.body.classList.toggle('batalha', m === 'batalha'); $('#aba-estudo').setAttribute('aria-pressed', m === 'estudo'); $('#aba-batalha').setAttribute('aria-pressed', m === 'batalha');
-  document.querySelectorAll('.veu').forEach((v) => v.remove());
+  E.modo = m; E.geracao += 1; document.body.classList.toggle('batalha', m === 'batalha');
+  $('#aba-estudo').setAttribute('aria-pressed', m === 'estudo'); $('#aba-batalha').setAttribute('aria-pressed', m === 'batalha');
+  document.querySelectorAll('.veu, .faixa, .orbe, .flutua').forEach((v) => v.remove());
   if (m === 'batalha') { if (cenario === 'velas') trocarCenario('masmorra'); iniciarBatalha(); }
-  else { E.fila = embaralhar(FLASHCARDS); E.descarte = 0; proximaEstudo(); }
+  else { E.fila = embaralhar(FLASHCARDS); E.descarte = 0; mao.innerHTML = ''; proximaEstudo(); }
 }
-function trocarCenario(c) { cenario = c; ['velas', 'campo', 'masmorra'].forEach((k) => $('#c-' + k).setAttribute('aria-pressed', k === c)); desenharCena(); salvar(); }
+function trocarCenario(c) { cenario = c; document.body.dataset.cena = c; ['velas', 'campo', 'masmorra'].forEach((k) => $('#c-' + k).setAttribute('aria-pressed', k === c)); desenharCena(); salvar(); }
 $('#aba-estudo').onclick = () => modo('estudo');
 $('#aba-batalha').onclick = () => modo('batalha');
 $('#c-velas').onclick = () => trocarCenario('velas');
@@ -521,7 +826,8 @@ addEventListener('keydown', (e) => {
   if (E.modo === 'estudo') {
     if (e.code === 'Space' || e.key === 'Enter') { if (document.activeElement?.tagName === 'BUTTON' && e.key === 'Enter') return; e.preventDefault(); virar(); }
     if (palco.querySelector('.virada')) { if (e.key === '1') avaliar('errei'); if (e.key === '2') avaliar('hesitei'); if (e.key === '3') avaliar('sabia'); }
-  } else if (!E.respondida && /^[1-4]$/.test(e.key)) { botoes.querySelectorAll('.b-opcao')[+e.key - 1]?.click(); }
+  } else if (!E.respondida && /^[1-4]$/.test(e.key)) { const b = mao.querySelectorAll('.carta-mao')[+e.key - 1]; if (b && !b.disabled) jogar(b); }
+  else if (E.respondida && (e.key === 'Enter' || e.code === 'Space') && document.activeElement !== redondo) { e.preventDefault(); seguir(); }
 });
 
 trocarCenario(cenario);
