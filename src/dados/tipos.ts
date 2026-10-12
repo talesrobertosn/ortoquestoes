@@ -103,7 +103,7 @@ export interface Questao {
   alternativas: Alternativa[]
   gabarito: Letra | null
   /**
-   * Prova sem gabarito oficial divulgado (TARO 2006 e 2007): a letra que a
+   * Prova sem gabarito oficial divulgado (TAROs antigos, como 2006 a 2010): a letra que a
    * bibliografia sustenta, definida pelo Orto Questões. Ao carregar, vira o
    * gabarito de correção e conta no desempenho; a tela avisa que não é oficial.
    */

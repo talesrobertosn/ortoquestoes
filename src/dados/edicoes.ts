@@ -78,7 +78,7 @@ export function aplicarEdicao(q: Questao, e: EdicaoQuestao | undefined): Questao
 }
 
 /**
- * Prova sem gabarito oficial (TARO 2006 e 2007): a resposta pela bibliografia
+ * Prova sem gabarito oficial (TAROs antigos): a resposta pela bibliografia
  * vira o gabarito de correção, e a questão passa a contar no desempenho. O
  * campo gabaritoBibliografia só fica na questão enquanto é ele que vale; se o
  * painel registrar um gabarito oficial ou anular a questão, ele sai.

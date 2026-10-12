@@ -1407,3 +1407,107 @@ Aproveitamento: `quadril-0685` a `quadril-0708`, 24 autorais, 14 com imagem e 12
 [Mapa regional](netter-joelho-perna.md), [plano](netter-joelho-perna-plano.md), [47 oficiais auditáveis](netter-joelho-perna-recorte.json) e [entrega](netter-joelho-perna-entrega.md). Lidos 74 candidatos oficiais e todas as 82 folhas do capítulo 9. TEOT 2023/2024 retoma o ramo infrapatelar do safeno; TEOT 2023, 0108 e TARO 2026, 0265 cruzam imagem e inserção. Ligamentos, meniscos, compartimentos e pares neurovasculares complementam o repertório. Sem anos ou com duplicatas não se conclui recorrência anual.
 
 Aproveitamento: `joelho-0343` a `joelho-0378`, 36 autorais, 23 com figura, 21 adaptações distintas. Somente anatomia: osso, fixações dos cruzados e meniscos, colaterais, músculos e inserções, nervos cutâneos/motores e vasos. O item do tendão plantar ficou textual por proximidade visual com o tendão calcâneo. Tabelas de exame físico com erros nervosos, números fixos de variantes e relações contraditórias ficaram fora. Conteúdo anterior de joelho preservado.
+
+## Fraturas diafisárias do rádio e da ulna no adulto (engenharia reversa em 12/10/2026)
+
+Leitura de todos os enunciados, alternativas e gabaritos do recorte, antes de receber o capítulo.
+Comando: `mapear_banca.py` com Monteggia, Galeazzi, diáfise do rádio, da ulna e do antebraço,
+"ossos do antebraço", cassetete e placa no antebraço, mais o subtema "Fraturas diafisárias do
+antebraço", nos temas trauma, ombro-cotovelo, mão e pediatria. Nenhuma questão foi redigida nesta etapa.
+
+### Recorte e depuração
+
+- 75 oficiais no recorte; 69 de TEOT/TARO com 4 alternativas entram nas medidas. Anos: 2007 a 2026
+  sem lacuna longa (2010: 7; 2011: 6; 2012: 5; 2018, 2021 e 2025: 5; 2026: 4). **Cai praticamente
+  todo ano**, com 22 questões de 2018 em diante.
+- Duplicatas: trauma-0308 = trauma-0942 (TARO 2016, ramo profundo do radial); trauma-0311,
+  trauma-0893 e trauma-0944 são a mesma questão de Galeazzi (TARO 2010). Contar uma vez cada.
+- Fora do núcleo adulto: teste de Galeazzi da displasia do quadril (pediatria-0266/0457), fratura por
+  estresse (trauma-0065), coronoide de O'Driscoll (trauma-0055), lesão fisária do ginasta
+  (pediatria-0585). Pediatria lida à parte (refratura, deformidade plástica, BLOUNT, avaliação
+  rotacional pela tuberosidade e eminência tenar, remodelação): não transferir ao adulto.
+- Essex-Lopresti (trauma-0028, 0431, 0819) é vizinho: entra como distrator e no contraste com
+  Galeazzi, mas o capítulo próprio é o da cabeça radial (já há simulado trauma-1419).
+- 13 sem gabarito (TARO 2006 a 2010, certo/errado e itens sem chave). Servem de repertório, não de
+  fato carimbado.
+
+### Fatos cobrados, com prova e ano
+
+| Grupo | Resposta registrada | Prova, ano e id |
+|---|---|---|
+| Monteggia, BADO | Luxação posterior da cabeça radial = tipo II | TARO 2014 trauma-0158; TARO 2015 trauma-0128 |
+| Monteggia, BADO | Tipo quase exclusivo do adulto = II | TARO 2025 trauma-0804 |
+| Monteggia, BADO | Piores resultados no adulto = II | TARO 2017 trauma-0089 |
+| Monteggia, subtipo | Tipo II na junção metáfise-diáfise da ulna = IIB (JUPITER) | TEOT 2025 trauma-0761 |
+| Monteggia, conduta | Tipo I após redução incruenta: supinado e cotovelo a 110 graus | TARO 2020 trauma-0005 |
+| Monteggia, complicação | Nervo mais acometido = interósseo posterior | TARO 2010 trauma-0891; TARO 2015 trauma-0144; TARO 2009 trauma-1025 (criança) |
+| Monteggia, sinostose | Maior incidência no tipo IV | TARO 2013 trauma-1090 |
+| Monteggia, falha | Subluxação radial após osteossíntese = redução não anatômica da ulna | TARO 2012 ombro-cotovelo-0325 |
+| Monteggia crônica | BELL-TAWSE reconstrói o anular com tríceps | TARO 2011 trauma-0868; TEOT 2023 trauma-0332 |
+| Galeazzi, mecanismo | Antebraço pronado e punho estendido | TARO 2010 trauma-0311 (três cópias) |
+| Galeazzi, mecanismo fino | Ápice volar = supinação com punho estendido | TARO 2023 trauma-0437 |
+| Galeazzi, RUD instável | Encurtamento do rádio > 5 mm e traço até 7,5 cm da articulação | TARO 2022 trauma-0231; repertório TARO 2020 trauma-1110 e TARO 2007 trauma-1115 (sem chave) |
+| Galeazzi, tratamento | Redução cruenta e placa de compressão | TARO 2011 trauma-0858 |
+| RUD irredutível | Interposição do extensor ulnar do carpo | sem ano trauma-0909 |
+| Deformidade | Maior deformidade rotacional entre supinador e pronador redondo | TARO 2026 trauma-1019 |
+| Deformidade | Fratura proximal do rádio: fragmento proximal pelo supinador e bíceps | TARO 2015 trauma-0145 |
+| Imagem | Tuberosidade bicipital: cotovelo a 90 graus e fonte com 20 graus | TARO 2021 trauma-0066 |
+| Anatomia | Ramo profundo do radial junto à artéria interóssea posterior | TARO 2016 trauma-0308 |
+| Anatomia | Coxim móvel: braquiorradial e extensores radiais longo e curto | TARO 2018 mao-0027 |
+| Acesso | THOMPSON prolonga a via de KAPLAN; figuras de músculo (FSD, origem do ALP) | TARO 2026 trauma-0990, 0991, 0992 |
+| Acesso | HENRY proximal: artéria radial em maior risco (gabarito registrado) | TARO 2011 trauma-0866 |
+| Complicação cirúrgica | Mais frequente = neuropraxia do interósseo posterior | TARO 2019 trauma-0033; TEOT 2023 trauma-1107 |
+| Sinostose | Terço proximal e incisão única | TARO 2017 trauma-0086 |
+| Síndrome compartimental | Descomprimir todos os compartimentos; na arma de fogo, ligada à cominuição; FPD e FLP os mais acometidos | TARO 2024 trauma-0668; TARO 2010 trauma-0880; TARO 2007 trauma-1117 |
+| Epidemiologia | Homem abaixo de 40 anos | TEOT 2024 trauma-0573 |
+| Implante | Haste na fratura segmentar de ambos; haste dificulta exploração neurovascular | TARO 2018 trauma-0060; TARO 2010 trauma-0884 |
+| Exposta | Emergência com fixador monolateral (gabarito antigo) | TARO 2011 trauma-0873 |
+
+### Tendência
+
+De 2023 a 2026: subtipo de JUPITER, BADO II do adulto, mecanismo fino do Galeazzi (ápice volar),
+sinal clínico do Essex-Lopresti, síndrome compartimental, epidemiologia, neuropraxia do NIP,
+zona de deformidade rotacional e, em 2026, **acesso de THOMPSON e figuras anatômicas com seta**.
+A banca saiu do "qual o tipo de BADO" puro para mecânica, anatomia aplicada e imagem.
+
+### Forma medida
+
+Enunciado mediano 102 caracteres, alternativa mediana 28; 54 terminam em palavra e 15 em
+dois-pontos; quase nenhum caso clínico; imagem em 3 (todas recentes). Aberturas: "Na fratura" (18),
+"A fratura" (7), "Na fratura-luxação" (5), "Na lesão" (4). **Um terço em par 2 × 2** (23 de 69):
+sexo × idade, mm × cm, pronação/supinação × flexão/extensão do punho, neuropraxia/neurotmese ×
+nervo, incisão única/dupla × terço, ângulo do cotovelo × posição do antebraço. Gabarito do recorte
+A7 B18 C18 D19: equilibrar o lote e não esvaziar o A.
+
+### Como o examinador pensa
+
+1. **O epônimo pede o tipo ou o gesto.** BADO por número romano ou arábico; BELL-TAWSE pela
+   estrutura doadora (tríceps contra bíceps); THOMPSON pela via que prolonga.
+2. **O nervo é quase sempre o interósseo posterior.** Os distratores são interósseo anterior, ulnar
+   e ramo superficial do radial; a variação está no gesto (neuropraxia contra neurotmese).
+3. **Espelhos.** Pronado contra supinado, punho fletido contra estendido, 2 contra 5 mm, 7,5
+   contra 10 cm, incisão única contra dupla, terço proximal contra distal.
+4. **Mecânica pela inserção muscular.** Supinador, bíceps, pronador redondo e pronador quadrado
+   definem o desvio e a zona de maior rotação.
+5. **Fato verdadeiro de outro contexto como distrator.** Essex-Lopresti contra Galeazzi, conduta
+   pediátrica contra adulta, fixador da exposta contra placa definitiva.
+
+### Divergências e lacunas para conferir no capítulo
+
+- **BADO mais comum no adulto:** TARO 2013 (trauma-1094) registra II; TARO 2018 (trauma-0044)
+  registra I. TARO 2025 diz que o II é quase exclusivo do adulto. Seguir o capítulo e citar as duas
+  chaves no comentário; não perguntar "o mais comum" sem a fonte.
+- **HENRY proximal:** gabarito artéria radial (TARO 2011); o ensino corrente destaca também o NIP
+  ao supinar. Conferir.
+- **Exposta:** gabarito de 2011 com fixador; a literatura atual aceita placa imediata após
+  desbridamento. Se o capítulo disser isso, cobrar o capítulo e explicar a mudança.
+- **Lacunas com cara de prova:** arco radial (magnitude e local da curvatura máxima e a rotação),
+  placa de compressão com seis corticais de cada lado, fratura isolada da ulna (cassetete) e limites
+  do conservador, banda central da membrana interóssea, refratura após retirada da placa, acesso
+  subcutâneo da ulna, posição de fixação da RUD no Galeazzi, equivalentes de Monteggia e Galeazzi,
+  pseudartrose e enxerto.
+
+### O que já existe
+
+Simulados no recorte: trauma-1243 (estresse) e trauma-1430 (Monteggia posterior do adulto, redução
+radiocapitelar); anatomia do antebraço do Netter em mao-1264 a 1281. Não repetir.

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Passa a valer, no desempenho, a resposta pela bibliografia de provas sem gabarito oficial.
 
-Algumas provas antigas (TARO 2006 e 2007) nunca tiveram o gabarito divulgado
+Algumas provas (os TAROs de 2006 a 2010, entre outros) nunca tiveram o gabarito divulgado
 pela banca. O comentário dessas questões já traz a letra que a bibliografia
 sustenta ("provavel"), mas a questão continuava com gabarito vazio: a resposta
 era registrada como neutra e não entrava no desempenho.
