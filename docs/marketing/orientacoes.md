@@ -90,3 +90,6 @@ Tales aprovou a **Tabela de Snellen** (feed, para questões em que uma palavra d
 
 ## Entregar antes de pedir (orientação de 12/10/2026)
 Em propaganda, comece entregando algo útil, de preferência uma questão real com a resposta e a explicação, e só depois peça algo em troca (seguir, testar, entrar no site). A propaganda vem leve e sem preço. Se algum valor precisar aparecer, que seja bem pequeno. O Cupom fiscal na versão "questão primeiro" é o modelo desse formato.
+
+## VAR da questão aprovado em 12/10/2026
+Tales aprovou o **VAR da questão** (feed e stories): visual de transmissão esportiva em que cada alternativa é revisada como um lance, anulado ou gol validado. É bom para questões de pares ou combinações de itens. [Guia completo e modelo executável](../../marketing/instagram/estilos/VAR-DA-QUESTAO.md).

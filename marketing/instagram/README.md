@@ -227,3 +227,6 @@ Modelos aprovados por Tales em 11/10/2026: [Cofre de duas chaves](estilos/cofre-
 
 ## Arsenal aprovado: Snellen e Cupom fiscal
 Modelos aprovados por Tales em 12/10/2026: a [Tabela de Snellen](estilos/snellen/modelo.html), com cinco imagens de feed de questão, e o [Cupom fiscal](estilos/cupom-fiscal/modelo.html), com três stories: questão primeiro e propaganda leve sem preço (variante com preço em `modelo-preco.html`). O [guia](estilos/SNELLEN-E-CUPOM.md) traz roteiro, regras de preço e revisão.
+
+## Arsenal aprovado: VAR da questão
+Modelo aprovado por Tales em 12/10/2026: o [VAR da questão](estilos/var-da-questao/modelo.html), com cinco imagens de feed e três stories no mesmo arquivo. O [guia](estilos/VAR-DA-QUESTAO.md) traz quando usar, roteiro e revisão.
