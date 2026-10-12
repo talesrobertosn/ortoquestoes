@@ -3,8 +3,11 @@ import { AREAS, focoPorQuestao, idsDoFoco, pesoIncidenciaDoTema, posicaoDaArea, 
 
 /**
  * Cronograma até a prova. Tudo é recalculado a cada dia a partir do que a pessoa
- * já respondeu: atrasou, a meta sobe um pouco; adiantou, ela desce. A última
- * semana antes da prova fica reservada para a reta final (erros e simulado).
+ * já respondeu: atrasou, a meta sobe um pouco; adiantou, ela desce. As duas
+ * últimas semanas antes da prova são a reta final, sem conteúdo novo: a
+ * penúltima é de revisão forte (erros, dúvidas e o que mais cai) e a última,
+ * o modo prova (simulado cronometrado, os erros que importam e o resumão).
+ * Plano com menos de 6 semanas tem reta final de uma semana só.
  * Os temas que mais caem na prova ganham mais espaço e vêm antes, e dentro de
  * cada tema o dia começa pelos assuntos mais cobrados.
  *
@@ -37,7 +40,17 @@ export const ROTULO_INTENSIDADE: Record<Intensidade, { nome: string; texto: stri
   firme: { nome: 'Firme', texto: '80% das questões que faltam. O equilíbrio para a maioria.' },
   completo: { nome: 'Completo', texto: 'Todas as questões que faltam. Para quem quer ver o acervo inteiro.' },
 }
-export const DIAS_RETA_FINAL = 7
+/** Reta final completa (duas semanas) e a curta, para planos com menos de 6 semanas. */
+export const DIAS_RETA_FINAL = 14
+export const DIAS_RETA_FINAL_CURTA = 7
+/** Semana do modo prova: os últimos 7 dias, véspera incluída. */
+export const DIAS_MODO_PROVA = 7
+/** Duas semanas de reta final só quando o plano começou com 6 semanas ou mais. */
+export function diasRetaFinal(criadoEm: string, dataProva: string): number {
+  return diasEntre(meiaNoite(new Date(criadoEm)), dataLocal(dataProva)) >= 42 ? DIAS_RETA_FINAL : DIAS_RETA_FINAL_CURTA
+}
+/** conteudo: questões novas; revisao: semana −2; prova: semana −1; vespera: o dia anterior. */
+export type FaseCronograma = 'conteudo' | 'revisao' | 'prova' | 'vespera' | 'passou'
 const DIA = 86_400_000
 
 /** Meia-noite local de uma data "AAAA-MM-DD". */
@@ -57,9 +70,14 @@ export function diasDeEstudo(inicio: Date, fim: Date, folgas: number[]): number 
   return n
 }
 
-export interface RegistroMinimo { c: boolean | null; q?: number; historico?: Array<{ em: number; correta: boolean | null }> }
+export interface RegistroMinimo { c: boolean | null; q?: number; confianca?: 'seguro' | 'duvida' | 'chute'; historico?: Array<{ em: number; correta: boolean | null }> }
 
-export interface TemaPlano { slug: string; nome: string; faltam: number; acerto: number | null; respondidas: number; reforcado: boolean; incidencia: number }
+/**
+ * acerto: o real, a partir de 10 respostas. acertoEstimado: a partir de 3,
+ * puxado para a média geral quando há poucas respostas (o diagnóstico já
+ * calibra o plano sem esperar 10 por tema). Acerto marcado como chute vale meio.
+ */
+export interface TemaPlano { slug: string; nome: string; faltam: number; acerto: number | null; acertoEstimado: number | null; respondidas: number; reforcado: boolean; incidencia: number }
 /** Um assunto dentro do tema da semana: quantas questões dele entram e quanto ele cai. */
 /** posicao: lugar do assunto no ranking da área (1 = o que mais cai); 0 fora do ranking. */
 export interface AssuntoSemana { nome: string; n: number; nivel: Nivel | 0; posicao: number }
@@ -68,6 +86,14 @@ export interface CalculoPlano {
   diasAteProva: number
   diasEstudoRestantes: number
   inicioRetaFinal: Date
+  /** 14 ou 7 (plano curto). */
+  diasRetaFinal: number
+  /** Início da semana do modo prova (prova − 7 dias) e a véspera. */
+  inicioModoProva: Date
+  vespera: Date
+  fase: FaseCronograma
+  /** Média de questões por dia de estudo planejada: vira a meta da revisão na reta final. */
+  metaMedia: number
   alvo: number
   feitas: number
   restante: number
@@ -89,11 +115,15 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
   const prova = dataLocal(plano.data_prova)
   const simulados = incluiSimulados(plano)
   const criado = meiaNoite(new Date(plano.criado_em))
-  const inicioRetaFinal = new Date(prova.getFullYear(), prova.getMonth(), prova.getDate() - DIAS_RETA_FINAL)
+  const diasFinais = diasRetaFinal(plano.criado_em, plano.data_prova)
+  const inicioRetaFinal = new Date(prova.getFullYear(), prova.getMonth(), prova.getDate() - diasFinais)
+  const inicioModoProva = new Date(prova.getFullYear(), prova.getMonth(), prova.getDate() - DIAS_MODO_PROVA)
+  const vespera = new Date(prova.getFullYear(), prova.getMonth(), prova.getDate() - 1)
   const fimEstudo = inicioRetaFinal > hoje ? inicioRetaFinal : prova
 
   // Acervo por tema: quantas faltam e o acerto de cada um.
   const porTema = new Map<number, { faltam: number; certas: number; erradas: number; respondidas: number }>()
+  // Acerto no chute não é saber: conta meio acerto e meio erro.
   let elegiveis = 0, respondidasNoAcervo = 0
   for (const q of indice.questoes) {
     if (!entraNoPlano(q, simulados)) continue
@@ -103,7 +133,7 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
     if (!r) t.faltam++
     else {
       respondidasNoAcervo++; t.respondidas++
-      if (r.c === true) t.certas++
+      if (r.c === true) { const meio = r.confianca === 'chute' ? 0.5 : 1; t.certas += meio; t.erradas += 1 - meio }
       else if (r.c === false) t.erradas++
     }
     porTema.set(q.t, t)
@@ -116,8 +146,9 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
     const tema = indice.temas[i]
     const validas = t.certas + t.erradas
     const acerto = validas >= 10 ? Math.round((t.certas / validas) * 100) : null
+    const acertoEstimado = validas >= 3 && media !== null ? Math.round(((t.certas + (media / 100) * 5) / (validas + 5)) * 100) : null
     const slug = tema?.slug ?? String(i)
-    return { slug, nome: tema?.nome ?? String(i), faltam: t.faltam, acerto, respondidas: t.respondidas, reforcado: acerto !== null && media !== null && acerto < media - 5, incidencia: pesoIncidenciaDoTema(slug) }
+    return { slug, nome: tema?.nome ?? String(i), faltam: t.faltam, acerto, acertoEstimado, respondidas: t.respondidas, reforcado: acertoEstimado !== null && media !== null && acertoEstimado < media - 5, incidencia: pesoIncidenciaDoTema(slug) }
   })
   const focosPendentes = focosQueFaltam(indice, respondidas)
 
@@ -147,7 +178,7 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
 
   // Distribuição: cada tema pesa pelo que falta, com reforço para os fracos
   // e para os que mais caem na prova.
-  const fator = (t: TemaPlano) => (1 + (t.acerto !== null && media !== null ? Math.min(1.5, Math.max(0, ((media - t.acerto) / 100) * 4)) : 0)) * t.incidencia
+  const fator = (t: TemaPlano) => (1 + (t.acertoEstimado !== null && media !== null ? Math.min(1.5, Math.max(0, ((media - t.acertoEstimado) / 100) * 4)) : 0)) * t.incidencia
   const pesos = temas.filter((t) => t.faltam > 0).map((t) => ({ t, peso: t.faltam * fator(t) }))
   const somaPesos = pesos.reduce((s, p) => s + p.peso, 0)
   const cotas = pesos
@@ -198,7 +229,8 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
     return { assuntos: [...contagem.values()], depois }
   }
   const fila = cotas.map((c) => ({ ...c }))
-  for (let inicio = segunda; inicio < fimEstudo && semanas.length < 80; inicio = new Date(inicio.getFullYear(), inicio.getMonth(), inicio.getDate() + 7)) {
+  // Na reta final não entra conteúdo novo: não há semanas de tema para mostrar.
+  for (let inicio = segunda; hoje < inicioRetaFinal && inicio < fimEstudo && semanas.length < 80; inicio = new Date(inicio.getFullYear(), inicio.getMonth(), inicio.getDate() + 7)) {
     const fimSemana = new Date(inicio.getFullYear(), inicio.getMonth(), inicio.getDate() + 7)
     const de = inicio < hoje ? hoje : inicio
     const ate = fimSemana > fimEstudo ? fimEstudo : fimSemana
@@ -221,9 +253,12 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
   const primeiraSemana = semanas.find((s) => s.atual && s.temas.length)
   const hojeTarefa = primeiraSemana && faltaHoje > 0 ? { slug: primeiraSemana.temas[0].slug, nome: primeiraSemana.temas[0].nome, n: Math.min(faltaHoje, 100), focos: primeiraSemana.temas[0].focos } : null
 
+  const metaMedia = Math.max(20, Math.min(80, Math.round(alvo / totalDiasPlano) || 30))
+  const fase: FaseCronograma = hoje >= prova ? 'passou' : hoje >= vespera ? 'vespera' : hoje >= inicioModoProva ? 'prova' : hoje >= inicioRetaFinal ? 'revisao' : 'conteudo'
+
   return {
     diasAteProva: diasEntre(hoje, prova),
-    diasEstudoRestantes, inicioRetaFinal, alvo, feitas, restante, metaDiaria, feitasHoje, faltaHoje,
+    diasEstudoRestantes, inicioRetaFinal, diasRetaFinal: diasFinais, inicioModoProva, vespera, fase, metaMedia, alvo, feitas, restante, metaDiaria, feitasHoje, faltaHoje,
     esperadoAteHoje, ritmo, temas, semanas, hoje: hojeTarefa,
     naRetaFinal: hoje >= inicioRetaFinal && hoje < prova,
     provaPassou: hoje >= prova,

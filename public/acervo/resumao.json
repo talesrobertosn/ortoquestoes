@@ -1,0 +1,2428 @@
+{
+  "geradoEm": "2026-10-12",
+  "total": 415,
+  "areas": [
+    {
+      "nome": "Trauma adulto",
+      "slug": "trauma",
+      "focos": [
+        {
+          "nome": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "O'Driscoll **II** = **faceta anteromedial**, instabilidade **posteromedial em varo**, geralmente com fixação.",
+              "id": "trauma-0757"
+            },
+            {
+              "texto": "As fraturas parciais da cabeça do rádio acometem mais o quadrante **anterolateral**.",
+              "id": "trauma-0805"
+            },
+            {
+              "texto": "A fratura da faceta anteromedial vem de compressão axial com **varo e pronação**.",
+              "id": "trauma-0806"
+            },
+            {
+              "texto": "Lesão do **interósseo posterior** na Monteggia é mais comum no **tipo III** de Bado (lateral); geralmente neuropraxia que recupera.",
+              "id": "trauma-0772"
+            }
+          ]
+        },
+        {
+          "nome": "Luxação do joelho e lesões ligamentares",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Regra de **Coventry**: 1 mm de base por grau de correção; para a banca, válida numa tíbia de **67 mm** de largura.",
+              "id": "trauma-1021"
+            },
+            {
+              "texto": "LCA: feixe **anteromedial** tenso na **flexão**; **posterolateral** tenso na **extensão**.",
+              "id": "trauma-1022"
+            },
+            {
+              "texto": "Área triangular na face posterior proximal da tíbia, **acima da linha do sóleo** = inserção do **poplíteo**.",
+              "id": "trauma-1023"
+            },
+            {
+              "texto": "A gaveta anterior é **negativa em extensão completa**, mesmo com LCA roto (joelho travado); o Lachman, a 20 a 30 graus, é o mais sensível.",
+              "id": "trauma-1024"
+            }
+          ]
+        },
+        {
+          "nome": "Fraturas da coluna toracolombar",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Fratura do limbo tipo **IV** (Takata modificada por Epstein) = compromete **toda a parede posterior** do corpo vertebral.",
+              "id": "trauma-0997"
+            },
+            {
+              "texto": "Cimentação vertebral: extravasamento em até cerca de **90%** (procurado na tomografia), mas complicação neurológica em cerca de **0,1%**.",
+              "id": "trauma-0754"
+            },
+            {
+              "texto": "Morfologia no **TLICS**: compressão 1, explosão 2, translação 3, **distração 4** (a maior); no SLIC, translação 4 e distração 3.",
+              "id": "trauma-0797"
+            },
+            {
+              "texto": "Extravasamento de cimento mais frequente = **espaço discal** (pela placa terminal fraturada); epidural e venoso são mais raros e mais perigosos.",
+              "id": "trauma-0807"
+            }
+          ]
+        },
+        {
+          "nome": "Fraturas diafisárias do antebraço",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "A via de Thompson é um prolongamento distal da via de **Kaplan**.",
+              "id": "trauma-0990"
+            },
+            {
+              "texto": "Maior deformidade rotacional do rádio = fratura **entre o supinador e o pronador redondo** (proximal supinado ao máximo, distal pronado).",
+              "id": "trauma-1019"
+            },
+            {
+              "texto": "Monteggia **Bado II** com traço na **junção metáfise-diáfise** da ulna = **IIB** de Jupiter (o mais comum do tipo II).",
+              "id": "trauma-0761"
+            },
+            {
+              "texto": "Fratura diafisária do antebraço no adulto = **homem jovem**, **abaixo dos 40 anos**, **alta energia**; tratamento com **placa** nos dois ossos.",
+              "id": "trauma-0573"
+            }
+          ]
+        },
+        {
+          "nome": "Fratura do úmero proximal",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Na fratura do terço proximal do úmero, a lesão neurológica mais frequente é a do nervo **axilar**.",
+              "id": "trauma-0750"
+            },
+            {
+              "texto": "A queda ao solo sobre o ombro desvia a cabeça em **varo**.",
+              "id": "trauma-0793"
+            },
+            {
+              "texto": "Complicação **mais frequente** da fratura do úmero proximal = **rigidez**; imobilizar pouco e mobilizar cedo.",
+              "id": "trauma-0566"
+            },
+            {
+              "texto": "O procedimento de salvação é a **artroplastia reversa associada à transferência do grande dorsal**.",
+              "id": "trauma-0329"
+            }
+          ]
+        },
+        {
+          "nome": "Síndrome compartimental",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Na perna, o compartimento mais envolvido é o **anterior**, e o cateter vai no **anterior**, a até 5 cm da fratura; delta P menor que 30 mmHg indica fasciotomia.",
+              "id": "trauma-0983"
+            },
+            {
+              "texto": "O pé tem **nove** compartimentos (Manoli); fasciotomia por **duas incisões dorsais** (sobre o **2º e o 4º** metatarsos), com incisão **medial** para o retropé.",
+              "id": "trauma-0999"
+            },
+            {
+              "texto": "São fatores de risco a fratura do terço **proximal** e o sexo **masculino**.",
+              "id": "trauma-0746"
+            },
+            {
+              "texto": "Síndrome compartimental da coxa é **rara** e acomete mais o compartimento **anterior** (quadríceps); fasciotomia por incisão **lateral**.",
+              "id": "trauma-0767"
+            }
+          ]
+        },
+        {
+          "nome": "Fratura da escápula",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Na dissociação escapulotorácica com plexo completo e sem recuperação, a indicação é a **amputação acima do cotovelo**.",
+              "id": "trauma-0982"
+            },
+            {
+              "texto": "No ombro flutuante ligamentar, o fragmento da glenoide se desloca **distal e medialmente**.",
+              "id": "trauma-0320"
+            },
+            {
+              "texto": "A tração excessiva do infraespinal na via de Judet pode lesar o **nervo supraescapular**.",
+              "id": "trauma-0415"
+            },
+            {
+              "texto": "A dissociação escapulotorácica é confirmada com distância **1,5 vez maior** que a contralateral.",
+              "id": "trauma-0194"
+            }
+          ]
+        },
+        {
+          "nome": "Fratura da clavícula",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Na técnica de Mazzocca, o túnel do conoide fica a **45 mm** da superfície articular lateral da clavícula.",
+              "id": "trauma-0796"
+            },
+            {
+              "texto": "A complicação neurovascular mais comum após a fratura da clavícula é a **compressão crônica do plexo braquial**.",
+              "id": "trauma-0569"
+            },
+            {
+              "texto": "Fatores de pseudartrose da clavícula no conservador: **alta energia**, **desvio completo** sem contato, **cominuição**, **encurtamento acima de 2 cm**, idade avançada, sexo feminino, tabagismo.",
+              "id": "trauma-0666"
+            },
+            {
+              "texto": "O fragmento distal sofre translação **anterior, inferior e medial**, com **rotação anterior**.",
+              "id": "trauma-0062"
+            }
+          ]
+        },
+        {
+          "nome": "Fraturas do tálus e do calcâneo",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Fratura do **colo** do tálus com luxação da **subtalar e do tornozelo** = **Hawkins III**; necrose muito frequente; urgência.",
+              "id": "trauma-0764"
+            },
+            {
+              "texto": "Na via do seio do tarso, seciona-se o **ligamento calcaneofibular** para expor a subtalar.",
+              "id": "trauma-0799"
+            },
+            {
+              "texto": "O paciente deve ser acompanhado por pelo menos **36 meses**.",
+              "id": "trauma-0562"
+            },
+            {
+              "texto": "Sanders usa a **faceta posterior** no corte **coronal** da tomografia, no ponto mais largo junto ao sustentáculo.",
+              "id": "trauma-0571"
+            }
+          ]
+        },
+        {
+          "nome": "Fraturas dos metacarpos e falanges",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "A estrutura interposta que impede a redução é a **placa volar**.",
+              "id": "trauma-0664"
+            },
+            {
+              "texto": "Na imobilização de Burkhalter, o punho fica em **40°** de dorsiflexão e as metacarpofalângicas em **70 a 90°** de flexão.",
+              "id": "trauma-0328"
+            },
+            {
+              "texto": "A técnica com perda óssea usa fragmento osteoarticular do **hamato**.",
+              "id": "trauma-0438"
+            },
+            {
+              "texto": "O fragmento menor da fratura de Bennett é mantido pelo ligamento **oblíquo anterior**.",
+              "id": "trauma-0178"
+            }
+          ]
+        },
+        {
+          "nome": "Fratura da patela e lesão do aparelho extensor",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Luxação lateral aguda da patela: lesão osteocondral na borda **inferior e medial** da patela e no côndilo **femoral lateral**.",
+              "id": "trauma-1020"
+            },
+            {
+              "texto": "Osteocondrite da **patela** = rara, **pior prognóstico** que a do côndilo, mais no **polo inferior**; clássica é o côndilo femoral **medial** (face lateral).",
+              "id": "trauma-1029"
+            },
+            {
+              "texto": "Zona hipovascular do tendão do **quadríceps** = **1 a 2 cm** acima do polo superior da patela; ruptura em homens acima de 40 com doenças sistêmicas.",
+              "id": "trauma-1034"
+            },
+            {
+              "texto": "Fragmento **superolateral** de bordas **arredondadas**, pouca dor e extensor íntegro = **patela bipartida** (Saupe III); compare com o outro lado.",
+              "id": "trauma-0570"
+            }
+          ]
+        },
+        {
+          "nome": "Fratura da diáfise do fêmur",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "As lesões associadas à pior evolução são a fratura **exposta da tíbia** e a **intra-articular do joelho**.",
+              "id": "trauma-0748"
+            },
+            {
+              "texto": "Fratura diafisária do fêmur por projétil de **baixa energia** = tratar como fechada, com **haste intramedular**.",
+              "id": "trauma-0568"
+            },
+            {
+              "texto": "Ponto de entrada da haste anterógrada do fêmur arrisca o **nervo glúteo superior** (abdutores) e a **circunflexa femoral medial** (necrose, sobretudo em adolescentes).",
+              "id": "trauma-0578"
+            },
+            {
+              "texto": "O padrão proximal mais comum associado à fratura da diáfise é a fratura **basocervical sem desvio**.",
+              "id": "trauma-0671"
+            }
+          ]
+        },
+        {
+          "nome": "Fratura do anel pélvico",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "**Morel-Lavallée** = desenluvamento fechado sobre o **trocanter maior** e a região lombossacra; associa-se a fraturas **pélvicas**, acetabulares e **sacrais**; aumenta a infecção se não tratada.",
+              "id": "trauma-0988"
+            },
+            {
+              "texto": "A lesão geniturinária é mais comum em **homens**, e a mais comum é **extraperitoneal**.",
+              "id": "trauma-0756"
+            },
+            {
+              "texto": "Denis: fraturas mais frequentes na **zona I**; lesões neurológicas mais frequentes na **zona III**.",
+              "id": "trauma-1044"
+            },
+            {
+              "texto": "O **sinal da lágrima** = **tábuas interna e externa** do ílio sobrepostas, com o **topo da incisura isquiática maior** como limite inferior; o pino vai dentro da gota.",
+              "id": "trauma-0423"
+            }
+          ]
+        },
+        {
+          "nome": "Fratura do planalto tibial",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "O Schatzker IV vem de **varo** e se associa à lesão do **complexo ligamentar lateral**.",
+              "id": "trauma-0572"
+            },
+            {
+              "texto": "Planalto **lateral** com **cisalhamento e afundamento** = Schatzker **II**; split puro = I; afundamento puro = III.",
+              "id": "trauma-1014"
+            },
+            {
+              "texto": "Kfuri e Schatzker dividem o planalto em anterior e posterior pelo **limite anterior da cabeça da fíbula** e pelo **limite posterior da inserção do LCM**.",
+              "id": "trauma-1036"
+            },
+            {
+              "texto": "No osso osteoporótico, o padrão típico é a **depressão central**.",
+              "id": "trauma-0204"
+            }
+          ]
+        },
+        {
+          "nome": "Fraturas por estresse",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Cimentação vertebral: extravasamento em até cerca de **90%** (procurado na tomografia), mas complicação neurológica em cerca de **0,1%**.",
+              "id": "trauma-0754"
+            },
+            {
+              "texto": "Insuficiência crônica do **LCP** = artrose progressiva na **patelofemoral** e no **tibiofemoral medial**.",
+              "id": "trauma-1028"
+            },
+            {
+              "texto": "Nas mulheres, a fratura vem de **anorexia nervosa, osteoporose e amenorreia**; nos homens, de **esforço físico intenso de repetição**.",
+              "id": "trauma-0564"
+            },
+            {
+              "texto": "A tríade é anorexia com **oligomenorreia ou amenorreia** e **baixa densidade óssea**.",
+              "id": "trauma-0677"
+            }
+          ]
+        },
+        {
+          "nome": "Fratura do úmero distal",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "A sequência correta é **fixação externa e reparo vascular**.",
+              "id": "trauma-0986"
+            },
+            {
+              "texto": "Bryan e Morrey **III** (**Broberg-Morrey**) = capítulo **cominutivo**, multifragmentar; I Hahn-Steinthal, II Kocher-Lorenz, IV McKee (tróclea).",
+              "id": "trauma-0987"
+            },
+            {
+              "texto": "Tróclea **fragmentada**, **esclerótica** e achatada após trauma do cotovelo = **osteonecrose da tróclea** (na criança, deformidade em **cauda de peixe**).",
+              "id": "trauma-0579"
+            },
+            {
+              "texto": "Fratura supracondiliana com cominuição articular: o **LCA** pode sair com um **fragmento osteocondral**, que deve ser **reparado** na fixação; a poplítea é fixa no hiato dos adutores (proximal) e no arco do sóleo (distal).",
+              "id": "trauma-1004"
+            }
+          ]
+        },
+        {
+          "nome": "Fratura da diáfise da tíbia",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "A abordagem é **anterolateral**, e a estrutura distal em risco é o **nervo fibular superficial**.",
+              "id": "trauma-0996"
+            },
+            {
+              "texto": "As lesões associadas à pior evolução são a fratura **exposta da tíbia** e a **intra-articular do joelho**.",
+              "id": "trauma-0748"
+            },
+            {
+              "texto": "O ponto de entrada excessivamente medial provoca desvio em **valgo**.",
+              "id": "trauma-0575"
+            },
+            {
+              "texto": "Haste na tíbia proximal: deformidade mais comum = **valgo** e **procurvato** (fragmento proximal **anterior**); prevenir com semiextensão, ponto de entrada correto e parafusos de Poller.",
+              "id": "trauma-0675"
+            }
+          ]
+        },
+        {
+          "nome": "Fratura subtrocantérica",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "O ponto de entrada excessivamente lateral favorece o mau alinhamento em **varo**.",
+              "id": "trauma-0752"
+            },
+            {
+              "texto": "A haste cefalomedular tem **menor braço de alavanca** e **menor colapso em varo** que o DHS.",
+              "id": "trauma-0424"
+            },
+            {
+              "texto": "A classificação de Russell-Taylor considera a extensão para a **fossa piriforme** e o envolvimento do **pequeno trocânter**.",
+              "id": "trauma-0201"
+            },
+            {
+              "texto": "A fratura atípica do fêmur está associada ao uso prolongado de **bisfosfonatos**.",
+              "id": "trauma-0213"
+            }
+          ]
+        },
+        {
+          "nome": "Fratura do colo do fêmur",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Segunda fratura do quadril em 2 anos: cerca de **5% nos homens**; em **mais de 70%**, do **mesmo tipo** da primeira; tratar a osteoporose e prevenir quedas.",
+              "id": "trauma-0670"
+            },
+            {
+              "texto": "O padrão proximal mais comum associado à fratura da diáfise é a fratura **basocervical sem desvio**.",
+              "id": "trauma-0671"
+            },
+            {
+              "texto": "A tríade é anorexia com **oligomenorreia ou amenorreia** e **baixa densidade óssea**.",
+              "id": "trauma-0677"
+            },
+            {
+              "texto": "**anteversão femoral** + rotação interna do fêmur distal + **torção tibial externa** = **aumento** do ângulo Q (mau alinhamento miserável).",
+              "id": "trauma-1003"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "Ortopedia pediátrica",
+      "slug": "pediatria",
+      "focos": [
+        {
+          "nome": "Lesões fisárias",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Salter-Harris III e IV desviadas pedem redução aberta anatômica e fixação; o fragmento de Thurston-Holland é metafisário (tipo II); o tipo IV tem alto risco de distúrbio de crescimento.",
+              "id": "pediatria-0909"
+            }
+          ]
+        },
+        {
+          "nome": "Genuvaro, genuvalgo e torções",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Hennigan e Kuo = maioria na **zona 2**.",
+              "id": "pediatria-0149"
+            }
+          ]
+        },
+        {
+          "nome": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "A fratura mais associada à luxação do cotovelo na criança é a avulsão do epicôndilo medial, que pode ficar encarcerada na articulação.",
+              "id": "pediatria-0906"
+            }
+          ]
+        },
+        {
+          "nome": "Fraturas do fêmur e da perna na criança",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Fratura femoral instável em comprimento (oblíqua longa, cominutiva) entre 5 e 11 anos: placa submuscular em ponte (ou fixador externo); hastes flexíveis ficam para as estáveis.",
+              "id": "pediatria-0907"
+            }
+          ]
+        },
+        {
+          "nome": "Displasia do desenvolvimento do quadril",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "O Pavlik **impede extensão e adução** e **permite flexão e abdução**; sem redução em 3 a 4 semanas, suspender.",
+              "id": "pediatria-0519"
+            },
+            {
+              "texto": "Para acompanhar a resposta ao tratamento da infecção osteoarticular na criança, use a **PCR**.",
+              "id": "pediatria-0887"
+            }
+          ]
+        },
+        {
+          "nome": "Displasias esqueléticas e síndromes",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Baixa estatura + cabelo fino e claro + infecções (varicela grave) + origem finlandesa ou Amish = **McKusick**.",
+              "id": "pediatria-0504"
+            },
+            {
+              "texto": "Charcot-Marie-Tooth faz parte das **neuropatias hereditárias**; a banca aceitou a denominação neuropatias motoras hereditárias.",
+              "id": "pediatria-0507"
+            }
+          ]
+        },
+        {
+          "nome": "Artrogripose e doenças neuromusculares",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Charcot-Marie-Tooth faz parte das **neuropatias hereditárias**; a banca aceitou a denominação neuropatias motoras hereditárias.",
+              "id": "pediatria-0507"
+            }
+          ]
+        },
+        {
+          "nome": "Joelho da criança",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Instabilidade na RM = **hipersinal em T2 entre a lesão e o osso subcondral**.",
+              "id": "pediatria-0553"
+            },
+            {
+              "texto": "Para acompanhar a resposta ao tratamento da infecção osteoarticular na criança, use a **PCR**.",
+              "id": "pediatria-0887"
+            }
+          ]
+        },
+        {
+          "nome": "Marcha na criança",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Abdutores cerca de **2,5 vezes o peso**; cabeça femoral cerca de **3 vezes**; elevação da perna estendida com carga **semelhante à do apoio**.",
+              "id": "pediatria-0285"
+            }
+          ]
+        },
+        {
+          "nome": "Epifisiólise proximal do fêmur",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Osteotomia subcapital = **Dunn**.",
+              "id": "pediatria-0273"
+            },
+            {
+              "texto": "Linha na borda do colo = **Klein**; não cortar a epífise = **Trethowan**.",
+              "id": "pediatria-0449"
+            }
+          ]
+        },
+        {
+          "nome": "Coluna e pescoço da criança",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "O nervo do ECM e do trapézio, que cruza o triângulo posterior, é o **acessório (XI)**.",
+              "id": "pediatria-0288"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "Mão e punho",
+      "slug": "mao",
+      "focos": [
+        {
+          "nome": "Anatomia da mão e punho",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Origem larga cruzando a membrana nos dois ossos = **abdutor longo do polegar**.",
+              "id": "mao-0570"
+            },
+            {
+              "texto": "Músculo mais medial da camada superficial = **flexor ulnar do carpo**.",
+              "id": "mao-0408"
+            },
+            {
+              "texto": "Músculo coberto pelo ERLC, 2ª camada radial = **extensor radial curto do carpo**.",
+              "id": "mao-0410"
+            },
+            {
+              "texto": "O membro superior roda **90° lateralmente na 7ª semana**.",
+              "id": "mao-0411"
+            }
+          ]
+        },
+        {
+          "nome": "Neuropatia ulnar e outras compressões",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Tensão máxima no ulnar = cotovelo em **flexão e pronação máximas**.",
+              "id": "mao-0407"
+            },
+            {
+              "texto": "Cutâneo lateral do antebraço piora com o cotovelo em **extensão e pronação**.",
+              "id": "mao-0428"
+            },
+            {
+              "texto": "Manobra que corrige a garra = **Bouvier**.",
+              "id": "mao-0433"
+            },
+            {
+              "texto": "Compressão do pronador = polegar na região **proximal e lateral** do músculo.",
+              "id": "mao-0308"
+            }
+          ]
+        },
+        {
+          "nome": "Lesões dos tendões flexores",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Enxerto preferencial para tendão flexor = **palmar longo**.",
+              "id": "mao-0572"
+            },
+            {
+              "texto": "Tenotomia da banda central no martelo crônico = **Fowler**.",
+              "id": "mao-0435"
+            },
+            {
+              "texto": "Na zona I, a sutura direta é feita quando o intervalo entre os cotos do flexor profundo é de até 1 cm.",
+              "id": "mao-0152"
+            },
+            {
+              "texto": "Bandas laterais unidas no dorso da IFP = **Aiache**.",
+              "id": "mao-0183"
+            }
+          ]
+        },
+        {
+          "nome": "Lesões dos tendões extensores",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "3º compartimento extensor = **extensor longo do polegar**, sozinho.",
+              "id": "mao-0578"
+            },
+            {
+              "texto": "Bandas laterais unidas no dorso da IFP = **Aiache**.",
+              "id": "mao-0183"
+            },
+            {
+              "texto": "A lesão traumática da banda sagital é mais comum no dedo médio, na porção radial, com o tendão caindo para ulnar.",
+              "id": "mao-0039"
+            },
+            {
+              "texto": "As lesões dos extensores do polegar ao nível do punho ficam na zona T-V de Verdan.",
+              "id": "mao-0106"
+            }
+          ]
+        },
+        {
+          "nome": "Exame físico da mão e punho",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Nervo junto à basílica no braço = **cutâneo medial do antebraço**.",
+              "id": "mao-0574"
+            },
+            {
+              "texto": "Perda da sensibilidade protetora = filamento **vermelho** nas escalas conhecidas; o gabarito oficial marcou **amarelo**.",
+              "id": "mao-0576"
+            },
+            {
+              "texto": "Antes do retalho chinês = **teste de Allen**.",
+              "id": "mao-0413"
+            },
+            {
+              "texto": "Manobra IFP estendida × IFD fletida = **ligamento retinacular oblíquo**.",
+              "id": "mao-0419"
+            }
+          ]
+        },
+        {
+          "nome": "Instabilidade do carpo",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Porção mais forte do semilunopiramidal = **volar** (no escafossemilunar é a dorsal).",
+              "id": "mao-0432"
+            },
+            {
+              "texto": "Instabilidade semilunopiramidal = **teste de Masquelet**, conforme o gabarito.",
+              "id": "mao-0311"
+            },
+            {
+              "texto": "A luxação radiocárpica é classificada por Dumontier.",
+              "id": "mao-0259"
+            },
+            {
+              "texto": "O gabarito marca o escafossemilunar, mas a ligação entre rádio e escafoide é feita pelo radioescafocapitato.",
+              "id": "mao-0269"
+            }
+          ]
+        },
+        {
+          "nome": "Lesões de nervos periféricos",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Fascículo do ulnar para o ramo do bíceps = **Oberlin**.",
+              "id": "mao-0437"
+            },
+            {
+              "texto": "Sutura só do envoltório externo = **epineurorrafia**.",
+              "id": "mao-0303"
+            },
+            {
+              "texto": "Lesão da fibra nervosa (axônio e endoneuro) = **Sunderland III**.",
+              "id": "mao-0341"
+            },
+            {
+              "texto": "Fibrilações espontâneas aparecem em **2 a 4 semanas** após a lesão.",
+              "id": "mao-0581"
+            }
+          ]
+        },
+        {
+          "nome": "Doença de Dupuytren",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Corda dorsal ao feixe, junto ao periósteo = **retrovascular**.",
+              "id": "mao-0573"
+            },
+            {
+              "texto": "A progressão é mais rápida nos casos **bilaterais e nos dedos ulnares**.",
+              "id": "mao-0302"
+            },
+            {
+              "texto": "Corda fibrosa da palma aos dedos, com perda progressiva da extensão num homem de meia-idade, é doença de Dupuytren.",
+              "id": "mao-0262"
+            },
+            {
+              "texto": "O gabarito considera a cirurgia de liberação do tecido fibroso (fasciectomia) o tratamento mais comum da doença de Dupuytren.",
+              "id": "mao-0263"
+            }
+          ]
+        },
+        {
+          "nome": "Retalhos e cobertura cutânea",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Antes do retalho chinês = **teste de Allen**.",
+              "id": "mao-0413"
+            },
+            {
+              "texto": "Moberg em ilha com incisão transversa proximal = **O'Brien**.",
+              "id": "mao-0434"
+            },
+            {
+              "texto": "Para perda de pele no dorso da mão, o retalho mais apropriado é o fasciocutâneo.",
+              "id": "mao-0271"
+            },
+            {
+              "texto": "O gabarito considera que o objetivo da zetaplastia é melhorar a estética e a funcionalidade da mão.",
+              "id": "mao-0276"
+            }
+          ]
+        },
+        {
+          "nome": "Mão reumatoide",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Ultrassom nas artropatias inflamatórias = **sinovite** com sensibilidade **comparável à ressonância**.",
+              "id": "mao-0566"
+            },
+            {
+              "texto": "Ordem de prioridade = **punho, polegar, cotovelo e dedos**.",
+              "id": "mao-0405"
+            },
+            {
+              "texto": "Realinhamento dos extensores com rebalanceamento dos intrínsecos no desvio ulnar = **Flatt**.",
+              "id": "mao-0431"
+            },
+            {
+              "texto": "A botoeira dos dedos longos na mão reumatoide é causada pela sinovite inicial da interfalângica proximal.",
+              "id": "mao-0153"
+            }
+          ]
+        },
+        {
+          "nome": "Lesões ligamentares dos dedos",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Coto do colateral ulnar sobre a aponeurose na RM = **Stener**.",
+              "id": "mao-0586"
+            },
+            {
+              "texto": "Na luxação rotatória da IFP, o que impede a redução é a **banda lateral**.",
+              "id": "mao-0304"
+            },
+            {
+              "texto": "A lesão de Stener é a ruptura do ligamento colateral ulnar da metacarpofalângica do polegar, com a aponeurose do adutor interposta.",
+              "id": "mao-0270"
+            },
+            {
+              "texto": "O estabilizador primário da IFP no plano coronal é o ligamento colateral.",
+              "id": "mao-0111"
+            }
+          ]
+        },
+        {
+          "nome": "Plexo braquial e paralisia obstétrica",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Escápula alada ao tentar rodar o ombro na paralisia obstétrica = **sinal de Putti**.",
+              "id": "mao-0409"
+            },
+            {
+              "texto": "Horner na paralisia obstétrica = enoftalmia, **anidrose** facial e **mau prognóstico**.",
+              "id": "mao-0438"
+            },
+            {
+              "texto": "Deslocamento posterior do úmero na paralisia do plexo = **perda da rotação externa**.",
+              "id": "mao-0421"
+            },
+            {
+              "texto": "O critério mais usado para indicar a exploração microcirúrgica é o retorno da flexão do cotovelo.",
+              "id": "mao-0149"
+            }
+          ]
+        },
+        {
+          "nome": "Doença de Kienböck",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Fratura mais comum do semilunar no Kienböck = **polo anterior**.",
+              "id": "mao-0418"
+            },
+            {
+              "texto": "Encurtamento do rádio no Kienböck com ulna minus = **cerca de 2 mm**.",
+              "id": "mao-0430"
+            },
+            {
+              "texto": "Kienböck é mais frequente em homens, no punho dominante de trabalhadores manuais.",
+              "id": "mao-0030"
+            },
+            {
+              "texto": "Lichtman IIIB é o colapso do semilunar com rotação fixa do escafoide em flexão.",
+              "id": "mao-0023"
+            }
+          ]
+        },
+        {
+          "nome": "Rizartrose e artrose da mão",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Osteotomia da base do 1º metacarpo = **10 mm** da articulação, **cunha de 5 mm**.",
+              "id": "mao-0575"
+            },
+            {
+              "texto": "IFP = **Bouchard**; IFD = **Heberden**.",
+              "id": "mao-0306"
+            },
+            {
+              "texto": "O grau IV de Eaton e Littler se diferencia pelo acometimento da articulação escafotrapeziotrapezoide.",
+              "id": "mao-0158"
+            },
+            {
+              "texto": "Artrose monoarticular da metacarpofalângica tem, normalmente, etiologia traumática.",
+              "id": "mao-0036"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "Ombro e cotovelo",
+      "slug": "ombro-cotovelo",
+      "focos": [
+        {
+          "nome": "Lesões do manguito rotador",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Para esta banca, subescapular normal = **bico de pássaro**; tendinopatia = **dorso de golfinho**, espessado e hipoecoico.",
+              "id": "ombro-cotovelo-0443"
+            },
+            {
+              "texto": "Instabilidade com lesão do manguito = **homens acima de 40 anos**; pense em manguito quando o idoso não eleva o braço após luxar.",
+              "id": "ombro-cotovelo-0446"
+            },
+            {
+              "texto": "Ruptura do peitoral maior = contração excêntrica no **supino**, ombro em **abdução e rotação externa** (com extensão); avulsão na inserção umeral é a mais comum.",
+              "id": "ombro-cotovelo-0452"
+            },
+            {
+              "texto": "Não leva a mão às costas após trauma, sem fratura = **subescapular**; no paciente ativo, **reparo cirúrgico precoce**.",
+              "id": "ombro-cotovelo-0454"
+            }
+          ]
+        },
+        {
+          "nome": "Anatomia do ombro",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "O músculo grosso do ângulo inferior da escápula, que forma o limite inferior do espaço quadrangular, é o **redondo maior**.",
+              "id": "ombro-cotovelo-0317"
+            },
+            {
+              "texto": "O músculo em diagonal do lado medial da fossa cubital até a face lateral do rádio é o **pronador redondo**.",
+              "id": "ombro-cotovelo-0320"
+            },
+            {
+              "texto": "O **ERLC** é inervado pelo **radial** antes da divisão; por isso, na lesão do interósseo posterior, o punho estende em desvio radial.",
+              "id": "ombro-cotovelo-0247"
+            },
+            {
+              "texto": "O cordão que cruza a fossa cubital até a tuberosidade do rádio é o **tendão do bíceps**; lateral a medial: tendão, artéria braquial, nervo mediano.",
+              "id": "ombro-cotovelo-0248"
+            }
+          ]
+        },
+        {
+          "nome": "Omartrose e artroplastia do ombro",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "**onlay** lateraliza o úmero: **maior braço de momento** e mais wrap do deltoide, **mais estabilidade** e **menos notching** que o inlay.",
+              "id": "ombro-cotovelo-0444"
+            },
+            {
+              "texto": "Artrose primária do ombro na **axilar** = **subluxação posterior** da cabeça com desgaste posterior da glenoide; artropatia do manguito = migração **superior**.",
+              "id": "ombro-cotovelo-0445"
+            },
+            {
+              "texto": "Topo da cabeça **8 a 10 mm acima** do tubérculo maior; raio da cabeça em torno de **22 a 25 mm**; glenoide perto do neutro, levemente retrovertida.",
+              "id": "ombro-cotovelo-0442"
+            },
+            {
+              "texto": "Artrose primária do ombro gasta a glenoide **posterior** (Walch B, bicôncava); artropatia do manguito gasta em cima; artrite reumatoide, no centro.",
+              "id": "ombro-cotovelo-0172"
+            }
+          ]
+        },
+        {
+          "nome": "Instabilidade anterior do ombro",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Luxação anterior **inveterada** é mais comum em **idosos acima de 50 anos**, com trauma mínimo ou não reconhecido (aparentemente **atraumática**).",
+              "id": "ombro-cotovelo-0448"
+            },
+            {
+              "texto": "**ABER** tensiona o complexo **anteroinferior** e revela Bankart e Perthes; **FABS** é posição do cotovelo para o bíceps distal.",
+              "id": "ombro-cotovelo-0313"
+            },
+            {
+              "texto": "No Latarjet, os nervos em maior risco são o **musculocutâneo** (tração do tendão conjunto) e o **axilar** (divisão do subescapular); o supraescapular corre risco com parafusos longos.",
+              "id": "ombro-cotovelo-0244"
+            },
+            {
+              "texto": "Principal fator de recidiva da luxação anterior = **idade jovem** no primeiro episódio; acima dos 40, pense em **manguito** e **axilar**.",
+              "id": "ombro-cotovelo-0295"
+            }
+          ]
+        },
+        {
+          "nome": "Instabilidade do cotovelo",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Ligamento do epicôndilo lateral à **crista do supinador** da ulna = **LUCL**, que evita a instabilidade rotatória posterolateral.",
+              "id": "ombro-cotovelo-0451"
+            },
+            {
+              "texto": "O componente ligamentar mais importante do cotovelo, contra o valgo, é o **feixe anterior** do colateral medial; o transverso quase não estabiliza.",
+              "id": "ombro-cotovelo-0249"
+            },
+            {
+              "texto": "A porção **anterior** do colateral ulnar (epicôndilo medial ao tubérculo sublime) é o principal restritor ao **valgo**; posterior forma o assoalho do túnel cubital; transversa não estabiliza.",
+              "id": "ombro-cotovelo-0121"
+            },
+            {
+              "texto": "Instabilidade rotatória **posterolateral** do cotovelo = insuficiência da **banda ulnar do colateral lateral** (LUCL); a banda anterior do colateral medial é do **valgo**.",
+              "id": "ombro-cotovelo-0064"
+            }
+          ]
+        },
+        {
+          "nome": "Lesões do bíceps",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "No reparo do bíceps distal por via **anterior única**, a estrutura mais lesada é o **nervo cutâneo lateral do antebraço**.",
+              "id": "ombro-cotovelo-0449"
+            },
+            {
+              "texto": "Tendão anterior da fossa cubital indo à tuberosidade do **rádio** = **bíceps distal**; FABS mostra o tendão em um corte.",
+              "id": "ombro-cotovelo-0450"
+            },
+            {
+              "texto": "Ruptura do peitoral maior = contração excêntrica no **supino**, ombro em **abdução e rotação externa** (com extensão); avulsão na inserção umeral é a mais comum.",
+              "id": "ombro-cotovelo-0452"
+            },
+            {
+              "texto": "Bíceps luxado **medialmente** = lesão da polia, quase sempre com **lesão do subescapular**.",
+              "id": "ombro-cotovelo-0311"
+            }
+          ]
+        },
+        {
+          "nome": "Exame físico do ombro",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "**milking** = puxar o polegar com cotovelo fletido e supinado (colateral medial); moving valgus = valgo em movimento, dor entre 120 e 70 graus; pivot shift = PLRI.",
+              "id": "ombro-cotovelo-0319"
+            },
+            {
+              "texto": "Sinal do corneteiro de Patte = **redondo menor**; presente, indica lesão posterossuperior maciça e pior prognóstico.",
+              "id": "ombro-cotovelo-0173"
+            },
+            {
+              "texto": "Mão no ombro oposto resistindo à tentativa de afastá-la: **bear hug**, teste do **subescapular**; Jobe é do supraespinal, Hawkins e Yocum são de impacto.",
+              "id": "ombro-cotovelo-0056"
+            },
+            {
+              "texto": "Yocum é **mão no ombro oposto e elevação ativa do cotovelo**; Neer é passivo, Hawkins é rotação interna forçada a 90 graus.",
+              "id": "ombro-cotovelo-0013"
+            }
+          ]
+        },
+        {
+          "nome": "Artroscopia e vias de acesso do ombro",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Na via lateral, a artrotomia é **anterior ao equador** da cabeça do rádio; os fios de reparo isolam a **cápsula anterior** (com o anular); pronação protege o interósseo posterior.",
+              "id": "ombro-cotovelo-0246"
+            },
+            {
+              "texto": "No terço médio e proximal da via de Henry, o músculo que se insere no rádio é o **pronador redondo**, inervado pelo **mediano**; o quadrado, distal, é do interósseo anterior.",
+              "id": "ombro-cotovelo-0251"
+            },
+            {
+              "texto": "No acesso de **Thompson**, a estrutura a proteger dentro do supinador é o **nervo interósseo posterior**.",
+              "id": "ombro-cotovelo-0120"
+            },
+            {
+              "texto": "Kocher é o intervalo **extensor ulnar do carpo e ancôneo**; Kaplan, extensor radial curto e extensor comum dos dedos.",
+              "id": "ombro-cotovelo-0122"
+            }
+          ]
+        },
+        {
+          "nome": "Capsulite adesiva",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Para esta banca, as MMPs da capsulite adesiva são **2 e 9** (gelatinases); a ideia de fundo é fibrose por predomínio de síntese sobre degradação.",
+              "id": "ombro-cotovelo-0174"
+            },
+            {
+              "texto": "Capsulite adesiva com **diabetes tipo 1** tem o **pior prognóstico**: mais bilateral, mais rígida e mais refratária.",
+              "id": "ombro-cotovelo-0023"
+            },
+            {
+              "texto": "Liberar o **intervalo rotador** (coracoumeral) na capsulite devolve a **rotação externa**; cápsula posterior devolve rotação interna; cápsula inferior, elevação.",
+              "id": "ombro-cotovelo-0067"
+            },
+            {
+              "texto": "Sequência da manipulação: **flexão/extensão, abdução/adução e, por último, rotações**, sempre segurando o braço junto à axila.",
+              "id": "ombro-cotovelo-0008"
+            }
+          ]
+        },
+        {
+          "nome": "Imagem do ombro e cotovelo",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Artrose primária do ombro na **axilar** = **subluxação posterior** da cabeça com desgaste posterior da glenoide; artropatia do manguito = migração **superior**.",
+              "id": "ombro-cotovelo-0445"
+            },
+            {
+              "texto": "O triângulo de baixo sinal na borda da glenoide é o **lábio glenoidal**; forame sublabral e Buford são variantes anterossuperiores normais.",
+              "id": "ombro-cotovelo-0316"
+            },
+            {
+              "texto": "**Stryker** mostra o **Hill-Sachs** e o **coracoide**; West Point e Bernageau, a glenoide anteroinferior; outlet, o acrômio.",
+              "id": "ombro-cotovelo-0218"
+            },
+            {
+              "texto": "No perfil da escápula, a cabeça normal fica **central**, no encontro do Y; anterior ao centro é luxação anterior, posterior é luxação posterior.",
+              "id": "ombro-cotovelo-0045"
+            }
+          ]
+        },
+        {
+          "nome": "Epicondilite lateral e medial",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Cozen = cotovelo em **90 graus**, antebraço **pronado**, extensão do punho **contra resistência**; Mill = estiramento passivo com cotovelo estendido.",
+              "id": "ombro-cotovelo-0314"
+            },
+            {
+              "texto": "Epicondilite lateral na ressonância: tendão espessado com **hipersinal em T1 e T2** (degeneração mucoide); hipersinal só em T2 é líquido.",
+              "id": "ombro-cotovelo-0024"
+            },
+            {
+              "texto": "Diferencial clássico da epicondilite lateral: **síndrome do túnel radial** (supinador), com dor 4 a 5 cm distal e piora na supinação resistida.",
+              "id": "ombro-cotovelo-0070"
+            },
+            {
+              "texto": "Epicondilite lateral é **hiperplasia angiofibroblástica** do **extensor radial curto do carpo**, sem células inflamatórias; corticoide piora o resultado a médio prazo.",
+              "id": "ombro-cotovelo-0014"
+            }
+          ]
+        },
+        {
+          "nome": "Lesões nervosas do ombro e cotovelo",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Nervo supraescapular: compressão mais frequente na **incisura supraescapular** (supra e infraespinal fracos); na **espinoglenoidal**, só o infraespinal, geralmente por cisto paralabral.",
+              "id": "ombro-cotovelo-0019"
+            },
+            {
+              "texto": "A flexão máxima do cotovelo com o punho estendido tensiona o **teto do túnel cubital**: ligamento epicôndilo-olecraniano (Osborne) e aponeurose posterior. Arcada de Frohse é do **interósseo posterior**.",
+              "id": "ombro-cotovelo-0007"
+            },
+            {
+              "texto": "Interósseo anterior: **flexor longo do polegar, flexor profundo do indicador e do médio e pronador quadrado**; sinal do OK alterado, sem perda sensitiva.",
+              "id": "ombro-cotovelo-0116"
+            },
+            {
+              "texto": "Cisto paralabral na incisura **espinoglenoidal** comprime o nervo **supraescapular**, com atrofia isolada do **infraespinal**.",
+              "id": "ombro-cotovelo-0117"
+            }
+          ]
+        },
+        {
+          "nome": "Fraturas do úmero proximal e da escápula",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "No perfil da escápula, a cabeça normal fica **central**, no encontro do Y; anterior ao centro é luxação anterior, posterior é luxação posterior.",
+              "id": "ombro-cotovelo-0045"
+            },
+            {
+              "texto": "Pela incisura supraescapular, sob o ligamento transverso, passa o **nervo supraescapular**; a artéria vai por cima.",
+              "id": "ombro-cotovelo-0134"
+            },
+            {
+              "texto": "Kibler **tipo I** é o ângulo inferior (serrátil e trapézio inferior); **tipo II** é a borda medial inteira (romboides e trapézio); **tipo III**, a borda superior.",
+              "id": "ombro-cotovelo-0201"
+            },
+            {
+              "texto": "No bloqueio **distal** da haste umeral, os nervos em risco são o **radial** (lateral) e o **musculocutâneo** (anterior); no proximal, o **axilar**.",
+              "id": "ombro-cotovelo-0308"
+            }
+          ]
+        },
+        {
+          "nome": "Rigidez do cotovelo",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "A maior força de preensão ocorre com o cotovelo em **90 a 100 graus**; artrodese braçal a 90 graus, de escritório a cerca de 60.",
+              "id": "ombro-cotovelo-0447"
+            },
+            {
+              "texto": "Ossificação **dentro da musculatura flexora, em plano único**: causa **neurogênica** (TCE, lesão medular); trauma é posterolateral; queimadura, posteromedial.",
+              "id": "ombro-cotovelo-0065"
+            },
+            {
+              "texto": "Ossificação heterotópica **pós-traumática é posterolateral**; **pós-queimadura é posteromedial**, junto ao nervo ulnar.",
+              "id": "ombro-cotovelo-0011"
+            },
+            {
+              "texto": "Ossificação heterotópica pós-**queimadura** no cotovelo é **posteromedial**, junto ao nervo ulnar; pós-trauma é posterolateral.",
+              "id": "ombro-cotovelo-0048"
+            }
+          ]
+        },
+        {
+          "nome": "Artrose e artroplastia do cotovelo",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Complicações **mais frequentes** da prótese total de cotovelo: **neuropatia ulnar** e **insuficiência do tríceps**; principal causa de **revisão** tardia: **soltura asséptica**.",
+              "id": "ombro-cotovelo-0075"
+            },
+            {
+              "texto": "Artrose primária do cotovelo começa na **capitulorradial**, dá dor nos extremos com arco médio indolor e se trata com **desbridamento** (Outerbridge-Kashiwagi), não com prótese.",
+              "id": "ombro-cotovelo-0004"
+            },
+            {
+              "texto": "A principal complicação da prótese **semiconstrita** do cotovelo é a **soltura** (umeral); a **instabilidade** é problema da **não constrita**.",
+              "id": "ombro-cotovelo-0046"
+            },
+            {
+              "texto": "Arnold e Hilgartner: **III** = cistos e **alargamento da incisura troclear**, com espaço preservado; **IV** = estreitamento; **V** = anquilose.",
+              "id": "ombro-cotovelo-0203"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "Pé e tornozelo",
+      "slug": "pe-tornozelo",
+      "focos": [
+        {
+          "nome": "Anatomia do pé e tornozelo",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Ao lado do tendão calcâneo = **FLH medialmente e fibular curto lateralmente**.",
+              "id": "pe-tornozelo-0303"
+            },
+            {
+              "texto": "Inserção na base do 1º metatarso, pela planta = **fibular longo**.",
+              "id": "pe-tornozelo-0233"
+            },
+            {
+              "texto": "Gabarito = **FLD (1) e FLH (2)**.",
+              "id": "pe-tornozelo-0236"
+            },
+            {
+              "texto": "Nervo superficial lateral ao Aquiles, com a safena parva = **sural**.",
+              "id": "pe-tornozelo-0183"
+            }
+          ]
+        },
+        {
+          "nome": "Hálux valgo",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Chevron distal é indicado para AIM menor que 15° e idade menor que 50 anos.",
+              "id": "pe-tornozelo-0301"
+            },
+            {
+              "texto": "Desmoronamento (troughing) é a complicação característica da Scarf.",
+              "id": "pe-tornozelo-0178"
+            },
+            {
+              "texto": "A complicação mais comum da cirurgia do hálux valgo é a recidiva.",
+              "id": "pe-tornozelo-0205"
+            },
+            {
+              "texto": "Os valores normais são ângulo intermetatarsal menor que 9° e ângulo metatarsofalângico do hálux menor que 15°.",
+              "id": "pe-tornozelo-0316"
+            }
+          ]
+        },
+        {
+          "nome": "Pé diabético e neuroartropatia de Charcot",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Operar o Charcot na fase inflamatória se associa a altas taxas de complicações e falha.",
+              "id": "pe-tornozelo-0231"
+            },
+            {
+              "texto": "A artropatia de Charcot é um processo de origem neurológica.",
+              "id": "pe-tornozelo-0246"
+            },
+            {
+              "texto": "Avulsão da tuberosidade do calcâneo no Charcot é o tipo 3B.",
+              "id": "pe-tornozelo-0135"
+            },
+            {
+              "texto": "Infecção do pé diabético vem da úlcera, quase não dá febre, desregula a glicemia, e a osteomielite costuma vir com secreção purulenta.",
+              "id": "pe-tornozelo-0155"
+            }
+          ]
+        },
+        {
+          "nome": "Coalizões tarsais",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Nariz de tamanduá é coalizão calcaneonavicular; sinal do C é coalizão talocalcânea.",
+              "id": "pe-tornozelo-0227"
+            },
+            {
+              "texto": "Na coalizão tarsal, é comum a contratura dos fibulares.",
+              "id": "pe-tornozelo-0238"
+            },
+            {
+              "texto": "Em adolescentes e adultos, a tuberosidade anterior proeminente do calcâneo pode imitar uma coalizão calcaneonavicular incompleta.",
+              "id": "pe-tornozelo-0314"
+            },
+            {
+              "texto": "As coalizões mais comuns são a da faceta média da subtalar e a do processo anterior do calcâneo com o navicular.",
+              "id": "pe-tornozelo-0110"
+            }
+          ]
+        },
+        {
+          "nome": "Pé cavo",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "No Charcot-Marie-Tooth, o tibial posterior e o fibular longo estão fortes.",
+              "id": "pe-tornozelo-0237"
+            },
+            {
+              "texto": "No Charcot-Marie-Tooth, tibial posterior e fibular longo fortes, com depressão do 1º metatarso.",
+              "id": "pe-tornozelo-0239"
+            },
+            {
+              "texto": "Preste atenção à referência. Pé cavo visto como um todo é varo e supinação; o antepé em relação ao retropé é pronado.",
+              "id": "pe-tornozelo-0242"
+            },
+            {
+              "texto": "No Coleman de uma deformidade flexível, o 1º raio cai e a correção é feita no antepé.",
+              "id": "pe-tornozelo-0244"
+            }
+          ]
+        },
+        {
+          "nome": "Imagem do pé e tornozelo",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Instabilidade subtalar se demonstra na incidência de Brodén com estresse em inversão.",
+              "id": "pe-tornozelo-0177"
+            },
+            {
+              "texto": "O ângulo entre o TFA e o CF é, em média, de 105° (70° a 140°); o TFA fica tenso em flexão plantar e o CF em dorsiflexão.",
+              "id": "pe-tornozelo-0309"
+            },
+            {
+              "texto": "Sem tomografia, a congruência da faceta posterior se avalia pela incidência de Brodén.",
+              "id": "pe-tornozelo-0315"
+            },
+            {
+              "texto": "Os valores normais são ângulo intermetatarsal menor que 9° e ângulo metatarsofalângico do hálux menor que 15°.",
+              "id": "pe-tornozelo-0316"
+            }
+          ]
+        },
+        {
+          "nome": "Tendões fibulares e outras tendinopatias",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Ao lado do tendão calcâneo = **FLH medialmente e fibular curto lateralmente**.",
+              "id": "pe-tornozelo-0303"
+            },
+            {
+              "texto": "Faixa em Y no dorso = **retináculo inferior dos extensores**; tendão até o dorso do 5º metatarso = fibular terceiro.",
+              "id": "pe-tornozelo-0304"
+            },
+            {
+              "texto": "Tendão oblíquo na planta até a base do 1º metatarso = **fibular longo**.",
+              "id": "pe-tornozelo-0182"
+            },
+            {
+              "texto": "Ruptura do tibial anterior é típica acima dos 45 anos, de forma espontânea.",
+              "id": "pe-tornozelo-0204"
+            }
+          ]
+        },
+        {
+          "nome": "Entorse e instabilidade lateral do tornozelo",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Chrisman-Snook usa metade do tendão fibular curto.",
+              "id": "pe-tornozelo-0302"
+            },
+            {
+              "texto": "Entorses de repetição com dor na interlinha anterior sugerem impacto anterior, confirmado pela ressonância.",
+              "id": "pe-tornozelo-0308"
+            },
+            {
+              "texto": "Chrisman-Snook usa o fibular curto.",
+              "id": "pe-tornozelo-0200"
+            },
+            {
+              "texto": "O teste de Pillings avalia a sindesmose tibiofibular distal.",
+              "id": "pe-tornozelo-0202"
+            }
+          ]
+        },
+        {
+          "nome": "Fraturas do retropé, mediopé e antepé",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Sem tomografia, a congruência da faceta posterior se avalia pela incidência de Brodén.",
+              "id": "pe-tornozelo-0315"
+            },
+            {
+              "texto": "Não há ligamento intermetatarsal entre o 1º e o 2º metatarso; o ligamento de Lisfranc vai do cuneiforme medial ao 2º metatarso.",
+              "id": "pe-tornozelo-0088"
+            },
+            {
+              "texto": "A artéria do canal do tarso vem da tibial posterior e é a principal do corpo do tálus.",
+              "id": "pe-tornozelo-0096"
+            }
+          ]
+        },
+        {
+          "nome": "Fraturas do tornozelo e do pilão tibial",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Maior área visível da tíbia distal é o acesso anteromedial.",
+              "id": "pe-tornozelo-0086"
+            },
+            {
+              "texto": "Fixar fíbula, maléolo posterior e medial = **D (posterolateral) + F (medial)**.",
+              "id": "pe-tornozelo-0247"
+            }
+          ]
+        },
+        {
+          "nome": "Lesões osteocondrais do tálus",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Prateleira medial do calcâneo = **sustentáculo do tálus**.",
+              "id": "pe-tornozelo-0117"
+            },
+            {
+              "texto": "Gatellier e Chastang é acesso transfibular ao tálus.",
+              "id": "pe-tornozelo-0085"
+            },
+            {
+              "texto": "Berndt e Harty estágio I se trata de forma conservadora.",
+              "id": "pe-tornozelo-0240"
+            }
+          ]
+        },
+        {
+          "nome": "Pé plano adquirido do adulto",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Ângulo mostrado = **incongruência talonavicular lateral**.",
+              "id": "pe-tornozelo-0179"
+            },
+            {
+              "texto": "Cotton é cunha de abertura no cuneiforme medial, que causa flexão plantar do 1º raio e pronação do antepé, para tratar a supinação residual do pé plano.",
+              "id": "pe-tornozelo-0080"
+            },
+            {
+              "texto": "Valgo do tornozelo na disfunção do tibial posterior é o estágio IV de Myerson.",
+              "id": "pe-tornozelo-0321"
+            },
+            {
+              "texto": "Sinal dos muitos dedos é pronação do retropé com abdução do antepé.",
+              "id": "pe-tornozelo-0254"
+            }
+          ]
+        },
+        {
+          "nome": "Artrose do tornozelo, artrodese e artroplastia",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Na via anterior do tornozelo, o ELH e o feixe neurovascular são afastados juntos para lateral.",
+              "id": "pe-tornozelo-0307"
+            },
+            {
+              "texto": "Neuropatia e instabilidade contraindicam a prótese; com a subtalar sadia, a opção é a artrodese tibiotársica.",
+              "id": "pe-tornozelo-0245"
+            },
+            {
+              "texto": "Artrodese do tornozelo em posição neutra, 5° de rotação externa, 5° de valgo e tálus levemente posterior.",
+              "id": "pe-tornozelo-0310"
+            },
+            {
+              "texto": "Trabeculado contínuo sem linha residual nos dois lados = **união e união**.",
+              "id": "pe-tornozelo-0058"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "Coluna",
+      "slug": "coluna",
+      "focos": [
+        {
+          "nome": "Anatomia da coluna",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Músculo afastado lateralmente para expor a uncovertebral = **longus colli**.",
+              "id": "coluna-0281"
+            },
+            {
+              "texto": "Banda do dente ao côndilo occipital = **alar**.",
+              "id": "coluna-0216"
+            },
+            {
+              "texto": "Ligamento entre as lâminas, parede posterior do canal = **amarelo**.",
+              "id": "coluna-0222"
+            },
+            {
+              "texto": "Trato motor junto à fissura mediana anterior = **corticoespinhal anterior**.",
+              "id": "coluna-0233"
+            }
+          ]
+        },
+        {
+          "nome": "Hérnia de disco lombar",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Radiculopatia cervical tem dor proximal (pescoço, escápula, ombro) e parestesia distal (mão, no dermátomo).",
+              "id": "coluna-0089"
+            },
+            {
+              "texto": "Endoscopia interlaminar é para hérnia posterolateral em L5-S1; nos níveis altos, prefere-se a via transforaminal.",
+              "id": "coluna-0094"
+            },
+            {
+              "texto": "Hérnia C7-T1 comprime C8: dedo mínimo e intrínsecos da mão.",
+              "id": "coluna-0057"
+            },
+            {
+              "texto": "Fragmento medial (axila) alivia inclinando para o lado da dor; fragmento lateral (ombro) alivia inclinando para o lado oposto.",
+              "id": "coluna-0058"
+            }
+          ]
+        },
+        {
+          "nome": "Lesão medular e síndromes medulares",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "A gliose da medula começa por volta de 7 dias após o trauma.",
+              "id": "coluna-0092"
+            },
+            {
+              "texto": "Braços mais fracos que pernas é síndrome centromedular, por hiperextensão, em idosos.",
+              "id": "coluna-0113"
+            },
+            {
+              "texto": "Choque medular termina em 24 a 48 horas, com o retorno do reflexo bulbocavernoso.",
+              "id": "coluna-0049"
+            },
+            {
+              "texto": "Choque neurogênico é hipotensão com bradicardia; o vasopressor certo tem ação alfa e beta, e a noradrenalina é o exemplo.",
+              "id": "coluna-0001"
+            }
+          ]
+        },
+        {
+          "nome": "Escoliose idiopática",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Escoliose distrófica da NF1 é torácica, curta e angulada.",
+              "id": "coluna-0093"
+            },
+            {
+              "texto": "Nash e Moe avalia a rotação vertebral pela posição dos pedículos na radiografia AP.",
+              "id": "coluna-0109"
+            },
+            {
+              "texto": "Torácica principal, LCSV entre os pedículos, sagital normal = **1AN**.",
+              "id": "coluna-0022"
+            },
+            {
+              "texto": "Curva infantil progressiva tem DACV acima de 20 graus e costela em fase II.",
+              "id": "coluna-0053"
+            }
+          ]
+        },
+        {
+          "nome": "Espondilólise e espondilolistese",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Α e β = **incidência pélvica e inclinação sacral**.",
+              "id": "coluna-0283"
+            },
+            {
+              "texto": "Espondilolistese degenerativa é de L4-L5, em mulheres acima dos 50 anos; ístmica e displásica são de L5-S1.",
+              "id": "coluna-0090"
+            },
+            {
+              "texto": "Perpendicular ao platô de S1 + linha até as cabeças femorais = **incidência pélvica**.",
+              "id": "coluna-0111"
+            },
+            {
+              "texto": "Gill é a retirada do arco solto de L5, uma laminectomia descompressiva de L5.",
+              "id": "coluna-0020"
+            }
+          ]
+        },
+        {
+          "nome": "Fraturas da coluna toracolombar",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Wiltse = plano **multífido × longuíssimo**.",
+              "id": "coluna-0054"
+            },
+            {
+              "texto": "Schober mede a flexão da coluna lombar; aumento menor que 5 cm significa limitação do movimento lombar.",
+              "id": "coluna-0011"
+            },
+            {
+              "texto": "Na elevação bilateral das pernas, dor acima de 70 graus indica coluna lombar; abaixo disso, sacroilíaca.",
+              "id": "coluna-0082"
+            },
+            {
+              "texto": "Músculo lombar profundo e medial, referência do acesso paraespinhal = **multífido**.",
+              "id": "coluna-0265"
+            }
+          ]
+        },
+        {
+          "nome": "Exame neurológico e radiculopatias",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Mamilo T4, xifoide T6 a T7, umbigo T10, região inguinal T12 e L1.",
+              "id": "coluna-0110"
+            },
+            {
+              "texto": "C8 não tem reflexo próprio; bicipital C5, estilorradial C6, tricipital C7.",
+              "id": "coluna-0135"
+            },
+            {
+              "texto": "Lhermitte é choque ao fletir o pescoço, sinal medular clássico da esclerose múltipla.",
+              "id": "coluna-0136"
+            },
+            {
+              "texto": "Umbigo é T10; mamilo é T4; xifoide é T6; região inguinal é T12 e L1.",
+              "id": "coluna-0018"
+            }
+          ]
+        },
+        {
+          "nome": "Hérnia de disco e mielopatia cervical",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "C1-C2 faz cerca de metade da rotação cervical.",
+              "id": "coluna-0051"
+            },
+            {
+              "texto": "Hérnia central em C6-C7 comprime a medula e dá mielopatia com Babinski.",
+              "id": "coluna-0016"
+            },
+            {
+              "texto": "C1-C2 faz cerca de metade da rotação cervical; occipício-C1 faz a flexoextensão da cabeça.",
+              "id": "coluna-0034"
+            },
+            {
+              "texto": "Porção mais medial do funículo posterior = fibras **sacrais**.",
+              "id": "coluna-0050"
+            }
+          ]
+        },
+        {
+          "nome": "Fraturas da coluna cervical",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Banda horizontal atrás do dente = **ligamento transverso do atlas**.",
+              "id": "coluna-0164"
+            },
+            {
+              "texto": "C1-C2 faz cerca de metade da rotação cervical; occipício-C1 faz a flexoextensão da cabeça.",
+              "id": "coluna-0034"
+            },
+            {
+              "texto": "Porção mais medial do funículo posterior = fibras **sacrais**.",
+              "id": "coluna-0050"
+            },
+            {
+              "texto": "Intervalo atlanto-dental anterior normal é até 3 mm no adulto e até 5 mm na criança.",
+              "id": "coluna-0065"
+            }
+          ]
+        },
+        {
+          "nome": "Estenose do canal lombar",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "A extensão fecha o forame cervical e piora a radiculopatia; é a base do teste de Spurling.",
+              "id": "coluna-0048"
+            },
+            {
+              "texto": "Neurogênica tem distância variável e alivia ao sentar ou fletir o tronco; vascular tem distância fixa e alivia ao parar, mesmo em pé.",
+              "id": "coluna-0006"
+            },
+            {
+              "texto": "Estenose lombar melhora com flexão: anda melhor em aclive, sentado, curvado no carrinho e na bicicleta, com sintomas de proximal para distal.",
+              "id": "coluna-0013"
+            },
+            {
+              "texto": "Estenose central é bilateral e não dermatomérica; estenose foraminal ou de recesso é unilateral e dermatomérica.",
+              "id": "coluna-0029"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "Tumores ósseos e de partes moles",
+      "slug": "tumores",
+      "focos": [
+        {
+          "nome": "Metástases ósseas",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Fratura em banana é **transversa, de baixa energia, em osso patológico**, como no Paget.",
+              "id": "tumores-0264"
+            },
+            {
+              "texto": "Metástase cortical tem **bordas irregulares e quase nenhuma reação periosteal**.",
+              "id": "tumores-0192"
+            },
+            {
+              "texto": "O primário que vai ao esqueleto sem passar por cava ou porta é o **pulmão**.",
+              "id": "tumores-0201"
+            },
+            {
+              "texto": "Metástase óssea isolada com ressecção ampla e intenção curativa é a do **rim**.",
+              "id": "tumores-0129"
+            }
+          ]
+        },
+        {
+          "nome": "Estadiamento, biópsia e margens",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Alto grau contido e sem metástase é **IIA**.",
+              "id": "tumores-0247"
+            },
+            {
+              "texto": "O sarcoma induzido por radiação mais comum é o **osteossarcoma**.",
+              "id": "tumores-0250"
+            },
+            {
+              "texto": "Osteossarcoma é **quimioterapia, cirurgia e quimioterapia**, sem radioterapia de rotina.",
+              "id": "tumores-0208"
+            },
+            {
+              "texto": "Tumor de partes moles doloroso com Tinel é **neurogênico**.",
+              "id": "tumores-0123"
+            }
+          ]
+        },
+        {
+          "nome": "Condrossarcoma",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Ulna curta e rádio encurvado na exostose múltipla é **Bessel-Hagen**.",
+              "id": "tumores-0311"
+            },
+            {
+              "texto": "Ressecção de **púbis e ísquio é tipo III**; acetábulo é II; ilíaco é I.",
+              "id": "tumores-0313"
+            },
+            {
+              "texto": "Fratura patológica por condrossarcoma é mais no **fêmur proximal**; a pelve é a sede mais comum do tumor, mas fratura menos.",
+              "id": "tumores-0245"
+            },
+            {
+              "texto": "Os hemangiomas múltiplos de Maffucci se associam à **encondromatose múltipla**.",
+              "id": "tumores-0195"
+            }
+          ]
+        },
+        {
+          "nome": "Osteossarcoma",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Skip metastases têm prognóstico **semelhante ao de metástase a distância**.",
+              "id": "tumores-0249"
+            },
+            {
+              "texto": "O sarcoma induzido por radiação mais comum é o **osteossarcoma**.",
+              "id": "tumores-0250"
+            },
+            {
+              "texto": "Huvos avalia a quimioterapia **pré-operatória**, e o bom respondedor é grau III ou IV, com mais de 90% de necrose.",
+              "id": "tumores-0196"
+            },
+            {
+              "texto": "Osteossarcoma é **fêmur distal e tíbia proximal**, na segunda década, com extensão local pela ressonância.",
+              "id": "tumores-0256"
+            }
+          ]
+        },
+        {
+          "nome": "Tumor de células gigantes",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Adulto, rádio distal, lise subcondral e células gigantes uniformes é **TCG**.",
+              "id": "tumores-0309"
+            },
+            {
+              "texto": "Entre as opções, o tumor dos elementos anteriores é o **tumor de células gigantes**.",
+              "id": "tumores-0191"
+            },
+            {
+              "texto": "Lesão epifisária no adulto é **tumor de células gigantes**; na criança, condroblastoma.",
+              "id": "tumores-0315"
+            },
+            {
+              "texto": "Tumor de células gigantes é **lítico, excêntrico e epifisário**.",
+              "id": "tumores-0128"
+            }
+          ]
+        },
+        {
+          "nome": "Tumores benignos de partes moles",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Pólipos, desmoide, cistos e **osteomas** formam a síndrome de Gardner.",
+              "id": "tumores-0260"
+            },
+            {
+              "texto": "Sinovite vilonodular é mais comum no **joelho**; no quadril, erode mais cedo.",
+              "id": "tumores-0189"
+            },
+            {
+              "texto": "Condromatose sinovial é de **homem, no joelho e no quadril**.",
+              "id": "tumores-0200"
+            },
+            {
+              "texto": "Tumor de partes moles doloroso com Tinel é **neurogênico**.",
+              "id": "tumores-0123"
+            }
+          ]
+        },
+        {
+          "nome": "Displasia fibrosa",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "McCune-Albright é displasia fibrosa poliostótica, manchas e **endocrinopatia**.",
+              "id": "tumores-0310"
+            },
+            {
+              "texto": "Mazabraud é **displasia fibrosa com mixoma**.",
+              "id": "tumores-0248"
+            },
+            {
+              "texto": "Jaffe-Campanacci é **fibroma não ossificante múltiplo com manchas café-com-leite**.",
+              "id": "tumores-0261"
+            },
+            {
+              "texto": "A fratura no fibroma não ossificante ocorre **só no estágio B** de Ritschl.",
+              "id": "tumores-0193"
+            }
+          ]
+        },
+        {
+          "nome": "Sarcoma de Ewing",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Ewing é **diáfise, 10 a 20 anos**, casca de cebola e massa de partes moles grande.",
+              "id": "tumores-0255"
+            },
+            {
+              "texto": "No AJCC, **8 cm separa T1 de T2**; skip é III; metástase é IV.",
+              "id": "tumores-0316"
+            },
+            {
+              "texto": "Ewing de pior prognóstico é **idade acima de 15 anos**, pelve, tumor grande, LDH alta, metástase e má resposta à quimioterapia.",
+              "id": "tumores-0122"
+            },
+            {
+              "texto": "O osteossarcoma que exige diferencial com Ewing é o **de pequenas células**.",
+              "id": "tumores-0077"
+            }
+          ]
+        },
+        {
+          "nome": "Cisto ósseo simples",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Lesão central, metafisária, que não passa a largura da fise, em criança, é **cisto ósseo simples**.",
+              "id": "tumores-0252"
+            },
+            {
+              "texto": "Recidiva do cisto ósseo aneurismático se liga a **menos de 15 anos e cisto central**.",
+              "id": "tumores-0013"
+            },
+            {
+              "texto": "Cisto ósseo simples é de **meninos entre 5 e 15 anos, no úmero proximal**, com fratura patológica e fragmento caído.",
+              "id": "tumores-0044"
+            },
+            {
+              "texto": "Cisto ósseo simples é úmero e fêmur proximais na criança, e **ilíaco e calcâneo no adulto**.",
+              "id": "tumores-0048"
+            }
+          ]
+        },
+        {
+          "nome": "Mieloma múltiplo e plasmocitoma",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Entre as opções, o critério é a **hipercalcemia**, o C do CRAB.",
+              "id": "tumores-0312"
+            },
+            {
+              "texto": "Mieloma é **pico monoclonal e Bence-Jones na urina**; nunca policlonal, nunca hipocalcemia.",
+              "id": "tumores-0170"
+            },
+            {
+              "texto": "Mieloma é **dor óssea na coluna**; lesão em saca-bocado com cintilografia normal acima dos 50 anos, pense nele.",
+              "id": "tumores-0083"
+            },
+            {
+              "texto": "Mieloma tem **células redondas com amiloide**.",
+              "id": "tumores-0009"
+            }
+          ]
+        },
+        {
+          "nome": "Doença de Paget",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Hiperfosfatasia idiopática é o **Paget juvenil**, por falta de osteoprotegerina.",
+              "id": "tumores-0314"
+            },
+            {
+              "texto": "No Paget, as lesões **variam com a fase** e a **cintilografia é quente**; o mieloma é lítico e frio.",
+              "id": "tumores-0259"
+            },
+            {
+              "texto": "Idoso com Paget e dor nova faz pensar em **osteossarcoma secundário**.",
+              "id": "tumores-0317"
+            },
+            {
+              "texto": "A estenose lombar que **melhora com calcitonina**, ou bisfosfonato, é a do **Paget**.",
+              "id": "tumores-0126"
+            }
+          ]
+        },
+        {
+          "nome": "Histiocitose de células de Langerhans",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Crânio, exoftalmia e diabetes insípido é **Hand-Schüller-Christian**.",
+              "id": "tumores-0246"
+            },
+            {
+              "texto": "Granuloma eosinofílico é **macio e marrom-avermelhado**.",
+              "id": "tumores-0140"
+            },
+            {
+              "texto": "Vértebra plana na criança, com discos preservados, é **histiocitose de células de Langerhans**.",
+              "id": "tumores-0069"
+            },
+            {
+              "texto": "A forma sistêmica grave e muitas vezes fatal do lactente é a **Letterer-Siwe**; Calvé é vértebra plana, e Birbeck é grânulo.",
+              "id": "tumores-0082"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "Joelho",
+      "slug": "joelho",
+      "focos": [
+        {
+          "nome": "Lesão do ligamento cruzado anterior",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Avulsão da borda lateral do planalto tibial é **Segond**, e Segond lembra **LCA**.",
+              "id": "joelho-0188"
+            }
+          ]
+        },
+        {
+          "nome": "Anatomia do joelho",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Músculo posterolateral, profundo, que nasce no fêmur e vai até a fíbula é a **cabeça curta do bíceps femoral**.",
+              "id": "joelho-0184"
+            },
+            {
+              "texto": "Nervo que acompanha a artéria tibial anterior = **fibular profundo**.",
+              "id": "joelho-0185"
+            },
+            {
+              "texto": "Ramo da poplítea contornando o côndilo medial, acima da interlinha = **genicular superior medial**.",
+              "id": "joelho-0187"
+            },
+            {
+              "texto": "Músculo junto à membrana interóssea, posterior profundo = tibial posterior = **flexão plantar + inversão**.",
+              "id": "joelho-0238"
+            }
+          ]
+        },
+        {
+          "nome": "Lesões meniscais",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Ruptura perpendicular às fibras, da borda livre para a periferia = **radial**.",
+              "id": "joelho-0189"
+            }
+          ]
+        },
+        {
+          "nome": "Osteocondrite dissecante",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Face lateral do côndilo medial + cartilagem íntegra sem linha líquida = OCD **estável**.",
+              "id": "joelho-0196"
+            },
+            {
+              "texto": "OCD instável = **linha de alto sinal em T2** atrás do fragmento.",
+              "id": "joelho-0216"
+            },
+            {
+              "texto": "Na fixação in situ da epifisiólise, a entrada é na **face anterior do colo**, e o alvo é o **centro** da epífise, perpendicular à fise.",
+              "id": "joelho-0073"
+            }
+          ]
+        },
+        {
+          "nome": "Imagem do joelho",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Avulsão da borda lateral do planalto tibial é **Segond**, e Segond lembra **LCA**.",
+              "id": "joelho-0188"
+            }
+          ]
+        },
+        {
+          "nome": "Exame físico do joelho",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Recurvato com rotação externa ao elevar o membro pelo hálux é o teste de **Hughston**, do canto posterolateral.",
+              "id": "joelho-0177"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "Conceitos básicos",
+      "slug": "conceitos-basicos",
+      "focos": [
+        {
+          "nome": "Princípios de osteossíntese",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Titânio tem módulo de elasticidade menor (cerca de metade do aço) e resistência máxima semelhante. \"Mais elástico\" não significa \"mais fraco\".",
+              "id": "conceitos-basicos-0326"
+            },
+            {
+              "texto": "Calo abundante sem ponte, pense em excesso de movimento (hipertrófica). Fenda sem calo sob placa bloqueada em ponte, pense em construto rígido demais (atrófica).",
+              "id": "conceitos-basicos-0331"
+            },
+            {
+              "texto": "Um único parafuso bicortical num construto bloqueado unicortical aumenta a resistência à torção em cerca de 73%. O unicortical só se apoia na espessura da cortical.",
+              "id": "conceitos-basicos-0336"
+            },
+            {
+              "texto": "Haste fina não fresada, problema principal é a baixa rigidez ao cisalhamento (translacional e rotacional), pior longe do istmo.",
+              "id": "conceitos-basicos-0338"
+            }
+          ]
+        },
+        {
+          "nome": "Pseudartrose e retardo de consolidação",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Espaçador de cimento + membrana induzida + enxerto = **Masquelet**.",
+              "id": "conceitos-basicos-0073"
+            },
+            {
+              "texto": "Calo abundante sem ponte, pense em excesso de movimento (hipertrófica). Fenda sem calo sob placa bloqueada em ponte, pense em construto rígido demais (atrófica).",
+              "id": "conceitos-basicos-0331"
+            },
+            {
+              "texto": "Na grande coorte, AINE não aumentou a pseudartrose; opioides (isolados ou com AINE) aumentaram.",
+              "id": "conceitos-basicos-0348"
+            },
+            {
+              "texto": "Atrófica é problema biológico, tratada com frequência com enxerto ósseo (autólogo traz células e matriz); hipertrófica é problema mecânico, tratada com mais estabilidade.",
+              "id": "conceitos-basicos-0349"
+            }
+          ]
+        },
+        {
+          "nome": "Consolidação óssea",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Hematoma tolera 100%, calo mole cerca de 10%, calo duro cerca de 2%. Quanto mais maduro o tecido, mais resistente e menos tolerante à deformação.",
+              "id": "conceitos-basicos-0339"
+            },
+            {
+              "texto": "O periósteo é fonte precoce de células osteogênicas e responde por cerca de um terço da irrigação cortical; lesá-lo, no trauma ou na cirurgia, associa-se à pseudartrose.",
+              "id": "conceitos-basicos-0340"
+            },
+            {
+              "texto": "Ossificação heterotópica após trauma mínimo é fibrodisplasia ossificante progressiva, mutação ativadora do ACVR1, receptor tipo I de BMP.",
+              "id": "conceitos-basicos-0343"
+            },
+            {
+              "texto": "Calo mole é colágeno II com agrecano; condrócito hipertrófico deposita colágeno X (candidato a biomarcador); osso é colágeno I.",
+              "id": "conceitos-basicos-0344"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "Quadril",
+      "slug": "quadril",
+      "focos": [
+        {
+          "nome": "Anatomia do quadril",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Lateral anterior = **tensor da fáscia lata**; o mais medial e fino = **grácil**.",
+              "id": "quadril-0183"
+            },
+            {
+              "texto": "Na retirada de enxerto do ílio anterior, os nervos em risco são o cutâneo femoral lateral e o ilioinguinal.",
+              "id": "quadril-0189"
+            },
+            {
+              "texto": "No canal adutor = **nervo safeno e artéria femoral**.",
+              "id": "quadril-0190"
+            },
+            {
+              "texto": "Inserem-se no trato iliotibial = **glúteo máximo e tensor da fáscia lata**.",
+              "id": "quadril-0191"
+            }
+          ]
+        },
+        {
+          "nome": "Artroplastia total: componentes e fixação",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Fratura ao redor de haste solta com osso bom = **Vancouver B2**.",
+              "id": "quadril-0126"
+            },
+            {
+              "texto": "No tipo C de Dorr, a maior perda óssea é nas corticais medial e posterior.",
+              "id": "quadril-0128"
+            },
+            {
+              "texto": "O conceito de Charnley inclui medializar o acetábulo e reinserir o trocânter lateralizado.",
+              "id": "quadril-0129"
+            },
+            {
+              "texto": "Chaminé é o tipo C, e taça de champanhe é o tipo A de Dorr.",
+              "id": "quadril-0151"
+            }
+          ]
+        },
+        {
+          "nome": "Osteonecrose da cabeça femoral",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "A osteonecrose atraumática da cabeça femoral é bilateral em até 75% dos casos.",
+              "id": "quadril-0225"
+            },
+            {
+              "texto": "O gabarito oficial aponta 0 a 15° de flexão, 0 a 5° de adução e 20 a 30° de rotação externa.",
+              "id": "quadril-0226"
+            },
+            {
+              "texto": "Sinal do crescente com perda da esfericidade e espaço preservado é Ficat e Arlet 3.",
+              "id": "quadril-0234"
+            },
+            {
+              "texto": "Janela na junção cabeça-colo = **light bulb, Ficat I e II**.",
+              "id": "quadril-0095"
+            }
+          ]
+        },
+        {
+          "nome": "Exame físico do quadril",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Flexão sentada fraca = **Ludloff, iliopsoas e trocânter menor**.",
+              "id": "quadril-0124"
+            },
+            {
+              "texto": "Decúbito lateral, membro não cai em adução = **Ober, trato iliotibial**.",
+              "id": "quadril-0152"
+            },
+            {
+              "texto": "Os testes do piriforme são Pace (ativo) e Freiberg (passivo).",
+              "id": "quadril-0077"
+            },
+            {
+              "texto": "O teste ativo do piriforme é feito com abdução e rotação lateral contra resistência.",
+              "id": "quadril-0046"
+            }
+          ]
+        },
+        {
+          "nome": "Imagem do quadril",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "O índice de Garden normal é de cerca de 160° no AP e 180° no perfil.",
+              "id": "quadril-0235"
+            },
+            {
+              "texto": "Osteotomia de Ganz é para displasia (centro-borda menor que 20°) sem artrose (Tönnis 0).",
+              "id": "quadril-0006"
+            },
+            {
+              "texto": "A separação entre a lágrima de Köhler e a coluna posterior sugere fratura da superfície quadrilátera.",
+              "id": "quadril-0053"
+            },
+            {
+              "texto": "O gabarito oficial considera a fossa acetabular como a parte medial da lágrima, mas a anatomia clássica atribui o ramo medial à placa quadrilateral.",
+              "id": "quadril-0035"
+            }
+          ]
+        },
+        {
+          "nome": "Dor peritrocantérica e tendinopatias",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Flexão sentada fraca = **Ludloff, iliopsoas e trocânter menor**.",
+              "id": "quadril-0124"
+            },
+            {
+              "texto": "Dor lateral + palpação do trocânter + testes resistidos = **síndrome dolorosa do grande trocânter**.",
+              "id": "quadril-0156"
+            },
+            {
+              "texto": "O teste mais reprodutível na ruptura do glúteo médio é a dor na abdução contra resistência, com mais de 70% de sensibilidade e especificidade.",
+              "id": "quadril-0096"
+            },
+            {
+              "texto": "Ressalto interno é o iliopsoas; ressalto externo é o trato iliotibial.",
+              "id": "quadril-0050"
+            }
+          ]
+        },
+        {
+          "nome": "Impacto femoroacetabular",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "Entre as opções, o teste que mais sugere impacto posterior é o FABER (FABRE).",
+              "id": "quadril-0227"
+            },
+            {
+              "texto": "O teste que sugere impacto anterior ou lesão do lábio anterior é o DIRI.",
+              "id": "quadril-0092"
+            },
+            {
+              "texto": "Impacto extra-articular posterior combina anteversão aumentada com rotação externa diminuída.",
+              "id": "quadril-0004"
+            },
+            {
+              "texto": "A lesão em contragolpe fica na parte posterior da cabeça e na região posteroinferior do acetábulo.",
+              "id": "quadril-0024"
+            }
+          ]
+        },
+        {
+          "nome": "Vias de acesso ao quadril",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "CDE = **Moed**; BDE = **Gibson**.",
+              "id": "quadril-0224"
+            },
+            {
+              "texto": "A via de Watson-Jones usa o intervalo entre o glúteo médio e o tensor da fáscia lata.",
+              "id": "quadril-0188"
+            },
+            {
+              "texto": "Para a fratura da coluna anterior do acetábulo, a via mais indicada é a ilioinguinal.",
+              "id": "quadril-0232"
+            },
+            {
+              "texto": "Acesso lateral com **osteotomia de lâmina do trocânter** = McLauchlan.",
+              "id": "quadril-0048"
+            }
+          ]
+        },
+        {
+          "nome": "Artroscopia do quadril e lesão labral",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "O portal anterior da artroscopia do quadril atravessa o sartório e o reto femoral.",
+              "id": "quadril-0153"
+            },
+            {
+              "texto": "O primeiro portal da artroscopia do quadril, feito só com fluoroscopia, é o anterolateral.",
+              "id": "quadril-0476"
+            },
+            {
+              "texto": "Nervo glúteo superior = risco no **portal anterolateral**.",
+              "id": "quadril-0049"
+            },
+            {
+              "texto": "A lesão do nervo cutâneo femoral lateral ocorre com a medialização do portal anterior.",
+              "id": "quadril-0001"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "Osteometabólicas",
+      "slug": "osteometabolicas",
+      "focos": [
+        {
+          "nome": "Osteoporose: diagnóstico",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "Teriparatida é **anabólica e estimula o osteoblasto**, pelo PTH intermitente.",
+              "id": "osteometabolicas-0021"
+            },
+            {
+              "texto": "Senil tem **osteoclasto diminuído e calciúria normal**; pós-menopausa tem osteoclasto aumentado e calciúria alta.",
+              "id": "osteometabolicas-0002"
+            },
+            {
+              "texto": "Bisfosfonato é **antirreabsortivo e inibe o osteoclasto**.",
+              "id": "osteometabolicas-0004"
+            },
+            {
+              "texto": "Bisfosfonato **inibe o osteoclasto**.",
+              "id": "osteometabolicas-0007"
+            }
+          ]
+        },
+        {
+          "nome": "Espondiloartrites e outras artrites",
+          "nivel": 4,
+          "frases": [
+            {
+              "texto": "AIJ poliarticular com FR positivo é **simétrica e de pequenas articulações**, como a AR do adulto.",
+              "id": "osteometabolicas-0029"
+            },
+            {
+              "texto": "Melhor resultado da artroplastia total semiconstrita do cotovelo é na **artrite reumatoide**.",
+              "id": "osteometabolicas-0033"
+            },
+            {
+              "texto": "Na febre reumática, a manifestação mais comum é a artrite, e a **mais rara é o eritema marginado**.",
+              "id": "osteometabolicas-0015"
+            },
+            {
+              "texto": "AIJ é **seis semanas e diagnóstico clínico**; FR e FAN classificam, não diagnosticam.",
+              "id": "osteometabolicas-0045"
+            }
+          ]
+        },
+        {
+          "nome": "Tuberculose osteoarticular",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "A tuberculose vertebral **poupa o disco** no início.",
+              "id": "osteometabolicas-0016"
+            }
+          ]
+        },
+        {
+          "nome": "Osteoporose: tratamento",
+          "nivel": 3,
+          "frases": [
+            {
+              "texto": "A MPS com morte cardíaca antes dos 10 anos é **Hurler**.",
+              "id": "osteometabolicas-0057"
+            },
+            {
+              "texto": "Antirreabsortivos são bisfosfonatos e **denosumabe**; teriparatida é anabólica, e romosozumabe é duplo.",
+              "id": "osteometabolicas-0039"
+            },
+            {
+              "texto": "Teriparatida é **anabólica e estimula o osteoblasto**, pelo PTH intermitente.",
+              "id": "osteometabolicas-0021"
+            },
+            {
+              "texto": "Bisfosfonato **inibe o osteoclasto**.",
+              "id": "osteometabolicas-0007"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

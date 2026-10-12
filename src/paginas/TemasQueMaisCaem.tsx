@@ -11,6 +11,7 @@ import { Carregando } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
 import { Degustacao, SeloAssinante } from '../componentes/Premium'
 import { NivelCobranca } from '../componentes/NivelCobranca'
+import { IconePixel } from '../componentes/IconePixel'
 import { href, navegar } from '../util/rotas'
 import '../estilos/paginas/TemasQueMaisCaem.css'
 
@@ -63,6 +64,27 @@ export function TemasQueMaisCaem() {
   return <Ranking indice={indice} respondidas={respondidas} treinar={treinar} aberto={premium} />
 }
 
+/** As três áreas com mais questões de prova, num pódio (2º, 1º, 3º). */
+function Podio() {
+  const top = AREAS.filter((a) => !a.subtema).slice(0, 3)
+  if (top.length < 3) return null
+  const ordem = [top[1], top[0], top[2]]
+  return (
+    <ol className="ti-podio" aria-label="As três áreas que mais caem">
+      {ordem.map((a) => {
+        const lugar = top.indexOf(a) + 1
+        return (
+          <li key={a.id} className={`ti-podio__lugar ti-podio__lugar--${lugar}`}>
+            <span className="ti-podio__nome">{a.nome}</span>
+            <span className="ti-podio__pct numerico">{(a.pct ?? 0).toLocaleString('pt-BR')}%</span>
+            <span className="ti-podio__degrau" aria-label={`${lugar}º lugar`}><b className="numerico">{lugar}</b></span>
+          </li>
+        )
+      })}
+    </ol>
+  )
+}
+
 /** Quantos itens o não assinante vê antes do desfoque. */
 const PREVIA_TOP = 3
 
@@ -73,13 +95,21 @@ function Ranking({ indice, respondidas, treinar, aberto }: { indice: Indice; res
   return (
     <div className="empilha-2 ti">
       <section className="ti-heroi">
-        <p className="ti-heroi__selo">Temas que mais caem</p>
-        <h1>Estude primeiro o que a prova mais cobra</h1>
-        <p>Somamos as questões das provas oficiais (TEOT, TARO, TECOC e ENARE) por assunto. Cada assunto abre um treino com as que você ainda não fez.</p>
-        {!aberto && <p className="ti-heroi__previa"><Icone nome="cadeado" tamanho={14} /> Você está vendo uma prévia. O ranking completo é do assinante.</p>}
-        <ul className="ti-heroi__legenda" aria-label="Legenda">
-          {([4, 3, 2, 1] as Nivel[]).map((n) => <li key={n}><NivelCobranca nivel={n} /></li>)}
-        </ul>
+        <div className="ti-heroi__texto">
+          <p className="ti-heroi__selo"><Icone nome="grafico" tamanho={14} /> Temas que mais caem</p>
+          <h1>Estude primeiro o que a prova mais cobra</h1>
+          <p>Contamos as questões das provas oficiais (TEOT, TARO, TECOC e ENARE) uma por uma, por área e por assunto. Cada assunto abre um treino com as que você ainda não fez.</p>
+          <ul className="ti-heroi__fatos" aria-label="A contagem">
+            <li><b className="numerico">{BASE_CONTAGEM.toLocaleString('pt-BR')}</b> questões de prova contadas</li>
+            <li><b className="numerico">{AREAS.filter((a) => !a.subtema).length}</b> áreas</li>
+            <li><b className="numerico">{AREAS.reduce((s, a) => s + a.focos.length, 0)}</b> assuntos no ranking</li>
+          </ul>
+          {!aberto && <p className="ti-heroi__previa"><Icone nome="cadeado" tamanho={14} /> Você está vendo uma prévia. O ranking completo é do assinante.</p>}
+          <ul className="ti-heroi__legenda" aria-label="Legenda">
+            {([4, 3, 2, 1] as Nivel[]).map((n) => <li key={n}><NivelCobranca nivel={n} /></li>)}
+          </ul>
+        </div>
+        <Podio />
       </section>
 
       <section className="cartao cartao__corpo ti-top" aria-labelledby="ti-top-titulo">
@@ -138,12 +168,13 @@ function Ranking({ indice, respondidas, treinar, aberto }: { indice: Indice; res
               <li key={area.id}>
                 <details className="ti-area" open={i === 0}>
                   <summary>
-                    <span className="ti-area__posicao numerico">{i + 1}º</span>
+                    <span className="ti-area__posicao numerico" data-medalha={i < 3 ? i + 1 : undefined}>{i + 1}º</span>
                     <span className="ti-area__nome">
                       <strong>{area.nome}</strong>
                       <span className="ti-area__peso" aria-label={`${area.pct ?? 0}% das questões de prova`}><span style={{ width: `${area.peso * 10}%` }} /></span>
-                      <small>{area.pct !== undefined ? `${area.pct.toLocaleString('pt-BR')}% das questões de prova · ` : ''}{m.total ? `você fez ${m.feitas} de ${m.total}${m.acerto !== null ? `, ${m.acerto}% de acerto` : ''}` : 'Sem questões no acervo ainda'}</small>
+                      <small>{area.n ? `${area.n.toLocaleString('pt-BR')} questões de prova · ` : ''}{m.total ? `você fez ${m.feitas} de ${m.total}${m.acerto !== null ? `, ${m.acerto}% de acerto` : ''}` : 'Sem questões no acervo ainda'}</small>
                     </span>
+                    {area.pct !== undefined && <span className="ti-area__pct numerico">{area.pct.toLocaleString('pt-BR')}%<small>da prova</small></span>}
                     <Icone nome="baixo" tamanho={18} />
                   </summary>
                   <div className="ti-area__corpo">
@@ -184,6 +215,19 @@ function Ranking({ indice, respondidas, treinar, aberto }: { indice: Indice; res
             ))}
           </ol>
         </Degustacao>}
+      </section>
+
+      <section className="ti-proximo" aria-label="Próximos passos">
+        <a className="ti-proximo__cartao" href={href('/cronograma')}>
+          <IconePixel nome="planos" tamanho={44} />
+          <span><strong>Siga esta ordem sem pensar</strong><small>O cronograma usa este ranking: as áreas que mais caem ganham mais espaço e cada dia começa pelo assunto de prioridade máxima. No fim, duas semanas de reta final.</small></span>
+          <Icone nome="direita" tamanho={18} />
+        </a>
+        <a className="ti-proximo__cartao ti-proximo__cartao--simulados" href={href('/treinar?simulados=1')}>
+          <IconePixel nome="simulado" tamanho={44} />
+          <span><strong>OrtoQuestões Simulados</strong><small>Questões novas desses mesmos assuntos, feitas por engenharia reversa das provas reais: o mesmo padrão da banca, a partir da bibliografia. Para fixar o conteúdo, e não só decorar as provas antigas.</small></span>
+          <Icone nome="direita" tamanho={18} />
+        </a>
       </section>
 
       <p className="ti-nota">

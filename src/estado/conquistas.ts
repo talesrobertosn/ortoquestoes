@@ -13,7 +13,7 @@ import type { RegistroQuestao } from './revisao'
 import { dominada } from './revisao'
 import { calcularStreak, META_STREAK_DIARIA } from './streak'
 import { chaveDia } from './planoRevisao'
-import { DIAS_RETA_FINAL } from '../dados/planoEstudo'
+import { diasRetaFinal } from '../dados/planoEstudo'
 import type { FeitosServidor } from '../conta/feitos'
 
 export type NivelMedalha = 'bronze' | 'prata' | 'ouro' | 'esmeralda' | 'lendario'
@@ -602,7 +602,7 @@ function metricasDoServidor(f: FeitosServidor | null | undefined, hoje: string) 
   const metas = f.dias?.meta_cronograma ?? []
   let cronogramaCompleto = 0
   if (f.plano && f.plano.data_prova <= hoje) {
-    const inicio = numeroDia(f.plano.criado_em.slice(0, 10)), fim = numeroDia(f.plano.data_prova) - DIAS_RETA_FINAL
+    const inicio = numeroDia(f.plano.criado_em.slice(0, 10)), fim = numeroDia(f.plano.data_prova) - diasRetaFinal(f.plano.criado_em, f.plano.data_prova)
     const feitos = new Set(metas.map(numeroDia))
     let tudo = fim > inicio
     for (let d = inicio; tudo && d < fim; d++) if (!folgas.includes(diaDaSemana(d)) && !feitos.has(d)) tudo = false

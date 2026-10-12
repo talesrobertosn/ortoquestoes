@@ -11,6 +11,11 @@ import type { RegistroQuestao } from '../estado/revisao'
 import { usarSessao } from '../estado/sessao'
 import type { EstadoSessao } from '../dados/tipos'
 import { calcularPlano, dataLocal, idsDoDia, incluiSimulados, respondidasNoAcervo, ROTULO_INTENSIDADE, simularMeta, type CalculoPlano, type Intensidade, type PlanoSalvo } from '../dados/planoEstudo'
+import { areasDoDiaRevisao, calcularConstancia, contagemSimulados, contarErrosQueImportam, desempenhoPorArea, elogio, idsAquecimentoVespera, idsDiagnostico, idsErrosQueImportam, idsReativar, idsRevisaoForte, mapaDeRisco, pontosCegos, temasEsquecidos } from '../dados/hubCronograma'
+import { idsDoFoco, type AreaIncidencia, type Foco } from '../dados/incidencia'
+import { idsRevisaoHoje } from '../estado/planoRevisao'
+import { usarRitmoRevisao } from '../estado/preferencias'
+import { AvisoDiagnostico, AvisoEsquecimento, CartaoConstancia, CartaoDesempenho, CartaoSimulados, ComoFuncionaCompleto, FasesCronograma, HojeRetaFinal, MapaRisco } from './CronogramaHub'
 import { Carregando } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
 import { Degustacao, SeloAssinante } from '../componentes/Premium'
@@ -46,6 +51,8 @@ export function PlanoEstudo() {
   const [plano, definirPlano] = useState<PlanoSalvo | null | undefined>(undefined)
   const [editando, definirEditando] = useState(false)
   const [erro, definirErro] = useState('')
+  const [diagnosticoFeito, marcarDiagnostico] = usarArmazenado<string | null>('cronograma:diagnostico', null)
+  const { ritmo } = usarRitmoRevisao()
 
   useEffect(() => {
     if (!premium) { definirPlano(null); return }
@@ -58,6 +65,29 @@ export function PlanoEstudo() {
 
   const calculo = useMemo(() => (indice && plano ? calcularPlano(indice, respondidas, plano) : null), [indice, plano, respondidas])
   useEffect(() => { conferirMetaCronograma(calculo) }, [calculo])
+  const chaveRitmo = `${ritmo.limite}:${ritmo.folgas.join(',')}`
+  // Os números do painel (constância, risco, esquecimento...) só mudam quando muda o histórico.
+  const dadosHub = useMemo(() => {
+    if (!indice || !plano || !calculo) return null
+    const simulados = incluiSimulados(plano)
+    const constancia = calcularConstancia(respondidas, plano, calculo)
+    const areasRevisao = calculo.fase === 'revisao' ? areasDoDiaRevisao(plano, calculo) : []
+    const temas = calculo.temas.filter((t) => t.acertoEstimado !== null)
+    const pesoTotal = temas.reduce((s, t) => s + t.respondidas, 0)
+    return {
+      constancia, elogio: elogio(constancia, calculo),
+      esquecidos: calculo.fase === 'conteudo' ? temasEsquecidos(indice, respondidas, calculo, plano) : [],
+      riscos: mapaDeRisco(indice, respondidas), cegos: pontosCegos(indice, respondidas),
+      desempenho: desempenhoPorArea(calculo),
+      media: pesoTotal ? Math.round(temas.reduce((s, t) => s + (t.acerto ?? t.acertoEstimado!) * t.respondidas, 0) / pesoTotal) : null,
+      revisoesHoje: idsRevisaoHoje(respondidas, ritmo).size,
+      mostrarDiagnostico: !diagnosticoFeito && calculo.fase === 'conteudo' && respondidasNoAcervo(indice, respondidas, simulados) < 40,
+      simulados: contagemSimulados(indice, respondidas),
+      areasRevisao,
+      idsForte: areasRevisao.length ? idsRevisaoForte(indice, respondidas, areasRevisao.map((a) => a.slug), calculo.metaMedia) : [],
+      erros: contarErrosQueImportam(indice, respondidas),
+    }
+  }, [indice, plano, calculo, respondidas, chaveRitmo, diagnosticoFeito])
 
   if (logado && !carregado) return <Carregando linhas={4} rotulo="Carregando" />
   if (!indice) return <Carregando linhas={5} rotulo="Carregando o acervo" />
@@ -72,6 +102,14 @@ export function PlanoEstudo() {
     navegar('/sessao')
   }
 
+  /** Começa uma sessão já montada (diagnóstico, reta final, reativar, risco). */
+  function comecarIds(ids: string[], origem: 'cronograma' | 'diagnostico' | 'reta-final' | 'reativar', temas: string[] = []) {
+    if (!ids.length) return
+    if (sessao && !sessao.concluidaEm && !window.confirm('Substituir a sessão em andamento? Seu histórico será mantido.')) return
+    iniciar({ ...FILTROS_VAZIOS, temas, embaralhar: false, limite: ids.length }, ids, { origem })
+    navegar('/sessao')
+  }
+
   function adiantar(n: number) {
     if (!indice || !calculo) return
     const tema = proximoTema(calculo)
@@ -80,6 +118,35 @@ export function PlanoEstudo() {
     const filtros = { ...FILTROS_VAZIOS, temas: [tema.slug], situacao: 'naoRespondidas' as const, embaralhar: true, limite: n }
     iniciar(filtros, idsDoDia(indice, tema.slug, respondidas, n, incluiSimulados(plano)), { origem: 'cronograma' })
     navegar('/sessao')
+  }
+
+  const hub = montarHub()
+  function montarHub(): HubDados | null {
+    if (!indice || !plano || !calculo || !dadosHub) return null
+    const simulados = incluiSimulados(plano)
+    const { areasRevisao, idsForte, erros, ...dados } = dadosHub
+    return {
+      ...dados,
+      retaFinal: {
+        revisaoHoje: areasRevisao.length ? { areas: areasRevisao, n: idsForte.length } : null,
+        aoRevisaoForte: () => comecarIds(idsForte, 'reta-final', areasRevisao.map((a) => a.slug)),
+        errosQueImportam: erros,
+        aoErros: () => comecarIds(idsErrosQueImportam(indice, respondidas, Math.max(20, calculo.metaMedia)), 'reta-final'),
+        aoAquecimento: () => comecarIds(idsAquecimentoVespera(indice, respondidas), 'reta-final'),
+      },
+      aoDiagnostico: () => { marcarDiagnostico(new Date().toISOString()); comecarIds(idsDiagnostico(indice, respondidas, simulados), 'diagnostico') },
+      aoReativar: (slug: string) => comecarIds(idsReativar(indice, respondidas, slug), 'reativar', [slug]),
+      aoTreinarFoco: (area: AreaIncidencia, foco: Foco) => {
+        const ids = idsDoFoco(indice, area, foco)
+        const ordem = [...ids.filter((id) => respondidas[id]?.c === false), ...ids.filter((id) => !respondidas[id]), ...ids.filter((id) => respondidas[id] && respondidas[id].c !== false)].slice(0, 20)
+        if (!ordem.length) return
+        if (sessao && !sessao.concluidaEm && !window.confirm('Substituir a sessão em andamento? Seu histórico será mantido.')) return
+        const subtemas = [area.subtema, foco.noAcervo ?? foco.nome].filter((s): s is string => !!s)
+        iniciar({ ...FILTROS_VAZIOS, subtemas, embaralhar: false, limite: ordem.length }, ordem)
+        navegar('/sessao')
+      },
+      aoIncluirSimulados: () => definirEditando(true),
+    }
   }
 
   if (editando || !plano || !calculo) {
@@ -91,7 +158,7 @@ export function PlanoEstudo() {
     <div className="empilha-2 pe">
       {erro && <p className="aviso-formulario aviso-formulario--erro" role="alert">{erro}</p>}
       <NovidadeSimulados plano={plano} aoMudarPlano={definirPlano} />
-      <VisaoCronograma plano={plano} calculo={calculo} aberto aoComecar={comecarHoje} aoAdiantar={adiantar} pendente={sessaoPendente(sessao)} />
+      <VisaoCronograma plano={plano} calculo={calculo} aberto aoComecar={comecarHoje} aoAdiantar={adiantar} pendente={sessaoPendente(sessao)} hub={hub} />
       <div className="linha">
         <button type="button" className="botao" onClick={() => definirEditando(true)}><Icone nome="lapis" tamanho={16} /> Ajustar o cronograma</button>
       </div>
@@ -114,19 +181,39 @@ function proximoTema(calculo: CalculoPlano): { slug: string; nome: string; seman
 
 /** Sessão do cronograma que ficou pela metade (a pessoa fechou o site no meio). */
 function sessaoPendente(sessao: EstadoSessao | null): { feitas: number; total: number; tema: string } | null {
-  if (!sessao || sessao.concluidaEm || sessao.origem !== 'cronograma') return null
+  if (!sessao || sessao.concluidaEm || !sessao.origem) return null
   const feitas = Object.keys(sessao.respostas).length
   if (feitas >= sessao.ids.length) return null
   return { feitas, total: sessao.ids.length, tema: sessao.filtros.temas[0] ?? '' }
 }
 
-function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar, pendente = null }: { plano: PlanoSalvo; calculo: CalculoPlano; aberto: boolean; aoComecar?: () => void; aoAdiantar?: (n: number) => void; pendente?: { feitas: number; total: number; tema: string } | null }) {
+/** Tudo o que o painel do assinante mostra além do plano (calculado em PlanoEstudo). */
+export interface HubDados {
+  constancia: ReturnType<typeof calcularConstancia>
+  elogio: ReturnType<typeof elogio>
+  esquecidos: ReturnType<typeof temasEsquecidos>
+  riscos: ReturnType<typeof mapaDeRisco>
+  cegos: ReturnType<typeof pontosCegos>
+  desempenho: ReturnType<typeof desempenhoPorArea>
+  media: number | null
+  revisoesHoje: number
+  mostrarDiagnostico: boolean
+  simulados: ReturnType<typeof contagemSimulados>
+  retaFinal: Parameters<typeof HojeRetaFinal>[0]['acoes']
+  aoDiagnostico: () => void
+  aoReativar: (slug: string) => void
+  aoTreinarFoco: (area: AreaIncidencia, foco: Foco) => void
+  aoIncluirSimulados: () => void
+}
+
+export function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar, pendente = null, hub = null }: { plano: PlanoSalvo; calculo: CalculoPlano; aberto: boolean; aoComecar?: () => void; aoAdiantar?: (n: number) => void; pendente?: { feitas: number; total: number; tema: string } | null; hub?: HubDados | null }) {
   // Dia da semana marcado como folga: sem tarefa hoje, e isso não é "meta cumprida".
   const folgaHoje = plano.folgas.includes(new Date().getDay())
   const proximo = proximoTema(calculo)
   const [explicacaoAberta] = useState(primeiraVisita)
   const podeAdiantar = aberto && !!aoAdiantar && !!proximo && !calculo.naRetaFinal && !calculo.provaPassou && calculo.restante > 0
-  const nomeTemaPendente = pendente ? calculo.temas.find((t) => t.slug === pendente.tema)?.nome ?? 'o tema do dia' : ''
+  const nomeTemaPendente = pendente ? calculo.temas.find((t) => t.slug === pendente.tema)?.nome ?? 'a sessão do cronograma' : ''
+  const naRetaFinalComRoteiro = aberto && !!hub && (calculo.fase === 'revisao' || calculo.fase === 'prova' || calculo.fase === 'vespera')
   const ritmoTexto = !aberto || Math.abs(calculo.ritmo) <= 5 || calculo.esperadoAteHoje < 20
     ? { classe: 'em-dia', texto: aberto ? 'Em dia com o cronograma' : 'Começando hoje' }
     : calculo.ritmo > 0 ? { classe: 'frente', texto: `${calculo.ritmo}% à frente do cronograma` } : { classe: 'atras', texto: `${-calculo.ritmo}% atrás do cronograma` }
@@ -187,16 +274,27 @@ function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar, penden
         <p className="pe-heroi__selo"><Icone nome="rota" tamanho={15} /> {aberto ? 'Cronograma' : 'Prévia do seu cronograma'} · {plano.prova}</p>
         <h1>{calculo.provaPassou ? 'A prova chegou. Boa sorte!' : <>Faltam <span className="numerico">{calculo.diasAteProva}</span> {calculo.diasAteProva === 1 ? 'dia' : 'dias'}</>}</h1>
         <p>Prova em {longa(plano.data_prova)}. Intensidade {ROTULO_INTENSIDADE[plano.intensidade].nome.toLowerCase()}{plano.folgas.length ? `, folga ${plano.folgas.map((d) => DIAS_SEMANA[d]).join(', ')}` : ''}. {incluiSimulados(plano) ? 'Questões oficiais e OrtoQuestões Simulados.' : 'Só questões oficiais.'}</p>
-        <p className={`pe-ritmo pe-ritmo--${ritmoTexto.classe}`}><Icone nome={ritmoTexto.classe === 'atras' ? 'baixo' : ritmoTexto.classe === 'frente' ? 'cima' : 'certo'} tamanho={15} /> {ritmoTexto.texto}</p>
+        {calculo.fase === 'conteudo' ? <p className={`pe-ritmo pe-ritmo--${ritmoTexto.classe}`}><Icone nome={ritmoTexto.classe === 'atras' ? 'baixo' : ritmoTexto.classe === 'frente' ? 'cima' : 'certo'} tamanho={15} /> {ritmoTexto.texto}</p>
+          : !calculo.provaPassou && <p className="pe-ritmo pe-ritmo--em-dia"><Icone nome="bandeira" tamanho={15} /> Reta final: sem conteúdo novo</p>}
       </div>
-      <div className="pe-meta">
+      {calculo.fase === 'revisao' || calculo.fase === 'prova' || calculo.fase === 'vespera' ? <div className="pe-meta">
+        <span className="pe-meta__rotulo">{calculo.fase === 'revisao' ? 'Revisão forte' : calculo.fase === 'prova' ? 'Modo prova' : 'Véspera'}</span>
+        <strong className="numerico">{calculo.fase === 'revisao' ? calculo.metaMedia : calculo.fase === 'prova' ? 3 : 25}</strong>
+        <span className="pe-meta__rotulo">{calculo.fase === 'revisao' ? 'questões de revisão hoje' : calculo.fase === 'prova' ? 'tarefas na semana' : 'questões de aquecimento'}</span>
+        <small>{calculo.fase === 'vespera' ? 'Amanhã é o dia. Descanse.' : `${hub?.constancia.ultimos[hub.constancia.ultimos.length - 1]?.n ?? 0} respondidas hoje`}</small>
+      </div> : <div className="pe-meta">
         <span className="pe-meta__rotulo">Meta de hoje</span>
         <strong className="numerico">{calculo.metaDiaria}</strong>
         <span className="pe-meta__rotulo">questões novas</span>
         <span className="pe-meta__barra" aria-label={`${calculo.feitasHoje} de ${calculo.metaDiaria} feitas hoje`}><span style={{ width: `${calculo.metaDiaria ? Math.min(100, (calculo.feitasHoje / calculo.metaDiaria) * 100) : 100}%` }} /></span>
         <small>{!calculo.hoje && folgaHoje ? 'Hoje é folga' : calculo.faltaHoje ? `${calculo.feitasHoje} feitas · faltam ${calculo.faltaHoje}` : 'Meta de hoje cumprida'}</small>
-      </div>
+      </div>}
     </section>
+
+    {!calculo.provaPassou && <FasesCronograma calculo={calculo} plano={plano} />}
+
+    {hub?.mostrarDiagnostico && <AvisoDiagnostico aoFazer={hub.aoDiagnostico} simulados={incluiSimulados(plano)} />}
+    {hub && <AvisoEsquecimento esquecidos={hub.esquecidos} aoReativar={hub.aoReativar} />}
 
     {aberto && pendente && (
       <section className="pe-retomar" aria-label="Sessão em andamento">
@@ -210,13 +308,13 @@ function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar, penden
       </section>
     )}
 
-    <section className="pe-hoje">
+    {naRetaFinalComRoteiro && hub ? <HojeRetaFinal calculo={calculo} acoes={hub.retaFinal} /> : <section className="pe-hoje">
       <div>
         <p className="meta">{calculo.naRetaFinal ? 'RETA FINAL' : 'HOJE'}</p>
         {calculo.naRetaFinal ? (
           <><h2>Semana da reta final</h2><p className="texto-2">Nada de conteúdo novo: refaça os erros e as marcadas com dúvida, e faça um simulado cronometrado.</p></>
         ) : calculo.hoje ? (
-          <><h2>{calculo.hoje.n} questões de {calculo.hoje.nome}</h2><p className="texto-2">{calculo.hoje.focos.length ? <>Começando pelo que mais cai: {calculo.hoje.focos.join(', ')}. </> : 'Questões que você ainda não fez. '}Depois, passe pela revisão do dia.</p></>
+          <><h2>{calculo.hoje.n} questões de {calculo.hoje.nome}</h2><p className="texto-2">{calculo.hoje.focos.length ? <>Começando pelo que mais cai: {calculo.hoje.focos.join(', ')}. </> : 'Questões que você ainda não fez. '}{incluiSimulados(plano) ? 'Com alguns OrtoQuestões Simulados no meio. ' : ''}Depois, passe pela revisão do dia.</p></>
         ) : calculo.restante === 0 ? (
           <><h2>Você cumpriu o cronograma inteiro</h2><p className="texto-2">Mantenha a revisão em dia e faça o Simulado Nacional do mês.</p></>
         ) : folgaHoje ? (
@@ -237,7 +335,8 @@ function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar, penden
           <a className="botao botao--principal" href={href('/revisao')}>Ir para a revisão</a>
         )}
       </div>
-    </section>
+      {aberto && hub && hub.revisoesHoje > 0 && <a className="pe-hoje__revisao" href={href('/revisao')}><Icone nome="reiniciar" tamanho={15} /> <span>E mais <b>{hub.revisoesHoje} {hub.revisoesHoje === 1 ? 'revisão' : 'revisões'}</b> marcadas para hoje: erros, chutes e dúvidas que voltam no tempo certo.</span> <Icone nome="direita" tamanho={14} /></a>}
+    </section>}
 
     {podeAdiantar && proximo && <section className={'pe-adiantar' + (calculo.hoje ? '' : ' pe-adiantar--destaque')} aria-labelledby="pe-adiantar-titulo">
       <span className="pe-adiantar__icone" aria-hidden="true"><Icone nome="raio" tamanho={22} /></span>
@@ -252,6 +351,8 @@ function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar, penden
       </div>
     </section>}
 
+    {hub && <CartaoConstancia constancia={hub.constancia} elogio={hub.elogio} />}
+
     {aberto && <div className="pe-duas">
       <section className="cartao cartao__corpo pe-progresso">
         <h2>Progresso do cronograma</h2>
@@ -259,30 +360,23 @@ function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar, penden
         <span className="pe-barra"><span style={{ width: `${progresso}%` }} /></span>
         <dl className="pe-dados">
           <div><dt>Esperado até hoje</dt><dd className="numerico">{calculo.esperadoAteHoje.toLocaleString('pt-BR')}</dd></div>
-          <div><dt>Dias de estudo até a reta final</dt><dd className="numerico">{calculo.diasEstudoRestantes}</dd></div>
+          <div><dt>{calculo.naRetaFinal ? 'Dias de estudo até a prova' : 'Dias de estudo até a reta final'}</dt><dd className="numerico">{calculo.diasEstudoRestantes}</dd></div>
           <div><dt>Reta final a partir de</dt><dd>{curta(calculo.inicioRetaFinal)}</dd></div>
         </dl>
       </section>
-      <section className="cartao cartao__corpo pe-fracos">
+      {hub ? <CartaoDesempenho areas={hub.desempenho} media={hub.media} /> : <section className="cartao cartao__corpo pe-fracos">
         <h2>Reforço nos pontos fracos</h2>
         {reforcados.length ? <>
           <p className="texto-2">Estes temas estão abaixo do seu acerto médio e ganham mais espaço no cronograma:</p>
-          <ul className="pe-fracos__lista">{reforcados.slice(0, 5).map((t) => <li key={t.slug}><span>{t.nome}</span><b className="numerico">{t.acerto}%</b></li>)}</ul>
+          <ul className="pe-fracos__lista">{reforcados.slice(0, 5).map((t) => <li key={t.slug}><span>{t.nome}</span><b className="numerico">{t.acerto ?? t.acertoEstimado}%</b></li>)}</ul>
         </> : <p className="texto-2">Ainda não há tema claramente abaixo da sua média. O cronograma distribui pelo que falta em cada tema e reforça automaticamente quando algum ficar para trás.</p>}
-      </section>
+      </section>}
     </div>}
 
-    <details className="cartao cartao__corpo pe-entenda" open={explicacaoAberta}>
-      <summary><Icone nome="interrogacao" tamanho={18} /> Como o cronograma funciona</summary>
-      <ul>
-        <li><strong>Meta de hoje:</strong> questões novas (que você ainda não fez) para hoje. As revisões do dia são à parte, na página Revisão.</li>
-        <li><strong>Semana a semana:</strong> quais temas entram em cada semana e quantas questões de cada um. As áreas que mais caem vêm antes e ganham mais espaço; os temas em que você está abaixo da média também.</li>
-        <li><strong>À frente ou atrás:</strong> compara o que você fez com o esperado até hoje. Atrasou, a meta dos próximos dias sobe um pouco; adiantou, ela alivia.</li>
-        <li><strong>Reta final:</strong> a última semana antes da prova não tem conteúdo novo. É para refazer os erros, as marcadas com dúvida e fazer um simulado.</li>
-        <li><strong>Intensidade:</strong> leve cobre metade das questões que faltam, firme 80% e completo todas. Dá para mudar em "Ajustar o cronograma".</li>
-        <li><strong>Adiantar:</strong> terminou a meta e quer mais? Puxe as próximas questões do cronograma (inclusive da semana que vem). Elas contam como feitas e a meta dos próximos dias diminui.</li>
-      </ul>
-    </details>
+    {hub && <MapaRisco riscos={hub.riscos} cegos={hub.cegos} aoTreinar={hub.aoTreinarFoco} />}
+    {hub && <CartaoSimulados plano={plano} feitas={hub.simulados.feitas} total={hub.simulados.total} acerto={hub.simulados.acerto} aoIncluir={hub.aoIncluirSimulados} />}
+
+    <ComoFuncionaCompleto aberto={explicacaoAberta} plano={plano} />
 
     <a className="pe-incidencia" href={href('/temas-que-mais-caem')}>
       <span className="pe-incidencia__icone" aria-hidden="true"><Icone nome="grafico" tamanho={20} /></span>
@@ -297,9 +391,14 @@ function VisaoCronograma({ plano, calculo, aberto, aoComecar, aoAdiantar, penden
       </header>
       <ol className="pe-linha">
         {visiveis.map(linhaSemana)}
-        {aberto && !calculo.provaPassou && <li className="pe-semana pe-semana--final">
-          <span className="pe-semana__data">{curta(calculo.inicioRetaFinal)} – véspera</span>
-          <div className="pe-semana__temas"><span className="pe-chip pe-chip--final">Reta final: erros, dúvidas e simulado</span></div>
+        {aberto && !calculo.provaPassou && calculo.diasRetaFinal > 7 && <li className={'pe-semana pe-semana--final' + (calculo.fase === 'revisao' ? ' pe-semana--atual' : '')}>
+          <span className="pe-semana__data">{curta(calculo.inicioRetaFinal)} – {curta(new Date(calculo.inicioModoProva.getTime() - 86_400_000))}{calculo.fase === 'revisao' && <em>esta semana</em>}</span>
+          <div className="pe-semana__temas"><span className="pe-chip pe-chip--final">Revisão forte: erros, dúvidas e o que mais cai</span></div>
+          <span className="pe-semana__total"><Icone nome="reiniciar" tamanho={16} /></span>
+        </li>}
+        {aberto && !calculo.provaPassou && <li className={'pe-semana pe-semana--final' + (calculo.fase === 'prova' || calculo.fase === 'vespera' ? ' pe-semana--atual' : '')}>
+          <span className="pe-semana__data">{curta(calculo.inicioModoProva)} – véspera{(calculo.fase === 'prova' || calculo.fase === 'vespera') && <em>esta semana</em>}</span>
+          <div className="pe-semana__temas"><span className="pe-chip pe-chip--final">Modo prova: simulado, erros que importam e resumão</span></div>
           <span className="pe-semana__total"><Icone nome="bandeira" tamanho={16} /></span>
         </li>}
       </ol>
@@ -326,7 +425,7 @@ function ComoFunciona() {
   const passos = [
     { titulo: 'Você diz a data da prova', texto: 'E os dias da semana em que não estuda (plantão, descanso).' },
     { titulo: 'Ele monta o caminho', texto: 'Divide as questões que faltam pelos dias até a prova, começando pelas áreas e assuntos que mais caem e reforçando os seus temas fracos.' },
-    { titulo: 'E se ajusta sozinho, todo dia', texto: 'Atrasou, a meta sobe um pouco; adiantou, alivia. A última semana fica reservada para a reta final: erros, dúvidas e simulado.' },
+    { titulo: 'E se ajusta sozinho, todo dia', texto: 'Atrasou, a meta sobe um pouco; adiantou, alivia. As duas últimas semanas são a reta final: revisão forte e depois o modo prova, com simulado e resumão.' },
   ]
   return (
     <ol className="cr-destaque__passos pe-como">
@@ -402,7 +501,7 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
         <div>
           <p className="pe-heroi__selo"><Icone nome="rota" tamanho={15} /> {atual ? 'Ajustar' : 'Seu estudo até a prova'}</p>
           <h1 className="pe-heroi__nome">Cronograma</h1>
-          <p>Quatro perguntas e ele diz <strong>quantas questões fazer por dia</strong> e <strong>qual tema estudar em cada semana</strong>, começando pelo que mais cai.{previa ? ' Veja a prévia do seu abaixo.' : ''}</p>
+          <p>Quatro perguntas e ele diz <strong>quantas questões fazer por dia</strong> e <strong>qual tema estudar em cada semana</strong>, começando pelo que mais cai e terminando com <strong>duas semanas de reta final</strong>.{previa ? ' Veja a prévia do seu abaixo.' : ''}</p>
         </div>
         <ComoFunciona />
       </section>
