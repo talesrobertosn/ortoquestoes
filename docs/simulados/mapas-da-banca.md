@@ -1652,3 +1652,9 @@ Fica para outro lote: incidência da incisura sigmoide, classificações de MAYO
 modificadores Q em mais detalhe, critérios de consolidação viciosa como questão própria, osteotomia
 corretiva (encurtamento da ulna), fixador sem ponte, fratura exposta (tipos I e II com fixação em 24
 horas), artroscopia e reabilitação.
+
+## Netter: anatomia do pé e tornozelo (12/10/2026)
+
+[Mapa regional](netter-pe-tornozelo.md), [plano](netter-pe-tornozelo-plano.md), [31 oficiais auditáveis](netter-pe-tornozelo-recorte.json) e [entrega](netter-pe-tornozelo-entrega.md). Leitura das 72 folhas do capítulo 10 e dos 121 candidatos oficiais. Identificação seguida de origem, fixação ou nervo aparece no TEOT 2023 a 2025 e TARO 2024/2026; tendões, intrínsecos, retináculos e nervos cutâneos são alvos recorrentes. Duplicatas da mesma edição não contam como recorrência anual.
+
+Aproveitamento: `pe-tornozelo-0387` a `0422`, 36 autorais, 24 com figura e 21 adaptações distintas. Só anatomia, sem repetição do ventre ou inserção dos músculos extrínsecos já feitos no lote de perna. Cobertura: marcos do retropé, nó de HENRY, grupos tarsais e LISFRANC, ligamentos, retináculos, camadas musculares plantares, nervos e vasos. O item calcaneofibular ficou textual pela sobreposição dos tendões. Todos os conteúdos anteriores do tema foram preservados.
