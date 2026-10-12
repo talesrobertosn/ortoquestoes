@@ -76,9 +76,7 @@ IFP e questões estritamente de rádio distal ficaram fora do recorte principal.
 
 ## Próximo passo
 
-Ler integralmente o capítulo enviado, conferir os pontos acima e montar a tabela de propostas
-com fato da fonte e motivo de cobrança. A paginação do arquivo isolado será usada apenas na
-rastreabilidade interna. Ainda não foi criado nenhum simulado novo deste capítulo.
+O capítulo foi recebido e lido integralmente. O [plano](carpal-fractures-dislocations-plano.md) liga cada proposta ao fato da fonte e ao motivo de cobrança. A [entrega](carpal-fractures-dislocations-entrega.md) registra 25 autorais, mao-1669 a mao-1693, cinco com figuras e as divergências encontradas. A paginação isolada permanece apenas na rastreabilidade interna. O recorte oficial acima documenta a leitura anterior à criação.
 
 A sincronização anterior à gravação final incorporou a retirada de mao-0191 pelo commit
 290c4274 (questões copiadas de simulado de outro curso). O item havia sido lido entre os
