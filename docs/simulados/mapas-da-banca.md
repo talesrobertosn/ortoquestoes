@@ -1829,3 +1829,57 @@ O capítulo confirma a fonte das questões de cimentação do TEOT e do TARO 202
 usa o total de 2 pontos (compressão 1 + explosão 1). Não cobre sacro (DENIS, iliossacral), criança
 (limbo vertebral, SCIWORA) nem acesso de WILTSE: esses temas ficam para os capítulos de pelve e
 coluna pediátrica.
+
+## Lesões do anel pélvico (engenharia reversa em 13/10/2026)
+
+Recorte: subtema "Fratura do anel pélvico" (26 itens em `trauma`) mais regex de pelve, sínfise,
+sacroilíaca, sacro, iliossacral, TILE, YOUNG e BURGESS, MOREL-LAVALLÉE, C-clamp, fixador
+supra-acetabular, inlet e outlet, nos temas Trauma, Quadril e Coluna, todas as provas. Dos 81
+candidatos, **41 formam o núcleo** depois de tirar ruído (espondilolistese e parâmetros pélvicos,
+escoliose com obliquidade pélvica, osteonecrose com "sinal do crescente", artroplastia, impacto,
+acetábulo e itens de coluna). Núcleo: 29 TEOT/TARO (27 com quatro alternativas e 2 certo/errado de
+2006), 6 R4 Coluna SES-DF 2022 (caso de livro aberto em certo/errado), 4 SBOT-SP (dois repetem TARO
+2017 e TEOT 2022), 1 ENARE R4 2025 e 1 CET-PR; 4 com imagem. TEOT/TARO de 2007 a 2026, poucos por
+ano (no máximo 3, em 2022). Enunciado mediano de 102 caracteres, alternativa de 21; 3 itens com
+"respectivamente". Gabarito do núcleo TEOT/TARO: A2, B11, C9, D2. Sem gabarito: `trauma-0803`
+(mortalidade de YOUNG e BURGESS III, TARO 2025), `trauma-1150`, `trauma-1155`, `trauma-1120` e os
+certo/errado de 2006. Repetidos: `trauma-0316` = `trauma-0956`, `trauma-0100` = `trauma-0934`,
+`trauma-0198` = `trauma-0935`. Único OrtoQuestões Simulado no recorte: `quadril-0261` (C-clamp, do
+Callaghan); os demais simulados de pelve do tema Quadril são de anatomia e artroplastia.
+
+O que a banca repete (o que mais vale gêmea):
+- **Sacro (cerca de 1/3).** DENIS: zona I lateral e a mais comum, zona III com mais lesão
+  neurológica, 50% a 60% (2012, 2016, TEOT 2022, TARO 2024, sem ano duas vezes com imagem da zona
+  2); parafuso iliossacral em S1 ameaça a raiz de L5 (TEOT 2023 e 2024); referência de segurança do
+  parafuso na radioscopia (TEOT 2022); instabilidade espinopélvica com traço medial à faceta L5-S1
+  (2019) e AO C1 pela faceta L5-S1 (sem ano); "fratura do suicida" (2010).
+- **Classificação e mecanismo.** YOUNG e BURGESS: fratura em crescente do ilíaco na compressão
+  lateral II (2007), fratura anterior da asa do sacro na compressão lateral (2011), APC II com
+  ligamentos sacroilíacos posteriores íntegros (SBOT-SP), mortalidade de APC III e LC III (2025);
+  avulsão do processo transverso de L5 sugere cisalhamento vertical (2022, 2006); TILE B1 reduzido
+  com rotação interna e adução (2020); livro aberto parcialmente instável, estável no plano
+  vertical (R4 2022).
+- **Hemorragia e urgência.** Artérias glútea superior e pudenda (2015); sinal de GREY TURNER =
+  hematoma retroperitoneal (2017, SBOT-SP); C-clamp para instabilidade posterior (2016); dispositivo
+  provisório no TILE C instável (2009, sem gabarito); fixador supra-acetabular e o "sinal da
+  lágrima" (tábuas interna e externa sobre a incisura isquiática maior, 2023).
+- **Lesões associadas.** Tórax como lesão associada mais comum (sem ano, CET-PR); lesão
+  geniturinária mais em homens e extraperitoneal (TEOT 2025); MOREL-LAVALLÉE (TARO 2026); fratura
+  exposta oculta (2009); reto e ânus nas fraturas expostas (R4 2022).
+- **Imagem.** Desvio vertical da hemipelve na incidência outlet (ENARE R4 2025); inlet e outlet
+  sem mobilizar o paciente (R4 2022).
+
+Lacunas com potencial (a confirmar no capítulo do Rockwood sobre o anel pélvico): algoritmo de
+choque hemorrágico (lençol pélvico na altura dos trocânteres, angioembolização contra tamponamento
+pré-peritoneal, REBOA), critérios de instabilidade (diástase da sínfise acima de 2,5 cm,
+deslocamento posterior), classificação AO/TILE completa, fratura por fragilidade da pelve no idoso
+(classificação de ROMMENS e HOFMANN), técnica e zonas de segurança do parafuso iliossacral (corredor
+de S1 e S2, dismorfismo sacral), fixação da sínfise e complicações (falha da placa, lesão da
+coroa mortis), lesão neurológica e disfunção sexual e urinária no seguimento.
+
+Destino dos simulados a decidir: os oficiais de anel pélvico estão no tema Trauma, que aparece só no
+filtro TEOT/TARO. No tema Quadril, o lote entraria também no filtro do fellowship de quadril.
+
+Aproveitamento: aguardando o capítulo do Rockwood sobre fraturas do anel pélvico para escrever o
+lote, com gêmeas dos temas repetidos e novas das lacunas. As questões de sacro que ficaram fora do
+lote toracolombar entram aqui se o capítulo cobrir o sacro.
