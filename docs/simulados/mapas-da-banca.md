@@ -1716,5 +1716,33 @@ halo (afrouxamento dos pinos, paralisia do abducente), descompressão precoce (a
 pressão arterial média alvo, metilprednisolona fora da rotina, espondilite anquilosante (fratura em
 extensão, tomografia de toda a coluna, fixação posterior longa) e fratura do "cavador de argila".
 
-Aproveitamento: aguardando o capítulo do Rockwood (Cervical Spine Fractures and Dislocations)
-para escrever o lote de 20 a 25 questões, com gêmeas dos temas repetidos e novas das lacunas.
+### Aproveitamento dos capítulos 47 e 48: coluna cervical (13/10/2026)
+
+Leitura integral dos capítulos 47 (Principles of Spine Trauma Care) e 48 (Cervical Spine Fractures
+and Dislocations) do Rockwood, 10ª ed. 25 questões no tema Coluna, `coluna-0508` a `coluna-0532`
+(entram nos filtros TEOT/TARO e no de cirurgia da coluna), seis com figuras (HARRIS, luxação
+facetária, côndilo occipital tipo III, enforcado IIa, gota de lágrima e espondilite anquilosante).
+A6/B6/C7/D6, comentário mediano de 3.781 caracteres, cada um citando capítulo e seção.
+
+- **Gêmeas dos temas repetidos (13):** choque neurogênico, bulbocavernoso e fim do choque medular,
+  BROWN-SÉQUARD, síndrome central (somatotopia), SPENCE, intervalo atlanto-odontoide acima de 5 mm,
+  GRAUER IIc, enforcado IIa e Ia, HARRIS, WHITE e PANJABI, gota de lágrima (ALLEN e FERGUSON) e
+  SLIC da explosão isolada.
+- **Lacunas (12):** ASIA B, regra canadense, metilprednisolona após 8 horas, STASCIS, lesão
+  cerebrovascular contusa (BIFFL), partes moles pré-vertebrais, redução fechada da luxação
+  facetária no paciente examinável, côndilo occipital (ANDERSON e MONTESANO e membrana tectória),
+  pinos do halo, artéria vertebral e parafuso de massa lateral, odontoide no octogenário e
+  espondilite anquilosante.
+
+Divergência tratada no comentário: o capítulo 47 situa o fim do choque medular entre 48 horas e
+2 semanas, enquanto a prova usou 24 a 48 horas; a questão cobra o marcador (bulbocavernoso), e não
+o prazo. Ficaram de fora POWERS (explicada no comentário de HARRIS), paralisia do abducente pelo
+halo (ausente no capítulo) e fratura do "cavador de argila" (só um parágrafo).
+
+## Hand Fractures and Dislocations: fraturas e luxações da mão (12/10/2026)
+
+[Mapa completo](hand-fractures-dislocations.md) e [recorte auditável](hand-fractures-dislocations-recorte.json). Leitura integral de 308 candidatos; 100 questões principais e 21 conexas após exclusão de assuntos externos, cópias e duas anuladas conexas. Nove imagens principais examinadas. TEOT/TARO: 36 itens de quatro alternativas, enunciado mediano de 96 caracteres, alternativa de 20, sete pares e três imagens. As provas de Cirurgia da Mão foram lidas como complemento e mantidas separadas do modelo TEOT/TARO.
+
+Carimbados: forças e fragmentos de BENNETT (TARO 2016/2017/2020, TEOT 2022), posição intrínseco plus (TARO 2017, TEOT 2023), falange média e flexor superficial (TARO 2016/2018/2020), placa volar na luxação MCF (TARO 2024 e séries UFG), IFP e reconstrução hemi-hamato (TARO 2022/2023, TEOT 2024), SEYMOUR (INTO/PUC 2023), parafusos interfragmentários (TARO 2014 e USP 2024/2026), BREWERTON (PUC 2019/USP 2024) e classificação condilar (PUC 2021/2022/FMRP 2026).
+
+Limites: ápice volar versus deslocamento dorsal não são necessariamente divergentes; distinguir a pergunta por tendão da pergunta pelo obstáculo mais comum à redução. Alertas existentes em KOZIN, pilão IFP e amputação de ponta viável foram preservados como pendências de fonte, sem alteração de letras. Conferir percentuais articulares, definição de cominuição e orientação tridimensional de parafusos antes de criar o lote. JAHSS já existe em trauma-1230; não repetir o mesmo par. Nenhuma nova questão escrita nesta etapa.
