@@ -421,3 +421,31 @@
 .ck__cpf input:focus { border-color: var(--verdete); outline: none; }
 .ck__cpf small { color: var(--texto-2); font-size: var(--meta); }
 :root[data-tema="escuro"] .vd-preco__abas button[aria-pressed="true"] { color: #0d2623; }
+
+/* ─── Página enxuta (13/10/2026): três ganhos, condições num bloco, FAQ única ─── */
+.vd-ganhos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.1rem; }
+.vd-ganho { position: relative; display: grid; align-content: start; gap: 0.6rem; padding: 1.4rem 1.3rem 1.3rem; }
+.vd-ganho img { image-rendering: pixelated; }
+.vd-ganho__num { position: absolute; top: 0.9rem; right: 1rem; font-family: var(--fonte-pixel-titulo); font-size: 2.6rem; line-height: 1; color: var(--vd-borda); }
+.vd-ganho h3 { margin: 0.1rem 0 0; font-size: 1.2rem; }
+.vd-ganho > p { margin: 0; color: var(--texto-2); font-size: var(--corpo-menor); line-height: 1.55; }
+.vd-ganho ul { list-style: none; margin: 0.3rem 0 0; padding: 0.8rem 0 0; border-top: 2px dashed var(--vd-borda); display: grid; gap: 0.4rem; }
+.vd-ganho li { display: flex; gap: 0.45rem; align-items: flex-start; font-size: var(--corpo-menor); font-weight: 650; }
+.vd-ganho li svg { flex: none; margin-top: 0.2rem; color: var(--verdete); }
+.vd-ganho--estrela { border-color: var(--vd-tinta); background: var(--ouro-veu); box-shadow: 5px 5px 0 var(--vd-ouro-sombra); }
+.vd-ganho--estrela h3 { color: var(--ouro-texto); }
+.vd-ganho--estrela .vd-ganho__num { color: color-mix(in srgb, var(--vd-ouro-sombra) 35%, transparent); }
+:root[data-tema="escuro"] .vd-ganho--estrela { background: #2a2414; }
+.vd-condicoes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.9rem; margin-top: 1.5rem; }
+.vd-condicao { display: flex; gap: 0.8rem; align-items: flex-start; padding: 1rem; border: 2px solid var(--vd-borda); background: var(--superficie); }
+.vd-condicao strong { display: block; margin-bottom: 0.2rem; }
+.vd-condicao p { margin: 0; color: var(--texto-2); font-size: var(--meta); line-height: 1.5; }
+.vd-condicao__icone { flex: none; display: grid; place-items: center; width: 2.6rem; height: 2.6rem; background: var(--superficie-2); border: 2px solid var(--vd-borda); }
+.vd-condicao__icone--pix { color: #32bcad; }
+.vd-condicao--garantia { border-color: var(--vd-tinta); background: var(--verdete-veu); }
+.vd-condicao__selo { flex: none; display: grid; place-items: center; width: 3rem; height: 3rem; background: var(--vd-ouro); color: var(--vd-tinta); box-shadow: 0 0 0 2px var(--vd-tinta), 3px 3px 0 2px var(--vd-ouro-sombra); font-size: 0.62rem; font-weight: 800; text-transform: uppercase; line-height: 1; margin: 2px 4px 4px 2px; }
+.vd-condicao__selo strong { font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 1.6rem; margin: 0; }
+.vd-faq__lista { max-width: 52rem; }
+@media (max-width: 60rem) { .vd-ganhos, .vd-condicoes { grid-template-columns: minmax(0, 1fr); } }
+.vd-fase--resto { border-style: dashed; }
+.vd-fase--resto .vd-fase__num { background: var(--superficie-2); color: var(--texto-2); box-shadow: 0 0 0 2px var(--vd-borda); font-size: 1.1rem; }

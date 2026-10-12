@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { usarConta } from '../conta/ContextoConta'
 import { lerRespondidas } from '../estado/sessao'
 import { chamarFuncao, chamarRpc } from '../servicos/supabase'
-import { Icone, type NomeIcone } from '../componentes/Icone'
+import { Icone } from '../componentes/Icone'
 import { IconePixel, type NomeIconePixel } from '../componentes/IconePixel'
 import { Simbolo } from '../marca/Simbolo'
 import { JanelaCentral } from '../componentes/JanelaCentral'
@@ -44,24 +44,11 @@ const semMoeda = (v: number) => real(v).replace('R$', '').trim()
 const numero = (n: number) => n.toLocaleString('pt-BR')
 const periodo = (p: Plano) => p.meses === 1 ? 'por mês' : p.meses === 6 ? 'a cada 6 meses' : 'por ano'
 
-/** O que só o assinante tem, com o pixel do site. */
-const EXCLUSIVOS: Array<{ icone: NomeIconePixel; titulo: string; texto: string }> = [
-  { icone: 'planos', titulo: 'Cronograma até a prova', texto: 'A meta de cada dia na ordem do que mais cai, diagnóstico inicial, alerta de esquecimento, mapa de risco, sua sequência de dias e duas semanas de reta final com resumão.' },
-  { icone: 'turma', titulo: 'Como a turma respondeu', texto: 'Depois de cada questão, quantos por cento marcaram cada alternativa e qual é a pegadinha.' },
-  { icone: 'treinar', titulo: 'Treino pelas que a turma mais erra', texto: 'Sessões só com as questões que derrubam a maioria, e com as que ninguém pode errar.' },
-  { icone: 'simulado', titulo: 'Simulado Nacional todo mês', texto: '50 questões de TEOT e TARO em duas horas, a mesma prova para todo o Brasil. Sua posição e a prontidão por tema.' },
-  { icone: 'liga', titulo: 'Liga da residência', texto: 'O ranking privado do seu serviço. Manda o link no grupo e vê quem está estudando de verdade.' },
-  { icone: 'relatorio', titulo: 'Relatório do mês', texto: 'Todo dia 1º no e-mail: quantas questões, acerto, temas que subiram e o próximo passo.' },
-]
-
-/** O que é de todo mundo: a assinatura soma em cima disso. */
-const PARA_TODOS: Array<{ icone: NomeIcone; titulo: string; texto: string }> = [
-  { icone: 'livro', titulo: 'Comentário em cada questão', texto: 'O conceito, por que a correta está certa e por que cada outra não serve.' },
-  { icone: 'alvo', titulo: ROTULO_SIMULADOS, texto: 'Questões inéditas feitas por engenharia reversa das provas, inclusive das que não são públicas.' },
-  { icone: 'trofeu', titulo: 'Ranking', texto: 'Quem mais responde no Brasil, na semana e no geral, com emblemas e sequência de dias.' },
-  { icone: 'grafico', titulo: 'Desempenho', texto: 'Acerto por tema e por assunto, evolução e onde você está abaixo da média.' },
-  { icone: 'reiniciar', titulo: 'Revisão espaçada', texto: 'O site traz de volta o que você errou na hora certa. Você só responde.' },
-  { icone: 'celular', titulo: 'Qualquer aparelho', texto: 'Celular no plantão, computador em casa. Continua de onde parou.' },
+/** As três coisas que a assinatura faz, em vez de uma lista de recursos. */
+const GANHOS: Array<{ icone: NomeIconePixel; titulo: string; texto: string; itens: string[] }> = [
+  { icone: 'planos', titulo: 'Um plano que pensa por você', texto: 'Você abre o site e sabe o que fazer hoje. O cronograma segue o que mais cai e se ajusta quando a rotina aperta.', itens: ['Diagnóstico no primeiro dia', 'Alerta quando um tema fica esquecido', 'Mapa de risco: o que mais cai e você mais erra', 'Reta final de duas semanas com resumão'] },
+  { icone: 'simulado', titulo: 'Estude o que a banca cobra', texto: `Contamos ${numero(BASE_CONTAGEM)} questões das provas oficiais por assunto. E os ${ROTULO_SIMULADOS} trazem questões novas no padrão da banca, feitas por engenharia reversa das provas.`, itens: ['Temas que mais caem, área por área', 'Resumão: o que cai, em uma frase', `${ROTULO_SIMULADOS} no meio de cada sessão`] },
+  { icone: 'turma', titulo: 'Saiba onde você está', texto: 'Compare com quem estuda para a mesma prova e chegue sabendo o que falta.', itens: ['Como a turma respondeu cada alternativa', 'Simulado Nacional todo mês, com sua posição', 'Liga da residência e relatório do mês'] },
 ]
 
 export function Assinatura() {
@@ -183,11 +170,11 @@ export function Assinatura() {
       {!comAcessoPago && <section className="vd-heroi" ref={heroi} aria-labelledby="vd-titulo">
         <div className="vd-heroi__topo">
           <p className="vd-selo"><Simbolo tamanho={16} variante="traco" /> Plano do assinante</p>
-          <h1 id="vd-titulo">{nome ? `${nome}, compre` : 'Compre'} tempo de estudo. <em>O que estudar, a gente decide.</em></h1>
+          <h1 id="vd-titulo">{nome ? `${nome}, você` : 'Você'} estuda. <em>O que estudar hoje, a gente decide.</em></h1>
         </div>
         <div className="vd-heroi__texto">
           <p className="vd-heroi__lide">
-            Você diz a data da prova. O Orto Questões monta a meta de cada dia pelo que mais cai no TEOT e no TARO e se ajusta quando a rotina aperta. Sem planilha, sem dúvida do que fazer hoje.
+            Você diz a data da prova. O Orto Questões monta a meta de cada dia pelo que mais cai no TEOT e no TARO, ajusta quando a rotina aperta e fecha com duas semanas de reta final.
           </p>
           <ul className="vd-confianca" aria-label="Garantias">
             <li><Icone nome="certo" tamanho={16} /> 7 dias de garantia: reembolso pelo botão</li>
@@ -226,66 +213,34 @@ export function Assinatura() {
         </section>
       )}
 
-      <PreviaCronograma conta={Boolean(sessao)} assinante={comAcessoPago} />
-
-      <section className="vd-secao vd-estatistica" aria-labelledby="vd-titulo-cai">
-        <div className="vd-estatistica__texto">
-          <p className="vd-sobre">Por que o cronograma acerta</p>
-          <h2 id="vd-titulo-cai">A gente contou o que cai. <em>Questão por questão.</em></h2>
-          <p>Classificamos {numero(BASE_CONTAGEM)} questões das provas oficiais por área e por assunto. Por isso o cronograma não chuta: começa pelo que a banca mais cobra e deixa para depois o que quase nunca aparece.</p>
-          <p className="vd-nota">Você não precisa decidir o que estudar hoje. Só precisa abrir o site e responder.</p>
-        </div>
-        <ol className="vd-barras" aria-label="Áreas que mais caem">
-          {AREAS_CAEM.slice(0, 6).map((a, i) => {
-            const fatia = a.n / BASE_CONTAGEM
-            return <li key={a.id}>
-              <b>{i + 1}</b>
-              <span className="vd-barras__nome">{a.nome}<i style={{ width: `${Math.round((a.n / AREAS_CAEM[0].n) * 100)}%` }} /></span>
-              <small>{(fatia * 100).toLocaleString('pt-BR', { maximumFractionDigits: 1 })}%</small>
-            </li>
-          })}
-          <li className="vd-barras__rodape"><Icone nome="cadeado" tamanho={13} /> Os assuntos que mais caem em cada área, no plano</li>
-        </ol>
-      </section>
-
-      <section className="vd-secao" aria-labelledby="vd-titulo-exclusivos">
+      {/* 2. O que você ganha: três ideias, não onze. */}
+      <section className="vd-secao" aria-labelledby="vd-titulo-ganha">
         <header className="vd-cabeca">
-          <p className="vd-sobre">{comAcessoPago ? 'Seu plano inclui' : 'Só para assinantes'}</p>
-          <h2 id="vd-titulo-exclusivos">Estude com direção, <em>não no escuro</em></h2>
-          <p>O que responde às perguntas de quem está perto da prova: o que estudo hoje? o que mais cai? onde a turma erra? estou pronto?</p>
+          <p className="vd-sobre">{comAcessoPago ? 'Seu plano inclui' : 'O que a assinatura faz por você'}</p>
+          <h2 id="vd-titulo-ganha">Três coisas que economizam <em>meses de estudo</em></h2>
         </header>
-        <div className="vd-exclusivos">
-          {EXCLUSIVOS.map((r) => (
-            <article key={r.titulo} className={'vd-cartao vd-exclusivo' + (r.icone === 'planos' ? ' vd-exclusivo--estrela' : '')}>
-              <IconePixel nome={r.icone} tamanho={44} />
-              <h3>{r.titulo}</h3>
-              <p>{r.texto}</p>
+        <div className="vd-ganhos">
+          {GANHOS.map((g, i) => (
+            <article key={g.titulo} className={'vd-cartao vd-ganho' + (i === 0 ? ' vd-ganho--estrela' : '')}>
+              <span className="vd-ganho__num">{i + 1}</span>
+              <IconePixel nome={g.icone} tamanho={48} />
+              <h3>{g.titulo}</h3>
+              <p>{g.texto}</p>
+              <ul>{g.itens.map((item) => <li key={item}><Icone nome="certo" tamanho={14} /> {item}</li>)}</ul>
             </article>
           ))}
         </div>
-        <DemoTurma />
       </section>
 
-      <section className="vd-secao" aria-labelledby="vd-titulo-todos">
-        <header className="vd-cabeca">
-          <p className="vd-sobre">Para todo mundo</p>
-          <h2 id="vd-titulo-todos">E o que já é de todos continua aqui</h2>
-          <p>O acervo, os comentários e as ferramentas de estudo são abertos. A assinatura soma o plano, a turma e o simulado em cima disso.</p>
-        </header>
-        <div className="vd-todos">
-          {PARA_TODOS.map((r) => (
-            <div key={r.titulo} className="vd-todo">
-              <span><Icone nome={r.icone} tamanho={20} /></span>
-              <div><strong>{r.titulo}</strong><p>{r.texto}</p></div>
-            </div>
-          ))}
-        </div>
-      </section>
+      {/* 3. O cronograma na prática. */}
+      <PreviaCronograma conta={Boolean(sessao)} assinante={comAcessoPago} />
 
+      {/* 4. Grátis × assinante: uma tabela só. */}
       {!comAcessoPago && <section className="vd-secao" aria-labelledby="vd-titulo-compara">
         <header className="vd-cabeca">
           <p className="vd-sobre">Gratuito ou assinante</p>
           <h2 id="vd-titulo-compara">{limitesHabilitados ? 'O gratuito é generoso. O assinante vai além.' : 'O acervo é de todos. O assinante vai além.'}</h2>
+          <p>Questões, comentários e ferramentas de estudo continuam abertos. A assinatura soma o plano até a prova, o que cai e a turma.</p>
         </header>
         <div className="vd-compara vd-cartao" role="table" aria-label="Comparação entre gratuito e assinante">
           <div className="vd-compara__linha vd-compara__cabeca" role="row">
@@ -294,13 +249,15 @@ export function Assinatura() {
             <span role="columnheader" className="vd-compara__pro">Assinante</span>
           </div>
           {([
+            ['Questões oficiais comentadas, alternativa por alternativa', true, true],
+            [`${ROTULO_SIMULADOS}, por engenharia reversa das provas`, true, true],
+            ['Revisão espaçada, caderno de erros, desempenho e ranking', true, true],
             ['Questões por dia', limitesHabilitados ? `${LIMITE_GRATIS_ATUAL} a cada 24 horas` : 'Sem limite nesta fase', 'Sem limite'],
-            ['Comentários, desempenho, revisão e ranking', true, true],
-            ['Cronograma até a prova pelo que mais cai', false, true],
-            ['Como a turma respondeu cada alternativa', false, true],
-            ['Treino pelas que a turma mais erra', false, true],
-            ['Simulado Nacional mensal, com posição', false, true],
+            ['Cronograma até a prova, com diagnóstico, alertas e reta final', false, true],
+            ['Resumão: o que cai, em uma frase por assunto', false, true],
             ['Temas que mais caem, área por área', false, true],
+            ['Como a turma respondeu e treino pelas que a turma mais erra', false, true],
+            ['Simulado Nacional todo mês, com sua posição', false, true],
             ['Liga da residência e relatório do mês', false, true],
           ] as const).map(([rotulo, livre, pro]) => (
             <div className="vd-compara__linha" role="row" key={rotulo}>
@@ -312,11 +269,12 @@ export function Assinatura() {
         </div>
       </section>}
 
+      {/* 5. Planos, pagamento e garantia, juntos. */}
       {(!ativa || renovarPix) && <section className="vd-secao vd-planos-secao" id="planos" aria-labelledby="vd-titulo-planos">
         <header className="vd-cabeca">
           <p className="vd-sobre">Planos</p>
-          <h2 id="vd-titulo-planos">Tudo liberado em qualquer plano. <em>Você escolhe só o ritmo de pagamento.</em></h2>
-          <p>Os três têm exatamente os mesmos recursos. Quanto mais longo, menor o preço por dia.</p>
+          <h2 id="vd-titulo-planos">Os três liberam tudo. <em>Muda só como você paga.</em></h2>
+          <p>Quanto mais longo, menor o preço por dia. Pix ou cartão, em qualquer plano.</p>
           {!limitesHabilitados && <p className="vd-nota">O acesso gratuito está sem limite diário nesta fase. O plano libera os recursos exclusivos e garante questões sem limite se o limite for ligado.</p>}
         </header>
 
@@ -333,14 +291,8 @@ export function Assinatura() {
                 </header>
                 <p className="vd-plano__chamada">{p.chamada}</p>
                 <p className="vd-plano__mes"><small>R$</small><strong>{semMoeda(porMes(p))}</strong><small>/mês</small></p>
-                <p className="vd-plano__total">{p.meses === 1 ? 'cobrado todo mês' : <><b>{real(p.total)}</b> {periodo(p)} · de <s>{real(cheio)}</s></>}</p>
+                <p className="vd-plano__total">{p.meses === 1 ? 'cobrado todo mês, sem fidelidade' : <><b>{real(p.total)}</b> {periodo(p)} · de <s>{real(cheio)}</s></>}</p>
                 <p className="vd-plano__dia"><Icone nome="relogio" tamanho={14} /> {centavos(porDia(p))} por dia de estudo</p>
-                <ul className="vd-plano__itens">
-                  <li><Icone nome="rota" tamanho={15} /> Cronograma até a prova</li>
-                  <li><Icone nome="certo" tamanho={15} /> Todos os recursos do assinante</li>
-                  <li><Icone nome="certo" tamanho={15} /> {p.meses === 1 ? 'Sem fidelidade' : `Economia de ${real(cheio - p.total)}`}</li>
-                  <li><Icone nome="certo" tamanho={15} /> Garantia de 7 dias</li>
-                </ul>
                 {!sessao
                   ? <a className={'botao botao--largo vd-plano__cta' + (p.destaque ? ' vd-botao-ouro' : '')} href={href('/conta?modo=criar&voltar=%2Fassinatura')}>Criar conta para assinar</a>
                   : <button className={'botao botao--largo vd-plano__cta' + (p.destaque ? ' vd-botao-ouro' : '')} type="button" disabled={!pagamentosHabilitados || (ativa && !renovarPix)} onClick={() => escolher(p)}>{rotuloComprar(p)}</button>}
@@ -351,82 +303,34 @@ export function Assinatura() {
         {!pagamentosHabilitados && <p className="vd-aviso"><Icone nome="calendario" tamanho={16} /> As assinaturas abrem em breve. Até lá, o acervo, os comentários e a revisão continuam disponíveis no gratuito.</p>}
         {mensagem && !planoEscolhido && <p role="status" className="vd-aviso">{mensagem}</p>}
 
-        <div className="vd-meios">
-          <article className="vd-meio">
-            <span className="vd-meio__icone vd-meio__icone--pix"><IconePix tamanho={26} /></span>
-            <div>
-              <h3>Pix</h3>
-              <p>Um pagamento só, pelo período inteiro. Liberado assim que cai, <strong>sem renovação automática</strong>. Nos 7 dias finais dá para pagar o próximo período sem perder nenhum dia: os que faltam continuam valendo.</p>
-            </div>
-          </article>
-          <article className="vd-meio">
-            <span className="vd-meio__icone"><IconeCartao tamanho={26} /></span>
-            <div>
-              <h3>Cartão de crédito</h3>
-              <p>Renova sozinho na periodicidade escolhida, para você não ficar sem acesso na reta final. Desliga a renovação com um botão quando quiser. Os dados do cartão ficam no Mercado Pago, nunca aqui.</p>
-            </div>
-          </article>
+        <div className="vd-condicoes">
+          <div className="vd-condicao">
+            <span className="vd-condicao__icone vd-condicao__icone--pix"><IconePix tamanho={22} /></span>
+            <div><strong>Pix</strong><p>Um pagamento pelo período inteiro, liberado assim que cai. Não renova sozinho; nos 7 dias finais dá para renovar sem perder dias.</p></div>
+          </div>
+          <div className="vd-condicao">
+            <span className="vd-condicao__icone"><IconeCartao tamanho={22} /></span>
+            <div><strong>Cartão</strong><p>Renova sozinho para você não ficar sem acesso na reta final. Desliga com um botão. Os dados do cartão ficam no Mercado Pago.</p></div>
+          </div>
+          <div className="vd-condicao vd-condicao--garantia">
+            <span className="vd-condicao__selo" aria-hidden="true"><strong>7</strong>dias</span>
+            <div><strong>Garantia sem conversa</strong><p>Até 7 dias depois de cada cobrança, o reembolso integral é pedido por um botão em Minha conta. Sem e-mail, sem justificar.</p></div>
+          </div>
         </div>
+        {sessao && respondidasConta > 0 && !comAcessoPago && <p className="vd-voce"><IconePixel nome="desempenho" tamanho={32} /> <span>Você já respondeu <strong>{numero(respondidasConta)}</strong> questões por aqui{metricas?.sequencia ? <> e está numa sequência de <strong>{metricas.sequencia} {metricas.sequencia === 1 ? 'dia' : 'dias'}</strong></> : null}. Imagine esse ritmo com um plano por trás.</span></p>}
       </section>}
 
-      {!comAcessoPago && <section className="vd-garantia" aria-labelledby="vd-titulo-garantia">
-        <div className="vd-garantia__selo" aria-hidden="true"><strong>7</strong><span>dias</span></div>
-        <div className="vd-garantia__texto">
-          <p className="vd-sobre">Garantia sem conversa</p>
-          <h2 id="vd-titulo-garantia">Não gostou? <em>Um botão e o dinheiro volta.</em></h2>
-          <p>Nada de e-mail, formulário ou alguém tentando te convencer a ficar. Até 7 dias depois de cada cobrança, o reembolso integral é pedido direto na sua conta.</p>
-          <ol className="vd-passos">
-            <li><span className="px-numero">1</span><div><strong>Minha conta</strong><small>Abra a área da assinatura</small></div></li>
-            <li><span className="px-numero">2</span><div><strong>Pedir reembolso</strong><small>Clique e confirme</small></div></li>
-            <li><span className="px-numero">3</span><div><strong>Mercado Pago devolve</strong><small>No mesmo meio que você pagou</small></div></li>
-          </ol>
-          <p className="vd-nota">Se o Mercado Pago não confirmar o pedido automático, é só usar o canal de contato do site para atendimento manual. O acesso pago só termina depois que o reembolso é confirmado, e o seu histórico nunca é apagado.</p>
-        </div>
-      </section>}
-
-      {!comAcessoPago && <section className="vd-secao vd-facil" aria-labelledby="vd-titulo-facil">
-        <header className="vd-cabeca">
-          <p className="vd-sobre">Plano fácil de administrar</p>
-          <h2 id="vd-titulo-facil">Tudo pelo botão, <em>na sua conta</em></h2>
-        </header>
-        <div className="vd-facil__grade">
-          <div className="vd-cartao"><Icone nome="reiniciar" tamanho={22} /><strong>Desligar a renovação</strong><p>Um botão. O acesso continua até o último dia já pago.</p></div>
-          <div className="vd-cartao"><Icone nome="calendario" tamanho={22} /><strong>Ver datas e cobranças</strong><p>Próxima cobrança, fim do período e histórico de pagamentos no mesmo lugar.</p></div>
-          <div className="vd-cartao"><Icone nome="correio" tamanho={22} /><strong>Aviso antes de acabar</strong><p>No Pix, um e-mail 3 dias antes do fim. Ninguém fica sem acesso por esquecimento.</p></div>
-          <div className="vd-cartao"><Icone nome="cadeado" tamanho={22} /><strong>Histórico é seu</strong><p>Cancelar ou vencer nunca apaga respostas, revisões, anotações ou desempenho.</p></div>
-        </div>
-        {sessao && respondidasConta > 0 && <p className="vd-voce"><IconePixel nome="desempenho" tamanho={32} /> <span>Você já respondeu <strong>{numero(respondidasConta)}</strong> questões por aqui{metricas?.sequencia ? <> e está numa sequência de <strong>{metricas.sequencia} {metricas.sequencia === 1 ? 'dia' : 'dias'}</strong></> : null}. Imagine esse ritmo com um plano por trás.</span></p>}
-      </section>}
-
+      {/* 6. Dúvidas: as que realmente decidem a compra. */}
       <section className="vd-secao vd-faq" aria-labelledby="vd-titulo-faq">
         <header className="vd-cabeca"><p className="vd-sobre">Dúvidas</p><h2 id="vd-titulo-faq">Perguntas frequentes</h2></header>
-        <div className="vd-faq__grupos">
-          <div>
-            <h3>Preço e pagamento</h3>
-            <details><summary>Quanto custa, de verdade?</summary><p>Mensal: {real(PLANO_MENSAL.total)} por mês. Semestral: {real(PLANO_SEMESTRAL.total)} a cada 6 meses ({real(porMes(PLANO_SEMESTRAL))} por mês). Anual: {real(PLANO_ANUAL.total)} por ano, o que dá {real(porMes(PLANO_ANUAL))} por mês e {centavos(porDia(PLANO_ANUAL))} por dia. Não há taxa de adesão nem cobrança escondida; os três planos liberam exatamente os mesmos recursos.</p></details>
-            <details><summary>Qual plano vale mais a pena?</summary><p>Se a prova está a mais de seis meses, o anual sai pela metade do preço do mensal. Para uma reta final curta, o mensal ou o semestral resolvem sem compromisso longo. Em qualquer um vale a garantia de 7 dias.</p></details>
-            <details><summary>Posso pagar com Pix?</summary><p>Sim, em todos os planos. Você paga o valor do período inteiro em um único Pix, e o acesso é liberado assim que o Mercado Pago confirma. O Pix não renova sozinho: ao terminar o período, faça uma nova compra se quiser continuar. O CPF é pedido só para o Mercado Pago gerar o Pix e não fica salvo no seu perfil.</p></details>
-            <details><summary>Paguei no Pix. Posso renovar antes de acabar sem perder dias?</summary><p>Pode. Enviamos um aviso por e-mail 3 dias antes do fim e, a partir de 7 dias antes do término, a página libera a renovação pelo Pix. Os dias que faltam continuam valendo e o novo período começa no dia em que o atual termina. Exemplo: faltando 3 dias, quem paga o mensal hoje fica com esses 3 dias mais 1 mês completo.</p></details>
-            <details><summary>E no cartão, como funciona?</summary><p>O cartão renova automaticamente na periodicidade escolhida (mensal, semestral ou anual). Você desliga a renovação quando quiser, pelo botão em Minha conta, e o acesso continua até o fim do período já pago. O pagamento é feito no checkout seguro do Mercado Pago; o Orto Questões não recebe os dados do cartão.</p></details>
-          </div>
-          <div>
-            <h3>Garantia e cancelamento</h3>
-            <details><summary>Como funciona a garantia de 7 dias?</summary><p>Até 7 dias depois de cada cobrança aprovada, você pede o reembolso integral pelo botão em Minha conta, sem precisar falar com ninguém nem justificar. Se o Mercado Pago não confirmar a solicitação automática, use o canal de contato do site para atendimento manual. O acesso pago só é encerrado depois que o reembolso é confirmado.</p></details>
-            <details><summary>Preciso falar com alguém para cancelar?</summary><p>Não. Desligar a renovação e pedir o reembolso dentro da garantia são botões em Minha conta. Ninguém liga, ninguém manda e-mail perguntando o motivo.</p></details>
-            <details><summary>Se eu cancelar o semestral após três meses, recebo o resto?</summary><p>Depois dos 7 dias da garantia, não há devolução proporcional automática. Você mantém o acesso até completar o período pago e a assinatura não renova. A mesma regra vale para o anual. Seus direitos previstos em lei continuam preservados; consulte as <a href={href('/condicoes-assinatura')}>condições da assinatura</a> antes de comprar.</p></details>
-            <details><summary>O que acontece com meu histórico se eu cancelar?</summary><p>Nada. Respostas, revisões, favoritas, anotações e desempenho ficam guardados. Ao desligar a renovação, o acesso pago continua até o fim do período; depois de um reembolso confirmado, a conta volta ao gratuito com tudo preservado.</p></details>
-            <details><summary>Como funciona o limite do plano gratuito?</summary><p>{limitesHabilitados ? `O gratuito tem um número limitado de respostas novas (hoje, ${LIMITE_GRATIS_ATUAL}) a cada 24 horas. O relógio começa na primeira questão respondida e, 24 horas depois, a cota volta inteira; o site mostra quanto falta.` : `O limite diário está desligado nesta fase, portanto o acesso gratuito também está sem limite de respostas. Se o limite for ativado, o patamar gratuito previsto é de ${LIMITE_GRATIS_ATUAL} respostas novas a cada 24 horas.`} Comentários, revisões e desempenho continuam abertos.</p></details>
-          </div>
-          <div>
-            <h3>O que vem no plano</h3>
-            <details><summary>Como o cronograma é montado?</summary><p>Você informa a data da prova, a intensidade (leve, firme ou completo) e os dias de folga. O cronograma divide as questões pelos dias até a prova, coloca primeiro as áreas e os assuntos que mais caem (a partir da contagem das provas oficiais), dá mais espaço aos temas em que você está abaixo da média (um diagnóstico de 30 questões já calibra isso no primeiro dia) e mistura de 2 a 6 OrtoQuestões Simulados por sessão. As duas últimas semanas são a reta final, sem conteúdo novo: a penúltima é de revisão forte (seus erros, dúvidas e o que mais cai, uma fatia da prova por dia) e a última é o modo prova (simulado cronometrado, os erros que importam e o resumão). Todo dia ele se recalcula: atrasou, a meta sobe um pouco; adiantou, alivia. E avisa quando um tema já estudado fica três semanas esquecido. Antes de assinar, dá para ver a prévia do seu.</p></details>
-            <details><summary>O que é o "Como a turma respondeu"?</summary><p>Depois de responder, o assinante vê quantos por cento da turma marcaram cada alternativa e qual foi a pegadinha mais escolhida. No Treinar, dá para montar sessões só com as questões que a maioria erra, ou só com as que quase todo mundo acerta e você não pode errar.</p></details>
-            <details><summary>Como funciona o Simulado Nacional?</summary><p>No começo de cada mês sai uma edição nova: a mesma prova, com 50 questões de TEOT e TARO e duas horas de tempo, para todos os assinantes. Você faz quando quiser dentro do mês, numa tentativa só. A correção sai na hora, com a sua posição e o acerto por tema comparado à média.</p></details>
-            <details><summary>O que são os {ROTULO_SIMULADOS}?</summary><p>Questões inéditas, escritas pelo Orto Questões por engenharia reversa das provas: estudamos o estilo, o nível e os temas das provas anteriores e escrevemos questões novas no mesmo padrão, inclusive para provas cujo conteúdo não é público, como a de cirurgia da mão e o Fellowship de Quadril. Não são questões oficiais nem cópia de prova sigilosa; trazem aviso na tela e comentário completo.</p></details>
-            <details><summary>Ranking e desempenho são só para assinantes?</summary><p>Não. O ranking nacional, o desempenho por tema, a revisão espaçada, o caderno de erros e os comentários são de todos. O assinante soma a liga privada do seu serviço, a turma, o Simulado Nacional e o cronograma.</p></details>
-            <details><summary>Meus colegas precisam assinar para entrar na liga?</summary><p>Sim. Quem cria e quem entra na liga da residência precisam do plano. Quem recebe o convite sem o plano vê o nome da liga e pode assinar para entrar.</p></details>
-            <details><summary>Funciona no celular?</summary><p>Funciona em qualquer navegador, no celular ou no computador, com a mesma conta. O progresso sincroniza e você continua de onde parou.</p></details>
-          </div>
+        <div className="vd-faq__lista">
+          <details><summary>Quanto custa, de verdade?</summary><p>Mensal: {real(PLANO_MENSAL.total)} por mês. Semestral: {real(PLANO_SEMESTRAL.total)} a cada 6 meses ({real(porMes(PLANO_SEMESTRAL))} por mês). Anual: {real(PLANO_ANUAL.total)} por ano, o que dá {real(porMes(PLANO_ANUAL))} por mês e {centavos(porDia(PLANO_ANUAL))} por dia. Não há taxa de adesão nem cobrança escondida; os três planos liberam exatamente os mesmos recursos. Se a prova está a mais de seis meses, o anual sai pela metade do preço do mensal.</p></details>
+          <details><summary>Como funciona a garantia de 7 dias?</summary><p>Até 7 dias depois de cada cobrança aprovada, você pede o reembolso integral pelo botão em Minha conta, sem precisar falar com ninguém nem justificar. Se o Mercado Pago não confirmar a solicitação automática, use o canal de contato do site para atendimento manual. O acesso pago só é encerrado depois que o reembolso é confirmado.</p></details>
+          <details><summary>Pix ou cartão: qual a diferença?</summary><p>No Pix você paga o período inteiro de uma vez e o acesso é liberado assim que o Mercado Pago confirma; ele não renova sozinho, e a partir de 7 dias antes do fim a página libera a renovação sem perder os dias que faltam (avisamos por e-mail 3 dias antes). O CPF é pedido só para gerar o Pix e não fica salvo. No cartão, a renovação é automática na periodicidade escolhida e você desliga quando quiser; o Orto Questões não recebe os dados do cartão.</p></details>
+          <details><summary>Preciso falar com alguém para cancelar? E o meu histórico?</summary><p>Não. Desligar a renovação e pedir o reembolso dentro da garantia são botões em Minha conta. Depois dos 7 dias, não há devolução proporcional automática: você mantém o acesso até o fim do período pago e a assinatura não renova (seus direitos previstos em lei continuam preservados; veja as <a href={href('/condicoes-assinatura')}>condições da assinatura</a>). Respostas, revisões, anotações e desempenho nunca são apagados.</p></details>
+          <details><summary>Como o cronograma é montado?</summary><p>Você informa a data da prova, a intensidade e os dias de folga. Um diagnóstico de 30 questões mostra onde você está mais fraco. O cronograma divide as questões pelos dias, começa pelas áreas e assuntos que mais caem (pela contagem das provas oficiais), dá mais espaço aos seus temas fracos e mistura de 2 a 6 {ROTULO_SIMULADOS} por sessão. As duas últimas semanas são a reta final: revisão forte e depois o modo prova, com simulado, os erros que importam e o resumão. Todo dia ele se recalcula e avisa quando um tema fica esquecido.</p></details>
+          <details><summary>O que são os {ROTULO_SIMULADOS}?</summary><p>Questões inéditas, escritas pelo Orto Questões por engenharia reversa das provas: estudamos o estilo, o nível e o que a banca repete, e escrevemos questões novas no mesmo padrão a partir da bibliografia, inclusive para provas cujo conteúdo não é público, como a de cirurgia da mão e o Fellowship de Quadril. Não são questões oficiais nem cópia de prova sigilosa; trazem aviso na tela e comentário completo com a citação do livro.</p></details>
+          <details><summary>Como funciona o limite do plano gratuito?</summary><p>{limitesHabilitados ? `O gratuito tem um número limitado de respostas novas (hoje, ${LIMITE_GRATIS_ATUAL}) a cada 24 horas. O relógio começa na primeira questão respondida e, 24 horas depois, a cota volta inteira; o site mostra quanto falta.` : `O limite diário está desligado nesta fase, portanto o acesso gratuito também está sem limite de respostas. Se o limite for ativado, o patamar gratuito previsto é de ${LIMITE_GRATIS_ATUAL} respostas novas a cada 24 horas.`} Comentários, revisões e desempenho continuam abertos.</p></details>
         </div>
       </section>
 
@@ -509,6 +413,8 @@ function irPara(id: string) {
 /** Ritmos para escolher, com o tempo aproximado (cerca de 1,5 minuto por questão). */
 const RITMOS: Array<[number, string]> = [[15, '≈ 25 min'], [25, '≈ 40 min'], [40, '≈ 1h'], [60, '≈ 1h30']]
 const FOLGAS: Array<[number, string]> = [[0, 'Todo dia'], [1, '1 folga'], [2, '2 folgas']]
+/** Áreas mostradas uma a uma na prévia; as demais viram uma linha só. */
+const FASES_VISIVEIS = 4
 
 function proximaProva(): string {
   const hoje = chaveDia()
@@ -581,7 +487,7 @@ function PreviaCronograma({ conta, assinante }: { conta: boolean; assinante: boo
         </div>
 
         <ol className="vd-fases" aria-label="Fases do cronograma">
-          {fases.map((f, i) => {
+          {fases.slice(0, FASES_VISIVEIS).map((f, i) => {
             const aberta = assinante || i < 3
             const focos = f.area.focos.filter((x) => x.nivel >= 3).slice(0, 2)
             return (
@@ -596,6 +502,14 @@ function PreviaCronograma({ conta, assinante }: { conta: boolean; assinante: boo
               </li>
             )
           })}
+          {fases.length > FASES_VISIVEIS && (() => {
+            const resto = fases.slice(FASES_VISIVEIS)
+            return <li className="vd-fase vd-fase--resto">
+              <span className="vd-fase__num">+{resto.length}</span>
+              <div className="vd-fase__corpo"><p className="vd-fase__topo"><strong>Mais {resto.length} áreas, na ordem do que cai</strong><small>{semanaTexto(resto[0].de, resto[resto.length - 1].ate)}</small></p><p className="vd-fase__focos">{resto.map((f) => f.area.nome).join(' · ')}</p></div>
+              <span className="vd-fase__qtd">{numero(resto.reduce((s, f) => s + f.questoes, 0))}<small> questões</small></span>
+            </li>
+          })()}
           {reta > 1 && <li className="vd-fase vd-fase--reta">
             <span className="vd-fase__num"><Icone nome="reiniciar" tamanho={16} /></span>
             <div className="vd-fase__corpo"><p className="vd-fase__topo"><strong>Reta final · revisão forte</strong><small>Semana {semanas - 1} · penúltima semana</small></p><p className="vd-fase__focos">Seus erros, dúvidas e os assuntos que mais caem, uma fatia da prova por dia. Sem conteúdo novo.</p></div>
@@ -619,47 +533,6 @@ function PreviaCronograma({ conta, assinante }: { conta: boolean; assinante: boo
 /* Como a turma respondeu: uma questão para testar na própria página.         */
 /* ------------------------------------------------------------------------- */
 
-const DEMO = {
-  enunciado: 'Fratura da diáfise do úmero com mão caída logo após o trauma. Qual nervo foi lesado?',
-  alternativas: [['A', 'Axilar', 14], ['B', 'Radial', 71], ['C', 'Mediano', 6], ['D', 'Ulnar', 9]] as Array<[string, string, number]>,
-  correta: 'B',
-  pegadinha: 'A',
-}
-
-function DemoTurma() {
-  const [marcada, definirMarcada] = useState<string | null>(null)
-  return (
-    <div className="vd-demo vd-cartao">
-      <div className="vd-demo__texto">
-        <p className="vd-selo vd-selo--claro"><IconePixel nome="turma" tamanho={20} /> Teste aqui</p>
-        <h3>Responda e veja como a turma marcou</h3>
-        <p>É assim que o assinante vê cada questão depois de responder: a porcentagem de cada alternativa e a pegadinha que mais derruba.</p>
-        <small>Exemplo com números ilustrativos.</small>
-      </div>
-      <div className="vd-demo__questao">
-        <p className="vd-demo__enunciado">{DEMO.enunciado}</p>
-        <ul>
-          {DEMO.alternativas.map(([letra, texto, pct]) => {
-            const certa = letra === DEMO.correta
-            const classe = !marcada ? '' : certa ? ' vd-alt--certa' : letra === marcada ? ' vd-alt--errada' : ''
-            return (
-              <li key={letra}>
-                <button type="button" className={'vd-alt' + classe} disabled={Boolean(marcada)} onClick={() => definirMarcada(letra)} style={{ ['--pct' as string]: marcada ? `${pct}%` : '0%' }}>
-                  <b>{letra}</b><span>{texto}</span>
-                  {marcada && <em>{pct}%</em>}
-                  {marcada && letra === DEMO.pegadinha && <i className="vd-alt__pegadinha">pegadinha</i>}
-                </button>
-              </li>
-            )
-          })}
-        </ul>
-        {marcada && <p className="vd-demo__resultado" role="status">{marcada === DEMO.correta ? 'Acertou, junto com a maioria.' : `Você marcou ${marcada}. A resposta é B, radial.`} O axilar é a pegadinha: ele sofre na fratura do colo cirúrgico e na luxação do ombro, não na diáfise. <button type="button" onClick={() => definirMarcada(null)}>Responder de novo</button></p>}
-      </div>
-    </div>
-  )
-}
-
-/** Losango do Pix, desenhado em traço como os outros ícones. */
 function IconePix({ tamanho = 16 }: { tamanho?: number }) {
   return <svg width={tamanho} height={tamanho} viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round"><path d="M12 2.8 21.2 12 12 21.2 2.8 12z" /><path d="M7.6 9.2 10.4 12l-2.8 2.8M16.4 9.2 13.6 12l2.8 2.8" /></svg>
 }
