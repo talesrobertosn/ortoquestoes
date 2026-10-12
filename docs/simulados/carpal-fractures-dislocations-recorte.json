@@ -1,0 +1,2199 @@
+{
+  "data": "2026-10-12",
+  "assunto": "Carpal Fractures and Dislocations",
+  "escopo": "Leitura do acervo TEOT/TARO antes do capítulo; não representa revisão médica dos gabaritos.",
+  "candidatosLidos": 67,
+  "questoesSelecionadas": 52,
+  "excluidas": [
+    {
+      "id": "mao-0191",
+      "motivo": "Retirado do acervo na atualização 290c4274, origem de simulado de outro curso"
+    },
+    {
+      "id": "mao-0305",
+      "motivo": "Madelung"
+    },
+    {
+      "id": "mao-0155",
+      "motivo": "Túnel do carpo"
+    },
+    {
+      "id": "trauma-0329",
+      "motivo": "Ombro"
+    },
+    {
+      "id": "trauma-0438",
+      "motivo": "Reconstrução da IFP com enxerto de hamato"
+    },
+    {
+      "id": "mao-0023",
+      "motivo": "Kienböck"
+    },
+    {
+      "id": "mao-0529",
+      "motivo": "Kienböck"
+    },
+    {
+      "id": "mao-0621",
+      "motivo": "Metacarpo"
+    },
+    {
+      "id": "mao-0604",
+      "motivo": "Kienböck"
+    },
+    {
+      "id": "mao-0247",
+      "motivo": "CPPD"
+    },
+    {
+      "id": "mao-0251",
+      "motivo": "Cronologia da ossificação"
+    },
+    {
+      "id": "mao-0252",
+      "motivo": "Artrite reumatoide"
+    },
+    {
+      "id": "trauma-0550",
+      "motivo": "Fratura do rádio distal"
+    }
+  ],
+  "duplicatasContadasUmaVez": [
+    {
+      "id": "trauma-0932",
+      "representante": "mao-0543"
+    },
+    {
+      "id": "trauma-0110",
+      "representante": "mao-0052"
+    }
+  ],
+  "notaProveniencia": "mao-0543 e trauma-0932 declaram duplicataDe trauma-0326 (SBOT-SP, sem ano). A atribuição TEOT 2023 dos derivados requer confirmação na prova original.",
+  "questoes": [
+    {
+      "id": "mao-0577",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Anatomia da mão e punho",
+        "Lesões ligamentares dos dedos"
+      ],
+      "prova": "TARO",
+      "ano": 2026,
+      "dificuldade": null,
+      "enunciado": "Na figura anatômica a seguir, os ligamentos representados pelas setas 1 e 2 são, respectivamente,",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Radiolunato longo e triquetocapitato."
+        },
+        {
+          "letra": "B",
+          "texto": "Radiolunato longo e semilunocapitato."
+        },
+        {
+          "letra": "C",
+          "texto": "Radioescafocapitato e triquetocapitato."
+        },
+        {
+          "letra": "D",
+          "texto": "Radioescafocapitato e semilunocapitato."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": true,
+      "revisado": false,
+      "subtemasPendentes": false
+    },
+    {
+      "id": "trauma-0994",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura do escafoide e do carpo"
+      ],
+      "prova": "TARO",
+      "ano": 2026,
+      "dificuldade": null,
+      "enunciado": "A incidência radiológica para diagnóstico da fratura do escafoide demonstrada na imagem a seguir é descrita por",
+      "imagens": [
+        {
+          "arquivo": "trauma/trauma-0994-1.png",
+          "legenda": null,
+          "largura": 775,
+          "altura": 399
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "ZITER."
+        },
+        {
+          "letra": "B",
+          "texto": "STECHER."
+        },
+        {
+          "letra": "C",
+          "texto": "SCHNECK I."
+        },
+        {
+          "letra": "D",
+          "texto": "SCHNECK II."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false
+    },
+    {
+      "id": "mao-0432",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Biomecânica da mão",
+        "Instabilidade do carpo"
+      ],
+      "prova": "TARO",
+      "ano": 2025,
+      "dificuldade": null,
+      "enunciado": "Em relação à biomecânica do punho, o componente mais espesso e resistente do ligamento semilunopiramidal é a sua porção:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "volar."
+        },
+        {
+          "letra": "B",
+          "texto": "distal."
+        },
+        {
+          "letra": "C",
+          "texto": "dorsal."
+        },
+        {
+          "letra": "D",
+          "texto": "proximal."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false
+    },
+    {
+      "id": "mao-0311",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Instabilidade do carpo"
+      ],
+      "prova": "TEOT",
+      "ano": 2024,
+      "dificuldade": null,
+      "enunciado": "Na semiologia do punho, a instabilidade ligamentar semilunopiramidal é avaliada pelo teste de",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "WATSON."
+        },
+        {
+          "letra": "B",
+          "texto": "LINSCHEID."
+        },
+        {
+          "letra": "C",
+          "texto": "MASQUELET."
+        },
+        {
+          "letra": "D",
+          "texto": "KLEINERT-LATARJET."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT-2024-prova-branca.pdf",
+        "pagina": 27,
+        "numeroOriginal": 98
+      }
+    },
+    {
+      "id": "trauma-0665",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura do escafoide e do carpo"
+      ],
+      "prova": "TARO",
+      "ano": 2024,
+      "dificuldade": null,
+      "enunciado": "A pseudartrose do escafoide associada à necrose do polo proximal, segundo à classificação de HERBERT, é descrita como tipo",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "D3."
+        },
+        {
+          "letra": "B",
+          "texto": "D4."
+        },
+        {
+          "letra": "C",
+          "texto": "D5."
+        },
+        {
+          "letra": "D",
+          "texto": "D6."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false
+    },
+    {
+      "id": "trauma-1108",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura do escafoide e do carpo"
+      ],
+      "prova": "TEOT",
+      "ano": 2024,
+      "dificuldade": null,
+      "enunciado": "Na fratura do polo proximal do escafoide no adulto, a prevalência da necrose do polo proximal é de aproximadamente",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "35%."
+        },
+        {
+          "letra": "B",
+          "texto": "55%."
+        },
+        {
+          "letra": "C",
+          "texto": "75%."
+        },
+        {
+          "letra": "D",
+          "texto": "95%."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT-2024-prova-branca.pdf",
+        "pagina": 11,
+        "numeroOriginal": 38
+      }
+    },
+    {
+      "id": "mao-0543",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Artrose do punho e artroscopia",
+        "Fraturas do escafoide e do carpo"
+      ],
+      "prova": "TEOT",
+      "ano": 2023,
+      "dificuldade": null,
+      "enunciado": "Fratura da mão Na pseudartrose do escafoide, a técnica de MATTI-RUSSE estáindicada quando",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Existem reabsorção óssea significativa e instabilidade cárpica associada."
+        },
+        {
+          "letra": "B",
+          "texto": "Não existem reabsorção óssea significativa nem instabilidade cárpica associada."
+        },
+        {
+          "letra": "C",
+          "texto": "Existe reabsorção óssea significativa, porém sem instabilidade cárpica associada."
+        },
+        {
+          "letra": "D",
+          "texto": "Não existe reabsorção óssea significativa, porém com instabilidade cárpica associada."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "duplicataDe": "trauma-0326"
+    },
+    {
+      "id": "trauma-0190",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura do escafoide e do carpo"
+      ],
+      "prova": "TEOT",
+      "ano": 2022,
+      "dificuldade": null,
+      "enunciado": "A pseudoartrose do escafoide não tratada pode evoluir, mais frequentemente, com a instabilidade carpal do tipo",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "VISI."
+        },
+        {
+          "letra": "B",
+          "texto": "DISI."
+        },
+        {
+          "letra": "C",
+          "texto": "translação ulnar do carpo."
+        },
+        {
+          "letra": "D",
+          "texto": "translação radial do carpo."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false
+    },
+    {
+      "id": "trauma-0073",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura do escafoide e do carpo"
+      ],
+      "prova": "TARO",
+      "ano": 2021,
+      "dificuldade": null,
+      "enunciado": "A fratura do hâmulo do hamato é diagnosticada na radiografia através das incidências tunnel view e",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "anteroposterior do punho."
+        },
+        {
+          "letra": "B",
+          "texto": "posteroanterior do punho."
+        },
+        {
+          "letra": "C",
+          "texto": "oblíqua do punho em pronação de 45o."
+        },
+        {
+          "letra": "D",
+          "texto": "oblíqua do punho em supinação de 45o."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false
+    },
+    {
+      "id": "trauma-0210",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura do escafoide e do carpo"
+      ],
+      "prova": "TEOT",
+      "ano": 2021,
+      "dificuldade": null,
+      "enunciado": "A fratura do osso piramidal é mais frequentemente causada por mecanismo de",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "avulsão."
+        },
+        {
+          "letra": "B",
+          "texto": "impacção."
+        },
+        {
+          "letra": "C",
+          "texto": "angulação."
+        },
+        {
+          "letra": "D",
+          "texto": "cisalhamento."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TEOT 2021.pdf",
+        "pagina": 8,
+        "numeroOriginal": 25
+      }
+    },
+    {
+      "id": "trauma-0015",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura do escafoide e do carpo"
+      ],
+      "prova": "TARO",
+      "ano": 2020,
+      "dificuldade": null,
+      "enunciado": "Na fratura do escafoide, o mecanismo de trauma mais frequente é a queda com:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "hiperflexão e desvio ulnar do punho"
+        },
+        {
+          "letra": "B",
+          "texto": "hiperflexão e desvio radial do punho"
+        },
+        {
+          "letra": "C",
+          "texto": "hiperextensão e desvio ulnar do punho"
+        },
+        {
+          "letra": "D",
+          "texto": "hiperextensão e desvio radial do punho"
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "TARO-2020.pdf",
+        "pagina": 21,
+        "numeroOriginal": 71
+      }
+    },
+    {
+      "id": "mao-0013",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Instabilidade do carpo"
+      ],
+      "prova": "TARO",
+      "ano": 2019,
+      "dificuldade": null,
+      "enunciado": "Na dissociação entre o escafoide e o semilunar, no mecanismo de trauma, ocorre hiperextensão do punho, desvio:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "ulnar e pronação do carpo"
+        },
+        {
+          "letra": "B",
+          "texto": "ulnar e supinação do carpo"
+        },
+        {
+          "letra": "C",
+          "texto": "radial e pronação do carpo"
+        },
+        {
+          "letra": "D",
+          "texto": "radial e supinação do carpo"
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false
+    },
+    {
+      "id": "mao-0018",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Instabilidade do carpo"
+      ],
+      "prova": "TARO",
+      "ano": 2018,
+      "dificuldade": null,
+      "enunciado": "A fratura-luxação perissemilunar ocorre por hiperextensão do punho, desvio:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "ulnar e pronação intercarpal"
+        },
+        {
+          "letra": "B",
+          "texto": "radial e pronação intercarpal"
+        },
+        {
+          "letra": "C",
+          "texto": "ulnar e supinação intercarpal"
+        },
+        {
+          "letra": "D",
+          "texto": "radial e supinação intercarpal"
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false
+    },
+    {
+      "id": "mao-0028",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Instabilidade do carpo"
+      ],
+      "prova": "TARO",
+      "ano": 2018,
+      "dificuldade": null,
+      "enunciado": "No movimento do punho de radial para ulnar, a fileira proximal do carpo gira no sentido:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "ulnar"
+        },
+        {
+          "letra": "B",
+          "texto": "radial"
+        },
+        {
+          "letra": "C",
+          "texto": "dorsal"
+        },
+        {
+          "letra": "D",
+          "texto": "palmar"
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false
+    },
+    {
+      "id": "trauma-0041",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura do escafoide e do carpo"
+      ],
+      "prova": "TARO",
+      "ano": 2018,
+      "dificuldade": null,
+      "enunciado": "O acesso volar para o escafoide é realizado:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "através da bainha do tendão flexor radial do carpo"
+        },
+        {
+          "letra": "B",
+          "texto": "através da bainha do tendão flexor longo do polegar"
+        },
+        {
+          "letra": "C",
+          "texto": "entre os tendões do flexor radial do carpo e do braquiorradial"
+        },
+        {
+          "letra": "D",
+          "texto": "entre os tendões do flexor radial do carpo e do flexor longo do polegar"
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false
+    },
+    {
+      "id": "trauma-0093",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura do escafoide e do carpo"
+      ],
+      "prova": "TARO",
+      "ano": 2017,
+      "dificuldade": null,
+      "enunciado": "As fraturas do polo proximal do escafoide em crianças ocorrem por avulsão do ligamento",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "radiocapitato."
+        },
+        {
+          "letra": "B",
+          "texto": "escafocapitato."
+        },
+        {
+          "letra": "C",
+          "texto": "radiossemilunar."
+        },
+        {
+          "letra": "D",
+          "texto": "escafossemilunar."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false
+    },
+    {
+      "id": "mao-0052",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Fraturas do escafoide e do carpo"
+      ],
+      "prova": "TARO",
+      "ano": 2016,
+      "dificuldade": null,
+      "enunciado": "A maior parte da vascularização do polo proximal do escafoide entra pela crista:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "medial"
+        },
+        {
+          "letra": "B",
+          "texto": "lateral"
+        },
+        {
+          "letra": "C",
+          "texto": "dorsal"
+        },
+        {
+          "letra": "D",
+          "texto": "palmar"
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false
+    },
+    {
+      "id": "mao-0056",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Instabilidade do carpo"
+      ],
+      "prova": "TARO",
+      "ano": 2016,
+      "dificuldade": null,
+      "enunciado": "Na instabilidade perilunar progressiva do carpo, o estágio III de MAYFIELD é carcaterizado pela falha do ligamento:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "escafo-semilunar"
+        },
+        {
+          "letra": "B",
+          "texto": "capitato-semilunar"
+        },
+        {
+          "letra": "C",
+          "texto": "radiocarpal dorsal"
+        },
+        {
+          "letra": "D",
+          "texto": "piramidal-semilunar"
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false
+    },
+    {
+      "id": "trauma-0122",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura do escafoide e do carpo"
+      ],
+      "prova": "TARO",
+      "ano": 2016,
+      "dificuldade": null,
+      "enunciado": "A técnica de MATTI-RUSSE para tratamento de pseudoartrose do escafoide utiliza enxerto ósseo.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Vascularizado, por via de acesso dorsal."
+        },
+        {
+          "letra": "B",
+          "texto": "Vascularizado, por via de acesso ventral."
+        },
+        {
+          "letra": "C",
+          "texto": "Não Vascularizado, por via de acesso dorsal."
+        },
+        {
+          "letra": "D",
+          "texto": "Não Vascularizado, por via de acesso ventral."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false
+    },
+    {
+      "id": "trauma-0136",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura do escafoide e do carpo"
+      ],
+      "prova": "TARO",
+      "ano": 2015,
+      "dificuldade": null,
+      "enunciado": "Na fratura do escafoide, a síndrome naviculocapitato caracteriza-se por",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "ruptura do ligamento escafocapitato."
+        },
+        {
+          "letra": "B",
+          "texto": "luxação mediocárpica incluindo o escafoide."
+        },
+        {
+          "letra": "C",
+          "texto": "fratura do capitato com rotação do fragmento proximal."
+        },
+        {
+          "letra": "D",
+          "texto": "luxação axial do carpo entre as colunas central e medial."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false
+    },
+    {
+      "id": "mao-0076",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Exame físico da mão e punho",
+        "Instabilidade do carpo"
+      ],
+      "prova": "TARO",
+      "ano": 2014,
+      "dificuldade": null,
+      "enunciado": "O teste de WATSON foi descrito para avaliar a instabilidade do",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "capitato."
+        },
+        {
+          "letra": "B",
+          "texto": "semilunar."
+        },
+        {
+          "letra": "C",
+          "texto": "escafoide."
+        },
+        {
+          "letra": "D",
+          "texto": "piramidal."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false
+    },
+    {
+      "id": "mao-0080",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Instabilidade do carpo"
+      ],
+      "prova": "TARO",
+      "ano": 2014,
+      "dificuldade": null,
+      "enunciado": "A deformidade por VISI estática implica na lesão do ligamento",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "radiossemilunar."
+        },
+        {
+          "letra": "B",
+          "texto": "semilunocapitato."
+        },
+        {
+          "letra": "C",
+          "texto": "escafossemilunar."
+        },
+        {
+          "letra": "D",
+          "texto": "semilunopiramidal."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false
+    },
+    {
+      "id": "trauma-0167",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura do escafoide e do carpo"
+      ],
+      "prova": "TARO",
+      "ano": 2014,
+      "dificuldade": null,
+      "enunciado": "Na fratura do escafóide, o desvio carpal é identificado na incidência radiográfica",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "lateral."
+        },
+        {
+          "letra": "B",
+          "texto": "pronada."
+        },
+        {
+          "letra": "C",
+          "texto": "supinada."
+        },
+        {
+          "letra": "D",
+          "texto": "posteroanterior."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false
+    },
+    {
+      "id": "mao-0588",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Anatomia da mão e punho"
+      ],
+      "prova": "TARO",
+      "ano": 2013,
+      "dificuldade": null,
+      "enunciado": "Segundo NAVARRO, além do semilunar, a coluna central do carpo é constituída pelo",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "capitato, apenas."
+        },
+        {
+          "letra": "B",
+          "texto": "capitato e hamato."
+        },
+        {
+          "letra": "C",
+          "texto": "capitato e trapezoide."
+        },
+        {
+          "letra": "D",
+          "texto": "capitato, hamato e trapezoide."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2013.pdf",
+        "pagina": 4,
+        "numeroOriginal": 2
+      }
+    },
+    {
+      "id": "mao-0589",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Instabilidade do carpo"
+      ],
+      "prova": "TARO",
+      "ano": 2013,
+      "dificuldade": null,
+      "enunciado": "A fratura do processo estiloide radial é frequentemente associada a lesão do ligamento",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "lunopiramidal"
+        },
+        {
+          "letra": "B",
+          "texto": "escafossemilunar."
+        },
+        {
+          "letra": "C",
+          "texto": "rádioescafocapitato."
+        },
+        {
+          "letra": "D",
+          "texto": "escafotrapeziotrapezoide."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2013.pdf",
+        "pagina": 5,
+        "numeroOriginal": 11
+      }
+    },
+    {
+      "id": "mao-0590",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Instabilidade do carpo"
+      ],
+      "prova": "TARO",
+      "ano": 2013,
+      "dificuldade": null,
+      "enunciado": "A luxação perissemilunar do carpo corresponde ao estágio de MAYFIELD",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "II."
+        },
+        {
+          "letra": "B",
+          "texto": "III."
+        },
+        {
+          "letra": "C",
+          "texto": "IV."
+        },
+        {
+          "letra": "D",
+          "texto": "V."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2013.pdf",
+        "pagina": 6,
+        "numeroOriginal": 16
+      }
+    },
+    {
+      "id": "mao-0592",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Instabilidade do carpo"
+      ],
+      "prova": "TARO",
+      "ano": 2013,
+      "dificuldade": null,
+      "enunciado": "Na classificação da instabilidade cárpica de DOBYNS e COONEY, encontra-se correlação entre",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "fratura do rádio e V.I.S.I."
+        },
+        {
+          "letra": "B",
+          "texto": "fratura do escafoide e D.I.S.I."
+        },
+        {
+          "letra": "C",
+          "texto": "dissociação escafolunar e V.I.S.I."
+        },
+        {
+          "letra": "D",
+          "texto": "dissociação lunopiramidal e D.I.S.I."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2013.pdf",
+        "pagina": 8,
+        "numeroOriginal": 29
+      }
+    },
+    {
+      "id": "mao-0594",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Instabilidade do carpo"
+      ],
+      "prova": "TARO",
+      "ano": 2013,
+      "dificuldade": null,
+      "enunciado": "A artrodese limitada do punho conhecida como triescafo é indicada na",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "ruptura do ligamento palmar."
+        },
+        {
+          "letra": "B",
+          "texto": "instabilidade não dissociativa."
+        },
+        {
+          "letra": "C",
+          "texto": "lesão lunopiramidal com V.I.S.I."
+        },
+        {
+          "letra": "D",
+          "texto": "subluxação rotatória do escafoide."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2013.pdf",
+        "pagina": 11,
+        "numeroOriginal": 47
+      }
+    },
+    {
+      "id": "mao-0492",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Anatomia da mão e punho"
+      ],
+      "prova": "TARO",
+      "ano": 2012,
+      "dificuldade": null,
+      "enunciado": "A coluna central do carpo é constituída pelo semilunar, capitato e",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "hamato"
+        },
+        {
+          "letra": "B",
+          "texto": "piramidal"
+        },
+        {
+          "letra": "C",
+          "texto": "hamato e trapezoide"
+        },
+        {
+          "letra": "D",
+          "texto": "piramidal e trapezoide"
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false
+    },
+    {
+      "id": "mao-0499",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Lesões ligamentares dos dedos"
+      ],
+      "prova": "TARO",
+      "ano": 2012,
+      "dificuldade": null,
+      "enunciado": "O tratamento recomendado para lesão ligamentar carpal do pequeno arco, aguda e redutível, é",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "imobilização gessada."
+        },
+        {
+          "letra": "B",
+          "texto": "pinagem percutânea."
+        },
+        {
+          "letra": "C",
+          "texto": "reparo ligamentar volar."
+        },
+        {
+          "letra": "D",
+          "texto": "capsuloplastia dorsal."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false
+    },
+    {
+      "id": "mao-0587",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Fraturas do escafoide e do carpo"
+      ],
+      "prova": "TARO",
+      "ano": 2012,
+      "dificuldade": null,
+      "enunciado": "Na pseudartrose do escafoide com colapso avançado do punho, a artrose estágio I ocorre entre o escafoide e",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "o trapézio."
+        },
+        {
+          "letra": "B",
+          "texto": "o capitato."
+        },
+        {
+          "letra": "C",
+          "texto": "a fossa escafoide do rádio."
+        },
+        {
+          "letra": "D",
+          "texto": "o processo estiloide do rádio."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2012.pdf",
+        "pagina": 20,
+        "numeroOriginal": 89
+      }
+    },
+    {
+      "id": "mao-0512",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Artrose do punho e artroscopia"
+      ],
+      "prova": "TARO",
+      "ano": 2011,
+      "dificuldade": null,
+      "enunciado": "Na pseudartrose do escafoide com artrose no estágio III de WATSON e BALLET, o tratamento mais bem indicado é a artrodese",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "triescafoide."
+        },
+        {
+          "letra": "B",
+          "texto": "radioescafoide."
+        },
+        {
+          "letra": "C",
+          "texto": "escafocapitato."
+        },
+        {
+          "letra": "D",
+          "texto": "dos quatro cantos."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false
+    },
+    {
+      "id": "mao-0513",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Instabilidade do carpo"
+      ],
+      "prova": "TARO",
+      "ano": 2011,
+      "dificuldade": null,
+      "enunciado": "É classificada como instabilidade cárpica dissociativa a",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "radiocárpica."
+        },
+        {
+          "letra": "B",
+          "texto": "medicárpica ulnar."
+        },
+        {
+          "letra": "C",
+          "texto": "rotatória do escafoide."
+        },
+        {
+          "letra": "D",
+          "texto": "perilunar do carpo."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false
+    },
+    {
+      "id": "mao-0521",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Instabilidade do carpo"
+      ],
+      "prova": "TARO",
+      "ano": 2011,
+      "dificuldade": null,
+      "enunciado": "No teste de WATSON, a subluxação do escafoide é observada movendo-se o punho de",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "flexão para extensão."
+        },
+        {
+          "letra": "B",
+          "texto": "extensão para flexão."
+        },
+        {
+          "letra": "C",
+          "texto": "desvio radial para desvio ulnar."
+        },
+        {
+          "letra": "D",
+          "texto": "desvio ulnar para desvio radial."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false
+    },
+    {
+      "id": "trauma-0875",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura do escafoide e do carpo"
+      ],
+      "prova": "TARO",
+      "ano": 2010,
+      "dificuldade": null,
+      "enunciado": "O acesso cirúrgico ao escafoide, pela técnica de MATTI-RUSSE, se faz",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "lateralmente à artéria radial."
+        },
+        {
+          "letra": "B",
+          "texto": "entre a artéria radial e o tendão do flexor radial do carpo."
+        },
+        {
+          "letra": "C",
+          "texto": "entre o tendão do flexor radial do carpo e o nervo mediano."
+        },
+        {
+          "letra": "D",
+          "texto": "entre o nervo mediano e o tendão do palmar longo."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2010.pdf",
+        "pagina": 3,
+        "numeroOriginal": 4
+      }
+    },
+    {
+      "id": "mao-0620",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Anatomia da mão e punho",
+        "Instabilidade do carpo"
+      ],
+      "prova": "TARO",
+      "ano": 2009,
+      "dificuldade": null,
+      "enunciado": "A lesão aguda do ligamento escafossemilunar geralmente ocorre",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "por desinserção no escafóide."
+        },
+        {
+          "letra": "B",
+          "texto": "por desinserção no semilunar."
+        },
+        {
+          "letra": "C",
+          "texto": "por arrancamento ósseo."
+        },
+        {
+          "letra": "D",
+          "texto": "no corpo do ligamento."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6ª ed., pg. 892."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2009.pdf",
+        "pagina": 5,
+        "numeroOriginal": 12
+      },
+      "gabaritoBibliografia": "A"
+    },
+    {
+      "id": "mao-0624",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Exame físico da mão e punho",
+        "Instabilidade do carpo"
+      ],
+      "prova": "TARO",
+      "ano": 2009,
+      "dificuldade": null,
+      "enunciado": "Na luxação do carpo no estágio IV de MAYFIELD, a manobra de redução consiste em",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "extensão do punho e compressão do capitato no sentido dorsal."
+        },
+        {
+          "letra": "B",
+          "texto": "flexão do punho e compressão do capitato no sentido ventral."
+        },
+        {
+          "letra": "C",
+          "texto": "extensão do punho, compressão do semilunar para dorsal e flexão do punho."
+        },
+        {
+          "letra": "D",
+          "texto": "flexão do punho, compressão do semilunar para ventral e extensão do punho."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Pardini A.Traumatismos da mão. Rio de Janeiro: Medsi. 4ª ed., pg. 537."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2009.pdf",
+        "pagina": 11,
+        "numeroOriginal": 46
+      },
+      "gabaritoBibliografia": "C"
+    },
+    {
+      "id": "mao-0615",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Imagem da mão e punho"
+      ],
+      "prova": "TARO",
+      "ano": 2008,
+      "dificuldade": null,
+      "enunciado": "A instabilidade escafolunar é confirmada se, no exame radiográfico, o ângulo",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "capitatolunar for maior que 20º."
+        },
+        {
+          "letra": "B",
+          "texto": "capitatolunar for maior que 10º."
+        },
+        {
+          "letra": "C",
+          "texto": "escafolunar for maior que 45º."
+        },
+        {
+          "letra": "D",
+          "texto": "escafolunar for maior que 60º."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood C.A. et al. Fractures in Adults. Philadelphia: Lippincott. 6th ed., p. 890."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2008.pdf",
+        "pagina": 9,
+        "numeroOriginal": 51
+      },
+      "gabaritoBibliografia": "D"
+    },
+    {
+      "id": "mao-0599",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Imagem da mão e punho",
+        "Fraturas do escafoide e do carpo"
+      ],
+      "prova": "TARO",
+      "ano": 2007,
+      "dificuldade": null,
+      "enunciado": "O exame de imagem “padrão ouro” para diagnóstico da fratura oculta do escafóide é a",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "radiografia simples."
+        },
+        {
+          "letra": "B",
+          "texto": "ultra-sonografia."
+        },
+        {
+          "letra": "C",
+          "texto": "tomografia computadorizada."
+        },
+        {
+          "letra": "D",
+          "texto": "ressonância magnética."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood C.A. et al. Fractures. Philadelphia: Lippincott. 6ª ed., p. 871."
+      ],
+      "anulada": false,
+      "figuraPendente": true,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2007.pdf",
+        "pagina": 3,
+        "numeroOriginal": 1
+      },
+      "gabaritoBibliografia": "D"
+    },
+    {
+      "id": "mao-0606",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Instabilidade do carpo",
+        "Lesões ligamentares dos dedos"
+      ],
+      "prova": "TARO",
+      "ano": 2007,
+      "dificuldade": null,
+      "enunciado": "Segundo a teoria da instabilidade perilunar progressiva de MAYFIELD, a luxação do semilunar em relação ao rádio ocorre no estágio",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "I."
+        },
+        {
+          "letra": "B",
+          "texto": "II."
+        },
+        {
+          "letra": "C",
+          "texto": "III."
+        },
+        {
+          "letra": "D",
+          "texto": "IV."
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Browner J, Levine e Trafton. Skeletal trauma. Philadelphia: Saunders/Manole. 2ª ed., p. 1363."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2007.pdf",
+        "pagina": 20,
+        "numeroOriginal": 62
+      },
+      "gabaritoBibliografia": "D"
+    },
+    {
+      "id": "mao-0646",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Fraturas do escafoide e do carpo"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "Na dissociação escafolunar aguda, a lesão típica do ligamento interósseo é a avulsão no escafóide.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 3ª edição, p. 604."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 30,
+        "numeroOriginal": 177
+      },
+      "gabaritoBibliografia": "A"
+    },
+    {
+      "id": "mao-0648",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Fraturas do escafoide e do carpo"
+      ],
+      "prova": "TARO",
+      "ano": 2006,
+      "dificuldade": null,
+      "enunciado": "Na fratura dos ossos do carpo, o risco de necrose avascular é maior no escafóide e no capitato porque possuem suprimento vascular único.",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Certo"
+        },
+        {
+          "letra": "B",
+          "texto": "Errado"
+        }
+      ],
+      "gabarito": null,
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [
+        "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 1996. 4th Edition, Chap. 12, Pictures 12-11, p. 757."
+      ],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "taro2006.pdf",
+        "pagina": 31,
+        "numeroOriginal": 190
+      },
+      "gabaritoBibliografia": "A"
+    },
+    {
+      "id": "mao-0132",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Instabilidade do carpo"
+      ],
+      "prova": "TEOT/TARO",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "É contra-indicação à artrodese triescafo, o(a)",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "pseudartrose do escafóide"
+        },
+        {
+          "letra": "B",
+          "texto": "subluxação rotatória do escafóide"
+        },
+        {
+          "letra": "C",
+          "texto": "artrose radioescafóide progredindo com colapso escafo-semilunar"
+        },
+        {
+          "letra": "D",
+          "texto": "artrose escafotrapézio-trapezóide com metacarpofalangica do polegar normal"
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false
+    },
+    {
+      "id": "mao-0138",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Instabilidade do carpo"
+      ],
+      "prova": "TEOT/TARO",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Em um exame radiológico do carpo em perfil",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "o ângulo escafossemilunar normal é entre 45 – 70 graus"
+        },
+        {
+          "letra": "B",
+          "texto": "o ângulo semilunopiramidal normal é entre 10 – 15 graus"
+        },
+        {
+          "letra": "C",
+          "texto": "a deformidade em DISI apresenta ângulo escafossemilunar < 45 graus"
+        },
+        {
+          "letra": "D",
+          "texto": "a deformidade em VISI apresenta ângulo escafossemilunar > 70 graus"
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false
+    },
+    {
+      "id": "mao-0238",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Anatomia da mão e punho",
+        "Lesões ligamentares dos dedos"
+      ],
+      "prova": "TEOT/TARO",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Em relação à anatomia ligamentar do punho , na imagem a seguir o número 6 corresponde ao ligamento",
+      "imagens": [
+        {
+          "arquivo": "mao/mao-0238-1.jpeg",
+          "legenda": null,
+          "largura": 298,
+          "altura": 336
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "arqueado."
+        },
+        {
+          "letra": "B",
+          "texto": "pisohamato."
+        },
+        {
+          "letra": "C",
+          "texto": "intercarpal dorsal."
+        },
+        {
+          "letra": "D",
+          "texto": "intercarpal palmar."
+        },
+        {
+          "letra": "E",
+          "texto": "transverso retinacular."
+        }
+      ],
+      "gabarito": "E",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false
+    },
+    {
+      "id": "mao-0239",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Instabilidade do carpo"
+      ],
+      "prova": "TEOT/TARO",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "A luxação perissemilunar do carpo não é diagnosticada no primeiro atendimento da emergência em aproximadamente",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "5% dos casos."
+        },
+        {
+          "letra": "B",
+          "texto": "25% dos casos."
+        },
+        {
+          "letra": "C",
+          "texto": "35% dos casos."
+        },
+        {
+          "letra": "D",
+          "texto": "50% dos casos."
+        },
+        {
+          "letra": "E",
+          "texto": "75% dos casos."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false
+    },
+    {
+      "id": "mao-0240",
+      "tema": "Mão e punho",
+      "subtemas": [
+        "Instabilidade do carpo"
+      ],
+      "prova": "TEOT/TARO",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Em relação aos estágios da instabilidade escafossemilunar descrita por GARCIA ELIAS , na dissociação escafossemilunar com subluxação rotatória do escafóide redutível e cartilagem íntegra corresponde ao estágio IV e está indicada a técnica de",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "pinagem aberta."
+        },
+        {
+          "letra": "B",
+          "texto": "reparo ligamentar."
+        },
+        {
+          "letra": "C",
+          "texto": "pinagem artroscopica."
+        },
+        {
+          "letra": "D",
+          "texto": "tenodese triligamentar."
+        },
+        {
+          "letra": "E",
+          "texto": "artrodese em quadro cantos."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false
+    },
+    {
+      "id": "trauma-0275",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura do escafoide e do carpo"
+      ],
+      "prova": "TEOT/TARO",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "A fratura de escafóide por trauma de alta energia tem como lesão associada mais comum a fratura do",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "capitato"
+        },
+        {
+          "letra": "B",
+          "texto": "semilunar"
+        },
+        {
+          "letra": "C",
+          "texto": "radio distal"
+        },
+        {
+          "letra": "D",
+          "texto": "radio proximal"
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false
+    },
+    {
+      "id": "trauma-0276",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura do rádio distal"
+      ],
+      "prova": "TEOT/TARO",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "A presença de variância ulnar positiva em um paciente com fratura de radio distal sem osteoporose é indicativo de dissociação",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "escafocapitato"
+        },
+        {
+          "letra": "B",
+          "texto": "escafosemilunar"
+        },
+        {
+          "letra": "C",
+          "texto": "semilunocaptato"
+        },
+        {
+          "letra": "D",
+          "texto": "semilunopiramidal"
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false
+    },
+    {
+      "id": "trauma-0344",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura do escafoide e do carpo"
+      ],
+      "prova": "TEOT/TARO",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "A imagem representa qual classificação de WATSON & BALLET para alterações degenerativas devido à pseudoartrose do escafóide?",
+      "imagens": [
+        {
+          "arquivo": "trauma/trauma-0344-1.jpeg",
+          "legenda": null,
+          "largura": 596,
+          "altura": 630
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "I"
+        },
+        {
+          "letra": "B",
+          "texto": "II"
+        },
+        {
+          "letra": "C",
+          "texto": "III"
+        },
+        {
+          "letra": "D",
+          "texto": "IV"
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false
+    },
+    {
+      "id": "trauma-0908",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura do escafoide e do carpo"
+      ],
+      "prova": "TEOT/TARO",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "A fratura do escafoide é mais frequentemente associada à fratura do rádio ao nível:",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Da diáfise."
+        },
+        {
+          "letra": "B",
+          "texto": "Do terço proximal."
+        },
+        {
+          "letra": "C",
+          "texto": "Do processo estiloide."
+        },
+        {
+          "letra": "D",
+          "texto": "Da fosseta do semilunar."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false
+    },
+    {
+      "id": "trauma-0475",
+      "tema": "Trauma adulto",
+      "subtemas": [
+        "Fratura do escafoide e do carpo"
+      ],
+      "prova": "TEOT/TARO",
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "A técnica cirúrgica para o tratamento da necrose do polo proximal associada à pseudartrose do escafóide que utiliza o pedículo baseado no ramo volar da artéria radial na imagem a seguir foi descrita por:",
+      "imagens": [
+        {
+          "arquivo": "trauma/trauma-0475-1.jpeg",
+          "legenda": null,
+          "largura": 314,
+          "altura": 242
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "BERGER."
+        },
+        {
+          "letra": "B",
+          "texto": "FERNANDEZ."
+        },
+        {
+          "letra": "C",
+          "texto": "MATHOULIN."
+        },
+        {
+          "letra": "D",
+          "texto": "SOTERANOS."
+        },
+        {
+          "letra": "E",
+          "texto": "ZAIDEMBERG."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false
+    }
+  ]
+}

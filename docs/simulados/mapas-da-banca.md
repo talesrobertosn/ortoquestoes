@@ -1351,7 +1351,7 @@ O mapa amplo de anatomia TEOT/TARO continua em
 [anatomia-teot-taro.md](anatomia-teot-taro.md). O lote aproveitou 13 folhas do
 recorte, com oito questões comentadas, quatro figuras e dois pares,
 `ombro-cotovelo-0623` a `ombro-cotovelo-0630`. Gabaritos A2/B2/C2/D2;
-mediana dos comentários 6.420 caracteres. A preferência por anatomia com figura,
+mediana dos comentários 6.419 caracteres. A preferência por anatomia com figura,
 nomes removidos e seta amarela foi registrada nas lições permanentes do guia.
 
 ## Netter — anatomia da coluna (08/10/2026)
@@ -1660,3 +1660,7 @@ horas), artroscopia e reabilitação.
 [Mapa regional](netter-pe-tornozelo.md), [plano](netter-pe-tornozelo-plano.md), [31 oficiais auditáveis](netter-pe-tornozelo-recorte.json) e [entrega](netter-pe-tornozelo-entrega.md). Leitura das 72 folhas do capítulo 10 e dos 121 candidatos oficiais. Identificação seguida de origem, fixação ou nervo aparece no TEOT 2023 a 2025 e TARO 2024/2026; tendões, intrínsecos, retináculos e nervos cutâneos são alvos recorrentes. Duplicatas da mesma edição não contam como recorrência anual.
 
 Aproveitamento: `pe-tornozelo-0387` a `0422`, 36 autorais, 24 com figura e 21 adaptações distintas. Só anatomia, sem repetição do ventre ou inserção dos músculos extrínsecos já feitos no lote de perna. Cobertura: marcos do retropé, nó de HENRY, grupos tarsais e LISFRANC, ligamentos, retináculos, camadas musculares plantares, nervos e vasos. O item calcaneofibular ficou textual pela sobreposição dos tendões. Todos os conteúdos anteriores do tema foram preservados.
+
+## Fraturas e luxações do carpo (12/10/2026)
+
+[Engenharia reversa](carpal-fractures-dislocations.md) e [recorte auditável](carpal-fractures-dislocations-recorte.json). Foram lidos 67 candidatos; 52 registros após 12 exclusões de assuntos externos, um registro retirado durante a sincronização e duas cópias contadas uma vez. Nos 46 itens de quatro alternativas, enunciado mediano de 84 caracteres e alternativa de 19. Fatos recorrentes: coluna central de NAVARRO, WATSON, DISI/VISI, MAYFIELD, polo proximal e vascularização do escafoide, MATTI-RUSSE e SNAC. Quatro imagens examinadas; figura TARO 2026 ausente. Sete itens sem gabarito, atribuição TEOT 2023 da cópia MATTI-RUSSE pendente e dois itens de classificação/tratamento a confrontar com o capítulo. Nenhum novo simulado de carpo escrito nesta etapa.
