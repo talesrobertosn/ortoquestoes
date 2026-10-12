@@ -2,7 +2,7 @@
 
 Tales aprovou este modelo em 12/10/2026 ("esse é um modelo bom"). Vale para Claude, Codex e os demais agentes. Ele faz parte do arsenal, mas não é padrão obrigatório. Respeite o intervalo de 2 dias entre usos do mesmo estilo e confira `historico.json` antes de usar (o estilo é registrado como `treine-gratis`).
 
-Referência executável: [treine-gratis/modelo.html](treine-gratis/modelo.html), um story de 1080×1920. Primeira entrega: `posts/2026-10-12-story-treine-gratis/`.
+Referência executável: [treine-gratis/modelo.html](treine-gratis/modelo.html), um story de 1080×1920. Primeira entrega: `posts/2026-10-12-story-treine-gratis/`. Versão de feed em carrossel (7 slides de 1080×1350, um recurso por slide e a chamada no fim): `posts/2026-10-12-carrossel-treine-gratis/`.
 
 ## Quando escolher
 
