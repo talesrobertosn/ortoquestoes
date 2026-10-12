@@ -1630,3 +1630,25 @@ C: equilibrar o lote.
 
 Simulados no recorte: trauma-1229 (redução fechada clássica com desvio dorsal) e a anatomia do
 antebraço do Netter (mao-1264 a 1281). Não repetir.
+
+### Aproveitamento do capítulo 43 (lote publicado em 12/10/2026)
+
+Rockwood 10ª ed., capítulo 43 (Richard e Ruch). 29 questões, trauma-1461 a trauma-1489, gabarito
+A7 B8 C7 D7, sete com figura (tangencial dorsal, teardrop, altura radial, inclinação volar, fios
+percutâneos, perda da faceta do semilunar, placa em ponte dorsal). A maioria é gêmea dos fatos
+carimbados: sky line (técnica e finalidade), teardrop, comprimento e parâmetros radiográficos,
+CFCT, HENRY e PARONA, ELP, BARTON, KAPANDJI, fios percutâneos, placa em ponte, vitamina C e a
+associação com fragilidade.
+
+Divergências resolvidas pelo capítulo:
+- **Vitamina C:** recomendação moderada da AAOS 2009, depois ensaio e metanálise sem benefício;
+  evidência conflitante. A questão cobra a recomendação de 2009 e o comentário explica o estado atual.
+- **Placa em ponte dorsal:** complicações mais comuns são irritação dos extensores e rigidez dos
+  dedos, ambas raras; coerente com o TEOT 2025.
+- **IDEAL:** não aparece no capítulo 43; não foi cobrada.
+- **Die-punch AO B3** (sem ano): o capítulo não classifica; o comentário recomenda conferir.
+
+Fica para outro lote: incidência da incisura sigmoide, classificações de MAYO e FERNANDEZ e
+modificadores Q em mais detalhe, critérios de consolidação viciosa como questão própria, osteotomia
+corretiva (encurtamento da ulna), fixador sem ponte, fratura exposta (tipos I e II com fixação em 24
+horas), artroscopia e reabilitação.
