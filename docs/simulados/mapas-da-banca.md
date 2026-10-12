@@ -1351,7 +1351,7 @@ O mapa amplo de anatomia TEOT/TARO continua em
 [anatomia-teot-taro.md](anatomia-teot-taro.md). O lote aproveitou 13 folhas do
 recorte, com oito questões comentadas, quatro figuras e dois pares,
 `ombro-cotovelo-0623` a `ombro-cotovelo-0630`. Gabaritos A2/B2/C2/D2;
-mediana dos comentários 6.419 caracteres. A preferência por anatomia com figura,
+mediana dos comentários 6.420 caracteres. A preferência por anatomia com figura,
 nomes removidos e seta amarela foi registrada nas lições permanentes do guia.
 
 ## Netter — anatomia da coluna (08/10/2026)
