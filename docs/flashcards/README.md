@@ -31,6 +31,24 @@ Uma aba **Flashcards** dentro de **Treinar**, com o **modo Estudo** (calmo: vira
   - brainstorm aprovado e decisões registradas;
   - protótipo visual com os modos Estudo e Batalha e 3 cenários (Salão das velas, Campo, Masmorra);
   - 12 flashcards de exemplo tirados de questões reais.
+- **12/10/2026, fim do dia (troca de conta):**
+  - o Tales gostou da imagem e do mecanismo do protótipo 1 e mandou 5 referências (veja [REFERENCIAS.md](REFERENCIAS.md));
+  - a **versão 2** está escrita em `prototipos/flashcards/torneio-v2.html`, **ainda sem teste visual**:
+    - tabuleiro emoldurado;
+    - adversário com vida em cima;
+    - alternativas na mão em leque;
+    - botão redondo;
+    - golpe com esfera de luz;
+    - partículas.
+  - **Para continuar:**
+    1. rodar `node prototipos/flashcards/testar-prototipo.mjs prototipos/flashcards/torneio-v2.html <pasta-temporária>`. O script tirava prints no celular e no computador, mas falhou na linha 6: o caminho do `import` do Playwright precisa ser ajustado, por exemplo para `playwright` ou `node_modules/playwright/index.js`.
+    2. olhar os prints e corrigir;
+    3. quando estiver bom, trocar o `torneio.html` pela v2 e republicar o artifact.
+  - **Mudança de mecânica na v2 (proposta, falta o Tales aprovar):** o andar não tem mais 5 flashcards fixos. Cada andar tem um adversário com vida:
+    - o acerto causa dano nele: fácil 10, moderada 20, difícil 30;
+    - o erro faz ele golpear você, com os danos de sempre (2, 5 e 10);
+    - derrotou o adversário, você sobe de andar e escolhe um poder.
+    - Adversários: Golem de Gesso, Serpente do Ciático e o chefe Guardião do Acetábulo.
 - **Próximo passo:** etapa 1 do [ROTEIRO.md](ROTEIRO.md). O Tales avalia o protótipo e escolhe os ajustes de visual; depois vem a fábrica (`scripts/flashcards/`), com uma amostra de cerca de 30 flashcards para aprovação.
 
 ## Regras que valem para todo o projeto
