@@ -315,3 +315,6 @@ varredura circular é um motivo gráfico abstrato; não representa exame nem ana
 - **Cupom fiscal (stories, 3 telas):** versão principal "questão primeiro": a nota imprime uma questão oficial, depois a resposta e por fim uma propaganda leve, sem preço. [Modelo](cupom-fiscal/modelo.html). Há uma variante só de propaganda com preço: [modelo-preco.html](cupom-fiscal/modelo-preco.html).
 
 [Guia de escolha, roteiro, acabamento e revisão](SNELLEN-E-CUPOM.md). Usar por cópia direta, porque os estilos não estão no sorteador.
+
+## VAR da questão (12/10/2026, aguardando aprovação)
+- **Feed (5 slides) e stories (3):** transmissão esportiva com placar, tarja inferior e monitor do VAR. Cada alternativa é revisada como um lance (anulado ou gol validado). Funciona melhor quando as alternativas combinam itens (pares de testes, de nervos, de classificações) e alguns deles estão "em outro time". Gramado e linhas de impedimento são decoração, nunca anatomia. [Exemplo](../posts/2026-10-12-var-piriforme/post.html).
