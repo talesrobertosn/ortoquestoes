@@ -1993,6 +1993,36 @@ Divergências a resolver com o capítulo do Rockwood antes de escrever gêmeas:
   - tromboembolismo;
 - **Idoso:** fixação e artroplastia no mesmo ato e o tratamento percutâneo.
 
-**Destino dos simulados.** Tema Trauma, subtema "Fratura do acetábulo", onde estão as oficiais e que entra no filtro TEOT/TARO, a menos que se prefira o tema Quadril (que soma o filtro do fellowship).
+**Destino.** Tema Trauma, subtema "Fratura do acetábulo", onde estão as oficiais. Entra no filtro TEOT/TARO.
 
-**Aproveitamento.** Aguardando o capítulo do Rockwood sobre fraturas do acetábulo para escrever o lote, com gêmeas dos repetidos e novas das lacunas.
+**Aproveitamento do capítulo 51** (Acetabulum Fractures; Gary e Phelps): `trauma-1515` a `trauma-1538`, 24 questões, 3 figuras, gabarito A6, B6, C6, D6. O pedido foi "só as que forem realmente úteis".
+- **Gêmeas dos repetidos:**
+  - lágrima e ilioisquiática superpostas (tangência à superfície quadrilátera; o ramo medial da lágrima é o canal obturatório e a superfície quadrilátera);
+  - sinais nomeados, com figura: asa de gaivota (impacção superomedial do teto, mau prognóstico) e esporão (ambas as colunas, na oblíqua obturatriz);
+  - orientação do traço na tomografia: os painéis C e D da mesma figura do TEOT 2024 (paredes anterior e posterior), para não repetir A e B;
+  - frequências de LETOURNEL;
+  - congruência secundária;
+  - arcos de teto (VRAHAS: 45, 25 e 70 graus);
+  - via preferida para a coluna anterior com hemitransversa e para ambas as colunas;
+  - mecanismo do painel (parede posterior, com o joelho e o LCP).
+- **Novas das lacunas:**
+  - oblíquas de JUDET;
+  - fratura em T distinguida da transversa pelo ramo isquiopúbico;
+  - definição de ambas as colunas;
+  - exame dinâmico sob anestesia na parede posterior;
+  - 10 mm superiores na tomografia e desvio acima de 2 mm;
+  - idoso sem desvio (7% desviam, 94% de sobrevida do quadril);
+  - prazo de 15 e 10 dias;
+  - indicações de urgência;
+  - variação do ciático com o piriforme;
+  - obturatório no STOPPA;
+  - impacção marginal;
+  - haste retrógrada no fêmur associado;
+  - ossificação heterotópica por via;
+  - cutâneo femoral lateral como lesão pós-operatória mais comum;
+  - paradoxo da parede posterior (a tomografia mostrou só 22% de redução perfeita).
+- **Divergências resolvidas pelo capítulo:**
+  - a gaivota é impacção do teto medial, na coluna anterior e na hemitransversa do idoso; o gabarito "coluna posterior" do TARO 2011 não foi seguido;
+  - o ramo medial da lágrima é o canal obturatório e a superfície quadrilátera; o gabarito "fossa acetabular" do TARO 2014 descreve o ramo lateral;
+  - a corona mortis entrou sem prevalência, porque o capítulo não dá um número.
+- **De fora (pouco útil para a prova):** escores de resultado, técnica fina de pinças e placas, tromboprofilaxia (já coberta no lote do anel), via pararretal e fixação percutânea em detalhe.
