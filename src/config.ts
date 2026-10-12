@@ -43,6 +43,15 @@ export const ROTULO_SIMULADOS = 'OrtoQuestões Simulados'
 export const EXIGIR_CONTA_PARA_QUESTOES = true
 
 /**
+ * Torneio de Flashcards (docs/flashcards/). Em teste pelo Tales (12/10/2026):
+ * a rota #/flashcards funciona no site publicado, mas só para quem tem o link.
+ * Nenhum menu aponta para ela; o atalho no Treinar aparece só no
+ * `npm run dev` e em builds com VITE_FLASHCARDS=1.
+ */
+export const FLASHCARDS_LIBERADO = true
+export const FLASHCARDS_NO_MENU = import.meta.env.DEV || import.meta.env?.VITE_FLASHCARDS === '1'
+
+/**
  * Questões grátis por dia no momento. Quem decide de verdade é o painel
  * (Configurações > Limite gratuito); este número só aparece nos Termos, nas
  * Condições da Assinatura e na página de planos. Ao mudar no painel, mude aqui

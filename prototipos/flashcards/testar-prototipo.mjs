@@ -1,4 +1,4 @@
-import { chromium } from '/home/user/ortoquestoes/node_modules/playwright/index.mjs';
+const { chromium } = await import('playwright').catch(async () => import((await import('child_process')).execSync('npm root -g').toString().trim() + '/playwright/index.mjs'));
 import fs from 'fs';
 const [,, arq, saida] = process.argv;
 const html = `<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>[hidden]{display:none!important}</style></head><body>${fs.readFileSync(arq,'utf8')}</body></html>`;

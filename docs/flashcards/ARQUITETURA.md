@@ -1,6 +1,42 @@
-# Arquitetura proposta
+# Arquitetura
 
-Proposta inicial; ajuste ao implementar e registre aqui o que mudou.
+## 0. O que já está no app (12/10/2026, noite)
+
+Tudo em `src/flashcards/`, com camadas separadas como pediu o briefing:
+
+| Camada | Arquivo | O que faz |
+|---|---|---|
+| Motor de regras | `motor/regras.ts` | Funções puras. Cada ação (`novaPartida`, `responder`, `usarPista`, `seguir`, `escolher`, `encerrar`) devolve `{ estado, eventos }`; uma ação fora de hora devolve o mesmo estado e nenhum evento, o que impede corrida entre clique, tecla e animação. |
+| Sorteio com semente | `motor/aleatorio.ts` | A mesma semente repete a partida (testes e, depois, o Desafio do dia). |
+| Monstros | `motor/bestiario.ts` | Vida, força, armadura, paciência, veneno, fase 2 do chefe, cenário de cada um. |
+| Poderes e relíquias | `motor/poderes.ts` | Catálogo com nome, texto, ícone e cor. |
+| Estado da partida | `Partida` em `regras.ts` | Salvo a cada mudança em `flashcards:partida` (por conta, como o resto do site); ao reabrir, a partida continua. |
+| Progresso educacional | `progresso.ts` | Registro por flashcard em `flashcards:registros`, no formato do `RegistroQuestao` e com a mesma escada de intervalos. Acerto livre conta como certeza, acerto com pista como dúvida, erro volta. É uma fila separada da de questões. |
+| Máquina da tela | `componentes/Arena.tsx` | Fases `pergunta → resposta → recompensa → fim`. O **diretor** (`encenar`) transforma cada evento em animação e pode ser pulado (Esc, Seguir, toque na faixa); ao pular, a tela sincroniza com o estado real. |
+| Efeitos e partículas | `efeitos/palco.ts` | Um canvas por cima da arena que só anima enquanto há partículas: projétil com rastro, fagulhas, onda de choque, corte, cura subindo, cacos de escudo, confete e dissolução. |
+| Cenários | `efeitos/pintura.ts` | Campo, Masmorra e Salão pintados em canvas uma vez por tamanho de tela. Ambiente leve (vaga-lumes, brasas, poeira, tochas) a 25 quadros por segundo, que para com a aba escondida ou com efeitos reduzidos. Paralaxe discreta com o mouse. |
+| Áudio | `efeitos/sons.ts` | Sons sintetizados com Web Audio, sem arquivo; desligados por padrão, com volume. |
+| Componentes | `componentes/` | `Cartao` (flashcard 3D com moldura por raridade), `Sprite` (pixel art com luz automática), `Texto` (negrito e lacunas sem HTML), `Cenario` e `TampoMesa`, `Estudo`, `Arena` (com `Recompensas` e `Fim`). |
+| Estilo | `src/estilos/paginas/Flashcards.css` | Arena em tela cheia, sem depender do tema do site. Fontes: Cinzel e Alegreya (`@fontsource`) e Pixelify Sans. |
+| Página | `src/paginas/Flashcards.tsx` | Rota `#/flashcards`, carregada sob demanda e publicada só por link (`FLASHCARDS_LIBERADO` em `config.ts`); o atalho no Treinar depende de `FLASHCARDS_NO_MENU` (`npm run dev` ou `VITE_FLASHCARDS=1`). Pede conta, como o Treinar. |
+
+**Baralho de demonstração:** os 12 flashcards reais do protótipo (`dados/baralhoDemo.ts`), com o id da questão de origem e as imagens de `public/imagens/`. A fábrica (seção 1) vai substituí-lo.
+
+**Ainda não feito, e não pode ser dado como pronto:**
+- limite de 10 por dia no servidor;
+- sincronização dos registros com o Supabase;
+- bloco "Flashcards de hoje" na Revisão;
+- fábrica;
+- Livro de flashcards.
+
+**Prints:** `node prototipos/flashcards/testar-prototipo.mjs` serve só para o protótipo HTML. Para o app:
+1. rode `VITE_SUPABASE_URL=sem npx vite`; sem Supabase, o app não pede conta, e isso vale só nessa máquina;
+2. abra `#/flashcards`;
+3. no `npm run dev`, a arena expõe `window.__torneio`, que os testes de tela usam para achar a alternativa certa.
+
+## Proposta inicial (seções 1 a 5)
+
+Ajuste ao implementar e registre acima o que mudou.
 
 ## 1. A fábrica (scripts/flashcards/)
 

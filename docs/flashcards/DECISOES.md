@@ -43,10 +43,45 @@ Registro em ordem de data. Cada linha é uma decisão do Tales; não mude sem no
 - Projeto de vários dias, feito às vezes com Claude e às vezes com ChatGPT. **Tudo documentado no repositório** para qualquer um continuar.
 - Primeiro passo: um protótipo visual. Feito em `prototipos/flashcards/torneio.html`.
 
+## 12/10/2026, noite (depois de ver o protótipo 2)
+
+**O projeto sai do rascunho**
+- "Do ponto de vista inicial tá bem bom": seguir, oficializar e colocar no site **o quanto antes**.
+- Nada vai para produção sem aprovação do Tales.
+- **Depois, ainda em 12/10:** "pode subir no site, com o link; como só eu vou saber o link, só eu vou usar". A rota `#/flashcards` foi publicada sem aparecer em nenhum menu.
+
+**Batalha primeiro**
+- A **Batalha é o modo de entrada**. O Estudo fica numa aba ao lado, para quem quiser.
+
+**Dificuldade**
+- **Mais fácil morrer do que matar o monstro**, e a dificuldade depende do monstro.
+- Monstros temáticos (como o Golem de Gesso) agradaram. Estatísticas entram depois.
+
+**Arte**
+- Tudo mais bonito: tabuleiro, mesa, cartas, cenários, golpes e efeitos.
+- Estilo: **Hearthstone e Legends of Runeterra**, com **toques de pixel art**. O cenário pode deixar de ser pixel art e virar fantasia lisa, com luz e profundidade.
+- No celular, o texto dos flashcards precisa ser legível (no protótipo estava minúsculo).
+- "Quanto mais efeitos visuais melhor."
+
+**Briefing completo**
+- O Tales mandou o briefing "Evolução visual e mecânica do Torneio de Flashcards": direção de arte, efeitos de acerto e erro, combos, intenção do inimigo, foco, críticos, relíquias, escudo, pergaminho da pista, recompensas, chefes e arquitetura separada.
+- O resumo do que entrou está em [BATALHA.md](BATALHA.md) e [ARQUITETURA.md](ARQUITETURA.md).
+- Deu **liberdade criativa total** para decidir e organizar ("pode começar a produzir").
+
+**Decisões tomadas por Claude com essa liberdade (o Tales pode reverter qualquer uma)**
+- **Adversário com vida, e não mais 5 flashcards por andar.** A comparação está em BATALHA.md. Motivo: dá sensação de combate e deixa cada monstro ter dificuldade própria.
+- **Balanceamento por simulação:** quem acerta 60% raramente vence o chefe; quem acerta 90% quase sempre vence (tabela em BATALHA.md).
+- **Sem sorte no dano:** o crítico é o acerto difícil, sempre igual. Nada aleatório muda o placar, para não estragar rankings futuros.
+- **Acerto com o Pergaminho da pista conta como "assistido":** entra na revisão como dúvida e nunca como domínio.
+- **Foco (energia) ainda não entra:** está descrito como proposta, com balanceamento, esperando aprovação.
+- **Sons sintetizados, desligados por padrão**, com volume. **Efeitos reduzidos** seguem a preferência do aparelho e podem ser ligados nos Ajustes.
+
 ## Pendentes (perguntar ao Tales quando chegar a hora)
 
 1. **Batalha para não assinante:** só assinante, uma partida curta por dia, ou uma partida que gasta os 10 flashcards grátis?
 2. **Os 10 grátis por dia** contam novos e revisões juntos? A proposta atual é que sim.
-3. **Estética final:** depois de ver o protótipo, mais pixel art, mais "pintado" (Hearthstone, Gwent) ou mistura?
-4. **Sons:** opcionais e desligados por padrão (proposta). Confirmar.
+3. ~~Estética final~~: respondida em 12/10 (Hearthstone/Runeterra com toques de pixel art).
+4. **Sons:** feitos opcionais e desligados por padrão. Confirmar se agradam.
 5. **Ranking da Batalha** (Desafio do dia) junto da Arena dos Residentes ou separado?
+6. **Foco:** integrar o recurso de energia proposto em BATALHA.md?
+7. **Adversário com vida:** confirmar a troca dos 5 flashcards por andar (decidida por Claude com a liberdade dada).
