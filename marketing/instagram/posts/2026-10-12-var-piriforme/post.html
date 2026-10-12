@@ -1,0 +1,263 @@
+<!doctype html>
+<!--
+  Post de 12/10/2026 · estilo novo "VAR da questão" (transmissão esportiva, revisão lance a lance)
+  Questão: quadril-0077 · TEOT 2023 · gabarito D (Pace e Freiberg)
+  Conteúdo médico: comentário da questão em public/acervo/comentarios/quadril.json
+  Gerar: node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-12-var-piriforme/post.html
+-->
+<html lang="pt-BR"><head><meta charset="utf-8"><style>
+@font-face { font-family: J; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: I; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #222; }
+:root { --ouro: #ffd23f; --verm: #ff4d5a; --verde: #35e08a; --tinta: #0a1226; --painel: #0f1a36; --texto: #e9eefb; --mudo: #9fb0d4; }
+section { position: relative; width: 1080px; height: 1350px; overflow: hidden; font-family: I, sans-serif; color: var(--texto);
+  background:
+    linear-gradient(180deg, rgba(6, 12, 30, 0.92) 0%, rgba(6, 12, 30, 0.55) 38%, rgba(6, 12, 30, 0.82) 100%),
+    repeating-linear-gradient(90deg, #0f5b34 0 90px, #136b3e 90px 180px); }
+section.story { height: 1920px; }
+/* linhas do campo, só decoração */
+.campo { position: absolute; inset: 0; pointer-events: none; }
+.campo::before { content: ""; position: absolute; left: 50%; top: -10%; bottom: -10%; width: 4px; background: rgba(255,255,255,0.10); }
+.campo::after { content: ""; position: absolute; left: 50%; top: 50%; width: 520px; height: 520px; margin: -260px 0 0 -260px; border-radius: 50%; border: 4px solid rgba(255,255,255,0.08); }
+/* placar da transmissão */
+.placar { position: absolute; z-index: 5; left: 56px; top: 50px; display: flex; align-items: stretch; height: 64px; border-radius: 14px; overflow: hidden; box-shadow: 0 14px 30px rgba(0,0,0,0.45); font-family: J; font-weight: 800; }
+.story .placar { top: 260px; left: 70px; }
+.placar > * { display: flex; align-items: center; padding: 0 20px; font-size: 24px; letter-spacing: 1px; }
+.placar .marca { background: #fff; color: #0a1226; gap: 10px; font-size: 25px; letter-spacing: -0.5px; padding: 0 18px 0 12px; }
+.placar .marca svg { width: 42px; height: 42px; }
+.placar .marca b { font-weight: 800; }
+.placar .marca span { font-weight: 500; }
+.placar .prova { background: var(--tinta); color: #fff; }
+.placar .area { background: #1b2a55; color: var(--mudo); }
+.placar .vivo { background: var(--verm); color: #fff; gap: 10px; }
+.placar .vivo i { width: 14px; height: 14px; border-radius: 50%; background: #fff; box-shadow: 0 0 0 4px rgba(255,255,255,0.3); }
+.contador { position: absolute; z-index: 5; right: 56px; top: 50px; height: 64px; display: flex; align-items: center; padding: 0 22px; border-radius: 14px; background: rgba(10, 18, 38, 0.85); font-family: J; font-weight: 800; font-size: 26px; color: var(--ouro); letter-spacing: 2px; }
+.story .contador { top: 260px; right: 70px; }
+/* tarja inferior */
+.tarja { position: absolute; z-index: 5; left: 56px; right: 56px; bottom: 48px; display: grid; grid-template-columns: auto 1fr; border-radius: 16px; overflow: hidden; box-shadow: 0 14px 30px rgba(0,0,0,0.45); }
+.story .tarja { bottom: auto; top: 1590px; left: 70px; right: 70px; }
+.tarja b { display: flex; align-items: center; padding: 0 24px; background: var(--ouro); color: var(--tinta); font-family: J; font-weight: 800; font-size: 24px; letter-spacing: 2px; text-transform: uppercase; }
+.tarja span { display: flex; align-items: center; padding: 18px 24px; background: rgba(10, 18, 38, 0.92); font-size: 25px; color: #fff; }
+.conteudo { position: absolute; z-index: 4; left: 56px; right: 56px; top: 160px; }
+.story .conteudo { left: 70px; right: 70px; top: 370px; }
+section:not(.story) .conteudo { top: 140px !important; bottom: 140px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
+section:not(.story) .conteudo > .monitor, section:not(.story) .conteudo > .duas, section:not(.story) .conteudo > .painel, section:not(.story) .conteudo > .alts, section:not(.story) .conteudo > .sumula, section:not(.story) .conteudo > .escalacao { align-self: stretch; }
+.story .conteudo { top: 370px; bottom: 360px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
+.story .conteudo > .monitor, .story .conteudo > .fichas, .story .conteudo > .duas, .story .conteudo > .painel { align-self: stretch; }
+.story .ficha { padding: 30px 150px 28px 30px; }
+.story .ficha h3 { font-size: 56px; }
+.story .ficha p { font-size: 31px; }
+.story .ficha .st { font-size: 22px; }
+.story .impedimento { right: 60px !important; }
+.story .bloco h3 { font-size: 58px; }
+.story .bloco p { font-size: 30px; }
+.story .alt { font-size: 36px; padding: 22px; }
+.escalacao { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.escalacao div { position: relative; border-radius: 18px; padding: 22px 18px 18px; background: rgba(10,18,38,0.88); border: 2px solid rgba(255,255,255,0.14); text-align: center; }
+.escalacao div::before { content: attr(data-n); display: block; font-family: J; font-weight: 800; font-size: 64px; line-height: 1; color: var(--ouro); }
+.escalacao b { display: block; margin-top: 8px; font-family: J; font-weight: 800; font-size: 30px; color: #fff; }
+.escalacao span { display: block; margin-top: 6px; font-size: 20px; letter-spacing: 2px; color: var(--mudo); font-family: J; font-weight: 700; }
+.selo { display: inline-flex; align-items: center; gap: 12px; padding: 10px 18px; border-radius: 10px; background: var(--ouro); color: var(--tinta); font-family: J; font-weight: 800; font-size: 24px; letter-spacing: 3px; text-transform: uppercase; }
+.selo.verm { background: var(--verm); color: #fff; }
+h1, h2 { font-family: J; font-weight: 800; letter-spacing: -0.04em; line-height: 0.98; color: #fff; text-shadow: 0 8px 30px rgba(0,0,0,0.5); }
+h1 { font-size: 118px; }
+h2 { font-size: 78px; }
+h1 em, h2 em { font-style: normal; color: var(--ouro); }
+p { font-size: 32px; line-height: 1.4; }
+.lide { color: #d7def0; }
+.painel { background: rgba(10, 18, 38, 0.86); border: 2px solid rgba(255,255,255,0.10); border-radius: 26px; padding: 30px 34px; box-shadow: 0 24px 50px rgba(0,0,0,0.35); }
+/* monitor do VAR */
+.monitor { position: relative; border-radius: 30px; padding: 16px; background: linear-gradient(140deg, #2a3350, #0b1124 60%, #39425e); box-shadow: 0 30px 60px rgba(0,0,0,0.5), inset 0 0 0 2px rgba(255,255,255,0.12); }
+.monitor .tela { position: relative; border-radius: 18px; background: #0a1430; overflow: hidden; padding: 30px 32px;
+  background-image: repeating-linear-gradient(0deg, rgba(255,255,255,0.025) 0 2px, transparent 2px 5px); }
+.monitor .rotulo { position: absolute; top: -20px; left: 40px; padding: 6px 16px; border-radius: 8px; background: #5b3df5; color: #fff; font-family: J; font-weight: 800; font-size: 22px; letter-spacing: 3px; }
+.enun { font-size: 38px; line-height: 1.38; color: #fff; }
+.enun b { color: var(--ouro); }
+.alts { display: grid; gap: 16px; margin-top: 26px; }
+.alt { display: grid; grid-template-columns: 70px 1fr auto; align-items: center; gap: 20px; padding: 20px 22px; border-radius: 16px; background: rgba(255,255,255,0.06); border: 2px solid rgba(255,255,255,0.10); font-size: 34px; font-weight: 600; color: #fff; }
+.alt i { font-style: normal; display: grid; place-items: center; width: 62px; height: 62px; border-radius: 12px; background: #fff; color: var(--tinta); font-family: J; font-weight: 800; font-size: 34px; }
+.alt small { font-family: J; font-weight: 800; font-size: 20px; letter-spacing: 2px; padding: 8px 14px; border-radius: 8px; }
+.alt.x { opacity: 0.92; }
+.alt.x small { background: var(--verm); color: #fff; }
+.alt.ok { background: rgba(53, 224, 138, 0.16); border-color: var(--verde); }
+.alt.ok small { background: var(--verde); color: #04261a; }
+.motivo { grid-column: 2 / 4; font-size: 27px; font-weight: 400; line-height: 1.35; color: #c7d2ea; margin-top: -4px; }
+.motivo b { color: #fff; }
+/* fichas dos jogadores */
+.fichas { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.ficha { position: relative; border-radius: 22px; padding: 26px 26px 24px; background: rgba(10, 18, 38, 0.88); border: 2px solid rgba(255,255,255,0.12); }
+.ficha .num { position: absolute; right: 22px; top: 14px; font-family: J; font-weight: 800; font-size: 84px; line-height: 1; color: rgba(255,255,255,0.08); }
+.ficha h3 { font-family: J; font-weight: 800; font-size: 46px; letter-spacing: -0.02em; color: #fff; }
+.ficha p { font-size: 25px; line-height: 1.38; color: #c7d2ea; margin-top: 10px; }
+.ficha p b { color: #fff; }
+.ficha .st { display: inline-block; margin-top: 16px; font-family: J; font-weight: 800; font-size: 20px; letter-spacing: 2px; padding: 8px 14px; border-radius: 8px; }
+.ficha.em { border-color: var(--verde); }
+.ficha.em .st { background: var(--verde); color: #04261a; }
+.ficha.imp .st { background: var(--verm); color: #fff; }
+.ficha.imp h3 { color: #d9dfee; }
+/* linha de impedimento: só um traço diagonal */
+.impedimento { position: absolute; top: -30px; bottom: -30px; width: 6px; background: var(--verm); box-shadow: 0 0 22px var(--verm); transform: rotate(14deg); opacity: 0.85; }
+.impedimento.az { background: #4fa3ff; box-shadow: 0 0 22px #4fa3ff; }
+.duas { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.bloco { border-radius: 22px; padding: 28px; background: rgba(10, 18, 38, 0.88); border: 2px solid rgba(255,255,255,0.12); }
+.bloco small { display: block; font-family: J; font-weight: 800; font-size: 21px; letter-spacing: 3px; text-transform: uppercase; color: var(--ouro); margin-bottom: 10px; }
+.bloco h3 { font-family: J; font-weight: 800; font-size: 50px; color: #fff; letter-spacing: -0.02em; }
+.bloco p { font-size: 28px; line-height: 1.38; color: #c7d2ea; margin-top: 10px; }
+.bloco p b { color: #fff; }
+.sumula { width: 100%; border-collapse: separate; border-spacing: 0 10px; font-size: 27px; }
+.sumula td { padding: 16px 20px; background: rgba(10, 18, 38, 0.88); }
+.sumula td:first-child { border-radius: 14px 0 0 14px; font-family: J; font-weight: 800; color: #fff; font-size: 32px; width: 230px; }
+.sumula td:last-child { border-radius: 0 14px 14px 0; text-align: right; width: 210px; }
+.sumula .chip { font-family: J; font-weight: 800; font-size: 19px; letter-spacing: 2px; padding: 7px 12px; border-radius: 8px; }
+.chip.em { background: var(--verde); color: #04261a; }
+.chip.imp { background: var(--verm); color: #fff; }
+.chip.banco { background: #2b3a66; color: var(--mudo); }
+.sumula td.desc { color: #c7d2ea; }
+.decisao { font-family: J; font-weight: 800; font-size: 230px; line-height: 0.85; color: var(--verde); letter-spacing: -0.06em; text-shadow: 0 10px 40px rgba(53,224,138,0.35); }
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#14655E"/><g fill="#FFFFFF" opacity=".55"><path transform="translate(13 9.5)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(11 21.2)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(13 44.6)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g><path fill="#F4CF7C" transform="translate(11 32.9)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></symbol></svg>
+
+<!-- ============ FEED 1/5 · capa ============ -->
+<section id="feed-01" data-question="quadril-0077">
+  <div class="campo"></div>
+  <div class="placar"><span class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></span><span class="prova">TEOT 2023</span><span class="area">QUADRIL</span><span class="vivo"><i></i>AO VIVO</span></div>
+  <div class="contador">REVISÃO</div>
+  <div class="conteudo" style="top:250px">
+    <span class="selo verm">Lance polêmico</span>
+    <h1 style="margin-top:34px">Quatro testes<br>em campo.<br><em>Só dois jogam<br>pelo piriforme.</em></h1>
+    <p class="lide" style="margin-top:40px;max-width:860px">Ely, Phelps, Pace e Freiberg. A banca escalou os quatro numa questão sobre a síndrome do piriforme. O VAR vai revisar cada lance.</p>
+    <div class="escalacao" style="margin-top:44px"><div data-n="?"><b>Ely</b><span>EM REVISÃO</span></div><div data-n="?"><b>Phelps</b><span>EM REVISÃO</span></div><div data-n="?"><b>Pace</b><span>EM REVISÃO</span></div><div data-n="?"><b>Freiberg</b><span>EM REVISÃO</span></div></div>
+  </div>
+  <div class="tarja"><b>VAR da questão</b><span>Arraste para ver o lance e comente a sua letra</span></div>
+</section>
+
+<!-- ============ FEED 2/5 · o lance ============ -->
+<section id="feed-02" data-question="quadril-0077">
+  <div class="campo"></div>
+  <div class="placar"><span class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></span><span class="prova">TEOT 2023</span><span class="area">QUADRIL</span></div>
+  <div class="contador">O LANCE · 2/5</div>
+  <div class="conteudo" style="top:190px">
+    <div class="monitor"><span class="rotulo">LANCE EM REVISÃO</span><div class="tela">
+      <p class="enun">Na semiologia do quadril, os testes utilizados para avaliar dor no músculo <b>piriforme</b> são</p>
+      <div class="alts">
+        <div class="alt"><i>A</i><span>ELY e PHELPS.</span><span></span></div>
+        <div class="alt"><i>B</i><span>PACE e PHELPS.</span><span></span></div>
+        <div class="alt"><i>C</i><span>ELY e FREIBERG.</span><span></span></div>
+        <div class="alt"><i>D</i><span>PACE e FREIBERG.</span><span></span></div>
+      </div>
+    </div></div>
+    <p class="lide" style="margin-top:36px;text-align:center">Antes do VAR: <b style="color:#fff">comente a sua letra.</b><br>A decisão sai nos próximos slides.</p>
+  </div>
+  <div class="tarja"><b>Questão oficial</b><span>TEOT 2023, enunciado e alternativas da prova</span></div>
+</section>
+
+<!-- ============ FEED 3/5 · replay ============ -->
+<section id="feed-03" data-question="quadril-0077">
+  <div class="campo"></div>
+  <div class="placar"><span class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></span><span class="prova">TEOT 2023</span><span class="area">QUADRIL</span></div>
+  <div class="contador">REPLAY · 3/5</div>
+  <div class="conteudo" style="top:190px">
+    <span class="selo">Câmera lenta</span>
+    <h2 style="margin-top:28px">O piriforme aperta o <em>nervo isquiático.</em></h2>
+    <p class="lide" style="margin-top:24px">Dor na nádega que piora sentado. Os testes reproduzem essa dor de dois jeitos:</p>
+    <div class="duas" style="margin-top:32px">
+      <div class="bloco"><small>Jogada 1 · ativo</small><h3>Contrair</h3><p>O paciente força o músculo <b>contra resistência</b>. Ele aumenta de volume e aperta o nervo.</p></div>
+      <div class="bloco"><small>Jogada 2 · passivo</small><h3>Esticar</h3><p>O examinador <b>alonga</b> o músculo por cima do nervo, girando a perna para dentro.</p></div>
+    </div>
+    <div class="painel" style="margin-top:28px"><p style="font-size:30px"><b style="color:var(--ouro)">Leitura do VAR:</b> a dupla certa tem um teste de cada jogada.</p></div>
+  </div>
+  <div class="tarja"><b>Replay</b><span>Procure um teste ativo e um passivo</span></div>
+</section>
+
+<!-- ============ FEED 4/5 · decisão do VAR ============ -->
+<section id="feed-04" data-question="quadril-0077">
+  <div class="campo"></div>
+  <div class="placar"><span class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></span><span class="prova">TEOT 2023</span><span class="area">QUADRIL</span></div>
+  <div class="contador">DECISÃO · 4/5</div>
+  <div class="conteudo" style="top:180px">
+    <span class="selo">Revisão lance a lance</span>
+    <div class="alts" style="margin-top:28px;gap:18px">
+      <div class="alt x"><i>A</i><span>ELY e PHELPS.</span><small>ANULADO</small><span class="motivo">Nenhum dos dois: <b>Ely</b> avalia o reto femoral e <b>Phelps</b>, o grácil.</span></div>
+      <div class="alt x"><i>B</i><span>PACE e PHELPS.</span><small>ANULADO</small><span class="motivo">Pace está certo, mas <b>Phelps</b> avalia o encurtamento do grácil.</span></div>
+      <div class="alt x"><i>C</i><span>ELY e FREIBERG.</span><small>ANULADO</small><span class="motivo">Freiberg está certo, mas <b>Ely</b> avalia o encurtamento do reto femoral.</span></div>
+      <div class="alt ok"><i>D</i><span>PACE e FREIBERG.</span><small>GOL VALIDADO</small><span class="motivo" style="color:#dff8ea"><b>Pace</b> é ativo (contrai contra resistência) e <b>Freiberg</b> é passivo (estica o músculo sobre o nervo).</span></div>
+    </div>
+  </div>
+  <div class="tarja"><b>Gabarito: D</b><span>Pace e Freiberg</span></div>
+</section>
+
+<!-- ============ FEED 5/5 · súmula ============ -->
+<section id="feed-05" data-question="quadril-0077">
+  <div class="campo"></div>
+  <div class="placar"><span class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></span><span class="prova">TEOT 2023</span><span class="area">QUADRIL</span></div>
+  <div class="contador">SÚMULA · 5/5</div>
+  <div class="conteudo" style="top:180px">
+    <span class="selo">Súmula da partida</span>
+    <table class="sumula" style="margin-top:22px">
+      <tr><td>Pace</td><td class="desc">Sentado, abre e gira para fora contra resistência</td><td><span class="chip em">PIRIFORME</span></td></tr>
+      <tr><td>Freiberg</td><td class="desc">Deitado, rotação interna forçada com o quadril esticado</td><td><span class="chip em">PIRIFORME</span></td></tr>
+      <tr><td>Ely</td><td class="desc">Encurtamento do reto femoral</td><td><span class="chip imp">OUTRO TIME</span></td></tr>
+      <tr><td>Phelps</td><td class="desc">Encurtamento do grácil</td><td><span class="chip imp">OUTRO TIME</span></td></tr>
+      <tr><td>FAIR e Beatty</td><td class="desc">Também testam o piriforme</td><td><span class="chip banco">NO BANCO</span></td></tr>
+    </table>
+    <div class="painel" style="margin-top:22px;border-color:var(--ouro)"><p style="font-size:31px"><b style="color:var(--ouro)">Para a prova:</b> piriforme é <b style="color:#fff">Pace</b> (ativo) e <b style="color:#fff">Freiberg</b> (passivo). Ely e Phelps jogam em outro time.</p></div>
+    <p class="lide" style="margin-top:30px;text-align:center;font-size:30px">Questões oficiais comentadas lance a lance.<br><b style="color:#fff">ortoquestoes.com.br</b> · @ortoquestoes</p>
+  </div>
+  <div class="tarja"><b>Fim de jogo</b><span>Salve para revisar antes da prova</span></div>
+</section>
+
+<!-- ============ STORY 1/3 · o lance ============ -->
+<section id="story-01" class="story" data-question="quadril-0077">
+  <div class="campo"></div>
+  <div class="placar"><span class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></span><span class="prova">TEOT 2023</span><span class="vivo"><i></i>AO VIVO</span></div>
+  <div class="conteudo">
+    <span class="selo verm">VAR checando</span>
+    <h2 style="margin-top:26px;font-size:84px">Quem marca o <em>piriforme?</em></h2>
+    <div class="monitor" style="margin-top:44px"><span class="rotulo">LANCE</span><div class="tela">
+      <p class="enun">Na semiologia do quadril, os testes utilizados para avaliar dor no músculo <b>piriforme</b> são</p>
+      <div class="alts">
+        <div class="alt"><i>A</i><span>ELY e PHELPS.</span><span></span></div>
+        <div class="alt"><i>B</i><span>PACE e PHELPS.</span><span></span></div>
+        <div class="alt"><i>C</i><span>ELY e FREIBERG.</span><span></span></div>
+        <div class="alt"><i>D</i><span>PACE e FREIBERG.</span><span></span></div>
+      </div>
+    </div></div>
+  </div>
+  <div class="tarja"><b>Sua letra?</b><span>Comente. A decisão do VAR sai no próximo story.</span></div>
+</section>
+
+<!-- ============ STORY 2/3 · checagem ============ -->
+<section id="story-02" class="story" data-question="quadril-0077">
+  <div class="campo"></div>
+  <div class="placar"><span class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></span><span class="prova">TEOT 2023</span><span class="area">CHECAGEM</span></div>
+  <div class="conteudo">
+    <span class="selo verm">Impedimento</span>
+    <h2 style="margin-top:26px;font-size:80px">Dois testes estão em <em>outro time.</em></h2>
+    <div class="fichas" style="margin-top:44px;grid-template-columns:1fr">
+      <div class="ficha imp" style="overflow:hidden"><span class="impedimento" style="right:120px"></span><span class="num">01</span><h3>Ely</h3><p>Avalia o encurtamento do <b>reto femoral</b>: de bruços, dobra-se o joelho e a bacia sobe da mesa.</p><span class="st">IMPEDIDO</span></div>
+      <div class="ficha imp" style="overflow:hidden"><span class="impedimento" style="right:120px"></span><span class="num">02</span><h3>Phelps</h3><p>Avalia o encurtamento do <b>grácil</b>: a abertura da coxa melhora quando o joelho dobra.</p><span class="st">IMPEDIDO</span></div>
+    </div>
+    <p class="lide" style="margin-top:40px;font-size:38px">Tirando os dois, <b style="color:#fff">sobra uma só alternativa</b> em jogo.</p>
+  </div>
+  <div class="tarja"><b>Checagem</b><span>A decisão final sai no próximo story</span></div>
+</section>
+
+<!-- ============ STORY 3/3 · decisão ============ -->
+<section id="story-03" class="story" data-question="quadril-0077">
+  <div class="campo"></div>
+  <div class="placar"><span class="marca"><svg><use href="#sim"/></svg><b>Orto</b><span>Questões</span></span><span class="prova">TEOT 2023</span><span class="area">DECISÃO</span></div>
+  <div class="conteudo">
+    <span class="selo" style="background:var(--verde);color:#04261a">Gol validado</span>
+    <p class="decisao" style="margin-top:30px">D</p>
+    <h2 style="margin-top:14px;font-size:76px">Pace e <em>Freiberg.</em></h2>
+    <div class="duas" style="margin-top:40px">
+      <div class="bloco"><small>Ativo</small><h3>Pace</h3><p>Sentado, abre e gira a perna para fora <b>contra resistência</b>.</p></div>
+      <div class="bloco"><small>Passivo</small><h3>Freiberg</h3><p>Deitado, <b>rotação interna forçada</b> com o quadril esticado.</p></div>
+    </div>
+    <div class="painel" style="margin-top:28px;border-color:var(--ouro)"><p style="font-size:32px"><b style="color:var(--ouro)">Para a prova:</b> um contrai, o outro estica. Ely (reto femoral) e Phelps (grácil) jogam em outro time.</p></div>
+  </div>
+  <div class="tarja"><b>Mais lances</b><span>Questões oficiais comentadas: o caminho está no perfil</span></div>
+</section>
+
+</body></html>
