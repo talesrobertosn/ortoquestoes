@@ -18,6 +18,7 @@ Uma aba **Flashcards** dentro de **Treinar**, com o **modo Estudo** (calmo: vira
 
 | O quê | Onde |
 |---|---|
+| Batalha e Estudo no app (rota `#/flashcards`, fora da produção) | [src/flashcards/](../../src/flashcards/) |
 | Protótipo visual (HTML autocontido, sem dependências) | [prototipos/flashcards/torneio.html](../../prototipos/flashcards/torneio.html) |
 | Protótipo publicado (link privado do Tales, versão 2) | https://claude.ai/artifact/H9bLf2bWXvvjftgbFXtDxJ |
 | Script de prints (celular e computador) | [prototipos/flashcards/testar-prototipo.mjs](../../prototipos/flashcards/testar-prototipo.mjs) |
@@ -65,7 +66,17 @@ Uma aba **Flashcards** dentro de **Treinar**, com o **modo Estudo** (calmo: vira
     - raios de luz e confete na vitória;
     - tudo desligado em "reduzir movimento".
   - `torneio.html` agora é a versão 2 (a versão 1 fica no histórico do git). O link antigo era da outra conta e não pôde ser atualizado; a v2 foi publicada num link novo (tabela acima).
-- **Próximo passo:** etapa 1 do [ROTEIRO.md](ROTEIRO.md). O Tales avalia o protótipo e escolhe os ajustes de visual; depois vem a fábrica (`scripts/flashcards/`), com uma amostra de cerca de 30 flashcards para aprovação.
+- **12/10/2026, noite (Batalha no app):**
+  - O Tales aprovou seguir: a Batalha é o modo de entrada, deve ser difícil (mais fácil morrer que matar) e ter arte de Runeterra/Hearthstone com toques de pixel art. Também mandou o briefing completo (ver [DECISOES.md](DECISOES.md)).
+  - A Batalha agora roda **dentro do app**, em `src/flashcards/`, na rota `#/flashcards`, com o baralho de demonstração. A arquitetura está em [ARQUITETURA.md](ARQUITETURA.md), seção 0, e as regras e números em [BATALHA.md](BATALHA.md).
+  - **Fora da produção:** só aparece no `npm run dev` ou com `VITE_FLASHCARDS=1`.
+  - Prints conferidos em 390×844, 360×640 e 1440×900: texto da pergunta com 17 a 23 px, alternativas com 15,5 px, nada fora da tela.
+  - **Para continuar:**
+    1. O Tales joga e aprova.
+    2. Ligar o limite diário no servidor e a sincronização.
+    3. A fábrica de flashcards, para trocar o baralho de demonstração pelo acervo.
+    4. Mais monstros por área.
+- **Próximo passo (antigo):** etapa 1 do [ROTEIRO.md](ROTEIRO.md). O Tales avalia o protótipo e escolhe os ajustes de visual; depois vem a fábrica (`scripts/flashcards/`), com uma amostra de cerca de 30 flashcards para aprovação.
 
 ## Regras que valem para todo o projeto
 

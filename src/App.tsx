@@ -5,7 +5,7 @@ import { usarRota } from './util/rotas'
 import { Cabecalho } from './componentes/Cabecalho'
 import { Rodape } from './componentes/Rodape'
 import { AvisoSite } from './componentes/AvisoSite'
-import { SITE } from './config'
+import { FLASHCARDS_LIBERADO, SITE } from './config'
 import { usarLeitura } from './estado/preferencias'
 import { ErroDePagina } from './componentes/ErroDePagina'
 import { ExigeConta } from './componentes/ExigeConta'
@@ -43,6 +43,7 @@ const Resumao = lazy(() => import('./paginas/Resumao').then(({ Resumao }) => ({ 
 const Indicar = lazy(() => import('./paginas/Indicar').then(({ Indicar }) => ({ default: Indicar })))
 const ConviteRecebido = lazy(() => import('./paginas/Indicar').then(({ ConviteRecebido }) => ({ default: ConviteRecebido })))
 const Ligas = lazy(() => import('./paginas/Ligas').then(({ Ligas }) => ({ default: Ligas })))
+const Flashcards = lazy(() => import('./paginas/Flashcards').then(({ Flashcards }) => ({ default: Flashcards })))
 const AdminAssinaturas = lazy(() => import('./paginas/AdminAssinaturas').then(({ AdminAssinaturas }) => ({ default: AdminAssinaturas })))
 
 const TITULOS: Record<string, string> = {
@@ -76,6 +77,7 @@ const TITULOS: Record<string, string> = {
   '/indicar': 'Indique e ganhe | Orto Questões',
   '/temas-que-mais-caem': 'Temas que mais caem | Orto Questões',
   '/resumao': 'Resumão da reta final | Orto Questões',
+  '/flashcards': 'Torneio de Flashcards | Orto Questões',
 }
 
 export function App() {
@@ -188,6 +190,9 @@ export function App() {
     case 'ligas':
       pagina = <Ligas key={rota.consulta.toString()} consulta={rota.consulta} />
       break
+    case 'flashcards':
+      pagina = FLASHCARDS_LIBERADO ? <Flashcards /> : <NaoEncontrada />
+      break
     default:
       pagina = <NaoEncontrada />
   }
@@ -195,7 +200,7 @@ export function App() {
   // Páginas que mostram questões: por enquanto, só com conta (ver config.ts).
   // A questão avulsa (#/questao/ID) fica aberta: é para onde as páginas
   // públicas do Google levam; responder pede a conta ali mesmo.
-  if (['treinar', 'sessao', 'resumo', 'favoritas', 'erros', 'revisao', 'simulado-nacional'].includes(primeiro ?? '')) {
+  if (['treinar', 'sessao', 'resumo', 'favoritas', 'erros', 'revisao', 'simulado-nacional', 'flashcards'].includes(primeiro ?? '')) {
     pagina = <ExigeConta caminho={rota.caminho + (rota.consulta.toString() ? `?${rota.consulta}` : '')}>{pagina}</ExigeConta>
   }
 
@@ -207,7 +212,7 @@ export function App() {
         Pular para o conteúdo
       </a>
       <Cabecalho caminho={rota.caminho} />
-      {primeiro !== 'sessao' && <AvisoSite />}
+      {primeiro !== 'sessao' && primeiro !== 'flashcards' && <AvisoSite />}
       <main className="principal" id="conteudo-principal" tabIndex={-1}>
         <div className={'conteudo' + (estreita ? ' conteudo--estreito' : '')}>
           <ErroDePagina caminho={rota.caminho}>
@@ -219,7 +224,7 @@ export function App() {
       </main>
       {/* Modo foco: respondendo (sessão ou questão avulsa) nada abaixo da
           questão; o painel do administrador é ferramenta, sem rodapé do site. */}
-      {!['sessao', 'questao', 'admin'].includes(primeiro ?? '') && <Rodape comInstagram={!primeiro || primeiro === 'projeto' || primeiro === 'sobre'} />}
+      {!['sessao', 'questao', 'admin', 'flashcards'].includes(primeiro ?? '') && <Rodape comInstagram={!primeiro || primeiro === 'projeto' || primeiro === 'sobre'} />}
       <ConviteDiario caminho={rota.caminho} />
       <AvisoCookies />
     </div>

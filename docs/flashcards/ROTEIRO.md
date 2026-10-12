@@ -8,7 +8,7 @@ Marque `[x]` ao concluir e anote a data e o PR. Uma etapa só começa quando a a
 - [x] Protótipo visual `prototipos/flashcards/torneio.html`, com Estudo, Batalha e 3 cenários (12/10/2026)
 - [x] Referências visuais do Tales registradas em REFERENCIAS.md (12/10/2026)
 - [x] Protótipo 2: testado com prints, corrigido, com mais efeitos visuais, promovido a `torneio.html` e publicado (12/10/2026)
-- [ ] O Tales avalia o protótipo: estética, cenários, tamanho do flashcard no celular, fluidez da Batalha
+- [x] O Tales avaliou o protótipo 2 (12/10/2026): seguir, Batalha primeiro, arte estilo Runeterra/Hearthstone, texto legível no celular
 - [ ] Respostas às decisões pendentes de [DECISOES.md](DECISOES.md)
 
 ## Etapa 1: fábrica de flashcards
@@ -29,12 +29,17 @@ Marque `[x]` ao concluir e anote a data e o PR. Uma etapa só começa quando a a
 - [ ] Limite de 10 por dia no servidor (RPC e SQL), com flashcard lacrado
 - [ ] Testes em `fixtures/` (fila, limite, sincronização)
 
-## Etapa 3: modo Batalha
-- [ ] Duelo com 2 a 4 alternativas e correção automática
-- [ ] Vida, dano por dificuldade, cura, pontos
-- [ ] Poderes a cada 5 flashcards; andares; chefes temáticos
-- [ ] Fim da partida, com os flashcards errados indo para a fila
-- [ ] Cenários: Salão das velas, Campo, Masmorra (e novos)
+## Etapa 3: modo Batalha (adiantada: o Tales pediu a Batalha primeiro)
+- [x] Duelo com 2 a 4 alternativas e correção automática (12/10/2026, no app, com o baralho de demonstração)
+- [x] Vida, dano por dificuldade × força do monstro, cura, pontos, combo, intenção, Fúria
+- [x] Poderes após cada monstro (1 de 3), relíquias, 3 encaixes; andares; chefe com armadura e fase 2
+- [x] Fim da partida, com os flashcards errados indo para a fila de flashcards (local) e para o Estudo
+- [x] Cenários pintados: Campo, Masmorra, Salão do chefe, com transição
+- [x] Efeitos: projétil, corte, partículas, números, tremor, borda vermelha, escudo, cura, combo, crítico, vitória do chefe, sons opcionais, efeitos reduzidos
+- [x] Teste do motor e do balanceamento (`fixtures/testar_flashcards.mjs`, no `npm test`)
+- [ ] O Tales joga a demonstração e aprova (visual, ritmo e dificuldade)
+- [ ] Mais monstros e chefes temáticos por área (mão, coluna, joelho...)
+- [ ] Foco (proposta em BATALHA.md), se aprovado
 - [ ] Teste de fluidez em celular de entrada (60 quadros por segundo nas animações)
 
 ## Etapa 4: coleção e desafio
