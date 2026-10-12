@@ -35,7 +35,7 @@ Uma aba **Flashcards** dentro de **Treinar**, com o **modo Estudo** (calmo: vira
   - 12 flashcards de exemplo tirados de questões reais.
 - **12/10/2026, fim do dia (troca de conta):**
   - o Tales gostou da imagem e do mecanismo do protótipo 1 e mandou 5 referências (veja [REFERENCIAS.md](REFERENCIAS.md));
-  - a **versão 2** está escrita em `prototipos/flashcards/torneio-v2.html` (testada e promovida a `torneio.html` na noite de 12/10):
+  - a **versão 2** foi escrita como `torneio-v2.html` e, testada, virou `prototipos/flashcards/torneio.html` na noite de 12/10:
     - tabuleiro emoldurado;
     - adversário com vida em cima;
     - alternativas na mão em leque;
@@ -43,7 +43,7 @@ Uma aba **Flashcards** dentro de **Treinar**, com o **modo Estudo** (calmo: vira
     - golpe com esfera de luz;
     - partículas.
   - **Para continuar:**
-    1. rodar `node prototipos/flashcards/testar-prototipo.mjs prototipos/flashcards/torneio-v2.html <pasta-temporária>`. (Feito na noite de 12/10, ver abaixo.)
+    1. rodar `node prototipos/flashcards/testar-prototipo.mjs prototipos/flashcards/torneio.html <pasta-temporária>` (a v2 virou `torneio.html`; feito na noite de 12/10, ver abaixo).
     2. olhar os prints e corrigir;
     3. quando estiver bom, trocar o `torneio.html` pela v2 e republicar o artifact.
   - **Mudança de mecânica na v2 (proposta, falta o Tales aprovar):** o andar não tem mais 5 flashcards fixos. Cada andar tem um adversário com vida:

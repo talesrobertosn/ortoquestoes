@@ -145,6 +145,9 @@ export function Arena() {
     palco.current?.limpar()
     definirAnimando(false)
     definirFaixa(null)
+    definirTransicao(false)
+    definirEliminando(null)
+    definirCenarioVisivel(inimigoDoAndar(partidaRef.current.andar).inimigo.cenario)
     sincronizar(partidaRef.current)
   }, [sincronizar])
 
@@ -331,7 +334,8 @@ export function Arena() {
   /* ---------- Ações ---------- */
 
   const aplicar = useCallback((r: { estado: Partida; eventos: Evento[] }) => {
-    if (!r.eventos.length) return
+    // Ação recusada pelo motor: mesmo estado. Encerrar muda o estado sem animação e precisa passar.
+    if (!r.eventos.length && r.estado === partidaRef.current) return
     // Progresso educacional: grava uma vez por resposta, no mesmo passo da regra.
     const resposta = r.eventos.find((e): e is Extract<Evento, { tipo: 'resposta' }> => e.tipo === 'resposta')
     if (resposta) {
@@ -341,8 +345,9 @@ export function Arena() {
     }
     partidaRef.current = r.estado
     definirPartida(r.estado)
-    void encenar(r.eventos, r.estado)
-  }, [encenar])
+    if (r.eventos.length) void encenar(r.eventos, r.estado)
+    else sincronizar(r.estado)
+  }, [encenar, sincronizar])
 
   const responder = useCallback((posicao: number) => {
     const p = partidaRef.current
@@ -364,7 +369,7 @@ export function Arena() {
     if (p.fase === 'resposta') aplicar(motor.seguir(p))
   }, [animando, aplicar, pular])
 
-  const usarPista = useCallback(() => { aplicar(motor.usarPista(partidaRef.current)) }, [aplicar])
+  const usarPista = useCallback(() => { if (!apresentacao) aplicar(motor.usarPista(partidaRef.current)) }, [aplicar, apresentacao])
 
   const escolherRecompensa = useCallback((r: Recompensa) => {
     if (animando) pular()

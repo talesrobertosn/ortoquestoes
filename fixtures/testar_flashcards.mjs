@@ -77,6 +77,21 @@ try {
   const com = m.registrarResposta(undefined, true, true, 1000)
   assert.equal(sem.confianca, 'seguro'); assert.equal(com.confianca, 'duvida')
   assert.equal(m.registrarResposta(undefined, false, false, 1000).c, false)
+  const quaseDominado = { c: true, q: 1000, sequencia: 4, confianca: 'duvida', proximaRevisao: 1000 }
+  const ajudado = m.registrarResposta(quaseDominado, true, true, 2000)
+  assert.ok(ajudado.proximaRevisao !== null && ajudado.sequencia <= 4, 'acerto assistido não pode dominar')
+
+  // Encerrar muda o estado mesmo sem eventos; poção substituída perde o desafio; imortal repetido não é oferecido.
+  const fimVoluntario = motor.encerrar(a.estado)
+  assert.equal(fimVoluntario.estado.fase, "fim")
+  const comPocao = { ...a.estado, fase: 'recompensa', recompensas: ['duplo'], pocao: 2, encaixes: [{ tipo: 'pocao', carga: 1 }, { tipo: 'escudo', carga: 1 }, { tipo: 'pista', carga: 1 }] }
+  assert.equal(motor.escolher(comPocao, 'duplo').estado.pocao, 0)
+  for (let k = 0; k < 40; k++) {
+    let q = motor.novaPartida(500 + k).estado
+    q = { ...q, encaixes: [{ tipo: 'imortal', carga: 1 }], inimigo: { ...q.inimigo, vida: 1 } }
+    const r = motor.responder(q, q.atual.ordem.indexOf(motor.carta(q.atual.id).certa))
+    assert.ok(!r.estado.recompensas.includes('imortal'), 'imortal repetido oferecido')
+  }
 
   // Balanceamento: simula partidas com quem acerta X% e mede até onde chega.
   function simular(taxa, semente) {

@@ -305,7 +305,9 @@ export function criarMotor(cartas: Flashcard[]) {
     let lista: Recompensa[]
     let s = e.semente
     // Depois do chefe: duas relíquias (as raras entram) e um poder. Antes: dois poderes e uma relíquia comum.
-    const [poderes, s1] = embaralhar<Recompensa>(PODERES, s)
+    // Imortal e poção não empilham: não oferecer o que já está equipado e não somaria nada.
+    const poderesLivres = PODERES.filter((x) => !((x === 'imortal' || x === 'pocao') && e.encaixes.some((enc) => enc.tipo === x)))
+    const [poderes, s1] = embaralhar<Recompensa>(poderesLivres, s)
     const [reliquias, s2] = embaralhar<Recompensa>(reliquiasLivres, s1)
     s = s2
     lista = aposChefe ? [...reliquias.slice(0, 2), ...poderes] : [...poderes.slice(0, 2), ...reliquias.slice(0, 1), ...poderes.slice(2)]
@@ -320,7 +322,8 @@ export function criarMotor(cartas: Flashcard[]) {
     let e: Partida = { ...p, recompensas: [] }
     if (ehPoder(recompensa)) {
       const [encaixes, substituiu] = equipar(e.encaixes, recompensa)
-      e = { ...e, encaixes, pocao: recompensa === 'pocao' ? 3 : e.pocao }
+      // Se a poção saiu do encaixe, o desafio dela acaba junto.
+      e = { ...e, encaixes, pocao: recompensa === 'pocao' ? 3 : substituiu === 'pocao' ? 0 : e.pocao }
       eventos.push({ tipo: 'equipou', recompensa, substituiu })
     } else {
       e = { ...e, reliquias: [...e.reliquias, recompensa] }

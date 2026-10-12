@@ -59,7 +59,7 @@ export function Cartao({ carta, virada, intencao, dicaFrente, aoTocar, aoAmpliar
               <p className="fc-carta__tipo">{carta.tipo}</p>
               <p className="fc-carta__pergunta"><Texto texto={carta.frente} /></p>
               {img && (
-                <button type="button" className="fc-carta__imagem" onClick={(e) => { e.stopPropagation(); aoAmpliar(img) }} aria-label="Ampliar a imagem">
+                <button type="button" className="fc-carta__imagem" onClick={(e) => { e.stopPropagation(); aoAmpliar(img) }} aria-label="Ampliar a imagem" tabIndex={virada ? -1 : 0}>
                   <img src={img.src} alt="Figura da questão de origem" loading="eager" />
                   <span className="fc-carta__lupa" aria-hidden="true">Ampliar</span>
                 </button>

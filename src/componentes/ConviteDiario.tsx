@@ -25,7 +25,7 @@ const PAUSA_COMPARTILHOU = 30 * 86_400_000
 /** Uso contínuo que traz o mensageiro de novo, e a pausa que zera essa conta. */
 const USO_CONTINUO = 60 * 60
 const PAUSA_ZERA = 10 * 60_000
-const ROTAS_PROTEGIDAS = ['sessao', 'entrar', 'assinatura', 'condicoes-assinatura', 'admin', 'emails']
+const ROTAS_PROTEGIDAS = ['sessao', 'entrar', 'assinatura', 'condicoes-assinatura', 'admin', 'emails', 'flashcards']
 
 const LINK = SITE.url.replace(/\/$/, '')
 // Texto pronto, no tom de um colega indicando: sem exagero e sem emoji.
