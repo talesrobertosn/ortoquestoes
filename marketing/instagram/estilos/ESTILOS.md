@@ -316,5 +316,5 @@ varredura circular é um motivo gráfico abstrato; não representa exame nem ana
 
 [Guia de escolha, roteiro, acabamento e revisão](SNELLEN-E-CUPOM.md). Usar por cópia direta, porque os estilos não estão no sorteador.
 
-## VAR da questão (12/10/2026, aguardando aprovação)
-- **Feed (5 slides) e stories (3):** transmissão esportiva com placar, tarja inferior e monitor do VAR. Cada alternativa é revisada como um lance (anulado ou gol validado). Funciona melhor quando as alternativas combinam itens (pares de testes, de nervos, de classificações) e alguns deles estão "em outro time". Gramado e linhas de impedimento são decoração, nunca anatomia. [Exemplo](../posts/2026-10-12-var-piriforme/post.html).
+## VAR da questão: aprovado em 12/10/2026
+- **Feed (5 slides) e stories (3):** transmissão esportiva com placar, tarja inferior e monitor do VAR, e cada alternativa revisada como um lance (anulado ou gol validado). Funciona melhor quando as alternativas combinam itens e alguns deles "jogam em outro time". [Modelo](var-da-questao/modelo.html) e [guia](VAR-DA-QUESTAO.md).
