@@ -93,3 +93,6 @@ Em propaganda, comece entregando algo útil, de preferência uma questão real c
 
 ## VAR da questão aprovado em 12/10/2026
 Tales aprovou o **VAR da questão** (feed e stories): visual de transmissão esportiva em que cada alternativa é revisada como um lance, anulado ou gol validado. É bom para questões de pares ou combinações de itens. [Guia completo e modelo executável](../../marketing/instagram/estilos/VAR-DA-QUESTAO.md).
+
+## Story de propaganda com figurinha de link (orientação de 12/10/2026)
+A pedido do Tales, o story de propaganda pode trazer um botão "Treine grátis" e um espaço livre para a figurinha de link, que leva direto para criar a conta. É a exceção à regra "stories sem figurinha", que continua valendo para os stories de questão. O link é sempre marcado (utm) para o Admin mostrar de onde veio o cadastro, por exemplo `https://ortoquestoes.com.br/?utm_source=instagram&utm_medium=stories&utm_campaign=treine-gratis#/conta?modo=criar&voltar=%2Ftreinar`. Troque o `utm_campaign` a cada story para comparar. Modelo: `marketing/instagram/posts/2026-10-12-story-treine-gratis/`.
