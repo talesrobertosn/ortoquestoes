@@ -1538,3 +1538,95 @@ Divergências resolvidas pelo capítulo:
 Fica para outro lote: pinagem da RUD (dois fios de 2 mm a 1 cm), PUDA em número, Weinberg (158
 graus), classificação de JUPITER e RING da sinostose, critérios de consolidação de ANDERSON e
 escores de GRACE e EVERSMANN.
+
+## Fratura do rádio distal no adulto (engenharia reversa em 12/10/2026)
+
+Leitura de todas as questões de TEOT e TARO do acervo com o subtema "Fratura do rádio distal" ou
+termos do assunto (rádio distal, punho, teardrop, sky line, inclinações, AO 23, BARTON, SMITH,
+KAPANDJI, ULSON, ponte, extensor longo do polegar). O primeiro corte do `mapear_banca.py` veio
+poluído (placa volar dos dedos, zona de SMITH da cabeça radial, teste de GALEAZZI do quadril); o
+núcleo foi refeito à mão. Nenhuma questão foi redigida nesta etapa.
+
+### Recorte
+
+- **Núcleo adulto: cerca de 20 questões distintas** de TEOT e TARO, de 2006 a 2026. O tema
+  aparece pouco por ano no acervo, mas concentrado em 2017 a 2025. trauma-0800 e mao-0436 são a
+  mesma questão (TARO 2025, teardrop). Contar uma vez.
+- **Vizinhos que entram como contexto ou distrator:** associação com colo do fêmur e úmero
+  proximal (TARO 2023), com fratura transtrocantérica ipsilateral (TARO 2022); figuras do pronador
+  quadrado e da musculatura distal do antebraço (TARO 2021, 2024, 2025, 2026); Essex-Lopresti e
+  radioulnar distal (já cobertos no antebraço).
+- **Pediatria à parte:** baioneta reversa lesando flexores (TARO 2022), SALTER-HARRIS III por
+  compressão e avulsão dorsal (TARO 2018), emergência na síndrome aguda do túnel do carpo (TARO
+  2015), fratura irredutível com desvio volar por interposição dorsal (TARO 2021), galho verde com
+  desvio dorsal reduzido em pronação e flexão (TARO 2008).
+
+### Fatos cobrados, com prova e ano
+
+| Grupo | Resposta registrada | Prova, ano e id |
+|---|---|---|
+| **Síndrome complexa de dor regional** | Profilaxia com vitamina C; mais frequente na mulher | TARO 2017 conceitos-basicos-0036; TEOT 2022 conceitos-basicos-0065; TEOT 2024 trauma-0576; sem ano mao-0214 e caso clínico conceitos-basicos-0238 (tipo 1, hiperpatia) |
+| Imagem: comprimento radial | Do estiloide radial à superfície articular da ulna | TARO 2019 trauma-0035 |
+| Imagem: sky line (tangencial dorsal) | Técnica: punho em flexão máxima e fonte a 15 graus | TARO 2021 trauma-0068 |
+| Imagem: sky line, finalidade | Penetração dorsal dos parafusos da placa volar | TEOT 2023 trauma-1106 |
+| Imagem: teardrop | Normal cerca de 70 graus; cerca de 45 graus sugere lesão da fossa do semilunar; largura cerca de 5 mm | TARO 2025 trauma-0800; sem ano trauma-0550 e mao-0242 |
+| Classificação | IDEAL divide em 3 tipos | TEOT 2022 trauma-1105 |
+| Classificação | Die-punch = AO B3 (gabarito registrado); BARTON não é 23-B1 (certo ou errado) | sem ano trauma-0272; TARO 2006 trauma-1163 |
+| Lesão associada | Mais frequente: complexo da fibrocartilagem triangular | TEOT 2021 trauma-0209 |
+| Lesão associada | Variância ulnar positiva sem osteoporose sugere dissociação escafossemilunar (gabarito registrado) | sem ano trauma-0276 |
+| Tendão | Tenossinovite mais frequente no 3º compartimento extensor | TARO 2010 trauma-0895 |
+| Tendão | Ruptura do extensor longo do polegar mais frequente no tratamento não cirúrgico | TARO 2009 mao-0619 |
+| Placa em ponte dorsal | Complicação mais comum: rigidez dos dedos (gabarito registrado) | TEOT 2025 trauma-0751 |
+| Acesso de HENRY distal | Em risco: artéria radial e ramo sensitivo do radial | TARO 2020 trauma-0013 |
+| Fios percutâneos | Melhor indicação AO 23 C1 (pela bibliografia); ULSON com fios no estiloide e no LISTER; imagem de KAPANDJI | TARO 2007 trauma-1114; TARO 2006 trauma-1180; sem ano trauma-0474 |
+
+**O fato mais carimbado é a vitamina C na síndrome complexa de dor regional** (2017, 2022, 2024 e
+mais dois sem ano). Em seguida, **imagem**: comprimento radial, sky line (técnica e finalidade) e
+teardrop, todos de 2019 a 2025.
+
+### Tendência
+
+De 2021 a 2026: sky line duas vezes, teardrop, IDEAL, complexo da fibrocartilagem triangular,
+vitamina C duas vezes, placa em ponte dorsal com imagem e figuras do pronador quadrado e dos
+músculos distais. A banca trocou o epônimo antigo (BARTON, ULSON, KAPANDJI) por **radiologia
+moderna, implante e complicação**.
+
+### Forma
+
+Enunciado curto (mediana em torno de 100 caracteres), alternativas curtas (mediana 24),
+terminando em palavra. Aberturas: "Na fratura da extremidade distal do rádio", "A fratura", "Na
+imagem". Poucos pares 2 × 2 (cerca de 1 em 5): flexão ou extensão com 15 ou 60 graus; sexo com
+vitamina; artéria com nervo. Imagem cresce nos anos recentes. Gabarito do recorte concentrado em
+C: equilibrar o lote.
+
+### Como o examinador pensa
+
+1. **Número normal ou de alarme.** Teardrop 70 contra 45; graus da incidência (15 contra 60);
+   a referência anatômica certa de cada medida (estiloide contra superfície articular).
+2. **O exame pela finalidade.** Sky line serve para os parafusos dorsais da placa volar, não para a
+   placa dorsal.
+3. **A complicação pelo método.** Ponte dorsal com rigidez; tratamento não cirúrgico com ruptura do
+   extensor longo do polegar; 3º compartimento na tenossinovite.
+4. **A estrutura em risco pela via.** HENRY distal: artéria radial e ramo sensitivo do radial.
+5. **Distratores do mesmo assunto:** vitaminas vizinhas, compartimentos vizinhos, B3 contra C1 da
+   AO.
+
+### Divergências e lacunas para conferir no capítulo
+
+- **Vitamina C:** a evidência ficou controversa em diretrizes e metanálises recentes. Conferir o
+  que o capítulo diz antes de cobrar como verdade absoluta; se for controverso, cobrar o que a banca
+  pede e explicar no comentário.
+- **Placa em ponte dorsal:** TEOT 2025 pergunta "complicação óssea" e dá rigidez dos dedos; conferir
+  no capítulo a complicação mais citada.
+- **Die-punch e variância positiva:** gabaritos sem ano, conferir.
+- **Lacunas com cara de prova:** parâmetros normais (inclinação radial, altura radial, inclinação
+  volar, variância), critérios de aceitação da redução (encurtamento, inclinação dorsal, degrau
+  articular), instabilidade de LAFONTAINE, linha de transição volar (watershed) e ruptura do flexor
+  longo do polegar, fragmento volar ulnar (fragmento-chave), três colunas, idoso: conservador contra
+  placa, indicação da ponte dorsal, síndrome aguda do túnel do carpo, tempo de ruptura do extensor
+  longo do polegar, estiloide ulnar e radioulnar distal após a fixação.
+
+### O que já existe
+
+Simulados no recorte: trauma-1229 (redução fechada clássica com desvio dorsal) e a anatomia do
+antebraço do Netter (mao-1264 a 1281). Não repetir.
