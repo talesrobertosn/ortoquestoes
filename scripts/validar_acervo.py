@@ -206,6 +206,10 @@ def principal() -> int:
                 letras_da_questao[identificador] = {l for l in letras if l}
             if questao.get("area") not in (None, "cirurgia-mao", "r4-enare", "r4-coluna", "fellowship-quadril"):
                 erros.append(f"{onde}: área desconhecida: {questao.get('area')!r}")
+            if "areasAdicionais" in questao:
+                adicionais = questao["areasAdicionais"]
+                if adicionais != ["cirurgia-mao"] or questao.get("area") or not questao.get("simulado"):
+                    erros.append(f"{onde}: presença adicional só aceita cirurgia-mao em simulado de ortopedia")
             if questao.get("tipo") == "dissertativa":
                 if alternativas or gabarito:
                     erros.append(f"{onde}: dissertativa não leva alternativas nem gabarito")

@@ -2026,3 +2026,20 @@ Divergências a resolver com o capítulo do Rockwood antes de escrever gêmeas:
   - o ramo medial da lágrima é o canal obturatório e a superfície quadrilátera; o gabarito "fossa acetabular" do TARO 2014 descreve o ramo lateral;
   - a corona mortis entrou sem prevalência, porque o capítulo não dá um número.
 - **De fora (pouco útil para a prova):** escores de resultado, técnica fina de pinças e placas, tromboprofilaxia (já coberta no lote do anel), via pararretal e fixação percutânea em detalhe.
+
+### Aplicação do capítulo Hand Fractures and Dislocations, 12/10/2026
+
+Rockwood 10ª edição, capítulo 45: leitura integral, plano em
+[hand-fractures-dislocations-plano.md](hand-fractures-dislocations-plano.md) e
+[entrega auditável](hand-fractures-dislocations-entrega.md). Publicados 25 itens,
+`mao-1694` a `mao-1718`, oito imagens, A6/B6/C6/D7. Variações de BENNETT, falanges,
+IFP, luxação MCF, SEYMOUR e martelo; acrescentados sinal do V, instabilidade
+baseada no arco reduzido e risco do ramo motor ulnar na CMC do quinto.
+
+Lições: IFD dorsal fechada destaca placa volar interposta; aberta destaca flexor
+profundo. Estabilidade da IFP não se resume a percentual; escolher um caso acima
+dos limites divergentes evita falsa precisão. Conferir figura e legenda: a imagem
+de luxação crônica volar-ulnar do polegar (45-51) não ilustra MCF dorsal complexa.
+A hemi-hamato reconstrói base volar da falange média, apesar de um lapso isolado
+no texto. `areasAdicionais` mantém estes simulados nos filtros base e mão com um
+único ID; não reclassifica as provas oficiais nem outros lotes.

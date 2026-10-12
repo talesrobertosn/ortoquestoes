@@ -107,6 +107,7 @@ def principal() -> int:
                     **({"dup": questao["duplicataDe"]} if questao.get("duplicataDe") else {}),
                     # Categoria fora da ortopedia base: fora do treino padrão e do cronograma.
                     **({"ar": AREAS[questao["area"]]} if questao.get("area") else {}),
+                    **({"aa": [AREAS[x] for x in questao["areasAdicionais"]]} if questao.get("areasAdicionais") else {}),
                 }
             )
             if questao.get("ano") and questao["ano"] not in anos:
