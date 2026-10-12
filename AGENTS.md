@@ -48,6 +48,12 @@ frequência e regras da marca definidas pelo dono do projeto. Para fazer os post
 [docs/prompts/codex-instagram.md](docs/prompts/codex-instagram.md) (imagens em HTML a partir dos
 modelos; nunca imagem gerada por IA).
 
+## Flashcards (Torneio de Flashcards, desde 12/10/2026)
+
+Projeto de vários dias, feito com Claude e com ChatGPT. Antes de mexer em qualquer coisa de
+flashcards, leia [docs/flashcards/README.md](docs/flashcards/README.md): decisões do dono, formatos,
+desenho da Batalha, arquitetura, roteiro e o protótipo em `prototipos/flashcards/`.
+
 ## SQL para o Supabase (orientação do dono, 08/10/2026)
 
 Toda migração nova também vai para `supabase/colar-no-painel/` e, ao entregar, o SQL completo é
