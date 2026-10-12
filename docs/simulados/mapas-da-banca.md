@@ -1,5 +1,7 @@
 # Mapas da banca por assunto (TEOT e TARO)
 
+> **Atenção (12/10/2026):** 86 questões marcadas como "TEOT/TARO sem ano" eram cópias de um simulado de outro curso e saíram do acervo (lista em `docs/auditoria/retiradas-simulado-curso-20261012.json`). Elas não são padrão da banca: ao usar este mapa, ignore as citações a esses ids (por exemplo mao-0176, mao-0214, ombro-cotovelo-0278 e trauma-0528) e prefira sempre as questões oficiais com ano.
+
 Resultado do passo 1 do fluxo (`scripts/simulados/mapear_banca.py`) para cada assunto já trabalhado:
 o que a banca repete, em que formato, e como o capítulo correspondente foi aproveitado. Antes de um
 capítulo novo, leia o mapa do assunto (se existir) e acrescente o seu ao terminar. O mapa de
