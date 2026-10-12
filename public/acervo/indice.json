@@ -1,7 +1,7 @@
 {
   "versao": 1,
-  "geradoEm": "2026-10-12T20:39:38+00:00",
-  "total": 6535,
+  "geradoEm": "2026-10-12T21:25:59+00:00",
+  "total": 6559,
   "temas": [
     {
       "slug": "mao",
@@ -43,7 +43,7 @@
       "slug": "trauma",
       "nome": "Trauma adulto",
       "arquivo": "temas/trauma.json",
-      "total": 1176
+      "total": 1200
     },
     {
       "slug": "pediatria",
@@ -82998,6 +82998,397 @@
       "s": [
         165,
         196
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1515",
+      "t": 6,
+      "s": [
+        188
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1516",
+      "t": 6,
+      "s": [
+        188
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1517",
+      "t": 6,
+      "s": [
+        188,
+        184
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1518",
+      "t": 6,
+      "s": [
+        188
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1519",
+      "t": 6,
+      "s": [
+        188
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1520",
+      "t": 6,
+      "s": [
+        188
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1521",
+      "t": 6,
+      "s": [
+        188
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1522",
+      "t": 6,
+      "s": [
+        188
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1523",
+      "t": 6,
+      "s": [
+        188
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1524",
+      "t": 6,
+      "s": [
+        188,
+        184,
+        196
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1525",
+      "t": 6,
+      "s": [
+        188,
+        184
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1526",
+      "t": 6,
+      "s": [
+        188
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1527",
+      "t": 6,
+      "s": [
+        188
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1528",
+      "t": 6,
+      "s": [
+        188
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1529",
+      "t": 6,
+      "s": [
+        188
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1530",
+      "t": 6,
+      "s": [
+        188,
+        179
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1531",
+      "t": 6,
+      "s": [
+        188,
+        184
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1532",
+      "t": 6,
+      "s": [
+        188
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1533",
+      "t": 6,
+      "s": [
+        188
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1534",
+      "t": 6,
+      "s": [
+        188
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1535",
+      "t": 6,
+      "s": [
+        188,
+        184
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1536",
+      "t": 6,
+      "s": [
+        188
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1537",
+      "t": 6,
+      "s": [
+        188
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1
+    },
+    {
+      "id": "trauma-1538",
+      "t": 6,
+      "s": [
+        188
       ],
       "p": null,
       "a": null,
