@@ -33,7 +33,7 @@ export interface OpcoesSessao {
   nacional?: string
   /** Início vindo do servidor, para o cronômetro bater em qualquer aparelho. */
   criadaEm?: number
-  origem?: 'cronograma'
+  origem?: 'cronograma' | 'diagnostico' | 'reta-final' | 'reativar'
 }
 
 export function novaSessao(

@@ -86,7 +86,7 @@ function CaixaTemas() {
 const COMO_FUNCIONA = [
   { icone: 'calendario' as const, titulo: 'Você diz a data da prova', texto: 'E quantos dias por semana consegue estudar.' },
   { icone: 'rota' as const, titulo: 'Ele monta o caminho', texto: 'A meta de cada dia e o tema de cada semana, começando pelo que mais cai.' },
-  { icone: 'reiniciar' as const, titulo: 'E se ajusta sozinho', texto: 'Atrasou, a meta sobe um pouco; adiantou, alivia. A última semana é de reta final.' },
+  { icone: 'reiniciar' as const, titulo: 'E se ajusta sozinho', texto: 'Atrasou, a meta sobe um pouco; adiantou, alivia. As duas últimas semanas são de reta final, com revisão forte e modo prova.' },
 ]
 
 /** Trilha da jornada: as semanas do cronograma como casas de um mapa de RPG, até a prova. */
@@ -146,7 +146,7 @@ export function CartaoCronograma({ cronograma }: { cronograma: CronogramaHoje })
           {calculo.metaDiaria > 0 && calculo.metaDiaria <= 40
             ? <span className="cr-blocos" aria-hidden="true" style={{ gridTemplateColumns: `repeat(${calculo.metaDiaria}, minmax(0, 1fr))` }}>{Array.from({ length: calculo.metaDiaria }, (_, i) => <span key={i} className={i < calculo.feitasHoje ? 'cheio' : ''} />)}</span>
             : <span className="cr-destaque__barra"><span style={{ width: `${pct}%` }} /></span>}
-          <p>{calculo.naRetaFinal ? 'Reta final: erros, dúvidas e simulado.' : calculo.hoje ? <>Hoje: <strong>{calculo.hoje.nome}</strong>{calculo.hoje.focos[0] ? `, começando por ${calculo.hoje.focos[0].toLowerCase()}` : ''}.</> : 'Meta de hoje cumprida. Bom trabalho!'}</p>
+          <p>{calculo.naRetaFinal ? (calculo.fase === 'revisao' ? 'Reta final: revisão forte do que mais cai.' : calculo.fase === 'vespera' ? 'Véspera: aquecimento leve e descanso.' : 'Reta final: modo prova, simulado e resumão.') : calculo.hoje ? <>Hoje: <strong>{calculo.hoje.nome}</strong>{calculo.hoje.focos[0] ? `, começando por ${calculo.hoje.focos[0].toLowerCase()}` : ''}.</> : 'Meta de hoje cumprida. Bom trabalho!'}</p>
           {pendente
             ? <a className="botao botao--claro botao--grande" href={href('/sessao')}>Continuar de onde parei · {pendente.feitas}/{pendente.total}</a>
             : <a className="botao botao--ouro botao--grande" href={href('/cronograma')}>{calculo.hoje && calculo.faltaHoje ? 'Seguir o cronograma' : 'Abrir o cronograma'}</a>}

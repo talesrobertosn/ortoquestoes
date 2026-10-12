@@ -231,3 +231,5 @@ a.rs-marco:hover { color: var(--texto); border-color: var(--traco-forte); }
 /* O guerreiro da guilda (o mesmo da espera e do fim de sessão) acima do grito de batalha. */
 .rs-guerreiro { grid-column: 1 / -1; order: -3; justify-self: center; margin-bottom: -.4rem; transform: scale(.75); transform-origin: center bottom; }
 @media print { .rs-guerreiro { display: none; } }
+.rs-diagnostico { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.75rem 1rem; border-color: color-mix(in srgb, var(--verdete) 40%, var(--traco)); background: linear-gradient(135deg, var(--verdete-veu), var(--superficie) 70%); }
+.rs-diagnostico p { margin: 0.2rem 0 0; max-width: 60ch; }

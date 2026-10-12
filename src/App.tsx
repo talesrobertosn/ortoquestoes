@@ -39,6 +39,7 @@ const Emails = lazy(() => import('./paginas/Emails').then(({ Emails }) => ({ def
 const SimuladoNacional = lazy(() => import('./paginas/SimuladoNacional').then(({ SimuladoNacional }) => ({ default: SimuladoNacional })))
 const PlanoEstudo = lazy(() => import('./paginas/PlanoEstudo').then(({ PlanoEstudo }) => ({ default: PlanoEstudo })))
 const TemasQueMaisCaem = lazy(() => import('./paginas/TemasQueMaisCaem').then(({ TemasQueMaisCaem }) => ({ default: TemasQueMaisCaem })))
+const Resumao = lazy(() => import('./paginas/Resumao').then(({ Resumao }) => ({ default: Resumao })))
 const Indicar = lazy(() => import('./paginas/Indicar').then(({ Indicar }) => ({ default: Indicar })))
 const ConviteRecebido = lazy(() => import('./paginas/Indicar').then(({ ConviteRecebido }) => ({ default: ConviteRecebido })))
 const Ligas = lazy(() => import('./paginas/Ligas').then(({ Ligas }) => ({ default: Ligas })))
@@ -74,6 +75,7 @@ const TITULOS: Record<string, string> = {
   '/ligas': 'Liga da residência | Orto Questões',
   '/indicar': 'Indique e ganhe | Orto Questões',
   '/temas-que-mais-caem': 'Temas que mais caem | Orto Questões',
+  '/resumao': 'Resumão da reta final | Orto Questões',
 }
 
 export function App() {
@@ -173,6 +175,9 @@ export function App() {
       break
     case 'temas-que-mais-caem':
       pagina = <TemasQueMaisCaem />
+      break
+    case 'resumao':
+      pagina = <Resumao />
       break
     case 'indicar':
       pagina = <Indicar />

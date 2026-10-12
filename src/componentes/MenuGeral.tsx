@@ -39,6 +39,7 @@ const GRUPOS: { titulo: string; itens: Item[] }[] = [
     titulo: 'Rumo à prova',
     itens: [
       { destino: '/temas-que-mais-caem', rotulo: 'Temas que mais caem', texto: 'A contagem dos assuntos nas provas oficiais', icone: 'grafico', assinante: true },
+      { destino: '/resumao', rotulo: 'Resumão', texto: 'O que cai em uma frase, assunto por assunto', icone: 'livro', assinante: true, destaque: true },
       { destino: '/simulado-nacional', rotulo: 'Simulado Nacional', texto: 'Uma prova por mês, com nota e posição', icone: 'alvo', assinante: true },
     ],
   },

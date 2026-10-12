@@ -292,7 +292,7 @@ export interface EstadoSessao {
   /** Edição do Simulado Nacional ("2026-10"). Entregar manda as letras para a correção no servidor. */
   nacional?: string
   /** De onde a sessão nasceu, para oferecer a volta no lugar certo (ex.: o cronograma). */
-  origem?: 'cronograma'
+  origem?: 'cronograma' | 'diagnostico' | 'reta-final' | 'reativar'
 }
 
 /** Quanto falta, em segundos. Negativo quando o tempo acabou. */

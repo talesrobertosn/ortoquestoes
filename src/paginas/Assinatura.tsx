@@ -46,7 +46,7 @@ const periodo = (p: Plano) => p.meses === 1 ? 'por mês' : p.meses === 6 ? 'a ca
 
 /** O que só o assinante tem, com o pixel do site. */
 const EXCLUSIVOS: Array<{ icone: NomeIconePixel; titulo: string; texto: string }> = [
-  { icone: 'planos', titulo: 'Cronograma até a prova', texto: 'A meta de cada dia e o tema de cada semana, na ordem do que mais cai. Atrasou, ele se ajusta sozinho.' },
+  { icone: 'planos', titulo: 'Cronograma até a prova', texto: 'A meta de cada dia na ordem do que mais cai, diagnóstico inicial, alerta de esquecimento, mapa de risco, sua sequência de dias e duas semanas de reta final com resumão.' },
   { icone: 'turma', titulo: 'Como a turma respondeu', texto: 'Depois de cada questão, quantos por cento marcaram cada alternativa e qual é a pegadinha.' },
   { icone: 'treinar', titulo: 'Treino pelas que a turma mais erra', texto: 'Sessões só com as questões que derrubam a maioria, e com as que ninguém pode errar.' },
   { icone: 'simulado', titulo: 'Simulado Nacional todo mês', texto: '50 questões de TEOT e TARO em duas horas, a mesma prova para todo o Brasil. Sua posição e a prontidão por tema.' },
@@ -419,7 +419,7 @@ export function Assinatura() {
           </div>
           <div>
             <h3>O que vem no plano</h3>
-            <details><summary>Como o cronograma é montado?</summary><p>Você informa a data da prova, a intensidade (leve, firme ou completo) e os dias de folga. O cronograma divide as questões pelos dias até a prova, coloca primeiro as áreas e os assuntos que mais caem (a partir da contagem das provas oficiais), dá mais espaço aos temas em que você está abaixo da média e reserva a última semana para a reta final. Todo dia ele se recalcula: atrasou, a meta sobe um pouco; adiantou, alivia. Antes de assinar, dá para ver a prévia do seu.</p></details>
+            <details><summary>Como o cronograma é montado?</summary><p>Você informa a data da prova, a intensidade (leve, firme ou completo) e os dias de folga. O cronograma divide as questões pelos dias até a prova, coloca primeiro as áreas e os assuntos que mais caem (a partir da contagem das provas oficiais), dá mais espaço aos temas em que você está abaixo da média (um diagnóstico de 30 questões já calibra isso no primeiro dia) e mistura de 2 a 6 OrtoQuestões Simulados por sessão. As duas últimas semanas são a reta final, sem conteúdo novo: a penúltima é de revisão forte (seus erros, dúvidas e o que mais cai, uma fatia da prova por dia) e a última é o modo prova (simulado cronometrado, os erros que importam e o resumão). Todo dia ele se recalcula: atrasou, a meta sobe um pouco; adiantou, alivia. E avisa quando um tema já estudado fica três semanas esquecido. Antes de assinar, dá para ver a prévia do seu.</p></details>
             <details><summary>O que é o "Como a turma respondeu"?</summary><p>Depois de responder, o assinante vê quantos por cento da turma marcaram cada alternativa e qual foi a pegadinha mais escolhida. No Treinar, dá para montar sessões só com as questões que a maioria erra, ou só com as que quase todo mundo acerta e você não pode errar.</p></details>
             <details><summary>Como funciona o Simulado Nacional?</summary><p>No começo de cada mês sai uma edição nova: a mesma prova, com 50 questões de TEOT e TARO e duas horas de tempo, para todos os assinantes. Você faz quando quiser dentro do mês, numa tentativa só. A correção sai na hora, com a sua posição e o acerto por tema comparado à média.</p></details>
             <details><summary>O que são os {ROTULO_SIMULADOS}?</summary><p>Questões inéditas, escritas pelo Orto Questões por engenharia reversa das provas: estudamos o estilo, o nível e os temas das provas anteriores e escrevemos questões novas no mesmo padrão, inclusive para provas cujo conteúdo não é público, como a de cirurgia da mão e o Fellowship de Quadril. Não são questões oficiais nem cópia de prova sigilosa; trazem aviso na tela e comentário completo.</p></details>
@@ -528,7 +528,8 @@ function PreviaCronograma({ conta, assinante }: { conta: boolean; assinante: boo
   const [prova, definirProva] = useState(proximaProva)
   const corridos = diasAte(prova)
   const semanas = Math.max(1, Math.ceil(corridos / 7))
-  const reta = semanas >= 3 ? 1 : 0
+  // Reta final: duas semanas (revisão forte e modo prova) com 6 semanas ou mais; uma com 3 a 5.
+  const reta = semanas >= 6 ? 2 : semanas >= 3 ? 1 : 0
   const semanasEstudo = Math.max(1, semanas - reta)
   const diasEstudo = Math.round(corridos * (7 - folgas) / 7)
   const total = ritmo * diasEstudo
@@ -543,7 +544,7 @@ function PreviaCronograma({ conta, assinante }: { conta: boolean; assinante: boo
       const de = Math.floor(acumulado * semanasEstudo) + 1
       acumulado += fatia
       const ate = Math.max(de, Math.ceil(acumulado * semanasEstudo))
-      return { area: a, fatia, de: Math.min(de, semanasEstudo), ate: Math.min(ate, semanasEstudo), questoes: Math.round(total * (1 - (reta ? 7 / Math.max(7, corridos) : 0)) * fatia) }
+      return { area: a, fatia, de: Math.min(de, semanasEstudo), ate: Math.min(ate, semanasEstudo), questoes: Math.round(total * (1 - (reta ? (7 * reta) / Math.max(7 * reta, corridos) : 0)) * fatia) }
     })
   }, [semanasEstudo, total, reta, corridos])
   const semanaTexto = (de: number, ate: number) => de === ate ? `Semana ${de}` : `Semanas ${de} a ${ate}`
@@ -595,15 +596,19 @@ function PreviaCronograma({ conta, assinante }: { conta: boolean; assinante: boo
               </li>
             )
           })}
+          {reta > 1 && <li className="vd-fase vd-fase--reta">
+            <span className="vd-fase__num"><Icone nome="reiniciar" tamanho={16} /></span>
+            <div className="vd-fase__corpo"><p className="vd-fase__topo"><strong>Reta final · revisão forte</strong><small>Semana {semanas - 1} · penúltima semana</small></p><p className="vd-fase__focos">Seus erros, dúvidas e os assuntos que mais caem, uma fatia da prova por dia. Sem conteúdo novo.</p></div>
+          </li>}
           {reta > 0 && <li className="vd-fase vd-fase--reta">
             <span className="vd-fase__num"><Icone nome="bandeira" tamanho={16} /></span>
-            <div className="vd-fase__corpo"><p className="vd-fase__topo"><strong>Reta final</strong><small>Semana {semanas} · última semana</small></p><p className="vd-fase__focos">Revisão dos erros e dos temas mais fracos, sem conteúdo novo.</p></div>
+            <div className="vd-fase__corpo"><p className="vd-fase__topo"><strong>Reta final · modo prova</strong><small>Semana {semanas} · última semana</small></p><p className="vd-fase__focos">Simulado cronometrado no horário da prova, os erros que importam e o resumão. Véspera leve.</p></div>
           </li>}
         </ol>
       </div>
 
       <div className="vd-cronograma__rodape">
-        <p><Icone nome="reiniciar" tamanho={16} /> No cronograma de verdade, temas em que você está abaixo da média ganham mais espaço, e a meta se recalcula todo dia: atrasou, sobe um pouco; adiantou, alivia.</p>
+        <p><Icone nome="reiniciar" tamanho={16} /> No cronograma de verdade, um diagnóstico calibra o plano no primeiro dia, temas em que você está abaixo da média ganham mais espaço e a meta se recalcula todo dia. O painel mostra a sua sequência, avisa quando um tema fica esquecido e aponta o que mais cai e você mais erra.</p>
         <a className="botao botao--grande vd-botao-ouro" href={href(conta ? '/cronograma' : '/conta?modo=criar&voltar=%2Fcronograma')}>{assinante ? 'Abrir meu cronograma' : conta ? 'Ver a prévia com o meu histórico' : 'Criar conta grátis e ver o meu'}</a>
       </div>
     </section>

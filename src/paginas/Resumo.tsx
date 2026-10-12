@@ -347,6 +347,12 @@ export function Resumo() {
         {metaCumprida && <div className="rs-loot"><IconePixel nome="planos" tamanho={56} /><div><span className="rs-loot__tag">Baú da meta</span><strong>Meta de hoje cumprida</strong><small>{cronograma.calculo!.feitasHoje} de {cronograma.calculo!.metaDiaria} questões do cronograma.</small></div></div>}
       </section>}
 
+      {!emAndamento && sessao.origem === 'diagnostico' && (
+        <section className="cartao cartao__corpo rs-diagnostico" aria-label="Diagnóstico concluído">
+          <div><strong>Diagnóstico concluído</strong><p className="texto-2">O cronograma já usou o seu resultado: as áreas em que você foi pior ganham mais espaço desde hoje. Veja o seu acerto por área e o mapa de risco no painel.</p></div>
+          <a className="botao botao--principal" href={href('/cronograma')}>Ver o cronograma ajustado</a>
+        </section>
+      )}
       <DiaCumprido erradas={dados.erradas.length} />
       <ConviteLimiteDoDia />
       {/* Sessão que foi bem, sem o limite do dia na mesma tela: um convite, no máximo. */}
