@@ -47,7 +47,8 @@ Registro em ordem de data. Cada linha é uma decisão do Tales; não mude sem no
 
 **O projeto sai do rascunho**
 - "Do ponto de vista inicial tá bem bom": seguir, oficializar e colocar no site **o quanto antes**.
-- Nada vai para produção sem aprovação do Tales. Por isso a rota `#/flashcards` só existe no `npm run dev` e em builds com `VITE_FLASHCARDS=1`.
+- Nada vai para produção sem aprovação do Tales.
+- **Depois, ainda em 12/10:** "pode subir no site, com o link; como só eu vou saber o link, só eu vou usar". A rota `#/flashcards` foi publicada sem aparecer em nenhum menu.
 
 **Batalha primeiro**
 - A **Batalha é o modo de entrada**. O Estudo fica numa aba ao lado, para quem quiser.

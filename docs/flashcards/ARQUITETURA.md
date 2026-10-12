@@ -18,7 +18,7 @@ Tudo em `src/flashcards/`, com camadas separadas como pediu o briefing:
 | Áudio | `efeitos/sons.ts` | Sons sintetizados com Web Audio, sem arquivo; desligados por padrão, com volume. |
 | Componentes | `componentes/` | `Cartao` (flashcard 3D com moldura por raridade), `Sprite` (pixel art com luz automática), `Texto` (negrito e lacunas sem HTML), `Cenario` e `TampoMesa`, `Estudo`, `Arena` (com `Recompensas` e `Fim`). |
 | Estilo | `src/estilos/paginas/Flashcards.css` | Arena em tela cheia, sem depender do tema do site. Fontes: Cinzel e Alegreya (`@fontsource`) e Pixelify Sans. |
-| Página | `src/paginas/Flashcards.tsx` | Rota `#/flashcards`, carregada sob demanda e liberada só com `FLASHCARDS_LIBERADO` (em `config.ts`: `npm run dev` ou `VITE_FLASHCARDS=1`). Pede conta, como o Treinar. |
+| Página | `src/paginas/Flashcards.tsx` | Rota `#/flashcards`, carregada sob demanda e publicada só por link (`FLASHCARDS_LIBERADO` em `config.ts`); o atalho no Treinar depende de `FLASHCARDS_NO_MENU` (`npm run dev` ou `VITE_FLASHCARDS=1`). Pede conta, como o Treinar. |
 
 **Baralho de demonstração:** os 12 flashcards reais do protótipo (`dados/baralhoDemo.ts`), com o id da questão de origem e as imagens de `public/imagens/`. A fábrica (seção 1) vai substituí-lo.
 

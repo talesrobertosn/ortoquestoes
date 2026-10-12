@@ -69,7 +69,7 @@ Uma aba **Flashcards** dentro de **Treinar**, com o **modo Estudo** (calmo: vira
 - **12/10/2026, noite (Batalha no app):**
   - O Tales aprovou seguir: a Batalha é o modo de entrada, deve ser difícil (mais fácil morrer que matar) e ter arte de Runeterra/Hearthstone com toques de pixel art. Também mandou o briefing completo (ver [DECISOES.md](DECISOES.md)).
   - A Batalha agora roda **dentro do app**, em `src/flashcards/`, na rota `#/flashcards`, com o baralho de demonstração. A arquitetura está em [ARQUITETURA.md](ARQUITETURA.md), seção 0, e as regras e números em [BATALHA.md](BATALHA.md).
-  - **Fora da produção:** só aparece no `npm run dev` ou com `VITE_FLASHCARDS=1`.
+  - **No site, só por link:** https://ortoquestoes.com.br/#/flashcards (pedido do Tales em 12/10/2026, para ele testar). Nenhum menu aponta para lá; o atalho no Treinar só aparece no `npm run dev` ou com `VITE_FLASHCARDS=1`. Como o limite diário ainda não existe no servidor, não divulgar o link antes disso.
   - Prints conferidos em 390×844, 360×640 e 1440×900: texto da pergunta com 17 a 23 px, alternativas com 15,5 px, nada fora da tela.
   - **Para continuar:**
     1. O Tales joga e aprova.
