@@ -1670,3 +1670,51 @@ Aproveitamento: `pe-tornozelo-0387` a `0422`, 36 autorais, 24 com figura e 21 ad
 [Plano](carpal-fractures-dislocations-plano.md) e [entrega](carpal-fractures-dislocations-entrega.md). Leitura integral das 89 folhas. 25 questões, `mao-1669` a `mao-1693`, cinco com figuras (WATSON, humpback, VISI, arcos de GILULA e luxação do semilunar). A6/B6/C6/D7, comentário mediano 2.277 caracteres, quatro alternativas desenvolvidas por item. Prioridades: escafoide, imagem e viabilidade, pseudartrose e SNAC, ligamentos SL/LT, instabilidade dinâmica, GARCIA-ELIAS, SLAC, MAYFIELD e urgência neural. Piramidal, hâmulo e escafocapitato completam os padrões clássicos. ZITER ficou textual pela insuficiência do posicionamento na radiografia isolada.
 
 Divergências do capítulo excluídas da cobrança: rótulo dissociativa/complexa da perilunar; ângulos anormais listados em um parágrafo de fratura não desviada; fios em configuração diamante com conexões diferentes no texto e erro de espessura na legenda. HERBERT D4 do TARO 2024 não consta no detalhamento da figura, portanto foi usado B4. Tratamento de fratura pouco desviada delimitado ao SWIFFT, e reconstrução SL sem declarar técnica universalmente superior. A carpectomia no SLAC III é convencional, sem interposição. Nenhuma alteração de gabarito oficial.
+
+## Fraturas e luxações da coluna cervical (engenharia reversa em 13/10/2026)
+
+Recorte: subtemas "Fraturas da coluna cervical", "Fraturas da coluna cervical alta", "Fraturas da
+coluna cervical baixa" e "Lesão medular e síndromes medulares" (`mapear_banca.py`). **66 oficiais**,
+63 de TEOT/TARO com quatro alternativas; 2007 a 2026, com 6 em 2024 e 5 em 2023. Enunciado mediano
+de 96 caracteres, alternativa de 22; 21 itens em par (mecanismo + quadro, tipo + conduta); 7 com
+imagem; só 2 casos clínicos. Gabarito: A8, B10, C23, D15. Dez itens antigos sem gabarito (TARO
+2006 a 2010 e SLIC/WHITE de 2020). Nenhum OrtoQuestões Simulado existia no recorte.
+
+O que a banca repete (o que mais vale gêmea):
+- **Síndromes medulares (cerca de 1/3 do recorte).** Central: idoso, hiperextensão, membros
+  superiores piores que inferiores, a mais comum das incompletas (TARO 2011, 2015 duas vezes, 2023,
+  2024, 2026, sem ano duas vezes). BROWN-SÉQUARD: motor e propriocepção ipsilaterais, dor e
+  temperatura contralaterais (2014 e 2016 quase iguais). Anterior: perde motor, dor e temperatura,
+  preserva propriocepção (2010, 2018). Posterior: só propriocepção (TEOT 2024). Prognóstico da
+  central por idade e tratamento (TARO 2026).
+- **Choque medular e neurogênico.** Bradicardia com débito urinário normal e extremidades quentes
+  (2016, 2017); fim do choque medular em 24 a 48 horas e reflexo bulbocavernoso (S2-S4; TEOT 2023
+  pede S2 e S3) como marcador (2011, 2022, 2023); vasopressor alfa e beta (2020); mecanismo
+  primário mais comum é impacto com compressão persistente (2019); gliose em cerca de 7 dias (2023).
+- **Atlas.** Ligamento transverso pela regra de SPENCE: soma do afastamento das massas laterais
+  acima de 6,9 a 7 mm (2021 duas vezes, TEOT 2024); JEFFERSON com estabilidade dependente do
+  transverso; COCK-ROBIN na massa lateral; ADI normal até 3 mm; na criança, a fusão dos arcos
+  (sincondroses) por volta dos 7 anos.
+- **Odontoide.** ANDERSON e D'ALONZO tipo II, o mais comum, pseudartrose de 36% (2014 e 2016
+  idênticas); tipo I por avulsão do alar, 1%; parafuso anterior indicado no traço
+  anterossuperior-posteroinferior e contraindicado no anteroinferior-posterossuperior (2011, 2015,
+  GRAUER IIb no TEOT 2023); HOSALKAR na criança (2026).
+- **Enforcado (C2).** Fratura bilateral da pars interarticularis (2016, 2022); LEVINE e EDWARDS:
+  tipo II por hiperextensão e carga axial, tipo IIA sem tração (sem ano).
+- **Occipitocervical e C1-C2.** Medida de HARRIS (soma abaixo de 12 mm, 2024); técnicas de
+  artrodese HARMS e WRIGHT (TEOT 2025); GRISEL inflamatória (2012); rotação C1-C2 de 50% (2016).
+- **Subaxial.** SLIC (status neurológico: incompleta pontua mais que completa, 2025; soma ≥ 5
+  cirúrgica, TEOT 2025 com imagem); WHITE e PANJABI (11 graus, 3,5 mm); ALLEN e FERGUSON (gota de
+  lágrima = compressão-flexão; distração-flexão II = luxação facetária unilateral); MAGERL
+  (rotação, mais graves); artéria vertebral lesada e parafuso de massa lateral (2018).
+
+Lacunas com potencial (ainda não cobradas no recorte, presentes na literatura de referência):
+critérios NEXUS e regra canadense, triagem de lesão da artéria vertebral, luxação facetária
+(redução fechada no paciente acordado e o papel da ressonância antes), escala ASIA (A a E), fratura
+do côndilo occipital (ANDERSON e MONTESANO), relação de POWERS, odontoide no idoso, complicações do
+halo (afrouxamento dos pinos, paralisia do abducente), descompressão precoce (antes de 24 horas) e
+pressão arterial média alvo, metilprednisolona fora da rotina, espondilite anquilosante (fratura em
+extensão, tomografia de toda a coluna, fixação posterior longa) e fratura do "cavador de argila".
+
+Aproveitamento: aguardando o capítulo do Rockwood (Cervical Spine Fractures and Dislocations)
+para escrever o lote de 20 a 25 questões, com gêmeas dos temas repetidos e novas das lacunas.
