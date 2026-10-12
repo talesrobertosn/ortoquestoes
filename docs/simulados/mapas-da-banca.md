@@ -1877,9 +1877,27 @@ deslocamento posterior), classificação AO/TILE completa, fratura por fragilida
 de S1 e S2, dismorfismo sacral), fixação da sínfise e complicações (falha da placa, lesão da
 coroa mortis), lesão neurológica e disfunção sexual e urinária no seguimento.
 
-Destino dos simulados a decidir: os oficiais de anel pélvico estão no tema Trauma, que aparece só no
-filtro TEOT/TARO. No tema Quadril, o lote entraria também no filtro do fellowship de quadril.
+Destino: tema Trauma, subtema "Fratura do anel pélvico" (onde estão as oficiais), com o subtema
+"Fraturas da coluna toracolombar" nas questões de sacro, como a banca faz. Entram no filtro TEOT/TARO.
 
-Aproveitamento: aguardando o capítulo do Rockwood sobre fraturas do anel pélvico para escrever o
-lote, com gêmeas dos temas repetidos e novas das lacunas. As questões de sacro que ficaram fora do
-lote toracolombar entram aqui se o capítulo cobrir o sacro.
+Aproveitamento do capítulo 50 (Pelvic Ring Injuries; Firoozabadi; trauma-1490 a 1514, 25 questões,
+2 figuras; gabarito A6, B7, C6, D6):
+
+- gêmeas dos temas repetidos: lesão associada mais comum (tórax, 63%), Young-Burgess APC II
+  (sacroilíaco posterior íntegro), transverso de L5 (alerta, só 19% dos instáveis verticais),
+  cinta nos trocânteres com rotação interna e adução, zonas de DENIS (figura da zona II com
+  fragmento no forame de S1), zona segura do parafuso iliossacral no perfil (figura com a densidade
+  cortical do ilíaco e a raiz de L5), pino supra-acetabular, corona mortis e dissociação
+  espinopélvica;
+- novas das lacunas: uretrografia antes da sonda, JONES 3, sinal de DESTOT, inlet e outlet com
+  25 e 60 graus, sacro dismórfico (S2 para o transsacral), FFP de ROMMENS e HOFMANN, ROY-CAMILLE
+  modificada, extravasamento de contraste e arteriografia (EAST nível 1), tamponamento pré-peritoneal,
+  estresse no LC I (sobreposição acima de 1 cm), complicações do INFIX, falha da placa da sínfise,
+  parafuso do ramo (retrógrado na zona II de NAKATANI falha mais), DAY III, placa anterior da
+  sacroilíaca com um furo medial e profilaxia de TEV.
+
+Divergências tratadas no comentário: a diástase de 2,5 cm (média de 2,2 cm em cadáver, alguns até
+4,5 cm); o déficit da zona III (até 60%; o TARO 2016 cita 50% a 60%); o transverso de L5 como sinal
+de lesão pélvica, e não de instabilidade vertical. Ficaram de fora REBOA e ácido tranexâmico (citados
+só no conceito do tamponamento), os escores funcionais (MAJEED e Iowa) e a lesão de MOREL-LAVALLÉE,
+já coberta pela oficial trauma-0988.
