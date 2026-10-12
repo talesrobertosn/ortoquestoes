@@ -87,3 +87,6 @@ Tales aprovou **Cofre de duas chaves** (feed) e **Mecânica fina / Relojoaria an
 
 ## Novos modelos aprovados em 12/10/2026
 Tales aprovou a **Tabela de Snellen** (feed, para questões em que uma palavra do enunciado decide) e o **Cupom fiscal** (stories de propaganda, com preço conferido em `src/dados/planos.ts`), com o pedido de "salvar modelo para o futuro". Os dois são opções do arsenal. [Guia completo e modelos executáveis](../../marketing/instagram/estilos/SNELLEN-E-CUPOM.md).
+
+## Entregar antes de pedir (orientação de 12/10/2026)
+Em propaganda, comece entregando algo útil, de preferência uma questão real com a resposta e a explicação, e só depois peça algo em troca (seguir, testar, entrar no site). A propaganda vem leve e sem preço. Se algum valor precisar aparecer, que seja bem pequeno. O Cupom fiscal na versão "questão primeiro" é o modelo desse formato.

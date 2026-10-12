@@ -1,0 +1,174 @@
+<!doctype html>
+<!--
+  Post de 12/10/2026 · Cupom fiscal, versão "questão primeiro" (pedido do Tales: entregar antes de pedir, sem preço)
+  Questão: conceitos-basicos-0079 · TARO 2022 · gabarito D (Pseudomonas aeruginosa)
+  Conteúdo médico: comentário da questão em public/acervo/comentarios/conceitos-basicos.json
+  Gerar: node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-12-cupom-questao/post.html
+-->
+<html lang="pt-BR"><head><meta charset="utf-8"><style>
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Source; src: url(../../fontes/source-serif-4-latin-opsz-normal.woff2) format('woff2'); font-weight: 200 900; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #222; }
+section { position: relative; width: 1080px; height: 1350px; overflow: hidden; font-family: Inter, sans-serif; }
+section.story { height: 1920px; }
+b, strong { font-weight: 800; }
+
+/* ===================== FEED · TABELA DE SNELLEN ===================== */
+.sn { background: #e9e6df; color: #121212;
+  background-image: linear-gradient(90deg, rgba(0,0,0,0.035) 1px, transparent 1px); background-size: 120px 100%; }
+.sn::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 120px; background: #d9d4ca; border-top: 6px solid #c9c2b5; }
+.sn .topo { position: absolute; z-index: 3; left: 64px; right: 64px; top: 44px; display: flex; justify-content: space-between; align-items: center; }
+.marca { display: flex; align-items: center; gap: 14px; font-size: 32px; color: #121212; letter-spacing: -0.5px; }
+.marca svg { width: 52px; height: 52px; }
+.etiqueta { font-size: 24px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #5a554c; padding: 8px 16px; border: 2px solid #b8b0a2; border-radius: 40px; }
+.pagina { position: absolute; z-index: 3; left: 64px; right: 64px; bottom: 40px; display: flex; justify-content: space-between; align-items: center; font-size: 24px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #6b655a; }
+.pagina b { color: #121212; }
+/* o quadro iluminado */
+.quadro { position: absolute; z-index: 2; left: 150px; right: 150px; top: 132px; bottom: 170px; background: #fdfdfb; border-radius: 22px;
+  box-shadow: 0 0 0 14px #fff, 0 0 0 18px #cfc8bb, 0 40px 70px rgba(0,0,0,0.18), inset 0 0 80px rgba(240, 236, 220, 0.9); padding: 46px 40px 40px; }
+.quadro.largo { left: 70px; right: 70px; }
+.quadro.centro { display: flex; flex-direction: column; justify-content: center; }
+.linhas { display: grid; gap: 14px; }
+.ln { display: grid; grid-template-columns: 92px 1fr 92px; align-items: center; }
+.ln .n { font-size: 20px; font-weight: 700; color: #9a9385; letter-spacing: 1px; }
+.ln .n:last-child { text-align: right; }
+.ln .t { text-align: center; font-weight: 800; letter-spacing: 0.14em; line-height: 1.12; white-space: nowrap; }
+.ln.vermelho .n { color: #c23b2e; }
+.chamada { font-family: Source; font-weight: 700; color: #121212; letter-spacing: -1px; }
+.oclusor { position: absolute; z-index: 4; width: 120px; height: 300px; }
+.oclusor i { position: absolute; left: 0; top: 0; width: 120px; height: 150px; border-radius: 60px 60px 56px 56px; background: #141414; box-shadow: inset -10px -10px 0 rgba(255,255,255,0.06), 10px 14px 24px rgba(0,0,0,0.25); }
+.oclusor i::after { content: ""; position: absolute; left: 48px; top: 140px; width: 24px; height: 170px; border-radius: 12px; background: #141414; }
+.lupa { position: absolute; z-index: 5; border-radius: 50%; background: #fffef8; box-shadow: 0 0 0 16px #1c1c1c, 0 0 0 22px #3a3a3a, 0 30px 50px rgba(0,0,0,0.3), inset 0 0 50px rgba(200, 190, 160, 0.35); display: grid; place-items: center; text-align: center; }
+.lupa::after { content: ""; position: absolute; width: 230px; height: 46px; border-radius: 23px; background: #1c1c1c; right: -230px; top: 50%; transform: rotate(-28deg); transform-origin: left center; }
+.cartao { background: #fff; border-radius: 18px; box-shadow: 0 0 0 3px #e2ddd2; padding: 26px 30px; }
+.cartao p { font-size: 32px; line-height: 1.42; color: #2a2722; }
+.cartao p b { color: #121212; }
+.real { background: #fff3a8; padding: 0 6px; border-radius: 6px; }
+.otipos { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.otipos div { display: grid; place-items: center; gap: 6px; padding: 18px 0 14px; border-radius: 16px; background: #fff; box-shadow: 0 0 0 3px #e2ddd2; }
+.otipos i { font-style: normal; font-size: 26px; font-weight: 800; color: #9a9385; letter-spacing: 2px; }
+.otipos span { font-size: 92px; font-weight: 800; letter-spacing: 0.06em; line-height: 1; }
+.escada { display: grid; gap: 20px; }
+.degrau { display: grid; grid-template-columns: 160px 1fr; gap: 24px; align-items: center; padding: 30px 28px; border-radius: 16px; background: #fff; box-shadow: 0 0 0 3px #e2ddd2; }
+.degrau strong { font-size: 72px; letter-spacing: 0.06em; line-height: 1; }
+.degrau p { font-size: 31px; line-height: 1.35; color: #3a362f; }
+.degrau p b { color: #121212; }
+.degrau.ok { background: #121212; box-shadow: 0 0 0 4px #121212, 0 16px 30px rgba(0,0,0,0.2); }
+.degrau.ok strong, .degrau.ok p, .degrau.ok p b { color: #fff; }
+.degrau.ok .sel { display: inline-block; margin-top: 8px; font-size: 21px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; background: #fff3a8; color: #121212; padding: 4px 12px; border-radius: 20px; }
+.duo { display: grid; grid-template-columns: 1fr 1fr; border-radius: 18px; overflow: hidden; box-shadow: 0 0 0 4px #121212; }
+.duo div { padding: 30px 30px 32px; color: #121212; }
+.duo .r { background: #e0533f; }
+.duo .g { background: #4fae6a; }
+.duo small { display: block; font-size: 22px; font-weight: 800; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 10px; opacity: 0.8; }
+.duo p { font-size: 29px; line-height: 1.38; }
+
+/* ===================== STORIES · CUPOM FISCAL ===================== */
+.cp { background: #123a35; color: #1d1a14;
+  background-image: radial-gradient(rgba(255,255,255,0.05) 2px, transparent 2px); background-size: 22px 22px; }
+.cp .topo { position: absolute; z-index: 3; left: 70px; right: 70px; top: 250px; display: flex; justify-content: space-between; align-items: center; color: #fff; }
+.cp .marca { color: #fff; }
+.cp .etiqueta { color: #a8dcd1; border-color: rgba(168,220,209,0.45); }
+.impressora { position: absolute; z-index: 4; left: 90px; right: 90px; top: 350px; height: 96px; border-radius: 26px 26px 18px 18px; background: linear-gradient(#2c2c2c, #151515); box-shadow: 0 20px 40px rgba(0,0,0,0.35); }
+.impressora::before { content: ""; position: absolute; left: 70px; right: 70px; bottom: 18px; height: 14px; border-radius: 8px; background: #050505; }
+.impressora::after { content: ""; position: absolute; right: 40px; top: 26px; width: 18px; height: 18px; border-radius: 50%; background: #7ee28f; box-shadow: 0 0 14px #7ee28f; }
+.papel { position: absolute; z-index: 3; left: 150px; right: 150px; top: 420px; padding: 50px 50px 70px; background: #fbf8ef;
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.06), transparent 60px), repeating-linear-gradient(0deg, rgba(120,100,60,0.025) 0 2px, transparent 2px 5px);
+  font-family: "DejaVu Sans Mono", "Liberation Mono", monospace; font-size: 30px; line-height: 1.5; box-shadow: 0 30px 50px rgba(0,0,0,0.35); }
+.papel.serrilha::after { content: ""; position: absolute; left: 0; right: 0; bottom: -24px; height: 24px;
+  background: linear-gradient(-45deg, transparent 16px, #fbf8ef 0) 0 0 / 32px 24px repeat-x, linear-gradient(45deg, transparent 16px, #fbf8ef 0) 0 0 / 32px 24px repeat-x; }
+.papel .c { text-align: center; }
+.papel h2 { font-family: inherit; font-size: 44px; font-weight: 700; letter-spacing: 2px; text-align: center; line-height: 1.2; }
+.papel .tr { border: 0; border-top: 3px dashed #8b8473; margin: 22px 0; }
+.papel .it { display: grid; grid-template-columns: 52px 1fr auto; gap: 14px; align-items: baseline; }
+.papel .it + .it { margin-top: 16px; }
+.papel .it span:first-child { color: #8b8473; }
+.papel .it em { font-style: normal; color: #2d6a5f; font-weight: 700; }
+.papel .peq { font-size: 24px; color: #6b6555; }
+.papel .total { display: flex; justify-content: space-between; align-items: baseline; font-size: 40px; font-weight: 700; }
+.papel .valor { font-size: 120px; font-weight: 700; letter-spacing: -4px; line-height: 1; text-align: center; margin: 10px 0 6px; }
+.papel .valor small { font-size: 46px; letter-spacing: 0; }
+.papel .marcado { background: #1d1a14; color: #fbf8ef; padding: 2px 12px; }
+.barras { height: 110px; margin: 26px 20px 8px; background: repeating-linear-gradient(90deg, #1d1a14 0 4px, transparent 4px 7px, #1d1a14 7px 9px, transparent 9px 15px, #1d1a14 15px 21px, transparent 21px 24px, #1d1a14 24px 26px, transparent 26px 33px); }
+.chamada-cp { position: absolute; z-index: 5; left: 70px; right: 70px; font-family: Source; font-weight: 700; color: #fff; letter-spacing: -1px; }
+.chamada-cp em { font-style: normal; color: #f4cf7c; }
+
+.papel .alt { display: grid; grid-template-columns: 74px 1fr; gap: 10px; align-items: baseline; }
+.papel .alt + .alt { margin-top: 14px; }
+.papel .alt b { font-weight: 700; }
+.papel .alt i { font-style: italic; }
+.papel .alt.ok { background: #1d1a14; color: #fbf8ef; margin: 14px -18px 0; padding: 10px 18px; }
+.papel .alt.ok + .alt { margin-top: 14px; }
+.papel .riscado { color: #8b8473; }
+.papel .enun { font-size: 31px; line-height: 1.45; }
+.papel .rot { font-size: 22px; font-weight: 700; letter-spacing: 3px; color: #2d6a5f; }
+.papel .exp { font-size: 27px; line-height: 1.45; }
+.papel .exp + .exp { margin-top: 12px; }
+.sub-cp { position: absolute; z-index: 5; left: 70px; right: 70px; font-family: Inter; font-weight: 600; font-size: 32px; line-height: 1.35; color: #a8dcd1; }
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#14655E"/><g fill="#FFFFFF" opacity=".55"><path transform="translate(13 9.5)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(11 21.2)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(13 44.6)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g><path fill="#F4CF7C" transform="translate(11 32.9)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></symbol></svg>
+
+
+<!-- ============ STORY 1/3 · o pedido: a questão ============ -->
+<section id="story-01" class="cp story" data-question="conceitos-basicos-0079">
+  <header class="topo"><div class="marca"><svg><use href="#sim"/></svg><span><b>Orto</b> Questões</span></div><span class="etiqueta">Pedido do dia</span></header>
+  <div class="impressora"></div>
+  <div class="papel serrilha">
+    <h2>ORTO QUESTÕES</h2>
+    <p class="c peq">pedido: 1 questão oficial · TARO 2022</p>
+    <hr class="tr">
+    <p class="enun">Na osteomielite de calcâneo na criança secundária a ferimento puntiforme, o patógeno mais comum é&nbsp;a</p>
+    <hr class="tr">
+    <div class="alt"><b>[A]</b><span><i>Kingella kingae.</i></span></div>
+    <div class="alt"><b>[B]</b><span><i>Salmonella</i> species.</span></div>
+    <div class="alt"><b>[C]</b><span><i>Klebsiella aerogenes.</i></span></div>
+    <div class="alt"><b>[D]</b><span><i>Pseudomonas aeruginosa.</i></span></div>
+    <hr class="tr">
+    <p class="c peq">aguardando a sua letra...</p>
+  </div>
+  <p class="chamada-cp" style="top:1400px;font-size:74px;line-height:1.05">Um prego atravessou<br>o tênis. <em>Qual germe?</em></p>
+  <p class="sub-cp" style="top:1590px">Comente a sua letra. A resposta sai<br>no próximo cupom.</p>
+</section>
+
+<!-- ============ STORY 2/3 · a resposta ============ -->
+<section id="story-02" class="cp story" data-question="conceitos-basicos-0079">
+  <header class="topo"><div class="marca"><svg><use href="#sim"/></svg><span><b>Orto</b> Questões</span></div><span class="etiqueta">Resposta</span></header>
+  <div class="impressora"></div>
+  <div class="papel serrilha">
+    <p class="rot">RESPOSTA</p>
+    <div class="alt ok"><b>[D]</b><span><i>Pseudomonas aeruginosa.</i></span></div>
+    <hr class="tr">
+    <p class="exp">A espuma úmida e quente da palmilha do <b>tênis</b> é onde a <i>Pseudomonas</i> vive. O prego leva a bactéria da espuma até o osso: na criança, o <b>calcâneo</b>.</p>
+    <p class="exp">Tratamento: <b>desbridamento</b> e antibiótico com ação <b>contra Pseudomonas</b>. O de rotina contra o estafilococo não cobre.</p>
+    <hr class="tr">
+    <div class="alt riscado"><b>[A]</b><span>Kingella: criança pequena, quadro leve, sem perfurante.</span></div>
+    <div class="alt riscado"><b>[B]</b><span>Salmonella: anemia falciforme.</span></div>
+    <div class="alt riscado"><b>[C]</b><span>Klebsiella: não é o germe do perfurante.</span></div>
+  </div>
+  <p class="chamada-cp" style="top:1500px;font-size:66px;line-height:1.08">Prego + tênis =<br><em>Pseudomonas.</em></p>
+</section>
+
+<!-- ============ STORY 3/3 · a propaganda leve ============ -->
+<section id="story-03" class="cp story">
+  <header class="topo"><div class="marca"><svg><use href="#sim"/></svg><span><b>Orto</b> Questões</span></div><span class="etiqueta">Cupom do dia</span></header>
+  <div class="impressora"></div>
+  <div class="papel serrilha">
+    <p class="c" style="font-weight:700">ESSA SAIU POR NOSSA CONTA</p>
+    <p class="c peq">e tem mais na mesma nota:</p>
+    <hr class="tr">
+    <div class="it"><span>01</span><span>Questões oficiais do TEOT e do TARO</span><em>OK</em></div>
+    <div class="it"><span>02</span><span>Comentário de cada alternativa</span><em>OK</em></div>
+    <div class="it"><span>03</span><span>Cronograma até o dia da prova</span><em>OK</em></div>
+    <div class="it"><span>04</span><span>Revisão do que você errou</span><em>OK</em></div>
+    <div class="it"><span>05</span><span>Quanto a turma marcou em cada letra</span><em>OK</em></div>
+    <hr class="tr">
+    <div class="barras"></div>
+    <p class="c peq">ortoquestoes.com.br</p>
+    <p class="c" style="font-weight:700;letter-spacing:4px;margin-top:6px">VOLTE AMANHÃ</p>
+  </div>
+  <p class="chamada-cp" style="top:1460px;font-size:66px;line-height:1.08">Gostou? <em>Treine mais<br>como esta.</em></p>
+  <p class="sub-cp" style="top:1630px">Comece grátis: o caminho está no nosso perfil.</p>
+</section>
+
+</body></html>

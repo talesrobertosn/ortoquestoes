@@ -14,3 +14,4 @@ agente) também entram aqui: o dono avisa e o id é anotado.
 | ombro-cotovelo-0623 | Redondo maior com seta amarela (Simulados, anatomia), só como tela de exemplo | posts/2026-10-10-tour-do-site |
 | tumores-0065 | Tumor de células gigantes no joelho, com imagem (TEOT 2022) | posts/2026-10-12-selecao-tcg |
 | trauma-0761 | Monteggia Bado II, subtipo 2B de Jupiter (TEOT 2025) | posts/2026-10-12-snellen-cupom |
+| conceitos-basicos-0079 | Osteomielite do calcâneo após prego no tênis, Pseudomonas (TARO 2022) | posts/2026-10-12-cupom-questao |

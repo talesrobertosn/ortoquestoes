@@ -312,6 +312,6 @@ varredura circular é um motivo gráfico abstrato; não representa exame nem ana
 
 ## Tabela de Snellen e Cupom fiscal: aprovados em 12/10/2026
 - **Tabela de Snellen (feed, 5 slides):** a questão vira um exame de vista e o detalhe que decide fica na linha 20/20. Visual de consultório, com quadro iluminado, oclusor, lupa e teste do vermelho e verde. [Modelo](snellen/modelo.html).
-- **Cupom fiscal (stories, 3 telas):** propaganda numa nota térmica com os recursos reais do site. O total vem de `src/dados/planos.ts` e o fechamento traz a garantia de 7 dias. [Modelo](cupom-fiscal/modelo.html).
+- **Cupom fiscal (stories, 3 telas):** versão principal "questão primeiro": a nota imprime uma questão oficial, depois a resposta e por fim uma propaganda leve, sem preço. [Modelo](cupom-fiscal/modelo.html). Há uma variante só de propaganda com preço: [modelo-preco.html](cupom-fiscal/modelo-preco.html).
 
 [Guia de escolha, roteiro, acabamento e revisão](SNELLEN-E-CUPOM.md). Usar por cópia direta, porque os estilos não estão no sorteador.
