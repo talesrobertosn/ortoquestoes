@@ -1806,6 +1806,26 @@ fraturado e fixação percutânea; síndrome do cone medular contra cauda equina
 espondilite anquilosante e na DISH da coluna torácica; fratura-luxação por translação; cifose
 pós-traumática; lesão por arma de fogo; lesões não contíguas.
 
-Aproveitamento: aguardando o capítulo do Rockwood (Thoracolumbar Spine Fractures and Dislocations)
-para escrever o lote, com gêmeas dos temas repetidos e novas das lacunas. O sacro só entra se o
-capítulo o cobrir; senão, fica para o capítulo da pelve ou do sacro.
+### Aproveitamento do capítulo 49: coluna toracolombar (13/10/2026)
+
+Leitura integral do capítulo 49 do Rockwood, 10ª ed. (Thoracolumbar Spine Fractures and
+Dislocations; Kitto, Edwards e Tannoury). 25 questões no tema Coluna, `coluna-0533` a `coluna-0557`
+(filtros TEOT/TARO e R4 coluna), duas com figuras (distância interpedicular no AP e fratura em
+extensão na espondilite). A6/B6/C7/D6, comentário mediano de 3.057 caracteres, cada um citando
+capítulo e seção.
+
+- **Gêmeas dos temas repetidos (13):** TLICS (pontos de morfologia, conta de 4 pontos, neurologia
+  de 3 pontos), AO Spine (A3 contra A4, B1 contra B2, notação T12-L1 B2; L1 A3, B3; N3; M2 na
+  espondilite), distância interpedicular, coluna média de DENIS, critérios de instabilidade (50%,
+  30 graus, 2,5 mm), fratura vertical da lâmina e dura, CHANCE (tratamento em compressão sem
+  artrodese), load sharing acima de 6 e cimentação (disco e 0,1%).
+- **Lacunas (12):** cone medular, órtese por nível (HTLSO abaixo de L3), ensaio de BAILEY,
+  limites da ligamentotaxia, acesso anterior pela esquerda e ADAMKIEWICZ, canal comprometido sem
+  déficit, transporte na coluna anquilosada, fratura-luxação tipo C, diretriz da AAOS para
+  vertebroplastia, projétil entre T12 e L4 e osteotomia de subtração pedicular.
+
+O capítulo confirma a fonte das questões de cimentação do TEOT e do TARO 2025 (extravasamento em até
+90%, disco 45%, neurológica 0,1%). A tabela TLICS do capítulo lista a explosão como "+1"; o comentário
+usa o total de 2 pontos (compressão 1 + explosão 1). Não cobre sacro (DENIS, iliossacral), criança
+(limbo vertebral, SCIWORA) nem acesso de WILTSE: esses temas ficam para os capítulos de pelve e
+coluna pediátrica.
