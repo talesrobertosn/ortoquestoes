@@ -82,6 +82,8 @@ export interface Questao {
   id: string
   /** "cirurgia-mao" nas provas de cirurgia da mão; ausente nas de ortopedia */
   area?: 'cirurgia-mao'
+  /** Simulado de ortopedia também disponível no treino desta especialidade. */
+  areasAdicionais?: Array<'cirurgia-mao'>
   /**
    * Dissertativa: sem alternativas. A pessoa escreve a resposta, vê a resposta
    * esperada e o comentário e ela mesma avalia se acertou.
@@ -151,6 +153,8 @@ export interface ItemIndice {
   dup?: string
   /** categoria fora da ortopedia base (TEOT e TARO): fica fora do treino padrão e do cronograma */
   ar?: Exclude<Area, 'base'>
+  /** Presença adicional: conserva a área principal e o mesmo ID/histórico. */
+  aa?: Array<'mao'>
 }
 
 /**

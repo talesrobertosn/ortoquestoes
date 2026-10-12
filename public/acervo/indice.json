@@ -1,13 +1,13 @@
 {
   "versao": 1,
-  "geradoEm": "2026-10-12T21:25:59+00:00",
-  "total": 6559,
+  "geradoEm": "2026-10-12T22:38:11+00:00",
+  "total": 6584,
   "temas": [
     {
       "slug": "mao",
       "nome": "Mão e punho",
       "arquivo": "temas/mao.json",
-      "total": 1537
+      "total": 1562
     },
     {
       "slug": "ombro-cotovelo",
@@ -25535,6 +25535,486 @@
       "cia": 1,
       "cc": 0,
       "sim": 1
+    },
+    {
+      "id": "mao-1694",
+      "t": 0,
+      "s": [
+        21
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "aa": [
+        "mao"
+      ]
+    },
+    {
+      "id": "mao-1695",
+      "t": 0,
+      "s": [
+        21
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "aa": [
+        "mao"
+      ]
+    },
+    {
+      "id": "mao-1696",
+      "t": 0,
+      "s": [
+        21
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "aa": [
+        "mao"
+      ]
+    },
+    {
+      "id": "mao-1697",
+      "t": 0,
+      "s": [
+        21,
+        22
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "aa": [
+        "mao"
+      ]
+    },
+    {
+      "id": "mao-1698",
+      "t": 0,
+      "s": [
+        21,
+        32
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "aa": [
+        "mao"
+      ]
+    },
+    {
+      "id": "mao-1699",
+      "t": 0,
+      "s": [
+        21
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "aa": [
+        "mao"
+      ]
+    },
+    {
+      "id": "mao-1700",
+      "t": 0,
+      "s": [
+        21
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "aa": [
+        "mao"
+      ]
+    },
+    {
+      "id": "mao-1701",
+      "t": 0,
+      "s": [
+        21
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "aa": [
+        "mao"
+      ]
+    },
+    {
+      "id": "mao-1702",
+      "t": 0,
+      "s": [
+        21
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "aa": [
+        "mao"
+      ]
+    },
+    {
+      "id": "mao-1703",
+      "t": 0,
+      "s": [
+        21
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "aa": [
+        "mao"
+      ]
+    },
+    {
+      "id": "mao-1704",
+      "t": 0,
+      "s": [
+        21
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "aa": [
+        "mao"
+      ]
+    },
+    {
+      "id": "mao-1705",
+      "t": 0,
+      "s": [
+        22,
+        12
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "aa": [
+        "mao"
+      ]
+    },
+    {
+      "id": "mao-1706",
+      "t": 0,
+      "s": [
+        22
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "aa": [
+        "mao"
+      ]
+    },
+    {
+      "id": "mao-1707",
+      "t": 0,
+      "s": [
+        21
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "aa": [
+        "mao"
+      ]
+    },
+    {
+      "id": "mao-1708",
+      "t": 0,
+      "s": [
+        21
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "aa": [
+        "mao"
+      ]
+    },
+    {
+      "id": "mao-1709",
+      "t": 0,
+      "s": [
+        21,
+        3
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "aa": [
+        "mao"
+      ]
+    },
+    {
+      "id": "mao-1710",
+      "t": 0,
+      "s": [
+        21
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "aa": [
+        "mao"
+      ]
+    },
+    {
+      "id": "mao-1711",
+      "t": 0,
+      "s": [
+        21
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "aa": [
+        "mao"
+      ]
+    },
+    {
+      "id": "mao-1712",
+      "t": 0,
+      "s": [
+        22
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "aa": [
+        "mao"
+      ]
+    },
+    {
+      "id": "mao-1713",
+      "t": 0,
+      "s": [
+        22
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "aa": [
+        "mao"
+      ]
+    },
+    {
+      "id": "mao-1714",
+      "t": 0,
+      "s": [
+        22
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "aa": [
+        "mao"
+      ]
+    },
+    {
+      "id": "mao-1715",
+      "t": 0,
+      "s": [
+        21
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "aa": [
+        "mao"
+      ]
+    },
+    {
+      "id": "mao-1716",
+      "t": 0,
+      "s": [
+        21
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "aa": [
+        "mao"
+      ]
+    },
+    {
+      "id": "mao-1717",
+      "t": 0,
+      "s": [
+        21
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 1,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "aa": [
+        "mao"
+      ]
+    },
+    {
+      "id": "mao-1718",
+      "t": 0,
+      "s": [
+        21,
+        3
+      ],
+      "p": null,
+      "a": null,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "aa": [
+        "mao"
+      ]
     },
     {
       "id": "ombro-cotovelo-0001",

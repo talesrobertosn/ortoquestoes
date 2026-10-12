@@ -225,6 +225,7 @@ const TEMA_DA_AREA: Readonly<Partial<Record<string, string>>> = { coluna: 'colun
 function noFoco(item: ItemIndice, areas: Filtros['areas'], indice?: Indice): boolean {
   const area = item.ar ?? 'base'
   if (areas.includes(area) || (AREAS_TAMBEM_NA_BASE.has(area) && areas.includes('base'))) return true
+  if (item.aa?.some((adicional) => areas.includes(adicional))) return true
   const tema = indice?.temas[item.t]?.slug
   return !!tema && areas.some((a) => TEMA_DA_AREA[a] === tema)
 }

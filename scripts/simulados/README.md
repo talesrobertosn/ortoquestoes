@@ -28,3 +28,13 @@ manual da utilidade e da análise de cada alternativa. Mostra a distribuição d
 A figura usa `img=("arquivo_sem_ext", "figura 32-11", (x0, y0, x1, y1))`; a caixa é opcional e
 serve para recortar o painel certo e tirar rótulos que entreguem a resposta. Olhe o recorte antes de
 aplicar.
+
+### Um simulado nos filtros de ortopedia e Cirurgia da Mão
+
+Quando o dono solicitar a presença nos dois treinos, use no item do lote
+`areasAdicionais=["cirurgia-mao"]`. O aplicador conserva a área principal de
+ortopedia (sem `area`), `simulado: true` e `prova: null`; o índice acrescenta
+`aa: ["mao"]`. O mesmo ID participa de ambos os filtros sem duplicar histórico.
+Não usar `area="cirurgia-mao"` para essa finalidade, pois retiraria o simulado
+do treino TEOT/TARO. As provas oficiais da especialidade conservam sua área.
+Exemplo auditado: `docs/simulados/hand-fractures-dislocations-entrega.md`.

@@ -69,6 +69,8 @@ for m, q in QS:
     for s in q["sub"]:
         if s not in tema["subtemas"]:
             erros.append(f"{rot}: subtema '{s}' não existe em {a.tema} (válidos: {'; '.join(tema['subtemas'])})")
+    if "areasAdicionais" in q and q["areasAdicionais"] != ["cirurgia-mao"]:
+        erros.append(f"{rot}: areasAdicionais deve ser ['cirurgia-mao']")
     textos = [q["enun"], *q["alts"], q["conceito"], q["correta"], *q["inc"].values()]
     for t in textos:
         if "—" in t or "–" in t:
@@ -129,6 +131,7 @@ for m, q in QS:
                     "largura": im.width, "altura": im.height}]
     T["questoes"].append({
         "id": qid, "tema": tema["nome"], "subtemas": q["sub"], "prova": None, "simulado": True,
+        **({"areasAdicionais": q["areasAdicionais"]} if q.get("areasAdicionais") else {}),
         "ano": None, "dificuldade": None, "enunciado": q["enun"], "imagens": imagens,
         "alternativas": [{"letra": l, "texto": t} for l, t in zip("ABCD", q["alts"])],
         "gabarito": q["gab"], "comentario": None, "comentariosComunidade": [], "referencias": [],
