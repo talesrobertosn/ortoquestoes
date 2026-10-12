@@ -1511,3 +1511,30 @@ A7 B18 C18 D19: equilibrar o lote e não esvaziar o A.
 
 Simulados no recorte: trauma-1243 (estresse) e trauma-1430 (Monteggia posterior do adulto, redução
 radiocapitelar); anatomia do antebraço do Netter em mao-1264 a 1281. Não repetir.
+
+### Aproveitamento do capítulo 42 (lote publicado em 12/10/2026)
+
+Rockwood 10ª ed., capítulo 42 (Streubel e Grossman). 30 questões, trauma-1431 a trauma-1460,
+gabarito A8 B8 C7 D7, cinco com figura do livro (BADO IV, GALEAZZI, fratura do cassetete, arco
+radial e sinostose). Cerca de dois terços são gêmeas de fatos carimbados: tipo II de BADO,
+JUPITER, piores resultados, NIP na cirurgia, GALEAZZI (7,5 cm, mecanismo, sinais da RUD,
+irredutibilidade pelo ECU), deformidade rotacional, incidência da tuberosidade, epidemiologia,
+síndrome compartimental, coxim móvel, THOMPSON, HENRY, haste, exposta, sinostose.
+
+Divergências resolvidas pelo capítulo:
+- **BADO mais comum no adulto:** tipo II, até 80% (capítulo e série de RING); o tipo I é o da criança.
+  O comentário cita as duas chaves da banca. O capítulo diz que o tipo IV é exclusivo do adulto,
+  o que diverge do gabarito do TARO 2025 (tipo II "quase exclusivo do adulto"); não foi cobrado
+  "exclusivo do adulto" para não colidir.
+- **HENRY proximal:** o capítulo enfatiza a supinação total para proteger o NIP e a abertura da
+  bursa lateral ao bíceps para proteger a artéria braquial; a questão cobra a manobra, sem disputar
+  o gabarito de 2011.
+- **Exposta:** o capítulo trata placa imediata como regra nos tipos I, II e IIIA e o fixador como
+  exceção; o comentário explica a diferença para o TARO 2011.
+- **GALEAZZI e rotação:** o capítulo liga hiperpronação à luxação anterior da cabeça da ulna e
+  hipersupinação à posterior, mas recomenda imobilizar a luxação dorsal (a mais comum) em supinação.
+  A questão de mecanismo cobra só o par clássico (hiperpronação e extensão).
+
+Fica para outro lote: pinagem da RUD (dois fios de 2 mm a 1 cm), PUDA em número, Weinberg (158
+graus), classificação de JUPITER e RING da sinostose, critérios de consolidação de ANDERSON e
+escores de GRACE e EVERSMANN.
