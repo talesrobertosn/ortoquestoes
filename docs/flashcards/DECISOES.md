@@ -95,3 +95,7 @@ Registro em ordem de data. Cada linha é uma decisão do Tales; não mude sem no
 - Cronograma de flashcards somente na área Flashcards, removendo o atalho do cronograma de questões.
 - Nas mudanças visuais, enviar ocasionalmente capturas reais de desktop e/ou celular durante o trabalho.
 - Implementação e critérios em [JORNADA-UNICA.md](JORNADA-UNICA.md). Esta orientação substitui a escolha de níveis e a divulgação da Torre descritas anteriormente.
+
+## 13/10/2026 — polimento do beta
+
+Opinião com melhor acabamento; som baixo a cada abertura e controle vertical no ícone, em vez de mute imediato. Melhorar fundo do Golem, apresentação e capa. Preparar imagem de proposta de herói menos infantil. Toda mudança fica documentada para o Claude. Implementação e referência em [POLIMENTO-AUDIO-OPINIAO.md](POLIMENTO-AUDIO-OPINIAO.md).

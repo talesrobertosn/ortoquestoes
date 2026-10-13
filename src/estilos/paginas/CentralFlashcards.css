@@ -169,3 +169,33 @@
 @media(max-width:640px){.cf-heroi__botoes{flex-wrap:nowrap;}.cf-heroi__botoes .botao{flex:0 0 auto;width:100%;min-height:48px;}}
 /* O estilo global esconde os pseudo-elementos dos heróis; este véu preserva o contraste. */
 .cf .cf-heroi::after { display:block!important; pointer-events:none; }
+
+/* Opinião: formulário editorial com contraste, notas claras e rodapé acessível. */
+.jc__caixa.cf-opiniao { width:min(680px,calc(100vw - 32px)); max-height:calc(100dvh - 40px); padding:32px; border:1px solid #c4d1c3; border-radius:24px; background:var(--superficie); box-shadow:0 28px 90px #14322955; }
+.cf-opiniao__cabeca { display:flex; align-items:flex-start; gap:14px; padding-right:24px; padding-bottom:12px; }
+.cf-opiniao__icone { display:grid;place-items:center; flex:none; width:48px;height:48px;border-radius:16px;background:var(--verdete-veu);color:var(--verdete-tinta); }
+.cf-opiniao__cabeca h2 { font-size:25px;line-height:1.2;letter-spacing:-.025em;margin:4px 0 8px; }
+.cf-opiniao__cabeca p { margin:0;color:var(--texto-2);font-size:14px;line-height:1.45; }
+.cf-opiniao__cabeca .cf-opiniao__selo { font-size:11px;letter-spacing:.09em;text-transform:uppercase;font-weight:750;color:var(--verdete-tinta); }
+.cf-opiniao .cf-campo {gap:8px;}
+.cf-opiniao .cf-campo legend {font-size:14px;margin-bottom:8px;}
+.cf-opiniao__notas {display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.cf-opiniao__notas .cf-campo {background:var(--superficie-2);border:1px solid var(--traco);border-radius:16px;padding:14px;}
+.cf-opiniao .cf-chips {gap:6px;}
+.cf-opiniao .cf-chips button {border-radius:10px;min-height:40px;}
+.cf-opiniao .cf-chips--nota {display:grid;grid-template-columns:repeat(5,1fr);}
+.cf-opiniao .cf-chips--nota button {padding:0;min-width:0;}
+.cf-opiniao textarea {padding:12px 14px;border-radius:12px;resize:vertical;min-height:80px;background:var(--superficie-2);}
+.cf-opiniao__privacidade {font-size:12px;line-height:1.5;color:var(--texto-2);margin:0;}
+.cf-opiniao .cf-form__botoes {padding-top:12px;border-top:1px solid var(--traco);justify-content:flex-end;}
+.cf-opiniao .jc__fechar {border-radius:50%;background:var(--superficie-2);}
+@media(max-width:640px){.jc__caixa.cf-opiniao{padding:24px 20px;max-height:calc(100dvh - 24px);width:calc(100vw - 24px);border-radius:20px;}.cf-opiniao__notas{grid-template-columns:1fr;gap:10px;}.cf-opiniao__cabeca h2{font-size:22px;}.cf-opiniao .cf-form__botoes{flex-direction:column;}.cf-opiniao .cf-form__botoes .botao{width:100%;justify-content:center;}}
+.cf-aviso { border-color: var(--traco); background: var(--superficie); border-radius: 18px; padding: 1.1rem 1.3rem; }
+.cf-aviso > svg { color: var(--verdete-tinta); }
+.cf-aviso p { color: var(--texto-2); font-size: .92rem; line-height: 1.55; }
+.cf-aviso strong { color: var(--texto); font-weight: 650; }
+@media(max-width:640px){.jc:has(.cf-opiniao){padding:12px;}}
+.cf-opiniao form { gap: 12px; }
+.cf-opiniao textarea { height: 80px; }
+.cf-opiniao .cf-form__botoes { position: sticky; bottom: -32px; background: var(--superficie); padding-bottom: 12px; }
+@media(max-width:640px){.cf-opiniao .cf-form__botoes{bottom:-24px;}}

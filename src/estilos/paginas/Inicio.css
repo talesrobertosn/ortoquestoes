@@ -576,3 +576,32 @@ a.inicio-kpi:hover { background: rgba(255, 255, 255, 0.15); color: var(--sobre-h
   .inicio-flash--faixa { grid-template-columns: 7rem minmax(0, 1fr); }
   .inicio-flash--faixa .inicio-flash__desc { display: none; }
 }
+
+/* Capa integrada: arte e convite no mesmo quadro, sem duas caixas empilhadas. */
+.inicio-flash { position: relative; isolation: isolate; min-height: 320px; border-radius: 22px; border-color: #728b69; background: #162f25; transition: border-color .2s, box-shadow .2s; }
+.inicio-flash__arte { position: absolute; inset: 0; z-index: -2; }
+.inicio-flash__arte img { height: 100%; object-fit: cover; object-position: 65% 45%; }
+.inicio-flash::before { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(12,32,25,.94) 0%, rgba(12,32,25,.8) 42%, rgba(12,32,25,.08) 100%); }
+.inicio-flash__texto { align-content: center; width: min(100%, 370px); gap: .8rem; padding: 2rem; }
+.inicio-flash__selo { background: #edd69f; color: #314031; letter-spacing: .07em; padding: .3rem .65rem; }
+.inicio-flash strong { font-family: 'Alegreya', Georgia, serif; font-size: 2rem; line-height: 1.1; font-weight: 600; }
+.inicio-flash__desc { line-height: 1.55; color: #dedfcc; }
+.inicio-flash__botao { border-radius: 12px; }
+.inicio-flash--faixa { grid-template-columns: 1fr; min-height: 290px; }
+.inicio-flash--faixa .inicio-flash__texto { width: min(60%, 520px); }
+.inicio-flash--heroi { min-height: 390px; }
+.inicio-flash--heroi::before { background: linear-gradient(0deg, #102b23 4%, rgba(16,43,35,.93) 32%, rgba(16,43,35,.08) 100%); }
+.inicio-flash--heroi .inicio-flash__texto { align-self: end; width: 100%; padding: 1.5rem; }
+.inicio-flash--heroi strong { font-size: 1.75rem; }
+@media (max-width: 52rem) {
+ .inicio-flash--faixa { grid-template-columns: 1fr; min-height: 260px; }
+ .inicio-flash--faixa .inicio-flash__texto { width: 78%; padding: 1.4rem; }
+ .inicio-flash--faixa strong { font-size: 1.7rem; }
+ .inicio-flash--faixa .inicio-flash__desc { font-size: .92rem; }
+ .inicio-flash--faixa .inicio-flash__arte img { object-position: 68% 55%; }
+ .inicio-flash::before { background: linear-gradient(90deg, rgba(12,32,25,.96) 0%, rgba(12,32,25,.85) 45%, rgba(12,32,25,.15) 100%); }
+}
+@media (max-width: 24rem) {
+ .inicio-flash--faixa .inicio-flash__texto { width: 88%; }
+ .inicio-flash--faixa .inicio-flash__desc { display: block; }
+}

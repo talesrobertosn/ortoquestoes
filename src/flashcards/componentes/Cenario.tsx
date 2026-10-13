@@ -86,7 +86,7 @@ export const Cenario = memo(function Cenario({ cena, reduzido, clima: climaAndar
       if (!vivo) return
       const w = alvo.clientWidth, h = alvo.clientHeight
       const chave = `${w}x${h}`
-      if (chave === ultimo || !w) return
+      if (chave === ultimo || !w || !h) return
       ultimo = chave
       const novo = () => { const c = document.createElement('canvas'); Object.defineProperty(c, 'clientWidth', { value: w }); Object.defineProperty(c, 'clientHeight', { value: h }); return c }
       const planos: { fundo: HTMLCanvasElement; meio: HTMLCanvasElement; frente: HTMLCanvasElement; brilho: HTMLCanvasElement; luz?: HTMLCanvasElement } = { fundo: novo(), meio: novo(), frente: novo(), brilho: novo() }
@@ -106,30 +106,33 @@ export const Cenario = memo(function Cenario({ cena, reduzido, clima: climaAndar
         const dw = W * escala, dh = H * escala
         c.drawImage(cv, (W - dw) / 2, (H - dh) / 2, dw, dh)
       }
+      // Camadas pintadas compartilham a mesma projeção: luz e geometria não podem ter zooms diferentes.
+      const zoomMeio = pintado ? 1 : 1.015
+      const zoomFrente = pintado ? 1 : 1.06
       // fundo desfocado (profundidade de campo)
-      plano(desfocar(planos.fundo, 1.4), 1.03, true)
+      plano(desfocar(planos.fundo, 1.4), pintado ? 1 : 1.03, true)
       // meio nítido
-      plano(planos.meio, 1.015)
+      plano(planos.meio, zoomMeio)
       // tilt-shift: o meio desfocado só no alto e embaixo
       const tilt = document.createElement('canvas'); tilt.width = W; tilt.height = H
       const t = tilt.getContext('2d')!; t.imageSmoothingEnabled = true
-      t.drawImage(desfocar(planos.meio, 2), (W - W * 1.015) / 2, (H - H * 1.015) / 2, W * 1.015, H * 1.015)
+      t.drawImage(desfocar(planos.meio, 2), (W - W * zoomMeio) / 2, (H - H * zoomMeio) / 2, W * zoomMeio, H * zoomMeio)
       t.fillStyle = 'rgba(0,0,0,.1)'; t.globalCompositeOperation = 'source-atop'; t.fillRect(0, 0, W, H)
       t.globalCompositeOperation = 'destination-in'
       const m = t.createLinearGradient(0, 0, 0, H); m.addColorStop(0, '#000'); m.addColorStop(0.24, 'rgba(0,0,0,0)'); m.addColorStop(0.74, 'rgba(0,0,0,0)'); m.addColorStop(1, '#000')
       t.fillStyle = m; t.fillRect(0, 0, W, H)
       c.drawImage(tilt, 0, 0)
       // luz nítida da floresta (feixes, linha fisária das pedras, cogumelos), somada em screen
-      if (planos.luz) { c.save(); c.globalCompositeOperation = 'screen'; c.globalAlpha = 0.9; plano(planos.luz, 1.015); c.restore() }
+      if (planos.luz) { c.save(); c.globalCompositeOperation = 'screen'; c.globalAlpha = 0.9; plano(planos.luz, zoomMeio); c.restore() }
       // bloom das luzes
-      c.save(); c.globalCompositeOperation = 'screen'; c.globalAlpha = 0.95; c.imageSmoothingEnabled = true
+      c.save(); c.globalCompositeOperation = 'screen'; c.globalAlpha = pintado ? 0.35 : 0.95; c.imageSmoothingEnabled = true
       c.drawImage(desfocar(planos.brilho, 4), 0, 0, W, H); c.restore()
       feixes(c, W, H, cena, clima)
       climaENevoa(c, W, H, clima)
       // frente desfocada e escurecida (mais perto da câmera)
       const fr = document.createElement('canvas'); fr.width = W; fr.height = H
       const f = fr.getContext('2d')!; f.imageSmoothingEnabled = true
-      f.drawImage(desfocar(planos.frente, 2.4), (W - W * 1.06) / 2, (H - H * 1.06) / 2, W * 1.06, H * 1.06)
+      f.drawImage(desfocar(planos.frente, 2.4), (W - W * zoomFrente) / 2, (H - H * zoomFrente) / 2, W * zoomFrente, H * zoomFrente)
       f.globalCompositeOperation = 'source-atop'; f.fillStyle = 'rgba(0,0,0,.25)'; f.fillRect(0, 0, W, H)
       c.drawImage(fr, 0, 0)
     }

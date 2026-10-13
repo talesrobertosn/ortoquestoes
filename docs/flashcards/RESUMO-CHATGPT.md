@@ -1,5 +1,7 @@
 # Resumo para o ChatGPT: beta público dos flashcards (13/10/2026, noite)
 
+**Último ajuste visual e de áudio (13/10/2026):** [Polimento do beta](POLIMENTO-AUDIO-OPINIAO.md): opinião redesenhada, controle vertical com início em 20%, camadas do cenário alinhadas, capa integrada e proposta documentada de herói adulto.
+
 **Orientação mais recente:** [Jornada única](JORNADA-UNICA.md), 13/10/2026: ranking sem níveis, progressão por turma e histórico pessoal, entrada com Cripta/Biblioteca e cronograma dentro de Flashcards. As seções antigas abaixo são histórico quando conflitarem.
 
 Projeto OrtoQuestões, repositório `talesrobertosn/ortoquestoes`. Roteiro executado:
