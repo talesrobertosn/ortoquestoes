@@ -384,6 +384,8 @@
   background: linear-gradient(#fbf2da, #e8d3a6); box-shadow: inset 0 0 0 1.5px rgba(60, 35, 15, .4); font: 700 clamp(16px, .45vw + 12px, 19px)/1.22 var(--fc-texto); overflow-wrap: break-word; hyphens: auto; }
 .fc-alternativa > i { position: absolute; left: -9px; top: -10px; width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; font: 800 14px var(--fc-ui); font-style: normal; color: #fff; text-shadow: 0 1px 0 #000;
   background: radial-gradient(circle at 35% 30%, #a8d4ff, #3a7fd0 60%, #163a6a); box-shadow: 0 0 0 2px #120a04, 0 0 0 4px #c9a14a; }
+.fc-alternativa > span { min-width: 0; overflow-wrap: anywhere; }
+.fc-alternativa--palavra-longa > span { font-size: clamp(14px, .3vw + 10.5px, 16px); letter-spacing: -.01em; }
 .fc-alternativa--longa > span { font-size: clamp(14px, .3vw + 10.5px, 15.5px); line-height: 1.18; padding-inline: 8px; }
 .fc-alternativa--muito-longa > span { font-size: clamp(12.5px, .25vw + 9.5px, 14px); line-height: 1.14; padding: 10px 7px 6px; }
 .fc-slot-mao--sel .fc-alternativa { box-shadow: 0 0 0 2px #120a04, 0 0 0 5px #8ff0b0, 0 0 34px rgba(127, 240, 160, .75), 0 20px 30px rgba(0, 0, 0, .6); }
@@ -818,6 +820,14 @@
 .fc-estudo__placar--fim { grid-template-columns: repeat(3, 1fr); }
 .fc-estudo__placar--fim div { flex-direction: column; align-items: center; gap: 2px; padding: 10px; }
 .fc-estudo__placar--fim dd { font: 900 26px var(--fc-ui); }
+
+/* Golpe crítico: escurece e uma lâmina de luz cruza a tela em diagonal */
+.fc-lamina { position: absolute; inset: 0; z-index: 60; pointer-events: none; overflow: hidden; animation: fc-lamina-veu .7s ease-out forwards; }
+.fc-lamina i { position: absolute; left: -20%; top: 50%; width: 140%; height: 10px; transform-origin: center; transform: rotate(-24deg) scaleX(0);
+  background: linear-gradient(90deg, transparent, rgba(255, 240, 190, .5) 18%, #fff 50%, rgba(160, 220, 255, .6) 82%, transparent);
+  box-shadow: 0 0 22px 6px rgba(255, 230, 160, .85), 0 0 70px 18px rgba(140, 200, 255, .45); border-radius: 50%; animation: fc-lamina .52s cubic-bezier(.2, .8, .2, 1) forwards; }
+@keyframes fc-lamina { 0% { transform: rotate(-24deg) scaleX(0); opacity: 1; } 45% { transform: rotate(-24deg) scaleX(1); opacity: 1; height: 12px; } 100% { transform: rotate(-24deg) scaleX(1); opacity: 0; height: 2px; } }
+@keyframes fc-lamina-veu { 0% { background: rgba(0, 0, 0, 0); } 15% { background: rgba(0, 0, 0, .35); } 100% { background: rgba(0, 0, 0, 0); } }
 
 /* Carregando o acervo */
 .fc-carregando { display: grid; place-items: center; }

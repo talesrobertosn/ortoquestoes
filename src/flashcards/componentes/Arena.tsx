@@ -159,6 +159,7 @@ function ArenaJogo() {
   const [ajustesAbertos, definirAjustesAbertos] = useState(false)
   const [painel, definirPainel] = useState<'heroi' | 'inimigo' | null>(null)
   const [bloqueio, definirBloqueio] = useState<LimiteFlashcard | null>(null)
+  const [lamina, definirLamina] = useState(0)
   const validando = useRef(false)
   const chaves = useRef(new Map<number, string>())
   const [confirmarSaida, definirConfirmarSaida] = useState(false)
@@ -320,7 +321,11 @@ function ArenaJogo() {
           P?.fragmentos(para, PALETA_PERSONAGEM[quemInimigo], forte ? 30 : medio ? 20 : 12, forte ? 460 : 330)
           P?.explosao(para, { cor, cor2: '#fff3c0', n: forte ? 40 : 22, forca: forte ? 380 : 260 })
           P?.onda(para, cor, forte ? 170 : 110)
-          if (ev.critico || ev.duplo) { P?.corte(para, cor, 96); window.setTimeout(() => P?.corte(para, '#ffffff', 84, 0.6), 70 * fator) }
+          if (ev.critico || ev.duplo) {
+            P?.corte(para, cor, 96); window.setTimeout(() => P?.corte(para, '#ffffff', 84, 0.6), 70 * fator)
+            // crítico: a tela escurece por um instante e uma lâmina de luz atravessa tudo
+            if (!reduzido) definirLamina((n) => n + 1)
+          }
           tocar(ev.critico || ev.duplo ? 'critico' : forte ? 'impacto-forte' : medio ? 'impacto-medio' : 'impacto-leve', 1, quemInimigo)
           tremer(forte ? 1 : medio ? 0.55 : 0.3)
           if (ev.critico || ev.duplo) flutuar(refInimigo.current, `-${ev.valor}`, '#ffd34a', { grande: true, rotulo: ev.duplo ? 'GOLPE DUPLO' : 'CRÍTICO', x: 70, y: -10 })
@@ -813,7 +818,7 @@ function ArenaJogo() {
                     <div key={partida.rodada + '-' + pos} className={`fc-slot-mao${selecionada === pos ? ' fc-slot-mao--sel' : ''}`} style={{ ['--i' as string]: pos, ['--n' as string]: ordem.length }}>
                       <button
                         type="button"
-                        className={`fc-alternativa${carta.opcoes[opcao].length > 56 ? ' fc-alternativa--muito-longa' : carta.opcoes[opcao].length > 34 ? ' fc-alternativa--longa' : ''}${eliminada ? ' fc-alternativa--eliminada' : ''}${eliminando === pos ? ' fc-alternativa--queimando' : ''}${estado ? ' fc-alternativa--' + estado : ''}`}
+                        className={`fc-alternativa${carta.opcoes[opcao].length > 56 ? ' fc-alternativa--muito-longa' : carta.opcoes[opcao].length > 34 ? ' fc-alternativa--longa' : ''}${Math.max(...carta.opcoes[opcao].split(/\s+/).map((x) => x.length)) > 12 ? ' fc-alternativa--palavra-longa' : ''}${eliminada ? ' fc-alternativa--eliminada' : ''}${eliminando === pos ? ' fc-alternativa--queimando' : ''}${estado ? ' fc-alternativa--' + estado : ''}`}
                         disabled={partida.fase !== 'pergunta' || eliminada || !!apresentacao}
                         onClick={() => escolherAlternativa(pos, false)}
                         onPointerEnter={() => { if (partida.fase === 'pergunta' && !eliminada && faixaTela !== 'celular') tocar('hover') }}
@@ -849,6 +854,7 @@ function ArenaJogo() {
             </span>
           ))}
         </div>
+        {lamina > 0 && <div className="fc-lamina" key={'l-' + lamina} aria-hidden="true"><i /></div>}
         <div className="fc-borda-vermelha" key={'v-' + vermelho} data-ativo={vermelho > 0 ? 1 : 0} aria-hidden="true" />
         {transicao && <div className="fc-transicao" aria-hidden="true" />}
         <div className="fc-girar" role="status">
