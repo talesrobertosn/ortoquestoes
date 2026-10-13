@@ -1356,3 +1356,86 @@ body.fc-modal-aberto .aviso-cookies, body.fc-modal-aberto .aviso-site, body.fc-m
 /* mesa física: o canvas desce 6% para mostrar a frente do tampo (espessura) */
 .fc-mesa[data-tabuleiro="mesa"] .fc-mesa__tampo { height: 106%; border-radius: 18px 18px 12px 12px; }
 .fc-mesa[data-tabuleiro="mesa"] { box-shadow: 0 46px 46px -14px rgba(0, 0, 0, .75), 0 16px 18px rgba(0, 0, 0, .35); }
+
+/* =====================================================================
+   Design system v5 dos controles: placas forjadas (SVG em 9 partes, src/estilos/ui/)
+   com moldura de metal chanfrada, rebites, filete e painel; medalhão para o ícone.
+   Estados por material: ferro (indisponível), ouro com brasa (pronto), ouro cheio (seguir).
+   ===================================================================== */
+.fc-modal .fc-principal {
+  position: relative; display: inline-flex !important; align-items: center; justify-content: flex-start; gap: 0; min-width: 196px; min-height: 0 !important;
+  padding: 0 18px 0 58px !important; margin-left: 14px; height: 66px;
+  border: 16px solid transparent !important; border-radius: 0 !important; border-image: url(../ui/placa-ferro.svg) 16 fill / 16px stretch !important;
+  background: none !important; box-shadow: none !important; overflow: visible !important; color: #d9d0bd !important;
+  filter: drop-shadow(0 6px 0 rgba(8, 6, 10, .9)) drop-shadow(0 12px 14px rgba(0, 0, 0, .45)) !important;
+  transition: transform .12s ease-out, filter .12s ease-out !important; animation: none !important;
+}
+.fc-modal .fc-principal::before { content: ""; position: absolute; left: -46px; top: 50%; width: 66px; height: 66px; transform: translateY(-50%); background: url(../ui/medalhao-ferro.svg) center / contain no-repeat; z-index: 0; }
+.fc-modal .fc-principal__icone { position: absolute !important; left: -31px; top: 50%; transform: translateY(-50%); width: 36px !important; height: 36px !important; z-index: 1; filter: grayscale(.85) brightness(.75) drop-shadow(0 2px 0 rgba(0, 0, 0, .6)) !important; }
+.fc-modal .fc-principal__texto { position: relative; z-index: 1; display: grid; justify-items: start; gap: 0; }
+.fc-modal .fc-principal__texto span { font: 900 21px/1 var(--fc-titulo); letter-spacing: .08em; text-transform: uppercase; color: inherit; text-shadow: 0 2px 0 #0b090d; }
+.fc-modal .fc-principal__texto small { font: 800 11.5px/1.25 var(--fc-ui); letter-spacing: .1em; text-transform: uppercase; color: #a8a090; opacity: 1; }
+/* brilho que atravessa a placa (só opacidade e posição: barato) */
+.fc-modal .fc-principal__runa { position: absolute !important; inset: -6px !important; z-index: 2; opacity: 0; pointer-events: none; animation: none !important; overflow: hidden; border-radius: 4px;
+  background: linear-gradient(105deg, transparent 35%, rgba(255, 246, 210, .55) 48%, transparent 60%) !important; background-size: 260% 100% !important; }
+.fc-modal .fc-principal::after { content: ""; position: absolute; inset: -22px -16px -22px -62px; z-index: -1; pointer-events: none; opacity: 0;
+  background: radial-gradient(ellipse at 30% 50%, rgba(255, 190, 80, .55), transparent 62%); }
+
+/* pronto: ouro com brasa, medalhão aceso, espada brilhando, pulso e brilho que corre */
+.fc-modal .fc-principal.pronto { border-image-source: url(../ui/placa-ataque.svg) !important; color: #fff1c2 !important; }
+.fc-modal .fc-principal.pronto::before { background-image: url(../ui/medalhao-ataque.svg); }
+.fc-modal .fc-principal.pronto .fc-principal__icone { filter: drop-shadow(0 0 6px rgba(255, 220, 140, .9)) drop-shadow(0 2px 0 rgba(0, 0, 0, .6)) !important; }
+.fc-modal .fc-principal.pronto .fc-principal__texto small { color: #f2c45a; }
+.fc-modal .fc-principal.pronto::after { animation: fc-pulso-op 1.4s ease-in-out infinite; }
+.fc-modal .fc-principal.pronto .fc-principal__runa { opacity: 1; animation: fc-varre 2.4s ease-in-out infinite !important; }
+@keyframes fc-varre { 0% { background-position: 120% 0; } 60%, 100% { background-position: -40% 0; } }
+/* seguir: placa de ouro cheia, texto escuro, porta no medalhão */
+.fc-modal .fc-principal.seguir { border-image-source: url(../ui/placa-ouro.svg) !important; color: #2a1606 !important; }
+.fc-modal .fc-principal.seguir .fc-principal__texto span { text-shadow: 0 1px 0 rgba(255, 246, 210, .7); }
+.fc-modal .fc-principal.seguir .fc-principal__texto small { color: #5a3a10; }
+.fc-modal .fc-principal.seguir::before { background-image: url(../ui/medalhao-ouro.svg); }
+.fc-modal .fc-principal.seguir .fc-principal__icone { filter: drop-shadow(0 2px 0 rgba(0, 0, 0, .5)) !important; }
+.fc-modal .fc-principal.seguir::after { animation: fc-pulso-op 1.8s ease-in-out infinite; }
+.fc-modal .fc-principal.seguir .fc-principal__runa { opacity: 1; animation: fc-varre 3s ease-in-out infinite !important; }
+/* tátil: sobe no hover, afunda ao pressionar (a sombra de baixo encolhe) */
+.fc-modal .fc-principal:not(:disabled):hover { transform: translateY(-2px) !important; filter: drop-shadow(0 8px 0 rgba(8, 6, 10, .9)) drop-shadow(0 14px 16px rgba(0, 0, 0, .45)) brightness(1.06) !important; }
+.fc-modal .fc-principal:not(:disabled):active { transform: translateY(5px) !important; filter: drop-shadow(0 1px 0 rgba(8, 6, 10, .9)) drop-shadow(0 4px 6px rgba(0, 0, 0, .45)) brightness(.96) !important; }
+.fc-modal .fc-principal:disabled { opacity: 1; }
+.fc-modal .fc-principal:focus-visible { outline: 3px solid #fff1c2; outline-offset: 4px; }
+
+/* abas Batalha/Estudo: régua de ferro com duas placas; a ativa vira ouro */
+.fc-modal .fc-abas { gap: 6px; padding: 0; background: none !important; box-shadow: none !important; }
+.fc-modal .fc-abas button { min-height: 44px; padding: 0 14px !important; border: 12px solid transparent !important; border-radius: 0 !important; border-image: url(../ui/placa-aba.svg) 16 fill / 12px stretch !important;
+  background: none !important; box-shadow: none !important; color: #c9c0ae !important; font: 900 13px/1 var(--fc-titulo); letter-spacing: .1em; text-transform: uppercase;
+  filter: drop-shadow(0 3px 0 rgba(8, 6, 10, .9)); transition: transform .12s ease-out; }
+.fc-modal .fc-abas button[aria-selected="true"] { border-image-source: url(../ui/placa-ouro.svg) !important; color: #2a1606 !important; text-shadow: 0 1px 0 rgba(255, 246, 210, .6); }
+.fc-modal .fc-abas button:not([aria-selected="true"]):hover { color: #fff1c2 !important; transform: translateY(-1px); }
+.fc-modal .fc-abas button:active { transform: translateY(2px); }
+/* som e ajustes: medalhões redondos; o som ligado tem aro de ouro */
+.fc-modal .fc-topo-botao { min-width: 46px; min-height: 46px; padding: 0 !important; border: 0 !important; border-radius: 50% !important; background: url(../ui/botao-ferro.svg) center / contain no-repeat !important; box-shadow: none !important;
+  color: #e6dcc6 !important; filter: drop-shadow(0 3px 0 rgba(8, 6, 10, .9)); }
+.fc-modal .fc-topo-botao[aria-pressed="true"] { background-image: url(../ui/botao-ouro.svg) !important; color: #fff1c2 !important; }
+.fc-modal .fc-topo-botao .fc-topo-botao__texto { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.fc-modal .fc-topo-botao:hover { transform: translateY(-1px) rotate(-8deg); }
+.fc-modal .fc-topo-botao:active { transform: translateY(2px); }
+@media (max-width: 640px) {
+  /* no celular o medalhão fica dentro da placa, para não invadir a vida do herói */
+  .fc-modal .fc-principal { min-width: 0; height: 54px; padding: 0 8px 0 36px !important; margin-left: 0; border-width: 12px !important; border-image-width: 12px !important; }
+  .fc-modal .fc-principal::before { left: -10px; width: 44px; height: 44px; }
+  .fc-modal .fc-principal__icone { left: -1px; width: 26px !important; height: 26px !important; }
+  .fc-modal .fc-principal__texto span { font-size: 16px; letter-spacing: .06em; }
+  .fc-modal .fc-principal__texto small { font-size: 10px; letter-spacing: .06em; }
+  .fc-modal .fc-abas { gap: 4px; }
+  .fc-modal .fc-abas button { min-height: 38px; padding: 0 4px !important; border-width: 10px !important; border-image-width: 10px !important; font-size: 11px; letter-spacing: .06em; }
+  .fc-modal .fc-abas .fc-sprite--icone { display: none; }
+  .fc-modal .fc-topo-botao { min-width: 40px; min-height: 40px; }
+}
+@media (max-width: 640px) {
+  /* a vida do herói: o número vai para dentro da barra, sempre visível */
+  .fc-modal .fc-heroi__dados .fc-vida { position: relative; }
+  .fc-modal .fc-heroi__dados .fc-vida b { position: absolute; right: 6px; top: 50%; transform: translateY(-50%); min-width: 0; font-size: 13px; line-height: 1; z-index: 2; text-shadow: 0 1px 0 #000, 0 0 4px #000; }
+  .fc-modal .fc-heroi__dados .fc-vida b small { font-size: 10px; }
+  .fc-modal .fc-heroi__dados .fc-vida__trilho { flex: 1; }
+  /* a plataforma desce menos no celular, para não invadir o painel do herói */
+  .fc-modal .fc-mesa[data-tabuleiro="plataforma"] .fc-mesa__tampo { height: 108%; }
+}
