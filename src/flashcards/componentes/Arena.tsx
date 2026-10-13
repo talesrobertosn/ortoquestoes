@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { gravar, ler } from '../../estado/armazenamento'
 import { href, navegar } from '../../util/rotas'
 import { BARALHO_DEMO } from '../dados/baralhoDemo'
@@ -19,7 +19,8 @@ import {
   lembrarVisto, RECORDES_VAZIOS, registrarResposta, type Bestiario, type Recordes, type RegistroFlashcard,
 } from '../progresso'
 import { AjudaDoPreceptor, Loja, Portas, Sabio, TituloChefe } from './Salas'
-import { Cartao } from './Cartao'
+import { Cartao, familiasDe } from './Cartao'
+import { ComChaves } from './Chaves'
 import { Cenario, TampoMesa } from './Cenario'
 import { climaDoAndar } from '../efeitos/pintura'
 import { Estudo } from './Estudo'
@@ -48,6 +49,8 @@ const ROTULO_CURA: Record<MotivoCura, string> = {
 }
 
 /** Onde cada modo guarda a partida em andamento. */
+/** Sprites desenhados menores que o Golem: ganham escala maior na arena e na apresentação. */
+const PEQUENOS = new Set<string>(['serpente', 'raptor', 'gosma', 'mimico', 'corvo', 'morcego', 'goblin', 'esqueleto', 'escaravelho', 'aranha', 'cavaleiro', 'espectro', 'harpia', 'mao'])
 const CHAVE_DO_MODO: Record<Modo, string> = { masmorra: CHAVE_PARTIDA, torre: CHAVE_PARTIDA_TORRE }
 const lerAltar = () => ({ ...ALTAR_VAZIO, ...ler<Partial<EstadoAltar>>(CHAVE_ALTAR, {}) }) as EstadoAltar
 /** Nome do jogo e dos modos (usado no topo e na Entrada). */
@@ -186,7 +189,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   const [selecionada, definirSelecionada] = useState<number | null>(null)
   const [faixa, definirFaixa] = useState<Faixa>(null)
   const [apresentacao, definirApresentacao] = useState<{ inimigo: Inimigo; ciclo: number; andar: number } | null>(null)
-  const [flutuantes, definirFlutuantes] = useState<Flutuante[]>([])
+  const refFlutuantes = useRef<HTMLDivElement>(null)
   const [ampliada, definirAmpliada] = useState<{ src: string; legenda: string } | null>(null)
   const [ajustesAbertos, definirAjustesAbertos] = useState(false)
   const [painel, definirPainel] = useState<'heroi' | 'inimigo' | null>(null)
@@ -230,7 +233,8 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   const chefeEmCena = modo === 'batalha' && adversarioEmCena.chefe
   const trilha = modo === 'estudo' ? 'biblioteca'
     : partida.fase === 'loja' ? 'loja' : partida.fase === 'sabio' ? 'sabio'
-    : chefeEmCena ? (adversarioEmCena.sprite === 'dragao' ? 'dragao' : 'chefe') : cenarioVisivel
+    : chefeEmCena ? (adversarioEmCena.sprite === 'dragao' ? 'dragao' : 'chefe')
+    : modo === 'batalha' && adversarioEmCena.nivel === 'elite' ? 'elite' : cenarioVisivel
   useEffect(() => { tocarMusica(trilha) }, [trilha])
   useEffect(() => () => { tocarAmbiente(null); tocarMusica(null) }, [])
 
@@ -254,9 +258,19 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   }, [])
 
   const carta = partida.atual ? motor.carta(partida.atual.id) : null
+  // família da carta da mesa: imagem, anatomia, revisão (errou da última vez) e duelo de chefe
+  const familiasCarta = useMemo(() => {
+    if (!carta) return []
+    const errou = ler<Record<string, RegistroFlashcard>>(CHAVE_REGISTROS, {})[carta.id]?.c === false
+    return familiasDe(carta, [...(errou ? ['revisao' as const] : []), ...(motor.inimigoAtual(partida).chefe ? ['chefe' as const] : [])])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [carta?.id, partida.andar])
   const inimigo = motor.inimigoAtual(partida)
   const intencao = motor.intencao(partida)
   const atributos = motor.atributos(partida)
+
+  const ampliarImagem = useCallback((i: { src: string; legenda: string }) => { tocar('selecao'); definirAmpliada(i) }, [])
+  const somDoGiro = useCallback(() => tocar('giro'), [])
 
   /* ---------- Diretor de efeitos ---------- */
   const fator = (reduzido ? 0.3 : 1) * (ajustes.velocidade === 'rapida' ? 0.6 : 1)
@@ -269,8 +283,17 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
     const id = ++idFlutuante.current
     const margem = Math.min(window.innerWidth / 2, 40 + texto.length * 9)
     const xx = Math.min(Math.max(x + (extra?.x ?? 0), margem), window.innerWidth - margem)
-    definirFlutuantes((f) => [...f, { id, x: xx, y: Math.max(40, y + (extra?.y ?? 0)), texto, tom, grande: extra?.grande, rotulo: extra?.rotulo }])
-    window.setTimeout(() => definirFlutuantes((f) => f.filter((v) => v.id !== id)), extra?.grande ? 1500 : 1150)
+    // direto no DOM: um número de dano não pode redesenhar a arena inteira (era o que travava o golpe)
+    const camada = refFlutuantes.current
+    if (!camada) return
+    const no = document.createElement('span')
+    no.className = 'fc-flutua' + (extra?.grande ? ' fc-flutua--grande' : '')
+    no.style.left = xx + 'px'; no.style.top = Math.max(40, y + (extra?.y ?? 0)) + 'px'; no.style.color = tom
+    no.dataset.id = String(id)
+    no.textContent = texto
+    if (extra?.rotulo) { const r = document.createElement('small'); r.textContent = extra.rotulo; no.appendChild(r) }
+    camada.appendChild(no)
+    window.setTimeout(() => no.remove(), extra?.grande ? 1500 : 1150)
   }, [])
 
   const tremer = useCallback((forca: number) => {
@@ -284,7 +307,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   }, [])
 
   // Só no desenvolvimento: os testes de tela leem o estado para escolher a alternativa certa ou errada.
-  useEffect(() => { if (import.meta.env.DEV) (window as unknown as { __torneio: unknown }).__torneio = { partida, certa: partida.atual ? partida.atual.ordem.indexOf(motor.carta(partida.atual.id).certa) : -1, definir: (p: Partida) => { partidaRef.current = p; definirPartida(p); sincronizar(p) } } })
+  useEffect(() => { if (import.meta.env.DEV) (window as unknown as { __torneio: unknown }).__torneio = { partida, certa: partida.atual ? partida.atual.ordem.indexOf(motor.carta(partida.atual.id).certa) : -1, definir: (p: Partida) => { partidaRef.current = p; definirPartida(p); sincronizar(p) }, cena: definirCenarioVisivel } })
 
   const pular = useCallback(() => {
     geracao.current++
@@ -359,11 +382,13 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
           const topoCarta = caixa ? { x: caixa.left + caixa.width / 2, y: caixa.top + 24 } : centro(refCarta.current)
           if (alt) P?.carga(centro(alt), cor, 14, 60)
           definirAtacando(true)
+          posar(refHeroi, 'preparo', 380)
           tocar('carga')
           P?.carga(topoCarta, cor, forte ? 34 : 22, forte ? 120 : 90)
           if (!(await esperar(320, g))) return
           // 4-6: disparo com rastro; a luz passa pela mesa
           const para = centro(refInimigo.current)
+          posar(refHeroi, 'golpe', 520)
           tocar('disparo', forte ? 1.2 : 1)
           window.setTimeout(() => { if (g === geracao.current) definirMostrado((m) => ({ ...m, revelada: true })) }, 240 * fator)
           if (P) await P.projetil(topoCarta, para, { cor, nucleo: '#fff6d0', tam: 12 + Math.min(10, combo * 2) + (forte ? 6 : 0), duracao: forte ? 0.46 : 0.38, rastro: forte ? 6 : 3 })
@@ -533,6 +558,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
           if (caixa) { P?.dissolver(caixa, PALETA_PERSONAGEM[quemInimigo]); P?.fragmentos(centro(refInimigo.current), PALETA_PERSONAGEM[quemInimigo], 40, 520) }
           P?.clarao(centro(refInimigo.current), '#ffe08a', 500, 1, 0.8)
           definirMostrado((m) => ({ ...m, inimigoCaiu: true }))
+          posar(refHeroi, 'vitoria', 1800)
           tocar(ev.chefe ? 'vitoria-chefe' : 'derrota-inimigo', 1, quemInimigo)
           window.setTimeout(() => tocar(ev.chefe ? 'jingle-chefe' : 'jingle-vitoria'), 500 * fator)
           lembrarBestiario(adv.id, true)
@@ -851,7 +877,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   const pistas = partida.encaixes.find((e) => e.tipo === 'pista')?.carga ?? 0
   const rodadasFuria = Math.max(0, inimigo.paciencia - partida.inimigo.rodadas)
   // os adversários novos são desenhados maiores; a Serpente ainda está no tamanho antigo
-  const pequeno = inimigo.sprite === 'serpente' || inimigo.sprite === 'raptor' || inimigo.sprite === 'gosma' || inimigo.sprite === 'mimico'
+  const pequeno = PEQUENOS.has(inimigo.sprite)
   const escalaInimigo = (pequeno ? (faixaTela === 'larga' ? 2.5 : faixaTela === 'celular' ? 1.3 : 1.8) : faixaTela === 'larga' ? 2 : faixaTela === 'celular' ? 1 : 1.5) * (inimigo.variante === 'rainha' ? 1.25 : 1)
   const escalaHeroi = faixaTela === 'celular' ? 1.5 : faixaTela === 'baixa' ? 2 : 3
   const botao = partida.fase === 'pergunta'
@@ -975,12 +1001,13 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
                     carta={carta}
                     virada={mostrado.revelada && partida.fase !== 'pergunta'}
                     dicaFrente={faixaTela === 'celular' ? 'Escolha a resposta abaixo' : 'Escolha a resposta na sua mão · teclas 1 a 4'}
-                    aoAmpliar={(i) => { tocar('selecao'); definirAmpliada(i) }}
+                    aoAmpliar={ampliarImagem}
                     resultado={partida.fase !== 'pergunta' ? mostrado.resultado : null}
                     assistida={partida.atual.assistida}
-                    aoGirar={() => tocar('giro')}
+                    aoGirar={somDoGiro}
                     reduzido={reduzido}
                     classe={(atacando ? 'fc-carta--ataca' : '') + (partida.atual.brilhante ? ' fc-carta--brilhante' : '')}
+                    familias={familiasCarta}
                   />
                 )}
               </div>
@@ -989,12 +1016,13 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
             {/* Você */}
             <section className="fc-jogador" aria-label="Você">
               <div className="fc-heroi">
-                <Ator ref={refHeroi} quem="heroi" variante={partida.estagio > 1 ? `heroi-${partida.estagio}` : undefined} escala={escalaHeroi} classe={`fc-ator--heroi fc-ator--estagio-${partida.estagio}` + (mostrado.heroiCaiu ? ' fc-ator--caiu' : '')}>
+                <Ator ref={refHeroi} quem="heroi" variante={partida.estagio > 1 ? `heroi-${partida.estagio}` : undefined} escala={escalaHeroi * (1 + 0.06 * (partida.estagio - 1))} classe={`fc-ator--heroi fc-ator--estagio-${partida.estagio}` + (mostrado.heroiCaiu ? ' fc-ator--caiu' : '')}>
                   {partida.encaixes.some((e) => e.tipo === 'escudo') && <span className="fc-bolha-escudo" />}
                   <button type="button" className="fc-ator__toque" aria-label="Ver o seu herói: atributos, poderes e relíquias" onClick={() => { tocar('selecao'); definirPainel('heroi') }} />
                 </Ator>
                 <div className="fc-heroi__dados">
-                  <div className="fc-heroi__nome"><Sprite nome="coracao" className="fc-sprite--coracao" /><strong>Você</strong>
+                  <div className="fc-heroi__nome"><Sprite nome="coracao" className="fc-sprite--coracao" /><strong title={ESTAGIOS[partida.estagio - 1].nome}>Você</strong>
+                    <em className={`fc-estagio fc-estagio--${partida.estagio}`} title={`Estágio ${partida.estagio}: ${ESTAGIOS[partida.estagio - 1].nome}`}>{['I', 'II', 'III', 'IV', 'V', 'VI'][partida.estagio - 1]}</em>
                     <span className="fc-bolsa fc-bolsa--celular" aria-label={`${partida.ouro} moedas`}><Sprite nome="moeda" className="fc-sprite--icone" /><b>{partida.ouro}</b></span>
 
                     <span className={`fc-combo${partida.sequencia >= COMBO_MINIMO ? ' fc-combo--ativo' : ''}`} aria-label={`Sequência de ${partida.sequencia} acertos`}>
@@ -1044,7 +1072,9 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
 
               <div className="fc-acao">
                 <button type="button" className={`fc-principal ${botao.classe}`} disabled={!botao.ativo} onClick={() => { tocar('confirmar'); botao.acao() }}>
-                  <span>{botao.texto}</span>{botao.sub && <small>{botao.sub}</small>}
+                  <span className="fc-principal__runa" aria-hidden="true" />
+                  <Sprite nome={partida.fase === 'resposta' ? 'porta' : 'espada'} className="fc-sprite--icone fc-principal__icone" />
+                  <span className="fc-principal__texto"><span>{botao.texto}</span>{botao.sub && <small>{botao.sub}</small>}</span>
                 </button>
                 <p className="fc-dica" aria-live="polite">
                   {partida.fase === 'pergunta' && (pistas > 0 ? `Pista ×${pistas}: toque no pergaminho (P)` : selecionada === null ? 'Toque numa alternativa' : 'Toque de novo ou em Atacar')}
@@ -1056,13 +1086,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
         )}
 
         <canvas ref={canvasPalco} className="fc-palco-efeitos" aria-hidden="true" />
-        <div className="fc-flutuantes" aria-hidden="true">
-          {flutuantes.map((f) => (
-            <span key={f.id} className={'fc-flutua' + (f.grande ? ' fc-flutua--grande' : '')} style={{ left: f.x, top: f.y, color: f.tom }}>
-              {f.texto}{f.rotulo && <small>{f.rotulo}</small>}
-            </span>
-          ))}
-        </div>
+        <div className="fc-flutuantes" aria-hidden="true" ref={refFlutuantes} />
         {lamina > 0 && <div className="fc-lamina" key={'l-' + lamina} aria-hidden="true"><i /></div>}
         <div className="fc-borda-vermelha" key={'v-' + vermelho} data-ativo={vermelho > 0 ? 1 : 0} aria-hidden="true" />
         {transicao && <div className="fc-transicao" aria-hidden="true" />}
@@ -1083,7 +1107,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
           <div className={`fc-apresenta${apresentacao.inimigo.chefe ? ' fc-apresenta--chefe' : ''}`} role="dialog" aria-label={`Andar ${apresentacao.andar}: ${apresentacao.inimigo.nome}`} onClick={() => definirApresentacao(null)}>
             <div className="fc-apresenta__cartaz">
               <span className="fc-apresenta__andar">Andar {apresentacao.andar}{torre ? ' da Torre' : apresentacao.ciclo ? ` · ato ${apresentacao.ciclo + 1}` : ''}{apresentacao.inimigo.chefe ? ' · Chefe' : apresentacao.inimigo.nivel === 'elite' ? ' · Elite' : ''}</span>
-              <div className="fc-apresenta__palco"><Ator quem={apresentacao.inimigo.sprite as Personagem} variante={apresentacao.inimigo.variante} escala={(['serpente', 'raptor', 'gosma', 'mimico'].includes(apresentacao.inimigo.sprite) ? 1.4 : apresentacao.inimigo.sprite === 'dragao' ? 0.8 : 1) * (faixaTela === 'celular' ? 1.6 : 2.4)} chefe={apresentacao.inimigo.chefe} /></div>
+              <div className="fc-apresenta__palco"><Ator quem={apresentacao.inimigo.sprite as Personagem} variante={apresentacao.inimigo.variante} escala={(PEQUENOS.has(apresentacao.inimigo.sprite) ? 1.4 : apresentacao.inimigo.sprite === 'dragao' ? 0.8 : 1) * (faixaTela === 'celular' ? 1.6 : 2.4)} chefe={apresentacao.inimigo.chefe} /></div>
               <strong>{apresentacao.inimigo.nome}</strong>
               <em>{apresentacao.inimigo.lema}</em>
               <p>{apresentacao.inimigo.habilidade}</p>
@@ -1213,7 +1237,7 @@ function Painel({ tipo, partida, intencao, aoFechar }: { tipo: 'heroi' | 'inimig
             </dl>
             <h3>Habilidades</h3>
             <ul className="fc-lista-efeitos">
-              <li><span><strong>Estilo</strong><small>{i.habilidade}</small></span></li>
+              <li><span><strong>Estilo</strong><small><ComChaves texto={i.habilidade} /></small></span></li>
               {i.porErroSeguido > 0 && <li><span><strong>{i.chefe ? 'Pressão' : 'Veneno'}</strong><small>+{i.porErroSeguido} de dano por erro seguido.</small></span></li>}
               {i.regenera && <li><span><strong>Regeneração</strong><small>Recupera {i.regenera.porRodada} por rodada, até {i.regenera.total} neste confronto (faltam {Math.max(0, i.regenera.total - partida.inimigo.regenerado)}).</small></span></li>}
               {i.rajada && i.rajada > 1 && <li><span><strong>Mordidas</strong><small>O golpe vem em {i.rajada} partes e passa pela Barreira reativa (o Escudo arcano ainda bloqueia).</small></span></li>}
@@ -1274,7 +1298,7 @@ function Recompensas({ partida, aoEscolher, aoEncerrar, rapido }: { partida: Par
                 <span className="fc-recompensa__fita">{d.requer ? 'Bênção em dupla' : d.patrono ? 'Bênção' : nomeTipo[d.tipo]} · {nomeRaridade[d.raridade]}</span>
                 <span className="fc-recompensa__pedestal"><span className="fc-recompensa__icone"><Sprite nome={d.icone} /></span></span>
                 <strong>{d.nome}</strong>
-                <span className="fc-recompensa__texto">{d.texto}</span>
+                <span className="fc-recompensa__texto"><ComChaves texto={d.texto} /></span>
                 <small className="fc-recompensa__detalhe">{d.detalhe}</small>
                 {(d.patrono || d.requer) && <span className="fc-recompensa__patrono">{(d.requer ?? [d.patrono!]).map((x) => <em key={x} style={{ ['--cor' as string]: PATRONOS[x].cor }}><Sprite nome={PATRONOS[x].icone} className="fc-sprite--icone" />{PATRONOS[x].nome}</em>)}</span>}
                 {copias > 0 && <small className="fc-recompensa__aviso">Você já tem {d.tipo === 'reliquia' ? `${copias} cópia${copias > 1 ? 's' : ''}` : `${copias} carga${copias > 1 ? 's' : ''}`}</small>}

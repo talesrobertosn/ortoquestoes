@@ -25,9 +25,21 @@ export type Som =
   | 'jingle-vitoria' | 'jingle-derrota' | 'jingle-tesouro' | 'jingle-patamar' | 'jingle-topo' | 'jingle-chefe'
 
 export type Ambiente = 'campo' | 'masmorra' | 'salao' | 'biblioteca' | 'covil' | 'torre'
-export type Musica = 'campo' | 'masmorra' | 'salao' | 'biblioteca' | 'chefe' | 'covil' | 'torre' | 'loja' | 'sabio' | 'entrada' | 'dragao'
+  | 'forja' | 'coliseu' | 'jardim' | 'laboratorio' | 'caverna' | 'templo' | 'passarela' | 'catacumba' | 'treino' | 'arquivo'
+export type Musica = Ambiente | 'chefe' | 'elite' | 'loja' | 'sabio' | 'entrada' | 'dragao'
 /** Timbre do golpe de cada adversário. */
-export type Timbre = 'golem' | 'serpente' | 'guardiao' | 'heroi' | 'dragao' | 'raptor' | 'gosma' | 'mimico' | 'sabio' | 'caixeira' | undefined
+export type Timbre = string | undefined
+/**
+ * Família sonora de cada adversário. Os arquétipos novos herdam uma receita
+ * próxima (o Leviatã chicoteia como serpente, o Ent pesa como golem) ou ganham
+ * a sua: asas (alado), ossos que estalam, lamento espectral, quitina de inseto.
+ */
+const FAMILIA_SOM: Record<string, string> = {
+  corvo: 'alado', morcego: 'alado', harpia: 'alado', esqueleto: 'osso', espectro: 'espectral',
+  cavaleiro: 'guardiao', rei: 'guardiao', arconte: 'guardiao', mao: 'serpente', leviata: 'serpente',
+  aranha: 'inseto', escaravelho: 'inseto', goblin: 'raptor', quimera: 'dragao', ent: 'golem',
+}
+const familiaSom = (t: Timbre) => (t && FAMILIA_SOM[t]) || t
 
 let ctx: AudioContext | null = null
 let saida: GainNode, efeitos: GainNode, ambiente: GainNode, musica: GainNode, reverb: ConvolverNode, envio: GainNode
@@ -156,9 +168,10 @@ function sortear(categoria: string, n: number) {
 }
 
 /** Impacto em camadas, com quatro receitas que se alternam; a força escala tudo. */
-function impacto(forca: number, timbre?: Timbre) {
+function impacto(forca: number, t?: Timbre) {
+  const timbre = familiaSom(t)
   const f = forca * varia(1, 0.1)
-  const receita = timbre === 'golem' ? 0 : timbre === 'guardiao' ? 1 : sortear('impacto', 4)
+  const receita = timbre === 'golem' || timbre === 'inseto' ? 0 : timbre === 'guardiao' || timbre === 'osso' ? 1 : timbre === 'espectral' ? 3 : sortear('impacto', 4)
   ruido(0, 0.05, 0.5 * f, varia(4200, 0.15), 'highpass', undefined, 0.7, false)   // estalo
   nota(varia(85 + 30 * f, 0.1), 0, 0.26 + 0.16 * f, 'sine', 0.6 * f, 36)         // corpo grave
   switch (receita) {
@@ -196,8 +209,9 @@ function fanfarra(tonica: number, bpm: number, melodia: Array<[number, number, n
   if (epica) for (let i = 0; i < acordes.length; i++) { nota(70, i * b, 0.4, 'sine', 0.22, 45); if (i === acordes.length - 1) ruido(i * b, 1.4, 0.18, 7000, 'highpass', 3000, 0.6) }
 }
 
-export function tocar(som: Som, forca = 1, timbre?: Timbre) {
+export function tocar(som: Som, forca = 1, t?: Timbre) {
   if (!ligado || !ctx || ctx.state !== 'running') return
+  const timbre = familiaSom(t)
   switch (som) {
     case 'hover': nota(varia(1800, 0.1), 0, 0.05, 'sine', 0.03, undefined, false); break
     case 'selecao': ruido(0, 0.08, 0.1, 3000, 'bandpass', 5000, 2); nota(varia(880, 0.04), 0, 0.12, 'triangle', 0.09); break
@@ -227,6 +241,10 @@ export function tocar(som: Som, forca = 1, timbre?: Timbre) {
       else if (timbre === 'mimico') { [0, 0.08, 0.16].forEach((d) => { ruido(d, 0.05, 0.22, 900, 'bandpass', undefined, 3, false); nota(varia(2200), d, 0.08, 'triangle', 0.04) }) }
       else if (timbre === 'serpente') { ruido(0, 0.5, 0.18, 5000, 'highpass', 7000, 0.6); nota(varia(300), 0, 0.5, 'sawtooth', 0.04, 600) }
       else if (timbre === 'guardiao') { ruido(0, 0.5, 0.16, 800, 'bandpass', 3200, 2); nota(varia(98), 0, 0.5, 'sawtooth', 0.12, 196); nota(varia(147), 0, 0.5, 'sawtooth', 0.06, 294) }
+      else if (timbre === 'alado') { [0, 0.14, 0.28].forEach((d) => ruido(d, 0.12, 0.16, 700, 'bandpass', 1400, 1.2)); nota(varia(1400), 0.3, 0.25, 'sawtooth', 0.04, 2200) }
+      else if (timbre === 'osso') { [0, 0.07, 0.15, 0.2].forEach((d) => { ruido(d, 0.04, 0.2, varia(2800, 0.2), 'bandpass', undefined, 5, false); nota(varia(900, 0.15), d, 0.04, 'square', 0.03) }) }
+      else if (timbre === 'espectral') { nota(varia(440), 0, 0.8, 'sine', 0.06, 330); nota(varia(466), 0.05, 0.75, 'sine', 0.05, 311); ruido(0, 0.8, 0.08, 3000, 'bandpass', 900, 3) }
+      else if (timbre === 'inseto') { for (let i = 0; i < 6; i++) ruido(i * 0.045, 0.03, 0.16, varia(4200, 0.2), 'bandpass', undefined, 6, false) }
       else { nota(varia(70), 0, 0.45, 'sawtooth', 0.14, 140); ruido(0, 0.45, 0.16, 300, 'lowpass', 900) }
       break
     case 'golpe-inimigo':
@@ -236,6 +254,10 @@ export function tocar(som: Som, forca = 1, timbre?: Timbre) {
       else if (timbre === 'mimico') { ruido(0, 0.06, 0.5, 1200, 'bandpass', undefined, 2, false); [2600, 3100, 2300].forEach((f, i) => nota(varia(f, 0.05), 0.02 + i * 0.02, 0.2, 'triangle', 0.05)); nota(varia(110), 0, 0.2, 'square', 0.08, 60) }
       else if (timbre === 'serpente') { ruido(0, 0.18, 0.35, 3000, 'bandpass', 800, 1.5); ruido(0.02, 0.5, 0.12, 6000, 'highpass', undefined, 0.6) }
       else if (timbre === 'guardiao') { ruido(0, 0.32, 0.36, 2600, 'bandpass', 500, 1.2); nota(varia(160), 0, 0.2, 'sawtooth', 0.1, 60) }
+      else if (timbre === 'alado') { ruido(0, 0.2, 0.3, 1800, 'bandpass', 600, 1); nota(varia(1800), 0, 0.18, 'sawtooth', 0.05, 900); ruido(0.05, 0.08, 0.28, 3800, 'bandpass', undefined, 2, false) }
+      else if (timbre === 'osso') { ruido(0, 0.06, 0.45, 2400, 'bandpass', undefined, 3, false); ruido(0.04, 0.2, 0.24, 1200, 'bandpass', 400, 2); nota(varia(300), 0, 0.12, 'square', 0.06, 120) }
+      else if (timbre === 'espectral') { ruido(0, 0.5, 0.3, 5200, 'bandpass', 600, 2); nota(varia(660), 0, 0.4, 'sine', 0.07, 220); nota(varia(990), 0, 0.3, 'triangle', 0.04, 330) }
+      else if (timbre === 'inseto') { ruido(0, 0.08, 0.4, 3000, 'bandpass', undefined, 4, false); ruido(0.06, 0.18, 0.2, 1500, 'bandpass', 600, 2); nota(varia(180), 0, 0.18, 'square', 0.05, 90) }
       else { ruido(0, 0.3, 0.36, 1600, 'bandpass', 300, 1.1); nota(varia(120), 0, 0.26, 'sawtooth', 0.1, 50) }
       break
     case 'dano': impacto(0.95, timbre); nota(varia(110), 0.02, 0.4, 'square', 0.07, 55); break
@@ -303,6 +325,16 @@ export function tocarAmbiente(nome: Ambiente | null) {
   else if (nome === 'salao') { camada(240, 0.7, 0.3, 0.06); camada(3000, 4, 0.025, 0.6, 'bandpass') }
   else if (nome === 'covil') { camada(110, 0.9, 0.55, 0.04); camada(700, 2, 0.06, 0.3, 'bandpass') }
   else if (nome === 'torre') { camada(900, 0.5, 0.25, 0.11); camada(2600, 1.5, 0.05, 0.2, 'bandpass') }
+  else if (nome === 'forja') { camada(140, 0.9, 0.45, 0.07); camada(900, 2.5, 0.05, 0.5, 'bandpass') }
+  else if (nome === 'coliseu') { camada(700, 0.8, 0.22, 0.09, 'bandpass'); camada(260, 0.6, 0.2, 0.05) }
+  else if (nome === 'jardim') { camada(600, 0.5, 0.22, 0.1); camada(4200, 2, 0.02, 0.3, 'bandpass') }
+  else if (nome === 'laboratorio') { camada(180, 4, 0.18, 0.02, 'bandpass'); camada(5200, 6, 0.012, 0.9, 'bandpass') }
+  else if (nome === 'caverna') { camada(120, 0.7, 0.5, 0.03); camada(1400, 3, 0.03, 0.2, 'bandpass') }
+  else if (nome === 'templo') { camada(420, 0.6, 0.26, 0.06); camada(1900, 1.5, 0.05, 0.15, 'bandpass') }
+  else if (nome === 'passarela') { camada(700, 0.5, 0.4, 0.14); camada(2200, 1, 0.08, 0.25, 'bandpass') }
+  else if (nome === 'catacumba') { camada(140, 0.8, 0.42, 0.04); camada(2600, 4, 0.02, 0.5, 'bandpass') }
+  else if (nome === 'treino') { camada(520, 0.6, 0.28, 0.08); camada(1700, 1.2, 0.05, 0.12, 'bandpass') }
+  else if (nome === 'arquivo') { camada(260, 0.5, 0.16, 0.03); camada(3600, 5, 0.018, 0.6, 'bandpass') }
   else { camada(300, 0.5, 0.18, 0.04); camada(3200, 5, 0.02, 0.7, 'bandpass') }
   // estalos de chama e madeira, pássaros no campo
   let vivo = true
@@ -310,7 +342,14 @@ export function tocarAmbiente(nome: Ambiente | null) {
     if (!vivo || !ctx) return
     if (nome === 'covil') { const k = Math.random(); ruido(0, 0.3 + k * 0.4, 0.04 + k * 0.05, 300 + k * 400, 'lowpass', 120, 1, false, sai); if (k > 0.7) ruido(0, 0.05, 0.04, 3000, 'bandpass', undefined, 3, false, sai) }
     else if (nome === 'torre') { if (Math.random() < 0.25) { const f = 1800 + Math.random() * 900; nota(f, 0, 0.1, 'sine', 0.01, f * 1.2, false, sai) } }
-    else if (nome === 'campo') { if (Math.random() < 0.35) { const f = 2400 + Math.random() * 1600; nota(f, 0, 0.08, 'sine', 0.012, f * 1.3, false, sai); nota(f * 1.1, 0.1, 0.07, 'sine', 0.01, f * 1.4, false, sai) } }
+    else if (nome === 'forja') { if (Math.random() < 0.3) { const f = 1900 + Math.random() * 500; nota(f, 0, 0.5, 'triangle', 0.018, undefined, false, sai); nota(f * 2.7, 0, 0.3, 'sine', 0.008, undefined, false, sai); ruido(0, 0.04, 0.05, 3000, 'bandpass', undefined, 2, false, sai) } else ruido(0, 0.2, 0.03, 400, 'lowpass', 150, 1, false, sai) }
+    else if (nome === 'caverna' || nome === 'catacumba') { if (Math.random() < 0.4) { const f = 1200 + Math.random() * 1400; nota(f, 0, 0.12, 'sine', 0.02, f * 0.5, true, sai) } }
+    else if (nome === 'laboratorio') { if (Math.random() < 0.45) { const f = 500 + Math.random() * 700; nota(f, 0, 0.06, 'sine', 0.012, f * 1.6, false, sai) } else if (Math.random() < 0.2) nota(1760, 0, 0.05, 'square', 0.005, undefined, false, sai) }
+    else if (nome === 'coliseu') { if (Math.random() < 0.15) ruido(0, 1.2, 0.05, 900, 'bandpass', 1400, 0.8, false, sai) }
+    else if (nome === 'passarela') { if (Math.random() < 0.3) ruido(0, 1.4, 0.06, 500, 'bandpass', 1800, 1.4, false, sai); if (Math.random() < 0.2) { const k = Math.random(); ruido(0, 0.08, 0.03, 900 + k * 300, 'bandpass', undefined, 4, false, sai) } }
+    else if (nome === 'templo') { if (Math.random() < 0.12) { const f = 880 * (Math.random() < 0.5 ? 1 : 1.5); nota(f, 0, 2.2, 'sine', 0.008, undefined, true, sai) } }
+    else if (nome === 'arquivo') { if (Math.random() < 0.3) ruido(0, 0.25, 0.025, 4000, 'bandpass', 2000, 1.5, false, sai); else if (Math.random() < 0.15) nota(1568 + Math.random() * 800, 0, 0.9, 'sine', 0.006, undefined, true, sai) }
+    else if (nome === 'campo' || nome === 'jardim' || nome === 'treino') { if (Math.random() < 0.35) { const f = 2400 + Math.random() * 1600; nota(f, 0, 0.08, 'sine', 0.012, f * 1.3, false, sai); nota(f * 1.1, 0.1, 0.07, 'sine', 0.01, f * 1.4, false, sai) } }
     else { const k = Math.random(); ruido(0, 0.04 + k * 0.05, 0.03 + k * 0.04, 2000 + k * 2000, 'bandpass', undefined, 2, false, sai) }
     window.setTimeout(detalhe, 300 + Math.random() * 1600)
   }
@@ -364,6 +403,28 @@ const TEMAS: Record<Musica, Tema> = {
   sabio: { bpm: 66, tonica: 53, acordes: [[0, 4, 7], [2, 6, 9], [0, 4, 7], [-1, 2, 7]], arpejo: 'piano', bateria: null, pad: 'triangle', brilhoPad: 1800, escala: [0, 2, 4, 6, 7, 9, 11], melodia: 'misteriosa', timbreMelodia: 'sine' },
   // Entrada da Cripta: Ré menor dórico, portão antigo
   entrada: { bpm: 80, tonica: 50, acordes: [[0, 3, 7], [-2, 2, 5], [5, 9, 12], [0, 3, 7]], arpejo: 'semicolcheia', bateria: null, pad: 'sawtooth', brilhoPad: 700, escala: [0, 2, 3, 5, 7, 9, 10], melodia: 'misteriosa', timbreMelodia: 'triangle' },
+  // elite: Fá menor, pulsação marcada, um degrau abaixo do chefe
+  elite: { bpm: 126, tonica: 53, acordes: [[0, 3, 7], [-4, 0, 3], [-5, -2, 2], [-5, -1, 2]], arpejo: 'semicolcheia', bateria: 'tensa', pad: 'sawtooth', brilhoPad: 1100, escala: [0, 2, 3, 5, 7, 8, 11], melodia: 'heroica', timbreMelodia: 'sawtooth' },
+  // Forja da Osteossíntese: Lá menor, martelo em semicolcheia
+  forja: { bpm: 104, tonica: 45, acordes: [[0, 3, 7], [5, 8, 12], [-2, 2, 5], [3, 7, 10]], arpejo: 'semicolcheia', bateria: 'tensa', pad: 'sawtooth', brilhoPad: 700, escala: [0, 2, 3, 5, 7, 8, 10], melodia: 'heroica', timbreMelodia: 'square' },
+  // Coliseu do Acetábulo: Dó menor marcial, tambores de arena
+  coliseu: { bpm: 118, tonica: 48, acordes: [[0, 3, 7], [-4, 0, 3], [3, 7, 10], [-2, 2, 5]], arpejo: 'colcheia', bateria: 'epica', pad: 'sawtooth', brilhoPad: 1000, escala: [0, 2, 3, 5, 7, 8, 10], melodia: 'heroica', timbreMelodia: 'sawtooth' },
+  // Jardim das Fises: Sol maior pastoral, harpa e flauta
+  jardim: { bpm: 88, tonica: 55, acordes: [[0, 4, 7], [-3, 0, 4], [5, 9, 12], [2, 7, 11]], arpejo: 'piano', bateria: null, pad: 'triangle', brilhoPad: 1800, escala: [0, 2, 4, 7, 9], melodia: 'saltitante', timbreMelodia: 'sine' },
+  // Laboratório Biomecânico: Si menor, sequenciador e metrônomo
+  laboratorio: { bpm: 110, tonica: 47, acordes: [[0, 3, 7], [-5, -2, 2], [-4, 0, 3], [5, 8, 12]], arpejo: 'semicolcheia', bateria: 'leve', pad: 'square', brilhoPad: 900, escala: [0, 2, 3, 5, 7, 9, 10], melodia: 'misteriosa', timbreMelodia: 'square' },
+  // Caverna da Pseudoartrose: Fá sustenido frígio, lento e úmido
+  caverna: { bpm: 64, tonica: 42, acordes: [[0, 3, 7], [1, 5, 8], [-2, 1, 5], [0, 3, 7]], arpejo: 'colcheia', bateria: 'tensa', pad: 'sawtooth', brilhoPad: 450, escala: [0, 1, 3, 5, 7, 8, 10], melodia: 'misteriosa', timbreMelodia: 'triangle' },
+  // Templo do Escafoide: Ré com segunda aumentada, areia e sinos
+  templo: { bpm: 92, tonica: 50, acordes: [[0, 4, 7], [1, 5, 8], [-2, 1, 5], [0, 4, 7]], arpejo: 'piano', bateria: 'tensa', pad: 'triangle', brilhoPad: 1300, escala: [0, 1, 4, 5, 7, 8, 10], melodia: 'misteriosa', timbreMelodia: 'triangle' },
+  // Passarela Suspensa: Mi lídio, vento e altura
+  passarela: { bpm: 120, tonica: 52, acordes: [[0, 4, 7], [2, 6, 9], [-3, 0, 4], [2, 6, 9]], arpejo: 'colcheia', bateria: 'leve', pad: 'sawtooth', brilhoPad: 1400, escala: [0, 2, 4, 6, 7, 9, 11], melodia: 'heroica', timbreMelodia: 'triangle' },
+  // Cripta Óssea: Si bemol menor, órgão distante, sem bateria
+  catacumba: { bpm: 60, tonica: 46, acordes: [[0, 3, 7], [-4, 0, 3], [-7, -4, 0], [-5, -1, 2]], arpejo: 'piano', bateria: null, pad: 'sawtooth', brilhoPad: 520, escala: [0, 2, 3, 5, 7, 8, 11], melodia: 'misteriosa', timbreMelodia: 'sine' },
+  // Ala de Treino: Dó maior, animada, de quintal de quartel
+  treino: { bpm: 112, tonica: 48, acordes: [[0, 4, 7], [5, 9, 12], [7, 11, 14], [0, 4, 7]], arpejo: 'colcheia', bateria: 'leve', pad: 'triangle', brilhoPad: 1600, escala: [0, 2, 4, 5, 7, 9, 11], melodia: 'saltitante', timbreMelodia: 'square' },
+  // Biblioteca Ancestral: Mi bemol lídio, celesta e órgão
+  arquivo: { bpm: 72, tonica: 51, acordes: [[0, 4, 7], [2, 6, 9], [-3, 0, 4], [-1, 2, 7]], arpejo: 'piano', bateria: null, pad: 'triangle', brilhoPad: 2000, escala: [0, 2, 4, 6, 7, 9, 11], melodia: 'misteriosa', timbreMelodia: 'sine' },
   // dragões: Ré menor harmônica, rápido e grandioso
   dragao: { bpm: 148, tonica: 50, acordes: [[0, 3, 7], [-4, 0, 3], [1, 5, 8], [-5, -1, 2]], arpejo: 'semicolcheia', bateria: 'epica', pad: 'sawtooth', brilhoPad: 1500, escala: [0, 2, 3, 5, 7, 8, 11], melodia: 'epica', timbreMelodia: 'sawtooth' },
 }

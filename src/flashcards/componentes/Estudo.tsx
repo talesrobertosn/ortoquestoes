@@ -7,7 +7,7 @@ import { CHAVE_HISTORICO, CHAVE_RECORDES, CHAVE_REGISTROS, lembrarVisto, RECORDE
 import type { Flashcard } from '../tipos'
 import { autorizarFlashcard, FLASHCARDS_NO_SERVIDOR, type LimiteFlashcard } from '../servidor'
 import { href } from '../../util/rotas'
-import { Cartao } from './Cartao'
+import { Cartao, familiasDe } from './Cartao'
 import { Sprite } from './Sprite'
 
 type Avaliacao = 'errei' | 'hesitei' | 'sabia'
@@ -249,6 +249,7 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar }: { titulo: stri
           aoAmpliar={aoAmpliar}
           aoGirar={() => tocar('giro')}
           reduzido={reduzido}
+          familias={familiasDe(carta, ler<Record<string, RegistroFlashcard>>(CHAVE_REGISTROS, {})[carta.id]?.c === false ? ['revisao'] : [])}
         />
       </div>
       <div className="fc-estudo__botoes">

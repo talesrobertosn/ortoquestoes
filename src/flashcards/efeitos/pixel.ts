@@ -226,4 +226,5 @@ export const MAT = {
   cimento: { rampa: ['#f0f4f8', '#bcc8d4', '#8494a6', '#4e5a6c'], contorno: '#161e2a' },
   barba: { rampa: ['#ffffff', '#e0e0ea', '#acacbe', '#6e6e80'], contorno: '#22222e' },
   luz: { rampa: ['#ffffff', '#fff2c0', '#f2c45a', '#c28a2a'], contorno: '#5a3a08' },
+  pluma: { rampa: ['#6a7698', '#3e4664', '#24283e', '#12141f'], contorno: '#06070c' },
 } satisfies Record<string, Material>

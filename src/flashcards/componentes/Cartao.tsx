@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { memo, useEffect, useRef, useState } from 'react'
 import { recurso } from '../../config'
 import { href } from '../../util/rotas'
 import type { Flashcard } from '../tipos'
@@ -25,6 +25,19 @@ interface Props {
   rodapeVerso?: React.ReactNode
   /** Classe extra (por exemplo, o flashcard se erguendo no ataque). */
   classe?: string
+  /** Famílias visuais (imagem, anatomia, revisão, chefe): moldura e fita próprias, sem mudar a leitura. */
+  familias?: FamiliaCarta[]
+}
+
+export type FamiliaCarta = 'imagem' | 'anatomia' | 'revisao' | 'chefe'
+const FITA: Record<FamiliaCarta, string> = { imagem: 'Imagem', anatomia: 'Anatomia', revisao: 'Revisão', chefe: 'Duelo de chefe' }
+
+/** Família do flashcard a partir dos dados (a revisão e o chefe vêm de quem chama). */
+export function familiasDe(carta: Flashcard, extra: FamiliaCarta[] = []): FamiliaCarta[] {
+  const f: FamiliaCarta[] = []
+  if (carta.imagem) f.push('imagem')
+  if (/anatomia/i.test(carta.tipo) || carta.areaId === 'anatomia') f.push('anatomia')
+  return [...f, ...extra]
 }
 
 /**
@@ -78,7 +91,7 @@ function Figura({ img, aoAmpliar }: { img: { src: string; legenda: string }; aoA
  * troca a face e volta de -90°; assim o verso ocupa a altura que precisa e o
  * texto nunca aparece espelhado.
  */
-export function Cartao({ carta, virada, dicaFrente, aoTocar, aoAmpliar, chave, resultado, assistida, aoGirar, reduzido, rodapeVerso, classe }: Props) {
+export const Cartao = memo(function Cartao({ carta, virada, dicaFrente, aoTocar, aoAmpliar, chave, resultado, assistida, aoGirar, reduzido, rodapeVerso, classe, familias = [] }: Props) {
   const [lado, definirLado] = useState<'frente' | 'verso'>(virada ? 'verso' : 'frente')
   const [giro, definirGiro] = useState<'' | 'sai' | 'entra'>('')
   const [origemAberta, definirOrigem] = useState(false)
@@ -107,11 +120,15 @@ export function Cartao({ carta, virada, dicaFrente, aoTocar, aoAmpliar, chave, r
   const frente = lado === 'frente'
   return (
     <article
-      className={`fc-carta fc-carta--${carta.raridade}${giro ? ' fc-carta--' + giro : ''}${!frente ? ' fc-carta--verso' : ''}${resultado && !frente ? ' fc-carta--' + resultado : ''}${classe ? ' ' + classe : ''}`}
+      className={`fc-carta fc-carta--${carta.raridade}${giro ? ' fc-carta--' + giro : ''}${!frente ? ' fc-carta--verso' : ''}${resultado && !frente ? ' fc-carta--' + resultado : ''}${familias.map((f) => ' fc-carta--fam-' + f).join('')}${classe ? ' ' + classe : ''}`}
       key={chave}
       aria-label={`Flashcard: ${carta.assunto}`}
     >
       <div className="fc-carta__borda">
+        <span className="fc-carta__gema" aria-hidden="true" />
+        <span className="fc-carta__canto fc-carta__canto--1" aria-hidden="true" /><span className="fc-carta__canto fc-carta__canto--2" aria-hidden="true" />
+        <span className="fc-carta__canto fc-carta__canto--3" aria-hidden="true" /><span className="fc-carta__canto fc-carta__canto--4" aria-hidden="true" />
+        {familias.length > 0 && <span className="fc-carta__fitas">{familias.map((f) => <em key={f} className={`fc-fita fc-fita--${f}`}>{FITA[f]}</em>)}</span>}
         <div className="fc-carta__moldura">
           <header className="fc-carta__cabeca">
             <span className="fc-carta__emblema"><Sprite nome="brasao" /></span>
@@ -175,4 +192,4 @@ export function Cartao({ carta, virada, dicaFrente, aoTocar, aoAmpliar, chave, r
       </div>
     </article>
   )
-}
+})

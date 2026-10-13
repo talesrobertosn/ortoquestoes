@@ -70,11 +70,12 @@ export class Palco {
   constructor(canvas: HTMLCanvasElement) {
     this.canvas = canvas
     this.ctx = canvas.getContext('2d')!
+    this.canvas.style.visibility = 'hidden'
     this.redimensionar()
   }
 
   redimensionar() {
-    this.dpr = Math.min(window.devicePixelRatio || 1, telaDeToque() ? 1.5 : 2)
+    this.dpr = Math.min(window.devicePixelRatio || 1, telaDeToque() ? 1 : 1.5)
     this.canvas.width = Math.round(window.innerWidth * this.dpr)
     this.canvas.height = Math.round(window.innerHeight * this.dpr)
   }
@@ -87,10 +88,13 @@ export class Palco {
     chegadas.forEach((f) => f())
     cancelAnimationFrame(this.quadro); this.quadro = 0
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height)
+    this.canvas.style.visibility = 'hidden'
   }
 
   private animar() {
     if (this.quadro) return
+    // o canvas só entra na composição enquanto há efeito vivo (parado, é uma camada a menos por quadro)
+    this.canvas.style.visibility = 'visible'
     this.anterior = performance.now()
     const passo = (agora: number) => {
       const dt = Math.min(50, agora - this.anterior) / 1000
@@ -99,12 +103,15 @@ export class Palco {
       this.desenhar()
       const vivos = this.particulas.length + this.ondas.length + this.cortes.length + this.projeteis.length + this.claroes.length + this.raios.length
       this.quadro = vivos ? requestAnimationFrame(passo) : 0
-      if (!vivos) this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height)
+      if (!vivos) { this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height); this.canvas.style.visibility = 'hidden' }
     }
     this.quadro = requestAnimationFrame(passo)
   }
 
   private atualizar(dt: number) {
+    // teto de partículas: num golpe enorme, as mais velhas saem primeiro (evita quadro travado)
+    const teto = telaDeToque() ? 260 : 520
+    if (this.particulas.length > teto) this.particulas.splice(0, this.particulas.length - teto)
     for (const p of this.particulas) {
       p.vida -= dt
       if (p.alvo) { p.vx += (p.alvo.x - p.x) * 30 * dt; p.vy += (p.alvo.y - p.y) * 30 * dt }
@@ -146,12 +153,13 @@ export class Palco {
     c.clearRect(0, 0, this.canvas.width, this.canvas.height)
     c.globalCompositeOperation = 'lighter'
     // clarões e a luz dos projéteis iluminam a mesa em volta
+    // clarões: o brilho pré-pintado escalado (antes era um gradiente novo por quadro)
     for (const k of this.claroes) {
       const a = Math.pow(k.vida / k.total, 1.6) * k.forca
-      const g = c.createRadialGradient(k.x, k.y, 0, k.x, k.y, k.raio)
-      g.addColorStop(0, k.cor + Math.round(a * 200).toString(16).padStart(2, '0')); g.addColorStop(0.35, k.cor + Math.round(a * 90).toString(16).padStart(2, '0')); g.addColorStop(1, k.cor + '00')
-      c.fillStyle = g; c.fillRect(k.x - k.raio, k.y - k.raio, k.raio * 2, k.raio * 2)
+      c.globalAlpha = Math.min(1, a * 0.85)
+      c.drawImage(brilho(k.cor, false), k.x - k.raio, k.y - k.raio, k.raio * 2, k.raio * 2)
     }
+    c.globalAlpha = 1
     for (const p of this.projeteis) {
       const pos = bezier(p.de, p.controle, p.para, p.t)
       const r = p.luz
@@ -199,11 +207,10 @@ export class Palco {
     }
     c.shadowBlur = 0
     for (const p of this.projeteis) {
-      const pos = bezier(p.de, p.controle, p.para, p.t)
-      const g = c.createRadialGradient(pos.x, pos.y, 0, pos.x, pos.y, p.tam * 2.2)
-      g.addColorStop(0, '#ffffff'); g.addColorStop(0.18, p.nucleo); g.addColorStop(0.5, p.cor + 'aa'); g.addColorStop(1, p.cor + '00')
-      c.globalAlpha = 1; c.fillStyle = g
-      c.beginPath(); c.arc(pos.x, pos.y, p.tam * 2.2, 0, Math.PI * 2); c.fill()
+      const pos = bezier(p.de, p.controle, p.para, p.t), r = p.tam * 2.2
+      c.globalAlpha = 1
+      c.drawImage(brilho(p.cor), pos.x - r, pos.y - r, r * 2, r * 2)
+      c.drawImage(brilho(p.nucleo), pos.x - r * 0.5, pos.y - r * 0.5, r, r)
     }
     for (const p of this.particulas) {
       const a = Math.max(0, p.vida / p.total)

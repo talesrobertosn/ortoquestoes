@@ -13,10 +13,12 @@
  */
 
 export type Cenario = 'campo' | 'masmorra' | 'salao' | 'covil' | 'torre'
+  | 'forja' | 'coliseu' | 'jardim' | 'laboratorio' | 'caverna' | 'templo' | 'passarela' | 'catacumba' | 'treino' | 'arquivo'
 export type Nivel = 'comum' | 'elite' | 'chefe'
 /** Masmorra (Cripta): sem fim, em atos de 3. Torre do Título: 100 andares, com patamares. */
 export type Modo = 'masmorra' | 'torre'
 export type SpriteInimigo = 'golem' | 'serpente' | 'guardiao' | 'dragao' | 'raptor' | 'gosma' | 'mimico'
+  | 'corvo' | 'morcego' | 'aranha' | 'escaravelho' | 'goblin' | 'esqueleto' | 'cavaleiro' | 'espectro' | 'quimera' | 'mao' | 'leviata' | 'rei' | 'arconte' | 'ent' | 'harpia'
 
 export interface FaseChefe {
   /** Entra quando a vida do chefe cai a esta fração da vida máxima. */
@@ -120,6 +122,51 @@ export const BESTIARIO: Inimigo[] = [
     vida: 125, forca: 3.5, armadura: 1, paciencia: 9, porErroSeguido: 1, critico: 0.16, rajada: 2, especialidade: 'joelho',
     lema: 'Se esconde na dobra e salta no erro.', habilidade: 'Duas mordidas, críticos frequentes e pressão +1.',
   },
+  {
+    id: 'corvo-de-kocher', nome: 'Corvo de Kocher', sprite: 'corvo', cenario: 'passarela', nivel: 'comum', andarMin: 2,
+    vida: 70, forca: 3.2, armadura: 0, paciencia: 8, porErroSeguido: 0, critico: 0.18, rajada: 2, especialidade: 'trauma',
+    lema: 'O bico prende e não solta.', habilidade: 'Críticos frequentes e Mordidas: o bico pinça duas vezes.',
+  },
+  {
+    id: 'esqueleto-do-metacarpo', nome: 'Esqueleto do Metacarpo', sprite: 'esqueleto', cenario: 'catacumba', nivel: 'comum', andarMin: 3,
+    vida: 85, forca: 3.2, armadura: 3, paciencia: 10, porErroSeguido: 0, critico: 0.08, especialidade: 'mao',
+    lema: 'Cinco ossos, uma espada.', habilidade: 'Armadura 3 e escudo de madeira.',
+  },
+  {
+    id: 'sentinela-da-fibula', nome: 'Sentinela da Fíbula', sprite: 'cavaleiro', variante: 'fibula', cenario: 'treino', nivel: 'comum', andarMin: 4,
+    vida: 100, forca: 3.4, armadura: 2, paciencia: 9, porErroSeguido: 0, critico: 0.12, carrega: { aCada: 4, mult: 1.6, nome: 'Estocada da lança' }, especialidade: 'joelho',
+    lema: 'Fina, longa e sempre de guarda.', habilidade: 'A cada 4 rodadas, a Estocada (golpe carregado, avisado na intenção).',
+  },
+  {
+    id: 'escaravelho-da-cartilagem', nome: 'Escaravelho da Cartilagem', sprite: 'escaravelho', cenario: 'jardim', nivel: 'comum', andarMin: 4,
+    vida: 90, forca: 3.0, armadura: 5, paciencia: 11, porErroSeguido: 0, critico: 0.06, regenera: { porRodada: 3, total: 24 }, especialidade: 'joelho',
+    lema: 'Lisa por fora, dura por dentro.', habilidade: 'Armadura 5 e regenera 3 por rodada.',
+  },
+  {
+    id: 'aranha-dos-ligamentos', nome: 'Aranha dos Ligamentos', sprite: 'aranha', cenario: 'caverna', nivel: 'comum', andarMin: 5,
+    vida: 95, forca: 3.3, armadura: 0, paciencia: 9, porErroSeguido: 3, critico: 0.1, rouba: true, especialidade: 'joelho',
+    lema: 'Tece a teia entre os seus erros.', habilidade: 'Veneno +3 por erro seguido e rouba 1 carga de poder.',
+  },
+  {
+    id: 'cavaleiro-da-tala', nome: 'Cavaleiro da Tala', sprite: 'cavaleiro', cenario: 'forja', nivel: 'comum', andarMin: 6,
+    vida: 120, forca: 3.5, armadura: 4, paciencia: 11, porErroSeguido: 0, critico: 0.08, barreira: 15, especialidade: 'trauma',
+    lema: 'Imobiliza primeiro, pergunta depois.', habilidade: 'Barreira 15 e Armadura 4.',
+  },
+  {
+    id: 'morcego-do-tunel', nome: 'Morcego do Túnel do Carpo', sprite: 'morcego', cenario: 'caverna', nivel: 'comum', andarMin: 6,
+    vida: 80, forca: 3.4, armadura: 0, paciencia: 8, porErroSeguido: 2, critico: 0.16, rajada: 3, especialidade: 'mao',
+    lema: 'Comprime e foge pelo túnel.', habilidade: 'Três Mordidas por golpe e Veneno +2.',
+  },
+  {
+    id: 'slime-sinovial', nome: 'Slime Sinovial', sprite: 'gosma', variante: 'sinovial', cenario: 'laboratorio', nivel: 'comum', andarMin: 7,
+    vida: 110, forca: 3.2, armadura: 0, paciencia: 11, porErroSeguido: 0, critico: 0.06, regenera: { porRodada: 5, total: 40 }, divide: { abaixoDe: 0.4, barreira: 0.2 }, especialidade: 'joelho',
+    lema: 'Lubrifica, escorrega e volta.', habilidade: 'Regenera 5 por rodada e se divide com barreira.',
+  },
+  {
+    id: 'goblin-da-fratura', nome: 'Goblin da Fratura', sprite: 'goblin', cenario: 'forja', nivel: 'comum', andarMin: 3,
+    vida: 75, forca: 3.6, armadura: 1, paciencia: 7, porErroSeguido: 0, critico: 0.14, ouroExtra: 15, especialidade: 'trauma',
+    lema: 'Quebra primeiro, foge com as moedas.', habilidade: 'Fúria cedo e +15 moedas ao cair.',
+  },
   // ---------- Elites
   {
     id: 'mimico-do-arsenal', nome: 'Mímico do Arsenal', sprite: 'mimico', cenario: 'masmorra', nivel: 'elite', andarMin: 5,
@@ -141,6 +188,36 @@ export const BESTIARIO: Inimigo[] = [
     vida: 175, forca: 4.2, armadura: 1, paciencia: 11, porErroSeguido: 0, critico: 0.1, especialidade: 'joelho',
     lema: 'A investida que racha o chão.', habilidade: 'Muita vida e golpes pesados.',
   },
+  {
+    id: 'mao-dos-tendoes', nome: 'Mão dos Tendões', sprite: 'mao', cenario: 'laboratorio', nivel: 'elite', andarMin: 6,
+    vida: 160, forca: 3.8, armadura: 4, paciencia: 11, porErroSeguido: 0, critico: 0.12, rajada: 4, especialidade: 'mao',
+    lema: 'Cada dedo, um cabo esticado.', habilidade: 'Quatro dedos, quatro Mordidas; Armadura 4.',
+  },
+  {
+    id: 'espectro-do-mediano', nome: 'Espectro do Nervo Mediano', sprite: 'espectro', variante: 'nervo', cenario: 'catacumba', nivel: 'elite', andarMin: 7,
+    vida: 140, forca: 4.0, armadura: 0, paciencia: 10, porErroSeguido: 2, critico: 0.2, barreira: 30, especialidade: 'mao',
+    lema: 'Formiga, queima e some.', habilidade: 'Barreira 30, críticos de choque frequentes e Veneno +2.',
+  },
+  {
+    id: 'quimera-da-pseudoartrose', nome: 'Quimera da Pseudoartrose', sprite: 'quimera', cenario: 'caverna', nivel: 'elite', andarMin: 8,
+    vida: 180, forca: 4.0, armadura: 2, paciencia: 12, porErroSeguido: 1, critico: 0.12, regenera: { porRodada: 4, total: 40 }, divide: { abaixoDe: 0.5, barreira: 0.2 }, especialidade: 'trauma',
+    lema: 'Três cabeças, nenhuma consolida.', habilidade: 'Regenera e, com metade da vida, ganha barreira.',
+  },
+  {
+    id: 'arquiteto-da-consolidacao', nome: 'Arquiteto da Consolidação', sprite: 'espectro', variante: 'arquiteto', cenario: 'arquivo', nivel: 'elite', andarMin: 9,
+    vida: 150, forca: 3.7, armadura: 3, paciencia: 12, porErroSeguido: 0, critico: 0.1, barreira: 25, carrega: { aCada: 3, mult: 1.7, nome: 'Planta do calo' }, especialidade: 'osteometabolicas',
+    lema: 'Mede três vezes, consolida uma.', habilidade: 'Barreira 25 e a Planta do calo a cada 3 rodadas.',
+  },
+  {
+    id: 'harpia-do-manguito', nome: 'Harpia do Manguito', sprite: 'harpia', cenario: 'passarela', nivel: 'elite', andarMin: 7,
+    vida: 150, forca: 3.9, armadura: 0, paciencia: 9, porErroSeguido: 0, critico: 0.18, rajada: 2, rouba: true, especialidade: 'ombro',
+    lema: 'Rasga o ombro e leva o que achar.', habilidade: 'Duas garras por golpe e rouba carga.',
+  },
+  {
+    id: 'guardiao-da-artrodese', nome: 'Guardião da Artrodese', sprite: 'cavaleiro', variante: 'artrodese', cenario: 'coliseu', nivel: 'elite', andarMin: 10,
+    vida: 200, forca: 3.6, armadura: 8, paciencia: 14, porErroSeguido: 0, critico: 0.08, barreira: 20, especialidade: 'tornozelo',
+    lema: 'Nada se move enquanto ele guarda.', habilidade: 'Armadura 8 e barreira 20: use Ruptura e raios.',
+  },
   // ---------- Chefes
   {
     id: 'guardiao-do-acetabulo', nome: 'Guardião do Acetábulo', sprite: 'guardiao', cenario: 'salao', nivel: 'chefe', andarMin: 3,
@@ -161,16 +238,64 @@ export const BESTIARIO: Inimigo[] = [
     lema: 'Dorme sobre o tesouro de quem não estudou.', habilidade: 'A cada 3 rodadas, o Sopro (dano ×1,8, avisado na intenção). Na segunda fase, ganha barreira.',
   },
   {
-    id: 'rainha-gosma', nome: 'Rainha do Cimento', sprite: 'gosma', variante: 'rainha', cenario: 'salao', nivel: 'chefe', andarMin: 15,
+    id: 'rainha-gosma', nome: 'Rainha do Cimento', sprite: 'gosma', variante: 'rainha', cenario: 'salao', nivel: 'chefe', andarMin: 21,
     vida: 290, forca: 4.3, armadura: 2, paciencia: 15, porErroSeguido: 2, critico: 0.12, chefe: true, divide: { abaixoDe: 0.6, barreira: 0.25 }, regenera: { porRodada: 4, total: 36 }, especialidade: 'quadril',
     fase2: { abaixoDe: 0.3, nome: 'Presa total', forca: 5.4, armadura: 4 },
     lema: 'Tudo que toca, fixa.', habilidade: 'Regenera, se divide com barreira e endurece no fim.',
   },
   {
-    id: 'dragao-rubro', nome: 'Dragão Rubro da Artrose', sprite: 'dragao', variante: 'escarlate', cenario: 'covil', nivel: 'chefe', andarMin: 18,
+    id: 'dragao-rubro', nome: 'Dragão Rubro da Artrose', sprite: 'dragao', variante: 'escarlate', cenario: 'covil', nivel: 'chefe', andarMin: 39,
     vida: 320, forca: 4.6, armadura: 5, paciencia: 15, porErroSeguido: 2, critico: 0.14, chefe: true, carrega: { aCada: 3, mult: 1.9, nome: 'Sopro de brasas' }, rajada: 2, especialidade: 'joelho',
     fase2: { abaixoDe: 0.45, nome: 'Fúria do desgaste', forca: 5.5, armadura: 2 },
     lema: 'Range a cada passo, queima a cada erro.', habilidade: 'Sopro a cada 3 rodadas e golpes em duas mordidas.',
+  },
+  {
+    id: 'basilisco-do-radio', nome: 'Basilisco da Cabeça do Rádio', sprite: 'quimera', variante: 'basilisco', cenario: 'templo', nivel: 'chefe', andarMin: 15,
+    vida: 300, forca: 4.4, armadura: 3, paciencia: 14, porErroSeguido: 2, critico: 0.16, chefe: true, carrega: { aCada: 3, mult: 1.8, nome: 'Olhar petrificante' }, especialidade: 'cotovelo',
+    fase2: { abaixoDe: 0.45, nome: 'Crista em chamas', forca: 5.3, armadura: 1 },
+    lema: 'Gira o olhar e tudo endurece.', habilidade: 'O Olhar petrificante a cada 3 rodadas; furioso na segunda fase.',
+  },
+  {
+    id: 'imperador-do-carpo', nome: 'Imperador do Carpo', sprite: 'rei', cenario: 'salao', nivel: 'chefe', andarMin: 18,
+    vida: 320, forca: 4.4, armadura: 5, paciencia: 15, porErroSeguido: 2, critico: 0.12, chefe: true, barreira: 40, especialidade: 'mao',
+    fase2: { abaixoDe: 0.5, nome: 'Oito coroas', forca: 5.4, armadura: 2, barreira: 40 },
+    lema: 'Oito súditos em duas fileiras.', habilidade: 'Barreira 40 que volta na segunda fase.',
+  },
+  {
+    id: 'leviata-dos-tendoes', nome: 'Leviatã dos Tendões', sprite: 'leviata', cenario: 'templo', nivel: 'chefe', andarMin: 24,
+    vida: 340, forca: 4.5, armadura: 2, paciencia: 15, porErroSeguido: 3, critico: 0.14, chefe: true, rajada: 3, regenera: { porRodada: 5, total: 50 }, especialidade: 'mao',
+    fase2: { abaixoDe: 0.4, nome: 'Maré alta', forca: 5.5, armadura: 0 },
+    lema: 'Desliza na bainha e puxa para o fundo.', habilidade: 'Três Mordidas, regenera e Veneno +3.',
+  },
+  {
+    id: 'necromante-da-pseudoartrose', nome: 'Necromante da Pseudoartrose', sprite: 'espectro', variante: 'necromante', cenario: 'catacumba', nivel: 'chefe', andarMin: 27,
+    vida: 310, forca: 4.6, armadura: 1, paciencia: 15, porErroSeguido: 2, critico: 0.16, chefe: true, regenera: { porRodada: 7, total: 70 }, divide: { abaixoDe: 0.6, barreira: 0.2 }, especialidade: 'trauma',
+    fase2: { abaixoDe: 0.3, nome: 'Não consolida', forca: 5.6, armadura: 0, barreira: 40 },
+    lema: 'O que não fecha, ele levanta.', habilidade: 'Regenera muito, ganha barreira duas vezes.',
+  },
+  {
+    id: 'quimera-do-escafoide', nome: 'Quimera do Escafoide', sprite: 'quimera', variante: 'escafoide', cenario: 'caverna', nivel: 'chefe', andarMin: 30,
+    vida: 350, forca: 4.6, armadura: 4, paciencia: 15, porErroSeguido: 2, critico: 0.14, chefe: true, rajada: 2, carrega: { aCada: 4, mult: 1.8, nome: 'Investida alada' }, especialidade: 'mao',
+    fase2: { abaixoDe: 0.5, nome: 'Necrose do polo', forca: 5.6, armadura: 1 },
+    lema: 'Voa baixo e some no raio-x.', habilidade: 'Duas Mordidas e a Investida alada a cada 4 rodadas.',
+  },
+  {
+    id: 'arconte-da-biomecanica', nome: 'Arconte da Biomecânica', sprite: 'arconte', cenario: 'laboratorio', nivel: 'chefe', andarMin: 33,
+    vida: 360, forca: 4.7, armadura: 6, paciencia: 16, porErroSeguido: 1, critico: 0.12, chefe: true, barreira: 50, carrega: { aCada: 3, mult: 1.9, nome: 'Pistão de carga' }, especialidade: 'joelho',
+    fase2: { abaixoDe: 0.4, nome: 'Sobrecarga', forca: 5.8, armadura: 2 },
+    lema: 'Força, braço de alavanca e nenhuma piedade.', habilidade: 'Barreira 50, Armadura 6 e o Pistão a cada 3 rodadas.',
+  },
+  {
+    id: 'guardiao-da-fise', nome: 'Guardião da Fise', sprite: 'ent', cenario: 'jardim', nivel: 'chefe', andarMin: 36,
+    vida: 380, forca: 4.5, armadura: 3, paciencia: 16, porErroSeguido: 2, critico: 0.12, chefe: true, regenera: { porRodada: 8, total: 90 }, especialidade: 'pediatria',
+    fase2: { abaixoDe: 0.5, nome: 'Estirão', forca: 5.6, armadura: 4, barreira: 40 },
+    lema: 'Cresce enquanto você hesita.', habilidade: 'Regenera 8 por rodada; no Estirão endurece e ganha barreira.',
+  },
+  {
+    id: 'rei-da-consolidacao', nome: 'Rei da Consolidação', sprite: 'rei', variante: 'consolidacao', cenario: 'coliseu', nivel: 'chefe', andarMin: 42,
+    vida: 400, forca: 4.8, armadura: 6, paciencia: 16, porErroSeguido: 2, critico: 0.15, chefe: true, barreira: 40, regenera: { porRodada: 6, total: 60 }, especialidade: 'trauma',
+    fase2: { abaixoDe: 0.5, nome: 'Calo duro', forca: 5.9, armadura: 8 },
+    lema: 'Tudo o que ele toca fica firme.', habilidade: 'Barreira, regeneração e, no fim, Armadura 8.',
   },
   {
     id: 'dragao-ancestral', nome: 'Dragão Ancestral do Título', sprite: 'dragao', variante: 'ancestral', cenario: 'torre', nivel: 'chefe', andarMin: 1,
@@ -228,7 +353,7 @@ export const TORRE = {
   pacienciaACada: 10,
   criticoPorAndar: 0.0016,
   /** Chefes da Torre, na ordem dos andares 10, 20, 30... (o 100 é o Dragão Ancestral). */
-  chefes: ['guardiao-do-acetabulo', 'senhor-do-anel-pelvico', 'tita-da-coluna', 'rainha-gosma', 'dragao-de-ossos', 'dragao-rubro', 'senhor-do-anel-pelvico', 'tita-da-coluna', 'dragao-rubro'],
+  chefes: ['guardiao-do-acetabulo', 'basilisco-do-radio', 'tita-da-coluna', 'leviata-dos-tendoes', 'dragao-de-ossos', 'necromante-da-pseudoartrose', 'arconte-da-biomecanica', 'rei-da-consolidacao', 'quimera-do-escafoide'],
 }
 
 /** Andar equivalente da masmorra (para escolher quem aparece na Torre). */
@@ -318,9 +443,10 @@ function inimigoDaTorre(andar: number, semente: number): { inimigo: Inimigo; cic
 
 /** Estágios do herói: a cada chefe vencido ele evolui (só nesta partida). */
 export const ESTAGIOS = [
-  { nome: 'Aprendiz da Ortopedia', vida: 0, ataque: 0, defesa: 0 },
-  { nome: 'Escudeiro Clínico', vida: 12, ataque: 2, defesa: 1 },
-  { nome: 'Cavaleiro da Ortopedia', vida: 24, ataque: 4, defesa: 2 },
-  { nome: 'Mestre da Reconstrução', vida: 36, ataque: 6, defesa: 3 },
-  { nome: 'Lenda do Torneio', vida: 50, ataque: 8, defesa: 4 },
+  { nome: 'Aprendiz do Torneio', vida: 0, ataque: 0, defesa: 0 },
+  { nome: 'Escudeiro Clínico', vida: 10, ataque: 2, defesa: 1 },
+  { nome: 'Guardião dos Fundamentos', vida: 20, ataque: 3, defesa: 2 },
+  { nome: 'Cavaleiro da Reconstrução', vida: 30, ataque: 5, defesa: 2 },
+  { nome: 'Mestre da Ortopedia', vida: 40, ataque: 6, defesa: 3 },
+  { nome: 'Lenda da Masmorra', vida: 52, ataque: 8, defesa: 4 },
 ] as const

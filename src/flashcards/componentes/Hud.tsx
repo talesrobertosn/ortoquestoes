@@ -1,22 +1,44 @@
-import { forwardRef, memo, useEffect, useRef } from 'react'
+import { forwardRef, memo } from 'react'
 import { caixaDoCorpo, pintarPersonagem, POSES, TAMANHO, type Personagem } from '../efeitos/personagens'
 import { RECOMPENSAS, type TipoPoder } from '../motor/poderes'
 import { Sprite } from './Sprite'
 
+/** Folhas de sprite já montadas (uma imagem por personagem e variante), reaproveitadas entre telas. */
+const folhas = new Map<string, { poses: string; clarao: string }>()
+function folhaDe(quem: Personagem, variante?: string) {
+  const chave = quem + '|' + (variante ?? '')
+  let f = folhas.get(chave)
+  if (!f) {
+    const [w, h] = TAMANHO[quem]
+    const folha = document.createElement('canvas'); folha.width = w * POSES.length; folha.height = h
+    const c = folha.getContext('2d')!
+    const quadro = document.createElement('canvas')
+    POSES.forEach((pose, k) => { pintarPersonagem(quadro, quem, pose, variante); c.drawImage(quadro, k * w, 0) })
+    // silhueta branca da pose de dano (o clarão do golpe)
+    pintarPersonagem(quadro, quem, 'dano', variante)
+    const g = quadro.getContext('2d')!; g.globalCompositeOperation = 'source-atop'; g.fillStyle = '#ffffff'; g.fillRect(0, 0, w, h)
+    f = { poses: folha.toDataURL(), clarao: quadro.toDataURL() }
+    folhas.set(chave, f)
+  }
+  return f
+}
+
 /**
- * Sprite em pixel art com todas as poses pintadas de antemão, uma por canvas.
- * Parado alterna com "respira"; as outras aparecem quando o diretor de efeitos
- * põe `data-pose` no ator (veja `posar` na Arena).
+ * Sprite em pixel art: todas as poses numa folha só (uma imagem), e a pose é
+ * escolhida pela posição do fundo. Antes eram 7 canvases empilhados por
+ * personagem, cada um uma camada de composição; a folha única deixa o
+ * celular bem mais leve. Parado alterna com "respira"; as outras poses
+ * aparecem quando o diretor de efeitos põe `data-pose` no ator.
  */
 const Quadros = memo(function Quadros({ quem, escala, variante }: { quem: Personagem; escala: number; variante?: string }) {
-  const refs = useRef<Record<string, HTMLCanvasElement | null>>({})
-  useEffect(() => { for (const pose of POSES) { const c = refs.current[pose]; if (c) pintarPersonagem(c, quem, pose, variante) } }, [quem, variante])
   const [w, h] = TAMANHO[quem]
   const [x, y] = caixaDoCorpo(quem)
+  const f = folhaDe(quem, variante)
   const estilo = { width: w * escala, height: h * escala }
   return (
     <span className="fc-ator__quadros" style={{ ...estilo, left: -x * escala, top: -y * escala }}>
-      {POSES.map((pose) => <canvas key={pose} ref={(c) => { refs.current[pose] = c }} className={`fc-ator__q fc-ator__q--${pose}`} style={estilo} />)}
+      <span className="fc-ator__folha" style={{ ...estilo, backgroundImage: `url(${f.poses})`, backgroundSize: `${w * POSES.length * escala}px ${h * escala}px` }} />
+      <span className="fc-ator__clarao" style={{ ...estilo, backgroundImage: `url(${f.clarao})`, backgroundSize: `${w * escala}px ${h * escala}px` }} />
     </span>
   )
 })

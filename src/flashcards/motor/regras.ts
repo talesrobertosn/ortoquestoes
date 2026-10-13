@@ -19,6 +19,7 @@
  */
 import type { Dificuldade, Flashcard } from '../tipos'
 import { embaralhar, sortear } from './aleatorio'
+import { heroiPorId } from './herois'
 import { ESTAGIOS, LIMITES, TORRE, inimigoDoAndar, type Cenario, type Inimigo, type Modo } from './bestiario'
 import {
   ENCAIXES, EVENTOS, PATRONOS, PESO_RARIDADE_RECOMPENSA, PODERES, PRECO, RECOMPENSAS, RELIQUIAS, ehEvento, ehPoder, ehReliquia, patronosDe,
@@ -177,6 +178,8 @@ export interface Partida {
   vencidos: string[]
   /** Corrida no servidor (ranking); o motor não usa, só carrega junto. */
   idCorrida?: string
+  /** Herói escolhido (motor/herois.ts); sem ele, o Cavaleiro. */
+  heroi?: string
 }
 
 export type MotivoCura =
@@ -235,7 +238,7 @@ export interface OpcoesMotor {
   repor?: (excluir: ReadonlySet<string>, semente: number) => [string[], number]
 }
 
-export interface ConfigPartida { modo?: Modo; talentos?: Talentos; ids?: string[] }
+export interface ConfigPartida { modo?: Modo; talentos?: Talentos; ids?: string[]; heroi?: string }
 
 /** É andar de chefe? (Cripta: o 3º de cada ato; Torre: a cada 10.) */
 export const andarDeChefe = (andar: number, modo: Modo) => (modo === 'torre' ? andar % 10 === 0 : (andar - 1) % 3 === 2)
@@ -374,18 +377,20 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
     let baralho: string[], s: number
     if (!cfg.ids && opcoes.repor) [baralho, s] = opcoes.repor(new Set(), semente)
     else [baralho, s] = embaralhar(cfg.ids ?? cartas.map((c) => c.id), semente)
-    const vida = VIDA_INICIAL + 5 * Math.min(3, t.vida ?? 0)
+    const h = heroiPorId(cfg.heroi)
+    const vida = VIDA_INICIAL + 5 * Math.min(3, t.vida ?? 0) + h.vida
     let encaixes: Encaixe[] = []
+    for (const k of h.poderes) encaixes = equipar(encaixes, k.tipo, k.cargas)[0]
     if (t.pista) encaixes = equipar(encaixes, 'pista', Math.min(2, t.pista))[0]
     if (t.segunda) encaixes = equipar(encaixes, 'imortal', 1)[0]
     const base: Partida = {
       versao: 3, modo, sementeBase: semente >>> 0, semente: s, rodada: 0, andar: 1, fase: 'pergunta', vida, vidaMax: vida,
       estagio: 1, xp: 0, inimigo: prepararInimigo(1, semente >>> 0, modo), baralho, descarte: [], atual: null,
       sequencia: 0, sequenciaLimpa: 0, melhorSequencia: 0, pontos: 0, acertos: 0, erros: 0, assistidos: 0,
-      encaixes, reliquias: [], imortalUsado: false, pocao: 0, recompensas: [], derrubaram: [],
+      encaixes, reliquias: [...h.reliquias], imortalUsado: false, pocao: 0, recompensas: [], derrubaram: [],
       derrotados: 0, chefesDerrotados: 0, venceu: false, danoSofrido: 0, danoEvitado: 0, curaTotal: 0,
       ouro: 15 * Math.min(3, t.ouro ?? 0), cristais: 0, categoria: 'misto', patronoDaSala: null, portas: [], loja: [], sabio: [],
-      ajudaUsada: false, renascerUsado: false, critGarantido: false, talentos: t, torreConcluida: false, vencidos: [],
+      ajudaUsada: false, renascerUsado: false, critGarantido: false, talentos: t, torreConcluida: false, vencidos: [], heroi: h.id,
     }
     const { inimigo, ciclo } = inimigoDoAndar(1, base.sementeBase, modo)
     const r = comprar(base)
@@ -504,7 +509,7 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
       const rel = (r: TipoReliquia) => contar(e.reliquias, r)
       const duploK = tem('duplo'), devK = tem('devastador'), ecoK = tem('eco'), rupK = tem('ruptura')
       const especial = rel('marca') > 0 && sequenciaLimpa > 0 && sequenciaLimpa % RECOMPENSAS.marca.v.a_cada === 0
-      let bruto = ATAQUE[c.dificuldade] + ESTAGIOS[e.estagio - 1].ataque
+      let bruto = ATAQUE[c.dificuldade] + ESTAGIOS[e.estagio - 1].ataque + heroiPorId(e.heroi).ataque
         + (sequencia >= COMBO_MINIMO ? BONUS_COMBO : 0)
         + (c.dificuldade === 3 && rel('bisturi') ? RECOMPENSAS.bisturi.v.bonus : 0)
         + (rel('residente') && sequencia % RECOMPENSAS.residente.v.a_cada === 0 ? RECOMPENSAS.residente.v.bonus : 0)
