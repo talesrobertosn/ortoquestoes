@@ -257,7 +257,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
           <p className="tr-heroi__selo">Montar sessão</p>
           <h1>Treinar</h1>
           <p>Escolha o que estudar, quais questões, e quantas. Sem tempo? Comece já com 10.</p>
-          {FLASHCARDS_NO_MENU && <a className="tr-heroi__link tr-heroi__link--flashcards" href={href('/flashcards')}><Icone nome="raio" tamanho={15} /> Torneio de Flashcards (prévia): Batalha com flashcards do acervo</a>}
+          {FLASHCARDS_NO_MENU && <a className="tr-heroi__link tr-heroi__link--flashcards" href={href('/flashcards')}><Icone nome="raio" tamanho={15} /> Flashcards (beta): revisão espaçada e modo jogo</a>}
           <a className="tr-heroi__link" href={href('/cronograma')}><Icone nome="rota" tamanho={15} /> {cronograma.calculo?.hoje ? `${rotuloCronograma}: hoje, ${cronograma.calculo.hoje.nome} · ${cronograma.calculo.feitasHoje} de ${cronograma.calculo.metaDiaria}` : 'Prefere que alguém monte por você? Use o cronograma'}</a>
         </div>
         <button type="button" className="botao botao--claro tr-heroi__rapida" onClick={() => sessaoRapida()} disabled={!indice}>

@@ -463,3 +463,15 @@ Atualizar `docs/flashcards/RESUMO-CHATGPT.md` e informar:
 - a próxima etapa.
 
 Distinguir sempre o que foi implementado, publicado, validado e apenas planejado.
+
+
+---
+
+## Andamento (13/10/2026, noite)
+
+Feito: seções 1 (docs), 2 (menu e central), 3 (página inicial, com o ajuste do Tales: quadro à direita
+do herói no computador, faixa no celular, começar por "Flashcards"), 5 (ranking), 6 (desempenho),
+7 (revisão), 8 (cronograma), 9 (opinião) e a correção de som da seção 4. Detalhes em CONTINUAR.md.
+
+Pendente: validação do som em aparelho real (Tales), cauda do dragão e escudo do herói lendário no
+celular, cortes em telas pequenas, e as prioridades pós-lançamento da seção 12.
