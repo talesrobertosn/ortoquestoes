@@ -1,4 +1,4 @@
-# Passagem: Etapa 1 da direção criativa (concluída em 13/10/2026)
+# Passagem: direção criativa da Cripta (Etapas 1 e 2 concluídas, 3 em andamento; 13/10/2026)
 
 Pedido: "DIREÇÃO CRIATIVA E REFORMULAÇÃO ARTÍSTICA — CRIPTA DO RESIDENTE" (etapas 1 a 8).
 
@@ -24,7 +24,58 @@ Pedido: "DIREÇÃO CRIATIVA E REFORMULAÇÃO ARTÍSTICA — CRIPTA DO RESIDENTE"
 
 Todos usam `chromium.launch({ executablePath: '/opt/pw-browsers/chromium' })`, semente fixa em `Math.random` e `__torneio.ir(1, 3)`.
 
-**Próximo:** Etapa 2, o herói com progressão corporal real em 6 estágios (aprendiz até lenda adulta).
+**Etapa 1:** integrada na base pelo PR #219.
+
+## Etapa 2: herói em 6 estágios (concluída, PR seguinte ao #219)
+- O mesmo herói (rosto, capacete branco, pluma azul) cresce do aprendiz chibi à lenda adulta. A tabela `PROP` em `scripts/sprites/heroi.py` controla, por estágio:
+  - pernas e tronco;
+  - ombros;
+  - cabeça;
+  - braços;
+  - grossura;
+  - escudo.
+- Joelheiras a partir do estágio 3. A lenda (6) tem armadura de pérola com filetes de ouro e lâmina de luz azulada.
+- **Motor** (`scripts/sprites/motor.py`): `Osso.escalado(esc)` amplia as formas presas a um osso, sem mexer nos filhos.
+- **Quadro do herói:** 112×120 (antes 96×96).
+- **Hud** (`componentes/Hud.tsx`, `escalaAssada`):
+  - o tamanho na tela usa o corpo do aprendiz (`heroi-1`) como referência;
+  - o herói cresce só para cima, com os pés na mesma linha;
+  - o multiplicador antigo `1 + 0.06 * (estagio - 1)` saiu do `Arena.tsx`.
+- **Assar:** `cd scripts/sprites && python3 assar.py heroi --estagio N` (N de 1 a 6), depois `python3 scripts/sprites/indice.py`.
+- **Capturas:** `node .capturas/heroi.mjs <pasta> <w> <h> <dpr>` mostra os 6 estágios no jogo.
+
+## Etapa 3: chefes, começando pelo Dragão de Ossos (em andamento)
+- **Primeira passada** em `scripts/sprites/dragao.py`. A versão anterior está no histórico do git.
+  - O crânio ficou 1,5 vez maior, via `cab_o.escalado(1.5)`, com um segundo par de chifres.
+  - Pescoço, coluna e cauda estão mais grossos.
+  - As costelas viraram arcos curvos que descem da coluna; antes eram toros vistos de perfil e sumiam.
+  - Caixa torácica maior, com núcleo de fogo-fátuo maior.
+  - Patas robustas (as da frente 25% mais grossas), garras grandes e fogo nas juntas.
+  - Asas maiores, com a membrana indo até perto das pontas dos dedos e a borda rasgada.
+- **Falta:**
+  - conferir no jogo, no andar 12 (Dragão de Ossos, cenário `covil`): `__torneio.ir(12, semente)`;
+  - checar se o quadro de 264×216 ainda cabe tudo (asas e cauda);
+  - ajustar `CRESCE.dragao` no Hud, se ficar grande demais;
+  - passar o mesmo tratamento ao Guardião.
+- Variantes `escarlate` e `ancestral` ainda usam o desenho antigo em código, porque não têm folha própria.
+
+## Etapas 4 a 8 (não começadas)
+4. **Interface mais leve.** A hierarquia é: pergunta, alternativas, personagens e estado.
+   - Proposta: reduzir a placa do adversário e os selos.
+   - Esconder "Fúria em N" atrás de um ícone.
+   - Topo mais fino.
+5. **Demais cenários pintados offline**, com o mesmo pintor (`scripts/cenarios/`). Veja "Como fazer um cenário novo" em `ARTE.md`.
+   - Ordem sugerida: Masmorra, Covil e Torre.
+6. **Gameplay e NPCs:**
+   - sinergias;
+   - ferreiro e curandeiro;
+   - baú;
+   - sala secreta;
+   - eventos.
+7. **Música e polimento.**
+8. **Bestiário:** qualidade antes de quantidade. Folhas assadas para os outros arquétipos.
+
+**Restrições** (valem para todas as etapas): veja a seção "Contexto completo do pedido", abaixo.
 
 ## Histórico da Etapa 1
 - Auditoria rápida do andar 1 (cenário "campo"): pátio genérico de muros de tijolo; no celular

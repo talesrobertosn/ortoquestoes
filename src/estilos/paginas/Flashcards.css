@@ -1764,3 +1764,6 @@ body.fc-modal-aberto .aviso-cookies, body.fc-modal-aberto .aviso-site, body.fc-m
 
 /* título do flashcard: hifeniza em vez de partir a palavra no meio ("ACROMIOCLAVIC ULAR") */
 .fc-carta__titulo strong { overflow-wrap: normal; word-break: normal; hyphens: auto; -webkit-hyphens: auto; }
+
+/* o topo fica acima dos personagens: a asa do Dragão de Ossos (maior desde a Etapa 3) cobria as abas */
+.fc-arena > .fc-topo { z-index: 6; }

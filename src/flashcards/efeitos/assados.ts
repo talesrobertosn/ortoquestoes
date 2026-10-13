@@ -14,10 +14,10 @@ export const ASSADOS: Record<string, MetaAssada> = {
    206
   ],
   "caixa": [
-   16,
-   55,
-   221,
-   158
+   21,
+   27,
+   231,
+   189
   ],
   "animacoes": {
    "parado": {
