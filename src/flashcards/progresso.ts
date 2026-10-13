@@ -13,6 +13,13 @@ import { INTERVALOS, proximoRegistro, type RegistroQuestao } from '../estado/rev
 
 export const CHAVE_REGISTROS = 'flashcards:registros'
 export const CHAVE_PARTIDA = 'flashcards:partida'
+/** Torre do Título: a subida em andamento e o último patamar (ponto de retorno ao cair). */
+export const CHAVE_PARTIDA_TORRE = 'flashcards:torre'
+export const CHAVE_PATAMAR = 'flashcards:torre-patamar'
+/** Altar do Saber (cristais e talentos permanentes). */
+export const CHAVE_ALTAR = 'flashcards:altar'
+/** Bestiário: adversários vistos e vencidos (ids). */
+export const CHAVE_BESTIARIO = 'flashcards:bestiario'
 export const CHAVE_AJUSTES = 'flashcards:ajustes'
 /** Últimos flashcards vistos (mais novo primeiro): a seleção evita repeti-los. */
 export const CHAVE_HISTORICO = 'flashcards:historico'
@@ -26,8 +33,12 @@ const TAMANHO_HISTORICO = 600
 
 export interface Recordes {
   versao: 1
-  /** Andar mais fundo alcançado numa partida. */
+  /** Andar mais fundo alcançado numa partida da Cripta (ranking da Cripta). */
   andarMaximo: number
+  /** Andar mais alto da Torre do Título (ranking da Torre). */
+  torreMaximo?: number
+  /** Vezes que chegou ao topo da Torre. */
+  torreConcluida?: number
   partidas: number
   chefesDerrotados: number
   melhorSequencia: number
@@ -36,7 +47,10 @@ export interface Recordes {
   atualizadoEm: number
 }
 
-export const RECORDES_VAZIOS: Recordes = { versao: 1, andarMaximo: 0, partidas: 0, chefesDerrotados: 0, melhorSequencia: 0, respostas: 0, atualizadoEm: 0 }
+export const RECORDES_VAZIOS: Recordes = { versao: 1, andarMaximo: 0, torreMaximo: 0, torreConcluida: 0, partidas: 0, chefesDerrotados: 0, melhorSequencia: 0, respostas: 0, atualizadoEm: 0 }
+
+export interface Bestiario { vistos: string[]; vencidos: string[] }
+export const BESTIARIO_VAZIO: Bestiario = { vistos: [], vencidos: [] }
 
 export function lembrarVisto(historico: string[], id: string): string[] {
   return [id, ...historico.filter((x) => x !== id)].slice(0, TAMANHO_HISTORICO)

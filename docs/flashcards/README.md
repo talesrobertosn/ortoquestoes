@@ -10,6 +10,8 @@ Leia este arquivo e depois os outros desta pasta, nesta ordem:
 5. [ROTEIRO.md](ROTEIRO.md): as etapas, com caixas de seleção. Atualize-as ao terminar cada passo.
 6. [REFERENCIAS.md](REFERENCIAS.md): os jogos de cartas que o Tales mandou como inspiração e o que adotamos de cada um.
 7. [ARTE.md](ARTE.md): a direção de arte HD-2D (pixel art nativa + diorama), o que mudou e quais assets são provisórios.
+8. [CRIPTA.md](CRIPTA.md): **versão 3, a Cripta do Residente** (rotas, travas e tudo o que entrou em 13/10/2026).
+9. [RANKING.md](RANKING.md), [CONQUISTAS.md](CONQUISTAS.md) e [CAPA-E-VENDAS.md](CAPA-E-VENDAS.md): prontos e desligados.
 
 ## Em uma frase
 
@@ -29,6 +31,12 @@ Uma aba **Flashcards** dentro de **Treinar**, com o **modo Estudo** (calmo: vira
 | Ordem dos temas que mais caem | `src/dados/incidencia.json` e a página Temas que mais caem |
 
 ## Estado atual (atualize aqui)
+
+- **13/10/2026, versão 3: Cripta do Residente** ([CRIPTA.md](CRIPTA.md)). Entrada própria, Torre do
+  Título de 100 andares com patamares, portas no estilo do Hades, loja, Velho Preceptor, bênçãos de
+  cinco patronos com duplas, raridades épica e lendária, flashcards brilhantes, Altar do Saber,
+  Bestiário, dragões e outros adversários novos, herói que ganha peças, música nova. Ranking,
+  conquistas, cartão da capa e seção de vendas prontos e **desligados** (travas em `config.ts`).
 
 - **12/10/2026:**
   - brainstorm aprovado e decisões registradas;

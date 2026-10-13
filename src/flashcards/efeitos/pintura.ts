@@ -286,6 +286,102 @@ function salaoMeio(c: Ctx, W: number, H: number) {
   mapaDeLuz(c, W, H, 'rgba(255,200,120,.45)', 'rgba(20,0,0,.6)')
 }
 
+
+/* ------------------------------------------------- Covil do dragão e Torre */
+
+function covilFundo(c: Ctx, W: number, H: number) {
+  degradeVertical(c, 0, 0, W, H, ['#0a0406', '#160808', '#240c0a', '#30120c', '#1a0806'])
+  // paredes da caverna ao fundo: rocha em camadas com brilho de lava por baixo
+  for (let x = 0; x < W; x++) {
+    const teto = Math.floor(H * 0.1 + fbm(x / 26, 1, 3, 101) * H * 0.12)
+    for (let y = 0; y < teto; y++) px(c, x, y, y > teto - 2 ? '#3a1a12' : '#120606')
+    const base = Math.floor(H * 0.42 - fbm(x / 34, 2, 3, 103) * H * 0.14)
+    for (let y = base; y < H * 0.46; y++) px(c, x, y, y - base < 2 ? '#5a2416' : (x + y) % 6 === 0 ? '#3a160e' : '#2a100a')
+  }
+  // estalactites
+  const r0 = rnd(105)
+  for (let i = 0; i < W / 14; i++) {
+    const x = Math.floor(r0() * W), L = 6 + Math.floor(r0() * H * 0.12), larg = 2 + Math.floor(r0() * 3)
+    for (let k = 0; k < L; k++) { const w2 = Math.max(0, Math.round(larg * (1 - k / L))); for (let d = -w2; d <= w2; d++) px(c, x + d, Math.floor(H * 0.12) + k, d === -w2 ? '#4a2014' : '#1e0a08') }
+  }
+  // brilho da lava distante
+  for (let y = Math.floor(H * 0.36); y < H * 0.46; y++) for (let x = 0; x < W; x++) if (fbm(x / 12, y / 3, 2, 107) > 0.62) px(c, x, y, (x + y) % 3 ? '#ff6a1a' : '#ffb04a')
+}
+function covilMeio(c: Ctx, W: number, H: number) {
+  const chao = Math.floor(H * 0.32)
+  pedras(c, 0, chao, W, H - chao, 11, ['#0a0404', '#2a1410', '#3a1c14', '#4a2418', '#5a2e1e', '#6e3a24'], '#120604', null, 109)
+  // rios de lava nas laterais, com crosta escura e borda incandescente
+  for (let y = chao; y < H; y++) for (let x = 0; x < W; x++) {
+    const lado = Math.min(x, W - 1 - x) / W
+    const v = fbm(x / 16, y / 10, 3, 111) + (0.2 - lado) * 2.2
+    if (v > 0.78) px(c, x, y, v > 0.98 ? '#fff0a0' : v > 0.88 ? '#ffb04a' : '#ff6a1a')
+    else if (v > 0.72) px(c, x, y, '#a02a10')
+  }
+  // pilhas de moedas do tesouro do dragão
+  const tesouro = (cx: number, cy: number, r: number) => {
+    for (let y = -r; y <= 0; y++) for (let x = -r * 2; x <= r * 2; x++) {
+      if ((x / (r * 2)) ** 2 + (y / r) ** 2 > 1) continue
+      const k = ruido((cx + x) / 1.5, (cy + y) / 1.5, 113)
+      px(c, cx + x, cy + y, k > 0.82 ? '#fff6c0' : k > 0.55 ? '#f2c45a' : k > 0.3 ? '#c28a2a' : '#7a5214')
+    }
+    for (let i = 0; i < r; i++) { const x = cx - r + Math.floor(ruido(i, 1, 115) * r * 2), y = cy - Math.floor(ruido(i, 2, 115) * r * 0.8); px(c, x, y, '#ffffff') }
+  }
+  tesouro(Math.floor(W * 0.16), Math.floor(H * 0.46), Math.max(6, Math.floor(H * 0.06)))
+  tesouro(Math.floor(W * 0.86), Math.floor(H * 0.48), Math.max(5, Math.floor(H * 0.05)))
+  // pilares de rocha nas bordas
+  const mw = Math.max(20, Math.floor(W * 0.08))
+  pedras(c, 0, 0, mw, H, 9, ['#060202', '#1e0c08', '#2a120c', '#381a10', '#462014'], '#0a0302', null, 117)
+  pedras(c, W - mw, 0, mw, H, 9, ['#060202', '#1e0c08', '#2a120c', '#381a10', '#462014'], '#0a0302', null, 119)
+  tocha(c, mw - 3, Math.floor(H * 0.34)); tocha(c, W - mw + 2, Math.floor(H * 0.34))
+  mapaDeLuz(c, W, H, 'rgba(255,120,40,.4)', 'rgba(10,0,0,.75)')
+}
+
+function torreFundo(c: Ctx, W: number, H: number) {
+  // céu alto do entardecer, mar de nuvens lá embaixo e luas
+  degradeVertical(c, 0, 0, W, Math.ceil(H * 0.5), ['#1a1640', '#2e2a6a', '#5a4a8a', '#a87aa0', '#f0b090'])
+  const r0 = rnd(121)
+  for (let i = 0; i < W / 3; i++) { const x = Math.floor(r0() * W), y = Math.floor(r0() * H * 0.22); px(c, x, y, r0() > 0.7 ? '#ffffff' : '#c8c8f0') }
+  const lx = Math.floor(W * 0.78), ly = Math.floor(H * 0.12), lr = Math.max(6, Math.floor(H * 0.05))
+  for (let y = -lr; y <= lr; y++) for (let x = -lr; x <= lr; x++) { const d = (x * x + y * y) / (lr * lr); if (d <= 1) px(c, lx + x, ly + y, d > 0.8 ? '#e8d8f0' : (x + 2) ** 2 + (y - 1) ** 2 < lr * lr * 0.5 ? '#fffaf0' : '#f6eede') }
+  for (let y = Math.floor(H * 0.34); y < H * 0.5; y++) for (let x = 0; x < W; x++) {
+    const v = fbm(x / 24, y / 6, 3, 123) + (y - H * 0.34) / (H * 0.2)
+    if (v > 0.7) px(c, x, y, v > 1.05 ? '#ffe8d0' : v > 0.88 ? '#f0c8c0' : '#c8a0b8')
+  }
+  // picos distantes saindo das nuvens
+  for (const [fx, alt] of [[0.12, 0.12], [0.3, 0.08], [0.6, 0.1], [0.9, 0.14]] as const) {
+    const cx = Math.floor(W * fx), topo = Math.floor(H * (0.42 - alt))
+    for (let y = topo; y < H * 0.44; y++) { const w2 = Math.floor((y - topo) * 0.9); for (let x = -w2; x <= w2; x++) px(c, cx + x, y, x < 0 ? '#7a6a9a' : '#5a4a7a') }
+  }
+}
+function torreMeio(c: Ctx, W: number, H: number) {
+  const chao = Math.floor(H * 0.4)
+  // terraço circular de pedra clara com mosaico em anéis
+  const cx = W / 2, cy = H * 0.86
+  for (let y = chao; y < H; y++) for (let x = 0; x < W; x++) {
+    const d = Math.hypot((x - cx) / 1.6, (y - cy) * 1.2), a = Math.atan2(y - cy, x - cx)
+    const anel = Math.floor(d / 14), seg = Math.floor((a + Math.PI) * (6 + anel * 3))
+    const junta = d % 14 < 1 || Math.abs(Math.sin((a + Math.PI) * (6 + anel * 3) * 0.5)) < 0.06
+    const tom = 1 + Math.floor(ruido(anel, seg, 125) * 3)
+    px(c, x, y, junta ? '#4a4258' : ['#3a3448', '#8a82a0', '#9a92b0', '#aaa2c0', '#c0b8d4'][tom + (ruido(x / 2, y / 2, 127) > 0.85 ? 1 : 0)])
+  }
+  // ameias da borda do terraço
+  for (let x = 0; x < W; x++) {
+    const ameia = Math.floor(x / 10) % 2 === 0
+    const topo = chao - (ameia ? 9 : 5)
+    for (let y = topo; y < chao + 2; y++) px(c, x, y, y === topo ? '#d8d0e8' : x % 10 === 0 ? '#5a5270' : y > chao ? '#4a4258' : '#8a82a0')
+  }
+  // pilares com estandartes e braseiros
+  for (const fx of [0.1, 0.9]) {
+    const x = Math.floor(W * fx), pw = Math.max(5, Math.floor(W * 0.025))
+    for (let y = Math.floor(H * 0.08); y < chao + 30; y++) for (let k = -pw; k <= pw; k++) px(c, x + k, y, Math.abs(k) === pw ? '#3a3448' : k < 0 ? '#aaa2c0' : '#7a7290')
+    for (let y = Math.floor(H * 0.12); y < H * 0.32; y++) for (let k = -pw + 1; k < pw; k++) if (y <= H * 0.31 - Math.abs(k)) px(c, x + k, y, k === 0 ? '#ffd76a' : '#4a2a8a')
+    const by = Math.floor(H * 0.08)
+    for (let k = -pw - 2; k <= pw + 2; k++) { px(c, x + k, by, '#c28a2a'); px(c, x + k, by - 1, '#7a5214') }
+    ;[[0, -2, '#fff6c0'], [0, -3, '#ffd27a'], [-1, -2, '#ff9a3c'], [1, -2, '#ff9a3c'], [0, -4, '#ff9a3c'], [-2, -2, '#ff6a2a'], [2, -2, '#ff6a2a']].forEach(([dx, dy, cor]) => px(c, x + (dx as number), by + (dy as number), cor as string))
+  }
+  mapaDeLuz(c, W, H, 'rgba(255,210,170,.45)', 'rgba(20,10,50,.6)')
+}
+
 /* ------------------------------------------------------------ Biblioteca */
 
 function bibliotecaFundo(c: Ctx, W: number, H: number) {
@@ -350,6 +446,8 @@ const LUZES: Record<Cena, Array<[number, number, string, number]>> = {
   masmorra: [[0.08, 0.3, '255,150,60', 0.2], [0.92, 0.3, '255,150,60', 0.2], [0.08, 0.72, '255,150,60', 0.2], [0.92, 0.72, '255,150,60', 0.2], [0.5, 0.15, '110,150,230', 0.4]],
   salao: [[0.08, 0.34, '255,180,90', 0.18], [0.92, 0.34, '255,180,90', 0.18], [0.08, 0.8, '255,180,90', 0.18], [0.92, 0.8, '255,180,90', 0.18], [0.5, 0.18, '255,215,150', 0.45]],
   biblioteca: [[0.16, 0.56, '255,180,90', 0.28], [0.86, 0.55, '255,180,90', 0.26], [0.5, 0.25, '150,180,240', 0.35]],
+  covil: [[0.08, 0.34, '255,150,60', 0.18], [0.92, 0.34, '255,150,60', 0.18], [0.12, 0.8, '255,110,30', 0.3], [0.88, 0.8, '255,110,30', 0.3], [0.5, 0.4, '255,120,50', 0.35]],
+  torre: [[0.78, 0.12, '150,180,240', 0.3], [0.1, 0.07, '255,180,90', 0.16], [0.9, 0.07, '255,180,90', 0.16], [0.5, 0.42, '255,200,160', 0.5]],
 }
 
 /** Desenha os planos da cena. Retorna a escala usada (pixel da arte em px de tela). */
@@ -362,6 +460,8 @@ export function pintarCena(planos: { fundo: HTMLCanvasElement; meio: HTMLCanvasE
   if (cena === 'campo') { campoFundo(f, W, H); campoMeio(m, W, H); campoFrente(fr, W, H) }
   else if (cena === 'masmorra') { masmorraFundo(f, W, H); masmorraMeio(m, W, H) }
   else if (cena === 'salao') { salaoFundo(f, W, H); salaoMeio(m, W, H) }
+  else if (cena === 'covil') { covilFundo(f, W, H); covilMeio(m, W, H) }
+  else if (cena === 'torre') { torreFundo(f, W, H); torreMeio(m, W, H) }
   else { bibliotecaFundo(f, W, H); bibliotecaMeio(m, W, H) }
   // brilho suave (bloom das fontes de luz), em resolução de tela
   const dpr = Math.min(window.devicePixelRatio || 1, 1.5)
@@ -382,6 +482,8 @@ const MESA: Record<Cenario, { borda: string[]; tampo: string[]; metal: string[];
   campo: { borda: ['#2a2620', '#5a5446', '#7d7664', '#9a927c', '#b8b098'], tampo: ['#4a4a3a', '#8a8470', '#9e9882', '#b0aa92', '#c8c2a8'], metal: ['#3a2408', '#7a5214', '#c28a2a', '#f2c45a', '#fff1b0'], junta: '#3f5a26' },
   masmorra: { borda: ['#0c0d12', '#2a2d36', '#3a3d47', '#4a4e5a', '#626674'], tampo: ['#14161c', '#3a3e4a', '#464a56', '#525664', '#666a7a'], metal: ['#161a26', '#465066', '#7a889f', '#b9c6d8', '#f4f8ff'], junta: '#20283a' },
   salao: { borda: ['#140c08', '#3a2a20', '#54402e', '#6e5640', '#8a7056'], tampo: ['#1e140e', '#5a4636', '#6a5442', '#7a6250', '#927a64'], metal: ['#3a2408', '#7a5214', '#c28a2a', '#f2c45a', '#fff1b0'], junta: '#2a1a10' },
+  covil: { borda: ['#0a0302', '#2a120c', '#3c1a10', '#4e2416', '#62301e'], tampo: ['#120604', '#3a1c14', '#46241a', '#542c20', '#6a3a28'], metal: ['#3a0a04', '#a02a10', '#f0702a', '#ffc24a', '#fff6b0'], junta: '#5a1a08' },
+  torre: { borda: ['#24203a', '#5a5270', '#7a7290', '#9a92b0', '#c0b8d4'], tampo: ['#2a2640', '#7a7290', '#8a82a0', '#9a92b0', '#b4acc8'], metal: ['#140628', '#3a1e70', '#6a40b8', '#a878f0', '#e2c8ff'], junta: '#3a3448' },
 }
 
 /**
@@ -491,7 +593,8 @@ export function criarAmbiente(canvas: HTMLCanvasElement, cena: Cena, clima: Clim
   const dpr = matchMedia('(pointer: coarse)').matches ? 1 : Math.min(window.devicePixelRatio || 1, 1.5)
   const ajustar = () => { canvas.width = Math.round(canvas.clientWidth * dpr); canvas.height = Math.round(canvas.clientHeight * dpr) }
   ajustar()
-  const n = cena === 'masmorra' ? 34 : cena === 'biblioteca' ? 30 : 32
+  const n = cena === 'masmorra' || cena === 'covil' ? 38 : cena === 'biblioteca' ? 30 : 32
+  const sobe = cena === 'masmorra' || cena === 'covil'
   const parts = Array.from({ length: n }, (_, i) => ({ x: Math.random(), y: Math.random(), v: 0.2 + Math.random() * 0.8, f: Math.random() * 6, i, bokeh: i % 5 === 0 }))
   const luzes = LUZES[cena]
   // chuva: gotas finas em diagonal; noite: vaga-lumes esverdeados
@@ -515,12 +618,13 @@ export function criarAmbiente(canvas: HTMLCanvasElement, cena: Cena, clima: Clim
       c.fillStyle = g; c.fillRect(x * w - R, y * h - R, R * 2, R * 2)
     }
     for (const p of parts) {
-      if (cena === 'masmorra') { p.y -= p.v * dt * 0.06; p.x += Math.sin(t + p.f) * dt * 0.01 }
+      if (sobe) { p.y -= p.v * dt * (cena === 'covil' ? 0.09 : 0.06); p.x += Math.sin(t + p.f) * dt * 0.01 }
+      else if (cena === 'torre') { p.x += (0.03 + p.v * 0.03) * dt; p.y += Math.sin(t * 0.8 + p.f) * dt * 0.01 }
       else if (cena === 'campo') { p.x += (0.006 + Math.sin(t * 0.6 + p.f) * 0.01) * dt; p.y += (0.004 + Math.cos(t * 0.5 + p.f) * 0.008) * dt }
       else { p.y += p.v * dt * 0.008; p.x += Math.sin(t * 0.3 + p.f) * dt * 0.006 }
       if (p.y < -0.05) p.y = 1.05; if (p.y > 1.05) p.y = -0.05; if (p.x < -0.05) p.x = 1.05; if (p.x > 1.05) p.x = -0.05
       const brilho = 0.5 + 0.5 * Math.sin(t * 1.6 + p.f * 2)
-      const cor = cena === 'masmorra' ? (p.i % 3 ? '255,130,50' : '255,200,110') : cena === 'campo' ? (p.i % 4 === 0 ? '210,255,150' : '255,240,200') : '255,215,150'
+      const cor = cena === 'covil' ? (p.i % 3 ? '255,110,30' : '255,220,120') : cena === 'masmorra' ? (p.i % 3 ? '255,130,50' : '255,200,110') : cena === 'campo' ? (p.i % 4 === 0 ? '210,255,150' : '255,240,200') : cena === 'torre' ? (p.i % 3 ? '255,240,250' : '210,200,255') : '255,215,150'
       const r = p.bokeh ? (14 + p.v * 22) * dpr : (1.6 + p.v * 1.6) * dpr
       const a = p.bokeh ? 0.12 * brilho : 0.75 * brilho
       c.globalAlpha = a

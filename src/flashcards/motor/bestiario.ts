@@ -12,8 +12,11 @@
  * máxima do herói (ver LIMITES), para não haver morte injusta de vida cheia.
  */
 
-export type Cenario = 'campo' | 'masmorra' | 'salao'
+export type Cenario = 'campo' | 'masmorra' | 'salao' | 'covil' | 'torre'
 export type Nivel = 'comum' | 'elite' | 'chefe'
+/** Masmorra (Cripta): sem fim, em atos de 3. Torre do Título: 100 andares, com patamares. */
+export type Modo = 'masmorra' | 'torre'
+export type SpriteInimigo = 'golem' | 'serpente' | 'guardiao' | 'dragao' | 'raptor' | 'gosma' | 'mimico'
 
 export interface FaseChefe {
   /** Entra quando a vida do chefe cai a esta fração da vida máxima. */
@@ -28,7 +31,7 @@ export interface FaseChefe {
 export interface Inimigo {
   id: string
   nome: string
-  sprite: 'golem' | 'serpente' | 'guardiao'
+  sprite: SpriteInimigo
   /** Troca de paleta do sprite (personagens.ts). */
   variante?: string
   cenario: Cenario
@@ -52,6 +55,18 @@ export interface Inimigo {
   regenera?: { porRodada: number; total: number }
   chefe?: boolean
   fase2?: FaseChefe
+  /** O golpe vem em várias mordidas: passa pela Barreira reativa (o escudo ainda bloqueia). */
+  rajada?: number
+  /** A cada N rodadas, um golpe carregado (o aviso aparece na intenção): dano × mult, teto do crítico. */
+  carrega?: { aCada: number; mult: number; nome: string }
+  /** No erro, rouba 1 carga de um poder seu. */
+  rouba?: boolean
+  /** Uma vez, abaixo desta fração da vida, se divide e ganha barreira (fração da vida máxima). */
+  divide?: { abaixoDe: number; barreira: number }
+  /** Moedas a mais quando cai (o Mímico guarda o tesouro). */
+  ouroExtra?: number
+  /** Só aparece num andar exato de um modo (o dragão do topo da Torre). */
+  exclusivo?: { modo: Modo; andar: number }
   /** Área da ortopedia que inspira o adversário (só sabor; não muda as perguntas). */
   especialidade: string
   lema: string
@@ -85,7 +100,37 @@ export const BESTIARIO: Inimigo[] = [
     vida: 130, forca: 3.6, armadura: 2, paciencia: 12, porErroSeguido: 0, critico: 0.06, regenera: { porRodada: 4, total: 32 }, especialidade: 'quadril',
     lema: 'Endurece enquanto você hesita.', habilidade: 'Regenera 4 por rodada (até 32 no confronto).',
   },
+  {
+    id: 'gosma-de-cimento', nome: 'Gosma de Cimento', sprite: 'gosma', cenario: 'masmorra', nivel: 'comum', andarMin: 3,
+    vida: 90, forca: 3.1, armadura: 0, paciencia: 10, porErroSeguido: 0, critico: 0.05, divide: { abaixoDe: 0.5, barreira: 0.25 }, especialidade: 'quadril',
+    lema: 'Ainda não endureceu. Ainda.', habilidade: 'Com metade da vida, se divide e ganha uma barreira de 25% da vida.',
+  },
+  {
+    id: 'raptor-do-menisco', nome: 'Raptor do Menisco', sprite: 'raptor', cenario: 'campo', nivel: 'comum', andarMin: 4,
+    vida: 95, forca: 3.3, armadura: 0, paciencia: 9, porErroSeguido: 0, critico: 0.12, rajada: 2, especialidade: 'joelho',
+    lema: 'Rasga em dois tempos.', habilidade: 'Ataca em duas mordidas: passa pela Barreira reativa.',
+  },
+  {
+    id: 'gosma-acida', nome: 'Gosma do Metilmetacrilato', sprite: 'gosma', variante: 'acida', cenario: 'covil', nivel: 'comum', andarMin: 8,
+    vida: 120, forca: 3.4, armadura: 0, paciencia: 10, porErroSeguido: 3, critico: 0.06, divide: { abaixoDe: 0.5, barreira: 0.3 }, especialidade: 'quadril',
+    lema: 'O vapor arde antes da cola pegar.', habilidade: 'Veneno +3 por erro seguido e divisão com barreira de 30%.',
+  },
+  {
+    id: 'raptor-sombrio', nome: 'Raptor da Plica', sprite: 'raptor', variante: 'sombrio', cenario: 'covil', nivel: 'comum', andarMin: 10,
+    vida: 125, forca: 3.5, armadura: 1, paciencia: 9, porErroSeguido: 1, critico: 0.16, rajada: 2, especialidade: 'joelho',
+    lema: 'Se esconde na dobra e salta no erro.', habilidade: 'Duas mordidas, críticos frequentes e pressão +1.',
+  },
   // ---------- Elites
+  {
+    id: 'mimico-do-arsenal', nome: 'Mímico do Arsenal', sprite: 'mimico', cenario: 'masmorra', nivel: 'elite', andarMin: 5,
+    vida: 140, forca: 3.6, armadura: 3, paciencia: 11, porErroSeguido: 0, critico: 0.1, rouba: true, ouroExtra: 45, especialidade: 'trauma',
+    lema: 'A caixa de instrumentais sorriu.', habilidade: 'No erro, rouba 1 carga de um poder seu. Guarda +45 moedas.',
+  },
+  {
+    id: 'raptor-alfa', nome: 'Raptor Alfa do Cruzado', sprite: 'raptor', variante: 'alfa', cenario: 'campo', nivel: 'elite', andarMin: 8,
+    vida: 165, forca: 3.9, armadura: 2, paciencia: 10, porErroSeguido: 0, critico: 0.14, rajada: 3, especialidade: 'joelho',
+    lema: 'O bando obedece ao pivô.', habilidade: 'Três mordidas por golpe e armadura 2.',
+  },
   {
     id: 'cavaleiro-da-osteossintese', nome: 'Cavaleiro da Osteossíntese', sprite: 'guardiao', variante: 'prata', cenario: 'salao', nivel: 'elite', andarMin: 5,
     vida: 150, forca: 3.8, armadura: 6, paciencia: 12, porErroSeguido: 1, critico: 0.1, especialidade: 'trauma',
@@ -108,6 +153,31 @@ export const BESTIARIO: Inimigo[] = [
     vida: 230, forca: 4.2, armadura: 3, paciencia: 14, porErroSeguido: 2, critico: 0.14, chefe: true, barreira: 30, especialidade: 'trauma',
     fase2: { abaixoDe: 0.5, nome: 'Anel quebrado', forca: 5.2, armadura: 0, barreira: 25 },
     lema: 'O anel se fecha sobre quem erra.', habilidade: 'Barreira de 30 que absorve seus acertos; renova (25) na segunda fase.',
+  },
+  {
+    id: 'dragao-de-ossos', nome: 'Dragão de Ossos', sprite: 'dragao', cenario: 'covil', nivel: 'chefe', andarMin: 12,
+    vida: 300, forca: 4.4, armadura: 4, paciencia: 15, porErroSeguido: 2, critico: 0.12, chefe: true, carrega: { aCada: 3, mult: 1.8, nome: 'Sopro de fogo-fátuo' }, especialidade: 'osteometabolicas',
+    fase2: { abaixoDe: 0.5, nome: 'Asas em chamas', forca: 5.2, armadura: 1, barreira: 30 },
+    lema: 'Dorme sobre o tesouro de quem não estudou.', habilidade: 'A cada 3 rodadas, o Sopro (dano ×1,8, avisado na intenção). Na segunda fase, ganha barreira.',
+  },
+  {
+    id: 'rainha-gosma', nome: 'Rainha do Cimento', sprite: 'gosma', variante: 'rainha', cenario: 'salao', nivel: 'chefe', andarMin: 15,
+    vida: 290, forca: 4.3, armadura: 2, paciencia: 15, porErroSeguido: 2, critico: 0.12, chefe: true, divide: { abaixoDe: 0.6, barreira: 0.25 }, regenera: { porRodada: 4, total: 36 }, especialidade: 'quadril',
+    fase2: { abaixoDe: 0.3, nome: 'Presa total', forca: 5.4, armadura: 4 },
+    lema: 'Tudo que toca, fixa.', habilidade: 'Regenera, se divide com barreira e endurece no fim.',
+  },
+  {
+    id: 'dragao-rubro', nome: 'Dragão Rubro da Artrose', sprite: 'dragao', variante: 'escarlate', cenario: 'covil', nivel: 'chefe', andarMin: 18,
+    vida: 320, forca: 4.6, armadura: 5, paciencia: 15, porErroSeguido: 2, critico: 0.14, chefe: true, carrega: { aCada: 3, mult: 1.9, nome: 'Sopro de brasas' }, rajada: 2, especialidade: 'joelho',
+    fase2: { abaixoDe: 0.45, nome: 'Fúria do desgaste', forca: 5.5, armadura: 2 },
+    lema: 'Range a cada passo, queima a cada erro.', habilidade: 'Sopro a cada 3 rodadas e golpes em duas mordidas.',
+  },
+  {
+    id: 'dragao-ancestral', nome: 'Dragão Ancestral do Título', sprite: 'dragao', variante: 'ancestral', cenario: 'torre', nivel: 'chefe', andarMin: 1,
+    vida: 380, forca: 4.6, armadura: 6, paciencia: 16, porErroSeguido: 2, critico: 0.15, chefe: true, carrega: { aCada: 3, mult: 2, nome: 'Sopro do título' }, especialidade: 'trauma',
+    exclusivo: { modo: 'torre', andar: 100 },
+    fase2: { abaixoDe: 0.5, nome: 'Última prova', forca: 5.6, armadura: 2, barreira: 60 },
+    lema: 'O guardião do topo. Ninguém passa sem saber tudo.', habilidade: 'Sopro a cada 3 rodadas; com metade da vida, uma barreira de 60.',
   },
   {
     id: 'tita-da-coluna', nome: 'Titã da Coluna', sprite: 'golem', variante: 'obsidiana', cenario: 'masmorra', nivel: 'chefe', andarMin: 9,
@@ -148,21 +218,40 @@ function hash(a: number, b: number) {
   return ((h ^ (h >>> 16)) >>> 0) / 4294967296
 }
 
+/** Torre do Título: 100 andares; elite a cada 5, chefe a cada 10, patamar (ponto de retorno) a cada 5. */
+export const TORRE = {
+  andares: 100,
+  patamarACada: 5,
+  /** Crescimento por andar (linear, com o mesmo teto da masmorra). */
+  vidaPorAndar: 0.06,
+  forcaPorAndar: 0.04,
+  pacienciaACada: 10,
+  criticoPorAndar: 0.0016,
+  /** Chefes da Torre, na ordem dos andares 10, 20, 30... (o 100 é o Dragão Ancestral). */
+  chefes: ['guardiao-do-acetabulo', 'senhor-do-anel-pelvico', 'tita-da-coluna', 'rainha-gosma', 'dragao-de-ossos', 'dragao-rubro', 'senhor-do-anel-pelvico', 'tita-da-coluna', 'dragao-rubro'],
+}
+
+/** Andar equivalente da masmorra (para escolher quem aparece na Torre). */
+const equivalente = (andar: number, modo: Modo) => (modo === 'torre' ? 1 + Math.floor((andar - 1) * 0.3) : andar)
+
+const naoExclusivo = (i: Inimigo) => !i.exclusivo
+
 /**
  * Adversário do andar. Determinístico pela semente da partida: a mesma semente
- * repete a mesma masmorra. `anterior` evita repetir o mesmo adversário em seguida.
+ * repete a mesma masmorra.
  */
-export function inimigoDoAndar(andar: number, semente = 0): { inimigo: Inimigo; ciclo: number } {
+export function inimigoDoAndar(andar: number, semente = 0, modo: Modo = 'masmorra'): { inimigo: Inimigo; ciclo: number } {
+  if (modo === 'torre') return inimigoDaTorre(andar, semente)
   const ato = Math.floor((andar - 1) / 3), pos = (andar - 1) % 3
   let base: Inimigo
   if (pos === 2) {
-    const chefes = BESTIARIO.filter((i) => i.nivel === 'chefe' && i.andarMin <= andar)
+    const chefes = BESTIARIO.filter((i) => i.nivel === 'chefe' && i.andarMin <= andar && naoExclusivo(i))
     // o chefe do ato segue a ordem de estreia; depois do último, alterna entre todos
     const novo = chefes.find((c) => Math.floor((c.andarMin - 1) / 3) === ato)
     base = novo ?? chefes[Math.floor(hash(semente, andar) * chefes.length)]
   } else {
     const elite = andar >= ESCALA.eliteDesde && pos === 1 && hash(semente, andar * 7 + 1) < ESCALA.chanceElite
-    const pool = BESTIARIO.filter((i) => i.nivel === (elite ? 'elite' : 'comum') && i.andarMin <= andar)
+    const pool = BESTIARIO.filter((i) => i.nivel === (elite ? 'elite' : 'comum') && i.andarMin <= andar && naoExclusivo(i))
     // o primeiro andar é sempre o Golem (apresentação do jogo)
     if (andar === 1) base = BESTIARIO[0]
     else if (andar === 2) base = BESTIARIO[1]
@@ -185,6 +274,43 @@ export function inimigoDoAndar(andar: number, semente = 0): { inimigo: Inimigo; 
       critico: Math.min(ESCALA.criticoMax, base.critico + ESCALA.criticoPorAto * ato),
       barreira: base.barreira && Math.round(base.barreira * kv),
       regenera: base.regenera && { porRodada: base.regenera.porRodada, total: Math.round(base.regenera.total * kv) },
+      fase2: base.fase2 && { ...base.fase2, forca: +(base.fase2.forca * kf).toFixed(2), barreira: base.fase2.barreira && Math.round(base.fase2.barreira * kv) },
+    },
+  }
+}
+
+function inimigoDaTorre(andar: number, semente: number): { inimigo: Inimigo; ciclo: number } {
+  const eq = equivalente(andar, 'torre')
+  let base: Inimigo
+  if (andar >= TORRE.andares) base = BESTIARIO.find((i) => i.exclusivo?.modo === 'torre' && i.exclusivo.andar === TORRE.andares)!
+  else if (andar % 10 === 0) base = BESTIARIO.find((i) => i.id === TORRE.chefes[(andar / 10 - 1) % TORRE.chefes.length])!
+  else {
+    const elite = andar % 5 === 0
+    const pool = BESTIARIO.filter((i) => i.nivel === (elite ? 'elite' : 'comum') && i.andarMin <= Math.max(eq, elite ? 5 : 1) && naoExclusivo(i))
+    if (andar === 1) base = BESTIARIO[0]
+    else {
+      const preferidos = pool.filter((i) => i.andarMin > eq - 6)
+      const lista = preferidos.length && hash(semente, andar * 13) < 0.55 ? preferidos : pool
+      base = lista[Math.floor(hash(semente, andar * 31 + 5) * lista.length)]
+    }
+  }
+  const k = andar - 1
+  const kv = Math.min(ESCALA.vidaMax, 1 + TORRE.vidaPorAndar * k)
+  const kf = Math.min(ESCALA.forcaMax, 1 + TORRE.forcaPorAndar * k)
+  const ciclo = Math.floor(k / 10)
+  // o cenário da Torre muda a cada 10 andares, sempre com o salão no andar do chefe
+  const cenario: Cenario = andar % 10 === 0 ? (andar >= TORRE.andares ? 'torre' : base.cenario) : (['campo', 'masmorra', 'torre', 'covil', 'torre'] as const)[ciclo % 5]
+  return {
+    ciclo,
+    inimigo: {
+      ...base,
+      cenario,
+      vida: Math.round(base.vida * kv),
+      forca: +(base.forca * kf).toFixed(2),
+      paciencia: Math.max(ESCALA.pacienciaMin, base.paciencia - Math.floor(k / TORRE.pacienciaACada)),
+      critico: Math.min(ESCALA.criticoMax, base.critico + TORRE.criticoPorAndar * k),
+      barreira: base.barreira && Math.round(base.barreira * kv),
+      regenera: base.regenera && { porRodada: Math.round(base.regenera.porRodada * Math.sqrt(kv)), total: Math.round(base.regenera.total * kv) },
       fase2: base.fase2 && { ...base.fase2, forca: +(base.fase2.forca * kf).toFixed(2), barreira: base.fase2.barreira && Math.round(base.fase2.barreira * kv) },
     },
   }

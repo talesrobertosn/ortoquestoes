@@ -1,5 +1,5 @@
 import { usarContextoLocal } from '../estado/usarContextoLocal'
-import { type CSSProperties, useMemo, useState } from 'react'
+import { type CSSProperties, lazy, Suspense, useMemo, useState } from 'react'
 import { usarIndice } from '../dados/usarIndice'
 import { contar, montarSessao } from '../dados/acervo'
 import { AREAS_TREINO, FILTROS_VAZIOS } from '../dados/tipos'
@@ -17,7 +17,7 @@ import { SecaoIndique } from '../componentes/SecaoIndique'
 import { CartaoPlanos } from '../componentes/CartaoPlanos'
 import { IconePixel } from '../componentes/IconePixel'
 import { usarConquistas } from '../estado/usarConquistas'
-import { recurso } from '../config'
+import { FLASHCARDS_NA_CAPA, recurso } from '../config'
 import '@fontsource/pixelify-sans/latin-700.css'
 import { type ResumoHistorico, usarSessao } from '../estado/sessao'
 import { usarArmazenado } from '../estado/usarArmazenado'
@@ -294,6 +294,7 @@ export function Inicio() {
 
           {!cronograma.calculo && <AteAProva total={indice.total} conta={Boolean(conta)} />}
 
+          <ParComCripta>
           <section className="inicio-ranking" aria-label="Ranking e conquistas">
             <img className="inicio-ranking__coroa" src={recurso('emblemas/podio-1.png')} alt="" width={72} height={72} />
             <div className="inicio-ranking__texto">
@@ -309,6 +310,7 @@ export function Inicio() {
               <a className="botao inicio-ranking__secundario" href={href('/conquistas')}>Minhas conquistas</a>
             </div>
           </section>
+          </ParComCripta>
 
           <CartaoPlanos />
 
@@ -475,4 +477,13 @@ export function Inicio() {
       )}
     </div>
   )
+}
+
+/** Cartão da Cripta (só carrega o código do jogo quando a trava estiver ligada). */
+const CartaoCripta = lazy(() => import('../componentes/CartaoCripta').then(({ CartaoCripta }) => ({ default: CartaoCripta })))
+
+/** Ao lado do banner do ranking, quando VITE_FLASHCARDS_CAPA=1; sem a trava, o banner fica sozinho como sempre. */
+function ParComCripta({ children }: { children: React.ReactNode }) {
+  if (!FLASHCARDS_NA_CAPA) return <>{children}</>
+  return <div className="inicio-par">{children}<Suspense fallback={null}><CartaoCripta /></Suspense></div>
 }

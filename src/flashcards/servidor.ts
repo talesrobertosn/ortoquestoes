@@ -13,6 +13,8 @@ import { chamarRpc } from '../servicos/supabase'
 import { CHAVE_RECORDES, CHAVE_REGISTROS, RECORDES_VAZIOS, type Recordes, type RegistroFlashcard } from './progresso'
 
 export const FLASHCARDS_NO_SERVIDOR = LIMITES_HABILITADOS && import.meta.env?.VITE_FLASHCARDS_LIMITE === 'true'
+/** Ranking no servidor (migration 202610130200_flashcards_ranking.sql): só com a outra trava e VITE_FLASHCARDS_RANKING=1. */
+export const RANKING_NO_SERVIDOR = FLASHCARDS_NO_SERVIDOR && import.meta.env?.VITE_FLASHCARDS_RANKING === '1'
 
 export interface LimiteFlashcard { permitido: boolean; ilimitado: boolean; restantes: number | null; liberaEm: string; motivo?: string; falha?: boolean }
 
@@ -44,6 +46,7 @@ export function mesclarRecordes(a: Partial<Recordes>, b: Partial<Recordes>): Rec
   const x = { ...RECORDES_VAZIOS, ...a }, y = { ...RECORDES_VAZIOS, ...b }
   return {
     versao: 1, andarMaximo: Math.max(x.andarMaximo, y.andarMaximo), partidas: Math.max(x.partidas, y.partidas),
+    torreMaximo: Math.max(x.torreMaximo ?? 0, y.torreMaximo ?? 0), torreConcluida: Math.max(x.torreConcluida ?? 0, y.torreConcluida ?? 0),
     chefesDerrotados: Math.max(x.chefesDerrotados, y.chefesDerrotados), melhorSequencia: Math.max(x.melhorSequencia, y.melhorSequencia),
     respostas: Math.max(x.respostas, y.respostas), atualizadoEm: Math.max(x.atualizadoEm, y.atualizadoEm),
   }
@@ -63,4 +66,33 @@ export async function sincronizarProgresso(): Promise<boolean> {
   } catch {
     return false
   }
+}
+
+/* ------------------------------------------------------------ Ranking (desligado por padrão) */
+
+export type TipoRanking = 'masmorra' | 'torre' | 'unicos'
+export interface LinhaRanking { posicao: number; apelido: string; valor: number; ehVoce: boolean }
+
+/** Abre a corrida no servidor: o andar só vale para o ranking se a corrida tiver flashcards autorizados. */
+export async function iniciarCorrida(id: string, modo: 'masmorra' | 'torre') {
+  if (!RANKING_NO_SERVIDOR) return
+  try { await chamarRpc('iniciar_corrida_flashcards', { p_id: id, p_modo: modo }) } catch { /* o jogo segue; o recorde fica só no aparelho */ }
+}
+
+export async function vincularFlashcard(chave: string, corrida: string) {
+  if (!RANKING_NO_SERVIDOR) return
+  try { await chamarRpc('vincular_flashcard_corrida', { p_chave_idempotencia: chave, p_corrida: corrida }) } catch { /* idem */ }
+}
+
+export async function registrarAndar(corrida: string, andar: number) {
+  if (!RANKING_NO_SERVIDOR) return
+  try { await chamarRpc('registrar_andar_flashcards', { p_corrida: corrida, p_andar: andar }) } catch { /* idem */ }
+}
+
+export async function lerRanking(tipo: TipoRanking): Promise<LinhaRanking[] | null> {
+  if (!RANKING_NO_SERVIDOR) return null
+  try {
+    const linhas = await chamarRpc<Array<{ posicao: number; apelido: string; valor: number; eh_voce: boolean }>>('ranking_flashcards', { p_tipo: tipo })
+    return linhas.map((l) => ({ posicao: Number(l.posicao), apelido: l.apelido, valor: Number(l.valor), ehVoce: Boolean(l.eh_voce) }))
+  } catch { return null }
 }

@@ -862,3 +862,214 @@
 @media (prefers-reduced-motion: reduce) {
   .fc-modal, .fc-modal-veu { animation: none; }
 }
+
+/* ============================================================ Cripta do Residente (13/10/2026) */
+/* ---- recompensas épicas e lendárias, bênçãos dos patronos */
+.fc-recompensa--epica { --borda: #b07cff; background: radial-gradient(ellipse at 50% 18%, color-mix(in srgb, var(--cor) 55%, transparent), transparent 62%), linear-gradient(#2a1840, #100818); }
+.fc-recompensa--lendaria { --borda: #ff9a3c; background: radial-gradient(ellipse at 50% 18%, color-mix(in srgb, var(--cor) 60%, transparent), transparent 62%), linear-gradient(#3a1e0c, #140804); animation: fc-recompensa .55s cubic-bezier(.2, .9, .3, 1.2) both, fc-lendaria 2.2s ease-in-out infinite .6s; }
+.fc-recompensa--epica::after, .fc-recompensa--lendaria::after { content: ""; position: absolute; inset: 0; border-radius: 20px; pointer-events: none; mix-blend-mode: overlay;
+  background: linear-gradient(115deg, transparent 30%, rgba(255, 120, 240, .5) 42%, rgba(120, 220, 255, .6) 50%, rgba(255, 240, 140, .5) 58%, transparent 70%) no-repeat; background-size: 280% 100%; animation: fc-folha 2.6s ease-in-out infinite; }
+@keyframes fc-lendaria { 50% { box-shadow: 0 0 0 2px #120a04, 0 0 0 5px #ffd76a, 0 0 0 6px #120a04, 0 0 60px rgba(255, 150, 60, .75), 0 18px 34px rgba(0, 0, 0, .6); } }
+.fc-recompensa__patrono { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; }
+.fc-recompensa__patrono em { display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px 2px 4px; border-radius: 999px; font: 700 11.5px var(--fc-ui); font-style: normal; color: #1b130b; background: color-mix(in srgb, var(--cor) 80%, #fff); box-shadow: 0 0 0 1.5px #120a04; }
+.fc-modal .fc-recompensa__patrono .fc-sprite--icone { width: 18px; height: 18px; }
+
+/* ---- flashcard brilhante: holograma que corre pela moldura */
+.fc-carta--brilhante .fc-carta__borda { position: relative; }
+.fc-carta--brilhante::after { content: ""; position: absolute; inset: -3px; border-radius: 26px; pointer-events: none; z-index: 3; mix-blend-mode: color-dodge; opacity: .55;
+  background: conic-gradient(from var(--fc-giro, 0deg), #ff6ad5, #ffd76a, #7fffd8, #7fb2ff, #c890ff, #ff6ad5); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; padding: 4px;
+  animation: fc-holograma 3s linear infinite; }
+.fc-carta--brilhante .fc-carta__cabeca::after { content: "✦ Brilhante"; margin-left: 8px; padding: 1px 8px; border-radius: 999px; font: 800 11px var(--fc-ui); letter-spacing: .08em; text-transform: uppercase; color: #2a1606; background: linear-gradient(90deg, #ffd76a, #ff9ad8, #9fe8ff); }
+@property --fc-giro { syntax: '<angle>'; inherits: false; initial-value: 0deg; }
+@keyframes fc-holograma { to { --fc-giro: 360deg; } }
+
+/* ---- HUD: moedas, desgaste, intenção do sopro, brasas, escalada da Torre */
+.fc-bolsa { display: inline-flex; align-items: center; gap: 3px; padding: 1px 8px 1px 3px; border-radius: 999px; background: rgba(0, 0, 0, .45); box-shadow: inset 0 0 0 1px rgba(255, 210, 74, .5); font: 800 13px var(--fc-ui); color: #ffe08a; }
+.fc-modal .fc-bolsa .fc-sprite--icone { width: 18px; height: 18px; }
+.fc-desgaste { padding: 1px 7px; border-radius: 999px; font: 700 11.5px var(--fc-ui); color: #ffcf9a; background: rgba(90, 30, 10, .55); }
+.fc-info--brasa { color: #ffd0a0 !important; background: rgba(140, 40, 10, .55) !important; }
+.fc-intencao--sopro .fc-intencao__gema { background: radial-gradient(circle at 40% 30%, #9fe8ff, #2a6a9a 70%) !important; box-shadow: 0 0 0 2px #061826, 0 0 22px rgba(127, 224, 255, .8) !important; animation: fc-aura 0.8s ease-in-out infinite; }
+.fc-escalada { position: relative; display: inline-block; width: 110px; height: 8px; border-radius: 999px; background: rgba(0, 0, 0, .55); box-shadow: inset 0 0 0 1px rgba(233, 185, 85, .45); overflow: hidden; vertical-align: middle; }
+.fc-escalada i { position: absolute; inset: 0 auto 0 0; border-radius: inherit; background: linear-gradient(90deg, #7fb2ff, #c890ff, #ffd76a); }
+.fc-escalada--grande { width: 100%; height: 10px; }
+
+/* ---- impacto: pausa (hit-stop), clarão branco no sprite, divisão da gosma */
+.fc-pausa-impacto .fc-ator__corpo, .fc-pausa-impacto .fc-carta { animation-play-state: paused !important; }
+.fc-anim-clarao .fc-ator__quadros { filter: brightness(2.6) saturate(.2) drop-shadow(0 0 6px #fff) !important; }
+.fc-anim-divide { animation: fc-divide .7s ease-out; }
+@keyframes fc-divide { 30% { transform: scaleX(1.25) scaleY(.8); } 60% { transform: scaleX(.85) scaleY(1.15); } }
+
+/* ---- portas (entre os andares) */
+.fc-veu--portas { background: radial-gradient(ellipse at 50% 60%, rgba(30, 20, 40, .8), rgba(3, 2, 5, .95) 70%) !important; }
+.fc-corredor { width: min(1000px, 100%); display: grid; gap: 18px; justify-items: center; }
+.fc-corredor__cabeca { text-align: center; }
+.fc-corredor__cabeca h2 { margin: 0; font: 900 clamp(24px, 2.8vw, 36px)/1.1 var(--fc-titulo); letter-spacing: .06em; color: #ffe7a0; text-shadow: 0 2px 0 #000, 0 0 26px rgba(255, 190, 80, .45); }
+.fc-corredor__cabeca p { margin: 6px 0 0; font: 500 15px var(--fc-ui); color: #e0d0b4; }
+.fc-portas { display: flex; flex-wrap: wrap; justify-content: center; gap: clamp(12px, 2.4vw, 28px); width: 100%; }
+.fc-porta { position: relative; flex: 1 1 180px; max-width: 240px; display: grid; justify-items: center; gap: 8px; padding: 0 10px 16px; border: 0; background: none; color: #fff3d6; cursor: pointer; text-align: center;
+  animation: fc-recompensa .5s cubic-bezier(.2, .9, .3, 1.2) both; animation-delay: calc(var(--i) * 100ms); transition: transform .25s, opacity .3s, filter .3s; }
+.fc-porta__arco { position: relative; width: 100%; aspect-ratio: 3 / 4; max-height: 300px; border-radius: 999px 999px 10px 10px; overflow: hidden;
+  background: linear-gradient(#3a3448, #1c1828); box-shadow: 0 0 0 3px #120a04, 0 0 0 7px #6e6656, 0 0 0 9px #2a2620, inset 0 0 40px rgba(0, 0, 0, .8), 0 0 40px color-mix(in srgb, var(--cor) 40%, transparent); }
+.fc-porta__luz { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 60%, color-mix(in srgb, var(--cor) 85%, #fff), color-mix(in srgb, var(--cor) 40%, transparent) 45%, transparent 75%); opacity: .55; animation: fc-aura 2.2s ease-in-out infinite; }
+.fc-porta__folha { position: absolute; top: 0; bottom: 0; width: 50%; z-index: 1; background: repeating-linear-gradient(90deg, #5a3a1e 0 10px, #4a2c16 10px 12px), linear-gradient(#6a4022, #3a2410); box-shadow: inset 0 0 0 2px #1e1006; transition: transform .55s cubic-bezier(.5, 0, .3, 1); transform-origin: left; }
+.fc-porta__folha--e { left: 0; border-radius: 999px 0 0 0; }
+.fc-porta__folha--d { right: 0; border-radius: 0 999px 0 0; transform-origin: right; }
+.fc-porta__folha::after { content: ""; position: absolute; top: 55%; width: 8px; height: 8px; border-radius: 50%; background: #f2c45a; box-shadow: 0 0 0 1px #3a2408; }
+.fc-porta__folha--e::after { right: 8px; } .fc-porta__folha--d::after { left: 8px; }
+.fc-porta__selo { position: absolute; top: 28%; left: 50%; z-index: 2; transform: translate(-50%, -50%); width: 86px; height: 86px; display: grid; place-items: center; border-radius: 50%;
+  background: radial-gradient(circle at 40% 32%, color-mix(in srgb, var(--cor) 50%, #2a1a26), #0e0810 72%); box-shadow: 0 0 0 3px #120a04, 0 0 0 5px var(--cor), 0 0 30px var(--cor); }
+.fc-modal .fc-porta__selo .fc-sprite { width: 58px; height: 58px; }
+.fc-porta strong { font: 900 18px/1.15 var(--fc-titulo); color: #ffe7a0; }
+.fc-porta small { font: 500 14px/1.35 var(--fc-texto); color: #e0d0b4; }
+.fc-porta:not(:disabled):hover, .fc-porta:focus-visible { transform: translateY(-8px); }
+.fc-porta:focus-visible .fc-porta__arco { outline: 3px solid var(--fc-ouro); outline-offset: 6px; }
+.fc-porta--aberta .fc-porta__folha--e { transform: perspective(500px) rotateY(-80deg); }
+.fc-porta--aberta .fc-porta__folha--d { transform: perspective(500px) rotateY(80deg); }
+.fc-porta--aberta .fc-porta__luz { opacity: 1; animation: none; }
+.fc-porta--recua { opacity: .3; filter: saturate(.3) brightness(.6); }
+.fc-porta--chefe .fc-porta__arco { box-shadow: 0 0 0 3px #120a04, 0 0 0 7px #a8241c, 0 0 0 9px #2a0606, inset 0 0 40px rgba(0, 0, 0, .8), 0 0 60px rgba(255, 70, 40, .6); }
+
+/* ---- salas: loja e Velho Preceptor */
+.fc-veu--sala { background: radial-gradient(ellipse at 30% 50%, rgba(30, 24, 16, .86), rgba(4, 3, 5, .95) 70%) !important; }
+.fc-sala { width: min(920px, 100%); display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: end; gap: clamp(12px, 3vw, 32px); }
+.fc-sala__npc { display: grid; place-items: end center; padding-bottom: 20px; }
+.fc-sala__conteudo { display: grid; gap: 12px; padding: 22px; border-radius: 20px; background: linear-gradient(#2a1d24, #120b10); box-shadow: 0 0 0 2px #120a04, 0 0 0 4px rgba(233, 185, 85, .55), 0 0 0 5px #120a04, 0 24px 50px rgba(0, 0, 0, .6); }
+.fc-sala__conteudo h2 { margin: 0; font: 900 clamp(22px, 2.4vw, 30px) var(--fc-titulo); color: #ffe7a0; }
+.fc-fala { position: relative; margin: 0; min-height: 3em; padding: 12px 14px; border-radius: 14px; font: 500 17px/1.45 var(--fc-texto); color: #2b1b10; background: var(--fc-pergaminho); box-shadow: inset 0 0 0 2px #c8a872; cursor: pointer; }
+.fc-fala__cursor { display: inline-block; width: 8px; height: 1em; margin-left: 2px; vertical-align: -2px; background: #8a6a3a; animation: fc-pisca 1s steps(1) infinite; }
+@keyframes fc-pisca { 50% { opacity: 0; } }
+.fc-sala__ouro { margin: 0; display: flex; align-items: center; gap: 6px; font: 600 15px var(--fc-ui); color: #ffe08a; }
+.fc-modal .fc-sala__ouro .fc-sprite--icone { width: 22px; height: 22px; }
+.fc-loja, .fc-talentos { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.fc-loja__item, .fc-talento { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 12px; padding: 10px 12px; border-radius: 14px; background: rgba(0, 0, 0, .35); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--cor, #e9b955) 50%, #4a3424); }
+.fc-loja__item--rara, .fc-loja__item--epica { box-shadow: inset 0 0 0 1.5px var(--cor), 0 0 16px color-mix(in srgb, var(--cor) 30%, transparent); }
+.fc-loja__item--vendido { opacity: .45; filter: saturate(.3); }
+.fc-loja__icone { width: 52px; height: 52px; display: grid; place-items: center; border-radius: 12px; background: radial-gradient(circle at 40% 32%, color-mix(in srgb, var(--cor, #e9b955) 40%, #2a1a26), #0e0810 72%); box-shadow: 0 0 0 2px #120a04; }
+.fc-modal .fc-loja__icone .fc-sprite { width: 38px; height: 38px; }
+.fc-loja__texto, .fc-talento__texto { display: grid; gap: 2px; min-width: 0; }
+.fc-loja__texto strong, .fc-talento__texto strong { font: 800 15.5px var(--fc-titulo); color: #fff3d6; }
+.fc-loja__texto small, .fc-talento__texto small { font: 500 14px/1.35 var(--fc-texto); color: #e0d0b0; }
+.fc-loja__texto em { font: 700 11.5px var(--fc-ui); font-style: normal; color: var(--cor); }
+.fc-loja__preco { display: inline-flex; align-items: center; gap: 4px; min-height: 42px; padding: 6px 14px; }
+.fc-modal .fc-loja__preco .fc-sprite--icone { width: 20px; height: 20px; }
+.fc-loja__preco:disabled { filter: grayscale(.8) brightness(.7); cursor: not-allowed; transform: none; }
+.fc-ofertas { display: grid; gap: 8px; }
+.fc-oferta { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: 12px; padding: 10px 12px; border: 0; border-radius: 14px; text-align: left; cursor: pointer; color: #fff3d6; background: rgba(0, 0, 0, .35); box-shadow: inset 0 0 0 1.5px color-mix(in srgb, var(--cor) 60%, #4a3424); transition: transform .2s, box-shadow .2s; }
+.fc-oferta span { display: grid; gap: 2px; }
+.fc-oferta strong { font: 800 16px var(--fc-titulo); }
+.fc-oferta small { font: 500 14px/1.35 var(--fc-texto); color: #e0d0b0; }
+.fc-oferta:hover, .fc-oferta:focus-visible { transform: translateX(4px); box-shadow: inset 0 0 0 2px var(--cor), 0 0 20px color-mix(in srgb, var(--cor) 40%, transparent); }
+.fc-ator--npc .fc-ator__aura { opacity: .8; background: radial-gradient(closest-side, rgba(160, 200, 255, .35), transparent); animation: fc-aura 3s ease-in-out infinite; }
+
+/* ---- o Velho Preceptor aparecendo no meio da luta */
+.fc-ajuda { position: absolute; left: 3%; bottom: 22%; z-index: 66; display: flex; align-items: flex-end; gap: 8px; pointer-events: none; animation: fc-ajuda 1.7s ease-in-out both; }
+@keyframes fc-ajuda { 0% { opacity: 0; transform: translateX(-40px); } 15%, 85% { opacity: 1; transform: none; } 100% { opacity: 0; transform: translateY(-20px); } }
+.fc-ajuda__balao { max-width: 240px; display: grid; gap: 2px; padding: 10px 12px; border-radius: 14px 14px 14px 4px; background: var(--fc-pergaminho); color: #2b1b10; box-shadow: 0 0 0 2px #120a04, 0 10px 24px rgba(0, 0, 0, .5); }
+.fc-ajuda__balao strong { font: 900 16px var(--fc-titulo); }
+.fc-ajuda__balao small { font: 500 14px/1.35 var(--fc-texto); }
+
+/* ---- cartaz do chefe */
+.fc-titulo-chefe { position: absolute; inset: 0; z-index: 67; display: grid; place-content: center; justify-items: center; gap: 4px; pointer-events: none; text-align: center; animation: fc-titulo-chefe 1.7s ease-in-out both; }
+.fc-titulo-chefe__faixa { position: absolute; left: 0; right: 0; top: 50%; height: 150px; transform: translateY(-50%); background: linear-gradient(90deg, transparent, rgba(10, 0, 0, .9) 18%, rgba(10, 0, 0, .9) 82%, transparent); box-shadow: 0 -2px 0 rgba(255, 90, 60, .6), 0 2px 0 rgba(255, 90, 60, .6); }
+.fc-titulo-chefe__silhueta { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -62%); opacity: .25; filter: brightness(0) drop-shadow(0 0 20px rgba(255, 80, 40, .8)); }
+.fc-titulo-chefe strong { position: relative; font: 900 clamp(30px, 5vw, 64px)/1 var(--fc-titulo); letter-spacing: .08em; color: #fff1d0; text-shadow: 0 3px 0 #000, 0 0 30px rgba(255, 80, 40, .8); text-transform: uppercase; }
+.fc-titulo-chefe em { position: relative; font: italic 500 clamp(15px, 1.8vw, 20px) var(--fc-texto); color: #ffcf9a; }
+@keyframes fc-titulo-chefe { 0% { opacity: 0; transform: scale(1.15); } 12%, 82% { opacity: 1; transform: none; } 100% { opacity: 0; } }
+
+/* ---- Entrada da Cripta */
+.fc-entrada { display: block; overflow-y: auto; }
+.fc-entrada__miolo { position: relative; z-index: 5; min-height: 100%; display: grid; align-content: start; justify-items: center; gap: clamp(10px, 2vh, 20px); padding: clamp(24px, 4vh, 48px) clamp(14px, 3vw, 40px) 28px; }
+.fc-entrada__cabeca { text-align: center; max-width: 760px; }
+.fc-entrada__selo { display: inline-block; padding: 3px 14px; border-radius: 999px; font: 800 12px var(--fc-ui); letter-spacing: .16em; text-transform: uppercase; color: #1b130b; background: linear-gradient(#fff3c8, #e9b955); box-shadow: 0 0 0 2px #120a04; }
+.fc-entrada__cabeca h1 { margin: 10px 0 6px; font: 900 clamp(34px, 6vw, 72px)/1 var(--fc-titulo); letter-spacing: .04em; color: #fff1d0; text-shadow: 0 4px 0 #000, 0 0 40px rgba(255, 120, 50, .6); }
+.fc-entrada__cabeca h1 em { font-style: normal; color: #ffb04a; }
+.fc-entrada__cabeca p { margin: 0 auto; max-width: 620px; font: 500 clamp(15px, 1.6vw, 18px)/1.5 var(--fc-texto); color: #f0e2c4; text-shadow: 0 2px 4px rgba(0, 0, 0, .8); }
+.fc-entrada__palco { display: flex; align-items: flex-end; justify-content: center; gap: clamp(18px, 4vw, 54px); min-height: 120px; }
+.fc-modos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(10px, 1.8vw, 20px); width: min(1100px, 100%); }
+.fc-modo { position: relative; display: grid; align-content: start; justify-items: start; gap: 8px; padding: 20px 18px 18px; border: 0; border-radius: 20px; text-align: left; cursor: pointer; color: #fff3d6;
+  background: radial-gradient(ellipse at 20% 0%, var(--tom, rgba(255, 140, 60, .35)), transparent 60%), linear-gradient(#2a1d24, #110a0e);
+  box-shadow: 0 0 0 2px #120a04, 0 0 0 4px var(--borda, #a0703a), 0 0 0 5px #120a04, 0 18px 34px rgba(0, 0, 0, .6); transition: transform .22s, box-shadow .22s; }
+.fc-modo--cripta { --tom: rgba(255, 110, 40, .4); --borda: #c86a2a; }
+.fc-modo--torre { --tom: rgba(160, 120, 255, .42); --borda: #8a6ae0; }
+.fc-modo--biblioteca { --tom: rgba(120, 200, 140, .35); --borda: #5a9a6a; }
+.fc-modo:hover, .fc-modo:focus-visible { transform: translateY(-6px); box-shadow: 0 0 0 2px #120a04, 0 0 0 4px #fff1b0, 0 0 0 5px #120a04, 0 0 40px var(--tom), 0 24px 40px rgba(0, 0, 0, .65); }
+.fc-modo__icone { width: 60px; height: 60px; display: grid; place-items: center; border-radius: 14px; background: rgba(0, 0, 0, .45); box-shadow: 0 0 0 2px #120a04, inset 0 0 0 1.5px var(--borda); }
+.fc-modal .fc-modo__icone .fc-sprite { width: 44px; height: 44px; }
+.fc-modo strong { font: 900 clamp(19px, 1.8vw, 24px)/1.1 var(--fc-titulo); color: #ffe7a0; }
+.fc-modo small { font: 500 15px/1.45 var(--fc-texto); color: #e8d8b8; }
+.fc-modo__dados { font: 600 13.5px var(--fc-ui); color: #d8c8a8; }
+.fc-modo__dados b { color: #fff3d6; }
+.fc-modo__acao { margin-top: 4px; padding: 8px 16px; border-radius: 12px; font: 800 15px var(--fc-titulo); letter-spacing: .04em; color: #2a1606; background: linear-gradient(#f6d684, #c18c2e); box-shadow: 0 0 0 2px #120a04, 0 3px 0 #6b4a1c; }
+.fc-entrada__extras { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.fc-extra { display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 8px 16px 8px 10px; border: 0; border-radius: 14px; cursor: pointer; text-align: left; text-decoration: none; color: #fff3d6; background: rgba(10, 6, 8, .72); box-shadow: 0 0 0 2px #120a04, inset 0 0 0 1.5px rgba(233, 185, 85, .45); }
+.fc-extra:hover { box-shadow: 0 0 0 2px #120a04, inset 0 0 0 2px var(--fc-ouro), 0 0 16px rgba(233, 185, 85, .35); }
+.fc-modal .fc-extra .fc-sprite--icone { width: 32px; height: 32px; }
+.fc-extra span { display: grid; }
+.fc-extra strong { font: 800 15px var(--fc-titulo); }
+.fc-extra small { font: 500 12.5px var(--fc-ui); color: #d8c8a8; }
+.fc-talento__niveis { display: flex; gap: 4px; margin-top: 4px; }
+.fc-talento__niveis i { width: 14px; height: 6px; border-radius: 3px; background: rgba(255, 255, 255, .15); }
+.fc-talento__niveis i.aceso { background: linear-gradient(90deg, #ffd76a, #ff9a3c); box-shadow: 0 0 6px rgba(255, 200, 90, .7); }
+.fc-bestas { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; }
+.fc-besta { position: relative; display: grid; grid-template-columns: 96px minmax(0, 1fr); align-items: center; gap: 10px; padding: 10px; border-radius: 14px; background: rgba(0, 0, 0, .35); box-shadow: inset 0 0 0 1px rgba(233, 185, 85, .3); }
+.fc-besta__retrato { height: 96px; display: grid; place-items: end center; overflow: hidden; }
+.fc-besta--oculta .fc-besta__retrato { filter: brightness(0) opacity(.55); }
+.fc-besta__texto { display: grid; gap: 2px; }
+.fc-besta__texto strong { font: 800 15px var(--fc-titulo); color: #fff3d6; }
+.fc-besta__texto small { font: 500 13px/1.35 var(--fc-texto); color: #d8c8a8; }
+.fc-besta__hab { color: #c8e0ff !important; }
+.fc-besta .fc-selo { position: absolute; top: 6px; right: 6px; }
+.fc-abas--ranking { justify-self: center; }
+.fc-ranking__miolo { gap: 14px; }
+.fc-ranking__painel { width: min(760px, 100%); }
+.fc-ranking__bloco { display: grid; gap: 8px; }
+.fc-ranking__lista { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.fc-ranking__lista li { display: grid; grid-template-columns: 40px minmax(0, 1fr) auto; align-items: center; gap: 10px; padding: 8px 12px; border-radius: 12px; background: rgba(0, 0, 0, .35); font: 600 15px var(--fc-ui); }
+.fc-ranking__lista b { font: 900 18px var(--fc-titulo); color: #ffe7a0; text-align: center; }
+.fc-ranking__lista em { font-style: normal; font-weight: 800; color: #fff3d6; }
+.fc-ranking__podio--1 { box-shadow: inset 0 0 0 2px #ffd76a, 0 0 18px rgba(255, 210, 100, .3); }
+.fc-ranking__podio--2 { box-shadow: inset 0 0 0 2px #d8e2f0; }
+.fc-ranking__podio--3 { box-shadow: inset 0 0 0 2px #c8885a; }
+.fc-ranking__voce { background: rgba(120, 90, 30, .45) !important; }
+
+@media (max-width: 860px) {
+  .fc-modos { grid-template-columns: 1fr; }
+  .fc-modo { grid-template-columns: auto minmax(0, 1fr); column-gap: 12px; }
+  .fc-modo__icone { grid-row: span 2; }
+  .fc-modo small, .fc-modo__dados, .fc-modo__acao, .fc-modo .fc-escalada { grid-column: 1 / -1; }
+  .fc-sala { grid-template-columns: 1fr; }
+  .fc-sala__npc { padding: 0; }
+  .fc-sala__npc .fc-ator { transform: scale(.75); transform-origin: bottom center; }
+}
+@media (max-width: 640px) {
+  .fc-entrada__palco { min-height: 90px; transform: scale(.8); }
+  .fc-portas { gap: 10px; }
+  .fc-porta { flex: 1 1 30%; max-width: none; padding: 0 2px 8px; }
+  .fc-porta__arco { max-height: 190px; }
+  .fc-porta__selo { width: 58px; height: 58px; }
+  .fc-modal .fc-porta__selo .fc-sprite { width: 40px; height: 40px; }
+  .fc-porta strong { font-size: 14.5px; }
+  .fc-porta small { font-size: 12.5px; }
+  .fc-sala__conteudo { padding: 14px; }
+  .fc-fala { font-size: 15.5px; }
+  .fc-loja__item, .fc-talento { grid-template-columns: auto minmax(0, 1fr); }
+  .fc-loja__preco { grid-column: 1 / -1; justify-self: end; }
+  .fc-bolsa { font-size: 12px; }
+  .fc-desgaste { display: none; }
+  .fc-ajuda { bottom: 30%; }
+  .fc-ajuda__balao { max-width: 180px; }
+  .fc-titulo-chefe__faixa { height: 110px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .fc-recompensa--lendaria, .fc-carta--brilhante::after, .fc-porta__luz { animation: none !important; }
+}
+.fc-arena--reduzida .fc-carta--brilhante::after { animation: none; }
+.fc-bestiario { max-height: 100%; grid-template-rows: auto auto minmax(0, 1fr) auto; }
+.fc-bestiario .fc-bestas { overflow-y: auto; max-height: 62dvh; padding-right: 4px; }
+.fc-topo__progresso .fc-bolsa { margin-left: 4px; }
+.fc-bolsa--celular { display: none; }
+.fc-porta:focus-visible { outline: none; }
+@media (max-width: 640px) {
+  .fc-bolsa--celular { display: inline-flex; }
+  .fc-veu--portas, .fc-veu--sala { background: rgba(6, 4, 8, .96) !important; }
+}

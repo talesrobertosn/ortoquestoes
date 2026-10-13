@@ -42,6 +42,14 @@ Marque `[x]` ao concluir e anote a data e o PR. Uma etapa só começa quando a a
 - [ ] Foco (proposta em BATALHA.md), se aprovado
 - [ ] Teste de fluidez em celular de entrada (60 quadros por segundo nas animações)
 
+## Etapa 3b: Cripta do Residente (13/10/2026)
+- [x] Entrada própria, nome novo, Torre do Título com patamares, portas, loja, Velho Preceptor
+- [x] Bênçãos de patronos com duplas, raridades épica e lendária, flashcards brilhantes, Altar do Saber
+- [x] Bestiário, dragões e adversários novos, cenários covil e torre, herói com peças por estágio, música nova
+- [x] Ranking (SQL e página), conquistas, cartão da capa e seção de vendas: prontos e desligados
+- [ ] O Tales joga a Torre e aprova a curva de dificuldade
+- [ ] Aplicar as migrations e ligar as travas (limite, ranking, capa, vendas)
+
 ## Etapa 4: coleção e desafio
 - [ ] Livro de flashcards (dominados brilhantes, progresso por assunto)
 - [ ] Desafio do dia com semente pela data e ranking

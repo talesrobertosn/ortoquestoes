@@ -11,13 +11,14 @@ interface Particula {
   x: number; y: number; vx: number; vy: number
   vida: number; total: number
   tam: number; cor: string
-  forma: 'brilho' | 'faisca' | 'quadrado' | 'caco' | 'confete' | 'lasca'
+  forma: 'brilho' | 'faisca' | 'quadrado' | 'caco' | 'confete' | 'lasca' | 'moeda'
   /** Partícula que é atraída para um ponto (carga de energia). */
   alvo?: Ponto
   gravidade: number; atrito: number
   giro?: number; angulo?: number
 }
 
+interface Raio { pts: Ponto[]; vida: number; total: number; cor: string; largura: number }
 interface Onda { x: number; y: number; raio: number; max: number; vida: number; total: number; cor: string; largura: number }
 interface Corte { x: number; y: number; raio: number; inicio: number; vida: number; total: number; cor: string; largura: number }
 interface Clarao { x: number; y: number; raio: number; vida: number; total: number; cor: string; forca: number }
@@ -60,6 +61,7 @@ export class Palco {
   private cortes: Corte[] = []
   private projeteis: Projetil[] = []
   private claroes: Clarao[] = []
+  private raios: Raio[] = []
   private quadro = 0
   private anterior = 0
   private dpr = 1
@@ -79,7 +81,7 @@ export class Palco {
 
   /** Para tudo e limpa a tela (pular animação, sair da partida). */
   limpar() {
-    this.particulas = []; this.ondas = []; this.cortes = []; this.claroes = []
+    this.particulas = []; this.ondas = []; this.cortes = []; this.claroes = []; this.raios = []
     const chegadas = this.projeteis.map((p) => p.aoChegar)
     this.projeteis = []
     chegadas.forEach((f) => f())
@@ -95,7 +97,7 @@ export class Palco {
       this.anterior = agora
       this.atualizar(dt)
       this.desenhar()
-      const vivos = this.particulas.length + this.ondas.length + this.cortes.length + this.projeteis.length + this.claroes.length
+      const vivos = this.particulas.length + this.ondas.length + this.cortes.length + this.projeteis.length + this.claroes.length + this.raios.length
       this.quadro = vivos ? requestAnimationFrame(passo) : 0
       if (!vivos) this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height)
     }
@@ -117,6 +119,8 @@ export class Palco {
     for (const c of this.cortes) c.vida -= dt
     for (const k of this.claroes) k.vida -= dt
     this.claroes = this.claroes.filter((k) => k.vida > 0)
+    for (const r of this.raios) r.vida -= dt
+    this.raios = this.raios.filter((r) => r.vida > 0)
     this.cortes = this.cortes.filter((c) => c.vida > 0)
     const chegaram: Projetil[] = []
     for (const p of this.projeteis) {
@@ -164,6 +168,17 @@ export class Palco {
       c.globalAlpha = a; c.lineWidth = o.largura * a + 1
       c.beginPath(); c.arc(o.x, o.y, o.raio, 0, Math.PI * 2); c.stroke()
     }
+    // raios: traço largo e fraco (halo) e núcleo branco, piscando
+    for (const r of this.raios) {
+      const a = r.vida / r.total
+      const pisca = a > 0.3 || Math.floor(a * 40) % 2 === 0 ? 1 : 0.3
+      c.lineJoin = 'round'; c.lineCap = 'round'
+      for (const [larg, cor, alfa] of [[r.largura * 4, r.cor, 0.22], [r.largura * 1.6, r.cor, 0.9], [r.largura * 0.6, '#ffffff', 1]] as const) {
+        c.globalAlpha = a * alfa * pisca; c.strokeStyle = cor; c.lineWidth = larg
+        c.beginPath(); c.moveTo(r.pts[0].x, r.pts[0].y); for (const q of r.pts.slice(1)) c.lineTo(q.x, q.y); c.stroke()
+      }
+    }
+    c.globalAlpha = 1
     c.shadowBlur = 0
     for (const k of this.cortes) {
       const prog = 1 - k.vida / k.total
@@ -206,6 +221,14 @@ export class Palco {
         if (p.forma === 'lasca') { c.globalCompositeOperation = 'source-over'; c.beginPath(); c.moveTo(-p.tam, -p.tam * 0.5); c.lineTo(p.tam * 0.7, -p.tam * 0.8); c.lineTo(p.tam, p.tam * 0.4); c.lineTo(-p.tam * 0.3, p.tam); c.closePath(); c.fill(); c.fillStyle = 'rgba(0,0,0,.35)'; c.beginPath(); c.moveTo(p.tam * 0.7, -p.tam * 0.8); c.lineTo(p.tam, p.tam * 0.4); c.lineTo(-p.tam * 0.3, p.tam); c.closePath(); c.fill() }
         else if (p.forma === 'caco') { c.beginPath(); c.moveTo(-p.tam, -p.tam * 0.4); c.lineTo(p.tam, -p.tam * 0.7); c.lineTo(p.tam * 0.2, p.tam); c.closePath(); c.fill() }
         else if (p.forma === 'confete') c.fillRect(-p.tam / 2, -p.tam * 0.8, p.tam, p.tam * 1.6)
+        else if (p.forma === 'moeda') {
+          // moeda girando: a largura oscila com o ângulo; aro escuro e brilho
+          c.globalCompositeOperation = 'source-over'
+          const w = Math.max(0.25, Math.abs(Math.cos(p.angulo ?? 0))) * p.tam
+          c.fillStyle = '#7a5214'; c.fillRect(-w / 2 - 1, -p.tam / 2 - 1, w + 2, p.tam + 2)
+          c.fillStyle = '#f2c45a'; c.fillRect(-w / 2, -p.tam / 2, w, p.tam)
+          c.fillStyle = '#fff1b0'; c.fillRect(-w / 2, -p.tam / 2, Math.max(1, w * 0.35), p.tam * 0.5)
+        }
         else c.fillRect(-p.tam / 2, -p.tam / 2, p.tam, p.tam)
         c.restore()
         c.globalCompositeOperation = 'lighter'
@@ -324,6 +347,69 @@ export class Palco {
         tam: 6 + Math.random() * 5, cor: cores[i % cores.length], forma: 'confete', gravidade: 520, atrito: 0.95,
         giro: (Math.random() - 0.5) * 16, angulo: Math.random() * 6,
       })
+    }
+    this.animar()
+  }
+
+  /** Raio em zigue-zague de um ponto a outro, com ramos (Raio em cadeia, Tempestade). */
+  raio(de: Ponto, para: Ponto, cor = '#9fe0ff', largura = 3, ramos = 2) {
+    if (this.reduzido) return
+    const caminho = (a: Ponto, b: Ponto, n: number, des: number) => {
+      const pts = [a]
+      for (let i = 1; i < n; i++) {
+        const t = i / n, nx = -(b.y - a.y), ny = b.x - a.x, L = Math.hypot(nx, ny) || 1
+        const d = (Math.random() - 0.5) * des
+        pts.push({ x: a.x + (b.x - a.x) * t + (nx / L) * d, y: a.y + (b.y - a.y) * t + (ny / L) * d })
+      }
+      pts.push(b)
+      return pts
+    }
+    const dist = Math.hypot(para.x - de.x, para.y - de.y)
+    const pts = caminho(de, para, Math.max(6, Math.round(dist / 28)), Math.min(70, dist * 0.18))
+    this.raios.push({ pts, vida: 0.32, total: 0.32, cor, largura })
+    for (let k = 0; k < ramos; k++) {
+      const q = pts[1 + Math.floor(Math.random() * (pts.length - 2))]
+      const fim = { x: q.x + (Math.random() - 0.5) * 120, y: q.y + (Math.random() - 0.2) * 90 }
+      this.raios.push({ pts: caminho(q, fim, 4, 30), vida: 0.22, total: 0.22, cor, largura: largura * 0.6 })
+    }
+    this.clarao(para, cor, 220, 0.9, 0.25)
+    this.explosao(para, { cor, cor2: '#ffffff', n: 14, forca: 260, tam: 5, gravidade: 200 })
+  }
+
+  /** Chuva de moedas que pulam e caem (adversário vencido, tesouro). */
+  moedas(em: Ponto, n = 14) {
+    if (this.reduzido) return
+    for (let i = 0; i < n; i++) {
+      const ang = -Math.PI / 2 + (Math.random() - 0.5) * 1.8, v = 240 + Math.random() * 260
+      this.particulas.push({ x: em.x, y: em.y, vx: Math.cos(ang) * v, vy: Math.sin(ang) * v, vida: 1 + Math.random() * 0.5, total: 1.5,
+        tam: 7 + Math.random() * 4, cor: '#f2c45a', forma: 'moeda', gravidade: 900, atrito: 0.97, giro: 8 + Math.random() * 10, angulo: Math.random() * 6 })
+    }
+    this.animar()
+  }
+
+  /** Sopro de fogo contínuo de A até B (o Sopro do dragão). */
+  sopro(de: Ponto, para: Ponto, cor: string, cor2: string, duracao = 0.55) {
+    if (this.reduzido) return
+    const passos = 12
+    for (let k = 0; k < passos; k++) window.setTimeout(() => {
+      for (let i = 0; i < 6; i++) {
+        const dx = para.x - de.x, dy = para.y - de.y, L = Math.hypot(dx, dy) || 1
+        const v = L / 0.42 * (0.8 + Math.random() * 0.4), abre = (Math.random() - 0.5) * 0.45
+        const ang = Math.atan2(dy, dx) + abre
+        this.particulas.push({ x: de.x, y: de.y, vx: Math.cos(ang) * v, vy: Math.sin(ang) * v, vida: 0.42, total: 0.42,
+          tam: 14 + Math.random() * 16, cor: i % 2 ? cor : cor2, forma: 'brilho', gravidade: -60, atrito: 0.97 })
+      }
+      this.animar()
+    }, (k * duracao * 1000) / passos)
+  }
+
+  /** Linhas de velocidade convergindo no alvo (golpe crítico, no estilo dos animes). */
+  linhas(em: Ponto, cor = '#ffffff', n = 26) {
+    if (this.reduzido) return
+    for (let i = 0; i < n; i++) {
+      const a = (i / n) * Math.PI * 2 + Math.random() * 0.2, d = 260 + Math.random() * 160, v = 900 + Math.random() * 500
+      this.particulas.push({ x: em.x + Math.cos(a) * d, y: em.y + Math.sin(a) * d, vx: -Math.cos(a) * v, vy: -Math.sin(a) * v, vida: 0.2, total: 0.2,
+        tam: 5, cor, forma: 'faisca', gravidade: 0, atrito: 1 })
     }
     this.animar()
   }

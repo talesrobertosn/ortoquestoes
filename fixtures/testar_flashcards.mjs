@@ -10,7 +10,7 @@ const pasta = await mkdtemp(join(tmpdir(), 'oq-fc-'))
 const arquivo = join(pasta, 'm.mjs')
 try {
   await build({
-    stdin: { contents: `export * from './src/flashcards/motor/regras'; export * from './src/flashcards/motor/bestiario'; export { BARALHO_DEMO } from './src/flashcards/dados/baralhoDemo'; export * from './src/flashcards/progresso'`, resolveDir: process.cwd() },
+    stdin: { contents: `export * from './src/flashcards/motor/regras'; export * from './src/flashcards/motor/bestiario'; export * from './src/flashcards/motor/poderes'; export * from './src/flashcards/motor/altar'; export { BARALHO_DEMO } from './src/flashcards/dados/baralhoDemo'; export * from './src/flashcards/progresso'`, resolveDir: process.cwd() },
     outfile: arquivo, bundle: true, platform: 'node', format: 'esm', define: { 'import.meta.env.BASE_URL': '"/"', 'import.meta.env.DEV': 'false' }, logLevel: 'error',
   })
   const m = await import(pathToFileURL(arquivo))
@@ -93,6 +93,119 @@ try {
     assert.ok(!r.estado.recompensas.includes('imortal'), 'imortal repetido oferecido')
   }
 
+  // Entre os andares: compra o que der na loja, aceita a primeira ajuda do Preceptor e entra na primeira porta de combate.
+  function passarPortas(estado) {
+    if (estado.fase === 'loja') {
+      const k = estado.loja.findIndex((x) => !x.vendido && x.preco <= estado.ouro && (x.item !== 'cura' || estado.vida < estado.vidaMax))
+      return k >= 0 ? motor.comprarNaLoja(estado, k).estado : motor.sairDaLoja(estado).estado
+    }
+    if (estado.fase === 'sabio') return motor.aceitarSabio(estado, 0).estado
+    const k = estado.portas.findIndex((x) => x.tipo === 'combate' || x.tipo === 'chefe')
+    return motor.entrar(estado, k >= 0 ? k : 0).estado
+  }
+
+  // Portas: depois da recompensa vêm as portas; o andar só avança ao entrar numa de combate.
+  {
+    let q = motor.novaPartida(77).estado
+    q = { ...q, inimigo: { ...q.inimigo, vida: 1 } }
+    let r = motor.responder(q, q.atual.ordem.indexOf(motor.carta(q.atual.id).certa))
+    assert.equal(r.estado.fase, 'recompensa')
+    assert.ok(r.eventos.some((e) => e.tipo === 'ouro'), 'adversário vencido dá moedas')
+    r = motor.escolher(r.estado, r.estado.recompensas[0])
+    assert.equal(r.estado.fase, 'portas'); assert.equal(r.estado.andar, 1)
+    assert.ok(r.estado.portas.length >= 2 && r.estado.portas.some((x) => x.tipo === 'combate'))
+    const k = r.estado.portas.findIndex((x) => x.tipo === 'combate')
+    const porta = r.estado.portas[k]
+    const dentro = motor.entrar(r.estado, k)
+    assert.equal(dentro.estado.andar, 2); assert.equal(dentro.estado.fase, 'pergunta'); assert.equal(dentro.estado.categoria, porta.recompensa)
+    // antes do chefe só há a porta do chefe (e a loja, com moedas)
+    const antesDoChefe = { ...dentro.estado, fase: 'recompensa', recompensas: ['treino'], ouro: 100 }
+    const pc = motor.escolher(antesDoChefe, 'treino').estado
+    assert.equal(pc.portas[0].tipo, 'chefe'); assert.ok(pc.portas.some((x) => x.tipo === 'loja'))
+    // loja: compra desconta moedas e não deixa comprar duas vezes; cura não passa da vida máxima
+    const naLoja = motor.entrar(pc, pc.portas.findIndex((x) => x.tipo === 'loja')).estado
+    assert.equal(naLoja.fase, 'loja'); assert.equal(naLoja.loja.length, 4)
+    const k2 = naLoja.loja.findIndex((x) => x.item !== 'cura')
+    const comprou = motor.comprarNaLoja(naLoja, k2).estado
+    assert.equal(comprou.ouro, naLoja.ouro - naLoja.loja[k2].preco)
+    assert.equal(motor.comprarNaLoja(comprou, k2).estado, comprou)
+    assert.equal(motor.sairDaLoja(comprou).estado.andar, 3)
+    // Preceptor: aceitar a cura avança o andar
+    const sab = { ...pc, fase: 'sabio', sabio: [{ tipo: 'cura', valor: 30 }], vida: 20 }
+    const depois = motor.aceitarSabio(sab, 0).estado
+    assert.equal(depois.vida > 20, true); assert.equal(depois.andar, 3)
+  }
+
+  // Bênçãos em dupla só aparecem com os dois patronos; a sala de bênção traz o patrono da porta.
+  for (let k = 0; k < 60; k++) {
+    let q = motor.novaPartida(900 + k).estado
+    q = { ...q, categoria: 'bencao', patronoDaSala: 'mira', inimigo: { ...q.inimigo, vida: 1 } }
+    const r = motor.responder(q, q.atual.ordem.indexOf(motor.carta(q.atual.id).certa))
+    for (const x of r.estado.recompensas) assert.ok(!m.RECOMPENSAS[x].requer, 'dupla sem os dois patronos')
+    assert.ok(r.estado.recompensas.some((x) => m.RECOMPENSAS[x].patrono === 'mira'), 'sala da Mira sem bênção da Mira')
+    const q2 = { ...q, reliquias: ['olhoaguia', 'cadeia'] }
+    const r2 = motor.responder(q2, q2.atual.ordem.indexOf(motor.carta(q2.atual.id).certa))
+    assert.ok(r2.estado.recompensas.includes('tormenta'), 'dupla disponível não apareceu na sala de bênção')
+  }
+
+  // Brasas queimam no fim da rodada; contra-ataque e reflexo ferem o adversário; o Mímico rouba carga.
+  {
+    let q = motor.novaPartida(31).estado
+    q = { ...q, reliquias: ['brasa'] }
+    const r = motor.responder(q, q.atual.ordem.indexOf(motor.carta(q.atual.id).certa))
+    assert.equal(r.estado.inimigo.brasas, 1)
+    assert.ok(r.eventos.some((e) => e.tipo === 'queimadura' && e.valor === 3))
+    const q2 = { ...motor.novaPartida(32).estado, reliquias: ['contra'] }
+    const r2 = motor.responder(q2, q2.atual.ordem.findIndex((o) => o !== motor.carta(q2.atual.id).certa))
+    const golpe = r2.eventos.find((e) => e.tipo === 'dano-heroi'), contra = r2.eventos.find((e) => e.tipo === 'contra')
+    assert.ok(golpe && contra && contra.valor === Math.max(1, Math.round(golpe.valor * 0.25)))
+  }
+
+  // Ampulheta adia a Fúria; Carta na manga troca o flashcard sem contar resposta e mantém o golpe previsto.
+  {
+    let q = motor.novaPartida(55).estado
+    q = { ...q, encaixes: [{ tipo: 'ampulheta', carga: 1 }, { tipo: 'trocar', carga: 1 }], inimigo: { ...q.inimigo, rodadas: 9, furia: true } }
+    const a1 = motor.usarPoder(q, 'ampulheta')
+    assert.equal(a1.estado.inimigo.rodadas, 0); assert.equal(a1.estado.inimigo.furia, false)
+    const t1 = motor.usarPoder(a1.estado, 'trocar')
+    assert.notEqual(t1.estado.atual.id, a1.estado.atual.id)
+    assert.equal(t1.estado.rodada, a1.estado.rodada)
+    assert.equal(t1.estado.atual.criticoInimigo, a1.estado.atual.criticoInimigo)
+    assert.equal(t1.estado.encaixes.length, 0)
+  }
+
+  // Altar: compra desconta cristais, respeita o nível máximo; talentos entram na partida nova.
+  {
+    let alt = m.ganharCristais(m.ALTAR_VAZIO, 100)
+    alt = m.comprarTalento(alt, 'vida'); alt = m.comprarTalento(alt, 'vida')
+    assert.equal(alt.cristais, 100 - 20 - 45); assert.equal(alt.talentos.vida, 2)
+    assert.equal(m.comprarTalento(alt, 'segunda'), alt, 'sem cristais suficientes')
+    const q = motor.novaPartida(5, { talentos: { vida: 2, pista: 1, ouro: 1 } }).estado
+    assert.equal(q.vidaMax, 110); assert.equal(q.ouro, 15); assert.equal(q.encaixes[0].tipo, 'pista')
+  }
+
+  // Torre: 100 andares, chefe a cada 10, patamar a cada 5, Dragão Ancestral no topo e só lá.
+  {
+    for (let a = 1; a <= 100; a++) {
+      const { inimigo } = m.inimigoDoAndar(a, 123, 'torre')
+      if (a === 100) assert.equal(inimigo.id, 'dragao-ancestral')
+      else assert.notEqual(inimigo.id, 'dragao-ancestral')
+      assert.equal(!!inimigo.chefe, a % 10 === 0, `andar ${a} da Torre`)
+      if (a % 5 === 0 && a % 10) assert.equal(inimigo.nivel, 'elite', `andar ${a} sem elite`)
+    }
+    for (let a = 1; a <= 60; a++) assert.notEqual(m.inimigoDoAndar(a, 9, 'masmorra').inimigo.id, 'dragao-ancestral')
+    let q = motor.novaPartida(8, { modo: 'torre' }).estado
+    q = { ...q, andar: 99, inimigo: { ...q.inimigo, vida: 1 } }
+    q = { ...q, inimigo: { ...q.inimigo, id: m.inimigoDoAndar(99, q.sementeBase, 'torre').inimigo.id } }
+    let r = motor.responder(q, q.atual.ordem.indexOf(motor.carta(q.atual.id).certa))
+    r = motor.escolher(r.estado, r.estado.recompensas[0])
+    assert.equal(r.estado.portas[0].tipo, 'chefe')
+    const topo = motor.entrar(r.estado, 0).estado
+    assert.equal(topo.andar, 100)
+    const fim = motor.responder({ ...topo, inimigo: { ...topo.inimigo, vida: 1 } }, topo.atual.ordem.indexOf(motor.carta(topo.atual.id).certa))
+    assert.ok(fim.eventos.some((e) => e.tipo === 'torre-concluida')); assert.equal(fim.estado.fase, 'fim'); assert.ok(fim.estado.torreConcluida)
+  }
+
   // Balanceamento: simula partidas com quem acerta X% e mede até onde chega.
   function simular(taxa, semente) {
     let s = semente >>> 0
@@ -105,6 +218,8 @@ try {
         estado = motor.escolher(estado, estado.recompensas[0]).estado
         continue
       }
+      if (estado.fase === 'portas') { if (estado.venceu) return { andar: estado.andar, chefe: true }; estado = passarPortas(estado); continue }
+      if (estado.fase === 'loja' || estado.fase === 'sabio') { estado = passarPortas(estado); continue }
       if (estado.fase === 'resposta') { estado = motor.seguir(estado).estado; continue }
       const c = motor.carta(estado.atual.id)
       const acerta = sorte() < taxa
@@ -135,6 +250,7 @@ try {
     for (let passo = 0; passo < 3000; passo++) {
       if (estado.fase === 'fim') break
       if (estado.fase === 'recompensa') { estado = motor.escolher(estado, estado.recompensas[0]).estado; continue }
+      if (estado.fase === 'portas' || estado.fase === 'loja' || estado.fase === 'sabio') { estado = passarPortas(estado); continue }
       if (estado.fase === 'resposta') { estado = motor.seguir(estado).estado; continue }
       const c = motor.carta(estado.atual.id)
       const acerta = sorte() < taxa
@@ -145,7 +261,7 @@ try {
       const golpe = r.eventos.find((e) => e.tipo === 'dano-heroi')
       if (golpe) {
         if (antes.vida === antes.vidaMax && golpe.valor >= antes.vida) golpeUnico++
-        const teto = golpe.critico ? 0.45 : 0.35
+        const teto = golpe.critico || golpe.carregado ? 0.45 : 0.35
         if (golpe.valor > Math.ceil(antes.vidaMax * teto)) tetoFurado++
       }
       estado = r.estado
@@ -167,6 +283,49 @@ try {
   assert.ok(longo[0.5].andar < longo[0.7].andar && longo[0.7].andar < longo[0.9].andar, 'quem acerta mais vai mais longe')
   assert.ok(longo[0.9].andar > 6 && longo[0.9].andar < 40, 'partida de 90% nem curta demais nem infinita')
   assert.ok(longo[0.6].andar < 4.5, 'masmorra fácil demais para 60%')
+
+  // Torre com patamares: ao cair, volta ao último patamar com o herói de lá. Mede até onde chega em 25 tentativas.
+  function torre(taxa, semente) {
+    let s = semente >>> 0
+    const sorte = () => { s = (s * 1664525 + 1013904223) >>> 0; return s / 4294967296 }
+    let { estado } = motor.novaPartida(semente, { modo: 'torre' })
+    let patamar = estado, maximo = 1, tentativas = 1, golpeUnico = 0
+    for (let passo = 0; passo < 60000 && tentativas <= 25; passo++) {
+      if (estado.fase === 'fim') {
+        if (estado.torreConcluida) return { maximo: 100, tentativas, golpeUnico, topo: true }
+        tentativas++; estado = patamar; continue
+      }
+      if (estado.fase === 'recompensa') { estado = motor.escolher(estado, estado.recompensas[0]).estado; continue }
+      if (estado.fase === 'portas' || estado.fase === 'loja' || estado.fase === 'sabio') {
+        const r = estado.fase === 'portas' ? motor.entrar(estado, Math.max(0, estado.portas.findIndex((x) => x.tipo !== 'loja'))) : { estado: passarPortas(estado), eventos: [] }
+        if (r.eventos.some((e) => e.tipo === 'patamar')) patamar = r.estado
+        estado = r.estado
+        maximo = Math.max(maximo, estado.andar)
+        continue
+      }
+      if (estado.fase === 'resposta') { estado = motor.seguir(estado).estado; continue }
+      const c = motor.carta(estado.atual.id)
+      const pos = sorte() < taxa ? estado.atual.ordem.indexOf(c.certa) : estado.atual.ordem.findIndex((o) => o !== c.certa)
+      const antes = estado
+      const r = motor.responder(estado, pos)
+      const golpe = r.eventos.find((e) => e.tipo === 'dano-heroi')
+      if (golpe && antes.vida === antes.vidaMax && golpe.valor >= antes.vida) golpeUnico++
+      estado = r.estado
+    }
+    return { maximo, tentativas, golpeUnico, topo: false }
+  }
+  const tabelaTorre = {}
+  for (const taxa of [0.6, 0.7, 0.8, 0.9, 0.95]) {
+    const N = 60, soma = { maximo: 0, topo: 0, golpeUnico: 0 }
+    for (let k = 0; k < N; k++) { const r = torre(taxa, 30000 + k); soma.maximo += r.maximo; soma.topo += Number(r.topo); soma.golpeUnico += r.golpeUnico }
+    tabelaTorre[taxa] = { maximo: soma.maximo / N, topo: soma.topo / N, golpeUnico: soma.golpeUnico }
+  }
+  console.log('Torre (acerto → andar máximo em 25 tentativas, chega ao topo):')
+  for (const [t, v] of Object.entries(tabelaTorre)) console.log(`  ${Math.round(t * 100)}% → andar ${v.maximo.toFixed(1)} · topo ${(v.topo * 100).toFixed(0)}%`)
+  for (const v of Object.values(tabelaTorre)) assert.equal(v.golpeUnico, 0, 'Torre: morte de vida cheia num golpe só')
+  assert.ok(tabelaTorre[0.6].maximo < tabelaTorre[0.8].maximo && tabelaTorre[0.8].maximo <= tabelaTorre[0.95].maximo, 'Torre: quem acerta mais sobe mais')
+  assert.ok(tabelaTorre[0.7].topo < 0.05, 'Torre fácil demais para 70%')
+  assert.ok(tabelaTorre[0.95].maximo > 50, 'Torre impossível para 95%')
 
   console.log('Motor da Batalha: ok')
 } finally {

@@ -77,7 +77,7 @@ const TITULOS: Record<string, string> = {
   '/indicar': 'Indique e ganhe | Orto Questões',
   '/temas-que-mais-caem': 'Temas que mais caem | Orto Questões',
   '/resumao': 'Resumão da reta final | Orto Questões',
-  '/flashcards': 'Torneio de Flashcards | Orto Questões',
+  '/flashcards': 'Cripta do Residente | Orto Questões',
 }
 
 export function App() {
@@ -191,7 +191,7 @@ export function App() {
       pagina = <Ligas key={rota.consulta.toString()} consulta={rota.consulta} />
       break
     case 'flashcards':
-      pagina = FLASHCARDS_LIBERADO ? <Flashcards /> : <NaoEncontrada />
+      pagina = FLASHCARDS_LIBERADO ? <Flashcards secao={segundo} /> : <NaoEncontrada />
       break
     default:
       pagina = <NaoEncontrada />
