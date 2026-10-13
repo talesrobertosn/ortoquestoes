@@ -69,7 +69,11 @@ function climaENevoa(c: CanvasRenderingContext2D, W: number, H: number, clima: C
  * oito camadas com filtros e misturas do CSS recalculadas a cada quadro, o que
  * travava o celular. Por cima fica só o ambiente animado (bokeh, poeira, chuva).
  */
-export const Cenario = memo(function Cenario({ cena, reduzido, clima = 'dia' }: { cena: Cena; reduzido: boolean; clima?: Clima }) {
+/** Cenas internas (caverna, salões, masmorras): o clima do andar não entra (não chove dentro do covil). */
+const INTERNAS = new Set<Cena>(['covil', 'masmorra', 'salao', 'forja', 'caverna', 'catacumba', 'laboratorio', 'arquivo', 'biblioteca', 'templo'])
+
+export const Cenario = memo(function Cenario({ cena, reduzido, clima: climaAndar = 'dia' }: { cena: Cena; reduzido: boolean; clima?: Clima }) {
+  const clima: Clima = INTERNAS.has(cena) ? 'dia' : climaAndar
   const base = useRef<HTMLCanvasElement>(null)
   const ambiente = useRef<HTMLCanvasElement>(null)
   const raiz = useRef<HTMLDivElement>(null)

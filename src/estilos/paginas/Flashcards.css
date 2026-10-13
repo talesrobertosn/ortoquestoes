@@ -1783,3 +1783,5 @@ body.fc-modal-aberto .aviso-cookies, body.fc-modal-aberto .aviso-site, body.fc-m
 .fc-pilha small, .fc-pilha b { opacity: .8; }
 .fc-mesa__palco::before { content: ""; position: absolute; inset: -6% -4%; z-index: -1; pointer-events: none; border-radius: 50%;
   background: radial-gradient(closest-side, rgba(8, 5, 4, .38), rgba(8, 5, 4, .18) 60%, transparent); }
+/* celular: o flashcard fica acima do adversário (as garras do Dragão de Ossos cobriam o título) */
+@media (max-width: 640px) { .fc-batalha > .fc-mesa { z-index: 3; } .fc-batalha > .fc-inimigo { z-index: 2; } }
