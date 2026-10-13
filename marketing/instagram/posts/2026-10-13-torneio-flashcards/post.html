@@ -1,0 +1,223 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>Orto Questões · Torneio de Flashcards</title>
+<!-- Feed (7 slides, 1080x1350) e stories (6, 1080x1920) do beta dos flashcards, em estilo HD-2D: cenários pintados do jogo
+     com profundidade de campo, luz e partículas; monstros e herói das folhas reais do jogo; prints reais em moldura.
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-10-13-torneio-flashcards/post.html -->
+<style>
+@font-face{font-family:Cinzel;src:url(../../fontes/cinzel-latin-700-normal.woff2);font-weight:700}
+@font-face{font-family:Cinzel;src:url(../../fontes/cinzel-latin-900-normal.woff2);font-weight:900}
+@font-face{font-family:Cinzel;src:url(../../fontes/cinzel-latin-600-normal.woff2);font-weight:600}
+@font-face{font-family:Alegreya;src:url(../../fontes/alegreya-latin-400-normal.woff2);font-weight:400}
+@font-face{font-family:Alegreya;src:url(../../fontes/alegreya-latin-500-normal.woff2);font-weight:500}
+@font-face{font-family:Alegreya;src:url(../../fontes/alegreya-latin-700-normal.woff2);font-weight:700}
+@font-face{font-family:Alegreya;src:url(../../fontes/alegreya-latin-500-italic.woff2);font-weight:500;font-style:italic}
+@font-face{font-family:J;src:url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2);font-weight:200 800}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#111;color:#fff7e6;font-family:Alegreya,Georgia,serif}
+section{position:relative;width:1080px;height:1350px;overflow:hidden;margin-bottom:40px;background:#07090c;isolation:isolate}
+section.story{height:1920px}
+.cena{position:absolute;inset:0;z-index:0;overflow:hidden}
+.cena .c{position:absolute;inset:-3%;background-size:cover;background-position:center;image-rendering:pixelated}
+.cena .fundo{filter:blur(2.2px) brightness(.78) saturate(1.1)}
+.cena .meio{filter:brightness(.92) saturate(1.08)}
+.cena .frente{filter:blur(7px) brightness(.5);transform:scale(1.14)}
+.cena .luz{mix-blend-mode:screen;opacity:.95;filter:blur(1px)}
+.cena.desfoca .meio{filter:blur(3px) brightness(.7)}
+.cena.desfoca .fundo{filter:blur(5px) brightness(.6)}
+.vinheta{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 45%,transparent 35%,rgba(4,3,2,.78) 100%)}
+.poeira{position:absolute;inset:0}
+.poeira b{position:absolute;border-radius:50%;background:radial-gradient(circle,#fff3c4 0,#f4cf7c 35%,rgba(244,207,124,0) 70%);mix-blend-mode:screen}
+.veu{position:absolute;left:0;right:0;z-index:1;pointer-events:none}
+.veu.cima{top:0;height:46%;background:linear-gradient(rgba(5,4,3,.92),rgba(5,4,3,.55) 55%,transparent)}
+.veu.baixo{bottom:0;height:42%;background:linear-gradient(transparent,rgba(5,4,3,.65) 45%,rgba(5,4,3,.95))}
+.raio{position:absolute;z-index:1;width:340px;height:1700px;top:-300px;background:linear-gradient(rgba(255,226,150,.28),rgba(255,226,150,0) 80%);filter:blur(22px);transform:rotate(18deg);mix-blend-mode:screen}
+.topo{position:absolute;z-index:6;left:64px;right:64px;top:56px;display:flex;justify-content:space-between;align-items:center}
+.story .topo{top:250px;left:72px;right:72px}
+.marca{display:flex;align-items:center;gap:13px;font:500 31px J;letter-spacing:-.02em;color:#fff7e6;text-shadow:0 2px 10px #000}
+.marca b{font-weight:800}.marca svg{width:48px;height:48px;filter:drop-shadow(0 4px 10px #0008)}
+.pag{font:700 18px Cinzel;letter-spacing:.22em;text-transform:uppercase;color:#e9d3a0;text-shadow:0 2px 8px #000}
+.conteudo{position:absolute;z-index:5;left:64px;right:64px}
+.story .conteudo{left:72px;right:72px}
+.kicker{display:inline-flex;align-items:center;gap:14px;font:700 21px Cinzel;letter-spacing:.3em;text-transform:uppercase;color:#f4cf7c;text-shadow:0 2px 10px #000}
+.kicker:before{content:'';width:46px;height:2px;background:linear-gradient(90deg,transparent,#f4cf7c)}
+h1,h2{font-family:Cinzel;font-weight:900;line-height:1.02;letter-spacing:.01em;text-wrap:balance}
+h1{font-size:104px}h2{font-size:70px}
+.ouro{background:linear-gradient(180deg,#fffbe9 0%,#ffe7a6 38%,#f0b94f 62%,#b8741f 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 3px 0 #3b2208) drop-shadow(0 0 26px rgba(244,190,90,.45))}
+.claro{color:#fff7e6;text-shadow:0 3px 0 #2a1a08,0 0 22px rgba(0,0,0,.8)}
+.texto{font:500 33px/1.4 Alegreya;color:#f3e6c8;text-shadow:0 2px 8px #000}
+.texto b{color:#ffe7a6;font-weight:700}
+.selo{display:inline-flex;align-items:center;gap:12px;padding:13px 24px;border-radius:999px;font:700 21px Cinzel;letter-spacing:.2em;text-transform:uppercase;color:#2a1806;background:linear-gradient(180deg,#fff0bf,#f4cf7c 55%,#d9a040);box-shadow:0 0 0 2px #5b3a10,0 0 0 4px #f4cf7c88,0 10px 30px #000a,0 0 30px rgba(244,207,124,.45)}
+.selo.escuro{color:#ffe7a6;background:rgba(20,13,6,.82);box-shadow:0 0 0 2px #c9953f,0 10px 30px #000a}
+.spr{position:absolute;z-index:3;background-repeat:no-repeat;background-position:0 0;image-rendering:pixelated;filter:drop-shadow(0 0 2px rgba(255,236,190,.35)) drop-shadow(0 18px 18px rgba(0,0,0,.55))}
+.spr.flip{transform:scaleX(-1)}
+.sombra{position:absolute;z-index:2;border-radius:50%;background:radial-gradient(ellipse,rgba(0,0,0,.7),rgba(0,0,0,0) 70%)}
+.halo{position:absolute;z-index:2;border-radius:50%;mix-blend-mode:screen;filter:blur(30px)}
+.moldura{position:relative;z-index:4;padding:9px;border-radius:24px;background:linear-gradient(145deg,#fff1c2 0%,#d9a64a 18%,#6b4413 42%,#f2c766 64%,#8a5a1c 86%,#ffe39a 100%);box-shadow:0 0 0 2px #1d1206,0 34px 80px rgba(0,0,0,.85),0 0 70px rgba(244,190,90,.28)}
+.moldura img{display:block;width:100%;border-radius:16px;box-shadow:inset 0 0 0 2px #000}
+.moldura:before,.moldura:after{content:'';position:absolute;width:26px;height:26px;transform:rotate(45deg);background:linear-gradient(135deg,#fff6d0,#f4cf7c 50%,#a8692a);box-shadow:0 0 0 3px #2a1806,0 0 18px rgba(244,207,124,.8);top:-13px;left:calc(50% - 13px)}
+.moldura:after{top:auto;bottom:-13px}
+.celular{position:relative;z-index:4;padding:13px;border-radius:66px;background:linear-gradient(140deg,#e9d6a6,#7d5a24 20%,#1b130a 50%,#3c2a12 78%,#d8b46a);box-shadow:0 0 0 2px #0c0804,0 40px 90px rgba(0,0,0,.85),0 0 60px rgba(244,190,90,.25)}
+.celular img{display:block;width:100%;border-radius:54px}
+.passos{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.passo{position:relative;padding:22px 22px 24px;border-radius:20px;background:linear-gradient(180deg,rgba(38,25,10,.88),rgba(16,11,6,.92));box-shadow:inset 0 0 0 1.5px rgba(233,185,85,.55),0 14px 30px rgba(0,0,0,.55)}
+.passo i{display:grid;place-items:center;width:52px;height:52px;border-radius:50%;font:900 24px Cinzel;font-style:normal;color:#2a1806;background:radial-gradient(circle at 35% 30%,#fff3c9,#f4cf7c 45%,#b87b2a);box-shadow:0 0 0 3px #3b2208,0 0 18px rgba(244,207,124,.6)}
+.passo h3{font:700 28px/1.12 Cinzel;color:#ffe7a6;margin-top:14px}
+.passo p{font:500 25px/1.32 Alegreya;color:#eadcbc;margin-top:8px}
+.rodape{position:absolute;z-index:6;left:64px;right:64px;bottom:50px;display:flex;justify-content:space-between;align-items:center;font:700 19px Cinzel;letter-spacing:.2em;text-transform:uppercase;color:#d9c08a;text-shadow:0 2px 8px #000}
+.story .rodape{bottom:auto;top:1650px;left:72px;right:72px}
+.rodape b{color:#ffe7a6}
+.placa{position:absolute;z-index:5;text-align:center;padding:12px 18px 14px;border-radius:14px;background:linear-gradient(180deg,rgba(40,26,10,.92),rgba(15,10,5,.95));box-shadow:inset 0 0 0 1.5px rgba(233,185,85,.6),0 12px 26px rgba(0,0,0,.6)}
+.placa strong{display:block;font:700 25px/1.1 Cinzel;color:#ffe7a6}
+.placa small{display:block;margin-top:5px;font:700 15px Cinzel;letter-spacing:.22em;text-transform:uppercase;color:#bfa774}
+.placa small.chefe{color:#ff9d7a}
+.pedestal{position:absolute;z-index:2;border-radius:50%;background:radial-gradient(ellipse,rgba(255,214,140,.35),rgba(255,180,90,.12) 45%,transparent 70%);filter:blur(4px)}
+.cartao{padding:26px 30px;border-radius:22px;background:linear-gradient(180deg,rgba(40,26,10,.9),rgba(14,9,4,.94));box-shadow:inset 0 0 0 1.5px rgba(233,185,85,.6),0 18px 40px rgba(0,0,0,.6)}
+.cartao .rot{font:700 18px Cinzel;letter-spacing:.24em;text-transform:uppercase;color:#ff9d7a}
+.cartao h3{font:900 40px/1.05 Cinzel;margin-top:8px}
+.cartao q{display:block;font:500 italic 30px/1.32 Alegreya;color:#f3e6c8;margin-top:12px;quotes:'“' '”'}
+.cartao p{font:500 27px/1.36 Alegreya;color:#eadcbc;margin-top:12px}
+.lista{display:grid;gap:16px}
+.lista p{display:grid;grid-template-columns:40px 1fr;gap:16px;align-items:start;font:500 30px/1.36 Alegreya;color:#f3e6c8;text-shadow:0 2px 8px #000}
+.lista p:before{content:'';width:18px;height:18px;margin:13px 0 0 10px;transform:rotate(45deg);background:linear-gradient(135deg,#fff3c9,#f4cf7c 50%,#b87b2a);box-shadow:0 0 12px rgba(244,207,124,.7)}
+.lista b{color:#ffe7a6}
+.estagio{position:absolute;z-index:5;text-align:center;width:170px}
+.estagio em{display:block;font:900 30px Cinzel;font-style:normal;color:#ffe7a6;text-shadow:0 2px 8px #000}
+.estagio span{display:block;font:700 17px/1.15 Cinzel;color:#e6d2a4;margin-top:4px;text-shadow:0 2px 6px #000}
+.menu{display:inline-flex;align-items:center;gap:18px;padding:18px 30px;border-radius:18px;background:rgba(10,7,3,.85);box-shadow:inset 0 0 0 1.5px rgba(233,185,85,.6);font:700 34px Cinzel;color:#ffe7a6}
+.menu span{color:#bfa774;font-size:28px}
+.nota{font:500 19px Alegreya;color:#bfa774;text-shadow:0 2px 6px #000}
+.faixa{position:absolute;z-index:8;left:0;right:0;bottom:0;height:92px;display:flex;align-items:center;justify-content:space-between;padding:0 64px;background:linear-gradient(180deg,rgba(14,9,4,.0),rgba(14,9,4,.92) 30%,#0b0703);border-top:1.5px solid rgba(233,185,85,.55);font:700 20px Cinzel;letter-spacing:.18em;text-transform:uppercase;color:#e9d3a0}
+.faixa:before{content:'';position:absolute;left:50%;top:-9px;width:16px;height:16px;transform:translateX(-50%) rotate(45deg);background:linear-gradient(135deg,#fff3c9,#f4cf7c 50%,#b87b2a);box-shadow:0 0 0 2px #2a1806,0 0 14px rgba(244,207,124,.8)}
+.faixa b{color:#ffe7a6}
+.faixa .alvo{display:flex;align-items:center;gap:14px}
+.faixa .alvo i{width:12px;height:12px;transform:rotate(45deg);background:#f4cf7c;box-shadow:0 0 10px #f4cf7c}
+.story .faixa{bottom:0;top:1632px;height:auto;align-items:flex-start;padding:30px 72px 0;background:linear-gradient(180deg,rgba(14,9,4,.85),#0b0703 40%)}
+.pilula{font:700 18px Cinzel;letter-spacing:.2em;text-transform:uppercase;color:#2a1806;padding:10px 18px;border-radius:999px;background:linear-gradient(180deg,#fff0bf,#f4cf7c 55%,#d9a040);box-shadow:0 0 0 2px #5b3a10,0 6px 18px #000a}
+.logo{text-align:center}
+.logo .pre{font:700 22px Cinzel;letter-spacing:.42em;text-transform:uppercase;color:#e9d3a0;text-shadow:0 2px 10px #000}
+.logo .l1{display:block;font:900 78px/1 Cinzel;letter-spacing:.06em;margin-top:18px}
+.logo .l2{display:block;font:900 138px/.95 Cinzel;letter-spacing:.01em;margin-top:6px}
+.ornamento{display:flex;align-items:center;justify-content:center;gap:18px;margin:20px auto 0;width:760px}
+.ornamento:before,.ornamento:after{content:'';flex:1;height:2px;background:linear-gradient(90deg,transparent,#f4cf7c)}
+.ornamento:after{background:linear-gradient(270deg,transparent,#f4cf7c)}
+.ornamento i{width:18px;height:18px;transform:rotate(45deg);background:linear-gradient(135deg,#fff3c9,#f4cf7c 50%,#b87b2a);box-shadow:0 0 14px rgba(244,207,124,.8)}
+.tagline{font:500 italic 40px/1.25 Alegreya;color:#fff3d6;text-shadow:0 2px 12px #000;margin-top:16px}
+
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{font:600 22px J;letter-spacing:-.01em;color:#ffeccc;padding:9px 16px;border-radius:999px;background:rgba(20,13,6,.78);box-shadow:inset 0 0 0 1.5px rgba(233,185,85,.6),0 6px 14px rgba(0,0,0,.45)}
+.chip.ouro{color:#2a1806;background:linear-gradient(180deg,#fff0bf,#f4cf7c 55%,#d9a040)}
+h1.claro2{font:900 80px/1.04 Cinzel;letter-spacing:.01em}
+.sub2{font:500 34px/1.35 Alegreya;color:#f3e6c8;text-shadow:0 2px 10px #000}
+.sub2 b{color:#ffe7a6}
+.voltas{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.volta{border-radius:20px;padding:20px 20px 22px;text-align:center;box-shadow:0 0 0 2px rgba(0,0,0,.6),0 14px 30px rgba(0,0,0,.55),inset 0 2px 0 rgba(255,255,255,.35)}
+.volta strong{display:block;font:900 32px Cinzel;color:#fff;text-shadow:0 2px 0 rgba(0,0,0,.35)}
+.volta span{display:block;font:600 22px J;color:#fff;margin-top:6px;opacity:.95}
+.volta.e{background:linear-gradient(180deg,#e2574a,#a3241c)}.volta.h{background:linear-gradient(180deg,#e7b54a,#a8741c)}.volta.s{background:linear-gradient(180deg,#46b871,#1e7a43)}
+</style></head><body><svg width="0" height="0" style="position:absolute"><symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#14655E"/><g fill="#FFFFFF" opacity=".55"><path transform="translate(13 9.5)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(11 21.2)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(13 44.6)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g><path fill="#F4CF7C" transform="translate(11 32.9)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></symbol></svg><style>.story .content{left:80px;right:80px}.story .top,.story .foot{left:80px;right:80px}.story h1{font-size:82px}.story .step{padding:22px 24px}.story .step h3{font-size:31px}.story .step p{font-size:28px;margin-top:10px}.story .steps{gap:17px}.story .opt{font-size:28px;padding:15px 20px}.story .source{font-size:16px}.story .watchinner{padding:18px}.story .comparison h3{font-size:31px}.story .comparison p{font-size:28px}.story .phone{height:735px}.story .screen p{font-size:18px}.story .screen h4{font-size:21px}.story .screen .mini{padding:12px;margin:13px 0}.story .screen .mini p{font-size:17px}.story .feature p{font-size:27px}.story .cta p{font-size:25px}#mao-03 .gap{font-size:28px;margin-top:20px}#mao-05 .step p{font-size:27px}#mao-05 .step{padding:20px 24px}#mao-05 .cream{padding:24px}#mao-06 .phone{transform:rotate(3deg);height:710px}#mao-06 .screen .mini{padding:10px;margin:10px 0}</style>
+<section id="feed-01"><div class="cena desfoca"><i class="c fundo" style="background-image:url(../../../../public/flashcards/cenarios/biblioteca-paisagem-fundo.png)"></i><i class="c meio" style="background-image:url(../../../../public/flashcards/cenarios/biblioteca-paisagem-meio.png)"></i><i class="c frente" style="background-image:url(../../../../public/flashcards/cenarios/biblioteca-paisagem-frente.png)"></i><i class="c luz" style="background-image:url(../../../../public/flashcards/cenarios/biblioteca-paisagem-luz.png)"></i><i class="poeira"></i><i class="vinheta"></i></div><i class="raio" style="left:600px"></i><i class="veu cima" style="height:60%"></i><i class="veu baixo" style="height:30%"></i>
+<header class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b>&nbsp;Questões</div><span class="pilula">Beta público</span></header>
+<div class="conteudo" style="top:150px;right:470px"><div class="kicker">Novo no Orto Questões</div>
+<h1 class="ouro claro2" style="margin-top:20px">Treine flashcards de Ortopedia.</h1>
+<p class="sub2" style="margin-top:22px">Por área, com as <b>questões das provas</b> e os comentários.</p></div>
+<div class="conteudo" style="top:700px;right:470px"><div class="chips "><span class="chip">Coluna</span><span class="chip">Joelho</span><span class="chip">Quadril</span><span class="chip">Mão e punho</span><span class="chip">Ombro e cotovelo</span><span class="chip">Pé e tornozelo</span><span class="chip">Trauma adulto</span><span class="chip">Ortopedia pediátrica</span><span class="chip">Tumores</span><span class="chip">Osteometabólicas</span><span class="chip">Conceitos básicos</span><span class="chip">Anatomia</span></div></div>
+<div class="conteudo lista" style="top:1010px;right:470px;gap:8px"><p style="font-size:27px"><span>Questões <b>das provas</b></span></p><p style="font-size:27px"><span>Comentário em <b>cada flashcard</b></span></p><p style="font-size:27px"><span>Revisão <b>no tempo certo</b></span></p></div>
+<div class="celular" style="position:absolute;right:56px;top:190px;width:400px;transform:rotate(3deg)"><img src="prints/cel-estudo-frente2.jpg" alt="Flashcard na Biblioteca"></div>
+<footer class="faixa"><span class="alvo"><i></i>Grátis para testar · Menu › Flashcards</span><b>1/7 ›</b></footer></section>
+<section id="feed-02"><div class="cena desfoca"><i class="c fundo" style="background-image:url(../../../../public/flashcards/cenarios/biblioteca-paisagem-fundo.png)"></i><i class="c meio" style="background-image:url(../../../../public/flashcards/cenarios/biblioteca-paisagem-meio.png)"></i><i class="c frente" style="background-image:url(../../../../public/flashcards/cenarios/biblioteca-paisagem-frente.png)"></i><i class="c luz" style="background-image:url(../../../../public/flashcards/cenarios/biblioteca-paisagem-luz.png)"></i><i class="poeira"></i><i class="vinheta"></i></div><i class="veu cima" style="height:38%"></i><i class="veu baixo" style="height:44%"></i>
+<header class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b>&nbsp;Questões</div><span class="pilula">Beta público</span></header>
+<div class="conteudo" style="top:150px"><div class="kicker">Como funciona</div><h2 class="ouro" style="margin-top:16px;font-size:66px">Escolha a área.<br>Responda. Vire.</h2></div>
+<div class="conteudo" style="top:420px"><div class="moldura"><img src="prints/pc-estudo-verso2.jpg" alt="Flashcard respondido na Biblioteca"></div></div>
+<div class="conteudo passos" style="top:1034px">
+<div class="passo"><i>1</i><h3>Área</h3><p>Coluna, Joelho, Mão… ou os temas que mais caem.</p></div>
+<div class="passo"><i>2</i><h3>Responda</h3><p>Quatro alternativas, como na prova.</p></div>
+<div class="passo"><i>3</i><h3>Vire</h3><p>A resposta e o porquê, do comentário.</p></div></div>
+<footer class="faixa"><span class="alvo"><i></i>Treine flashcards no Orto Questões</span><b>2/7 ›</b></footer></section>
+<section id="feed-03"><div class="cena desfoca"><i class="c fundo" style="background-image:url(../../../../public/flashcards/cenarios/biblioteca-paisagem-fundo.png)"></i><i class="c meio" style="background-image:url(../../../../public/flashcards/cenarios/biblioteca-paisagem-meio.png)"></i><i class="c frente" style="background-image:url(../../../../public/flashcards/cenarios/biblioteca-paisagem-frente.png)"></i><i class="c luz" style="background-image:url(../../../../public/flashcards/cenarios/biblioteca-paisagem-luz.png)"></i><i class="poeira"></i><i class="vinheta"></i></div><i class="veu cima" style="height:44%"></i><i class="veu baixo" style="height:40%"></i>
+<header class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b>&nbsp;Questões</div><span class="pilula">Beta público</span></header>
+<div class="conteudo" style="top:150px"><div class="kicker">Revisão no tempo certo</div><h2 class="ouro" style="margin-top:16px;font-size:64px">O que você erra<br>volta antes.</h2></div>
+<div class="conteudo voltas" style="top:400px">
+<div class="volta e"><strong>Errei</strong><span>volta hoje</span></div>
+<div class="volta h"><strong>Hesitei</strong><span>volta em 3 dias</span></div>
+<div class="volta s"><strong>Sabia</strong><span>volta em 10 dias</span></div></div>
+<div class="conteudo" style="top:556px"><p class="sub2" style="font-size:30px"><b>E um cronograma de flashcards:</b> data da prova, assuntos e quantos por dia.</p></div>
+<div class="conteudo" style="top:650px"><div class="moldura"><img src="prints/pc-cronograma.jpg" alt="Cronograma de flashcards"></div></div>
+<footer class="faixa"><span class="alvo"><i></i>Treine flashcards no Orto Questões</span><b>3/7 ›</b></footer></section>
+<section id="feed-04"><div class="cena desfoca"><i class="c fundo" style="background-image:url(../../../../public/flashcards/cenarios/covil-paisagem-fundo.png)"></i><i class="c meio" style="background-image:url(../../../../public/flashcards/cenarios/covil-paisagem-meio.png)"></i><i class="c frente" style="background-image:url(../../../../public/flashcards/cenarios/covil-paisagem-frente.png)"></i><i class="c luz" style="background-image:url(../../../../public/flashcards/cenarios/covil-paisagem-luz.png)"></i><i class="poeira"></i><i class="vinheta"></i></div><i class="veu cima" style="height:40%"></i><i class="veu baixo" style="height:46%"></i>
+<header class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b>&nbsp;Questões</div><span class="pilula">Beta público</span></header>
+<div class="conteudo" style="top:150px"><div class="kicker">Quer treinar jogando?</div><h2 class="ouro" style="margin-top:16px;font-size:64px">Os mesmos flashcards,<br>em modo jogo.</h2></div>
+<div class="conteudo" style="top:430px"><div class="moldura"><img src="prints/pc2-dragao.jpg" alt="Modo jogo: duelo contra o Dragão de Ossos"></div></div>
+<div class="conteudo lista" style="top:1040px;gap:10px">
+<p style="font-size:29px"><span><b>Acertou</b>, você ataca. <b>Errou</b>, o adversário revida.</span></p>
+<p style="font-size:29px"><span>A cada 3 andares, <b>um chefe</b>. Este é o Dragão de Ossos.</span></p></div>
+<footer class="faixa"><span class="alvo"><i></i>Treine flashcards no Orto Questões</span><b>4/7 ›</b></footer></section>
+<section id="feed-05"><div class="cena desfoca"><i class="c fundo" style="background-image:url(../../../../public/flashcards/cenarios/masmorra-paisagem-fundo.png)"></i><i class="c meio" style="background-image:url(../../../../public/flashcards/cenarios/masmorra-paisagem-meio.png)"></i><i class="c frente" style="background-image:url(../../../../public/flashcards/cenarios/masmorra-paisagem-frente.png)"></i><i class="c luz" style="background-image:url(../../../../public/flashcards/cenarios/masmorra-paisagem-luz.png)"></i><i class="poeira"></i><i class="vinheta"></i></div><i class="veu cima" style="height:40%"></i><i class="veu baixo" style="height:20%"></i>
+<header class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b>&nbsp;Questões</div><span class="pilula">Beta público</span></header>
+<div class="conteudo" style="top:150px"><div class="kicker">Modo jogo · adversários</div><h2 class="ouro" style="margin-top:16px;font-size:62px">Para vencer,<br>acerte os flashcards.</h2></div>
+<i class="pedestal" style="left:72px;top:660px;width:300px;height:80px"></i><div class="spr  flip" style="width:371.2px;height:371.2px;background-image:url(../../../../public/flashcards/sprites/golem.png);background-size:2227.2px auto;left:31px;top:352px;"></div><div class="placa" style="left:74px;top:716px;width:296px"><strong>Golem de Gesso</strong><small class="">Comum</small></div><i class="pedestal" style="left:389px;top:660px;width:300px;height:80px"></i><div class="spr  flip" style="width:448.79999999999995px;height:396.0px;background-image:url(../../../../public/flashcards/sprites/serpente.png);background-size:2692.7999999999997px auto;left:288px;top:330px;"></div><div class="placa" style="left:391px;top:716px;width:296px"><strong>Serpente do Ciático</strong><small class="">Comum</small></div><i class="pedestal" style="left:706px;top:660px;width:300px;height:80px"></i><div class="spr  flip" style="width:392.0px;height:364.0px;background-image:url(../../../../public/flashcards/sprites/gosma.png);background-size:2352.0px auto;left:653px;top:364px;"></div><div class="placa" style="left:708px;top:716px;width:296px"><strong>Gosma de Cimento</strong><small class="">Comum</small></div><i class="pedestal" style="left:72px;top:1050px;width:300px;height:80px"></i><div class="spr  flip" style="width:364.8px;height:384.0px;background-image:url(../../../../public/flashcards/sprites/guardiao.png);background-size:2188.7999999999997px auto;left:30px;top:725px;"></div><div class="placa" style="left:74px;top:1106px;width:296px"><strong>Guardião do Acetábulo</strong><small class="chefe">Chefe</small></div><i class="pedestal" style="left:389px;top:1050px;width:300px;height:80px"></i><div class="spr  flip" style="width:371.2px;height:371.2px;background-image:url(../../../../public/flashcards/sprites/golem-obsidiana.png);background-size:2227.2px auto;left:348px;top:742px;"></div><div class="placa" style="left:391px;top:1106px;width:296px"><strong>Titã da Coluna</strong><small class="chefe">Chefe</small></div><i class="pedestal" style="left:706px;top:1050px;width:300px;height:80px"></i><div class="spr  flip" style="width:403.2px;height:374.40000000000003px;background-image:url(../../../../public/flashcards/sprites/gosma-rainha.png);background-size:2419.2000000000003px auto;left:647px;top:744px;"></div><div class="placa" style="left:708px;top:1106px;width:296px"><strong>Rainha do Cimento</strong><small class="chefe">Chefe</small></div>
+<footer class="faixa"><span class="alvo"><i></i>Treine flashcards no Orto Questões</span><b>5/7 ›</b></footer></section>
+<section id="feed-06"><div class="cena "><i class="c fundo" style="background-image:url(../../../../public/flashcards/cenarios/floresta-paisagem-fundo.png)"></i><i class="c meio" style="background-image:url(../../../../public/flashcards/cenarios/floresta-paisagem-meio.png)"></i><i class="c frente" style="background-image:url(../../../../public/flashcards/cenarios/floresta-paisagem-frente.png)"></i><i class="c luz" style="background-image:url(../../../../public/flashcards/cenarios/floresta-paisagem-luz.png)"></i><i class="poeira"></i><i class="vinheta"></i></div><i class="raio" style="left:380px"></i><i class="veu cima" style="height:44%"></i><i class="veu baixo" style="height:24%"></i>
+<header class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b>&nbsp;Questões</div><span class="pilula">Beta público</span></header>
+<div class="conteudo" style="top:150px"><div class="kicker">Modo jogo · progressão</div><h2 class="ouro" style="margin-top:16px;font-size:62px">Seu personagem cresce<br>com o seu treino.</h2>
+<p class="texto" style="margin-top:16px">Seis estágios. Ele evolui <b>a cada chefe vencido</b>.</p></div>
+<i class="pedestal" style="left:20px;top:980px;width:180px;height:60px"></i><div class="spr " style="width:280.0px;height:300.0px;background-image:url(../../../../public/flashcards/sprites/heroi-1.png);background-size:1680.0px auto;left:-25px;top:725px;"></div><div class="estagio" style="left:25px;top:1040px"><em>I</em><span>Aprendiz do Torneio</span></div><i class="pedestal" style="left:192px;top:980px;width:180px;height:60px"></i><div class="spr " style="width:302.40000000000003px;height:324.0px;background-image:url(../../../../public/flashcards/sprites/heroi-2.png);background-size:1814.4px auto;left:136px;top:702px;"></div><div class="estagio" style="left:197px;top:1040px"><em>II</em><span>Escudeiro Clínico</span></div><i class="pedestal" style="left:364px;top:980px;width:180px;height:60px"></i><div class="spr " style="width:324.8px;height:348.0px;background-image:url(../../../../public/flashcards/sprites/heroi-3.png);background-size:1948.8px auto;left:297px;top:679px;"></div><div class="estagio" style="left:369px;top:1040px"><em>III</em><span>Guardião dos Fundamentos</span></div><i class="pedestal" style="left:536px;top:980px;width:180px;height:60px"></i><div class="spr " style="width:347.2px;height:372.0px;background-image:url(../../../../public/flashcards/sprites/heroi-4.png);background-size:2083.2000000000003px auto;left:459px;top:657px;"></div><div class="estagio" style="left:541px;top:1040px"><em>IV</em><span>Cavaleiro da Reconstrução</span></div><i class="pedestal" style="left:708px;top:980px;width:180px;height:60px"></i><div class="spr " style="width:369.59999999999997px;height:396.0px;background-image:url(../../../../public/flashcards/sprites/heroi-5.png);background-size:2217.6px auto;left:620px;top:634px;"></div><div class="estagio" style="left:713px;top:1040px"><em>V</em><span>Mestre da Ortopedia</span></div><i class="pedestal" style="left:880px;top:980px;width:180px;height:60px"></i><div class="spr " style="width:392.0px;height:420.0px;background-image:url(../../../../public/flashcards/sprites/heroi-6.png);background-size:2352.0px auto;left:781px;top:611px;"></div><div class="estagio" style="left:885px;top:1040px"><em>VI</em><span>Lenda da Masmorra</span></div>
+<footer class="faixa"><span class="alvo"><i></i>Treine flashcards no Orto Questões</span><b>6/7 ›</b></footer></section>
+<section id="feed-07"><div class="cena "><i class="c fundo" style="background-image:url(../../../../public/flashcards/cenarios/floresta-paisagem-fundo.png)"></i><i class="c meio" style="background-image:url(../../../../public/flashcards/cenarios/floresta-paisagem-meio.png)"></i><i class="c frente" style="background-image:url(../../../../public/flashcards/cenarios/floresta-paisagem-frente.png)"></i><i class="c luz" style="background-image:url(../../../../public/flashcards/cenarios/floresta-paisagem-luz.png)"></i><i class="poeira"></i><i class="vinheta"></i></div><i class="raio" style="left:600px"></i><i class="veu cima" style="height:58%"></i><i class="veu baixo" style="height:44%"></i>
+<header class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b>&nbsp;Questões</div><span class="pilula">Beta público</span></header>
+<div class="conteudo logo" style="top:150px"><div class="pre">Novo · beta aberto</div>
+<span class="l1 ouro" style="font-size:84px;margin-top:22px">Treine</span><span class="l2 ouro" style="font-size:118px">Flashcards</span>
+<div class="ornamento"><i></i></div>
+<p class="tagline">Teste grátis e conte o que achou.</p></div>
+<i class="sombra" style="left:205px;top:938px;width:250px;height:45px"></i><div class="spr " style="width:347.2px;height:372.0px;background-image:url(../../../../public/flashcards/sprites/heroi-4.png);background-size:2083.2000000000003px auto;left:163px;top:607px;"></div>
+<i class="sombra" style="left:580px;top:933px;width:300px;height:54px"></i><div class="spr  flip" style="width:371.2px;height:371.2px;background-image:url(../../../../public/flashcards/sprites/golem.png);background-size:2227.2px auto;left:539px;top:612px;"></div>
+<div class="conteudo" style="top:1010px;text-align:center"><div class="menu">Menu <span>›</span> Flashcards</div>
+<p class="texto" style="margin-top:18px;font-size:27px">Conta grátis: 10 flashcards a cada 24 horas. Assinante: sem limite.</p></div>
+<footer class="faixa"><span class="alvo"><i></i>ortoquestoes.com.br</span><b>7/7</b></footer></section>
+<section class="story" id="story-01"><div class="cena desfoca"><i class="c fundo" style="background-image:url(../../../../public/flashcards/cenarios/biblioteca-retrato-fundo.png)"></i><i class="c meio" style="background-image:url(../../../../public/flashcards/cenarios/biblioteca-retrato-meio.png)"></i><i class="c frente" style="background-image:url(../../../../public/flashcards/cenarios/biblioteca-retrato-frente.png)"></i><i class="c luz" style="background-image:url(../../../../public/flashcards/cenarios/biblioteca-retrato-luz.png)"></i><i class="poeira"></i><i class="vinheta"></i></div><i class="raio" style="left:420px"></i><i class="veu cima" style="height:46%"></i><i class="veu baixo" style="height:30%"></i>
+<header class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b>&nbsp;Questões</div><span class="pilula">Beta público</span></header>
+<div class="conteudo" style="top:360px;text-align:center"><div class="kicker">Novo no Orto Questões</div>
+<h1 class="ouro claro2" style="margin-top:20px;font-size:86px">Treine flashcards<br>de Ortopedia.</h1>
+<p class="sub2" style="margin-top:20px">Por área, com as <b>questões das provas</b>.</p></div>
+<div class="conteudo" style="top:770px;display:flex;justify-content:center"><div class="celular" style="width:372px;transform:rotate(-3deg)"><img src="prints/cel-estudo-frente2.jpg" alt="Flashcard na Biblioteca"></div></div>
+<footer class="faixa"><span class="alvo"><i></i>Grátis para testar · Menu › Flashcards</span><b>1/6 ›</b></footer></section>
+<section class="story" id="story-02"><div class="cena desfoca"><i class="c fundo" style="background-image:url(../../../../public/flashcards/cenarios/biblioteca-retrato-fundo.png)"></i><i class="c meio" style="background-image:url(../../../../public/flashcards/cenarios/biblioteca-retrato-meio.png)"></i><i class="c frente" style="background-image:url(../../../../public/flashcards/cenarios/biblioteca-retrato-frente.png)"></i><i class="c luz" style="background-image:url(../../../../public/flashcards/cenarios/biblioteca-retrato-luz.png)"></i><i class="poeira"></i><i class="vinheta"></i></div><i class="veu cima" style="height:34%"></i><i class="veu baixo" style="height:34%"></i>
+<header class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b>&nbsp;Questões</div><span class="pilula">Beta público</span></header>
+<div class="conteudo" style="top:360px"><div class="kicker">Depois de responder</div><h2 class="ouro" style="margin-top:16px;font-size:74px">Errei. Hesitei.<br>Sabia.</h2>
+<p class="sub2" style="margin-top:14px;font-size:31px">Você diz como foi. O flashcard <b>volta na hora certa</b>.</p></div>
+<div class="conteudo" style="top:720px;display:flex;justify-content:center"><div class="celular" style="width:388px;transform:rotate(3deg)"><img src="prints/cel-estudo-verso2.jpg" alt="Flashcard respondido no celular"></div></div>
+<footer class="faixa"><span class="alvo"><i></i>Treine flashcards no Orto Questões</span><b>2/6 ›</b></footer></section>
+<section class="story" id="story-03"><div class="cena desfoca"><i class="c fundo" style="background-image:url(../../../../public/flashcards/cenarios/biblioteca-retrato-fundo.png)"></i><i class="c meio" style="background-image:url(../../../../public/flashcards/cenarios/biblioteca-retrato-meio.png)"></i><i class="c frente" style="background-image:url(../../../../public/flashcards/cenarios/biblioteca-retrato-frente.png)"></i><i class="c luz" style="background-image:url(../../../../public/flashcards/cenarios/biblioteca-retrato-luz.png)"></i><i class="poeira"></i><i class="vinheta"></i></div><i class="veu cima" style="height:34%"></i><i class="veu baixo" style="height:34%"></i>
+<header class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b>&nbsp;Questões</div><span class="pilula">Beta público</span></header>
+<div class="conteudo" style="top:360px"><div class="kicker">Cronograma de flashcards</div><h2 class="ouro" style="margin-top:16px;font-size:72px">Até a data<br>da sua prova.</h2>
+<p class="sub2" style="margin-top:14px;font-size:31px">Escolha os assuntos, os dias e <b>quantos por dia</b>.</p></div>
+<div class="conteudo" style="top:720px;display:flex;justify-content:center"><div class="celular" style="width:388px;transform:rotate(-3deg)"><img src="prints/cel-cronograma.jpg" alt="Cronograma de flashcards no celular"></div></div>
+<footer class="faixa"><span class="alvo"><i></i>Treine flashcards no Orto Questões</span><b>3/6 ›</b></footer></section>
+<section class="story" id="story-04"><div class="cena desfoca"><i class="c fundo" style="background-image:url(../../../../public/flashcards/cenarios/floresta-retrato-fundo.png)"></i><i class="c meio" style="background-image:url(../../../../public/flashcards/cenarios/floresta-retrato-meio.png)"></i><i class="c frente" style="background-image:url(../../../../public/flashcards/cenarios/floresta-retrato-frente.png)"></i><i class="c luz" style="background-image:url(../../../../public/flashcards/cenarios/floresta-retrato-luz.png)"></i><i class="poeira"></i><i class="vinheta"></i></div><i class="veu cima" style="height:34%"></i><i class="veu baixo" style="height:30%"></i>
+<header class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b>&nbsp;Questões</div><span class="pilula">Beta público</span></header>
+<div class="conteudo" style="top:360px"><div class="kicker">Dois jeitos de treinar</div><h2 class="ouro" style="margin-top:16px;font-size:72px">Estudo calmo<br>ou modo jogo.</h2>
+<p class="sub2" style="margin-top:14px;font-size:31px"><b>Biblioteca</b> para revisar. <b>Cripta</b> para treinar jogando.</p></div>
+<div class="conteudo" style="top:720px;display:flex;justify-content:center"><div class="celular" style="width:388px;transform:rotate(3deg)"><img src="prints/cel-entrada.jpg" alt="Escolha entre Cripta e Biblioteca"></div></div>
+<footer class="faixa"><span class="alvo"><i></i>Treine flashcards no Orto Questões</span><b>4/6 ›</b></footer></section>
+<section class="story" id="story-05"><div class="cena "><i class="c fundo" style="background-image:url(../../../../public/flashcards/cenarios/covil-paisagem-fundo.png)"></i><i class="c meio" style="background-image:url(../../../../public/flashcards/cenarios/covil-paisagem-meio.png)"></i><i class="c frente" style="background-image:url(../../../../public/flashcards/cenarios/covil-paisagem-frente.png)"></i><i class="c luz" style="background-image:url(../../../../public/flashcards/cenarios/covil-paisagem-luz.png)"></i><i class="poeira"></i><i class="vinheta"></i></div><i class="raio" style="left:380px"></i><i class="veu cima" style="height:40%"></i><i class="veu baixo" style="height:30%"></i>
+<header class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b>&nbsp;Questões</div><span class="pilula">Beta público</span></header>
+<div class="conteudo" style="top:360px;text-align:center"><div class="kicker">Modo jogo</div>
+<h2 class="ouro" style="margin-top:16px;font-size:80px">Cada acerto<br>é um golpe.</h2>
+<p class="sub2" style="margin-top:16px">Monstros, chefes e um dragão.<br>Para vencer, <b>acerte os flashcards</b>.</p></div>
+<i class="halo" style="left:300px;top:1000px;width:700px;height:480px;background:rgba(255,110,40,.32)"></i>
+<i class="sombra" style="left:360px;top:1499px;width:680px;height:122px"></i><div class="spr  flip" style="width:871.1999999999999px;height:712.8px;background-image:url(../../../../public/flashcards/sprites/dragao.png);background-size:5227.2px auto;left:324px;top:880px;"></div>
+<i class="sombra" style="left:50px;top:1568px;width:240px;height:43px"></i><div class="spr " style="width:336.0px;height:360.0px;background-image:url(../../../../public/flashcards/sprites/heroi-5.png);background-size:2016.0px auto;left:8px;top:1248px;"></div>
+<footer class="faixa"><span class="alvo"><i></i>Treine flashcards no Orto Questões</span><b>5/6 ›</b></footer></section>
+<section class="story" id="story-06"><div class="cena "><i class="c fundo" style="background-image:url(../../../../public/flashcards/cenarios/floresta-retrato-fundo.png)"></i><i class="c meio" style="background-image:url(../../../../public/flashcards/cenarios/floresta-retrato-meio.png)"></i><i class="c frente" style="background-image:url(../../../../public/flashcards/cenarios/floresta-retrato-frente.png)"></i><i class="c luz" style="background-image:url(../../../../public/flashcards/cenarios/floresta-retrato-luz.png)"></i><i class="poeira"></i><i class="vinheta"></i></div><i class="raio" style="left:420px"></i><i class="veu cima" style="height:50%"></i><i class="veu baixo" style="height:40%"></i>
+<header class="topo"><div class="marca"><svg><use href="#sim"/></svg><b>Orto</b>&nbsp;Questões</div><span class="pilula">Beta público</span></header>
+<div class="conteudo logo" style="top:380px"><div class="pre">Novo · beta aberto</div>
+<span class="l1 ouro" style="font-size:88px;margin-top:22px">Treine</span><span class="l2 ouro" style="font-size:120px">Flashcards</span>
+<div class="ornamento" style="width:640px"><i></i></div>
+<p class="tagline">Teste grátis no Orto Questões.</p></div>
+<i class="pedestal" style="left:70px;top:1204px;width:160px;height:52px"></i><div class="spr " style="width:235.20000000000002px;height:252.0px;background-image:url(../../../../public/flashcards/sprites/heroi-1.png);background-size:1411.2px auto;left:37px;top:991px;"></div><i class="pedestal" style="left:226px;top:1204px;width:160px;height:52px"></i><div class="spr " style="width:254.24px;height:272.4px;background-image:url(../../../../public/flashcards/sprites/heroi-2.png);background-size:1525.44px auto;left:183px;top:971px;"></div><i class="pedestal" style="left:382px;top:1204px;width:160px;height:52px"></i><div class="spr " style="width:273.28px;height:292.8px;background-image:url(../../../../public/flashcards/sprites/heroi-3.png);background-size:1639.68px auto;left:330px;top:952px;"></div><i class="pedestal" style="left:538px;top:1204px;width:160px;height:52px"></i><div class="spr " style="width:292.32000000000005px;height:313.20000000000005px;background-image:url(../../../../public/flashcards/sprites/heroi-4.png);background-size:1753.9200000000003px auto;left:477px;top:932px;"></div><i class="pedestal" style="left:694px;top:1204px;width:160px;height:52px"></i><div class="spr " style="width:311.36px;height:333.6px;background-image:url(../../../../public/flashcards/sprites/heroi-5.png);background-size:1868.16px auto;left:624px;top:913px;"></div><i class="pedestal" style="left:850px;top:1204px;width:160px;height:52px"></i><div class="spr " style="width:330.40000000000003px;height:354.0px;background-image:url(../../../../public/flashcards/sprites/heroi-6.png);background-size:1982.4px auto;left:771px;top:894px;"></div>
+<div class="conteudo" style="top:1340px;text-align:center"><div class="menu">Menu <span>›</span> Flashcards</div>
+<p class="texto" style="margin-top:18px;font-size:26px">Conta grátis: 10 flashcards a cada 24 horas.</p></div>
+<footer class="faixa"><span class="alvo"><i></i>ortoquestoes.com.br</span><b>6/6</b></footer></section>
+<script>
+document.querySelectorAll('.poeira').forEach(function(el,k){var s=1234+k*97;function r(){s=(s*16807)%2147483647;return (s-1)/2147483646}
+var n=el.closest('.story')?60:44;for(var i=0;i<n;i++){var b=document.createElement('b');var t=2+r()*9;b.style.width=b.style.height=t+'px';b.style.left=(r()*100)+'%';b.style.top=(r()*100)+'%';b.style.opacity=(.25+r()*.75).toFixed(2);if(t>8)b.style.filter='blur(2px)';el.appendChild(b)}})
+</script>
+</body></html>
