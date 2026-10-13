@@ -247,6 +247,7 @@ export type Evento =
   | { tipo: 'equipou'; recompensa: Recompensa; substituiu: TipoPoder | null }
   | { tipo: 'ouro'; valor: number; motivo: 'inimigo' | 'brilhante' | 'porta' | 'bolsa' | 'sabio' | 'compra' | 'sala' }
   | { tipo: 'sala'; sala: Sala }
+  | { tipo: 'sinergia'; nome: string; texto: string }
   | { tipo: 'sala-resultado'; texto: string; azar: boolean }
   | { tipo: 'cristais'; valor: number }
   | { tipo: 'portas'; portas: Porta[] }
@@ -275,6 +276,13 @@ export interface OpcoesMotor {
 export interface ConfigPartida { modo?: Modo; talentos?: Talentos; ids?: string[]; heroi?: string }
 
 /** É andar de chefe? (Cripta: o 3º de cada ato; Torre: a cada 10.) */
+/** Sinergias: pares de relíquias que, juntos, dão um bônus no início de cada adversário. */
+export const SINERGIAS: Array<{ nome: string; par: [TipoReliquia, TipoReliquia]; efeito: 'barreira' | 'pista' | 'cura'; texto: string }> = [
+  { nome: 'Imobilização completa', par: ['gesso', 'placas'], efeito: 'barreira', texto: 'Tala e placas juntas: +1 Barreira a cada adversário.' },
+  { nome: 'Plantão de estudos', par: ['lupa', 'livro'], efeito: 'pista', texto: 'Lupa e livro juntos: +1 pergaminho da pista a cada adversário.' },
+  { nome: 'Pronto-socorro', par: ['insignia', 'coracao'], efeito: 'cura', texto: 'Insígnia e coração juntos: cura 6 a cada adversário.' },
+]
+
 export const andarDeChefe = (andar: number, modo: Modo) => (modo === 'torre' ? andar % 10 === 0 : (andar - 1) % 3 === 2)
 
 /** Partidas salvas na versão 2 continuam (Cripta, sem moedas). */
@@ -901,6 +909,13 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
     const { inimigo, ciclo } = inimigoDoAndar(andar, e.sementeBase, e.modo)
     if (e.reliquias.includes('lupa')) e = { ...e, encaixes: equipar(e.encaixes, 'pista', RECOMPENSAS.lupa.v.cargas)[0] }
     if (e.reliquias.includes('baluarte')) e = { ...e, encaixes: equipar(e.encaixes, 'barreira', RECOMPENSAS.baluarte.v.cargas)[0] }
+    // sinergias de relíquias (Etapa 6): pares que valem mais juntos, no início de cada adversário
+    for (const sin of SINERGIAS) {
+      if (!sin.par.every((r) => e.reliquias.includes(r))) continue
+      if (sin.efeito === 'barreira' || sin.efeito === 'pista') e = { ...e, encaixes: equipar(e.encaixes, sin.efeito, 1)[0] }
+      else e = curar(e, 6, 'insignia', eventos)
+      eventos.push({ tipo: 'sinergia', nome: sin.nome, texto: sin.texto })
+    }
     if (e.modo === 'torre' && (andar - 1) % TORRE.patamarACada === 0) eventos.push({ tipo: 'patamar', andar: andar - 1 })
     eventos.push({ tipo: 'novo-inimigo', inimigo, ciclo, trocaCenario: inimigo.cenario !== antes })
     const r = comprar({ ...e, atual: null })

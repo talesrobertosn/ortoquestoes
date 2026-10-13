@@ -351,6 +351,11 @@ try {
       const fim = motor.escolherNaSala(s1, k).estado
       assert.ok(fim.vida >= 1 && fim.andar === q.andar + 1, tipo)
     }
+    // sinergia: tala + placas dão +1 Barreira no início do próximo adversário
+    const comPar = { ...motor.novaPartida(64).estado, reliquias: ['gesso', 'placas'], encaixes: [], fase: 'portas', portas: [{ tipo: 'combate', recompensa: 'misto' }] }
+    const r = motor.entrar(comPar, 0)
+    assert.ok(r.eventos.some((e) => e.tipo === 'sinergia' && e.nome === 'Imobilização completa'))
+    assert.ok(r.estado.encaixes.some((e) => e.tipo === 'barreira'))
     // partidas salvas antes das salas continuam abrindo
     const antiga = { ...motor.novaPartida(63).estado }; delete antiga.sala
     assert.equal(m.migrarPartida(antiga).sala, null)

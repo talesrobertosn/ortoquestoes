@@ -723,6 +723,9 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
         }
         case 'portas': case 'loja': case 'sabio': case 'comprou': case 'sala':
           break
+        case 'sinergia':
+          flutuar(refHeroi.current, ev.nome, '#c9a0ff', { y: -90, rotulo: 'SINERGIA' })
+          break
         case 'sala-resultado':
           if (ev.azar) { definirFaixa({ texto: 'Armadilha!', sub: ev.texto, tom: 'vermelho' }); tremer(0.6); if (!(await esperar(1600, g))) return; definirFaixa(null) }
           break
