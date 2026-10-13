@@ -97,11 +97,58 @@ export function configurarSom(o: { ligado: boolean; efeitos: number; ambiente: n
   aplicarVolumes()
 }
 
-/** Chamar num toque ou tecla: cria o contexto e retoma o ambiente e a música pedidos. */
+/**
+ * Chamar DENTRO de um gesto (toque, clique ou tecla): cria o contexto, retoma e
+ * toca um silêncio de 1 amostra (o iOS só libera o Web Audio assim).
+ * Correção do beta (13/10/2026): no celular o som não destravava porque o
+ * gatilho era só `pointerdown`, que com o dedo não conta como gesto; e depois de
+ * minimizar ou bloquear a tela o contexto ficava "interrupted" para sempre.
+ */
 export function destravar() {
   criar()
-  if (ctx?.state === 'suspended') void ctx.resume().then(() => { retomar() })
+  if (!ctx) { falhaSom = 'sem-suporte'; return }
+  try {
+    // iOS 17+: tocar mesmo com a chave do silencioso (só depois de a pessoa escolher entrar com som)
+    const sessao = (navigator as unknown as { audioSession?: { type: string } }).audioSession
+    if (sessao && ligado) sessao.type = 'playback'
+  } catch { /* navegador sem audioSession */ }
+  try {
+    const b = ctx.createBuffer(1, 1, ctx.sampleRate), f = ctx.createBufferSource()
+    f.buffer = b; f.connect(ctx.destination); f.start(0)
+  } catch { /* silêncio é só o empurrão; seguir */ }
+  if (ctx.state !== 'running') {
+    void ctx.resume().then(() => { falhaSom = null; retomar() }).catch(() => { falhaSom = 'bloqueado' })
+  }
   retomar()
+}
+
+/** Por que o som não está tocando: sem suporte, bloqueado pelo navegador (falta um toque) ou faixa que não carregou. */
+let falhaSom: 'sem-suporte' | 'bloqueado' | 'carregamento' | null = null
+export function estadoDoSom(): 'ativo' | 'aguardando-toque' | 'sem-suporte' | 'carregamento' {
+  if (falhaSom === 'sem-suporte') return 'sem-suporte'
+  if (!ctx || ctx.state !== 'running') return 'aguardando-toque'
+  return falhaSom === 'carregamento' ? 'carregamento' : 'ativo'
+}
+
+/**
+ * Instala uma vez, na janela, o destrave por gesto e a pausa por visibilidade.
+ * Cada toque tenta destravar enquanto o contexto não estiver tocando (não só o
+ * primeiro), e nada mais acontece quando já está tocando. Ao esconder a aba, o
+ * contexto é suspenso (sem trilha acumulada); ao voltar, tenta retomar, e se o
+ * navegador exigir um toque, o próximo toque resolve.
+ */
+let instalado = false
+export function instalarDestrave() {
+  if (instalado || typeof window === 'undefined') return
+  instalado = true
+  const tentar = () => { if (!ctx || ctx.state !== 'running') destravar() }
+  for (const tipo of ['pointerup', 'touchend', 'click', 'keydown']) window.addEventListener(tipo, tentar, { capture: true, passive: true })
+  document.addEventListener('visibilitychange', () => {
+    if (!ctx) return
+    if (document.hidden) void ctx.suspend().catch(() => undefined)
+    else if (ctx.state !== 'running') void ctx.resume().then(() => retomar()).catch(() => undefined)
+  })
+  window.addEventListener('pageshow', () => { if (ctx && ctx.state !== 'running') void ctx.resume().then(() => retomar()).catch(() => undefined) })
 }
 function retomar() {
   if (!ctx || ctx.state !== 'running') return
@@ -450,7 +497,9 @@ const hz = (midi: number) => 440 * Math.pow(2, (midi - 69) / 12)
 
 const ARQUIVO_MUSICA: Partial<Record<Musica, string>> = {
   entrada: 'cripta', chefe: 'chefe', elite: 'elite', dragao: 'dragao', torre: 'torre', biblioteca: 'biblioteca', arquivo: 'biblioteca',
-  campo: 'batalha', masmorra: 'batalha', salao: 'batalha', covil: 'batalha', forja: 'batalha', coliseu: 'batalha', jardim: 'batalha',
+  // Etapa 7 (13/10/2026): trilha própria da floresta, da masmorra, do covil e das salas
+  campo: 'floresta', masmorra: 'masmorra', covil: 'covil', loja: 'sala', sabio: 'sala',
+  salao: 'batalha', forja: 'batalha', coliseu: 'batalha', jardim: 'floresta',
   laboratorio: 'batalha', caverna: 'batalha', templo: 'batalha', passarela: 'batalha', catacumba: 'batalha', treino: 'batalha',
 }
 const ARQUIVO_JINGLE: Partial<Record<Som, string>> = { 'jingle-vitoria': 'vitoria', 'jingle-chefe': 'vitoria', 'jingle-topo': 'vitoria', 'jingle-derrota': 'derrota', 'jingle-tesouro': 'recompensa', 'jingle-patamar': 'recompensa' }
@@ -467,7 +516,7 @@ function carregarFaixa(nome: string): Promise<AudioBuffer | null> {
       .then((r) => (r.ok ? r.arrayBuffer() : Promise.reject(new Error(String(r.status)))))
       .then((b) => c.decodeAudioData(b))
       .then((buf) => { buffers.set(nome, buf); return buf })
-      .catch(() => null)
+      .catch(() => { carregando.delete(nome); falhaSom = 'carregamento'; return null })
     carregando.set(nome, p)
   }
   return p ?? Promise.resolve(null)
@@ -475,7 +524,7 @@ function carregarFaixa(nome: string): Promise<AudioBuffer | null> {
 
 /** Pré-carrega as faixas curtas e a da batalha (chamado no primeiro toque). */
 export function preCarregarTrilha() {
-  for (const n of ['batalha', 'vitoria', 'recompensa', 'derrota']) void carregarFaixa(n)
+  for (const n of ['floresta', 'batalha', 'vitoria', 'recompensa', 'derrota']) void carregarFaixa(n)
 }
 
 function tocarFaixa(nome: Musica, buf: AudioBuffer) {
@@ -582,6 +631,8 @@ export function tocarMusica(nome: Musica | null) {
 
   const agendar = () => {
     if (!vivo) return
+    // aba que volta depois de um tempo escondida: pula as notas perdidas em vez de tocar todas de uma vez
+    if (proximo < c.currentTime - 0.1) proximo = c.currentTime + 0.05
     while (proximo < c.currentTime + 0.15) {
       const compasso = Math.floor(n / 16), dentro = n % 16
       const acorde = tema.acordes[compasso % tema.acordes.length]

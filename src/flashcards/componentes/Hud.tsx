@@ -28,11 +28,12 @@ function folhaDe(quem: Personagem, variante?: string) {
 /**
  * Sprite assado (scripts/sprites/: modelado em volume e convertido em pixel
  * art), quando existe para o personagem; senão, o desenho antigo em código.
- * O herói usa a folha do estágio; as variantes de cor dos adversários ainda
- * usam o desenho antigo até ganharem folha própria.
+ * O herói usa a folha do estágio; as variantes de cor dos adversários usam a
+ * folha <arquétipo>-<variante> quando ela existe (golem, guardião, serpente).
  */
 function assadoDe(quem: Personagem, variante?: string): { nome: string; meta: MetaAssada } | null {
-  const nome = quem === 'heroi' ? (variante ?? 'heroi-1') : variante ? '' : quem
+  // variantes de cor dos adversários (Etapa 8) têm folha própria, <arquétipo>-<variante>; sem ela, o desenho antigo
+  const nome = quem === 'heroi' ? (variante ?? 'heroi-1') : variante ? `${quem}-${variante}` : quem
   const meta = nome ? ASSADOS[nome] : undefined
   return meta ? { nome, meta } : null
 }
@@ -42,10 +43,13 @@ function assadoDe(quem: Personagem, variante?: string): { nome: string; meta: Me
  * o desenho antigo): mantém a altura do corpo antigo, um pouco maior para dar
  * presença, arredondada a quartos de pixel para os pixels ficarem regulares.
  */
-const CRESCE: Partial<Record<Personagem, number>> = { heroi: 1.4, dragao: 1.2, guardiao: 1.17, golem: 1.3, serpente: 1.4 }
+const CRESCE: Partial<Record<Personagem, number>> = { heroi: 1.4, dragao: 1.5, guardiao: 1.17, golem: 1.3, serpente: 1.4 }
 function escalaAssada(quem: Personagem, escala: number, meta: MetaAssada) {
   const [, , , hAntigo] = caixaDoCorpo(quem)
-  const alvo = (escala * hAntigo * (CRESCE[quem] ?? 1.15)) / meta.caixa[3]
+  // o herói cresce de verdade a cada estágio (scripts/sprites/heroi.py): a referência é sempre o
+  // corpo do aprendiz, para a lenda adulta aparecer mais alta na tela, e não encolhida ao mesmo tamanho
+  const ref = quem === 'heroi' ? (ASSADOS['heroi-1']?.caixa[3] ?? meta.caixa[3]) : meta.caixa[3]
+  const alvo = (escala * hAntigo * (CRESCE[quem] ?? 1.15)) / ref
   return Math.max(0.5, Math.round(alvo * 4) / 4)
 }
 
@@ -110,7 +114,8 @@ export const Ator = forwardRef<HTMLDivElement, AtorProps>(function Ator({ quem, 
   const [, , w, h] = caixaDoCorpo(quem)
   const dx = assado ? (w * escala - assado.meta.caixa[2] * ea) / 2 : 0
   // um terço do que cresceu desce sobre a borda da mesa (o adversário pisa na beira da arena)
-  const dy = assado ? (h * escala - assado.meta.caixa[3] * ea) * 0.66 : 0
+  // o herói fica de pé sobre a mesma linha em todos os estágios: cresce só para cima
+  const dy = assado ? (h * escala - assado.meta.caixa[3] * ea) * (quem === 'heroi' ? 1 : 0.66) : 0
   return (
     <div ref={ref} className={`fc-ator fc-ator--${quem}${assado ? ' fc-ator--assado' : ''}${chefe ? ' fc-ator--chefe' : ''}${classe ? ' ' + classe : ''}`} style={{ width: w * escala, height: h * escala }}>
       <span className="fc-ator__aura" aria-hidden="true" />

@@ -13,6 +13,7 @@
 @media (prefers-reduced-motion: reduce) { .cripta-cartao__sprite--dragao { animation: none; } }
 .cripta-cartao__selo { margin: 0 0 0.3rem; color: #ffb070; font-size: var(--meta); font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
 .cripta-cartao h2 { margin: 0 0 0.35rem; color: #fff; font-size: clamp(1.2rem, 2.6vw, 1.55rem); line-height: 1.2; }
+.cripta-cartao p em { font-style: normal; color: #ffb070; font-weight: 700; }
 .cripta-cartao h2 em { font-style: normal; margin-inline: 0.12em; font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 1.3em; letter-spacing: 0.02em; color: #ffb070; }
 .cripta-cartao p:not(.cripta-cartao__selo) { margin: 0; color: rgba(255, 255, 255, 0.84); }
 .cripta-cartao__lista { margin: 0.6rem 0 0; padding-left: 1.1rem; color: rgba(255, 255, 255, 0.84); display: grid; gap: 0.2rem; }
@@ -26,3 +27,5 @@
   .cripta-cartao__entrar { grid-column: 1 / -1; }
   .cripta-cartao__arte { min-height: 72px; transform: scale(0.8); transform-origin: left bottom; }
 }
+.cripta-cartao__capa { display: block; width: clamp(9rem, 22vw, 15rem); height: auto; border-radius: var(--raio); image-rendering: pixelated; box-shadow: 0 0 0 2px rgba(255, 176, 112, 0.35); }
+@media (max-width: 40rem) { .cripta-cartao__capa { grid-column: 1 / -1; width: 100%; } }

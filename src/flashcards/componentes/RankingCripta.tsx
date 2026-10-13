@@ -46,7 +46,7 @@ export function RankingCripta() {
     )
   }
   return (
-    <ModalJogo titulo="Ranking da Cripta" aoPedirFechar={() => navegar('/flashcards')}>
+    <ModalJogo titulo="Ranking da Cripta" aoPedirFechar={() => navegar('/flashcards/entrada')}>
       <div className="fc-arena fc-entrada fc-ranking">
         <Cenario cena="salao" reduzido={false} clima="noite" />
         <div className="fc-entrada__miolo fc-ranking__miolo">
@@ -65,7 +65,7 @@ export function RankingCripta() {
                 {tabela('unicos', 'Flashcards únicos respondidos', (v) => `${v.toLocaleString('pt-BR')} flashcards`, unicos)}
               </>
             ) : tabela('torre', 'Andar mais alto da Torre do Título', (v) => `${v}/${TORRE.andares}`, rec.torreMaximo ?? 0)}
-            <div className="fc-janela__botoes"><button type="button" className="fc-botao" onClick={() => navegar('/flashcards')}>Voltar à Entrada</button></div>
+            <div className="fc-janela__botoes"><button type="button" className="fc-botao" onClick={() => navegar('/flashcards/entrada')}>Voltar à Entrada</button></div>
           </div>
         </div>
       </div>

@@ -1,11 +1,13 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
+import { registrarEstudo } from '../aprendizagem'
 import { gravar, ler } from '../../estado/armazenamento'
-import { proximoRegistro, revisarHoje } from '../../estado/revisao'
+import { revisarHoje } from '../../estado/revisao'
 import { indiceDoAcervo, todasAsCartas } from '../dados/acervo'
 import { tocar } from '../efeitos/sons'
-import { CHAVE_HISTORICO, CHAVE_RECORDES, CHAVE_REGISTROS, lembrarVisto, RECORDES_VAZIOS, type Recordes, type RegistroFlashcard } from '../progresso'
+import { CHAVE_REGISTROS, type RegistroFlashcard } from '../progresso'
 import type { Flashcard } from '../tipos'
-import { autorizarFlashcard, FLASHCARDS_NO_SERVIDOR, type LimiteFlashcard } from '../servidor'
+import { autorizarFlashcard, FLASHCARDS_NO_SERVIDOR, sincronizarProgresso, type LimiteFlashcard } from '../servidor'
+import { contarSessaoTerminada } from '../opiniao'
 import { href } from '../../util/rotas'
 import { Cartao, familiasDe } from './Cartao'
 import { Sprite } from './Sprite'
@@ -59,6 +61,8 @@ export function Estudo({ primeiro, aoAmpliar, reduzido }: { primeiro: string[]; 
     return [
       { id: 'pendentes', nome: 'Revisões pendentes', icone: 'vela', cor: '#ffb070', descricao: 'Venceram hoje', filtro: (_c, r) => pendente(r) },
       { id: 'errados', nome: 'Flashcards errados', icone: 'chama', cor: '#ff7a5c', descricao: 'Errou da última vez', filtro: (_c, r) => r?.c === false },
+      { id: 'hesitei', nome: 'Hesitei', icone: 'olho', cor: '#ffd98a', descricao: 'Acertou com dúvida da última vez', filtro: (_c, r) => r?.c === true && r.confianca === 'duvida' },
+      { id: 'novos', nome: 'Nunca estudados', icone: 'estrela', cor: '#9fe0ff', descricao: 'Ainda não vistos', filtro: (_c, r) => !r },
       { id: 'caem', nome: 'Temas que mais caem', icone: 'coroa', cor: '#ffcf5a', descricao: 'Lendários: maior incidência', filtro: (c) => c.raridade === 'lendaria' },
       { id: 'imagem', nome: 'Com imagem', icone: 'olho', cor: '#c9b6ff', descricao: 'Radiografias e figuras', filtro: (c) => !!c.imagem },
       { id: 'anatomia', nome: 'Anatomia', icone: 'pergaminho', cor: '#e8d28a', descricao: 'Figuras com seta', filtro: (c) => c.tipo === 'Anatomia' },
@@ -91,6 +95,32 @@ export function Estudo({ primeiro, aoAmpliar, reduzido }: { primeiro: string[]; 
     const n = tamanho === 'pendentes' ? ordenada.filter((c) => peso(c) <= 1).length || Math.min(10, ordenada.length) : tamanho
     return ordenada.slice(0, n).map((c) => c.id)
   }, [cartas, registros, filtrosExtras, tamanho])
+
+  // Link direto (central, revisões de hoje, cronograma): #/flashcards/biblioteca?categoria=pendentes&area=mao&n=20
+  // abre a sessão na hora. "area" pode repetir; com categoria=plano usa as áreas e a meta do cronograma.
+  const [linkUsado, definirLinkUsado] = useState(false)
+  useEffect(() => {
+    if (linkUsado || cartas.length < 50) return
+    const q = new URLSearchParams(window.location.hash.split('?')[1] ?? '')
+    const id = q.get('categoria')
+    if (!id) return
+    definirLinkUsado(true)
+    const areas = q.getAll('area')
+    const n = Math.max(1, Math.min(200, Number(q.get('n')) || 20))
+    const base = categorias.find((c) => c.id === (id === 'plano' ? 'pendentes' : id))
+    if (!base) return
+    const naArea = (c: Flashcard) => !areas.length || areas.includes(c.areaId ?? c.area ?? '')
+    let ids: string[]
+    if (id === 'plano') {
+      // revisões vencidas das áreas do plano primeiro, depois os nunca estudados, até a meta do dia
+      const venc = cartas.filter((c) => naArea(c) && pendente(registros[c.id])).map((c) => c.id)
+      const novos = cartas.filter((c) => naArea(c) && !registros[c.id]).map((c) => c.id)
+      ids = [...venc, ...novos].slice(0, n)
+    } else {
+      ids = montar({ ...base, filtro: (c, r) => base.filtro(c, r) && naArea(c) }).slice(0, n)
+    }
+    if (ids.length) definirSessao({ titulo: id === 'plano' ? 'Sessão de hoje do cronograma' : base.nome, ids })
+  }, [linkUsado, cartas, categorias, montar, registros])
 
   // Vindo da Batalha: os flashcards que derrubaram você abrem uma sessão na hora.
   useEffect(() => {
@@ -153,6 +183,7 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar }: { titulo: stri
   const porId = useMemo(() => new Map(todasAsCartas().map((c) => [c.id, c])), [])
   const fila = useMemo(() => ids.filter((id) => porId.has(id)), [ids, porId])
   const [pos, definirPos] = useState(0)
+  const sessao = useMemo(() => (typeof crypto !== 'undefined' && 'randomUUID' in crypto ? crypto.randomUUID() : String(Date.now()) + Math.random()), [])
   const [virada, definirVirada] = useState(false)
   const [feitos, definirFeitos] = useState<Record<Avaliacao, number>>({ errei: 0, hesitei: 0, sabia: 0 })
   const acabou = pos >= fila.length
@@ -192,18 +223,14 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar }: { titulo: stri
 
   const avaliar = useCallback((a: Avaliacao) => {
     if (!virada || acabou) return
-    const registros = ler<Record<string, RegistroFlashcard>>(CHAVE_REGISTROS, {})
-    registros[carta.id] = { ...proximoRegistro(registros[carta.id], a !== 'errei', Date.now(), a === 'errei' ? 'chute' : a === 'hesitei' ? 'duvida' : 'seguro'), assistidos: registros[carta.id]?.assistidos }
-    gravar(CHAVE_REGISTROS, registros)
-    gravar(CHAVE_HISTORICO, lembrarVisto(ler<string[]>(CHAVE_HISTORICO, []), carta.id))
-    const rec = { ...RECORDES_VAZIOS, ...ler<Partial<Recordes>>(CHAVE_RECORDES, {}) }
-    gravar(CHAVE_RECORDES, { ...rec, respostas: rec.respostas + 1, atualizadoEm: Date.now() })
+    // um evento por flashcard desta sessão: clique duplo ou tecla repetida não contam de novo
+    registrarEstudo({ chave: `${sessao}:${pos}:${carta.id}`, id: carta.id, modo: 'estudo', objetiva: escolha === null ? null : ordem[escolha] === carta.certa, avaliacao: a })
     tocar(a === 'sabia' ? 'cura' : a === 'hesitei' ? 'confirmar' : 'erro')
     definirFeitos((f) => ({ ...f, [a]: f[a] + 1 }))
     definirVirada(false)
     definirEscolha(null)
     definirPos((p) => p + 1)
-  }, [carta, virada, acabou])
+  }, [carta, virada, acabou, sessao, pos, escolha, ordem])
 
   useEffect(() => {
     const aoTeclar = (e: KeyboardEvent) => {
@@ -220,6 +247,8 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar }: { titulo: stri
   }, [avaliar, virada, virar, responder, mostrarAlternativas, ordem])
 
   const total = feitos.errei + feitos.hesitei + feitos.sabia
+  // fim de sessão: conta para o convite de opinião do beta e manda o progresso para a conta
+  useEffect(() => { if (acabou && total) { contarSessaoTerminada(); void sincronizarProgresso() } }, [acabou, total])
   if (acabou) {
     return (
       <div className="fc-estudo fc-estudo--fim">
@@ -232,7 +261,10 @@ function Sessao({ titulo, ids, aoAmpliar, reduzido, aoTerminar }: { titulo: stri
             <div className="errei"><dt>Errei</dt><dd>{feitos.errei}</dd></div>
           </dl>
           <p className="fc-janela__nota">Os que você errou voltam hoje; os que hesitou, em 3 dias; os que sabia, em 10.</p>
-          <div className="fc-janela__botoes"><button type="button" className="fc-botao" onClick={aoTerminar} autoFocus>Voltar à biblioteca</button></div>
+          <div className="fc-janela__botoes">
+            <a className="fc-botao fc-botao--secundario" href={href('/flashcards?opiniao=fim_sessao')}>Enviar opinião</a>
+            <button type="button" className="fc-botao" onClick={aoTerminar} autoFocus>Voltar à biblioteca</button>
+          </div>
         </div>
       </div>
     )

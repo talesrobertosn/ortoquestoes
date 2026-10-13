@@ -59,3 +59,24 @@ desenho da Batalha, arquitetura, roteiro e o protótipo em `prototipos/flashcard
 Toda migração nova também vai para `supabase/colar-no-painel/` e, ao entregar, o SQL completo é
 mandado **como texto na conversa**, num bloco de código, para copiar direto no SQL Editor (o dono
 não consegue copiar bem a partir do arquivo).
+
+## Cripta do Residente (flashcards, beta público desde 13/10/2026)
+
+Até 13/10/2026 a rota `#/flashcards` ficava escondida, sem menu, banner, ranking público nem página
+de vendas. Nesse dia o Tales autorizou o **beta público** e essa restrição deixou de valer:
+menu com selo Beta, quadro na página inicial, central `#/flashcards`, ranking da Cripta, desempenho,
+revisão, cronograma, opinião e apresentação na página de planos. Continuam valendo: as regras atuais
+de acesso, assinatura e limites (sem mudar preço nem inventar benefício), nada de e-mail, mensagem ou
+post em rede social. **Nome (regra do Tales, 13/10/2026):** fora do jogo é sempre "Flashcards" ou
+"Torneio de Flashcards", nunca "Cripta" nem "masmorra" (o público da medicina não sabe o que é);
+"Cripta do Residente" só aparece dentro do jogo (entrada temática e partidas). O roteiro completo e o que já foi feito estão em
+[docs/flashcards/LANCAMENTO-BETA.md](docs/flashcards/LANCAMENTO-BETA.md).
+
+Para continuar o jogo, leia primeiro [docs/flashcards/CONTINUAR.md](docs/flashcards/CONTINUAR.md):
+estado atual, próximos passos, restrições, como testar (Playwright em três tamanhos) e como publicar.
+O último resumo do trabalho está em [docs/flashcards/RESUMO-CHATGPT.md](docs/flashcards/RESUMO-CHATGPT.md).
+
+Diretriz de 13/10/2026: em mudanças visuais, enviar ocasionalmente capturas reais da interface
+(computador e/ou celular) durante o trabalho, identificando prévia ou versão publicada.
+Flashcards: a orientação mais recente de ranking único, progressão por acerto real da turma e
+histórico pessoal, entrada sem Torre e cronograma próprio está em [docs/flashcards/JORNADA-UNICA.md](docs/flashcards/JORNADA-UNICA.md).

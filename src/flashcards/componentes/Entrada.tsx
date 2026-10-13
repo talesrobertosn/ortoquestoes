@@ -2,13 +2,13 @@ import { useEffect, useMemo, useState } from 'react'
 import { gravar, ler } from '../../estado/armazenamento'
 import { FLASHCARDS_RANKING } from '../../config'
 import { href, navegar } from '../../util/rotas'
-import { configurarSom, destravar, tocar, tocarAmbiente, tocarMusica } from '../efeitos/sons'
+import { configurarSom, destravar, instalarDestrave, tocar, tocarAmbiente, tocarMusica } from '../efeitos/sons'
 import type { Personagem } from '../efeitos/personagens'
 import { ALTAR_VAZIO, TALENTOS, comprarTalento, custoDoProximo, nivelDe, type EstadoAltar } from '../motor/altar'
-import { BESTIARIO, TORRE } from '../motor/bestiario'
+import { BESTIARIO } from '../motor/bestiario'
 import { migrarPartida } from '../motor/regras'
 import {
-  BESTIARIO_VAZIO, CHAVE_AJUSTES, CHAVE_ALTAR, CHAVE_BESTIARIO, CHAVE_PARTIDA, CHAVE_PARTIDA_TORRE, CHAVE_PATAMAR, CHAVE_RECORDES, CHAVE_REGISTROS,
+  BESTIARIO_VAZIO, CHAVE_AJUSTES, CHAVE_ALTAR, CHAVE_SOM_ESCOLHIDO, CHAVE_BESTIARIO, CHAVE_PARTIDA, CHAVE_RECORDES, CHAVE_REGISTROS,
   flashcardsUnicos, RECORDES_VAZIOS, type Bestiario, type Recordes,
 } from '../progresso'
 import { Cenario } from './Cenario'
@@ -18,8 +18,7 @@ import { Sprite } from './Sprite'
 
 /**
  * Entrada da Cripta do Residente: o portão da masmorra dos flashcards.
- * Daqui a pessoa escolhe o modo (Cripta sem fim, Torre do Título de 100
- * andares, Biblioteca de estudo), gasta cristais no Altar do Saber e vê o
+ * Daqui a pessoa escolhe a Cripta sem fim ou a Biblioteca para treinar flashcards, gasta cristais no Altar do Saber e vê o
  * Bestiário. O ranking fica pronto atrás de uma trava (config.ts).
  */
 export function Entrada() {
@@ -28,23 +27,26 @@ export function Entrada() {
   const rec = useMemo(() => ({ ...RECORDES_VAZIOS, ...ler<Partial<Recordes>>(CHAVE_RECORDES, {}) }), [])
   const unicos = useMemo(() => flashcardsUnicos(ler<Record<string, unknown>>(CHAVE_REGISTROS, {})), [])
   const cripta = useMemo(() => migrarPartida(ler<unknown>(CHAVE_PARTIDA, null)), [])
-  const torre = useMemo(() => migrarPartida(ler<unknown>(CHAVE_PARTIDA_TORRE, null)), [])
-  const patamar = useMemo(() => migrarPartida(ler<unknown>(CHAVE_PATAMAR, null)), [])
   const bestiario = useMemo(() => ({ ...BESTIARIO_VAZIO, ...ler<Partial<Bestiario>>(CHAVE_BESTIARIO, {}) }), [])
   const criptaViva = cripta && cripta.fase !== 'fim' ? cripta : null
-  const torreViva = torre && torre.fase !== 'fim' ? torre : null
-  const andarTorre = torreViva?.andar ?? (patamar ? patamar.andar : 0)
-
   useEffect(() => {
     const a = ler<{ som?: boolean; volEfeitos?: number; volAmbiente?: number; volMusica?: number }>(CHAVE_AJUSTES, {})
     configurarSom({ ligado: a.som ?? true, efeitos: a.volEfeitos ?? 0.85, ambiente: a.volAmbiente ?? 0.35, musica: a.volMusica ?? 0.45 })
     tocarMusica('entrada'); tocarAmbiente('masmorra')
-    let feito = false
-    const primeiro = () => { if (feito) return; feito = true; destravar() }
-    window.addEventListener('pointerdown', primeiro, { capture: true })
-    window.addEventListener('keydown', primeiro, { capture: true })
-    return () => { window.removeEventListener('pointerdown', primeiro, { capture: true }); window.removeEventListener('keydown', primeiro, { capture: true }) }
+    // destrave por gesto e pausa por visibilidade, instalados uma vez para o jogo todo (sons.ts)
+    instalarDestrave()
   }, [])
+
+  // primeira entrada: a pessoa escolhe com ou sem som (o toque no botão já destrava o áudio no celular)
+  const [escolherSom, definirEscolherSom] = useState(() => !ler<boolean>(CHAVE_SOM_ESCOLHIDO, false))
+  const escolher = (comSom: boolean) => {
+    const a = ler<Record<string, unknown>>(CHAVE_AJUSTES, {})
+    gravar(CHAVE_AJUSTES, { ...a, versao: 3, som: comSom })
+    configurarSom({ ligado: comSom, efeitos: (a.volEfeitos as number) ?? 0.85, ambiente: (a.volAmbiente as number) ?? 0.35, musica: (a.volMusica as number) ?? 0.45 })
+    if (comSom) { destravar(); tocar('confirmar') }
+    gravar(CHAVE_SOM_ESCOLHIDO, true)
+    definirEscolherSom(false)
+  }
 
   const ir = (rota: string) => { tocar('porta'); window.setTimeout(() => navegar(rota), 160) }
   const comprar = (id: (typeof TALENTOS)[number]['id']) => {
@@ -54,14 +56,14 @@ export function Entrada() {
   }
 
   return (
-    <ModalJogo titulo="Cripta do Residente" aoPedirFechar={() => { tocarMusica(null); tocarAmbiente(null); navegar('/treinar') }}>
+    <ModalJogo titulo="Cripta do Residente" aoPedirFechar={() => { tocarMusica(null); tocarAmbiente(null); navegar('/flashcards') }}>
       <div className="fc-arena fc-entrada">
-        <Cenario cena="covil" reduzido={false} clima="noite" />
+        <Cenario cena="campo" reduzido={false} clima="noite" />
         <div className="fc-entrada__miolo">
           <header className="fc-entrada__cabeca">
-            <span className="fc-entrada__selo">Masmorra dos flashcards</span>
+            <span className="fc-entrada__selo">Um encontro com o conhecimento</span>
             <h1>Cripta do <em>Residente</em></h1>
-            <p>Flashcards das provas reais viram combate. Acerte para golpear, erre e o adversário revida: cada erro volta para a sua revisão.</p>
+            <p>Escolha sua aventura: avance pela Cripta ou encontre um lugar tranquilo para treinar na Biblioteca.</p>
           </header>
 
           <div className="fc-entrada__palco" aria-hidden="true">
@@ -76,32 +78,37 @@ export function Entrada() {
               <strong>Cripta do Residente</strong>
               <small>Desça o quanto aguentar. A cada 3 andares, um chefe; a cada passo, portas que mostram a recompensa.</small>
               <span className="fc-modo__dados">{rec.andarMaximo ? <>Recorde: <b>andar {rec.andarMaximo}</b></> : 'Sem recorde ainda'}</span>
-              <span className="fc-modo__acao">{criptaViva ? `Continuar no andar ${criptaViva.andar}` : 'Descer'}</span>
-            </button>
-            <button type="button" className="fc-modo fc-modo--torre" onClick={() => ir('/flashcards/torre')} onPointerEnter={() => tocar('hover')}>
-              <span className="fc-modo__icone"><Sprite nome="muralha" /></span>
-              <strong>Torre do Título</strong>
-              <small>100 andares, cada um mais difícil. Patamar a cada 5: se cair, volta de lá. No topo, o Dragão Ancestral.</small>
-              <span className="fc-escalada fc-escalada--grande" role="meter" aria-label={`Recorde da Torre: andar ${rec.torreMaximo ?? 0} de ${TORRE.andares}`} aria-valuemin={0} aria-valuemax={TORRE.andares} aria-valuenow={rec.torreMaximo ?? 0}><i style={{ width: `${rec.torreMaximo ?? 0}%` }} /></span>
-              <span className="fc-modo__dados">Recorde: <b>{rec.torreMaximo ?? 0}/{TORRE.andares}</b>{rec.torreConcluida ? ` · topo ×${rec.torreConcluida}` : ''}</span>
-              <span className="fc-modo__acao">{torreViva ? `Continuar no andar ${torreViva.andar}` : andarTorre > 1 ? `Voltar ao patamar ${andarTorre - 1}` : 'Começar a subida'}</span>
+              <span className="fc-modo__acao">{criptaViva ? `Continuar no andar ${criptaViva.andar}` : `Entrar na Cripta`}</span>
             </button>
             <button type="button" className="fc-modo fc-modo--biblioteca" onClick={() => ir('/flashcards/biblioteca')} onPointerEnter={() => tocar('hover')}>
               <span className="fc-modo__icone"><Sprite nome="livro" /></span>
-              <strong>Biblioteca</strong>
-              <small>Estudo calmo, por área, sem combate. Os que te derrubaram aparecem primeiro.</small>
+              <strong>Biblioteca de Flashcards</strong>
+              <small>Treine flashcards no seu ritmo. Escolha um assunto, responda e revise, sem combate.</small>
               <span className="fc-modo__dados"><b>{unicos.toLocaleString('pt-BR')}</b> flashcards únicos respondidos</span>
-              <span className="fc-modo__acao">Estudar</span>
+              <span className="fc-modo__acao">Treinar flashcards</span>
             </button>
           </div>
 
           <div className="fc-entrada__extras">
             <button type="button" className="fc-extra" onClick={() => { tocar('selecao'); definirPainel('altar') }}><Sprite nome="estrela" className="fc-sprite--icone" /><span><strong>Altar do Saber</strong><small>{altar.cristais} cristais</small></span></button>
             <button type="button" className="fc-extra" onClick={() => { tocar('selecao'); definirPainel('bestiario') }}><Sprite nome="pergaminho" className="fc-sprite--icone" /><span><strong>Bestiário</strong><small>{bestiario.vistos.length} de {BESTIARIO.length} descobertos</small></span></button>
-            {FLASHCARDS_RANKING && <a className="fc-extra" href={href('/flashcards/ranking')} onClick={() => tocar('selecao')}><Sprite nome="coroa" className="fc-sprite--icone" /><span><strong>Ranking</strong><small>Cripta, Torre e flashcards únicos</small></span></a>}
+            {FLASHCARDS_RANKING && <a className="fc-extra" href={href('/ranking?aba=flashcards')} onClick={() => tocar('selecao')}><Sprite nome="coroa" className="fc-sprite--icone" /><span><strong>Ranking</strong><small>Um só ranking · maior andar</small></span></a>}
           </div>
         </div>
 
+        {escolherSom && (
+          <div className="fc-veu" role="dialog" aria-modal="true" aria-labelledby="fc-som-titulo">
+            <div className="fc-janela fc-som-escolha">
+              <h2 id="fc-som-titulo">Como você quer entrar?</h2>
+              <p className="fc-janela__sub">A Cripta tem trilha e efeitos próprios. Dá para mudar depois no botão de som, no alto da tela.</p>
+              <div className="fc-janela__botoes">
+                <button type="button" className="fc-botao" onClick={() => escolher(true)} autoFocus>Entrar com som</button>
+                <button type="button" className="fc-botao fc-botao--secundario" onClick={() => escolher(false)}>Entrar sem som</button>
+              </div>
+              <p className="fc-janela__nota">No iPhone, confira o volume do aparelho.</p>
+            </div>
+          </div>
+        )}
         {painel === 'altar' && (
           <div className="fc-veu" role="dialog" aria-modal="true" aria-labelledby="fc-altar-titulo" onClick={() => definirPainel(null)}>
             <div className="fc-janela fc-janela--larga fc-altar" onClick={(e) => e.stopPropagation()}>

@@ -120,3 +120,26 @@ def poses():
     anims['derrota'] = [{'agacha': -6 * f, 'tronco': 0.5 * f, 'cabeca': 0.4 * f, 'abre_d': 0.5 * f, 'abre_e': -0.5 * f, 'perna_d': 0.4 * f, 'perna_e': 0.3 * f, 'y': -6 * f} for f in (0.2, 0.45, 0.7, 0.9, 1.0)]
     anims['vitoria'] = [{'ergue_d': -2.6 * f, 'ergue_e': -2.6 * f, 'dobra_d': -0.5, 'dobra_e': -0.5, 'abre_d': 0.4 * f, 'abre_e': -0.4 * f, 'resp': 2 * f, 'cabeca': -0.2 * f, 'brilho': f} for f in (0.4, 0.8, 1.0, 0.85)]
     return anims
+
+
+def _golem(base, escuro, musgo, brilho):
+    """Materiais de uma variante: pedra principal, pedra escura, musgo e a cor das rachaduras/olhos."""
+    def f():
+        return {
+            'peito': Material(rampa(base, 7, escuro=0.22, claro=1.25), textura=tex_peito, cores_textura=brilho),
+            'gesso': Material(rampa(base, 7, escuro=0.22, claro=1.25, giro=0.12), textura=tex_gesso, cores_textura=brilho),
+            'gesso_escuro': Material(rampa(escuro, 6, escuro=0.2, claro=1.15, giro=0.12), textura=tex_gesso, cores_textura=brilho),
+            'musgo': Material(rampa(musgo, 5, escuro=0.3, claro=1.3, giro=0.12), textura=tex_musgo),
+            'olho': Material(brilho, emissivo=True),
+            'nucleo': Material(brilho, emissivo=True),
+        }
+    return f
+
+
+# variantes do bestiário (mesmas cores da tabela antiga em efeitos/personagens.ts)
+VARIANTES = {
+    'cristal': _golem('#a9e4f2', '#5ea6c4', '#9fe8d8', [(200, 80, 180), (255, 160, 240), (255, 240, 252)]),
+    'cimento': _golem('#aeaea6', '#706e68', '#9a9244', [(200, 110, 30), (255, 180, 90), (255, 240, 200)]),
+    'rubro': _golem('#d68a64', '#94483a', '#7a6a3a', [(230, 140, 30), (255, 220, 100), (255, 250, 220)]),
+    'obsidiana': _golem('#6a5a8c', '#3e3256', '#e0602a', [(220, 80, 20), (255, 150, 60), (255, 230, 180)]),
+}

@@ -1,3 +1,4 @@
+import { AtalhoFlashcards } from '../componentes/AtalhoFlashcards'
 import { useMemo, useState } from 'react'
 import { usarIndice } from '../dados/usarIndice'
 import { usarContextoLocal } from '../estado/usarContextoLocal'
@@ -98,6 +99,7 @@ export function Revisao() {
         <div><dt>Mais revisões em</dt><dd className="rv-heroi__tema">{temaFragil?.[0] ?? 'nenhum tema'}</dd></div>
       </dl>
     </section>
+    <AtalhoFlashcards tipo="revisao" />
     <section className="cartao cartao__corpo">
       <div className="entre">
         <div><p className="meta">CALENDÁRIO DE CARGA</p><h2>{capitalizar(FORMATO_MES.format(mesExibido))}</h2></div>

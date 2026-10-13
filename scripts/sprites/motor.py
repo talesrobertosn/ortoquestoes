@@ -64,6 +64,13 @@ class Osso:
     def __init__(self, pos=(0, 0, 0), rot=None):
         self.pos = np.asarray(pos, dtype=F)
         self.rot = np.eye(3, dtype=F) if rot is None else rot.astype(F)
+        self.esc = None  # escala das formas presas a este osso (número ou (x, y, z)); não passa aos filhos
+
+    def escalado(self, esc) -> "Osso":
+        """O mesmo osso, com as formas ampliadas (proporção do corpo por estágio, por exemplo)."""
+        o = Osso(self.pos, self.rot)
+        o.esc = np.asarray(esc, dtype=F)
+        return o
 
     def filho(self, desloc=(0, 0, 0), rx=0.0, ry=0.0, rz=0.0) -> "Osso":
         r = self.rot @ rot_z(rz) @ rot_y(ry) @ rot_x(rx)
@@ -272,7 +279,10 @@ class Cena:
         ordem = []
         for k, pt in enumerate(self.partes):
             loc = (p - pt.osso.pos) @ pt.osso.rot  # mundo -> local
-            d = pt.forma(loc).astype(F)
+            if pt.osso.esc is not None:  # forma ampliada: avalia no espaço reduzido e corrige a distância
+                d = (pt.forma(loc / pt.osso.esc) * float(np.min(pt.osso.esc))).astype(F)
+            else:
+                d = pt.forma(loc).astype(F)
             if pt.grupo in grupos:
                 gd, gi = grupos[pt.grupo]
                 gi = np.where(d < gd, k, gi)

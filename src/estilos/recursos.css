@@ -204,7 +204,7 @@
 .nav-link--menu:focus-visible { outline: 2px solid var(--verdete); outline-offset: 3px; }
 @media (max-width: 40rem) { .nav-link--menu { display: none; } }
 @media (max-width: 40rem) {
-  .navegacao-mobile { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  .navegacao-mobile { grid-template-columns: repeat(7, minmax(0, 1fr)); }
   .navegacao-mobile a span, .navegacao-mobile__menu span { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   /* Rótulos longos (Cronograma, Desempenho): menos respiro lateral para caber inteiros. */
   .navegacao-mobile a, .navegacao-mobile__menu { padding-inline: 0; letter-spacing: -0.02em; font-size: 0.62rem; }
@@ -284,7 +284,7 @@
 
 /* Ranking no cabeçalho: só o ícone dourado; o resto igual aos outros links. */
 .nav-link--ranking .nav-link__icone { color: #c9952f; }
-@media (max-width: 22rem) { .navegacao-mobile a, .navegacao-mobile__menu { font-size: 0.6rem; } }
+
 
 /* Atalho dos planos no topo do menu (temporada pixel art). */
 .mn-planos {
@@ -450,3 +450,15 @@
 .pe-novidade p { margin: 0; }
 .pe-novidade small { color: var(--texto-2); }
 .pe-novidade__selo { justify-self: start; padding: 0.15rem 0.6rem; border-radius: 999px; background: var(--verdete); color: #fff; font-size: var(--meta); font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; }
+
+/* Selo Beta dos flashcards (menu do topo e barra de baixo) */
+.selo-beta { margin-left: 0.3rem; padding: 0.05rem 0.35rem; border-radius: 999px; background: var(--ouro-veu); color: var(--ouro-texto); font-size: 0.62rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; }
+.navegacao-mobile__flashcards { position: relative; }
+.selo-beta--ponto { position: absolute; top: 0.2rem; right: calc(50% - 0.95rem); width: 0.5rem; height: 0.5rem; margin: 0; padding: 0; background: var(--ouro); border: 2px solid var(--superficie); }
+@media (max-width: 40rem) { .navegacao-mobile a, .navegacao-mobile__menu { font-size: 0.58rem; letter-spacing: -0.035em; } }
+@media (max-width: 22rem) { .navegacao-mobile a, .navegacao-mobile__menu { font-size: 0.54rem; } }
+.atalho-flashcards { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.75rem; padding: 0.8rem 1rem; border: 1px solid var(--traco); border-radius: var(--raio); background: var(--superficie); color: var(--texto); text-decoration: none; }
+.atalho-flashcards:hover { border-color: var(--verdete); }
+.atalho-flashcards > svg:first-child { color: var(--ouro-texto); }
+.atalho-flashcards span { display: grid; gap: 0.15rem; }
+.atalho-flashcards small { color: var(--texto-2); }

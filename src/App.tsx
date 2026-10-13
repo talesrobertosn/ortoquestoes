@@ -29,6 +29,7 @@ const CadernoErros = lazy(() => import('./paginas/CadernoErros').then(({ Caderno
 const Progresso = lazy(() => import('./paginas/Progresso').then(({ Progresso }) => ({ default: Progresso })))
 const Revisao = lazy(() => import('./paginas/Revisao').then(({ Revisao }) => ({ default: Revisao })))
 const Ranking = lazy(() => import('./paginas/Ranking').then(({ Ranking }) => ({ default: Ranking })))
+const RankingCripta = lazy(() => import('./paginas/RankingCripta').then(({ RankingCripta }) => ({ default: RankingCripta })))
 const Conquistas = lazy(() => import('./paginas/Ranking').then(({ Conquistas }) => ({ default: Conquistas })))
 const Termos = lazy(() => import('./paginas/Termos').then(({ Termos }) => ({ default: Termos })))
 const CondicoesAssinatura = lazy(() => import('./paginas/CondicoesAssinatura').then(({ CondicoesAssinatura }) => ({ default: CondicoesAssinatura })))
@@ -77,8 +78,17 @@ const TITULOS: Record<string, string> = {
   '/indicar': 'Indique e ganhe | Orto Questões',
   '/temas-que-mais-caem': 'Temas que mais caem | Orto Questões',
   '/resumao': 'Resumão da reta final | Orto Questões',
-  '/flashcards': 'Cripta do Residente | Orto Questões',
+  '/flashcards': 'Flashcards | Orto Questões',
+  '/flashcards/desempenho': 'Desempenho nos flashcards | Orto Questões',
+  '/flashcards/cronograma': 'Cronograma de flashcards | Orto Questões',
+  '/flashcards/entrada': 'Torneio de Flashcards | Orto Questões',
+  '/flashcards/cripta': 'Torneio de Flashcards | Orto Questões',
+  '/flashcards/torre': 'Torre do Título | Orto Questões',
+  '/flashcards/biblioteca': 'Biblioteca de flashcards | Orto Questões',
 }
+
+/** Central, desempenho e cronograma dos flashcards são páginas do site; o resto é o jogo em tela cheia. */
+const PAGINAS_DO_SITE_FLASHCARDS = [undefined, 'desempenho', 'cronograma']
 
 export function App() {
   const rota = usarRota()
@@ -144,7 +154,7 @@ export function App() {
       pagina = <Revisao />
       break
     case 'ranking':
-      pagina = <Ranking />
+      pagina = ['flashcards', 'cripta'].includes(rota.consulta.get('aba') ?? '') ? <RankingCripta /> : <Ranking />
       break
     case 'conquistas':
       pagina = <Conquistas escolher={rota.consulta?.get('escolher') === '1'} />
@@ -173,7 +183,7 @@ export function App() {
       break
     case 'cronograma':
     case 'plano-de-estudo':
-      pagina = <PlanoEstudo />
+      pagina = <div className="empilha-2"><PlanoEstudo /></div>
       break
     case 'temas-que-mais-caem':
       pagina = <TemasQueMaisCaem />
@@ -200,7 +210,8 @@ export function App() {
   // Páginas que mostram questões: por enquanto, só com conta (ver config.ts).
   // A questão avulsa (#/questao/ID) fica aberta: é para onde as páginas
   // públicas do Google levam; responder pede a conta ali mesmo.
-  if (['treinar', 'sessao', 'resumo', 'favoritas', 'erros', 'revisao', 'simulado-nacional', 'flashcards'].includes(primeiro ?? '')) {
+  const jogo = primeiro === 'flashcards' && !PAGINAS_DO_SITE_FLASHCARDS.includes(segundo)
+  if (['treinar', 'sessao', 'resumo', 'favoritas', 'erros', 'revisao', 'simulado-nacional'].includes(primeiro ?? '') || jogo) {
     pagina = <ExigeConta caminho={rota.caminho + (rota.consulta.toString() ? `?${rota.consulta}` : '')}>{pagina}</ExigeConta>
   }
 
@@ -212,7 +223,7 @@ export function App() {
         Pular para o conteúdo
       </a>
       <Cabecalho caminho={rota.caminho} />
-      {primeiro !== 'sessao' && primeiro !== 'flashcards' && <AvisoSite />}
+      {primeiro !== 'sessao' && !jogo && <AvisoSite />}
       <main className="principal" id="conteudo-principal" tabIndex={-1}>
         <div className={'conteudo' + (estreita ? ' conteudo--estreito' : '')}>
           <ErroDePagina caminho={rota.caminho}>
@@ -224,7 +235,7 @@ export function App() {
       </main>
       {/* Modo foco: respondendo (sessão ou questão avulsa) nada abaixo da
           questão; o painel do administrador é ferramenta, sem rodapé do site. */}
-      {!['sessao', 'questao', 'admin', 'flashcards'].includes(primeiro ?? '') && <Rodape comInstagram={!primeiro || primeiro === 'projeto' || primeiro === 'sobre'} />}
+      {!['sessao', 'questao', 'admin'].includes(primeiro ?? '') && !jogo && <Rodape comInstagram={!primeiro || primeiro === 'projeto' || primeiro === 'sobre'} />}
       <ConviteDiario caminho={rota.caminho} />
       <AvisoCookies />
     </div>

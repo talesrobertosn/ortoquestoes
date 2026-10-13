@@ -347,7 +347,7 @@
 @media (prefers-reduced-motion: reduce) { .dica-folha, .dica-folha__cartao { animation: none; } }
 
 /* ---------- Abas Ranking / Conquistas ---------- */
-.rk-secoes { display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem; padding: 0.35rem; border-radius: var(--raio-cartao); background: var(--superficie-2); box-shadow: inset 0 0 0 1px var(--traco); }
+.rk-secoes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.4rem; padding: 0.35rem; border-radius: var(--raio-cartao); background: var(--superficie-2); box-shadow: inset 0 0 0 1px var(--traco); }
 .rk-secoes__aba {
   display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem; min-height: var(--toque);
   border-radius: var(--raio-controle); color: var(--texto-2); font-weight: 750; text-decoration: none;

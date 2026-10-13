@@ -1,21 +1,13 @@
 /**
- * Seleção procedural dos flashcards de uma partida, com semente reproduzível.
- *
- * Princípio (mega plano, etapa 4): a dificuldade do RPG vem das regras do
- * combate, não de perguntas cada vez mais obscuras. Um jogador no andar 20
- * ainda recebe flashcards fáceis, moderados e difíceis.
- *
- * O peso de cada flashcard combina, só com dados reais:
- *   - incidência do assunto na prova (a raridade sai de src/dados/incidencia.json);
- *   - revisão vencida e erro anterior (a fila de revisão dos flashcards);
- *   - nunca estudado;
- *   - figura da questão (valorizada sem exagero);
- *   - exposição recente (o que saiu nas últimas partidas quase não volta).
- * O sorteio sem reposição usa chaves de Efraimidis-Spirakis (u^(1/peso)), e a
- * ordem final espalha os assuntos para não repetir o mesmo tema em seguida.
+ * Jornada única: oito sorteios no grupo de maior acerto da turma, oito nas
+ * questões acertadas pelo usuário, oito nas erradas e, depois, mistura livre.
+ * Grupos vazios são pulados. A ordem varia com a semente, sem reposição no lote.
+ * As faixas vêm de estatísticas reais com pelo menos três respondentes.
+ * A rodada persistida evita reiniciar a introdução a cada reposição de baralho.
  */
 import type { Flashcard, Raridade } from '../tipos'
 import { sortear } from './aleatorio'
+import { NIVEIS, type NivelJogo } from './regras'
 
 export interface RegistroLeve { c?: boolean | null; proximaRevisao?: number | null; sequencia?: number; confianca?: string; q?: number }
 
@@ -27,6 +19,13 @@ export interface ContextoSelecao {
   /** Filtros da sessão (área, só imagem). Vazio = acervo todo. */
   areas?: string[]
   soImagem?: boolean
+  /** Dificuldade da partida: muda a mistura de flashcards fáceis, moderados e difíceis. */
+  nivel?: NivelJogo
+  /** Respostas às QUESTÕES de origem, independentes dos flashcards. */
+  questoes?: Record<string, RegistroLeve | undefined>
+  turma?: ReadonlyMap<string, { respondentes: number; acerto: number }> | null
+  inicio?: number
+  faixas?: ReadonlyMap<string, 1 | 2 | 3> | null
 }
 
 const PESO_RARIDADE: Record<Raridade, number> = { lendaria: 4, epica: 2.8, rara: 1.9, comum: 1.3 }
@@ -39,6 +38,7 @@ export function pesoDoFlashcard(c: Flashcard, ctx: ContextoSelecao, posRecente: 
   else if (r.proximaRevisao != null && r.proximaRevisao <= ctx.agora) p *= 2.5
   else p *= 0.45 // estudado e ainda não venceu: aparece menos
   if (c.imagem) p *= 1.3
+  if (ctx.nivel) p *= NIVEIS[ctx.nivel].pesoFlashcard[c.dificuldade] ?? 1
   // exposição recente: quanto mais novo na memória, menor a chance
   if (posRecente !== undefined) p *= 0.05 + 0.95 * Math.min(1, posRecente / 300)
   return p
@@ -55,29 +55,33 @@ export function elegiveisParaBatalha(pool: Flashcard[], ctx: Pick<ContextoSeleca
  * próxima semente. `excluir` tira os que já estão na partida.
  */
 export function montarBaralho(pool: Flashcard[], ctx: ContextoSelecao, semente: number, n: number, excluir: ReadonlySet<string> = new Set()): [string[], number] {
-  const pos = new Map(ctx.recentes.map((id, i) => [id, i]))
   let s = semente
-  const chaves: Array<{ c: Flashcard; k: number }> = []
-  for (const c of elegiveisParaBatalha(pool, ctx)) {
-    if (excluir.has(c.id)) continue
-    const [u, p] = sortear(s); s = p
-    const w = pesoDoFlashcard(c, ctx, pos.get(c.id))
-    chaves.push({ c, k: Math.log(Math.max(u, 1e-12)) / w })
+  const elegiveis = elegiveisParaBatalha(pool, ctx).filter(c => !excluir.has(c.id))
+  const taxas = [...new Map(elegiveis.flatMap(c => {
+    const t = ctx.turma?.get(c.questao)
+    return t && t.respondentes >= 3 && Number.isFinite(t.acerto) ? [[c.questao, t.acerto] as const] : []
+  })).values()].sort((a,b) => b-a)
+  // Quartil de maior acerto real. Empates pertencem ao mesmo grupo.
+  const corte = taxas.length ? taxas[Math.max(0, Math.ceil(taxas.length / 4)-1)] : Infinity
+  const usados = new Set<string>()
+  const saida: Flashcard[] = []
+  const grupos = [
+    (c: Flashcard) => { const t=ctx.turma?.get(c.questao); return ctx.faixas?.get(c.questao) === 1 || (!!t && t.respondentes >= 3 && t.acerto >= corte) },
+    (c: Flashcard) => ctx.questoes?.[c.questao]?.c === true,
+    (c: Flashcard) => ctx.questoes?.[c.questao]?.c === false,
+  ]
+  let inicio = ctx.inicio ?? 0
+  while (saida.length < n) {
+    const fase = Math.floor(inicio / 8)
+    const lista = elegiveis.filter(c => !usados.has(c.id) && (fase >= 3 || grupos[fase](c)))
+    if (!lista.length) {
+      if (fase >= 3) break
+      inicio = (fase + 1) * 8
+      continue
+    }
+    const [u, proxima] = sortear(s); s = proxima
+    const c = lista[Math.min(lista.length-1, Math.floor(u * lista.length))]
+    usados.add(c.id); saida.push(c); inicio++
   }
-  chaves.sort((a, b) => b.k - a.k)
-  const escolhidos = chaves.slice(0, n).map((x) => x.c)
-  return [espalhar(escolhidos).map((c) => c.id), s]
-}
-
-/** Reordena para não cair o mesmo assunto (ou a mesma área) duas vezes seguidas, quando houver como. */
-function espalhar(cartas: Flashcard[]): Flashcard[] {
-  const resto = cartas.slice(), saida: Flashcard[] = []
-  while (resto.length) {
-    const ult = saida[saida.length - 1], penult = saida[saida.length - 2]
-    let i = resto.findIndex((c) => c.assunto !== ult?.assunto && c.assunto !== penult?.assunto && c.areaId !== ult?.areaId)
-    if (i < 0) i = resto.findIndex((c) => c.assunto !== ult?.assunto)
-    if (i < 0) i = 0
-    saida.push(resto.splice(i, 1)[0])
-  }
-  return saida
+  return [saida.map(c => c.id), s]
 }

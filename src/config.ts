@@ -43,20 +43,17 @@ export const ROTULO_SIMULADOS = 'OrtoQuestões Simulados'
 export const EXIGIR_CONTA_PARA_QUESTOES = true
 
 /**
- * Torneio de Flashcards (docs/flashcards/). Em teste pelo Tales (12/10/2026):
- * a rota #/flashcards funciona no site publicado, mas só para quem tem o link.
- * Nenhum menu aponta para ela; o atalho no Treinar aparece só no
- * `npm run dev` e em builds com VITE_FLASHCARDS=1.
+ * Flashcards (docs/flashcards/). Beta público desde 13/10/2026: menu, central
+ * em #/flashcards, quadro na capa, ranking e planos (LANCAMENTO-BETA.md). As
+ * travas abaixo seguem existindo para desligar cada parte; o publicar.yml liga todas.
  */
 export const FLASHCARDS_LIBERADO = true
 export const FLASHCARDS_NO_MENU = import.meta.env.DEV || import.meta.env?.VITE_FLASHCARDS === '1'
 /**
- * Partes da Cripta que ficam prontas mas desligadas até o Tales liberar
- * (13/10/2026: "não coloca no menu, não coloca ranking, não coloca a página de
- * vendas"). No `npm run dev` aparecem para revisão.
- *  - VITE_FLASHCARDS_CAPA=1: cartão da Cripta na página inicial, ao lado do banner do ranking;
- *  - VITE_FLASHCARDS_RANKING=1: ranking da Cripta e da Torre dentro do jogo;
- *  - VITE_FLASHCARDS_VENDA=1: seção da Cripta na página de planos.
+ * Travas de cada parte do beta (todas ligadas no publicar.yml desde 13/10/2026):
+ *  - VITE_FLASHCARDS_CAPA=1: quadro dos flashcards na página inicial;
+ *  - VITE_FLASHCARDS_RANKING=1: ranking da Cripta (Normal e Difícil) no servidor;
+ *  - VITE_FLASHCARDS_VENDA=1: flashcards na página de planos.
  */
 export const FLASHCARDS_NA_CAPA = import.meta.env?.VITE_FLASHCARDS_CAPA === '1'
 export const FLASHCARDS_RANKING = import.meta.env.DEV || import.meta.env?.VITE_FLASHCARDS_RANKING === '1'
