@@ -6,7 +6,7 @@ Pedido do Tales em 13/10/2026: trocar a arte "vetorial" por **pixel art HD-2D**,
 
 | Antes | Agora |
 |---|---|
-| Jogo ocupava a página | **Modal premium**: ~84vw × 88dvh no computador, fundo escurecido, X no canto, Esc fecha, foco preso no modal; no celular ocupa a tela inteira |
+| Jogo ocupava a página | **Modal premium**: ~84vw × 88dvh no computador, fundo escurecido, X no canto (clicar fora não fecha, para não perder a partida), foco preso no modal; no celular ocupa a tela inteira |
 | Personagens pintados em vetor | **Sprites em pixel art nativa** (`src/flashcards/efeitos/personagens.ts`): herói chibi, Golem de Gesso com rachaduras que brilham, Serpente do Ciático, Guardião do Acetábulo maior e com aura; 2 quadros de animação |
 | Cenário de fundo plano | **Diorama em planos** (`pintura.ts` + `Cenario.tsx`): fundo desfocado, meio nítido, tilt-shift no alto e embaixo, bloom, feixes de luz, poeira/bokeh, primeiro plano desfocado, névoa e vinheta; paralaxe leve com o mouse |
 | Tabuleiro solto | **Estrado de pedra** em pixel art integrado ao chão do cenário (`pintarMesa`) |
