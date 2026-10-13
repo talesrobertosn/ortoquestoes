@@ -1,4 +1,32 @@
-# Passagem: direção criativa da Cripta (Etapas 1 e 2 concluídas, 3 em andamento; 13/10/2026)
+# Passagem: direção criativa da Cripta (Etapas 1 a 8 concluídas em 13/10/2026)
+
+## Para continuar em outra conta (leia primeiro)
+- **Repositório e branches:**
+  - repositório `talesrobertosn/ortoquestoes`;
+  - branch de trabalho `claude/sharp-goodall-pl7kp7`;
+  - base `claude/pdfs-questoes-tp64dr`.
+  - O merge na base publica no GitHub Pages; isso já está autorizado para a rota escondida `#/flashcards`.
+- **Relatórios (artefatos privados do Tales):**
+  - Etapa 1: https://claude.ai/artifact/USHFDMekPZmT5ptqcsVd1y
+  - Etapas 2 a 8: https://claude.ai/artifact/FZJtaBEu91gh6qbxLs5T9M
+- **Servidor local:** `VITE_SUPABASE_URL=sem npx vite --port 5199`.
+- **Dependências:** `npm install`. As fontes `@fontsource` precisam estar instaladas.
+- **Roteiros de captura** (ficam fora do git, em `.capturas/`, e precisam ser recriados):
+  - todos usam o Chromium em `/opt/pw-browsers/chromium`;
+  - todos usam semente fixa em `Math.random`;
+  - todos usam o gancho `window.__torneio` (`ir(andar, semente)`, `definir(partida)`, `cena(nome)`; só no modo de desenvolvimento).
+- **Testes antes do PR:**
+  - `npm test`;
+  - `npx tsc --noEmit`;
+  - `npm run build`;
+  - Playwright em 1400×860, 390×844 e 844×390.
+- **Próximos passos sugeridos**, em ordem (detalhes nas seções das etapas abaixo):
+  1. folhas em volume para raptor, mímico e esqueleto (estreiam cedo);
+  2. pintar Torre e Salão;
+  3. variantes escarlate e ancestral do dragão;
+  4. reduzir o escudo do herói no estágio 6;
+  5. revisar a emenda da faixa "sala".
+
 
 Pedido: "DIREÇÃO CRIATIVA E REFORMULAÇÃO ARTÍSTICA — CRIPTA DO RESIDENTE" (etapas 1 a 8).
 

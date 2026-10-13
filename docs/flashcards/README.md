@@ -37,7 +37,15 @@ Uma aba **Flashcards** dentro de **Treinar**, com o **modo Estudo** (calmo: vira
   - alternativas forjadas;
   - modo Estudo com alternativas e o mesmo acabamento;
   - layout próprio para o celular deitado.
-  - Próximo: Etapa 2 (herói em 6 estágios).
+  - Etapas 2 a 8, no mesmo dia:
+    - herói em 6 estágios;
+    - Dragão de Ossos e Guardião;
+    - interface mais leve;
+    - Covil e Masmorra pintados;
+    - salas de evento e sinergias;
+    - quatro faixas novas;
+    - variantes do bestiário em volume e a Gosma.
+  - O que falta está em [PASSAGEM-ETAPA1.md](PASSAGEM-ETAPA1.md).
 - **13/10/2026, versão 3: Cripta do Residente** ([CRIPTA.md](CRIPTA.md)). Entrada própria, Torre do
   Título de 100 andares com patamares, portas no estilo do Hades, loja, Velho Preceptor, bênçãos de
   cinco patronos com duplas, raridades épica e lendária, flashcards brilhantes, Altar do Saber,
