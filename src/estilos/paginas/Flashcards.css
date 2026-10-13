@@ -1439,3 +1439,33 @@ body.fc-modal-aberto .aviso-cookies, body.fc-modal-aberto .aviso-site, body.fc-m
   /* a plataforma desce menos no celular, para não invadir o painel do herói */
   .fc-modal .fc-mesa[data-tabuleiro="plataforma"] .fc-mesa__tampo { height: 108%; }
 }
+
+/* ---- cartas v5: cantoneiras desenhadas por raridade, luz que corre na moldura (épica e
+   lendária), faíscas e entrada dourada na lendária. Tudo anima só transform e opacidade. */
+.fc-modal .fc-carta__canto { width: 34px; height: 34px; border: 0 !important; border-radius: 0 !important; background: url(../ui/canto-comum.svg) 0 0 / contain no-repeat; filter: drop-shadow(0 1px 0 rgba(0, 0, 0, .5)); }
+.fc-modal .fc-carta--rara .fc-carta__canto { background-image: url(../ui/canto-rara.svg); }
+.fc-modal .fc-carta--epica .fc-carta__canto { background-image: url(../ui/canto-epica.svg); width: 40px; height: 40px; }
+.fc-modal .fc-carta--lendaria .fc-carta__canto { background-image: url(../ui/canto-lendaria.svg); width: 46px; height: 46px; filter: drop-shadow(0 0 4px rgba(255, 210, 110, .7)); }
+.fc-modal .fc-carta__canto--1 { left: -2px; top: -2px; }
+.fc-modal .fc-carta__canto--2 { right: -2px; top: -2px; transform: scaleX(-1); }
+.fc-modal .fc-carta__canto--3 { left: -2px; bottom: -2px; transform: scaleY(-1); }
+.fc-modal .fc-carta__canto--4 { right: -2px; bottom: -2px; transform: scale(-1, -1); }
+.fc-carta__aro { position: absolute; inset: 0; z-index: 4; padding: 9px; border-radius: 22px; overflow: hidden; pointer-events: none;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0); }
+.fc-carta__aro i { position: absolute; left: 50%; top: 50%; width: 160%; aspect-ratio: 1; transform: translate(-50%, -50%); will-change: transform;
+  background: conic-gradient(from 0deg, transparent 0 62%, rgba(255, 250, 225, .95) 72%, transparent 82%, transparent); animation: fc-gira-aro 4.2s linear infinite; }
+.fc-carta--epica .fc-carta__aro i { background: conic-gradient(from 0deg, transparent 0 66%, rgba(230, 200, 255, .8) 74%, transparent 82%, transparent); animation-duration: 6s; }
+@keyframes fc-gira-aro { to { transform: translate(-50%, -50%) rotate(360deg); } }
+/* entrada da lendária: clarão dourado que se abre uma vez */
+.fc-carta--lendaria .fc-carta__aro::after { content: ""; position: absolute; inset: -40%; background: radial-gradient(closest-side, rgba(255, 230, 150, .95), transparent); opacity: 0; animation: fc-entra-lendaria 1.1s ease-out 1; }
+@keyframes fc-entra-lendaria { 0% { opacity: 1; transform: scale(.4); } 100% { opacity: 0; transform: scale(1.3); } }
+.fc-carta__faiscas { position: absolute; inset: 0; z-index: 4; pointer-events: none; overflow: visible; }
+.fc-carta__faiscas i { position: absolute; bottom: 4px; width: 4px; height: 4px; background: #fff1b0; box-shadow: 0 0 6px 2px rgba(255, 210, 110, .8); opacity: 0; will-change: transform, opacity; animation: fc-faisca 3.2s ease-out infinite; }
+.fc-carta__faiscas i:nth-child(1) { left: 12%; animation-delay: 0s; } .fc-carta__faiscas i:nth-child(2) { left: 28%; animation-delay: .9s; }
+.fc-carta__faiscas i:nth-child(3) { left: 46%; animation-delay: 1.7s; } .fc-carta__faiscas i:nth-child(4) { left: 63%; animation-delay: .4s; }
+.fc-carta__faiscas i:nth-child(5) { left: 79%; animation-delay: 2.3s; } .fc-carta__faiscas i:nth-child(6) { left: 92%; animation-delay: 1.3s; }
+@keyframes fc-faisca { 0% { opacity: 0; transform: translateY(0) scale(.6); } 15% { opacity: 1; } 100% { opacity: 0; transform: translateY(-46px) scale(1.2); } }
+.fc-arena--reduzida .fc-carta__aro i, .fc-arena--reduzida .fc-carta__faiscas { animation: none; display: none; }
+/* lendária: moldura com mais corpo e brilho próprio */
+.fc-modal .fc-carta--lendaria .fc-carta__borda { padding: 10px; box-shadow: 0 0 0 2px #120a04, 0 2px 0 2px #6a4410, 0 4px 0 2px #3a2408, 0 7px 0 2px #120a04, 0 0 28px rgba(255, 200, 90, .45), var(--fc-sombra-objeto), inset 0 1px 0 rgba(255, 255, 255, .8); }
+.fc-modal .fc-carta--comum .fc-carta__borda { background: linear-gradient(150deg, #e8ecf2 0%, #a8b0bc 18%, #6b7380 50%, #8a929e 70%, #3a404c 100%); }
