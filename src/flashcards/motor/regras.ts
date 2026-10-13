@@ -161,7 +161,22 @@ export type OfertaSabio =
   | { tipo: 'ouro'; valor: number }
 
 /** Talentos permanentes comprados no Altar do Saber (fora da partida). */
-export interface Talentos { vida?: number; pista?: number; ouro?: number; sorte?: number; segunda?: number; portas?: number }
+export interface Talentos { vida?: number; pista?: number; ouro?: number; sorte?: number; segunda?: number; portas?: number; rota?: number }
+
+/**
+ * Rota de estudo ativa (poderes Mapa do especialista e Desvio de área): os
+ * próximos flashcards vêm só da área escolhida (e dos subtemas, se houver) ou
+ * deixam essa área de fora. Partidas antigas não têm o campo.
+ */
+export interface RotaEstudo { modo: 'so' | 'sem'; area: string; subtemas: string[]; restam: number }
+/** Área de um flashcard como os poderes de rota enxergam (id da fábrica ou o nome). */
+export const areaDoFlashcard = (c: Pick<Flashcard, 'areaId' | 'area'>) =>
+  c.areaId ?? c.area.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim().replace(/\s+/g, '-')
+export function aceitaNaRota(c: Pick<Flashcard, 'areaId' | 'area' | 'subtemas'>, r: Pick<RotaEstudo, 'modo' | 'area' | 'subtemas'>): boolean {
+  const naArea = areaDoFlashcard(c) === r.area
+  if (r.modo === 'sem') return !naArea
+  return naArea && (!r.subtemas.length || (c.subtemas ?? []).some((t) => r.subtemas.includes(t)))
+}
 
 export interface Partida {
   versao: 3
@@ -230,6 +245,8 @@ export interface Partida {
   heroi?: string
   /** Dificuldade escolhida no início; partidas antigas (sem o campo) são Normal. */
   nivel?: NivelJogo
+  /** Rota de estudo ativa (Mapa do especialista ou Desvio de área). */
+  rota?: RotaEstudo | null
 }
 
 export type MotivoCura =
@@ -275,6 +292,7 @@ export type Evento =
   | { tipo: 'patamar'; andar: number }
   | { tipo: 'torre-concluida' }
   | { tipo: 'ampulheta' }
+  | { tipo: 'rota'; modo: 'so' | 'sem'; area: string }
   | { tipo: 'trocou'; id: string }
 
 export interface Resultado { estado: Partida; eventos: Evento[] }
@@ -288,7 +306,7 @@ export interface OpcoesMotor {
    * ids, sem os que estão em `excluir`, e a próxima semente. Sem ela, o
    * descarte é reembaralhado.
    */
-  repor?: (excluir: ReadonlySet<string>, semente: number, nivel: NivelJogo, rodada: number) => [string[], number]
+  repor?: (excluir: ReadonlySet<string>, semente: number, nivel: NivelJogo, rodada: number, aceita?: (c: Flashcard) => boolean) => [string[], number]
 }
 
 export interface ConfigPartida { modo?: Modo; talentos?: Talentos; ids?: string[]; heroi?: string; nivel?: NivelJogo }
@@ -413,7 +431,28 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
     }
     // Evita repetir em seguida o flashcard que acabou de sair, se houver outro.
     const ultimo = p.descarte[p.descarte.length - 1]
-    let pos = baralho.findIndex((x) => x !== ultimo && x !== p.atual?.id)
+    let rota = p.rota && p.rota.restam > 0 ? p.rota : null
+    let pos = -1
+    if (rota) {
+      // Rota de estudo: primeiro o que já está no baralho (que segue a ordem da jornada); se faltar, busca no acervo.
+      const r = rota
+      const ok = (x: string) => x !== ultimo && x !== p.atual?.id && aceitaNaRota(carta(x), r)
+      pos = baralho.findIndex(ok)
+      if (pos < 0) {
+        const fora = new Set([...descarte, ...baralho, ...(p.atual ? [p.atual.id] : [])])
+        let novos: string[] = []
+        if (opcoes.repor) [novos, semente] = opcoes.repor(fora, semente, nivelDaPartida(p), p.rodada, (c) => aceitaNaRota(c, r))
+        else {
+          const lista = cartas.filter((c) => !fora.has(c.id) && c.opcoes.length >= 2 && c.batalha !== false && aceitaNaRota(c, r)).map((c) => c.id)
+          ;[novos, semente] = embaralhar(lista, semente)
+        }
+        // só o que a rota ainda pede: o resto do baralho continua na ordem da jornada
+        if (novos.length) { baralho = [...novos.slice(0, r.restam), ...baralho]; pos = 0 }
+      }
+      // sem nenhum flashcard que sirva, a rota termina e o jogo segue normal
+      rota = pos < 0 ? null : r.restam > 1 ? { ...r, restam: r.restam - 1 } : null
+    }
+    if (pos < 0) pos = baralho.findIndex((x) => x !== ultimo && x !== p.atual?.id)
     if (pos < 0) pos = 0
     const id = baralho[pos]
     baralho.splice(pos, 1)
@@ -428,7 +467,7 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
     const carregado = !!i.carrega && (p.inimigo.rodadas + 1) % i.carrega.aCada === 0
     const brilhante = b < CHANCE_BRILHANTE
     const atual: Jogada = { id, ordem, eliminadas: [], respondida: false, escolha: null, assistida: false, criticoInimigo, carregado, brilhante }
-    return { estado: { ...p, baralho, descarte, semente, atual, fase: 'pergunta' }, eventos: [{ tipo: 'compra', id, criticoInimigo, carregado, brilhante }] }
+    return { estado: { ...p, baralho, descarte, semente, atual, fase: 'pergunta', rota }, eventos: [{ tipo: 'compra', id, criticoInimigo, carregado, brilhante }] }
   }
 
   function novaPartida(semente: number, config: ConfigPartida | string[] = {}): Resultado {
@@ -445,6 +484,8 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
     for (const k of h.poderes) encaixes = equipar(encaixes, k.tipo, k.cargas)[0]
     if (t.pista) encaixes = equipar(encaixes, 'pista', Math.min(2, t.pista))[0]
     if (t.segunda) encaixes = equipar(encaixes, 'imortal', 1)[0]
+    if (t.rota) encaixes = equipar(encaixes, 'desvio', 1)[0]
+    if ((t.rota ?? 0) >= 2) encaixes = equipar(encaixes, 'mapa', 1)[0]
     const base: Partida = {
       versao: 3, modo, sementeBase: semente >>> 0, semente: s, rodada: 0, andar: 1, fase: 'pergunta', vida, vidaMax: vida,
       estagio: 1, xp: 0, inimigo: prepararInimigo(1, semente >>> 0, modo, nivel), baralho, descarte: [], atual: null,
@@ -489,6 +530,8 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
     if (p.fase !== 'pergunta' || !p.atual || p.atual.respondida) return nada(p)
     const k = p.encaixes.findIndex((e) => e.tipo === tipo)
     if (k < 0 || !RECOMPENSAS[tipo].ativo) return nada(p)
+    // Mapa e Desvio pedem a área: usam usarRota
+    if (tipo === 'mapa' || tipo === 'desvio') return nada(p)
     if (tipo === 'vital') {
       if (p.vida >= p.vidaMax) return nada(p)
       const eventos: Evento[] = []
@@ -521,6 +564,43 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
     }
   }
   const usarPista = (p: Partida) => usarPoder(p, 'pista')
+
+  /** Áreas (e subtemas de cada uma) que os poderes de rota podem escolher, com quantos flashcards da Batalha há em cada. */
+  function areasDaRota(): Array<{ area: string; nome: string; total: number; subtemas: Array<{ nome: string; total: number }> }> {
+    const m = new Map<string, { nome: string; total: number; sub: Map<string, number> }>()
+    for (const c of cartas) {
+      if (c.batalha === false || c.opcoes.length < 2) continue
+      const k = areaDoFlashcard(c)
+      const a = m.get(k) ?? { nome: c.area, total: 0, sub: new Map<string, number>() }
+      if (c.areaId) a.nome = c.area // o nome da fábrica vale mais que o do baralho de demonstração
+      a.total++
+      for (const t of c.subtemas ?? []) a.sub.set(t, (a.sub.get(t) ?? 0) + 1)
+      m.set(k, a)
+    }
+    // áreas com menos de 10 flashcards não enchem a rota (sobras do baralho de demonstração)
+    return [...m].filter(([, a]) => a.total >= RECOMPENSAS.mapa.v.flashcards).map(([area, a]) => ({ area, nome: a.nome, total: a.total, subtemas: [...a.sub].map(([nome, total]) => ({ nome, total })).sort((x, y) => y.total - x.total) }))
+      .sort((x, y) => x.nome.localeCompare(y.nome, 'pt-BR'))
+  }
+
+  /**
+   * Mapa do especialista (só a área/subtemas) ou Desvio de área (sem a área)
+   * pelos próximos 10 flashcards. Se o flashcard da mesa não serve, ele volta
+   * para o baralho e outro entra, mantendo o golpe previsto (como a Carta na manga).
+   */
+  function usarRota(p: Partida, tipo: 'mapa' | 'desvio', area: string, subtemas: string[] = []): Resultado {
+    if (p.fase !== 'pergunta' || !p.atual || p.atual.respondida) return nada(p)
+    const k = p.encaixes.findIndex((e) => e.tipo === tipo)
+    if (k < 0 || !area) return nada(p)
+    const rota: RotaEstudo = { modo: tipo === 'mapa' ? 'so' : 'sem', area, subtemas: tipo === 'mapa' ? subtemas : [], restam: RECOMPENSAS[tipo].v.flashcards }
+    if (!cartas.some((c) => c.batalha !== false && c.opcoes.length >= 2 && c.id !== p.atual!.id && aceitaNaRota(c, rota))) return nada(p)
+    const e: Partida = { ...p, encaixes: gastar(p.encaixes, k), rota }
+    const eventos: Evento[] = [{ tipo: 'rota', modo: rota.modo, area }]
+    if (aceitaNaRota(carta(p.atual.id), rota)) return { estado: { ...e, rota: { ...rota, restam: rota.restam - 1 } }, eventos }
+    const id = p.atual.id
+    const r = comprar({ ...e, baralho: [...e.baralho, id] })
+    const atual = { ...r.estado.atual!, criticoInimigo: p.atual.criticoInimigo, carregado: p.atual.carregado }
+    return { estado: { ...r.estado, atual }, eventos: [...eventos, { tipo: 'trocou', id }, ...r.eventos.map((ev) => (ev.tipo === 'compra' ? { ...ev, criticoInimigo: atual.criticoInimigo, carregado: atual.carregado } : ev))] }
+  }
 
   /** Dano direto no adversário (queimadura, contra-ataque, reflexo): ignora armadura e barreira. */
   function ferirInimigo(e: Partida, valor: number): Partida {
@@ -1133,7 +1213,7 @@ export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
   }
 
   return {
-    novaPartida, responder, encerrar, usarPista, usarPoder, escolher, entrar, comprarNaLoja, sairDaLoja, aceitarSabio, escolherNaSala, seguir,
+    novaPartida, responder, encerrar, usarPista, usarPoder, usarRota, areasDaRota, escolher, entrar, comprarNaLoja, sairDaLoja, aceitarSabio, escolherNaSala, seguir,
     intencao, atributos, inimigoAtual, carta,
   }
 }

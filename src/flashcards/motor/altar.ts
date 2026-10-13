@@ -24,6 +24,7 @@ export const TALENTOS: Talento[] = [
   { id: 'ouro', nome: 'Bolsa de residente', icone: 'moeda', custos: [15, 35, 70], texto: (n) => `Começa com ${15 * n} moedas.` },
   { id: 'sorte', nome: 'Sorte de principiante', icone: 'estrela', custos: [40, 90, 160], texto: (n) => `Recompensas raras, épicas e lendárias aparecem ${25 * n}% mais.` },
   { id: 'portas', nome: 'Visão do corredor', icone: 'lupa', custos: [120], texto: () => 'Uma porta a mais para escolher entre os andares.' },
+  { id: 'rota', nome: 'Rota de estudo', icone: 'bussola', custos: [60, 140], texto: (n) => n >= 2 ? 'Começa com o Mapa do especialista e o Desvio de área.' : 'Começa com o Desvio de área (o nível 2 traz também o Mapa do especialista).' },
   { id: 'segunda', nome: 'Última chance', icone: 'coroa', custos: [200], texto: () => 'Começa com a Segunda chance equipada.' },
 ]
 

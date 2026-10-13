@@ -81,11 +81,11 @@ let motor = criarMotor(BARALHO_DEMO)
 function prepararMotor(cartas: Flashcard[], faixas: Map<string, 1 | 2 | 3> | null) {
   const medidas = cartas.map(c => ({ ...c, dificuldade: faixas?.get(c.questao) ?? c.dificuldade }))
   motor = criarMotor(medidas, {
-    repor: (excluir, semente, nivel, rodada) => montarBaralho(cartas, {
+    repor: (excluir, semente, nivel, rodada, aceita) => montarBaralho(cartas, {
       registros: ler<Record<string, RegistroFlashcard>>(CHAVE_REGISTROS, {}),
       recentes: ler<string[]>(CHAVE_HISTORICO, []),
       agora: Date.now(),
-      nivel, inicio: rodada, faixas, questoes: ler('respondidas', {}),
+      nivel, inicio: rodada, faixas, questoes: ler('respondidas', {}), aceita,
     }, semente, LOTE_DO_BARALHO, excluir),
   })
 }
@@ -719,6 +719,12 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
         }
         case 'ampulheta': { tocar('poder'); flutuar(refInimigo.current, 'Paciência reiniciada', '#f0d090', { y: -60 }); break }
         case 'trocou': { tocar('giro'); break }
+        case 'rota': {
+          tocar('poder')
+          const nome = motor.areasDaRota().find((a) => a.area === ev.area)?.nome ?? ev.area
+          flutuar(refHeroi.current, ev.modo === 'so' ? `Próximos: ${nome}` : `Sem ${nome}`, ev.modo === 'so' ? '#9ff0c8' : '#ffc89a', { y: -70, x: 40, rotulo: ev.modo === 'so' ? 'MAPA' : 'DESVIO' })
+          break
+        }
         case 'patamar': {
           gravar(CHAVE_PATAMAR, depois)
           tocar('jingle-patamar')
@@ -811,7 +817,17 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   }, [animando, aplicar, pular])
 
   const usarPista = useCallback(() => { if (!apresentacao) aplicar(motor.usarPista(partidaRef.current)) }, [aplicar, apresentacao])
-  const usarPoder = useCallback((tipo: TipoPoder) => { if (!apresentacao) aplicar(motor.usarPoder(partidaRef.current, tipo)) }, [aplicar, apresentacao])
+  const [rotaAberta, definirRotaAberta] = useState<'mapa' | 'desvio' | null>(null)
+  const usarPoder = useCallback((tipo: TipoPoder) => {
+    if (apresentacao) return
+    if (tipo === 'mapa' || tipo === 'desvio') { tocar('selecao'); definirRotaAberta(tipo); return }
+    aplicar(motor.usarPoder(partidaRef.current, tipo))
+  }, [aplicar, apresentacao])
+  const confirmarRota = useCallback((area: string, subtemas: string[]) => {
+    const tipo = rotaAberta
+    definirRotaAberta(null)
+    if (tipo) aplicar(motor.usarRota(partidaRef.current, tipo, area, subtemas))
+  }, [aplicar, rotaAberta])
 
   const escolherRecompensa = useCallback((r: Recompensa) => {
     if (animando) pular()
@@ -1076,7 +1092,8 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
                     {Array.from({ length: ENCAIXES }, (_, i) => {
                       const e = partida.encaixes[i]
                       const pronto = !!e && !!RECOMPENSAS[e.tipo].ativo && partida.fase === 'pergunta' && !partida.atual?.respondida && !apresentacao
-                      const usavel = pronto && (e!.tipo === 'pista' ? ordem.length - (partida.atual?.eliminadas.length ?? 0) > 2 : partida.vida < partida.vidaMax)
+                      // pista: sobram mais de 2 alternativas; poção: falta vida; os outros ativos (ampulheta, carta na manga, mapa, desvio) sempre
+                      const usavel = pronto && (e!.tipo === 'pista' ? ordem.length - (partida.atual?.eliminadas.length ?? 0) > 2 : e!.tipo === 'vital' ? partida.vida < partida.vidaMax : true)
                       return <Encaixe key={i} tipo={e?.tipo} carga={e?.carga} extra={e?.tipo === 'pocao' ? partida.pocao : undefined} usavel={usavel} aoUsar={() => e && usarPoder(e.tipo)} />
                     })}
                     {[...new Set(partida.reliquias)].map((r) => {
@@ -1178,6 +1195,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
         )}
 
         {painel && <Painel tipo={painel} partida={partida} intencao={intencao} aoFechar={() => definirPainel(null)} />}
+        {rotaAberta && <EscolherRota tipo={rotaAberta} areaAtual={partida.atual ? motor.carta(partida.atual.id) : null} aoEscolher={confirmarRota} aoFechar={() => definirRotaAberta(null)} />}
 
         {confirmarSaida && (
           <div className="fc-veu" role="dialog" aria-modal="true" aria-labelledby="fc-sair-titulo">
@@ -1218,6 +1236,49 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
         )}
       </div>
     </ModalJogo>
+  )
+}
+
+/**
+ * Escolha da rota de estudo: no Mapa do especialista, a área e (opcional) até
+ * 10 subtemas dela; no Desvio de área, só a área que sai. Mostra a contagem
+ * real de flashcards da Batalha em cada opção.
+ */
+function EscolherRota({ tipo, areaAtual, aoEscolher, aoFechar }: { tipo: 'mapa' | 'desvio'; areaAtual: Flashcard | null; aoEscolher: (area: string, subtemas: string[]) => void; aoFechar: () => void }) {
+  const areas = useMemo(() => motor.areasDaRota(), [])
+  const [area, definirArea] = useState<string | null>(tipo === 'desvio' && areaAtual ? (areaAtual.areaId ?? areaAtual.area) : null)
+  const [subtemas, definirSubtemas] = useState<string[]>([])
+  const d = RECOMPENSAS[tipo]
+  const escolhida = areas.find((a) => a.area === area)
+  const alternar = (t: string) => definirSubtemas((l) => (l.includes(t) ? l.filter((x) => x !== t) : [...l, t]))
+  return (
+    <div className="fc-veu" role="dialog" aria-modal="true" aria-labelledby="fc-rota-titulo" onClick={aoFechar}>
+      <div className="fc-janela fc-janela--larga fc-rota" onClick={(e) => e.stopPropagation()} style={{ ['--cor' as string]: d.cor }}>
+        <h2 id="fc-rota-titulo"><Sprite nome={d.icone} className="fc-sprite--icone" /> {d.nome}</h2>
+        <p className="fc-janela__sub">{tipo === 'mapa' ? 'Escolha a área dos próximos 10 flashcards.' : 'Escolha a área que fica de fora nos próximos 10 flashcards.'}</p>
+        <div className="fc-rota__lista" role="listbox" aria-label="Áreas">
+          {areas.map((a) => (
+            <button key={a.area} type="button" role="option" aria-selected={area === a.area} className={'fc-rota__opcao' + (area === a.area ? ' fc-rota__opcao--on' : '')} onClick={() => { tocar('hover'); definirArea(a.area); definirSubtemas([]) }}>
+              <strong>{a.nome}</strong><small>{a.total} flashcards</small>
+            </button>
+          ))}
+        </div>
+        {tipo === 'mapa' && escolhida && escolhida.subtemas.length > 0 && (
+          <>
+            <p className="fc-janela__nota">Quer afinar? Marque subtemas (opcional). Sem marcar, vale a área toda.</p>
+            <div className="fc-rota__subtemas">
+              {escolhida.subtemas.slice(0, 10).map((t) => (
+                <button key={t.nome} type="button" aria-pressed={subtemas.includes(t.nome)} className={'fc-rota__sub' + (subtemas.includes(t.nome) ? ' fc-rota__sub--on' : '')} onClick={() => alternar(t.nome)}>{t.nome} <small>{t.total}</small></button>
+              ))}
+            </div>
+          </>
+        )}
+        <div className="fc-janela__botoes">
+          <button type="button" className="fc-botao fc-botao--secundario" onClick={aoFechar}>Cancelar</button>
+          <button type="button" className="fc-botao" disabled={!area} onClick={() => area && aoEscolher(area, subtemas)}>{tipo === 'mapa' ? 'Seguir o mapa' : 'Desviar'}</button>
+        </div>
+      </div>
+    </div>
   )
 }
 

@@ -1870,3 +1870,25 @@ body.fc-modal-aberto .aviso-cookies, body.fc-modal-aberto .aviso-site, body.fc-m
  .fc-entrada__extras {gap:8px;}
  .fc-entrada .fc-extra {flex:1 1 130px;}
 }
+
+/* ============================================================
+   Rota de estudo (13/10/2026): poderes Mapa do especialista e Desvio de área.
+   Janela para escolher a área (e subtemas, no Mapa) dos próximos 10 flashcards.
+   ============================================================ */
+.fc-rota h2 { display: flex; align-items: center; gap: 10px; }
+.fc-rota h2 .fc-sprite--icone { width: 30px; height: 30px; }
+.fc-rota__lista { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+.fc-rota__opcao { display: grid; gap: 2px; text-align: left; padding: 10px 12px; border-radius: 12px; cursor: pointer; color: var(--fc-pergaminho);
+  background: linear-gradient(180deg, rgba(60, 40, 18, .9), rgba(28, 18, 8, .95)); border: 0; box-shadow: inset 0 0 0 1.5px rgba(233, 185, 85, .45); font: inherit; }
+.fc-rota__opcao strong { font-size: 15px; }
+.fc-rota__opcao small { font-size: 12px; opacity: .75; }
+.fc-rota__opcao:hover { box-shadow: inset 0 0 0 1.5px rgba(233, 185, 85, .85); }
+.fc-rota__opcao--on { box-shadow: inset 0 0 0 2.5px var(--cor, #f4cf7c), 0 0 16px color-mix(in srgb, var(--cor, #f4cf7c) 45%, transparent); background: linear-gradient(180deg, rgba(74, 52, 22, .95), rgba(36, 24, 10, .95)); }
+.fc-rota__subtemas { display: flex; flex-wrap: wrap; gap: 6px; }
+.fc-rota__sub { padding: 6px 11px; border-radius: 999px; cursor: pointer; font: 600 13px var(--fc-ui, sans-serif); color: var(--fc-pergaminho); border: 0;
+  background: rgba(20, 13, 6, .8); box-shadow: inset 0 0 0 1.5px rgba(233, 185, 85, .45); }
+.fc-rota__sub small { opacity: .65; margin-left: 4px; }
+.fc-modal .fc-rota__sub--on, .fc-rota__sub--on { color: #1b130b !important; background: linear-gradient(180deg, #fff0bf, #f4cf7c 55%, #d9a040); }
+.fc-modal .fc-rota__sub--on small { color: #3b2a12; opacity: .8; }
+.fc-rota .fc-botao:disabled { opacity: .5; cursor: not-allowed; }
+@media (max-width: 640px) { .fc-rota__lista { grid-template-columns: 1fr 1fr; } }
