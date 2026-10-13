@@ -10,7 +10,7 @@ import { montarBaralho } from '../motor/selecao'
 import type { Flashcard } from '../tipos'
 import { Palco, centro } from '../efeitos/palco'
 import { PALETA_PERSONAGEM, type Personagem, type Pose } from '../efeitos/personagens'
-import { configurarSom, destravar, tocar, tocarAmbiente, tocarMusica } from '../efeitos/sons'
+import { configurarSom, destravar, instalarDestrave, tocar, tocarAmbiente, tocarMusica } from '../efeitos/sons'
 import { sementeNova } from '../motor/aleatorio'
 import { ESTAGIOS, LIMITES, TORRE, inimigoDoAndar, type Inimigo, type Modo } from '../motor/bestiario'
 import { ENCAIXES, PATRONOS, RECOMPENSAS, ehPoder, type Recompensa, type TipoPoder } from '../motor/poderes'
@@ -102,7 +102,7 @@ function comCorrida(p: Partida): Partida {
   // o Fácil não abre corrida: não conta para o ranking
   if (!NIVEIS[nivelDaPartida(p)].ranqueado || !RANKING_NO_SERVIDOR || typeof crypto === 'undefined' || !('randomUUID' in crypto)) return p
   const idCorrida = crypto.randomUUID()
-  void iniciarCorrida(idCorrida, p.modo)
+  void iniciarCorrida(idCorrida, p.modo, nivelDaPartida(p) === 'dificil' ? 'dificil' : 'normal')
   return { ...p, idCorrida }
 }
 
@@ -239,11 +239,8 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   /* ---------- Som ---------- */
   useEffect(() => { configurarSom({ ligado: ajustes.som, efeitos: ajustes.volEfeitos, ambiente: ajustes.volAmbiente, musica: ajustes.volMusica }) }, [ajustes.som, ajustes.volEfeitos, ajustes.volAmbiente, ajustes.volMusica])
   useEffect(() => {
-    let feito = false
-    const primeiro = () => { if (feito) return; feito = true; destravar(); tocar('abrir') }
-    window.addEventListener('pointerdown', primeiro, { capture: true })
-    window.addEventListener('keydown', primeiro, { capture: true })
-    return () => { window.removeEventListener('pointerdown', primeiro, { capture: true }); window.removeEventListener('keydown', primeiro, { capture: true }) }
+    // destrave por gesto e pausa por visibilidade, instalados uma vez para o jogo todo (sons.ts)
+    instalarDestrave()
   }, [])
   useEffect(() => { tocarAmbiente(modo === 'estudo' ? 'biblioteca' : cenarioVisivel) }, [modo, cenarioVisivel])
   const adversarioEmCena = inimigoDoAndar(partida.andar, partida.sementeBase, partida.modo).inimigo

@@ -56,6 +56,14 @@ jobs:
           VITE_SUPABASE_ANON_KEY: ${{ vars.VITE_SUPABASE_ANON_KEY }}
           VITE_LIMITES_HABILITADOS: ${{ vars.VITE_LIMITES_HABILITADOS }}
           VITE_PAGAMENTOS_HABILITADOS: ${{ vars.VITE_PAGAMENTOS_HABILITADOS }}
+          # Flashcards, beta público (diretriz de 13/10/2026; parte 18 do SQL aplicada pelo Tales):
+          # limite grátis de 10 por 24 h e progresso na conta (com VITE_LIMITES_HABILITADOS),
+          # ranking da Cripta por dificuldade, menu, capa e página de planos.
+          VITE_FLASHCARDS: '1'
+          VITE_FLASHCARDS_LIMITE: 'true'
+          VITE_FLASHCARDS_RANKING: '1'
+          VITE_FLASHCARDS_CAPA: '1'
+          VITE_FLASHCARDS_VENDA: '1'
           # Pixel do Meta (anúncios). Vazio: usa o do código (src/conta/consentimento.ts).
           VITE_META_PIXEL_ID: ${{ vars.VITE_META_PIXEL_ID }}
         run: npm run build

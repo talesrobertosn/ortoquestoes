@@ -12,7 +12,16 @@ import { LIMITES_HABILITADOS } from '../estado/limiteDiario'
 import { chamarRpc } from '../servicos/supabase'
 import { CHAVE_RECORDES, CHAVE_REGISTROS, RECORDES_VAZIOS, type Recordes, type RegistroFlashcard } from './progresso'
 
-export const FLASHCARDS_NO_SERVIDOR = LIMITES_HABILITADOS && import.meta.env?.VITE_FLASHCARDS_LIMITE === 'true'
+/**
+ * Beta público (13/10/2026, parte 18 do SQL aplicada): os flashcards consultam o servidor sempre que
+ * VITE_FLASHCARDS_LIMITE=true. Quem decide se há limite é o próprio servidor, pela mesma chave das
+ * questões (configuracao_comercial.paywall_ativo): com o paywall desligado, todos seguem sem limite;
+ * ligado, o grátis tem 10 por 24 h e assinante, cortesia e administrador não têm limite.
+ * O progresso e as corridas do ranking passam a ir para a conta.
+ */
+export const FLASHCARDS_NO_SERVIDOR = import.meta.env?.VITE_FLASHCARDS_LIMITE === 'true'
+/** O cliente mostra o aviso do limite só quando o limite das questões também está ligado no build. */
+export const AVISO_LIMITE_FLASHCARDS = LIMITES_HABILITADOS && FLASHCARDS_NO_SERVIDOR
 /** Ranking no servidor (migration 202610130200_flashcards_ranking.sql): só com a outra trava e VITE_FLASHCARDS_RANKING=1. */
 export const RANKING_NO_SERVIDOR = FLASHCARDS_NO_SERVIDOR && import.meta.env?.VITE_FLASHCARDS_RANKING === '1'
 
@@ -74,9 +83,30 @@ export type TipoRanking = 'masmorra' | 'torre' | 'unicos'
 export interface LinhaRanking { posicao: number; apelido: string; valor: number; ehVoce: boolean }
 
 /** Abre a corrida no servidor: o andar só vale para o ranking se a corrida tiver flashcards autorizados. */
-export async function iniciarCorrida(id: string, modo: 'masmorra' | 'torre') {
+/** Abre a corrida no servidor com a dificuldade (gravada uma vez; o Fácil não abre corrida). */
+export async function iniciarCorrida(id: string, modo: 'masmorra' | 'torre', nivel: 'normal' | 'dificil') {
   if (!RANKING_NO_SERVIDOR) return
-  try { await chamarRpc('iniciar_corrida_flashcards', { p_id: id, p_modo: modo }) } catch { /* o jogo segue; o recorde fica só no aparelho */ }
+  try { await chamarRpc('iniciar_corrida_flashcards', { p_id: id, p_modo: modo, p_nivel: nivel }) } catch { /* o jogo segue; o recorde fica só no aparelho */ }
+}
+
+export interface LinhaRankingCripta { posicao: number; apelido: string; andar: number; alcancadoEm: string; ehVoce: boolean }
+
+/** Ranking da Cripta por dificuldade (parte 18: ranking_cripta). null = indisponível (rede, servidor ou trava). */
+export async function lerRankingCripta(modo: 'masmorra' | 'torre', nivel: 'normal' | 'dificil'): Promise<LinhaRankingCripta[] | null> {
+  if (!RANKING_NO_SERVIDOR) return null
+  try {
+    const linhas = await chamarRpc<Array<{ posicao: number; apelido: string; andar: number; alcancado_em: string; eh_voce: boolean }>>('ranking_cripta', { p_modo: modo, p_nivel: nivel })
+    return linhas.map((l) => ({ posicao: Number(l.posicao), apelido: l.apelido, andar: Number(l.andar), alcancadoEm: String(l.alcancado_em), ehVoce: Boolean(l.eh_voce) }))
+  } catch { return null }
+}
+
+/** A posição da própria conta, mesmo fora dos 50 primeiros. */
+export async function minhaPosicaoCripta(modo: 'masmorra' | 'torre', nivel: 'normal' | 'dificil'): Promise<{ posicao: number; andar: number } | null> {
+  if (!RANKING_NO_SERVIDOR) return null
+  try {
+    const [l] = await chamarRpc<Array<{ posicao: number; andar: number }>>('minha_posicao_cripta', { p_modo: modo, p_nivel: nivel })
+    return l ? { posicao: Number(l.posicao), andar: Number(l.andar) } : null
+  } catch { return null }
 }
 
 export async function vincularFlashcard(chave: string, corrida: string) {
