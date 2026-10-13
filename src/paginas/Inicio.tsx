@@ -497,8 +497,8 @@ function QuadroFlashcards({ classe }: { classe: string }) {
       </picture>
       <span className="inicio-flash__texto">
         <span className="inicio-flash__selo">Flashcards · Beta público</span>
-        <strong id={id}>Seu próximo desafio começa com um flashcard.</strong>
-        <span className="inicio-flash__desc">Revise Ortopedia e Traumatologia com flashcards das provas reais, revisão espaçada e acompanhe sua evolução.</span>
+        <strong id={id}>Conhecimento que evolui com você.</strong>
+        <span className="inicio-flash__desc">Flashcards de Ortopedia, revisão espaçada e uma jornada para testar o que você sabe.</span>
         <span className="botao botao--ouro inicio-flash__botao">Treinar flashcards <Icone nome="direita" tamanho={16} /></span>
       </span>
     </a>

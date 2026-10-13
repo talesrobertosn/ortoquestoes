@@ -1,3 +1,4 @@
+import { Volume } from './Volume'
 import { carregarFaixas } from '../dados/faixas'
 import { atacar, estiloDe, type Impacto } from '../efeitos/ataques'
 import { TABULEIRO } from '../efeitos/tabuleiros'
@@ -11,7 +12,7 @@ import { montarBaralho } from '../motor/selecao'
 import type { Flashcard } from '../tipos'
 import { Palco, centro } from '../efeitos/palco'
 import { PALETA_PERSONAGEM, type Personagem, type Pose } from '../efeitos/personagens'
-import { configurarSom, destravar, instalarDestrave, tocar, tocarAmbiente, tocarMusica } from '../efeitos/sons'
+import { configurarSom, volumeDaSessao, destravar, instalarDestrave, tocar, tocarAmbiente, tocarMusica } from '../efeitos/sons'
 import { sementeNova } from '../motor/aleatorio'
 import { ESTAGIOS, LIMITES, TORRE, inimigoDoAndar, type Inimigo, type Modo } from '../motor/bestiario'
 import { ENCAIXES, PATRONOS, RECOMPENSAS, ehPoder, type Recompensa, type TipoPoder } from '../motor/poderes'
@@ -38,6 +39,7 @@ import { Sprite } from './Sprite'
 export interface Ajustes {
   versao: 3
   som: boolean
+  volume: number
   volEfeitos: number
   volAmbiente: number
   volMusica: number
@@ -45,7 +47,7 @@ export interface Ajustes {
   velocidade: 'normal' | 'rapida'
 }
 /** Som ligado por padrão (pedido do Tales em 12/10/2026); toca a partir do primeiro toque. */
-const AJUSTES_PADRAO: Ajustes = { versao: 3, som: true, volEfeitos: 0.85, volAmbiente: 0.35, volMusica: 0.45, efeitos: 'completos', velocidade: 'normal' }
+const AJUSTES_PADRAO: Ajustes = { versao: 3, som: true, volume: 0.2, volEfeitos: 0.85, volAmbiente: 0.35, volMusica: 0.45, efeitos: 'completos', velocidade: 'normal' }
 
 const ROTULO_CURA: Record<MotivoCura, string> = {
   sequencia: 'SEQUÊNCIA', lendaria: 'LENDÁRIA', pocao: 'POÇÃO', selo: 'SELO', roubo: 'ROUBO DE ENERGIA', vital: 'POÇÃO VITAL',
@@ -191,7 +193,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
     // Ajustes da versão 1 (som desligado por padrão) não valem mais; a 2 ganha o volume da música.
     const versao = salvos.versao as number | undefined
     const validos = versao === 3 ? salvos : versao === 2 ? { ...salvos, versao: 3 as const } : {}
-    return { ...AJUSTES_PADRAO, efeitos: reduzSistema ? 'reduzidos' : 'completos', ...validos }
+    return { ...AJUSTES_PADRAO, efeitos: reduzSistema ? 'reduzidos' : 'completos', ...validos, volume: volumeDaSessao() }
   })
   const definirAjustes = (a: Partial<Ajustes>) => definirAjustesBruto((v) => { const n = { ...v, ...a }; gravar(CHAVE_AJUSTES, n); return n })
   const reduzido = ajustes.efeitos === 'reduzidos'
@@ -240,7 +242,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   const idFlutuante = useRef(0)
 
   /* ---------- Som ---------- */
-  useEffect(() => { configurarSom({ ligado: ajustes.som, efeitos: ajustes.volEfeitos, ambiente: ajustes.volAmbiente, musica: ajustes.volMusica }) }, [ajustes.som, ajustes.volEfeitos, ajustes.volAmbiente, ajustes.volMusica])
+  useEffect(() => { configurarSom({ ligado: ajustes.som, efeitos: ajustes.volEfeitos, ambiente: ajustes.volAmbiente, musica: ajustes.volMusica, volume: ajustes.volume }) }, [ajustes.som, ajustes.volEfeitos, ajustes.volAmbiente, ajustes.volMusica, ajustes.volume])
   useEffect(() => {
     // destrave por gesto e pausa por visibilidade, instalados uma vez para o jogo todo (sons.ts)
     instalarDestrave()
@@ -963,13 +965,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
             )}
           </div>
           <div className="fc-topo__acoes">
-            <button type="button" className="fc-topo-botao" onClick={() => { destravar(); definirAjustes({ som: !ajustes.som }) }} aria-pressed={ajustes.som} aria-label={ajustes.som ? 'Desligar o som' : 'Ligar o som'} title={ajustes.som ? 'Som ligado' : 'Som desligado'}>
-              {ajustes.som ? (
-                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor" /><path d="M16 8.5a5 5 0 010 7M18.5 6a8.5 8.5 0 010 12" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" /></svg>
-              ) : (
-                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor" /><path d="M16 9l5 6M21 9l-5 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>
-              )}
-            </button>
+            <Volume valor={ajustes.som ? ajustes.volume : 0} aoMudar={volume => definirAjustes({ volume, som: volume > 0 })} />
             <button type="button" className="fc-topo-botao" onClick={() => definirAjustesAbertos(true)} aria-label="Ajustes de som e efeitos" title="Ajustes">
               <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" strokeWidth="2" /><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>
               <span className="fc-topo-botao__texto">Ajustes</span>
