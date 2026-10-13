@@ -974,19 +974,30 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
                   {fase2 && <em className="fc-selo fc-selo--fase">{inimigo.fase2?.nome}</em>}
                 </div>
                 <BarraVida atual={mostrado.vidaInimigo} maximo={partida.inimigo.vidaMax} tipo={inimigo.chefe ? 'chefe' : 'inimigo'} rotulo={`Vida de ${inimigo.nome}`} />
-                <div className="fc-placa__info">
-                  <span className="fc-info fc-info--andar">Andar {partida.andar}{torre ? '/100' : ''} · {partida.pontos} pts</span>
-                  {inimigo.rajada && inimigo.rajada > 1 && <span className="fc-info" title="Passa pela Barreira reativa">{inimigo.rajada} mordidas</span>}
-                  {inimigo.carrega && <span className="fc-info fc-info--furia" title="Golpe carregado, avisado na intenção">{inimigo.carrega.nome} a cada {inimigo.carrega.aCada}</span>}
-                  {partida.inimigo.brasas > 0 && <span className="fc-info fc-info--brasa">Brasas ×{partida.inimigo.brasas}</span>}
-                  {inimigo.rouba && <span className="fc-info">Rouba cargas</span>}
-                  {inimigo.divide && !partida.inimigo.dividido && <span className="fc-info">Se divide em {Math.round(inimigo.divide.abaixoDe * 100)}%</span>}
-                  {partida.inimigo.furia ? <span className="fc-info fc-info--furia">Fúria · dano ×1,5</span> : <span className="fc-info" title="Rodadas até a Fúria">Fúria em {rodadasFuria}</span>}
-                  {atributos.armadura > 0 && <span className="fc-info fc-info--armadura">Armadura {atributos.armadura}</span>}
-                  {partida.inimigo.barreira > 0 && <span className="fc-info fc-info--barreira" title="Absorve o dano dos seus acertos antes da vida">Barreira {partida.inimigo.barreira}</span>}
-                  {inimigo.regenera && partida.inimigo.regenerado < inimigo.regenera.total && <span className="fc-info fc-info--regenera" title={`Recupera ${inimigo.regenera.porRodada} por rodada, até ${inimigo.regenera.total} neste confronto`}>Regenera {inimigo.regenera.porRodada}</span>}
-                  {inimigo.porErroSeguido > 0 && <span className="fc-info">{inimigo.chefe ? 'Pressão' : 'Veneno'} +{inimigo.porErroSeguido} por erro seguido</span>}
-                </div>
+                {(() => {
+                  // Interface mais leve (Etapa 4): no máximo dois selos à vista, pelo que mais muda a luta
+                  // (fúria e o golpe especial); o resto fica num "+N" que abre o painel do adversário.
+                  const selos = [
+                    partida.inimigo.furia ? <span key="furia" className="fc-info fc-info--furia">Fúria · dano ×1,5</span> : <span key="furia" className="fc-info" title="Rodadas até a Fúria">Fúria em {rodadasFuria}</span>,
+                    inimigo.carrega && <span key="carrega" className="fc-info fc-info--furia" title="Golpe carregado, avisado na intenção">{inimigo.carrega.nome} a cada {inimigo.carrega.aCada}</span>,
+                    partida.inimigo.barreira > 0 && <span key="barreira" className="fc-info fc-info--barreira" title="Absorve o dano dos seus acertos antes da vida">Barreira {partida.inimigo.barreira}</span>,
+                    partida.inimigo.brasas > 0 && <span key="brasas" className="fc-info fc-info--brasa">Brasas ×{partida.inimigo.brasas}</span>,
+                    inimigo.rajada && inimigo.rajada > 1 && <span key="rajada" className="fc-info" title="Passa pela Barreira reativa">{inimigo.rajada} mordidas</span>,
+                    atributos.armadura > 0 && <span key="armadura" className="fc-info fc-info--armadura">Armadura {atributos.armadura}</span>,
+                    inimigo.regenera && partida.inimigo.regenerado < inimigo.regenera.total && <span key="regenera" className="fc-info fc-info--regenera" title={`Recupera ${inimigo.regenera.porRodada} por rodada, até ${inimigo.regenera.total} neste confronto`}>Regenera {inimigo.regenera.porRodada}</span>,
+                    inimigo.porErroSeguido > 0 && <span key="pressao" className="fc-info">{inimigo.chefe ? 'Pressão' : 'Veneno'} +{inimigo.porErroSeguido} por erro seguido</span>,
+                    inimigo.rouba && <span key="rouba" className="fc-info">Rouba cargas</span>,
+                    inimigo.divide && !partida.inimigo.dividido && <span key="divide" className="fc-info">Se divide em {Math.round(inimigo.divide.abaixoDe * 100)}%</span>,
+                  ].filter(Boolean)
+                  const resto = selos.length - 2
+                  return (
+                    <div className="fc-placa__info">
+                      <span className="fc-info fc-info--andar">Andar {partida.andar}{torre ? '/100' : ''} · {partida.pontos} pts</span>
+                      {selos.slice(0, 2)}
+                      {resto > 0 && <button type="button" className="fc-info fc-info--mais" onClick={() => { tocar('selecao'); definirPainel('inimigo') }} aria-label={`Mais ${resto} habilidades do adversário`}>+{resto}</button>}
+                    </div>
+                  )
+                })()}
               </div>
               {partida.fase === 'pergunta' && (
                 <div className={`fc-intencao${intencao.furia ? ' fc-intencao--furia' : ''}${intencao.bloqueado ? ' fc-intencao--bloqueado' : ''}${(intencao.critico || intencao.carregado) && !intencao.bloqueado ? ' fc-intencao--critico' : ''}${intencao.carregado && !intencao.bloqueado ? ' fc-intencao--sopro' : ''}`}

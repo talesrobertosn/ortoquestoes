@@ -63,6 +63,17 @@ def montar(t: dict) -> Cena:
     c.add('placa', peito, tronco, grupo=2)
     c.add('ouro', lambda p: sd_toro((p - V(0, 22, 2))[:, [0, 2, 1]] * V(1, 1, 1), 15, 1.6), tronco, grupo=3)
     c.add('gema', lambda p: sd_esfera(p - V(0, 12, 15.5), 3.0 + k('brilho', 0)), tronco, grupo=4)
+    # tabardo vermelho com barra de ouro, preso no cinto (quebra o cinza e dá leitura de chefe)
+    def tabardo(p):
+        larg = 9 + np.clip(-p[:, 1] / 20, 0, 1) * 3
+        return np.maximum(np.maximum(np.abs(p[:, 0]) - larg, np.abs(p[:, 1] + 11) - 11), np.abs(p[:, 2] - 15.5 - 0.6 * np.sin(p[:, 0] * 0.5)) - 1.0) - 0.4
+    c.add('capa', tabardo, quadril, grupo=46)
+    c.add('ouro', lambda p: sd_caixa(p - V(0, -21.5, 15.8), (11.5, 1.0, 1.3), 0.4), quadril, grupo=47)
+    c.add('ouro', lambda p: sd_caixa(p - V(0, -11, 16.6), (1.0, 8.5, 0.8), 0.3), quadril, grupo=47)
+    # rebites de ouro na borda do peitoral
+    for i in range(7):
+        ang = -1.1 + i * 0.37
+        c.add('ouro', lambda p, ang=ang: sd_esfera(p - V(math.sin(ang) * 19, 4 + math.cos(ang) * 2, 8 + math.cos(ang) * 5), 1.3), tronco, grupo=48)
     # capa nas costas
     capa = tronco.filho((0, 24, -12), rx=0.12 + k('capa', 0))
     def pano(p):
@@ -115,6 +126,12 @@ def montar(t: dict) -> Cena:
     c.add('escudo', taca, escudo, grupo=41)
     c.add('ouro', lambda p: sd_toro((p - V(0, 0, 0.6))[:, [0, 2, 1]], 18.6, 2.2), escudo, grupo=42)
     c.add('placa_esc', lambda p: sd_esfera(p - V(0, 0, -0.4), 4.5), escudo, grupo=43)
+    # a taça (bojo virado para a frente) gravada: anel de ouro sobre a superfície (o lábio) e quatro raios de runa, como uma bússola
+    c.add('ouro', lambda p: sd_toro((p - V(0, 0, 5.4))[:, [0, 2, 1]], 11.5, 1.0), escudo, grupo=49)
+    for i in range(4):
+        a_ = i * math.pi / 2 + math.pi / 4
+        d_ = V(math.cos(a_), math.sin(a_), 0)
+        c.add('ouro', lambda p, d_=d_: sd_cone_redondo(p, d_ * 6 + V(0, 0, 7.2), d_ * 16 + V(0, 0, 3.6), 1.2, 0.6), escudo, grupo=49)
     c.add('gema', lambda p: sd_esfera(p - V(0, 0, 2.6), 2.0), escudo, grupo=44)
     return c
 

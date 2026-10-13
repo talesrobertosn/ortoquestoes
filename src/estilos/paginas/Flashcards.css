@@ -1767,3 +1767,19 @@ body.fc-modal-aberto .aviso-cookies, body.fc-modal-aberto .aviso-site, body.fc-m
 
 /* o topo fica acima dos personagens: a asa do Dragão de Ossos (maior desde a Etapa 3) cobria as abas */
 .fc-arena > .fc-topo { z-index: 6; }
+
+/* ============================================================
+   Interface mais leve (Etapa 4, 13/10/2026). Hierarquia: pergunta,
+   alternativas, personagens e estado. O estado perde peso: no máximo dois
+   selos do adversário à vista (o resto num "+N" que abre o painel), encaixes
+   vazios e pilhas mais apagados, e o cenário escurece um pouco em volta do
+   flashcard para a pergunta ser o primeiro ponto do olhar.
+   ============================================================ */
+.fc-info--mais { display: inline-flex !important; align-items: center; border: 0; cursor: pointer; font-weight: 800 !important; color: #ffe7a0 !important; background: rgba(233, 185, 85, .16) !important; box-shadow: inset 0 0 0 1px rgba(233, 185, 85, .55) !important; }
+.fc-info--mais:hover { background: rgba(233, 185, 85, .3) !important; }
+.fc-placa { gap: 5px; }
+.fc-info { opacity: .9; }
+.fc-encaixe--vazio { opacity: .55; }
+.fc-pilha small, .fc-pilha b { opacity: .8; }
+.fc-mesa__palco::before { content: ""; position: absolute; inset: -6% -4%; z-index: -1; pointer-events: none; border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(8, 5, 4, .38), rgba(8, 5, 4, .18) 60%, transparent); }
