@@ -67,8 +67,9 @@ de vendas. Nesse dia o Tales autorizou o **beta público** e essa restrição de
 menu com selo Beta, quadro na página inicial, central `#/flashcards`, ranking da Cripta, desempenho,
 revisão, cronograma, opinião e apresentação na página de planos. Continuam valendo: as regras atuais
 de acesso, assinatura e limites (sem mudar preço nem inventar benefício), nada de e-mail, mensagem ou
-post em rede social, e começar pela palavra "flashcards" (a Cripta é apresentada depois, como o modo
-jogo). O roteiro completo e o que já foi feito estão em
+post em rede social. **Nome (regra do Tales, 13/10/2026):** fora do jogo é sempre "Flashcards" ou
+"Torneio de Flashcards", nunca "Cripta" nem "masmorra" (o público da medicina não sabe o que é);
+"Cripta do Residente" só aparece dentro do jogo (entrada temática e partidas). O roteiro completo e o que já foi feito estão em
 [docs/flashcards/LANCAMENTO-BETA.md](docs/flashcards/LANCAMENTO-BETA.md).
 
 Para continuar o jogo, leia primeiro [docs/flashcards/CONTINUAR.md](docs/flashcards/CONTINUAR.md):

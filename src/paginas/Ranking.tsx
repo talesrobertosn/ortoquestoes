@@ -7,11 +7,11 @@ import { Carregando, Estado } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
 import { EmblemasDoNome, Fogueira, Inventario } from '../componentes/Inventario'
 
-/** Abas: ranking de questões, ranking da Cripta (flashcards, beta) e inventário de conquistas. */
+/** Abas: ranking de questões, ranking do Torneio de Flashcards (beta) e inventário de conquistas. */
 function AbasRanking({ atual, conquistadas, total }: { atual: 'ranking' | 'conquistas'; conquistadas: number; total: number }) {
   return <nav className="rk-secoes" aria-label="Ranking e conquistas">
     <a className="rk-secoes__aba" href={href('/ranking')} aria-current={atual === 'ranking' ? 'page' : undefined}><Icone nome="trofeu" tamanho={18} /> Questões</a>
-    <a className="rk-secoes__aba" href={href('/ranking?aba=cripta')}><Icone nome="raio" tamanho={18} /> Cripta <span className="selo-beta">Beta</span></a>
+    <a className="rk-secoes__aba" href={href('/ranking?aba=flashcards')}><Icone nome="raio" tamanho={18} /> Flashcards <span className="selo-beta">Beta</span></a>
     <a className="rk-secoes__aba" href={href('/conquistas')} aria-current={atual === 'conquistas' ? 'page' : undefined}><Icone nome="medalha" tamanho={18} /> Conquistas <span className="rk-secoes__contador numerico">{conquistadas}/{total}</span></a>
   </nav>
 }

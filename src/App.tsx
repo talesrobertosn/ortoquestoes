@@ -82,8 +82,8 @@ const TITULOS: Record<string, string> = {
   '/flashcards': 'Flashcards | Orto Questões',
   '/flashcards/desempenho': 'Desempenho nos flashcards | Orto Questões',
   '/flashcards/cronograma': 'Cronograma de flashcards | Orto Questões',
-  '/flashcards/entrada': 'Cripta do Residente | Orto Questões',
-  '/flashcards/cripta': 'Cripta do Residente | Orto Questões',
+  '/flashcards/entrada': 'Torneio de Flashcards | Orto Questões',
+  '/flashcards/cripta': 'Torneio de Flashcards | Orto Questões',
   '/flashcards/torre': 'Torre do Título | Orto Questões',
   '/flashcards/biblioteca': 'Biblioteca de flashcards | Orto Questões',
 }
@@ -155,7 +155,7 @@ export function App() {
       pagina = <Revisao />
       break
     case 'ranking':
-      pagina = rota.consulta.get('aba') === 'cripta' ? <RankingCripta /> : <Ranking />
+      pagina = ['flashcards', 'cripta'].includes(rota.consulta.get('aba') ?? '') ? <RankingCripta /> : <Ranking />
       break
     case 'conquistas':
       pagina = <Conquistas escolher={rota.consulta?.get('escolher') === '1'} />

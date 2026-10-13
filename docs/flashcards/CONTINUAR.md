@@ -76,8 +76,9 @@ O Tales autorizou o beta público (roteiro em [LANCAMENTO-BETA.md](LANCAMENTO-BE
   temática do jogo foi para `#/flashcards/entrada`; `cripta`, `torre` e `biblioteca` continuam iguais.
   `#/flashcards/desempenho` e `#/flashcards/cronograma` são páginas do site. `#/flashcards/ranking`
   leva a `#/ranking?aba=cripta`. Só as rotas do jogo exigem conta (`PAGINAS_DO_SITE_FLASHCARDS` em `App.tsx`).
-- **Nome.** Começa como "Flashcards" (pedido do Tales: o público não sabe o que é masmorra). A Cripta
-  aparece depois, como "modo jogo", na central e na entrada temática.
+- **Nome (regra do Tales).** Fora do jogo é sempre "Flashcards" ou "Torneio de Flashcards" (menu,
+  capa, central, ranking, planos, títulos de aba). "Cripta" só dentro do jogo. O ranking do site é
+  `#/ranking?aba=flashcards` (`aba=cripta` continua funcionando por link antigo).
 - **Página inicial.** Com conta, no computador, o quadro "Seu próximo desafio começa com um flashcard."
   ocupa a coluna da direita do herói, no lugar dos números (pedido do Tales com print). No celular, e
   para visitantes, vira uma faixa logo abaixo do herói. Trava `VITE_FLASHCARDS_CAPA` (ligada no publicar.yml).

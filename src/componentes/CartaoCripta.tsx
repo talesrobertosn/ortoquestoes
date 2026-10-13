@@ -15,11 +15,11 @@ export function CartaoCripta({ variante = 'venda', limites = false }: { variante
       <div className="cripta-cartao__texto">
         <p className="cripta-cartao__selo">Flashcards · beta público</p>
         <h2 id={`cripta-titulo-${variante}`}>Flashcards das provas reais, com revisão espaçada</h2>
-        <p>Responda, veja o verso e diga se errou, hesitou ou sabia: a próxima revisão se marca sozinha. Para quem gosta de jogo, os mesmos flashcards viram um RPG, a <em>Cripta do Residente</em>.</p>
+        <p>Responda, veja o verso e diga se errou, hesitou ou sabia: a próxima revisão se marca sozinha. Para quem gosta de jogo, os mesmos flashcards viram o <em>Torneio de Flashcards</em>.</p>
         <ul className="cripta-cartao__lista">
           <li>Flashcards tirados das questões comentadas do acervo, por assunto</li>
           <li>{limites ? 'Conta grátis: 10 flashcards a cada 24 horas · Assinante: sem limite' : 'Abertos a todas as contas nesta fase'}</li>
-          <li>Desempenho, cronograma e ranking da Cripta (Normal e Difícil)</li>
+          <li>Desempenho, cronograma e ranking do Torneio (Normal e Difícil)</li>
         </ul>
       </div>
       <a className="botao botao--ouro cripta-cartao__entrar" href={href('/flashcards')}>Conhecer os flashcards</a>

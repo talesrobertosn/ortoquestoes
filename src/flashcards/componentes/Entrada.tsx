@@ -120,7 +120,7 @@ export function Entrada() {
           <div className="fc-entrada__extras">
             <button type="button" className="fc-extra" onClick={() => { tocar('selecao'); definirPainel('altar') }}><Sprite nome="estrela" className="fc-sprite--icone" /><span><strong>Altar do Saber</strong><small>{altar.cristais} cristais</small></span></button>
             <button type="button" className="fc-extra" onClick={() => { tocar('selecao'); definirPainel('bestiario') }}><Sprite nome="pergaminho" className="fc-sprite--icone" /><span><strong>Bestiário</strong><small>{bestiario.vistos.length} de {BESTIARIO.length} descobertos</small></span></button>
-            {FLASHCARDS_RANKING && <a className="fc-extra" href={href('/ranking?aba=cripta')} onClick={() => tocar('selecao')}><Sprite nome="coroa" className="fc-sprite--icone" /><span><strong>Ranking</strong><small>Cripta: Normal e Difícil</small></span></a>}
+            {FLASHCARDS_RANKING && <a className="fc-extra" href={href('/ranking?aba=flashcards')} onClick={() => tocar('selecao')}><Sprite nome="coroa" className="fc-sprite--icone" /><span><strong>Ranking</strong><small>Cripta: Normal e Difícil</small></span></a>}
           </div>
         </div>
 

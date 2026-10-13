@@ -19,7 +19,7 @@ import { CHAVE_RECORDES, CHAVE_REGISTROS, RECORDES_VAZIOS, type RegistroFlashcar
 import type { Flashcard } from '../flashcards/tipos'
 import '../estilos/paginas/CentralFlashcards.css'
 
-export const AVISO_BETA = 'A Cripta do Residente está em beta. Estamos aprimorando o visual, o áudio e as mecânicas. Teste e conte o que funcionou — ou o que precisa melhorar.'
+export const AVISO_BETA = 'O Torneio de Flashcards está em beta. Estamos aprimorando o visual, o áudio e as mecânicas. Teste e conte o que funcionou — ou o que precisa melhorar.'
 
 /** Data da prova usada no cronograma de questões quando a pessoa não tem plano (PlanoEstudo.tsx). */
 const DATA_TEOT = '2027-01-10'
@@ -146,7 +146,7 @@ export function CentralFlashcards() {
         <ol className="cf-passos">
           <li><b>1</b><strong>Escolha um assunto</strong><span>Por área, pelas revisões de hoje, pelos que você errou ou pelos que nunca viu.</span></li>
           <li><b>2</b><strong>Responda e revise o flashcard</strong><span>Escolha a alternativa, veja o verso e diga se errou, hesitou ou sabia. A data da próxima revisão sai disso.</span></li>
-          <li><b>3</b><strong>Acompanhe seu aprendizado e sua progressão</strong><span>Desempenho por assunto, cronograma até a data da prova e o andar mais fundo da Cripta.</span></li>
+          <li><b>3</b><strong>Acompanhe seu aprendizado e sua progressão</strong><span>Desempenho por assunto, cronograma até a data da prova e o seu recorde no Torneio.</span></li>
         </ol>
       </section>
 
@@ -154,12 +154,12 @@ export function CentralFlashcards() {
         <h2 id="cf-modos-titulo" className="cf-titulo">Por onde seguir</h2>
         <div className="cf-modos">
           <CartaoModo arte="biblioteca" titulo="Revisar flashcards" texto="Estudo calmo, sem combate, por assunto ou pelas revisões do dia." destino="/flashcards/biblioteca" acao="Abrir a Biblioteca" />
-          <CartaoModo arte="cripta" titulo="Modo jogo: Cripta do Residente" texto={`Os mesmos flashcards em um RPG: cada acerto é um golpe. Fácil, Normal ou Difícil.${rec.andarMaximo ? ` Seu recorde: andar ${rec.andarMaximo}.` : ''}`} destino="/flashcards/entrada" acao="Jogar a Cripta" />
+          <CartaoModo arte="cripta" titulo="Torneio de Flashcards" texto={`Os mesmos flashcards em forma de jogo: cada acerto é um golpe. Fácil, Normal ou Difícil.${rec.andarMaximo ? ` Seu recorde: andar ${rec.andarMaximo}.` : ''}`} destino="/flashcards/entrada" acao="Entrar no Torneio" />
           <CartaoModo arte="progresso" titulo="Meu desempenho" texto={`${contagem.estudados.toLocaleString('pt-BR')} flashcards únicos estudados neste aparelho e na sua conta.`} destino="/flashcards/desempenho" acao="Ver desempenho" />
         </div>
         <ul className="cf-links">
           <li><a href={href('/flashcards/cronograma')}><Icone nome="calendario" tamanho={18} /><span><strong>Meu cronograma</strong><small>{plano ? `Até ${formatarData(plano.data)}` : 'Data-alvo e ritmo diário'}</small></span></a></li>
-          <li><a href={href('/ranking?aba=cripta')}><Icone nome="trofeu" tamanho={18} /><span><strong>Ranking da Cripta</strong><small>Normal e Difícil, separados</small></span></a></li>
+          <li><a href={href('/ranking?aba=flashcards')}><Icone nome="trofeu" tamanho={18} /><span><strong>Ranking dos flashcards</strong><small>Normal e Difícil, separados</small></span></a></li>
           <li><a href={href('/flashcards/torre')}><Icone nome="rota" tamanho={18} /><span><strong>Torre do Título</strong><small>{TORRE.andares} andares · jogável em beta, ainda sem ranking{rec.torreMaximo ? ` · recorde ${rec.torreMaximo}` : ''}</small></span></a></li>
           <li><button type="button" onClick={() => definirOpiniao('central')}><Icone nome="correio" tamanho={18} /><span><strong>Enviar opinião</strong><small>Som, visual, desempenho ou conteúdo</small></span></button></li>
         </ul>
@@ -220,7 +220,7 @@ export function DesempenhoFlashcards() {
       <header className="cf-cabeca">
         <p className="cf-selo"><span className="cf-beta">Beta</span> Flashcards</p>
         <h1>Meu desempenho nos flashcards</h1>
-        <p>O aprendizado conta junto o que você responde na Biblioteca e na Cripta. Andares, ouro e chefes do jogo ficam de fora destes números.</p>
+        <p>O aprendizado conta junto o que você responde na Biblioteca e no Torneio. Andares, ouro e chefes do jogo ficam de fora destes números.</p>
       </header>
 
       <section className="cf-numeros" aria-label="Totais desde o começo">
@@ -249,7 +249,7 @@ export function DesempenhoFlashcards() {
           <div className="cf-barra" role="img" aria-label={`Errei ${p.errei}, hesitei ${p.hesitei}, sabia ${p.sabia}`}>
             {(['errei', 'hesitei', 'sabia'] as const).map((k) => p[k] ? <span key={k} className={`cf-barra__${k}`} style={{ flexGrow: p[k] }}>{rotuloAvaliacao[k]} {p[k]}</span> : null)}
           </div>
-        ) : <p className="cf-nota">Ainda sem autoavaliações no período. Elas vêm da Biblioteca (Errei, Hesitei, Sabia); na Cripta conta só o acerto da alternativa.</p>}
+        ) : <p className="cf-nota">Ainda sem autoavaliações no período. Elas vêm da Biblioteca (Errei, Hesitei, Sabia); no Torneio conta só o acerto da alternativa.</p>}
         <p className="cf-nota">“Sabia” é a sua impressão, não um acerto conferido: o acerto objetivo é o da alternativa escolhida.</p>
         <h3 className="cf-sub">Respostas por dia</h3>
         <div className="cf-dias" role="img" aria-label={`Respostas por dia nos últimos ${dias} dias`}>

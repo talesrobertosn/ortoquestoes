@@ -10,8 +10,8 @@ Projeto OrtoQuestões, repositório `talesrobertosn/ortoquestoes`. Roteiro execu
   entrada temática do jogo, agora em `#/flashcards/entrada`), "Revisar sem o jogo", aviso do beta,
   Revisões de hoje / Errei / Hesitei / Nunca estudados / Por assunto, como funciona em 3 passos,
   cartões Revisar, Modo jogo e Meu desempenho, links para cronograma, ranking, Torre e opinião.
-- **Pedido do Tales durante o trabalho:** começar como "Flashcards", não "masmorra"; a Cripta entra
-  depois, como modo jogo. Na página inicial, no computador, o quadro dos flashcards ocupa a coluna da
+- **Pedidos do Tales durante o trabalho:** fora do jogo é sempre "Flashcards" ou "Torneio de
+  Flashcards"; "Cripta" só dentro do jogo. Na página inicial, no computador, o quadro dos flashcards ocupa a coluna da
   direita do herói (onde ficavam Sequência, Acerto e Respondidas); no celular vira uma faixa abaixo.
 - **Menu:** "Flashcards" + selo Beta no topo, na barra do celular e no Menu.
 - **Arte:** `scripts/cenarios/promo.py` compõe a capa (floresta, entrada da masmorra ao fundo, herói
@@ -24,7 +24,7 @@ Projeto OrtoQuestões, repositório `talesrobertosn/ortoquestoes`. Roteiro execu
 - **Meu cronograma** (`#/flashcards/cronograma`): data-alvo (sugere a do TEOT), assuntos, dias, ritmo;
   avisos de data passada, sem flashcards, concluído, acima do ritmo e revisões acumuladas;
   "Começar a sessão de hoje".
-- **Ranking:** aba Cripta em `#/ranking` (Normal e Difícil separados, empate por quem chegou primeiro,
+- **Ranking:** aba Flashcards em `#/ranking` (`?aba=flashcards`) (Normal e Difícil separados, empate por quem chegou primeiro,
   só nome público, Fácil fora, Torre sem ranking).
 - **Opinião:** janela com as 5 perguntas e as categorias, só confirma quando o servidor grava; no fim
   da sessão e da partida; convite discreto depois de 3 sessões.

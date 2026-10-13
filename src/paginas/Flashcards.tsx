@@ -14,11 +14,11 @@ const Jogo = lazy(() => import('./FlashcardsJogo'))
  *   #/flashcards/cripta     a Cripta sem fim
  *   #/flashcards/torre      a Torre do Título, 100 andares
  *   #/flashcards/biblioteca o Estudo calmo
- *   #/flashcards/ranking    leva ao ranking do site, aba Cripta
+ *   #/flashcards/ranking    leva ao ranking do site, aba Flashcards
  */
 export function Flashcards({ secao }: { secao?: string }) {
   if (['cripta', 'masmorra', 'torre', 'biblioteca', 'estudo', 'entrada'].includes(secao ?? '')) return <Suspense fallback={null}><Jogo secao={secao!} /></Suspense>
-  if (secao === 'ranking') return <Redirecionar destino="/ranking?aba=cripta" />
+  if (secao === 'ranking') return <Redirecionar destino="/ranking?aba=flashcards" />
   if (secao === 'desempenho') return <DesempenhoFlashcards />
   if (secao === 'cronograma') return <CronogramaFlashcards />
   return <CentralFlashcards />

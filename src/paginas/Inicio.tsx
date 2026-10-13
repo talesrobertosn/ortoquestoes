@@ -484,8 +484,8 @@ export function Inicio() {
 /**
  * Flashcards na página inicial (beta público, 13/10/2026). No computador o
  * quadro ocupa a coluna da direita do herói; no celular vira uma faixa logo
- * abaixo. Fala só em flashcards: a Cripta (o modo jogo) é apresentada depois,
- * na central (#/flashcards) e na entrada temática.
+ * abaixo. Fala só em flashcards (pedido do Tales, 13/10/2026): o nome Cripta só aparece
+ * dentro do jogo; fora dele é "Flashcards" ou "Torneio de Flashcards".
  */
 function QuadroFlashcards({ classe }: { classe: string }) {
   const id = classe.split(' ')[0] + '-titulo'
