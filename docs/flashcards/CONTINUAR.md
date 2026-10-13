@@ -58,18 +58,13 @@ Atualizado em 13/10/2026, no fim das Etapas 1 a 8 da direção criativa.
    - **Ranking:** o Fácil não abre corrida no servidor nem conta para os recordes de andar. Só Normal e Difícil contam.
    - Simulação com 75% de acerto, andar médio: Fácil 11,5, Normal 4,8 e Difícil 2,9.
 
-## Parou aqui (13/10/2026, fim da sessão)
+## Parou aqui (13/10/2026, 20:52)
 
-O último commit ("Correções da revisão…") já está no PR #220. Falta:
-
-1. **Conferir o teste novo** em `fixtures/testar_flashcards.mjs`, no bloco "Salas de evento". A parte de "reforçar respeita o máximo de cargas" pega a primeira recompensa que tem `maximo`, que pode não ser um poder.
-   - Troque por um poder de verdade: `m.PODERES.find((r) => m.RECOMPENSAS[r].maximo === 1)`, com `ouro: 60` no estado.
-   - Confirme que o teste falha sem a correção em `aplicarEfeitoSala` (`cargas` com `Math.min`).
-2. **Rodar os testes:** `npm test`, `npx tsc --noEmit`, `npm run build` e Playwright em 1400×860, 390×844, 844×390, 600×360 e 568×320.
-3. **Responder os comentários do Codex no PR #220** (cargas, cura da forja e peso das relíquias, já corrigidos) e resolver as conversas.
-   - No PR #219 (já mesclado) também há dois comentários, cenário antigo e corte do deitado, já corrigidos neste commit.
-4. **Ler as notificações novas do PR #220.** Com o CI ("verificar") verde, fazer o merge do PR #220 na base `claude/pdfs-questoes-tp64dr`.
-5. **Depois do merge,** recomeçar a branch: `git fetch origin claude/pdfs-questoes-tp64dr && git checkout -B claude/sharp-goodall-pl7kp7 origin/claude/pdfs-questoes-tp64dr && git push -f -u origin claude/sharp-goodall-pl7kp7`.
+- O PR #220 foi mesclado na base `claude/pdfs-questoes-tp64dr`, com as Etapas 2 a 8, as correções da revisão do Codex e as dificuldades Fácil, Normal e Difícil. O merge publica o jogo na rota escondida.
+- Os comentários do Codex nos PRs #219 e #220 foram respondidos e resolvidos.
+- A branch `claude/sharp-goodall-pl7kp7` foi recomeçada a partir da base. Para trabalho novo, abra um PR novo.
+- Testado: `npm test`, `npx tsc --noEmit`, `npm run build` e Playwright em 1400×860, 390×844, 844×390, 600×360 e 568×320.
+- **Ranking por dificuldade no servidor:** hoje o Fácil simplesmente não abre corrida (`comCorrida` em `Arena.tsx`). Quando o ranking for ligado, vale enviar o nível em `iniciar_corrida_flashcards` para separar Normal e Difícil.
 
 ## Próximos passos sugeridos (em ordem)
 
