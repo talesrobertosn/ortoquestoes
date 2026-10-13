@@ -1,3 +1,4 @@
+import { TABULEIRO } from '../efeitos/tabuleiros'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { gravar, ler } from '../../estado/armazenamento'
 import { href, navegar } from '../../util/rotas'
@@ -994,7 +995,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
             </section>
 
             {/* Estrado de pedra com o flashcard */}
-            <section className="fc-mesa" ref={refMesa} aria-label="Mesa da batalha">
+            <section className="fc-mesa" ref={refMesa} aria-label="Mesa da batalha" data-tabuleiro={TABULEIRO[cenarioVisivel] ?? 'mesa'}>
               <TampoMesa cenario={cenarioVisivel} />
               <span className="fc-gema fc-gema--1" aria-hidden="true" /><span className="fc-gema fc-gema--2" aria-hidden="true" />
               <span className="fc-gema fc-gema--3" aria-hidden="true" /><span className="fc-gema fc-gema--4" aria-hidden="true" />

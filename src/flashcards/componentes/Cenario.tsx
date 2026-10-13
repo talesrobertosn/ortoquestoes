@@ -1,6 +1,7 @@
 import { memo, useEffect, useRef } from 'react'
 import type { Cenario as TipoCenario } from '../motor/bestiario'
-import { criarAmbiente, pintarCena, pintarMesa, type Cena, type Clima } from '../efeitos/pintura'
+import { criarAmbiente, pintarCena, type Cena, type Clima } from '../efeitos/pintura'
+import { pintarTabuleiro } from '../efeitos/tabuleiros'
 
 /** Desfoque barato e compatível com todos os navegadores: reduz e amplia de novo, com suavização. */
 function desfocar(src: HTMLCanvasElement, fator: number): HTMLCanvasElement {
@@ -164,7 +165,7 @@ export const TampoMesa = memo(function TampoMesa({ cenario }: { cenario: TipoCen
       const chave = `${c.clientWidth}x${c.clientHeight}`
       if (chave === ultimo) return
       ultimo = chave
-      pintarMesa(c, cenario)
+      pintarTabuleiro(c, cenario)
     }
     pintar()
     const obs = new ResizeObserver(() => { window.clearTimeout(espera); espera = window.setTimeout(pintar, 120) })

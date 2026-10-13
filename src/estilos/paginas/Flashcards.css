@@ -1321,3 +1321,38 @@ body.fc-modal-aberto .aviso-cookies, body.fc-modal-aberto .aviso-site, body.fc-m
 /* sem desfoque de fundo ao vivo (pesava mais que todo o resto no computador): véus um pouco mais escuros no lugar */
 .fc-modal-veu { backdrop-filter: none !important; -webkit-backdrop-filter: none !important; background: radial-gradient(ellipse at 50% 40%, rgba(20, 14, 24, .86), rgba(4, 3, 6, .96)) !important; }
 .fc-veu { backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
+
+/* ---- sprites assados (scripts/sprites/): uma linha por animação, quadros na horizontal.
+   Cada ator recebe --l-<anim> (linha), --n-<anim> (quadros), --d-<anim> (duração), --w e --h. */
+.fc-ator__folha--assada { position: absolute; inset: 0; display: block; background-repeat: no-repeat; image-rendering: pixelated; image-rendering: crisp-edges; pointer-events: none;
+  --linha: var(--l-parado); --n: var(--n-parado);
+  animation: fc-quadros var(--d-parado) steps(var(--n-parado), jump-none) infinite; }
+@keyframes fc-quadros {
+  from { background-position: 0 calc(var(--linha) * -1 * var(--h)); }
+  to { background-position: calc((var(--n) - 1) * -1 * var(--w)) calc(var(--linha) * -1 * var(--h)); }
+}
+.fc-ator[data-pose="preparo"] .fc-ator__folha--assada { --linha: var(--l-preparo); --n: var(--n-preparo); animation: fc-quadros var(--d-preparo) steps(var(--n-preparo), jump-none) 1 forwards; }
+.fc-ator[data-pose="golpe"] .fc-ator__folha--assada { --linha: var(--l-golpe); --n: var(--n-golpe); animation: fc-quadros var(--d-golpe) steps(var(--n-golpe), jump-none) 1 forwards; }
+.fc-ator[data-pose="dano"] .fc-ator__folha--assada { --linha: var(--l-dano); --n: var(--n-dano); animation: fc-quadros var(--d-dano) steps(var(--n-dano), jump-none) 1 forwards; }
+.fc-ator[data-pose="vitoria"] .fc-ator__folha--assada { --linha: var(--l-vitoria); --n: var(--n-vitoria); animation: fc-quadros var(--d-vitoria) steps(var(--n-vitoria), jump-none) infinite alternate; }
+.fc-ator--caiu .fc-ator__folha--assada { --linha: var(--l-derrota); --n: var(--n-derrota); animation: fc-quadros var(--d-derrota) steps(var(--n-derrota), jump-none) 1 forwards; }
+/* o clarão do golpe é a mesma folha em branco, no mesmo quadro: só aparece no instante do impacto */
+.fc-ator__clarao.fc-ator__folha--assada { opacity: 0; }
+.fc-anim-atingido .fc-ator__clarao.fc-ator__folha--assada, .fc-anim-atingido-forte .fc-ator__clarao.fc-ator__folha--assada, .fc-anim-clarao .fc-ator__clarao.fc-ator__folha--assada { animation: fc-quadros var(--d-dano) steps(var(--n-dano), jump-none) 1 forwards, fc-flash .32s ease-out; --linha: var(--l-dano); --n: var(--n-dano); }
+.fc-arena--reduzida .fc-ator__folha--assada { animation-duration: 1ms; animation-iteration-count: 1; }
+/* a folha assada já tem contorno próprio: só a sombra de contato leve */
+.fc-ator--assado .fc-ator__quadros { filter: none; }
+
+/* ---- três arquiteturas de tabuleiro (efeitos/tabuleiros.ts) */
+/* chão integrado: sem moldura nem sombra de objeto; o piso do bioma aparece */
+.fc-mesa[data-tabuleiro="chao"] { box-shadow: none; }
+.fc-mesa[data-tabuleiro="chao"]::after { background: none; }
+.fc-mesa[data-tabuleiro="chao"] .fc-gema { display: none; }
+/* plataforma suspensa: o canvas desce além da mesa, mostrando a rocha pendurada */
+.fc-mesa[data-tabuleiro="plataforma"] { box-shadow: none; }
+.fc-mesa[data-tabuleiro="plataforma"] .fc-mesa__tampo { height: 122%; border-radius: 0; filter: drop-shadow(0 24px 22px rgba(0, 0, 0, .55)); }
+.fc-mesa[data-tabuleiro="plataforma"]::after { inset: 4% 3% 6% 3%; border-radius: 40px; background: radial-gradient(ellipse at 50% 46%, rgba(255, 240, 200, .14), transparent 66%); }
+.fc-mesa[data-tabuleiro="plataforma"] .fc-gema { display: none; }
+/* mesa física: o canvas desce 6% para mostrar a frente do tampo (espessura) */
+.fc-mesa[data-tabuleiro="mesa"] .fc-mesa__tampo { height: 106%; border-radius: 18px 18px 12px 12px; }
+.fc-mesa[data-tabuleiro="mesa"] { box-shadow: 0 46px 46px -14px rgba(0, 0, 0, .75), 0 16px 18px rgba(0, 0, 0, .35); }

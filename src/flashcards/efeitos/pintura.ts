@@ -28,7 +28,7 @@ const bayer = (x: number, y: number) => BAYER[(y & 3) * 4 + (x & 3)]
 function px(c: Ctx, x: number, y: number, cor: string) { c.fillStyle = cor; c.fillRect(x | 0, y | 0, 1, 1) }
 
 /** Célula de Voronoi em pixels: id da pedra e distância até a junta. */
-function celula(x: number, y: number, tam: number, s: number, esticar = 1) {
+export function celula(x: number, y: number, tam: number, s: number, esticar = 1) {
   const gx = x / (tam * esticar), gy = y / tam, ix = Math.floor(gx), iy = Math.floor(gy)
   let d1 = 9, d2 = 9, id = 0, cx = 0, cy = 0
   for (let j = -1; j <= 1; j++) for (let i = -1; i <= 1; i++) {
@@ -41,7 +41,7 @@ function celula(x: number, y: number, tam: number, s: number, esticar = 1) {
 }
 
 /** Pedras irregulares com chanfro de luz (cima-esquerda) e sombra (baixo-direita). */
-function pedras(c: Ctx, x0: number, y0: number, w: number, h: number, tam: number, tons: string[], junta: string, musgo: string | null, s: number, mascara?: (x: number, y: number) => boolean) {
+export function pedras(c: Ctx, x0: number, y0: number, w: number, h: number, tam: number, tons: string[], junta: string, musgo: string | null, s: number, mascara?: (x: number, y: number) => boolean) {
   for (let y = y0; y < y0 + h; y++) for (let x = x0; x < x0 + w; x++) {
     if (mascara && !mascara(x, y)) continue
     const { id, borda, cx, cy } = celula(x, y, tam, s)
@@ -1009,15 +1009,29 @@ const MESA: Record<Cenario, { borda: string[]; tampo: string[]; metal: string[];
  * borda de blocos chanfrados, cantoneiras de metal com rebites, lajes grandes
  * no tampo e oclusão nas bordas internas.
  */
+/** Altura do canvas da mesa em relação à mesa (a sobra é a frente do tampo). */
+export const ESPESSURA_MESA = 1.06
+
 export function pintarMesa(canvas: HTMLCanvasElement, cenario: Cenario) {
   const w = canvas.clientWidth, h = canvas.clientHeight
   if (!w || !h) return
   const s = escalaPixel(window.innerWidth)
-  const W = Math.ceil(w / s), H = Math.ceil(h / s)
-  canvas.width = W; canvas.height = H
+  // o canvas é um pouco mais alto que a mesa (CSS): embaixo, a frente do tampo mostra a espessura
+  const W = Math.ceil(w / s), Htot = Math.ceil(h / s), H = Math.round(Htot / ESPESSURA_MESA)
+  canvas.width = W; canvas.height = Htot
   const c = canvas.getContext('2d')!
-  c.clearRect(0, 0, W, H)
+  c.clearRect(0, 0, W, Htot)
   const p = MESA[cenario]
+  // frente do tampo: blocos mais escuros, junta vertical a cada bloco, quina clara em cima e sombra embaixo
+  for (let y = H - 4; y < Htot; y++) for (let x = 0; x < W; x++) {
+    const t = (y - (H - 4)) / Math.max(1, Htot - H + 4)
+    const cantoX = Math.max(0, 8 - x, x - (W - 9))
+    if (cantoX * cantoX + Math.max(0, y - (Htot - 8)) ** 2 > 64) continue
+    const bloco = Math.floor((x + (y > H + 3 ? 7 : 0)) / 15)
+    const junta = (x + (y > H + 3 ? 7 : 0)) % 15 === 0
+    const tom = junta ? 0 : Math.max(0, Math.min(3, Math.floor(3 - t * 2.6 + ruido(bloco, 2, 101) * 0.9)))
+    c.fillStyle = y === H - 4 ? p.borda[4] : p.borda[tom]; c.fillRect(x, y, 1, 1)
+  }
   const B = Math.max(6, Math.min(10, Math.floor(Math.min(W, H) * 0.05)))
   const canto = 5
   const dentroCanto = (x: number, y: number) => {

@@ -205,7 +205,7 @@ def hex_rgb(h):
     return tuple(int(h[i:i + 2], 16) for i in (0, 2, 4))
 
 
-def rampa(base: str, n=6, escuro=0.28, claro=1.25, giro=0.06, sat_sombra=1.15):
+def rampa(base: str, n=6, escuro=0.28, claro=1.25, giro=0.16, sat_sombra=1.2):
     """
     Rampa de cor de pixel art a partir de uma cor média: as sombras giram para
     o azul/violeta e saturam um pouco; as luzes giram para o amarelo e
@@ -240,6 +240,7 @@ class Material:
     contorno: tuple | None = None  # cor do contorno; padrão: rampa[0] escurecida
     textura: Callable | None = None  # f(p_local, normal) -> deslocamento em degraus
     borda_luz: float = 1.0  # luz de recorte (rim)
+    cores_textura: list | None = None  # rampa dos pixels que a textura marca (rachadura luminosa, runa)
 
 
 # ------------------------------------------------------------------ cena
@@ -300,6 +301,7 @@ class Camera:
     origem: tuple  # (x, y) do ponto (0,0,0) do mundo no sprite, em pixels (y para baixo)
     inclinacao: float = 0.30  # olhar de cima (rad)
     giro: float = 0.0
+    escala: float = 1.0  # pixels do sprite por unidade do mundo
 
 
 LUZ = normalizar(v3(-0.55, 0.75, 0.55))
@@ -319,9 +321,9 @@ def render(cena: Cena, mats: dict[str, Material], cam: Camera, passos=110, sombr
     W, H = cam.largura, cam.altura
     direita, cima, tras = _base_camera(cam)
     ys, xs = np.mgrid[0:H, 0:W]
-    u = (xs + 0.5 - cam.origem[0]).astype(F).ravel()
-    v = (cam.origem[1] - ys - 0.5).astype(F).ravel()
-    longe = float(max(W, H)) * 1.5
+    u = ((xs + 0.5 - cam.origem[0]) / cam.escala).astype(F).ravel()
+    v = ((cam.origem[1] - ys - 0.5) / cam.escala).astype(F).ravel()
+    longe = float(max(W, H)) * 1.5 / cam.escala
     o = np.outer(u, direita) + np.outer(v, cima) + tras * longe
     d = -tras
     n = len(u)
@@ -380,7 +382,7 @@ def render(cena: Cena, mats: dict[str, Material], cam: Camera, passos=110, sombr
     ndf = np.clip(nrm @ LUZ_PREENCHE, 0, 1)
     ndv = np.clip(nrm @ V, 0, 1)
     rim = np.clip(nrm @ LUZ_RECORTE, 0, 1) * (1 - ndv) ** 2
-    luz = 0.16 + 0.30 * ao + 0.62 * ndl * (0.35 + 0.65 * sombra) + 0.14 * ndf
+    luz = 0.03 + 0.20 * ao + 0.92 * ndl * (0.18 + 0.82 * sombra) + 0.08 * ndf
     meio = (LUZ + V)
     meio = meio / np.linalg.norm(meio)
     especular = np.clip(nrm @ meio, 0, 1)
@@ -396,6 +398,7 @@ def render(cena: Cena, mats: dict[str, Material], cam: Camera, passos=110, sombr
         if not sel.any():
             continue
         m = mats[pt.mat]
+        mascara = None
         cores = np.array(m.cores, dtype=F)
         nc = len(cores)
         if m.emissivo:
@@ -405,10 +408,18 @@ def render(cena: Cena, mats: dict[str, Material], cam: Camera, passos=110, sombr
             nivel = nivel + rim[sel] * 2.2 * m.borda_luz
             if m.textura is not None:
                 loc = (P[sel] - pt.osso.pos) @ pt.osso.rot
-                nivel = nivel + m.textura(loc, nrm[sel])
-        nivel = nivel + pontilhado[sel] * 0.55
+                r = m.textura(loc, nrm[sel])
+                if isinstance(r, tuple):
+                    r, mascara = r
+                nivel = nivel + r
+        nivel = nivel + pontilhado[sel] * 0.4
         ki = np.clip(np.round(nivel), 0, nc - 1).astype(int)
         cor = cores[ki]
+        if m.textura is not None and mascara is not None and m.cores_textura:
+            # pixels marcados pela textura (rachadura luminosa, runa) usam a rampa própria, sem luz
+            ct = np.array(m.cores_textura, dtype=F)
+            kt = np.clip(np.round((len(ct) - 1) * (0.55 + 0.45 * ndv[sel]) + pontilhado[sel] * 0.5), 0, len(ct) - 1).astype(int)
+            cor = np.where(mascara[:, None] > 0, ct[kt], cor)
         if m.brilho > 0:
             s = especular[sel] ** (12 + 60 * m.brilho) * sombra[sel]
             forte = s > 0.55
