@@ -31,6 +31,31 @@ Pedido do Tales em 13/10/2026: trocar a arte "vetorial" por **pixel art HD-2D**,
 - **Ícones novos (20×20):** ampulheta, cartas, alvo, nuvem, muralha, espadas, folha, fênix, moeda,
   bolsa, lanterna e porta.
 
+## Versão 4 (13/10/2026): bestiário e biomas
+
+**Arquétipos novos** (`src/flashcards/efeitos/bestas.ts`): corvo, morcego, aranha,
+escaravelho, goblin, esqueleto (variante mago), cavaleiro (tala, fíbula com lança,
+artrodese com escudo-torre), espectro (nervo, necromante, arquiteto), quimera
+(quimera, escafoide alada, basilisco), mão, leviatã, rei (carpo, consolidação),
+arconte, ent e harpia. São criaturas de fantasia estilizadas, sem anatomia
+desenhada; o nome do inimigo faz a ponte com a ortopedia.
+
+**Inimigos novos** (`motor/bestiario.ts`): 9 comuns, 6 elites e 8 chefes, cada um
+com nível, andar de estreia, cenário, habilidade (crítico, rajada, carga,
+barreira, regeneração, veneno, roubo, divisão, segunda fase) e recompensa. A
+Cripta passa a ter um chefe novo em cada ato até o andar 42; a Torre usa os
+novos chefes nos andares 10 a 90.
+
+**Biomas** (`efeitos/pintura.ts`): Forja da Osteossíntese, Coliseu do Acetábulo,
+Jardim das Fises, Laboratório Biomecânico, Caverna da Pseudoartrose, Templo do
+Escafoide, Passarela Suspensa, Cripta Óssea (catacumba), Ala de Treino e
+Biblioteca Ancestral (arquivo). Cada um tem fundo, meio, luzes (bloom), mesa com
+paleta própria e partícula ambiente (faíscas, pólen, esporos, poeira, vento, runas).
+O Salão do Dragão é o covil; a Torre dos Nervos é a torre.
+
+**Som** (`efeitos/sons.ts`): trilha e ambiente próprios por bioma, trilha de elite
+e famílias sonoras dos golpes (alado, osso, espectral, inseto, além das antigas).
+
 ## Motor de pixel art
 
 `src/flashcards/efeitos/pixel.ts`: classe `Grade` desenha formas numa grade pequena com rampas de 4 tons por material (gesso, pedra, aço, ouro, couro, escama…), pontilhado Bayer só na faixa de transição, contorno seletivo (selout) e contorno interno pela ordem das formas. O canvas é ampliado com `image-rendering: pixelated` em escala inteira (2× ou 3×), então cada pixel do sprite é um bloco nítido, sem filtro "pixelizante".
