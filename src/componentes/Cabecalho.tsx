@@ -12,9 +12,11 @@ import { MenuGeral } from './MenuGeral'
 // No celular (até 40rem) a barra de baixo já leva Início, Treinar, Cronograma
 // e Desempenho, então estes links somem daqui e o nome da marca volta ao
 // cabeçalho. Entre 40 e 56rem, Cronograma e Ranking saem para caber.
-// A Revisão continua no menu e na página inicial.
+// A Revisão continua no menu e na página inicial. Flashcards (beta público,
+// 13/10/2026) entra logo depois de Treinar, com o selo Beta.
 const LINKS: { destino: string; rotulo: string; icone: NomeIcone; ocultaCelular: boolean }[] = [
   { destino: '/treinar', rotulo: 'Treinar', icone: 'livro', ocultaCelular: false },
+  { destino: '/flashcards', rotulo: 'Flashcards', icone: 'raio', ocultaCelular: true },
   { destino: '/cronograma', rotulo: 'Cronograma', icone: 'calendario', ocultaCelular: true },
   { destino: '/dados', rotulo: 'Desempenho', icone: 'grafico', ocultaCelular: false },
   { destino: '/ranking', rotulo: 'Ranking', icone: 'trofeu', ocultaCelular: true },
@@ -52,6 +54,7 @@ export function Cabecalho({ caminho }: { caminho: string }) {
             >
               <span className="nav-link__icone"><Icone nome={link.icone} tamanho={17} /></span>
               {link.rotulo}
+              {link.destino === '/flashcards' && <span className="selo-beta">Beta</span>}
             </a>
           ))}
           {botaoMenu('nav-link nav-link--menu')}
@@ -86,6 +89,7 @@ export function Cabecalho({ caminho }: { caminho: string }) {
     <nav className="navegacao-mobile nao-imprime" aria-label="Navegação móvel">
       <a href={href('/')} aria-current={caminho === '/' ? 'page' : undefined}><Icone nome="mapa" /><span>Início</span></a>
       <a href={href('/treinar')} aria-current={caminho.startsWith('/treinar') ? 'page' : undefined}><Icone nome="filtro" /><span>Treinar</span></a>
+      <a className="navegacao-mobile__flashcards" href={href('/flashcards')} aria-current={caminho.startsWith('/flashcards') ? 'page' : undefined}><Icone nome="raio" /><span>Flashcards</span><i className="selo-beta selo-beta--ponto" aria-label="Beta" /></a>
       <a href={href('/cronograma')} aria-current={caminho.startsWith('/cronograma') || caminho.startsWith('/plano-de-estudo') ? 'page' : undefined}><Icone nome="calendario" /><span>Cronograma</span></a>
       <a className="navegacao-mobile__ranking" href={href('/ranking')} aria-current={caminho.startsWith('/ranking') || caminho.startsWith('/conquistas') ? 'page' : undefined}><Icone nome="trofeu" /><span>Ranking</span></a>
       <a href={href('/dados')} aria-current={caminho.startsWith('/dados') ? 'page' : undefined}><Icone nome="certo" /><span>Desempenho</span></a>

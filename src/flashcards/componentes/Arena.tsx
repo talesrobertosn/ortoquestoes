@@ -167,7 +167,7 @@ export function Arena({ modo = 'masmorra', abrirEstudo = false }: { modo?: Modo;
   }, [])
   if (!pronto) {
     return (
-      <ModalJogo titulo={NOME_MODO[modo]} aoPedirFechar={() => navegar('/flashcards')}>
+      <ModalJogo titulo={NOME_MODO[modo]} aoPedirFechar={() => navegar('/flashcards/entrada')}>
         <div className="fc-arena fc-carregando" role="status">
           <Cenario cena="campo" reduzido />
           <div className="fc-carregando__caixa">
@@ -854,7 +854,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
     definirModo('estudo')
   }, [])
 
-  const fechar = useCallback(() => { tocar('fechar'); navegar('/flashcards') }, [])
+  const fechar = useCallback(() => { tocar('fechar'); navegar('/flashcards/entrada') }, [])
   const pedirFechar = useCallback(() => {
     const p = partidaRef.current
     if (p.fase === 'fim' || (p.rodada === 0 && modo === 'batalha')) fechar()

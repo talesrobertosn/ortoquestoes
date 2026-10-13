@@ -1,5 +1,5 @@
 import { usarContextoLocal } from '../estado/usarContextoLocal'
-import { type CSSProperties, lazy, Suspense, useMemo, useState } from 'react'
+import { type CSSProperties, useMemo, useState } from 'react'
 import { usarIndice } from '../dados/usarIndice'
 import { contar, montarSessao } from '../dados/acervo'
 import { AREAS_TREINO, FILTROS_VAZIOS } from '../dados/tipos'
@@ -241,8 +241,9 @@ export function Inicio() {
             </div>
           )}
         </div>
+        {FLASHCARDS_NA_CAPA && conta && <QuadroFlashcards classe="inicio-flash--heroi" />}
         {conta ? (
-          <div className="inicio-heroi__painel" aria-label="Seu dia">
+          <div className={`inicio-heroi__painel${FLASHCARDS_NA_CAPA ? ' inicio-heroi__painel--com-flash' : ''}`} aria-label="Seu dia">
             <div className="inicio-kpi">
               <span className="inicio-kpi__icone"><Icone nome="fogo" tamanho={18} /></span>
               <span className="inicio-kpi__rotulo">Sequência</span>
@@ -263,6 +264,7 @@ export function Inicio() {
           <AmostraQuestao />
         )}
       </section>
+      {FLASHCARDS_NA_CAPA && <QuadroFlashcards classe={`inicio-flash--faixa${conta ? ' inicio-flash--so-celular' : ''}`} />}
       <ModalEntrar aberto={modalEntrarAberto} aoFechar={() => definirModalEntrarAberto(false)} />
 
       {carregando && <Carregando linhas={3} rotulo="Carregando o acervo" />}
@@ -479,11 +481,32 @@ export function Inicio() {
   )
 }
 
-/** Cartão da Cripta (só carrega o código do jogo quando a trava estiver ligada). */
-const CartaoCripta = lazy(() => import('../componentes/CartaoCripta').then(({ CartaoCripta }) => ({ default: CartaoCripta })))
+/**
+ * Flashcards na página inicial (beta público, 13/10/2026). No computador o
+ * quadro ocupa a coluna da direita do herói; no celular vira uma faixa logo
+ * abaixo. Fala só em flashcards: a Cripta (o modo jogo) é apresentada depois,
+ * na central (#/flashcards) e na entrada temática.
+ */
+function QuadroFlashcards({ classe }: { classe: string }) {
+  const id = classe.split(' ')[0] + '-titulo'
+  return (
+    <a className={`inicio-flash ${classe}`} href={href('/flashcards')} aria-labelledby={id}>
+      <picture className="inicio-flash__arte">
+        <source media="(max-width: 52rem)" srcSet={recurso('flashcards/promo/capa-retrato.png')} />
+        <img src={recurso('flashcards/promo/capa-larga.png')} alt="" width={520} height={330} loading="lazy" decoding="async" />
+      </picture>
+      <span className="inicio-flash__texto">
+        <span className="inicio-flash__selo">Flashcards · Beta público</span>
+        <strong id={id}>Seu próximo desafio começa com um flashcard.</strong>
+        <span className="inicio-flash__desc">Revise Ortopedia e Traumatologia com flashcards das provas reais, revisão espaçada e acompanhe sua evolução.</span>
+        <span className="botao botao--ouro inicio-flash__botao">Treinar flashcards <Icone nome="direita" tamanho={16} /></span>
+      </span>
+    </a>
+  )
+}
+
 
 /** Ao lado do banner do ranking, quando VITE_FLASHCARDS_CAPA=1; sem a trava, o banner fica sozinho como sempre. */
 function ParComCripta({ children }: { children: React.ReactNode }) {
-  if (!FLASHCARDS_NA_CAPA) return <>{children}</>
-  return <div className="inicio-par">{children}<Suspense fallback={null}><CartaoCripta /></Suspense></div>
+  return <>{children}</>
 }

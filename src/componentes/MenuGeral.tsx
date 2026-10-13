@@ -30,6 +30,7 @@ const GRUPOS: { titulo: string; itens: Item[] }[] = [
     itens: [
       { destino: '/treinar', rotulo: 'Treinar', texto: 'Monte uma sessão por tema, prova ou ano', icone: 'livro' },
       { destino: '/cronograma', rotulo: 'Cronograma', texto: 'O plano de cada dia até a sua prova', icone: 'rota', assinante: true, destaque: true },
+      { destino: '/flashcards', rotulo: 'Flashcards · Beta', texto: 'Revisão espaçada em flashcards e o modo jogo', icone: 'raio', destaque: true },
       { destino: '/revisao', rotulo: 'Revisão', texto: 'As questões que voltam hoje para fixar', icone: 'reiniciar' },
       { destino: '/erros', rotulo: 'Caderno de erros', texto: 'Tudo o que você errou, pronto para refazer', icone: 'alerta' },
       { destino: '/favoritas', rotulo: 'Favoritas', texto: 'As questões que você marcou com estrela', icone: 'estrela' },
