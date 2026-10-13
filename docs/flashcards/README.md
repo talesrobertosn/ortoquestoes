@@ -3,6 +3,7 @@
 Ponto de partida para quem for continuar este projeto: Claude, ChatGPT Codex ou outro agente.
 Leia este arquivo e depois os outros desta pasta, nesta ordem:
 
+0. [CONTINUAR.md](CONTINUAR.md): para retomar em outra conta (mensagem pronta para colar, estado e próximos passos).
 1. [DECISOES.md](DECISOES.md): o que o dono do projeto (Tales) já decidiu. É a fonte de verdade.
 2. [FORMATOS.md](FORMATOS.md): como escrever bons flashcards, com os tipos, as regras e exemplos reais do acervo.
 3. [BATALHA.md](BATALHA.md): o desenho de jogo do modo Batalha (vida, dano, poderes, andares, chefes).
