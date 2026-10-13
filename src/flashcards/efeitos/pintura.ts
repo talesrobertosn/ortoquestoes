@@ -1194,7 +1194,12 @@ export function criarAmbiente(canvas: HTMLCanvasElement, cena: Cena, clima: Clim
   const luzes = LUZES[cena]
   // chuva: gotas finas em diagonal; noite: vaga-lumes esverdeados
   const gotas = clima === 'chuva' ? Array.from({ length: 140 }, () => ({ x: Math.random(), y: Math.random(), v: 0.9 + Math.random() * 0.8, l: 0.02 + Math.random() * 0.025 })) : []
-  const vagalumes = clima === 'noite' && cena !== 'biblioteca' ? Array.from({ length: 18 }, (_, i) => ({ x: Math.random(), y: 0.35 + Math.random() * 0.6, f: Math.random() * 6, i })) : []
+  // na floresta (campo) sempre há vaga-lumes; de noite, em toda cena aberta
+  const floresta = cena === 'campo'
+  const vagalumes = (clima === 'noite' && cena !== 'biblioteca') || floresta ? Array.from({ length: floresta && clima !== 'noite' ? 12 : 18 }, (_, i) => ({ x: Math.random(), y: 0.35 + Math.random() * 0.6, f: Math.random() * 6, i })) : []
+  // Floresta das Fises: folhas que caem girando e borboletas que cruzam a clareira
+  const folhas = floresta && clima !== 'chuva' ? Array.from({ length: 9 }, () => ({ x: Math.random(), y: Math.random(), v: 0.5 + Math.random() * 0.6, f: Math.random() * 6, cor: ['#c08a3a', '#9a6428', '#6c9a44', '#d8a24a'][Math.floor(Math.random() * 4)] })) : []
+  const borboletas = floresta && clima !== 'chuva' && clima !== 'noite' ? Array.from({ length: 3 }, (_, i) => ({ x: Math.random(), y: 0.45 + Math.random() * 0.35, f: Math.random() * 6, dir: i % 2 ? 1 : -1, cor: ['#f2d16b', '#9fd6ff', '#f4a8c8'][i] })) : []
   let quadro = 0, ultimo = 0, t = 0
   const passo = (agora: number) => {
     quadro = requestAnimationFrame(passo)
@@ -1237,6 +1242,29 @@ export function criarAmbiente(canvas: HTMLCanvasElement, cena: Cena, clima: Clim
       c.globalAlpha = 1
     }
     c.globalCompositeOperation = 'source-over'
+    // folhas: um losango de 2 tons que gira (a largura oscila), caindo em zigue-zague
+    const px2 = Math.max(2, Math.round(2 * dpr))
+    for (const fo of folhas) {
+      fo.y += fo.v * dt * 0.05; fo.x += Math.sin(t * 1.3 + fo.f) * dt * 0.03
+      if (fo.y > 1.05) { fo.y = -0.05; fo.x = Math.random() }
+      const giro = Math.abs(Math.sin(t * 2.4 + fo.f))
+      const x = Math.round(fo.x * w), y = Math.round(fo.y * h)
+      c.fillStyle = fo.cor
+      c.fillRect(x - Math.round(px2 * giro), y, Math.max(1, Math.round(px2 * 2 * giro)), px2)
+      c.fillRect(x - Math.round(px2 * 0.5 * giro), y - px2, Math.max(1, Math.round(px2 * giro)), px2)
+      c.fillStyle = 'rgba(0,0,0,.25)'; c.fillRect(x - Math.round(px2 * giro), y + px2, Math.max(1, Math.round(px2 * 2 * giro)), Math.max(1, px2 >> 1))
+    }
+    // borboletas: corpo de 1 bloco e duas asas que batem (2 quadros), voo ondulado
+    for (const b of borboletas) {
+      b.x += b.dir * dt * 0.035; b.y += Math.sin(t * 2 + b.f) * dt * 0.04
+      if (b.x > 1.08) b.x = -0.08; if (b.x < -0.08) b.x = 1.08
+      const x = Math.round(b.x * w), y = Math.round(b.y * h)
+      const aberta = Math.sin(t * 16 + b.f) > 0
+      c.fillStyle = '#2a1a12'; c.fillRect(x, y - px2, px2, px2 * 2)
+      c.fillStyle = b.cor
+      if (aberta) { c.fillRect(x - px2 * 2, y - px2 * 2, px2 * 2, px2 * 2); c.fillRect(x + px2, y - px2 * 2, px2 * 2, px2 * 2); c.fillRect(x - px2, y, px2, px2); c.fillRect(x + px2, y, px2, px2) }
+      else { c.fillRect(x - px2, y - px2 * 2, px2, px2 * 2); c.fillRect(x + px2, y - px2 * 2, px2, px2 * 2) }
+    }
     if (gotas.length) {
       c.strokeStyle = 'rgba(200, 222, 255, .55)'; c.lineWidth = Math.max(1, dpr)
       c.beginPath()

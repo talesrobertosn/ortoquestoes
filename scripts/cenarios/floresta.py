@@ -84,6 +84,13 @@ def fundo(t: Tela, hz):
         blobs.append((bx, by, r))
     for i in range(14):
         blobs.append((cx + rng.uniform(-W * 0.2, W * 0.2), -H * rng.uniform(0.04, 0.09), H * rng.uniform(0.05, 0.08)))
+    cachos = []
+    for bx, by, r in blobs:
+        for j in range(7):
+            a = rng.uniform(0.15, np.pi - 0.15)  # só a metade de baixo, que aparece contra o céu
+            d = r * rng.uniform(0.82, 1.0)
+            cachos.append((bx + np.cos(a) * d * 1.1, by + np.sin(a) * d * 0.85, r * rng.uniform(0.18, 0.32)))
+    blobs = blobs + cachos
     for i, (bx, by, r) in enumerate(blobs):
         dd = np.hypot(x - bx, (y - by) * 1.2) / r
         borda = 0.35 * fbm(x / 2.6, y / 2.6, 2, 500 + i)
@@ -102,7 +109,7 @@ def fundo(t: Tela, hz):
 # ------------------------------------------------------------------ chão
 def chao(t: Tela, hz):
     W, H, x, y = t.W, t.H, t.x, t.y
-    m = y >= H * hz
+    m = y >= H * hz + 3 * (fbm(x / 7, 0.3, 3, 77) - 0.5)
     prof = np.clip((y - H * hz) / (H * (1 - hz)), 0, 1)  # 0 no horizonte, 1 embaixo
     esc = 0.35 + 0.65 * prof  # textura menor perto do horizonte
     X, Y = (x - W / 2) / esc, (y - H * hz) / esc
@@ -162,14 +169,16 @@ class Objetos:
         self.t = Tela(W, H)
 
     def tronco_gigante(self, cx, base, w, lado, s):
-        """Tronco que sai do alto do quadro e se abre em raízes que entram no chão."""
+        """Tronco que sai do alto do quadro e se abre em contrafortes e raízes que entram no chão."""
         t = self.t; x, y = t.x, t.y
         k = np.clip(y / base, 0, 1)
         meia = w / 2 * (0.9 + 0.1 * k) + w * 0.55 * suave(0.7, 1.0, k) ** 2
         centro = cx + lado * w * 0.1 * np.sin(k * 2.0)
         u = (x - centro) / meia
-        fundo_irreg = base - 6 + 12 * fbm(x / 5, 0, 2, s) * suave(0.2, 0.9, np.abs(u))
-        m = (np.abs(u) < 1) & (y <= np.where(np.abs(u) < 0.25, base, fundo_irreg))
+        # pé irregular: os contrafortes descem mais que os vales entre eles (sem linha reta na base)
+        lobo = np.cos(u * np.pi * 2.2 + s)
+        pe = base + w * 0.1 * lobo + w * 0.1 * (fbm(x / 5, 0.5, 2, s) - 0.5) - w * 0.04 * u * u
+        m = (np.abs(u) < 1) & (y <= pe)
         nz = np.sqrt(np.clip(1 - u * u, 0, 1))
         # o lado virado para a clareira recebe a luz quente; o de fora fica na sombra fria
         dentro = np.clip(-u * lado, 0, 1)
@@ -178,53 +187,96 @@ class Objetos:
         X = u * 7
         sulco = fbm(X + s, y / 70, 3, s) * 0.7 + fbm(X * 2.3 + s, y / 30, 2, s + 1) * 0.3
         luz = luz - 0.26 * suave(0.44, 0.36, sulco) + 0.1 * suave(0.6, 0.7, sulco)
-        # contrafortes na base: vales escuros entre as raízes
-        contra = np.cos(u * np.pi * 2.2 + s) * suave(0.78, 1.0, k)
-        luz = luz + 0.16 * contra
+        # contrafortes: vales escuros entre as raízes, cristas claras
+        luz = luz + 0.16 * lobo * suave(0.78, 1.0, k)
+        # escurece perto do chão (oclusão)
+        luz = luz - 0.12 * suave(6, 0, pe - y)
         t.tingir(m, np.clip(luz, 0, 0.999), CASCA, 0.7)
-        # musgo em faixas verticais do lado de fora, mais na base
-        mus = m & (u * lado > 0.25 - 0.5 * fbm(x / 6, y / 30, 3, s + 5) - 0.5 * suave(0.75, 1, k)) & (fbm(x / 5, y / 18, 3, s + 9) > 0.56)
-        t.tingir(mus, np.clip(0.1 + 0.42 * nz + 0.25 * dentro + 0.15 * fbm(x / 2, y / 2, 2, s + 3), 0, 0.999), MUSGO_TRONCO, 0.7)
-        # raízes: saem de dentro da base, correm rentes ao chão e afundam no musgo
+        # musgo em listras verticais longas, mais do lado de fora e na base (nada de manchas soltas)
+        listra = fbm(x / 3.2 + s, y / 48, 3, s + 9)
+        dens = 0.55 * np.clip(u * lado * 0.8 + 0.45, 0, 1) + 0.5 * suave(0.7, 1.0, k)
+        mus = m & (listra + 0.32 * dens + (t.bayer - 0.5) * 0.07 > 0.8)
+        t.tingir(mus, np.clip(0.08 + 0.4 * nz + 0.25 * dentro + 0.12 * fbm(x / 2, y / 6, 2, s + 3), 0, 0.999), MUSGO_TRONCO, 0.7)
+        # orla de musgo e terra no pé, que costura o tronco no chão
+        orla = m & (pe - y < 2.5 + 3 * fbm(x / 3, 0.2, 2, s + 4))
+        t.tingir(orla, np.clip(0.18 + 0.3 * nz + 0.2 * fbm(x / 1.5, y / 1.5, 2, s + 6), 0, 0.999), CHAO[1:6], 0.8)
+        # raízes: espalham em leque radial no plano do chão (como uma árvore velha de verdade),
+        # cada uma num ângulo, saindo de dentro do pé; ângulos diferentes evitam o aspecto de garra
         rng = np.random.default_rng(s)
-        for j in range(5):
-            sx = cx - lado * w * (0.1 + 0.16 * j)
-            sy = base - w * 0.12
-            ex = sx - lado * w * rng.uniform(0.7, 1.3) * (1 - 0.1 * j)
-            ey = base + t.H * rng.uniform(0.015, 0.05)
-            mx_, my_ = sx * 0.45 + ex * 0.55, base + 1
-            self.raiz([(sx, sy), (mx_, my_), (ex, ey)], w * (0.11 - 0.012 * j), 1.0, s + j * 7)
+        thetas = [-0.35, 0.2, 0.75, 1.3, 1.85, 2.5]
+        raio_pe = w / 2 + w * 0.55
+        for j, th in enumerate(thetas):
+            th = th + rng.uniform(-0.15, 0.15)
+            if lado > 0:
+                th = np.pi - th
+            sx = cx + np.cos(th) * raio_pe * 0.55
+            sy = base - w * 0.04 + np.sin(th) * w * 0.05
+            comp = w * rng.uniform(0.45, 0.95) * (1.0 if 0 < np.sin(th) else 0.6)
+            self.raiz(sx, sy, th, comp, w * rng.uniform(0.07, 0.095), s + j * 7, gap=rng.random() < 0.6)
+        # tufos de capim na frente do pé
+        for i in range(int(w * 0.9)):
+            px_ = cx - lado * w * 0.1 + (i / (w * 0.9) - 0.5) * w * 1.6
+            uu = (px_ - cx) / (w / 2 + w * 0.55)
+            if abs(uu) > 1:
+                continue
+            py_ = base + w * 0.075 * np.cos(uu * np.pi * 2.2 + s) + rng.uniform(-1, 2)
+            self.tufo(px_, py_, rng.uniform(2, 4.5), s + i)
 
-    def raiz(self, pontos, w0, w1, s):
+    def tufo(self, x0, y0, alt, s):
+        t = self.t
+        rng = np.random.default_rng(s)
+        for k in range(rng.integers(2, 5)):
+            dx = rng.uniform(-1.4, 1.4)
+            for h in range(int(alt)):
+                px_ = int(round(x0 + dx * h / alt)); py_ = int(round(y0 - h))
+                if 0 <= px_ < t.W and 0 <= py_ < t.H:
+                    v = 0.3 + 0.5 * (h / alt) + rng.uniform(-0.1, 0.1)
+                    t.rgb[py_, px_] = CHAO[int(np.clip(v, 0, 0.999) * len(CHAO))]
+                    t.a[py_, px_] = 1
+
+    def raiz(self, sx, sy, ang, comp, w0, s, gap=True):
+        """Raiz sinuosa no plano do chão: engrossa no começo, faz um arco e mergulha no musgo,
+        reaparece e afina. Sem pontas retas paralelas (que pareciam garras)."""
         t = self.t; x, y = t.x, t.y
-        P = np.array(pontos, F)
-        tt = np.linspace(0, 1, 60)
-        # curva de Bézier quadrática
-        bx = (1 - tt) ** 2 * P[0, 0] + 2 * (1 - tt) * tt * P[1, 0] + tt ** 2 * P[2, 0]
-        by = (1 - tt) ** 2 * P[0, 1] + 2 * (1 - tt) * tt * P[1, 1] + tt ** 2 * P[2, 1]
-        mel = np.full(x.shape, 9.0, F); lado = np.zeros(x.shape, F); par = np.zeros(x.shape, F)
-        x0, x1 = int(max(0, min(bx.min(), bx.max()) - w0 - 2)), int(min(t.W, max(bx.min(), bx.max()) + w0 + 2))
+        n = 56
+        tt = np.linspace(0, 1, n)
+        rng = np.random.default_rng(s)
+        curva = ang + 0.3 * np.sin(tt * np.pi * rng.uniform(1.2, 2.0) + rng.uniform(0, 6)) + rng.uniform(-0.2, 0.2) * tt
+        ds = comp / n
+        bx = sx + np.cumsum(np.cos(curva) * ds)
+        by = sy + np.cumsum(np.sin(curva) * ds * 0.42)  # o chão é visto de cima: encurta na vertical
+        r = w0 * (1 - tt) ** 0.8 + 1.0  # ponta rombuda: a raiz afunda, não espeta
+        arco = w0 * 0.3 * np.sin(np.pi * np.clip(tt / 0.5, 0, 1)) * (tt < 0.5)
+        by = by - arco
+        # trecho enterrado (some no musgo e reaparece mais fino)
+        visivel = (tt < 0.93) & ~(gap & (tt > 0.5) & (tt < 0.62))
+        x0, x1 = int(max(0, bx.min() - w0 - 2)), int(min(t.W, bx.max() + w0 + 2))
         y0, y1 = int(max(0, by.min() - w0 - 2)), int(min(t.H, by.max() + w0 + 2))
         if x1 <= x0 or y1 <= y0:
             return
-        sy, sx = slice(y0, y1), slice(x0, x1)
-        X, Y = x[sy, sx], y[sy, sx]
+        sy_, sx_ = slice(y0, y1), slice(x0, x1)
+        X, Y = x[sy_, sx_], y[sy_, sx_]
         M = np.full(X.shape, 9.0, F); L = np.zeros(X.shape, F); T = np.zeros(X.shape, F)
-        for i in range(len(tt)):
-            r = w0 + (w1 - w0) * tt[i]
-            q = np.hypot(X - bx[i], Y - by[i]) / r
+        for i in range(n):
+            if not visivel[i]:
+                continue
+            q = np.hypot(X - bx[i], (Y - by[i]) * 1.15) / r[i]
             b = q < M
-            M = np.where(b, q, M); L = np.where(b, (Y - by[i]) / r, L); T = np.where(b, tt[i], T)
-        m = (M < 1) & ~((T > 0.82) & (fbm(X / 2, Y / 2, 2, s + 5) < (T - 0.82) * 5))
+            M = np.where(b, q, M); L = np.where(b, (Y - by[i]) / r[i], L); T = np.where(b, tt[i], T)
+        m = M < 1
         nz = np.sqrt(np.clip(1 - M ** 2, 0, 1))
-        luz = 0.08 + 0.45 * nz + 0.22 * np.clip(-L, 0, 1) - 0.18 * (fbm(X / 4, Y / 2, 2, s) < 0.4)
+        luz = 0.1 + 0.42 * nz + 0.24 * np.clip(-L, 0, 1) - 0.14 * (fbm(X / 3, Y / 1.5, 2, s) < 0.38)
         sub = Tela(X.shape[1], X.shape[0])
-        sub.bayer = t.bayer[sy, sx]
-        sub.rgb = t.rgb[sy, sx].copy(); sub.a = t.a[sy, sx].copy()
-        sub.tingir(m, np.clip(luz, 0, 0.999), CASCA, 0.6)
-        mus = m & (L < -0.25) & (fbm(X / 4, Y / 4, 2, s + 1) > 0.5)
-        sub.tingir(mus, np.clip(0.2 + 0.5 * nz, 0, 0.999), MUSGO_TRONCO, 0.6)
-        t.rgb[sy, sx] = sub.rgb; t.a[sy, sx] = sub.a
+        sub.bayer = t.bayer[sy_, sx_]
+        sub.rgb = t.rgb[sy_, sx_].copy(); sub.a = t.a[sy_, sx_].copy()
+        sub.tingir(m, np.clip(luz, 0, 0.999), CASCA[1:], 0.6)
+        mus = m & (L < -0.2) & (fbm(X / 3, Y / 3, 2, s + 1) + 0.25 * T > 0.55)
+        sub.tingir(mus, np.clip(0.18 + 0.5 * nz, 0, 0.999), MUSGO_TRONCO, 0.6)
+        t.rgb[sy_, sx_] = sub.rgb; t.a[sy_, sx_] = sub.a
+        # musgo onde a raiz mergulha
+        for tm in ((0.5, 0.62, 0.93) if gap else (0.93,)):
+            i = int(tm * (n - 1))
+            self.tufo(bx[i], by[i] + 1, 2 + w0 * 0.25, s + int(tm * 100))
 
     def tronco_medio(self, cx, topo, base, w, s):
         t = self.t; x, y = t.x, t.y
