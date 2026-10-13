@@ -1,27 +1,37 @@
-# Como continuar a Cripta em outra conta
+# Como continuar a Cripta (para qualquer agente: Claude Code, Codex ou outro)
 
-Atualizado em 13/10/2026, no fim das Etapas 1 a 8 da direção criativa.
+Atualizado em 13/10/2026, 21h. Tudo o que foi feito está mesclado na base e publicado; não há PR aberto.
 
-## Mensagem para colar na outra conta
+## Mensagem para colar no agente
 
-> Leia docs/flashcards/CONTINUAR.md e docs/flashcards/PASSAGEM-ETAPA1.md na branch
-> claude/sharp-goodall-pl7kp7 do repositório talesrobertosn/ortoquestoes e continue de onde parou.
-> Trabalhe nessa mesma branch, com PR para claude/pdfs-questoes-tp64dr. Respeite todas as
-> restrições listadas nos arquivos.
+> Leia AGENTS.md, docs/flashcards/CONTINUAR.md e docs/flashcards/PASSAGEM-ETAPA1.md no repositório
+> talesrobertosn/ortoquestoes (base claude/pdfs-questoes-tp64dr) e continue a Cripta do Residente a partir
+> de "Próximos passos sugeridos". Trabalhe numa branch nova a partir da base e abra um PR para
+> claude/pdfs-questoes-tp64dr. Antes do PR, rode npm test, npx tsc --noEmit, npm run build e Playwright no
+> computador (1400×860), no celular em pé (390×844) e deitado (844×390). Respeite todas as restrições
+> listadas em CONTINUAR.md.
+
+Quem orienta o trabalho é o Tales, com o ChatGPT organizando os pedidos. Ao terminar uma etapa,
+escreva um resumo curto para o ChatGPT: o que foi feito, os testes, o que ficou fraco e o que falta. Use
+o modelo de [RESUMO-CHATGPT.md](RESUMO-CHATGPT.md).
 
 ## Onde as coisas estão
 
 | O quê | Onde |
 |---|---|
-| Branch de trabalho | `claude/sharp-goodall-pl7kp7` |
-| Base (publica no GitHub Pages) | `claude/pdfs-questoes-tp64dr` |
-| Etapa 1 integrada | PR #219 |
-| Etapas 2 a 8 | PR #220 (aberto; ver "Parou aqui" abaixo) |
+| Base (publica no GitHub Pages ao receber merge) | `claude/pdfs-questoes-tp64dr` |
+| Branch usada pelo Claude Code | `claude/sharp-goodall-pl7kp7` (recomeçada a partir da base depois de cada merge) |
+| Etapa 1 da direção criativa | PR #219 (mesclado) |
+| Etapas 2 a 8 e dificuldades | PR #220 (mesclado) |
+| Este guia atualizado | PR #221 (mesclado) |
 | Relatório da Etapa 1 | https://claude.ai/artifact/USHFDMekPZmT5ptqcsVd1y |
 | Relatório das Etapas 2 a 8 | https://claude.ai/artifact/FZJtaBEu91gh6qbxLs5T9M |
-| Passagem detalhada (o que foi feito e o que falta, etapa por etapa) | [PASSAGEM-ETAPA1.md](PASSAGEM-ETAPA1.md) |
+| Último resumo para o ChatGPT | [RESUMO-CHATGPT.md](RESUMO-CHATGPT.md) |
+| Passagem detalhada (etapa por etapa) | [PASSAGEM-ETAPA1.md](PASSAGEM-ETAPA1.md) |
 | Arte: como fazer cenário e personagem | [ARTE.md](ARTE.md) |
 | Histórico das auditorias de arte | [AUDITORIA-ARTE.md](AUDITORIA-ARTE.md) |
+
+**Os relatórios em claude.ai são privados:** só o Tales abre. Os detalhes técnicos estão todos nestes arquivos do repositório.
 
 ## O que já foi feito (resumo)
 
@@ -73,6 +83,16 @@ Atualizado em 13/10/2026, no fim das Etapas 1 a 8 da direção criativa.
 3. **Variantes escarlate e ancestral do Dragão**: acrescente `VARIANTES` em `scripts/sprites/dragao.py`.
 4. **Escudo do herói no estágio 6**: reduzir (`PROP[6]['escudo']` em `scripts/sprites/heroi.py`).
 5. **Emenda da faixa "sala"**: revisar com `python3 scripts/musica/conferir.py`.
+
+## Ainda não feito do pedido de direção criativa
+
+- **Cenários pintados:** faltam deserto dos ossos, pântano da necrose, observatório, jardim dos curandeiros, fortaleza das placas e trono do dragão.
+  - Já pintados: floresta, masmorra, covil e biblioteca.
+- **Personagens jogáveis:** aparências alternativas (Arcanista, Caçadora, Paladino etc.), sem vantagem no ranking.
+- **Equipamentos visíveis:** capacete, armadura, escudo e arma que mudem o sprite do herói.
+- **Torre do Título:** marcos nos andares 10, 25, 50, 75 e 100, mapa da subida e histórico.
+- **Sons:** revisão completa dos efeitos (acerto, erro, crítico, entrada de chefe, sala secreta) e transição suave entre músicas.
+- **Ranking por dificuldade no servidor:** hoje o Fácil não abre corrida; ao ligar o ranking, enviar o nível em `iniciar_corrida_flashcards`.
 
 ## Como trabalhar
 

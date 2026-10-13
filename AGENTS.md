@@ -59,3 +59,9 @@ desenho da Batalha, arquitetura, roteiro e o protótipo em `prototipos/flashcard
 Toda migração nova também vai para `supabase/colar-no-painel/` e, ao entregar, o SQL completo é
 mandado **como texto na conversa**, num bloco de código, para copiar direto no SQL Editor (o dono
 não consegue copiar bem a partir do arquivo).
+
+## Cripta do Residente (jogo de flashcards, rota escondida #/flashcards)
+
+Para continuar o jogo, leia primeiro [docs/flashcards/CONTINUAR.md](docs/flashcards/CONTINUAR.md):
+estado atual, próximos passos, restrições, como testar (Playwright em três tamanhos) e como publicar.
+O último resumo do trabalho está em [docs/flashcards/RESUMO-CHATGPT.md](docs/flashcards/RESUMO-CHATGPT.md).
