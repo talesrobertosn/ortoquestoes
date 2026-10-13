@@ -1,0 +1,2144 @@
+{
+ "versao": 4,
+ "area": "osteometabolicas",
+ "flashcards": [
+  {
+   "id": "fc-osteometabolicas-0001-q",
+   "questao": "osteometabolicas-0001",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Tuberculose osteoarticular",
+   "subtemas": [
+    "Tuberculose osteoarticular"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Na tuberculose óssea, o segmento da coluna mais frequentemente acometido é o:",
+   "resposta": "corpo vertebral na transição toracolombar",
+   "explicacao": "**Corpo vertebral na transição toracolombar.** Na tuberculose da coluna (doença de Pott), o segmento mais acometido é a **transição toracolombar**, e a lesão começa no **corpo vertebral**, na porção anterior junto ao platô. O arco posterior é raramente acometido.",
+   "opcoes": [
+    "arco posterior na coluna torácica alta",
+    "corpo vertebral na coluna torácica alta",
+    "arco posterior na transição toracolombar",
+    "corpo vertebral na transição toracolombar"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "d17d74fd1f5c"
+  },
+  {
+   "id": "fc-osteometabolicas-0002-q",
+   "questao": "osteometabolicas-0002",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Osteoporose: diagnóstico",
+   "subtemas": [
+    "Osteoporose: diagnóstico"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na osteoporose senil a atividade osteoclástica encontra-se:",
+   "resposta": "diminuída e a calciúria normal",
+   "explicacao": "**Diminuída, com calciúria normal.** A osteoporose senil é de baixa remodelação, e sem reabsorção acelerada o cálcio urinário não sobe.",
+   "opcoes": [
+    "diminuída e a calciúria normal",
+    "aumentada e a calciúria normal",
+    "diminuída e a calciúria aumentada",
+    "aumentada e a calciúria aumentada"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "5a8b75696ec6"
+  },
+  {
+   "id": "fc-osteometabolicas-0003-q",
+   "questao": "osteometabolicas-0003",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Outros temas osteometabólicos",
+   "subtemas": [
+    "Outros temas osteometabólicos"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "comum",
+   "dificuldade": 2,
+   "frente": "No escorbuto, os achados radiográficos ocorrem mais frequentemente nos ossos:",
+   "resposta": "longos e notam-se áreas de calcificação metafisária",
+   "explicacao": "**Ossos longos, calcificação metafisária.** A cartilagem calcificada se acumula na metáfise sem ser substituída por osso.",
+   "opcoes": [
+    "chatos e notam-se áreas de calcificação epifisária",
+    "longos e notam-se áreas de calcificação epifisária",
+    "chatos e notam-se área de calcificação metafisária",
+    "longos e notam-se áreas de calcificação metafisária"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "f5e4d2eacf22"
+  },
+  {
+   "id": "fc-osteometabolicas-0004-q",
+   "questao": "osteometabolicas-0004",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Osteoporose: diagnóstico",
+   "subtemas": [
+    "Osteoporose: diagnóstico"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na osteoporose, o mecanismo de ação dos bifosfonados é de:",
+   "resposta": "antirreabsorção do tecido ósseo, por inibição da atividade osteoclástica",
+   "explicacao": "**Antirreabsorção, por inibição do osteoclasto.** O bisfosfonato freia a reabsorção; não estimula a formação.",
+   "opcoes": [
+    "estimular a formação óssea, por inibição da atividade osteoclástica",
+    "estimular a formação óssea, por estimulação da atividade osteoblástica",
+    "antirreabsorção do tecido ósseo, por inibição da atividade osteoclástica",
+    "antirreabsorção do tecido ósseo, por estimulação da atividade osteoblástica"
+   ],
+   "certa": 2,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "d036e78b4318"
+  },
+  {
+   "id": "fc-osteometabolicas-0005-q",
+   "questao": "osteometabolicas-0005",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Hiperparatireoidismo e osteodistrofia renal",
+   "subtemas": [
+    "Hiperparatireoidismo e osteodistrofia renal"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "rara",
+   "dificuldade": 2,
+   "frente": "Na osteodistrofia renal, encontram-se níveis séricos de fosfato:",
+   "resposta": "elevados e PTH elevados",
+   "explicacao": "**Elevados e PTH elevados.** Na osteodistrofia renal, o rim não excreta o fosfato, que fica **elevado**. O fosfato alto, o cálcio baixo e a falta de calcitriol estimulam a paratireoide, e o **PTH fica elevado** (hiperparatireoidismo secundário).",
+   "opcoes": [
+    "diminuídos e PTH normais",
+    "diminuídos e PTH elevados",
+    "elevados e PTH normais",
+    "elevados e PTH elevados"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "2ddb1ae129b6"
+  },
+  {
+   "id": "fc-osteometabolicas-0006-q",
+   "questao": "osteometabolicas-0006",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Tuberculose osteoarticular",
+   "subtemas": [
+    "Tuberculose osteoarticular"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "A infecção por tuberculose na coluna vertebral localiza-se mais frequentemente no",
+   "resposta": "terço anterior do corpo vertebral",
+   "explicacao": "**Terço anterior do corpo vertebral.** A tuberculose da coluna começa mais frequentemente no **terço anterior** do corpo vertebral, junto à placa terminal (forma paradiscal), e se espalha sob o ligamento longitudinal anterior.",
+   "opcoes": [
+    "arco vertebral",
+    "disco intervertebral",
+    "terço médio do corpo vertebral",
+    "terço anterior do corpo vertebral"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "97add3162f1c"
+  },
+  {
+   "id": "fc-osteometabolicas-0007-q",
+   "questao": "osteometabolicas-0007",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Osteoporose: diagnóstico",
+   "subtemas": [
+    "Osteoporose: diagnóstico",
+    "Osteoporose: tratamento"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No tratamento da osteoporose, o uso dos bifosfonados",
+   "resposta": "inibe a ação dos osteoclastos",
+   "explicacao": "**Inibe a ação dos osteoclastos.** O osteoclasto engole a droga depositada no osso e entra em apoptose.",
+   "opcoes": [
+    "inibe a ação dos osteoclastos",
+    "inibe a ação dos osteoblastos",
+    "estimula a ação dos osteoclastos",
+    "estimula a ação dos osteoblastos"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "4ff1da753563"
+  },
+  {
+   "id": "fc-osteometabolicas-0008-q",
+   "questao": "osteometabolicas-0008",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Espondiloartrites e outras artrites",
+   "subtemas": [
+    "Espondiloartrites e outras artrites"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na artrite reumatoide, o paciente que está limitado, a exercutar pouca atividade diária é caracterizado, segundo o escore de capacidade funcional da AAR, como classe",
+   "resposta": "III",
+   "explicacao": "**Classe III.** O paciente que mantém o autocuidado, mas está **limitado** e realiza pouca atividade profissional e de lazer, corresponde à classe III da classificação funcional do Colégio Americano de Reumatologia.",
+   "opcoes": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "41230cc1b697"
+  },
+  {
+   "id": "fc-osteometabolicas-0009-q",
+   "questao": "osteometabolicas-0009",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Osteoporose: diagnóstico",
+   "subtemas": [
+    "Osteoporose: diagnóstico"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na osteoporose pós menopausa, a diminuição abrupta da massa óssea tem relação com níveis decrescentes de",
+   "resposta": "estrogênio",
+   "explicacao": "**Estrogênio.** A queda dos níveis de estrogênio na menopausa remove a inibição sobre os osteoclastos, eleva o RANKL e reduz a osteoprotegerina, acelerando a reabsorção e produzindo a perda abrupta de massa óssea, predominantemente trabecular.",
+   "opcoes": [
+    "tiroxina",
+    "estrogênio",
+    "calcitonina",
+    "progesterona"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "daec1b420226"
+  },
+  {
+   "id": "fc-osteometabolicas-0010-q",
+   "questao": "osteometabolicas-0010",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Espondiloartrites e outras artrites",
+   "subtemas": [
+    "Espondiloartrites e outras artrites"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A artralgia associada à picada do carrapato geralmente é observada no",
+   "resposta": "joelho",
+   "explicacao": "**Joelho.** A artrite associada à picada do carrapato (doença de Lyme) é tipicamente uma mono ou oligoartrite de grandes articulações, e o **joelho** é, de longe, a articulação mais acometida, com grandes derrames e pouca dor.",
+   "opcoes": [
+    "ombro",
+    "joelho",
+    "cotovelo",
+    "tornozelo"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "0d4a3c788099"
+  },
+  {
+   "id": "fc-osteometabolicas-0011-q",
+   "questao": "osteometabolicas-0011",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Raquitismo e osteomalácia",
+   "subtemas": [
+    "Raquitismo e osteomalácia"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "rara",
+   "dificuldade": 2,
+   "frente": "O raquitismo induzido por medicamentos está relacionado principalmente ao uso de",
+   "resposta": "anticonvulsivantes",
+   "explicacao": "**Anticonvulsivantes.** O raquitismo induzido por medicamentos está relacionado principalmente aos **anticonvulsivantes** (fenitoína, fenobarbital, carbamazepina), que induzem as enzimas do fígado e aceleram a degradação da vitamina D em formas inativas.",
+   "opcoes": [
+    "hipoglicemiantes",
+    "anticonvulsivantes",
+    "hormônio tireoidiano",
+    "complexo vitamínico"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "663ff1ca2a06"
+  },
+  {
+   "id": "fc-osteometabolicas-0012-q",
+   "questao": "osteometabolicas-0012",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Espondiloartrites e outras artrites",
+   "subtemas": [
+    "Espondiloartrites e outras artrites"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A síndrome de REITER caracteriza-se por conjuntivite, uretrite e sinovite",
+   "resposta": "assimétrica no homem",
+   "explicacao": "**Assimétrica no homem.** A síndrome de Reiter (artrite reativa) se caracteriza por artrite **oligoarticular e assimétrica**, sobretudo nos membros inferiores, e acomete principalmente **homens jovens**.",
+   "opcoes": [
+    "simétrica na mulher",
+    "simétrica no homem",
+    "assimétrica na mulher",
+    "assimétrica no homem"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "5db379cb6296"
+  },
+  {
+   "id": "fc-osteometabolicas-0013-q",
+   "questao": "osteometabolicas-0013",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Osteoporose: tratamento",
+   "subtemas": [
+    "Osteoporose: tratamento"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "O tratamento cirúrgico da fratura da coluna vertebral secundária à osteoporose está indicado na presença de",
+   "resposta": "dor refratária ao tratamento conservador",
+   "explicacao": "**Dor refratária ao tratamento conservador.** Na fratura vertebral osteoporótica, a principal indicação de tratamento cirúrgico (geralmente vertebroplastia ou cifoplastia) é a **dor refratária** ao tratamento conservador, numa fratura ainda não consolidada. O déficit neurológico e a instabilidade indicam descompressão e estabilização.",
+   "opcoes": [
+    "cifose torácica",
+    "fragmento ósseo intracanal",
+    "incapacidade de utilização da OTLS",
+    "dor refratária ao tratamento conservador"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "79b16959b05b"
+  },
+  {
+   "id": "fc-osteometabolicas-0015-q",
+   "questao": "osteometabolicas-0015",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Espondiloartrites e outras artrites",
+   "subtemas": [
+    "Espondiloartrites e outras artrites"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na febre reumática aguda da criança, a manifestação clínica mais rara é",
+   "resposta": "o eritema",
+   "explicacao": "**O eritema.** É muito específico, mas aparece numa pequena minoria dos pacientes.",
+   "opcoes": [
+    "a artrite",
+    "a coreia",
+    "a cardite",
+    "o eritema"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "09ab32f1b730"
+  },
+  {
+   "id": "fc-osteometabolicas-0016-q",
+   "questao": "osteometabolicas-0016",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Tuberculose osteoarticular",
+   "subtemas": [
+    "Tuberculose osteoarticular"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Na tuberculose da coluna, a disseminação poupa",
+   "resposta": "os discos intervertebrais",
+   "explicacao": "**Os discos intervertebrais.** São avasculares e resistem às enzimas do bacilo, por isso ficam preservados no início.",
+   "opcoes": [
+    "o canal medular",
+    "os corpos vertebrais",
+    "os discos intervertebrais",
+    "os ligamentos longitudinais"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "98017e0eb926"
+  },
+  {
+   "id": "fc-osteometabolicas-0017-q",
+   "questao": "osteometabolicas-0017",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Tuberculose osteoarticular",
+   "subtemas": [
+    "Tuberculose osteoarticular"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Na tuberculose, o acometimento articular é mais frequente no",
+   "resposta": "joelho e no quadril",
+   "explicacao": "**Joelho e no quadril.** Fora da coluna, a tuberculose articular acomete com mais frequência as grandes articulações de carga, o **quadril** e o **joelho**, geralmente de forma monoarticular e crônica.",
+   "opcoes": [
+    "joelho e no quadril",
+    "ombro e no quadril",
+    "tornozelo e no joelho",
+    "tornozelo e no ombro"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "b7d1cdecd317"
+  },
+  {
+   "id": "fc-osteometabolicas-0018-q",
+   "questao": "osteometabolicas-0018",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Outros temas osteometabólicos",
+   "subtemas": [
+    "Outros temas osteometabólicos"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "comum",
+   "dificuldade": 2,
+   "frente": "Na anemia falciforme ocorre hiperplasia eritroide da medula hematopoiética que leva à rarefação óssea mais frequentemente",
+   "resposta": "na coluna",
+   "explicacao": "**Na coluna.** A medula vermelha persiste no corpo vertebral, onde surgem a rarefação e a vértebra em H.",
+   "opcoes": [
+    "na tíbia",
+    "na pelve",
+    "na coluna",
+    "no esterno"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "dad412bab58f"
+  },
+  {
+   "id": "fc-osteometabolicas-0019-q",
+   "questao": "osteometabolicas-0019",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Osteoporose: diagnóstico",
+   "subtemas": [
+    "Osteoporose: diagnóstico"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O paciente portador de insuficiência renal crônica com osteoporose apresenta maior incidência de fratura",
+   "resposta": "no colo do fêmur",
+   "explicacao": "**No colo do fêmur.** No renal crônico, o hiperparatireoidismo secundário reabsorve preferencialmente o **osso cortical**, que sustenta o colo do fêmur, e o risco de quedas é alto: a fratura do colo do fêmur é a de maior incidência.",
+   "opcoes": [
+    "no colo do fêmur",
+    "na coluna lombar",
+    "no colo do úmero",
+    "na extremidade distal do rádio"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "0e0b640e4e8b"
+  },
+  {
+   "id": "fc-osteometabolicas-0020-q",
+   "questao": "osteometabolicas-0020",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Raquitismo e osteomalácia",
+   "subtemas": [
+    "Raquitismo e osteomalácia",
+    "Hiperparatireoidismo e osteodistrofia renal"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "rara",
+   "dificuldade": 2,
+   "frente": "No hiperparatireoidismo primário ocorre",
+   "resposta": "hipercalcemia e hipofosfatemia",
+   "explicacao": "**Hipercalcemia e hipofosfatemia.** No hiperparatireoidismo primário, o excesso de PTH aumenta a reabsorção óssea e a reabsorção renal de cálcio (**hipercalcemia**) e aumenta a eliminação renal de fosfato (**hipofosfatemia**).",
+   "opcoes": [
+    "hipocalcemia e hipofosfatemia",
+    "hipercalcemia e hipofosfatemia",
+    "hipocalcemia e hiperfosfatemia",
+    "hipercalcemia e hiperfosfatemia"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "748933a7400b"
+  },
+  {
+   "id": "fc-osteometabolicas-0021-q",
+   "questao": "osteometabolicas-0021",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Osteoporose: diagnóstico",
+   "subtemas": [
+    "Osteoporose: diagnóstico",
+    "Osteoporose: tratamento"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "No tratamento da osteoporose, os efeitos da teriparatida estão relacionados à ação",
+   "resposta": "anabólica e estimulação da atividade osteoblástica",
+   "explicacao": "**Anabólica, com estímulo do osteoblasto.** O PTH em pulsos favorece a formação sobre a reabsorção.",
+   "opcoes": [
+    "anabólica e inibição da atividade osteoclástica",
+    "anabólica e estimulação da atividade osteoblástica",
+    "antirreabsortiva e inibição da atividade osteoclástica",
+    "antirreabsortiva e estimulação da atividade osteoblástica"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2022,
+   "fonte": "9372293fc924"
+  },
+  {
+   "id": "fc-osteometabolicas-0025-q",
+   "questao": "osteometabolicas-0025",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Osteoporose: diagnóstico",
+   "subtemas": [
+    "Osteoporose: diagnóstico",
+    "Hiperparatireoidismo e osteodistrofia renal"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A osteoporose senil apresenta algumas características diferentes da osteoporose pós menopausa, como",
+   "resposta": "paratormônio aumentado",
+   "explicacao": "**Paratormônio aumentado.** Na osteoporose senil, a menor produção e ativação da vitamina D reduzem a absorção de cálcio, e o organismo responde com **hiperparatireoidismo secundário**, com PTH elevado, ao contrário da pós-menopausa.",
+   "opcoes": [
+    "aumento da calciúria",
+    "paratormônio aumentado",
+    "maior atividade de osteoclastos",
+    "predileção por indivíduos do gênero masculino"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "e635f40a0f0a"
+  },
+  {
+   "id": "fc-osteometabolicas-0029-q",
+   "questao": "osteometabolicas-0029",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Espondiloartrites e outras artrites",
+   "subtemas": [
+    "Espondiloartrites e outras artrites"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na forma poliarticular da artrite idiopática juvenil, crianças com fator reumatoide positivo apresentam mais frequentemente acometimento",
+   "resposta": "simétrico de pequenas articulações",
+   "explicacao": "**Simétrico de pequenas articulações.** É o mesmo padrão da artrite reumatoide do adulto. **Os outros subtipos** ajudam a eliminar alternativas. A **oligoarticular** tem até quatro articulações, grandes, sobretudo o joelho, em meninas pequenas, com **FAN positivo** e risco de **uveíte silenciosa**. A **relacionada à entesite** é de meninos maiores, com HLA-B27 e membros inferiores. A **sistêmica** traz febre, rash e serosite.",
+   "opcoes": [
+    "simétrico de grandes articulações",
+    "simétrico de pequenas articulações",
+    "assimétrico de grandes articulações",
+    "assimétrico de pequenas articulações"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "22c49a1a056e"
+  },
+  {
+   "id": "fc-osteometabolicas-0030-q",
+   "questao": "osteometabolicas-0030",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Tuberculose osteoarticular",
+   "subtemas": [
+    "Tuberculose osteoarticular"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "A tuberculose óssea no cotovelo acomete mais frequentemente",
+   "resposta": "o olécrano",
+   "explicacao": "**O olécrano.** Na tuberculose do cotovelo, o osso mais frequentemente acometido é o **olécrano**, na ulna proximal, a partir do qual a infecção invade a articulação.",
+   "opcoes": [
+    "a tróclea",
+    "o capítulo",
+    "o olécrano",
+    "a cabeça do rádio"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "c742a0a3d209"
+  },
+  {
+   "id": "fc-osteometabolicas-0031-q",
+   "questao": "osteometabolicas-0031",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Raquitismo e osteomalácia",
+   "subtemas": [
+    "Raquitismo e osteomalácia",
+    "Hiperparatireoidismo e osteodistrofia renal"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "rara",
+   "dificuldade": 2,
+   "frente": "No raquitismo por osteodistrofia renal, a análise bioquímica demonstra",
+   "resposta": "fosfato aumentado e PTH aumentado",
+   "explicacao": "**Fosfato aumentado e PTH aumentado.** No raquitismo por osteodistrofia renal, o rim não excreta o fosfato, que fica **aumentado**. O fosfato alto, o cálcio baixo e a falta de calcitriol estimulam a paratireoide, e o **PTH fica aumentado** (hiperparatireoidismo secundário).",
+   "opcoes": [
+    "fosfato diminuído e PTH diminuído",
+    "fosfato diminuído e PTH aumentado",
+    "fosfato aumentado e PTH diminuído",
+    "fosfato aumentado e PTH aumentado"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "20bbf95996ac"
+  },
+  {
+   "id": "fc-osteometabolicas-0032-q",
+   "questao": "osteometabolicas-0032",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Tuberculose osteoarticular",
+   "subtemas": [
+    "Tuberculose osteoarticular"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Na doença de POTT, a vértebra é inicialmente acometida com maior frequência",
+   "resposta": "na porção anterior do corpo",
+   "explicacao": "**Na porção anterior do corpo.** Na doença de Pott, a vértebra é acometida inicialmente, com maior frequência, na **porção anterior do corpo vertebral**, junto ao platô (forma paradiscal), território das artérias segmentares. O acometimento do arco posterior é raro.",
+   "opcoes": [
+    "na lâmina",
+    "no pedículo",
+    "na porção anterior do corpo",
+    "na porção posterior do corpo"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "d577d00ecdd3"
+  },
+  {
+   "id": "fc-osteometabolicas-0033-q",
+   "questao": "osteometabolicas-0033",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Espondiloartrites e outras artrites",
+   "subtemas": [
+    "Espondiloartrites e outras artrites"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na artroplastia total do cotovelo semiconstrita, o melhor resultado é observado nos pacientes com",
+   "resposta": "artrite reumatoide",
+   "explicacao": "**Artrite reumatoide.** Baixa demanda funcional e grande ganho em dor dão os melhores resultados e a maior sobrevida do implante.",
+   "opcoes": [
+    "artrite reumatoide",
+    "doenças neurológicas",
+    "sequela pós-traumática",
+    "idade abaixo de 50 anos"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2023,
+   "fonte": "fab453e760d8"
+  },
+  {
+   "id": "fc-osteometabolicas-0037-q",
+   "questao": "osteometabolicas-0037",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Osteoporose: diagnóstico",
+   "subtemas": [
+    "Osteoporose: diagnóstico",
+    "Osteoporose: tratamento"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O Romosozumabe uma droga utilizada no tratamento da osteoporose tem como mecanismo de ação?",
+   "resposta": "Neutralizar os efeitos da esclerostina",
+   "explicacao": "**Neutralizar os efeitos da esclerostina.** O romosozumabe é um anticorpo monoclonal que se liga à **esclerostina** e a neutraliza. Sem esse freio da via Wnt, a formação óssea aumenta e a reabsorção diminui, um efeito duplo.",
+   "opcoes": [
+    "Estimular a remodelação óssea",
+    "Inibir a ação dos osteoclastos",
+    "Aumentar a ação dos osteoblastos",
+    "Neutralizar os efeitos da esclerostina"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "05e105ca79a5"
+  },
+  {
+   "id": "fc-osteometabolicas-0038-q",
+   "questao": "osteometabolicas-0038",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Tuberculose osteoarticular",
+   "subtemas": [
+    "Tuberculose osteoarticular"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "A tuberculose osteoarticular no esqueleto apendicular acomete mais frequentemente",
+   "resposta": "quadril e joelho",
+   "explicacao": "**Quadril e joelho.** No esqueleto apendicular, a tuberculose osteoarticular acomete mais frequentemente as grandes articulações de carga, **quadril e joelho**, ricas em osso esponjoso bem vascularizado.",
+   "opcoes": [
+    "ombro e cotovelo",
+    "punho e mão",
+    "quadril e joelho",
+    "tornozelo e pé"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "fd0c83d768c4"
+  },
+  {
+   "id": "fc-osteometabolicas-0039-q",
+   "questao": "osteometabolicas-0039",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Osteoporose: tratamento",
+   "subtemas": [
+    "Osteoporose: tratamento"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "No tratamento da osteoporose, são medicamentos cuja ação principal é serem antirreabsortivos, o",
+   "resposta": "ácido zoledrônico e o denosumabe",
+   "explicacao": "**Ácido zoledrônico e denosumabe.** Ambos têm ação puramente antirreabsortiva. **Diferenças práticas.** O zoledrônico é anual, pode dar reação de fase aguda (febre e mialgia) na primeira dose e exige ajuste à função renal. O denosumabe pode ser usado com função renal reduzida, mas **não pode ser suspenso sem transição**, pelo rebote com fraturas vertebrais múltiplas.",
+   "opcoes": [
+    "risedronato e a teriparatida",
+    "ibandronato e o romosozumabe",
+    "denosumabe e o romosozumabe",
+    "ácido zoledrônico e o denosumabe"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "030c3c781a86"
+  },
+  {
+   "id": "fc-osteometabolicas-0040-q",
+   "questao": "osteometabolicas-0040",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Tuberculose osteoarticular",
+   "subtemas": [
+    "Tuberculose osteoarticular"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Em pacientes com tuberculose óssea, o envolvimento pulmonar acontece em aproximadamente",
+   "resposta": "50% dos casos",
+   "explicacao": "**50% dos casos.** Em pacientes com tuberculose óssea, o envolvimento pulmonar (atual ou antigo) aparece em cerca de **metade** dos casos. Na outra metade, a radiografia de tórax é normal, e por isso um tórax limpo não exclui a tuberculose osteoarticular.",
+   "opcoes": [
+    "10% dos casos",
+    "30% dos casos",
+    "50% dos casos",
+    "70% dos casos"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2024,
+   "fonte": "e766784aba05"
+  },
+  {
+   "id": "fc-osteometabolicas-0041-q",
+   "questao": "osteometabolicas-0041",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Osteoporose: tratamento",
+   "subtemas": [
+    "Osteoporose: tratamento"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "No tratamento da osteoporose, o medicamento que aumenta a formação de massa óssea, e o seu tempo máximo de uso recomendado é",
+   "resposta": "a teriparatida, 24 meses",
+   "explicacao": "**A teriparatida, 24 meses.** A **teriparatida** (fragmento do PTH em doses intermitentes) é um anabólico que **aumenta a formação** óssea. O tempo máximo recomendado de uso é de **24 meses**, seguido de um antirreabsortivo para manter o ganho.",
+   "opcoes": [
+    "a teriparatida, 12 meses",
+    "a teriparatida, 24 meses",
+    "ácido zoledrônico, 36 meses",
+    "ácido zoledrônico, 60 meses"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2024,
+   "fonte": "a1d841fc7130"
+  },
+  {
+   "id": "fc-osteometabolicas-0043-q",
+   "questao": "osteometabolicas-0043",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Osteoporose: diagnóstico",
+   "subtemas": [
+    "Osteoporose: diagnóstico"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A osteoporose transitória apresenta na ressonância magnética um edema",
+   "resposta": "acentuado pela técnica de supressão de gordura",
+   "explicacao": "**Acentuado pela técnica de supressão de gordura.** É ela que evidencia o edema, ao apagar o sinal da gordura medular.",
+   "opcoes": [
+    "acentuado pela técnica de supressão de gordura",
+    "com alto sinal em T1",
+    "que não ultrapassa região subcapital",
+    "focal em região de carga da cabeça femoral"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "CET-PR",
+   "ano": null,
+   "fonte": "0c2f00318c74"
+  },
+  {
+   "id": "fc-osteometabolicas-0044-q",
+   "questao": "osteometabolicas-0044",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Outros temas osteometabólicos",
+   "subtemas": [
+    "Outros temas osteometabólicos"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "comum",
+   "dificuldade": 2,
+   "frente": "Na composição do esqueleto as únicas células capazes de realizarem a reabsorção óssea são",
+   "resposta": "dos osteoclastos",
+   "explicacao": "**Os osteoclastos.** Os **osteoclastos** são as únicas células capazes de reabsorver osso. Eles se prendem à superfície óssea, acidificam o compartimento para dissolver o mineral e liberam enzimas (catepsina K) que digerem o colágeno, formando as lacunas de Howship.",
+   "opcoes": [
+    "as células indiferenciadas ou osteoprogenitoras",
+    "os osteoblastos",
+    "Os osteócitos",
+    "dos osteoclastos"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "CET-PR",
+   "ano": null,
+   "fonte": "0c7e1ce51a2c"
+  },
+  {
+   "id": "fc-osteometabolicas-0047-q",
+   "questao": "osteometabolicas-0047",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Outros temas osteometabólicos",
+   "subtemas": [
+    "Outros temas osteometabólicos"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "comum",
+   "dificuldade": 2,
+   "frente": "A imagem radiográfica da artropatia de CHARCOT no quadril é caracterizada por",
+   "resposta": "fragmentação da cabeça femoral",
+   "explicacao": "**Fragmentação da cabeça femoral.** A destruição é exuberante e desproporcional à dor. **As causas** variam com a articulação: no pé, o diabetes; no ombro e no cotovelo, a siringomielia; no quadril e no joelho, classicamente a **tabes dorsalis**, hoje também o diabetes e outras neuropatias. A artroplastia tem resultados piores, com instabilidade e soltura; não é contraindicação absoluta, mas exige cautela.",
+   "opcoes": [
+    "fragmentação da cabeça femoral",
+    "alterações hipertróficas/megacabeça",
+    "protrusão acetabular",
+    "alterações discretas/incipientes"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "1696835e4ac8"
+  },
+  {
+   "id": "fc-osteometabolicas-0049-q",
+   "questao": "osteometabolicas-0049",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Tuberculose osteoarticular",
+   "subtemas": [
+    "Tuberculose osteoarticular"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Na tuberculose, a manifestação ortopédica mais comum é a",
+   "resposta": "despondilite",
+   "explicacao": "**Espondilite.** A manifestação ortopédica mais comum da tuberculose é a **espondilite** (doença de Pott), que responde por cerca de metade dos casos de tuberculose osteoarticular. Quadril e joelho vêm em seguida.",
+   "opcoes": [
+    "artrite séptica de médias e grandes articulações",
+    "tenossinovite",
+    "osteomielite nos ossos longos",
+    "despondilite"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "e44f9a5b679b"
+  },
+  {
+   "id": "fc-osteometabolicas-0050-q",
+   "questao": "osteometabolicas-0050",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Tuberculose osteoarticular",
+   "subtemas": [
+    "Tuberculose osteoarticular"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Na tuberculose óssea, quando há presença de lesões isoladas no pé, os ossos mais acometidos são:",
+   "resposta": "Tálus e calcâneo",
+   "explicacao": "**Tálus e calcâneo.** Na tuberculose do pé com lesões isoladas, os ossos mais acometidos são os grandes ossos esponjosos do retropé: o calcâneo, o mais frequente, e o tálus.",
+   "opcoes": [
+    "Tálus e navicular",
+    "Tálus e calcâneo",
+    "Cuboide e calcâneo",
+    "Navicular e cuboide"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2025,
+   "fonte": "4f86565b0fb9"
+  },
+  {
+   "id": "fc-osteometabolicas-0052-q",
+   "questao": "osteometabolicas-0052",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Osteoporose: diagnóstico",
+   "subtemas": [
+    "Osteoporose: diagnóstico"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na avaliação de um paciente com osteoporose, o cálculo do FRAX leva em consideração o:",
+   "resposta": "IMC e calcula a probabilidade de fratura de quadril em 10 anos",
+   "explicacao": "O FRAX usa o **IMC** (calculado a partir do peso e da altura) entre os fatores de risco e fornece a probabilidade de fratura de quadril, e de fratura osteoporótica maior, em **10 anos**.",
+   "opcoes": [
+    "IMC e calcula a probabilidade de fratura de quadril em 5 anos",
+    "IMC e calcula a probabilidade de fratura de quadril em 10 anos",
+    "Z-score e calcula a probabilidade de fratura de quadril em 5 anos",
+    "Z-score e calcula a probabilidade de fratura de quadril em 10 anos"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2025,
+   "fonte": "003840d520bc"
+  },
+  {
+   "id": "fc-osteometabolicas-0053-q",
+   "questao": "osteometabolicas-0053",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Espondiloartrites e outras artrites",
+   "subtemas": [
+    "Espondiloartrites e outras artrites"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A artrite idiopática juvenil do tipo oligoarticular, é mais comum em",
+   "resposta": "meninas, entre 2 e 4 anos",
+   "explicacao": "**Meninas, entre 2 e 4 anos.** A forma oligoarticular da artrite idiopática juvenil, o subtipo mais comum, predomina em **meninas** pequenas, com início típico entre **2 e 4 anos**, acometendo sobretudo o joelho. Com FAN positivo, tem alto risco de uveíte silenciosa.",
+   "opcoes": [
+    "meninas, entre 1 e 2 anos",
+    "meninas, entre 2 e 4 anos",
+    "meninos, entre 1 e 2 anos",
+    "meninos, entre 2 e 4 anos"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEPOP",
+   "ano": 2024,
+   "fonte": "a40fd9666e9b"
+  },
+  {
+   "id": "fc-osteometabolicas-0057-q",
+   "questao": "osteometabolicas-0057",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Osteoporose: tratamento",
+   "subtemas": [
+    "Osteoporose: tratamento"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Em mucopolissacaridose, o tipo que evolui com complicação cardiológica fatal antes de 10 anos de idade é a síndrome de:",
+   "resposta": "HURLER",
+   "explicacao": "**Hurler.** É a forma mais grave da MPS I, com morte cardiorrespiratória antes dos 10 anos sem tratamento.",
+   "opcoes": [
+    "SCHEIE",
+    "HURLER",
+    "HUNTER",
+    "MORQUIO"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2025,
+   "fonte": "886dbec4e345"
+  },
+  {
+   "id": "fc-osteometabolicas-0058-q",
+   "questao": "osteometabolicas-0058",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Osteoporose: diagnóstico",
+   "subtemas": [
+    "Osteoporose: diagnóstico"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na osteoporose, no exame de densitometria óssea (DXA), o sítio periférico utilizado em substituição ao fêmur proximal e à coluna lombar é:",
+   "resposta": "antebraço não dominante",
+   "explicacao": "**Antebraço não dominante.** Quando a coluna lombar ou o fêmur proximal não podem ser usados (próteses, artrodeses, obesidade além do limite da mesa, hiperparatireoidismo), o sítio periférico de substituição é o **terço distal do rádio do antebraço não dominante**.",
+   "opcoes": [
+    "calcâneo dominante",
+    "antebraço dominante",
+    "calcâneo não dominante",
+    "antebraço não dominante"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2025,
+   "fonte": "2dc384fbc64b"
+  },
+  {
+   "id": "fc-osteometabolicas-0060-q",
+   "questao": "osteometabolicas-0060",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Raquitismo e osteomalácia",
+   "subtemas": [
+    "Raquitismo e osteomalácia"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "rara",
+   "dificuldade": 2,
+   "frente": "O raquitismo por hipovitaminose D apresenta anomalia genética do cromossomo X com herança dominante em",
+   "resposta": "1/2 dos casos",
+   "explicacao": "**1/2 dos casos.** Uma mãe heterozigota transmite o X afetado em metade das gestações.",
+   "opcoes": [
+    "1/2 dos casos",
+    "1/3 dos casos",
+    "1/4 dos casos",
+    "1/5 dos casos"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "006023210599"
+  },
+  {
+   "id": "fc-osteometabolicas-0062-q",
+   "questao": "osteometabolicas-0062",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Osteoporose: diagnóstico",
+   "subtemas": [
+    "Osteoporose: diagnóstico"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na densitometria óssea de um paciente de 60 anos de idade, os escores T e Z representam,respectivamente, a densidade mineral óssea esperada para indivíduos de",
+   "resposta": "20 e 60 de anos de idade",
+   "explicacao": "**20 e 60 anos.** O **T-score** compara a densidade do paciente com a de adultos jovens no pico de massa óssea (por volta dos 20 anos), e o **Z-score** com indivíduos da **mesma idade**, no caso 60 anos.",
+   "opcoes": [
+    "20 e 60 de anos de idade",
+    "30 e 60 anos de idade",
+    "60 e 20 anos de idade",
+    "60 e 30 anos de idade"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2011,
+   "fonte": "58d01fbf6dc1"
+  },
+  {
+   "id": "fc-osteometabolicas-0063-q",
+   "questao": "osteometabolicas-0063",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Raquitismo e osteomalácia",
+   "subtemas": [
+    "Raquitismo e osteomalácia"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "rara",
+   "dificuldade": 2,
+   "frente": "A hipovitaminose D é mais prevalente no sexo",
+   "resposta": "feminino e em indivíduos negros",
+   "explicacao": "**Feminino e em indivíduos negros.** A hipovitaminose D é mais prevalente no sexo **feminino** e em indivíduos **negros**, cuja melanina reduz a produção cutânea de vitamina D sob a luz ultravioleta B.",
+   "opcoes": [
+    "feminino e em indivíduos negros",
+    "feminino e em indivíduos caucasianos",
+    "masculino e em indivíduos negros",
+    "masculino e em indivíduos caucasianos"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2011,
+   "fonte": "b41118a377d4"
+  },
+  {
+   "id": "fc-osteometabolicas-0064-q",
+   "questao": "osteometabolicas-0064",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Osteoporose: tratamento",
+   "subtemas": [
+    "Osteoporose: tratamento"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "No indivíduo do sexo masculino, o hipogonadismo caracteriza-se por",
+   "resposta": "aumento da atividade osteoclástica e redução da atividade osteoblástica e da absorção do cálcio sérico",
+   "explicacao": "**Osteoclasto mais ativo, osteoblasto e absorção de cálcio reduzidos.** Sem o freio do estrogênio, o balanço fica negativo pelos dois lados.",
+   "opcoes": [
+    "aumento das atividades osteoclástica e osteoblástica e da absorção do cálcio sérico",
+    "aumento da atividade osteoclástica e redução da atividade osteoblástica e da absorção do cálcio sérico",
+    "redução da atividade osteoclástica e aumento da atividade osteoblástica e da absorção do cálciosérico",
+    "redução das atividades osteoclástica e osteoblástica e da absorção do cálcio sérico"
+   ],
+   "certa": 1,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2011,
+   "fonte": "fe8fd4e5708e"
+  },
+  {
+   "id": "fc-osteometabolicas-0065-q",
+   "questao": "osteometabolicas-0065",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Outros temas osteometabólicos",
+   "subtemas": [
+    "Outros temas osteometabólicos"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "comum",
+   "dificuldade": 2,
+   "frente": "No escorbuto, a complicação musculoesquelética mais frequente é",
+   "resposta": "a pseudoparalisia",
+   "explicacao": "**A pseudoparalisia.** A criança não mexe o membro por causa da dor da hemorragia subperiosteal.",
+   "opcoes": [
+    "a pseudoparalisia",
+    "o varismo dos joelhos",
+    "o alargamento do crânio",
+    "a hipercifose toracolombar"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "5328b50fa92d"
+  },
+  {
+   "id": "fc-osteometabolicas-0066-q",
+   "questao": "osteometabolicas-0066",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Espondiloartrites e outras artrites",
+   "subtemas": [
+    "Espondiloartrites e outras artrites"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Erosões das tuberosidades das falanges distais da mão (acrosteólis) são características de qual doença:",
+   "resposta": "psoriática",
+   "explicacao": "**Psoriática.** A erosão dos tufos das falanges distais (acro-osteólise) é característica da **artrite psoriásica**, que acomete a interfalângica distal, com alterações ungueais e, nas formas graves, deformidade em lápis na taça.",
+   "opcoes": [
+    "reumatoide",
+    "psoriática",
+    "lúpica",
+    "gotosa"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "52c1e9541cb9"
+  },
+  {
+   "id": "fc-osteometabolicas-0067-q",
+   "questao": "osteometabolicas-0067",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Tuberculose osteoarticular",
+   "subtemas": [
+    "Tuberculose osteoarticular"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Na tuberculose osteoarticular do cotovelo, o osso tipicamente acometido e o movimento mais frequentemente limitado são, respectivamente:",
+   "resposta": "A ulna e a extensão",
+   "explicacao": "**A ulna e a extensão.** A tuberculose do cotovelo parte tipicamente do **olécrano**, e o movimento mais limitado é a **extensão**, porque a articulação inflamada se mantém em flexão, posição de maior volume capsular.",
+   "opcoes": [
+    "A ulna e a flexão",
+    "O úmero e a flexão",
+    "A ulna e a extensão",
+    "O úmero e a extensão"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "51155a5c9d31"
+  },
+  {
+   "id": "fc-osteometabolicas-0068-q",
+   "questao": "osteometabolicas-0068",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Espondiloartrites e outras artrites",
+   "subtemas": [
+    "Espondiloartrites e outras artrites"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A artrite inflamatória mais comum em homens com mais de 40 anos e o percentual aproximado de histórico familiar positivo para a mesma doença são, respectivamente:",
+   "resposta": "Artrite gotosa; 40%",
+   "explicacao": "**Artrite gotosa, 40%.** A gota é a artrite inflamatória mais comum nesse grupo, com agregação familiar em torno de 40%.",
+   "opcoes": [
+    "Artrite gotosa; 40%",
+    "Artrite gotosa; 20%",
+    "Espondilite anquilosante; 40%",
+    "Espondilite anquilosante; 20%"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "0aa1e12e99bc"
+  },
+  {
+   "id": "fc-osteometabolicas-0070-q",
+   "questao": "osteometabolicas-0070",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Tuberculose osteoarticular",
+   "subtemas": [
+    "Tuberculose osteoarticular",
+    "Outros temas osteometabólicos"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "O local mais frequentemente afetado nas tuberculoses ósseas docotovelo é:",
+   "resposta": "Região proximal da ulna",
+   "explicacao": "**Região proximal da ulna.** Na tuberculose do cotovelo, o local mais acometido é o **olécrano**, na ulna proximal, a partir do qual a infecção invade a articulação.",
+   "opcoes": [
+    "Côndilo lateral do úmero distal",
+    "Côndilo medial do úmero distal",
+    "Região proximal do rádio",
+    "Região proximal da ulna"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "1704c2b529ed"
+  },
+  {
+   "id": "fc-osteometabolicas-0071-q",
+   "questao": "osteometabolicas-0071",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Tuberculose osteoarticular",
+   "subtemas": [
+    "Tuberculose osteoarticular"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "No mal de POTT, a região da coluna vertebral mais comumente acometida é a",
+   "resposta": "transição tóraco-lombar",
+   "explicacao": "**Transição toracolombar.** É a região mais acometida pelo mal de Pott, pela vascularização segmentar abundante e pela concentração de carga na transição entre a cifose torácica e a lordose lombar.",
+   "opcoes": [
+    "cervical",
+    "torácica alta",
+    "transição tóraco-lombar",
+    "transição lombo-sacral"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2008,
+   "fonte": "15d3018f9f81"
+  },
+  {
+   "id": "fc-osteometabolicas-0073-q",
+   "questao": "osteometabolicas-0073",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Espondiloartrites e outras artrites",
+   "subtemas": [
+    "Espondiloartrites e outras artrites"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Doenças Osteometabólicas Erosões das tuberosidades das falanges distais da mão (acrosteólise) são achados radiográficos sugestivos da artrite:",
+   "resposta": "psoriática",
+   "explicacao": "**Psoriática.** A artrite psoriásica acomete a interfalângica distal e o tufo por meio da entesite, causando erosão com proliferação e acro-osteólise.",
+   "opcoes": [
+    "reumatoide",
+    "psoriática",
+    "lúpica",
+    "gotosa"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "03b643daa192"
+  },
+  {
+   "id": "fc-osteometabolicas-0075-q",
+   "questao": "osteometabolicas-0075",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Osteoporose: diagnóstico",
+   "subtemas": [
+    "Osteoporose: diagnóstico"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O diagnóstico de mucopolissacaridose é feito pela análise de:",
+   "resposta": "urina",
+   "explicacao": "**Urina.** A falta da enzima lisossomal faz os glicosaminoglicanos acumularem e serem eliminados na urina, onde são dosados e identificados por eletroforese no rastreamento.",
+   "opcoes": [
+    "urina",
+    "sangue",
+    "fezes",
+    "lágrima"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "2549633cf32f"
+  },
+  {
+   "id": "fc-osteometabolicas-0077-q",
+   "questao": "osteometabolicas-0077",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Tuberculose osteoarticular",
+   "subtemas": [
+    "Tuberculose osteoarticular"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Na tuberculose osteoarticular dos membros superiores, a articulação mais frequentemente acometida é",
+   "resposta": "o cotovelo",
+   "explicacao": "**Cotovelo.** No membro superior, o cotovelo é a articulação mais acometida pela tuberculose osteoarticular, com frequência a partir de um foco no olécrano ou na ulna proximal.",
+   "opcoes": [
+    "o ombro",
+    "o punho",
+    "o cotovelo",
+    "a acromioclavicular"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2026,
+   "fonte": "56d36b33db78"
+  },
+  {
+   "id": "fc-osteometabolicas-0078-q",
+   "questao": "osteometabolicas-0078",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Espondiloartrites e outras artrites",
+   "subtemas": [
+    "Espondiloartrites e outras artrites"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A artrite reumatoide tem como critério diagnóstico",
+   "resposta": "acometimento de articulações da mão",
+   "explicacao": "**Acometimento de articulações da mão.** A artrite de articulações da mão (punho, metacarpofalângicas ou interfalângicas proximais) é um dos critérios diagnósticos clássicos da artrite reumatoide.",
+   "opcoes": [
+    "rigidez noturna",
+    "acometimento articular assimétrico",
+    "acometimento de duas articulações",
+    "acometimento de articulações da mão"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2013,
+   "fonte": "54f7ca510a34"
+  },
+  {
+   "id": "fc-osteometabolicas-0079-q",
+   "questao": "osteometabolicas-0079",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Osteoporose: diagnóstico",
+   "subtemas": [
+    "Osteoporose: diagnóstico"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A osteoporose no homem deve ser pesquisada por densitometria óssea em todo indivíduo com idade superior a",
+   "resposta": "50 anos, acometido de fratura por trauma leve",
+   "explicacao": "**50 anos, com fratura por trauma leve.** A fratura por fragilidade em homem acima de 50 anos é indicação formal de densitometria, por ser sinal clínico de osso frágil e o principal preditor de nova fratura.",
+   "opcoes": [
+    "45 anos, da raça negra",
+    "60 anos, de forma rotineira",
+    "50 anos, acometido de fratura por trauma leve",
+    "55 anos, em uso prolongado de anti-hipertensivo"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2013,
+   "fonte": "c76eade27b9b"
+  },
+  {
+   "id": "fc-osteometabolicas-0080-q",
+   "questao": "osteometabolicas-0080",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Osteoporose: diagnóstico",
+   "subtemas": [
+    "Osteoporose: diagnóstico",
+    "Hiperparatireoidismo e osteodistrofia renal"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na osteoporose, a droga que atua como estimulador da formação óssea é",
+   "resposta": "o paratormônio",
+   "explicacao": "**O paratormônio.** Em doses intermitentes (teriparatida), o paratormônio estimula os osteoblastos e a formação óssea, sendo o protótipo dos anabólicos na osteoporose.",
+   "opcoes": [
+    "o estrógeno",
+    "a calcitonina",
+    "o alendronato",
+    "o paratormônio"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2013,
+   "fonte": "666d91e4b8a8"
+  },
+  {
+   "id": "fc-osteometabolicas-0095-q",
+   "questao": "osteometabolicas-0095",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Osteoporose: diagnóstico",
+   "subtemas": [
+    "Osteoporose: diagnóstico"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Nos estados de remodelação óssea aumentada, a perda de massa óssea é mais rápida",
+   "resposta": "nas vértebras, porque o osso trabecular tem maior superfície",
+   "explicacao": "**Nas vértebras, porque o osso trabecular tem maior superfície.** É exatamente o raciocínio do Rockwood (capítulo 4, Bone Anatomy). Os corpos vertebrais são formados predominantemente por osso trabecular, que tem área de superfície maior que o cortical e é remodelado mais rapidamente.",
+   "opcoes": [
+    "no colo femoral, porque o osso cortical tem maior superfície",
+    "no colo femoral, porque o osso cortical tem menor superfície",
+    "nas vértebras, porque o osso trabecular tem maior superfície",
+    "nas vértebras, porque o osso trabecular tem menor superfície"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "bc2bff730aaf"
+  },
+  {
+   "id": "fc-osteometabolicas-0096-q",
+   "questao": "osteometabolicas-0096",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Osteoporose: diagnóstico",
+   "subtemas": [
+    "Osteoporose: diagnóstico"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O risco de fratura aumenta a cada desvio-padrão de redução da densidade mineral óssea em cerca de",
+   "resposta": "1,5 a 3 vezes, e a maioria das fraturas ocorre em pacientes com osteopenia ou densidade normal",
+   "explicacao": "**1,5 a 3 vezes, e a maioria das fraturas ocorre em pacientes com osteopenia ou densidade normal.** Os dois dados vêm do Rockwood (capítulo 4, Epidemiology e Figura 4-3). O risco aumenta de 1,5 a 3 vezes por desvio-padrão de redução da densidade, conforme o sítio.",
+   "opcoes": [
+    "1,5 a 3 vezes, e a maioria das fraturas ocorre em pacientes com osteoporose",
+    "1,5 a 3 vezes, e a maioria das fraturas ocorre em pacientes com osteopenia ou densidade normal",
+    "5 a 10 vezes, e a maioria das fraturas ocorre em pacientes com osteoporose",
+    "5 a 10 vezes, e a maioria das fraturas ocorre em pacientes com osteopenia ou densidade normal"
+   ],
+   "certa": 1,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "1e715f1bb829"
+  },
+  {
+   "id": "fc-osteometabolicas-0097-q",
+   "questao": "osteometabolicas-0097",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Osteoporose: diagnóstico",
+   "subtemas": [
+    "Osteoporose: diagnóstico"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na osteoporose induzida por glicocorticoide, o principal efeito do medicamento sobre as células ósseas é",
+   "resposta": "a apoptose de osteoblastos e osteócitos",
+   "explicacao": "**A apoptose de osteoblastos e osteócitos.** O Rockwood (capítulo 4, Glucocorticoids) lista três mecanismos do glicocorticoide: menor absorção intestinal de cálcio, maior perda renal de cálcio e redução da formação óssea por apoptose de osteoblastos e osteócitos. Dos três, só o último é um efeito direto sobre as células do osso, que é o que o enunciado pergunta.",
+   "opcoes": [
+    "o aumento da absorção intestinal de cálcio",
+    "a redução da excreção renal de cálcio",
+    "o estímulo à proliferação dos osteoblastos",
+    "a apoptose de osteoblastos e osteócitos"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "416cc5915839"
+  },
+  {
+   "id": "fc-osteometabolicas-0098-q",
+   "questao": "osteometabolicas-0098",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Osteoporose: diagnóstico",
+   "subtemas": [
+    "Osteoporose: diagnóstico"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "São marcadores bioquímicos de reabsorção e de formação óssea, respectivamente:",
+   "resposta": "CTX e PINP",
+   "explicacao": "**CTX e PINP.** Na ordem pedida, reabsorção e depois formação. O CTX (telopeptídeo C-terminal das ligações cruzadas do colágeno tipo I) é liberado quando o osteoclasto degrada o colágeno da matriz; o PINP (propeptídeo N-terminal do pró-colágeno tipo I) é liberado quando o osteoblasto fabrica colágeno novo. É a correspondência da Tabela 4-2 do Rockwood (capítulo 4).",
+   "opcoes": [
+    "CTX e PINP",
+    "PINP e CTX",
+    "osteocalcina e NTX",
+    "fosfatase alcalina óssea e osteocalcina"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "cc136a63ca0d"
+  },
+  {
+   "id": "fc-osteometabolicas-0100-q",
+   "questao": "osteometabolicas-0100",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Osteoporose: tratamento",
+   "subtemas": [
+    "Osteoporose: tratamento"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 3,
+   "frente": "Antes da infusão de ácido zoledrônico para osteoporose, deve-se verificar a função renal, e o medicamento só deve ser administrado com taxa de filtração glomerular estimada acima de",
+   "resposta": "35 mL/min",
+   "explicacao": "**35 mL/min.** O Rockwood (capítulo 4, Zoledronic Acid) orienta checar a função renal antes da infusão e administrar o ácido zoledrônico apenas se a taxa de filtração glomerular estimada estiver acima de 35 mL/min. O fármaco tem eliminação renal e a insuficiência renal está entre seus efeitos adversos.",
+   "opcoes": [
+    "30 mL/min",
+    "35 mL/min",
+    "45 mL/min",
+    "60 mL/min"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "abaf36ad697f"
+  },
+  {
+   "id": "fc-osteometabolicas-0101-q",
+   "questao": "osteometabolicas-0101",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Osteoporose: tratamento",
+   "subtemas": [
+    "Osteoporose: tratamento"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "O denosumabe é um anticorpo monoclonal dirigido contra a",
+   "resposta": "RANKL, e sua suspensão provoca aumento rebote da remodelação",
+   "explicacao": "**RANKL, e sua suspensão provoca aumento rebote da remodelação.** O Rockwood (capítulo 4, Denosumab) descreve o denosumabe como anticorpo monoclonal totalmente humanizado contra o RANKL, principal estimulador da reabsorção, dado a cada 6 meses.",
+   "opcoes": [
+    "esclerostina, e seu efeito se mantém por anos após a suspensão",
+    "esclerostina, e sua suspensão provoca aumento rebote da remodelação",
+    "RANKL, e seu efeito se mantém por anos após a suspensão",
+    "RANKL, e sua suspensão provoca aumento rebote da remodelação"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "40d9ad982f16"
+  },
+  {
+   "id": "fc-osteometabolicas-0102-q",
+   "questao": "osteometabolicas-0102",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Osteoporose: tratamento",
+   "subtemas": [
+    "Osteoporose: tratamento"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "A teriparatida corresponde ao fragmento do paratormônio",
+   "resposta": "1-34, e ao final do tratamento deve ser seguida de antirreabsortivo",
+   "explicacao": "**1-34, e ao final do tratamento deve ser seguida de antirreabsortivo.** O Rockwood (capítulo 4, Teriparatide) define a teriparatida como o fragmento 1-34 do PTH, dada por 2 anos, e orienta que, ao término, o paciente receba um antirreabsortivo para evitar a perda do osso recém-formado. Raloxifeno, alendronato e ácido zoledrônico mantiveram o ganho de massa obtido com o PTH.",
+   "opcoes": [
+    "1-84, e ao final do tratamento deve ser seguida de novo ciclo de anabólico",
+    "1-84, e ao final do tratamento deve ser seguida de antirreabsortivo",
+    "1-34, e ao final do tratamento deve ser seguida de antirreabsortivo",
+    "1-34, e ao final do tratamento deve ser seguida de novo ciclo de anabólico"
+   ],
+   "certa": 2,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "530791ed566d"
+  },
+  {
+   "id": "fc-osteometabolicas-0105-q",
+   "questao": "osteometabolicas-0105",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Osteoporose: tratamento",
+   "subtemas": [
+    "Osteoporose: tratamento"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Após a fixação de uma fratura do quadril por baixa energia, o ácido zoledrônico iniciado nas primeiras semanas",
+   "resposta": "não prejudica a consolidação e reduz a mortalidade",
+   "explicacao": "**Não prejudica a consolidação e reduz a mortalidade.** O Rockwood (capítulo 4, Fracture Healing e Mortality) relata que, no estudo HORIZON, o ácido zoledrônico iniciado após cirurgia de fratura do quadril de baixa energia não alterou a consolidação, independentemente de ter sido começado antes de 2 semanas, entre 2 e 4, entre 4 e 6 ou depois de 6 semanas.",
+   "opcoes": [
+    "prejudica a consolidação e não altera a mortalidade",
+    "prejudica a consolidação e reduz a mortalidade",
+    "não prejudica a consolidação e não altera a mortalidade",
+    "não prejudica a consolidação e reduz a mortalidade"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "6327088434be"
+  },
+  {
+   "id": "fc-osteometabolicas-0106-q",
+   "questao": "osteometabolicas-0106",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Osteoporose: tratamento",
+   "subtemas": [
+    "Osteoporose: tratamento"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Segundo a American Society for Bone and Mineral Research, a fratura femoral atípica se origina na cortical",
+   "resposta": "lateral e, quando completa, apresenta espícula medial",
+   "explicacao": "**Lateral e, quando completa, apresenta espícula medial.** São os critérios 2 e 3 da ASBMR citados pelo Rockwood (capítulo 4, Atypical Femur Fractures): a fratura se origina na cortical lateral, com traço largamente transverso, e as fraturas completas têm espícula medial, enquanto as incompletas acometem apenas a cortical lateral.",
+   "opcoes": [
+    "lateral e, quando completa, apresenta espícula lateral",
+    "lateral e, quando completa, apresenta espícula medial",
+    "medial e, quando completa, apresenta espícula lateral",
+    "medial e, quando completa, apresenta espícula medial"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "485bbb88c8d4"
+  },
+  {
+   "id": "fc-osteometabolicas-0107-q",
+   "questao": "osteometabolicas-0107",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Osteoporose: tratamento",
+   "subtemas": [
+    "Osteoporose: tratamento"
+   ],
+   "tipo": "Imagem",
+   "raridade": "epica",
+   "dificuldade": 3,
+   "frente": "Mulher de 64 anos, em uso de bifosfonato há 2 anos, com dor mecânica na coxa. A radiografia a seguir mostra espessamento da cortical lateral com linha radiolucente. Além de suspender o bifosfonato, a conduta indicada é",
+   "resposta": "fixação intramedular profilática",
+   "explicacao": "**Fixação intramedular profilática.** A paciente tem dor mecânica e uma linha radiolucente na cortical lateral espessada, ou seja, uma fratura por estresse atípica.",
+   "opcoes": [
+    "tratamento conservador com restrição de carga",
+    "teriparatida, sem tratamento cirúrgico",
+    "fixação intramedular profilática",
+    "placa bloqueada lateral"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "f893aa7ca1f1",
+   "imagem": {
+    "arquivo": "osteometabolicas/osteometabolicas-0107-1.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 4, figura 4-4B.",
+    "largura": 310,
+    "altura": 615
+   }
+  },
+  {
+   "id": "fc-osteometabolicas-0108-q",
+   "questao": "osteometabolicas-0108",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Doença de Paget",
+   "subtemas": [
+    "Doença de Paget"
+   ],
+   "tipo": "Imagem",
+   "raridade": "comum",
+   "dificuldade": 3,
+   "frente": "Homem de 69 anos com dor no quadril direito. A radiografia e a cintilografia óssea são mostradas a seguir. O exame laboratorial mais útil para avaliar a atividade metabólica da doença e acompanhar o tratamento é",
+   "resposta": "a fosfatase alcalina total",
+   "explicacao": "**A fosfatase alcalina total.** O Rockwood (capítulo 4, Investigations and Diagnosis) diz que a fosfatase alcalina total sérica é uma medida conveniente e sensível da atividade metabólica da doença de Paget, adequada para a maioria dos pacientes, elevada em 95% dos não tratados.",
+   "opcoes": [
+    "o cálcio sérico",
+    "a fosfatase alcalina total",
+    "o paratormônio",
+    "a velocidade de hemossedimentação"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "0ddea6ec38a3",
+   "imagem": {
+    "arquivo": "osteometabolicas/osteometabolicas-0108-1.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 4, figura 4-5A e C.",
+    "largura": 1155,
+    "altura": 420
+   }
+  },
+  {
+   "id": "fc-osteometabolicas-0109-q",
+   "questao": "osteometabolicas-0109",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Doença de Paget",
+   "subtemas": [
+    "Doença de Paget"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "comum",
+   "dificuldade": 2,
+   "frente": "Na doença de Paget, a principal indicação de tratamento com bifosfonato e o bifosfonato com maior chance de alívio da dor são, respectivamente:",
+   "resposta": "dor óssea e ácido zoledrônico",
+   "explicacao": "**Dor óssea e ácido zoledrônico.** O Rockwood (capítulo 4, Paget Disease: Management) aponta a dor óssea como indicação mais comum de tratamento, desde que ligada à atividade da doença.",
+   "opcoes": [
+    "dor óssea e ácido zoledrônico",
+    "dor óssea e risedronato",
+    "prevenção de deformidades e ácido zoledrônico",
+    "prevenção de deformidades e risedronato"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "73cd710cac96"
+  },
+  {
+   "id": "fc-osteometabolicas-0110-q",
+   "questao": "osteometabolicas-0110",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Raquitismo e osteomalácia",
+   "subtemas": [
+    "Raquitismo e osteomalácia"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "rara",
+   "dificuldade": 2,
+   "frente": "Na osteomalácia por deficiência de vitamina D, encontram-se",
+   "resposta": "fosfato diminuído e PTH aumentado",
+   "explicacao": "**Fosfato diminuído e PTH aumentado.** Pelo Rockwood (capítulo 4, Pathophysiology e Investigations), a deficiência de vitamina D reduz a absorção intestinal de cálcio, o que aumenta a secreção de PTH; o PTH elevado promove a excreção renal de fosfato, e o fosfato cai.",
+   "opcoes": [
+    "fosfato diminuído e PTH diminuído",
+    "fosfato diminuído e PTH aumentado",
+    "fosfato aumentado e PTH diminuído",
+    "fosfato aumentado e PTH aumentado"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "e2df378e087e"
+  },
+  {
+   "id": "fc-osteometabolicas-0111-q",
+   "questao": "osteometabolicas-0111",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Raquitismo e osteomalácia",
+   "subtemas": [
+    "Raquitismo e osteomalácia"
+   ],
+   "tipo": "Imagem",
+   "raridade": "rara",
+   "dificuldade": 3,
+   "frente": "Paciente com arqueamento dos membros inferiores, calcificação de ligamentos ao redor do quadril e fraturas por estresse da tíbia, como nas imagens a seguir, sem resposta à reposição de vitamina D. O diagnóstico e o tratamento são, respectivamente:",
+   "resposta": "raquitismo hipofosfatêmico ligado ao X e fosfato com metabólito ativo da vitamina D",
+   "explicacao": "**Raquitismo hipofosfatêmico ligado ao X e fosfato com metabólito ativo da vitamina D.** As imagens (Rockwood, capítulo 4, Figura 4-7) mostram arqueamento femoral, entesopatia com calcificação de ligamentos e fraturas por estresse da tíbia, achados do XLH. A falta de resposta à vitamina D, segundo o capítulo, sugere justamente raquitismo hipofosfatêmico.",
+   "opcoes": [
+    "raquitismo nutricional e colecalciferol em dose alta",
+    "raquitismo nutricional e fosfato com metabólito ativo da vitamina D",
+    "raquitismo hipofosfatêmico ligado ao X e colecalciferol em dose alta",
+    "raquitismo hipofosfatêmico ligado ao X e fosfato com metabólito ativo da vitamina D"
+   ],
+   "certa": 3,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "ae5d2244eaad",
+   "imagem": {
+    "arquivo": "osteometabolicas/osteometabolicas-0111-1.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 4, figura 4-7.",
+    "largura": 549,
+    "altura": 476
+   }
+  },
+  {
+   "id": "fc-osteometabolicas-0112-q",
+   "questao": "osteometabolicas-0112",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Raquitismo e osteomalácia",
+   "subtemas": [
+    "Raquitismo e osteomalácia"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "rara",
+   "dificuldade": 2,
+   "frente": "No tratamento da osteomalácia por deficiência de vitamina D, nas primeiras semanas de reposição, a fosfatase alcalina",
+   "resposta": "pode subir inicialmente e depois normalizar gradualmente",
+   "explicacao": "**Pode subir inicialmente e depois normalizar gradualmente.** O Rockwood (capítulo 4, Osteomalacia and Rickets: Management) afirma que, no tratamento com vitamina D, os níveis de fosfatase alcalina podem subir no início, à medida que a mineralização aumenta, e depois caem gradualmente ao normal com a cicatrização da doença óssea.",
+   "opcoes": [
+    "cai rapidamente para valores normais",
+    "permanece inalterada até o fim do tratamento",
+    "pode subir inicialmente e depois normalizar gradualmente",
+    "eleva-se de forma persistente, indicando falha do tratamento"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "2332b5d168ac"
+  },
+  {
+   "id": "fc-osteometabolicas-0113-q",
+   "questao": "osteometabolicas-0113",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Hiperparatireoidismo e osteodistrofia renal",
+   "subtemas": [
+    "Hiperparatireoidismo e osteodistrofia renal"
+   ],
+   "tipo": "Imagem",
+   "raridade": "rara",
+   "dificuldade": 3,
+   "frente": "Mulher de 62 anos com cálculo renal e poliúria. A radiografia do dedo (A), comparada com o normal (B), mostra as alterações apontadas pelas setas. O perfil laboratorial esperado é",
+   "resposta": "hipercalcemia e hipofosfatemia",
+   "explicacao": "**Hipercalcemia e hipofosfatemia.** A paciente tem sintomas de hipercalcemia (litíase renal e poliúria) e erosões subperiosteais com reabsorção do tufo distal, achados do hiperparatireoidismo primário avançado na Figura 4-8 do Rockwood (capítulo 4).",
+   "opcoes": [
+    "hipocalcemia e hiperfosfatemia",
+    "hipocalcemia e hipofosfatemia",
+    "hipercalcemia e hipofosfatemia",
+    "hipercalcemia e hiperfosfatemia"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "b9f8778d0765",
+   "imagem": {
+    "arquivo": "osteometabolicas/osteometabolicas-0113-1.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 4, figura 4-8.",
+    "largura": 551,
+    "altura": 311
+   }
+  },
+  {
+   "id": "fc-osteometabolicas-0114-q",
+   "questao": "osteometabolicas-0114",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Hiperparatireoidismo e osteodistrofia renal",
+   "subtemas": [
+    "Hiperparatireoidismo e osteodistrofia renal"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "rara",
+   "dificuldade": 2,
+   "frente": "Na investigação do hiperparatireoidismo primário, a dosagem do cálcio e da creatinina urinários é importante para excluir",
+   "resposta": "a hipercalcemia hipocalciúrica familiar",
+   "explicacao": "**A hipercalcemia hipocalciúrica familiar.** O Rockwood (capítulo 4, Primary Hyperparathyroidism: Investigations) afirma que é importante medir cálcio e creatinina urinários para excluir a hipercalcemia hipocalciúrica familiar.",
+   "opcoes": [
+    "a osteodistrofia renal",
+    "a tireotoxicose",
+    "a hipercalcemia por imobilização",
+    "a hipercalcemia hipocalciúrica familiar"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "558d7715c32b"
+  },
+  {
+   "id": "fc-osteometabolicas-0115-q",
+   "questao": "osteometabolicas-0115",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Outros temas osteometabólicos",
+   "subtemas": [
+    "Outros temas osteometabólicos"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "comum",
+   "dificuldade": 2,
+   "frente": "Na osteogênese imperfeita, mais de 90% dos casos decorrem de mutações nos genes do colágeno tipo",
+   "resposta": "I, e o tipo I de Sillence é a forma leve com escleras azuladas",
+   "explicacao": "**I, e o tipo I de Sillence é a forma leve com escleras azuladas.** O Rockwood (capítulo 4, Osteogenesis Imperfecta) atribui mais de 90% dos casos a mutações em COL1A1 e COL1A2, que codificam o colágeno tipo I.",
+   "opcoes": [
+    "I, e o tipo I de Sillence é a forma leve com escleras azuladas",
+    "I, e o tipo I de Sillence é a forma letal perinatal",
+    "II, e o tipo I de Sillence é a forma leve com escleras azuladas",
+    "II, e o tipo I de Sillence é a forma letal perinatal"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "5879385285ec"
+  },
+  {
+   "id": "fc-osteometabolicas-0116-q",
+   "questao": "osteometabolicas-0116",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Outros temas osteometabólicos",
+   "subtemas": [
+    "Outros temas osteometabólicos"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "comum",
+   "dificuldade": 2,
+   "frente": "A osteopetrose grave, que se manifesta na infância com falência medular, cegueira e paralisia de nervos cranianos, tem herança",
+   "resposta": "autossômica recessiva, e o tratamento é o transplante de medula óssea",
+   "explicacao": "**Autossômica recessiva, e o tratamento é o transplante de medula óssea.** O Rockwood (capítulo 4, Osteopetrosis) descreve a osteopetrose grave como de herança autossômica recessiva, com déficit de crescimento, dentição tardia, paralisia de nervos cranianos, cegueira, anemia e infecções por falência medular.",
+   "opcoes": [
+    "autossômica dominante, e o tratamento é o interferon-gama",
+    "autossômica dominante, e o tratamento é o transplante de medula óssea",
+    "autossômica recessiva, e o tratamento é o interferon-gama",
+    "autossômica recessiva, e o tratamento é o transplante de medula óssea"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "a6b0e2597384"
+  },
+  {
+   "id": "fc-osteometabolicas-0117-q",
+   "questao": "osteometabolicas-0117",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Outros temas osteometabólicos",
+   "subtemas": [
+    "Outros temas osteometabólicos"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "comum",
+   "dificuldade": 2,
+   "frente": "O aspecto radiográfico típico da displasia fibrosa é",
+   "resposta": "a lesão lítica expansiva em vidro fosco",
+   "explicacao": "**A lesão lítica expansiva em vidro fosco.** O Rockwood (capítulo 4, Fibrous Dysplasia) descreve a radiografia da displasia fibrosa com lesões focais predominantemente osteolíticas, com expansão óssea, tipicamente em vidro fosco (Figura 4-9). Algumas lesões são mais agressivas, com festonamento e afilamento cortical.",
+   "opcoes": [
+    "o trabeculado grosseiro com espessamento cortical",
+    "a lesão lítica expansiva em vidro fosco",
+    "a metáfise em frasco de Erlenmeyer",
+    "a presença de pseudofraturas nas costelas e na pelve"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "eaa96ec1b89e"
+  },
+  {
+   "id": "fc-osteometabolicas-0118-q",
+   "questao": "osteometabolicas-0118",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Osteoporose: diagnóstico",
+   "subtemas": [
+    "Osteoporose: diagnóstico"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Após a cirurgia de fratura do quadril, a mortalidade em 1 ano relatada no capítulo é de cerca de",
+   "resposta": "30%",
+   "explicacao": "**30%.** O Rockwood (capítulo 4, Mortality) relata mortalidade de 30% em 1 ano após a cirurgia de fratura do quadril, e um estudo com seguimento médio de 3,7 anos chegou a 80% de mortalidade global. O capítulo atribui esse número ao agravamento de doenças subjacentes pela cirurgia, à fragilidade de quem fratura o quadril e às novas fraturas.",
+   "opcoes": [
+    "5%",
+    "15%",
+    "30%",
+    "50%"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "5423e2cef869"
+  },
+  {
+   "id": "fc-osteometabolicas-0120-q",
+   "questao": "osteometabolicas-0120",
+   "area": "Osteometabólicas",
+   "areaId": "osteometabolicas",
+   "assunto": "Hiperparatireoidismo e osteodistrofia renal",
+   "subtemas": [
+    "Hiperparatireoidismo e osteodistrofia renal"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "rara",
+   "dificuldade": 3,
+   "frente": "Paciente com osteopenia e fratura de baixa energia apresenta cálcio sérico baixo, fósforo sérico alto e fosfatase alcalina sérica alta. Pelo quadro de distúrbios que produzem osteopenia do Rockwood, o diagnóstico mais provável é",
+   "resposta": "osteodistrofia renal",
+   "explicacao": "**Osteodistrofia renal.** Na Tabela 25-5 do Rockwood, a osteodistrofia renal é o único distúrbio com cálcio sérico baixo, fósforo sérico alto e fosfatase alcalina alta. O perfil faz sentido fisiológico: o rim doente retém fosfato, o fósforo alto e a menor ativação da vitamina D derrubam o cálcio, a paratireoide reage e a remodelação acelerada eleva a fosfatase alcalina.",
+   "opcoes": [
+    "osteodistrofia renal",
+    "osteomalácia",
+    "hiperparatireoidismo",
+    "doença de Paget"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": null,
+   "ano": null,
+   "fonte": "93e342aac64e"
+  }
+ ]
+}

@@ -1,0 +1,5389 @@
+{
+ "versao": 4,
+ "area": "joelho",
+ "flashcards": [
+  {
+   "id": "fc-joelho-0001-q",
+   "questao": "joelho-0001",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Exame físico do joelho",
+   "subtemas": [
+    "Exame físico do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Na semiologia do joelho, a avaliação da retração da musculatura isquiotibial em decúbito dorsal é iniciada com o joelho em:",
+   "resposta": "90° e o quadril em 90°",
+   "explicacao": "**Quadril e joelho começam a 90 graus.** Essa posição padroniza a avaliação antes da extensão passiva do joelho.",
+   "opcoes": [
+    "45° e o quadril em 45°",
+    "45° e o quadril em 90°",
+    "90° e o quadril em 45°",
+    "90° e o quadril em 90°"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "6931c5cc6c35"
+  },
+  {
+   "id": "fc-joelho-0002-q",
+   "questao": "joelho-0002",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Instabilidade femoropatelar",
+   "subtemas": [
+    "Instabilidade femoropatelar"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na instabilidade patelar, o ângulo Q aumentado determina vetor de força:",
+   "resposta": "lateral à articulação femoropatelar à medida que o joelho é estendido",
+   "explicacao": "**Lateral durante a extensão.** A tração lateral encontra menor contenção troclear quando a patela sai progressivamente do sulco.",
+   "opcoes": [
+    "lateral à articulação femoropatelar à medida que o joelho é fletido",
+    "medial à articulação femoropatelar à medida que o joelho é fletido",
+    "lateral à articulação femoropatelar à medida que o joelho é estendido",
+    "medial à articulação femoropatelar à medida que o joelho é estendido"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "da762ffd97fc"
+  },
+  {
+   "id": "fc-joelho-0004-q",
+   "questao": "joelho-0004",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Ruptura dos tendões patelar e quadricipital",
+   "subtemas": [
+    "Ruptura dos tendões patelar e quadricipital"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "A ruptura do tendão quadricipital e patelar está associado ao uso de:",
+   "resposta": "esteroides",
+   "explicacao": "**Esteroides.** Corticoides e anabolizantes se associam a enfraquecimento tendíneo e ruptura do aparelho extensor.",
+   "opcoes": [
+    "esteroides",
+    "miorrelaxantes",
+    "anticoagulantes",
+    "anti-inflamatórios não esteroidais"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "e184157d40fd"
+  },
+  {
+   "id": "fc-joelho-0005-q",
+   "questao": "joelho-0005",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Osteocondrite dissecante",
+   "subtemas": [
+    "Osteocondrite dissecante",
+    "Joelho na criança"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na osteocondrite dissecante do joelho da criança, é uma indicação de tratamento cirúrgico:",
+   "resposta": "a persistência do quadro após fechamento da fise",
+   "explicacao": "**Persistência depois do fechamento da fise.** A chance de cicatrização espontânea cai com a maturidade esquelética, tornando a cirurgia mais provável.",
+   "opcoes": [
+    "o acometimento bilateral",
+    "a presença de fise aberta",
+    "a dor e a persistência do quadro por 3 meses",
+    "a persistência do quadro após fechamento da fise"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2020,
+   "fonte": "02c0e8e4f25b"
+  },
+  {
+   "id": "fc-joelho-0007-q",
+   "questao": "joelho-0007",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Menisco discoide",
+   "subtemas": [
+    "Menisco discoide"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "O menisco discoide é mais frequente no menisco:",
+   "resposta": "lateral e do tipo completo",
+   "explicacao": "**Lateral e completo.** O lado lateral é o mais acometido, e o tipo completo predomina em grandes séries de casos tratados cirurgicamente.",
+   "opcoes": [
+    "lateral e do tipo completo",
+    "medial e do tipo completo",
+    "lateral e do tipo Wrisberg",
+    "medial e do tipo Wrisberg"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "fcbc09a00fae"
+  },
+  {
+   "id": "fc-joelho-0010-q",
+   "questao": "joelho-0010",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Instabilidade femoropatelar",
+   "subtemas": [
+    "Instabilidade femoropatelar"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na instabilidade patelar, o esporão supratroclear com tróclea plana é classificada por DEJOUR como:",
+   "resposta": "tipo B",
+   "explicacao": "**Tipo B.** Tróclea plana associada a esporão supratroclear compõe a descrição clássica desse tipo.",
+   "opcoes": [
+    "tipo A",
+    "tipo B",
+    "tipo C",
+    "tipo D"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2019,
+   "fonte": "6a0c358aeb45"
+  },
+  {
+   "id": "fc-joelho-0014-q",
+   "questao": "joelho-0014",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Osteocondrite dissecante",
+   "subtemas": [
+    "Osteocondrite dissecante"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A osteocondrite dissecante do joelho é mais frequente em:",
+   "resposta": "meninos e no côndilo femoral medial",
+   "explicacao": "**Meninos e côndilo femoral medial.** Essa combinação reúne o grupo e a localização mais frequentes.",
+   "opcoes": [
+    "meninos e no côndilo femoral medial",
+    "meninos e no côndilo femoral lateral",
+    "meninas e no côndilo femoral medial",
+    "meninas e no côndilo femoral lateral"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2018,
+   "fonte": "aac26eb9f653"
+  },
+  {
+   "id": "fc-joelho-0020-q",
+   "questao": "joelho-0020",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Artroplastia total do joelho",
+   "subtemas": [
+    "Artroplastia total do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na gonartrose unicompartimental medial, preconiza-se para o paciente de 50 anos de idade com joelho varo de 25°",
+   "resposta": "artroplastia total do joelho",
+   "explicacao": "**Artroplastia total do joelho.** O varo de 25 graus ultrapassa o cenário habitual da osteotomia isolada e da prótese unicompartimental, mesmo num paciente de 50 anos.",
+   "opcoes": [
+    "artroplastia total do joelho",
+    "osteotomia tibial de adição medial",
+    "artroplastia unicompartimental medial",
+    "osteotomia femoral de cunha de subtração lateral"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "1de22a35b9c7"
+  },
+  {
+   "id": "fc-joelho-0021-q",
+   "questao": "joelho-0021",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesão do ligamento cruzado anterior",
+   "subtemas": [
+    "Lesão do ligamento cruzado anterior"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na ruptura do ligamento cruzado anterior do joelho, a fratura de SEGOND corresponde à avulsão da",
+   "resposta": "margem lateral da tíbia",
+   "explicacao": "**Margem lateral da tíbia.** Essa é a localização óssea que define a fratura de Segond.",
+   "opcoes": [
+    "margem lateral da tíbia",
+    "margem medial da tíbia",
+    "eminência intercondilar",
+    "ápice da cabeça da fíbula"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "e69181d7c734"
+  },
+  {
+   "id": "fc-joelho-0022-q",
+   "questao": "joelho-0022",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Menisco discoide",
+   "subtemas": [
+    "Menisco discoide"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "No menisco discoide, segundo a classificação de WATANABE, o tipo que mais comumente se apresenta com ressalto lateral (snapping) em uma criança de 2 a 3 anos é o",
+   "resposta": "III",
+   "explicacao": "**Tipo III, variante de Wrisberg.** A falta de fixação posterior torna o menisco hipermóvel e explica o ressalto lateral característico.",
+   "opcoes": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "268bc859e51a"
+  },
+  {
+   "id": "fc-joelho-0024-q",
+   "questao": "joelho-0024",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Exame físico do joelho",
+   "subtemas": [
+    "Exame físico do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "No exame físico do joelho, são manobras indicadas para a avaliação de lesões meniscais os testes de",
+   "resposta": "STEINMANN e MCMURRAY",
+   "explicacao": "**Steinmann e McMurray.** Ambos exploram sintomas na interlinha durante movimentos que solicitam os meniscos.",
+   "opcoes": [
+    "GODFREY e CLARKE",
+    "STEINMANN e CLARKE",
+    "MCMURRAY e GODFREY",
+    "STEINMANN e MCMURRAY"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "96def379ac84"
+  },
+  {
+   "id": "fc-joelho-0025-q",
+   "questao": "joelho-0025",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Osteocondrite dissecante",
+   "subtemas": [
+    "Osteocondrite dissecante"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A localização clássica da osteocondrite dissecante do joelho do adolescente é a área",
+   "resposta": "lateral do côndilo femoral medial",
+   "explicacao": "**Área lateral do côndilo femoral medial.** É a região intercondilar que concentra a apresentação clássica.",
+   "opcoes": [
+    "medial do côndilo femoral lateral",
+    "medial do côndilo femoral medial",
+    "lateral do côndilo femoral lateral",
+    "lateral do côndilo femoral medial"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2017,
+   "fonte": "af8452b0f01d"
+  },
+  {
+   "id": "fc-joelho-0027-q",
+   "questao": "joelho-0027",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesão do ligamento cruzado posterior",
+   "subtemas": [
+    "Lesão do ligamento cruzado posterior"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na reconstrução do LCP, a complicação mais comum é a",
+   "resposta": "instabilidade residual",
+   "explicacao": "**Instabilidade posterior residual.** A reconstrução pode deixar frouxidão por alongamento do enxerto, técnica ou instabilidade associada não corrigida.",
+   "opcoes": [
+    "lesão nervosa",
+    "perda da flexão",
+    "dor patelofemoral",
+    "instabilidade residual"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "fd6befab2644"
+  },
+  {
+   "id": "fc-joelho-0028-q",
+   "questao": "joelho-0028",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Ruptura dos tendões patelar e quadricipital",
+   "subtemas": [
+    "Ruptura dos tendões patelar e quadricipital"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "A ruptura do ligamento patelar é mais comum em pacientes",
+   "resposta": "abaixo de 40 anos, no polo inferior da patela",
+   "explicacao": "**Abaixo de 40 anos e no polo inferior da patela.** É a combinação didática de faixa etária e local proximal mais característica da ruptura patelar.",
+   "opcoes": [
+    "acima de 40 anos, na tuberosidade da tíbia",
+    "abaixo de 40 anos, na tuberosidade da tíbia",
+    "acima de 40 anos, no polo inferior da patela",
+    "abaixo de 40 anos, no polo inferior da patela"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "52314ac61369"
+  },
+  {
+   "id": "fc-joelho-0030-q",
+   "questao": "joelho-0030",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Ruptura dos tendões patelar e quadricipital",
+   "subtemas": [
+    "Ruptura dos tendões patelar e quadricipital"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Nas rupturas crônicas do tendão do quadríceps, a técnica de reparo com alongamento do tendão e retalho em V invertido é a descrita por",
+   "resposta": "CODVILLA",
+   "explicacao": "**Codivilla, escrito \"CODVILLA\" na alternativa.** O V invertido com avanço e fechamento em Y é a técnica de alongamento pedida.",
+   "opcoes": [
+    "ECKER",
+    "SCUDERI",
+    "CODVILLA",
+    "MANDELBAUM"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "a540d64c8666"
+  },
+  {
+   "id": "fc-joelho-0031-q",
+   "questao": "joelho-0031",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Ruptura dos tendões patelar e quadricipital",
+   "subtemas": [
+    "Ruptura dos tendões patelar e quadricipital"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "A ruptura do tendão do quadríceps é mais comumente associada a",
+   "resposta": "uremia, diabetes e hiperparatireoidismo",
+   "explicacao": "**Uremia, diabetes e hiperparatireoidismo.** As três condições podem enfraquecer o mecanismo extensor ou sua inserção.",
+   "opcoes": [
+    "uremia, diabetes e hiperparatireoidismo",
+    "uremia, diabetes e hipocalciúria",
+    "uremia, hiperparatireoidismo e hipocalciúria",
+    "diabetes, hiperparatireoidismo e hipocalciúria"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "a290ddf8e382"
+  },
+  {
+   "id": "fc-joelho-0032-q",
+   "questao": "joelho-0032",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesão do ligamento cruzado anterior",
+   "subtemas": [
+    "Lesão do ligamento cruzado anterior"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na ruptura do ligamento cruzado anterior, a largura do túnel intercondilar é menor",
+   "resposta": "nas mulheres e interfere na ocorrência da lesão",
+   "explicacao": "**Menor nas mulheres e associada à lesão do LCA.** A incisura estreita aparece como fator anatômico de risco em estudos, inclusive após comparar pessoas do mesmo sexo.",
+   "opcoes": [
+    "nos homens e não interfere na ocorrência da lesão",
+    "nas mulheres e não interfere na ocorrência da lesão",
+    "nos homens e interfere na ocorrência da lesão",
+    "nas mulheres e interfere na ocorrência da lesão"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "bb2ce76ebb8e"
+  },
+  {
+   "id": "fc-joelho-0034-q",
+   "questao": "joelho-0034",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Exame físico do joelho",
+   "subtemas": [
+    "Exame físico do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "O teste de McMURRAY para lesão meniscal do joelho é realizado",
+   "resposta": "de flexão para extensão, em decúbito dorsal",
+   "explicacao": "**Da flexão para a extensão, em decúbito dorsal.** A rotação tibial é mantida enquanto o joelho se estende.",
+   "opcoes": [
+    "de extensão para flexão, em decúbito dorsal",
+    "de flexão para extensão, em decúbito dorsal",
+    "de extensão para flexão, em decúbito ventral",
+    "de flexão para extensão, em decúbito ventral"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "de90f6ef5bb7"
+  },
+  {
+   "id": "fc-joelho-0035-q",
+   "questao": "joelho-0035",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Artroplastia total do joelho",
+   "subtemas": [
+    "Artroplastia total do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na artroplastia total do joelho, o corte posterior dos côndilos femorais deve ser feito com",
+   "resposta": "3º de rotação lateral",
+   "explicacao": "**Três graus de rotação lateral.** É a referência convencional de rotação externa do corte femoral posterior em relação ao eixo condilar posterior.",
+   "opcoes": [
+    "3º de rotação medial",
+    "6º de rotação medial",
+    "3º de rotação lateral",
+    "6º de rotação lateral"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2015,
+   "fonte": "d08e5e7b425a"
+  },
+  {
+   "id": "fc-joelho-0037-q",
+   "questao": "joelho-0037",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Osteocondrite dissecante",
+   "subtemas": [
+    "Osteocondrite dissecante"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A osteocondrite dissecante da patela ocorre com maior frequência no quadrante",
+   "resposta": "inferomedial",
+   "explicacao": "**Quadrante inferomedial.** Reúne a metade inferior e a porção medial descritas como localização mais típica da lesão patelar.",
+   "opcoes": [
+    "inferolateral",
+    "inferomedial",
+    "superolateral",
+    "superomedial"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "7819fe04f0ff"
+  },
+  {
+   "id": "fc-joelho-0040-q",
+   "questao": "joelho-0040",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Menisco discoide",
+   "subtemas": [
+    "Menisco discoide"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "No menisco discoide, a “saucerização” é um procedimento em que se faz a ressecção parcial do menisco na porção",
+   "resposta": "central",
+   "explicacao": "**Porção central.** Sua ressecção parcial transforma o disco em um menisco de contorno mais próximo do habitual, poupando a borda funcional.",
+   "opcoes": [
+    "central",
+    "periférica",
+    "anterior",
+    "posterior"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "b9b051e5e71c"
+  },
+  {
+   "id": "fc-joelho-0041-q",
+   "questao": "joelho-0041",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Instabilidade femoropatelar",
+   "subtemas": [
+    "Instabilidade femoropatelar"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na instabilidade patelar, a reconstrução isolada do ligamento patelofemoral medial está indicada na presença de",
+   "resposta": "displasia patelar tipo C de WIBERG",
+   "explicacao": "**Patela tipo C de Wiberg.** Entre as opções, é o achado morfológico que, isolado, menos obriga a corrigir alinhamento ósseo além de reconstruir o LPFM.",
+   "opcoes": [
+    "TA-GT acima de 20 mm",
+    "índice de INSALL maior que 1:2",
+    "displasia patelar tipo C de WIBERG",
+    "anteversão femoral acima de 35 graus"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "10057ea1615c"
+  },
+  {
+   "id": "fc-joelho-0042-q",
+   "questao": "joelho-0042",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Ruptura dos tendões patelar e quadricipital",
+   "subtemas": [
+    "Ruptura dos tendões patelar e quadricipital"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "A rotura do tendão do quadríceps femoral é mais comum na contração",
+   "resposta": "excêntrica com apoio do pé",
+   "explicacao": "**Excêntrica com o pé apoiado.** O quadríceps freia o joelho que é forçado à flexão sob o peso do corpo.",
+   "opcoes": [
+    "excêntrica com apoio do pé",
+    "excêntrica sem apoio do pé",
+    "concêntrica com apoio do pé",
+    "concêntrica sem apoio do pé"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "9939be8387c4"
+  },
+  {
+   "id": "fc-joelho-0044-q",
+   "questao": "joelho-0044",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesão do ligamento cruzado posterior",
+   "subtemas": [
+    "Lesão do ligamento cruzado posterior"
+   ],
+   "tipo": "Imagem",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Paciente masculino, 25 anos, vítima de acidente motociclístico há 2 semanas. Apresenta escoriação na tuberosidade tibial. Refere dor na região anterior do joelho ao subir escadas e discreto falseio durante a marcha. A principal hipótese diagnóstica é a",
+   "resposta": "lesão do ligamento cruzado posterior",
+   "explicacao": "**Lesão do LCP.** O impacto sobre a tuberosidade da tíbia com o joelho fletido é a pista clínica mais específica entre as opções.",
+   "opcoes": [
+    "luxação reduzida do joelho",
+    "lesão do canto posterolateral",
+    "lesão do ligamento cruzado anterior",
+    "lesão do ligamento cruzado posterior"
+   ],
+   "certa": 3,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "21a24da2a750",
+   "imagem": {
+    "arquivo": "joelho/joelho-0044-1.jpeg",
+    "legenda": "",
+    "largura": 560,
+    "altura": 471
+   }
+  },
+  {
+   "id": "fc-joelho-0046-q",
+   "questao": "joelho-0046",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesão do ligamento cruzado posterior",
+   "subtemas": [
+    "Lesão do ligamento cruzado posterior"
+   ],
+   "tipo": "Imagem",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Paciente masculino, 25 anos, vítima de acidente motociclístico. Na lesão isolada do ligamento cruzado posterior, o mecanismo de lesão característico é",
+   "resposta": "a queda com o joelho fletido com o pé em flexão plantar",
+   "explicacao": "**Queda sobre o joelho fletido com o pé em flexão plantar.** O impacto na tíbia anterior a empurra posteriormente e tensiona o LCP.",
+   "opcoes": [
+    "o trauma direto na fossa poplítea",
+    "a torção do joelho com valgo e rotação externa",
+    "a queda com o joelho fletido com o pé em flexão plantar",
+    "a queda com o joelho fletido com o pé em flexão dorsal"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "a705cb216220",
+   "imagem": {
+    "arquivo": "joelho/joelho-0046-1.jpeg",
+    "legenda": "",
+    "largura": 384,
+    "altura": 393
+   }
+  },
+  {
+   "id": "fc-joelho-0047-q",
+   "questao": "joelho-0047",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesão do ligamento cruzado posterior",
+   "subtemas": [
+    "Lesão do ligamento cruzado posterior"
+   ],
+   "tipo": "Imagem",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Paciente masculino, 25 anos, vítima de acidente motociclístico. Na reconstrução do LCP com a técnica com duplo feixe, as bandas a serem reconstruídas e a posição do joelho durante a sua fixação são",
+   "resposta": "anterolateral em flexão e posteromedial em extensão",
+   "explicacao": "**Anterolateral em flexão e posteromedial em extensão.** Essa fixação corresponde à tensão predominante de cada feixe no LCP.",
+   "opcoes": [
+    "anterolateral em flexão e posteromedial em extensão",
+    "anterolateral em extensão e posteromedial em flexão",
+    "anteromedial em flexão e posterolateral em extensão",
+    "anteromedial em extensão e posterolateral em flexão"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "575d158e2388",
+   "imagem": {
+    "arquivo": "joelho/joelho-0047-1.jpeg",
+    "legenda": "",
+    "largura": 852,
+    "altura": 550
+   }
+  },
+  {
+   "id": "fc-joelho-0048-q",
+   "questao": "joelho-0048",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Exame físico do joelho",
+   "subtemas": [
+    "Exame físico do joelho"
+   ],
+   "tipo": "Imagem",
+   "raridade": "epica",
+   "dificuldade": 3,
+   "frente": "Paciente 45 anos, sexo masculino, entorse de joelho há 1 ano. Refere episódios de dor e sinovite. A manobra demonstrada é a de",
+   "resposta": "APLEY",
+   "explicacao": "**Apley.** O decúbito ventral, joelho a aproximadamente 90 graus e manipulação do pé formam a posição característica.",
+   "opcoes": [
+    "APLEY",
+    "STIMSON",
+    "STEINMAN",
+    "MCMURRAY"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "c204a7643f38",
+   "imagem": {
+    "arquivo": "joelho/joelho-0048-1.jpeg",
+    "legenda": "",
+    "largura": 492,
+    "altura": 267
+   }
+  },
+  {
+   "id": "fc-joelho-0049-q",
+   "questao": "joelho-0049",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesões meniscais",
+   "subtemas": [
+    "Lesões meniscais"
+   ],
+   "tipo": "Imagem",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "A vascularização é maior no menisco",
+   "resposta": "medial de até 30% proveniente da genicular inferior",
+   "explicacao": "**Medial, até cerca de 30%, com contribuição genicular inferior.** É a combinação que melhor expressa a maior penetração vascular periférica adotada pela banca.",
+   "opcoes": [
+    "lateral de até 40% proveniente da genicular superior",
+    "medial de até 30% proveniente da genicular inferior",
+    "lateral de até 30% proveniente da genicular inferior",
+    "medial de até 40% proveniente da genicular superior"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "0bfa9d055abf",
+   "imagem": {
+    "arquivo": "joelho/joelho-0049-1.jpeg",
+    "legenda": "",
+    "largura": 264,
+    "altura": 271
+   }
+  },
+  {
+   "id": "fc-joelho-0051-q",
+   "questao": "joelho-0051",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesão do ligamento cruzado anterior",
+   "subtemas": [
+    "Lesão do ligamento cruzado anterior"
+   ],
+   "tipo": "Imagem",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Paciente 45 anos, sexo feminino, entorse de joelho há 1 ano. A sutura meniscal é mais bem indicada na lesão",
+   "resposta": "longitudinal, periférica com lesão do LCA",
+   "explicacao": "**Longitudinal periférica com lesão do LCA, presumindo reconstrução conjunta.** O padrão e a localização favorecem cicatrização, e a estabilização do LCA melhora o contexto do reparo.",
+   "opcoes": [
+    "radial, central sem lesão do LCA",
+    "radial, central com lesão do LCA",
+    "longitudinal, periférica com lesão do LCA",
+    "longitudinal, periférica sem lesão do LCA"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "8d0ebb40e790",
+   "imagem": {
+    "arquivo": "joelho/joelho-0051-1.jpeg",
+    "legenda": "",
+    "largura": 264,
+    "altura": 271
+   }
+  },
+  {
+   "id": "fc-joelho-0053-q",
+   "questao": "joelho-0053",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Menisco discoide",
+   "subtemas": [
+    "Menisco discoide"
+   ],
+   "tipo": "Imagem",
+   "raridade": "epica",
+   "dificuldade": 3,
+   "frente": "O menisco discoide representado na figura a seguir, de acordo com a classificação de WATANABE, corresponde ao tipo",
+   "resposta": "III",
+   "explicacao": "**Tipo III, variante de Wrisberg.** O critério é a falta de fixação posterior meniscotibial habitual, com hipermobilidade do menisco lateral.",
+   "opcoes": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2022,
+   "fonte": "c8ceec13790e",
+   "imagem": {
+    "arquivo": "joelho/joelho-0053-1.jpeg",
+    "legenda": "",
+    "largura": 388,
+    "altura": 586
+   }
+  },
+  {
+   "id": "fc-joelho-0058-q",
+   "questao": "joelho-0058",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Artroscopia do joelho",
+   "subtemas": [
+    "Artroscopia do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "rara",
+   "dificuldade": 2,
+   "frente": "Na artroscopia do joelho, a confecção de um portal medial muito alto aumenta o risco de",
+   "resposta": "visualização inadequada do corno posterior do menisco",
+   "explicacao": "**Acesso inadequado ao corno posterior.** Um portal anteromedial alto dificulta a trajetória do instrumental até a porção posterior do menisco.",
+   "opcoes": [
+    "lesão do tendão patelar",
+    "lesão do corno anterior do menisco",
+    "visualização inadequada do corno posterior do menisco",
+    "penetração da gordura de HOFFA, com risco de hemorragia"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2021,
+   "fonte": "301e215bb66c"
+  },
+  {
+   "id": "fc-joelho-0059-q",
+   "questao": "joelho-0059",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesão do ligamento cruzado posterior",
+   "subtemas": [
+    "Lesão do ligamento cruzado posterior"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na ressonância magnética do joelho, o sinal do “duplo LCP” é característico da lesão",
+   "resposta": "meniscal em “alça de balde”",
+   "explicacao": "**Lesão meniscal em alça de balde.** O fragmento deslocado simula um segundo LCP no sagital.",
+   "opcoes": [
+    "meniscal em “alça de balde”",
+    "do ligamento de WRISBERG",
+    "do ligamento cruzado anterior",
+    "parcial do ligamento cruzado posterior"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2021,
+   "fonte": "ef25dd0303b5"
+  },
+  {
+   "id": "fc-joelho-0060-q",
+   "questao": "joelho-0060",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesão do ligamento cruzado posterior",
+   "subtemas": [
+    "Lesão do ligamento cruzado posterior"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na lesão do ligamento cruzado posterior associada à do canto posterolateral, a lesão nervosa mais frequente é a do nervo",
+   "resposta": "fibular comum",
+   "explicacao": "**Nervo fibular comum.** Sua passagem superficial ao redor do colo da fíbula o coloca em risco na lesão posterolateral.",
+   "opcoes": [
+    "tibial",
+    "fibular comum",
+    "fibular profundo",
+    "fibular superficial"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2021,
+   "fonte": "e3e5ca1f4011"
+  },
+  {
+   "id": "fc-joelho-0061-q",
+   "questao": "joelho-0061",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Imagem",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "No acesso posteromedial ao joelho visualizado na imagem a seguir, descrito por GALLA e LOBEHOFFER e modificado por FAKLER, a dissecção ocorre entre",
+   "resposta": "o semimembranoso e o gastrocnêmio medial",
+   "explicacao": "**Semimembranoso e gastrocnêmio medial.** É o intervalo profundo que conduz à face posteromedial da tíbia proximal.",
+   "opcoes": [
+    "o grácil e o semitendíneo",
+    "o semitendíneo e o semimembranoso",
+    "o grácil e o gastrocnêmio medial",
+    "o semimembranoso e o gastrocnêmio medial"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2021,
+   "fonte": "d61186a41688",
+   "imagem": {
+    "arquivo": "joelho/joelho-0061-1.jpeg",
+    "legenda": "",
+    "largura": 356,
+    "altura": 418
+   }
+  },
+  {
+   "id": "fc-joelho-0071-q",
+   "questao": "joelho-0071",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesão do ligamento cruzado anterior",
+   "subtemas": [
+    "Lesão do ligamento cruzado anterior",
+    "Lesões meniscais"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "São consideradas situações ideais que propiciam a cicatrização do reparo meniscal",
+   "resposta": "Associação com lesão do ligamento cruzado anterior, lesão aguda e lesão periférica",
+   "explicacao": "**Lesão aguda, periférica e tratada junto ao LCA.** A combinação reúne melhor suprimento sanguíneo, bordas menos degeneradas e estabilidade após a reconstrução ligamentar.",
+   "opcoes": [
+    "Associação com lesão do ligamento cruzado anterior, lesão aguda e lesão periférica",
+    "Lesão aguda, lesão periférica e lesão radial",
+    "Lesão periférica, lesão radial e associação com lesão do ligamento cruzado anterior",
+    "Lesão radial, associação com lesão do ligamento cruzado anterior e lesão aguda"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "bda464262d72"
+  },
+  {
+   "id": "fc-joelho-0072-q",
+   "questao": "joelho-0072",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Osteocondrite dissecante",
+   "subtemas": [
+    "Osteocondrite dissecante"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A localização mais frequente da osteocondrite dissecante no joelho é:",
+   "resposta": "Lateral no côndilo femoral medial",
+   "explicacao": "**Face lateral do côndilo femoral medial.** É a localização anatômica mais frequente da osteocondrite dissecante no joelho.",
+   "opcoes": [
+    "Lateral no côndilo femoral medial",
+    "Medial no côndilo femoral lateral",
+    "Posterolateral no côndilo femoral lateral",
+    "Zona de carga do côndilo femoral medial"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "c0a82e2be96e"
+  },
+  {
+   "id": "fc-joelho-0075-q",
+   "questao": "joelho-0075",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Osteonecrose do joelho",
+   "subtemas": [
+    "Osteonecrose do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "rara",
+   "dificuldade": 2,
+   "frente": "É causa secundária de osteonecrose de joelho o(a)",
+   "resposta": "hemoglobinopatias",
+   "explicacao": "**Hemoglobinopatias são causa reconhecida de osteonecrose secundária.** A doença falciforme é o exemplo clássico, pela obstrução da microcirculação óssea.",
+   "opcoes": [
+    "hepatite",
+    "diabetes",
+    "tabagismo",
+    "hemoglobinopatias"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "309408336b02"
+  },
+  {
+   "id": "fc-joelho-0077-q",
+   "questao": "joelho-0077",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Gonartrose e osteotomias",
+   "subtemas": [
+    "Gonartrose e osteotomias"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "É contra-indicação de osteotomia proximal da tíbia a",
+   "resposta": "flexão do joelho menor que 90 graus",
+   "explicacao": "**Flexão inferior a 90 graus.** A limitação acentuada de mobilidade compromete o resultado funcional esperado da osteotomia tibial alta.",
+   "opcoes": [
+    "correção menor que 20 graus",
+    "doença vascular periférica leve",
+    "flexão do joelho menor que 90 graus",
+    "subluxação tibial lateral de mais de 0,5cm"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "16daa5a68302"
+  },
+  {
+   "id": "fc-joelho-0078-q",
+   "questao": "joelho-0078",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Artroplastia total do joelho",
+   "subtemas": [
+    "Artroplastia total do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Os organismos mais comuns na infecção pós artroplastia de joelho são",
+   "resposta": "S. aureus, S. epidermidis e cepas de Streptococcus",
+   "explicacao": "**S. aureus, S. epidermidis e estreptococos.** Os três grupos compõem a resposta mais abrangente entre as alternativas para os agentes comuns da infecção periprotética.",
+   "opcoes": [
+    "S. aureus e S. epidermidis",
+    "S. aureus e cepas de Streptococcus",
+    "S. aureus, S. epidermidis e cepas de Streptococcus",
+    "S. aureus, S. epidermidis e cepas de Pseudomonas"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "1328c4328582"
+  },
+  {
+   "id": "fc-joelho-0079-q",
+   "questao": "joelho-0079",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesões meniscais",
+   "subtemas": [
+    "Lesões meniscais"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A rotação interna do fêmur sobre a tíbia, com joelho inicialmente em flexão lesiona predominantemente o corno posterior do menisco",
+   "resposta": "medial de forma longitudinal",
+   "explicacao": "**Corno posterior do menisco medial, em traço longitudinal.** A menor mobilidade medial favorece seu aprisionamento no movimento rotacional descrito.",
+   "opcoes": [
+    "lateral de forma radial",
+    "medial de forma radial",
+    "lateral de forma longitudinal",
+    "medial de forma longitudinal"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "e02cd1a2d3e0"
+  },
+  {
+   "id": "fc-joelho-0080-q",
+   "questao": "joelho-0080",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesão do ligamento cruzado anterior",
+   "subtemas": [
+    "Lesão do ligamento cruzado anterior"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A vantagem do uso de enxerto dos isquiotibiais na reconstrução do LCA é a",
+   "resposta": "baixa morbidade local",
+   "explicacao": "**Menor morbidade local da colheita.** Em geral, o enxerto dos flexores causa menos dor anterior e menos incômodo ao ajoelhar do que o enxerto patelar.",
+   "opcoes": [
+    "alta tensão de força",
+    "baixa morbidade local",
+    "grande estoque para reintervenções",
+    "maior facilidade de cicatrização no túnel ósseo"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "a0513083ccc9"
+  },
+  {
+   "id": "fc-joelho-0081-q",
+   "questao": "joelho-0081",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Instabilidade femoropatelar",
+   "subtemas": [
+    "Instabilidade femoropatelar",
+    "Gonartrose e osteotomias"
+   ],
+   "tipo": "Imagem",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "O exame abaixo no diagnóstico e tratamento da instabilidade femoropatelar indica osteotomia da TAT se a distância do sulco (TAGT) for",
+   "resposta": "maior de 20 mm",
+   "explicacao": "**Mais de 20 mm na tomografia.** Esse é o limiar clássico de TA-GT patológico que sustenta a indicação de medialização da tuberosidade no contexto clínico apropriado.",
+   "opcoes": [
+    "maior que 10 mm",
+    "maior que 15 mm",
+    "maior de 20 mm",
+    "maior que 25 mm"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "0b4b52245a25",
+   "imagem": {
+    "arquivo": "joelho/joelho-0081-1.jpeg",
+    "legenda": "",
+    "largura": 380,
+    "altura": 400
+   }
+  },
+  {
+   "id": "fc-joelho-0101-q",
+   "questao": "joelho-0101",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesão do ligamento cruzado posterior",
+   "subtemas": [
+    "Lesão do ligamento cruzado posterior"
+   ],
+   "tipo": "Imagem",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "No tratamento cirúrgico das lesões do canto posterolateral do joelho, as imagens a seguir demonstram a técnica de",
+   "resposta": "LAPRADE",
+   "explicacao": "**Técnica de LaPrade.** Os túneis femorais, fibular e tibial da figura correspondem à reconstrução anatômica das principais estruturas posterolaterais.",
+   "opcoes": [
+    "LARSON",
+    "CLANCY",
+    "LAPRADE",
+    "HUGHSTON"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "33d7ba86dffd",
+   "imagem": {
+    "arquivo": "joelho/joelho-0101-1.jpeg",
+    "legenda": "",
+    "largura": 367,
+    "altura": 288
+   }
+  },
+  {
+   "id": "fc-joelho-0104-q",
+   "questao": "joelho-0104",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Imagem",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "A estrutura assinalada é o músculo",
+   "resposta": "plantar delgado",
+   "explicacao": "**Plantar delgado.** A seta aponta o ventre pequeno ligado a um tendão fino que percorre a panturrilha, padrão anatômico do plantaris.",
+   "opcoes": [
+    "sóleo",
+    "obliquo",
+    "poplíteo",
+    "plantar delgado"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "16f8e80b3da4",
+   "imagem": {
+    "arquivo": "joelho/joelho-0104-1.jpeg",
+    "legenda": "",
+    "largura": 204,
+    "altura": 517
+   }
+  },
+  {
+   "id": "fc-joelho-0105-q",
+   "questao": "joelho-0105",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Imagem do joelho",
+   "subtemas": [
+    "Imagem do joelho"
+   ],
+   "tipo": "Imagem",
+   "raridade": "epica",
+   "dificuldade": 3,
+   "frente": "Na imagem de ressonância magnética de joelho a seguir, a estrutura assinalada é o ligamento",
+   "resposta": "de HUMPHRY",
+   "explicacao": "**Ligamento de Humphrey.** A banda indicada passa anteriormente ao LCP, relação anatômica que define o meniscofemoral anterior.",
+   "opcoes": [
+    "intermeniscal",
+    "de HUMPHRY",
+    "de WRISBERG",
+    "cruzado anterior"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "6b1847c99477",
+   "imagem": {
+    "arquivo": "joelho/joelho-0105-1.jpeg",
+    "legenda": "",
+    "largura": 352,
+    "altura": 362
+   }
+  },
+  {
+   "id": "fc-joelho-0106-q",
+   "questao": "joelho-0106",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Vias de acesso ao joelho",
+   "subtemas": [
+    "Vias de acesso ao joelho"
+   ],
+   "tipo": "Imagem",
+   "raridade": "comum",
+   "dificuldade": 3,
+   "frente": "A estrutura assinalada é um ramo do nervo",
+   "resposta": "safeno",
+   "explicacao": "**É ramo do nervo safeno.** O ramo infrapatelar cruza superficialmente a face anterior do joelho a partir do lado medial, como mostra a figura.",
+   "opcoes": [
+    "tibial",
+    "safeno",
+    "obturatório",
+    "cutâneo femoral anterior"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "1c205b73c8ab",
+   "imagem": {
+    "arquivo": "joelho/joelho-0106-1.jpeg",
+    "legenda": "",
+    "largura": 370,
+    "altura": 405
+   }
+  },
+  {
+   "id": "fc-joelho-0107-q",
+   "questao": "joelho-0107",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Imagem do joelho",
+   "subtemas": [
+    "Imagem do joelho"
+   ],
+   "tipo": "Imagem",
+   "raridade": "epica",
+   "dificuldade": 3,
+   "frente": "Na imagem de ressonância magnética de joelho, a estrutura assinalada é o",
+   "resposta": "tendão poplíteo",
+   "explicacao": "**Tendão poplíteo.** A faixa indicada atravessa o hiato adjacente ao menisco lateral, posição característica desse tendão.",
+   "opcoes": [
+    "menisco lateral",
+    "tendão poplíteo",
+    "ligamento popliteofibular",
+    "ligamento colateral lateral"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2023,
+   "fonte": "e69c645a6ca2",
+   "imagem": {
+    "arquivo": "joelho/joelho-0107-1.jpeg",
+    "legenda": "",
+    "largura": 388,
+    "altura": 371
+   }
+  },
+  {
+   "id": "fc-joelho-0109-q",
+   "questao": "joelho-0109",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Imagem",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "As ações principais do músculo assinalado são",
+   "resposta": "flexão e rotação medial do joelho",
+   "explicacao": "**Flexão e rotação medial do joelho.** São as ações atribuídas ao poplíteo quando se descreve o movimento da tíbia em relação ao fêmur.",
+   "opcoes": [
+    "flexão e rotação lateral do joelho",
+    "flexão e rotação medial do joelho",
+    "extensão e rotação lateral do joelho",
+    "extensão e rotação medial do joelho"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "363838905132",
+   "imagem": {
+    "arquivo": "joelho/joelho-0109-1.jpeg",
+    "legenda": "",
+    "largura": 208,
+    "altura": 526
+   }
+  },
+  {
+   "id": "fc-joelho-0111-q",
+   "questao": "joelho-0111",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho",
+    "Imagem do joelho"
+   ],
+   "tipo": "Imagem",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "A estrutura assinalada localiza-se no tendão",
+   "resposta": "da cabeça lateral do m. gastrocnêmio",
+   "explicacao": "**No tendão da cabeça lateral do gastrocnêmio.** A estrutura assinalada é a fabela, sesamoide da região posterolateral.",
+   "opcoes": [
+    "do m. poplíteo",
+    "do m. semimembranáceo",
+    "da cabeça medial do m. gastrocnêmio",
+    "da cabeça lateral do m. gastrocnêmio"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "b43ab0d3e548",
+   "imagem": {
+    "arquivo": "joelho/joelho-0111-1.jpeg",
+    "legenda": "",
+    "largura": 407,
+    "altura": 385
+   }
+  },
+  {
+   "id": "fc-joelho-0113-q",
+   "questao": "joelho-0113",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Imagem",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Na região assinalada está inserido o tendão do músculo",
+   "resposta": "sartório",
+   "explicacao": "**Sartório.** Seu tendão integra a pata de ganso e se fixa na região anteromedial da tíbia proximal assinalada.",
+   "opcoes": [
+    "vasto medial",
+    "sartório",
+    "bíceps femoral",
+    "semimembranáceo"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "f63edae1f34c",
+   "imagem": {
+    "arquivo": "joelho/joelho-0113-1.jpeg",
+    "legenda": "",
+    "largura": 189,
+    "altura": 431
+   }
+  },
+  {
+   "id": "fc-joelho-0114-q",
+   "questao": "joelho-0114",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Imagem",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "A estrutura assinalada insere-se",
+   "resposta": "no côndilo tibial lateral",
+   "explicacao": "**No côndilo tibial lateral, no tubérculo de Gerdy.** Essa é a inserção distal principal do trato iliotibial mostrado na imagem.",
+   "opcoes": [
+    "na cabeça da fíbula",
+    "no côndilo tibial lateral",
+    "na tuberosidade da tíbia",
+    "no côndilo femoral lateral"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "105bded53d18",
+   "imagem": {
+    "arquivo": "joelho/joelho-0114-1.jpeg",
+    "legenda": "",
+    "largura": 215,
+    "altura": 435
+   }
+  },
+  {
+   "id": "fc-joelho-0124-q",
+   "questao": "joelho-0124",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Artroplastia total do joelho",
+   "subtemas": [
+    "Artroplastia total do joelho",
+    "Gonartrose e osteotomias"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Na classificação de Alback, modificada por Keyes, para a artrose do joelho, é uma característica do grau 3",
+   "resposta": "a parte posterior do platô intacta",
+   "explicacao": "**A porção posterior do platô permanece intacta.** Esse achado acompanha o desgaste ósseo inferior a 5 mm no grau 3 da classificação modificada por Keyes.",
+   "opcoes": [
+    "a redução do espaço articular",
+    "a obliteração do espaço articular",
+    "o desgaste do platô tibial entre 5-10mm",
+    "a parte posterior do platô intacta"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2023,
+   "fonte": "87ed53f81275"
+  },
+  {
+   "id": "fc-joelho-0125-q",
+   "questao": "joelho-0125",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Osteocondrite dissecante",
+   "subtemas": [
+    "Osteocondrite dissecante"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Das seguintes classificações, qual pode ser utilizada na Osteocondrite Dissecante do Joelho?",
+   "resposta": "Dipaola",
+   "explicacao": "**DiPaola.** Seu estadiamento por ressonância e correlação artroscópica é empregado na osteocondrite dissecante.",
+   "opcoes": [
+    "Hawkins",
+    "Insall",
+    "Dipaola",
+    "Marchant"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2023,
+   "fonte": "806b6e0a985e"
+  },
+  {
+   "id": "fc-joelho-0126-q",
+   "questao": "joelho-0126",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Artroplastia total do joelho",
+   "subtemas": [
+    "Artroplastia total do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Quais os valores considerados razoáveis de abertura em valgo e varo num joelho submetido a prótese total?",
+   "resposta": "1-2mm",
+   "explicacao": "**Abertura de 1 a 2 mm.** É a faixa pequena e funcionalmente aceitável procurada pela questão para estresse em varo e valgo.",
+   "opcoes": [
+    "0-1mm",
+    "1-2mm",
+    "2-3mm",
+    "3-4mm"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "182eccdb8d0c"
+  },
+  {
+   "id": "fc-joelho-0128-q",
+   "questao": "joelho-0128",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesões meniscais",
+   "subtemas": [
+    "Lesões meniscais"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Segundo a classificação de O'Connor das lesões meniscais no joelho, as lesões degenerativas do menisco correspondem a qual tipo?",
+   "resposta": "V",
+   "explicacao": "**Tipo V.** É o código atribuído à lesão meniscal degenerativa na classificação de O'Connor adotada pela banca.",
+   "opcoes": [
+    "V",
+    "IV",
+    "III",
+    "II"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "aa5049c7259a"
+  },
+  {
+   "id": "fc-joelho-0131-q",
+   "questao": "joelho-0131",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Gonartrose e osteotomias",
+   "subtemas": [
+    "Gonartrose e osteotomias"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Em relação ao tratamento da osteoartrite do joelho qual método de tratamento abaixo apresenta evidência de melhora na evolução da patologia?",
+   "resposta": "Perda de peso em paciente com IMC>25",
+   "explicacao": "**Perda de peso quando há excesso ponderal.** Reduz carga articular e oferece benefício clínico sustentado quando integrada a exercícios e manutenção de hábitos.",
+   "opcoes": [
+    "Ácido hialurônico",
+    "Perda de peso em paciente com IMC>25",
+    "Glucosamina e condroitina",
+    "Acupuntura"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "3a75a93fc478"
+  },
+  {
+   "id": "fc-joelho-0132-q",
+   "questao": "joelho-0132",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Imagem do joelho",
+   "subtemas": [
+    "Imagem do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "A relação entre o comprimento do tendão e o comprimento da patela acima de qual dos valores abaixo indica lesão no tendão patelar?",
+   "resposta": "1,2",
+   "explicacao": "**Acima de 1,2.** Esse valor define patela alta pelo índice clássico e, no contexto traumático adequado, levanta suspeita de ruptura do tendão patelar.",
+   "opcoes": [
+    "1,5",
+    "2",
+    "0,8",
+    "1,2"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "75c3f699ff8b"
+  },
+  {
+   "id": "fc-joelho-0134-q",
+   "questao": "joelho-0134",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesões meniscais",
+   "subtemas": [
+    "Lesões meniscais",
+    "Joelho na criança"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Nas crianças e adolescentes qual o tipo mais comum de lesão meniscal?",
+   "resposta": "Longitudinal",
+   "explicacao": "**Lesão longitudinal.** É o padrão de ruptura meniscal mais associado ao trauma em crianças e adolescentes nesta classificação.",
+   "opcoes": [
+    "Radial",
+    "Longitudinal",
+    "Alça de balde",
+    "Obliqua"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "23355bed67e8"
+  },
+  {
+   "id": "fc-joelho-0142-q",
+   "questao": "joelho-0142",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Artroscopia do joelho",
+   "subtemas": [
+    "Artroscopia do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "rara",
+   "dificuldade": 2,
+   "frente": "Na artroscopia do joelho para reparo de uma lesão instável no corno anterior do menisco, a melhor opção de sutura é a",
+   "resposta": "outside-in",
+   "explicacao": "**Outside-in.** A entrada de fora para dentro permite posicionar a sutura em ângulo favorável no corno anterior.",
+   "opcoes": [
+    "all-inside",
+    "all-outside",
+    "outside-in",
+    "inside-out"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "d31f009516bf"
+  },
+  {
+   "id": "fc-joelho-0143-q",
+   "questao": "joelho-0143",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Instabilidade femoropatelar",
+   "subtemas": [
+    "Instabilidade femoropatelar"
+   ],
+   "tipo": "Imagem",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Instabilidade Femoropatelar A sobreposição de imagens de tomografia computadorizada de joelho visualizada a seguir indica a aferição",
+   "resposta": "da TAGT",
+   "explicacao": "**Distância TA-GT.** As duas perpendiculares representam sulco troclear e tuberosidade tibial, cuja separação é a medida pedida.",
+   "opcoes": [
+    "da TAGT",
+    "da altura patelar",
+    "da displasia troclear",
+    "do ângulo de inclinação patelar"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "5691f5eb8d47",
+   "imagem": {
+    "arquivo": "joelho/joelho-0143-1.jpeg",
+    "legenda": "",
+    "largura": 480,
+    "altura": 460
+   }
+  },
+  {
+   "id": "fc-joelho-0144-q",
+   "questao": "joelho-0144",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Imagem",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "A estrutura indicada na figura a seguir é o",
+   "resposta": "ligamento anterolateral",
+   "explicacao": "**Ligamento anterolateral.** Sua inserção tibial entre Gerdy e a cabeça da fíbula confirma a identificação na figura.",
+   "opcoes": [
+    "tendão poplíteo",
+    "ligamento arqueado",
+    "ligamento anterolateral",
+    "ligamento colateral lateral"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "6d71497e93c0",
+   "imagem": {
+    "arquivo": "joelho/joelho-0144-1.jpeg",
+    "legenda": "",
+    "largura": 326,
+    "altura": 382
+   }
+  },
+  {
+   "id": "fc-joelho-0145-q",
+   "questao": "joelho-0145",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Reconstrução do LCA: enxertos e túneis",
+   "subtemas": [
+    "Reconstrução do LCA: enxertos e túneis",
+    "Instabilidade femoropatelar"
+   ],
+   "tipo": "Imagem",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Os pontos de referências demonstrados na figura a seguir são utilizados como parâmetro para a confecção do túnel femoral na reconstrução do ligamento",
+   "resposta": "patelofemoral medial",
+   "explicacao": "**Ligamento patelofemoral medial.** As linhas e o ponto da figura representam a referência radiográfica para sua origem e túnel femoral.",
+   "opcoes": [
+    "colateral tibial",
+    "oblíquo posterior",
+    "cruzado posterior",
+    "patelofemoral medial"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "e272c5f8f8be",
+   "imagem": {
+    "arquivo": "joelho/joelho-0145-1.jpeg",
+    "legenda": "",
+    "largura": 814,
+    "altura": 665
+   }
+  },
+  {
+   "id": "fc-joelho-0146-q",
+   "questao": "joelho-0146",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Imagem",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Na figura a seguir, em visão posterior da perna, o nervo responsável pela inervação do músculo indicado é o",
+   "resposta": "tibial",
+   "explicacao": "**Nervo tibial.** É o nervo motor dos músculos do compartimento posterior da perna, inclusive do poplíteo indicado.",
+   "opcoes": [
+    "tibial",
+    "safeno",
+    "fibular profundo",
+    "fibular superficial"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "c71505c98954",
+   "imagem": {
+    "arquivo": "joelho/joelho-0146-1.jpeg",
+    "legenda": "",
+    "largura": 317,
+    "altura": 457
+   }
+  },
+  {
+   "id": "fc-joelho-0147-q",
+   "questao": "joelho-0147",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Imagem",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Na figura a seguir, a estrutura indicada corresponde ao",
+   "resposta": "nervo fibular superficial",
+   "explicacao": "**Nervo fibular superficial.** Seu percurso longitudinal no compartimento lateral coincide com o nervo assinalado.",
+   "opcoes": [
+    "nervo tibial",
+    "nervo genicular inferior",
+    "nervo fibular superficial",
+    "ramo infrapatelar do nervo safeno"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2024,
+   "fonte": "153f8a3205ac",
+   "imagem": {
+    "arquivo": "joelho/joelho-0147-1.jpeg",
+    "legenda": "",
+    "largura": 341,
+    "altura": 547
+   }
+  },
+  {
+   "id": "fc-joelho-0149-q",
+   "questao": "joelho-0149",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Imagem do joelho",
+   "subtemas": [
+    "Imagem do joelho"
+   ],
+   "tipo": "Imagem",
+   "raridade": "epica",
+   "dificuldade": 3,
+   "frente": "As imagens a seguir de ressonância magnética de joelho indicam lesão",
+   "resposta": "da raiz do menisco medial",
+   "explicacao": "**Lesão da raiz do menisco medial.** A interrupção junto à inserção posterior, com extrusão e perda do contorno habitual, sustenta essa leitura da ressonância.",
+   "opcoes": [
+    "da raiz do menisco medial",
+    "vertical do menisco medial",
+    "em rampa meniscocapsular medial",
+    "em alça de balde do menisco medial"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "3efd92122b8c",
+   "imagem": {
+    "arquivo": "joelho/joelho-0149-1.jpeg",
+    "legenda": "",
+    "largura": 1247,
+    "altura": 525
+   }
+  },
+  {
+   "id": "fc-joelho-0150-q",
+   "questao": "joelho-0150",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Imagem",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "O músculo indicado na figura a seguir é o",
+   "resposta": "poplíteo",
+   "explicacao": "**Poplíteo.** A orientação oblíqua e a posição profunda, imediatamente abaixo da fossa poplítea, identificam o músculo da figura.",
+   "opcoes": [
+    "solear",
+    "poplíteo",
+    "semitendíneo",
+    "semimembranáceo"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "b4fcd4717394",
+   "imagem": {
+    "arquivo": "joelho/joelho-0150-1.jpeg",
+    "legenda": "",
+    "largura": 228,
+    "altura": 468
+   }
+  },
+  {
+   "id": "fc-joelho-0151-q",
+   "questao": "joelho-0151",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho",
+    "Biomecânica do joelho"
+   ],
+   "tipo": "Imagem",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "O ângulo formado pelas linhas representadas na figura a seguir é o",
+   "resposta": "Q",
+   "explicacao": "**Ângulo Q.** Os marcos EIAS, centro da patela e tuberosidade tibial mostrados são sua definição clássica.",
+   "opcoes": [
+    "Q",
+    "poplíteo",
+    "mecânico",
+    "anatômico"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "6c1cc01238a1",
+   "imagem": {
+    "arquivo": "joelho/joelho-0151-1.jpeg",
+    "legenda": "",
+    "largura": 585,
+    "altura": 679
+   }
+  },
+  {
+   "id": "fc-joelho-0152-q",
+   "questao": "joelho-0152",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Reconstrução do LCA: enxertos e túneis",
+   "subtemas": [
+    "Reconstrução do LCA: enxertos e túneis"
+   ],
+   "tipo": "Imagem",
+   "raridade": "rara",
+   "dificuldade": 3,
+   "frente": "Na figura a seguir, demonstrando a técnica para retirada dos tendões flexores para enxerto, o tendão que está sendo afastado é o do músculo",
+   "resposta": "sartório",
+   "explicacao": "**Sartório.** A estrutura larga e superficial afastada expõe grácil e semitendíneo para a coleta.",
+   "opcoes": [
+    "grácil",
+    "sartório",
+    "semitendíneo",
+    "semimembranáceo"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "d17ad92de5fe",
+   "imagem": {
+    "arquivo": "joelho/joelho-0152-1.jpeg",
+    "legenda": "",
+    "largura": 389,
+    "altura": 452
+   }
+  },
+  {
+   "id": "fc-joelho-0153-q",
+   "questao": "joelho-0153",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Imagem",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "O músculo indicado na figura a seguir é inervado pelo",
+   "resposta": "fibular profundo",
+   "explicacao": "**Nervo fibular profundo.** O tibial anterior indicado integra o compartimento anterior da perna, território motor desse nervo.",
+   "opcoes": [
+    "sural",
+    "tibial",
+    "fibular profundo",
+    "fibular superficial"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "5de6ddb1efd8",
+   "imagem": {
+    "arquivo": "joelho/joelho-0153-1.jpeg",
+    "legenda": "",
+    "largura": 296,
+    "altura": 526
+   }
+  },
+  {
+   "id": "fc-joelho-0167-q",
+   "questao": "joelho-0167",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Artroplastia total do joelho",
+   "subtemas": [
+    "Artroplastia total do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na artroplastia total do joelho, o método utilizado para aumentar a constrição da prótese é aumentar",
+   "resposta": "a espessura do poste tibial do polietileno",
+   "explicacao": "**Aumentar a espessura do poste tibial.** Em conjunto com a geometria femoral correspondente, um poste mais robusto eleva a contenção mecânica da prótese.",
+   "opcoes": [
+    "a altura do polietileno",
+    "o tamanho do componente tibial",
+    "o tamanho do componente femoral",
+    "a espessura do poste tibial do polietileno"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "CET-PR",
+   "ano": null,
+   "fonte": "7a7372ad1252"
+  },
+  {
+   "id": "fc-joelho-0168-q",
+   "questao": "joelho-0168",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Artroplastia total do joelho",
+   "subtemas": [
+    "Artroplastia total do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Nos acessos anteriores para realizar a artroplastia do joelho, há um grande risco de lesão do nervo safeno, especificamente do seu ramo",
+   "resposta": "infrapatelar",
+   "explicacao": "**Ramo infrapatelar do nervo safeno.** Seu trajeto superficial sob a patela explica o risco nas vias anteriores de artroplastia.",
+   "opcoes": [
+    "suprapatelar",
+    "mediopatelar",
+    "infrapatelar",
+    "lateropatelar"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "CET-PR",
+   "ano": null,
+   "fonte": "a24e63b7c119"
+  },
+  {
+   "id": "fc-joelho-0169-q",
+   "questao": "joelho-0169",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Imagem",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Na figura abaixo, o tendão representado pela seta é o",
+   "resposta": "semimembranoso",
+   "explicacao": "**Semimembranoso.** A inserção tibial profunda e posteromedial indicada difere dos tendões superficiais da pata de ganso.",
+   "opcoes": [
+    "semitendinoso",
+    "semimembranoso",
+    "sartório",
+    "grácil"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "CET-PR",
+   "ano": null,
+   "fonte": "5d3e74926b6e",
+   "imagem": {
+    "arquivo": "joelho/joelho-0169-1.jpeg",
+    "legenda": "",
+    "largura": 370,
+    "altura": 292
+   }
+  },
+  {
+   "id": "fc-joelho-0170-q",
+   "questao": "joelho-0170",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesões meniscais",
+   "subtemas": [
+    "Lesões meniscais",
+    "Lesão do ligamento cruzado anterior"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A lesão da região meniscocapsular do corno posterior do menisco medial comprometendo o ligamento meniscotibial também é conhecida como lesão tipo",
+   "resposta": "rampa",
+   "explicacao": "**Lesão em rampa.** A ruptura meniscocapsular ou meniscotibial do corno posterior medial corresponde a esse termo.",
+   "opcoes": [
+    "sleeve",
+    "zip",
+    "rampa",
+    "alça"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "CET-PR",
+   "ano": null,
+   "fonte": "22950131dbf8"
+  },
+  {
+   "id": "fc-joelho-0171-q",
+   "questao": "joelho-0171",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesão do ligamento cruzado anterior",
+   "subtemas": [
+    "Lesão do ligamento cruzado anterior"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na reconstrução do ligamento cruzado anterior, utilizando enxerto patelar, as complicações pós- operatórias mais comuns são a perda de movimento e",
+   "resposta": "dor anterior",
+   "explicacao": "**Dor anterior do joelho.** Junto à limitação de movimento, é a morbidade pós-operatória característica do enxerto patelar.",
+   "opcoes": [
+    "dor anterior",
+    "infecção superficial",
+    "trombose venosa profunda",
+    "instabilidade residual"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "CET-PR",
+   "ano": null,
+   "fonte": "703264d8304c"
+  },
+  {
+   "id": "fc-joelho-0172-q",
+   "questao": "joelho-0172",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesão do ligamento cruzado anterior",
+   "subtemas": [
+    "Lesão do ligamento cruzado anterior",
+    "Imagem do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na radiografia com estresse em varo do joelho, com abertura de 3 mm comparativamente ao lado contralateral, significa uma lesão",
+   "resposta": "isolada do ligamento colateral lateral",
+   "explicacao": "**Lesão isolada do colateral lateral.** Cerca de 3 mm de abertura lateral adicional se aproxima da referência de 2,7 mm para insuficiência isolada desse ligamento.",
+   "opcoes": [
+    "isolada do ligamento colateral lateral",
+    "do ligamento colateral lateral e do tendão popliteo",
+    "do ligamento colateral lateral e todas as estruturas do canto posterolateral",
+    "do ligamento colateral lateral e ligamento popliteofibular"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "CET-PR",
+   "ano": null,
+   "fonte": "d196ae3bcc4a"
+  },
+  {
+   "id": "fc-joelho-0173-q",
+   "questao": "joelho-0173",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Ruptura dos tendões patelar e quadricipital",
+   "subtemas": [
+    "Ruptura dos tendões patelar e quadricipital"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Na técnica de reparo das lesões agudas do tendão patelar podemos realizar cerclagem de proteção com fios de alta resistência. Marque a correta sobre o tensionamento:",
+   "resposta": "Realizado com 30º de flexão",
+   "explicacao": "**Trinta graus de flexão.** É a posição de tensionamento da cerclagem protetora adotada pela técnica perguntada.",
+   "opcoes": [
+    "Realizado com 30º de flexão",
+    "Realizado com 45º de flexão",
+    "Realizado com 60º de flexão",
+    "Realizado com 90º de flexão"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "3857933239d0"
+  },
+  {
+   "id": "fc-joelho-0174-q",
+   "questao": "joelho-0174",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesão do ligamento cruzado posterior",
+   "subtemas": [
+    "Lesão do ligamento cruzado posterior"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O ligamento cruzado posterior é formado por duas bandas, sendo a mais espessa a banda",
+   "resposta": "anterolateral",
+   "explicacao": "**Banda anterolateral.** É o maior e mais espesso dos dois feixes clássicos do ligamento cruzado posterior.",
+   "opcoes": [
+    "anterolateral",
+    "anteromedial",
+    "posterolateral",
+    "posteromedial"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "215bab2e6e60"
+  },
+  {
+   "id": "fc-joelho-0175-q",
+   "questao": "joelho-0175",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Osteocondrite dissecante",
+   "subtemas": [
+    "Osteocondrite dissecante"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A osteocondrite dissecante do joelho é mais frequentemente encontrada na",
+   "resposta": "porção lateral do côndilo femoral medial",
+   "explicacao": "**Porção lateral do côndilo femoral medial.** É a sede clássica mais frequente da osteocondrite dissecante no joelho.",
+   "opcoes": [
+    "tróclea",
+    "patela",
+    "porção medial do côndilo femoral lateral",
+    "porção lateral do côndilo femoral medial"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "9389d3577f98"
+  },
+  {
+   "id": "fc-joelho-0176-q",
+   "questao": "joelho-0176",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Instabilidade femoropatelar",
+   "subtemas": [
+    "Instabilidade femoropatelar"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na luxação patelar recidivante, o ligamento patelofemoral medial é responsável isoladamente por cerca de",
+   "resposta": "60% da estabilidade da patela",
+   "explicacao": "**Cerca de 60%.** É a aproximação clássica para a contribuição do LPFM à restrição da translação lateral da patela perto da extensão.",
+   "opcoes": [
+    "20% da estabilidade da patela",
+    "40% da estabilidade da patela",
+    "60% da estabilidade da patela",
+    "80% da estabilidade da patela"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "2e459d943584"
+  },
+  {
+   "id": "fc-joelho-0178-q",
+   "questao": "joelho-0178",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Gonartrose e osteotomias",
+   "subtemas": [
+    "Gonartrose e osteotomias"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Na osteoartrose do joelho unicompartimental medial, a osteotomia valgizante está contraindicada se houver necessidade de correção maior do que",
+   "resposta": "20 graus",
+   "explicacao": "**Mais de 20 graus.** É o limite tradicional de correção acima do qual a osteotomia tibial valgizante isolada se torna desfavorável na formulação da banca.",
+   "opcoes": [
+    "10 graus",
+    "15 graus",
+    "20 graus",
+    "25 graus"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "58991807f357"
+  },
+  {
+   "id": "fc-joelho-0179-q",
+   "questao": "joelho-0179",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesão do ligamento cruzado posterior",
+   "subtemas": [
+    "Lesão do ligamento cruzado posterior",
+    "Canto posterolateral",
+    "Gonartrose e osteotomias"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em pacientes com instabilidade posterolateral crônica do joelho, a insuficiência do ligamento cruzado posterior e deformidade em varo, é recomendada a realização de:",
+   "resposta": "Osteotomia tibial prévia ou simultânea à reconstrução ligamentar com cunha de abertura medial, aumentando o slope tibial",
+   "explicacao": "**Osteotomia de abertura medial com aumento planejado do slope, antes ou junto à reconstrução.** Corrige o varo que sobrecarrega os enxertos e pode reduzir a subluxação posterior ligada ao LCP.",
+   "opcoes": [
+    "Reparo ligamentar isolado",
+    "Reconstrução ligamentar isolada",
+    "Osteotomia tibial prévia ou simultânea à reconstrução ligamentar com cunha de abertura medial, aumentando o slope tibial",
+    "Osteotomia tibial prévia ou simultânea à reconstrução ligamentar com cunha de fechamento lateral, diminuindo o slope tibial"
+   ],
+   "certa": 2,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2025,
+   "fonte": "e921fd5e1eb7"
+  },
+  {
+   "id": "fc-joelho-0180-q",
+   "questao": "joelho-0180",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesão do ligamento cruzado anterior",
+   "subtemas": [
+    "Lesão do ligamento cruzado anterior",
+    "Lesões meniscais"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na ressonância magnética de um paciente com lesão no ligamento cruzado anterior do joelho, a presença de edema ósseo na região posteromedial da tíbia é sinal secundário:",
+   "resposta": "De lesão meniscal em rampa",
+   "explicacao": "De lesão meniscal em rampa. O edema no platô tibial posteromedial, produzido no contragolpe da redução da tíbia, é o sinal indireto mais associado à lesão da junção meniscocapsular posterior do menisco medial.",
+   "opcoes": [
+    "De lesão da raiz meniscal",
+    "De lesão meniscal em rampa",
+    "De lesão do ligamento colateral medial",
+    "Da própria lesão do ligamento cruzado anterior"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2025,
+   "fonte": "7626b0158d17"
+  },
+  {
+   "id": "fc-joelho-0181-q",
+   "questao": "joelho-0181",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Ruptura dos tendões patelar e quadricipital",
+   "subtemas": [
+    "Ruptura dos tendões patelar e quadricipital"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "A ruptura do tendão patelar acontece mais frequentemente em pacientes com:",
+   "resposta": "Menos de 40 anos, com extensão para o tecido retinacular e perda completa da extensão do joelho",
+   "explicacao": "Menos de 40 anos, com extensão para o tecido retinacular e perda completa da extensão do joelho. É o perfil típico: paciente jovem, ruptura completa que atinge os retináculos e impede a extensão ativa.",
+   "opcoes": [
+    "Mais de 40 anos, com extensão para o tecido retinacular e perda completa da extensão do joelho",
+    "Menos de 40 anos, com extensão para o tecido retinacular e perda completa da extensão do joelho",
+    "Mais de 40 anos, sem extensão para o tecido retinacular e sem perda completa da extensão do joelho",
+    "Menos de 40 anos, sem extensão para o tecido retinacular e sem perda completa da extensão do joelho"
+   ],
+   "certa": 1,
+   "batalha": false,
+   "prova": "TEOT",
+   "ano": 2025,
+   "fonte": "8c0c134f182d"
+  },
+  {
+   "id": "fc-joelho-0182-q",
+   "questao": "joelho-0182",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Osteocondrite dissecante",
+   "subtemas": [
+    "Osteocondrite dissecante"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Em pacientes com osteocondrite dissecante do joelho, a marcha em rotação externa para evitar o contato entre o côndilo femoral medial e a espinha tibial medial caracteriza o sinal:",
+   "resposta": "WILSON",
+   "explicacao": "Wilson. O paciente evita, rodando a tíbia para fora, o contato da espinha tibial medial com a lesão no côndilo femoral medial, que dói com a tíbia em rotação interna.",
+   "opcoes": [
+    "WILSON",
+    "SLOCUM",
+    "McINTOSH",
+    "DREHMANN"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2025,
+   "fonte": "5afa09c3a03c"
+  },
+  {
+   "id": "fc-joelho-0183-q",
+   "questao": "joelho-0183",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Artroplastia total do joelho",
+   "subtemas": [
+    "Artroplastia total do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na artroplastia do joelho, o risco de paralisia do nervo fibular está relacionado à correção da deformidade acentuada combinada em:",
+   "resposta": "Valgo e flexão",
+   "explicacao": "Valgo e flexão. Corrigir as duas deformidades alonga ao mesmo tempo o lado lateral e o posterior do joelho e estira o nervo fibular, fixo no colo da fíbula.",
+   "opcoes": [
+    "Varo e flexão",
+    "Valgo e flexão",
+    "Varo e extensão",
+    "Valgo e extensão"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2025,
+   "fonte": "a45e6e6c323c"
+  },
+  {
+   "id": "fc-joelho-0184-q",
+   "questao": "joelho-0184",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Imagem",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Na imagem a seguir, a estrutura assinalada pela seta é:",
+   "resposta": "A cabeça curta do músculo bíceps femoral",
+   "explicacao": "**Cabeça curta do bíceps femoral.** É o ventre profundo, que nasce na linha áspera e segue muscular até perto do joelho, junto ao fêmur.",
+   "opcoes": [
+    "O músculo vasto lateral",
+    "O músculo semimembranoso",
+    "A cabeça curta do músculo bíceps femoral",
+    "A cabeça longa do músculo bíceps femoral"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2025,
+   "fonte": "349c152b4589",
+   "imagem": {
+    "arquivo": "joelho/joelho-0184-teot2025.jpeg",
+    "legenda": "TEOT 2025, questão 48. Figura original do arquivo fornecido.",
+    "largura": 138,
+    "altura": 259
+   }
+  },
+  {
+   "id": "fc-joelho-0185-q",
+   "questao": "joelho-0185",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Imagem",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Na imagem a seguir, a estrutura anatômica apontada pela seta é o nervo:",
+   "resposta": "Fibular profundo",
+   "explicacao": "**Fibular profundo.** Desce com a artéria tibial anterior no compartimento anterior.",
+   "opcoes": [
+    "Tibial",
+    "Fibular comum",
+    "Fibular profundo",
+    "Fibular superficial"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2025,
+   "fonte": "987f00e149ec",
+   "imagem": {
+    "arquivo": "joelho/joelho-0185-1.jpeg",
+    "legenda": "",
+    "largura": 224,
+    "altura": 451
+   }
+  },
+  {
+   "id": "fc-joelho-0186-q",
+   "questao": "joelho-0186",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesão do ligamento cruzado posterior",
+   "subtemas": [
+    "Lesão do ligamento cruzado posterior"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na restrição à hiperextensão do joelho, o ligamento cruzado posterior:",
+   "resposta": "Age como restritor após ruptura do ligamento cruzado anterior",
+   "explicacao": "Age como restritor após ruptura do ligamento cruzado anterior. Na hiperextensão, o LCP é um restritor secundário, que passa a atuar quando o LCA e a cápsula posterior falham.",
+   "opcoes": [
+    "Não age como restritor",
+    "Age como restritor antes do ligamento cruzado anterior",
+    "Age como restritor após ruptura do ligamento cruzado anterior",
+    "Age como restritor simultaneamente ao ligamento cruzado anterior"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2025,
+   "fonte": "c5f1e8e358dd"
+  },
+  {
+   "id": "fc-joelho-0187-q",
+   "questao": "joelho-0187",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Imagem",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Na imagem a seguir, a artéria indicada pela seta é a:",
+   "resposta": "Genicular superior medial",
+   "explicacao": "**Genicular superior medial.** Ramo da poplítea que contorna o fêmur logo acima do côndilo medial.",
+   "opcoes": [
+    "Femoral profunda",
+    "Genicular descendente",
+    "Genicular superior medial",
+    "Circunflexa femoral medial"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2025,
+   "fonte": "d3633e569d0d",
+   "imagem": {
+    "arquivo": "joelho/joelho-0187-1.jpeg",
+    "legenda": "",
+    "largura": 265,
+    "altura": 444
+   }
+  },
+  {
+   "id": "fc-joelho-0188-q",
+   "questao": "joelho-0188",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Imagem do joelho",
+   "subtemas": [
+    "Imagem do joelho",
+    "Lesão do ligamento cruzado anterior"
+   ],
+   "tipo": "Imagem",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Na radiografia de joelho a seguir, a seta evidencia:",
+   "resposta": "A fratura de SEGOND",
+   "explicacao": "**Fratura de Segond.** Avulsão da borda lateral do planalto tibial, com forte associação à lesão do ligamento cruzado anterior.",
+   "opcoes": [
+    "A fabela",
+    "O sinal arqueado",
+    "A fratura de SEGOND",
+    "O sinal de PELLEGRINI-STIEDA"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2025,
+   "fonte": "a606a4617d67",
+   "imagem": {
+    "arquivo": "joelho/joelho-0188-teot2025.jpeg",
+    "legenda": "TEOT 2025, questão 103. Figura original do arquivo fornecido.",
+    "largura": 185,
+    "altura": 350
+   }
+  },
+  {
+   "id": "fc-joelho-0189-q",
+   "questao": "joelho-0189",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesões meniscais",
+   "subtemas": [
+    "Lesões meniscais"
+   ],
+   "tipo": "Imagem",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "A lesão meniscal evidenciada na figura a seguir corresponde a uma lesão:",
+   "resposta": "Radial",
+   "explicacao": "**Radial.** Corte perpendicular às fibras circunferenciais, da borda livre para a periferia.",
+   "opcoes": [
+    "Radial",
+    "Em rampa",
+    "Horizontal",
+    "Longitudinal"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2025,
+   "fonte": "2efd678343cd",
+   "imagem": {
+    "arquivo": "joelho/joelho-0189-1.png",
+    "legenda": "",
+    "largura": 954,
+    "altura": 1201
+   }
+  },
+  {
+   "id": "fc-joelho-0190-q",
+   "questao": "joelho-0190",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesões meniscais",
+   "subtemas": [
+    "Lesões meniscais"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na avaliação clínica do joelho, o sinal de PISANI indica a presença de:",
+   "resposta": "Cisto meniscal",
+   "explicacao": "Cisto meniscal. O sinal de Pisani é a massa na interlinha articular que fica evidente com o joelho estendido e desaparece ou diminui com a flexão.",
+   "opcoes": [
+    "Cisto meniscal",
+    "Cisto de Baker",
+    "Lesão em menisco discoide",
+    "Tensão excessiva do retináculo lateral"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2025,
+   "fonte": "2f8c53568890"
+  },
+  {
+   "id": "fc-joelho-0191-q",
+   "questao": "joelho-0191",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Artroplastia total do joelho",
+   "subtemas": [
+    "Artroplastia total do joelho",
+    "Outras infecções osteoarticulares"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Para o diagnóstico de infecção após artroplastia do joelho, segundo os critérios da Sociedade de Infecção Musculoesquelética (MSIS), é considerado critério maior:",
+   "resposta": "Presença de fístula",
+   "explicacao": "Presença de fístula. Uma fístula comunicando com a prótese é critério maior da MSIS e, sozinha, estabelece o diagnóstico de infecção periprotética.",
+   "opcoes": [
+    "Presença de fístula",
+    "Alfa-defensina positiva",
+    "Purulência intra-operatória",
+    "Uma amostra de cultura positiva"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT",
+   "ano": 2025,
+   "fonte": "363114719976"
+  },
+  {
+   "id": "fc-joelho-0192-q",
+   "questao": "joelho-0192",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Instabilidade femoropatelar",
+   "subtemas": [
+    "Instabilidade femoropatelar"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O ponto de SCHOTLLE, utilizado no tratamento cirúrgico da instabilidade femoropatelar está localizado imediatamente",
+   "resposta": "anterior à bissetriz da linha de BLUMENSAAT e a borda posterior do fêmur",
+   "explicacao": "Anterior à bissetriz da linha de Blumensaat e à borda posterior do fêmur. O ponto de Schöttle fica cerca de 1 mm à frente do prolongamento da cortical posterior, na altura da parte posterior da linha de Blumensaat.",
+   "opcoes": [
+    "anterior à bissetriz da linha de BLUMENSAAT e a borda anterior do fêmur",
+    "anterior à bissetriz da linha de BLUMENSAAT e a borda posterior do fêmur",
+    "posterior à bissetriz da linha de BLUMENSAAT e a borda anterior do fêmur",
+    "posterior à bissetriz da linha de BLUMENSAAT e a borda posterior do fêmur"
+   ],
+   "certa": 1,
+   "batalha": false,
+   "prova": "TEPOP",
+   "ano": 2024,
+   "fonte": "45eeec04fd79"
+  },
+  {
+   "id": "fc-joelho-0193-q",
+   "questao": "joelho-0193",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesão do ligamento cruzado anterior",
+   "subtemas": [
+    "Lesão do ligamento cruzado anterior"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A lesão combinada mais comum no joelho do jovem atleta é a do ligamento cruzado anterior com o(a)",
+   "resposta": "ligamento colateral medial",
+   "explicacao": "Ligamento colateral medial. O mecanismo de valgo com rotação externa, típico dos esportes de giro, lesa ao mesmo tempo o LCA e o LCM.",
+   "opcoes": [
+    "banda ílio-tibial",
+    "ligamento colateral lateral",
+    "ligamento colateral medial",
+    "ligamento cruzado posterior"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEPOP",
+   "ano": 2024,
+   "fonte": "29a83c609e23"
+  },
+  {
+   "id": "fc-joelho-0194-q",
+   "questao": "joelho-0194",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Instabilidade femoropatelar",
+   "subtemas": [
+    "Instabilidade femoropatelar"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em pacientes portadores de Síndrome de Down, a instabilidade femoropatelar está presente em",
+   "resposta": "8%",
+   "explicacao": "8%. É a prevalência de instabilidade femoropatelar descrita na síndrome de Down na série clássica de Dugdale e Renshaw.",
+   "opcoes": [
+    "8%",
+    "16%",
+    "24%",
+    "32%"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEPOP",
+   "ano": 2024,
+   "fonte": "c0a5e8ece4a4"
+  },
+  {
+   "id": "fc-joelho-0195-q",
+   "questao": "joelho-0195",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Menisco discoide",
+   "subtemas": [
+    "Menisco discoide"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Em relação ao menisco discóide, os sintomas mais comuns em crianças de baixa idade são",
+   "resposta": "ressalto e limitação da extensão",
+   "explicacao": "Ressalto e limitação da extensão. Na criança pequena, o menisco discoide instável pula de posição durante a extensão, causando o estalo, e impede o joelho de estender completamente.",
+   "opcoes": [
+    "dor e claudicação",
+    "dor e bloqueio articular",
+    "ressalto e instabilidade",
+    "ressalto e limitação da extensão"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TEPOP",
+   "ano": 2024,
+   "fonte": "764937874435"
+  },
+  {
+   "id": "fc-joelho-0196-q",
+   "questao": "joelho-0196",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Osteocondrite dissecante",
+   "subtemas": [
+    "Osteocondrite dissecante"
+   ],
+   "tipo": "Imagem",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Na lesão da osteocondrite dissecante do joelho, a localização mais comum e a estabilidade segundo as imagens abaixo são",
+   "resposta": "porção lateral do côndilo femoral medial, lesão estável",
+   "explicacao": "**Côndilo femoral medial (face lateral), lesão estável.** Localização clássica, sem linha de líquido atrás do fragmento.",
+   "opcoes": [
+    "porção lateral do côndilo femoral lateral, lesão estável",
+    "porção lateral do côndilo femoral medial, lesão estável",
+    "porção lateral do côndilo femoral medial, lesão instável",
+    "porção lateral do côndilo femoral lateral, lesão instável"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEPOP",
+   "ano": 2024,
+   "fonte": "a877296ab13e",
+   "imagem": {
+    "arquivo": "joelho/joelho-0196-1.jpeg",
+    "legenda": "",
+    "largura": 624,
+    "altura": 359
+   }
+  },
+  {
+   "id": "fc-joelho-0207-q",
+   "questao": "joelho-0207",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesões meniscais",
+   "subtemas": [
+    "Lesões meniscais"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Os meniscos apresentam maior capacidade de suportar forças de",
+   "resposta": "compressão",
+   "explicacao": "Compressão. As fibras circunferenciais, presas às raízes, convertem a carga compressiva em tensão ao longo do anel, permitindo ao menisco distribuir o peso por uma área maior.",
+   "opcoes": [
+    "flexão",
+    "rotação",
+    "compressão",
+    "cisalhamento"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "f67eab55e071"
+  },
+  {
+   "id": "fc-joelho-0208-q",
+   "questao": "joelho-0208",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Biomecânica do joelho",
+   "subtemas": [
+    "Biomecânica do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "A estrutura do canto póstero-lateral do joelho que desempenha função estabilizadora estática às forças posteriores e aos momentos em varo e rotação lateral é o",
+   "resposta": "ligamento poplíteo fibular",
+   "explicacao": "Ligamento poplíteo fibular. Ele liga o complexo poplíteo à cabeça da fíbula e é um estabilizador estático contra a translação posterior, o varo e a rotação lateral da tíbia.",
+   "opcoes": [
+    "tendão poplíteo",
+    "trato iliotibial",
+    "ligamento poplíteo fibular",
+    "ligamento colateral lateral"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "bbac0b836169"
+  },
+  {
+   "id": "fc-joelho-0209-q",
+   "questao": "joelho-0209",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesão do ligamento cruzado anterior",
+   "subtemas": [
+    "Lesão do ligamento cruzado anterior",
+    "Anatomia do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O ligamento cruzado anterior é irrigado principalmente pela artéria",
+   "resposta": "genicular média",
+   "explicacao": "Genicular média. Ramo da artéria poplítea, ela atravessa a cápsula posterior e irriga os cruzados pela sinovial que os envolve.",
+   "opcoes": [
+    "genicular média",
+    "genicular lateral",
+    "genicular inferior",
+    "genicular superior"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "d9ef5b9a8249"
+  },
+  {
+   "id": "fc-joelho-0210-q",
+   "questao": "joelho-0210",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Ruptura dos tendões patelar e quadricipital",
+   "subtemas": [
+    "Ruptura dos tendões patelar e quadricipital"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "A ruptura do ligamento patelar ocorre com maior frequência",
+   "resposta": "no polo inferior da patela",
+   "explicacao": "No polo inferior da patela. A junção entre o tendão e o osso é o ponto de maior concentração de carga e de degeneração, e é ali que a maioria das rupturas acontece.",
+   "opcoes": [
+    "na porção média",
+    "na inserção tibial",
+    "no polo inferior da patela",
+    "com avulsão óssea na tíbia"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "efb180384b88"
+  },
+  {
+   "id": "fc-joelho-0211-q",
+   "questao": "joelho-0211",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Artroplastia total do joelho",
+   "subtemas": [
+    "Artroplastia total do joelho",
+    "Gonartrose e osteotomias"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na artrose do joelho, é considerado fator de bom prognóstico do desbridamento artroscópico a presença de",
+   "resposta": "sintomas mecânicos",
+   "explicacao": "Sintomas mecânicos. Travamento verdadeiro, corpo livre ou retalho meniscal instável indicam uma lesão específica que a artroscopia pode resolver, diferentemente da dor da artrose em si.",
+   "opcoes": [
+    "dor noturna",
+    "dor insidiosa",
+    "sintomas mecânicos",
+    "menisco degenerativo"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "0512ebdcfef2"
+  },
+  {
+   "id": "fc-joelho-0212-q",
+   "questao": "joelho-0212",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O platô tibial lateral, se comparado ao medial, é mais",
+   "resposta": "alto e convexo",
+   "explicacao": "Alto e convexo. Comparado ao medial, o platô lateral é mais alto e tem a superfície convexa no perfil, o que dá ao côndilo lateral maior mobilidade no sentido anteroposterior.",
+   "opcoes": [
+    "alto e convexo",
+    "baixo e convexo",
+    "alto e côncavo",
+    "baixo e côncavo"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "b6957cc778be"
+  },
+  {
+   "id": "fc-joelho-0214-q",
+   "questao": "joelho-0214",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Instabilidade femoropatelar",
+   "subtemas": [
+    "Instabilidade femoropatelar"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O momento de força resultante da carga na articulação femoropatelar na descida de escadas é maior do que o peso corporal em",
+   "resposta": "3, 5 vezes",
+   "explicacao": "3,5 vezes. É o valor clássico da força de reação femoropatelar na descida de escadas, em que o quadríceps trabalha freando o corpo com o joelho fletido.",
+   "opcoes": [
+    "2,5 vezes",
+    "3, 5 vezes",
+    "4,5 vezes",
+    "5,5 vezes"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "fd75f3d82a68"
+  },
+  {
+   "id": "fc-joelho-0215-q",
+   "questao": "joelho-0215",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na perna, os nervos fibular profundo e sural localizam-se, respectivamente, nos compartimentos",
+   "resposta": "anterior e posterior superficial",
+   "explicacao": "Anterior e posterior superficial. O fibular profundo acompanha a artéria tibial anterior no compartimento anterior, e o sural corre no plano superficial posterior, junto à veia safena parva.",
+   "opcoes": [
+    "lateral e posterior profundo",
+    "lateral e posterior superficial",
+    "anterior e posterior profundo",
+    "anterior e posterior superficial"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "31868d191bd0"
+  },
+  {
+   "id": "fc-joelho-0216-q",
+   "questao": "joelho-0216",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Osteocondrite dissecante",
+   "subtemas": [
+    "Osteocondrite dissecante"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Na osteocondrite dissecante do joelho, quando o fragmento osteoarticular é instável, o sinal na imagem de ressonância magnética entre a lesão e o osso subcondral adjacente é",
+   "resposta": "alto em T2",
+   "explicacao": "**Alto em T2.** Líquido dissecando a interface entre fragmento e osso.",
+   "opcoes": [
+    "alto em T2",
+    "baixo em T2",
+    "alto em T1",
+    "baixo em T1"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2012,
+   "fonte": "b248b88d9f6e"
+  },
+  {
+   "id": "fc-joelho-0217-q",
+   "questao": "joelho-0217",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Artroplastia total do joelho",
+   "subtemas": [
+    "Artroplastia total do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na artroplastia total do joelho em pacientes hemofílicos portadores de HIV, a complicação mais comum é",
+   "resposta": "a infecção",
+   "explicacao": "A infecção. A taxa de infecção da prótese é elevada no hemofílico e ainda maior quando há HIV, pela imunossupressão somada aos sangramentos e à cirurgia extensa.",
+   "opcoes": [
+    "a soltura asséptica",
+    "a hemorragia",
+    "a infecção",
+    "o tromboembolismo"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2011,
+   "fonte": "474a8371df9b"
+  },
+  {
+   "id": "fc-joelho-0218-q",
+   "questao": "joelho-0218",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Ruptura dos tendões patelar e quadricipital",
+   "subtemas": [
+    "Ruptura dos tendões patelar e quadricipital"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "A ruptura do tendão do quadríceps com acometimento bilateral ocorre mais frequentemente em",
+   "resposta": "homens com idade superior 40 anos",
+   "explicacao": "Homens com idade superior a 40 anos. A ruptura bilateral do quadricipital acontece nesse grupo, quase sempre associada a uma doença sistêmica ou a medicamentos que enfraquecem os tendões.",
+   "opcoes": [
+    "homens com idade superior 40 anos",
+    "homens com idade inferior 40 anos",
+    "mulheres com idade superior 40 anos",
+    "mulheres, independentemente da idade"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2011,
+   "fonte": "1efba32342d9"
+  },
+  {
+   "id": "fc-joelho-0220-q",
+   "questao": "joelho-0220",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesão do ligamento cruzado anterior",
+   "subtemas": [
+    "Lesão do ligamento cruzado anterior"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na ruptura aguda do ligamento cruzado anterior, a lesão associada mais comum é a",
+   "resposta": "do menisco lateral",
+   "explicacao": "Do menisco lateral. No trauma agudo, o compartimento lateral subluxa e sofre o impacto, e o menisco lateral é o mais frequentemente lesado.",
+   "opcoes": [
+    "do menisco medial",
+    "da cartilagem da patela",
+    "do menisco lateral",
+    "do ligamento colateral lateral"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2011,
+   "fonte": "9a61fcbc8a76"
+  },
+  {
+   "id": "fc-joelho-0221-q",
+   "questao": "joelho-0221",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesão do ligamento cruzado anterior",
+   "subtemas": [
+    "Lesão do ligamento cruzado anterior",
+    "Lesão do ligamento cruzado posterior"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A lesão no joelho que mais frequentemente causa dor no compartimento contralateral é a da porção",
+   "resposta": "posterior do menisco lateral",
+   "explicacao": "Porção posterior do menisco lateral. A descrição clássica é a de que suas lesões podem referir dor ao compartimento medial, o oposto ao da lesão.",
+   "opcoes": [
+    "anterior do menisco lateral",
+    "anterior do menisco medial",
+    "posterior do menisco lateral",
+    "posterior do menisco medial"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2011,
+   "fonte": "46fa0cd0dca8"
+  },
+  {
+   "id": "fc-joelho-0222-q",
+   "questao": "joelho-0222",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesão do ligamento cruzado posterior",
+   "subtemas": [
+    "Lesão do ligamento cruzado posterior",
+    "Exame físico do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Com os joelhos em 90 graus de flexão, a diferença de 10 graus na rotação lateral da perna indica lesão do",
+   "resposta": "ligamento cruzado posterior com o canto póstero-lateral",
+   "explicacao": "Ligamento cruzado posterior com o canto posterolateral. O aumento da rotação externa também a 90 graus indica que, além do canto posterolateral, o LCP, que reforça o controle rotatório nessa flexão, está lesado.",
+   "opcoes": [
+    "ligamento cruzado posterior com o canto póstero-medial",
+    "ligamento cruzado posterior com o canto póstero-lateral",
+    "ligamento cruzado anterior com o canto póstero-medial",
+    "ligamento cruzado anterior com o canto póstero-lateral"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2011,
+   "fonte": "cff6888a7eb3"
+  },
+  {
+   "id": "fc-joelho-0223-q",
+   "questao": "joelho-0223",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesão do ligamento cruzado anterior",
+   "subtemas": [
+    "Lesão do ligamento cruzado anterior",
+    "Lesão do ligamento cruzado posterior"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A lesão traumática do menisco lateral do joelho mais frequente é a",
+   "resposta": "transversa incompleta",
+   "explicacao": "Transversa incompleta. Segundo a referência da questão, a lesão radial incompleta, que parte da borda livre sem atingir a periferia, é a lesão traumática mais frequente do menisco lateral.",
+   "opcoes": [
+    "transversa incompleta",
+    "transversa completa",
+    "longitudinal incompleta",
+    "longitudinal completa"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "21e3a2e73b24"
+  },
+  {
+   "id": "fc-joelho-0224-q",
+   "questao": "joelho-0224",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Artroplastia total do joelho",
+   "subtemas": [
+    "Artroplastia total do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na artroplastia total do joelho em valgo, o posicionamento rotacional do componente femoral deve ter como parâmetro",
+   "resposta": "o eixo epicondilar",
+   "explicacao": "O eixo epicondilar. Ele representa o eixo de flexão do joelho e não é afetado pela hipoplasia do côndilo lateral, típica do joelho valgo.",
+   "opcoes": [
+    "a linha de INSALL",
+    "o eixo epicondilar",
+    "a cortical anterior do fêmur",
+    "as faces posteriores dos côndilos femorais"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "d8faff89c9f9"
+  },
+  {
+   "id": "fc-joelho-0225-q",
+   "questao": "joelho-0225",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Osteocondrite dissecante",
+   "subtemas": [
+    "Osteocondrite dissecante"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na osteocondrite dissecante do joelho, o sinal de WILSON é observado com o joelho em flexão de",
+   "resposta": "90º e rotação interna da perna",
+   "explicacao": "90 graus e rotação interna da perna. É a posição em que o teste começa, antes de estender o joelho mantendo a rotação interna até a dor aparecer, por volta de 30 graus.",
+   "opcoes": [
+    "90º e rotação interna da perna",
+    "30º e rotação interna da perna",
+    "90º e rotação externa da perna",
+    "30º e rotação externa da perna"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "24b33f444f31"
+  },
+  {
+   "id": "fc-joelho-0226-q",
+   "questao": "joelho-0226",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Imagem do joelho",
+   "subtemas": [
+    "Imagem do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "A fratura de SEGOND reverso apresenta alta associação com a lesão do",
+   "resposta": "ligamento cruzado posterior",
+   "explicacao": "Ligamento cruzado posterior. A avulsão da borda medial da tíbia proximal, a Segond reversa, é marcador de lesão do LCP e, com frequência, do menisco medial.",
+   "opcoes": [
+    "menisco lateral",
+    "ligamento colateral lateral",
+    "ligamento cruzado anterior",
+    "ligamento cruzado posterior"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "0efb61ba9b19"
+  },
+  {
+   "id": "fc-joelho-0227-q",
+   "questao": "joelho-0227",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesão do ligamento cruzado anterior",
+   "subtemas": [
+    "Lesão do ligamento cruzado anterior"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na reconstrução do ligamento cruzado anterior com dupla banda, os componentes ânteromedial e póstero-lateral são tensionados, respectivamente, em",
+   "resposta": "flexão e extensão",
+   "explicacao": "Flexão e extensão. Cada enxerto é tensionado na posição em que sua banda nativa está tensa: a anteromedial em flexão e a posterolateral perto da extensão.",
+   "opcoes": [
+    "extensão e extensão",
+    "flexão e flexão",
+    "flexão e extensão",
+    "extensão e flexão"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "4a8623abdb27"
+  },
+  {
+   "id": "fc-joelho-0228-q",
+   "questao": "joelho-0228",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesão do ligamento cruzado posterior",
+   "subtemas": [
+    "Lesão do ligamento cruzado posterior"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A lesão do ligamento cruzado posterior acontece mais frequentemente com o joelho em",
+   "resposta": "flexão",
+   "explicacao": "Flexão. O LCP rompe mais frequentemente quando a tíbia é empurrada para trás com o joelho fletido, como no trauma contra o painel do carro ou na queda sobre o joelho dobrado.",
+   "opcoes": [
+    "varo",
+    "valgo",
+    "flexão",
+    "extensão"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "4614948d8f8a"
+  },
+  {
+   "id": "fc-joelho-0229-q",
+   "questao": "joelho-0229",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Osteonecrose do joelho",
+   "subtemas": [
+    "Osteonecrose do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "rara",
+   "dificuldade": 2,
+   "frente": "A osteonecrose do côndilo do fêmur caracteriza-se pela presença de dor",
+   "resposta": "aguda em pacientes idosos",
+   "explicacao": "Aguda em pacientes idosos. A osteonecrose espontânea do côndilo femoral medial causa dor de início súbito, típica de pessoas acima dos 60 anos, especialmente mulheres.",
+   "opcoes": [
+    "aguda em pacientes jovens",
+    "crônica em pacientes jovens",
+    "aguda em pacientes idosos",
+    "crônica em pacientes idosos"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "ff88116daa88"
+  },
+  {
+   "id": "fc-joelho-0230-q",
+   "questao": "joelho-0230",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Ruptura dos tendões patelar e quadricipital",
+   "subtemas": [
+    "Ruptura dos tendões patelar e quadricipital"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Na lesão do ligamento patelar, o mecanismo de trauma mais comum é dado por uma contração muscular",
+   "resposta": "excêntrica com o joelho fletido",
+   "explicacao": "Excêntrica com o joelho fletido. O quadríceps contrai com força máxima enquanto o peso do corpo força a flexão, gerando a maior tensão possível no tendão patelar.",
+   "opcoes": [
+    "excêntrica com o joelho estendido",
+    "excêntrica com o joelho fletido",
+    "isométrica com o joelho estendido",
+    "isométrica com o joelho fletido"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2010,
+   "fonte": "7f5c371c6304"
+  },
+  {
+   "id": "fc-joelho-0231-q",
+   "questao": "joelho-0231",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesão do ligamento cruzado anterior",
+   "subtemas": [
+    "Lesão do ligamento cruzado anterior"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na reconstrução anatômica do ligamento cruzado anterior, o enxerto se comporta de forma:",
+   "resposta": "Não isométrica, com bandas que apresentam diferentes tensões",
+   "explicacao": "Não isométrica, com bandas que apresentam diferentes tensões. O enxerto anatômico reproduz o LCA nativo, cujas bandas se tensionam em momentos diferentes do movimento.",
+   "opcoes": [
+    "Não isométrica, com bandas que apresentam diferentes tensões",
+    "Não isométrica, com bandas que apresentam tensões iguais",
+    "Isométrica, com bandas que apresentam diferentes tensões",
+    "Isométrica, com bandas que apresentam tensões iguais"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "18ff441dedbc"
+  },
+  {
+   "id": "fc-joelho-0232-q",
+   "questao": "joelho-0232",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Imagem do joelho",
+   "subtemas": [
+    "Imagem do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Na luxação traumática lateral da patela, são achados característicos na ressonância magnética a contusão do côndilo femoral:",
+   "resposta": "Lateral e da faceta patelar medial",
+   "explicacao": "Lateral e da faceta patelar medial. Quando a patela reduz, sua faceta medial bate contra a borda anterior do côndilo femoral lateral, deixando contusões em espelho nos dois pontos.",
+   "opcoes": [
+    "Medial e da faceta patelar lateral",
+    "Lateral e da faceta patelar medial",
+    "Lateral e da faceta patelar lateral",
+    "Medial e da faceta patelar medial"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "2122a5eb03d7"
+  },
+  {
+   "id": "fc-joelho-0233-q",
+   "questao": "joelho-0233",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Gonartrose e osteotomias",
+   "subtemas": [
+    "Gonartrose e osteotomias"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "No tratamento da instabilidade patelar, a osteotomia de Fulkerson está indicada no desalinhamento da tuberosidade da tíbia com artrite sintomática na faceta:",
+   "resposta": "Lateral ou no polo distal da patela",
+   "explicacao": "Lateral ou no polo distal da patela. A anteromedialização desloca o contato para proximal e medial, descarregando justamente essas regiões, onde os resultados são melhores.",
+   "opcoes": [
+    "Lateral ou no polo distal da patela",
+    "Medial ou no polo distal da patela",
+    "Lateral ou no polo proximal da patela",
+    "Medial ou no polo proximal da patela"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "2320887d6ff0"
+  },
+  {
+   "id": "fc-joelho-0235-q",
+   "questao": "joelho-0235",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Imagem",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Na imagem a seguir, as setas 1 e 2 indicam, respectivamente:",
+   "resposta": "Tendão poplíteo e prega sinovial infrapatelar",
+   "explicacao": "**Tendão poplíteo e prega sinovial infrapatelar.** Corte **axial** do fêmur distal e da cápsula (Netter), mostrando o revestimento sinovial.",
+   "opcoes": [
+    "Tendão poplíteo e prega sinovial infrapatelar",
+    "Tendão poplíteo e ligamento cruzado anterior",
+    "Ligamento colateral fibular e prega sinovial infrapatelar",
+    "Ligamento colateral fibular e ligamento cruzado anterior"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "ab2a50611203",
+   "imagem": {
+    "arquivo": "joelho/joelho-0235-1.jpeg",
+    "legenda": "",
+    "largura": 953,
+    "altura": 996
+   }
+  },
+  {
+   "id": "fc-joelho-0237-q",
+   "questao": "joelho-0237",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Gonartrose e osteotomias",
+   "subtemas": [
+    "Gonartrose e osteotomias"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 3,
+   "frente": "Na osteotomia de fechamento da tíbia para tratamento da osteoartrite do compartimento medial do joelho, o cálculo da largura da base da cunha é obtido por meio dos parâmetros:",
+   "resposta": "Diâmetro da tíbia e ângulo de abertura",
+   "explicacao": "Diâmetro da tíbia e ângulo de abertura. A base da cunha é a largura da tíbia multiplicada pela tangente do ângulo de correção.",
+   "opcoes": [
+    "Diâmetro da tíbia e inclinação articular",
+    "Diâmetro da tíbia e ângulo de abertura",
+    "Ângulo tibiofemoral e inclinação articular",
+    "Ângulo tibiofemoral e ângulo de abertura"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "13815a14a260"
+  },
+  {
+   "id": "fc-joelho-0238-q",
+   "questao": "joelho-0238",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Imagem",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Na imagem a seguir, as funções do músculo assinalado pela seta são:",
+   "resposta": "Flexão plantar e inversão do pé",
+   "explicacao": "**Flexão plantar e inversão.** Ações do tibial posterior, estabilizador do arco medial.",
+   "opcoes": [
+    "Flexão dorsal e eversão do pé",
+    "Flexão dorsal e inversão do pé",
+    "Flexão plantar e eversão do pé",
+    "Flexão plantar e inversão do pé"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "625123de146b",
+   "imagem": {
+    "arquivo": "joelho/joelho-0238-1.png",
+    "legenda": "",
+    "largura": 648,
+    "altura": 642
+   }
+  },
+  {
+   "id": "fc-joelho-0240-q",
+   "questao": "joelho-0240",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Imagem",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Na imagem a seguir, que representa a visão superior da tíbia, as setas 1 e 2 indicam, respectivamente, a área de inserção das estruturas:",
+   "resposta": "Ligamento cruzado posterior e corno anterior do menisco lateral",
+   "explicacao": "**LCP e corno anterior do menisco lateral.** Vista **superior** do platô tibial. A borda de **cima** é a **posterior**: o entalhe posterior do intercôndilo, onde o LCP desce pela face posterior da tíbia. A de baixo é a **anterior**. Áreas **vermelhas** são inserções ligamentares; **azuis**, inserções meniscais.",
+   "opcoes": [
+    "Ligamento cruzado anterior e corno anterior do menisco medial",
+    "Ligamento cruzado anterior e corno posterior do menisco lateral",
+    "Ligamento cruzado posterior e corno anterior do menisco lateral",
+    "Ligamento cruzado posterior e corno posterior do menisco medial"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "898472040f9d",
+   "imagem": {
+    "arquivo": "joelho/joelho-0240-1.png",
+    "legenda": "",
+    "largura": 707,
+    "altura": 520
+   }
+  },
+  {
+   "id": "fc-joelho-0241-q",
+   "questao": "joelho-0241",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Menisco discoide",
+   "subtemas": [
+    "Menisco discoide"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "Os sinais indiretos de menisco discoide lateral na radiografia de joelho são:",
+   "resposta": "Hipoplasia da espinha tibial lateral e cabeça fibular alta",
+   "explicacao": "Hipoplasia da espinha tibial lateral e cabeça fibular alta. São dois dos sinais indiretos do menisco discoide lateral na radiografia, junto com o espaço articular lateral alargado.",
+   "opcoes": [
+    "Hipoplasia da espinha tibial lateral e cabeça fibular alta",
+    "Hiperplasia da espinha tibial lateral e cabeça fibular alta",
+    "Hipoplasia da espinha tibial lateral e cabeça fibular baixa",
+    "Hiperplasia da espinha tibial lateral e cabeça fibular baixa"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "8311d477733d"
+  },
+  {
+   "id": "fc-joelho-0242-q",
+   "questao": "joelho-0242",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Artroscopia do joelho",
+   "subtemas": [
+    "Artroscopia do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "rara",
+   "dificuldade": 2,
+   "frente": "Na artroscopia, a ótica de 30 graus, em comparação com a de 70 graus, apresenta um campo de visão:",
+   "resposta": "Menor, sem formação de uma área central cega",
+   "explicacao": "Menor, sem formação de uma área central cega. A ótica de 30 graus cobre um campo total menor que a de 70, mas mantém no campo o que está à frente da haste.",
+   "opcoes": [
+    "Maior, com formação de uma área central cega",
+    "Maior, sem formação de uma área central cega",
+    "Menor, sem formação de uma área central cega",
+    "Menor, com formação de uma área central cega"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "55878d91a099"
+  },
+  {
+   "id": "fc-joelho-0244-q",
+   "questao": "joelho-0244",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Artroplastia total do joelho",
+   "subtemas": [
+    "Artroplastia total do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Durante a artroplastia total do joelho, se várias incisões prévias estiverem presentes no momento da cirurgia, devemos escolher a incisão:",
+   "resposta": "Mais lateral",
+   "explicacao": "A mais lateral. Como a irrigação da pele do joelho vem principalmente do lado medial, usar a cicatriz mais lateral evita criar um retalho lateral estreito e mal vascularizado.",
+   "opcoes": [
+    "Mais lateral",
+    "Mais medial",
+    "Central",
+    "Fazer uma nova incisão"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "3a713e6a5037"
+  },
+  {
+   "id": "fc-joelho-0245-q",
+   "questao": "joelho-0245",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Artroplastia total do joelho",
+   "subtemas": [
+    "Artroplastia total do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Na artroplastia total do joelho com valgo grave, a técnica do corte femoral que utiliza os côndilos posteriores como referência tem como limitação a hipoplasia do côndilo",
+   "resposta": "Lateral, que causa uma rotação interna indesejável",
+   "explicacao": "Lateral, que causa uma rotação interna indesejável. Com o côndilo lateral posterior curto, a referência pelos côndilos posteriores posiciona o componente femoral em rotação interna.",
+   "opcoes": [
+    "Lateral, que causa uma rotação interna indesejável",
+    "Lateral, que causa uma rotação externa indesejável",
+    "Medial, que causa uma rotação interna indesejável",
+    "Medial, que causa uma rotação externa indesejável"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "9a095e9a7cfd"
+  },
+  {
+   "id": "fc-joelho-0248-q",
+   "questao": "joelho-0248",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Artroplastia total do joelho",
+   "subtemas": [
+    "Artroplastia total do joelho",
+    "Vias de acesso ao joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A via de acesso subvasto anteromedial do joelho preserva avascularização da patela ao poupar",
+   "resposta": "A artéria genicular descendente",
+   "explicacao": "A artéria genicular descendente. Ramo da femoral que acompanha o vasto medial, ela é poupada porque o acesso subvasto entra por baixo do músculo, sem seccioná-lo.",
+   "opcoes": [
+    "A artéria retinacular superior",
+    "A artéria genicular descendente",
+    "O ramo safeno da artéria femoral",
+    "A artéria genicular superior medial"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "ed38d5c3961b"
+  },
+  {
+   "id": "fc-joelho-0249-q",
+   "questao": "joelho-0249",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesão do ligamento cruzado anterior",
+   "subtemas": [
+    "Lesão do ligamento cruzado anterior"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "São manobras para avaliação de lesão do LCA (ligamento cruzado anterior):",
+   "resposta": "Lachman, gaveta anterior e pivot shift",
+   "explicacao": "Lachman, gaveta anterior e pivot shift. Os dois primeiros avaliam a translação anterior da tíbia e o terceiro, a instabilidade rotatória, as duas funções do LCA.",
+   "opcoes": [
+    "Lachman, gaveta anterior e pivot shift",
+    "Lachman, dial test e gaveta anterior",
+    "Gaveta posterior, dial test e pivot shift",
+    "Lachman, McMurray e estresse em valgo"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "6e838b257eb6"
+  },
+  {
+   "id": "fc-joelho-0250-q",
+   "questao": "joelho-0250",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesão do ligamento cruzado anterior",
+   "subtemas": [
+    "Lesão do ligamento cruzado anterior"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A tríade infeliz de O’Donoghue caracteriza-se pela lesão das seguintes estruturas na seguinte seqüência:",
+   "resposta": "Ligamento colateral tibial, ligamento cruzado anterior e menisco medial",
+   "explicacao": "Ligamento colateral tibial, ligamento cruzado anterior e menisco medial. É a sequência clássica de O'Donoghue no trauma em valgo com rotação externa, da periferia para o centro do joelho.",
+   "opcoes": [
+    "Ligamento cruzado anterior, ligamento colateral tibial e menisco medial",
+    "Menisco medial, ligamento colateral tibial e ligamento cruzado anterior",
+    "Ligamento colateral tibial, ligamento cruzado anterior e menisco medial",
+    "Ligamento cruzado anterior, ligamento colateral fibular e menisco lateral"
+   ],
+   "certa": 2,
+   "batalha": false,
+   "prova": "SBOT-SP",
+   "ano": null,
+   "fonte": "bdec969ce872"
+  },
+  {
+   "id": "fc-joelho-0251-q",
+   "questao": "joelho-0251",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Artroplastia total do joelho",
+   "subtemas": [
+    "Artroplastia total do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na ATJ, o defeito ósseo extenso na região metafisária com cortical íntegra é classificada, segundo RAND, como tipo:",
+   "resposta": "II",
+   "explicacao": "Tipo II. Corresponde ao defeito metafisário extenso, mas contido pela cortical íntegra em volta.",
+   "opcoes": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2016,
+   "fonte": "a41a28e2725f"
+  },
+  {
+   "id": "fc-joelho-0254-q",
+   "questao": "joelho-0254",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Ruptura dos tendões patelar e quadricipital",
+   "subtemas": [
+    "Ruptura dos tendões patelar e quadricipital"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "No tratamento da ruptura do tendão do quadríceps, a técnica de SCUDERI utiliza",
+   "resposta": "retalho proximal invertido do tendão do quadríceps",
+   "explicacao": "Retalho proximal invertido do tendão do quadríceps. Scuderi descreveu um retalho triangular da parte proximal do tendão, rebatido para baixo sobre a sutura para reforçá-la.",
+   "opcoes": [
+    "reforço com tendão do semitendíneo",
+    "reforço com tendão do grácil",
+    "retalho proximal invertido do tendão do quadríceps",
+    "alongamento em Z do tendão do quadríceps"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2008,
+   "fonte": "bb176cc62f3f"
+  },
+  {
+   "id": "fc-joelho-0256-q",
+   "questao": "joelho-0256",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Artroplastia total do joelho",
+   "subtemas": [
+    "Artroplastia total do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O cisto de Baker localiza-se mais frequentemente entre a cabeça:",
+   "resposta": "medial do gastrocnêmio e semimembranoso",
+   "explicacao": "Entre a cabeça medial do gastrocnêmio e o semimembranoso. É ali, na parte posteromedial do joelho, que fica a bursa cuja distensão forma o cisto.",
+   "opcoes": [
+    "lateral do gastrocnêmio e semimembranoso",
+    "medial do gastrocnêmio e semimembranoso",
+    "lateral do gastrocnêmio e solear",
+    "medial do gastrocnêmio e solear"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "489c6bef737c"
+  },
+  {
+   "id": "fc-joelho-0259-q",
+   "questao": "joelho-0259",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Ruptura dos tendões patelar e quadricipital",
+   "subtemas": [
+    "Ruptura dos tendões patelar e quadricipital"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "A ruptura do ligamento patelar é mais frequentemente localizada na sua porção:",
+   "resposta": "proximal, com avulsão óssea",
+   "explicacao": "Proximal, com avulsão óssea. A falha mais descrita é na junção com o polo inferior da patela, levando um pequeno fragmento de osso.",
+   "opcoes": [
+    "proximal, com desinserção",
+    "proximal, com avulsão óssea",
+    "distal, como desinserção",
+    "distal, com avulsão óssea"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2009,
+   "fonte": "f3e27a8ac579"
+  },
+  {
+   "id": "fc-joelho-0260-q",
+   "questao": "joelho-0260",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em relação ao ligamento oblíquo posterior do joelho:",
+   "resposta": "é um espessamento do ligamento capsular medial",
+   "explicacao": "É um espessamento do ligamento capsular medial. O LOP é a cápsula posteromedial espessada, logo atrás do LCM superficial.",
+   "opcoes": [
+    "é um espessamento do ligamento capsular medial",
+    "é uma das inserções do semimembranoso",
+    "é o ligamento de Wrisberg",
+    "é o ligamento de Humphrey"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TEOT/TARO",
+   "ano": null,
+   "fonte": "6bf3ca70e0b8"
+  },
+  {
+   "id": "fc-joelho-0269-q",
+   "questao": "joelho-0269",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesão do ligamento cruzado posterior",
+   "subtemas": [
+    "Lesão do ligamento cruzado posterior"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na reconstrução do ligamento cruzado posterior, a complicação mais frequente é a",
+   "resposta": "instabilidade posterior",
+   "explicacao": "Instabilidade posterior. A frouxidão posterior residual, pelo alongamento do enxerto, é a complicação mais comum depois da reconstrução do LCP.",
+   "opcoes": [
+    "perda da flexão",
+    "perda da extensão",
+    "instabilidade posterior",
+    "instabilidade póstero-lateral"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2013,
+   "fonte": "b9025c45adf3"
+  },
+  {
+   "id": "fc-joelho-0270-q",
+   "questao": "joelho-0270",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Osteocondrite dissecante",
+   "subtemas": [
+    "Osteocondrite dissecante"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A osteocondrite dissecante da patela difere do defeito dorsal da patela por",
+   "resposta": "apresentar hipercaptação na cintilografia óssea",
+   "explicacao": "Apresentar hipercaptação na cintilografia óssea. A OCD é um processo ativo do osso subcondral; o defeito dorsal é uma variação de ossificação sem atividade.",
+   "opcoes": [
+    "não envolver a cartilagem",
+    "ser mais frequentemente bilateral",
+    "apresentar hipercaptação na cintilografia óssea",
+    "ocorrer mais frequentemente na porção súpero-lateral"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2013,
+   "fonte": "e62cfb94a417"
+  },
+  {
+   "id": "fc-joelho-0271-q",
+   "questao": "joelho-0271",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Ligamento colateral medial",
+   "subtemas": [
+    "Ligamento colateral medial"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "comum",
+   "dificuldade": 2,
+   "frente": "O principal restritor primário ao estresse em valgo do joelho é",
+   "resposta": "o ligamento colateral medial superficial",
+   "explicacao": "O ligamento colateral medial superficial. É o principal estabilizador contra o valgo em praticamente todos os graus de flexão.",
+   "opcoes": [
+    "o ligamento oblíquo posterior",
+    "o ligamento colateral medial superficial",
+    "a porção meniscotibial do ligamento colateral medial profundo",
+    "a porção meniscofemoral do ligamento colateral medial profundo"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2013,
+   "fonte": "d72163f9a33e"
+  },
+  {
+   "id": "fc-joelho-0272-q",
+   "questao": "joelho-0272",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Artroplastia total do joelho",
+   "subtemas": [
+    "Artroplastia total do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na artroplastia total do joelho, uma das contraindicações absolutas é",
+   "resposta": "o recurvatum do joelho devido a fraqueza muscular",
+   "explicacao": "O recurvatum do joelho devido a fraqueza muscular. Sem quadríceps para estabilizar, a prótese não resiste à hiperextensão e a deformidade volta.",
+   "opcoes": [
+    "o recurvatum do joelho devido a fraqueza muscular",
+    "antecedente de osteomielite nas proximidades do joelho",
+    "psoríase com má condição da pele do membro a ser operado",
+    "falta de condição clínica para o paciente ser submetido a anestesia geral"
+   ],
+   "certa": 0,
+   "batalha": false,
+   "prova": "TARO",
+   "ano": 2013,
+   "fonte": "903a45f9f2c2"
+  },
+  {
+   "id": "fc-joelho-0273-q",
+   "questao": "joelho-0273",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Ruptura dos tendões patelar e quadricipital",
+   "subtemas": [
+    "Ruptura dos tendões patelar e quadricipital"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "epica",
+   "dificuldade": 2,
+   "frente": "A ruptura aguda do tendão patelar é mais frequente em",
+   "resposta": "jovens atletas",
+   "explicacao": "Jovens atletas. A ruptura do tendão patelar é típica de quem tem menos de 40 anos, durante esporte com salto ou contração excêntrica forte.",
+   "opcoes": [
+    "jovens atletas",
+    "sedentários de meia idade",
+    "desportistas de meia idade",
+    "pacientes com doença do colágeno"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2013,
+   "fonte": "8f8d02e1da87"
+  },
+  {
+   "id": "fc-joelho-0274-q",
+   "questao": "joelho-0274",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Osteonecrose do joelho",
+   "subtemas": [
+    "Osteonecrose do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "rara",
+   "dificuldade": 2,
+   "frente": "A osteonecrose secundária do joelho, quando comparada com a espontânea, apresenta",
+   "resposta": "maior bilateralidade",
+   "explicacao": "Maior bilateralidade. Como a causa é sistêmica (corticoide, álcool, lúpus, falciforme), a osteonecrose secundária costuma acometer os dois joelhos.",
+   "opcoes": [
+    "maior bilateralidade",
+    "idade mais avançada",
+    "maior acometimento em mulheres",
+    "menor envolvimento de outras articulações"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2013,
+   "fonte": "ab758a3589d1"
+  },
+  {
+   "id": "fc-joelho-0275-q",
+   "questao": "joelho-0275",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesões meniscais",
+   "subtemas": [
+    "Lesões meniscais"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A região meniscal com melhor potencial para cicatrização é",
+   "resposta": "a junção capsulomeniscal",
+   "explicacao": "A junção capsulomeniscal. É a zona vermelho-vermelho, a única com vasos nos dois lados da lesão, e por isso a de melhor cicatrização.",
+   "opcoes": [
+    "a área central",
+    "o corno médio",
+    "o corno posterior",
+    "a junção capsulomeniscal"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2013,
+   "fonte": "fde5c1211220"
+  },
+  {
+   "id": "fc-joelho-0276-q",
+   "questao": "joelho-0276",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesão do ligamento cruzado anterior",
+   "subtemas": [
+    "Lesão do ligamento cruzado anterior"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na reconstrução do LCA, no pós-operatório, configura relação de causa e efeito o aparecimento de",
+   "resposta": "dor patelofemoral com a contratura em flexão",
+   "explicacao": "**Dor patelofemoral com a contratura em flexão.** A perda de extensão obriga o quadríceps a trabalhar continuamente e aumenta a compressão femoropatelar, causando dor anterior; é uma relação direta de causa e efeito.",
+   "opcoes": [
+    "sinovite com a rerruptura do enxerto",
+    "febre intermitente com artrite séptica",
+    "dor posterior com a fraqueza do quadríceps",
+    "dor patelofemoral com a contratura em flexão"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2013,
+   "fonte": "46b65502a01a"
+  },
+  {
+   "id": "fc-joelho-0277-q",
+   "questao": "joelho-0277",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesão do ligamento cruzado anterior",
+   "subtemas": [
+    "Lesão do ligamento cruzado anterior"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na consolidação viciosa da fratura da eminência tibial com bloqueio da extensão do joelho sem instabilidade, o tratamento recomendado é",
+   "resposta": "intercondiloplastia",
+   "explicacao": "Intercondiloplastia. Com o joelho estável, basta remover o conflito entre o fragmento consolidado e o intercôndilo, abrindo espaço para a extensão.",
+   "opcoes": [
+    "intercondiloplastia",
+    "osteotomia tibial extensora",
+    "osteotomia femoral extensora",
+    "reconstrução do LCA em único tempo"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": "TARO",
+   "ano": 2014,
+   "fonte": "31e2faeb2ca8"
+  },
+  {
+   "id": "fc-joelho-0319-q",
+   "questao": "joelho-0319",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Lesões meniscais",
+   "subtemas": [
+    "Lesões meniscais"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Um paciente de 22 anos sofreu uma entorse no joelho durante uma partida de futebol, apresentando dor, edema e instabilidade. A ressonância magnética confirmou uma lesão do menisco medial do tipo alça de balde completa e luxada para o intercôndilo. O tratamento mais indicado nesse caso é:",
+   "resposta": "sutura meniscal out-in terço anterior, inside-out médio e allinside posterior",
+   "explicacao": "**Sutura meniscal out-in terço anterior, inside-out médio e allinside posterior.** Em um paciente de 22 anos com alça de balde luxada, o objetivo é preservar o menisco. Cada técnica é usada onde funciona melhor: de fora para dentro no corno anterior, de dentro para fora no terço médio e tudo dentro no corno posterior.",
+   "opcoes": [
+    "meniscectomia parcial",
+    "meniscectomia total",
+    "sutura meniscal out-in terço anterior, inside-out médio e allinside posterior",
+    "sutura inside-out terço anterior, out-in médio e all-inside posterior"
+   ],
+   "certa": 2,
+   "batalha": false,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2025,
+   "fonte": "cde4c2c3a689"
+  },
+  {
+   "id": "fc-joelho-0322-q",
+   "questao": "joelho-0322",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Fratura da patela",
+   "subtemas": [
+    "Fratura da patela",
+    "Artroplastia total do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Paciente do sexo feminino, 71 anos de idade, submetida a artroplastia total do joelho esquerdo há 18 meses, apresenta fratura da patela classificada como Ortiguera e Bery do tipo I. A conduta mais adequada é o tratamento:",
+   "resposta": "conservador: joelho estabilizado em extensão",
+   "explicacao": "**Conservador: joelho estabilizado em extensão.** No tipo I de Ortiguera e Berry, o aparelho extensor está íntegro e o componente patelar está estável. O tratamento é conservador, com o joelho imobilizado em extensão por algumas semanas, porque a cirurgia nessa situação tem muitas complicações e não melhora o resultado.",
+   "opcoes": [
+    "cirúrgico: patelectomia total",
+    "cirúrgico: patelectomia parcial",
+    "conservador: joelho estabilizado em extensão",
+    "cirúrgico: osteossíntese da patela com reconstrução do aparelho extensor"
+   ],
+   "certa": 2,
+   "batalha": false,
+   "prova": "ENARE R4 Ortopedia",
+   "ano": 2025,
+   "fonte": "da3203c02f4c"
+  },
+  {
+   "id": "fc-joelho-0343-q",
+   "questao": "joelho-0343",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Anatomia",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Na vista anterior da tíbia proximal, o marco ósseo indicado pela seta é",
+   "resposta": "tubérculo de GERDY",
+   "explicacao": "**Tubérculo de GERDY.** É a saliência anterolateral da tíbia que recebe o trato iliotibial. A cabeça da fíbula, ao lado, orienta o compartimento lateral; a tuberosidade tibial é mais anterior e central.",
+   "opcoes": [
+    "colo da fíbula",
+    "tubérculo adutor",
+    "tubérculo de GERDY",
+    "tuberosidade tibial"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "24354d3796e4",
+   "imagem": {
+    "arquivo": "joelho/joelho-0343-1.jpeg",
+    "legenda": "Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.",
+    "largura": 1385,
+    "altura": 1136
+   }
+  },
+  {
+   "id": "fc-joelho-0344-q",
+   "questao": "joelho-0344",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Anatomia",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "O ligamento que se fixa no marco ósseo indicado na vista anterior da tíbia é o",
+   "resposta": "patelar",
+   "explicacao": "**Patelar.** O alvo é a tuberosidade tibial anterior. O ligamento patelar liga o polo inferior da patela a essa tuberosidade, transmitindo a força do quadríceps para a tíbia.",
+   "opcoes": [
+    "patelar",
+    "cruzado anterior",
+    "colateral fibular",
+    "colateral tibial superficial"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "682ba7923790",
+   "imagem": {
+    "arquivo": "joelho/joelho-0344-1.jpeg",
+    "legenda": "Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.",
+    "largura": 1024,
+    "altura": 1536
+   }
+  },
+  {
+   "id": "fc-joelho-0345-q",
+   "questao": "joelho-0345",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Anatomia",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Na vista posterior da patela, a superfície articular indicada corresponde à",
+   "resposta": "faceta lateral",
+   "explicacao": "**Faceta lateral.** A seta está na maior das duas facetas principais, lateral à crista vertical. A faceta medial é menor e a pequena faceta acessória ocupa a margem medial extrema.",
+   "opcoes": [
+    "faceta medial",
+    "faceta lateral",
+    "faceta acessória medial",
+    "superfície troclear femoral"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "1ee891fdaba7",
+   "imagem": {
+    "arquivo": "joelho/joelho-0345-1.jpeg",
+    "legenda": "Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.",
+    "largura": 1429,
+    "altura": 1101
+   }
+  },
+  {
+   "id": "fc-joelho-0346-q",
+   "questao": "joelho-0346",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Anatomia",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Na exposição anterior do joelho, o ligamento indicado pela seta é o",
+   "resposta": "cruzado anterior",
+   "explicacao": "**Cruzado anterior.** O feixe sai da área intercondilar anterior da tíbia e segue para a face medial do côndilo femoral lateral. A fíbula, à esquerda na figura, orienta esse lado lateral.",
+   "opcoes": [
+    "cruzado anterior",
+    "cruzado posterior",
+    "colateral fibular",
+    "transverso do joelho"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "20dc05f2ee80",
+   "imagem": {
+    "arquivo": "joelho/joelho-0346-1.jpeg",
+    "legenda": "Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.",
+    "largura": 1312,
+    "altura": 1199
+   }
+  },
+  {
+   "id": "fc-joelho-0347-q",
+   "questao": "joelho-0347",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O ligamento cruzado anterior se fixa no fêmur na face",
+   "resposta": "medial do côndilo lateral",
+   "explicacao": "**Medial do côndilo lateral.** O LCA se fixa na região posterior da face medial do côndilo lateral, voltada para a incisura. O nome anterior deriva da fixação tibial, não da face externa do fêmur.",
+   "opcoes": [
+    "medial do côndilo medial",
+    "medial do côndilo lateral",
+    "lateral do côndilo medial",
+    "lateral do côndilo lateral"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "70de906be394"
+  },
+  {
+   "id": "fc-joelho-0348-q",
+   "questao": "joelho-0348",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Em relação à cápsula e à cavidade sinovial do joelho, os ligamentos cruzados são",
+   "resposta": "intracapsulares e extrassinoviais",
+   "explicacao": "**Intracapsulares e extrassinoviais.** Estão contidos pela cápsula, mas a membrana sinovial se reflete ao redor deles. Assim, pertencem ao interior capsular sem ocupar livremente a cavidade sinovial.",
+   "opcoes": [
+    "intracapsulares e extrassinoviais",
+    "intracapsulares e intrassinoviais",
+    "extracapsulares e extrassinoviais",
+    "extracapsulares e intrassinoviais"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "f4bb36916759"
+  },
+  {
+   "id": "fc-joelho-0349-q",
+   "questao": "joelho-0349",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Anatomia",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Na exposição posterior do joelho, o ligamento indicado pela seta é o",
+   "resposta": "cruzado posterior",
+   "explicacao": "**Cruzado posterior.** A seta aponta o feixe robusto que vai da tíbia posterior proximal à face lateral do côndilo medial. Na vista posterior apresentada, a fíbula está à direita e orienta o lado lateral.",
+   "opcoes": [
+    "cruzado anterior",
+    "colateral tibial",
+    "cruzado posterior",
+    "meniscofemoral posterior"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "81ff9cbfd09f",
+   "imagem": {
+    "arquivo": "joelho/joelho-0349-1.jpeg",
+    "legenda": "Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.",
+    "largura": 1306,
+    "altura": 1205
+   }
+  },
+  {
+   "id": "fc-joelho-0350-q",
+   "questao": "joelho-0350",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "HUMPHREY e WRISBERG passam, em relação ao ligamento cruzado posterior, respectivamente",
+   "resposta": "anterior e posterior",
+   "explicacao": "**Anterior e posterior.** Ambos são meniscofemorais e ligam o corno posterior do menisco lateral ao côndilo femoral medial. HUMPHREY passa anterior ao LCP; WRISBERG passa posterior a ele.",
+   "opcoes": [
+    "anterior e anterior",
+    "anterior e posterior",
+    "posterior e anterior",
+    "posterior e posterior"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "947be1365ac1"
+  },
+  {
+   "id": "fc-joelho-0351-q",
+   "questao": "joelho-0351",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Anatomia",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Na vista superior do platô tibial, a estrutura indicada pela seta é o",
+   "resposta": "menisco lateral",
+   "explicacao": "**Menisco lateral.** A seta está no crescente do compartimento junto à fíbula, mais fechado e circular. O menisco circunda a superfície do platô e não deve ser confundido com sua cartilagem central.",
+   "opcoes": [
+    "menisco medial",
+    "menisco lateral",
+    "ligamento cruzado anterior",
+    "ligamento transverso do joelho"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "6b939b7f1272",
+   "imagem": {
+    "arquivo": "joelho/joelho-0351-1.jpeg",
+    "legenda": "Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.",
+    "largura": 1536,
+    "altura": 1024
+   }
+  },
+  {
+   "id": "fc-joelho-0352-q",
+   "questao": "joelho-0352",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A menor mobilidade do menisco medial está relacionada à sua ligação com o",
+   "resposta": "colateral tibial profundo",
+   "explicacao": "**Colateral tibial profundo.** A porção profunda mantém componentes meniscofemoral e meniscotibial ligados ao menisco medial. A fixação capsuloligamentar firme limita sua mobilidade em relação ao lateral.",
+   "opcoes": [
+    "colateral fibular",
+    "tendão do poplíteo",
+    "meniscofemoral posterior",
+    "colateral tibial profundo"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "cdd13b8a17e6"
+  },
+  {
+   "id": "fc-joelho-0353-q",
+   "questao": "joelho-0353",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Anatomia",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Na vista lateral do joelho, o ligamento indicado pela seta é o",
+   "resposta": "colateral fibular",
+   "explicacao": "**Colateral fibular.** O cordão passa do epicôndilo lateral à cabeça da fíbula. Seu aspecto estreito e a fixação fibular o diferenciam do colateral tibial, que é largo e termina na tíbia medial.",
+   "opcoes": [
+    "popliteofibular",
+    "colateral tibial",
+    "poplíteo oblíquo",
+    "colateral fibular"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "cf67bb6aabd1",
+   "imagem": {
+    "arquivo": "joelho/joelho-0353-1.jpeg",
+    "legenda": "Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.",
+    "largura": 1296,
+    "altura": 1214
+   }
+  },
+  {
+   "id": "fc-joelho-0354-q",
+   "questao": "joelho-0354",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Anatomia",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Na vista medial do joelho, a faixa ligamentar indicada corresponde ao",
+   "resposta": "colateral tibial superficial",
+   "explicacao": "**Colateral tibial superficial.** É a faixa larga de fibras predominantemente longitudinais entre o fêmur medial e a tíbia. Sua inserção tibial fica profunda aos tendões da pata de ganso.",
+   "opcoes": [
+    "poplíteo oblíquo",
+    "colateral fibular",
+    "meniscofemoral anterior",
+    "colateral tibial superficial"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "0cbc06a0d1e0",
+   "imagem": {
+    "arquivo": "joelho/joelho-0354-1.jpeg",
+    "legenda": "Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.",
+    "largura": 1822,
+    "altura": 863
+   }
+  },
+  {
+   "id": "fc-joelho-0355-q",
+   "questao": "joelho-0355",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O ligamento popliteofibular conecta a junção musculotendínea do poplíteo à",
+   "resposta": "cabeça da fíbula",
+   "explicacao": "**Cabeça da fíbula.** A conexão entre poplíteo e fíbula integra a anatomia posterolateral. Ela não deve ser confundida com o colateral fibular, cuja fixação proximal é femoral.",
+   "opcoes": [
+    "cabeça da fíbula",
+    "tuberosidade tibial",
+    "margem inferior da patela",
+    "área intercondilar anterior da tíbia"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "4d9133d491b5"
+  },
+  {
+   "id": "fc-joelho-0356-q",
+   "questao": "joelho-0356",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Anatomia",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Na dissecção posterior profunda da perna, o músculo indicado pela seta é o",
+   "resposta": "poplíteo",
+   "explicacao": "**Poplíteo.** É o pequeno ventre triangular imediatamente abaixo da articulação do joelho, sobre a tíbia posterior proximal. O sóleo cortado e rebatido aparece em faixa separada abaixo dele.",
+   "opcoes": [
+    "sóleo",
+    "poplíteo",
+    "tibial posterior",
+    "flexor longo do hálux"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "97c78846af9d",
+   "imagem": {
+    "arquivo": "joelho/joelho-0356-1.jpeg",
+    "legenda": "Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.",
+    "largura": 1281,
+    "altura": 1227
+   }
+  },
+  {
+   "id": "fc-joelho-0357-q",
+   "questao": "joelho-0357",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Anatomia",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "A inserção distal do músculo indicado na dissecção posterior profunda ocorre na",
+   "resposta": "tíbia posterior proximal",
+   "explicacao": "**Tíbia posterior proximal.** O músculo é o poplíteo: seu tendão se relaciona com o côndilo femoral lateral e o ventre triangular se fixa na face posterior da tíbia proximal, acima da linha do sóleo.",
+   "opcoes": [
+    "cabeça da fíbula",
+    "tíbia posterior proximal",
+    "tuberosidade do navicular",
+    "tuberosidade posterior do calcâneo"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "7748d76aec24",
+   "imagem": {
+    "arquivo": "joelho/joelho-0357-1.jpeg",
+    "legenda": "Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.",
+    "largura": 1281,
+    "altura": 1227
+   }
+  },
+  {
+   "id": "fc-joelho-0358-q",
+   "questao": "joelho-0358",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O ligamento poplíteo oblíquo é uma expansão do tendão do músculo",
+   "resposta": "semimembranáceo",
+   "explicacao": "**Semimembranáceo.** Uma expansão do tendão reforça a cápsula posterior e segue obliquamente em direção lateral. É necessário separar essa expansão da inserção principal posteromedial do semimembranáceo.",
+   "opcoes": [
+    "poplíteo",
+    "semitendíneo",
+    "bíceps femoral",
+    "semimembranáceo"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "d23bdbf981c1"
+  },
+  {
+   "id": "fc-joelho-0359-q",
+   "questao": "joelho-0359",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Anatomia",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Na vista posterior da perna, o ventre indicado pela seta pertence ao",
+   "resposta": "gastrocnêmio, cabeça lateral",
+   "explicacao": "**Gastrocnêmio, cabeça lateral.** A seta aponta a cabeça do lado lateral, à direita nesta vista posterior. A outra cabeça, medial, fica à esquerda e costuma se prolongar mais distalmente.",
+   "opcoes": [
+    "sóleo",
+    "plantar",
+    "gastrocnêmio, cabeça medial",
+    "gastrocnêmio, cabeça lateral"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "96da154a28fb",
+   "imagem": {
+    "arquivo": "joelho/joelho-0359-1.jpeg",
+    "legenda": "Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.",
+    "largura": 1187,
+    "altura": 1325
+   }
+  },
+  {
+   "id": "fc-joelho-0360-q",
+   "questao": "joelho-0360",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Anatomia",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "O nervo e o compartimento do músculo indicado são, respectivamente",
+   "resposta": "tibial e posterior superficial",
+   "explicacao": "**Tibial e posterior superficial.** A figura aponta o gastrocnêmio. As duas cabeças recebem ramos do tibial e pertencem à camada posterior superficial, junto ao sóleo e ao plantar.",
+   "opcoes": [
+    "tibial e posterior profundo",
+    "fibular profundo e anterior",
+    "fibular superficial e lateral",
+    "tibial e posterior superficial"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "e9905f57f1a0",
+   "imagem": {
+    "arquivo": "joelho/joelho-0360-1.jpeg",
+    "legenda": "Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.",
+    "largura": 1187,
+    "altura": 1325
+   }
+  },
+  {
+   "id": "fc-joelho-0361-q",
+   "questao": "joelho-0361",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Anatomia",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Na vista lateral da perna, o músculo posterior profundo ao gastrocnêmio indicado pela seta é o",
+   "resposta": "sóleo",
+   "explicacao": "**Sóleo.** A seta aponta a massa posterior, profunda ao gastrocnêmio e atrás dos fibulares. Seu ventre continua para o tendão calcâneo; não forma um tendão que contorne o maléolo lateral.",
+   "opcoes": [
+    "sóleo",
+    "fibular longo",
+    "tibial anterior",
+    "extensor longo dos dedos"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "0baf5807a818",
+   "imagem": {
+    "arquivo": "joelho/joelho-0361-1.jpeg",
+    "legenda": "Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.",
+    "largura": 1175,
+    "altura": 1338
+   }
+  },
+  {
+   "id": "fc-joelho-0362-q",
+   "questao": "joelho-0362",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "A inserção distal do músculo sóleo ocorre no",
+   "resposta": "calcâneo, pelo tendão calcâneo",
+   "explicacao": "**Calcâneo, pelo tendão calcâneo.** O sóleo converge com o gastrocnêmio para o tendão calcâneo, que se fixa no calcâneo posterior. Sua origem é na tíbia e na fíbula; esses ossos proximais não são seu destino distal.",
+   "opcoes": [
+    "calcâneo, pelo tendão calcâneo",
+    "navicular, pelo tendão tibial posterior",
+    "quinto metatarsal, pelo tendão fibular curto",
+    "primeiro metatarsal, pelo tendão fibular longo"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "72d6949d8654"
+  },
+  {
+   "id": "fc-joelho-0363-q",
+   "questao": "joelho-0363",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na camada posterior superficial da perna, o pequeno ventre com tendão longo e fino que desce junto ao tendão calcâneo pertence ao músculo",
+   "resposta": "plantar",
+   "explicacao": "**Plantar.** O plantar possui pequeno ventre proximal e um tendão longo e fino, que desce junto ao tendão calcâneo. Seu tendão deve ser distinguido da larga lâmina calcânea formada principalmente pelo gastrocnêmio e sóleo.",
+   "opcoes": [
+    "sóleo",
+    "plantar",
+    "tibial posterior",
+    "flexor longo dos dedos"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "7392fb2ca352"
+  },
+  {
+   "id": "fc-joelho-0364-q",
+   "questao": "joelho-0364",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Anatomia",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Na vista anterolateral da perna, o músculo indicado pela seta é o",
+   "resposta": "tibial anterior",
+   "explicacao": "**Tibial anterior.** É o ventre volumoso junto à tíbia, cujo tendão desce pela frente do tornozelo e segue ao cuneiforme medial e ao primeiro metatarsal. A continuidade medial no pé confirma a identificação.",
+   "opcoes": [
+    "fibular longo",
+    "tibial anterior",
+    "extensor longo do hálux",
+    "extensor longo dos dedos"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "6f6929cb6580",
+   "imagem": {
+    "arquivo": "joelho/joelho-0364-1.jpeg",
+    "legenda": "Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.",
+    "largura": 1229,
+    "altura": 1280
+   }
+  },
+  {
+   "id": "fc-joelho-0366-q",
+   "questao": "joelho-0366",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Anatomia",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "A inserção distal do músculo indicado na vista anterior da perna ocorre na",
+   "resposta": "base da falange distal do hálux",
+   "explicacao": "**Base da falange distal do hálux.** O alvo é o extensor longo do hálux, cujo tendão individual percorre o dorso do primeiro dedo e chega à falange distal. A fixação além da articulação interfalângica permite estender o hálux.",
+   "opcoes": [
+    "base do primeiro metatarsal",
+    "base da falange distal do hálux",
+    "tuberosidade posterior do calcâneo",
+    "bases das falanges distais dos quatro dedos laterais"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "bdebb7895e31",
+   "imagem": {
+    "arquivo": "joelho/joelho-0366-1.jpeg",
+    "legenda": "Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.",
+    "largura": 1229,
+    "altura": 1280
+   }
+  },
+  {
+   "id": "fc-joelho-0367-q",
+   "questao": "joelho-0367",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Anatomia",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Na exposição do compartimento anterior, o músculo indicado ao lado lateral do tibial anterior é o",
+   "resposta": "extensor longo dos dedos",
+   "explicacao": "**Extensor longo dos dedos.** A posição lateral dentro do compartimento anterior e a divisão em quatro tendões dorsais identificam o músculo. Recebe o fibular profundo, apesar de ocupar o lado lateral da vista anterior.",
+   "opcoes": [
+    "fibular curto",
+    "tibial anterior",
+    "extensor longo do hálux",
+    "extensor longo dos dedos"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "51a67e7161de",
+   "imagem": {
+    "arquivo": "joelho/joelho-0367-1.jpeg",
+    "legenda": "Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.",
+    "largura": 1229,
+    "altura": 1280
+   }
+  },
+  {
+   "id": "fc-joelho-0368-q",
+   "questao": "joelho-0368",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Anatomia",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Na vista lateral da perna, o músculo indicado pela seta é o",
+   "resposta": "fibular longo",
+   "explicacao": "**Fibular longo.** Seu ventre é proximal e superficial no compartimento lateral. O tendão contorna o maléolo lateral e depois segue pela planta, alcançando a coluna medial do pé.",
+   "opcoes": [
+    "sóleo",
+    "fibular longo",
+    "tibial posterior",
+    "extensor longo dos dedos"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "1193cbe4dffe",
+   "imagem": {
+    "arquivo": "joelho/joelho-0368-1.jpeg",
+    "legenda": "Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.",
+    "largura": 1176,
+    "altura": 1338
+   }
+  },
+  {
+   "id": "fc-joelho-0369-q",
+   "questao": "joelho-0369",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Anatomia",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "A inserção distal do músculo indicado na vista lateral da perna ocorre na",
+   "resposta": "base do quinto metatarsal",
+   "explicacao": "**Base do quinto metatarsal.** O alvo é o fibular curto, identificado pelo ventre distal profundo ao longo e pelo tendão atrás do maléolo lateral. Ele termina na base do quinto metatarsal, sem atravessar a planta.",
+   "opcoes": [
+    "base do quinto metatarsal",
+    "tuberosidade do navicular",
+    "base da falange distal do hálux",
+    "face plantar do cuneiforme medial e da base do primeiro metatarsal"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "cd6bfab8e528",
+   "imagem": {
+    "arquivo": "joelho/joelho-0369-1.jpeg",
+    "legenda": "Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.",
+    "largura": 1175,
+    "altura": 1338
+   }
+  },
+  {
+   "id": "fc-joelho-0370-q",
+   "questao": "joelho-0370",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Anatomia",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "No centro do plano posterior profundo da perna, o músculo indicado pela seta é o",
+   "resposta": "tibial posterior",
+   "explicacao": "**Tibial posterior.** Ocupa o plano central profundo junto à membrana interóssea, entre os flexores longos. Seu tendão passa atrás do maléolo medial e se fixa no navicular com expansões plantares.",
+   "opcoes": [
+    "poplíteo",
+    "tibial posterior",
+    "flexor longo do hálux",
+    "flexor longo dos dedos"
+   ],
+   "certa": 1,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "ccd33ea0414b",
+   "imagem": {
+    "arquivo": "joelho/joelho-0370-1.jpeg",
+    "legenda": "Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.",
+    "largura": 1281,
+    "altura": 1227
+   }
+  },
+  {
+   "id": "fc-joelho-0371-q",
+   "questao": "joelho-0371",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Anatomia",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "O músculo tracionado e indicado na região lateral do plano posterior profundo da perna é o",
+   "resposta": "flexor longo do hálux",
+   "explicacao": "**Flexor longo do hálux.** Nasce na face posterior da fíbula e ocupa o lado lateral do compartimento profundo. Apesar dessa posição na perna, seu tendão termina na falange distal do hálux, no lado medial do pé.",
+   "opcoes": [
+    "sóleo",
+    "tibial posterior",
+    "flexor longo do hálux",
+    "flexor longo dos dedos"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "887e7059b6a5",
+   "imagem": {
+    "arquivo": "joelho/joelho-0371-1.jpeg",
+    "legenda": "Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.",
+    "largura": 1237,
+    "altura": 1272
+   }
+  },
+  {
+   "id": "fc-joelho-0372-q",
+   "questao": "joelho-0372",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Os nervos motores dos compartimentos anterior e lateral da perna são, respectivamente",
+   "resposta": "fibular profundo e fibular superficial",
+   "explicacao": "**Fibular profundo e fibular superficial.** O profundo inerva tibial anterior e extensores longos no compartimento anterior. O superficial inerva fibulares longo e curto no compartimento lateral; são ramos distintos do fibular comum.",
+   "opcoes": [
+    "tibial e sural",
+    "fibular profundo e tibial",
+    "fibular profundo e fibular superficial",
+    "fibular superficial e fibular profundo"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "fa63c85bc269"
+  },
+  {
+   "id": "fc-joelho-0373-q",
+   "questao": "joelho-0373",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Anatomia",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "O tronco nervoso indicado ao contornar o colo da fíbula, antes de sua divisão terminal, é o",
+   "resposta": "fibular comum",
+   "explicacao": "**Fibular comum.** Contorna o colo da fíbula e se divide nos ramos superficial e profundo. A localização proximal à bifurcação impede identificar o alvo como apenas um dos dois ramos terminais.",
+   "opcoes": [
+    "sural",
+    "tibial",
+    "fibular comum",
+    "fibular profundo"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "0ba521583135",
+   "imagem": {
+    "arquivo": "joelho/joelho-0373-1.jpeg",
+    "legenda": "Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.",
+    "largura": 1033,
+    "altura": 1522
+   }
+  },
+  {
+   "id": "fc-joelho-0374-q",
+   "questao": "joelho-0374",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O nervo e a artéria que percorrem o compartimento anterior da perna são, respectivamente",
+   "resposta": "fibular profundo e tibial anterior",
+   "explicacao": "**Fibular profundo e tibial anterior.** O nervo supre os músculos anteriores e a artéria chega ao compartimento pela abertura proximal da membrana interóssea. A relação anatômica define o par, apesar dos nomes diferentes.",
+   "opcoes": [
+    "tibial e tibial posterior",
+    "fibular superficial e fibular",
+    "fibular profundo e tibial anterior",
+    "fibular profundo e tibial posterior"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "987cedd96bf3"
+  },
+  {
+   "id": "fc-joelho-0375-q",
+   "questao": "joelho-0375",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Anatomia",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "Na dissecção posterior do joelho, o tronco nervoso central indicado pela seta é o",
+   "resposta": "tibial",
+   "explicacao": "**Tibial.** Desce centralmente pela região posterior, fornece ramos às cabeças do gastrocnêmio e continua para o plano posterior profundo. O fibular comum segue lateralmente em direção ao colo da fíbula.",
+   "opcoes": [
+    "tibial",
+    "safeno",
+    "fibular comum",
+    "cutâneo femoral posterior"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "61106ebbcf97",
+   "imagem": {
+    "arquivo": "joelho/joelho-0375-1.jpeg",
+    "legenda": "Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.",
+    "largura": 975,
+    "altura": 1612
+   }
+  },
+  {
+   "id": "fc-joelho-0376-q",
+   "questao": "joelho-0376",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "Na região posterolateral distal da perna, o nervo sural tem trajeto predominantemente",
+   "resposta": "subcutâneo e função sensitiva",
+   "explicacao": "**Subcutâneo e função sensitiva.** O sural atende à pele posterolateral distal e à região lateral do pé. É cutâneo, com formação variável, e não é o ramo motor destinado aos músculos da panturrilha.",
+   "opcoes": [
+    "profundo e função motora",
+    "subcutâneo e função motora",
+    "profundo e função sensitiva",
+    "subcutâneo e função sensitiva"
+   ],
+   "certa": 3,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "ad253fae8020"
+  },
+  {
+   "id": "fc-joelho-0377-q",
+   "questao": "joelho-0377",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Anatomia",
+   "raridade": "lendaria",
+   "dificuldade": 3,
+   "frente": "O ramo cutâneo indicado ao seguir para a região anterior do joelho é o",
+   "resposta": "infrapatelar do safeno",
+   "explicacao": "**Infrapatelar do safeno.** É o ramo proximal do safeno destinado à pele anterior e medial do joelho. O safeno vem do femoral e não participa da inervação motora dos compartimentos da perna.",
+   "opcoes": [
+    "cutâneo sural medial",
+    "cutâneo sural lateral",
+    "infrapatelar do safeno",
+    "cutâneo medial descendente do safeno"
+   ],
+   "certa": 2,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "d56d30334b01",
+   "imagem": {
+    "arquivo": "joelho/joelho-0377-1.jpeg",
+    "legenda": "Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.",
+    "largura": 1234,
+    "altura": 1275
+   }
+  },
+  {
+   "id": "fc-joelho-0378-q",
+   "questao": "joelho-0378",
+   "area": "Joelho",
+   "areaId": "joelho",
+   "assunto": "Anatomia do joelho",
+   "subtemas": [
+    "Anatomia do joelho"
+   ],
+   "tipo": "Relâmpago",
+   "raridade": "lendaria",
+   "dificuldade": 2,
+   "frente": "O ramo da artéria poplítea que penetra a cápsula posterior e irriga os ligamentos cruzados é a artéria",
+   "resposta": "genicular média",
+   "explicacao": "**Genicular média.** Penetra a cápsula posterior e alcança a região dos cruzados e a sinóvia central. Essa relação a diferencia dos ramos geniculares que contornam perifericamente a articulação.",
+   "opcoes": [
+    "genicular média",
+    "genicular superior medial",
+    "genicular inferior medial",
+    "genicular inferior lateral"
+   ],
+   "certa": 0,
+   "batalha": true,
+   "prova": null,
+   "ano": null,
+   "fonte": "47c2999c2d46"
+  }
+ ]
+}

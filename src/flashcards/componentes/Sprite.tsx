@@ -1,5 +1,6 @@
 import { memo, useEffect, useRef } from 'react'
 import { PALETA, SPRITES } from '../dados/sprites'
+import { pintarIcone } from '../efeitos/icones'
 
 /** Clareia (k > 0) ou escurece (k < 0) uma cor #rrggbb. */
 function tom(hex: string, k: number): string {
@@ -13,6 +14,8 @@ function tom(hex: string, k: number): string {
  * de baixo escurece. Dá volume ao pixel art sem redesenhar os mapas.
  */
 export function pintarSprite(canvas: HTMLCanvasElement, nome: string) {
+  // ícones novos (sombreados, 20×20) têm preferência; o coração do HUD segue o mapa antigo
+  if (nome !== 'coracao' && pintarIcone(canvas, nome)) return
   const mapa = SPRITES[nome]
   if (!mapa) return
   const w = Math.max(...mapa.map((l) => l.length)), h = mapa.length

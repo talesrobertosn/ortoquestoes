@@ -100,3 +100,11 @@ voltam inteiras 24 horas depois desse início. Migração `202610110100_limite_j
 
 Na interface, o contador regressivo é o `RelogioPixel` (ampulheta em pixel art que esvazia ao
 longo das 24 h), no convite do limite e no resumo da sessão.
+
+## Torneio de Flashcards (13/10/2026)
+
+- Migration `supabase/migrations/202610130100_flashcards_limite_e_progresso.sql` (não destrutiva): `flashcards_janela_gratis`, `flashcards_autorizados` (livro-razão idempotente e fonte do ranking de flashcards únicos), `flashcards_progresso` (fila de revisão e recordes, RLS só do dono) e as RPCs `autorizar_flashcard`, `flashcards_unicos`, `salvar_progresso_flashcards` e `ler_progresso_flashcards`.
+- Contrato: **10 flashcards grátis por janela de 24 h**, contados no servidor; assinante, administrador e cortesia sem limite; `contas_teste` passam pela regra mesmo com o paywall desligado.
+- No cliente, tudo fica atrás de `VITE_LIMITES_HABILITADOS=true` **e** `VITE_FLASHCARDS_LIMITE=true`. Com as travas desligadas (padrão), o Torneio não chama o servidor e segue só pelo link `#/flashcards`.
+- Batalha: a resposta só é aplicada depois do "sim" do servidor (chave por rodada, sem gastar duas vezes). Estudo: virar o flashcard conta.
+- **Antes de divulgar o Torneio:** aplicar a migration, ligar as duas travas no build e testar com uma conta de `contas_teste`.

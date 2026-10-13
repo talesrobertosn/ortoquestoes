@@ -13,6 +13,8 @@ export interface ImagemFlashcard {
   /** Caminho dentro de public/imagens, igual ao da questão de origem. */
   arquivo: string
   legenda: string
+  largura?: number
+  altura?: number
 }
 
 export interface Flashcard {
@@ -33,4 +35,26 @@ export interface Flashcard {
   certa: number
   /** Quando o comentário diverge do gabarito oficial, o flashcard cita a divergência aqui. */
   alerta?: string
+  /** Campos da fábrica (scripts/flashcards/fabrica.py). */
+  areaId?: string
+  subtemas?: string[]
+  /** false: alternativas longas demais para a Batalha; o flashcard fica só no Estudo. */
+  batalha?: boolean
+  prova?: string | null
+  ano?: number | null
+  /** Hash da questão e do comentário de origem: muda quando a fonte muda. */
+  fonte?: string
+}
+
+/** Resumo publicado pela fábrica (public/flashcards/indice.json). */
+export interface IndiceAcervo {
+  versao: number
+  geradoEm: string
+  total: number
+  batalha: number
+  soEstudo: number
+  comImagem: number
+  quarentena: number
+  assinatura: string
+  areas: Record<string, { nome: string; arquivo: string; total: number; batalha: number; comImagem: number; tipos: Record<string, number>; assuntos: Record<string, number> }>
 }

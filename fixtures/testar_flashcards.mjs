@@ -126,6 +126,48 @@ try {
   assert.ok(tabela[0.6].chefe < 0.12, 'chefe fácil demais para 60%')
   assert.ok(tabela[0.7].chefe < 0.5, 'chefe fácil demais para 70%')
   assert.ok(tabela[0.9].chefe > 0.6, 'chefe impossível para 90%')
+  // Partidas longas (sem parar no primeiro chefe): escalonamento, cura e mortes de um golpe só.
+  function longa(taxa, semente) {
+    let s = semente >>> 0
+    const sorte = () => { s = (s * 1664525 + 1013904223) >>> 0; return s / 4294967296 }
+    let { estado } = motor.novaPartida(semente)
+    let golpeUnico = 0, tetoFurado = 0, respostas = 0
+    for (let passo = 0; passo < 3000; passo++) {
+      if (estado.fase === 'fim') break
+      if (estado.fase === 'recompensa') { estado = motor.escolher(estado, estado.recompensas[0]).estado; continue }
+      if (estado.fase === 'resposta') { estado = motor.seguir(estado).estado; continue }
+      const c = motor.carta(estado.atual.id)
+      const acerta = sorte() < taxa
+      const pos = acerta ? estado.atual.ordem.indexOf(c.certa) : estado.atual.ordem.findIndex((o) => o !== c.certa)
+      const antes = estado
+      const r = motor.responder(estado, pos)
+      respostas++
+      const golpe = r.eventos.find((e) => e.tipo === 'dano-heroi')
+      if (golpe) {
+        if (antes.vida === antes.vidaMax && golpe.valor >= antes.vida) golpeUnico++
+        const teto = golpe.critico ? 0.45 : 0.35
+        if (golpe.valor > Math.ceil(antes.vidaMax * teto)) tetoFurado++
+      }
+      estado = r.estado
+    }
+    return { andar: estado.andar, chefes: estado.chefesDerrotados, estagio: estado.estagio, cura: estado.curaTotal, sofrido: estado.danoSofrido, evitado: estado.danoEvitado, respostas, golpeUnico, tetoFurado }
+  }
+  const longo = {}
+  for (const taxa of [0.5, 0.6, 0.7, 0.8, 0.9]) {
+    const N = 600, soma = { andar: 0, chefes: 0, estagio: 0, cura: 0, sofrido: 0, respostas: 0, golpeUnico: 0, tetoFurado: 0, andar9: 0 }
+    for (let k = 0; k < N; k++) { const r = longa(taxa, 7000 + k); for (const x in soma) soma[x] += x === 'andar9' ? Number(r.andar >= 9) : r[x] }
+    longo[taxa] = Object.fromEntries(Object.entries(soma).map(([x, v]) => [x, v / N]))
+  }
+  console.log('Partidas longas (acerto → andar médio, chefes, estágio, respostas, cura, dano sofrido, chega ao 9º):')
+  for (const [t, v] of Object.entries(longo)) console.log(`  ${Math.round(t * 100)}% → andar ${v.andar.toFixed(1)} · chefes ${v.chefes.toFixed(2)} · estágio ${v.estagio.toFixed(2)} · ${v.respostas.toFixed(0)} flashcards · cura ${v.cura.toFixed(0)} · dano ${v.sofrido.toFixed(0)} · andar 9+: ${(v.andar9 * 100).toFixed(0)}%`)
+  for (const v of Object.values(longo)) {
+    assert.equal(v.golpeUnico, 0, 'morte de vida cheia num golpe só')
+    assert.equal(v.tetoFurado, 0, 'golpe acima do teto de dano')
+  }
+  assert.ok(longo[0.5].andar < longo[0.7].andar && longo[0.7].andar < longo[0.9].andar, 'quem acerta mais vai mais longe')
+  assert.ok(longo[0.9].andar > 6 && longo[0.9].andar < 40, 'partida de 90% nem curta demais nem infinita')
+  assert.ok(longo[0.6].andar < 4.5, 'masmorra fácil demais para 60%')
+
   console.log('Motor da Batalha: ok')
 } finally {
   await rm(pasta, { recursive: true, force: true })

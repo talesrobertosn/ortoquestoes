@@ -29,6 +29,29 @@ interface Projetil {
 
 export interface Intensidade { fator: number }
 
+/**
+ * Brilhos pré-renderizados: um gradiente radial por cor, desenhado uma vez num
+ * canvas pequeno e depois só copiado e escalado. Mesmo visual, uma fração do
+ * custo de criar centenas de gradientes por quadro (decisivo no celular).
+ */
+const brilhos = new Map<string, HTMLCanvasElement>()
+export function brilho(cor: string, nucleoBranco = true) {
+  const chave = cor + (nucleoBranco ? '+' : '')
+  let b = brilhos.get(chave)
+  if (!b) {
+    b = document.createElement('canvas'); b.width = b.height = 64
+    const c = b.getContext('2d')!
+    const g = c.createRadialGradient(32, 32, 0, 32, 32, 32)
+    if (nucleoBranco) { g.addColorStop(0, '#fff'); g.addColorStop(0.35, cor) } else g.addColorStop(0, cor)
+    g.addColorStop(1, cor + '00')
+    c.fillStyle = g; c.fillRect(0, 0, 64, 64)
+    brilhos.set(chave, b)
+  }
+  return b
+}
+/** Celular: menos pixels no canvas de efeitos (o efeito é luz, não detalhe). */
+const telaDeToque = () => typeof matchMedia === 'function' && matchMedia('(pointer: coarse)').matches
+
 export class Palco {
   private canvas: HTMLCanvasElement
   private ctx: CanvasRenderingContext2D
@@ -49,7 +72,7 @@ export class Palco {
   }
 
   redimensionar() {
-    this.dpr = Math.min(window.devicePixelRatio || 1, 2)
+    this.dpr = Math.min(window.devicePixelRatio || 1, telaDeToque() ? 1.5 : 2)
     this.canvas.width = Math.round(window.innerWidth * this.dpr)
     this.canvas.height = Math.round(window.innerHeight * this.dpr)
   }
@@ -128,14 +151,17 @@ export class Palco {
     for (const p of this.projeteis) {
       const pos = bezier(p.de, p.controle, p.para, p.t)
       const r = p.luz
-      const g = c.createRadialGradient(pos.x, pos.y, 0, pos.x, pos.y, r)
-      g.addColorStop(0, p.cor + '55'); g.addColorStop(1, p.cor + '00')
-      c.fillStyle = g; c.fillRect(pos.x - r, pos.y - r, r * 2, r * 2)
+      c.globalAlpha = 0.33
+      c.drawImage(brilho(p.cor, false), pos.x - r, pos.y - r, r * 2, r * 2)
+      c.globalAlpha = 1
     }
     for (const o of this.ondas) {
       const a = o.vida / o.total
-      c.strokeStyle = o.cor; c.globalAlpha = a; c.lineWidth = o.largura * a + 1
-      c.shadowColor = o.cor; c.shadowBlur = 18
+      c.strokeStyle = o.cor
+      // halo: traço largo e fraco por baixo do traço fino (no lugar do shadowBlur, que pesa)
+      c.globalAlpha = a * 0.25; c.lineWidth = (o.largura * a + 1) * 4
+      c.beginPath(); c.arc(o.x, o.y, o.raio, 0, Math.PI * 2); c.stroke()
+      c.globalAlpha = a; c.lineWidth = o.largura * a + 1
       c.beginPath(); c.arc(o.x, o.y, o.raio, 0, Math.PI * 2); c.stroke()
     }
     c.shadowBlur = 0
@@ -147,7 +173,10 @@ export class Palco {
       g.addColorStop(0, 'rgba(255,255,255,0)'); g.addColorStop(0.5, k.cor); g.addColorStop(1, '#ffffff')
       c.globalAlpha = Math.min(1, (k.vida / k.total) * 2)
       c.strokeStyle = g; c.lineCap = 'round'
-      c.shadowColor = k.cor; c.shadowBlur = 24
+      const alfa = c.globalAlpha
+      c.globalAlpha = alfa * 0.3; c.lineWidth = k.largura * 3
+      c.beginPath(); c.arc(k.x, k.y, k.raio, comeco, fim); c.stroke()
+      c.globalAlpha = alfa
       for (const [larg, r] of [[k.largura, k.raio], [k.largura * 0.45, k.raio * 0.86]] as const) {
         c.lineWidth = larg
         c.beginPath(); c.arc(k.x, k.y, r, comeco, fim); c.stroke()
@@ -166,9 +195,7 @@ export class Palco {
       c.globalAlpha = p.forma === 'confete' ? Math.min(1, a * 2) : a
       if (p.forma === 'brilho') {
         const r = p.tam * (0.6 + a * 0.6)
-        const g = c.createRadialGradient(p.x, p.y, 0, p.x, p.y, r)
-        g.addColorStop(0, '#fff'); g.addColorStop(0.35, p.cor); g.addColorStop(1, p.cor + '00')
-        c.fillStyle = g; c.beginPath(); c.arc(p.x, p.y, r, 0, Math.PI * 2); c.fill()
+        c.drawImage(brilho(p.cor), p.x - r, p.y - r, r * 2, r * 2)
       } else if (p.forma === 'faisca') {
         c.strokeStyle = p.cor; c.lineWidth = p.tam * 0.5 * a + 0.6; c.lineCap = 'round'
         c.beginPath(); c.moveTo(p.x, p.y); c.lineTo(p.x - p.vx * 0.03, p.y - p.vy * 0.03); c.stroke()

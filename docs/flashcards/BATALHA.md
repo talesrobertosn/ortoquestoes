@@ -3,6 +3,47 @@
 Objetivo: transformar a revisão em uma partida curta, tensa e divertida, sem perder o valor de estudo.
 Toda partida termina mandando os flashcards errados para a fila de revisão.
 
+## Versão 2 (13/10/2026): masmorra em atos, 30 recompensas e evolução
+
+Vale por cima de tudo o que está abaixo. Código: `src/flashcards/motor/` (regras.ts, bestiario.ts, poderes.ts, selecao.ts).
+
+### Duas dificuldades que não se misturam
+
+- **Educativa:** a do flashcard (fácil, moderada, difícil). Qualquer adversário joga flashcards de qualquer dificuldade; no andar 20 ainda aparecem fáceis.
+- **RPG:** a do adversário (vida, força, armadura, barreira, regeneração, fases e críticos), que cresce por andar.
+
+### Masmorra
+
+- **Atos de 3 andares:** dois confrontos (comum, ou elite a partir do 5º andar, 50%) e um chefe. Andar 1 é sempre o Golem e o 2 a Serpente.
+- **Bestiário (10):** comuns Golem de Gesso, Serpente do Ciático, Elemental do Cálcio (4+), Víbora do Mediano (4+), Golem de Cimento Ósseo (7+); elites Cavaleiro da Osteossíntese e Colosso da Tíbia (5+); chefes Guardião do Acetábulo (3), Senhor do Anel Pélvico (6, barreira) e Titã da Coluna (9, regeneração). Os novos usam troca de paleta dos sprites; sprites próprios ficam para depois.
+- **Escalonamento por ato:** vida +30% e força +24% (linear, tetos ×6 e ×5), paciência −1 (mínimo 6), crítico +1 ponto (teto 25%).
+- **Teto do golpe:** comum 22%, elite 28%, chefe 35% da sua vida máxima; crítico ×1,6 com teto de 45%. Ninguém morre de vida cheia num golpe só.
+- **Crítico do adversário:** sorteado com semente na compra do flashcard e mostrado na intenção (gema em brasa, "crítico se errar") com o **dano exato**, já com as suas proteções. Nunca dois críticos seguidos.
+
+### Herói
+
+- **5 estágios** (só nesta partida, para o ranking ser justo): Aprendiz da Ortopedia → Escudeiro Clínico → Cavaleiro da Ortopedia → Mestre da Reconstrução → Lenda do Torneio. Sobe um a cada chefe: +12 de vida máxima por estágio (até +50), ataque +2 e defesa +1. O cavaleirinho ganha equipamento novo (troca de paleta) e aura do 3º estágio em diante.
+- **Todo chefe vencido** devolve 15% da vida máxima.
+
+### Recompensas (30, em `poderes.ts`, sorteadas por raridade: comum 10, incomum 5, rara 1,6)
+
+- **Poderes (11):** Golpe duplo, Golpe devastador (+25), Eco da lâmina (segundo impacto de 50%), Ruptura de armadura, Escudo arcano, Barreira reativa (absorve 15), Foco absoluto (metade do dano), Segunda chance (rara), Poção do desafio, Poção de emergência (ativa: +25), Pergaminho da pista (ativo).
+- **Relíquias (16):** Lâmina da precisão, Fúria do residente, Marca do mestre (rara), Tala reforçada, Armadura de placas, Escudo do mestre (rara), Proteção do preceptor, Coração do viajante, Vitalidade do veterano (retorno decrescente), Selo da persistência, Roubo de energia, Insígnia da reconstrução, Ritual da recuperação, Amuleto da incidência (rara), Lupa do preceptor (rara), Livro dos fundamentos.
+- **Eventos (3):** Fogueira (cura 30%), Ferreiro (+1 carga em cada poder), Treino (+10 de vida máxima).
+- Depois do chefe, pelo menos uma rara; nunca dois eventos juntos; a Fogueira pesa 3× com menos de 60% de vida.
+
+### Simulação (fixtures/testar_flashcards.mjs, 600 partidas por taxa)
+
+| Acerto | Andar médio | Chefes | Flashcards por partida | Chega ao 9º andar |
+|---|---|---|---|---|
+| 50% | 2,2 | 0,01 | 14 | 0% |
+| 60% | 2,8 | 0,11 | 19 | 0% |
+| 70% | 3,8 | 0,44 | 28 | 1% |
+| 80% | 6,3 | 1,24 | 55 | 21% |
+| 90% | 28,9 | 8,7 | 440 | 91% |
+
+O teste garante: nenhuma morte de vida cheia num golpe só, nenhum golpe acima do teto, quem acerta mais vai mais longe e nenhuma partida infinita.
+
 ## Versão no site (12/10/2026, noite)
 
 A Batalha já roda dentro do app (`src/flashcards/`, rota `#/flashcards`, ainda fora da produção). O que vale agora, por cima do desenho original abaixo:

@@ -81,6 +81,15 @@ Uma aba **Flashcards** dentro de **Treinar**, com o **modo Estudo** (calmo: vira
   - o Tales pediu arte no estilo HD-2D (Octopath Traveler II), modal premium, som sempre ligado e celular sem tamanhos aberrantes;
   - feita a fatia vertical (Batalha no Campo + Estudo na Biblioteca); detalhes e lista de assets provisórios em [ARTE.md](ARTE.md);
   - **Para continuar:** o Tales revisa os prints e o PR; depois, polir Serpente, Guardião, Masmorra e Salão. Só publicar com a aprovação dele.
+- **13/10/2026, madrugada (mega plano do Tales, publicação autorizada):**
+  - celular em retrato que cabe tudo (verso ganha a tela, botões compactos, aviso para girar quando deitado);
+  - imagem sempre inteira, visualizador com zoom e arraste;
+  - som forte com limitador, impactos variados, música procedural por cenário e chefe; celular mais leve;
+  - **fábrica de flashcards:** 4.302 publicados a partir do acervo real (ver ARQUITETURA.md, "Fábrica");
+  - seleção procedural ponderada e mecânicas da versão 2 (ver BATALHA.md);
+  - Estudo virou Biblioteca por área e situação de revisão; tela de tesouro nova;
+  - Golem e Guardião com poses; herói original mantido (pedido do Tales).
+  - **Pendente:** limite diário no servidor e sincronização (o recurso segue só pelo link), painéis de herói e inimigo, conquistas, mais cenários, sprites próprios para os adversários novos.
 - **Próximo passo (antigo):** etapa 1 do [ROTEIRO.md](ROTEIRO.md). O Tales avalia o protótipo e escolhe os ajustes de visual; depois vem a fábrica (`scripts/flashcards/`), com uma amostra de cerca de 30 flashcards para aprovação.
 
 ## Regras que valem para todo o projeto

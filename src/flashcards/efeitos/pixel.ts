@@ -23,13 +23,16 @@ export class Grade {
   private forma = 0
   /** Direção da luz (normalizada): de cima à esquerda. */
   luz = { x: -0.55, y: -0.75, z: 0.62 }
+  /** Deslocamento da origem: o desenho usa coordenadas locais do personagem. */
+  ox = 0
+  oy = 0
 
   constructor(w: number, h: number) { this.w = w; this.h = h; this.c = new Array(w * h).fill(null) }
 
   material(m: Material): number { this.mats.push(m); return this.mats.length - 1 }
 
   private por(x: number, y: number, m: number, nx: number, ny: number, nz: number, bonus = 0) {
-    x = Math.round(x); y = Math.round(y)
+    x = Math.round(x) + this.ox; y = Math.round(y) + this.oy
     if (x < 0 || y < 0 || x >= this.w || y >= this.h) return
     const n = Math.hypot(nx, ny, nz) || 1
     const dif = Math.max(0, (nx * this.luz.x + ny * this.luz.y + nz * this.luz.z) / n)
@@ -80,13 +83,32 @@ export class Grade {
     }
   }
 
+  /**
+   * Membro: cápsula de A a B com raio que afina de `ra` para `rb`, sombreada
+   * como cilindro. É a peça do esqueleto: braço, perna, cabo de arma.
+   */
+  membro(ax: number, ay: number, bx: number, by: number, ra: number, rb: number, m: number, bonus = 0) {
+    this.forma++
+    const vx = bx - ax, vy = by - ay, L2 = vx * vx + vy * vy || 1
+    const r = Math.max(ra, rb)
+    for (let y = Math.floor(Math.min(ay, by) - r); y <= Math.ceil(Math.max(ay, by) + r); y++) for (let x = Math.floor(Math.min(ax, bx) - r); x <= Math.ceil(Math.max(ax, bx) + r); x++) {
+      const px = x + 0.5, py = y + 0.5
+      const t = Math.max(0, Math.min(1, ((px - ax) * vx + (py - ay) * vy) / L2))
+      const cx = ax + vx * t, cy = ay + vy * t, rr = ra + (rb - ra) * t
+      const dx = px - cx, dy = py - cy, d = Math.hypot(dx, dy)
+      if (d > rr) continue
+      const k = d / rr
+      this.por(x, y, m, (dx / (d || 1)) * k, (dy / (d || 1)) * k, Math.sqrt(1 - k * k) * 0.9 + 0.1, bonus)
+    }
+  }
+
   retangulo(x0: number, y0: number, w: number, h: number, m: number, bisel = 2, bonus = 0) {
     this.poligono([[x0, y0], [x0 + w, y0], [x0 + w, y0 + h], [x0, y0 + h]], m, bisel, bonus)
   }
 
   /** Pixel de cor fixa (detalhe à mão): olhos, brilhos, rebites. */
   ponto(x: number, y: number, cor: string) {
-    x = Math.round(x); y = Math.round(y)
+    x = Math.round(x) + this.ox; y = Math.round(y) + this.oy
     if (x < 0 || y < 0 || x >= this.w || y >= this.h) return
     this.c[y * this.w + x] = { m: -1, luz: 1, fixo: cor, f: this.c[y * this.w + x]?.f ?? this.forma }
   }
@@ -106,18 +128,27 @@ export class Grade {
   }
 
   /** Apaga pixels (recortes, buracos). */
-  apagar(x: number, y: number) { if (x >= 0 && y >= 0 && x < this.w && y < this.h) this.c[y * this.w + x] = null }
+  apagar(x: number, y: number) { x = Math.round(x) + this.ox; y = Math.round(y) + this.oy; if (x >= 0 && y >= 0 && x < this.w && y < this.h) this.c[y * this.w + x] = null }
 
-  ocupado(x: number, y: number) { return x >= 0 && y >= 0 && x < this.w && y < this.h && this.c[y * this.w + x] !== null }
+  ocupado(x: number, y: number) { x = Math.round(x) + this.ox; y = Math.round(y) + this.oy; return x >= 0 && y >= 0 && x < this.w && y < this.h && this.c[y * this.w + x] !== null }
 
   /** Escurece um tom (cavidade, sombra de oclusão) sem trocar o material. */
   sombrear(x: number, y: number, k: number) {
+    x = Math.round(x) + this.ox; y = Math.round(y) + this.oy
+    if (x < 0 || y < 0 || x >= this.w || y >= this.h) return
     const cel = this.c[y * this.w + x]
     if (cel && cel.m >= 0) cel.luz = Math.max(0, cel.luz - k)
   }
 
+  /** Retângulo ocupado no canvas: x, y, largura, altura (com 1 px de contorno). */
+  limites(): [number, number, number, number] {
+    let x0 = this.w, y0 = this.h, x1 = -1, y1 = -1
+    for (let y = 0; y < this.h; y++) for (let x = 0; x < this.w; x++) if (this.c[y * this.w + x]) { x0 = Math.min(x0, x); y0 = Math.min(y0, y); x1 = Math.max(x1, x); y1 = Math.max(y1, y) }
+    return x1 < 0 ? [0, 0, this.w, this.h] : [Math.max(0, x0 - 1), Math.max(0, y0 - 1), Math.min(this.w, x1 - x0 + 3), Math.min(this.h, y1 - y0 + 3)]
+  }
+
   /** Converte para cores: rampa por material, pontilhado nas transições e contorno colorido. */
-  pintar(canvas: HTMLCanvasElement, contornoExterno = true) {
+  pintar(canvas: HTMLCanvasElement, contornoExterno = true, troca?: Map<string, string>) {
     canvas.width = this.w; canvas.height = this.h
     const ctx = canvas.getContext('2d')!
     const img = ctx.createImageData(this.w, this.h)
@@ -158,6 +189,7 @@ export class Grade {
     }
     cores.forEach((cor, i) => {
       if (!cor) return
+      if (troca) cor = troca.get(cor) ?? cor
       const n = parseInt(cor.slice(1), 16)
       img.data[i * 4] = n >> 16; img.data[i * 4 + 1] = (n >> 8) & 255; img.data[i * 4 + 2] = n & 255; img.data[i * 4 + 3] = 255
     })
@@ -180,4 +212,12 @@ export const MAT = {
   pele: { rampa: ['#ffe2c4', '#f2b98e', '#c98a62', '#8f5a3c'], contorno: '#3a1e12' },
   cabelo: { rampa: ['#c98a4a', '#8f5428', '#5e3216', '#3a1d0a'], contorno: '#1e0e04' },
   madeira: { rampa: ['#c08a54', '#8f5f34', '#61391c', '#3c210e'], contorno: '#1e1006' },
+  ferro: { rampa: ['#dfe3ea', '#9ea5b2', '#646b78', '#373c47'], contorno: '#12141a' },
+  tabardo: { rampa: ['#e05a44', '#b02c1e', '#741610', '#420a08'], contorno: '#1e0404' },
+  aco2: { rampa: ['#e4ecf6', '#98a8c0', '#5b6884', '#323a52'], contorno: '#10131e' },
+  verde: { rampa: ['#b8ffb0', '#5fdc7a', '#2a9a48', '#145a26'], contorno: '#06200c' },
+  roxo: { rampa: ['#e2c8ff', '#a878f0', '#6a40b8', '#3a1e70'], contorno: '#140628' },
+  ciano: { rampa: ['#d8ffff', '#7fe0ff', '#3aa0d0', '#1a5a80'], contorno: '#061e2e' },
+  chama: { rampa: ['#fff6b0', '#ffc24a', '#f0702a', '#a02a10'], contorno: '#3a0a04' },
+  papel: { rampa: ['#fff8e0', '#f0dca8', '#c8a872', '#8a6a3a'], contorno: '#3a2410' },
 } satisfies Record<string, Material>

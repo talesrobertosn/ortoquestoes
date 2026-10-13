@@ -2,39 +2,66 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import { gravar, ler } from '../../estado/armazenamento'
 import { href, navegar } from '../../util/rotas'
 import { BARALHO_DEMO } from '../dados/baralhoDemo'
+import { carregarAcervo } from '../dados/acervo'
+import { autorizarFlashcard, FLASHCARDS_NO_SERVIDOR, sincronizarProgresso, type LimiteFlashcard } from '../servidor'
+import { montarBaralho } from '../motor/selecao'
+import type { Flashcard } from '../tipos'
 import { Palco, centro } from '../efeitos/palco'
-import { PALETA_PERSONAGEM, type Personagem } from '../efeitos/personagens'
-import { configurarSom, destravar, tocar, tocarAmbiente } from '../efeitos/sons'
+import { PALETA_PERSONAGEM, type Personagem, type Pose } from '../efeitos/personagens'
+import { configurarSom, destravar, tocar, tocarAmbiente, tocarMusica } from '../efeitos/sons'
 import { sementeNova } from '../motor/aleatorio'
-import { BESTIARIO, inimigoDoAndar, type Inimigo } from '../motor/bestiario'
-import { ENCAIXES, RECOMPENSAS, ehPoder, type Recompensa } from '../motor/poderes'
-import { COMBO_MINIMO, criarMotor, type Evento, type Partida } from '../motor/regras'
-import { CHAVE_AJUSTES, CHAVE_PARTIDA, CHAVE_REGISTROS, registrarResposta, type RegistroFlashcard } from '../progresso'
+import { ESTAGIOS, LIMITES, inimigoDoAndar, type Inimigo } from '../motor/bestiario'
+import { ENCAIXES, RECOMPENSAS, ehPoder, type Recompensa, type TipoPoder } from '../motor/poderes'
+import { COMBO_MINIMO, criarMotor, type Evento, type MotivoCura, type Partida } from '../motor/regras'
+import { CHAVE_AJUSTES, CHAVE_HISTORICO, CHAVE_PARTIDA, CHAVE_RECORDES, CHAVE_REGISTROS, lembrarVisto, RECORDES_VAZIOS, registrarResposta, type Recordes, type RegistroFlashcard } from '../progresso'
 import { Cartao } from './Cartao'
 import { Cenario, TampoMesa } from './Cenario'
 import { Estudo } from './Estudo'
 import { Ator, BarraVida, Encaixe } from './Hud'
+import { Visualizador } from './Visualizador'
+import { recurso } from '../../config'
 import { ModalJogo } from './ModalJogo'
 import { Sprite } from './Sprite'
 
 export interface Ajustes {
-  versao: 2
+  versao: 3
   som: boolean
   volEfeitos: number
   volAmbiente: number
+  volMusica: number
   efeitos: 'completos' | 'reduzidos'
   velocidade: 'normal' | 'rapida'
 }
 /** Som ligado por padrão (pedido do Tales em 12/10/2026); toca a partir do primeiro toque. */
-const AJUSTES_PADRAO: Ajustes = { versao: 2, som: true, volEfeitos: 0.7, volAmbiente: 0.35, efeitos: 'completos', velocidade: 'normal' }
+const AJUSTES_PADRAO: Ajustes = { versao: 3, som: true, volEfeitos: 0.85, volAmbiente: 0.35, volMusica: 0.45, efeitos: 'completos', velocidade: 'normal' }
 
-const motor = criarMotor(BARALHO_DEMO)
+const ROTULO_CURA: Record<MotivoCura, string> = {
+  sequencia: 'SEQUÊNCIA', lendaria: 'LENDÁRIA', pocao: 'POÇÃO', selo: 'SELO', roubo: 'ROUBO DE ENERGIA', vital: 'POÇÃO VITAL',
+  insignia: 'INSÍGNIA', chefe: 'CHEFE VENCIDO', ritual: 'RITUAL', descanso: 'FOGUEIRA', coracao: 'CORAÇÃO', evolucao: 'EVOLUÇÃO',
+}
+
+/** Tamanho de cada reposição do baralho (a seleção roda de novo quando acaba). */
+const LOTE_DO_BARALHO = 40
+
+let motor = criarMotor(BARALHO_DEMO)
+
+/** Motor com o acervo carregado e a seleção procedural ponderada (motor/selecao.ts). */
+function prepararMotor(cartas: Flashcard[]) {
+  motor = criarMotor(cartas, {
+    repor: (excluir, semente) => montarBaralho(cartas, {
+      registros: ler<Record<string, RegistroFlashcard>>(CHAVE_REGISTROS, {}),
+      recentes: ler<string[]>(CHAVE_HISTORICO, []),
+      agora: Date.now(),
+    }, semente, LOTE_DO_BARALHO, excluir),
+  })
+}
 
 function partidaSalva(): Partida | null {
   const p = ler<Partida | null>(CHAVE_PARTIDA, null)
-  if (!p || p.versao !== 1 || p.fase === 'fim') return null
+  if (!p || p.versao !== 2 || p.fase === 'fim') return null
   try {
-    ;[...p.baralho, ...p.descarte, ...(p.atual ? [p.atual.id] : [])].forEach((id) => motor.carta(id))
+    if (p.atual) motor.carta(p.atual.id)
+    p.derrubaram.forEach((id) => motor.carta(id))
     return p
   } catch { return null }
 }
@@ -73,12 +100,41 @@ interface Mostrado {
   heroiCaiu: boolean
 }
 
+/**
+ * Entrada do Torneio: carrega o acervo publicado pela fábrica e só então monta
+ * o jogo. Se a rede falhar, joga com o baralho de demonstração.
+ */
 export function Arena() {
+  const [pronto, definirPronto] = useState(false)
+  useEffect(() => {
+    let vivo = true
+    void Promise.all([carregarAcervo(), sincronizarProgresso()]).then(([cartas]) => { if (!vivo) return; prepararMotor(cartas); definirPronto(true) })
+    return () => { vivo = false }
+  }, [])
+  if (!pronto) {
+    return (
+      <ModalJogo titulo="Torneio de Flashcards" aoPedirFechar={() => navegar('/treinar')}>
+        <div className="fc-arena fc-carregando" role="status">
+          <Cenario cena="campo" reduzido />
+          <div className="fc-carregando__caixa">
+            <span className="fc-carregando__baralho" aria-hidden="true"><i /><i /><i /></span>
+            <strong>Embaralhando o acervo</strong>
+            <small>Milhares de flashcards das provas reais</small>
+          </div>
+        </div>
+      </ModalJogo>
+    )
+  }
+  return <ArenaJogo />
+}
+
+function ArenaJogo() {
   const [ajustes, definirAjustesBruto] = useState<Ajustes>(() => {
     const salvos = ler<Partial<Ajustes>>(CHAVE_AJUSTES, {})
     const reduzSistema = typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches
-    // Ajustes da versão anterior (som desligado por padrão) não valem mais.
-    const validos = salvos.versao === 2 ? salvos : {}
+    // Ajustes da versão 1 (som desligado por padrão) não valem mais; a 2 ganha o volume da música.
+    const versao = salvos.versao as number | undefined
+    const validos = versao === 3 ? salvos : versao === 2 ? { ...salvos, versao: 3 as const } : {}
     return { ...AJUSTES_PADRAO, efeitos: reduzSistema ? 'reduzidos' : 'completos', ...validos }
   })
   const definirAjustes = (a: Partial<Ajustes>) => definirAjustesBruto((v) => { const n = { ...v, ...a }; gravar(CHAVE_AJUSTES, n); return n })
@@ -100,12 +156,16 @@ export function Arena() {
   const [flutuantes, definirFlutuantes] = useState<Flutuante[]>([])
   const [ampliada, definirAmpliada] = useState<{ src: string; legenda: string } | null>(null)
   const [ajustesAbertos, definirAjustesAbertos] = useState(false)
+  const [painel, definirPainel] = useState<'heroi' | 'inimigo' | null>(null)
+  const [bloqueio, definirBloqueio] = useState<LimiteFlashcard | null>(null)
+  const validando = useRef(false)
+  const chaves = useRef(new Map<number, string>())
   const [confirmarSaida, definirConfirmarSaida] = useState(false)
   const [transicao, definirTransicao] = useState(false)
   const [vermelho, definirVermelho] = useState(0)
   const [eliminando, definirEliminando] = useState<number | null>(null)
   const [atacando, definirAtacando] = useState(false)
-  const [cenarioVisivel, definirCenarioVisivel] = useState(() => inimigoDoAndar(partida.andar).inimigo.cenario)
+  const [cenarioVisivel, definirCenarioVisivel] = useState(() => inimigoDoAndar(partida.andar, partida.sementeBase).inimigo.cenario)
   const [estudoPrimeiro, definirEstudoPrimeiro] = useState<string[]>([])
 
   const canvasPalco = useRef<HTMLCanvasElement>(null)
@@ -120,7 +180,7 @@ export function Arena() {
   const idFlutuante = useRef(0)
 
   /* ---------- Som ---------- */
-  useEffect(() => { configurarSom({ ligado: ajustes.som, efeitos: ajustes.volEfeitos, ambiente: ajustes.volAmbiente }) }, [ajustes.som, ajustes.volEfeitos, ajustes.volAmbiente])
+  useEffect(() => { configurarSom({ ligado: ajustes.som, efeitos: ajustes.volEfeitos, ambiente: ajustes.volAmbiente, musica: ajustes.volMusica }) }, [ajustes.som, ajustes.volEfeitos, ajustes.volAmbiente, ajustes.volMusica])
   useEffect(() => {
     let feito = false
     const primeiro = () => { if (feito) return; feito = true; destravar(); tocar('abrir') }
@@ -129,7 +189,9 @@ export function Arena() {
     return () => { window.removeEventListener('pointerdown', primeiro, { capture: true }); window.removeEventListener('keydown', primeiro, { capture: true }) }
   }, [])
   useEffect(() => { tocarAmbiente(modo === 'estudo' ? 'biblioteca' : cenarioVisivel) }, [modo, cenarioVisivel])
-  useEffect(() => () => tocarAmbiente(null), [])
+  const chefeEmCena = modo === 'batalha' && inimigoDoAndar(partida.andar, partida.sementeBase).inimigo.chefe
+  useEffect(() => { tocarMusica(modo === 'estudo' ? 'biblioteca' : chefeEmCena ? 'chefe' : cenarioVisivel) }, [modo, cenarioVisivel, chefeEmCena])
+  useEffect(() => () => { tocarAmbiente(null); tocarMusica(null) }, [])
 
   useEffect(() => { partidaRef.current = partida; gravar(CHAVE_PARTIDA, partida) }, [partida])
 
@@ -144,7 +206,7 @@ export function Arena() {
   useEffect(() => { if (palco.current) palco.current.reduzido = reduzido }, [reduzido])
 
   useEffect(() => {
-    const { inimigo, ciclo } = inimigoDoAndar(partida.andar)
+    const { inimigo, ciclo } = inimigoDoAndar(partida.andar, partida.sementeBase)
     if (partida.fase === 'pergunta' && partida.rodada === 0) definirApresentacao({ inimigo, ciclo, andar: partida.andar })
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
@@ -190,18 +252,34 @@ export function Arena() {
     definirTransicao(false)
     definirEliminando(null)
     definirAtacando(false)
-    definirCenarioVisivel(inimigoDoAndar(partidaRef.current.andar).inimigo.cenario)
+    definirCenarioVisivel(inimigoDoAndar(partidaRef.current.andar, partidaRef.current.sementeBase).inimigo.cenario)
     sincronizar(partidaRef.current)
   }, [sincronizar])
 
+  // pré-carrega a figura do próximo flashcard do baralho, para ela já estar pronta
+  const proximoId = partida.baralho[0]
+  useEffect(() => {
+    if (!proximoId) return
+    const prox = motor.carta(proximoId)
+    if (prox?.imagem) { const im = new Image(); im.src = recurso('imagens/' + prox.imagem.arquivo) }
+  }, [proximoId, motor])
+
   const arte = (r: React.RefObject<HTMLDivElement | null>) => r.current?.querySelector('.fc-ator__corpo')
+  /** Troca a pose do sprite (preparo, golpe, dano, vitória) por um tempo e volta a respirar. */
+  const posar = useCallback((r: React.RefObject<HTMLDivElement | null>, pose: Pose, ms: number) => {
+    const el = r.current
+    if (!el) return
+    el.dataset.pose = pose
+    window.clearTimeout(Number(el.dataset.poseTempo))
+    el.dataset.poseTempo = String(window.setTimeout(() => { delete el.dataset.pose }, ms * fator))
+  }, [fator])
 
   const encenar = useCallback(async (eventos: Evento[], depois: Partida) => {
     const g = ++geracao.current
     const P = palco.current
     definirAnimando(true)
     const combo = depois.sequencia
-    const quemInimigo = inimigoDoAndar(depois.andar).inimigo.sprite as Personagem
+    const quemInimigo = inimigoDoAndar(depois.andar, depois.sementeBase).inimigo.sprite as Personagem
     for (const ev of eventos) {
       if (g !== geracao.current) return
       switch (ev.tipo) {
@@ -236,17 +314,21 @@ export function Arena() {
           if (g !== geracao.current) return
           // 7-13: impacto
           animar(arte(refInimigo), forte ? 'fc-anim-atingido-forte' : 'fc-anim-atingido', 640)
+          posar(refInimigo, 'dano', 560)
           P?.clarao(para, cor, forte ? 380 : medio ? 280 : 200, forte ? 1 : 0.75)
           P?.fragmentos(para, PALETA_PERSONAGEM[quemInimigo], forte ? 30 : medio ? 20 : 12, forte ? 460 : 330)
           P?.explosao(para, { cor, cor2: '#fff3c0', n: forte ? 40 : 22, forca: forte ? 380 : 260 })
           P?.onda(para, cor, forte ? 170 : 110)
           if (ev.critico || ev.duplo) { P?.corte(para, cor, 96); window.setTimeout(() => P?.corte(para, '#ffffff', 84, 0.6), 70 * fator) }
-          tocar(ev.critico || ev.duplo ? 'critico' : forte ? 'impacto-forte' : medio ? 'impacto-medio' : 'impacto-leve')
+          tocar(ev.critico || ev.duplo ? 'critico' : forte ? 'impacto-forte' : medio ? 'impacto-medio' : 'impacto-leve', 1, quemInimigo)
           tremer(forte ? 1 : medio ? 0.55 : 0.3)
           if (ev.critico || ev.duplo) flutuar(refInimigo.current, `-${ev.valor}`, '#ffd34a', { grande: true, rotulo: ev.duplo ? 'GOLPE DUPLO' : 'CRÍTICO', x: 70, y: -10 })
           else flutuar(refInimigo.current, `-${ev.valor}`, '#ffe6a8', { y: -20, x: 50 })
           if (ev.absorvido > 0) flutuar(refInimigo.current, `armadura −${ev.absorvido}`, '#cfe2ff', { y: -70, x: -20 })
-          definirMostrado((m) => ({ ...m, vidaInimigo: Math.max(0, m.vidaInimigo - ev.valor) }))
+          if (ev.barreira > 0) { flutuar(refInimigo.current, `barreira −${ev.barreira}`, '#9fe0ff', { y: -100, x: 10 }); P?.onda(para, '#7fd8ff', 130, 10) }
+          if (ev.eco > 0) window.setTimeout(() => { if (g !== geracao.current) return; P?.corte(para, '#7fd8ff', 80); tocar('impacto-leve', 1, quemInimigo); flutuar(refInimigo.current, `+${ev.eco}`, '#9fe8ff', { y: 10, x: 90, rotulo: 'ECO' }) }, 220 * fator)
+          if (ev.especial) flutuar(refInimigo.current, 'MARCA DO MESTRE', '#ffe08a', { y: -130 })
+          definirMostrado((m) => ({ ...m, vidaInimigo: Math.max(0, m.vidaInimigo - (ev.valor - ev.barreira)) }))
           if (!(await esperar(300, g))) return
           break
         }
@@ -258,32 +340,38 @@ export function Arena() {
         case 'dano-heroi': {
           // preparação: o adversário carrega o golpe
           animar(arte(refInimigo), 'fc-anim-prepara', 440)
-          tocar('preparo-inimigo')
+          posar(refInimigo, 'preparo', 520)
+          tocar('preparo-inimigo', 1, quemInimigo)
           P?.carga(centro(refInimigo.current), '#ff5a3c', 18, 80)
           if (!(await esperar(400, g))) return
           animar(arte(refInimigo), 'fc-anim-ataca', 440)
+          posar(refInimigo, 'golpe', 620)
           const de = centro(refInimigo.current), para = centro(refHeroi.current)
-          tocar('golpe-inimigo')
+          tocar('golpe-inimigo', 1, quemInimigo)
           if (P) await P.projetil(de, para, { cor: '#ff5a3c', nucleo: '#ffd0c0', tam: 15, duracao: 0.34, curva: -0.25, rastro: 4 })
           if (g !== geracao.current) return
           animar(arte(refHeroi), 'fc-anim-atingido', 640)
+          posar(refHeroi, 'dano', 560)
           P?.garras(para)
           P?.clarao(para, '#ff3a20', 240, 0.8)
           P?.explosao(para, { cor: '#ff5a3c', cor2: '#ffb090', n: 26, forca: 300 })
           P?.fragmentos(para, ['#9fb0c8', '#f4f8ff', '#3f78c8'], 10, 260)
-          tocar('dano')
-          tremer(ev.valor >= 25 ? 1 : 0.6)
-          definirVermelho((v) => v + 1)
-          flutuar(refHeroi.current, `-${ev.valor}`, '#ff8a6a', { y: -70, grande: ev.valor >= 25, rotulo: ev.furia ? 'FÚRIA' : ev.veneno ? `VENENO +${ev.veneno}` : undefined })
+          tocar(ev.critico ? 'critico' : 'dano', 1, quemInimigo)
+          if (ev.veneno) tocar('veneno')
+          tremer(ev.critico || ev.valor >= 25 ? 1 : 0.6)
+          definirVermelho((v) => v + (ev.critico ? 2 : 1))
+          if (ev.critico) { P?.corte(para, '#ff3a20', 100); window.setTimeout(() => P?.corte(para, '#ffd0c0', 86, 0.6), 70 * fator) }
+          flutuar(refHeroi.current, `-${ev.valor}`, '#ff8a6a', { y: -70, grande: ev.critico || ev.valor >= 25, rotulo: ev.critico ? 'CRÍTICO' : ev.furia ? 'FÚRIA' : ev.veneno ? `VENENO +${ev.veneno}` : undefined })
           definirMostrado((m) => ({ ...m, vida: Math.max(0, m.vida - ev.valor) }))
           if (!(await esperar(260, g))) return
           break
         }
         case 'escudo': {
           animar(arte(refInimigo), 'fc-anim-ataca', 440)
+          posar(refInimigo, 'golpe', 600)
           if (!(await esperar(180, g))) return
           const de = centro(refInimigo.current), para = centro(refHeroi.current)
-          tocar('golpe-inimigo')
+          tocar('golpe-inimigo', 1, quemInimigo)
           if (P) await P.projetil(de, para, { cor: '#ff5a3c', nucleo: '#ffd0c0', tam: 14, duracao: 0.32, curva: -0.25 })
           if (g !== geracao.current) return
           animar(refHeroi.current, 'fc-anim-bloqueio', 640)
@@ -311,9 +399,34 @@ export function Arena() {
           P?.clarao(centro(refHeroi.current), '#5fdc7a', 200, 0.7, 0.6)
           animar(refHeroi.current, 'fc-anim-cura', 900)
           tocar('cura')
-          flutuar(refHeroi.current, `+${ev.valor}`, '#8ff0a0', { y: -50, x: 60, rotulo: ev.motivo === 'pocao' ? 'POÇÃO' : ev.motivo === 'lendaria' ? 'LENDÁRIA' : 'SEQUÊNCIA' })
+          flutuar(refHeroi.current, `+${ev.valor}`, '#8ff0a0', { y: -50, x: 60, rotulo: ROTULO_CURA[ev.motivo] })
           definirMostrado((m) => ({ ...m, vida: Math.min(depois.vidaMax, m.vida + ev.valor) }))
           if (!(await esperar(200, g))) return
+          break
+        }
+        case 'mitigado': {
+          const nome = ev.motivo === 'barreira' ? 'Barreira' : ev.motivo === 'foco' ? 'Foco' : 'Preceptor'
+          P?.onda(centro(refHeroi.current), '#9fd0ff', 100, 12)
+          tocar('escudo')
+          flutuar(refHeroi.current, `${nome} −${ev.valor}`, '#bfe0ff', { y: -110, x: 30 })
+          if (!(await esperar(160, g))) return
+          break
+        }
+        case 'regenera': {
+          P?.subir(centro(refInimigo.current), '#9fe8a0', 16, 60)
+          flutuar(refInimigo.current, `+${ev.valor}`, '#9fe8a0', { y: -40, x: -40, rotulo: 'REGENERA' })
+          definirMostrado((m) => ({ ...m, vidaInimigo: Math.min(depois.inimigo.vidaMax, m.vidaInimigo + ev.valor) }))
+          break
+        }
+        case 'evolucao': {
+          tocar('evolucao')
+          P?.subir(centro(refHeroi.current), '#ffe08a', 46, 90)
+          P?.clarao(centro(refHeroi.current), '#ffcf5a', 420, 1, 0.9)
+          P?.onda(centro(refHeroi.current), '#ffe08a', 180, 14)
+          animar(refHeroi.current, 'fc-anim-cura', 900)
+          definirFaixa({ texto: 'Evolução!', sub: `Agora você é ${ev.nome}: mais vida, ataque e defesa`, tom: 'ouro' })
+          if (!(await esperar(1500, g))) return
+          definirFaixa(null)
           break
         }
         case 'pocao': {
@@ -342,7 +455,7 @@ export function Arena() {
           if (caixa) { P?.dissolver(caixa, PALETA_PERSONAGEM[quemInimigo]); P?.fragmentos(centro(refInimigo.current), PALETA_PERSONAGEM[quemInimigo], 40, 520) }
           P?.clarao(centro(refInimigo.current), '#ffe08a', 500, 1, 0.8)
           definirMostrado((m) => ({ ...m, inimigoCaiu: true }))
-          tocar(ev.chefe ? 'vitoria-chefe' : 'derrota-inimigo')
+          tocar(ev.chefe ? 'vitoria-chefe' : 'derrota-inimigo', 1, quemInimigo)
           tremer(ev.chefe ? 1 : 0.6)
           if (ev.chefe) {
             P?.confete({ x: window.innerWidth / 2, y: window.innerHeight * 0.45 }, 160)
@@ -419,6 +532,14 @@ export function Arena() {
       const registros = ler<Record<string, RegistroFlashcard>>(CHAVE_REGISTROS, {})
       registros[resposta.id] = registrarResposta(registros[resposta.id], resposta.certo, resposta.assistida)
       gravar(CHAVE_REGISTROS, registros)
+      gravar(CHAVE_HISTORICO, lembrarVisto(ler<string[]>(CHAVE_HISTORICO, []), resposta.id))
+      const rec = { ...RECORDES_VAZIOS, ...ler<Partial<Recordes>>(CHAVE_RECORDES, {}) }
+      gravar(CHAVE_RECORDES, { ...rec, respostas: rec.respostas + 1, andarMaximo: Math.max(rec.andarMaximo, r.estado.andar), melhorSequencia: Math.max(rec.melhorSequencia, r.estado.melhorSequencia), atualizadoEm: Date.now() })
+    }
+    if (r.estado.fase === 'fim' && partidaRef.current.fase !== 'fim') {
+      const rec = { ...RECORDES_VAZIOS, ...ler<Partial<Recordes>>(CHAVE_RECORDES, {}) }
+      gravar(CHAVE_RECORDES, { ...rec, andarMaximo: Math.max(rec.andarMaximo, r.estado.andar), chefesDerrotados: rec.chefesDerrotados + r.estado.chefesDerrotados, melhorSequencia: Math.max(rec.melhorSequencia, r.estado.melhorSequencia), atualizadoEm: Date.now() })
+      void sincronizarProgresso()
     }
     partidaRef.current = r.estado
     definirPartida(r.estado)
@@ -426,9 +547,19 @@ export function Arena() {
     else sincronizar(r.estado)
   }, [encenar, sincronizar])
 
-  const responder = useCallback((posicao: number) => {
+  const responder = useCallback(async (posicao: number) => {
     const p = partidaRef.current
-    if (p.fase !== 'pergunta' || apresentacao) return
+    if (p.fase !== 'pergunta' || apresentacao || validando.current) return
+    // Plano grátis: o servidor decide se este flashcard ainda cabe nas 24 h (trava desligada por padrão).
+    if (FLASHCARDS_NO_SERVIDOR && p.atual) {
+      validando.current = true
+      const chave = chaves.current.get(p.rodada) ?? crypto.randomUUID()
+      chaves.current.set(p.rodada, chave)
+      const r = await autorizarFlashcard(p.atual.id, chave)
+      validando.current = false
+      if (!r.permitido) { definirBloqueio(r); return }
+      if (partidaRef.current !== p) return
+    }
     definirMostrado((m) => ({ ...m, marcadas: { escolha: posicao, certa: -1 } }))
     mostradoRef.current = { ...mostradoRef.current, marcadas: { escolha: posicao, certa: -1 } }
     aplicar(motor.responder(p, posicao))
@@ -449,6 +580,7 @@ export function Arena() {
   }, [animando, aplicar, pular])
 
   const usarPista = useCallback(() => { if (!apresentacao) aplicar(motor.usarPista(partidaRef.current)) }, [aplicar, apresentacao])
+  const usarPoder = useCallback((tipo: TipoPoder) => { if (!apresentacao) aplicar(motor.usarPoder(partidaRef.current, tipo)) }, [aplicar, apresentacao])
 
   const escolherRecompensa = useCallback((r: Recompensa) => {
     if (animando) pular()
@@ -457,6 +589,8 @@ export function Arena() {
 
   const novaPartida = useCallback(() => {
     pular()
+    const rec = { ...RECORDES_VAZIOS, ...ler<Partial<Recordes>>(CHAVE_RECORDES, {}) }
+    gravar(CHAVE_RECORDES, { ...rec, partidas: rec.partidas + 1, atualizadoEm: Date.now() })
     const r = motor.novaPartida(sementeNova())
     definirMostrado({ vida: r.estado.vida, vidaInimigo: r.estado.inimigo.vida, revelada: false, resultado: null, marcadas: null, inimigoCaiu: false, heroiCaiu: false })
     aplicar(r)
@@ -486,13 +620,14 @@ export function Arena() {
         e.preventDefault()
         if (ampliada) definirAmpliada(null)
         else if (ajustesAbertos) definirAjustesAbertos(false)
+        else if (painel) definirPainel(null)
         else if (confirmarSaida) definirConfirmarSaida(false)
         else if (apresentacao) definirApresentacao(null)
         else if (animando) pular()
         else pedirFechar()
         return
       }
-      if (modo !== 'batalha' || ajustesAbertos || ampliada || confirmarSaida) return
+      if (modo !== 'batalha' || ajustesAbertos || ampliada || confirmarSaida || painel) return
       const p = partidaRef.current
       if (apresentacao && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); definirApresentacao(null); return }
       if (/^[1-4]$/.test(e.key) && p.fase === 'pergunta') { e.preventDefault(); escolherAlternativa(+e.key - 1, true); return }
@@ -504,7 +639,7 @@ export function Arena() {
     }
     window.addEventListener('keydown', aoTeclar)
     return () => window.removeEventListener('keydown', aoTeclar)
-  }, [modo, ajustesAbertos, ampliada, confirmarSaida, apresentacao, animando, pular, pedirFechar, escolherAlternativa, usarPista, seguir, responder, selecionada])
+  }, [modo, ajustesAbertos, painel, ampliada, confirmarSaida, apresentacao, animando, pular, pedirFechar, escolherAlternativa, usarPista, seguir, responder, selecionada])
 
   useEffect(() => {
     if (!apresentacao) return
@@ -517,8 +652,9 @@ export function Arena() {
   const ordem = partida.atual?.ordem ?? []
   const pistas = partida.encaixes.find((e) => e.tipo === 'pista')?.carga ?? 0
   const rodadasFuria = Math.max(0, inimigo.paciencia - partida.inimigo.rodadas)
-  const escalaInimigo = faixaTela === 'larga' ? 3 : 2
-  const escalaHeroi = faixaTela === 'celular' ? 2 : faixaTela === 'baixa' ? 2 : 3
+  // os adversários novos são desenhados maiores; a Serpente ainda está no tamanho antigo
+  const escalaInimigo = inimigo.sprite === 'serpente' ? (faixaTela === 'larga' ? 3 : faixaTela === 'celular' ? 1.5 : 2) : faixaTela === 'larga' ? 2 : faixaTela === 'celular' ? 1 : 1.5
+  const escalaHeroi = faixaTela === 'celular' ? 1.5 : faixaTela === 'baixa' ? 2 : 3
   const botao = partida.fase === 'pergunta'
     ? { texto: 'Atacar', sub: selecionada !== null ? `alternativa ${selecionada + 1}` : 'escolha uma', ativo: selecionada !== null && !apresentacao, acao: () => selecionada !== null && responder(selecionada), classe: selecionada !== null ? 'pronto' : '' }
     : partida.fase === 'resposta'
@@ -526,9 +662,9 @@ export function Arena() {
       : { texto: partida.fase === 'recompensa' ? 'Poder' : 'Fim', sub: '', ativo: false, acao: () => {}, classe: '' }
   const mostrarRecompensas = partida.fase === 'recompensa' && !animando
   const mostrarFim = partida.fase === 'fim' && !animando
-  const ciclo = inimigoDoAndar(partida.andar).ciclo
+  const ciclo = inimigoDoAndar(partida.andar, partida.sementeBase).ciclo
 
-  const classes = ['fc-arena', `fc-arena--${modo}`, `fc-arena--${faixaTela}`, reduzido ? 'fc-arena--reduzida' : '', mostrado.vida <= 25 && modo === 'batalha' ? 'fc-arena--perigo' : ''].filter(Boolean).join(' ')
+  const classes = ['fc-arena', `fc-arena--${modo}`, `fc-arena--${faixaTela}`, `fc-arena--fase-${partida.fase}`, reduzido ? 'fc-arena--reduzida' : '', mostrado.vida <= 25 && modo === 'batalha' ? 'fc-arena--perigo' : ''].filter(Boolean).join(' ')
 
   return (
     <ModalJogo titulo="Torneio de Flashcards" aoPedirFechar={pedirFechar}>
@@ -549,13 +685,13 @@ export function Arena() {
               <>
                 <span className="fc-topo__titulo">Torneio de Flashcards</span>
                 <span className="fc-topo__progresso">
-                  <span className="fc-trilha" aria-label={`Andar ${partida.andar} de ${BESTIARIO.length}`}>
-                    {BESTIARIO.map((b, i) => {
-                      const n = ((partida.andar - 1) % BESTIARIO.length)
-                      return <i key={b.id} className={i < n ? 'feito' : i === n ? 'atual' : ''} title={b.nome} />
+                  <span className="fc-trilha" aria-label={`Andar ${((partida.andar - 1) % 3) + 1} de 3 do ato ${Math.floor((partida.andar - 1) / 3) + 1}`}>
+                    {[0, 1, 2].map((i) => {
+                      const n = (partida.andar - 1) % 3
+                      return <i key={i} className={(i < n ? 'feito' : i === n ? 'atual' : '') + (i === 2 ? ' chefe' : '')} title={i === 2 ? 'Chefe do ato' : 'Confronto'} />
                     })}
                   </span>
-                  <b>Andar {partida.andar}</b>{ciclo ? ` · ciclo ${ciclo + 1}` : ''} <span aria-hidden="true">·</span> <b>{partida.pontos}</b> pts
+                  <b>Andar {partida.andar}</b>{ciclo ? ` · ato ${ciclo + 1}` : ''} <span aria-hidden="true">·</span> <b>{partida.pontos}</b> pts
                 </span>
               </>
             ) : (
@@ -583,10 +719,13 @@ export function Arena() {
           <div className="fc-batalha">
             {/* Adversário em cena, de pé sobre a arena */}
             <section className={`fc-inimigo${inimigo.chefe ? ' fc-inimigo--chefe' : ''}${fase2 ? ' fc-inimigo--fase2' : ''}${partida.inimigo.furia ? ' fc-inimigo--furia' : ''}`} aria-label={`Adversário: ${inimigo.nome}`}>
-              <Ator ref={refInimigo} quem={inimigo.sprite as Personagem} escala={escalaInimigo} chefe={inimigo.chefe} classe={'fc-ator--inimigo' + (mostrado.inimigoCaiu ? ' fc-ator--caiu' : '')} />
+              <Ator ref={refInimigo} quem={inimigo.sprite as Personagem} variante={inimigo.variante} escala={escalaInimigo} chefe={inimigo.chefe} classe={'fc-ator--inimigo' + (inimigo.nivel === 'elite' ? ' fc-ator--elite' : '') + (mostrado.inimigoCaiu ? ' fc-ator--caiu' : '')}>
+                <button type="button" className="fc-ator__toque" aria-label={`Ver ${inimigo.nome}: atributos e habilidades`} onClick={() => { tocar('selecao'); definirPainel('inimigo') }} />
+              </Ator>
               <div className="fc-placa">
                 <div className="fc-placa__nome">
                   {inimigo.chefe && <em className="fc-selo fc-selo--chefe">Chefe</em>}
+                  {inimigo.nivel === 'elite' && <em className="fc-selo fc-selo--elite">Elite</em>}
                   <strong>{inimigo.nome}</strong>
                   {fase2 && <em className="fc-selo fc-selo--fase">{inimigo.fase2?.nome}</em>}
                 </div>
@@ -595,13 +734,16 @@ export function Arena() {
                   <span className="fc-info fc-info--andar">Andar {partida.andar} · {partida.pontos} pts</span>
                   {partida.inimigo.furia ? <span className="fc-info fc-info--furia">Fúria · dano ×1,5</span> : <span className="fc-info" title="Rodadas até a Fúria">Fúria em {rodadasFuria}</span>}
                   {atributos.armadura > 0 && <span className="fc-info fc-info--armadura">Armadura {atributos.armadura}</span>}
+                  {partida.inimigo.barreira > 0 && <span className="fc-info fc-info--barreira" title="Absorve o dano dos seus acertos antes da vida">Barreira {partida.inimigo.barreira}</span>}
+                  {inimigo.regenera && partida.inimigo.regenerado < inimigo.regenera.total && <span className="fc-info fc-info--regenera" title={`Recupera ${inimigo.regenera.porRodada} por rodada, até ${inimigo.regenera.total} neste confronto`}>Regenera {inimigo.regenera.porRodada}</span>}
                   {inimigo.porErroSeguido > 0 && <span className="fc-info">{inimigo.chefe ? 'Pressão' : 'Veneno'} +{inimigo.porErroSeguido} por erro seguido</span>}
                 </div>
               </div>
               {partida.fase === 'pergunta' && (
-                <div className={`fc-intencao${intencao.furia ? ' fc-intencao--furia' : ''}${intencao.bloqueado ? ' fc-intencao--bloqueado' : ''}`} title={intencao.bloqueado ? 'O escudo bloqueia o próximo golpe' : 'Intenção do adversário: o dano que você leva se errar'}>
+                <div className={`fc-intencao${intencao.furia ? ' fc-intencao--furia' : ''}${intencao.bloqueado ? ' fc-intencao--bloqueado' : ''}${intencao.critico && !intencao.bloqueado ? ' fc-intencao--critico' : ''}`}
+                  title={intencao.bloqueado ? 'O escudo bloqueia o próximo golpe' : `Intenção do adversário: o dano exato que você leva se errar${intencao.critico ? ' (golpe crítico)' : ''}${intencao.protecoes.length ? `, já com ${intencao.protecoes.join(' e ')}` : ''}`}>
                   <span className="fc-intencao__gema">{intencao.bloqueado ? <Sprite nome="escudo" className="fc-sprite--icone" /> : <b>{intencao.dano}</b>}</span>
-                  <small>{intencao.bloqueado ? 'escudo pronto' : 'se errar'}</small>
+                  <small>{intencao.bloqueado ? 'escudo pronto' : intencao.critico ? 'crítico se errar' : 'se errar'}</small>
                 </div>
               )}
             </section>
@@ -634,8 +776,9 @@ export function Arena() {
             {/* Você */}
             <section className="fc-jogador" aria-label="Você">
               <div className="fc-heroi">
-                <Ator ref={refHeroi} quem="heroi" escala={escalaHeroi} classe={'fc-ator--heroi' + (mostrado.heroiCaiu ? ' fc-ator--caiu' : '')}>
+                <Ator ref={refHeroi} quem="heroi" variante={partida.estagio > 1 ? `heroi-${partida.estagio}` : undefined} escala={escalaHeroi} classe={`fc-ator--heroi fc-ator--estagio-${partida.estagio}` + (mostrado.heroiCaiu ? ' fc-ator--caiu' : '')}>
                   {partida.encaixes.some((e) => e.tipo === 'escudo') && <span className="fc-bolha-escudo" />}
+                  <button type="button" className="fc-ator__toque" aria-label="Ver o seu herói: atributos, poderes e relíquias" onClick={() => { tocar('selecao'); definirPainel('heroi') }} />
                 </Ator>
                 <div className="fc-heroi__dados">
                   <div className="fc-heroi__nome"><Sprite nome="coracao" className="fc-sprite--coracao" /><strong>Você</strong>
@@ -648,10 +791,14 @@ export function Arena() {
                   <div className="fc-encaixes" ref={refSlots} aria-label="Poderes equipados">
                     {Array.from({ length: ENCAIXES }, (_, i) => {
                       const e = partida.encaixes[i]
-                      const usavel = !!e && e.tipo === 'pista' && partida.fase === 'pergunta' && !partida.atual?.respondida && ordem.length - (partida.atual?.eliminadas.length ?? 0) > 2 && !apresentacao
-                      return <Encaixe key={i} tipo={e?.tipo} carga={e?.carga} extra={e?.tipo === 'pocao' ? partida.pocao : undefined} usavel={usavel} aoUsar={usarPista} />
+                      const pronto = !!e && !!RECOMPENSAS[e.tipo].ativo && partida.fase === 'pergunta' && !partida.atual?.respondida && !apresentacao
+                      const usavel = pronto && (e!.tipo === 'pista' ? ordem.length - (partida.atual?.eliminadas.length ?? 0) > 2 : partida.vida < partida.vidaMax)
+                      return <Encaixe key={i} tipo={e?.tipo} carga={e?.carga} extra={e?.tipo === 'pocao' ? partida.pocao : undefined} usavel={usavel} aoUsar={() => e && usarPoder(e.tipo)} />
                     })}
-                    {partida.reliquias.map((r) => <span key={r} className="fc-reliquia" title={`${RECOMPENSAS[r].nome}: ${RECOMPENSAS[r].texto}`} style={{ ['--cor' as string]: RECOMPENSAS[r].cor }}><Sprite nome={RECOMPENSAS[r].icone} className="fc-sprite--icone" /></span>)}
+                    {[...new Set(partida.reliquias)].map((r) => {
+                      const n = partida.reliquias.filter((x) => x === r).length
+                      return <span key={r} className="fc-reliquia" title={`${RECOMPENSAS[r].nome}${n > 1 ? ` ×${n}` : ''}: ${RECOMPENSAS[r].texto}`} style={{ ['--cor' as string]: RECOMPENSAS[r].cor }}><Sprite nome={RECOMPENSAS[r].icone} className="fc-sprite--icone" />{n > 1 && <b>{n}</b>}</span>
+                    })}
                   </div>
                 </div>
               </div>
@@ -665,7 +812,7 @@ export function Arena() {
                     <div key={partida.rodada + '-' + pos} className={`fc-slot-mao${selecionada === pos ? ' fc-slot-mao--sel' : ''}`} style={{ ['--i' as string]: pos, ['--n' as string]: ordem.length }}>
                       <button
                         type="button"
-                        className={`fc-alternativa${eliminada ? ' fc-alternativa--eliminada' : ''}${eliminando === pos ? ' fc-alternativa--queimando' : ''}${estado ? ' fc-alternativa--' + estado : ''}`}
+                        className={`fc-alternativa${carta.opcoes[opcao].length > 56 ? ' fc-alternativa--muito-longa' : carta.opcoes[opcao].length > 34 ? ' fc-alternativa--longa' : ''}${eliminada ? ' fc-alternativa--eliminada' : ''}${eliminando === pos ? ' fc-alternativa--queimando' : ''}${estado ? ' fc-alternativa--' + estado : ''}`}
                         disabled={partida.fase !== 'pergunta' || eliminada || !!apresentacao}
                         onClick={() => escolherAlternativa(pos, false)}
                         onPointerEnter={() => { if (partida.fase === 'pergunta' && !eliminada && faixaTela !== 'celular') tocar('hover') }}
@@ -703,6 +850,11 @@ export function Arena() {
         </div>
         <div className="fc-borda-vermelha" key={'v-' + vermelho} data-ativo={vermelho > 0 ? 1 : 0} aria-hidden="true" />
         {transicao && <div className="fc-transicao" aria-hidden="true" />}
+        <div className="fc-girar" role="status">
+          <span className="fc-girar__celular" aria-hidden="true" />
+          <strong>Gire o celular</strong>
+          <small>O Torneio foi feito para a tela em pé.</small>
+        </div>
 
         {faixa && modo === 'batalha' && (
           <div className={`fc-faixa fc-faixa--${faixa.tom}`} role="status" onClick={pular}>
@@ -715,28 +867,35 @@ export function Arena() {
           <div className={`fc-apresenta${apresentacao.inimigo.chefe ? ' fc-apresenta--chefe' : ''}`} role="dialog" aria-label={`Andar ${apresentacao.andar}: ${apresentacao.inimigo.nome}`} onClick={() => definirApresentacao(null)}>
             <div className="fc-apresenta__cartaz">
               <span className="fc-apresenta__andar">Andar {apresentacao.andar}{apresentacao.ciclo ? ` · Ciclo ${apresentacao.ciclo + 1}` : ''}{apresentacao.inimigo.chefe ? ' · Chefe' : ''}</span>
-              <div className="fc-apresenta__palco"><Ator quem={apresentacao.inimigo.sprite as Personagem} escala={faixaTela === 'celular' ? 3 : 4} chefe={apresentacao.inimigo.chefe} /></div>
+              <div className="fc-apresenta__palco"><Ator quem={apresentacao.inimigo.sprite as Personagem} escala={(apresentacao.inimigo.sprite === 'serpente' ? 1.5 : 1) * (faixaTela === 'celular' ? 2 : 3)} chefe={apresentacao.inimigo.chefe} /></div>
               <strong>{apresentacao.inimigo.nome}</strong>
               <em>{apresentacao.inimigo.lema}</em>
               <p>{apresentacao.inimigo.habilidade}</p>
-              <p className="fc-apresenta__numeros"><span>Vida {inimigoDoAndar(apresentacao.andar).inimigo.vida}</span><span>Força ×{inimigoDoAndar(apresentacao.andar).inimigo.forca}</span></p>
+              <p className="fc-apresenta__numeros"><span>Vida {inimigoDoAndar(apresentacao.andar, partida.sementeBase).inimigo.vida}</span><span>Força ×{inimigoDoAndar(apresentacao.andar, partida.sementeBase).inimigo.forca}</span></p>
               <small>Toque para começar</small>
             </div>
           </div>
         )}
 
-        {mostrarRecompensas && modo === 'batalha' && <Recompensas partida={partida} aoEscolher={escolherRecompensa} aoEncerrar={encerrar} />}
+        {mostrarRecompensas && modo === 'batalha' && <Recompensas partida={partida} aoEscolher={escolherRecompensa} aoEncerrar={encerrar} rapido={reduzido || ajustes.velocidade === 'rapida'} />}
         {mostrarFim && modo === 'batalha' && <Fim partida={partida} aoNova={novaPartida} aoRevisar={revisarNoEstudo} aoSair={fechar} />}
 
-        {ampliada && (
-          <div className="fc-veu fc-veu--imagem" role="dialog" aria-modal="true" aria-label="Imagem ampliada" onClick={() => definirAmpliada(null)}>
-            <figure className="fc-ampliada" onClick={(e) => e.stopPropagation()}>
-              <img src={ampliada.src} alt="Figura da questão de origem, ampliada" />
-              <figcaption>{ampliada.legenda}</figcaption>
-              <button type="button" className="fc-botao" onClick={() => definirAmpliada(null)} autoFocus>Fechar imagem</button>
-            </figure>
+        {ampliada && <Visualizador src={ampliada.src} legenda={ampliada.legenda} aoFechar={() => definirAmpliada(null)} />}
+
+        {bloqueio && (
+          <div className="fc-veu" role="dialog" aria-modal="true" aria-labelledby="fc-limite-titulo">
+            <div className="fc-janela">
+              <h2 id="fc-limite-titulo">{bloqueio.falha ? 'Não deu para validar' : 'Limite grátis de hoje'}</h2>
+              <p className="fc-janela__sub">{bloqueio.falha ? 'Não foi possível falar com o servidor agora. Confira a conexão e tente de novo.' : `Você usou os 10 flashcards grátis destas 24 horas${bloqueio.liberaEm ? `; libera às ${new Date(bloqueio.liberaEm).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}` : ''}. Assinantes jogam sem limite.`}</p>
+              <div className="fc-janela__botoes">
+                <button type="button" className="fc-botao fc-botao--secundario" onClick={() => definirBloqueio(null)}>{bloqueio.falha ? 'Tentar de novo' : 'Agora não'}</button>
+                {!bloqueio.falha && <a className="fc-botao" href={href('/assinatura')}>Ver os planos</a>}
+              </div>
+            </div>
           </div>
         )}
+
+        {painel && <Painel tipo={painel} partida={partida} intencao={intencao} aoFechar={() => definirPainel(null)} />}
 
         {confirmarSaida && (
           <div className="fc-veu" role="dialog" aria-modal="true" aria-labelledby="fc-sair-titulo">
@@ -759,6 +918,7 @@ export function Arena() {
                 <legend>Som</legend>
                 <label className="fc-ajuste"><input id="fc-som" type="checkbox" checked={ajustes.som} onChange={(e) => { destravar(); definirAjustes({ som: e.target.checked }); if (e.target.checked) window.setTimeout(() => tocar('poder'), 50) }} /><span>Som ligado</span></label>
                 <label className="fc-ajuste fc-ajuste--volume"><span>Efeitos</span><input id="fc-vol-efeitos" type="range" min={0} max={1} step={0.05} value={ajustes.volEfeitos} disabled={!ajustes.som} onChange={(e) => definirAjustes({ volEfeitos: +e.target.value })} onPointerUp={() => tocar('impacto-medio')} /></label>
+                <label className="fc-ajuste fc-ajuste--volume"><span>Música</span><input id="fc-vol-musica" type="range" min={0} max={1} step={0.05} value={ajustes.volMusica} disabled={!ajustes.som} onChange={(e) => definirAjustes({ volMusica: +e.target.value })} /></label>
                 <label className="fc-ajuste fc-ajuste--volume"><span>Ambiente</span><input id="fc-vol-ambiente" type="range" min={0} max={1} step={0.05} value={ajustes.volAmbiente} disabled={!ajustes.som} onChange={(e) => definirAjustes({ volAmbiente: +e.target.value })} /></label>
               </fieldset>
               <fieldset className="fc-grupo">
@@ -779,33 +939,120 @@ export function Arena() {
   )
 }
 
-function Recompensas({ partida, aoEscolher, aoEncerrar }: { partida: Partida; aoEscolher: (r: Recompensa) => void; aoEncerrar: () => void }) {
-  const chefe = !!inimigoDoAndar(partida.andar).inimigo.chefe
-  const proximo = inimigoDoAndar(partida.andar + 1)
-  const cheios = partida.encaixes.length >= ENCAIXES
+/** Painel do herói ou do adversário: atributos, efeitos e histórico. Nunca mostra nada da resposta. */
+function Painel({ tipo, partida, intencao, aoFechar }: { tipo: 'heroi' | 'inimigo'; partida: Partida; intencao: ReturnType<typeof motor.intencao>; aoFechar: () => void }) {
+  const est = ESTAGIOS[partida.estagio - 1]
+  const i = inimigoDoAndar(partida.andar, partida.sementeBase).inimigo
+  const at = motor.atributos(partida)
+  const nivel = { comum: 'Comum', elite: 'Elite', chefe: 'Chefe' }[i.nivel]
   return (
-    <div className="fc-veu fc-veu--recompensa" role="dialog" aria-modal="true" aria-labelledby="fc-rec-titulo">
-      <div className={`fc-janela fc-janela--larga${chefe ? ' fc-janela--chefe' : ''}`}>
-        <h2 id="fc-rec-titulo">{chefe ? 'Tesouro do chefe' : 'Escolha um poder'}</h2>
-        <p className="fc-janela__sub">Próximo: andar {partida.andar + 1}, {proximo.inimigo.nome}{proximo.ciclo ? ` (ciclo ${proximo.ciclo + 1}, mais forte)` : ''}.</p>
+    <div className="fc-veu" role="dialog" aria-modal="true" aria-labelledby="fc-painel-titulo" onClick={aoFechar}>
+      <div className="fc-janela fc-janela--larga fc-painel" onClick={(e) => e.stopPropagation()}>
+        {tipo === 'heroi' ? (
+          <>
+            <h2 id="fc-painel-titulo">{est.nome}</h2>
+            <p className="fc-janela__sub">Estágio {partida.estagio} de {ESTAGIOS.length} · evolui a cada chefe vencido</p>
+            <dl className="fc-numeros">
+              <div><dt>Vida</dt><dd>{partida.vida}<small>/{partida.vidaMax}</small></dd></div>
+              <div><dt>Ataque extra</dt><dd>+{est.ataque}</dd></div>
+              <div><dt>Defesa</dt><dd>−{est.defesa}<small> por golpe</small></dd></div>
+              <div><dt>Sequência</dt><dd>{partida.sequencia}<small> (melhor {partida.melhorSequencia})</small></dd></div>
+            </dl>
+            <p className="fc-janela__nota">Acerto fácil, moderado e difícil causam 10, 20 e 30. O difícil é o crítico. A partir de 3 seguidos, +5 por acerto.</p>
+            <h3>Poderes</h3>
+            {partida.encaixes.length ? <ul className="fc-lista-efeitos">{partida.encaixes.map((e) => <li key={e.tipo} style={{ ['--cor' as string]: RECOMPENSAS[e.tipo].cor }}><Sprite nome={RECOMPENSAS[e.tipo].icone} className="fc-sprite--icone" /><span><strong>{RECOMPENSAS[e.tipo].nome} ×{e.carga}</strong><small>{RECOMPENSAS[e.tipo].texto} {RECOMPENSAS[e.tipo].detalhe}</small></span></li>)}</ul> : <p className="fc-janela__nota">Nenhum poder equipado.</p>}
+            <h3>Relíquias</h3>
+            {partida.reliquias.length ? <ul className="fc-lista-efeitos">{[...new Set(partida.reliquias)].map((r) => <li key={r} style={{ ['--cor' as string]: RECOMPENSAS[r].cor }}><Sprite nome={RECOMPENSAS[r].icone} className="fc-sprite--icone" /><span><strong>{RECOMPENSAS[r].nome}{partida.reliquias.filter((x) => x === r).length > 1 ? ` ×${partida.reliquias.filter((x) => x === r).length}` : ''}</strong><small>{RECOMPENSAS[r].texto}</small></span></li>)}</ul> : <p className="fc-janela__nota">Nenhuma relíquia ainda.</p>}
+            <h3>Nesta partida</h3>
+            <dl className="fc-numeros">
+              <div><dt>Acertos</dt><dd>{partida.acertos}<small> de {partida.acertos + partida.erros}</small></dd></div>
+              <div><dt>Assistidos</dt><dd>{partida.assistidos}</dd></div>
+              <div><dt>Dano sofrido</dt><dd>{partida.danoSofrido}</dd></div>
+              <div><dt>Dano evitado</dt><dd>{partida.danoEvitado}</dd></div>
+              <div><dt>Cura</dt><dd>{partida.curaTotal}</dd></div>
+              <div><dt>Adversários</dt><dd>{partida.derrotados}</dd></div>
+            </dl>
+          </>
+        ) : (
+          <>
+            <h2 id="fc-painel-titulo">{i.nome}</h2>
+            <p className="fc-janela__sub"><em>{i.lema}</em> · {nivel} · andar {partida.andar}</p>
+            <dl className="fc-numeros">
+              <div><dt>Vida</dt><dd>{partida.inimigo.vida}<small>/{partida.inimigo.vidaMax}</small></dd></div>
+              <div><dt>Força</dt><dd>×{at.forca}</dd></div>
+              <div><dt>Armadura</dt><dd>{at.armadura}</dd></div>
+              {at.barreira > 0 && <div><dt>Barreira</dt><dd>{at.barreira}</dd></div>}
+              <div><dt>Crítico</dt><dd>{Math.round(i.critico * 100)}%</dd></div>
+              <div><dt>Fúria</dt><dd>{partida.inimigo.furia ? 'ativa' : `em ${Math.max(0, i.paciencia - partida.inimigo.rodadas)}`}</dd></div>
+            </dl>
+            <h3>Habilidades</h3>
+            <ul className="fc-lista-efeitos">
+              <li><span><strong>Estilo</strong><small>{i.habilidade}</small></span></li>
+              {i.porErroSeguido > 0 && <li><span><strong>{i.chefe ? 'Pressão' : 'Veneno'}</strong><small>+{i.porErroSeguido} de dano por erro seguido.</small></span></li>}
+              {i.regenera && <li><span><strong>Regeneração</strong><small>Recupera {i.regenera.porRodada} por rodada, até {i.regenera.total} neste confronto (faltam {Math.max(0, i.regenera.total - partida.inimigo.regenerado)}).</small></span></li>}
+              {i.fase2 && <li><span><strong>Segunda fase: {i.fase2.nome}</strong><small>Abaixo de {Math.round(i.fase2.abaixoDe * 100)}% da vida: força ×{i.fase2.forca}, armadura {i.fase2.armadura}{i.fase2.barreira ? `, nova barreira de ${i.fase2.barreira}` : ''}.</small></span></li>}
+              <li><span><strong>Fúria</strong><small>Depois de {i.paciencia} rodadas, todo golpe sai ×1,5.</small></span></li>
+              <li><span><strong>Teto do golpe</strong><small>Nunca passa de {Math.round(LIMITES[i.nivel] * 100)}% da sua vida máxima ({Math.round(LIMITES.critico * 100)}% no crítico).</small></span></li>
+            </ul>
+            <h3>Intenção agora</h3>
+            <p className="fc-janela__nota">{partida.fase === 'pergunta' ? (intencao.bloqueado ? 'O seu escudo bloqueia o próximo golpe.' : `Se você errar este flashcard: ${intencao.dano} de dano${intencao.critico ? ', golpe crítico' : ''}${intencao.protecoes.length ? `, já contando ${intencao.protecoes.join(' e ')}` : ''}.`) : 'Aguardando o próximo flashcard.'}</p>
+          </>
+        )}
+        <div className="fc-janela__botoes"><button type="button" className="fc-botao" onClick={aoFechar}>Fechar</button></div>
+      </div>
+    </div>
+  )
+}
+
+function Recompensas({ partida, aoEscolher, aoEncerrar, rapido }: { partida: Partida; aoEscolher: (r: Recompensa) => void; aoEncerrar: () => void; rapido: boolean }) {
+  const chefe = !!inimigoDoAndar(partida.andar, partida.sementeBase).inimigo.chefe
+  const proximo = inimigoDoAndar(partida.andar + 1, partida.sementeBase)
+  const cheios = partida.encaixes.length >= ENCAIXES
+  const [escolhida, definirEscolhida] = useState<Recompensa | null>(null)
+  const escolher = useCallback((r: Recompensa) => {
+    if (escolhida) return
+    definirEscolhida(r)
+    tocar(RECOMPENSAS[r].raridade === 'rara' ? 'lendario' : 'recompensa')
+    window.setTimeout(() => aoEscolher(r), rapido ? 260 : 720)
+  }, [escolhida, aoEscolher, rapido])
+  useEffect(() => {
+    const aoTeclar = (e: KeyboardEvent) => { const k = Number(e.key); if (k >= 1 && k <= partida.recompensas.length) escolher(partida.recompensas[k - 1]) }
+    window.addEventListener('keydown', aoTeclar)
+    return () => window.removeEventListener('keydown', aoTeclar)
+  }, [escolher, partida.recompensas])
+  const nomeRaridade = { comum: 'Comum', incomum: 'Incomum', rara: 'Rara' } as const
+  const nomeTipo = { poder: 'Poder', reliquia: 'Relíquia', evento: 'Evento' } as const
+  return (
+    <div className={`fc-veu fc-veu--recompensa${escolhida ? ' fc-veu--escolheu' : ''}`} role="dialog" aria-modal="true" aria-labelledby="fc-rec-titulo">
+      <div className="fc-tesouro">
+        <span className="fc-tesouro__luz" aria-hidden="true" />
+        <header className="fc-tesouro__cabeca">
+          <h2 id="fc-rec-titulo">{chefe ? 'Tesouro do chefe' : 'Escolha sua recompensa'}</h2>
+          <p>Próximo: <b>andar {partida.andar + 1}</b>, {proximo.inimigo.nome}{proximo.inimigo.nivel === 'elite' ? ' (elite)' : proximo.inimigo.chefe ? ' (chefe)' : ''}{proximo.ciclo ? ` · ato ${proximo.ciclo + 1}` : ''}</p>
+        </header>
         <div className="fc-recompensas">
           {partida.recompensas.map((r, i) => {
             const d = RECOMPENSAS[r]
-            const repetido = ehPoder(r) && partida.encaixes.some((e) => e.tipo === r)
-            const substitui = ehPoder(r) && !repetido && cheios ? RECOMPENSAS[partida.encaixes[0].tipo].nome : null
+            const enc = ehPoder(r) ? partida.encaixes.find((e) => e.tipo === r) : undefined
+            const copias = d.tipo === 'reliquia' ? partida.reliquias.filter((x) => x === r).length : enc?.carga ?? 0
+            const substitui = ehPoder(r) && !enc && cheios ? RECOMPENSAS[partida.encaixes[0].tipo].nome : null
+            const estado = escolhida === r ? ' fc-recompensa--escolhida' : escolhida ? ' fc-recompensa--recua' : ''
             return (
-              <button key={r} type="button" className={`fc-recompensa fc-recompensa--${d.tipo}`} style={{ ['--cor' as string]: d.cor, ['--i' as string]: i }} onClick={() => aoEscolher(r)} onPointerEnter={() => tocar('hover')} autoFocus={i === 0}>
-                <span className="fc-recompensa__tipo">{d.tipo === 'reliquia' ? 'Relíquia' : 'Poder'}{d.rara ? ' rara' : ''}</span>
-                <span className="fc-recompensa__icone"><Sprite nome={d.icone} /></span>
+              <button key={r} type="button" className={`fc-recompensa fc-recompensa--${d.tipo} fc-recompensa--${d.raridade}${estado}`} style={{ ['--cor' as string]: d.cor, ['--i' as string]: i }}
+                onClick={() => escolher(r)} onPointerEnter={() => { if (!escolhida) tocar('hover') }} autoFocus={i === 0} disabled={!!escolhida && escolhida !== r}>
+                <span className="fc-recompensa__fita">{nomeTipo[d.tipo]} · {nomeRaridade[d.raridade]}</span>
+                <span className="fc-recompensa__pedestal"><span className="fc-recompensa__icone"><Sprite nome={d.icone} /></span></span>
                 <strong>{d.nome}</strong>
                 <span className="fc-recompensa__texto">{d.texto}</span>
-                {substitui && <small className="fc-recompensa__aviso">Encaixes cheios: substitui {substitui}</small>}
-                {repetido && <small className="fc-recompensa__aviso">Soma ao que você já tem</small>}
+                <small className="fc-recompensa__detalhe">{d.detalhe}</small>
+                {copias > 0 && <small className="fc-recompensa__aviso">Você já tem {d.tipo === 'reliquia' ? `${copias} cópia${copias > 1 ? 's' : ''}` : `${copias} carga${copias > 1 ? 's' : ''}`}</small>}
+                {substitui && <small className="fc-recompensa__aviso fc-recompensa__aviso--troca">Encaixes cheios: substitui {substitui}</small>}
+                <span className="fc-recompensa__tecla" aria-hidden="true">{i + 1}</span>
               </button>
             )
           })}
         </div>
-        {chefe && <button type="button" className="fc-botao fc-botao--secundario" onClick={aoEncerrar}>Encerrar com a vitória</button>}
+        {chefe && !escolhida && <button type="button" className="fc-botao fc-botao--secundario fc-tesouro__sair" onClick={aoEncerrar}>Encerrar com a vitória</button>}
       </div>
     </div>
   )
@@ -815,13 +1062,15 @@ function Fim({ partida, aoNova, aoRevisar, aoSair }: { partida: Partida; aoNova:
   const total = partida.acertos + partida.erros
   const venceu = partida.venceu
   const derrubaram = partida.derrubaram.map((id) => motor.carta(id))
-  const ultimo = BESTIARIO[(partida.andar - 1) % BESTIARIO.length]
+  const ultimo = inimigoDoAndar(partida.andar, partida.sementeBase).inimigo
+  const caiu = partida.vida <= 0
   return (
     <div className="fc-veu" role="dialog" aria-modal="true" aria-labelledby="fc-fim-titulo">
       <div className={`fc-janela fc-janela--larga${venceu ? ' fc-janela--chefe' : ''}`}>
-        <h2 id="fc-fim-titulo">{venceu ? 'Vitória no Torneio!' : `Você caiu no andar ${partida.andar}`}</h2>
-        <p className="fc-janela__sub">{venceu ? `Você venceu ${partida.chefesDerrotados} chefe${partida.chefesDerrotados > 1 ? 's' : ''}.` : `${ultimo.nome} levou a melhor desta vez.`}</p>
+        <h2 id="fc-fim-titulo">{caiu ? `Você caiu no andar ${partida.andar}` : `Partida encerrada no andar ${partida.andar}`}</h2>
+        <p className="fc-janela__sub">{caiu ? `${ultimo.nome} levou a melhor desta vez.` : 'Bom descanso, herói.'}{venceu ? ` Você venceu ${partida.chefesDerrotados} chefe${partida.chefesDerrotados > 1 ? 's' : ''} e chegou a ${ESTAGIOS[partida.estagio - 1].nome}.` : ''}</p>
         <dl className="fc-numeros">
+          <div><dt>Andar</dt><dd>{partida.andar}</dd></div>
           <div><dt>Pontos</dt><dd>{partida.pontos}</dd></div>
           <div><dt>Acertos</dt><dd>{partida.acertos}<small> de {total}</small></dd></div>
           <div><dt>Assistidos</dt><dd>{partida.assistidos}</dd></div>
