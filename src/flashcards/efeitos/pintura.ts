@@ -1012,6 +1012,49 @@ const MESA: Record<Cenario, { borda: string[]; tampo: string[]; metal: string[];
 /** Altura do canvas da mesa em relação à mesa (a sobra é a frente do tampo). */
 export const ESPESSURA_MESA = 1.06
 
+/** Material do tampo da mesa: lajes de pedra, tábuas de madeira ou facetas de cristal. */
+type MaterialMesa = 'pedra' | 'madeira' | 'cristal'
+const MATERIAL_MESA: Partial<Record<Cenario, MaterialMesa>> = { salao: 'madeira', arquivo: 'madeira', laboratorio: 'cristal' }
+
+/** Tom (0 a 4) de um pixel do tampo de tábuas: veio alongado, nós, juntas e pregos nas pontas. */
+function tomMadeira(x: number, y: number) {
+  const ALT = 9
+  const linha = Math.floor(y / ALT), v = y % ALT
+  const deslocado = x + ruido(linha, 3, 111) * 40
+  const tabua = Math.floor(deslocado / 46), u = deslocado % 46
+  if (v === ALT - 1 || u < 1) return 0
+  if (v === 0) return 4
+  if ((u > 2 && u < 4 || u > 42 && u < 44) && (v === 2 || v === ALT - 3)) return 4 // prego
+  const id = linha * 31 + tabua
+  const veio = fbm(x / 14, y / 1.6 + id * 3.1, 3, 113)
+  // nó: anel escuro em volta de um ponto
+  const nx = (ruido(id, 1, 117) * 30 + 8) | 0, ny = ALT / 2
+  const dn = Math.hypot((u - nx) / 1.6, v - ny)
+  if (ruido(id, 2, 119) > 0.86 && dn < 2.4) return dn < 1.1 ? 1 : 2
+  let k = 2 + Math.floor(ruido(id, 4, 121) * 2)
+  if (veio > 0.62) k = Math.max(1, k - 1)
+  if (veio < 0.3) k = Math.min(4, k + 1)
+  if (v === ALT - 2) k = Math.max(1, k - 1)
+  return k
+}
+
+/** Tom (0 a 4) de um pixel do tampo de cristal: facetas com aresta clara, reflexo diagonal e veio luminoso. */
+function tomCristal(x: number, y: number) {
+  const { id, borda, cx, cy } = celula(x, y, 26, 131, 1.25)
+  // só algumas arestas acendem; as outras são um corte escuro e fino
+  const acesa = ruido(id, 5, 139) > 0.62
+  if (borda < 0.9) return acesa ? 4 : 0
+  // cada faceta tem um degradê próprio (a luz entra de um lado) e um reflexo diagonal largo
+  const lado = Math.sign(cx * 0.8 + cy) || 1
+  const reflexo = (((x * 0.7 - y) / 22 + ruido(id, 1, 133) * 2) % 3 + 3) % 3
+  let k = 1 + Math.floor(ruido(id, 2, 135) * 2)
+  if (borda < 2.2) k = lado > 0 ? 3 : 0
+  else if (reflexo < 0.22) k = Math.min(3, k + 2)
+  else if (reflexo < 0.5) k = Math.min(3, k + 1)
+  if (ruido(x * 1.9, y * 1.7, 137) > 0.985) k = 4
+  return k
+}
+
 export function pintarMesa(canvas: HTMLCanvasElement, cenario: Cenario) {
   const w = canvas.clientWidth, h = canvas.clientHeight
   if (!w || !h) return
@@ -1052,6 +1095,12 @@ export function pintarMesa(canvas: HTMLCanvasElement, cenario: Cenario) {
       if (k > 0 && ruido(x / 1.6, y / 1.6, 93) > 0.8) k = Math.max(1, k - 1)
       c.fillStyle = p.borda[k]; c.fillRect(x, y, 1, 1)
     } else {
+      const mat = MATERIAL_MESA[cenario] ?? 'pedra'
+      if (mat !== 'pedra') {
+        const k = mat === 'madeira' ? tomMadeira(x - B, y - B) : tomCristal(x - B, y - B)
+        c.fillStyle = mat === 'cristal' && k === 4 ? p.metal[3] : p.tampo[k]; c.fillRect(x, y, 1, 1)
+        continue
+      }
       // tampo: lajes grandes e irregulares, gastas no meio
       const { id, borda, cx, cy } = celula(x, y, 22, 95, 1.3)
       let k: number

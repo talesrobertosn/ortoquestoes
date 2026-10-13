@@ -1469,3 +1469,57 @@ body.fc-modal-aberto .aviso-cookies, body.fc-modal-aberto .aviso-site, body.fc-m
 /* lendária: moldura com mais corpo e brilho próprio */
 .fc-modal .fc-carta--lendaria .fc-carta__borda { padding: 10px; box-shadow: 0 0 0 2px #120a04, 0 2px 0 2px #6a4410, 0 4px 0 2px #3a2408, 0 7px 0 2px #120a04, 0 0 28px rgba(255, 200, 90, .45), var(--fc-sombra-objeto), inset 0 1px 0 rgba(255, 255, 255, .8); }
 .fc-modal .fc-carta--comum .fc-carta__borda { background: linear-gradient(150deg, #e8ecf2 0%, #a8b0bc 18%, #6b7380 50%, #8a929e 70%, #3a404c 100%); }
+
+/* alternativa curta (uma letra, um número, um tipo): a resposta vira o destaque do botão */
+.fc-alternativa.fc-alternativa--curta > span { font-family: var(--fc-titulo, inherit); font-size: clamp(26px, 1.2vw + 16px, 34px); font-weight: 800; letter-spacing: .04em; line-height: 1; text-align: center; justify-items: center; text-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 2px 3px rgba(0, 0, 0, .25); }
+@media (max-width: 700px) { .fc-alternativa.fc-alternativa--curta > span { font-size: 26px; text-align: center; justify-items: center; } }
+
+/* Recompensas v5: fita pendurada dentro da carta (a carta corta o que sai dela),
+   cantoneiras da raridade e, no celular, cabeçalho numa linha só */
+.fc-modal .fc-recompensa { padding-top: 40px; }
+.fc-modal .fc-recompensa__fita { top: 0; left: 50%; transform: translateX(-50%); padding: 5px 16px 6px; border-radius: 0 0 12px 12px; white-space: nowrap; z-index: 2;
+  box-shadow: 0 0 0 1.5px #120a04, 0 3px 0 rgba(0, 0, 0, .45), inset 0 -2px 0 rgba(0, 0, 0, .18), inset 0 1px 0 rgba(255, 255, 255, .6); }
+.fc-recompensa__canto { position: absolute; z-index: 2; width: 30px; height: 30px; pointer-events: none; background: url(../ui/canto-comum.svg) 0 0 / contain no-repeat; filter: drop-shadow(0 1px 0 rgba(0, 0, 0, .55)); }
+.fc-recompensa--incomum .fc-recompensa__canto, .fc-recompensa--rara .fc-recompensa__canto { background-image: url(../ui/canto-rara.svg); }
+.fc-recompensa--epica .fc-recompensa__canto { background-image: url(../ui/canto-epica.svg); width: 36px; height: 36px; }
+.fc-recompensa--lendaria .fc-recompensa__canto { background-image: url(../ui/canto-lendaria.svg); width: 42px; height: 42px; filter: drop-shadow(0 0 4px rgba(255, 210, 110, .7)); }
+.fc-recompensa__canto--1 { left: 2px; top: 2px; } .fc-recompensa__canto--2 { right: 2px; top: 2px; transform: scaleX(-1); }
+.fc-recompensa__canto--3 { left: 2px; bottom: 2px; transform: scaleY(-1); } .fc-recompensa__canto--4 { right: 2px; bottom: 2px; transform: scale(-1, -1); }
+.fc-recompensa__tecla { z-index: 3; right: 30px; }
+@media (max-width: 700px) {
+  .fc-tesouro { gap: 12px; }
+  .fc-tesouro__cabeca h2 { font-size: 18.5px; letter-spacing: .03em; white-space: nowrap; }
+  .fc-tesouro__cabeca h2::before, .fc-tesouro__cabeca h2::after { margin: 0 .3em; }
+  .fc-tesouro__cabeca p { font-size: 13.5px; }
+  .fc-modal .fc-recompensa { padding: 30px 14px 12px; }
+  .fc-modal .fc-recompensa__fita { left: 50%; font-size: 10.5px; padding: 4px 12px 5px; }
+  .fc-recompensa__canto { width: 24px; height: 24px; }
+  .fc-recompensa--epica .fc-recompensa__canto, .fc-recompensa--lendaria .fc-recompensa__canto { width: 30px; height: 30px; }
+  /* no toque, o foco não salta a carta para cima do cabeçalho */
+  .fc-recompensa:not(:disabled):hover, .fc-recompensa:focus-visible { transform: scale(1.015); }
+}
+
+/* Painéis v5: as placas do adversário e do herói usam a mesma moldura forjada
+   dos botões (9 partes em SVG), em bronze, ouro (chefe) e aço azulado (herói) */
+.fc-modal .fc-placa, .fc-modal .fc-heroi__dados { border: 12px solid transparent !important; border-radius: 0 !important; background: none !important;
+  border-image: url(../ui/painel-inimigo.svg) 16 fill / 12px stretch !important; box-shadow: none !important; filter: drop-shadow(0 8px 10px rgba(0, 0, 0, .5)); backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
+.fc-modal .fc-placa { padding: 2px 8px !important; }
+.fc-modal .fc-heroi__dados { border-image-source: url(../ui/painel-heroi.svg) !important; padding: 2px 8px !important; width: clamp(280px, calc(21vw + 36px), 350px); grid-template-columns: minmax(0, 1fr); }
+.fc-modal .fc-inimigo--chefe .fc-placa { border-image-source: url(../ui/painel-chefe.svg) !important; filter: drop-shadow(0 0 12px rgba(255, 140, 60, .4)) drop-shadow(0 8px 10px rgba(0, 0, 0, .5)); }
+@media (max-width: 700px) {
+  .fc-modal .fc-placa { border-width: 7px !important; border-image-width: 8px !important; padding: 0 2px !important; }
+  .fc-modal .fc-placa__nome strong { font-size: 14.5px; letter-spacing: .02em; }
+  .fc-modal .fc-inimigo--chefe .fc-placa { padding-top: 7px !important; }
+  /* no celular o painel do herói divide a linha com o Atacar: fica com a moldura anterior, sem perder largura */
+  .fc-modal .fc-heroi__dados { border: 0 !important; border-image: none !important; border-radius: 14px !important; width: auto; padding: 6px 7px !important;
+    background: linear-gradient(rgba(14, 18, 30, .93), rgba(14, 18, 30, .86)) !important; box-shadow: 0 0 0 1.5px #0b0d14, 0 0 0 3px #7f97bd, 0 0 0 4.5px #0b0d14, 0 8px 18px rgba(0, 0, 0, .45) !important; }
+  /* a coluna do painel não cresce com a linha do nome; a sequência vira uma aba na borda de cima */
+  .fc-modal .fc-heroi__dados { position: relative; grid-template-columns: minmax(0, 1fr); }
+  .fc-modal .fc-heroi__nome .fc-combo { position: absolute; right: 10px; top: -9px; gap: 2px; padding: 3px 6px; border-radius: 999px; overflow: visible;
+    background: #0b0d14; box-shadow: 0 0 0 1.5px #7f97bd, 0 2px 4px rgba(0, 0, 0, .5); }
+  .fc-modal .fc-heroi__nome .fc-combo i { width: 7px; height: 7px; }
+}
+/* camadas: a placa do adversário fica sobre o próprio sprite (a mandíbula do Dragão não cobre o selo)
+   e o lado do herói fica sobre a parte de baixo da plataforma suspensa */
+.fc-modal .fc-placa { position: relative; z-index: 4; }
+.fc-modal .fc-jogador { position: relative; z-index: 1; }

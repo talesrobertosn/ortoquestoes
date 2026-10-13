@@ -35,11 +35,11 @@ def tex_peito(p, n):
 
 
 def tex_gesso(p, n):
-    borda, cid = voronoi3(p / 22.0)
-    onde = fbm3(p / 14.0 + 3) > 0.62
-    trinca = ((borda < 0.03) & onde).astype(np.float32)
-    beira = ((borda < 0.07) & onde).astype(np.float32)
-    return (fbm3(p / 3.0) - 0.5) * 0.5 + (cid - 0.5) * 0.35 - 1.3 * beira, trinca
+    borda, cid = voronoi3(p / 16.0)
+    onde = fbm3(p / 12.0 + 3) > 0.5
+    trinca = ((borda < 0.05) & onde).astype(np.float32)
+    beira = ((borda < 0.11) & onde).astype(np.float32)
+    return (fbm3(p / 3.0) - 0.5) * 0.5 + (cid - 0.5) * 0.35 - 1.6 * beira, trinca
 
 
 def tex_musgo(p, n):
@@ -47,12 +47,12 @@ def tex_musgo(p, n):
 
 
 MATS = {
-    'peito': Material(rampa('#b9b1a0', 7, escuro=0.26, claro=1.22), textura=tex_peito,
-                      cores_textura=[(40, 120, 200), (90, 200, 255), (190, 245, 255)]),
-    'gesso': Material(rampa('#b9b1a0', 7, escuro=0.26, claro=1.22, giro=0.10), textura=tex_gesso,
-                      cores_textura=[(40, 120, 200), (90, 200, 255), (190, 245, 255)]),
-    'gesso_escuro': Material(rampa('#8f8778', 6, escuro=0.25, claro=1.15, giro=0.1), textura=tex_gesso,
-                             cores_textura=[(40, 120, 200), (90, 200, 255), (190, 245, 255)]),
+    'peito': Material(rampa('#cdc5b2', 7, escuro=0.22, claro=1.25), textura=tex_peito,
+                      cores_textura=[(60, 150, 235), (120, 220, 255), (220, 250, 255)]),
+    'gesso': Material(rampa('#cdc5b2', 7, escuro=0.22, claro=1.25, giro=0.12), textura=tex_gesso,
+                      cores_textura=[(60, 150, 235), (120, 220, 255), (220, 250, 255)]),
+    'gesso_escuro': Material(rampa('#8a8070', 6, escuro=0.2, claro=1.15, giro=0.12), textura=tex_gesso,
+                             cores_textura=[(60, 150, 235), (120, 220, 255), (220, 250, 255)]),
     'musgo': Material(rampa('#5d8a3a', 5, escuro=0.3, claro=1.3, giro=0.12), textura=tex_musgo),
     'olho': Material([(40, 140, 220), (120, 220, 255), (230, 252, 255)], emissivo=True),
     'nucleo': Material([(30, 110, 200), (90, 200, 255), (220, 250, 255)], emissivo=True),

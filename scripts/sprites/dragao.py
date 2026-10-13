@@ -24,15 +24,20 @@ def tex_osso(p, n):
 def tex_membrana(p, n):
     # nervuras finas que irradiam do pulso, sem manchas
     ang = np.arctan2(p[:, 1] - 54, p[:, 0] + 2)
-    nerv = (np.abs(np.sin(ang * 9 + 0.6 * fbm3(p / 8))) < 0.1).astype(np.float32)
-    return (fbm3(p / 6.0) - 0.5) * 0.5 + 1.1 * nerv
+    raio = np.sqrt((p[:, 1] - 54) ** 2 + (p[:, 0] + 2) ** 2)
+    nerv = (np.abs(np.sin(ang * 9 + 0.6 * fbm3(p / 8))) < 0.13).astype(np.float32)
+    aneis = (np.abs(np.sin(raio * 0.32 + fbm3(p / 6))) < 0.08).astype(np.float32)
+    # mais escura perto do corpo e mais clara (fina) na borda; nervuras e dobras pintadas por máscara
+    mascara = np.maximum(nerv, aneis) * (raio > 10)
+    return (np.clip(raio / 60, 0, 1) - 0.5) * 1.4 - 0.4 * (fbm3(p / 5) - 0.5), mascara
 
 
 MATS = {
     'osso': Material(rampa('#d9cdb0', 7, escuro=0.22, claro=1.18, giro=0.2), textura=tex_osso),
     'osso_velho': Material(rampa('#a8977a', 6, escuro=0.22, claro=1.15, giro=0.2), textura=tex_osso),
     'chifre': Material(rampa('#4a3a4a', 5, escuro=0.3, claro=1.6), brilho=0.3),
-    'membrana': Material(rampa('#5a3f86', 6, escuro=0.25, claro=1.35, giro=0.1), textura=tex_membrana, borda_luz=1.6),
+    'membrana': Material(rampa('#4a3272', 6, escuro=0.25, claro=1.5, giro=0.1), textura=tex_membrana, borda_luz=2.2,
+                         cores_textura=[(40, 22, 62), (70, 44, 104), (118, 82, 160)]),
     'fogo': Material([(20, 120, 140), (60, 220, 210), (170, 255, 235), (240, 255, 250)], emissivo=True),
     'dente': Material(rampa('#efe6cf', 4, escuro=0.5, claro=1.1)),
 }
@@ -144,16 +149,27 @@ def montar(t: dict) -> Cena:
         contorno = [V(0, -4, 0), cot, pul, dedos[0]]
         for a_, b_ in zip(dedos, dedos[1:]):
             meio = (a_ + b_) / 2
-            contorno += [meio + (pul - meio) * 0.42, b_]
+            contorno += [meio + (pul - meio) * 0.5 + V(0, -3, 0), b_]
         contorno += [V(-40, -10, 0)]
-        def membrana(p, vs=[v[:2] for v in contorno], pul=pul):
+        furos = []
+        for i, (a_, b_) in enumerate(zip(dedos, dedos[1:])):
+            meio = (a_ + b_) / 2
+            borda = meio + (pul - meio) * 0.5
+            furos.append((float(borda[0] + (a_[0] - borda[0]) * 0.35), float(borda[1] + (a_[1] - borda[1]) * 0.35), 2.6 + (i % 2)))
+            if i % 2 == 0:
+                furos.append((float(borda[0] + (pul[0] - borda[0]) * 0.28), float(borda[1] + (pul[1] - borda[1]) * 0.28), 1.8))
+        def membrana(p, vs=[v[:2] for v in contorno], pul=pul, furos=furos):
             # a membrana enfuna entre os dedos: deslocamento em z que segue o ângulo a partir do pulso
             dx, dy = p[:, 0] - pul[0], p[:, 1] - pul[1]
             ang = np.arctan2(dy, dx)
             r = np.sqrt(dx * dx + dy * dy)
             q = p.copy()
             q[:, 2] = q[:, 2] + 0.8 + 2.4 * np.abs(np.sin(ang * 3.2)) * np.clip(r / 30, 0, 1)
-            return sd_poligono_plano(q, vs, 0.55)
+            d = sd_poligono_plano(q, vs, 0.55)
+            # borda rasgada: furos e cortes perto da borda entre os dedos
+            for (cx, cy, rr) in furos:
+                d = np.maximum(d, rr - np.sqrt((p[:, 0] - cx) ** 2 + (p[:, 1] - cy) ** 2 + 0 * p[:, 2]))
+            return d
         c.add('membrana', membrana, asa, grupo=g + 2)
     # crânio
     cab = corpo.filho(tuple(cab_pos), rz=k('cabeca', -0.25))

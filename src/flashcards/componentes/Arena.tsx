@@ -1064,7 +1064,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
                     <div key={partida.rodada + '-' + pos} className={`fc-slot-mao${selecionada === pos ? ' fc-slot-mao--sel' : ''}`} style={{ ['--i' as string]: pos, ['--n' as string]: ordem.length }}>
                       <button
                         type="button"
-                        className={`fc-alternativa${carta.opcoes[opcao].length > 56 ? ' fc-alternativa--muito-longa' : carta.opcoes[opcao].length > 34 ? ' fc-alternativa--longa' : ''}${Math.max(...carta.opcoes[opcao].split(/\s+/).map((x) => x.length)) > 12 ? ' fc-alternativa--palavra-longa' : ''}${eliminada ? ' fc-alternativa--eliminada' : ''}${eliminando === pos ? ' fc-alternativa--queimando' : ''}${estado ? ' fc-alternativa--' + estado : ''}`}
+                        className={`fc-alternativa${carta.opcoes[opcao].trim().length <= 4 ? ' fc-alternativa--curta' : ''}${carta.opcoes[opcao].length > 56 ? ' fc-alternativa--muito-longa' : carta.opcoes[opcao].length > 34 ? ' fc-alternativa--longa' : ''}${Math.max(...carta.opcoes[opcao].split(/\s+/).map((x) => x.length)) > 12 ? ' fc-alternativa--palavra-longa' : ''}${eliminada ? ' fc-alternativa--eliminada' : ''}${eliminando === pos ? ' fc-alternativa--queimando' : ''}${estado ? ' fc-alternativa--' + estado : ''}`}
                         disabled={partida.fase !== 'pergunta' || eliminada || !!apresentacao}
                         onClick={() => escolherAlternativa(pos, false)}
                         onPointerEnter={() => { if (partida.fase === 'pergunta' && !eliminada && faixaTela !== 'celular') tocar('hover') }}
@@ -1304,6 +1304,7 @@ function Recompensas({ partida, aoEscolher, aoEncerrar, rapido }: { partida: Par
             return (
               <button key={r} type="button" className={`fc-recompensa fc-recompensa--${d.tipo} fc-recompensa--${d.raridade}${estado}`} style={{ ['--cor' as string]: d.cor, ['--i' as string]: i }}
                 onClick={() => escolher(r)} onPointerEnter={() => { if (!escolhida) tocar('hover') }} autoFocus={i === 0} disabled={!!escolhida && escolhida !== r}>
+                {[1, 2, 3, 4].map((k) => <span key={k} className={`fc-recompensa__canto fc-recompensa__canto--${k}`} aria-hidden="true" />)}
                 <span className="fc-recompensa__fita">{d.requer ? 'Bênção em dupla' : d.patrono ? 'Bênção' : nomeTipo[d.tipo]} · {nomeRaridade[d.raridade]}</span>
                 <span className="fc-recompensa__pedestal"><span className="fc-recompensa__icone"><Sprite nome={d.icone} /></span></span>
                 <strong>{d.nome}</strong>

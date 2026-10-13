@@ -40,13 +40,13 @@ def tex_madeira(p, n):
 def materiais(est: int):
     ouro = rampa('#e3b04b', 6, escuro=0.3, claro=1.3)
     m = {
-        'pele': Material(rampa('#f0b48a', 5, escuro=0.45, claro=1.12, giro=0.08), borda_luz=0.5),
-        'olho': Material([(26, 20, 44), (36, 28, 62)], emissivo=True),
+        'pele': Material(rampa('#f4bc92', 5, escuro=0.55, claro=1.16, giro=0.08), borda_luz=0.3),
+        'olho': Material([(22, 26, 60), (40, 70, 140)], emissivo=True),
         'brilho_olho': Material([(255, 255, 255), (255, 255, 255)], emissivo=True),
         'bochecha': Material([(236, 128, 120), (246, 150, 136)], emissivo=True),
         'boca': Material([(120, 50, 40), (150, 66, 52)], emissivo=True),
         'esmalte': Material(rampa('#e4ecf6', 6, escuro=0.42, claro=1.08, giro=0.25), brilho=0.7),
-        'cabelo': Material(rampa('#6a3a1e', 4)),
+        'cabelo': Material(rampa('#7a4626', 4, escuro=0.45, claro=1.3)),
         'pluma': Material(rampa('#3f8ae0', 6, escuro=0.3, claro=1.35)),
         'pluma2': Material(rampa('#e8f0ff', 5, escuro=0.55, claro=1.1)),
         'ferro': Material(rampa('#8e9aae', 6, escuro=0.25, claro=1.12), brilho=0.45),
@@ -115,17 +115,18 @@ def montar(t: dict) -> Cena:
     c.add('pele', lambda p: sd_esfera(p, 8.5), cab, grupo=10)
     c.add('cabelo', lambda p: sd_elipsoide(p - V(0, 0.5, -2.2), (8.6, 7.4, 7.0)), cab, grupo=10, suave=0.5)
     for lx in (-3.1, 3.1):
-        c.add('olho', lambda p, lx=lx: sd_elipsoide(p - V(lx, -0.8, 7.7), (1.1, 1.8, 0.9)), cab, grupo=11)
-    c.add('pele', lambda p: sd_esfera(p - V(0, -2.2, 8.2), 1.1), cab, grupo=12)  # nariz
+        c.add('olho', lambda p, lx=lx: sd_elipsoide(p - V(lx, -0.9, 7.6), (1.35, 2.2, 1.0)), cab, grupo=11)
+    c.add('pele', lambda p: sd_esfera(p - V(0, -2.6, 8.0), 0.8), cab, grupo=12)  # nariz
     for lx in (-3.4, 2.8):
-        c.add('brilho_olho', lambda p, lx=lx: sd_esfera(p - V(lx, 0.2, 8.3), 0.55), cab, grupo=11)
+        c.add('brilho_olho', lambda p, lx=lx: sd_esfera(p - V(lx, 0.4, 8.35), 0.6), cab, grupo=11)
     for lx in (-5.2, 5.2):
         c.add('bochecha', lambda p, lx=lx: sd_elipsoide(p - V(lx, -3.0, 6.6), (1.6, 0.9, 1.2)), cab, grupo=12)
     c.add('boca', lambda p: sd_elipsoide(p - V(0.4, -4.4, 7.9), (0.8, 0.35, 0.6)), cab, grupo=12)
     # cabelo castanho saindo do capacete dos lados do rosto (como no original)
     for lx in (-1, 1):
-        c.add('cabelo', lambda p, lx=lx: sd_elipsoide(p - V(lx * 7.4, -0.5, 3.2), (2.4, 5.0, 4.2)), cab, grupo=10, suave=0.4)
-    c.add('cabelo', lambda p: sd_elipsoide(p - V(0, 3.0, 7.4), (6.2, 1.6, 1.6)), cab, grupo=10, suave=0.4)  # franja
+        c.add('cabelo', lambda p, lx=lx: sd_elipsoide(p - V(lx * 7.9, -1.6, 2.6), (1.7, 4.4, 3.4)), cab, grupo=10, suave=0.3)
+        c.add('cabelo', lambda p, lx=lx: sd_elipsoide(p - V(lx * 3.0, 2.3, 7.8), (1.4, 0.45, 0.6)), cab, grupo=12)  # sobrancelha
+    c.add('cabelo', lambda p: sd_elipsoide(p - V(0, 3.6, 7.0), (6.6, 1.1, 1.4)), cab, grupo=10, suave=0.3)  # franja
     # capacete: domo cortado + aba, muda por estágio
     def domo(p, r=9.4, base=2.6):
         return np.maximum(sd_esfera(p, r), base - p[:, 1])
