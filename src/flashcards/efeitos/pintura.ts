@@ -613,9 +613,9 @@ export function criarAmbiente(canvas: HTMLCanvasElement, cena: Cena, clima: Clim
       if (cor.startsWith('255,236') || cor.startsWith('150') || cor.startsWith('110')) continue
       const tremor = 0.8 + Math.sin(t * 8 + x * 20) * 0.1 + Math.sin(t * 13 + y * 9) * 0.08
       const R = Math.max(w, h) * r * 0.7 * tremor
-      const g = c.createRadialGradient(x * w, y * h, 0, x * w, y * h, R)
-      g.addColorStop(0, `rgba(${cor},${0.3 * tremor})`); g.addColorStop(1, `rgba(${cor},0)`)
-      c.fillStyle = g; c.fillRect(x * w - R, y * h - R, R * 2, R * 2)
+      c.globalAlpha = 0.3 * tremor
+      c.drawImage(particula(cor, true), x * w - R, y * h - R, R * 2, R * 2)
+      c.globalAlpha = 1
     }
     for (const p of parts) {
       if (sobe) { p.y -= p.v * dt * (cena === 'covil' ? 0.09 : 0.06); p.x += Math.sin(t + p.f) * dt * 0.01 }

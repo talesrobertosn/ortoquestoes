@@ -66,7 +66,7 @@ function placa(g: Grade, c: P, u: P, comp: number, larg: number, m: number, bise
 const heroi: Desenho = (g, pose, variante) => {
   const r = pose === 'respira' || pose === 'dano' ? 1 : 0
   const estagio = variante?.startsWith('heroi-') ? Number(variante.slice(6)) : 1
-  adornoAtras(g, r, estagio)
+  if (estagio >= 2) { heroiEvoluido(g, pose, Math.min(6, estagio)); return }
   const aco = g.material(MAT.aco), azul = g.material(MAT.azul), couro = g.material(MAT.couro), pele = g.material(MAT.pele), cabelo = g.material(MAT.cabelo), verm = g.material(MAT.vermelho)
   // capa vermelha atrás, esvoaçando
   g.poligono([[10, 21 + r], [24, 21 + r], [29, 37], [22, 39], [15, 38], [6, 39]], verm, 3)
@@ -100,51 +100,127 @@ const heroi: Desenho = (g, pose, variante) => {
   for (let y = 2; y <= 7; y++) g.ponto(17, y + r, y % 2 ? '#f2c45a' : '#fff1b0')
   g.elipse(21, 1.5 + r, 3.6, 1.8, azul); g.elipse(25.5, 2.5 + r, 3.4, 1.8, azul); g.elipse(29, 5 + r, 2.6, 2.2, azul)
   g.ponto(20, 1 + r, '#bfe0ff'); g.ponto(24, 1 + r, '#bfe0ff')
-  adornoFrente(g, r, estagio)
 }
 
+/* ------------------------------------------------------------ Herói evoluído (estágios 2 a 6) */
 /**
- * Equipamento dos estágios (o cavaleirinho original continua o mesmo por
- * baixo; só ganha peças): 2 ombreira de ouro; 3 capa longa e as duas
- * ombreiras; 4 asas de ouro no elmo e lâmina que brilha; 5 asas de luz,
- * coroa e auréola.
+ * Do estágio 2 em diante, o mesmo cavaleirinho (rosto, cabelo, pluma azul)
+ * ganha desenho próprio: armadura, escudo, espada, elmo e capa mudam de
+ * verdade a cada estágio, e a espada tem pose de preparo, golpe e vitória.
+ *  2 Escudeiro Clínico: escudo pipa, espada longa, ombreira de ouro.
+ *  3 Guardião dos Fundamentos: escudo redondo de torre, elmo com crista, capa longa.
+ *  4 Cavaleiro da Reconstrução: mais alto, placas, elmo alado, espada rúnica, brasão.
+ *  5 Mestre da Ortopedia: armadura branca e ouro, coroa no elmo, montante de luz, escudo espectral.
+ *  6 Lenda da Masmorra: asas de luz, auréola, lâmina de luz e escudo radiante.
  */
-function adornoAtras(g: Grade, r: number, estagio: number) {
-  if (estagio >= 5) {
-    const luz = g.material(MAT.luz)
-    for (const lado of [-1, 1]) {
-      const ox = lado < 0 ? 11 : 23
-      for (let k = 0; k < 5; k++) {
-        const ang = -0.35 - k * 0.32, comp = 15 - k * 1.6
-        const tx = ox + lado * Math.cos(ang) * comp * 1.25, ty = 22 + r + Math.sin(ang) * comp - 2
-        g.membro(ox, 23 + r, tx, ty, 2.4, 1.1, luz, 0.15 - k * 0.04)
-      }
+interface PoseEspada { mao: P; dir: P; r: number; incl: number }
+const POSE_ESPADA: Record<Pose, PoseEspada> = {
+  parado: { mao: [26, 27], dir: unit(0.3, -1), r: 0, incl: 0 },
+  respira: { mao: [26, 28], dir: unit(0.3, -1), r: 1, incl: 0 },
+  preparo: { mao: [23, 19], dir: unit(-0.75, -0.65), r: -1, incl: -1 },
+  golpe: { mao: [30, 25], dir: unit(1, -0.25), r: 1, incl: 1 },
+  dano: { mao: [25, 29], dir: unit(0.7, -0.7), r: 1, incl: -1 },
+  vitoria: { mao: [25, 15], dir: unit(0.05, -1), r: -1, incl: 0 },
+}
+
+const heroiEvoluido = (g: Grade, pose: Pose, e: number) => {
+  const Q = POSE_ESPADA[pose]
+  const r = Q.r, hh = e >= 4 ? 2 : 0
+  const aco = g.material(e >= 5 ? MAT.luz : e >= 4 ? MAT.aco2 : MAT.aco), ouro = g.material(MAT.ouro)
+  const tunica = g.material(e >= 6 ? MAT.roxo : e >= 5 ? MAT.barba : MAT.azul), couro = g.material(MAT.couro), pele = g.material(MAT.pele), cabelo = g.material(MAT.cabelo)
+  const capaM = g.material(e >= 6 ? MAT.roxo : e >= 5 ? MAT.barba : MAT.tabardo), azul = g.material(MAT.azul), luzM = g.material(MAT.luz), ciano = g.material(MAT.ciano)
+  const cy = 13 - hh + r
+
+  // asas de luz e auréola (estágio 6), atrás de tudo
+  if (e >= 6) for (const lado of [-1, 1]) {
+    const ox = lado < 0 ? 10 : 24
+    for (let k = 0; k < 6; k++) {
+      const ang = -0.25 - k * 0.3, comp = 17 - k * 1.5
+      g.membro(ox, 23 - hh + r, ox + lado * Math.cos(ang) * comp * 1.3, 21 - hh + r + Math.sin(ang) * comp - 3, 2.6, 1, luzM, 0.2 - k * 0.04)
     }
   }
-  if (estagio >= 4) {
-    const ciano = g.material(MAT.ciano)
-    for (let i = 0; i < 19; i++) g.elipse(27 + i * 0.3, 25 + r - i, 1.7, 1.2, ciano, 0.6, 0.4)
+  // capa: curta (2), longa (3-4), manto largo que esvoaça (5-6)
+  const vento = pose === 'golpe' ? 4 : pose === 'preparo' ? -2 : 0
+  if (e <= 2) g.poligono([[10, 21 - hh + r], [24, 21 - hh + r], [29, 37], [22, 39], [15, 38], [6, 39]], capaM, 3)
+  else if (e <= 4) { g.poligono([[9, 20 - hh + r], [25, 20 - hh + r], [35 + vento, 40], [26, 41.5], [17, 40.5], [0 + vento * 0.5, 41.5]], capaM, 3); for (let x = 1; x <= 35; x++) if (g.ocupado(x, 40)) g.ponto(x, 40, x % 2 ? '#f2c45a' : '#c28a2a') }
+  else { g.poligono([[7, 19 - hh + r], [27, 19 - hh + r], [39 + vento, 41], [28, 41.5], [17, 40], [-4 + vento * 0.5, 41.5]], capaM, 4); for (let x = -3; x <= 39; x++) if (g.ocupado(x, 40)) g.ponto(x, 40, x % 2 ? '#f2c45a' : '#fff1b0'); g.linha(8, 21 - hh + r, -2 + vento * 0.5, 39, '#c8a0ff') }
+
+  // pernas, grevas e botas
+  for (const x of [12, 18]) {
+    g.retangulo(x, 31 - hh, 4, 5 + hh, tunica, 1)
+    if (e >= 3) g.retangulo(x - 0.5, 31.5 - hh, 5, 3.5, aco, 1)
+    g.retangulo(x - 1, 35, 6, 5, e >= 4 ? aco : couro, 1)
+    if (e >= 4) g.ponto(x + 2, 36, '#ffffff')
   }
-  if (estagio >= 3) {
-    const tab = g.material(MAT.tabardo)
-    g.poligono([[9, 20 + r], [25, 20 + r], [35, 40], [27, 41.5], [17, 40.5], [1, 41.5]], tab, 3)
-    for (let x = 2; x <= 34; x++) if (g.ocupado(x, 40)) g.ponto(x, 40, x % 2 ? '#f2c45a' : '#c28a2a')
+  // tronco: túnica, cinto, peitoral (fica maior e mais rico a cada estágio)
+  g.poligono([[10, 23 - hh + r], [24, 23 - hh + r], [25, 33], [9, 33]], tunica, 3)
+  if (e >= 4) g.poligono([[9, 22 - hh + r], [25, 22 - hh + r], [24, 30 - hh * 0.5], [17, 32], [10, 30 - hh * 0.5]], aco, 2)
+  else g.elipse(17, 25.5 - hh + r, e >= 3 ? 7 : 6.4, e >= 3 ? 5.2 : 4.8, aco)
+  if (e >= 3) { for (let x = 11; x <= 23; x++) if (g.ocupado(x, 22 - hh + r) && !g.ocupado(x, 21 - hh + r)) g.ponto(x, 22 - hh + r, '#f2c45a') }
+  if (e >= 4) { g.linha(17, 23 - hh + r, 17, 30, e >= 5 ? '#c28a2a' : '#5b6884'); g.elipse(17, 25 - hh + r, 2.2, 2.2, ouro); g.ponto(17, 25 - hh + r, e >= 6 ? '#7fe0ff' : '#ff5a5a') }
+  g.retangulo(9, 29 - hh * 0.5 + r, 16, 2, e >= 3 ? ouro : couro, 1)
+  g.ponto(17, 29 - hh * 0.5 + r, '#fff1b0')
+  // escudo no braço esquerdo
+  const ex = 6, ey = 28 - hh + r
+  if (e === 2) {
+    g.poligono([[ex - 6, ey - 6], [ex + 6, ey - 6], [ex + 6, ey + 2], [ex, ey + 9], [ex - 6, ey + 2]], azul, 2)
+    for (let y = ey - 5; y <= ey + 6; y++) g.ponto(ex, y, '#f2c45a'); g.linha(ex - 5, ey - 2, ex + 5, ey - 2, '#f2c45a')
+    g.ponto(ex - 4, ey - 5, '#bfe0ff')
+  } else if (e === 3) {
+    g.elipse(ex, ey, 7, 7.5, azul)
+    for (let a = 0; a < Math.PI * 2; a += 0.22) g.ponto(ex + Math.cos(a) * 6.6, ey + Math.sin(a) * 7.1, a > 2.4 && a < 4.2 ? '#fff1b0' : '#c28a2a')
+    g.elipse(ex, ey, 2.6, 2.6, ouro); g.ponto(ex - 1, ey - 1, '#ffffff')
+  } else if (e === 4) {
+    g.poligono([[ex - 7, ey - 8], [ex + 7, ey - 8], [ex + 7, ey + 1], [ex, ey + 10], [ex - 7, ey + 1]], g.material(MAT.tabardo), 3)
+    g.poligono([[ex - 7, ey - 8], [ex + 7, ey - 8], [ex + 7, ey - 6], [ex - 7, ey - 6]], ouro, 1)
+    const est: Array<[number, number]> = []; for (let k = 0; k < 10; k++) { const rr = k % 2 ? 1.6 : 4, a = -Math.PI / 2 + k * Math.PI / 5; est.push([ex + Math.cos(a) * rr, ey + 0.5 + Math.sin(a) * rr]) }
+    g.poligono(est, ouro, 1)
+  } else {
+    // escudo espectral (5) ou radiante (6): hexágono de energia com núcleo
+    const m = e >= 6 ? luzM : ciano
+    g.elipse(ex, ey, 7.5, 8.5, m, 0.6, 0.25)
+    for (let a = 0; a < Math.PI * 2; a += Math.PI / 3) g.linha(ex, ey, ex + Math.cos(a) * 7, ey + Math.sin(a) * 8, e >= 6 ? '#fff6d0' : '#d8ffff')
+    g.elipse(ex, ey, 2.4, 2.4, ouro, 1, 0.3)
   }
-}
-function adornoFrente(g: Grade, r: number, estagio: number) {
-  if (estagio < 2) return
-  const ouro = g.material(MAT.ouro)
-  g.elipse(24.5, 23.5 + r, 3.6, 2.6, ouro); g.ponto(23.5, 22.5 + r, '#ffffff')
-  if (estagio >= 3) { g.elipse(10, 23 + r, 3.4, 2.4, ouro); g.ponto(9, 22 + r, '#ffffff') }
-  if (estagio >= 4) {
-    g.poligono([[9, 8 + r], [1, 1 + r], [4, 6 + r], [0, 6 + r], [7, 11 + r]], ouro, 1)
-    g.poligono([[25, 8 + r], [33, 1 + r], [30, 6 + r], [34, 6 + r], [27, 11 + r]], ouro, 1)
+  // braço da espada e espada (cresce e muda a cada estágio)
+  const L = [0, 0, 16, 18, 20, 22, 25][e], larg = e >= 5 ? 2.2 : e >= 4 ? 1.8 : 1.4
+  const guarda = soma(Q.mao, Q.dir, 2), ponta = soma(guarda, Q.dir, L), pomo = soma(Q.mao, Q.dir, -3)
+  const v: P = [-Q.dir[1], Q.dir[0]]
+  if (e >= 5) for (let k = 2; k <= L; k += 1) { const q = soma(guarda, Q.dir, k); g.elipse(q[0], q[1], larg + 1.4, larg + 1.4, e >= 6 ? luzM : ciano, 0.5, 0.45) }
+  g.poligono([soma(guarda, v, -larg), soma(guarda, v, larg), soma(soma(ponta, Q.dir, -3), v, larg * 0.8), ponta, soma(soma(ponta, Q.dir, -3), v, -larg * 0.8)], e >= 6 ? luzM : g.material(MAT.aco), 1, e >= 5 ? 0.3 : 0)
+  for (let k = 2; k < L - 3; k++) { const q = soma(guarda, Q.dir, k), b = soma(q, v, -larg * 0.5); g.ponto(b[0], b[1], '#ffffff') }
+  if (e >= 4) for (let k = 4; k < L - 4; k += 3) { const q = soma(guarda, Q.dir, k); g.ponto(q[0], q[1], e >= 6 ? '#ffd76a' : '#7fe0ff') }
+  placa(g, guarda, Q.dir, 1.6, e >= 4 ? 9 : 7, ouro, 1)
+  if (e >= 4) for (const k of [-4.5, 4.5]) { const q = soma(guarda, v, k); g.elipse(q[0], q[1], 1.2, 1.2, ouro) }
+  g.membro(pomo[0], pomo[1], guarda[0], guarda[1], 1.2, 1.2, couro)
+  g.elipse(pomo[0], pomo[1], 1.5, 1.5, ouro)
+  g.elipse(Q.mao[0], Q.mao[1], 2.6, 2.6, e >= 3 ? aco : pele)
+  // ombreiras
+  g.elipse(24.5, 23.5 - hh + r, e >= 4 ? 4.4 : 3.6, e >= 4 ? 3.2 : 2.6, ouro); g.ponto(23.5, 22.5 - hh + r, '#ffffff')
+  if (e >= 3) { g.elipse(9.5, 23 - hh + r, e >= 4 ? 4.2 : 3.4, e >= 4 ? 3 : 2.4, ouro); g.ponto(8.5, 22 - hh + r, '#ffffff') }
+  if (e >= 4) for (const x of [25, 9]) g.poligono([[x - 1, 21 - hh + r], [x + (x > 17 ? 3 : -3), 17 - hh + r], [x + (x > 17 ? 2 : -2), 21 - hh + r]], ouro, 1)
+  // cabeça (o mesmo rosto do original)
+  g.elipse(17, cy, 9, 8.6, cabelo)
+  g.elipse(17, cy + 2, 7, 6.4, pele)
+  g.poligono([[9, cy - 1], [13, cy - 4], [21, cy - 4], [25, cy - 1], [24, cy + 1], [20, cy - 1], [14, cy - 1], [10, cy + 1]], cabelo, 2, 0.1)
+  for (const x of [14, 20]) { g.ponto(x, cy + 2, '#1e1430'); g.ponto(x, cy + 3, '#2a3a7a'); g.ponto(x + 1, cy + 2, '#1e1430'); g.ponto(x + 1, cy + 3, '#2a3a7a'); g.ponto(x, cy + 2, '#ffffff') }
+  if (pose === 'golpe' || pose === 'preparo') { g.linha(13, cy, 16, cy + 1, '#3a1d0a'); g.linha(19, cy + 1, 22, cy, '#3a1d0a') }
+  g.ponto(17, cy + 5, pose === 'vitoria' ? '#ffffff' : '#c0604a'); g.ponto(18, cy + 5, '#a84a3a')
+  g.ponto(12, cy + 4, '#f5a08a'); g.ponto(22, cy + 4, '#f5a08a')
+  // elmo: meio-elmo (2), com crista (3), alado (4), com coroa (5-6)
+  g.poligono([[8, cy - 3], [11, cy - 9], [17, cy - 11], [23, cy - 9], [26, cy - 3], [22, cy - 5], [12, cy - 5]], aco, 2)
+  for (let x = 9; x <= 25; x++) if (g.ocupado(x, cy - 4)) g.ponto(x, cy - 4, x % 3 ? '#c28a2a' : '#f2c45a')
+  if (e >= 3) { g.poligono([[16, cy - 11], [18, cy - 11], [18.5, cy - 4], [15.5, cy - 4]], ouro, 1); for (const x of [8, 26]) g.retangulo(x - 1, cy - 4, 2, 5, aco, 1) }
+  if (e >= 4 && e < 5) for (const lado of [-1, 1]) { const x0 = lado < 0 ? 9 : 25; g.poligono([[x0, cy - 6], [x0 + lado * 9, cy - 13], [x0 + lado * 6, cy - 7], [x0 + lado * 10, cy - 7], [x0 + lado * 2, cy - 2]], ouro, 1) }
+  if (e >= 5) {
+    g.poligono([[11, cy - 9], [12, cy - 15], [14.5, cy - 11], [17, cy - 17], [19.5, cy - 11], [22, cy - 15], [23, cy - 9]], ouro, 1)
+    g.ponto(17, cy - 13, e >= 6 ? '#7fe0ff' : '#ff5a7a'); g.ponto(12.5, cy - 12, '#7fe0ff'); g.ponto(21.5, cy - 12, '#7fe0ff')
   }
-  if (estagio >= 5) {
-    g.poligono([[11, 1 + r], [12, -4 + r], [14, -1 + r], [17, -6 + r], [20, -1 + r], [22, -4 + r], [23, 1 + r]], ouro, 1)
-    g.ponto(17, -3 + r, '#ff5a7a'); g.ponto(12, -2 + r, '#7fe0ff'); g.ponto(22, -2 + r, '#7fe0ff')
-    for (let a = 0; a < Math.PI * 2; a += 0.22) g.ponto(17 + Math.cos(a) * 8, -8 + r + Math.sin(a) * 1.8, a < Math.PI ? '#fff1b0' : '#f2c45a')
-  }
+  // pluma: azul (2-3), longa e branca (5), de luz (6)
+  const pl = e >= 5 ? g.material(MAT.barba) : azul
+  g.elipse(21, cy - 12 + (e >= 5 ? -3 : 0), 3.6, 1.8, pl); g.elipse(25.5, cy - 11 + (e >= 5 ? -2 : 0), 3.4, 1.8, pl); g.elipse(29, cy - 8, 2.6, 2.2, pl)
+  if (e >= 4) g.elipse(32, cy - 5, 2.2, 1.8, pl)
+  if (e >= 6) for (let a = 0; a < Math.PI * 2; a += 0.2) g.ponto(17 + Math.cos(a) * 9, cy - 19 + Math.sin(a) * 2, a < Math.PI ? '#fff1b0' : '#f2c45a')
 }
 
 
@@ -703,11 +779,6 @@ export const VARIANTES: Record<string, Variante> = {
   alfa: { rampas: { escamaVerde: { rampa: ['#ffd8a0', '#e08a40', '#a0501e', '#5a280c'], contorno: '#200a02' }, vermelho: { rampa: ['#fff07a', '#f2c42a', '#b08410', '#604404'] } }, cores: { '#1e4a18': '#5a280c', '#3e8a2e': '#a0501e', '#ffe040': '#ff5a3c', '#ffb020': '#c42a14' } },
   escarlate: { rampas: { osso: { rampa: ['#ffe8d8', '#e8a888', '#b0644a', '#6a2e1e'], contorno: '#2a0a04' }, membrana: { rampa: ['#ff9a6a', '#d0502a', '#8a2a14', '#4a1006'], contorno: '#1e0402' }, ciano: { rampa: ['#fff6b0', '#ffc24a', '#f0702a', '#a02a10'], contorno: '#3a0a04' } }, cores: { '#bff8ff': '#ffe08a', '#7fe0ff': '#ff9a3c' } },
   ancestral: { rampas: { osso: { rampa: ['#6a6280', '#463e5a', '#2c2640', '#16121e'], contorno: '#06040a' }, membrana: { rampa: ['#f2c45a', '#c28a2a', '#7a5214', '#3a2408'], contorno: '#1a0e02' }, ciano: { rampa: ['#ffe8ff', '#e0a0ff', '#a050e0', '#5a2090'], contorno: '#1e0630' } }, cores: { '#bff8ff': '#f0c8ff', '#7fe0ff': '#c070ff', '#ffffff': '#fff1b0' } },
-  // estágios do herói (o mesmo cavaleirinho, com equipamento melhor)
-  'heroi-2': { rampas: { azul: { rampa: ['#9fd0ff', '#4a90e0', '#2a5ea8', '#18366a'] } }, cores: { '#c28a2a': '#f2c45a', '#bfe0ff': '#ffffff' } },
-  'heroi-3': { rampas: { azul: { rampa: ['#a8e0ff', '#3a88e8', '#1e56b0', '#0e2e6a'] }, vermelho: { rampa: ['#ff8a6a', '#e04a2a', '#a02414', '#5a0e08'] }, aco: { rampa: ['#ffffff', '#cfdcf0', '#8a9cbc', '#4e5c7a'] } }, cores: { '#c28a2a': '#ffd76a', '#f4f8ff': '#ffffff', '#9fb0c8': '#bfe8ff' } },
-  'heroi-4': { rampas: { azul: { rampa: ['#c0a8ff', '#7a5ae0', '#4a32a8', '#28186a'] }, vermelho: { rampa: ['#ffe08a', '#f2b030', '#b07414', '#5e3c06'] }, aco: { rampa: ['#ffffff', '#e0e6f6', '#a2aed0', '#5e6888'] } }, cores: { '#c28a2a': '#fff1b0', '#9fb0c8': '#d8c0ff' } },
-  'heroi-5': { rampas: { azul: { rampa: ['#fff6c8', '#f2d06a', '#c8962a', '#7a5414'] }, vermelho: { rampa: ['#ffffff', '#f0e6ff', '#c0aef0', '#7a68b0'] }, aco: { rampa: ['#ffffff', '#fff6d8', '#e0c890', '#9a8050'] } }, cores: { '#c28a2a': '#ffffff', '#9fb0c8': '#fff6c0', '#f4f8ff': '#ffffff' } },
 }
 
 function tabelaDeTroca(nome?: string): Map<string, string> | undefined {

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { memo, useEffect, useRef, useState } from 'react'
 import { recurso } from '../../config'
 import { href } from '../../util/rotas'
 import type { Flashcard } from '../tipos'
@@ -91,7 +91,7 @@ function Figura({ img, aoAmpliar }: { img: { src: string; legenda: string }; aoA
  * troca a face e volta de -90°; assim o verso ocupa a altura que precisa e o
  * texto nunca aparece espelhado.
  */
-export function Cartao({ carta, virada, dicaFrente, aoTocar, aoAmpliar, chave, resultado, assistida, aoGirar, reduzido, rodapeVerso, classe, familias = [] }: Props) {
+export const Cartao = memo(function Cartao({ carta, virada, dicaFrente, aoTocar, aoAmpliar, chave, resultado, assistida, aoGirar, reduzido, rodapeVerso, classe, familias = [] }: Props) {
   const [lado, definirLado] = useState<'frente' | 'verso'>(virada ? 'verso' : 'frente')
   const [giro, definirGiro] = useState<'' | 'sai' | 'entra'>('')
   const [origemAberta, definirOrigem] = useState(false)
@@ -192,4 +192,4 @@ export function Cartao({ carta, virada, dicaFrente, aoTocar, aoAmpliar, chave, r
       </div>
     </article>
   )
-}
+})

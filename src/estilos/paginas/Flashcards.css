@@ -189,7 +189,7 @@
 .fc-inimigo { display: flex; align-items: flex-end; gap: clamp(12px, 1.6vw, 24px); padding: 0 clamp(4px, 4%, 70px); }
 .fc-ator--inimigo { margin-bottom: -18px; z-index: 3; }
 .fc-placa { flex: 1; min-width: 0; max-width: 560px; display: grid; gap: 7px; padding: 12px 16px; margin-bottom: 8px; border-radius: 16px;
-  background: linear-gradient(rgba(18, 12, 20, .86), rgba(18, 12, 20, .72)); box-shadow: inset 0 0 0 1.5px var(--fc-painel-borda), 0 10px 24px rgba(0, 0, 0, .45); backdrop-filter: blur(3px); }
+  background: linear-gradient(rgba(18, 12, 20, .86), rgba(18, 12, 20, .72)); box-shadow: inset 0 0 0 1.5px var(--fc-painel-borda), 0 10px 24px rgba(0, 0, 0, .45); }
 .fc-placa__nome { display: flex; align-items: center; gap: 10px; min-width: 0; flex-wrap: wrap; }
 .fc-placa__nome strong { font: 900 clamp(20px, 1.6vw, 25px)/1.05 var(--fc-titulo); letter-spacing: .04em; color: #fff3d6; text-shadow: 0 2px 0 #000, 0 0 16px rgba(255, 200, 120, .25); }
 .fc-selo { flex: none; font: 800 12px var(--fc-ui); font-style: normal; letter-spacing: .1em; padding: 3px 9px; border-radius: 6px; color: #1b130b; background: linear-gradient(#ffe39a, var(--fc-ouro)); text-transform: uppercase; }
@@ -345,7 +345,7 @@
 .fc-jogador { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: end; gap: clamp(10px, 1.6vw, 22px); padding-top: 4px; }
 .fc-heroi { display: flex; align-items: flex-end; gap: 12px; min-width: 0; }
 .fc-heroi__dados { display: grid; gap: 7px; width: clamp(214px, 18vw, 280px); padding: 10px 12px; margin-bottom: 6px; border-radius: 14px;
-  background: linear-gradient(rgba(14, 18, 30, .86), rgba(14, 18, 30, .72)); box-shadow: inset 0 0 0 1.5px rgba(140, 180, 240, .35), 0 10px 22px rgba(0, 0, 0, .45); backdrop-filter: blur(3px); }
+  background: linear-gradient(rgba(14, 18, 30, .86), rgba(14, 18, 30, .72)); box-shadow: inset 0 0 0 1.5px rgba(140, 180, 240, .35), 0 10px 22px rgba(0, 0, 0, .45); }
 .fc-heroi__nome { display: flex; align-items: center; gap: 8px; font: 800 16px var(--fc-titulo); color: #fff3d6; letter-spacing: .04em; }
 .fc-modal .fc-sprite--coracao { width: 20px; height: 18px; flex: none; }
 .fc-combo { margin-left: auto; display: flex; align-items: center; gap: 3px; }
@@ -466,7 +466,7 @@
 .fc-apresenta small { font: 600 13px var(--fc-ui); color: var(--fc-nevoa); margin-top: 4px; }
 
 /* ============================================================ Janelas */
-.fc-veu { position: absolute !important; inset: 0; z-index: 68 !important; display: grid; place-items: center; padding: 18px; background: rgba(5, 3, 6, .78); backdrop-filter: blur(4px); overflow-y: auto; }
+.fc-veu { position: absolute !important; inset: 0; z-index: 68 !important; display: grid; place-items: center; padding: 18px; background: rgba(5, 3, 6, .86); overflow-y: auto; }
 .fc-janela { width: min(480px, 100%); max-height: 100%; overflow-y: auto; display: grid; gap: 14px; padding: 24px 22px; border-radius: 20px; text-align: left; color: var(--fc-pergaminho);
   background: linear-gradient(#2c1d12, #160e08); box-shadow: 0 0 0 2px #120a04, 0 0 0 4px #b98a36, 0 0 0 5px #fff0b8, 0 0 0 7px #6b4a1c, 0 24px 50px rgba(0, 0, 0, .7); animation: fc-cartaz .4s cubic-bezier(.2, .9, .3, 1.2) both; }
 .fc-janela--larga { width: min(800px, 100%); }
@@ -568,7 +568,7 @@
 /* ============================================================ Estudo */
 .fc-estudo { display: grid; grid-template-columns: minmax(170px, 220px) minmax(0, 1fr) minmax(0, 220px); grid-template-rows: minmax(0, 1fr) auto; gap: 12px 18px; padding: 8px clamp(14px, 2vw, 28px) 18px; }
 .fc-estudo__painel { grid-column: 1; grid-row: 1; align-self: center; display: grid; gap: 12px; padding: 16px; border-radius: 16px;
-  background: linear-gradient(rgba(30, 18, 10, .86), rgba(30, 18, 10, .72)); box-shadow: inset 0 0 0 1.5px var(--fc-painel-borda), 0 12px 26px rgba(0, 0, 0, .5); backdrop-filter: blur(3px); }
+  background: linear-gradient(rgba(30, 18, 10, .86), rgba(30, 18, 10, .72)); box-shadow: inset 0 0 0 1.5px var(--fc-painel-borda), 0 12px 26px rgba(0, 0, 0, .5); }
 .fc-estudo__contagem { display: flex; align-items: baseline; gap: 6px; font-family: var(--fc-ui); }
 .fc-estudo__contagem b { font: 900 34px var(--fc-ui); color: #ffe7a0; font-variant-numeric: tabular-nums; }
 .fc-estudo__contagem small { font: 700 15px var(--fc-ui); color: var(--fc-nevoa); }
@@ -1178,8 +1178,8 @@
 .fc-carta__canto--2 { right: 3px; top: 3px; border-left: 0; border-bottom: 0; border-top-right-radius: 16px; }
 .fc-carta__canto--3 { left: 3px; bottom: 3px; border-right: 0; border-top: 0; border-bottom-left-radius: 16px; }
 .fc-carta__canto--4 { right: 3px; bottom: 3px; border-left: 0; border-top: 0; border-bottom-right-radius: 16px; }
-.fc-carta--epica .fc-carta__gema, .fc-carta--lendaria .fc-carta__gema { animation: fc-gema 2.4s ease-in-out infinite; }
-@keyframes fc-gema { 50% { box-shadow: 0 0 0 2px #0c0604, 0 0 0 3.5px var(--b1), 0 0 0 5px #0c0604, 0 0 30px var(--brilho), 0 0 50px var(--brilho); } }
+.fc-carta--epica .fc-carta__gema::after, .fc-carta--lendaria .fc-carta__gema::after { content: ""; position: absolute; inset: -12px; border-radius: 50%; background: radial-gradient(closest-side, var(--brilho), transparent); opacity: .2; animation: fc-gema-carta 2.4s ease-in-out infinite; will-change: opacity; }
+@keyframes fc-gema-carta { 50% { opacity: 1; } }
 .fc-carta--lendaria .fc-carta__borda { background: linear-gradient(150deg, #fff 0%, #fff1b0 8%, #e9b955 30%, #fff6d0 50%, #c08a24 72%, #6a4410 100%); }
 .fc-carta__fitas { position: absolute; z-index: 4; left: 18px; top: -12px; display: flex; gap: 6px; pointer-events: none; }
 .fc-fita { padding: 2px 10px; border-radius: 6px; font: 800 11px var(--fc-ui); font-style: normal; letter-spacing: .1em; text-transform: uppercase; color: #fff; text-shadow: 0 1px 0 rgba(0, 0, 0, .6); box-shadow: 0 0 0 1.5px #0c0604, 0 3px 6px rgba(0, 0, 0, .5), inset 0 1px 0 rgba(255, 255, 255, .35); }
@@ -1220,3 +1220,104 @@
   .fc-heroi__nome .fc-combo { min-width: 0; overflow: hidden; }
   .fc-heroi__dados .fc-vida b { min-width: 64px; font-size: 16px; }
 }
+.fc-estagio { flex: none; min-width: 22px; padding: 0 5px; border-radius: 6px; font: 900 11px/18px var(--fc-titulo); font-style: normal; text-align: center; color: #2a1606; background: var(--fc-metal-ouro); box-shadow: 0 0 0 1.5px #0c0604; }
+.fc-estagio--1 { background: var(--fc-metal-bronze); color: #fff1d8; }
+.fc-estagio--2, .fc-estagio--3 { background: var(--fc-metal-prata); }
+.fc-estagio--6 { background: linear-gradient(100deg, #ffe08a, #ff9ad8, #9fe8ff); }
+.fc-ator--estagio-6 .fc-ator__aura { opacity: 1; background: radial-gradient(closest-side, rgba(255, 230, 150, .6), rgba(160, 120, 255, .25) 60%, transparent); animation: fc-aura 2s ease-in-out infinite; }
+.fc-ator--estagio-6 .fc-ator__quadros { filter: drop-shadow(0 0 1px rgba(0, 0, 0, .6)) drop-shadow(0 0 8px rgba(255, 220, 120, .8)); }
+
+/* ---- desempenho: o cenário é um canvas só (composto uma vez); nada de filtro ou mistura ao vivo */
+.fc-cena__base { image-rendering: auto !important; transform: translate3d(calc(var(--px) * -6px), calc(var(--py) * -4px), 0) scale(1.012); transition: transform .8s ease-out; }
+.fc-cena .fc-cena__nevoa, .fc-cena--clima-noite .fc-cena__nevoa { background: radial-gradient(ellipse at 50% 50%, transparent 45%, rgba(200, 30, 20, .45)) !important; opacity: 0 !important; box-shadow: none !important; }
+.fc-arena--perigo .fc-cena__nevoa { animation: fc-perigo 1.6s ease-in-out infinite !important; }
+@keyframes fc-perigo { 50% { opacity: 1; } }
+
+/* ---- desempenho: só se anima opacidade e transformação (o compositor faz sem repintar).
+ * Brilhos que pulsavam box-shadow, filter ou background-position viraram camadas de luz
+ * fixas cuja opacidade pulsa, e os reflexos que corriam viraram faixas que deslizam. */
+@keyframes fc-pulso-op { 50% { opacity: 1; } }
+@keyframes fc-desliza { 0%, 55% { transform: translateX(-120%) skewX(-18deg); } 100% { transform: translateX(220%) skewX(-18deg); } }
+.fc-gema { animation: none !important; }
+.fc-gema::after { content: ""; position: absolute; inset: -12px; border-radius: 50%; background: radial-gradient(closest-side, rgba(140, 210, 255, .85), transparent); opacity: .15; animation: fc-pulso-op 3.2s ease-in-out infinite; will-change: opacity; }
+.fc-gema--2::after { animation-delay: -.8s; } .fc-gema--3::after { animation-delay: -1.6s; } .fc-gema--4::after { animation-delay: -2.4s; }
+.fc-principal { animation: none !important; }
+.fc-principal::after { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: inherit; pointer-events: none; opacity: 0; background: radial-gradient(ellipse at 50% 50%, rgba(255, 255, 255, .35), transparent 70%); }
+.fc-principal.pronto::after, .fc-principal.seguir::after { animation: fc-pulso-op 1.6s ease-in-out infinite; will-change: opacity; }
+.fc-principal__runa { animation: none !important; will-change: transform; }
+.fc-principal.pronto .fc-principal__runa, .fc-principal.seguir .fc-principal__runa { animation: fc-runa 3.5s linear infinite !important; }
+.fc-encaixe--usavel { animation: none !important; }
+.fc-encaixe--usavel::after { content: ""; position: absolute; inset: -8px; border-radius: 50%; pointer-events: none; background: radial-gradient(closest-side, var(--cor), transparent); opacity: .2; animation: fc-pulso-op 1.6s ease-in-out infinite; will-change: opacity; }
+.fc-carta--lendaria .fc-carta__borda::after, .fc-recompensa--rara::after, .fc-recompensa--epica::after, .fc-recompensa--lendaria::after { animation: none !important; background: none !important; }
+.fc-carta--lendaria .fc-carta__moldura::after, .fc-carta--epica .fc-carta__moldura::after, .fc-carta--brilhante .fc-carta__moldura::after {
+  content: ""; position: absolute; top: 0; bottom: 0; left: 0; width: 40%; z-index: 5; pointer-events: none;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .28), transparent); animation: fc-desliza 6s ease-in-out infinite; will-change: transform; }
+.fc-carta--brilhante .fc-carta__moldura::after { background: linear-gradient(90deg, transparent, rgba(255, 140, 230, .22), rgba(140, 230, 255, .3), rgba(255, 230, 140, .22), transparent); animation-duration: 3.5s; }
+.fc-carta--brilhante::after { animation: none !important; }
+.fc-recompensa { overflow: hidden; }
+.fc-recompensa--rara .fc-recompensa__pedestal::after, .fc-recompensa--epica .fc-recompensa__pedestal::after, .fc-recompensa--lendaria .fc-recompensa__pedestal::after { content: ""; }
+.fc-recompensa--lendaria { animation: fc-recompensa .55s cubic-bezier(.2, .9, .3, 1.2) both !important; }
+.fc-recompensa--lendaria::before { content: ""; position: absolute; inset: 0; border-radius: 20px; pointer-events: none; box-shadow: 0 0 60px rgba(255, 150, 60, .75) inset; opacity: .3; animation: fc-pulso-op 2.2s ease-in-out infinite; }
+.fc-botao--lendario { animation: none !important; }
+.fc-ator__quadros { filter: none !important; }
+.fc-ator__aura { will-change: transform, opacity; }
+.fc-intencao__gema, .fc-vida--baixa .fc-vida__trilho i { will-change: opacity; }
+
+/* ---- desempenho: golpes, bloqueio, cura e queda sem filtro (só transform e opacidade) */
+@keyframes fc-atingido { 18% { transform: translateX(-7px) rotate(-4deg); } 40% { transform: translateX(6px) rotate(3deg); } 65% { transform: translateX(-3px) rotate(-1deg); } }
+@keyframes fc-atingido-forte { 0% { transform: scale(1.06, .92); } 15% { transform: translateX(-12px) rotate(-7deg) scale(.96, 1.04); } 35% { transform: translateX(10px) rotate(5deg); } 60% { transform: translateX(-5px) rotate(-2deg); } }
+@keyframes fc-prepara { 100% { transform: scale(1.06, .94) translateY(4px); } }
+@keyframes fc-bloqueio { 30% { transform: scale(.94); } }
+@keyframes fc-cura { 30% { transform: translateY(-4px) scale(1.03); } }
+@keyframes fc-cai { 25% { transform: scale(1.1); } 100% { transform: translateY(14px) scale(.85); opacity: 0; } }
+@keyframes fc-modal-entra { from { opacity: 0; transform: translateY(18px) scale(.96); } }
+@keyframes fc-flash { 0% { opacity: .95; } 100% { opacity: 0; } }
+.fc-ator__q--clarao { opacity: 0 !important; animation: none !important; will-change: opacity; }
+.fc-anim-atingido .fc-ator__q--clarao, .fc-anim-atingido-forte .fc-ator__q--clarao, .fc-anim-clarao .fc-ator__q--clarao, .fc-ator--caiu .fc-ator__q--clarao { animation: fc-flash .32s ease-out !important; }
+.fc-anim-clarao .fc-ator__quadros { filter: none !important; }
+.fc-ator__corpo { will-change: transform; }
+.fc-lamina { animation: none !important; }
+.fc-lamina::before { content: ""; position: absolute; inset: 0; background: #000; opacity: 0; animation: fc-lamina-op .7s ease-out forwards; }
+@keyframes fc-lamina-op { 15% { opacity: .35; } 100% { opacity: 0; } }
+.fc-lamina i { height: 12px; will-change: transform, opacity; }
+@keyframes fc-lamina { 0% { transform: rotate(-24deg) scaleX(0); opacity: 1; } 45% { transform: rotate(-24deg) scaleX(1) scaleY(1); opacity: 1; } 100% { transform: rotate(-24deg) scaleX(1) scaleY(.2); opacity: 0; } }
+.fc-carta--certo .fc-carta__borda, .fc-carta--errado .fc-carta__borda { animation: none !important; }
+.fc-carta__borda::before { content: ""; position: absolute; inset: 0; z-index: 6; border-radius: 22px; pointer-events: none; opacity: 0; }
+.fc-carta--certo .fc-carta__borda::before { box-shadow: 0 0 0 6px #5fdc7a, 0 0 60px rgba(95, 220, 122, .9); animation: fc-flash .9s ease-out; }
+.fc-carta--errado .fc-carta__borda::before { box-shadow: 0 0 0 6px #e0503a, 0 0 60px rgba(224, 80, 58, .9); animation: fc-flash .9s ease-out; }
+.fc-carta--ataca { filter: none !important; }
+.fc-carta::before { filter: none !important; inset: -26px !important; background: radial-gradient(closest-side, var(--brilho), transparent 75%) !important; }
+.fc-borda-vermelha[data-ativo="1"] { will-change: opacity; }
+/* celular: o jogo cobre a tela toda, então o véu escuro por trás não precisa ser desenhado */
+@media (max-width: 640px) {
+  .fc-modal-veu { background: #07050a !important; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
+  .fc-modal { box-shadow: none !important; }
+}
+.fc-flutuantes:empty { display: none; }
+
+/* ---- sprites em folha única: a pose é a posição do fundo (0%, 20%... 100% para 6 poses) */
+.fc-ator__folha, .fc-ator__clarao { position: absolute; inset: 0; display: block; background-repeat: no-repeat; image-rendering: pixelated; image-rendering: crisp-edges; pointer-events: none; }
+.fc-ator__folha { background-position: 0% 0; animation: fc-respira-folha 1.3s steps(1) infinite; }
+@keyframes fc-respira-folha { 50% { background-position: 20% 0; } }
+.fc-ator[data-pose] .fc-ator__folha { animation: none; }
+.fc-ator[data-pose="preparo"] .fc-ator__folha { background-position: 40% 0; }
+.fc-ator[data-pose="golpe"] .fc-ator__folha { background-position: 60% 0; }
+.fc-ator[data-pose="dano"] .fc-ator__folha { background-position: 80% 0; }
+.fc-ator[data-pose="vitoria"] .fc-ator__folha { background-position: 100% 0; }
+.fc-ator__clarao { opacity: 0; }
+.fc-anim-atingido .fc-ator__clarao, .fc-anim-atingido-forte .fc-ator__clarao, .fc-anim-clarao .fc-ator__clarao, .fc-ator--caiu .fc-ator__clarao { animation: fc-flash .32s ease-out; }
+.fc-arena--reduzida .fc-ator__folha { animation: none; }
+.fc-ator__corpo { will-change: auto !important; }
+.fc-principal__runa { will-change: auto !important; }
+.fc-ator__aura { will-change: auto !important; }
+.fc-intencao__gema, .fc-vida--baixa .fc-vida__trilho i, .fc-gema::after, .fc-encaixe--usavel::after, .fc-carta--epica .fc-carta__gema::after, .fc-carta--lendaria .fc-carta__gema::after, .fc-principal.pronto::after, .fc-principal.seguir::after { will-change: auto !important; }
+.fc-cena__nevoa { display: none; }
+.fc-arena--perigo .fc-cena__nevoa { display: block; }
+/* com o jogo aberto, o site por trás não precisa ser desenhado */
+body.fc-modal-aberto .aviso-cookies, body.fc-modal-aberto .aviso-site, body.fc-modal-aberto header.cabecalho, body.fc-modal-aberto footer { visibility: hidden; }
+@media (max-width: 640px) { .fc-modal-veu { background: transparent !important; } .fc-modal { background-color: #07050a; } }
+.fc-cena span.fc-cena__nevoa { display: none; }
+.fc-arena--perigo .fc-cena span.fc-cena__nevoa { display: block; }
+/* sem desfoque de fundo ao vivo (pesava mais que todo o resto no computador): véus um pouco mais escuros no lugar */
+.fc-modal-veu { backdrop-filter: none !important; -webkit-backdrop-filter: none !important; background: radial-gradient(ellipse at 50% 40%, rgba(20, 14, 24, .86), rgba(4, 3, 6, .96)) !important; }
+.fc-veu { backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }

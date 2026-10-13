@@ -318,9 +318,10 @@ function inimigoDaTorre(andar: number, semente: number): { inimigo: Inimigo; cic
 
 /** Estágios do herói: a cada chefe vencido ele evolui (só nesta partida). */
 export const ESTAGIOS = [
-  { nome: 'Aprendiz da Ortopedia', vida: 0, ataque: 0, defesa: 0 },
-  { nome: 'Escudeiro Clínico', vida: 12, ataque: 2, defesa: 1 },
-  { nome: 'Cavaleiro da Ortopedia', vida: 24, ataque: 4, defesa: 2 },
-  { nome: 'Mestre da Reconstrução', vida: 36, ataque: 6, defesa: 3 },
-  { nome: 'Lenda do Torneio', vida: 50, ataque: 8, defesa: 4 },
+  { nome: 'Aprendiz do Torneio', vida: 0, ataque: 0, defesa: 0 },
+  { nome: 'Escudeiro Clínico', vida: 10, ataque: 2, defesa: 1 },
+  { nome: 'Guardião dos Fundamentos', vida: 20, ataque: 3, defesa: 2 },
+  { nome: 'Cavaleiro da Reconstrução', vida: 30, ataque: 5, defesa: 2 },
+  { nome: 'Mestre da Ortopedia', vida: 40, ataque: 6, defesa: 3 },
+  { nome: 'Lenda da Masmorra', vida: 52, ataque: 8, defesa: 4 },
 ] as const

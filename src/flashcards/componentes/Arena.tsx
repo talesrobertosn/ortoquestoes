@@ -187,7 +187,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   const [selecionada, definirSelecionada] = useState<number | null>(null)
   const [faixa, definirFaixa] = useState<Faixa>(null)
   const [apresentacao, definirApresentacao] = useState<{ inimigo: Inimigo; ciclo: number; andar: number } | null>(null)
-  const [flutuantes, definirFlutuantes] = useState<Flutuante[]>([])
+  const refFlutuantes = useRef<HTMLDivElement>(null)
   const [ampliada, definirAmpliada] = useState<{ src: string; legenda: string } | null>(null)
   const [ajustesAbertos, definirAjustesAbertos] = useState(false)
   const [painel, definirPainel] = useState<'heroi' | 'inimigo' | null>(null)
@@ -266,6 +266,9 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   const intencao = motor.intencao(partida)
   const atributos = motor.atributos(partida)
 
+  const ampliarImagem = useCallback((i: { src: string; legenda: string }) => { tocar('selecao'); definirAmpliada(i) }, [])
+  const somDoGiro = useCallback(() => tocar('giro'), [])
+
   /* ---------- Diretor de efeitos ---------- */
   const fator = (reduzido ? 0.3 : 1) * (ajustes.velocidade === 'rapida' ? 0.6 : 1)
   const esperar = useCallback((ms: number, g: number) => new Promise<boolean>((resolver) => {
@@ -277,8 +280,17 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
     const id = ++idFlutuante.current
     const margem = Math.min(window.innerWidth / 2, 40 + texto.length * 9)
     const xx = Math.min(Math.max(x + (extra?.x ?? 0), margem), window.innerWidth - margem)
-    definirFlutuantes((f) => [...f, { id, x: xx, y: Math.max(40, y + (extra?.y ?? 0)), texto, tom, grande: extra?.grande, rotulo: extra?.rotulo }])
-    window.setTimeout(() => definirFlutuantes((f) => f.filter((v) => v.id !== id)), extra?.grande ? 1500 : 1150)
+    // direto no DOM: um número de dano não pode redesenhar a arena inteira (era o que travava o golpe)
+    const camada = refFlutuantes.current
+    if (!camada) return
+    const no = document.createElement('span')
+    no.className = 'fc-flutua' + (extra?.grande ? ' fc-flutua--grande' : '')
+    no.style.left = xx + 'px'; no.style.top = Math.max(40, y + (extra?.y ?? 0)) + 'px'; no.style.color = tom
+    no.dataset.id = String(id)
+    no.textContent = texto
+    if (extra?.rotulo) { const r = document.createElement('small'); r.textContent = extra.rotulo; no.appendChild(r) }
+    camada.appendChild(no)
+    window.setTimeout(() => no.remove(), extra?.grande ? 1500 : 1150)
   }, [])
 
   const tremer = useCallback((forca: number) => {
@@ -367,11 +379,13 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
           const topoCarta = caixa ? { x: caixa.left + caixa.width / 2, y: caixa.top + 24 } : centro(refCarta.current)
           if (alt) P?.carga(centro(alt), cor, 14, 60)
           definirAtacando(true)
+          posar(refHeroi, 'preparo', 380)
           tocar('carga')
           P?.carga(topoCarta, cor, forte ? 34 : 22, forte ? 120 : 90)
           if (!(await esperar(320, g))) return
           // 4-6: disparo com rastro; a luz passa pela mesa
           const para = centro(refInimigo.current)
+          posar(refHeroi, 'golpe', 520)
           tocar('disparo', forte ? 1.2 : 1)
           window.setTimeout(() => { if (g === geracao.current) definirMostrado((m) => ({ ...m, revelada: true })) }, 240 * fator)
           if (P) await P.projetil(topoCarta, para, { cor, nucleo: '#fff6d0', tam: 12 + Math.min(10, combo * 2) + (forte ? 6 : 0), duracao: forte ? 0.46 : 0.38, rastro: forte ? 6 : 3 })
@@ -541,6 +555,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
           if (caixa) { P?.dissolver(caixa, PALETA_PERSONAGEM[quemInimigo]); P?.fragmentos(centro(refInimigo.current), PALETA_PERSONAGEM[quemInimigo], 40, 520) }
           P?.clarao(centro(refInimigo.current), '#ffe08a', 500, 1, 0.8)
           definirMostrado((m) => ({ ...m, inimigoCaiu: true }))
+          posar(refHeroi, 'vitoria', 1800)
           tocar(ev.chefe ? 'vitoria-chefe' : 'derrota-inimigo', 1, quemInimigo)
           window.setTimeout(() => tocar(ev.chefe ? 'jingle-chefe' : 'jingle-vitoria'), 500 * fator)
           lembrarBestiario(adv.id, true)
@@ -983,10 +998,10 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
                     carta={carta}
                     virada={mostrado.revelada && partida.fase !== 'pergunta'}
                     dicaFrente={faixaTela === 'celular' ? 'Escolha a resposta abaixo' : 'Escolha a resposta na sua mão · teclas 1 a 4'}
-                    aoAmpliar={(i) => { tocar('selecao'); definirAmpliada(i) }}
+                    aoAmpliar={ampliarImagem}
                     resultado={partida.fase !== 'pergunta' ? mostrado.resultado : null}
                     assistida={partida.atual.assistida}
-                    aoGirar={() => tocar('giro')}
+                    aoGirar={somDoGiro}
                     reduzido={reduzido}
                     classe={(atacando ? 'fc-carta--ataca' : '') + (partida.atual.brilhante ? ' fc-carta--brilhante' : '')}
                     familias={familiasCarta}
@@ -998,12 +1013,13 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
             {/* Você */}
             <section className="fc-jogador" aria-label="Você">
               <div className="fc-heroi">
-                <Ator ref={refHeroi} quem="heroi" variante={partida.estagio > 1 ? `heroi-${partida.estagio}` : undefined} escala={escalaHeroi} classe={`fc-ator--heroi fc-ator--estagio-${partida.estagio}` + (mostrado.heroiCaiu ? ' fc-ator--caiu' : '')}>
+                <Ator ref={refHeroi} quem="heroi" variante={partida.estagio > 1 ? `heroi-${partida.estagio}` : undefined} escala={escalaHeroi * (1 + 0.06 * (partida.estagio - 1))} classe={`fc-ator--heroi fc-ator--estagio-${partida.estagio}` + (mostrado.heroiCaiu ? ' fc-ator--caiu' : '')}>
                   {partida.encaixes.some((e) => e.tipo === 'escudo') && <span className="fc-bolha-escudo" />}
                   <button type="button" className="fc-ator__toque" aria-label="Ver o seu herói: atributos, poderes e relíquias" onClick={() => { tocar('selecao'); definirPainel('heroi') }} />
                 </Ator>
                 <div className="fc-heroi__dados">
-                  <div className="fc-heroi__nome"><Sprite nome="coracao" className="fc-sprite--coracao" /><strong>Você</strong>
+                  <div className="fc-heroi__nome"><Sprite nome="coracao" className="fc-sprite--coracao" /><strong title={ESTAGIOS[partida.estagio - 1].nome}>Você</strong>
+                    <em className={`fc-estagio fc-estagio--${partida.estagio}`} title={`Estágio ${partida.estagio}: ${ESTAGIOS[partida.estagio - 1].nome}`}>{['I', 'II', 'III', 'IV', 'V', 'VI'][partida.estagio - 1]}</em>
                     <span className="fc-bolsa fc-bolsa--celular" aria-label={`${partida.ouro} moedas`}><Sprite nome="moeda" className="fc-sprite--icone" /><b>{partida.ouro}</b></span>
 
                     <span className={`fc-combo${partida.sequencia >= COMBO_MINIMO ? ' fc-combo--ativo' : ''}`} aria-label={`Sequência de ${partida.sequencia} acertos`}>
@@ -1067,13 +1083,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
         )}
 
         <canvas ref={canvasPalco} className="fc-palco-efeitos" aria-hidden="true" />
-        <div className="fc-flutuantes" aria-hidden="true">
-          {flutuantes.map((f) => (
-            <span key={f.id} className={'fc-flutua' + (f.grande ? ' fc-flutua--grande' : '')} style={{ left: f.x, top: f.y, color: f.tom }}>
-              {f.texto}{f.rotulo && <small>{f.rotulo}</small>}
-            </span>
-          ))}
-        </div>
+        <div className="fc-flutuantes" aria-hidden="true" ref={refFlutuantes} />
         {lamina > 0 && <div className="fc-lamina" key={'l-' + lamina} aria-hidden="true"><i /></div>}
         <div className="fc-borda-vermelha" key={'v-' + vermelho} data-ativo={vermelho > 0 ? 1 : 0} aria-hidden="true" />
         {transicao && <div className="fc-transicao" aria-hidden="true" />}
