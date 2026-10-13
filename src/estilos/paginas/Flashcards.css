@@ -374,6 +374,8 @@
   background: linear-gradient(#fbf2da, #e8d3a6); box-shadow: inset 0 0 0 1.5px rgba(60, 35, 15, .4); font: 700 clamp(16px, .45vw + 12px, 19px)/1.22 var(--fc-texto); overflow-wrap: break-word; hyphens: auto; }
 .fc-alternativa > i { position: absolute; left: -9px; top: -10px; width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; font: 800 14px var(--fc-ui); font-style: normal; color: #fff; text-shadow: 0 1px 0 #000;
   background: radial-gradient(circle at 35% 30%, #a8d4ff, #3a7fd0 60%, #163a6a); box-shadow: 0 0 0 2px #120a04, 0 0 0 4px #c9a14a; }
+.fc-alternativa--longa > span { font-size: clamp(14px, .3vw + 10.5px, 15.5px); line-height: 1.18; padding-inline: 8px; }
+.fc-alternativa--muito-longa > span { font-size: clamp(12.5px, .25vw + 9.5px, 14px); line-height: 1.14; padding: 10px 7px 6px; }
 .fc-slot-mao--sel .fc-alternativa { box-shadow: 0 0 0 2px #120a04, 0 0 0 5px #8ff0b0, 0 0 34px rgba(127, 240, 160, .75), 0 20px 30px rgba(0, 0, 0, .6); }
 .fc-slot-mao--sel .fc-alternativa::after { content: ""; position: absolute; inset: 0; border-radius: 14px; pointer-events: none; background: linear-gradient(115deg, transparent 35%, rgba(255, 255, 255, .55) 50%, transparent 65%) no-repeat; background-size: 250% 100%; animation: fc-folha 1.8s ease-in-out infinite; }
 .fc-alternativa--jogada { transform: translateY(-34px) scale(1.04); filter: brightness(1.15); }
@@ -493,21 +495,47 @@
 .fc-ampliada__dica { font: 500 12px var(--fc-ui); color: var(--fc-nevoa); text-align: center; }
 @media (pointer: coarse) { .fc-ampliada__dica { display: none; } }
 
-/* Recompensas: três cartas distintas */
-.fc-recompensas { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
-.fc-recompensa { position: relative; display: grid; justify-items: center; align-content: start; gap: 9px; padding: 18px 14px 16px; border-radius: 18px; text-align: center; border: 0; cursor: pointer;
-  background: radial-gradient(ellipse at 50% 0%, color-mix(in srgb, var(--cor) 42%, transparent), transparent 70%), linear-gradient(#2e1f36, #140c18);
-  box-shadow: 0 0 0 2px #120a04, 0 0 0 4px color-mix(in srgb, var(--cor) 70%, #6b4a1c), 0 0 26px color-mix(in srgb, var(--cor) 40%, transparent), 0 12px 24px rgba(0, 0, 0, .5);
-  animation: fc-recompensa .5s cubic-bezier(.2, .9, .3, 1.25) both; animation-delay: calc(var(--i) * 90ms); transition: transform var(--fc-rapido); }
-@keyframes fc-recompensa { from { transform: translateY(30px) rotateY(80deg); opacity: 0; } }
-.fc-recompensa:hover, .fc-recompensa:focus-visible { transform: translateY(-6px) scale(1.03); }
-.fc-recompensa--reliquia { background: radial-gradient(ellipse at 50% 0%, color-mix(in srgb, var(--cor) 36%, transparent), transparent 70%), linear-gradient(#1c2a2e, #0c1518); }
-.fc-recompensa__tipo { font: 800 12px var(--fc-ui); letter-spacing: .14em; text-transform: uppercase; color: var(--cor); }
-.fc-recompensa__icone { width: 70px; height: 70px; display: grid; place-items: center; border-radius: 50%; background: radial-gradient(circle, color-mix(in srgb, var(--cor) 30%, #1a1020), #0e0810); box-shadow: 0 0 0 2px #120a04, 0 0 0 4px var(--fc-ouro); }
-.fc-modal .fc-recompensa__icone .fc-sprite { width: 42px; height: 42px; }
-.fc-recompensa strong { font: 900 18px/1.15 var(--fc-titulo); color: #fff3d6; }
-.fc-recompensa__texto { font: 400 16px/1.4 var(--fc-texto); color: #e9dcc0; }
-.fc-recompensa__aviso { font: 700 12.5px var(--fc-ui); color: #ffcf9a; }
+/* Recompensas: palco escuro, uma luz no centro e três cartas de tesouro */
+.fc-veu--recompensa { background: radial-gradient(ellipse at 50% 46%, rgba(40, 26, 12, .82), rgba(4, 2, 4, .94) 70%) !important; }
+.fc-tesouro { position: relative; width: min(980px, 100%); display: grid; justify-items: center; gap: 18px; padding: 8px 4px; }
+.fc-tesouro__luz { position: absolute; left: 50%; top: 44%; width: min(900px, 120%); aspect-ratio: 1.6; transform: translate(-50%, -50%); pointer-events: none; z-index: -1;
+  background: radial-gradient(ellipse, rgba(255, 210, 120, .32), rgba(255, 170, 60, .1) 40%, transparent 68%); animation: fc-aura 3.4s ease-in-out infinite; }
+.fc-tesouro__cabeca { text-align: center; }
+.fc-tesouro__cabeca h2 { margin: 0; font: 900 clamp(24px, 2.6vw, 36px)/1.1 var(--fc-titulo); letter-spacing: .08em; color: #ffe7a0; text-shadow: 0 2px 0 #000, 0 0 26px rgba(255, 190, 80, .55); }
+.fc-tesouro__cabeca h2::before, .fc-tesouro__cabeca h2::after { content: "✦"; margin: 0 .5em; font-size: .6em; vertical-align: middle; color: var(--fc-ouro); }
+.fc-tesouro__cabeca p { margin: 6px 0 0; font: 500 15.5px var(--fc-ui); color: #e9dcc0; }
+.fc-tesouro__cabeca b { color: #fff3d6; }
+.fc-recompensas { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(12px, 2vw, 22px); width: 100%; perspective: 1400px; }
+.fc-recompensa { --borda: #a0703a; position: relative; display: grid; justify-items: center; align-content: start; gap: 9px; min-height: 340px; padding: 26px 16px 18px; border-radius: 20px; text-align: center; border: 0; cursor: pointer; color: #fff3d6;
+  background: radial-gradient(ellipse at 50% 18%, color-mix(in srgb, var(--cor) 40%, transparent), transparent 62%), linear-gradient(#2a1d24, #120b10);
+  box-shadow: 0 0 0 2px #120a04, 0 0 0 5px var(--borda), 0 0 0 6px #120a04, 0 0 30px color-mix(in srgb, var(--cor) 35%, transparent), 0 18px 34px rgba(0, 0, 0, .6);
+  animation: fc-recompensa .55s cubic-bezier(.2, .9, .3, 1.2) both; animation-delay: calc(var(--i) * 110ms); transition: transform .25s cubic-bezier(.2, .8, .3, 1.3), box-shadow .25s, opacity .3s, filter .3s; }
+.fc-recompensa--incomum { --borda: #8fb8e8; }
+.fc-recompensa--rara { --borda: #f2c45a; background: radial-gradient(ellipse at 50% 18%, color-mix(in srgb, var(--cor) 55%, transparent), transparent 62%), linear-gradient(#352414, #160c06); }
+.fc-recompensa--rara::after { content: ""; position: absolute; inset: 0; border-radius: 20px; pointer-events: none; mix-blend-mode: overlay;
+  background: linear-gradient(115deg, transparent 38%, rgba(255, 255, 255, .7) 50%, transparent 62%) no-repeat; background-size: 260% 100%; animation: fc-folha 3.2s ease-in-out infinite; }
+.fc-recompensa--evento { background: radial-gradient(ellipse at 50% 18%, color-mix(in srgb, var(--cor) 42%, transparent), transparent 62%), linear-gradient(#2e1c10, #120a06); }
+@keyframes fc-recompensa { from { transform: translateY(40px) rotateY(70deg); opacity: 0; } }
+.fc-recompensa:not(:disabled):hover, .fc-recompensa:focus-visible { transform: translateY(-10px) scale(1.035); box-shadow: 0 0 0 2px #120a04, 0 0 0 5px var(--borda), 0 0 0 6px #120a04, 0 0 46px color-mix(in srgb, var(--cor) 60%, transparent), 0 24px 40px rgba(0, 0, 0, .65); }
+.fc-recompensa__fita { position: absolute; top: -12px; padding: 4px 14px; border-radius: 999px; font: 800 11.5px var(--fc-ui); letter-spacing: .12em; text-transform: uppercase; color: #1b130b; background: linear-gradient(#fff3c8, var(--borda)); box-shadow: 0 0 0 2px #120a04, 0 4px 10px rgba(0, 0, 0, .5); white-space: nowrap; }
+.fc-recompensa__pedestal { position: relative; width: 110px; height: 110px; display: grid; place-items: center; margin: 6px 0 4px; }
+.fc-recompensa__pedestal::before { content: ""; position: absolute; inset: -10px; border-radius: 50%; background: radial-gradient(closest-side, color-mix(in srgb, var(--cor) 60%, transparent), transparent); filter: blur(4px); animation: fc-aura 2.4s ease-in-out infinite; }
+.fc-recompensa__icone { position: relative; width: 92px; height: 92px; display: grid; place-items: center; border-radius: 50%; background: radial-gradient(circle at 40% 32%, color-mix(in srgb, var(--cor) 42%, #2a1a26), #0e0810 72%); box-shadow: 0 0 0 3px #120a04, 0 0 0 5px var(--borda), inset 0 6px 14px rgba(0, 0, 0, .55); }
+.fc-modal .fc-recompensa__icone .fc-sprite { width: 64px; height: 64px; filter: drop-shadow(0 3px 0 rgba(0, 0, 0, .5)); }
+.fc-recompensa strong { font: 900 19px/1.15 var(--fc-titulo); letter-spacing: .03em; }
+.fc-recompensa__texto { font: 500 16px/1.42 var(--fc-texto); color: #f0e2c4; }
+.fc-recompensa__detalhe { margin-top: auto; font: 600 12.5px/1.4 var(--fc-ui); color: #c8b898; }
+.fc-recompensa__aviso { font: 700 12.5px var(--fc-ui); color: #9fe8a0; }
+.fc-recompensa__aviso--troca { color: #ffcf9a; }
+.fc-recompensa__tecla { position: absolute; right: 10px; bottom: 8px; width: 22px; height: 22px; display: grid; place-items: center; border-radius: 6px; font: 800 12px var(--fc-ui); color: #c8b898; box-shadow: inset 0 0 0 1px rgba(233, 185, 85, .4); }
+@media (pointer: coarse) { .fc-recompensa__tecla { display: none; } }
+/* escolha: a carta avança num feixe de luz, as outras recuam */
+.fc-recompensa--escolhida { transform: translateY(-16px) scale(1.08) !important; z-index: 2; box-shadow: 0 0 0 2px #120a04, 0 0 0 5px #fff1b0, 0 0 0 6px #120a04, 0 0 80px color-mix(in srgb, var(--cor) 80%, #fff), 0 0 140px rgba(255, 220, 140, .5) !important; }
+.fc-recompensa--escolhida::before { content: ""; position: absolute; left: 50%; bottom: 40%; width: 60%; height: 300%; transform: translateX(-50%); pointer-events: none; z-index: -1;
+  background: linear-gradient(to top, color-mix(in srgb, var(--cor) 60%, #fff), transparent); filter: blur(10px); opacity: .7; animation: fc-feixe .7s ease-out both; }
+@keyframes fc-feixe { from { opacity: 0; transform: translateX(-50%) scaleY(.2); transform-origin: bottom; } }
+.fc-recompensa--recua { transform: translateY(14px) scale(.92) !important; opacity: .35; filter: saturate(.4) brightness(.6); }
+.fc-tesouro__sair { margin-top: 2px; }
 .fc-numeros { display: grid; grid-template-columns: repeat(auto-fit, minmax(118px, 1fr)); gap: 8px; margin: 0; }
 .fc-numeros div { padding: 12px; border-radius: 12px; background: rgba(0, 0, 0, .35); box-shadow: inset 0 0 0 1px rgba(233, 185, 85, .35); text-align: center; }
 .fc-numeros dt { font: 800 12px var(--fc-ui); letter-spacing: .1em; text-transform: uppercase; color: var(--fc-nevoa); }
@@ -643,6 +671,8 @@
   .fc-slot-mao, .fc-slot-mao--sel, .fc-mao--respondida .fc-slot-mao { margin: 0; transform: none !important; }
   .fc-alternativa { width: 100%; height: auto; min-height: 60px; padding: 4px; border-radius: 12px; }
   .fc-alternativa > span { padding: 9px 10px 9px 38px; text-align: left; justify-items: start; font-size: 16px; line-height: 1.22; }
+  .fc-alternativa--longa > span { font-size: 14.5px; line-height: 1.18; padding: 7px 8px 7px 36px; }
+  .fc-alternativa--muito-longa > span { font-size: 13px; line-height: 1.15; padding: 6px 7px 6px 35px; }
   .fc-alternativa > i { left: 7px; top: 50%; transform: translateY(-50%); width: 24px; height: 24px; font-size: 12px; box-shadow: 0 0 0 1.5px #120a04, 0 0 0 3px #c9a14a; }
   .fc-slot-mao--sel .fc-alternativa { transform: translateY(-3px); }
   .fc-alternativa--jogada { transform: translateY(-4px) scale(1.02); }
@@ -650,16 +680,22 @@
   .fc-janela { padding: 18px 14px; gap: 10px; border-radius: 16px; }
   .fc-janela h2 { font-size: 22px; }
   .fc-janela__sub { font-size: 15px; }
-  .fc-recompensa { gap: 4px; padding: 10px 12px; }
+  .fc-recompensa { gap: 4px; padding: 16px 12px 10px; min-height: 0; }
   .fc-lista-derrota li { padding: 8px 10px; gap: 8px; }
   .fc-lista-derrota li > span { font-size: 15px; }
   .fc-lista-derrota .fc-botao-pequeno { min-height: 34px; padding: 5px 9px; font-size: 12.5px !important; white-space: nowrap; flex: none; }
   .fc-janela__botoes { justify-content: stretch; }
   .fc-janela__botoes .fc-botao { flex: 1 1 auto; }
-  .fc-recompensa { grid-template-columns: auto 1fr; justify-items: start; text-align: left; align-items: center; column-gap: 12px; padding: 12px; }
-  .fc-recompensa__icone { grid-row: span 3; width: 56px; height: 56px; }
-  .fc-recompensa__tipo { grid-column: 2; }
-  .fc-modal .fc-recompensa__icone .fc-sprite { width: 32px; height: 32px; }
+  .fc-recompensa { grid-template-columns: auto 1fr; justify-items: start; text-align: left; align-items: center; column-gap: 12px; padding: 18px 12px 10px; }
+  .fc-recompensa__pedestal { grid-row: span 4; width: 64px; height: 64px; margin: 0; }
+  .fc-recompensa__icone { width: 58px; height: 58px; }
+  .fc-recompensa__fita { left: 12px; font-size: 10.5px; }
+  .fc-modal .fc-recompensa__icone .fc-sprite { width: 40px; height: 40px; }
+  .fc-recompensa strong { font-size: 17px; }
+  .fc-recompensa__texto { font-size: 14.5px; }
+  .fc-recompensa__detalhe { font-size: 11.5px; margin-top: 0; }
+  .fc-tesouro { gap: 12px; }
+  .fc-tesouro__cabeca p { font-size: 13.5px; }
   .fc-flutua { font-size: 30px; }
   .fc-flutua--grande { font-size: 44px; }
   .fc-estudo { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr) auto; padding: 4px 10px 10px; gap: 8px; }

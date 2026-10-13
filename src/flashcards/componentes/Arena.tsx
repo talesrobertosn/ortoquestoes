@@ -792,7 +792,7 @@ function ArenaJogo() {
                     <div key={partida.rodada + '-' + pos} className={`fc-slot-mao${selecionada === pos ? ' fc-slot-mao--sel' : ''}`} style={{ ['--i' as string]: pos, ['--n' as string]: ordem.length }}>
                       <button
                         type="button"
-                        className={`fc-alternativa${eliminada ? ' fc-alternativa--eliminada' : ''}${eliminando === pos ? ' fc-alternativa--queimando' : ''}${estado ? ' fc-alternativa--' + estado : ''}`}
+                        className={`fc-alternativa${carta.opcoes[opcao].length > 56 ? ' fc-alternativa--muito-longa' : carta.opcoes[opcao].length > 34 ? ' fc-alternativa--longa' : ''}${eliminada ? ' fc-alternativa--eliminada' : ''}${eliminando === pos ? ' fc-alternativa--queimando' : ''}${estado ? ' fc-alternativa--' + estado : ''}`}
                         disabled={partida.fase !== 'pergunta' || eliminada || !!apresentacao}
                         onClick={() => escolherAlternativa(pos, false)}
                         onPointerEnter={() => { if (partida.fase === 'pergunta' && !eliminada && faixaTela !== 'celular') tocar('hover') }}
@@ -857,7 +857,7 @@ function ArenaJogo() {
           </div>
         )}
 
-        {mostrarRecompensas && modo === 'batalha' && <Recompensas partida={partida} aoEscolher={escolherRecompensa} aoEncerrar={encerrar} />}
+        {mostrarRecompensas && modo === 'batalha' && <Recompensas partida={partida} aoEscolher={escolherRecompensa} aoEncerrar={encerrar} rapido={reduzido || ajustes.velocidade === 'rapida'} />}
         {mostrarFim && modo === 'batalha' && <Fim partida={partida} aoNova={novaPartida} aoRevisar={revisarNoEstudo} aoSair={fechar} />}
 
         {ampliada && <Visualizador src={ampliada.src} legenda={ampliada.legenda} aoFechar={() => definirAmpliada(null)} />}
@@ -904,33 +904,55 @@ function ArenaJogo() {
   )
 }
 
-function Recompensas({ partida, aoEscolher, aoEncerrar }: { partida: Partida; aoEscolher: (r: Recompensa) => void; aoEncerrar: () => void }) {
+function Recompensas({ partida, aoEscolher, aoEncerrar, rapido }: { partida: Partida; aoEscolher: (r: Recompensa) => void; aoEncerrar: () => void; rapido: boolean }) {
   const chefe = !!inimigoDoAndar(partida.andar, partida.sementeBase).inimigo.chefe
   const proximo = inimigoDoAndar(partida.andar + 1, partida.sementeBase)
   const cheios = partida.encaixes.length >= ENCAIXES
+  const [escolhida, definirEscolhida] = useState<Recompensa | null>(null)
+  const escolher = useCallback((r: Recompensa) => {
+    if (escolhida) return
+    definirEscolhida(r)
+    tocar(RECOMPENSAS[r].raridade === 'rara' ? 'lendario' : 'recompensa')
+    window.setTimeout(() => aoEscolher(r), rapido ? 260 : 720)
+  }, [escolhida, aoEscolher, rapido])
+  useEffect(() => {
+    const aoTeclar = (e: KeyboardEvent) => { const k = Number(e.key); if (k >= 1 && k <= partida.recompensas.length) escolher(partida.recompensas[k - 1]) }
+    window.addEventListener('keydown', aoTeclar)
+    return () => window.removeEventListener('keydown', aoTeclar)
+  }, [escolher, partida.recompensas])
+  const nomeRaridade = { comum: 'Comum', incomum: 'Incomum', rara: 'Rara' } as const
+  const nomeTipo = { poder: 'Poder', reliquia: 'Relíquia', evento: 'Evento' } as const
   return (
-    <div className="fc-veu fc-veu--recompensa" role="dialog" aria-modal="true" aria-labelledby="fc-rec-titulo">
-      <div className={`fc-janela fc-janela--larga${chefe ? ' fc-janela--chefe' : ''}`}>
-        <h2 id="fc-rec-titulo">{chefe ? 'Tesouro do chefe' : 'Escolha um poder'}</h2>
-        <p className="fc-janela__sub">Próximo: andar {partida.andar + 1}, {proximo.inimigo.nome}{proximo.ciclo ? ` (ciclo ${proximo.ciclo + 1}, mais forte)` : ''}.</p>
+    <div className={`fc-veu fc-veu--recompensa${escolhida ? ' fc-veu--escolheu' : ''}`} role="dialog" aria-modal="true" aria-labelledby="fc-rec-titulo">
+      <div className="fc-tesouro">
+        <span className="fc-tesouro__luz" aria-hidden="true" />
+        <header className="fc-tesouro__cabeca">
+          <h2 id="fc-rec-titulo">{chefe ? 'Tesouro do chefe' : 'Escolha sua recompensa'}</h2>
+          <p>Próximo: <b>andar {partida.andar + 1}</b>, {proximo.inimigo.nome}{proximo.inimigo.nivel === 'elite' ? ' (elite)' : proximo.inimigo.chefe ? ' (chefe)' : ''}{proximo.ciclo ? ` · ato ${proximo.ciclo + 1}` : ''}</p>
+        </header>
         <div className="fc-recompensas">
           {partida.recompensas.map((r, i) => {
             const d = RECOMPENSAS[r]
-            const repetido = ehPoder(r) && partida.encaixes.some((e) => e.tipo === r)
-            const substitui = ehPoder(r) && !repetido && cheios ? RECOMPENSAS[partida.encaixes[0].tipo].nome : null
+            const enc = ehPoder(r) ? partida.encaixes.find((e) => e.tipo === r) : undefined
+            const copias = d.tipo === 'reliquia' ? partida.reliquias.filter((x) => x === r).length : enc?.carga ?? 0
+            const substitui = ehPoder(r) && !enc && cheios ? RECOMPENSAS[partida.encaixes[0].tipo].nome : null
+            const estado = escolhida === r ? ' fc-recompensa--escolhida' : escolhida ? ' fc-recompensa--recua' : ''
             return (
-              <button key={r} type="button" className={`fc-recompensa fc-recompensa--${d.tipo}`} style={{ ['--cor' as string]: d.cor, ['--i' as string]: i }} onClick={() => aoEscolher(r)} onPointerEnter={() => tocar('hover')} autoFocus={i === 0}>
-                <span className="fc-recompensa__tipo">{d.tipo === 'reliquia' ? 'Relíquia' : d.tipo === 'evento' ? 'Evento' : 'Poder'}{d.raridade !== 'comum' ? ` · ${d.raridade}` : ''}</span>
-                <span className="fc-recompensa__icone"><Sprite nome={d.icone} /></span>
+              <button key={r} type="button" className={`fc-recompensa fc-recompensa--${d.tipo} fc-recompensa--${d.raridade}${estado}`} style={{ ['--cor' as string]: d.cor, ['--i' as string]: i }}
+                onClick={() => escolher(r)} onPointerEnter={() => { if (!escolhida) tocar('hover') }} autoFocus={i === 0} disabled={!!escolhida && escolhida !== r}>
+                <span className="fc-recompensa__fita">{nomeTipo[d.tipo]} · {nomeRaridade[d.raridade]}</span>
+                <span className="fc-recompensa__pedestal"><span className="fc-recompensa__icone"><Sprite nome={d.icone} /></span></span>
                 <strong>{d.nome}</strong>
                 <span className="fc-recompensa__texto">{d.texto}</span>
-                {substitui && <small className="fc-recompensa__aviso">Encaixes cheios: substitui {substitui}</small>}
-                {repetido && <small className="fc-recompensa__aviso">Soma ao que você já tem</small>}
+                <small className="fc-recompensa__detalhe">{d.detalhe}</small>
+                {copias > 0 && <small className="fc-recompensa__aviso">Você já tem {d.tipo === 'reliquia' ? `${copias} cópia${copias > 1 ? 's' : ''}` : `${copias} carga${copias > 1 ? 's' : ''}`}</small>}
+                {substitui && <small className="fc-recompensa__aviso fc-recompensa__aviso--troca">Encaixes cheios: substitui {substitui}</small>}
+                <span className="fc-recompensa__tecla" aria-hidden="true">{i + 1}</span>
               </button>
             )
           })}
         </div>
-        {chefe && <button type="button" className="fc-botao fc-botao--secundario" onClick={aoEncerrar}>Encerrar com a vitória</button>}
+        {chefe && !escolhida && <button type="button" className="fc-botao fc-botao--secundario fc-tesouro__sair" onClick={aoEncerrar}>Encerrar com a vitória</button>}
       </div>
     </div>
   )
