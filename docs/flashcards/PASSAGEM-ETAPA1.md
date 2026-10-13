@@ -23,3 +23,49 @@ Pedido: "DIREÇÃO CRIATIVA E REFORMULAÇÃO ARTÍSTICA — CRIPTA DO RESIDENTE"
 4. Partículas: vaga-lumes, folhas caindo, borboletas (`criarAmbiente`).
 5. Corrigir o layout do celular deitado; interface mais leve.
 6. Capturas antes/depois (`.base-tmp.mjs golem:1:3`), testes, PR, relatório.
+
+## Pedidos novos do Tales (13/10/2026, antes da troca de conta)
+- **Botões das alternativas (1, 2, 3, 4) lá embaixo:** estão crus e feios. Redesenhar com
+  acabamento de RPG (placa ou carta com material, número em medalhão bonito, estados normal,
+  hover, selecionado, certo, errado e eliminado), sem perder a legibilidade do texto médico.
+  Arquivos: `src/flashcards/componentes/Arena.tsx` (classe `fc-alternativa`) e
+  `src/estilos/paginas/Flashcards.css`.
+- **Tudo vale também para o modo Estudo** (um dos principais), não só para a Batalha:
+  cenário, botões, cartas, painéis e alternativas. O modo Estudo fica em
+  `src/flashcards/componentes/Estudo.tsx` (aba "Estudo" do `#/flashcards`).
+
+## Contexto completo do pedido (resumo do brief "Direção criativa")
+- Meta: RPG de fantasia em pixel art premium, original (referências de qualidade: Octopath II,
+  Stardew Valley, Hades, Legends of Runeterra, Hearthstone, Slay the Spire, Monster Train),
+  sem copiar nada.
+- Etapas:
+  1. cenário de referência;
+  2. herói com progressão corporal real em 6 estágios (aprendiz até lenda adulta);
+  3. chefes, começando pelo Dragão de Ossos;
+  4. interface mais leve (hierarquia: pergunta, alternativas, personagens, estado);
+  5. demais cenários;
+  6. gameplay e NPCs (sinergias, ferreiro, curandeiro, baú, sala secreta, eventos);
+  7. música e polimento;
+  8. bestiário (qualidade antes de quantidade).
+- Cada etapa termina com um relatório:
+  - antes e depois na mesma resolução;
+  - o que foi redesenhado de verdade e o que só foi ajustado;
+  - o que ainda está fraco;
+  - testes e desempenho.
+- **Restrições:**
+  - Publicar só na rota escondida `#/flashcards`.
+  - Não ativar banner, menu, ranking público, divulgação nem página de vendas.
+  - Não mudar assinaturas ou limites.
+  - Não alterar questões, gabaritos, comentários nem dados de usuários.
+  - Preservar as feature flags e o progresso salvo.
+  - Trabalhar em branch e PR.
+  - Rodar `npm test`, `npx tsc --noEmit`, `npm run build` e o Playwright (desktop, celular em
+    pé e celular deitado).
+- **Fluxo:**
+  - Branch `claude/sharp-goodall-pl7kp7`, base `claude/pdfs-questoes-tp64dr`.
+  - Merge na base publica no GitHub Pages; isso já está autorizado para a rota escondida.
+- **Ferramentas de captura** (criar de novo se não existirem; ficavam fora do git):
+  - servidor: `VITE_SUPABASE_URL=sem npx vite --port 5199`;
+  - gancho `window.__torneio.ir(andar, semente)` para ir a um andar com semente fixa;
+  - `window.__torneio.cena(nome)` para trocar o cenário.
+- Histórico anterior: `docs/flashcards/AUDITORIA-ARTE.md` e `docs/flashcards/ARTE.md`.
