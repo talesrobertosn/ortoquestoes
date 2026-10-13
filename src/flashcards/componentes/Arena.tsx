@@ -592,6 +592,7 @@ export function Arena() {
                 </div>
                 <BarraVida atual={mostrado.vidaInimigo} maximo={partida.inimigo.vidaMax} tipo={inimigo.chefe ? 'chefe' : 'inimigo'} rotulo={`Vida de ${inimigo.nome}`} />
                 <div className="fc-placa__info">
+                  <span className="fc-info fc-info--andar">Andar {partida.andar} · {partida.pontos} pts</span>
                   {partida.inimigo.furia ? <span className="fc-info fc-info--furia">Fúria · dano ×1,5</span> : <span className="fc-info" title="Rodadas até a Fúria">Fúria em {rodadasFuria}</span>}
                   {atributos.armadura > 0 && <span className="fc-info fc-info--armadura">Armadura {atributos.armadura}</span>}
                   {inimigo.porErroSeguido > 0 && <span className="fc-info">{inimigo.chefe ? 'Pressão' : 'Veneno'} +{inimigo.porErroSeguido} por erro seguido</span>}

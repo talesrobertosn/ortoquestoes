@@ -9,6 +9,7 @@ Leia este arquivo e depois os outros desta pasta, nesta ordem:
 4. [ARQUITETURA.md](ARQUITETURA.md): dados, comandos da fábrica, filas de revisão, limite diário e telas.
 5. [ROTEIRO.md](ROTEIRO.md): as etapas, com caixas de seleção. Atualize-as ao terminar cada passo.
 6. [REFERENCIAS.md](REFERENCIAS.md): os jogos de cartas que o Tales mandou como inspiração e o que adotamos de cada um.
+7. [ARTE.md](ARTE.md): a direção de arte HD-2D (pixel art nativa + diorama), o que mudou e quais assets são provisórios.
 
 ## Em uma frase
 
@@ -76,6 +77,10 @@ Uma aba **Flashcards** dentro de **Treinar**, com o **modo Estudo** (calmo: vira
     2. Ligar o limite diário no servidor e a sincronização.
     3. A fábrica de flashcards, para trocar o baralho de demonstração pelo acervo.
     4. Mais monstros por área.
+- **13/10/2026 (redesenho HD-2D, PR em revisão, fora da produção):**
+  - o Tales pediu arte no estilo HD-2D (Octopath Traveler II), modal premium, som sempre ligado e celular sem tamanhos aberrantes;
+  - feita a fatia vertical (Batalha no Campo + Estudo na Biblioteca); detalhes e lista de assets provisórios em [ARTE.md](ARTE.md);
+  - **Para continuar:** o Tales revisa os prints e o PR; depois, polir Serpente, Guardião, Masmorra e Salão. Só publicar com a aprovação dele.
 - **Próximo passo (antigo):** etapa 1 do [ROTEIRO.md](ROTEIRO.md). O Tales avalia o protótipo e escolhe os ajustes de visual; depois vem a fábrica (`scripts/flashcards/`), com uma amostra de cerca de 30 flashcards para aprovação.
 
 ## Regras que valem para todo o projeto

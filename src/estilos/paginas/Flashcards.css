@@ -104,7 +104,7 @@
 }
 .fc-abas { display: flex; gap: 4px; padding: 4px; border-radius: 14px; background: rgba(6, 4, 8, .7); box-shadow: inset 0 0 0 1.5px var(--fc-painel-borda), 0 4px 12px rgba(0, 0, 0, .4); }
 .fc-abas button { display: inline-flex; align-items: center; gap: 8px; border: 0; background: none; min-height: 42px; padding: 8px 18px; border-radius: 10px;
-  font: 700 16px var(--fc-titulo) !important; letter-spacing: .05em; color: var(--fc-nevoa) !important; transition: background var(--fc-rapido), color var(--fc-rapido); }
+  font: 700 16px var(--fc-titulo) !important; letter-spacing: .05em; color: #e9dcc0 !important; text-shadow: 0 1px 0 #000; transition: background var(--fc-rapido), color var(--fc-rapido); }
 .fc-abas button:hover { color: #fff3d6 !important; background: rgba(233, 185, 85, .1); }
 .fc-abas button[aria-selected="true"] { background: linear-gradient(#f6d684, #c18c2e); color: #2a1606 !important; box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .25), inset 0 1px 0 rgba(255, 255, 255, .5), 0 0 16px rgba(255, 200, 90, .45); }
 .fc-modal .fc-abas .fc-sprite--icone { width: 18px; height: 18px; }
@@ -304,7 +304,7 @@
 /* ============================================================ Jogador */
 .fc-jogador { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: end; gap: clamp(10px, 1.6vw, 22px); padding-top: 4px; }
 .fc-heroi { display: flex; align-items: flex-end; gap: 12px; min-width: 0; }
-.fc-heroi__dados { display: grid; gap: 7px; width: clamp(210px, 18vw, 280px); padding: 10px 12px; margin-bottom: 6px; border-radius: 14px;
+.fc-heroi__dados { display: grid; gap: 7px; width: clamp(214px, 18vw, 280px); padding: 10px 12px; margin-bottom: 6px; border-radius: 14px;
   background: linear-gradient(rgba(14, 18, 30, .86), rgba(14, 18, 30, .72)); box-shadow: inset 0 0 0 1.5px rgba(140, 180, 240, .35), 0 10px 22px rgba(0, 0, 0, .45); backdrop-filter: blur(3px); }
 .fc-heroi__nome { display: flex; align-items: center; gap: 8px; font: 800 16px var(--fc-titulo); color: #fff3d6; letter-spacing: .04em; }
 .fc-modal .fc-sprite--coracao { width: 20px; height: 18px; flex: none; }
@@ -330,16 +330,16 @@
 .fc-modal .fc-reliquia .fc-sprite--icone { width: 18px; height: 18px; transform: rotate(-45deg); }
 
 /* ---------- Mão (alternativas) ---------- */
-.fc-mao { position: relative; display: flex; justify-content: center; align-items: flex-end; padding: 22px 0 6px; min-height: 140px; }
-.fc-slot-mao { --meio: calc((var(--n) - 1) / 2); --d: calc(var(--i) - var(--meio)); margin-inline: -4px; z-index: calc(var(--i) + 1);
+.fc-mao { position: relative; display: flex; justify-content: center; align-items: flex-end; padding: 22px 22px 6px; min-height: 140px; }
+.fc-slot-mao { flex: 0 1 clamp(150px, 12.5vw, 205px); min-width: 0; --meio: calc((var(--n) - 1) / 2); --d: calc(var(--i) - var(--meio)); margin-inline: -4px; z-index: calc(var(--i) + 1);
   transform: rotate(calc(var(--d) * 4deg)) translateY(calc(var(--d) * var(--d) * 4px)); transform-origin: 50% 160%; transition: transform var(--fc-medio) cubic-bezier(.2, .8, .3, 1.2); }
 .fc-slot-mao--sel { z-index: 10; transform: rotate(0) translateY(-26px) scale(1.06); }
 @media (hover: hover) { .fc-slot-mao:not(.fc-slot-mao--sel):hover { transform: rotate(calc(var(--d) * 4deg)) translateY(-14px) scale(1.03); z-index: 9; } }
-.fc-alternativa { position: relative; display: flex; width: clamp(150px, 12.5vw, 205px); height: 112px; padding: 6px; border: 0; border-radius: 14px; text-align: center;
+.fc-alternativa { position: relative; display: flex; width: 100%; height: 112px; padding: 6px; border: 0; border-radius: 14px; text-align: center;
   background: linear-gradient(150deg, #fff 0%, #cfdcf2 12%, #3c5c96 50%, #a6bde4 76%, #24386a 100%);
   box-shadow: 0 0 0 2px #120a04, 0 3px 0 2px #1c2a48, 0 5px 0 2px #120a04, 0 14px 22px rgba(0, 0, 0, .55); transition: transform var(--fc-rapido), box-shadow var(--fc-rapido), filter .3s; }
 .fc-alternativa > span { flex: 1; display: grid; place-items: center; padding: 12px 10px 8px; border-radius: 9px; color: var(--fc-tinta);
-  background: linear-gradient(#fbf2da, #e8d3a6); box-shadow: inset 0 0 0 1.5px rgba(60, 35, 15, .4); font: 700 clamp(16px, .45vw + 12px, 19px)/1.22 var(--fc-texto); overflow-wrap: anywhere; hyphens: auto; }
+  background: linear-gradient(#fbf2da, #e8d3a6); box-shadow: inset 0 0 0 1.5px rgba(60, 35, 15, .4); font: 700 clamp(16px, .45vw + 12px, 19px)/1.22 var(--fc-texto); overflow-wrap: break-word; hyphens: auto; }
 .fc-alternativa > i { position: absolute; left: -9px; top: -10px; width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; font: 800 14px var(--fc-ui); font-style: normal; color: #fff; text-shadow: 0 1px 0 #000;
   background: radial-gradient(circle at 35% 30%, #a8d4ff, #3a7fd0 60%, #163a6a); box-shadow: 0 0 0 2px #120a04, 0 0 0 4px #c9a14a; }
 .fc-slot-mao--sel .fc-alternativa { box-shadow: 0 0 0 2px #120a04, 0 0 0 5px #8ff0b0, 0 0 34px rgba(127, 240, 160, .75), 0 20px 30px rgba(0, 0, 0, .6); }
@@ -371,7 +371,9 @@
 .fc-principal--largo { min-width: min(420px, 100%); }
 @keyframes fc-chamar { 50% { filter: brightness(1.12); } }
 @keyframes fc-pulsar { 50% { opacity: .55; } }
-.fc-dica { margin: 0; min-height: 18px; max-width: 220px; font: 600 13.5px/1.3 var(--fc-ui); color: #efe2c4; text-align: center; text-shadow: 0 1px 0 #000, 0 0 8px #000; }
+.fc-info--andar { display: none; }
+.fc-acao { min-width: 0; }
+.fc-dica { margin: 0; min-height: 18px; max-width: 200px; overflow-wrap: anywhere; font: 600 13.5px/1.3 var(--fc-ui); color: #efe2c4; text-align: center; text-shadow: 0 1px 0 #000, 0 0 8px #000; }
 
 /* ============================================================ Efeitos de tela */
 .fc-palco-efeitos { position: fixed !important; inset: 0; width: 100vw; height: 100vh; z-index: 60 !important; pointer-events: none; }
@@ -518,7 +520,10 @@
   .fc-topo { gap: 8px; padding: 8px 60px 6px 8px; min-height: 58px; }
   .fc-abas button { min-height: 40px; padding: 6px 10px; font-size: 14px !important; gap: 6px; }
   .fc-modal .fc-abas .fc-sprite--icone { display: none; }
-  .fc-topo__titulo { display: none; }
+  .fc-topo__titulo, .fc-topo__centro { display: none; }
+  .fc-topo { grid-template-columns: auto minmax(0, 1fr); }
+  .fc-topo__acoes { justify-self: end; }
+  .fc-info--andar { display: inline-flex; }
   .fc-topo__progresso { font-size: 13.5px; gap: 6px; flex-wrap: wrap; justify-content: center; }
   .fc-trilha { display: none; }
   .fc-topo-botao { padding: 8px; }
@@ -528,7 +533,7 @@
   .fc-ator--inimigo { margin-bottom: -10px; }
   .fc-placa { padding: 8px 10px; gap: 5px; margin-bottom: 4px; }
   .fc-placa__nome strong { font-size: 17px; }
-  .fc-placa__info .fc-info:not(.fc-info--furia):not(:first-child) { display: none; }
+  .fc-placa__info .fc-info:not(.fc-info--furia):not(.fc-info--andar):not(:nth-child(2)) { display: none; }
   .fc-info { font-size: 12.5px; padding: 2px 8px; }
   .fc-vida__trilho { height: 18px; }
   .fc-vida b { min-width: 56px; font-size: 15px; }
