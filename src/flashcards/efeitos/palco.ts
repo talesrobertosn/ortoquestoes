@@ -11,17 +11,20 @@ interface Particula {
   x: number; y: number; vx: number; vy: number
   vida: number; total: number
   tam: number; cor: string
-  forma: 'brilho' | 'faisca' | 'quadrado' | 'caco' | 'confete'
+  forma: 'brilho' | 'faisca' | 'quadrado' | 'caco' | 'confete' | 'lasca'
+  /** Partícula que é atraída para um ponto (carga de energia). */
+  alvo?: Ponto
   gravidade: number; atrito: number
   giro?: number; angulo?: number
 }
 
 interface Onda { x: number; y: number; raio: number; max: number; vida: number; total: number; cor: string; largura: number }
 interface Corte { x: number; y: number; raio: number; inicio: number; vida: number; total: number; cor: string; largura: number }
+interface Clarao { x: number; y: number; raio: number; vida: number; total: number; cor: string; forca: number }
 interface Projetil {
   de: Ponto; para: Ponto; controle: Ponto
   t: number; duracao: number; cor: string; nucleo: string; tam: number
-  aoChegar: () => void; rastro: number
+  aoChegar: () => void; rastro: number; luz: number
 }
 
 export interface Intensidade { fator: number }
@@ -33,6 +36,7 @@ export class Palco {
   private ondas: Onda[] = []
   private cortes: Corte[] = []
   private projeteis: Projetil[] = []
+  private claroes: Clarao[] = []
   private quadro = 0
   private anterior = 0
   private dpr = 1
@@ -52,7 +56,7 @@ export class Palco {
 
   /** Para tudo e limpa a tela (pular animação, sair da partida). */
   limpar() {
-    this.particulas = []; this.ondas = []; this.cortes = []
+    this.particulas = []; this.ondas = []; this.cortes = []; this.claroes = []
     const chegadas = this.projeteis.map((p) => p.aoChegar)
     this.projeteis = []
     chegadas.forEach((f) => f())
@@ -68,7 +72,7 @@ export class Palco {
       this.anterior = agora
       this.atualizar(dt)
       this.desenhar()
-      const vivos = this.particulas.length + this.ondas.length + this.cortes.length + this.projeteis.length
+      const vivos = this.particulas.length + this.ondas.length + this.cortes.length + this.projeteis.length + this.claroes.length
       this.quadro = vivos ? requestAnimationFrame(passo) : 0
       if (!vivos) this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height)
     }
@@ -78,6 +82,7 @@ export class Palco {
   private atualizar(dt: number) {
     for (const p of this.particulas) {
       p.vida -= dt
+      if (p.alvo) { p.vx += (p.alvo.x - p.x) * 30 * dt; p.vy += (p.alvo.y - p.y) * 30 * dt }
       p.vx *= Math.pow(p.atrito, dt * 60); p.vy *= Math.pow(p.atrito, dt * 60)
       p.vy += p.gravidade * dt
       p.x += p.vx * dt; p.y += p.vy * dt
@@ -87,6 +92,8 @@ export class Palco {
     for (const o of this.ondas) { o.vida -= dt; o.raio = o.max * (1 - Math.pow(o.vida / o.total, 2)) }
     this.ondas = this.ondas.filter((o) => o.vida > 0)
     for (const c of this.cortes) c.vida -= dt
+    for (const k of this.claroes) k.vida -= dt
+    this.claroes = this.claroes.filter((k) => k.vida > 0)
     this.cortes = this.cortes.filter((c) => c.vida > 0)
     const chegaram: Projetil[] = []
     for (const p of this.projeteis) {
@@ -111,6 +118,20 @@ export class Palco {
     c.setTransform(d, 0, 0, d, 0, 0)
     c.clearRect(0, 0, this.canvas.width, this.canvas.height)
     c.globalCompositeOperation = 'lighter'
+    // clarões e a luz dos projéteis iluminam a mesa em volta
+    for (const k of this.claroes) {
+      const a = Math.pow(k.vida / k.total, 1.6) * k.forca
+      const g = c.createRadialGradient(k.x, k.y, 0, k.x, k.y, k.raio)
+      g.addColorStop(0, k.cor + Math.round(a * 200).toString(16).padStart(2, '0')); g.addColorStop(0.35, k.cor + Math.round(a * 90).toString(16).padStart(2, '0')); g.addColorStop(1, k.cor + '00')
+      c.fillStyle = g; c.fillRect(k.x - k.raio, k.y - k.raio, k.raio * 2, k.raio * 2)
+    }
+    for (const p of this.projeteis) {
+      const pos = bezier(p.de, p.controle, p.para, p.t)
+      const r = p.luz
+      const g = c.createRadialGradient(pos.x, pos.y, 0, pos.x, pos.y, r)
+      g.addColorStop(0, p.cor + '55'); g.addColorStop(1, p.cor + '00')
+      c.fillStyle = g; c.fillRect(pos.x - r, pos.y - r, r * 2, r * 2)
+    }
     for (const o of this.ondas) {
       const a = o.vida / o.total
       c.strokeStyle = o.cor; c.globalAlpha = a; c.lineWidth = o.largura * a + 1
@@ -155,7 +176,8 @@ export class Palco {
         if (p.forma === 'confete') c.globalCompositeOperation = 'source-over'
         c.save(); c.translate(p.x, p.y); c.rotate(p.angulo ?? 0)
         c.fillStyle = p.cor
-        if (p.forma === 'caco') { c.beginPath(); c.moveTo(-p.tam, -p.tam * 0.4); c.lineTo(p.tam, -p.tam * 0.7); c.lineTo(p.tam * 0.2, p.tam); c.closePath(); c.fill() }
+        if (p.forma === 'lasca') { c.globalCompositeOperation = 'source-over'; c.beginPath(); c.moveTo(-p.tam, -p.tam * 0.5); c.lineTo(p.tam * 0.7, -p.tam * 0.8); c.lineTo(p.tam, p.tam * 0.4); c.lineTo(-p.tam * 0.3, p.tam); c.closePath(); c.fill(); c.fillStyle = 'rgba(0,0,0,.35)'; c.beginPath(); c.moveTo(p.tam * 0.7, -p.tam * 0.8); c.lineTo(p.tam, p.tam * 0.4); c.lineTo(-p.tam * 0.3, p.tam); c.closePath(); c.fill() }
+        else if (p.forma === 'caco') { c.beginPath(); c.moveTo(-p.tam, -p.tam * 0.4); c.lineTo(p.tam, -p.tam * 0.7); c.lineTo(p.tam * 0.2, p.tam); c.closePath(); c.fill() }
         else if (p.forma === 'confete') c.fillRect(-p.tam / 2, -p.tam * 0.8, p.tam, p.tam * 1.6)
         else c.fillRect(-p.tam / 2, -p.tam / 2, p.tam, p.tam)
         c.restore()
@@ -174,7 +196,7 @@ export class Palco {
       const meio = { x: (de.x + para.x) / 2, y: (de.y + para.y) / 2 }
       const dx = para.x - de.x, dy = para.y - de.y
       const controle = { x: meio.x - dy * curva, y: meio.y + dx * curva - Math.abs(dx) * 0.1 }
-      this.projeteis.push({ de, para, controle, t: 0, duracao: opcoes.duracao ?? 0.42, cor: opcoes.cor, nucleo: opcoes.nucleo ?? opcoes.cor, tam: opcoes.tam ?? 14, aoChegar: resolver, rastro: opcoes.rastro ?? 3 })
+      this.projeteis.push({ de, para, controle, t: 0, duracao: opcoes.duracao ?? 0.42, cor: opcoes.cor, nucleo: opcoes.nucleo ?? opcoes.cor, tam: opcoes.tam ?? 14, aoChegar: resolver, rastro: opcoes.rastro ?? 3, luz: (opcoes.tam ?? 14) * 9 })
       // brilho de saída
       this.explosao(de, { cor: opcoes.cor, n: 8, forca: 120, tam: 6 })
       this.animar()
@@ -207,6 +229,43 @@ export class Palco {
     if (this.reduzido) return
     this.cortes.push({ x: em.x, y: em.y, raio, inicio, vida: 0.38, total: 0.38, cor, largura: 9 })
     this.animar()
+  }
+
+  /** Clarão localizado que ilumina a mesa por um instante. */
+  clarao(em: Ponto, cor: string, raio = 260, forca = 1, duracao = 0.32) {
+    if (this.reduzido) return
+    this.claroes.push({ x: em.x, y: em.y, raio, vida: duracao, total: duracao, cor, forca })
+    this.animar()
+  }
+
+  /** Energia se concentrando num ponto antes do disparo. */
+  carga(em: Ponto, cor: string, n = 26, raio = 90) {
+    if (this.reduzido) return
+    for (let i = 0; i < n; i++) {
+      const a = Math.random() * Math.PI * 2, d = raio * (0.6 + Math.random() * 0.6)
+      this.particulas.push({ x: em.x + Math.cos(a) * d, y: em.y + Math.sin(a) * d, vx: -Math.sin(a) * 60, vy: Math.cos(a) * 60, vida: 0.3 + Math.random() * 0.12, total: 0.42,
+        tam: 4 + Math.random() * 5, cor, forma: 'brilho', gravidade: 0, atrito: 0.86, alvo: em })
+    }
+    this.clarao(em, cor, raio * 1.4, 0.6, 0.4)
+  }
+
+  /** Fragmentos de material (pedra, gesso, escama, metal) com peso e giro. */
+  fragmentos(em: Ponto, cores: string[], n = 18, forca = 320) {
+    if (this.reduzido) return
+    for (let i = 0; i < n; i++) {
+      const ang = -Math.PI / 2 + (Math.random() - 0.5) * 2.8
+      const v = forca * (0.4 + Math.random() * 0.8)
+      this.particulas.push({ x: em.x + (Math.random() - 0.5) * 30, y: em.y + (Math.random() - 0.5) * 30, vx: Math.cos(ang) * v, vy: Math.sin(ang) * v,
+        vida: 0.6 + Math.random() * 0.6, total: 1.2, tam: 3 + Math.random() * 6, cor: cores[i % cores.length], forma: 'lasca', gravidade: 900, atrito: 0.96,
+        giro: (Math.random() - 0.5) * 18, angulo: Math.random() * 6 })
+    }
+    this.animar()
+  }
+
+  /** Garras do adversário: três cortes paralelos sobre o alvo. */
+  garras(em: Ponto, cor = '#ff4a2a') {
+    if (this.reduzido) return
+    ;[-18, 0, 18].forEach((dx, k) => window.setTimeout(() => this.corte({ x: em.x + dx, y: em.y - 10 + k * 4 }, cor, 46, -0.6), k * 50))
   }
 
   /** Cura: brilhos verdes subindo de dentro do retrato. */
