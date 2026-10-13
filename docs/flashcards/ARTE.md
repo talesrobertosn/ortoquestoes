@@ -13,6 +13,24 @@ Pedido do Tales em 13/10/2026: trocar a arte "vetorial" por **pixel art HD-2D**,
 | Sons simples | Sons em camadas com reverb e compressor; **som ligado por padrão** (pedido do Tales), com volumes separados de efeitos e ambiente nos Ajustes |
 | Tamanhos com unidades de container (quebravam no celular) | Layout em grid sem `cqw/cqh`; mão em leque no computador e 2×2 no celular; imagem do flashcard abre ampliada em pop-up |
 
+## Versão 3 (13/10/2026)
+
+- **Sprites novos**, no mesmo esqueleto articulado com 6 poses: Dragão de Ossos (asas de membrana
+  rasgada em arcos, costelas com fogo-fátuo no peito, crânio de dragão com chifres e órbita em chama),
+  Raptor do Menisco, Gosma de Cimento (parafusos e bolhas presos na massa), Mímico do Arsenal (caixa
+  de instrumentais com dentes de lâmina), o Velho Preceptor e a Caixeira do Arsenal.
+- **Variantes de paleta:** dragão escarlate e ancestral (ossos negros, asas de ouro, fogo roxo),
+  raptor sombrio e alfa, gosma ácida e rainha (com coroa).
+- **O Dragão de Ossos foi pedido pelo Tales** (13/10/2026). É um esqueleto de fantasia (de dragão),
+  estilizado; a regra continua: nada de anatomia humana nos enfeites.
+- **Herói:** o cavaleirinho original continua igual por baixo (o Tales não quis outro); os estágios
+  só acrescentam peças: ombreira (2), capa longa (3), asas de ouro no elmo e lâmina que brilha (4),
+  asas de luz, coroa e auréola (5). O canvas cresceu para caber as peças; a caixa do corpo é a mesma.
+- **Cenários:** covil do dragão (lava, estalactites, montes de moedas) e o terraço da Torre (céu do
+  entardecer, mar de nuvens, ameias, estandartes e braseiros).
+- **Ícones novos (20×20):** ampulheta, cartas, alvo, nuvem, muralha, espadas, folha, fênix, moeda,
+  bolsa, lanterna e porta.
+
 ## Motor de pixel art
 
 `src/flashcards/efeitos/pixel.ts`: classe `Grade` desenha formas numa grade pequena com rampas de 4 tons por material (gesso, pedra, aço, ouro, couro, escama…), pontilhado Bayer só na faixa de transição, contorno seletivo (selout) e contorno interno pela ordem das formas. O canvas é ampliado com `image-rendering: pixelated` em escala inteira (2× ou 3×), então cada pixel do sprite é um bloco nítido, sem filtro "pixelizante".

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react'
 import { usarConta } from '../conta/ContextoConta'
 import { lerRespondidas } from '../estado/sessao'
 import { chamarFuncao, chamarRpc } from '../servicos/supabase'
@@ -9,7 +9,7 @@ import { JanelaCentral } from '../componentes/JanelaCentral'
 import { VERSAO_CONDICOES_ASSINATURA } from '../conta/termos'
 import { eventoMeta } from '../conta/consentimento'
 import { href } from '../util/rotas'
-import { recurso, LIMITE_GRATIS_ATUAL, ROTULO_SIMULADOS } from '../config'
+import { FLASHCARDS_NA_VENDA, recurso, LIMITE_GRATIS_ATUAL, ROTULO_SIMULADOS } from '../config'
 import { MENSAL, PLANOS, real } from '../dados/planos'
 import { AREAS, BASE_CONTAGEM } from '../dados/incidencia'
 import { DATAS_PROVA } from '../estado/conquistas'
@@ -231,6 +231,9 @@ export function Assinatura() {
           ))}
         </div>
       </section>
+
+      {/* Cripta do Residente (pronta; aparece com VITE_FLASHCARDS_VENDA=1, docs/flashcards/VENDAS.md). */}
+      {FLASHCARDS_NA_VENDA && <Suspense fallback={null}><CartaoCriptaVenda variante="venda" /></Suspense>}
 
       {/* 3. O cronograma na prática. */}
       <PreviaCronograma conta={Boolean(sessao)} assinante={comAcessoPago} />
@@ -540,3 +543,5 @@ function IconePix({ tamanho = 16 }: { tamanho?: number }) {
 function IconeCartao({ tamanho = 16 }: { tamanho?: number }) {
   return <svg width={tamanho} height={tamanho} viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2.5" /><path d="M2.5 9.5h19M6 15h4" /></svg>
 }
+
+const CartaoCriptaVenda = lazy(() => import('../componentes/CartaoCripta').then(({ CartaoCripta }) => ({ default: CartaoCripta })))

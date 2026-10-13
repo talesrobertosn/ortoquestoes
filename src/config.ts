@@ -50,6 +50,17 @@ export const EXIGIR_CONTA_PARA_QUESTOES = true
  */
 export const FLASHCARDS_LIBERADO = true
 export const FLASHCARDS_NO_MENU = import.meta.env.DEV || import.meta.env?.VITE_FLASHCARDS === '1'
+/**
+ * Partes da Cripta que ficam prontas mas desligadas até o Tales liberar
+ * (13/10/2026: "não coloca no menu, não coloca ranking, não coloca a página de
+ * vendas"). No `npm run dev` aparecem para revisão.
+ *  - VITE_FLASHCARDS_CAPA=1: cartão da Cripta na página inicial, ao lado do banner do ranking;
+ *  - VITE_FLASHCARDS_RANKING=1: ranking da Cripta e da Torre dentro do jogo;
+ *  - VITE_FLASHCARDS_VENDA=1: seção da Cripta na página de planos.
+ */
+export const FLASHCARDS_NA_CAPA = import.meta.env?.VITE_FLASHCARDS_CAPA === '1'
+export const FLASHCARDS_RANKING = import.meta.env.DEV || import.meta.env?.VITE_FLASHCARDS_RANKING === '1'
+export const FLASHCARDS_NA_VENDA = import.meta.env?.VITE_FLASHCARDS_VENDA === '1'
 
 /**
  * Questões grátis por dia no momento. Quem decide de verdade é o painel

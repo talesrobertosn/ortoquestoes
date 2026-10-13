@@ -3,6 +3,48 @@
 Objetivo: transformar a revisão em uma partida curta, tensa e divertida, sem perder o valor de estudo.
 Toda partida termina mandando os flashcards errados para a fila de revisão.
 
+## Versão 3 (13/10/2026): Cripta do Residente
+
+Visão geral e rotas em [CRIPTA.md](CRIPTA.md). Código: `src/flashcards/motor/regras.ts` (partida
+versão 3; as salvas na 2 continuam, migradas), `bestiario.ts`, `poderes.ts` e `altar.ts`.
+
+**Fluxo de um andar:** luta → recompensa (da categoria que a porta prometeu) → **portas** (2 a 4)
+→ sala da Caixeira ou do Preceptor (opcional) → próximo andar. O andar só sobe lutando, então o
+ranking continua sendo "andar mais fundo". Antes de andar de chefe: a porta do chefe e, com 35
+moedas, a da loja.
+
+**Torre do Título:** 100 andares; elite a cada 5, chefe a cada 10 (Guardião, Senhor do Anel, Titã,
+Rainha do Cimento, Dragão de Ossos, Dragão Rubro...), Dragão Ancestral só no 100. Vida +6% e força
++4% por andar (tetos 6× e 5×), paciência −1 a cada 10 andares, crítico +0,16% por andar. Patamar a
+cada 5 andares: ao cair, volta de lá.
+
+**Habilidades novas dos adversários:** mordidas (o golpe passa pela Barreira reativa), golpe
+carregado a cada N rodadas (Sopro: ×1,8 a ×2, teto do crítico, sempre avisado na intenção), rouba
+uma carga no seu erro, divisão com barreira, moedas extras. Os tetos de dano continuam: comum 22%,
+elite 28%, chefe 35%, crítico e carregado 45% da vida máxima.
+
+**Recompensas (51):** 13 poderes (novos: Ampulheta do plantão, Carta na manga), 34 relíquias (18
+bênçãos de patronos, 5 em dupla) e 4 eventos (nova: Bolsa de moedas). Pesos: comum 10, incomum 5,
+rara 1,6, épica 0,9, lendária 1,2 (só aparece com os dois patronos; na sala de bênção, a dupla
+disponível sempre aparece). Preços na loja: 35, 55, 85, 120 e 160 moedas; poção 30.
+
+**Moedas:** comum 12, elite 25, chefe 45 (+45 no Mímico), +10 no flashcard brilhante; porta de
+tesouro 35 + 5 por ato.
+
+**Cristais de conhecimento (Altar):** 1 por acerto, 2 no difícil, ×2 no brilhante; +2 por elite,
++5 por chefe. Talentos: vida (+5/+10/+15), pergaminhos iniciais (1-2), moedas iniciais (15/30/45),
+sorte nas raras (+25% por nível), uma porta a mais, Segunda chance inicial.
+
+**Desgaste:** curas −5% por ato na Cripta e −7% a cada 10 andares na Torre, piso 35% (as curas de
+vida máxima não sofrem).
+
+**Balanceamento medido** (`npm test`, 13/10/2026):
+- Cripta, chance de vencer o 1º chefe: 50% → 1,6%, 60% → 10%, 70% → 37%, 80% → 77%, 90% → 98%.
+- Cripta, andar médio sem parar: 50% → 2,2, 60% → 2,8, 70% → 4,0, 80% → 7,2, 90% → 34.
+- Torre, andar máximo em 25 tentativas (voltando do patamar): 60% → 10, 70% → 28, 80% → 84 (topo
+  em 33%), 90% e 95% → topo.
+- Nenhuma morte de vida cheia num golpe só e nenhum golpe acima do teto, nos dois modos.
+
 ## Versão 2 (13/10/2026): masmorra em atos, 30 recompensas e evolução
 
 Vale por cima de tudo o que está abaixo. Código: `src/flashcards/motor/` (regras.ts, bestiario.ts, poderes.ts, selecao.ts).

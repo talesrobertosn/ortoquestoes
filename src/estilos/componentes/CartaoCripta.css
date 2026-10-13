@@ -1,0 +1,28 @@
+/* Cartão da Cripta do Residente (capa e página de planos), no clima do jogo. */
+.cripta-cartao {
+  position: relative; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 1rem 1.5rem;
+  padding: clamp(1.1rem, 3vw, 1.6rem); border-radius: var(--raio-grande); color: #fff; overflow: hidden;
+  background: radial-gradient(ellipse at 15% 100%, rgba(255, 110, 40, 0.38), transparent 55%), radial-gradient(ellipse at 90% 0%, rgba(140, 100, 255, 0.3), transparent 50%), linear-gradient(160deg, #1d1016, #0d0709);
+  box-shadow: inset 0 0 0 2px rgba(255, 160, 80, 0.45), var(--sombra-media);
+}
+.cripta-cartao__arte { position: relative; display: flex; align-items: flex-end; gap: 0.25rem; min-height: 96px; }
+.cripta-cartao__sprite { image-rendering: pixelated; width: calc(var(--w, 156px) * var(--escala) * 0.6); height: auto; filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.5)); }
+.cripta-cartao__sprite--dragao { --w: 156px; animation: cripta-flutua 3.4s ease-in-out infinite; }
+.cripta-cartao__sprite--heroi { --w: 56px; margin-left: -1.2rem; }
+@keyframes cripta-flutua { 50% { transform: translateY(-4px); } }
+@media (prefers-reduced-motion: reduce) { .cripta-cartao__sprite--dragao { animation: none; } }
+.cripta-cartao__selo { margin: 0 0 0.3rem; color: #ffb070; font-size: var(--meta); font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+.cripta-cartao h2 { margin: 0 0 0.35rem; color: #fff; font-size: clamp(1.2rem, 2.6vw, 1.55rem); line-height: 1.2; }
+.cripta-cartao h2 em { font-style: normal; margin-inline: 0.12em; font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 1.3em; letter-spacing: 0.02em; color: #ffb070; }
+.cripta-cartao p:not(.cripta-cartao__selo) { margin: 0; color: rgba(255, 255, 255, 0.84); }
+.cripta-cartao__lista { margin: 0.6rem 0 0; padding-left: 1.1rem; color: rgba(255, 255, 255, 0.84); display: grid; gap: 0.2rem; }
+.cripta-cartao__entrar { white-space: nowrap; }
+.inicio-par { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.inicio-par > .inicio-ranking, .inicio-par > .cripta-cartao { grid-template-columns: auto minmax(0, 1fr); }
+.inicio-par .inicio-ranking__acoes, .inicio-par .cripta-cartao__entrar { grid-column: 1 / -1; }
+@media (max-width: 60rem) { .inicio-par { grid-template-columns: 1fr; } }
+@media (max-width: 40rem) {
+  .cripta-cartao { grid-template-columns: auto minmax(0, 1fr); }
+  .cripta-cartao__entrar { grid-column: 1 / -1; }
+  .cripta-cartao__arte { min-height: 72px; transform: scale(0.8); transform-origin: left bottom; }
+}

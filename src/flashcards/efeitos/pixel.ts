@@ -220,4 +220,10 @@ export const MAT = {
   ciano: { rampa: ['#d8ffff', '#7fe0ff', '#3aa0d0', '#1a5a80'], contorno: '#061e2e' },
   chama: { rampa: ['#fff6b0', '#ffc24a', '#f0702a', '#a02a10'], contorno: '#3a0a04' },
   papel: { rampa: ['#fff8e0', '#f0dca8', '#c8a872', '#8a6a3a'], contorno: '#3a2410' },
+  osso: { rampa: ['#fffaf0', '#e8dcc0', '#b8a888', '#7a6a50'], contorno: '#2a2010' },
+  membrana: { rampa: ['#b8a8d8', '#86789e', '#5a4e78', '#322a50'], contorno: '#120c22' },
+  escamaVerde: { rampa: ['#c8f0a0', '#7ac850', '#3e8a2e', '#1e4a18'], contorno: '#0a1e08' },
+  cimento: { rampa: ['#f0f4f8', '#bcc8d4', '#8494a6', '#4e5a6c'], contorno: '#161e2a' },
+  barba: { rampa: ['#ffffff', '#e0e0ea', '#acacbe', '#6e6e80'], contorno: '#22222e' },
+  luz: { rampa: ['#ffffff', '#fff2c0', '#f2c45a', '#c28a2a'], contorno: '#5a3a08' },
 } satisfies Record<string, Material>
