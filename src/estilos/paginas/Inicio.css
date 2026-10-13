@@ -547,3 +547,32 @@ a.inicio-kpi:hover { background: rgba(255, 255, 255, 0.15); color: var(--sobre-h
 
 .inicio-heroi__pratico { flex: 1 1 100%; display: flex; gap: 0.4rem; align-items: center; justify-content: center; margin: 0.1rem 0 0; font-size: 0.85rem; color: var(--sobre-heroi-2); text-align: center; }
 .inicio-heroi__pratico svg { flex: none; color: #f4cf7c; }
+
+/* Flashcards na capa (beta público): quadro à direita do herói no computador, faixa no celular. */
+.inicio-flash { display: grid; overflow: hidden; border-radius: var(--raio-cartao); border: 1px solid var(--heroi-traco); background: #12241c; color: #f3ecd6; text-decoration: none; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25); }
+.inicio-flash:hover { color: #fff; border-color: #e3b860; }
+.inicio-flash__arte { display: block; background: #1d2a1b; }
+.inicio-flash__arte img { display: block; width: 100%; height: auto; image-rendering: pixelated; }
+.inicio-flash__texto { display: grid; gap: 0.45rem; padding: 1rem 1.1rem 1.15rem; }
+.inicio-flash__selo { justify-self: start; padding: 0.15rem 0.55rem; border-radius: 999px; background: rgba(227, 184, 96, 0.18); color: #f0cf83; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+.inicio-flash strong { font-size: 1.2rem; line-height: 1.2; text-wrap: balance; }
+.inicio-flash__desc { color: rgba(243, 236, 214, 0.82); font-size: 0.92rem; }
+.inicio-flash__botao { justify-self: start; margin-top: 0.25rem; }
+.inicio-heroi__painel--com-flash { display: none; }
+.inicio-flash--faixa { grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); align-items: center; }
+.inicio-flash--so-celular { display: none; }
+@media (max-width: 52rem) {
+  .inicio-flash--heroi { display: none; }
+  .inicio-heroi__painel--com-flash { display: grid; }
+  .inicio-flash--so-celular { display: grid; }
+  .inicio-flash--faixa { grid-template-columns: 9.5rem minmax(0, 1fr); }
+  .inicio-flash--faixa .inicio-flash__arte { height: 100%; }
+  .inicio-flash--faixa .inicio-flash__arte img { height: 100%; object-fit: cover; object-position: 30% 60%; }
+  .inicio-flash--faixa .inicio-flash__texto { padding: 0.85rem; }
+  .inicio-flash--faixa strong { font-size: 1.02rem; }
+  .inicio-flash--faixa .inicio-flash__desc { font-size: 0.84rem; }
+}
+@media (max-width: 24rem) {
+  .inicio-flash--faixa { grid-template-columns: 7rem minmax(0, 1fr); }
+  .inicio-flash--faixa .inicio-flash__desc { display: none; }
+}

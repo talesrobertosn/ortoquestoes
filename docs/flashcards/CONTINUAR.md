@@ -68,13 +68,50 @@ o modelo de [RESUMO-CHATGPT.md](RESUMO-CHATGPT.md).
    - **Ranking:** o Fácil não abre corrida no servidor nem conta para os recordes de andar. Só Normal e Difícil contam.
    - Simulação com 75% de acerto, andar médio: Fácil 11,5, Normal 4,8 e Difícil 2,9.
 
-## Parou aqui (13/10/2026, 20:52)
+## Beta público (13/10/2026, à noite)
+
+O Tales autorizou o beta público (roteiro em [LANCAMENTO-BETA.md](LANCAMENTO-BETA.md)). O que existe:
+
+- **Rotas.** `#/flashcards` virou a **central** (página do site, com cabeçalho e rodapé). A entrada
+  temática do jogo foi para `#/flashcards/entrada`; `cripta`, `torre` e `biblioteca` continuam iguais.
+  `#/flashcards/desempenho` e `#/flashcards/cronograma` são páginas do site. `#/flashcards/ranking`
+  leva a `#/ranking?aba=cripta`. Só as rotas do jogo exigem conta (`PAGINAS_DO_SITE_FLASHCARDS` em `App.tsx`).
+- **Nome (regra do Tales).** Fora do jogo é sempre "Flashcards" ou "Torneio de Flashcards" (menu,
+  capa, central, ranking, planos, títulos de aba). "Cripta" só dentro do jogo. O ranking do site é
+  `#/ranking?aba=flashcards` (`aba=cripta` continua funcionando por link antigo).
+- **Página inicial.** Com conta, no computador, o quadro "Seu próximo desafio começa com um flashcard."
+  ocupa a coluna da direita do herói, no lugar dos números (pedido do Tales com print). No celular, e
+  para visitantes, vira uma faixa logo abaixo do herói. Trava `VITE_FLASHCARDS_CAPA` (ligada no publicar.yml).
+- **Arte de divulgação** (`public/flashcards/promo/`, feita por `scripts/cenarios/promo.py` só com as
+  camadas e sprites do jogo, mais a entrada da masmorra e o baú pintados no mesmo motor): `capa-larga`,
+  `capa-retrato` e os três cartões (biblioteca, cripta, progresso).
+- **Menu.** "Flashcards" com selo Beta no topo, na barra de baixo do celular (7 itens) e no Menu.
+- **Aprendizagem** (`src/flashcards/aprendizagem.ts`): `registrarEstudo` com chave única por evento
+  (`sessão:posição:id` no Estudo, `cripta:semente:modo:rodada:id` na Cripta), diário por dia local
+  (`flashcards:diario`), primeira resposta objetiva (`po`), última autoavaliação (`av`).
+  `calcularEstatisticas` e `calcularPlano`. Testes em `fixtures/testar_aprendizagem.mjs`.
+- **Revisão.** Atalhos Revisões de hoje, Errei, Hesitei, Nunca estudados e Por assunto, por link
+  direto `#/flashcards/biblioteca?categoria=…&area=…&n=…` (`categoria=plano` usa o cronograma).
+  Na Cripta não se presume confiança: acerto = certeza, acerto com pista = dúvida, erro volta hoje.
+- **Desempenho e cronograma de flashcards:** separados dos de questões; o cronograma fica no aparelho
+  (`flashcards:plano`). Atalhos discretos em `#/dados`, `#/revisao` e `#/cronograma` (`AtalhoFlashcards`).
+- **Ranking.** Aba Cripta no ranking do site (`src/paginas/RankingCripta.tsx`), Normal e Difícil
+  separados, pela RPC `ranking_cripta` (SQL parte 18, já rodado pelo Tales). Torre sem ranking.
+- **Opinião.** `enviar_opiniao_flashcards` (SQL parte 18), na central, no fim da sessão de estudo e no
+  fim da partida (`#/flashcards?opiniao=fim_sessao`), e um convite discreto depois de 3 sessões.
+- **Som no celular** (`efeitos/sons.ts`): destrave no `pointerup/touchend/click`, buffer mudo,
+  `audioSession = playback`, retomada ao voltar para a aba e escolha "com som / sem som" na primeira
+  entrada. **Ainda não confirmado num celular de verdade**: pedir ao Tales para testar.
+- **Limite.** Servidor ligado (`VITE_FLASHCARDS_LIMITE=true`): o mesmo interruptor das questões
+  (`paywall_ativo`) decide; grátis 10 a cada 24 h, assinante sem limite.
+
+## Parou aqui antes do beta (13/10/2026, 20:52)
 
 - O PR #220 foi mesclado na base `claude/pdfs-questoes-tp64dr`, com as Etapas 2 a 8, as correções da revisão do Codex e as dificuldades Fácil, Normal e Difícil. O merge publica o jogo na rota escondida.
 - Os comentários do Codex nos PRs #219 e #220 foram respondidos e resolvidos.
 - A branch `claude/sharp-goodall-pl7kp7` foi recomeçada a partir da base. Para trabalho novo, abra um PR novo.
 - Testado: `npm test`, `npx tsc --noEmit`, `npm run build` e Playwright em 1400×860, 390×844, 844×390, 600×360 e 568×320.
-- **Ranking por dificuldade no servidor:** hoje o Fácil simplesmente não abre corrida (`comCorrida` em `Arena.tsx`). Quando o ranking for ligado, vale enviar o nível em `iniciar_corrida_flashcards` para separar Normal e Difícil.
+- **Ranking por dificuldade no servidor:** feito no beta (parte 18: `iniciar_corrida_flashcards` com `p_nivel`, `ranking_cripta`).
 
 ## Próximos passos sugeridos (em ordem)
 
@@ -92,7 +129,7 @@ o modelo de [RESUMO-CHATGPT.md](RESUMO-CHATGPT.md).
 - **Equipamentos visíveis:** capacete, armadura, escudo e arma que mudem o sprite do herói.
 - **Torre do Título:** marcos nos andares 10, 25, 50, 75 e 100, mapa da subida e histórico.
 - **Sons:** revisão completa dos efeitos (acerto, erro, crítico, entrada de chefe, sala secreta) e transição suave entre músicas.
-- **Ranking por dificuldade no servidor:** hoje o Fácil não abre corrida; ao ligar o ranking, enviar o nível em `iniciar_corrida_flashcards`.
+- **Ranking da Torre:** só depois de validado (roteiro do beta).
 
 ## Como trabalhar
 
@@ -117,8 +154,9 @@ o modelo de [RESUMO-CHATGPT.md](RESUMO-CHATGPT.md).
 
 ## Restrições (não mudam)
 
-- **Publicar:** só na rota escondida `#/flashcards`.
-  - Nada de banner, menu, ranking público, divulgação ou página de vendas.
+- **Publicar:** ~~só na rota escondida `#/flashcards`, sem banner, menu, ranking público, divulgação
+  ou página de vendas~~ (regra até 13/10/2026). Desde o beta público, divulgar dentro do site é
+  permitido (veja LANCAMENTO-BETA.md); fora do site (e-mail, mensagem, rede social), não.
 - **Não mexer:**
   - assinaturas e limites;
   - questões, gabaritos e comentários;

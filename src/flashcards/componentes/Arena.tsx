@@ -10,15 +10,17 @@ import { montarBaralho } from '../motor/selecao'
 import type { Flashcard } from '../tipos'
 import { Palco, centro } from '../efeitos/palco'
 import { PALETA_PERSONAGEM, type Personagem, type Pose } from '../efeitos/personagens'
-import { configurarSom, destravar, tocar, tocarAmbiente, tocarMusica } from '../efeitos/sons'
+import { configurarSom, destravar, instalarDestrave, tocar, tocarAmbiente, tocarMusica } from '../efeitos/sons'
 import { sementeNova } from '../motor/aleatorio'
 import { ESTAGIOS, LIMITES, TORRE, inimigoDoAndar, type Inimigo, type Modo } from '../motor/bestiario'
 import { ENCAIXES, PATRONOS, RECOMPENSAS, ehPoder, type Recompensa, type TipoPoder } from '../motor/poderes'
+import { registrarEstudo } from '../aprendizagem'
+import { contarSessaoTerminada } from '../opiniao'
 import { COMBO_MINIMO, criarMotor, desgaste, migrarPartida, NIVEIS, nivelDaPartida, type Evento, type MotivoCura, type NivelJogo, type Partida } from '../motor/regras'
 import { ALTAR_VAZIO, ganharCristais, type EstadoAltar } from '../motor/altar'
 import {
   BESTIARIO_VAZIO, CHAVE_AJUSTES, CHAVE_ALTAR, CHAVE_BESTIARIO, CHAVE_HISTORICO, CHAVE_PARTIDA, CHAVE_PARTIDA_TORRE, CHAVE_PATAMAR, CHAVE_NIVEL, CHAVE_RECORDES, CHAVE_REGISTROS,
-  lembrarVisto, RECORDES_VAZIOS, registrarResposta, type Bestiario, type Recordes, type RegistroFlashcard,
+  RECORDES_VAZIOS, type Bestiario, type Recordes, type RegistroFlashcard,
 } from '../progresso'
 import { AjudaDoPreceptor, Loja, Portas, Sabio, SalaEvento, TituloChefe } from './Salas'
 import { Cartao, familiasDe } from './Cartao'
@@ -102,7 +104,7 @@ function comCorrida(p: Partida): Partida {
   // o Fácil não abre corrida: não conta para o ranking
   if (!NIVEIS[nivelDaPartida(p)].ranqueado || !RANKING_NO_SERVIDOR || typeof crypto === 'undefined' || !('randomUUID' in crypto)) return p
   const idCorrida = crypto.randomUUID()
-  void iniciarCorrida(idCorrida, p.modo)
+  void iniciarCorrida(idCorrida, p.modo, nivelDaPartida(p) === 'dificil' ? 'dificil' : 'normal')
   return { ...p, idCorrida }
 }
 
@@ -166,7 +168,7 @@ export function Arena({ modo = 'masmorra', abrirEstudo = false }: { modo?: Modo;
   }, [])
   if (!pronto) {
     return (
-      <ModalJogo titulo={NOME_MODO[modo]} aoPedirFechar={() => navegar('/flashcards')}>
+      <ModalJogo titulo={NOME_MODO[modo]} aoPedirFechar={() => navegar('/flashcards/entrada')}>
         <div className="fc-arena fc-carregando" role="status">
           <Cenario cena="campo" reduzido />
           <div className="fc-carregando__caixa">
@@ -239,11 +241,8 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   /* ---------- Som ---------- */
   useEffect(() => { configurarSom({ ligado: ajustes.som, efeitos: ajustes.volEfeitos, ambiente: ajustes.volAmbiente, musica: ajustes.volMusica }) }, [ajustes.som, ajustes.volEfeitos, ajustes.volAmbiente, ajustes.volMusica])
   useEffect(() => {
-    let feito = false
-    const primeiro = () => { if (feito) return; feito = true; destravar(); tocar('abrir') }
-    window.addEventListener('pointerdown', primeiro, { capture: true })
-    window.addEventListener('keydown', primeiro, { capture: true })
-    return () => { window.removeEventListener('pointerdown', primeiro, { capture: true }); window.removeEventListener('keydown', primeiro, { capture: true }) }
+    // destrave por gesto e pausa por visibilidade, instalados uma vez para o jogo todo (sons.ts)
+    instalarDestrave()
   }, [])
   useEffect(() => { tocarAmbiente(modo === 'estudo' ? 'biblioteca' : cenarioVisivel) }, [modo, cenarioVisivel])
   const adversarioEmCena = inimigoDoAndar(partida.andar, partida.sementeBase, partida.modo).inimigo
@@ -756,12 +755,10 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
     if (!r.eventos.length && r.estado === partidaRef.current) return
     const resposta = r.eventos.find((e): e is Extract<Evento, { tipo: 'resposta' }> => e.tipo === 'resposta')
     if (resposta) {
-      const registros = ler<Record<string, RegistroFlashcard>>(CHAVE_REGISTROS, {})
-      registros[resposta.id] = registrarResposta(registros[resposta.id], resposta.certo, resposta.assistida)
-      gravar(CHAVE_REGISTROS, registros)
-      gravar(CHAVE_HISTORICO, lembrarVisto(ler<string[]>(CHAVE_HISTORICO, []), resposta.id))
+      // resposta objetiva na Cripta: atualiza a revisão sem presumir confiança (registrarEstudo, aprendizagem.ts)
+      registrarEstudo({ chave: `cripta:${r.estado.sementeBase}:${r.estado.modo}:${r.estado.rodada}:${resposta.id}`, id: resposta.id, modo: 'cripta', objetiva: resposta.certo, assistida: resposta.assistida })
       const rec = { ...RECORDES_VAZIOS, ...ler<Partial<Recordes>>(CHAVE_RECORDES, {}) }
-      gravar(CHAVE_RECORDES, { ...rec, ...recordeDoAndar(rec, r.estado), respostas: rec.respostas + 1, melhorSequencia: Math.max(rec.melhorSequencia, r.estado.melhorSequencia), atualizadoEm: Date.now() })
+      gravar(CHAVE_RECORDES, { ...rec, ...recordeDoAndar(rec, r.estado), melhorSequencia: Math.max(rec.melhorSequencia, r.estado.melhorSequencia), atualizadoEm: Date.now() })
     }
     if (r.estado.fase === 'fim' && partidaRef.current.fase !== 'fim') {
       const rec = { ...RECORDES_VAZIOS, ...ler<Partial<Recordes>>(CHAVE_RECORDES, {}) }
@@ -770,6 +767,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
         torreConcluida: (rec.torreConcluida ?? 0) + Number(r.estado.torreConcluida), atualizadoEm: Date.now(),
       })
       void sincronizarProgresso()
+      contarSessaoTerminada()
     }
     if (r.estado.idCorrida && r.estado.andar > partidaRef.current.andar) void registrarAndar(r.estado.idCorrida, r.estado.andar)
     partidaRef.current = r.estado
@@ -858,7 +856,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
     definirModo('estudo')
   }, [])
 
-  const fechar = useCallback(() => { tocar('fechar'); navegar('/flashcards') }, [])
+  const fechar = useCallback(() => { tocar('fechar'); navegar('/flashcards/entrada') }, [])
   const pedirFechar = useCallback(() => {
     const p = partidaRef.current
     if (p.fase === 'fim' || (p.rodada === 0 && modo === 'batalha')) fechar()
@@ -1391,6 +1389,7 @@ function Fim({ partida, aoNova, aoRevisar, aoSair, aoPatamar }: { partida: Parti
         )}
         <div className="fc-janela__botoes">
           {derrubaram.length > 0 && <button type="button" className="fc-botao fc-botao--secundario" onClick={aoRevisar}>Revisar no Estudo</button>}
+          <a className="fc-botao fc-botao--secundario" href={href('/flashcards?opiniao=fim_partida')}>Enviar opinião</a>
           <button type="button" className="fc-botao fc-botao--secundario" onClick={aoSair}>Sair</button>
           {patamar ? (
             <>

@@ -1,26 +1,30 @@
-import '@fontsource/cinzel/latin-700.css'
-import '@fontsource/cinzel/latin-900.css'
-import '@fontsource/alegreya/latin-400.css'
-import '@fontsource/alegreya/latin-700.css'
-import '@fontsource/alegreya/latin-800.css'
-import '../estilos/paginas/Flashcards.css'
-import { FLASHCARDS_RANKING } from '../config'
-import { Arena } from '../flashcards/componentes/Arena'
-import { Entrada } from '../flashcards/componentes/Entrada'
-import { RankingCripta } from '../flashcards/componentes/RankingCripta'
+import { lazy, Suspense, useEffect } from 'react'
+import { CentralFlashcards, CronogramaFlashcards, DesempenhoFlashcards } from './CentralFlashcards'
+import { navegar } from '../util/rotas'
+
+// O jogo (fontes, folhas de estilo e motor) só carrega quando a pessoa entra nele;
+// a central e as páginas de desempenho e cronograma abrem leves.
+const Jogo = lazy(() => import('./FlashcardsJogo'))
 
 /**
- * Cripta do Residente (masmorra dos flashcards):
- *   #/flashcards            Entrada (escolha do modo, Altar e Bestiário)
+ * Flashcards (beta público, 13/10/2026):
+ *   #/flashcards            central do site (revisões de hoje, atalhos, opinião)
+ *   #/flashcards/desempenho e /cronograma: páginas do site
+ *   #/flashcards/entrada    Entrada da Cripta (escolha do modo, Altar e Bestiário)
  *   #/flashcards/cripta     a Cripta sem fim
  *   #/flashcards/torre      a Torre do Título, 100 andares
  *   #/flashcards/biblioteca o Estudo calmo
- *   #/flashcards/ranking    ranking (atrás da trava, config.ts)
+ *   #/flashcards/ranking    leva ao ranking do site, aba Flashcards
  */
 export function Flashcards({ secao }: { secao?: string }) {
-  if (secao === 'cripta' || secao === 'masmorra') return <Arena key="cripta" modo="masmorra" />
-  if (secao === 'torre') return <Arena key="torre" modo="torre" />
-  if (secao === 'biblioteca' || secao === 'estudo') return <Arena key="biblioteca" modo="masmorra" abrirEstudo />
-  if (secao === 'ranking' && FLASHCARDS_RANKING) return <RankingCripta />
-  return <Entrada />
+  if (['cripta', 'masmorra', 'torre', 'biblioteca', 'estudo', 'entrada'].includes(secao ?? '')) return <Suspense fallback={null}><Jogo secao={secao!} /></Suspense>
+  if (secao === 'ranking') return <Redirecionar destino="/ranking?aba=flashcards" />
+  if (secao === 'desempenho') return <DesempenhoFlashcards />
+  if (secao === 'cronograma') return <CronogramaFlashcards />
+  return <CentralFlashcards />
+}
+
+function Redirecionar({ destino }: { destino: string }) {
+  useEffect(() => { navegar(destino, true) }, [destino])
+  return null
 }

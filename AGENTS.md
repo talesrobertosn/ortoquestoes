@@ -60,7 +60,17 @@ Toda migração nova também vai para `supabase/colar-no-painel/` e, ao entregar
 mandado **como texto na conversa**, num bloco de código, para copiar direto no SQL Editor (o dono
 não consegue copiar bem a partir do arquivo).
 
-## Cripta do Residente (jogo de flashcards, rota escondida #/flashcards)
+## Cripta do Residente (flashcards, beta público desde 13/10/2026)
+
+Até 13/10/2026 a rota `#/flashcards` ficava escondida, sem menu, banner, ranking público nem página
+de vendas. Nesse dia o Tales autorizou o **beta público** e essa restrição deixou de valer:
+menu com selo Beta, quadro na página inicial, central `#/flashcards`, ranking da Cripta, desempenho,
+revisão, cronograma, opinião e apresentação na página de planos. Continuam valendo: as regras atuais
+de acesso, assinatura e limites (sem mudar preço nem inventar benefício), nada de e-mail, mensagem ou
+post em rede social. **Nome (regra do Tales, 13/10/2026):** fora do jogo é sempre "Flashcards" ou
+"Torneio de Flashcards", nunca "Cripta" nem "masmorra" (o público da medicina não sabe o que é);
+"Cripta do Residente" só aparece dentro do jogo (entrada temática e partidas). O roteiro completo e o que já foi feito estão em
+[docs/flashcards/LANCAMENTO-BETA.md](docs/flashcards/LANCAMENTO-BETA.md).
 
 Para continuar o jogo, leia primeiro [docs/flashcards/CONTINUAR.md](docs/flashcards/CONTINUAR.md):
 estado atual, próximos passos, restrições, como testar (Playwright em três tamanhos) e como publicar.

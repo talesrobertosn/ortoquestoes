@@ -2,13 +2,13 @@ import { useEffect, useMemo, useState } from 'react'
 import { gravar, ler } from '../../estado/armazenamento'
 import { FLASHCARDS_RANKING } from '../../config'
 import { href, navegar } from '../../util/rotas'
-import { configurarSom, destravar, tocar, tocarAmbiente, tocarMusica } from '../efeitos/sons'
+import { configurarSom, destravar, instalarDestrave, tocar, tocarAmbiente, tocarMusica } from '../efeitos/sons'
 import type { Personagem } from '../efeitos/personagens'
 import { ALTAR_VAZIO, TALENTOS, comprarTalento, custoDoProximo, nivelDe, type EstadoAltar } from '../motor/altar'
 import { BESTIARIO, TORRE } from '../motor/bestiario'
 import { migrarPartida, NIVEIS, nivelDaPartida, type NivelJogo } from '../motor/regras'
 import {
-  BESTIARIO_VAZIO, CHAVE_AJUSTES, CHAVE_ALTAR, CHAVE_BESTIARIO, CHAVE_NIVEL, CHAVE_PARTIDA, CHAVE_PARTIDA_TORRE, CHAVE_PATAMAR, CHAVE_RECORDES, CHAVE_REGISTROS,
+  BESTIARIO_VAZIO, CHAVE_AJUSTES, CHAVE_ALTAR, CHAVE_SOM_ESCOLHIDO, CHAVE_BESTIARIO, CHAVE_NIVEL, CHAVE_PARTIDA, CHAVE_PARTIDA_TORRE, CHAVE_PATAMAR, CHAVE_RECORDES, CHAVE_REGISTROS,
   flashcardsUnicos, RECORDES_VAZIOS, type Bestiario, type Recordes,
 } from '../progresso'
 import { Cenario } from './Cenario'
@@ -43,12 +43,20 @@ export function Entrada() {
     const a = ler<{ som?: boolean; volEfeitos?: number; volAmbiente?: number; volMusica?: number }>(CHAVE_AJUSTES, {})
     configurarSom({ ligado: a.som ?? true, efeitos: a.volEfeitos ?? 0.85, ambiente: a.volAmbiente ?? 0.35, musica: a.volMusica ?? 0.45 })
     tocarMusica('entrada'); tocarAmbiente('masmorra')
-    let feito = false
-    const primeiro = () => { if (feito) return; feito = true; destravar() }
-    window.addEventListener('pointerdown', primeiro, { capture: true })
-    window.addEventListener('keydown', primeiro, { capture: true })
-    return () => { window.removeEventListener('pointerdown', primeiro, { capture: true }); window.removeEventListener('keydown', primeiro, { capture: true }) }
+    // destrave por gesto e pausa por visibilidade, instalados uma vez para o jogo todo (sons.ts)
+    instalarDestrave()
   }, [])
+
+  // primeira entrada: a pessoa escolhe com ou sem som (o toque no botão já destrava o áudio no celular)
+  const [escolherSom, definirEscolherSom] = useState(() => !ler<boolean>(CHAVE_SOM_ESCOLHIDO, false))
+  const escolher = (comSom: boolean) => {
+    const a = ler<Record<string, unknown>>(CHAVE_AJUSTES, {})
+    gravar(CHAVE_AJUSTES, { ...a, versao: 3, som: comSom })
+    configurarSom({ ligado: comSom, efeitos: (a.volEfeitos as number) ?? 0.85, ambiente: (a.volAmbiente as number) ?? 0.35, musica: (a.volMusica as number) ?? 0.45 })
+    if (comSom) { destravar(); tocar('confirmar') }
+    gravar(CHAVE_SOM_ESCOLHIDO, true)
+    definirEscolherSom(false)
+  }
 
   const ir = (rota: string) => { tocar('porta'); window.setTimeout(() => navegar(rota), 160) }
   const comprar = (id: (typeof TALENTOS)[number]['id']) => {
@@ -58,7 +66,7 @@ export function Entrada() {
   }
 
   return (
-    <ModalJogo titulo="Cripta do Residente" aoPedirFechar={() => { tocarMusica(null); tocarAmbiente(null); navegar('/treinar') }}>
+    <ModalJogo titulo="Cripta do Residente" aoPedirFechar={() => { tocarMusica(null); tocarAmbiente(null); navegar('/flashcards') }}>
       <div className="fc-arena fc-entrada">
         <Cenario cena="covil" reduzido={false} clima="noite" />
         <div className="fc-entrada__miolo">
@@ -112,10 +120,23 @@ export function Entrada() {
           <div className="fc-entrada__extras">
             <button type="button" className="fc-extra" onClick={() => { tocar('selecao'); definirPainel('altar') }}><Sprite nome="estrela" className="fc-sprite--icone" /><span><strong>Altar do Saber</strong><small>{altar.cristais} cristais</small></span></button>
             <button type="button" className="fc-extra" onClick={() => { tocar('selecao'); definirPainel('bestiario') }}><Sprite nome="pergaminho" className="fc-sprite--icone" /><span><strong>Bestiário</strong><small>{bestiario.vistos.length} de {BESTIARIO.length} descobertos</small></span></button>
-            {FLASHCARDS_RANKING && <a className="fc-extra" href={href('/flashcards/ranking')} onClick={() => tocar('selecao')}><Sprite nome="coroa" className="fc-sprite--icone" /><span><strong>Ranking</strong><small>Cripta, Torre e flashcards únicos</small></span></a>}
+            {FLASHCARDS_RANKING && <a className="fc-extra" href={href('/ranking?aba=flashcards')} onClick={() => tocar('selecao')}><Sprite nome="coroa" className="fc-sprite--icone" /><span><strong>Ranking</strong><small>Cripta: Normal e Difícil</small></span></a>}
           </div>
         </div>
 
+        {escolherSom && (
+          <div className="fc-veu" role="dialog" aria-modal="true" aria-labelledby="fc-som-titulo">
+            <div className="fc-janela fc-som-escolha">
+              <h2 id="fc-som-titulo">Como você quer entrar?</h2>
+              <p className="fc-janela__sub">A Cripta tem trilha e efeitos próprios. Dá para mudar depois no botão de som, no alto da tela.</p>
+              <div className="fc-janela__botoes">
+                <button type="button" className="fc-botao" onClick={() => escolher(true)} autoFocus>Entrar com som</button>
+                <button type="button" className="fc-botao fc-botao--secundario" onClick={() => escolher(false)}>Entrar sem som</button>
+              </div>
+              <p className="fc-janela__nota">No iPhone, confira o volume do aparelho.</p>
+            </div>
+          </div>
+        )}
         {painel === 'altar' && (
           <div className="fc-veu" role="dialog" aria-modal="true" aria-labelledby="fc-altar-titulo" onClick={() => definirPainel(null)}>
             <div className="fc-janela fc-janela--larga fc-altar" onClick={(e) => e.stopPropagation()}>
