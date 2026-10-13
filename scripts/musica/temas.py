@@ -301,5 +301,100 @@ def torre():
     return T, True
 
 
+# ------------------------------------------------------------------ 11. Floresta das Fises (andar 1)
+
+def floresta():
+    """Pastoral em 3/4, Ré maior: harpa em arpejo, flauta cantando, cordas de fundo e sinos de folha."""
+    T = Tema(88, 16, tempos_por=3)
+    prog = ['D', 'D', 'Bm', 'Bm', 'G', 'G', 'A', 'A', 'D', 'F#m', 'G', 'D', 'Em', 'G', 'Asus', 'A']
+    for i, a in enumerate(prog):
+        r, ter, qui = acorde(a, 3)
+        for k, n in enumerate((r - 12, qui - 12, ter, qui, r + 12, qui)):
+            T.mix.add(harpa(n, 2.4, 0.42 if k else 0.55), T.s(i * 3 + k * 0.5), -0.3, 0.8)
+        if i % 2 == 0:
+            for n in (r, ter, qui):
+                T.mix.add(cordas(n + 12, T.s(6) * 0.97, vel=0.16, brilho=1500, ataque=1.1), T.s(i * 3), 0.3, 0.7)
+    tema = ('F#5:1 A5:1 F#5:1 | E5:2 D5:1 | D5:1 F#5:1 E5:1 | C#5:3 | '
+            'B4:1 D5:1 G5:1 | F#5:2 E5:1 | E5:1 D5:1 C#5:1 | A4:3 | '
+            'F#5:1 A5:1 D6:1 | C#6:2 A5:1 | B5:1 A5:1 G5:1 | F#5:3 | '
+            'G5:1 F#5:1 E5:1 | D5:1 E5:1 F#5:1 | E5:2 D5:1 | E5:3')
+    T.melodia(flauta, tema, 0, 0.15, 0.85, vel=0.5)
+    for i in (0, 4, 8, 12):
+        T.mix.add(sino(m('A6') if i % 8 == 0 else m('F#6'), 3, 0.22), T.s(i * 3 + 2), 0.55, 0.5)
+    return T, True
+
+
+# ------------------------------------------------------------------ 12. Masmorra
+
+def masmorra():
+    """Lá menor sombrio: cordas graves em ostinato, tímpano espaçado, piano que pinga como goteira e um tema de metais abafados."""
+    T = Tema(96, 16)
+    prog = ['Am', 'Am', 'F', 'F', 'Dm', 'Dm', 'E', 'E', 'Am', 'Am', 'F', 'F', 'Dm', 'E', 'Am', 'E']
+    for i, a in enumerate(prog):
+        r, ter, qui = acorde(a, 2)
+        for k in range(8):
+            n = [r, r, qui, r, r + 12, r, qui, ter][k]
+            T.mix.add(cordas_staccato(n, T.s(0.5), vel=0.42 if k % 2 else 0.55), T.s(i * 4 + k * 0.5), -0.25, 0.75)
+        T.mix.add(cordas(r - 12 + 24, T.s(4) * 0.96, vel=0.22, brilho=900, ataque=0.6), T.s(i * 4), 0.2, 0.7)
+        if i % 2 == 0:
+            T.mix.add(timpano(r + 12, 0.6), T.s(i * 4), 0, 0.7)
+        if i % 4 == 2:  # goteira
+            T.mix.add(piano(qui + 36, 1.6, 0.22), T.s(i * 4 + 1.5), 0.5, 0.5)
+            T.mix.add(piano(r + 36, 1.6, 0.18), T.s(i * 4 + 3.25), 0.5, 0.45)
+    tema = ('E4:1.5 A4:.5 C5:1 B4:1 | A4:2 E4:2 | F4:1.5 A4:.5 D5:1 C5:1 | B4:3 r:1 | '
+            'A4:1.5 C5:.5 E5:1 D5:1 | C5:1 B4:1 A4:2 | D5:1 C5:1 B4:1 G#4:1 | A4:3 r:1')
+    T.melodia(metais, tema, 0, -0.1, 0.5, vel=0.6, escuro=True)
+    T.melodia(cordas, tema, 32, 0.25, 0.42, transp=12, vel=0.42, legato=True)
+    for i in range(16):
+        T.mix.add(taiko(0.35), T.s(i * 4 + 3), 0, 0.5)
+    return T, True
+
+
+# ------------------------------------------------------------------ 13. Covil do Dragão (adversários do covil, fora o chefe)
+
+def covil():
+    """Dó menor pesado: taikos, metais graves em quintas, coro abafado e cromatismo que sobe como calor."""
+    T = Tema(108, 16)
+    prog = ['Cm', 'Cm', 'Ab', 'Ab', 'Fm', 'Fm', 'G', 'G', 'Cm', 'Cm', 'Db', 'Db', 'Ab', 'Fm', 'G', 'G']
+    for i, a in enumerate(prog):
+        r, ter, qui = acorde(a, 2)
+        for n in (r, qui):
+            T.mix.add(metais(n, T.s(1.6), vel=0.72, escuro=True), T.s(i * 4), 0.1, 0.75)
+        T.mix.add(metais(r, T.s(0.6), vel=0.6, escuro=True), T.s(i * 4 + 2.5), 0.1, 0.65)
+        T.mix.add(taiko(0.95), T.s(i * 4), 0, 0.95)
+        T.mix.add(taiko(0.6), T.s(i * 4 + 1.5), 0, 0.7)
+        T.mix.add(taiko(0.75), T.s(i * 4 + 2), 0, 0.8)
+        for k in range(8):
+            T.mix.add(cordas_staccato(r + 12 + (k % 4 == 3), T.s(0.5), vel=0.5), T.s(i * 4 + k * 0.5), -0.3, 0.7)
+        if i >= 8:
+            for n in (r + 12, ter + 12, qui + 12):
+                T.mix.add(coro(n, T.s(4) * 0.96, vel=0.24, vogal='o'), T.s(i * 4), 0.15, 0.75)
+    tema = ('G4:1 C5:1 Eb5:1 D5:1 | C5:2 G4:2 | Ab4:1 C5:1 F5:1 Eb5:1 | D5:3 r:1 | '
+            'G5:1.5 F5:.5 Eb5:1 D5:1 | Eb5:1 D5:1 C5:2 | Db5:1 C5:1 B4:1 D5:1 | C5:3 r:1')
+    T.melodia(metais, tema, 0, -0.1, 0.6, vel=0.78)
+    T.melodia(cordas, tema, 32, 0.3, 0.45, transp=12, vel=0.48, legato=True)
+    T.mix.add(crescendo_prato(T.s(4)), T.s(28), -0.3, 0.7)
+    return T, True
+
+
+# ------------------------------------------------------------------ 14. Salas (loja, Preceptor, ferreiro, curandeira, baú)
+
+def sala():
+    """Taverna calma em Sol maior: harpa como alaúde, piano leve e flauta; descanso entre os andares."""
+    T = Tema(84, 16)
+    prog = ['G', 'G', 'Em', 'Em', 'C', 'D', 'G', 'D', 'G', 'Bm', 'C', 'G', 'Am', 'D', 'G', 'G']
+    for i, a in enumerate(prog):
+        r, ter, qui = acorde(a, 3)
+        for k, n in enumerate((r - 12, qui - 12, r, ter, qui, ter, r, qui - 12)):
+            T.mix.add(harpa(n, 1.6, 0.4 if k % 2 else 0.5), T.s(i * 4 + k * 0.5), -0.25, 0.75)
+        T.mix.add(piano(r - 12, 3, 0.3), T.s(i * 4), 0.1, 0.6)
+    tema = ('B4:1 D5:1 G5:1.5 F#5:.5 | E5:2 D5:2 | C5:1 E5:1 G5:1 E5:1 | D5:3 r:1 | '
+            'B4:1 D5:1 G5:1 B5:1 | A5:2 G5:2 | E5:1 F#5:1 G5:1 A5:1 | G5:3 r:1')
+    T.melodia(flauta, tema, 0, 0.15, 0.7, vel=0.48)
+    T.melodia(piano, tema, 32, 0.15, 0.5, vel=0.42)
+    return T, True
+
+
 TEMAS = {'cripta': cripta, 'batalha': batalha, 'elite': elite, 'chefe': chefe, 'dragao': dragao,
-         'vitoria': vitoria, 'derrota': derrota, 'recompensa': recompensa, 'biblioteca': biblioteca, 'torre': torre}
+         'vitoria': vitoria, 'derrota': derrota, 'recompensa': recompensa, 'biblioteca': biblioteca, 'torre': torre,
+         'floresta': floresta, 'masmorra': masmorra, 'covil': covil, 'sala': sala}
