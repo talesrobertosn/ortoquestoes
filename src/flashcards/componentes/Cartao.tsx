@@ -128,6 +128,8 @@ export const Cartao = memo(function Cartao({ carta, virada, dicaFrente, aoTocar,
         <span className="fc-carta__gema" aria-hidden="true" />
         <span className="fc-carta__canto fc-carta__canto--1" aria-hidden="true" /><span className="fc-carta__canto fc-carta__canto--2" aria-hidden="true" />
         <span className="fc-carta__canto fc-carta__canto--3" aria-hidden="true" /><span className="fc-carta__canto fc-carta__canto--4" aria-hidden="true" />
+        {(carta.raridade === 'lendaria' || carta.raridade === 'epica') && <span className="fc-carta__aro" aria-hidden="true"><i /></span>}
+        {carta.raridade === 'lendaria' && <span className="fc-carta__faiscas" aria-hidden="true"><i /><i /><i /><i /><i /><i /></span>}
         {familias.length > 0 && <span className="fc-carta__fitas">{familias.map((f) => <em key={f} className={`fc-fita fc-fita--${f}`}>{FITA[f]}</em>)}</span>}
         <div className="fc-carta__moldura">
           <header className="fc-carta__cabeca">

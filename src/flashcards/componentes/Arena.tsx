@@ -1,3 +1,5 @@
+import { atacar, estiloDe, type Impacto } from '../efeitos/ataques'
+import { TABULEIRO } from '../efeitos/tabuleiros'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { gravar, ler } from '../../estado/armazenamento'
 import { href, navegar } from '../../util/rotas'
@@ -307,7 +309,13 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   }, [])
 
   // Só no desenvolvimento: os testes de tela leem o estado para escolher a alternativa certa ou errada.
-  useEffect(() => { if (import.meta.env.DEV) (window as unknown as { __torneio: unknown }).__torneio = { partida, certa: partida.atual ? partida.atual.ordem.indexOf(motor.carta(partida.atual.id).certa) : -1, definir: (p: Partida) => { partidaRef.current = p; definirPartida(p); sincronizar(p) }, cena: definirCenarioVisivel } })
+  useEffect(() => { if (import.meta.env.DEV) (window as unknown as { __torneio: unknown }).__torneio = { partida, certa: partida.atual ? partida.atual.ordem.indexOf(motor.carta(partida.atual.id).certa) : -1, definir: (p: Partida) => { partidaRef.current = p; definirPartida(p); sincronizar(p) }, cena: definirCenarioVisivel,
+    // capturas reproduzíveis: leva a partida a um andar e semente, com o adversário do jeito que o motor o prepara
+    ir: (andar: number, semente: number) => {
+      const p = partidaRef.current, { inimigo: i } = inimigoDoAndar(andar, semente, p.modo)
+      const q = { ...p, andar, sementeBase: semente, inimigo: { ...p.inimigo, id: i.id, vida: i.vida, vidaMax: i.vida, barreira: i.barreira ?? 0, fase: 1 as const, rodadas: 0, errosSeguidos: 0, furia: false } }
+      partidaRef.current = q; definirPartida(q); sincronizar(q); definirCenarioVisivel(i.cenario)
+    } } })
 
   const pular = useCallback(() => {
     geracao.current++
@@ -439,6 +447,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
           animar(arte(refInimigo), 'fc-anim-ataca', 440)
           posar(refInimigo, 'golpe', 620)
           const de = centro(refInimigo.current), para = centro(refHeroi.current)
+          let impacto: Impacto = { cor: '#ff5a3c', cor2: '#ffb090', material: [], garras: true }
           if (ev.carregado) {
             // o Sopro do dragão: a tela escurece e o fogo-fátuo atravessa a arena
             definirFaixa({ texto: ev.carregado, sub: 'Golpe carregado', tom: 'vermelho' })
@@ -449,16 +458,16 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
             definirFaixa(null)
           } else {
             tocar('golpe-inimigo', 1, quemInimigo)
-            for (let k = 1; k < ev.rajada; k++) { void P?.projetil(de, para, { cor: '#ff7a3c', nucleo: '#ffd0c0', tam: 10, duracao: 0.26, curva: -0.4 + k * 0.3, rastro: 2 }); if (!(await esperar(110, g))) return }
-            if (P) await P.projetil(de, para, { cor: '#ff5a3c', nucleo: '#ffd0c0', tam: 15, duracao: 0.34, curva: -0.25, rastro: 4 })
+            // cada arquétipo ataca do seu jeito (efeitos/ataques.ts)
+            if (P) impacto = await atacar(P, estiloDe(adv.sprite, adv.variante), de, para, ev.rajada)
           }
           if (g !== geracao.current) return
           animar(arte(refHeroi), 'fc-anim-atingido', 640)
           posar(refHeroi, 'dano', 560)
-          P?.garras(para)
-          P?.clarao(para, '#ff3a20', 240, 0.8)
-          P?.explosao(para, { cor: '#ff5a3c', cor2: '#ffb090', n: 26, forca: 300 })
-          P?.fragmentos(para, ['#9fb0c8', '#f4f8ff', '#3f78c8'], 10, 260)
+          if (impacto.garras) P?.garras(para)
+          P?.clarao(para, impacto.cor, 240, 0.8)
+          P?.explosao(para, { cor: impacto.cor, cor2: impacto.cor2, n: 22, forca: 300 })
+          P?.fragmentos(para, ['#9fb0c8', '#f4f8ff', '#3f78c8'], 8, 260)
           tocar(ev.critico ? 'critico' : 'dano', 1, quemInimigo)
           if (ev.veneno) tocar('veneno')
           tremer(ev.critico || ev.valor >= 25 ? 1 : 0.6)
@@ -988,7 +997,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
             </section>
 
             {/* Estrado de pedra com o flashcard */}
-            <section className="fc-mesa" ref={refMesa} aria-label="Mesa da batalha">
+            <section className="fc-mesa" ref={refMesa} aria-label="Mesa da batalha" data-tabuleiro={TABULEIRO[cenarioVisivel] ?? 'mesa'}>
               <TampoMesa cenario={cenarioVisivel} />
               <span className="fc-gema fc-gema--1" aria-hidden="true" /><span className="fc-gema fc-gema--2" aria-hidden="true" />
               <span className="fc-gema fc-gema--3" aria-hidden="true" /><span className="fc-gema fc-gema--4" aria-hidden="true" />
@@ -1055,7 +1064,7 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
                     <div key={partida.rodada + '-' + pos} className={`fc-slot-mao${selecionada === pos ? ' fc-slot-mao--sel' : ''}`} style={{ ['--i' as string]: pos, ['--n' as string]: ordem.length }}>
                       <button
                         type="button"
-                        className={`fc-alternativa${carta.opcoes[opcao].length > 56 ? ' fc-alternativa--muito-longa' : carta.opcoes[opcao].length > 34 ? ' fc-alternativa--longa' : ''}${Math.max(...carta.opcoes[opcao].split(/\s+/).map((x) => x.length)) > 12 ? ' fc-alternativa--palavra-longa' : ''}${eliminada ? ' fc-alternativa--eliminada' : ''}${eliminando === pos ? ' fc-alternativa--queimando' : ''}${estado ? ' fc-alternativa--' + estado : ''}`}
+                        className={`fc-alternativa${carta.opcoes[opcao].trim().length <= 4 ? ' fc-alternativa--curta' : ''}${carta.opcoes[opcao].length > 56 ? ' fc-alternativa--muito-longa' : carta.opcoes[opcao].length > 34 ? ' fc-alternativa--longa' : ''}${Math.max(...carta.opcoes[opcao].split(/\s+/).map((x) => x.length)) > 12 ? ' fc-alternativa--palavra-longa' : ''}${eliminada ? ' fc-alternativa--eliminada' : ''}${eliminando === pos ? ' fc-alternativa--queimando' : ''}${estado ? ' fc-alternativa--' + estado : ''}`}
                         disabled={partida.fase !== 'pergunta' || eliminada || !!apresentacao}
                         onClick={() => escolherAlternativa(pos, false)}
                         onPointerEnter={() => { if (partida.fase === 'pergunta' && !eliminada && faixaTela !== 'celular') tocar('hover') }}
@@ -1295,6 +1304,7 @@ function Recompensas({ partida, aoEscolher, aoEncerrar, rapido }: { partida: Par
             return (
               <button key={r} type="button" className={`fc-recompensa fc-recompensa--${d.tipo} fc-recompensa--${d.raridade}${estado}`} style={{ ['--cor' as string]: d.cor, ['--i' as string]: i }}
                 onClick={() => escolher(r)} onPointerEnter={() => { if (!escolhida) tocar('hover') }} autoFocus={i === 0} disabled={!!escolhida && escolhida !== r}>
+                {[1, 2, 3, 4].map((k) => <span key={k} className={`fc-recompensa__canto fc-recompensa__canto--${k}`} aria-hidden="true" />)}
                 <span className="fc-recompensa__fita">{d.requer ? 'Bênção em dupla' : d.patrono ? 'Bênção' : nomeTipo[d.tipo]} · {nomeRaridade[d.raridade]}</span>
                 <span className="fc-recompensa__pedestal"><span className="fc-recompensa__icone"><Sprite nome={d.icone} /></span></span>
                 <strong>{d.nome}</strong>

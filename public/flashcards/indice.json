@@ -1,9 +1,9 @@
 {
  "versao": 4,
  "geradoEm": "2026-10-13",
- "total": 4302,
- "batalha": 3858,
- "soEstudo": 444,
+ "total": 4312,
+ "batalha": 3865,
+ "soEstudo": 447,
  "comImagem": 630,
  "quarentena": 523,
  "areas": {
@@ -266,16 +266,19 @@
   "pediatria": {
    "nome": "Ortopedia pediátrica",
    "arquivo": "pediatria.json",
-   "total": 524,
-   "batalha": 486,
+   "total": 534,
+   "batalha": 493,
    "comImagem": 48,
    "tipos": {
+    "Conceito": 5,
     "Imagem": 48,
-    "Relâmpago": 476
+    "Par confundível": 2,
+    "Relâmpago": 476,
+    "Tabela": 3
    },
    "assuntos": {
     "Genuvaro, genuvalgo e torções": 39,
-    "Lesões fisárias": 32,
+    "Lesões fisárias": 38,
     "Outras doenças congênitas": 26,
     "Displasia do desenvolvimento do quadril": 26,
     "Fraturas do antebraço e punho na criança": 23,
@@ -284,7 +287,7 @@
     "Paralisia cerebral": 22,
     "Outras fraturas na criança": 22,
     "Tíbia vara (Blount)": 19,
-    "Doença de Legg-Calvé-Perthes": 17,
+    "Doença de Legg-Calvé-Perthes": 18,
     "Marcha na criança": 16,
     "Epifisiólise proximal do fêmur": 16,
     "Côndilo lateral, epicôndilo medial e rádio proximal na criança": 16,
@@ -292,10 +295,10 @@
     "Artrogripose e doenças neuromusculares": 15,
     "Osteogênese imperfeita": 14,
     "Joelho da criança": 14,
+    "Fraturas do tornozelo na criança": 14,
     "Fraturas supracondilianas do úmero": 13,
     "Maus-tratos": 11,
     "Osteocondroses": 11,
-    "Fraturas do tornozelo na criança": 11,
     "Mielomeningocele": 10,
     "Ossificação e crescimento": 10,
     "Fraturas da clavícula e do úmero proximal na criança": 10,
@@ -436,5 +439,5 @@
    }
   }
  },
- "assinatura": "fdb0307e426c"
+ "assinatura": "88383f7399f7"
 }

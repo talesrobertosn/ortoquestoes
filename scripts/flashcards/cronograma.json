@@ -1,0 +1,6769 @@
+{
+ "geradoEm": "2026-10-13",
+ "ritmo": 60,
+ "inicio": "2026-10-19",
+ "totais": {
+  "fabrica": 4302,
+  "autorais": 10,
+  "meta": 3646,
+  "falta": 3636
+ },
+ "assuntos": [
+  {
+   "assunto": "Lesões fisárias",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 4,
+   "incidencia": 77,
+   "acervo": 86,
+   "comComentario": 86,
+   "fontesRicas": 75,
+   "fabrica": 52,
+   "questoesComFlashcard": 53,
+   "autorais": 6,
+   "meta": 77,
+   "falta": 71,
+   "posicao": 1
+  },
+  {
+   "assunto": "Anatomia da mão e punho",
+   "areaId": "mao",
+   "area": "Mão e punho",
+   "nivel": 4,
+   "incidencia": 68,
+   "acervo": 255,
+   "comComentario": 254,
+   "fontesRicas": 161,
+   "fabrica": 180,
+   "questoesComFlashcard": 180,
+   "autorais": 0,
+   "meta": 68,
+   "falta": 68,
+   "posicao": 2
+  },
+  {
+   "assunto": "Genuvaro, genuvalgo e torções",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 4,
+   "incidencia": 60,
+   "acervo": 64,
+   "comComentario": 64,
+   "fontesRicas": 57,
+   "fabrica": 43,
+   "questoesComFlashcard": 43,
+   "autorais": 0,
+   "meta": 60,
+   "falta": 60,
+   "posicao": 3
+  },
+  {
+   "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 4,
+   "incidencia": 57,
+   "acervo": 81,
+   "comComentario": 81,
+   "fontesRicas": 49,
+   "fabrica": 67,
+   "questoesComFlashcard": 67,
+   "autorais": 0,
+   "meta": 57,
+   "falta": 57,
+   "posicao": 4
+  },
+  {
+   "assunto": "Lesões do manguito rotador",
+   "areaId": "ombro-cotovelo",
+   "area": "Ombro e cotovelo",
+   "nivel": 4,
+   "incidencia": 56,
+   "acervo": 59,
+   "comComentario": 59,
+   "fontesRicas": 18,
+   "fabrica": 43,
+   "questoesComFlashcard": 43,
+   "autorais": 0,
+   "meta": 56,
+   "falta": 56,
+   "posicao": 5
+  },
+  {
+   "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 4,
+   "incidencia": 53,
+   "acervo": 54,
+   "comComentario": 54,
+   "fontesRicas": 41,
+   "fabrica": 29,
+   "questoesComFlashcard": 29,
+   "autorais": 0,
+   "meta": 53,
+   "falta": 53,
+   "posicao": 6
+  },
+  {
+   "assunto": "Anatomia do ombro",
+   "areaId": "ombro-cotovelo",
+   "area": "Ombro e cotovelo",
+   "nivel": 4,
+   "incidencia": 52,
+   "acervo": 80,
+   "comComentario": 80,
+   "fontesRicas": 20,
+   "fabrica": 65,
+   "questoesComFlashcard": 65,
+   "autorais": 0,
+   "meta": 52,
+   "falta": 52,
+   "posicao": 7
+  },
+  {
+   "assunto": "Luxação do joelho e lesões ligamentares",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 4,
+   "incidencia": 50,
+   "acervo": 54,
+   "comComentario": 54,
+   "fontesRicas": 17,
+   "fabrica": 43,
+   "questoesComFlashcard": 43,
+   "autorais": 0,
+   "meta": 50,
+   "falta": 50,
+   "posicao": 8
+  },
+  {
+   "assunto": "Neuropatia ulnar e outras compressões",
+   "areaId": "mao",
+   "area": "Mão e punho",
+   "nivel": 4,
+   "incidencia": 48,
+   "acervo": 76,
+   "comComentario": 76,
+   "fontesRicas": 64,
+   "fabrica": 57,
+   "questoesComFlashcard": 57,
+   "autorais": 0,
+   "meta": 48,
+   "falta": 48,
+   "posicao": 9
+  },
+  {
+   "assunto": "Omartrose e artroplastia do ombro",
+   "areaId": "ombro-cotovelo",
+   "area": "Ombro e cotovelo",
+   "nivel": 4,
+   "incidencia": 48,
+   "acervo": 49,
+   "comComentario": 49,
+   "fontesRicas": 14,
+   "fabrica": 38,
+   "questoesComFlashcard": 38,
+   "autorais": 0,
+   "meta": 48,
+   "falta": 48,
+   "posicao": 10
+  },
+  {
+   "assunto": "Anatomia do quadril",
+   "areaId": "quadril",
+   "area": "Quadril",
+   "nivel": 4,
+   "incidencia": 47,
+   "acervo": 125,
+   "comComentario": 125,
+   "fontesRicas": 70,
+   "fabrica": 93,
+   "questoesComFlashcard": 93,
+   "autorais": 0,
+   "meta": 47,
+   "falta": 47,
+   "posicao": 11
+  },
+  {
+   "assunto": "Artroplastia total: componentes e fixação",
+   "areaId": "quadril",
+   "area": "Quadril",
+   "nivel": 4,
+   "incidencia": 45,
+   "acervo": 208,
+   "comComentario": 208,
+   "fontesRicas": 179,
+   "fabrica": 57,
+   "questoesComFlashcard": 57,
+   "autorais": 0,
+   "meta": 45,
+   "falta": 45,
+   "posicao": 12
+  },
+  {
+   "assunto": "Fraturas do antebraço e punho na criança",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 4,
+   "incidencia": 45,
+   "acervo": 46,
+   "comComentario": 46,
+   "fontesRicas": 33,
+   "fabrica": 26,
+   "questoesComFlashcard": 26,
+   "autorais": 0,
+   "meta": 45,
+   "falta": 45,
+   "posicao": 13
+  },
+  {
+   "assunto": "Fraturas do fêmur e da perna na criança",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 4,
+   "incidencia": 42,
+   "acervo": 45,
+   "comComentario": 45,
+   "fontesRicas": 35,
+   "fabrica": 25,
+   "questoesComFlashcard": 25,
+   "autorais": 0,
+   "meta": 42,
+   "falta": 42,
+   "posicao": 14
+  },
+  {
+   "assunto": "Instabilidade anterior do ombro",
+   "areaId": "ombro-cotovelo",
+   "area": "Ombro e cotovelo",
+   "nivel": 4,
+   "incidencia": 42,
+   "acervo": 64,
+   "comComentario": 64,
+   "fontesRicas": 20,
+   "fabrica": 52,
+   "questoesComFlashcard": 52,
+   "autorais": 0,
+   "meta": 42,
+   "falta": 42,
+   "posicao": 15
+  },
+  {
+   "assunto": "Fraturas da coluna toracolombar",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 4,
+   "incidencia": 41,
+   "acervo": 100,
+   "comComentario": 100,
+   "fontesRicas": 60,
+   "fabrica": 81,
+   "questoesComFlashcard": 81,
+   "autorais": 0,
+   "meta": 41,
+   "falta": 41,
+   "posicao": 16
+  },
+  {
+   "assunto": "Fraturas diafisárias do antebraço",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 4,
+   "incidencia": 41,
+   "acervo": 78,
+   "comComentario": 78,
+   "fontesRicas": 39,
+   "fabrica": 65,
+   "questoesComFlashcard": 65,
+   "autorais": 0,
+   "meta": 41,
+   "falta": 41,
+   "posicao": 17
+  },
+  {
+   "assunto": "Anatomia da coluna",
+   "areaId": "coluna",
+   "area": "Coluna",
+   "nivel": 4,
+   "incidencia": 40,
+   "acervo": 80,
+   "comComentario": 80,
+   "fontesRicas": 26,
+   "fabrica": 45,
+   "questoesComFlashcard": 45,
+   "autorais": 0,
+   "meta": 40,
+   "falta": 40,
+   "posicao": 18
+  },
+  {
+   "assunto": "Fratura do úmero proximal",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 4,
+   "incidencia": 40,
+   "acervo": 41,
+   "comComentario": 41,
+   "fontesRicas": 27,
+   "fabrica": 35,
+   "questoesComFlashcard": 35,
+   "autorais": 0,
+   "meta": 40,
+   "falta": 40,
+   "posicao": 19
+  },
+  {
+   "assunto": "Anatomia do pé e tornozelo",
+   "areaId": "pe-tornozelo",
+   "area": "Pé e tornozelo",
+   "nivel": 4,
+   "incidencia": 39,
+   "acervo": 75,
+   "comComentario": 75,
+   "fontesRicas": 57,
+   "fabrica": 59,
+   "questoesComFlashcard": 59,
+   "autorais": 0,
+   "meta": 39,
+   "falta": 39,
+   "posicao": 20
+  },
+  {
+   "assunto": "Displasia do desenvolvimento do quadril",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 4,
+   "incidencia": 39,
+   "acervo": 58,
+   "comComentario": 58,
+   "fontesRicas": 52,
+   "fabrica": 26,
+   "questoesComFlashcard": 26,
+   "autorais": 0,
+   "meta": 39,
+   "falta": 39,
+   "posicao": 21
+  },
+  {
+   "assunto": "Instabilidade do cotovelo",
+   "areaId": "ombro-cotovelo",
+   "area": "Ombro e cotovelo",
+   "nivel": 4,
+   "incidencia": 37,
+   "acervo": 39,
+   "comComentario": 39,
+   "fontesRicas": 13,
+   "fabrica": 28,
+   "questoesComFlashcard": 28,
+   "autorais": 0,
+   "meta": 37,
+   "falta": 37,
+   "posicao": 22
+  },
+  {
+   "assunto": "Lesões dos tendões flexores",
+   "areaId": "mao",
+   "area": "Mão e punho",
+   "nivel": 4,
+   "incidencia": 37,
+   "acervo": 97,
+   "comComentario": 97,
+   "fontesRicas": 71,
+   "fabrica": 68,
+   "questoesComFlashcard": 68,
+   "autorais": 0,
+   "meta": 37,
+   "falta": 37,
+   "posicao": 23
+  },
+  {
+   "assunto": "Metástases ósseas",
+   "areaId": "tumores",
+   "area": "Tumores ósseos e de partes moles",
+   "nivel": 4,
+   "incidencia": 35,
+   "acervo": 57,
+   "comComentario": 57,
+   "fontesRicas": 22,
+   "fabrica": 40,
+   "questoesComFlashcard": 40,
+   "autorais": 0,
+   "meta": 35,
+   "falta": 35,
+   "posicao": 24
+  },
+  {
+   "assunto": "Síndrome compartimental",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 4,
+   "incidencia": 35,
+   "acervo": 42,
+   "comComentario": 42,
+   "fontesRicas": 24,
+   "fabrica": 29,
+   "questoesComFlashcard": 29,
+   "autorais": 0,
+   "meta": 35,
+   "falta": 35,
+   "posicao": 25
+  },
+  {
+   "assunto": "Hérnia de disco lombar",
+   "areaId": "coluna",
+   "area": "Coluna",
+   "nivel": 4,
+   "incidencia": 34,
+   "acervo": 45,
+   "comComentario": 45,
+   "fontesRicas": 16,
+   "fabrica": 23,
+   "questoesComFlashcard": 23,
+   "autorais": 0,
+   "meta": 34,
+   "falta": 34,
+   "posicao": 26
+  },
+  {
+   "assunto": "Estadiamento, biópsia e margens",
+   "areaId": "tumores",
+   "area": "Tumores ósseos e de partes moles",
+   "nivel": 4,
+   "incidencia": 33,
+   "acervo": 37,
+   "comComentario": 37,
+   "fontesRicas": 17,
+   "fabrica": 31,
+   "questoesComFlashcard": 31,
+   "autorais": 0,
+   "meta": 33,
+   "falta": 33,
+   "posicao": 27
+  },
+  {
+   "assunto": "Lesão do ligamento cruzado anterior",
+   "areaId": "joelho",
+   "area": "Joelho",
+   "nivel": 4,
+   "incidencia": 33,
+   "acervo": 35,
+   "comComentario": 35,
+   "fontesRicas": 6,
+   "fabrica": 21,
+   "questoesComFlashcard": 21,
+   "autorais": 0,
+   "meta": 33,
+   "falta": 33,
+   "posicao": 28
+  },
+  {
+   "assunto": "Lesões do bíceps",
+   "areaId": "ombro-cotovelo",
+   "area": "Ombro e cotovelo",
+   "nivel": 4,
+   "incidencia": 33,
+   "acervo": 33,
+   "comComentario": 33,
+   "fontesRicas": 7,
+   "fabrica": 28,
+   "questoesComFlashcard": 28,
+   "autorais": 0,
+   "meta": 33,
+   "falta": 33,
+   "posicao": 29
+  },
+  {
+   "assunto": "Osteomielite aguda",
+   "areaId": "conceitos-basicos",
+   "area": "Conceitos básicos",
+   "nivel": 4,
+   "incidencia": 33,
+   "acervo": 34,
+   "comComentario": 34,
+   "fontesRicas": 8,
+   "fabrica": 25,
+   "questoesComFlashcard": 25,
+   "autorais": 0,
+   "meta": 33,
+   "falta": 33,
+   "posicao": 30
+  },
+  {
+   "assunto": "Displasias esqueléticas e síndromes",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 4,
+   "incidencia": 32,
+   "acervo": 39,
+   "comComentario": 39,
+   "fontesRicas": 32,
+   "fabrica": 18,
+   "questoesComFlashcard": 18,
+   "autorais": 0,
+   "meta": 32,
+   "falta": 32,
+   "posicao": 31
+  },
+  {
+   "assunto": "Lesão medular e síndromes medulares",
+   "areaId": "coluna",
+   "area": "Coluna",
+   "nivel": 4,
+   "incidencia": 31,
+   "acervo": 64,
+   "comComentario": 64,
+   "fontesRicas": 29,
+   "fabrica": 34,
+   "questoesComFlashcard": 34,
+   "autorais": 0,
+   "meta": 31,
+   "falta": 31,
+   "posicao": 32
+  },
+  {
+   "assunto": "Paralisia cerebral",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 4,
+   "incidencia": 31,
+   "acervo": 36,
+   "comComentario": 36,
+   "fontesRicas": 35,
+   "fabrica": 22,
+   "questoesComFlashcard": 22,
+   "autorais": 0,
+   "meta": 31,
+   "falta": 31,
+   "posicao": 33
+  },
+  {
+   "assunto": "Anatomia do joelho",
+   "areaId": "joelho",
+   "area": "Joelho",
+   "nivel": 4,
+   "incidencia": 30,
+   "acervo": 66,
+   "comComentario": 66,
+   "fontesRicas": 32,
+   "fabrica": 58,
+   "questoesComFlashcard": 58,
+   "autorais": 0,
+   "meta": 30,
+   "falta": 30,
+   "posicao": 34
+  },
+  {
+   "assunto": "Escoliose idiopática",
+   "areaId": "coluna",
+   "area": "Coluna",
+   "nivel": 4,
+   "incidencia": 30,
+   "acervo": 43,
+   "comComentario": 43,
+   "fontesRicas": 24,
+   "fabrica": 23,
+   "questoesComFlashcard": 23,
+   "autorais": 0,
+   "meta": 30,
+   "falta": 30,
+   "posicao": 35
+  },
+  {
+   "assunto": "Fratura da escápula",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 4,
+   "incidencia": 30,
+   "acervo": 83,
+   "comComentario": 83,
+   "fontesRicas": 74,
+   "fabrica": 76,
+   "questoesComFlashcard": 76,
+   "autorais": 0,
+   "meta": 30,
+   "falta": 30,
+   "posicao": 36
+  },
+  {
+   "assunto": "Princípios de osteossíntese",
+   "areaId": "conceitos-basicos",
+   "area": "Conceitos básicos",
+   "nivel": 4,
+   "incidencia": 30,
+   "acervo": 76,
+   "comComentario": 76,
+   "fontesRicas": 23,
+   "fabrica": 64,
+   "questoesComFlashcard": 64,
+   "autorais": 0,
+   "meta": 30,
+   "falta": 30,
+   "posicao": 37
+  },
+  {
+   "assunto": "Artroplastia total do joelho",
+   "areaId": "joelho",
+   "area": "Joelho",
+   "nivel": 4,
+   "incidencia": 29,
+   "acervo": 32,
+   "comComentario": 32,
+   "fontesRicas": 9,
+   "fabrica": 19,
+   "questoesComFlashcard": 19,
+   "autorais": 0,
+   "meta": 29,
+   "falta": 29,
+   "posicao": 38
+  },
+  {
+   "assunto": "Fratura da clavícula",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 4,
+   "incidencia": 29,
+   "acervo": 61,
+   "comComentario": 61,
+   "fontesRicas": 50,
+   "fabrica": 54,
+   "questoesComFlashcard": 54,
+   "autorais": 0,
+   "meta": 29,
+   "falta": 29,
+   "posicao": 39
+  },
+  {
+   "assunto": "Fraturas do tálus e do calcâneo",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 4,
+   "incidencia": 29,
+   "acervo": 30,
+   "comComentario": 30,
+   "fontesRicas": 28,
+   "fabrica": 29,
+   "questoesComFlashcard": 29,
+   "autorais": 0,
+   "meta": 29,
+   "falta": 29,
+   "posicao": 40
+  },
+  {
+   "assunto": "Fraturas dos metacarpos e falanges",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 4,
+   "incidencia": 28,
+   "acervo": 132,
+   "comComentario": 131,
+   "fontesRicas": 76,
+   "fabrica": 100,
+   "questoesComFlashcard": 100,
+   "autorais": 0,
+   "meta": 28,
+   "falta": 28,
+   "posicao": 41
+  },
+  {
+   "assunto": "Espondilólise e espondilolistese",
+   "areaId": "coluna",
+   "area": "Coluna",
+   "nivel": 4,
+   "incidencia": 27,
+   "acervo": 31,
+   "comComentario": 31,
+   "fontesRicas": 19,
+   "fabrica": 22,
+   "questoesComFlashcard": 22,
+   "autorais": 0,
+   "meta": 27,
+   "falta": 27,
+   "posicao": 42
+  },
+  {
+   "assunto": "Pé torto congênito",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 4,
+   "incidencia": 27,
+   "acervo": 32,
+   "comComentario": 32,
+   "fontesRicas": 25,
+   "fabrica": 23,
+   "questoesComFlashcard": 23,
+   "autorais": 0,
+   "meta": 27,
+   "falta": 27,
+   "posicao": 43
+  },
+  {
+   "assunto": "Fratura da patela e lesão do aparelho extensor",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 3,
+   "incidencia": 27,
+   "acervo": 29,
+   "comComentario": 29,
+   "fontesRicas": 13,
+   "fabrica": 22,
+   "questoesComFlashcard": 22,
+   "autorais": 0,
+   "meta": 19,
+   "falta": 19,
+   "posicao": 44
+  },
+  {
+   "assunto": "Lesões dos tendões extensores",
+   "areaId": "mao",
+   "area": "Mão e punho",
+   "nivel": 4,
+   "incidencia": 26,
+   "acervo": 90,
+   "comComentario": 90,
+   "fontesRicas": 73,
+   "fabrica": 55,
+   "questoesComFlashcard": 55,
+   "autorais": 0,
+   "meta": 26,
+   "falta": 26,
+   "posicao": 45
+  },
+  {
+   "assunto": "Fratura da diáfise do fêmur",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 3,
+   "incidencia": 26,
+   "acervo": 28,
+   "comComentario": 28,
+   "fontesRicas": 13,
+   "fabrica": 23,
+   "questoesComFlashcard": 23,
+   "autorais": 0,
+   "meta": 19,
+   "falta": 19,
+   "posicao": 46
+  },
+  {
+   "assunto": "Condrossarcoma",
+   "areaId": "tumores",
+   "area": "Tumores ósseos e de partes moles",
+   "nivel": 4,
+   "incidencia": 25,
+   "acervo": 25,
+   "comComentario": 25,
+   "fontesRicas": 5,
+   "fabrica": 19,
+   "questoesComFlashcard": 19,
+   "autorais": 0,
+   "meta": 25,
+   "falta": 25,
+   "posicao": 47
+  },
+  {
+   "assunto": "Exame físico da mão e punho",
+   "areaId": "mao",
+   "area": "Mão e punho",
+   "nivel": 4,
+   "incidencia": 25,
+   "acervo": 56,
+   "comComentario": 56,
+   "fontesRicas": 47,
+   "fabrica": 32,
+   "questoesComFlashcard": 32,
+   "autorais": 0,
+   "meta": 25,
+   "falta": 25,
+   "posicao": 48
+  },
+  {
+   "assunto": "Hálux valgo",
+   "areaId": "pe-tornozelo",
+   "area": "Pé e tornozelo",
+   "nivel": 4,
+   "incidencia": 25,
+   "acervo": 27,
+   "comComentario": 27,
+   "fontesRicas": 19,
+   "fabrica": 22,
+   "questoesComFlashcard": 22,
+   "autorais": 0,
+   "meta": 25,
+   "falta": 25,
+   "posicao": 49
+  },
+  {
+   "assunto": "Ossificação e crescimento",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 4,
+   "incidencia": 25,
+   "acervo": 27,
+   "comComentario": 27,
+   "fontesRicas": 25,
+   "fabrica": 15,
+   "questoesComFlashcard": 15,
+   "autorais": 0,
+   "meta": 25,
+   "falta": 25,
+   "posicao": 50
+  },
+  {
+   "assunto": "Tíbia vara (Blount)",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 3,
+   "incidencia": 25,
+   "acervo": 28,
+   "comComentario": 28,
+   "fontesRicas": 28,
+   "fabrica": 20,
+   "questoesComFlashcard": 20,
+   "autorais": 0,
+   "meta": 18,
+   "falta": 18,
+   "posicao": 51
+  },
+  {
+   "assunto": "Artrogripose e doenças neuromusculares",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 3,
+   "incidencia": 24,
+   "acervo": 25,
+   "comComentario": 25,
+   "fontesRicas": 24,
+   "fabrica": 18,
+   "questoesComFlashcard": 18,
+   "autorais": 0,
+   "meta": 17,
+   "falta": 17,
+   "posicao": 52
+  },
+  {
+   "assunto": "Fratura do anel pélvico",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 3,
+   "incidencia": 24,
+   "acervo": 49,
+   "comComentario": 48,
+   "fontesRicas": 29,
+   "fabrica": 33,
+   "questoesComFlashcard": 33,
+   "autorais": 0,
+   "meta": 17,
+   "falta": 17,
+   "posicao": 53
+  },
+  {
+   "assunto": "Fratura do planalto tibial",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 3,
+   "incidencia": 24,
+   "acervo": 26,
+   "comComentario": 26,
+   "fontesRicas": 20,
+   "fabrica": 21,
+   "questoesComFlashcard": 21,
+   "autorais": 0,
+   "meta": 17,
+   "falta": 17,
+   "posicao": 54
+  },
+  {
+   "assunto": "Fraturas por estresse",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 3,
+   "incidencia": 24,
+   "acervo": 44,
+   "comComentario": 44,
+   "fontesRicas": 37,
+   "fabrica": 37,
+   "questoesComFlashcard": 37,
+   "autorais": 0,
+   "meta": 17,
+   "falta": 17,
+   "posicao": 55
+  },
+  {
+   "assunto": "Joelho da criança",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 3,
+   "incidencia": 24,
+   "acervo": 34,
+   "comComentario": 34,
+   "fontesRicas": 29,
+   "fabrica": 18,
+   "questoesComFlashcard": 18,
+   "autorais": 0,
+   "meta": 17,
+   "falta": 17,
+   "posicao": 56
+  },
+  {
+   "assunto": "Instabilidade do carpo",
+   "areaId": "mao",
+   "area": "Mão e punho",
+   "nivel": 4,
+   "incidencia": 23,
+   "acervo": 65,
+   "comComentario": 65,
+   "fontesRicas": 50,
+   "fabrica": 43,
+   "questoesComFlashcard": 43,
+   "autorais": 0,
+   "meta": 23,
+   "falta": 23,
+   "posicao": 57
+  },
+  {
+   "assunto": "Lesão do ligamento cruzado posterior",
+   "areaId": "joelho",
+   "area": "Joelho",
+   "nivel": 4,
+   "incidencia": 23,
+   "acervo": 23,
+   "comComentario": 23,
+   "fontesRicas": 4,
+   "fabrica": 15,
+   "questoesComFlashcard": 15,
+   "autorais": 0,
+   "meta": 23,
+   "falta": 23,
+   "posicao": 58
+  },
+  {
+   "assunto": "Fratura do úmero distal",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 3,
+   "incidencia": 23,
+   "acervo": 50,
+   "comComentario": 50,
+   "fontesRicas": 29,
+   "fabrica": 39,
+   "questoesComFlashcard": 39,
+   "autorais": 0,
+   "meta": 17,
+   "falta": 17,
+   "posicao": 59
+  },
+  {
+   "assunto": "Fraturas da pelve e do quadril na criança",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 3,
+   "incidencia": 23,
+   "acervo": 27,
+   "comComentario": 27,
+   "fontesRicas": 23,
+   "fabrica": 9,
+   "questoesComFlashcard": 9,
+   "autorais": 0,
+   "meta": 17,
+   "falta": 17,
+   "posicao": 60
+  },
+  {
+   "assunto": "Osteossarcoma",
+   "areaId": "tumores",
+   "area": "Tumores ósseos e de partes moles",
+   "nivel": 4,
+   "incidencia": 22,
+   "acervo": 24,
+   "comComentario": 24,
+   "fontesRicas": 12,
+   "fabrica": 18,
+   "questoesComFlashcard": 18,
+   "autorais": 0,
+   "meta": 22,
+   "falta": 22,
+   "posicao": 61
+  },
+  {
+   "assunto": "Pseudartrose e retardo de consolidação",
+   "areaId": "conceitos-basicos",
+   "area": "Conceitos básicos",
+   "nivel": 4,
+   "incidencia": 22,
+   "acervo": 31,
+   "comComentario": 31,
+   "fontesRicas": 7,
+   "fabrica": 24,
+   "questoesComFlashcard": 24,
+   "autorais": 0,
+   "meta": 22,
+   "falta": 22,
+   "posicao": 62
+  },
+  {
+   "assunto": "Fratura da diáfise da tíbia",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 3,
+   "incidencia": 22,
+   "acervo": 26,
+   "comComentario": 26,
+   "fontesRicas": 20,
+   "fabrica": 23,
+   "questoesComFlashcard": 23,
+   "autorais": 0,
+   "meta": 16,
+   "falta": 16,
+   "posicao": 63
+  },
+  {
+   "assunto": "Fratura subtrocantérica",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 3,
+   "incidencia": 22,
+   "acervo": 22,
+   "comComentario": 22,
+   "fontesRicas": 18,
+   "fabrica": 17,
+   "questoesComFlashcard": 17,
+   "autorais": 0,
+   "meta": 16,
+   "falta": 16,
+   "posicao": 64
+  },
+  {
+   "assunto": "Marcha na criança",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 3,
+   "incidencia": 22,
+   "acervo": 30,
+   "comComentario": 30,
+   "fontesRicas": 27,
+   "fabrica": 17,
+   "questoesComFlashcard": 17,
+   "autorais": 0,
+   "meta": 16,
+   "falta": 16,
+   "posicao": 65
+  },
+  {
+   "assunto": "Lesões de nervos periféricos",
+   "areaId": "mao",
+   "area": "Mão e punho",
+   "nivel": 4,
+   "incidencia": 21,
+   "acervo": 66,
+   "comComentario": 66,
+   "fontesRicas": 49,
+   "fabrica": 43,
+   "questoesComFlashcard": 43,
+   "autorais": 0,
+   "meta": 21,
+   "falta": 21,
+   "posicao": 66
+  },
+  {
+   "assunto": "Tumor de células gigantes",
+   "areaId": "tumores",
+   "area": "Tumores ósseos e de partes moles",
+   "nivel": 4,
+   "incidencia": 21,
+   "acervo": 23,
+   "comComentario": 23,
+   "fontesRicas": 6,
+   "fabrica": 18,
+   "questoesComFlashcard": 18,
+   "autorais": 0,
+   "meta": 21,
+   "falta": 21,
+   "posicao": 67
+  },
+  {
+   "assunto": "Doença de Legg-Calvé-Perthes",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 3,
+   "incidencia": 21,
+   "acervo": 24,
+   "comComentario": 24,
+   "fontesRicas": 24,
+   "fabrica": 17,
+   "questoesComFlashcard": 17,
+   "autorais": 1,
+   "meta": 15,
+   "falta": 14,
+   "posicao": 68
+  },
+  {
+   "assunto": "Epifisiólise proximal do fêmur",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 3,
+   "incidencia": 21,
+   "acervo": 24,
+   "comComentario": 24,
+   "fontesRicas": 22,
+   "fabrica": 16,
+   "questoesComFlashcard": 16,
+   "autorais": 0,
+   "meta": 15,
+   "falta": 15,
+   "posicao": 69
+  },
+  {
+   "assunto": "Fratura do colo do fêmur",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 3,
+   "incidencia": 21,
+   "acervo": 23,
+   "comComentario": 23,
+   "fontesRicas": 19,
+   "fabrica": 18,
+   "questoesComFlashcard": 18,
+   "autorais": 0,
+   "meta": 15,
+   "falta": 15,
+   "posicao": 70
+  },
+  {
+   "assunto": "Fraturas da coluna toracolombar",
+   "areaId": "coluna",
+   "area": "Coluna",
+   "nivel": 3,
+   "incidencia": 21,
+   "acervo": 100,
+   "comComentario": 100,
+   "fontesRicas": 60,
+   "fabrica": 81,
+   "questoesComFlashcard": 81,
+   "autorais": 0,
+   "meta": 15,
+   "falta": 15,
+   "posicao": 71
+  },
+  {
+   "assunto": "Fratura do escafoide e do carpo",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 2,
+   "incidencia": 21,
+   "acervo": 28,
+   "comComentario": 28,
+   "fontesRicas": 23,
+   "fabrica": 21,
+   "questoesComFlashcard": 21,
+   "autorais": 0,
+   "meta": 9,
+   "falta": 9,
+   "posicao": 72
+  },
+  {
+   "assunto": "Fraturas expostas",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 2,
+   "incidencia": 21,
+   "acervo": 32,
+   "comComentario": 32,
+   "fontesRicas": 22,
+   "fabrica": 13,
+   "questoesComFlashcard": 13,
+   "autorais": 0,
+   "meta": 9,
+   "falta": 9,
+   "posicao": 73
+  },
+  {
+   "assunto": "Exame físico do ombro",
+   "areaId": "ombro-cotovelo",
+   "area": "Ombro e cotovelo",
+   "nivel": 4,
+   "incidencia": 20,
+   "acervo": 32,
+   "comComentario": 32,
+   "fontesRicas": 12,
+   "fabrica": 19,
+   "questoesComFlashcard": 19,
+   "autorais": 0,
+   "meta": 20,
+   "falta": 20,
+   "posicao": 74
+  },
+  {
+   "assunto": "Lesões meniscais",
+   "areaId": "joelho",
+   "area": "Joelho",
+   "nivel": 4,
+   "incidencia": 20,
+   "acervo": 25,
+   "comComentario": 25,
+   "fontesRicas": 12,
+   "fabrica": 12,
+   "questoesComFlashcard": 12,
+   "autorais": 0,
+   "meta": 20,
+   "falta": 20,
+   "posicao": 75
+  },
+  {
+   "assunto": "Tumores benignos de partes moles",
+   "areaId": "tumores",
+   "area": "Tumores ósseos e de partes moles",
+   "nivel": 4,
+   "incidencia": 20,
+   "acervo": 20,
+   "comComentario": 20,
+   "fontesRicas": 3,
+   "fabrica": 17,
+   "questoesComFlashcard": 17,
+   "autorais": 0,
+   "meta": 20,
+   "falta": 20,
+   "posicao": 76
+  },
+  {
+   "assunto": "Doença de Dupuytren",
+   "areaId": "mao",
+   "area": "Mão e punho",
+   "nivel": 3,
+   "incidencia": 20,
+   "acervo": 48,
+   "comComentario": 48,
+   "fontesRicas": 40,
+   "fabrica": 29,
+   "questoesComFlashcard": 29,
+   "autorais": 0,
+   "meta": 14,
+   "falta": 14,
+   "posicao": 77
+  },
+  {
+   "assunto": "Exame neurológico e radiculopatias",
+   "areaId": "coluna",
+   "area": "Coluna",
+   "nivel": 3,
+   "incidencia": 20,
+   "acervo": 39,
+   "comComentario": 39,
+   "fontesRicas": 19,
+   "fabrica": 18,
+   "questoesComFlashcard": 18,
+   "autorais": 0,
+   "meta": 14,
+   "falta": 14,
+   "posicao": 78
+  },
+  {
+   "assunto": "Fraturas supracondilianas do úmero",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 3,
+   "incidencia": 20,
+   "acervo": 20,
+   "comComentario": 20,
+   "fontesRicas": 16,
+   "fabrica": 13,
+   "questoesComFlashcard": 13,
+   "autorais": 0,
+   "meta": 14,
+   "falta": 14,
+   "posicao": 79
+  },
+  {
+   "assunto": "Retalhos e cobertura cutânea",
+   "areaId": "mao",
+   "area": "Mão e punho",
+   "nivel": 3,
+   "incidencia": 20,
+   "acervo": 96,
+   "comComentario": 96,
+   "fontesRicas": 62,
+   "fabrica": 48,
+   "questoesComFlashcard": 48,
+   "autorais": 0,
+   "meta": 14,
+   "falta": 14,
+   "posicao": 80
+  },
+  {
+   "assunto": "Dor e analgesia",
+   "areaId": "conceitos-basicos",
+   "area": "Conceitos básicos",
+   "nivel": 4,
+   "incidencia": 19,
+   "acervo": 27,
+   "comComentario": 27,
+   "fontesRicas": 9,
+   "fabrica": 15,
+   "questoesComFlashcard": 15,
+   "autorais": 0,
+   "meta": 19,
+   "falta": 19,
+   "posicao": 81
+  },
+  {
+   "assunto": "Osteonecrose da cabeça femoral",
+   "areaId": "quadril",
+   "area": "Quadril",
+   "nivel": 4,
+   "incidencia": 19,
+   "acervo": 32,
+   "comComentario": 32,
+   "fontesRicas": 31,
+   "fabrica": 14,
+   "questoesComFlashcard": 14,
+   "autorais": 0,
+   "meta": 19,
+   "falta": 19,
+   "posicao": 82
+  },
+  {
+   "assunto": "Pé diabético e neuroartropatia de Charcot",
+   "areaId": "pe-tornozelo",
+   "area": "Pé e tornozelo",
+   "nivel": 4,
+   "incidencia": 19,
+   "acervo": 22,
+   "comComentario": 22,
+   "fontesRicas": 18,
+   "fabrica": 14,
+   "questoesComFlashcard": 14,
+   "autorais": 0,
+   "meta": 19,
+   "falta": 19,
+   "posicao": 83
+  },
+  {
+   "assunto": "Displasia fibrosa",
+   "areaId": "tumores",
+   "area": "Tumores ósseos e de partes moles",
+   "nivel": 3,
+   "incidencia": 19,
+   "acervo": 20,
+   "comComentario": 20,
+   "fontesRicas": 3,
+   "fabrica": 15,
+   "questoesComFlashcard": 15,
+   "autorais": 0,
+   "meta": 14,
+   "falta": 14,
+   "posicao": 84
+  },
+  {
+   "assunto": "Hérnia de disco e mielopatia cervical",
+   "areaId": "coluna",
+   "area": "Coluna",
+   "nivel": 3,
+   "incidencia": 19,
+   "acervo": 31,
+   "comComentario": 31,
+   "fontesRicas": 17,
+   "fabrica": 14,
+   "questoesComFlashcard": 14,
+   "autorais": 0,
+   "meta": 14,
+   "falta": 14,
+   "posicao": 85
+  },
+  {
+   "assunto": "Mão reumatoide",
+   "areaId": "mao",
+   "area": "Mão e punho",
+   "nivel": 3,
+   "incidencia": 19,
+   "acervo": 34,
+   "comComentario": 34,
+   "fontesRicas": 27,
+   "fabrica": 22,
+   "questoesComFlashcard": 22,
+   "autorais": 0,
+   "meta": 14,
+   "falta": 14,
+   "posicao": 86
+  },
+  {
+   "assunto": "Artroscopia e vias de acesso do ombro",
+   "areaId": "ombro-cotovelo",
+   "area": "Ombro e cotovelo",
+   "nivel": 4,
+   "incidencia": 18,
+   "acervo": 20,
+   "comComentario": 20,
+   "fontesRicas": 3,
+   "fabrica": 17,
+   "questoesComFlashcard": 17,
+   "autorais": 0,
+   "meta": 18,
+   "falta": 18,
+   "posicao": 87
+  },
+  {
+   "assunto": "Osteoporose: diagnóstico",
+   "areaId": "osteometabolicas",
+   "area": "Osteometabólicas",
+   "nivel": 4,
+   "incidencia": 18,
+   "acervo": 25,
+   "comComentario": 25,
+   "fontesRicas": 16,
+   "fabrica": 20,
+   "questoesComFlashcard": 20,
+   "autorais": 0,
+   "meta": 18,
+   "falta": 18,
+   "posicao": 88
+  },
+  {
+   "assunto": "Capsulite adesiva",
+   "areaId": "ombro-cotovelo",
+   "area": "Ombro e cotovelo",
+   "nivel": 3,
+   "incidencia": 18,
+   "acervo": 18,
+   "comComentario": 18,
+   "fontesRicas": 9,
+   "fabrica": 12,
+   "questoesComFlashcard": 12,
+   "autorais": 0,
+   "meta": 13,
+   "falta": 13,
+   "posicao": 89
+  },
+  {
+   "assunto": "Lesões ligamentares dos dedos",
+   "areaId": "mao",
+   "area": "Mão e punho",
+   "nivel": 3,
+   "incidencia": 18,
+   "acervo": 47,
+   "comComentario": 46,
+   "fontesRicas": 27,
+   "fabrica": 28,
+   "questoesComFlashcard": 28,
+   "autorais": 0,
+   "meta": 13,
+   "falta": 13,
+   "posicao": 90
+  },
+  {
+   "assunto": "Fratura do acetábulo",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 2,
+   "incidencia": 18,
+   "acervo": 43,
+   "comComentario": 43,
+   "fontesRicas": 30,
+   "fabrica": 29,
+   "questoesComFlashcard": 29,
+   "autorais": 0,
+   "meta": 8,
+   "falta": 8,
+   "posicao": 91
+  },
+  {
+   "assunto": "Fratura do fêmur distal",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 2,
+   "incidencia": 18,
+   "acervo": 20,
+   "comComentario": 20,
+   "fontesRicas": 16,
+   "fabrica": 15,
+   "questoesComFlashcard": 15,
+   "autorais": 0,
+   "meta": 8,
+   "falta": 8,
+   "posicao": 92
+  },
+  {
+   "assunto": "Fraturas da coluna cervical alta",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 2,
+   "incidencia": 18,
+   "acervo": 19,
+   "comComentario": 19,
+   "fontesRicas": 19,
+   "fabrica": 17,
+   "questoesComFlashcard": 17,
+   "autorais": 0,
+   "meta": 8,
+   "falta": 8,
+   "posicao": 93
+  },
+  {
+   "assunto": "Luxação do quadril e fratura da cabeça femoral",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 2,
+   "incidencia": 18,
+   "acervo": 23,
+   "comComentario": 23,
+   "fontesRicas": 13,
+   "fabrica": 20,
+   "questoesComFlashcard": 20,
+   "autorais": 0,
+   "meta": 8,
+   "falta": 8,
+   "posicao": 94
+  },
+  {
+   "assunto": "Artrite séptica",
+   "areaId": "conceitos-basicos",
+   "area": "Conceitos básicos",
+   "nivel": 3,
+   "incidencia": 17,
+   "acervo": 17,
+   "comComentario": 17,
+   "fontesRicas": 0,
+   "fabrica": 13,
+   "questoesComFlashcard": 13,
+   "autorais": 0,
+   "meta": 12,
+   "falta": 12,
+   "posicao": 95
+  },
+  {
+   "assunto": "Coluna e pescoço da criança",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 3,
+   "incidencia": 17,
+   "acervo": 19,
+   "comComentario": 19,
+   "fontesRicas": 17,
+   "fabrica": 9,
+   "questoesComFlashcard": 9,
+   "autorais": 0,
+   "meta": 12,
+   "falta": 12,
+   "posicao": 96
+  },
+  {
+   "assunto": "Consolidação óssea",
+   "areaId": "conceitos-basicos",
+   "area": "Conceitos básicos",
+   "nivel": 3,
+   "incidencia": 17,
+   "acervo": 30,
+   "comComentario": 30,
+   "fontesRicas": 11,
+   "fabrica": 28,
+   "questoesComFlashcard": 28,
+   "autorais": 0,
+   "meta": 12,
+   "falta": 12,
+   "posicao": 97
+  },
+  {
+   "assunto": "Imagem do ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "area": "Ombro e cotovelo",
+   "nivel": 3,
+   "incidencia": 17,
+   "acervo": 29,
+   "comComentario": 29,
+   "fontesRicas": 21,
+   "fabrica": 20,
+   "questoesComFlashcard": 20,
+   "autorais": 0,
+   "meta": 12,
+   "falta": 12,
+   "posicao": 98
+  },
+  {
+   "assunto": "Luxação acromioclavicular",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 2,
+   "incidencia": 17,
+   "acervo": 58,
+   "comComentario": 58,
+   "fontesRicas": 55,
+   "fabrica": 55,
+   "questoesComFlashcard": 55,
+   "autorais": 0,
+   "meta": 7,
+   "falta": 7,
+   "posicao": 99
+  },
+  {
+   "assunto": "Coalizões tarsais",
+   "areaId": "pe-tornozelo",
+   "area": "Pé e tornozelo",
+   "nivel": 4,
+   "incidencia": 16,
+   "acervo": 17,
+   "comComentario": 17,
+   "fontesRicas": 12,
+   "fabrica": 11,
+   "questoesComFlashcard": 11,
+   "autorais": 0,
+   "meta": 16,
+   "falta": 16,
+   "posicao": 100
+  },
+  {
+   "assunto": "Instabilidade femoropatelar",
+   "areaId": "joelho",
+   "area": "Joelho",
+   "nivel": 4,
+   "incidencia": 16,
+   "acervo": 16,
+   "comComentario": 16,
+   "fontesRicas": 4,
+   "fabrica": 10,
+   "questoesComFlashcard": 10,
+   "autorais": 0,
+   "meta": 16,
+   "falta": 16,
+   "posicao": 101
+  },
+  {
+   "assunto": "Osteocondrite dissecante",
+   "areaId": "joelho",
+   "area": "Joelho",
+   "nivel": 4,
+   "incidencia": 16,
+   "acervo": 17,
+   "comComentario": 17,
+   "fontesRicas": 2,
+   "fabrica": 12,
+   "questoesComFlashcard": 12,
+   "autorais": 0,
+   "meta": 16,
+   "falta": 16,
+   "posicao": 102
+  },
+  {
+   "assunto": "Pé cavo",
+   "areaId": "pe-tornozelo",
+   "area": "Pé e tornozelo",
+   "nivel": 4,
+   "incidencia": 16,
+   "acervo": 17,
+   "comComentario": 17,
+   "fontesRicas": 11,
+   "fabrica": 11,
+   "questoesComFlashcard": 11,
+   "autorais": 0,
+   "meta": 16,
+   "falta": 16,
+   "posicao": 103
+  },
+  {
+   "assunto": "Epicondilite lateral e medial",
+   "areaId": "ombro-cotovelo",
+   "area": "Ombro e cotovelo",
+   "nivel": 3,
+   "incidencia": 16,
+   "acervo": 19,
+   "comComentario": 19,
+   "fontesRicas": 4,
+   "fabrica": 16,
+   "questoesComFlashcard": 16,
+   "autorais": 0,
+   "meta": 12,
+   "falta": 12,
+   "posicao": 104
+  },
+  {
+   "assunto": "Lesões musculares",
+   "areaId": "conceitos-basicos",
+   "area": "Conceitos básicos",
+   "nivel": 3,
+   "incidencia": 16,
+   "acervo": 18,
+   "comComentario": 18,
+   "fontesRicas": 5,
+   "fabrica": 9,
+   "questoesComFlashcard": 9,
+   "autorais": 0,
+   "meta": 12,
+   "falta": 12,
+   "posicao": 105
+  },
+  {
+   "assunto": "Lesões nervosas do ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "area": "Ombro e cotovelo",
+   "nivel": 3,
+   "incidencia": 16,
+   "acervo": 19,
+   "comComentario": 19,
+   "fontesRicas": 3,
+   "fabrica": 12,
+   "questoesComFlashcard": 12,
+   "autorais": 0,
+   "meta": 12,
+   "falta": 12,
+   "posicao": 106
+  },
+  {
+   "assunto": "Plexo braquial e paralisia obstétrica",
+   "areaId": "mao",
+   "area": "Mão e punho",
+   "nivel": 3,
+   "incidencia": 16,
+   "acervo": 73,
+   "comComentario": 73,
+   "fontesRicas": 45,
+   "fabrica": 45,
+   "questoesComFlashcard": 45,
+   "autorais": 0,
+   "meta": 12,
+   "falta": 12,
+   "posicao": 107
+  },
+  {
+   "assunto": "Ruptura dos tendões patelar e quadricipital",
+   "areaId": "joelho",
+   "area": "Joelho",
+   "nivel": 3,
+   "incidencia": 16,
+   "acervo": 16,
+   "comComentario": 16,
+   "fontesRicas": 1,
+   "fabrica": 13,
+   "questoesComFlashcard": 13,
+   "autorais": 0,
+   "meta": 12,
+   "falta": 12,
+   "posicao": 108
+  },
+  {
+   "assunto": "Fratura do rádio distal",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 2,
+   "incidencia": 16,
+   "acervo": 74,
+   "comComentario": 74,
+   "fontesRicas": 37,
+   "fabrica": 58,
+   "questoesComFlashcard": 58,
+   "autorais": 0,
+   "meta": 7,
+   "falta": 7,
+   "posicao": 109
+  },
+  {
+   "assunto": "Fratura do tornozelo",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 2,
+   "incidencia": 16,
+   "acervo": 17,
+   "comComentario": 17,
+   "fontesRicas": 16,
+   "fabrica": 16,
+   "questoesComFlashcard": 16,
+   "autorais": 0,
+   "meta": 7,
+   "falta": 7,
+   "posicao": 110
+  },
+  {
+   "assunto": "Fraturas do tornozelo na criança",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 2,
+   "incidencia": 16,
+   "acervo": 17,
+   "comComentario": 17,
+   "fontesRicas": 13,
+   "fabrica": 12,
+   "questoesComFlashcard": 12,
+   "autorais": 3,
+   "meta": 7,
+   "falta": 4,
+   "posicao": 111
+  },
+  {
+   "assunto": "Mielomeningocele",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 2,
+   "incidencia": 16,
+   "acervo": 16,
+   "comComentario": 16,
+   "fontesRicas": 13,
+   "fabrica": 10,
+   "questoesComFlashcard": 10,
+   "autorais": 0,
+   "meta": 7,
+   "falta": 7,
+   "posicao": 112
+  },
+  {
+   "assunto": "Espondiloartrites e outras artrites",
+   "areaId": "osteometabolicas",
+   "area": "Osteometabólicas",
+   "nivel": 4,
+   "incidencia": 15,
+   "acervo": 15,
+   "comComentario": 15,
+   "fontesRicas": 8,
+   "fabrica": 11,
+   "questoesComFlashcard": 11,
+   "autorais": 0,
+   "meta": 15,
+   "falta": 15,
+   "posicao": 113
+  },
+  {
+   "assunto": "Exame físico do quadril",
+   "areaId": "quadril",
+   "area": "Quadril",
+   "nivel": 4,
+   "incidencia": 15,
+   "acervo": 35,
+   "comComentario": 35,
+   "fontesRicas": 30,
+   "fabrica": 13,
+   "questoesComFlashcard": 13,
+   "autorais": 0,
+   "meta": 15,
+   "falta": 15,
+   "posicao": 114
+  },
+  {
+   "assunto": "Doença de Kienböck",
+   "areaId": "mao",
+   "area": "Mão e punho",
+   "nivel": 3,
+   "incidencia": 15,
+   "acervo": 26,
+   "comComentario": 26,
+   "fontesRicas": 26,
+   "fabrica": 21,
+   "questoesComFlashcard": 21,
+   "autorais": 0,
+   "meta": 11,
+   "falta": 11,
+   "posicao": 115
+  },
+  {
+   "assunto": "Fraturas da coluna cervical",
+   "areaId": "coluna",
+   "area": "Coluna",
+   "nivel": 3,
+   "incidencia": 15,
+   "acervo": 51,
+   "comComentario": 51,
+   "fontesRicas": 30,
+   "fabrica": 30,
+   "questoesComFlashcard": 30,
+   "autorais": 0,
+   "meta": 11,
+   "falta": 11,
+   "posicao": 116
+  },
+  {
+   "assunto": "Fraturas do úmero proximal e da escápula",
+   "areaId": "ombro-cotovelo",
+   "area": "Ombro e cotovelo",
+   "nivel": 3,
+   "incidencia": 15,
+   "acervo": 39,
+   "comComentario": 39,
+   "fontesRicas": 13,
+   "fabrica": 33,
+   "questoesComFlashcard": 33,
+   "autorais": 0,
+   "meta": 11,
+   "falta": 11,
+   "posicao": 117
+  },
+  {
+   "assunto": "Rizartrose e artrose da mão",
+   "areaId": "mao",
+   "area": "Mão e punho",
+   "nivel": 3,
+   "incidencia": 15,
+   "acervo": 28,
+   "comComentario": 28,
+   "fontesRicas": 23,
+   "fabrica": 20,
+   "questoesComFlashcard": 20,
+   "autorais": 0,
+   "meta": 11,
+   "falta": 11,
+   "posicao": 118
+  },
+  {
+   "assunto": "Sarcoma de Ewing",
+   "areaId": "tumores",
+   "area": "Tumores ósseos e de partes moles",
+   "nivel": 3,
+   "incidencia": 15,
+   "acervo": 16,
+   "comComentario": 16,
+   "fontesRicas": 8,
+   "fabrica": 10,
+   "questoesComFlashcard": 10,
+   "autorais": 0,
+   "meta": 11,
+   "falta": 11,
+   "posicao": 119
+  },
+  {
+   "assunto": "Tuberculose osteoarticular",
+   "areaId": "osteometabolicas",
+   "area": "Osteometabólicas",
+   "nivel": 3,
+   "incidencia": 15,
+   "acervo": 15,
+   "comComentario": 15,
+   "fontesRicas": 9,
+   "fabrica": 14,
+   "questoesComFlashcard": 14,
+   "autorais": 0,
+   "meta": 11,
+   "falta": 11,
+   "posicao": 120
+  },
+  {
+   "assunto": "Fraturas da clavícula e do úmero proximal na criança",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 2,
+   "incidencia": 15,
+   "acervo": 15,
+   "comComentario": 15,
+   "fontesRicas": 12,
+   "fabrica": 10,
+   "questoesComFlashcard": 10,
+   "autorais": 0,
+   "meta": 6,
+   "falta": 6,
+   "posicao": 121
+  },
+  {
+   "assunto": "Fratura transtrocantérica",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 1,
+   "incidencia": 15,
+   "acervo": 17,
+   "comComentario": 17,
+   "fontesRicas": 10,
+   "fabrica": 14,
+   "questoesComFlashcard": 14,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 122
+  },
+  {
+   "assunto": "Imagem do pé e tornozelo",
+   "areaId": "pe-tornozelo",
+   "area": "Pé e tornozelo",
+   "nivel": 4,
+   "incidencia": 14,
+   "acervo": 21,
+   "comComentario": 21,
+   "fontesRicas": 18,
+   "fabrica": 9,
+   "questoesComFlashcard": 9,
+   "autorais": 0,
+   "meta": 14,
+   "falta": 14,
+   "posicao": 123
+  },
+  {
+   "assunto": "Tendões fibulares e outras tendinopatias",
+   "areaId": "pe-tornozelo",
+   "area": "Pé e tornozelo",
+   "nivel": 4,
+   "incidencia": 14,
+   "acervo": 14,
+   "comComentario": 14,
+   "fontesRicas": 7,
+   "fabrica": 9,
+   "questoesComFlashcard": 9,
+   "autorais": 0,
+   "meta": 14,
+   "falta": 14,
+   "posicao": 124
+  },
+  {
+   "assunto": "Estenose do canal lombar",
+   "areaId": "coluna",
+   "area": "Coluna",
+   "nivel": 3,
+   "incidencia": 14,
+   "acervo": 15,
+   "comComentario": 15,
+   "fontesRicas": 4,
+   "fabrica": 10,
+   "questoesComFlashcard": 10,
+   "autorais": 0,
+   "meta": 10,
+   "falta": 10,
+   "posicao": 125
+  },
+  {
+   "assunto": "Imagem do joelho",
+   "areaId": "joelho",
+   "area": "Joelho",
+   "nivel": 3,
+   "incidencia": 14,
+   "acervo": 27,
+   "comComentario": 27,
+   "fontesRicas": 12,
+   "fabrica": 9,
+   "questoesComFlashcard": 9,
+   "autorais": 0,
+   "meta": 10,
+   "falta": 10,
+   "posicao": 126
+  },
+  {
+   "assunto": "Ombro e cotovelo da criança",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 2,
+   "incidencia": 14,
+   "acervo": 14,
+   "comComentario": 14,
+   "fontesRicas": 12,
+   "fabrica": 11,
+   "questoesComFlashcard": 11,
+   "autorais": 0,
+   "meta": 6,
+   "falta": 6,
+   "posicao": 127
+  },
+  {
+   "assunto": "Osteogênese imperfeita",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 2,
+   "incidencia": 14,
+   "acervo": 16,
+   "comComentario": 16,
+   "fontesRicas": 16,
+   "fabrica": 14,
+   "questoesComFlashcard": 14,
+   "autorais": 0,
+   "meta": 6,
+   "falta": 6,
+   "posicao": 128
+  },
+  {
+   "assunto": "Fratura da diáfise do úmero",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 1,
+   "incidencia": 14,
+   "acervo": 38,
+   "comComentario": 38,
+   "fontesRicas": 11,
+   "fabrica": 25,
+   "questoesComFlashcard": 25,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 129
+  },
+  {
+   "assunto": "Imagem do quadril",
+   "areaId": "quadril",
+   "area": "Quadril",
+   "nivel": 4,
+   "incidencia": 13,
+   "acervo": 69,
+   "comComentario": 69,
+   "fontesRicas": 63,
+   "fabrica": 12,
+   "questoesComFlashcard": 12,
+   "autorais": 0,
+   "meta": 13,
+   "falta": 13,
+   "posicao": 130
+  },
+  {
+   "assunto": "Cisto ósseo simples",
+   "areaId": "tumores",
+   "area": "Tumores ósseos e de partes moles",
+   "nivel": 3,
+   "incidencia": 13,
+   "acervo": 14,
+   "comComentario": 14,
+   "fontesRicas": 2,
+   "fabrica": 10,
+   "questoesComFlashcard": 10,
+   "autorais": 0,
+   "meta": 10,
+   "falta": 10,
+   "posicao": 131
+  },
+  {
+   "assunto": "Entorse e instabilidade lateral do tornozelo",
+   "areaId": "pe-tornozelo",
+   "area": "Pé e tornozelo",
+   "nivel": 3,
+   "incidencia": 13,
+   "acervo": 17,
+   "comComentario": 17,
+   "fontesRicas": 14,
+   "fabrica": 12,
+   "questoesComFlashcard": 12,
+   "autorais": 0,
+   "meta": 10,
+   "falta": 10,
+   "posicao": 132
+  },
+  {
+   "assunto": "Fraturas do retropé, mediopé e antepé",
+   "areaId": "pe-tornozelo",
+   "area": "Pé e tornozelo",
+   "nivel": 3,
+   "incidencia": 13,
+   "acervo": 14,
+   "comComentario": 14,
+   "fontesRicas": 12,
+   "fabrica": 0,
+   "questoesComFlashcard": 0,
+   "autorais": 0,
+   "meta": 10,
+   "falta": 10,
+   "posicao": 133
+  },
+  {
+   "assunto": "Fraturas do tornozelo e do pilão tibial",
+   "areaId": "pe-tornozelo",
+   "area": "Pé e tornozelo",
+   "nivel": 3,
+   "incidencia": 13,
+   "acervo": 15,
+   "comComentario": 15,
+   "fontesRicas": 12,
+   "fabrica": 5,
+   "questoesComFlashcard": 5,
+   "autorais": 0,
+   "meta": 10,
+   "falta": 10,
+   "posicao": 134
+  },
+  {
+   "assunto": "Lesões osteocondrais do tálus",
+   "areaId": "pe-tornozelo",
+   "area": "Pé e tornozelo",
+   "nivel": 3,
+   "incidencia": 13,
+   "acervo": 13,
+   "comComentario": 13,
+   "fontesRicas": 9,
+   "fabrica": 7,
+   "questoesComFlashcard": 7,
+   "autorais": 0,
+   "meta": 10,
+   "falta": 10,
+   "posicao": 135
+  },
+  {
+   "assunto": "Mieloma múltiplo e plasmocitoma",
+   "areaId": "tumores",
+   "area": "Tumores ósseos e de partes moles",
+   "nivel": 3,
+   "incidencia": 13,
+   "acervo": 18,
+   "comComentario": 18,
+   "fontesRicas": 5,
+   "fabrica": 11,
+   "questoesComFlashcard": 11,
+   "autorais": 0,
+   "meta": 10,
+   "falta": 10,
+   "posicao": 136
+  },
+  {
+   "assunto": "Pé plano adquirido do adulto",
+   "areaId": "pe-tornozelo",
+   "area": "Pé e tornozelo",
+   "nivel": 3,
+   "incidencia": 13,
+   "acervo": 13,
+   "comComentario": 13,
+   "fontesRicas": 10,
+   "fabrica": 11,
+   "questoesComFlashcard": 11,
+   "autorais": 0,
+   "meta": 10,
+   "falta": 10,
+   "posicao": 137
+  },
+  {
+   "assunto": "Rigidez do cotovelo",
+   "areaId": "ombro-cotovelo",
+   "area": "Ombro e cotovelo",
+   "nivel": 3,
+   "incidencia": 13,
+   "acervo": 13,
+   "comComentario": 13,
+   "fontesRicas": 2,
+   "fabrica": 9,
+   "questoesComFlashcard": 9,
+   "autorais": 0,
+   "meta": 10,
+   "falta": 10,
+   "posicao": 138
+  },
+  {
+   "assunto": "Cifose e doença de Scheuermann",
+   "areaId": "coluna",
+   "area": "Coluna",
+   "nivel": 2,
+   "incidencia": 13,
+   "acervo": 20,
+   "comComentario": 20,
+   "fontesRicas": 7,
+   "fabrica": 10,
+   "questoesComFlashcard": 10,
+   "autorais": 0,
+   "meta": 6,
+   "falta": 6,
+   "posicao": 139
+  },
+  {
+   "assunto": "Luxações na criança",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 2,
+   "incidencia": 13,
+   "acervo": 13,
+   "comComentario": 13,
+   "fontesRicas": 5,
+   "fabrica": 8,
+   "questoesComFlashcard": 8,
+   "autorais": 0,
+   "meta": 6,
+   "falta": 6,
+   "posicao": 140
+  },
+  {
+   "assunto": "Maus-tratos",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 2,
+   "incidencia": 13,
+   "acervo": 14,
+   "comComentario": 14,
+   "fontesRicas": 14,
+   "fabrica": 11,
+   "questoesComFlashcard": 11,
+   "autorais": 0,
+   "meta": 6,
+   "falta": 6,
+   "posicao": 141
+  },
+  {
+   "assunto": "Pseudartrose congênita da tíbia e deformidades da perna",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 2,
+   "incidencia": 13,
+   "acervo": 13,
+   "comComentario": 13,
+   "fontesRicas": 13,
+   "fabrica": 10,
+   "questoesComFlashcard": 10,
+   "autorais": 0,
+   "meta": 6,
+   "falta": 6,
+   "posicao": 142
+  },
+  {
+   "assunto": "Fratura do pilão tibial",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 1,
+   "incidencia": 13,
+   "acervo": 13,
+   "comComentario": 13,
+   "fontesRicas": 12,
+   "fabrica": 8,
+   "questoesComFlashcard": 8,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 143
+  },
+  {
+   "assunto": "Artrose do tornozelo, artrodese e artroplastia",
+   "areaId": "pe-tornozelo",
+   "area": "Pé e tornozelo",
+   "nivel": 3,
+   "incidencia": 12,
+   "acervo": 13,
+   "comComentario": 13,
+   "fontesRicas": 9,
+   "fabrica": 8,
+   "questoesComFlashcard": 8,
+   "autorais": 0,
+   "meta": 9,
+   "falta": 9,
+   "posicao": 144
+  },
+  {
+   "assunto": "Artrose e artroplastia do cotovelo",
+   "areaId": "ombro-cotovelo",
+   "area": "Ombro e cotovelo",
+   "nivel": 3,
+   "incidencia": 12,
+   "acervo": 12,
+   "comComentario": 12,
+   "fontesRicas": 2,
+   "fabrica": 10,
+   "questoesComFlashcard": 10,
+   "autorais": 0,
+   "meta": 9,
+   "falta": 9,
+   "posicao": 145
+  },
+  {
+   "assunto": "Dor peritrocantérica e tendinopatias",
+   "areaId": "quadril",
+   "area": "Quadril",
+   "nivel": 3,
+   "incidencia": 12,
+   "acervo": 20,
+   "comComentario": 20,
+   "fontesRicas": 18,
+   "fabrica": 11,
+   "questoesComFlashcard": 11,
+   "autorais": 0,
+   "meta": 9,
+   "falta": 9,
+   "posicao": 146
+  },
+  {
+   "assunto": "Exame físico do pé e tornozelo",
+   "areaId": "pe-tornozelo",
+   "area": "Pé e tornozelo",
+   "nivel": 2,
+   "incidencia": 12,
+   "acervo": 13,
+   "comComentario": 13,
+   "fontesRicas": 7,
+   "fabrica": 11,
+   "questoesComFlashcard": 11,
+   "autorais": 0,
+   "meta": 5,
+   "falta": 5,
+   "posicao": 147
+  },
+  {
+   "assunto": "Fraturas do cotovelo e antebraço",
+   "areaId": "ombro-cotovelo",
+   "area": "Ombro e cotovelo",
+   "nivel": 2,
+   "incidencia": 12,
+   "acervo": 16,
+   "comComentario": 16,
+   "fontesRicas": 10,
+   "fabrica": 7,
+   "questoesComFlashcard": 7,
+   "autorais": 0,
+   "meta": 5,
+   "falta": 5,
+   "posicao": 148
+  },
+  {
+   "assunto": "Imagem da coluna",
+   "areaId": "coluna",
+   "area": "Coluna",
+   "nivel": 2,
+   "incidencia": 12,
+   "acervo": 48,
+   "comComentario": 48,
+   "fontesRicas": 36,
+   "fabrica": 23,
+   "questoesComFlashcard": 23,
+   "autorais": 0,
+   "meta": 5,
+   "falta": 5,
+   "posicao": 149
+  },
+  {
+   "assunto": "Tendinite calcária",
+   "areaId": "ombro-cotovelo",
+   "area": "Ombro e cotovelo",
+   "nivel": 2,
+   "incidencia": 12,
+   "acervo": 12,
+   "comComentario": 12,
+   "fontesRicas": 4,
+   "fabrica": 10,
+   "questoesComFlashcard": 10,
+   "autorais": 0,
+   "meta": 5,
+   "falta": 5,
+   "posicao": 150
+  },
+  {
+   "assunto": "Tendão calcâneo",
+   "areaId": "pe-tornozelo",
+   "area": "Pé e tornozelo",
+   "nivel": 2,
+   "incidencia": 12,
+   "acervo": 13,
+   "comComentario": 13,
+   "fontesRicas": 7,
+   "fabrica": 10,
+   "questoesComFlashcard": 10,
+   "autorais": 0,
+   "meta": 5,
+   "falta": 5,
+   "posicao": 151
+  },
+  {
+   "assunto": "Amputações e próteses",
+   "areaId": "conceitos-basicos",
+   "area": "Conceitos básicos",
+   "nivel": 3,
+   "incidencia": 11,
+   "acervo": 13,
+   "comComentario": 13,
+   "fontesRicas": 0,
+   "fabrica": 12,
+   "questoesComFlashcard": 12,
+   "autorais": 0,
+   "meta": 8,
+   "falta": 8,
+   "posicao": 152
+  },
+  {
+   "assunto": "Doença de Paget",
+   "areaId": "tumores",
+   "area": "Tumores ósseos e de partes moles",
+   "nivel": 3,
+   "incidencia": 11,
+   "acervo": 16,
+   "comComentario": 16,
+   "fontesRicas": 2,
+   "fabrica": 12,
+   "questoesComFlashcard": 12,
+   "autorais": 0,
+   "meta": 8,
+   "falta": 8,
+   "posicao": 153
+  },
+  {
+   "assunto": "Gonartrose e osteotomias",
+   "areaId": "joelho",
+   "area": "Joelho",
+   "nivel": 3,
+   "incidencia": 11,
+   "acervo": 18,
+   "comComentario": 18,
+   "fontesRicas": 9,
+   "fabrica": 9,
+   "questoesComFlashcard": 9,
+   "autorais": 0,
+   "meta": 8,
+   "falta": 8,
+   "posicao": 154
+  },
+  {
+   "assunto": "Histiocitose de células de Langerhans",
+   "areaId": "tumores",
+   "area": "Tumores ósseos e de partes moles",
+   "nivel": 3,
+   "incidencia": 11,
+   "acervo": 11,
+   "comComentario": 11,
+   "fontesRicas": 1,
+   "fabrica": 11,
+   "questoesComFlashcard": 11,
+   "autorais": 0,
+   "meta": 8,
+   "falta": 8,
+   "posicao": 155
+  },
+  {
+   "assunto": "Impacto femoroacetabular",
+   "areaId": "quadril",
+   "area": "Quadril",
+   "nivel": 3,
+   "incidencia": 11,
+   "acervo": 28,
+   "comComentario": 28,
+   "fontesRicas": 26,
+   "fabrica": 11,
+   "questoesComFlashcard": 11,
+   "autorais": 0,
+   "meta": 8,
+   "falta": 8,
+   "posicao": 156
+  },
+  {
+   "assunto": "Osteoporose: tratamento",
+   "areaId": "osteometabolicas",
+   "area": "Osteometabólicas",
+   "nivel": 3,
+   "incidencia": 11,
+   "acervo": 20,
+   "comComentario": 20,
+   "fontesRicas": 9,
+   "fabrica": 14,
+   "questoesComFlashcard": 14,
+   "autorais": 0,
+   "meta": 8,
+   "falta": 8,
+   "posicao": 157
+  },
+  {
+   "assunto": "Fibrocartilagem triangular e punho ulnar",
+   "areaId": "mao",
+   "area": "Mão e punho",
+   "nivel": 2,
+   "incidencia": 11,
+   "acervo": 38,
+   "comComentario": 38,
+   "fontesRicas": 29,
+   "fabrica": 26,
+   "questoesComFlashcard": 26,
+   "autorais": 0,
+   "meta": 5,
+   "falta": 5,
+   "posicao": 158
+  },
+  {
+   "assunto": "Fraturas do pé na criança",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 2,
+   "incidencia": 11,
+   "acervo": 11,
+   "comComentario": 11,
+   "fontesRicas": 8,
+   "fabrica": 6,
+   "questoesComFlashcard": 6,
+   "autorais": 0,
+   "meta": 5,
+   "falta": 5,
+   "posicao": 159
+  },
+  {
+   "assunto": "Metatarsalgia e neuroma de Morton",
+   "areaId": "pe-tornozelo",
+   "area": "Pé e tornozelo",
+   "nivel": 2,
+   "incidencia": 11,
+   "acervo": 11,
+   "comComentario": 11,
+   "fontesRicas": 11,
+   "fabrica": 6,
+   "questoesComFlashcard": 6,
+   "autorais": 0,
+   "meta": 5,
+   "falta": 5,
+   "posicao": 160
+  },
+  {
+   "assunto": "Mão da criança",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 2,
+   "incidencia": 11,
+   "acervo": 15,
+   "comComentario": 15,
+   "fontesRicas": 11,
+   "fabrica": 7,
+   "questoesComFlashcard": 7,
+   "autorais": 0,
+   "meta": 5,
+   "falta": 5,
+   "posicao": 161
+  },
+  {
+   "assunto": "Raquitismo e osteomalácia",
+   "areaId": "osteometabolicas",
+   "area": "Osteometabólicas",
+   "nivel": 2,
+   "incidencia": 11,
+   "acervo": 15,
+   "comComentario": 15,
+   "fontesRicas": 9,
+   "fabrica": 8,
+   "questoesComFlashcard": 8,
+   "autorais": 0,
+   "meta": 5,
+   "falta": 5,
+   "posicao": 162
+  },
+  {
+   "assunto": "Politrauma e controle de danos",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 1,
+   "incidencia": 11,
+   "acervo": 21,
+   "comComentario": 21,
+   "fontesRicas": 7,
+   "fabrica": 12,
+   "questoesComFlashcard": 12,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 163
+  },
+  {
+   "assunto": "Exame físico do joelho",
+   "areaId": "joelho",
+   "area": "Joelho",
+   "nivel": 3,
+   "incidencia": 10,
+   "acervo": 16,
+   "comComentario": 16,
+   "fontesRicas": 6,
+   "fabrica": 5,
+   "questoesComFlashcard": 5,
+   "autorais": 0,
+   "meta": 7,
+   "falta": 7,
+   "posicao": 164
+  },
+  {
+   "assunto": "Vias de acesso ao quadril",
+   "areaId": "quadril",
+   "area": "Quadril",
+   "nivel": 3,
+   "incidencia": 10,
+   "acervo": 80,
+   "comComentario": 80,
+   "fontesRicas": 67,
+   "fabrica": 35,
+   "questoesComFlashcard": 35,
+   "autorais": 0,
+   "meta": 7,
+   "falta": 7,
+   "posicao": 165
+  },
+  {
+   "assunto": "Amputações e reimplantes",
+   "areaId": "mao",
+   "area": "Mão e punho",
+   "nivel": 2,
+   "incidencia": 10,
+   "acervo": 40,
+   "comComentario": 40,
+   "fontesRicas": 23,
+   "fabrica": 15,
+   "questoesComFlashcard": 15,
+   "autorais": 0,
+   "meta": 4,
+   "falta": 4,
+   "posicao": 166
+  },
+  {
+   "assunto": "Dedo em gatilho e outras tenossinovites",
+   "areaId": "mao",
+   "area": "Mão e punho",
+   "nivel": 2,
+   "incidencia": 10,
+   "acervo": 28,
+   "comComentario": 28,
+   "fontesRicas": 18,
+   "fabrica": 15,
+   "questoesComFlashcard": 15,
+   "autorais": 0,
+   "meta": 4,
+   "falta": 4,
+   "posicao": 167
+  },
+  {
+   "assunto": "Deformidades ósseas e alongamento",
+   "areaId": "conceitos-basicos",
+   "area": "Conceitos básicos",
+   "nivel": 2,
+   "incidencia": 10,
+   "acervo": 13,
+   "comComentario": 13,
+   "fontesRicas": 3,
+   "fabrica": 10,
+   "questoesComFlashcard": 10,
+   "autorais": 0,
+   "meta": 4,
+   "falta": 4,
+   "posicao": 168
+  },
+  {
+   "assunto": "Exame físico do cotovelo",
+   "areaId": "ombro-cotovelo",
+   "area": "Ombro e cotovelo",
+   "nivel": 2,
+   "incidencia": 10,
+   "acervo": 12,
+   "comComentario": 12,
+   "fontesRicas": 2,
+   "fabrica": 9,
+   "questoesComFlashcard": 9,
+   "autorais": 0,
+   "meta": 4,
+   "falta": 4,
+   "posicao": 169
+  },
+  {
+   "assunto": "Hálux rígido",
+   "areaId": "pe-tornozelo",
+   "area": "Pé e tornozelo",
+   "nivel": 2,
+   "incidencia": 10,
+   "acervo": 10,
+   "comComentario": 10,
+   "fontesRicas": 9,
+   "fabrica": 6,
+   "questoesComFlashcard": 6,
+   "autorais": 0,
+   "meta": 4,
+   "falta": 4,
+   "posicao": 170
+  },
+  {
+   "assunto": "Infecções da coluna",
+   "areaId": "coluna",
+   "area": "Coluna",
+   "nivel": 2,
+   "incidencia": 10,
+   "acervo": 11,
+   "comComentario": 11,
+   "fontesRicas": 1,
+   "fabrica": 6,
+   "questoesComFlashcard": 6,
+   "autorais": 0,
+   "meta": 4,
+   "falta": 4,
+   "posicao": 171
+  },
+  {
+   "assunto": "Lesões SLAP e do lábio superior",
+   "areaId": "ombro-cotovelo",
+   "area": "Ombro e cotovelo",
+   "nivel": 2,
+   "incidencia": 10,
+   "acervo": 10,
+   "comComentario": 10,
+   "fontesRicas": 4,
+   "fabrica": 8,
+   "questoesComFlashcard": 8,
+   "autorais": 0,
+   "meta": 4,
+   "falta": 4,
+   "posicao": 172
+  },
+  {
+   "assunto": "Pé plano flexível",
+   "areaId": "pe-tornozelo",
+   "area": "Pé e tornozelo",
+   "nivel": 2,
+   "incidencia": 10,
+   "acervo": 10,
+   "comComentario": 10,
+   "fontesRicas": 7,
+   "fabrica": 8,
+   "questoesComFlashcard": 8,
+   "autorais": 0,
+   "meta": 4,
+   "falta": 4,
+   "posicao": 173
+  },
+  {
+   "assunto": "Sarcomas de partes moles",
+   "areaId": "tumores",
+   "area": "Tumores ósseos e de partes moles",
+   "nivel": 2,
+   "incidencia": 10,
+   "acervo": 10,
+   "comComentario": 10,
+   "fontesRicas": 3,
+   "fabrica": 7,
+   "questoesComFlashcard": 7,
+   "autorais": 0,
+   "meta": 4,
+   "falta": 4,
+   "posicao": 174
+  },
+  {
+   "assunto": "Síndrome do túnel do carpo",
+   "areaId": "mao",
+   "area": "Mão e punho",
+   "nivel": 2,
+   "incidencia": 10,
+   "acervo": 27,
+   "comComentario": 27,
+   "fontesRicas": 19,
+   "fabrica": 15,
+   "questoesComFlashcard": 15,
+   "autorais": 0,
+   "meta": 4,
+   "falta": 4,
+   "posicao": 175
+  },
+  {
+   "assunto": "Osteocondroses",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 1,
+   "incidencia": 10,
+   "acervo": 12,
+   "comComentario": 12,
+   "fontesRicas": 11,
+   "fabrica": 11,
+   "questoesComFlashcard": 11,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 176
+  },
+  {
+   "assunto": "Sinovite transitória e artrite séptica do quadril",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 1,
+   "incidencia": 10,
+   "acervo": 14,
+   "comComentario": 14,
+   "fontesRicas": 10,
+   "fabrica": 7,
+   "questoesComFlashcard": 7,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 177
+  },
+  {
+   "assunto": "Artroscopia do quadril e lesão labral",
+   "areaId": "quadril",
+   "area": "Quadril",
+   "nivel": 3,
+   "incidencia": 9,
+   "acervo": 19,
+   "comComentario": 19,
+   "fontesRicas": 17,
+   "fabrica": 11,
+   "questoesComFlashcard": 11,
+   "autorais": 0,
+   "meta": 7,
+   "falta": 7,
+   "posicao": 178
+  },
+  {
+   "assunto": "Biomecânica e marcha",
+   "areaId": "pe-tornozelo",
+   "area": "Pé e tornozelo",
+   "nivel": 2,
+   "incidencia": 9,
+   "acervo": 39,
+   "comComentario": 39,
+   "fontesRicas": 34,
+   "fabrica": 14,
+   "questoesComFlashcard": 14,
+   "autorais": 0,
+   "meta": 4,
+   "falta": 4,
+   "posicao": 179
+  },
+  {
+   "assunto": "Deformidades congênitas do pé",
+   "areaId": "pe-tornozelo",
+   "area": "Pé e tornozelo",
+   "nivel": 2,
+   "incidencia": 9,
+   "acervo": 18,
+   "comComentario": 18,
+   "fontesRicas": 12,
+   "fabrica": 8,
+   "questoesComFlashcard": 8,
+   "autorais": 0,
+   "meta": 4,
+   "falta": 4,
+   "posicao": 180
+  },
+  {
+   "assunto": "Deformidades dos dedos",
+   "areaId": "mao",
+   "area": "Mão e punho",
+   "nivel": 2,
+   "incidencia": 9,
+   "acervo": 25,
+   "comComentario": 25,
+   "fontesRicas": 21,
+   "fabrica": 11,
+   "questoesComFlashcard": 11,
+   "autorais": 0,
+   "meta": 4,
+   "falta": 4,
+   "posicao": 181
+  },
+  {
+   "assunto": "Lombalgia",
+   "areaId": "coluna",
+   "area": "Coluna",
+   "nivel": 2,
+   "incidencia": 9,
+   "acervo": 26,
+   "comComentario": 26,
+   "fontesRicas": 14,
+   "fabrica": 12,
+   "questoesComFlashcard": 12,
+   "autorais": 0,
+   "meta": 4,
+   "falta": 4,
+   "posicao": 182
+  },
+  {
+   "assunto": "Medicamentos e exames laboratoriais",
+   "areaId": "conceitos-basicos",
+   "area": "Conceitos básicos",
+   "nivel": 2,
+   "incidencia": 9,
+   "acervo": 15,
+   "comComentario": 15,
+   "fontesRicas": 3,
+   "fabrica": 12,
+   "questoesComFlashcard": 12,
+   "autorais": 0,
+   "meta": 4,
+   "falta": 4,
+   "posicao": 183
+  },
+  {
+   "assunto": "Biomecânica da mão",
+   "areaId": "mao",
+   "area": "Mão e punho",
+   "nivel": 2,
+   "incidencia": 8,
+   "acervo": 15,
+   "comComentario": 14,
+   "fontesRicas": 10,
+   "fabrica": 11,
+   "questoesComFlashcard": 11,
+   "autorais": 0,
+   "meta": 4,
+   "falta": 4,
+   "posicao": 184
+  },
+  {
+   "assunto": "Biomecânica e marcha",
+   "areaId": "quadril",
+   "area": "Quadril",
+   "nivel": 2,
+   "incidencia": 8,
+   "acervo": 39,
+   "comComentario": 39,
+   "fontesRicas": 34,
+   "fabrica": 14,
+   "questoesComFlashcard": 14,
+   "autorais": 0,
+   "meta": 4,
+   "falta": 4,
+   "posicao": 185
+  },
+  {
+   "assunto": "Encondroma e encondromatoses",
+   "areaId": "tumores",
+   "area": "Tumores ósseos e de partes moles",
+   "nivel": 2,
+   "incidencia": 8,
+   "acervo": 8,
+   "comComentario": 8,
+   "fontesRicas": 2,
+   "fabrica": 6,
+   "questoesComFlashcard": 6,
+   "autorais": 0,
+   "meta": 4,
+   "falta": 4,
+   "posicao": 186
+  },
+  {
+   "assunto": "Fixadores externos",
+   "areaId": "conceitos-basicos",
+   "area": "Conceitos básicos",
+   "nivel": 2,
+   "incidencia": 8,
+   "acervo": 10,
+   "comComentario": 10,
+   "fontesRicas": 3,
+   "fabrica": 8,
+   "questoesComFlashcard": 8,
+   "autorais": 0,
+   "meta": 4,
+   "falta": 4,
+   "posicao": 187
+  },
+  {
+   "assunto": "Fraturas do quadril e do acetábulo",
+   "areaId": "quadril",
+   "area": "Quadril",
+   "nivel": 2,
+   "incidencia": 8,
+   "acervo": 39,
+   "comComentario": 39,
+   "fontesRicas": 39,
+   "fabrica": 5,
+   "questoesComFlashcard": 5,
+   "autorais": 0,
+   "meta": 4,
+   "falta": 4,
+   "posicao": 188
+  },
+  {
+   "assunto": "Luxação acromioclavicular e esternoclavicular",
+   "areaId": "ombro-cotovelo",
+   "area": "Ombro e cotovelo",
+   "nivel": 2,
+   "incidencia": 8,
+   "acervo": 10,
+   "comComentario": 10,
+   "fontesRicas": 2,
+   "fabrica": 6,
+   "questoesComFlashcard": 6,
+   "autorais": 0,
+   "meta": 4,
+   "falta": 4,
+   "posicao": 189
+  },
+  {
+   "assunto": "Osteotomias do quadril",
+   "areaId": "quadril",
+   "area": "Quadril",
+   "nivel": 2,
+   "incidencia": 8,
+   "acervo": 18,
+   "comComentario": 18,
+   "fontesRicas": 17,
+   "fabrica": 5,
+   "questoesComFlashcard": 5,
+   "autorais": 0,
+   "meta": 4,
+   "falta": 4,
+   "posicao": 190
+  },
+  {
+   "assunto": "Peitoral maior e outras rupturas tendíneas",
+   "areaId": "ombro-cotovelo",
+   "area": "Ombro e cotovelo",
+   "nivel": 2,
+   "incidencia": 8,
+   "acervo": 9,
+   "comComentario": 9,
+   "fontesRicas": 3,
+   "fabrica": 6,
+   "questoesComFlashcard": 6,
+   "autorais": 0,
+   "meta": 4,
+   "falta": 4,
+   "posicao": 191
+  },
+  {
+   "assunto": "Vias de acesso à coluna",
+   "areaId": "coluna",
+   "area": "Coluna",
+   "nivel": 2,
+   "incidencia": 8,
+   "acervo": 11,
+   "comComentario": 11,
+   "fontesRicas": 2,
+   "fabrica": 8,
+   "questoesComFlashcard": 8,
+   "autorais": 0,
+   "meta": 4,
+   "falta": 4,
+   "posicao": 192
+  },
+  {
+   "assunto": "Desenvolvimento neuropsicomotor",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 1,
+   "incidencia": 8,
+   "acervo": 12,
+   "comComentario": 12,
+   "fontesRicas": 12,
+   "fabrica": 7,
+   "questoesComFlashcard": 7,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 193
+  },
+  {
+   "assunto": "Fraturas do mediopé e antepé",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 1,
+   "incidencia": 8,
+   "acervo": 14,
+   "comComentario": 14,
+   "fontesRicas": 11,
+   "fabrica": 14,
+   "questoesComFlashcard": 14,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 194
+  },
+  {
+   "assunto": "Pé reumatoide",
+   "areaId": "pe-tornozelo",
+   "area": "Pé e tornozelo",
+   "nivel": 1,
+   "incidencia": 8,
+   "acervo": 8,
+   "comComentario": 8,
+   "fontesRicas": 5,
+   "fabrica": 6,
+   "questoesComFlashcard": 6,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 195
+  },
+  {
+   "assunto": "Menisco discoide",
+   "areaId": "joelho",
+   "area": "Joelho",
+   "nivel": 3,
+   "incidencia": 7,
+   "acervo": 7,
+   "comComentario": 7,
+   "fontesRicas": 5,
+   "fabrica": 6,
+   "questoesComFlashcard": 6,
+   "autorais": 0,
+   "meta": 5,
+   "falta": 5,
+   "posicao": 196
+  },
+  {
+   "assunto": "Anatomia do cotovelo",
+   "areaId": "ombro-cotovelo",
+   "area": "Ombro e cotovelo",
+   "nivel": 2,
+   "incidencia": 7,
+   "acervo": 10,
+   "comComentario": 10,
+   "fontesRicas": 2,
+   "fabrica": 7,
+   "questoesComFlashcard": 7,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 197
+  },
+  {
+   "assunto": "Artrose do punho e artroscopia",
+   "areaId": "mao",
+   "area": "Mão e punho",
+   "nivel": 2,
+   "incidencia": 7,
+   "acervo": 23,
+   "comComentario": 23,
+   "fontesRicas": 15,
+   "fabrica": 11,
+   "questoesComFlashcard": 11,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 198
+  },
+  {
+   "assunto": "Condroblastoma",
+   "areaId": "tumores",
+   "area": "Tumores ósseos e de partes moles",
+   "nivel": 2,
+   "incidencia": 7,
+   "acervo": 7,
+   "comComentario": 7,
+   "fontesRicas": 1,
+   "fabrica": 4,
+   "questoesComFlashcard": 4,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 199
+  },
+  {
+   "assunto": "Coxartrose",
+   "areaId": "quadril",
+   "area": "Quadril",
+   "nivel": 2,
+   "incidencia": 7,
+   "acervo": 9,
+   "comComentario": 9,
+   "fontesRicas": 8,
+   "fabrica": 2,
+   "questoesComFlashcard": 2,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 200
+  },
+  {
+   "assunto": "Hiperparatireoidismo e osteodistrofia renal",
+   "areaId": "osteometabolicas",
+   "area": "Osteometabólicas",
+   "nivel": 2,
+   "incidencia": 7,
+   "acervo": 10,
+   "comComentario": 10,
+   "fontesRicas": 6,
+   "fabrica": 8,
+   "questoesComFlashcard": 8,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 201
+  },
+  {
+   "assunto": "Osteocondroma e exostoses múltiplas",
+   "areaId": "tumores",
+   "area": "Tumores ósseos e de partes moles",
+   "nivel": 2,
+   "incidencia": 7,
+   "acervo": 7,
+   "comComentario": 7,
+   "fontesRicas": 1,
+   "fabrica": 3,
+   "questoesComFlashcard": 3,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 202
+  },
+  {
+   "assunto": "Fasciíte plantar e dor no calcanhar",
+   "areaId": "pe-tornozelo",
+   "area": "Pé e tornozelo",
+   "nivel": 1,
+   "incidencia": 7,
+   "acervo": 7,
+   "comComentario": 7,
+   "fontesRicas": 2,
+   "fabrica": 4,
+   "questoesComFlashcard": 4,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 203
+  },
+  {
+   "assunto": "Fraturas da coluna cervical baixa",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 1,
+   "incidencia": 7,
+   "acervo": 8,
+   "comComentario": 8,
+   "fontesRicas": 7,
+   "fabrica": 6,
+   "questoesComFlashcard": 6,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 204
+  },
+  {
+   "assunto": "Fraturas do escafoide e do carpo",
+   "areaId": "mao",
+   "area": "Mão e punho",
+   "nivel": 1,
+   "incidencia": 7,
+   "acervo": 57,
+   "comComentario": 57,
+   "fontesRicas": 35,
+   "fabrica": 38,
+   "questoesComFlashcard": 38,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 205
+  },
+  {
+   "assunto": "Fraturas dos metacarpos e falanges",
+   "areaId": "mao",
+   "area": "Mão e punho",
+   "nivel": 1,
+   "incidencia": 7,
+   "acervo": 132,
+   "comComentario": 131,
+   "fontesRicas": 76,
+   "fabrica": 100,
+   "questoesComFlashcard": 100,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 206
+  },
+  {
+   "assunto": "Biomecânica do joelho",
+   "areaId": "joelho",
+   "area": "Joelho",
+   "nivel": 3,
+   "incidencia": 6,
+   "acervo": 6,
+   "comComentario": 6,
+   "fontesRicas": 1,
+   "fabrica": 2,
+   "questoesComFlashcard": 2,
+   "autorais": 0,
+   "meta": 5,
+   "falta": 5,
+   "posicao": 207
+  },
+  {
+   "assunto": "Fraturas periprotéticas do quadril",
+   "areaId": "quadril",
+   "area": "Quadril",
+   "nivel": 2,
+   "incidencia": 6,
+   "acervo": 9,
+   "comComentario": 9,
+   "fontesRicas": 9,
+   "fabrica": 8,
+   "questoesComFlashcard": 8,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 208
+  },
+  {
+   "assunto": "Lesões condrais",
+   "areaId": "joelho",
+   "area": "Joelho",
+   "nivel": 2,
+   "incidencia": 6,
+   "acervo": 6,
+   "comComentario": 6,
+   "fontesRicas": 0,
+   "fabrica": 0,
+   "questoesComFlashcard": 0,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 209
+  },
+  {
+   "assunto": "Metodologia científica e estatística",
+   "areaId": "conceitos-basicos",
+   "area": "Conceitos básicos",
+   "nivel": 2,
+   "incidencia": 6,
+   "acervo": 6,
+   "comComentario": 6,
+   "fontesRicas": 0,
+   "fabrica": 5,
+   "questoesComFlashcard": 5,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 210
+  },
+  {
+   "assunto": "Artroscopia do tornozelo",
+   "areaId": "pe-tornozelo",
+   "area": "Pé e tornozelo",
+   "nivel": 1,
+   "incidencia": 6,
+   "acervo": 6,
+   "comComentario": 6,
+   "fontesRicas": 5,
+   "fabrica": 6,
+   "questoesComFlashcard": 6,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 211
+  },
+  {
+   "assunto": "Impacto subacromial e acromioplastia",
+   "areaId": "ombro-cotovelo",
+   "area": "Ombro e cotovelo",
+   "nivel": 1,
+   "incidencia": 6,
+   "acervo": 8,
+   "comComentario": 8,
+   "fontesRicas": 4,
+   "fabrica": 4,
+   "questoesComFlashcard": 4,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 212
+  },
+  {
+   "assunto": "Pubalgia e osteíte púbica",
+   "areaId": "quadril",
+   "area": "Quadril",
+   "nivel": 1,
+   "incidencia": 6,
+   "acervo": 7,
+   "comComentario": 7,
+   "fontesRicas": 6,
+   "fabrica": 5,
+   "questoesComFlashcard": 5,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 213
+  },
+  {
+   "assunto": "Canto posterolateral",
+   "areaId": "joelho",
+   "area": "Joelho",
+   "nivel": 2,
+   "incidencia": 5,
+   "acervo": 5,
+   "comComentario": 5,
+   "fontesRicas": 2,
+   "fabrica": 1,
+   "questoesComFlashcard": 1,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 214
+  },
+  {
+   "assunto": "Cisto ósseo aneurismático",
+   "areaId": "tumores",
+   "area": "Tumores ósseos e de partes moles",
+   "nivel": 2,
+   "incidencia": 5,
+   "acervo": 5,
+   "comComentario": 5,
+   "fontesRicas": 2,
+   "fabrica": 4,
+   "questoesComFlashcard": 4,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 215
+  },
+  {
+   "assunto": "Osteoma osteoide",
+   "areaId": "tumores",
+   "area": "Tumores ósseos e de partes moles",
+   "nivel": 2,
+   "incidencia": 5,
+   "acervo": 5,
+   "comComentario": 5,
+   "fontesRicas": 0,
+   "fabrica": 2,
+   "questoesComFlashcard": 2,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 216
+  },
+  {
+   "assunto": "Osteonecrose do joelho",
+   "areaId": "joelho",
+   "area": "Joelho",
+   "nivel": 2,
+   "incidencia": 5,
+   "acervo": 5,
+   "comComentario": 5,
+   "fontesRicas": 1,
+   "fabrica": 3,
+   "questoesComFlashcard": 3,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 217
+  },
+  {
+   "assunto": "Artroscopia do cotovelo",
+   "areaId": "ombro-cotovelo",
+   "area": "Ombro e cotovelo",
+   "nivel": 1,
+   "incidencia": 5,
+   "acervo": 6,
+   "comComentario": 6,
+   "fontesRicas": 2,
+   "fabrica": 5,
+   "questoesComFlashcard": 5,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 218
+  },
+  {
+   "assunto": "Fratura do olécrano",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 1,
+   "incidencia": 5,
+   "acervo": 9,
+   "comComentario": 9,
+   "fontesRicas": 5,
+   "fabrica": 7,
+   "questoesComFlashcard": 7,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 219
+  },
+  {
+   "assunto": "Imagem em ortopedia",
+   "areaId": "conceitos-basicos",
+   "area": "Conceitos básicos",
+   "nivel": 1,
+   "incidencia": 5,
+   "acervo": 6,
+   "comComentario": 6,
+   "fontesRicas": 0,
+   "fabrica": 3,
+   "questoesComFlashcard": 3,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 220
+  },
+  {
+   "assunto": "Ossificação heterotópica",
+   "areaId": "ombro-cotovelo",
+   "area": "Ombro e cotovelo",
+   "nivel": 1,
+   "incidencia": 5,
+   "acervo": 5,
+   "comComentario": 5,
+   "fontesRicas": 2,
+   "fabrica": 4,
+   "questoesComFlashcard": 4,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 221
+  },
+  {
+   "assunto": "Sindactilia e polidactilia",
+   "areaId": "mao",
+   "area": "Mão e punho",
+   "nivel": 1,
+   "incidencia": 5,
+   "acervo": 34,
+   "comComentario": 34,
+   "fontesRicas": 26,
+   "fabrica": 19,
+   "questoesComFlashcard": 19,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 222
+  },
+  {
+   "assunto": "Trauma da coluna na criança",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 1,
+   "incidencia": 5,
+   "acervo": 5,
+   "comComentario": 5,
+   "fontesRicas": 2,
+   "fabrica": 3,
+   "questoesComFlashcard": 3,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 223
+  },
+  {
+   "assunto": "Artroscopia do joelho",
+   "areaId": "joelho",
+   "area": "Joelho",
+   "nivel": 2,
+   "incidencia": 4,
+   "acervo": 4,
+   "comComentario": 4,
+   "fontesRicas": 1,
+   "fabrica": 3,
+   "questoesComFlashcard": 3,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 224
+  },
+  {
+   "assunto": "Reconstrução do LCA: enxertos e túneis",
+   "areaId": "joelho",
+   "area": "Joelho",
+   "nivel": 2,
+   "incidencia": 4,
+   "acervo": 4,
+   "comComentario": 4,
+   "fontesRicas": 1,
+   "fabrica": 2,
+   "questoesComFlashcard": 2,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 225
+  },
+  {
+   "assunto": "Biomecânica do ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "area": "Ombro e cotovelo",
+   "nivel": 1,
+   "incidencia": 4,
+   "acervo": 4,
+   "comComentario": 4,
+   "fontesRicas": 0,
+   "fabrica": 4,
+   "questoesComFlashcard": 4,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 226
+  },
+  {
+   "assunto": "Cordoma",
+   "areaId": "tumores",
+   "area": "Tumores ósseos e de partes moles",
+   "nivel": 1,
+   "incidencia": 4,
+   "acervo": 5,
+   "comComentario": 5,
+   "fontesRicas": 0,
+   "fabrica": 3,
+   "questoesComFlashcard": 3,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 227
+  },
+  {
+   "assunto": "Displasia osteofibrosa e adamantinoma",
+   "areaId": "tumores",
+   "area": "Tumores ósseos e de partes moles",
+   "nivel": 1,
+   "incidencia": 4,
+   "acervo": 4,
+   "comComentario": 4,
+   "fontesRicas": 0,
+   "fabrica": 3,
+   "questoesComFlashcard": 3,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 228
+  },
+  {
+   "assunto": "Escoliose congênita e neuromuscular",
+   "areaId": "coluna",
+   "area": "Coluna",
+   "nivel": 1,
+   "incidencia": 4,
+   "acervo": 6,
+   "comComentario": 6,
+   "fontesRicas": 3,
+   "fabrica": 3,
+   "questoesComFlashcard": 3,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 229
+  },
+  {
+   "assunto": "Fibroma não ossificante e defeito fibroso cortical",
+   "areaId": "tumores",
+   "area": "Tumores ósseos e de partes moles",
+   "nivel": 1,
+   "incidencia": 4,
+   "acervo": 4,
+   "comComentario": 4,
+   "fontesRicas": 1,
+   "fabrica": 1,
+   "questoesComFlashcard": 1,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 230
+  },
+  {
+   "assunto": "Fratura do rádio distal",
+   "areaId": "mao",
+   "area": "Mão e punho",
+   "nivel": 1,
+   "incidencia": 4,
+   "acervo": 74,
+   "comComentario": 74,
+   "fontesRicas": 37,
+   "fabrica": 58,
+   "questoesComFlashcard": 58,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 231
+  },
+  {
+   "assunto": "Imagem da mão e punho",
+   "areaId": "mao",
+   "area": "Mão e punho",
+   "nivel": 1,
+   "incidencia": 4,
+   "acervo": 30,
+   "comComentario": 30,
+   "fontesRicas": 20,
+   "fabrica": 14,
+   "questoesComFlashcard": 14,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 232
+  },
+  {
+   "assunto": "Infecções e artrites na criança",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 1,
+   "incidencia": 4,
+   "acervo": 8,
+   "comComentario": 8,
+   "fontesRicas": 6,
+   "fabrica": 2,
+   "questoesComFlashcard": 2,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 233
+  },
+  {
+   "assunto": "Lesão do subescapular",
+   "areaId": "ombro-cotovelo",
+   "area": "Ombro e cotovelo",
+   "nivel": 1,
+   "incidencia": 4,
+   "acervo": 4,
+   "comComentario": 4,
+   "fontesRicas": 1,
+   "fabrica": 2,
+   "questoesComFlashcard": 2,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 234
+  },
+  {
+   "assunto": "Osteomielite crônica",
+   "areaId": "conceitos-basicos",
+   "area": "Conceitos básicos",
+   "nivel": 1,
+   "incidencia": 4,
+   "acervo": 5,
+   "comComentario": 5,
+   "fontesRicas": 4,
+   "fabrica": 3,
+   "questoesComFlashcard": 3,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 235
+  },
+  {
+   "assunto": "Trauma pediátrico",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 1,
+   "incidencia": 4,
+   "acervo": 4,
+   "comComentario": 4,
+   "fontesRicas": 2,
+   "fabrica": 3,
+   "questoesComFlashcard": 3,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 236
+  },
+  {
+   "assunto": "Joelho na criança",
+   "areaId": "joelho",
+   "area": "Joelho",
+   "nivel": 2,
+   "incidencia": 3,
+   "acervo": 4,
+   "comComentario": 4,
+   "fontesRicas": 0,
+   "fabrica": 2,
+   "questoesComFlashcard": 2,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 237
+  },
+  {
+   "assunto": "Coxa vara do desenvolvimento",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 1,
+   "incidencia": 3,
+   "acervo": 4,
+   "comComentario": 4,
+   "fontesRicas": 3,
+   "fabrica": 3,
+   "questoesComFlashcard": 3,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 238
+  },
+  {
+   "assunto": "Dedos menores em garra e em martelo",
+   "areaId": "pe-tornozelo",
+   "area": "Pé e tornozelo",
+   "nivel": 1,
+   "incidencia": 3,
+   "acervo": 3,
+   "comComentario": 3,
+   "fontesRicas": 3,
+   "fabrica": 3,
+   "questoesComFlashcard": 3,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 239
+  },
+  {
+   "assunto": "Deficiências longitudinais dos membros",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 1,
+   "incidencia": 3,
+   "acervo": 3,
+   "comComentario": 3,
+   "fontesRicas": 3,
+   "fabrica": 2,
+   "questoesComFlashcard": 2,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 240
+  },
+  {
+   "assunto": "Deficiências longitudinais e mão torta",
+   "areaId": "mao",
+   "area": "Mão e punho",
+   "nivel": 1,
+   "incidencia": 3,
+   "acervo": 21,
+   "comComentario": 21,
+   "fontesRicas": 16,
+   "fabrica": 10,
+   "questoesComFlashcard": 10,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 241
+  },
+  {
+   "assunto": "Instabilidade posterior e multidirecional",
+   "areaId": "ombro-cotovelo",
+   "area": "Ombro e cotovelo",
+   "nivel": 1,
+   "incidencia": 3,
+   "acervo": 9,
+   "comComentario": 9,
+   "fontesRicas": 7,
+   "fabrica": 9,
+   "questoesComFlashcard": 9,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 242
+  },
+  {
+   "assunto": "Tratamento conservador e imobilização",
+   "areaId": "conceitos-basicos",
+   "area": "Conceitos básicos",
+   "nivel": 1,
+   "incidencia": 3,
+   "acervo": 16,
+   "comComentario": 16,
+   "fontesRicas": 6,
+   "fabrica": 15,
+   "questoesComFlashcard": 15,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 243
+  },
+  {
+   "assunto": "Tumores da coluna",
+   "areaId": "coluna",
+   "area": "Coluna",
+   "nivel": 1,
+   "incidencia": 3,
+   "acervo": 6,
+   "comComentario": 6,
+   "fontesRicas": 5,
+   "fabrica": 4,
+   "questoesComFlashcard": 4,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 244
+  },
+  {
+   "assunto": "Vias de acesso ao joelho",
+   "areaId": "joelho",
+   "area": "Joelho",
+   "nivel": 1,
+   "incidencia": 3,
+   "acervo": 3,
+   "comComentario": 3,
+   "fontesRicas": 0,
+   "fabrica": 2,
+   "questoesComFlashcard": 2,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 245
+  },
+  {
+   "assunto": "Artroplastia unicompartimental",
+   "areaId": "joelho",
+   "area": "Joelho",
+   "nivel": 1,
+   "incidencia": 2,
+   "acervo": 2,
+   "comComentario": 2,
+   "fontesRicas": 0,
+   "fabrica": 0,
+   "questoesComFlashcard": 0,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 246
+  },
+  {
+   "assunto": "Biomecânica da coluna",
+   "areaId": "coluna",
+   "area": "Coluna",
+   "nivel": 1,
+   "incidencia": 2,
+   "acervo": 3,
+   "comComentario": 3,
+   "fontesRicas": 1,
+   "fabrica": 3,
+   "questoesComFlashcard": 3,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 247
+  },
+  {
+   "assunto": "Coluna cervical da criança e torcicolo",
+   "areaId": "coluna",
+   "area": "Coluna",
+   "nivel": 1,
+   "incidencia": 2,
+   "acervo": 2,
+   "comComentario": 2,
+   "fontesRicas": 1,
+   "fabrica": 0,
+   "questoesComFlashcard": 0,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 248
+  },
+  {
+   "assunto": "Doença de Paget",
+   "areaId": "osteometabolicas",
+   "area": "Osteometabólicas",
+   "nivel": 1,
+   "incidencia": 2,
+   "acervo": 16,
+   "comComentario": 16,
+   "fontesRicas": 2,
+   "fabrica": 12,
+   "questoesComFlashcard": 12,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 249
+  },
+  {
+   "assunto": "Fratura da patela",
+   "areaId": "joelho",
+   "area": "Joelho",
+   "nivel": 1,
+   "incidencia": 2,
+   "acervo": 3,
+   "comComentario": 3,
+   "fontesRicas": 2,
+   "fabrica": 1,
+   "questoesComFlashcard": 1,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 250
+  },
+  {
+   "assunto": "Ligamento colateral medial",
+   "areaId": "joelho",
+   "area": "Joelho",
+   "nivel": 1,
+   "incidencia": 2,
+   "acervo": 2,
+   "comComentario": 2,
+   "fontesRicas": 0,
+   "fabrica": 1,
+   "questoesComFlashcard": 1,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 251
+  },
+  {
+   "assunto": "Luxação do joelho",
+   "areaId": "joelho",
+   "area": "Joelho",
+   "nivel": 1,
+   "incidencia": 2,
+   "acervo": 2,
+   "comComentario": 2,
+   "fontesRicas": 1,
+   "fabrica": 0,
+   "questoesComFlashcard": 0,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 252
+  },
+  {
+   "assunto": "Osteoblastoma",
+   "areaId": "tumores",
+   "area": "Tumores ósseos e de partes moles",
+   "nivel": 1,
+   "incidencia": 2,
+   "acervo": 2,
+   "comComentario": 2,
+   "fontesRicas": 2,
+   "fabrica": 1,
+   "questoesComFlashcard": 1,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 253
+  },
+  {
+   "assunto": "Tendinopatias do aparelho extensor",
+   "areaId": "joelho",
+   "area": "Joelho",
+   "nivel": 1,
+   "incidencia": 2,
+   "acervo": 2,
+   "comComentario": 2,
+   "fontesRicas": 1,
+   "fabrica": 0,
+   "questoesComFlashcard": 0,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 254
+  },
+  {
+   "assunto": "Artrite reumatoide",
+   "areaId": "osteometabolicas",
+   "area": "Osteometabólicas",
+   "nivel": 1,
+   "incidencia": 1,
+   "acervo": 1,
+   "comComentario": 1,
+   "fontesRicas": 0,
+   "fabrica": 0,
+   "questoesComFlashcard": 0,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 255
+  },
+  {
+   "assunto": "Discrepância de comprimento dos membros",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 1,
+   "incidencia": 1,
+   "acervo": 1,
+   "comComentario": 1,
+   "fontesRicas": 1,
+   "fabrica": 0,
+   "questoesComFlashcard": 0,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 256
+  },
+  {
+   "assunto": "Displasia do quadril no adulto",
+   "areaId": "quadril",
+   "area": "Quadril",
+   "nivel": 1,
+   "incidencia": 1,
+   "acervo": 8,
+   "comComentario": 8,
+   "fontesRicas": 8,
+   "fabrica": 3,
+   "questoesComFlashcard": 3,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 257
+  },
+  {
+   "assunto": "Doenças autoinflamatórias ósseas",
+   "areaId": "conceitos-basicos",
+   "area": "Conceitos básicos",
+   "nivel": 1,
+   "incidencia": 1,
+   "acervo": 1,
+   "comComentario": 1,
+   "fontesRicas": 0,
+   "fabrica": 1,
+   "questoesComFlashcard": 1,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 258
+  },
+  {
+   "assunto": "Espondiloartrites",
+   "areaId": "coluna",
+   "area": "Coluna",
+   "nivel": 1,
+   "incidencia": 1,
+   "acervo": 4,
+   "comComentario": 4,
+   "fontesRicas": 1,
+   "fabrica": 4,
+   "questoesComFlashcard": 4,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 259
+  },
+  {
+   "assunto": "Fibroma condromixoide",
+   "areaId": "tumores",
+   "area": "Tumores ósseos e de partes moles",
+   "nivel": 1,
+   "incidencia": 1,
+   "acervo": 1,
+   "comComentario": 1,
+   "fontesRicas": 0,
+   "fabrica": 1,
+   "questoesComFlashcard": 1,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 260
+  },
+  {
+   "assunto": "Fixação externa e princípios de tratamento",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 1,
+   "incidencia": 1,
+   "acervo": 4,
+   "comComentario": 4,
+   "fontesRicas": 1,
+   "fabrica": 1,
+   "questoesComFlashcard": 1,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 261
+  },
+  {
+   "assunto": "Lesão da sindesmose",
+   "areaId": "pe-tornozelo",
+   "area": "Pé e tornozelo",
+   "nivel": 1,
+   "incidencia": 1,
+   "acervo": 1,
+   "comComentario": 1,
+   "fontesRicas": 1,
+   "fabrica": 0,
+   "questoesComFlashcard": 0,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 262
+  },
+  {
+   "assunto": "Luxação e instabilidade da artroplastia",
+   "areaId": "quadril",
+   "area": "Quadril",
+   "nivel": 1,
+   "incidencia": 1,
+   "acervo": 1,
+   "comComentario": 1,
+   "fontesRicas": 0,
+   "fabrica": 0,
+   "questoesComFlashcard": 0,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 263
+  },
+  {
+   "assunto": "Osteocondroses do pé",
+   "areaId": "pe-tornozelo",
+   "area": "Pé e tornozelo",
+   "nivel": 1,
+   "incidencia": 1,
+   "acervo": 1,
+   "comComentario": 1,
+   "fontesRicas": 1,
+   "fabrica": 0,
+   "questoesComFlashcard": 0,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 264
+  },
+  {
+   "assunto": "Osteonecrose da cabeça umeral",
+   "areaId": "ombro-cotovelo",
+   "area": "Ombro e cotovelo",
+   "nivel": 1,
+   "incidencia": 1,
+   "acervo": 1,
+   "comComentario": 1,
+   "fontesRicas": 1,
+   "fabrica": 1,
+   "questoesComFlashcard": 1,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 265
+  },
+  {
+   "assunto": "Raquitismo e doenças metabólicas na criança",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 1,
+   "incidencia": 1,
+   "acervo": 2,
+   "comComentario": 2,
+   "fontesRicas": 2,
+   "fabrica": 1,
+   "questoesComFlashcard": 1,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 266
+  },
+  {
+   "assunto": "Soltura, osteólise e revisão",
+   "areaId": "quadril",
+   "area": "Quadril",
+   "nivel": 1,
+   "incidencia": 1,
+   "acervo": 33,
+   "comComentario": 33,
+   "fontesRicas": 28,
+   "fabrica": 3,
+   "questoesComFlashcard": 3,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 267
+  },
+  {
+   "assunto": "Tumores da mão",
+   "areaId": "mao",
+   "area": "Mão e punho",
+   "nivel": 1,
+   "incidencia": 1,
+   "acervo": 23,
+   "comComentario": 23,
+   "fontesRicas": 9,
+   "fabrica": 9,
+   "questoesComFlashcard": 9,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 268
+  },
+  {
+   "assunto": "Outras fraturas na criança",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 1,
+   "incidencia": 95,
+   "acervo": 95,
+   "comComentario": 95,
+   "fontesRicas": 85,
+   "fabrica": 72,
+   "questoesComFlashcard": 72,
+   "autorais": 0,
+   "meta": 19,
+   "falta": 19,
+   "posicao": 269
+  },
+  {
+   "assunto": "Outras malformações congênitas",
+   "areaId": "mao",
+   "area": "Mão e punho",
+   "nivel": 1,
+   "incidencia": 44,
+   "acervo": 83,
+   "comComentario": 83,
+   "fontesRicas": 66,
+   "fabrica": 56,
+   "questoesComFlashcard": 56,
+   "autorais": 0,
+   "meta": 9,
+   "falta": 9,
+   "posicao": 270
+  },
+  {
+   "assunto": "Outros temas de trauma",
+   "areaId": "trauma",
+   "area": "Trauma adulto",
+   "nivel": 1,
+   "incidencia": 38,
+   "acervo": 46,
+   "comComentario": 46,
+   "fontesRicas": 13,
+   "fabrica": 12,
+   "questoesComFlashcard": 12,
+   "autorais": 0,
+   "meta": 8,
+   "falta": 8,
+   "posicao": 271
+  },
+  {
+   "assunto": "Outras doenças congênitas",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 1,
+   "incidencia": 34,
+   "acervo": 34,
+   "comComentario": 34,
+   "fontesRicas": 32,
+   "fabrica": 31,
+   "questoesComFlashcard": 31,
+   "autorais": 0,
+   "meta": 7,
+   "falta": 7,
+   "posicao": 272
+  },
+  {
+   "assunto": "Outras infecções osteoarticulares",
+   "areaId": "conceitos-basicos",
+   "area": "Conceitos básicos",
+   "nivel": 1,
+   "incidencia": 23,
+   "acervo": 25,
+   "comComentario": 25,
+   "fontesRicas": 4,
+   "fabrica": 9,
+   "questoesComFlashcard": 9,
+   "autorais": 0,
+   "meta": 5,
+   "falta": 5,
+   "posicao": 273
+  },
+  {
+   "assunto": "Outros temas do ombro e cotovelo",
+   "areaId": "ombro-cotovelo",
+   "area": "Ombro e cotovelo",
+   "nivel": 1,
+   "incidencia": 21,
+   "acervo": 25,
+   "comComentario": 25,
+   "fontesRicas": 13,
+   "fabrica": 10,
+   "questoesComFlashcard": 10,
+   "autorais": 0,
+   "meta": 5,
+   "falta": 5,
+   "posicao": 274
+  },
+  {
+   "assunto": "Outras lesões pseudotumorais",
+   "areaId": "tumores",
+   "area": "Tumores ósseos e de partes moles",
+   "nivel": 1,
+   "incidencia": 10,
+   "acervo": 10,
+   "comComentario": 10,
+   "fontesRicas": 2,
+   "fabrica": 5,
+   "questoesComFlashcard": 5,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 275
+  },
+  {
+   "assunto": "Outros temas de ortopedia pediátrica",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 1,
+   "incidencia": 10,
+   "acervo": 14,
+   "comComentario": 14,
+   "fontesRicas": 14,
+   "fabrica": 11,
+   "questoesComFlashcard": 11,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 276
+  },
+  {
+   "assunto": "Outros temas do pé e tornozelo",
+   "areaId": "pe-tornozelo",
+   "area": "Pé e tornozelo",
+   "nivel": 1,
+   "incidencia": 9,
+   "acervo": 10,
+   "comComentario": 10,
+   "fontesRicas": 6,
+   "fabrica": 7,
+   "questoesComFlashcard": 7,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 277
+  },
+  {
+   "assunto": "Outros temas osteometabólicos",
+   "areaId": "osteometabolicas",
+   "area": "Osteometabólicas",
+   "nivel": 1,
+   "incidencia": 9,
+   "acervo": 13,
+   "comComentario": 13,
+   "fontesRicas": 6,
+   "fabrica": 9,
+   "questoesComFlashcard": 9,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 278
+  },
+  {
+   "assunto": "Outros temas do quadril",
+   "areaId": "quadril",
+   "area": "Quadril",
+   "nivel": 1,
+   "incidencia": 7,
+   "acervo": 26,
+   "comComentario": 26,
+   "fontesRicas": 23,
+   "fabrica": 2,
+   "questoesComFlashcard": 2,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 279
+  },
+  {
+   "assunto": "Outros temas da coluna",
+   "areaId": "coluna",
+   "area": "Coluna",
+   "nivel": 1,
+   "incidencia": 6,
+   "acervo": 28,
+   "comComentario": 28,
+   "fontesRicas": 23,
+   "fabrica": 12,
+   "questoesComFlashcard": 12,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 280
+  },
+  {
+   "assunto": "Outros temas do joelho",
+   "areaId": "joelho",
+   "area": "Joelho",
+   "nivel": 1,
+   "incidencia": 6,
+   "acervo": 9,
+   "comComentario": 9,
+   "fontesRicas": 3,
+   "fabrica": 0,
+   "questoesComFlashcard": 0,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 281
+  },
+  {
+   "assunto": "Outras deformidades do pé na criança",
+   "areaId": "pediatria",
+   "area": "Ortopedia pediátrica",
+   "nivel": 1,
+   "incidencia": 5,
+   "acervo": 5,
+   "comComentario": 5,
+   "fontesRicas": 5,
+   "fabrica": 3,
+   "questoesComFlashcard": 3,
+   "autorais": 0,
+   "meta": 3,
+   "falta": 3,
+   "posicao": 282
+  },
+  {
+   "assunto": "Outros temas da mão",
+   "areaId": "mao",
+   "area": "Mão e punho",
+   "nivel": 1,
+   "incidencia": 3,
+   "acervo": 41,
+   "comComentario": 41,
+   "fontesRicas": 19,
+   "fabrica": 19,
+   "questoesComFlashcard": 19,
+   "autorais": 0,
+   "meta": 0,
+   "falta": 0,
+   "posicao": 283
+  },
+  {
+   "assunto": "Outros temas de conceitos básicos",
+   "areaId": "conceitos-basicos",
+   "area": "Conceitos básicos",
+   "nivel": 1,
+   "incidencia": 3,
+   "acervo": 27,
+   "comComentario": 27,
+   "fontesRicas": 12,
+   "fabrica": 23,
+   "questoesComFlashcard": 23,
+   "autorais": 0,
+   "meta": 0,
+   "falta": 0,
+   "posicao": 284
+  }
+ ],
+ "semanas": [
+  {
+   "semana": 1,
+   "inicio": "2026-10-19",
+   "fim": "2026-10-25",
+   "itens": [
+    {
+     "assunto": "Lesões fisárias",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 60
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 2,
+   "inicio": "2026-10-26",
+   "fim": "2026-11-01",
+   "itens": [
+    {
+     "assunto": "Lesões fisárias",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 11
+    },
+    {
+     "assunto": "Anatomia da mão e punho",
+     "area": "Mão e punho",
+     "quantidade": 49
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 3,
+   "inicio": "2026-11-02",
+   "fim": "2026-11-08",
+   "itens": [
+    {
+     "assunto": "Anatomia da mão e punho",
+     "area": "Mão e punho",
+     "quantidade": 19
+    },
+    {
+     "assunto": "Genuvaro, genuvalgo e torções",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 41
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 4,
+   "inicio": "2026-11-09",
+   "fim": "2026-11-15",
+   "itens": [
+    {
+     "assunto": "Genuvaro, genuvalgo e torções",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 19
+    },
+    {
+     "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+     "area": "Trauma adulto",
+     "quantidade": 41
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 5,
+   "inicio": "2026-11-16",
+   "fim": "2026-11-22",
+   "itens": [
+    {
+     "assunto": "Fratura da cabeça do rádio e instabilidade do cotovelo",
+     "area": "Trauma adulto",
+     "quantidade": 16
+    },
+    {
+     "assunto": "Lesões do manguito rotador",
+     "area": "Ombro e cotovelo",
+     "quantidade": 44
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 6,
+   "inicio": "2026-11-23",
+   "fim": "2026-11-29",
+   "itens": [
+    {
+     "assunto": "Lesões do manguito rotador",
+     "area": "Ombro e cotovelo",
+     "quantidade": 12
+    },
+    {
+     "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 48
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 7,
+   "inicio": "2026-11-30",
+   "fim": "2026-12-06",
+   "itens": [
+    {
+     "assunto": "Côndilo lateral, epicôndilo medial e rádio proximal na criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 5
+    },
+    {
+     "assunto": "Anatomia do ombro",
+     "area": "Ombro e cotovelo",
+     "quantidade": 52
+    },
+    {
+     "assunto": "Luxação do joelho e lesões ligamentares",
+     "area": "Trauma adulto",
+     "quantidade": 3
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 8,
+   "inicio": "2026-12-07",
+   "fim": "2026-12-13",
+   "itens": [
+    {
+     "assunto": "Luxação do joelho e lesões ligamentares",
+     "area": "Trauma adulto",
+     "quantidade": 47
+    },
+    {
+     "assunto": "Neuropatia ulnar e outras compressões",
+     "area": "Mão e punho",
+     "quantidade": 13
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 9,
+   "inicio": "2026-12-14",
+   "fim": "2026-12-20",
+   "itens": [
+    {
+     "assunto": "Neuropatia ulnar e outras compressões",
+     "area": "Mão e punho",
+     "quantidade": 35
+    },
+    {
+     "assunto": "Omartrose e artroplastia do ombro",
+     "area": "Ombro e cotovelo",
+     "quantidade": 25
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 10,
+   "inicio": "2026-12-21",
+   "fim": "2026-12-27",
+   "itens": [
+    {
+     "assunto": "Omartrose e artroplastia do ombro",
+     "area": "Ombro e cotovelo",
+     "quantidade": 23
+    },
+    {
+     "assunto": "Anatomia do quadril",
+     "area": "Quadril",
+     "quantidade": 37
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 11,
+   "inicio": "2026-12-28",
+   "fim": "2027-01-03",
+   "itens": [
+    {
+     "assunto": "Anatomia do quadril",
+     "area": "Quadril",
+     "quantidade": 10
+    },
+    {
+     "assunto": "Artroplastia total: componentes e fixação",
+     "area": "Quadril",
+     "quantidade": 45
+    },
+    {
+     "assunto": "Fraturas do antebraço e punho na criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 5
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 12,
+   "inicio": "2027-01-04",
+   "fim": "2027-01-10",
+   "itens": [
+    {
+     "assunto": "Fraturas do antebraço e punho na criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 40
+    },
+    {
+     "assunto": "Fraturas do fêmur e da perna na criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 20
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 13,
+   "inicio": "2027-01-11",
+   "fim": "2027-01-17",
+   "itens": [
+    {
+     "assunto": "Fraturas do fêmur e da perna na criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 22
+    },
+    {
+     "assunto": "Instabilidade anterior do ombro",
+     "area": "Ombro e cotovelo",
+     "quantidade": 38
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 14,
+   "inicio": "2027-01-18",
+   "fim": "2027-01-24",
+   "itens": [
+    {
+     "assunto": "Instabilidade anterior do ombro",
+     "area": "Ombro e cotovelo",
+     "quantidade": 4
+    },
+    {
+     "assunto": "Fraturas da coluna toracolombar",
+     "area": "Trauma adulto",
+     "quantidade": 41
+    },
+    {
+     "assunto": "Fraturas diafisárias do antebraço",
+     "area": "Trauma adulto",
+     "quantidade": 15
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 15,
+   "inicio": "2027-01-25",
+   "fim": "2027-01-31",
+   "itens": [
+    {
+     "assunto": "Fraturas diafisárias do antebraço",
+     "area": "Trauma adulto",
+     "quantidade": 26
+    },
+    {
+     "assunto": "Anatomia da coluna",
+     "area": "Coluna",
+     "quantidade": 34
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 16,
+   "inicio": "2027-02-01",
+   "fim": "2027-02-07",
+   "itens": [
+    {
+     "assunto": "Anatomia da coluna",
+     "area": "Coluna",
+     "quantidade": 6
+    },
+    {
+     "assunto": "Fratura do úmero proximal",
+     "area": "Trauma adulto",
+     "quantidade": 40
+    },
+    {
+     "assunto": "Anatomia do pé e tornozelo",
+     "area": "Pé e tornozelo",
+     "quantidade": 14
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 17,
+   "inicio": "2027-02-08",
+   "fim": "2027-02-14",
+   "itens": [
+    {
+     "assunto": "Anatomia do pé e tornozelo",
+     "area": "Pé e tornozelo",
+     "quantidade": 25
+    },
+    {
+     "assunto": "Displasia do desenvolvimento do quadril",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 35
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 18,
+   "inicio": "2027-02-15",
+   "fim": "2027-02-21",
+   "itens": [
+    {
+     "assunto": "Displasia do desenvolvimento do quadril",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 4
+    },
+    {
+     "assunto": "Instabilidade do cotovelo",
+     "area": "Ombro e cotovelo",
+     "quantidade": 37
+    },
+    {
+     "assunto": "Lesões dos tendões flexores",
+     "area": "Mão e punho",
+     "quantidade": 19
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 19,
+   "inicio": "2027-02-22",
+   "fim": "2027-02-28",
+   "itens": [
+    {
+     "assunto": "Lesões dos tendões flexores",
+     "area": "Mão e punho",
+     "quantidade": 18
+    },
+    {
+     "assunto": "Metástases ósseas",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 35
+    },
+    {
+     "assunto": "Síndrome compartimental",
+     "area": "Trauma adulto",
+     "quantidade": 7
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 20,
+   "inicio": "2027-03-01",
+   "fim": "2027-03-07",
+   "itens": [
+    {
+     "assunto": "Síndrome compartimental",
+     "area": "Trauma adulto",
+     "quantidade": 28
+    },
+    {
+     "assunto": "Hérnia de disco lombar",
+     "area": "Coluna",
+     "quantidade": 32
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 21,
+   "inicio": "2027-03-08",
+   "fim": "2027-03-14",
+   "itens": [
+    {
+     "assunto": "Hérnia de disco lombar",
+     "area": "Coluna",
+     "quantidade": 2
+    },
+    {
+     "assunto": "Estadiamento, biópsia e margens",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 33
+    },
+    {
+     "assunto": "Lesão do ligamento cruzado anterior",
+     "area": "Joelho",
+     "quantidade": 25
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 22,
+   "inicio": "2027-03-15",
+   "fim": "2027-03-21",
+   "itens": [
+    {
+     "assunto": "Lesão do ligamento cruzado anterior",
+     "area": "Joelho",
+     "quantidade": 8
+    },
+    {
+     "assunto": "Lesões do bíceps",
+     "area": "Ombro e cotovelo",
+     "quantidade": 33
+    },
+    {
+     "assunto": "Osteomielite aguda",
+     "area": "Conceitos básicos",
+     "quantidade": 19
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 23,
+   "inicio": "2027-03-22",
+   "fim": "2027-03-28",
+   "itens": [
+    {
+     "assunto": "Osteomielite aguda",
+     "area": "Conceitos básicos",
+     "quantidade": 14
+    },
+    {
+     "assunto": "Displasias esqueléticas e síndromes",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 32
+    },
+    {
+     "assunto": "Lesão medular e síndromes medulares",
+     "area": "Coluna",
+     "quantidade": 14
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 24,
+   "inicio": "2027-03-29",
+   "fim": "2027-04-04",
+   "itens": [
+    {
+     "assunto": "Lesão medular e síndromes medulares",
+     "area": "Coluna",
+     "quantidade": 17
+    },
+    {
+     "assunto": "Paralisia cerebral",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 31
+    },
+    {
+     "assunto": "Anatomia do joelho",
+     "area": "Joelho",
+     "quantidade": 12
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 25,
+   "inicio": "2027-04-05",
+   "fim": "2027-04-11",
+   "itens": [
+    {
+     "assunto": "Anatomia do joelho",
+     "area": "Joelho",
+     "quantidade": 18
+    },
+    {
+     "assunto": "Escoliose idiopática",
+     "area": "Coluna",
+     "quantidade": 30
+    },
+    {
+     "assunto": "Fratura da escápula",
+     "area": "Trauma adulto",
+     "quantidade": 12
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 26,
+   "inicio": "2027-04-12",
+   "fim": "2027-04-18",
+   "itens": [
+    {
+     "assunto": "Fratura da escápula",
+     "area": "Trauma adulto",
+     "quantidade": 18
+    },
+    {
+     "assunto": "Princípios de osteossíntese",
+     "area": "Conceitos básicos",
+     "quantidade": 30
+    },
+    {
+     "assunto": "Artroplastia total do joelho",
+     "area": "Joelho",
+     "quantidade": 12
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 27,
+   "inicio": "2027-04-19",
+   "fim": "2027-04-25",
+   "itens": [
+    {
+     "assunto": "Artroplastia total do joelho",
+     "area": "Joelho",
+     "quantidade": 17
+    },
+    {
+     "assunto": "Fratura da clavícula",
+     "area": "Trauma adulto",
+     "quantidade": 29
+    },
+    {
+     "assunto": "Fraturas do tálus e do calcâneo",
+     "area": "Trauma adulto",
+     "quantidade": 14
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 28,
+   "inicio": "2027-04-26",
+   "fim": "2027-05-02",
+   "itens": [
+    {
+     "assunto": "Fraturas do tálus e do calcâneo",
+     "area": "Trauma adulto",
+     "quantidade": 15
+    },
+    {
+     "assunto": "Fraturas dos metacarpos e falanges",
+     "area": "Trauma adulto",
+     "quantidade": 28
+    },
+    {
+     "assunto": "Espondilólise e espondilolistese",
+     "area": "Coluna",
+     "quantidade": 17
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 29,
+   "inicio": "2027-05-03",
+   "fim": "2027-05-09",
+   "itens": [
+    {
+     "assunto": "Espondilólise e espondilolistese",
+     "area": "Coluna",
+     "quantidade": 10
+    },
+    {
+     "assunto": "Pé torto congênito",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 27
+    },
+    {
+     "assunto": "Fratura da patela e lesão do aparelho extensor",
+     "area": "Trauma adulto",
+     "quantidade": 19
+    },
+    {
+     "assunto": "Lesões dos tendões extensores",
+     "area": "Mão e punho",
+     "quantidade": 4
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 30,
+   "inicio": "2027-05-10",
+   "fim": "2027-05-16",
+   "itens": [
+    {
+     "assunto": "Lesões dos tendões extensores",
+     "area": "Mão e punho",
+     "quantidade": 22
+    },
+    {
+     "assunto": "Fratura da diáfise do fêmur",
+     "area": "Trauma adulto",
+     "quantidade": 19
+    },
+    {
+     "assunto": "Condrossarcoma",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 19
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 31,
+   "inicio": "2027-05-17",
+   "fim": "2027-05-23",
+   "itens": [
+    {
+     "assunto": "Condrossarcoma",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 6
+    },
+    {
+     "assunto": "Exame físico da mão e punho",
+     "area": "Mão e punho",
+     "quantidade": 25
+    },
+    {
+     "assunto": "Hálux valgo",
+     "area": "Pé e tornozelo",
+     "quantidade": 25
+    },
+    {
+     "assunto": "Ossificação e crescimento",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 4
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 32,
+   "inicio": "2027-05-24",
+   "fim": "2027-05-30",
+   "itens": [
+    {
+     "assunto": "Ossificação e crescimento",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 21
+    },
+    {
+     "assunto": "Tíbia vara (Blount)",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 18
+    },
+    {
+     "assunto": "Artrogripose e doenças neuromusculares",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 17
+    },
+    {
+     "assunto": "Fratura do anel pélvico",
+     "area": "Trauma adulto",
+     "quantidade": 4
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 33,
+   "inicio": "2027-05-31",
+   "fim": "2027-06-06",
+   "itens": [
+    {
+     "assunto": "Fratura do anel pélvico",
+     "area": "Trauma adulto",
+     "quantidade": 13
+    },
+    {
+     "assunto": "Fratura do planalto tibial",
+     "area": "Trauma adulto",
+     "quantidade": 17
+    },
+    {
+     "assunto": "Fraturas por estresse",
+     "area": "Trauma adulto",
+     "quantidade": 17
+    },
+    {
+     "assunto": "Joelho da criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 13
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 34,
+   "inicio": "2027-06-07",
+   "fim": "2027-06-13",
+   "itens": [
+    {
+     "assunto": "Joelho da criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 4
+    },
+    {
+     "assunto": "Instabilidade do carpo",
+     "area": "Mão e punho",
+     "quantidade": 23
+    },
+    {
+     "assunto": "Lesão do ligamento cruzado posterior",
+     "area": "Joelho",
+     "quantidade": 23
+    },
+    {
+     "assunto": "Fratura do úmero distal",
+     "area": "Trauma adulto",
+     "quantidade": 10
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 35,
+   "inicio": "2027-06-14",
+   "fim": "2027-06-20",
+   "itens": [
+    {
+     "assunto": "Fratura do úmero distal",
+     "area": "Trauma adulto",
+     "quantidade": 7
+    },
+    {
+     "assunto": "Fraturas da pelve e do quadril na criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 17
+    },
+    {
+     "assunto": "Osteossarcoma",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 22
+    },
+    {
+     "assunto": "Pseudartrose e retardo de consolidação",
+     "area": "Conceitos básicos",
+     "quantidade": 14
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 36,
+   "inicio": "2027-06-21",
+   "fim": "2027-06-27",
+   "itens": [
+    {
+     "assunto": "Pseudartrose e retardo de consolidação",
+     "area": "Conceitos básicos",
+     "quantidade": 8
+    },
+    {
+     "assunto": "Fratura da diáfise da tíbia",
+     "area": "Trauma adulto",
+     "quantidade": 16
+    },
+    {
+     "assunto": "Fratura subtrocantérica",
+     "area": "Trauma adulto",
+     "quantidade": 16
+    },
+    {
+     "assunto": "Marcha na criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 16
+    },
+    {
+     "assunto": "Lesões de nervos periféricos",
+     "area": "Mão e punho",
+     "quantidade": 4
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 37,
+   "inicio": "2027-06-28",
+   "fim": "2027-07-04",
+   "itens": [
+    {
+     "assunto": "Lesões de nervos periféricos",
+     "area": "Mão e punho",
+     "quantidade": 17
+    },
+    {
+     "assunto": "Tumor de células gigantes",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 21
+    },
+    {
+     "assunto": "Doença de Legg-Calvé-Perthes",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 14
+    },
+    {
+     "assunto": "Epifisiólise proximal do fêmur",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 8
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 38,
+   "inicio": "2027-07-05",
+   "fim": "2027-07-11",
+   "itens": [
+    {
+     "assunto": "Epifisiólise proximal do fêmur",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 7
+    },
+    {
+     "assunto": "Fratura do colo do fêmur",
+     "area": "Trauma adulto",
+     "quantidade": 15
+    },
+    {
+     "assunto": "Fraturas da coluna toracolombar",
+     "area": "Coluna",
+     "quantidade": 15
+    },
+    {
+     "assunto": "Fratura do escafoide e do carpo",
+     "area": "Trauma adulto",
+     "quantidade": 9
+    },
+    {
+     "assunto": "Fraturas expostas",
+     "area": "Trauma adulto",
+     "quantidade": 9
+    },
+    {
+     "assunto": "Exame físico do ombro",
+     "area": "Ombro e cotovelo",
+     "quantidade": 5
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 39,
+   "inicio": "2027-07-12",
+   "fim": "2027-07-18",
+   "itens": [
+    {
+     "assunto": "Exame físico do ombro",
+     "area": "Ombro e cotovelo",
+     "quantidade": 15
+    },
+    {
+     "assunto": "Lesões meniscais",
+     "area": "Joelho",
+     "quantidade": 20
+    },
+    {
+     "assunto": "Tumores benignos de partes moles",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 20
+    },
+    {
+     "assunto": "Doença de Dupuytren",
+     "area": "Mão e punho",
+     "quantidade": 5
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 40,
+   "inicio": "2027-07-19",
+   "fim": "2027-07-25",
+   "itens": [
+    {
+     "assunto": "Doença de Dupuytren",
+     "area": "Mão e punho",
+     "quantidade": 9
+    },
+    {
+     "assunto": "Exame neurológico e radiculopatias",
+     "area": "Coluna",
+     "quantidade": 14
+    },
+    {
+     "assunto": "Fraturas supracondilianas do úmero",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 14
+    },
+    {
+     "assunto": "Retalhos e cobertura cutânea",
+     "area": "Mão e punho",
+     "quantidade": 14
+    },
+    {
+     "assunto": "Dor e analgesia",
+     "area": "Conceitos básicos",
+     "quantidade": 9
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 41,
+   "inicio": "2027-07-26",
+   "fim": "2027-08-01",
+   "itens": [
+    {
+     "assunto": "Dor e analgesia",
+     "area": "Conceitos básicos",
+     "quantidade": 10
+    },
+    {
+     "assunto": "Osteonecrose da cabeça femoral",
+     "area": "Quadril",
+     "quantidade": 19
+    },
+    {
+     "assunto": "Pé diabético e neuroartropatia de Charcot",
+     "area": "Pé e tornozelo",
+     "quantidade": 19
+    },
+    {
+     "assunto": "Displasia fibrosa",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 12
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 42,
+   "inicio": "2027-08-02",
+   "fim": "2027-08-08",
+   "itens": [
+    {
+     "assunto": "Displasia fibrosa",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 2
+    },
+    {
+     "assunto": "Hérnia de disco e mielopatia cervical",
+     "area": "Coluna",
+     "quantidade": 14
+    },
+    {
+     "assunto": "Mão reumatoide",
+     "area": "Mão e punho",
+     "quantidade": 14
+    },
+    {
+     "assunto": "Artroscopia e vias de acesso do ombro",
+     "area": "Ombro e cotovelo",
+     "quantidade": 18
+    },
+    {
+     "assunto": "Osteoporose: diagnóstico",
+     "area": "Osteometabólicas",
+     "quantidade": 12
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 43,
+   "inicio": "2027-08-09",
+   "fim": "2027-08-15",
+   "itens": [
+    {
+     "assunto": "Osteoporose: diagnóstico",
+     "area": "Osteometabólicas",
+     "quantidade": 6
+    },
+    {
+     "assunto": "Capsulite adesiva",
+     "area": "Ombro e cotovelo",
+     "quantidade": 13
+    },
+    {
+     "assunto": "Lesões ligamentares dos dedos",
+     "area": "Mão e punho",
+     "quantidade": 13
+    },
+    {
+     "assunto": "Fratura do acetábulo",
+     "area": "Trauma adulto",
+     "quantidade": 8
+    },
+    {
+     "assunto": "Fratura do fêmur distal",
+     "area": "Trauma adulto",
+     "quantidade": 8
+    },
+    {
+     "assunto": "Fraturas da coluna cervical alta",
+     "area": "Trauma adulto",
+     "quantidade": 8
+    },
+    {
+     "assunto": "Luxação do quadril e fratura da cabeça femoral",
+     "area": "Trauma adulto",
+     "quantidade": 4
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 44,
+   "inicio": "2027-08-16",
+   "fim": "2027-08-22",
+   "itens": [
+    {
+     "assunto": "Luxação do quadril e fratura da cabeça femoral",
+     "area": "Trauma adulto",
+     "quantidade": 4
+    },
+    {
+     "assunto": "Artrite séptica",
+     "area": "Conceitos básicos",
+     "quantidade": 12
+    },
+    {
+     "assunto": "Coluna e pescoço da criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 12
+    },
+    {
+     "assunto": "Consolidação óssea",
+     "area": "Conceitos básicos",
+     "quantidade": 12
+    },
+    {
+     "assunto": "Imagem do ombro e cotovelo",
+     "area": "Ombro e cotovelo",
+     "quantidade": 12
+    },
+    {
+     "assunto": "Luxação acromioclavicular",
+     "area": "Trauma adulto",
+     "quantidade": 7
+    },
+    {
+     "assunto": "Coalizões tarsais",
+     "area": "Pé e tornozelo",
+     "quantidade": 1
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 45,
+   "inicio": "2027-08-23",
+   "fim": "2027-08-29",
+   "itens": [
+    {
+     "assunto": "Coalizões tarsais",
+     "area": "Pé e tornozelo",
+     "quantidade": 15
+    },
+    {
+     "assunto": "Instabilidade femoropatelar",
+     "area": "Joelho",
+     "quantidade": 16
+    },
+    {
+     "assunto": "Osteocondrite dissecante",
+     "area": "Joelho",
+     "quantidade": 16
+    },
+    {
+     "assunto": "Pé cavo",
+     "area": "Pé e tornozelo",
+     "quantidade": 13
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 46,
+   "inicio": "2027-08-30",
+   "fim": "2027-09-05",
+   "itens": [
+    {
+     "assunto": "Pé cavo",
+     "area": "Pé e tornozelo",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Epicondilite lateral e medial",
+     "area": "Ombro e cotovelo",
+     "quantidade": 12
+    },
+    {
+     "assunto": "Lesões musculares",
+     "area": "Conceitos básicos",
+     "quantidade": 12
+    },
+    {
+     "assunto": "Lesões nervosas do ombro e cotovelo",
+     "area": "Ombro e cotovelo",
+     "quantidade": 12
+    },
+    {
+     "assunto": "Plexo braquial e paralisia obstétrica",
+     "area": "Mão e punho",
+     "quantidade": 12
+    },
+    {
+     "assunto": "Ruptura dos tendões patelar e quadricipital",
+     "area": "Joelho",
+     "quantidade": 9
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 47,
+   "inicio": "2027-09-06",
+   "fim": "2027-09-12",
+   "itens": [
+    {
+     "assunto": "Ruptura dos tendões patelar e quadricipital",
+     "area": "Joelho",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Fratura do rádio distal",
+     "area": "Trauma adulto",
+     "quantidade": 7
+    },
+    {
+     "assunto": "Fratura do tornozelo",
+     "area": "Trauma adulto",
+     "quantidade": 7
+    },
+    {
+     "assunto": "Fraturas do tornozelo na criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 4
+    },
+    {
+     "assunto": "Mielomeningocele",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 7
+    },
+    {
+     "assunto": "Espondiloartrites e outras artrites",
+     "area": "Osteometabólicas",
+     "quantidade": 15
+    },
+    {
+     "assunto": "Exame físico do quadril",
+     "area": "Quadril",
+     "quantidade": 15
+    },
+    {
+     "assunto": "Doença de Kienböck",
+     "area": "Mão e punho",
+     "quantidade": 2
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 48,
+   "inicio": "2027-09-13",
+   "fim": "2027-09-19",
+   "itens": [
+    {
+     "assunto": "Doença de Kienböck",
+     "area": "Mão e punho",
+     "quantidade": 9
+    },
+    {
+     "assunto": "Fraturas da coluna cervical",
+     "area": "Coluna",
+     "quantidade": 11
+    },
+    {
+     "assunto": "Fraturas do úmero proximal e da escápula",
+     "area": "Ombro e cotovelo",
+     "quantidade": 11
+    },
+    {
+     "assunto": "Rizartrose e artrose da mão",
+     "area": "Mão e punho",
+     "quantidade": 11
+    },
+    {
+     "assunto": "Sarcoma de Ewing",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 11
+    },
+    {
+     "assunto": "Tuberculose osteoarticular",
+     "area": "Osteometabólicas",
+     "quantidade": 7
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 49,
+   "inicio": "2027-09-20",
+   "fim": "2027-09-26",
+   "itens": [
+    {
+     "assunto": "Tuberculose osteoarticular",
+     "area": "Osteometabólicas",
+     "quantidade": 4
+    },
+    {
+     "assunto": "Fraturas da clavícula e do úmero proximal na criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 6
+    },
+    {
+     "assunto": "Fratura transtrocantérica",
+     "area": "Trauma adulto",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Imagem do pé e tornozelo",
+     "area": "Pé e tornozelo",
+     "quantidade": 14
+    },
+    {
+     "assunto": "Tendões fibulares e outras tendinopatias",
+     "area": "Pé e tornozelo",
+     "quantidade": 14
+    },
+    {
+     "assunto": "Estenose do canal lombar",
+     "area": "Coluna",
+     "quantidade": 10
+    },
+    {
+     "assunto": "Imagem do joelho",
+     "area": "Joelho",
+     "quantidade": 9
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 50,
+   "inicio": "2027-09-27",
+   "fim": "2027-10-03",
+   "itens": [
+    {
+     "assunto": "Imagem do joelho",
+     "area": "Joelho",
+     "quantidade": 1
+    },
+    {
+     "assunto": "Ombro e cotovelo da criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 6
+    },
+    {
+     "assunto": "Osteogênese imperfeita",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 6
+    },
+    {
+     "assunto": "Fratura da diáfise do úmero",
+     "area": "Trauma adulto",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Imagem do quadril",
+     "area": "Quadril",
+     "quantidade": 13
+    },
+    {
+     "assunto": "Cisto ósseo simples",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 10
+    },
+    {
+     "assunto": "Entorse e instabilidade lateral do tornozelo",
+     "area": "Pé e tornozelo",
+     "quantidade": 10
+    },
+    {
+     "assunto": "Fraturas do retropé, mediopé e antepé",
+     "area": "Pé e tornozelo",
+     "quantidade": 10
+    },
+    {
+     "assunto": "Fraturas do tornozelo e do pilão tibial",
+     "area": "Pé e tornozelo",
+     "quantidade": 1
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 51,
+   "inicio": "2027-10-04",
+   "fim": "2027-10-10",
+   "itens": [
+    {
+     "assunto": "Fraturas do tornozelo e do pilão tibial",
+     "area": "Pé e tornozelo",
+     "quantidade": 9
+    },
+    {
+     "assunto": "Lesões osteocondrais do tálus",
+     "area": "Pé e tornozelo",
+     "quantidade": 10
+    },
+    {
+     "assunto": "Mieloma múltiplo e plasmocitoma",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 10
+    },
+    {
+     "assunto": "Pé plano adquirido do adulto",
+     "area": "Pé e tornozelo",
+     "quantidade": 10
+    },
+    {
+     "assunto": "Rigidez do cotovelo",
+     "area": "Ombro e cotovelo",
+     "quantidade": 10
+    },
+    {
+     "assunto": "Cifose e doença de Scheuermann",
+     "area": "Coluna",
+     "quantidade": 6
+    },
+    {
+     "assunto": "Luxações na criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 5
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 52,
+   "inicio": "2027-10-11",
+   "fim": "2027-10-17",
+   "itens": [
+    {
+     "assunto": "Luxações na criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 1
+    },
+    {
+     "assunto": "Maus-tratos",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 6
+    },
+    {
+     "assunto": "Pseudartrose congênita da tíbia e deformidades da perna",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 6
+    },
+    {
+     "assunto": "Fratura do pilão tibial",
+     "area": "Trauma adulto",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Artrose do tornozelo, artrodese e artroplastia",
+     "area": "Pé e tornozelo",
+     "quantidade": 9
+    },
+    {
+     "assunto": "Artrose e artroplastia do cotovelo",
+     "area": "Ombro e cotovelo",
+     "quantidade": 9
+    },
+    {
+     "assunto": "Dor peritrocantérica e tendinopatias",
+     "area": "Quadril",
+     "quantidade": 9
+    },
+    {
+     "assunto": "Exame físico do pé e tornozelo",
+     "area": "Pé e tornozelo",
+     "quantidade": 5
+    },
+    {
+     "assunto": "Fraturas do cotovelo e antebraço",
+     "area": "Ombro e cotovelo",
+     "quantidade": 5
+    },
+    {
+     "assunto": "Imagem da coluna",
+     "area": "Coluna",
+     "quantidade": 5
+    },
+    {
+     "assunto": "Tendinite calcária",
+     "area": "Ombro e cotovelo",
+     "quantidade": 2
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 53,
+   "inicio": "2027-10-18",
+   "fim": "2027-10-24",
+   "itens": [
+    {
+     "assunto": "Tendinite calcária",
+     "area": "Ombro e cotovelo",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Tendão calcâneo",
+     "area": "Pé e tornozelo",
+     "quantidade": 5
+    },
+    {
+     "assunto": "Amputações e próteses",
+     "area": "Conceitos básicos",
+     "quantidade": 8
+    },
+    {
+     "assunto": "Doença de Paget",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 8
+    },
+    {
+     "assunto": "Gonartrose e osteotomias",
+     "area": "Joelho",
+     "quantidade": 8
+    },
+    {
+     "assunto": "Histiocitose de células de Langerhans",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 8
+    },
+    {
+     "assunto": "Impacto femoroacetabular",
+     "area": "Quadril",
+     "quantidade": 8
+    },
+    {
+     "assunto": "Osteoporose: tratamento",
+     "area": "Osteometabólicas",
+     "quantidade": 8
+    },
+    {
+     "assunto": "Fibrocartilagem triangular e punho ulnar",
+     "area": "Mão e punho",
+     "quantidade": 4
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 54,
+   "inicio": "2027-10-25",
+   "fim": "2027-10-31",
+   "itens": [
+    {
+     "assunto": "Fibrocartilagem triangular e punho ulnar",
+     "area": "Mão e punho",
+     "quantidade": 1
+    },
+    {
+     "assunto": "Fraturas do pé na criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 5
+    },
+    {
+     "assunto": "Metatarsalgia e neuroma de Morton",
+     "area": "Pé e tornozelo",
+     "quantidade": 5
+    },
+    {
+     "assunto": "Mão da criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 5
+    },
+    {
+     "assunto": "Raquitismo e osteomalácia",
+     "area": "Osteometabólicas",
+     "quantidade": 5
+    },
+    {
+     "assunto": "Politrauma e controle de danos",
+     "area": "Trauma adulto",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Exame físico do joelho",
+     "area": "Joelho",
+     "quantidade": 7
+    },
+    {
+     "assunto": "Vias de acesso ao quadril",
+     "area": "Quadril",
+     "quantidade": 7
+    },
+    {
+     "assunto": "Amputações e reimplantes",
+     "area": "Mão e punho",
+     "quantidade": 4
+    },
+    {
+     "assunto": "Dedo em gatilho e outras tenossinovites",
+     "area": "Mão e punho",
+     "quantidade": 4
+    },
+    {
+     "assunto": "Deformidades ósseas e alongamento",
+     "area": "Conceitos básicos",
+     "quantidade": 4
+    },
+    {
+     "assunto": "Exame físico do cotovelo",
+     "area": "Ombro e cotovelo",
+     "quantidade": 4
+    },
+    {
+     "assunto": "Hálux rígido",
+     "area": "Pé e tornozelo",
+     "quantidade": 4
+    },
+    {
+     "assunto": "Infecções da coluna",
+     "area": "Coluna",
+     "quantidade": 2
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 55,
+   "inicio": "2027-11-01",
+   "fim": "2027-11-07",
+   "itens": [
+    {
+     "assunto": "Infecções da coluna",
+     "area": "Coluna",
+     "quantidade": 2
+    },
+    {
+     "assunto": "Lesões SLAP e do lábio superior",
+     "area": "Ombro e cotovelo",
+     "quantidade": 4
+    },
+    {
+     "assunto": "Pé plano flexível",
+     "area": "Pé e tornozelo",
+     "quantidade": 4
+    },
+    {
+     "assunto": "Sarcomas de partes moles",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 4
+    },
+    {
+     "assunto": "Síndrome do túnel do carpo",
+     "area": "Mão e punho",
+     "quantidade": 4
+    },
+    {
+     "assunto": "Osteocondroses",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Sinovite transitória e artrite séptica do quadril",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Artroscopia do quadril e lesão labral",
+     "area": "Quadril",
+     "quantidade": 7
+    },
+    {
+     "assunto": "Biomecânica e marcha",
+     "area": "Pé e tornozelo",
+     "quantidade": 4
+    },
+    {
+     "assunto": "Deformidades congênitas do pé",
+     "area": "Pé e tornozelo",
+     "quantidade": 4
+    },
+    {
+     "assunto": "Deformidades dos dedos",
+     "area": "Mão e punho",
+     "quantidade": 4
+    },
+    {
+     "assunto": "Lombalgia",
+     "area": "Coluna",
+     "quantidade": 4
+    },
+    {
+     "assunto": "Medicamentos e exames laboratoriais",
+     "area": "Conceitos básicos",
+     "quantidade": 4
+    },
+    {
+     "assunto": "Biomecânica da mão",
+     "area": "Mão e punho",
+     "quantidade": 4
+    },
+    {
+     "assunto": "Biomecânica e marcha",
+     "area": "Quadril",
+     "quantidade": 4
+    },
+    {
+     "assunto": "Encondroma e encondromatoses",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 1
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 56,
+   "inicio": "2027-11-08",
+   "fim": "2027-11-14",
+   "itens": [
+    {
+     "assunto": "Encondroma e encondromatoses",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Fixadores externos",
+     "area": "Conceitos básicos",
+     "quantidade": 4
+    },
+    {
+     "assunto": "Fraturas do quadril e do acetábulo",
+     "area": "Quadril",
+     "quantidade": 4
+    },
+    {
+     "assunto": "Luxação acromioclavicular e esternoclavicular",
+     "area": "Ombro e cotovelo",
+     "quantidade": 4
+    },
+    {
+     "assunto": "Osteotomias do quadril",
+     "area": "Quadril",
+     "quantidade": 4
+    },
+    {
+     "assunto": "Peitoral maior e outras rupturas tendíneas",
+     "area": "Ombro e cotovelo",
+     "quantidade": 4
+    },
+    {
+     "assunto": "Vias de acesso à coluna",
+     "area": "Coluna",
+     "quantidade": 4
+    },
+    {
+     "assunto": "Desenvolvimento neuropsicomotor",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Fraturas do mediopé e antepé",
+     "area": "Trauma adulto",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Pé reumatoide",
+     "area": "Pé e tornozelo",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Menisco discoide",
+     "area": "Joelho",
+     "quantidade": 5
+    },
+    {
+     "assunto": "Anatomia do cotovelo",
+     "area": "Ombro e cotovelo",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Artrose do punho e artroscopia",
+     "area": "Mão e punho",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Condroblastoma",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Coxartrose",
+     "area": "Quadril",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Hiperparatireoidismo e osteodistrofia renal",
+     "area": "Osteometabólicas",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Osteocondroma e exostoses múltiplas",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Fasciíte plantar e dor no calcanhar",
+     "area": "Pé e tornozelo",
+     "quantidade": 1
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 57,
+   "inicio": "2027-11-15",
+   "fim": "2027-11-21",
+   "itens": [
+    {
+     "assunto": "Fasciíte plantar e dor no calcanhar",
+     "area": "Pé e tornozelo",
+     "quantidade": 2
+    },
+    {
+     "assunto": "Fraturas da coluna cervical baixa",
+     "area": "Trauma adulto",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Fraturas do escafoide e do carpo",
+     "area": "Mão e punho",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Fraturas dos metacarpos e falanges",
+     "area": "Mão e punho",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Biomecânica do joelho",
+     "area": "Joelho",
+     "quantidade": 5
+    },
+    {
+     "assunto": "Fraturas periprotéticas do quadril",
+     "area": "Quadril",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Lesões condrais",
+     "area": "Joelho",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Metodologia científica e estatística",
+     "area": "Conceitos básicos",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Artroscopia do tornozelo",
+     "area": "Pé e tornozelo",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Impacto subacromial e acromioplastia",
+     "area": "Ombro e cotovelo",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Pubalgia e osteíte púbica",
+     "area": "Quadril",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Canto posterolateral",
+     "area": "Joelho",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Cisto ósseo aneurismático",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Osteoma osteoide",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Osteonecrose do joelho",
+     "area": "Joelho",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Artroscopia do cotovelo",
+     "area": "Ombro e cotovelo",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Fratura do olécrano",
+     "area": "Trauma adulto",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Imagem em ortopedia",
+     "area": "Conceitos básicos",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Ossificação heterotópica",
+     "area": "Ombro e cotovelo",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Sindactilia e polidactilia",
+     "area": "Mão e punho",
+     "quantidade": 2
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 58,
+   "inicio": "2027-11-22",
+   "fim": "2027-11-28",
+   "itens": [
+    {
+     "assunto": "Sindactilia e polidactilia",
+     "area": "Mão e punho",
+     "quantidade": 1
+    },
+    {
+     "assunto": "Trauma da coluna na criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Artroscopia do joelho",
+     "area": "Joelho",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Reconstrução do LCA: enxertos e túneis",
+     "area": "Joelho",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Biomecânica do ombro e cotovelo",
+     "area": "Ombro e cotovelo",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Cordoma",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Displasia osteofibrosa e adamantinoma",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Escoliose congênita e neuromuscular",
+     "area": "Coluna",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Fibroma não ossificante e defeito fibroso cortical",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Fratura do rádio distal",
+     "area": "Mão e punho",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Imagem da mão e punho",
+     "area": "Mão e punho",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Infecções e artrites na criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Lesão do subescapular",
+     "area": "Ombro e cotovelo",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Osteomielite crônica",
+     "area": "Conceitos básicos",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Trauma pediátrico",
+     "area": "Trauma adulto",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Joelho na criança",
+     "area": "Joelho",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Coxa vara do desenvolvimento",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Dedos menores em garra e em martelo",
+     "area": "Pé e tornozelo",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Deficiências longitudinais dos membros",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Deficiências longitudinais e mão torta",
+     "area": "Mão e punho",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Instabilidade posterior e multidirecional",
+     "area": "Ombro e cotovelo",
+     "quantidade": 2
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 59,
+   "inicio": "2027-11-29",
+   "fim": "2027-12-05",
+   "itens": [
+    {
+     "assunto": "Instabilidade posterior e multidirecional",
+     "area": "Ombro e cotovelo",
+     "quantidade": 1
+    },
+    {
+     "assunto": "Tratamento conservador e imobilização",
+     "area": "Conceitos básicos",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Tumores da coluna",
+     "area": "Coluna",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Vias de acesso ao joelho",
+     "area": "Joelho",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Artroplastia unicompartimental",
+     "area": "Joelho",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Biomecânica da coluna",
+     "area": "Coluna",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Coluna cervical da criança e torcicolo",
+     "area": "Coluna",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Doença de Paget",
+     "area": "Osteometabólicas",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Fratura da patela",
+     "area": "Joelho",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Ligamento colateral medial",
+     "area": "Joelho",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Luxação do joelho",
+     "area": "Joelho",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Osteoblastoma",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Tendinopatias do aparelho extensor",
+     "area": "Joelho",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Artrite reumatoide",
+     "area": "Osteometabólicas",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Discrepância de comprimento dos membros",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Displasia do quadril no adulto",
+     "area": "Quadril",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Doenças autoinflamatórias ósseas",
+     "area": "Conceitos básicos",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Espondiloartrites",
+     "area": "Coluna",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Fibroma condromixoide",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Fixação externa e princípios de tratamento",
+     "area": "Trauma adulto",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Lesão da sindesmose",
+     "area": "Pé e tornozelo",
+     "quantidade": 2
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 60,
+   "inicio": "2027-12-06",
+   "fim": "2027-12-12",
+   "itens": [
+    {
+     "assunto": "Lesão da sindesmose",
+     "area": "Pé e tornozelo",
+     "quantidade": 1
+    },
+    {
+     "assunto": "Luxação e instabilidade da artroplastia",
+     "area": "Quadril",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Osteocondroses do pé",
+     "area": "Pé e tornozelo",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Osteonecrose da cabeça umeral",
+     "area": "Ombro e cotovelo",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Raquitismo e doenças metabólicas na criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Soltura, osteólise e revisão",
+     "area": "Quadril",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Tumores da mão",
+     "area": "Mão e punho",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Outras fraturas na criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 19
+    },
+    {
+     "assunto": "Outras malformações congênitas",
+     "area": "Mão e punho",
+     "quantidade": 9
+    },
+    {
+     "assunto": "Outros temas de trauma",
+     "area": "Trauma adulto",
+     "quantidade": 8
+    },
+    {
+     "assunto": "Outras doenças congênitas",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 5
+    }
+   ],
+   "total": 60
+  },
+  {
+   "semana": 61,
+   "inicio": "2027-12-13",
+   "fim": "2027-12-19",
+   "itens": [
+    {
+     "assunto": "Outras doenças congênitas",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 2
+    },
+    {
+     "assunto": "Outras infecções osteoarticulares",
+     "area": "Conceitos básicos",
+     "quantidade": 5
+    },
+    {
+     "assunto": "Outros temas do ombro e cotovelo",
+     "area": "Ombro e cotovelo",
+     "quantidade": 5
+    },
+    {
+     "assunto": "Outras lesões pseudotumorais",
+     "area": "Tumores ósseos e de partes moles",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Outros temas de ortopedia pediátrica",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Outros temas do pé e tornozelo",
+     "area": "Pé e tornozelo",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Outros temas osteometabólicos",
+     "area": "Osteometabólicas",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Outros temas do quadril",
+     "area": "Quadril",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Outros temas da coluna",
+     "area": "Coluna",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Outros temas do joelho",
+     "area": "Joelho",
+     "quantidade": 3
+    },
+    {
+     "assunto": "Outras deformidades do pé na criança",
+     "area": "Ortopedia pediátrica",
+     "quantidade": 3
+    }
+   ],
+   "total": 36
+  }
+ ],
+ "historico": [
+  {
+   "data": "2026-10-13",
+   "aprovados": 10,
+   "reprovados": 0,
+   "assuntos": {
+    "Lesões fisárias": 6,
+    "Fraturas do tornozelo na criança": 3,
+    "Doença de Legg-Calvé-Perthes": 1
+   }
+  }
+ ]
+}

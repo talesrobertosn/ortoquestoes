@@ -1321,3 +1321,205 @@ body.fc-modal-aberto .aviso-cookies, body.fc-modal-aberto .aviso-site, body.fc-m
 /* sem desfoque de fundo ao vivo (pesava mais que todo o resto no computador): véus um pouco mais escuros no lugar */
 .fc-modal-veu { backdrop-filter: none !important; -webkit-backdrop-filter: none !important; background: radial-gradient(ellipse at 50% 40%, rgba(20, 14, 24, .86), rgba(4, 3, 6, .96)) !important; }
 .fc-veu { backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
+
+/* ---- sprites assados (scripts/sprites/): uma linha por animação, quadros na horizontal.
+   Cada ator recebe --l-<anim> (linha), --n-<anim> (quadros), --d-<anim> (duração), --w e --h. */
+.fc-ator__folha--assada { position: absolute; inset: 0; display: block; background-repeat: no-repeat; image-rendering: pixelated; image-rendering: crisp-edges; pointer-events: none;
+  --linha: var(--l-parado); --n: var(--n-parado);
+  animation: fc-quadros var(--d-parado) steps(var(--n-parado), jump-none) infinite; }
+@keyframes fc-quadros {
+  from { background-position: 0 calc(var(--linha) * -1 * var(--h)); }
+  to { background-position: calc((var(--n) - 1) * -1 * var(--w)) calc(var(--linha) * -1 * var(--h)); }
+}
+.fc-ator[data-pose="preparo"] .fc-ator__folha--assada { --linha: var(--l-preparo); --n: var(--n-preparo); animation: fc-quadros var(--d-preparo) steps(var(--n-preparo), jump-none) 1 forwards; }
+.fc-ator[data-pose="golpe"] .fc-ator__folha--assada { --linha: var(--l-golpe); --n: var(--n-golpe); animation: fc-quadros var(--d-golpe) steps(var(--n-golpe), jump-none) 1 forwards; }
+.fc-ator[data-pose="dano"] .fc-ator__folha--assada { --linha: var(--l-dano); --n: var(--n-dano); animation: fc-quadros var(--d-dano) steps(var(--n-dano), jump-none) 1 forwards; }
+.fc-ator[data-pose="vitoria"] .fc-ator__folha--assada { --linha: var(--l-vitoria); --n: var(--n-vitoria); animation: fc-quadros var(--d-vitoria) steps(var(--n-vitoria), jump-none) infinite alternate; }
+.fc-ator--caiu .fc-ator__folha--assada { --linha: var(--l-derrota); --n: var(--n-derrota); animation: fc-quadros var(--d-derrota) steps(var(--n-derrota), jump-none) 1 forwards; }
+/* o clarão do golpe é a mesma folha em branco, no mesmo quadro: só aparece no instante do impacto */
+.fc-ator__clarao.fc-ator__folha--assada { opacity: 0; }
+.fc-anim-atingido .fc-ator__clarao.fc-ator__folha--assada, .fc-anim-atingido-forte .fc-ator__clarao.fc-ator__folha--assada, .fc-anim-clarao .fc-ator__clarao.fc-ator__folha--assada { animation: fc-quadros var(--d-dano) steps(var(--n-dano), jump-none) 1 forwards, fc-flash .32s ease-out; --linha: var(--l-dano); --n: var(--n-dano); }
+.fc-arena--reduzida .fc-ator__folha--assada { animation-duration: 1ms; animation-iteration-count: 1; }
+/* a folha assada já tem contorno próprio: só a sombra de contato leve */
+.fc-ator--assado .fc-ator__quadros { filter: none; }
+
+/* ---- três arquiteturas de tabuleiro (efeitos/tabuleiros.ts) */
+/* chão integrado: sem moldura nem sombra de objeto; o piso do bioma aparece */
+.fc-mesa[data-tabuleiro="chao"] { box-shadow: none; }
+.fc-mesa[data-tabuleiro="chao"]::after { background: none; }
+.fc-mesa[data-tabuleiro="chao"] .fc-gema { display: none; }
+/* plataforma suspensa: o canvas desce além da mesa, mostrando a rocha pendurada */
+.fc-mesa[data-tabuleiro="plataforma"] { box-shadow: none; }
+.fc-mesa[data-tabuleiro="plataforma"] .fc-mesa__tampo { height: 122%; border-radius: 0; filter: drop-shadow(0 24px 22px rgba(0, 0, 0, .55)); }
+.fc-mesa[data-tabuleiro="plataforma"]::after { inset: 4% 3% 6% 3%; border-radius: 40px; background: radial-gradient(ellipse at 50% 46%, rgba(255, 240, 200, .14), transparent 66%); }
+.fc-mesa[data-tabuleiro="plataforma"] .fc-gema { display: none; }
+/* mesa física: o canvas desce 6% para mostrar a frente do tampo (espessura) */
+.fc-mesa[data-tabuleiro="mesa"] .fc-mesa__tampo { height: 106%; border-radius: 18px 18px 12px 12px; }
+.fc-mesa[data-tabuleiro="mesa"] { box-shadow: 0 46px 46px -14px rgba(0, 0, 0, .75), 0 16px 18px rgba(0, 0, 0, .35); }
+
+/* =====================================================================
+   Design system v5 dos controles: placas forjadas (SVG em 9 partes, src/estilos/ui/)
+   com moldura de metal chanfrada, rebites, filete e painel; medalhão para o ícone.
+   Estados por material: ferro (indisponível), ouro com brasa (pronto), ouro cheio (seguir).
+   ===================================================================== */
+.fc-modal .fc-principal {
+  position: relative; display: inline-flex !important; align-items: center; justify-content: flex-start; gap: 0; min-width: 196px; min-height: 0 !important;
+  padding: 0 18px 0 58px !important; margin-left: 14px; height: 66px;
+  border: 16px solid transparent !important; border-radius: 0 !important; border-image: url(../ui/placa-ferro.svg) 16 fill / 16px stretch !important;
+  background: none !important; box-shadow: none !important; overflow: visible !important; color: #d9d0bd !important;
+  filter: drop-shadow(0 6px 0 rgba(8, 6, 10, .9)) drop-shadow(0 12px 14px rgba(0, 0, 0, .45)) !important;
+  transition: transform .12s ease-out, filter .12s ease-out !important; animation: none !important;
+}
+.fc-modal .fc-principal::before { content: ""; position: absolute; left: -46px; top: 50%; width: 66px; height: 66px; transform: translateY(-50%); background: url(../ui/medalhao-ferro.svg) center / contain no-repeat; z-index: 0; }
+.fc-modal .fc-principal__icone { position: absolute !important; left: -31px; top: 50%; transform: translateY(-50%); width: 36px !important; height: 36px !important; z-index: 1; filter: grayscale(.85) brightness(.75) drop-shadow(0 2px 0 rgba(0, 0, 0, .6)) !important; }
+.fc-modal .fc-principal__texto { position: relative; z-index: 1; display: grid; justify-items: start; gap: 0; }
+.fc-modal .fc-principal__texto span { font: 900 21px/1 var(--fc-titulo); letter-spacing: .08em; text-transform: uppercase; color: inherit; text-shadow: 0 2px 0 #0b090d; }
+.fc-modal .fc-principal__texto small { font: 800 11.5px/1.25 var(--fc-ui); letter-spacing: .1em; text-transform: uppercase; color: #a8a090; opacity: 1; }
+/* brilho que atravessa a placa (só opacidade e posição: barato) */
+.fc-modal .fc-principal__runa { position: absolute !important; inset: -6px !important; z-index: 2; opacity: 0; pointer-events: none; animation: none !important; overflow: hidden; border-radius: 4px;
+  background: linear-gradient(105deg, transparent 35%, rgba(255, 246, 210, .55) 48%, transparent 60%) !important; background-size: 260% 100% !important; }
+.fc-modal .fc-principal::after { content: ""; position: absolute; inset: -22px -16px -22px -62px; z-index: -1; pointer-events: none; opacity: 0;
+  background: radial-gradient(ellipse at 30% 50%, rgba(255, 190, 80, .55), transparent 62%); }
+
+/* pronto: ouro com brasa, medalhão aceso, espada brilhando, pulso e brilho que corre */
+.fc-modal .fc-principal.pronto { border-image-source: url(../ui/placa-ataque.svg) !important; color: #fff1c2 !important; }
+.fc-modal .fc-principal.pronto::before { background-image: url(../ui/medalhao-ataque.svg); }
+.fc-modal .fc-principal.pronto .fc-principal__icone { filter: drop-shadow(0 0 6px rgba(255, 220, 140, .9)) drop-shadow(0 2px 0 rgba(0, 0, 0, .6)) !important; }
+.fc-modal .fc-principal.pronto .fc-principal__texto small { color: #f2c45a; }
+.fc-modal .fc-principal.pronto::after { animation: fc-pulso-op 1.4s ease-in-out infinite; }
+.fc-modal .fc-principal.pronto .fc-principal__runa { opacity: 1; animation: fc-varre 2.4s ease-in-out infinite !important; }
+@keyframes fc-varre { 0% { background-position: 120% 0; } 60%, 100% { background-position: -40% 0; } }
+/* seguir: placa de ouro cheia, texto escuro, porta no medalhão */
+.fc-modal .fc-principal.seguir { border-image-source: url(../ui/placa-ouro.svg) !important; color: #2a1606 !important; }
+.fc-modal .fc-principal.seguir .fc-principal__texto span { text-shadow: 0 1px 0 rgba(255, 246, 210, .7); }
+.fc-modal .fc-principal.seguir .fc-principal__texto small { color: #5a3a10; }
+.fc-modal .fc-principal.seguir::before { background-image: url(../ui/medalhao-ouro.svg); }
+.fc-modal .fc-principal.seguir .fc-principal__icone { filter: drop-shadow(0 2px 0 rgba(0, 0, 0, .5)) !important; }
+.fc-modal .fc-principal.seguir::after { animation: fc-pulso-op 1.8s ease-in-out infinite; }
+.fc-modal .fc-principal.seguir .fc-principal__runa { opacity: 1; animation: fc-varre 3s ease-in-out infinite !important; }
+/* tátil: sobe no hover, afunda ao pressionar (a sombra de baixo encolhe) */
+.fc-modal .fc-principal:not(:disabled):hover { transform: translateY(-2px) !important; filter: drop-shadow(0 8px 0 rgba(8, 6, 10, .9)) drop-shadow(0 14px 16px rgba(0, 0, 0, .45)) brightness(1.06) !important; }
+.fc-modal .fc-principal:not(:disabled):active { transform: translateY(5px) !important; filter: drop-shadow(0 1px 0 rgba(8, 6, 10, .9)) drop-shadow(0 4px 6px rgba(0, 0, 0, .45)) brightness(.96) !important; }
+.fc-modal .fc-principal:disabled { opacity: 1; }
+.fc-modal .fc-principal:focus-visible { outline: 3px solid #fff1c2; outline-offset: 4px; }
+
+/* abas Batalha/Estudo: régua de ferro com duas placas; a ativa vira ouro */
+.fc-modal .fc-abas { gap: 6px; padding: 0; background: none !important; box-shadow: none !important; }
+.fc-modal .fc-abas button { min-height: 44px; padding: 0 14px !important; border: 12px solid transparent !important; border-radius: 0 !important; border-image: url(../ui/placa-aba.svg) 16 fill / 12px stretch !important;
+  background: none !important; box-shadow: none !important; color: #c9c0ae !important; font: 900 13px/1 var(--fc-titulo); letter-spacing: .1em; text-transform: uppercase;
+  filter: drop-shadow(0 3px 0 rgba(8, 6, 10, .9)); transition: transform .12s ease-out; }
+.fc-modal .fc-abas button[aria-selected="true"] { border-image-source: url(../ui/placa-ouro.svg) !important; color: #2a1606 !important; text-shadow: 0 1px 0 rgba(255, 246, 210, .6); }
+.fc-modal .fc-abas button:not([aria-selected="true"]):hover { color: #fff1c2 !important; transform: translateY(-1px); }
+.fc-modal .fc-abas button:active { transform: translateY(2px); }
+/* som e ajustes: medalhões redondos; o som ligado tem aro de ouro */
+.fc-modal .fc-topo-botao { min-width: 46px; min-height: 46px; padding: 0 !important; border: 0 !important; border-radius: 50% !important; background: url(../ui/botao-ferro.svg) center / contain no-repeat !important; box-shadow: none !important;
+  color: #e6dcc6 !important; filter: drop-shadow(0 3px 0 rgba(8, 6, 10, .9)); }
+.fc-modal .fc-topo-botao[aria-pressed="true"] { background-image: url(../ui/botao-ouro.svg) !important; color: #fff1c2 !important; }
+.fc-modal .fc-topo-botao .fc-topo-botao__texto { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.fc-modal .fc-topo-botao:hover { transform: translateY(-1px) rotate(-8deg); }
+.fc-modal .fc-topo-botao:active { transform: translateY(2px); }
+@media (max-width: 640px) {
+  /* no celular o medalhão fica dentro da placa, para não invadir a vida do herói */
+  .fc-modal .fc-principal { min-width: 0; height: 54px; padding: 0 8px 0 36px !important; margin-left: 0; border-width: 12px !important; border-image-width: 12px !important; }
+  .fc-modal .fc-principal::before { left: -10px; width: 44px; height: 44px; }
+  .fc-modal .fc-principal__icone { left: -1px; width: 26px !important; height: 26px !important; }
+  .fc-modal .fc-principal__texto span { font-size: 16px; letter-spacing: .06em; }
+  .fc-modal .fc-principal__texto small { font-size: 10px; letter-spacing: .06em; }
+  .fc-modal .fc-abas { gap: 4px; }
+  .fc-modal .fc-abas button { min-height: 38px; padding: 0 4px !important; border-width: 10px !important; border-image-width: 10px !important; font-size: 11px; letter-spacing: .06em; }
+  .fc-modal .fc-abas .fc-sprite--icone { display: none; }
+  .fc-modal .fc-topo-botao { min-width: 40px; min-height: 40px; }
+}
+@media (max-width: 640px) {
+  /* a vida do herói: o número vai para dentro da barra, sempre visível */
+  .fc-modal .fc-heroi__dados .fc-vida { position: relative; }
+  .fc-modal .fc-heroi__dados .fc-vida b { position: absolute; right: 6px; top: 50%; transform: translateY(-50%); min-width: 0; font-size: 13px; line-height: 1; z-index: 2; text-shadow: 0 1px 0 #000, 0 0 4px #000; }
+  .fc-modal .fc-heroi__dados .fc-vida b small { font-size: 10px; }
+  .fc-modal .fc-heroi__dados .fc-vida__trilho { flex: 1; }
+  /* a plataforma desce menos no celular, para não invadir o painel do herói */
+  .fc-modal .fc-mesa[data-tabuleiro="plataforma"] .fc-mesa__tampo { height: 108%; }
+}
+
+/* ---- cartas v5: cantoneiras desenhadas por raridade, luz que corre na moldura (épica e
+   lendária), faíscas e entrada dourada na lendária. Tudo anima só transform e opacidade. */
+.fc-modal .fc-carta__canto { width: 34px; height: 34px; border: 0 !important; border-radius: 0 !important; background: url(../ui/canto-comum.svg) 0 0 / contain no-repeat; filter: drop-shadow(0 1px 0 rgba(0, 0, 0, .5)); }
+.fc-modal .fc-carta--rara .fc-carta__canto { background-image: url(../ui/canto-rara.svg); }
+.fc-modal .fc-carta--epica .fc-carta__canto { background-image: url(../ui/canto-epica.svg); width: 40px; height: 40px; }
+.fc-modal .fc-carta--lendaria .fc-carta__canto { background-image: url(../ui/canto-lendaria.svg); width: 46px; height: 46px; filter: drop-shadow(0 0 4px rgba(255, 210, 110, .7)); }
+.fc-modal .fc-carta__canto--1 { left: -2px; top: -2px; }
+.fc-modal .fc-carta__canto--2 { right: -2px; top: -2px; transform: scaleX(-1); }
+.fc-modal .fc-carta__canto--3 { left: -2px; bottom: -2px; transform: scaleY(-1); }
+.fc-modal .fc-carta__canto--4 { right: -2px; bottom: -2px; transform: scale(-1, -1); }
+.fc-carta__aro { position: absolute; inset: 0; z-index: 4; padding: 9px; border-radius: 22px; overflow: hidden; pointer-events: none;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0); }
+.fc-carta__aro i { position: absolute; left: 50%; top: 50%; width: 160%; aspect-ratio: 1; transform: translate(-50%, -50%); will-change: transform;
+  background: conic-gradient(from 0deg, transparent 0 62%, rgba(255, 250, 225, .95) 72%, transparent 82%, transparent); animation: fc-gira-aro 4.2s linear infinite; }
+.fc-carta--epica .fc-carta__aro i { background: conic-gradient(from 0deg, transparent 0 66%, rgba(230, 200, 255, .8) 74%, transparent 82%, transparent); animation-duration: 6s; }
+@keyframes fc-gira-aro { to { transform: translate(-50%, -50%) rotate(360deg); } }
+/* entrada da lendária: clarão dourado que se abre uma vez */
+.fc-carta--lendaria .fc-carta__aro::after { content: ""; position: absolute; inset: -40%; background: radial-gradient(closest-side, rgba(255, 230, 150, .95), transparent); opacity: 0; animation: fc-entra-lendaria 1.1s ease-out 1; }
+@keyframes fc-entra-lendaria { 0% { opacity: 1; transform: scale(.4); } 100% { opacity: 0; transform: scale(1.3); } }
+.fc-carta__faiscas { position: absolute; inset: 0; z-index: 4; pointer-events: none; overflow: visible; }
+.fc-carta__faiscas i { position: absolute; bottom: 4px; width: 4px; height: 4px; background: #fff1b0; box-shadow: 0 0 6px 2px rgba(255, 210, 110, .8); opacity: 0; will-change: transform, opacity; animation: fc-faisca 3.2s ease-out infinite; }
+.fc-carta__faiscas i:nth-child(1) { left: 12%; animation-delay: 0s; } .fc-carta__faiscas i:nth-child(2) { left: 28%; animation-delay: .9s; }
+.fc-carta__faiscas i:nth-child(3) { left: 46%; animation-delay: 1.7s; } .fc-carta__faiscas i:nth-child(4) { left: 63%; animation-delay: .4s; }
+.fc-carta__faiscas i:nth-child(5) { left: 79%; animation-delay: 2.3s; } .fc-carta__faiscas i:nth-child(6) { left: 92%; animation-delay: 1.3s; }
+@keyframes fc-faisca { 0% { opacity: 0; transform: translateY(0) scale(.6); } 15% { opacity: 1; } 100% { opacity: 0; transform: translateY(-46px) scale(1.2); } }
+.fc-arena--reduzida .fc-carta__aro i, .fc-arena--reduzida .fc-carta__faiscas { animation: none; display: none; }
+/* lendária: moldura com mais corpo e brilho próprio */
+.fc-modal .fc-carta--lendaria .fc-carta__borda { padding: 10px; box-shadow: 0 0 0 2px #120a04, 0 2px 0 2px #6a4410, 0 4px 0 2px #3a2408, 0 7px 0 2px #120a04, 0 0 28px rgba(255, 200, 90, .45), var(--fc-sombra-objeto), inset 0 1px 0 rgba(255, 255, 255, .8); }
+.fc-modal .fc-carta--comum .fc-carta__borda { background: linear-gradient(150deg, #e8ecf2 0%, #a8b0bc 18%, #6b7380 50%, #8a929e 70%, #3a404c 100%); }
+
+/* alternativa curta (uma letra, um número, um tipo): a resposta vira o destaque do botão */
+.fc-alternativa.fc-alternativa--curta > span { font-family: var(--fc-titulo, inherit); font-size: clamp(26px, 1.2vw + 16px, 34px); font-weight: 800; letter-spacing: .04em; line-height: 1; text-align: center; justify-items: center; text-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 2px 3px rgba(0, 0, 0, .25); }
+@media (max-width: 700px) { .fc-alternativa.fc-alternativa--curta > span { font-size: 26px; text-align: center; justify-items: center; } }
+
+/* Recompensas v5: fita pendurada dentro da carta (a carta corta o que sai dela),
+   cantoneiras da raridade e, no celular, cabeçalho numa linha só */
+.fc-modal .fc-recompensa { padding-top: 40px; }
+.fc-modal .fc-recompensa__fita { top: 0; left: 50%; transform: translateX(-50%); padding: 5px 16px 6px; border-radius: 0 0 12px 12px; white-space: nowrap; z-index: 2;
+  box-shadow: 0 0 0 1.5px #120a04, 0 3px 0 rgba(0, 0, 0, .45), inset 0 -2px 0 rgba(0, 0, 0, .18), inset 0 1px 0 rgba(255, 255, 255, .6); }
+.fc-recompensa__canto { position: absolute; z-index: 2; width: 30px; height: 30px; pointer-events: none; background: url(../ui/canto-comum.svg) 0 0 / contain no-repeat; filter: drop-shadow(0 1px 0 rgba(0, 0, 0, .55)); }
+.fc-recompensa--incomum .fc-recompensa__canto, .fc-recompensa--rara .fc-recompensa__canto { background-image: url(../ui/canto-rara.svg); }
+.fc-recompensa--epica .fc-recompensa__canto { background-image: url(../ui/canto-epica.svg); width: 36px; height: 36px; }
+.fc-recompensa--lendaria .fc-recompensa__canto { background-image: url(../ui/canto-lendaria.svg); width: 42px; height: 42px; filter: drop-shadow(0 0 4px rgba(255, 210, 110, .7)); }
+.fc-recompensa__canto--1 { left: 2px; top: 2px; } .fc-recompensa__canto--2 { right: 2px; top: 2px; transform: scaleX(-1); }
+.fc-recompensa__canto--3 { left: 2px; bottom: 2px; transform: scaleY(-1); } .fc-recompensa__canto--4 { right: 2px; bottom: 2px; transform: scale(-1, -1); }
+.fc-recompensa__tecla { z-index: 3; right: 30px; }
+@media (max-width: 700px) {
+  .fc-tesouro { gap: 12px; }
+  .fc-tesouro__cabeca h2 { font-size: 18.5px; letter-spacing: .03em; white-space: nowrap; }
+  .fc-tesouro__cabeca h2::before, .fc-tesouro__cabeca h2::after { margin: 0 .3em; }
+  .fc-tesouro__cabeca p { font-size: 13.5px; }
+  .fc-modal .fc-recompensa { padding: 30px 14px 12px; }
+  .fc-modal .fc-recompensa__fita { left: 50%; font-size: 10.5px; padding: 4px 12px 5px; }
+  .fc-recompensa__canto { width: 24px; height: 24px; }
+  .fc-recompensa--epica .fc-recompensa__canto, .fc-recompensa--lendaria .fc-recompensa__canto { width: 30px; height: 30px; }
+  /* no toque, o foco não salta a carta para cima do cabeçalho */
+  .fc-recompensa:not(:disabled):hover, .fc-recompensa:focus-visible { transform: scale(1.015); }
+}
+
+/* Painéis v5: as placas do adversário e do herói usam a mesma moldura forjada
+   dos botões (9 partes em SVG), em bronze, ouro (chefe) e aço azulado (herói) */
+.fc-modal .fc-placa, .fc-modal .fc-heroi__dados { border: 12px solid transparent !important; border-radius: 0 !important; background: none !important;
+  border-image: url(../ui/painel-inimigo.svg) 16 fill / 12px stretch !important; box-shadow: none !important; filter: drop-shadow(0 8px 10px rgba(0, 0, 0, .5)); backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
+.fc-modal .fc-placa { padding: 2px 8px !important; }
+.fc-modal .fc-heroi__dados { border-image-source: url(../ui/painel-heroi.svg) !important; padding: 2px 8px !important; width: clamp(280px, calc(21vw + 36px), 350px); grid-template-columns: minmax(0, 1fr); }
+.fc-modal .fc-inimigo--chefe .fc-placa { border-image-source: url(../ui/painel-chefe.svg) !important; filter: drop-shadow(0 0 12px rgba(255, 140, 60, .4)) drop-shadow(0 8px 10px rgba(0, 0, 0, .5)); }
+@media (max-width: 700px) {
+  .fc-modal .fc-placa { border-width: 7px !important; border-image-width: 8px !important; padding: 0 2px !important; }
+  .fc-modal .fc-placa__nome strong { font-size: 14.5px; letter-spacing: .02em; }
+  .fc-modal .fc-inimigo--chefe .fc-placa { padding-top: 7px !important; }
+  /* no celular o painel do herói divide a linha com o Atacar: fica com a moldura anterior, sem perder largura */
+  .fc-modal .fc-heroi__dados { border: 0 !important; border-image: none !important; border-radius: 14px !important; width: auto; padding: 6px 7px !important;
+    background: linear-gradient(rgba(14, 18, 30, .93), rgba(14, 18, 30, .86)) !important; box-shadow: 0 0 0 1.5px #0b0d14, 0 0 0 3px #7f97bd, 0 0 0 4.5px #0b0d14, 0 8px 18px rgba(0, 0, 0, .45) !important; }
+  /* a coluna do painel não cresce com a linha do nome; a sequência vira uma aba na borda de cima */
+  .fc-modal .fc-heroi__dados { position: relative; grid-template-columns: minmax(0, 1fr); }
+  .fc-modal .fc-heroi__nome .fc-combo { position: absolute; right: 10px; top: -9px; gap: 2px; padding: 3px 6px; border-radius: 999px; overflow: visible;
+    background: #0b0d14; box-shadow: 0 0 0 1.5px #7f97bd, 0 2px 4px rgba(0, 0, 0, .5); }
+  .fc-modal .fc-heroi__nome .fc-combo i { width: 7px; height: 7px; }
+}
+/* camadas: a placa do adversário fica sobre o próprio sprite (a mandíbula do Dragão não cobre o selo)
+   e o lado do herói fica sobre a parte de baixo da plataforma suspensa */
+.fc-modal .fc-placa { position: relative; z-index: 4; }
+.fc-modal .fc-jogador { position: relative; z-index: 1; }

@@ -28,7 +28,7 @@ const bayer = (x: number, y: number) => BAYER[(y & 3) * 4 + (x & 3)]
 function px(c: Ctx, x: number, y: number, cor: string) { c.fillStyle = cor; c.fillRect(x | 0, y | 0, 1, 1) }
 
 /** Célula de Voronoi em pixels: id da pedra e distância até a junta. */
-function celula(x: number, y: number, tam: number, s: number, esticar = 1) {
+export function celula(x: number, y: number, tam: number, s: number, esticar = 1) {
   const gx = x / (tam * esticar), gy = y / tam, ix = Math.floor(gx), iy = Math.floor(gy)
   let d1 = 9, d2 = 9, id = 0, cx = 0, cy = 0
   for (let j = -1; j <= 1; j++) for (let i = -1; i <= 1; i++) {
@@ -41,7 +41,7 @@ function celula(x: number, y: number, tam: number, s: number, esticar = 1) {
 }
 
 /** Pedras irregulares com chanfro de luz (cima-esquerda) e sombra (baixo-direita). */
-function pedras(c: Ctx, x0: number, y0: number, w: number, h: number, tam: number, tons: string[], junta: string, musgo: string | null, s: number, mascara?: (x: number, y: number) => boolean) {
+export function pedras(c: Ctx, x0: number, y0: number, w: number, h: number, tam: number, tons: string[], junta: string, musgo: string | null, s: number, mascara?: (x: number, y: number) => boolean) {
   for (let y = y0; y < y0 + h; y++) for (let x = x0; x < x0 + w; x++) {
     if (mascara && !mascara(x, y)) continue
     const { id, borda, cx, cy } = celula(x, y, tam, s)
@@ -1009,15 +1009,72 @@ const MESA: Record<Cenario, { borda: string[]; tampo: string[]; metal: string[];
  * borda de blocos chanfrados, cantoneiras de metal com rebites, lajes grandes
  * no tampo e oclusão nas bordas internas.
  */
+/** Altura do canvas da mesa em relação à mesa (a sobra é a frente do tampo). */
+export const ESPESSURA_MESA = 1.06
+
+/** Material do tampo da mesa: lajes de pedra, tábuas de madeira ou facetas de cristal. */
+type MaterialMesa = 'pedra' | 'madeira' | 'cristal'
+const MATERIAL_MESA: Partial<Record<Cenario, MaterialMesa>> = { salao: 'madeira', arquivo: 'madeira', laboratorio: 'cristal' }
+
+/** Tom (0 a 4) de um pixel do tampo de tábuas: veio alongado, nós, juntas e pregos nas pontas. */
+function tomMadeira(x: number, y: number) {
+  const ALT = 9
+  const linha = Math.floor(y / ALT), v = y % ALT
+  const deslocado = x + ruido(linha, 3, 111) * 40
+  const tabua = Math.floor(deslocado / 46), u = deslocado % 46
+  if (v === ALT - 1 || u < 1) return 0
+  if (v === 0) return 4
+  if ((u > 2 && u < 4 || u > 42 && u < 44) && (v === 2 || v === ALT - 3)) return 4 // prego
+  const id = linha * 31 + tabua
+  const veio = fbm(x / 14, y / 1.6 + id * 3.1, 3, 113)
+  // nó: anel escuro em volta de um ponto
+  const nx = (ruido(id, 1, 117) * 30 + 8) | 0, ny = ALT / 2
+  const dn = Math.hypot((u - nx) / 1.6, v - ny)
+  if (ruido(id, 2, 119) > 0.86 && dn < 2.4) return dn < 1.1 ? 1 : 2
+  let k = 2 + Math.floor(ruido(id, 4, 121) * 2)
+  if (veio > 0.62) k = Math.max(1, k - 1)
+  if (veio < 0.3) k = Math.min(4, k + 1)
+  if (v === ALT - 2) k = Math.max(1, k - 1)
+  return k
+}
+
+/** Tom (0 a 4) de um pixel do tampo de cristal: facetas com aresta clara, reflexo diagonal e veio luminoso. */
+function tomCristal(x: number, y: number) {
+  const { id, borda, cx, cy } = celula(x, y, 26, 131, 1.25)
+  // só algumas arestas acendem; as outras são um corte escuro e fino
+  const acesa = ruido(id, 5, 139) > 0.62
+  if (borda < 0.9) return acesa ? 4 : 0
+  // cada faceta tem um degradê próprio (a luz entra de um lado) e um reflexo diagonal largo
+  const lado = Math.sign(cx * 0.8 + cy) || 1
+  const reflexo = (((x * 0.7 - y) / 22 + ruido(id, 1, 133) * 2) % 3 + 3) % 3
+  let k = 1 + Math.floor(ruido(id, 2, 135) * 2)
+  if (borda < 2.2) k = lado > 0 ? 3 : 0
+  else if (reflexo < 0.22) k = Math.min(3, k + 2)
+  else if (reflexo < 0.5) k = Math.min(3, k + 1)
+  if (ruido(x * 1.9, y * 1.7, 137) > 0.985) k = 4
+  return k
+}
+
 export function pintarMesa(canvas: HTMLCanvasElement, cenario: Cenario) {
   const w = canvas.clientWidth, h = canvas.clientHeight
   if (!w || !h) return
   const s = escalaPixel(window.innerWidth)
-  const W = Math.ceil(w / s), H = Math.ceil(h / s)
-  canvas.width = W; canvas.height = H
+  // o canvas é um pouco mais alto que a mesa (CSS): embaixo, a frente do tampo mostra a espessura
+  const W = Math.ceil(w / s), Htot = Math.ceil(h / s), H = Math.round(Htot / ESPESSURA_MESA)
+  canvas.width = W; canvas.height = Htot
   const c = canvas.getContext('2d')!
-  c.clearRect(0, 0, W, H)
+  c.clearRect(0, 0, W, Htot)
   const p = MESA[cenario]
+  // frente do tampo: blocos mais escuros, junta vertical a cada bloco, quina clara em cima e sombra embaixo
+  for (let y = H - 4; y < Htot; y++) for (let x = 0; x < W; x++) {
+    const t = (y - (H - 4)) / Math.max(1, Htot - H + 4)
+    const cantoX = Math.max(0, 8 - x, x - (W - 9))
+    if (cantoX * cantoX + Math.max(0, y - (Htot - 8)) ** 2 > 64) continue
+    const bloco = Math.floor((x + (y > H + 3 ? 7 : 0)) / 15)
+    const junta = (x + (y > H + 3 ? 7 : 0)) % 15 === 0
+    const tom = junta ? 0 : Math.max(0, Math.min(3, Math.floor(3 - t * 2.6 + ruido(bloco, 2, 101) * 0.9)))
+    c.fillStyle = y === H - 4 ? p.borda[4] : p.borda[tom]; c.fillRect(x, y, 1, 1)
+  }
   const B = Math.max(6, Math.min(10, Math.floor(Math.min(W, H) * 0.05)))
   const canto = 5
   const dentroCanto = (x: number, y: number) => {
@@ -1038,6 +1095,12 @@ export function pintarMesa(canvas: HTMLCanvasElement, cenario: Cenario) {
       if (k > 0 && ruido(x / 1.6, y / 1.6, 93) > 0.8) k = Math.max(1, k - 1)
       c.fillStyle = p.borda[k]; c.fillRect(x, y, 1, 1)
     } else {
+      const mat = MATERIAL_MESA[cenario] ?? 'pedra'
+      if (mat !== 'pedra') {
+        const k = mat === 'madeira' ? tomMadeira(x - B, y - B) : tomCristal(x - B, y - B)
+        c.fillStyle = mat === 'cristal' && k === 4 ? p.metal[3] : p.tampo[k]; c.fillRect(x, y, 1, 1)
+        continue
+      }
       // tampo: lajes grandes e irregulares, gastas no meio
       const { id, borda, cx, cy } = celula(x, y, 22, 95, 1.3)
       let k: number

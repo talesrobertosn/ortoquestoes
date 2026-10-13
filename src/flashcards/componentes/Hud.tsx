@@ -1,4 +1,6 @@
 import { forwardRef, memo } from 'react'
+import { recurso } from '../../config'
+import { ASSADOS, type MetaAssada } from '../efeitos/assados'
 import { caixaDoCorpo, pintarPersonagem, POSES, TAMANHO, type Personagem } from '../efeitos/personagens'
 import { RECOMPENSAS, type TipoPoder } from '../motor/poderes'
 import { Sprite } from './Sprite'
@@ -22,6 +24,48 @@ function folhaDe(quem: Personagem, variante?: string) {
   }
   return f
 }
+
+/**
+ * Sprite assado (scripts/sprites/: modelado em volume e convertido em pixel
+ * art), quando existe para o personagem; senão, o desenho antigo em código.
+ * O herói usa a folha do estágio; as variantes de cor dos adversários ainda
+ * usam o desenho antigo até ganharem folha própria.
+ */
+function assadoDe(quem: Personagem, variante?: string): { nome: string; meta: MetaAssada } | null {
+  const nome = quem === 'heroi' ? (variante ?? 'heroi-1') : variante ? '' : quem
+  const meta = nome ? ASSADOS[nome] : undefined
+  return meta ? { nome, meta } : null
+}
+
+/**
+ * Quanto a folha assada cresce em relação à escala pedida (que foi pensada para
+ * o desenho antigo): mantém a altura do corpo antigo, um pouco maior para dar
+ * presença, arredondada a quartos de pixel para os pixels ficarem regulares.
+ */
+const CRESCE: Partial<Record<Personagem, number>> = { heroi: 1.4, dragao: 1.2, guardiao: 1.17, golem: 1.3, serpente: 1.4 }
+function escalaAssada(quem: Personagem, escala: number, meta: MetaAssada) {
+  const [, , , hAntigo] = caixaDoCorpo(quem)
+  const alvo = (escala * hAntigo * (CRESCE[quem] ?? 1.15)) / meta.caixa[3]
+  return Math.max(0.5, Math.round(alvo * 4) / 4)
+}
+
+const QuadrosAssados = memo(function QuadrosAssados({ nome, meta, escala, dx, dy }: { nome: string; meta: MetaAssada; escala: number; dx: number; dy: number }) {
+  const w = meta.largura * escala, h = meta.altura * escala
+  const [x, y] = meta.caixa
+  const vars: Record<string, string | number> = { width: w, height: h, left: dx - x * escala, top: dy - y * escala, ['--w']: w + 'px', ['--h']: h + 'px' }
+  for (const [anim, a] of Object.entries(meta.animacoes)) {
+    vars['--l-' + anim] = a.linha
+    vars['--n-' + anim] = a.quadros
+    vars['--d-' + anim] = a.quadros * a.ms + 'ms'
+  }
+  const tam = `${meta.colunas * w}px ${Object.keys(meta.animacoes).length * h}px`
+  return (
+    <span className="fc-ator__quadros fc-ator__quadros--assado" style={vars as React.CSSProperties}>
+      <span className="fc-ator__folha fc-ator__folha--assada" style={{ backgroundImage: `url(${recurso(`flashcards/sprites/${nome}.png`)})`, backgroundSize: tam }} />
+      <span className="fc-ator__clarao fc-ator__folha--assada" style={{ backgroundImage: `url(${recurso(`flashcards/sprites/${nome}-branco.png`)})`, backgroundSize: tam }} />
+    </span>
+  )
+})
 
 /**
  * Sprite em pixel art: todas as poses numa folha só (uma imagem), e a pose é
@@ -59,12 +103,19 @@ interface AtorProps {
  * elemento `.fc-ator__corpo`; as poses, por `data-pose` no próprio ator.
  */
 export const Ator = forwardRef<HTMLDivElement, AtorProps>(function Ator({ quem, escala, classe, chefe, variante, children }, ref) {
+  const assado = assadoDe(quem, variante)
+  const ea = assado ? escalaAssada(quem, escala, assado.meta) : escala
+  // o ator ocupa no layout o mesmo espaço do desenho antigo; a folha assada, maior,
+  // cresce para cima e para os lados a partir dos pés, sem empurrar a mesa
   const [, , w, h] = caixaDoCorpo(quem)
+  const dx = assado ? (w * escala - assado.meta.caixa[2] * ea) / 2 : 0
+  // um terço do que cresceu desce sobre a borda da mesa (o adversário pisa na beira da arena)
+  const dy = assado ? (h * escala - assado.meta.caixa[3] * ea) * 0.66 : 0
   return (
-    <div ref={ref} className={`fc-ator fc-ator--${quem}${chefe ? ' fc-ator--chefe' : ''}${classe ? ' ' + classe : ''}`} style={{ width: w * escala, height: h * escala }}>
+    <div ref={ref} className={`fc-ator fc-ator--${quem}${assado ? ' fc-ator--assado' : ''}${chefe ? ' fc-ator--chefe' : ''}${classe ? ' ' + classe : ''}`} style={{ width: w * escala, height: h * escala }}>
       <span className="fc-ator__aura" aria-hidden="true" />
       <span className="fc-ator__sombra" aria-hidden="true" />
-      <div className="fc-ator__corpo" aria-hidden="true"><Quadros quem={quem} escala={escala} variante={variante} /></div>
+      <div className="fc-ator__corpo" aria-hidden="true">{assado ? <QuadrosAssados nome={assado.nome} meta={assado.meta} escala={ea} dx={dx} dy={dy} /> : <Quadros quem={quem} escala={escala} variante={variante} />}</div>
       {children}
     </div>
   )

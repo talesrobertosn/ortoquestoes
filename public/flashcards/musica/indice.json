@@ -1,0 +1,62 @@
+{
+ "vitoria": {
+  "arquivo": "vitoria.mp3",
+  "laco": false,
+  "duracao": 7.583,
+  "bpm": 112
+ },
+ "recompensa": {
+  "arquivo": "recompensa.mp3",
+  "laco": false,
+  "duracao": 7.14,
+  "bpm": 100
+ },
+ "derrota": {
+  "arquivo": "derrota.mp3",
+  "laco": false,
+  "duracao": 9.885,
+  "bpm": 56
+ },
+ "cripta": {
+  "arquivo": "cripta.mp3",
+  "laco": true,
+  "duracao": 53.333,
+  "bpm": 72
+ },
+ "batalha": {
+  "arquivo": "batalha.mp3",
+  "laco": true,
+  "duracao": 29.091,
+  "bpm": 132
+ },
+ "elite": {
+  "arquivo": "elite.mp3",
+  "laco": true,
+  "duracao": 27.429,
+  "bpm": 140
+ },
+ "chefe": {
+  "arquivo": "chefe.mp3",
+  "laco": true,
+  "duracao": 26.667,
+  "bpm": 144
+ },
+ "dragao": {
+  "arquivo": "dragao.mp3",
+  "laco": true,
+  "duracao": 25.6,
+  "bpm": 150
+ },
+ "biblioteca": {
+  "arquivo": "biblioteca.mp3",
+  "laco": true,
+  "duracao": 54.857,
+  "bpm": 70
+ },
+ "torre": {
+  "arquivo": "torre.mp3",
+  "laco": true,
+  "duracao": 33.103,
+  "bpm": 116
+ }
+}
