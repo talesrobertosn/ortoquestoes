@@ -345,8 +345,9 @@ try {
     const ferido = motor.escolherNaSala({ ...na.estado, vida: 50 }, temperar).estado
     assert.equal(ferido.vida, 60)
     const reforcar = na.estado.sala.opcoes.findIndex((o) => o.efeitos.some((f) => f.tipo === 'cargas'))
-    const poder = m.PODERES.find((r) => m.RECOMPENSAS[r].maximo === 1) ?? m.PODERES[0]
-    const max = m.RECOMPENSAS[poder].maximo ?? 3
+    const poder = m.PODERES.find((r) => m.RECOMPENSAS[r].maximo === 1)
+    assert.ok(poder, 'nenhum poder com máximo 1 para testar o reforço')
+    const max = m.RECOMPENSAS[poder].maximo
     const reforcado = motor.escolherNaSala({ ...na.estado, ouro: 60, encaixes: [{ tipo: poder, carga: max }] }, reforcar).estado
     assert.equal(reforcado.encaixes[0].carga, max, 'carga passou do máximo na sala')
     // a curandeira cura de graça; o baú paga moedas (com ou sem armadilha) e nunca derruba
