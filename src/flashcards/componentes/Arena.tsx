@@ -307,7 +307,13 @@ function ArenaJogo({ modo: modoJogo, abrirEstudo }: { modo: Modo; abrirEstudo: b
   }, [])
 
   // Só no desenvolvimento: os testes de tela leem o estado para escolher a alternativa certa ou errada.
-  useEffect(() => { if (import.meta.env.DEV) (window as unknown as { __torneio: unknown }).__torneio = { partida, certa: partida.atual ? partida.atual.ordem.indexOf(motor.carta(partida.atual.id).certa) : -1, definir: (p: Partida) => { partidaRef.current = p; definirPartida(p); sincronizar(p) }, cena: definirCenarioVisivel } })
+  useEffect(() => { if (import.meta.env.DEV) (window as unknown as { __torneio: unknown }).__torneio = { partida, certa: partida.atual ? partida.atual.ordem.indexOf(motor.carta(partida.atual.id).certa) : -1, definir: (p: Partida) => { partidaRef.current = p; definirPartida(p); sincronizar(p) }, cena: definirCenarioVisivel,
+    // capturas reproduzíveis: leva a partida a um andar e semente, com o adversário do jeito que o motor o prepara
+    ir: (andar: number, semente: number) => {
+      const p = partidaRef.current, { inimigo: i } = inimigoDoAndar(andar, semente, p.modo)
+      const q = { ...p, andar, sementeBase: semente, inimigo: { ...p.inimigo, id: i.id, vida: i.vida, vidaMax: i.vida, barreira: i.barreira ?? 0, fase: 1 as const, rodadas: 0, errosSeguidos: 0, furia: false } }
+      partidaRef.current = q; definirPartida(q); sincronizar(q); definirCenarioVisivel(i.cenario)
+    } } })
 
   const pular = useCallback(() => {
     geracao.current++
