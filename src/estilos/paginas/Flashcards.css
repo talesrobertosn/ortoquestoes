@@ -705,6 +705,20 @@
   .fc-arena { contain: layout paint; }
 }
 
+/* Carregando o acervo */
+.fc-carregando { display: grid; place-items: center; }
+.fc-carregando__caixa { position: relative; z-index: 5; display: grid; justify-items: center; gap: 10px; padding: 26px 34px; border-radius: 20px; text-align: center; color: #fff3d6;
+  background: linear-gradient(rgba(20, 12, 8, .9), rgba(20, 12, 8, .78)); box-shadow: 0 0 0 2px #120a04, 0 0 0 4px #b98a36, 0 20px 40px rgba(0, 0, 0, .6); }
+.fc-carregando__caixa strong { font: 900 22px var(--fc-titulo); letter-spacing: .06em; color: var(--fc-ouro); }
+.fc-carregando__caixa small { font: 500 14px var(--fc-ui); color: #e9dcc0; }
+.fc-carregando__baralho { position: relative; width: 56px; height: 76px; }
+.fc-carregando__baralho i { position: absolute; inset: 0; border-radius: 8px; border: 2px solid #1a0f0a;
+  background: radial-gradient(circle, #e9b955 0 11%, transparent 12%), radial-gradient(circle, #7a2a1c 0 21%, transparent 22%), repeating-linear-gradient(45deg, #3b2216 0 5px, #4a2c1c 5px 10px);
+  box-shadow: inset 0 0 0 3px #a57b3a; animation: fc-embaralhar 1.1s ease-in-out infinite; }
+.fc-carregando__baralho i:nth-child(2) { animation-delay: .18s; }
+.fc-carregando__baralho i:nth-child(3) { animation-delay: .36s; }
+@keyframes fc-embaralhar { 0%, 100% { transform: none; } 30% { transform: translateX(-26px) rotate(-12deg); } 60% { transform: translateX(26px) rotate(12deg); } }
+
 /* Celular deitado: o Torneio é desenhado para a tela em pé */
 .fc-girar { display: none; }
 @media (pointer: coarse) and (orientation: landscape) and (max-height: 500px) {

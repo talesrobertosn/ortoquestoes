@@ -100,7 +100,16 @@ export interface Resultado { estado: Partida; eventos: Evento[] }
 
 const nada = (estado: Partida): Resultado => ({ estado, eventos: [] })
 
-export function criarMotor(cartas: Flashcard[]) {
+export interface OpcoesMotor {
+  /**
+   * Reposição do baralho (seleção procedural, motor/selecao.ts): devolve novos
+   * ids, sem os que estão em `excluir`, e a próxima semente. Sem ela, o
+   * descarte é reembaralhado.
+   */
+  repor?: (excluir: ReadonlySet<string>, semente: number) => [string[], number]
+}
+
+export function criarMotor(cartas: Flashcard[], opcoes: OpcoesMotor = {}) {
   const porId = new Map(cartas.map((c) => [c.id, c]))
   const carta = (id: string) => {
     const c = porId.get(id)
@@ -136,23 +145,27 @@ export function criarMotor(cartas: Flashcard[]) {
     return { id: inimigo.id, vida: inimigo.vida, vidaMax: inimigo.vida, rodadas: 0, fase: 1, errosSeguidos: 0, furia: false }
   }
 
-  /** Tira o próximo flashcard que o adversário aceita jogar; refaz o baralho com o descarte quando acaba. */
+  /**
+   * Tira o próximo flashcard. Qualquer adversário joga flashcards de qualquer
+   * dificuldade: o desafio do RPG vem das regras do combate, não de perguntas
+   * cada vez mais obscuras. Quando o baralho acaba, repõe pela seleção
+   * procedural (sem repetir o que já saiu) ou, sem ela, reembaralha o descarte.
+   */
   function comprar(p: Partida): Resultado {
-    let baralho = p.baralho.slice()
+    let baralho = p.baralho.filter((id) => porId.has(id))
     let descarte = p.descarte.slice()
     let semente = p.semente
-    const minimo = inimigoAtual(p).dificuldadeMinima
-    const aceita = (id: string) => carta(id).dificuldade >= minimo
-    if (!baralho.some(aceita)) {
-      ;[descarte, semente] = embaralhar(descarte, semente)
-      baralho = [...baralho, ...descarte]
+    if (!baralho.length && opcoes.repor) {
+      ;[baralho, semente] = opcoes.repor(new Set([...descarte, ...p.baralho]), semente)
+    }
+    if (!baralho.length) {
+      ;[descarte, semente] = embaralhar(descarte.filter((id) => porId.has(id)), semente)
+      baralho = descarte
       descarte = []
     }
-    // Se nenhum flashcard atinge a dificuldade mínima, o chefe joga o que houver.
     // Evita repetir em seguida o flashcard que acabou de sair, se houver outro.
     const ultimo = p.descarte[p.descarte.length - 1]
-    let pos = baralho.findIndex((x) => aceita(x) && x !== ultimo)
-    if (pos < 0) pos = baralho.findIndex(aceita)
+    let pos = baralho.findIndex((x) => x !== ultimo)
     if (pos < 0) pos = 0
     const id = baralho[pos]
     baralho.splice(pos, 1)
@@ -163,8 +176,10 @@ export function criarMotor(cartas: Flashcard[]) {
     return { estado: { ...p, baralho, descarte, semente, atual, fase: 'pergunta' }, eventos: [{ tipo: 'compra', id }] }
   }
 
-  function novaPartida(semente: number, ids = cartas.map((c) => c.id)): Resultado {
-    const [baralho, s] = embaralhar(ids, semente)
+  function novaPartida(semente: number, ids?: string[]): Resultado {
+    let baralho: string[], s: number
+    if (!ids && opcoes.repor) [baralho, s] = opcoes.repor(new Set(), semente)
+    else [baralho, s] = embaralhar(ids ?? cartas.map((c) => c.id), semente)
     const base: Partida = {
       versao: 1, semente: s, rodada: 0, andar: 1, fase: 'pergunta', vida: VIDA_INICIAL, vidaMax: VIDA_INICIAL,
       inimigo: prepararInimigo(1), baralho, descarte: [], atual: null,

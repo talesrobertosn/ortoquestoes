@@ -131,3 +131,39 @@ python3 scripts/flashcards/publicar.py                      # aprovados → publ
 - O flashcard dominado (escada completa) vira **brilhante** e entra no Livro.
 - O Livro mostra o progresso por área e assunto ("Trauma: 34 de 120").
 - Emblemas por assunto completo, integrados aos emblemas existentes.
+
+## Fábrica de flashcards (13/10/2026)
+
+`scripts/flashcards/fabrica.py` transforma as questões reais do acervo em flashcards, em lotes, sem inventar conteúdo:
+
+- **De onde sai cada parte:** frente, alternativas e gabarito vêm da questão; a resposta é o texto da alternativa correta (ou o termo em negrito da linha "Na prova", quando coincide com ela); a explicação é o campo `correta` do comentário, sem as letras (as alternativas são embaralhadas), completada pelo primeiro parágrafo do conceito quando só repete a resposta.
+- **Tipos:** Na prova (lacuna), Relâmpago (pergunta curta e direta), Imagem e Anatomia (com a figura real da questão).
+- **Fica de fora (reprovado):** anuladas, duplicatas, dissertativas, figura pendente, sem comentário, sem gabarito oficial, pergunta com negação ("exceto", "incorreta"), "assinale a afirmação correta" e caso clínico longo.
+- **Quarentena (não entra em lugar nenhum até revisão):** comentário com alerta de divergência, gabarito provável, falha de validação (gabarito não preservado, alternativas repetidas, frente que revela a resposta, lacuna ambígua, imagem ausente, travessão, HTML, explicação ausente, duplicata da mesma frente).
+- **Batalha ou só Estudo:** alternativas acima de 72 caracteres ou frente acima de 220 ficam só no Estudo.
+- **Raridade** = nível de incidência do assunto (`src/dados/incidencia.json`); **dificuldade** é estimada (figura e anatomia = difícil; lacuna curta = fácil) até haver índice de acerto real.
+- **Estado incremental** em `scripts/flashcards/estado.json`: por questão, o hash da fonte, a situação e os motivos. Rodar de novo só refaz o que mudou. Ordem de produção: assuntos que mais caem primeiro, provas oficiais (TEOT/TARO) antes, imagem antes dentro do mesmo nível.
+- **Saída:** `public/flashcards/<area>.json` e `public/flashcards/indice.json` (contagens por área, assunto e tipo, e uma assinatura para o cache).
+
+Comandos:
+
+```bash
+python3 scripts/flashcards/fabrica.py gerar --lote 50          # próximo lote
+python3 scripts/flashcards/fabrica.py gerar --todos            # todos os pendentes, lote a lote
+python3 scripts/flashcards/fabrica.py gerar --area trauma --somente-imagem
+python3 scripts/flashcards/fabrica.py validar                  # revalida o publicado
+python3 scripts/flashcards/fabrica.py estado                   # cobertura, quarentena e motivos
+python3 scripts/flashcards/fabrica.py refazer                  # do zero (depois de mudar regras)
+```
+
+Contagem real em 13/10/2026: **4.302 publicados** (3.858 na Batalha, 444 só no Estudo, 630 com imagem), 523 em quarentena, 2.108 questões sem flashcard pelos motivos acima.
+
+### Seleção procedural (`src/flashcards/motor/selecao.ts`)
+
+O baralho da partida é sorteado em lotes de 40, com semente, por peso: incidência (raridade), revisão vencida, erro anterior, nunca visto, figura (×1,3) e exposição recente (os últimos 600 vistos quase não voltam). A ordem espalha os assuntos. Qualquer adversário joga flashcards de qualquer dificuldade: o desafio do RPG vem do combate.
+
+### Dados para o ranking futuro (`src/flashcards/progresso.ts`)
+
+- **Flashcards únicos respondidos** = número de chaves em `flashcards:registros` (repetição não conta). É a medida principal do ranking.
+- **Andar mais fundo**, partidas, chefes, melhor sequência e respostas em `flashcards:recordes`.
+- Ambos ficam no aparelho até a sincronização com o Supabase; o formato já é o que o servidor vai receber.

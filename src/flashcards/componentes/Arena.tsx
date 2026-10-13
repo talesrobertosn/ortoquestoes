@@ -2,6 +2,9 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import { gravar, ler } from '../../estado/armazenamento'
 import { href, navegar } from '../../util/rotas'
 import { BARALHO_DEMO } from '../dados/baralhoDemo'
+import { carregarAcervo } from '../dados/acervo'
+import { montarBaralho } from '../motor/selecao'
+import type { Flashcard } from '../tipos'
 import { Palco, centro } from '../efeitos/palco'
 import { PALETA_PERSONAGEM, type Personagem, type Pose } from '../efeitos/personagens'
 import { configurarSom, destravar, tocar, tocarAmbiente, tocarMusica } from '../efeitos/sons'
@@ -9,7 +12,7 @@ import { sementeNova } from '../motor/aleatorio'
 import { BESTIARIO, inimigoDoAndar, type Inimigo } from '../motor/bestiario'
 import { ENCAIXES, RECOMPENSAS, ehPoder, type Recompensa } from '../motor/poderes'
 import { COMBO_MINIMO, criarMotor, type Evento, type Partida } from '../motor/regras'
-import { CHAVE_AJUSTES, CHAVE_PARTIDA, CHAVE_REGISTROS, registrarResposta, type RegistroFlashcard } from '../progresso'
+import { CHAVE_AJUSTES, CHAVE_HISTORICO, CHAVE_PARTIDA, CHAVE_RECORDES, CHAVE_REGISTROS, lembrarVisto, RECORDES_VAZIOS, registrarResposta, type Recordes, type RegistroFlashcard } from '../progresso'
 import { Cartao } from './Cartao'
 import { Cenario, TampoMesa } from './Cenario'
 import { Estudo } from './Estudo'
@@ -31,13 +34,28 @@ export interface Ajustes {
 /** Som ligado por padrão (pedido do Tales em 12/10/2026); toca a partir do primeiro toque. */
 const AJUSTES_PADRAO: Ajustes = { versao: 3, som: true, volEfeitos: 0.85, volAmbiente: 0.35, volMusica: 0.45, efeitos: 'completos', velocidade: 'normal' }
 
-const motor = criarMotor(BARALHO_DEMO)
+/** Tamanho de cada reposição do baralho (a seleção roda de novo quando acaba). */
+const LOTE_DO_BARALHO = 40
+
+let motor = criarMotor(BARALHO_DEMO)
+
+/** Motor com o acervo carregado e a seleção procedural ponderada (motor/selecao.ts). */
+function prepararMotor(cartas: Flashcard[]) {
+  motor = criarMotor(cartas, {
+    repor: (excluir, semente) => montarBaralho(cartas, {
+      registros: ler<Record<string, RegistroFlashcard>>(CHAVE_REGISTROS, {}),
+      recentes: ler<string[]>(CHAVE_HISTORICO, []),
+      agora: Date.now(),
+    }, semente, LOTE_DO_BARALHO, excluir),
+  })
+}
 
 function partidaSalva(): Partida | null {
   const p = ler<Partida | null>(CHAVE_PARTIDA, null)
   if (!p || p.versao !== 1 || p.fase === 'fim') return null
   try {
-    ;[...p.baralho, ...p.descarte, ...(p.atual ? [p.atual.id] : [])].forEach((id) => motor.carta(id))
+    if (p.atual) motor.carta(p.atual.id)
+    p.derrubaram.forEach((id) => motor.carta(id))
     return p
   } catch { return null }
 }
@@ -76,7 +94,35 @@ interface Mostrado {
   heroiCaiu: boolean
 }
 
+/**
+ * Entrada do Torneio: carrega o acervo publicado pela fábrica e só então monta
+ * o jogo. Se a rede falhar, joga com o baralho de demonstração.
+ */
 export function Arena() {
+  const [pronto, definirPronto] = useState(false)
+  useEffect(() => {
+    let vivo = true
+    void carregarAcervo().then((cartas) => { if (!vivo) return; prepararMotor(cartas); definirPronto(true) })
+    return () => { vivo = false }
+  }, [])
+  if (!pronto) {
+    return (
+      <ModalJogo titulo="Torneio de Flashcards" aoPedirFechar={() => navegar('/treinar')}>
+        <div className="fc-arena fc-carregando" role="status">
+          <Cenario cena="campo" reduzido />
+          <div className="fc-carregando__caixa">
+            <span className="fc-carregando__baralho" aria-hidden="true"><i /><i /><i /></span>
+            <strong>Embaralhando o acervo</strong>
+            <small>Milhares de flashcards das provas reais</small>
+          </div>
+        </div>
+      </ModalJogo>
+    )
+  }
+  return <ArenaJogo />
+}
+
+function ArenaJogo() {
   const [ajustes, definirAjustesBruto] = useState<Ajustes>(() => {
     const salvos = ler<Partial<Ajustes>>(CHAVE_AJUSTES, {})
     const reduzSistema = typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches
@@ -446,6 +492,9 @@ export function Arena() {
       const registros = ler<Record<string, RegistroFlashcard>>(CHAVE_REGISTROS, {})
       registros[resposta.id] = registrarResposta(registros[resposta.id], resposta.certo, resposta.assistida)
       gravar(CHAVE_REGISTROS, registros)
+      gravar(CHAVE_HISTORICO, lembrarVisto(ler<string[]>(CHAVE_HISTORICO, []), resposta.id))
+      const rec = { ...RECORDES_VAZIOS, ...ler<Partial<Recordes>>(CHAVE_RECORDES, {}) }
+      gravar(CHAVE_RECORDES, { ...rec, respostas: rec.respostas + 1, andarMaximo: Math.max(rec.andarMaximo, r.estado.andar), melhorSequencia: Math.max(rec.melhorSequencia, r.estado.melhorSequencia), atualizadoEm: Date.now() })
     }
     partidaRef.current = r.estado
     definirPartida(r.estado)
@@ -484,6 +533,8 @@ export function Arena() {
 
   const novaPartida = useCallback(() => {
     pular()
+    const rec = { ...RECORDES_VAZIOS, ...ler<Partial<Recordes>>(CHAVE_RECORDES, {}) }
+    gravar(CHAVE_RECORDES, { ...rec, partidas: rec.partidas + 1, atualizadoEm: Date.now() })
     const r = motor.novaPartida(sementeNova())
     definirMostrado({ vida: r.estado.vida, vidaInimigo: r.estado.inimigo.vida, revelada: false, resultado: null, marcadas: null, inimigoCaiu: false, heroiCaiu: false })
     aplicar(r)

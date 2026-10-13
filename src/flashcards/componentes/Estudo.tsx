@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { gravar, ler } from '../../estado/armazenamento'
 import { proximoRegistro, revisarHoje } from '../../estado/revisao'
-import { BARALHO_DEMO } from '../dados/baralhoDemo'
+import { todasAsCartas } from '../dados/acervo'
 import { tocar } from '../efeitos/sons'
 import { CHAVE_REGISTROS, type RegistroFlashcard } from '../progresso'
 import { Cartao } from './Cartao'
@@ -13,18 +13,20 @@ type Avaliacao = 'errei' | 'hesitei' | 'sabia'
  * Batalha, depois os que vencem hoje na revisão, depois os nunca vistos.
  */
 export function Estudo({ primeiro, aoAmpliar, reduzido }: { primeiro: string[]; aoAmpliar: (i: { src: string; legenda: string }) => void; reduzido: boolean }) {
+  const cartas = todasAsCartas()
+  const porId = useMemo(() => new Map(cartas.map((c) => [c.id, c])), [cartas])
   const fila = useMemo(() => {
     const registros = ler<Record<string, RegistroFlashcard>>(CHAVE_REGISTROS, {})
-    const ids = BARALHO_DEMO.map((c) => c.id)
+    const ids = cartas.map((c) => c.id)
     const vencem = ids.filter((id) => !primeiro.includes(id) && revisarHoje(registros[id]))
     const novos = ids.filter((id) => !primeiro.includes(id) && !vencem.includes(id) && !registros[id])
     const resto = ids.filter((id) => !primeiro.includes(id) && !vencem.includes(id) && !novos.includes(id))
     return [...new Set([...primeiro, ...vencem, ...novos, ...resto])].filter((id) => ids.includes(id))
-  }, [primeiro])
+  }, [primeiro, cartas])
   const [pos, definirPos] = useState(0)
   const [virada, definirVirada] = useState(false)
   const [feitos, definirFeitos] = useState<Record<Avaliacao, number>>({ errei: 0, hesitei: 0, sabia: 0 })
-  const carta = BARALHO_DEMO.find((c) => c.id === fila[pos % fila.length])!
+  const carta = porId.get(fila[pos % fila.length])!
 
   const virar = useCallback(() => { if (!virada) { definirVirada(true) } }, [virada])
 
