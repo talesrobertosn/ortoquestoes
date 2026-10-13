@@ -3,6 +3,7 @@
 Ponto de partida para quem for continuar este projeto: Claude, ChatGPT Codex ou outro agente.
 Leia este arquivo e depois os outros desta pasta, nesta ordem:
 
+0. [CONTINUAR.md](CONTINUAR.md): para retomar em outra conta (mensagem pronta para colar, estado e próximos passos).
 1. [DECISOES.md](DECISOES.md): o que o dono do projeto (Tales) já decidiu. É a fonte de verdade.
 2. [FORMATOS.md](FORMATOS.md): como escrever bons flashcards, com os tipos, as regras e exemplos reais do acervo.
 3. [BATALHA.md](BATALHA.md): o desenho de jogo do modo Batalha (vida, dano, poderes, andares, chefes).
@@ -37,7 +38,15 @@ Uma aba **Flashcards** dentro de **Treinar**, com o **modo Estudo** (calmo: vira
   - alternativas forjadas;
   - modo Estudo com alternativas e o mesmo acabamento;
   - layout próprio para o celular deitado.
-  - Próximo: Etapa 2 (herói em 6 estágios).
+  - Etapas 2 a 8, no mesmo dia:
+    - herói em 6 estágios;
+    - Dragão de Ossos e Guardião;
+    - interface mais leve;
+    - Covil e Masmorra pintados;
+    - salas de evento e sinergias;
+    - quatro faixas novas;
+    - variantes do bestiário em volume e a Gosma.
+  - O que falta está em [PASSAGEM-ETAPA1.md](PASSAGEM-ETAPA1.md).
 - **13/10/2026, versão 3: Cripta do Residente** ([CRIPTA.md](CRIPTA.md)). Entrada própria, Torre do
   Título de 100 andares com patamares, portas no estilo do Hades, loja, Velho Preceptor, bênçãos de
   cinco patronos com duplas, raridades épica e lendária, flashcards brilhantes, Altar do Saber,

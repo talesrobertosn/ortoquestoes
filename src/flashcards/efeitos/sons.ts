@@ -450,7 +450,9 @@ const hz = (midi: number) => 440 * Math.pow(2, (midi - 69) / 12)
 
 const ARQUIVO_MUSICA: Partial<Record<Musica, string>> = {
   entrada: 'cripta', chefe: 'chefe', elite: 'elite', dragao: 'dragao', torre: 'torre', biblioteca: 'biblioteca', arquivo: 'biblioteca',
-  campo: 'batalha', masmorra: 'batalha', salao: 'batalha', covil: 'batalha', forja: 'batalha', coliseu: 'batalha', jardim: 'batalha',
+  // Etapa 7 (13/10/2026): trilha própria da floresta, da masmorra, do covil e das salas
+  campo: 'floresta', masmorra: 'masmorra', covil: 'covil', loja: 'sala', sabio: 'sala',
+  salao: 'batalha', forja: 'batalha', coliseu: 'batalha', jardim: 'floresta',
   laboratorio: 'batalha', caverna: 'batalha', templo: 'batalha', passarela: 'batalha', catacumba: 'batalha', treino: 'batalha',
 }
 const ARQUIVO_JINGLE: Partial<Record<Som, string>> = { 'jingle-vitoria': 'vitoria', 'jingle-chefe': 'vitoria', 'jingle-topo': 'vitoria', 'jingle-derrota': 'derrota', 'jingle-tesouro': 'recompensa', 'jingle-patamar': 'recompensa' }
@@ -475,7 +477,7 @@ function carregarFaixa(nome: string): Promise<AudioBuffer | null> {
 
 /** Pré-carrega as faixas curtas e a da batalha (chamado no primeiro toque). */
 export function preCarregarTrilha() {
-  for (const n of ['batalha', 'vitoria', 'recompensa', 'derrota']) void carregarFaixa(n)
+  for (const n of ['floresta', 'batalha', 'vitoria', 'recompensa', 'derrota']) void carregarFaixa(n)
 }
 
 function tocarFaixa(nome: Musica, buf: AudioBuffer) {

@@ -2,6 +2,7 @@
 """Assa as folhas de animação dos personagens modelados em volume.
 
     python3 scripts/sprites/assar.py golem                 # folha completa em public/flashcards/sprites/
+    python3 scripts/sprites/assar.py golem --variante cristal   # variante de paleta: golem-cristal.png
     python3 scripts/sprites/assar.py golem --previa saida.png [--escala 4] [--anim parado]
         só uma prévia ampliada (todos os quadros lado a lado), sem gravar no jogo
 
@@ -34,10 +35,15 @@ def principal() -> int:
     ap.add_argument('--anim')
     ap.add_argument('--fundo', default='#2a2633')
     ap.add_argument('--estagio', type=int)
+    ap.add_argument('--variante', help='variante de paleta definida em VARIANTES do módulo (folha <nome>-<variante>)')
     a = ap.parse_args()
     mod = importlib.import_module(a.nome)
     if a.estagio and hasattr(mod, 'configurar'):
         mod.configurar(a.estagio)
+    if a.variante:
+        # a mesma modelagem com outros materiais (Etapa 8): o adversário variante deixa o desenho antigo
+        mod.MATS = {**mod.MATS, **mod.VARIANTES[a.variante]()}
+        mod.NOME = f'{mod.NOME}-{a.variante}'
     anims = mod.poses()
     if a.anim:
         anims = {k: v for k, v in anims.items() if k in a.anim.split(',')}

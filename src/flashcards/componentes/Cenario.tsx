@@ -69,7 +69,11 @@ function climaENevoa(c: CanvasRenderingContext2D, W: number, H: number, clima: C
  * oito camadas com filtros e misturas do CSS recalculadas a cada quadro, o que
  * travava o celular. Por cima fica só o ambiente animado (bokeh, poeira, chuva).
  */
-export const Cenario = memo(function Cenario({ cena, reduzido, clima = 'dia' }: { cena: Cena; reduzido: boolean; clima?: Clima }) {
+/** Cenas internas (caverna, salões, masmorras): o clima do andar não entra (não chove dentro do covil). */
+const INTERNAS = new Set<Cena>(['covil', 'masmorra', 'salao', 'forja', 'caverna', 'catacumba', 'laboratorio', 'arquivo', 'biblioteca', 'templo'])
+
+export const Cenario = memo(function Cenario({ cena, reduzido, clima: climaAndar = 'dia' }: { cena: Cena; reduzido: boolean; clima?: Clima }) {
+  const clima: Clima = INTERNAS.has(cena) ? 'dia' : climaAndar
   const base = useRef<HTMLCanvasElement>(null)
   const ambiente = useRef<HTMLCanvasElement>(null)
   const raiz = useRef<HTMLDivElement>(null)
@@ -77,8 +81,9 @@ export const Cenario = memo(function Cenario({ cena, reduzido, clima = 'dia' }: 
   useEffect(() => {
     const alvo = base.current
     if (!alvo) return
-    let espera = 0, ultimo = ''
+    let espera = 0, ultimo = '', vivo = true
     const pintar = () => {
+      if (!vivo) return
       const w = alvo.clientWidth, h = alvo.clientHeight
       const chave = `${w}x${h}`
       if (chave === ultimo || !w) return
@@ -88,7 +93,7 @@ export const Cenario = memo(function Cenario({ cena, reduzido, clima = 'dia' }: 
       // Floresta e Biblioteca: camadas pintadas offline (ver efeitos/cenariosPintados.ts)
       const nomePintado = CENAS_PINTADAS[cena]
       const pintado = nomePintado ? cenarioPintadoPronto(nomePintado) : null
-      if (nomePintado && pintado === undefined) carregarCenarioPintado(nomePintado).then((r) => { if (r) { ultimo = ''; pintar() } })
+      if (nomePintado && pintado === undefined) carregarCenarioPintado(nomePintado).then((r) => { if (r && vivo) { ultimo = ''; pintar() } })
       if (pintado) { planos.luz = novo(); pintarCamadas(planos, pintado, w, h) }
       else pintarCena(planos, cena)
       const q = Math.min(2, window.devicePixelRatio || 1)
@@ -131,7 +136,7 @@ export const Cenario = memo(function Cenario({ cena, reduzido, clima = 'dia' }: 
     pintar()
     const obs = new ResizeObserver(() => { window.clearTimeout(espera); espera = window.setTimeout(pintar, 140) })
     obs.observe(alvo)
-    return () => { obs.disconnect(); window.clearTimeout(espera) }
+    return () => { vivo = false; obs.disconnect(); window.clearTimeout(espera) }
   }, [cena, clima])
 
   useEffect(() => {

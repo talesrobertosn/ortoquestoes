@@ -29,6 +29,8 @@ export const CHAVE_HISTORICO = 'flashcards:historico'
  * fundo da masmorra. Vai para o servidor quando a sincronização existir.
  */
 export const CHAVE_RECORDES = 'flashcards:recordes'
+/** Dificuldade escolhida para as próximas partidas (fácil, normal ou difícil). */
+export const CHAVE_NIVEL = 'flashcards:nivel'
 const TAMANHO_HISTORICO = 600
 
 export interface Recordes {

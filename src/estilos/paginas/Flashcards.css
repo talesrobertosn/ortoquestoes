@@ -696,7 +696,7 @@
   .fc-categoria__icone { width: 46px; height: 46px; }
   .fc-modal .fc-categoria__icone .fc-sprite { width: 32px; height: 32px; }
   .fc-estudo__mesa { grid-column: 1; grid-row: 2; }
-  .fc-estudo__botoes { grid-row: 3; gap: 8px; flex-wrap: nowrap; }
+  .fc-estudo__botoes { grid-row: 3; gap: 8px; flex-wrap: wrap; } /* o veredito ocupa a linha de cima; os três botões dividem a de baixo */
   .fc-botao-aval { min-width: 0; flex: 1; padding: 8px 6px; min-height: 60px; }
   .fc-botao-aval strong { font-size: 17px; }
   .fc-botao-aval small { font-size: 11px; }
@@ -1676,7 +1676,7 @@ body.fc-modal-aberto .aviso-cookies, body.fc-modal-aberto .aviso-site, body.fc-m
    No Estudo, o painel fica à esquerda e as alternativas ou os botões de
    avaliação à direita. Interface mais leve: topo fino, sem títulos.
    ============================================================ */
-@media (orientation: landscape) and (max-height: 520px) and (min-width: 560px) {
+@media (orientation: landscape) and (max-height: 520px) and (min-width: 480px) {
   .fc-modal-veu { padding: 0 !important; }
   .fc-modal { width: 100vw; height: 100dvh; max-height: none; min-height: 0; border-radius: 0; box-shadow: none; }
   .fc-modal__canto { display: none; }
@@ -1709,7 +1709,7 @@ body.fc-modal-aberto .aviso-cookies, body.fc-modal-aberto .aviso-site, body.fc-m
   .fc-ator--inimigo { margin: 0; }
   .fc-mesa { grid-area: mesa; margin: 0; border-radius: 14px; }
   .fc-mesa__tampo, .fc-mesa::after { border-radius: 14px; }
-  .fc-mesa__palco { padding: 8px 10px; }
+  .fc-mesa__palco { padding: 8px 10px; grid-template-columns: minmax(0, 1fr); min-width: 0; }
   .fc-pilha { display: none; }
   .fc-carta__cabeca { padding: 6px 10px; gap: 8px; }
   .fc-carta__titulo strong { font-size: 12.5px; }
@@ -1740,12 +1740,18 @@ body.fc-modal-aberto .aviso-cookies, body.fc-modal-aberto .aviso-site, body.fc-m
   .fc-dica { display: none; }
 
   /* Estudo: painel à esquerda, flashcard no centro, respostas à direita */
-  .fc-estudo { grid-template-columns: minmax(150px, 180px) minmax(0, 1fr) minmax(0, 300px); grid-template-rows: minmax(0, 1fr); gap: 8px 12px; padding: 4px 10px 8px; }
+  .fc-estudo { grid-template-columns: minmax(120px, min(180px, 22vw)) minmax(0, 1fr) minmax(160px, min(300px, 34vw)); grid-template-rows: minmax(0, 1fr); gap: 8px 12px; padding: 4px 10px 8px; }
   .fc-estudo__painel { padding: 10px; gap: 8px; align-self: stretch; align-content: start; }
   .fc-estudo__contagem b { font-size: 24px; }
   .fc-estudo__placar div { padding: 3px 8px; font-size: 12.5px; }
   .fc-estudo__titulo { font-size: 13px; }
-  .fc-estudo__mesa { grid-column: 2; grid-row: 1; }
+  .fc-estudo__mesa { grid-column: 2; grid-row: 1; grid-template-columns: minmax(0, 1fr); min-width: 0; }
+  /* de 480 a 640 px também valem as regras do celular em pé: o painel volta a ser coluna */
+  .fc-estudo__painel { display: grid; align-items: start; min-width: 0; }
+  .fc-estudo__titulo { display: block; }
+  .fc-estudo__placar { display: grid; }
+  .fc-estudo__barra { flex: none; }
+  .fc-estudo__painel .fc-interruptor { margin-left: 0; }
   .fc-estudo__botoes, .fc-estudo__respondidas + .fc-estudo__botoes { grid-column: 3; grid-row: 1; flex-direction: column; flex-wrap: nowrap; align-items: stretch; justify-content: center; gap: 8px; }
   .fc-estudo__respondidas { display: none; }
   .fc-estudo:has(.fc-estudo__respondidas) { grid-template-rows: minmax(0, 1fr); }
@@ -1762,5 +1768,77 @@ body.fc-modal-aberto .aviso-cookies, body.fc-modal-aberto .aviso-site, body.fc-m
   .fc-categoria__icone { width: 44px; height: 44px; }
 }
 
+/* celular deitado estreito (480 a 700 px, ex.: 568×320): painel do Estudo só com o essencial e sem selo de raridade sobre o título */
+@media (orientation: landscape) and (max-height: 520px) and (min-width: 480px) and (max-width: 700px) {
+  .fc-estudo__titulo, .fc-estudo__placar { display: none; }
+  .fc-estudo__painel { gap: 6px; padding: 8px; }
+  .fc-raridade { display: none; }
+}
+
 /* título do flashcard: hifeniza em vez de partir a palavra no meio ("ACROMIOCLAVIC ULAR") */
 .fc-carta__titulo strong { overflow-wrap: normal; word-break: normal; hyphens: auto; -webkit-hyphens: auto; }
+
+/* o topo fica acima dos personagens: a asa do Dragão de Ossos (maior desde a Etapa 3) cobria as abas */
+.fc-arena > .fc-topo { z-index: 6; }
+
+/* ============================================================
+   Interface mais leve (Etapa 4, 13/10/2026). Hierarquia: pergunta,
+   alternativas, personagens e estado. O estado perde peso: no máximo dois
+   selos do adversário à vista (o resto num "+N" que abre o painel), encaixes
+   vazios e pilhas mais apagados, e o cenário escurece um pouco em volta do
+   flashcard para a pergunta ser o primeiro ponto do olhar.
+   ============================================================ */
+.fc-info--mais { display: inline-flex !important; align-items: center; border: 0; cursor: pointer; font-weight: 800 !important; color: #ffe7a0 !important; background: rgba(233, 185, 85, .16) !important; box-shadow: inset 0 0 0 1px rgba(233, 185, 85, .55) !important; }
+.fc-info--mais:hover { background: rgba(233, 185, 85, .3) !important; }
+.fc-placa { gap: 5px; }
+.fc-info { opacity: .9; }
+.fc-encaixe--vazio { opacity: .55; }
+.fc-pilha small, .fc-pilha b { opacity: .8; }
+.fc-mesa__palco::before { content: ""; position: absolute; inset: -6% -4%; z-index: -1; pointer-events: none; border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(8, 5, 4, .38), rgba(8, 5, 4, .18) 60%, transparent); }
+/* celular: o flashcard fica acima do adversário (as garras do Dragão de Ossos cobriam o título) */
+@media (max-width: 640px) { .fc-batalha > .fc-mesa { z-index: 3; } .fc-batalha > .fc-inimigo { z-index: 2; } }
+/* flashcard com imagem em tela baixa: o botão "Ver imagem" fica preso à base do miolo (antes ficava abaixo da dobra) */
+.fc-carta__figura--apertada { position: sticky; bottom: -16px; z-index: 1; margin-bottom: -16px; padding: 8px 0 14px; background: linear-gradient(rgba(240, 226, 192, 0), #efdfba 26%); }
+@media (max-height: 820px) and (min-width: 641px) { .fc-carta__figura--apertada { bottom: -12px; margin-bottom: -12px; padding-bottom: 10px; } }
+.fc-carta__figura--apertada .fc-ver-imagem { min-height: 0; padding-block: 5px; }
+.fc-carta__figura--apertada .fc-ver-imagem img { width: 46px; height: 34px; }
+.fc-carta__figura--apertada .fc-ver-imagem small { display: none; }
+@media (max-height: 900px) and (min-width: 641px) { .fc-carta__miolo--com-imagem .fc-carta__pergunta { font-size: clamp(16px, .6vw + 9px, 19px); line-height: 1.3; } }
+
+/* ---- Salas de evento (Etapa 6): emblema grande da sala, custo e opção apagada */
+.fc-sala__npc--icone { place-items: center; padding: 0; }
+.fc-sala__emblema { width: 132px; height: 132px; border-radius: 50%; display: grid; place-items: center;
+  background: radial-gradient(circle at 38% 30%, rgba(255, 255, 255, .25), transparent 40%), radial-gradient(circle, color-mix(in srgb, var(--cor) 40%, #1a1014) 0 62%, #0c0806 63%);
+  box-shadow: 0 0 0 3px #120804, 0 0 0 7px #b8864a, 0 0 0 9px #3e2410, 0 0 0 11px #120804, 0 0 40px color-mix(in srgb, var(--cor) 55%, transparent); animation: fc-emblema 3s ease-in-out infinite; }
+.fc-modal .fc-sala__emblema .fc-sprite { width: 72px; height: 72px; }
+@keyframes fc-emblema { 50% { transform: translateY(-6px); } }
+.fc-sala--evento .fc-oferta { position: relative; padding-right: 40px; }
+.fc-oferta:disabled { opacity: .45; cursor: not-allowed; filter: grayscale(.5); }
+.fc-oferta__custo { justify-self: start; display: inline-flex; align-items: center; gap: 4px; margin-top: 3px; padding: 1px 8px; border-radius: 999px; font: 800 12px var(--fc-ui); font-style: normal; color: #2a1606; background: linear-gradient(#ffe7a0, #e3a83a); }
+.fc-modal .fc-oferta__custo .fc-sprite--icone { width: 14px; height: 14px; }
+.fc-sala--secreta .fc-sala__emblema { box-shadow: 0 0 0 3px #120804, 0 0 0 7px #c9a0ff, 0 0 0 9px #3a1e70, 0 0 0 11px #120804, 0 0 60px rgba(200, 160, 255, .7); }
+@media (max-width: 640px) { .fc-sala__emblema { width: 84px; height: 84px; } .fc-modal .fc-sala__emblema .fc-sprite { width: 46px; height: 46px; } }
+@media (prefers-reduced-motion: reduce) { .fc-sala__emblema { animation: none; } }
+
+/* Dificuldade (fácil, normal, difícil): escolha na entrada e selo no topo da partida */
+.fc-niveis { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; width: min(900px, 100%); margin-inline: auto; }
+.fc-nivel { --cor: #c9a14a; display: grid; gap: 3px; align-content: start; padding: 10px 14px; border: 0; border-radius: 12px; text-align: left; cursor: pointer; color: #e9dcc0;
+  background: linear-gradient(rgba(30, 20, 14, .9), rgba(14, 9, 7, .92)); box-shadow: 0 0 0 1.5px #0b0705, 0 0 0 3px color-mix(in srgb, var(--cor) 45%, #3a2a1c), 0 6px 14px rgba(0, 0, 0, .4);
+  transition: transform var(--fc-rapido), box-shadow var(--fc-rapido), filter var(--fc-rapido); }
+.fc-nivel strong { font: 900 16px/1.1 var(--fc-titulo); letter-spacing: .05em; color: color-mix(in srgb, var(--cor) 70%, #fff3d6); }
+.fc-nivel small { font: 500 12.5px/1.35 var(--fc-ui); color: #cbbd9c; }
+.fc-nivel--facil { --cor: #6fcf7f; } .fc-nivel--normal { --cor: #e3b04b; } .fc-nivel--dificil { --cor: #ff6a4a; }
+.fc-nivel:hover { transform: translateY(-2px); }
+.fc-nivel:active { transform: translateY(1px) scale(.98); }
+.fc-nivel--ativo { box-shadow: 0 0 0 1.5px #0b0705, 0 0 0 3px var(--cor), 0 0 0 4.5px #0b0705, 0 0 22px color-mix(in srgb, var(--cor) 45%, transparent), 0 6px 14px rgba(0, 0, 0, .4); }
+.fc-nivel:not(.fc-nivel--ativo) { filter: saturate(.7) brightness(.85); }
+.fc-nivel-selo { display: inline-block; margin-left: 6px; padding: 1px 7px; border-radius: 999px; font: 800 11px/1.5 var(--fc-ui); letter-spacing: .04em; vertical-align: middle; color: #140c06; }
+.fc-nivel-selo--facil { background: #8fe09a; } .fc-nivel-selo--normal { background: #f2c45a; } .fc-nivel-selo--dificil { background: #ff8a6a; }
+@media (max-width: 700px) {
+  .fc-niveis { gap: 6px; }
+  .fc-nivel { padding: 8px 9px; text-align: center; justify-items: center; }
+  .fc-nivel small { display: none; }
+}
+.fc-niveis__nota { display: none; grid-column: 1 / -1; margin: 0; font: 500 12.5px/1.35 var(--fc-ui); color: #cbbd9c; text-align: center; }
+@media (max-width: 700px) { .fc-niveis__nota { display: block; padding: 4px 10px; border-radius: 8px; color: #f0e2c4; background: rgba(14, 9, 7, .78); text-shadow: 0 1px 0 #000; } }

@@ -8,6 +8,12 @@ EQUIPAMENTO de verdade em cada estágio, não só a cor:
   4 Cavaleiro da Reconstrução armadura completa, elmo com crista, capa longa vermelha
   5 Mestre da Ortopedia      armadura com filetes de ouro, escudo heráldico, espada grande, pluma dupla
   6 Lenda da Masmorra        armadura radiante, asas de luz, auréola, espada de luz
+
+Progressão corporal (direção criativa, 13/10/2026): o mesmo herói cresce. O
+aprendiz é chibi (cabeça grande, pernas curtas); a cada estágio as pernas e o
+tronco alongam, os ombros alargam e a cabeça fica menor em relação ao corpo,
+até a lenda adulta. Rosto, capacete branco, pluma azul e cores continuam os
+mesmos: é a mesma pessoa, mais velha e mais forte.
 """
 from __future__ import annotations
 
@@ -19,7 +25,18 @@ from motor import (Camera, Cena, Material, Osso, fbm3, rampa, sd_caixa, sd_cone_
 
 ESTAGIO = 1
 NOME = 'heroi-1'
-CAM = Camera(96, 96, (46, 90), inclinacao=0.16, escala=1.55)
+# quadro maior que o original (96×96) para caber a lenda adulta com asas e auréola
+CAM = Camera(112, 120, (54, 114), inclinacao=0.16, escala=1.55)
+
+# proporções por estágio: pernas, tronco (altura), ombros (largura), cabeça, braços, grossura dos membros, escudo
+PROP = {
+    1: dict(perna=1.00, tronco=1.00, ombro=1.00, cab=1.00, braco=1.00, gr=1.00, escudo=1.00),
+    2: dict(perna=1.12, tronco=1.05, ombro=1.04, cab=0.96, braco=1.07, gr=1.03, escudo=1.04),
+    3: dict(perna=1.28, tronco=1.12, ombro=1.10, cab=0.91, braco=1.16, gr=1.07, escudo=1.08),
+    4: dict(perna=1.46, tronco=1.20, ombro=1.17, cab=0.85, braco=1.26, gr=1.11, escudo=1.12),
+    5: dict(perna=1.60, tronco=1.26, ombro=1.23, cab=0.80, braco=1.34, gr=1.14, escudo=1.15),
+    6: dict(perna=1.72, tronco=1.31, ombro=1.27, cab=0.76, braco=1.40, gr=1.16, escudo=1.17),
+}
 TEMPOS = {'parado': 240, 'preparo': 90, 'golpe': 70, 'dano': 90, 'derrota': 140, 'vitoria': 150}
 
 V = lambda *a: np.array(a, np.float32)  # noqa: E731
@@ -66,8 +83,9 @@ def materiais(est: int):
         m['tunica'] = Material(rampa('#2a3a8a', 6, escuro=0.3, claro=1.25))
         m['aco'] = Material(rampa('#dcae48', 6, escuro=0.32, claro=1.22), brilho=1.0)
         m['capa'] = Material(rampa('#e8e8f0', 6, escuro=0.45, claro=1.08, giro=0.3))
-    if est >= 6:  # dourada radiante, capa roxa
-        m['aco'] = Material(rampa('#f0c860', 6, escuro=0.38, claro=1.25), brilho=1.0)
+    if est >= 6:  # armadura de pérola com filetes de ouro (o ouro todo misturava corpo, escudo e asas), capa roxa
+        m['aco'] = Material(rampa('#ece4d4', 6, escuro=0.42, claro=1.1, giro=0.2), brilho=1.0)
+        m['lamina'] = Material([(120, 200, 255), (190, 235, 255), (240, 252, 255), (255, 255, 255)], emissivo=True)
         m['capa'] = Material(rampa('#7a3ac8', 6, escuro=0.3, claro=1.25))
         m['tunica'] = Material(rampa('#5a3aa8', 6, escuro=0.3, claro=1.25))
     return m
@@ -76,16 +94,21 @@ def materiais(est: int):
 def montar(t: dict) -> Cena:
     e = ESTAGIO
     c = Cena()
+    P = PROP[e]
+    pl, pt_, po, pc, pb, gr = P['perna'], P['tronco'], P['ombro'], P['cab'], P['braco'], P['gr']
     raiz = Osso((t.get('x', 0), t.get('y', 0), 0)).filho(ry=0.35 + t.get('giro', 0))
-    quadril = raiz.filho((0, 15 + t.get('agacha', 0), 0))
-    tronco = quadril.filho((0, 7 + t.get('resp', 0) * 0.4, 0), rx=t.get('tronco', 0), rz=t.get('lado', 0))
+    quadril = raiz.filho((0, 6 + 9 * pl + t.get('agacha', 0), 0))
+    tronco_o = quadril.filho((0, 7 * pt_ + t.get('resp', 0) * 0.4, 0), rx=t.get('tronco', 0), rz=t.get('lado', 0))
+    tronco = tronco_o.escalado((po, pt_, (po + 1) / 2))  # as formas do tronco crescem com o estágio
     corpo_mat = 'peitoral' if e == 1 else 'malha' if e == 2 else 'aco'
     # pernas e botas
     for lado in (-1, 1):
         k = 'd' if lado > 0 else 'e'
-        coxa = quadril.filho((lado * 4.2, -1, 0), rx=t.get(f'perna_{k}', 0))
-        c.add('tunica' if e < 4 else 'aco', lambda p: sd_cone_redondo(p, V(0, 0, 0), V(0, -8, 0.5), 3.6, 3.2), coxa, grupo=60 + lado)
-        pe = coxa.filho((0, -9, 0.6))
+        coxa = quadril.filho((lado * 4.2 * po, -1, 0), rx=t.get(f'perna_{k}', 0))
+        c.add('tunica' if e < 4 else 'aco', lambda p: sd_cone_redondo(p, V(0, 0, 0), V(0, -8 * pl, 0.5), 3.6 * gr, 3.2 * gr), coxa, grupo=60 + lado)
+        if e >= 3:  # joelheira
+            c.add('aco', lambda p: sd_elipsoide(p - V(0, -7.6 * pl, 1.6), (2.6 * gr, 2.0, 1.6)), coxa, grupo=62 + lado)
+        pe = coxa.filho((0, -9 * pl, 0.6)).escalado(gr)
         c.add('bota' if e < 4 else 'aco', lambda p: sd_caixa(p - V(0, -2, 1.4), (3.4, 3.2, 4.6), 1.6), pe, suave=1, grupo=60 + lado)
     # tronco
     c.add('tunica', lambda p: sd_elipsoide(p - V(0, -3, 0), (8.5, 6, 6.5)), tronco, grupo=0)
@@ -103,7 +126,7 @@ def montar(t: dict) -> Cena:
     # capa
     if e >= 1:
         L = 8 if e <= 2 else 11 if e == 3 else 17
-        capa = tronco.filho((0, 7, -5.5), rx=0.18 + t.get('capa', 0))
+        capa = tronco_o.filho((0, 7 * pt_, -5.5 * po), rx=0.18 + t.get('capa', 0)).escalado((po, (pt_ + pl) / 2, 1))
         def pano(p, L=L):
             # trapézio que abre embaixo, com dobras verticais
             larg = 9.5 + np.clip(-p[:, 1] / L, 0, 1) * 4.5
@@ -111,7 +134,7 @@ def montar(t: dict) -> Cena:
             return d - 0.5
         c.add('capa', pano, capa, grupo=8)
     # cabeça
-    cab = tronco.filho((0, 15, 0.5), rx=t.get('cabeca', 0), rz=t.get('cabeca_lado', 0))
+    cab = tronco_o.filho((0, 8 * pt_ + 8.5 * pc - 1.5, 0.5), rx=t.get('cabeca', 0), rz=t.get('cabeca_lado', 0)).escalado(pc)
     c.add('pele', lambda p: sd_esfera(p, 8.5), cab, grupo=10)
     c.add('cabelo', lambda p: sd_elipsoide(p - V(0, 0.5, -2.2), (8.6, 7.4, 7.0)), cab, grupo=10, suave=0.5)
     for lx in (-3.1, 3.1):
@@ -155,22 +178,22 @@ def montar(t: dict) -> Cena:
     if e >= 6:  # auréola
         c.add('luz', lambda p: sd_toro(p - V(0, 16, -1), 6.5, 0.7), cab, grupo=19)
     # braço da espada (direito, do lado da câmera) e do escudo (esquerdo)
-    ombro_d = tronco.filho((7.5, 5, 0.5), rz=t.get('abre_d', 0.25), rx=t.get('ergue_d', 0.2))
-    c.add(corpo_mat if e > 1 else 'tunica', lambda p: sd_cone_redondo(p, V(0, 0, 0), V(0, -6, 0), 2.6, 2.3), ombro_d, grupo=20)
-    mao_d = ombro_d.filho((0, -6.5, 0), rx=t.get('dobra_d', -0.6))
-    c.add('couro' if e < 4 else 'aco', lambda p: sd_cone_redondo(p, V(0, 0, 0), V(0, -5, 0.5), 2.3, 2.4), mao_d, suave=0.8, grupo=20)
-    empunha = mao_d.filho((0, -5.8, 0.8), rx=t.get('espada', 0.55), rz=t.get('espada_lado', -0.35))
+    ombro_d = tronco_o.filho((7.5 * po, 5 * pt_, 0.5), rz=t.get('abre_d', 0.25), rx=t.get('ergue_d', 0.2))
+    c.add(corpo_mat if e > 1 else 'tunica', lambda p: sd_cone_redondo(p, V(0, 0, 0), V(0, -6 * pb, 0), 2.6 * gr, 2.3 * gr), ombro_d, grupo=20)
+    mao_d = ombro_d.filho((0, -6.5 * pb, 0), rx=t.get('dobra_d', -0.6))
+    c.add('couro' if e < 4 else 'aco', lambda p: sd_cone_redondo(p, V(0, 0, 0), V(0, -5 * pb, 0.5), 2.3 * gr, 2.4 * gr), mao_d, suave=0.8, grupo=20)
+    empunha = mao_d.filho((0, -5.8 * pb, 0.8), rx=t.get('espada', 0.55), rz=t.get('espada_lado', -0.35))
     comp = [13, 17, 18, 19, 22, 24][e - 1]
     larg = [1.3, 1.4, 1.6, 1.7, 2.1, 2.3][e - 1]
-    lam = 'luz' if e >= 6 else 'aco'
+    lam = 'lamina' if e >= 6 else 'aco'
     c.add(lam, lambda p: np.maximum(sd_caixa(p - V(0, comp / 2 + 2.5, 0), (larg, comp / 2, 0.5), 0.3), p[:, 1] - comp - 2.5 + np.abs(p[:, 0]) * 1.8), empunha, grupo=21)
     c.add('ouro' if e >= 4 else 'ferro', lambda p: sd_caixa(p - V(0, 2.2, 0), (larg + 2.6, 0.8, 1.0), 0.5), empunha, grupo=22)
     c.add('couro', lambda p: sd_cone_redondo(p, V(0, 1.6, 0), V(0, -2.2, 0), 1.0, 1.0), empunha, grupo=23)
     c.add('ouro' if e >= 3 else 'ferro', lambda p: sd_esfera(p - V(0, -2.8, 0), 1.3), empunha, grupo=24)
-    ombro_e = tronco.filho((-7.5, 5, 0.5), rz=-t.get('abre_e', 0.3), rx=t.get('ergue_e', -0.3))
-    c.add(corpo_mat if e > 1 else 'tunica', lambda p: sd_cone_redondo(p, V(0, 0, 0), V(0, -6, 1.5), 2.6, 2.3), ombro_e, grupo=30)
-    braco_e = ombro_e.filho((0, -6.5, 2.0), rx=t.get('dobra_e', -0.9))
-    escudo = braco_e.filho((-1.8, -1.5, 3.0), rx=-(t.get('ergue_e', -0.3) + t.get('dobra_e', -0.9)) * 0.92, ry=-0.55 + t.get('escudo_giro', 0))
+    ombro_e = tronco_o.filho((-7.5 * po, 5 * pt_, 0.5), rz=-t.get('abre_e', 0.3), rx=t.get('ergue_e', -0.3))
+    c.add(corpo_mat if e > 1 else 'tunica', lambda p: sd_cone_redondo(p, V(0, 0, 0), V(0, -6 * pb, 1.5), 2.6 * gr, 2.3 * gr), ombro_e, grupo=30)
+    braco_e = ombro_e.filho((0, -6.5 * pb, 2.0), rx=t.get('dobra_e', -0.9))
+    escudo = braco_e.filho((-1.8, -1.5, 3.0), rx=-(t.get('ergue_e', -0.3) + t.get('dobra_e', -0.9)) * 0.92, ry=-0.55 + t.get('escudo_giro', 0)).escalado(P['escudo'])
     if e == 1:  # redondo azul com aro e umbo dourados (como o original)
         c.add('brasao', lambda p: sd_elipsoide(p, (7.5, 7.5, 1.4)), escudo, grupo=31)
         c.add('ouro', lambda p: sd_toro((p - V(0, 0, 0.2))[:, [0, 2, 1]], 7.3, 0.9), escudo, grupo=32)
@@ -191,7 +214,7 @@ def montar(t: dict) -> Cena:
         c.add(cruz_mat, lambda p: np.minimum(sd_caixa(p - V(0, -1, 1.25), (1.1, 6.5, 0.45), 0.2), sd_caixa(p - V(0, 1.5, 1.25), (4.6, 1.1, 0.45), 0.2)), escudo, grupo=33)
     if e >= 6:  # asas de luz atrás das costas
         for lado in (-1, 1):
-            asa = tronco.filho((lado * 3, 9, -7), rz=lado * (0.15 + t.get('asas', 0)), ry=lado * 0.25)
+            asa = tronco_o.filho((lado * 3 * po, 9 * pt_, -7), rz=lado * (0.15 + t.get('asas', 0)), ry=lado * 0.25)
             # leque de penas: cada pena sai da raiz em um ângulo, mais longas no meio
             for i in range(7):
                 ang = 0.1 + i * 0.27

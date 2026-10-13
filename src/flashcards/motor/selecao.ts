@@ -16,6 +16,7 @@
  */
 import type { Flashcard, Raridade } from '../tipos'
 import { sortear } from './aleatorio'
+import { NIVEIS, type NivelJogo } from './regras'
 
 export interface RegistroLeve { c?: boolean | null; proximaRevisao?: number | null; sequencia?: number; confianca?: string; q?: number }
 
@@ -27,6 +28,8 @@ export interface ContextoSelecao {
   /** Filtros da sessão (área, só imagem). Vazio = acervo todo. */
   areas?: string[]
   soImagem?: boolean
+  /** Dificuldade da partida: muda a mistura de flashcards fáceis, moderados e difíceis. */
+  nivel?: NivelJogo
 }
 
 const PESO_RARIDADE: Record<Raridade, number> = { lendaria: 4, epica: 2.8, rara: 1.9, comum: 1.3 }
@@ -39,6 +42,7 @@ export function pesoDoFlashcard(c: Flashcard, ctx: ContextoSelecao, posRecente: 
   else if (r.proximaRevisao != null && r.proximaRevisao <= ctx.agora) p *= 2.5
   else p *= 0.45 // estudado e ainda não venceu: aparece menos
   if (c.imagem) p *= 1.3
+  if (ctx.nivel) p *= NIVEIS[ctx.nivel].pesoFlashcard[c.dificuldade] ?? 1
   // exposição recente: quanto mais novo na memória, menor a chance
   if (posRecente !== undefined) p *= 0.05 + 0.95 * Math.min(1, posRecente / 300)
   return p

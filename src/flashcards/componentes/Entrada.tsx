@@ -6,9 +6,9 @@ import { configurarSom, destravar, tocar, tocarAmbiente, tocarMusica } from '../
 import type { Personagem } from '../efeitos/personagens'
 import { ALTAR_VAZIO, TALENTOS, comprarTalento, custoDoProximo, nivelDe, type EstadoAltar } from '../motor/altar'
 import { BESTIARIO, TORRE } from '../motor/bestiario'
-import { migrarPartida } from '../motor/regras'
+import { migrarPartida, NIVEIS, nivelDaPartida, type NivelJogo } from '../motor/regras'
 import {
-  BESTIARIO_VAZIO, CHAVE_AJUSTES, CHAVE_ALTAR, CHAVE_BESTIARIO, CHAVE_PARTIDA, CHAVE_PARTIDA_TORRE, CHAVE_PATAMAR, CHAVE_RECORDES, CHAVE_REGISTROS,
+  BESTIARIO_VAZIO, CHAVE_AJUSTES, CHAVE_ALTAR, CHAVE_BESTIARIO, CHAVE_NIVEL, CHAVE_PARTIDA, CHAVE_PARTIDA_TORRE, CHAVE_PATAMAR, CHAVE_RECORDES, CHAVE_REGISTROS,
   flashcardsUnicos, RECORDES_VAZIOS, type Bestiario, type Recordes,
 } from '../progresso'
 import { Cenario } from './Cenario'
@@ -34,6 +34,10 @@ export function Entrada() {
   const criptaViva = cripta && cripta.fase !== 'fim' ? cripta : null
   const torreViva = torre && torre.fase !== 'fim' ? torre : null
   const andarTorre = torreViva?.andar ?? (patamar ? patamar.andar : 0)
+  const [nivel, definirNivelBruto] = useState<NivelJogo>(() => { const n = ler<string>(CHAVE_NIVEL, 'normal'); return n in NIVEIS ? (n as NivelJogo) : 'normal' })
+  const definirNivel = (n: NivelJogo) => { gravar(CHAVE_NIVEL, n); definirNivelBruto(n); tocar('selecao') }
+  /** Partida em andamento continua na dificuldade em que começou. */
+  const emAndamento = (p: { nivel?: NivelJogo } | null) => (p ? ` · ${NIVEIS[nivelDaPartida(p)].nome}` : '')
 
   useEffect(() => {
     const a = ler<{ som?: boolean; volEfeitos?: number; volAmbiente?: number; volMusica?: number }>(CHAVE_AJUSTES, {})
@@ -70,13 +74,23 @@ export function Entrada() {
             <Ator quem="caixeira" escala={2.2} classe="fc-ator--npc" />
           </div>
 
+          <div className="fc-niveis" role="radiogroup" aria-label="Dificuldade das partidas novas">
+            {(Object.keys(NIVEIS) as NivelJogo[]).map((n) => (
+              <button key={n} type="button" role="radio" aria-checked={nivel === n} className={`fc-nivel fc-nivel--${n}${nivel === n ? ' fc-nivel--ativo' : ''}`} onClick={() => definirNivel(n)} onPointerEnter={() => tocar('hover')}>
+                <strong>{NIVEIS[n].nome}</strong>
+                <small>{NIVEIS[n].resumo}</small>
+              </button>
+            ))}
+            <p className="fc-niveis__nota" aria-live="polite">{NIVEIS[nivel].resumo}</p>
+          </div>
+
           <div className="fc-modos">
             <button type="button" className="fc-modo fc-modo--cripta" onClick={() => ir('/flashcards/cripta')} onPointerEnter={() => tocar('hover')}>
               <span className="fc-modo__icone"><Sprite nome="porta" /></span>
               <strong>Cripta do Residente</strong>
               <small>Desça o quanto aguentar. A cada 3 andares, um chefe; a cada passo, portas que mostram a recompensa.</small>
               <span className="fc-modo__dados">{rec.andarMaximo ? <>Recorde: <b>andar {rec.andarMaximo}</b></> : 'Sem recorde ainda'}</span>
-              <span className="fc-modo__acao">{criptaViva ? `Continuar no andar ${criptaViva.andar}` : 'Descer'}</span>
+              <span className="fc-modo__acao">{criptaViva ? `Continuar no andar ${criptaViva.andar}${emAndamento(criptaViva)}` : `Descer · ${NIVEIS[nivel].nome}`}</span>
             </button>
             <button type="button" className="fc-modo fc-modo--torre" onClick={() => ir('/flashcards/torre')} onPointerEnter={() => tocar('hover')}>
               <span className="fc-modo__icone"><Sprite nome="muralha" /></span>
@@ -84,7 +98,7 @@ export function Entrada() {
               <small>100 andares, cada um mais difícil. Patamar a cada 5: se cair, volta de lá. No topo, o Dragão Ancestral.</small>
               <span className="fc-escalada fc-escalada--grande" role="meter" aria-label={`Recorde da Torre: andar ${rec.torreMaximo ?? 0} de ${TORRE.andares}`} aria-valuemin={0} aria-valuemax={TORRE.andares} aria-valuenow={rec.torreMaximo ?? 0}><i style={{ width: `${rec.torreMaximo ?? 0}%` }} /></span>
               <span className="fc-modo__dados">Recorde: <b>{rec.torreMaximo ?? 0}/{TORRE.andares}</b>{rec.torreConcluida ? ` · topo ×${rec.torreConcluida}` : ''}</span>
-              <span className="fc-modo__acao">{torreViva ? `Continuar no andar ${torreViva.andar}` : andarTorre > 1 ? `Voltar ao patamar ${andarTorre - 1}` : 'Começar a subida'}</span>
+              <span className="fc-modo__acao">{torreViva ? `Continuar no andar ${torreViva.andar}${emAndamento(torreViva)}` : andarTorre > 1 ? `Voltar ao patamar ${andarTorre - 1}${emAndamento(patamar)}` : `Começar a subida · ${NIVEIS[nivel].nome}`}</span>
             </button>
             <button type="button" className="fc-modo fc-modo--biblioteca" onClick={() => ir('/flashcards/biblioteca')} onPointerEnter={() => tocar('hover')}>
               <span className="fc-modo__icone"><Sprite nome="livro" /></span>

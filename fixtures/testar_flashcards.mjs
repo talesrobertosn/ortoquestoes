@@ -10,7 +10,7 @@ const pasta = await mkdtemp(join(tmpdir(), 'oq-fc-'))
 const arquivo = join(pasta, 'm.mjs')
 try {
   await build({
-    stdin: { contents: `export * from './src/flashcards/motor/regras'; export * from './src/flashcards/motor/bestiario'; export * from './src/flashcards/motor/poderes'; export * from './src/flashcards/motor/altar'; export { BARALHO_DEMO } from './src/flashcards/dados/baralhoDemo'; export * from './src/flashcards/progresso'`, resolveDir: process.cwd() },
+    stdin: { contents: `export * from './src/flashcards/motor/regras'; export * from './src/flashcards/motor/bestiario'; export * from './src/flashcards/motor/poderes'; export * from './src/flashcards/motor/altar'; export { BARALHO_DEMO } from './src/flashcards/dados/baralhoDemo'; export * from './src/flashcards/progresso'; export * from './src/flashcards/motor/selecao'`, resolveDir: process.cwd() },
     outfile: arquivo, bundle: true, platform: 'node', format: 'esm', define: { 'import.meta.env.BASE_URL': '"/"', 'import.meta.env.DEV': 'false' }, logLevel: 'error',
   })
   const m = await import(pathToFileURL(arquivo))
@@ -100,6 +100,7 @@ try {
       return k >= 0 ? motor.comprarNaLoja(estado, k).estado : motor.sairDaLoja(estado).estado
     }
     if (estado.fase === 'sabio') return motor.aceitarSabio(estado, 0).estado
+    if (estado.fase === 'sala') return motor.escolherNaSala(estado, estado.sala.opcoes.length - 1).estado
     const k = estado.portas.findIndex((x) => x.tipo === 'combate' || x.tipo === 'chefe')
     return motor.entrar(estado, k >= 0 ? k : 0).estado
   }
@@ -219,7 +220,7 @@ try {
         continue
       }
       if (estado.fase === 'portas') { if (estado.venceu) return { andar: estado.andar, chefe: true }; estado = passarPortas(estado); continue }
-      if (estado.fase === 'loja' || estado.fase === 'sabio') { estado = passarPortas(estado); continue }
+      if (estado.fase === 'loja' || estado.fase === 'sabio' || estado.fase === 'sala') { estado = passarPortas(estado); continue }
       if (estado.fase === 'resposta') { estado = motor.seguir(estado).estado; continue }
       const c = motor.carta(estado.atual.id)
       const acerta = sorte() < taxa
@@ -242,15 +243,15 @@ try {
   assert.ok(tabela[0.7].chefe < 0.5, 'chefe fácil demais para 70%')
   assert.ok(tabela[0.9].chefe > 0.6, 'chefe impossível para 90%')
   // Partidas longas (sem parar no primeiro chefe): escalonamento, cura e mortes de um golpe só.
-  function longa(taxa, semente) {
+  function longa(taxa, semente, nivel) {
     let s = semente >>> 0
     const sorte = () => { s = (s * 1664525 + 1013904223) >>> 0; return s / 4294967296 }
-    let { estado } = motor.novaPartida(semente)
+    let { estado } = motor.novaPartida(semente, nivel ? { nivel } : {})
     let golpeUnico = 0, tetoFurado = 0, respostas = 0
     for (let passo = 0; passo < 3000; passo++) {
       if (estado.fase === 'fim') break
       if (estado.fase === 'recompensa') { estado = motor.escolher(estado, estado.recompensas[0]).estado; continue }
-      if (estado.fase === 'portas' || estado.fase === 'loja' || estado.fase === 'sabio') { estado = passarPortas(estado); continue }
+      if (estado.fase === 'portas' || estado.fase === 'loja' || estado.fase === 'sabio' || estado.fase === 'sala') { estado = passarPortas(estado); continue }
       if (estado.fase === 'resposta') { estado = motor.seguir(estado).estado; continue }
       const c = motor.carta(estado.atual.id)
       const acerta = sorte() < taxa
@@ -284,6 +285,31 @@ try {
   assert.ok(longo[0.9].andar > 6 && longo[0.9].andar < 40, 'partida de 90% nem curta demais nem infinita')
   assert.ok(longo[0.6].andar < 4.5, 'masmorra fácil demais para 60%')
 
+  // Dificuldades: vida, adversário, dano recebido, pontos, mistura de flashcards e ranking.
+  {
+    const ini = (nivel) => motor.novaPartida(99, { nivel }).estado
+    const [fa, no, di] = [ini('facil'), ini('normal'), ini('dificil')]
+    assert.equal(no.nivel, 'normal'); assert.equal(m.nivelDaPartida({}), 'normal', 'partida antiga sem nível vira Normal')
+    assert.ok(fa.vidaMax > no.vidaMax && no.vidaMax > di.vidaMax, 'vida do herói por dificuldade')
+    assert.equal(fa.inimigo.id, di.inimigo.id, 'mesmo adversário com a mesma semente')
+    assert.ok(fa.inimigo.vidaMax < no.inimigo.vidaMax && no.inimigo.vidaMax < di.inimigo.vidaMax, 'vida do adversário por dificuldade')
+    const errar = (q) => motor.responder(q, q.atual.ordem.findIndex((o) => o !== motor.carta(q.atual.id).certa)).eventos.find((x) => x.tipo === 'dano-heroi')?.valor ?? 0
+    const igual = (q) => ({ ...q, atual: no.atual, encaixes: [], vida: 100, vidaMax: 100 })
+    const [dFa, dNo, dDi] = [errar(igual(fa)), errar(igual(no)), errar(igual(di))]
+    assert.ok(dFa < dNo && dNo < dDi, `dano recebido por dificuldade: ${dFa} ${dNo} ${dDi}`)
+    assert.equal(m.NIVEIS.facil.ranqueado, false); assert.ok(m.NIVEIS.normal.ranqueado && m.NIVEIS.dificil.ranqueado, 'só Normal e Difícil no ranking')
+    // a mistura de flashcards muda pelo peso; o conteúdo não
+    const ctx = (nivel) => ({ registros: {}, recentes: [], agora: 0, nivel })
+    const facilC = { ...cartas[0], dificuldade: 1 }, dificilC = { ...cartas[0], dificuldade: 3 }
+    assert.ok(m.pesoDoFlashcard(facilC, ctx('facil')) > m.pesoDoFlashcard(dificilC, ctx('facil')), 'Fácil favorece flashcards fáceis')
+    assert.ok(m.pesoDoFlashcard(dificilC, ctx('dificil')) > m.pesoDoFlashcard(facilC, ctx('dificil')), 'Difícil favorece flashcards difíceis')
+    assert.equal(m.pesoDoFlashcard(facilC, ctx('normal')), m.pesoDoFlashcard(dificilC, ctx('normal')), 'Normal não mexe na mistura')
+    const andarMedio = (nivel) => { let t = 0; for (let k = 0; k < 120; k++) t += longa(0.75, 9100 + k, nivel).andar; return t / 120 }
+    const [aFa, aNo, aDi] = [andarMedio('facil'), andarMedio('normal'), andarMedio('dificil')]
+    console.log(`Dificuldades (75% de acerto → andar médio): Fácil ${aFa.toFixed(1)} · Normal ${aNo.toFixed(1)} · Difícil ${aDi.toFixed(1)}`)
+    assert.ok(aFa > aNo && aNo > aDi, 'quem joga no Fácil vai mais longe, no Difícil menos')
+  }
+
   // Torre com patamares: ao cair, volta ao último patamar com o herói de lá. Mede até onde chega em 25 tentativas.
   function torre(taxa, semente) {
     let s = semente >>> 0
@@ -296,7 +322,7 @@ try {
         tentativas++; estado = patamar; continue
       }
       if (estado.fase === 'recompensa') { estado = motor.escolher(estado, estado.recompensas[0]).estado; continue }
-      if (estado.fase === 'portas' || estado.fase === 'loja' || estado.fase === 'sabio') {
+      if (estado.fase === 'portas' || estado.fase === 'loja' || estado.fase === 'sabio' || estado.fase === 'sala') {
         const r = estado.fase === 'portas' ? motor.entrar(estado, Math.max(0, estado.portas.findIndex((x) => x.tipo !== 'loja'))) : { estado: passarPortas(estado), eventos: [] }
         if (r.eventos.some((e) => e.tipo === 'patamar')) patamar = r.estado
         estado = r.estado
@@ -326,6 +352,48 @@ try {
   assert.ok(tabelaTorre[0.6].maximo < tabelaTorre[0.8].maximo && tabelaTorre[0.8].maximo <= tabelaTorre[0.95].maximo, 'Torre: quem acerta mais sobe mais')
   assert.ok(tabelaTorre[0.7].topo < 0.05, 'Torre fácil demais para 70%')
   assert.ok(tabelaTorre[0.95].maximo > 50, 'Torre impossível para 95%')
+
+  // Salas de evento (Etapa 6): custo cobrado, efeito aplicado, andar avança; sem moedas a opção paga é recusada.
+  {
+    const base = { ...motor.novaPartida(61).estado, ouro: 60, fase: 'portas', portas: [{ tipo: 'sala', sala: 'ferreiro' }, { tipo: 'combate', recompensa: 'misto' }] }
+    const na = motor.entrar(base, 0)
+    assert.equal(na.estado.fase, 'sala')
+    assert.equal(na.estado.sala.tipo, 'ferreiro')
+    const temperar = na.estado.sala.opcoes.findIndex((o) => o.efeitos.some((f) => f.tipo === 'vidaMax'))
+    const depois = motor.escolherNaSala(na.estado, temperar).estado
+    assert.equal(depois.ouro, 20)
+    assert.equal(depois.vidaMax, base.vidaMax + 10)
+    assert.equal(depois.andar, base.andar + 1)
+    const pobre = { ...na.estado, ouro: 10 }
+    assert.equal(motor.escolherNaSala(pobre, temperar).estado, pobre)
+    // ferido, temperar dá exatamente +10 de vida (sem cura extra); reforçar respeita o máximo de cargas de cada poder
+    const ferido = motor.escolherNaSala({ ...na.estado, vida: 50 }, temperar).estado
+    assert.equal(ferido.vida, 60)
+    const reforcar = na.estado.sala.opcoes.findIndex((o) => o.efeitos.some((f) => f.tipo === 'cargas'))
+    const poder = m.PODERES.find((r) => m.RECOMPENSAS[r].maximo === 1)
+    assert.ok(poder, 'nenhum poder com máximo 1 para testar o reforço')
+    const max = m.RECOMPENSAS[poder].maximo
+    const reforcado = motor.escolherNaSala({ ...na.estado, ouro: 60, encaixes: [{ tipo: poder, carga: max }] }, reforcar).estado
+    assert.equal(reforcado.encaixes[0].carga, max, 'carga passou do máximo na sala')
+    // a curandeira cura de graça; o baú paga moedas (com ou sem armadilha) e nunca derruba
+    for (const tipo of ['curandeira', 'bau', 'secreta', 'evento']) {
+      const q = { ...motor.novaPartida(62).estado, vida: 40, ouro: 50, fase: 'portas', portas: [{ tipo: 'sala', sala: tipo }] }
+      const s1 = motor.entrar(q, 0).estado
+      assert.equal(s1.fase, 'sala', tipo)
+      assert.ok(s1.sala.opcoes.length >= 2, tipo)
+      const k = s1.sala.opcoes.findIndex((o) => (!o.precisaPoder || s1.encaixes.length) && (!o.custoOuro || s1.ouro >= o.custoOuro))
+      const fim = motor.escolherNaSala(s1, k).estado
+      assert.ok(fim.vida >= 1 && fim.andar === q.andar + 1, tipo)
+    }
+    // sinergia: tala + placas dão +1 Barreira no início do próximo adversário
+    const comPar = { ...motor.novaPartida(64).estado, reliquias: ['gesso', 'placas'], encaixes: [], fase: 'portas', portas: [{ tipo: 'combate', recompensa: 'misto' }] }
+    const r = motor.entrar(comPar, 0)
+    assert.ok(r.eventos.some((e) => e.tipo === 'sinergia' && e.nome === 'Imobilização completa'))
+    assert.ok(r.estado.encaixes.some((e) => e.tipo === 'barreira'))
+    // partidas salvas antes das salas continuam abrindo
+    const antiga = { ...motor.novaPartida(63).estado }; delete antiga.sala
+    assert.equal(m.migrarPartida(antiga).sala, null)
+  }
 
   console.log('Motor da Batalha: ok')
 } finally {

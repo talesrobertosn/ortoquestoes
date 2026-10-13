@@ -153,3 +153,21 @@ Ainda fraco:
 - candelabros da biblioteca pequenos no retrato;
 - barra de vida do herói curta no celular deitado;
 - personagens ainda não mexidos (etapas 2 e 3).
+
+## Etapas 2 a 8 (13/10/2026)
+
+Relatório visual: artefato "Cripta: Etapas 2 a 8" (link no PR), com o herói antes e depois na mesma escala, os chefes, o Covil antes e depois, a Masmorra, as salas e o bestiário antes e depois.
+
+| Etapa | O que foi feito | Natureza |
+|---|---|---|
+| 2 | Herói em 6 estágios com proporções reais (pernas, tronco, ombros, cabeça) e lenda em pérola | Redesenho |
+| 3 | Dragão de Ossos (crânio, costelas, patas, asas); Guardião com tabardo e escudo gravado | Redesenho / ajuste |
+| 4 | Dois selos e "+N" na placa; topo acima dos personagens; foco no flashcard; "Ver imagem" visível | Ajuste |
+| 5 | Covil e Masmorra pintados offline; sem clima nas cenas internas | Redesenho |
+| 6 | Salas de evento (ferreiro, curandeira, baú, secreta, encontros) e sinergias de relíquias | Novo |
+| 7 | Faixas floresta, masmorra, covil e sala | Novo |
+| 8 | Variantes em volume (golem ×4, guardião ×2, serpente, gosma ×2) e a Gosma de Cimento modelada | Recolor sobre modelo novo / redesenho |
+
+Testes: `npm test` (com testes novos das salas e das sinergias), `npx tsc --noEmit`, `npm run build` e Playwright em 1400×860, 390×844 e 844×390, sem erro de console nem rolagem horizontal.
+
+Desempenho: computador a 30 qps (p95 67 ms); celular com CPU ÷4 a 60 qps (pior quadro 33 ms); memória JS de 28 / 25 MB.

@@ -116,3 +116,14 @@ def poses():
     a['derrota'] = [{'alto': -36 * f, 'bote': 4 * f, 'onda': 0.4 * f, 'boca': 0.3, 'cabeca': -0.6 * f, 'y': -2 * f} for f in (0.25, 0.5, 0.75, 0.95, 1.0)]
     a['vitoria'] = [{'alto': 14 * f, 'onda': 0.6 * f, 'boca': 0.7 * f, 'cabeca': 0.45 * f} for f in (0.4, 0.8, 1.0, 0.9)]
     return a
+
+
+# variante do bestiário: Víbora do Mediano (escamas azuis e nervo elétrico)
+VARIANTES = {
+    'eletrica': lambda: {
+        'escama': Material(rampa('#3a8ac8', 7, escuro=0.2, claro=1.3, giro=0.2), textura=tex_escama, brilho=0.45),
+        'cabeca': Material(rampa('#2c76b0', 7, escuro=0.2, claro=1.3, giro=0.2), textura=tex_escama, brilho=0.5),
+        'nervo': Material([(120, 200, 255), (200, 240, 255), (255, 255, 230)], emissivo=True),
+        'olho': Material([(240, 200, 40), (255, 240, 120), (255, 255, 220)], emissivo=True),
+    },
+}
