@@ -67,6 +67,9 @@
 .fc-arena :focus-visible { outline: 3px solid var(--fc-ouro-claro); outline-offset: 3px; }
 .fc-arena > * { position: relative; z-index: 2; min-width: 0; min-height: 0; }
 
+/* Ícones em pixel art (a base vem antes dos tamanhos específicos) */
+.fc-modal .fc-sprite { image-rendering: pixelated; image-rendering: crisp-edges; display: block; width: 100%; height: 100%; }
+
 /* ============================================================ Diorama HD-2D */
 .fc-arena > .fc-cena { position: absolute; inset: 0; z-index: 0; overflow: hidden; --px: 0; --py: 0; }
 .fc-cena canvas, .fc-cena span { position: absolute; inset: 0; width: 100%; height: 100%; display: block; pointer-events: none; }
@@ -104,7 +107,7 @@
   font: 700 16px var(--fc-titulo) !important; letter-spacing: .05em; color: var(--fc-nevoa) !important; transition: background var(--fc-rapido), color var(--fc-rapido); }
 .fc-abas button:hover { color: #fff3d6 !important; background: rgba(233, 185, 85, .1); }
 .fc-abas button[aria-selected="true"] { background: linear-gradient(#f6d684, #c18c2e); color: #2a1606 !important; box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .25), inset 0 1px 0 rgba(255, 255, 255, .5), 0 0 16px rgba(255, 200, 90, .45); }
-.fc-abas .fc-sprite--icone { width: 18px; height: 18px; }
+.fc-modal .fc-abas .fc-sprite--icone { width: 18px; height: 18px; }
 .fc-topo__centro { display: grid; justify-items: center; gap: 2px; min-width: 0; text-align: center; }
 .fc-topo__titulo { font: 900 clamp(15px, 1.2vw, 20px)/1.1 var(--fc-titulo); letter-spacing: .1em; text-transform: uppercase; color: var(--fc-ouro);
   text-shadow: 0 2px 0 #000, 0 0 18px rgba(233, 185, 85, .35); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
@@ -184,7 +187,7 @@
 .fc-intencao small { font: 700 13px var(--fc-ui); color: #ffd6c6; text-shadow: 0 1px 0 #000, 0 0 6px #000; letter-spacing: .04em; }
 .fc-intencao--furia .fc-intencao__gema { animation: fc-pulsar .8s ease-in-out infinite; }
 .fc-intencao--bloqueado .fc-intencao__gema { background: radial-gradient(circle at 40% 30%, #a8d8ff, #2f6fc0 60%, #0f2d5a); box-shadow: 0 0 0 2px var(--fc-ouro), 0 0 22px rgba(90, 160, 255, .6); }
-.fc-intencao--bloqueado .fc-sprite--icone { width: 26px; height: 26px; }
+.fc-modal .fc-intencao--bloqueado .fc-sprite--icone { width: 26px; height: 26px; }
 
 /* ---------- Barras de vida ---------- */
 .fc-vida { display: flex; align-items: center; gap: 10px; }
@@ -261,7 +264,7 @@
 .fc-carta__cabeca { flex: none; display: flex; align-items: center; gap: 12px; padding: 11px 14px 10px; color: #f6e6c2;
   background: linear-gradient(#4e2f1a, #2c190d); box-shadow: inset 0 -2px 0 var(--b2), inset 0 -3px 0 #120a04, 0 2px 0 rgba(255, 240, 200, .3); }
 .fc-carta__emblema { flex: none; width: 36px; height: 38px; display: grid; place-items: center; border-radius: 10px; background: radial-gradient(circle, rgba(255, 220, 140, .25), transparent 70%); }
-.fc-carta__emblema .fc-sprite { width: 28px; height: 30px; }
+.fc-modal .fc-carta__emblema .fc-sprite { width: 28px; height: 30px; }
 .fc-carta__titulo { min-width: 0; flex: 1; display: grid; gap: 3px; }
 .fc-carta__titulo strong { font: 900 clamp(14px, 1vw, 16.5px)/1.15 var(--fc-titulo); letter-spacing: .05em; text-transform: uppercase; overflow-wrap: anywhere; }
 .fc-carta__titulo small { font: 600 13px var(--fc-ui); color: #e6cf98; }
@@ -304,7 +307,7 @@
 .fc-heroi__dados { display: grid; gap: 7px; width: clamp(210px, 18vw, 280px); padding: 10px 12px; margin-bottom: 6px; border-radius: 14px;
   background: linear-gradient(rgba(14, 18, 30, .86), rgba(14, 18, 30, .72)); box-shadow: inset 0 0 0 1.5px rgba(140, 180, 240, .35), 0 10px 22px rgba(0, 0, 0, .45); backdrop-filter: blur(3px); }
 .fc-heroi__nome { display: flex; align-items: center; gap: 8px; font: 800 16px var(--fc-titulo); color: #fff3d6; letter-spacing: .04em; }
-.fc-sprite--coracao { width: 20px; height: 18px; flex: none; }
+.fc-modal .fc-sprite--coracao { width: 20px; height: 18px; flex: none; }
 .fc-combo { margin-left: auto; display: flex; align-items: center; gap: 3px; }
 .fc-combo i { width: 9px; height: 9px; border-radius: 2px; background: #2a2230; box-shadow: inset 0 0 0 1px #000; transform: rotate(45deg); }
 .fc-combo i.aceso { background: linear-gradient(#ffe8a0, #e39a2c); box-shadow: 0 0 6px rgba(255, 180, 60, .8); }
@@ -320,12 +323,11 @@
   background: radial-gradient(circle at 40% 35%, #3a2a3e, #150d16); box-shadow: 0 0 0 2px #8a6a3c, 0 0 0 3px #120a04, inset 0 3px 8px rgba(0, 0, 0, .7); }
 .fc-encaixe--vazio span { width: 14px; height: 14px; transform: rotate(45deg); box-shadow: inset 0 0 0 1.5px rgba(233, 185, 85, .35); }
 .fc-encaixe:not(.fc-encaixe--vazio) { background: radial-gradient(circle at 40% 35%, color-mix(in srgb, var(--cor) 45%, #2a1a2e), #150d16); box-shadow: 0 0 0 2px var(--fc-ouro), 0 0 0 3px #120a04, 0 0 14px color-mix(in srgb, var(--cor) 60%, transparent); }
-.fc-encaixe .fc-sprite--icone { width: 26px; height: 26px; }
+.fc-modal .fc-encaixe .fc-sprite--icone { width: 26px; height: 26px; }
 .fc-encaixe b { position: absolute; right: -5px; bottom: -5px; min-width: 20px; height: 20px; border-radius: 10px; display: grid; place-items: center; font: 800 12px var(--fc-ui); background: #120a04; color: #fff3d6; box-shadow: 0 0 0 1.5px var(--fc-ouro); }
 .fc-encaixe--usavel { animation: fc-chamar 1.4s ease-in-out infinite; cursor: pointer; }
 .fc-reliquia { width: 30px; height: 30px; border-radius: 7px; display: grid; place-items: center; transform: rotate(45deg); background: radial-gradient(circle, color-mix(in srgb, var(--cor) 40%, #1a1020), #120a10); box-shadow: inset 0 0 0 1.5px var(--fc-ouro); }
-.fc-reliquia .fc-sprite--icone { width: 18px; height: 18px; transform: rotate(-45deg); }
-.fc-sprite { image-rendering: pixelated; image-rendering: crisp-edges; display: block; width: 100%; height: 100%; }
+.fc-modal .fc-reliquia .fc-sprite--icone { width: 18px; height: 18px; transform: rotate(-45deg); }
 
 /* ---------- Mão (alternativas) ---------- */
 .fc-mao { position: relative; display: flex; justify-content: center; align-items: flex-end; padding: 22px 0 6px; min-height: 140px; }
@@ -453,7 +455,7 @@
 .fc-recompensa--reliquia { background: radial-gradient(ellipse at 50% 0%, color-mix(in srgb, var(--cor) 36%, transparent), transparent 70%), linear-gradient(#1c2a2e, #0c1518); }
 .fc-recompensa__tipo { font: 800 12px var(--fc-ui); letter-spacing: .14em; text-transform: uppercase; color: var(--cor); }
 .fc-recompensa__icone { width: 70px; height: 70px; display: grid; place-items: center; border-radius: 50%; background: radial-gradient(circle, color-mix(in srgb, var(--cor) 30%, #1a1020), #0e0810); box-shadow: 0 0 0 2px #120a04, 0 0 0 4px var(--fc-ouro); }
-.fc-recompensa__icone .fc-sprite { width: 42px; height: 42px; }
+.fc-modal .fc-recompensa__icone .fc-sprite { width: 42px; height: 42px; }
 .fc-recompensa strong { font: 900 18px/1.15 var(--fc-titulo); color: #fff3d6; }
 .fc-recompensa__texto { font: 400 16px/1.4 var(--fc-texto); color: #e9dcc0; }
 .fc-recompensa__aviso { font: 700 12.5px var(--fc-ui); color: #ffcf9a; }
@@ -515,7 +517,7 @@
   .fc-arena { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
   .fc-topo { gap: 8px; padding: 8px 60px 6px 8px; min-height: 58px; }
   .fc-abas button { min-height: 40px; padding: 6px 10px; font-size: 14px !important; gap: 6px; }
-  .fc-abas .fc-sprite--icone { display: none; }
+  .fc-modal .fc-abas .fc-sprite--icone { display: none; }
   .fc-topo__titulo { display: none; }
   .fc-topo__progresso { font-size: 13.5px; gap: 6px; flex-wrap: wrap; justify-content: center; }
   .fc-trilha { display: none; }
@@ -543,7 +545,7 @@
   .fc-carta__moldura { border-radius: 12px; }
   .fc-carta__cabeca { padding: 8px 10px; gap: 8px; }
   .fc-carta__emblema { width: 28px; height: 30px; }
-  .fc-carta__emblema .fc-sprite { width: 22px; height: 24px; }
+  .fc-modal .fc-carta__emblema .fc-sprite { width: 22px; height: 24px; }
   .fc-carta__titulo small { font-size: 12px; }
   .fc-carta__miolo { padding: 12px 14px; gap: 10px; }
   .fc-carta__pergunta { font-size: 19px; }
@@ -557,7 +559,7 @@
   .fc-heroi__nome { font-size: 14px; }
   .fc-combo span { display: none; }
   .fc-encaixe { width: 36px; height: 36px; }
-  .fc-encaixe .fc-sprite--icone { width: 20px; height: 20px; }
+  .fc-modal .fc-encaixe .fc-sprite--icone { width: 20px; height: 20px; }
   .fc-reliquia { display: none; }
   .fc-acao { grid-area: acao; margin-bottom: 2px; }
   .fc-principal { min-width: 108px; min-height: 58px; padding: 8px 14px; }
@@ -574,7 +576,7 @@
   .fc-recompensa { grid-template-columns: auto 1fr; justify-items: start; text-align: left; align-items: center; column-gap: 12px; padding: 12px; }
   .fc-recompensa__icone { grid-row: span 3; width: 56px; height: 56px; }
   .fc-recompensa__tipo { grid-column: 2; }
-  .fc-recompensa__icone .fc-sprite { width: 32px; height: 32px; }
+  .fc-modal .fc-recompensa__icone .fc-sprite { width: 32px; height: 32px; }
   .fc-flutua { font-size: 30px; }
   .fc-flutua--grande { font-size: 44px; }
   .fc-estudo { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr) auto; padding: 4px 10px 10px; gap: 8px; }
